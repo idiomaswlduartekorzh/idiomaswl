@@ -1,42 +1,56 @@
-import { SLUG_TO_CODE, IDIOMAS, VOCAB, PASOS } from '@/lib/data';
-import LessonFrame from '@/components/lesson/LessonFrame';
 import { notFound } from 'next/navigation';
+import { createServerClient } from '@/lib/supabase/server';
+import LessonRuntime from '@/components/lesson/LessonRuntime';
 
-interface PageParams {
-  lang: string;
-  stepId: string;
-}
+const SLUG_TO_CODE: Record<string, string> = {
+  korean: 'ko', english: 'en', japanese: 'ja', italian: 'it',
+  french: 'fr', german: 'de', portuguese: 'pt', russian: 'ru',
+};
 
-export default async function LessonPage({
-  params,
-}: {
-  params: Promise<PageParams>;
-}) {
+const FLAG: Record<string, string> = {
+  ko: '한', en: 'En', ja: '日', it: 'It', fr: 'Fr', de: 'De', pt: 'Pt', ru: 'Ру',
+};
+
+interface PageParams { lang: string; stepId: string; }
+
+export default async function LessonPage({ params }: { params: Promise<PageParams> }) {
   const { lang, stepId } = await params;
 
   const code = SLUG_TO_CODE[lang];
   if (!code) notFound();
 
-  const idioma = IDIOMAS.find((i) => i.code === code);
-  if (!idioma) notFound();
+  const dayNumber = Number(stepId);
+  if (isNaN(dayNumber) || dayNumber < 1) notFound();
 
-  const vocab = VOCAB[code] ?? VOCAB['ko'];
-  const step = Number(stepId);
+  const supabase = await createServerClient();
 
-  // Validate step range
-  if (isNaN(step) || step < 1 || step > PASOS.length) notFound();
+  const { data: language } = await supabase
+    .from('languages')
+    .select('name, flag_text')
+    .eq('code', code)
+    .single();
+
+  if (!language) notFound();
+
+  const { data: lesson } = await supabase
+    .from('lessons')
+    .select('title')
+    .eq('language_code', code)
+    .eq('day_number', dayNumber)
+    .single();
 
   return (
-    <LessonFrame idioma={idioma} vocab={vocab} pasos={PASOS} stepId={step} />
+    <LessonRuntime
+      langName={language.name}
+      langFlag={language.flag_text ?? FLAG[code] ?? '?'}
+      dayNumber={dayNumber}
+      title={lesson?.title ?? `Día ${dayNumber} — ${language.name}`}
+    />
   );
 }
 
-export function generateStaticParams() {
-  const slugs = Object.keys(SLUG_TO_CODE);
-  const steps = Array.from({ length: PASOS.length }, (_, i) =>
-    String(i + 1)
-  );
-  return slugs.flatMap((lang) =>
-    steps.map((stepId) => ({ lang, stepId }))
+export async function generateStaticParams() {
+  return Object.keys(SLUG_TO_CODE).flatMap(lang =>
+    Array.from({ length: 10 }, (_, i) => ({ lang, stepId: String(i + 1) }))
   );
 }

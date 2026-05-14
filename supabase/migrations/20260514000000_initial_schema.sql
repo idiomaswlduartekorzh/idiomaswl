@@ -80,8 +80,10 @@ create table public.vocab_words (
   meaning         text not null,                  -- 'escuela'
   display_char    text,                           -- carácter de display corto
   audio_url       text,
+  image_url       text,
   sort_order      int not null default 0,
-  created_at      timestamptz not null default now()
+  created_at      timestamptz not null default now(),
+  unique (step_id, glyph)
 );
 
 -- ============================================================

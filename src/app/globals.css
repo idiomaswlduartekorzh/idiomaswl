@@ -430,6 +430,11 @@ button {
     grid-template-columns: 1fr !important;
   }
 }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .paywall-note {
   margin-top: 12px;
   font-family: var(--mono);
