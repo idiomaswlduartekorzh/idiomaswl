@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { createServerClient } from '@/lib/supabase/server';
+import { createClient as createServerClient } from '@/lib/supabase/server';
 import LessonRuntime from '@/components/lesson/LessonRuntime';
 
 const SLUG_TO_CODE: Record<string, string> = {
