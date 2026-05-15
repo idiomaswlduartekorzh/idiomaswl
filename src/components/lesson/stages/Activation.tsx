@@ -228,10 +228,15 @@ export default function Activation({ onComplete }: { onComplete?: () => void }) 
 
   useEffect(() => {
     const triggered = triggeredRef.current;
-    const flash = (id: string, setter: (p: Set<string>) => Set<string>) => { setNewVocab(p => new Set([...p, id])); setter(p => new Set([...p, id])); showAlert(); setTimeout(() => setNewVocab(p => { const n = new Set(p); n.delete(id); return n; }), 4000); };
-    VOCAB_TIMELINE.forEach(v => { if (currentTime >= v.at && !triggered.has(v.id)) { triggered.add(v.id); flash(v.id, setVisibleVocab); } });
-    CONCEPT_TIMELINE.forEach(c => { if (currentTime >= c.at && !triggered.has(c.id)) { triggered.add(c.id); setVisibleConcepts(p => new Set([...p, c.id])); showAlert(); } });
-    EXERCISE_TIMELINE.forEach(e => { if (currentTime >= e.at && !triggered.has(e.id)) { triggered.add(e.id); setVisibleExercises(p => new Set([...p, e.id])); showAlert(); } });
+    const flash = (id: string) => {
+      setNewVocab(prev => new Set([...prev, id]));
+      setVisibleVocab(prev => new Set([...prev, id]));
+      showAlert();
+      setTimeout(() => setNewVocab(prev => { const n = new Set(prev); n.delete(id); return n; }), 4000);
+    };
+    VOCAB_TIMELINE.forEach(v => { if (currentTime >= v.at && !triggered.has(v.id)) { triggered.add(v.id); flash(v.id); } });
+    CONCEPT_TIMELINE.forEach(c => { if (currentTime >= c.at && !triggered.has(c.id)) { triggered.add(c.id); setVisibleConcepts(prev => new Set([...prev, c.id])); showAlert(); } });
+    EXERCISE_TIMELINE.forEach(e => { if (currentTime >= e.at && !triggered.has(e.id)) { triggered.add(e.id); setVisibleExercises(prev => new Set([...prev, e.id])); showAlert(); } });
   }, [currentTime]);
 
   function showAlert() {
