@@ -702,7 +702,7 @@ Many believe that AI could damage the {{33}} relationship between doctor and pat
           taskNumber: 1,
           stimulusLabel: 'The graph below shows the consumption of three kinds of spreads between 1981 and 2007.',
           stimulus: '',
-          imageUrl: '/ielts/images/writing-set3-task1-spreads.png',
+          imageUrl: '/ielts/images/writing-set3-task1-spreads.jpg',
           imageAlt: 'Line graph: consumption of margarine, low fat & reduced spreads, and butter in grams 1981–2007',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.',
           minWords: 150,
