@@ -4,6 +4,9 @@ import { getMock } from '@/data/mocks';
 import PracticeClient from './PracticeClient';
 import IELTSPracticeClient from './IELTSPracticeClient';
 import TOEFLPracticeClient from './TOEFLPracticeClient';
+import LanguagePracticeClient from './LanguagePracticeClient';
+
+const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras']);
 
 export async function generateMetadata({ params }: { params: Promise<{ exam: string; mockId: string }> }) {
   const { exam: slug, mockId } = await params;
@@ -22,6 +25,7 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
 
   if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
   if (slug === 'toefl') return <TOEFLPracticeClient exam={exam} mock={mock} />;
+  if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 
   return <PracticeClient exam={exam} mock={mock} />;
 }

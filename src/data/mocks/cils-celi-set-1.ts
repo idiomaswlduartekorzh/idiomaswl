@@ -14,6 +14,7 @@ const mock: MockExam = {
       part: 1,
       title: 'Ascolto – Comprensione Orale',
       skill: 'listening',
+      audioUrl: '/audio/cils/set-1.mp3',
       instructions:
         'Escucha los textos y elige la respuesta correcta entre las cuatro opciones propuestas.',
       transcript: `

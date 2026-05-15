@@ -14,6 +14,7 @@ const mock: MockExam = {
       part: 1,
       title: "Compréhension de l'oral – Document 1",
       skill: 'listening',
+      audioUrl: '/audio/delf/set-1-doc1.mp3',
       instructions:
         'Escucha la grabación. Lee primero las preguntas, luego escucha y responde.',
       transcript:
@@ -47,6 +48,7 @@ const mock: MockExam = {
       part: 2,
       title: "Compréhension de l'oral – Document 2",
       skill: 'listening',
+      audioUrl: '/audio/delf/set-1-doc2.mp3',
       instructions:
         'Escucha la entrevista. Responde a las preguntas eligiendo la opción correcta.',
       transcript:

@@ -293,6 +293,7 @@ Kontakt: 0160-987 6543`,
       part: 4,
       title: 'Hören – Teil 1: Kurze Gespräche',
       skill: 'listening',
+      audioUrl: '/audio/goethe/set-1.mp4',
       instructions:
         'Sie hören fünf kurze Gespräche. Kreuzen Sie für jede Aufgabe die richtige Antwort an.',
       transcript: `**Gespräch 1 – Arzttermin**
@@ -405,6 +406,7 @@ Lisa: Alles klar, ich notiere es. Bis morgen dann.`,
       part: 5,
       title: 'Hören – Teil 2: Ansagen und Mitteilungen',
       skill: 'listening',
+      audioUrl: '/audio/goethe/set-1.mp4',
       instructions:
         'Sie hören ein Radio-Interview. Lesen Sie die Aufgaben 26–30. Kreuzen Sie die richtige Antwort an.',
       transcript: `**Radio-Interview: Nachhaltig leben – aber wie?**
@@ -501,6 +503,7 @@ Moderatorin: Danke, Carla, für dieses inspirierende Gespräch!`,
       part: 6,
       title: 'Hören – Teil 3: Gespräch',
       skill: 'listening',
+      audioUrl: '/audio/goethe/set-1.mp4',
       instructions:
         'Sie hören ein Gespräch zwischen zwei Personen. Kreuzen Sie für jede Aussage: Wer sagt das? Maria, Thomas oder beide?',
       transcript: `**Gespräch: Wochenendausflug planen**

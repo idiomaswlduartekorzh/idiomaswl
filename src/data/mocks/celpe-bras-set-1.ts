@@ -12,8 +12,9 @@ const mock: MockExam = {
       part: 1,
       title: 'Tarefa 1 – Produção a partir de vídeo',
       skill: 'writing',
+      audioUrl: 'https://www.youtube.com/embed/9wO8WzX6mRI',
       instructions:
-        'Verás un resumen del video que los candidatos reales verían. Lee el estímulo y redacta el texto solicitado en portugués.',
+        'Assiste ao vídeo oficial do CELPE-BRAS 2024/1 (Tarefa 1). Depois, redige o texto solicitado em português.',
       questions: [
         {
           type: 'write',
@@ -34,8 +35,9 @@ const mock: MockExam = {
       part: 2,
       title: 'Tarefa 2 – Produção a partir de áudio',
       skill: 'writing',
+      audioUrl: 'https://www.youtube.com/embed/pq5Ni_RO4SI',
       instructions:
-        'Escucharás una entrevista de radio en portugués. Lee la transcripción y redacta el texto solicitado.',
+        'Ouve o áudio oficial do CELPE-BRAS 2024/1 (Tarefa 2). Depois, redige o texto solicitado em português.',
       transcript:
         'Apresentadora: Bem-vindos ao programa Empreender Hoje. Hoje eu tenho aqui comigo Lucas Ferreira, fundador do projeto CódigoLivre. Lucas, me conta: como surgiu essa ideia?\n\nLucas: Bom, eu trabalhava em uma grande empresa de tecnologia, ganhava bem, mas sentia que faltava algo. Aí, um dia, fui visitar uma amiga que mora no Complexo do Alemão, no Rio, e vi adolescentes com muito potencial, mas sem acesso a nenhuma formação em tecnologia. Pensei: eu posso mudar isso.\n\nApresentadora: E foi fácil largar o emprego?\n\nLucas: Nada fácil! Minha família ficou preocupada. Mas eu tinha certeza de que valia a pena. Comecei com uma turma de dez alunos, num espaço emprestado por uma ONG. Os desafios foram enormes: falta de computadores, internet instável, alunos que precisavam trabalhar para ajudar em casa.\n\nApresentadora: E os resultados?\n\nLucas: Em três anos, já formamos mais de duzentos jovens. Vários conseguiram emprego em empresas de tecnologia. Um deles está desenvolvendo o próprio aplicativo agora. É emocionante demais.\n\nApresentadora: E os planos para o futuro?\n\nLucas: Queremos expandir para outras cidades — Salvador, Recife e Belém estão no radar. E estamos buscando parcerias com empresas privadas para financiar bolsas e equipamentos. A missão é clara: tecnologia como instrumento de transformação social.',
       questions: [
