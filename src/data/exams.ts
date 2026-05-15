@@ -166,8 +166,10 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Schreiben', icon: '✍️', time: '~75 min', questions: 2, color: '#b8840c', types: ['Producción escrita', 'Emails y cartas formales'] },
       { name: 'Sprechen', icon: '🎙️', time: '~15 min', questions: 3, color: '#a8720a', types: ['Producción oral', 'Descripción de imagen', 'Discusión'] },
     ],
-    mocks: [],
-    available: false,
+    mocks: [
+      { id: 'set-1', title: 'Goethe-Zertifikat B1 – Übungstest 1', subtitle: 'Lesen · Hören · Schreiben · Sprechen', free: true, parts: 8, questions: 39 },
+    ],
+    available: true,
   },
 
   'cils-celi': {
@@ -194,8 +196,10 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Scrittura', icon: '✍️', time: '~60 min', questions: 2, color: '#009246', types: ['Produzione scritta', 'Email / testo narrativo'] },
       { name: 'Parlato', icon: '🎙️', time: '~15 min', questions: 2, color: '#33a86a', types: ['Produzione orale', 'Interazione'] },
     ],
-    mocks: [],
-    available: false,
+    mocks: [
+      { id: 'set-1', title: 'CILS B1 – Uno B1 Set 1', subtitle: 'Ascolto · Lettura · Analisi · Scrittura · Parlato', free: true, parts: 6, questions: 29 },
+    ],
+    available: true,
   },
 
   'delf-dalf': {
@@ -221,8 +225,10 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Production écrite', icon: '✍️', time: '~45 min', questions: 2, color: '#3357c5', types: ['Remplir un formulaire', 'Rédiger un texte'] },
       { name: 'Production orale', icon: '🎙️', time: '~15 min', questions: 3, color: '#4d71dd', types: ['Monologue suivi', 'Exercice en interaction'] },
     ],
-    mocks: [],
-    available: false,
+    mocks: [
+      { id: 'set-1', title: 'DELF B1 – Épreuve 1', subtitle: 'Compréhension oral · Écrits · Production écrite · Orale', free: true, parts: 5, questions: 22 },
+    ],
+    available: true,
   },
 
   'celpe-bras': {
@@ -246,8 +252,10 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Parte Escrita', icon: '✍️', time: '~150 min', questions: 4, color: '#009c3b', types: ['Tarefa 1: vídeo + produção escrita', 'Tarefa 2: áudio + produção escrita', 'Tarefa 3: texto + produção escrita', 'Tarefa 4: texto + produção escrita'] },
       { name: 'Parte Oral', icon: '🎙️', time: '~20 min', questions: 1, color: '#33b563', types: ['Interação com avaliador', 'Discussão de temas a partir de elementos provocadores'] },
     ],
-    mocks: [],
-    available: false,
+    mocks: [
+      { id: 'set-1', title: 'CELPE-BRAS – Simulado 1', subtitle: 'Parte Escrita · Parte Oral', free: true, parts: 5, questions: 7 },
+    ],
+    available: true,
   },
 };
 

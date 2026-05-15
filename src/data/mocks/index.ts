@@ -14,6 +14,10 @@ import ieltsSet2 from './ielts-set-2';
 import ieltsSet3 from './ielts-set-3';
 import ieltsSet4 from './ielts-set-4';
 import toeflSet1 from './toefl-set-1';
+import cilsCeliSet1 from './cils-celi-set-1';
+import delfDalfSet1 from './delf-dalf-set-1';
+import goetheSet1 from './goethe-set-1';
+import celpeBrasSet1 from './celpe-bras-set-1';
 
 const MOCK_REGISTRY: Record<string, MockExam> = {
   'icfes:mock-01': icfesMock01,
@@ -31,6 +35,10 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'ielts:set-3': ieltsSet3,
   'ielts:set-4': ieltsSet4,
   'toefl:set-1': toeflSet1,
+  'cils-celi:set-1': cilsCeliSet1,
+  'delf-dalf:set-1': delfDalfSet1,
+  'goethe:set-1': goetheSet1,
+  'celpe-bras:set-1': celpeBrasSet1,
 };
 
 export function getMock(examSlug: string, mockId: string): MockExam | null {
