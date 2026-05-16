@@ -14,6 +14,9 @@
   --serif: "Geist", ui-sans-serif, system-ui, sans-serif;
   --sans: "Geist", ui-sans-serif, system-ui, sans-serif;
   --mono: "Geist Mono", ui-monospace, monospace;
+  /* ── Surface tokens: use these instead of #fff for backgrounds ── */
+  --surface:  #ffffff;   /* card / component background */
+  --ink-bg:   #14215c;   /* dark-section / CTA / footer background */
 }
 
 @theme inline {
@@ -23,9 +26,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* ── Dark mode — activated via OS preference ─────────────────────────────── */
+/* ── Dark mode variables ─────────────────────────────────────────────────────
+   Applied when: OS prefers dark AND no explicit [data-theme="light"]
+   OR when [data-theme="dark"] is set manually (toggle)
+────────────────────────────────────────────────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg:         #0d0f1a;
     --bg-2:       #151929;
     --ink:        #e8ecf4;
@@ -34,8 +40,22 @@
     --line:       #e8ecf4;
     --line-soft:  rgba(232, 236, 244, 0.10);
     --fg:         #e8ecf4;
-    /* accent rojo se mantiene igual — contrasta bien en dark */
+    --surface:    #1a1f2e;
+    --ink-bg:     #1c2040;
   }
+}
+/* Explicit toggle override */
+[data-theme="dark"] {
+  --bg:         #0d0f1a;
+  --bg-2:       #151929;
+  --ink:        #e8ecf4;
+  --ink-2:      #b8c2e0;
+  --muted:      #7a87ad;
+  --line:       #e8ecf4;
+  --line-soft:  rgba(232, 236, 244, 0.10);
+  --fg:         #e8ecf4;
+  --surface:    #1a1f2e;
+  --ink-bg:     #1c2040;
 }
 
 * {
@@ -1064,7 +1084,7 @@ button {
 /* Shared section helpers */
 .wlh-section { padding: 5rem 0; }
 .wlh-section--alt { background: var(--bg-2); }
-.wlh-section--dark { background: var(--ink); }
+.wlh-section--dark { background: var(--ink-bg); }
 
 .wlh-eyebrow {
   font-family: var(--mono);
@@ -1145,11 +1165,11 @@ button {
 
 /* Hero lesson preview card */
 .wlh-lesson-preview {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line-soft);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(20,33,92,0.08);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
 .wlh-lesson-preview__header {
   display: flex;
@@ -1189,7 +1209,7 @@ button {
   padding: 0.7rem 1rem;
   border-radius: 8px;
   border: 1.5px solid var(--line-soft);
-  background: #fff;
+  background: var(--surface);
   text-align: left;
   font-size: 0.95rem;
   color: var(--ink);
@@ -1265,7 +1285,7 @@ button {
   gap: 0;
   transition: box-shadow 0.2s;
 }
-.wlh-lang-card:hover { box-shadow: 0 4px 16px rgba(20,33,92,0.1); }
+.wlh-lang-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
 .wlh-lang-card__top { margin-bottom: 0.8rem; }
 .wlh-lang-card__code {
   display: inline-flex;
@@ -1274,7 +1294,7 @@ button {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line-soft);
   font-family: var(--mono);
   font-size: 0.75rem;
@@ -1333,7 +1353,7 @@ button {
   padding: 0.3rem 0.8rem;
   border-radius: 100px;
   border: 1px solid var(--line-soft);
-  background: #fff;
+  background: var(--surface);
   color: var(--ink);
 }
 
@@ -1344,7 +1364,7 @@ button {
   padding: 0.85rem 1rem;
   border-radius: 10px;
   border: 1px solid var(--line-soft);
-  background: #fff;
+  background: var(--surface);
   margin-bottom: 6px;
   transition: box-shadow 0.15s;
 }
@@ -1441,7 +1461,7 @@ button {
   padding: 0.5rem 1.2rem;
   border-radius: 100px;
   border: 1.5px solid var(--line-soft);
-  background: #fff;
+  background: var(--surface);
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--muted);
@@ -1455,7 +1475,7 @@ button {
   border: 1px solid var(--line-soft);
   border-radius: 16px;
   overflow: hidden;
-  background: #fff;
+  background: var(--surface);
 }
 .wl-lesson-shell__header {
   padding: 1rem 1.5rem;
@@ -1520,7 +1540,7 @@ button {
   width: 24px;
   height: 24px;
   border-radius: 6px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line-soft);
   font-family: var(--mono);
   font-size: 10px;
@@ -1599,7 +1619,7 @@ button {
 @media (max-width: 768px) { .wlh-pricing-grid { grid-template-columns: 1fr; } }
 
 .wlh-price-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line-soft);
   border-radius: 16px;
   padding: 2rem 1.5rem;
@@ -1685,7 +1705,7 @@ button {
 }
 .wlh-faq__item {
   border-bottom: 1px solid var(--line-soft);
-  background: #fff;
+  background: var(--surface);
 }
 .wlh-faq__item:last-child { border-bottom: none; }
 .wlh-faq__q {
@@ -1721,7 +1741,7 @@ button {
 
 /* CTA */
 .wlh-cta {
-  background: var(--ink);
+  background: var(--ink-bg);
   padding: 5rem 0;
 }
 .wlh-cta__eyebrow {
@@ -1763,7 +1783,7 @@ button {
 
 /* FOOTER */
 .wlh-footer {
-  background: var(--ink);
+  background: var(--ink-bg);
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 3rem 0 0;
 }
@@ -3735,6 +3755,47 @@ button {
   display: inline-block;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Theme toggle (Apple-style pill) ─────────────────────────────────────── */
+.wl-theme-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.wl-theme-toggle__track {
+  display: flex;
+  align-items: center;
+  width: 48px;
+  height: 26px;
+  border-radius: 100px;
+  background: var(--line-soft);
+  border: 1.5px solid var(--border);
+  position: relative;
+  transition: background 0.25s, border-color 0.25s;
+}
+[data-theme="dark"] .wl-theme-toggle__track {
+  background: rgba(255,255,255,0.1);
+}
+.wl-theme-toggle__thumb {
+  position: absolute;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s;
+  line-height: 1;
+}
+.wl-theme-toggle__thumb[data-dark="true"] {
+  transform: translateX(22px);
+}
 
 /* User menu */
 .wl-user-menu { position: relative; }

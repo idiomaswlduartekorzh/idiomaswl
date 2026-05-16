@@ -6,6 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
+import { useTheme } from '@/components/ThemeProvider';
 
 const NAV_LINKS = [
   { label: 'Idiomas',  href: '/home#idiomas' },
@@ -44,6 +45,25 @@ function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
         </div>
       )}
     </div>
+  );
+}
+
+function ThemeToggle() {
+  const { resolvedTheme, toggle } = useTheme();
+  const isDark = resolvedTheme === 'dark';
+  return (
+    <button
+      onClick={toggle}
+      aria-label={isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+      className="wl-theme-toggle"
+      title={isDark ? 'Modo claro' : 'Modo oscuro'}
+    >
+      <span className="wl-theme-toggle__track">
+        <span className="wl-theme-toggle__thumb" data-dark={isDark ? 'true' : 'false'}>
+          {isDark ? '🌙' : '☀️'}
+        </span>
+      </span>
+    </button>
   );
 }
 
@@ -109,6 +129,7 @@ export default function SiteNav() {
 
         {/* CTA / User */}
         <div className="wl-site-nav__cta">
+          <ThemeToggle />
           {loading ? (
             <span className="wl-site-nav__loading" />
           ) : user ? (
