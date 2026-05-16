@@ -242,10 +242,15 @@ export default function LeccionClient() {
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
           >
             <div className="lec-hero__photo-wrap">
-              <div className="lec-hero__photo-placeholder">
-                {/* Replace with: <Image src="/images/david-hero.jpg" alt="David" fill style={{objectFit:'cover'}} /> */}
-                <span className="lec-hero__photo-icon">📸</span>
-                <span className="lec-hero__photo-label">Foto de David aquí<br /><small>/public/images/david-hero.jpg</small></span>
+              <div className="lec-hero__photo-real">
+                <Image
+                  src="/images/david-hero.png"
+                  alt="José David — políglota, 8 idiomas"
+                  fill
+                  sizes="(max-width: 900px) 80vw, 380px"
+                  priority
+                  style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                />
               </div>
               {/* Floating label */}
               <div className="lec-hero__photo-badge">
