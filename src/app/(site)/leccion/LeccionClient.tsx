@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 
 /* ─── Data ─────────────────────────────────────────────────────────────────── */
 const TABS = [
@@ -194,16 +193,32 @@ export default function LeccionClient() {
   return (
     <div className="lec-page">
 
-      {/* ── Hero ──────────────────────────────────────────────────────────────── */}
+      {/* ── Hero — video background, centrado ─────────────────────────────────── */}
       <section className="lec-hero" ref={heroRef}>
+        {/* Video de fondo */}
+        <video
+          className="lec-hero__video"
+          src="/images/video-preview.mov"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        {/* Overlay oscuro sobre el video */}
+        <div className="lec-hero__overlay" />
+
+        {/* Floating Korean chars encima del video */}
         <FloatingChars chars={tab.chars} />
 
-        <motion.div className="lec-hero__content wrap" style={{ y: heroY, opacity: heroOpacity }}>
+        <motion.div
+          className="lec-hero__content lec-hero__content--center wrap"
+          style={{ y: heroY, opacity: heroOpacity }}
+        >
           <motion.div
-            className="lec-hero__left"
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="lec-hero__center"
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <span className="lec-hero__eyebrow">
               <span className="lec-hero__dot" /> Método WeLearn
@@ -216,78 +231,26 @@ export default function LeccionClient() {
               Once pasos diarios que imitan la forma en que el cerebro interioriza un idioma
               — sin memorizar reglas, sin aburrirte.
             </p>
+
+            {/* Primary CTA: probar Step 01 ya */}
+            <div className="lec-hero__ctas">
+              <Link href="/courses/korean/step/1" className="lec-hero__btn-primary">
+                🇰🇷 Probar el Paso 01 gratis
+              </Link>
+              <button
+                className="lec-hero__btn-ghost"
+                onClick={() => document.getElementById('lec-demo')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Ver cómo funciona ↓
+              </button>
+            </div>
+
             <div className="lec-hero__stats">
               <div className="lec-hero__stat"><strong>11</strong><span>pasos diarios</span></div>
               <div className="lec-hero__stat-div" />
               <div className="lec-hero__stat"><strong>8</strong><span>idiomas</span></div>
               <div className="lec-hero__stat-div" />
               <div className="lec-hero__stat"><strong>500+</strong><span>estudiantes</span></div>
-            </div>
-            <div className="lec-hero__ctas">
-              <Link href="/registro" className="lec-hero__btn-primary">Empezar gratis</Link>
-              <button
-                className="lec-hero__btn-ghost"
-                onClick={() => document.getElementById('lec-demo')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Ver la lección ↓
-              </button>
-            </div>
-          </motion.div>
-
-          {/* David — integrated, borderless */}
-          <motion.div
-            className="lec-hero__right"
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, delay: 0.25, ease: 'easeOut' }}
-          >
-            <div className="lec-hero__photo-wrap">
-              {/* Photo fades into dark bg via CSS mask */}
-              <div className="lec-hero__photo-real">
-                <Image
-                  src="/images/david-hero.png"
-                  alt="José David — políglota, 8 idiomas"
-                  fill
-                  sizes="(max-width: 900px) 80vw, 420px"
-                  priority
-                  style={{ objectFit: 'cover', objectPosition: 'center top' }}
-                />
-              </div>
-
-              {/* Floating word chip — left */}
-              <motion.div
-                className="lec-hero__photo-word"
-                initial={{ opacity: 0, x: -16 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1.1, duration: 0.5 }}
-              >
-                <strong>안녕하세요</strong>
-                <span>hola · coreano</span>
-              </motion.div>
-
-              {/* Language pill — top right */}
-              <motion.div
-                className="lec-hero__photo-lang"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.3, duration: 0.5 }}
-              >
-                🇰🇷 Yonsei-ro · Seúl
-              </motion.div>
-
-              {/* Identity badge — bottom right */}
-              <motion.div
-                className="lec-hero__photo-badge"
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.0, duration: 0.5 }}
-              >
-                <div className="lec-hero__photo-badge__avatar">JD</div>
-                <div className="lec-hero__photo-badge__info">
-                  <strong>José David</strong>
-                  <span>Políglota · 8 idiomas</span>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
         </motion.div>
