@@ -5,42 +5,83 @@ import {
   FadeUp, StaggerGrid, StaggerItem,
   HeroLeft, HeroItem, HeroCard,
   StatsRow, StatItem, StepRow,
+  CountUp, TiltCard, TeamCard, TestimonialCard,
 } from './HomeAnimations';
 
 export const metadata = { title: 'Idiomas WeLearn · Aprende un idioma, en serio.' };
 
 const IDIOMAS = [
-  { code: 'En', name: 'Inglés',    native: 'English',   days: '180 días · A1 – C2' },
-  { code: '한', name: 'Coreano',   native: '한국어',    days: '120 días · A1 – B2' },
-  { code: '日', name: 'Japonés',   native: '日本語',    days: '140 días · A1 – B2' },
-  { code: 'It', name: 'Italiano',  native: 'Italiano',  days: '96 días · A1 – C1' },
-  { code: 'Fr', name: 'Francés',   native: 'Français',  days: '108 días · A1 – C1' },
-  { code: 'De', name: 'Alemán',    native: 'Deutsch',   days: '110 días · A1 – C1' },
-  { code: 'Pt', name: 'Portugués', native: 'Português', days: '92 días · A1 – C1' },
-  { code: 'Py', name: 'Ruso',      native: 'Русский',   days: '88 días · A1 – B2' },
+  { code: 'En', name: 'Inglés',    native: 'English',   desc: 'IELTS · TOEFL · ICFES',   active: true  },
+  { code: '한', name: 'Coreano',   native: '한국어',    desc: 'Método visual WeLearn',    active: true  },
+  { code: 'Fr', name: 'Francés',   native: 'Français',  desc: 'DELF · DALF',              active: true  },
+  { code: 'De', name: 'Alemán',    native: 'Deutsch',   desc: 'Goethe-Zertifikat',        active: true  },
+  { code: 'It', name: 'Italiano',  native: 'Italiano',  desc: 'CILS · CELI',              active: true  },
+  { code: 'Pt', name: 'Portugués', native: 'Português', desc: 'CELPE-Bras',               active: true  },
+  { code: '日', name: 'Japonés',   native: '日本語',    desc: 'JLPT · Próximamente',      active: false },
+  { code: 'Py', name: 'Ruso',      native: 'Русский',   desc: 'TORFL · Próximamente',     active: false },
 ];
 
 const METODO = [
-  { n: '01', name: 'Activación',          desc: 'Imagen, audio y forma escrita para abrir contexto.',   min: '6 min' },
-  { n: '02', name: 'Adquisición guiada',  desc: 'Quiz inicial con palabras nuevas y recicladas.',        min: '8 min' },
-  { n: '03', name: 'Reconocimiento',      desc: 'Repaso espaciado de alta retención.',                   min: '10 min' },
-  { n: '04', name: 'Escucha sobrevivible',desc: 'Audio corto adaptado al nivel.',                        min: '7 min' },
-  { n: '05', name: 'Contexto',            desc: 'Notas de gramática, estilo y cultura.',                 min: '9 min' },
-  { n: '06', name: 'Descubrir el patrón', desc: 'Detección guiada de estructuras.',                      min: '8 min' },
-  { n: '07', name: 'Microexplicaciones',  desc: 'Cápsulas breves para dudas frecuentes.',                min: '5 min' },
-  { n: '08', name: 'Producción guiada',   desc: 'Construcción de frases con apoyo.',                     min: '10 min' },
-  { n: '09', name: 'Interacción reactiva',desc: 'Respuestas rápidas en contexto.',                       min: '8 min' },
-  { n: '10', name: 'Examen del día',      desc: 'Comprobación de interiorización inmediata.',            min: '6 min' },
-  { n: '11', name: 'Examen acumulativo',  desc: 'Retención de largo plazo.',                             min: '10 min' },
+  { n: '01', name: 'Activación',           desc: 'Imagen, audio y forma escrita para abrir contexto.',   min: '6 min' },
+  { n: '02', name: 'Adquisición guiada',   desc: 'Quiz inicial con palabras nuevas y recicladas.',        min: '8 min' },
+  { n: '03', name: 'Reconocimiento',       desc: 'Repaso espaciado de alta retención.',                   min: '10 min' },
+  { n: '04', name: 'Escucha sobrevivible', desc: 'Audio corto adaptado al nivel.',                        min: '7 min' },
+  { n: '05', name: 'Contexto',             desc: 'Notas de gramática, estilo y cultura.',                 min: '9 min' },
+  { n: '06', name: 'Descubrir el patrón',  desc: 'Detección guiada de estructuras.',                      min: '8 min' },
+  { n: '07', name: 'Microexplicaciones',   desc: 'Cápsulas breves para dudas frecuentes.',                min: '5 min' },
+  { n: '08', name: 'Producción guiada',    desc: 'Construcción de frases con apoyo.',                     min: '10 min' },
+  { n: '09', name: 'Interacción reactiva', desc: 'Respuestas rápidas en contexto.',                       min: '8 min' },
+  { n: '10', name: 'Examen del día',       desc: 'Comprobación de interiorización inmediata.',            min: '6 min' },
+  { n: '11', name: 'Examen acumulativo',   desc: 'Retención de largo plazo.',                             min: '10 min' },
 ];
 
 const EXAMENES = [
-  { badge: 'ACADEMIC',       name: 'TOEFL',    lang: 'Inglés · iBT',               weeks: '8 semanas',  mocks: '12 simulacros', slug: 'toefl' },
-  { badge: 'BAND 7+',       name: 'IELTS',    lang: 'Inglés · Academic & General', weeks: '8 semanas',  mocks: '10 simulacros', slug: 'ielts' },
-  { badge: 'COLOMBIA',      name: 'ICFES',    lang: 'Inglés · Saber 11',           weeks: '12 semanas', mocks: '20 simulacros', slug: 'icfes' },
-  { badge: 'ZERTIFIKAT',    name: 'Goethe',   lang: 'Alemán · A1 – C2',            weeks: '10 semanas', mocks: '8 simulacros',  slug: 'goethe' },
-  { badge: 'OFFICIEL',      name: 'DELF/DALF',lang: 'Francés · A1 – C2',           weeks: '10 semanas', mocks: '8 simulacros',  slug: 'delf-dalf' },
-  { badge: 'CERTIFICAZIONE',name: 'CILS',     lang: 'Italiano · A1 – C2',          weeks: '10 semanas', mocks: '6 simulacros',  slug: 'cils-celi' },
+  { badge: 'ACADEMIC',        name: 'TOEFL',     lang: 'Inglés · iBT',               weeks: '8 semanas',  mocks: '12 simulacros', slug: 'toefl'     },
+  { badge: 'BAND 7+',        name: 'IELTS',     lang: 'Inglés · Academic & General', weeks: '8 semanas',  mocks: '10 simulacros', slug: 'ielts'     },
+  { badge: 'COLOMBIA',       name: 'ICFES',     lang: 'Inglés · Saber 11',           weeks: '12 semanas', mocks: '20 simulacros', slug: 'icfes'     },
+  { badge: 'ZERTIFIKAT',     name: 'Goethe',    lang: 'Alemán · A1 – C2',            weeks: '10 semanas', mocks: '8 simulacros',  slug: 'goethe'    },
+  { badge: 'OFFICIEL',       name: 'DELF/DALF', lang: 'Francés · A1 – C2',           weeks: '10 semanas', mocks: '8 simulacros',  slug: 'delf-dalf' },
+  { badge: 'CERTIFICAZIONE', name: 'CILS',      lang: 'Italiano · A1 – C2',          weeks: '10 semanas', mocks: '6 simulacros',  slug: 'cils-celi' },
+];
+
+const TEAM = [
+  {
+    initials: 'JD',
+    name: 'José David Duarte Silva',
+    role: 'Co-fundador · Director General',
+    tags: ['Políglota · 8 idiomas', 'Lingüística aplicada', 'Metodología pedagógica'],
+    bio: 'Fundó WeLearn para ofrecer una alternativa rigurosa a la enseñanza de idiomas superficial. Como políglota activo en ocho lenguas, diseñó el método de 11 pasos que estructura cada sesión de aprendizaje en la plataforma.',
+    accent: '#1a2ecc',
+  },
+  {
+    initials: 'ZK',
+    name: 'Zhanna Korzh',
+    role: 'Directora Académica',
+    tags: ['Diseño curricular', 'Preparación de exámenes', 'Evaluación lingüística'],
+    bio: 'Lidera el diseño curricular y la calidad académica de todos los cursos. Su experiencia en preparación de exámenes internacionales respalda el rigor de las rutas de certificación disponibles en la plataforma.',
+    accent: '#c8202e',
+  },
+];
+
+const TESTIMONIALS = [
+  {
+    name: 'Camila R.',
+    city: 'Bogotá',
+    exam: 'IELTS Academic · Band 7.0',
+    quote: 'Preparé el IELTS en 8 semanas usando los simulacros de WeLearn. El nivel de detalle en cada sección me permitió identificar exactamente dónde mejorar.',
+  },
+  {
+    name: 'Sebastián M.',
+    city: 'Medellín',
+    exam: 'Goethe B1 · Aprobado',
+    quote: 'Los simulacros del Goethe son los más completos que encontré en español. Pasé el examen en el primer intento con una preparación de 10 semanas.',
+  },
+  {
+    name: 'Laura P.',
+    city: 'Cali',
+    exam: 'DELF B2 · Mention Bien',
+    quote: 'La estructura de los audios y las tareas de producción escrita del DELF es idéntica al examen real. WeLearn me ahorró meses de búsqueda de material.',
+  },
 ];
 
 export default function HomePage() {
@@ -49,7 +90,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="wlh-hero">
         <HeroLeft>
-          <HeroItem><p className="wlh-eyebrow">Plataforma · 8 idiomas · 6 exámenes</p></HeroItem>
+          <HeroItem><p className="wlh-eyebrow">Plataforma · 8 idiomas · 6 exámenes internacionales</p></HeroItem>
           <HeroItem>
             <h1 className="wlh-hero__h1">
               Aprender un<br />idioma, <em>en serio.</em>
@@ -57,12 +98,12 @@ export default function HomePage() {
           </HeroItem>
           <HeroItem>
             <p className="wlh-hero__desc">
-              Once pasos diarios diseñados para interiorizar contenido en vez de memorizarlo a medias.
+              Preparación real para exámenes internacionales y aprendizaje estructurado en once pasos diarios.
             </p>
           </HeroItem>
           <HeroItem>
             <div className="wlh-hero__ctas">
-              <button className="btn wlh-hero__btn-primary">Empezar gratis</button>
+              <Link href="/registro" className="btn wlh-hero__btn-primary">Empezar gratis</Link>
               <Link href="#coreano-preview" className="btn btn-ghost wlh-hero__btn-ghost">Ver una lección</Link>
             </div>
           </HeroItem>
@@ -93,59 +134,95 @@ export default function HomePage() {
         </HeroCard>
       </section>
 
-      {/* STATS ROW */}
+      {/* STATS ROW — gradient */}
       <StatsRow className="wlh-stats">
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num">8</span>
-          <span className="wlh-stat__lbl">idiomas en diseño de shell</span>
+          <span className="wlh-stat__num"><CountUp to={8} /></span>
+          <span className="wlh-stat__lbl">idiomas disponibles</span>
         </StatItem>
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num">6</span>
-          <span className="wlh-stat__lbl">rutas de examen en preview</span>
+          <span className="wlh-stat__num"><CountUp to={6} /></span>
+          <span className="wlh-stat__lbl">exámenes internacionales</span>
         </StatItem>
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num">11</span>
-          <span className="wlh-stat__lbl">pasos del método visual</span>
+          <span className="wlh-stat__num"><CountUp to={11} /></span>
+          <span className="wlh-stat__lbl">pasos del método diario</span>
         </StatItem>
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num wlh-stat__num--text">Demo</span>
-          <span className="wlh-stat__lbl">métricas no finales en esta fase</span>
+          <span className="wlh-stat__num"><CountUp to={500} suffix="+" /></span>
+          <span className="wlh-stat__lbl">estudiantes preparados</span>
         </StatItem>
       </StatsRow>
 
-      {/* IDIOMAS */}
-      <section id="idiomas" className="wlh-section">
+      {/* CERTIFICACIONES — moved up */}
+      <section id="examenes" className="wlh-section wlh-section--dark">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">01 — Catálogo</p>
-            <h2 className="wlh-section-h2">Ocho idiomas. Un mismo método.</h2>
-            <p className="wlh-section-desc">Cada idioma conserva la misma estructura de 11 pasos diarios con variaciones de contenido, ritmo y material de práctica.</p>
+            <p className="wlh-section-eyebrow wlh-section-eyebrow--light">01 — Certificaciones</p>
+            <h2 className="wlh-section-h2 wlh-section-h2--light">Preparación específica para exámenes.</h2>
+            <p className="wlh-section-desc wlh-section-desc--light">
+              Simulacros construidos a partir de los exámenes oficiales. Cada ruta incluye material de práctica, audios reales y retroalimentación por sección.
+            </p>
           </FadeUp>
-          <StaggerGrid className="wlh-idiomas-grid">
-            {IDIOMAS.map(lang => (
-              <StaggerItem key={lang.name}>
-                <div className="wlh-lang-card">
-                  <div className="wlh-lang-card__top">
-                    <span className="wlh-lang-card__code">{lang.code}</span>
-                  </div>
-                  <h3 className="wlh-lang-card__name">{lang.name}</h3>
-                  <p className="wlh-lang-card__native">{lang.native}</p>
-                  <div className="wlh-lang-card__footer">
-                    <span className="wlh-lang-card__days">{lang.days}</span>
-                    <button className="wlh-lang-card__cta">Ver ruta demo →</button>
-                  </div>
-                </div>
+          <StaggerGrid className="wlh-exams-grid">
+            {EXAMENES.map(ex => (
+              <StaggerItem key={ex.name}>
+                <TiltCard>
+                  <Link href={`/examenes/${ex.slug}`} className="wlh-exam-card">
+                    <span className="wlh-exam-card__badge">{ex.badge}</span>
+                    <h3 className="wlh-exam-card__name">{ex.name}</h3>
+                    <p className="wlh-exam-card__lang">{ex.lang}</p>
+                    <div className="wlh-exam-card__stats">
+                      <span>{ex.weeks}</span>
+                      <span>·</span>
+                      <span>{ex.mocks}</span>
+                    </div>
+                  </Link>
+                </TiltCard>
               </StaggerItem>
             ))}
           </StaggerGrid>
         </div>
       </section>
 
-      {/* METODO */}
+      {/* IDIOMAS */}
+      <section id="idiomas" className="wlh-section">
+        <div className="wrap">
+          <FadeUp>
+            <p className="wlh-section-eyebrow">02 — Catálogo</p>
+            <h2 className="wlh-section-h2">Ocho idiomas. Un mismo método.</h2>
+            <p className="wlh-section-desc">
+              Cada idioma sigue la misma estructura de 11 pasos diarios, con contenido, ritmo y material de práctica adaptados a cada lengua.
+            </p>
+          </FadeUp>
+          <StaggerGrid className="wlh-idiomas-grid">
+            {IDIOMAS.map(lang => (
+              <StaggerItem key={lang.name}>
+                <TiltCard>
+                  <div className={`wlh-lang-card${!lang.active ? ' wlh-lang-card--soon' : ''}`}>
+                    <div className="wlh-lang-card__top">
+                      <span className="wlh-lang-card__code">{lang.code}</span>
+                      {!lang.active && <span className="wlh-lang-card__soon-badge">Próximamente</span>}
+                    </div>
+                    <h3 className="wlh-lang-card__name">{lang.name}</h3>
+                    <p className="wlh-lang-card__native">{lang.native}</p>
+                    <div className="wlh-lang-card__footer">
+                      <span className="wlh-lang-card__days">{lang.desc}</span>
+                      {lang.active && <button className="wlh-lang-card__cta">Ver ruta →</button>}
+                    </div>
+                  </div>
+                </TiltCard>
+              </StaggerItem>
+            ))}
+          </StaggerGrid>
+        </div>
+      </section>
+
+      {/* METODO — moved down */}
       <section id="metodo" className="wlh-section wlh-section--alt">
         <div className="wrap wlh-metodo-wrap">
           <FadeUp className="wlh-metodo-left">
-            <p className="wlh-section-eyebrow">02 — Método</p>
+            <p className="wlh-section-eyebrow">03 — Método</p>
             <h2 className="wlh-section-h2">El día tiene once pasos.</h2>
             <p className="wlh-section-desc">Exposición, integración, práctica y revisión acumulativa. Cada bloque cumple una función concreta en el ciclo de aprendizaje.</p>
             <div className="wlh-metodo-tags">
@@ -168,30 +245,60 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CERTIFICACIONES */}
-      <section id="examenes" className="wlh-section wlh-section--dark">
+      {/* EQUIPO */}
+      <section id="equipo" className="wlh-section">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow wlh-section-eyebrow--light">03 — Certificaciones</p>
-            <h2 className="wlh-section-h2 wlh-section-h2--light">Preparación específica para exámenes.</h2>
-            <p className="wlh-section-desc wlh-section-desc--light">TOEFL, IELTS, ICFES y rutas extendidas con simulacros por objetivo.</p>
+            <p className="wlh-section-eyebrow">04 — Equipo</p>
+            <h2 className="wlh-section-h2">Quiénes están detrás de WeLearn.</h2>
+            <p className="wlh-section-desc">
+              WeLearn es una academia construida por profesionales con experiencia directa en aprendizaje de idiomas y preparación de exámenes internacionales.
+            </p>
           </FadeUp>
-          <StaggerGrid className="wlh-exams-grid">
-            {EXAMENES.map(ex => (
-              <StaggerItem key={ex.name}>
-                <Link href={`/examenes/${ex.slug}`} className="wlh-exam-card">
-                  <span className="wlh-exam-card__badge">{ex.badge}</span>
-                  <h3 className="wlh-exam-card__name">{ex.name}</h3>
-                  <p className="wlh-exam-card__lang">{ex.lang}</p>
-                  <div className="wlh-exam-card__stats">
-                    <span>{ex.weeks}</span>
-                    <span>·</span>
-                    <span>{ex.mocks}</span>
+          <div className="wlh-team-grid">
+            {TEAM.map((member, i) => (
+              <TeamCard key={member.name} className="wlh-team-card" delay={i * 0.12}>
+                <div className="wlh-team-card__avatar" style={{ background: member.accent }}>
+                  {member.initials}
+                </div>
+                <div className="wlh-team-card__body">
+                  <h3 className="wlh-team-card__name">{member.name}</h3>
+                  <p className="wlh-team-card__role">{member.role}</p>
+                  <div className="wlh-team-card__tags">
+                    {member.tags.map(t => <span key={t} className="wlh-tag">{t}</span>)}
                   </div>
-                </Link>
-              </StaggerItem>
+                  <p className="wlh-team-card__bio">{member.bio}</p>
+                </div>
+              </TeamCard>
             ))}
-          </StaggerGrid>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIOS */}
+      <section className="wlh-section wlh-section--alt">
+        <div className="wrap">
+          <FadeUp>
+            <p className="wlh-section-eyebrow">05 — Resultados</p>
+            <h2 className="wlh-section-h2">Estudiantes que alcanzaron su objetivo.</h2>
+            <p className="wlh-section-desc">
+              Más de 500 estudiantes han usado WeLearn para preparar sus exámenes internacionales.
+            </p>
+          </FadeUp>
+          <div className="wlh-testimonials-grid">
+            {TESTIMONIALS.map((t, i) => (
+              <TestimonialCard key={t.name} className="wlh-testimonial-card" delay={i * 0.1}>
+                <p className="wlh-testimonial-card__quote">"{t.quote}"</p>
+                <div className="wlh-testimonial-card__footer">
+                  <div className="wlh-testimonial-card__avatar">{t.name[0]}</div>
+                  <div>
+                    <p className="wlh-testimonial-card__name">{t.name} · {t.city}</p>
+                    <p className="wlh-testimonial-card__exam">{t.exam}</p>
+                  </div>
+                </div>
+              </TestimonialCard>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -213,7 +320,7 @@ export default function HomePage() {
       <section id="precios" className="wlh-section wlh-section--alt">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">04 — Precios</p>
+            <p className="wlh-section-eyebrow">07 — Precios</p>
             <h2 className="wlh-section-h2">Un plan por idioma. Sin truco.</h2>
           </FadeUp>
           <StaggerGrid className="wlh-pricing-grid">
@@ -228,7 +335,7 @@ export default function HomePage() {
                   <li>Demo de un examen internacional</li>
                   <li>Sin tarjeta</li>
                 </ul>
-                <button className="btn btn-ghost" style={{ width: '100%' }}>Crear cuenta</button>
+                <Link href="/registro" className="btn btn-ghost" style={{ width: '100%', display: 'block', textAlign: 'center' }}>Crear cuenta</Link>
               </div>
             </StaggerItem>
             <StaggerItem>
@@ -243,7 +350,7 @@ export default function HomePage() {
                   <li>Examen semanal</li>
                   <li>Progreso detallado</li>
                 </ul>
-                <button className="btn" style={{ width: '100%' }}>Empezar idioma</button>
+                <Link href="/registro" className="btn" style={{ width: '100%', display: 'block', textAlign: 'center' }}>Empezar idioma</Link>
               </div>
             </StaggerItem>
             <StaggerItem>
@@ -269,7 +376,7 @@ export default function HomePage() {
       <section className="wlh-section">
         <div className="wrap wlh-faq-wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">05 — Preguntas</p>
+            <p className="wlh-section-eyebrow">08 — Preguntas</p>
             <h2 className="wlh-section-h2">Lo que casi siempre nos preguntan.</h2>
           </FadeUp>
           <FadeUp delay={0.1}>
@@ -285,7 +392,7 @@ export default function HomePage() {
             <p className="wlh-cta__eyebrow">Empieza hoy</p>
             <h2 className="wlh-cta__h2">Tu primer día es gratis.</h2>
             <div className="wlh-cta__btns">
-              <button className="btn wlh-cta__btn-primary">Crear cuenta</button>
+              <Link href="/registro" className="btn wlh-cta__btn-primary">Crear cuenta</Link>
               <Link href="#coreano-preview" className="wlh-cta__link">Ver una lección primero</Link>
             </div>
           </div>
@@ -297,25 +404,25 @@ export default function HomePage() {
         <div className="wrap wlh-footer__inner">
           <div className="wlh-footer__brand">
             <span className="wlh-footer__logo"><strong>Idiomas</strong> WeLearn</span>
-            <p className="wlh-footer__tagline">Once pasos al día. Ocho idiomas. Seis exámenes internacionales.</p>
+            <p className="wlh-footer__tagline">Once pasos al día. Seis exámenes internacionales. Un método que funciona.</p>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Idiomas</p>
             <Link href="#idiomas">Inglés</Link>
             <Link href="#idiomas">Coreano</Link>
-            <Link href="#idiomas">Japonés</Link>
+            <Link href="#idiomas">Francés</Link>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Exámenes</p>
             <Link href="/examenes/toefl">TOEFL</Link>
             <Link href="/examenes/ielts">IELTS</Link>
-            <Link href="/examenes/icfes">ICFES</Link>
+            <Link href="/examenes/goethe">Goethe</Link>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Compañía</p>
+            <Link href="#equipo">Equipo</Link>
             <Link href="#metodo">Método</Link>
             <Link href="#">Contacto</Link>
-            <Link href="#">Privacidad</Link>
           </div>
         </div>
         <div className="wlh-footer__bottom">

@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, type Variants } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { motion, animate, useInView, type Variants } from 'framer-motion';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -17,7 +18,7 @@ const staggerItem: Variants = {
   show:   { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number,number,number,number] } },
 };
 
-const viewport = { once: true, margin: '-60px' };
+const viewport = { once: true, margin: '-40px' };
 
 // Generic fade-up on scroll
 export function FadeUp({ children, delay = 0, className }: {
@@ -30,8 +31,8 @@ export function FadeUp({ children, delay = 0, className }: {
       whileInView="show"
       viewport={viewport}
       variants={{
-        hidden: { opacity: 0, y: 28 },
-        show:   { opacity: 1, y: 0, transition: { duration: 0.55, delay, ease: [0.22,1,0.36,1] as [number,number,number,number] } },
+        hidden: { opacity: 0, y: 48 },
+        show:   { opacity: 1, y: 0, transition: { duration: 0.65, delay, ease: [0.22,1,0.36,1] as [number,number,number,number] } },
       }}
     >
       {children}
@@ -138,6 +139,78 @@ export function StepRow({ children, className, index }: {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={viewport}
       transition={{ duration: 0.45, delay: index * 0.04, ease: [0.22,1,0.36,1] as [number,number,number,number] }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+// ── NEW: CountUp number animation ────────────────────────────────────────────
+export function CountUp({ to, suffix = '', className }: {
+  to: number; suffix?: string; className?: string;
+}) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-40px' });
+
+  useEffect(() => {
+    if (!inView || !ref.current) return;
+    const controls = animate(0, to, {
+      duration: 1.6,
+      ease: 'easeOut',
+      onUpdate: (v) => {
+        if (ref.current) ref.current.textContent = Math.round(v) + suffix;
+      },
+    });
+    return controls.stop;
+  }, [inView, to, suffix]);
+
+  return <span ref={ref} className={className}>0{suffix}</span>;
+}
+
+// ── NEW: 3D Tilt card on hover ────────────────────────────────────────────────
+export function TiltCard({ children, className }: { children: React.ReactNode; className?: string }) {
+  return (
+    <motion.div
+      className={className}
+      whileHover={{ rotateX: -4, rotateY: 5, scale: 1.025, z: 20 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ type: 'spring', stiffness: 280, damping: 18 }}
+      style={{ transformStyle: 'preserve-3d', willChange: 'transform' }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+// ── NEW: Team card fade-in with scale ─────────────────────────────────────────
+export function TeamCard({ children, className, delay = 0 }: {
+  children: React.ReactNode; className?: string; delay?: number;
+}) {
+  return (
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, y: 40, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      whileHover={{ y: -6 }}
+      viewport={viewport}
+      transition={{ duration: 0.6, delay, ease: [0.22,1,0.36,1] as [number,number,number,number] }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+// ── NEW: Testimonial slide-in ─────────────────────────────────────────────────
+export function TestimonialCard({ children, className, delay = 0 }: {
+  children: React.ReactNode; className?: string; delay?: number;
+}) {
+  return (
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, x: 30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={viewport}
+      transition={{ duration: 0.55, delay, ease: [0.22,1,0.36,1] as [number,number,number,number] }}
     >
       {children}
     </motion.div>

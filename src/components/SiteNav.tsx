@@ -80,12 +80,13 @@ export default function SiteNav() {
         <Link href="/home" className="wl-site-nav__brand">
           <Image
             src="/images/welearn-logo.svg"
-            alt="WeLearn"
-            width={110}
-            height={38}
+            alt="WeLearn logo"
+            width={40}
+            height={40}
             priority
             className="wl-site-nav__logo"
           />
+          <span className="wl-site-nav__brand-name">Idiomas WeLearn</span>
         </Link>
 
         {/* Desktop links */}
