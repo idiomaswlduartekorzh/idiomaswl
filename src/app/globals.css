@@ -3736,9 +3736,9 @@ button {
 /* Logo: white-background pill that zooms into the actual logo content area */
 .wl-site-nav__logo-wrap {
   position: relative;
-  width: 96px;
-  height: 38px;
-  border-radius: 7px;
+  width: 68px;
+  height: 26px;
+  border-radius: 5px;
   background: #fff;
   overflow: hidden;
   flex-shrink: 0;
