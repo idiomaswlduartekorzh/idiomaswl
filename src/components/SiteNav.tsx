@@ -1,12 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import { useTheme } from '@/components/ThemeProvider';
+import { WeLearnLogo } from '@/components/WeLearnLogo';
 
 const NAV_LINKS = [
   { label: 'Idiomas',  href: '/home#idiomas' },
@@ -98,14 +98,7 @@ export default function SiteNav() {
       <div className="wl-site-nav__inner wrap">
         {/* Brand with logo */}
         <Link href="/home" className="wl-site-nav__brand">
-          <Image
-            src="/images/welearn-logo.svg"
-            alt="WeLearn logo"
-            width={40}
-            height={40}
-            priority
-            className="wl-site-nav__logo"
-          />
+          <WeLearnLogo height={36} />
           <span className="wl-site-nav__brand-name">Idiomas WeLearn</span>
         </Link>
 
