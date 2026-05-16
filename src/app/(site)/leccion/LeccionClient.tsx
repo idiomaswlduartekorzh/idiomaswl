@@ -234,29 +234,60 @@ export default function LeccionClient() {
             </div>
           </motion.div>
 
-          {/* David placeholder — swap with real photo */}
+          {/* David — integrated, borderless */}
           <motion.div
             className="lec-hero__right"
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.25, ease: 'easeOut' }}
           >
             <div className="lec-hero__photo-wrap">
+              {/* Photo fades into dark bg via CSS mask */}
               <div className="lec-hero__photo-real">
                 <Image
                   src="/images/david-hero.png"
                   alt="José David — políglota, 8 idiomas"
                   fill
-                  sizes="(max-width: 900px) 80vw, 380px"
+                  sizes="(max-width: 900px) 80vw, 420px"
                   priority
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
                 />
               </div>
-              {/* Floating label */}
-              <div className="lec-hero__photo-badge">
-                <strong>José David</strong>
-                <span>Políglota · 8 idiomas</span>
-              </div>
+
+              {/* Floating word chip — left */}
+              <motion.div
+                className="lec-hero__photo-word"
+                initial={{ opacity: 0, x: -16 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 1.1, duration: 0.5 }}
+              >
+                <strong>안녕하세요</strong>
+                <span>hola · coreano</span>
+              </motion.div>
+
+              {/* Language pill — top right */}
+              <motion.div
+                className="lec-hero__photo-lang"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.3, duration: 0.5 }}
+              >
+                🇰🇷 Yonsei-ro · Seúl
+              </motion.div>
+
+              {/* Identity badge — bottom right */}
+              <motion.div
+                className="lec-hero__photo-badge"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.0, duration: 0.5 }}
+              >
+                <div className="lec-hero__photo-badge__avatar">JD</div>
+                <div className="lec-hero__photo-badge__info">
+                  <strong>José David</strong>
+                  <span>Políglota · 8 idiomas</span>
+                </div>
+              </motion.div>
             </div>
           </motion.div>
         </motion.div>

@@ -4238,54 +4238,116 @@ button {
 }
 .lec-hero__btn-ghost:hover { background: rgba(255,255,255,0.14); }
 
-/* Photo area */
-.lec-hero__right { display: flex; justify-content: center; }
-.lec-hero__photo-wrap {
-  position: relative;
-  width: 380px;
-  max-width: 100%;
-}
-.lec-hero__photo-placeholder {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  background: rgba(255,255,255,0.04);
-  border: 2px dashed rgba(255,255,255,0.12);
-  border-radius: 20px;
+/* Photo area — integrated, borderless, fades into hero bg */
+.lec-hero__right {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 12px;
-  color: rgba(255,255,255,0.3);
-  text-align: center;
-}
-.lec-hero__photo-icon { font-size: 2.5rem; }
-.lec-hero__photo-label { font-size: 0.85rem; line-height: 1.5; }
-.lec-hero__photo-label small { opacity: 0.6; font-family: var(--mono); font-size: 0.75rem; }
-/* When real photo is available: */
-.lec-hero__photo-real {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  border-radius: 20px;
-  overflow: hidden;
+  align-items: flex-end;
   position: relative;
 }
 
-.lec-hero__photo-badge {
+.lec-hero__photo-wrap {
+  position: relative;
+  width: 420px;
+  max-width: 100%;
+  /* explicit height so absolute children position correctly */
+  aspect-ratio: 3 / 4;
+}
+
+/* Glow orb behind David */
+.lec-hero__photo-wrap::before {
+  content: '';
   position: absolute;
-  bottom: -16px;
-  right: -16px;
-  background: rgba(10,12,24,0.85);
+  inset: -60px;
+  background: radial-gradient(ellipse at 55% 45%, rgba(26,46,204,0.40) 0%, rgba(200,32,46,0.10) 50%, transparent 72%);
+  z-index: 0;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.lec-hero__photo-real {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  /* Fade edges into dark background — no hard border */
+  -webkit-mask-image:
+    linear-gradient(to right,  transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 6%,  black 72%, transparent 100%);
+  -webkit-mask-composite: destination-in;
+  mask-image:
+    linear-gradient(to right,  transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 6%,  black 72%, transparent 100%);
+  mask-composite: intersect;
+  z-index: 1;
+}
+
+/* Korean word chip — top-left, overlapping the photo */
+.lec-hero__photo-word {
+  position: absolute;
+  top: 80px;
+  left: -20px;
+  z-index: 4;
+  background: rgba(26,46,204,0.80);
   backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
   border-radius: 12px;
-  padding: 0.75rem 1.1rem;
+  padding: 0.55rem 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.lec-hero__photo-badge strong { font-size: 0.9rem; color: #fff; font-weight: 700; }
-.lec-hero__photo-badge span { font-size: 0.75rem; color: rgba(255,255,255,0.45); font-family: var(--mono); }
+.lec-hero__photo-word strong { font-size: 1.15rem; color: #fff; font-weight: 800; line-height: 1; }
+.lec-hero__photo-word span   { font-size: 0.62rem; color: rgba(255,255,255,0.55); font-family: var(--mono); letter-spacing: 0.08em; }
+
+/* Location pill — top-right */
+.lec-hero__photo-lang {
+  position: absolute;
+  top: 48px;
+  right: -12px;
+  z-index: 4;
+  background: rgba(10,12,24,0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 100px;
+  padding: 0.38rem 0.9rem;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.72);
+  font-family: var(--mono);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* Identity badge — bottom-left */
+.lec-hero__photo-badge {
+  position: absolute;
+  bottom: 80px;
+  left: -12px;
+  z-index: 4;
+  background: rgba(8,10,20,0.82);
+  backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(255,255,255,0.13);
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.lec-hero__photo-badge__avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a2ecc, #c8202e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+.lec-hero__photo-badge__info { display: flex; flex-direction: column; gap: 2px; }
+.lec-hero__photo-badge strong { font-size: 0.85rem; color: #fff; font-weight: 700; }
+.lec-hero__photo-badge span   { font-size: 0.68rem; color: rgba(255,255,255,0.42); font-family: var(--mono); }
 
 /* Scroll cue */
 .lec-hero__scroll-cue {
