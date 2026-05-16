@@ -5,8 +5,8 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
+import Image from 'next/image';
 import { useTheme } from '@/components/ThemeProvider';
-import { WeLearnLogo } from '@/components/WeLearnLogo';
 
 const NAV_LINKS = [
   { label: 'Idiomas',  href: '/home#idiomas' },
@@ -98,7 +98,16 @@ export default function SiteNav() {
       <div className="wl-site-nav__inner wrap">
         {/* Brand with logo */}
         <Link href="/home" className="wl-site-nav__brand">
-          <WeLearnLogo height={36} />
+          <div className="wl-site-nav__logo-wrap">
+            <Image
+              src="/images/welearn-logo.png"
+              alt="WeLearn"
+              fill
+              sizes="96px"
+              priority
+              style={{ objectFit: 'cover', objectPosition: 'center 42%' }}
+            />
+          </div>
           <span className="wl-site-nav__brand-name">Idiomas WeLearn</span>
         </Link>
 
