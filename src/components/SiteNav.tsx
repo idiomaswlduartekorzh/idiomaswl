@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { label: 'Idiomas',  href: '/home#idiomas' },
   { label: 'Método',   href: '/home#metodo' },
   { label: 'Exámenes', href: '/examenes' },
-  { label: 'Lección',  href: '/home#coreano-preview' },
+  { label: 'Lección',  href: '/leccion' },
   { label: 'Precios',  href: '/home#precios' },
 ];
 
@@ -116,6 +116,8 @@ export default function SiteNav() {
           {NAV_LINKS.map(({ label, href }) => {
             const active = href.startsWith('/examenes')
               ? pathname.startsWith('/examenes')
+              : href === '/leccion'
+              ? pathname === '/leccion'
               : pathname === '/home';
             return (
               <Link
