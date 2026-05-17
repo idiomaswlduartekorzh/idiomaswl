@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국어 관형절 — 대화형 수업 가이드</title>
+<style>
+  :root {
+    --bg: #f8f6ff;
+    --card: #ffffff;
+    --primary: #6c3fc5;
+    --secondary: #e8409a;
+    --accent: #ff7a00;
+    --green: #14a870;
+    --blue: #2176ff;
+    --red: #e63946;
+    --yellow: #f4c430;
+    --text: #1a1a2e;
+    --muted: #666;
+    --border: #e0daf5;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white; padding: 20px 24px; text-align: center;
+    position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(108,63,197,.3);
+  }
+  header h1 { font-size: 1.5rem; margin-bottom: 4px; }
+  header p { font-size: .85rem; opacity: .85; }
+
+  /* PROGRESS */
+  .progress-bar-wrap { background: rgba(255,255,255,.25); border-radius: 99px; height: 8px; margin-top: 10px; max-width: 400px; margin-inline: auto; }
+  .progress-bar { background: white; border-radius: 99px; height: 100%; transition: width .5s ease; width: 0%; }
+
+  /* LEVEL NAV */
+  .level-nav {
+    display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
+    padding: 14px 16px; background: white; border-bottom: 1px solid var(--border);
+    position: sticky; top: 82px; z-index: 99;
+  }
+  .level-btn {
+    padding: 6px 14px; border-radius: 99px; border: 2px solid var(--border);
+    background: white; cursor: pointer; font-size: .78rem; font-weight: 600;
+    transition: all .2s; color: var(--muted);
+  }
+  .level-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+  .level-btn.done { border-color: var(--green); color: var(--green); }
+  .level-btn.done.active { background: var(--green); color: white; }
+
+  /* SECTIONS */
+  .section { display: none; padding: 20px 16px; max-width: 820px; margin: 0 auto; animation: fadeIn .4s ease; }
+  .section.active { display: block; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+
+  /* CARDS */
+  .card {
+    background: var(--card); border-radius: 16px; padding: 20px;
+    margin-bottom: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    border: 1px solid var(--border);
+  }
+  .card h2 { font-size: 1.15rem; margin-bottom: 10px; color: var(--primary); }
+  .card h3 { font-size: 1rem; margin-bottom: 8px; color: var(--text); }
+  .card p { line-height: 1.65; font-size: .93rem; color: #333; margin-bottom: 8px; }
+
+  /* LEVEL BADGE */
+  .level-badge {
+    display: inline-block; border-radius: 99px; padding: 3px 12px;
+    font-size: .75rem; font-weight: 700; margin-bottom: 12px; text-transform: uppercase;
+  }
+  .badge-1 { background: #e8f4ff; color: var(--blue); }
+  .badge-2 { background: #e8fff4; color: var(--green); }
+  .badge-3 { background: #fff5e8; color: var(--accent); }
+  .badge-4 { background: #ffe8f5; color: var(--secondary); }
+  .badge-5 { background: #f0e8ff; color: var(--primary); }
+
+  /* GRAMMAR BOX */
+  .grammar-box {
+    background: linear-gradient(135deg, #f0e8ff, #e8f4ff);
+    border-radius: 12px; padding: 16px 20px; margin: 12px 0;
+    border-left: 4px solid var(--primary);
+  }
+  .grammar-formula {
+    font-size: 1.1rem; font-weight: 700; color: var(--primary);
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .formula-part { padding: 4px 10px; border-radius: 8px; }
+  .fp-verb { background: var(--blue); color: white; }
+  .fp-ending { background: var(--secondary); color: white; }
+  .fp-noun { background: var(--green); color: white; }
+  .fp-arrow { color: var(--accent); font-size: 1.3rem; }
+
+  /* EXAMPLE SENTENCES */
+  .example-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .example-item {
+    background: #f8f6ff; border-radius: 12px; padding: 14px 16px;
+    border: 1px solid var(--border); cursor: pointer;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .example-item:hover { transform: translateX(4px); box-shadow: 0 4px 12px rgba(108,63,197,.12); }
+  .example-ko { font-size: 1.05rem; font-weight: 600; margin-bottom: 4px; }
+  .example-es { font-size: .85rem; color: var(--muted); }
+  .example-breakdown { 
+    margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border);
+    display: none; font-size: .82rem; line-height: 1.6;
+  }
+  .example-item.open .example-breakdown { display: block; animation: fadeIn .25s ease; }
+
+  /* HIGHLIGHT spans */
+  .hl-verb { color: var(--blue); font-weight: 700; }
+  .hl-ending { color: var(--secondary); font-weight: 700; }
+  .hl-noun { color: var(--green); font-weight: 700; }
+  .hl-particle { color: var(--accent); font-weight: 700; }
+  .hl-tip { color: var(--primary); font-weight: 600; }
+
+  /* SENTENCE BUILDER ANIMATION */
+  .builder-wrap { margin: 16px 0; }
+  .builder-sentence {
+    font-size: 1.3rem; font-weight: 700; padding: 18px;
+    background: white; border-radius: 12px; min-height: 60px;
+    border: 2px solid var(--border); display: flex; align-items: center;
+    flex-wrap: wrap; gap: 4px;
+  }
+  .builder-token {
+    padding: 4px 10px; border-radius: 8px; opacity: 0;
+    transform: translateY(-10px); transition: opacity .3s, transform .3s;
+    font-size: 1rem;
+  }
+  .builder-token.show { opacity: 1; transform: translateY(0); }
+  .bt-verb { background: #dbeafe; color: var(--blue); }
+  .bt-ending { background: #fce7f3; color: var(--secondary); }
+  .bt-noun { background: #dcfce7; color: var(--green); }
+  .bt-particle { background: #ffedd5; color: var(--accent); }
+  .bt-normal { background: #f1f5f9; color: var(--text); }
+  .bt-translation { background: #f0e8ff; color: var(--primary); font-size: .85rem; margin-left: 8px; }
+  .build-btn {
+    margin-top: 10px; padding: 8px 20px; border-radius: 99px;
+    border: none; background: var(--primary); color: white;
+    cursor: pointer; font-weight: 600; font-size: .88rem;
+    transition: opacity .2s;
+  }
+  .build-btn:hover { opacity: .85; }
+
+  /* QUIZ */
+  .quiz-section { margin-top: 8px; }
+  .quiz-header {
+    display: flex; align-items: center; gap: 8px;
+    background: linear-gradient(90deg, var(--accent), #ff9a3c);
+    color: white; border-radius: 12px 12px 0 0; padding: 12px 16px;
+    font-weight: 700;
+  }
+  .quiz-body { background: white; border-radius: 0 0 12px 12px; padding: 16px; border: 1px solid var(--border); border-top: none; }
+  .quiz-q { font-size: .95rem; font-weight: 600; margin-bottom: 14px; color: var(--text); line-height: 1.5; }
+  .quiz-options { display: flex; flex-direction: column; gap: 8px; }
+  .quiz-opt {
+    padding: 10px 14px; border-radius: 10px; border: 2px solid var(--border);
+    cursor: pointer; font-size: .9rem; transition: all .15s; background: white;
+    text-align: left;
+  }
+  .quiz-opt:hover:not(.answered) { border-color: var(--primary); background: #f0e8ff; }
+  .quiz-opt.correct { background: #dcfce7; border-color: var(--green); color: var(--green); font-weight: 700; }
+  .quiz-opt.wrong { background: #fee2e2; border-color: var(--red); color: var(--red); }
+  .quiz-opt.show-correct { background: #dcfce7; border-color: var(--green); color: var(--green); }
+  .quiz-feedback { margin-top: 12px; padding: 10px 14px; border-radius: 10px; font-size: .88rem; display: none; }
+  .quiz-feedback.correct { background: #dcfce7; color: var(--green); display: block; }
+  .quiz-feedback.wrong { background: #fee2e2; color: var(--red); display: block; }
+  .quiz-counter { font-size: .78rem; opacity: .8; margin-left: auto; }
+
+  /* FILL BLANK */
+  .fill-blank { display: inline-block; border-bottom: 2px solid var(--secondary); min-width: 80px; text-align: center; margin: 0 4px; }
+  .fill-input {
+    border: none; border-bottom: 2px solid var(--secondary); background: transparent;
+    text-align: center; font-size: 1rem; font-weight: 700; width: 100px;
+    outline: none; color: var(--primary); padding: 2px 4px;
+  }
+  .fill-input.correct { border-color: var(--green); color: var(--green); }
+  .fill-input.wrong { border-color: var(--red); color: var(--red); }
+  .fill-check-btn {
+    padding: 6px 16px; border-radius: 99px; border: none;
+    background: var(--secondary); color: white; cursor: pointer;
+    font-size: .82rem; font-weight: 600; margin-left: 8px;
+    transition: opacity .2s;
+  }
+  .fill-check-btn:hover { opacity: .85; }
+
+  /* REVIEW CHIPS */
+  .review-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+  .review-chip {
+    padding: 4px 12px; border-radius: 99px; font-size: .8rem; font-weight: 600;
+    border: 2px solid; cursor: pointer; transition: all .2s;
+  }
+  .review-chip:hover { transform: scale(1.05); }
+
+  /* COMPARISON TABLE */
+  .compare-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 12px 0; }
+  .compare-table th { background: var(--primary); color: white; padding: 8px 12px; text-align: left; }
+  .compare-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table tr:nth-child(even) td { background: #f8f6ff; }
+
+  /* NAV BUTTONS */
+  .nav-buttons { display: flex; justify-content: space-between; margin-top: 24px; padding-bottom: 24px; }
+  .nav-btn {
+    padding: 10px 24px; border-radius: 99px; border: none; cursor: pointer;
+    font-weight: 700; font-size: .9rem; transition: all .2s;
+  }
+  .nav-prev { background: var(--border); color: var(--muted); }
+  .nav-next { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; }
+  .nav-btn:hover { opacity: .85; transform: scale(1.03); }
+
+  /* SCORE */
+  .score-display {
+    display: flex; align-items: center; gap: 8px;
+    background: #f0e8ff; border-radius: 99px; padding: 5px 14px;
+    font-weight: 700; font-size: .85rem; color: var(--primary);
+    position: fixed; bottom: 16px; right: 16px; z-index: 200;
+    box-shadow: 0 4px 16px rgba(108,63,197,.25);
+  }
+
+  /* TIP BOX */
+  .tip-box {
+    background: #fff9e6; border-left: 4px solid var(--yellow);
+    border-radius: 8px; padding: 12px 14px; margin: 10px 0; font-size: .88rem;
+  }
+  .tip-box strong { color: var(--accent); }
+
+  /* ANIM PULSE */
+  @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.06);} }
+  .pulse { animation: pulse 1.5s infinite; }
+
+  /* HERO intro */
+  .hero {
+    text-align: center; padding: 30px 20px;
+    background: linear-gradient(135deg, #f0e8ff, #e8f4ff);
+    border-radius: 20px; margin-bottom: 20px;
+  }
+  .hero .big { font-size: 3.5rem; margin-bottom: 8px; }
+  .hero h2 { font-size: 1.5rem; color: var(--primary); margin-bottom: 8px; }
+  .hero p { color: var(--muted); font-size: .95rem; max-width: 500px; margin: 0 auto 20px; }
+  .start-btn {
+    padding: 14px 36px; border-radius: 99px; border: none;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white; font-size: 1.05rem; font-weight: 700; cursor: pointer;
+    box-shadow: 0 6px 20px rgba(108,63,197,.35); transition: all .2s;
+  }
+  .start-btn:hover { transform: scale(1.04); }
+  .level-map { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+  .level-map-item {
+    background: white; border-radius: 12px; padding: 10px 14px;
+    text-align: center; font-size: .82rem; border: 2px solid var(--border);
+    min-width: 110px;
+  }
+  .level-map-item .lm-num { font-size: 1.4rem; margin-bottom: 2px; }
+  .level-map-item .lm-title { font-weight: 700; color: var(--primary); }
+  .level-map-item .lm-sub { color: var(--muted); }
+
+  /* Sentence animation area */
+  .sentence-demo {
+    background: white; border: 2px dashed var(--primary);
+    border-radius: 14px; padding: 20px; text-align: center;
+    margin: 14px 0; min-height: 70px; display: flex;
+    align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px;
+  }
+
+  /* confetti-like celebration */
+  .celebrate {
+    font-size: 2rem; text-align: center; padding: 16px;
+    animation: pulse 1s;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🇰🇷 한국어 관형절 — Cláusulas Relativas en Coreano</h1>
+  <p>Guía interactiva progresiva · Nivel A2 → Avanzado</p>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+</header>
+
+<!-- LEVEL NAV -->
+<div class="level-nav" id="levelNav">
+  <button class="level-btn active" onclick="goSection(0)" data-idx="0">🏠 Intro</button>
+  <button class="level-btn" onclick="goSection(1)" data-idx="1">1️⃣ -는</button>
+  <button class="level-btn" onclick="goSection(2)" data-idx="2">2️⃣ -(으)ㄴ</button>
+  <button class="level-btn" onclick="goSection(3)" data-idx="3">3️⃣ -(으)ㄹ</button>
+  <button class="level-btn" onclick="goSection(4)" data-idx="4">4️⃣ Lugar</button>
+  <button class="level-btn" onclick="goSection(5)" data-idx="5">5️⃣ Tiempo</button>
+  <button class="level-btn" onclick="goSection(6)" data-idx="6">6️⃣ 것 Nominaliz.</button>
+  <button class="level-btn" onclick="goSection(7)" data-idx="7">7️⃣ -지 Indirecta</button>
+  <button class="level-btn" onclick="goSection(8)" data-idx="8">🏆 Repaso</button>
+</div>
+
+<!-- SCORE -->
+<div class="score-display">⭐ <span id="scoreText">0 pts</span></div>
+
+<!-- ========== SECTION 0: INTRO ========== -->
+<div class="section active" id="section-0">
+  <div class="hero">
+    <div class="big">🔗</div>
+    <h2>관형절이란 무엇인가요?</h2>
+    <p>Las cláusulas relativas conectan una oración con un sustantivo. En español usamos <strong>que, donde, cuando</strong>... En coreano se hace con el verbo mismo — ¡sin pronombre relativo!</p>
+    <button class="start-btn" onclick="goSection(1)">수업 시작 →</button>
+  </div>
+
+  <div class="card">
+    <h2>📌 ¿Qué aprenderemos hoy?</h2>
+    <p>Mira estas frases. El coreano pone la cláusula relativa <strong>antes</strong> del sustantivo, no después:</p>
+    <ul class="example-list" style="margin-top:12px;">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">어제 <span class="hl-ending">전화한</span> <span class="hl-noun">사람</span>이 누구예요?</div>
+        <div class="example-es">¿Quién es la persona QUE llamó ayer?</div>
+        <div class="example-breakdown">
+          <b>어제</b> = ayer · <b class="hl-ending">전화한</b> = que llamó (전화하다 + ㄴ) · <b class="hl-noun">사람</b> = persona<br>
+          👉 La mini-oración "어제 전화한" modifica a "사람"
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">우리가 <span class="hl-ending">만난</span> <span class="hl-noun">식당</span>이 어디예요?</div>
+        <div class="example-es">¿Dónde está el restaurante DONDE nos conocimos?</div>
+        <div class="example-breakdown">
+          <b class="hl-ending">만난</b> = donde nos conocimos / en que nos conocimos (만나다 + ㄴ) · <b class="hl-noun">식당</b> = restaurante<br>
+          👉 El coreano no necesita "donde" — el verbo modificado ya lo dice todo
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">오늘 <span class="hl-ending">뭐 할지</span> 알고 싶어요.</div>
+        <div class="example-es">Quiero saber QUÉ vas a hacer hoy.</div>
+        <div class="example-breakdown">
+          <b class="hl-ending">뭐 할지</b> = qué harás (pregunta indirecta con -ㄹ지) · <b>알고 싶어요</b> = quiero saber<br>
+          👉 Las preguntas indirectas usan -지 — las veremos en el Nivel 7
+        </div>
+      </li>
+    </ul>
+    <div class="tip-box" style="margin-top:14px;">
+      <strong>💡 Clave:</strong> En coreano, la cláusula relativa siempre va <strong>antes</strong> del sustantivo que modifica, y el verbo toma una forma especial llamada <strong>관형사형 (forma adnominal)</strong>.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🗺️ Mapa del viaje</h2>
+    <div class="level-map">
+      <div class="level-map-item"><div class="lm-num">1️⃣</div><div class="lm-title">-는</div><div class="lm-sub">presente</div></div>
+      <div class="level-map-item"><div class="lm-num">2️⃣</div><div class="lm-title">-(으)ㄴ</div><div class="lm-sub">pasado</div></div>
+      <div class="level-map-item"><div class="lm-num">3️⃣</div><div class="lm-title">-(으)ㄹ</div><div class="lm-sub">futuro</div></div>
+      <div class="level-map-item"><div class="lm-num">4️⃣</div><div class="lm-title">장소</div><div class="lm-sub">lugar</div></div>
+      <div class="level-map-item"><div class="lm-num">5️⃣</div><div class="lm-title">시간</div><div class="lm-sub">tiempo</div></div>
+      <div class="level-map-item"><div class="lm-num">6️⃣</div><div class="lm-title">것</div><div class="lm-sub">nominaliz.</div></div>
+      <div class="level-map-item"><div class="lm-num">7️⃣</div><div class="lm-title">-지</div><div class="lm-sub">indirecta</div></div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <span></span>
+    <button class="nav-btn nav-next" onclick="goSection(1)">다음 →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 1: -는 ========== -->
+<div class="section" id="section-1">
+  <span class="level-badge badge-1">NIVEL 1 — PRESENTE</span>
+  <div class="card">
+    <h2>현재 관형사형: -는</h2>
+    <p>Cuando el verbo describe una acción que ocurre <strong>ahora o habitualmente</strong>, añadimos <strong>-는</strong> al verbo base.</p>
+
+    <div class="grammar-box">
+      <div class="grammar-formula">
+        <span class="formula-part fp-verb">동사 base</span>
+        <span class="fp-arrow">+</span>
+        <span class="formula-part fp-ending">-는</span>
+        <span class="fp-arrow">+</span>
+        <span class="formula-part fp-noun">sustantivo</span>
+        <span style="color:var(--muted);font-size:.85rem;margin-left:8px;">※ Todos los verbos de acción</span>
+      </div>
+    </div>
+
+    <div class="builder-wrap">
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:6px;">▶ Haz clic para construir la frase paso a paso:</p>
+      <div class="builder-sentence" id="builder1"></div>
+      <button class="build-btn" onclick="runBuilder('builder1', builders.b1)">문장 만들기 ▶</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예문 (Ejemplos) — toca para ver el análisis</h2>
+    <ul class="example-list">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">저기서 <span class="hl-verb">노래하</span><span class="hl-ending">는</span> <span class="hl-noun">사람</span>이 제 친구예요.</div>
+        <div class="example-es">La persona que canta allí es mi amigo/a.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">노래하다</b> (cantar) → quitar 다 → <b>노래하</b> + <b class="hl-ending">는</b> → modifica a <b class="hl-noun">사람</b><br>
+          📌 저기서 = allí · 제 = mi · 친구 = amigo/a
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">제가 매일 <span class="hl-verb">타</span><span class="hl-ending">는</span> <span class="hl-noun">버스</span>는 7번이에요.</div>
+        <div class="example-es">El autobús que cojo cada día es el número 7.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">타다</b> (coger/subir) → <b>타</b> + <b class="hl-ending">는</b> → modifica a <b class="hl-noun">버스</b><br>
+          📌 매일 = cada día · 번 = número
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">한국어를 <span class="hl-verb">공부하</span><span class="hl-ending">는</span> <span class="hl-noun">학생</span>들이 많아요.</div>
+        <div class="example-es">Hay muchos estudiantes que estudian coreano.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">공부하다</b> (estudiar) → <b>공부하</b> + <b class="hl-ending">는</b> → modifica a <b class="hl-noun">학생들</b><br>
+          📌 들 = plural · 많아요 = hay muchos
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">지금 <span class="hl-verb">자</span><span class="hl-ending">는</span> <span class="hl-noun">아기</span>를 깨우지 마세요.</div>
+        <div class="example-es">Por favor no despiertes al bebé que está durmiendo ahora.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">자다</b> (dormir) → <b>자</b> + <b class="hl-ending">는</b> → modifica a <b class="hl-noun">아기</b><br>
+          📌 깨우지 마세요 = no despiertes (imperativo negativo)
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>⚡ Ejercicio — Completa la forma</h2>
+    <div class="quiz-section">
+      <div class="quiz-header">🧩 Elige la opción correcta <span class="quiz-counter" id="q1counter">1/3</span></div>
+      <div class="quiz-body" id="quiz1">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✏️ Rellena el espacio</h2>
+    <div id="fill1">
+      <p style="font-size:.9rem;margin-bottom:12px;">Escribe la forma correcta del verbo entre paréntesis:</p>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(0)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(2)">다음 →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 2: -(으)ㄴ ========== -->
+<div class="section" id="section-2">
+  <span class="level-badge badge-2">NIVEL 2 — PASADO</span>
+  <div class="card">
+    <h2>과거 관형사형: -(으)ㄴ</h2>
+    <p>Para acciones <strong>completadas en el pasado</strong>, los verbos de acción usan <strong>-(으)ㄴ</strong>. ¡Cuidado: los adjetivos también usan esta forma pero para el <em>presente</em>!</p>
+
+    <div class="grammar-box">
+      <div class="grammar-formula" style="gap:6px; flex-direction:column; align-items:flex-start;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span class="formula-part fp-verb">base sin 받침</span>
+          <span class="fp-arrow">+</span>
+          <span class="formula-part fp-ending">-ㄴ</span>
+          <span style="color:var(--muted);font-size:.85rem;">ej: 가다 → 간, 오다 → 온</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span class="formula-part fp-verb">base con 받침</span>
+          <span class="fp-arrow">+</span>
+          <span class="formula-part fp-ending">-은</span>
+          <span style="color:var(--muted);font-size:.85rem;">ej: 먹다 → 먹은, 읽다 → 읽은</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;background:#fff9e6;padding:6px 10px;border-radius:8px;">
+          <span style="font-size:.88rem;">⚠️ <b>Adjetivos</b> también usan -(으)ㄴ pero en PRESENTE: 작다→작은, 크다→큰</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="builder-wrap">
+      <div class="builder-sentence" id="builder2"></div>
+      <button class="build-btn" onclick="runBuilder('builder2', builders.b2)">문장 만들기 ▶</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예문 — toca para ver el análisis</h2>
+    <ul class="example-list">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">어제 제가 <span class="hl-verb">만</span><span class="hl-ending">난</span> <span class="hl-noun">사람</span>이 유명한 배우예요.</div>
+        <div class="example-es">La persona que conocí ayer es un actor famoso.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">만나다</b> → base <b>만나</b> + <b class="hl-ending">ㄴ</b> = <b>만난</b> (ㄴ se une a la vocal) · <b class="hl-noun">사람</b> = persona<br>
+          📌 유명한 배우 = actor famoso (유명하다 → 유명한 = adjetivo -(으)ㄴ)
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">제가 <span class="hl-verb">읽</span><span class="hl-ending">은</span> <span class="hl-noun">책</span>을 빌려줄게요.</div>
+        <div class="example-es">Te prestaré el libro que leí.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">읽다</b> → base <b>읽</b> + <b class="hl-ending">은</b> = <b>읽은</b> (base termina en 받침 → +은) · <b class="hl-noun">책</b> = libro
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko"><span class="hl-verb">작</span><span class="hl-ending">은</span> <span class="hl-noun">가방</span>을 좋아해요. (adjetivo)</div>
+        <div class="example-es">Me gusta el bolso pequeño. (forma adjetival - presente)</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">작다</b> (ser pequeño) → <b>작</b> + <b class="hl-ending">은</b> = <b>작은</b><br>
+          ⚠️ Los adjetivos usan -(으)ㄴ para el PRESENTE, no para el pasado
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">제가 <span class="hl-verb">요리한</span> <span class="hl-noun">음식</span>이 맛있어요?</div>
+        <div class="example-es">¿Está rica la comida que cocinaste?</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">요리하다</b> (cocinar) → <b>요리하</b> + <b class="hl-ending">ㄴ</b> = <b>요리한</b> · <b class="hl-noun">음식</b> = comida
+        </div>
+      </li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>💡 Truco fácil:</strong>
+      <table class="compare-table" style="margin-top:8px;">
+        <tr><th>Verbo acción</th><th>-는 (pres)</th><th>-(으)ㄴ (pasado)</th></tr>
+        <tr><td>가다 (ir)</td><td>가<b class="hl-ending">는</b> 사람</td><td>가<b class="hl-ending">ㄴ</b> 사람</td></tr>
+        <tr><td>먹다 (comer)</td><td>먹<b class="hl-ending">는</b> 음식</td><td>먹<b class="hl-ending">은</b> 음식</td></tr>
+        <tr><td>오다 (venir)</td><td>오<b class="hl-ending">는</b> 버스</td><td>온 버스</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🔁 Repaso Nivel 1 + Nivel 2</h2>
+    <p style="font-size:.88rem;color:var(--muted);margin-bottom:10px;">Elige -는 (presente) o -(으)ㄴ (pasado):</p>
+    <div class="quiz-section">
+      <div class="quiz-header">🧩 Elige la forma correcta <span class="quiz-counter" id="q2counter">1/4</span></div>
+      <div class="quiz-body" id="quiz2"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✏️ Rellena el espacio</h2>
+    <div id="fill2"></div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(1)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(3)">다음 →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 3: -(으)ㄹ ========== -->
+<div class="section" id="section-3">
+  <span class="level-badge badge-3">NIVEL 3 — FUTURO / POTENCIAL</span>
+  <div class="card">
+    <h2>미래/추측 관형사형: -(으)ㄹ</h2>
+    <p>Para acciones <strong>futuras, planeadas o potenciales</strong> (aún no realizadas), usamos <strong>-(으)ㄹ</strong>.</p>
+
+    <div class="grammar-box">
+      <div class="grammar-formula" style="gap:6px; flex-direction:column; align-items:flex-start;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span class="formula-part fp-verb">base sin 받침</span>
+          <span class="fp-arrow">+</span>
+          <span class="formula-part fp-ending">-ㄹ</span>
+          <span style="color:var(--muted);font-size:.85rem;">가다 → 갈, 오다 → 올</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span class="formula-part fp-verb">base con 받침</span>
+          <span class="fp-arrow">+</span>
+          <span class="formula-part fp-ending">-을</span>
+          <span style="color:var(--muted);font-size:.85rem;">먹다 → 먹을, 읽다 → 읽을</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="builder-wrap">
+      <div class="builder-sentence" id="builder3"></div>
+      <button class="build-btn" onclick="runBuilder('builder3', builders.b3)">문장 만들기 ▶</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예문</h2>
+    <ul class="example-list">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">내일 제가 <span class="hl-verb">입</span><span class="hl-ending">을</span> <span class="hl-noun">옷</span>을 미리 준비했어요.</div>
+        <div class="example-es">Preparé de antemano la ropa que me voy a poner mañana.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">입다</b> (ponerse ropa) → <b>입</b> + <b class="hl-ending">을</b> = <b>입을</b> · <b class="hl-noun">옷</b> = ropa
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">이번 주에 <span class="hl-verb">만</span><span class="hl-ending">날</span> <span class="hl-noun">사람</span>이 누구예요?</div>
+        <div class="example-es">¿Con quién te vas a encontrar esta semana?</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">만나다</b> → <b>만나</b> + <b class="hl-ending">ㄹ</b> = <b>만날</b> · <b class="hl-noun">사람</b> = persona<br>
+          📌 이번 주 = esta semana
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko"><span class="hl-verb">먹</span><span class="hl-ending">을</span> <span class="hl-noun">것</span>이 많아요.</div>
+        <div class="example-es">Hay muchas cosas para comer. (많은 것, futuro → posibilidad)</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">먹다</b> → <b>먹</b> + <b class="hl-ending">을</b> + <b class="hl-noun">것</b> = las cosas que comer / que hay para comer<br>
+          📌 것 aquí = sustantivo genérico "cosa/lo que" — veremos esto más en Nivel 6
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">다음에 <span class="hl-verb">갈</span> <span class="hl-noun">곳</span>이 있어요?</div>
+        <div class="example-es">¿Hay algún lugar al que quieras ir la próxima vez?</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">가다</b> → <b>가</b> + <b class="hl-ending">ㄹ</b> = <b>갈</b> · <b class="hl-noun">곳</b> = lugar<br>
+          📌 Adelanto del Nivel 4 — con nombres de lugar
+        </div>
+      </li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>💡 Resumen de los 3 tiempos:</strong>
+      <table class="compare-table" style="margin-top:8px;">
+        <tr><th></th><th>Presente (-는)</th><th>Pasado (-(으)ㄴ)</th><th>Futuro (-(으)ㄹ)</th></tr>
+        <tr><td>가다</td><td>가는 사람</td><td>간 사람</td><td>갈 사람</td></tr>
+        <tr><td>먹다</td><td>먹는 음식</td><td>먹은 음식</td><td>먹을 음식</td></tr>
+        <tr><td>오다</td><td>오는 버스</td><td>온 버스</td><td>올 버스</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🔁 Gran repaso Niv. 1+2+3</h2>
+    <div class="quiz-section">
+      <div class="quiz-header">🧩 ¿Qué forma es? <span class="quiz-counter" id="q3counter">1/4</span></div>
+      <div class="quiz-body" id="quiz3"></div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(2)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(4)">다음 →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 4: LUGAR ========== -->
+<div class="section" id="section-4">
+  <span class="level-badge badge-4">NIVEL 4 — LUGAR</span>
+  <div class="card">
+    <h2>장소 관형절: 곳, 데, 장소명사</h2>
+    <p>Para expresar "el lugar <strong>donde</strong>...", en coreano se usa la misma forma adnominal con sustantivos de lugar: <strong>곳</strong> (lugar genérico), <strong>데</strong> (lugar/situación informal), o el propio nombre del lugar.</p>
+
+    <div class="grammar-box">
+      <div class="grammar-formula">
+        <span class="formula-part fp-verb">verbo modificado</span>
+        <span class="fp-arrow">+</span>
+        <span class="formula-part fp-noun">곳 / 데 / 식당 / 방 / 학교...</span>
+      </div>
+    </div>
+
+    <div class="builder-wrap">
+      <div class="builder-sentence" id="builder4"></div>
+      <button class="build-btn" onclick="runBuilder('builder4', builders.b4)">문장 만들기 ▶</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예문</h2>
+    <ul class="example-list">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">우리가 <span class="hl-verb">처음 만</span><span class="hl-ending">난</span> <span class="hl-noun">식당</span>이 문을 닫았어요.</div>
+        <div class="example-es">El restaurante donde nos conocimos por primera vez cerró.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">만나다</b> (pasado) → <b>만난</b> · <b class="hl-noun">식당</b> = restaurante<br>
+          📌 처음 = primera vez · 문을 닫다 = cerrar (la puerta)
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">제가 <span class="hl-verb">살</span><span class="hl-ending">고 싶은</span> <span class="hl-noun">곳</span>은 제주도예요.</div>
+        <div class="example-es">El lugar donde quiero vivir es la Isla Jeju.</div>
+        <div class="example-breakdown">
+          <b>살고 싶다</b> (querer vivir) → <b>살고 싶은</b> (adjetivo con -은) · <b class="hl-noun">곳</b> = lugar<br>
+          📌 -고 싶다 = querer + verbo → también se puede modificar con -(으)ㄴ
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">아까 <span class="hl-verb">앉아 있</span><span class="hl-ending">던</span> <span class="hl-noun">데</span>가 어디예요?</div>
+        <div class="example-es">¿Dónde es el lugar donde estabas sentado hace un momento?</div>
+        <div class="example-breakdown">
+          <b>앉아 있다</b> (estar sentado) + <b class="hl-ending">-던</b> = forma "pasado recordado/incompleto" · <b class="hl-noun">데</b> = lugar (informal)<br>
+          ✨ <b>-던</b> = acción que ocurría en el pasado (anticipo del nivel avanzado)
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">물건을 <span class="hl-verb">파</span><span class="hl-ending">는</span> <span class="hl-noun">가게</span>가 근처에 있어요?</div>
+        <div class="example-es">¿Hay alguna tienda donde vendan cosas cerca de aquí?</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">팔다</b> (vender) → <b>파</b> + <b class="hl-ending">는</b> = <b>파는</b> · <b class="hl-noun">가게</b> = tienda<br>
+          📌 물건 = cosas/objetos · 근처 = cerca
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🧩 Quiz — Lugar</h2>
+    <div class="quiz-section">
+      <div class="quiz-header">🏠 ¿Cómo se dice? <span class="quiz-counter" id="q4counter">1/3</span></div>
+      <div class="quiz-body" id="quiz4"></div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(3)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(5)">다음 →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 5: TIEMPO ========== -->
+<div class="section" id="section-5">
+  <span class="level-badge badge-5">NIVEL 5 — TIEMPO</span>
+  <div class="card">
+    <h2>시간 관형절: 때, 날, 시간...</h2>
+    <p>Para "el día <strong>cuando</strong>...", "el momento <strong>en que</strong>..." se usa la misma estructura con sustantivos temporales: <strong>때</strong> (cuando/momento), <strong>날</strong> (día), <strong>시간</strong> (hora/tiempo).</p>
+
+    <div class="grammar-box">
+      <div class="grammar-formula">
+        <span class="formula-part fp-verb">verbo modificado</span>
+        <span class="fp-arrow">+</span>
+        <span class="formula-part fp-noun">때 / 날 / 시간 / 순간...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예문</h2>
+    <ul class="example-list">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">우리가 <span class="hl-verb">처음 만</span><span class="hl-ending">났을</span> <span class="hl-noun">때</span>가 기억나요?</div>
+        <div class="example-es">¿Recuerdas el momento en que nos conocimos por primera vez?</div>
+        <div class="example-breakdown">
+          <b>만나다</b> + <b>-았을</b> (pasado-potencial) + <b>때</b> = momento en que nos conocimos<br>
+          📌 -았/었을 때 = cuando (algo ya había pasado) · 기억나다 = recordar
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">비가 <span class="hl-verb">오</span><span class="hl-ending">는</span> <span class="hl-noun">날</span>에는 집에 있고 싶어요.</div>
+        <div class="example-es">En los días en que llueve, quiero quedarme en casa.</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">오다</b> → <b>오</b> + <b class="hl-ending">는</b> (hábito/recurrencia) · <b class="hl-noun">날</b> = día<br>
+          📌 -에는 = partícula enfática de tiempo · -고 싶다 = querer
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">시험을 <span class="hl-verb">볼</span> <span class="hl-noun">때</span> 많이 긴장돼요?</div>
+        <div class="example-es">¿Te pones muy nervioso/a cuando tienes un examen?</div>
+        <div class="example-breakdown">
+          <b class="hl-verb">보다</b> (ver/tomar - exam) → <b>볼</b> (futuro) + <b class="hl-noun">때</b><br>
+          📌 시험을 보다 = hacer/tomar un examen · 긴장되다 = ponerse nervioso
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">제가 <span class="hl-verb">어렸을</span> <span class="hl-noun">때</span> 서울에 살았어요.</div>
+        <div class="example-es">Cuando era pequeño/a, vivía en Seúl.</div>
+        <div class="example-breakdown">
+          <b>어리다</b> (ser joven/pequeño) → <b>어렸을</b> (adjetivo + -았을) + <b>때</b><br>
+          📌 Esta forma -았/었을 때 es muy común para "cuando era/estaba..."
+        </div>
+      </li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>🕰️ Formas con 때:</strong>
+      <table class="compare-table" style="margin-top:8px;">
+        <tr><th>Tiempo</th><th>Forma</th><th>Ejemplo</th></tr>
+        <tr><td>Presente/Habitual</td><td>-는 때</td><td>공부하는 때 = cuando estudio</td></tr>
+        <tr><td>Pasado</td><td>-(으)ㄴ 때</td><td>어린 때 = cuando era niño</td></tr>
+        <tr><td>Futuro/Plan</td><td>-(으)ㄹ 때</td><td>갈 때 = cuando vaya</td></tr>
+        <tr><td>Antes de (pasado)</td><td>-았/었을 때</td><td>어렸을 때 = cuando era pequeño</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🧩 Quiz — Tiempo</h2>
+    <div class="quiz-section">
+      <div class="quiz-header">⏰ ¿Cuándo ocurre? <span class="quiz-counter" id="q5counter">1/3</span></div>
+      <div class="quiz-body" id="quiz5"></div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(4)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(6)">다음 →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 6: 것 NOMINALIZATION ========== -->
+<div class="section" id="section-6">
+  <span class="level-badge badge-1">NIVEL 6 — NOMINALIZACIÓN CON 것</span>
+  <div class="card">
+    <h2>것을 이용한 명사화: "-는/은/을 것"</h2>
+    <p><strong>것</strong> (cosa/lo que) convierte una cláusula verbal completa en un sustantivo. Es extremadamente frecuente en coreano cotidiano.</p>
+
+    <div class="grammar-box">
+      <div class="grammar-formula" style="flex-direction:column;align-items:flex-start;gap:8px;">
+        <div><span class="formula-part fp-ending">-는 것</span> <span style="color:var(--muted);font-size:.9rem;">= el acto de / lo que (presente)</span></div>
+        <div><span class="formula-part fp-ending">-(으)ㄴ 것</span> <span style="color:var(--muted);font-size:.9rem;">= lo que (pasado) / el hecho de que</span></div>
+        <div><span class="formula-part fp-ending">-(으)ㄹ 것</span> <span style="color:var(--muted);font-size:.9rem;">= lo que (futuro) / supuesto</span></div>
+        <div style="background:#f0e8ff;padding:6px 10px;border-radius:8px;font-size:.85rem;">
+          💡 En habla informal, <b>것</b> se contrae a <b>거</b>: 하는 거, 먹은 거
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예문</h2>
+    <ul class="example-list">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">한국어를 <span class="hl-verb">배우</span><span class="hl-ending">는</span> <span class="hl-noun">것</span>이 재미있어요.</div>
+        <div class="example-es">Aprender coreano es divertido.</div>
+        <div class="example-breakdown">
+          <b>배우는 것</b> = el acto de aprender → sujeto de la frase<br>
+          📌 재미있다 = ser divertido/interesante
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">제가 <span class="hl-verb">말한</span> <span class="hl-noun">것</span>을 기억해요?</div>
+        <div class="example-es">¿Recuerdas lo que dije?</div>
+        <div class="example-breakdown">
+          <b>말하다</b> (decir) → <b>말한</b> + <b>것</b> = lo que dije (objeto de recordar)<br>
+          📌 기억하다 = recordar
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">내일 <span class="hl-verb">할</span> <span class="hl-noun">것</span>이 많아요.</div>
+        <div class="example-es">Hay muchas cosas que hacer mañana. / Tengo mucho que hacer mañana.</div>
+        <div class="example-breakdown">
+          <b>하다</b> → <b>할</b> + <b>것</b> = las cosas a hacer (futuro)<br>
+          📌 Muy común: 할 것 = 할 거 en habla informal
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">제 꿈은 선생님이 <span class="hl-verb">되</span><span class="hl-ending">는</span> <span class="hl-noun">거</span>예요.</div>
+        <div class="example-es">Mi sueño es convertirme en maestro/a.</div>
+        <div class="example-breakdown">
+          <b>되다</b> (convertirse) → <b>되는</b> + <b>거</b> (= 것, informal)<br>
+          📌 Structure: "꿈은 [verbo]-는 거예요" = "mi sueño es [verbo]"
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">알고 싶은 <span class="hl-noun">것</span>이 있으면 물어봐요.</div>
+        <div class="example-es">Si hay algo que quieras saber, pregunta.</div>
+        <div class="example-breakdown">
+          <b>알고 싶다</b> (querer saber) → <b>알고 싶은</b> + <b>것</b> = lo que quieres saber<br>
+          📌 -으면 = si... · 물어보다 = preguntar
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🧩 Quiz — 것 nominalización</h2>
+    <div class="quiz-section">
+      <div class="quiz-header">📦 ¿Qué forma de 것? <span class="quiz-counter" id="q6counter">1/3</span></div>
+      <div class="quiz-body" id="quiz6"></div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(5)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(7)">다음 →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 7: -지 INDIRECT ========== -->
+<div class="section" id="section-7">
+  <span class="level-badge badge-4">NIVEL 7 — PREGUNTAS INDIRECTAS</span>
+  <div class="card">
+    <h2>간접 의문문: -는지, -(으)ㄴ지, -(으)ㄹ지</h2>
+    <p>Para expresar "si...", "qué...", "cuándo..." dentro de una oración (pregunta indirecta), se añade <strong>-지</strong> después de la forma adnominal del verbo.</p>
+
+    <div class="grammar-box">
+      <div class="grammar-formula" style="flex-direction:column;align-items:flex-start;gap:8px;">
+        <div><span class="formula-part fp-ending">-는지</span> <span style="color:var(--muted);font-size:.9rem;">= si/qué (presente)</span></div>
+        <div><span class="formula-part fp-ending">-(으)ㄴ지</span> <span style="color:var(--muted);font-size:.9rem;">= si/qué (pasado)</span></div>
+        <div><span class="formula-part fp-ending">-(으)ㄹ지</span> <span style="color:var(--muted);font-size:.9rem;">= si/qué (futuro)</span></div>
+        <div style="background:#fff5e8;padding:8px 12px;border-radius:8px;font-size:.88rem;">
+          👉 Se combina con verbos de conocimiento: <b>알다</b>, <b>모르다</b>, <b>알고 싶다</b>, <b>물어보다</b>, <b>생각하다</b>...
+        </div>
+      </div>
+    </div>
+
+    <div class="builder-wrap">
+      <div class="builder-sentence" id="builder7"></div>
+      <button class="build-btn" onclick="runBuilder('builder7', builders.b7)">문장 만들기 ▶</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예문 — Los 3 casos de la introducción</h2>
+    <ul class="example-list">
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko" style="background:#f0e8ff;padding:8px 12px;border-radius:8px;">오늘 <span class="hl-verb">뭐 할</span><span class="hl-ending">지</span> 알고 싶어요.</div>
+        <div class="example-es">Quiero saber QUÉ vas a hacer hoy.</div>
+        <div class="example-breakdown">
+          <b>뭐 하다</b> (hacer qué) → <b>뭐 할</b> + <b class="hl-ending">지</b> (futuro)<br>
+          📌 알고 싶다 = querer saber · Esta es la frase del ejemplo de introducción ✅
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">어디에 <span class="hl-verb">갔</span><span class="hl-ending">는지</span> 몰라요.</div>
+        <div class="example-es">No sé adónde fue.</div>
+        <div class="example-breakdown">
+          <b>가다</b> → <b>갔</b> (pasado) + <b class="hl-ending">는지</b><br>
+          💡 Note: con verbos en forma pasada (갔다), se usa -는지 (no -(으)ㄴ지)
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">이 식당이 <span class="hl-verb">맛있</span><span class="hl-ending">는지</span> 없<span class="hl-ending">는지</span> 모르겠어요.</div>
+        <div class="example-es">No sé si este restaurante está rico o no.</div>
+        <div class="example-breakdown">
+          <b>맛있다</b> → <b>맛있는지</b> / <b>없다</b> → <b>없는지</b><br>
+          📌 A-는지 B-는지 = si A o B (alternativas)
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">왜 울<span class="hl-ending">고 있는지</span> 물어봤어요?</div>
+        <div class="example-es">¿Le preguntaste por qué estaba llorando?</div>
+        <div class="example-breakdown">
+          <b>울고 있다</b> (estar llorando) → <b>울고 있는지</b><br>
+          📌 물어보다 = preguntar (preguntar indirectamente)
+        </div>
+      </li>
+      <li class="example-item" onclick="toggleEx(this)">
+        <div class="example-ko">언제 <span class="hl-verb">올</span><span class="hl-ending">지</span> 알아요?</div>
+        <div class="example-es">¿Sabes cuándo viene/vendrá?</div>
+        <div class="example-breakdown">
+          <b>오다</b> → <b>올</b> + <b class="hl-ending">지</b> (futuro) · 알다 = saber<br>
+          📌 언제 = cuándo · Con pronombres interrogativos: 누가, 뭐, 어디, 언제, 왜, 어떻게 + -지
+        </div>
+      </li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>🔑 Palabras interrogativas con -지:</strong>
+      <table class="compare-table" style="margin-top:8px;">
+        <tr><th>Qué preguntas</th><th>Construcción</th><th>Ejemplo</th></tr>
+        <tr><td>뭐 (qué)</td><td>뭐 + -는지/-ㄹ지</td><td>뭐 하는지, 뭐 할지</td></tr>
+        <tr><td>누가 (quién)</td><td>누가 + -는지</td><td>누가 오는지</td></tr>
+        <tr><td>어디 (dónde)</td><td>어디 + -는지</td><td>어디 가는지</td></tr>
+        <tr><td>언제 (cuándo)</td><td>언제 + -는지/-ㄹ지</td><td>언제 오는지, 언제 올지</td></tr>
+        <tr><td>왜 (por qué)</td><td>왜 + -는지</td><td>왜 웃는지</td></tr>
+        <tr><td>어떻게 (cómo)</td><td>어떻게 + -는지</td><td>어떻게 하는지</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🧩 Quiz Final — Preguntas indirectas</h2>
+    <div class="quiz-section">
+      <div class="quiz-header">🎯 ¿Directo o indirecto? <span class="quiz-counter" id="q7counter">1/4</span></div>
+      <div class="quiz-body" id="quiz7"></div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(6)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(8)">🏆 Repaso final →</button>
+  </div>
+</div>
+
+<!-- ========== SECTION 8: REPASO FINAL ========== -->
+<div class="section" id="section-8">
+  <div class="card" style="background:linear-gradient(135deg,#f0e8ff,#e8fff4);border:none;">
+    <div style="text-align:center;padding:20px 0;">
+      <div style="font-size:3rem;margin-bottom:8px;">🏆</div>
+      <h2 style="font-size:1.5rem;color:var(--primary);">수고했어요! ¡Excelente trabajo!</h2>
+      <p style="color:var(--muted);margin-top:8px;">Puntuación total: <strong id="finalScore" style="color:var(--primary);font-size:1.2rem;"></strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📋 Resumen completo</h2>
+    <table class="compare-table">
+      <tr><th>Forma</th><th>Uso</th><th>Ejemplo</th><th>Traducción</th></tr>
+      <tr><td><b class="hl-ending">-는</b></td><td>Acción presente/habitual</td><td>먹는 사람</td><td>persona que come</td></tr>
+      <tr><td><b class="hl-ending">-(으)ㄴ</b></td><td>Acción pasada / Adj. presente</td><td>먹은 음식 / 작은 가방</td><td>comida que comí / bolso pequeño</td></tr>
+      <tr><td><b class="hl-ending">-(으)ㄹ</b></td><td>Acción futura/potencial</td><td>먹을 음식</td><td>comida que comeré</td></tr>
+      <tr><td><b class="hl-ending">곳/데 + mod.</b></td><td>Lugar relativo (donde)</td><td>만난 곳</td><td>el lugar donde nos conocimos</td></tr>
+      <tr><td><b class="hl-ending">때 + mod.</b></td><td>Tiempo relativo (cuando)</td><td>어렸을 때</td><td>cuando era niño/a</td></tr>
+      <tr><td><b class="hl-ending">-는/ㄴ/ㄹ 것</b></td><td>Nominalización (lo que)</td><td>하는 것</td><td>el hecho de hacer / lo que hace</td></tr>
+      <tr><td><b class="hl-ending">-는/ㄴ/ㄹ지</b></td><td>Pregunta indirecta</td><td>뭐 할지</td><td>qué va a hacer</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Megaquiz Final — ¡Todo mezclado!</h2>
+    <div class="quiz-section">
+      <div class="quiz-header">🚀 Desafío final <span class="quiz-counter" id="qFcounter">1/6</span></div>
+      <div class="quiz-body" id="quizFinal"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✨ Para practicar en casa</h2>
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;font-size:.9rem;">
+      <li style="padding:10px 14px;background:#f0e8ff;border-radius:10px;">1. 내가 좋아하는 사람 묘사하기 — Describe a alguien que conoces usando -는, -(으)ㄴ</li>
+      <li style="padding:10px 14px;background:#e8fff4;border-radius:10px;">2. 내가 가고 싶은 곳 — Habla del lugar donde quieres ir usando -(으)ㄹ 곳</li>
+      <li style="padding:10px 14px;background:#fff5e8;border-radius:10px;">3. 어렸을 때 — Cuenta 3 cosas de cuando eras niño/a con -았을 때</li>
+      <li style="padding:10px 14px;background:#fff0f5;border-radius:10px;">4. 친구에게 물어보기 — Pregunta a un compañero qué va a hacer el fin de semana usando -ㄹ지 알아?</li>
+    </ul>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-prev" onclick="goSection(7)">← 이전</button>
+    <button class="nav-btn nav-next" onclick="goSection(0)" style="background:linear-gradient(135deg,var(--green),#0f9060);">🔄 처음부터 다시</button>
+  </div>
+</div>
+
+<script>
+// ===== STATE =====
+let currentSection = 0;
+let score = 0;
+let completedSections = new Set();
+const TOTAL_SECTIONS = 9;
+
+// ===== BUILDERS =====
+const builders = {
+  b1: [
+    { text:'한국어를', cls:'bt-normal' },
+    { text:'공부하', cls:'bt-verb', delay:400 },
+    { text:'는', cls:'bt-ending', delay:800 },
+    { text:'학생이', cls:'bt-noun', delay:1200 },
+    { text:'많아요.', cls:'bt-normal', delay:1600 },
+    { text:'(Hay muchos estudiantes que estudian coreano)', cls:'bt-translation', delay:2200 },
+  ],
+  b2: [
+    { text:'어제', cls:'bt-normal' },
+    { text:'내가', cls:'bt-normal', delay:300 },
+    { text:'만나', cls:'bt-verb', delay:700 },
+    { text:'ㄴ', cls:'bt-ending', delay:1100 },
+    { text:'친구가', cls:'bt-noun', delay:1500 },
+    { text:'왔어요.', cls:'bt-normal', delay:1900 },
+    { text:'(El amigo/a que conocí ayer vino)', cls:'bt-translation', delay:2400 },
+  ],
+  b3: [
+    { text:'내일', cls:'bt-normal' },
+    { text:'먹', cls:'bt-verb', delay:400 },
+    { text:'을', cls:'bt-ending', delay:800 },
+    { text:'음식을', cls:'bt-noun', delay:1200 },
+    { text:'준비할게요.', cls:'bt-normal', delay:1600 },
+    { text:'(Prepararé la comida que voy a comer mañana)', cls:'bt-translation', delay:2200 },
+  ],
+  b4: [
+    { text:'우리가', cls:'bt-normal' },
+    { text:'처음', cls:'bt-normal', delay:300 },
+    { text:'만나', cls:'bt-verb', delay:700 },
+    { text:'ㄴ', cls:'bt-ending', delay:1100 },
+    { text:'식당이', cls:'bt-noun', delay:1500 },
+    { text:'어디예요?', cls:'bt-normal', delay:1900 },
+    { text:'(¿Dónde está el restaurante donde nos conocimos por primera vez?)', cls:'bt-translation', delay:2500 },
+  ],
+  b7: [
+    { text:'오늘', cls:'bt-normal' },
+    { text:'뭐', cls:'bt-normal', delay:300 },
+    { text:'할', cls:'bt-verb', delay:700 },
+    { text:'지', cls:'bt-ending', delay:1100 },
+    { text:'알고', cls:'bt-normal', delay:1500 },
+    { text:'싶어요.', cls:'bt-normal', delay:1800 },
+    { text:'(Quiero saber qué vas a hacer hoy)', cls:'bt-translation', delay:2400 },
+  ],
+};
+
+function runBuilder(id, tokens) {
+  const el = document.getElementById(id);
+  el.innerHTML = '';
+  tokens.forEach((t, i) => {
+    const span = document.createElement('span');
+    span.className = 'builder-token ' + t.cls;
+    span.textContent = t.text;
+    el.appendChild(span);
+    setTimeout(() => span.classList.add('show'), t.delay || i * 350);
+  });
+}
+
+// ===== QUIZZES =====
+const quizData = {
+  quiz1: [
+    { q:'어제 나한테 ___ 사람이 누구야? (전화하다 — presente)', opts:['전화하는','전화한','전화할','전화하는지'], ans:0, exp:'전화하는 = quien llama (presente habitual). Para pasado sería 전화한.' },
+    { q:'저 카페에서 ___ 음악이 너무 좋아요. (나오다 — presente)', opts:['나온','나올','나오는','나오는지'], ans:2, exp:'나오는 = que sale/suena (presente)' },
+    { q:'매일 아침 ___ 운동이 뭐예요? (하다)', opts:['하는','한','할','하는지'], ans:0, exp:'하는 = que haces (habitual/presente)' },
+  ],
+  quiz2: [
+    { q:'어제 제가 ___ 영화가 정말 재미있었어요. (보다)', opts:['보는','본','볼','보는지'], ans:1, exp:'본 = que vi (pasado: 보다 → 보 + ㄴ = 본)' },
+    { q:'지금 식당에서 ___ 사람이 제 형이에요. (일하다)', opts:['일하는','일한','일할','일하는지'], ans:0, exp:'일하는 = que trabaja (presente)' },
+    { q:'___ 가방이 마음에 들어요. (작다 — adjetivo)', opts:['작는','작은','작을','작는지'], ans:1, exp:'작은 = pequeño (adjetivo → -(으)ㄴ para presente)' },
+    { q:'제가 어젯밤에 ___ 책이 어디 있어요? (읽다)', opts:['읽는','읽은','읽을','읽는지'], ans:1, exp:'읽은 = que leí (pasado: 읽다 → 읽 + 은 = 읽은)' },
+  ],
+  quiz3: [
+    { q:'다음 주에 ___ 시험이 너무 어려울 것 같아요. (있다)', opts:['있는','있은','있을','있는지'], ans:2, exp:'있을 = que habrá (futuro: 있다 → 있 + 을 = 있을)' },
+    { q:'내가 ___ 사람이 드디어 왔어요. (기다리다 - pasado)', opts:['기다리는','기다린','기다릴','기다리는지'], ans:1, exp:'기다린 = que esperé/que estaba esperando (pasado)' },
+    { q:'지금 밖에서 ___ 비가 그쳤어요? (오다)', opts:['오는','온','올','오는지'], ans:0, exp:'오는 = que cae (presente)' },
+    { q:'___ 꿈이 뭐예요? (이루다 — futuro)', opts:['이루는','이룬','이룰','이루는지'], ans:2, exp:'이룰 = que quieres realizar (futuro: 이루다 → 이루 + ㄹ = 이룰)' },
+  ],
+  quiz4: [
+    { q:'우리가 자주 ___ 카페가 문을 닫았어요. (가다)', opts:['가는','간','갈','가는지'], ans:1, exp:'간 = adonde íbamos (pasado) — modifica al lugar 카페' },
+    { q:'언젠가 꼭 ___ 곳이 있어요. (가다 — futuro)', opts:['가는','간','갈','가는지'], ans:2, exp:'갈 = al que ir (futuro: algún día) — modifica a 곳 (lugar)' },
+    { q:'제가 ___ 데가 어디예요? (앉다 — presente)', opts:['앉는','앉은','앉을','앉는지'], ans:0, exp:'앉는 = donde me siento (presente/habitual)' },
+  ],
+  quiz5: [
+    { q:'___ 때 항상 음악을 들어요. (공부하다 — habitual)', opts:['공부하는','공부한','공부할','공부하는지'], ans:0, exp:'공부하는 때 = cuando estudio (habitual)' },
+    { q:'어___ 때 행복했어요. (어리다 — pasado lejano)', opts:['어리는','어린','어릴','어리는지'], ans:1, exp:'어린 때 = cuando era niño (adjetivo pasado)' },
+    { q:'한국에 ___ 때 꼭 연락해요! (오다 — futuro)', opts:['오는','온','올','오는지'], ans:2, exp:'올 때 = cuando vengas (futuro) — instrucción para cuando llegue' },
+  ],
+  quiz6: [
+    { q:'한국어를 ___ 것이 어려워요. (배우다)', opts:['배우는','배운','배울','배우는지'], ans:0, exp:'배우는 것 = el aprender (nominalización presente — sujeto)' },
+    { q:'제가 말한 ___ 기억해요? → ___에 들어갈 말은?', opts:['것을','것이','것은','것도'], ans:0, exp:'말한 것을 = lo que dije (objeto — partícula 을)' },
+    { q:'제 꿈은 의사가 ___ 거예요. (되다)', opts:['되는','된','될','되는지'], ans:0, exp:'되는 거 = convertirme en... (nominalización predicado)' },
+  ],
+  quiz7: [
+    { q:'내일 날씨가 어떨지 알아요? — ¿qué significa "어떨지"?', opts:['cómo será','cómo fue','cómo es','cómo habrá sido'], ans:0, exp:'어떻다 (ser cómo) → 어떨 + 지 (futuro indirecto) = si será/cómo será' },
+    { q:'누가 왔는지 몰라요. — ¿cuál es la forma correcta de "오다" (pasado)?', opts:['오는지','온지','올지','왔는지'], ans:3, exp:'오다 → 왔다 (pasado) + 는지 → 왔는지. Con pasado (았/었) se usa -는지.' },
+    { q:'어디에 ___ 알고 싶어요. (살다 — presente)', opts:['사는지','산지','살지','사는지'], ans:0, exp:'살다 → 사는지 (presente: 살다 → 살 + 는지 = 사는지 ✓)' },
+    { q:'뭐 ___ 가르쳐 줘요! (먹다 — futuro)', opts:['먹는지','먹은지','먹을지','먹는지'], ans:2, exp:'먹을지 = qué comerás (futuro indirecto)' },
+  ],
+  quizFinal: [
+    { q:'어젯밤에 제가 ___ 꿈이 너무 이상했어요. (꾸다 — pasado)', opts:['꾸는','꾼','꿀','꾸는지'], ans:1, exp:'꾼 = que soñé (꾸다 → 꾸 + ㄴ = 꾼)' },
+    { q:'지금 옆에서 ___ 사람이 제 남자친구예요. (자다)', opts:['자는','잔','잘','자는지'], ans:0, exp:'자는 = que duerme (presente)' },
+    { q:'내년에 이사 ___ 동네가 마음에 들어요. (가다 — futuro)', opts:['가는','간','갈','가는지'], ans:2, exp:'갈 = al que voy a mudarme (futuro)' },
+    { q:'어디서 ___ 알아요? — pregunta indirecta', opts:['파는지','판지','팔지','팔는지'], ans:0, exp:'팔다 (vender) → 파 + 는지 = 파는지 (presente indirecto)' },
+    { q:'한국어를 잘 ___ 것이 제 목표예요. (하다)', opts:['하는','한','할','하는지'], ans:0, exp:'하는 것 = el hacer bien (nominalización)' },
+    { q:'언제 ___ 알려 주세요. (도착하다 — futuro)', opts:['도착하는지','도착한지','도착할지','도착하는지'], ans:2, exp:'도착할지 = cuándo llegará (futuro indirecto)' },
+  ],
+};
+
+const quizStates = {};
+Object.keys(quizData).forEach(k => quizStates[k] = { idx:0, answered:false });
+
+function renderQuiz(id) {
+  const state = quizStates[id];
+  const data = quizData[id];
+  if (!data) return;
+  const item = data[state.idx];
+  const total = data.length;
+  const counterEl = document.getElementById(id.replace('quiz','q') + 'counter') ||
+                    document.getElementById('q' + id.replace('quiz','') + 'counter');
+  if(counterEl) counterEl.textContent = `${state.idx+1}/${total}`;
+
+  const container = document.getElementById(id);
+  if(!container) return;
+  container.innerHTML = `
+    <div class="quiz-q">${item.q}</div>
+    <div class="quiz-options">
+      ${item.opts.map((o,i) => `<button class="quiz-opt" onclick="answerQuiz('${id}',${i})">${o}</button>`).join('')}
+    </div>
+    <div class="quiz-feedback" id="${id}-feedback"></div>
+  `;
+  state.answered = false;
+}
+
+function answerQuiz(id, chosen) {
+  const state = quizStates[id];
+  if(state.answered) return;
+  state.answered = true;
+  const data = quizData[id];
+  const item = data[state.idx];
+  const opts = document.querySelectorAll(`#${id} .quiz-opt`);
+  const fb = document.getElementById(`${id}-feedback`);
+
+  opts.forEach((btn, i) => {
+    btn.classList.add('answered');
+    if(i === item.ans) btn.classList.add('correct');
+    if(i === chosen && chosen !== item.ans) btn.classList.add('wrong');
+  });
+
+  const isCorrect = chosen === item.ans;
+  fb.className = 'quiz-feedback ' + (isCorrect ? 'correct' : 'wrong');
+  fb.innerHTML = isCorrect
+    ? `✅ ¡Correcto! ${item.exp}`
+    : `❌ La respuesta correcta es: <b>${item.opts[item.ans]}</b>. ${item.exp}`;
+
+  if(isCorrect) { score += 5; updateScore(); }
+
+  // Auto-advance after 2s
+  setTimeout(() => {
+    state.idx++;
+    if(state.idx < data.length) {
+      renderQuiz(id);
+    } else {
+      const container = document.getElementById(id);
+      container.innerHTML = `<div class="celebrate">🎉 ¡Sección completada! +${Math.round(data.length * 5 * 0.7)} pts</div>`;
+    }
+  }, 2200);
+}
+
+// ===== FILL BLANKS =====
+const fillData = {
+  fill1: [
+    { before:'저기서 피아노를', verb:'치다', hint:'치다 (tocar piano) → + 는', ans:'치는', after:'사람이 너무 잘해요.' },
+  ],
+  fill2: [
+    { before:'제가 어제', verb:'쓰다', hint:'쓰다 (escribir/pasado) → + ㄴ', ans:'쓴', after:'편지가 아직 여기 있어요.' },
+  ],
+};
+
+function renderFills() {
+  Object.keys(fillData).forEach(id => {
+    const el = document.getElementById(id);
+    if(!el) return;
+    const items = fillData[id];
+    el.innerHTML = items.map((item, i) => `
+      <div style="background:#f8f6ff;border-radius:10px;padding:14px;margin-bottom:10px;font-size:.95rem;line-height:2;">
+        <span class="hl-muted">${item.before}</span>
+        <input class="fill-input" id="fi-${id}-${i}" placeholder="___" autocomplete="off">
+        <span>${item.after}</span>
+        <br>
+        <span style="font-size:.78rem;color:var(--muted);">💭 ${item.hint}</span>
+        <button class="fill-check-btn" onclick="checkFill('${id}',${i})">확인</button>
+        <span id="fi-result-${id}-${i}" style="font-size:.82rem;margin-left:6px;"></span>
+      </div>
+    `).join('');
+  });
+}
+
+function checkFill(id, i) {
+  const item = fillData[id][i];
+  const input = document.getElementById(`fi-${id}-${i}`);
+  const result = document.getElementById(`fi-result-${id}-${i}`);
+  const val = input.value.trim();
+  if(val === item.ans) {
+    input.classList.add('correct'); input.classList.remove('wrong');
+    result.innerHTML = '✅ 맞아요!';
+    result.style.color = 'var(--green)';
+    score += 3; updateScore();
+  } else {
+    input.classList.add('wrong'); input.classList.remove('correct');
+    result.innerHTML = `❌ → ${item.ans}`;
+    result.style.color = 'var(--red)';
+  }
+}
+
+// ===== NAVIGATION =====
+function goSection(idx) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(`section-${idx}`).classList.add('active');
+  document.querySelectorAll('.level-btn').forEach((b, i) => {
+    b.classList.toggle('active', i === idx);
+  });
+  currentSection = idx;
+  completedSections.add(idx);
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Init quizzes and fills for this section
+  const sectionQuizMap = {1:'quiz1',2:'quiz2',3:'quiz3',4:'quiz4',5:'quiz5',6:'quiz6',7:'quiz7',8:'quizFinal'};
+  if(sectionQuizMap[idx]) renderQuiz(sectionQuizMap[idx]);
+  renderFills();
+  if(idx === 8) document.getElementById('finalScore').textContent = `${score} puntos`;
+}
+
+function updateProgress() {
+  const pct = (completedSections.size / TOTAL_SECTIONS) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+}
+
+function updateScore() {
+  document.getElementById('scoreText').textContent = `${score} pts`;
+}
+
+function toggleEx(el) {
+  el.classList.toggle('open');
+}
+
+// ===== INIT =====
+renderQuiz('quiz1');
+renderFills();
+</script>
+</body>
+</html>
