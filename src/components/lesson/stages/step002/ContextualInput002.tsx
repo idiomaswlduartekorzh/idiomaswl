@@ -45,26 +45,26 @@ const FAMILIES: LetterFamily[] = [
     subtitle: 'La base de todo bloque silábico',
     color: '#059669',
     bg: 'rgba(5,150,105,0.08)',
-    icon: '🔤',
+    icon: 'A',
     teachingNote: 'Cada vocal se escribe con ㅇ (consonante muda) al inicio. Así: ㅏ nunca va sola — siempre es 아. Esto permite escribir sílabas reales desde el primer momento.',
     letters: [
-      { char: 'ㅏ', ipa: '/a/', spanishAnchor: 'como la "a" de "casa"', example: '아', exampleMeaning: 'bloque con ㅏ (ah)' },
-      { char: 'ㅓ', ipa: '/ʌ/', spanishAnchor: 'como "o" abierta — boca relajada', example: '어제', exampleMeaning: 'ayer' },
-      { char: 'ㅗ', ipa: '/o/', spanishAnchor: 'como la "o" de "ojo" — cerrada', example: '오늘', exampleMeaning: 'hoy' },
-      { char: 'ㅜ', ipa: '/u/', spanishAnchor: 'como la "u" de "luna"', example: '우리', exampleMeaning: 'nosotros' },
-      { char: 'ㅡ', ipa: '/ɯ/', spanishAnchor: '⚠️ No existe en español', example: '이제', exampleMeaning: 'ahora', isHard: true, note: 'Pon la boca como para decir "u" pero sin redondear los labios. Dientes ligeramente juntos. Aparece en: 글자, 이제, 조금.' },
-      { char: 'ㅣ', ipa: '/i/', spanishAnchor: 'como la "i" de "sí"', example: '이', exampleMeaning: 'diente / este' },
+      { char: 'ㅏ', ipa: '/a/', spanishAnchor: 'como la "a" de "papa"', example: '나', exampleMeaning: 'yo (informal) — ㄴ+ㅏ' },
+      { char: 'ㅓ', ipa: '/ʌ/', spanishAnchor: '"o" abierta — boca relajada', example: '어', exampleMeaning: 'bloque ㅇ+ㅓ (eo)' },
+      { char: 'ㅗ', ipa: '/o/', spanishAnchor: 'como la "o" de "ojo" — cerrada', example: '오', exampleMeaning: 'bloque ㅇ+ㅗ (o)' },
+      { char: 'ㅜ', ipa: '/u/', spanishAnchor: 'como la "u" de "luna"', example: '우', exampleMeaning: 'bloque ㅇ+ㅜ (u)' },
+      { char: 'ㅡ', ipa: '/ɯ/', spanishAnchor: 'No existe en español — la más difícil', example: '으', exampleMeaning: 'vocal ㅡ en bloque (eu)', isHard: true, note: 'Pon la boca como para decir "u" pero sin redondear los labios. Dientes ligeramente juntos. Aparece en: 글자 (geul-ja), 이제 (i-je), 조금 (jo-geum).' },
+      { char: 'ㅣ', ipa: '/i/', spanishAnchor: 'como la "i" de "sí"', example: '이', exampleMeaning: 'diente / este (블록: ㅇ+ㅣ)' },
     ],
     challenge: {
-      question: '¿Cuál vocal NO tiene equivalente en español?',
+      question: '¿Cuál de estas vocales NO tiene equivalente en español?',
       options: [
-        { label: 'ㅏ', isKorean: true, sublabel: 'como "a"' },
-        { label: 'ㅡ', isKorean: true, sublabel: 'sin equivalente' },
-        { label: 'ㅗ', isKorean: true, sublabel: 'como "o"' },
+        { label: 'ㅏ', isKorean: true, sublabel: '/a/' },
+        { label: 'ㅗ', isKorean: true, sublabel: '/o/' },
+        { label: 'ㅡ', isKorean: true, sublabel: '/ɯ/' },
       ],
-      correctIndex: 1,
+      correctIndex: 2,
       accent: '#059669',
-      explanation: 'ㅡ /ɯ/ es única — trasera no redondeada, sin par en español.',
+      explanation: 'ㅡ /ɯ/ no existe en español. Boca abierta como para "u" pero sin redondear los labios.',
     },
   },
   {
@@ -73,7 +73,7 @@ const FAMILIES: LetterFamily[] = [
     subtitle: 'Las más fáciles — y ㄹ es tu ventaja',
     color: '#6c63ff',
     bg: 'rgba(108,99,255,0.08)',
-    icon: '😊',
+    icon: 'N',
     teachingNote: '¡ㄹ es tu mayor ventaja! Suena exactamente como la "r" de "pero" o "cara" — no la "rr" de "perro". Los angloparlantes batallan semanas con esto. Para ti es natural.',
     letters: [
       { char: 'ㄴ', ipa: '/n/', spanishAnchor: 'idéntica a la "n" española', example: '나', exampleMeaning: 'yo (informal)' },
@@ -82,15 +82,15 @@ const FAMILIES: LetterFamily[] = [
       { char: 'ㅇ', ipa: '∅ / /ŋ/', spanishAnchor: 'Mudo al inicio · "ng" al final', example: '아이', exampleMeaning: 'niño', note: 'Al inicio del bloque es completamente mudo — solo un marcador visual. Al final suena como "ng" de "ring".' },
     ],
     challenge: {
-      question: 'ㄹ entre vocales suena como la \'r\' de...',
+      question: 'ㄹ entre vocales (p.ej. en 오늘) suena como la "r" de...',
       options: [
-        { label: '"perro"', sublabel: 'vibrante múltiple' },
-        { label: '"pero"', sublabel: 'tap suave ✓' },
-        { label: '"libro"', sublabel: 'lateral' },
+        { label: '"perro"', sublabel: 'vibrante múltiple /r/' },
+        { label: '"libro"', sublabel: 'lateral /l/' },
+        { label: '"pero"', sublabel: 'tap /ɾ/' },
       ],
-      correctIndex: 1,
+      correctIndex: 2,
       accent: '#6c63ff',
-      explanation: 'El tap /ɾ/ de "pero", "cara", "loro" — idéntico a ㄹ entre vocales.',
+      explanation: 'El tap /ɾ/ de "pero", "cara", "loro" — exactamente como ㄹ entre vocales. ¡Tu mayor ventaja como hispanohablante!',
     },
   },
   {
@@ -99,7 +99,7 @@ const FAMILIES: LetterFamily[] = [
     subtitle: 'Nivel 1 de cada familia tripartita',
     color: '#e6930a',
     bg: 'rgba(230,147,10,0.08)',
-    icon: '🔸',
+    icon: 'P',
     teachingNote: 'Cada una tiene dos hermanas: una aspirada (+ aire) y una tensa (seca, sin aire). Cuando aprendes ㄱ, ya sabes que existen ㅋ y ㄲ — tres por el precio de uno.',
     letters: [
       { char: 'ㄱ', ipa: '/k~g/', spanishAnchor: '"g" suave entre vocales', example: '가요', exampleMeaning: 'voy / vas / va', note: 'Familia: ㄱ (simple) → ㅋ (aspirada) → ㄲ (tensa)' },
@@ -124,7 +124,7 @@ const FAMILIES: LetterFamily[] = [
     subtitle: 'Sonidos con anclas claras en español',
     color: '#0891b2',
     bg: 'rgba(8,145,178,0.08)',
-    icon: '💨',
+    icon: 'F',
     teachingNote: 'ㅅ antes de ㅣ o vocales "y" suena como "sh". ㅎ es como la "j" española suavizada. ㅈ se parece a la "y" argentina ("yo" → "sho").',
     letters: [
       { char: 'ㅅ', ipa: '/s/', spanishAnchor: '"s" española (antes de ㅣ → "sh")', example: '시간', exampleMeaning: 'tiempo', note: 'Familia: ㅅ (simple) → no hay aspirada → ㅆ (tensa)' },
@@ -149,7 +149,7 @@ const FAMILIES: LetterFamily[] = [
     subtitle: 'Con aire — la raya/trazo extra',
     color: '#dc2626',
     bg: 'rgba(220,38,38,0.08)',
-    icon: '💨💨',
+    icon: 'H',
     teachingNote: 'Prueba: pon la mano frente a la boca. Di ㅍ. Debes sentir el chorro de aire — como al apagar una vela. Eso es la aspiración. El español NO tiene este contraste fonémico.',
     letters: [
       { char: 'ㅋ', ipa: '/kʰ/', spanishAnchor: '"k" con aire', example: '커피', exampleMeaning: 'café', note: 'Hermana aspirada de ㄱ' },
@@ -175,7 +175,7 @@ const FAMILIES: LetterFamily[] = [
     subtitle: 'Seco, explosivo, sin aire — el tercer nivel',
     color: '#7c3aed',
     bg: 'rgba(124,58,237,0.08)',
-    icon: '⚡',
+    icon: 'T',
     teachingNote: 'No tienen equivalente en español. Son el tercer nivel de cada familia. La clave: sin nada de aire, con tensión en la garganta. Aprende a distinguirlas por contraste auditivo, no por descripción articulatoria.',
     letters: [
       { char: 'ㄲ', ipa: '/k͈/', spanishAnchor: 'Sin equivalente — k tensa y seca', example: '꽃', exampleMeaning: 'flor', isHard: true },
@@ -266,7 +266,7 @@ function LetterCard({
                   fontWeight: 700,
                 }}
               >
-                ⚠️ nuevo
+                difícil
               </span>
             )}
           </div>
@@ -304,7 +304,7 @@ function LetterCard({
                 lineHeight: 1.4,
               }}
             >
-              💡 {letter.note}
+              {letter.note}
             </div>
           )}
         </div>
@@ -391,17 +391,17 @@ export default function ContextualInput002({ onComplete }: Props) {
         <div style={{ display: 'grid', gap: 10, marginBottom: 28 }}>
           {[
             {
-              icon: '🧱',
+              icon: '블',
               title: 'Bloques, no línea',
               body: 'Las letras se agrupan en cuadrados silábicos. Cada cuadrado = una sílaba.',
             },
             {
-              icon: '👨‍👩‍👧',
+              icon: '6',
               title: '6 familias articulatorias',
               body: 'Vocales → Nasales → Oclusivas → Fricativas → Aspiradas → Tensas.',
             },
             {
-              icon: '🇪🇸',
+              icon: 'Es',
               title: 'Anclas en español',
               body: 'ㄴ=n, ㅁ=m, ㄹ=r-suave, ㅅ=s, ㅎ=j-suave. Ya tienes la mitad del alfabeto.',
             },
@@ -615,7 +615,7 @@ export default function ContextualInput002({ onComplete }: Props) {
               width: '100%',
             }}
           >
-            ✅ Entendí los bloques — Continuar →
+            Entendí los bloques — Continuar →
           </button>
         )}
       </section>
@@ -626,7 +626,7 @@ export default function ContextualInput002({ onComplete }: Props) {
   if (phase === 'done') {
     return (
       <section style={{ maxWidth: 460, margin: '0 auto', padding: '3rem 1rem', textAlign: 'center' }}>
-        <div style={{ fontSize: 52, marginBottom: 12 }}>🎓</div>
+        <div style={{ fontSize: 52, marginBottom: 12, fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff' }}>한</div>
         <h3 style={{ fontSize: 20, fontWeight: 700, marginBottom: 8 }}>Tienes el mapa completo del Hangul</h3>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'center', marginBottom: 16 }}>
           {FAMILIES.map(f => (
@@ -786,7 +786,7 @@ export default function ContextualInput002({ onComplete }: Props) {
             }}
           >
             <p style={{ margin: 0, fontSize: 12, color: family.color, fontWeight: 700, marginBottom: 3 }}>
-              💡 Nota pedagógica
+              Nota pedagógica
             </p>
             <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)', lineHeight: 1.5 }}>
               {family.teachingNote}
