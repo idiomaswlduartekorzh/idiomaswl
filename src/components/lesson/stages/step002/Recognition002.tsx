@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { KR_IMG, KR_IMG_002, KR_AUDIO_002 } from '@/lib/storage';
+import { KR_AUDIO_002 } from '@/lib/storage';
 import { useSound } from '@/components/lesson/engine/useSound';
 import StreakBar from '@/components/lesson/engine/StreakBar';
 
@@ -12,7 +12,6 @@ interface VocabEntry {
   hangul: string;
   romanization: string;
   translation: string;
-  img: string;
   audio: string;          // key in KR_AUDIO_002
   isNew?: boolean;
   distractors_es: string[];
@@ -23,62 +22,62 @@ const VOCAB: VocabEntry[] = [
   // ── repaso step001 ─────────────────────────────────────────────────────────
   {
     id: 'R1', hangul: '학교', romanization: 'hak-gyo', translation: 'escuela',
-    img: KR_IMG_002.school, audio: '학교',
+    audio: '학교',
     distractors_es: ['casa', 'ayer', 'un poco'],
     distractors_kr: ['집', '어제', '조금'],
   },
   {
     id: 'R2', hangul: '집', romanization: 'jip', translation: 'casa',
-    img: KR_IMG_002.home, audio: '집',
+    audio: '집',
     distractors_es: ['escuela', 'hoy', 'tú'],
     distractors_kr: ['학교', '오늘', '너'],
   },
   {
     id: 'R3', hangul: '가요', romanization: 'ga-yo', translation: 'voy / vas / va',
-    img: KR_IMG_002.going, audio: '가요',
+    audio: '가요',
     distractors_es: ['se ve', 'ayer', 'yo (formal)'],
     distractors_kr: ['보여요', '어제', '저는'],
   },
   {
     id: 'R4', hangul: '저는', romanization: 'jeo-neun', translation: 'yo (formal)',
-    img: KR_IMG_002.jeoFormal, audio: '저는',
+    audio: '저는',
     distractors_es: ['yo (informal)', 'ahora', 'letras'],
     distractors_kr: ['나', '이제', '글자'],
   },
   // ── nuevo step002 ──────────────────────────────────────────────────────────
   {
     id: 'N1', hangul: '어제', romanization: 'eo-je', translation: 'ayer',
-    img: KR_IMG_002.yesterday, audio: '어제', isNew: true,
+    audio: '어제', isNew: true,
     distractors_es: ['hoy', 'ahora', 'casa'],
     distractors_kr: ['오늘', '이제', '집'],
   },
   {
     id: 'N2', hangul: '오늘', romanization: 'o-neul', translation: 'hoy',
-    img: KR_IMG_002.today, audio: '오늘', isNew: true,
+    audio: '오늘', isNew: true,
     distractors_es: ['ayer', 'un poco', 'escuela'],
     distractors_kr: ['어제', '조금', '학교'],
   },
   {
     id: 'N3', hangul: '이제', romanization: 'i-je', translation: 'ahora / ya',
-    img: KR_IMG_002.now, audio: '이제', isNew: true,
+    audio: '이제', isNew: true,
     distractors_es: ['ayer', 'letras', 'se ve'],
     distractors_kr: ['어제', '글자', '보여요'],
   },
   {
     id: 'N4', hangul: '글자', romanization: 'geul-ja', translation: 'letras / caracteres',
-    img: KR_IMG_002.letters, audio: '글자', isNew: true,
+    audio: '글자', isNew: true,
     distractors_es: ['ahora', 'un poco', 'casa'],
     distractors_kr: ['이제', '조금', '집'],
   },
   {
     id: 'N5', hangul: '조금', romanization: 'jo-geum', translation: 'un poco',
-    img: KR_IMG_002.little, audio: '조금', isNew: true,
+    audio: '조금', isNew: true,
     distractors_es: ['letras', 'hoy', 'voy / vas'],
     distractors_kr: ['글자', '오늘', '가요'],
   },
   {
     id: 'N6', hangul: '보여요', romanization: 'bo-yeo-yo', translation: 'se ve / puedo ver',
-    img: KR_IMG_002.see, audio: '보여요', isNew: true,
+    audio: '보여요', isNew: true,
     distractors_es: ['ahora', 'yo (informal)', 'ayer'],
     distractors_kr: ['이제', '나', '어제'],
   },
@@ -100,16 +99,16 @@ function tts(text: string, rate = 1) {
 }
 
 // ─── Level config ─────────────────────────────────────────────────────────────
-// L1: Ves imagen + oyes → elige traducción en español
-// L2: Ves imagen + oyes → elige Hangul
-// L3: Solo oyes (sin imagen) → elige Hangul
+// L1: Ves Hangul + oyes → elige traducción en español
+// L2: Ves Hangul + oyes → elige romanización
+// L3: Solo oyes (sin pistas visuales de audio) → elige Hangul
 // L4: Ves Hangul → elige traducción (puro reconocimiento visual)
 const LEVEL_LABELS = [
   '', // 0 unused
-  '🖼 Imagen + audio → español',
-  '🖼 Imagen + audio → Hangul',
-  '🎧 Solo audio → Hangul',
-  '👁 Hangul → español',
+  'Hangul + audio → español',
+  'Hangul + audio → romanización',
+  'Solo audio → Hangul',
+  'Hangul → español',
 ];
 
 interface Props { onComplete?: () => void; }
@@ -134,12 +133,20 @@ export default function Recognition002({ onComplete }: Props) {
     if (level === 1 || level === 4) {
       return shuffle([vocab.translation, ...vocab.distractors_es]).map(v => ({ value: v, label: v }));
     }
+    if (level === 2) {
+      // romanization options — build from sibling romanizations as distractors
+      const distractors = VOCAB.filter(v => v.id !== vocab.id).map(v => v.romanization).slice(0, 3);
+      return shuffle([vocab.romanization, ...distractors]).map(v => ({ value: v, label: v }));
+    }
+    // level 3: Hangul options
     return shuffle([vocab.hangul, ...vocab.distractors_kr]).map(v => ({ value: v, label: v }));
   }, [level, vocab]);
 
   const correct = useMemo(() => {
     if (!vocab) return '';
-    return (level === 1 || level === 4) ? vocab.translation : vocab.hangul;
+    if (level === 1 || level === 4) return vocab.translation;
+    if (level === 2) return vocab.romanization;
+    return vocab.hangul;
   }, [level, vocab]);
 
   // Auto-play audio
@@ -224,11 +231,8 @@ export default function Recognition002({ onComplete }: Props) {
   if (!vocab) return null;
 
   // ── Active exercise ────────────────────────────────────────────────────────
-  const showImage = level !== 3;
-  const showHangulPrompt = level === 4;
-
   return (
-    <section style={{ maxWidth: 580, margin: '0 auto', padding: '1.5rem 1rem' }}>
+    <section style={{ maxWidth: 520, margin: '0 auto', padding: '1.5rem 1rem' }}>
       {/* Level indicator */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
         {[1,2,3,4].map(l => (
@@ -246,77 +250,77 @@ export default function Recognition002({ onComplete }: Props) {
       </div>
 
       {/* Word counter + streak + new badge */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
         <span style={{ fontSize: 11, color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{idx + 1} / {VOCAB.length}</span>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <StreakBar streak={streak} />
-          {vocab.isNew && <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(52,211,153,0.1)', color: '#059669', fontWeight: 600 }}>🆕 Nueva</span>}
+          {vocab.isNew && <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(52,211,153,0.1)', color: '#059669', fontWeight: 600 }}>Nueva</span>}
         </div>
       </div>
 
-      {/* Card */}
-      <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, overflow: 'hidden', marginBottom: 16 }}>
-        {/* Image (hidden in L3) */}
-        {showImage && (
-          <div style={{ position: 'relative', height: 200, background: '#f1f3f5', overflow: 'hidden' }}>
-            <img src={vocab.img} alt={vocab.translation} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
-            <div style={{ position: 'absolute', inset: 'auto 0 0 0', height: 80, background: 'linear-gradient(transparent, rgba(0,0,0,0.5))' }} />
+      {/* Card — typography-only, no images */}
+      <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '32px 24px 24px', marginBottom: 16, textAlign: 'center' }}>
+        {/* Large Hangul character — always visible */}
+        <p style={{ margin: '0 0 6px', fontSize: 64, fontWeight: 800, lineHeight: 1, color: '#6c63ff', fontFamily: "'Noto Sans KR', sans-serif" }}>
+          {vocab.hangul}
+        </p>
+
+        {/* Level 1 & 2: romanization hint + audio button */}
+        {(level === 1 || level === 2) && (
+          <div style={{ marginBottom: 20 }}>
+            <p style={{ margin: '0 0 14px', fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--muted)' }}>{vocab.romanization}</p>
+            <button type="button" onClick={() => playWord(vocab.audio)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'transparent', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '6px 16px', color: 'var(--muted)', fontSize: 12, cursor: 'pointer' }}>
+              Escuchar
+            </button>
           </div>
         )}
 
-        <div style={{ padding: '16px 20px' }}>
-          {/* Level 3: only audio cue */}
-          {level === 3 && (
-            <div style={{ textAlign: 'center', marginBottom: 12 }}>
-              <button type="button" onClick={() => playWord(vocab.audio, 0.85)} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '10px 20px', color: '#6c63ff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
-                🎧 Escuchar de nuevo
-              </button>
-              <p style={{ margin: '8px 0 0', fontSize: 11, color: 'var(--muted)' }}>¿Cuál Hangul escuchas?</p>
-            </div>
-          )}
-
-          {/* Level 4: show Hangul to recognize */}
-          {showHangulPrompt && (
-            <div style={{ textAlign: 'center', marginBottom: 12 }}>
-              <p style={{ margin: '0 0 4px', fontSize: 42, fontWeight: 800, color: '#6c63ff' }}>{vocab.hangul}</p>
-              <p style={{ margin: 0, fontFamily: 'var(--mono)', fontSize: 12, color: 'var(--muted)' }}>{vocab.romanization}</p>
-            </div>
-          )}
-
-          {/* Replay audio button (L1, L2) */}
-          {(level === 1 || level === 2) && (
-            <button type="button" onClick={() => playWord(vocab.audio)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'transparent', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '5px 12px', color: 'var(--muted)', fontSize: 11, cursor: 'pointer', marginBottom: 12 }}>
-              🔊 Escuchar
+        {/* Level 3: audio cue only (Hangul shown, no romanization) */}
+        {level === 3 && (
+          <div style={{ marginBottom: 20 }}>
+            <p style={{ margin: '0 0 12px', fontSize: 12, color: 'var(--muted)' }}>Identifica el carácter que escuchas</p>
+            <button type="button" onClick={() => playWord(vocab.audio, 0.85)} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '10px 20px', color: '#6c63ff', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
+              Escuchar de nuevo
             </button>
-          )}
-
-          {/* Options */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
-            {options.map(opt => {
-              const isSel = selected === opt.value;
-              const isCorr = opt.value === correct;
-              let bg = 'var(--bg)', border = '1.5px solid var(--line-soft)', color = 'var(--ink)';
-              if (!checked && isSel) { bg = 'rgba(108,99,255,0.06)'; border = '1.5px solid #6c63ff'; }
-              if (checked && isCorr) { bg = 'rgba(45,155,78,0.06)'; border = '1.5px solid #2d9b4e'; color = '#2d9b4e'; }
-              if (checked && isSel && !isCorr) { bg = 'rgba(220,53,69,0.05)'; border = '1.5px solid #dc3545'; color = '#dc3545'; }
-              const isKr = level === 2 || level === 3;
-              return (
-                <button key={opt.value} type="button" onClick={() => !checked && setSelected(opt.value)} style={{ padding: '12px 14px', background: bg, border, borderRadius: 10, fontSize: isKr ? 17 : 13, textAlign: 'center', cursor: checked ? 'default' : 'pointer', color, fontFamily: isKr ? "'Noto Sans KR', sans-serif" : 'inherit', transition: 'all 0.12s' }}>
-                  {opt.label}
-                </button>
-              );
-            })}
           </div>
+        )}
 
-          {/* Feedback */}
-          {checked && (
-            <div style={{ marginTop: 10, padding: '9px 12px', borderRadius: 8, fontSize: 12, lineHeight: 1.6, background: selected === correct ? 'rgba(45,155,78,0.06)' : 'rgba(220,53,69,0.05)', border: `1px solid ${selected === correct ? 'rgba(45,155,78,0.2)' : 'rgba(220,53,69,0.15)'}`, color: selected === correct ? '#2d9b4e' : '#dc3545' }}>
-              {selected === correct
-                ? `✅ ¡Correcto! ${vocab.hangul} = ${vocab.translation}`
-                : `❌ Era: ${correct} ${level === 1 || level === 4 ? `(${vocab.hangul})` : `(${vocab.translation})`}`}
-            </div>
-          )}
+        {/* Level 4: romanization hint, no audio */}
+        {level === 4 && (
+          <p style={{ margin: '0 0 20px', fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--muted)' }}>{vocab.romanization}</p>
+        )}
+
+        {/* Question prompt */}
+        <p style={{ margin: '0 0 16px', fontSize: 12, color: 'var(--muted)', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+          {level === 1 ? '¿Qué significa?' : level === 2 ? '¿Cuál es la romanización?' : level === 3 ? '¿Cuál Hangul escuchas?' : '¿Qué significa?'}
+        </p>
+
+        {/* Options */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+          {options.map(opt => {
+            const isSel = selected === opt.value;
+            const isCorr = opt.value === correct;
+            let bg = 'var(--bg)', border = '1.5px solid var(--line-soft)', color = 'var(--ink)';
+            if (!checked && isSel) { bg = 'rgba(108,99,255,0.06)'; border = '1.5px solid #6c63ff'; }
+            if (checked && isCorr) { bg = 'rgba(45,155,78,0.06)'; border = '1.5px solid #2d9b4e'; color = '#2d9b4e'; }
+            if (checked && isSel && !isCorr) { bg = 'rgba(220,53,69,0.05)'; border = '1.5px solid #dc3545'; color = '#dc3545'; }
+            const isKr = level === 3;
+            return (
+              <button key={opt.value} type="button" onClick={() => !checked && setSelected(opt.value)} style={{ padding: '12px 14px', background: bg, border, borderRadius: 10, fontSize: isKr ? 18 : 13, textAlign: 'center', cursor: checked ? 'default' : 'pointer', color, fontFamily: isKr ? "'Noto Sans KR', sans-serif" : 'inherit', transition: 'all 0.12s' }}>
+                {opt.label}
+              </button>
+            );
+          })}
         </div>
+
+        {/* Feedback */}
+        {checked && (
+          <div style={{ marginTop: 12, padding: '9px 12px', borderRadius: 8, fontSize: 12, lineHeight: 1.6, background: selected === correct ? 'rgba(45,155,78,0.06)' : 'rgba(220,53,69,0.05)', border: `1px solid ${selected === correct ? 'rgba(45,155,78,0.2)' : 'rgba(220,53,69,0.15)'}`, color: selected === correct ? '#2d9b4e' : '#dc3545', textAlign: 'left' }}>
+            {selected === correct
+              ? `Correcto — ${vocab.hangul} = ${vocab.translation}`
+              : `Era: ${correct}${level === 1 || level === 4 ? ` (${vocab.hangul})` : ''}`}
+          </div>
+        )}
       </article>
 
       {/* Action buttons */}

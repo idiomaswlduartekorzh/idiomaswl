@@ -1,8 +1,45 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+
+/* ─── SVG icons ─────────────────────────────────────────────────────────────── */
+const IC_MIC = (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="9" y="1" width="6" height="12" rx="3" />
+    <path d="M19 10v2a7 7 0 01-14 0v-2" />
+    <line x1="12" y1="19" x2="12" y2="23" />
+    <line x1="8" y1="23" x2="16" y2="23" />
+  </svg>
+);
+
+const IC_LAYERS = (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="12 2 2 7 12 12 22 7 12 2" />
+    <polyline points="2 17 12 22 22 17" />
+    <polyline points="2 12 12 17 22 12" />
+  </svg>
+);
+
+const IC_PALETTE = (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="13.5" cy="6.5" r=".5" />
+    <circle cx="17.5" cy="10.5" r=".5" />
+    <circle cx="8.5" cy="7.5" r=".5" />
+    <circle cx="6.5" cy="12.5" r=".5" />
+    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.47-1.125-.29-.289-.438-.652-.438-1.036 0-.952.727-1.714 1.625-1.714H16c2.761 0 5-2.239 5-5 0-4.418-4.03-8-9-8z" />
+  </svg>
+);
+
+const IC_BARCHART = (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="12" y1="20" x2="12" y2="10" />
+    <line x1="18" y1="20" x2="18" y2="4" />
+    <line x1="6" y1="20" x2="6" y2="16" />
+  </svg>
+);
 
 /* ─── Data ─────────────────────────────────────────────────────────────────── */
 const TABS = [
@@ -444,12 +481,14 @@ export default function LeccionClient() {
             Todo lo que necesitas,<br />en un solo lugar.
           </motion.h2>
           <div className="lec-types__grid">
-            {[
-              { icon: '🎙', title: 'Podcast integrado', desc: 'Audio nativo en contexto real. Escuchas el idioma como se habla en la calle.' },
-              { icon: '🃏', title: 'Flashcards 3D', desc: 'Tarjetas con flip que activan la memoria visual y la recuperación activa.' },
-              { icon: '🎨', title: 'Ilustraciones', desc: 'Imágenes que conectan la palabra con el concepto — no con la traducción.' },
-              { icon: '📊', title: 'Examen acumulativo', desc: 'Cada día evalúa todo lo aprendido antes. El sistema sabe qué repasar.' },
-            ].map((item, i) => (
+            {(
+              [
+                { icon: IC_MIC,      title: 'Podcast integrado', desc: 'Audio nativo en contexto real. Escuchas el idioma como se habla en la calle.' },
+                { icon: IC_LAYERS,   title: 'Flashcards 3D', desc: 'Tarjetas con flip que activan la memoria visual y la recuperación activa.' },
+                { icon: IC_PALETTE,  title: 'Ilustraciones', desc: 'Imágenes que conectan la palabra con el concepto — no con la traducción.' },
+                { icon: IC_BARCHART, title: 'Examen acumulativo', desc: 'Cada día evalúa todo lo aprendido antes. El sistema sabe qué repasar.' },
+              ] as { icon: ReactNode; title: string; desc: string }[]
+            ).map((item, i) => (
               <motion.div
                 key={item.title}
                 className="lec-type-card"

@@ -4720,138 +4720,93 @@ button {
 .lec-cta__link:hover { color: #fff; }
 
 
+
 /* ═══════════════════════════════════════════════════════════════════════════
-   LIQUID GLASS — Apple-inspired design system
-   Overrides key UI tokens with frosted glass, mesh gradients, and depth
+   LIQUID GLASS — Apple-inspired design system (transversal)
    ═══════════════════════════════════════════════════════════════════════════ */
 
 /* ── Glass tokens ─────────────────────────────────────────────────────────── */
 :root {
-  --glass-light:      rgba(255, 255, 255, 0.72);
-  --glass-border:     rgba(255, 255, 255, 0.55);
-  --glass-shadow:     0 8px 32px rgba(14, 21, 92, 0.10), 0 2px 8px rgba(14, 21, 92, 0.05);
-  --glass-shadow-lg:  0 20px 60px rgba(14, 21, 92, 0.14), 0 4px 16px rgba(14, 21, 92, 0.08);
-  --glass-blur:       blur(24px) saturate(1.9) brightness(1.04);
-  --glass-radius:     22px;
-  --glass-inner:      linear-gradient(140deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.0) 55%);
-  --glass-specular:   linear-gradient(120deg, rgba(255,255,255,0.4) 0%, transparent 40%);
-  --mesh-1:           rgba(200, 32, 46, 0.07);
-  --mesh-2:           rgba(20, 33, 92, 0.09);
-  --mesh-3:           rgba(200, 121, 65, 0.06);
+  --glass-bg:         rgba(255, 255, 255, 0.68);
+  --glass-border:     rgba(255, 255, 255, 0.60);
+  --glass-shadow:     0 8px 32px rgba(14,21,92,0.10), 0 2px 8px rgba(14,21,92,0.05), inset 0 1px 0 rgba(255,255,255,0.80);
+  --glass-shadow-lg:  0 20px 60px rgba(14,21,92,0.15), 0 4px 16px rgba(14,21,92,0.08), inset 0 1px 0 rgba(255,255,255,0.80);
+  --glass-blur:       blur(28px) saturate(2.0) brightness(1.03);
+  --glass-radius:     20px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --glass-light:     rgba(18, 24, 56, 0.65);
-    --glass-border:    rgba(255, 255, 255, 0.12);
-    --glass-shadow:    0 8px 32px rgba(0,0,0,0.32), 0 2px 8px rgba(0,0,0,0.18);
-    --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.42), 0 4px 16px rgba(0,0,0,0.24);
-    --glass-inner:     linear-gradient(140deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.0) 55%);
-    --glass-specular:  linear-gradient(120deg, rgba(255,255,255,0.12) 0%, transparent 40%);
-    --mesh-1:          rgba(200, 32, 46, 0.12);
-    --mesh-2:          rgba(20, 33, 92, 0.18);
-    --mesh-3:          rgba(200, 121, 65, 0.10);
+    --glass-bg:        rgba(15, 20, 50, 0.68);
+    --glass-border:    rgba(255,255,255,0.13);
+    --glass-shadow:    0 8px 32px rgba(0,0,0,0.38), 0 2px 8px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.10);
+    --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.48), 0 4px 16px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.10);
   }
 }
 [data-theme="dark"] {
-  --glass-light:     rgba(18, 24, 56, 0.65);
-  --glass-border:    rgba(255, 255, 255, 0.12);
-  --glass-shadow:    0 8px 32px rgba(0,0,0,0.32), 0 2px 8px rgba(0,0,0,0.18);
-  --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.42), 0 4px 16px rgba(0,0,0,0.24);
-  --glass-inner:     linear-gradient(140deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.0) 55%);
-  --glass-specular:  linear-gradient(120deg, rgba(255,255,255,0.12) 0%, transparent 40%);
-  --mesh-1:          rgba(200, 32, 46, 0.12);
-  --mesh-2:          rgba(20, 33, 92, 0.18);
-  --mesh-3:          rgba(200, 121, 65, 0.10);
+  --glass-bg:        rgba(15, 20, 50, 0.68);
+  --glass-border:    rgba(255,255,255,0.13);
+  --glass-shadow:    0 8px 32px rgba(0,0,0,0.38), 0 2px 8px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.10);
+  --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.48), 0 4px 16px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.10);
 }
 
-/* ── Gradient mesh background ─────────────────────────────────────────────── */
+/* ── Background mesh — gives the glass something to blur ─────────────────── */
 body {
   background-image:
-    radial-gradient(ellipse at 15% 15%, var(--mesh-1) 0%, transparent 52%),
-    radial-gradient(ellipse at 85% 8%,  var(--mesh-2) 0%, transparent 48%),
-    radial-gradient(ellipse at 50% 90%, var(--mesh-3) 0%, transparent 55%),
-    radial-gradient(ellipse at 5%  60%, var(--mesh-2) 0%, transparent 40%),
-    radial-gradient(ellipse at 95% 55%, var(--mesh-1) 0%, transparent 40%);
+    radial-gradient(ellipse at 12% 12%, rgba(200,32,46,0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 88% 8%,  rgba(20,33,92,0.12)  0%, transparent 48%),
+    radial-gradient(ellipse at 55% 92%, rgba(200,121,65,0.09) 0%, transparent 55%),
+    radial-gradient(ellipse at 4%  62%, rgba(20,33,92,0.07)  0%, transparent 42%),
+    radial-gradient(ellipse at 96% 52%, rgba(200,32,46,0.07) 0%, transparent 42%);
   background-attachment: fixed;
 }
 
-/* ── Nav — floating liquid glass pill ────────────────────────────────────── */
+/* ── Nav — frosted glass ─────────────────────────────────────────────────── */
 .wl-site-nav {
-  background: var(--glass-light) !important;
+  background: var(--glass-bg) !important;
   backdrop-filter: var(--glass-blur) !important;
   -webkit-backdrop-filter: var(--glass-blur) !important;
   border-bottom: 1px solid var(--glass-border) !important;
-  box-shadow: var(--glass-shadow) !important;
+  box-shadow: 0 2px 24px rgba(14,21,92,0.08) !important;
 }
-
-/* Nav links — glass pill on hover/active */
 .wl-site-nav__link:hover,
 .wl-site-nav__link.is-active {
-  background: rgba(255,255,255,0.45) !important;
+  background: rgba(255,255,255,0.50) !important;
+  box-shadow: 0 1px 6px rgba(14,21,92,0.08), inset 0 1px 0 rgba(255,255,255,0.70) !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
-  box-shadow: 0 2px 8px rgba(14,21,92,0.08), inset 0 1px 0 rgba(255,255,255,0.6) !important;
 }
-
-/* ── Cards — liquid glass ─────────────────────────────────────────────────── */
-.wl-card {
-  background: var(--glass-light) !important;
+.wl-site-nav__mobile {
+  background: var(--glass-bg) !important;
   backdrop-filter: var(--glass-blur) !important;
   -webkit-backdrop-filter: var(--glass-blur) !important;
-  border: 1px solid var(--glass-border) !important;
-  border-radius: var(--glass-radius) !important;
-  box-shadow: var(--glass-shadow) !important;
-  position: relative;
-  overflow: hidden;
+  border-bottom: 1px solid var(--glass-border) !important;
 }
-/* Inner specular highlight */
-.wl-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--glass-inner);
-  border-radius: inherit;
-  pointer-events: none;
-  z-index: 0;
-}
-.wl-card > * { position: relative; z-index: 1; }
 
 /* ── Buttons — glass shimmer ──────────────────────────────────────────────── */
 .btn {
+  border-radius: 12px !important;
+  box-shadow: 0 2px 10px rgba(20,33,92,0.18), inset 0 1px 0 rgba(255,255,255,0.20) !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
-  border-radius: 12px !important;
-  box-shadow: 0 2px 12px rgba(20,33,92,0.18), inset 0 1px 0 rgba(255,255,255,0.18) !important;
-  transition: transform 0.22s cubic-bezier(0.2,0.8,0.2,1),
-              box-shadow 0.22s, background 0.2s, color 0.2s !important;
+  transition: transform 0.22s cubic-bezier(0.2,0.8,0.2,1), box-shadow 0.22s, background 0.2s !important;
 }
 .btn:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 24px rgba(20,33,92,0.22), inset 0 1px 0 rgba(255,255,255,0.22) !important;
+  transform: translateY(-2px) scale(1.015) !important;
+  box-shadow: 0 6px 24px rgba(20,33,92,0.25), inset 0 1px 0 rgba(255,255,255,0.25) !important;
 }
 .btn-ghost {
-  background: rgba(255,255,255,0.45) !important;
-  border: 1px solid var(--glass-border) !important;
+  background: rgba(255,255,255,0.48) !important;
+  border: 1px solid rgba(255,255,255,0.65) !important;
   color: var(--ink) !important;
-  box-shadow: 0 2px 8px rgba(14,21,92,0.08), inset 0 1px 0 rgba(255,255,255,0.55) !important;
 }
 .btn-ghost:hover {
-  background: rgba(255,255,255,0.72) !important;
-  border-color: rgba(255,255,255,0.75) !important;
+  background: rgba(255,255,255,0.75) !important;
   color: var(--ink) !important;
 }
 
-/* ── Section containers — subtle glass tint ────────────────────────────────  */
-.wl-korean-runtime-header.wl-card,
-.wl-stage-panel,
-.wl-answer-btn {
-  backdrop-filter: blur(16px) saturate(1.6) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(1.6) !important;
-}
-
-/* ── Stage rail (lesson sidebar) — glass ────────────────────────────────────*/
-.wl-stage-rail {
-  background: var(--glass-light) !important;
+/* ── wl-card (lesson runtime, stage panels) ──────────────────────────────── */
+.wl-card {
+  background: var(--glass-bg) !important;
   backdrop-filter: var(--glass-blur) !important;
   -webkit-backdrop-filter: var(--glass-blur) !important;
   border: 1px solid var(--glass-border) !important;
@@ -4859,91 +4814,395 @@ body {
   box-shadow: var(--glass-shadow) !important;
 }
 
-/* ── Lang cards / step rows / section cards ─────────────────────────────── */
-.wl-lang-card,
-.wl-step-row,
-.wl-section-card,
-.wl-price-card,
-.faq__item,
-.wl-lesson-tab {
-  background: var(--glass-light) !important;
+/* ── Language cards (homepage) ───────────────────────────────────────────── */
+.wlh-lang-card {
+  background: var(--glass-bg) !important;
   backdrop-filter: var(--glass-blur) !important;
   -webkit-backdrop-filter: var(--glass-blur) !important;
   border: 1px solid var(--glass-border) !important;
   border-radius: var(--glass-radius) !important;
   box-shadow: var(--glass-shadow) !important;
+  transition: box-shadow 0.25s, transform 0.25s !important;
 }
-.wl-lang-card:hover,
-.wl-step-row:hover,
-.wl-price-card:hover {
+.wlh-lang-card:hover {
   box-shadow: var(--glass-shadow-lg) !important;
-  transform: translateY(-3px);
+  transform: translateY(-4px) !important;
 }
 
-/* ── Exam / practice card containers ────────────────────────────────────── */
+/* ── Exam cards (homepage dark section) ──────────────────────────────────── */
+.wlh-exam-card {
+  background: rgba(255,255,255,0.08) !important;
+  backdrop-filter: blur(20px) saturate(1.8) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.8) !important;
+  border: 1px solid rgba(255,255,255,0.16) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+  transition: background 0.2s, transform 0.22s, box-shadow 0.22s !important;
+}
+.wlh-exam-card:hover {
+  background: rgba(255,255,255,0.14) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.28) !important;
+}
+
+/* ── Step rows (method section) ──────────────────────────────────────────── */
+.wlh-step-row {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 14px !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+/* ── Pricing cards ───────────────────────────────────────────────────────── */
+.wlh-price-card {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow) !important;
+  transition: box-shadow 0.25s, transform 0.25s !important;
+}
+.wlh-price-card--featured {
+  box-shadow: var(--glass-shadow-lg), 0 0 0 2px var(--accent) !important;
+}
+.wlh-price-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--glass-shadow-lg) !important;
+}
+
+/* ── FAQ items ───────────────────────────────────────────────────────────── */
+.wlh-faq__item {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px) saturate(1.8) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.8) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 14px !important;
+  margin-bottom: 8px !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+/* ── Lesson preview widget (homepage) ────────────────────────────────────── */
+.wlh-lesson-preview {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow-lg) !important;
+}
+
+/* ── Exam practice panels ────────────────────────────────────────────────── */
 .prac-intro__section,
 .prac-question,
 .prac-sidebar__submit,
 .prac-results__sections,
+.prac-results__section-block,
 .ielts-form__diagram,
 .ielts-write__chart-box {
-  background: var(--glass-light) !important;
-  backdrop-filter: blur(16px) saturate(1.7) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(1.7) !important;
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px) saturate(1.8) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.8) !important;
   border: 1px solid var(--glass-border) !important;
   border-radius: 18px !important;
   box-shadow: var(--glass-shadow) !important;
 }
 
-/* ── Mobile nav menu — glass drawer ─────────────────────────────────────── */
-.wl-site-nav__mobile {
-  background: var(--glass-light) !important;
+/* ── Stage rail (lesson sidebar) ─────────────────────────────────────────── */
+.wl-stage-rail {
+  background: var(--glass-bg) !important;
   backdrop-filter: var(--glass-blur) !important;
   -webkit-backdrop-filter: var(--glass-blur) !important;
-  border-bottom: 1px solid var(--glass-border) !important;
-  box-shadow: 0 8px 32px rgba(14,21,92,0.12) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow) !important;
 }
 
-/* ── Specular edge on glass cards (iridescent top border) ───────────────── */
-.wl-card::after,
-.wl-lang-card::after,
-.wl-price-card::after,
-.wl-step-row::after {
+/* ── User menu dropdown ──────────────────────────────────────────────────── */
+.wl-user-menu__dropdown {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 14px !important;
+  box-shadow: var(--glass-shadow-lg) !important;
+}
+
+/* ── Iridescent specular top edge on all glass cards ─────────────────────── */
+.wlh-lang-card,
+.wlh-price-card,
+.wlh-step-row,
+.wl-card,
+.wlh-lesson-preview {
+  position: relative;
+  overflow: hidden;
+}
+.wlh-lang-card::before,
+.wlh-price-card::before,
+.wlh-step-row::before,
+.wl-card::before,
+.wlh-lesson-preview::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 1px;
   background: linear-gradient(90deg,
     transparent 0%,
-    rgba(255,255,255,0.9) 30%,
-    rgba(200,121,65,0.4) 50%,
-    rgba(255,255,255,0.9) 70%,
+    rgba(255,255,255,0.95) 25%,
+    rgba(200,121,65,0.50) 50%,
+    rgba(255,255,255,0.95) 75%,
     transparent 100%);
-  border-radius: inherit;
   pointer-events: none;
+  z-index: 1;
 }
 
-/* ── Utility class: .glass ───────────────────────────────────────────────── */
+/* ── Utility classes ─────────────────────────────────────────────────────── */
 .glass {
-  background: var(--glass-light);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--glass-radius);
-  box-shadow: var(--glass-shadow);
-}
-.glass-lg {
-  background: var(--glass-light);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-border);
-  border-radius: calc(var(--glass-radius) + 6px);
-  box-shadow: var(--glass-shadow-lg);
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow) !important;
 }
 
-/* ── Scroll bar — thinner, glass-tinted ─────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; height: 6px; }
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(20,33,92,0.18); border-radius: 99px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(20,33,92,0.32); }
+::-webkit-scrollbar-thumb { background: rgba(20,33,92,0.15); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(20,33,92,0.30); }
+
+
+/* ── LIQUID GLASS PATCH: vibrant background + transparent sections ────────── */
+
+/* Much more vivid gradient mesh — this is what the glass blurs */
+body {
+  background-color: #f0eef8 !important;
+  background-image:
+    radial-gradient(ellipse at 8%   8%,  rgba(147, 51, 234, 0.22) 0%, transparent 48%),
+    radial-gradient(ellipse at 92%  6%,  rgba(20,  33, 92,  0.26) 0%, transparent 46%),
+    radial-gradient(ellipse at 88%  88%, rgba(200, 32, 46,  0.20) 0%, transparent 52%),
+    radial-gradient(ellipse at 8%   88%, rgba(200,121, 65,  0.18) 0%, transparent 48%),
+    radial-gradient(ellipse at 50%  50%, rgba(99, 102,241,  0.12) 0%, transparent 58%),
+    radial-gradient(ellipse at 50%  2%,  rgba(236,72, 153,  0.14) 0%, transparent 40%);
+  background-attachment: fixed !important;
+}
+
+/* Dark mode vivid gradient */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body {
+    background-color: #080b1a !important;
+    background-image:
+      radial-gradient(ellipse at 8%   8%,  rgba(147, 51, 234, 0.35) 0%, transparent 48%),
+      radial-gradient(ellipse at 92%  6%,  rgba(79, 70,229,  0.30) 0%, transparent 46%),
+      radial-gradient(ellipse at 88%  88%, rgba(200, 32, 46,  0.30) 0%, transparent 52%),
+      radial-gradient(ellipse at 8%   88%, rgba(200,121, 65,  0.25) 0%, transparent 48%),
+      radial-gradient(ellipse at 50%  50%, rgba(99, 102,241,  0.18) 0%, transparent 58%) !important;
+  }
+}
+[data-theme="dark"] body {
+  background-color: #080b1a !important;
+  background-image:
+    radial-gradient(ellipse at 8%   8%,  rgba(147, 51, 234, 0.35) 0%, transparent 48%),
+    radial-gradient(ellipse at 92%  6%,  rgba(79, 70,229,  0.30) 0%, transparent 46%),
+    radial-gradient(ellipse at 88%  88%, rgba(200, 32, 46,  0.30) 0%, transparent 52%),
+    radial-gradient(ellipse at 8%   88%, rgba(200,121, 65,  0.25) 0%, transparent 48%),
+    radial-gradient(ellipse at 50%  50%, rgba(99, 102,241,  0.18) 0%, transparent 58%) !important;
+}
+
+/* Make light sections transparent so body gradient shows through */
+.wlh-section--alt { background: transparent !important; }
+.wlh-section       { background: transparent !important; }
+
+/* Exam cards section (dark) — keep the dark bg but add glass overlay */
+.wlh-section--dark {
+  background: rgba(14,21,92,0.82) !important;
+  backdrop-filter: blur(0) !important;
+}
+
+/* Nav more transparent so gradient shows */
+.wl-site-nav {
+  background: rgba(240,238,248,0.55) !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .wl-site-nav {
+    background: rgba(8,11,26,0.55) !important;
+  }
+}
+[data-theme="dark"] .wl-site-nav {
+  background: rgba(8,11,26,0.55) !important;
+}
+
+/* Student dashboard cards */
+.dash-card,
+.dash-kpi,
+[class*="dash-"] > div,
+.wl-dash-card {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+
+/* ── Lesson Runtime nav (STEP pages) — sticky glass ─────────────────────── */
+.wl-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  box-shadow: 0 2px 24px rgba(14,21,92,0.08) !important;
+}
+.wl-nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   PREMIUM COLOR REFINEMENT — WeLearn brand-aligned glass & gradients
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Override glass tokens: blue-tinted cream glass with navy edges ───────── */
+:root {
+  --glass-bg:     rgba(248, 247, 255, 0.70);
+  --glass-border: rgba(20, 33, 92, 0.12);
+  --glass-shadow: 0 8px 32px rgba(20,33,92,0.10), 0 2px 8px rgba(20,33,92,0.06), inset 0 1px 0 rgba(255,255,255,0.85);
+}
+
+/* ── Body gradient: strictly on-brand navy / red / orange ────────────────── */
+body {
+  background-color: #f5f4fc !important;
+  background-image:
+    radial-gradient(ellipse at 5%  5%,  rgba(20,33,92,0.15)   0%, transparent 45%),
+    radial-gradient(ellipse at 95% 5%,  rgba(200,32,46,0.12)  0%, transparent 45%),
+    radial-gradient(ellipse at 50% 95%, rgba(200,121,65,0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 60%, rgba(20,33,92,0.07)   0%, transparent 38%),
+    radial-gradient(ellipse at 80% 40%, rgba(200,32,46,0.06)  0%, transparent 38%) !important;
+  background-attachment: fixed !important;
+}
+
+/* ── Primary CTA button ("Empezar gratis") — navy gradient with shimmer ──── */
+.btn:not(.btn-ghost):not(.btn-primary) {
+  background: linear-gradient(135deg, #14215c 0%, #1e3080 100%) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 4px 20px rgba(20,33,92,0.30), inset 0 1px 0 rgba(255,255,255,0.15) !important;
+}
+.btn:not(.btn-ghost):not(.btn-primary):hover {
+  background: linear-gradient(135deg, #1e3080 0%, #2541a8 100%) !important;
+  box-shadow: 0 8px 32px rgba(20,33,92,0.40), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+  transform: translateY(-2px) scale(1.015) !important;
+}
+
+/* ── btn-primary (red CTA) — brand red gradient ──────────────────────────── */
+.btn-primary {
+  background: linear-gradient(135deg, #c8202e 0%, #a51724 100%) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 4px 20px rgba(200,32,46,0.30), inset 0 1px 0 rgba(255,255,255,0.15) !important;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #d9293a 0%, #c8202e 100%) !important;
+  box-shadow: 0 8px 32px rgba(200,32,46,0.40), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+  transform: translateY(-2px) scale(1.015) !important;
+}
+
+/* ── Language card code pill — premium navy tint ─────────────────────────── */
+.wlh-lang-card__code {
+  background: linear-gradient(135deg, rgba(20,33,92,0.12) 0%, rgba(20,33,92,0.06) 100%) !important;
+  border: 1px solid rgba(20,33,92,0.18) !important;
+  color: #14215c !important;
+  box-shadow: 0 2px 8px rgba(20,33,92,0.10), inset 0 1px 0 rgba(255,255,255,0.70) !important;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* ── Exam card hover: color-matched navy glow ────────────────────────────── */
+.wlh-exam-card {
+  --card-glow: rgba(20,33,92,0.28);
+  transition: background 0.2s, transform 0.22s, box-shadow 0.22s !important;
+}
+.wlh-exam-card:hover {
+  background: rgba(255,255,255,0.14) !important;
+  transform: translateY(-4px) scale(1.01) !important;
+  box-shadow:
+    0 16px 48px var(--card-glow),
+    0 4px 16px rgba(20,33,92,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.32) !important;
+}
+
+/* ── Dark sections: deep navy glass overlay with subtle texture ──────────── */
+.wlh-section--dark {
+  background: rgba(14,21,92,0.88) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), inset 0 -1px 0 rgba(0,0,0,0.15) !important;
+}
+.wlh-section--dark .wlh-section-h2,
+.wlh-section--dark h2 {
+  color: #ffffff !important;
+}
+.wlh-section--dark em {
+  color: #c8202e !important;
+  font-style: normal !important;
+}
+.wlh-section--dark .wlh-section-eyebrow,
+.wlh-section--dark .wlh-section-desc {
+  color: rgba(255,255,255,0.75) !important;
+}
+
+/* ── Lesson preview card: premium floating glass device mockup ───────────── */
+.wlh-lesson-preview {
+  background: rgba(248, 247, 255, 0.82) !important;
+  border: 1px solid rgba(20,33,92,0.14) !important;
+  box-shadow:
+    0 32px 80px rgba(20,33,92,0.18),
+    0 8px 24px rgba(20,33,92,0.12),
+    0 2px 6px rgba(20,33,92,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.90) !important;
+  border-radius: 24px !important;
+}
+
+/* ── Lang & price cards: navy-tinted hover lift ───────────────────────────── */
+.wlh-lang-card:hover {
+  box-shadow:
+    0 24px 60px rgba(20,33,92,0.18),
+    0 6px 18px rgba(20,33,92,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.90) !important;
+  transform: translateY(-5px) scale(1.01) !important;
+  border-color: rgba(20,33,92,0.20) !important;
+}
+
+/* ── Glass border refinement: all glass elements use navy-tinted edge ─────── */
+.wl-card,
+.wlh-step-row,
+.wlh-price-card,
+.wlh-faq__item,
+.wlh-testimonial-card {
+  border-color: rgba(20,33,92,0.12) !important;
+}
+
+/* ── Iridescent specular line: richer shimmer on light cards ─────────────── */
+.wlh-lang-card::before,
+.wlh-price-card::before,
+.wlh-step-row::before,
+.wl-card::before,
+.wlh-lesson-preview::before {
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255,255,255,0.98) 20%,
+    rgba(200,121,65,0.55) 45%,
+    rgba(20,33,92,0.18) 60%,
+    rgba(255,255,255,0.98) 80%,
+    transparent 100%) !important;
+}
 

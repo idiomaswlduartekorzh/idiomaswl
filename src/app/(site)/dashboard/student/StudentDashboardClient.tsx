@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import type { ReactNode } from 'react'
 import {
   RadarChart, Radar, PolarGrid, PolarAngleAxis,
   PolarRadiusAxis, ResponsiveContainer, Tooltip,
@@ -9,32 +10,152 @@ import {
 
 interface Props { name: string }
 
+/* ── SVG icon map ───────────────────────────────────────────────────────────── */
+const IC = {
+  grid: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" />
+      <rect x="14" y="14" width="7" height="7" /><rect x="3" y="14" width="7" height="7" />
+    </svg>
+  ),
+  clipboard: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+      <path d="M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+      <path d="M9 14l2 2 4-4" />
+    </svg>
+  ),
+  trendingUp: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+      <polyline points="17 6 23 6 23 12" />
+    </svg>
+  ),
+  award: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="8" r="6" />
+      <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+    </svg>
+  ),
+  user: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+      <circle cx="12" cy="7" r="4" />
+    </svg>
+  ),
+  settings: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="3" />
+      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
+    </svg>
+  ),
+  bookOpen: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+      <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+    </svg>
+  ),
+  logIn: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4" />
+      <polyline points="10 17 15 12 10 7" />
+      <line x1="15" y1="12" x2="3" y2="12" />
+    </svg>
+  ),
+  sparkles: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z" />
+      <path d="M19 19l.5 1.5L21 21l-1.5.5L19 23l-.5-1.5L17 21l1.5-.5z" />
+      <path d="M4 4l.5 1.5L6 6l-1.5.5L4 8l-.5-1.5L2 6l1.5-.5z" />
+    </svg>
+  ),
+  globe: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+    </svg>
+  ),
+  flag: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+      <line x1="4" y1="22" x2="4" y2="15" />
+    </svg>
+  ),
+  messageCircle: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+    </svg>
+  ),
+  graduationCap: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="22 10 12 5 2 10 12 15 22 10" />
+      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+      <path d="M22 10v6" />
+    </svg>
+  ),
+  helpCircle: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
+      <line x1="12" y1="17" x2="12.01" y2="17" />
+    </svg>
+  ),
+  clipboard2: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+      <path d="M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+    </svg>
+  ),
+  pencil: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 20h9" />
+      <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+    </svg>
+  ),
+  trophy: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 9H4.5a2.5 2.5 0 010-5H6" />
+      <path d="M18 9h1.5a2.5 2.5 0 000-5H18" />
+      <path d="M4 22h16" />
+      <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 19.75 7 21.23 7 23" />
+      <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 19.75 17 21.23 17 23" />
+      <path d="M18 2H6v7a6 6 0 0012 0V2z" />
+    </svg>
+  ),
+  flame: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 01-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z" />
+    </svg>
+  ),
+} satisfies Record<string, ReactNode>
+
 /* ── Data ──────────────────────────────────────────────────────────────────── */
-const NAV = [
+const NAV: { group: string; items: { label: string; href: string; icon: ReactNode; active: boolean }[] }[] = [
   {
     group: 'Menú',
     items: [
-      { label: 'Inicio',          href: '/dashboard/student', icon: '⊞', active: true  },
-      { label: 'Mis exámenes',    href: '/examenes',          icon: '📋', active: false },
-      { label: 'Mi progreso',     href: '#',                  icon: '📈', active: false },
-      { label: 'Marcadores',      href: '#',                  icon: '🏅', active: false },
+      { label: 'Inicio',          href: '/dashboard/student', icon: IC.grid,        active: true  },
+      { label: 'Mis exámenes',    href: '/examenes',          icon: IC.clipboard,   active: false },
+      { label: 'Mi progreso',     href: '#',                  icon: IC.trendingUp,  active: false },
+      { label: 'Marcadores',      href: '#',                  icon: IC.award,       active: false },
     ],
   },
   {
     group: 'Practicar',
     items: [
-      { label: 'Inglés',    href: '/examenes/ielts',     icon: '🇬🇧', active: false },
-      { label: 'Alemán',    href: '/examenes/goethe',    icon: '🇩🇪', active: false },
-      { label: 'Francés',   href: '/examenes/delf-dalf', icon: '🇫🇷', active: false },
-      { label: 'Italiano',  href: '/examenes/cils-celi', icon: '🇮🇹', active: false },
-      { label: 'Portugués', href: '/examenes/celpe-bras',icon: '🇧🇷', active: false },
+      { label: 'Inglés',    href: '/examenes/ielts',     icon: IC.globe, active: false },
+      { label: 'Alemán',    href: '/examenes/goethe',    icon: IC.globe, active: false },
+      { label: 'Francés',   href: '/examenes/delf-dalf', icon: IC.globe, active: false },
+      { label: 'Italiano',  href: '/examenes/cils-celi', icon: IC.globe, active: false },
+      { label: 'Portugués', href: '/examenes/celpe-bras',icon: IC.globe, active: false },
     ],
   },
   {
     group: 'Cuenta',
     items: [
-      { label: 'Mi perfil',      href: '#', icon: '👤', active: false },
-      { label: 'Configuración',  href: '#', icon: '⚙️', active: false },
+      { label: 'Mi perfil',      href: '#', icon: IC.user,     active: false },
+      { label: 'Configuración',  href: '#', icon: IC.settings, active: false },
     ],
   },
 ]
@@ -52,13 +173,13 @@ const RECOMMENDED = [
   { name: 'CELPE-BRAS', lang: 'Portugués',          badge: 'BRASIL',          color: '#166534', slug: 'celpe-bras', mocks: '1 simulacro' },
 ]
 
-const RESOURCES = [
-  { label: 'Exámenes',       icon: '📚', href: '/examenes' },
-  { label: 'Iniciar sesión', icon: '🔑', href: '/login' },
-  { label: 'Método WeLearn', icon: '🧠', href: '/home#metodo' },
-  { label: 'Comunidad',      icon: '💬', href: '#' },
-  { label: 'Certificaciones',icon: '🎓', href: '/home#examenes' },
-  { label: 'Pedir ayuda',    icon: '🙋', href: '#' },
+const RESOURCES: { label: string; icon: ReactNode; href: string }[] = [
+  { label: 'Exámenes',       icon: IC.bookOpen,      href: '/examenes' },
+  { label: 'Iniciar sesión', icon: IC.logIn,         href: '/login' },
+  { label: 'Método WeLearn', icon: IC.sparkles,      href: '/home#metodo' },
+  { label: 'Comunidad',      icon: IC.messageCircle, href: '#' },
+  { label: 'Certificaciones',icon: IC.graduationCap, href: '/home#examenes' },
+  { label: 'Pedir ayuda',    icon: IC.helpCircle,    href: '#' },
 ]
 
 const RADAR_DATA = [
@@ -69,11 +190,11 @@ const RADAR_DATA = [
   { skill: 'Vocab',     value: 74 },
 ]
 
-const STATS = [
-  { num: '12',   label: 'Simulacros',     icon: '📋' },
-  { num: '847',  label: 'Preguntas',      icon: '✏️' },
-  { num: '85',   label: 'Mejor score',    icon: '🏆' },
-  { num: '18',   label: 'Días activo',    icon: '🔥' },
+const STATS: { num: string; label: string; icon: ReactNode }[] = [
+  { num: '12',   label: 'Simulacros',     icon: IC.clipboard2 },
+  { num: '847',  label: 'Preguntas',      icon: IC.pencil     },
+  { num: '85',   label: 'Mejor score',    icon: IC.trophy     },
+  { num: '18',   label: 'Días activo',    icon: IC.flame      },
 ]
 
 /* ── Component ─────────────────────────────────────────────────────────────── */
@@ -87,8 +208,7 @@ export default function StudentDashboardClient({ name }: Props) {
       {/* ── Sidebar ──────────────────────────────────────────────────────────── */}
       <aside className={`std-sidebar${sideOpen ? ' std-sidebar--open' : ''}`}>
         <div className="std-sidebar__brand">
-          <span className="std-sidebar__logo">W</span>
-          <span className="std-sidebar__brand-name">WeLearn</span>
+          <div className="std-sidebar__brand-pill">WeLearn</div>
         </div>
 
         <nav className="std-sidebar__nav">
@@ -137,7 +257,7 @@ export default function StudentDashboardClient({ name }: Props) {
           {/* ── Greeting ── */}
           <div className="std-greeting">
             <div>
-              <h1 className="std-greeting__h1">Bienvenido/a, {name} 👋</h1>
+              <h1 className="std-greeting__h1">Bienvenido/a, {name}</h1>
               <p className="std-greeting__sub">Tienes 3 simulacros en progreso · Continúa donde lo dejaste</p>
             </div>
             <Link href="/examenes" className="btn btn-sm std-greeting__cta">
@@ -236,7 +356,7 @@ export default function StudentDashboardClient({ name }: Props) {
               {/* Streak */}
               <div className="std-widget std-streak">
                 <div className="std-streak__header">
-                  <span className="std-streak__fire">🔥</span>
+                  <span className="std-streak__fire">{IC.flame}</span>
                   <div>
                     <p className="std-streak__num">18 días</p>
                     <p className="std-streak__label">racha activa</p>
@@ -256,7 +376,7 @@ export default function StudentDashboardClient({ name }: Props) {
               {/* Rank */}
               <div className="std-widget std-rank">
                 <div className="std-rank__header">
-                  <span className="std-rank__badge">🏅</span>
+                  <span className="std-rank__badge">{IC.award}</span>
                   <div>
                     <p className="std-rank__label">Tu posición</p>
                     <p className="std-rank__num">Rango #42</p>
@@ -329,8 +449,11 @@ export default function StudentDashboardClient({ name }: Props) {
         .std-sidebar {
           width: 220px;
           min-width: 220px;
-          background: var(--bg);
-          border-right: 1px solid var(--line-soft);
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border-right: 1px solid rgba(20,33,92,0.10);
+          box-shadow: 2px 0 24px rgba(20,33,92,0.06);
           display: flex;
           flex-direction: column;
           position: sticky;
@@ -342,27 +465,19 @@ export default function StudentDashboardClient({ name }: Props) {
         .std-sidebar__brand {
           display: flex;
           align-items: center;
-          gap: 10px;
-          padding: 20px 18px 16px;
-          border-bottom: 1px solid var(--line-soft);
+          padding: 16px 14px 14px;
+          border-bottom: 1px solid rgba(20,33,92,0.08);
         }
-        .std-sidebar__logo {
-          width: 30px;
-          height: 30px;
-          background: #c8202e;
-          border-radius: 8px;
+        .std-sidebar__brand-pill {
+          background: linear-gradient(135deg, #14215c 0%, #1e3080 100%);
           color: #fff;
-          font-weight: 900;
+          border-radius: 14px;
+          padding: 12px 16px;
+          font-weight: 800;
           font-size: 15px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .std-sidebar__brand-name {
-          font-weight: 700;
-          font-size: 15px;
-          color: var(--ink);
           letter-spacing: -0.02em;
+          width: 100%;
+          text-align: center;
         }
         .std-sidebar__nav {
           flex: 1;
@@ -406,7 +521,7 @@ export default function StudentDashboardClient({ name }: Props) {
         @media (prefers-color-scheme: dark) {
           .std-nav-item--active { background: rgba(200,32,46,0.12); }
         }
-        .std-nav-item__icon { font-size: 14px; width: 18px; text-align: center; }
+        .std-nav-item__icon { font-size: 14px; width: 18px; text-align: center; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .std-sidebar__footer {
           padding: 14px 14px 18px;
           border-top: 1px solid var(--line-soft);
@@ -539,15 +654,18 @@ export default function StudentDashboardClient({ name }: Props) {
           margin-bottom: 24px;
         }
         .std-kpi-card {
-          background: var(--bg);
-          border: 1px solid var(--line-soft);
-          border-radius: 12px;
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px solid rgba(20,33,92,0.10);
+          border-radius: 18px;
+          box-shadow: 0 4px 20px rgba(20,33,92,0.08), inset 0 1px 0 rgba(255,255,255,0.85);
           padding: 16px 18px;
           display: flex;
           flex-direction: column;
           gap: 4px;
         }
-        .std-kpi-card__icon { font-size: 18px; margin-bottom: 4px; }
+        .std-kpi-card__icon { font-size: 18px; margin-bottom: 4px; display: flex; align-items: center; color: var(--muted); }
         .std-kpi-card__num {
           font-size: 24px;
           font-weight: 800;
@@ -596,17 +714,21 @@ export default function StudentDashboardClient({ name }: Props) {
         /* ── Progress cards ── */
         .std-progress-list { display: flex; flex-direction: column; gap: 10px; }
         .std-progress-card {
-          background: var(--bg);
-          border: 1px solid var(--line-soft);
-          border-radius: 12px;
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px solid rgba(20,33,92,0.10);
+          border-radius: 18px;
+          box-shadow: 0 4px 20px rgba(20,33,92,0.08), inset 0 1px 0 rgba(255,255,255,0.85);
           padding: 16px 18px;
           text-decoration: none;
           display: block;
-          transition: box-shadow 0.15s, border-color 0.15s;
+          transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
         }
         .std-progress-card:hover {
-          box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-          border-color: #c8202e;
+          box-shadow: 0 8px 28px rgba(20,33,92,0.13), inset 0 1px 0 rgba(255,255,255,0.9);
+          border-color: rgba(200,32,46,0.35);
+          transform: translateY(-2px);
         }
         .std-progress-card__top {
           display: flex;
@@ -650,19 +772,23 @@ export default function StudentDashboardClient({ name }: Props) {
           gap: 12px;
         }
         .std-rec-card {
-          background: var(--bg);
-          border: 1px solid var(--line-soft);
-          border-radius: 12px;
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px solid rgba(20,33,92,0.10);
+          border-radius: 18px;
+          box-shadow: 0 4px 20px rgba(20,33,92,0.08), inset 0 1px 0 rgba(255,255,255,0.85);
           padding: 16px;
           text-decoration: none;
           display: flex;
           flex-direction: column;
           gap: 4px;
-          transition: box-shadow 0.15s, border-color 0.15s;
+          transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
         }
         .std-rec-card:hover {
-          box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-          border-color: rgba(200,32,46,0.3);
+          box-shadow: 0 8px 28px rgba(20,33,92,0.13), inset 0 1px 0 rgba(255,255,255,0.9);
+          border-color: rgba(200,32,46,0.35);
+          transform: translateY(-2px);
         }
         .std-rec-card__badge {
           font-size: 9px;
@@ -701,22 +827,26 @@ export default function StudentDashboardClient({ name }: Props) {
           gap: 10px;
         }
         .std-resource-card {
-          background: var(--bg);
-          border: 1px solid var(--line-soft);
-          border-radius: 10px;
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px solid rgba(20,33,92,0.10);
+          border-radius: 18px;
+          box-shadow: 0 4px 20px rgba(20,33,92,0.08), inset 0 1px 0 rgba(255,255,255,0.85);
           padding: 14px 12px;
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 8px;
           text-decoration: none;
-          transition: background 0.15s, box-shadow 0.15s;
+          transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
         }
         .std-resource-card:hover {
-          background: var(--bg-2);
-          box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+          box-shadow: 0 8px 28px rgba(20,33,92,0.13), inset 0 1px 0 rgba(255,255,255,0.9);
+          border-color: rgba(20,33,92,0.18);
+          transform: translateY(-2px);
         }
-        .std-resource-card__icon { font-size: 20px; }
+        .std-resource-card__icon { font-size: 20px; display: flex; align-items: center; justify-content: center; color: var(--muted); }
         .std-resource-card__label {
           font-size: 11px;
           font-weight: 600;
@@ -727,9 +857,12 @@ export default function StudentDashboardClient({ name }: Props) {
         /* ── Widgets (right column) ── */
         .std-col-side { display: flex; flex-direction: column; gap: 14px; }
         .std-widget {
-          background: var(--bg);
-          border: 1px solid var(--line-soft);
-          border-radius: 14px;
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px solid rgba(20,33,92,0.10);
+          border-radius: 18px;
+          box-shadow: 0 4px 20px rgba(20,33,92,0.08), inset 0 1px 0 rgba(255,255,255,0.85);
           padding: 18px;
         }
         .std-widget__title {
@@ -748,7 +881,8 @@ export default function StudentDashboardClient({ name }: Props) {
           gap: 12px;
           margin-bottom: 10px;
         }
-        .std-streak__fire { font-size: 28px; }
+        .std-streak__fire { display: flex; align-items: center; width: 28px; height: 28px; color: #f97316; flex-shrink: 0; }
+        .std-streak__fire svg { width: 28px; height: 28px; }
         .std-streak__num {
           font-size: 20px;
           font-weight: 800;
@@ -801,7 +935,8 @@ export default function StudentDashboardClient({ name }: Props) {
           gap: 12px;
           margin-bottom: 12px;
         }
-        .std-rank__badge { font-size: 24px; }
+        .std-rank__badge { display: flex; align-items: center; width: 24px; height: 24px; color: #f59e0b; flex-shrink: 0; }
+        .std-rank__badge svg { width: 24px; height: 24px; }
         .std-rank__label {
           font-size: 11px;
           color: var(--muted);

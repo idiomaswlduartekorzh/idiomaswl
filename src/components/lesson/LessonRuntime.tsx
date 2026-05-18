@@ -33,7 +33,7 @@ export default function LessonRuntime({ langName, langFlag, dayNumber, title }: 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
       {/* ── Nav ── */}
-      <nav className="wl-nav" style={{ borderBottom: '1px solid var(--line-soft)', background: 'var(--bg)' }}>
+      <nav className="wl-nav" style={{ borderBottom: '1px solid var(--line-soft)' }}>
         <div className="wl-container">
           <div className="wl-nav-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: 64, gap: '1rem' }}>
             <Link href="/home" className="wl-site-nav__brand" style={{ textDecoration: 'none' }}>
@@ -70,6 +70,9 @@ export default function LessonRuntime({ langName, langFlag, dayNumber, title }: 
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+              <Link href="/leccion" style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.06em', color: 'var(--muted)', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                ← Salir
+              </Link>
               <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.06em' }}>
                 {String(stageNum).padStart(2, '0')} / {String(TOTAL).padStart(2, '0')}
               </span>
