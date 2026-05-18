@@ -4718,3 +4718,232 @@ button {
   transition: color 0.15s;
 }
 .lec-cta__link:hover { color: #fff; }
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LIQUID GLASS — Apple-inspired design system
+   Overrides key UI tokens with frosted glass, mesh gradients, and depth
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Glass tokens ─────────────────────────────────────────────────────────── */
+:root {
+  --glass-light:      rgba(255, 255, 255, 0.72);
+  --glass-border:     rgba(255, 255, 255, 0.55);
+  --glass-shadow:     0 8px 32px rgba(14, 21, 92, 0.10), 0 2px 8px rgba(14, 21, 92, 0.05);
+  --glass-shadow-lg:  0 20px 60px rgba(14, 21, 92, 0.14), 0 4px 16px rgba(14, 21, 92, 0.08);
+  --glass-blur:       blur(24px) saturate(1.9) brightness(1.04);
+  --glass-radius:     22px;
+  --glass-inner:      linear-gradient(140deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.0) 55%);
+  --glass-specular:   linear-gradient(120deg, rgba(255,255,255,0.4) 0%, transparent 40%);
+  --mesh-1:           rgba(200, 32, 46, 0.07);
+  --mesh-2:           rgba(20, 33, 92, 0.09);
+  --mesh-3:           rgba(200, 121, 65, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --glass-light:     rgba(18, 24, 56, 0.65);
+    --glass-border:    rgba(255, 255, 255, 0.12);
+    --glass-shadow:    0 8px 32px rgba(0,0,0,0.32), 0 2px 8px rgba(0,0,0,0.18);
+    --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.42), 0 4px 16px rgba(0,0,0,0.24);
+    --glass-inner:     linear-gradient(140deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.0) 55%);
+    --glass-specular:  linear-gradient(120deg, rgba(255,255,255,0.12) 0%, transparent 40%);
+    --mesh-1:          rgba(200, 32, 46, 0.12);
+    --mesh-2:          rgba(20, 33, 92, 0.18);
+    --mesh-3:          rgba(200, 121, 65, 0.10);
+  }
+}
+[data-theme="dark"] {
+  --glass-light:     rgba(18, 24, 56, 0.65);
+  --glass-border:    rgba(255, 255, 255, 0.12);
+  --glass-shadow:    0 8px 32px rgba(0,0,0,0.32), 0 2px 8px rgba(0,0,0,0.18);
+  --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.42), 0 4px 16px rgba(0,0,0,0.24);
+  --glass-inner:     linear-gradient(140deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.0) 55%);
+  --glass-specular:  linear-gradient(120deg, rgba(255,255,255,0.12) 0%, transparent 40%);
+  --mesh-1:          rgba(200, 32, 46, 0.12);
+  --mesh-2:          rgba(20, 33, 92, 0.18);
+  --mesh-3:          rgba(200, 121, 65, 0.10);
+}
+
+/* ── Gradient mesh background ─────────────────────────────────────────────── */
+body {
+  background-image:
+    radial-gradient(ellipse at 15% 15%, var(--mesh-1) 0%, transparent 52%),
+    radial-gradient(ellipse at 85% 8%,  var(--mesh-2) 0%, transparent 48%),
+    radial-gradient(ellipse at 50% 90%, var(--mesh-3) 0%, transparent 55%),
+    radial-gradient(ellipse at 5%  60%, var(--mesh-2) 0%, transparent 40%),
+    radial-gradient(ellipse at 95% 55%, var(--mesh-1) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* ── Nav — floating liquid glass pill ────────────────────────────────────── */
+.wl-site-nav {
+  background: var(--glass-light) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+/* Nav links — glass pill on hover/active */
+.wl-site-nav__link:hover,
+.wl-site-nav__link.is-active {
+  background: rgba(255,255,255,0.45) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 2px 8px rgba(14,21,92,0.08), inset 0 1px 0 rgba(255,255,255,0.6) !important;
+}
+
+/* ── Cards — liquid glass ─────────────────────────────────────────────────── */
+.wl-card {
+  background: var(--glass-light) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow) !important;
+  position: relative;
+  overflow: hidden;
+}
+/* Inner specular highlight */
+.wl-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--glass-inner);
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+.wl-card > * { position: relative; z-index: 1; }
+
+/* ── Buttons — glass shimmer ──────────────────────────────────────────────── */
+.btn {
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 12px rgba(20,33,92,0.18), inset 0 1px 0 rgba(255,255,255,0.18) !important;
+  transition: transform 0.22s cubic-bezier(0.2,0.8,0.2,1),
+              box-shadow 0.22s, background 0.2s, color 0.2s !important;
+}
+.btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 24px rgba(20,33,92,0.22), inset 0 1px 0 rgba(255,255,255,0.22) !important;
+}
+.btn-ghost {
+  background: rgba(255,255,255,0.45) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--ink) !important;
+  box-shadow: 0 2px 8px rgba(14,21,92,0.08), inset 0 1px 0 rgba(255,255,255,0.55) !important;
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.72) !important;
+  border-color: rgba(255,255,255,0.75) !important;
+  color: var(--ink) !important;
+}
+
+/* ── Section containers — subtle glass tint ────────────────────────────────  */
+.wl-korean-runtime-header.wl-card,
+.wl-stage-panel,
+.wl-answer-btn {
+  backdrop-filter: blur(16px) saturate(1.6) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.6) !important;
+}
+
+/* ── Stage rail (lesson sidebar) — glass ────────────────────────────────────*/
+.wl-stage-rail {
+  background: var(--glass-light) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+/* ── Lang cards / step rows / section cards ─────────────────────────────── */
+.wl-lang-card,
+.wl-step-row,
+.wl-section-card,
+.wl-price-card,
+.faq__item,
+.wl-lesson-tab {
+  background: var(--glass-light) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+.wl-lang-card:hover,
+.wl-step-row:hover,
+.wl-price-card:hover {
+  box-shadow: var(--glass-shadow-lg) !important;
+  transform: translateY(-3px);
+}
+
+/* ── Exam / practice card containers ────────────────────────────────────── */
+.prac-intro__section,
+.prac-question,
+.prac-sidebar__submit,
+.prac-results__sections,
+.ielts-form__diagram,
+.ielts-write__chart-box {
+  background: var(--glass-light) !important;
+  backdrop-filter: blur(16px) saturate(1.7) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.7) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 18px !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+/* ── Mobile nav menu — glass drawer ─────────────────────────────────────── */
+.wl-site-nav__mobile {
+  background: var(--glass-light) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  box-shadow: 0 8px 32px rgba(14,21,92,0.12) !important;
+}
+
+/* ── Specular edge on glass cards (iridescent top border) ───────────────── */
+.wl-card::after,
+.wl-lang-card::after,
+.wl-price-card::after,
+.wl-step-row::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255,255,255,0.9) 30%,
+    rgba(200,121,65,0.4) 50%,
+    rgba(255,255,255,0.9) 70%,
+    transparent 100%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* ── Utility class: .glass ───────────────────────────────────────────────── */
+.glass {
+  background: var(--glass-light);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius);
+  box-shadow: var(--glass-shadow);
+}
+.glass-lg {
+  background: var(--glass-light);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: calc(var(--glass-radius) + 6px);
+  box-shadow: var(--glass-shadow-lg);
+}
+
+/* ── Scroll bar — thinner, glass-tinted ─────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(20,33,92,0.18); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(20,33,92,0.32); }
+
