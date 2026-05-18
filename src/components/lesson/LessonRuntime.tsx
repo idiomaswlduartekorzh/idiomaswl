@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import StageRail from './StageRail';
 import StagePanel from './StagePanel';
 
@@ -35,10 +36,19 @@ export default function LessonRuntime({ langName, langFlag, dayNumber, title }: 
       <nav className="wl-nav" style={{ borderBottom: '1px solid var(--line-soft)', background: 'var(--bg)' }}>
         <div className="wl-container">
           <div className="wl-nav-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: 64, gap: '1rem' }}>
-            <div className="brand">
-              <div className="brand-mark"><span>W</span></div>
-              We<em>Learn</em>
-            </div>
+            <Link href="/home" className="wl-site-nav__brand" style={{ textDecoration: 'none' }}>
+              <div className="wl-site-nav__logo-wrap">
+                <Image
+                  src="/images/welearn-logo.png"
+                  alt="WeLearn"
+                  fill
+                  sizes="96px"
+                  priority
+                  style={{ objectFit: 'cover', objectPosition: 'center 42%' }}
+                />
+              </div>
+              <span className="wl-site-nav__brand-name">Idiomas WeLearn</span>
+            </Link>
 
             {/* Progress bar — 11 segments */}
             <div style={{ flex: 1, maxWidth: 360, display: 'flex', gap: 3 }}>
@@ -63,8 +73,27 @@ export default function LessonRuntime({ langName, langFlag, dayNumber, title }: 
               <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.06em' }}>
                 {String(stageNum).padStart(2, '0')} / {String(TOTAL).padStart(2, '0')}
               </span>
-              <Link href="/" style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.06em', color: 'var(--muted)' }}>
-                ← Catálogo
+              {/* Day navigation */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                {dayNumber > 1 && (
+                  <Link
+                    href={`/courses/korean/step/${dayNumber - 1}`}
+                    style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.06em', color: 'var(--muted)', padding: '4px 8px', borderRadius: 6, border: '1px solid var(--line-soft)', textDecoration: 'none', whiteSpace: 'nowrap' }}
+                  >
+                    ← Día {dayNumber - 1}
+                  </Link>
+                )}
+                {dayNumber < 10 && (
+                  <Link
+                    href={`/courses/korean/step/${dayNumber + 1}`}
+                    style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.06em', color: 'var(--muted)', padding: '4px 8px', borderRadius: 6, border: '1px solid var(--line-soft)', textDecoration: 'none', whiteSpace: 'nowrap' }}
+                  >
+                    Día {dayNumber + 1} →
+                  </Link>
+                )}
+              </div>
+              <Link href="/leccion" style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.06em', color: 'var(--muted)', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                ↩ Lecciones
               </Link>
             </div>
           </div>
@@ -109,7 +138,7 @@ export default function LessonRuntime({ langName, langFlag, dayNumber, title }: 
                 </button>
               </div>
 
-              <StagePanel stageIndex={activeIndex} onComplete={next} />
+              <StagePanel stageIndex={activeIndex} dayNumber={dayNumber} onComplete={next} />
             </div>
           </div>
 

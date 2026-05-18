@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
+// ── Day 1 stages ──────────────────────────────────────────────────────────────
 const Activation          = dynamic(() => import('./stages/Activation'),          { ssr: false });
 const AcquisitionGuided   = dynamic(() => import('./stages/AcquisitionGuided'),   { ssr: false });
 const Recognition         = dynamic(() => import('./stages/Recognition'),          { ssr: false });
@@ -14,10 +15,29 @@ const ReactiveInteraction = dynamic(() => import('./stages/ReactiveInteraction')
 const SmartReview         = dynamic(() => import('./stages/SmartReview'),          { ssr: false });
 const Completion          = dynamic(() => import('./stages/Completion'),           { ssr: false });
 
-const COMPONENTS = [
+// ── Day 2 stages ──────────────────────────────────────────────────────────────
+const Activation002          = dynamic(() => import('./stages/step002/Activation002'),          { ssr: false });
+const AcquisitionGuided002   = dynamic(() => import('./stages/step002/AcquisitionGuided002'),   { ssr: false });
+const Recognition002         = dynamic(() => import('./stages/step002/Recognition002'),          { ssr: false });
+const ListeningSurvivable002 = dynamic(() => import('./stages/step002/ListeningSurvivable002'), { ssr: false });
+const ContextualInput002     = dynamic(() => import('./stages/step002/ContextualInput002'),     { ssr: false });
+const GuidedDiscovery002     = dynamic(() => import('./stages/step002/GuidedDiscovery002'),     { ssr: false });
+const MicroExplanation002    = dynamic(() => import('./stages/step002/MicroExplanation002'),    { ssr: false });
+const GuidedProduction002    = dynamic(() => import('./stages/step002/GuidedProduction002'),    { ssr: false });
+const ReactiveInteraction002 = dynamic(() => import('./stages/step002/ReactiveInteraction002'), { ssr: false });
+const SmartReview002         = dynamic(() => import('./stages/step002/SmartReview002'),         { ssr: false });
+const Completion002          = dynamic(() => import('./stages/step002/Completion002'),          { ssr: false });
+
+const COMPONENTS_DAY1 = [
   Activation, AcquisitionGuided, Recognition, ListeningSurvivable,
   ContextualInput, GuidedDiscovery, MicroExplanation, GuidedProduction,
   ReactiveInteraction, SmartReview, Completion,
+];
+
+const COMPONENTS_DAY2 = [
+  Activation002, AcquisitionGuided002, Recognition002, ListeningSurvivable002,
+  ContextualInput002, GuidedDiscovery002, MicroExplanation002, GuidedProduction002,
+  ReactiveInteraction002, SmartReview002, Completion002,
 ];
 
 const STAGE_NAMES = [
@@ -28,11 +48,13 @@ const STAGE_NAMES = [
 
 interface StagePanelProps {
   stageIndex: number;
+  dayNumber?: number;
   onComplete?: () => void;
 }
 
-export default function StagePanel({ stageIndex, onComplete }: StagePanelProps) {
-  const StageComponent = COMPONENTS[stageIndex];
+export default function StagePanel({ stageIndex, dayNumber = 1, onComplete }: StagePanelProps) {
+  const components = dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
+  const StageComponent = components[stageIndex];
 
   if (!StageComponent) {
     return (

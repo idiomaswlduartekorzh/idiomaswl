@@ -135,6 +135,79 @@ function WordCard({ badge, native, rom, es, idx }: { badge: string; native: stri
   );
 }
 
+/* ─── Available days panel ──────────────────────────────────────────────────── */
+const AVAILABLE_DAYS: { lang: string; slug: string; flag: string; day: number; title: string; desc: string }[] = [
+  { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 1, title: 'Vocabulario fundamental', desc: 'Escuela, casa, libro, agua, amigo — primeras 6 palabras.' },
+  { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 2, title: 'El alfabeto Hangul', desc: 'Bloques silábicos, 6 familias articulatorias, primeras lecturas.' },
+];
+
+function AvailableDays() {
+  return (
+    <section style={{ background: 'var(--bg-2)', borderTop: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)', padding: '3rem 0' }}>
+      <div className="wrap">
+        <div style={{ marginBottom: 24 }}>
+          <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff' }}>
+            DISPONIBLE AHORA
+          </span>
+          <h2 style={{ margin: '6px 0 6px', fontSize: 26, fontWeight: 800, letterSpacing: '-0.02em', color: 'var(--ink)' }}>
+            Empieza sin crear cuenta
+          </h2>
+          <p style={{ margin: 0, fontSize: 14, color: 'var(--muted)', lineHeight: 1.6 }}>
+            Los días publicados están abiertos. Accede directo a la lección.
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 14 }}>
+          {AVAILABLE_DAYS.map(d => (
+            <Link
+              key={`${d.slug}-${d.day}`}
+              href={`/courses/${d.slug}/step/${d.day}`}
+              style={{ textDecoration: 'none' }}
+            >
+              <motion.div
+                whileHover={{ y: -4, transition: { duration: 0.15 } }}
+                style={{
+                  background: 'var(--bg)',
+                  border: '1.5px solid var(--line-soft)',
+                  borderRadius: 14,
+                  padding: '20px 22px',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 10,
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: 22 }}>{d.flag}</span>
+                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 100, background: 'rgba(108,99,255,0.1)', color: '#6c63ff', fontWeight: 700 }}>
+                    Día {d.day}
+                  </span>
+                </div>
+                <div>
+                  <div style={{ fontSize: 11, color: 'var(--muted)', marginBottom: 3, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                    {d.lang}
+                  </div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--ink)', marginBottom: 4 }}>
+                    {d.title}
+                  </div>
+                  <div style={{ fontSize: 12, color: 'var(--muted)', lineHeight: 1.5 }}>
+                    {d.desc}
+                  </div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+                  <span style={{ fontSize: 13, color: '#6c63ff', fontWeight: 600 }}>
+                    Ir a la lección →
+                  </span>
+                </div>
+              </motion.div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ─── Step row ──────────────────────────────────────────────────────────────── */
 function StepRow({ step, index, active, onClick }: { step: typeof STEPS[0]; index: number; active: boolean; onClick: () => void }) {
   return (
@@ -160,9 +233,7 @@ function StepRow({ step, index, active, onClick }: { step: typeof STEPS[0]; inde
         )}
       </div>
       <span className="lec-step__status">
-        {active ? <span className="lec-step__pill lec-step__pill--active">en curso</span>
-                : index === 0 ? null
-                : <span className="lec-step__pill">bloqueado</span>}
+        {active ? <span className="lec-step__pill lec-step__pill--active">en curso</span> : null}
       </span>
     </motion.li>
   );
@@ -265,6 +336,8 @@ export default function LeccionClient() {
         </motion.div>
       </section>
 
+      <AvailableDays />
+
       {/* ── Live demo ─────────────────────────────────────────────────────────── */}
       <section id="lec-demo" className="lec-demo">
         <div className="wrap">
@@ -328,10 +401,9 @@ export default function LeccionClient() {
                   </div>
                 ) : (
                   <div className="lec-locked-step">
-                    <div className="lec-locked-step__icon">🔒</div>
                     <p className="lec-locked-step__text">{STEPS[activeStep].desc}</p>
-                    <Link href="/registro" className="lec-locked-step__cta">
-                      Desbloquear este paso →
+                    <Link href="/courses/korean/step/1" className="lec-locked-step__cta">
+                      Ir a la lección →
                     </Link>
                   </div>
                 )}
