@@ -1,10 +1,12 @@
 'use client';
 
+import { useEffect } from 'react';
 import {
   RadarChart, Radar, PolarGrid, PolarAngleAxis,
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   Cell,
 } from 'recharts';
+import { saveExamResult } from '@/lib/actions/saveExamResult';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -173,6 +175,11 @@ export function ExamReport({ data, onRetry, backHref }: {
   onRetry?: () => void;
   backHref?: string;
 }) {
+  useEffect(() => {
+    saveExamResult(data).catch(() => {/* silently ignore save failures */});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const accent = data.accentColor ?? '#c8202e';
   const pct = data.totalMax > 0 ? data.totalScore / data.totalMax : 0;
   const { level, desc } = interpretScore(data.examSlug, pct);

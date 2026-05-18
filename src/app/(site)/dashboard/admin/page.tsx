@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import JoseDashboard from './JoseDashboard'
+import JoseDashboardServer from './JoseDashboardServer'
 import ZhannaDashboard from './ZhannaDashboard'
 
 const JOSE_EMAILS = ['josedavidduartesilva@gmail.com', 'david.duartes182@gmail.com']
@@ -15,7 +15,7 @@ export default async function AdminPage() {
   const email = user?.email ?? ''
 
   if (JOSE_EMAILS.includes(email)) {
-    return <JoseDashboard />
+    return <JoseDashboardServer />
   }
 
   if (email === ZHANNA_EMAIL) {
