@@ -1166,10 +1166,44 @@ button {
 /* Hero lesson preview card */
 .wlh-lesson-preview {
   background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: 16px;
+  border: 1px solid rgba(20,33,92,0.12);
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  box-shadow:
+    0 0 0 1px rgba(20,33,92,0.05),
+    0 4px 16px rgba(20,33,92,0.10),
+    0 16px 48px rgba(20,33,92,0.14),
+    0 40px 100px rgba(20,33,92,0.10);
+  transform: perspective(900px) rotateY(-3deg) rotateX(1deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.wlh-lesson-preview:hover {
+  transform: perspective(900px) rotateY(-1deg) rotateX(0deg);
+  box-shadow:
+    0 0 0 1px rgba(20,33,92,0.08),
+    0 8px 24px rgba(20,33,92,0.14),
+    0 24px 64px rgba(20,33,92,0.18),
+    0 56px 120px rgba(20,33,92,0.12);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .wlh-lesson-preview {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.12);
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.06),
+      0 4px 16px rgba(0,0,0,0.40),
+      0 16px 48px rgba(0,0,0,0.50),
+      0 0 80px rgba(20,33,92,0.35);
+  }
+}
+[data-theme="dark"] .wlh-lesson-preview {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.12);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    0 4px 16px rgba(0,0,0,0.40),
+    0 16px 48px rgba(0,0,0,0.50),
+    0 0 80px rgba(20,33,92,0.35);
 }
 .wlh-lesson-preview__header {
   display: flex;
@@ -1239,7 +1273,7 @@ button {
 .wlh-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: linear-gradient(135deg, #1a2ecc 0%, #9b1a26 100%);
+  background: linear-gradient(135deg, #0c1240 0%, #14215c 100%);
 }
 @media (max-width: 640px) {
   .wlh-stats { grid-template-columns: repeat(2, 1fr); }
@@ -4736,17 +4770,17 @@ button {
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --glass-bg:        rgba(15, 20, 50, 0.68);
-    --glass-border:    rgba(255,255,255,0.13);
-    --glass-shadow:    0 8px 32px rgba(0,0,0,0.38), 0 2px 8px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.10);
-    --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.48), 0 4px 16px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.10);
+    --glass-bg:        rgba(255, 255, 255, 0.055);
+    --glass-border:    rgba(255,255,255,0.14);
+    --glass-shadow:    0 8px 32px rgba(0,0,0,0.45), 0 2px 8px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.12);
+    --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.55), 0 4px 16px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.14);
   }
 }
 [data-theme="dark"] {
-  --glass-bg:        rgba(15, 20, 50, 0.68);
-  --glass-border:    rgba(255,255,255,0.13);
-  --glass-shadow:    0 8px 32px rgba(0,0,0,0.38), 0 2px 8px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.10);
-  --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.48), 0 4px 16px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.10);
+  --glass-bg:        rgba(255, 255, 255, 0.055);
+  --glass-border:    rgba(255,255,255,0.14);
+  --glass-shadow:    0 8px 32px rgba(0,0,0,0.45), 0 2px 8px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.12);
+  --glass-shadow-lg: 0 20px 60px rgba(0,0,0,0.55), 0 4px 16px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.14);
 }
 
 /* ── Background mesh — gives the glass something to blur ─────────────────── */
@@ -5206,3 +5240,179 @@ body {
     transparent 100%) !important;
 }
 
+/* ════════════════════════════════════════════════════════════════════════════
+   DARK MODE PREMIUM DEPTH — cards float instead of blending into background
+   ════════════════════════════════════════════════════════════════════════════ */
+
+/* The core fix: dark glass must be LIGHTER than body (#0d0f1a).
+   rgba(255,255,255,0.055) on #0d0f1a creates a pearl-silver frosted surface. */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+
+    /* Dashboard KPI cards */
+    .std-kpi-card {
+      background: rgba(255,255,255,0.05) !important;
+      border: 1px solid rgba(255,255,255,0.10) !important;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+    }
+
+    /* Widget cards (streak, ranking) */
+    .std-widget,
+    .std-progress-card,
+    .std-rec-card,
+    .std-resource-card {
+      background: rgba(255,255,255,0.04) !important;
+      border: 1px solid rgba(255,255,255,0.09) !important;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.32), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+    }
+    .std-widget:hover,
+    .std-progress-card:hover,
+    .std-rec-card:hover,
+    .std-resource-card:hover {
+      background: rgba(255,255,255,0.07) !important;
+      border-color: rgba(255,255,255,0.15) !important;
+      transform: translateY(-2px) !important;
+    }
+
+    /* Sidebar */
+    .std-sidebar {
+      background: rgba(12,18,64,0.95) !important;
+      border-right: 1px solid rgba(255,255,255,0.08) !important;
+    }
+
+    /* Language cards */
+    .wlh-lang-card {
+      background: rgba(255,255,255,0.04) !important;
+      border: 1px solid rgba(255,255,255,0.10) !important;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+    }
+    .wlh-lang-card:hover {
+      background: rgba(255,255,255,0.08) !important;
+      border-color: rgba(20,33,92,0.60) !important;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.40), 0 0 0 1px rgba(20,33,92,0.50), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+    }
+
+    /* Step rows */
+    .wlh-step-row {
+      background: rgba(255,255,255,0.035) !important;
+      border-color: rgba(255,255,255,0.08) !important;
+    }
+    .wlh-step-row:hover {
+      background: rgba(255,255,255,0.07) !important;
+    }
+
+    /* Price cards */
+    .wlh-price-card {
+      background: rgba(255,255,255,0.04) !important;
+      border-color: rgba(255,255,255,0.10) !important;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+    }
+    .wlh-price-card--featured {
+      background: rgba(20,33,92,0.70) !important;
+      border-color: rgba(20,33,92,0.90) !important;
+      box-shadow: 0 8px 40px rgba(20,33,92,0.50), inset 0 1px 0 rgba(255,255,255,0.18) !important;
+    }
+
+    /* Testimonial + team cards */
+    .wlh-testimonial-card,
+    .wlh-team-card {
+      background: rgba(255,255,255,0.04) !important;
+      border-color: rgba(255,255,255,0.09) !important;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.07) !important;
+    }
+
+    /* Exam cards on homepage — in dark section they already look good, keep navy */
+    .wlh-section--dark .wlh-exam-card {
+      background: rgba(20,33,92,0.65) !important;
+      border: 1px solid rgba(255,255,255,0.12) !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+    }
+    .wlh-section--dark .wlh-exam-card:hover {
+      background: rgba(20,33,92,0.85) !important;
+      box-shadow: 0 8px 40px rgba(20,33,92,0.50), inset 0 1px 0 rgba(255,255,255,0.18) !important;
+      transform: translateY(-4px) scale(1.015) !important;
+    }
+
+    /* Nav — premium glass in dark */
+    .wl-site-nav {
+      background: rgba(13,15,26,0.85) !important;
+      border-bottom-color: rgba(255,255,255,0.08) !important;
+      backdrop-filter: blur(24px) saturate(1.8) !important;
+      -webkit-backdrop-filter: blur(24px) saturate(1.8) !important;
+    }
+  }
+}
+
+/* Explicit dark toggle — same rules */
+[data-theme="dark"] {
+  .std-kpi-card {
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+  }
+  .std-widget,
+  .std-progress-card,
+  .std-rec-card,
+  .std-resource-card {
+    background: rgba(255,255,255,0.04) !important;
+    border: 1px solid rgba(255,255,255,0.09) !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.32), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  }
+  .std-sidebar {
+    background: rgba(12,18,64,0.95) !important;
+    border-right: 1px solid rgba(255,255,255,0.08) !important;
+  }
+  .wlh-lang-card {
+    background: rgba(255,255,255,0.04) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  }
+  .wlh-step-row {
+    background: rgba(255,255,255,0.035) !important;
+    border-color: rgba(255,255,255,0.08) !important;
+  }
+  .wlh-price-card {
+    background: rgba(255,255,255,0.04) !important;
+    border-color: rgba(255,255,255,0.10) !important;
+  }
+  .wlh-price-card--featured {
+    background: rgba(20,33,92,0.70) !important;
+    border-color: rgba(20,33,92,0.90) !important;
+    box-shadow: 0 8px 40px rgba(20,33,92,0.50), inset 0 1px 0 rgba(255,255,255,0.18) !important;
+  }
+  .wl-site-nav {
+    background: rgba(13,15,26,0.85) !important;
+    border-bottom-color: rgba(255,255,255,0.08) !important;
+    backdrop-filter: blur(24px) saturate(1.8) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(1.8) !important;
+  }
+  .wlh-testimonial-card,
+  .wlh-team-card {
+    background: rgba(255,255,255,0.04) !important;
+    border-color: rgba(255,255,255,0.09) !important;
+  }
+  .wlh-section--dark .wlh-exam-card {
+    background: rgba(20,33,92,0.65) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+  }
+  .wlh-section--dark .wlh-exam-card:hover {
+    background: rgba(20,33,92,0.85) !important;
+    transform: translateY(-4px) scale(1.015) !important;
+  }
+}
+
+/* Light mode — body gradient must be vibrant for glass to be visible */
+:root[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  body {
+    background-color: #f5f3ff;
+    background-image:
+      radial-gradient(ellipse at 15% 15%, rgba(20,33,92,0.18) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 10%, rgba(200,32,46,0.14) 0%, transparent 48%),
+      radial-gradient(ellipse at 50% 90%, rgba(200,121,65,0.12) 0%, transparent 52%),
+      radial-gradient(ellipse at 5%  70%, rgba(20,33,92,0.08)  0%, transparent 42%),
+      radial-gradient(ellipse at 95% 55%, rgba(200,32,46,0.07) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+}
