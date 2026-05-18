@@ -621,7 +621,15 @@ function ReadingDrill({ onComplete, korean }: { onComplete: () => void; korean: 
   const [done, setDone] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const item = READING_POOL[idx];
+  // Pre-shuffle all items once on mount so correct answer isn't always index 0
+  const [shuffledPool] = useState(() =>
+    READING_POOL.map(item => ({
+      ...item,
+      options: shuffle([...item.options]),
+    }))
+  );
+
+  const item = shuffledPool[idx];
 
   function handleChoose(i: number) {
     if (chosen !== null) return;
@@ -732,7 +740,16 @@ function StrokeQuiz({ onComplete }: { onComplete: () => void }) {
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
 
-  const item = STROKE_QUIZ[idx];
+  // Shuffle options on mount, remapping the correct index so answers aren't predictable
+  const [shuffledQuiz] = useState(() =>
+    STROKE_QUIZ.map(q => {
+      const correctValue = q.options[q.correct];
+      const opts = shuffle([...q.options]);
+      return { ...q, options: opts, correct: opts.indexOf(correctValue) };
+    })
+  );
+
+  const item = shuffledQuiz[idx];
 
   function handleChoose(i: number) {
     if (chosen !== null) return;
