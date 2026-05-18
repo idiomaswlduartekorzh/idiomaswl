@@ -83,7 +83,7 @@ function Visual3() {
         <div key={jamo} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, background: ok ? 'rgba(45,155,78,0.04)' : 'rgba(245,158,11,0.06)', border: `1px solid ${ok ? 'rgba(45,155,78,0.15)' : 'rgba(245,158,11,0.25)'}` }}>
           <span style={{ fontSize: 20, fontWeight: 700, color: ok ? '#2d9b4e' : '#d97706', fontFamily: "'Noto Sans KR', sans-serif", minWidth: 28, textAlign: 'center' }}>{jamo}</span>
           <span style={{ fontSize: 12, color: 'var(--ink)', lineHeight: 1.5 }}>{desc}</span>
-          <span style={{ marginLeft: 'auto', fontSize: 14 }}>{ok ? '✅' : '⚠️'}</span>
+          <span style={{ marginLeft: 'auto', fontSize: 11, fontWeight: 700, color: ok ? '#2d9b4e' : '#d97706' }}>{ok ? 'Correcto' : 'Atencion'}</span>
         </div>
       ))}
     </div>
@@ -102,7 +102,7 @@ function Visual4() {
         <div key={combo} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, background: 'rgba(45,155,78,0.04)', border: '1px solid rgba(45,155,78,0.15)' }}>
           <span style={{ fontSize: 17, fontWeight: 700, color: '#2d9b4e', fontFamily: "'Noto Sans KR', sans-serif" }}>{combo}</span>
           <span style={{ fontSize: 12, color: 'var(--ink)', lineHeight: 1.5 }}>{note}</span>
-          <span style={{ marginLeft: 'auto', fontSize: 14 }}>✅</span>
+          <span style={{ marginLeft: 'auto', fontSize: 11, fontWeight: 700, color: '#2d9b4e' }}>OK</span>
         </div>
       ))}
     </div>
@@ -165,7 +165,7 @@ interface CapsuleData {
 
 const CAPSULES: CapsuleData[] = [
   {
-    icon: '🧱',
+    icon: 'B',
     title: 'Hangul se escribe en bloques, no en línea',
     body: 'En español escribimos letra por letra en línea: c-a-s-a. En coreano, las letras se agrupan en bloques cuadrados que representan sílabas. Cada bloque es una sílaba completa.',
     visual: <Visual1 />,
@@ -183,7 +183,7 @@ const CAPSULES: CapsuleData[] = [
     },
   },
   {
-    icon: '👨‍👩‍👧',
+    icon: 'F',
     title: 'Cada consonante tiene una familia',
     body: 'Las consonantes coreanas vienen en tríos: simple, aspirada (con aire) y tensa (seca/explosiva). Si aprendes una, aprendes las tres.',
     visual: <Visual2 />,
@@ -201,7 +201,7 @@ const CAPSULES: CapsuleData[] = [
     },
   },
   {
-    icon: '😬',
+    icon: 'V',
     title: 'ㅡ no existe en español',
     body: 'El español tiene 5 vocales claras. El coreano tiene una más: ㅡ. Para pronunciarla, pon la boca como si fueras a decir "o" o "u", pero sin redondear los labios. Es una vocal trasera no-redondeada.',
     visual: <Visual3 />,
@@ -219,7 +219,7 @@ const CAPSULES: CapsuleData[] = [
     },
   },
   {
-    icon: '🎉',
+    icon: 'R',
     title: '¡Ya sabes pronunciar ㄹ!',
     body: 'Los hispanohablantes tienen una ventaja enorme: ㄹ en coreano suena exactamente como la "r" suave española — la de "pero", "cara", "loro". No es la "rr" fuerte de "perro". Es el tap.',
     visual: <Visual4 />,
@@ -237,7 +237,7 @@ const CAPSULES: CapsuleData[] = [
     },
   },
   {
-    icon: '🏗️',
+    icon: 'C',
     title: 'Consonantes que van abajo del bloque',
     body: 'Un bloque silábico puede tener una consonante al final, debajo de todo. Se llama 받침 (batchim). La sílaba pasa de CV a CVC.',
     visual: <Visual5 />,
@@ -315,7 +315,7 @@ export default function MicroExplanation002({ onComplete }: Props) {
       {/* Card */}
       <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '24px 20px', marginBottom: 14 }}>
         {/* Icon */}
-        <div style={{ fontSize: '4rem', lineHeight: 1, marginBottom: 12, textAlign: 'center' }}>
+        <div style={{ fontSize: 18, fontWeight: 800, lineHeight: 1, marginBottom: 12, textAlign: 'center', color: accent, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
           {capsule.icon}
         </div>
 
@@ -374,7 +374,7 @@ export default function MicroExplanation002({ onComplete }: Props) {
             transition: 'background 0.25s',
           }}
         >
-          {isLast ? '✅ Entendido — Continuar →' : 'Siguiente →'}
+          {isLast ? 'Entendido — Continuar →' : 'Siguiente →'}
         </button>
       )}
     </section>

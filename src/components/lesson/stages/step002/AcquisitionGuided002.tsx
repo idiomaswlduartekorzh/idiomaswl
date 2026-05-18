@@ -85,7 +85,7 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
             {reviewCount} repaso
           </span>
           <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 100, background: 'rgba(52,211,153,0.12)', color: '#059669', fontWeight: 600 }}>
-            {newCount} nuevas 🆕
+            {newCount} nuevas NUEVO
           </span>
         </div>
       </div>
@@ -116,7 +116,7 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
         {/* New badge */}
         {card.isNew && (
           <div style={{ background: 'rgba(52,211,153,0.12)', borderBottom: '1px solid rgba(52,211,153,0.2)', padding: '5px 16px', display: 'flex', alignItems: 'center', gap: 6 }}>
-            <span style={{ fontSize: 10, fontWeight: 700, color: '#059669', textTransform: 'uppercase', letterSpacing: '0.1em' }}>🆕 Vocabulario nuevo — Día 2</span>
+            <span style={{ fontSize: 10, fontWeight: 700, color: '#059669', textTransform: 'uppercase', letterSpacing: '0.1em' }}>NUEVO — Vocabulario nuevo — Día 2</span>
           </div>
         )}
 
@@ -153,7 +153,7 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
           {card.note && (
             <div style={{ background: card.isNew ? 'rgba(52,211,153,0.07)' : 'rgba(108,99,255,0.06)', border: `1px solid ${card.isNew ? 'rgba(52,211,153,0.2)' : 'rgba(108,99,255,0.15)'}`, borderRadius: 8, padding: '6px 10px', marginBottom: 12 }}>
               <p style={{ margin: 0, fontSize: 11, color: card.isNew ? '#059669' : '#6c63ff' }}>
-                💡 {card.note}
+                {card.note}
               </p>
             </div>
           )}
@@ -161,10 +161,10 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
           {/* Audio buttons */}
           <div style={{ display: 'flex', gap: 8 }}>
             <button type="button" onClick={() => playVocab(card.audio, 1)} style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '6px 14px', fontSize: 13, color: 'var(--muted)', cursor: 'pointer' }}>
-              🔊 Escuchar
+              Escuchar
             </button>
             <button type="button" onClick={() => playVocab(card.audio, 0.75)} style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '6px 14px', fontSize: 13, color: 'var(--muted)', cursor: 'pointer' }}>
-              🐢 Lento
+              Lento
             </button>
           </div>
         </div>
@@ -176,7 +176,7 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
           ← Anterior
         </button>
         <span style={{ fontSize: 12, color: 'var(--muted)' }}>
-          {index + 1} / {VOCAB.length}{card.isNew ? ' · 🆕' : ' · 📘 repaso'}
+          {index + 1} / {VOCAB.length}{card.isNew ? ' · NUEVO' : ' · repaso'}
         </span>
         <button type="button" onClick={() => goTo(index + 1)} disabled={index === VOCAB.length - 1} style={{ background: index === VOCAB.length - 1 ? 'var(--bg-2)' : '#6c63ff', color: index === VOCAB.length - 1 ? 'var(--muted)' : '#fff', border: 'none', borderRadius: 8, padding: '10px 20px', fontSize: 13, fontWeight: 600, cursor: index === VOCAB.length - 1 ? 'not-allowed' : 'pointer' }}>
           Siguiente →
@@ -185,7 +185,7 @@ export default function AcquisitionGuided002({ onComplete }: Props) {
 
       {allSeen && (
         <button type="button" onClick={() => { playComplete(); onComplete?.(); }} style={{ width: '100%', background: '#2d9b4e', color: '#fff', border: 'none', borderRadius: 10, padding: '14px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
-          ✅ He visto todas las tarjetas — Siguiente etapa →
+          He visto todas las tarjetas — Siguiente etapa →
         </button>
       )}
     </section>

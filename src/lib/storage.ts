@@ -61,6 +61,7 @@ export const KR_IMG_002 = {
 };
 
 export const KR_AUDIO_002: Record<string, string> = {
+  // ── Vocabulary from AcquisitionGuided002 ─────────────────────────────────────
   '어제':            `${BASE002}/audio/audio_어제.mp3`,
   '글자':            `${BASE002}/audio/audio_글자.mp3`,
   '이제':            `${BASE002}/audio/audio_이제.mp3`,
@@ -68,7 +69,7 @@ export const KR_AUDIO_002: Record<string, string> = {
   '오늘':            `${BASE002}/audio/audio_오늘.mp3`,
   '조금':            `${BASE002}/audio/audio_조금.mp3`,
   '뭐':              `${BASE002}/audio/audio_뭐.mp3`,
-  '나':              `${BASE002}/audio/audio_나는.mp3`,
+  '나는':            `${BASE002}/audio/audio_나는.mp3`,
   '너':              `${BASE002}/audio/audio_너.mp3`,
   '가요':            `${BASE002}/audio/audio_가요.mp3`,
   '저는':            `${BASE002}/audio/audio_저는.mp3`,
@@ -81,6 +82,22 @@ export const KR_AUDIO_002: Record<string, string> = {
   '글자 보여요':     `${BASE002}/audio/audio_글자_보여요..mp3`,
   '어디 가요':       `${BASE002}/audio/audio_어디_가요.mp3`,
   '이제 글자가 조금 보여요': `${BASE002}/audio/audio_글자_보여요..mp3`,
+  // ── Hangul character examples (ContextualInput002) ────────────────────────────
+  '아':   `${BASE002}/audio/audio_아.mp3`,
+  '어':   `${BASE002}/audio/audio_어.mp3`,
+  '우':   `${BASE002}/audio/audio_우.mp3`,
+  '이':   `${BASE002}/audio/audio_이.mp3`,
+  '나':   `${BASE002}/audio/audio_나.mp3`,
+  '아이': `${BASE002}/audio/audio_아이.mp3`,
+  '시간': `${BASE002}/audio/audio_시간.mp3`,
+  '꽃':   `${BASE002}/audio/audio_꽃.mp3`,
+  '땅':   `${BASE002}/audio/audio_땅.mp3`,
+  '빨리': `${BASE002}/audio/audio_빨리.mp3`,
+  '있어요': `${BASE002}/audio/audio_있어요.mp3`,
+  '차':   `${BASE002}/audio/audio_차.mp3`,
+  '커피': `${BASE002}/audio/audio_커피.mp3`,
+  '타다': `${BASE002}/audio/audio_타다.mp3`,
+  '파':   `${BASE002}/audio/audio_파.mp3`,
 };
 
 export const KR_PODCAST_002 = `${BASE002}/audio/step002-podcast.mp3`;
@@ -88,7 +105,9 @@ export const KR_VIDEO_002   = `${BASE002}/video/step002.mp4`;
 
 export function playAudio(text: string, rate = 1) {
   if (typeof window === 'undefined') return;
-  const src = KR_AUDIO[text as keyof typeof KR_AUDIO];
+  const src =
+    KR_AUDIO_002[text] ??
+    (KR_AUDIO as Record<string, string>)[text];
   if (src) {
     const audio = new Audio(src);
     audio.playbackRate = rate;
