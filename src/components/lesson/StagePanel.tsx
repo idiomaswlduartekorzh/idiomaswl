@@ -20,6 +20,7 @@ const Activation003          = dynamic(() => import('./stages/step003/Activation
 const AcquisitionGuided003   = dynamic(() => import('./stages/step003/AcquisitionGuided003'),   { ssr: false });
 const Recognition003         = dynamic(() => import('./stages/step003/Recognition003'),          { ssr: false });
 const ListeningSurvivable003 = dynamic(() => import('./stages/step003/ListeningSurvivable003'), { ssr: false });
+const ContextualInput003     = dynamic(() => import('./stages/step003/ContextualInput003'),     { ssr: false });
 
 // ── Day 2 stages ──────────────────────────────────────────────────────────────
 const Activation002          = dynamic(() => import('./stages/step002/Activation002'),          { ssr: false });
@@ -48,7 +49,8 @@ const COMPONENTS_DAY2 = [
 
 const COMPONENTS_DAY3 = [
   Activation003, AcquisitionGuided003, Recognition003, ListeningSurvivable003,
-  // stages 5-11 coming soon — fall back to placeholder
+  ContextualInput003,
+  // stages 6-11 coming soon — fall back to placeholder
 ];
 
 const STAGE_NAMES = [
