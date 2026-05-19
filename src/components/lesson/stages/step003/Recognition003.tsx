@@ -1,315 +1,513 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { playAudio } from '@/lib/storage';
-import { useSound } from '@/components/lesson/engine/useSound';
 
-interface Phrase {
-  kr: string;
-  rom: string;
-  es: string;
-  audio: string;
+// ── Vocab ─────────────────────────────────────────────────────────────────────
+// 4 recicladas del step002 + 7 nuevas del step003
+interface VocabEntry {
+  id: string;
+  hangul: string;
+  romanization: string;
+  translation: string;
+  isNew: boolean;
+  distractors_es: string[];
+  distractors_kr: string[];
+  distractors_rom: string[];
 }
 
-const PHRASES: Phrase[] = [
-  { kr: '어서 오세요',              rom: 'eo-seo o-se-yo',                              es: 'Bienvenido/a',                     audio: '어서 오세요' },
-  { kr: '안녕하세요',               rom: 'an-nyeong-ha-se-yo',                          es: 'Hola (formal)',                    audio: '안녕하세요' },
-  { kr: '아메리카노 한 잔 주세요',   rom: 'a-me-ri-ka-no han jan ju-se-yo',              es: 'Un americano, por favor',          audio: '아메리카노 한 잔 주세요' },
-  { kr: '네, 금방 준비해 드릴게요',  rom: 'ne, geum-bang jun-bi-hae deu-ril-ge-yo',     es: 'Sí, lo preparo enseguida',         audio: '네, 금방 준비해 드릴게요' },
-  { kr: '사이즈 뭐로 드릴까요',     rom: 'sa-i-jeu mwo-ro deu-ril-kka-yo',             es: '¿Qué tamaño le pongo?',            audio: '사이즈 뭐로 드릴까요' },
-  { kr: '글자가 조금 작아요',       rom: 'geul-ja-ga jo-geum ja-ga-yo',                es: 'Las letras son un poco pequeñas',  audio: '글자가 조금 작아요' },
-  { kr: '스몰, 미디엄, 라지 있어요', rom: 'seu-mol, mi-di-eom, la-ji i-sseo-yo',        es: 'Tenemos pequeño, mediano, grande', audio: '스몰, 미디엄, 라지 있어요' },
-  { kr: '여기 있습니다',            rom: 'yeo-gi it-seum-ni-da',                        es: 'Aquí tiene',                       audio: '여기 있습니다' },
-  { kr: '감사합니다',               rom: 'gam-sa-ham-ni-da',                            es: 'Gracias',                          audio: '감사합니다' },
-  { kr: '이름이 뭐예요',            rom: 'i-reu-mi mwo-ye-yo',                          es: '¿Cómo te llamas?',                 audio: '이름이 뭐예요' },
-  { kr: '저는 하은이에요',          rom: 'jeo-neun ha-eu-ni-e-yo',                      es: 'Me llamo Haeun',                   audio: '저는 하은이에요' },
+const VOCAB: VocabEntry[] = [
+  // ── Recicladas del step002 ──────────────────────────────────────────────────
+  {
+    id: 'R1',
+    hangul: '안녕하세요',
+    romanization: 'an-nyeong-ha-se-yo',
+    translation: 'Hola (formal)',
+    isNew: false,
+    distractors_es: ['Gracias', 'Aquí tiene', 'Bienvenido/a'],
+    distractors_kr: ['감사합니다', '여기 있습니다', '어서 오세요'],
+    distractors_rom: ['gam-sa-ham-ni-da', 'yeo-gi it-seum-ni-da', 'eo-seo o-se-yo'],
+  },
+  {
+    id: 'R2',
+    hangul: '감사합니다',
+    romanization: 'gam-sa-ham-ni-da',
+    translation: 'Gracias',
+    isNew: false,
+    distractors_es: ['Hola (formal)', 'Bienvenido/a', '¿Cómo te llamas?'],
+    distractors_kr: ['안녕하세요', '어서 오세요', '이름이 뭐예요'],
+    distractors_rom: ['an-nyeong-ha-se-yo', 'eo-seo o-se-yo', 'i-reu-mi mwo-ye-yo'],
+  },
+  {
+    id: 'R3',
+    hangul: '이름이 뭐예요',
+    romanization: 'i-reu-mi mwo-ye-yo',
+    translation: '¿Cómo te llamas?',
+    isNew: false,
+    distractors_es: ['Me llamo Haeun', 'Un americano, por favor', 'Gracias'],
+    distractors_kr: ['저는 하은이에요', '아메리카노 한 잔 주세요', '감사합니다'],
+    distractors_rom: ['jeo-neun ha-eu-ni-e-yo', 'a-me-ri-ka-no han jan ju-se-yo', 'gam-sa-ham-ni-da'],
+  },
+  {
+    id: 'R4',
+    hangul: '여기 있습니다',
+    romanization: 'yeo-gi it-seum-ni-da',
+    translation: 'Aquí tiene',
+    isNew: false,
+    distractors_es: ['Hola (formal)', 'Gracias', '¿Qué tamaño le pongo?'],
+    distractors_kr: ['안녕하세요', '감사합니다', '사이즈 뭐로 드릴까요'],
+    distractors_rom: ['an-nyeong-ha-se-yo', 'gam-sa-ham-ni-da', 'sa-i-jeu mwo-ro deu-ril-kka-yo'],
+  },
+  // ── Nuevas del step003 ──────────────────────────────────────────────────────
+  {
+    id: 'N1',
+    hangul: '어서 오세요',
+    romanization: 'eo-seo o-se-yo',
+    translation: 'Bienvenido/a',
+    isNew: true,
+    distractors_es: ['Hola (formal)', 'Gracias', 'Aquí tiene'],
+    distractors_kr: ['안녕하세요', '감사합니다', '여기 있습니다'],
+    distractors_rom: ['an-nyeong-ha-se-yo', 'gam-sa-ham-ni-da', 'yeo-gi it-seum-ni-da'],
+  },
+  {
+    id: 'N2',
+    hangul: '아메리카노 한 잔 주세요',
+    romanization: 'a-me-ri-ka-no han jan ju-se-yo',
+    translation: 'Un americano, por favor',
+    isNew: true,
+    distractors_es: ['Sí, lo preparo enseguida', '¿Qué tamaño le pongo?', 'Aquí tiene'],
+    distractors_kr: ['네, 금방 준비해 드릴게요', '사이즈 뭐로 드릴까요', '여기 있습니다'],
+    distractors_rom: ['ne, geum-bang jun-bi-hae deu-ril-ge-yo', 'sa-i-jeu mwo-ro deu-ril-kka-yo', 'yeo-gi it-seum-ni-da'],
+  },
+  {
+    id: 'N3',
+    hangul: '네, 금방 준비해 드릴게요',
+    romanization: 'ne, geum-bang jun-bi-hae deu-ril-ge-yo',
+    translation: 'Sí, lo preparo enseguida',
+    isNew: true,
+    distractors_es: ['Un americano, por favor', '¿Qué tamaño le pongo?', 'Tenemos pequeño, mediano, grande'],
+    distractors_kr: ['아메리카노 한 잔 주세요', '사이즈 뭐로 드릴까요', '스몰, 미디엄, 라지 있어요'],
+    distractors_rom: ['a-me-ri-ka-no han jan ju-se-yo', 'sa-i-jeu mwo-ro deu-ril-kka-yo', 'seu-mol, mi-di-eom, la-ji i-sseo-yo'],
+  },
+  {
+    id: 'N4',
+    hangul: '사이즈 뭐로 드릴까요',
+    romanization: 'sa-i-jeu mwo-ro deu-ril-kka-yo',
+    translation: '¿Qué tamaño le pongo?',
+    isNew: true,
+    distractors_es: ['Sí, lo preparo enseguida', 'Tenemos pequeño, mediano, grande', 'Un americano, por favor'],
+    distractors_kr: ['네, 금방 준비해 드릴게요', '스몰, 미디엄, 라지 있어요', '아메리카노 한 잔 주세요'],
+    distractors_rom: ['ne, geum-bang jun-bi-hae deu-ril-ge-yo', 'seu-mol, mi-di-eom, la-ji i-sseo-yo', 'a-me-ri-ka-no han jan ju-se-yo'],
+  },
+  {
+    id: 'N5',
+    hangul: '스몰, 미디엄, 라지 있어요',
+    romanization: 'seu-mol, mi-di-eom, la-ji i-sseo-yo',
+    translation: 'Tenemos pequeño, mediano, grande',
+    isNew: true,
+    distractors_es: ['¿Qué tamaño le pongo?', 'Aquí tiene', 'Gracias'],
+    distractors_kr: ['사이즈 뭐로 드릴까요', '여기 있습니다', '감사합니다'],
+    distractors_rom: ['sa-i-jeu mwo-ro deu-ril-kka-yo', 'yeo-gi it-seum-ni-da', 'gam-sa-ham-ni-da'],
+  },
+  {
+    id: 'N6',
+    hangul: '저는 하은이에요',
+    romanization: 'jeo-neun ha-eu-ni-e-yo',
+    translation: 'Me llamo Haeun',
+    isNew: true,
+    distractors_es: ['¿Cómo te llamas?', 'Hola (formal)', 'Bienvenido/a'],
+    distractors_kr: ['이름이 뭐예요', '안녕하세요', '어서 오세요'],
+    distractors_rom: ['i-reu-mi mwo-ye-yo', 'an-nyeong-ha-se-yo', 'eo-seo o-se-yo'],
+  },
+  {
+    id: 'N7',
+    hangul: '글자가 조금 작아요',
+    romanization: 'geul-ja-ga jo-geum ja-ga-yo',
+    translation: 'Las letras son un poco pequeñas',
+    isNew: true,
+    distractors_es: ['Un americano, por favor', 'Sí, lo preparo enseguida', 'Me llamo Haeun'],
+    distractors_kr: ['아메리카노 한 잔 주세요', '네, 금방 준비해 드릴게요', '저는 하은이에요'],
+    distractors_rom: ['a-me-ri-ka-no han jan ju-se-yo', 'ne, geum-bang jun-bi-hae deu-ril-ge-yo', 'jeo-neun ha-eu-ni-e-yo'],
+  },
 ];
 
-const QUIZ_COUNT = 5;
-
-function getQuizQuestions(phrases: Phrase[]) {
-  // Pick 5 random phrases, shuffle
-  const shuffled = [...phrases].sort(() => Math.random() - 0.5).slice(0, QUIZ_COUNT);
-  return shuffled.map(target => {
-    const distractors = phrases.filter(p => p.kr !== target.kr).sort(() => Math.random() - 0.5).slice(0, 2);
-    const options = [target, ...distractors].sort(() => Math.random() - 0.5).map(p => p.es);
-    return { kr: target.kr, audio: target.audio, correct: target.es, options };
-  });
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function shuffle<T>(arr: T[]): T[] {
+  return [...arr].sort(() => Math.random() - 0.5);
 }
 
-interface QuizQuestion {
-  kr: string;
-  audio: string;
-  correct: string;
-  options: string[];
+function levelKey(level: number) {
+  return `L${level}` as const;
 }
 
 interface Props {
   onComplete?: () => void;
 }
 
+// ── Component ─────────────────────────────────────────────────────────────────
 export default function Recognition003({ onComplete }: Props) {
-  const [phase, setPhase] = useState<'cards' | 'quiz' | 'complete'>('cards');
-  const [flipped, setFlipped] = useState<Set<number>>(new Set());
-  const [cardIndex, setCardIndex] = useState(0);
+  const [currentLevel, setCurrentLevel]               = useState(1);
+  const [currentItemIndex, setCurrentItemIndex]       = useState(0);
+  const [selectedOption, setSelectedOption]           = useState<string | null>(null);
+  const [isChecked, setIsChecked]                     = useState(false);
+  const [levelComplete, setLevelComplete]             = useState(false);
+  const [scoreByLevel, setScoreByLevel]               = useState<Record<string, number>>({ L1: 0, L2: 0, L3: 0, L4: 0 });
+  const [finalComplete, setFinalComplete]             = useState(false);
 
-  // Quiz state
-  const [quizQuestions] = useState<QuizQuestion[]>(() => getQuizQuestions(PHRASES));
-  const [quizIndex, setQuizIndex] = useState(0);
-  const [quizAnswers, setQuizAnswers] = useState<Record<number, string>>({});
-  const [quizScore, setQuizScore] = useState(0);
-  const [quizDone, setQuizDone] = useState(false);
+  const vocab          = VOCAB[currentItemIndex] as VocabEntry | undefined;
+  const activeLevelKey = levelKey(currentLevel);
+  const currentScore   = scoreByLevel[activeLevelKey] ?? 0;
+  const total          = VOCAB.length;
 
-  const { correct: playCorrect, wrong: playWrong, complete: playComplete } = useSound();
+  // ── Build shuffled options ──────────────────────────────────────────────────
+  const optionSet = useMemo(() => {
+    if (!vocab) return [];
+    if (currentLevel === 1) {
+      return shuffle([vocab.translation, ...vocab.distractors_es]).map((v) => ({ value: v, label: v }));
+    }
+    if (currentLevel === 2 || currentLevel === 3) {
+      return shuffle([vocab.hangul, ...vocab.distractors_kr]).map((v) => ({ value: v, label: v }));
+    }
+    // L4 — romanization options in 2×2 grid
+    return shuffle([vocab.romanization, ...vocab.distractors_rom]).map((v) => ({ value: v, label: v }));
+  }, [currentLevel, vocab]);
 
-  const allFlipped = flipped.size === PHRASES.length;
-  const currentPhrase = PHRASES[cardIndex];
-  const isFlipped = flipped.has(cardIndex);
-  const progressPct = (flipped.size / PHRASES.length) * 100;
+  const correctValue = useMemo(() => {
+    if (!vocab) return '';
+    return currentLevel === 1 ? vocab.translation
+      : currentLevel === 4     ? vocab.romanization
+      :                          vocab.hangul;
+  }, [currentLevel, vocab]);
 
-  function flipCard() {
-    if (!isFlipped) {
-      setFlipped(prev => new Set([...prev, cardIndex]));
-      playAudio(currentPhrase.audio);
+  // Auto-play on L1 and L3
+  useEffect(() => {
+    setSelectedOption(null);
+    setIsChecked(false);
+    if (!vocab) return undefined;
+    if (currentLevel === 1 || currentLevel === 3) {
+      const t = window.setTimeout(() => playAudio(vocab.hangul, 1), 600);
+      return () => window.clearTimeout(t);
+    }
+    return undefined;
+  }, [currentLevel, currentItemIndex, vocab]);
+
+  // ── Actions ────────────────────────────────────────────────────────────────
+  function handleVerify() {
+    if (!selectedOption || isChecked || !vocab) return;
+    setIsChecked(true);
+    if (selectedOption === correctValue) {
+      setScoreByLevel((prev) => ({ ...prev, [activeLevelKey]: (prev[activeLevelKey] ?? 0) + 1 }));
     }
   }
 
-  function goToCard(next: number) {
-    setCardIndex(Math.max(0, Math.min(PHRASES.length - 1, next)));
-  }
-
-  function selectQuizAnswer(opt: string) {
-    const q = quizQuestions[quizIndex];
-    if (quizAnswers[quizIndex] !== undefined) return;
-    setQuizAnswers(prev => ({ ...prev, [quizIndex]: opt }));
-    const isCorrect = opt === q.correct;
-    if (isCorrect) {
-      playCorrect();
-      setQuizScore(s => s + 1);
-    } else {
-      playWrong();
+  function handleNextItem() {
+    if (!isChecked) return;
+    if (currentItemIndex < total - 1) {
+      setCurrentItemIndex((i) => i + 1);
+      return;
     }
-
-    // Advance after brief pause
-    setTimeout(() => {
-      if (quizIndex < QUIZ_COUNT - 1) {
-        setQuizIndex(i => i + 1);
-      } else {
-        setQuizDone(true);
-      }
-    }, 900);
+    setLevelComplete(true);
   }
 
-  // ── Cards phase ────────────────────────────────────────────────────────────
-  if (phase === 'cards') {
+  function resetLevel() {
+    setCurrentItemIndex(0);
+    setSelectedOption(null);
+    setIsChecked(false);
+    setLevelComplete(false);
+  }
+
+  function handleAdvanceLevel() {
+    if (currentLevel >= 4) { setFinalComplete(true); setLevelComplete(false); onComplete?.(); return; }
+    setCurrentLevel((l) => l + 1);
+    resetLevel();
+  }
+
+  function handleRepeatLevel() {
+    setScoreByLevel((prev) => ({ ...prev, [activeLevelKey]: 0 }));
+    resetLevel();
+  }
+
+  function skipLevel() {
+    if (currentLevel >= 4) { setFinalComplete(true); setLevelComplete(false); onComplete?.(); return; }
+    setCurrentLevel((l) => l + 1);
+    resetLevel();
+  }
+
+  // ── Level dot color ────────────────────────────────────────────────────────
+  function levelDotColor(n: number) {
+    if (finalComplete)    return '#2d9b4e';
+    if (n < currentLevel) return '#2d9b4e';
+    if (n === currentLevel) return '#6c63ff';
+    return '#e9ecef';
+  }
+
+  // ── Feedback panel ─────────────────────────────────────────────────────────
+  function renderFeedback() {
+    if (!isChecked || !vocab) return null;
+    const ok = selectedOption === correctValue;
     return (
-      <section style={{ maxWidth: 560, margin: '0 auto', padding: '2rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', fontWeight: 700 }}>
-          ETAPA 03 DE 11 · Reconocimiento
-        </p>
-        <h3 style={{ margin: '0 0 16px', fontSize: 20, fontWeight: 700, color: 'var(--ink)' }}>
-          Frases de supervivencia — toca para revelar
-        </h3>
+      <div style={{
+        marginTop: 12, padding: '10px 14px', borderRadius: 8, fontSize: 12, lineHeight: 1.6,
+        background: ok ? 'rgba(45,155,78,0.06)' : 'rgba(220,53,69,0.05)',
+        border: `1px solid ${ok ? 'rgba(45,155,78,0.2)' : 'rgba(220,53,69,0.15)'}`,
+        color: ok ? '#2d9b4e' : '#dc3545',
+      }}>
+        {ok
+          ? `✅ ¡Correcto! — ${vocab.romanization}`
+          : `❌ La respuesta correcta es: ${correctValue}`}
+      </div>
+    );
+  }
 
-        {/* Progress bar */}
-        <div style={{ height: 5, background: 'var(--line-soft)', borderRadius: 3, marginBottom: 20 }}>
-          <div style={{ height: '100%', width: `${progressPct}%`, background: '#6c63ff', borderRadius: 3, transition: 'width 0.3s' }} />
-        </div>
+  // ── Option style ───────────────────────────────────────────────────────────
+  function optionStyle(option: { value: string }): React.CSSProperties {
+    const isSelected = selectedOption === option.value;
+    const isCorrect  = option.value === correctValue;
+    const base: React.CSSProperties = {
+      padding: '12px 16px', background: 'var(--bg)', border: '1.5px solid var(--line-soft)',
+      borderRadius: 10, fontSize: 13, textAlign: 'left', cursor: isChecked ? 'default' : 'pointer',
+      color: 'var(--ink)', transition: 'all 0.15s',
+      fontFamily: (currentLevel === 2 || currentLevel === 3) ? "'Noto Sans KR', sans-serif" : 'inherit',
+    };
+    if (!isChecked && isSelected)              { base.border = '1.5px solid #6c63ff'; base.background = 'rgba(108,99,255,0.06)'; }
+    if (isChecked && isSelected && !isCorrect) { base.border = '1.5px solid #dc3545'; base.background = 'rgba(220,53,69,0.05)'; base.color = '#dc3545'; }
+    if (isChecked && isCorrect)                { base.border = '1.5px solid #2d9b4e'; base.background = 'rgba(45,155,78,0.06)'; base.color = '#2d9b4e'; }
+    return base;
+  }
 
-        {/* Card */}
-        <article
-          style={{ background: 'var(--bg)', border: `1.5px solid ${isFlipped ? '#6c63ff' : 'var(--line-soft)'}`, borderRadius: 16, minHeight: 240, cursor: isFlipped ? 'default' : 'pointer', transition: 'all 0.2s', marginBottom: 16, overflow: 'hidden' }}
-          onClick={!isFlipped ? flipCard : undefined}
-        >
-          {/* Front */}
-          {!isFlipped && (
-            <div style={{ padding: '40px 24px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: 240 }}>
-              <p style={{ margin: '0 0 16px', fontSize: 36, fontWeight: 700, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--ink)', lineHeight: 1.2 }}>
-                {currentPhrase.kr}
-              </p>
-              <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '4px 14px' }}>
-                Toca para revelar
-              </p>
-            </div>
-          )}
-
-          {/* Back */}
-          {isFlipped && (
-            <div style={{ padding: '28px 24px', display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <p style={{ margin: 0, fontSize: 32, fontWeight: 700, fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff', lineHeight: 1.2 }}>
-                {currentPhrase.kr}
-              </p>
-              <p style={{ margin: 0, fontSize: 13, color: 'var(--muted)', fontFamily: 'var(--mono)' }}>
-                {currentPhrase.rom}
-              </p>
-              <p style={{ margin: 0, fontSize: 18, fontWeight: 600, color: 'var(--ink)' }}>
-                {currentPhrase.es}
-              </p>
-              <div style={{ display: 'flex', gap: 8, marginTop: 6 }}>
-                <button
-                  type="button"
-                  onClick={() => playAudio(currentPhrase.audio, 1)}
-                  style={{ background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '6px 14px', fontSize: 13, color: '#6c63ff', cursor: 'pointer' }}
-                >
-                  &#x1F50A; Escuchar
-                </button>
-                <button
-                  type="button"
-                  onClick={() => playAudio(currentPhrase.audio, 0.75)}
-                  style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '6px 14px', fontSize: 13, color: 'var(--muted)', cursor: 'pointer' }}
-                >
-                  &#x1F422; Lento
-                </button>
-              </div>
-            </div>
-          )}
+  // ── Level summary screen ───────────────────────────────────────────────────
+  function renderLevelSummary() {
+    if (!levelComplete) return null;
+    if (currentLevel === 4 || finalComplete) {
+      return (
+        <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '2.5rem 2rem', textAlign: 'center' }}>
+          <div style={{ fontSize: 48, marginBottom: 8 }}>🎯</div>
+          <h3 style={{ margin: '0 0 8px', fontSize: 22, color: 'var(--ink)' }}>¡Reconocimiento completado!</h3>
+          <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.7 }}>
+            Reconociste las {total} frases en los 4 modos. Tu cerebro ya las tiene.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', marginBottom: 24 }}>
+            {VOCAB.map((v) => (
+              <span key={v.id} style={{
+                background: 'rgba(108,99,255,0.08)', border: '1px solid rgba(108,99,255,0.15)',
+                borderRadius: 100, padding: '4px 12px', fontFamily: "'Noto Sans KR', sans-serif",
+                color: '#6c63ff', fontSize: 14,
+              }}>
+                {v.hangul}
+              </span>
+            ))}
+          </div>
+          <button type="button" onClick={onComplete} style={{ width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 10, padding: '13px', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
+            Siguiente etapa →
+          </button>
         </article>
+      );
+    }
 
-        {/* Navigation */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
-          <button
-            type="button"
-            onClick={() => goToCard(cardIndex - 1)}
-            disabled={cardIndex === 0}
-            style={{ background: cardIndex === 0 ? 'var(--bg-2)' : '#6c63ff', color: cardIndex === 0 ? 'var(--muted)' : '#fff', border: 'none', borderRadius: 8, padding: '10px 20px', fontSize: 13, fontWeight: 600, cursor: cardIndex === 0 ? 'not-allowed' : 'pointer' }}
-          >
-            ← Anterior
+    const passed = currentScore >= Math.ceil(total * 0.6);
+    return (
+      <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '2.5rem 2rem', textAlign: 'center' }}>
+        <p style={{ margin: 0, fontSize: 48, fontWeight: 800, color: '#6c63ff' }}>{currentScore}/{total}</p>
+        <p style={{ margin: '8px 0 24px', fontSize: 14, color: 'var(--muted)' }}>
+          {passed ? '¡Buen resultado! Puedes continuar.' : 'Repasemos un poco más.'}
+        </p>
+        {passed ? (
+          <button type="button" onClick={handleAdvanceLevel} style={{ width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 8, padding: '10px 20px', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
+            Siguiente nivel →
           </button>
-
-          <span style={{ fontSize: 12, color: 'var(--muted)' }}>
-            {cardIndex + 1} / {PHRASES.length} · {flipped.size} vistas
-          </span>
-
-          <button
-            type="button"
-            onClick={() => goToCard(cardIndex + 1)}
-            disabled={cardIndex === PHRASES.length - 1}
-            style={{ background: cardIndex === PHRASES.length - 1 ? 'var(--bg-2)' : '#6c63ff', color: cardIndex === PHRASES.length - 1 ? 'var(--muted)' : '#fff', border: 'none', borderRadius: 8, padding: '10px 20px', fontSize: 13, fontWeight: 600, cursor: cardIndex === PHRASES.length - 1 ? 'not-allowed' : 'pointer' }}
-          >
-            Siguiente →
-          </button>
-        </div>
-
-        {/* Mini-quiz CTA */}
-        {allFlipped && (
-          <button
-            type="button"
-            onClick={() => setPhase('quiz')}
-            style={{ width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 10, padding: '14px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}
-          >
-            Mini-test de 5 preguntas →
-          </button>
+        ) : (
+          <>
+            <button type="button" onClick={handleRepeatLevel} style={{ width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 8, padding: '10px 20px', fontSize: 13, fontWeight: 600, cursor: 'pointer', marginBottom: 10 }}>
+              Repetir nivel
+            </button>
+            <button type="button" onClick={handleAdvanceLevel} style={{ background: 'transparent', border: 'none', color: '#adb5bd', fontSize: 12, textDecoration: 'underline', cursor: 'pointer' }}>
+              Continuar de todas formas →
+            </button>
+          </>
         )}
+      </article>
+    );
+  }
+
+  // ── Guards ─────────────────────────────────────────────────────────────────
+  if (!vocab && !levelComplete) {
+    return <section style={{ padding: '1rem' }}><p style={{ margin: 0 }}>No hay contenido disponible.</p></section>;
+  }
+
+  if (finalComplete) {
+    return (
+      <section style={{ width: '100%', padding: '2rem 1rem' }}>
+        <div style={{ maxWidth: 680, margin: '0 auto' }}>{renderLevelSummary()}</div>
       </section>
     );
   }
 
-  // ── Quiz phase ─────────────────────────────────────────────────────────────
-  if (phase === 'quiz') {
-    const q = quizQuestions[quizIndex];
-    const picked = quizAnswers[quizIndex];
+  const isL1 = currentLevel === 1;
+  const isL2 = currentLevel === 2;
+  const isL3 = currentLevel === 3;
+  const isL4 = currentLevel === 4;
 
-    return (
-      <section style={{ maxWidth: 560, margin: '0 auto', padding: '2rem 1rem' }}>
-        <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', fontWeight: 700 }}>
-          MINI-TEST · {quizIndex + 1} de {QUIZ_COUNT}
-        </p>
+  // ── Prompt text per level ──────────────────────────────────────────────────
+  const promptText = isL1 ? '¿Qué significa esta frase?'
+    : isL2 ? '¿Cómo se dice en coreano?'
+    : isL3 ? 'Escucha y elige la frase correcta en coreano'
+    : '¿Cuál es la pronunciación correcta?';
 
-        {/* Quiz progress */}
-        <div style={{ height: 5, background: 'var(--line-soft)', borderRadius: 3, marginBottom: 20 }}>
-          <div style={{ height: '100%', width: `${((quizIndex + (quizDone ? 1 : 0)) / QUIZ_COUNT) * 100}%`, background: '#6c63ff', borderRadius: 3, transition: 'width 0.3s' }} />
-        </div>
-
-        <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '24px 20px', marginBottom: 16 }}>
-          {/* Korean phrase */}
-          <p style={{ margin: '0 0 16px', fontSize: 28, fontWeight: 700, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--ink)', textAlign: 'center', lineHeight: 1.3 }}>
-            {q.kr}
-          </p>
-
-          <button
-            type="button"
-            onClick={() => playAudio(q.audio)}
-            style={{ display: 'block', margin: '0 auto 20px', background: 'rgba(108,99,255,0.07)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 100, padding: '5px 14px', fontSize: 12, color: '#6c63ff', cursor: 'pointer' }}
-          >
-            &#x1F50A; Escuchar
-          </button>
-
-          <p style={{ margin: '0 0 12px', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--muted)' }}>
-            ¿Qué significa?
-          </p>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            {q.options.map(opt => {
-              const selected = picked === opt;
-              const isCorrect = opt === q.correct;
-              const showCorrect = picked !== undefined && isCorrect;
-              const showWrong = picked !== undefined && selected && !isCorrect;
-              return (
-                <button
-                  key={opt}
-                  type="button"
-                  onClick={() => selectQuizAnswer(opt)}
-                  disabled={picked !== undefined}
-                  style={{
-                    padding: '12px 16px',
-                    background: showCorrect ? 'rgba(45,155,78,0.08)' : showWrong ? 'rgba(220,53,69,0.06)' : selected ? 'rgba(108,99,255,0.07)' : 'var(--bg)',
-                    border: `1.5px solid ${showCorrect ? '#2d9b4e' : showWrong ? '#dc3545' : selected ? '#6c63ff' : 'var(--line-soft)'}`,
-                    borderRadius: 10,
-                    fontSize: 14,
-                    textAlign: 'left',
-                    cursor: picked !== undefined ? 'default' : 'pointer',
-                    color: showCorrect ? '#2d9b4e' : showWrong ? '#dc3545' : 'var(--ink)',
-                    fontWeight: (showCorrect || showWrong) ? 600 : 400,
-                    transition: 'all 0.12s',
-                  }}
-                >
-                  {opt}
-                </button>
-              );
-            })}
-          </div>
-        </article>
-
-        {/* Final result */}
-        {quizDone && (
-          <div style={{ background: quizScore >= 4 ? 'rgba(45,155,78,0.07)' : 'rgba(108,99,255,0.06)', border: `1px solid ${quizScore >= 4 ? 'rgba(45,155,78,0.25)' : 'rgba(108,99,255,0.2)'}`, borderRadius: 12, padding: '16px', marginBottom: 12, textAlign: 'center' }}>
-            <p style={{ margin: '0 0 4px', fontSize: 32, fontWeight: 800, color: quizScore >= 4 ? '#2d9b4e' : '#6c63ff' }}>{quizScore}/{QUIZ_COUNT}</p>
-            <p style={{ margin: 0, fontSize: 13, color: 'var(--muted)' }}>
-              {quizScore === QUIZ_COUNT ? 'Perfecto. Reconoces todas las frases.' : quizScore >= 3 ? 'Muy bien. Ya te suenan.' : 'Sigue practicando — van a quedar.'}
-            </p>
-          </div>
-        )}
-
-        {quizDone && (
-          <button
-            type="button"
-            onClick={() => { playComplete(); setPhase('complete'); onComplete?.(); }}
-            style={{ width: '100%', padding: '13px', background: '#6c63ff', border: 'none', borderRadius: 10, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}
-          >
-            Continuar →
-          </button>
-        )}
-      </section>
-    );
-  }
-
-  // ── Complete ───────────────────────────────────────────────────────────────
+  // ── Main render ────────────────────────────────────────────────────────────
   return (
-    <section style={{ maxWidth: 520, margin: '0 auto', padding: '3rem 1rem', textAlign: 'center' }}>
-      <div style={{ fontSize: 48, marginBottom: 16 }}>&#x2713;</div>
-      <h3 style={{ margin: '0 0 10px', fontSize: 20, fontWeight: 700, color: 'var(--ink)' }}>
-        Reconocimiento completado
-      </h3>
-      <p style={{ margin: '0 0 28px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.75 }}>
-        Las 11 frases del café ya tienen forma en tu memoria. A por el video.
-      </p>
-      <button
-        type="button"
-        onClick={onComplete}
-        style={{ width: '100%', padding: '14px', background: '#6c63ff', border: 'none', borderRadius: 12, color: '#fff', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}
-      >
-        Siguiente etapa →
-      </button>
+    <section style={{ width: '100%', padding: '2rem 1rem' }}>
+      <div style={{ maxWidth: 680, margin: '0 auto' }}>
+
+        {/* Header */}
+        <header style={{ marginBottom: 20 }}>
+          <p style={{ margin: '0 0 12px', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: 11, color: 'var(--muted)', fontWeight: 600 }}>
+            Etapa 03 de 11 · Reconocimiento
+          </p>
+        </header>
+
+        {/* Level dots */}
+        <div style={{ display: 'flex', gap: 8, marginBottom: 20, justifyContent: 'center' }}>
+          {[1, 2, 3, 4].map((n) => (
+            <span key={n} aria-hidden="true" style={{ width: 36, height: 4, borderRadius: 2, background: levelDotColor(n) }} />
+          ))}
+        </div>
+
+        {!levelComplete ? (
+          <>
+            {/* Item counter + progress bar */}
+            <div style={{ fontSize: 11, color: 'var(--muted)', textAlign: 'right', marginBottom: 4 }}>
+              {currentItemIndex + 1} de {total}
+            </div>
+            <div style={{ height: 3, background: 'var(--line-soft)', borderRadius: 2, marginBottom: 16 }}>
+              <div style={{ width: `${(currentItemIndex / total) * 100}%`, height: '100%', background: '#6c63ff', borderRadius: 2, transition: 'width 0.2s ease' }} />
+            </div>
+
+            <article style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 16, overflow: 'hidden', marginBottom: 16 }}>
+
+              {/* ── L1: show Korean phrase ──────────────────────────────────── */}
+              {vocab && isL1 && (
+                <div style={{ padding: '28px 24px 0', textAlign: 'center' }}>
+                  {vocab.isNew && (
+                    <span style={{ display: 'inline-block', marginBottom: 10, fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#fff', background: '#6c63ff', borderRadius: 100, padding: '3px 10px' }}>
+                      Nueva
+                    </span>
+                  )}
+                  <p style={{ margin: '0 0 4px', fontSize: 30, fontWeight: 700, fontFamily: "'Noto Sans KR', sans-serif", color: 'var(--ink)', lineHeight: 1.3 }}>
+                    {vocab.hangul}
+                  </p>
+                  <p style={{ margin: 0, fontSize: 11, color: 'var(--muted)', fontFamily: 'var(--mono)' }}>
+                    {vocab.romanization}
+                  </p>
+                </div>
+              )}
+
+              {/* ── L2: show Spanish phrase ─────────────────────────────────── */}
+              {vocab && isL2 && (
+                <div style={{ padding: '28px 24px 0', textAlign: 'center' }}>
+                  <p style={{ margin: 0, fontSize: 22, fontWeight: 700, color: 'var(--ink)' }}>
+                    {vocab.translation}
+                  </p>
+                </div>
+              )}
+
+              {/* ── L3: audio only ──────────────────────────────────────────── */}
+              {isL3 && (
+                <div style={{ height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', background: 'var(--bg-2)', gap: 8 }}>
+                  <span style={{ fontSize: 56 }} aria-hidden="true">🔊</span>
+                  <p style={{ margin: 0, fontSize: 13, color: 'var(--muted)' }}>Escucha la frase</p>
+                </div>
+              )}
+
+              {/* ── L4: Korean phrase → pick romanization ──────────────────── */}
+              {vocab && isL4 && (
+                <div style={{ padding: '2rem 2rem 0', textAlign: 'center', background: 'var(--bg-2)' }}>
+                  <p style={{ margin: '0 0 4px', fontSize: 36, fontWeight: 700, fontFamily: "'Noto Sans KR', sans-serif", color: '#6c63ff', lineHeight: 1.3 }}>
+                    {vocab.hangul}
+                  </p>
+                </div>
+              )}
+
+              {/* ── Audio buttons (L1, L2, L3) ─────────────────────────────── */}
+              {vocab && !isL4 && (
+                <div style={{ padding: '12px 20px', display: 'flex', gap: 8, borderBottom: '1px solid var(--line-soft)' }}>
+                  <button type="button" onClick={() => playAudio(vocab.hangul, 1)}
+                    style={{ fontSize: 12, color: 'var(--muted)', background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '4px 12px', cursor: 'pointer' }}>
+                    🔊 Escuchar
+                  </button>
+                  <button type="button" onClick={() => playAudio(vocab.hangul, 0.65)}
+                    style={{ fontSize: 12, color: 'var(--muted)', background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 100, padding: '4px 12px', cursor: 'pointer' }}>
+                    🐢 Lento
+                  </button>
+                </div>
+              )}
+
+              {/* ── Options ────────────────────────────────────────────────── */}
+              <div style={{ padding: 20 }}>
+                <p style={{ margin: '0 0 14px', fontSize: 13, color: 'var(--muted)', fontWeight: 500 }}>
+                  {promptText}
+                </p>
+
+                {/* L4 uses 2×2 romanization grid */}
+                {isL4 ? (
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+                    {optionSet.map((opt, idx) => {
+                      const isSel  = selectedOption === opt.value;
+                      const isCorr = opt.value === correctValue;
+                      return (
+                        <button key={opt.value} type="button" disabled={isChecked}
+                          onClick={() => { if (isChecked) return; setSelectedOption(opt.value); }}
+                          style={{
+                            padding: '14px 10px', background: 'var(--bg)', borderRadius: 12,
+                            border: `2px solid ${isChecked && isCorr ? '#2d9b4e' : isChecked && isSel && !isCorr ? '#dc3545' : isSel ? '#6c63ff' : 'var(--line-soft)'}`,
+                            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
+                            cursor: isChecked ? 'default' : 'pointer', transition: 'all 0.15s',
+                          }}>
+                          <span style={{ fontSize: 11, color: isChecked ? (isCorr ? '#2d9b4e' : isSel ? '#dc3545' : 'var(--muted)') : 'var(--muted)', fontFamily: 'var(--mono)', textAlign: 'center', lineHeight: 1.5 }}>
+                            {isChecked ? opt.label : `Opción ${idx + 1}`}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {optionSet.map((opt) => (
+                      <button key={opt.value} type="button" style={optionStyle(opt)} disabled={isChecked}
+                        onClick={() => { if (isChecked) return; setSelectedOption(opt.value); }}>
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {renderFeedback()}
+              </div>
+
+              {/* ── Verify / Siguiente / Saltar ────────────────────────────── */}
+              <div style={{ padding: '0 20px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <button type="button" onClick={skipLevel}
+                  style={{ fontSize: 11, color: '#adb5bd', cursor: 'pointer', textDecoration: 'underline', background: 'none', border: 'none', padding: 0 }}>
+                  Saltar nivel
+                </button>
+                {!isChecked ? (
+                  <button type="button" onClick={handleVerify} disabled={!selectedOption}
+                    style={{ background: selectedOption ? '#6c63ff' : 'var(--line-soft)', color: selectedOption ? '#fff' : '#adb5bd', border: 'none', borderRadius: 8, padding: '10px 20px', fontSize: 13, fontWeight: 600, cursor: selectedOption ? 'pointer' : 'not-allowed' }}>
+                    Verificar
+                  </button>
+                ) : (
+                  <button type="button" onClick={handleNextItem}
+                    style={{ background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 8, padding: '10px 20px', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
+                    Siguiente →
+                  </button>
+                )}
+              </div>
+
+            </article>
+          </>
+        ) : (
+          renderLevelSummary()
+        )}
+      </div>
     </section>
   );
 }

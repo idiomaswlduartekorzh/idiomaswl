@@ -196,7 +196,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'Q3',
-    q: '¿Cómo se llama la barista en el podcast?',
+    q: '¿Cómo se llama la cliente que pide el café?',
     options: ['Mia', 'Haeun', 'Sora', 'Jiyeon'],
     correct: 'Haeun',
   },
