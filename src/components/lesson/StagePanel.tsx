@@ -15,6 +15,12 @@ const ReactiveInteraction = dynamic(() => import('./stages/ReactiveInteraction')
 const SmartReview         = dynamic(() => import('./stages/SmartReview'),          { ssr: false });
 const Completion          = dynamic(() => import('./stages/Completion'),           { ssr: false });
 
+// ── Day 3 stages ──────────────────────────────────────────────────────────────
+const Activation003          = dynamic(() => import('./stages/step003/Activation003'),          { ssr: false });
+const AcquisitionGuided003   = dynamic(() => import('./stages/step003/AcquisitionGuided003'),   { ssr: false });
+const Recognition003         = dynamic(() => import('./stages/step003/Recognition003'),          { ssr: false });
+const ListeningSurvivable003 = dynamic(() => import('./stages/step003/ListeningSurvivable003'), { ssr: false });
+
 // ── Day 2 stages ──────────────────────────────────────────────────────────────
 const Activation002          = dynamic(() => import('./stages/step002/Activation002'),          { ssr: false });
 const AcquisitionGuided002   = dynamic(() => import('./stages/step002/AcquisitionGuided002'),   { ssr: false });
@@ -40,6 +46,11 @@ const COMPONENTS_DAY2 = [
   ReactiveInteraction002, SmartReview002, Completion002,
 ];
 
+const COMPONENTS_DAY3 = [
+  Activation003, AcquisitionGuided003, Recognition003, ListeningSurvivable003,
+  // stages 5-11 coming soon — fall back to placeholder
+];
+
 const STAGE_NAMES = [
   'Activación', 'Adquisición guiada', 'Reconocimiento', 'Escucha sobrevivible',
   'Contexto primero', 'Descubre el patrón', 'Micro explicación', 'Producción guiada',
@@ -53,7 +64,7 @@ interface StagePanelProps {
 }
 
 export default function StagePanel({ stageIndex, dayNumber = 1, onComplete }: StagePanelProps) {
-  const components = dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
+  const components = dayNumber === 3 ? COMPONENTS_DAY3 : dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
   const StageComponent = components[stageIndex];
 
   if (!StageComponent) {

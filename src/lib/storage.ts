@@ -103,9 +103,66 @@ export const KR_AUDIO_002: Record<string, string> = {
 export const KR_PODCAST_002 = `${BASE002}/audio/step002-podcast.mp3`;
 export const KR_VIDEO_002   = `${BASE002}/video/step002.mp4`;
 
+// ─── STEP 003 — Cafetería / Cortesía ─────────────────────────────────────────
+const BASE003 = '/assets/korean/step003';
+
+export const KR_IMG_003 = {
+  cafe:          `${BASE003}/cafe_v1.png`,
+  welcome:       `${BASE003}/welcome_v1.png`,
+  hola:          `${BASE003}/hola_v1.png`,
+  pedir:         `${BASE003}/pedir_v1.png`,
+  preparar:      `${BASE003}/preparar_v1.png`,
+  tamano:        `${BASE003}/tamano_v1.png`,
+  sml:           `${BASE003}/sml_v1.png`,
+  entregar:      `${BASE003}/entregar_v1.png`,
+  gracias:       `${BASE003}/gracias_v1.png`,
+  nombre:        `${BASE003}/nombre_v1.png`,
+  haeun:         `${BASE003}/haeun_v1.png`,
+  menu:          `${BASE003}/menu_v1.png`,
+  vaso:          `${BASE003}/vaso_v1.png`,
+  nombreenvaso:  `${BASE003}/nombreenvaso_v1.png`,
+  // survival extras
+  yeogivo:       `${BASE003}/yeogivo_v1.png`,
+  olmayo:        `${BASE003}/olmayo_v1.png`,
+  hwajangshil:   `${BASE003}/hwajangshil_v1.png`,
+  wegukini:      `${BASE003}/wegukini_v1.png`,
+};
+
+export const KR_AUDIO_003: Record<string, string> = {
+  // ── Frases completas ──────────────────────────────────────────────────────
+  '어서 오세요':                  `${BASE003}/audio/audio_어서오세요.mp3`,
+  '안녕하세요':                   `${BASE003}/audio/audio_안녕하세요.mp3`,
+  '아메리카노 한 잔 주세요':      `${BASE003}/audio/audio_아메리카노한잔주세요.mp3`,
+  '네, 금방 준비해 드릴게요':     `${BASE003}/audio/audio_네금방준비해드릴게요.mp3`,
+  '사이즈 뭐로 드릴까요':        `${BASE003}/audio/audio_사이즈뭐로드릴까요.mp3`,
+  '글자가 조금 작아요':          `${BASE003}/audio/audio_글자가조금작아요.mp3`,
+  '스몰, 미디엄, 라지 있어요':   `${BASE003}/audio/audio_스몰미디엄라지있어요.mp3`,
+  '여기 있습니다':               `${BASE003}/audio/audio_여기있습니다.mp3`,
+  '감사합니다':                  `${BASE003}/audio/audio_감사합니다.mp3`,
+  '이름이 뭐예요':               `${BASE003}/audio/audio_이름이뭐예요.mp3`,
+  '저는 하은이에요':             `${BASE003}/audio/audio_저는하은이에요.mp3`,
+  // ── Palabras sueltas ─────────────────────────────────────────────────────
+  '카페':      `${BASE003}/audio/audio_카페.mp3`,
+  '아메리카노': `${BASE003}/audio/audio_아메리카노.mp3`,
+  '사이즈':    `${BASE003}/audio/audio_사이즈.mp3`,
+  '스몰':      `${BASE003}/audio/audio_스몰.mp3`,
+  '미디엄':    `${BASE003}/audio/audio_미디엄.mp3`,
+  '라지':      `${BASE003}/audio/audio_라지.mp3`,
+  '이름':      `${BASE003}/audio/audio_이름.mp3`,
+  '한 잔':     `${BASE003}/audio/audio_한잔.mp3`,
+  '금방':      `${BASE003}/audio/audio_금방.mp3`,
+  '여기':      `${BASE003}/audio/audio_여기.mp3`,
+  '주세요':    `${BASE003}/audio/audio_주세요.mp3`,
+  '작아요':    `${BASE003}/audio/audio_작아요.mp3`,
+};
+
+export const KR_PODCAST_003 = `${BASE003}/audio/step003-podcast.mp3`;
+export const KR_VIDEO_003   = `${BASE003}/video/STEP003.mp4`;
+
 export function playAudio(text: string, rate = 1) {
   if (typeof window === 'undefined') return;
   const src =
+    KR_AUDIO_003[text] ??
     KR_AUDIO_002[text] ??
     (KR_AUDIO as Record<string, string>)[text];
   if (src) {
