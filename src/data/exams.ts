@@ -139,7 +139,17 @@ export const EXAMS: Record<string, Exam> = {
       { id: 'mock-08', title: 'Mock 8 · Ciencia y espacio', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
       { id: 'mock-09', title: 'Mock 9 · Arte y medios', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
       { id: 'mock-10', title: 'Mock 10 · Emergencias y seguridad', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
-    ],
+      { id: 'mock-11', title: 'Mock 11 · Technology & Digital Life', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-12', title: 'Mock 12 · Environment & Sustainability', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-13', title: 'Mock 13 · Salud y Medicina', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-14', title: 'Mock 14 · Trabajo y Carreras', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-15', title: 'Mock 15 · Educación y aprendizaje', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-16', title: 'Mock 16 · Cultura e identidad', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-17', title: 'Mock 17 · Deporte y competencia', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-18', title: 'Mock 18 · Viajes y turismo', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-19', title: 'Mock 19 · Ciencia y descubrimiento', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+      { id: 'mock-20', title: 'Mock 20 · Sociedad y juventud', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
+    ];
     available: true,
   },
 

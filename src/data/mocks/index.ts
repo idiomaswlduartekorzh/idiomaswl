@@ -9,6 +9,16 @@ import icfesMock07 from './icfes-mock-07';
 import icfesMock08 from './icfes-mock-08';
 import icfesMock09 from './icfes-mock-09';
 import icfesMock10 from './icfes-mock-10';
+import icfesMock11 from './icfes-mock-11';
+import icfesMock12 from './icfes-mock-12';
+import icfesMock13 from './icfes-mock-13';
+import icfesMock14 from './icfes-mock-14';
+import icfesMock15 from './icfes-mock-15';
+import icfesMock16 from './icfes-mock-16';
+import icfesMock17 from './icfes-mock-17';
+import icfesMock18 from './icfes-mock-18';
+import icfesMock19 from './icfes-mock-19';
+import icfesMock20 from './icfes-mock-20';
 import ieltsSet1 from './ielts-set-1';
 import ieltsSet2 from './ielts-set-2';
 import ieltsSet3 from './ielts-set-3';
@@ -20,6 +30,7 @@ import goetheSet1 from './goethe-set-1';
 import celpeBrasSet1 from './celpe-bras-set-1';
 
 const MOCK_REGISTRY: Record<string, MockExam> = {
+  // ── ICFES mocks 1–10 (original) ───────────────────────────────────────────
   'icfes:mock-01': icfesMock01,
   'icfes:mock-02': icfesMock02,
   'icfes:mock-03': icfesMock03,
@@ -30,6 +41,18 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'icfes:mock-08': icfesMock08,
   'icfes:mock-09': icfesMock09,
   'icfes:mock-10': icfesMock10,
+  // ── ICFES mocks 11–20 (A2-B1 difficulty, randomised answers) ─────────────
+  'icfes:mock-11': icfesMock11,
+  'icfes:mock-12': icfesMock12,
+  'icfes:mock-13': icfesMock13,
+  'icfes:mock-14': icfesMock14,
+  'icfes:mock-15': icfesMock15,
+  'icfes:mock-16': icfesMock16,
+  'icfes:mock-17': icfesMock17,
+  'icfes:mock-18': icfesMock18,
+  'icfes:mock-19': icfesMock19,
+  'icfes:mock-20': icfesMock20,
+  // ── Other exams ───────────────────────────────────────────────────────────
   'ielts:set-1': ieltsSet1,
   'ielts:set-2': ieltsSet2,
   'ielts:set-3': ieltsSet3,
