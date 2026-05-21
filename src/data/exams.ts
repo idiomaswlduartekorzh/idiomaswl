@@ -149,7 +149,7 @@ export const EXAMS: Record<string, Exam> = {
       { id: 'mock-18', title: 'Mock 18 · Viajes y turismo', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
       { id: 'mock-19', title: 'Mock 19 · Ciencia y descubrimiento', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
       { id: 'mock-20', title: 'Mock 20 · Sociedad y juventud', subtitle: '7 partes · Formato Saber 11', free: true, parts: 7, questions: 55 },
-    ];
+    ],
     available: true,
   },
 
