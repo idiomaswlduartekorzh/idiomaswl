@@ -21,6 +21,12 @@ const AcquisitionGuided003   = dynamic(() => import('./stages/step003/Acquisitio
 const Recognition003         = dynamic(() => import('./stages/step003/Recognition003'),          { ssr: false });
 const ListeningSurvivable003 = dynamic(() => import('./stages/step003/ListeningSurvivable003'), { ssr: false });
 const ContextualInput003     = dynamic(() => import('./stages/step003/ContextualInput003'),     { ssr: false });
+const GuidedDiscovery003     = dynamic(() => import('./stages/step003/GuidedDiscovery003'),     { ssr: false });
+const MicroExplanation003    = dynamic(() => import('./stages/step003/MicroExplanation003'),    { ssr: false });
+const GuidedProduction003    = dynamic(() => import('./stages/step003/GuidedProduction003'),    { ssr: false });
+const ReactiveInteraction003 = dynamic(() => import('./stages/step003/ReactiveInteraction003'), { ssr: false });
+const SmartReview003         = dynamic(() => import('./stages/step003/SmartReview003'),         { ssr: false });
+const Completion003          = dynamic(() => import('./stages/step003/Completion003'),          { ssr: false });
 
 // ── Day 2 stages ──────────────────────────────────────────────────────────────
 const Activation002          = dynamic(() => import('./stages/step002/Activation002'),          { ssr: false });
@@ -34,6 +40,19 @@ const GuidedProduction002    = dynamic(() => import('./stages/step002/GuidedProd
 const ReactiveInteraction002 = dynamic(() => import('./stages/step002/ReactiveInteraction002'), { ssr: false });
 const SmartReview002         = dynamic(() => import('./stages/step002/SmartReview002'),         { ssr: false });
 const Completion002          = dynamic(() => import('./stages/step002/Completion002'),          { ssr: false });
+
+// ── Day 4 stages ──────────────────────────────────────────────────────────────
+const Activation004          = dynamic(() => import('./stages/step004/Activation004'),          { ssr: false });
+const AcquisitionGuided004   = dynamic(() => import('./stages/step004/AcquisitionGuided004'),   { ssr: false });
+const Recognition004         = dynamic(() => import('./stages/step004/Recognition004'),          { ssr: false });
+const ListeningSurvivable004 = dynamic(() => import('./stages/step004/ListeningSurvivable004'), { ssr: false });
+const ContextualInput004     = dynamic(() => import('./stages/step004/ContextualInput004'),     { ssr: false });
+const GuidedDiscovery004     = dynamic(() => import('./stages/step004/GuidedDiscovery004'),     { ssr: false });
+const MicroExplanation004    = dynamic(() => import('./stages/step004/MicroExplanation004'),    { ssr: false });
+const GuidedProduction004    = dynamic(() => import('./stages/step004/GuidedProduction004'),    { ssr: false });
+const ReactiveInteraction004 = dynamic(() => import('./stages/step004/ReactiveInteraction004'), { ssr: false });
+const SmartReview004         = dynamic(() => import('./stages/step004/SmartReview004'),         { ssr: false });
+const Completion004          = dynamic(() => import('./stages/step004/Completion004'),          { ssr: false });
 
 const COMPONENTS_DAY1 = [
   Activation, AcquisitionGuided, Recognition, ListeningSurvivable,
@@ -49,8 +68,14 @@ const COMPONENTS_DAY2 = [
 
 const COMPONENTS_DAY3 = [
   Activation003, AcquisitionGuided003, Recognition003, ListeningSurvivable003,
-  ContextualInput003,
-  // stages 6-11 coming soon — fall back to placeholder
+  ContextualInput003, GuidedDiscovery003, MicroExplanation003, GuidedProduction003,
+  ReactiveInteraction003, SmartReview003, Completion003,
+];
+
+const COMPONENTS_DAY4 = [
+  Activation004, AcquisitionGuided004, Recognition004, ListeningSurvivable004,
+  ContextualInput004, GuidedDiscovery004, MicroExplanation004, GuidedProduction004,
+  ReactiveInteraction004, SmartReview004, Completion004,
 ];
 
 const STAGE_NAMES = [
@@ -66,7 +91,7 @@ interface StagePanelProps {
 }
 
 export default function StagePanel({ stageIndex, dayNumber = 1, onComplete }: StagePanelProps) {
-  const components = dayNumber === 3 ? COMPONENTS_DAY3 : dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
+  const components = dayNumber === 4 ? COMPONENTS_DAY4 : dayNumber === 3 ? COMPONENTS_DAY3 : dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
   const StageComponent = components[stageIndex];
 
   if (!StageComponent) {

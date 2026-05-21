@@ -164,9 +164,72 @@ export const KR_AUDIO_003: Record<string, string> = {
 export const KR_PODCAST_003 = `${BASE003}/audio/step003-podcast.mp3`;
 export const KR_VIDEO_003   = `${BASE003}/video/STEP003.mp4`;
 
+// ─── STEP 004 — Universidad / Campus ─────────────────────────────────────────
+const BASE004 = '/assets/korean/step004';
+
+export const KR_IMG_004 = {
+  campus_arrival:       `${BASE004}/campus_arrival_v1.png`,
+  campus_people:        `${BASE004}/campus_people_v1.png`,
+  classroom_meeting:    `${BASE004}/classroom_meeting_v1.png`,
+  david_minsu_cafe:     `${BASE004}/david_minsu_cafe_v1.png`,
+  eottaeyo:             `${BASE004}/eottaeyo_v1.png`,
+  hallway_introduction: `${BASE004}/hallway_introduction_v1.png`,
+  masilraeyo:           `${BASE004}/masilraeyo_v1.png`,
+  saero_wasseoyo:       `${BASE004}/saero_wasseoyo_v1.png`,
+  saram:                `${BASE004}/saram_v1.png`,
+  university_sign:      `${BASE004}/university_sign_v1.png`,
+};
+
+export const KR_VIDEO_004 = {
+  scene1: `${BASE004}/video/STEP004-1.mp4`,
+  scene2: `${BASE004}/video/STEP004-2.MOV`,
+  scene3: `${BASE004}/video/STEP004-3.mp4`,
+  full:   `${BASE004}/video/step004.mov`,
+};
+
+export const KR_PODCAST_004 = `${BASE004}/audio/step004-podcast.mp3`;
+
+export const KR_AUDIO_004: Record<string, string> = {
+  '새로':                   `${BASE004}/audio/audio_saero.mp3`,
+  '새로 왔어요?':            `${BASE004}/audio/audio_saero_wasseoyo.mp3`,
+  '네, 새로 왔어요':         `${BASE004}/audio/audio_ne_saero_wasseoyo.mp3`,
+  '사람':                   `${BASE004}/audio/audio_saram.mp3`,
+  '콜롬비아 사람이에요':      `${BASE004}/audio/audio_colombia_saram_ieyo.mp3`,
+  '어때요?':                `${BASE004}/audio/audio_eottaeyo.mp3`,
+  '어때요':                 `${BASE004}/audio/audio_eottaeyo.mp3`,
+  '대학교 어때요?':          `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '대학교 어때요':           `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '마시다':                 `${BASE004}/audio/audio_masida.mp3`,
+  '마실래요?':              `${BASE004}/audio/audio_masilraeyo.mp3`,
+  '마실래요':               `${BASE004}/audio/audio_masilraeyo.mp3`,
+  '커피 마실래요?':          `${BASE004}/audio/audio_keopi_masilraeyo.mp3`,
+  '커피 마실래요':           `${BASE004}/audio/audio_keopi_masilraeyo.mp3`,
+  '같이 마실래요?':          `${BASE004}/audio/audio_gachi_masilraeyo.mp3`,
+  '같이 마실래요':           `${BASE004}/audio/audio_gachi_masilraeyo.mp3`,
+  '친절해요':               `${BASE004}/audio/audio_chinjeolhaeyo.mp3`,
+  '친절한 사람들':           `${BASE004}/audio/audio_chinjeolhan_saramdeul.mp3`,
+  '많아요':                 `${BASE004}/audio/audio_maneunyo.mp3`,
+  '좋아요':                 `${BASE004}/audio/audio_joayo.mp3`,
+  '반갑습니다':             `${BASE004}/audio/audio_bangapseumnida.mp3`,
+  '저는 민수예요':           `${BASE004}/audio/audio_jeoneun_minsu_yeyo.mp3`,
+  '저는 데이비드예요':        `${BASE004}/audio/audio_jeoneun_david_ieyo.mp3`,
+  '어느 나라 사람이에요?':    `${BASE004}/audio/audio_eoneu_nara_saram_ieyo.mp3`,
+  '어느 나라 사람이에요':     `${BASE004}/audio/audio_eoneu_nara_saram_ieyo.mp3`,
+  '네, 좋아요':             `${BASE004}/audio/audio_ne_joayo.mp3`,
+  '같이 가요':              `${BASE004}/audio/audio_gachi_gayo.mp3`,
+  '대학교 좋아요':           `${BASE004}/audio/audio_daehakgyo_joayo.mp3`,
+  // Alias de frases completas para evitar caídas a audio incorrecto
+  '이 카페 어때요?':         `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '이 카페 어때요':          `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '커피 어때요?':            `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '커피 어때요':             `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '친절한 사람들도 많아요':   `${BASE004}/audio/audio_chinjeolhan_saramdeul.mp3`,
+};
+
 export function playAudio(text: string, rate = 1) {
   if (typeof window === 'undefined') return;
   const src =
+    KR_AUDIO_004[text] ??
     KR_AUDIO_003[text] ??
     KR_AUDIO_002[text] ??
     (KR_AUDIO as Record<string, string>)[text];
