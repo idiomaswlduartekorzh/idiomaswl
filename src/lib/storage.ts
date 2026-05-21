@@ -218,11 +218,7 @@ export const KR_AUDIO_004: Record<string, string> = {
   '네, 좋아요':             `${BASE004}/audio/audio_ne_joayo.mp3`,
   '같이 가요':              `${BASE004}/audio/audio_gachi_gayo.mp3`,
   '대학교 좋아요':           `${BASE004}/audio/audio_daehakgyo_joayo.mp3`,
-  // Alias de frases completas para evitar caídas a audio incorrecto
-  '이 카페 어때요?':         `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
-  '이 카페 어때요':          `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
-  '커피 어때요?':            `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
-  '커피 어때요':             `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  // '이 카페 어때요?' y '커피 어때요?' no tienen archivo propio → TTS fallback intencional
   '친절한 사람들도 많아요':   `${BASE004}/audio/audio_chinjeolhan_saramdeul.mp3`,
 };
 

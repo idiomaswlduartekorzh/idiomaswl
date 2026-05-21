@@ -19,42 +19,43 @@ interface PatternQ extends BaseQ { type: 'pattern'; template: string; options: s
 type Question = MCQ | FillQ | PatternQ;
 
 /* ─── All questions — acumulativo steps 001-004 ──────────────────────────── */
+// NOTA: Las opciones tienen la correcta en distintas posiciones + shuffle en runtime
 const ALL_QUESTIONS: Question[] = [
   // ── Step 001 ─────────────────────────────────────────────────────────────
-  { id:'q001-1', type:'kr→es', step:'Step 001', prompt:'안녕하세요', options:['Hola (formal)','Gracias','¿Eres nuevo?','Encantado/a'], correct:'Hola (formal)', audio:'안녕하세요', explanation:'안녕하세요 es el saludo formal universal. Funciona en cualquier situación.' },
-  { id:'q001-2', type:'es→kr', step:'Step 001', prompt:'"Gracias" en coreano:', options:['감사합니다','안녕하세요','반갑습니다','죄송합니다'], correct:'감사합니다', audio:'감사합니다', explanation:'감사합니다 = gracias (formal). 고마워요 es la versión informal.' },
-  { id:'q001-3', type:'grammar', step:'Step 001', prompt:'¿Qué hace el sufijo -요 al final de una frase?', options:['Hace la frase formal-amigable','Indica pasado','Marca una pregunta','Indica negación'], correct:'Hace la frase formal-amigable', explanation:'-요 es el marcador de cortesía estándar. Transforma cualquier frase en respetuosa sin ser rígida.' },
+  { id:'q001-1', type:'kr→es', step:'Step 001', prompt:'안녕하세요', options:['Gracias','Hola (formal)','¿Eres nuevo?','Encantado/a'], correct:'Hola (formal)', audio:'안녕하세요', explanation:'안녕하세요 es el saludo formal universal. Funciona en cualquier situación.' },
+  { id:'q001-2', type:'es→kr', step:'Step 001', prompt:'"Gracias" en coreano:', options:['안녕하세요','반갑습니다','감사합니다','죄송합니다'], correct:'감사합니다', audio:'감사합니다', explanation:'감사합니다 = gracias (formal). 고마워요 es la versión informal.' },
+  { id:'q001-3', type:'grammar', step:'Step 001', prompt:'¿Qué hace el sufijo -요 al final de una frase?', options:['Indica pasado','Marca una pregunta','Hace la frase formal-amigable','Indica negación'], correct:'Hace la frase formal-amigable', explanation:'-요 es el marcador de cortesía estándar. Transforma cualquier frase en respetuosa sin ser rígida.' },
 
   // ── Step 002 ─────────────────────────────────────────────────────────────
-  { id:'q002-1', type:'kr→es', step:'Step 002', prompt:'있어요', options:['hay / tiene / existe','no hay / no tiene','soy / es','¿Cómo es?'], correct:'hay / tiene / existe', audio:'있어요', explanation:'있어요 = hay, existe, tiene. Su contrario es 없어요. Son dos de las palabras más útiles del coreano.' },
-  { id:'q002-2', type:'es→kr', step:'Step 002', prompt:'"No hay / no existe" en coreano:', options:['없어요','있어요','아니에요','몰라요'], correct:'없어요', audio:'없어요', explanation:'없어요 = no hay, no existe, no tiene. Contrario de 있어요.' },
-  { id:'q002-3', type:'fill', step:'Step 002', prefix:'커피', suffix:'?', options:['있어요','어때요','마실래요','이에요'], correct:'있어요', es:'¿Hay café?', audio:'커피 마실래요?', explanation:'커피 있어요? — preguntar si hay algo es uno de los usos más frecuentes de 있어요 en forma interrogativa.' },
+  { id:'q002-1', type:'kr→es', step:'Step 002', prompt:'있어요', options:['no hay / no tiene','soy / es','¿Cómo es?','hay / tiene / existe'], correct:'hay / tiene / existe', audio:'있어요', explanation:'있어요 = hay, existe, tiene. Su contrario es 없어요. Son dos de las palabras más útiles del coreano.' },
+  { id:'q002-2', type:'es→kr', step:'Step 002', prompt:'"No hay / no existe" en coreano:', options:['있어요','아니에요','없어요','몰라요'], correct:'없어요', audio:'없어요', explanation:'없어요 = no hay, no existe, no tiene. Contrario de 있어요.' },
+  { id:'q002-3', type:'fill', step:'Step 002', prefix:'커피', suffix:'?', options:['어때요','마실래요','이에요','있어요'], correct:'있어요', es:'¿Hay café?', audio:'있어요', explanation:'커피 있어요? — preguntar si hay algo es uno de los usos más frecuentes de 있어요 en forma interrogativa.' },
 
   // ── Step 003 ─────────────────────────────────────────────────────────────
-  { id:'q003-1', type:'kr→es', step:'Step 003', prompt:'이에요 / 예요', options:['soy / es (cópula)','hay / existe','no soy / no es','¿Qué tal?'], correct:'soy / es (cópula)', audio:'콜롬비아 사람이에요', explanation:'La cópula 이에요/예요 equivale a "ser" en presente. 이에요 después de consonante, 예요 después de vocal.' },
-  { id:'q003-2', type:'grammar', step:'Step 003', prompt:'¿Cuándo usas 예요 en vez de 이에요?', options:['Después de vocal','Después de consonante','Solo con nombres propios','Solo en preguntas'], correct:'Después de vocal', explanation:'Vocal → 예요 (민수예요). Consonante → 이에요 (사람이에요). ¡La terminal del nombre importa!' },
-  { id:'q003-3', type:'context', step:'Step 003', prompt:'Alguien te pregunta "어느 나라 사람이에요?". Respondes (eres de Colombia):', options:['콜롬비아 사람이에요','콜롬비아 있어요','콜롬비아 어때요?','콜롬비아 없어요'], correct:'콜롬비아 사람이에요', audio:'콜롬비아 사람이에요', explanation:'[País] + 사람이에요 = "Soy de [País]". La fórmula más directa para decir tu nacionalidad.' },
+  { id:'q003-1', type:'kr→es', step:'Step 003', prompt:'이에요 / 예요', options:['hay / existe','no soy / no es','soy / es (cópula)','¿Qué tal?'], correct:'soy / es (cópula)', audio:'콜롬비아 사람이에요', explanation:'La cópula 이에요/예요 equivale a "ser" en presente. 이에요 después de consonante, 예요 después de vocal.' },
+  { id:'q003-2', type:'grammar', step:'Step 003', prompt:'¿Cuándo usas 예요 en vez de 이에요?', options:['Solo con nombres propios','Después de vocal','Después de consonante','Solo en preguntas'], correct:'Después de vocal', explanation:'Vocal → 예요 (민수예요). Consonante → 이에요 (사람이에요). ¡La terminal del nombre importa!' },
+  { id:'q003-3', type:'context', step:'Step 003', prompt:'Alguien te pregunta "어느 나라 사람이에요?". Respondes (eres de Colombia):', options:['콜롬비아 있어요','콜롬비아 없어요','콜롬비아 사람이에요','콜롬비아 어때요?'], correct:'콜롬비아 사람이에요', audio:'콜롬비아 사람이에요', explanation:'[País] + 사람이에요 = "Soy de [País]". La fórmula más directa para decir tu nacionalidad.' },
 
   // ── Step 004 — vocabulario ────────────────────────────────────────────────
-  { id:'q004-1', type:'kr→es', step:'Step 004', prompt:'새로 왔어요?', options:['¿Eres nuevo/a aquí?','¿Cuándo llegaste?','¿Eres de Corea?','¿Te gusta esto?'], correct:'¿Eres nuevo/a aquí?', audio:'새로 왔어요?', explanation:'새로 = recién/nuevo, 왔어요 = llegaste (pasado de 오다). Pregunta natural para conocidos recién llegados.' },
-  { id:'q004-2', type:'kr→es', step:'Step 004', prompt:'반갑습니다', options:['Encantado/a de conocerte','Gracias','Hola (informal)','Hasta pronto'], correct:'Encantado/a de conocerte', audio:'반갑습니다', explanation:'반갑습니다 = encantado/a. Se usa la primera vez que conoces a alguien. Más formal que 안녕하세요.' },
-  { id:'q004-3', type:'es→kr', step:'Step 004', prompt:'"¿Cómo es? / ¿Qué tal?" en coreano:', options:['어때요?','마실래요?','왔어요?','있어요?'], correct:'어때요?', audio:'어때요?', explanation:'어때요 = ¿cómo es? / ¿qué tal? Patrón clave: [sustantivo] + 어때요? — funciona con cualquier cosa.' },
-  { id:'q004-4', type:'es→kr', step:'Step 004', prompt:'"¿Quieres tomar un café?" en coreano:', options:['커피 마실래요?','커피 어때요?','커피 있어요?','커피 좋아요?'], correct:'커피 마실래요?', audio:'커피 마실래요?', explanation:'-ㄹ래요? propone hacer algo juntos. 마실래요 = ¿quieres beber? De 마시다 (beber) + -ㄹ래요.' },
-  { id:'q004-5', type:'kr→es', step:'Step 004', prompt:'좋아요', options:['Está bien / Me gusta','Hay mucho','Es amable','¿Qué tal?'], correct:'Está bien / Me gusta', audio:'좋아요', explanation:'좋아요 = está bien, me gusta. Respuesta positiva universal. De 좋다 (ser bueno).' },
-  { id:'q004-6', type:'kr→es', step:'Step 004', prompt:'많아요', options:['Hay muchos/as','Es amable','Está bien','Hay café'], correct:'Hay muchos/as', audio:'많아요', explanation:'많아요 = hay muchos, es mucho. De 많다 (ser numeroso).' },
-  { id:'q004-7', type:'kr→es', step:'Step 004', prompt:'도 (partícula)', options:['también / encima','pero / sino','y (entre nombres)','solo / únicamente'], correct:'también / encima', audio:'커피도 있어요', explanation:'도 = también. Se adjunta al sustantivo: 커피도 있어요 (también hay café). ¡Muy frecuente!' },
+  { id:'q004-1', type:'kr→es', step:'Step 004', prompt:'새로 왔어요?', options:['¿Cuándo llegaste?','¿Eres nuevo/a aquí?','¿Eres de Corea?','¿Te gusta esto?'], correct:'¿Eres nuevo/a aquí?', audio:'새로 왔어요?', explanation:'새로 = recién/nuevo, 왔어요 = llegaste (pasado de 오다). Pregunta natural para conocidos recién llegados.' },
+  { id:'q004-2', type:'kr→es', step:'Step 004', prompt:'반갑습니다', options:['Gracias','Hola (informal)','Hasta pronto','Encantado/a de conocerte'], correct:'Encantado/a de conocerte', audio:'반갑습니다', explanation:'반갑습니다 = encantado/a. Se usa la primera vez que conoces a alguien. Más formal que 안녕하세요.' },
+  { id:'q004-3', type:'es→kr', step:'Step 004', prompt:'"¿Cómo es? / ¿Qué tal?" en coreano:', options:['마실래요?','어때요?','왔어요?','있어요?'], correct:'어때요?', audio:'어때요?', explanation:'어때요 = ¿cómo es? / ¿qué tal? Patrón clave: [sustantivo] + 어때요? — funciona con cualquier cosa.' },
+  { id:'q004-4', type:'es→kr', step:'Step 004', prompt:'"¿Quieres tomar un café?" en coreano:', options:['커피 어때요?','커피 있어요?','커피 마실래요?','커피 좋아요?'], correct:'커피 마실래요?', audio:'커피 마실래요?', explanation:'-ㄹ래요? propone hacer algo juntos. 마실래요 = ¿quieres beber? De 마시다 (beber) + -ㄹ래요.' },
+  { id:'q004-5', type:'kr→es', step:'Step 004', prompt:'좋아요', options:['Hay mucho','Es amable','Está bien / Me gusta','¿Qué tal?'], correct:'Está bien / Me gusta', audio:'좋아요', explanation:'좋아요 = está bien, me gusta. Respuesta positiva universal. De 좋다 (ser bueno).' },
+  { id:'q004-6', type:'kr→es', step:'Step 004', prompt:'많아요', options:['Es amable','Hay muchos/as','Está bien','Hay café'], correct:'Hay muchos/as', audio:'많아요', explanation:'많아요 = hay muchos, es mucho. De 많다 (ser numeroso).' },
+  { id:'q004-7', type:'kr→es', step:'Step 004', prompt:'도 (partícula)', options:['pero / sino','y (entre nombres)','también / encima','solo / únicamente'], correct:'también / encima', audio:'커피도 있어요', explanation:'도 = también. Se adjunta al sustantivo: 커피도 있어요 (también hay café). ¡Muy frecuente!' },
 
   // ── Step 004 — gramática y patrones ──────────────────────────────────────
-  { id:'q004-g1', type:'pattern', step:'Step 004', template:'___ 어때요?', options:['대학교','감사합니다','왔어요','이에요'], correct:'대학교', es:'¿Cómo es la universidad?', audio:'대학교 어때요?', explanation:'El patrón [sustantivo] + 어때요? pide opinión. Solo va con sustantivos, no con verbos.' },
-  { id:'q004-g2', type:'grammar', step:'Step 004', prompt:'¿Cuál es la diferencia entre 마실래요? y 어때요?', options:['마실래요 invita a hacer algo, 어때요 pide opinión','Son sinónimos — ambas piden opinión','마실래요 es formal, 어때요 informal','어때요 invita a hacer algo, 마실래요 describe'], correct:'마실래요 invita a hacer algo, 어때요 pide opinión', explanation:'Clave del step004: -ㄹ래요 = propuesta de acción, 어때요 = consulta de opinión.' },
-  { id:'q004-g3', type:'fill', step:'Step 004', prefix:'친절한 사람들', suffix:'많아요.', options:['도','는','가','을'], correct:'도', es:'Hay mucha gente amable también.', audio:'친절한 사람들', explanation:'도 adjuntado al sustantivo añade "también". 사람들도 많아요 = también hay mucha gente.' },
-  { id:'q004-g4', type:'context', step:'Step 004', prompt:'Minsu pregunta "대학교 어때요?". ¿Cuál es la respuesta más natural y detallada?', options:['좋아요! 친절한 사람들도 많아요','네, 주세요','감사합니다, 안녕하세요','아니에요, 없어요'], correct:'좋아요! 친절한 사람들도 많아요', audio:'좋아요', explanation:'La respuesta natural da una opinión (좋아요) y añade un detalle con 도. ¡Así habla David!' },
-  { id:'q004-g5', type:'context', step:'Step 004', prompt:'Eres David. Minsu dice "저는 민수예요." ¿Cómo te presentas?', options:['저는 데이비드예요','저는 민수예요','새로 왔어요?','커피 마실래요?'], correct:'저는 데이비드예요', audio:'저는 데이비드예요', explanation:'저는 [nombre]이에요/예요 — la fórmula de presentación. Nombre termina en vocal → 예요.' },
+  { id:'q004-g1', type:'pattern', step:'Step 004', template:'___ 어때요?', options:['감사합니다','왔어요','대학교','이에요'], correct:'대학교', es:'¿Cómo es la universidad?', audio:'대학교 어때요?', explanation:'El patrón [sustantivo] + 어때요? pide opinión. Solo va con sustantivos, no con verbos.' },
+  { id:'q004-g2', type:'grammar', step:'Step 004', prompt:'¿Cuál es la diferencia entre 마실래요? y 어때요?', options:['Son sinónimos — ambas piden opinión','어때요 invita a hacer algo, 마실래요 describe','마실래요 es formal, 어때요 informal','마실래요 invita a hacer algo, 어때요 pide opinión'], correct:'마실래요 invita a hacer algo, 어때요 pide opinión', explanation:'Clave del step004: -ㄹ래요 = propuesta de acción, 어때요 = consulta de opinión.' },
+  { id:'q004-g3', type:'fill', step:'Step 004', prefix:'친절한 사람들', suffix:'많아요.', options:['는','가','도','을'], correct:'도', es:'Hay mucha gente amable también.', audio:'친절한 사람들', explanation:'도 adjuntado al sustantivo añade "también". 사람들도 많아요 = también hay mucha gente.' },
+  { id:'q004-g4', type:'context', step:'Step 004', prompt:'Minsu pregunta "대학교 어때요?". ¿Cuál es la respuesta más natural y detallada?', options:['네, 주세요','아니에요, 없어요','감사합니다, 잘 지내요','좋아요! 친절한 사람들도 많아요'], correct:'좋아요! 친절한 사람들도 많아요', audio:'좋아요', explanation:'La respuesta natural da una opinión (좋아요) y añade un detalle con 도. ¡Así habla David!' },
+  { id:'q004-g5', type:'context', step:'Step 004', prompt:'Eres David. Minsu dice "저는 민수예요." ¿Cómo te presentas?', options:['새로 왔어요?','저는 데이비드예요','저는 민수예요','커피 마실래요?'], correct:'저는 데이비드예요', audio:'저는 데이비드예요', explanation:'저는 [nombre]이에요/예요 — la fórmula de presentación. Nombre termina en vocal → 예요.' },
 
   // ── Integración cross-steps ───────────────────────────────────────────────
-  { id:'q-cross-1', type:'context', step:'Steps 001–004', prompt:'Ves a alguien nuevo en el aula. ¿Cómo empiezas la conversación?', options:['안녕하세요! 새로 왔어요?','커피 없어요','친절한 사람들이에요','감사합니다, 많아요'], correct:'안녕하세요! 새로 왔어요?', audio:'안녕하세요', explanation:'La secuencia natural: saludo (안녕하세요) + pregunta de apertura (새로 왔어요?). ¡Así empieza la historia!' },
-  { id:'q-cross-2', type:'es→kr', step:'Steps 001–004', prompt:'¿Qué partícula añade "también" a un sustantivo?', options:['도','는','가','를'], correct:'도', explanation:'도 = también, encima. Se adjunta directamente: 커피도, 사람들도, 대학교도. ¡Un must para el coreano natural!' },
-  { id:'q-cross-3', type:'fill', step:'Steps 001–004', prefix:'저는 민수', suffix:'. 이름이 뭐예요?', options:['예요','이에요','있어요','어때요'], correct:'예요', es:'Soy Minsu. ¿Cómo te llamas?', audio:'저는 민수예요', explanation:'민수 termina en vocal (수) → 예요. Consonante → 이에요. Este contraste es esencial en coreano.' },
+  { id:'q-cross-1', type:'context', step:'Steps 001–004', prompt:'Ves a alguien nuevo en el aula. ¿Cómo empiezas la conversación?', options:['커피 없어요','친절한 사람들이에요','안녕하세요! 새로 왔어요?','감사합니다, 많아요'], correct:'안녕하세요! 새로 왔어요?', audio:'안녕하세요', explanation:'La secuencia natural: saludo (안녕하세요) + pregunta de apertura (새로 왔어요?). ¡Así empieza la historia!' },
+  { id:'q-cross-2', type:'es→kr', step:'Steps 001–004', prompt:'¿Qué partícula añade "también" a un sustantivo?', options:['는','가','를','도'], correct:'도', explanation:'도 = también, encima. Se adjunta directamente: 커피도, 사람들도, 대학교도. ¡Un must para el coreano natural!' },
+  { id:'q-cross-3', type:'fill', step:'Steps 001–004', prefix:'저는 민수', suffix:'. 이름이 뭐예요?', options:['이에요','있어요','예요','어때요'], correct:'예요', es:'Soy Minsu. ¿Cómo te llamas?', audio:'저는 민수예요', explanation:'민수 termina en vocal (수) → 예요. Consonante → 이에요. Este contraste es esencial en coreano.' },
 ];
 
 /* ─── Helpers ─────────────────────────────────────────────────────────────── */
@@ -72,11 +73,18 @@ const ACCENT = '#6c63ff', GREEN = '#22c55e', RED = '#ef4444', AMBER = '#f59e0b';
 /* ─── Component ───────────────────────────────────────────────────────────── */
 interface Props { onComplete?: () => void }
 
+// Inicialización sincrónica una sola vez — mismo shuffle para queue y options iniciales
+function createInitialState() {
+  const q = shuffle(ALL_QUESTIONS).slice(0, 18);
+  return { queue: q, options: q[0] ? getOptions(q[0]) : [] as string[] };
+}
+
 export default function SmartReview004({ onComplete }: Props) {
-  const [queue,     setQueue]     = useState<Question[]>(() => shuffle(ALL_QUESTIONS).slice(0, 18));
+  const [initState]   = useState(createInitialState);
+  const [queue,     setQueue]     = useState<Question[]>(() => initState.queue);
   const [missed,    setMissed]    = useState<Question[]>([]);
   const [idx,       setIdx]       = useState(0);
-  const [options,   setOptions]   = useState<string[]>([]);
+  const [options,   setOptions]   = useState<string[]>(() => initState.options);
   const [selected,  setSelected]  = useState<string | null>(null);
   const [revealed,  setRevealed]  = useState(false);
   const [correct,   setCorrect]   = useState(0);

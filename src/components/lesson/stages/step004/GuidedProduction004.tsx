@@ -85,15 +85,24 @@ const EXERCISES: Exercise[] = [
   {
     type: 'choice',
     prompt: 'Tu amigo pregunta "이 카페 어때요?" Respondes:',
-    options: ['네, 주세요', '좋아요! 커피도 있어요', '안녕하세요'],
+    options: ['아니에요, 없어요', '좋아요! 커피도 있어요', '네, 주세요'],
     correct: '좋아요! 커피도 있어요',
-    feedbackCorrect: '¡Muy bien! Respondes con opinión y detalle',
+    feedbackCorrect: '¡Muy bien! Respondes con opinión y añades un detalle con 도',
   },
 ];
 
 const ACCENT = '#6c63ff';
 
 /* ─── Helpers ────────────────────────────────────────────────────────────── */
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 function starsForAttempts(attempts: number): number {
   if (attempts === 1) return 3;
   if (attempts === 2) return 2;
@@ -133,14 +142,15 @@ function BuildView({
   onNext: () => void;
   onStars: (n: number) => void;
 }) {
-  const [chosen,    setChosen]    = useState<string[]>([]);
-  const [status,    setStatus]    = useState<'building' | 'wrong' | 'correct'>('building');
-  const [attempts,  setAttempts]  = useState(0);
-  const [stars,     setStars]     = useState<number | null>(null);
-  const [showHint,  setShowHint]  = useState(false);
+  const [chosen,       setChosen]       = useState<string[]>([]);
+  const [status,       setStatus]       = useState<'building' | 'wrong' | 'correct'>('building');
+  const [attempts,     setAttempts]     = useState(0);
+  const [stars,        setStars]        = useState<number | null>(null);
+  const [showHint,     setShowHint]     = useState(false);
+  // Tiles shuffled once on mount so el orden no es obvio
+  const [shuffledPool] = useState<Tile[]>(() => shuffle(ex.tiles));
 
-  const remaining = ex.tiles.filter(t => !chosen.includes(t.ko));
-  const complete   = chosen.length === ex.correctOrder.length;
+  const complete = chosen.length === ex.correctOrder.length;
 
   function addTile(ko: string) {
     if (status !== 'building') return;
@@ -230,9 +240,9 @@ function BuildView({
         </div>
       )}
 
-      {/* Tile pool */}
+      {/* Tile pool — orden shuffled al montar */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-        {ex.tiles.map(t => {
+        {shuffledPool.map(t => {
           const used = chosen.includes(t.ko);
           const tc = TILE_COLORS[t.role];
           return (
