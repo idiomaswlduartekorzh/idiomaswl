@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'; // useEffect kept for audio auto-play
 import { KR_IMG_005, playAudio } from '@/lib/storage';
 
 interface VocabItem {
@@ -32,8 +32,6 @@ interface Props {
 export default function AcquisitionGuided005({ onComplete }: Props) {
   const [index, setIndex] = useState(0);
   const [seen, setSeen]   = useState<Set<number>>(new Set([0]));
-  const [autoTimer, setAutoTimer] = useState<ReturnType<typeof setTimeout> | null>(null);
-
   const card    = VOCAB[index];
   const allSeen = seen.size === VOCAB.length;
 
@@ -43,17 +41,7 @@ export default function AcquisitionGuided005({ onComplete }: Props) {
     return () => clearTimeout(t);
   }, [index, card.audio]);
 
-  // Auto-advance every 3s
-  useEffect(() => {
-    if (index >= VOCAB.length - 1) return;
-    const t = setTimeout(() => goTo(index + 1), 3000);
-    setAutoTimer(t);
-    return () => clearTimeout(t);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index]);
-
   function goTo(next: number) {
-    if (autoTimer) clearTimeout(autoTimer);
     setSeen(prev => {
       const s = new Set(prev);
       s.add(next);

@@ -24,21 +24,21 @@ interface Question { id: string; q: string; options: string[]; correct: string }
 const QUESTIONS: Question[] = [
   {
     id: 'Q1',
-    q: '¿Dónde estudia David?',
-    options: ['En un café', 'En esta universidad', 'En casa', 'En la biblioteca'],
-    correct: 'En esta universidad',
+    q: '¿Dónde trabaja David además de estudiar?',
+    options: ['En la biblioteca', 'En casa de Minsu', 'En un café', 'En la universidad'],
+    correct: 'En un café',
   },
   {
     id: 'Q2',
-    q: '¿Qué partícula usa David para decir "trabajo en el café"?',
-    options: ['카페에', '카페에서', '카페는', '카페도'],
-    correct: '카페에서',
+    q: '¿Qué tiene Minsu que lo hace feliz en la universidad?',
+    options: ['Un trabajo part-time', 'Muchos amigos', 'Un café propio', 'Clases fáciles'],
+    correct: 'Muchos amigos',
   },
   {
     id: 'Q3',
-    q: '¿Qué significa 매일 카페에 가요?',
-    options: ['Trabajo todos los días en el café', 'Voy al café todos los días', 'El café está todos los días', 'Me gusta el café todos los días'],
-    correct: 'Voy al café todos los días',
+    q: '¿A dónde va David todos los días?',
+    options: ['A la biblioteca', 'A la universidad de Minsu', 'Al café', 'A casa'],
+    correct: 'Al café',
   },
 ];
 

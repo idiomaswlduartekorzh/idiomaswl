@@ -14,10 +14,10 @@ const ACCENT = '#6c63ff';
 
 /* ─── Data ───────────────────────────────────────────────────────────────── */
 const INTRO_CHIPS = [
-  { ko: '이 대학교에서 공부해요', audio: '이 대학교에서 공부해요' },
-  { ko: '카페에서 일해요',       audio: '카페에서 일해요' },
-  { ko: '매일 카페에 가요',      audio: '매일 카페에 가요' },
-  { ko: '한국 좋아해요',         audio: '한국 좋아해요' },
+  { ko: '이 대학교에서 공부해요', audio: '이 대학교에서 공부해요', color: '#8b5cf6', bg: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.35)', highlight: '에서' },
+  { ko: '카페에서 일해요',       audio: '카페에서 일해요',        color: '#8b5cf6', bg: 'rgba(139,92,246,0.12)', border: 'rgba(139,92,246,0.35)', highlight: '에서' },
+  { ko: '매일 카페에 가요',      audio: '매일 카페에 가요',       color: '#3b82f6', bg: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.35)',  highlight: '에' },
+  { ko: '한국 좋아해요',         audio: '한국 좋아해요',          color: '#ec4899', bg: 'rgba(236,72,153,0.12)', border: 'rgba(236,72,153,0.35)', highlight: '' },
 ];
 
 const P1_CARDS = [
@@ -40,10 +40,10 @@ interface SortExercise {
 }
 
 const SORT_EXERCISES: SortExercise[] = [
-  { ko: '도서관에서 공부해요', audio: '공부해요',    answer: 'eseo', explanation: '공부해요 es una acción — ocurre EN la biblioteca → 에서.' },
-  { ko: '학교에 가요',         audio: '매일 카페에 가요', answer: 'e',    explanation: '가요 es movimiento — destino → 에.' },
-  { ko: '카페에서 커피 마셔요', audio: '카페에서 일해요', answer: 'eseo', explanation: '마셔요 es una acción que ocurre EN el café → 에서.' },
-  { ko: '집에 와요',           audio: '매일 카페에 가요', answer: 'e',    explanation: '와요 es movimiento — destino → 에.' },
+  { ko: '도서관에서 공부해요', audio: '도서관에서 공부해요', answer: 'eseo', explanation: '공부해요 es una acción — ocurre EN la biblioteca → 에서.' },
+  { ko: '학교에 가요',         audio: '학교에 가요',         answer: 'e',    explanation: '가요 es movimiento hacia un destino → 에.' },
+  { ko: '카페에서 커피 마셔요', audio: '카페에서 커피 마셔요', answer: 'eseo', explanation: '마셔요 es una acción que ocurre EN el café → 에서.' },
+  { ko: '집에 와요',           audio: '집에 와요',           answer: 'e',    explanation: '와요 es movimiento — volver a casa como destino → 에.' },
 ];
 
 /* ─── Helpers ────────────────────────────────────────────────────────────── */
@@ -109,23 +109,38 @@ export default function GuidedDiscovery005({ onComplete }: Props) {
           </p>
         </div>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, animation: 'gd5-in 0.4s 0.1s ease both' }}>
-          {INTRO_CHIPS.map((chip, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => playAudio(chip.audio)}
-              style={{
-                padding: '10px 16px', borderRadius: 100, cursor: 'pointer',
-                background: 'var(--secondary)', border: '1px solid var(--border)',
-                fontSize: 15, fontWeight: 700, color: 'var(--foreground)',
-                fontFamily: '"Noto Sans KR",sans-serif',
-                transition: 'all 0.18s ease',
-              }}
-            >
-              {chip.ko}
-            </button>
-          ))}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, animation: 'gd5-in 0.4s 0.1s ease both' }}>
+          {INTRO_CHIPS.map((chip, i) => {
+            const parts = chip.highlight
+              ? chip.ko.split(chip.highlight)
+              : [chip.ko];
+            return (
+              <button
+                key={i}
+                type="button"
+                onClick={() => playAudio(chip.audio)}
+                style={{
+                  padding: '11px 18px', borderRadius: 100, cursor: 'pointer',
+                  background: chip.bg, border: `1.5px solid ${chip.border}`,
+                  fontSize: 15, fontWeight: 700, color: chip.color,
+                  fontFamily: '"Noto Sans KR",sans-serif',
+                  transition: 'all 0.18s ease',
+                  animation: `gd5-in 0.45s ${0.05 * i}s ease both`,
+                  boxShadow: `0 2px 12px ${chip.bg}`,
+                  display: 'inline-flex', alignItems: 'center', gap: 0,
+                }}
+              >
+                {chip.highlight ? (
+                  <>
+                    <span style={{ color: 'var(--foreground)' }}>{parts[0]}</span>
+                    <span style={{ color: chip.color, fontWeight: 900, textDecoration: 'underline', textDecorationColor: chip.color }}>{chip.highlight}</span>
+                    <span style={{ color: 'var(--foreground)' }}>{parts[1]}</span>
+                  </>
+                ) : chip.ko}
+                <span style={{ marginLeft: 6, fontSize: 11 }}>🔊</span>
+              </button>
+            );
+          })}
         </div>
 
         <div style={{
