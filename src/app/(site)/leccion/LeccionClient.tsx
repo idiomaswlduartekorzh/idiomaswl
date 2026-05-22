@@ -177,8 +177,8 @@ const AVAILABLE_DAYS: { lang: string; slug: string; flag: string; day: number; t
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 1, title: 'Vocabulario fundamental', desc: 'Escuela, casa, libro, agua, amigo — primeras 6 palabras.' },
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 2, title: 'El alfabeto Hangul', desc: 'Bloques silábicos, 6 familias articulatorias, primeras lecturas.' },
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 3, title: 'Cortesía coreana', desc: '안녕하세요, 감사합니다, 미안합니다 — fórmulas de cortesía esenciales.' },
-  { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 4, title: '¿Dónde está…?', desc: 'Ubicaciones, partículas 에/에서, hay/no hay — pregunta y oriéntate.' },
-  { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 5, title: 'Rutina universitaria', desc: '에서 vs 에, verbos 하다, 좋아해요 — la vida de David en Corea.' },
+  { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 6, title: '¿Dónde está…?', desc: 'Ubicaciones, partículas 에/에서, hay/no hay — pregunta y oriéntate.' },
+  { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 7, title: 'Rutina universitaria', desc: '에서 vs 에, verbos 하다, 좋아해요 — la vida de David en Corea.' },
 ];
 
 function AvailableDays() {

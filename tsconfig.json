@@ -30,5 +30,15 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "src/data/mocks/ielts-set-5.ts",
+    "src/data/mocks/ielts-set-6.ts",
+    "src/data/mocks/ielts-set-7.ts",
+    "src/data/mocks/ielts-set-8.ts",
+    "src/data/mocks/ielts-set-9.ts",
+    "src/data/mocks/ielts-set-10.ts",
+    "src/data/mocks/ielts-set-11.ts",
+    "src/data/mocks/ielts-set-12.ts"
+  ]
 }

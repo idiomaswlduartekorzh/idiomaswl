@@ -165,111 +165,111 @@ export const KR_PODCAST_003 = `${BASE003}/audio/step003-podcast.mp3`;
 export const KR_VIDEO_003   = `${BASE003}/video/STEP003.mp4`;
 
 // ─── STEP 004 — Universidad / Campus ─────────────────────────────────────────
-const BASE004 = '/assets/korean/step004';
+const BASE006 = '/assets/korean/step006';
 
-export const KR_IMG_004 = {
-  campus_arrival:       `${BASE004}/campus_arrival_v1.png`,
-  campus_people:        `${BASE004}/campus_people_v1.png`,
-  classroom_meeting:    `${BASE004}/classroom_meeting_v1.png`,
-  david_minsu_cafe:     `${BASE004}/david_minsu_cafe_v1.png`,
-  eottaeyo:             `${BASE004}/eottaeyo_v1.png`,
-  hallway_introduction: `${BASE004}/hallway_introduction_v1.png`,
-  masilraeyo:           `${BASE004}/masilraeyo_v1.png`,
-  saero_wasseoyo:       `${BASE004}/saero_wasseoyo_v1.png`,
-  saram:                `${BASE004}/saram_v1.png`,
-  university_sign:      `${BASE004}/university_sign_v1.png`,
+export const KR_IMG_006 = {
+  campus_arrival:       `${BASE006}/campus_arrival_v1.png`,
+  campus_people:        `${BASE006}/campus_people_v1.png`,
+  classroom_meeting:    `${BASE006}/classroom_meeting_v1.png`,
+  david_minsu_cafe:     `${BASE006}/david_minsu_cafe_v1.png`,
+  eottaeyo:             `${BASE006}/eottaeyo_v1.png`,
+  hallway_introduction: `${BASE006}/hallway_introduction_v1.png`,
+  masilraeyo:           `${BASE006}/masilraeyo_v1.png`,
+  saero_wasseoyo:       `${BASE006}/saero_wasseoyo_v1.png`,
+  saram:                `${BASE006}/saram_v1.png`,
+  university_sign:      `${BASE006}/university_sign_v1.png`,
 };
 
-export const KR_VIDEO_004 = {
-  scene1: `${BASE004}/video/STEP004-1.mp4`,
-  scene2: `${BASE004}/video/STEP004-2.MOV`,
-  scene3: `${BASE004}/video/STEP004-3.mp4`,
-  full:   `${BASE004}/video/step004.mov`,
+export const KR_VIDEO_006 = {
+  scene1: `${BASE006}/video/STEP004-1.mp4`,
+  scene2: `${BASE006}/video/STEP004-2.MOV`,
+  scene3: `${BASE006}/video/STEP004-3.mp4`,
+  full:   `${BASE006}/video/step006.mov`,
 };
 
-export const KR_PODCAST_004 = `${BASE004}/audio/step004-podcast.mp3`;
+export const KR_PODCAST_006 = `${BASE006}/audio/step006-podcast.mp3`;
 
-export const KR_AUDIO_004: Record<string, string> = {
-  '새로':                   `${BASE004}/audio/audio_saero.mp3`,
-  '새로 왔어요?':            `${BASE004}/audio/audio_saero_wasseoyo.mp3`,
-  '네, 새로 왔어요':         `${BASE004}/audio/audio_ne_saero_wasseoyo.mp3`,
-  '사람':                   `${BASE004}/audio/audio_saram.mp3`,
-  '콜롬비아 사람이에요':      `${BASE004}/audio/audio_colombia_saram_ieyo.mp3`,
-  '어때요?':                `${BASE004}/audio/audio_eottaeyo.mp3`,
-  '어때요':                 `${BASE004}/audio/audio_eottaeyo.mp3`,
-  '대학교 어때요?':          `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
-  '대학교 어때요':           `${BASE004}/audio/audio_daehakgyo_eottaeyo.mp3`,
-  '마시다':                 `${BASE004}/audio/audio_masida.mp3`,
-  '마실래요?':              `${BASE004}/audio/audio_masilraeyo.mp3`,
-  '마실래요':               `${BASE004}/audio/audio_masilraeyo.mp3`,
-  '커피 마실래요?':          `${BASE004}/audio/audio_keopi_masilraeyo.mp3`,
-  '커피 마실래요':           `${BASE004}/audio/audio_keopi_masilraeyo.mp3`,
-  '같이 마실래요?':          `${BASE004}/audio/audio_gachi_masilraeyo.mp3`,
-  '같이 마실래요':           `${BASE004}/audio/audio_gachi_masilraeyo.mp3`,
-  '친절해요':               `${BASE004}/audio/audio_chinjeolhaeyo.mp3`,
-  '친절한 사람들':           `${BASE004}/audio/audio_chinjeolhan_saramdeul.mp3`,
-  '많아요':                 `${BASE004}/audio/audio_maneunyo.mp3`,
-  '좋아요':                 `${BASE004}/audio/audio_joayo.mp3`,
-  '반갑습니다':             `${BASE004}/audio/audio_bangapseumnida.mp3`,
-  '저는 민수예요':           `${BASE004}/audio/audio_jeoneun_minsu_yeyo.mp3`,
-  '저는 데이비드예요':        `${BASE004}/audio/audio_jeoneun_david_ieyo.mp3`,
-  '어느 나라 사람이에요?':    `${BASE004}/audio/audio_eoneu_nara_saram_ieyo.mp3`,
-  '어느 나라 사람이에요':     `${BASE004}/audio/audio_eoneu_nara_saram_ieyo.mp3`,
-  '네, 좋아요':             `${BASE004}/audio/audio_ne_joayo.mp3`,
-  '같이 가요':              `${BASE004}/audio/audio_gachi_gayo.mp3`,
-  '대학교 좋아요':           `${BASE004}/audio/audio_daehakgyo_joayo.mp3`,
+export const KR_AUDIO_006: Record<string, string> = {
+  '새로':                   `${BASE006}/audio/audio_saero.mp3`,
+  '새로 왔어요?':            `${BASE006}/audio/audio_saero_wasseoyo.mp3`,
+  '네, 새로 왔어요':         `${BASE006}/audio/audio_ne_saero_wasseoyo.mp3`,
+  '사람':                   `${BASE006}/audio/audio_saram.mp3`,
+  '콜롬비아 사람이에요':      `${BASE006}/audio/audio_colombia_saram_ieyo.mp3`,
+  '어때요?':                `${BASE006}/audio/audio_eottaeyo.mp3`,
+  '어때요':                 `${BASE006}/audio/audio_eottaeyo.mp3`,
+  '대학교 어때요?':          `${BASE006}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '대학교 어때요':           `${BASE006}/audio/audio_daehakgyo_eottaeyo.mp3`,
+  '마시다':                 `${BASE006}/audio/audio_masida.mp3`,
+  '마실래요?':              `${BASE006}/audio/audio_masilraeyo.mp3`,
+  '마실래요':               `${BASE006}/audio/audio_masilraeyo.mp3`,
+  '커피 마실래요?':          `${BASE006}/audio/audio_keopi_masilraeyo.mp3`,
+  '커피 마실래요':           `${BASE006}/audio/audio_keopi_masilraeyo.mp3`,
+  '같이 마실래요?':          `${BASE006}/audio/audio_gachi_masilraeyo.mp3`,
+  '같이 마실래요':           `${BASE006}/audio/audio_gachi_masilraeyo.mp3`,
+  '친절해요':               `${BASE006}/audio/audio_chinjeolhaeyo.mp3`,
+  '친절한 사람들':           `${BASE006}/audio/audio_chinjeolhan_saramdeul.mp3`,
+  '많아요':                 `${BASE006}/audio/audio_maneunyo.mp3`,
+  '좋아요':                 `${BASE006}/audio/audio_joayo.mp3`,
+  '반갑습니다':             `${BASE006}/audio/audio_bangapseumnida.mp3`,
+  '저는 민수예요':           `${BASE006}/audio/audio_jeoneun_minsu_yeyo.mp3`,
+  '저는 데이비드예요':        `${BASE006}/audio/audio_jeoneun_david_ieyo.mp3`,
+  '어느 나라 사람이에요?':    `${BASE006}/audio/audio_eoneu_nara_saram_ieyo.mp3`,
+  '어느 나라 사람이에요':     `${BASE006}/audio/audio_eoneu_nara_saram_ieyo.mp3`,
+  '네, 좋아요':             `${BASE006}/audio/audio_ne_joayo.mp3`,
+  '같이 가요':              `${BASE006}/audio/audio_gachi_gayo.mp3`,
+  '대학교 좋아요':           `${BASE006}/audio/audio_daehakgyo_joayo.mp3`,
   // '이 카페 어때요?' y '커피 어때요?' no tienen archivo propio → TTS fallback intencional
-  '친절한 사람들도 많아요':   `${BASE004}/audio/audio_chinjeolhan_saramdeul.mp3`,
+  '친절한 사람들도 많아요':   `${BASE006}/audio/audio_chinjeolhan_saramdeul.mp3`,
 };
 
 // ─── STEP 005 — Rutina universitaria ─────────────────────────────────────────
-const BASE005 = '/assets/korean/step005';
+const BASE007 = '/assets/korean/step007';
 
-export const KR_IMG_005 = {
-  david_studying:    `${BASE005}/david_studying_v1.png`,
-  david_cafe:        `${BASE005}/david_cafe_working_v1.png`,
-  campus_routine:    `${BASE005}/campus_routine_v1.png`,
-  minsu_david_chat:  `${BASE005}/minsu_david_chat_v1.png`,
-  eseo_vs_e:         `${BASE005}/eseo_vs_e_diagram_v1.png`,
-  hada_verbs:        `${BASE005}/hada_verbs_v1.png`,
+export const KR_IMG_007 = {
+  david_studying:    `${BASE007}/david_studying_v1.png`,
+  david_cafe:        `${BASE007}/david_cafe_working_v1.png`,
+  campus_routine:    `${BASE007}/campus_routine_v1.png`,
+  minsu_david_chat:  `${BASE007}/minsu_david_chat_v1.png`,
+  eseo_vs_e:         `${BASE007}/eseo_vs_e_diagram_v1.png`,
+  hada_verbs:        `${BASE007}/hada_verbs_v1.png`,
 };
 
-export const KR_VIDEO_005 = `${BASE005}/video/step005.mov`;
+export const KR_VIDEO_007 = `${BASE007}/video/step007.mov`;
 
-export const KR_PODCAST_005 = `${BASE005}/audio/step005-podcast.mp3`;
+export const KR_PODCAST_007 = `${BASE007}/audio/step007-podcast.mp3`;
 
-export const KR_AUDIO_005: Record<string, string> = {
-  '한국 생활 어때요?':            `${BASE005}/audio/audio_hanguk_saenghwal_eottaeyo.mp3`,
-  '한국 생활 어때요':             `${BASE005}/audio/audio_hanguk_saenghwal_eottaeyo.mp3`,
-  '이 대학교에서 공부해요':        `${BASE005}/audio/audio_daehakgyo_eseo_gongbuhaeyo.mp3`,
-  '카페에서 일해요':              `${BASE005}/audio/audio_cafe_eseo_ilhaeyo.mp3`,
-  '한국 좋아해요':               `${BASE005}/audio/audio_hanguk_joahaeyo.mp3`,
-  '민수 씨는 뭐해요?':            `${BASE005}/audio/audio_minsu_ssi_mwohaeyo.mp3`,
-  '민수 씨는 뭐해요':             `${BASE005}/audio/audio_minsu_ssi_mwohaeyo.mp3`,
-  '저도 이 대학교에서 공부해요':   `${BASE005}/audio/audio_jeodo_daehakgyo_gongbuhaeyo.mp3`,
-  '친구들이 많아요':              `${BASE005}/audio/audio_chingudeul_maneayo.mp3`,
-  '매일 카페에 가요':             `${BASE005}/audio/audio_maeil_cafe_gayo.mp3`,
-  '생활':                       `${BASE005}/audio/audio_saenghwal.mp3`,
-  '공부해요':                    `${BASE005}/audio/audio_gongbuhaeyo.mp3`,
-  '일해요':                     `${BASE005}/audio/audio_ilhaeyo.mp3`,
-  '좋아해요':                   `${BASE005}/audio/audio_joahaeyo.mp3`,
-  '뭐해요?':                    `${BASE005}/audio/audio_mwohaeyo.mp3`,
-  '뭐해요':                     `${BASE005}/audio/audio_mwohaeyo.mp3`,
-  '매일':                       `${BASE005}/audio/audio_maeil.mp3`,
-  '에서':                       `${BASE005}/audio/audio_eseo.mp3`,
-  '에':                         `${BASE005}/audio/audio_e_particle.mp3`,
-  '친구':                       `${BASE005}/audio/audio_chingu.mp3`,
-  '친구들':                     `${BASE005}/audio/audio_chingudeul.mp3`,
-  '씨':                         `${BASE005}/audio/audio_ssi.mp3`,
-  '공부':                       `${BASE005}/audio/audio_gongbu.mp3`,
-  '일':                         `${BASE005}/audio/audio_il.mp3`,
+export const KR_AUDIO_007: Record<string, string> = {
+  '한국 생활 어때요?':            `${BASE007}/audio/audio_hanguk_saenghwal_eottaeyo.mp3`,
+  '한국 생활 어때요':             `${BASE007}/audio/audio_hanguk_saenghwal_eottaeyo.mp3`,
+  '이 대학교에서 공부해요':        `${BASE007}/audio/audio_daehakgyo_eseo_gongbuhaeyo.mp3`,
+  '카페에서 일해요':              `${BASE007}/audio/audio_cafe_eseo_ilhaeyo.mp3`,
+  '한국 좋아해요':               `${BASE007}/audio/audio_hanguk_joahaeyo.mp3`,
+  '민수 씨는 뭐해요?':            `${BASE007}/audio/audio_minsu_ssi_mwohaeyo.mp3`,
+  '민수 씨는 뭐해요':             `${BASE007}/audio/audio_minsu_ssi_mwohaeyo.mp3`,
+  '저도 이 대학교에서 공부해요':   `${BASE007}/audio/audio_jeodo_daehakgyo_gongbuhaeyo.mp3`,
+  '친구들이 많아요':              `${BASE007}/audio/audio_chingudeul_maneayo.mp3`,
+  '매일 카페에 가요':             `${BASE007}/audio/audio_maeil_cafe_gayo.mp3`,
+  '생활':                       `${BASE007}/audio/audio_saenghwal.mp3`,
+  '공부해요':                    `${BASE007}/audio/audio_gongbuhaeyo.mp3`,
+  '일해요':                     `${BASE007}/audio/audio_ilhaeyo.mp3`,
+  '좋아해요':                   `${BASE007}/audio/audio_joahaeyo.mp3`,
+  '뭐해요?':                    `${BASE007}/audio/audio_mwohaeyo.mp3`,
+  '뭐해요':                     `${BASE007}/audio/audio_mwohaeyo.mp3`,
+  '매일':                       `${BASE007}/audio/audio_maeil.mp3`,
+  '에서':                       `${BASE007}/audio/audio_eseo.mp3`,
+  '에':                         `${BASE007}/audio/audio_e_particle.mp3`,
+  '친구':                       `${BASE007}/audio/audio_chingu.mp3`,
+  '친구들':                     `${BASE007}/audio/audio_chingudeul.mp3`,
+  '씨':                         `${BASE007}/audio/audio_ssi.mp3`,
+  '공부':                       `${BASE007}/audio/audio_gongbu.mp3`,
+  '일':                         `${BASE007}/audio/audio_il.mp3`,
 };
 
 export function playAudio(text: string, rate = 1) {
   if (typeof window === 'undefined') return;
   const src =
-    KR_AUDIO_005[text] ??
-    KR_AUDIO_004[text] ??
+    KR_AUDIO_007[text] ??
+    KR_AUDIO_006[text] ??
     KR_AUDIO_003[text] ??
     KR_AUDIO_002[text] ??
     (KR_AUDIO as Record<string, string>)[text];

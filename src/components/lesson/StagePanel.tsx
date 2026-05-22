@@ -41,31 +41,31 @@ const ReactiveInteraction002 = dynamic(() => import('./stages/step002/ReactiveIn
 const SmartReview002         = dynamic(() => import('./stages/step002/SmartReview002'),         { ssr: false });
 const Completion002          = dynamic(() => import('./stages/step002/Completion002'),          { ssr: false });
 
-// ── Day 4 stages ──────────────────────────────────────────────────────────────
-const Activation004          = dynamic(() => import('./stages/step004/Activation004'),          { ssr: false });
-const AcquisitionGuided004   = dynamic(() => import('./stages/step004/AcquisitionGuided004'),   { ssr: false });
-const Recognition004         = dynamic(() => import('./stages/step004/Recognition004'),          { ssr: false });
-const ListeningSurvivable004 = dynamic(() => import('./stages/step004/ListeningSurvivable004'), { ssr: false });
-const ContextualInput004     = dynamic(() => import('./stages/step004/ContextualInput004'),     { ssr: false });
-const GuidedDiscovery004     = dynamic(() => import('./stages/step004/GuidedDiscovery004'),     { ssr: false });
-const MicroExplanation004    = dynamic(() => import('./stages/step004/MicroExplanation004'),    { ssr: false });
-const GuidedProduction004    = dynamic(() => import('./stages/step004/GuidedProduction004'),    { ssr: false });
-const ReactiveInteraction004 = dynamic(() => import('./stages/step004/ReactiveInteraction004'), { ssr: false });
-const SmartReview004         = dynamic(() => import('./stages/step004/SmartReview004'),         { ssr: false });
-const Completion004          = dynamic(() => import('./stages/step004/Completion004'),          { ssr: false });
+// ── Day 6 stages (ex-Day 4) ───────────────────────────────────────────────────
+const Activation006          = dynamic(() => import('./stages/step006/Activation006'),          { ssr: false });
+const AcquisitionGuided006   = dynamic(() => import('./stages/step006/AcquisitionGuided006'),   { ssr: false });
+const Recognition006         = dynamic(() => import('./stages/step006/Recognition006'),          { ssr: false });
+const ListeningSurvivable006 = dynamic(() => import('./stages/step006/ListeningSurvivable006'), { ssr: false });
+const ContextualInput006     = dynamic(() => import('./stages/step006/ContextualInput006'),     { ssr: false });
+const GuidedDiscovery006     = dynamic(() => import('./stages/step006/GuidedDiscovery006'),     { ssr: false });
+const MicroExplanation006    = dynamic(() => import('./stages/step006/MicroExplanation006'),    { ssr: false });
+const GuidedProduction006    = dynamic(() => import('./stages/step006/GuidedProduction006'),    { ssr: false });
+const ReactiveInteraction006 = dynamic(() => import('./stages/step006/ReactiveInteraction006'), { ssr: false });
+const SmartReview006         = dynamic(() => import('./stages/step006/SmartReview006'),         { ssr: false });
+const Completion006          = dynamic(() => import('./stages/step006/Completion006'),          { ssr: false });
 
-// ── Day 5 stages ──────────────────────────────────────────────────────────────
-const Activation005          = dynamic(() => import('./stages/step005/Activation005'),          { ssr: false });
-const AcquisitionGuided005   = dynamic(() => import('./stages/step005/AcquisitionGuided005'),   { ssr: false });
-const Recognition005         = dynamic(() => import('./stages/step005/Recognition005'),          { ssr: false });
-const ListeningSurvivable005 = dynamic(() => import('./stages/step005/ListeningSurvivable005'), { ssr: false });
-const ContextualInput005     = dynamic(() => import('./stages/step005/ContextualInput005'),     { ssr: false });
-const GuidedDiscovery005     = dynamic(() => import('./stages/step005/GuidedDiscovery005'),     { ssr: false });
-const MicroExplanation005    = dynamic(() => import('./stages/step005/MicroExplanation005'),    { ssr: false });
-const GuidedProduction005    = dynamic(() => import('./stages/step005/GuidedProduction005'),    { ssr: false });
-const ReactiveInteraction005 = dynamic(() => import('./stages/step005/ReactiveInteraction005'), { ssr: false });
-const SmartReview005         = dynamic(() => import('./stages/step005/SmartReview005'),         { ssr: false });
-const Completion005          = dynamic(() => import('./stages/step005/Completion005'),          { ssr: false });
+// ── Day 7 stages (ex-Day 5) ───────────────────────────────────────────────────
+const Activation007          = dynamic(() => import('./stages/step007/Activation007'),          { ssr: false });
+const AcquisitionGuided007   = dynamic(() => import('./stages/step007/AcquisitionGuided007'),   { ssr: false });
+const Recognition007         = dynamic(() => import('./stages/step007/Recognition007'),          { ssr: false });
+const ListeningSurvivable007 = dynamic(() => import('./stages/step007/ListeningSurvivable007'), { ssr: false });
+const ContextualInput007     = dynamic(() => import('./stages/step007/ContextualInput007'),     { ssr: false });
+const GuidedDiscovery007     = dynamic(() => import('./stages/step007/GuidedDiscovery007'),     { ssr: false });
+const MicroExplanation007    = dynamic(() => import('./stages/step007/MicroExplanation007'),    { ssr: false });
+const GuidedProduction007    = dynamic(() => import('./stages/step007/GuidedProduction007'),    { ssr: false });
+const ReactiveInteraction007 = dynamic(() => import('./stages/step007/ReactiveInteraction007'), { ssr: false });
+const SmartReview007         = dynamic(() => import('./stages/step007/SmartReview007'),         { ssr: false });
+const Completion007          = dynamic(() => import('./stages/step007/Completion007'),          { ssr: false });
 
 const COMPONENTS_DAY1 = [
   Activation, AcquisitionGuided, Recognition, ListeningSurvivable,
@@ -85,16 +85,16 @@ const COMPONENTS_DAY3 = [
   ReactiveInteraction003, SmartReview003, Completion003,
 ];
 
-const COMPONENTS_DAY4 = [
-  Activation004, AcquisitionGuided004, Recognition004, ListeningSurvivable004,
-  ContextualInput004, GuidedDiscovery004, MicroExplanation004, GuidedProduction004,
-  ReactiveInteraction004, SmartReview004, Completion004,
+const COMPONENTS_DAY6 = [
+  Activation006, AcquisitionGuided006, Recognition006, ListeningSurvivable006,
+  ContextualInput006, GuidedDiscovery006, MicroExplanation006, GuidedProduction006,
+  ReactiveInteraction006, SmartReview006, Completion006,
 ];
 
-const COMPONENTS_DAY5 = [
-  Activation005, AcquisitionGuided005, Recognition005, ListeningSurvivable005,
-  ContextualInput005, GuidedDiscovery005, MicroExplanation005, GuidedProduction005,
-  ReactiveInteraction005, SmartReview005, Completion005,
+const COMPONENTS_DAY7 = [
+  Activation007, AcquisitionGuided007, Recognition007, ListeningSurvivable007,
+  ContextualInput007, GuidedDiscovery007, MicroExplanation007, GuidedProduction007,
+  ReactiveInteraction007, SmartReview007, Completion007,
 ];
 
 const STAGE_NAMES = [
@@ -110,7 +110,13 @@ interface StagePanelProps {
 }
 
 export default function StagePanel({ stageIndex, dayNumber = 1, onComplete }: StagePanelProps) {
-  const components = dayNumber === 5 ? COMPONENTS_DAY5 : dayNumber === 4 ? COMPONENTS_DAY4 : dayNumber === 3 ? COMPONENTS_DAY3 : dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
+  const components =
+    dayNumber === 7 ? COMPONENTS_DAY7 :
+    dayNumber === 6 ? COMPONENTS_DAY6 :
+    dayNumber === 3 ? COMPONENTS_DAY3 :
+    dayNumber === 2 ? COMPONENTS_DAY2 :
+    COMPONENTS_DAY1;
+  // Note: days 4 and 5 will be wired once step004/step005 components are built
   const StageComponent = components[stageIndex];
 
   if (!StageComponent) {
