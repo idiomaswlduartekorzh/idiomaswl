@@ -54,6 +54,19 @@ const ReactiveInteraction004 = dynamic(() => import('./stages/step004/ReactiveIn
 const SmartReview004         = dynamic(() => import('./stages/step004/SmartReview004'),         { ssr: false });
 const Completion004          = dynamic(() => import('./stages/step004/Completion004'),          { ssr: false });
 
+// ── Day 5 stages ──────────────────────────────────────────────────────────────
+const Activation005          = dynamic(() => import('./stages/step005/Activation005'),          { ssr: false });
+const AcquisitionGuided005   = dynamic(() => import('./stages/step005/AcquisitionGuided005'),   { ssr: false });
+const Recognition005         = dynamic(() => import('./stages/step005/Recognition005'),          { ssr: false });
+const ListeningSurvivable005 = dynamic(() => import('./stages/step005/ListeningSurvivable005'), { ssr: false });
+const ContextualInput005     = dynamic(() => import('./stages/step005/ContextualInput005'),     { ssr: false });
+const GuidedDiscovery005     = dynamic(() => import('./stages/step005/GuidedDiscovery005'),     { ssr: false });
+const MicroExplanation005    = dynamic(() => import('./stages/step005/MicroExplanation005'),    { ssr: false });
+const GuidedProduction005    = dynamic(() => import('./stages/step005/GuidedProduction005'),    { ssr: false });
+const ReactiveInteraction005 = dynamic(() => import('./stages/step005/ReactiveInteraction005'), { ssr: false });
+const SmartReview005         = dynamic(() => import('./stages/step005/SmartReview005'),         { ssr: false });
+const Completion005          = dynamic(() => import('./stages/step005/Completion005'),          { ssr: false });
+
 const COMPONENTS_DAY1 = [
   Activation, AcquisitionGuided, Recognition, ListeningSurvivable,
   ContextualInput, GuidedDiscovery, MicroExplanation, GuidedProduction,
@@ -78,6 +91,12 @@ const COMPONENTS_DAY4 = [
   ReactiveInteraction004, SmartReview004, Completion004,
 ];
 
+const COMPONENTS_DAY5 = [
+  Activation005, AcquisitionGuided005, Recognition005, ListeningSurvivable005,
+  ContextualInput005, GuidedDiscovery005, MicroExplanation005, GuidedProduction005,
+  ReactiveInteraction005, SmartReview005, Completion005,
+];
+
 const STAGE_NAMES = [
   'Activación', 'Adquisición guiada', 'Reconocimiento', 'Escucha sobrevivible',
   'Contexto primero', 'Descubre el patrón', 'Micro explicación', 'Producción guiada',
@@ -91,7 +110,7 @@ interface StagePanelProps {
 }
 
 export default function StagePanel({ stageIndex, dayNumber = 1, onComplete }: StagePanelProps) {
-  const components = dayNumber === 4 ? COMPONENTS_DAY4 : dayNumber === 3 ? COMPONENTS_DAY3 : dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
+  const components = dayNumber === 5 ? COMPONENTS_DAY5 : dayNumber === 4 ? COMPONENTS_DAY4 : dayNumber === 3 ? COMPONENTS_DAY3 : dayNumber === 2 ? COMPONENTS_DAY2 : COMPONENTS_DAY1;
   const StageComponent = components[stageIndex];
 
   if (!StageComponent) {
