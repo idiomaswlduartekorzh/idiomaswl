@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
+import HeroLangSelector from './HeroLangSelector';
 import {
   FadeUp, StaggerGrid, StaggerItem,
   HeroLeft, HeroItem, HeroCard,
@@ -110,27 +111,7 @@ export default function HomePage() {
         </HeroLeft>
 
         <HeroCard>
-          <div className="wlh-lesson-preview">
-            <div className="wlh-lesson-preview__header">
-              <span>Coreano · Día 1 · Paso 01</span>
-              <span>Activación</span>
-            </div>
-            <div className="wlh-lesson-preview__word">
-              <span className="wlh-lesson-preview__native">학교</span>
-              <span className="wlh-lesson-preview__rom">hak-kyo · escuela</span>
-            </div>
-            <div className="wlh-lesson-preview__opts">
-              <button className="wlh-lesson-opt wlh-lesson-opt--selected">escuela</button>
-              <button className="wlh-lesson-opt">casa</button>
-              <button className="wlh-lesson-opt">libro</button>
-              <button className="wlh-lesson-opt">tiempo</button>
-            </div>
-            <div className="wlh-lesson-preview__dots">
-              {Array.from({ length: 11 }).map((_, i) => (
-                <span key={i} className={`wlh-dot${i < 3 ? ' wlh-dot--done' : ''}`} />
-              ))}
-            </div>
-          </div>
+          <HeroLangSelector />
         </HeroCard>
       </section>
 
@@ -316,59 +297,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PRECIOS */}
+      {/* PRECIOS — teaser, sin duplicar la página /precios */}
       <section id="precios" className="wlh-section wlh-section--alt">
-        <div className="wrap">
+        <div className="wrap" style={{ textAlign: 'center' }}>
           <FadeUp>
             <p className="wlh-section-eyebrow">07 — Precios</p>
-            <h2 className="wlh-section-h2">Un plan por idioma. Sin truco.</h2>
+            <h2 className="wlh-section-h2">Desde $50.000 / mes.</h2>
+            <p className="wlh-section-desc" style={{ maxWidth: 520, margin: '0 auto 2rem' }}>
+              Simulacros, retroalimentación y tutorías en vivo. Un precio único para todos los idiomas y exámenes. Sin letra pequeña.
+            </p>
+            <Link href="/precios" className="btn">Ver planes y precios →</Link>
           </FadeUp>
-          <StaggerGrid className="wlh-pricing-grid">
-            <StaggerItem>
-              <div className="wlh-price-card">
-                <p className="wlh-price-card__tier">Free</p>
-                <h3 className="wlh-price-card__name">Prueba</h3>
-                <p className="wlh-price-card__price">/ siempre</p>
-                <p className="wlh-price-card__desc">Conoce la plataforma antes de comprometerte.</p>
-                <ul className="wlh-price-card__features">
-                  <li>Paso 1 gratis por idioma</li>
-                  <li>Demo de un examen internacional</li>
-                  <li>Sin tarjeta</li>
-                </ul>
-                <Link href="/registro" className="btn btn-ghost" style={{ width: '100%', display: 'block', textAlign: 'center' }}>Crear cuenta</Link>
-              </div>
-            </StaggerItem>
-            <StaggerItem>
-              <div className="wlh-price-card wlh-price-card--featured">
-                <p className="wlh-price-card__tier">Más popular</p>
-                <h3 className="wlh-price-card__name">Idioma completo</h3>
-                <p className="wlh-price-card__price"><strong>$19</strong> / mes</p>
-                <p className="wlh-price-card__desc">Ruta diaria completa con repaso espaciado y práctica guiada.</p>
-                <ul className="wlh-price-card__features">
-                  <li>11 pasos diarios</li>
-                  <li>Repaso automático</li>
-                  <li>Examen semanal</li>
-                  <li>Progreso detallado</li>
-                </ul>
-                <Link href="/registro" className="btn" style={{ width: '100%', display: 'block', textAlign: 'center' }}>Empezar idioma</Link>
-              </div>
-            </StaggerItem>
-            <StaggerItem>
-              <div className="wlh-price-card">
-                <p className="wlh-price-card__tier">Plus</p>
-                <h3 className="wlh-price-card__name">Todos los idiomas</h3>
-                <p className="wlh-price-card__price"><strong>$39</strong> / mes</p>
-                <p className="wlh-price-card__desc">Para preparar múltiples idiomas y certificaciones.</p>
-                <ul className="wlh-price-card__features">
-                  <li>8 idiomas completos</li>
-                  <li>6 rutas de examen</li>
-                  <li>Simulacros ilimitados</li>
-                  <li>Acompañamiento docente</li>
-                </ul>
-                <button className="btn btn-ghost" style={{ width: '100%' }}>Hablar con ventas</button>
-              </div>
-            </StaggerItem>
-          </StaggerGrid>
         </div>
       </section>
 

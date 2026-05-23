@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { label: 'Exámenes',  href: '/examenes' },
   { label: 'Lección',   href: '/leccion' },
   { label: 'Práctica',   href: '/practica' },
-  { label: 'Precios',   href: '/home#precios' },
+  { label: 'Precios',   href: '/precios' },
 ];
 
 function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
@@ -121,6 +121,8 @@ export default function SiteNav() {
               ? pathname === '/leccion'
               : href === '/practica'
               ? pathname === '/practica'
+              : href === '/precios'
+              ? pathname === '/precios'
               : pathname === '/home';
             return (
               <Link

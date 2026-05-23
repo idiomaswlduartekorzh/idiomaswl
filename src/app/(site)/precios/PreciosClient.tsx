@@ -1,0 +1,283 @@
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+
+const LANGUAGES = [
+  { slug: 'ingles',    flag: '🇬🇧', name: 'Inglés',    exams: ['IELTS', 'TOEFL iBT', 'ICFES'] },
+  { slug: 'coreano',   flag: '🇰🇷', name: 'Coreano',   exams: ['TOPIK I', 'TOPIK II'] },
+  { slug: 'frances',   flag: '🇫🇷', name: 'Francés',   exams: ['DELF A1–B2', 'DALF C1–C2'] },
+  { slug: 'aleman',    flag: '🇩🇪', name: 'Alemán',    exams: ['Goethe A1', 'Goethe B1', 'Goethe C1'] },
+  { slug: 'italiano',  flag: '🇮🇹', name: 'Italiano',  exams: ['CILS', 'CELI'] },
+  { slug: 'portugues', flag: '🇧🇷', name: 'Portugués', exams: ['CELPE-Bras'] },
+];
+
+function formatCOP(n: number) {
+  return '$' + n.toLocaleString('es-CO');
+}
+
+export default function PreciosClient() {
+  const [lang, setLang] = useState(LANGUAGES[0]);
+  const [sessions, setSessions] = useState<2 | 4>(2);
+  const [annual, setAnnual] = useState(false);
+
+  const multiply = annual ? 10 : 12;
+  const priceFor = (monthly: number) =>
+    annual
+      ? Math.round((monthly * 10) / 12)
+      : monthly;
+
+  return (
+    <main className="wlp-page">
+      <div className="wrap">
+
+        {/* ── Header ── */}
+        <div className="wlp-header">
+          <p className="wlh-section-eyebrow" style={{ textAlign: 'center' }}>Precios</p>
+          <h1 className="wlp-h1">Un plan. Cualquier idioma.</h1>
+          <p className="wlp-subtitle">
+            Precios únicos para todos los idiomas y exámenes. Sin letra pequeña.
+          </p>
+
+          {/* Billing toggle */}
+          <div className="wlp-billing-toggle">
+            <button
+              className={`wlp-billing-btn${!annual ? ' is-active' : ''}`}
+              onClick={() => setAnnual(false)}
+            >
+              Mensual
+            </button>
+            <button
+              className={`wlp-billing-btn${annual ? ' is-active' : ''}`}
+              onClick={() => setAnnual(true)}
+            >
+              Anual
+              <span className="wlp-billing-badge">2 meses gratis</span>
+            </button>
+          </div>
+        </div>
+
+        {/* ── Language tabs ── */}
+        <div className="wlp-lang-tabs" role="tablist" aria-label="Idioma">
+          {LANGUAGES.map(l => (
+            <button
+              key={l.slug}
+              role="tab"
+              aria-selected={lang.slug === l.slug}
+              className={`wlp-lang-tab${lang.slug === l.slug ? ' is-active' : ''}`}
+              onClick={() => setLang(l)}
+            >
+              <span className="wlp-lang-tab__flag">{l.flag}</span>
+              <span className="wlp-lang-tab__name">{l.name}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* ── Exam chips ── */}
+        <div className="wlp-exam-chips">
+          <span className="wlp-exam-chips__label">Exámenes incluidos:</span>
+          {lang.exams.map(ex => (
+            <span key={ex} className="wlp-exam-chip">{ex}</span>
+          ))}
+        </div>
+
+        {/* ── Plans grid ── */}
+        <div className="wlp-plans-grid">
+
+          {/* AUTODIDACTA */}
+          <div className="wlp-plan-card">
+            <div className="wlp-plan-card__top">
+              <span className="wlp-plan-card__tier">Para empezar</span>
+              <h2 className="wlp-plan-card__name">Autodidacta</h2>
+              <div className="wlp-plan-card__price-row">
+                <span className="wlp-plan-card__price">{formatCOP(priceFor(50000))}</span>
+                <span className="wlp-plan-card__cadence">/ mes</span>
+              </div>
+              {annual && (
+                <p className="wlp-plan-card__annual-note">
+                  {formatCOP(50000 * 10)} facturado anualmente
+                </p>
+              )}
+              <p className="wlp-plan-card__desc">
+                Practica solo, a tu ritmo. Acceso completo al banco de simulacros de {lang.name}.
+              </p>
+            </div>
+            <ul className="wlp-plan-card__features">
+              <li className="is-included">Simulacros ilimitados de {lang.exams[0]}</li>
+              <li className="is-included">Banco de +500 preguntas reales</li>
+              <li className="is-included">Resultados automáticos por sección</li>
+              <li className="is-included">Acceso a todos los simulacros del examen</li>
+              <li className="is-excluded">Retroalimentación docente</li>
+              <li className="is-excluded">Material educativo</li>
+              <li className="is-excluded">Sesiones en vivo con tutor</li>
+            </ul>
+            <Link href="/registro" className="btn btn-ghost wlp-plan-card__cta">
+              Empezar ahora
+            </Link>
+          </div>
+
+          {/* PREPARACIÓN — featured */}
+          <div className="wlp-plan-card wlp-plan-card--featured">
+            <div className="wlp-plan-card__top">
+              <span className="wlp-plan-card__tier wlp-plan-card__tier--accent">Más popular</span>
+              <h2 className="wlp-plan-card__name">Preparación</h2>
+              <div className="wlp-plan-card__price-row">
+                <span className="wlp-plan-card__price">{formatCOP(priceFor(80000))}</span>
+                <span className="wlp-plan-card__cadence">/ mes</span>
+              </div>
+              {annual && (
+                <p className="wlp-plan-card__annual-note">
+                  {formatCOP(80000 * 10)} facturado anualmente
+                </p>
+              )}
+              <p className="wlp-plan-card__desc">
+                Practica con corrección real. Sabe exactamente dónde mejorar en {lang.exams[0]}.
+              </p>
+            </div>
+            <ul className="wlp-plan-card__features">
+              <li className="is-included">Todo lo de Autodidacta</li>
+              <li className="is-included">Feedback escrito por cada sección</li>
+              <li className="is-included">Informe de errores personalizado</li>
+              <li className="is-included">Material de preparación para {lang.exams[0]}</li>
+              <li className="is-included">Chat con tutor (respuesta en 24 h)</li>
+              <li className="is-excluded">Sesiones en vivo con tutor</li>
+              <li className="is-excluded">Plan de estudio personalizado</li>
+            </ul>
+            <Link href="/registro" className="btn wlp-plan-card__cta">
+              Empezar ahora
+            </Link>
+          </div>
+
+          {/* INTENSIVO */}
+          <div className="wlp-plan-card">
+            <div className="wlp-plan-card__top">
+              <span className="wlp-plan-card__tier">Con acompañamiento</span>
+              <h2 className="wlp-plan-card__name">Intensivo</h2>
+
+              {/* Session toggle */}
+              <div className="wlp-session-toggle">
+                <button
+                  className={`wlp-session-btn${sessions === 2 ? ' is-active' : ''}`}
+                  onClick={() => setSessions(2)}
+                >
+                  2 sesiones / sem
+                </button>
+                <button
+                  className={`wlp-session-btn${sessions === 4 ? ' is-active' : ''}`}
+                  onClick={() => setSessions(4)}
+                >
+                  4 sesiones / sem
+                </button>
+              </div>
+
+              <div className="wlp-plan-card__price-row">
+                <span className="wlp-plan-card__price">
+                  {formatCOP(priceFor(sessions === 2 ? 300000 : 400000))}
+                </span>
+                <span className="wlp-plan-card__cadence">/ mes</span>
+              </div>
+              {annual && (
+                <p className="wlp-plan-card__annual-note">
+                  {formatCOP((sessions === 2 ? 300000 : 400000) * 10)} facturado anualmente
+                </p>
+              )}
+              <p className="wlp-plan-card__desc">
+                Preparación guiada de principio a fin con tutor asignado para {lang.name}.
+              </p>
+            </div>
+            <ul className="wlp-plan-card__features">
+              <li className="is-included">Todo lo de Preparación</li>
+              <li className="is-included">Material educativo exclusivo</li>
+              <li className="is-included">{sessions === 2 ? '2' : '4'} sesiones semanales en vivo</li>
+              <li className="is-included">Plan de estudio personalizado</li>
+              <li className="is-included">Evaluación mensual de progreso</li>
+              <li className="is-included">Tutor asignado para {lang.name}</li>
+              <li className="is-included wlp-feature--limited">Cupos limitados · Inicio próxima semana</li>
+            </ul>
+            <Link href="/registro" className="btn btn-ghost wlp-plan-card__cta">
+              Reservar cupo
+            </Link>
+          </div>
+
+        </div>
+
+        {/* ── Footer note ── */}
+        <p className="wlp-footer-note">
+          Todos los planes incluyen <strong>3 días de prueba gratis</strong> · Sin tarjeta de crédito · Cancela cuando quieras
+        </p>
+
+        {/* ── Comparison table ── */}
+        <CompareTable lang={lang.name} exam={lang.exams[0]} sessions={sessions} annual={annual} />
+
+      </div>
+    </main>
+  );
+}
+
+function CompareTable({ lang, exam, sessions, annual }: { lang: string; exam: string; sessions: 2 | 4; annual: boolean }) {
+  const [open, setOpen] = useState(false);
+  const p = (n: number) => annual ? Math.round(n * 10 / 12) : n;
+
+  const rows: { label: string; auto: string | boolean; prep: string | boolean; int: string | boolean }[] = [
+    { label: 'Simulacros ilimitados',              auto: true,  prep: true,  int: true  },
+    { label: 'Banco de preguntas reales',           auto: true,  prep: true,  int: true  },
+    { label: 'Resultados automáticos',              auto: true,  prep: true,  int: true  },
+    { label: 'Feedback escrito por sección',        auto: false, prep: true,  int: true  },
+    { label: 'Informe de errores',                  auto: false, prep: true,  int: true  },
+    { label: `Material de prep. ${exam}`,           auto: false, prep: true,  int: true  },
+    { label: 'Chat con tutor (24 h)',               auto: false, prep: true,  int: true  },
+    { label: 'Material educativo exclusivo',        auto: false, prep: false, int: true  },
+    { label: `Sesiones en vivo (${sessions}/sem)`,  auto: false, prep: false, int: true  },
+    { label: 'Plan de estudio personalizado',       auto: false, prep: false, int: true  },
+    { label: 'Evaluación mensual de progreso',      auto: false, prep: false, int: true  },
+    { label: 'Tutor asignado',                      auto: false, prep: false, int: true  },
+  ];
+
+  return (
+    <div className="wlp-compare">
+      <button className="wlp-compare__toggle" onClick={() => setOpen(o => !o)}>
+        {open ? 'Ocultar' : 'Ver'} comparación completa {open ? '↑' : '↓'}
+      </button>
+      {open && (
+        <div className="wlp-compare__table-wrap">
+          <table className="wlp-compare__table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>
+                  <span className="wlp-compare__plan-name">Autodidacta</span>
+                  <span className="wlp-compare__plan-price">{('$' + p(50000).toLocaleString('es-CO'))}/mes</span>
+                </th>
+                <th className="is-featured">
+                  <span className="wlp-compare__plan-name">Preparación</span>
+                  <span className="wlp-compare__plan-price">{('$' + p(80000).toLocaleString('es-CO'))}/mes</span>
+                </th>
+                <th>
+                  <span className="wlp-compare__plan-name">Intensivo</span>
+                  <span className="wlp-compare__plan-price">{('$' + p(sessions === 2 ? 300000 : 400000).toLocaleString('es-CO'))}/mes</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(row => (
+                <tr key={row.label}>
+                  <td className="wlp-compare__feature">{row.label}</td>
+                  <td className="wlp-compare__cell">{row.auto ? <Check /> : <Dash />}</td>
+                  <td className="wlp-compare__cell is-featured">{row.prep ? <Check /> : <Dash />}</td>
+                  <td className="wlp-compare__cell">{row.int ? <Check /> : <Dash />}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Check() {
+  return <span className="wlp-check" aria-label="Incluido">✓</span>;
+}
+function Dash() {
+  return <span className="wlp-dash" aria-label="No incluido">—</span>;
+}
