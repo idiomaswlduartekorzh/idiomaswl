@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+  <rect width="680" height="400" fill="#fafafa" rx="8"/>
+  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Unemployment Rates in Three Countries — 2008 to 2022 (%)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="50" x2="80" y2="320" stroke="#374151" stroke-width="2"/>
+  <line x1="80" y1="320" x2="640" y2="320" stroke="#374151" stroke-width="2"/>
+
+  <!-- Y-axis labels (0–25%) scale: 270px / 25 = 10.8px per % -->
+  <text x="72" y="324" text-anchor="end" font-size="10" fill="#666">0%</text>
+  <text x="72" y="270" text-anchor="end" font-size="10" fill="#666">5%</text>
+  <text x="72" y="216" text-anchor="end" font-size="10" fill="#666">10%</text>
+  <text x="72" y="162" text-anchor="end" font-size="10" fill="#666">15%</text>
+  <text x="72" y="108" text-anchor="end" font-size="10" fill="#666">20%</text>
+  <text x="72" y="54" text-anchor="end" font-size="10" fill="#666">25%</text>
+
+  <!-- Y gridlines -->
+  <line x1="80" y1="270" x2="640" y2="270" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="80" y1="216" x2="640" y2="216" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="80" y1="162" x2="640" y2="162" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="80" y1="108" x2="640" y2="108" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- X-axis labels: 2008–2022, every 2 years = 8 points, 560px total, step = 80px -->
+  <text x="80"  y="335" text-anchor="middle" font-size="10" fill="#666">2008</text>
+  <text x="160" y="335" text-anchor="middle" font-size="10" fill="#666">2010</text>
+  <text x="240" y="335" text-anchor="middle" font-size="10" fill="#666">2012</text>
+  <text x="320" y="335" text-anchor="middle" font-size="10" fill="#666">2014</text>
+  <text x="400" y="335" text-anchor="middle" font-size="10" fill="#666">2016</text>
+  <text x="480" y="335" text-anchor="middle" font-size="10" fill="#666">2018</text>
+  <text x="560" y="335" text-anchor="middle" font-size="10" fill="#666">2020</text>
+  <text x="640" y="335" text-anchor="middle" font-size="10" fill="#666">2022</text>
+
+  <!-- Scale: y = 320 - val*10.8 -->
+  <!-- Spain: 2008=11, 2010=20, 2012=25, 2014=24, 2016=20, 2018=15, 2020=16, 2022=13 -->
+  <polyline points="80,201 160,104 240,50 320,61 400,104 480,158 560,147 640,180"
+    fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Germany: 2008=7.5, 2010=7, 2012=5.5, 2014=5, 2016=4, 2018=3.5, 2020=4.5, 2022=3 -->
+  <polyline points="80,239 160,244 240,261 320,266 400,277 480,282 560,271 640,288"
+    fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Brazil: 2008=8, 2010=7, 2012=6, 2014=5, 2016=12, 2018=13, 2020=14, 2022=9.5 -->
+  <polyline points="80,234 160,244 240,255 320,266 400,190 480,180 560,169 640,217"
+    fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Data points Spain -->
+  <circle cx="80"  cy="201" r="4" fill="#ef4444"/>
+  <circle cx="160" cy="104" r="4" fill="#ef4444"/>
+  <circle cx="240" cy="50"  r="4" fill="#ef4444"/>
+  <circle cx="320" cy="61"  r="4" fill="#ef4444"/>
+  <circle cx="400" cy="104" r="4" fill="#ef4444"/>
+  <circle cx="480" cy="158" r="4" fill="#ef4444"/>
+  <circle cx="560" cy="147" r="4" fill="#ef4444"/>
+  <circle cx="640" cy="180" r="4" fill="#ef4444"/>
+
+  <!-- Data points Germany -->
+  <circle cx="80"  cy="239" r="4" fill="#2563eb"/>
+  <circle cx="160" cy="244" r="4" fill="#2563eb"/>
+  <circle cx="240" cy="261" r="4" fill="#2563eb"/>
+  <circle cx="320" cy="266" r="4" fill="#2563eb"/>
+  <circle cx="400" cy="277" r="4" fill="#2563eb"/>
+  <circle cx="480" cy="282" r="4" fill="#2563eb"/>
+  <circle cx="560" cy="271" r="4" fill="#2563eb"/>
+  <circle cx="640" cy="288" r="4" fill="#2563eb"/>
+
+  <!-- Data points Brazil -->
+  <circle cx="80"  cy="234" r="4" fill="#16a34a"/>
+  <circle cx="160" cy="244" r="4" fill="#16a34a"/>
+  <circle cx="240" cy="255" r="4" fill="#16a34a"/>
+  <circle cx="320" cy="266" r="4" fill="#16a34a"/>
+  <circle cx="400" cy="190" r="4" fill="#16a34a"/>
+  <circle cx="480" cy="180" r="4" fill="#16a34a"/>
+  <circle cx="560" cy="169" r="4" fill="#16a34a"/>
+  <circle cx="640" cy="217" r="4" fill="#16a34a"/>
+
+  <!-- Y-axis title -->
+  <text transform="rotate(-90)" x="-185" y="18" text-anchor="middle" font-size="11" fill="#374151">Unemployment rate (%)</text>
+
+  <!-- Legend -->
+  <line x1="170" y1="373" x2="198" y2="373" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="184" cy="373" r="4" fill="#ef4444"/>
+  <text x="202" y="377" font-size="11" fill="#333">Spain</text>
+
+  <line x1="270" y1="373" x2="298" y2="373" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="284" cy="373" r="4" fill="#2563eb"/>
+  <text x="302" y="377" font-size="11" fill="#333">Germany</text>
+
+  <line x1="380" y1="373" x2="408" y2="373" stroke="#16a34a" stroke-width="2.5"/>
+  <circle cx="394" cy="373" r="4" fill="#16a34a"/>
+  <text x="412" y="377" font-size="11" fill="#333">Brazil</text>
+</svg>

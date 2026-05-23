@@ -170,15 +170,17 @@ function interpretScore(slug: string, pct: number): { level: string; desc: strin
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-export function ExamReport({ data, onRetry, backHref }: {
+export function ExamReport({ data, onRetry, backHref, skipSave }: {
   data: ExamReportData;
   onRetry?: () => void;
   backHref?: string;
+  skipSave?: boolean;
 }) {
   useEffect(() => {
+    if (skipSave) return;
     saveExamResult(data).catch(() => {/* silently ignore save failures */});
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [skipSave]);
 
   const accent = data.accentColor ?? '#c8202e';
   const pct = data.totalMax > 0 ? data.totalScore / data.totalMax : 0;

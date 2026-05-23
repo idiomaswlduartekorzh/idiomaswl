@@ -142,6 +142,7 @@ export interface MockSection {
   passage?: string;
   transcript?: string;
   audioUrl?: string;       // URL to audio file (if available)
+  comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
 }
 

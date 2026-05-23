@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+  <!-- Background -->
+  <rect width="680" height="400" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">CO₂ Emissions per Capita by Sector — Germany and UK (2000 vs 2020)</text>
+
+  <!-- Y axis label -->
+  <text x="18" y="220" text-anchor="middle" font-size="11" fill="#666" transform="rotate(-90,18,220)">Metric tons per capita</text>
+
+  <!-- Grid lines + Y labels -->
+  <line x1="80" y1="50" x2="80" y2="330" stroke="#ccc" stroke-width="1"/>
+  <line x1="80" y1="330" x2="640" y2="330" stroke="#ccc" stroke-width="1"/>
+  <line x1="80" y1="274" x2="640" y2="274" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="80" y1="218" x2="640" y2="218" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="80" y1="162" x2="640" y2="162" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="80" y1="106" x2="640" y2="106" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="80" y1="50" x2="640" y2="50" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <text x="74" y="334" text-anchor="end" font-size="10" fill="#666">0</text>
+  <text x="74" y="278" text-anchor="end" font-size="10" fill="#666">1</text>
+  <text x="74" y="222" text-anchor="end" font-size="10" fill="#666">2</text>
+  <text x="74" y="166" text-anchor="end" font-size="10" fill="#666">3</text>
+  <text x="74" y="110" text-anchor="end" font-size="10" fill="#666">4</text>
+  <text x="74" y="54" text-anchor="end" font-size="10" fill="#666">5</text>
+
+  <!-- Sector labels -->
+  <text x="175" y="355" text-anchor="middle" font-size="11" fill="#333">Transport</text>
+  <text x="315" y="355" text-anchor="middle" font-size="11" fill="#333">Industry</text>
+  <text x="455" y="355" text-anchor="middle" font-size="11" fill="#333">Heating</text>
+  <text x="595" y="355" text-anchor="middle" font-size="11" fill="#333">Electricity</text>
+
+  <!-- Legend -->
+  <rect x="82" y="370" width="14" height="10" fill="#2563eb" rx="2"/>
+  <text x="100" y="379" font-size="11" fill="#333">Germany 2000</text>
+  <rect x="202" y="370" width="14" height="10" fill="#93c5fd" rx="2"/>
+  <text x="220" y="379" font-size="11" fill="#333">Germany 2020</text>
+  <rect x="335" y="370" width="14" height="10" fill="#c8202e" rx="2"/>
+  <text x="353" y="379" font-size="11" fill="#333">UK 2000</text>
+  <rect x="417" y="370" width="14" height="10" fill="#fca5a5" rx="2"/>
+  <text x="435" y="379" font-size="11" fill="#333">UK 2020</text>
+
+  <!-- Transport: DE 2000=2.8, DE 2020=2.2, UK 2000=2.6, UK 2020=1.8 -->
+  <rect x="100" y="173" width="20" height="157" fill="#2563eb" rx="2"/>
+  <rect x="124" y="206" width="20" height="124" fill="#93c5fd" rx="2"/>
+  <rect x="148" y="183" width="20" height="147" fill="#c8202e" rx="2"/>
+  <rect x="172" y="229" width="20" height="101" fill="#fca5a5" rx="2"/>
+
+  <!-- Industry: DE 2000=4.1, DE 2020=2.7, UK 2000=3.2, UK 2020=1.9 -->
+  <rect x="240" y="99" width="20" height="231" fill="#2563eb" rx="2"/>
+  <rect x="264" y="179" width="20" height="151" fill="#93c5fd" rx="2"/>
+  <rect x="288" y="149" width="20" height="181" fill="#c8202e" rx="2"/>
+  <rect x="312" y="223" width="20" height="107" fill="#fca5a5" rx="2"/>
+
+  <!-- Heating: DE 2000=3.4, DE 2020=2.0, UK 2000=2.9, UK 2020=1.6 -->
+  <rect x="380" y="139" width="20" height="191" fill="#2563eb" rx="2"/>
+  <rect x="404" y="218" width="20" height="112" fill="#93c5fd" rx="2"/>
+  <rect x="428" y="167" width="20" height="163" fill="#c8202e" rx="2"/>
+  <rect x="452" y="240" width="20" height="90" fill="#fca5a5" rx="2"/>
+
+  <!-- Electricity: DE 2000=4.8, DE 2020=2.5, UK 2000=4.3, UK 2020=1.4 -->
+  <rect x="520" y="60" width="20" height="270" fill="#2563eb" rx="2"/>
+  <rect x="544" y="189" width="20" height="141" fill="#93c5fd" rx="2"/>
+  <rect x="568" y="88" width="20" height="242" fill="#c8202e" rx="2"/>
+  <rect x="592" y="251" width="20" height="79" fill="#fca5a5" rx="2"/>
+</svg>

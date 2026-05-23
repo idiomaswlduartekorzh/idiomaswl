@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" font-family="system-ui,sans-serif">
+  <rect width="680" height="380" fill="#fafafa" rx="8"/>
+  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Electricity Generation by Source — Germany vs France (2022)</text>
+
+  <!-- Germany Pie (left) centered at 185,200 r=130 -->
+  <text x="185" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#333">Germany</text>
+  <!-- Renewables 44% (0° to 158.4°) -->
+  <path d="M185,200 L315,200 A130,130 0 0,1 134,318 Z" fill="#16a34a"/>
+  <!-- Natural Gas 26% (158.4° to 252°) -->
+  <path d="M185,200 L134,318 A130,130 0 0,1 55,200 Z" fill="#f59e0b"/>
+  <!-- Coal 20% (252° to 324°) -->
+  <path d="M185,200 L55,200 A130,130 0 0,1 133,82 Z" fill="#6b7280"/>
+  <!-- Nuclear 6% (324° to 345.6°) -->
+  <path d="M185,200 L133,82 A130,130 0 0,1 166,71 Z" fill="#c8202e"/>
+  <!-- Other 4% (345.6° to 360°) -->
+  <path d="M185,200 L166,71 A130,130 0 0,1 315,200 Z" fill="#a855f7"/>
+
+  <!-- Labels Germany -->
+  <text x="230" y="260" font-size="11" fill="#fff" font-weight="700">Renewables</text>
+  <text x="232" y="273" font-size="11" fill="#fff" font-weight="700">44%</text>
+  <text x="90" y="290" font-size="11" fill="#fff" font-weight="700">Gas 26%</text>
+  <text x="95" y="155" font-size="11" fill="#fff" font-weight="700">Coal 20%</text>
+  <text x="138" y="80" font-size="9" fill="#fff" font-weight="700">Nuc.6%</text>
+
+  <!-- France Pie (right) centered at 495,200 r=130 -->
+  <text x="495" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#333">France</text>
+  <!-- Nuclear 63% (0° to 226.8°) -->
+  <path d="M495,200 L625,200 A130,130 0 1,1 318,138 Z" fill="#c8202e"/>
+  <!-- Renewables 26% (226.8° to 320.4°) -->
+  <path d="M495,200 L318,138 A130,130 0 0,1 412,79 Z" fill="#16a34a"/>
+  <!-- Gas 7% (320.4° to 345.6°) -->
+  <path d="M495,200 L412,79 A130,130 0 0,1 456,72 Z" fill="#f59e0b"/>
+  <!-- Other 4% (345.6° to 360°) -->
+  <path d="M495,200 L456,72 A130,130 0 0,1 625,200 Z" fill="#a855f7"/>
+
+  <!-- Labels France -->
+  <text x="500" y="210" font-size="11" fill="#fff" font-weight="700">Nuclear</text>
+  <text x="504" y="223" font-size="11" fill="#fff" font-weight="700">63%</text>
+  <text x="348" y="160" font-size="11" fill="#fff" font-weight="700">Ren. 26%</text>
+  <text x="416" y="80" font-size="9" fill="#333" font-weight="700">Gas 7%</text>
+
+  <!-- Legend -->
+  <rect x="82" y="350" width="12" height="10" fill="#16a34a" rx="2"/>
+  <text x="97" y="360" font-size="11" fill="#333">Renewables</text>
+  <rect x="185" y="350" width="12" height="10" fill="#f59e0b" rx="2"/>
+  <text x="200" y="360" font-size="11" fill="#333">Natural Gas</text>
+  <rect x="283" y="350" width="12" height="10" fill="#6b7280" rx="2"/>
+  <text x="298" y="360" font-size="11" fill="#333">Coal</text>
+  <rect x="340" y="350" width="12" height="10" fill="#c8202e" rx="2"/>
+  <text x="355" y="360" font-size="11" fill="#333">Nuclear</text>
+  <rect x="418" y="350" width="12" height="10" fill="#a855f7" rx="2"/>
+  <text x="433" y="360" font-size="11" fill="#333">Other</text>
+</svg>

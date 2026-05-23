@@ -14,6 +14,16 @@ export interface ExamSubmission {
   total_label: string | null
   skills: unknown
   created_at: string
+  // IELTS admin-review fields
+  writing_task1_answer?: string | null
+  writing_task2_answer?: string | null
+  speaking_answers?: Record<string, string> | null
+  reading_band?: number | null
+  listening_band?: number | null
+  writing_band?: number | null
+  speaking_band?: number | null
+  reviewed_at?: string | null
+  reviewed_by?: string | null
 }
 
 export interface DashboardData {
@@ -24,6 +34,7 @@ export interface DashboardData {
   perExam: { exam_slug: string; exam_name: string; count: number }[]
   recentSubmissions: ExamSubmission[]
   topUsers: { user_email: string; count: number }[]
+  pendingIelts: ExamSubmission[]
 }
 
 export default async function JoseDashboardServer() {
@@ -76,6 +87,13 @@ export default async function JoseDashboardServer() {
     .sort((a, b) => b.count - a.count)
     .slice(0, 5)
 
+  // IELTS submissions pending writing/speaking review
+  const pendingIelts = rows.filter(r =>
+    r.exam_slug === 'ielts' &&
+    (r.writing_band == null || r.speaking_band == null) &&
+    (r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers)
+  )
+
   const dashboardData: DashboardData = {
     submissions: rows,
     totalCount: rows.length,
@@ -84,6 +102,7 @@ export default async function JoseDashboardServer() {
     perExam,
     recentSubmissions: rows.slice(0, 10),
     topUsers,
+    pendingIelts,
   }
 
   return <JoseDashboard data={dashboardData} />

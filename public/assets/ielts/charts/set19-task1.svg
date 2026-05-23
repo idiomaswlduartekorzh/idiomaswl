@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+  <rect width="680" height="400" fill="#fafafa" rx="8"/>
+  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Online Retail Sales as a Percentage of Total Retail — 2015 to 2023 (%)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="50" x2="80" y2="320" stroke="#374151" stroke-width="2"/>
+  <line x1="80" y1="320" x2="640" y2="320" stroke="#374151" stroke-width="2"/>
+
+  <!-- Y-axis 0–45%, range=45, 270px/45=6px per % -->
+  <text x="72" y="324" text-anchor="end" font-size="10" fill="#666">0%</text>
+  <text x="72" y="264" text-anchor="end" font-size="10" fill="#666">10%</text>
+  <text x="72" y="204" text-anchor="end" font-size="10" fill="#666">20%</text>
+  <text x="72" y="144" text-anchor="end" font-size="10" fill="#666">30%</text>
+  <text x="72" y="84"  text-anchor="end" font-size="10" fill="#666">40%</text>
+  <text x="72" y="54"  text-anchor="end" font-size="10" fill="#666">45%</text>
+
+  <!-- Y gridlines -->
+  <line x1="80" y1="264" x2="640" y2="264" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="80" y1="204" x2="640" y2="204" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="80" y1="144" x2="640" y2="144" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="80" y1="84"  x2="640" y2="84"  stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- X-axis: 2015–2023 = 9 points, 560px/8 = 70px per year -->
+  <text x="80"  y="336" text-anchor="middle" font-size="10" fill="#666">2015</text>
+  <text x="150" y="336" text-anchor="middle" font-size="10" fill="#666">2016</text>
+  <text x="220" y="336" text-anchor="middle" font-size="10" fill="#666">2017</text>
+  <text x="290" y="336" text-anchor="middle" font-size="10" fill="#666">2018</text>
+  <text x="360" y="336" text-anchor="middle" font-size="10" fill="#666">2019</text>
+  <text x="430" y="336" text-anchor="middle" font-size="10" fill="#666">2020</text>
+  <text x="500" y="336" text-anchor="middle" font-size="10" fill="#666">2021</text>
+  <text x="570" y="336" text-anchor="middle" font-size="10" fill="#666">2022</text>
+  <text x="640" y="336" text-anchor="middle" font-size="10" fill="#666">2023</text>
+
+  <!-- y = 320 - val*6 -->
+
+  <!-- China: 2015=15, 2016=19, 2017=24, 2018=29, 2019=33, 2020=39, 2021=42, 2022=43, 2023=44 -->
+  <polyline points="80,230 150,206 220,176 290,146 360,122 430,86 500,68 570,62 640,56"
+    fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- UK: 2015=13, 2016=15, 2017=17, 2018=20, 2019=22, 2020=30, 2021=32, 2022=30, 2023=29 -->
+  <polyline points="80,242 150,230 220,218 290,200 360,188 430,140 500,128 570,140 640,146"
+    fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- USA: 2015=8, 2016=9, 2017=11, 2018=13, 2019=15, 2020=21, 2021=22, 2022=21, 2023=22 -->
+  <polyline points="80,272 150,266 220,254 290,242 360,230 430,194 500,188 570,194 640,188"
+    fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Brazil: 2015=4, 2016=5, 2017=6, 2018=7, 2019=9, 2020=14, 2021=16, 2022=17, 2023=18 -->
+  <polyline points="80,296 150,290 220,284 290,278 360,266 430,236 500,224 570,218 640,212"
+    fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Data dots China -->
+  <circle cx="80"  cy="230" r="3.5" fill="#ef4444"/>
+  <circle cx="150" cy="206" r="3.5" fill="#ef4444"/>
+  <circle cx="220" cy="176" r="3.5" fill="#ef4444"/>
+  <circle cx="290" cy="146" r="3.5" fill="#ef4444"/>
+  <circle cx="360" cy="122" r="3.5" fill="#ef4444"/>
+  <circle cx="430" cy="86"  r="3.5" fill="#ef4444"/>
+  <circle cx="500" cy="68"  r="3.5" fill="#ef4444"/>
+  <circle cx="570" cy="62"  r="3.5" fill="#ef4444"/>
+  <circle cx="640" cy="56"  r="3.5" fill="#ef4444"/>
+
+  <!-- Data dots UK -->
+  <circle cx="80"  cy="242" r="3.5" fill="#2563eb"/>
+  <circle cx="430" cy="140" r="3.5" fill="#2563eb"/>
+  <circle cx="640" cy="146" r="3.5" fill="#2563eb"/>
+
+  <!-- Data dots USA -->
+  <circle cx="80"  cy="272" r="3.5" fill="#16a34a"/>
+  <circle cx="430" cy="194" r="3.5" fill="#16a34a"/>
+  <circle cx="640" cy="188" r="3.5" fill="#16a34a"/>
+
+  <!-- Data dots Brazil -->
+  <circle cx="80"  cy="296" r="3.5" fill="#f59e0b"/>
+  <circle cx="430" cy="236" r="3.5" fill="#f59e0b"/>
+  <circle cx="640" cy="212" r="3.5" fill="#f59e0b"/>
+
+  <!-- Y-axis title -->
+  <text transform="rotate(-90)" x="-185" y="18" text-anchor="middle" font-size="11" fill="#374151">% of total retail sales</text>
+
+  <!-- Legend -->
+  <line x1="100" y1="371" x2="124" y2="371" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="112" cy="371" r="3.5" fill="#ef4444"/>
+  <text x="128" y="375" font-size="11" fill="#333">China</text>
+
+  <line x1="190" y1="371" x2="214" y2="371" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="202" cy="371" r="3.5" fill="#2563eb"/>
+  <text x="218" y="375" font-size="11" fill="#333">United Kingdom</text>
+
+  <line x1="336" y1="371" x2="360" y2="371" stroke="#16a34a" stroke-width="2.5"/>
+  <circle cx="348" cy="371" r="3.5" fill="#16a34a"/>
+  <text x="364" y="375" font-size="11" fill="#333">USA</text>
+
+  <line x1="416" y1="371" x2="440" y2="371" stroke="#f59e0b" stroke-width="2.5"/>
+  <circle cx="428" cy="371" r="3.5" fill="#f59e0b"/>
+  <text x="444" y="375" font-size="11" fill="#333">Brazil</text>
+</svg>

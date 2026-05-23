@@ -4,8 +4,9 @@ import { useState } from 'react'
 import {
   LayoutDashboard, Users, FileText, DollarSign, Settings,
   Bell, MessageCircle, Globe, ArrowUpRight, Download,
-  Calendar, ChevronDown, BookOpen, GraduationCap,
+  Calendar, ChevronDown, BookOpen, GraduationCap, ClipboardCheck,
 } from 'lucide-react'
+import { scoreSubmission } from '@/lib/actions/scoreSubmission'
 import {
   BarChart, Bar,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
@@ -71,6 +72,137 @@ function formatDate(iso: string) {
     day: '2-digit', month: 'short', year: 'numeric',
     hour: '2-digit', minute: '2-digit',
   })
+}
+
+// ─── IELTS Pending Panel ─────────────────────────────────────────────────────
+
+const BAND_OPTS = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9] as const;
+
+function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').ExamSubmission[] }) {
+  const [selected, setSelected] = useState<string | null>(null)
+  const [wBand, setWBand] = useState<number>(5.5)
+  const [sBand, setSBand] = useState<number>(5.5)
+  const [saving, setSaving] = useState(false)
+  const [saved, setSaved] = useState<Set<string>>(new Set())
+
+  const active = items.find(i => i.id === selected)
+
+  async function handleSave() {
+    if (!selected) return
+    setSaving(true)
+    try {
+      await scoreSubmission(selected, wBand, sBand)
+      setSaved(p => new Set([...p, selected]))
+      setSelected(null)
+    } catch (e) {
+      alert('Error al guardar: ' + String(e))
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const pending = items.filter(i => !saved.has(i.id))
+
+  return (
+    <Card style={{ border: `2px solid ${A}` }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
+        <ClipboardCheck size={16} color={A} />
+        <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: A }}>
+          IELTS — Pendientes de corrección ({pending.length})
+        </h3>
+      </div>
+
+      {pending.length === 0 ? (
+        <p style={{ color: MUTED, fontSize: 13 }}>¡Todo al día! Sin correcciones pendientes.</p>
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: selected ? '1fr 1fr' : '1fr', gap: 16 }}>
+          {/* List */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+            {pending.map(item => (
+              <button key={item.id}
+                onClick={() => { setSelected(item.id); setWBand(5.5); setSBand(5.5); }}
+                style={{
+                  textAlign: 'left', padding: '10px 14px', borderRadius: 10,
+                  border: `1px solid ${selected === item.id ? A : BORDER}`,
+                  background: selected === item.id ? `${A}18` : CARD,
+                  cursor: 'pointer', transition: 'all 0.15s',
+                }}>
+                <p style={{ margin: '0 0 2px', fontSize: 12, fontWeight: 700, color: TEXT }}>
+                  {item.user_name ?? item.user_email ?? 'Anónimo'}
+                </p>
+                <p style={{ margin: 0, fontSize: 11, color: MUTED }}>
+                  {item.mock_title} · {formatDate(item.created_at)}
+                </p>
+              </button>
+            ))}
+          </div>
+
+          {/* Detail panel */}
+          {active && (
+            <div style={{ background: BG, borderRadius: 12, padding: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
+              <div>
+                <p style={{ margin: '0 0 4px', fontSize: 11, fontWeight: 700, color: MUTED, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Writing Task 1</p>
+                <div style={{ background: CARD, borderRadius: 8, padding: 10, fontSize: 12, color: TEXT, maxHeight: 120, overflowY: 'auto', whiteSpace: 'pre-wrap', lineHeight: 1.5, border: `1px solid ${BORDER}` }}>
+                  {active.writing_task1_answer || <span style={{ color: MUTED }}>Sin respuesta</span>}
+                </div>
+              </div>
+              <div>
+                <p style={{ margin: '0 0 4px', fontSize: 11, fontWeight: 700, color: MUTED, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Writing Task 2</p>
+                <div style={{ background: CARD, borderRadius: 8, padding: 10, fontSize: 12, color: TEXT, maxHeight: 120, overflowY: 'auto', whiteSpace: 'pre-wrap', lineHeight: 1.5, border: `1px solid ${BORDER}` }}>
+                  {active.writing_task2_answer || <span style={{ color: MUTED }}>Sin respuesta</span>}
+                </div>
+              </div>
+              {active.speaking_answers && Object.values(active.speaking_answers).some(Boolean) && (
+                <div>
+                  <p style={{ margin: '0 0 4px', fontSize: 11, fontWeight: 700, color: MUTED, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Speaking — notas</p>
+                  <div style={{ background: CARD, borderRadius: 8, padding: 10, fontSize: 12, color: TEXT, maxHeight: 80, overflowY: 'auto', border: `1px solid ${BORDER}` }}>
+                    {Object.entries(active.speaking_answers).map(([k, v]) => v ? (
+                      <p key={k} style={{ margin: '0 0 4px' }}><strong>{k}:</strong> {v}</p>
+                    ) : null)}
+                  </div>
+                </div>
+              )}
+              {/* Band inputs */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+                <div>
+                  <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: TEXT }}>Writing Band</p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                    {BAND_OPTS.map(b => (
+                      <button key={b} onClick={() => setWBand(b)}
+                        style={{ padding: '3px 8px', borderRadius: 6, border: `1px solid ${wBand===b?A:BORDER}`, background: wBand===b?A:'transparent', color: wBand===b?'#fff':TEXT, fontSize: 11, fontWeight: 600, cursor: 'pointer' }}>
+                        {b}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: TEXT }}>Speaking Band</p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                    {BAND_OPTS.map(b => (
+                      <button key={b} onClick={() => setSBand(b)}
+                        style={{ padding: '3px 8px', borderRadius: 6, border: `1px solid ${sBand===b?A:BORDER}`, background: sBand===b?A:'transparent', color: sBand===b?'#fff':TEXT, fontSize: 11, fontWeight: 600, cursor: 'pointer' }}>
+                        {b}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: 8 }}>
+                <button onClick={() => setSelected(null)}
+                  style={{ flex: 1, padding: '8px 0', borderRadius: 8, border: `1px solid ${BORDER}`, background: 'transparent', color: MUTED, fontSize: 12, cursor: 'pointer' }}>
+                  Cancelar
+                </button>
+                <button onClick={handleSave} disabled={saving}
+                  style={{ flex: 2, padding: '8px 0', borderRadius: 8, border: 'none', background: A, color: '#fff', fontSize: 12, fontWeight: 700, cursor: saving?'not-allowed':'pointer', opacity: saving?0.7:1 }}>
+                  {saving ? 'Guardando...' : `Guardar W:${wBand} S:${sBand}`}
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </Card>
+  )
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -258,6 +390,11 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
               </div>
             </Card>
           </div>
+
+          {/* IELTS Pending Review Panel */}
+          {data.pendingIelts.length > 0 && (
+            <IELTSPendingPanel items={data.pendingIelts} />
+          )}
 
           {/* Row 3: Recent submissions + Top users */}
           <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 14 }}>

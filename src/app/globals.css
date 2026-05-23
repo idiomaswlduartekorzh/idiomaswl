@@ -1969,6 +1969,10 @@ button {
   border: 1px solid var(--line-soft);
   background: var(--surface);
 }
+.prac-intro__section--coming-soon {
+  opacity: 0.5;
+  border-style: dashed;
+}
 .prac-intro__section-part {
   font-family: var(--mono);
   font-size: 10px;
@@ -2584,6 +2588,26 @@ button {
 .ielts-skill-tab:hover { color: var(--fg); }
 .ielts-skill-tab--active { color: var(--accent); border-bottom-color: var(--accent); }
 
+/* Coming-soon tab state */
+.ielts-skill-tab--coming-soon {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.ielts-skill-tab__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  letter-spacing: 0.02em;
+}
+
 .ielts-skill-tab__count {
   font-size: 0.75rem;
   font-weight: 400;
@@ -2591,6 +2615,36 @@ button {
   background: var(--bg);
   border-radius: 999px;
   padding: 0.1rem 0.45rem;
+}
+
+/* Pending notice (Writing / Speaking awaiting admin review) */
+.ielts-pending-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+.ielts-pending-notice__icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.ielts-pending-notice__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0 0 0.3rem;
+}
+.ielts-pending-notice__sub {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.55;
 }
 
 /* Exam body */

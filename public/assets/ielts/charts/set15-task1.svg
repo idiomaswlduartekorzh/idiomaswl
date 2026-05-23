@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390" font-family="system-ui,sans-serif">
+  <rect width="680" height="390" fill="#fafafa" rx="8"/>
+  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Sources of Electricity Generation — UK vs Australia (2022)</text>
+
+  <!-- UK Pie centred at 175,205 r=125 -->
+  <text x="175" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#333">United Kingdom</text>
+  <!-- Wind 26%: 0°→93.6° -->
+  <path d="M175,205 L300,205 A125,125 0 0,1 183,81 Z" fill="#3b82f6"/>
+  <!-- Natural Gas 32%: 93.6°→208.8° -->
+  <path d="M175,205 L183,81 A125,125 0 0,1 67,267 Z" fill="#f97316"/>
+  <!-- Nuclear 15%: 208.8°→262.8° -->
+  <path d="M175,205 L67,267 A125,125 0 0,1 91,105 Z" fill="#c8202e"/>
+  <!-- Solar 12%: 262.8°→306° -->
+  <path d="M175,205 L91,105 A125,125 0 0,1 239,84 Z" fill="#fbbf24"/>
+  <!-- Other 15%: 306°→360° -->
+  <path d="M175,205 L239,84 A125,125 0 0,1 300,205 Z" fill="#a855f7"/>
+
+  <!-- Labels UK -->
+  <text x="265" y="165" font-size="10" fill="#fff" font-weight="700">Wind</text>
+  <text x="263" y="177" font-size="10" fill="#fff" font-weight="700">26%</text>
+  <text x="90" y="200" font-size="10" fill="#fff" font-weight="700">Gas 32%</text>
+  <text x="98" y="250" font-size="9" fill="#fff" font-weight="700">Nuc. 15%</text>
+  <text x="130" y="130" font-size="9" fill="#fff" font-weight="700">Solar 12%</text>
+
+  <!-- Australia Pie centred at 505,205 r=125 -->
+  <text x="505" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#333">Australia</text>
+  <!-- Coal 38%: 0°→136.8° -->
+  <path d="M505,205 L630,205 A125,125 0 0,1 434,308 Z" fill="#6b7280"/>
+  <!-- Renewables 35%: 136.8°→262.8° -->
+  <path d="M505,205 L434,308 A125,125 0 0,1 399,111 Z" fill="#16a34a"/>
+  <!-- Natural Gas 20%: 262.8°→334.8° -->
+  <path d="M505,205 L399,111 A125,125 0 0,1 580,95 Z" fill="#f97316"/>
+  <!-- Other 7%: 334.8°→360° -->
+  <path d="M505,205 L580,95 A125,125 0 0,1 630,205 Z" fill="#a855f7"/>
+
+  <!-- Labels Australia -->
+  <text x="545" y="275" font-size="10" fill="#fff" font-weight="700">Coal</text>
+  <text x="543" y="288" font-size="10" fill="#fff" font-weight="700">38%</text>
+  <text x="418" y="230" font-size="10" fill="#fff" font-weight="700">Ren.</text>
+  <text x="416" y="243" font-size="10" fill="#fff" font-weight="700">35%</text>
+  <text x="470" y="120" font-size="9" fill="#333" font-weight="700">Gas 20%</text>
+
+  <!-- Legend -->
+  <rect x="48"  y="355" width="12" height="10" fill="#3b82f6" rx="2"/>
+  <text x="63"  y="365" font-size="10" fill="#333">Wind</text>
+  <rect x="110" y="355" width="12" height="10" fill="#f97316" rx="2"/>
+  <text x="125" y="365" font-size="10" fill="#333">Natural Gas</text>
+  <rect x="207" y="355" width="12" height="10" fill="#c8202e" rx="2"/>
+  <text x="222" y="365" font-size="10" fill="#333">Nuclear</text>
+  <rect x="282" y="355" width="12" height="10" fill="#fbbf24" rx="2"/>
+  <text x="297" y="365" font-size="10" fill="#333">Solar</text>
+  <rect x="345" y="355" width="12" height="10" fill="#16a34a" rx="2"/>
+  <text x="360" y="365" font-size="10" fill="#333">Renewables</text>
+  <rect x="444" y="355" width="12" height="10" fill="#6b7280" rx="2"/>
+  <text x="459" y="365" font-size="10" fill="#333">Coal</text>
+  <rect x="501" y="355" width="12" height="10" fill="#a855f7" rx="2"/>
+  <text x="516" y="365" font-size="10" fill="#333">Other</text>
+</svg>

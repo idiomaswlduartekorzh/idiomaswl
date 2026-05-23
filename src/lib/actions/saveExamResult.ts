@@ -3,7 +3,15 @@
 import { createClient } from '@/lib/supabase/server'
 import type { ExamReportData } from '@/components/ExamReport'
 
-export async function saveExamResult(data: ExamReportData) {
+export interface IELTSAnswers {
+  writing_task1_answer?: string
+  writing_task2_answer?: string
+  speaking_answers?: Record<string, string>
+  reading_band?: number
+  listening_band?: number | null
+}
+
+export async function saveExamResult(data: ExamReportData, ielts?: IELTSAnswers) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
@@ -18,5 +26,12 @@ export async function saveExamResult(data: ExamReportData) {
     total_max: data.totalMax,
     total_label: data.totalLabel,
     skills: data.skills,
+    ...(ielts ? {
+      writing_task1_answer: ielts.writing_task1_answer ?? null,
+      writing_task2_answer: ielts.writing_task2_answer ?? null,
+      speaking_answers: ielts.speaking_answers ?? null,
+      reading_band: ielts.reading_band ?? null,
+      listening_band: ielts.listening_band ?? null,
+    } : {}),
   })
 }

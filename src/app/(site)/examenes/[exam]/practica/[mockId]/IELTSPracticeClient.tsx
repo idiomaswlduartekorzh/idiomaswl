@@ -4,6 +4,7 @@ import { useState, useCallback, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ExamReport } from '@/components/ExamReport';
+import { saveExamResult } from '@/lib/actions/saveExamResult';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
@@ -584,19 +585,25 @@ function SectionPanel({
 
 // ── Skill tabs ────────────────────────────────────────────────────────────────
 
-function SkillTabs({ skills, active, onSelect, progress }: {
+function SkillTabs({ skills, active, onSelect, progress, comingSoon }: {
   skills: string[]; active: string; onSelect: (s:string)=>void;
   progress: Record<string,{done:number;total:number}>;
+  comingSoon: Set<string>;
 }) {
   return (
     <div className="ielts-skill-tabs">
       {skills.map(skill => {
+        const isCS = comingSoon.has(skill);
         const p = progress[skill];
         return (
-          <button key={skill} onClick={()=>onSelect(skill)}
-            className={`ielts-skill-tab${active===skill?' ielts-skill-tab--active':''}`}>
+          <button key={skill}
+            onClick={()=>{ if (!isCS) onSelect(skill); }}
+            disabled={isCS}
+            className={`ielts-skill-tab${active===skill?' ielts-skill-tab--active':''}${isCS?' ielts-skill-tab--coming-soon':''}`}>
             <span>{SKILL_LABEL[skill]??skill}</span>
-            {p && <span className="ielts-skill-tab__count">{p.done}/{p.total}</span>}
+            {isCS
+              ? <span className="ielts-skill-tab__badge">🔨 Próximamente</span>
+              : p && <span className="ielts-skill-tab__count">{p.done}/{p.total}</span>}
           </button>
         );
       })}
@@ -606,7 +613,9 @@ function SkillTabs({ skills, active, onSelect, progress }: {
 
 // ── Results ───────────────────────────────────────────────────────────────────
 
-const BAND_OPTIONS = [4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9] as const;
+// Band options kept for reference (no longer used in UI)
+const _BAND_OPTIONS = [4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9] as const;
+void _BAND_OPTIONS;
 
 function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: number; total: number } {
   let done = 0, total = 0;
@@ -665,97 +674,92 @@ function scoreSection(section: MockSection, ans: AllAnswers): number {
   return correct;
 }
 
-function SelfAssessModal({ skill, questions, bands, onSave, onCancel }: {
-  skill: string;
-  questions: (WriteQuestion|SpeakQuestion)[];
-  bands: BandMap;
-  onSave: (b:BandMap)=>void;
-  onCancel: ()=>void;
-}) {
-  const [local, setLocal] = useState<BandMap>({...bands});
-  return (
-    <div className="ielts-modal-overlay">
-      <div className="ielts-modal">
-        <h2 className="ielts-modal__title">Self-assess your {skill}</h2>
-        <p className="ielts-modal__sub">Choose a band score (4–9) for each task based on how well you performed.</p>
-        {questions.map(q=>(
-          <div key={q.id} className="ielts-modal__row">
-            <p className="ielts-modal__q">{q.text.slice(0,100)}{q.text.length>100?'...':''}</p>
-            <div className="ielts-modal__bands">
-              {BAND_OPTIONS.map(b=>(
-                <button key={b} onClick={()=>setLocal(p=>({...p,[q.id]:b}))}
-                  className={`ielts-modal__band-btn${local[q.id]===b?' ielts-modal__band-btn--active':''}`}>{b}</button>
-              ))}
-            </div>
-          </div>
-        ))}
-        <div className="ielts-modal__actions">
-          <button onClick={onCancel} className="btn btn-ghost">Back</button>
-          <button onClick={()=>onSave(local)} className="btn">Save & see results</button>
-        </div>
-      </div>
-    </div>
-  );
-}
+// ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
-function BandResults({ mock, exam, ans, writeBands, speakBands, onRetry }: {
-  mock: MockExam; exam: Exam; ans: AllAnswers;
-  writeBands: BandMap; speakBands: BandMap; onRetry: ()=>void;
+function IELTSResults({ mock, exam, ans, onRetry }: {
+  mock: MockExam; exam: Exam; ans: AllAnswers; onRetry: ()=>void;
 }) {
-  const lSections = getSkillSections(mock,'listening');
+  const [saved, setSaved] = useState(false);
+
+  const lSections = getSkillSections(mock,'listening').filter(s=>!s.comingSoon);
   const rSections = getSkillSections(mock,'reading');
   const lCorrect = lSections.reduce((a,s)=>a+scoreSection(s,ans),0);
   const rCorrect = rSections.reduce((a,s)=>a+scoreSection(s,ans),0);
 
-  // count totals for display
   let lTotal=0, rTotal=0;
   for (const s of lSections) lTotal += countGroupAnswers(s,ans).total;
   for (const s of rSections) rTotal += countGroupAnswers(s,ans).total;
 
-  const lBand = rawToBand(lCorrect, L_BAND);
+  const hasListening = lSections.length > 0;
   const rBand = rawToBand(rCorrect, R_BAND);
-  const wBand = Object.values(writeBands).length
-    ? Object.values(writeBands).reduce((a,b)=>a+b,0)/Object.values(writeBands).length : 5.5;
-  const sBand = Object.values(speakBands).length
-    ? Object.values(speakBands).reduce((a,b)=>a+b,0)/Object.values(speakBands).length : 5.5;
-  const overall = overallBand([lBand,rBand,wBand,sBand]);
+  const lBand = hasListening ? rawToBand(lCorrect, L_BAND) : null;
 
-  const skillCards = [
-    { label:'Listening', band:lBand, detail:`${lCorrect}/${lTotal} correct` },
-    { label:'Reading',   band:rBand, detail:`${rCorrect}/${rTotal} correct` },
-    { label:'Writing',   band:wBand, detail:'Self-assessed' },
-    { label:'Speaking',  band:sBand, detail:'Self-assessed' },
+  const writeQs = getSkillSections(mock,'writing').flatMap(s=>s.questions) as WriteQuestion[];
+  const speakQs = getSkillSections(mock,'speaking').flatMap(s=>s.questions) as SpeakQuestion[];
+  const task1 = writeQs.find(q=>q.taskNumber===1);
+  const task2 = writeQs.find(q=>q.taskNumber===2);
+  const speakingAnswers = Object.fromEntries(speakQs.map(q=>[q.id, ans.speak[q.id]??'']));
+
+  const autoSkills = [
+    ...(hasListening ? [{ skill:'Listening', score:lBand!, max:9, label:`Band ${lBand}`, raw:`${lCorrect}/${lTotal} correct` }] : []),
+    { skill:'Reading', score:rBand, max:9, label:`Band ${rBand}`, raw:`${rCorrect}/${rTotal} correct` },
   ];
+
+  const partialBand = hasListening ? overallBand([lBand!, rBand]) : rBand;
 
   const reportData = {
     examName: exam.name,
     examSlug: exam.slug,
     mockTitle: mock.title,
-    totalScore: overall,
+    totalScore: partialBand,
     totalMax: 9,
-    totalLabel: `Overall Band ${overall}`,
+    totalLabel: hasListening
+      ? `Listening Band ${lBand} · Reading Band ${rBand}`
+      : `Reading Band ${rBand}`,
     accentColor: exam.color,
-    date: new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' }),
-    skills: skillCards.map(({ label, band, detail }) => ({
-      skill: label,
-      score: band,
-      max: 9,
-      label: `Band ${band}`,
-      raw: detail !== 'Self-assessed' ? detail : undefined,
-    })),
+    date: new Date().toLocaleDateString('es-ES', { day:'numeric', month:'long', year:'numeric' }),
+    skills: autoSkills,
   };
+
+  useEffect(() => {
+    if (saved) return;
+    setSaved(true);
+    saveExamResult(reportData, {
+      reading_band: rBand,
+      listening_band: lBand,
+      writing_task1_answer: task1 ? (ans.write[task1.id]??'') : undefined,
+      writing_task2_answer: task2 ? (ans.write[task2.id]??'') : undefined,
+      speaking_answers: speakingAnswers,
+    }).catch(()=>{/* silently ignore */});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="prac-results">
       <ExamReport
         data={reportData}
+        skipSave
         onRetry={onRetry}
         backHref={`/examenes/ielts`}
       />
 
+      {/* Writing & Speaking — pending review notice */}
+      {(writeQs.length > 0 || speakQs.length > 0) && (
+        <div className="ielts-pending-notice">
+          <div className="ielts-pending-notice__icon">📝</div>
+          <div>
+            <p className="ielts-pending-notice__title">Writing y Speaking — Pendiente de corrección</p>
+            <p className="ielts-pending-notice__sub">
+              Tus respuestas han sido enviadas al profesor. Recibirás tus bandas de Writing y Speaking
+              en tu dashboard cuando estén corregidas.
+            </p>
+          </div>
+        </div>
+      )}
+
       <div className="prac-results__review">
         <h2 className="prac-results__review-title">Answer Review</h2>
-        {mock.sections.filter(s=>s.skill==='listening'||s.skill==='reading').map(sec=>(
+        {mock.sections.filter(s=>(s.skill==='listening'||s.skill==='reading')&&!s.comingSoon).map(sec=>(
           <div key={sec.part} className="prac-results__section-block">
             <h3 className="prac-results__section-name">{sec.title}</h3>
             {sec.questions.map(q=>{
@@ -890,16 +894,22 @@ function BandResults({ mock, exam, ans, writeBands, speakBands, onRetry }: {
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-type Phase = 'intro'|'exam'|'self-assess-write'|'self-assess-speak'|'results';
+type Phase = 'intro'|'exam'|'results';
 
 export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
-  const [activeSkill, setActiveSkill] = useState('listening');
+
+  const comingSoonSkills = new Set(
+    mock.sections.filter(s=>s.comingSoon).map(s=>s.skill).filter(Boolean) as string[]
+  );
+  const firstActiveSkill = SKILL_ORDER.find(sk=>
+    mock.sections.some(s=>s.skill===sk && !s.comingSoon)
+  ) ?? 'reading';
+
+  const [activeSkill, setActiveSkill] = useState(firstActiveSkill);
   const [ans, setAns] = useState<AllAnswers>({
     fills:{}, mcq:{}, ms:{}, match:{}, write:{}, speak:{},
   });
-  const [writeBands, setWriteBands] = useState<BandMap>({});
-  const [speakBands, setSpeakBands] = useState<BandMap>({});
 
   const skills = SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
 
@@ -917,6 +927,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   };
 
   const progressMap = Object.fromEntries(skills.map(sk=>{
+    if (comingSoonSkills.has(sk)) return [sk,{done:0,total:0}];
     const sections=getSkillSections(mock,sk);
     let done=0,total=0;
     for (const s of sections) { const p=countGroupAnswers(s,ans); done+=p.done; total+=p.total; }
@@ -924,52 +935,26 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   }));
 
   const handleSubmit = useCallback(()=>{
-    const writeQs=getSkillSections(mock,'writing').flatMap(s=>s.questions) as WriteQuestion[];
-    const speakQs=getSkillSections(mock,'speaking').flatMap(s=>s.questions) as SpeakQuestion[];
-    if (writeQs.length>0) setPhase('self-assess-write');
-    else if (speakQs.length>0) setPhase('self-assess-speak');
-    else setPhase('results');
-  },[mock]);
+    setPhase('results');
+  },[]);
 
   const handleRetry = useCallback(()=>{
     setAns({fills:{},mcq:{},ms:{},match:{},write:{},speak:{}});
-    setWriteBands({}); setSpeakBands({});
-    setActiveSkill('listening'); setPhase('intro');
-  },[]);
+    setActiveSkill(firstActiveSkill); setPhase('intro');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[firstActiveSkill]);
 
-  if (phase==='self-assess-write') {
-    const qs=getSkillSections(mock,'writing').flatMap(s=>s.questions) as WriteQuestion[];
-    return (
-      <div className="prac-shell">
-        <SelfAssessModal skill="Writing" questions={qs} bands={writeBands}
-          onSave={b=>{ setWriteBands(b);
-            const spQs=getSkillSections(mock,'speaking').flatMap(s=>s.questions);
-            if (spQs.length>0) setPhase('self-assess-speak'); else setPhase('results');
-          }} onCancel={()=>setPhase('exam')} />
-      </div>
-    );
-  }
-  if (phase==='self-assess-speak') {
-    const qs=getSkillSections(mock,'speaking').flatMap(s=>s.questions) as SpeakQuestion[];
-    return (
-      <div className="prac-shell">
-        <SelfAssessModal skill="Speaking" questions={qs} bands={speakBands}
-          onSave={b=>{ setSpeakBands(b); setPhase('results'); }}
-          onCancel={()=>setPhase('exam')} />
-      </div>
-    );
-  }
   if (phase==='results') {
     return (
       <div className="prac-shell">
-        <BandResults mock={mock} exam={exam} ans={ans} writeBands={writeBands} speakBands={speakBands} onRetry={handleRetry} />
+        <IELTSResults mock={mock} exam={exam} ans={ans} onRetry={handleRetry} />
       </div>
     );
   }
 
   // Intro
   if (phase==='intro') {
-    const totalQ=mock.sections.flatMap(s=>s.questions).length;
+    const totalQ=mock.sections.filter(s=>!s.comingSoon).flatMap(s=>s.questions).length;
     return (
       <div className="prac-shell prac-shell--intro">
         <div className="prac-intro" style={{'--exam-color':exam.color} as React.CSSProperties}>
@@ -977,36 +962,37 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           <h1 className="prac-intro__title">{mock.title}</h1>
           <p className="prac-intro__sub">{mock.subtitle}</p>
           <div className="prac-intro__stats">
-            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{skills.length}</span><span className="prac-intro__stat-lbl">Sections</span></div>
-            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{mock.timeMinutes}</span><span className="prac-intro__stat-lbl">Minutes</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{skills.filter(sk=>!comingSoonSkills.has(sk)).length}</span><span className="prac-intro__stat-lbl">Secciones activas</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQ}</span><span className="prac-intro__stat-lbl">Preguntas</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{mock.timeMinutes}</span><span className="prac-intro__stat-lbl">Minutos</span></div>
           </div>
           <div className="prac-intro__sections">
             {mock.sections.map(sec=>(
-              <div key={sec.part} className="prac-intro__section">
+              <div key={sec.part} className={`prac-intro__section${sec.comingSoon?' prac-intro__section--coming-soon':''}`}>
                 <span className="prac-intro__section-part">{sec.skill?SKILL_LABEL[sec.skill]:''}</span>
-                <span className="prac-intro__section-title">{sec.title.split('—')[1]?.trim()??sec.title}</span>
-                <span className="prac-intro__section-q">{sec.questions.length} groups</span>
+                <span className="prac-intro__section-title">{sec.comingSoon ? '🔨 Próximamente' : (sec.title.split('—')[1]?.trim()??sec.title)}</span>
+                <span className="prac-intro__section-q">{sec.comingSoon ? '—' : `${sec.questions.length} grupos`}</span>
               </div>
             ))}
           </div>
           <div className="prac-intro__tips">
-            <p className="prac-intro__tips-title">Before you start</p>
+            <p className="prac-intro__tips-title">Antes de empezar</p>
             <ul>
-              <li>Navigate between <strong>Listening</strong>, <strong>Reading</strong>, <strong>Writing</strong> and <strong>Speaking</strong> using the skill tabs above.</li>
-              <li>Listening: a transcript is available to simulate the audio experience.</li>
-              <li>Reading: passages appear side-by-side with questions.</li>
-              <li>Writing &amp; Speaking: self-assess your band score at the end.</li>
+              <li>Navega entre las secciones usando las pestañas superiores.</li>
+              <li>Reading: los textos aparecen junto a las preguntas.</li>
+              <li>Writing y Speaking: tus respuestas se envían al profesor para corrección.</li>
+              {comingSoonSkills.has('listening') && <li>Listening está en construcción — próximamente con audio real.</li>}
             </ul>
           </div>
-          <button onClick={()=>setPhase('exam')} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>Start exam</button>
-          <Link href={`/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>Back to IELTS</Link>
+          <button onClick={()=>{ setActiveSkill(firstActiveSkill); setPhase('exam'); }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>Empezar examen</button>
+          <Link href={`/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>Volver a IELTS</Link>
         </div>
       </div>
     );
   }
 
   // Exam
-  const activeSections = getSkillSections(mock, activeSkill);
+  const activeSections = getSkillSections(mock, activeSkill).filter(s=>!s.comingSoon);
   const totalAnswered = Object.values(progressMap).reduce((a,p)=>a+p.done,0);
   const totalQs = Object.values(progressMap).reduce((a,p)=>a+p.total,0);
   const unanswered = totalQs - totalAnswered;
@@ -1024,7 +1010,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
         </div>
       </header>
 
-      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} />
+      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} />
 
       <div className="ielts-exam-body">
         {activeSkill === 'listening' && (
@@ -1038,18 +1024,18 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
 
         <div className="ielts-exam-footer">
           <div className="ielts-skill-nav__row">
-            {skills.map((sk,i)=>{
+            {skills.filter(sk=>!comingSoonSkills.has(sk)).map((sk,i,arr)=>{
               if (sk!==activeSkill) return null;
-              const prev=skills[i-1], next=skills[i+1];
+              const prev=arr[i-1], next=arr[i+1];
               return (
                 <span key={sk} style={{display:'flex',gap:'0.75rem'}}>
                   {prev && <button onClick={()=>setActiveSkill(prev)} className="btn btn-ghost btn-sm">&larr; {SKILL_LABEL[prev]}</button>}
                   {next
                     ? <button onClick={()=>setActiveSkill(next)} className="btn btn-sm">{SKILL_LABEL[next]} &rarr;</button>
                     : <button onClick={()=>{
-                        if (unanswered>0&&!confirm(`${unanswered} question(s) unanswered. Finish anyway?`)) return;
+                        if (unanswered>0&&!confirm(`${unanswered} pregunta(s) sin responder. ¿Terminar de todas formas?`)) return;
                         handleSubmit();
-                      }} className="btn">Finish exam</button>
+                      }} className="btn">Terminar examen</button>
                   }
                 </span>
               );
