@@ -170,7 +170,12 @@ export default function PracticaClient() {
                   '--exam-color': lang.color,
                   textAlign: 'left',
                   cursor: lang.available ? 'pointer' : 'default',
-                  border: 'none',
+                  appearance: 'none',
+                  WebkitAppearance: 'none',
+                  margin: 0,
+                  padding: 0,
+                  font: 'inherit',
+                  color: 'inherit',
                 } as CSSProperties}
               >
                 <div className="wl-catalog-card__bar" />

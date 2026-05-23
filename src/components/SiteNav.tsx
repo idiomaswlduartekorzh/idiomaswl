@@ -13,7 +13,7 @@ const NAV_LINKS = [
   { label: 'Método',    href: '/home#metodo' },
   { label: 'Exámenes',  href: '/examenes' },
   { label: 'Lección',   href: '/leccion' },
-  { label: 'Práctica ✨', href: '/practica' },
+  { label: 'Práctica',   href: '/practica' },
   { label: 'Precios',   href: '/home#precios' },
 ];
 
