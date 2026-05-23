@@ -9,11 +9,12 @@ import Image from 'next/image';
 import { useTheme } from '@/components/ThemeProvider';
 
 const NAV_LINKS = [
-  { label: 'Idiomas',  href: '/home#idiomas' },
-  { label: 'Método',   href: '/home#metodo' },
-  { label: 'Exámenes', href: '/examenes' },
-  { label: 'Lección',  href: '/leccion' },
-  { label: 'Precios',  href: '/home#precios' },
+  { label: 'Idiomas',   href: '/home#idiomas' },
+  { label: 'Método',    href: '/home#metodo' },
+  { label: 'Exámenes',  href: '/examenes' },
+  { label: 'Lección',   href: '/leccion' },
+  { label: 'Práctica ✨', href: '/practica' },
+  { label: 'Precios',   href: '/home#precios' },
 ];
 
 function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
@@ -118,6 +119,8 @@ export default function SiteNav() {
               ? pathname.startsWith('/examenes')
               : href === '/leccion'
               ? pathname === '/leccion'
+              : href === '/practica'
+              ? pathname === '/practica'
               : pathname === '/home';
             return (
               <Link
