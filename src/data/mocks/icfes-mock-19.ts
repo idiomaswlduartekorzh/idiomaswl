@@ -1,42 +1,48 @@
 import type { MockExam } from './types';
 
-const CLOZE_19 = `The Discovery That Changed Biology
+const CLOZE_19 = `Exercise and Your Health
 
-In the early 1950s, scientists (1) _______ to understand the molecule that carries genetic information. Although researchers had already established that DNA (2) _______ this information, nobody knew its precise structure. In 1953, James Watson and Francis Crick published a paper (3) _______ a double-helix model of DNA — two strands wound around each other like a twisted ladder. Their discovery (4) _______ on the earlier X-ray work of Rosalind Franklin, whose images had (5) _______ key evidence about DNA's shape. The implications of this discovery were (6) _______, as scientists could now begin to understand how genetic instructions are copied and passed from one generation (7) _______ the next. (8) _______, decades of further research led to the Human Genome Project, which mapped all human genes by 2003. Consequently, medicine has been transformed: doctors can now identify genetic (9) _______ that predispose individuals to certain diseases, making early intervention possible.`;
+Regular exercise is one of the best things you can do (1) _______ your health. When you exercise, your heart beats faster and (2) _______ more blood around the body. This helps your muscles and organs receive the oxygen they need to work properly.
 
-const P5_19 = `Citizens Take On Science: The Rise of Crowdsourced Research
+Many doctors recommend (3) _______ at least 30 minutes of moderate exercise most days of the week. Activities such as walking, cycling, and swimming are (4) _______ for people of all ages. Exercise not only makes the body stronger — it also helps the mind. Research shows that physical activity (5) _______ chemicals in the brain that improve mood and reduce feelings of stress.
 
-For most of history, scientific research was confined to universities, government laboratories, and private companies — institutions with the funding and equipment that most people could never access. That boundary, however, has been dissolving. A growing movement known as citizen science is allowing ordinary people to contribute to genuine scientific research on a massive scale.
+One common (6) _______ for not exercising is a lack of time. However, even short periods of activity can make a difference. If people (7) _______ small changes — such as walking to school or taking the stairs — the health benefits would add up over time. It is never too late to start an exercise routine. The most important thing is to choose activities you (8) _______, so that staying active feels enjoyable rather than like a difficult task. When exercise becomes a regular (9) _______, it improves quality of life for both the body and the mind.`;
 
-Citizen science projects recruit volunteers — sometimes millions of them — to help collect, classify, or analyze data that professional researchers alone could never process. One of the most celebrated examples is Galaxy Zoo, launched in 2007, which asked internet users to classify images of galaxies captured by telescopes. Within a year, more than 150,000 volunteers had classified over 50 million galaxy images, producing results that would have taken a small team of astronomers decades to complete.
+const P5_19 = `The Amazing Human Immune System
 
-The approach has expanded far beyond astronomy. Volunteers now monitor local bird populations, track changes in plant flowering patterns linked to climate change, and even analyze protein folding problems with implications for disease research. In some projects, amateur participants have made discoveries that professionals had missed entirely.
+The human body has a natural defence system called the immune system. It protects us from viruses, bacteria, and other harmful substances that enter the body every day. Without it, even a small infection could be very dangerous.
 
-Critics point out that citizen science has limitations: volunteers may lack training, data quality can be inconsistent, and the most complex analyses still require specialist knowledge. Nevertheless, researchers argue that when properly designed, citizen science projects produce reliable and valuable results. They also create an additional benefit — they connect the public to the scientific process, fostering a broader understanding of how evidence is gathered and evaluated.`;
+When foreign substances called germs enter the body, the immune system reacts immediately. White blood cells are the main protectors of the immune system. They travel through the blood and attack anything that looks harmful to the body. Some white blood cells can remember germs they have fought before. This means that the next time the same germ appears, the body can react faster and more effectively.
 
-const P6_19 = `Editing the Human Blueprint: The Debate Over Gene Editing
+Vaccines work by teaching the immune system to recognise specific diseases without causing illness. A vaccine introduces a weak or dead form of a germ into the body. The immune system learns to fight it. If the same germ later enters the body in its full strength, the immune system already knows how to destroy it quickly.
 
-When scientists first demonstrated that a tool called CRISPR-Cas9 could precisely edit segments of DNA in living organisms, it was heralded as one of the most important biological breakthroughs of the century. The technology allows researchers to cut and modify specific genes with unprecedented accuracy, opening possibilities that once belonged exclusively to science fiction. But as the science has advanced, so too has the ethical controversy surrounding its most consequential potential application: editing the genes of human embryos.
+Good daily habits help keep the immune system strong. Getting enough sleep, eating a variety of vegetables and fruit, and exercising regularly all help white blood cells do their job properly. On the other hand, too much stress can weaken the immune system, making the body more vulnerable to illness.
 
-Proponents of germline editing — changes made to embryos that are then inherited by all future descendants — argue that the technology could eliminate devastating hereditary diseases. Conditions such as Huntington's disease, cystic fibrosis, and sickle-cell anaemia cause immense suffering, and if the genetic mutations responsible could be corrected before birth, millions of future lives might be spared. Advocates also contend that restricting the technology is merely delaying the inevitable; if the science exists, it will eventually be used.
+Scientists continue to learn new things about how the immune system works. This research helps doctors develop better treatments for diseases like cancer, allergies, and infections that have become resistant to common medicines.`;
 
-Opponents raise several serious objections. First, they argue that editing embryonic genes is irreversible — any unintended consequences would be passed to all future generations, compounding errors across time. Second, critics warn of a slide toward eugenics: if gene editing becomes commercially available, wealthy families might select not only for the elimination of disease but for traits like intelligence or physical ability, deepening social inequality. Third, many ethicists argue that an embryo cannot consent to permanent genetic alteration, raising fundamental questions about bodily autonomy.
+const P6_19 = `Colombia's National Parks: Natural Treasures
 
-In 2018, Chinese scientist He Jiankui announced that he had edited the genes of twin embryos to make them resistant to HIV, triggering an international outcry. He was subsequently sentenced to prison, and the scientific community broadly condemned his actions as reckless and premature. The consensus among major scientific bodies is that germline editing in humans should not be attempted until both the science and the ethical frameworks are far more mature.
+Colombia is one of the most biodiverse countries in the world. It has more plant and animal species per square kilometre than almost any other country on Earth. To protect this natural wealth, Colombia has created a network of national parks covering millions of hectares of land and sea.
 
-The debate is unlikely to be resolved soon. What is clear is that this technology will require careful governance that balances scientific progress with protection of human dignity.`;
+The national park system includes many different environments. From the snow-covered peaks of the Sierra Nevada de Santa Marta to the flat grasslands of the Llanos and the rivers of the Amazon region, each park protects a unique ecosystem. The Chingaza National Park, located near Bogotá, is especially important because it provides clean drinking water to millions of people living in the capital city.
 
-const P7_19 = `The Case for Investing in Space Exploration
+Ecotourism — tourism that focuses on nature and learning — has become important for these parks. Visitors can hike through forests, observe birds, and learn about local plants and animals. This type of tourism creates jobs for local communities and encourages people to care about nature.
 
-Critics of space exploration programs often ask the same question: why spend billions of dollars exploring the universe when so many problems remain unsolved on Earth? It is a reasonable question, and it deserves a serious answer. My position is this: investment in space exploration is not a luxury or an act of escapism — it is one of the most strategically important and practically beneficial commitments a government can make.
+However, Colombia's parks face serious problems. Illegal farming, mining, and cutting down forests threaten many ecosystems. The government and conservation groups work together to monitor and protect these lands, but the challenges are significant.
 
-The most immediate argument is the one that tends to be least understood: space research generates technology that transforms everyday life on Earth. GPS navigation, memory foam, water purification filters, scratch-resistant lenses, and the miniaturized electronics inside every modern smartphone all trace their origins to space programs. The return on investment from these spin-off technologies has, by most credible estimates, far exceeded the original public expenditure. When critics argue that space money should go to hospitals, they ignore the fact that numerous medical technologies — from MRI imaging techniques to advances in telemedicine — were developed or accelerated by space research.
+Despite these difficulties, Colombia's national parks remain some of the most spectacular natural areas on Earth. Their protection is important not only for the animals and plants that live there, but also for the communities that depend on clean air and water, and for future generations who deserve to enjoy these beautiful places.`;
 
-The second argument concerns long-term civilizational survival. Earth faces genuine existential risks: asteroid impacts, pandemics, climate-driven collapse, and the exhaustion of finite resources. Space exploration is the only pathway to ensuring that humanity is not confined to a single fragile planet. This is not science fiction — it is elementary risk management. We carry insurance not because we expect disaster, but because the consequences of being unprepared are unacceptable.
+const P7_19 = `Exploring Space: Is It Worth the Cost?
 
-A third argument addresses the inspirational function of space programs. When nations invest in ambitious scientific goals, they generate enthusiasm for science, technology, engineering, and mathematics among young people. This pipeline of talent feeds innovation across every sector of the economy, from pharmaceuticals to clean energy.
+Space exploration has captured the imagination of people around the world for decades. Over the past 60 years, humans have sent satellites into orbit, landed on the Moon, and sent robots to explore Mars. But some people ask an important question: is it worth spending billions of dollars on space when there are so many serious problems on Earth?
 
-Those who oppose space investment often present it as a binary choice between stars and schools. This is a false dilemma. Space budgets in most countries represent a fraction of one percent of total government spending. The question is not whether we can afford to explore space — it is whether we can afford not to.`;
+Those who support space programmes say the research has brought many practical benefits. Many technologies we use every day — including GPS navigation, weather forecasting, and improvements in medical equipment — came from space research. Scientists also argue that studying other planets helps us better understand our own planet and how to protect it.
+
+Space exploration also inspires young people to study science, technology, and engineering. Many students who become interested in astronomy go on to work in fields that benefit society, from medicine to computing. Without space programmes, many of these students might never have chosen a scientific career.
+
+Critics argue that the money spent on space should be used to solve more immediate problems like poverty, hunger, and disease on Earth. They say it is difficult to justify spending billions on rockets when many people do not have clean water or access to good schools.
+
+Both sides raise important points. Most people agree that some investment in space exploration is valuable. However, governments must also invest strongly in improving life here on Earth. The challenge is to find the right balance between exploring the future and taking care of the present.`;
 
 const mock: MockExam = {
   id: 'mock-19',
@@ -257,12 +263,7 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (1)?',
-          options: [
-            'refusing',
-            'struggled',
-            'expected',
-            'celebrated',
-          ],
+          options: ['to', 'for', 'of', 'at'],
           answer: 1,
         },
         {
@@ -272,12 +273,7 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (2)?',
-          options: [
-            'carries',
-            'produces',
-            'destroys',
-            'creates',
-          ],
+          options: ['pumps', 'removes', 'takes', 'stops'],
           answer: 0,
         },
         {
@@ -287,13 +283,8 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (3)?',
-          options: [
-            'proposing',
-            'denying',
-            'criticizing',
-            'abandoning',
-          ],
-          answer: 0,
+          options: ['to do', 'doing', 'done', 'having done'],
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -302,13 +293,8 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (4)?',
-          options: [
-            'ignored',
-            'replaced',
-            'built',
-            'questioned',
-          ],
-          answer: 2,
+          options: ['dangerous', 'suitable', 'boring', 'difficult'],
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -317,13 +303,8 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (5)?',
-          options: [
-            'requested',
-            'provided',
-            'hidden',
-            'denied',
-          ],
-          answer: 1,
+          options: ['blocks', 'removes', 'releases', 'reduces'],
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -332,8 +313,8 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (6)?',
-          options: ['minimal', 'temporary', 'ambiguous', 'profound'],
-          answer: 3,
+          options: ['question', 'reason', 'achievement', 'surprise'],
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -342,12 +323,7 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (7)?',
-          options: [
-            'from',
-            'to',
-            'into',
-            'by',
-          ],
+          options: ['make', 'made', 'making', 'to make'],
           answer: 1,
         },
         {
@@ -357,13 +333,8 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (8)?',
-          options: [
-            'Nevertheless',
-            'Despite',
-            'However',
-            'Therefore',
-          ],
-          answer: 3,
+          options: ['dislike', 'avoid', 'enjoy', 'fear'],
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -372,13 +343,8 @@ const mock: MockExam = {
           stimulus: CLOZE_19,
           stimulusLabel: 'Read the passage and answer the questions.',
           text: 'Which word best completes blank (9)?',
-          options: [
-            'symptoms',
-            'infections',
-            'mutations',
-            'behaviors',
-          ],
-          answer: 2,
+          options: ['problem', 'habit', 'mistake', 'subject'],
+          answer: 1,
         },
       ],
     },
@@ -532,10 +498,10 @@ const mock: MockExam = {
           stimulusLabel: 'Read the article.',
           text: 'What is the main topic of this article?',
           options: [
-            'How volunteer participation is contributing to scientific research.',
-            'The history of professional astronomy and telescope technology.',
-            'Why universities are losing funding for scientific projects.',
-            'The challenges of collecting data in remote natural environments.',
+            'How the human immune system protects the body from illness.',
+            'The history of modern medicine and surgery.',
+            'Why people need to take vitamins every day.',
+            'How hospitals treat serious diseases.',
           ],
           answer: 0,
         },
@@ -545,14 +511,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'According to the article, how many volunteers participated in the Galaxy Zoo project?',
+          text: 'According to the text, what are white blood cells described as?',
           options: [
-            'More than one million.',
-            'Fewer than ten thousand.',
-            'Approximately 500,000.',
-            'More than 150,000.',
+            'The part of the body that produces energy.',
+            'The main protectors of the immune system.',
+            'Cells that carry oxygen to the organs.',
+            'Substances found in food that fight illness.',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -560,14 +526,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'What task did Galaxy Zoo volunteers perform?',
+          text: 'How do vaccines work, according to the text?',
           options: [
-            'They collected rock samples from remote locations.',
-            'They classified images of galaxies captured by telescopes.',
-            'They analyzed climate data from weather stations.',
-            'They wrote software to process astronomical data.',
+            'They make the body produce more white blood cells.',
+            'They destroy all germs inside the body at once.',
+            'They teach the immune system to recognise diseases without causing illness.',
+            'They replace damaged parts of the immune system.',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -575,14 +541,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'Which of the following is mentioned as an area where citizen science volunteers currently work?',
+          text: 'Which habits does the text say help keep the immune system strong?',
           options: [
-            'Testing new medications in clinical trials.',
-            'Operating deep-sea research submarines.',
-            'Monitoring local bird populations.',
-            'Designing laboratory equipment for universities.',
+            'Drinking cold water, avoiding the sun, and sleeping less.',
+            'Getting enough sleep, eating vegetables and fruit, and exercising regularly.',
+            'Taking medicines every day and avoiding exercise.',
+            'Eating large meals and spending time indoors.',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -590,14 +556,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'The word "confined" in the first paragraph most likely means:',
+          text: 'According to the text, what can weaken the immune system?',
           options: [
-            'Shared equally among different groups.',
-            'Limited to or restricted within certain boundaries.',
-            'Studied carefully by experts.',
-            'Supported financially by public institutions.',
+            'Eating too many vegetables.',
+            'Going to bed early.',
+            'Too much stress.',
+            'Doing moderate exercise.',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -605,14 +571,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'What is one criticism of citizen science mentioned in the article?',
+          text: 'The word "defence" in the first paragraph most likely means:',
           options: [
-            'Volunteers are paid too much for their contributions.',
-            'Projects only attract participants from wealthy countries.',
-            'Volunteers may lack training and data quality can be inconsistent.',
-            'The projects are usually too small to produce meaningful results.',
+            'A type of medicine that cures infections.',
+            'A system that protects against attack or harm.',
+            'A part of the body that produces energy.',
+            'A medical procedure performed by doctors.',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -620,14 +586,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'The article says that the boundary between professional and public science "has been dissolving." What does this imply?',
+          text: 'Why can the body react faster the second time it meets the same germ?',
           options: [
-            'The distinction is gradually disappearing as the public becomes involved in research.',
-            'Professional scientists are losing their jobs to volunteers.',
-            'Scientific institutions are closing because of budget cuts.',
-            'Volunteers are replacing university researchers in most fields.',
+            'Because white blood cells become stronger after exercise.',
+            'Because some white blood cells remember germs they have fought before.',
+            'Because the body produces more vaccines automatically.',
+            'Because the immune system sends more blood to the infected area.',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -635,14 +601,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'According to the article, what additional benefit do citizen science projects provide beyond data collection?',
+          text: 'What does the text say happens when a vaccine is introduced to the body?',
           options: [
-            'They allow volunteers to earn academic qualifications.',
-            'They generate revenue for scientific institutions.',
-            'They reduce the cost of laboratory equipment for universities.',
-            'They connect the public to the scientific process, building broader understanding.',
+            'The body immediately destroys the vaccine.',
+            'The person becomes ill for a short time.',
+            'The immune system learns to fight the germ without causing illness.',
+            'White blood cells stop working for a few days.',
           ],
-          answer: 3,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -650,21 +616,21 @@ const mock: MockExam = {
           part: 5,
           stimulus: P5_19,
           stimulusLabel: 'Read the article.',
-          text: 'What can be inferred about the value of citizen science from the Galaxy Zoo example?',
+          text: 'Why is research into the immune system important, according to the text?',
           options: [
-            'Volunteer contributions are less accurate than professional analysis.',
-            'Citizen science works only in astronomy and not in other fields.',
-            'Large-scale volunteer participation can achieve results that professionals alone cannot match in a reasonable timeframe.',
-            'Volunteers need years of training before they can contribute usefully.',
+            'It helps doctors develop better treatments for diseases.',
+            'It allows scientists to create new types of food.',
+            'It teaches people how to exercise more effectively.',
+            'It helps the government save money on hospital costs.',
           ],
-          answer: 2,
+          answer: 0,
         },
       ],
     },
     {
       part: 6,
       title: 'Parte 6 — Texto largo: inferencia',
-      instructions: 'Read the longer text carefully and answer the questions. Use inference and context clues.',
+      instructions: 'Read the text carefully and answer the questions.',
       questions: [
         {
           type: 'mcq',
@@ -674,10 +640,10 @@ const mock: MockExam = {
           stimulusLabel: 'Read the article.',
           text: 'What is the main purpose of this text?',
           options: [
-            'To explain how CRISPR technology works at a molecular level.',
-            'To present the scientific possibilities and ethical arguments surrounding human germline editing.',
-            'To argue that gene editing research should be completely abandoned.',
-            'To describe the criminal case against He Jiankui in detail.',
+            'To explain why Colombia is the best country in the world.',
+            'To describe the importance of Colombia\'s national parks and the challenges they face.',
+            'To criticise the Colombian government for not protecting nature.',
+            'To explain how ecotourism was invented.',
           ],
           answer: 1,
         },
@@ -687,14 +653,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: P6_19,
           stimulusLabel: 'Read the article.',
-          text: 'What is one argument made by supporters of germline editing?',
+          text: 'Why is Chingaza National Park especially important, according to the text?',
           options: [
-            'It would allow scientists to create stronger soldiers.',
-            'It is entirely safe and free from any risk of unintended effects.',
-            'Most governments have already approved it for clinical use.',
-            'It could eliminate hereditary diseases that cause significant suffering.',
+            'It is the largest park in South America.',
+            'It is the most visited tourist destination in Colombia.',
+            'It provides clean drinking water to millions of people in Bogotá.',
+            'It is home to the greatest number of bird species in the world.',
           ],
-          answer: 3,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -702,14 +668,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: P6_19,
           stimulusLabel: 'Read the article.',
-          text: 'Why do opponents argue that the irreversibility of germline editing is particularly serious?',
+          text: 'What is ecotourism, as described in the text?',
           options: [
-            'Because edited genes would be inherited by all future descendants, spreading any errors across generations.',
-            'Because the editing process is physically painful for the embryo.',
-            'Because the technology is currently too expensive to be safely reversed.',
-            'Because irreversible changes cannot be approved by ethics committees.',
+            'A type of tourism that focuses on expensive hotels in natural areas.',
+            'Tourism that focuses on nature and learning.',
+            'A form of travel that is forbidden in national parks.',
+            'A service provided only for scientists and researchers.',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -717,14 +683,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: P6_19,
           stimulusLabel: 'Read the article.',
-          text: 'The text mentions the risk of a "slide toward eugenics." What does this expression most likely mean?',
+          text: 'The word "biodiversity" most likely refers to:',
           options: [
-            'A rapid improvement in the quality of scientific research.',
-            'The physical risk of slipping during laboratory procedures.',
-            'A decline in ethical standards among university researchers.',
-            'A gradual movement toward selecting human traits for social or genetic superiority.',
+            'The variety of plants and animals in a particular place.',
+            'The number of people who visit a national park each year.',
+            'The size of the land covered by a national park.',
+            'The different types of weather in a country.',
           ],
-          answer: 3,
+          answer: 0,
         },
         {
           type: 'mcq',
@@ -732,14 +698,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: P6_19,
           stimulusLabel: 'Read the article.',
-          text: 'What was the international scientific community\'s reaction to He Jiankui\'s announcement?',
+          text: 'Which of the following is mentioned as a threat to Colombia\'s national parks?',
           options: [
-            'They broadly condemned his actions as reckless and premature.',
-            'They praised his work as a major breakthrough.',
-            'They called for further studies before making a judgment.',
-            'They asked him to share his methodology so it could be replicated.',
+            'Too many tourists visiting the parks.',
+            'Climate change causing heavy rainfall.',
+            'Illegal farming, mining, and cutting down forests.',
+            'A lack of interest from local communities.',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -747,14 +713,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: P6_19,
           stimulusLabel: 'Read the article.',
-          text: 'What does the phrase "unprecedented accuracy" suggest about CRISPR-Cas9?',
+          text: 'What benefit does ecotourism bring to local communities, according to the text?',
           options: [
-            'The technology is inexpensive compared to older methods.',
-            'Only a small number of specialized laboratories can use it correctly.',
-            'It can edit genes with a level of precision that was not previously possible.',
-            'The technology has been in use for over fifty years.',
+            'It gives local people free access to the parks.',
+            'It creates jobs for people who live near the parks.',
+            'It provides free education for children in rural areas.',
+            'It pays for new roads and hospitals in remote regions.',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -762,21 +728,21 @@ const mock: MockExam = {
           part: 6,
           stimulus: P6_19,
           stimulusLabel: 'Read the article.',
-          text: 'Which of the following best reflects the author\'s overall stance on human germline editing?',
+          text: 'What can be inferred about the author\'s view of Colombia\'s national parks?',
           options: [
-            'The author strongly supports immediate use of the technology in clinical settings.',
-            'The author takes a cautious position, acknowledging both promise and serious ethical concerns.',
-            'The author believes the technology is scientifically worthless.',
-            'The author argues that only government scientists should be allowed to use gene editing.',
+            'The author believes the parks are too expensive to maintain.',
+            'The author thinks the challenges are too great to be solved.',
+            'The author strongly believes in protecting the parks for people and nature.',
+            'The author supports replacing national parks with tourist resorts.',
           ],
-          answer: 1,
+          answer: 2,
         },
       ],
     },
     {
       part: 7,
       title: 'Parte 7 — Texto de opinión',
-      instructions: "Read the opinion text and answer the questions about the author's argument.",
+      instructions: 'Read the article and answer the questions.',
       questions: [
         {
           type: 'mcq',
@@ -784,14 +750,14 @@ const mock: MockExam = {
           part: 7,
           stimulus: P7_19,
           stimulusLabel: 'Read the opinion article.',
-          text: "What is the author's central argument?",
+          text: 'What question does the text begin with?',
           options: [
-            'Space programs generate practical benefits that justify continued government investment.',
-            'Space exploration is an unnecessary expense that should be eliminated.',
-            'All funding currently spent on defense should be redirected to space research.',
-            'Space exploration is only worthwhile if it leads to human colonization of other planets.',
+            'Should governments build more schools instead of hospitals?',
+            'Is space exploration worth the money when there are problems on Earth?',
+            'How can scientists explore other planets without leaving Earth?',
+            'Why do some countries spend more on science than others?',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -799,12 +765,12 @@ const mock: MockExam = {
           part: 7,
           stimulus: P7_19,
           stimulusLabel: 'Read the opinion article.',
-          text: 'According to the author, which technologies trace their origins to space programs?',
+          text: 'Which everyday technology does the text say came from space research?',
           options: [
-            'Nuclear energy, the internet, and electric vehicles.',
-            'GPS navigation, memory foam, water purification filters, and miniaturized electronics.',
-            'Antibiotics, medical imaging, and renewable energy.',
-            'Computers, mobile phones, and satellite television only.',
+            'Electric cars and renewable energy.',
+            'GPS navigation and weather forecasting.',
+            'Smartphones and the internet.',
+            'Medical vaccines and antibiotics.',
           ],
           answer: 1,
         },
@@ -814,14 +780,14 @@ const mock: MockExam = {
           part: 7,
           stimulus: P7_19,
           stimulusLabel: 'Read the opinion article.',
-          text: 'What does the author mean by comparing space investment to "insurance"?',
+          text: 'According to supporters of space exploration, how does it benefit young people?',
           options: [
-            'Space agencies should be required to pay for the damages caused by satellites.',
-            'Space travel is too risky and governments should not fund it without guarantees.',
-            'The costs of space programs are covered by private insurance companies.',
-            'Just as we prepare for unlikely disasters with insurance, exploring space is rational preparation for existential risks.',
+            'It creates jobs directly on space stations.',
+            'It provides free university education for students interested in science.',
+            'It inspires students to study science and engineering.',
+            'It gives teenagers the opportunity to travel to space.',
           ],
-          answer: 3,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -829,14 +795,14 @@ const mock: MockExam = {
           part: 7,
           stimulus: P7_19,
           stimulusLabel: 'Read the opinion article.',
-          text: 'How does the author respond to critics who argue space money should fund hospitals?',
+          text: 'What do critics say should be done with the money spent on space programmes?',
           options: [
-            'By agreeing that hospitals need more funding than space programs.',
-            'By arguing that space budgets are larger than hospital budgets.',
-            'By pointing out that space research has itself contributed to medical technologies like MRI imaging.',
-            'By suggesting that space and health are entirely unrelated policy areas.',
+            'It should be given directly to scientists.',
+            'It should be used to explore the oceans instead.',
+            'It should be saved for future emergencies.',
+            'It should be used to solve problems like poverty and hunger on Earth.',
           ],
-          answer: 2,
+          answer: 3,
         },
         {
           type: 'mcq',
@@ -844,14 +810,14 @@ const mock: MockExam = {
           part: 7,
           stimulus: P7_19,
           stimulusLabel: 'Read the opinion article.',
-          text: 'What does the author call "a false dilemma"?',
+          text: 'The word "justify" in the text most likely means:',
           options: [
-            'The belief that space exploration can solve all environmental problems.',
-            'The idea that we must choose between space investment and funding education.',
-            'The claim that science funding should only go to proven technologies.',
-            'The assumption that private companies are better at space exploration than governments.',
+            'To give a good reason for something.',
+            'To calculate the total cost of a project.',
+            'To disagree with an official decision.',
+            'To improve the quality of something.',
           ],
-          answer: 1,
+          answer: 0,
         },
         {
           type: 'mcq',
@@ -859,14 +825,14 @@ const mock: MockExam = {
           part: 7,
           stimulus: P7_19,
           stimulusLabel: 'Read the opinion article.',
-          text: 'The word "spin-off" in the second paragraph most likely means:',
+          text: 'What does the text say both sides of the argument agree on?',
           options: [
-            'A secondary product or benefit produced from a primary activity.',
-            'A failed project that wasted government funds.',
-            'A type of spacecraft used for scientific research.',
-            'A rotation technique used by astronauts in zero gravity.',
+            'Space exploration should stop immediately.',
+            'Some investment in space is valuable.',
+            'All government money should go to space programmes.',
+            'The Moon is the best destination for future missions.',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -874,12 +840,12 @@ const mock: MockExam = {
           part: 7,
           stimulus: P7_19,
           stimulusLabel: 'Read the opinion article.',
-          text: 'Would the author most likely agree with the following statement: "A nation that stops investing in science eventually falls behind"?',
+          text: 'What is the main conclusion of the text?',
           options: [
-            'No, because the author believes private companies should fund all science.',
-            'No, because the author only discusses space, not science in general.',
-            'Yes, because the author argues that space investment drives innovation in talent and technology across the entire economy.',
-            'Yes, but only if the nation is already wealthy enough to afford it.',
+            'Space exploration is too dangerous and should be stopped.',
+            'Only rich countries should be allowed to explore space.',
+            'Governments should find the right balance between space exploration and improving life on Earth.',
+            'Science is more important than social programmes.',
           ],
           answer: 2,
         },

@@ -1,40 +1,40 @@
 import type { MockExam } from './types';
 
-const PART5_TEXT = `Social Media Algorithms and the Attention Economy
+const PART5_TEXT = `Technology in the Classroom
 
-When you scroll through your social media feed, the content you see is not random. Every post, video, and advertisement has been selected by a sophisticated algorithm designed to keep you engaged for as long as possible. Understanding how these systems work — and who benefits from them — has become one of the central questions of the digital age.
+Technology has changed the way students learn and study. In many schools around the world, students now use tablets, laptops, and smartphones as part of their daily education. These tools allow students to search for information quickly, watch educational videos, and communicate with their teachers and classmates.
 
-Social media platforms earn revenue through advertising, and advertisers pay more for users who spend more time on the platform. As a result, algorithms are optimized not for user wellbeing, but for engagement metrics: likes, shares, comments, and above all, time spent on screen. Research published in the journal Nature Human Behaviour found that content triggering strong emotions — particularly outrage and anxiety — spreads significantly faster than neutral content.
+One of the main advantages of using technology in the classroom is easy access to information. In the past, students had to rely only on textbooks and the school library. Today, they can find information on almost any topic in seconds. This makes research projects easier and more interesting.
 
-This creates a perverse incentive. Platforms profit when users are emotionally activated, even when that activation is negative. Critics argue that this architecture has contributed to rising rates of anxiety among teenagers, increased political polarization, and the rapid spread of misinformation. Studies suggest that false news travels six times faster on social media than accurate reporting.
+Technology also helps students with different learning styles. Some students learn better by watching videos, while others prefer reading or listening to audio recordings. Digital tools make it possible to offer different types of content to meet these different needs.
 
-Defenders of the algorithm model point out that users ultimately choose what to engage with, and that platforms have introduced features allowing users to customize their feeds. Some researchers also note that social media has enabled marginalized communities to organize, share stories, and demand accountability in ways that were previously impossible.
+However, technology also has disadvantages in the classroom. Many students use their phones to play games or check social media during lessons, which can be distracting. Some teachers report that students who use devices during class pay less attention and find it harder to remember what was taught.
 
-The debate is unlikely to be resolved soon. However, one thing is clear: the choices made by a handful of engineers designing recommendation systems now shape the information environment of billions of people worldwide.`;
+Experts suggest that the key is balance. Technology should be used as a tool to support learning, not as a distraction. When students and teachers agree on clear rules about how devices are used, technology can make education more effective and enjoyable for everyone.`;
 
-const PART6_TEXT = `Artificial Intelligence in Healthcare: Promise and Peril
+const PART6_TEXT = `Staying Safe Online
 
-The integration of artificial intelligence into medical practice represents one of the most consequential technological shifts of the twenty-first century. Proponents argue that AI will democratize access to expertise, reduce diagnostic errors, and accelerate drug discovery at a pace no human team could match. Skeptics, meanwhile, warn of hidden biases, liability gaps, and the risk of eroding the human connection that lies at the heart of medicine.
+Social media platforms such as Instagram and TikTok have become an important part of life for millions of teenagers. These platforms offer many benefits: they allow young people to stay connected with friends, discover new music and ideas, and express themselves creatively.
 
-AI diagnostic tools have already demonstrated remarkable capabilities. In 2019, a study published in The Lancet Digital Health showed that a deep learning algorithm could identify diabetic retinopathy — a leading cause of blindness — from retinal scans with an accuracy exceeding that of trained ophthalmologists. Similar results have been reported for detecting breast cancer in mammograms and predicting sepsis in intensive care patients. In resource-limited settings, where specialist physicians are scarce, such tools could prove lifesaving.
+However, social media also carries risks. One common problem is cyberbullying, which happens when someone uses technology to insult, threaten, or embarrass another person. Research shows that approximately one in three teenagers has experienced some form of cyberbullying. Unlike face-to-face bullying, online harassment can follow a person everywhere and is difficult to escape.
 
-Yet the technology is not without serious limitations. AI systems learn from historical data, and medical data has historically reflected systemic inequalities. A landmark 2019 study in Science revealed that a widely used algorithm for allocating healthcare resources assigned lower risk scores to Black patients than to equally ill White patients — not because of deliberate programming, but because it used healthcare spending as a proxy for illness, and Black patients had historically received less care. The algorithm perpetuated inequality rather than correcting it.
+Another concern is the effect of social media on self-image. When young people constantly see photos of others looking perfect and happy, they may begin to feel that their own lives are not as good. This can lead to feelings of low self-esteem and sadness.
 
-Questions of accountability also remain unresolved. When an AI-assisted diagnosis proves incorrect and a patient is harmed, who is responsible — the physician who relied on the tool, the hospital that deployed it, or the company that built it? Existing legal frameworks were not designed with such scenarios in mind.
+Experts recommend several strategies for using social media safely. Users should keep their profiles private so that only trusted friends and family can see their posts. They should also think carefully before sharing personal information such as their home address or school name. If someone receives an unpleasant message, experts advise not to reply in anger. Instead, it is better to block the sender and speak to a trusted adult.
 
-Ultimately, the question is not whether AI will transform healthcare — it already is. The more pressing question is whether the institutions governing medicine can develop the regulatory frameworks, ethical standards, and technical safeguards needed to ensure that transformation benefits everyone, rather than amplifying the inequalities that already exist within the system.`;
+The most important message is that social media is just one part of life. Spending time with friends and family in person, playing sports, and enjoying hobbies offline are equally important for personal wellbeing.`;
 
-const PART7_TEXT = `The Case for Strong Digital Privacy Regulations
+const PART7_TEXT = `Screen Time: How Much Is Too Much?
 
-We are living in an era of unprecedented surveillance. Every search query, every purchase, every location check-in, and every message we send is collected, stored, and analyzed by corporations whose business models depend on knowing as much about us as possible. The data economy is worth trillions of dollars, and the raw material — our personal information — is extracted largely without our meaningful consent.
+Screen time refers to the amount of time we spend looking at phones, tablets, computers, and televisions. In recent years, screen time has increased significantly. Studies show that teenagers in many countries spend an average of five or more hours per day in front of screens.
 
-Some argue that this arrangement is acceptable because users receive free services in return. But this framing fundamentally misunderstands the nature of the exchange. Users are not receiving services for free — they are paying with something far more valuable than money: their behavioral data, their psychological profiles, their private communications. The asymmetry of this transaction is staggering. A user spends a few minutes on a platform; the platform retains insights about that user for years, sells those insights to third parties, and uses them to manipulate future behavior.
+Technology offers clear benefits. Students use screens to complete homework, communicate with friends, watch educational content, and enjoy entertainment. Screens have become a central part of modern life, and it would be very difficult to avoid them completely.
 
-Regulation is not the enemy of innovation. The European Union's General Data Protection Regulation (GDPR), often cited as an overreaction by industry lobbyists, has in practice strengthened public trust in digital services, increased transparency about data use, and forced companies to build privacy into their systems from the ground up. Research shows that GDPR-compliant firms have not suffered the competitive disadvantages that industry predicted; many have become more trusted by consumers as a result.
+However, health experts warn that too much screen time can have negative effects. Staring at a screen for long periods can cause eye strain, headaches, and poor posture. More importantly, using screens late at night can interfere with sleep. The light produced by screens signals to the brain that it is still daytime, which makes it harder to fall asleep and stay asleep.
 
-Critics of regulation argue that it stifles innovation and that users already have sufficient control through opt-out mechanisms. However, research consistently shows that default settings determine behavior: the vast majority of users never change privacy settings, making the default — usually maximum data collection — the de facto standard. True consent requires meaningful choices, not buried checkboxes.
+Doctors recommend that teenagers limit their recreational screen time to no more than two hours per day. They also suggest avoiding screens for at least one hour before going to bed. Physical activity, time spent outdoors, and face-to-face conversations should not be replaced by time on screens.
 
-The digital economy will not regulate itself. History shows that industries left to self-regulate consistently prioritize profit over public interest. Strong, enforceable privacy laws are not a restriction on freedom — they are its precondition. Without them, the freedom to communicate, to associate, and to think privately erodes one data point at a time.`;
+Finding the right balance is a personal challenge. Some people decide to have specific "no phone" times each day, such as during meals or before sleeping. Others download apps that track or limit their screen usage. Whatever method a person chooses, the goal is the same: to enjoy the benefits of technology without allowing it to take control of daily life.`;
 
 const mock: MockExam = {
   id: 'mock-11',
@@ -488,12 +488,12 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'What is the primary purpose of social media algorithms according to the text?',
+          text: 'What is the main topic of the article?',
           options: [
-            'To show users the most accurate and balanced news.',
-            'To maximize the time users spend on the platform.',
-            'To connect users with people who share their interests.',
-            'To filter out harmful and misleading content.',
+            'The history of computers in schools.',
+            'The advantages and disadvantages of using technology in education.',
+            'How smartphones were invented.',
+            'Why students should not use the internet.',
           ],
           answer: 1,
         },
@@ -503,14 +503,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'According to the research cited, what type of content spreads most rapidly on social media?',
+          text: 'According to the text, how has technology changed access to information for students?',
           options: [
-            'Educational and informative content.',
-            'Content that receives the most likes.',
-            'Content posted by verified accounts.',
-            'Content that triggers strong emotional reactions.',
+            'Students now need to visit the library more often.',
+            'Students can only find information about specific school subjects.',
+            'Students can find information on almost any topic in seconds.',
+            'Students receive printed materials delivered to their homes.',
           ],
-          answer: 3,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -518,9 +518,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'The text states that false news travels how many times faster than accurate reporting on social media?',
-          options: ['Six times faster.', 'Three times faster.', 'Ten times faster.', 'Twice as fast.'],
-          answer: 0,
+          text: 'What is one advantage of digital tools for students with different learning styles?',
+          options: [
+            'They can attend school without a teacher.',
+            'They can receive different types of content that match how they learn best.',
+            'They are no longer required to take exams.',
+            'They automatically translate all materials into other languages.',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -528,12 +533,12 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'The word "perverse" as used in the third paragraph most closely means:',
+          text: 'What do some teachers report about students who use devices during class?',
           options: [
-            'Financially profitable.',
-            'Difficult to understand.',
-            'Wrong in a way that goes against what is expected or acceptable.',
-            'Technically complex.',
+            'They ask more questions and participate more.',
+            'They finish their work faster than other students.',
+            'They pay less attention and find it harder to remember what was taught.',
+            'They show better results in their exams.',
           ],
           answer: 2,
         },
@@ -543,12 +548,12 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'Which of the following best describes a view that SUPPORTS social media algorithms, according to the text?',
+          text: 'According to the text, what is the disadvantage of using technology in the classroom mentioned in the fourth paragraph?',
           options: [
-            'Platforms have actively suppressed emotional content to protect users.',
-            'Users retain some agency over their experience through feed customization features.',
-            'Algorithms have been proven not to affect political polarization.',
-            'Social media companies do not benefit financially from increased engagement.',
+            'Technology is very expensive for schools to buy.',
+            'Students may get distracted by games and social media on their devices.',
+            'Not all students have access to smartphones or tablets.',
+            'Technology causes problems with the school internet connection.',
           ],
           answer: 1,
         },
@@ -558,14 +563,14 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'What ability has social media given to marginalized communities, according to the defenders mentioned in the text?',
+          text: 'The word "distraction" as used in the text most likely means:',
           options: [
-            'The ability to create and sell their own algorithms.',
-            'Access to premium advertising tools at no cost.',
-            'A direct channel to lobby government officials.',
-            'The ability to organize, share stories, and demand accountability.',
+            'Something that helps students focus better.',
+            'A technical problem with a device.',
+            'Something that takes attention away from what a person should be doing.',
+            'A new type of educational application.',
           ],
-          answer: 3,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -573,12 +578,12 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'What does the author imply by saying that recommendation systems "shape the information environment of billions of people"?',
+          text: 'According to experts quoted in the text, what should technology be used for in schools?',
           options: [
-            'People are satisfied with the information they receive online.',
-            'Social media companies share responsibility for what people believe and discuss.',
-            'Governments control what information appears in social media feeds.',
-            'The number of social media users is growing exponentially.',
+            'To replace teachers completely.',
+            'As a tool to support learning, not as a distraction.',
+            'Only for entertainment during breaks.',
+            'To communicate with friends from other schools.',
           ],
           answer: 1,
         },
@@ -588,12 +593,12 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'The phrase "attention economy" in the title most likely refers to:',
+          text: 'What does the text say students and teachers need to do for technology to work well in education?',
           options: [
-            'A financial system based on academic attention.',
-            'The study of how people focus in school environments.',
-            'A model in which user attention is treated as a valuable commercial resource.',
-            'Government investment in digital infrastructure.',
+            'Use only the newest and most expensive devices.',
+            'Avoid using technology during difficult subjects.',
+            'Agree on clear rules about how devices are used.',
+            'Ask the government to pay for all school technology.',
           ],
           answer: 2,
         },
@@ -603,24 +608,24 @@ const mock: MockExam = {
           part: 5,
           stimulus: PART5_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'What can be inferred from the final paragraph about the author\'s overall stance?',
+          text: 'What is the general message of the final paragraph?',
           options: [
-            'The author believes social media companies will voluntarily improve their algorithms.',
-            'The author suggests that the power of algorithm designers requires critical societal attention.',
-            'The author argues that social media should be banned immediately.',
-            'The author is optimistic that the debate will be resolved quickly.',
+            'Technology should be removed from all classrooms immediately.',
+            'Technology is perfect and has no negative effects on learning.',
+            'With proper rules and balance, technology can improve education for everyone.',
+            'Only rich schools can benefit from using technology.',
           ],
-          answer: 1,
+          answer: 2,
         },
       ],
     },
 
     // ── Part 6 — Texto largo: inferencia (7 questions) ────────────────────────
-    // Answers: 0, 3, 1, 2, 0, 3, 2
+    // Answers: 1, 0, 3, 2, 0, 3, 1
     {
       part: 6,
       title: 'Parte 6 — Texto largo: inferencia',
-      instructions: 'Read the article carefully and answer the questions. Focus on implied meaning, author attitude, and text structure.',
+      instructions: 'Read the article carefully and answer the questions. Some questions ask about implied meaning.',
       questions: [
         {
           type: 'mcq',
@@ -628,14 +633,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: PART6_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'What is the main idea of the article?',
+          text: 'What is the main purpose of the article?',
           options: [
-            'AI in healthcare offers significant promise but requires careful oversight to avoid reinforcing inequalities.',
-            'AI will replace human doctors within the next decade.',
-            'Medical data is too biased for AI to be useful in healthcare.',
-            'Legal frameworks are the most pressing challenge for AI adoption in medicine.',
+            'To explain why teenagers should not use social media at all.',
+            'To describe both the benefits and risks of social media for teenagers.',
+            'To show that cyberbullying does not affect most teenagers.',
+            'To explain how social media companies make money.',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -643,14 +648,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: PART6_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'According to the article, why could AI diagnostic tools be particularly valuable in resource-limited settings?',
+          text: 'According to the text, what is cyberbullying?',
           options: [
-            'They are cheaper to operate than traditional medical equipment.',
-            'They eliminate the need for any medical infrastructure.',
-            'They can process patient data faster than manual record systems.',
-            'They can perform the role of specialist physicians who are not available locally.',
+            'Using technology to insult, threaten, or embarrass another person.',
+            'Spending too much time playing games online.',
+            'Sharing videos of people without their permission.',
+            'Using social media to make new friends.',
           ],
-          answer: 3,
+          answer: 0,
         },
         {
           type: 'mcq',
@@ -658,14 +663,14 @@ const mock: MockExam = {
           part: 6,
           stimulus: PART6_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'The algorithm described in the 2019 Science study assigned lower risk scores to Black patients because it:',
+          text: 'How is online bullying different from face-to-face bullying, according to the article?',
           options: [
-            'Was programmed with deliberately biased rules.',
-            'Used healthcare spending as a measure of illness, reflecting historical inequalities in care received.',
-            'Relied on genetic data that varies between populations.',
-            'Was tested exclusively on White patient populations.',
+            'Online bullying happens less often than face-to-face bullying.',
+            'Face-to-face bullying is more serious than online bullying.',
+            'Online bullying only affects older teenagers.',
+            'Online harassment is harder to escape because it can follow a person everywhere.',
           ],
-          answer: 1,
+          answer: 3,
         },
         {
           type: 'mcq',
@@ -673,12 +678,12 @@ const mock: MockExam = {
           part: 6,
           stimulus: PART6_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'The word "perpetuated" in the third paragraph most likely means:',
+          text: 'The word "self-image" in the third paragraph most likely means:',
           options: [
-            'Eliminated through technological correction.',
-            'Detected and reported to regulators.',
-            'Made to continue without correction.',
-            'Gradually reduced over time.',
+            'A photo that a person takes of themselves.',
+            'How popular a person is on social media.',
+            'The way a person sees and feels about themselves.',
+            'A type of filter used on social media photos.',
           ],
           answer: 2,
         },
@@ -688,12 +693,12 @@ const mock: MockExam = {
           part: 6,
           stimulus: PART6_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'What unresolved question does the author raise in the fourth paragraph?',
+          text: 'According to the text, what is the first safety strategy experts recommend for social media users?',
           options: [
-            'Who bears responsibility when an AI-assisted diagnosis causes patient harm.',
-            'Whether AI algorithms can be made fully accurate.',
-            'How much AI diagnostic tools cost to develop.',
-            'Whether patients should be informed when AI is used in their diagnosis.',
+            'Keep profiles private so only trusted friends and family can see your posts.',
+            'Never use social media platforms.',
+            'Report all negative comments to the platform.',
+            'Always post with a parent or guardian present.',
           ],
           answer: 0,
         },
@@ -703,12 +708,12 @@ const mock: MockExam = {
           part: 6,
           stimulus: PART6_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'Which of the following statements would the author most likely AGREE with?',
+          text: 'What does the article say you should do if you receive an unpleasant message online?',
           options: [
-            'AI should be banned from clinical settings until all biases are eliminated.',
-            'The benefits of AI in healthcare are so clear that regulation is unnecessary.',
-            'Existing legal frameworks are well-prepared to handle AI-related medical disputes.',
-            'The governance of AI in medicine must evolve alongside the technology to ensure equitable benefits.',
+            'Reply immediately to defend yourself.',
+            'Delete your social media account.',
+            'Share the message with all your friends.',
+            'Block the sender and talk to a trusted adult.',
           ],
           answer: 3,
         },
@@ -718,37 +723,37 @@ const mock: MockExam = {
           part: 6,
           stimulus: PART6_TEXT,
           stimulusLabel: 'Read the article.',
-          text: 'The structure of the article can best be described as:',
+          text: 'What can be inferred from the final paragraph about the author\'s view?',
           options: [
-            'A chronological account of AI development in medicine.',
-            'A problem-only analysis that offers no potential solutions.',
-            'A balanced examination of AI\'s potential benefits and significant risks in healthcare.',
-            'A defense of AI technology against uninformed critics.',
+            'Social media is the most important part of a teenager\'s life.',
+            'Having a balanced life with both online and offline activities is the healthiest approach.',
+            'Teenagers should only use social media for school-related activities.',
+            'Parents should control all social media use.',
           ],
-          answer: 2,
+          answer: 1,
         },
       ],
     },
 
-    // ── Part 7 — Texto de opinión (6 questions) ───────────────────────────────
-    // Answers: 0, 1, 3, 2, 0, 3
+    // ── Part 7 — Texto de opinión (7 questions) ───────────────────────────────
+    // Answers: 0, 2, 1, 3, 0, 2, 1
     {
       part: 7,
       title: 'Parte 7 — Texto de opinión',
-      instructions: "Read the opinion piece and answer the questions about the author's argument, rhetorical choices, and implied meaning.",
+      instructions: 'Read the article and answer the questions.',
       questions: [
         {
           type: 'mcq',
           id: 'p7q1',
           part: 7,
           stimulus: PART7_TEXT,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What is the author\'s central argument?',
+          stimulusLabel: 'Read the article.',
+          text: 'How is "screen time" defined in the text?',
           options: [
-            'Digital privacy regulations are necessary to protect individuals from corporate exploitation of their personal data.',
-            'The data economy benefits users more than it harms them.',
-            'Users should simply avoid social media platforms to protect their privacy.',
-            'The GDPR has failed to improve digital privacy standards.',
+            'The amount of time we spend looking at phones, tablets, computers, and televisions.',
+            'The time we spend studying at school.',
+            'The number of apps installed on a device.',
+            'The time spent talking on the phone.',
           ],
           answer: 0,
         },
@@ -757,43 +762,43 @@ const mock: MockExam = {
           id: 'p7q2',
           part: 7,
           stimulus: PART7_TEXT,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'How does the author counter the argument that users "receive free services in return" for their data?',
+          stimulusLabel: 'Read the article.',
+          text: 'According to health experts, what physical effects can too much screen time cause?',
           options: [
-            'By arguing that digital services are not actually useful.',
-            'By pointing out that users pay with behavioral data and psychological profiles, which are worth far more than the services received.',
-            'By claiming that all digital services should charge subscription fees.',
-            'By showing that free services lead to lower-quality content.',
+            'Weight gain and poor nutrition.',
+            'Improved memory and concentration.',
+            'Eye strain, headaches, and poor posture.',
+            'Stronger eyesight over time.',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p7q3',
           part: 7,
           stimulus: PART7_TEXT,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'According to the author, how has the GDPR affected companies subject to it?',
+          stimulusLabel: 'Read the article.',
+          text: 'Why does using screens late at night make it harder to sleep?',
           options: [
-            'It has driven most companies out of the European market.',
-            'It has significantly increased the cost of doing business.',
-            'It has had no measurable effect on data practices.',
-            'It has increased transparency and consumer trust without causing the competitive harm the industry predicted.',
+            'Screens produce sounds that keep the brain awake.',
+            'The light from screens signals to the brain that it is still daytime.',
+            'Looking at screens makes the eyes tired and uncomfortable.',
+            'Screens often show exciting content that makes people feel nervous.',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q4',
           part: 7,
           stimulus: PART7_TEXT,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'The author argues that "true consent requires meaningful choices, not buried checkboxes." This implies that:',
+          stimulusLabel: 'Read the article.',
+          text: 'How many hours of recreational screen time per day do doctors recommend for teenagers?',
           options: [
-            'Checkboxes are an effective way to communicate privacy options to users.',
-            'Companies already provide adequate privacy controls.',
-            'Meaningful consent means users are actively encouraged to opt out of data collection.',
-            'Current opt-out mechanisms are insufficient because most users never engage with them.',
+            'No more than four hours per day.',
+            'No more than three hours per day.',
+            'No more than one hour per day.',
+            'No more than two hours per day.',
           ],
           answer: 3,
         },
@@ -802,13 +807,13 @@ const mock: MockExam = {
           id: 'p7q5',
           part: 7,
           stimulus: PART7_TEXT,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What rhetorical strategy does the author use in the final paragraph when referring to historical industry behavior?',
+          stimulusLabel: 'Read the article.',
+          text: 'The word "recreational" in the text most likely means:',
           options: [
-            'An appeal to historical precedent to argue that industries require external regulation to act in the public interest.',
-            'A personal anecdote to make the argument more relatable.',
-            'A statistical comparison between regulated and unregulated industries.',
-            'A concession that self-regulation has worked in some sectors.',
+            'Done for fun or entertainment, not for work or study.',
+            'Related to sports and physical activity.',
+            'Required by school or an employer.',
+            'Used outdoors, not inside the house.',
           ],
           answer: 0,
         },
@@ -817,30 +822,30 @@ const mock: MockExam = {
           id: 'p7q6',
           part: 7,
           stimulus: PART7_TEXT,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'The phrase "erodes one data point at a time" at the end of the article is an example of:',
+          stimulusLabel: 'Read the article.',
+          text: 'According to the text, some people use apps to help manage screen time. What do these apps do?',
           options: [
-            'A factual claim backed by research data.',
-            'An admission that the erosion of privacy is too slow to matter.',
-            'A concession to the opposing view.',
-            'A metaphor suggesting that privacy loss is gradual but cumulative and significant.',
+            'They block all access to social media permanently.',
+            'They automatically turn off devices at bedtime.',
+            'They track or limit how much time a person spends on screens.',
+            'They remind users to exercise every hour.',
           ],
-          answer: 3,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p7q7',
           part: 7,
           stimulus: PART7_TEXT,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'Which of the following statements would the author most likely AGREE with?',
+          stimulusLabel: 'Read the article.',
+          text: 'What is the main message of the final paragraph?',
           options: [
-            'Technology companies have consistently acted in users\' best interests without government intervention.',
-            'Voluntary industry codes are a reliable substitute for enforceable privacy legislation.',
-            'Strong privacy regulation is necessary precisely because market incentives alone will not protect users.',
-            'The economic cost of privacy regulation is too high to justify its social benefits.',
+            'People should avoid all technology in daily life.',
+            'Each person should find a way to enjoy technology without letting it control their life.',
+            'Only teenagers need to worry about managing screen time.',
+            'Screen time is never harmful if you feel comfortable using it.',
           ],
-          answer: 2,
+          answer: 1,
         },
       ],
     },
