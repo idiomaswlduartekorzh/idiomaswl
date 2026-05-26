@@ -142,6 +142,103 @@ export const CYCLE_TEXTS: CycleText[] = [
     },
   },
 
+  {
+    id: 'a1-4',
+    nivel: 'A1',
+    titulo: 'En el autobús',
+    tituloKo: '버스에서',
+    korean: '버스 정류장에 있어요. 버스가 와요. 문이 열려요. 저는 타요. 버스에 사람이 많아요. 자리가 없어요. 서서 가요. 다음 정류장에서 내려요.',
+    vocab: [
+      { word: '버스 정류장', translation: 'parada de autobús' },
+      { word: '문', translation: 'puerta' },
+      { word: '자리', translation: 'asiento / lugar' },
+      { word: '서서', translation: 'de pie / parado/a' },
+      { word: '내려요', translation: 'me bajo / desciendo' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "자리"?', options: ['asiento', 'ventana', 'puerta', 'billete'], correct: 'asiento' },
+        { type: 'truefalse', question: 'Hay asientos disponibles en el autobús.', correct: false },
+        { type: 'multiple', question: '¿Qué hace la persona cuando no hay asientos?', options: ['Va de pie', 'Espera el siguiente bus', 'Se sienta en el suelo', 'Llama un taxi'], correct: 'Va de pie' },
+        { type: 'order', question: 'Ordena las palabras correctamente:', words: ['가요', '서서'], correct: ['서서', '가요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Por qué no hay asiento?', options: ['Hay mucha gente en el autobús', 'El autobús es muy pequeño', 'Llegó tarde', 'Los asientos están rotos'], correct: 'Hay mucha gente en el autobús' },
+        { type: 'multiple', question: '¿Qué se abre cuando llega el autobús?', options: ['La puerta', 'La ventana', 'El techo', 'El maletero'], correct: 'La puerta' },
+        { type: 'multiple', question: '¿Dónde baja la persona?', options: ['En la siguiente parada', 'En la parada final', 'En la escuela', 'En su casa'], correct: 'En la siguiente parada' },
+        { type: 'multiple', question: '¿Qué hace la persona al inicio del texto?', options: ['Espera en la parada', 'Ya está en el autobús', 'Camina', 'Llama a un taxi'], correct: 'Espera en la parada' },
+      ],
+      avanzado: [
+        { type: 'open', question: 'Describe tu trayecto habitual en transporte público usando vocabulario del texto. ¿Qué haces cuando no hay asientos?' },
+        { type: 'open', question: '¿Cómo es el transporte público en tu ciudad comparado con el de Corea? Responde en coreano con al menos tres diferencias.' },
+      ],
+    },
+  },
+  {
+    id: 'a1-5',
+    nivel: 'A1',
+    titulo: 'Mi familia',
+    tituloKo: '우리 가족',
+    korean: '저는 가족이 네 명이에요. 아버지, 어머니, 언니, 그리고 저예요. 아버지는 회사원이에요. 어머니는 선생님이에요. 언니는 대학생이에요. 저는 고등학생이에요. 우리 가족은 서울에 살아요.',
+    vocab: [
+      { word: '가족', translation: 'familia' },
+      { word: '아버지', translation: 'padre' },
+      { word: '어머니', translation: 'madre' },
+      { word: '언니', translation: 'hermana mayor (dicho por mujer)' },
+      { word: '고등학생', translation: 'estudiante de bachillerato / secundaria' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "가족"?', options: ['familia', 'trabajo', 'escuela', 'ciudad'], correct: 'familia' },
+        { type: 'truefalse', question: 'La familia tiene cinco miembros.', correct: false },
+        { type: 'multiple', question: '¿Cuántas personas hay en la familia?', options: ['Cuatro', 'Tres', 'Cinco', 'Dos'], correct: 'Cuatro' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['살아요', '서울에', '우리 가족은'], correct: ['우리 가족은', '서울에', '살아요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿A qué se dedica el padre?', options: ['Es empleado de empresa', 'Es médico', 'Es profesor', 'Es cocinero'], correct: 'Es empleado de empresa' },
+        { type: 'multiple', question: '¿Qué estudia la hermana mayor?', options: ['Está en la universidad', 'Está en la secundaria', 'Ya trabaja', 'Está en primaria'], correct: 'Está en la universidad' },
+        { type: 'multiple', question: '¿Dónde vive la familia?', options: ['En Seúl', 'En Busan', 'En Incheon', 'En Jeju'], correct: 'En Seúl' },
+        { type: 'multiple', question: '¿Cuál es la profesión de la madre?', options: ['Profesora', 'Médica', 'Abogada', 'Ingeniera'], correct: 'Profesora' },
+      ],
+      avanzado: [
+        { type: 'open', question: 'Presenta a tu propia familia en coreano. Menciona cuántos son, sus roles y ocupaciones.' },
+        { type: 'open', question: '¿Qué palabras coreanas para "hermano/a" conoces además de "언니"? Explica las diferencias según el hablante y el género del familiar.' },
+      ],
+    },
+  },
+  {
+    id: 'a1-6',
+    nivel: 'A1',
+    titulo: 'El fin de semana',
+    tituloKo: '주말',
+    korean: '주말에 집에 있어요. 음악을 들어요. 책도 읽어요. 친구랑 영화도 봐요. 운동도 해요. 공원에서 달려요. 피곤해요. 하지만 행복해요.',
+    vocab: [
+      { word: '주말', translation: 'fin de semana' },
+      { word: '읽어요', translation: 'leo / lees' },
+      { word: '달려요', translation: 'corro / corre' },
+      { word: '피곤해요', translation: 'estoy cansado/a' },
+      { word: '행복해요', translation: 'estoy feliz / soy feliz' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "피곤해요"?', options: ['estoy cansado/a', 'tengo hambre', 'tengo frío', 'estoy aburrido/a'], correct: 'estoy cansado/a' },
+        { type: 'truefalse', question: 'La persona pasa el fin de semana en casa.', correct: true },
+        { type: 'multiple', question: '¿Qué hace la persona en el parque?', options: ['Corre', 'Lee', 'Duerme', 'Come'], correct: 'Corre' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['행복해요', '하지만'], correct: ['하지만', '행복해요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Cuántas actividades diferentes hace la persona?', options: ['Cinco', 'Tres', 'Cuatro', 'Dos'], correct: 'Cinco' },
+        { type: 'multiple', question: '¿Con quién ve películas la persona?', options: ['Con un/a amigo/a', 'Con su familia', 'Sola', 'Con sus compañeros de trabajo'], correct: 'Con un/a amigo/a' },
+        { type: 'multiple', question: '¿Cómo se siente la persona al final del texto?', options: ['Cansada pero feliz', 'Triste y aburrida', 'Enérgica y feliz', 'Cansada y triste'], correct: 'Cansada pero feliz' },
+        { type: 'multiple', question: '¿Dónde corre la persona?', options: ['En el parque', 'En el gimnasio', 'En la calle', 'En la universidad'], correct: 'En el parque' },
+      ],
+      avanzado: [
+        { type: 'open', question: 'Describe tu fin de semana típico en coreano. ¿En qué se parece y en qué se diferencia al del texto?' },
+        { type: 'open', question: 'El texto usa "도" varias veces (책도, 영화도, 운동도). ¿Qué función cumple esta partícula? Escribe tres oraciones propias usando "도".' },
+      ],
+    },
+  },
+
   // ──────────────────────────────── A2 ────────────────────────────────
   {
     id: 'a2-1',
@@ -240,6 +337,103 @@ export const CYCLE_TEXTS: CycleText[] = [
     },
   },
 
+  {
+    id: 'a2-4',
+    nivel: 'A2',
+    titulo: 'En el hospital',
+    tituloKo: '병원에서',
+    korean: '오늘 병원에 갔어요. 머리가 너무 아파요. 의사 선생님이 진찰했어요. "열이 있어요. 감기예요." 약을 받았어요. 이틀 동안 쉬어야 해요. 물을 많이 마셔야 해요. 빨리 나을 것 같아요.',
+    vocab: [
+      { word: '아파요', translation: 'duele / me duele / estoy enfermo/a' },
+      { word: '의사', translation: 'médico/a' },
+      { word: '진찰했어요', translation: 'examinó / hizo la consulta médica' },
+      { word: '열', translation: 'fiebre' },
+      { word: '나을 것 같아요', translation: 'creo que me voy a recuperar pronto' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "열"?', options: ['fiebre', 'dolor de cabeza', 'tos', 'resfriado'], correct: 'fiebre' },
+        { type: 'truefalse', question: 'El médico dice que la persona tiene gripe.', correct: true },
+        { type: 'multiple', question: '¿Qué recibe la persona del médico?', options: ['Medicamentos', 'Un certificado', 'Una vacuna', 'Una radiografía'], correct: 'Medicamentos' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['마셔야', '많이', '물을', '해요'], correct: ['물을', '많이', '마셔야', '해요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Cuál es el síntoma principal que tiene la persona?', options: ['Dolor de cabeza intenso', 'Fiebre alta', 'Tos fuerte', 'Dolor de estómago'], correct: 'Dolor de cabeza intenso' },
+        { type: 'multiple', question: '¿Cuántos días debe descansar?', options: ['Dos días', 'Un día', 'Tres días', 'Una semana'], correct: 'Dos días' },
+        { type: 'multiple', question: '¿Qué recomienda el médico además de descansar?', options: ['Beber mucha agua', 'Hacer ejercicio suave', 'Salir a caminar', 'Comer mucho'], correct: 'Beber mucha agua' },
+        { type: 'multiple', question: '¿Cómo termina el texto?', options: ['La persona cree que se va a recuperar pronto', 'Tiene que volver mañana', 'Se siente muy mal', 'Necesita una cirugía'], correct: 'La persona cree que se va a recuperar pronto' },
+      ],
+      avanzado: [
+        { type: 'open', question: 'Imagina que estás en un hospital en Corea. Escribe el diálogo con el médico donde describes tus síntomas y recibes sus recomendaciones. Usa al menos 4 palabras del vocabulario.' },
+        { type: 'open', question: 'El texto usa "어야 해요" para expresar obligación. Encuentra los dos ejemplos del texto y escribe tres oraciones propias con esta estructura sobre situaciones cotidianas.' },
+      ],
+    },
+  },
+  {
+    id: 'a2-5',
+    nivel: 'A2',
+    titulo: 'De compras',
+    tituloKo: '슈퍼마켓에서',
+    korean: '오늘 슈퍼마켓에 갔어요. 냉장고에 음식이 없어서 장을 봤어요. 과일이랑 야채를 샀어요. 계란도 열 개 샀어요. 라면도 다섯 개 샀어요. 계산할 때 카드로 냈어요. 영수증을 받았어요.',
+    vocab: [
+      { word: '장을 봤어요', translation: 'hice las compras / fui al mercado' },
+      { word: '과일', translation: 'fruta' },
+      { word: '야채', translation: 'verduras' },
+      { word: '계산', translation: 'pago / la cuenta' },
+      { word: '영수증', translation: 'recibo / factura' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "과일"?', options: ['fruta', 'verdura', 'carne', 'pan'], correct: 'fruta' },
+        { type: 'truefalse', question: 'La persona pagó en efectivo.', correct: false },
+        { type: 'multiple', question: '¿Por qué fue la persona al supermercado?', options: ['No había comida en el refrigerador', 'Quería probar algo nuevo', 'Era día de descuentos', 'Su amigo le pidió que fuera'], correct: 'No había comida en el refrigerador' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['냈어요', '카드로', '계산할 때'], correct: ['계산할 때', '카드로', '냈어요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Cuántos huevos compró?', options: ['Diez', 'Cinco', 'Doce', 'Seis'], correct: 'Diez' },
+        { type: 'multiple', question: '¿Cuántos ramens compró?', options: ['Cinco', 'Tres', 'Diez', 'Dos'], correct: 'Cinco' },
+        { type: 'multiple', question: '¿Qué recibió después de pagar?', options: ['Un recibo', 'Puntos de fidelidad', 'Un regalo', 'Un descuento'], correct: 'Un recibo' },
+        { type: 'multiple', question: '¿Cuál era el problema en casa antes de ir al supermercado?', options: ['No había comida en el refrigerador', 'Se fue la luz', 'No había dinero', 'Estaba enfermo/a'], correct: 'No había comida en el refrigerador' },
+      ],
+      avanzado: [
+        { type: 'open', question: 'Escribe tu propia lista de compras en coreano y describe lo que comprarías en un supermercado coreano. Usa números coreanos para las cantidades.' },
+        { type: 'open', question: '¿Qué productos típicos coreanos conoces que encontrarías en un supermercado? Compara los supermercados de Corea con los de tu país. Responde en coreano.' },
+      ],
+    },
+  },
+  {
+    id: 'a2-6',
+    nivel: 'A2',
+    titulo: 'Fiesta de cumpleaños',
+    tituloKo: '생일 파티',
+    korean: '어제 친구 생일 파티에 갔어요. 케이크가 정말 맛있었어요. 선물을 주었어요. 친구가 좋아했어요. 노래도 불렀어요. 게임도 했어요. 즐거운 시간이었어요. 밤늦게 집에 왔어요.',
+    vocab: [
+      { word: '생일 파티', translation: 'fiesta de cumpleaños' },
+      { word: '선물', translation: 'regalo' },
+      { word: '노래를 불렀어요', translation: 'canté / cantamos' },
+      { word: '즐거운', translation: 'divertido/a / alegre' },
+      { word: '밤늦게', translation: 'tarde en la noche / a altas horas' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "선물"?', options: ['regalo', 'pastel', 'canción', 'juego'], correct: 'regalo' },
+        { type: 'truefalse', question: 'La fiesta fue hoy.', correct: false },
+        { type: 'multiple', question: '¿Cómo fue la fiesta según el texto?', options: ['Divertida', 'Aburrida', 'Muy corta', 'Triste'], correct: 'Divertida' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['파티에', '친구', '갔어요', '생일'], correct: ['친구', '생일', '파티에', '갔어요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Cuándo fue la fiesta?', options: ['Ayer', 'Hoy', 'La semana pasada', 'El fin de semana'], correct: 'Ayer' },
+        { type: 'multiple', question: '¿Cómo reaccionó el amigo/a al recibir el regalo?', options: ['Le gustó', 'No le gustó', 'Ya lo tenía', 'No lo abrió'], correct: 'Le gustó' },
+        { type: 'multiple', question: '¿A qué hora volvió la persona a casa?', options: ['Muy tarde por la noche', 'Temprano', 'Al mediodía', 'A las seis'], correct: 'Muy tarde por la noche' },
+        { type: 'multiple', question: '¿Qué actividades se hicieron en la fiesta?', options: ['Cantar y jugar', 'Solo comer pastel', 'Ver películas', 'Estudiar juntos'], correct: 'Cantar y jugar' },
+      ],
+      avanzado: [
+        { type: 'open', question: 'Describe una fiesta memorable a la que hayas ido. Usa el tiempo pasado en coreano y al menos tres palabras del vocabulario del texto.' },
+        { type: 'open', question: '¿Cómo se celebran los cumpleaños en Corea comparado con tu cultura? ¿Qué similitudes y diferencias hay? Responde en coreano.' },
+      ],
+    },
+  },
+
   // ──────────────────────────────── B1 ────────────────────────────────
   {
     id: 'b1-1',
@@ -334,6 +528,102 @@ export const CYCLE_TEXTS: CycleText[] = [
       avanzado: [
         { type: 'open', question: '¿Cuáles son tus métodos de estudio para aprender coreano? ¿Qué ha funcionado mejor para ti y qué ha sido más difícil? Responde en coreano con detalle.' },
         { type: 'open', question: 'El texto menciona "포기할 뻔했어요". ¿Alguna vez has querido rendirte con el coreano? ¿Qué te motivó a seguir adelante? Comparte tu experiencia personal en coreano.' },
+      ],
+    },
+  },
+  {
+    id: 'b1-4',
+    nivel: 'B1',
+    titulo: 'Tecnología y redes sociales',
+    tituloKo: '기술과 소셜 미디어',
+    korean: '요즘 스마트폰 없이는 하루도 보내기 힘들 것 같아요. 아침에 일어나자마자 핸드폰을 확인해요. 소셜 미디어에서 뉴스를 보고, 친구들과 메시지를 주고받아요. 편리하지만 중독되기 쉬워요. 가끔 핸드폰을 내려놓고 자연을 즐기고 싶어요. 디지털 디톡스가 필요한 시대인 것 같아요.',
+    vocab: [
+      { word: '없이는', translation: 'sin / sin ello' },
+      { word: '일어나자마자', translation: 'apenas me levanto / en cuanto me levanto' },
+      { word: '확인해요', translation: 'reviso / verifico / compruebo' },
+      { word: '중독되기 쉬워요', translation: 'es fácil volverse adicto/a' },
+      { word: '디지털 디톡스', translation: 'desintoxicación digital' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "확인해요"?', options: ['reviso / compruebo', 'escribo', 'llamo', 'busco'], correct: 'reviso / compruebo' },
+        { type: 'truefalse', question: 'La persona considera el teléfono completamente negativo.', correct: false },
+        { type: 'multiple', question: '¿Cuándo revisa su teléfono la persona?', options: ['Apenas se levanta', 'Antes de dormir', 'Solo en el trabajo', 'Los fines de semana'], correct: 'Apenas se levanta' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['없이는', '힘들어요', '스마트폰'], correct: ['스마트폰', '없이는', '힘들어요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Para qué usa la persona el teléfono al despertar?', options: ['Revisar noticias y mensajes', 'Escuchar música', 'Hacer ejercicio', 'Leer libros'], correct: 'Revisar noticias y mensajes' },
+        { type: 'multiple', question: '¿Cuál es el problema principal que menciona el texto?', options: ['Es fácil volverse adicto al teléfono', 'El internet es muy caro', 'Las redes sociales son falsas', 'Los teléfonos se dañan fácilmente'], correct: 'Es fácil volverse adicto al teléfono' },
+        { type: 'multiple', question: '¿Qué desea hacer la persona a veces?', options: ['Dejar el teléfono y disfrutar la naturaleza', 'Comprar un teléfono nuevo', 'Borrar sus redes sociales', 'Aprender a programar'], correct: 'Dejar el teléfono y disfrutar la naturaleza' },
+        { type: 'multiple', question: '¿Qué solución propone el texto?', options: ['La desintoxicación digital', 'Borrar todas las aplicaciones', 'No tener teléfono', 'Usar el teléfono solo de noche'], correct: 'La desintoxicación digital' },
+      ],
+      avanzado: [
+        { type: 'open', question: '¿Cuántas horas al día usas el teléfono? ¿Crees que eres adicto/a a las redes sociales? Argumenta tu posición en coreano usando vocabulario del texto.' },
+        { type: 'open', question: '¿Qué ventajas y desventajas tienen las redes sociales para los jóvenes de hoy? Compara la cultura digital de Corea (influencers, webtoons, K-dramas online) con la de tu país. Responde en coreano.' },
+      ],
+    },
+  },
+  {
+    id: 'b1-5',
+    nivel: 'B1',
+    titulo: 'Trabajo y burnout',
+    tituloKo: '업무와 번아웃',
+    korean: '이번 주에 할 일이 너무 많아요. 마감이 계속 있어서 스트레스를 많이 받아요. 점심도 못 먹은 날이 있었어요. 동료들이랑 협력해서 겨우 끝냈어요. 퇴근 후에는 아무것도 하기 싫어요. 번아웃이 오기 전에 쉬어야 할 것 같아요. 일과 삶의 균형이 중요하다는 걸 다시 느꼈어요.',
+    vocab: [
+      { word: '마감', translation: 'fecha límite / deadline' },
+      { word: '협력해서', translation: 'colaborando / trabajando en equipo' },
+      { word: '겨우', translation: 'apenas / a duras penas' },
+      { word: '번아웃', translation: 'agotamiento laboral / burnout' },
+      { word: '균형', translation: 'equilibrio / balance' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "마감"?', options: ['fecha límite', 'reunión', 'proyecto', 'jefe'], correct: 'fecha límite' },
+        { type: 'truefalse', question: 'La persona terminó el trabajo sola.', correct: false },
+        { type: 'multiple', question: '¿Cómo terminó la persona su trabajo?', options: ['Con ayuda de sus colegas', 'Sola y muy tarde', 'Pidiendo extensión de plazo', 'Dejándolo incompleto'], correct: 'Con ayuda de sus colegas' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['중요해요', '균형이', '일과 삶의'], correct: ['일과 삶의', '균형이', '중요해요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Por qué tiene tanto estrés la persona?', options: ['Hay muchas fechas límite seguidas', 'Su jefe es muy estricto', 'El trabajo es muy difícil', 'Sus colegas no cooperan'], correct: 'Hay muchas fechas límite seguidas' },
+        { type: 'multiple', question: '¿Qué días no pudo almorzar?', options: ['Algunos días de esa semana', 'Todos los días', 'Solo el lunes', 'Los viernes'], correct: 'Algunos días de esa semana' },
+        { type: 'multiple', question: '¿Qué reflexión hace la persona al final?', options: ['Que el equilibrio entre trabajo y vida es importante', 'Que debe renunciar', 'Que necesita más dinero', 'Que sus colegas son malos'], correct: 'Que el equilibrio entre trabajo y vida es importante' },
+        { type: 'multiple', question: '¿Cómo se siente la persona después de trabajar?', options: ['Sin ganas de hacer nada', 'Con energía para salir', 'Feliz y realizada', 'Nerviosa por el día siguiente'], correct: 'Sin ganas de hacer nada' },
+      ],
+      avanzado: [
+        { type: 'open', question: '¿Has experimentado el burnout alguna vez? ¿Qué estrategias usas para mantener el equilibrio entre trabajo y vida personal? Responde en coreano con detalle.' },
+        { type: 'open', question: 'La cultura laboral en Corea es conocida por sus largas horas (과로 문화). ¿Qué opinas de esto? ¿Existe algo similar en tu país? Argumenta en coreano con ejemplos.' },
+      ],
+    },
+  },
+  {
+    id: 'b1-6',
+    nivel: 'B1',
+    titulo: 'El medio ambiente',
+    tituloKo: '환경 문제',
+    korean: '지구 온난화가 점점 심각해지고 있어요. 이상한 날씨가 많아졌고, 해수면도 올라가고 있어요. 플라스틱 쓰레기 문제도 여전히 해결되지 않았어요. 하지만 사람들의 환경 의식이 높아지고 있어요. 재활용을 하고, 대중교통을 이용하는 사람들이 늘어나고 있어요. 작은 실천이 모이면 변화가 생긴다고 믿어요.',
+    vocab: [
+      { word: '지구 온난화', translation: 'calentamiento global' },
+      { word: '해수면', translation: 'nivel del mar' },
+      { word: '환경 의식', translation: 'conciencia ambiental' },
+      { word: '재활용', translation: 'reciclaje' },
+      { word: '실천', translation: 'acción concreta / llevar a la práctica' },
+    ],
+    questions: {
+      principiante: [
+        { type: 'multiple', question: '¿Qué significa "재활용"?', options: ['reciclaje', 'contaminación', 'energía', 'basura'], correct: 'reciclaje' },
+        { type: 'truefalse', question: 'El texto solo presenta problemas sin mencionar soluciones.', correct: false },
+        { type: 'multiple', question: '¿Qué está aumentando según el texto?', options: ['La conciencia ambiental de las personas', 'La cantidad de plástico', 'El uso de coches', 'Las temperaturas en invierno'], correct: 'La conciencia ambiental de las personas' },
+        { type: 'order', question: 'Ordena correctamente:', words: ['심각해지고', '지구 온난화가', '있어요'], correct: ['지구 온난화가', '심각해지고', '있어요'] },
+      ],
+      intermedio: [
+        { type: 'multiple', question: '¿Cuáles son los dos problemas ambientales que menciona el texto?', options: ['El calentamiento global y el plástico', 'La deforestación y el plástico', 'El calentamiento y la deforestación', 'El plástico y el ruido'], correct: 'El calentamiento global y el plástico' },
+        { type: 'multiple', question: '¿Qué le está pasando al nivel del mar?', options: ['Está subiendo', 'Está bajando', 'Está igual', 'Fluctúa según la estación'], correct: 'Está subiendo' },
+        { type: 'multiple', question: '¿Qué acciones positivas están tomando las personas?', options: ['Reciclar y usar transporte público', 'Plantar árboles', 'Dejar de usar electricidad', 'Reducir el consumo de carne'], correct: 'Reciclar y usar transporte público' },
+        { type: 'multiple', question: '¿Cuál es la conclusión del texto?', options: ['Las pequeñas acciones juntas producen cambio', 'Los problemas son demasiado grandes para resolverse', 'Solo los gobiernos pueden actuar', 'La tecnología salvará el planeta'], correct: 'Las pequeñas acciones juntas producen cambio' },
+      ],
+      avanzado: [
+        { type: 'open', question: '¿Qué acciones concretas tomas tú en tu vida diaria para cuidar el medio ambiente? ¿Qué más podrías hacer? Responde en coreano usando vocabulario del texto.' },
+        { type: 'open', question: '¿Crees que las personas o los gobiernos son más responsables del cambio climático? ¿Cómo aborda Corea estos problemas medioambientales? Argumenta en coreano con detalle.' },
       ],
     },
   },

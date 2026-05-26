@@ -40,6 +40,7 @@ import ieltsSet18 from './ielts-set-18';
 import ieltsSet19 from './ielts-set-19';
 import ieltsSet20 from './ielts-set-20';
 import toeflSet1 from './toefl-set-1';
+import toeflSet2 from './toefl-set-2';
 import cilsCeliSet1 from './cils-celi-set-1';
 import delfDalfSet1 from './delf-dalf-set-1';
 import goetheSet1 from './goethe-set-1';
@@ -91,6 +92,7 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'ielts:set-20': ieltsSet20,
   // ── Other exams ───────────────────────────────────────────────────────────
   'toefl:set-1': toeflSet1,
+  'toefl:set-2': toeflSet2,
   'cils-celi:set-1': cilsCeliSet1,
   'delf-dalf:set-1': delfDalfSet1,
   'goethe:set-1': goetheSet1,

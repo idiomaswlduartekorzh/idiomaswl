@@ -4,8 +4,8 @@ const mock: MockExam = {
   id: 'set-1',
   examSlug: 'toefl',
   title: 'TOEFL iBT Set 1',
-  subtitle: 'The Columbian Exchange · Social Facilitation · Campus Life',
-  timeMinutes: 185,
+  subtitle: 'The Columbian Exchange · Memory Consolidation · Dog Domestication · Social Facilitation · Campus Life',
+  timeMinutes: 205,
   sections: [
 
     // ─── READING ──────────────────────────────────────────────────────────────
@@ -291,10 +291,149 @@ Researchers have also discovered that memories are not consolidated once and the
       ],
     },
 
+    {
+      part: 3,
+      skill: 'reading',
+      title: 'Reading Passage 3: The Domestication of the Dog',
+      instructions: 'Read the passage and answer questions 21–30.',
+      passage: `The domestication of the dog represents one of the most consequential events in the history of human-animal relations, predating the domestication of all other animals by thousands of years. Genetic studies suggest that wolves began the transformation toward domestic dogs somewhere between 15,000 and 40,000 years ago, making the domestic dog (Canis lupus familiaris) a distinct subspecies of the gray wolf (Canis lupus). Unlike the domestication of sheep, cattle, or pigs — driven primarily by deliberate human selection for food production — the domestication of the dog appears to have arisen through a more gradual, mutually beneficial process.
+
+The question of where dogs were first domesticated has generated sustained scientific debate. Early genetic studies pointed to East Asia, where the greatest diversity among dog populations suggested a longer evolutionary history. A landmark 2013 study shifted the consensus toward Europe, analyzing ancient fossils and finding the closest genetic match to modern dogs in European wolf populations. More recent analyses have proposed that domestication may have occurred independently in multiple locations, or that early domesticated lineages subsequently interbred and displaced one another, making precise geographic origins difficult to determine.
+
+Despite disagreement about location, researchers have reached broad consensus on the mechanism by which domestication likely began. The most widely accepted hypothesis holds that wolves were not actively captured and bred by humans but instead self-selected into human company. As early humans settled into semipermanent encampments, they inevitably generated food waste. Wolves with lower fear responses to humans — individuals naturally less aggressive and more tolerant of human proximity — were better positioned to exploit this resource. Over generations, selection pressure favored increasingly tame wolves, and humans may have reinforced this process by feeding or sheltering the least aggressive individuals.
+
+Archaeological and genetic evidence supports this self-domestication model. The skulls and teeth of early domestic dogs show morphological changes consistent with reduced stress hormones: shorter muzzles, smaller teeth, and floppy ears. These features appear together in what researchers call domestication syndrome — a cluster of traits observed across multiple domesticated species that also includes changes in coat color and increased docility. DNA analysis reveals that genes governing social behavior and the capacity to digest starch differ markedly between domestic dogs and wild wolves, indicating that diet and social interaction drove parallel genetic changes.
+
+The consequences of domestication extended well beyond companionship. Dogs were used across cultures for hunting, herding, guarding, and, in some societies, as food. Their sensitivity to human social cues — which exceeds even that of chimpanzees in many experimental tasks — made them uniquely valuable working partners. Some researchers argue that this sensitivity evolved because humans actively selected dogs that could read human attentional states. Supporting evidence comes from developmental studies: dog puppies raised without human contact do not naturally make eye contact with people, whereas puppies raised with regular human interaction do so almost reflexively.
+
+The domestication of the dog thus illustrates a broader principle in evolutionary biology: domestication is not merely the imposition of human will on passive animals, but a co-evolutionary process in which both species are transformed by sustained interaction. Dogs became anatomically and behaviorally adapted to human environments, while humans gained partners capable of tasks — tracking, herding, alerting — that significantly enhanced the efficiency of subsistence strategies. The remarkable success of domestic dogs as a species, now numbering hundreds of millions worldwide, attests to the adaptive advantages conferred by this ancient partnership.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 't1-r3q21',
+          part: 3,
+          text: 'According to paragraph 1, what distinguishes the domestication of dogs from the domestication of most other animals?',
+          options: [
+            'Dogs were domesticated much more recently than sheep or cattle.',
+            'Dog domestication appears to have arisen through a gradual, mutually beneficial process rather than deliberate human selection for food.',
+            'Dogs were the only animals domesticated before the invention of agriculture.',
+            'Dogs were initially domesticated specifically for use in warfare.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q22',
+          part: 3,
+          text: 'The word "sustained" in paragraph 2 is closest in meaning to',
+          options: ['brief', 'heated', 'ongoing', 'secretive'],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q23',
+          part: 3,
+          text: 'According to paragraph 2, what did the 2013 study suggest about dog domestication?',
+          options: [
+            'East Asia was confirmed as the single point of origin for domestic dogs.',
+            'Dogs were first domesticated in Europe, based on fossil and genetic evidence.',
+            'Dogs were domesticated simultaneously in at least three separate locations.',
+            'The geographic origin of dogs can never be determined from genetic evidence.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q24',
+          part: 3,
+          text: 'Why does the author mention food waste from early human encampments in paragraph 3?',
+          options: [
+            'To suggest that early humans were careless with their food supplies.',
+            'To prove that early humans deliberately set traps to capture wolves.',
+            'To explain the environmental condition that first brought wolves and humans into sustained contact.',
+            'To demonstrate that wolves competed aggressively with humans for food resources.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q25',
+          part: 3,
+          text: 'The phrase "this process" in paragraph 3 refers to',
+          options: [
+            'the generation of food waste by early human settlements.',
+            'the gradual selection of wolves with lower fear responses to humans.',
+            'the construction of semipermanent encampments.',
+            'the migration of wolf populations toward human territories.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q26',
+          part: 3,
+          text: 'According to paragraph 4, which of the following is listed as a feature of domestication syndrome?',
+          options: [
+            'Larger skulls and longer muzzles for more effective hunting.',
+            'Increased aggression toward unfamiliar animals.',
+            'Changes in coat color and greater docility.',
+            'Enhanced resistance to disease and parasites.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q27',
+          part: 3,
+          text: 'According to the passage, which of the following is NOT mentioned as a use of dogs by early human societies?',
+          options: ['Hunting', 'Herding', 'Guarding', 'Navigation'],
+          answer: 3,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q28',
+          part: 3,
+          text: 'It can be inferred from paragraph 5 that dog puppies raised without human contact',
+          options: [
+            'develop stronger social bonds with wolves than with humans.',
+            'do not spontaneously form the human-oriented social behaviors that contact-raised puppies display.',
+            'are more aggressive toward humans than contact-raised puppies.',
+            'eventually develop the ability to read human social cues without training.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 't1-r3q29',
+          part: 3,
+          text: 'The word "attests" in paragraph 6 is closest in meaning to',
+          options: ['questions', 'provides evidence for', 'exaggerates', 'celebrates'],
+          answer: 1,
+        },
+        {
+          type: 'multiselect',
+          id: 't1-r3q30',
+          part: 3,
+          qRange: [30, 30],
+          text: 'An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\n\n"The domestication of the dog was a gradual co-evolutionary process with significant consequences for both humans and wolves."',
+          options: [
+            { letter: 'A', text: 'The precise geographic origin of dog domestication remains uncertain, with evidence pointing to both East Asia and Europe.' },
+            { letter: 'B', text: 'Dogs and wolves share identical DNA sequences, making them impossible to distinguish genetically.' },
+            { letter: 'C', text: 'Dogs likely self-selected into human environments by exploiting food waste, with less fearful individuals gaining a survival advantage.' },
+            { letter: 'D', text: 'Physical and behavioral changes associated with domestication syndrome provide evidence of the genetic transformation from wolf to domestic dog.' },
+            { letter: 'E', text: 'Dogs were first used as food sources before their value as working animals was recognized.' },
+            { letter: 'F', text: 'Dogs developed unique sensitivities to human social cues and became working partners that enhanced human subsistence strategies.' },
+          ],
+          selectCount: 3,
+          answers: ['A', 'C', 'F'],
+        },
+      ],
+    },
+
     // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
-      part: 3,
+      part: 4,
       skill: 'listening',
       title: 'Listening — Conversation 1: Office Hours',
       instructions: 'Listen to a conversation between a student and a professor. Then answer questions 21–25.',
@@ -393,7 +532,7 @@ PROFESSOR: That's fine. The library database has good material on algorithmic am
     },
 
     {
-      part: 4,
+      part: 5,
       skill: 'listening',
       title: 'Listening — Lecture 1: Social Facilitation',
       instructions: 'Listen to part of a lecture in a psychology class. Then answer questions 26–31.',
@@ -416,7 +555,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
         {
           type: 'mcq',
           id: 't1-l2q26',
-          part: 4,
+          part: 5,
           text: 'What is the main topic of the lecture?',
           options: [
             'How competition motivates athletes to train harder.',
@@ -429,7 +568,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
         {
           type: 'mcq',
           id: 't1-l2q27',
-          part: 4,
+          part: 5,
           text: 'What did Norman Triplett\'s 1898 experiment demonstrate?',
           options: [
             'Children perform worse when they know they are being watched.',
@@ -442,7 +581,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
         {
           type: 'mcq',
           id: 't1-l2q28',
-          part: 4,
+          part: 5,
           text: 'According to Zajonc\'s drive theory, what does the presence of others increase?',
           options: [
             'A person\'s logical reasoning ability.',
@@ -455,7 +594,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
         {
           type: 'mcq',
           id: 't1-l2q29',
-          part: 4,
+          part: 5,
           text: 'According to the lecture, when does an audience HURT performance?',
           options: [
             'When the performer is an expert at the task.',
@@ -468,7 +607,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
         {
           type: 'mcq',
           id: 't1-l2q30',
-          part: 4,
+          part: 5,
           text: 'Why does the professor mention experiments with cockroaches?',
           options: [
             'To show that all animals perform better when observed.',
@@ -481,7 +620,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
         {
           type: 'mcq',
           id: 't1-l2q31',
-          part: 4,
+          part: 5,
           text: 'What did Nicholas Cottrell\'s research add to the understanding of social facilitation?',
           options: [
             'That the arousal effect requires an audience that might evaluate the performer.',
@@ -497,7 +636,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
     // ─── SPEAKING ─────────────────────────────────────────────────────────────
 
     {
-      part: 5,
+      part: 6,
       skill: 'speaking',
       title: 'Speaking Tasks',
       instructions: 'Complete all four speaking tasks. You will have preparation time before each response.',
@@ -537,7 +676,7 @@ Later research complicated the picture. Nicholas Cottrell showed that it's not j
     // ─── WRITING ─────────────────────────────────────────────────────────────
 
     {
-      part: 6,
+      part: 7,
       skill: 'writing',
       title: 'Writing Tasks',
       instructions: 'Complete both writing tasks.',
