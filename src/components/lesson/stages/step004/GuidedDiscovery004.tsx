@@ -152,7 +152,7 @@ export default function GuidedDiscovery004({ onComplete }: Props) {
             <p style={{ margin:'0 0 8px', fontSize:13, fontWeight:700 }}>Comparación:</p>
             {[
               { line:'호떡 하나 주세요', note:'sin contador → 하나 completo', audio:'호떡 하나 주세요' },
-              { line:'호떡 한 개 주세요', note:'con contador 개 → hana→한', audio:'호떡 하나 주세요' },
+              { line:'호떡 한 개 주세요', note:'con contador 개 → hana→한', audio:'호떡 한 개 주세요' },
               { line:'커피 한 잔 주세요', note:'con contador 잔 → hana→한', audio:'한 잔' },
             ].map(ex => (
               <button key={ex.line} onClick={() => playAudio(ex.audio)}

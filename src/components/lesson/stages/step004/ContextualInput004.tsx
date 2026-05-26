@@ -37,7 +37,7 @@ const SENTENCES: Sentence[] = [
     explanation: '하나 es el sistema NATIVO para contar objetos físicos. Para el dinero (precios en ₩) se usa el sistema sino-coreano (일, 이, 삼...).',
   },
   {
-    kr: '호떡 한 개 주세요', audio: '호떡 하나 주세요', es: 'Un hodduk, por favor (con contador)',
+    kr: '호떡 한 개 주세요', audio: '호떡 한 개 주세요', es: 'Un hodduk, por favor (con contador)',
     highlight: '한 개', color: '#f59e0b',
     question: 'Aquí dice 한 개, arriba decía 하나. ¿Qué cambió?',
     options: ['하나 se contrae a 한 cuando va antes de un contador', 'Son formas completamente diferentes', 'han 개 es más formal que hana'],

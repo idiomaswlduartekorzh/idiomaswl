@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import { KR_VIDEO_004, playAudio } from '@/lib/storage';
 
 interface Chapter { startSec: number; emoji: string; labelEs: string; line?: string; speaker?: string }
-interface Question { id: string; q: string; options: string[]; correct: string }
+interface Question { id: string; q: string; options: string[]; correct: string; audio: string }
 interface Props { onComplete?: () => void }
 
 const CHAPTERS: Chapter[] = [
@@ -28,6 +28,7 @@ const QUESTIONS: Question[] = [
       'No pregunta — señala con la mano sin hablar',
     ],
     correct: '이거, porque el hodduk está cerca de él',
+    audio: '이거',
   },
   {
     id: 'Q2',
@@ -39,6 +40,7 @@ const QUESTIONS: Question[] = [
       '그거 e 이거 son intercambiables en este contexto',
     ],
     correct: 'Porque para David el hodduk está más lejos (detrás del mostrador)',
+    audio: '호떡',
   },
   {
     id: 'Q3',
@@ -50,6 +52,7 @@ const QUESTIONS: Question[] = [
       'No importa — 일 y 하나 son idénticos',
     ],
     correct: '하나 (número nativo) porque está contando un objeto físico',
+    audio: '하나',
   },
   {
     id: 'Q4',
@@ -61,6 +64,7 @@ const QUESTIONS: Question[] = [
       'Que el café es el único pedido',
     ],
     correct: 'Que el café es adicional a lo ya pedido (también)',
+    audio: '커피',
   },
   {
     id: 'Q5',
@@ -72,6 +76,7 @@ const QUESTIONS: Question[] = [
       'No hay diferencia entre las dos formas',
     ],
     correct: 'Porque 드릴게요 es la forma cortés/formal, apropiada con un cliente',
+    audio: '금방',
   },
 ];
 
@@ -99,7 +104,7 @@ export default function ListeningSurvivable004({ onComplete }: Props) {
     setPicked(opt);
     if (opt === QUESTIONS[qIdx].correct) {
       setCorrect(c => c + 1);
-      playAudio(QUESTIONS[qIdx].correct.substring(0, 6));
+      playAudio(QUESTIONS[qIdx].audio);
     }
   }
 

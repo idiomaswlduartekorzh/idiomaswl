@@ -63,7 +63,7 @@ const EXERCISES: Exercise[] = [
     options: ['주스도', '주스를도', '도주스', '주스는도'],
     correct: '주스도',
     feedback: '✅ -도 se pega directamente: 주스 + 도 = 주스도.',
-    audio: '커피',
+    audio: '주스도',
   },
   {
     type: 'choice',

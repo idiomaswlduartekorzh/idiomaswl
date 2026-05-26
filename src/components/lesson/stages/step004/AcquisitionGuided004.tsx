@@ -11,15 +11,15 @@ interface Props { onComplete?: () => void }
 
 const VOCAB: VocabItem[] = [
   { hangul: '이거',             rom: 'i-geo',                 es: 'esto (cerca del hablante)',      img: KR_IMG_004.hodduk_stall,    audio: '이거 뭐예요?',            tip: 'Señalas algo que está cerca de ti' },
-  { hangul: '그거',             rom: 'geu-geo',               es: 'eso (lejos del hablante)',        img: KR_IMG_004.david_ordering,  audio: '호떡' },
+  { hangul: '그거',             rom: 'geu-geo',               es: 'eso (lejos del hablante)',        img: KR_IMG_004.david_ordering,  audio: '그거' },
   { hangul: '이거 뭐예요?',     rom: 'i-geo mweo-ye-yo?',     es: '¿Qué es esto?',                  img: KR_IMG_004.hodduk_stall,    audio: '이거 뭐예요?' },
   { hangul: '호떡',             rom: 'ho-tteok',              es: 'hodduk (pastelito de plancha)',   img: KR_IMG_004.hodduk_closeup,  audio: '호떡' },
   { hangul: '맛있어요',         rom: 'ma-si-sseo-yo',         es: '¡está delicioso! (tiene sabor)',  img: KR_IMG_004.matisseoyo,      audio: '맛있어요',                tip: '맛(sabor) + 있어요(hay) = tiene sabor' },
-  { hangul: '맛없어요',         rom: 'ma-deop-sseo-yo',       es: 'está feo / no tiene sabor',      img: KR_IMG_004.tteugeowoyo,     audio: '맛있어요' },
+  { hangul: '맛없어요',         rom: 'ma-deop-sseo-yo',       es: 'está feo / no tiene sabor',      img: KR_IMG_004.tteugeowoyo,     audio: '맛없어요' },
   { hangul: '하나',             rom: 'ha-na',                 es: 'uno (número nativo)',             img: KR_IMG_004.numbers_native,  audio: '하나',                    tip: 'Antes de contador: 하나→한' },
   { hangul: '둘 / 셋 / 넷',    rom: 'dul / set / net',       es: 'dos / tres / cuatro',            img: KR_IMG_004.numbers_native,  audio: '둘' },
   { hangul: '잔',               rom: 'jan',                   es: 'contador para tazas y bebidas',  img: KR_IMG_003.vaso,            audio: '한 잔',                   tip: '커피 한 잔 = una taza de café' },
-  { hangul: '개',               rom: 'gae',                   es: 'contador genérico para objetos', img: KR_IMG_004.hodduk_closeup,  audio: '호떡 하나 주세요',         tip: '호떡 한 개 = un hodduk' },
+  { hangul: '개',               rom: 'gae',                   es: 'contador genérico para objetos', img: KR_IMG_004.hodduk_closeup,  audio: '호떡 한 개 주세요',         tip: '호떡 한 개 = un hodduk' },
   { hangul: '-도',              rom: '-do',                   es: 'también (se pega a la palabra)', img: KR_IMG_003.cafe,            audio: '커피',                    tip: '커피-도: reemplaza -를' },
   { hangul: '금방 준비해 드릴게요', rom: 'geum-bang jun-bi-hae deu-ril-ge-yo', es: 'enseguida lo preparo (formal)', img: KR_IMG_003.preparar, audio: '금방', recycled: true },
 ];

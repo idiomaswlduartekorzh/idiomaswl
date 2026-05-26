@@ -49,7 +49,7 @@ const STEPS: Step[] = [
       { kr: '이거 뭐예요?',       es: '¿Qué es esto? (cerca de ti)',        audio: '이거 뭐예요?',    highlight: '이거' },
       { kr: '그거는 호떡이에요',   es: 'Eso es hodduk (lejos de ti)',        audio: '호떡',           highlight: '그거' },
       { kr: '이거 얼마예요?',      es: '¿Cuánto es esto? (♻️ step003)',      audio: '이거 얼마예요',   highlight: '이거' },
-      { kr: '저거는 뭐예요?',      es: '¿Qué es aquello? (lejos de ambos)', audio: '이거 뭐예요?',   highlight: '저거' },
+      { kr: '저거는 뭐예요?',      es: '¿Qué es aquello? (lejos de ambos)', audio: '저거는 뭐예요?', highlight: '저거' },
     ],
   },
   {
@@ -82,7 +82,7 @@ const STEPS: Step[] = [
     kind: 'ejemplos', section: 'B', color: C.B,
     items: [
       { kr: '호떡 하나 주세요',     es: 'Un hodduk (sin contador)',           audio: '호떡 하나 주세요', highlight: '하나' },
-      { kr: '호떡 한 개 주세요',    es: 'Un hodduk (con contador 개)',        audio: '호떡 하나 주세요', highlight: '한 개' },
+      { kr: '호떡 한 개 주세요',    es: 'Un hodduk (con contador 개)',        audio: '호떡 한 개 주세요', highlight: '한 개' },
       { kr: '커피 한 잔 주세요',    es: 'Un café (contador 잔 para bebidas)', audio: '한 잔',           highlight: '한 잔' },
       { kr: '커피 두 잔 주세요',    es: 'Dos cafés (둘→두 antes de 잔)',      audio: '둘',              highlight: '두 잔' },
     ],
@@ -114,10 +114,10 @@ const STEPS: Step[] = [
   {
     kind: 'ejemplos', section: 'C', color: C.C,
     items: [
-      { kr: '커피도 주세요',     es: 'Un café también (del video)',        audio: '커피',    highlight: '도' },
-      { kr: '저도요',           es: 'Yo también',                         audio: '커피',    highlight: '도' },
-      { kr: '영수증도 주세요',   es: 'El recibo también, por favor',       audio: '커피',    highlight: '도' },
-      { kr: '나도 알아요',       es: 'Yo también lo sé',                   audio: '커피',    highlight: '도' },
+      { kr: '커피도 주세요',     es: 'Un café también (del video)',        audio: '커피도 주세요',   highlight: '도' },
+      { kr: '저도요',           es: 'Yo también',                         audio: '저도요',          highlight: '도' },
+      { kr: '영수증도 주세요',   es: 'El recibo también, por favor',       audio: '영수증도 주세요', highlight: '도' },
+      { kr: '나도 알아요',       es: 'Yo también lo sé',                   audio: '나도 알아요',     highlight: '도' },
     ],
   },
   {
