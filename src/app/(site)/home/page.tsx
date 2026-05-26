@@ -288,6 +288,19 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+        <div className="wrap" style={{ paddingTop: '1.5rem', paddingBottom: '0.5rem' }}>
+          <Link
+            href="/metodo"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+              padding: '0.6rem 1.4rem', borderRadius: 10,
+              background: 'var(--accent)', color: '#fff',
+              fontSize: 14, fontWeight: 700, textDecoration: 'none',
+            }}
+          >
+            Ver el método completo →
+          </Link>
+        </div>
       </section>
 
       {/* EQUIPO */}
@@ -424,7 +437,7 @@ export default function HomePage() {
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Compañía</p>
             <Link href="#equipo">Equipo</Link>
-            <Link href="#metodo">Método</Link>
+            <Link href="/metodo">Método</Link>
             <Link href="#">Contacto</Link>
           </div>
         </div>

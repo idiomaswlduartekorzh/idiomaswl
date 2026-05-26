@@ -10,7 +10,7 @@ import { useTheme } from '@/components/ThemeProvider';
 
 const NAV_LINKS = [
   { label: 'Idiomas',   href: '/home#idiomas' },
-  { label: 'Método',    href: '/home#metodo' },
+  { label: 'Método',    href: '/metodo' },
   { label: 'Exámenes',  href: '/examenes' },
   { label: 'Lección',   href: '/leccion' },
   { label: 'Práctica',   href: '/practica' },
@@ -123,6 +123,8 @@ export default function SiteNav() {
               ? pathname === '/practica'
               : href === '/precios'
               ? pathname === '/precios'
+              : href === '/metodo'
+              ? pathname === '/metodo'
               : pathname === '/home';
             return (
               <Link
