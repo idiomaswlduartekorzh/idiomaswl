@@ -34,6 +34,35 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const [success, setSuccess]   = useState('');
   const router = useRouter();
 
+  // ── Auth error normalisation ──────────────────────────────────────────────
+  // We deliberately avoid echoing the raw Supabase error string to the UI.
+  // Distinguishing "wrong email" from "wrong password" lets attackers enumerate
+  // valid accounts, so both cases map to the same generic message.
+  function normalizeLoginError(msg: string): string {
+    const lower = msg.toLowerCase();
+    // Rate-limited — surface this so the user understands why they're blocked
+    if (lower.includes('too many') || lower.includes('rate limit')) {
+      return 'Demasiados intentos. Espera unos minutos e inténtalo de nuevo.';
+    }
+    // All credential failures → same opaque message
+    return 'Email o contraseña incorrectos. Verifica tus datos e inténtalo de nuevo.';
+  }
+
+  function normalizeRegisterError(msg: string): string {
+    const lower = msg.toLowerCase();
+    if (lower.includes('already registered') || lower.includes('already exists') || lower.includes('duplicate')) {
+      return 'Ya existe una cuenta con este correo. ¿Quieres iniciar sesión?';
+    }
+    if (lower.includes('password') && (lower.includes('short') || lower.includes('characters'))) {
+      return 'La contraseña debe tener al menos 6 caracteres.';
+    }
+    if (lower.includes('too many') || lower.includes('rate limit')) {
+      return 'Demasiados intentos. Espera unos minutos e inténtalo de nuevo.';
+    }
+    // Generic fallback — don't expose raw server messages
+    return 'No se pudo crear la cuenta. Inténtalo de nuevo.';
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
@@ -43,7 +72,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
     if (mode === 'login') {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
-      if (error) { setError(error.message); setLoading(false); return; }
+      if (error) { setError(normalizeLoginError(error.message)); setLoading(false); return; }
       router.push('/dashboard');
       router.refresh();
     } else {
@@ -52,7 +81,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
         password,
         options: { data: { full_name: name } },
       });
-      if (error) { setError(error.message); setLoading(false); return; }
+      if (error) { setError(normalizeRegisterError(error.message)); setLoading(false); return; }
       setSuccess('¡Revisa tu correo para confirmar tu cuenta!');
       setLoading(false);
     }

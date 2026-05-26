@@ -2,18 +2,13 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { createAdminClient } from '@/lib/supabase/admin';
 import AudiosAdmin from './AudiosAdmin';
-
-const ADMIN_EMAILS = [
-  'josedavidduartesilva@gmail.com',
-  'david.duartes182@gmail.com',
-  'zhanna.korzh@gmail.com',
-];
+import { ALL_ADMIN_EMAILS } from '@/lib/config/admins';
 
 export default async function AudiosAdminPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
-  if (!user?.email || !ADMIN_EMAILS.includes(user.email)) {
+  if (!user?.email || !ALL_ADMIN_EMAILS.includes(user.email)) {
     redirect('/dashboard');
   }
 

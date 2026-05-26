@@ -2,9 +2,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import JoseDashboardServer from './JoseDashboardServer'
 import ZhannaDashboard from './ZhannaDashboard'
-
-const JOSE_EMAILS = ['josedavidduartesilva@gmail.com', 'david.duartes182@gmail.com']
-const ZHANNA_EMAIL = 'zhanna.korzh@gmail.com'
+import { JOSE_EMAILS, ZHANNA_EMAILS } from '@/lib/config/admins'
 
 export default async function AdminPage() {
   const supabase = await createClient()
@@ -14,11 +12,11 @@ export default async function AdminPage() {
 
   const email = user?.email ?? ''
 
-  if (JOSE_EMAILS.includes(email)) {
+  if (JOSE_EMAILS.includes(email as typeof JOSE_EMAILS[number])) {
     return <JoseDashboardServer />
   }
 
-  if (email === ZHANNA_EMAIL) {
+  if (ZHANNA_EMAILS.includes(email as typeof ZHANNA_EMAILS[number])) {
     return <ZhannaDashboard />
   }
 
