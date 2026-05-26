@@ -265,11 +265,45 @@ export const KR_AUDIO_007: Record<string, string> = {
   '일':                         `${BASE007}/audio/audio_il.mp3`,
 };
 
+// ─── STEP 004 — 호떡 & Café ───────────────────────────────────────────────────
+const BASE004 = '/assets/korean/step004';
+
+export const KR_IMG_004 = {
+  hodduk_stall:   `${BASE004}/hodduk_stall_v1.png`,
+  hodduk_closeup: `${BASE004}/hodduk_closeup_v1.png`,
+  david_ordering: `${BASE004}/david_street_ordering_v1.png`,
+  numbers_native: `${BASE004}/numbers_native_kr_v1.png`,
+  matisseoyo:     `${BASE004}/matisseoyo_v1.png`,
+  tteugeowoyo:    `${BASE004}/tteugeowoyo_v1.png`,
+  market_street:  `${BASE004}/market_street_v1.png`,
+};
+
+export const KR_PODCAST_004 = `${BASE004}/audios/step004-podcast.mp3`;
+export const KR_VIDEO_004   = `${BASE004}/videos/STEP004.mov`;
+
+export const KR_AUDIO_004: Record<string, string> = {
+  '호떡':              `${BASE004}/audios/audio_hodduk.mp3`,
+  '호떡 하나 주세요':  `${BASE004}/audios/audio_hodduk_hana_juseyo.mp3`,
+  '하나':              `${BASE004}/audios/audio_hana.mp3`,
+  '둘':                `${BASE004}/audios/audio_dul.mp3`,
+  '셋':                `${BASE004}/audios/audio_set.mp3`,
+  '넷':                `${BASE004}/audios/audio_net.mp3`,
+  '다섯':              `${BASE004}/audios/audio_tasot.mp3`,
+  '맛있어요':          `${BASE004}/audios/audio_matisseoyo.mp3`,
+  '맛':                `${BASE004}/audios/audio_mat.mp3`,
+  '뜨거워요':          `${BASE004}/audios/audio_tteugeowoyo.mp3`,
+  '조심하세요':        `${BASE004}/audios/audio_josimhaseyo.mp3`,
+  '길거리':            `${BASE004}/audios/audio_gilgeori.mp3`,
+  '시장':              `${BASE004}/audios/audio_sijang.mp3`,
+  '아저씨':            `${BASE004}/audios/audio_ajeossi.mp3`,
+};
+
 export function playAudio(text: string, rate = 1) {
   if (typeof window === 'undefined') return;
   const src =
     KR_AUDIO_007[text] ??
     KR_AUDIO_006[text] ??
+    KR_AUDIO_004[text] ??
     KR_AUDIO_003[text] ??
     KR_AUDIO_002[text] ??
     (KR_AUDIO as Record<string, string>)[text];
