@@ -7,6 +7,8 @@ import StageRail from './StageRail';
 import StagePanel from './StagePanel';
 
 const TOTAL = 11;
+/** How many days exist in the system — keep in sync with generateStaticParams. */
+const MAX_DAY = 20;
 
 const STAGE_LABELS: Record<number, string> = {
   1: 'Activación', 2: 'Adquisición guiada', 3: 'Reconocimiento',
@@ -16,13 +18,17 @@ const STAGE_LABELS: Record<number, string> = {
 };
 
 interface LessonRuntimeProps {
+  /** Display name: "Coreano", "Japonés", etc. */
   langName: string;
+  /** Short visual glyph: "한", "日", etc. */
   langFlag: string;
+  /** URL slug: "korean", "japanese", etc. Used in prev/next navigation links. */
+  langSlug: string;
   dayNumber: number;
   title: string;
 }
 
-export default function LessonRuntime({ langName, langFlag, dayNumber, title }: LessonRuntimeProps) {
+export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber, title }: LessonRuntimeProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   function next() { setActiveIndex(i => Math.min(i + 1, TOTAL - 1)); }
@@ -76,19 +82,19 @@ export default function LessonRuntime({ langName, langFlag, dayNumber, title }: 
               <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.06em' }}>
                 {String(stageNum).padStart(2, '0')} / {String(TOTAL).padStart(2, '0')}
               </span>
-              {/* Day navigation */}
+              {/* Day navigation — use langSlug so any language navigates correctly */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                 {dayNumber > 1 && (
                   <Link
-                    href={`/courses/korean/step/${dayNumber - 1}`}
+                    href={`/courses/${langSlug}/step/${dayNumber - 1}`}
                     style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.06em', color: 'var(--muted)', padding: '4px 8px', borderRadius: 6, border: '1px solid var(--line-soft)', textDecoration: 'none', whiteSpace: 'nowrap' }}
                   >
                     ← Día {dayNumber - 1}
                   </Link>
                 )}
-                {dayNumber < 10 && (
+                {dayNumber < MAX_DAY && (
                   <Link
-                    href={`/courses/korean/step/${dayNumber + 1}`}
+                    href={`/courses/${langSlug}/step/${dayNumber + 1}`}
                     style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.06em', color: 'var(--muted)', padding: '4px 8px', borderRadius: 6, border: '1px solid var(--line-soft)', textDecoration: 'none', whiteSpace: 'nowrap' }}
                   >
                     Día {dayNumber + 1} →

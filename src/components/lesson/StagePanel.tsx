@@ -1,6 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 
 // ── Day 1 stages ──────────────────────────────────────────────────────────────
 const Activation          = dynamic(() => import('./stages/Activation'),          { ssr: false });
@@ -138,12 +139,45 @@ export default function StagePanel({ stageIndex, dayNumber = 1, onComplete }: St
     COMPONENTS_DAY1;
   const StageComponent = components[stageIndex];
 
-  if (!StageComponent) {
+  const isUnpublishedDay = ![1, 2, 3, 4, 6, 7].includes(dayNumber);
+
+  if (!StageComponent || isUnpublishedDay) {
     return (
       <article className="wl-korean-runtime-stage-panel wl-card">
-        <p style={{ padding: '2rem', color: 'var(--muted)', textAlign: 'center' }}>
-          Etapa no disponible.
-        </p>
+        <div style={{ padding: '3.5rem 2rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.1rem' }}>
+          <span style={{ fontSize: 44 }}>🚧</span>
+          <p style={{ fontWeight: 800, fontSize: 18, color: 'var(--ink)', margin: 0 }}>
+            Día {dayNumber} — Próximamente
+          </p>
+          <p style={{ color: 'var(--muted)', fontSize: 14, margin: 0, maxWidth: 380, lineHeight: 1.65 }}>
+            Este día está en producción. Publicamos nuevas lecciones de forma regular —
+            vuelve en unos días para encontrarlo disponible.
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '0.25rem' }}>
+            <Link
+              href="/practica"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+                padding: '0.55rem 1.1rem', borderRadius: 10,
+                background: 'var(--accent, #14215c)', color: '#fff',
+                fontSize: 14, fontWeight: 700, textDecoration: 'none',
+              }}
+            >
+              Practicar lectura en coreano →
+            </Link>
+            <Link
+              href="/leccion"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+                padding: '0.55rem 1.1rem', borderRadius: 10,
+                border: '1.5px solid var(--line-soft)', background: 'transparent',
+                color: 'var(--muted)', fontSize: 14, fontWeight: 600, textDecoration: 'none',
+              }}
+            >
+              Ver lecciones disponibles
+            </Link>
+          </div>
+        </div>
       </article>
     );
   }

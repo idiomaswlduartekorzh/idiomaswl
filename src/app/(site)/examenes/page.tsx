@@ -1,7 +1,25 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EXAM_LIST } from '@/data/exams';
 
-export const metadata = { title: 'Exámenes · Idiomas WeLearn' };
+export const metadata: Metadata = {
+  title: 'Simulacros de Certificación Internacional',
+  description:
+    'Simulacros completos de TOEFL iBT, IELTS, ICFES Saber 11, Goethe-Zertifikat, DELF/DALF, CILS/CELI y CELPE-Bras. Practica con preguntas reales, estrategia de examen y feedback con IA.',
+  keywords: [
+    'TOEFL iBT simulacro', 'IELTS práctica online', 'ICFES Saber 11 inglés',
+    'Goethe examen alemán', 'DELF francés', 'certificación idiomas Colombia',
+    'examen de inglés preparación',
+  ],
+  openGraph: {
+    title: 'Simulacros de Certificación — Idiomas WeLearn',
+    description: 'TOEFL, IELTS, ICFES y más. Simulacros completos con feedback de IA.',
+    url: 'https://idiomaswl.com/examenes',
+  },
+  alternates: {
+    canonical: 'https://idiomaswl.com/examenes',
+  },
+};
 
 export default function ExamenesPage() {
   return (

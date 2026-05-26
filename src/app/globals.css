@@ -5896,3 +5896,36 @@ body {
 .wlp-dash  { color: var(--muted); font-size: 1rem; }
 
 /* dark mode — inherited automatically via CSS custom properties (--surface, --ink, --line-soft) */
+
+/* ── Skeleton loading animation ─────────────────────────────────────────────
+   Used by loading.tsx files across the app.
+   Usage: <div class="wl-skeleton" style="width:200px; height:16px; border-radius:4px" />
+   ────────────────────────────────────────────────────────────────────────── */
+@keyframes wl-shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+
+.wl-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-2) 25%,
+    color-mix(in srgb, var(--bg-2) 60%, var(--muted) 20%) 50%,
+    var(--bg-2) 75%
+  );
+  background-size: 800px 100%;
+  animation: wl-shimmer 1.4s ease-in-out infinite;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .wl-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-2) 25%,
+    color-mix(in srgb, var(--bg-2) 60%, var(--muted) 10%) 50%,
+    var(--bg-2) 75%
+  );
+  background-size: 800px 100%;
+  animation: wl-shimmer 1.4s ease-in-out infinite;
+}

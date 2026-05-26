@@ -13,7 +13,11 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   const exam = EXAMS[slug];
   const mock = getMock(slug, mockId);
   if (!exam || !mock) return {};
-  return { title: `${mock.title} · Practice · ${exam.name} · Idiomas WeLearn` };
+  return {
+    title: `${mock.title} — ${exam.name}`,
+    description: `Simulacro completo de ${exam.name}: ${mock.subtitle ?? mock.title}. Practica con preguntas reales y obtén feedback inmediato.`,
+    robots: { index: false, follow: false }, // practice sessions are not indexable
+  };
 }
 
 export default async function PracticePage({ params }: { params: Promise<{ exam: string; mockId: string }> }) {

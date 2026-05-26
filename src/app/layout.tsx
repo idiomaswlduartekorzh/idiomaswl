@@ -13,9 +13,52 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const BASE_URL = 'https://idiomaswl.com';
+
 export const metadata: Metadata = {
-  title: "Idiomas WeLearn — aprender idiomas, en serio",
-  description: "Once pasos diarios diseñados para que cada concepto se interiorice. Vocabulario, gramática, escucha, patrón y examen acumulativo.",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: 'Idiomas WeLearn — Aprende un idioma, en serio',
+    template: '%s · Idiomas WeLearn',
+  },
+  description:
+    'Aprende coreano, inglés, francés, alemán, italiano y más con el método WeLearn: once pasos diarios que imitan cómo el cerebro interioriza un idioma. Simulacros completos de TOEFL, IELTS e ICFES.',
+  keywords: [
+    'aprender idiomas', 'coreano online', 'aprender inglés', 'TOEFL simulacro',
+    'IELTS práctica', 'ICFES inglés', 'Saber 11 inglés', 'método WeLearn',
+    'curso de coreano', 'certificación idiomas', 'aprender francés',
+  ],
+  authors: [{ name: 'Idiomas WeLearn', url: BASE_URL }],
+  creator: 'Idiomas WeLearn',
+  openGraph: {
+    type: 'website',
+    locale: 'es_CO',
+    url: BASE_URL,
+    siteName: 'Idiomas WeLearn',
+    title: 'Idiomas WeLearn — Aprende un idioma, en serio',
+    description:
+      'Aprende coreano, inglés, francés y más con once pasos diarios. Simulacros de TOEFL, IELTS e ICFES.',
+    images: [
+      {
+        url: '/images/welearn-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Idiomas WeLearn',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Idiomas WeLearn — Aprende un idioma, en serio',
+    description:
+      'Aprende coreano, inglés, francés y más con once pasos diarios. Simulacros de TOEFL, IELTS e ICFES.',
+    images: ['/images/welearn-logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+  },
 };
 
 // Blocking script — runs before paint to avoid flash of wrong theme

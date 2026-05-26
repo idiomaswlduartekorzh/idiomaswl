@@ -3,7 +3,8 @@ import { createClient } from '@/lib/supabase/server'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Panel · Idiomas WeLearn',
+  title: 'Panel de estudiante',
+  robots: { index: false, follow: false },
 }
 
 export default async function DashboardLayout({

@@ -21,6 +21,24 @@ const NIVEL_INFO: Record<Nivel, { desc: string; emoji: string; color: string; bg
 
 type CyclePhase = 'level' | 'text' | 'step1' | 'step2' | 'step3' | 'step4' | 'done';
 
+// ─── Progress persistence ─────────────────────────────────────────────────────
+
+const STORAGE_KEY = 'wl_cycle_progress_v2';
+
+interface CycleProgress { nivel: Nivel | null; completedIds: string[] }
+
+function loadProgress(): CycleProgress {
+  try {
+    const raw = typeof window !== 'undefined' ? localStorage.getItem(STORAGE_KEY) : null;
+    if (raw) return JSON.parse(raw) as CycleProgress;
+  } catch {}
+  return { nivel: null, completedIds: [] };
+}
+
+function saveProgress(p: CycleProgress) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); } catch {}
+}
+
 // ─── Vocab highlight helper ───────────────────────────────────────────────────
 
 function segmentText(korean: string, vocab: CycleText['vocab']) {
@@ -68,13 +86,35 @@ export default function KoreanCycle({ addXp }: { addXp: (n: number) => void }) {
   const [answers, setAnswers] = useState<(string | boolean | string[])[]>([]);
   const [score, setScore]   = useState(0);
   const [showIntro, setShowIntro] = useState(true);
+  const [completedIds, setCompletedIds] = useState<string[]>([]);
 
   const currentText = CYCLE_TEXTS.find(t => t.id === textId) ?? null;
   const step = phase === 'step1' ? 1 : phase === 'step2' ? 2 : phase === 'step3' ? 3 : phase === 'step4' ? 4 : 0;
 
-  function chooseLevel(n: Nivel) { setNivel(n); setPhase('text'); }
+  useEffect(() => {
+    const saved = loadProgress();
+    setCompletedIds(saved.completedIds);
+    if (saved.nivel) { setNivel(saved.nivel); setPhase('text'); }
+  }, []);
+
+  function chooseLevel(n: Nivel) {
+    setNivel(n);
+    setPhase('text');
+    saveProgress({ nivel: n, completedIds });
+  }
   function chooseText(id: string) { setTextId(id); setPhase('step1'); }
-  function restart() { setPhase('level'); setNivel(null); setTextId(null); setAnswers([]); setScore(0); }
+  function markComplete(id: string) {
+    const next = completedIds.includes(id) ? completedIds : [...completedIds, id];
+    setCompletedIds(next);
+    saveProgress({ nivel, completedIds: next });
+  }
+  function restart() {
+    setPhase('level');
+    setNivel(null);
+    setTextId(null);
+    setAnswers([]);
+    setScore(0);
+  }
 
   const slideProps = {
     initial: { opacity: 0, x: 24 },
@@ -121,12 +161,12 @@ export default function KoreanCycle({ addXp }: { addXp: (n: number) => void }) {
       <AnimatePresence mode="wait">
         {phase === 'level' && (
           <motion.div key="level" {...slideProps}>
-            <LevelSelector onSelect={chooseLevel} />
+            <LevelSelector onSelect={chooseLevel} completedIds={completedIds} />
           </motion.div>
         )}
         {phase === 'text' && nivel && (
           <motion.div key="text" {...slideProps}>
-            <TextSelector nivel={nivel} onSelect={chooseText} onBack={() => setPhase('level')} />
+            <TextSelector nivel={nivel} onSelect={chooseText} onBack={() => setPhase('level')} completedIds={completedIds} />
           </motion.div>
         )}
         {phase === 'step1' && currentText && (
@@ -156,7 +196,7 @@ export default function KoreanCycle({ addXp }: { addXp: (n: number) => void }) {
               score={score}
               answers={answers}
               quizLevel={quizLevel}
-              onDone={() => { addXp(50); setPhase('done'); }}
+              onDone={() => { addXp(50); markComplete(textId!); setPhase('done'); }}
             />
           </motion.div>
         )}
@@ -204,7 +244,7 @@ function CycleProgressBar({ step }: { step: number }) {
 
 // ─── Level selector ───────────────────────────────────────────────────────────
 
-function LevelSelector({ onSelect }: { onSelect: (n: Nivel) => void }) {
+function LevelSelector({ onSelect, completedIds }: { onSelect: (n: Nivel) => void; completedIds: string[] }) {
   return (
     <div>
       <p className="eyebrow" style={{ margin:'0 0 0.5rem' }}><span className="ink-line" />Selecciona tu nivel</p>
@@ -213,6 +253,7 @@ function LevelSelector({ onSelect }: { onSelect: (n: Nivel) => void }) {
         {(['A1','A2','B1'] as Nivel[]).map(n => {
           const info = NIVEL_INFO[n];
           const texts = CYCLE_TEXTS.filter(t => t.nivel === n);
+          const doneCount = texts.filter(t => completedIds.includes(t.id)).length;
           return (
             <button
               key={n}
@@ -233,7 +274,9 @@ function LevelSelector({ onSelect }: { onSelect: (n: Nivel) => void }) {
               }</div>
               <div style={{ fontSize:'0.78rem', color:'var(--muted)', lineHeight:1.5 }}>{info.desc}</div>
               <div style={{ fontSize:'0.72rem', color: info.color, fontFamily:'var(--mono)', fontWeight:700, marginTop:'0.25rem' }}>
-                {texts.length} textos disponibles →
+                {doneCount > 0
+                  ? `✓ ${doneCount}/${texts.length} completados`
+                  : `${texts.length} textos disponibles →`}
               </div>
             </button>
           );
@@ -245,43 +288,58 @@ function LevelSelector({ onSelect }: { onSelect: (n: Nivel) => void }) {
 
 // ─── Text selector ────────────────────────────────────────────────────────────
 
-function TextSelector({ nivel, onSelect, onBack }: { nivel: Nivel; onSelect: (id: string) => void; onBack: () => void }) {
+function TextSelector({ nivel, onSelect, onBack, completedIds }: { nivel: Nivel; onSelect: (id: string) => void; onBack: () => void; completedIds: string[] }) {
   const texts = CYCLE_TEXTS.filter(t => t.nivel === nivel);
   const info  = NIVEL_INFO[nivel];
+  const doneCount = texts.filter(t => completedIds.includes(t.id)).length;
 
   return (
     <div>
       <button onClick={onBack} className="btn btn-ghost btn-sm" style={{ marginBottom:'1rem', fontSize:'0.82rem' }}>← Volver</button>
       <p className="eyebrow" style={{ margin:'0 0 0.4rem' }}><span className="ink-line" />{info.emoji} Nivel {nivel}</p>
-      <h2 style={{ fontSize:'1.5rem', fontWeight:800, margin:'0 0 1.25rem', color:'var(--ink)' }}>Elige un texto para practicar</h2>
+      <h2 style={{ fontSize:'1.5rem', fontWeight:800, margin:'0 0 0.4rem', color:'var(--ink)' }}>Elige un texto para practicar</h2>
+      {doneCount > 0 && (
+        <p style={{ fontSize:'0.8rem', color: info.color, fontWeight:700, fontFamily:'var(--mono)', marginBottom:'1rem' }}>
+          ✓ {doneCount} de {texts.length} completados
+        </p>
+      )}
       <div style={{ display:'flex', flexDirection:'column', gap:'0.75rem' }}>
-        {texts.map((t, i) => (
-          <button
-            key={t.id}
-            onClick={() => onSelect(t.id)}
-            style={{
-              display:'flex', alignItems:'center', gap:'1rem', padding:'1.1rem 1.25rem',
-              borderRadius:14, border:`1.5px solid ${info.color}33`, background:'var(--bg)',
-              cursor:'pointer', fontFamily:'inherit', textAlign:'left', transition:'all 0.18s',
-            }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = info.color; (e.currentTarget as HTMLElement).style.background = info.bg; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = `${info.color}33`; (e.currentTarget as HTMLElement).style.background = 'var(--bg)'; }}
-          >
-            <div style={{
-              width:40, height:40, borderRadius:10, background: info.bg, border:`1.5px solid ${info.color}44`,
-              display:'flex', alignItems:'center', justifyContent:'center',
-              fontSize:'1.1rem', fontWeight:900, color: info.color, fontFamily:'var(--mono)', flexShrink:0,
-            }}>{i+1}</div>
-            <div style={{ flex:1, minWidth:0 }}>
-              <div style={{ fontWeight:800, color:'var(--ink)', fontSize:'0.95rem' }}>{t.titulo}</div>
-              <div style={{ color:info.color, fontWeight:700, fontSize:'0.78rem', fontFamily:'var(--mono)' }}>{t.tituloKo}</div>
-              <div style={{ color:'var(--muted)', fontSize:'0.78rem', marginTop:'0.2rem', lineHeight:1.4, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>
-                {t.korean.slice(0, 60)}…
+        {texts.map((t, i) => {
+          const done = completedIds.includes(t.id);
+          return (
+            <button
+              key={t.id}
+              onClick={() => onSelect(t.id)}
+              style={{
+                display:'flex', alignItems:'center', gap:'1rem', padding:'1.1rem 1.25rem',
+                borderRadius:14,
+                border: done ? `1.5px solid ${info.color}88` : `1.5px solid ${info.color}33`,
+                background: done ? info.bg : 'var(--bg)',
+                cursor:'pointer', fontFamily:'inherit', textAlign:'left', transition:'all 0.18s',
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = info.color; (e.currentTarget as HTMLElement).style.background = info.bg; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = done ? `${info.color}88` : `${info.color}33`; (e.currentTarget as HTMLElement).style.background = done ? info.bg : 'var(--bg)'; }}
+            >
+              <div style={{
+                width:40, height:40, borderRadius:10,
+                background: done ? info.color : info.bg,
+                border:`1.5px solid ${info.color}44`,
+                display:'flex', alignItems:'center', justifyContent:'center',
+                fontSize: done ? '1.3rem' : '1.1rem', fontWeight:900,
+                color: done ? '#fff' : info.color,
+                fontFamily:'var(--mono)', flexShrink:0,
+              }}>{done ? '✓' : i+1}</div>
+              <div style={{ flex:1, minWidth:0 }}>
+                <div style={{ fontWeight:800, color:'var(--ink)', fontSize:'0.95rem' }}>{t.titulo}</div>
+                <div style={{ color:info.color, fontWeight:700, fontSize:'0.78rem', fontFamily:'var(--mono)' }}>{t.tituloKo}</div>
+                <div style={{ color:'var(--muted)', fontSize:'0.78rem', marginTop:'0.2rem', lineHeight:1.4, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>
+                  {t.korean.slice(0, 60)}…
+                </div>
               </div>
-            </div>
-            <span style={{ color:'var(--muted)', fontSize:'1.2rem', flexShrink:0 }}>→</span>
-          </button>
-        ))}
+              <span style={{ color:'var(--muted)', fontSize:'1.2rem', flexShrink:0 }}>{done ? '↺' : '→'}</span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );

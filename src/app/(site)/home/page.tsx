@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
@@ -9,7 +10,66 @@ import {
   CountUp, TiltCard, TeamCard, TestimonialCard,
 } from './HomeAnimations';
 
-export const metadata = { title: 'Idiomas WeLearn · Aprende un idioma, en serio.' };
+export const metadata: Metadata = {
+  title: 'Aprende un idioma, en serio',
+  description:
+    'Once pasos diarios diseñados para que el cerebro interiorice un idioma de verdad. Vocabulario, gramática, escucha y producción. Coreano, inglés, francés, alemán, italiano, portugués y ruso.',
+  keywords: [
+    'aprender coreano', 'aprender inglés gratis', 'método WeLearn', 'TOEFL iBT',
+    'IELTS simulacro', 'ICFES saber 11 inglés', 'once pasos idioma',
+  ],
+  openGraph: {
+    title: 'Idiomas WeLearn — Aprende un idioma, en serio',
+    description: 'Once pasos diarios que imitan cómo el cerebro interioriza un idioma. Gratis para empezar.',
+    url: 'https://idiomaswl.com/home',
+  },
+  alternates: {
+    canonical: 'https://idiomaswl.com/home',
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://idiomaswl.com/#organization',
+      name: 'Idiomas WeLearn',
+      url: 'https://idiomaswl.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://idiomaswl.com/images/welearn-logo.png',
+      },
+      description:
+        'Plataforma de aprendizaje de idiomas con el método WeLearn: once etapas diarias para interiorizar vocabulario, gramática y pronunciación.',
+      sameAs: [],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://idiomaswl.com/#website',
+      url: 'https://idiomaswl.com',
+      name: 'Idiomas WeLearn',
+      description: 'Aprende coreano, inglés, francés y más con once pasos diarios.',
+      publisher: { '@id': 'https://idiomaswl.com/#organization' },
+    },
+    {
+      '@type': 'EducationalOrganization',
+      '@id': 'https://idiomaswl.com/#edu',
+      name: 'Idiomas WeLearn',
+      url: 'https://idiomaswl.com',
+      description: 'Plataforma educativa para aprender idiomas y prepararse para certificaciones internacionales como TOEFL, IELTS e ICFES.',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Idiomas disponibles',
+        itemListElement: [
+          { '@type': 'Course', name: 'Coreano', description: 'Aprende coreano desde cero con el método WeLearn.', provider: { '@id': 'https://idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Inglés — TOEFL / IELTS / ICFES', description: 'Prepárate para certificaciones de inglés con simulacros completos.', provider: { '@id': 'https://idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Francés — DELF/DALF', description: 'Aprende francés y practica para el DELF.', provider: { '@id': 'https://idiomaswl.com/#organization' } },
+        ],
+      },
+    },
+  ],
+};
 
 const IDIOMAS = [
   { code: 'En', name: 'Inglés',    native: 'English',   desc: 'IELTS · TOEFL · ICFES',   active: true  },
@@ -88,6 +148,10 @@ const TESTIMONIALS = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* HERO */}
       <section className="wlh-hero">
         <HeroLeft>

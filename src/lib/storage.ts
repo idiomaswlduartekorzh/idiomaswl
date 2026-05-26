@@ -298,21 +298,22 @@ export const KR_AUDIO_004: Record<string, string> = {
   '아저씨':            `${BASE004}/audios/audio_ajeossi.mp3`,
 };
 
+const ALL_AUDIO_MAPS: Record<string, string>[] = [
+  KR_AUDIO_007,
+  KR_AUDIO_006,
+  KR_AUDIO_004,
+  KR_AUDIO_003,
+  KR_AUDIO_002,
+  KR_AUDIO as Record<string, string>,
+];
+
 export function playAudio(text: string, rate = 1) {
   if (typeof window === 'undefined') return;
-  const src =
-    KR_AUDIO_007[text] ??
-    KR_AUDIO_006[text] ??
-    KR_AUDIO_004[text] ??
-    KR_AUDIO_003[text] ??
-    KR_AUDIO_002[text] ??
-    (KR_AUDIO as Record<string, string>)[text];
+  const src = ALL_AUDIO_MAPS.find(m => text in m)?.[text];
   if (src) {
     const audio = new Audio(src);
     audio.playbackRate = rate;
-    audio.play().catch(() => {
-      speakKorean(text, rate);
-    });
+    audio.play().catch(() => speakKorean(text, rate));
     return;
   }
   speakKorean(text, rate);

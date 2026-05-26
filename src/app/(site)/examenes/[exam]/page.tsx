@@ -12,7 +12,18 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   const { exam: slug } = await params;
   const exam = EXAMS[slug];
   if (!exam) return {};
-  return { title: `${exam.name} · Simulacros y preparación · Idiomas WeLearn` };
+  return {
+    title: `Simulacros de ${exam.fullName ?? exam.name}`,
+    description: `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con feedback de IA.`,
+    openGraph: {
+      title: `${exam.name} — Simulacros y preparación`,
+      description: exam.tagline,
+      url: `https://idiomaswl.com/examenes/${slug}`,
+    },
+    alternates: {
+      canonical: `https://idiomaswl.com/examenes/${slug}`,
+    },
+  };
 }
 
 export default async function ExamPage({ params }: { params: Promise<{ exam: string }> }) {
