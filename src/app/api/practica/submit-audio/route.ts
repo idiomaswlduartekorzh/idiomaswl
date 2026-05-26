@@ -22,10 +22,13 @@ export async function POST(request: Request) {
     const path      = `${timestamp}_${username.replace(/[^a-zA-Z0-9]/g,'_')}_${nivel}_${textoId}.${ext}`;
 
     // Upload audio to Supabase Storage
+    // Strip codec params (e.g. "audio/webm;codecs=opus" → "audio/webm")
+    // so Supabase bucket allowed_mime_types matching works correctly
+    const contentType = audio.type.split(';')[0] || 'audio/webm';
     const arrayBuffer = await audio.arrayBuffer();
     const { error: uploadError } = await supabase.storage
       .from('cycle-audio')
-      .upload(path, arrayBuffer, { contentType: audio.type, upsert: false });
+      .upload(path, arrayBuffer, { contentType, upsert: false });
 
     if (uploadError) {
       console.error('[submit-audio] storage error:', uploadError);
