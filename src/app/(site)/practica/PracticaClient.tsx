@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import type { CSSProperties } from 'react';
+import KoreanCycle from './KoreanCycle';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Language catalogue
@@ -77,6 +78,16 @@ function speak(text: string, slow = false) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Color system — single source of truth
+// ─────────────────────────────────────────────────────────────────────────────
+
+const JAMO_COLORS = {
+  cho:  { hex: '#534AB7', label: '초성',  labelEs: 'Consonante inicial', desc: 'La consonante que abre la sílaba. Si no hay consonante, se escribe ㅇ (silente).' },
+  jung: { hex: '#2563eb', label: '중성',  labelEs: 'Vocal',              desc: 'El núcleo vocálico. Puede ser simple (ㅏ) o diptongo compuesto (ㅘ, ㅝ…).' },
+  jong: { hex: '#d97706', label: '종성',  labelEs: 'Batchim (final)',     desc: 'Consonante final opcional. Si existe, define las reglas fonéticas de la sílaba.' },
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 // Batchim rules
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -134,16 +145,16 @@ const XP_PER_LEVEL  = 200;
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function PracticaClient() {
-  const [selected, setSelected] = useState<string | null>(null);
-  const [xp,       setXp]       = useState(0);
-  const [activeTab, setActiveTab] = useState<'reader' | 'batchim'>('reader');
+  const [selected,  setSelected]  = useState<string | null>(null);
+  const [xp,        setXp]        = useState(0);
+  const [activeTab, setActiveTab] = useState<'reader' | 'batchim' | 'quiz' | 'jamo' | 'cycle'>('reader');
 
   const addXp = useCallback((n: number) => setXp(p => p + n), []);
 
-  const lang     = LANGUAGES.find(l => l.slug === selected);
-  const level    = Math.floor(xp / XP_PER_LEVEL) + 1;
+  const lang      = LANGUAGES.find(l => l.slug === selected);
+  const level     = Math.floor(xp / XP_PER_LEVEL) + 1;
   const xpInLevel = xp % XP_PER_LEVEL;
-  const xpPct    = (xpInLevel / XP_PER_LEVEL) * 100;
+  const xpPct     = (xpInLevel / XP_PER_LEVEL) * 100;
 
   /* ── Language grid ──────────────────────────────────────────────────────── */
   if (!selected) {
@@ -191,7 +202,7 @@ export default function PracticaClient() {
                   <p className="wl-catalog-card__tagline">{lang.tagline}</p>
                 </div>
                 <div className="wl-catalog-card__footer">
-                  <span>{lang.available ? '2 herramientas' : 'En desarrollo'}</span>
+                  <span>{lang.available ? '3 herramientas' : 'En desarrollo'}</span>
                   <span className="wl-catalog-card__cta">
                     {lang.available ? 'Practicar →' : 'Próximamente'}
                   </span>
@@ -208,74 +219,142 @@ export default function PracticaClient() {
   return (
     <section className="wl-section">
       <div className="wrap">
+        <div style={{ maxWidth: 800, margin: '0 auto' }}>
 
-        {/* Back + breadcrumb */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
-          <button
-            onClick={() => setSelected(null)}
-            className="btn btn-ghost btn-sm"
-            style={{ fontSize: '0.82rem' }}
-          >
-            ← Volver
-          </button>
-          <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>
-            Práctica / {lang?.name}
-          </span>
-        </div>
-
-        {/* Page title */}
-        <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>
-          <span className="ink-line" />{lang?.flag} Práctica de {lang?.name}
-        </p>
-        <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
-          Herramientas interactivas
-        </h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 2rem' }}>
-          Desglose silábico con pronunciación real y guía completa de reglas fonéticas del Hangul.
-        </p>
-
-        {/* XP bar — glass card */}
-        <div className="wl-card" style={{ padding: '0.85rem 1.25rem', marginBottom: '1.5rem', maxWidth: 460 }}>
-          <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'0.4rem', fontSize:'0.82rem', color:'var(--muted)', fontFamily:'var(--mono)' }}>
-            <span>⭐ Nivel {level}</span>
-            <span>{xpInLevel} / {XP_PER_LEVEL} XP</span>
-          </div>
-          <div style={{ height: 7, background: 'var(--line-soft)', borderRadius: 4, overflow: 'hidden' }}>
-            <div style={{
-              height: '100%', width: `${xpPct}%`,
-              background: 'linear-gradient(90deg, #534AB7, #6C63FF)',
-              borderRadius: 4, transition: 'width 0.5s cubic-bezier(0.4,0,0.2,1)',
-            }} />
-          </div>
-          <p style={{ margin: '0.35rem 0 0', fontSize: '0.72rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>
-            Toca sílabas +5 · escucha palabras +10 · explora reglas +15
-          </p>
-        </div>
-
-        {/* Tool tabs */}
-        <div style={{ display:'flex', gap:'0.5rem', marginBottom:'1.5rem', flexWrap:'wrap' }}>
-          {([
-            { id:'reader',  label:'📖 Lector de Hangul' },
-            { id:'batchim', label:'🎵 Reglas de Batchim' },
-          ] as const).map(tab => (
+          {/* Back + breadcrumb */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
             <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={activeTab === tab.id ? 'btn btn-sm' : 'btn btn-ghost btn-sm'}
-              style={{ fontSize: '0.85rem' }}
+              onClick={() => setSelected(null)}
+              className="btn btn-ghost btn-sm"
+              style={{ fontSize: '0.82rem' }}
             >
-              {tab.label}
+              ← Volver
             </button>
-          ))}
-        </div>
+            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>
+              Práctica / {lang?.name}
+            </span>
+          </div>
 
-        {/* Tool content */}
-        {activeTab === 'reader'
-          ? <KoreanReader  addXp={addXp} />
-          : <BatchimAnalyzer addXp={addXp} />
-        }
+          {/* Page header */}
+          <div style={{
+            background: 'linear-gradient(135deg, rgba(83,74,183,0.08) 0%, rgba(37,99,235,0.05) 100%)',
+            border: '1px solid rgba(83,74,183,0.15)',
+            borderRadius: 20,
+            padding: '1.75rem 2rem',
+            marginBottom: '1.5rem',
+          }}>
+            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>
+              <span className="ink-line" />{lang?.flag} Práctica de {lang?.name}
+            </p>
+            <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
+              Herramientas interactivas
+            </h1>
+            <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 1.25rem', lineHeight: 1.6 }}>
+              Desglose silábico con pronunciación real y guía completa de reglas fonéticas del Hangul.
+            </p>
+
+            {/* XP bar */}
+            <div style={{
+              background: 'var(--bg)',
+              border: '1px solid var(--line-soft)',
+              borderRadius: 12,
+              padding: '0.75rem 1rem',
+            }}>
+              <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'0.35rem', fontSize:'0.8rem', color:'var(--muted)', fontFamily:'var(--mono)' }}>
+                <span>⭐ Nivel {level}</span>
+                <span>{xpInLevel} / {XP_PER_LEVEL} XP</span>
+              </div>
+              <div style={{ height: 6, background: 'var(--line-soft)', borderRadius: 4, overflow: 'hidden' }}>
+                <div style={{
+                  height: '100%', width: `${xpPct}%`,
+                  background: 'linear-gradient(90deg, #534AB7, #6C63FF)',
+                  borderRadius: 4, transition: 'width 0.5s cubic-bezier(0.4,0,0.2,1)',
+                }} />
+              </div>
+              <p style={{ margin: '0.3rem 0 0', fontSize: '0.7rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>
+                Toca sílabas +5 · escucha palabras +10 · explora reglas +15 · quiz correcto +20 · ciclo completo +50
+              </p>
+            </div>
+          </div>
+
+          {/* Tool tabs */}
+          <div style={{ display:'flex', gap:'0.5rem', marginBottom:'1.5rem', flexWrap:'wrap' }}>
+            {([
+              { id:'cycle',   label:'🔄 Ciclo de aprendizaje', badge: 'NUEVO' },
+              { id:'reader',  label:'📖 Lector de Hangul',     badge: null },
+              { id:'jamo',    label:'🔡 Tabla de Jamo',         badge: null },
+              { id:'batchim', label:'🎵 Reglas de Batchim',     badge: null },
+              { id:'quiz',    label:'🧠 Quiz',                  badge: null },
+            ] as const).map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={activeTab === tab.id ? 'btn btn-sm' : 'btn btn-ghost btn-sm'}
+                style={{ fontSize: '0.85rem', position:'relative' }}
+              >
+                {tab.label}
+                {tab.badge && (
+                  <span style={{
+                    position:'absolute', top:'-6px', right:'-4px',
+                    background:'#e11d48', color:'#fff',
+                    fontSize:'0.5rem', fontWeight:900, fontFamily:'var(--mono)',
+                    padding:'1px 4px', borderRadius:4, letterSpacing:'0.06em',
+                    lineHeight:1.4,
+                  }}>{tab.badge}</span>
+                )}
+              </button>
+            ))}
+          </div>
+
+          {/* Tool content */}
+          {activeTab === 'cycle'   && <KoreanCycle     addXp={addXp} />}
+          {activeTab === 'reader'  && <KoreanReader    addXp={addXp} />}
+          {activeTab === 'jamo'    && <JamoTable        addXp={addXp} />}
+          {activeTab === 'batchim' && <BatchimAnalyzer  addXp={addXp} />}
+          {activeTab === 'quiz'    && <SyllableQuiz     addXp={addXp} />}
+        </div>
       </div>
     </section>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Color Legend — reutilizable
+// ─────────────────────────────────────────────────────────────────────────────
+
+function JamoColorLegend() {
+  return (
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gap: '0.6rem',
+      marginBottom: '1.25rem',
+    }}>
+      {Object.entries(JAMO_COLORS).map(([key, c]) => (
+        <div key={key} style={{
+          background: `${c.hex}0d`,
+          border: `1.5px solid ${c.hex}33`,
+          borderRadius: 12,
+          padding: '0.75rem 0.85rem',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.3rem' }}>
+            <span style={{
+              display: 'inline-block', width: 10, height: 10,
+              borderRadius: '50%', background: c.hex, flexShrink: 0,
+            }} />
+            <span style={{ fontSize: '0.68rem', fontWeight: 800, color: c.hex, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+              {c.label}
+            </span>
+          </div>
+          <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--ink)', marginBottom: '0.2rem' }}>
+            {c.labelEs}
+          </div>
+          <div style={{ fontSize: '0.73rem', color: 'var(--muted)', lineHeight: 1.45 }}>
+            {c.desc}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -287,19 +366,33 @@ function KoreanReader({ addXp }: { addXp: (n: number) => void }) {
   const [input,     setInput]     = useState('안녕하세요');
   const [syllables, setSyllables] = useState<SyllableData[]>(() => analyzeText('안녕하세요'));
   const [selected,  setSelected]  = useState<number | null>(null);
+  const [history,   setHistory]   = useState<string[]>(['안녕하세요']);
 
   function handleAnalyze() {
     const t = input.trim(); if (!t) return;
-    setSyllables(analyzeText(t)); setSelected(null);
+    const analyzed = analyzeText(t);
+    setSyllables(analyzed);
+    setSelected(null);
+    setHistory(prev => {
+      const next = [t, ...prev.filter(h => h !== t)].slice(0, 6);
+      return next;
+    });
   }
   function handleSpeakFull(slow = false) { speak(input, slow); addXp(10); }
   function handleClickSyllable(idx: number, char: string) { setSelected(idx); speak(char); addXp(5); }
-  function handleQuick(text: string) { setInput(text); setSyllables(analyzeText(text)); setSelected(null); }
+  function handleQuick(text: string) {
+    setInput(text);
+    setSyllables(analyzeText(text));
+    setSelected(null);
+  }
 
-  const fullRoman = syllables.map(s => s.romanization).join('-');
+  const fullRoman    = syllables.map(s => s.romanization).join('-');
+  const hangulSylls  = syllables.filter(s => s.isHangul);
+  const withBatchim  = hangulSylls.filter(s => s.jong).length;
+  const withoutBatch = hangulSylls.length - withBatchim;
 
   return (
-    <div style={{ display:'flex', flexDirection:'column', gap:'1.25rem', maxWidth: 840 }}>
+    <div style={{ display:'flex', flexDirection:'column', gap:'1.25rem' }}>
 
       {/* Input */}
       <div className="wl-card" style={{ padding:'1.5rem' }}>
@@ -322,73 +415,86 @@ function KoreanReader({ addXp }: { addXp: (n: number) => void }) {
             Analizar →
           </button>
         </div>
-        <div style={{ display:'flex', gap:'0.5rem', flexWrap:'wrap', marginTop:'0.75rem' }}>
-          {STARTER_TEXTS.map(t => (
-            <button key={t} onClick={() => handleQuick(t)}
-              className="btn btn-ghost btn-sm"
-              style={{ fontSize:'0.78rem', padding:'0.25rem 0.65rem' }}
-            >{t}</button>
-          ))}
+
+        {/* Quick examples */}
+        <div style={{ marginTop:'0.85rem' }}>
+          <span style={{ fontSize:'0.7rem', color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.08em', marginRight:'0.5rem' }}>Ejemplos:</span>
+          <div style={{ display:'inline-flex', gap:'0.4rem', flexWrap:'wrap', marginTop:'0.3rem' }}>
+            {STARTER_TEXTS.map(t => (
+              <button key={t} onClick={() => handleQuick(t)}
+                className="btn btn-ghost btn-sm"
+                style={{ fontSize:'0.78rem', padding:'0.25rem 0.65rem' }}
+              >{t}</button>
+            ))}
+          </div>
         </div>
+
+        {/* History */}
+        {history.length > 1 && (
+          <div style={{ marginTop:'0.75rem', paddingTop:'0.75rem', borderTop:'1px solid var(--line-soft)' }}>
+            <span style={{ fontSize:'0.7rem', color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.08em', marginRight:'0.5rem' }}>Historial:</span>
+            <div style={{ display:'inline-flex', gap:'0.4rem', flexWrap:'wrap', marginTop:'0.3rem' }}>
+              {history.slice(1).map(t => (
+                <button key={t} onClick={() => handleQuick(t)}
+                  style={{
+                    fontSize:'0.8rem', padding:'0.2rem 0.6rem',
+                    borderRadius:8, border:'1px solid rgba(83,74,183,0.25)',
+                    background:'rgba(83,74,183,0.05)', color:'#534AB7',
+                    cursor:'pointer', fontFamily:'inherit',
+                  }}
+                >{t}</button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Syllable grid */}
       {syllables.length > 0 && (
         <div className="wl-card" style={{ padding:'1.5rem' }}>
-          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:'0.75rem', marginBottom:'1rem' }}>
-            <p className="eyebrow" style={{ margin:0 }}><span className="ink-line" />Desglose silábico</p>
+
+          {/* Header with stats */}
+          <div style={{ display:'flex', alignItems:'flex-start', justifyContent:'space-between', flexWrap:'wrap', gap:'0.75rem', marginBottom:'1rem' }}>
+            <div>
+              <p className="eyebrow" style={{ margin:'0 0 0.4rem' }}><span className="ink-line" />Desglose silábico</p>
+              <div style={{ display:'flex', gap:'0.75rem', fontSize:'0.75rem', fontFamily:'var(--mono)', color:'var(--muted)' }}>
+                <span style={{ color:'#534AB7', fontWeight:700 }}>{hangulSylls.length} sílabas</span>
+                {withBatchim > 0 && <span style={{ color:'#d97706' }}>· {withBatchim} con batchim</span>}
+                {withoutBatch > 0 && <span style={{ color:'#2563eb' }}>· {withoutBatch} abiertas</span>}
+              </div>
+            </div>
             <div style={{ display:'flex', gap:'0.5rem' }}>
               <button onClick={() => handleSpeakFull(false)} className="btn btn-ghost btn-sm" style={{ fontSize:'0.78rem' }}>▶ Escuchar</button>
               <button onClick={() => handleSpeakFull(true)}  className="btn btn-ghost btn-sm" style={{ fontSize:'0.78rem' }}>🐢 Lento</button>
             </div>
           </div>
 
-          <p style={{ textAlign:'center', fontSize:'0.95rem', color:'var(--muted)', fontStyle:'italic', fontFamily:'var(--mono)', margin:'0 0 1.25rem', letterSpacing:'0.04em' }}>
+          {/* Color legend */}
+          <JamoColorLegend />
+
+          {/* Romanization */}
+          <p style={{
+            textAlign:'center', fontSize:'1rem', color:'var(--muted)',
+            fontStyle:'italic', fontFamily:'var(--mono)', margin:'0 0 1.25rem',
+            letterSpacing:'0.04em',
+            background:'var(--bg-2, rgba(0,0,0,0.03))',
+            borderRadius:8, padding:'0.5rem 1rem',
+            border:'1px solid var(--line-soft)',
+          }}>
             [{fullRoman}]
           </p>
 
+          {/* Cards grid */}
           <div style={{ display:'flex', gap:'0.75rem', flexWrap:'wrap', justifyContent:'center' }}>
             {syllables.map((s, idx) => (
-              <button
+              <SyllableCard
                 key={idx}
-                onClick={() => s.isHangul && handleClickSyllable(idx, s.char)}
-                style={{
-                  display:'flex', flexDirection:'column', alignItems:'center',
-                  padding:'0.85rem 0.9rem', borderRadius:14,
-                  border: selected === idx ? '2px solid #534AB7' : '1.5px solid var(--line-soft)',
-                  background: selected === idx ? 'rgba(83,74,183,0.08)' : 'var(--bg)',
-                  cursor: s.isHangul ? 'pointer' : 'default',
-                  transition: 'all 0.15s', minWidth:68,
-                  boxShadow: selected === idx ? '0 4px 14px rgba(83,74,183,0.18)' : 'none',
-                  fontFamily:'inherit',
-                }}
-              >
-                {s.isHangul ? (
-                  <>
-                    <span style={{ fontSize:'1.8rem', fontWeight:800, lineHeight:1.1, color: selected===idx ? '#534AB7' : 'var(--ink)' }}>
-                      {s.char}
-                    </span>
-                    <div style={{ display:'flex', gap:3, marginTop:'0.4rem', flexWrap:'wrap', justifyContent:'center' }}>
-                      <JamoPill label={s.cho}  color="#534AB7" title="초성 — consonante inicial" />
-                      <JamoPill label={s.jung} color="#2563eb" title="중성 — vocal" />
-                      {s.jong && <JamoPill label={s.jong} color="#d97706" title="종성 — batchim" />}
-                    </div>
-                    <span style={{ fontSize:'0.72rem', color:'var(--muted)', marginTop:'0.3rem', fontStyle:'italic', fontFamily:'var(--mono)' }}>
-                      {s.romanization}
-                    </span>
-                    <span style={{ fontSize:'0.62rem', color:'var(--muted)', marginTop:'0.1rem', opacity:0.7 }}>🔊 tap</span>
-                  </>
-                ) : (
-                  <span style={{ fontSize:'1.4rem', color:'var(--muted)', lineHeight:2.2 }}>{s.char}</span>
-                )}
-              </button>
+                s={s}
+                idx={idx}
+                selected={selected}
+                onSelect={handleClickSyllable}
+              />
             ))}
-          </div>
-
-          <div style={{ display:'flex', gap:'1.25rem', justifyContent:'center', marginTop:'1.1rem', flexWrap:'wrap', fontSize:'0.78rem', color:'var(--muted)' }}>
-            <span><Dot color="#534AB7" /> 초성 (inicial)</span>
-            <span><Dot color="#2563eb" /> 중성 (vocal)</span>
-            <span><Dot color="#d97706" /> 종성 · batchim (final)</span>
           </div>
         </div>
       )}
@@ -414,19 +520,70 @@ function KoreanReader({ addXp }: { addXp: (n: number) => void }) {
   );
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Syllable card — extracted for reuse in quiz
+// ─────────────────────────────────────────────────────────────────────────────
+
+function SyllableCard({
+  s, idx, selected, onSelect, highlight,
+}: {
+  s: SyllableData;
+  idx: number;
+  selected: number | null;
+  onSelect: (idx: number, char: string) => void;
+  highlight?: 'cho' | 'jung' | 'jong';
+}) {
+  const isSelected = selected === idx;
+  return (
+    <button
+      onClick={() => s.isHangul && onSelect(idx, s.char)}
+      style={{
+        display:'flex', flexDirection:'column', alignItems:'center',
+        padding:'0.85rem 0.9rem', borderRadius:14,
+        border: isSelected ? `2px solid #534AB7` : '1.5px solid var(--line-soft)',
+        background: isSelected ? 'rgba(83,74,183,0.08)' : 'var(--bg)',
+        cursor: s.isHangul ? 'pointer' : 'default',
+        transition: 'all 0.15s', minWidth:72,
+        boxShadow: isSelected ? '0 4px 20px rgba(83,74,183,0.2)' : 'none',
+        fontFamily:'inherit',
+        position: 'relative',
+      }}
+    >
+      {s.isHangul ? (
+        <>
+          <span style={{ fontSize:'2rem', fontWeight:800, lineHeight:1.1, color: isSelected ? '#534AB7' : 'var(--ink)' }}>
+            {s.char}
+          </span>
+          <div style={{ display:'flex', gap:3, marginTop:'0.4rem', flexWrap:'wrap', justifyContent:'center' }}>
+            <JamoPill label={s.cho}  colorKey="cho"  highlight={highlight === 'cho'}  />
+            <JamoPill label={s.jung} colorKey="jung" highlight={highlight === 'jung'} />
+            {s.jong && <JamoPill label={s.jong} colorKey="jong" highlight={highlight === 'jong'} />}
+          </div>
+          <span style={{ fontSize:'0.72rem', color:'var(--muted)', marginTop:'0.3rem', fontStyle:'italic', fontFamily:'var(--mono)' }}>
+            {s.romanization}
+          </span>
+          <span style={{ fontSize:'0.62rem', color:'var(--muted)', marginTop:'0.1rem', opacity:0.6 }}>🔊 tap</span>
+        </>
+      ) : (
+        <span style={{ fontSize:'1.4rem', color:'var(--muted)', lineHeight:2.4 }}>{s.char}</span>
+      )}
+    </button>
+  );
+}
+
 function SyllableDetail({ syllable }: { syllable: SyllableData }) {
   const parts = [
-    { label:'초성 — Inicial', value: syllable.cho, color:'#534AB7',
+    { key:'cho',  label:'초성 — Inicial', value: syllable.cho,  color: JAMO_COLORS.cho.hex,
       rom: CHO_ROM[syllable.cho] !== '' ? CHO_ROM[syllable.cho] : '(silente)',
       desc: syllable.cho === 'ㅇ' ? 'ㅇ en posición inicial es muda — la sílaba empieza directo con la vocal.' : 'Consonante que abre la sílaba.' },
-    { label:'중성 — Vocal', value: syllable.jung, color:'#2563eb',
+    { key:'jung', label:'중성 — Vocal', value: syllable.jung, color: JAMO_COLORS.jung.hex,
       rom: JUNG_ROM[syllable.jung] ?? '—', desc:'El núcleo vocálico. Puede ser simple (ㅏ) o diptongo (ㅘ).' },
-    ...(syllable.jong ? [{ label:'종성 · Batchim', value: syllable.jong, color:'#d97706',
+    ...(syllable.jong ? [{ key:'jong', label:'종성 · Batchim', value: syllable.jong, color: JAMO_COLORS.jong.hex,
       rom: JONG_ROM[syllable.jong] ?? '—', desc:'Consonante final. Rige las reglas fonéticas del coreano.' }] : []),
   ];
 
   return (
-    <div className="wl-card" style={{ padding:'1.5rem', maxWidth:840 }}>
+    <div className="wl-card" style={{ padding:'1.5rem' }}>
       <p className="eyebrow" style={{ margin:'0 0 0.75rem' }}>
         <span className="ink-line" />
         Detalle de{' '}
@@ -438,12 +595,12 @@ function SyllableDetail({ syllable }: { syllable: SyllableData }) {
           <span style={{ marginLeft:'0.75rem', fontSize:'0.72rem',
             background:'rgba(83,74,183,0.1)', color:'#534AB7',
             border:'1px solid rgba(83,74,183,0.25)', borderRadius:6,
-            padding:'0.15rem 0.55rem', fontFamily:'var(--mono)' }}>sin batchim</span>
+            padding:'0.15rem 0.55rem', fontFamily:'var(--mono)' }}>sílaba abierta</span>
         )}
       </p>
       <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(145px,1fr))', gap:'0.75rem' }}>
         {parts.map(p => (
-          <div key={p.label} style={{ background:`${p.color}0d`, border:`1px solid ${p.color}33`, borderRadius:12, padding:'0.85rem' }}>
+          <div key={p.key} style={{ background:`${p.color}0d`, border:`1.5px solid ${p.color}33`, borderRadius:12, padding:'0.85rem' }}>
             <div style={{ fontSize:'0.68rem', color:p.color, fontWeight:800, marginBottom:'0.3rem', textTransform:'uppercase', letterSpacing:'0.06em', fontFamily:'var(--mono)' }}>{p.label}</div>
             <div style={{ fontSize:'2.2rem', fontWeight:900, color:p.color, lineHeight:1 }}>{p.value}</div>
             <div style={{ fontSize:'0.78rem', fontStyle:'italic', color:'var(--muted)', marginTop:'0.3rem', fontFamily:'var(--mono)' }}>/{p.rom}/</div>
@@ -456,7 +613,187 @@ function SyllableDetail({ syllable }: { syllable: SyllableData }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Tool 2 – Batchim Analyzer
+// Tool 2 – Jamo Table
+// ─────────────────────────────────────────────────────────────────────────────
+
+const CONSONANTS: { jamo: string; rom: string; ipa: string; type: string }[] = [
+  { jamo:'ㄱ', rom:'g/k',  ipa:'k',   type:'plain' },
+  { jamo:'ㄴ', rom:'n',    ipa:'n',   type:'nasal' },
+  { jamo:'ㄷ', rom:'d/t',  ipa:'t',   type:'plain' },
+  { jamo:'ㄹ', rom:'r/l',  ipa:'ɾ',   type:'liquid' },
+  { jamo:'ㅁ', rom:'m',    ipa:'m',   type:'nasal' },
+  { jamo:'ㅂ', rom:'b/p',  ipa:'p',   type:'plain' },
+  { jamo:'ㅅ', rom:'s',    ipa:'s',   type:'plain' },
+  { jamo:'ㅇ', rom:'ng/-', ipa:'ŋ/-', type:'nasal' },
+  { jamo:'ㅈ', rom:'j',    ipa:'tɕ',  type:'plain' },
+  { jamo:'ㅊ', rom:'ch',   ipa:'tɕʰ', type:'aspirated' },
+  { jamo:'ㅋ', rom:'k',    ipa:'kʰ',  type:'aspirated' },
+  { jamo:'ㅌ', rom:'t',    ipa:'tʰ',  type:'aspirated' },
+  { jamo:'ㅍ', rom:'p',    ipa:'pʰ',  type:'aspirated' },
+  { jamo:'ㅎ', rom:'h',    ipa:'h',   type:'aspirated' },
+  { jamo:'ㄲ', rom:'kk',   ipa:'k͈',   type:'tense' },
+  { jamo:'ㄸ', rom:'tt',   ipa:'t͈',   type:'tense' },
+  { jamo:'ㅃ', rom:'pp',   ipa:'p͈',   type:'tense' },
+  { jamo:'ㅆ', rom:'ss',   ipa:'s͈',   type:'tense' },
+  { jamo:'ㅉ', rom:'jj',   ipa:'tɕ͈',  type:'tense' },
+];
+
+const VOWELS: { jamo: string; rom: string; ipa: string; type: string }[] = [
+  { jamo:'ㅏ', rom:'a',   ipa:'a',   type:'basic' },
+  { jamo:'ㅓ', rom:'eo',  ipa:'ʌ',   type:'basic' },
+  { jamo:'ㅗ', rom:'o',   ipa:'o',   type:'basic' },
+  { jamo:'ㅜ', rom:'u',   ipa:'u',   type:'basic' },
+  { jamo:'ㅡ', rom:'eu',  ipa:'ɯ',   type:'basic' },
+  { jamo:'ㅣ', rom:'i',   ipa:'i',   type:'basic' },
+  { jamo:'ㅐ', rom:'ae',  ipa:'ɛ',   type:'basic' },
+  { jamo:'ㅔ', rom:'e',   ipa:'e',   type:'basic' },
+  { jamo:'ㅑ', rom:'ya',  ipa:'ja',  type:'y-compound' },
+  { jamo:'ㅕ', rom:'yeo', ipa:'jʌ',  type:'y-compound' },
+  { jamo:'ㅛ', rom:'yo',  ipa:'jo',  type:'y-compound' },
+  { jamo:'ㅠ', rom:'yu',  ipa:'ju',  type:'y-compound' },
+  { jamo:'ㅒ', rom:'yae', ipa:'jɛ',  type:'y-compound' },
+  { jamo:'ㅖ', rom:'ye',  ipa:'je',  type:'y-compound' },
+  { jamo:'ㅘ', rom:'wa',  ipa:'wa',  type:'w-compound' },
+  { jamo:'ㅝ', rom:'wo',  ipa:'wʌ',  type:'w-compound' },
+  { jamo:'ㅗ+ㅐ→ㅚ', rom:'oe', ipa:'we', type:'w-compound' },
+  { jamo:'ㅜ+ㅔ→ㅞ', rom:'we', ipa:'we', type:'w-compound' },
+  { jamo:'ㅙ', rom:'wae', ipa:'wɛ',  type:'w-compound' },
+  { jamo:'ㅟ', rom:'wi',  ipa:'wi',  type:'w-compound' },
+  { jamo:'ㅢ', rom:'ui',  ipa:'ɰi',  type:'special' },
+];
+
+const CONS_TYPES: Record<string, { label: string; color: string; desc: string }> = {
+  plain:     { label:'Planas',    color:'#534AB7', desc:'Son sonoras entre vocales, sordas al final.' },
+  nasal:     { label:'Nasales',   color:'#059669', desc:'Producidas con resonancia nasal.' },
+  liquid:    { label:'Líquida',   color:'#2563eb', desc:'ㄹ suena como "r" inicial y "l" final.' },
+  aspirated: { label:'Aspiradas', color:'#d97706', desc:'Se pronuncian con una ráfaga de aire.' },
+  tense:     { label:'Tensas',    color:'#dc2626', desc:'Glotalizadas, pronunciación tensa y corta.' },
+};
+
+const VOW_TYPES: Record<string, { label: string; color: string }> = {
+  basic:      { label:'Básicas',      color:'#534AB7' },
+  'y-compound': { label:'Con Y-',     color:'#2563eb' },
+  'w-compound': { label:'Con W-',     color:'#059669' },
+  special:    { label:'Especial',     color:'#d97706' },
+};
+
+function JamoTable({ addXp }: { addXp: (n: number) => void }) {
+  const [played, setPlayed] = useState<Set<string>>(new Set());
+  const [view, setView]     = useState<'consonants' | 'vowels'>('consonants');
+
+  function handlePlay(jamo: string) {
+    speak(jamo);
+    if (!played.has(jamo)) { setPlayed(p => new Set(p).add(jamo)); addXp(5); }
+  }
+
+  const consGroups = Object.entries(CONS_TYPES).map(([type, meta]) => ({
+    ...meta, type,
+    items: CONSONANTS.filter(c => c.type === type),
+  }));
+
+  const vowGroups = Object.entries(VOW_TYPES).map(([type, meta]) => ({
+    ...meta, type,
+    items: VOWELS.filter(v => v.type === type),
+  }));
+
+  return (
+    <div style={{ display:'flex', flexDirection:'column', gap:'1.25rem' }}>
+
+      {/* Header */}
+      <div className="wl-card" style={{ padding:'1.5rem' }}>
+        <p className="eyebrow" style={{ margin:'0 0 0.4rem' }}><span className="ink-line" />Tabla de Jamo — Alfabeto Hangul</p>
+        <p style={{ margin:'0 0 1rem', fontSize:'0.9rem', color:'var(--muted)', lineHeight:1.6 }}>
+          El Hangul tiene <strong style={{ color:'var(--ink)' }}>14 consonantes base + 5 tensas</strong> y{' '}
+          <strong style={{ color:'var(--ink)' }}>21 vocales</strong>. Haz clic en cualquier jamo para escuchar su pronunciación (+5 XP).
+        </p>
+        <div style={{ display:'flex', gap:'0.5rem' }}>
+          <button
+            onClick={() => setView('consonants')}
+            className={view === 'consonants' ? 'btn btn-sm' : 'btn btn-ghost btn-sm'}
+            style={{ fontSize:'0.85rem' }}
+          >자음 Consonantes</button>
+          <button
+            onClick={() => setView('vowels')}
+            className={view === 'vowels' ? 'btn btn-sm' : 'btn btn-ghost btn-sm'}
+            style={{ fontSize:'0.85rem' }}
+          >모음 Vocales</button>
+        </div>
+      </div>
+
+      {view === 'consonants' && consGroups.map(group => (
+        <div key={group.type} className="wl-card" style={{ padding:'1.25rem', borderTop:`3px solid ${group.color}` }}>
+          <div style={{ display:'flex', alignItems:'baseline', gap:'0.6rem', marginBottom:'0.3rem' }}>
+            <span style={{ fontSize:'0.75rem', fontWeight:800, color:group.color, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em' }}>
+              {group.label}
+            </span>
+            <span style={{ fontSize:'0.75rem', color:'var(--muted)' }}>{group.desc}</span>
+          </div>
+          <div style={{ display:'flex', flexWrap:'wrap', gap:'0.6rem', marginTop:'0.75rem' }}>
+            {group.items.map(c => (
+              <button
+                key={c.jamo}
+                onClick={() => handlePlay(c.jamo)}
+                style={{
+                  display:'flex', flexDirection:'column', alignItems:'center',
+                  padding:'0.75rem 0.85rem', borderRadius:12, minWidth:72,
+                  border:`1.5px solid ${played.has(c.jamo) ? group.color + '88' : 'var(--line-soft)'}`,
+                  background: played.has(c.jamo) ? `${group.color}0d` : 'var(--bg)',
+                  cursor:'pointer', fontFamily:'inherit', transition:'all 0.15s',
+                }}
+              >
+                <span style={{ fontSize:'2rem', fontWeight:900, color:group.color, lineHeight:1.1 }}>{c.jamo}</span>
+                <span style={{ fontSize:'0.72rem', fontFamily:'var(--mono)', color:'var(--muted)', marginTop:'0.25rem', fontStyle:'italic' }}>{c.rom}</span>
+                <span style={{ fontSize:'0.65rem', fontFamily:'var(--mono)', color:'var(--muted)', opacity:0.7 }}>/{c.ipa}/</span>
+                <span style={{ fontSize:'0.58rem', color: played.has(c.jamo) ? group.color : 'var(--muted)', marginTop:'0.2rem', fontWeight:700 }}>
+                  {played.has(c.jamo) ? '✓' : '🔊'}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {view === 'vowels' && vowGroups.map(group => (
+        <div key={group.type} className="wl-card" style={{ padding:'1.25rem', borderTop:`3px solid ${group.color}` }}>
+          <div style={{ display:'flex', alignItems:'baseline', gap:'0.6rem', marginBottom:'0.75rem' }}>
+            <span style={{ fontSize:'0.75rem', fontWeight:800, color:group.color, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em' }}>
+              {group.label}
+            </span>
+          </div>
+          <div style={{ display:'flex', flexWrap:'wrap', gap:'0.6rem' }}>
+            {group.items.map(v => (
+              <button
+                key={v.jamo}
+                onClick={() => handlePlay(v.jamo.length <= 2 ? v.jamo : v.jamo.slice(-1))}
+                style={{
+                  display:'flex', flexDirection:'column', alignItems:'center',
+                  padding:'0.75rem 0.85rem', borderRadius:12, minWidth:72,
+                  border:`1.5px solid ${played.has(v.jamo) ? group.color + '88' : 'var(--line-soft)'}`,
+                  background: played.has(v.jamo) ? `${group.color}0d` : 'var(--bg)',
+                  cursor:'pointer', fontFamily:'inherit', transition:'all 0.15s',
+                }}
+              >
+                <span style={{ fontSize:'2rem', fontWeight:900, color:group.color, lineHeight:1.1 }}>{v.jamo.length <= 2 ? v.jamo : v.jamo.slice(-1)}</span>
+                <span style={{ fontSize:'0.72rem', fontFamily:'var(--mono)', color:'var(--muted)', marginTop:'0.25rem', fontStyle:'italic' }}>{v.rom}</span>
+                <span style={{ fontSize:'0.65rem', fontFamily:'var(--mono)', color:'var(--muted)', opacity:0.7 }}>/{v.ipa}/</span>
+                <span style={{ fontSize:'0.58rem', color: played.has(v.jamo) ? group.color : 'var(--muted)', marginTop:'0.2rem', fontWeight:700 }}>
+                  {played.has(v.jamo) ? '✓' : '🔊'}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <div style={{ padding:'0.85rem 1.1rem', borderRadius:12, background:'rgba(83,74,183,0.06)', border:'1px solid rgba(83,74,183,0.15)', fontSize:'0.83rem', color:'var(--muted)', lineHeight:1.6 }}>
+        💡 <strong style={{ color:'var(--ink)' }}>Dato:</strong> ㅇ es la única consonante con doble función — es <strong style={{ color:'var(--ink)' }}>muda</strong> en posición inicial (solo "abre" la sílaba para la vocal) y suena como <strong style={{ color:'var(--ink)' }}>[ng]</strong> en posición final.
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Tool 3 – Batchim Analyzer
 // ─────────────────────────────────────────────────────────────────────────────
 
 function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
@@ -470,7 +807,7 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
   }
 
   return (
-    <div style={{ display:'flex', flexDirection:'column', gap:'1rem', maxWidth:840 }}>
+    <div style={{ display:'flex', flexDirection:'column', gap:'1rem' }}>
 
       {/* Intro */}
       <div className="wl-card" style={{ padding:'1.5rem' }}>
@@ -499,7 +836,6 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
         <div key={rule.id} className="wl-card"
           style={{ overflow:'hidden', border: openRule === rule.id ? `1.5px solid ${rule.color}55` : undefined }}
         >
-          {/* Header button */}
           <button
             onClick={() => setOpenRule(openRule === rule.id ? null : rule.id)}
             style={{
@@ -523,7 +859,6 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
             <span style={{ color:'var(--muted)', display:'inline-block', transform: openRule === rule.id ? 'rotate(180deg)' : 'none', transition:'transform 0.2s' }}>▼</span>
           </button>
 
-          {/* Body */}
           {openRule === rule.id && (
             <div style={{ padding:'0 1.25rem 1.25rem' }}>
               <p style={{ margin:'0 0 1rem', fontSize:'0.9rem', lineHeight:1.7, color:'var(--ink-2)' }}>{rule.explanation}</p>
@@ -567,7 +902,6 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
         </div>
       ))}
 
-      {/* Summary */}
       <div style={{ padding:'1rem 1.25rem', borderRadius:12, background:'rgba(83,74,183,0.06)', border:'1px solid rgba(83,74,183,0.15)', fontSize:'0.83rem', lineHeight:1.7, color:'var(--muted)' }}>
         <strong style={{ color:'#534AB7', display:'block', marginBottom:'0.3rem' }}>🧠 Las 7 consonantes representativas</strong>
         En posición final, el coreano solo usa:{' '}
@@ -579,18 +913,245 @@ function BatchimAnalyzer({ addXp }: { addXp: (n: number) => void }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Micro-components
+// Tool 4 – Syllable Quiz
 // ─────────────────────────────────────────────────────────────────────────────
 
-function JamoPill({ label, color, title }: { label: string; color: string; title: string }) {
-  if (!label) return null;
+const QUIZ_POOL = [
+  '가','나','다','라','마','바','사','아','자','차','카','타','파','하',
+  '강','남','달','람','밥','산','안','잠','찬','칸','탄','판','한',
+  '기','니','디','리','미','비','시','이','지','치','키','티','피','히',
+  '공','농','동','롱','몽','봉','송','옹','종','총','콩','통','풍','홍',
+  '국','눈','들','른','문','불','술','울','줄','출','쿨','틀','풀','훌',
+];
+
+type QuizType = 'jamo' | 'romanization';
+
+type QuizQuestion = {
+  type: QuizType;
+  syllable: SyllableData;
+  // jamo mode
+  target?: 'cho' | 'jung' | 'jong';
+  options: string[];
+  correct: string;
+  // romanization mode — show audio clue
+};
+
+function buildQuestion(): QuizQuestion | null {
+  const hangulPool = QUIZ_POOL.map(decompose).filter(s => s.isHangul);
+  const syllable   = hangulPool[Math.floor(Math.random() * hangulPool.length)];
+  const type: QuizType = Math.random() < 0.5 ? 'jamo' : 'romanization';
+
+  if (type === 'romanization') {
+    const correct = syllable.romanization;
+    const distractors = hangulPool
+      .filter(s => s.romanization !== correct)
+      .map(s => s.romanization)
+      .filter((v, i, a) => a.indexOf(v) === i)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3);
+    const options = [...distractors, correct].sort(() => Math.random() - 0.5);
+    return { type, syllable, options, correct };
+  }
+
+  // jamo mode
+  const targets: Array<'cho' | 'jung' | 'jong'> = syllable.jong
+    ? ['cho', 'jung', 'jong']
+    : ['cho', 'jung'];
+  const target = targets[Math.floor(Math.random() * targets.length)];
+  const correct = syllable[target];
+  if (!correct) return null;
+
+  const pool =
+    target === 'cho'  ? CHOSEONG :
+    target === 'jung' ? JUNGSEONG :
+    JONGSEONG.filter(j => j !== '');
+
+  const distractors = pool.filter(j => j !== correct).sort(() => Math.random() - 0.5).slice(0, 3);
+  const options = [...distractors, correct].sort(() => Math.random() - 0.5);
+  return { type, syllable, target, options, correct };
+}
+
+function SyllableQuiz({ addXp }: { addXp: (n: number) => void }) {
+  const [question,  setQuestion]  = useState<QuizQuestion | null>(() => buildQuestion());
+  const [answered,  setAnswered]  = useState<string | null>(null);
+  const [score,     setScore]     = useState({ correct: 0, total: 0 });
+  const [streak,    setStreak]    = useState(0);
+
+  function handleAnswer(opt: string) {
+    if (answered) return;
+    setAnswered(opt);
+    const isCorrect = opt === question?.correct;
+    setScore(s => ({ correct: s.correct + (isCorrect ? 1 : 0), total: s.total + 1 }));
+    if (isCorrect) { setStreak(s => s + 1); addXp(20); }
+    else           { setStreak(0); }
+  }
+
+  function nextQuestion() {
+    setQuestion(buildQuestion());
+    setAnswered(null);
+  }
+
+  if (!question) return null;
+
+  const isRomMode  = question.type === 'romanization';
+  const targetInfo = question.target ? JAMO_COLORS[question.target] : null;
+  const accuracy   = score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0;
+
   return (
-    <span title={title} style={{ background:`${color}22`, color, border:`1px solid ${color}44`, borderRadius:5, padding:'0 5px', fontWeight:800, fontSize:'0.78rem', lineHeight:'1.5' }}>
-      {label}
-    </span>
+    <div style={{ display:'flex', flexDirection:'column', gap:'1.25rem' }}>
+
+      {/* Stats bar */}
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'0.6rem' }}>
+        {[
+          { label:'Correctas', value: score.correct, color:'#059669' },
+          { label:'Precisión',  value: `${accuracy}%`, color:'#534AB7' },
+          { label:'Racha',      value: `${streak} 🔥`, color:'#d97706' },
+        ].map(stat => (
+          <div key={stat.label} style={{
+            background:'var(--bg)', border:'1px solid var(--line-soft)',
+            borderRadius:12, padding:'0.75rem 1rem', textAlign:'center',
+          }}>
+            <div style={{ fontSize:'1.4rem', fontWeight:800, color:stat.color }}>{stat.value}</div>
+            <div style={{ fontSize:'0.72rem', color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.05em' }}>{stat.label}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Question card */}
+      <div className="wl-card" style={{ padding:'2rem', textAlign:'center' }}>
+
+        {/* Question type badge */}
+        <div style={{ display:'inline-block', marginBottom:'0.75rem', fontSize:'0.72rem', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.08em', fontWeight:700, padding:'0.25rem 0.75rem', borderRadius:20, background: isRomMode ? 'rgba(37,99,235,0.1)' : 'rgba(83,74,183,0.1)', color: isRomMode ? '#2563eb' : '#534AB7', border:`1px solid ${isRomMode ? '#2563eb33' : '#534AB733'}` }}>
+          {isRomMode ? '🔤 Romanización' : `🔍 Identificar ${targetInfo?.label}`}
+        </div>
+
+        <p style={{
+          fontSize:'0.88rem', color:'var(--muted)', marginBottom:'0.75rem', lineHeight:1.5,
+        }}>
+          {isRomMode
+            ? <>¿Cuál es la romanización de <strong style={{ color:'var(--ink)', fontSize:'1.1rem' }}>{question.syllable.char}</strong>?</>
+            : <>¿Cuál es la <strong style={{ color: targetInfo?.hex }}>{targetInfo?.label}</strong> ({targetInfo?.labelEs.toLowerCase()}) de esta sílaba?</>
+          }
+        </p>
+
+        {/* Big syllable */}
+        <div style={{
+          fontSize:'5rem', fontWeight:900, lineHeight:1, margin:'0.5rem 0 0.75rem',
+          color:'var(--ink)', textShadow:'0 2px 12px rgba(83,74,183,0.15)',
+        }}>
+          {question.syllable.char}
+        </div>
+
+        {/* Jamo breakdown (hide romanization in rom-mode until answered) */}
+        {!isRomMode && (
+          <div style={{ display:'flex', gap:4, justifyContent:'center', marginBottom:'0.35rem' }}>
+            <JamoPill label={question.syllable.cho}  colorKey="cho"  highlight={question.target === 'cho'}  />
+            <JamoPill label={question.syllable.jung} colorKey="jung" highlight={question.target === 'jung'} />
+            {question.syllable.jong && <JamoPill label={question.syllable.jong} colorKey="jong" highlight={question.target === 'jong'} />}
+          </div>
+        )}
+        {isRomMode && !answered && (
+          <div style={{ fontSize:'0.78rem', color:'var(--muted)', fontFamily:'var(--mono)', marginBottom:'0.5rem', opacity:0.5 }}>
+            [? ? ?]
+          </div>
+        )}
+        {(answered || !isRomMode) && (
+          <div style={{ fontSize:'0.8rem', color:'var(--muted)', fontFamily:'var(--mono)', marginBottom:'1.25rem', fontStyle:'italic' }}>
+            [{question.syllable.romanization}]
+          </div>
+        )}
+        {isRomMode && !answered && <div style={{ marginBottom:'1.25rem' }} />}
+
+        {/* Options */}
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.6rem' }}>
+          {question.options.map(opt => {
+            const isCorrect = opt === question.correct;
+            const isChosen  = answered === opt;
+            let bg = 'var(--bg)', border = '1.5px solid var(--line-soft)', color = 'var(--ink)';
+            if (answered) {
+              if (isCorrect)      { bg = 'rgba(5,150,105,0.1)';  border = '1.5px solid #059669'; color = '#059669'; }
+              else if (isChosen)  { bg = 'rgba(220,38,38,0.08)'; border = '1.5px solid #dc2626'; color = '#dc2626'; }
+            }
+            return (
+              <button key={opt} onClick={() => handleAnswer(opt)}
+                style={{
+                  padding:'0.9rem', borderRadius:12, border, background:bg, color,
+                  fontSize: isRomMode ? '1rem' : '1.6rem',
+                  fontWeight:800, cursor: answered ? 'default' : 'pointer',
+                  fontFamily: isRomMode ? 'var(--mono)' : 'inherit',
+                  fontStyle: isRomMode ? 'italic' : 'normal',
+                  transition:'all 0.18s',
+                  display:'flex', alignItems:'center', justifyContent:'center', gap:'0.4rem',
+                }}
+              >
+                {isRomMode ? `[${opt}]` : opt}
+                {answered && isCorrect && <span style={{ fontSize:'0.9rem' }}>✓</span>}
+                {answered && isChosen && !isCorrect && <span style={{ fontSize:'0.9rem' }}>✗</span>}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Feedback */}
+        {answered && (
+          <div style={{
+            marginTop:'1rem', padding:'0.85rem 1rem', borderRadius:12,
+            background: answered === question.correct ? 'rgba(5,150,105,0.08)' : 'rgba(220,38,38,0.06)',
+            border: `1px solid ${answered === question.correct ? '#05966933' : '#dc262633'}`,
+            fontSize:'0.85rem', color:'var(--ink)', lineHeight:1.55,
+          }}>
+            {answered === question.correct
+              ? isRomMode
+                ? <>✅ <strong>¡Correcto!</strong> +20 XP — <strong style={{ color:'#534AB7' }}>{question.syllable.char}</strong> se romaniza como <strong style={{ color:'#2563eb', fontFamily:'var(--mono)' }}>[{question.correct}]</strong>.</>
+                : <>✅ <strong>¡Correcto!</strong> +20 XP — La {targetInfo?.labelEs.toLowerCase()} de <strong style={{ color:'#534AB7' }}>{question.syllable.char}</strong> es <strong style={{ color:targetInfo?.hex }}>{question.correct}</strong>.</>
+              : isRomMode
+                ? <>❌ <strong>Casi.</strong> La romanización correcta era <strong style={{ color:'#2563eb', fontFamily:'var(--mono)' }}>[{question.correct}]</strong>.</>
+                : <>❌ <strong>Casi.</strong> La respuesta era <strong style={{ color:targetInfo?.hex }}>{question.correct}</strong> — {targetInfo?.labelEs} de <strong style={{ color:'#534AB7' }}>{question.syllable.char}</strong>.</>
+            }
+          </div>
+        )}
+      </div>
+
+      {/* Color reference while playing */}
+      <JamoColorLegend />
+
+      {/* Next button */}
+      {answered && (
+        <button onClick={nextQuestion} className="btn btn-sm" style={{ fontSize:'0.95rem', padding:'0.85rem', borderRadius:12 }}>
+          Siguiente sílaba →
+        </button>
+      )}
+    </div>
   );
 }
 
-function Dot({ color }: { color: string }) {
-  return <span style={{ display:'inline-block', width:8, height:8, borderRadius:'50%', background:color, marginRight:3, verticalAlign:'middle' }} />;
+// ─────────────────────────────────────────────────────────────────────────────
+// Micro-components
+// ─────────────────────────────────────────────────────────────────────────────
+
+function JamoPill({
+  label, colorKey, highlight,
+}: {
+  label: string;
+  colorKey: 'cho' | 'jung' | 'jong';
+  highlight?: boolean;
+}) {
+  if (!label) return null;
+  const { hex } = JAMO_COLORS[colorKey];
+  return (
+    <span style={{
+      background: highlight ? `${hex}33` : `${hex}18`,
+      color: hex,
+      border: `1px solid ${highlight ? `${hex}88` : `${hex}44`}`,
+      borderRadius: 5,
+      padding: '0 5px',
+      fontWeight: 800,
+      fontSize: '0.78rem',
+      lineHeight: '1.5',
+      transition: 'all 0.15s',
+      boxShadow: highlight ? `0 0 0 2px ${hex}44` : 'none',
+    }}>
+      {label}
+    </span>
+  );
 }
