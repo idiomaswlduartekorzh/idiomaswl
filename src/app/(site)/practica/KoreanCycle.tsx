@@ -370,18 +370,18 @@ function StepRead({ text, onNext }: { text: CycleText; onNext: () => void }) {
 
 // ─── Step 2: Listen ───────────────────────────────────────────────────────────
 
+const AUDIO_BASE = 'https://ivqeokuxgxemhydvopdd.supabase.co/storage/v1/object/public/cycle-audio/textos';
+
 function StepListen({ text, onNext }: { text: CycleText; onNext: () => void }) {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [mode, setMode] = useState<'normal' | 'slow'>('normal');
-  const [speechSupported, setSpeechSupported] = useState(true);
-  const [customAudio, setCustomAudio] = useState<string | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const fileRef  = useRef<HTMLInputElement | null>(null);
+  const [isTTSPlaying, setIsTTSPlaying] = useState(false);
+  const [ttsMode, setTtsMode] = useState<'normal' | 'slow'>('normal');
+  const [showTTS, setShowTTS] = useState(false);
   const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
   const c = STEP_COLORS[2];
 
+  const audioSrc = `${AUDIO_BASE}/${text.id}.mp3`;
+
   useEffect(() => {
-    if (typeof window !== 'undefined' && !window.speechSynthesis) setSpeechSupported(false);
     return () => { if (typeof window !== 'undefined') window.speechSynthesis?.cancel(); };
   }, []);
 
@@ -391,31 +391,24 @@ function StepListen({ text, onNext }: { text: CycleText; onNext: () => void }) {
     const u = new SpeechSynthesisUtterance(text.korean);
     u.lang = 'ko-KR';
     u.rate = slow ? 0.6 : 0.9;
-    u.onstart = () => setIsPlaying(true);
-    u.onend   = () => setIsPlaying(false);
-    u.onerror = () => setIsPlaying(false);
+    u.onstart = () => setIsTTSPlaying(true);
+    u.onend   = () => setIsTTSPlaying(false);
+    u.onerror = () => setIsTTSPlaying(false);
     utterRef.current = u;
     window.speechSynthesis.speak(u);
-    setMode(slow ? 'slow' : 'normal');
+    setTtsMode(slow ? 'slow' : 'normal');
   }
 
   function stopSpeech() {
     window.speechSynthesis?.cancel();
-    setIsPlaying(false);
-  }
-
-  function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
-    const f = e.target.files?.[0];
-    if (!f) return;
-    const url = URL.createObjectURL(f);
-    setCustomAudio(url);
+    setIsTTSPlaying(false);
   }
 
   return (
     <div style={{ display:'flex', flexDirection:'column', gap:'1rem' }}>
       <StepHeader step={2} titulo={text.titulo} tituloKo={text.tituloKo} />
 
-      {/* Korean text (same text visible while listening) */}
+      {/* Korean text */}
       <div className="wl-card" style={{ padding:'1.75rem', border:`1.5px solid ${c.border}` }}>
         <p className="eyebrow" style={{ margin:'0 0 1rem' }}><span className="ink-line" />Escucha mientras lees</p>
         <p style={{ fontSize:'1.35rem', lineHeight:2.1, margin:'0', color:'var(--ink)' }}>
@@ -423,83 +416,72 @@ function StepListen({ text, onNext }: { text: CycleText; onNext: () => void }) {
         </p>
       </div>
 
-      {/* Audio controls */}
-      <div className="wl-card" style={{ padding:'1.5rem' }}>
-        <p className="eyebrow" style={{ margin:'0 0 1rem' }}><span className="ink-line" />Modo de escucha</p>
-
-        {!speechSupported && (
-          <div style={{ padding:'0.85rem', borderRadius:10, background:'rgba(217,119,6,0.08)', border:'1px solid rgba(217,119,6,0.25)', fontSize:'0.85rem', color:'#d97706', marginBottom:'1rem' }}>
-            ⚠️ Tu navegador no soporta síntesis de voz. Sube un archivo de audio para escuchar el texto.
-          </div>
-        )}
-
-        {speechSupported && (
-          <div style={{ display:'flex', gap:'0.6rem', flexWrap:'wrap', marginBottom:'1.25rem' }}>
-            <button
-              onClick={() => isPlaying && mode === 'normal' ? stopSpeech() : playSpeech(false)}
-              style={{
-                display:'flex', alignItems:'center', gap:'0.5rem',
-                padding:'0.75rem 1.25rem', borderRadius:10,
-                background: isPlaying && mode === 'normal' ? c.main : 'var(--bg)',
-                border:`2px solid ${c.main}`,
-                color: isPlaying && mode === 'normal' ? '#fff' : c.main,
-                fontWeight:700, fontSize:'0.9rem', cursor:'pointer', fontFamily:'inherit', transition:'all 0.18s',
-              }}
-            >
-              {isPlaying && mode === 'normal' ? '⏸ Pausar' : '▶ Velocidad normal'}
-            </button>
-            <button
-              onClick={() => isPlaying && mode === 'slow' ? stopSpeech() : playSpeech(true)}
-              style={{
-                display:'flex', alignItems:'center', gap:'0.5rem',
-                padding:'0.75rem 1.25rem', borderRadius:10,
-                background: isPlaying && mode === 'slow' ? c.main : 'var(--bg)',
-                border:`2px solid ${c.main}44`,
-                color: isPlaying && mode === 'slow' ? '#fff' : c.main,
-                fontWeight:700, fontSize:'0.9rem', cursor:'pointer', fontFamily:'inherit', transition:'all 0.18s',
-              }}
-            >
-              {isPlaying && mode === 'slow' ? '⏸ Pausar' : '🐢 Velocidad lenta'}
-            </button>
-          </div>
-        )}
-
-        {/* Custom audio upload */}
-        <div style={{ borderTop:'1px solid var(--line-soft)', paddingTop:'1.1rem' }}>
-          <p style={{ margin:'0 0 0.6rem', fontSize:'0.82rem', color:'var(--muted)' }}>
-            ¿Tienes un audio propio del texto? Súbelo aquí:
-          </p>
-          <input ref={fileRef} type="file" accept="audio/*" onChange={handleFileUpload} style={{ display:'none' }} />
-          <button
-            onClick={() => fileRef.current?.click()}
-            className="btn btn-ghost btn-sm"
-            style={{ fontSize:'0.82rem' }}
-          >
-            📁 Subir audio
-          </button>
-          {customAudio && (
-            <div style={{ marginTop:'0.85rem' }}>
-              <audio ref={audioRef} controls src={customAudio} style={{ width:'100%', borderRadius:8 }} />
-            </div>
-          )}
-        </div>
+      {/* Pre-recorded audio player */}
+      <div className="wl-card" style={{ padding:'1.5rem', border:`1.5px solid ${c.border}` }}>
+        <p className="eyebrow" style={{ margin:'0 0 0.85rem' }}><span className="ink-line" />Audio grabado — hablante nativo</p>
+        <audio
+          controls
+          src={audioSrc}
+          style={{ width:'100%', borderRadius:10 }}
+          preload="metadata"
+        />
+        <p style={{ margin:'0.6rem 0 0', fontSize:'0.75rem', color:'var(--muted)', fontFamily:'var(--mono)' }}>
+          Escúchalo varias veces hasta sentirte cómodo con la pronunciación.
+        </p>
       </div>
 
-      {/* Playing indicator */}
-      {isPlaying && (
-        <motion.div
-          initial={{ opacity:0 }} animate={{ opacity:1 }}
+      {/* TTS fallback toggle */}
+      <div style={{ borderRadius:12, border:'1px solid var(--line-soft)', overflow:'hidden' }}>
+        <button
+          onClick={() => setShowTTS(v => !v)}
           style={{
-            display:'flex', alignItems:'center', gap:'0.75rem', padding:'0.85rem 1.1rem',
-            borderRadius:12, background: c.light, border:`1px solid ${c.border}`,
+            width:'100%', padding:'0.7rem 1rem', background:'var(--bg-2,rgba(0,0,0,0.02))',
+            border:'none', cursor:'pointer', fontFamily:'inherit',
+            display:'flex', alignItems:'center', justifyContent:'space-between',
+            fontSize:'0.82rem', color:'var(--muted)', fontWeight:600,
           }}
         >
-          <SoundWave color={c.main} />
-          <span style={{ fontSize:'0.85rem', color: c.main, fontWeight:700 }}>
-            Reproduciendo en {mode === 'slow' ? 'velocidad lenta' : 'velocidad normal'}…
-          </span>
-        </motion.div>
-      )}
+          <span>🔊 Síntesis de voz (alternativa)</span>
+          <span style={{ fontSize:'0.7rem' }}>{showTTS ? '▲' : '▼'}</span>
+        </button>
+        {showTTS && (
+          <div style={{ padding:'1rem', borderTop:'1px solid var(--line-soft)', display:'flex', gap:'0.6rem', flexWrap:'wrap' }}>
+            <button
+              onClick={() => isTTSPlaying && ttsMode === 'normal' ? stopSpeech() : playSpeech(false)}
+              style={{
+                display:'flex', alignItems:'center', gap:'0.5rem',
+                padding:'0.6rem 1rem', borderRadius:10,
+                background: isTTSPlaying && ttsMode === 'normal' ? c.main : 'var(--bg)',
+                border:`2px solid ${c.main}`,
+                color: isTTSPlaying && ttsMode === 'normal' ? '#fff' : c.main,
+                fontWeight:700, fontSize:'0.85rem', cursor:'pointer', fontFamily:'inherit', transition:'all 0.18s',
+              }}
+            >
+              {isTTSPlaying && ttsMode === 'normal' ? '⏸ Pausar' : '▶ Normal'}
+            </button>
+            <button
+              onClick={() => isTTSPlaying && ttsMode === 'slow' ? stopSpeech() : playSpeech(true)}
+              style={{
+                display:'flex', alignItems:'center', gap:'0.5rem',
+                padding:'0.6rem 1rem', borderRadius:10,
+                background: isTTSPlaying && ttsMode === 'slow' ? c.main : 'var(--bg)',
+                border:`2px solid ${c.main}44`,
+                color: isTTSPlaying && ttsMode === 'slow' ? '#fff' : c.main,
+                fontWeight:700, fontSize:'0.85rem', cursor:'pointer', fontFamily:'inherit', transition:'all 0.18s',
+              }}
+            >
+              {isTTSPlaying && ttsMode === 'slow' ? '⏸ Pausar' : '🐢 Lento'}
+            </button>
+            {isTTSPlaying && (
+              <motion.span initial={{ opacity:0 }} animate={{ opacity:1 }}
+                style={{ display:'flex', alignItems:'center', gap:'0.5rem', fontSize:'0.82rem', color: c.main, fontWeight:700 }}>
+                <SoundWave color={c.main} />
+                {ttsMode === 'slow' ? 'velocidad lenta' : 'velocidad normal'}
+              </motion.span>
+            )}
+          </div>
+        )}
+      </div>
 
       <button onClick={onNext} className="btn btn-sm" style={{ background:c.main, borderColor:c.main, fontSize:'0.95rem', padding:'0.85rem' }}>
         Entendido, continuar — Comprensión →
