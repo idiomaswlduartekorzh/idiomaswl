@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { KR_PODCAST_005, KR_VIDEO_005, playAudio } from '@/lib/storage';
+import { KR_PODCAST_005, playAudio } from '@/lib/storage';
 
 interface Props { onComplete?: () => void }
 
@@ -19,7 +19,6 @@ const KEY_PHRASES = [
 
 export default function Activation005({ onComplete }: Props) {
   const [playing, setPlaying] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
 
   return (
     <section style={{ maxWidth: 640, margin: '0 auto', padding: '2rem 1rem', fontFamily: 'system-ui,-apple-system,"Segoe UI",sans-serif', color: 'var(--foreground)' }}>
@@ -32,19 +31,20 @@ export default function Activation005({ onComplete }: Props) {
         Escucha el podcast del episodio para activar tu oído antes del video.
       </p>
 
-      {/* Podcast player */}
-      <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 16, padding: '20px', marginBottom: 16 }}>
+      {/* Podcast player — usa <video> para máxima compatibilidad con MP4 */}
+      <div style={{ background: 'rgba(108,99,255,0.06)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: 16, padding: '20px', marginBottom: 20 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
           <div style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(108,99,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, flexShrink: 0 }}>🎙</div>
           <div>
             <p style={{ margin: 0, fontWeight: 700, fontSize: 15, color: 'var(--ink)' }}>Podcast · Step 005</p>
-            <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)' }}>여기 있습니다— Completando la transacción · ~8 min</p>
+            <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)' }}>여기 있습니다 — Completando la transacción · ~8 min</p>
           </div>
         </div>
-        <audio
+        <video
           src={KR_PODCAST_005}
           controls
-          style={{ width: '100%', borderRadius: 8 }}
+          playsInline
+          style={{ width: '100%', borderRadius: 8, display: 'block' }}
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
         />
@@ -52,19 +52,6 @@ export default function Activation005({ onComplete }: Props) {
           {playing ? '▶ Reproduciendo — escucha despacio las frases en coreano.' : '📻 Escucha el podcast antes de continuar para activar tu oído.'}
         </p>
       </div>
-
-      {/* Video preview toggle */}
-      <button
-        onClick={() => setShowVideo(v => !v)}
-        style={{ width: '100%', background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '12px 16px', fontSize: 13, color: 'var(--muted)', cursor: 'pointer', marginBottom: 16, textAlign: 'left' }}
-      >
-        🎬 {showVideo ? 'Ocultar' : 'Ver'} el video del episodio
-      </button>
-      {showVideo && (
-        <div style={{ borderRadius: 14, overflow: 'hidden', marginBottom: 16, background: '#000' }}>
-          <video src={KR_VIDEO_005} controls playsInline style={{ width: '100%', display: 'block', maxHeight: 360 }} />
-        </div>
-      )}
 
       {/* Key phrases grid */}
       <p style={{ margin: '0 0 10px', fontSize: 12, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--muted)' }}>
