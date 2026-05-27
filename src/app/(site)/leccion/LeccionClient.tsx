@@ -178,6 +178,7 @@ const AVAILABLE_DAYS: { lang: string; slug: string; flag: string; day: number; t
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 2, title: 'El alfabeto Hangul', desc: 'Bloques silábicos, 6 familias articulatorias, primeras lecturas.' },
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 3, title: 'Cortesía en la cafetería', desc: '안녕하세요, 주세요, 감사합니다 — pide tu primer café en coreano.' },
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 4, title: 'Mercado y números', desc: 'Números nativos, 이거/그거/저거, contadores — pide hodduk como un local.' },
+  { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 5, title: 'Pago y despedida', desc: '여기 있습니다, 잘 먹었습니다, 칠천 원, 화장실 — cierra la transacción en el café.' },
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 6, title: 'Campus universitario', desc: 'Presentaciones, 새로 왔어요, 어때요 — conoce gente en la universidad.' },
   { lang: 'Coreano', slug: 'korean', flag: '🇰🇷', day: 7, title: 'Rutina universitaria', desc: '에서 vs 에, verbos 하다, 좋아해요 — la vida de David en Corea.' },
 ];

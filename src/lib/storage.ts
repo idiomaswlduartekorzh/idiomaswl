@@ -266,6 +266,42 @@ export const KR_AUDIO_007: Record<string, string> = {
 };
 
 // ─── STEP 004 — 호떡 & Café ───────────────────────────────────────────────────
+const BASE005 = '/assets/korean/step005';
+
+export const KR_IMG_005 = {
+  matissge_deuseyo:      `${BASE005}/matissge_deuseyo_v1.png`,
+  jal_meogeossseumnida:  `${BASE005}/jal_meogeossseumnida_v1.png`,
+  cashier_pay:           `${BASE005}/cashier_pay_v1.png`,
+  chilcheon_won:         `${BASE005}/chilcheon_won_v1.png`,
+  sino_numbers:          `${BASE005}/sino_numbers_v1.png`,
+  sillye_hamnida:        `${BASE005}/sillye_hamnida_v1.png`,
+  jal_moreugesseoyo:     `${BASE005}/jal_moreugesseoyo_v1.png`,
+  hwajangsil_sign:       `${BASE005}/hwajangsil_sign_v1.png`,
+  direction_anjjok:      `${BASE005}/direction_anjjok_v1.png`,
+  oreunjjok:             `${BASE005}/oreunjjok_v1.png`,
+};
+
+export const KR_PODCAST_005 = `${BASE005}/audios/step005-podcast.mp4`;
+export const KR_VIDEO_005   = `${BASE005}/videos/STEP005.mov`;
+
+export const KR_AUDIO_005: Record<string, string> = {
+  '맛있게 드세요':           `${BASE005}/audios/audio_matissge_deuseyo.mp3`,
+  '잘 먹었습니다':           `${BASE005}/audios/audio_jal_meogeossseumnida.mp3`,
+  '얼마예요':                `${BASE005}/audios/audio_eolmayeyo.mp3`,
+  '얼마예요?':               `${BASE005}/audios/audio_eolmayeyo.mp3`,
+  '잠시만요':                `${BASE005}/audios/audio_jamsimanyo.mp3`,
+  '칠천 원이에요':           `${BASE005}/audios/audio_chilcheon_won_ieyo.mp3`,
+  '칠천':                   `${BASE005}/audios/audio_chilcheon.mp3`,
+  '실례합니다':              `${BASE005}/audios/audio_sillye_hamnida.mp3`,
+  '잘 모르겠어요':           `${BASE005}/audios/audio_jal_moreugesseoyo.mp3`,
+  '화장실 있어요?':          `${BASE005}/audios/audio_hwajangsil_isseoyo.mp3`,
+  '화장실 있어요':           `${BASE005}/audios/audio_hwajangsil_isseoyo.mp3`,
+  '안쪽 오른쪽에 있어요':    `${BASE005}/audios/audio_anjjok_oreunjjoge_isseoyo.mp3`,
+  '오른쪽':                 `${BASE005}/audios/audio_oreunjjok.mp3`,
+  '안쪽':                   `${BASE005}/audios/audio_anjjok.mp3`,
+  '원':                     `${BASE005}/audios/audio_won.mp3`,
+};
+
 const BASE004 = '/assets/korean/step004';
 
 export const KR_IMG_004 = {
@@ -301,6 +337,7 @@ export const KR_AUDIO_004: Record<string, string> = {
 const ALL_AUDIO_MAPS: Record<string, string>[] = [
   KR_AUDIO_007,
   KR_AUDIO_006,
+  KR_AUDIO_005,
   KR_AUDIO_004,
   KR_AUDIO_003,
   KR_AUDIO_002,

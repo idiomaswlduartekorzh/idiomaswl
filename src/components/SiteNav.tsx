@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { useTheme } from '@/components/ThemeProvider';
 
 const NAV_LINKS = [
-  { label: 'Idiomas',   href: '/home#idiomas' },
+  { label: 'Home',      href: '/home' },
   { label: 'Método',    href: '/metodo' },
   { label: 'Exámenes',  href: '/examenes' },
   { label: 'Lección',   href: '/leccion' },
