@@ -1,335 +1,192 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { playAudio } from '@/lib/storage';
 
-/* ─── Types ──────────────────────────────────────────────────────────────── */
 interface Props { onComplete?: () => void }
 
-interface Word { kr: string; rom: string; es: string; note?: string }
-
-interface Bubble {
-  id: string;
-  speaker: 'minsu' | 'david';
-  ko: string;
-  es: string;
-  audio: string;
-  note: string;
-  words: Word[];
+interface Sentence {
+  kr: string; audio: string; es: string;
+  highlight: string; color: string;
+  question: string; options: string[]; correct: string; explanation: string;
 }
 
-interface Scene {
-  id: string;
-  title: string;
-  emoji: string;
-  description: string;
-  bubbles: Bubble[];
-}
-
-/* ─── Data ───────────────────────────────────────────────────────────────── */
-const SCENES: Scene[] = [
+const SENTENCES: Sentence[] = [
   {
-    id: 'scene1',
-    title: 'Escena 1 · La rutina de David',
-    emoji: '🎓',
-    description: 'Minsu le pregunta a David cómo le va la vida en Corea. David describe su rutina universitaria.',
-    bubbles: [
-      {
-        id: 's1b0', speaker: 'minsu',
-        ko: '한국 생활 어때요?', es: '¿Qué tal la vida en Corea?',
-        audio: '한국 생활 어때요?',
-        note: '어때요 ya lo conoces — ahora pregunta sobre algo más grande: toda tu vida aquí.',
-        words: [
-          { kr: '한국', rom: 'han-guk', es: 'Corea' },
-          { kr: '생활', rom: 'saeng-hwal', es: 'vida cotidiana' },
-          { kr: '어때요?', rom: 'eo-ttae-yo', es: '¿qué tal? (del step004)' },
-        ],
-      },
-      {
-        id: 's1b1', speaker: 'david',
-        ko: '어, 이 대학교에서 공부해요.', es: 'Eh, estudio en esta universidad.',
-        audio: '이 대학교에서 공부해요',
-        note: '에서 = donde ocurre la acción. No 대학교에 (destino) sino 대학교에서 (lugar de la acción).',
-        words: [
-          { kr: '어', rom: 'eo', es: 'eh / bueno (pausa natural)' },
-          { kr: '이', rom: 'i', es: 'este/esta' },
-          { kr: '대학교에서', rom: 'dae-hak-gyo-e-seo', es: 'en esta universidad' },
-          { kr: '공부해요', rom: 'gong-bu-hae-yo', es: 'estudio' },
-        ],
-      },
-      {
-        id: 's1b2', speaker: 'david',
-        ko: '카페에서 일해요.', es: 'Trabajo en el café.',
-        audio: '카페에서 일해요',
-        note: 'Mismo patrón: 에서 + verbo 해요. David tiene dos actividades, dos lugares con 에서.',
-        words: [
-          { kr: '카페에서', rom: 'ka-pe-e-seo', es: 'en el café' },
-          { kr: '일해요', rom: 'il-hae-yo', es: 'trabajo' },
-        ],
-      },
-      {
-        id: 's1b3', speaker: 'david',
-        ko: '한국 좋아해요.', es: 'Me gusta Corea.',
-        audio: '한국 좋아해요',
-        note: 'OJO: NO es 한국 좋아요 (Corea está bien). Es 좋아해요 — verbo de preferencia. "Me gusta Corea."',
-        words: [
-          { kr: '한국', rom: 'han-guk', es: 'Corea' },
-          { kr: '좋아해요', rom: 'jo-a-hae-yo', es: 'me gusta (verbo)' },
-        ],
-      },
-      {
-        id: 's1b4', speaker: 'david',
-        ko: '민수 씨는 뭐해요?', es: '¿Y tú, Minsu? ¿Qué haces?',
-        audio: '민수 씨는 뭐해요?',
-        note: '씨 se usa con el nombre propio — es respetuoso y cercano al mismo tiempo. No se usa con apellido.',
-        words: [
-          { kr: '민수 씨', rom: 'min-su ssi', es: 'Sr. Minsu (título honorífico)' },
-          { kr: '는', rom: 'neun', es: 'partícula de tema' },
-          { kr: '뭐해요?', rom: 'mwo-hae-yo', es: '¿qué haces?' },
-        ],
-      },
+    kr: '한국 생활 어때요?', audio: '한국 생활 어때요?', es: '¿Qué tal la vida en Corea?',
+    highlight: '생활', color: '#6c63ff',
+    question: 'Minsu pregunta "한국 생활 어때요?". ¿Qué significa 생활 en este contexto?',
+    options: [
+      'vida cotidiana / rutina — el tejido del día a día en un lugar',
+      'fiesta / celebración especial',
+      'trabajo de tiempo completo',
     ],
+    correct: 'vida cotidiana / rutina — el tejido del día a día en un lugar',
+    explanation: '생활 = vida cotidiana, rutina. No es "vida" en abstracto — es la actividad continua y habitual en un lugar. 한국 생활 어때요? pregunta por todo el ritmo del día a día de David en Corea.',
   },
   {
-    id: 'scene2',
-    title: 'Escena 2 · Minsu responde',
-    emoji: '🤝',
-    description: 'Minsu responde a David y hablan de sus actividades cotidianas.',
-    bubbles: [
-      {
-        id: 's2b0', speaker: 'minsu',
-        ko: '어, 저도 이 대학교에서 공부해요.', es: 'Eh, yo también estudio en esta universidad.',
-        audio: '저도 이 대학교에서 공부해요',
-        note: '저도 — Minsu usa la partícula 도 (también) que ya aprendiste en step004. ¡El reciclaje funciona!',
-        words: [
-          { kr: '어', rom: 'eo', es: 'eh (pausa)' },
-          { kr: '저도', rom: 'jeo-do', es: 'yo también (도 = también, del step004)' },
-          { kr: '이 대학교에서', rom: 'i dae-hak-gyo-e-seo', es: 'en esta universidad' },
-          { kr: '공부해요', rom: 'gong-bu-hae-yo', es: 'estudio' },
-        ],
-      },
-      {
-        id: 's2b1', speaker: 'minsu',
-        ko: '친구들이 많아요.', es: 'Hay muchos amigos.',
-        audio: '친구들이 많아요',
-        note: '들 añade plural a cualquier sustantivo. 친구 (un amigo) → 친구들 (amigos). También conoces 사람들 del step004.',
-        words: [
-          { kr: '친구들', rom: 'chin-gu-deul', es: 'amigos (들=plural)' },
-          { kr: '이', rom: 'i', es: 'partícula de sujeto' },
-          { kr: '많아요', rom: 'ma-na-yo', es: 'hay muchos (del step004)' },
-        ],
-      },
-      {
-        id: 's2b2', speaker: 'david',
-        ko: '매일 카페에 가요.', es: 'Voy al café todos los días.',
-        audio: '매일 카페에 가요',
-        note: 'CONTRASTE CLAVE: 카페에서 일해요 (trabajo EN el café — acción) vs 카페에 가요 (voy AL café — movimiento). Mismo lugar, partícula diferente.',
-        words: [
-          { kr: '매일', rom: 'mae-il', es: 'todos los días' },
-          { kr: '카페에', rom: 'ka-pe-e', es: 'al café (에 = destino)' },
-          { kr: '가요', rom: 'ga-yo', es: 'voy / vamos' },
-        ],
-      },
+    kr: '이 대학교에서 공부해요', audio: '이 대학교에서 공부해요', es: 'Estudio en esta universidad',
+    highlight: '에서', color: '#8b5cf6',
+    question: 'David dice 대학교에서 공부해요. ¿Por qué usa 에서 y no 에?',
+    options: [
+      '에서 marca el lugar donde ocurre una acción. 에 se usa con verbos de movimiento (가요, 와요).',
+      '에서 es simplemente una forma más larga de 에 — son intercambiables',
+      '에서 se usa solo con lugares grandes como universidades',
     ],
+    correct: '에서 marca el lugar donde ocurre una acción. 에 se usa con verbos de movimiento (가요, 와요).',
+    explanation: 'Regla de oro: 에서 = escena donde el VERBO sucede (공부해요, 일해요). 에 = destino del movimiento (가요, 와요). Mismo lugar, distinta partícula: 대학교에 가요 (voy a la universidad) vs 대학교에서 공부해요 (estudio en la universidad).',
+  },
+  {
+    kr: '카페에서 일해요', audio: '카페에서 일해요', es: 'Trabajo en el café',
+    highlight: '일해요', color: '#22c55e',
+    question: '일해요 viene de 일하다. ¿Cuál es el patrón que genera verbos como 일해요 o 공부해요?',
+    options: [
+      '[sustantivo] + 하다 → [sustantivo]해요. 일(trabajo) + 하다 → 일해요',
+      'Los verbos coreanos se forman añadiendo -요 directamente al sustantivo',
+      '일해요 y 공부해요 no tienen relación — son raíces completamente distintas',
+    ],
+    correct: '[sustantivo] + 하다 → [sustantivo]해요. 일(trabajo) + 하다 → 일해요',
+    explanation: 'Los verbos con 하다 son los más comunes del coreano. Solo cambia el sustantivo delante: 공부(estudio) + 하다 → 공부해요, 일(trabajo) + 하다 → 일해요. El sufijo -해요 es siempre el mismo. ¡Un patrón que desbloquea cientos de verbos!',
+  },
+  {
+    kr: '한국 좋아해요', audio: '한국 좋아해요', es: 'Me gusta Corea',
+    highlight: '좋아해요', color: '#f59e0b',
+    question: 'David dice 한국 좋아해요, NO 한국 좋아요. ¿Cuál es la diferencia?',
+    options: [
+      '좋아해요 = "me gusta" (verbo de preferencia) · 좋아요 = "está bien / qué bueno" (evaluación)',
+      '좋아해요 es más formal que 좋아요',
+      'Son completamente intercambiables — es solo preferencia personal',
+    ],
+    correct: '좋아해요 = "me gusta" (verbo de preferencia) · 좋아요 = "está bien / qué bueno" (evaluación)',
+    explanation: '좋아요 viene de 좋다 (ser bueno) — evalúa: "está bien". 좋아해요 viene de 좋아하다 (gustar) — expresa preferencia: "me gusta". Para decir que algo te GUSTA → siempre 좋아해요. 좋아요 acepta propuestas o evalúa situaciones.',
+  },
+  {
+    kr: '민수 씨는 뭐해요?', audio: '민수 씨는 뭐해요?', es: '¿Y tú qué haces, Minsu?',
+    highlight: '씨', color: '#e879f9',
+    question: 'David dice "민수 씨는 뭐해요?". ¿Qué hace 씨 después del nombre?',
+    options: [
+      '씨 = tratamiento de respeto equivalente a "Sr./Sra. + nombre" — cortés sin ser rígido',
+      '씨 es un diminutivo que se usa con amigos íntimos',
+      '씨 es el equivalente coreano de "oye" — para llamar la atención',
+    ],
+    correct: '씨 = tratamiento de respeto equivalente a "Sr./Sra. + nombre" — cortés sin ser rígido',
+    explanation: '씨 adjuntado al nombre muestra respeto sin excesiva formalidad. 민수 씨 = "Minsu-ssi". Se usa con el nombre de pila, no con el apellido. Perfecto entre conocidos que quieren ser corteses sin distancia.',
+  },
+  {
+    kr: '저도 이 대학교에서 공부해요', audio: '저도 이 대학교에서 공부해요', es: 'Yo también estudio en esta universidad',
+    highlight: '도', color: '#06b6d4',
+    question: 'Minsu dice "저도 이 대학교에서 공부해요". ¿Qué hace el 도 después de 저?',
+    options: [
+      '도 adjuntado a un sustantivo añade "también". 저도 = "yo también"',
+      '도 es el marcador de sujeto estándar en coreano formal',
+      '도 indica que la acción ocurre con frecuencia',
+    ],
+    correct: '도 adjuntado a un sustantivo añade "también". 저도 = "yo también"',
+    explanation: '도 = también. Se adjunta a cualquier sustantivo o pronombre: 저도 (yo también), 커피도 (también café), 친구도 (también el amigo). Minsu confirma que comparte la misma situación que David — une la conversación.',
+  },
+  {
+    kr: '매일 카페에 가요', audio: '매일 카페에 가요', es: 'Voy al café todos los días',
+    highlight: '에', color: '#f97316',
+    question: 'David dice 카페에 가요 con 에, no con 에서. ¿Por qué?',
+    options: [
+      '에 con verbos de movimiento (가요/와요) indica el destino. 에서 indica dónde ocurre la acción.',
+      '에 se usa cuando el lugar es pequeño como un café. 에서 para lugares grandes.',
+      'Son intercambiables con 가요 — ambos funcionan igual.',
+    ],
+    correct: '에 con verbos de movimiento (가요/와요) indica el destino. 에서 indica dónde ocurre la acción.',
+    explanation: 'El contraste 에 vs 에서 es fundamental: 카페에 가요 (voy al café → destino). 카페에서 일해요 (trabajo en el café → acción). Truco: si el verbo es 가다/오다 (ir/venir) → usa 에. Cualquier otra acción → usa 에서.',
   },
 ];
 
-/* ─── Colors ──────────────────────────────────────────────────────────────── */
-const ACCENT = '#6c63ff';
-const MINSU_BG     = 'var(--secondary)';
-const MINSU_BORDER = 'var(--border)';
-const DAVID_BG     = 'rgba(108,99,255,0.1)';
-const DAVID_BORDER = 'rgba(108,99,255,0.3)';
+export default function ContextualInput007({ onComplete }: Props) {
+  const [idx,     setIdx]     = useState(0);
+  const [picked,  setPicked]  = useState<string | null>(null);
+  const [correct, setCorrect] = useState(0);
+  const [done,    setDone]    = useState(false);
 
-/* ─── Sub-components ─────────────────────────────────────────────────────── */
-function WordChip({ w }: { w: Word }) {
-  return (
-    <div style={{ display:'flex', flexDirection:'column', gap:2, padding:'8px 10px', borderRadius:10, background:'rgba(108,99,255,0.06)', border:'1px solid rgba(108,99,255,0.18)' }}>
-      <span style={{ fontSize:16, fontWeight:800, fontFamily:'"Noto Sans KR",sans-serif', color:'var(--foreground)' }}>{w.kr}</span>
-      <span style={{ fontSize:10, color:'#a78bfa', fontFamily:'monospace' }}>{w.rom}</span>
-      <span style={{ fontSize:12, color:'var(--muted-foreground)', fontWeight:600 }}>{w.es}</span>
-      {w.note && <span style={{ fontSize:10, color:'var(--muted-foreground)', lineHeight:1.4, marginTop:2 }}>{w.note}</span>}
-    </div>
+  const s = SENTENCES[idx];
+
+  function highlightLine(text: string, hl: string, color: string) {
+    const parts = text.split(hl);
+    return parts.map((part, i) => (
+      <span key={i}>
+        {part}
+        {i < parts.length - 1 && (
+          <strong style={{ color, background: `${color}22`, borderRadius: 4, padding: '0 3px' }}>{hl}</strong>
+        )}
+      </span>
+    ));
+  }
+
+  function handlePick(opt: string) {
+    if (picked) return;
+    setPicked(opt);
+    if (opt === s.correct) setCorrect(c => c + 1);
+    playAudio(s.audio);
+  }
+
+  function next() {
+    if (idx + 1 >= SENTENCES.length) { setDone(true); return; }
+    setIdx(idx + 1);
+    setPicked(null);
+  }
+
+  if (done) return (
+    <section style={{ maxWidth: 480, margin: '0 auto', padding: '2rem 1rem', textAlign: 'center' }}>
+      <div style={{ fontSize: 48, marginBottom: 8 }}>🔍</div>
+      <h2 style={{ margin: '0 0 8px', fontSize: 20, fontWeight: 700 }}>{correct}/{SENTENCES.length} descubrimientos correctos</h2>
+      <p style={{ margin: '0 0 24px', color: 'var(--muted)', fontSize: 14 }}>Dedujiste los patrones del coreano universitario antes de que te los explicaran. Así funciona la adquisición natural.</p>
+      <button onClick={() => onComplete?.()} style={{ background: '#2d9b4e', color: '#fff', border: 'none', borderRadius: 10, padding: '14px 32px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>Continuar →</button>
+    </section>
   );
-}
-
-function ChatBubbleEl({ bubble, revealed, expanded, onExpand, onAudio }: {
-  bubble: Bubble;
-  revealed: boolean;
-  expanded: boolean;
-  onExpand: () => void;
-  onAudio: () => void;
-}) {
-  const isMinsu = bubble.speaker === 'minsu';
-  if (!revealed) return null;
 
   return (
-    <div style={{
-      display:'flex', flexDirection:'column',
-      alignItems: isMinsu ? 'flex-start' : 'flex-end',
-      animation:'ci5-bubble 0.4s cubic-bezier(0.34,1.56,0.64,1) both',
-    }}>
-      <p style={{
-        margin:'0 0 3px', fontSize:10, fontWeight:700, textTransform:'uppercase', letterSpacing:'0.06em',
-        color: isMinsu ? 'var(--muted-foreground)' : ACCENT,
-        paddingLeft: isMinsu ? 8 : 0, paddingRight: isMinsu ? 0 : 8,
-      }}>
-        {isMinsu ? '민수 Minsu' : '데이비드 David'}
-      </p>
+    <section style={{ maxWidth: 520, margin: '0 auto', padding: '2rem 1rem', fontFamily: 'system-ui,-apple-system,"Segoe UI",sans-serif', color: 'var(--foreground)' }}>
+      <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', fontWeight: 700 }}>ETAPA 05 DE 11 · Contexto primero</p>
+      <div style={{ height: 4, borderRadius: 2, background: 'var(--line-soft)', marginBottom: 20 }}>
+        <div style={{ height: '100%', width: `${(idx / SENTENCES.length) * 100}%`, background: '#6c63ff', borderRadius: 2 }} />
+      </div>
 
-      <div style={{
-        maxWidth:'88%',
-        background: isMinsu ? MINSU_BG : DAVID_BG,
-        border:`1px solid ${isMinsu ? MINSU_BORDER : DAVID_BORDER}`,
-        borderRadius: isMinsu ? '4px 16px 16px 16px' : '16px 4px 16px 16px',
-        padding:'12px 14px',
-      }}>
-        <p style={{ margin:'0 0 3px', fontSize:18, fontWeight:800, fontFamily:'"Noto Sans KR",sans-serif', color:'var(--foreground)', lineHeight:1.3 }}>
-          {bubble.ko}
-        </p>
-        <p style={{ margin:'0 0 10px', fontSize:12, color:'var(--muted-foreground)' }}>{bubble.es}</p>
+      <div style={{ background: 'var(--bg-2,#f5f5f7)', borderRadius: 14, padding: '24px', marginBottom: 16, textAlign: 'center' }}>
+        <button onClick={() => playAudio(s.audio)} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'block', margin: '0 auto 8px' }}>
+          <p style={{ margin: 0, fontSize: 26, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, lineHeight: 1.4 }}>
+            {highlightLine(s.kr, s.highlight, s.color)}
+          </p>
+          <span style={{ fontSize: 11, color: 'var(--muted)' }}>🔊 tap para escuchar</span>
+        </button>
+        <p style={{ margin: '8px 0 0', fontSize: 14, color: 'var(--muted)' }}>{s.es}</p>
+      </div>
 
-        <div style={{ display:'flex', gap:7, flexWrap:'wrap' }}>
-          <button type="button" onClick={onAudio}
-            style={{ padding:'4px 12px', borderRadius:100, cursor:'pointer', fontSize:11, fontWeight:600, color:ACCENT, background:'rgba(108,99,255,0.1)', border:`1px solid rgba(108,99,255,0.3)`, display:'inline-flex', alignItems:'center', gap:4 }}>
-            🔊 Escuchar
-          </button>
-          <button type="button" onClick={onExpand}
-            style={{ padding:'4px 12px', borderRadius:100, cursor:'pointer', fontSize:11, fontWeight:600, color:'var(--muted-foreground)', background:'var(--secondary)', border:'1px solid var(--border)', display:'inline-flex', alignItems:'center', gap:4 }}>
-            {expanded ? '▲ Cerrar' : '▼ Desglose'}
-          </button>
+      <div style={{ background: 'var(--bg)', border: `1px solid ${s.color}44`, borderRadius: 14, padding: '16px 20px' }}>
+        <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 600 }}>🔍 {s.question}</p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {s.options.map(opt => {
+            const isCorrect = opt === s.correct;
+            const isPicked  = picked === opt;
+            const bg     = !picked ? 'var(--bg-2,#f5f5f7)' : isCorrect ? 'rgba(45,155,78,0.15)' : isPicked ? 'rgba(239,68,68,0.1)' : 'var(--bg-2,#f5f5f7)';
+            const border = !picked ? '1px solid var(--line-soft)' : isCorrect ? '1px solid #2d9b4e' : isPicked ? '1px solid #ef4444' : '1px solid var(--line-soft)';
+            return (
+              <button key={opt} onClick={() => handlePick(opt)}
+                style={{ background: bg, border, borderRadius: 10, padding: '10px 14px', textAlign: 'left', fontSize: 13, cursor: picked ? 'default' : 'pointer', transition: 'all 0.2s' }}>
+                {isPicked && !isCorrect ? '❌ ' : isCorrect && picked ? '✅ ' : ''}{opt}
+              </button>
+            );
+          })}
         </div>
-
-        {expanded && (
-          <div style={{ marginTop:12, animation:'ci5-in 0.3s ease both' }}>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:8, marginBottom:10 }}>
-              {bubble.words.map((w, i) => (
-                <WordChip key={i} w={w} />
-              ))}
-            </div>
-            <div style={{ padding:'10px 12px', borderRadius:10, background:'rgba(245,158,11,0.08)', border:'1px solid rgba(245,158,11,0.25)' }}>
-              <p style={{ margin:0, fontSize:12, color:'var(--foreground)', lineHeight:1.65 }}>{bubble.note}</p>
-            </div>
+        {picked && (
+          <div style={{ marginTop: 12, padding: '10px 14px', background: `${s.color}11`, border: `1px solid ${s.color}33`, borderRadius: 10 }}>
+            <p style={{ margin: 0, fontSize: 13, color: 'var(--foreground)', lineHeight: 1.5 }}>
+              <strong style={{ color: s.color }}>💡</strong> {s.explanation}
+            </p>
           </div>
         )}
       </div>
-    </div>
-  );
-}
 
-/* ─── Component ──────────────────────────────────────────────────────────── */
-export default function ContextualInput007({ onComplete }: Props) {
-  const [sceneIdx,     setSceneIdx]     = useState(0);
-  const [bubbleCount,  setBubbleCount]  = useState(0);
-  const [expanded,     setExpanded]     = useState<string | null>(null);
-  const bottomRef                       = useRef<HTMLDivElement>(null);
-
-  const scene       = SCENES[sceneIdx];
-  const isLastScene = sceneIdx === SCENES.length - 1;
-  const allRevealed = bubbleCount >= (scene?.bubbles.length ?? 0);
-
-  useEffect(() => {
-    const t = setTimeout(() => bottomRef.current?.scrollIntoView({ behavior:'smooth', block:'end' }), 150);
-    return () => clearTimeout(t);
-  }, [bubbleCount]);
-
-  useEffect(() => {
-    setBubbleCount(0);
-    setExpanded(null);
-  }, [sceneIdx]);
-
-  function revealNext() {
-    setBubbleCount(n => Math.min(n + 1, scene.bubbles.length));
-  }
-
-  function nextScene() {
-    if (isLastScene) {
-      onComplete?.();
-    } else {
-      setSceneIdx(i => i + 1);
-    }
-  }
-
-  if (!scene) return null;
-
-  return (
-    <div style={{ fontFamily:'system-ui,-apple-system,"Segoe UI",sans-serif', color:'var(--foreground)', padding:'16px', display:'flex', flexDirection:'column', gap:14 }}>
-      <style>{`
-        @keyframes ci5-in     { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:none} }
-        @keyframes ci5-bubble { from{opacity:0;transform:translateY(16px) scale(0.97)} to{opacity:1;transform:none} }
-      `}</style>
-
-      {/* Header */}
-      <div style={{ display:'flex', alignItems:'center', gap:8 }}>
-        <span style={{ fontSize:18 }}>{scene.emoji}</span>
-        <div>
-          <p style={{ margin:'0 0 1px', fontSize:10, fontWeight:800, textTransform:'uppercase', letterSpacing:'0.1em', color:ACCENT }}>{sceneIdx + 1}/{SCENES.length}</p>
-          <h3 style={{ margin:0, fontSize:16, fontWeight:800, color:'var(--foreground)' }}>{scene.title}</h3>
-        </div>
-      </div>
-
-      <p style={{ margin:'0', fontSize:13, color:'var(--muted-foreground)', lineHeight:1.6 }}>{scene.description}</p>
-
-      {/* Scene progress */}
-      <div style={{ display:'flex', gap:5 }}>
-        {SCENES.map((s, i) => (
-          <div key={s.id} style={{ flex:1, height:4, borderRadius:2, background: i < sceneIdx ? ACCENT : i === sceneIdx ? 'rgba(108,99,255,0.4)' : 'var(--border)', transition:'background 0.3s' }} />
-        ))}
-      </div>
-
-      {/* Chat bubbles */}
-      <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
-        {scene.bubbles.map((bubble, i) => (
-          <ChatBubbleEl
-            key={bubble.id}
-            bubble={bubble}
-            revealed={i < bubbleCount}
-            expanded={expanded === bubble.id}
-            onExpand={() => setExpanded(prev => prev === bubble.id ? null : bubble.id)}
-            onAudio={() => playAudio(bubble.audio)}
-          />
-        ))}
-      </div>
-
-      {bubbleCount > 0 && (
-        <p style={{ margin:'4px 0', fontSize:11, color:'var(--muted-foreground)', textAlign:'center' }}>
-          {bubbleCount}/{scene.bubbles.length} líneas · Toca ▼ Desglose en cada burbuja para la explicación
-        </p>
-      )}
-
-      <div ref={bottomRef} />
-
-      {!allRevealed ? (
-        <button
-          type="button"
-          onClick={revealNext}
-          style={{ padding:'13px', borderRadius:14, cursor:'pointer', width:'100%', background:'rgba(108,99,255,0.12)', border:'1px solid rgba(108,99,255,0.35)', fontSize:14, fontWeight:800, color:ACCENT }}
-        >
-          {bubbleCount === 0 ? '▶ Iniciar análisis línea por línea' : `Siguiente línea (${bubbleCount + 1}/${scene.bubbles.length}) →`}
+      {picked && (
+        <button onClick={next} style={{ marginTop: 16, width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 10, padding: '12px', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}>
+          {idx + 1 < SENTENCES.length ? 'Siguiente frase →' : 'Ver resultado →'}
         </button>
-      ) : (
-        <div style={{ display:'flex', flexDirection:'column', gap:10, animation:'ci5-in 0.4s ease both' }}>
-          <div style={{ padding:'14px 16px', borderRadius:14, background:'rgba(34,197,94,0.07)', border:'1px solid rgba(34,197,94,0.25)' }}>
-            <p style={{ margin:'0 0 6px', fontSize:11, fontWeight:800, textTransform:'uppercase', letterSpacing:'0.06em', color:'#22c55e' }}>✓ Escena {sceneIdx + 1} completada</p>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
-              {scene.bubbles.map(b => (
-                <button key={b.id} type="button" onClick={() => playAudio(b.audio)}
-                  style={{ padding:'5px 12px', borderRadius:100, cursor:'pointer', fontSize:13, fontFamily:'"Noto Sans KR",sans-serif', fontWeight:700, color:'#16a34a', background:'rgba(34,197,94,0.1)', border:'1px solid rgba(34,197,94,0.3)' }}>
-                  {b.ko}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={nextScene}
-            style={{ padding:'14px', borderRadius:14, cursor:'pointer', width:'100%', background:ACCENT, border:'none', fontSize:14, fontWeight:800, color:'#fff' }}
-          >
-            {isLastScene ? '¡Entendí el contexto! →' : `Escena ${sceneIdx + 2} · ${SCENES[sceneIdx + 1].title} →`}
-          </button>
-        </div>
       )}
-    </div>
+    </section>
   );
 }

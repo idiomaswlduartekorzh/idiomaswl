@@ -1,478 +1,192 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { KR_VIDEO_006, playAudio } from '@/lib/storage';
+import { useState } from 'react';
+import { playAudio } from '@/lib/storage';
 
-/* ─── Types ──────────────────────────────────────────────────────────────── */
 interface Props { onComplete?: () => void }
 
-interface Word { kr: string; rom: string; es: string; note?: string }
-
-interface Bubble {
-  id: string;
-  speaker: 'minsu' | 'david';
-  ko: string;
-  es: string;
-  audio: string;
-  note: string;          // grammar / cultural note
-  words: Word[];
+interface Sentence {
+  kr: string; audio: string; es: string;
+  highlight: string; color: string;
+  question: string; options: string[]; correct: string; explanation: string;
 }
 
-interface Scene {
-  id: string;
-  title: string;
-  emoji: string;
-  videoSrc: string;
-  description: string;
-  bubbles: Bubble[];
-}
-
-/* ─── Data ───────────────────────────────────────────────────────────────── */
-const SCENES: Scene[] = [
+const SENTENCES: Sentence[] = [
   {
-    id: 'scene1',
-    title: 'Escena 1 · El pasillo',
-    emoji: '🏫',
-    videoSrc: KR_VIDEO_006.scene1,
-    description: 'Minsu ve a David en el pasillo. David es nuevo en la universidad.',
-    bubbles: [
-      {
-        id: 's1b0', speaker: 'minsu',
-        ko: '새로 왔어요?', es: '¿Eres nuevo/a aquí?',
-        audio: '새로 왔어요?',
-        note: '🔑 왔어요 = pasado de 오다 (venir). Minsu pregunta directamente si David es recién llegado — muy natural en coreano.',
-        words: [
-          { kr: '새로', rom: 'sae-ro', es: 'recién / de nuevo', note: 'adverbio que indica novedad' },
-          { kr: '왔어요', rom: 'wa-sseo-yo', es: 'vine / llegué', note: 'pasado de 오다 (venir) en formal-amigable' },
-          { kr: '?', rom: '', es: '← pregunta con entonación ascendente', note: '' },
-        ],
-      },
-      {
-        id: 's1b1', speaker: 'david',
-        ko: '안녕하세요.', es: 'Hola.',
-        audio: '안녕하세요',
-        note: '💬 El saludo estándar formal. Siempre correcto con alguien que no conoces.',
-        words: [
-          { kr: '안녕하세요', rom: 'an-nyeong-ha-se-yo', es: 'hola (formal)', note: 'el saludo más universal del coreano' },
-        ],
-      },
-      {
-        id: 's1b2', speaker: 'david',
-        ko: '네, 새로 왔어요.', es: 'Sí, soy nuevo.',
-        audio: '네, 새로 왔어요',
-        note: '🔄 David confirma repitiendo la misma estructura de Minsu — muy natural. En coreano se hace eco del interlocutor.',
-        words: [
-          { kr: '네', rom: 'ne', es: 'sí', note: 'confirmación positiva universal' },
-          { kr: '새로', rom: 'sae-ro', es: 'recién / nuevo', note: '' },
-          { kr: '왔어요', rom: 'wa-sseo-yo', es: 'vine / llegué', note: 'pasado — equivale a "he llegado"' },
-        ],
-      },
-      {
-        id: 's1b3', speaker: 'david',
-        ko: '콜롬비아 사람이에요.', es: 'Soy colombiano.',
-        audio: '콜롬비아 사람이에요',
-        note: '🌍 [país] + 사람이에요 = "Soy de [país]". Funciona con cualquier país: 한국 사람이에요, 미국 사람이에요…',
-        words: [
-          { kr: '콜롬비아', rom: 'kol-lom-bi-a', es: 'Colombia', note: 'nombre del país en coreano' },
-          { kr: '사람', rom: 'sa-ram', es: 'persona', note: 'palabra clave — también significa "gente"' },
-          { kr: '이에요', rom: 'i-e-yo', es: 'soy / es', note: 'cópula formal después de consonante (ㅂ)' },
-        ],
-      },
+    kr: '새로 왔어요?', audio: '새로 왔어요?', es: '¿Eres nuevo/a aquí?',
+    highlight: '왔어요', color: '#6c63ff',
+    question: 'Minsu dice 새로 왔어요?. ¿Qué hace 왔어요 en esta frase?',
+    options: [
+      'Es el pasado de 오다 (venir) — "llegaste"',
+      'Es un saludo informal equivalente a 안녕',
+      'Es el presente de 가다 (ir)',
     ],
+    correct: 'Es el pasado de 오다 (venir) — "llegaste"',
+    explanation: '왔어요 = pasado de 오다 (venir). 새로 = recién / nuevo. La pregunta completa: "¿Eres recién llegado/a?" — la apertura social más natural del coreano universitario.',
   },
   {
-    id: 'scene2',
-    title: 'Escena 2 · El café del campus',
-    emoji: '☕',
-    videoSrc: KR_VIDEO_006.scene2,
-    description: 'David invita a Minsu a tomar un café. Se presentan formalmente.',
-    bubbles: [
-      {
-        id: 's2b0', speaker: 'david',
-        ko: '저는 데이비드예요.', es: 'Soy David.',
-        audio: '저는 데이비드예요',
-        note: '👤 저는 = "yo" en forma modesta/formal. 예요 se usa después de vocal (데이비드 termina en vocal d → 드).',
-        words: [
-          { kr: '저는', rom: 'jeo-neun', es: 'yo (modesto)', note: '저 = yo formal; 는 = marcador de tema' },
-          { kr: '데이비드', rom: 'de-i-bi-deu', es: 'David', note: 'nombre propio en coreano' },
-          { kr: '예요', rom: 'ye-yo', es: 'soy / es', note: 'cópula después de vocal — igual que 이에요 pero más suave' },
-        ],
-      },
-      {
-        id: 's2b1', speaker: 'david',
-        ko: '커피 마실래요?', es: '¿Tomamos un café?',
-        audio: '커피 마실래요?',
-        note: '☕ -ㄹ래요? propone hacer algo juntos. Es una invitación directa entre personas que acaban de conocerse y están cómodas. ¡Muy poderoso!',
-        words: [
-          { kr: '커피', rom: 'keo-pi', es: 'café (la bebida)', note: 'préstamo del inglés "coffee"' },
-          { kr: '마실래요', rom: 'ma-sil-rae-yo', es: '¿quieres beber?', note: 'de 마시다 (beber) + -ㄹ래요 (invitación/propuesta)' },
-          { kr: '?', rom: '', es: '← propuesta amistosa', note: '' },
-        ],
-      },
-      {
-        id: 's2b2', speaker: 'minsu',
-        ko: '저는 민수예요.', es: 'Soy Minsu.',
-        audio: '저는 민수예요',
-        note: '🤝 Minsu usa la misma estructura que David — eco natural. 민수 termina en vocal ↓ por eso 예요 (no 이에요).',
-        words: [
-          { kr: '저는', rom: 'jeo-neun', es: 'yo (modesto)', note: '' },
-          { kr: '민수', rom: 'min-su', es: 'Minsu', note: 'nombre coreano, termina en vocal → 예요' },
-          { kr: '예요', rom: 'ye-yo', es: 'soy', note: 'después de vocal — recuerda: vocal → 예요, consonante → 이에요' },
-        ],
-      },
+    kr: '콜롬비아 사람이에요', audio: '콜롬비아 사람이에요', es: 'Soy colombiano/a',
+    highlight: '사람이에요', color: '#8b5cf6',
+    question: 'David dice 콜롬비아 사람이에요. ¿Qué función cumple la fórmula [país] + 사람이에요?',
+    options: [
+      '[País] + 사람이에요 = "Soy de [País]" — fórmula universal de nacionalidad',
+      '사람 = ciudad, no país',
+      'La fórmula solo funciona con países asiáticos',
     ],
+    correct: '[País] + 사람이에요 = "Soy de [País]" — fórmula universal de nacionalidad',
+    explanation: '사람 = persona. 이에요 = soy / es (cópula). La estructura [país] + 사람이에요 es la forma estándar para indicar tu origen: 미국 사람이에요 (soy de EE.UU.), 한국 사람이에요 (soy coreano/a).',
   },
   {
-    id: 'scene3',
-    title: 'Escena 3 · Caminando por el campus',
-    emoji: '🏛️',
-    videoSrc: KR_VIDEO_006.scene3,
-    description: 'Minsu pregunta cómo le va a David en la universidad. David da su opinión con detalles.',
-    bubbles: [
-      {
-        id: 's3b0', speaker: 'minsu',
-        ko: '대학교 어때요?', es: '¿Cómo es la universidad?',
-        audio: '대학교 어때요?',
-        note: '🤔 어때요 = ¿cómo es? / ¿qué tal? Solo añade cualquier sustantivo antes: 커피 어때요?, 날씨 어때요?… ¡funciona con todo!',
-        words: [
-          { kr: '대학교', rom: 'dae-hak-gyo', es: 'universidad', note: 'literalmente "gran escuela"' },
-          { kr: '어때요', rom: 'eo-ttae-yo', es: '¿cómo es? / ¿qué tal?', note: 'pregunta de opinión universal — patrón clave del step006' },
-        ],
-      },
-      {
-        id: 's3b1', speaker: 'david',
-        ko: '좋아요.', es: 'Está bien. / Me gusta.',
-        audio: '좋아요',
-        note: '✅ 좋아요 es la respuesta positiva más versátil del coreano. Significa "está bien", "me gusta", "de acuerdo". ¡Un must!',
-        words: [
-          { kr: '좋아요', rom: 'jo-a-yo', es: 'está bien / me gusta', note: 'de 좋다 (ser bueno/agradable) — respuesta positiva universal' },
-        ],
-      },
-      {
-        id: 's3b2', speaker: 'david',
-        ko: '친절한 사람들도 많아요.', es: 'Hay mucha gente amable también.',
-        audio: '친절한 사람들',
-        note: '🔑 도 = también / encima. 많아요 = hay muchos. Añadir 도 suma detalles a tu respuesta — hace el coreano más rico y natural.',
-        words: [
-          { kr: '친절한', rom: 'chin-jeol-han', es: 'amable (adj.)', note: 'de 친절하다 → 친절한 modifica el sustantivo siguiente' },
-          { kr: '사람들', rom: 'sa-ram-deul', es: 'personas, gente', note: '들 = sufijo de plural en coreano' },
-          { kr: '도', rom: 'do', es: 'también / encima', note: 'partícula clave — añade información extra sin esfuerzo' },
-          { kr: '많아요', rom: 'ma-na-yo', es: 'hay muchos/as', note: 'de 많다 — describe cantidad' },
-        ],
-      },
-      {
-        id: 's3b3', speaker: 'david',
-        ko: '커피도 있어요.', es: 'También hay café.',
-        audio: '커피도 있어요',
-        note: '☕ 있어요 = hay / existe / tiene. Con 도 = "también hay". Complementa la respuesta anterior — muestra que David sabe conversar en coreano.',
-        words: [
-          { kr: '커피', rom: 'keo-pi', es: 'café', note: '' },
-          { kr: '도', rom: 'do', es: 'también', note: 'misma partícula de antes — suma un detalle más' },
-          { kr: '있어요', rom: 'i-sseo-yo', es: 'hay / existe / tiene', note: 'de 있다 — contrario de 없어요 (no hay)' },
-        ],
-      },
+    kr: '커피 마실래요?', audio: '커피 마실래요?', es: '¿Quieres tomar un café?',
+    highlight: '마실래요', color: '#22c55e',
+    question: 'David invita a Minsu con 커피 마실래요?. ¿Qué hace el sufijo -ㄹ래요?',
+    options: [
+      'Convierte el verbo en una invitación o propuesta suave — "¿quieres...?"',
+      'Indica que la acción ya ocurrió',
+      'Marca una pregunta de información, como "¿dónde?"',
     ],
+    correct: 'Convierte el verbo en una invitación o propuesta suave — "¿quieres...?"',
+    explanation: '-ㄹ래요 = proponer hacer algo juntos. 마시다 (beber) → 마실래요? (¿quieres beber?). Solo se usa entre personas de confianza. Funciona con cualquier verbo: 갈래요? (¿vamos?), 먹을래요? (¿comemos?).',
+  },
+  {
+    kr: '저는 민수예요', audio: '저는 민수예요', es: 'Soy Minsu',
+    highlight: '예요', color: '#f59e0b',
+    question: 'Minsu usa 예요, pero David antes dijo 사람이에요. ¿Por qué son diferentes?',
+    options: [
+      'Después de vocal → 예요. Después de consonante → 이에요. 민수 termina en vocal (수).',
+      '예요 es más formal que 이에요',
+      'Son completamente intercambiables — es solo una cuestión de preferencia',
+    ],
+    correct: 'Después de vocal → 예요. Después de consonante → 이에요. 민수 termina en vocal (수).',
+    explanation: 'La cópula tiene dos formas: 이에요 (después de consonante: 사람이에요) y 예요 (después de vocal: 민수예요, 데이비드예요). La última letra del nombre decide cuál usar. ¡No es elección, es fonología!',
+  },
+  {
+    kr: '대학교 어때요?', audio: '대학교 어때요?', es: '¿Cómo es la universidad?',
+    highlight: '어때요', color: '#e879f9',
+    question: 'Minsu pregunta "대학교 어때요?". ¿Cuál es el patrón que usa 어때요?',
+    options: [
+      '[Cualquier sustantivo] + 어때요? = ¿Cómo es [eso]? / ¿Qué tal [eso]?',
+      '어때요 solo se usa con lugares',
+      '어때요 requiere un verbo antes, no un sustantivo',
+    ],
+    correct: '[Cualquier sustantivo] + 어때요? = ¿Cómo es [eso]? / ¿Qué tal [eso]?',
+    explanation: '어때요 es la pregunta de opinión más versátil del coreano. 날씨 어때요? (¿qué tal el tiempo?), 커피 어때요? (¿qué tal el café?), 한국 어때요? (¿qué te parece Corea?). Solo añade cualquier cosa delante.',
+  },
+  {
+    kr: '좋아요', audio: '좋아요', es: 'Está bien / Me gusta',
+    highlight: '좋아요', color: '#06b6d4',
+    question: 'David responde con 좋아요. ¿En qué situaciones se puede usar 좋아요?',
+    options: [
+      'En cualquier situación positiva: "está bien", "me gusta", "de acuerdo"',
+      'Solo para hablar del tiempo',
+      'Solo como respuesta a preguntas de sí/no',
+    ],
+    correct: 'En cualquier situación positiva: "está bien", "me gusta", "de acuerdo"',
+    explanation: '좋아요 viene de 좋다 (ser bueno). Es la respuesta positiva más versátil: evalúa (está bien), expresa preferencia (me gusta) y acepta propuestas (de acuerdo). Una palabra, mil usos.',
+  },
+  {
+    kr: '커피도 있어요', audio: '커피도 있어요', es: 'También hay café',
+    highlight: '도', color: '#f97316',
+    question: '커피도 있어요 usa 도 en lugar de 가/이 (marcador de sujeto). ¿Qué añade 도?',
+    options: [
+      '도 = "también / encima" — suma información adicional al contexto anterior',
+      '도 es simplemente el marcador de sujeto estándar',
+      '도 indica que hay poca cantidad de café',
+    ],
+    correct: '도 = "también / encima" — suma información adicional al contexto anterior',
+    explanation: '도 adjuntada a un sustantivo añade "también". Sin 도: 커피 있어요 (hay café). Con 도: 커피도 있어요 (además hay café). David ya mencionó algo más — con 도 suma este detalle. ¡Hace el coreano más rico y natural!',
   },
 ];
 
-/* ─── Colors ──────────────────────────────────────────────────────────────── */
-const ACCENT = '#6c63ff';
-const MINSU_BG    = 'var(--secondary)';
-const MINSU_BORDER = 'var(--border)';
-const DAVID_BG    = 'rgba(108,99,255,0.1)';
-const DAVID_BORDER = 'rgba(108,99,255,0.3)';
+export default function ContextualInput006({ onComplete }: Props) {
+  const [idx,     setIdx]     = useState(0);
+  const [picked,  setPicked]  = useState<string | null>(null);
+  const [correct, setCorrect] = useState(0);
+  const [done,    setDone]    = useState(false);
 
-/* ─── Helpers ────────────────────────────────────────────────────────────── */
-function shuffle<T>(arr: T[]): T[] {
-  return [...arr].sort(() => Math.random() - 0.5);
-}
+  const s = SENTENCES[idx];
 
-/* ─── Sub-components ─────────────────────────────────────────────────────── */
-function WordChip({ w }: { w: Word }) {
-  return (
-    <div style={{ display:'flex', flexDirection:'column', gap:2, padding:'8px 10px', borderRadius:10, background:'rgba(108,99,255,0.06)', border:'1px solid rgba(108,99,255,0.18)' }}>
-      <span style={{ fontSize:16, fontWeight:800, fontFamily:'"Noto Sans KR",sans-serif', color:'var(--foreground)' }}>{w.kr}</span>
-      <span style={{ fontSize:10, color:'#a78bfa', fontFamily:'var(--mono)' }}>{w.rom}</span>
-      <span style={{ fontSize:12, color:'var(--muted-foreground)', fontWeight:600 }}>{w.es}</span>
-      {w.note && <span style={{ fontSize:10, color:'var(--muted-foreground)', lineHeight:1.4, marginTop:2 }}>{w.note}</span>}
-    </div>
+  function highlightLine(text: string, hl: string, color: string) {
+    const parts = text.split(hl);
+    return parts.map((part, i) => (
+      <span key={i}>
+        {part}
+        {i < parts.length - 1 && (
+          <strong style={{ color, background: `${color}22`, borderRadius: 4, padding: '0 3px' }}>{hl}</strong>
+        )}
+      </span>
+    ));
+  }
+
+  function handlePick(opt: string) {
+    if (picked) return;
+    setPicked(opt);
+    if (opt === s.correct) setCorrect(c => c + 1);
+    playAudio(s.audio);
+  }
+
+  function next() {
+    if (idx + 1 >= SENTENCES.length) { setDone(true); return; }
+    setIdx(idx + 1);
+    setPicked(null);
+  }
+
+  if (done) return (
+    <section style={{ maxWidth: 480, margin: '0 auto', padding: '2rem 1rem', textAlign: 'center' }}>
+      <div style={{ fontSize: 48, marginBottom: 8 }}>🔍</div>
+      <h2 style={{ margin: '0 0 8px', fontSize: 20, fontWeight: 700 }}>{correct}/{SENTENCES.length} descubrimientos correctos</h2>
+      <p style={{ margin: '0 0 24px', color: 'var(--muted)', fontSize: 14 }}>Dedujiste los patrones del campus antes de que te los explicaran. Así funciona la adquisición natural.</p>
+      <button onClick={() => onComplete?.()} style={{ background: '#2d9b4e', color: '#fff', border: 'none', borderRadius: 10, padding: '14px 32px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>Continuar →</button>
+    </section>
   );
-}
-
-function ChatBubbleEl({ bubble, revealed, expanded, onExpand, onAudio }: {
-  bubble: Bubble;
-  revealed: boolean;
-  expanded: boolean;
-  onExpand: () => void;
-  onAudio: () => void;
-}) {
-  const isMinsu = bubble.speaker === 'minsu';
-  if (!revealed) return null;
 
   return (
-    <div style={{
-      display:'flex', flexDirection:'column',
-      alignItems: isMinsu ? 'flex-start' : 'flex-end',
-      animation:'ci4-bubble 0.4s cubic-bezier(0.34,1.56,0.64,1) both',
-    }}>
-      {/* Speaker label */}
-      <p style={{
-        margin:'0 0 3px', fontSize:10, fontWeight:700, textTransform:'uppercase', letterSpacing:'0.06em',
-        color: isMinsu ? 'var(--muted-foreground)' : ACCENT,
-        paddingLeft: isMinsu ? 8 : 0, paddingRight: isMinsu ? 0 : 8,
-      }}>
-        {isMinsu ? '민수 Minsu' : '데이비드 David'}
-      </p>
+    <section style={{ maxWidth: 520, margin: '0 auto', padding: '2rem 1rem', fontFamily: 'system-ui,-apple-system,"Segoe UI",sans-serif', color: 'var(--foreground)' }}>
+      <p style={{ margin: '0 0 8px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', fontWeight: 700 }}>ETAPA 05 DE 11 · Contexto primero</p>
+      <div style={{ height: 4, borderRadius: 2, background: 'var(--line-soft)', marginBottom: 20 }}>
+        <div style={{ height: '100%', width: `${(idx / SENTENCES.length) * 100}%`, background: '#6c63ff', borderRadius: 2 }} />
+      </div>
 
-      {/* Bubble */}
-      <div style={{
-        maxWidth:'88%',
-        background: isMinsu ? MINSU_BG : DAVID_BG,
-        border:`1px solid ${isMinsu ? MINSU_BORDER : DAVID_BORDER}`,
-        borderRadius: isMinsu ? '4px 16px 16px 16px' : '16px 4px 16px 16px',
-        padding:'12px 14px',
-      }}>
-        {/* Korean text */}
-        <p style={{ margin:'0 0 3px', fontSize:18, fontWeight:800, fontFamily:'"Noto Sans KR",sans-serif', color:'var(--foreground)', lineHeight:1.3 }}>
-          {bubble.ko}
-        </p>
-        {/* Spanish */}
-        <p style={{ margin:'0 0 10px', fontSize:12, color:'var(--muted-foreground)' }}>{bubble.es}</p>
+      <div style={{ background: 'var(--bg-2,#f5f5f7)', borderRadius: 14, padding: '24px', marginBottom: 16, textAlign: 'center' }}>
+        <button onClick={() => playAudio(s.audio)} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'block', margin: '0 auto 8px' }}>
+          <p style={{ margin: 0, fontSize: 26, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, lineHeight: 1.4 }}>
+            {highlightLine(s.kr, s.highlight, s.color)}
+          </p>
+          <span style={{ fontSize: 11, color: 'var(--muted)' }}>🔊 tap para escuchar</span>
+        </button>
+        <p style={{ margin: '8px 0 0', fontSize: 14, color: 'var(--muted)' }}>{s.es}</p>
+      </div>
 
-        {/* Action buttons */}
-        <div style={{ display:'flex', gap:7, flexWrap:'wrap' }}>
-          <button type="button" onClick={onAudio}
-            style={{ padding:'4px 12px', borderRadius:100, cursor:'pointer', fontSize:11, fontWeight:600, color:ACCENT, background:'rgba(108,99,255,0.1)', border:`1px solid rgba(108,99,255,0.3)`, display:'inline-flex', alignItems:'center', gap:4 }}>
-            🔊 Escuchar
-          </button>
-          <button type="button" onClick={onExpand}
-            style={{ padding:'4px 12px', borderRadius:100, cursor:'pointer', fontSize:11, fontWeight:600, color:'var(--muted-foreground)', background:'var(--secondary)', border:'1px solid var(--border)', display:'inline-flex', alignItems:'center', gap:4 }}>
-            {expanded ? '▲ Cerrar' : '▼ Desglose'}
-          </button>
+      <div style={{ background: 'var(--bg)', border: `1px solid ${s.color}44`, borderRadius: 14, padding: '16px 20px' }}>
+        <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 600 }}>🔍 {s.question}</p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {s.options.map(opt => {
+            const isCorrect = opt === s.correct;
+            const isPicked  = picked === opt;
+            const bg     = !picked ? 'var(--bg-2,#f5f5f7)' : isCorrect ? 'rgba(45,155,78,0.15)' : isPicked ? 'rgba(239,68,68,0.1)' : 'var(--bg-2,#f5f5f7)';
+            const border = !picked ? '1px solid var(--line-soft)' : isCorrect ? '1px solid #2d9b4e' : isPicked ? '1px solid #ef4444' : '1px solid var(--line-soft)';
+            return (
+              <button key={opt} onClick={() => handlePick(opt)}
+                style={{ background: bg, border, borderRadius: 10, padding: '10px 14px', textAlign: 'left', fontSize: 13, cursor: picked ? 'default' : 'pointer', transition: 'all 0.2s' }}>
+                {isPicked && !isCorrect ? '❌ ' : isCorrect && picked ? '✅ ' : ''}{opt}
+              </button>
+            );
+          })}
         </div>
-
-        {/* Expanded breakdown */}
-        {expanded && (
-          <div style={{ marginTop:12, animation:'ci4-in 0.3s ease both' }}>
-            {/* Word chips */}
-            <div style={{ display:'flex', flexWrap:'wrap', gap:8, marginBottom:10 }}>
-              {bubble.words.filter(w => w.kr !== '?' && w.kr !== '').map((w, i) => (
-                <WordChip key={i} w={w} />
-              ))}
-            </div>
-            {/* Grammar / cultural note */}
-            <div style={{ padding:'10px 12px', borderRadius:10, background:'rgba(245,158,11,0.08)', border:'1px solid rgba(245,158,11,0.25)' }}>
-              <p style={{ margin:0, fontSize:12, color:'var(--foreground)', lineHeight:1.65 }}>{bubble.note}</p>
-            </div>
+        {picked && (
+          <div style={{ marginTop: 12, padding: '10px 14px', background: `${s.color}11`, border: `1px solid ${s.color}33`, borderRadius: 10 }}>
+            <p style={{ margin: 0, fontSize: 13, color: 'var(--foreground)', lineHeight: 1.5 }}>
+              <strong style={{ color: s.color }}>💡</strong> {s.explanation}
+            </p>
           </div>
         )}
       </div>
-    </div>
-  );
-}
 
-/* ─── Component ──────────────────────────────────────────────────────────── */
-export default function ContextualInput006({ onComplete }: Props) {
-  const [sceneIdx,    setSceneIdx]    = useState(0);
-  const [bubbleCount, setBubbleCount] = useState(0); // how many bubbles revealed in current scene
-  const [expanded,    setExpanded]    = useState<string | null>(null);
-  const [videoWatched, setVideoWatched] = useState(false);
-  const [phase, setPhase]             = useState<'video' | 'chat'>('video');
-  const bottomRef                     = useRef<HTMLDivElement>(null);
-
-  const scene = SCENES[sceneIdx];
-  const isLastScene  = sceneIdx === SCENES.length - 1;
-  const allRevealed  = bubbleCount >= (scene?.bubbles.length ?? 0);
-
-  // Auto-scroll down when new bubble appears
-  useEffect(() => {
-    const t = setTimeout(() => bottomRef.current?.scrollIntoView({ behavior:'smooth', block:'end' }), 150);
-    return () => clearTimeout(t);
-  }, [bubbleCount]);
-
-  // Reset on scene change
-  useEffect(() => {
-    setBubbleCount(0);
-    setExpanded(null);
-    setVideoWatched(false);
-    setPhase('video');
-  }, [sceneIdx]);
-
-  function revealNext() {
-    setBubbleCount(n => Math.min(n + 1, scene.bubbles.length));
-  }
-
-  function nextScene() {
-    if (isLastScene) {
-      onComplete?.();
-    } else {
-      setSceneIdx(i => i + 1);
-    }
-  }
-
-  if (!scene) return null;
-
-  /* ── VIDEO PHASE ─────────────────────────────────────────────────────────── */
-  if (phase === 'video') {
-    return (
-      <div style={{ fontFamily:'system-ui,-apple-system,"Segoe UI",sans-serif', color:'var(--foreground)', padding:'20px 16px', display:'flex', flexDirection:'column', gap:16 }}>
-        <style>{`
-          @keyframes ci4-in     { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:none} }
-          @keyframes ci4-bubble { from{opacity:0;transform:translateY(14px) scale(0.97)} to{opacity:1;transform:none} }
-        `}</style>
-
-        {/* Scene header */}
-        <div style={{ animation:'ci4-in 0.4s ease both' }}>
-          <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:4 }}>
-            <span style={{ fontSize:20 }}>{scene.emoji}</span>
-            <p style={{ margin:0, fontSize:10, fontWeight:800, letterSpacing:'0.12em', textTransform:'uppercase', color:ACCENT }}>
-              {sceneIdx + 1} de {SCENES.length}
-            </p>
-          </div>
-          <h2 style={{ margin:'0 0 4px', fontSize:20, fontWeight:800, color:'var(--foreground)' }}>{scene.title}</h2>
-          <p style={{ margin:0, fontSize:13, color:'var(--muted-foreground)', lineHeight:1.6 }}>{scene.description}</p>
-        </div>
-
-        {/* Scene progress */}
-        <div style={{ display:'flex', gap:5 }}>
-          {SCENES.map((s, i) => (
-            <div key={s.id} style={{ flex:1, height:4, borderRadius:2, background: i < sceneIdx ? ACCENT : i === sceneIdx ? 'rgba(108,99,255,0.4)' : 'var(--border)' }} />
-          ))}
-        </div>
-
-        {/* Video */}
-        <div style={{ borderRadius:16, overflow:'hidden', background:'#000', animation:'ci4-in 0.4s 0.1s ease both' }}>
-          <video
-            src={scene.videoSrc}
-            controls
-            playsInline
-            style={{ width:'100%', display:'block', maxHeight:300, objectFit:'contain' }}
-            onPlay={() => {}}
-            onTimeUpdate={e => { if (e.currentTarget.currentTime > 3) setVideoWatched(true); }}
-            onEnded={() => setVideoWatched(true)}
-          />
-        </div>
-
-        {/* Tip */}
-        <div style={{ padding:'12px 14px', borderRadius:12, background:'rgba(108,99,255,0.06)', border:'1px solid rgba(108,99,255,0.2)', animation:'ci4-in 0.4s 0.15s ease both' }}>
-          <p style={{ margin:0, fontSize:12, color:'var(--foreground)', lineHeight:1.65 }}>
-            💡 Mira el video y trata de captar las frases. Luego las analizaremos <strong>línea por línea</strong>.
-          </p>
-        </div>
-
-        <button
-          type="button"
-          onClick={() => setPhase('chat')}
-          disabled={!videoWatched}
-          style={{
-            padding:'14px', borderRadius:14, cursor: videoWatched ? 'pointer' : 'not-allowed', width:'100%',
-            background: videoWatched ? `rgba(108,99,255,0.14)` : 'var(--secondary)',
-            border: videoWatched ? `1px solid rgba(108,99,255,0.4)` : '1px solid var(--border)',
-            fontSize:14, fontWeight:800, color: videoWatched ? ACCENT : 'var(--muted-foreground)',
-            animation:'ci4-in 0.4s 0.2s ease both',
-          }}
-        >
-          {videoWatched ? 'Analizar línea por línea →' : 'Mira unos segundos del video…'}
+      {picked && (
+        <button onClick={next} style={{ marginTop: 16, width: '100%', background: '#6c63ff', color: '#fff', border: 'none', borderRadius: 10, padding: '12px', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}>
+          {idx + 1 < SENTENCES.length ? 'Siguiente frase →' : 'Ver resultado →'}
         </button>
-      </div>
-    );
-  }
-
-  /* ── CHAT PHASE ──────────────────────────────────────────────────────────── */
-  return (
-    <div style={{ fontFamily:'system-ui,-apple-system,"Segoe UI",sans-serif', color:'var(--foreground)', padding:'16px', display:'flex', flexDirection:'column', gap:14 }}>
-      <style>{`
-        @keyframes ci4-in     { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:none} }
-        @keyframes ci4-bubble { from{opacity:0;transform:translateY(16px) scale(0.97)} to{opacity:1;transform:none} }
-      `}</style>
-
-      {/* Header */}
-      <div style={{ display:'flex', alignItems:'center', gap:8 }}>
-        <span style={{ fontSize:18 }}>{scene.emoji}</span>
-        <div>
-          <p style={{ margin:'0 0 1px', fontSize:10, fontWeight:800, textTransform:'uppercase', letterSpacing:'0.1em', color:ACCENT }}>{sceneIdx + 1}/{SCENES.length}</p>
-          <h3 style={{ margin:0, fontSize:16, fontWeight:800, color:'var(--foreground)' }}>{scene.title}</h3>
-        </div>
-        <button
-          type="button"
-          onClick={() => setPhase('video')}
-          style={{ marginLeft:'auto', padding:'5px 12px', borderRadius:100, fontSize:11, fontWeight:600, cursor:'pointer', color:'var(--muted-foreground)', background:'var(--secondary)', border:'1px solid var(--border)' }}
-        >
-          ▶ Ver video
-        </button>
-      </div>
-
-      {/* Scene progress dots */}
-      <div style={{ display:'flex', gap:5 }}>
-        {SCENES.map((s, i) => (
-          <div key={s.id} style={{ flex:1, height:4, borderRadius:2, background: i < sceneIdx ? ACCENT : i === sceneIdx ? 'rgba(108,99,255,0.4)' : 'var(--border)', transition:'background 0.3s' }} />
-        ))}
-      </div>
-
-      {/* Chat bubbles */}
-      <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
-        {scene.bubbles.map((bubble, i) => (
-          <ChatBubbleEl
-            key={bubble.id}
-            bubble={bubble}
-            revealed={i < bubbleCount}
-            expanded={expanded === bubble.id}
-            onExpand={() => setExpanded(prev => prev === bubble.id ? null : bubble.id)}
-            onAudio={() => playAudio(bubble.audio)}
-          />
-        ))}
-      </div>
-
-      {/* Bubble counter */}
-      {bubbleCount > 0 && (
-        <p style={{ margin:'4px 0', fontSize:11, color:'var(--muted-foreground)', textAlign:'center' }}>
-          {bubbleCount}/{scene.bubbles.length} líneas · Toca ▼ Desglose en cada burbuja para la explicación
-        </p>
       )}
-
-      <div ref={bottomRef} />
-
-      {/* CTA buttons */}
-      {!allRevealed ? (
-        <button
-          type="button"
-          onClick={revealNext}
-          style={{
-            padding:'13px', borderRadius:14, cursor:'pointer', width:'100%',
-            background:'rgba(108,99,255,0.12)', border:'1px solid rgba(108,99,255,0.35)',
-            fontSize:14, fontWeight:800, color:ACCENT,
-          }}
-        >
-          {bubbleCount === 0 ? '▶ Iniciar análisis línea por línea' : `Siguiente línea (${bubbleCount + 1}/${scene.bubbles.length}) →`}
-        </button>
-      ) : (
-        <div style={{ display:'flex', flexDirection:'column', gap:10, animation:'ci4-in 0.4s ease both' }}>
-          {/* Summary of scene */}
-          <div style={{ padding:'14px 16px', borderRadius:14, background:'rgba(34,197,94,0.07)', border:'1px solid rgba(34,197,94,0.25)' }}>
-            <p style={{ margin:'0 0 6px', fontSize:11, fontWeight:800, textTransform:'uppercase', letterSpacing:'0.06em', color:'#22c55e' }}>✓ Escena {sceneIdx + 1} completada</p>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
-              {scene.bubbles.map(b => (
-                <button key={b.id} type="button" onClick={() => playAudio(b.audio)}
-                  style={{ padding:'5px 12px', borderRadius:100, cursor:'pointer', fontSize:13, fontFamily:'"Noto Sans KR",sans-serif', fontWeight:700, color:'#16a34a', background:'rgba(34,197,94,0.1)', border:'1px solid rgba(34,197,94,0.3)' }}>
-                  {b.ko}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={nextScene}
-            style={{
-              padding:'14px', borderRadius:14, cursor:'pointer', width:'100%',
-              background:ACCENT, border:'none',
-              fontSize:14, fontWeight:800, color:'#fff',
-            }}
-          >
-            {isLastScene ? '¡Entendí el contexto! →' : `Escena ${sceneIdx + 2} · ${SCENES[sceneIdx + 1].title} →`}
-          </button>
-        </div>
-      )}
-    </div>
+    </section>
   );
 }
