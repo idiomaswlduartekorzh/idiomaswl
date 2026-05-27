@@ -100,7 +100,7 @@ export const KR_AUDIO_002: Record<string, string> = {
   '파':   `${BASE002}/audio/audio_pa.mp3`,
 };
 
-export const KR_PODCAST_002 = `${BASE002}/audio/step002-podcast.mp3`;
+export const KR_PODCAST_002 = `${BASE002}/audio/step002-podcast.mp3?v=2`;
 export const KR_VIDEO_002   = `${BASE002}/video/step002.mp4`;
 
 // ─── STEP 003 — Cafetería / Cortesía ─────────────────────────────────────────
@@ -187,7 +187,7 @@ export const KR_VIDEO_006 = {
   full:   `${BASE006}/video/step004.mov`,
 };
 
-export const KR_PODCAST_006 = `${BASE006}/audio/step004-podcast.mp3`;
+export const KR_PODCAST_006 = `${BASE006}/audio/step004-podcast.mp3?v=2`;
 
 export const KR_AUDIO_006: Record<string, string> = {
   '새로':                   `${BASE006}/audio/audio_saero.mp3`,
@@ -236,7 +236,7 @@ export const KR_IMG_007 = {
 
 export const KR_VIDEO_007 = `${BASE007}/video/step005.mov`;
 
-export const KR_PODCAST_007 = `${BASE007}/audio/step005-podcast.mp3`;
+export const KR_PODCAST_007 = `${BASE007}/audio/step005-podcast.mp3?v=2`;
 
 export const KR_AUDIO_007: Record<string, string> = {
   '한국 생활 어때요?':            `${BASE007}/audio/audio_hanguk_saenghwal_eottaeyo.mp3`,
@@ -281,7 +281,7 @@ export const KR_IMG_005 = {
   oreunjjok:             `${BASE005}/oreunjjok_v1.png`,
 };
 
-export const KR_PODCAST_005 = `${BASE005}/audios/step005-podcast.mp3`;
+export const KR_PODCAST_005 = `${BASE005}/audios/step005-podcast.mp3?v=2`;
 export const KR_VIDEO_005   = `${BASE005}/videos/STEP005.mov`;
 
 export const KR_AUDIO_005: Record<string, string> = {
@@ -314,7 +314,7 @@ export const KR_IMG_004 = {
   market_street:  `${BASE004}/market_street_v1.png`,
 };
 
-export const KR_PODCAST_004 = `${BASE004}/audios/step004-podcast.mp3`;
+export const KR_PODCAST_004 = `${BASE004}/audios/step004-podcast.mp3?v=2`;
 export const KR_VIDEO_004   = `${BASE004}/videos/STEP004.mov`;
 
 export const KR_AUDIO_004: Record<string, string> = {
