@@ -184,10 +184,10 @@ export const KR_VIDEO_006 = {
   scene1: `${BASE006}/video/STEP004-1.mp4`,
   scene2: `${BASE006}/video/STEP004-2.MOV`,
   scene3: `${BASE006}/video/STEP004-3.mp4`,
-  full:   `${BASE006}/video/step006.mov`,
+  full:   `${BASE006}/video/step004.mov`,
 };
 
-export const KR_PODCAST_006 = `${BASE006}/audio/step006-podcast.mp3`;
+export const KR_PODCAST_006 = `${BASE006}/audio/step004-podcast.mp3`;
 
 export const KR_AUDIO_006: Record<string, string> = {
   '새로':                   `${BASE006}/audio/audio_saero.mp3`,
@@ -234,9 +234,9 @@ export const KR_IMG_007 = {
   hada_verbs:        `${BASE007}/hada_verbs_v1.png`,
 };
 
-export const KR_VIDEO_007 = `${BASE007}/video/step007.mov`;
+export const KR_VIDEO_007 = `${BASE007}/video/step005.mov`;
 
-export const KR_PODCAST_007 = `${BASE007}/audio/step007-podcast.mp3`;
+export const KR_PODCAST_007 = `${BASE007}/audio/step005-podcast.mp3`;
 
 export const KR_AUDIO_007: Record<string, string> = {
   '한국 생활 어때요?':            `${BASE007}/audio/audio_hanguk_saenghwal_eottaeyo.mp3`,
