@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
 // ── Day 1 stages ──────────────────────────────────────────────────────────────
+const Activation001       = dynamic(() => import('./stages/step001/Activation001'), { ssr: false });
 const Activation          = dynamic(() => import('./stages/Activation'),          { ssr: false });
 const AcquisitionGuided   = dynamic(() => import('./stages/AcquisitionGuided'),   { ssr: false });
 const Recognition         = dynamic(() => import('./stages/Recognition'),          { ssr: false });
@@ -95,7 +96,7 @@ const SmartReview007         = dynamic(() => import('./stages/step007/SmartRevie
 const Completion007          = dynamic(() => import('./stages/step007/Completion007'),          { ssr: false });
 
 const COMPONENTS_DAY1 = [
-  Activation, AcquisitionGuided, Recognition, ListeningSurvivable,
+  Activation001, AcquisitionGuided, Recognition, ListeningSurvivable,
   ContextualInput, GuidedDiscovery, MicroExplanation, GuidedProduction,
   ReactiveInteraction, SmartReview, Completion,
 ];

@@ -226,7 +226,7 @@ const RECAP_PHRASES = [
 ];
 
 export default function Activation004({ onComplete }: Props) {
-  const audioRef        = useRef<HTMLAudioElement | null>(null);
+  const audioRef        = useRef<HTMLAudioElement>(null);
   const [playing,  setPlaying]  = useState(false);
   const [elapsed,  setElapsed]  = useState(0);
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -236,16 +236,21 @@ export default function Activation004({ onComplete }: Props) {
   const [phase,    setPhase]    = useState<'podcast' | 'quiz' | 'recap'>('podcast');
 
   const TOTAL_SEC = 330;
+  const [rate, setRate] = useState(1);
 
-  useEffect(() => {
-    const audio = new Audio(KR_PODCAST_004);
-    audioRef.current = audio;
-    audio.addEventListener('timeupdate', () => setElapsed(Math.floor(audio.currentTime)));
-    audio.addEventListener('play',  () => setPlaying(true));
-    audio.addEventListener('pause', () => setPlaying(false));
-    audio.addEventListener('ended', () => { setPlaying(false); setPhase('quiz'); setQuizIdx(0); });
-    return () => { audio.pause(); audio.src = ''; };
-  }, []);
+  function fmt004(s: number) {
+    if (!Number.isFinite(s) || s < 0) return '0:00';
+    return `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+  }
+  function setPlaybackRate(r: number) {
+    setRate(r);
+    if (audioRef.current) audioRef.current.playbackRate = r;
+  }
+  function handleProgressClick004(e: React.MouseEvent<HTMLDivElement>) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    if (audioRef.current) audioRef.current.currentTime = ratio * TOTAL_SEC;
+  }
 
   useEffect(() => {
     const active = [...TIMELINE].reverse().find(t => elapsed >= t.at);
@@ -257,13 +262,13 @@ export default function Activation004({ onComplete }: Props) {
   function togglePlay() {
     const a = audioRef.current;
     if (!a) return;
-    if (playing) a.pause(); else a.play();
+    if (playing) a.pause(); else a.play().catch(() => {});
   }
   function seek(t: TimelineItem) {
     const a = audioRef.current;
     if (!a) return;
     a.currentTime = t.at;
-    a.play();
+    a.play().catch(() => {});
   }
 
   function handleAnswer(opt: string) {
@@ -288,22 +293,98 @@ export default function Activation004({ onComplete }: Props) {
         El turno de David — 이거 뭐예요?
       </h2>
 
+      {/* Hidden audio element */}
+      <audio
+        ref={audioRef}
+        src={KR_PODCAST_004}
+        onTimeUpdate={e => setElapsed(Math.floor(e.currentTarget.currentTime))}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        onEnded={() => { setPlaying(false); setPhase('quiz'); setQuizIdx(0); }}
+      />
+      <style>{`
+        @keyframes eq0 { from { height: 6px; } to { height: 14px; } }
+        @keyframes eq1 { from { height: 4px; } to { height: 11px; } }
+        @keyframes eq2 { from { height: 8px; } to { height: 15px; } }
+        @keyframes eq3 { from { height: 5px; } to { height: 10px; } }
+        @keyframes eq4 { from { height: 7px; } to { height: 13px; } }
+      `}</style>
+
       {phase === 'podcast' && (
         <>
-          {/* Player */}
-          <div style={{ background: 'var(--bg-2,#f5f5f7)', borderRadius: 14, padding: '16px 20px', marginBottom: 20 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
-              <button onClick={togglePlay} style={{ width: 44, height: 44, borderRadius: '50%', background: '#6c63ff', border: 'none', color: '#fff', fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {/* Dark gradient player */}
+          <div style={{
+            background: 'linear-gradient(135deg, #0f0c29, #1a1a3e, #24243e)',
+            borderRadius: 16, padding: '1.25rem 1.25rem 1rem',
+            marginBottom: 20, position: 'sticky', top: 0, zIndex: 10,
+            boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+          }}>
+            {/* Top row */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <div style={{ display: 'flex', alignItems: 'flex-end', gap: 2, height: 16 }}>
+                  {[1, 0.6, 0.9, 0.4, 0.75].map((h, i) => (
+                    <div key={i} style={{
+                      width: 3, borderRadius: 2, background: '#6c63ff',
+                      height: playing ? `${6 + h * 10}px` : '4px',
+                      animation: playing ? `eq${i} 0.${6 + i}s ease-in-out infinite alternate` : 'none',
+                      transition: 'height 0.15s',
+                    }} />
+                  ))}
+                </div>
+                <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#6c63ff', fontWeight: 700, letterSpacing: '0.12em' }}>
+                  PODCAST · STEP 004
+                </span>
+              </div>
+              <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'rgba(255,255,255,0.35)' }}>
+                {fmt004(elapsed)} / {fmt004(TOTAL_SEC)}
+              </span>
+            </div>
+            {/* Episode label */}
+            <p style={{ margin: '0 0 8px', fontSize: 11, color: 'rgba(255,255,255,0.5)' }}>
+              <span style={{ color: 'rgba(255,255,255,0.3)' }}>Episodio: </span>
+              <span style={{ color: 'rgba(255,255,255,0.8)', fontWeight: 600 }}>El turno de David — 이거 뭐예요?</span>
+            </p>
+            {/* Progress bar (clickable) */}
+            <div
+              onClick={handleProgressClick004}
+              style={{ height: 5, background: 'rgba(255,255,255,0.1)', borderRadius: 3, marginBottom: 12, cursor: 'pointer', overflow: 'hidden' }}
+            >
+              <div style={{ height: '100%', width: `${progress * 100}%`, background: 'linear-gradient(90deg, #6c63ff, #a78bfa)', borderRadius: 3, transition: 'width 0.5s linear' }} />
+            </div>
+            {/* Controls */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <button
+                type="button"
+                onClick={togglePlay}
+                style={{
+                  width: 40, height: 40, borderRadius: '50%',
+                  background: 'linear-gradient(135deg, #6c63ff, #a78bfa)',
+                  border: 'none', color: '#fff', fontSize: 16,
+                  cursor: 'pointer', flexShrink: 0,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  boxShadow: '0 4px 16px rgba(108,99,255,0.4)',
+                }}
+              >
                 {playing ? '⏸' : '▶'}
               </button>
-              <div style={{ flex: 1 }}>
-                <div style={{ height: 6, borderRadius: 3, background: 'var(--line-soft)', overflow: 'hidden' }}>
-                  <div style={{ height: '100%', width: `${progress * 100}%`, background: '#6c63ff', transition: 'width 0.5s' }} />
-                </div>
-                <p style={{ margin: '4px 0 0', fontSize: 11, color: 'var(--muted)' }}>
-                  {Math.floor(elapsed / 60)}:{String(elapsed % 60).padStart(2, '0')} · Episodio 4 — El turno de David
-                </p>
+              <div style={{ display: 'flex', gap: 4 }}>
+                {[0.75, 1, 1.25, 1.5].map(r => (
+                  <button key={r} type="button" onClick={() => setPlaybackRate(r)} style={{
+                    padding: '3px 8px', borderRadius: 6,
+                    border: `1px solid ${rate === r ? '#6c63ff' : 'rgba(255,255,255,0.1)'}`,
+                    background: rate === r ? 'rgba(108,99,255,0.3)' : 'transparent',
+                    color: rate === r ? '#a78bfa' : 'rgba(255,255,255,0.35)',
+                    fontSize: 10, fontWeight: rate === r ? 700 : 400, cursor: 'pointer',
+                  }}>
+                    {r}×
+                  </button>
+                ))}
               </div>
+              <div style={{ flex: 1 }} />
+              <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.3)', fontFamily: 'var(--mono)' }}>
+                {TIMELINE.filter(t => elapsed >= t.at).length}/{TIMELINE.length} tarjetas
+              </span>
             </div>
           </div>
 

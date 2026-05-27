@@ -1,7 +1,16 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { createClient as createServerClient } from '@/lib/supabase/server';
 import LessonRuntime from '@/components/lesson/LessonRuntime';
+import GrammarDeep001 from '@/components/lesson/grammar/GrammarDeep001';
+import GrammarDeep002 from '@/components/lesson/grammar/GrammarDeep002';
+import GrammarDeep003 from '@/components/lesson/grammar/GrammarDeep003';
+import GrammarDeep004 from '@/components/lesson/grammar/GrammarDeep004';
+import GrammarDeep005 from '@/components/lesson/grammar/GrammarDeep005';
+import GrammarDeep006 from '@/components/lesson/grammar/GrammarDeep006';
+import GrammarDeep007 from '@/components/lesson/grammar/GrammarDeep007';
+import { KOREAN_STEPS } from '@/data/stepsMeta';
 
 const SLUG_TO_CODE: Record<string, string> = {
   korean: 'ko', english: 'en', japanese: 'ja', italian: 'it',
@@ -20,6 +29,25 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
   if (!code) return {};
   const dayNumber = Number(stepId);
 
+  // Use step config for Korean steps that have rich metadata
+  if (code === 'ko' && KOREAN_STEPS[dayNumber]) {
+    const meta = KOREAN_STEPS[dayNumber];
+    return {
+      title: meta.seoTitle,
+      description: meta.seoDescription,
+      keywords: meta.seoKeywords,
+      openGraph: {
+        title: meta.seoTitle,
+        description: meta.seoDescription,
+        url: `https://idiomaswl.com/courses/${lang}/step/${stepId}`,
+      },
+      alternates: {
+        canonical: `https://idiomaswl.com/courses/${lang}/step/${stepId}`,
+      },
+    };
+  }
+
+  // Fallback: fetch from Supabase for other languages / future steps
   const supabase = await createServerClient();
   const { data: language } = await supabase
     .from('languages')
@@ -78,13 +106,34 @@ export default async function LessonPage({ params }: { params: Promise<PageParam
     .eq('day_number', dayNumber)
     .single();
 
+  // Rich step metadata for Korean
+  const stepMeta = code === 'ko' ? KOREAN_STEPS[dayNumber] : undefined;
+
+  // Determine the grammar deep section for this step
+  const GRAMMAR_SECTIONS: Record<number, React.ReactNode> = {
+    1: <GrammarDeep001 />,
+    2: <GrammarDeep002 />,
+    3: <GrammarDeep003 />,
+    4: <GrammarDeep004 />,
+    5: <GrammarDeep005 />,
+    6: <GrammarDeep006 />,
+    7: <GrammarDeep007 />,
+  };
+  const grammarSection = code === 'ko' ? GRAMMAR_SECTIONS[dayNumber] : undefined;
+
+  // Title: prefer the narrative episode title from config, then Supabase, then fallback
+  const pageTitle = stepMeta?.episodeTitle ?? lesson?.title ?? `Día ${dayNumber} — ${language.name}`;
+
   return (
     <LessonRuntime
       langName={language.name}
       langFlag={language.flag_text ?? FLAG[code] ?? '?'}
       langSlug={lang}
       dayNumber={dayNumber}
-      title={lesson?.title ?? `Día ${dayNumber} — ${language.name}`}
+      title={pageTitle}
+      topics={stepMeta?.topics}
+      vocab={stepMeta?.vocab}
+      grammarContent={grammarSection}
     />
   );
 }

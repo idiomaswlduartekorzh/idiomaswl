@@ -281,7 +281,7 @@ export const KR_IMG_005 = {
   oreunjjok:             `${BASE005}/oreunjjok_v1.png`,
 };
 
-export const KR_PODCAST_005 = `${BASE005}/audios/step005-podcast.mp4`;
+export const KR_PODCAST_005 = `${BASE005}/audios/step005-podcast.mp3`;
 export const KR_VIDEO_005   = `${BASE005}/videos/STEP005.mov`;
 
 export const KR_AUDIO_005: Record<string, string> = {

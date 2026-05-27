@@ -1,8 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { useWavesurfer } from '@wavesurfer/react';
-import { Check, Pause, Play, Volume2, X } from 'lucide-react';
+import { Check, Volume2 } from 'lucide-react';
 import { KR_AUDIO_002, KR_IMG_002, KR_PODCAST_002, KR_VIDEO_002 } from '@/lib/storage';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -466,7 +465,7 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration]       = useState(0);
   const [rate, setRate]               = useState(1);
-  const [audioStatus, setAudioStatus] = useState<'checking' | 'ready' | 'missing' | 'error'>('checking');
+  const [isPlaying, setIsPlaying]     = useState(false);
   const [visibleVocab, setVisibleVocab]         = useState(new Set<string>());
   const [newVocab, setNewVocab]                 = useState(new Set<string>());
   const [visibleConcepts, setVisibleConcepts]   = useState(new Set<string>());
@@ -475,46 +474,25 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
   const [newAlert, setNewAlert]                 = useState(false);
   const [showVideo, setShowVideo]               = useState(false);
 
-  const waveRef  = useRef<HTMLDivElement>(null);
-  const rightRef = useRef<HTMLDivElement>(null);
-  const triggered = useRef(new Set<string>());
-  const alertTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const audioRef002 = useRef<HTMLAudioElement>(null);
+  const rightRef    = useRef<HTMLDivElement>(null);
+  const triggered   = useRef(new Set<string>());
+  const alertTimer  = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Probe audio
-  useEffect(() => {
-    let mounted = true;
-    const ctrl = new AbortController();
-    fetch(KR_PODCAST_002, { method: 'HEAD', signal: ctrl.signal, cache: 'no-store' })
-      .then(r => { if (mounted) setAudioStatus(r.ok ? 'ready' : 'missing'); })
-      .catch(() => { if (mounted) setAudioStatus('missing'); });
-    return () => { mounted = false; ctrl.abort(); };
-  }, []);
-
-  const { wavesurfer, isPlaying, isReady } = useWavesurfer({
-    container: waveRef,
-    url: audioStatus === 'ready' ? KR_PODCAST_002 : undefined,
-    height: 80,
-    waveColor: '#d2d8ee',
-    progressColor: '#6c63ff',
-    cursorColor: '#6c63ff',
-    barWidth: 2, barGap: 1, barRadius: 2,
-    normalize: true, interact: true,
-  });
-
-  useEffect(() => {
-    if (!wavesurfer) return;
-    const u = [
-      wavesurfer.on('ready', (d: number) => { setDuration(d); setCurrentTime(0); wavesurfer.setPlaybackRate(rate); }),
-      wavesurfer.on('timeupdate', (t: number) => setCurrentTime(t)),
-      wavesurfer.on('audioprocess', (t: number) => setCurrentTime(t)),
-      wavesurfer.on('seeking', (t: number) => setCurrentTime(t)),
-      wavesurfer.on('error', () => setAudioStatus('error')),
-      wavesurfer.on('finish', () => { if (onComplete) onComplete(); }),
-    ];
-    return () => u.forEach(f => f());
-  }, [wavesurfer, rate, onComplete]);
-
-  useEffect(() => { if (wavesurfer) wavesurfer.setPlaybackRate(rate); }, [wavesurfer, rate]);
+  function togglePlay002() {
+    const a = audioRef002.current;
+    if (!a) return;
+    if (isPlaying) a.pause(); else a.play().catch(() => {});
+  }
+  function handleProgressClick002(e: React.MouseEvent<HTMLDivElement>) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    if (audioRef002.current && duration > 0) audioRef002.current.currentTime = ratio * duration;
+  }
+  function setPlaybackRate002(r: number) {
+    setRate(r);
+    if (audioRef002.current) audioRef002.current.playbackRate = r;
+  }
 
   // Timeline triggers
   useEffect(() => {
@@ -549,7 +527,6 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
 
   const activeSegIdx = segIdx(currentTime);
   const hasItems = visibleVocab.size + visibleConcepts.size + visibleExercises.size > 0;
-  const isAudioPending = audioStatus !== 'ready';
 
   // Sorted items for right panel
   const allItems = [
@@ -570,40 +547,63 @@ export default function Activation002({ onComplete }: { onComplete?: () => void 
           <p style={{ margin: '6px 0 0', fontSize: 12, color: 'var(--muted)', lineHeight: 1.5 }}>Escucha el podcast. El contenido aparece a medida que avanzas.</p>
         </div>
 
-        {/* Podcast player */}
-        <div style={{ background: '#f8f8fc', borderRadius: 14, padding: '1rem', border: '1px solid #e8e8f5' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-            <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: '#6c63ff', fontWeight: 600 }}>PODCAST · ACTIVACIÓN</span>
-            {isReady && (
-              <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--muted)' }}>
-                {fmt(currentTime)} / {fmt(duration)}
-              </span>
-            )}
-          </div>
-
-          {isAudioPending ? (
-            <div style={{ height: 80, background: '#f1f3f5', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <span style={{ fontSize: 11, color: 'var(--muted)' }}>
-                {audioStatus === 'checking' ? 'Conectando…' : '⚠ Audio no disponible'}
-              </span>
+        {/* Podcast player — dark gradient (canonical) */}
+        <audio
+          ref={audioRef002}
+          src={KR_PODCAST_002}
+          onTimeUpdate={e => setCurrentTime(e.currentTarget.currentTime)}
+          onDurationChange={e => setDuration(e.currentTarget.duration)}
+          onPlay={() => setIsPlaying(true)}
+          onPause={() => setIsPlaying(false)}
+          onEnded={() => { setIsPlaying(false); if (onComplete) onComplete(); }}
+        />
+        <style>{`
+          @keyframes eq0 { from { height: 6px; } to { height: 14px; } }
+          @keyframes eq1 { from { height: 4px; } to { height: 11px; } }
+          @keyframes eq2 { from { height: 8px; } to { height: 15px; } }
+          @keyframes eq3 { from { height: 5px; } to { height: 10px; } }
+          @keyframes eq4 { from { height: 7px; } to { height: 13px; } }
+        `}</style>
+        <div style={{
+          background: 'linear-gradient(135deg, #0f0c29, #1a1a3e, #24243e)',
+          borderRadius: 14, padding: '1rem 1rem 0.875rem',
+          boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <div style={{ display: 'flex', alignItems: 'flex-end', gap: 2, height: 14 }}>
+                {[1, 0.6, 0.9, 0.4, 0.75].map((h, i) => (
+                  <div key={i} style={{
+                    width: 3, borderRadius: 2, background: '#6c63ff',
+                    height: isPlaying ? `${6 + h * 8}px` : '3px',
+                    animation: isPlaying ? `eq${i} 0.${6 + i}s ease-in-out infinite alternate` : 'none',
+                    transition: 'height 0.15s',
+                  }} />
+                ))}
+              </div>
+              <span style={{ fontFamily: 'var(--mono)', fontSize: 9, color: '#6c63ff', fontWeight: 700, letterSpacing: '0.12em' }}>PODCAST · STEP 002</span>
             </div>
-          ) : (
-            <div ref={waveRef} style={{ borderRadius: 8, overflow: 'hidden' }} />
-          )}
-
-          {/* Controls */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 10 }}>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: 10, color: 'rgba(255,255,255,0.35)' }}>
+              {fmt(currentTime)} / {fmt(duration)}
+            </span>
+          </div>
+          <div
+            onClick={handleProgressClick002}
+            style={{ height: 4, background: 'rgba(255,255,255,0.1)', borderRadius: 2, marginBottom: 10, cursor: 'pointer', overflow: 'hidden' }}
+          >
+            <div style={{ height: '100%', width: duration > 0 ? `${(currentTime / duration) * 100}%` : '0%', background: 'linear-gradient(90deg, #6c63ff, #a78bfa)', borderRadius: 2, transition: 'width 0.5s linear' }} />
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <button
               type="button"
-              onClick={() => wavesurfer && (isPlaying ? wavesurfer.pause() : wavesurfer.play())}
-              disabled={!isReady}
-              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 38, height: 38, borderRadius: '50%', background: isReady ? '#6c63ff' : '#e9ecef', border: 'none', color: isReady ? '#fff' : '#adb5bd', cursor: isReady ? 'pointer' : 'default', flexShrink: 0 }}
+              onClick={togglePlay002}
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 36, height: 36, borderRadius: '50%', background: 'linear-gradient(135deg, #6c63ff, #a78bfa)', border: 'none', color: '#fff', fontSize: 14, cursor: 'pointer', flexShrink: 0, boxShadow: '0 4px 14px rgba(108,99,255,0.4)' }}
             >
-              {isPlaying ? <Pause size={16} /> : <Play size={16} />}
+              {isPlaying ? '⏸' : '▶'}
             </button>
-            <div style={{ display: 'flex', gap: 5 }}>
+            <div style={{ display: 'flex', gap: 4 }}>
               {[0.75, 1, 1.25, 1.5].map(r => (
-                <button key={r} type="button" onClick={() => setRate(r)} style={{ padding: '3px 8px', borderRadius: 8, border: `1px solid ${rate === r ? '#6c63ff' : '#e9ecef'}`, background: rate === r ? 'rgba(108,99,255,0.08)' : '#fff', color: rate === r ? '#6c63ff' : '#6c757d', fontSize: 10, fontWeight: rate === r ? 600 : 400, cursor: 'pointer' }}>{r}×</button>
+                <button key={r} type="button" onClick={() => setPlaybackRate002(r)} style={{ padding: '3px 7px', borderRadius: 6, border: `1px solid ${rate === r ? '#6c63ff' : 'rgba(255,255,255,0.1)'}`, background: rate === r ? 'rgba(108,99,255,0.3)' : 'transparent', color: rate === r ? '#a78bfa' : 'rgba(255,255,255,0.35)', fontSize: 10, fontWeight: rate === r ? 700 : 400, cursor: 'pointer' }}>{r}×</button>
               ))}
             </div>
           </div>

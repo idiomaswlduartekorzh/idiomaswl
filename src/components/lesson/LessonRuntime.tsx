@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import StageRail from './StageRail';
@@ -26,9 +27,15 @@ interface LessonRuntimeProps {
   langSlug: string;
   dayNumber: number;
   title: string;
+  /** Grammar topics shown as chips below the title, e.g. ["Orden SOV", "Partícula 에"] */
+  topics?: string[];
+  /** Key vocabulary words shown as chips, e.g. ["학교", "가요"] */
+  vocab?: string[];
+  /** Optional server-rendered section (GrammarDeep) appended below the lesson stages */
+  grammarContent?: ReactNode;
 }
 
-export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber, title }: LessonRuntimeProps) {
+export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber, title, topics, vocab, grammarContent }: LessonRuntimeProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   function next() { setActiveIndex(i => Math.min(i + 1, TOTAL - 1)); }
@@ -117,6 +124,29 @@ export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber,
           <header className="wl-korean-runtime-header wl-card">
             <p className="wl-eyebrow-runtime">{langName} · Día {dayNumber}</p>
             <h1>{title}</h1>
+
+            {/* Grammar topics */}
+            {topics && topics.length > 0 && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, margin: '10px 0 6px' }}>
+                {topics.map(t => (
+                  <span key={t} style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 100, background: 'rgba(108,99,255,0.1)', color: '#6c63ff', border: '1px solid rgba(108,99,255,0.2)' }}>
+                    {t}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Vocab chips */}
+            {vocab && vocab.length > 0 && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 10 }}>
+                {vocab.map(w => (
+                  <span key={w} style={{ fontSize: 14, fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 700, padding: '3px 10px', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', color: 'var(--ink)' }}>
+                    {w}
+                  </span>
+                ))}
+              </div>
+            )}
+
             <p className="wl-korean-runtime-header__progress">
               Etapa actual: {stageNum}/{TOTAL} · {STAGE_LABELS[stageNum]}
             </p>
@@ -150,6 +180,9 @@ export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber,
               <StagePanel stageIndex={activeIndex} dayNumber={dayNumber} onComplete={next} />
             </div>
           </div>
+
+          {/* Grammar deep section — server-rendered, for SEO */}
+          {grammarContent}
 
         </div>
       </section>
