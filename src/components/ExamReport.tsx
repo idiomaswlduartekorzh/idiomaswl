@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import {
   RadarChart, Radar, PolarGrid, PolarAngleAxis,
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
@@ -176,17 +177,35 @@ export function ExamReport({ data, onRetry, backHref, skipSave }: {
   backHref?: string;
   skipSave?: boolean;
 }) {
+  const [showLead, setShowLead] = useState(false);
+
   useEffect(() => {
     if (skipSave) return;
     saveExamResult(data).catch(() => {/* silently ignore save failures */});
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [skipSave]);
 
+  // Show lead capture modal after 2s — skip if already captured this session
+  useEffect(() => {
+    try { if (localStorage.getItem('wl_lead_captured')) return; } catch {}
+    const t = setTimeout(() => setShowLead(true), 2000);
+    return () => clearTimeout(t);
+  }, []);
+
   const accent = data.accentColor ?? '#c8202e';
   const pct = data.totalMax > 0 ? data.totalScore / data.totalMax : 0;
   const { level, desc } = interpretScore(data.examSlug, pct);
 
   return (
+    <>
+    {showLead && (
+      <LeadCaptureModal
+        examSlug={data.examSlug}
+        examScore={data.totalLabel}
+        examName={data.examName}
+        onClose={() => setShowLead(false)}
+      />
+    )}
     <div className="exam-report">
       {/* Header */}
       <div className="exam-report__header">
@@ -233,5 +252,6 @@ export function ExamReport({ data, onRetry, backHref, skipSave }: {
         {backHref && <a className="btn btn-ghost" href={backHref}>Back to exam</a>}
       </div>
     </div>
+    </>
   );
 }

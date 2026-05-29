@@ -86,7 +86,7 @@ public/
 |----|--------|--------|
 | M1.1 | Landing inglés/IELTS alta conversión — `/clases-de-ingles` | **HECHO** — pendiente foto `public/images/david-duarte.jpg` y testimonios reales |
 | M1.2 | Botón WhatsApp flotante en todas las páginas | **HECHO** — `src/components/WhatsAppFloat.tsx`, mensaje por URL, evento GTM `click_whatsapp` |
-| M1.3 | Captura de leads en simulacros (email + WA + nombre + idioma) | **PENDIENTE** |
+| M1.3 | Captura de leads en simulacros (email + WA + nombre + idioma) | **HECHO** — tabla `leads` en Supabase + `saveLead` action + `LeadCaptureModal` en ExamReport. Pendiente: aplicar migración en Supabase dashboard |
 | M1.4 | Eventos de conversión GA4 + Meta Pixel (click_whatsapp, lead_simulacro, etc.) | **PENDIENTE** |
 | M1.5 | Página de precios reescrita (corregir incoherencias, CTA a WhatsApp) | **PENDIENTE** |
 
