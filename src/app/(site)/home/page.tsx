@@ -71,6 +71,33 @@ const jsonLd = {
   ],
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿En qué se diferencia WeLearn de otras apps?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Cada día integra 11 pasos con objetivos distintos: exposición, adquisición, retención, producción y revisión acumulativa. No es repetición de tarjetas ni gramática aislada.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo probar antes de pagar?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. El primer paso de cada idioma está abierto sin tarjeta en esta fase de referencia.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo toma una sesión?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Entre 45 y 90 minutos según tu ritmo y el idioma seleccionado.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Incluye preparación para exámenes?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Hay rutas específicas para TOEFL, IELTS, ICFES, Goethe, DELF/DALF y CILS con simulacros por objetivo.' },
+    },
+  ],
+};
+
 const IDIOMAS = [
   { code: 'En', name: 'Inglés',    native: 'English',   desc: 'IELTS · TOEFL · ICFES',   active: true  },
   { code: '한', name: 'Coreano',   native: '한국어',    desc: 'Método visual WeLearn',    active: true  },
@@ -151,6 +178,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* HERO */}
       <section className="wlh-hero">

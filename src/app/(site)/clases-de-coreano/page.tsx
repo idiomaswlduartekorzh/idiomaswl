@@ -33,6 +33,38 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://idiomaswl.com/clases-de-coreano' },
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Necesito saber algo de coreano para empezar?',
+      acceptedAnswer: { '@type': 'Answer', text: 'No. Empezamos desde cero: la primera sesión cubre el alfabeto Hangul y los primeros sonidos. En 2–3 días ya puedes leer coreano básico.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué tan diferente es el coreano del español?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Es muy diferente en estructura (SOV en lugar de SVO), pero la pronunciación es más sencilla de lo que parece. Con el método correcto, progresas rápido.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Se puede aprender coreano para ver K-dramas sin subtítulos?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí, y ese es un objetivo válido. Con 12–18 meses de práctica constante puedes seguir series sin subtítulos. Usamos K-dramas como material didáctico.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Para qué sirve el TOPIK?',
+      acceptedAnswer: { '@type': 'Answer', text: 'TOPIK (Test of Proficiency in Korean) es la certificación oficial coreana. Es requerida para trabajar, estudiar o migrar a Corea. Preparamos desde nivel 1 hasta 6.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Las clases son en vivo o grabadas?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Las clases 1:1 son en vivo por videollamada. También tienes acceso al método de 17 pasos con videos, ejercicios y podcasts para practicar entre sesiones.' },
+    },
+  ],
+};
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -123,6 +155,10 @@ export default function ClasesDeCoreanoPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <main className={s.page}>
 
