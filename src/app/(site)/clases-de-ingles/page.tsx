@@ -229,6 +229,7 @@ export default function ClasesDeInglesPage() {
                 src="/images/david-duarte.jpg"
                 alt="José David Duarte Silva — Políglota en 8 idiomas, co-fundador de Idiomas WeLearn"
                 fill
+                sizes="(max-width: 640px) 280px, 320px"
                 style={{ objectFit: 'cover', objectPosition: 'center top' }}
                 priority
               />
