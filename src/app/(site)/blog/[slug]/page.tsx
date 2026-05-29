@@ -45,33 +45,51 @@ function formatDate(iso: string) {
 }
 
 const WA = '573005004253';
-const CTA_BY_CATEGORY: Record<string, { title: string; desc: string; msg: string }> = {
+interface CtaConfig {
+  title: string;
+  desc: string;
+  msg: string;
+  pageLink?: string;
+  pageLinkLabel?: string;
+}
+
+const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
   IELTS: {
     title: '¿Listo para preparar el IELTS en serio?',
     desc: 'Agenda tu clase de diagnóstico gratis y empieza con un plan personalizado para alcanzar tu Band objetivo.',
     msg: 'Hola, leí el artículo de WeLearn sobre el IELTS y quiero agendar mi clase de diagnóstico gratis.',
+    pageLink: '/clases-de-ingles',
+    pageLinkLabel: 'Ver clases de inglés',
   },
   TOEFL: {
     title: '¿Listo para preparar el TOEFL iBT?',
     desc: 'Haz un simulacro gratuito de TOEFL o agenda una clase de diagnóstico para saber exactamente qué necesitas.',
     msg: 'Hola, leí el artículo de WeLearn sobre el TOEFL iBT y quiero saber más sobre la preparación.',
+    pageLink: '/clases-de-ingles',
+    pageLinkLabel: 'Ver clases de inglés',
   },
   ICFES: {
     title: '¿Quieres mejorar tu puntaje ICFES inglés?',
     desc: 'Haz un simulacro gratuito ahora mismo o agenda una sesión con tutor para un plan de preparación personalizado.',
     msg: 'Hola, leí el artículo de WeLearn sobre el ICFES y quiero saber más sobre la preparación para inglés.',
+    pageLink: '/preparacion-icfes',
+    pageLinkLabel: 'Ver preparación ICFES',
   },
   Coreano: {
     title: '¿Quieres empezar a aprender coreano?',
     desc: 'El método WeLearn de 17 pasos está diseñado específicamente para hispanohablantes. Empieza gratis hoy.',
     msg: 'Hola, leí el artículo de WeLearn sobre coreano y quiero saber más sobre las clases.',
+    pageLink: '/clases-de-coreano',
+    pageLinkLabel: 'Ver clases de coreano',
   },
 };
 
-const DEFAULT_CTA = {
+const DEFAULT_CTA: CtaConfig = {
   title: '¿Listo para aprender en serio?',
   desc: 'Agenda tu clase de diagnóstico gratis con un tutor de WeLearn y empieza con un plan personalizado.',
   msg: 'Hola, leí un artículo del blog de WeLearn y quiero saber más sobre las clases.',
+  pageLink: '/clases-de-ingles',
+  pageLinkLabel: 'Ver clases de inglés',
 };
 
 // ── Page ──────────────────────────────────────────────────────────────────
@@ -94,34 +112,64 @@ export default async function BlogArticlePage(
 
   const cta = CTA_BY_CATEGORY[post.category] ?? DEFAULT_CTA;
 
-  // JSON-LD Article structured data
+  // JSON-LD: Article + BreadcrumbList
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    dateModified: post.updatedDate ?? post.date,
-    author: {
-      '@type': 'Person',
-      name: 'José David Duarte Silva',
-      url: 'https://idiomaswl.com/home',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Idiomas WeLearn',
-      url: 'https://idiomaswl.com',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://idiomaswl.com/images/welearn-logo.png',
+    '@graph': [
+      {
+        '@type': 'Article',
+        '@id': `https://idiomaswl.com/blog/${post.slug}#article`,
+        headline: post.title,
+        description: post.description,
+        url: `https://idiomaswl.com/blog/${post.slug}`,
+        datePublished: post.date,
+        dateModified: post.updatedDate ?? post.date,
+        author: {
+          '@type': 'Person',
+          name: 'José David Duarte Silva',
+          url: 'https://idiomaswl.com/home',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Idiomas WeLearn',
+          url: 'https://idiomaswl.com',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://idiomaswl.com/images/welearn-logo.png',
+          },
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `https://idiomaswl.com/blog/${post.slug}`,
+        },
+        keywords: post.tags.join(', '),
+        inLanguage: 'es-CO',
+        articleSection: post.category,
       },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://idiomaswl.com/blog/${post.slug}`,
-    },
-    keywords: post.tags.join(', '),
-    inLanguage: 'es-CO',
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Inicio',
+            item: 'https://idiomaswl.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: 'https://idiomaswl.com/blog',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: post.title,
+            item: `https://idiomaswl.com/blog/${post.slug}`,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -176,14 +224,21 @@ export default async function BlogArticlePage(
           <div className={s.cta}>
             <p className={s.ctaTitle}>{cta.title}</p>
             <p className={s.ctaDesc}>{cta.desc}</p>
-            <a
-              href={`https://wa.me/${WA}?text=${encodeURIComponent(cta.msg)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={s.ctaBtn}
-            >
-              Hablar con un tutor →
-            </a>
+            <div className={s.ctaActions}>
+              <a
+                href={`https://wa.me/${WA}?text=${encodeURIComponent(cta.msg)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={s.ctaBtn}
+              >
+                Hablar con un tutor →
+              </a>
+              {cta.pageLink && (
+                <Link href={cta.pageLink} className={s.ctaBtnSecondary}>
+                  {cta.pageLinkLabel ?? 'Ver más'} →
+                </Link>
+              )}
+            </div>
           </div>
 
           {/* Related posts */}
