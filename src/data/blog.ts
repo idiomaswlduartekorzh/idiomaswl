@@ -854,6 +854,96 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Si quieres empezar con el coreano usando este método combinado, puedes revisar nuestro <a href="/clases-de-coreano">programa de coreano WeLearn</a> — diseñado específicamente para hispanohablantes que aprenden de contenido coreano. Para inglés con preparación para certificaciones, nuestro <a href="/clases-de-ingles">programa de inglés con IELTS y TOEFL</a> combina clases con práctica con material auténtico.</p>
     `,
   },
+  {
+    slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2',
+    title: 'Niveles de inglés A1, A2, B1, B2, C1 y C2: qué significa cada uno y para qué sirve',
+    description:
+      'Guía completa del Marco Común Europeo de Referencia (MCER): qué evalúa cada nivel, cómo saber en cuál estás y qué certificaciones corresponden a cada banda.',
+    date: '2026-05-29',
+    readTime: 7,
+    category: 'IELTS',
+    tags: ['niveles de inglés', 'MCER', 'B2', 'C1', 'IELTS', 'TOEFL', 'certificación', 'Colombia'],
+    body: `
+<h2>El sistema que todos usan pero pocos entienden bien</h2>
+<p>Cuando alguien te dice "tengo inglés B2", ¿sabes exactamente qué puede hacer en inglés? ¿Y cuándo una oferta de trabajo dice "inglés C1 requerido", qué significa en la práctica?</p>
+<p>El MCER (Marco Común Europeo de Referencia para las lenguas), desarrollado por el Consejo de Europa, es el estándar universal para describir el dominio de un idioma. Lo usan universidades, empleadores, programas migratorios y organismos de certificación en todo el mundo. Saber exactamente qué implica cada nivel no es solo académico: tiene consecuencias directas en qué puertas se abren y cuáles no.</p>
+
+<h2>Los 6 niveles y qué puede hacer quien los tiene</h2>
+
+<h3>A1 — Principiante</h3>
+<p>Puede presentarse, saludar, hacer preguntas simples sobre temas familiares (nombre, edad, ciudad). Entiende frases muy cortas y habituales sobre necesidades básicas. En inglés: puede ordenar un café, preguntar dónde está el baño, decir su nombre y de dónde es.</p>
+<p><strong>Para qué sirve</strong>: nada profesional ni académico. Es el punto de partida.</p>
+
+<h3>A2 — Básico</h3>
+<p>Puede comunicarse en situaciones cotidianas simples: compras, información personal, la vida diaria. Entiende frases directas sobre temas que le son familiares. Puede escribir mensajes cortos y sencillos.</p>
+<p><strong>Para qué sirve</strong>: turismo muy básico. En Colombia, es el nivel promedio del ICFES Saber 11. No es suficiente para ningún requisito académico o laboral internacional.</p>
+
+<h3>B1 — Intermedio</h3>
+<p>Puede entender los puntos principales de textos en inglés estándar sobre temas conocidos (trabajo, escuela, tiempo libre). Puede describir experiencias, sueños y ambiciones, dar razones y explicaciones brevemente. Puede manejarse en la mayoría de situaciones de viaje.</p>
+<p><strong>Para qué sirve</strong>: comunicación funcional en inglés. Mínimo para algunas posiciones laborales de entrada en empresas internacionales. Nivel de entrada para preparar el ICFES inglés hacia B2.</p>
+
+<h3>B2 — Intermedio alto</h3>
+<p>Puede entender textos complejos sobre temas concretos y abstractos. Se comunica con fluidez y espontaneidad en interacciones con hablantes nativos. Puede producir textos claros y detallados sobre muchos temas y explicar un punto de vista.</p>
+<p><strong>Para qué sirve</strong>: el nivel de trabajo real en empresas multinacionales, el mínimo competitivo en procesos de selección corporativos. Equivale aproximadamente a IELTS Band 5.5–6.5 o TOEFL 72–94. Puntaje B2 en el ICFES (81–100) te pone en el top 10% en Colombia.</p>
+
+<h3>C1 — Avanzado</h3>
+<p>Puede entender textos largos y exigentes, y reconocer su sentido implícito. Se expresa de forma espontánea, fluida y precisa, distinguiendo matices de significado incluso en situaciones complejas. Produce textos claros, bien estructurados y detallados sobre temas complejos.</p>
+<p><strong>Para qué sirve</strong>: trabajo en inglés como lingua franca en entornos altamente exigentes (consultoría internacional, academia, C-level multinacional). Equivalent a IELTS 7.0–8.0 o TOEFL 95–110. Necesario para la mayoría de programas de maestría en universidades top anglófonas.</p>
+
+<h3>C2 — Maestría / Dominio pleno</h3>
+<p>Puede entender con facilidad prácticamente todo lo que lee u oye. Resume información de diferentes fuentes de forma coherente. Se expresa espontáneamente con mucha fluidez y precisión, diferenciando matices de significado en situaciones complejas.</p>
+<p><strong>Para qué sirve</strong>: trabajo académico de alto nivel en inglés, docencia en inglés, traducción profesional. Equivale a IELTS 8.5–9.0 o TOEFL 110–120. Es el nivel de un hablante casi nativo.</p>
+
+<h2>¿Cómo saber en qué nivel estás?</h2>
+<p>La única forma confiable de saber tu nivel real es un test bien calibrado. Hay cuatro opciones según tu objetivo:</p>
+<ol>
+  <li><strong>Test interno WeLearn</strong>: si quieres una evaluación con retroalimentación de un tutor, la clase de diagnóstico gratuita te da una evaluación honesta de tu nivel en 45 minutos.</li>
+  <li><strong>Simulacro oficial</strong>: Cambridge tiene tests gratuitos de ubicación. El ETS (TOEFL) tiene una prueba de práctica. Son menos precisos para niveles medios-altos.</li>
+  <li><strong>Examen oficial</strong>: IELTS, TOEFL, Cambridge First (B2) o Cambridge Advanced (C1) son los más reconocidos y dan un resultado certificado, verificable y válido por 2 años (IELTS/TOEFL) o de forma permanente (Cambridge).</li>
+  <li><strong>Test en línea gratuito</strong>: British Council, EF English Level Test. Dan una idea general pero no son verificables.</li>
+</ol>
+
+<h2>La tabla de equivalencias entre niveles y exámenes</h2>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">MCER</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">TOEFL iBT</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Cambridge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">A1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">—</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">—</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">—</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">A2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">—</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">—</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">—</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">B1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">4.0 – 5.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">42 – 71</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">PET / B1 Preliminary</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">B2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">5.5 – 6.5</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">72 – 94</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">FCE / B2 First</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">C1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">7.0 – 8.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">95 – 110</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">CAE / C1 Advanced</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">C2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">8.5 – 9.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">110 – 120</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">CPE / C2 Proficiency</td></tr>
+  </tbody>
+</table>
+
+<h2>El nivel que más importa en Colombia: B2</h2>
+<p>Si tuviéramos que elegir un único nivel como el umbral que transforma las opciones profesionales y académicas de un colombiano, es el B2.</p>
+<p>¿Por qué B2 y no C1 o C2?</p>
+<ul>
+  <li>La mayoría de requisitos laborales en multinacionales con sede en Colombia exigen B2 como mínimo funcional (no solo para "comunicarse" sino para trabajar realmente en inglés).</li>
+  <li>Las mejores universidades colombianas y la mayoría de programas de maestría en Latinoamérica piden B2 para admisión.</li>
+  <li>IELTS Band 6.0–6.5 (equivalente B2) es el mínimo para la mayoría de visas de trabajo y estudio en el mundo angloparlante.</li>
+  <li>El B2 es alcanzable: desde un B1 sólido, 6 a 12 meses de preparación estructurada con tutor son suficientes para la mayoría de personas.</li>
+</ul>
+<p>El C1 es el nivel que diferencia al bilingüe del avanzado — es el objetivo de quien quiere trabajar en una empresa global donde el inglés es el idioma de reuniones, reportes y negociaciones. Es un año o dos adicionales de trabajo desde el B2.</p>
+
+<h2>¿Cómo pasar de tu nivel actual al siguiente?</h2>
+<p>La ruta más eficiente depende de dónde estás:</p>
+<ul>
+  <li><strong>A2 → B1</strong>: 6–9 meses con exposición diaria (lectura, audio) + clases semanales. Base gramatical y vocabulario de alta frecuencia.</li>
+  <li><strong>B1 → B2</strong>: 9–12 meses. Aquí la brecha se ensancha: necesitas producción activa (hablar y escribir), no solo comprensión. Un tutor que da retroalimentación real acelera significativamente este paso.</li>
+  <li><strong>B2 → C1</strong>: 12–18 meses. Matices, vocabulario académico, fluidez sin esfuerzo. Preparación para exámenes como IELTS 7.0+ o TOEFL 95+.</li>
+</ul>
+<p>Si ya sabes tu nivel y quieres un plan concreto para subir al siguiente, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés en WeLearn</a> — el primer paso es una clase de diagnóstico gratis donde evaluamos tu nivel real y diseñamos el plan. También puedes hacer un <a href="/examenes">simulacro de IELTS gratuito</a> para tener un punto de referencia concreto hoy mismo.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
