@@ -22,6 +22,40 @@ export const metadata: Metadata = {
   },
 };
 
+const blogJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://idiomaswl.com/blog' },
+      ],
+    },
+    {
+      '@type': 'Blog',
+      '@id': 'https://idiomaswl.com/blog',
+      url: 'https://idiomaswl.com/blog',
+      name: 'Blog de Idiomas — Idiomas WeLearn',
+      description: 'Guías prácticas de preparación IELTS, TOEFL, ICFES y aprendizaje de coreano escritas por David Duarte y el equipo pedagógico de WeLearn.',
+      publisher: {
+        '@type': 'Organization',
+        name: 'Idiomas WeLearn',
+        url: 'https://idiomaswl.com',
+      },
+      blogPost: BLOG_POSTS.map(p => ({
+        '@type': 'BlogPosting',
+        headline: p.title,
+        url: `https://idiomaswl.com/blog/${p.slug}`,
+        datePublished: p.date,
+        dateModified: p.updatedDate ?? p.date,
+        author: { '@type': 'Person', name: 'José David Duarte Silva' },
+        keywords: p.tags.join(', '),
+      })),
+    },
+  ],
+};
+
 export default function BlogPage() {
   const posts = [...BLOG_POSTS].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -31,6 +65,10 @@ export default function BlogPage() {
 
   return (
     <main className={s.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
       <div className="wrap">
         {/* Header — server rendered */}
         <div className={s.header}>
