@@ -2,7 +2,9 @@
 
 import { useState, useCallback } from 'react';
 import type { CSSProperties } from 'react';
+import Link from 'next/link';
 import KoreanCycle from './KoreanCycle';
+import IcfesStressPractice from './IcfesStressPractice';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Language catalogue
@@ -156,6 +158,31 @@ export default function PracticaClient() {
   const xpInLevel = xp % XP_PER_LEVEL;
   const xpPct     = (xpInLevel / XP_PER_LEVEL) * 100;
 
+  /* ── ICFES stress practice ─────────────────────────────────────────────── */
+  if (selected === 'icfes') {
+    return (
+      <section className="wl-section">
+        <div className="wrap">
+          <div style={{ maxWidth: 720, margin: '0 auto' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
+              <button
+                onClick={() => setSelected(null)}
+                className="btn btn-ghost btn-sm"
+                style={{ fontSize: '0.82rem' }}
+              >
+                ← Volver
+              </button>
+              <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>
+                Práctica / ICFES
+              </span>
+            </div>
+            <IcfesStressPractice />
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   /* ── Language grid ──────────────────────────────────────────────────────── */
   if (!selected) {
     return (
@@ -165,12 +192,75 @@ export default function PracticaClient() {
             <span className="ink-line" />Herramientas gratuitas de práctica
           </p>
           <h1 style={{ fontSize: '2.4rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
-            Elige un idioma
+            Elige una herramienta
           </h1>
-          <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 3rem' }}>
-            Desglose silábico, pronunciación en tiempo real y reglas fonéticas interactivas para cada lengua.
+          <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 2rem' }}>
+            Desglose silábico, pronunciación interactiva y práctica de estrés para exámenes.
           </p>
 
+          {/* ICFES stress block */}
+          <div style={{ marginBottom: '2.5rem' }}>
+            <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--mono)', marginBottom: '0.85rem' }}>
+              Práctica de exámenes
+            </p>
+            <button
+              onClick={() => setSelected('icfes')}
+              style={{
+                '--exam-color': '#dc2626',
+                width: '100%',
+                textAlign: 'left',
+                cursor: 'pointer',
+                appearance: 'none',
+                WebkitAppearance: 'none',
+                margin: 0,
+                padding: 0,
+                font: 'inherit',
+                color: 'inherit',
+                background: 'linear-gradient(135deg, rgba(220,38,38,0.08) 0%, rgba(83,74,183,0.05) 100%)',
+                border: '1.5px solid rgba(220,38,38,0.2)',
+                borderRadius: 18,
+                overflow: 'hidden',
+                display: 'flex',
+                alignItems: 'stretch',
+                transition: 'box-shadow 0.2s, border-color 0.2s',
+              } as CSSProperties}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(220,38,38,0.15)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(220,38,38,0.4)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(220,38,38,0.2)'; }}
+            >
+              <div style={{ width: 5, background: 'linear-gradient(180deg, #dc2626, #534AB7)', flexShrink: 0 }} />
+              <div style={{ padding: '1.5rem 1.75rem', flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.6rem' }}>
+                  <span style={{ fontSize: '2rem' }}>🇨🇴</span>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)' }}>ICFES Saber 11</span>
+                      <span style={{ fontSize: '0.65rem', fontWeight: 800, background: '#dc2626', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>
+                        NUEVO
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
+                      Práctica bajo estrés · English Component · Temporizador + escritura libre
+                    </div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
+                  {['⏱ Temporizador', '🎲 Preguntas aleatorias', '✍️ Escritura libre', '📊 Resultados detallados'].map(tag => (
+                    <span key={tag} style={{ fontSize: '0.72rem', padding: '0.2rem 0.6rem', borderRadius: 6, background: 'rgba(220,38,38,0.08)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#dc2626', fontSize: '1.2rem', fontWeight: 700 }}>
+                →
+              </div>
+            </button>
+          </div>
+
+          {/* Language tools */}
+          <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--mono)', marginBottom: '0.85rem' }}>
+            Herramientas de idiomas
+          </p>
           <div className="wl-exams-catalog">
             {LANGUAGES.map(lang => (
               <button
@@ -276,6 +366,46 @@ export default function PracticaClient() {
               </p>
             </div>
           </div>
+
+          {/* Speaking practice featured card */}
+          <Link
+            href="/practica/korean-speaking-1"
+            style={{
+              display: 'flex', alignItems: 'stretch', textDecoration: 'none', color: 'inherit',
+              border: '1.5px solid rgba(83,74,183,0.25)',
+              borderRadius: 16,
+              overflow: 'hidden',
+              marginBottom: '1.25rem',
+              background: 'linear-gradient(135deg, rgba(83,74,183,0.06) 0%, rgba(124,58,237,0.04) 100%)',
+              transition: 'box-shadow 0.2s, border-color 0.2s',
+            }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 6px 24px rgba(83,74,183,0.18)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(83,74,183,0.5)'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(83,74,183,0.25)'; }}
+          >
+            <div style={{ width: 5, background: 'linear-gradient(180deg, #534AB7, #7c3aed)', flexShrink: 0 }} />
+            <div style={{ padding: '1.1rem 1.4rem', flex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.35rem' }}>
+                <span style={{ fontSize: '1.4rem' }}>🗣️</span>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--ink)' }}>Coreano Introductorio 1</span>
+                    <span style={{ fontSize: '0.6rem', fontWeight: 800, background: '#534AB7', color: '#fff', borderRadius: 4, padding: '0.1rem 0.45rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>NUEVO</span>
+                  </div>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>Mi primera presentación oral · 7 pasos guiados</div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                {['🆘 Supervivencia', '📜 Modelo', '✏️ Personalizar', '🧩 Construir frases', '🎤 Presentación final'].map(tag => (
+                  <span key={tag} style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 6, background: 'rgba(83,74,183,0.1)', color: '#534AB7', border: '1px solid rgba(83,74,183,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.25rem', color: '#534AB7', fontSize: '1.1rem', fontWeight: 700 }}>
+              →
+            </div>
+          </Link>
 
           {/* Tool tabs */}
           <div style={{ display:'flex', gap:'0.5rem', marginBottom:'1.5rem', flexWrap:'wrap' }}>
