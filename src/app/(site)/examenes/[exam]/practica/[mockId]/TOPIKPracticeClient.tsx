@@ -108,6 +108,13 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
   const waMsg = encodeURIComponent(`Hola! Acabo de hacer el diagnóstico TOPIK I en WeLearn y obtuve ${score}/30 (${levelInfo.level}). ¿Cómo puedo mejorar mi coreano?`);
   const waHref = `https://wa.me/${WA_NUMBER}?text=${waMsg}`;
 
+  // ── Per-part instructions ─────────────────────────────────────────────────
+  const PART_INSTRUCTIONS: Record<number, { icon: string; text: string }> = {
+    1: { icon: '✏️', text: 'Lee cada oración y elige la palabra o expresión que mejor completa el espacio en blanco ( ).' },
+    2: { icon: '📋', text: 'Lee el aviso o texto corto y responde la pregunta según la información que aparece.' },
+    3: { icon: '📖', text: 'Lee el texto completo y elige la opción correcta según lo que dice el párrafo.' },
+  };
+
   // ── TOPIK-specific minimal CSS (supplements prac-* from globals.css) ────────
   const topikCSS = `
     .topik-progress { height: 3px; background: rgba(255,255,255,0.1); }
@@ -120,6 +127,28 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
     .topik-footer-nav { display: flex; gap: .75rem; }
     .topik-footer-nav > * { flex: 1; }
     .topik-footer-hint { font-size:.8rem; color:var(--muted); text-align:center; }
+    /* ── Part instruction banner ── */
+    .topik-instruction {
+      display: flex; align-items: flex-start; gap: .65rem;
+      background: rgba(0,52,120,0.06); border: 1px solid rgba(0,52,120,0.14);
+      border-radius: 10px; padding: .75rem 1rem; margin-bottom: 1.5rem;
+    }
+    .topik-instruction__icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+    .topik-instruction__text { font-size: .88rem; color: var(--ink); line-height: 1.5; margin: 0; }
+    /* ── Override option selected — make it clearly visible ── */
+    .prac-option--selected {
+      border-color: #003478 !important;
+      background: rgba(0,52,120,0.10) !important;
+      box-shadow: 0 0 0 2px rgba(0,52,120,0.18) !important;
+    }
+    .prac-option--selected .prac-option__letter {
+      background: #003478 !important;
+      color: #fff !important;
+    }
+    .prac-option--selected .prac-option__text {
+      color: #003478 !important;
+      font-weight: 600 !important;
+    }
     .topik-results-content { max-width: 640px; margin: 0 auto; padding: 2.5rem 1rem 4rem; display: flex; flex-direction: column; gap: 1.25rem; }
     .topik-res-hero { text-align: center; padding-bottom: 1rem; border-bottom: 1px solid var(--line-soft); }
     .topik-res-emoji { font-size: 3.5rem; display: block; margin-bottom: .5rem; }
@@ -247,13 +276,14 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
           <div className="prac-section-tabs">
             {mock.sections.map((sec, idx) => {
               const sc = sectionScores[idx];
+              // sec.title already contains "Parte X —" so we just show it directly
               return (
                 <button
                   key={sec.part}
                   className={`prac-section-tab${activePart === idx ? ' prac-section-tab--active' : ''}`}
                   onClick={() => setActivePart(idx)}
                 >
-                  Parte {sec.part} — {sec.title}
+                  {sec.title}
                   <span className="prac-section-tab__count">{sc.answered}/{sc.total}</span>
                 </button>
               );
@@ -262,6 +292,15 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
 
           {/* ── Questions ── */}
           <div className="topik-content">
+
+            {/* Per-part instruction banner */}
+            {PART_INSTRUCTIONS[activeSection.part] && (
+              <div className="topik-instruction">
+                <span className="topik-instruction__icon">{PART_INSTRUCTIONS[activeSection.part].icon}</span>
+                <p className="topik-instruction__text">{PART_INSTRUCTIONS[activeSection.part].text}</p>
+              </div>
+            )}
+
             {activeSectionQs.map((q, qIdx) => {
               const globalIdx = qOffset + qIdx;
               const stimKey = q.stimulus ?? '';
