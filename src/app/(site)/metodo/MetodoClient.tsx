@@ -217,7 +217,7 @@ export default function MetodoClient() {
             style={{ display: 'flex', gap: '0.85rem', justifyContent: 'center', flexWrap: 'wrap' }}
           >
             <Link
-              href="/registro"
+              href="/clases-de-ingles"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
                 padding: '0.8rem 2rem', borderRadius: 12,
@@ -741,7 +741,7 @@ export default function MetodoClient() {
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 360, damping: 22 }}>
               <Link
-                href="/registro"
+                href="/clases-de-ingles"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                   padding: '0.95rem 2.6rem', borderRadius: 14,

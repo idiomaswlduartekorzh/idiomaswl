@@ -524,7 +524,7 @@ export default function LeccionClient() {
           <h2 className="lec-cta__h2">Empieza hoy.<br />El primer día es gratis.</h2>
           <p className="lec-cta__sub">Sin tarjeta de crédito. Sin promesas vacías.</p>
           <div className="lec-cta__btns">
-            <Link href="/registro" className="lec-cta__btn">Crear cuenta gratis</Link>
+            <Link href="/clases-de-ingles" className="lec-cta__btn">Crear cuenta gratis</Link>
             <Link href="/examenes" className="lec-cta__link">Ver exámenes disponibles →</Link>
           </div>
         </motion.div>
