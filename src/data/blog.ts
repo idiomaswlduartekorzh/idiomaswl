@@ -586,6 +586,89 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>En cualquier caso, la preparación estructurada hace la diferencia. Puedes ver cómo abordamos ambos exámenes en nuestro programa de <a href="/clases-de-ingles">preparación para certificaciones de inglés</a>, o hacer un <a href="/examenes">simulacro gratuito de IELTS o TOEFL</a> para saber dónde estás ahora.</p>
     `,
   },
+  {
+    slug: 'ingles-para-trabajar-en-empresas-multinacionales',
+    title: 'Inglés para trabajar en empresas multinacionales en Colombia: nivel, certificaciones y cómo lograrlo',
+    description:
+      'Qué nivel de inglés exigen Samsung, Deloitte, Accenture y otras multinacionales en Colombia, qué certificaciones tienen más peso y el plan realista para llegar ahí.',
+    date: '2026-05-28',
+    readTime: 8,
+    category: 'IELTS',
+    tags: ['inglés profesional', 'multinacionales', 'Colombia', 'IELTS', 'B2', 'trabajo', 'carrera'],
+    body: `
+<h2>La realidad del inglés en el mercado laboral colombiano</h2>
+<p>Colombia tiene hoy más de 800 empresas multinacionales con operaciones activas, concentradas en Bogotá, Medellín, Cali y Bucaramanga. Samsung, Deloitte, Accenture, Nestlé, P&G, KPMG, Siemens, Amazon, Oracle y decenas más tienen equipos locales que trabajan en inglés a diario — con clientes, proveedores y colegas internacionales.</p>
+<p>El problema: la mayoría de los profesionales colombianos subestiman el nivel real que se exige y sobreestiman el que tienen.</p>
+<p>Según el EF English Proficiency Index, Colombia ocupa consistentemente posiciones en el nivel "Bajo" entre los países latinoamericanos evaluados. El resultado: el inglés se ha convertido en uno de los filtros más efectivos para acceder a los salarios más altos del mercado laboral formal.</p>
+
+<h2>¿Qué nivel de inglés exigen realmente las multinacionales?</h2>
+<p>La respuesta varía según el área y el nivel de seniority, pero estos son los estándares más comunes:</p>
+<ul>
+  <li><strong>Roles de entrada (Junior / Analista)</strong>: B1 funcional — leer documentos en inglés, escribir emails simples, entender instrucciones en inglés. El mínimo para muchos filtros de HR.</li>
+  <li><strong>Roles de ejecución (Semi-senior / Consultor)</strong>: B2 sólido — reuniones en inglés con nativos, reportes en inglés, presentaciones a clientes internacionales. El nivel real de trabajo diario.</li>
+  <li><strong>Roles de liderazgo (Senior / Manager / Director)</strong>: C1 — negociación, presentaciones ejecutivas, comunicación con C-level internacional. Aquí la fluidez sin esfuerzo se vuelve no negociable.</li>
+</ul>
+<p>El B2 es el umbral crítico. Es donde se concentra la mayor parte del mercado: suficiente para hacer el trabajo real, suficiente para no quedar fuera de una promoción, suficiente para que un recruiter no rechace tu perfil en los primeros treinta segundos.</p>
+
+<h2>¿Qué certificaciones tienen más peso?</h2>
+<p>En el entorno corporativo colombiano, las certificaciones de inglés funcionan de dos maneras: como filtro de entrada en los procesos de selección, y como credencial en el CV que abre conversaciones.</p>
+
+<h3>IELTS Academic o IELTS General Training</h3>
+<p>Es la certificación más reconocida globalmente y, por tanto, la que más abre puertas en multinacionales con operaciones en Europa, Asia y Oceanía (Nestlé, Unilever, SAP, Siemens). Un Band 7.0 equivale a C1 en el MCER y es señal clara de dominio profesional. Band 6.5 corresponde a B2 avanzado.</p>
+
+<h3>TOEFL iBT</h3>
+<p>Preferido por empresas con sede en EE.UU. (IBM, Oracle, Amazon, Accenture). Un puntaje de 90+ en el TOEFL iBT señala B2-C1. Si el destino de tu carrera es trabajar con clientes o socios norteamericanos, el TOEFL tiene más peso que el IELTS en ese contexto específico.</p>
+
+<h3>Cambridge B2 First (FCE) o Cambridge C1 Advanced (CAE)</h3>
+<p>Certificaciones del British Council altamente reconocidas en el sector financiero (banca, consultoría, seguros) y en industrias con fuerte presencia europea. No tienen fecha de vencimiento —son certificaciones permanentes, lo cual las hace convenientes para poner en el CV.</p>
+
+<h3>¿Y el inglés "sin certificación"?</h3>
+<p>En roles de entrada, muchas empresas hacen una prueba interna (Versant, ILEC Test, o una entrevista en inglés) en lugar de exigir certificación. Pero para roles de liderazgo y para procesos de selección competitivos, una certificación internacional elimina la ambigüedad —es una credencial verificable que ahorra tiempo al evaluador.</p>
+
+<h2>Las habilidades que más diferencian en el entorno corporativo</h2>
+<p>El inglés profesional no es solo gramática avanzada. Las áreas que más distinguen a los candidatos con experiencia corporativa son:</p>
+
+<h3>Reuniones en inglés (Meetings English)</h3>
+<p>Saber cómo tomar la palabra sin interrumpir abruptamente (<em>"If I may add..."</em>, <em>"Building on what you said..."</em>), cómo reformular lo que entendiste (<em>"So what you're saying is..."</em>) y cómo hacer preguntas de clarificación (<em>"Could you elaborate on...?"</em>) — estas micro-habilidades son invisibles en el aula pero determinantes en una reunión real con un cliente de Frankfurt o Chicago.</p>
+
+<h3>Email profesional</h3>
+<p>El email de trabajo tiene un registro muy específico: directo, cortés, orientado a la acción. Los errores más comunes de hispanohablantes son la traducción literal del español (demasiado formal y largo) y el uso excesivo de fórmulas de cortesía que en inglés suenan arcaicas. Un email bien escrito en inglés dice en tres líneas lo que el interlocutor necesita saber y qué acción se espera de él.</p>
+
+<h3>Presentaciones y storytelling</h3>
+<p>En inglés corporativo, las presentaciones siguen estructuras muy específicas (Situation–Complication–Resolution, o la estructura STAR para reportes de gestión). Saber armar y ejecutar estas estructuras en inglés es lo que diferencia a quien "se defiende en inglés" de quien realmente comunica.</p>
+
+<h2>Plan realista para pasar de B1 a B2 trabajando</h2>
+<p>Este es el escenario más común: profesional con inglés de colegio o universidad, puede leer y entender, pero se bloquea al hablar o escribir. Con una carga laboral de 8-10 horas diarias, el plan tiene que ser eficiente.</p>
+
+<h3>Primeros 30 días: inmersión pasiva + diagnóstico</h3>
+<ul>
+  <li>Cambia el idioma de tu teléfono, laptop y aplicaciones de trabajo al inglés. Fricción diaria sin costo de tiempo.</li>
+  <li>Escucha podcasts de tu industria en inglés durante el desplazamiento diario (Lex Fridman, HBR IdeaCast, McKinsey Global Institute). El oído se adapta más rápido cuando el contenido es relevante.</li>
+  <li>Haz una prueba de nivel gratuita para saber dónde estás exactamente: B1 alto, B2 bajo, etc.</li>
+</ul>
+
+<h3>Meses 2–4: trabajo activo en producción</h3>
+<ul>
+  <li><strong>Escribe un párrafo en inglés cada día</strong>: resumen de la reunión del día, opinión sobre un artículo de tu industria, descripción de un proceso. El escribir regularmente consolida la gramática más que cualquier ejercicio descontextualizado.</li>
+  <li><strong>Una clase de conversación 1:1 por semana</strong>: el bloqueo al hablar se resuelve hablando, no estudiando gramática. Cuarenta y cinco minutos semanales con un tutor que corrija en tiempo real avanzan más que dos horas de app.</li>
+  <li><strong>Simulacros de presentaciones</strong>: practica en voz alta las presentaciones que harás en el trabajo, primero en español, luego en inglés.</li>
+</ul>
+
+<h3>Meses 5–6: certificación</h3>
+<ul>
+  <li>Con B2 consolidado, 6-8 semanas de preparación específica para el IELTS o TOEFL son suficientes para obtener una certificación que lo demuestre.</li>
+  <li>La certificación no es el objetivo: el inglés funcional lo es. La certificación es la demostración verificable.</li>
+</ul>
+
+<h2>El ROI del inglés profesional en Colombia</h2>
+<p>Los datos son concretos: según estudios del mercado laboral colombiano, un profesional con nivel B2 certificado gana en promedio entre 30% y 60% más que uno con el mismo perfil técnico pero sin inglés funcional, en sectores como consultoría, tecnología, banca y manufactura. En roles con reporte a matrices internacionales, la brecha es aún mayor.</p>
+<p>No es un beneficio abstracto: el inglés en el entorno corporativo colombiano es una habilidad con retorno financiero directo y medible.</p>
+
+<h2>Por dónde empezar</h2>
+<p>Si ya estás en B1 y tu objetivo es llegar a B2 con orientación al mundo profesional, la ruta más eficiente combina trabajo en producción (hablar y escribir) con retroalimentación real de un tutor — no solo apps ni cursos grabados.</p>
+<p>En WeLearn trabajamos inglés profesional con enfoque en el entorno corporativo latinoamericano: reuniones, presentaciones, emails y preparación para IELTS o TOEFL si lo necesitas. Puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés</a> o hacer un <a href="/examenes">simulacro gratuito de IELTS</a> para ver tu nivel actual antes de decidir cualquier cosa.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
