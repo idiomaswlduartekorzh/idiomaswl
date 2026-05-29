@@ -168,7 +168,7 @@ export default function HomePage() {
           </HeroItem>
           <HeroItem>
             <div className="wlh-hero__ctas">
-              <Link href="/registro" className="btn wlh-hero__btn-primary">Empezar gratis</Link>
+              <Link href="/clases-de-ingles" className="btn wlh-hero__btn-primary">Empezar gratis</Link>
               <Link href="#coreano-preview" className="btn btn-ghost wlh-hero__btn-ghost">Ver una lección</Link>
             </div>
           </HeroItem>
@@ -408,8 +408,8 @@ export default function HomePage() {
             <p className="wlh-cta__eyebrow">Empieza hoy</p>
             <h2 className="wlh-cta__h2">Tu primer día es gratis.</h2>
             <div className="wlh-cta__btns">
-              <Link href="/registro" className="btn wlh-cta__btn-primary">Crear cuenta</Link>
-              <Link href="#coreano-preview" className="wlh-cta__link">Ver una lección primero</Link>
+              <Link href="/clases-de-ingles" className="btn wlh-cta__btn-primary">Clases de inglés →</Link>
+              <Link href="/clases-de-coreano" className="btn btn-ghost wlh-cta__btn-ghost">Clases de coreano →</Link>
             </div>
           </div>
         </section>
@@ -423,26 +423,28 @@ export default function HomePage() {
             <p className="wlh-footer__tagline">Once pasos al día. Seis exámenes internacionales. Un método que funciona.</p>
           </div>
           <div className="wlh-footer__col">
-            <p className="wlh-footer__col-title">Idiomas</p>
-            <Link href="#idiomas">Inglés</Link>
-            <Link href="#idiomas">Coreano</Link>
-            <Link href="#idiomas">Francés</Link>
+            <p className="wlh-footer__col-title">Clases</p>
+            <Link href="/clases-de-ingles">Inglés</Link>
+            <Link href="/clases-de-coreano">Coreano</Link>
+            <Link href="/preparacion-icfes">ICFES Inglés</Link>
+            <Link href="/miembro-fundador">Miembro Fundador</Link>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Exámenes</p>
             <Link href="/examenes/toefl">TOEFL</Link>
             <Link href="/examenes/ielts">IELTS</Link>
+            <Link href="/examenes/icfes">ICFES</Link>
             <Link href="/examenes/goethe">Goethe</Link>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Compañía</p>
-            <Link href="#equipo">Equipo</Link>
             <Link href="/metodo">Método</Link>
-            <Link href="#">Contacto</Link>
+            <Link href="/precios">Precios</Link>
+            <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20contactar%20a%20WeLearn." target="_blank" rel="noopener noreferrer">Contacto</a>
           </div>
         </div>
         <div className="wlh-footer__bottom">
-          <p>© 2026 Idiomas WeLearn S.A.S. · Bogotá · Medellín · Madrid</p>
+          <p>© 2026 Idiomas WeLearn · Bucaramanga, Colombia · <a href="https://wa.me/573005004253" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}>+57 300 500 4253</a></p>
         </div>
       </footer>
     </>
