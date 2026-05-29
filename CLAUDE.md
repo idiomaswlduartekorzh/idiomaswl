@@ -110,9 +110,9 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M4.1 | Blog / artículos SEO | **PENDIENTE** |
+| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con 5 artículos estáticos (IELTS, ICFES, Coreano, TOEFL, TOPIK I), filtro interactivo por categoría, OG image por artículo, JSON-LD Article |
 | M4.2 | Sistema de testimonios en video | **PENDIENTE** |
-| M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PENDIENTE** |
+| M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — viewport export, prefers-reduced-motion, image sizes, FAQ schema en home/coreano/ICFES, OG dinámicos edge |
 
 ---
 

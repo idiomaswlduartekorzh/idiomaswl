@@ -33,6 +33,38 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://idiomaswl.com/preparacion-icfes' },
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuántas preguntas tiene la sección de inglés del ICFES?',
+      acceptedAnswer: { '@type': 'Answer', text: '45 preguntas distribuidas en comprensión lectora y uso del idioma. El puntaje va de 0 a 100 y representa alrededor del 10% del puntaje global.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿En cuánto tiempo puedo mejorar mi puntaje de inglés?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Depende tu nivel de base. Con 2–3 meses de preparación constante (simulacros + análisis de errores), la mayoría de estudiantes sube 10–20 puntos. Con clases 1:1, el avance es más rápido.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Los simulacros de WeLearn son como el ICFES real?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Tienen el mismo formato, nivel de dificultad y distribución de preguntas que el ICFES oficial. Después de cada simulacro recibes análisis por sección y retroalimentación.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Necesito saber inglés para empezar la preparación?',
+      acceptedAnswer: { '@type': 'Answer', text: 'No. Empezamos desde tu nivel actual, sea A1 o B1. Primero hacemos un simulacro de diagnóstico y diseñamos un plan según tus puntos débiles específicos.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo prepararme para el ICFES si vivo fuera de Bucaramanga?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Las clases son 100% online por videollamada. Tenemos estudiantes de Bogotá, Medellín, Cali, Barranquilla y otras ciudades.' },
+    },
+  ],
+};
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -118,6 +150,10 @@ export default function PreparacionICFESPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <main className={s.page}>
 
