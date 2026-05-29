@@ -1,7 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+
+const WA = '573005004253';
+function waLink(plan: string, langName: string) {
+  const msg = plan === 'intensivo'
+    ? `Hola, quiero reservar un cupo en el plan Intensivo de ${langName} en WeLearn.`
+    : `Hola, quiero empezar con el plan ${plan} de ${langName} en WeLearn. ¿Cómo funciona?`;
+  return `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+}
 
 const LANGUAGES = [
   { slug: 'ingles',    flag: '🇬🇧', name: 'Inglés',    exams: ['IELTS', 'TOEFL iBT', 'ICFES'] },
@@ -111,9 +118,9 @@ export default function PreciosClient() {
               <li className="is-excluded">Material educativo</li>
               <li className="is-excluded">Sesiones en vivo con tutor</li>
             </ul>
-            <Link href="/registro" className="btn btn-ghost wlp-plan-card__cta">
+            <a href={waLink('Autodidacta', lang.name)} target="_blank" rel="noopener noreferrer" className="btn btn-ghost wlp-plan-card__cta">
               Empezar ahora
-            </Link>
+            </a>
           </div>
 
           {/* PREPARACIÓN — featured */}
@@ -143,9 +150,9 @@ export default function PreciosClient() {
               <li className="is-excluded">Sesiones en vivo con tutor</li>
               <li className="is-excluded">Plan de estudio personalizado</li>
             </ul>
-            <Link href="/registro" className="btn wlp-plan-card__cta">
+            <a href={waLink('Preparación', lang.name)} target="_blank" rel="noopener noreferrer" className="btn wlp-plan-card__cta">
               Empezar ahora
-            </Link>
+            </a>
           </div>
 
           {/* INTENSIVO */}
@@ -194,9 +201,9 @@ export default function PreciosClient() {
               <li className="is-included">Tutor asignado para {lang.name}</li>
               <li className="is-included wlp-feature--limited">Cupos limitados · Inicio próxima semana</li>
             </ul>
-            <Link href="/registro" className="btn btn-ghost wlp-plan-card__cta">
+            <a href={waLink('intensivo', lang.name)} target="_blank" rel="noopener noreferrer" className="btn btn-ghost wlp-plan-card__cta">
               Reservar cupo
-            </Link>
+            </a>
           </div>
 
         </div>

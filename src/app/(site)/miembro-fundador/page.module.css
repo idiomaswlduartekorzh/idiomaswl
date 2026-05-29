@@ -1,0 +1,237 @@
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+.page { background: var(--bg); color: var(--fg); overflow-x: hidden; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ─── Typography ────────────────────────────────────────────────────────────── */
+.h1 {
+  font-size: clamp(2.6rem, 5.5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: #fff;
+  margin: 0 0 1.25rem;
+}
+.h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 1rem;
+}
+.accent { color: #c8202e; }
+.sectionEyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c8202e;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+/* ─── Sections ──────────────────────────────────────────────────────────────── */
+.section { padding: 5rem 0; text-align: center; }
+.sectionDark { padding: 5rem 0; background: #080e23; text-align: center; }
+.sectionDark .h2 { color: #fff; }
+.sectionDark .sectionEyebrow { color: #f87171; }
+
+/* ─── Hero ──────────────────────────────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a0a10 50%, #080e23 100%);
+  padding: 6rem 1.5rem 5rem;
+  text-align: center;
+}
+.heroBadgeRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.heroTagRed {
+  display: inline-block;
+  background: rgba(200,32,46,0.2);
+  border: 1px solid rgba(200,32,46,0.4);
+  color: #f87171;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+.heroTagGray {
+  display: inline-block;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.55);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+}
+.heroKorean {
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.2);
+  margin-bottom: 0.5rem;
+}
+.heroSub {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+}
+.heroSub strong { color: #fff; }
+.heroNote { margin-top: 1rem; font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+
+/* ─── Main button ───────────────────────────────────────────────────────────── */
+.mainBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #c8202e;
+  color: #fff;
+  padding: 1rem 2.25rem;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  box-shadow: 0 8px 40px rgba(200,32,46,0.4);
+}
+.mainBtn:hover { background: #a51724; transform: translateY(-2px); box-shadow: 0 12px 48px rgba(200,32,46,0.5); }
+
+/* ─── Perks ─────────────────────────────────────────────────────────────────── */
+.perksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+.perkCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.perkCard:hover { border-color: rgba(200,32,46,0.25); box-shadow: 0 8px 32px rgba(200,32,46,0.06); }
+.perkIcon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+.perkTitle { font-size: 1rem; font-weight: 700; color: var(--fg); margin: 0 0 0.5rem; }
+.perkDesc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; margin: 0; }
+
+/* ─── Timeline ──────────────────────────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 640px;
+  margin: 2.5rem auto 0;
+  text-align: left;
+}
+.timelineItem { display: flex; gap: 1.25rem; }
+.timelineDot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.timelineN {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #c8202e;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.timelineLine { width: 2px; flex: 1; min-height: 2rem; background: rgba(200,32,46,0.2); margin: 0.25rem 0; }
+.timelineContent { padding: 0.25rem 0 2rem; }
+.timelineFase { font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.5); margin-bottom: 0.25rem; letter-spacing: 0.04em; }
+.timelineDesc { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.6; margin: 0; }
+
+/* ─── Urgency ───────────────────────────────────────────────────────────────── */
+.urgencySection {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, #14012a 0%, #1a0510 100%);
+}
+.urgencyBox {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.urgencyHeader {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.urgencySpots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(200,32,46,0.15);
+  border: 1px solid rgba(200,32,46,0.35);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  flex-shrink: 0;
+}
+.urgencySpotsNum {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #c8202e;
+  line-height: 1;
+}
+.urgencySpotsLabel { font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.4; text-align: center; }
+.urgencyText { text-align: left; max-width: 500px; }
+.urgencyTitle {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+.urgencyDesc { font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0; }
+
+/* ─── Compare ───────────────────────────────────────────────────────────────── */
+.compareGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.compareCard {
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid;
+}
+.compareBad { background: rgba(220,38,38,0.05); border-color: rgba(220,38,38,0.15); }
+.compareGood { background: rgba(22,163,74,0.05); border-color: rgba(22,163,74,0.2); }
+.compareTitle { font-size: 1rem; font-weight: 800; color: var(--fg); margin: 0 0 1.25rem; }
+.compareList { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+.compareList li { font-size: 0.9rem; color: var(--muted); line-height: 1.5; }
+
+/* ─── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .perksGrid { grid-template-columns: repeat(2, 1fr); }
+  .urgencyHeader { flex-direction: column; gap: 1.5rem; }
+  .urgencyText { text-align: center; }
+}
+@media (max-width: 560px) {
+  .perksGrid { grid-template-columns: 1fr; }
+  .compareGrid { grid-template-columns: 1fr; }
+  .hero { padding: 4rem 1.25rem; }
+}

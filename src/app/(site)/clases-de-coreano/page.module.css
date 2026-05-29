@@ -1,0 +1,602 @@
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+.page {
+  background: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ─── Typography ────────────────────────────────────────────────────────────── */
+.h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+}
+.h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 1rem;
+}
+.accent { color: #c8202e; }
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c8202e;
+  margin: 0 0 0.75rem;
+}
+.sectionEyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c8202e;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+.sectionSub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+/* ─── Sections ──────────────────────────────────────────────────────────────── */
+.section {
+  padding: 5rem 0;
+  text-align: center;
+}
+.sectionDark {
+  padding: 5rem 0;
+  background: #080e23;
+  text-align: center;
+}
+.sectionDark .h2 { color: #fff; }
+.sectionDark .sectionEyebrow { color: #f87171; }
+.sectionDark .sectionSub { color: rgba(255,255,255,0.6); }
+
+/* ─── Hero ──────────────────────────────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, #080e23 0%, #0f1a3e 60%, #1a0a0e 100%);
+  padding: 5rem 1.5rem 4rem;
+  overflow: hidden;
+}
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.heroText { }
+.heroKorean {
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+.hero .eyebrow { color: #f87171; }
+.hero .h1 { color: #fff; }
+.heroSub {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin: 0 0 2rem;
+  max-width: 520px;
+}
+
+/* ─── Hero visual: Hangul grid ──────────────────────────────────────────────── */
+.heroVisual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hangulGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+.hangulChar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  font-size: 1.6rem;
+  color: rgba(255,255,255,0.6);
+  animation: hangulFadeIn 0.5s ease both;
+  transition: background 0.2s, color 0.2s;
+}
+.hangulChar:hover {
+  background: rgba(200,32,46,0.15);
+  color: #fff;
+  border-color: rgba(200,32,46,0.4);
+}
+@keyframes hangulFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.heroBadge {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  background: #c8202e;
+  border-radius: 16px;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 8px 32px rgba(200,32,46,0.4);
+}
+.heroBadgeNum {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+.heroBadgeLabel {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.3;
+}
+
+/* ─── CTAs ──────────────────────────────────────────────────────────────────── */
+.heroCtas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+}
+.waBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+.waBtn:hover { background: #1da851; transform: translateY(-1px); }
+.ghostBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.8);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.ghostBtn:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+.ghostBtnLight {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.75rem;
+  border-radius: 40px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.75);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+.ghostBtnLight:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+.waBtnLight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.15s;
+  margin-top: 1.5rem;
+}
+.waBtnLight:hover { background: #1da851; }
+
+/* ─── Proof strip ───────────────────────────────────────────────────────────── */
+.proofStrip {
+  background: #080e23;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 1rem 1.5rem;
+}
+.proofItem {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.65);
+  padding: 0.4rem 2rem;
+  white-space: nowrap;
+}
+.proofItem strong { color: #fff; }
+.proofDivider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255,255,255,0.12);
+}
+
+/* ─── Why grid ──────────────────────────────────────────────────────────────── */
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+.whyCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  transition: box-shadow 0.2s;
+}
+.whyCard:hover { box-shadow: 0 8px 32px rgba(200,32,46,0.08); }
+.whyIcon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+.whyTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: var(--fg);
+}
+.whyDesc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin: 0; }
+
+/* ─── Method steps ──────────────────────────────────────────────────────────── */
+.metodGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+.metodStep {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+.metodNum {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #c8202e;
+  min-width: 2rem;
+  line-height: 1.2;
+}
+.metodTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.35rem;
+}
+.metodDesc { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.6; margin: 0; }
+.metodCta { margin-top: 2.5rem; text-align: center; }
+
+/* ─── Levels ────────────────────────────────────────────────────────────────── */
+.levelsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+.levelCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.levelCard:hover { border-color: rgba(200,32,46,0.3); box-shadow: 0 8px 32px rgba(200,32,46,0.08); }
+.levelBadge {
+  display: inline-block;
+  background: rgba(200,32,46,0.1);
+  color: #c8202e;
+  border: 1px solid rgba(200,32,46,0.2);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+.levelTitle { font-size: 1.1rem; font-weight: 800; margin: 0 0 0.5rem; color: var(--fg); }
+.levelDesc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; margin: 0 0 1rem; }
+.levelTime { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+
+/* ─── Instructor ────────────────────────────────────────────────────────────── */
+.instructorRow {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  align-items: center;
+  text-align: left;
+}
+.instructorPhoto { display: flex; justify-content: center; }
+.photoWrap {
+  position: relative;
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+.instructorText .h2 { text-align: left; }
+.instructorText .sectionEyebrow { text-align: left; }
+.instructorP {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.75;
+  margin: 0 0 1rem;
+  max-width: 540px;
+}
+
+/* ─── Founder section ───────────────────────────────────────────────────────── */
+.founderSection {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, #0f1a3e 0%, #1a0510 100%);
+}
+.founderBox {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(200,32,46,0.25);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 0 80px rgba(200,32,46,0.12);
+}
+.founderBadgeRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.founderBadge {
+  display: inline-block;
+  background: rgba(200,32,46,0.2);
+  border: 1px solid rgba(200,32,46,0.4);
+  color: #f87171;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+.founderSpots {
+  display: inline-block;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.65);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+}
+.founderTitle {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+.founderSub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.75;
+  margin: 0 0 2rem;
+}
+.founderSub strong { color: #fff; }
+.founderPerks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin: 0 0 2rem;
+  text-align: left;
+}
+.founderPerk {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.8);
+}
+.founderPerk span { color: #4ade80; flex-shrink: 0; margin-top: 0.1rem; }
+.founderBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #c8202e;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
+  box-shadow: 0 8px 32px rgba(200,32,46,0.4);
+}
+.founderBtn:hover { background: #a51724; transform: translateY(-2px); }
+.founderNote {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
+}
+
+/* ─── TOPIK ─────────────────────────────────────────────────────────────────── */
+.topikGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  text-align: left;
+}
+.topikCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+}
+.topikLevel {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #c8202e;
+  margin-bottom: 0.25rem;
+}
+.topikLevels {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 0.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.topikDesc { font-size: 0.9rem; color: var(--muted); line-height: 1.65; margin: 0 0 1rem; }
+.topikSkills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.topikSkills span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  background: rgba(200,32,46,0.1);
+  color: #c8202e;
+  border: 1px solid rgba(200,32,46,0.15);
+}
+
+/* ─── FAQ ───────────────────────────────────────────────────────────────────── */
+.faqList {
+  max-width: 720px;
+  margin: 2.5rem auto 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.faqItem {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+.faqItem[open] { border-color: rgba(200,32,46,0.3); }
+.faqQ {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faqQ::-webkit-details-marker { display: none; }
+.faqQ::after { content: '+'; color: #c8202e; font-size: 1.25rem; font-weight: 400; flex-shrink: 0; margin-left: 1rem; }
+.faqItem[open] .faqQ::after { content: '−'; }
+.faqA {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  padding-bottom: 1.25rem;
+  margin: 0;
+}
+
+/* ─── Final CTA ─────────────────────────────────────────────────────────────── */
+.ctaSection {
+  padding: 5rem 1.5rem;
+  background: #080e23;
+}
+.ctaBox {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ctaKorean {
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.25);
+  margin-bottom: 1rem;
+}
+.ctaTitle {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+.ctaSub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+.ctaBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  justify-content: center;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .heroInner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .heroVisual { order: -1; }
+  .hangulGrid { grid-template-columns: repeat(4, 1fr); }
+  .hangulChar { width: 52px; height: 52px; font-size: 1.3rem; }
+  .heroBadge { right: 0.5rem; bottom: -0.5rem; }
+  .whyGrid { grid-template-columns: repeat(2, 1fr); }
+  .metodGrid { grid-template-columns: 1fr; }
+  .levelsGrid { grid-template-columns: 1fr; }
+  .instructorRow { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+  .instructorText .h2 { text-align: center; }
+  .instructorText .sectionEyebrow { text-align: center; }
+  .instructorPhoto { order: -1; }
+  .topikGrid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .hero { padding: 3.5rem 1.25rem 3rem; }
+  .whyGrid { grid-template-columns: 1fr; }
+  .hangulGrid { grid-template-columns: repeat(4, 1fr); }
+  .hangulChar { width: 44px; height: 44px; font-size: 1.1rem; }
+  .heroCtas { flex-direction: column; align-items: flex-start; }
+  .founderBox { padding: 2rem 1.25rem; }
+  .ctaBtns { flex-direction: column; align-items: center; }
+}
