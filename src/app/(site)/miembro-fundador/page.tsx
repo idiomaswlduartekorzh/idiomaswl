@@ -18,9 +18,38 @@ export const metadata: Metadata = {
     title: 'Miembro Fundador Coreano — 50 Cupos · WeLearn',
     description: '50 cupos con precio vitalicio congelado. Únete a los primeros estudiantes de coreano en WeLearn.',
     url: 'https://idiomaswl.com/miembro-fundador',
-    images: [{ url: '/images/welearn-logo.png', width: 1200, height: 630, alt: 'Miembro Fundador WeLearn Coreano' }],
   },
   alternates: { canonical: 'https://idiomaswl.com/miembro-fundador' },
+};
+
+const courseJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: 'Coreano con WeLearn — Miembro Fundador',
+  description:
+    'Programa completo de coreano online con tutor 1:1, método de 17 pasos y preparación para TOPIK I y II. Acceso vitalicio al precio fundador para los primeros 50 estudiantes.',
+  url: 'https://idiomaswl.com/miembro-fundador',
+  provider: {
+    '@type': 'Organization',
+    name: 'WeLearn',
+    url: 'https://idiomaswl.com',
+  },
+  educationalLevel: 'Beginner to Intermediate',
+  teaches: 'Korean language (한국어), TOPIK I, TOPIK II',
+  inLanguage: 'es',
+  availableLanguage: { '@type': 'Language', name: 'Spanish' },
+  hasCourseInstance: {
+    '@type': 'CourseInstance',
+    courseMode: 'online',
+    courseWorkload: 'PT6M',
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/LimitedAvailability',
+      availabilityStarts: '2025-01-01',
+      eligibleQuantity: { '@type': 'QuantitativeValue', value: 50, unitText: 'cupos' },
+      seller: { '@type': 'Organization', name: 'WeLearn', url: 'https://idiomaswl.com' },
+    },
+  },
 };
 
 const PERKS = [
@@ -67,6 +96,10 @@ const TIMELINE = [
 export default function MiembroFundadorPage() {
   return (
     <main className={s.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+      />
 
       {/* ══════════════ HERO ══════════════ */}
       <section className={s.hero}>

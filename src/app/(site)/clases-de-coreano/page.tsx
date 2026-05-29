@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     description:
       'Hangul, pronunciación, vocabulario esencial y TOPIK. Clases 1:1 con tutor. 50 cupos de Miembro Fundador. Para colombianos que van en serio.',
     url: 'https://idiomaswl.com/clases-de-coreano',
-    images: [{ url: '/images/welearn-logo.png', width: 1200, height: 630, alt: 'WeLearn Coreano' }],
   },
   alternates: { canonical: 'https://idiomaswl.com/clases-de-coreano' },
 };

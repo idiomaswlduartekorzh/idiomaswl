@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     description:
       'Simulacros completos, análisis por sección y clases 1:1. Sube tu puntaje de inglés en el ICFES. Para estudiantes de todo Colombia.',
     url: 'https://idiomaswl.com/preparacion-icfes',
-    images: [{ url: '/images/welearn-logo.png', width: 1200, height: 630, alt: 'WeLearn ICFES Inglés' }],
   },
   alternates: { canonical: 'https://idiomaswl.com/preparacion-icfes' },
 };

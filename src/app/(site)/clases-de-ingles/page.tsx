@@ -30,7 +30,6 @@ export const metadata: Metadata = {
     title: 'Clases de Inglés Online en Colombia — IELTS, TOEFL, ICFES | WeLearn',
     description: 'Preparación real para IELTS, TOEFL e ICFES. Clase de diagnóstico gratis. Bucaramanga y todo Colombia.',
     url: 'https://idiomaswl.com/clases-de-ingles',
-    images: [{ url: '/images/welearn-logo.png', width: 1200, height: 630, alt: 'Idiomas WeLearn' }],
   },
 };
 
