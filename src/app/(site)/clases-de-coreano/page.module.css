@@ -99,12 +99,24 @@
   max-width: 520px;
 }
 
-/* ─── Hero visual: Hangul grid ──────────────────────────────────────────────── */
+/* ─── Hero visual ────────────────────────────────────────────────────────────── */
 .heroVisual {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Step003 video — replaces the Hangul character grid */
+.heroVideo {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #0d0d1a;
 }
 .hangulGrid {
   display: grid;
@@ -579,6 +591,7 @@
 @media (max-width: 900px) {
   .heroInner { grid-template-columns: 1fr; gap: 2.5rem; }
   .heroVisual { order: -1; }
+  .heroVideo { border-radius: 14px; }
   .hangulGrid { grid-template-columns: repeat(4, 1fr); }
   .hangulChar { width: 52px; height: 52px; font-size: 1.3rem; }
   .heroBadge { right: 0.5rem; bottom: -0.5rem; }

@@ -202,11 +202,17 @@ export default function ClasesDeCoreanoPage() {
               </div>
             </div>
             <div className={s.heroVisual}>
-              <div className={s.hangulGrid}>
-                {['가', '나', '다', '라', '마', '바', '사', '아', '자', '차', '카', '타', '파', '하', '이', '우'].map((c, i) => (
-                  <span key={i} className={s.hangulChar} style={{ animationDelay: `${i * 0.06}s` }}>{c}</span>
-                ))}
-              </div>
+              {/* Step003 lesson preview video — muted autoplay */}
+              {/* ⚠️ 92 MB: compress with ffmpeg before production if page speed matters */}
+              <video
+                className={s.heroVideo}
+                src="/assets/korean/step003/video/STEP003.mp4"
+                poster="/assets/korean/step003/welcome_v1.png"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
               <div className={s.heroBadge}>
                 <span className={s.heroBadgeNum}>17</span>
                 <span className={s.heroBadgeLabel}>pasos del<br />método</span>
