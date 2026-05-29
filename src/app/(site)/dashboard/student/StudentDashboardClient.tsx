@@ -138,17 +138,22 @@ const NAV: { group: string; items: { label: string; href: string; icon: ReactNod
       { label: 'Inicio',          href: '/dashboard/student', icon: IC.grid,        active: true  },
       { label: 'Mis exámenes',    href: '/examenes',          icon: IC.clipboard,   active: false },
       { label: 'Mi progreso',     href: '#',                  icon: IC.trendingUp,  active: false },
-      { label: 'Marcadores',      href: '#',                  icon: IC.award,       active: false },
     ],
   },
   {
-    group: 'Practicar',
+    group: 'Aprender coreano',
     items: [
-      { label: 'Inglés',    href: '/examenes/ielts',     icon: IC.globe, active: false },
-      { label: 'Alemán',    href: '/examenes/goethe',    icon: IC.globe, active: false },
-      { label: 'Francés',   href: '/examenes/delf-dalf', icon: IC.globe, active: false },
-      { label: 'Italiano',  href: '/examenes/cils-celi', icon: IC.globe, active: false },
-      { label: 'Portugués', href: '/examenes/celpe-bras',icon: IC.globe, active: false },
+      { label: 'Lecciones',       href: '/leccion',                    icon: IC.bookOpen,  active: false },
+      { label: 'Práctica oral',   href: '/practica/korean-speaking-1', icon: IC.flag,       active: false },
+      { label: 'Blog',            href: '/blog',                       icon: IC.sparkles,   active: false },
+    ],
+  },
+  {
+    group: 'Practicar exámenes',
+    items: [
+      { label: 'IELTS / TOEFL',  href: '/examenes/ielts',     icon: IC.globe, active: false },
+      { label: 'ICFES',           href: '/examenes/icfes',     icon: IC.globe, active: false },
+      { label: 'TOPIK',           href: '/clases-de-coreano',  icon: IC.globe, active: false },
     ],
   },
   {
@@ -175,11 +180,11 @@ const RECOMMENDED = [
 
 const RESOURCES: { label: string; icon: ReactNode; href: string }[] = [
   { label: 'Exámenes',       icon: IC.bookOpen,      href: '/examenes' },
-  { label: 'Iniciar sesión', icon: IC.logIn,         href: '/login' },
-  { label: 'Método WeLearn', icon: IC.sparkles,      href: '/home#metodo' },
-  { label: 'Comunidad',      icon: IC.messageCircle, href: '#' },
-  { label: 'Certificaciones',icon: IC.graduationCap, href: '/home#examenes' },
-  { label: 'Pedir ayuda',    icon: IC.helpCircle,    href: '#' },
+  { label: 'Lecciones',      icon: IC.logIn,         href: '/leccion' },
+  { label: 'Método WeLearn', icon: IC.sparkles,      href: '/metodo' },
+  { label: 'Blog',           icon: IC.messageCircle, href: '/blog' },
+  { label: 'Precios',        icon: IC.graduationCap, href: '/precios' },
+  { label: 'Pedir ayuda',    icon: IC.helpCircle,    href: 'https://wa.me/573005004253?text=Hola%2C%20necesito%20ayuda%20con%20mi%20cuenta%20en%20WeLearn.' },
 ]
 
 const RADAR_DATA = [
@@ -281,6 +286,35 @@ export default function StudentDashboardClient({ name }: Props) {
 
             {/* LEFT COLUMN */}
             <div className="std-col-main">
+
+              {/* Korean lessons quick access */}
+              <section className="std-section">
+                <div className="std-section__head">
+                  <h2 className="std-section__title">🇰🇷 Lecciones de coreano</h2>
+                  <Link href="/leccion" className="std-section__link">Ver todas →</Link>
+                </div>
+                <div className="std-korean-grid">
+                  {[
+                    { day: 1, title: 'Annyeonghaseyo', sub: 'Saludos básicos', done: true },
+                    { day: 2, title: 'Café I', sub: 'Pedir bebidas', done: true },
+                    { day: 3, title: 'Café II', sub: 'Vocabulario extendido', done: true },
+                    { day: 4, title: 'Café III', sub: 'Demostrativos + números', done: false },
+                    { day: 6, title: 'Mercado', sub: 'Compras y precios', done: false },
+                    { day: 7, title: 'Transporte', sub: 'Cómo pedir taxi', done: false },
+                  ].map(lesson => (
+                    <Link
+                      key={lesson.day}
+                      href={`/courses/korean/step/${lesson.day}`}
+                      className={`std-kr-card${lesson.done ? ' std-kr-card--done' : ''}`}
+                    >
+                      <div className="std-kr-card__day">Día {lesson.day}</div>
+                      <div className="std-kr-card__title">{lesson.title}</div>
+                      <div className="std-kr-card__sub">{lesson.sub}</div>
+                      {lesson.done && <div className="std-kr-card__check">✓</div>}
+                    </Link>
+                  ))}
+                </div>
+              </section>
 
               {/* Continue practicing */}
               <section className="std-section">
@@ -421,14 +455,19 @@ export default function StudentDashboardClient({ name }: Props) {
 
               {/* Upgrade CTA */}
               <div className="std-widget std-upgrade">
-                <p className="std-upgrade__eyebrow">¿Estudias en WeLearn?</p>
-                <p className="std-upgrade__title">Activa tu cuenta institucional</p>
+                <p className="std-upgrade__eyebrow">¿Quieres más?</p>
+                <p className="std-upgrade__title">Plan con tutor asignado</p>
                 <p className="std-upgrade__desc">
-                  Lecciones diarias, clases en vivo, seguimiento personalizado y más.
+                  Sesiones en vivo, plan personalizado y corrección real de tus respuestas.
                 </p>
-                <Link href="/activar" className="std-upgrade__btn">
-                  Activar acceso completo →
-                </Link>
+                <a
+                  href="https://wa.me/573005004253?text=Hola%2C%20quiero%20conocer%20los%20planes%20con%20tutor%20de%20WeLearn."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="std-upgrade__btn"
+                >
+                  Hablar con un tutor →
+                </a>
               </div>
 
             </div>
@@ -709,6 +748,75 @@ export default function StudentDashboardClient({ name }: Props) {
           font-size: 12px;
           color: var(--muted);
           font-weight: 500;
+        }
+
+        /* ── Korean lessons grid ── */
+        .std-korean-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+        .std-kr-card {
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px solid rgba(20,33,92,0.10);
+          border-radius: 14px;
+          padding: 14px;
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          position: relative;
+          transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+        }
+        .std-kr-card:hover {
+          box-shadow: 0 8px 28px rgba(20,33,92,0.13), inset 0 1px 0 rgba(255,255,255,0.9);
+          border-color: rgba(200,32,46,0.35);
+          transform: translateY(-2px);
+        }
+        .std-kr-card--done {
+          background: rgba(200,32,46,0.04);
+          border-color: rgba(200,32,46,0.2);
+        }
+        .std-kr-card__day {
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: var(--muted);
+          font-family: var(--mono);
+        }
+        .std-kr-card__title {
+          font-size: 13px;
+          font-weight: 700;
+          color: var(--ink);
+          margin-top: 2px;
+        }
+        .std-kr-card__sub {
+          font-size: 11px;
+          color: var(--muted);
+        }
+        .std-kr-card__check {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #22c55e;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @media (max-width: 768px) {
+          .std-korean-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+          .std-korean-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         /* ── Progress cards ── */
