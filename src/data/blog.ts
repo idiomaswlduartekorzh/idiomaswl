@@ -1505,6 +1505,159 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>Si quieres prepararte para el TOEFL con una ruta específica por sección, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a> — las clases son 1:1 con tutor y se adaptan a las secciones donde más necesitas mejorar. También puedes <a href="/examenes/toefl">hacer el simulacro de TOEFL gratis</a> para tener una línea base antes de empezar.</p>
     `,
   },
+  {
+    slug: 'ielts-writing-task-2-como-mejorar-el-band',
+    title: 'IELTS Writing Task 2: los 5 errores que hacen bajar tu Band y cómo evitarlos',
+    description:
+      'Los evaluadores del IELTS ven los mismos errores en el Writing Task 2 una y otra vez. Aquí los 5 más costosos para hispanohablantes y la estructura exacta que produce Band 7+.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['IELTS Writing', 'Task 2', 'Band 7', 'ensayo IELTS', 'Writing score', 'Colombia IELTS'],
+    body: `
+<h2>Por qué Writing Task 2 es el cuello de botella del IELTS</h2>
+<p>Si hay una sección del IELTS donde la mayoría de hispanohablantes se queda estancada entre Band 5.5 y 6.5 sin entender por qué, esa es Writing Task 2.</p>
+<p>El Task 2 pesa el doble que el Task 1 en la calificación de Writing. Tienes 40 minutos para escribir un ensayo argumentativo de al menos 250 palabras sobre un tema social, cultural o de política pública. Y la evaluación no es "buena o mala gramática" — es un sistema de cuatro criterios que muchos candidatos no entienden hasta que han presentado el examen dos veces.</p>
+
+<h2>Los cuatro criterios de evaluación de Writing Task 2</h2>
+<p>Cada criterio vale el 25% del puntaje:</p>
+<ol>
+  <li><strong>Task Response (TR)</strong>: ¿respondiste exactamente lo que preguntó la consigna? ¿Tu posición es clara y consistente? ¿Desarrollaste todos los puntos necesarios?</li>
+  <li><strong>Coherence &amp; Cohesion (CC)</strong>: ¿las ideas fluyen con lógica? ¿Usas conectores apropiados? ¿Cada párrafo tiene una idea central clara?</li>
+  <li><strong>Lexical Resource (LR)</strong>: ¿usas vocabulario variado y preciso? ¿Evitas repetir las mismas palabras? ¿Puedes usar vocabulario específico del tema con precisión?</li>
+  <li><strong>Grammatical Range &amp; Accuracy (GRA)</strong>: ¿usas diferentes estructuras gramaticales? ¿Cometes errores que dificultan la comprensión?</li>
+</ol>
+<p>La mayoría de candidatos se enfoca casi exclusivamente en la gramática (GRA), que es uno de cuatro criterios. Task Response es igualmente importante — y es donde se pierde más Band de manera invisible.</p>
+
+<h2>Error #1: No responder lo que pregunta la consigna</h2>
+<p>Este es el error más costoso y el más común. Las consignas del IELTS Task 2 tienen tipos específicos: Opinion (To what extent do you agree or disagree?), Discussion (Discuss both views and give your opinion), Problem-Solution (What are the causes? What solutions can you suggest?), Advantage-Disadvantage, Two-Part Question.</p>
+<p>Cada tipo requiere una estructura diferente. Si la consigna pide "discuss both views" y tú solo presentas un punto de vista, la calificación de Task Response es 5 sin importar qué tan bien esté escrito el ensayo.</p>
+<p><strong>La solución</strong>: lee la consigna dos veces. Identifica el tipo de pregunta. Verifica que tu estructura responde exactamente lo que se pide. Si pregunta "¿en qué medida estás de acuerdo?", debes dar una posición clara (completamente, parcialmente, no estás de acuerdo) y mantenerla durante todo el ensayo.</p>
+
+<h2>Error #2: Introducción que resume en lugar de argumentar</h2>
+<p>Muchos candidatos escriben introducciones del tipo: "Nowadays, technology is changing many aspects of our lives. Some people think this is positive while others see it as negative. In this essay, I will discuss both sides."</p>
+<p>Esta introducción obtiene Band 5 en Task Response porque no dice nada — solo anuncia que vas a escribir algo. Una introducción de Band 7+ tiene: (1) parafraseo del tema en tus propias palabras, (2) tu posición o el enfoque que tomará el ensayo.</p>
+<p>Ejemplo Band 7: "The rapid integration of technology into daily routines has sparked debate about its net impact on society. While I acknowledge certain drawbacks, I firmly believe that its benefits outweigh the disadvantages, particularly in terms of access to information and economic opportunity."</p>
+
+<h2>Error #3: Párrafos sin idea central o con múltiples ideas mezcladas</h2>
+<p>Un párrafo del cuerpo de Band 5 luce así: una idea general, luego un ejemplo, luego otra idea diferente, luego otra idea más. Sin hilo conductor, sin desarrollo, sin relación lógica entre las frases.</p>
+<p>Un párrafo de Band 7 sigue la estructura PEEL o similar:</p>
+<ul>
+  <li><strong>Point</strong>: la idea central del párrafo en una oración.</li>
+  <li><strong>Explain</strong>: desarrollo de esa idea (1–2 oraciones).</li>
+  <li><strong>Example</strong>: evidencia, dato, ejemplo concreto.</li>
+  <li><strong>Link</strong>: oración de cierre que conecta con la tesis general (opcional pero recomendado).</li>
+</ul>
+<p>Si no puedes resumir un párrafo en una oración, tiene demasiadas ideas.</p>
+
+<h2>Error #4: Conectores mal usados que reducen la coherencia</h2>
+<p>Hay un malentendido persistente: usar muchos conectores = mejor coherencia. Falso. Un conector mal usado es peor que no usarlo.</p>
+<p>Los errores más frecuentes:</p>
+<ul>
+  <li>"Furthermore" para introducir una conclusión → debe ser "In conclusion" o "Therefore".</li>
+  <li>"Besides" al inicio de una oración cuando quieren decir "In addition" → correcto en informal, no en académico.</li>
+  <li>"On the other hand" sin haber presentado "On one hand" antes.</li>
+  <li>Empezar cada oración con un conector → produce un ensayo robótico que baja la calificación de CC.</li>
+</ul>
+<p>La regla práctica: un conector bien usado por párrafo es mejor que cuatro conectores forzados. La coherencia viene de la lógica del argumento, no de los conectores.</p>
+
+<h2>Error #5: Conclusión que solo resume sin cerrar el argumento</h2>
+<p>La conclusión más común en un Band 5: "In conclusion, I have discussed the advantages and disadvantages of technology. Some people think it is good and others think it is bad. Both sides have valid points."</p>
+<p>Esto no es concluir — es repetir sin aportar. Una conclusión de Band 7 reafirma la posición de la introducción (con palabras diferentes), menciona brevemente los argumentos principales y cierra con una idea hacia el futuro o una implicación.</p>
+<p>Ejemplo Band 7+: "In conclusion, while the challenges technology poses to privacy and employment deserve serious attention, I maintain that its capacity to democratize knowledge and create new economic sectors makes it a net positive force. The key lies not in resisting technological change but in developing policies that maximize its benefits while mitigating its risks."</p>
+
+<h2>La estructura que produce Band 7 consistentemente</h2>
+<p>Para una consigna Opinion (agree/disagree):</p>
+<ul>
+  <li><strong>Párrafo 1 (introducción, 50–70 palabras)</strong>: parafraseo del tema + tu posición clara.</li>
+  <li><strong>Párrafo 2 (argumento principal, 80–100 palabras)</strong>: tu argumento más fuerte. PEEL.</li>
+  <li><strong>Párrafo 3 (argumento secundario o concesión, 80–100 palabras)</strong>: segundo argumento o reconocimiento del punto opuesto + por qué tu posición sigue siendo válida.</li>
+  <li><strong>Párrafo 4 (conclusión, 40–60 palabras)</strong>: reafirmación de posición + cierre con perspectiva.</li>
+</ul>
+<p>Total: ~270–330 palabras. No más de 350 — los ensayos largos pero desorganizados obtienen menos Band que los cortos pero bien argumentados.</p>
+
+<h2>Cuánto tiempo lleva mejorar el Writing Task 2</h2>
+<p>Con práctica activa — escribir 2 ensayos por semana y recibir retroalimentación específica sobre los cuatro criterios — la mayoría de candidatos en nivel B1 ve mejora de 0.5–1 Band en 6–8 semanas. La clave es la retroalimentación: la autocorrección tiene límites porque no identificas los errores que cometes sistemáticamente.</p>
+<p>Si quieres prepararte para el Writing del IELTS con retroalimentación real de un tutor que conoce los criterios de evaluación, puedes <a href="/clases-de-ingles">conocer el programa de preparación WeLearn</a>. Las clases incluyen práctica de Writing con feedback específico por sección.</p>
+    `,
+  },
+  {
+    slug: 'ingles-para-trabajar-en-estados-unidos',
+    title: 'Inglés para trabajar en Estados Unidos: qué certificación necesitas y cómo llegar',
+    description:
+      'Guía completa para colombianos que quieren trabajar en EE.UU.: qué puntaje de inglés piden las visas de trabajo, qué certifica el IELTS vs TOEFL para empleadores americanos y cuánto tiempo toma.',
+    date: '2026-05-31',
+    readTime: 8,
+    category: 'IELTS',
+    tags: ['trabajar en Estados Unidos', 'inglés visa trabajo EE.UU.', 'IELTS EE.UU.', 'H-1B inglés', 'migración Colombia'],
+    body: `
+<h2>¿Qué nivel de inglés necesitas para trabajar en EE.UU.?</h2>
+<p>Esta es una de las preguntas más frecuentes de colombianos que consideran migrar a Estados Unidos por trabajo. Y la respuesta honesta es: depende del tipo de visa, del empleador y del campo profesional. Pero hay patrones claros que conviene conocer.</p>
+<p>EE.UU. no tiene un sistema migratorio que asigne puntos al idioma como Canadá o Australia. Sin embargo, el inglés es implícitamente evaluado en casi todos los procesos de empleo, y ciertos visados o acreditaciones profesionales lo exigen explícitamente.</p>
+
+<h2>Las principales vías de trabajo en EE.UU. y el inglés que requieren</h2>
+
+<h3>Visa H-1B: Trabajadores especializados</h3>
+<p>La H-1B es la visa más solicitada por profesionales colombianos (ingenieros, desarrolladores, contadores, arquitectos, profesionales de salud). <strong>No exige un puntaje mínimo de inglés por ley</strong> — pero en la práctica:</p>
+<ul>
+  <li>El empleador debe demostrar que el trabajador puede realizar el trabajo. Para roles que implican comunicación profesional en inglés, el nivel se evalúa en las entrevistas.</li>
+  <li>La mayoría de empresas de tecnología en Silicon Valley, Nueva York o Seattle que patrocinan H-1B esperan nivel B2-C1 funcional para reuniones, presentaciones y documentación técnica.</li>
+  <li>El trámite lo hace el empleador — el candidato normalmente ya pasó el proceso de selección en inglés antes de que empiece el proceso de visa.</li>
+</ul>
+
+<h3>Visa TN: NAFTA/USMCA para profesionales colombianos</h3>
+<p>Técnicamente disponible solo para ciudadanos de México y Canadá, no aplica directamente para colombianos.</p>
+
+<h3>Acreditaciones profesionales con requisitos de inglés explícito</h3>
+<p>Algunas profesiones tienen requisitos de inglés formales para ejercer en EE.UU.:</p>
+<ul>
+  <li><strong>Enfermería</strong>: el NCLEX-RN (examen de licencia de enfermería) está en inglés. Muchos estados exigen TOEFL 83–100 o IELTS 6.5–7.0 para solicitar la licencia. El CGFNS (organismo de acreditación) tiene sus propios requisitos de idioma.</li>
+  <li><strong>Medicina</strong>: el USMLE (United States Medical Licensing Examination) está en inglés. No hay requisito formal de IELTS o TOEFL, pero el nivel necesario para pasar el examen equivale a C1.</li>
+  <li><strong>Contabilidad (CPA)</strong>: varía por estado. Algunos piden TOEFL 61+ para candidatos de escuelas fuera de EE.UU.</li>
+  <li><strong>Arquitectura (NCARB)</strong>: el ARE está en inglés, sin requisito formal de certificación de idioma.</li>
+</ul>
+
+<h3>Visa EB-3: Trabajadores calificados y no calificados</h3>
+<p>Requiere que el empleador demuestre que no hay trabajadores americanos disponibles para el puesto. No hay requisito formal de inglés en la visa, pero la oferta de trabajo especifica las competencias, incluyendo idioma.</p>
+
+<h2>¿IELTS o TOEFL para empleadores y acreditaciones americanas?</h2>
+<p>En EE.UU., el TOEFL tiene históricamente más reconocimiento para contextos académicos y algunas acreditaciones profesionales. Sin embargo, la brecha se ha cerrado:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Contexto</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">TOEFL</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Universidades de EE.UU.</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #16a34a; font-weight: 700;">✓ Preferido</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">✓ Aceptado</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Licencia de enfermería (CGFNS)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #16a34a; font-weight: 700;">✓ Aceptado</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #16a34a; font-weight: 700;">✓ Aceptado</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Empleadores en tecnología</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">No suelen pedir certificación</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">No suelen pedir certificación</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Residencia permanente (Green Card por empleo)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">No requerido</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">No requerido</td></tr>
+  </tbody>
+</table>
+
+<h2>El inglés que necesitas para pasar la entrevista de trabajo en inglés</h2>
+<p>Para la mayoría de trabajos en EE.UU. en el sector corporativo o de tecnología, el inglés para la entrevista es más exigente que cualquier certificación:</p>
+<ul>
+  <li>Debes poder explicar tu experiencia laboral con fluidez y precisión.</li>
+  <li>Debes entender preguntas conductuales ("Tell me about a time when...") y responder con estructura (método STAR).</li>
+  <li>Debes sostener conversaciones de 30–60 minutos en inglés con múltiples entrevistadores.</li>
+  <li>En roles de liderazgo, presentar proyectos, negociar y persuadir en inglés.</li>
+</ul>
+<p>El nivel mínimo funcional para esto es B2 sólido. El nivel competitivo para roles técnicos-profesionales es C1. Un certificado IELTS o TOEFL no es lo que te contrata — es el inglés real que demuestras en el proceso.</p>
+
+<h2>Plan: de B1 a "nivel de entrevista en EE.UU."</h2>
+<p>Si tu objetivo es trabajar en EE.UU. y actualmente estás en nivel B1, estas son las prioridades:</p>
+<ol>
+  <li><strong>B1 → B2 (6–12 meses)</strong>: vocabulario profesional de tu industria, lectura de contenido en inglés de tu campo, práctica de producción activa (hablar y escribir en contextos laborales).</li>
+  <li><strong>B2 → entrevista-ready (3–6 meses adicionales)</strong>: práctica de entrevistas en inglés, storytelling profesional (method STAR), vocabulario técnico específico, manejo del acento para ser fácilmente entendido.</li>
+  <li><strong>Certificación si aplica</strong>: TOEFL 80+ o IELTS Academic 6.5+ si tu campo lo requiere (enfermería, medicina, algunas universidades).</li>
+</ol>
+<p>Si trabajar en EE.UU. o en una empresa americana desde Colombia es tu meta, puedes <a href="/clases-de-ingles">conocer cómo preparamos en WeLearn</a> — el programa incluye inglés profesional y preparación para certificaciones IELTS y TOEFL según tu objetivo específico.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
