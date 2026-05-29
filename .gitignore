@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Korean lesson videos/audio — large binaries, excluded from Vercel via .vercelignore
+# Keep locally for dev but don't track in git
+public/assets/korean/step008/
+public/assets/korean/step009/
+public/assets/korean/step010/
+public/assets/korean/step011/
+public/assets/korean/step012/
+public/assets/korean/step013/
+public/assets/korean/step014/
+public/assets/korean/step015/
+public/assets/korean/step016/
+public/assets/korean/step017/
+public/assets/korean/step018/
+public/assets/korean/step019/
