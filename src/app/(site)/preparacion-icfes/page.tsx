@@ -104,6 +104,13 @@ const jsonLd = {
         addressCountry: 'CO',
       },
     },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Preparación ICFES Inglés', item: 'https://idiomaswl.com/preparacion-icfes' },
+      ],
+    },
   ],
 };
 

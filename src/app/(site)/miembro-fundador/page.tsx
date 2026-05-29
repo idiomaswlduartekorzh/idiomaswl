@@ -100,6 +100,17 @@ export default function MiembroFundadorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
+            { '@type': 'ListItem', position: 2, name: 'Miembro Fundador', item: 'https://idiomaswl.com/miembro-fundador' },
+          ],
+        }) }}
+      />
 
       {/* ══════════════ HERO ══════════════ */}
       <section className={s.hero}>

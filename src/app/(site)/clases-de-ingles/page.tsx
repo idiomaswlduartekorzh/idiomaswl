@@ -105,6 +105,13 @@ const jsonLd = {
         addressCountry: 'CO',
       },
     },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Inglés', item: 'https://idiomaswl.com/clases-de-ingles' },
+      ],
+    },
   ],
 };
 
