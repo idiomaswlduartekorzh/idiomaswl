@@ -41,21 +41,14 @@ export const metadata: Metadata = {
     title: 'Idiomas WeLearn — Aprende un idioma, en serio',
     description:
       'Aprende coreano, inglés, francés y más con once pasos diarios. Simulacros de TOEFL, IELTS e ICFES.',
-    images: [
-      {
-        url: '/images/welearn-logo.png',
-        width: 1200,
-        height: 630,
-        alt: 'Idiomas WeLearn',
-      },
-    ],
+    // opengraph-image.tsx in this directory auto-generates the OG image
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Idiomas WeLearn — Aprende un idioma, en serio',
     description:
       'Aprende coreano, inglés, francés y más con once pasos diarios. Simulacros de TOEFL, IELTS e ICFES.',
-    images: ['/images/welearn-logo.png'],
+    // OG image auto-generated from opengraph-image.tsx
   },
   robots: {
     index: true,
