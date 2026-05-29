@@ -1804,6 +1804,163 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>Si eres enfermera y quieres prepararte para el IELTS Academic o el OET con el puntaje que requiere tu proceso de migración, puedes <a href="/clases-de-ingles">conocer el programa de preparación WeLearn</a> — la clase de diagnóstico gratis te dice exactamente cuánto tiempo necesitas y diseñamos el plan para tu objetivo específico.</p>
     `,
   },
+  {
+    slug: 'topik-i-vs-topik-ii-diferencias',
+    title: 'TOPIK I vs TOPIK II: diferencias, qué evalúa cada uno y cuál debes tomar',
+    description:
+      'Todo sobre el examen TOPIK de coreano: diferencia entre TOPIK I (niveles 1-2) y TOPIK II (niveles 3-6), qué se evalúa en cada uno, cuándo presentar cada nivel y cómo prepararse.',
+    date: '2026-05-31',
+    readTime: 7,
+    category: 'Coreano',
+    tags: ['TOPIK I', 'TOPIK II', 'examen coreano', 'certificación coreano', 'TOPIK preparación', 'Colombia coreano'],
+    body: `
+<h2>¿Qué es el TOPIK y por qué importa?</h2>
+<p>El TOPIK (Test of Proficiency in Korean) es el examen oficial de nivel de coreano administrado por el Instituto Nacional de Educación Internacional de Corea del Sur (NIIED). Es el equivalente del IELTS o el TOEFL para el inglés — el estándar global para certificar el dominio del coreano.</p>
+<p>Tener un TOPIK válido es necesario para:</p>
+<ul>
+  <li>Estudiar en una universidad surcoreana.</li>
+  <li>Aplicar a la beca GKS (Global Korea Scholarship) del gobierno coreano.</li>
+  <li>Trabajar en empresas coreanas que requieren certificación de idioma.</li>
+  <li>Solicitar ciertos tipos de visa de larga estadía o trabajo en Corea.</li>
+  <li>Demostrar tu nivel de coreano en procesos de selección o académicos.</li>
+</ul>
+
+<h2>TOPIK I: para principiantes e intermedios bajos</h2>
+<p>El TOPIK I es el nivel inicial del examen. Cubre los <strong>niveles 1 y 2</strong> del sistema TOPIK:</p>
+<ul>
+  <li><strong>Nivel 1</strong>: puede realizar comunicación básica relacionada con la vida diaria (saludos, compras, ordenar en un restaurante, pedir información simple).</li>
+  <li><strong>Nivel 2</strong>: puede realizar comunicación básica en situaciones cotidianas y usar expresiones en contextos familiares con cierta fluidez.</li>
+</ul>
+
+<h3>Estructura del TOPIK I</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Sección</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Tiempo</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.86rem;">Preguntas</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.86rem;">Puntaje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">듣기 (Escucha)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">40 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">100</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">읽기 (Lectura)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">60 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">40</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">100</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;"><strong>Total</strong></td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">100 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">70</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;"><strong>200</strong></td></tr>
+  </tbody>
+</table>
+<p>El TOPIK I no tiene sección de escritura. Solo Listening y Reading. Para obtener Nivel 1 necesitas 80+ puntos; para Nivel 2, 140+ puntos (de 200 posibles).</p>
+<p>Importante: el TOPIK I no tiene Speaking. Esto significa que puedes obtener certificación de nivel 1–2 con buen vocabulario y comprensión escrita aunque tu producción oral sea limitada.</p>
+
+<h2>TOPIK II: intermedio, avanzado y dominio pleno</h2>
+<p>El TOPIK II cubre los <strong>niveles 3, 4, 5 y 6</strong>:</p>
+<ul>
+  <li><strong>Nivel 3</strong>: puede realizar comunicación básica en contextos sociales y laborales. Puede leer y escribir sobre temas familiares.</li>
+  <li><strong>Nivel 4</strong>: puede desenvolverse en situaciones cotidianas y laborales con fluidez. Comprende noticias y textos generales.</li>
+  <li><strong>Nivel 5</strong>: puede comunicarse en temas sociales y académicos sin dificultad. Comprende y usa el idioma de forma profesional.</li>
+  <li><strong>Nivel 6</strong>: dominio casi nativo. Puede realizar cualquier actividad comunicativa sin dificultad. Nivel de hablante fluido en contextos académicos y profesionales.</li>
+</ul>
+
+<h3>Estructura del TOPIK II</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Sección</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Tiempo</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.86rem;">Preguntas</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.86rem;">Puntaje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">듣기 (Escucha)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">60 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">50</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">100</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">쓰기 (Escritura)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">50 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">4</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">100</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">읽기 (Lectura)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">70 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">50</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">100</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;"><strong>Total</strong></td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">180 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">104</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;"><strong>300</strong></td></tr>
+  </tbody>
+</table>
+<p>Puntajes para obtener cada nivel en TOPIK II:<br/>Nivel 3: 120+ | Nivel 4: 150+ | Nivel 5: 190+ | Nivel 6: 230+ (de 300).</p>
+<p>La sección de Escritura del TOPIK II incluye redacciones formales de distinto nivel — es la más desafiante para hispanohablantes no acostumbrados a la escritura formal coreana.</p>
+
+<h2>¿Cuál debo tomar?</h2>
+<p>La respuesta depende de tu objetivo:</p>
+<ul>
+  <li><strong>Empiezas desde cero o llevas menos de 1 año</strong>: TOPIK I es el punto de llegada realista con 6–12 meses de preparación constante.</li>
+  <li><strong>Llevas 1–2 años aprendiendo y quieres certificarte</strong>: empieza con TOPIK I para tener una línea base y saber si tu preparación es suficiente para TOPIK II Nivel 3 en el siguiente intento.</li>
+  <li><strong>Aplicas a la beca GKS</strong>: el mínimo suele ser TOPIK I Nivel 2 o TOPIK II Nivel 3 según el programa. Verificar los requisitos de la convocatoria específica.</li>
+  <li><strong>Quieres estudiar en una universidad surcoreana con instrucción en coreano</strong>: TOPIK II Nivel 3 como mínimo; para programas competitivos, Nivel 4–5.</li>
+  <li><strong>Quieres trabajar en Corea en una empresa que exige certificación</strong>: TOPIK II Nivel 3–4 para la mayoría de posiciones; Nivel 5–6 para roles de alta responsabilidad.</li>
+</ul>
+
+<h2>¿Dónde se presenta el TOPIK en Colombia?</h2>
+<p>El TOPIK se presenta en Colombia normalmente una o dos veces al año. Los centros de examinación oficiales incluyen el Centro Cultural Coreano en Bogotá y otras instituciones registradas. Los detalles de inscripción y fechas se publican en el sitio oficial del NIIED y en el Centro Cultural Coreano en Colombia.</p>
+<p>Si tu objetivo es el TOPIK I o TOPIK II y quieres prepararte con un método diseñado para hispanohablantes, puedes conocer el <a href="/clases-de-coreano">programa de coreano WeLearn</a> — que cubre desde Hangul y pronunciación hasta los niveles de preparación para el TOPIK.</p>
+    `,
+  },
+  {
+    slug: 'clases-de-ingles-online-colombia',
+    title: 'Clases de inglés online en Colombia: qué considerar al elegir tu academia',
+    description:
+      'Guía para elegir bien un curso de inglés online en Colombia: qué diferencia una academia seria de una que solo entretiene, qué preguntar antes de pagar y cuáles son las señales de alerta.',
+    date: '2026-05-31',
+    readTime: 7,
+    category: 'IELTS',
+    tags: ['clases de inglés online Colombia', 'academia de inglés Colombia', 'aprender inglés Colombia', 'inglés Bucaramanga', 'inglés online'],
+    body: `
+<h2>El mercado de clases de inglés online en Colombia: mucho ruido, poca señal</h2>
+<p>En Colombia hay cientos de opciones para aprender inglés online — apps, academias digitales con miles de estudiantes, tutores freelance en plataformas internacionales, academias físicas con módulo virtual y escuelas completamente en línea. El problema no es la escasez de opciones: es que la mayoría de ellas no produce los resultados que promete.</p>
+<p>Esta guía no es para ayudarte a elegir entre academia A y academia B. Es para darte los criterios que te permiten evaluar cualquier opción de inglés online y detectar las que sí funcionan de las que solo se ven bien.</p>
+
+<h2>La pregunta que importa primero: ¿cuál es tu objetivo?</h2>
+<p>Antes de comparar opciones, define con precisión qué quieres lograr:</p>
+<ul>
+  <li>Necesito <strong>puntaje específico en un examen</strong> (IELTS Band 7, TOEFL 90, ICFES B2).</li>
+  <li>Quiero <strong>hablar inglés con fluidez</strong> para mi trabajo actual o próximo.</li>
+  <li>Quiero <strong>leer y entender</strong> documentos en inglés sin traductores.</li>
+  <li>Necesito inglés para <strong>estudiar en el exterior</strong> (visa de estudiante, admisión a universidad).</li>
+  <li>Quiero preparar inglés para <strong>migrar</strong> a un país anglófono.</li>
+</ul>
+<p>La respuesta a esta pregunta cambia completamente qué tipo de clase o academia necesitas. Un objetivo específico como "IELTS Band 7" requiere preparación especializada con simulacros y feedback de Writing y Speaking — no clases conversacionales generales. Un objetivo de "hablar con fluidez" requiere producción activa en contexto, no memorizar vocabulario con flashcards.</p>
+
+<h2>Lo que diferencia un programa que funciona de uno que no</h2>
+
+<h3>1. Retroalimentación real, no solo progreso simulado</h3>
+<p>Las apps de idiomas (Duolingo, Babbel, Rosetta Stone) tienen métricas de "progreso" excelentes — barras que se llenan, racha de días, XP. Pero el progreso real en un idioma requiere retroalimentación sobre tu producción. ¿Alguien escuchó cómo hablas y te dijo qué corregir? ¿Leyeron tu Writing y explicaron por qué baja tu Band?</p>
+<p>Sin retroalimentación humana en tu producción (hablar y escribir), solo estás desarrollando comprensión — no producción. Puedes entender todo y no poder decir nada.</p>
+
+<h3>2. Objetivo claro y métricas de avance</h3>
+<p>Un buen programa de inglés online sabe exactamente hacia dónde te lleva. "Aprenderás inglés" no es un objetivo — "pasarás de B1 a B2 en 6 meses con IELTS Band 6.5 al final" sí lo es. La falta de objetivo específico es la primera señal de que el programa no está orientado a resultados.</p>
+
+<h3>3. Clases 1:1 o grupos pequeños con tutor experto</h3>
+<p>La diferencia entre aprender en un grupo de 15 personas y aprender 1:1 con un tutor no es de comodidad — es de velocidad de aprendizaje. En 1:1, el tutor adapta cada sesión a tus errores específicos, tu velocidad y tus objetivos. En un grupo grande, la clase avanza al ritmo del promedio — que puede ser más lento o más rápido que el tuyo.</p>
+<p>Para objetivos de exámenes (IELTS, TOEFL, ICFES), las clases 1:1 o grupos de máximo 4 personas producen resultados significativamente más rápidos que los grupos grandes.</p>
+
+<h3>4. El tutor tiene experiencia específica en lo que necesitas</h3>
+<p>No es lo mismo un tutor de inglés conversacional que un preparador de IELTS. El examen IELTS tiene criterios de calificación específicos que se aprenden — y un tutor que no los conoce en profundidad no puede prepararte para alcanzar el Band que necesitas. Antes de contratar cualquier preparación para examen, pregunta: ¿El tutor ha preparado estudiantes para este examen específico? ¿Cuál fue el resultado?</p>
+
+<h2>Señales de alerta al elegir una academia de inglés online</h2>
+<ul>
+  <li><strong>"Inglés en 3 meses garantizado"</strong>: el inglés se mide por nivel, no por tiempo. Cuánto avances en 3 meses depende de tu nivel inicial, cuántas horas dediques y la calidad del método.</li>
+  <li><strong>No hay diagnóstico antes de empezar</strong>: si una academia te mete en un nivel sin antes evaluar el tuyo, está priorizando la venta sobre tu resultado.</li>
+  <li><strong>Sin feedback de Speaking o Writing</strong>: si el programa es 100% videos, ejercicios de opción múltiple o apps de vocabulario sin producción activa, no desarrolla la habilidad de hablar ni escribir.</li>
+  <li><strong>Tutores sin credenciales verificables</strong>: pide que te digan quién enseña y qué formación o experiencia tiene en preparación del examen que necesitas.</li>
+  <li><strong>Grupos de más de 8 personas</strong>: por encima de ese tamaño, la retroalimentación individual se vuelve superficial o inexistente.</li>
+</ul>
+
+<h2>Las preguntas que debes hacer antes de pagar</h2>
+<ol>
+  <li>¿Hacen un diagnóstico de mi nivel antes de empezar?</li>
+  <li>¿Cuál es el tamaño máximo del grupo o puedo hacer clases individuales?</li>
+  <li>¿El programa incluye feedback específico sobre mi Speaking y Writing?</li>
+  <li>¿Los tutores tienen experiencia específica preparando [IELTS/TOEFL/ICFES]?</li>
+  <li>¿Qué resultados han logrado otros estudiantes con mi mismo objetivo?</li>
+  <li>¿Puedo ver un ejemplo de retroalimentación de Writing o escuchar una muestra de clase?</li>
+</ol>
+
+<h2>Por qué elegir WeLearn para inglés online en Colombia</h2>
+<p>En WeLearn las clases son 1:1 con tutor asignado. El proceso empieza siempre con una clase de diagnóstico gratis que define tu nivel real, tu objetivo específico y el tiempo que necesitas para alcanzarlo. El método de 17 pasos está diseñado para hispanohablantes — no adaptamos contenido en inglés para Colombia, sino que construimos el método desde el contexto lingüístico del español.</p>
+<p>Tenemos preparadores específicos para IELTS, TOEFL e ICFES — no tutores genéricos que "cubren todos los exámenes". Y los simulacros de práctica están disponibles en la plataforma para que practiques entre sesiones.</p>
+<p>Si quieres agendar tu clase de diagnóstico gratis y ver si somos la opción correcta para ti, puedes hacerlo desde la <a href="/clases-de-ingles">página de clases de inglés</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
