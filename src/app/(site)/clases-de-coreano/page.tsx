@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import s from './page.module.css';
+import { KOREAN_STEPS } from '@/data/stepsMeta';
 
 const WA = '573005004253';
 const WA_GENERAL   = encodeURIComponent('Hola, vi la página de clases de coreano en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
@@ -416,6 +417,87 @@ export default function ClasesDeCoreanoPage() {
                 className={s.waBtn}
               >
                 Quiero prepararme para el TOPIK
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════ STEPS — LECCIONES DEL MÉTODO ══════════════ */}
+        <section className={s.section} id="lecciones">
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Método WeLearn · 17 pasos</p>
+            <h2 className={s.h2}>Empieza a aprender hoy — gratis</h2>
+            <p className={s.sectionSub}>
+              Los primeros 5 pasos del método son completamente gratuitos.
+              Sin registro. Entra, aprende y decide.
+            </p>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+              gap: '0.75rem',
+              marginTop: '1.75rem',
+            }}>
+              {Array.from({ length: 20 }, (_, i) => i + 1).map(step => {
+                const meta = KOREAN_STEPS[step];
+                const free = step <= 5;
+                const label = free ? `Lección ${step}` : `Paso ${step}`;
+                const title = meta?.episodeTitle?.split('·')[0]?.trim() ?? `Paso ${step}`;
+                const sub   = meta?.grammarLabel ?? '';
+                return free ? (
+                  <Link
+                    key={step}
+                    href={`/courses/korean/step/${step}`}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.4rem',
+                      padding: '1rem',
+                      borderRadius: 12,
+                      border: '1.5px solid rgba(200,32,46,0.35)',
+                      background: 'rgba(200,32,46,0.05)',
+                      textDecoration: 'none',
+                      transition: 'border-color .2s, background .2s',
+                    }}
+                  >
+                    <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#c8202e' }}>
+                      🆓 {label}
+                    </span>
+                    <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.3 }}>{title}</span>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>{sub}</span>
+                  </Link>
+                ) : (
+                  <div
+                    key={step}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.4rem',
+                      padding: '1rem',
+                      borderRadius: 12,
+                      border: '1px solid var(--line-soft)',
+                      background: 'var(--bg-2)',
+                      opacity: 0.6,
+                      cursor: 'default',
+                    }}
+                  >
+                    <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--muted)' }}>
+                      🔒 {label}
+                    </span>
+                    <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--muted)', lineHeight: 1.3 }}>{title}</span>
+                    <span style={{ fontSize: '0.7rem', color: 'var(--muted)', background: 'rgba(255,255,255,0.07)', borderRadius: 6, padding: '1px 6px', display: 'inline-block', width: 'fit-content' }}>Suscripción</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+              <a
+                href={`https://wa.me/${WA}?text=${WA_FUNDADOR}`}
+                target="_blank" rel="noopener noreferrer"
+                className={s.ghostBtn}
+              >
+                Desbloquear todos los pasos → Miembro Fundador
               </a>
             </div>
           </div>
