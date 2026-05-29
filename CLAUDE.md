@@ -84,19 +84,19 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M1.1 | Landing inglés/IELTS alta conversión — `/clases-de-ingles` | **HECHO** — pendiente foto `public/images/david-duarte.jpg` y testimonios reales |
+| M1.1 | Landing inglés/IELTS alta conversión — `/clases-de-ingles` | **HECHO** — pendiente foto real `public/images/david-duarte.jpg` y 3 testimonios reales |
 | M1.2 | Botón WhatsApp flotante en todas las páginas | **HECHO** — `src/components/WhatsAppFloat.tsx`, mensaje por URL, evento GTM `click_whatsapp` |
-| M1.3 | Captura de leads en simulacros (email + WA + nombre + idioma) | **HECHO** — tabla `leads` en Supabase + `saveLead` action + `LeadCaptureModal` en ExamReport. Pendiente: aplicar migración en Supabase dashboard |
-| M1.4 | Eventos de conversión GA4 + Meta Pixel (click_whatsapp, lead_simulacro, etc.) | **PENDIENTE** |
-| M1.5 | Página de precios reescrita (corregir incoherencias, CTA a WhatsApp) | **PENDIENTE** |
+| M1.3 | Captura de leads en simulacros (email + WA + nombre + idioma) | **HECHO** — tabla `leads` en Supabase + `saveLead` action + `LeadCaptureModal` en ExamReport. ⚠️ Pendiente: crear tabla `leads` en Supabase dashboard |
+| M1.4 | Eventos de conversión GA4 + Meta Pixel (click_whatsapp, lead_simulacro, etc.) | **PENDIENTE GTM** — código ya dispara `window.dataLayer.push()`. Falta: crear triggers + tags en GTM-57NXLPZV y publicar versión |
+| M1.5 | Página de precios reescrita (corregir incoherencias, CTA a WhatsApp) | **HECHO** — `src/app/(site)/precios/PreciosClient.tsx` usa `waLink()` para todos los CTAs |
 
 ### NIVEL 2 — REPLICAR EL MOTOR
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M2.1 | Landing de coreano | **PENDIENTE** |
-| M2.2 | Landing de ICFES inglés | **PENDIENTE** |
-| M2.3 | SEO técnico base (meta tags, schema.org, sitemap, robots) | **PENDIENTE** |
+| M2.1 | Landing de coreano | **HECHO** — `src/app/(site)/clases-de-coreano/` con JSON-LD, sección Miembro Fundador, TOPIK comparador, FAQ |
+| M2.2 | Landing de ICFES inglés | **HECHO** — `src/app/(site)/preparacion-icfes/` con escala de puntajes, estructura del examen, plan de prep |
+| M2.3 | SEO técnico base (meta tags, schema.org, sitemap, robots) | **HECHO** — sitemap.ts actualizado, JSON-LD (Course + LocalBusiness) en todas las landing pages, metadata canónica |
 
 ### NIVEL 3 — PRODUCTO SUSCRIPCIÓN
 
@@ -104,7 +104,7 @@ public/
 |----|--------|--------|
 | M3.1 | Panel de estudiante MVP (solo coreano) | **PENDIENTE** |
 | M3.2 | Pasos 18, 19, 20 del método | **PENDIENTE** |
-| M3.3 | Página de pre-venta Miembro Fundador | **PENDIENTE** |
+| M3.3 | Página de pre-venta Miembro Fundador | **HECHO** — `src/app/(site)/miembro-fundador/` con 50 cupos, 6 beneficios, timeline, comparador |
 
 ### NIVEL 4 — CRECIMIENTO ORGÁNICO
 
@@ -118,8 +118,12 @@ public/
 
 ## Notas técnicas activas
 
-- `.vercelignore` excluye steps 8-9 de coreano — hay archivos untracked de steps 8-19 pendientes de commit
-- `PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`, `korean-intro-speaking-1.ts` — trabajo en progreso sin commitear
-- La página `/precios` actual es de suscripción (no tiene paquetes de horas 1:1) — puede necesitar una sección separada
-- No hay WhatsApp flotante en ninguna página — pendiente M1.2
-- No hay landing de inglés/IELTS — pendiente M1.1
+- **Korean assets (steps 008-019)**: 552MB en disco local, excluidos de git (`.gitignore`) y de Vercel (`.vercelignore`). NO commitear.
+- **`public/images/david-duarte.jpg`**: aún no existe. La landing de inglés tiene `fill` con `objectFit: cover` listo para recibirla.
+- **Testimonios**: la landing `/clases-de-ingles` tiene 3 testimonios placeholder. Reemplazar con reales cuando David los tenga.
+- **Supabase `leads` tabla**: la acción `saveLead` ya existe pero la migración SQL no se ha ejecutado en el dashboard de Supabase.
+- **GTM M1.4**: el código ya hace `window.dataLayer.push({ event: 'click_whatsapp' })` y `{ event: 'lead_simulacro' }`. Solo falta crear los triggers y tags en tagmanager.google.com (GTM-57NXLPZV) y publicar.
+- **`/registro` links**: todos los links de marketing corregidos a `/clases-de-ingles`. El único `/registro` que permanece es el de `AuthForm.tsx` (correcto, apunta a `(auth)/registro`).
+- **Nav links**: Home, Inglés, Coreano, Exámenes, Método, Precios. Lección y Práctica quitados del nav principal (son features de app, no marketing).
+- **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
+- **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.

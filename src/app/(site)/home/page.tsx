@@ -440,6 +440,7 @@ export default function HomePage() {
             <p className="wlh-footer__col-title">Compañía</p>
             <Link href="/metodo">Método</Link>
             <Link href="/precios">Precios</Link>
+            <Link href="/blog">Blog</Link>
             <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20contactar%20a%20WeLearn." target="_blank" rel="noopener noreferrer">Contacto</a>
           </div>
         </div>

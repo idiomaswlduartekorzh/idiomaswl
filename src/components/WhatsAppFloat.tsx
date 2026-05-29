@@ -17,6 +17,7 @@ const PAGE_MESSAGES: [string, string][] = [
   ['/examenes/delf-dalf', 'Hola, vi la información del DELF en WeLearn y quiero saber cómo prepararme.'],
   ['/examenes/cils-celi', 'Hola, vi la información del CILS en WeLearn y quiero saber cómo prepararme.'],
   ['/examenes',           'Hola, vi los simulacros de exámenes de WeLearn y quiero más información.'],
+  ['/blog',               'Hola, leí un artículo del blog de WeLearn y quiero saber más sobre las clases.'],
   ['/precios',            'Hola, vi los precios de WeLearn y quiero saber cuál plan es el mejor para mí.'],
   ['/metodo',             'Hola, vi el método de WeLearn y quiero conocer más sobre cómo funciona.'],
   ['/leccion',            'Hola, estaba viendo una lección de WeLearn y quiero saber cómo acceder a más contenido.'],

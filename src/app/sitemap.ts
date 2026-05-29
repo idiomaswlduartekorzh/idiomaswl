@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { BLOG_POSTS } from '@/data/blog';
 
 const BASE = 'https://idiomaswl.com';
 
@@ -29,6 +30,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...EXAM_SLUGS.map((slug) => ({
       url: `${BASE}/examenes/${slug}`,
       lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    })),
+
+    // ── Blog ───────────────────────────────────────────────────────────────────
+    { url: `${BASE}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    ...BLOG_POSTS.map(post => ({
+      url: `${BASE}/blog/${post.slug}`,
+      lastModified: new Date(post.updatedDate ?? post.date),
       changeFrequency: 'monthly' as const,
       priority: 0.75,
     })),
