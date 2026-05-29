@@ -1009,6 +1009,174 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Si quieres trabajar específicamente la sección de Speaking del IELTS o mejorar el inglés hablado para el trabajo, puedes <a href="/clases-de-ingles">conocer cómo funcionamos en WeLearn</a> — las clases 1:1 incluyen práctica de producción con retroalimentación en cada sesión.</p>
     `,
   },
+  {
+    slug: 'ielts-academic-vs-general-training',
+    title: 'IELTS Academic vs General Training: cuál debes tomar según tu objetivo',
+    description:
+      'La diferencia entre IELTS Academic y General Training es más importante de lo que parece. Elegir el módulo equivocado puede invalidar tu resultado. Aquí la guía definitiva para colombianos.',
+    date: '2026-05-29',
+    readTime: 7,
+    category: 'IELTS',
+    tags: ['IELTS Academic', 'IELTS General Training', 'diferencia', 'migración', 'universidad', 'Colombia'],
+    body: `
+<h2>El error que invalida meses de preparación</h2>
+<p>Cada año, cientos de colombianos presentan el IELTS y descubren después que tomaron el módulo equivocado. Una universidad en Canadá rechaza su aplicación porque enviaron el resultado de General Training, no de Academic. O alguien aplica para residencia permanente en Australia con un Academic cuando el proceso migratorio acepta cualquiera, pero el Academic tiene mayor dificultad innecesaria para ese trámite.</p>
+<p>La diferencia entre IELTS Academic e IELTS General Training no es de nivel de dificultad en términos absolutos — es de propósito, contenido y a qué puertas abre cada uno. Entenderla bien antes de inscribirte puede ahorrarte meses de preparación y cientos de dólares en exámenes repetidos.</p>
+
+<h2>Qué tienen en común ambos módulos</h2>
+<p>Antes de ver las diferencias, lo que es igual en los dos:</p>
+<ul>
+  <li><strong>Listening</strong> (40 minutos): exactamente igual en Academic y General. 4 grabaciones, 40 preguntas. Sin diferencia de dificultad.</li>
+  <li><strong>Speaking</strong> (11–14 minutos): exactamente igual. Entrevista cara a cara en 3 partes. Sin diferencia.</li>
+  <li><strong>Escala de puntaje</strong>: mismo sistema de Bands del 0 al 9, con medios puntos (6.5, 7.5, etc.).</li>
+  <li><strong>Validez</strong>: 2 años para ambos.</li>
+  <li><strong>Precio</strong>: igual (~$330.000–$380.000 COP según el centro de examinación).</li>
+</ul>
+
+<h2>Dónde difieren: Reading y Writing</h2>
+<h3>Reading: el mayor contraste</h3>
+<p><strong>Academic</strong>: 3 textos académicos largos y complejos (de revistas científicas, publicaciones académicas, libros especializados). Vocabulario técnico, argumentación abstracta, alta densidad de información. Es la sección que más diferencia al Academic del General.</p>
+<p><strong>General Training</strong>: 3 secciones con textos más cortos y de uso cotidiano: avisos, anuncios, cartas, extractos de libros de texto, artículos de revistas generales. Menor complejidad léxica. La mayoría de personas con buen inglés cotidiano encuentran el Reading del General más manejable.</p>
+<p><em>Consecuencia práctica</em>: si presentas Academic con el mismo tiempo de preparación que General, probablemente obtienes 0.5–1 Band menos en Reading.</p>
+
+<h3>Writing: matices importantes</h3>
+<p><strong>Academic Task 1</strong>: describes e interpretas un gráfico, diagrama, mapa o proceso. Lenguaje académico, estructuras formales, vocabulario de análisis visual.</p>
+<p><strong>General Training Task 1</strong>: escribes una carta — formal, semiformal o informal — respondiendo a una situación dada (quejarse con una empresa, solicitar información, escribirle a un amigo).</p>
+<p><strong>Task 2</strong>: el ensayo argumentativo es igual en ambos en estructura, pero los temas del Academic tienden a ser más abstractos ("Technology is changing the nature of work. To what extent do you agree or disagree?") mientras que los del General son más cotidianos ("Many people believe that everyone should have access to the internet for free. Do you agree or disagree?").</p>
+
+<h2>La guía rápida: cuál tomar según tu objetivo</h2>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Objetivo</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Módulo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Universidad de pregrado o postgrado en UK, Canadá, Australia, EE.UU., Irlanda</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700; color: #1a4fcc;">Academic</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Residencia permanente o permiso de trabajo en Canadá (Express Entry, PNP)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700; color: #1a6e3c;">General Training</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Visa de trabajo o residencia en Australia (Subclass 189, 190, etc.)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700; color: #1a6e3c;">General Training</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Visa de trabajo o residencia en UK (Skilled Worker Visa)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">Academic o General*</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Membresía en colegios profesionales (enfermería, medicina, arquitectura en UK/Australia)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700; color: #1a4fcc;">Academic (generalmente)</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Certificación personal de nivel de inglés (para mostrar en el trabajo)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">Cualquiera</td></tr>
+  </tbody>
+</table>
+<p style="font-size: 0.82rem; color: #888;">* Para la UK Skilled Worker Visa, verificar los requisitos del empleador específico. Muchos aceptan ambos; posiciones académicas suelen exigir Academic.</p>
+
+<h2>¿Y si no estoy seguro de cuál necesito?</h2>
+<p>La respuesta corta: verifica la convocatoria específica a la que vas a aplicar. Cada universidad, cada proceso migratorio y cada colegios profesional indica explícitamente qué módulo acepta. Nunca asumas.</p>
+<p>Si tienes un objetivo claro pero no sabes cuál módulo requiere, o si quieres prepararte para el IELTS con una estrategia específica para Academic o General Training, puedes <a href="/clases-de-ingles">agendar una clase de diagnóstico gratis en WeLearn</a> — en esa sesión revisamos tu objetivo, te orientamos sobre qué módulo necesitas y diseñamos el plan de preparación más eficiente.</p>
+<p>Y si quieres practicar antes con un simulacro gratuito, puedes <a href="/examenes/ielts">hacer el simulacro de IELTS</a> en nuestra plataforma.</p>
+    `,
+  },
+  {
+    slug: 'como-prepararse-para-el-ielts-en-3-meses',
+    title: 'Cómo prepararse para el IELTS en 3 meses: plan semana a semana',
+    description:
+      'Plan de preparación de 12 semanas para el IELTS desde nivel B1. Incluye distribución de tiempo por sección, recursos recomendados y los errores más comunes que cuestan medio Band.',
+    date: '2026-05-30',
+    readTime: 10,
+    category: 'IELTS',
+    tags: ['preparación IELTS', 'plan de estudio IELTS', '3 meses', 'Band 7', 'Colombia', 'IELTS Speaking', 'IELTS Writing'],
+    body: `
+<h2>¿Es posible preparar el IELTS en 3 meses?</h2>
+<p>Sí — con condiciones. Si partes de un nivel B1 sólido (puedes tener conversaciones básicas, entiendes textos simples en inglés, tienes gramática del presente, pasado y futuro) y dedicas entre 1 y 1.5 horas diarias de práctica activa, 12 semanas son suficientes para alcanzar Band 6.5–7.0.</p>
+<p>Si tu punto de partida es A2 o menos, 3 meses no es suficiente para el IELTS — necesitarás primero 6–9 meses de trabajo en el nivel general del idioma. Si tu nivel es B2 sólido, 6–8 semanas intensivas pueden ser suficientes.</p>
+<p>Este plan asume nivel B1 de partida y objetivo Band 6.5–7.0.</p>
+
+<h2>Principios que guían este plan</h2>
+<ol>
+  <li><strong>Practicar en formato examen desde la primera semana</strong>. Conocer el formato del IELTS es la primera capa de preparación; sin ella, pierdes Bands por desconocer las instrucciones, no por falta de inglés.</li>
+  <li><strong>Reading y Writing son las secciones donde más se gana o se pierde</strong>. La mayoría de colombianos tiene niveles de Listening y Speaking más uniformes. La diferencia entre Band 6 y Band 7 suele estar en Writing Task 2 y en la velocidad y estrategia de Reading.</li>
+  <li><strong>Speaking requiere práctica activa, no solo estudio pasivo</strong>. Leer sobre técnicas de Speaking no mejora tu Speaking. Hablar lo mejora.</li>
+  <li><strong>Una semana de simulacro completo antes del examen</strong>. Las condiciones de tiempo real del examen son parte de la preparación — no practicarlas es un error costoso.</li>
+</ol>
+
+<h2>El plan semana a semana</h2>
+
+<h3>Semanas 1–2: Diagnóstico y familiarización</h3>
+<p><strong>Objetivos</strong>: saber exactamente en qué nivel estás, conocer el formato de cada sección, identificar tus secciones débiles.</p>
+<ul>
+  <li>Haz un simulacro completo en condiciones reales (con timer). Anota tu Band estimado en cada sección.</li>
+  <li>Estudia las instrucciones y el tiempo asignado a cada sección. Memoriza el número de preguntas, el tipo de respuesta y los formatos de Writing.</li>
+  <li>Lee los descriptores de banda del IELTS (disponibles en el sitio oficial de British Council/IDP) para Writing y Speaking: entiende qué se califica y con qué criterios.</li>
+  <li>Tiempo diario: 45–60 minutos.</li>
+</ul>
+
+<h3>Semanas 3–5: Fundamentos por sección</h3>
+<p><strong>Objetivos</strong>: construir estrategias específicas para Reading, Writing y Listening.</p>
+<p><em>Reading (20 min/día)</em>:</p>
+<ul>
+  <li>Practica skimming (leer para idea general) y scanning (buscar información específica) — no leer de inicio a fin.</li>
+  <li>Haz al menos 1 texto completo con timer al día.</li>
+  <li>Estudia los tipos de pregunta: True/False/Not Given, Matching Headings, Sentence Completion. Cada tipo tiene una estrategia diferente.</li>
+</ul>
+<p><em>Writing (20 min/día)</em>:</p>
+<ul>
+  <li>Escribe 2 Task 2 por semana. Usa el tiempo real (40 minutos). Revisa contra la rúbrica.</li>
+  <li>Estudia la estructura del ensayo argumentativo: intro (parafraseo + tesis) → dos párrafos de argumento (idea + desarrollo + ejemplo) → conclusión (reafirmar tesis, no solo resumir).</li>
+  <li>Aprende 15–20 frases conectoras y de transición: "Furthermore", "In contrast", "This suggests that", "It can be argued that".</li>
+</ul>
+<p><em>Speaking (15 min/día)</em>:</p>
+<ul>
+  <li>Practica Part 1 (preguntas personales) con respuestas de 2–3 oraciones, no monosílabos.</li>
+  <li>Grábate. Escucha. Identifica palabras en las que te bloqueas.</li>
+</ul>
+<p><em>Listening (15 min/día)</em>:</p>
+<ul>
+  <li>1 sección de Listening con el audio real (sin pausas). Verifica respuestas. Vuelve a escuchar las partes incorrectas.</li>
+</ul>
+
+<h3>Semanas 6–8: Profundización y corrección de errores</h3>
+<p><strong>Objetivos</strong>: corregir los patrones de error identificados en la fase anterior, aumentar velocidad en Reading, mejorar coherencia en Writing.</p>
+<ul>
+  <li>Haz 2 simulacros parciales (solo Reading o solo Writing) con cronómetro cada semana.</li>
+  <li>Writing Task 2: empieza a trabajar el léxico por área temática. Los temas más frecuentes son: educación, tecnología, medioambiente, trabajo, salud, globalización. Aprende vocabulario específico de cada área.</li>
+  <li>Speaking Part 2 (monólogo de 2 minutos): practica con un tema diferente cada día. Usa el minuto de preparación para hacer un esquema mental rápido: punto de vista + 2 argumentos + ejemplo.</li>
+  <li>Tiempo diario: 60–75 minutos.</li>
+</ul>
+
+<h3>Semanas 9–11: Simulacros y ajuste fino</h3>
+<p><strong>Objetivos</strong>: consolidar, hacer simulacros completos, identificar últimos puntos débiles.</p>
+<ul>
+  <li>1 simulacro completo (4 secciones + Speaking) por semana, en condiciones reales.</li>
+  <li>Después de cada simulacro: análisis detallado de errores. ¿Fue por tiempo? ¿Por vocabulario? ¿Por estrategia? Cada tipo de error requiere una corrección diferente.</li>
+  <li>Writing: pide retroalimentación externa en al menos 2–3 ensayos. La autocorrección tiene límites — un corrector externo con experiencia en IELTS puede darte el feedback específico que necesitas.</li>
+  <li>Speaking Part 3: practica discutir temas abstractos. "How do you think technology will change education in the next 20 years?" — necesitas opinión + argumento + especulación sobre el futuro.</li>
+</ul>
+
+<h3>Semana 12: Preparación final</h3>
+<p><strong>Objetivos</strong>: llegar al examen sin ansiedad y con la estrategia clara.</p>
+<ul>
+  <li>Lunes–miércoles: repaso de estrategias por sección (no nuevo material).</li>
+  <li>Jueves: simulacro completo en las condiciones más parecidas posibles al día del examen.</li>
+  <li>Viernes: descanso activo. Lee un texto en inglés que te guste. Conversa en inglés si puedes.</li>
+  <li>El día anterior: revisa tus notas de estrategia de cada sección, come bien, duerme bien. No estudies material nuevo.</li>
+</ul>
+
+<h2>Los errores que cuestan 0.5–1 Band</h2>
+<ol>
+  <li><strong>Writing Task 2: no responder la pregunta</strong>. Escribe 300 palabras brillantes sobre un tema relacionado pero diferente al que preguntaron → Band 5 en Task Achievement automáticamente.</li>
+  <li><strong>Reading: leer el texto completo antes de las preguntas</strong>. Con 60 minutos para 40 preguntas y 3 textos, no hay tiempo para leer todo. Debes ir a las preguntas primero y buscar la información en el texto.</li>
+  <li><strong>Listening: perder el hilo y no recuperarse</strong>. Si pierdes una respuesta, suéltala y sigue. Quedarse atascado hace que pierdas las siguientes 2 o 3 respuestas.</li>
+  <li><strong>Speaking: respuestas de una sola oración</strong>. "Do you like cooking?" "Yes." → Band 4. "Yes, I actually enjoy cooking. I find it relaxing after a long day. I usually cook simple things like pasta or rice, but lately I've been trying to learn more traditional Colombian recipes." → Band 6–7.</li>
+  <li><strong>No practicar en condiciones de tiempo real</strong>. El estrés del tiempo del día del examen es real. Si no entrenas bajo esas condiciones, el primer examen real se convierte en el entrenamiento.</li>
+</ol>
+
+<h2>Recursos recomendados para la preparación</h2>
+<ul>
+  <li><strong>Cambridge IELTS Practice Tests</strong> (libros oficiales, series 1–17+): los únicos simulacros que replican el formato exacto del examen real.</li>
+  <li><strong>IELTS.org</strong>: el sitio oficial de British Council e IDP tiene materiales de práctica gratuitos y los descriptores de banda.</li>
+  <li><strong>E2 IELTS en YouTube</strong>: canal con estrategias específicas por sección, muy útil para entender los criterios de evaluación de Writing y Speaking.</li>
+  <li><strong>Simulacro gratuito WeLearn</strong>: practica el formato del IELTS en nuestra plataforma antes de pagar por el examen oficial.</li>
+</ul>
+
+<h2>¿Solo o con un tutor?</h2>
+<p>La preparación autodidacta con este plan es posible si tienes disciplina y experiencia evaluando tu propio trabajo. El mayor riesgo de la preparación solo es el Writing: la autocorrección tiene un límite claro porque no puedes detectar los errores que cometes sistemáticamente — precisamente porque los cometes sin notarlos.</p>
+<p>Un tutor con experiencia en IELTS acelera significativamente la preparación en Writing y Speaking porque puede darte retroalimentación específica que tú solo no puedes generarte. En WeLearn, la preparación para IELTS es 1:1 con tutor asignado — la clase de diagnóstico gratis te permite evaluar el nivel, decidir el plan y empezar a prepararte con dirección clara.</p>
+<p>Si quieres agendar tu diagnóstico gratuito o tienes preguntas sobre la preparación, puedes hacerlo por <a href="/clases-de-ingles">nuestra página de clases de inglés</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
