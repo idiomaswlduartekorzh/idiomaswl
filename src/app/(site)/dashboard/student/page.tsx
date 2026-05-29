@@ -3,6 +3,16 @@ import { createClient } from '@/lib/supabase/server'
 import StudentDashboardClient from './StudentDashboardClient'
 import type { RecentExam, DashboardStats } from './StudentDashboardClient'
 
+// Korean lessons shown in the dashboard grid (step IDs match /courses/korean/step/[n])
+const KOREAN_STEPS = [
+  { day: 1, title: 'Annyeonghaseyo', sub: 'Saludos básicos' },
+  { day: 2, title: 'Café I',         sub: 'Pedir bebidas' },
+  { day: 3, title: 'Café II',        sub: 'Vocabulario extendido' },
+  { day: 4, title: 'Café III',       sub: 'Demostrativos + números' },
+  { day: 6, title: 'Mercado',        sub: 'Compras y precios' },
+  { day: 7, title: 'Transporte',     sub: 'Cómo pedir taxi' },
+]
+
 // Exam slug → brand colour (used for progress cards)
 const EXAM_COLOURS: Record<string, string> = {
   ielts: '#c8202e',
@@ -84,11 +94,28 @@ export default async function StudentDashboardPage() {
     }
   }
 
+  // ── Fetch Korean lesson progress ────────────────────────────────────────────
+  const { data: progressRows } = await supabase
+    .from('user_progress')
+    .select('step_id')
+    .eq('user_id', user.id)
+    .eq('course_slug', 'korean')
+
+  const completedStepIds = new Set(
+    (progressRows ?? []).map(r => String(r.step_id))
+  )
+
+  const koreanLessons = KOREAN_STEPS.map(step => ({
+    ...step,
+    done: completedStepIds.has(String(step.day)),
+  }))
+
   return (
     <StudentDashboardClient
       name={name}
       stats={stats}
       recentExams={recentExams}
+      koreanLessons={koreanLessons}
     />
   )
 }

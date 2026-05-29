@@ -22,10 +22,18 @@ export interface RecentExam {
   slug: string
 }
 
+export interface KoreanLesson {
+  day: number
+  title: string
+  sub: string
+  done: boolean
+}
+
 interface Props {
   name: string
   stats?: DashboardStats
   recentExams?: RecentExam[]
+  koreanLessons?: KoreanLesson[]
 }
 
 /* ── SVG icon map ───────────────────────────────────────────────────────────── */
@@ -214,7 +222,7 @@ const RADAR_DATA = [
 ]
 
 /* ── Component ─────────────────────────────────────────────────────────────── */
-export default function StudentDashboardClient({ name, stats, recentExams }: Props) {
+export default function StudentDashboardClient({ name, stats, recentExams, koreanLessons }: Props) {
   const [sideOpen, setSideOpen] = useState(false)
   const initial = name[0]?.toUpperCase() ?? 'E'
 
@@ -321,14 +329,14 @@ export default function StudentDashboardClient({ name, stats, recentExams }: Pro
                   <Link href="/leccion" className="std-section__link">Ver todas →</Link>
                 </div>
                 <div className="std-korean-grid">
-                  {[
-                    { day: 1, title: 'Annyeonghaseyo', sub: 'Saludos básicos', done: true },
-                    { day: 2, title: 'Café I', sub: 'Pedir bebidas', done: true },
-                    { day: 3, title: 'Café II', sub: 'Vocabulario extendido', done: true },
+                  {(koreanLessons ?? [
+                    { day: 1, title: 'Annyeonghaseyo', sub: 'Saludos básicos', done: false },
+                    { day: 2, title: 'Café I', sub: 'Pedir bebidas', done: false },
+                    { day: 3, title: 'Café II', sub: 'Vocabulario extendido', done: false },
                     { day: 4, title: 'Café III', sub: 'Demostrativos + números', done: false },
                     { day: 6, title: 'Mercado', sub: 'Compras y precios', done: false },
                     { day: 7, title: 'Transporte', sub: 'Cómo pedir taxi', done: false },
-                  ].map(lesson => (
+                  ]).map(lesson => (
                     <Link
                       key={lesson.day}
                       href={`/courses/korean/step/${lesson.day}`}
