@@ -13,6 +13,7 @@ import {
 } from 'recharts'
 import { motion } from 'framer-motion'
 import type { DashboardData } from './JoseDashboardServer'
+import StudentList from './StudentList'
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const A  = '#c87941'   // accent orange
@@ -208,6 +209,7 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
 // ─── Main ─────────────────────────────────────────────────────────────────────
 export default function JoseDashboard({ data }: { data: DashboardData }) {
   const [_tab, setTab] = useState('overview')
+  const [activeTab, setActiveTab] = useState<'overview' | 'students'>('overview')
 
   const now = new Date()
   const dateStr = now.toLocaleDateString('es-ES', {
@@ -258,15 +260,22 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
             </span>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: 3, flex: 1, overflow: 'hidden' }}>
-            <button style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: TEXT, color: '#fff', fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
-              <LayoutDashboard size={13} /> Dashboard
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flex: 1, overflow: 'hidden' }}>
+            <button
+              onClick={() => setActiveTab('overview')}
+              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'overview' ? TEXT : 'transparent', color: activeTab === 'overview' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
+              <LayoutDashboard size={13} /> Overview
             </button>
-            {[Users, BookOpen, FileText, MessageCircle, DollarSign, Settings, Bell].map((Icon, i) => (
-              <button key={i} style={{ width: 32, height: 32, borderRadius: 9, border: 'none', background: 'transparent', color: MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', flexShrink: 0 }}>
-                <Icon size={15} />
-              </button>
-            ))}
+            <button
+              onClick={() => setActiveTab('students')}
+              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'students' ? TEXT : 'transparent', color: activeTab === 'students' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
+              <Users size={13} /> Estudiantes
+              {data.students.length > 0 && (
+                <span style={{ background: A, color: '#fff', borderRadius: 100, fontSize: 9, fontWeight: 800, padding: '1px 6px', marginLeft: 2 }}>
+                  {data.students.length}
+                </span>
+              )}
+            </button>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
@@ -282,6 +291,35 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
 
         {/* CONTENT */}
         <main style={{ flex: 1, overflowY: 'auto', padding: '22px 24px', display: 'flex', flexDirection: 'column', gap: 14 }}>
+
+          {/* ── STUDENTS TAB ── */}
+          {activeTab === 'students' && (
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+                <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>
+                  Estudiantes
+                </h1>
+                <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+                  {(['autodidacta', 'preparacion', 'intensivo'] as const).map(p => {
+                    const count = data.students.filter(s => s.plan === p).length
+                    const color = p === 'intensivo' ? '#c8202e' : p === 'preparacion' ? '#1a2ecc' : '#6b7280'
+                    return (
+                      <div key={p} style={{ textAlign: 'center' }}>
+                        <p style={{ margin: 0, fontSize: 18, fontWeight: 800, color: TEXT }}>{count}</p>
+                        <p style={{ margin: 0, fontSize: 10, color, fontWeight: 700, textTransform: 'capitalize' }}>{p}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+              <Card>
+                <StudentList students={data.students} />
+              </Card>
+            </div>
+          )}
+
+          {/* ── OVERVIEW TAB ── */}
+          {activeTab === 'overview' && <>
 
           {/* Title + filters */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -468,6 +506,8 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
               )}
             </Card>
           </div>
+
+          </>}
 
         </main>
       </div>

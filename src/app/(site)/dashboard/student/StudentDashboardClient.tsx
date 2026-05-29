@@ -29,8 +29,23 @@ export interface KoreanLesson {
   done: boolean
 }
 
+export type StudentPlan = 'autodidacta' | 'preparacion' | 'intensivo'
+
+const PLAN_LABELS: Record<StudentPlan, string> = {
+  autodidacta: 'Autodidacta',
+  preparacion: 'Preparación',
+  intensivo:   'Intensivo',
+}
+const PLAN_COLORS: Record<StudentPlan, string> = {
+  autodidacta: '#6b7280',
+  preparacion: '#1a2ecc',
+  intensivo:   '#c8202e',
+}
+
 interface Props {
   name: string
+  plan: StudentPlan
+  streak: number
   stats?: DashboardStats
   recentExams?: RecentExam[]
   koreanLessons?: KoreanLesson[]
@@ -222,7 +237,7 @@ const RADAR_DATA = [
 ]
 
 /* ── Component ─────────────────────────────────────────────────────────────── */
-export default function StudentDashboardClient({ name, stats, recentExams, koreanLessons }: Props) {
+export default function StudentDashboardClient({ name, plan, streak, stats, recentExams, koreanLessons }: Props) {
   const [sideOpen, setSideOpen] = useState(false)
   const initial = name[0]?.toUpperCase() ?? 'E'
 
@@ -293,7 +308,19 @@ export default function StudentDashboardClient({ name, stats, recentExams, korea
           {/* ── Greeting ── */}
           <div className="std-greeting">
             <div>
-              <h1 className="std-greeting__h1">Bienvenido/a, {name}</h1>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <h1 className="std-greeting__h1" style={{ margin: 0 }}>Bienvenido/a, {name}</h1>
+                <span style={{
+                  fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em',
+                  padding: '3px 9px', borderRadius: 100,
+                  background: PLAN_COLORS[plan] + '18',
+                  color: PLAN_COLORS[plan],
+                  border: `1px solid ${PLAN_COLORS[plan]}44`,
+                  whiteSpace: 'nowrap',
+                }}>
+                  {PLAN_LABELS[plan]}
+                </span>
+              </div>
               <p className="std-greeting__sub">
                 {stats?.simulacros
                   ? `${stats.simulacros} simulacro${stats.simulacros !== 1 ? 's' : ''} completado${stats.simulacros !== 1 ? 's' : ''} · Sigue practicando`
@@ -429,35 +456,100 @@ export default function StudentDashboardClient({ name, stats, recentExams, korea
                 <div className="std-streak__header">
                   <span className="std-streak__fire">{IC.flame}</span>
                   <div>
-                    <p className="std-streak__num">18 días</p>
+                    <p className="std-streak__num">{streak > 0 ? `${streak} día${streak !== 1 ? 's' : ''}` : '0 días'}</p>
                     <p className="std-streak__label">racha activa</p>
                   </div>
                 </div>
-                <p className="std-streak__hint">¡Practica hoy para no perder tu racha!</p>
+                <p className="std-streak__hint">
+                  {streak >= 7
+                    ? `¡Increíble! ${streak} días seguidos. ¡No la pierdas!`
+                    : streak > 0
+                    ? '¡Practica hoy para seguir tu racha!'
+                    : 'Empieza hoy y construye tu racha.'}
+                </p>
                 <div className="std-streak__days">
-                  {['L','M','M','J','V','S','D'].map((d, i) => (
-                    <div key={i} className={`std-streak__day${i < 5 ? ' std-streak__day--done' : ''}`}>
-                      <div className="std-streak__day-dot" />
-                      <span>{d}</span>
-                    </div>
-                  ))}
+                  {['L','M','M','J','V','S','D'].map((d, i) => {
+                    // Mark last `streak` days as done (simplified visual)
+                    const today = new Date().getDay() // 0=Sun,1=Mon...
+                    const dayIndex = [1,2,3,4,5,6,0][i] // Mon=0 → index 1
+                    const diff = (today - dayIndex + 7) % 7
+                    const done = diff < streak
+                    return (
+                      <div key={i} className={`std-streak__day${done ? ' std-streak__day--done' : ''}`}>
+                        <div className="std-streak__day-dot" />
+                        <span>{d}</span>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
 
-              {/* Rank */}
-              <div className="std-widget std-rank">
-                <div className="std-rank__header">
-                  <span className="std-rank__badge">{IC.award}</span>
-                  <div>
-                    <p className="std-rank__label">Tu posición</p>
-                    <p className="std-rank__num">Rango #42</p>
-                  </div>
+              {/* Plan-gated: Feedback (Preparación+) */}
+              {plan === 'autodidacta' ? (
+                <div className="std-widget std-lock-card">
+                  <p className="std-lock-card__eyebrow">🔒 Plan Preparación</p>
+                  <p className="std-lock-card__title">Feedback de tu tutor</p>
+                  <p className="std-lock-card__desc">
+                    Con Preparación recibes correcciones escritas de cada simulacro y acceso directo a tu tutor.
+                  </p>
+                  <a
+                    href="https://wa.me/573005004253?text=Hola%2C%20quiero%20conocer%20el%20plan%20Preparaci%C3%B3n%20de%20WeLearn."
+                    target="_blank" rel="noopener noreferrer"
+                    className="std-upgrade__btn"
+                    style={{ display: 'inline-block', marginTop: 4 }}
+                  >
+                    Ver plan Preparación →
+                  </a>
                 </div>
-                <div className="std-rank__bar-track">
-                  <div className="std-rank__bar-fill" style={{ width: '68%' }} />
+              ) : (
+                <div className="std-widget">
+                  <p className="std-widget__title">Feedback pendiente</p>
+                  <p style={{ fontSize: 12, color: 'var(--muted)', margin: '6px 0 0', lineHeight: 1.5 }}>
+                    Tu tutor revisará tus próximos simulacros y dejará comentarios aquí.
+                  </p>
+                  <a
+                    href="https://wa.me/573005004253?text=Hola%2C%20tengo%20preguntas%20sobre%20mi%20simulacro%20reciente%20en%20WeLearn."
+                    target="_blank" rel="noopener noreferrer"
+                    style={{ display: 'inline-block', marginTop: 10, fontSize: 12, fontWeight: 600, color: 'var(--accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}
+                  >
+                    Preguntar al tutor →
+                  </a>
                 </div>
-                <p className="std-rank__hint">+15 pts para subir al Rango #41</p>
-              </div>
+              )}
+
+              {/* Plan-gated: Sesiones en vivo (Intensivo) */}
+              {plan !== 'intensivo' ? (
+                <div className="std-widget std-lock-card">
+                  <p className="std-lock-card__eyebrow">🔒 Plan Intensivo</p>
+                  <p className="std-lock-card__title">Sesiones en vivo</p>
+                  <p className="std-lock-card__desc">
+                    Clases 1:1 con tutor asignado, plan de estudio personalizado y evaluación mensual.
+                  </p>
+                  <a
+                    href="https://wa.me/573005004253?text=Hola%2C%20quiero%20conocer%20el%20plan%20Intensivo%20de%20WeLearn."
+                    target="_blank" rel="noopener noreferrer"
+                    className="std-upgrade__btn"
+                    style={{ display: 'inline-block', marginTop: 4 }}
+                  >
+                    Ver plan Intensivo →
+                  </a>
+                </div>
+              ) : (
+                <div className="std-widget" style={{ background: 'linear-gradient(135deg, #0f7c3e 0%, #1a6e3c 100%)', border: 'none' }}>
+                  <p style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'rgba(255,255,255,0.6)', margin: '0 0 6px' }}>Plan Intensivo</p>
+                  <p style={{ fontSize: 14, fontWeight: 700, color: '#fff', margin: '0 0 8px' }}>Sesiones en vivo</p>
+                  <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.75)', margin: '0 0 12px', lineHeight: 1.5 }}>
+                    Agenda tu próxima sesión con tu tutor.
+                  </p>
+                  <a
+                    href="https://wa.me/573005004253?text=Hola%2C%20quiero%20agendar%20mi%20pr%C3%B3xima%20sesi%C3%B3n%20en%20vivo%20con%20WeLearn."
+                    target="_blank" rel="noopener noreferrer"
+                    style={{ display: 'inline-block', background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.3)', color: '#fff', padding: '7px 12px', borderRadius: 8, fontSize: 12, fontWeight: 600, textDecoration: 'none' }}
+                  >
+                    Agendar sesión →
+                  </a>
+                </div>
+              )}
 
               {/* Skills radar */}
               <div className="std-widget">
@@ -1110,6 +1202,35 @@ export default function StudentDashboardClient({ name, stats, recentExams, korea
           font-size: 11px;
           color: var(--muted);
           margin: 0;
+        }
+
+        /* Lock card (plan gate) */
+        .std-lock-card {
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px dashed rgba(20,33,92,0.18);
+        }
+        .std-lock-card__eyebrow {
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: var(--muted);
+          margin: 0 0 6px;
+        }
+        .std-lock-card__title {
+          font-size: 14px;
+          font-weight: 700;
+          color: var(--ink);
+          margin: 0 0 6px;
+          letter-spacing: -0.01em;
+        }
+        .std-lock-card__desc {
+          font-size: 12px;
+          color: var(--muted);
+          margin: 0;
+          line-height: 1.5;
         }
 
         /* Upgrade widget */

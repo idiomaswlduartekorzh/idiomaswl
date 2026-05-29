@@ -1,5 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import JoseDashboard from './JoseDashboard'
+import type { StudentRow } from './StudentList'
+import type { StudentPlan } from '@/lib/actions/assignPlan'
 
 export interface ExamSubmission {
   id: string
@@ -35,6 +37,7 @@ export interface DashboardData {
   recentSubmissions: ExamSubmission[]
   topUsers: { user_email: string; count: number }[]
   pendingIelts: ExamSubmission[]
+  students: StudentRow[]
 }
 
 export default async function JoseDashboardServer() {
@@ -94,6 +97,37 @@ export default async function JoseDashboardServer() {
     (r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers)
   )
 
+  // ── Students list ────────────────────────────────────────────────────────────
+  const { data: profileRows } = await supabase
+    .from('profiles')
+    .select('id, email, full_name, plan, enrolled_at, created_at')
+    .eq('role', 'student')
+    .order('created_at', { ascending: false })
+
+  // Build simulacro count per user from existing submissions
+  const simCountMap = new Map<string, number>()
+  for (const r of rows) {
+    if (!r.user_id) continue
+    simCountMap.set(r.user_id, (simCountMap.get(r.user_id) ?? 0) + 1)
+  }
+
+  // Last active date per user (most recent submission)
+  const lastActiveMap = new Map<string, string>()
+  for (const r of rows) {
+    if (!r.user_id) continue
+    if (!lastActiveMap.has(r.user_id)) lastActiveMap.set(r.user_id, r.created_at)
+  }
+
+  const students: StudentRow[] = (profileRows ?? []).map(p => ({
+    id:              p.id,
+    email:           p.email,
+    full_name:       p.full_name ?? null,
+    plan:            (p.plan as StudentPlan) ?? 'autodidacta',
+    enrolled_at:     p.enrolled_at ?? p.created_at ?? null,
+    simulacro_count: simCountMap.get(p.id) ?? 0,
+    last_active:     lastActiveMap.get(p.id) ?? null,
+  }))
+
   const dashboardData: DashboardData = {
     submissions: rows,
     totalCount: rows.length,
@@ -103,6 +137,7 @@ export default async function JoseDashboardServer() {
     recentSubmissions: rows.slice(0, 10),
     topUsers,
     pendingIelts,
+    students,
   }
 
   return <JoseDashboard data={dashboardData} />
