@@ -8,7 +8,25 @@ import {
   PolarRadiusAxis, ResponsiveContainer, Tooltip,
 } from 'recharts'
 
-interface Props { name: string }
+export interface DashboardStats {
+  simulacros: number
+  mejorScore: number
+  diasActivo: number
+}
+
+export interface RecentExam {
+  name: string
+  subtitle: string
+  pct: number
+  color: string
+  slug: string
+}
+
+interface Props {
+  name: string
+  stats?: DashboardStats
+  recentExams?: RecentExam[]
+}
 
 /* ── SVG icon map ───────────────────────────────────────────────────────────── */
 const IC = {
@@ -195,17 +213,22 @@ const RADAR_DATA = [
   { skill: 'Vocab',     value: 74 },
 ]
 
-const STATS: { num: string; label: string; icon: ReactNode }[] = [
-  { num: '12',   label: 'Simulacros',     icon: IC.clipboard2 },
-  { num: '847',  label: 'Preguntas',      icon: IC.pencil     },
-  { num: '85',   label: 'Mejor score',    icon: IC.trophy     },
-  { num: '18',   label: 'Días activo',    icon: IC.flame      },
-]
-
 /* ── Component ─────────────────────────────────────────────────────────────── */
-export default function StudentDashboardClient({ name }: Props) {
+export default function StudentDashboardClient({ name, stats, recentExams }: Props) {
   const [sideOpen, setSideOpen] = useState(false)
   const initial = name[0]?.toUpperCase() ?? 'E'
+
+  const STATS: { num: string; label: string; icon: ReactNode }[] = [
+    { num: String(stats?.simulacros ?? 0),   label: 'Simulacros',  icon: IC.clipboard2 },
+    { num: stats?.mejorScore ? `${stats.mejorScore}%` : '—', label: 'Mejor score', icon: IC.trophy },
+    { num: String(stats?.diasActivo ?? 0),   label: 'Días activo', icon: IC.flame      },
+    { num: recentExams?.length ? String(recentExams.length) : '—', label: 'Recientes', icon: IC.pencil },
+  ]
+
+  // Use real exam data when available, fall back to placeholder list
+  const examProgress: typeof IN_PROGRESS = recentExams && recentExams.length > 0
+    ? recentExams.map(e => ({ ...e, mockId: '' }))
+    : IN_PROGRESS
 
   return (
     <div className="std-shell">
@@ -263,7 +286,11 @@ export default function StudentDashboardClient({ name }: Props) {
           <div className="std-greeting">
             <div>
               <h1 className="std-greeting__h1">Bienvenido/a, {name}</h1>
-              <p className="std-greeting__sub">Tienes 3 simulacros en progreso · Continúa donde lo dejaste</p>
+              <p className="std-greeting__sub">
+                {stats?.simulacros
+                  ? `${stats.simulacros} simulacro${stats.simulacros !== 1 ? 's' : ''} completado${stats.simulacros !== 1 ? 's' : ''} · Sigue practicando`
+                  : 'Bienvenido/a · Empieza tu primer simulacro'}
+              </p>
             </div>
             <Link href="/examenes" className="btn btn-sm std-greeting__cta">
               + Nuevo examen
@@ -319,14 +346,16 @@ export default function StudentDashboardClient({ name }: Props) {
               {/* Continue practicing */}
               <section className="std-section">
                 <div className="std-section__head">
-                  <h2 className="std-section__title">Continúa practicando</h2>
+                  <h2 className="std-section__title">
+                    {recentExams && recentExams.length > 0 ? 'Tus últimos simulacros' : 'Continúa practicando'}
+                  </h2>
                   <Link href="/examenes" className="std-section__link">Ver todos →</Link>
                 </div>
                 <div className="std-progress-list">
-                  {IN_PROGRESS.map(ex => (
+                  {examProgress.map(ex => (
                     <Link
-                      key={ex.name}
-                      href={`/examenes/${ex.slug}/practica/${ex.mockId}`}
+                      key={`${ex.name}-${ex.subtitle}`}
+                      href={`/examenes/${ex.slug}`}
                       className="std-progress-card"
                     >
                       <div className="std-progress-card__top">
