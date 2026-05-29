@@ -21,18 +21,29 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'EducationalOrganization',
-  name: 'Idiomas WeLearn',
-  url: 'https://idiomaswl.com',
-  description:
-    'Plataforma educativa con metodología propia para aprender idiomas y obtener certificaciones internacionales.',
-  founder: {
-    '@type': 'Person',
-    name: 'Zhanna Korzh',
-    jobTitle: 'Doctora en Filología — Fundadora de WeLearn',
-    description:
-      'PhD en Filología con especialización en adquisición de segundas lenguas. Diseñó el método WeLearn de 11 etapas.',
-  },
+  '@graph': [
+    {
+      '@type': 'EducationalOrganization',
+      name: 'Idiomas WeLearn',
+      url: 'https://idiomaswl.com',
+      description:
+        'Plataforma educativa con metodología propia para aprender idiomas y obtener certificaciones internacionales.',
+      founder: {
+        '@type': 'Person',
+        name: 'Zhanna Korzh',
+        jobTitle: 'Doctora en Filología — Fundadora de WeLearn',
+        description:
+          'PhD en Filología con especialización en adquisición de segundas lenguas. Diseñó el método WeLearn de 11 etapas.',
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'El Método WeLearn', item: 'https://idiomaswl.com/metodo' },
+      ],
+    },
+  ],
 };
 
 export default function MetodoPage() {
