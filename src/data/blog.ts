@@ -769,6 +769,91 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Si tu meta es llegar al TOPIK Nivel 3 para la próxima convocatoria GKS, necesitas un plan de 8 a 12 meses. Puedes <a href="/clases-de-coreano">conocer cómo funciona nuestro método de coreano</a> — diseñado específicamente para hispanohablantes con objetivos concretos como el TOPIK — o leer primero nuestra <a href="/blog/aprender-coreano-desde-cero-guia-colombia">guía completa para aprender coreano desde cero en Colombia</a>.</p>
     `,
   },
+  {
+    slug: 'aprender-idiomas-con-series-y-peliculas',
+    title: 'Cómo aprender idiomas con series y películas: lo que funciona y lo que no',
+    description:
+      'La guía honesta sobre aprender idiomas con Netflix y K-dramas: qué funciona según la lingüística, cómo estructurar la práctica y por qué hacerlo sin método no da resultados.',
+    date: '2026-05-29',
+    readTime: 7,
+    category: 'Coreano',
+    tags: ['aprender idiomas', 'Netflix', 'K-dramas', 'input comprensible', 'inmersión', 'coreano', 'inglés'],
+    body: `
+<h2>El mito y la realidad de aprender con series</h2>
+<p>Hay dos versiones de esta historia. La primera: "Me volví fluido en japonés viendo anime". La segunda: "Llevo dos años viendo K-dramas y todavía no entiendo nada". Ambas son reales, y la diferencia no está en las series — está en cómo las usas.</p>
+<p>La investigación en adquisición de segundas lenguas tiene una respuesta clara: la exposición pasiva a contenido en el idioma objetivo produce resultados limitados por sí sola. La exposición <em>activa</em>, estructurada y comprensible, produce resultados extraordinarios. La serie o película es el material — no el método.</p>
+
+<h2>Por qué el cerebro aprende idiomas con contenido audiovisual</h2>
+<p>La teoría del input comprensible de Stephen Krashen, refinada por décadas de investigación posterior, establece que el idioma se adquiere cuando entendemos mensajes ligeramente por encima de nuestro nivel actual (i+1: comprensible, pero con algo nuevo). Las series crean las condiciones perfectas para esto:</p>
+<ul>
+  <li><strong>Contexto visual enriquecido</strong>: el lenguaje corporal, las expresiones faciales y los objetos en pantalla dan pistas del significado que no existen en el texto escrito.</li>
+  <li><strong>Variedad de registros</strong>: las series mezclan lenguaje formal e informal, coloquial y técnico, dialectos y acentos.</li>
+  <li><strong>Repetición contextualizada</strong>: los mismos personajes usan las mismas frases en múltiples episodios. La exposición repetida sin memorización forzada es la condición ideal para la adquisición.</li>
+  <li><strong>Motivación intrínseca</strong>: si te engancha el drama, sigues. El interés genuino sostiene las horas de exposición necesarias para aprender.</li>
+</ul>
+
+<h2>Lo que sí funciona: el método activo con series</h2>
+<h3>1. Subtítulos en el idioma que estás aprendiendo (no en español)</h3>
+<p>Este es el cambio más importante y el más difícil de hacer. Los subtítulos en español te hacen leer español mientras escuchas el idioma objetivo — el cerebro toma el camino fácil y no procesa el idioma de la pantalla.</p>
+<p>Los subtítulos en el idioma que aprendes obligan al cerebro a conectar el audio con el texto en ese idioma. Al principio es incómodo; en semanas, el oído empieza a separar sonidos y reconocer palabras.</p>
+<p>Progresión recomendada: subtítulos en español (para entender el contenido) → subtítulos en el idioma objetivo → sin subtítulos.</p>
+
+<h3>2. La pausa activa</h3>
+<p>Cuando escuchas una frase interesante — una expresión que no conocías, una estructura que notas por primera vez — pausa. Repite en voz alta. Busca el significado si no lo intuyes. Escribe la frase en tu cuaderno o app de notas. Continúa.</p>
+<p>No necesitas pausar en cada frase desconocida (eso haría la experiencia miserable). Escoge las que te resulten especialmente útiles o recurrentes.</p>
+
+<h3>3. Shadowing</h3>
+<p>Pausa en una línea de diálogo que te guste. Repite imitando exactamente la entonación, velocidad y ritmo del personaje — no solo las palabras. Este ejercicio, llamado shadowing, es uno de los métodos más efectivos para mejorar la pronunciación y la fluidez porque activa la memoria muscular del habla.</p>
+
+<h3>4. El episodio doble</h3>
+<p>Ve el mismo episodio dos veces seguidas. En el primer visionado: subtítulos en el idioma objetivo, disfruta la historia. En el segundo visionado: sin subtítulos, enfócate en el audio. La segunda vuelta es sorprendentemente diferente — entiendes mucho más porque ya conoces el contexto.</p>
+
+<h3>5. Language Reactor (extensión Chrome)</h3>
+<p>Esta extensión gratuita para Chrome convierte Netflix y YouTube en una herramienta de aprendizaje: muestra los subtítulos en dos idiomas simultáneamente, permite pausar al hacer clic en cualquier palabra para ver su definición, y guarda el vocabulario nuevo automáticamente para revisión posterior. Es el puente perfecto entre el entretenimiento pasivo y el aprendizaje activo.</p>
+
+<h2>Lo que no funciona</h2>
+<h3>Ver en español con audio original</h3>
+<p>Si el audio es en español (doblado), no estás aprendiendo el idioma objetivo. Si el audio está en el idioma y los subtítulos en español, el cerebro lee español y el input del idioma objetivo queda en segundo plano. Parece útil — no lo es.</p>
+
+<h3>Ver sin ningún nivel base</h3>
+<p>Si tu nivel de coreano es cero, ver un K-drama sin ninguna base te enseñará muy poco. El input comprensible requiere que tengas al menos un nivel mínimo (A1) para que el cerebro pueda "anclar" el nuevo vocabulario a algo conocido. Las series son potentes a partir del nivel A2.</p>
+
+<h3>Ver horas seguidas sin aplicar lo aprendido</h3>
+<p>Cuatro horas de serie el fin de semana sin producción durante la semana produce resultados mínimos. El idioma se consolida cuando <em>usas</em> lo que aprendiste: conversación, escritura, notas en el idioma. Las series deben ser el insumo, no el único actividad.</p>
+
+<h2>Las mejores series para aprender idiomas</h2>
+<h3>Para aprender coreano</h3>
+<ul>
+  <li><strong>My Mister (나의 아저씨)</strong>: diálogos lentos y naturales, vocabulario cotidiano, sin jerga excesiva. Ideal para principiantes intermedios.</li>
+  <li><strong>Reply 1988 (응답하라 1988)</strong>: lenguaje informal, coloquial, natural. Excelente para practicar el registro cotidiano.</li>
+  <li><strong>Goblin (도깨비)</strong>: mezcla de lenguaje formal e informal. Vocabulario rico sin ser académico.</li>
+  <li><strong>Running Man (YouTube)</strong>: para escucha de coreano conversacional rápido y coloquial.</li>
+</ul>
+
+<h3>Para aprender inglés</h3>
+<ul>
+  <li><strong>The Crown</strong>: inglés claro, articulado, con vocabulario rico y formal. Excelente para preparar IELTS.</li>
+  <li><strong>Friends</strong>: inglés americano cotidiano, velocidad moderada, expresiones muy frecuentes. Clásico del aprendizaje.</li>
+  <li><strong>Suits</strong>: inglés de negocios y legal. Perfecto para profesionales que necesitan inglés corporativo.</li>
+  <li><strong>Breaking Bad</strong>: inglés americano variado, desde coloquial hasta técnico. Para nivel intermedio-avanzado.</li>
+</ul>
+
+<h3>Para aprender alemán</h3>
+<ul>
+  <li><strong>Dark (Dark)</strong>: alemán estándar, bien articulado, vocabulario variado. Tiene subtítulos oficiales de Netflix en alemán.</li>
+  <li><strong>Babylon Berlin</strong>: alemán histórico con lenguaje colorido. Para nivel intermedio.</li>
+</ul>
+
+<h2>La integración con un método estructurado</h2>
+<p>Las series funcionan como complemento, no como reemplazo, de un método estructurado. El rol de cada uno es claro:</p>
+<ul>
+  <li><strong>El método</strong> te da la gramática, el vocabulario base y la producción activa (hablar y escribir).</li>
+  <li><strong>Las series</strong> te dan la exposición masiva, el oído para la pronunciación y la motivación para continuar.</li>
+</ul>
+<p>Los estudiantes que más avanzan hacen ambas cosas. Después de las clases, practican con material real — series, música, podcasts, libros. Las series sin clases producen comprensión pasiva. Las clases sin series producen conocimiento sin naturalidad. La combinación produce fluidez real.</p>
+<p>Si quieres empezar con el coreano usando este método combinado, puedes revisar nuestro <a href="/clases-de-coreano">programa de coreano WeLearn</a> — diseñado específicamente para hispanohablantes que aprenden de contenido coreano. Para inglés con preparación para certificaciones, nuestro <a href="/clases-de-ingles">programa de inglés con IELTS y TOEFL</a> combina clases con práctica con material auténtico.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
