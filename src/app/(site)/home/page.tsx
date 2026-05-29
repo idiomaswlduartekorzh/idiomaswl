@@ -3,6 +3,7 @@ import Link from 'next/link';
 import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
 import HeroLangSelector from './HeroLangSelector';
+import { BLOG_POSTS } from '@/data/blog';
 import {
   FadeUp, StaggerGrid, StaggerItem,
   HeroLeft, HeroItem, HeroCard,
@@ -441,6 +442,41 @@ export default function HomePage() {
           </FadeUp>
         </div>
       </section>
+
+      {/* BLOG HIGHLIGHTS */}
+      <FadeUp>
+        <section className="wlh-section wlh-section--alt">
+          <div className="wrap">
+            <p className="wlh-section-eyebrow">09 — Blog</p>
+            <h2 className="wlh-section-h2">Guías y recursos gratuitos.</h2>
+            <p className="wlh-section-desc" style={{ maxWidth: 540, margin: '0 auto 2.5rem' }}>
+              Artículos prácticos sobre preparación IELTS, TOEFL, ICFES, coreano y más.
+              Sin relleno, solo lo que funciona.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
+              {[...BLOG_POSTS]
+                .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                .slice(0, 4)
+                .map(post => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    style={{ display: 'block', padding: '1.1rem 1.2rem', borderRadius: 12, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}
+                  >
+                    <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: post.category === 'Coreano' ? '#c8202e' : post.category === 'ICFES' ? '#0f7c3e' : '#1a4fcc', background: post.category === 'Coreano' ? 'rgba(200,32,46,0.1)' : post.category === 'ICFES' ? 'rgba(15,124,62,0.1)' : 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.5rem' }}>
+                      {post.category}
+                    </span>
+                    <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: '0 0 0.4rem' }}>{post.title} →</p>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>{post.readTime} min</span>
+                  </Link>
+                ))}
+            </div>
+            <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+              <Link href="/blog" className="btn btn-ghost">Ver todos los artículos →</Link>
+            </div>
+          </div>
+        </section>
+      </FadeUp>
 
       {/* CTA FINAL */}
       <FadeUp>

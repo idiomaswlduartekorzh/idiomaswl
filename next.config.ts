@@ -72,6 +72,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Remove the X-Powered-By: Next.js response header (minor security improvement)
+  poweredByHeader: false,
+
   async headers() {
     return [
       {
