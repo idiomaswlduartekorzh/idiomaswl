@@ -94,7 +94,7 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M2.1 | Landing de coreano | **HECHO** — `src/app/(site)/clases-de-coreano/` con JSON-LD, sección Miembro Fundador, TOPIK comparador, FAQ |
+| M2.1 | Landing de coreano | **HECHO** — `src/app/(site)/clases-de-coreano/` con JSON-LD, sección Miembro Fundador, TOPIK comparador, FAQ, sección Diagnóstico TOPIK |
 | M2.2 | Landing de ICFES inglés | **HECHO** — `src/app/(site)/preparacion-icfes/` con escala de puntajes, estructura del examen, plan de prep |
 | M2.3 | SEO técnico base (meta tags, schema.org, sitemap, robots) | **HECHO** — sitemap.ts, robots.ts, JSON-LD @graph en todas las landing pages (Course + LocalBusiness + BreadcrumbList + Person + FAQPage), Blog + BlogPosting en /blog, Article en /blog/[slug], OG images en todas las rutas públicas |
 
@@ -129,6 +129,7 @@ public/
 - **BreadcrumbList**: añadido a todos los pages: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion, blog, blog/[slug].
 - **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes).
 - **25 artículos blog**: 1-IELTS Band7, 2-ICFES inglés, 3-Coreano desde cero, 4-TOEFL guía, 5-TOPIK I, 6-IELTS vs TOEFL, 7-Inglés multinacionales, 8-Beca GKS, 9-Series y películas, 10-Niveles A1-C2, 11-Hablar inglés bloqueo, 12-IELTS Academic vs General, 13-3 meses IELTS plan, 14-ICFES puntaje niveles, 15-Migrar Canadá IELTS, 16-Coreano hispanohablante, 17-TOEFL estrategias sección, 18-IELTS Writing Task2, 19-Inglés EE.UU. trabajo, 20-Costo IELTS Colombia 2026, 21-Enfermeras inglés exterior, 22-TOPIK I vs II, 23-Clases inglés online Colombia, 24-Costo TOEFL Colombia 2026, 25-Migrar Australia IELTS.
+- **TOPIK Diagnóstico**: `src/data/mocks/topik-set-1.ts` (30 preguntas MCQ al estilo TOPIK I, 3 partes: 빈칸/안내문/지문), `TOPIKPracticeClient.tsx` (quiz → LeadCaptureModal → results con nivel). Ruta: `/examenes/topik/practica/set-1`. Sección en `/clases-de-coreano`. Scoring: 70%+ = Nivel 2, 40-69% = Nivel 1, <40% = Iniciante.
 - **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering: /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes, /practica. Root `/` redirige a /home.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
