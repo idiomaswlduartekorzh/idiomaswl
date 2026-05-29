@@ -423,7 +423,7 @@ export default function ClasesDeCoreanoPage() {
         </section>
 
         {/* ══════════════ STEPS — LECCIONES DEL MÉTODO ══════════════ */}
-        <section className={s.section} id="lecciones">
+        <section className={s.sectionDark} id="lecciones">
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Método WeLearn · 17 pasos</p>
             <h2 className={s.h2}>Empieza a aprender hoy — gratis</h2>
@@ -434,8 +434,8 @@ export default function ClasesDeCoreanoPage() {
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-              gap: '0.75rem',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))',
+              gap: '0.6rem',
               marginTop: '1.75rem',
             }}>
               {Array.from({ length: 20 }, (_, i) => i + 1).map(step => {
@@ -443,7 +443,7 @@ export default function ClasesDeCoreanoPage() {
                 const free = step <= 5;
                 const label = free ? `Lección ${step}` : `Paso ${step}`;
                 const title = meta?.episodeTitle?.split('·')[0]?.trim() ?? `Paso ${step}`;
-                const sub   = meta?.grammarLabel ?? '';
+                const sub   = meta?.grammarLabel ?? (free ? 'Gramática' : '');
                 return free ? (
                   <Link
                     key={step}
@@ -451,20 +451,23 @@ export default function ClasesDeCoreanoPage() {
                     style={{
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '0.4rem',
-                      padding: '1rem',
+                      gap: '0.35rem',
+                      padding: '1rem 1rem 0.9rem',
                       borderRadius: 12,
-                      border: '1.5px solid rgba(200,32,46,0.35)',
-                      background: 'rgba(200,32,46,0.05)',
+                      border: '1.5px solid rgba(200,32,46,0.55)',
+                      background: 'rgba(200,32,46,0.12)',
+                      backdropFilter: 'blur(12px)',
                       textDecoration: 'none',
-                      transition: 'border-color .2s, background .2s',
+                      transition: 'border-color .2s, background .2s, transform .2s, box-shadow .2s',
+                      boxShadow: '0 2px 16px rgba(200,32,46,0.08)',
                     }}
                   >
-                    <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#c8202e' }}>
-                      🆓 {label}
+                    <span style={{ fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: '#f87171' }}>
+                      ▶ {label}
                     </span>
-                    <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.3 }}>{title}</span>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>{sub}</span>
+                    <span style={{ fontSize: '0.88rem', fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>{title}</span>
+                    {sub && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.45)' }}>{sub}</span>}
+                    <span style={{ fontSize: '0.65rem', marginTop: '0.25rem', color: '#f87171', fontWeight: 600 }}>Gratis →</span>
                   </Link>
                 ) : (
                   <div
@@ -472,20 +475,20 @@ export default function ClasesDeCoreanoPage() {
                     style={{
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '0.4rem',
-                      padding: '1rem',
+                      gap: '0.35rem',
+                      padding: '1rem 1rem 0.9rem',
                       borderRadius: 12,
-                      border: '1px solid var(--line-soft)',
-                      background: 'var(--bg-2)',
-                      opacity: 0.6,
+                      border: '1px solid rgba(255,255,255,0.07)',
+                      background: 'rgba(255,255,255,0.04)',
                       cursor: 'default',
                     }}
                   >
-                    <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--muted)' }}>
+                    <span style={{ fontSize: '0.6rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.09em', color: 'rgba(255,255,255,0.3)' }}>
                       🔒 {label}
                     </span>
-                    <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--muted)', lineHeight: 1.3 }}>{title}</span>
-                    <span style={{ fontSize: '0.7rem', color: 'var(--muted)', background: 'rgba(255,255,255,0.07)', borderRadius: 6, padding: '1px 6px', display: 'inline-block', width: 'fit-content' }}>Suscripción</span>
+                    <span style={{ fontSize: '0.88rem', fontWeight: 600, color: 'rgba(255,255,255,0.55)', lineHeight: 1.3 }}>{title}</span>
+                    {sub && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.25)' }}>{sub}</span>}
+                    <span style={{ fontSize: '0.65rem', marginTop: '0.25rem', color: 'rgba(255,255,255,0.25)', fontWeight: 600 }}>Suscripción</span>
                   </div>
                 );
               })}
@@ -495,7 +498,7 @@ export default function ClasesDeCoreanoPage() {
               <a
                 href={`https://wa.me/${WA}?text=${WA_FUNDADOR}`}
                 target="_blank" rel="noopener noreferrer"
-                className={s.ghostBtn}
+                className={s.ghostBtnLight}
               >
                 Desbloquear todos los pasos → Miembro Fundador
               </a>
