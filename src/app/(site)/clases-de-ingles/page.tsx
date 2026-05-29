@@ -519,6 +519,31 @@ export default function ClasesDeInglesPage() {
         </div>
       </section>
 
+      {/* ── BLOG RESOURCES ──────────────────────────────────────────────── */}
+      <section style={{ padding: '4rem 0', background: 'var(--bg-2, #f9f9fb)' }}>
+        <div className="wrap">
+          <p style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: '0.5rem' }}>
+            Del blog WeLearn
+          </p>
+          <h2 style={{ fontSize: '1.6rem', fontWeight: 700, letterSpacing: '-0.02em', margin: '0 0 1.75rem' }}>
+            Guías gratuitas de inglés y certificaciones
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1rem' }}>
+            {[
+              { cat: 'IELTS', title: 'Cómo sacar Band 7 en el IELTS', slug: 'como-sacar-band-7-en-ielts' },
+              { cat: 'TOEFL', title: 'TOEFL iBT: guía completa para colombianos', slug: 'toefl-ibt-preparacion-guia-completa' },
+              { cat: 'IELTS', title: 'IELTS vs TOEFL: ¿cuál es mejor para ti?', slug: 'ielts-vs-toefl-cual-tomar-en-colombia' },
+              { cat: 'Trabajo', title: 'Inglés para empresas multinacionales', slug: 'ingles-para-trabajar-en-empresas-multinacionales' },
+            ].map(a => (
+              <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
+                <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: 0 }}>{a.title} →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA FINAL ────────────────────────────────────────────────────── */}
       <section className="wlh-section">
         <div className={`wrap ${s.ctaFinal}`}>

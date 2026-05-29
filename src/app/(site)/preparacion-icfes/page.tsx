@@ -366,6 +366,25 @@ export default function PreparacionICFESPage() {
           </div>
         </section>
 
+        {/* ══════════════ BLOG RESOURCES ══════════════ */}
+        <section className={s.sectionAlt}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Del blog WeLearn</p>
+            <h2 className={s.h2}>Guías gratuitas para el ICFES inglés</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
+              {[
+                { cat: 'ICFES', color: '#0f7c3e', title: 'Puntaje ICFES inglés: niveles y cómo mejorar en 3 meses', slug: 'puntaje-icfes-ingles-niveles-y-como-mejorar' },
+                { cat: 'IELTS', color: '#1a4fcc', title: '¿IELTS o TOEFL? Cuál elegir según tu objetivo', slug: 'ielts-vs-toefl-cual-tomar-en-colombia' },
+              ].map(a => (
+                <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
+                  <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
+                  <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: 0 }}>{a.title} →</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ══════════════ FINAL CTA ══════════════ */}
         <section className={s.ctaSection}>
           <div className={s.wrap}>
