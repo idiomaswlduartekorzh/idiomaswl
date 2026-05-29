@@ -45,6 +45,7 @@ import cilsCeliSet1 from './cils-celi-set-1';
 import delfDalfSet1 from './delf-dalf-set-1';
 import goetheSet1 from './goethe-set-1';
 import celpeBrasSet1 from './celpe-bras-set-1';
+import topikSet1 from './topik-set-1';
 
 const MOCK_REGISTRY: Record<string, MockExam> = {
   // ── ICFES mocks 1–10 (original) ───────────────────────────────────────────
@@ -97,6 +98,8 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'delf-dalf:set-1': delfDalfSet1,
   'goethe:set-1': goetheSet1,
   'celpe-bras:set-1': celpeBrasSet1,
+  // ── TOPIK ─────────────────────────────────────────────────────────────────
+  'topik:set-1': topikSet1,
 };
 
 export function getMock(examSlug: string, mockId: string): MockExam | null {

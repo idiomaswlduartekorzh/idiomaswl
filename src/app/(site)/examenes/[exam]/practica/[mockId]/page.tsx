@@ -5,6 +5,7 @@ import PracticeClient from './PracticeClient';
 import IELTSPracticeClient from './IELTSPracticeClient';
 import TOEFLPracticeClient from './TOEFLPracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
+import TOPIKPracticeClient from './TOPIKPracticeClient';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras']);
 
@@ -29,6 +30,7 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
 
   if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
   if (slug === 'toefl') return <TOEFLPracticeClient exam={exam} mock={mock} />;
+  if (slug === 'topik') return <TOPIKPracticeClient exam={exam} mock={mock} />;
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 
   return <PracticeClient exam={exam} mock={mock} />;

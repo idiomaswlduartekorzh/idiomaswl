@@ -416,6 +416,96 @@ export default function ClasesDeCoreanoPage() {
           </div>
         </section>
 
+        {/* ══════════════ DIAGNÓSTICO TOPIK ══════════════ */}
+        <section className={s.sectionDark}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Diagnóstico gratuito</p>
+            <h2 className={s.h2}>¿En qué nivel de coreano estás?</h2>
+            <p style={{ color: 'var(--muted)', maxWidth: 560, marginBottom: '2rem', lineHeight: 1.65, fontSize: '0.97rem' }}>
+              Haz el simulacro de lectura estilo TOPIK I y descubre en minutos si eres
+              Nivel 1, Nivel 2, o estás en etapa inicial. Sin registro. Sin tiempo límite.
+              30 preguntas, resultado inmediato.
+            </p>
+
+            {/* Diagnostic card */}
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(0,52,120,0.25), rgba(200,32,46,0.15))',
+              border: '1px solid rgba(0,52,120,0.4)',
+              borderRadius: 20,
+              padding: '2rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1.5rem',
+              maxWidth: 620,
+            }}>
+              {/* Header */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1.25rem' }}>
+                <div style={{
+                  width: 60, height: 60, borderRadius: 16,
+                  background: 'rgba(0,52,120,0.4)',
+                  border: '1px solid rgba(0,52,120,0.6)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: '1.8rem', flexShrink: 0,
+                }}>🇰🇷</div>
+                <div>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#7eb3ff', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: '0.3rem' }}>
+                    TOPIK I · 읽기 · Lectura
+                  </div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--ink)', marginBottom: '0.3rem' }}>
+                    Diagnóstico de Nivel de Coreano
+                  </div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.5 }}>
+                    30 preguntas al estilo oficial TOPIK I · Resultado en segundos
+                  </div>
+                </div>
+              </div>
+
+              {/* Stats row */}
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                {[
+                  { icon: '📖', label: '30 preguntas', sub: 'Lectura TOPIK I' },
+                  { icon: '⏱️', label: 'Sin límite', sub: 'A tu ritmo' },
+                  { icon: '🎯', label: 'Nivel exacto', sub: 'Nivel 1 · Nivel 2 · Inicial' },
+                ].map((stat) => (
+                  <div key={stat.label} style={{
+                    flex: 1, minWidth: 120,
+                    background: 'rgba(255,255,255,0.04)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: 12, padding: '0.75rem 1rem',
+                    textAlign: 'center',
+                  }}>
+                    <div style={{ fontSize: '1.3rem', marginBottom: '0.2rem' }}>{stat.icon}</div>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--ink)', marginBottom: '0.1rem' }}>{stat.label}</div>
+                    <div style={{ fontSize: '0.72rem', color: 'var(--muted)' }}>{stat.sub}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA */}
+              <Link
+                href="/examenes/topik/practica/set-1"
+                style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  gap: '0.5rem',
+                  padding: '0.9rem 1.5rem',
+                  background: 'linear-gradient(135deg, #003478, #c8202e)',
+                  color: '#fff',
+                  borderRadius: 14,
+                  fontWeight: 800,
+                  fontSize: '1rem',
+                  textDecoration: 'none',
+                  transition: 'opacity 0.15s',
+                }}
+              >
+                🇰🇷 Hacer el diagnóstico gratis →
+              </Link>
+              <div style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--muted)', marginTop: '-0.75rem' }}>
+                Sin registro · Resultado inmediato · 100% gratuito
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ══════════════ FAQ ══════════════ */}
         <section className={s.sectionDark}>
           <div className={s.wrap}>

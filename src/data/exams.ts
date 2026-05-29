@@ -257,6 +257,67 @@ export const EXAMS: Record<string, Exam> = {
     available: true,
   },
 
+  topik: {
+    slug: 'topik',
+    name: 'TOPIK I',
+    fullName: 'Test of Proficiency in Korean — Nivel I (초급)',
+    flag: '🇰🇷',
+    language: 'Coreano',
+    color: '#003478',
+    colorDark: '#001f4d',
+    tagline: 'El examen oficial de coreano del Gobierno de Corea del Sur.',
+    description:
+      'El TOPIK (Test of Proficiency in Korean) es el estándar mundial para certificar el nivel de coreano. TOPIK I evalúa los niveles básicos 1 y 2. Requerido para universidades surcoreanas, becas GKS y visa de trabajo en Corea.',
+    totalTime: '100 min',
+    totalQuestions: 70,
+    scoreRange: '0 – 200',
+    scoreName: 'Puntuación',
+    passing: 'Nivel 1: 80+ · Nivel 2: 140+',
+    recognized: [
+      'Universidades de Corea del Sur',
+      'Beca GKS (Gobierno de Corea)',
+      'Visa de trabajo y residencia en Corea',
+    ],
+    levels: ['Nivel 1', 'Nivel 2'],
+    sections: [
+      {
+        name: '듣기 (Escucha)',
+        icon: '🎧',
+        time: '40 min',
+        questions: 30,
+        color: '#003478',
+        types: [
+          'Comprensión de diálogos cortos',
+          'Avisos y anuncios',
+          'Selección múltiple',
+        ],
+      },
+      {
+        name: '읽기 (Lectura)',
+        icon: '📖',
+        time: '60 min',
+        questions: 40,
+        color: '#c8202e',
+        types: [
+          'Completar oraciones (빈칸 채우기)',
+          'Comprensión de avisos',
+          'Lectura de textos cortos',
+        ],
+      },
+    ],
+    mocks: [
+      {
+        id: 'set-1',
+        title: 'TOPIK I — Diagnóstico de Lectura',
+        subtitle: '읽기 (Lectura) · 30 preguntas · Estima tu nivel',
+        free: true,
+        parts: 3,
+        questions: 30,
+      },
+    ],
+    available: true,
+  },
+
   'celpe-bras': {
     slug: 'celpe-bras',
     name: 'CELPE-BRAS',
