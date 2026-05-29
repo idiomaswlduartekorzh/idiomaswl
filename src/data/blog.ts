@@ -944,6 +944,71 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Si ya sabes tu nivel y quieres un plan concreto para subir al siguiente, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés en WeLearn</a> — el primer paso es una clase de diagnóstico gratis donde evaluamos tu nivel real y diseñamos el plan. También puedes hacer un <a href="/examenes">simulacro de IELTS gratuito</a> para tener un punto de referencia concreto hoy mismo.</p>
     `,
   },
+  {
+    slug: 'como-mejorar-el-ingles-hablado',
+    title: 'Cómo mejorar el inglés hablado: por qué te bloqueas al hablar y cómo superarlo',
+    description:
+      'La guía honesta para hispanohablantes que entienden inglés pero se bloquean al hablarlo. Por qué ocurre el bloqueo, qué no funciona y los ejercicios específicos que sí ayudan.',
+    date: '2026-05-29',
+    readTime: 8,
+    category: 'IELTS',
+    tags: ['inglés conversacional', 'hablar inglés', 'fluidez', 'bloqueo al hablar', 'IELTS Speaking', 'Colombia'],
+    body: `
+<h2>El problema que nadie resuelve bien</h2>
+<p>Llevas años estudiando inglés. Puedes leer artículos en inglés, entender series con subtítulos, aprobar exámenes escritos. Pero cuando alguien te habla en inglés, o cuando tienes que decir algo en una reunión de trabajo, algo se congela.</p>
+<p>No estás solo: es el problema más frecuente entre hispanohablantes que aprenden inglés. Se llama de muchas formas — "bloqueo al hablar", "inhibición lingüística", "acento forzado" — pero tiene causas concretas y soluciones igual de concretas.</p>
+
+<h2>Por qué ocurre el bloqueo: las causas reales</h2>
+<h3>1. Conocimiento declarativo vs. conocimiento procedimental</h3>
+<p>Saber que en inglés el verbo va después del sujeto ("I go", no "Go I") es conocimiento declarativo — lo sabes de manera consciente. Poder decirlo sin pensar en ello mientras mantienes una conversación es conocimiento procedimental — está automatizado.</p>
+<p>La mayoría de hispanohablantes que estudiaron inglés en el colegio o con aplicaciones tienen abundante conocimiento declarativo (reglas que saben) y escaso conocimiento procedimental (habilidades automatizadas). Al hablar, el cerebro intenta ejecutar en tiempo real lo que aprendió como reglas abstractas, y eso genera la sensación de parálisis.</p>
+
+<h3>2. El cerebro está procesando demasiado simultáneamente</h3>
+<p>Cuando hablas tu idioma nativo, no piensas en la gramática. Piensas en lo que quieres comunicar y las palabras salen. Cuando hablas inglés sin fluidez, el cerebro intenta hacer cuatro cosas al mismo tiempo: recordar la gramática correcta, buscar el vocabulario, organizar las ideas y pronunciar. Es cognitivamente agotador y produce frases entrecortadas, silencios incómodos o directamente el "I cannot speak".</p>
+
+<h3>3. El miedo al error en público</h3>
+<p>En Colombia, la educación en inglés suele penalizar el error. El resultado: muchos hablantes de nivel B1–B2 prefieren no hablar a cometer un error. Esta inhibición es el mayor freno al desarrollo de la fluidez. La ironía: el único camino a la fluidez es atravesar miles de errores.</p>
+
+<h2>Lo que no funciona para mejorar el inglés hablado</h2>
+<h3>Estudiar más gramática</h3>
+<p>Si tu problema es que te bloqueas al hablar, estudiar más la diferencia entre el present perfect y el past simple no te va a desbloquear. Tu cerebro ya sabe la gramática — el problema es que no la tiene automatizada. Más gramática consciente no resuelve la falta de gramática automática.</p>
+
+<h3>Escuchar más pasivamente</h3>
+<p>Escuchar inglés (podcasts, series, música) es excelente para el oído y la comprensión. Pero no mejora la producción. Necesitas hablar para hablar. La escucha pasiva es necesaria pero no suficiente para el Speaking.</p>
+
+<h3>Esperar a tener el nivel "correcto"</h3>
+<p>"Cuando llegue a B2 empiezo a hablar". Este es el error más costoso de tiempo. La fluidez no se obtiene llegando a un nivel — se obtiene practicando en el nivel en que estás. Alguien que habla con errores en B1 desarrolla fluidez; alguien que espera a tener gramática perfecta en B2 para empezar a hablar no la desarrolla nunca.</p>
+
+<h2>Lo que sí funciona: ejercicios específicos para el Speaking</h2>
+<h3>1. Hablar solo (self-talk)</h3>
+<p>Uno de los métodos más efectivos y menos costosos: habla solo en inglés durante 5–10 minutos al día. Describe lo que estás haciendo, comenta tu día, opina sobre algo que viste. Al principio se siente raro; en semanas, el flujo de palabras mejora notablemente.</p>
+<p>El autoaprendizaje no corrige errores, pero automatiza el proceso de producir inglés bajo cero presión social. Eso reduce la carga cognitiva cuando luego hablas con otras personas.</p>
+
+<h3>2. Shadowing con grabación propia</h3>
+<p>Elige una línea de diálogo de una serie o podcast. Escúchala. Luego repítela en voz alta, imitando la entonación, el ritmo y la velocidad del hablante original. Grábate. Escucha la grabación. Identifica qué suena diferente del original.</p>
+<p>El shadowing automatiza patrones fonéticos y rítmicos que el cerebro no adquiere estudiando reglas. Después de semanas de práctica constante, esos patrones empiezan a salir solos al hablar.</p>
+
+<h3>3. El método de los monólogos de 60 segundos</h3>
+<p>Elige un tema. Pon un timer de 60 segundos. Habla en inglés sin parar durante ese minuto. No corrijas, no pares, no empieces de nuevo. Solo habla. Al terminar, escucha la grabación e identifica los patrones de error (palabras que no encontraste, pausas largas, estructuras incorrectas).</p>
+<p>Repite con el mismo tema al día siguiente. El cerebro buscará las palabras que le faltaron la vez anterior. Después de 5 veces con el mismo tema, hablas sobre él sin esfuerzo.</p>
+
+<h3>4. Conversación con un interlocutor que corrija en tiempo real</h3>
+<p>El self-talk y el shadowing son complementos, no reemplazos, de la conversación real. La diferencia clave del hablar con otra persona es la retroalimentación: alguien que note cuando dices "I am very hot" cuando quieres decir que hace calor (no que eres atractivo) y que te corrija con naturalidad.</p>
+<p>Esta corrección en tiempo real, en contexto de uso real, es lo que más acelera la automatización de la gramática. Es por eso que las clases 1:1 con un tutor que da retroalimentación específica avanzan mucho más que la práctica autodidacta sola.</p>
+
+<h3>5. Preparar respuestas a preguntas frecuentes</h3>
+<p>En el IELTS Speaking o en una entrevista de trabajo en inglés, hay preguntas que siempre aparecen: "Tell me about yourself", "What do you do for work?", "What are your goals?". Tener respuestas elaboradas y practicadas para estas preguntas no es memorizar — es tener anclas de fluidez que reduzcan la carga cognitiva cuando el nerviosismo aumenta.</p>
+
+<h2>Cuánto tiempo lleva ver resultados</h2>
+<p>Con práctica activa de Speaking (20–30 minutos diarios entre self-talk, shadowing y conversación), la mayoría de personas en nivel B1 notan cambios claros en 4–6 semanas. No fluidez total — pero sí conversaciones más cómodas, menos pausas largas, más palabras disponibles cuando se necesitan.</p>
+<p>La fluidez real (conversar sin esfuerzo consciente) tarda entre 6 meses y 2 años dependiendo de la cantidad y calidad de práctica. No hay atajos — hay práctica frecuente, retroalimentación real y tolerancia productiva al error.</p>
+
+<h2>El rol del IELTS Speaking en este proceso</h2>
+<p>Si uno de tus objetivos es el IELTS, la sección de Speaking es la que más se beneficia de este tipo de práctica — y la más subestimada. El error más común: prepararse intensamente para Listening, Reading y Writing, y abordar Speaking la semana anterior al examen.</p>
+<p>La sección de Speaking del IELTS tiene 3 partes: una conversación personal (Part 1), un monólogo de 2 minutos sobre un tema dado (Part 2) y una discusión más profunda sobre ese tema (Part 3). La fluidez, la coherencia y el vocabulario en contexto son los criterios que más diferencian un Band 6 de un Band 7.</p>
+<p>Si quieres trabajar específicamente la sección de Speaking del IELTS o mejorar el inglés hablado para el trabajo, puedes <a href="/clases-de-ingles">conocer cómo funcionamos en WeLearn</a> — las clases 1:1 incluyen práctica de producción con retroalimentación en cada sesión.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
