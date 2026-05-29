@@ -105,7 +105,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>¿Cuándo es momento de tomar clases?</h2>
 <p>El autodidacta puede llegar a Band 6.5 con recursos gratuitos y disciplina. Para dar el salto de 6.5 a 7.0 (o de 7.0 a 7.5), el cuello de botella suele ser Writing y Speaking — y ahí un tutor que da retroalimentación real sobre tus textos y grabaciones marca la diferencia.</p>
-<p>La razón: los errores que te tienen estancado en 6.5 suelen ser puntos ciegos que tú no ves porque llevas semanas mirando el mismo tipo de respuesta. Un evaluador externo los ve en segundos.</p>
+<p>La razón: los errores que te tienen estancado en 6.5 suelen ser puntos ciegos que tú no ves porque llevas semanas mirando el mismo tipo de respuesta. Un evaluador externo los ve en segundos. Si estás en esa etapa, puedes <a href="/clases-de-ingles">conocer cómo trabajamos el IELTS en WeLearn</a> o hacer un simulacro gratuito para ver dónde estás exactamente.</p>
     `,
   },
 
@@ -188,7 +188,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>¿Vale la pena tomar clases de preparación ICFES inglés?</h2>
-<p>Depende de dónde estás. Si estás en nivel A2 y quieres llegar a B1, el estudio autónomo con buenos recursos es suficiente si tienes disciplina. Si quieres llegar a B2 o tienes menos de 8 semanas para el examen, un tutor que analice tus simulacros y te dé retroalimentación real ahorra tiempo —y puede ser la diferencia entre quedar admitido o repetir el año.</p>
+<p>Depende de dónde estás. Si estás en nivel A2 y quieres llegar a B1, el estudio autónomo con buenos recursos es suficiente si tienes disciplina. Si quieres llegar a B2 o tienes menos de 8 semanas para el examen, un tutor que analice tus simulacros y te dé retroalimentación real ahorra tiempo —y puede ser la diferencia entre quedar admitido o repetir el año. Conoce cómo funciona nuestra <a href="/preparacion-icfes">preparación para el inglés del ICFES</a> con simulacros incluidos.</p>
     `,
   },
 
@@ -288,7 +288,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>El factor motivación: cómo mantenerte constante</h2>
 <p>El coreano tarda entre 1.000 y 1.500 horas para alcanzar fluidez conversacional (clasificado por el FSI como idioma de Categoría IV para angloparlantes; para hispanohablantes es similar). Son entre 2 y 4 años con estudio diario moderado.</p>
 <p>Lo que separa a los estudiantes que llegan del TOPIK II a los que abandonan en el mes 3 no es talento lingüístico: es la conexión con el idioma. Los que más avanzan son los que tienen una razón personal fuerte —una serie, un viaje planeado, un amigo coreano, un sueño de estudiar allá.</p>
-<p>Encuentra tu razón. El idioma vendrá solo si la razón es real.</p>
+<p>Encuentra tu razón. El idioma vendrá solo si la razón es real. Si quieres empezar con estructura desde el primer día, conoce nuestro <a href="/clases-de-coreano">método de coreano para hispanohablantes</a> — diseñado específicamente para este camino.</p>
     `,
   },
 
@@ -382,8 +382,9 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>ETS.org</strong>: simulacros y materiales oficiales. La fuente más confiable.</li>
   <li><strong>Magoosh TOEFL Blog</strong>: explicaciones de cada tipo de pregunta en inglés.</li>
   <li><strong>NoteFull YouTube</strong>: plantillas y estrategias de Speaking y Writing.</li>
-  <li><strong>Simulacros WeLearn</strong>: banco de preguntas estilo TOEFL con retroalimentación.</li>
+  <li><strong><a href="/examenes/toefl">Simulacros WeLearn</a></strong>: banco de preguntas estilo TOEFL con retroalimentación automática por sección.</li>
 </ul>
+<p>Si buscas preparación guiada con tutor 1:1, puedes revisar cómo funciona nuestro programa de <a href="/clases-de-ingles">preparación para exámenes internacionales de inglés</a>.</p>
     `,
   },
 
@@ -480,7 +481,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>El material oficial está completamente disponible gratis en topik.go.kr (todos los exámenes anteriores con respuestas).</li>
   <li>El vocabulario y la gramática del Nivel 1-2 son limitados y sistemáticos. No hay ambigüedades.</li>
 </ol>
-<p>El mayor reto no es el contenido: es la constancia. El coreano requiere práctica diaria. Veinte días de estudio intensivo no reemplazan seis meses de trabajo regular.</p>
+<p>El mayor reto no es el contenido: es la constancia. El coreano requiere práctica diaria. Veinte días de estudio intensivo no reemplazan seis meses de trabajo regular. Si quieres un plan estructurado con tutor desde el primer día, conoce nuestras <a href="/clases-de-coreano">clases de coreano con preparación TOPIK</a> incluida.</p>
     `,
   },
 ];
