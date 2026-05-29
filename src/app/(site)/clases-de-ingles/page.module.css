@@ -1,0 +1,213 @@
+/* ── Hero ───────────────────────────────────────────────────────────── */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  padding: 4rem 0 3rem;
+}
+
+.heroPhoto {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 460px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--bg-2);
+  margin: 0 auto;
+  box-shadow: 0 24px 64px rgba(20, 33, 92, 0.14);
+}
+
+/* ── Grids ──────────────────────────────────────────────────────────── */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── Cards ──────────────────────────────────────────────────────────── */
+.intentCard {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+.intentCard:hover {
+  box-shadow: 0 8px 28px rgba(20, 33, 92, 0.1);
+  transform: translateY(-2px);
+}
+
+.pilarRow {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.pricingCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  transition: border-color 0.18s;
+}
+.pricingCardFeatured {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.testimonialCard {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+/* ── Proof strip ────────────────────────────────────────────────────── */
+.proofStrip {
+  background: var(--ink-bg);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.9rem 0;
+}
+.proofStrip ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* ── Badges ─────────────────────────────────────────────────────────── */
+.targetBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.22rem 0.9rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ── WA button ──────────────────────────────────────────────────────── */
+.waBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.15s;
+}
+.waBtn:hover {
+  background: #1da851;
+  transform: translateY(-1px);
+}
+
+.waBtnSm {
+  display: block;
+  text-align: center;
+  background: #25D366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.waBtnSm:hover {
+  background: #1da851;
+}
+
+/* ── CTA final ──────────────────────────────────────────────────────── */
+.ctaFinal {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ── Footer mini ────────────────────────────────────────────────────── */
+.footerMini {
+  background: var(--ink-bg);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1.25rem;
+}
+.footerMini a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0 2rem;
+  }
+  .heroPhoto {
+    max-width: 100%;
+    height: 320px;
+    order: -1;
+  }
+  .grid4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid4 {
+    grid-template-columns: 1fr;
+  }
+}
