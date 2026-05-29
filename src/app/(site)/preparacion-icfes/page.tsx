@@ -92,6 +92,18 @@ const jsonLd = {
         availability: 'https://schema.org/InStock',
       },
     },
+    {
+      '@type': 'LocalBusiness',
+      name: 'Idiomas WeLearn',
+      url: 'https://idiomaswl.com',
+      telephone: '+573005004253',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Bucaramanga',
+        addressRegion: 'Santander',
+        addressCountry: 'CO',
+      },
+    },
   ],
 };
 
