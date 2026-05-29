@@ -1351,6 +1351,160 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>Si migrar a Canadá es tu objetivo y necesitas prepararte para el IELTS General Training, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a>. La clase de diagnóstico gratis identifica en cuánto tiempo puedes alcanzar el puntaje que necesitas según tu nivel actual.</p>
     `,
   },
+  {
+    slug: 'aprender-coreano-siendo-hispanohablante',
+    title: 'Aprender coreano siendo hispanohablante: ventajas que no esperabas y retos reales',
+    description:
+      'Los hispanohablantes tienen ventajas específicas para aprender coreano que pocos mencionan, y retos que nadie te prepara para enfrentar. Guía honesta para empezar desde cero.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'Coreano',
+    tags: ['aprender coreano', 'coreano hispanohablante', 'Hangul', 'pronunciación coreana', 'tiempo para aprender coreano'],
+    body: `
+<h2>¿Por qué el coreano parece imposible desde lejos y posible de cerca?</h2>
+<p>El coreano aparece consistentemente en listas de los "idiomas más difíciles para hablantes de inglés" — pero esas listas están hechas para angloparlantes. Para los hispanohablantes, el panorama es diferente en formas sorprendentes, tanto a favor como en contra.</p>
+<p>Si estás pensando en aprender coreano — por K-dramas, K-pop, la posibilidad de estudiar o trabajar en Corea, o simplemente porque el idioma te llama la atención — esta guía te da un panorama honesto de lo que te espera.</p>
+
+<h2>Ventajas reales del hispanohablante para aprender coreano</h2>
+
+<h3>1. El Hangul se aprende en 2–4 horas</h3>
+<p>El sistema de escritura coreano, el Hangul, es uno de los sistemas de escritura más lógicos y regulares del mundo. A diferencia del chino (miles de caracteres) o el japonés (tres sistemas de escritura combinados), el Hangul tiene 24 símbolos base (14 consonantes y 10 vocales) que se combinan en bloques silábicos.</p>
+<p>Y aquí viene la ventaja del hispanohablante: el español es fonéticamente regular. Cuando aprendemos que 'ㅏ' se pronuncia como una 'a' abierta, lo entendemos intuitivamente. Los angloparlantes batallan más porque sus cerebros están acostumbrados a ortografías irregulares (el inglés es un caos fonético). Un hispanohablante puede estar leyendo Hangul en voz alta después de 3–4 horas de estudio, aunque no entienda nada de lo que lee — y eso da una base enorme para el resto del aprendizaje.</p>
+
+<h3>2. Algunos sonidos coreanos no existen en inglés pero sí (o algo parecido) en español</h3>
+<p>El coreano tiene varios sonidos que son difíciles para angloparlantes pero más accesibles para hispanohablantes:</p>
+<ul>
+  <li>La 'eo' (ㅓ) tiene un sonido parecido a la 'o' del español en posición abierta.</li>
+  <li>Algunas consonantes coreanas como ㄹ tienen realizaciones que recuerdan a la vibrante simple española (similar a la 'r' entre vocales en "pero").</li>
+  <li>La vocal ㅡ (una vocal central no redondeada) tiene similitudes con la 'e' española en algunos contextos.</li>
+</ul>
+<p>Dicho esto, el coreano también tiene sonidos que no existen en español y que requieren entrenamiento específico (ver la sección de retos).</p>
+
+<h3>3. Motivación impulsada por cultura accesible</h3>
+<p>El contenido en coreano — K-dramas, K-pop, webtoons, videos de cocina, vlogs de viaje — es enormemente accesible y tiene una comunidad latinoamericana muy activa. Esta exposición cultural masiva, combinada con subtítulos en español de alta calidad para la mayoría del contenido, crea un ecosistema de aprendizaje rico que no existía hace 10 años.</p>
+<p>La motivación sostenida es el factor número uno para aprender cualquier idioma. Y el coreano, para muchos hispanohablantes, tiene ese gancho cultural que el alemán o el mandarín simplemente no tienen.</p>
+
+<h2>Retos reales que nadie te prepara para enfrentar</h2>
+
+<h3>1. La gramática es radicalmente diferente al español</h3>
+<p>El español es SVO (Sujeto-Verbo-Objeto): "Yo como arroz". El coreano es SOV: 나는 밥을 먹어요 — "Yo arroz como". Esto no suena tan grave hasta que empiezas a construir oraciones complejas con cláusulas relativas y verbos modales. En coreano, toda la información modificante va antes del sustantivo modificado y el verbo siempre al final. Reentrenar este orden requiere práctica activa, no solo memorización.</p>
+
+<h3>2. Las partículas son una capa adicional</h3>
+<p>El coreano usa un sistema de partículas gramaticales — sufijos que se agregan a las palabras para indicar su función en la oración (sujeto, objeto, destino, origen, etc.). El español usa el orden de palabras para esto; el coreano usa las partículas. Hay que aprender cuándo usar 은/는 vs. 이/가 para el sujeto, 을/를 para el objeto, 에/에서 para ubicación — y las diferencias entre ellos tienen matices que toman meses en dominar.</p>
+
+<h3>3. Los sistemas de cortesía cambian el idioma completo</h3>
+<p>El coreano tiene múltiples niveles de formalidad que no solo cambian el vocabulario sino la conjugación de todos los verbos. Lo que aprendes como principiante (el 해요체, nivel formal) es diferente a cómo hablarías con amigos (반말) o en situaciones muy formales. No es solo "usted/tú" — es un sistema complejo que toma tiempo dominar.</p>
+
+<h3>4. Consonantes aspiradas, tensas y sin aspiración</h3>
+<p>El coreano distingue tres formas de pronunciar muchas consonantes: normal (ㅂ), aspirada (ㅍ) y tensa (ㅃ). Esta distinción es fonémica — "bal" (밝), "pal" (팔) y "bbal" (빨) son palabras diferentes. El español no tiene esta distinción de manera consistente, y el oído hispano a menudo no la percibe inicialmente. El entrenamiento auditivo y fonético desde el principio es crítico.</p>
+
+<h2>¿Cuánto tiempo toma aprender coreano?</h2>
+<p>El Foreign Service Institute de EE.UU. estima 2.200 horas para que un angloparlante alcance nivel B2 en coreano — más que cualquier idioma europeo. Para hispanohablantes, la estimación no tiene datos oficiales, pero la evidencia anecdótica sugiere que es similar al tiempo para angloparlantes, con ligeras ventajas en fonética y ligeras desventajas en distancia gramatical.</p>
+<p>Una estimación más práctica:</p>
+<ul>
+  <li><strong>Hangul + saludo + frases básicas</strong>: 4–8 semanas de práctica regular.</li>
+  <li><strong>Conversación básica (A2)</strong>: 6–12 meses con 30–60 min/día.</li>
+  <li><strong>Comunicación funcional (B1)</strong>: 18–24 meses.</li>
+  <li><strong>Fluidez conversacional (B2)</strong>: 3–5 años de práctica consistente.</li>
+</ul>
+
+<h2>La manera más eficiente de empezar</h2>
+<p>Basado en años de enseñanza de coreano a hispanohablantes, el orden que funciona mejor es:</p>
+<ol>
+  <li>Hangul primero (2–4 horas intensivas con sistema fonético español como referencia).</li>
+  <li>Estructuras básicas con vocabulario de alta frecuencia (los primeros 500 sustantivos y verbos más usados en el idioma cotidiano).</li>
+  <li>Exposición masiva a audio y video en coreano desde el primer mes, con subtítulos en coreano (no en español — el cerebro toma el camino fácil).</li>
+  <li>Práctica de producción oral desde la segunda semana, aunque sean frases de 4 palabras.</li>
+</ol>
+<p>Si quieres aprender coreano con un método diseñado específicamente para hispanohablantes, con guía fonética desde el sistema de sonidos del español, puedes revisar <a href="/clases-de-coreano">nuestro programa de coreano</a> — incluye la ruta completa desde cero hasta conversación fluida.</p>
+    `,
+  },
+  {
+    slug: 'toefl-ibt-estrategias-por-seccion',
+    title: 'TOEFL iBT: estrategias específicas para cada sección y cómo llegar a 100 puntos',
+    description:
+      'Guía práctica de estrategias para las cuatro secciones del TOEFL iBT: Reading, Listening, Speaking y Writing. Los errores más caros y cómo evitarlos para alcanzar 100+ puntos.',
+    date: '2026-05-30',
+    readTime: 9,
+    category: 'TOEFL',
+    tags: ['TOEFL iBT', 'estrategias TOEFL', 'TOEFL 100', 'TOEFL Colombia', 'TOEFL Speaking', 'TOEFL Writing'],
+    body: `
+<h2>Por qué el TOEFL tiene fama de ser "diferente" al IELTS</h2>
+<p>Muchos colombianos que preparan el IELTS y el TOEFL al mismo tiempo describen el TOEFL como "más difícil de ganar estrategias" y "más mecánico". Tienen razón en ambas cosas.</p>
+<p>El TOEFL es un examen diseñado, administrado y calificado de forma completamente computarizada (excepto Speaking y Writing que evalúa inteligencia artificial + revisores humanos). El formato es rígido, los tipos de pregunta son predecibles y, como consecuencia, las estrategias son muy específicas — y muy efectivas si se conocen bien.</p>
+
+<h2>Panorama del examen</h2>
+<p>El TOEFL iBT (Internet-Based Test) dura aproximadamente 2 horas con la versión actual (desde julio 2023 ETS lo redujo de 3 a 2 horas). Tiene cuatro secciones:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Sección</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Tiempo</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Preguntas</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Puntaje máx.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Reading</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">35 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">20 preguntas (2 textos)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Listening</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">36 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">28 preguntas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Speaking</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">16 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">4 tareas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Writing</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">29 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 tareas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
+  </tbody>
+</table>
+<p>El puntaje total va de 0 a 120. Para la mayoría de universidades norteamericanas se requiere 80–100. Para programas selectivos o becas, 100–110.</p>
+
+<h2>Reading: la sección donde más se gana con estrategia</h2>
+<p>El TOEFL Reading tiene 2 textos académicos (~700 palabras cada uno) y 10 preguntas por texto. Las preguntas siguen una tipología fija:</p>
+<ul>
+  <li>Vocabulary (significado de una palabra en contexto)</li>
+  <li>Reference (a qué se refiere un pronombre o frase)</li>
+  <li>Factual Information (información explícita en el texto)</li>
+  <li>Negative Factual (qué NO aparece en el texto)</li>
+  <li>Inference (qué se puede deducir)</li>
+  <li>Sentence Simplification (parafrasear una oración)</li>
+  <li>Insert Text (dónde añadir una oración)</li>
+  <li>Prose Summary (3 ideas principales de 6 opciones)</li>
+</ul>
+<p><strong>Estrategia por tipo</strong>: Las preguntas de Vocabulary, Reference y Factual se responden volviendo directamente al párrafo señalado. Las de Inference y Prose Summary requieren comprensión de la estructura completa del argumento. La pregunta de Insert Text requiere verificar coherencia lógica en cada posición.</p>
+<p><strong>Orden de ataque recomendado</strong>: Lee el primer párrafo completo (introduce el tema y la estructura del texto). Para los párrafos siguientes: lee la primera oración (idea principal) y luego responde las preguntas de ese párrafo sin leer el párrafo completo a menos que la pregunta lo requiera. Ahorra 8–10 minutos que puedes usar en Prose Summary.</p>
+
+<h2>Listening: notas que deciden el puntaje</h2>
+<p>El TOEFL Listening tiene 3 conversaciones (diálogos entre 2 personas en contexto universitario) y 3 lectures (conferencias académicas). Cada audio dura 3–6 minutos. Solo puedes escuchar cada audio una vez.</p>
+<p><strong>La clave: tomar notas efectivas</strong>. El TOEFL provee papel y lápiz para notas. La diferencia entre 20 y 27 puntos en Listening es casi siempre la calidad de las notas. Los mejores tomadores de notas en TOEFL no transcriben — identifican: el tema principal, la posición del hablante, los detalles clave con sus conexiones lógicas (causa-efecto, contraste, ejemplos).</p>
+<p><strong>Tipos de pregunta críticos</strong>:</p>
+<ul>
+  <li><em>Function questions</em>: "Why does the professor say X?" — estas preguntas sobre el propósito del enunciado son las más complicadas. La respuesta rara vez es el significado literal; es el propósito comunicativo.</li>
+  <li><em>Attitude questions</em>: "How does the student feel about X?" — escucha el tono, no solo el contenido.</li>
+  <li><em>Organization questions</em>: "How does the professor organize the information?" — requiere entender la macroestructura de la lecture.</li>
+</ul>
+
+<h2>Speaking: la sección más mecánica y la más mejorable con estrategia</h2>
+<p>El TOEFL Speaking tiene 4 tareas. La primera es Independent (hablas sobre tu opinión o experiencia). Las otras 3 son Integrated (lees/escuchas y luego hablas resumiendo o sintetizando):</p>
+<ul>
+  <li><strong>Task 1 (Independent)</strong>: 15 segundos de preparación, 45 segundos de respuesta. Da una opinión clara y desarrolla exactamente 2 razones con un ejemplo cada una.</li>
+  <li><strong>Task 2 (Campus announcement)</strong>: Lees un anuncio universitario (45 seg), escuchas a dos estudiantes opinar sobre él, luego describes el problema o cambio y la opinión del estudiante.</li>
+  <li><strong>Task 3 (Academic reading + lecture)</strong>: Lees una definición académica, escuchas al profesor ilustrarla con ejemplos, luego explicas el concepto usando los ejemplos de la lecture.</li>
+  <li><strong>Task 4 (Academic lecture)</strong>: Solo escuchas. El profesor explica un concepto con dos ejemplos. Tú resumes el concepto y los ejemplos.</li>
+</ul>
+<p><strong>La estructura que funciona en las 4 tareas</strong>: Topic sentence (qué vas a decir) → 1er punto (detail + example) → 2do punto (detail + example) → Cierre (1 oración). Esta estructura predecible maximiza los puntos en Delivery, Language Use y Topic Development — los 3 criterios de calificación.</p>
+<p><strong>Error más común</strong>: hablar sin estructura clara, llegar al final del tiempo sin concluir, o usar silencio de más de 2 segundos. El software de calificación penaliza pausas largas y respuestas incompletas.</p>
+
+<h2>Writing: dos tareas muy diferentes</h2>
+<h3>Integrated Writing (20 minutos)</h3>
+<p>Lees un pasaje académico (3 minutos), escuchas una lecture que presenta argumentos contrarios o matices al pasaje, y luego escribes 150–225 palabras explicando cómo la lecture responde al pasaje.</p>
+<p>Error fatal: dar tu opinión personal o resumir solo el pasaje. La tarea es específicamente mostrar cómo la lecture contradice, matiza o complica los argumentos del pasaje. Sin eso: 3 puntos máximo de 5.</p>
+<p>Estructura óptima: 1 párrafo intro (el pasaje argue X; la lecture contesta), 3 párrafos de contraste (punto del pasaje → punto contrario de la lecture), sin conclusión necesaria.</p>
+
+<h3>Writing for an Academic Discussion (10 minutos)</h3>
+<p>Esta tarea reemplazó al Independent Essay en julio 2023. Te muestran la publicación de un foro académico de un profesor con una pregunta, y dos respuestas de compañeros de clase. Debes escribir tu propia respuesta (mínimo 100 palabras, idealmente 150–200) que agregue algo nuevo — no que resuma lo que dijeron los compañeros.</p>
+<p>Las respuestas con mayor puntaje: tienen una posición clara, usan evidencia o razonamiento propio (no solo "estoy de acuerdo con X"), incorporan al menos una referencia a las ideas de los compañeros para mostrar engagement con la discusión, y usan vocabulario académico preciso.</p>
+
+<h2>Puntaje 100: qué implica en la práctica</h2>
+<p>100 puntos en el TOEFL equivale aproximadamente a IELTS 7.0. Para alcanzarlo desde nivel B1–B2, necesitas entre 12 y 20 semanas de preparación estructurada dependiendo de tu punto de partida.</p>
+<p>La sección que más fácilmente puede subir con estrategia es Reading (+5–8 puntos con 4 semanas de práctica intensiva). La que más tarda en mejorar es Speaking (requiere fluidez real, no solo estrategia).</p>
+<p>Si quieres prepararte para el TOEFL con una ruta específica por sección, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a> — las clases son 1:1 con tutor y se adaptan a las secciones donde más necesitas mejorar. También puedes <a href="/examenes/toefl">hacer el simulacro de TOEFL gratis</a> para tener una línea base antes de empezar.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

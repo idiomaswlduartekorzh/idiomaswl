@@ -537,6 +537,7 @@ export default function ClasesDeInglesPage() {
               { cat: 'Trabajo', title: 'Inglés para empresas multinacionales', slug: 'ingles-para-trabajar-en-empresas-multinacionales' },
               { cat: 'Speaking', title: 'Por qué te bloqueas al hablar inglés y cómo superarlo', slug: 'como-mejorar-el-ingles-hablado' },
               { cat: 'Migración', title: 'IELTS para migrar a Canadá: qué puntaje necesitas por visa', slug: 'migrar-a-canada-requisitos-ielts-ingles' },
+              { cat: 'TOEFL', title: 'TOEFL iBT: estrategias por sección para llegar a 100 puntos', slug: 'toefl-ibt-estrategias-por-seccion' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
