@@ -96,7 +96,7 @@ public/
 |----|--------|--------|
 | M2.1 | Landing de coreano | **HECHO** — `src/app/(site)/clases-de-coreano/` con JSON-LD, sección Miembro Fundador, TOPIK comparador, FAQ |
 | M2.2 | Landing de ICFES inglés | **HECHO** — `src/app/(site)/preparacion-icfes/` con escala de puntajes, estructura del examen, plan de prep |
-| M2.3 | SEO técnico base (meta tags, schema.org, sitemap, robots) | **HECHO** — sitemap.ts actualizado, JSON-LD (Course + LocalBusiness) en todas las landing pages, metadata canónica |
+| M2.3 | SEO técnico base (meta tags, schema.org, sitemap, robots) | **HECHO** — sitemap.ts, robots.ts, JSON-LD @graph en todas las landing pages (Course + LocalBusiness + BreadcrumbList + Person + FAQPage), Blog + BlogPosting en /blog, Article en /blog/[slug], OG images en todas las rutas públicas |
 
 ### NIVEL 3 — PRODUCTO SUSCRIPCIÓN
 
@@ -110,9 +110,9 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con 5 artículos + filtro interactivo + OG images + Article+BreadcrumbList JSON-LD + internal links a landings + CTA con link secundario a landing |
+| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con 9 artículos (IELTS×3, TOEFL×1, ICFES×1, Coreano×4) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings + links inversos desde landings + Blog/BlogPosting schema en /blog + sección blog en home page |
 | M4.2 | Sistema de testimonios en video | **PENDIENTE** — necesita videos de David |
-| M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — viewport export, prefers-reduced-motion, image sizes, FAQ schema en todas las landing pages, OG dinámicos edge en TODAS las rutas públicas, BreadcrumbList en blog |
+| M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — OG images edge en todas las rutas públicas, BreadcrumbList en todas las páginas, poweredByHeader: false, next/font/google para Geist. Pendiente: medir Lighthouse mobile en producción |
 
 ---
 
@@ -126,6 +126,9 @@ public/
 - **`saveProgress.ts`**: acción de servidor para marcar pasos como completados. Pendiente: llamar a `markStepComplete('korean', stepId)` al final de cada lección coreana.
 - **GTM M1.4**: el código ya hace `window.dataLayer.push({ event: 'click_whatsapp' })` y `{ event: 'lead_simulacro' }`. Solo falta crear los triggers y tags en tagmanager.google.com (GTM-57NXLPZV) y publicar.
 - **Nav links**: Home, Inglés, Coreano, Exámenes, Blog, Precios (en `SiteNav.tsx`). Correcto.
-- **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering — root, /home (hereda root), /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes.
+- **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering — /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes. Root `/` redirige a /home.
+- **BreadcrumbList**: añadido a todos los pages: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion, blog, blog/[slug].
+- **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes).
+- **9 artículos blog**: IELTS Band 7, ICFES inglés, Coreano desde cero, TOEFL iBT, TOPIK I, IELTS vs TOEFL, Inglés multinacionales, Beca GKS, Series y películas.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
