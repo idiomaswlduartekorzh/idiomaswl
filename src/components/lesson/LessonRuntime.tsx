@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import StageRail from './StageRail';
 import StagePanel from './StagePanel';
+import { markStepComplete } from '@/lib/actions/saveProgress';
 
 const TOTAL = 11;
 /** How many days exist in the system — keep in sync with generateStaticParams. */
@@ -37,6 +38,15 @@ interface LessonRuntimeProps {
 
 export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber, title, topics, vocab, grammarContent }: LessonRuntimeProps) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const completedRef = useRef(false);
+
+  // Mark step complete when the user reaches the final stage (stage 11)
+  useEffect(() => {
+    if (activeIndex === TOTAL - 1 && !completedRef.current && langSlug === 'korean') {
+      completedRef.current = true;
+      markStepComplete('korean', String(dayNumber)).catch(console.error);
+    }
+  }, [activeIndex, langSlug, dayNumber]);
 
   function next() { setActiveIndex(i => Math.min(i + 1, TOTAL - 1)); }
   function prev() { setActiveIndex(i => Math.max(i - 1, 0)); }
