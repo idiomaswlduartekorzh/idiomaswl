@@ -441,6 +441,7 @@ export default function ClasesDeCoreanoPage() {
               {[
                 { cat: 'Coreano', title: 'Aprender coreano desde cero en Colombia: la guía completa', slug: 'aprender-coreano-desde-cero-guia-colombia' },
                 { cat: 'Coreano', title: 'TOPIK I: cómo prepararlo desde cero y pasar al primer intento', slug: 'topik-1-preparacion-guia-para-principiantes' },
+                { cat: 'Coreano', title: 'Beca GKS de Corea del Sur para colombianos: requisitos y TOPIK', slug: 'beca-gks-corea-del-sur-para-colombianos' },
               ].map(a => (
                 <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
                   <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#c8202e', background: 'rgba(200,32,46,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

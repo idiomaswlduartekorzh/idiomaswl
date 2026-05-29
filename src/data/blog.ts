@@ -669,6 +669,106 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>En WeLearn trabajamos inglés profesional con enfoque en el entorno corporativo latinoamericano: reuniones, presentaciones, emails y preparación para IELTS o TOEFL si lo necesitas. Puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés</a> o hacer un <a href="/examenes">simulacro gratuito de IELTS</a> para ver tu nivel actual antes de decidir cualquier cosa.</p>
     `,
   },
+  {
+    slug: 'beca-gks-corea-del-sur-para-colombianos',
+    title: 'Beca GKS de Corea del Sur para colombianos: requisitos, cómo aplicar y el rol del TOPIK',
+    description:
+      'Todo lo que necesitas saber sobre la Beca GKS del gobierno coreano: quién puede aplicar, qué cubre, qué nivel de TOPIK se requiere y cómo aumentar tus probabilidades desde Colombia.',
+    date: '2026-05-29',
+    readTime: 9,
+    category: 'Coreano',
+    tags: ['beca GKS', 'estudiar en Corea', 'TOPIK', 'coreano', 'Colombia', 'beca gobierno coreano', 'NIIED'],
+    body: `
+<h2>¿Qué es la Beca GKS y por qué importa?</h2>
+<p>La Beca GKS (Global Korea Scholarship), también conocida como Beca KGSP, es el programa de becas del gobierno de Corea del Sur para estudiantes extranjeros. Es administrada por el NIIED (National Institute for International Education) bajo el Ministerio de Educación de Corea y es, sin duda, una de las becas más completas para estudiar en Asia.</p>
+<p>Cada año, Colombia tiene un cupo asignado de becas a través de dos canales: la vía Embajada (Embassy Track) y la vía Universidad (University Track). Los colombianos que logran esta beca acceden a estudios en universidades coreanas de primer nivel —SKY (Seoul National University, Korea University, Yonsei University), KAIST, POSTECH y muchas más— con gastos casi completamente cubiertos.</p>
+
+<h2>¿Qué cubre la Beca GKS?</h2>
+<p>Esta es la razón por la que la GKS es tan buscada. A diferencia de becas parciales, la GKS cubre prácticamente todo:</p>
+<ul>
+  <li><strong>Tiquete de avión</strong>: ida a Corea al inicio del programa y regreso al terminar.</li>
+  <li><strong>Matrícula completa</strong>: todos los semestres del programa de posgrado (maestría: 2 años, doctorado: 3 años) o pregrado (4 años).</li>
+  <li><strong>Mensualidad de manutención</strong>: entre 900.000 y 1.100.000 won coreanos mensuales (equivalente a aproximadamente $600–750 USD). Cubre alojamiento y comida básica.</li>
+  <li><strong>Seguro médico</strong>: cobertura durante toda la estadía.</li>
+  <li><strong>Programa de coreano</strong>: un año de clases de idioma coreano antes del inicio del programa académico. La mayoría de becarios llegan sin coreano y aprenden durante este año preparatorio.</li>
+  <li><strong>Beneficio adicional</strong>: si llegas con TOPIK Nivel 5 o superior, recibes un bono económico extra durante el año de idioma.</li>
+</ul>
+<p>Para un colombiano, esto significa estudiar gratis en una de las mejores universidades de Asia, con mensualidad incluida, en un país con altísima calidad de vida y seguridad. El valor de la beca por año supera los 30.000 USD.</p>
+
+<h2>Requisitos para aplicar desde Colombia</h2>
+<p>Los requisitos varían ligeramente según el nivel (pregrado vs. posgrado) y el track (Embajada vs. Universidad), pero los puntos comunes son:</p>
+
+<h3>Requisitos generales</h3>
+<ul>
+  <li><strong>Nacionalidad</strong>: colombiana (no puedes tener ciudadanía coreana).</li>
+  <li><strong>Edad</strong>: para pregrado, menor de 25 años al momento de la aplicación. Para posgrado, menor de 40 años.</li>
+  <li><strong>Promedio académico</strong>: GPA mínimo de 2.64 sobre 4.0 (equivalente a aproximadamente 3.5 sobre 5 en Colombia). En la práctica, los seleccionados tienen promedios mucho más altos.</li>
+  <li><strong>Salud</strong>: certificado médico oficial.</li>
+  <li><strong>No ser ciudadano coreano</strong>: ni el solicitante ni sus padres.</li>
+</ul>
+
+<h3>Requisitos de idioma</h3>
+<p>Este es el punto donde muchos colombianos tienen dudas. La respuesta directa: <strong>no es obligatorio llegar con coreano</strong>. El programa incluye un año de inmersión en coreano antes del programa académico.</p>
+<p>Sin embargo:</p>
+<ul>
+  <li>Si presentas TOPIK Nivel 3 o superior al aplicar, aumentas significativamente tu perfil competitivo frente a otros candidatos.</li>
+  <li>Si presentas TOPIK Nivel 5 o superior, recibes el bono adicional durante el año de idioma y puedes omitir el año preparatorio si el programa lo permite.</li>
+  <li>No tener TOPIK no elimina tu candidatura, pero en un proceso altamente competitivo, tenerlo (incluso nivel 1 o 2) diferencia tu expediente.</li>
+</ul>
+<p>El requisito de inglés varía: algunas universidades exigen TOEFL 80+ o IELTS 6.0+ para los programas dictados en inglés. Para programas en coreano, el inglés es opcional.</p>
+
+<h2>Los dos tracks de aplicación: Embassy vs. University</h2>
+<h3>Embassy Track (Vía Embajada)</h3>
+<p>La aplicación va directamente a través de la Embajada de Corea en Bogotá. El NIIED asigna a Colombia un número de cupos anual (generalmente entre 10 y 20 para todos los niveles). Tú postulas a la Embajada indicando tres universidades de preferencia, y si eres seleccionado, el NIIED asigna la universidad.</p>
+<p><strong>Ventaja</strong>: puedes aplicar sin contacto previo con ninguna universidad coreana.<br />
+<strong>Desventaja</strong>: la competencia es muy alta y la asignación de universidad no está garantizada.</p>
+
+<h3>University Track (Vía Universidad)</h3>
+<p>Contactas directamente con la universidad coreana que te interesa, que tiene cupos GKS propios asignados por el NIIED. Aplicas primero a la universidad, y si ella te selecciona, procesa tu beca con el NIIED.</p>
+<p><strong>Ventaja</strong>: te asegura la universidad específica que quieres; el proceso es más directo con los departamentos.<br />
+<strong>Desventaja</strong>: requiere contacto proactivo con la universidad y, en muchos casos, cartas de recomendación de profesores del departamento.</p>
+
+<h2>Calendario aproximado del proceso</h2>
+<p>Las fechas varían año a año, pero el ciclo general es:</p>
+<ul>
+  <li><strong>Septiembre – Octubre</strong>: el NIIED publica la convocatoria para el año siguiente. La Embajada de Corea en Colombia anuncia los detalles locales.</li>
+  <li><strong>Octubre – Enero</strong>: período de aplicación. Reúnes y envías toda la documentación.</li>
+  <li><strong>Febrero – Abril</strong>: evaluación de expedientes, entrevistas (en algunos casos).</li>
+  <li><strong>Mayo – Junio</strong>: anuncio de seleccionados preliminares.</li>
+  <li><strong>Agosto – Septiembre</strong>: llegada a Corea, inicio del año de idioma.</li>
+</ul>
+<p><strong>Importante</strong>: el TOPIK se presenta una o dos veces al año en Colombia (generalmente en abril y octubre). Si quieres tener TOPIK Nivel 3 para la próxima convocatoria, necesitas empezar a prepararte con suficiente anticipación.</p>
+
+<h2>¿Cuán competitivo es el proceso?</h2>
+<p>Muy. En el Embassy Track, los cupos para Colombia suelen ser escasos frente a la cantidad de aplicantes. Un perfil competitivo típico de seleccionado colombiano tiene:</p>
+<ul>
+  <li>GPA de 4.3/5.0 o superior.</li>
+  <li>Experiencia de investigación o práctica relevante para el área de estudio.</li>
+  <li>Al menos TOPIK Nivel 2 (Nivel 3 es mejor).</li>
+  <li>Carta de motivación específica y precisa sobre el plan de estudios en Corea.</li>
+  <li>Cartas de recomendación de profesores que conocen el trabajo del estudiante.</li>
+  <li>Propuesta de investigación clara (para posgrado).</li>
+</ul>
+
+<h2>El rol del coreano en tu candidatura</h2>
+<p>El punto que más subestiman los aplicantes colombianos: aprender coreano antes de aplicar no es solo una ventaja competitiva — es una señal al comité evaluador de que el compromiso es real.</p>
+<p>Un evaluador del NIIED que lee dos expedientes similares en contenido académico, pero uno tiene TOPIK Nivel 2 y el otro no tiene ninguna evidencia de haber estudiado coreano, tiene un criterio de diferenciación muy claro: el que estudió coreano demuestra que planificó, se preparó y tiene conexión genuina con Corea.</p>
+<p>Llegar con TOPIK Nivel 3 es aún más poderoso: significa que puedes comunicarte en coreano cotidiano, que el año de idioma será de consolidación y no de construcción desde cero, y que tu integración en la universidad será más efectiva.</p>
+
+<h2>Por dónde empezar si quieres aplicar a la GKS</h2>
+<ol>
+  <li><strong>Define tu área de estudio</strong>: la GKS cubre casi todas las disciplinas. La carta de motivación y la propuesta deben ser específicas — no basta con "quiero estudiar en Corea".</li>
+  <li><strong>Revisa las universidades que te interesan</strong>: el NIIED publica la lista de universidades participantes. Muchas tienen programas en inglés además de en coreano.</li>
+  <li><strong>Empieza el coreano ahora</strong>: si la convocatoria es en octubre y hoy es mayo, tienes 5 meses para alcanzar TOPIK Nivel 1 o 2. Con preparación constante y un método estructurado, es completamente alcanzable.</li>
+  <li><strong>Sigue a la Embajada de Corea en Colombia</strong>: en sus redes y sitio web anuncian las convocatorias con todos los detalles locales.</li>
+  <li><strong>Prepara el inglés si el programa lo requiere</strong>: algunos programas son en inglés y exigen TOEFL o IELTS. Prepara los dos certificados en paralelo si puedes.</li>
+</ol>
+
+<h2>El camino empieza ahora</h2>
+<p>La Beca GKS no es un sueño inalcanzable para colombianos. Es un proceso planificado. Y el coreano es el elemento que más puedes controlar desde hoy: no depende de tu historial académico pasado ni de tus cartas de recomendación — depende de que empieces a estudiarlo con método.</p>
+<p>Si tu meta es llegar al TOPIK Nivel 3 para la próxima convocatoria GKS, necesitas un plan de 8 a 12 meses. Puedes <a href="/clases-de-coreano">conocer cómo funciona nuestro método de coreano</a> — diseñado específicamente para hispanohablantes con objetivos concretos como el TOPIK — o leer primero nuestra <a href="/blog/aprender-coreano-desde-cero-guia-colombia">guía completa para aprender coreano desde cero en Colombia</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
