@@ -484,6 +484,108 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>El mayor reto no es el contenido: es la constancia. El coreano requiere práctica diaria. Veinte días de estudio intensivo no reemplazan seis meses de trabajo regular. Si quieres un plan estructurado con tutor desde el primer día, conoce nuestras <a href="/clases-de-coreano">clases de coreano con preparación TOPIK</a> incluida.</p>
     `,
   },
+  {
+    slug: 'ielts-vs-toefl-cual-tomar-en-colombia',
+    title: 'IELTS vs TOEFL en Colombia: ¿cuál es mejor para tu objetivo?',
+    description:
+      'Comparación completa entre IELTS y TOEFL iBT: diferencias de formato, puntajes, reconocimiento en universidades y cuál elegir según tu meta (migración, maestría o trabajo).',
+    date: '2026-05-26',
+    readTime: 8,
+    category: 'IELTS',
+    tags: ['IELTS', 'TOEFL', 'inglés', 'exámenes internacionales', 'migración', 'Colombia', 'comparación'],
+    body: `
+<h2>La pregunta que todos hacen primero</h2>
+<p>Cada semana, decenas de colombianos buscan la misma respuesta: "¿IELTS o TOEFL?". Ambos exámenes certifican competencia en inglés para contextos académicos y profesionales. Pero no son intercambiables: su formato, su costo, su reconocimiento y sus exigencias técnicas son significativamente diferentes.</p>
+<p>Esta guía te da la respuesta directa según tu objetivo específico.</p>
+
+<h2>Diferencias fundamentales de formato</h2>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Aspecto</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS Academic</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">TOEFL iBT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Duración total</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 h 45 min</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~3 horas</td>
+    </tr>
+    <tr>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Speaking</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Cara a cara con examinador</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Frente al computador (grabado)</td>
+    </tr>
+    <tr>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Escala de puntaje</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">0–9 (bandas)</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">0–120 puntos</td>
+    </tr>
+    <tr>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Validez</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td>
+    </tr>
+    <tr>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Costo aproximado en Colombia</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$750.000–$850.000 COP</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$800.000–$900.000 COP</td>
+    </tr>
+    <tr>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Sede en Colombia</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Bogotá, Medellín, Cali, Barranquilla, Bucaramanga</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Bogotá, Medellín, Cali (menos opciones)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>¿Cuál elegir según tu objetivo?</h2>
+<h3>Si quieres emigrar a Canadá, Australia o UK</h3>
+<p><strong>IELTS General Training</strong> es la opción estándar. Los programas migratorios de estos países (Express Entry, Skilled Worker, etc.) aceptan o prefieren IELTS. El TOEFL también se acepta en muchos casos, pero IELTS tiene mayor reconocimiento en organismos migratorios.</p>
+
+<h3>Si quieres hacer una maestría en EE.UU. o Canadá</h3>
+<p><strong>TOEFL iBT</strong> es la opción natural. Las universidades norteamericanas, especialmente en EE.UU., lo desarrollaron y lo conocen mejor. También es requisito para la mayoría de becas Fulbright. Si la universidad destino acepta ambos (muchas lo hacen), revisa sus conversiones de puntaje antes de decidir.</p>
+
+<h3>Si quieres hacer una maestría en Europa o Australia</h3>
+<p><strong>IELTS Academic</strong>. Las universidades europeas y australianas conocen mejor la escala IELTS y muchas la prefieren o requieren explícitamente.</p>
+
+<h3>Si vas a trabajar en una empresa multinacional en Colombia</h3>
+<p>Ambos funcionan. Sin embargo, IELTS tiende a ser más reconocido en empresas con operaciones en Europa, y TOEFL en empresas con sede en EE.UU. Si el HR de tu empresa no tiene preferencia, elige el que te sea más cómodo en formato.</p>
+
+<h2>La gran diferencia práctica: el Speaking</h2>
+<p>Aquí está la diferencia que cambia el desempeño de la mayoría de candidatos:</p>
+<ul>
+  <li><strong>IELTS Speaking</strong>: entrevista de 11-14 minutos con un examinador humano en persona. Más natural para personas que se sienten cómodas conversando. Muchos lo encuentran menos intimidante porque es como una conversación.</li>
+  <li><strong>TOEFL Speaking</strong>: 4 tareas grabadas frente a la pantalla. Sin contacto humano. Requiere hablar solo hacia un micrófono, a veces integrando lectura y audio en el mismo ejercicio. Muchos colombianos lo encuentran más difícil porque no hay retroalimentación visual del interlocutor.</li>
+</ul>
+<p><strong>Si hablar en inglés con personas te resulta más fácil que hablar solo:</strong> elige IELTS.<br />
+<strong>Si el nerviosismo frente a un humano te bloquea:</strong> elige TOEFL.</p>
+
+<h2>¿Cuál es más difícil?</h2>
+<p>No hay un consenso absoluto. Depende de tus fortalezas:</p>
+<ul>
+  <li>El Reading del TOEFL es más largo y con textos más académicos que el IELTS en algunos sets.</li>
+  <li>El Writing del IELTS Task 1 (describir un gráfico) no tiene equivalente en el TOEFL y puede sorprender a quienes no se preparan para él.</li>
+  <li>El Listening del TOEFL integra lectura + audio (Listening + Reading integrado), lo cual es más complejo que las tareas separadas del IELTS.</li>
+</ul>
+
+<h2>Puntajes de referencia para las metas más comunes</h2>
+<ul>
+  <li><strong>Maestría en universidades top EE.UU.</strong>: TOEFL 100–110 / IELTS 7.0–7.5</li>
+  <li><strong>Residencia permanente Canadá (Express Entry)</strong>: IELTS 6.0 general (mayor puntaje = más puntos CRS)</li>
+  <li><strong>Visa de trabajo UK (Skilled Worker)</strong>: IELTS 4.0–5.5 según ocupación</li>
+  <li><strong>Maestría en Europa</strong>: IELTS 6.5–7.0 según programa</li>
+  <li><strong>Becas Fulbright Colombia</strong>: TOEFL 80+ / IELTS 6.5+</li>
+</ul>
+
+<h2>Mi recomendación final</h2>
+<p>Si tienes un objetivo específico: sigue al destino, no al examen. Revisa los requisitos de la universidad o el programa migratorio al que aplicas y usa el puntaje que piden.</p>
+<p>Si no tienes un objetivo definido aún y quieres "tener el examen listo": <strong>IELTS Academic</strong> tiene mayor reconocimiento global y más opciones de sede en Colombia. Es la apuesta más segura si no sabes todavía a dónde vas.</p>
+<p>En cualquier caso, la preparación estructurada hace la diferencia. Puedes ver cómo abordamos ambos exámenes en nuestro programa de <a href="/clases-de-ingles">preparación para certificaciones de inglés</a>, o hacer un <a href="/examenes">simulacro gratuito de IELTS o TOEFL</a> para saber dónde estás ahora.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
