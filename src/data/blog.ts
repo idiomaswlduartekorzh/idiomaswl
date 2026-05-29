@@ -1961,6 +1961,153 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>Si quieres agendar tu clase de diagnóstico gratis y ver si somos la opción correcta para ti, puedes hacerlo desde la <a href="/clases-de-ingles">página de clases de inglés</a>.</p>
     `,
   },
+  {
+    slug: 'cuanto-cuesta-el-toefl-en-colombia-2026',
+    title: 'Cuánto cuesta el TOEFL iBT en Colombia 2026: precio, sedes y qué incluye',
+    description:
+      'Precio actualizado del TOEFL iBT en Colombia para 2026, centros de examinación en Bogotá, Medellín, Cali y Bucaramanga, qué incluye el precio y cómo inscribirse.',
+    date: '2026-05-31',
+    readTime: 6,
+    category: 'TOEFL',
+    tags: ['costo TOEFL Colombia', 'precio TOEFL 2026', 'TOEFL Bogotá', 'TOEFL Medellín', 'TOEFL Bucaramanga', 'ETS Colombia'],
+    body: `
+<h2>El precio del TOEFL iBT en Colombia 2026</h2>
+<p>El TOEFL iBT (Internet-Based Test) es administrado en Colombia por ETS (Educational Testing Service) a través de centros de examinación Prometric y en algunas instituciones académicas autorizadas. El precio en 2026 es:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Examen</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Precio aprox. 2026</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Validez</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">TOEFL iBT (en centro Prometric)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$235 USD (~$950.000 – $1.000.000 COP)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">TOEFL iBT Home Edition</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$235 USD (mismo precio)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td></tr>
+  </tbody>
+</table>
+<p><em>Nota: el precio del TOEFL está denominado en dólares. El precio en pesos colombianos fluctúa con la tasa de cambio. Verifica el precio exacto al momento de inscribirte en ets.org/toefl.</em></p>
+<p>El TOEFL es consistentemente más caro que el IELTS en Colombia. Esta diferencia de precio (~$50–100 USD más que el IELTS) es uno de los factores que los candidatos consideran al elegir entre ambos exámenes.</p>
+
+<h2>¿Qué incluye el precio del TOEFL?</h2>
+<ul>
+  <li>Las cuatro secciones del examen: Reading, Listening, Speaking y Writing.</li>
+  <li>El Score Report oficial, disponible digitalmente en tu cuenta ETS.</li>
+  <li>Envío gratuito de resultados a hasta 4 instituciones designadas antes del examen.</li>
+  <li>Acceso a My Best Scores (Score Select) — puedes decidir qué resultados envías a las instituciones.</li>
+</ul>
+<p>Cargos adicionales:</p>
+<ul>
+  <li>Envío de resultados adicionales (más de 4 o después del examen): ~$20 USD por institución.</li>
+  <li>Remarking (Score Review): disponible solo para Speaking y Writing, ~$80 USD por sección.</li>
+  <li>Cambio de fecha o centro: varía según cuántos días antes del examen se solicite.</li>
+</ul>
+
+<h2>TOEFL iBT Home Edition: ¿es igual al examen en centro?</h2>
+<p>El TOEFL Home Edition es la versión del examen que se presenta desde casa con supervisión remota. Los puntajes tienen exactamente la misma validez que el examen en centro. La mayoría de universidades y programas migratorios los aceptan por igual.</p>
+<p>Las diferencias prácticas:</p>
+<ul>
+  <li>Debes tener un computador con cámara y micrófono, conexión estable a internet, y un ambiente sin interrupciones.</li>
+  <li>El proceso de check-in incluye mostrar el cuarto con la cámara y tener el escritorio despejado.</li>
+  <li>El monitoreo es en tiempo real por un proctor remoto.</li>
+  <li>Hay más fechas disponibles que en centro (incluyendo fines de semana y algunos horarios nocturnos).</li>
+</ul>
+<p>Si no tienes acceso cómodo a un centro Prometric o prefieres la flexibilidad horaria, el Home Edition es una alternativa perfectamente válida.</p>
+
+<h2>Sedes del TOEFL en Colombia</h2>
+<p>Los centros Prometric autorizados para el TOEFL en Colombia incluyen ubicaciones en:</p>
+<ul>
+  <li><strong>Bogotá</strong>: mayor disponibilidad, varias sedes, fechas semanales.</li>
+  <li><strong>Medellín</strong>: disponible, consultar disponibilidad en ets.org/toefl.</li>
+  <li><strong>Cali</strong>: disponible con menor frecuencia.</li>
+  <li><strong>Bucaramanga</strong>: disponible, verificar disponibilidad específica en el portal ETS.</li>
+  <li><strong>Barranquilla</strong>: disponible en algunos centros.</li>
+</ul>
+<p>Para verificar sedes actualizadas y fechas disponibles en tu ciudad: <em>ets.org/toefl → Find a Test Center → Colombia</em>.</p>
+
+<h2>TOEFL vs IELTS: ¿cuál es más barato en total?</h2>
+<p>Considerando solo el precio del examen, el IELTS es más barato (~$870.000–$920.000 COP vs ~$950.000–$1.000.000 COP para el TOEFL). Sin embargo, el costo total de "obtener el puntaje que necesitas" puede ser diferente según cuántas veces necesites presentarlo.</p>
+<p>Si tu objetivo es específicamente universidades norteamericanas o el sistema de salud americano, el TOEFL tiene más reconocimiento histórico en EE.UU. Para migración, IELTS es preferido en la mayoría de procesos. Para más detalles sobre cuál elegir, revisa nuestra guía <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL: cuál tomar en Colombia</a>.</p>
+<p>Si quieres prepararte para el TOEFL iBT con simulacros y clases 1:1, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a> — en esa sesión evaluamos tu nivel, te orientamos sobre el examen correcto para tu objetivo y diseñamos el plan.</p>
+    `,
+  },
+  {
+    slug: 'migrar-a-australia-con-ielts',
+    title: 'Migrar a Australia desde Colombia: qué puntaje de IELTS necesitas según la visa',
+    description:
+      'Guía actualizada de los requisitos de inglés para las principales vías de migración a Australia desde Colombia en 2026: Skilled Independent, employer-sponsored y estudios con IELTS.',
+    date: '2026-05-31',
+    readTime: 8,
+    category: 'IELTS',
+    tags: ['migrar a Australia', 'IELTS Australia', 'visa Australia Colombia', 'Skilled Independent visa', 'Points Test Australia', 'IELTS migración'],
+    body: `
+<h2>Australia: el sistema de puntos más exigente con el inglés</h2>
+<p>Migrar a Australia desde Colombia tiene requisitos de inglés más estrictos que Canadá en varios aspectos. El sistema de migración australiano tiene categorías de nivel de inglés que van desde "Functional English" hasta "Superior English", y cada categoría corresponde a rangos específicos de puntaje en el IELTS, PTE o TOEFL.</p>
+<p>A diferencia de Canadá, donde el idioma suma puntos al CRS Score, en Australia el idioma puede ser la diferencia entre ser elegible o no elegible para ciertas subclases de visa — no solo una ventaja de puntaje sino un requisito de umbral.</p>
+
+<h2>Los niveles de inglés en el sistema migratorio australiano</h2>
+<p>Australia define el inglés en cuatro categorías para propósitos migratorios:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Categoría</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS equivalente</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Cuándo aplica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">Functional English</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">≥ 4.5 en cada sección</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Reunificación familiar, algunas visas de cónyuge</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">Vocational English</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">≥ 5.0 en cada sección</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Trades Recognition Australia, algunas visas de trabajador</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">Competent English</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">≥ 6.0 en cada sección</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Skilled visas (Subclass 189, 190, 491), empleadores patrocinadores</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">Proficient English</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">≥ 7.0 en cada sección</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Acreditaciones profesionales (enfermería NMC-equivalente, medicina)</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">Superior English</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">≥ 8.0 en cada sección</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">20 puntos extra en el Points Test de migración calificada</td></tr>
+  </tbody>
+</table>
+<p>Nota crítica: <strong>el requisito es "en CADA sección", no solo en el overall</strong>. Para Competent English (6.0), si obtienes 6.5 en Listening, Reading y Writing pero 5.5 en Speaking, NO cumples el requisito — aunque tu overall sea 6.3.</p>
+
+<h2>Las principales vías de migración a Australia y el IELTS que requieren</h2>
+
+<h3>Skilled Independent Visa (Subclass 189)</h3>
+<p>La Subclass 189 es la visa de residencia permanente más accesible para profesionales calificados sin patrocinador. Funciona con un sistema de puntos (Points Test):</p>
+<ul>
+  <li><strong>Requisito mínimo de inglés</strong>: Competent English (IELTS 6.0 en todas las secciones). Sin esto, no se puede aplicar.</li>
+  <li><strong>Competent English en el Points Test</strong>: suma 0 puntos adicionales (es solo el umbral mínimo).</li>
+  <li><strong>Proficient English (7.0 en todas las secciones)</strong>: suma 10 puntos al puntaje total.</li>
+  <li><strong>Superior English (8.0 en todas las secciones)</strong>: suma 20 puntos al puntaje total.</li>
+</ul>
+<p>El puntaje mínimo de invitación (cut-off score) para la Subclass 189 varía por ocupación, pero en 2024–2025 rondó los 65–85 puntos para la mayoría de ocupaciones populares. Los 10–20 puntos del idioma pueden ser decisivos.</p>
+<p>Los 20 puntos de Superior English (IELTS 8.0 en cada sección) tienen un valor disproportionado: equivalen a 3 años adicionales de experiencia laboral o a tener un segundo título universitario. Alcanzar 8.0 en Speaking y Writing es el objetivo más difícil para colombianos, pero el retorno es enorme.</p>
+
+<h3>Skilled Nominated Visa (Subclass 190)</h3>
+<p>Similar a la Subclass 189 pero requiere nominación de un estado australiano. Los requisitos de idioma son los mismos que la 189 — Competent English mínimo.</p>
+
+<h3>Skilled Work Regional Visa (Subclass 491)</h3>
+<p>Para vivir y trabajar en áreas regionales (fuera de Sydney, Melbourne y Brisbane principalmente). Requiere Competent English (6.0 en cada sección). Hay vías para convertirla en residencia permanente (Subclass 191) después de 3 años.</p>
+
+<h3>Employer Nominated Scheme (Subclass 186 — Temporary Transition Stream)</h3>
+<p>Requiere Competent English (6.0 en cada sección) o exención si ya tienes empleo en Australia y llevas suficiente tiempo. El empleador patrocina la visa.</p>
+
+<h3>Estudios con pathway a residencia</h3>
+<p>Muchos colombianos migran primero con visa de estudiante (Student Visa, Subclass 500) y luego aplican a residencia. Las universidades y colleges australianos exigen generalmente:</p>
+<ul>
+  <li>Universidades: IELTS Academic 6.0–6.5 overall (con mínimos por sección).</li>
+  <li>Colleges (VET): IELTS 5.5–6.0 overall.</li>
+</ul>
+<p>Después de graduarse, el Graduate Visa (Subclass 485) permite trabajar en Australia por 2–5 años, desde donde se puede aplicar a visa de habilidades.</p>
+
+<h2>IELTS Academic o General Training para Australia</h2>
+<p>Para <strong>visas de migración calificada</strong> (Subclass 189, 190, 491, 186): <strong>IELTS General Training</strong> es suficiente para el requisito de idioma de la visa.</p>
+<p>Para <strong>acreditaciones profesionales</strong> (enfermería AHPRA, ingeniería Engineers Australia, arquitectura AACA): verificar el organismo específico — generalmente piden IELTS Academic 7.0 en cada sección.</p>
+<p>Para <strong>estudios</strong> (visa de estudiante): <strong>IELTS Academic</strong>.</p>
+
+<h2>Cuánto tiempo toma prepararse para el IELTS requerido</h2>
+<p>Para Competent English (IELTS 6.0 en cada sección) desde nivel B1: 8–14 semanas.<br/>
+Para Proficient English (7.0 en cada sección) desde B1–B2: 16–24 semanas.<br/>
+Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B2+.</p>
+<p>El requisito "en cada sección" hace que el perfil de preparación deba ser balanceado. No puedes compensar un Speaking débil con un Reading alto. Si tu Speaking es 5.5 y el resto es 7.0, el plan debe enfocarse intensamente en Speaking para alcanzar el 6.0 mínimo en esa sección.</p>
+<p>Si migrar a Australia es tu objetivo y necesitas prepararte para el IELTS con foco en el puntaje específico que requieres, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a>. El plan se diseña para que cada sección alcance el umbral requerido.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
