@@ -45,13 +45,16 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      // GTM + GA4 + Meta Pixel script sources
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com data:",
-      // Supabase project URL for storage, auth and realtime
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
-      // Images: own domain + Supabase storage + data URIs + blob (canvas)
-      "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com",
+      // Supabase project URL for storage, auth and realtime + GA4 + Meta Pixel
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net",
+      // Images: own domain + Supabase storage + data URIs + blob (canvas) + GA4 + Meta Pixel
+      "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com",
+      // GTM noscript iframe
+      "frame-src https://www.googletagmanager.com",
       // Audio/video from own server + Supabase storage + blob (MediaRecorder)
       "media-src 'self' blob: https://*.supabase.co",
       // Worker scripts (Next.js service worker / audio worklets)

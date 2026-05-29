@@ -89,9 +89,54 @@ export default function ListeningSurvivable005({ onComplete }: Props) {
   const [qIdx,     setQIdx]     = useState(0);
   const [picked,   setPicked]   = useState<string | null>(null);
   const [correct,  setCorrect]  = useState(0);
-  const [phase,    setPhase]    = useState<'video' | 'quiz' | 'done'>('video');
+  const [phase,    setPhase]    = useState<'intro' | 'video' | 'quiz' | 'done'>('intro');
 
   const activeChapter = [...CHAPTERS].reverse().find(c => elapsed >= c.startSec) ?? CHAPTERS[0];
+
+  if (phase === 'intro') return (
+    <section style={{ maxWidth: 640, margin: '0 auto', padding: '2rem 1rem', fontFamily: 'system-ui,-apple-system,"Segoe UI",sans-serif', color: 'var(--foreground)' }}>
+      <p style={{ margin: '0 0 6px', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6c63ff', fontWeight: 700 }}>
+        ETAPA 04 DE 11 · Escucha sobrevivible
+      </p>
+      <h3 style={{ margin: '0 0 10px', fontSize: 22, fontWeight: 700 }}>
+        Pago y despedida
+      </h3>
+      <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.75 }}>
+        David entrega el pedido, el cliente paga con 칠천 원 y pregunta por el baño. Fíjate en el nivel formal -습니다 y los números sino-coreanos.
+      </p>
+
+      <div style={{ background: 'rgba(108,99,255,0.04)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: 12, padding: '14px 16px', marginBottom: 16 }}>
+        <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+          Momentos clave
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
+          {CHAPTERS.map(ch => (
+            <div key={ch.startSec} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span style={{ fontSize: 16, flexShrink: 0 }}>{ch.emoji}</span>
+              <p style={{ margin: 0, flex: 1, fontSize: 13, color: 'var(--foreground)', fontWeight: 600 }}>{ch.labelEs}</p>
+              <span style={{ fontSize: 11, color: 'var(--muted)', fontFamily: 'monospace' }}>{fmt(ch.startSec)}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ background: 'rgba(108,99,255,0.05)', border: '1px solid rgba(108,99,255,0.18)', borderRadius: 12, padding: '16px 20px', marginBottom: 24 }}>
+        <p style={{ margin: '0 0 12px', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6c63ff' }}>
+          Tu misión: mientras ves, identifica...
+        </p>
+        <ol style={{ margin: 0, paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 6 }}>
+          {QUESTIONS.map(q => (
+            <li key={q.id} style={{ fontSize: 13, color: 'var(--foreground)', lineHeight: 1.5 }}>{q.q}</li>
+          ))}
+        </ol>
+      </div>
+
+      <button type="button" onClick={() => setPhase('video')}
+        style={{ width: '100%', padding: '14px', background: '#6c63ff', border: 'none', borderRadius: 12, color: '#fff', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}>
+        🎬 Ver el episodio →
+      </button>
+    </section>
+  );
 
   function seekTo(sec: number) {
     const v = videoRef.current;
