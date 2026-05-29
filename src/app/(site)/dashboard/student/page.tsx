@@ -2,7 +2,8 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import StudentDashboardClient from './StudentDashboardClient'
 import type { RecentExam, DashboardStats } from './StudentDashboardClient'
-import { trackDailyActivity, calculateStreak } from '@/lib/actions/trackActivity'
+import { trackDailyActivity } from '@/lib/actions/trackActivity'
+import { calculateStreak } from '@/lib/utils/streak'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
 
 // Korean lessons shown in the dashboard grid (step IDs match /courses/korean/step/[n])

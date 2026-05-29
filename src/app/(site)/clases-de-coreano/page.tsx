@@ -202,11 +202,10 @@ export default function ClasesDeCoreanoPage() {
               </div>
             </div>
             <div className={s.heroVisual}>
-              {/* Step003 lesson preview video — muted autoplay */}
-              {/* ⚠️ 92 MB: compress with ffmpeg before production if page speed matters */}
+              {/* Step003 lesson preview video — muted autoplay (compressed to 3 MB) */}
               <video
                 className={s.heroVideo}
-                src="/assets/korean/step003/video/STEP003.mp4"
+                src="/assets/korean/step003/video/STEP003_web.mp4"
                 poster="/assets/korean/step003/welcome_v1.png"
                 autoPlay
                 muted
