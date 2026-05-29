@@ -533,6 +533,7 @@ export default function ClasesDeInglesPage() {
               { cat: 'IELTS', title: 'Cómo sacar Band 7 en el IELTS', slug: 'como-sacar-band-7-en-ielts' },
               { cat: 'TOEFL', title: 'TOEFL iBT: guía completa para colombianos', slug: 'toefl-ibt-preparacion-guia-completa' },
               { cat: 'IELTS', title: 'IELTS vs TOEFL: ¿cuál es mejor para ti?', slug: 'ielts-vs-toefl-cual-tomar-en-colombia' },
+              { cat: 'Inglés', title: 'Niveles de inglés A1–C2: qué significa cada uno', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
               { cat: 'Trabajo', title: 'Inglés para empresas multinacionales', slug: 'ingles-para-trabajar-en-empresas-multinacionales' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
