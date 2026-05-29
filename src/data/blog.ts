@@ -1177,6 +1177,180 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Si quieres agendar tu diagnóstico gratuito o tienes preguntas sobre la preparación, puedes hacerlo por <a href="/clases-de-ingles">nuestra página de clases de inglés</a>.</p>
     `,
   },
+  {
+    slug: 'puntaje-icfes-ingles-niveles-y-como-mejorar',
+    title: 'Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje',
+    description:
+      'Guía completa sobre el componente de inglés del ICFES: cómo se califica, qué evalúa, qué significa cada nivel A1-B2 y el plan de preparación para subir 10-20 puntos en 3 meses.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'ICFES',
+    tags: ['ICFES inglés', 'Saber 11', 'puntaje inglés', 'B2 ICFES', 'preparación ICFES', 'Colombia'],
+    body: `
+<h2>El inglés del ICFES: lo que muchos estudiantes no saben hasta el día del examen</h2>
+<p>El componente de inglés del ICFES Saber 11 es el único que se califica con una escala diferente al resto de las pruebas. Mientras Matemáticas, Lectura crítica y Ciencias naturales puntúan de 0 a 100 sin niveles de referencia, el inglés da un puntaje de 0 a 100 <em>y</em> lo traduce a un nivel del Marco Común Europeo de Referencia (MCER): A−, A1, A2, B1 o B2.</p>
+<p>Entender cómo funciona esta doble medición es el primer paso para prepararse bien.</p>
+
+<h2>Estructura del componente de inglés</h2>
+<p>El inglés del ICFES tiene <strong>45 preguntas</strong> de selección múltiple distribuidas en dos bloques:</p>
+<ul>
+  <li><strong>Comprensión lectora (~60%)</strong>: textos de 200–400 palabras (conversaciones, artículos, instrucciones, cartas) seguidos de preguntas sobre significado de palabras en contexto, inferencia, idea principal y detalles específicos.</li>
+  <li><strong>Uso del idioma (~40%)</strong>: diálogos cortos incompletos donde debes elegir la opción gramaticalmente correcta y contextualmente apropiada, y preguntas sobre vocabulario y expresiones frecuentes.</li>
+</ul>
+<p>El examen dura aproximadamente 50 minutos para el componente de inglés (dentro de la sesión de pruebas de competencias genéricas). No hay sección de Speaking ni de Writing — todo es lectura y uso.</p>
+
+<h2>Los niveles ICFES inglés y qué significa cada uno</h2>
+<p>Los resultados se publican con nivel MCER y puntaje numérico:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Nivel MCER</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Puntaje</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Qué significa</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">% de estudiantes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #dc2626; font-weight: 700;">A−</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">0–37</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Por debajo del nivel básico</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~18%</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #ea580c; font-weight: 700;">A1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">38–49</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Básico — comprende frases simples</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~27%</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #d97706; font-weight: 700;">A2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">50–65</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Pre-intermedio — promedio nacional</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~38%</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #2563eb; font-weight: 700;">B1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">66–80</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Intermedio — por encima del promedio</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~14%</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #16a34a; font-weight: 700;">B2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">81–100</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Intermedio-alto — top 10% Colombia</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~3%</td></tr>
+  </tbody>
+</table>
+<p>El promedio nacional se ubica consistentemente en A2 (50–65 puntos). Llegar a B1 ya te pone en el 17% superior del país; llegar a B2 te ubica en el top 3% — una diferencia enorme para admisiones universitarias.</p>
+
+<h2>¿Por qué importa el puntaje de inglés para la universidad?</h2>
+<p>Depende de la universidad, pero hay tres razones concretas:</p>
+<ol>
+  <li><strong>Requisito de admisión</strong>: algunas universidades privadas top en Colombia (Los Andes, EAFIT, Javeriana, del Norte) exigen nivel mínimo B1 o B2 en inglés para admisión.</li>
+  <li><strong>Exención de cursos de inglés</strong>: la mayoría de universidades colombianas exige que los estudiantes tomen y aprueben inglés I, II, III o más. Con B2 en el ICFES o su equivalente, muchas universidades eximen estos cursos — te ahorras tiempo y dinero.</li>
+  <li><strong>Puntaje global y becas</strong>: el inglés representa alrededor del 10% del puntaje global. Subir de A2 a B1 puede significar 5–8 puntos adicionales en el puntaje total — suficiente para cruzar el umbral de una beca o un cupo en una carrera competitiva.</li>
+</ol>
+
+<h2>Qué evalúa el examen en detalle y dónde se pierden más puntos</h2>
+<h3>Vocabulario en contexto</h3>
+<p>Es el tipo de pregunta donde más puntos se pierden por malas estrategias. La pregunta te da una palabra subrayada en el texto y pide la opción con el significado más cercano. Error frecuente: elegir el sinónimo que conoces sin verificar que tenga sentido en ese contexto específico. La estrategia correcta: lee la frase completa con tu opción reemplazando la palabra subrayada — si la frase tiene sentido lógico, es probablemente la respuesta correcta.</p>
+
+<h3>Preguntas de inferencia</h3>
+<p>Preguntas del tipo "¿Qué se puede inferir del texto?" o "¿Con qué afirmación estaría de acuerdo el autor?". Aquí no está la respuesta literalmente en el texto — debes deducirla. Error frecuente: responder con lo que sabes del tema en lugar de lo que dice el texto. La estrategia: busca evidencia textual explícita para cada opción antes de elegir.</p>
+
+<h3>Completar diálogos</h3>
+<p>Te dan un diálogo corto con un espacio en blanco y debes elegir la respuesta más apropiada para el contexto. Error frecuente: elegir la opción gramaticalmente correcta sin considerar si es pragmáticamente apropiada. La estrategia: lee todo el diálogo, no solo la línea del espacio.</p>
+
+<h2>Plan de preparación para subir 10–20 puntos en 3 meses</h2>
+<p>Este plan asume que partes de A2 (50–65 puntos) y quieres llegar a B1 (66–80) o B2 (81+):</p>
+
+<h3>Mes 1: Diagnóstico y vocabulario de base</h3>
+<ul>
+  <li>Haz un simulacro de diagnóstico completo. Identifica qué tipo de preguntas fallaste más: vocabulario, inferencia o uso del idioma.</li>
+  <li>Aprende 10 palabras nuevas al día de los temas más frecuentes del ICFES: vida cotidiana, trabajo y negocios, educación, salud, viajes, medioambiente.</li>
+  <li>Lee en inglés 15 minutos al día: noticias simples (BBC Learning English, Voice of America Learning English). Activa el vocabulario en contexto real.</li>
+</ul>
+
+<h3>Mes 2: Estrategia por tipo de pregunta</h3>
+<ul>
+  <li>Practica 1 texto de comprensión lectora al día con timer. Aplica las estrategias específicas por tipo de pregunta.</li>
+  <li>Repasa los tiempos verbales más frecuentes en el ICFES: presente simple y continuo, pasado simple, futuro con will/going to, condicionales básicos (if + simple present + will).</li>
+  <li>Haz 1 simulacro parcial (20–25 preguntas) por semana. Revisa cada error: ¿fue vocabulario? ¿estrategia? ¿tiempo?</li>
+</ul>
+
+<h3>Mes 3: Simulacros completos y ajuste</h3>
+<ul>
+  <li>1 simulacro completo (45 preguntas) por semana, en el tiempo asignado.</li>
+  <li>Analiza los errores de cada simulacro y compara con los errores del mes anterior. El progreso debe ser visible.</li>
+  <li>2 semanas antes del examen: practica en condiciones reales (mismo horario, sin pausas, sin ayudas).</li>
+</ul>
+
+<h2>Cuánto sube el puntaje con preparación estructurada</h2>
+<p>Con el plan descrito — simulacros semanales, análisis de errores y vocabulario activo — la mayoría de estudiantes con punto de partida A2 sube entre 10 y 20 puntos en 3 meses. Eso es suficiente para pasar de A2 a B1 en la mayoría de los casos.</p>
+<p>Para llegar a B2 (81–100) desde A2 generalmente se necesita entre 6 y 12 meses, dependiendo del punto de partida exacto y la consistencia de la preparación. B2 requiere un nivel real de inglés, no solo estrategia de examen.</p>
+<p>Si quieres prepararte con acompañamiento de un tutor, hacer simulacros en la plataforma de WeLearn y tener un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a> o hacer primero el <a href="/examenes/icfes">simulacro de diagnóstico gratis</a>.</p>
+    `,
+  },
+  {
+    slug: 'migrar-a-canada-requisitos-ielts-ingles',
+    title: 'Migrar a Canadá desde Colombia: qué puntaje de IELTS necesitas según la visa',
+    description:
+      'Guía completa sobre los requisitos de inglés para las principales vías de migración a Canadá desde Colombia: Express Entry, PNP y estudio. Qué puntaje de IELTS se necesita y cómo prepararse.',
+    date: '2026-05-30',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['migrar a Canadá', 'IELTS Canadá', 'Express Entry', 'PNP', 'visa Canadá Colombia', 'IELTS Colombia'],
+    body: `
+<h2>El inglés como llave para Canadá</h2>
+<p>Canadá es el destino de migración más popular entre los colombianos que buscan residencia permanente en un país de habla inglesa. Y el inglés — medido principalmente a través del IELTS General Training — es el factor que más peso tiene en casi todos los procesos migratorios canadienses.</p>
+<p>A diferencia de muchos trámites donde el inglés es solo un requisito de caja, en Canadá el puntaje IELTS se traduce directamente en puntos para el sistema de selección de inmigrantes (Express Entry) y puede ser la diferencia entre recibir una Invitation to Apply y esperar meses o años más.</p>
+
+<h2>El sistema de medición canadiense: CLB</h2>
+<p>Canada usa su propio sistema de referencia de idioma: el Canadian Language Benchmarks (CLB), con niveles del 1 al 12. El IELTS General Training se convierte a CLB según la sección:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">CLB</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS Listening</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS Reading</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS Writing</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">IELTS Speaking</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">CLB 7</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.0</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">CLB 8</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">7.5</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.5</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.5</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.5</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">CLB 9</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">8.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">7.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">7.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">7.0</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; font-weight: 700;">CLB 10</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">8.5</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">8.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">7.5</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">7.5</td></tr>
+  </tbody>
+</table>
+<p><em>Nota: la conversión IELTS→CLB es asimétrica por sección. Un 6.0 en Listening da CLB 7, pero necesitas 7.5 en Listening para CLB 8. Revisa siempre la tabla oficial de IRCC.</em></p>
+
+<h2>Express Entry: el requisito mínimo y la realidad competitiva</h2>
+<p>Express Entry es el sistema de gestión de solicitudes para tres programas de residencia permanente: Federal Skilled Worker (FSWP), Federal Skilled Trades (FSTP) y Canadian Experience Class (CEC).</p>
+<p><strong>El mínimo para entrar al pool de Express Entry</strong>: CLB 7 en las cuatro habilidades (equivalente a IELTS General Training 6.0 en cada sección). Sin este mínimo, no puedes aplicar.</p>
+<p><strong>La realidad del CRS (Comprehensive Ranking System)</strong>: entrar al pool y recibir una invitación son cosas diferentes. El sistema puntúa a los candidatos con el CRS Score — quienes tienen puntaje más alto reciben primero la Invitation to Apply (ITA). El idioma contribuye hasta <strong>160 puntos</strong> de los posibles totales, y los puntos máximos por idioma se obtienen con CLB 9+ (IELTS ~7.0 en cada sección).</p>
+<p>En los draws de 2024–2025, el CRS Score de corte para FSWP rondó los 480–510 puntos. Subir de CLB 7 a CLB 9 puede sumar 50–70 puntos al CRS Score — diferencia que puede decidir si recibes una ITA en el próximo draw o esperas 12 meses más.</p>
+
+<h2>Principales vías de migración y el IELTS que requieren</h2>
+
+<h3>Federal Skilled Worker Program (FSWP)</h3>
+<p>Mínimo: CLB 7 en todas las habilidades (IELTS General Training 6.0 en cada sección). Para ser competitivo en el CRS: CLB 9 o más (IELTS 7.0 o más en promedio).</p>
+
+<h3>Canadian Experience Class (CEC)</h3>
+<p>Para trabajo en NOC TEER 0 o 1 (gerencia, profesiones): mínimo CLB 7.<br/>
+Para trabajo en NOC TEER 2 o 3 (técnicos, oficios especializados): mínimo CLB 5.<br/>
+El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica directamente desde Colombia como primer paso.</p>
+
+<h3>Provincial Nominee Programs (PNP)</h3>
+<p>Cada provincia tiene sus propios requisitos de idioma. En general:</p>
+<ul>
+  <li><strong>Ontario (OINP)</strong>: mínimo CLB 7 para la mayoría de streams.</li>
+  <li><strong>British Columbia (BC PNP)</strong>: mínimo CLB 4–6 para trades, CLB 8+ para tech draws.</li>
+  <li><strong>Alberta (AINP)</strong>: mínimo CLB 5–7 según stream.</li>
+  <li><strong>Quebec</strong>: usa el TEFAQ/TCF (en francés), no el IELTS.</li>
+</ul>
+
+<h3>Visa de estudio con pathway a residencia permanente</h3>
+<p>Muchos colombianos van primero como estudiantes internacionales (student visa), trabajan mientras estudian (hasta 24 horas/semana durante el semestre, tiempo completo durante vacaciones) y luego aplican al Post-Graduation Work Permit (PGWP) y luego a Express Entry.</p>
+<p>Para la visa de estudio: la mayoría de universidades canadienses requiere IELTS Academic de 6.0–7.0 overall, con mínimos por sección. Para colleges que ofrecen programas de 1–2 años con buenas tasas de PGWP, generalmente piden 6.0 overall con ninguna sección por debajo de 5.5.</p>
+
+<h2>IELTS Academic o General Training para Canadá</h2>
+<p>Para <strong>residencia permanente</strong> vía Express Entry, PNP o programas de trabajo: <strong>IELTS General Training</strong>.</p>
+<p>Para <strong>universidades o colleges</strong> (visa de estudiante): <strong>IELTS Academic</strong>.</p>
+<p>Si planeas ir como estudiante y luego aplicar a residencia permanente, necesitarás eventualmente <strong>ambos</strong> módulos en momentos diferentes del proceso.</p>
+
+<h2>Cuánto tiempo toma prepararse para el IELTS requerido</h2>
+<p>Para CLB 7 (IELTS 6.0 en cada sección):</p>
+<ul>
+  <li>Desde B1 sólido: 8–12 semanas de preparación.</li>
+  <li>Desde A2: 6–12 meses.</li>
+</ul>
+<p>Para CLB 9 (IELTS ~7.0 en cada sección):</p>
+<ul>
+  <li>Desde B1 sólido: 16–24 semanas intensivas.</li>
+  <li>Desde B2: 8–14 semanas.</li>
+</ul>
+<p>Si migrar a Canadá es tu objetivo y necesitas prepararte para el IELTS General Training, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a>. La clase de diagnóstico gratis identifica en cuánto tiempo puedes alcanzar el puntaje que necesitas según tu nivel actual.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
