@@ -68,6 +68,16 @@ const jsonLd = {
         ],
       },
     },
+    {
+      '@type': 'Person',
+      '@id': 'https://idiomaswl.com/#david',
+      name: 'José David Duarte Silva',
+      jobTitle: 'Políglota y co-fundador de Idiomas WeLearn',
+      description: 'Políglota en 8 idiomas (español, inglés, coreano, alemán, portugués, italiano, francés y mandatario), docente de idiomas y fundador de WeLearn. Especialista en preparación de exámenes internacionales.',
+      url: 'https://idiomaswl.com/home',
+      worksFor: { '@id': 'https://idiomaswl.com/#organization' },
+      knowsLanguage: ['es', 'en', 'ko', 'de', 'pt', 'it', 'fr'],
+    },
   ],
 };
 
