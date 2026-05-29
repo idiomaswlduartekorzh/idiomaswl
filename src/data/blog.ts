@@ -1658,6 +1658,152 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>Si trabajar en EE.UU. o en una empresa americana desde Colombia es tu meta, puedes <a href="/clases-de-ingles">conocer cómo preparamos en WeLearn</a> — el programa incluye inglés profesional y preparación para certificaciones IELTS y TOEFL según tu objetivo específico.</p>
     `,
   },
+  {
+    slug: 'cuanto-cuesta-el-ielts-en-colombia-2026',
+    title: 'Cuánto cuesta el IELTS en Colombia 2026: precios, sedes y qué incluye',
+    description:
+      'Todo lo que necesitas saber sobre el costo del IELTS en Colombia en 2026: precio oficial por ciudad, sedes en Bogotá, Medellín, Cali y Bucaramanga, qué incluye y cómo ahorrar en la preparación.',
+    date: '2026-05-31',
+    readTime: 6,
+    category: 'IELTS',
+    tags: ['costo IELTS Colombia', 'precio IELTS 2026', 'IELTS Bogotá', 'IELTS Medellín', 'IELTS Bucaramanga', 'British Council Colombia'],
+    body: `
+<h2>El costo del IELTS en Colombia 2026</h2>
+<p>El IELTS (International English Language Testing System) en Colombia se administra principalmente a través del <strong>British Council</strong> y <strong>IDP Colombia</strong>. El precio varía ligeramente entre ambos centros y puede cambiar durante el año, pero en 2026 el rango habitual es:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Centro</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Precio aprox. 2026</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Módulos disponibles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">British Council Colombia</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$870.000 – $920.000 COP</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Academic, General Training (papel y computador)</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">IDP Colombia</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$860.000 – $910.000 COP</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Academic, General Training (papel y computador)</td></tr>
+  </tbody>
+</table>
+<p><em>Nota: los precios están sujetos a cambios. Verifica siempre en el sitio oficial del British Council Colombia (britishcouncil.org.co) o IDP Colombia (idp.com/colombia) antes de inscribirte.</em></p>
+
+<h2>¿Qué incluye el precio del IELTS?</h2>
+<p>El precio cubre:</p>
+<ul>
+  <li>Las cuatro secciones del examen: Listening, Reading, Writing y Speaking.</li>
+  <li>La calificación por evaluadores certificados y, en algunos casos, inteligencia artificial.</li>
+  <li>El Test Report Form (TRF) — el certificado oficial — enviado digitalmente y en papel.</li>
+  <li>Envío gratuito de resultados a hasta 5 instituciones (universidades, organizaciones de migración, empleadores).</li>
+</ul>
+<p>Lo que no incluye:</p>
+<ul>
+  <li>Material de preparación, simulacros adicionales o clases de preparación.</li>
+  <li>Re-evaluación (EOR — Enquiry on Results): cuesta adicional si quieres que revisen una sección. Precio estimado: $250.000–$350.000 COP por sección.</li>
+</ul>
+
+<h2>Sedes del IELTS en Colombia</h2>
+<p>El IELTS se presenta con mayor frecuencia en estas ciudades:</p>
+<ul>
+  <li><strong>Bogotá</strong>: varias sedes del British Council e IDP. Mayor disponibilidad de fechas (hasta 4 fechas mensuales).</li>
+  <li><strong>Medellín</strong>: disponible en British Council e IDP. 2–3 fechas mensuales.</li>
+  <li><strong>Cali</strong>: disponible en IDP y British Council. Frecuencia menor que Bogotá y Medellín.</li>
+  <li><strong>Bucaramanga</strong>: disponible en British Council e IDP. Verificar disponibilidad específica — las fechas pueden ser más escasas.</li>
+  <li><strong>Barranquilla</strong>: disponible en British Council. Fechas limitadas.</li>
+  <li><strong>Otras ciudades</strong>: consultar en britishcouncil.org.co o idp.com/colombia — la red de centros se amplía periódicamente.</li>
+</ul>
+
+<h2>IELTS en papel vs IELTS en computador: ¿hay diferencia de precio?</h2>
+<p>El IELTS on Computer (IoC) tiene el mismo precio que el IELTS en papel y las mismas secciones. Las diferencias son:</p>
+<ul>
+  <li><strong>Resultado más rápido</strong>: el IoC entrega resultados en 3–5 días hábiles; el papel tarda hasta 13 días.</li>
+  <li><strong>Más fechas disponibles</strong>: el IoC suele tener más fechas en el mes que el formato papel.</li>
+  <li><strong>Speaking</strong>: en ambos formatos es presencial con un examinador humano.</li>
+</ul>
+<p>Si el tiempo es un factor (visa con fecha límite, por ejemplo), el IoC es la elección obvia.</p>
+
+<h2>¿Cuándo inscribirse para garantizar cupo?</h2>
+<p>Los cupos del IELTS se agotan rápido en meses de alta demanda (marzo–abril y septiembre–octubre, cuando muchos colombianos preparan aplicaciones universitarias o de migración). La recomendación es inscribirse con al menos 6–8 semanas de anticipación y, si planeas prepararte, coordinar la fecha del examen con el final de tu período de preparación.</p>
+
+<h2>El verdadero costo: el examen más la preparación</h2>
+<p>El precio del examen es solo una parte del costo real. Muchos colombianos presentan el IELTS dos o tres veces porque no se prepararon adecuadamente la primera vez — a un costo de $870.000–$920.000 COP por intento.</p>
+<p>Invertir en preparación antes de presentar el examen tiene más sentido financiero que repetirlo: el costo de 10–12 semanas de preparación con un tutor suele ser igual o menor al costo de un segundo intento del examen.</p>
+<p>Si estás considerando presentar el IELTS y quieres prepararte para pasarlo en el primer intento con el puntaje que necesitas, puedes <a href="/clases-de-ingles">conocer el programa de preparación IELTS de WeLearn</a> — empezamos con una clase de diagnóstico gratis que define exactamente cuánto tiempo necesitas.</p>
+    `,
+  },
+  {
+    slug: 'ingles-para-enfermeras-colombianas',
+    title: 'Inglés para enfermeras colombianas: qué certificación necesitan para trabajar en el exterior',
+    description:
+      'Guía completa para enfermeras colombianas que quieren trabajar en EE.UU., Canadá, UK o España: requisitos de inglés por país, exámenes como NCLEX y CGFNS, y qué puntaje de IELTS se exige.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['enfermeras Colombia exterior', 'IELTS enfermeras', 'NCLEX Colombia', 'CGFNS inglés', 'enfermeras EE.UU.', 'enfermeras Canadá'],
+    body: `
+<h2>Enfermeras colombianas en el exterior: una oportunidad real con requisitos específicos</h2>
+<p>Colombia forma cada año miles de profesionales de enfermería, y la demanda global de enfermeras calificadas — especialmente en EE.UU., Canadá y el Reino Unido — es históricamente alta. El inglés es, en la mayoría de los casos, el primer obstáculo que superar para acceder a estas oportunidades.</p>
+<p>Pero no es solo el inglés conversacional. Los sistemas de salud de estos países exigen certificaciones específicas de idioma que demuestren que puedes comunicarte con precisión en un entorno clínico de alto riesgo.</p>
+
+<h2>Estados Unidos: el mercado más grande y el proceso más complejo</h2>
+<p>Para ejercer como enfermera registrada (RN) en EE.UU., una enfermera colombiana necesita pasar tres barreras:</p>
+
+<h3>1. CGFNS (Commission on Graduates of Foreign Nursing Schools)</h3>
+<p>El CGFNS evalúa que las credenciales académicas de la enfermera sean equivalentes a las americanas. También administra el CES (Credentials Evaluation Service), que muchos estados exigen antes del NCLEX.</p>
+<p>Algunos caminos dentro del CGFNS incluyen el CGFNS Qualifying Exam — una prueba de conocimientos de enfermería en inglés que sirve como prerrequisito para la licencia en ciertos estados.</p>
+
+<h3>2. Requisito de inglés: TOEFL o IELTS</h3>
+<p>El CGFNS y la mayoría de Boards of Nursing estatales exigen demostrar nivel de inglés con un examen estandarizado. Los requisitos más comunes:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
+  <thead>
+    <tr style="background: rgba(0,0,0,0.04);">
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Examen</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Puntaje mínimo típico</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">TOEFL iBT</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">83–100 overall; Speaking ≥ 26</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">CGFNS exige 83 overall; algunos estados piden 100</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">IELTS Academic</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">6.5 overall; Speaking 7.0</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Verificar requisito de Speaking específico del estado</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">OET (Occupational English Test)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Grade B en todas las secciones</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Examen específicamente diseñado para profesionales de la salud — contexto clínico en todos los materiales</td></tr>
+  </tbody>
+</table>
+<p>El OET (Occupational English Test) merece mención especial para enfermeras: usa materiales clínicos reales (diálogos médico-paciente, historias clínicas, cartas de derivación) que hacen la preparación más directamente útil para el trabajo real en salud.</p>
+
+<h3>3. NCLEX-RN</h3>
+<p>El NCLEX-RN es el examen de licencia de enfermería americano. Está completamente en inglés y evalúa competencias clínicas. El nivel de inglés necesario para pasarlo equivale a un C1 funcional en inglés técnico médico — sin esto, ni la gramática más perfecta ayuda.</p>
+
+<h2>Canadá: proceso similar, sistema de puntos diferente</h2>
+<p>Para ejercer como RN en Canadá, las enfermeras extranjeras deben pasar por el NNAS (National Nursing Assessment Service) y el NCLEX-RN (Canadá adoptó el NCLEX en 2015 para la mayoría de provincias).</p>
+<p>Requisito de idioma para el NNAS y la mayoría de colegios provinciales:</p>
+<ul>
+  <li><strong>IELTS Academic</strong>: 7.0 overall, con mínimo de 7.0 en cada sección.</li>
+  <li><strong>TOEFL iBT</strong>: 93 overall.</li>
+  <li><strong>OET</strong>: Grade B en todas las secciones.</li>
+</ul>
+<p>El requisito de IELTS 7.0 en todas las secciones es significativamente más alto que el de EE.UU. — no basta con un 7.0 overall con 6.5 en alguna sección. Esto coloca el objetivo de preparación en Band 7.0+ sólido en las cuatro habilidades.</p>
+<p>Adicionalmente, si se aplica a residencia permanente vía Express Entry como Healthcare professional (NOC 31301), el IELTS contribuye al CRS Score — y como vimos en nuestra guía de <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">IELTS para migrar a Canadá</a>, CLB 9 (≈ IELTS 7.0) maximiza los puntos de idioma.</p>
+
+<h2>Reino Unido: NMC y el OET</h2>
+<p>Para ejercer como enfermera en el NHS (National Health Service) o en el sector privado, las enfermeras extranjeras deben registrarse en el Nursing and Midwifery Council (NMC).</p>
+<p>El NMC acepta:</p>
+<ul>
+  <li><strong>IELTS Academic</strong>: 7.0 overall con mínimo 7.0 en cada sección.</li>
+  <li><strong>OET</strong>: Grade B en cada sección.</li>
+</ul>
+<p>El UK tiene una demanda muy alta de enfermeras internacionales vía el Health and Care Worker Visa — y el IELTS 7.0 o el OET Grade B son las dos opciones para satisfacer el requisito de idioma.</p>
+
+<h2>España: diferente, pero no irrelevante</h2>
+<p>España no requiere certificación de inglés — lo que requiere es homologación del título de Enfermería colombiano ante el Ministerio de Sanidad, que es un proceso largo (12–24 meses). Sin embargo, para trabajar en hospitales privados con pacientes internacionales o en el turismo médico en zonas costeras, el inglés B2–C1 es un diferenciador real para conseguir trabajo.</p>
+
+<h2>¿Por dónde empezar si quieres trabajar en el exterior como enfermera?</h2>
+<p>El orden lógico es:</p>
+<ol>
+  <li>Define tu destino (EE.UU., Canadá o UK — cada uno tiene un proceso diferente).</li>
+  <li>Revisa los requisitos específicos de inglés del organismo regulador de ese país (CGFNS para EE.UU., NNAS para Canadá, NMC para UK).</li>
+  <li>Evalúa tu nivel de inglés actual con honestidad — el nivel B1 típico de muchas profesionales colombianas está lejos del 7.0 overall que requieren la mayoría de procesos.</li>
+  <li>Prepárate con foco en el examen específico (IELTS Academic u OET). La preparación médica/clínica del OET lo hace particularmente valioso si vas a presentar IELTS o TOEFL: practica con materiales clínicos en inglés simultáneamente.</li>
+</ol>
+<p>Si eres enfermera y quieres prepararte para el IELTS Academic o el OET con el puntaje que requiere tu proceso de migración, puedes <a href="/clases-de-ingles">conocer el programa de preparación WeLearn</a> — la clase de diagnóstico gratis te dice exactamente cuánto tiempo necesitas y diseñamos el plan para tu objetivo específico.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
