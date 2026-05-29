@@ -35,6 +35,46 @@ export const metadata: Metadata = {
 };
 
 // ── JSON-LD ───────────────────────────────────────────────────────────────────
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Qué exámenes de inglés preparan en WeLearn?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Preparamos IELTS Academic y General, TOEFL iBT y ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo necesito para prepararme para el IELTS?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cómo funciona la clase de diagnóstico gratis?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo (examen, trabajo, migración) y diseñamos el plan de preparación más eficiente para ti. Sin costo y sin compromiso.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Las clases son individuales o grupales?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Ofrecemos clases 1:1 (individuales) con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes. El plan es personal desde el primer día.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo tomar clases si vivo fuera de Bucaramanga?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Todas las clases son 100% online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla, otras ciudades de Colombia y en el exterior.' },
+    },
+  ],
+};
+
+const FAQS = [
+  { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT y ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
+  { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
+  { q: '¿Cómo funciona la clase de diagnóstico gratis?', a: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo y diseñamos el plan. Sin costo y sin compromiso.' },
+  { q: '¿Las clases son individuales o grupales?', a: 'Ofrecemos clases 1:1 con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes.' },
+  { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. Todas las clases son 100% online. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
+];
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -181,6 +221,10 @@ export default function ClasesDeInglesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
@@ -446,6 +490,25 @@ export default function ClasesDeInglesPage() {
             <Link href="/examenes/ielts" className="btn">Simulacro IELTS →</Link>
             <Link href="/examenes/toefl" className="btn btn-ghost">Simulacro TOEFL →</Link>
             <Link href="/examenes/icfes" className="btn btn-ghost">Simulacro ICFES →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ──────────────────────────────────────────────────────────── */}
+      <section className="wlh-section">
+        <div className="wrap" style={{ maxWidth: 720, margin: '0 auto' }}>
+          <p className="wlh-section-eyebrow">06 — FAQ</p>
+          <h2 className="wlh-section-h2">Preguntas frecuentes</h2>
+          <div style={{ marginTop: '2rem' }}>
+            {FAQS.map((f, i) => (
+              <details key={i} style={{ borderBottom: '1px solid var(--border, #e5e7eb)', paddingBlock: '1.1rem' }}>
+                <summary style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)', cursor: 'pointer', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
+                  {f.q}
+                  <span style={{ fontSize: '1.25rem', flexShrink: 0, color: 'var(--accent)' }}>+</span>
+                </summary>
+                <p style={{ marginTop: '0.75rem', fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.7 }}>{f.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
