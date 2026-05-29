@@ -10,10 +10,10 @@ import { useTheme } from '@/components/ThemeProvider';
 
 const NAV_LINKS = [
   { label: 'Home',      href: '/home' },
-  { label: 'Método',    href: '/metodo' },
+  { label: 'Inglés',    href: '/clases-de-ingles' },
+  { label: 'Coreano',   href: '/clases-de-coreano' },
   { label: 'Exámenes',  href: '/examenes' },
-  { label: 'Lección',   href: '/leccion' },
-  { label: 'Práctica',   href: '/practica' },
+  { label: 'Método',    href: '/metodo' },
   { label: 'Precios',   href: '/precios' },
 ];
 
@@ -117,10 +117,10 @@ export default function SiteNav() {
           {NAV_LINKS.map(({ label, href }) => {
             const active = href.startsWith('/examenes')
               ? pathname.startsWith('/examenes')
-              : href === '/leccion'
-              ? pathname === '/leccion'
-              : href === '/practica'
-              ? pathname === '/practica'
+              : href === '/clases-de-ingles'
+              ? pathname.startsWith('/clases-de-ingles')
+              : href === '/clases-de-coreano'
+              ? pathname.startsWith('/clases-de-coreano')
               : href === '/precios'
               ? pathname === '/precios'
               : href === '/metodo'
@@ -148,7 +148,7 @@ export default function SiteNav() {
           ) : (
             <>
               <Link href="/login" className="btn btn-ghost btn-sm">Iniciar sesión</Link>
-              <Link href="/registro" className="btn btn-sm">Registrarse</Link>
+              <Link href="/clases-de-ingles" className="btn btn-sm">Empezar →</Link>
             </>
           )}
         </div>
@@ -181,7 +181,7 @@ export default function SiteNav() {
             ) : (
               <>
                 <Link href="/login" className="btn btn-ghost btn-sm" onClick={() => setMenuOpen(false)}>Iniciar sesión</Link>
-                <Link href="/registro" className="btn btn-sm" onClick={() => setMenuOpen(false)}>Registrarse</Link>
+                <Link href="/clases-de-ingles" className="btn btn-sm" onClick={() => setMenuOpen(false)}>Empezar →</Link>
               </>
             )}
           </div>
