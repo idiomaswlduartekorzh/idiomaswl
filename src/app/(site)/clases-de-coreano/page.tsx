@@ -503,6 +503,92 @@ export default function ClasesDeCoreanoPage() {
           </div>
         </section>
 
+        {/* ══════════════ SECCIONES DE PRÁCTICA ══════════════ */}
+        <section className={s.sectionDark} id="practica">
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Práctica gratuita</p>
+            <h2 className={s.h2}>Ejercítate con material real</h2>
+            <p className={s.sectionSub}>
+              Las primeras secciones son completamente gratis. Practica vocabulario y lectura
+              antes de comprometerte con un plan.
+            </p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem', marginTop: '1.75rem' }}>
+              {/* Vocabulario 1 — FREE */}
+              <Link
+                href="/practica/vocabulario-coreano"
+                style={{
+                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
+                  padding: '1.25rem', borderRadius: 14,
+                  border: '1.5px solid rgba(200,32,46,0.4)',
+                  background: 'rgba(200,32,46,0.07)',
+                  textDecoration: 'none', transition: 'border-color .2s',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🖼️</span>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#c8202e', background: 'rgba(200,32,46,0.12)', padding: '2px 8px', borderRadius: 100 }}>Gratis</span>
+                </div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Vocabulario 1 — Imágenes</div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>12 palabras clave del día 1 y 2. Ve la imagen, escucha el audio, elige la palabra. Descubre tu nivel A1.</div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>🎯 12 preguntas · Sin registro</div>
+              </Link>
+
+              {/* Lectura TOPIK — FREE */}
+              <Link
+                href="/examenes/topik/practica/set-1"
+                style={{
+                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
+                  padding: '1.25rem', borderRadius: 14,
+                  border: '1.5px solid rgba(0,52,120,0.4)',
+                  background: 'rgba(0,52,120,0.07)',
+                  textDecoration: 'none', transition: 'border-color .2s',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: '1.5rem' }}>📖</span>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#003478', background: 'rgba(0,52,120,0.12)', padding: '2px 8px', borderRadius: 100 }}>Gratis</span>
+                </div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Lectura TOPIK I — Diagnóstico</div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>30 preguntas de lectura al estilo TOPIK I. Descubre si estás en Nivel 1, Nivel 2 o eres principiante.</div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>📝 30 preguntas · Sin tiempo límite</div>
+              </Link>
+
+              {/* Vocabulario 2 — LOCKED */}
+              <div style={{
+                display: 'flex', flexDirection: 'column', gap: '0.6rem',
+                padding: '1.25rem', borderRadius: 14,
+                border: '1px solid var(--line-soft)',
+                background: 'var(--bg-2)',
+                opacity: 0.6,
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🔒</span>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--muted)', background: 'rgba(255,255,255,0.07)', padding: '2px 8px', borderRadius: 100 }}>Suscripción</span>
+                </div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--muted)' }}>Vocabulario 2 — Frases</div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Frases completas con vocabulario de los días 3–5. Construye oraciones básicas en coreano.</div>
+              </div>
+
+              {/* Pronunciación — LOCKED */}
+              <div style={{
+                display: 'flex', flexDirection: 'column', gap: '0.6rem',
+                padding: '1.25rem', borderRadius: 14,
+                border: '1px solid var(--line-soft)',
+                background: 'var(--bg-2)',
+                opacity: 0.6,
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🔒</span>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--muted)', background: 'rgba(255,255,255,0.07)', padding: '2px 8px', borderRadius: 100 }}>Suscripción</span>
+                </div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--muted)' }}>Pronunciación — Audio</div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Escucha y repite. Ejercicios de pronunciación con audio nativo para entrenar el oído.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ══════════════ DIAGNÓSTICO TOPIK ══════════════ */}
         <section className={s.sectionDark}>
           <div className={s.wrap}>
