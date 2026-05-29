@@ -110,7 +110,7 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con **17 artículos** (IELTS×7, TOEFL×2, ICFES×2, Coreano×4, Migración×1, Speaking×1) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings + links inversos desde landings + Blog/BlogPosting schema en /blog + sección blog en home page |
+| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con **25 artículos** (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings + links inversos desde landings + Blog/BlogPosting schema en /blog + sección blog en home page |
 | M4.2 | Sistema de testimonios en video | **PENDIENTE** — necesita videos de David |
 | M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — OG images edge en todas las rutas públicas, BreadcrumbList en todas las páginas, poweredByHeader: false, next/font/google para Geist. Pendiente: medir Lighthouse mobile en producción |
 
@@ -128,7 +128,7 @@ public/
 - **Nav links**: Home, Inglés, Coreano, Exámenes, Blog, Precios (en `SiteNav.tsx`). Correcto.
 - **BreadcrumbList**: añadido a todos los pages: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion, blog, blog/[slug].
 - **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes).
-- **17 artículos blog**: 1-IELTS Band7, 2-ICFES inglés, 3-Coreano desde cero, 4-TOEFL guía, 5-TOPIK I, 6-IELTS vs TOEFL, 7-Inglés multinacionales, 8-Beca GKS, 9-Series y películas, 10-Niveles A1-C2, 11-Hablar inglés bloqueo, 12-IELTS Academic vs General, 13-3 meses IELTS plan, 14-ICFES puntaje niveles, 15-Migrar Canadá IELTS, 16-Coreano hispanohablante, 17-TOEFL estrategias sección.
+- **25 artículos blog**: 1-IELTS Band7, 2-ICFES inglés, 3-Coreano desde cero, 4-TOEFL guía, 5-TOPIK I, 6-IELTS vs TOEFL, 7-Inglés multinacionales, 8-Beca GKS, 9-Series y películas, 10-Niveles A1-C2, 11-Hablar inglés bloqueo, 12-IELTS Academic vs General, 13-3 meses IELTS plan, 14-ICFES puntaje niveles, 15-Migrar Canadá IELTS, 16-Coreano hispanohablante, 17-TOEFL estrategias sección, 18-IELTS Writing Task2, 19-Inglés EE.UU. trabajo, 20-Costo IELTS Colombia 2026, 21-Enfermeras inglés exterior, 22-TOPIK I vs II, 23-Clases inglés online Colombia, 24-Costo TOEFL Colombia 2026, 25-Migrar Australia IELTS.
 - **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering: /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes, /practica. Root `/` redirige a /home.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
