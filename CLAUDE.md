@@ -102,17 +102,17 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M3.1 | Panel de estudiante MVP (solo coreano) | **PENDIENTE** |
-| M3.2 | Pasos 18, 19, 20 del método | **PENDIENTE** |
-| M3.3 | Página de pre-venta Miembro Fundador | **HECHO** — `src/app/(site)/miembro-fundador/` con 50 cupos, 6 beneficios, timeline, comparador |
+| M3.1 | Panel de estudiante MVP (solo coreano) | **HECHO** — dashboard conectado a Supabase: exam stats reales (simulacros, mejor score, días activo), progreso coreano real desde `user_progress` tabla, historial de últimos exámenes |
+| M3.2 | Pasos 18, 19, 20 del método | **PENDIENTE** — necesita contenido de David |
+| M3.3 | Página de pre-venta Miembro Fundador | **HECHO** — `src/app/(site)/miembro-fundador/` con 50 cupos, 6 beneficios, timeline, comparador, Course JSON-LD |
 
 ### NIVEL 4 — CRECIMIENTO ORGÁNICO
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con 5 artículos estáticos (IELTS, ICFES, Coreano, TOEFL, TOPIK I), filtro interactivo por categoría, OG image por artículo, JSON-LD Article |
-| M4.2 | Sistema de testimonios en video | **PENDIENTE** |
-| M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — viewport export, prefers-reduced-motion, image sizes, FAQ schema en home/coreano/ICFES, OG dinámicos edge |
+| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con 5 artículos + filtro interactivo + OG images + Article+BreadcrumbList JSON-LD + internal links a landings + CTA con link secundario a landing |
+| M4.2 | Sistema de testimonios en video | **PENDIENTE** — necesita videos de David |
+| M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — viewport export, prefers-reduced-motion, image sizes, FAQ schema en todas las landing pages, OG dinámicos edge en TODAS las rutas públicas, BreadcrumbList en blog |
 
 ---
 
@@ -121,9 +121,11 @@ public/
 - **Korean assets (steps 008-019)**: 552MB en disco local, excluidos de git (`.gitignore`) y de Vercel (`.vercelignore`). NO commitear.
 - **`public/images/david-duarte.jpg`**: aún no existe. La landing de inglés tiene `fill` con `objectFit: cover` listo para recibirla.
 - **Testimonios**: la landing `/clases-de-ingles` tiene 3 testimonios placeholder. Reemplazar con reales cuando David los tenga.
-- **Supabase `leads` tabla**: la acción `saveLead` ya existe pero la migración SQL no se ha ejecutado en el dashboard de Supabase.
+- **Supabase `leads` tabla**: migración SQL en `supabase/migrations/20260528000000_leads.sql`. ⚠️ Pendiente: ejecutar en Supabase dashboard.
+- **Supabase `user_progress` tabla**: migración SQL en `supabase/migrations/20260529000000_user_progress.sql`. ⚠️ Pendiente: ejecutar en Supabase dashboard. Necesaria para M3.1 (progreso real de lecciones).
+- **`saveProgress.ts`**: acción de servidor para marcar pasos como completados. Pendiente: llamar a `markStepComplete('korean', stepId)` al final de cada lección coreana.
 - **GTM M1.4**: el código ya hace `window.dataLayer.push({ event: 'click_whatsapp' })` y `{ event: 'lead_simulacro' }`. Solo falta crear los triggers y tags en tagmanager.google.com (GTM-57NXLPZV) y publicar.
-- **`/registro` links**: todos los links de marketing corregidos a `/clases-de-ingles`. El único `/registro` que permanece es el de `AuthForm.tsx` (correcto, apunta a `(auth)/registro`).
-- **Nav links**: Home, Inglés, Coreano, Exámenes, Método, Precios. Lección y Práctica quitados del nav principal (son features de app, no marketing).
+- **Nav links**: Home, Inglés, Coreano, Exámenes, Blog, Precios (en `SiteNav.tsx`). Correcto.
+- **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering — root, /home (hereda root), /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
