@@ -164,22 +164,28 @@ const TEAM = [
 
 const TESTIMONIALS = [
   {
-    name: 'Camila R.',
+    name: 'Leonardo Pinto',
+    city: 'Bucaramanga',
+    exam: 'Inglés · Work & Travel USA',
+    quote: 'Estudié inglés en WeLearn para prepararme e ir a trabajar en USA durante el verano y me fue de maravilla. Volveré para presentar el examen TOEFL.',
+  },
+  {
+    name: 'Daniel Zuluaga',
     city: 'Bogotá',
-    exam: 'IELTS Academic · Band 7.0',
-    quote: 'Preparé el IELTS en 8 semanas usando los simulacros de WeLearn. El nivel de detalle en cada sección me permitió identificar exactamente dónde mejorar.',
+    exam: 'Celpe-Bras · Portugués — Maestría USP',
+    quote: 'Hola David, fui aceptado en la facultad de odontología de Ribeirão Preto - USP y voy a comenzar la maestría el próximo mes. Muchas gracias por hacer parte del proceso, eternamente agradecido.',
   },
   {
-    name: 'Sebastián M.',
-    city: 'Medellín',
-    exam: 'Goethe B1 · Aprobado',
-    quote: 'Los simulacros del Goethe son los más completos que encontré en español. Pasé el examen en el primer intento con una preparación de 10 semanas.',
+    name: 'Karen Ayala',
+    city: 'Bucaramanga',
+    exam: 'Goethe — Alemán',
+    quote: 'David te he recomendado como con 15 personas sin decir mentiras, espero que les salga todo suuuper biennn.',
   },
   {
-    name: 'Laura P.',
-    city: 'Cali',
-    exam: 'DELF B2 · Mention Bien',
-    quote: 'La estructura de los audios y las tareas de producción escrita del DELF es idéntica al examen real. WeLearn me ahorró meses de búsqueda de material.',
+    name: 'Carlos Torres',
+    city: 'Bucaramanga',
+    exam: 'TOEFL · Inglés — Maestría',
+    quote: 'Realmente les agradezco a ustedes dos por toda la ayuda, el master dura 2 años pero mi profesor quiere que haga otro curso cuando me gradúe.',
   },
 ];
 

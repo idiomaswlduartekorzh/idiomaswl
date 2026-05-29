@@ -129,12 +129,12 @@ export default function PreciosClient() {
               <span className="wlp-plan-card__tier wlp-plan-card__tier--accent">Más popular</span>
               <h2 className="wlp-plan-card__name">Preparación</h2>
               <div className="wlp-plan-card__price-row">
-                <span className="wlp-plan-card__price">{formatCOP(priceFor(80000))}</span>
+                <span className="wlp-plan-card__price">{formatCOP(priceFor(180000))}</span>
                 <span className="wlp-plan-card__cadence">/ mes</span>
               </div>
               {annual && (
                 <p className="wlp-plan-card__annual-note">
-                  {formatCOP(80000 * 10)} facturado anualmente
+                  {formatCOP(180000 * 10)} facturado anualmente
                 </p>
               )}
               <p className="wlp-plan-card__desc">
@@ -179,13 +179,13 @@ export default function PreciosClient() {
 
               <div className="wlp-plan-card__price-row">
                 <span className="wlp-plan-card__price">
-                  {formatCOP(priceFor(sessions === 2 ? 300000 : 400000))}
+                  {formatCOP(priceFor(sessions === 2 ? 280000 : 480000))}
                 </span>
                 <span className="wlp-plan-card__cadence">/ mes</span>
               </div>
               {annual && (
                 <p className="wlp-plan-card__annual-note">
-                  {formatCOP((sessions === 2 ? 300000 : 400000) * 10)} facturado anualmente
+                  {formatCOP((sessions === 2 ? 280000 : 480000) * 10)} facturado anualmente
                 </p>
               )}
               <p className="wlp-plan-card__desc">
@@ -257,11 +257,11 @@ function CompareTable({ lang, exam, sessions, annual }: { lang: string; exam: st
                 </th>
                 <th className="is-featured">
                   <span className="wlp-compare__plan-name">Preparación</span>
-                  <span className="wlp-compare__plan-price">{('$' + p(80000).toLocaleString('es-CO'))}/mes</span>
+                  <span className="wlp-compare__plan-price">{('$' + p(180000).toLocaleString('es-CO'))}/mes</span>
                 </th>
                 <th>
                   <span className="wlp-compare__plan-name">Intensivo</span>
-                  <span className="wlp-compare__plan-price">{('$' + p(sessions === 2 ? 300000 : 400000).toLocaleString('es-CO'))}/mes</span>
+                  <span className="wlp-compare__plan-price">{('$' + p(sessions === 2 ? 280000 : 480000).toLocaleString('es-CO'))}/mes</span>
                 </th>
               </tr>
             </thead>

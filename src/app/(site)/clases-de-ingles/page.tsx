@@ -181,7 +181,7 @@ const PRECIOS = [
   },
   {
     name: 'Plan Preparación',
-    price: 'desde $80.000',
+    price: 'desde $180.000',
     cadence: '/ mes',
     desc: 'Simulacros ilimitados, material de preparación, feedback escrito por sección y chat con tutor en menos de 24 horas.',
     cta: 'Consultar por WhatsApp',
@@ -190,7 +190,7 @@ const PRECIOS = [
   },
   {
     name: 'Plan Intensivo',
-    price: 'desde $300.000',
+    price: 'desde $280.000',
     cadence: '/ mes',
     desc: 'Sesiones en vivo 2 a 4 veces por semana, tutor asignado, plan de estudio personalizado y evaluación mensual de progreso.',
     cta: 'Consultar por WhatsApp',
@@ -201,22 +201,22 @@ const PRECIOS = [
 
 const TESTIMONIALS = [
   {
-    name: 'Camila R.',
-    city: 'Bogotá',
-    result: 'IELTS Academic · Band 7.0',
-    quote: 'Preparé el IELTS en 8 semanas con WeLearn. El método estructurado me permitió identificar exactamente dónde mejorar en cada sección.',
-  },
-  {
-    name: 'Sebastián M.',
-    city: 'Medellín',
-    result: 'TOEFL iBT · 101 puntos',
-    quote: 'Los simulacros son los más completos que encontré en español. Pasé el examen en el primer intento gracias a la estrategia de preparación.',
-  },
-  {
-    name: 'Laura P.',
+    name: 'Leonardo Pinto',
     city: 'Bucaramanga',
-    result: 'ICFES · Nivel C1',
-    quote: 'Mejoré 40 puntos en el componente de inglés del ICFES. El plan de estudio personalizado marcó toda la diferencia.',
+    result: 'Inglés · Work & Travel USA',
+    quote: 'Estudié inglés en WeLearn para prepararme e ir a trabajar en USA durante el verano y me fue de maravilla. Volveré para presentar el examen TOEFL.',
+  },
+  {
+    name: 'Carlos Torres',
+    city: 'Bucaramanga',
+    result: 'TOEFL · Inglés — Maestría',
+    quote: 'Realmente les agradezco a ustedes dos por toda la ayuda, el master dura 2 años pero mi profesor quiere que haga otro curso cuando me gradúe.',
+  },
+  {
+    name: 'Karen Ayala',
+    city: 'Bucaramanga',
+    result: 'Goethe — Alemán',
+    quote: 'David te he recomendado como con 15 personas sin decir mentiras, espero que les salga todo suuuper biennn.',
   },
 ];
 
@@ -476,10 +476,6 @@ export default function ClasesDeInglesPage() {
               </div>
             ))}
           </div>
-          <p style={{ textAlign: 'center', marginTop: '2rem', fontSize: '0.82rem', color: 'var(--muted)' }}>
-            * Los testimonios son representativos del tipo de resultado que alcanzan nuestros estudiantes.
-            Reemplazar con testimonios reales cuando estén disponibles.
-          </p>
         </div>
       </section>
 
