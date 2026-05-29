@@ -7,6 +7,7 @@ export const contentType = 'image/png';
 
 const CATEGORY_COLORS: Record<string, string> = {
   IELTS:   '#1a2ecc',
+  TOEFL:   '#1a6e3c',
   ICFES:   '#0f7c3e',
   Coreano: '#c8202e',
 };

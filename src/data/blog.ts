@@ -291,6 +291,198 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Encuentra tu razón. El idioma vendrá solo si la razón es real.</p>
     `,
   },
+
+  {
+    slug: 'toefl-ibt-preparacion-guia-completa',
+    title: 'TOEFL iBT: guía de preparación desde cero para colombianos',
+    description:
+      'Todo lo que necesitas saber sobre el TOEFL iBT: estructura del examen, puntaje mínimo para cada objetivo, diferencias con el IELTS y plan de estudio de 10 semanas.',
+    date: '2026-05-20',
+    readTime: 8,
+    category: 'TOEFL',
+    tags: ['TOEFL iBT', 'inglés', 'exámenes internacionales', 'Estados Unidos', 'universidad', 'preparación'],
+    body: `
+<h2>¿Qué es el TOEFL iBT y para qué sirve?</h2>
+<p>El TOEFL iBT (Test of English as a Foreign Language, Internet-Based Test) es el examen de inglés más reconocido para admisión a universidades de Estados Unidos y Canadá. A diferencia del IELTS, que nació en el Reino Unido con foco académico y migratorio, el TOEFL fue diseñado específicamente para entornos universitarios norteamericanos.</p>
+<p>Las principales razones para tomar el TOEFL:</p>
+<ul>
+  <li><strong>Universidades en EE.UU. y Canadá</strong>: más del 85% de las universidades norteamericanas lo aceptan. Muchas lo prefieren sobre el IELTS.</li>
+  <li><strong>Becas Fulbright y otras becas federales</strong>: suelen requerir TOEFL específicamente.</li>
+  <li><strong>Programas de máster y doctorado</strong>: puntaje mínimo entre 80 y 100 según la institución y el programa.</li>
+  <li><strong>Visas y residencia en ciertos países</strong>: aunque el IELTS domina en este campo, algunas jurisdicciones aceptan TOEFL.</li>
+</ul>
+
+<h2>Estructura del TOEFL iBT</h2>
+<p>El TOEFL iBT dura aproximadamente <strong>3 horas</strong> y tiene 4 secciones:</p>
+<ul>
+  <li><strong>Reading (54-72 minutos)</strong> — 3-4 pasajes académicos de 700 palabras cada uno. 10 preguntas por pasaje. Enfocado en vocabulario académico y comprensión de argumentos complejos.</li>
+  <li><strong>Listening (41-57 minutos)</strong> — 3-4 conversaciones universitarias + 3-4 conferencias académicas. Las conferencias simulan clases universitarias reales con múltiples hablantes.</li>
+  <li><strong>Speaking (17 minutos)</strong> — 4 tareas: 1 opinión personal, 1 basada en lectura, 2 basadas en lectura+escucha. Las respuestas se graban.</li>
+  <li><strong>Writing (50 minutos)</strong> — 2 tareas: una integrada (leer + escuchar + escribir) y una discusión académica en un foro online.</li>
+</ul>
+<p>Puntaje total: 0 a 120. Cada sección vale 30 puntos.</p>
+
+<h2>¿Qué puntaje necesitas?</h2>
+<ul>
+  <li><strong>60-79 (Basic)</strong>: mínimo para algunos programas de pregrado y comunidades universitarias.</li>
+  <li><strong>80-93 (Fair)</strong>: rango competitivo para universidades estatales de EE.UU. en programas de humanidades y ciencias sociales.</li>
+  <li><strong>94-101 (Good)</strong>: mínimo para universidades de alta exigencia como las del sistema UC o Big Ten en programas de ingeniería y ciencias.</li>
+  <li><strong>102-110 (Very Good)</strong>: rango competitivo para la Ivy League y programas de posgrado top.</li>
+  <li><strong>111-120 (Excellent)</strong>: rango de asistentes de enseñanza (Teaching Assistants) y becas por mérito pleno.</li>
+</ul>
+
+<h2>TOEFL vs IELTS: ¿cuál elegir?</h2>
+<p>Esta es la pregunta que más recibe David en WeLearn. La respuesta honesta: depende de tu destino y tu perfil.</p>
+<ul>
+  <li><strong>Elige TOEFL si</strong>: tu objetivo es una universidad en EE.UU. o Canadá, presentarás becas Fulbright o LASPAU, o te sientes más cómodo con tecnología (todo se hace en computador).</li>
+  <li><strong>Elige IELTS si</strong>: tu objetivo es Europa (especialmente UK), Australia o Nueva Zelanda, o prefieres el examen de Speaking cara a cara con un examinador humano.</li>
+  <li><strong>Presentas los dos si</strong>: aplicas a universidades en múltiples países o quieres tener opciones abiertas.</li>
+</ul>
+<p>Diferencia clave de formato: en el TOEFL, Speaking se hace frente a un micrófono en solitario; en el IELTS, es una entrevista en vivo. Para algunos hispanohablantes, hablar solo a una pantalla resulta más difícil que con un interlocutor real.</p>
+
+<h2>Los 3 errores más comunes en el TOEFL</h2>
+<h3>Error 1: subestimar la sección de Listening</h3>
+<p>El Listening del TOEFL es diferente al de otros exámenes: las grabaciones simulan clases universitarias con interrupciones, digresiones y vocabulario técnico académico. No es inglés cotidiano. Los hablantes tienen acentos norteamericanos pero con variantes regionales.</p>
+<p>La solución: escuchar podcasts y conferencias académicas en inglés desde el comienzo de la preparación. MIT OpenCourseWare, TED Academic y NPR Science Friday son buenas fuentes.</p>
+
+<h3>Error 2: no practicar Speaking en voz alta</h3>
+<p>El mayor problema de los hispanohablantes en Speaking no es la gramática ni el vocabulario: es la velocidad y la organización. El TOEFL te da 15-30 segundos para preparar y 45-60 segundos para responder. Quien no practica cronometrado no puede entregar una respuesta completa y coherente.</p>
+
+<h3>Error 3: confundir la tarea de Writing integrada</h3>
+<p>La Writing Task 1 del TOEFL (Integrated Writing) no es un ensayo de opinión: es un resumen que reconcilia lo que leíste con lo que escuchaste. Muchos estudiantes escriben su opinión en lugar de analizar la relación entre el texto y la conferencia, y pierden entre 4 y 8 puntos por esto.</p>
+
+<h2>Plan de estudio de 10 semanas para 90+ puntos</h2>
+<h3>Semanas 1-2: diagnóstico y estructura</h3>
+<ul>
+  <li>Simulacro completo oficial (ETS ofrece uno gratuito en toefl.org).</li>
+  <li>Identifica tu sección más débil.</li>
+  <li>Empieza a escuchar 20 minutos diarios de inglés académico.</li>
+</ul>
+<h3>Semanas 3-5: ataque por sección</h3>
+<ul>
+  <li>Reading: un pasaje completo por día con análisis de errores. Enfócate en vocabulario académico (Academic Word List) y preguntas de inferencia.</li>
+  <li>Listening: practica con grabaciones oficiales del TOEFL. No con cualquier podcast — el estilo del TOEFL es específico.</li>
+  <li>Speaking: graba 2 respuestas por día. Escucha. Analiza la fluidez, la organización y si respondiste lo que preguntaron.</li>
+  <li>Writing: escribe la tarea integrada completa tres veces por semana, variando el tema académico.</li>
+</ul>
+<h3>Semanas 6-9: simulacros completos</h3>
+<ul>
+  <li>Uno o dos simulacros completos por semana en condiciones cronometradas reales.</li>
+  <li>Análisis detallado de errores. No avances sin entender por qué te equivocaste.</li>
+</ul>
+<h3>Semana 10: consolidación</h3>
+<ul>
+  <li>Repaso de los modelos de respuesta de Writing que te funcionaron.</li>
+  <li>Práctica de Speaking cronometrado.</li>
+  <li>Nada nuevo. Confirma la logística del examen.</li>
+</ul>
+
+<h2>Recursos gratuitos recomendados</h2>
+<ul>
+  <li><strong>ETS.org</strong>: simulacros y materiales oficiales. La fuente más confiable.</li>
+  <li><strong>Magoosh TOEFL Blog</strong>: explicaciones de cada tipo de pregunta en inglés.</li>
+  <li><strong>NoteFull YouTube</strong>: plantillas y estrategias de Speaking y Writing.</li>
+  <li><strong>Simulacros WeLearn</strong>: banco de preguntas estilo TOEFL con retroalimentación.</li>
+</ul>
+    `,
+  },
+
+  {
+    slug: 'topik-1-preparacion-guia-para-principiantes',
+    title: 'TOPIK I: cómo prepararlo desde cero y pasar al primer intento',
+    description:
+      'Guía completa del TOPIK I para hispanohablantes: qué evalúa, cómo se califica, materiales gratuitos y plan de estudio de 8 semanas para obtener el nivel 1 o 2.',
+    date: '2026-05-22',
+    readTime: 7,
+    category: 'Coreano',
+    tags: ['TOPIK', 'TOPIK I', 'coreano', 'examen coreano', 'Korea', 'certificación', 'principiantes'],
+    body: `
+<h2>¿Qué es el TOPIK I y por qué hacerlo?</h2>
+<p>El TOPIK I (Test of Proficiency in Korean, nivel principiante-intermedio) es la certificación oficial de coreano del gobierno de Corea del Sur. Lo aplica el NIIED (National Institute for International Education) y se presenta en más de 70 países, incluyendo Colombia.</p>
+<p>El TOPIK I cubre los niveles 1 y 2 del TOPIK (equivalentes aproximados a A1-A2 del MCER). No incluye escritura: solo Listening y Reading.</p>
+<p>¿Para qué sirve tenerlo?</p>
+<ul>
+  <li><strong>Demostrar conocimiento certificado de coreano</strong> en tu CV o portafolio profesional.</li>
+  <li><strong>Requisito previo para el TOPIK II</strong>: muchos aspirantes al Nivel 3 (necesario para becas GKS y universidades coreanas) empiezan demostrando con el I que tienen base sólida.</li>
+  <li><strong>Aplicar a visas de trabajo básicas en Corea</strong>: algunos procesos aceptan TOPIK Nivel 2.</li>
+  <li><strong>Motivación y estructura personal</strong>: preparar un examen real impone disciplina que el aprendizaje sin objetivo no tiene.</li>
+</ul>
+
+<h2>Estructura del TOPIK I</h2>
+<p>El examen dura 100 minutos y tiene dos secciones:</p>
+<ul>
+  <li><strong>Listening (듣기) — 30 minutos, 30 preguntas</strong>: diálogos cortos, anuncios y conversaciones en coreano. Las grabaciones son claras y el vocabulario es cotidiano.</li>
+  <li><strong>Reading (읽기) — 40 minutos, 40 preguntas</strong>: frases cortas, letreros, instrucciones sencillas, emails y textos breves. No requiere leer textos largos.</li>
+</ul>
+<p>El puntaje total va de 0 a 200 puntos:</p>
+<ul>
+  <li><strong>Nivel 1</strong>: 80 a 139 puntos. Puede comunicarse en coreano en situaciones básicas cotidianas.</li>
+  <li><strong>Nivel 2</strong>: 140 a 200 puntos. Puede entender y comunicarse en contextos familiares y rutinarios con vocabulario ampliado.</li>
+</ul>
+<p>No existe puntaje de corte por sección: el total es lo que determina tu nivel.</p>
+
+<h2>Vocabulario que necesitas para el TOPIK I</h2>
+<p>Para el Nivel 1 necesitas dominar aproximadamente <strong>800 palabras</strong>. Para el Nivel 2, alrededor de <strong>1.500 a 2.000</strong>. Estas son las categorías prioritarias:</p>
+<ul>
+  <li>Saludos y presentaciones (안녕하세요, 감사합니다, 죄송합니다).</li>
+  <li>Lugares (학교, 은행, 병원, 식당, 지하철).</li>
+  <li>Tiempos y fechas (오늘, 어제, 내일, 월, 화, 수, 목, 금).</li>
+  <li>Verbos cotidianos (가다, 오다, 먹다, 마시다, 사다, 공부하다).</li>
+  <li>Números (sino-coreanos para cantidades y fechas, nativos para horas).</li>
+  <li>Transporte, comida, tiempo atmosférico, trabajo básico.</li>
+</ul>
+<p>Un mazo de Anki con las 800 palabras más frecuentes del coreano cotidiano te cubre el Nivel 1. Para el Nivel 2 necesitas ampliar con vocabulario temático.</p>
+
+<h2>Gramática esencial para el TOPIK I</h2>
+<p>El TOPIK I no evalúa gramática en forma aislada, pero la gramática impregna todas las preguntas de lectura y escucha. Los patrones indispensables son:</p>
+<ul>
+  <li>Estructura SOV y partículas básicas: 은/는, 이/가, 을/를, 에, 에서, 와/과, 하고.</li>
+  <li>Conjugación presente formal (-아요/어요) e informal (-아/어).</li>
+  <li>Pasado (-았/었어요) y futuro (-ㄹ/을 거예요).</li>
+  <li>Negación (안 + verbo, 못 + verbo).</li>
+  <li>Expresiones de deseo (싶다), capacidad (수 있다/없다) y necesidad (해야 하다).</li>
+  <li>Conectores básicos: 그리고, 그런데, 그래서, 하지만.</li>
+</ul>
+
+<h2>Plan de estudio de 8 semanas para TOPIK I Nivel 2</h2>
+<h3>Semanas 1-2: Hangul + vocabulario de emergencia</h3>
+<ul>
+  <li>Si aún no dominas el Hangul: dedica la primera semana a leerlo y escribirlo con fluidez.</li>
+  <li>Empieza con las primeras 200 palabras de frecuencia más alta.</li>
+  <li>Escucha coreano cotidiano 15 minutos diarios (K-dramas para principiantes, Peppa Pig en coreano, etc.).</li>
+</ul>
+<h3>Semanas 3-5: gramática y vocabulario temático</h3>
+<ul>
+  <li>Estudia los patrones gramaticales del Nivel 1-2 de Talk to Me in Korean (lecciones gratuitas en su web).</li>
+  <li>Amplía el vocabulario por temas: lugares, comida, transporte, salud.</li>
+  <li>Practica dictado: escucha y escribe lo que entiendes. Mejora el Listening y el Hangul simultáneamente.</li>
+</ul>
+<h3>Semanas 6-7: simulacros TOPIK I</h3>
+<ul>
+  <li>Descarga exámenes anteriores del sitio oficial del TOPIK (topik.go.kr).</li>
+  <li>Haz los últimos 3 exámenes completos en condiciones cronometradas.</li>
+  <li>Analiza errores por tipo de pregunta (comprensión de conversaciones, comprensión de letreros, comprensión de textos cortos).</li>
+</ul>
+<h3>Semana 8: refuerzo y logística</h3>
+<ul>
+  <li>Repasa el vocabulario con el que más erraste.</li>
+  <li>Practica las estrategias de eliminación en Reading.</li>
+  <li>Confirma la sede del examen, documentos y horarios con semanas de anticipación (los cupos se agotan).</li>
+</ul>
+
+<h2>¿Dónde se presenta el TOPIK en Colombia?</h2>
+<p>El TOPIK en Colombia generalmente se presenta en Bogotá, en la embajada de Corea o en alianza con universidades con departamento de estudios coreanos. Las convocatorias se abren una o dos veces por año. Sigue la página del NIIED y del Centro Cultural Coreano para las fechas.</p>
+<p>Importante: inscríbete temprano. Los cupos en Colombia son limitados y suelen agotarse en días.</p>
+
+<h2>¿Es el TOPIK I asequible para alguien que estudia solo?</h2>
+<p>Sí — es uno de los exámenes de idiomas más asequibles de preparar de forma autónoma, por dos razones:</p>
+<ol>
+  <li>El material oficial está completamente disponible gratis en topik.go.kr (todos los exámenes anteriores con respuestas).</li>
+  <li>El vocabulario y la gramática del Nivel 1-2 son limitados y sistemáticos. No hay ambigüedades.</li>
+</ol>
+<p>El mayor reto no es el contenido: es la constancia. El coreano requiere práctica diaria. Veinte días de estudio intensivo no reemplazan seis meses de trabajo regular.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

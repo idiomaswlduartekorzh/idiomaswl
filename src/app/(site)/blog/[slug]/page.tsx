@@ -51,6 +51,11 @@ const CTA_BY_CATEGORY: Record<string, { title: string; desc: string; msg: string
     desc: 'Agenda tu clase de diagnóstico gratis y empieza con un plan personalizado para alcanzar tu Band objetivo.',
     msg: 'Hola, leí el artículo de WeLearn sobre el IELTS y quiero agendar mi clase de diagnóstico gratis.',
   },
+  TOEFL: {
+    title: '¿Listo para preparar el TOEFL iBT?',
+    desc: 'Haz un simulacro gratuito de TOEFL o agenda una clase de diagnóstico para saber exactamente qué necesitas.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el TOEFL iBT y quiero saber más sobre la preparación.',
+  },
   ICFES: {
     title: '¿Quieres mejorar tu puntaje ICFES inglés?',
     desc: 'Haz un simulacro gratuito ahora mismo o agenda una sesión con tutor para un plan de preparación personalizado.',
