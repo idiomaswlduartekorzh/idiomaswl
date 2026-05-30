@@ -2108,6 +2108,331 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Si migrar a Australia es tu objetivo y necesitas prepararte para el IELTS con foco en el puntaje específico que requieres, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a>. El plan se diseña para que cada sección alcance el umbral requerido.</p>
     `,
   },
+  // ── Article 26 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'goethe-zertifikat-guia-completa-colombia',
+    title: 'Goethe-Zertifikat en Colombia: niveles, precios, centros y cómo prepararse',
+    description:
+      'Todo sobre el Goethe-Zertifikat en Colombia: qué mide cada nivel (A1 a C2), cuánto cuesta, dónde presentarlo y cómo prepararse desde cero.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'Alemán',
+    tags: ['Goethe', 'alemán', 'examen de alemán', 'Colombia', 'Goethe-Zertifikat'],
+    body: `
+<h2>¿Qué es el Goethe-Zertifikat?</h2>
+<p>El Goethe-Zertifikat es la certificación oficial de alemán expedida por el <strong>Goethe-Institut</strong>, reconocida en más de 90 países para fines académicos, migratorios y laborales. En Colombia es el examen de referencia para quienes buscan trabajar en empresas alemanas, hacer una maestría en Alemania, Austria o Suiza, o tramitar la visa de trabajo germana.</p>
+<p>Existen seis niveles alineados al Marco Común Europeo de Referencia (MCER):</p>
+<table>
+  <thead><tr><th>Nivel MCER</th><th>Certificado Goethe</th><th>Duración del examen</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>Goethe-Zertifikat A1: Start Deutsch 1</td><td>~75 min</td></tr>
+    <tr><td>A2</td><td>Goethe-Zertifikat A2</td><td>~90 min</td></tr>
+    <tr><td>B1</td><td>Goethe-Zertifikat B1</td><td>~185 min</td></tr>
+    <tr><td>B2</td><td>Goethe-Zertifikat B2</td><td>~210 min</td></tr>
+    <tr><td>C1</td><td>Goethe-Zertifikat C1</td><td>~265 min</td></tr>
+    <tr><td>C2</td><td>Goethe-Zertifikat C2: Großes Deutsches Sprachdiplom</td><td>~290 min</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuánto cuesta el Goethe en Colombia?</h2>
+<p>Los precios aproximados para 2026 en el Goethe-Institut Bogotá son:</p>
+<ul>
+  <li><strong>A1 – A2:</strong> entre $350.000 y $450.000 COP</li>
+  <li><strong>B1:</strong> ~$550.000 COP</li>
+  <li><strong>B2:</strong> ~$650.000 COP</li>
+  <li><strong>C1 – C2:</strong> entre $700.000 y $900.000 COP</li>
+</ul>
+<p>El Goethe-Institut tiene sede principal en Bogotá. Para otras ciudades como Medellín, Cali o Bucaramanga, los exámenes suelen aplicarse a través de centros de examen aliados — consulta disponibilidad directamente en el Goethe-Institut Colombia.</p>
+
+<h2>Estructura del examen por sección</h2>
+<p>Independientemente del nivel, el Goethe-Zertifikat evalúa cuatro habilidades:</p>
+<ul>
+  <li><strong>Lesen (lectura):</strong> textos auténticos con preguntas de comprensión</li>
+  <li><strong>Hören (escucha):</strong> audios con acentos regionales y contextos cotidianos</li>
+  <li><strong>Schreiben (escritura):</strong> redacción formal o informal según el nivel</li>
+  <li><strong>Sprechen (expresión oral):</strong> presentación y conversación en pares</li>
+</ul>
+<p>Para aprobar se requiere un mínimo de <strong>60% en cada sección</strong>. No se puede compensar un resultado bajo en una parte con una nota alta en otra. Esto hace que la preparación deba ser balanceada.</p>
+
+<h2>Cuánto tiempo se tarda en prepararse</h2>
+<p>El tiempo estimado depende del nivel objetivo:</p>
+<ul>
+  <li><strong>A1 desde cero:</strong> 3–5 meses con práctica constante</li>
+  <li><strong>B1 desde A2:</strong> 6–9 meses</li>
+  <li><strong>C1 desde B2:</strong> 9–18 meses</li>
+</ul>
+<p>El alemán tiene una curva de aprendizaje más pronunciada que el inglés para hispanohablantes, principalmente por los géneros gramaticales (der, die, das), la declinación de artículos y el orden de las palabras en oraciones subordinadas.</p>
+
+<h2>Cómo prepararse efectivamente</h2>
+<p>Las personas que aprueban el Goethe en el primer intento suelen compartir tres hábitos:</p>
+<ol>
+  <li><strong>Exposición diaria al alemán real:</strong> noticias en alemán simplificado (Deutsche Welle), series alemanas, podcasts.</li>
+  <li><strong>Práctica de escritura con retroalimentación:</strong> el Schreiben es la sección donde más puntos se pierden sin corrección externa.</li>
+  <li><strong>Simulacros con material oficial:</strong> el Goethe-Institut publica materiales de práctica gratuitos en su web para cada nivel.</li>
+</ol>
+<p>En WeLearn preparamos para todos los niveles del Goethe con tutores especializados en alemán. Si tu objetivo es el A1, B1 o C1, <a href="/clases-de-ingles">escríbenos por WhatsApp</a> y diseñamos un plan de preparación a tu medida.</p>
+
+<h2>¿Vale la pena el Goethe para conseguir trabajo en Alemania?</h2>
+<p>Sí — pero con matices. Para la mayoría de visas de trabajo en Alemania (Fachkräfteeinwanderungsgesetz, la ley de inmigración de trabajadores calificados), el nivel mínimo recomendado es <strong>B1</strong> para ocupaciones con contacto con el público, y <strong>B2 o C1</strong> para trabajos en salud, educación o áreas reguladas. El certificado Goethe es la forma más reconocida de demostrar ese nivel.</p>
+<p>Para enfermeras y médicos colombianos que quieren emigrar a Alemania, el B2 del Goethe es frecuentemente un requisito explícito de los estados federales (Bundesländer) para la homologación del título.</p>
+<p>Lee también: <a href="/blog/ingles-para-enfermeras-colombianas">Inglés para enfermeras colombianas que quieren trabajar en el exterior</a>.</p>
+    `,
+  },
+
+  // ── Article 27 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'celpe-bras-que-es-como-prepararse',
+    title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia',
+    description:
+      'Todo sobre el Celpe-Bras — el único certificado oficial de portugués brasileño reconocido para universidades, empleos y homologación de títulos en Brasil.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Portugués',
+    tags: ['Celpe-Bras', 'portugués', 'Brasil', 'certificado', 'examen de portugués'],
+    body: `
+<h2>¿Qué es el Celpe-Bras?</h2>
+<p>El <strong>Celpe-Bras</strong> (Certificado de Proficiência em Língua Portuguesa para Estrangeiros) es el único certificado oficial de portugués brasileño reconocido por el gobierno de Brasil. Lo emite el Ministerio de Educación (MEC) y es requisito obligatorio para:</p>
+<ul>
+  <li>Ingresar a programas de pregrado o posgrado en universidades públicas brasileñas (USP, UNICAMP, UFRJ, UFMG, entre otras)</li>
+  <li>Ejercer profesiones reguladas en Brasil (medicina, odontología, enfermería, derecho) con títulos expedidos en el exterior</li>
+  <li>Obtener la residencia permanente en algunas categorías migratorias</li>
+  <li>Trabajar en empresas brasileñas que exigen certificación formal del idioma</li>
+</ul>
+<p>A diferencia de la mayoría de exámenes, el Celpe-Bras <strong>no tiene niveles fijos</strong> (A1, B2, etc.). En cambio, clasifica al candidato en cuatro categorías: <em>Intermediário</em>, <em>Intermediário Superior</em>, <em>Avançado</em> y <em>Avançado Superior</em>. La mayoría de universidades brasileñas exigen al menos Intermediário Superior.</p>
+
+<h2>Estructura del examen</h2>
+<p>El Celpe-Bras tiene dos partes:</p>
+
+<h3>Parte Colectiva (escrita)</h3>
+<p>Dura aproximadamente 3 horas. El candidato trabaja con materiales auténticos — videos, textos, audios — y debe producir textos en respuesta a tareas concretas. No hay preguntas de opción múltiple. Todo se evalúa mediante producción escrita real.</p>
+<p>Las tareas son contextualizadas: pueden pedir redactar un correo electrónico formal, una reseña de producto, una respuesta a una convocatoria. El examinador evalúa adecuación comunicativa, no solo corrección gramatical.</p>
+
+<h3>Parte Individual (oral)</h3>
+<p>Entrevista de 20 minutos con un examinador certificado. Se desarrolla a partir de temas presentados mediante fotos, recortes de noticias o videos. Se evalúa la capacidad de conversar en situaciones reales, argumentar y negociar significados.</p>
+
+<h2>¿Dónde se presenta en Colombia?</h2>
+<p>El Celpe-Bras se aplica dos veces al año (generalmente en abril–mayo y octubre–noviembre) en centros autorizados. En Colombia, los centros habilitados habitualmente incluyen instituciones en Bogotá, Medellín y ocasionalmente otras ciudades. El calendario y la lista de centros vigentes se publican en el sitio oficial del INEP (inep.gov.br).</p>
+<p>La inscripción suele abrirse con 6–8 semanas de anticipación. El costo es relativamente accesible (aproximadamente 100–150 USD según el periodo).</p>
+
+<h2>Cómo prepararse para el Celpe-Bras</h2>
+<p>El Celpe-Bras es exigente no porque evalúe gramática compleja, sino porque exige <strong>uso real y autónomo del portugués</strong>. Estas son las estrategias que funcionan:</p>
+<ol>
+  <li><strong>Inmersión con contenido auténtico:</strong> noticias del G1, Folha de S.Paulo, Rádio Nacional, podcasts brasileños. No contenido para aprendices — contenido real.</li>
+  <li><strong>Práctica de escritura contextualizada:</strong> escribe textos reales (correos, opiniones, reseñas) y pide retroalimentación a un tutor o hablante nativo.</li>
+  <li><strong>Preparación oral activa:</strong> grábate hablando sobre temas de actualidad; analiza tu pronunciación, fluidez y variedad léxica.</li>
+  <li><strong>Materiales de práctica oficiales:</strong> el INEP publica exámenes anteriores en su web de forma gratuita — son el mejor recurso disponible.</li>
+</ol>
+<p>El tiempo de preparación varía: desde un nivel inicial (A2 de español puede adaptarse más rápido por la similitud entre los idiomas), típicamente 6–12 meses son suficientes para alcanzar Intermediário Superior con práctica constante.</p>
+
+<h2>Celpe-Bras vs otros certificados de portugués</h2>
+<p>Existen otros certificados (CAPLE de Portugal, DEPLE), pero el Celpe-Bras es el único reconocido en Brasil para los propósitos más comunes (universidades, homologaciones). Si tu objetivo es estudiar o trabajar en Portugal, el CAPLE puede ser más relevante. Si es Brasil, el Celpe-Bras es el estándar.</p>
+<p>En WeLearn preparamos para el Celpe-Bras con enfoque en producción real: escritura, conversación y materiales auténticos. <a href="/precios">Consulta nuestros planes</a> o <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20Celpe-Bras%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
+    `,
+  },
+
+  // ── Article 28 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'como-aprender-un-idioma-mas-rapido',
+    title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia (y lo que no funciona)',
+    description:
+      'La neurociencia del aprendizaje de idiomas explicada sin tecnicismos: qué hace que tu cerebro retenga vocabulario, por qué la gramática aislada no sirve y cómo estructurar tu práctica diaria.',
+    date: '2026-05-30',
+    readTime: 10,
+    category: 'Método',
+    tags: ['aprender idiomas', 'método de aprendizaje', 'neurociencia', 'vocabulario', 'lenguas'],
+    body: `
+<h2>Por qué la mayoría aprende lento (y se frustra)</h2>
+<p>El modelo tradicional de aprendizaje de idiomas — estudiar vocabulario en listas, memorizar conjugaciones verbales, hacer ejercicios de gramática aislados — contradice cómo funciona el cerebro. No es ineficaz por accidente: fue diseñado para evaluar conocimiento lingüístico en exámenes escritos, no para desarrollar la capacidad de comunicarse.</p>
+<p>El resultado es que millones de personas estudian inglés o cualquier otro idioma durante años, superan exámenes de gramática y aun así no pueden mantener una conversación simple. ¿Qué falla?</p>
+
+<h2>Cómo aprende el cerebro una lengua nueva</h2>
+<p>La adquisición de idiomas depende de tres mecanismos principales:</p>
+
+<h3>1. Memoria implícita vs. explícita</h3>
+<p>La gramática aprendida conscientemente (memoria explícita) es lenta: requiere esfuerzo mental activo para recuperarse. El idioma fluido usa la memoria implícita: patrones automatizados que se activan sin esfuerzo. La automatización ocurre por exposición repetida en contexto, no por memorizar reglas.</p>
+<p>Ejemplo: un niño anglófono nunca "aprende" que los adjetivos van antes del sustantivo — lo internaliza por exposición masiva. Si estudias inglés como adulto aprendiendo la regla "adjective + noun", tarde o temprano lo automatizas — pero solo si practicas con suficiente volumen de input y output reales.</p>
+
+<h3>2. Input comprensible (i+1)</h3>
+<p>El lingüista Stephen Krashen formuló la hipótesis del input comprensible: aprendemos mejor cuando el material que consumimos es levemente más difícil que nuestro nivel actual (i+1). Material demasiado fácil no aporta nada nuevo. Material demasiado difícil activa el filtro de ansiedad y bloquea la adquisición.</p>
+<p>En términos prácticos: si tu nivel es A2, escuchar conversaciones de nivel C1 en inglés nativo será frustrante e ineficaz. Mejor un podcast diseñado para B1 o una serie con subtítulos en inglés. La incomodidad productiva es la que está justo en el límite superior de tu capacidad.</p>
+
+<h3>3. El ciclo adquisición–producción</h3>
+<p>La exposición (input) crea representaciones mentales del idioma. La producción (output) — hablar y escribir — fuerza al cerebro a activar esas representaciones, identificar brechas y buscar formas de cerrarlas. Sin output, el idioma queda como reconocimiento pasivo pero no como habilidad activa.</p>
+
+<h2>Qué sí acelera el aprendizaje</h2>
+
+<h3>Exposición diaria mínima de 30 minutos</h3>
+<p>La consistencia supera la intensidad. 30 minutos diarios durante 6 meses son más efectivos que 3 horas cada sábado. El cerebro consolida el aprendizaje durante el sueño (consolidación de memoria). Sin exposición diaria, el ritmo de olvido supera al de adquisición.</p>
+
+<h3>Aprendizaje de vocabulario en contexto</h3>
+<p>Las palabras aprendidas aisladamente se olvidan. Las palabras aprendidas en contexto narrativo (en una historia, en una conversación, en una película) se anclan a redes semánticas que facilitan la recuperación. Estudia vocabulario a través de contenido, no de listas.</p>
+
+<h3>Retroalimentación correctiva</h3>
+<p>El output sin retroalimentación puede fosilizar errores. La corrección de un tutor — especialmente cuando se hace en contexto y no de forma descontextualizada — activa el proceso de noticing: el momento en que el aprendiz se da cuenta de que su producción difiere del estándar nativo y actualiza su gramática interna.</p>
+
+<h3>Espacio entre sesiones (repaso espaciado)</h3>
+<p>El repaso espaciado (spaced repetition) explota la curva del olvido: repasar material justo antes de olvidarlo fortalece la retención mucho más que repasarlo cuando todavía está fresco. Herramientas como Anki implementan este principio algorítmicamente, pero cualquier sistema que espacíe los repasos progresivamente es mejor que no espaciar nada.</p>
+
+<h2>Qué NO funciona (aunque se sienta productivo)</h2>
+<ul>
+  <li><strong>Traducir mentalmente:</strong> traducir cada frase de tu idioma nativo al idioma objetivo usa rutas cognitivas lentas. El objetivo es pensar directamente en el idioma nuevo.</li>
+  <li><strong>Memorizar gramática sin producción:</strong> saber la regla no equivale a poder usarla fluidamente.</li>
+  <li><strong>Apps gamificadas sin profundidad:</strong> Duolingo puede ser útil para el primer mes, pero su formato de microinteracciones no desarrolla fluidez real a niveles intermedios o avanzados.</li>
+  <li><strong>Estudiar sin exponerse a idioma nativo:</strong> si solo escuchas a tu profesor hablar el idioma, tu input es limitado. El idioma real vive en películas, podcasts, libros, conversaciones.</li>
+</ul>
+
+<h2>El método de los 11 pasos de WeLearn</h2>
+<p>En WeLearn diseñamos cada sesión diaria integrando estos principios: activación contextual, input comprensible graduado, producción guiada y repaso espaciado acumulativo. Cada día de aprendizaje combina los mecanismos de adquisición más eficientes de manera que se complementan, no que se repiten.</p>
+<p>Si quieres aprender cómo funciona el método en detalle, <a href="/metodo">visita la página del método WeLearn</a>. Si quieres empezar a aplicarlo a tu idioma objetivo, <a href="/precios">revisa nuestros planes</a>.</p>
+    `,
+  },
+
+  // ── Article 29 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-writing-task-1-como-describir-graficas',
+    title: 'IELTS Writing Task 1: cómo describir gráficas y alcanzar Band 7',
+    description:
+      'Guía completa del IELTS Academic Writing Task 1: cómo estructurar la respuesta, qué vocabulario usar para cada tipo de gráfica y los errores que bajan el puntaje.',
+    date: '2026-05-30',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['IELTS', 'writing', 'Task 1', 'gráficas', 'Band 7', 'inglés'],
+    body: `
+<h2>Por qué el Task 1 parece fácil pero no lo es</h2>
+<p>El IELTS Academic Writing Task 1 pide describir una gráfica — un bar chart, un line graph, una tabla, un pie chart o un diagrama de proceso. La mayoría de candidatos subestima esta tarea porque "solo hay que describir lo que ves". El problema: los examinadores no buscan una lista de datos. Buscan análisis, organización y precisión lingüística.</p>
+<p>El Task 1 vale el 33% del puntaje total de Writing. Un Band 5 en Task 1 puede arrastrarte a un Band 6 overall aunque hayas escrito un Task 2 excelente.</p>
+
+<h2>Qué evalúa el examinador</h2>
+<p>Cuatro criterios con el mismo peso:</p>
+<ul>
+  <li><strong>Task Achievement:</strong> ¿respondiste la tarea correctamente? ¿incluiste las tendencias más importantes? ¿seleccionaste datos relevantes y los presentaste con precisión?</li>
+  <li><strong>Coherence and Cohesion:</strong> ¿la respuesta fluye lógicamente? ¿usas conectores correctamente?</li>
+  <li><strong>Lexical Resource:</strong> variedad y precisión del vocabulario</li>
+  <li><strong>Grammatical Range and Accuracy:</strong> variedad de estructuras gramaticales sin errores frecuentes</li>
+</ul>
+
+<h2>Estructura Band 7 para el Task 1</h2>
+<p>Una respuesta de Band 7+ sigue esta estructura en 150–180 palabras:</p>
+
+<h3>Párrafo 1: Introducción (2–3 oraciones)</h3>
+<p>Parafrasea el enunciado de la gráfica (nunca lo copies). Menciona qué tipo de gráfica es, qué mide y en qué periodo.</p>
+<p><em>Ejemplo:</em> "The bar chart illustrates the percentage of adults in four countries who engaged in regular physical activity between 2010 and 2020."</p>
+
+<h3>Párrafo 2: Vista general / Overview (2–3 oraciones)</h3>
+<p>Este es el párrafo más importante para el Task Achievement. Describe las tendencias más destacadas SIN citar números específicos. ¿Qué categoría fue mayor? ¿Qué tendencia predomina? ¿Hay alguna excepción notable?</p>
+<p><em>Ejemplo:</em> "Overall, physical activity rates were considerably higher in Australia than in other countries throughout the period, while Japan consistently recorded the lowest figures."</p>
+
+<h3>Párrafos 3–4: Detalles con datos</h3>
+<p>Ahora sí incluye números específicos, comparaciones y cambios relativos. Agrupa categorías relacionadas — no vayas dato por dato en orden cronológico (ese es el error más común).</p>
+
+<h2>Vocabulario clave por tipo de gráfica</h2>
+
+<h3>Para line graphs y cambios en el tiempo</h3>
+<ul>
+  <li>Subidas: rose, increased, climbed, surged, jumped</li>
+  <li>Bajadas: fell, declined, dropped, decreased, plummeted</li>
+  <li>Estabilidad: remained stable/constant, levelled off, plateaued</li>
+  <li>Magnitud: slightly, gradually, sharply, dramatically, significantly</li>
+</ul>
+
+<h3>Para bar charts y comparaciones</h3>
+<ul>
+  <li>Comparaciones: compared to, in contrast to, whereas, while</li>
+  <li>Superioridad: accounted for more than, exceeded, was higher than</li>
+  <li>Aproximaciones: approximately, roughly, just over/under</li>
+</ul>
+
+<h3>Para pie charts</h3>
+<ul>
+  <li>Proporciones: accounted for, represented, constituted, made up</li>
+  <li>Fracciones: just over a third, nearly half, a quarter of</li>
+</ul>
+
+<h2>Los 4 errores que bajan del Band 6</h2>
+<ol>
+  <li><strong>Copiar el enunciado:</strong> los examinadores lo identifican automáticamente y no puntúa para Lexical Resource.</li>
+  <li><strong>No incluir Overview:</strong> sin párrafo de tendencias generales, el Task Achievement no puede superar Band 5.</li>
+  <li><strong>Listar datos sin análisis:</strong> "In 2010 it was 30%. In 2015 it was 35%. In 2020 it was 42%." — esto es descripción mecánica, no análisis.</li>
+  <li><strong>Inventar tendencias:</strong> solo describe lo que muestra la gráfica. Nunca expliques por qué ocurrió algo (eso es tarea del Task 2).</li>
+</ol>
+
+<h2>¿Cuánto tiempo dedicar al Task 1?</h2>
+<p>El IELTS Academic Writing da 60 minutos para ambas tareas. La distribución recomendada: <strong>20 minutos para Task 1</strong> y 40 para Task 2, que puntúa el doble. Practicar hasta escribir 150 palabras precisas en 20 minutos requiere al menos 4–6 semanas de práctica específica.</p>
+<p>Lee también nuestra guía sobre <a href="/blog/ielts-writing-task-2-como-mejorar-el-band">IELTS Writing Task 2: cómo mejorar el Band</a>.</p>
+<p>Si quieres retroalimentación real de un tutor sobre tus respuestas del Task 1, en WeLearn ofrecemos correcciones escritas detalladas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20Writing%20Task%201%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+    `,
+  },
+
+  // ── Article 30 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'delf-dalf-guia-preparacion-colombianos',
+    title: 'DELF y DALF: la guía completa para colombianos que quieren certificar su francés',
+    description:
+      'Todo sobre el DELF y el DALF en Colombia: diferencias entre los niveles, dónde presentarlo, cuánto cuesta y cómo prepararse para aprobarlo en el primer intento.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'Francés',
+    tags: ['DELF', 'DALF', 'francés', 'certificado de francés', 'Colombia', 'examen de francés'],
+    body: `
+<h2>¿Qué son el DELF y el DALF?</h2>
+<p>El <strong>DELF</strong> (Diplôme d'Études en Langue Française) y el <strong>DALF</strong> (Diplôme Approfondi de Langue Française) son las certificaciones oficiales de francés expedidas por el Ministerio de Educación de Francia. A diferencia de otros exámenes, las certificaciones DELF/DALF son <strong>permanentes</strong>: no tienen fecha de vencimiento, por lo que solo se presentan una vez por nivel.</p>
+
+<table>
+  <thead><tr><th>Examen</th><th>Nivel MCER</th><th>¿Para qué sirve?</th></tr></thead>
+  <tbody>
+    <tr><td>DELF A1</td><td>A1</td><td>Demostrar conocimientos básicos; visa de estudio en Francia</td></tr>
+    <tr><td>DELF A2</td><td>A2</td><td>Integración escolar en países francófonos</td></tr>
+    <tr><td>DELF B1</td><td>B1</td><td>Requisito de algunas universidades; ciudadanía francesa</td></tr>
+    <tr><td>DELF B2</td><td>B2</td><td>Acceso a universidades francesas; empleos en empresas francófonas</td></tr>
+    <tr><td>DALF C1</td><td>C1</td><td>Programas de posgrado; profesiones reguladas en Francia</td></tr>
+    <tr><td>DALF C2</td><td>C2</td><td>Dominio nativo; docencia del francés; carreras académicas</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Dónde presentarlo en Colombia?</h2>
+<p>El DELF/DALF se presenta en Colombia a través del <strong>Institut Français de Colombie</strong> (sedes en Bogotá, Medellín, Cali, Cartagena y Barranquilla) y en centros de examen aliados (alianzas francesas). Los exámenes se aplican varias veces al año — generalmente en marzo, junio y octubre.</p>
+<p>El costo aproximado en 2026 oscila entre <strong>$300.000 y $700.000 COP</strong> según el nivel, con descuentos para menores de 18 años en algunos centros.</p>
+
+<h2>Estructura del examen</h2>
+<p>Todos los niveles evalúan cuatro competencias:</p>
+<ul>
+  <li><strong>Compréhension de l'oral (CO):</strong> comprensión auditiva — grabaciones de conversaciones, anuncios, entrevistas</li>
+  <li><strong>Compréhension des écrits (CE):</strong> comprensión lectora — textos de periódicos, anuncios, correos</li>
+  <li><strong>Production écrite (PE):</strong> producción escrita — cartas, correos, artículos de opinión según el nivel</li>
+  <li><strong>Production orale (PO):</strong> producción oral — monólogo, interacción, debate (según nivel)</li>
+</ul>
+<p>Para aprobar se requiere un mínimo del <strong>50% de la nota máxima en cada competencia</strong> y un total de al menos 50 sobre 100. No se puede compensar una competencia reprobada con otra aprobada.</p>
+
+<h2>¿Cuánto tiempo de preparación necesitas?</h2>
+<p>Si ya tienes una base de español sólida, la similitud léxica entre el español y el francés acelera el aprendizaje, especialmente en comprensión lectora. Tiempos estimados:</p>
+<ul>
+  <li><strong>A2 desde A1:</strong> 3–4 meses</li>
+  <li><strong>B1 desde A2:</strong> 5–7 meses</li>
+  <li><strong>B2 desde B1:</strong> 8–12 meses</li>
+  <li><strong>C1 desde B2:</strong> 12–18 meses</li>
+</ul>
+
+<h2>Estrategias de preparación por competencia</h2>
+
+<h3>Compréhension de l'oral</h3>
+<p>Exponte a francés auténtico: RFI (Radio France Internationale) tiene servicio en francés simplificado para aprendices. Podcasts como "Français avec Pierre" o "InnerFrench" (nivel B1+) son muy efectivos.</p>
+
+<h3>Production écrite</h3>
+<p>El error más frecuente es no conocer los géneros textuales que pide el examen. Para B2 y C1, practica argumentación formal: tesis, antítesis, síntesis. Para A2 y B1, cartas formales e informales con las fórmulas de saludo y cierre correctas.</p>
+
+<h3>Production orale</h3>
+<p>El componente oral asusta a muchos candidatos. La clave: practicar regularmente con retroalimentación. Memorizar monólogos no funciona — los examinadores hacen preguntas adicionales y el monólogo memorizado no prepara para eso.</p>
+
+<h2>¿Para qué sirve el DELF B2 específicamente?</h2>
+<p>El DELF B2 es el nivel más solicitado en Colombia porque:</p>
+<ul>
+  <li>Muchas universidades francesas (École Normale Supérieure, Sciences Po, universidades regionales) lo aceptan como prueba de idioma para admisión</li>
+  <li>El programa de becas del gobierno francés (Eiffel) lo exige en varios perfiles</li>
+  <li>Algunas empresas multinacionales francesas en Colombia (Total, BNP Paribas, Renault) lo valoran para perfiles bilingües</li>
+</ul>
+<p>En WeLearn preparamos para todos los niveles del DELF con material actualizado y práctica de producción oral y escrita con retroalimentación real. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para empezar con una diagnóstico gratuito.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

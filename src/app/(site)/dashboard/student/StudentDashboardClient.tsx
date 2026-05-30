@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import type { ReactNode } from 'react'
+import { signOut } from '@/lib/actions/signOut'
 import {
   RadarChart, Radar, PolarGrid, PolarAngleAxis,
   PolarRadiusAxis, ResponsiveContainer, Tooltip,
@@ -288,6 +289,17 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
               <p className="std-sidebar__user-role">Estudiante</p>
             </div>
           </div>
+          <form action={signOut} style={{ marginTop: 10 }}>
+            <button type="submit" style={{
+              width: '100%', padding: '7px 0', borderRadius: 8,
+              border: '1px solid rgba(200,32,46,0.2)',
+              background: 'rgba(200,32,46,0.06)', color: '#c8202e',
+              fontSize: 12, fontWeight: 600, cursor: 'pointer',
+              transition: 'background 0.15s',
+            }}>
+              Cerrar sesión
+            </button>
+          </form>
         </div>
       </aside>
 

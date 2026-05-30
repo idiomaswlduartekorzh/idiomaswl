@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { signOut } from '@/lib/actions/signOut'
 import {
   BarChart,
   Bar,
@@ -190,20 +191,23 @@ export default function ZhannaDashboard() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div
             style={{
-              width: 40,
-              height: 40,
-              borderRadius: '50%',
-              background: C.blue,
-              color: '#fff',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontWeight: 700,
-              fontSize: 15,
+              width: 40, height: 40, borderRadius: '50%',
+              background: C.blue, color: '#fff',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontWeight: 700, fontSize: 15,
             }}
           >
             ZK
           </div>
+          <form action={signOut}>
+            <button type="submit" style={{
+              padding: '6px 14px', borderRadius: 8,
+              border: `1px solid ${C.border}`, background: 'transparent',
+              color: C.muted, fontSize: 12, fontWeight: 600, cursor: 'pointer',
+            }}>
+              Cerrar sesión
+            </button>
+          </form>
         </div>
       </header>
 

@@ -7,6 +7,7 @@ import {
   Calendar, ChevronDown, BookOpen, GraduationCap, ClipboardCheck,
 } from 'lucide-react'
 import { scoreSubmission } from '@/lib/actions/scoreSubmission'
+import { signOut } from '@/lib/actions/signOut'
 import {
   BarChart, Bar,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
@@ -208,7 +209,6 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 export default function JoseDashboard({ data }: { data: DashboardData }) {
-  const [_tab, setTab] = useState('overview')
   const [activeTab, setActiveTab] = useState<'overview' | 'students'>('overview')
 
   const now = new Date()
@@ -283,9 +283,18 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
               <Calendar size={12} />
               <span style={{ whiteSpace: 'nowrap' }}>{dateStr}</span>
             </div>
-            <div style={{ width: 32, height: 32, borderRadius: '50%', background: A, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: 12, flexShrink: 0 }}>
-              JD
-            </div>
+            <form action={signOut} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{ width: 32, height: 32, borderRadius: '50%', background: A, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: 12, flexShrink: 0 }}>
+                JD
+              </div>
+              <button type="submit" style={{
+                padding: '5px 12px', borderRadius: 8, border: `1px solid ${BORDER}`,
+                background: 'transparent', color: MUTED, fontSize: 11, fontWeight: 600,
+                cursor: 'pointer', transition: 'all 0.15s', whiteSpace: 'nowrap',
+              }}>
+                Salir
+              </button>
+            </form>
           </div>
         </header>
 

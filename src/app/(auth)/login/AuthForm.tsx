@@ -190,7 +190,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
         {/* Footer note */}
         <p style={{ fontSize: 12, color: '#ffffff33' }}>
-          © 2025 Idiomas WeLearn
+          © 2026 Idiomas WeLearn
         </p>
       </div>
 
@@ -361,6 +361,20 @@ export default function AuthForm({ mode }: { mode: Mode }) {
               {loading ? 'Cargando...' : mode === 'login' ? 'Iniciar sesión' : 'Crear cuenta'}
             </button>
           </form>
+
+          {/* Forgot password (login only) */}
+          {mode === 'login' && (
+            <p style={{ textAlign: 'right', marginTop: '-0.5rem' }}>
+              <a
+                href="https://wa.me/573005004253?text=Hola%2C%20olvidé%20mi%20contraseña%20de%20WeLearn.%20¿Me%20pueden%20ayudar%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: 12, color: MUTED, textDecoration: 'underline', textUnderlineOffset: 2 }}
+              >
+                ¿Olvidaste tu contraseña?
+              </a>
+            </p>
+          )}
 
           {/* Switch mode */}
           <p style={{ textAlign: 'center', fontSize: 13, color: MUTED, marginTop: '1.5rem' }}>
