@@ -5283,6 +5283,437 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos</a> y <a href="/blog/topik-i-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero</a>.</p>
     `,
   },
+  // ── ARTICLE 73 ──────────────────────────────────────────────────────────
+  {
+    slug: 'italiano-de-cero-a-b2-cuanto-tiempo-y-como-estudiarlo',
+    title: 'Italiano de cero a B2: cuánto tiempo toma y cómo estudiarlo en Colombia',
+    description: 'Guía práctica para aprender italiano desde cero hasta B2 en Colombia: tiempo real por etapa, recursos, el examen CILS y el método más eficiente.',
+    category: 'Italiano',
+    tags: ['aprender italiano', 'italiano desde cero', 'italiano B2 Colombia', 'CILS italiano'],
+    date: '2026-05-26',
+    readTime: 7,
+    body: `
+<p>El italiano tiene una ventaja enorme para hispanohablantes: es el idioma europeo más cercano al español después del portugués. Eso no significa que sea fácil llegar a B2, pero sí significa que el camino es significativamente más corto que otros idiomas. Esta guía te da el mapa.</p>
+
+<h2>¿Por qué B2? ¿Qué abre ese nivel?</h2>
+<ul>
+  <li><strong>Universidades italianas</strong>: muchas exigen CILS B2 o Certificazione Dante Alighieri B2 para admisión en cursos en italiano.</li>
+  <li><strong>Trabajo en Italia</strong>: el nivel mínimo práctico para trabajar en entornos italianos es B1–B2. Con B2 puedes navegar la burocracia, la vida laboral y los contratos.</li>
+  <li><strong>Ciudadanía italiana por descendencia</strong>: algunos consulados en Colombia piden demostar nivel de italiano (B1 mínimo) como parte del proceso, aunque varía por consulado.</li>
+  <li><strong>Calidad de vida en Italia</strong>: con B2 puedes vivir de forma independiente sin depender de intermediarios para trámites cotidianos.</li>
+</ul>
+
+<h2>Tiempo estimado por etapa para hispanohablantes</h2>
+<table>
+  <thead><tr><th>Nivel</th><th>Horas de estudio</th><th>Con 8 h/semana</th><th>Con 5 h/semana</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>60–80 h</td><td>2 meses</td><td>3 meses</td></tr>
+    <tr><td>A2</td><td>100–140 h</td><td>3–4 meses</td><td>5–6 meses</td></tr>
+    <tr><td>B1</td><td>150–200 h</td><td>4–5 meses</td><td>6–8 meses</td></tr>
+    <tr><td>B2</td><td>200–280 h</td><td>5–7 meses</td><td>8–12 meses</td></tr>
+  </tbody>
+</table>
+<p><strong>Total desde cero hasta B2: 510–700 horas.</strong> Con 8 horas semanales, son aproximadamente 14–18 meses. Más rápido que el francés o el alemán — gracias al vocabulario compartido con el español.</p>
+
+<h2>Lo que los hispanohablantes ya traen gratis</h2>
+<ul>
+  <li><strong>Vocabulario compartido (60–70%)</strong>: palabras como "comunicazione," "situazione," "problema," "cultura," "politica" son idénticas o casi idénticas al español.</li>
+  <li><strong>Gramática muy similar</strong>: el italiano tiene el mismo sistema de conjugaciones, los mismos tiempos verbales básicos (presente, pretérito imperfecto, futuro), y el subjuntivo funciona de manera parecida.</li>
+  <li><strong>Pronunciación fonética</strong>: el italiano se pronuncia casi exactamente como se escribe. No hay pronunciaciones ocultas como en el inglés o el francés.</li>
+</ul>
+
+<h2>Lo que sí es diferente y toma tiempo</h2>
+<ul>
+  <li><strong>El subjuntivo (Congiuntivo)</strong>: más frecuente en italiano que en español moderno. Los italianos lo usan en contextos donde los hispanohablantes ya no lo usan.</li>
+  <li><strong>Los artículos determinados</strong>: il, lo, la, i, gli, le, l' — con reglas específicas según la letra inicial de la palabra.</li>
+  <li><strong>Passato prossimo vs Imperfetto</strong>: la distinción entre estas dos formas del pasado es sutil y requiere práctica auténtica.</li>
+  <li><strong>Diminutivos y aumentativos</strong>: el italiano los usa extensamente (-ino, -one, -etto). Son productivos y comunes, y al principio desconciertan.</li>
+</ul>
+
+<h2>Plan de estudio mes a mes (A1 → B2)</h2>
+<table>
+  <thead><tr><th>Meses</th><th>Nivel</th><th>Foco</th><th>Actividades clave</th></tr></thead>
+  <tbody>
+    <tr><td>1–3</td><td>A1</td><td>Fonética, artículos, presente, vocabulario esencial</td><td>Flashcards Anki, canciones italianas, 30 min/día</td></tr>
+    <tr><td>4–7</td><td>A2</td><td>Passato prossimo, preposiciones, imperativo, vida cotidiana</td><td>Podcast "Coffee Break Italian", textos A2 del CILS</td></tr>
+    <tr><td>8–12</td><td>B1</td><td>Imperfetto, congiuntivo básico, conectores, lectura</td><td>Noticias en italiano (livello B1 de RAI), escritura de 100 palabras/día</td></tr>
+    <tr><td>13–18</td><td>B2</td><td>Congiuntivo avanzado, condizionale, lectura auténtica</td><td>Películas en italiano, escritura de argumentos, simulacros CILS B2</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué certificación de italiano elegir?</h2>
+<ul>
+  <li><strong>CILS (Certificazione di Italiano come Lingua Straniera)</strong>: de la Universidad de Siena. La más reconocida para Colombia. Tiene niveles A1 hasta C2.</li>
+  <li><strong>CELI (Certificato di Conoscenza della Lingua Italiana)</strong>: de la Universidad de Perugia. Similar reconocimiento al CILS.</li>
+  <li><strong>PLIDA</strong>: de la Dante Alighieri. Muy reconocida para ciudadanía italiana.</li>
+  <li><strong>IT (italiano per l'università)</strong>: para acceso a universidades italianas específicamente.</li>
+</ul>
+<p>Para estudiantes colombianos, el <strong>CILS B1 o B2</strong> es generalmente la mejor opción porque tiene mayor red de aplicación para visas, trabajo y universidad.</p>
+
+<h2>WeLearn y el italiano</h2>
+<p>Preparamos italiano desde A1 con instructores especializados que adaptan el ritmo a tu base en español. Si tienes ciudadanía italiana en proceso, o planeas estudiar o trabajar en Italia, empieza con una clase de diagnóstico gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20italiano%20desde%20cero%20para%20llegar%20a%20B2.%20%C2%BFTienen%20clases%20para%20eso%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ciudadania-italiana-italiano-b1-requisito">Ciudadanía italiana: el requisito de italiano B1 explicado</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: guía completa para certificar tu italiano</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 74 ──────────────────────────────────────────────────────────
+  {
+    slug: 'frances-b2-para-que-sirve-que-puertas-abre',
+    title: 'Francés B2: para qué sirve y qué puertas abre en trabajo, universidad y migración',
+    description: 'Qué puedes hacer con un B2 en francés: universidades en Francia y Bélgica, trabajar en empresas francófonas, migrar a Canadá y más oportunidades reales.',
+    category: 'Francés',
+    tags: ['francés B2', 'DELF B2', 'oportunidades francés', 'trabajo francés'],
+    date: '2026-05-26',
+    readTime: 7,
+    body: `
+<p>El B2 en francés es el nivel de quiebre entre "hablar francés como hobby" y "francés como herramienta competitiva." Con un DELF B2 certificado, el mundo francófono se abre de maneras muy concretas — y esta guía te las muestra.</p>
+
+<h2>¿Qué significa exactamente el nivel B2 en francés?</h2>
+<p>Según el Marco Europeo de Referencia, en B2 puedes:</p>
+<ul>
+  <li>Entender textos concretos y abstractos sobre temas conocidos (noticias, artículos de opinión, contratos).</li>
+  <li>Interactuar con hablantes nativos con fluidez sin tensión notable.</li>
+  <li>Escribir textos claros y detallados sobre temas variados, con argumentación.</li>
+  <li>Participar en debates y defender una postura con claridad.</li>
+</ul>
+<p>Para un hispanohablante, este nivel toma entre 14 y 22 meses de estudio consistente (600–800 horas de estudio activo).</p>
+
+<h2>Universidades en Francia y Bélgica</h2>
+<p>El B2 certificado (DELF B2) es el <strong>requisito mínimo</strong> para inscripción en la mayoría de universidades francesas en carreras dictadas en francés. Con DALF C1 tendrás acceso a más programas de élite (Sciences Po, HEC, etc.), pero B2 abre la puerta a cientos de universidades.</p>
+<table>
+  <thead><tr><th>País</th><th>Nivel mínimo</th><th>Costo de la carrera</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td>Francia</td><td>DELF B2</td><td>€0–170/año (public universities)</td><td>Aplica solo para pregrado. Maestrías pueden pedir C1.</td></tr>
+    <tr><td>Bélgica (parte francófona)</td><td>DELF B2</td><td>€835–4.175/año</td><td>UCLouvain, ULB, ULiège: referentes internacionales.</td></tr>
+    <tr><td>Suiza (Ginebra, Lausana)</td><td>B2–C1</td><td>CHF 500–2.000/año</td><td>UNIL, UNIGE: muy competitivas, piden documentación adicional.</td></tr>
+  </tbody>
+</table>
+
+<h2>Trabajar en empresas francófonas desde Colombia</h2>
+<p>Con B2 en francés y un buen nivel de inglés, eres un perfil muy atractivo para:</p>
+<ul>
+  <li><strong>Empresas multinacionales francesas con operaciones en Latinoamérica</strong>: Total Energies, L'Oréal, Renault, Michelin, BNP Paribas, Decathlon. Muchas tienen operaciones en Colombia y requieren bilingüismo.</li>
+  <li><strong>Servicios de atención al cliente francófono</strong>: BPOs en Bogotá y Medellín contratan agentes bilingües español-francés con salarios premium.</li>
+  <li><strong>Freelance para empresas francesas</strong>: traducción, localización, soporte técnico, diseño — plataformas como Malt.fr o LinkedIn FR.</li>
+</ul>
+
+<h2>Migrar a Canadá con francés (y por qué B2 suma mucho)</h2>
+<p>El francés es la segunda lengua oficial de Canadá. En el sistema Express Entry, demostrar nivel B2+ en francés (TCF Canada o TEF Canada) suma puntos de <strong>bilinguismo</strong> al CRS, independientemente de tu puntaje en inglés.</p>
+<ul>
+  <li>Con CLB 7+ en francés (≈ B2 DELF), los puntos de bilinguismo suman 25–50 puntos extra al CRS.</li>
+  <li>Además, el programa <strong>Francophone Mobility</strong> permite trabajar en cualquier provincia canadiense (excepto Quebec) con Work Permit en sectores específicos.</li>
+  <li>Quebec tiene su propio proceso (PRTQ) donde el francés es el factor principal — con B2 eres elegible para varios perfiles.</li>
+</ul>
+
+<h2>Organizaciones internacionales y cooperación</h2>
+<p>El francés es lengua oficial de la ONU, UNESCO, ACNUR, Unión Africana, Croix-Rouge y decenas de organismos internacionales. Para acceder a puestos en estos organismos, el francés B2–C1 es requisito estándar y muchas veces diferenciador en las convocatorias.</p>
+
+<h2>El DELF B2: qué evalúa y cómo prepararlo</h2>
+<p>El DELF B2 tiene 4 pruebas: comprensión de textos escritos, comprensión de documentos orales, producción escrita (argumentación) y producción oral (exposición + debate). El puntaje mínimo es 50/100 en total y 5/25 por prueba. En Colombia, el Alliance Française administra el DELF.</p>
+
+<h2>WeLearn y la preparación DELF B2</h2>
+<p>Si ya tienes A2 o B1 en francés y quieres llegar a B2 con certificación, diseñamos contigo un plan específico para el DELF B2. Primera clase de diagnóstico gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20B2%20en%20franc%C3%A9s%20con%20WeLearn.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF y DALF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/tcf-canada-frances-para-inmigrar-a-quebec">TCF Canadá: francés para inmigrar a Quebec</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 75 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-writing-task-1-como-describir-graficos-tablas-diagramas',
+    title: 'IELTS Writing Task 1: cómo describir gráficos, tablas y diagramas para banda 7+',
+    description: 'Guía completa de IELTS Writing Task 1 Academic: estructura, vocabulario de tendencias, errores comunes y cómo pasar de banda 5 a banda 7 en graficas y tablas.',
+    category: 'IELTS',
+    tags: ['IELTS Writing Task 1', 'describir gráficos inglés', 'IELTS Academic Writing', 'banda 7 IELTS'],
+    date: '2026-05-27',
+    readTime: 9,
+    body: `
+<p>El Writing Task 1 del IELTS Academic confunde a mucha gente porque no pide opinión ni argumentación — pide describir datos objetivamente. Y esa objetividad tiene su propio vocabulario, su propia estructura y sus propios errores típicos. Aquí está el mapa completo.</p>
+
+<h2>¿Qué es el IELTS Writing Task 1?</h2>
+<p>En el IELTS Academic, el Task 1 te presenta una representación visual — un gráfico de barras, línea, pastel, tabla, diagrama de proceso, mapa, o dos gráficos combinados — y te pide que la describas en <strong>mínimo 150 palabras</strong> en 20 minutos.</p>
+<p>Se evalúa en 4 criterios (25% cada uno): Task Achievement (cumplir el propósito), Coherence & Cohesion (estructura lógica), Lexical Resource (vocabulario), y Grammatical Range & Accuracy (gramática).</p>
+
+<h2>La estructura obligatoria de una respuesta banda 7+</h2>
+<ol>
+  <li><strong>Introducción (paráfrasis)</strong>: reescribe el enunciado con sinónimos. Nunca copies literalmente.</li>
+  <li><strong>Overview (resumen general)</strong>: 2–3 oraciones sobre las tendencias más notables. Sin datos específicos aquí. El overview es el factor más diferenciador entre banda 5 y banda 7.</li>
+  <li><strong>Párrafo de datos 1</strong>: el grupo o período más destacado, con datos específicos.</li>
+  <li><strong>Párrafo de datos 2</strong>: el contraste o comparación secundaria, con datos específicos.</li>
+</ol>
+
+<h2>Vocabulario de tendencias (el que separa banda 5 de banda 7)</h2>
+<table>
+  <thead><tr><th>Movimiento</th><th>Verbos</th><th>Sustantivos</th><th>Adjetivos/Adverbios</th></tr></thead>
+  <tbody>
+    <tr><td>Subida fuerte</td><td>soared, surged, rocketed, jumped</td><td>a sharp rise, a dramatic increase</td><td>sharply, dramatically, steeply</td></tr>
+    <tr><td>Subida suave</td><td>rose, increased, grew, climbed</td><td>a gradual rise, a moderate increase</td><td>gradually, moderately, slightly</td></tr>
+    <tr><td>Bajada fuerte</td><td>plummeted, fell sharply, dropped</td><td>a sharp decline, a steep fall</td><td>sharply, dramatically, steeply</td></tr>
+    <tr><td>Bajada suave</td><td>decreased, declined, dipped</td><td>a slight decrease, a gradual decline</td><td>slightly, gradually, marginally</td></tr>
+    <tr><td>Se mantuvo igual</td><td>remained stable, leveled off, stayed constant</td><td>a plateau, no change</td><td>relatively, roughly, approximately</td></tr>
+    <tr><td>Fluctuó</td><td>fluctuated, varied</td><td>fluctuation, variation</td><td>erratically, consistently</td></tr>
+  </tbody>
+</table>
+
+<h2>Introducción: paráfrasis correcta</h2>
+<p><strong>Enunciado original:</strong> "The chart below shows the percentage of households with internet access in three countries between 2010 and 2020."</p>
+<p><strong>Paráfrasis correcta:</strong> "The bar chart illustrates the proportion of homes connected to the internet across three nations over a decade from 2010 to 2020."</p>
+<p>Cambios realizados: "percentage" → "proportion," "households" → "homes," "access" → "connected to," "countries" → "nations," "between 2010 and 2020" → "over a decade from 2010 to 2020."</p>
+
+<h2>El overview: el elemento más importante</h2>
+<p>El overview es un resumen de 2–3 oraciones que menciona las tendencias más destacadas <strong>sin</strong> citar datos específicos. Es obligatorio para alcanzar banda 6+.</p>
+<p><strong>Ejemplo débil (banda 5):</strong> "The chart shows information about internet access."</p>
+<p><strong>Ejemplo fuerte (banda 7):</strong> "Overall, internet connectivity grew significantly across all three countries over the period, with Country A consistently maintaining the highest rates. By contrast, Country C lagged considerably behind, despite showing the most rapid growth."</p>
+
+<h2>Errores que bajan la banda</h2>
+<ul>
+  <li><strong>Copiar el enunciado</strong>: el examinador lo ignora y no cuenta como escritura tuya.</li>
+  <li><strong>Omitir el overview</strong>: el criterio Task Achievement baja directamente a banda 5 sin overview.</li>
+  <li><strong>Listar todos los datos sin agrupar</strong>: "In 2010, A was 50%, B was 30%, C was 20%. In 2011, A was 52%..." — esto es una lista, no un análisis.</li>
+  <li><strong>Dar opiniones</strong>: "I think this shows that..." — el Task 1 no pide tu opinión. Solo descripción objetiva.</li>
+  <li><strong>Usar vocabulario impreciso</strong>: "went up a little" → "increased marginally" (más preciso y académico).</li>
+  <li><strong>Ignorar las unidades</strong>: si el eje Y es "millones de toneladas," no es suficiente decir "aumentó a 50."</li>
+</ul>
+
+<h2>Tipos de gráficos y cómo abordar cada uno</h2>
+<ul>
+  <li><strong>Gráfico de líneas</strong>: enfócate en tendencias a lo largo del tiempo. Usa vocabulario de movimiento.</li>
+  <li><strong>Gráfico de barras</strong>: compara categorías o períodos. Identifica el más alto, más bajo, y diferencias notables.</li>
+  <li><strong>Gráfico circular (pie chart)</strong>: compara proporciones. Agrupa categorías similares para el análisis.</li>
+  <li><strong>Tabla</strong>: agrupa los datos más llamativos (máximos, mínimos, diferencias extremas). No enumeres cada celda.</li>
+  <li><strong>Diagrama de proceso</strong>: describe las etapas en orden. Usa conectores de secuencia (first, then, subsequently, finally).</li>
+  <li><strong>Mapa</strong>: describe los cambios entre el antes y el después. Usa vocabulario de ubicación y cambio.</li>
+</ul>
+
+<h2>Práctica recomendada</h2>
+<p>Escribe un Task 1 por día durante 4 semanas. Practica todos los tipos de gráfico. Pide retroalimentación de un tutor que conozca los criterios de evaluación del IELTS. Revisa los ejemplos oficiales de Cambridge (libros 1–18) y el Official Guide to the IELTS Academic de British Council / IDP.</p>
+
+<h2>WeLearn y el IELTS Writing Task 1</h2>
+<p>Preparamos la sección de Writing del IELTS con simulacros, corrección detallada y estrategias probadas. Si tu objetivo es banda 7 en Writing, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20IELTS%20Writing%20Task%201%20para%20llegar%20a%20banda%207.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">cuéntanos tu nivel actual y tu fecha de examen</a>.</p>
+<p>Lee también: <a href="/blog/ielts-writing-task-2-guia-completa-para-principiantes">IELTS Writing Task 2: guía completa para principiantes</a> y <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar banda 7</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 76 ──────────────────────────────────────────────────────────
+  {
+    slug: 'portugues-brasil-vs-portugal-diferencias-para-aprender',
+    title: 'Portugués de Brasil vs Portugal: diferencias clave para estudiantes colombianos',
+    description: 'Pronunciación, vocabulario y gramática: diferencias entre portugués brasileño y europeo que todo colombiano que aprende portugués debe conocer.',
+    category: 'Portugués',
+    tags: ['portugués brasileño', 'portugués europeo', 'diferencias portugués', 'aprender portugués'],
+    date: '2026-05-27',
+    readTime: 7,
+    body: `
+<p>Una de las primeras preguntas al empezar a aprender portugués es: ¿aprendo el de Brasil o el de Portugal? La respuesta depende de tu objetivo, pero antes de decidir, vale la pena entender qué es diferente — y qué es lo mismo.</p>
+
+<h2>Lo que comparten: la base es la misma</h2>
+<p>Gramática, estructura de oraciones, la mayoría del vocabulario esencial y el sistema fonológico base son compartidos. Alguien que aprende portugués de Brasil puede entender a un portugués, y viceversa — con algo de adaptación. No son idiomas diferentes.</p>
+
+<h2>Las diferencias más importantes: pronunciación</h2>
+<p>La diferencia más inmediata es la pronunciación:</p>
+<table>
+  <thead><tr><th>Característica</th><th>Portugués brasileño (PB)</th><th>Portugués europeo (PE)</th></tr></thead>
+  <tbody>
+    <tr><td>Vocales átonas</td><td>Pronunciadas claramente: "menino" = me-NI-no</td><td>Reducidas o casi eliminadas: "menino" ≈ "m'NINO"</td></tr>
+    <tr><td>Ritmo</td><td>Silábico (cada sílaba tiene peso similar)</td><td>Acentual (sílabas tónicas muy marcadas, átonas casi desaparecen)</td></tr>
+    <tr><td>Consonantes finales</td><td>Pronunciadas con más apertura</td><td>Articuladas pero más cerradas</td></tr>
+    <tr><td>El sonido "te/di"</td><td>"ti" y "di" se palatalizan: "tia" suena "tchia"</td><td>No hay palatalización: "tia" suena "tia" claro</td></tr>
+    <tr><td>Velocidad</td><td>Se percibe más lento y claro para hispanohablantes</td><td>Se percibe más rápido y "comido"</td></tr>
+  </tbody>
+</table>
+<p><strong>Para colombianos</strong>: el portugués brasileño suele ser más fácil de entender al principio por la mayor claridad vocálica. El europeo requiere más entrenamiento auditivo.</p>
+
+<h2>Diferencias de vocabulario (las más frecuentes)</h2>
+<table>
+  <thead><tr><th>Español</th><th>Portugués brasileño</th><th>Portugués europeo</th></tr></thead>
+  <tbody>
+    <tr><td>Autobús</td><td>ônibus</td><td>autocarro</td></tr>
+    <tr><td>Celular / teléfono</td><td>celular</td><td>telemóvel</td></tr>
+    <tr><td>Computador</td><td>computador / computador</td><td>computador (similar)</td></tr>
+    <tr><td>Desayuno</td><td>café da manhã</td><td>pequeno-almoço</td></tr>
+    <tr><td>Frigorífico</td><td>geladeira</td><td>frigorífico</td></tr>
+    <tr><td>Departamento</td><td>apartamento</td><td>apartamento (similar)</td></tr>
+    <tr><td>Tren subterráneo</td><td>metrô</td><td>metro (sin acento)</td></tr>
+    <tr><td>Jugo de frutas</td><td>suco</td><td>sumo</td></tr>
+  </tbody>
+</table>
+
+<h2>Diferencias gramaticales notables</h2>
+<ul>
+  <li><strong>Los pronombres</strong>: en Brasil, "você" (tú/usted informal) es universal. En Portugal, "tu" y "você" conviven con reglas sociales distintas. El "tu" conjugado es muy frecuente en Portugal, raro en Brasil.</li>
+  <li><strong>Colocación de pronombres</strong>: Portugal prefiere el pronombre antes del verbo (próclise) o al final, con guion (ênclise). Brasil usa más la próclise en el habla informal ("me dá" vs "dá-me").</li>
+  <li><strong>Gerundio vs Infinitivo</strong>: Brasil usa mucho el gerundio ("estou falando"), Portugal prefiere el infinitivo ("estou a falar").</li>
+</ul>
+
+<h2>¿Cuál aprender según tu objetivo?</h2>
+<table>
+  <thead><tr><th>Objetivo</th><th>Variedad recomendada</th></tr></thead>
+  <tbody>
+    <tr><td>Trabajar o migrar a Brasil</td><td>Portugués brasileño</td></tr>
+    <tr><td>Celpe-Bras (certificación para Brasil)</td><td>Portugués brasileño</td></tr>
+    <tr><td>Migrar a Portugal o trabajar en empresa portuguesa</td><td>Portugués europeo</td></tr>
+    <tr><td>Trabajar en empresa multinacional lusófona (Angola, Mozambique)</td><td>Europeo (más cercano al estándar internacional)</td></tr>
+    <tr><td>Escuchar música, ver series, disfrutar la cultura</td><td>El que más disfrutes (ninguno es "incorrecto")</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Puedo aprender uno y entender el otro?</h2>
+<p>Sí, con tiempo. Después de 6–12 meses de práctica en una variedad, puedes comenzar a exponerte a la otra y adaptarte en semanas. La estructura es la misma; solo el acento y algunas palabras cambian. Muchos colombianos aprenden PB primero y luego agregan exposición a PE para proyectos en Portugal o Angola.</p>
+
+<h2>WeLearn y el portugués</h2>
+<p>Enseñamos las dos variedades según el objetivo del estudiante. Si tienes claro si vas hacia Brasil o Portugal, el programa se adapta desde el día 1. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20portugu%C3%A9s%20y%20quisiera%20orientaci%C3%B3n%20sobre%20cu%C3%A1l%20variedad%20estudiar.%20%C2%BFMe%20ayudan%3F" target="_blank" rel="noopener noreferrer">Clase de diagnóstico gratis — escríbenos</a>.</p>
+<p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse desde Colombia</a> y <a href="/blog/portugues-para-negocios-con-brasil-nivel-recomendado">Portugués para negocios con Brasil: guía práctica</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 77 ──────────────────────────────────────────────────────────
+  {
+    slug: 'migrar-a-australia-ielts-visa-puntos-2026',
+    title: 'Migrar a Australia en 2026: puntaje IELTS, puntos y visas para colombianos',
+    description: 'Guía completa para migrar a Australia desde Colombia en 2026: sistema de puntos, puntaje IELTS requerido, visas 189/190/491 y cómo prepararse.',
+    category: 'Migración',
+    tags: ['migrar a Australia', 'IELTS Australia', 'visa Australia Colombia', 'puntos Australia 2026'],
+    date: '2026-05-28',
+    readTime: 8,
+    body: `
+<p>Australia sigue siendo uno de los destinos de migración más buscados por colombianos: alta calidad de vida, economía estable, demanda de profesionales calificados y un proceso de migración basado en puntos (no en loterías). El inglés — y específicamente el IELTS — es uno de los factores de mayor impacto en ese sistema de puntos.</p>
+
+<h2>El sistema de puntos australiano (SkillSelect)</h2>
+<p>Australia usa un sistema de puntos llamado <strong>SkillSelect</strong> para seleccionar migrantes calificados. Se presentan Expressions of Interest (EOI) y el gobierno invita a aplicar a quienes superen cierto umbral de puntos en cada ronda (draw). Los puntos se acumulan por:</p>
+<ul>
+  <li>Edad (máximo puntos: 25–32 años)</li>
+  <li>Inglés (Competente, Proficiente o Superior)</li>
+  <li>Experiencia laboral (en Australia y fuera)</li>
+  <li>Educación (pregrado, maestría, doctorado)</li>
+  <li>Patrocinio estatal o familiar</li>
+  <li>Otros (cónyuge con inglés/skills, estudio en Australia, STEM, etc.)</li>
+</ul>
+
+<h2>Puntajes IELTS y puntos en SkillSelect</h2>
+<table>
+  <thead><tr><th>Nivel de inglés</th><th>IELTS requerido</th><th>Puntos SkillSelect</th></tr></thead>
+  <tbody>
+    <tr><td>Competent English</td><td>6.0 en cada módulo</td><td>0 puntos (mínimo para aplicar)</td></tr>
+    <tr><td>Proficient English</td><td>7.0 en cada módulo</td><td>+10 puntos</td></tr>
+    <tr><td>Superior English</td><td>8.0 en cada módulo</td><td>+20 puntos</td></tr>
+  </tbody>
+</table>
+<p><strong>Implicación práctica</strong>: la diferencia entre IELTS 6.0 y IELTS 8.0 equivale a 20 puntos adicionales en SkillSelect. En muchas ocupaciones, esos 20 puntos pueden significar la diferencia entre ser invitado este año o esperar 2–3 años.</p>
+
+<h2>Visas principales para colombianos calificados</h2>
+<table>
+  <thead><tr><th>Visa</th><th>Tipo</th><th>Patrocinio</th><th>Puntaje típico actual</th></tr></thead>
+  <tbody>
+    <tr><td>Subclass 189</td><td>Residencia permanente sin patrocinio</td><td>No necesario</td><td>85–90+ puntos (según ocupación)</td></tr>
+    <tr><td>Subclass 190</td><td>Residencia permanente con patrocinio estatal</td><td>Estado australiano</td><td>65–80 puntos (+5 del estado)</td></tr>
+    <tr><td>Subclass 491</td><td>Residencia temporal 5 años (camino a PR)</td><td>Estado o familiar en zona regional</td><td>65+ puntos (+15 del estado o familiar)</td></tr>
+    <tr><td>Subclass 482 (TSS)</td><td>Trabajo temporal 2–4 años</td><td>Empleador australiano</td><td>Sin sistema de puntos (oferta laboral)</td></tr>
+  </tbody>
+</table>
+
+<h2>Ocupaciones en demanda para colombianos</h2>
+<p>Australia publica una lista de ocupaciones en demanda (MLTSSL, STSOL) que habilita para ciertas visas. Sectores con alta demanda en 2026:</p>
+<ul>
+  <li><strong>Salud</strong>: enfermeras, médicos especialistas, fisioterapeutas.</li>
+  <li><strong>Construcción e ingeniería</strong>: ingenieros civiles, estructurales, mecánicos.</li>
+  <li><strong>TI</strong>: desarrolladores, analistas de datos, arquitectos de software.</li>
+  <li><strong>Educación</strong>: docentes (con reconocimiento de título).</li>
+  <li><strong>Gastronomía</strong>: chefs (cook, pastry cook).</li>
+</ul>
+
+<h2>Reconocimiento de títulos y evaluación de habilidades</h2>
+<p>Antes de aplicar por SkillSelect, tu título colombiano debe ser evaluado por la autoridad correspondiente según tu ocupación:</p>
+<ul>
+  <li>Engineers Australia (ingenieros)</li>
+  <li>AHPRA (médicos, enfermeras, dentistas)</li>
+  <li>VETASSESS (decenas de otras ocupaciones profesionales)</li>
+  <li>ACS (computación y TI)</li>
+</ul>
+<p>Este proceso toma entre 2 y 6 meses y es independiente de la visa. Si tu título colombiano tiene diferencias significativas con el currículo australiano, pueden pedirte experiencia adicional o formación complementaria.</p>
+
+<h2>Estrategia recomendada para colombianos</h2>
+<ol>
+  <li>Verificar que tu ocupación esté en la lista de demanda y qué visa habilita.</li>
+  <li>Lograr IELTS <strong>8.0 en cada módulo</strong> (Superior English = +20 puntos). Este es el mayor apalancamiento posible.</li>
+  <li>Iniciar la evaluación de habilidades (skill assessment) paralelamente.</li>
+  <li>Calcular tu puntaje SkillSelect y comparar con las rondas recientes de la ocupación.</li>
+  <li>Considerar el patrocinio estatal (190/491) si la 189 requiere demasiados puntos.</li>
+</ol>
+
+<h2>WeLearn y la preparación IELTS para Australia</h2>
+<p>Preparamos IELTS General Training con foco en los módulos que más impactan el puntaje SkillSelect. Si tu objetivo es IELTS 8.0, el plan de preparación es diferente al de alguien que busca 6.5 para una maestría. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20migrar%20a%20Australia%20y%20necesito%20llegar%20a%208.0.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">Cuéntanos tu situación por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-canada-express-entry-requisitos-2026">Inglés para Canada Express Entry: CLB, IELTS y CRS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 78 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-reading-true-false-not-given-estrategia',
+    title: 'IELTS Reading: True, False, Not Given — estrategia definitiva para no equivocarte',
+    description: 'Cómo resolver los True/False/Not Given del IELTS Reading sin confundirte. Diferencia entre False y Not Given, estrategia paso a paso y ejemplos resueltos.',
+    category: 'IELTS',
+    tags: ['IELTS Reading', 'True False Not Given', 'IELTS estrategia', 'Reading IELTS tips'],
+    date: '2026-05-28',
+    readTime: 8,
+    body: `
+<p>Las preguntas de True/False/Not Given (T/F/NG) son las más temidas del IELTS Reading — y con razón. La diferencia entre "False" y "Not Given" confunde incluso a hablantes nativos si no se conoce la lógica del examen. Esta guía la explica de una vez por todas.</p>
+
+<h2>La lógica fundamental: lo que el texto DICE vs lo que IMPLICA vs lo que CALLA</h2>
+<p>El error más común es confundir "Not Given" con "probablemente falso" o "falso porque no lo menciona." La distinción correcta es:</p>
+<ul>
+  <li><strong>TRUE</strong>: la afirmación de la pregunta está directamente respaldada por información del texto. El texto lo dice (con esas palabras o con sinónimos).</li>
+  <li><strong>FALSE</strong>: la afirmación de la pregunta <em>contradice</em> directamente lo que dice el texto. El texto dice lo opuesto.</li>
+  <li><strong>NOT GIVEN</strong>: el texto no menciona ese punto, ni para confirmarlo ni para negarlo. El tema puede aparecer parcialmente, pero la afirmación específica de la pregunta no está ni confirmada ni contradicha.</li>
+</ul>
+
+<h2>La pregunta clave para cada opción</h2>
+<p>Cuando no sabes si es FALSE o NOT GIVEN, hazte esta pregunta:</p>
+<ul>
+  <li>"¿El texto dice algo que <em>contradice directamente</em> esta afirmación?" → Si SÍ: <strong>FALSE</strong>. Si NO: <strong>NOT GIVEN</strong>.</li>
+</ul>
+<p>El conocimiento general o lo que "parece lógico" no cuenta. Solo lo que está <em>escrito en el texto</em>.</p>
+
+<h2>Ejemplo resuelto</h2>
+<p><strong>Fragmento del texto:</strong> "The polar bear population in the Hudson Bay region has declined by approximately 20% over the last two decades, primarily due to the reduction in sea ice caused by rising temperatures."</p>
+<p><strong>Afirmaciones:</strong></p>
+<ol>
+  <li>"Polar bears in Hudson Bay have become extinct." → <strong>FALSE</strong> (el texto dice que declinó un 20%, no que se extinguieron).</li>
+  <li>"Rising temperatures are the sole cause of polar bear decline globally." → <strong>NOT GIVEN</strong> (el texto dice que la reducción de hielo es la causa "principal" en Hudson Bay, pero no habla de causas globales ni dice "única causa").</li>
+  <li>"Sea ice in Hudson Bay has decreased as temperatures have risen." → <strong>TRUE</strong> (el texto lo afirma directamente).</li>
+</ol>
+
+<h2>Errores más comunes</h2>
+<ul>
+  <li><strong>Usar conocimiento previo</strong>: si sabes que los osos polares están en peligro de extinción en general, no marques FALSE por eso. Solo cuenta el texto.</li>
+  <li><strong>Interpretar "parcialmente verdadero"</strong>: si la afirmación dice "X siempre causa Y" y el texto dice "X a veces causa Y," es FALSE (la afirmación sobre el alcance es incorrecta).</li>
+  <li><strong>Confundir cuantificadores</strong>: "all," "some," "most," "none" — son detalles críticos. Si el texto dice "most" y la afirmación dice "all," es FALSE.</li>
+  <li><strong>Pasar demasiado tiempo buscando NG</strong>: si buscaste la información en todo el texto relevante y no aparece, confía: es NOT GIVEN. No sigas buscando.</li>
+</ul>
+
+<h2>Estrategia paso a paso</h2>
+<ol>
+  <li><strong>Lee la afirmación</strong> e identifica las palabras clave (sustantivos, verbos, cuantificadores).</li>
+  <li><strong>Localiza en el texto</strong> la sección donde aparece el tema de la afirmación. Usa los keywords como ancla.</li>
+  <li><strong>Lee con atención</strong> las 2–3 oraciones alrededor de donde aparece el tema.</li>
+  <li><strong>Compara</strong>: ¿el texto dice lo mismo? → TRUE. ¿Dice lo contrario? → FALSE. ¿No dice nada al respecto? → NOT GIVEN.</li>
+  <li><strong>No infiera</strong>: si tienes que hacer un "salto lógico" para llegar a la respuesta, probablemente es NOT GIVEN.</li>
+</ol>
+
+<h2>Diferencia entre Yes/No/Not Given vs True/False/Not Given</h2>
+<p>En el IELTS Reading también aparecen preguntas de <strong>Yes/No/Not Given</strong>. La diferencia:</p>
+<ul>
+  <li><strong>True/False/NG</strong>: se usan con afirmaciones de hecho. ¿El texto confirma o contradice este dato?</li>
+  <li><strong>Yes/No/NG</strong>: se usan con afirmaciones de opinión o puntos de vista del autor. ¿El autor expresa esta opinión o la contradice?</li>
+</ul>
+<p>La lógica de resolución es la misma, pero la fuente cambia: en T/F/NG buscas hechos; en Y/N/NG buscas la perspectiva del autor.</p>
+
+<h2>Velocidad: cuánto tiempo gastar por pregunta</h2>
+<p>En el IELTS Reading tienes 60 minutos para 40 preguntas y 3 textos. Eso da 1.5 minutos por pregunta en promedio. Las T/F/NG suelen ir en grupos de 5–7. Para este tipo, asigna máximo <strong>2 minutos por pregunta</strong> — incluyendo localizar la información. Si no encuentras la respuesta en 2 minutos, marca NOT GIVEN y sigue adelante.</p>
+
+<h2>WeLearn y el IELTS Reading</h2>
+<p>Trabajamos el Reading IELTS con simulacros cronometrados, análisis de patrones de error y estrategias por tipo de pregunta. Si las T/F/NG te cuestan puntos, en 4–6 clases puedes eliminar ese obstáculo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20en%20el%20Reading%20del%20IELTS.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar banda 7</a> y <a href="/blog/ielts-listening-errores-comunes">IELTS Listening: los 7 errores más comunes y cómo evitarlos</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
