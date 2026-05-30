@@ -1894,6 +1894,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <h2>¿Dónde se presenta el TOPIK en Colombia?</h2>
 <p>El TOPIK se presenta en Colombia normalmente una o dos veces al año. Los centros de examinación oficiales incluyen el Centro Cultural Coreano en Bogotá y otras instituciones registradas. Los detalles de inscripción y fechas se publican en el sitio oficial del NIIED y en el Centro Cultural Coreano en Colombia.</p>
 <p>Si tu objetivo es el TOPIK I o TOPIK II y quieres prepararte con un método diseñado para hispanohablantes, puedes conocer el <a href="/clases-de-coreano">programa de coreano WeLearn</a> — que cubre desde Hangul y pronunciación hasta los niveles de preparación para el TOPIK.</p>
+<p>Lee también: <a href="/blog/topik-ii-como-subir-de-nivel">TOPIK II: cómo pasar del nivel 2 al nivel 4 en coreano</a>.</p>
     `,
   },
   {
@@ -1960,6 +1961,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>En WeLearn las clases son 1:1 con tutor asignado. El proceso empieza siempre con una clase de diagnóstico gratis que define tu nivel real, tu objetivo específico y el tiempo que necesitas para alcanzarlo. El método de 17 pasos está diseñado para hispanohablantes — no adaptamos contenido en inglés para Colombia, sino que construimos el método desde el contexto lingüístico del español.</p>
 <p>Tenemos preparadores específicos para IELTS, TOEFL e ICFES — no tutores genéricos que "cubren todos los exámenes". Y los simulacros de práctica están disponibles en la plataforma para que practiques entre sesiones.</p>
 <p>Si quieres agendar tu clase de diagnóstico gratis y ver si somos la opción correcta para ti, puedes hacerlo desde la <a href="/clases-de-ingles">página de clases de inglés</a>.</p>
+<p>Lee también: <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026? Guía de precios honesta</a>.</p>
     `,
   },
   {
