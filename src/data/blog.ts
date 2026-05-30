@@ -2258,7 +2258,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Celpe-Bras vs otros certificados de portugués</h2>
 <p>Existen otros certificados (CAPLE de Portugal, DEPLE), pero el Celpe-Bras es el único reconocido en Brasil para los propósitos más comunes (universidades, homologaciones). Si tu objetivo es estudiar o trabajar en Portugal, el CAPLE puede ser más relevante. Si es Brasil, el Celpe-Bras es el estándar.</p>
-<p>En WeLearn preparamos para el Celpe-Bras con enfoque en producción real: escritura, conversación y materiales auténticos. <a href="/precios">Consulta nuestros planes</a> o <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20Celpe-Bras%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
+<p>En WeLearn preparamos para el Celpe-Bras con enfoque en producción real: escritura, conversación y materiales auténticos. Visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>, <a href="/precios">consulta nuestros planes</a> o <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20Celpe-Bras%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía de preparación para colombianos</a>, <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: certifica tu italiano desde Colombia</a>.</p>
     `,
   },
@@ -3082,7 +3082,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y la certificación de italiano</h2>
-<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados, material actualizado y práctica oral con retroalimentación real en cada sesión. Tanto si partes de cero como si ya tienes un A2 consolidado, un diagnóstico gratuito con tu tutor definirá el plan exacto para tu nivel y objetivo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20CILS%20o%20CELI%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> y empezamos.</p>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados, material actualizado y práctica oral con retroalimentación real en cada sesión. Tanto si partes de cero como si ya tienes un A2 consolidado, un diagnóstico gratuito con tu tutor definirá el plan exacto para tu nivel y objetivo. Visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20CILS%20o%20CELI%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> y empezamos.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: guía completa para colombianos</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
     `,
   },
