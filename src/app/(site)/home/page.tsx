@@ -526,6 +526,7 @@ export default function HomePage() {
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Clases</p>
+            <Link href="/clases-de-idiomas">Todos los idiomas</Link>
             <Link href="/clases-de-ingles">Inglés</Link>
             <Link href="/clases-de-coreano">Coreano</Link>
             <Link href="/clases-de-frances">Francés</Link>
