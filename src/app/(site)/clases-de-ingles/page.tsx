@@ -542,6 +542,8 @@ export default function ClasesDeInglesPage() {
               { cat: 'Inglés', title: 'Inglés para entrevistas en multinacionales: estructura STAR y frases clave', slug: 'ingles-para-entrevistas-de-trabajo-en-multinacionales' },
               { cat: 'Migración', title: 'Inglés para Express Entry Canadá: CLB, IELTS y cómo maximizar tu CRS', slug: 'ingles-para-canada-express-entry-requisitos-2026' },
               { cat: 'IELTS', title: 'IELTS Academic vs General Training: cuál debes tomar y por qué', slug: 'ielts-academic-vs-general-training-cual-elegir' },
+              { cat: 'IELTS', title: 'IELTS de banda 6 a 7: qué cambia y cómo cruzar esa barrera', slug: 'ielts-de-banda-6-a-banda-7-que-cambia' },
+              { cat: 'Inglés', title: 'Inglés técnico para programadores: vocabulario, daily meetings y entrevistas', slug: 'ingles-tecnico-para-programadores-y-desarrolladores' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
