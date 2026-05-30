@@ -705,6 +705,7 @@ export default function ClasesDeCoreanoPage() {
             <h2 className={s.h2}>Guías gratuitas para aprender coreano</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
               {[
+                { cat: 'Coreano', title: 'Clases de coreano online en Colombia: guía para elegir bien', slug: 'clases-de-coreano-online-colombia' },
                 { cat: 'Coreano', title: 'Aprender coreano desde cero en Colombia: la guía completa', slug: 'aprender-coreano-desde-cero-guia-colombia' },
                 { cat: 'Coreano', title: 'TOPIK I: cómo prepararlo desde cero y pasar al primer intento', slug: 'topik-1-preparacion-guia-para-principiantes' },
                 { cat: 'Coreano', title: 'Beca GKS de Corea del Sur para colombianos: requisitos y TOPIK', slug: 'beca-gks-corea-del-sur-para-colombianos' },

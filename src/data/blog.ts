@@ -294,7 +294,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>El coreano tarda entre 1.000 y 1.500 horas para alcanzar fluidez conversacional (clasificado por el FSI como idioma de Categoría IV para angloparlantes; para hispanohablantes es similar). Son entre 2 y 4 años con estudio diario moderado.</p>
 <p>Lo que separa a los estudiantes que llegan del TOPIK II a los que abandonan en el mes 3 no es talento lingüístico: es la conexión con el idioma. Los que más avanzan son los que tienen una razón personal fuerte —una serie, un viaje planeado, un amigo coreano, un sueño de estudiar allá.</p>
 <p>Encuentra tu razón. El idioma vendrá solo si la razón es real. Si quieres empezar con estructura desde el primer día, conoce nuestro <a href="/clases-de-coreano">método de coreano para hispanohablantes</a> — diseñado específicamente para este camino.</p>
-<p>Lee también: <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a> y <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos: requisitos y rol del TOPIK</a>.</p>
+<p>Lee también: <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a>, <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a> y <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos: requisitos y rol del TOPIK</a>.</p>
     `,
   },
 
@@ -2207,7 +2207,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>¿Vale la pena el Goethe para conseguir trabajo en Alemania?</h2>
 <p>Sí — pero con matices. Para la mayoría de visas de trabajo en Alemania (Fachkräfteeinwanderungsgesetz, la ley de inmigración de trabajadores calificados), el nivel mínimo recomendado es <strong>B1</strong> para ocupaciones con contacto con el público, y <strong>B2 o C1</strong> para trabajos en salud, educación o áreas reguladas. El certificado Goethe es la forma más reconocida de demostrar ese nivel.</p>
 <p>Para enfermeras y médicos colombianos que quieren emigrar a Alemania, el B2 del Goethe es frecuentemente un requisito explícito de los estados federales (Bundesländer) para la homologación del título.</p>
-<p>Lee también: <a href="/blog/ingles-para-enfermeras-colombianas">Inglés para enfermeras colombianas que quieren trabajar en el exterior</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-enfermeras-colombianas">Inglés para enfermeras colombianas que quieren trabajar en el exterior</a>. Si también estás explorando certificaciones de otros idiomas: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF (francés)</a>, <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI (italiano)</a> y <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras (portugués)</a>.</p>
     `,
   },
 
@@ -2259,7 +2259,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>Celpe-Bras vs otros certificados de portugués</h2>
 <p>Existen otros certificados (CAPLE de Portugal, DEPLE), pero el Celpe-Bras es el único reconocido en Brasil para los propósitos más comunes (universidades, homologaciones). Si tu objetivo es estudiar o trabajar en Portugal, el CAPLE puede ser más relevante. Si es Brasil, el Celpe-Bras es el estándar.</p>
 <p>En WeLearn preparamos para el Celpe-Bras con enfoque en producción real: escritura, conversación y materiales auténticos. <a href="/precios">Consulta nuestros planes</a> o <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20Celpe-Bras%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
-<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía de preparación para colombianos</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
+<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía de preparación para colombianos</a>, <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: certifica tu italiano desde Colombia</a>.</p>
     `,
   },
 
@@ -2465,7 +2465,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   <li>Algunas empresas multinacionales francesas en Colombia (Total, BNP Paribas, Renault) lo valoran para perfiles bilingües</li>
 </ul>
 <p>En WeLearn preparamos para todos los niveles del DELF con material actualizado y práctica de producción oral y escrita con retroalimentación real. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para empezar con una diagnóstico gratuito.</p>
-<p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse desde Colombia</a>.</p>
+<p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>, <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse desde Colombia</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: certifica tu italiano desde Colombia</a>.</p>
     `,
   },
   // ── Article 31 ─────────────────────────────────────────────────────────────
@@ -2648,7 +2648,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>WeLearn y el coreano de nivel intermedio</h2>
 <p>En WeLearn acompañamos estudiantes desde cero hasta preparación para TOPIK II con clases personalizadas y material propio. Si ya tienes TOPIK I y quieres dar el siguiente paso, <a href="https://wa.me/573005004253?text=Hola%2C%20tengo%20TOPIK%20I%20y%20quiero%20prepararme%20para%20TOPIK%20II%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
-<p>Lee también: <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave y cuál presentar</a> y <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: guía de preparación para principiantes</a>.</p>
+<p>Lee también: <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave y cuál presentar</a>, <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: guía de preparación para principiantes</a> y <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a>.</p>
     `,
   },
 
@@ -2987,6 +2987,184 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 <p>Para dar el salto de Band 6 a Band 7 en Speaking, la retroalimentación de un hablante externo — que identifica tus errores sistemáticos — es el atajo más eficiente que existe. En WeLearn incluimos práctica de Speaking con retroalimentación real en cada sesión. Puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de IELTS</a> o hacer un simulacro de Speaking gratuito para tener una línea base.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía completa de preparación</a> y <a href="/blog/como-mejorar-el-ingles-hablado">Por qué te bloqueas al hablar inglés y cómo superarlo</a>.</p>
+    `,
+  },
+  // ── Article 38 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'cils-celi-certificacion-italiano-colombia',
+    title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia',
+    description:
+      'Todo sobre el CILS y el CELI en Colombia: qué nivel necesitas, dónde presentarlo, cuánto cuesta y cómo prepararte para aprobar la certificación oficial de italiano.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'Italiano',
+    tags: ['CILS', 'CELI', 'italiano', 'certificado de italiano', 'Colombia', 'examen de italiano'],
+    body: `
+<h2>¿Qué son el CILS y el CELI?</h2>
+<p>El <strong>CILS</strong> (Certificazione di Italiano come Lingua Straniera) y el <strong>CELI</strong> (Certificato di Conoscenza della Lingua Italiana) son las dos certificaciones oficiales de italiano más reconocidas internacionalmente. Aunque existen otras (PLIDA, IT), el CILS y el CELI son los preferidos para estudios en Italia, solicitudes de ciudadanía y perfiles profesionales en empresas italianas.</p>
+<ul>
+  <li>El <strong>CILS</strong> es emitido por la <strong>Universidad para Extranjeros de Siena</strong>, fundada en 1917. Es el más común en Colombia.</li>
+  <li>El <strong>CELI</strong> es emitido por la <strong>Universidad para Extranjeros de Perugia</strong>, con más de un siglo de tradición. Tiene alta validez para solicitudes de ciudadanía italiana.</li>
+</ul>
+
+<table>
+  <thead><tr><th>Certificación</th><th>Nivel MCER</th><th>Uso principal</th></tr></thead>
+  <tbody>
+    <tr><td>CILS A1 / CELI Accesso</td><td>A1</td><td>Conocimiento básico; inicio de integración</td></tr>
+    <tr><td>CILS A2 / CELI 1</td><td>A2–B1</td><td>Visa de estudio; integración escolar</td></tr>
+    <tr><td>CILS UNO / CELI 2</td><td>B1–B2</td><td>Acceso universitario; ciudadanía italiana</td></tr>
+    <tr><td>CILS DUE / CELI 3</td><td>B2–C1</td><td>Posgrado en Italia; empresas italianas</td></tr>
+    <tr><td>CILS TRE / CELI 4</td><td>C1</td><td>Docencia del italiano; programas avanzados</td></tr>
+    <tr><td>CILS QUATTRO / CELI 5</td><td>C2</td><td>Dominio nativo; carreras académicas</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Dónde presentarlo en Colombia?</h2>
+<p>En Colombia, el CILS y el CELI se presentan principalmente a través del <strong>Instituto Italiano di Cultura</strong> en Bogotá. Algunos centros universitarios con alianzas con instituciones italianas también ofrecen sedes de examen.</p>
+<p>Los exámenes se aplican <strong>dos veces al año</strong>: generalmente en <strong>junio y diciembre</strong>. Las inscripciones cierran con 6–8 semanas de anticipación. El costo en Colombia oscila entre <strong>$200.000 y $450.000 COP</strong> según el nivel y el centro.</p>
+<p>Para confirmar fechas y costos actualizados, consulta directamente con el Instituto Italiano di Cultura en Bogotá o busca centros aliados en tu ciudad.</p>
+
+<h2>Estructura del examen CILS</h2>
+<p>El CILS evalúa cinco competencias separadas. La nota mínima para aprobar es diferente por competencia, y no se puede compensar una reprobada con una aprobada:</p>
+<ul>
+  <li><strong>Ascolto (Listening):</strong> grabaciones de conversaciones cotidianas, entrevistas, noticias. El número de audios y preguntas aumenta según el nivel.</li>
+  <li><strong>Analisi delle strutture di comunicazione (Gramática):</strong> habilidad de reconocer estructuras correctas e incompletas. Es la competencia que más diferencia a los candidatos en niveles intermedios.</li>
+  <li><strong>Lettura (Reading):</strong> textos auténticos de periódicos, páginas web, folletos. Se evalúa comprensión global y detallada.</li>
+  <li><strong>Scrittura (Writing):</strong> producción escrita — cartas, correos, descripciones, textos argumentativos según el nivel.</li>
+  <li><strong>Parlato (Speaking):</strong> monólogo sobre imágenes o situaciones + interacción con el examinador.</li>
+</ul>
+<p>A partir del CILS UNO (B1–B2) y el CELI 2 (B2), el examen se vuelve notoriamente más exigente. La transición de A2 a B1 en italiano es el salto que más candidatos no logran en el primer intento.</p>
+
+<h2>CILS para ciudadanía italiana: ¿qué nivel necesitas?</h2>
+<p>Colombia tiene una de las comunidades de descendientes italianos más grandes de América Latina. Miles de colombianos buscan cada año la ciudadanía italiana por descendencia (jus sanguinis). El requisito de idioma varía según la vía:</p>
+<ul>
+  <li><strong>Ciudadanía por residencia (10 años legales en Italia):</strong> se requiere el nivel <strong>B1</strong> — equivalente al CILS UNO o CELI 2.</li>
+  <li><strong>Ciudadanía por matrimonio:</strong> también B1 — CILS UNO o CELI 2.</li>
+  <li><strong>Ciudadanía por descendencia (jus sanguinis):</strong> en la mayoría de los casos no se exige examen de idioma, pero demostrarlo refuerza el expediente y puede acelerar trámites en el consulado.</li>
+</ul>
+<p>Si tu objetivo es la ciudadanía por residencia o matrimonio, el CILS UNO B1 es el examen objetivo. Es exigente pero alcanzable en 12–18 meses con un punto de partida de cero y 5+ horas semanales de estudio.</p>
+
+<h2>Diferencias clave entre CILS y CELI</h2>
+<p>Ambos son válidos e igualmente reconocidos. Las diferencias prácticas son:</p>
+<ul>
+  <li><strong>Estructura:</strong> el CILS tiene 5 módulos independientes (puedes presentar uno a la vez); el CELI es un examen integrado. Si solo necesitas certificar una habilidad específica, el CILS da más flexibilidad.</li>
+  <li><strong>Reconocimiento para ciudadanía:</strong> ambos son aceptados por el Ministerio del Interior italiano, pero el CELI de Perugia tiene larga tradición en trámites consulares en Colombia.</li>
+  <li><strong>Disponibilidad:</strong> el CILS suele tener más centros de aplicación y más fechas disponibles a nivel global.</li>
+</ul>
+
+<h2>Cuánto tiempo de preparación necesitas</h2>
+<p>La ventaja del italiano para hispanohablantes es enorme: el léxico comparte más del 80% de la raíz con el español. Esto acelera especialmente la comprensión lectora y el vocabulario pasivo. Sin embargo, la gramática (subjuntivo, congiuntivo, tiempos compuestos) y la pronunciación necesitan práctica deliberada.</p>
+<ul>
+  <li><strong>A2 desde cero:</strong> 3–5 meses con 4–5 horas semanales</li>
+  <li><strong>B1 desde A2:</strong> 5–8 meses con 5–6 horas semanales</li>
+  <li><strong>B2 desde B1:</strong> 8–12 meses con 5–7 horas semanales</li>
+  <li><strong>C1 desde B2:</strong> 12–18 meses con 6–8 horas semanales</li>
+</ul>
+<p>Los candidatos que ya hablan español y otro idioma románico (francés, portugués) pueden reducir estos tiempos en un 20–30% para los niveles A y B1.</p>
+
+<h2>Errores frecuentes en el examen</h2>
+<h3>Confundir el congiuntivo con el indicativo</h3>
+<p>El italiano usa el congiuntivo (subjuntivo) en contextos donde el español lo usa y en algunos donde no lo esperamos. En CILS/CELI a partir de B1, el uso correcto del congiuntivo en escritura y Speaking separa los Band medios de los altos.</p>
+
+<h3>La pronunciación de la doble consonante</h3>
+<p>El italiano distingue entre "pala" (pala) y "palla" (pelota), entre "nono" (noveno) y "nonno" (abuelo). La doble consonante tiene un impacto fonológico real, y los evaluadores lo detectan. Practica en voz alta desde el principio.</p>
+
+<h3>No practicar el Parlato (Speaking) con tiempo</h3>
+<p>Muchos candidatos dedican el 90% del tiempo a lectura y gramática y descuidan el componente oral. El Parlato representa una fracción importante de la nota total y, a diferencia de la gramática, no puede "recuperarse" con memorizaciones de último minuto. Practica hablar en italiano desde la semana 1.</p>
+
+<h2>Plan de preparación para el CILS UNO (B1–B2)</h2>
+<p>El CILS UNO es el nivel más solicitado en Colombia. Este es un plan de 16 semanas:</p>
+<ul>
+  <li><strong>Semanas 1–4:</strong> vocabulario temático (viaje, trabajo, hogar, salud, compras). 20 palabras diarias con frases completas. Practica los tiempos verbales más frecuentes: presente, passato prossimo, imperfetto.</li>
+  <li><strong>Semanas 5–8:</strong> lectura diaria de textos en italiano (Repubblica.it, Corriere della Sera edición simplificada). Identifica estructuras que no entiendes y agrégalas a tu diario de errores.</li>
+  <li><strong>Semanas 9–12:</strong> producción escrita 3 veces por semana. Una carta formal, un correo informal y una descripción. Busca retroalimentación de hablante nativo o tutor.</li>
+  <li><strong>Semanas 13–16:</strong> simulacros completos del CILS UNO cronometrados. Identifica tu competencia más débil y dedica el 50% del tiempo restante a ella.</li>
+</ul>
+
+<h2>WeLearn y la certificación de italiano</h2>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados, material actualizado y práctica oral con retroalimentación real en cada sesión. Tanto si partes de cero como si ya tienes un A2 consolidado, un diagnóstico gratuito con tu tutor definirá el plan exacto para tu nivel y objetivo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20CILS%20o%20CELI%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> y empezamos.</p>
+<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: guía completa para colombianos</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
+    `,
+  },
+  // ── Article 39 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-coreano-online-colombia',
+    title: 'Clases de coreano online en Colombia: guía para elegir bien y no perder tiempo',
+    description:
+      'Cómo elegir clases de coreano online en Colombia: qué diferencia una academia seria de un curso genérico, qué preguntar antes de pagar y cómo saber si el método funciona para tu objetivo.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Coreano',
+    tags: ['clases de coreano online Colombia', 'academia de coreano Colombia', 'aprender coreano Colombia', 'coreano Bucaramanga', 'TOPIK preparación'],
+    body: `
+<h2>La fiebre del coreano en Colombia: demanda real, oferta irregular</h2>
+<p>El coreano es el idioma de más rápido crecimiento entre los hispanohablantes en los últimos cinco años. El efecto de los K-dramas, BTS y la cultura pop coreana en Colombia ha creado una demanda genuina y masiva de clases. El problema es que la oferta no creció al mismo ritmo ni con la misma calidad: hay tutores en redes sociales, grupos de WhatsApp con "clases gratis", cursos de YouTube, aplicaciones y academias formales — y la diferencia de resultados entre ellos es enorme.</p>
+<p>Esta guía te da los criterios para evaluar cualquier opción de coreano online y encontrar la que realmente te lleve a donde quieres.</p>
+
+<h2>Primero: define qué quieres lograr</h2>
+<p>El coreano es un idioma exigente — y el camino correcto depende completamente de tu objetivo:</p>
+<ul>
+  <li><strong>Entender K-dramas y canciones sin subtítulos:</strong> foco en comprensión auditiva y vocabulario coloquial. No necesitas gramática formal desde el inicio.</li>
+  <li><strong>Presentar el TOPIK I o II:</strong> necesitas preparación estructurada con simulacros, vocabulario académico y práctica de escucha y lectura formal.</li>
+  <li><strong>Aplicar a la beca GKS (beca del gobierno coreano):</strong> el TOPIK II nivel 3–4 es el requisito mínimo para la mayoría de programas. Necesitas preparación seria y cronometrada.</li>
+  <li><strong>Trabajar en una empresa coreana o en Corea del Sur:</strong> foco en coreano de negocios y escritura formal (존댓말, nivel honorífico).</li>
+  <li><strong>Vivir en Corea del Sur:</strong> comunicación cotidiana, Hangeul funcional, comprensión de señales y menús — nivel conversacional.</li>
+</ul>
+<p>Cada objetivo exige un enfoque diferente. Una academia que promete "enseñarte coreano" sin preguntarte primero cuál es tu meta está priorizando la inscripción sobre tu resultado.</p>
+
+<h2>Lo que realmente diferencia una buena clase de coreano</h2>
+
+<h3>1. Hangeul en contexto, no como lista</h3>
+<p>El 한글 (Hangeul, el alfabeto coreano) se puede aprender en 2 horas si se aborda correctamente — como bloques de sílabas, no como letras individuales. Una buena clase te enseña a leer y escribir Hangeul en los primeros días, no después de semanas. Si un curso en 2026 todavía te enseña coreano en romanización (letras latinas como "annyeonghaseyo"), está atrasado pedagógicamente.</p>
+
+<h3>2. Las partículas y el orden de la oración desde el inicio</h3>
+<p>El coreano tiene una estructura gramatical radicalmente diferente al español: el verbo va al final (SOV en lugar de SVO), y las funciones gramaticales se marcan con partículas (이/가, 은/는, 을/를). Un programa que te enseña frases sueltas sin explicar cómo funciona la gramática produce estudiantes que memorizan expresiones pero no pueden construir oraciones propias. Después de 2–3 meses deberías poder crear oraciones básicas, no solo repetir frases.</p>
+
+<h3>3. Práctica de Speaking con retroalimentación</h3>
+<p>El coreano tiene niveles de formalidad (반말 vs. 존댓말) que no existen en español. Hablar con el nivel incorrecto en el contexto incorrecto es equivalente a tutear a tu jefe en una entrevista de trabajo — funciona, pero genera una impresión negativa. Un buen programa incluye práctica oral con feedback específico sobre el nivel de habla que usas, no solo sobre pronunciación.</p>
+
+<h3>4. Preparación específica para TOPIK si ese es tu objetivo</h3>
+<p>El TOPIK (Test of Proficiency in Korean) tiene un formato muy específico que difiere del coreano conversacional: textos formales, vocabulario académico, audios de noticias. Si tu meta es el TOPIK, necesitas simulacros del examen, no solo clases de conversación. Pregunta directamente: ¿el programa incluye simulacros del TOPIK? ¿Cuántos? ¿Con retroalimentación?</p>
+
+<h2>Señales de alerta al elegir un curso de coreano</h2>
+<ul>
+  <li><strong>Clases 100% por videos grabados sin interacción:</strong> el coreano es un idioma tonal y altamente contextual. Sin interacción con un hablante, no desarrollas producción oral ni comprensión de velocidad real.</li>
+  <li><strong>Grupos de más de 10 personas para niveles iniciales:</strong> los primeros meses de coreano requieren mucha corrección individual — el sistema de escritura, la pronunciación y la gramática tienen errores específicos que solo se corrigen con atención personalizada.</li>
+  <li><strong>Solo uso de romanización:</strong> si el curso no te enseña Hangeul en las primeras sesiones, el progreso a niveles intermedios será muy lento.</li>
+  <li><strong>Sin tutor con formación en coreano:</strong> ser fanático de los K-dramas no es credencial para enseñar. Pregunta si el tutor tiene formación formal en coreano (estudios universitarios, experiencia viviendo en Corea, certificaciones como TOPIK 5–6).</li>
+  <li><strong>Promesas de "coreano fluido en 6 meses":</strong> el coreano toma más tiempo que el francés o el italiano para hispanohablantes. 6 meses con dedicación seria te llevan a un nivel conversacional sólido — no a la fluidez. Las promesas irreales son señal de que venden inscripciones, no resultados.</li>
+</ul>
+
+<h2>Las preguntas clave antes de inscribirte</h2>
+<ol>
+  <li>¿El programa incluye una evaluación de nivel antes de empezar?</li>
+  <li>¿Cuándo empiezan a enseñar Hangeul y cuánto tardan en completarlo?</li>
+  <li>¿El tutor tiene experiencia certificable con el idioma coreano?</li>
+  <li>¿Las clases incluyen práctica oral con retroalimentación?</li>
+  <li>¿El programa tiene preparación específica para TOPIK si ese es mi objetivo?</li>
+  <li>¿Puedo ver una clase de muestra antes de pagar?</li>
+</ol>
+
+<h2>¿Cuánto tiempo necesitas para alcanzar cada nivel?</h2>
+<p>El coreano es clasificado por el Instituto de Servicio Exterior de EE.UU. como un idioma de categoría IV — los más difíciles para anglohablantes. Para hispanohablantes, la curva es similar: exige más tiempo que los idiomas romances pero tiene ventajas en vocabulario (el coreano moderno tiene muchos préstamos del español en áreas como comida y cultura).</p>
+
+<table>
+  <thead><tr><th>Nivel</th><th>Horas de estudio</th><th>Equivalente TOPIK</th><th>Qué puedes hacer</th></tr></thead>
+  <tbody>
+    <tr><td>A1 (Principiante)</td><td>80–120 h</td><td>—</td><td>Saludos, números, leer Hangeul</td></tr>
+    <tr><td>A2</td><td>200–300 h</td><td>TOPIK I Nivel 1</td><td>Conversación básica, pedir en restaurantes, dar indicaciones</td></tr>
+    <tr><td>B1</td><td>400–600 h</td><td>TOPIK I Nivel 2</td><td>Conversación cotidiana, entender dramas con apoyo</td></tr>
+    <tr><td>B2</td><td>700–1.000 h</td><td>TOPIK II Nivel 3–4</td><td>Conversación fluida, textos académicos sencillos, beca GKS</td></tr>
+    <tr><td>C1</td><td>1.200–1.800 h</td><td>TOPIK II Nivel 5–6</td><td>Dominio avanzado, trabajo en empresas coreanas</td></tr>
+  </tbody>
+</table>
+
+<p>Con 5–7 horas semanales de estudio activo (clases + práctica independiente), puedes alcanzar TOPIK I Nivel 2 en 12–18 meses partiendo de cero.</p>
+
+<h2>WeLearn y las clases de coreano online</h2>
+<p>En WeLearn preparamos para coreano con método estructurado desde Hangeul hasta TOPIK II. Las clases son online 1:1, empezamos con una sesión de diagnóstico gratuita que evalúa tu nivel real y define tu ruta — ya sea conversacional, TOPIK o beca GKS. Nuestros tutores tienen formación específica en coreano y experiencia con estudiantes colombianos que aprenden el idioma en contexto hispanohablante.</p>
+<p>Si quieres saber si WeLearn es la opción correcta para ti, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20coreano%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-coreano">página de clases de coreano</a> para ver el plan completo.</p>
+<p>Lee también: <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero en Colombia: la guía completa</a> y <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a>.</p>
     `,
   },
 ];

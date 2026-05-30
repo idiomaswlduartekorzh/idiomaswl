@@ -253,6 +253,21 @@ const DAILY_TIPS = [
   { emoji: '✍️', tag: 'ICFES', text: 'En inglés ICFES, las preguntas de "idea principal" siempre están en el título o el primer párrafo. No leas todo el texto primero.' },
   { emoji: '🌱', tag: 'Constancia', text: '15 minutos diarios superan a 3 horas los sábados. El idioma se aprende en acumulación, no en explosiones. Practica hoy.' },
   { emoji: '🇩🇪', tag: 'Alemán', text: 'Para el Goethe, el vocabulario temático es clave: viajes, trabajo, hogar, salud. Aprende los sustantivos siempre con su artículo (der/die/das).' },
+  // Tips 15–28
+  { emoji: '🔍', tag: 'IELTS Reading', text: 'Para True/False/Not Given: si el texto no menciona la información, la respuesta es "Not Given" — nunca uses lógica externa ni suposiciones.' },
+  { emoji: '🎤', tag: 'IELTS Speaking', text: 'En la Part 2 (cue card), usa los 1 minuto de preparación para escribir 3 palabras clave — no oraciones completas. Habla desde esas anclas.' },
+  { emoji: '🇰🇷', tag: 'TOPIK', text: 'Para el TOPIK I, el vocabulario de los textos tipo "aviso" y "anuncio" se repite mucho. Estudia señales de transporte, menús y carteles.' },
+  { emoji: '🇫🇷', tag: 'DELF', text: 'En la producción escrita del DELF, el corrector evalúa respeto del tipo de texto (carta, artículo, forum). Asegúrate de usar la forma correcta desde la primera línea.' },
+  { emoji: '💬', tag: 'Output', text: 'Forzarte a producir en el idioma (hablar, escribir) consolida más que solo consumir (leer, escuchar). Cada semana escribe al menos 1 párrafo en el idioma que aprendes.' },
+  { emoji: '🏛️', tag: 'Memoria', text: 'Usa el "palacio de la memoria": asocia palabras nuevas con lugares que conoces. Cuando repases el recorrido mental, las palabras vuelven solas.' },
+  { emoji: '🔗', tag: 'Phrasal Verbs', text: 'Los phrasal verbs se aprenden en bloques temáticos: "look up/look into/look out/look for" juntos. El cerebro retiene mejor cuando hay patrón.' },
+  { emoji: '📚', tag: 'Academic', text: 'El Academic Word List (AWL) tiene 570 familias de palabras que cubren el 10% del vocabulario académico. Dominar 200 de ellas sube tu IELTS Reading un nivel.' },
+  { emoji: '🔄', tag: 'Gramática', text: 'No memores reglas gramaticales: memoriza patrones en oraciones reales. "I should have studied" vs "I would have studied" — aprende los contextos, no las fórmulas.' },
+  { emoji: '🇮🇹', tag: 'Italiano', text: 'Para el CILS, el italiano comparte el 80% del léxico con el español. Aprovecha eso, pero cuidado con los "falsos amigos": "burro" en italiano es mantequilla, no burro.' },
+  { emoji: '🎙️', tag: 'Podcasts', text: 'Escucha el mismo episodio de podcast dos veces: la primera vez para el mensaje general, la segunda identificando conectores (however, therefore, in contrast). Doblas el aprendizaje.' },
+  { emoji: '📓', tag: 'Errores', text: 'Lleva un "diario de errores": cada vez que te corrijan, escribe la versión incorrecta y la correcta. Releerlo cada semana evita cometer el mismo error dos veces.' },
+  { emoji: '🇧🇷', tag: 'Celpe-Bras', text: 'El Celpe-Bras evalúa portugués en situaciones reales (describir un gráfico, dar instrucciones). Practica con textos auténticos, no con gramática aislada.' },
+  { emoji: '🗓️', tag: 'Planificación', text: 'Divide tu preparación en semanas: 1–4 vocabulario, 5–8 habilidades débiles, 9–12 simulacros cronometrados. Un plan escrito triplica las probabilidades de alcanzar el objetivo.' },
 ]
 
 function getDailyTip() {
@@ -332,6 +347,39 @@ const WEEKLY_CHALLENGES: Challenge[] = [
     options: ['2', '3', '4', '5'],
     correct: 2,
     explanation: 'IELTS evalúa 4 módulos: Listening, Reading, Writing y Speaking. La duración total es aproximadamente 2 horas y 45 minutos.',
+  },
+  {
+    week: 9, tag: 'Coreano',
+    question: '¿Qué partícula coreana se usa para marcar el objeto directo de un verbo?',
+    options: ['이/가 (i/ga)', '은/는 (eun/neun)', '을/를 (eul/reul)', '에서 (eseo)'],
+    correct: 2,
+    explanation: '을/를 marca el objeto directo: "사과를 먹어요" (como manzana). 이/가 es el sujeto, 은/는 es el tema, y 에서 indica lugar donde ocurre la acción.',
+  },
+  {
+    week: 10, tag: 'IELTS Reading',
+    question: 'En IELTS Reading, ¿qué significa la respuesta "Not Given"?',
+    options: [
+      'La información en el texto es falsa.',
+      'La pregunta está mal formulada.',
+      'El texto no menciona esa información.',
+      'La respuesta es correcta pero incompleta.',
+    ],
+    correct: 2,
+    explanation: '"Not Given" significa que el texto simplemente no incluye esa información — ni la confirma ni la contradice. No uses conocimiento externo para decidir.',
+  },
+  {
+    week: 11, tag: 'ICFES',
+    question: '¿Qué puntaje de inglés en el ICFES corresponde al nivel B+ (nivel 4)?',
+    options: ['Menos de 50 puntos', '50–69 puntos', '70–84 puntos', '85–100 puntos'],
+    correct: 2,
+    explanation: 'En el ICFES, el nivel B+ (nivel 4) corresponde a puntajes entre 70 y 84. Nivel A- (1) es 0–30, A (2) es 31–49, A+ (3) es 50–69, B+ (4) es 70–84, B+ alto (5) es 85–100.',
+  },
+  {
+    week: 12, tag: 'DELF',
+    question: '¿En qué nivel del DELF se exige producción oral y escrita autónoma en francés?',
+    options: ['DELF A1', 'DELF A2', 'DELF B1', 'DELF B2'],
+    correct: 3,
+    explanation: 'El DELF B2 exige expresión oral y escrita verdaderamente autónoma: argumentación desarrollada, comprensión de textos complejos y discurso coherente sin apoyo.',
   },
 ]
 
