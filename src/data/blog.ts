@@ -6132,6 +6132,408 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/topik-ii-como-subir-de-nivel">TOPIK II: cómo pasar del nivel 2 al nivel 4</a> y <a href="/blog/topik-i-preparacion-guia-para-principiantes">TOPIK I: guía para principiantes</a>.</p>
     `,
   },
+  // ── ARTICLE 85 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-de-banda-6-a-banda-7-que-cambia',
+    title: 'IELTS de banda 6 a banda 7: qué cambia y cómo cruzar esa barrera',
+    description: 'La diferencia entre banda 6 y banda 7 en el IELTS es más estratégica que lingüística. Esta guía explica exactamente qué cambia por módulo y cómo lograrlo.',
+    category: 'IELTS',
+    tags: ['IELTS banda 7', 'de banda 6 a 7 IELTS', 'mejorar IELTS', 'IELTS preparación avanzada'],
+    date: '2026-05-30',
+    readTime: 8,
+    body: `
+<p>Banda 6 en el IELTS está bien. Es competente, es suficiente para muchos programas. Pero muchas universidades, colegiaturas de posgrado y procesos de migración piden banda 7 — y la distancia entre 6 y 7 es de las más frustrantes de cruzar. No porque el idioma sea tan diferente, sino porque lo que se evalúa cambia de forma sutil.</p>
+
+<h2>Por qué banda 6 → 7 es diferente a 5 → 6</h2>
+<p>De banda 5 a 6, el progreso es fundamentalmente de cantidad: más vocabulario, menos errores gramaticales, mejor comprensión general. De banda 6 a 7, el progreso es de calidad y precisión: el examinador ya sabe que puedes comunicarte. Ahora evalúa si lo haces con <em>rango, sofisticación y consistencia</em>.</p>
+
+<h2>Reading: de 6 a 7</h2>
+<p>En banda 6, el estudiante entiende las ideas principales pero comete errores en preguntas de detalle o inferencia.</p>
+<ul>
+  <li><strong>Error típico de banda 6</strong>: confundir True/False/NG; elegir la respuesta "más cercana" en vez de la exacta; perder tiempo en textos difíciles sin gestionar el tiempo.</li>
+  <li><strong>Cómo llegar a 7</strong>: practicar con textos de nivel C1 (Scientific American, The Economist). Trabajar la localización de información por párrafo antes de leer las preguntas. Distinguir entre paráfrasis exacta y paráfrasis aproximada.</li>
+</ul>
+<p>Para banda 7 en Reading necesitas aproximadamente 35–37 respuestas correctas de 40. Para banda 6, 29–32.</p>
+
+<h2>Listening: de 6 a 7</h2>
+<p>Banda 6 en Listening generalmente equivale a 23–25 respuestas correctas de 40. Banda 7 requiere 30+.</p>
+<ul>
+  <li><strong>Error típico de banda 6</strong>: perder preguntas por distracción (el hablante dice algo antes de la respuesta y el estudiante lo escribe sin esperar); errores de ortografía que anulan la respuesta; no anticipar la respuesta antes de escuchar.</li>
+  <li><strong>Cómo llegar a 7</strong>: practicar con audios de Sección 4 (monólogos académicos) todos los días. Leer las preguntas completas antes de cada sección. Practicar spelling de palabras técnicas en inglés.</li>
+</ul>
+
+<h2>Writing: de 6 a 7 (el cambio más difícil)</h2>
+<p>En Writing, la diferencia entre 6 y 7 está en dos criterios: Lexical Resource y Grammatical Range & Accuracy.</p>
+<table>
+  <thead><tr><th>Criterio</th><th>Banda 6</th><th>Banda 7</th></tr></thead>
+  <tbody>
+    <tr><td>Lexical Resource</td><td>Vocabulario adecuado con algunos errores. Poca variación de sinónimos.</td><td>Rango amplio de vocabulario, uso sofisticado, colocaciones naturales, errores ocasionales.</td></tr>
+    <tr><td>Grammar</td><td>Mezcla de estructuras simples y complejas. Errores que a veces afectan la comunicación.</td><td>Variedad de estructuras complejas usadas con precisión. Errores no afectan la comunicación.</td></tr>
+    <tr><td>Task Achievement (T2)</td><td>La posición es clara pero el desarrollo no siempre es consistente.</td><td>Posición clara y consistente, bien apoyada con ejemplos y argumentos.</td></tr>
+  </tbody>
+</table>
+<p><strong>Lo que más sube el Writing de 6 a 7</strong>: (1) eliminar errores de concordancia verbal y artículos. (2) Introducir estructuras de cláusula relativa, condicionales mixtas, y subjuntivo. (3) Usar colocaciones en vez de palabras simples ("conduct research" en vez de "do research"; "address an issue" en vez de "talk about a problem").</p>
+
+<h2>Speaking: de 6 a 7</h2>
+<ul>
+  <li><strong>En banda 6</strong>: el estudiante se comunica efectivamente pero con pausas notables, errores gramaticales frecuentes y vocabulario limitado bajo presión.</li>
+  <li><strong>En banda 7</strong>: habla con fluidez, extiende sus ideas naturalmente, usa vocabulario sofisticado (aunque con errores ocasionales), y estructura sus respuestas de forma coherente.</li>
+  <li><strong>El cambio más rápido</strong>: practicar "extending answers." Si el examinador pregunta "Do you prefer cities or the countryside?", la respuesta de banda 6 es "I prefer cities because they have more opportunities." La de banda 7 desarrolla la idea con ejemplos, matices y una perspectiva más elaborada.</li>
+</ul>
+
+<h2>Estrategia de 8 semanas para banda 7</h2>
+<table>
+  <thead><tr><th>Semanas</th><th>Prioridad</th></tr></thead>
+  <tbody>
+    <tr><td>1–2</td><td>Diagnóstico: haz un examen completo bajo condiciones reales. Identifica tu banda actual por módulo. Prioriza el módulo más débil.</td></tr>
+    <tr><td>3–4</td><td>Writing: escribe 1 Task 1 y 1 Task 2 por día. Pide corrección detallada de un tutor que conozca los criterios IELTS.</td></tr>
+    <tr><td>5–6</td><td>Reading + Listening: 2 simulacros por semana. Analiza cada error: ¿fue de comprensión o de estrategia?</td></tr>
+    <tr><td>7–8</td><td>Speaking: grabaciones diarias. 1 simulacro semanal con tutor. Foco en extender respuestas y conectores de discurso.</td></tr>
+  </tbody>
+</table>
+
+<h2>WeLearn y el salto a banda 7</h2>
+<p>Preparamos a candidatos que ya tienen banda 6 y necesitan llegar a 7 (o 7.5) con un plan específico por módulo. No es el mismo programa que para alguien en banda 5 — el enfoque es diferente. <a href="https://wa.me/573005004253?text=Hola%2C%20tengo%20IELTS%20banda%206%20y%20necesito%20llegar%20a%207.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Cuéntanos tu situación por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ielts-bandas-0-9-que-significa-cada-puntaje">Bandas IELTS 0–9: qué significa cada puntaje</a> y <a href="/blog/ielts-writing-task-2-guia-completa-para-principiantes">IELTS Writing Task 2: guía completa</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 86 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-tecnico-para-programadores-y-desarrolladores',
+    title: 'Inglés técnico para programadores: vocabulario, documentación y reuniones en inglés',
+    description: 'Guía de inglés técnico para desarrolladores de software colombianos: vocabulario de programación, cómo leer documentación, reuniones en inglés y entrevistas técnicas.',
+    category: 'Inglés',
+    tags: ['inglés programadores', 'inglés técnico desarrollo', 'documentación inglés', 'inglés TI'],
+    date: '2026-05-31',
+    readTime: 8,
+    body: `
+<p>La industria del software en Colombia está más globalizada que nunca. Los equipos son remotos e internacionales, la documentación es en inglés, las entrevistas técnicas son en inglés, y las reuniones de daily standups a veces también. Esta guía es para el desarrollador que ya puede comunicarse en inglés pero quiere sonar natural en contexto técnico.</p>
+
+<h2>El inglés técnico: qué es diferente</h2>
+<p>El inglés de programación no es simplemente inglés + terminología técnica. Tiene sus propias convenciones:</p>
+<ul>
+  <li><strong>Verbos de acción para código</strong>: "implement," "refactor," "debug," "deploy," "migrate," "scaffold," "parse," "serialize."</li>
+  <li><strong>Voz pasiva frecuente</strong>: "The function is called when...", "The data is passed to...", "The error is thrown if..."</li>
+  <li><strong>Formas comprimidas</strong>: "PR" (pull request), "CI/CD," "async/await," "CRUD," "API endpoint," "middleware."</li>
+</ul>
+
+<h2>Vocabulario esencial por contexto</h2>
+<p><strong>En code review / pull requests:</strong></p>
+<ul>
+  <li>"This could be simplified by..." / "Consider extracting this into a separate function."</li>
+  <li>"LGTM" (Looks Good To Me) / "Nit: [pequeño detalle no bloqueante]"</li>
+  <li>"Can you add a test for this edge case?" / "This might cause a race condition."</li>
+  <li>"I'd suggest renaming this variable to be more descriptive."</li>
+</ul>
+
+<p><strong>En reuniones de sprint / daily standup:</strong></p>
+<ul>
+  <li>"Yesterday I worked on / finished / started..." (pasado simple, no perfecto)</li>
+  <li>"Today I'm going to / planning to / working on..."</li>
+  <li>"I'm blocked by..." / "I need help with..."</li>
+  <li>"Let's take this offline" (hablar después, fuera de la reunión)</li>
+  <li>"I'll loop you in" (te incluiré en la comunicación)</li>
+  <li>"Can we sync on this later?" (reunirnos brevemente sobre este tema)</li>
+</ul>
+
+<p><strong>En comunicación de incidentes:</strong></p>
+<ul>
+  <li>"We're seeing elevated error rates on [service]."</li>
+  <li>"The root cause was a misconfigured environment variable."</li>
+  <li>"We've rolled back to the previous version."</li>
+  <li>"The postmortem will be shared by [date]."</li>
+</ul>
+
+<h2>Cómo leer documentación técnica en inglés más rápido</h2>
+<p>Los desarrolladores pasan una cantidad enorme de tiempo leyendo docs. Estas estrategias ayudan:</p>
+<ul>
+  <li><strong>Estructura de las docs</strong>: la mayoría sigue: Overview → Getting Started → Guides → API Reference → Examples. Ve directo a la sección que necesitas — no leas lineal.</li>
+  <li><strong>Patrones de lenguaje común</strong>: "Returns X if Y", "Throws an exception when...", "Deprecated in favor of...", "This method is available since version..."</li>
+  <li><strong>Notas de tono</strong>: "Note:", "Warning:", "Deprecated:", "Since:" son marcadores de información crítica — búscalos primero.</li>
+</ul>
+
+<h2>La entrevista técnica en inglés</h2>
+<p>Las entrevistas técnicas en inglés para empresas internacionales (FAANG, startups globales, outsourcing) tienen su propio lenguaje:</p>
+<ul>
+  <li><strong>Al no entender una pregunta</strong>: "Could you clarify what you mean by [X]?" / "Just to make sure I understand the problem correctly..."</li>
+  <li><strong>Al pensar en voz alta (obligatorio en coding interviews)</strong>: "My initial approach would be to use a hash map..." / "The brute force solution would be O(n²), but we can optimize by..."</li>
+  <li><strong>Al encontrar un bug</strong>: "I think the issue is here — let me trace through the logic." / "This case isn't handled — let me add a check for..."</li>
+  <li><strong>Al presentar complejidad</strong>: "The time complexity of this approach is O(n log n) because..." / "Space complexity is O(n)."</li>
+</ul>
+
+<h2>Nivel de inglés recomendado para diferentes contextos tech</h2>
+<table>
+  <thead><tr><th>Contexto</th><th>Nivel mínimo recomendado</th></tr></thead>
+  <tbody>
+    <tr><td>Leer documentación y código en inglés</td><td>B1 (leer) — no requiere producción oral</td></tr>
+    <tr><td>Equipo remoto con comunicación por Slack/email</td><td>B2 (escritura fluida)</td></tr>
+    <tr><td>Daily standups y reuniones de equipo</td><td>B2 (conversación funcional)</td></tr>
+    <tr><td>Presentar propuestas técnicas, liderar reuniones</td><td>C1</td></tr>
+    <tr><td>Entrevistas técnicas para empresas top globales (FAANG)</td><td>C1 (hablar bajo presión con precisión)</td></tr>
+  </tbody>
+</table>
+
+<h2>WeLearn e inglés para desarrolladores</h2>
+<p>Si eres desarrollador y quieres preparar el inglés para un rol internacional, nuestras clases 1:1 se adaptan a tu industria. Practicamos situaciones reales: dailys, code review, entrevistas técnicas. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20desarrollador%20y%20necesito%20mejorar%20mi%20ingl%C3%A9s%20t%C3%A9cnico%20para%20trabajar%20con%20equipos%20internacionales.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-entrevistas-de-trabajo-en-multinacionales">Inglés para entrevistas en multinacionales</a> y <a href="/blog/ingles-b2-c1-para-trabajo-remoto-global">Inglés B2–C1 para trabajo remoto global</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 87 ──────────────────────────────────────────────────────────
+  {
+    slug: 'migrar-a-portugal-nivel-ingles-o-portugues-requisitos',
+    title: 'Migrar a Portugal: ¿necesitas inglés, portugués o ambos? Guía para colombianos 2026',
+    description: 'Todo sobre los requisitos de idioma para migrar a Portugal desde Colombia: visas, nivel de portugués o inglés, el CIPLE y cómo prepararte.',
+    category: 'Migración',
+    tags: ['migrar a Portugal', 'portugués Portugal', 'visa Portugal colombianos', 'CIPLE Portugal'],
+    date: '2026-05-31',
+    readTime: 8,
+    body: `
+<p>Portugal se ha convertido en uno de los destinos de migración más populares para colombianos en los últimos años: calidad de vida, puerta de entrada a la UE, comunidad hispanohablante grande, y un proceso de migración relativamente accesible comparado con otros países europeos. El idioma — portugués, inglés, o los dos — es una pregunta que surge siempre.</p>
+
+<h2>¿Qué idioma necesitas para migrar a Portugal?</h2>
+<p>La respuesta corta: para <em>vivir y trabajar</em> en Portugal, el portugués es el idioma de la vida cotidiana, la burocracia y el mercado laboral local. El inglés ayuda mucho en sectores específicos (tecnología, turismo, multinacionales), pero no reemplaza al portugués para la integración real.</p>
+<p>Para los <em>trámites de visa y residencia</em>: los documentos de SEF (actualmente AIMA — Agência para a Integração, Migrações e Asilo) están en portugués. El nivel mínimo de portugués se pide para la residencia permanente y la ciudadanía, no para la visa inicial.</p>
+
+<h2>Visas más relevantes para colombianos</h2>
+<table>
+  <thead><tr><th>Visa</th><th>Idioma requerido</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>Visto D7 (residencia pasiva / nómada)</td><td>Ninguno formal</td><td>Para personas con ingresos pasivos, jubilados o nómadas digitales. Sin requisito de idioma para la visa.</td></tr>
+    <tr><td>Visto D8 (nómada digital)</td><td>Ninguno formal</td><td>Para empleados remotos de empresa extranjera. Sin requisito de idioma para la visa.</td></tr>
+    <tr><td>Visto D2 (emprendedor / autónomo)</td><td>Ninguno formal para la visa</td><td>Para emprendedores o freelancers que ofrecen servicios. La realidad del negocio pide portugués.</td></tr>
+    <tr><td>Autorización de residencia (renovación)</td><td>Portugués A2 recomendado</td><td>Para renovar la residencia y después acceder a residencia permanente.</td></tr>
+    <tr><td>Residencia permanente (AR permanente)</td><td>CIPLE A2 (examen oficial)</td><td>Para solicitar residencia permanente, se exige demostrar A2 de portugués.</td></tr>
+    <tr><td>Ciudadanía portuguesa</td><td>CIPLE A2 mínimo</td><td>Para la naturalización, se requiere A2 demostrado con examen oficial.</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué es el CIPLE?</h2>
+<p>El <strong>CIPLE (Certificado Inicial de Português Língua Estrangeira)</strong> es el examen oficial de A2 en portugués europeo, administrado por la Universidad de Lisboa. Es el examen mínimo que Portugal acepta para residencia permanente y ciudadanía.</p>
+<ul>
+  <li>Evalúa: comprensión oral, comprensión escrita, producción escrita e interacción oral.</li>
+  <li>Duración aproximada: 2–3 horas.</li>
+  <li>Puntaje mínimo para aprobar: 55% en el total.</li>
+  <li>Centros de examen: Lisboa, Oporto, Coimbra. Desde Colombia deberías coordinarlo si aún no estás en Portugal.</li>
+</ul>
+
+<h2>¿Qué nivel de portugués necesitas para trabajar en Portugal?</h2>
+<table>
+  <thead><tr><th>Sector</th><th>Nivel portugués</th><th>Inglés necesario</th></tr></thead>
+  <tbody>
+    <tr><td>Tecnología (empresas internacionales en Lisboa)</td><td>A2–B1 (para vida cotidiana)</td><td>B2–C1 (entorno de trabajo)</td></tr>
+    <tr><td>Turismo / Hostelería</td><td>B1 mínimo</td><td>B1 (clientes internacionales)</td></tr>
+    <tr><td>Administración y oficinas locales</td><td>B2</td><td>Varía</td></tr>
+    <tr><td>Salud</td><td>C1 + homologación de título</td><td>Varía</td></tr>
+    <tr><td>Construcción e industria</td><td>B1</td><td>No siempre requerido</td></tr>
+  </tbody>
+</table>
+
+<h2>Lisboa como hub tech: el inglés en la práctica</h2>
+<p>Lisboa tiene uno de los ecosistemas tecnológicos más dinámicos de Europa. Empresas como Farfetch, Talkdesk, Feedzai, y cientos de startups internacionales tienen base en Lisboa. En estos entornos, el idioma interno de trabajo es a menudo el inglés — incluso los equipos con mayoría de portugueses muchas veces hacen reuniones en inglés.</p>
+<p>Sin embargo, fuera del trabajo — con el casero, en el hospital, con los vecinos, en la escuela de los hijos — el portugués es indispensable.</p>
+
+<h2>Ruta recomendada para colombianos</h2>
+<ol>
+  <li><strong>Antes de salir</strong>: aprender portugués hasta A2 real (no solo memorizado para el CIPLE, sino funcional). 4–6 meses con clases 2–3 veces por semana.</li>
+  <li><strong>Llegando</strong>: inscribirse en clases de integración (algunas gratuitas a través de IEFP) y practicar portugués con los vecinos.</li>
+  <li><strong>A los 2–3 años</strong>: presentar el CIPLE oficial para la residencia permanente. Con A2 real, el examen es manejable.</li>
+  <li><strong>Ciudadanía</strong>: 5 años de residencia legal + CIPLE A2 = elegible para ciudadanía portuguesa (y con ella, pasaporte UE).</li>
+</ol>
+
+<h2>WeLearn y el portugués para Portugal</h2>
+<p>Enseñamos portugués europeo con enfoque práctico desde el día 1 — pronunciación, vocabulario de burocracia, frases cotidianas. Si tu meta es Portugal, el programa es distinto al de Brasil. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20portugu%C3%A9s%20europeo%20para%20migrar%20a%20Portugal.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/portugues-brasil-vs-portugal-diferencias-para-aprender">Portugués de Brasil vs Portugal: diferencias para estudiantes</a> y <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: guía completa</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 88 ──────────────────────────────────────────────────────────
+  {
+    slug: 'coreano-pronunciacion-batchim-consonantes-finales',
+    title: 'Pronunciación coreana: batchim (consonantes finales) explicado para hispanohablantes',
+    description: 'Guía completa del batchim en coreano: qué es, cómo se pronuncia cada uno, reglas de enlace (liaison) y por qué es tan importante para sonar natural.',
+    category: 'Coreano',
+    tags: ['batchim coreano', 'pronunciación coreana', 'consonantes finales coreano', 'fonética coreana'],
+    date: '2026-05-31',
+    readTime: 7,
+    body: `
+<p>El batchim (받침) es uno de los aspectos de la pronunciación coreana que más confunde a los principiantes. Si alguna vez has escrito una sílaba coreana y no supiste cómo pronunciar la consonante final — o escuchaste una palabra y no reconociste lo que acabas de aprender — el batchim es la clave.</p>
+
+<h2>¿Qué es el batchim?</h2>
+<p>En coreano, una sílaba puede terminar en una consonante — esa consonante se llama batchim (literalmente "base" o "soporte"). No todos los idiomas tienen esto: el español y el portugués tienen consonantes finales, pero en coreano las reglas de cómo se pronuncian son específicas y difieren del hangul escrito.</p>
+<p>Ejemplo: 학교 (hakgyo = escuela). La sílaba 학 termina en ㄱ. Pero en la pronunciación, ese ㄱ final no suena como "k" vibrante — suena cerrado, sin explosión de aire.</p>
+
+<h2>Los 7 sonidos de batchim</h2>
+<p>Aunque hay muchas consonantes posibles en posición final, el coreano solo produce <strong>7 sonidos distintos</strong> en posición de batchim:</p>
+<table>
+  <thead><tr><th>Sonido</th><th>Consonantes que lo producen</th><th>Descripción</th><th>Ejemplo</th></tr></thead>
+  <tbody>
+    <tr><td>ㄱ (k cerrado)</td><td>ㄱ, ㄲ, ㅋ</td><td>Oclusión velar sin explosión. La boca se cierra en la posición de "k" pero el aire no sale.</td><td>국 (guk = sopa), 먹 (meok = comer)</td></tr>
+    <tr><td>ㄴ (n)</td><td>ㄴ</td><td>Nasal dental, similar al español "n" antes de consonante.</td><td>산 (san = montaña), 한 (han = uno)</td></tr>
+    <tr><td>ㄷ (t cerrado)</td><td>ㄷ, ㅌ, ㅅ, ㅆ, ㅈ, ㅊ, ㅎ</td><td>Oclusión dental sin explosión. La lengua toca los dientes pero el aire no sale.</td><td>옷 (ot = ropa), 있 (it = hay)</td></tr>
+    <tr><td>ㄹ (l/r)</td><td>ㄹ</td><td>Lateral alveolar, similar al "l" del español en posición final.</td><td>말 (mal = caballo), 일 (il = trabajo)</td></tr>
+    <tr><td>ㅁ (m)</td><td>ㅁ</td><td>Nasal bilabial, igual que la "m" del español.</td><td>밥 (bap = arroz), 음 (eum = música)</td></tr>
+    <tr><td>ㅂ (p cerrado)</td><td>ㅂ, ㅍ</td><td>Oclusión bilabial sin explosión. Los labios se cierran como para "p" pero el aire no sale.</td><td>입 (ip = boca), 앞 (ap = adelante)</td></tr>
+    <tr><td>ㅇ (ng)</td><td>ㅇ</td><td>Nasal velar, como la "n" de "manga" en español.</td><td>방 (bang = habitación), 영 (yeong = joven)</td></tr>
+  </tbody>
+</table>
+
+<h2>Las reglas de enlace (연음, yeoneun)</h2>
+<p>Cuando una sílaba termina en batchim y la siguiente sílaba empieza con ㅇ (que es muda en posición inicial), el batchim "salta" a la siguiente sílaba:</p>
+<ul>
+  <li>먹어 → 머거 (meokeo → meogeo): el ㄱ de 먹 salta a 어.</li>
+  <li>입어 → 이버 (ibeo → ibeo): el ㅂ de 입 salta a 어.</li>
+</ul>
+<p>Este enlace es obligatorio en el habla natural. Si no lo haces, suenas entrecortado y artificial.</p>
+
+<h2>Otras reglas importantes de pronunciación del batchim</h2>
+<ul>
+  <li><strong>Nasalización</strong>: cuando ㄱ, ㄷ, ㅂ van seguidos de ㄴ o ㅁ, se nasalizan: 국물 (gukmul) → 궁물 (gungmul).</li>
+  <li><strong>ㅎ silencioso</strong>: cuando ㅎ está en posición de batchim entre vocales, muchas veces desaparece en el habla natural.</li>
+  <li><strong>Doble batchim</strong>: algunas sílabas tienen dos consonantes como batchim (ㄳ, ㄵ, ㄺ, etc.). En ese caso, solo se pronuncia una — hay reglas para cuál.</li>
+</ul>
+
+<h2>Por qué el batchim es importante para hispanohablantes</h2>
+<p>En español, las consonantes finales siempre tienen algo de aire o vibración al salir. En coreano, los batchim oclusivos (ㄱ, ㄷ, ㅂ) son <em>sin explosión</em>. Si pronuncias "국" con una "k" española, suena como un acento extranjero muy marcado. Aprender a cerrar la posición sin soltar el aire es el ejercicio más importante de pronunciación para hispanohablantes.</p>
+
+<h2>Ejercicio práctico</h2>
+<p>Para el batchim ㄱ (k cerrado): di "pak" en español. Ahora hazlo de nuevo, pero no abras la boca al final — detén el aire con la posición de la "k" sin soltarlo. Eso es el batchim ㄱ. Practica con: 학 (hak), 국 (guk), 먹 (meok), 각 (gak).</p>
+
+<h2>WeLearn y la pronunciación coreana</h2>
+<p>La pronunciación es uno de los pilares del método WeLearn para coreano. En las primeras clases cubrimos hangul, batchim y las reglas de enlace con práctica intensiva de pronunciación. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20desde%20cero%20y%20pronunciar%20bien%20desde%20el%20principio.%20%C2%BFC%C3%B3mo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Primera clase de diagnóstico gratis</a>.</p>
+<p>Lee también: <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Hangul en 1 semana: guía definitiva para hispanohablantes</a> y <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero: guía completa</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 89 ──────────────────────────────────────────────────────────
+  {
+    slug: 'toefl-reading-preguntas-inferencia-y-detalle',
+    title: 'TOEFL Reading: cómo responder preguntas de inferencia, propósito y vocabulario',
+    description: 'Estrategia para los tipos de preguntas más difíciles del TOEFL Reading: inferencia, purpose, vocabulary in context y reference. Con ejemplos resueltos.',
+    category: 'TOEFL',
+    tags: ['TOEFL Reading', 'inferencia TOEFL', 'preguntas TOEFL Reading', 'puntaje TOEFL'],
+    date: '2026-05-31',
+    readTime: 8,
+    body: `
+<p>El TOEFL Reading tiene 10 tipos diferentes de preguntas. Algunas son directas (Factual Information: ¿qué dice el texto exactamente?). Otras son más complejas — inferencia, propósito del autor, vocabulario en contexto, referencia de pronombres. Esta guía te enseña a resolver cada tipo difícil con estrategia.</p>
+
+<h2>Estructura del TOEFL Reading</h2>
+<p>El TOEFL iBT Reading tiene 2 textos académicos de ~700 palabras cada uno, con 10 preguntas cada uno. Tiempo total: 35 minutos. Cada texto viene de un área académica (biología, geología, historia, sociología, etc.) y asume que no tienes conocimiento previo del tema.</p>
+
+<h2>Tipo 1: Factual Information (más fácil)</h2>
+<p>Pregunta: "According to paragraph X, which of the following is true about Y?"</p>
+<p>Estrategia: localiza el párrafo, escanea por palabras clave relacionadas con la pregunta. La respuesta siempre está literalmente en el texto — no hay inferencia.</p>
+<p>Error típico: elegir la respuesta que "parece" correcta por conocimiento general en vez de buscar en el texto.</p>
+
+<h2>Tipo 2: Inference (el más difícil)</h2>
+<p>Pregunta: "What can be inferred from paragraph X about Y?" / "The author implies that..."</p>
+<p>Estrategia: la respuesta NO está literalmente en el texto. Es una conclusión lógica que se puede sacar de lo que el texto dice. La inferencia válida:</p>
+<ul>
+  <li>Es la única conclusión posible dado lo que el texto dice.</li>
+  <li>No va más allá de lo que el texto afirma (no es especulación).</li>
+</ul>
+<p><strong>Ejemplo:</strong> Si el texto dice "Species A disappeared from the fossil record approximately 65 million years ago, the same time as the major asteroid impact," la inferencia válida es que "A's extinction may be related to the asteroid impact" — NO que "A was definitely killed by the asteroid" (eso es más de lo que el texto dice).</p>
+<p>Busca palabras de probabilidad en las opciones: "likely," "probably," "may have" → más probable que sea correcto. "Definitely," "always," "never" → probablemente incorrecto (el texto raramente dice absolutos).</p>
+
+<h2>Tipo 3: Vocabulary in Context</h2>
+<p>Pregunta: "The word [X] in paragraph Y is closest in meaning to..."</p>
+<p>Estrategia: NO uses el significado que conoces de la palabra fuera de contexto. Lee la oración completa y las 1–2 oraciones alrededor. Pregúntate: "¿Qué idea está tratando de expresar el autor en este punto?"</p>
+<p><strong>Ejemplo:</strong> La palabra "acute" en "the economic situation became acute in 2008" no significa "agudo" (en el sentido de ángulo) sino "grave/serio." El contexto te dice que la situación económica empeoró.</p>
+<p>Truco: reemplaza la palabra del texto con cada opción. La que encaja mejor en el sentido de la oración es la respuesta.</p>
+
+<h2>Tipo 4: Reference</h2>
+<p>Pregunta: "The word 'they' in paragraph X refers to..."</p>
+<p>Estrategia: encuentra el pronombre en el texto. Busca el sustantivo plural más reciente antes del pronombre que tenga sentido gramatical y lógico. Reemplaza el pronombre con la opción y lee la oración completa.</p>
+<p>Error típico: elegir el sustantivo más cercano al pronombre cuando el más cercano no tiene sentido lógico.</p>
+
+<h2>Tipo 5: Sentence Simplification</h2>
+<p>Pregunta: "Which of the following best expresses the essential information in the highlighted sentence?"</p>
+<p>Estrategia: identifica la idea central de la oración (sujeto + predicado principal). Las respuestas incorrectas cambian el significado, omiten información esencial, o añaden información que no estaba.</p>
+<p>La respuesta correcta puede omitir detalles secundarios, pero no puede cambiar la idea principal ni el tono (positivo/negativo).</p>
+
+<h2>Tipo 6: Purpose</h2>
+<p>Pregunta: "Why does the author mention [X] in paragraph Y?"</p>
+<p>Estrategia: el autor menciona algo por una razón: dar ejemplo, contrastar, apoyar un argumento, presentar evidencia, introducir una excepción. Lee el párrafo con esta pregunta: "¿Por qué incluyó el autor este dato aquí?"</p>
+
+<h2>Gestión del tiempo</h2>
+<p>35 minutos para 20 preguntas = 1:45 por pregunta. En la práctica:</p>
+<ul>
+  <li>Preguntas factual information: 60–90 segundos.</li>
+  <li>Preguntas de inferencia y vocabulary: hasta 2:30.</li>
+  <li>La última pregunta (prose summary o table completion) toma 3–4 minutos: es la más pesada en puntuación.</li>
+</ul>
+
+<h2>WeLearn y el TOEFL Reading</h2>
+<p>Preparamos el TOEFL Reading con simulacros completos y análisis de cada tipo de pregunta. Si tu Reading está por debajo de 22/30, hay estrategias específicas que pueden subirlo en 4–6 semanas de práctica intensa. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20puntaje%20en%20el%20TOEFL%20Reading.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía completa para colombianos</a> y <a href="/blog/toefl-speaking-integrated-tasks-como-responder">TOEFL Speaking: cómo responder las Integrated Tasks</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 90 ──────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-frances-adulto-desde-cero-colombia',
+    title: 'Aprender francés siendo adulto desde cero en Colombia: guía realista',
+    description: 'Guía honesta para adultos que empiezan francés desde cero en Colombia: tiempo realista, mitos del aprendizaje adulto, recursos y cómo estructurar el estudio.',
+    category: 'Francés',
+    tags: ['aprender francés adulto', 'francés desde cero Colombia', 'curso francés adultos', 'francés online Colombia'],
+    date: '2026-05-31',
+    readTime: 7,
+    body: `
+<p>Una de las preguntas más frecuentes que recibimos es: "¿Puedo aprender francés siendo adulto, sin haber estudiado idiomas antes?" La respuesta honesta es sí — pero con matices importantes. Esta guía está para adultos que empiezan desde cero en Colombia y quieren un mapa realista.</p>
+
+<h2>El mito del "período crítico" desmitificado</h2>
+<p>Hay un mito muy extendido de que después de cierta edad el cerebro "ya no puede" aprender idiomas. La investigación en lingüística aplicada cuenta una historia más compleja:</p>
+<ul>
+  <li><strong>Lo que los niños hacen mejor</strong>: adquieren pronunciación sin acento foráneo con mayor facilidad (antes de la pubertad) y aprenden de forma incidental sin esfuerzo consciente.</li>
+  <li><strong>Lo que los adultos hacen mejor</strong>: aprenden vocabulario más rápido (tienen más base cognitiva), entienden patrones gramaticales abstractos más fácilmente, y son más estratégicos en su aprendizaje.</li>
+  <li><strong>El verdadero obstáculo adulto</strong>: no es el cerebro — es el tiempo disponible, la tolerancia a la frustración, y la tendencia a compararse con el nivel "nativo" en vez de celebrar el progreso real.</li>
+</ul>
+
+<h2>Tiempo realista para un adulto colombiano que aprende francés</h2>
+<table>
+  <thead><tr><th>Nivel</th><th>Horas necesarias</th><th>Con 6 h/semana (2 clases + práctica)</th></tr></thead>
+  <tbody>
+    <tr><td>A1 (básico funcional)</td><td>80–120 h</td><td>3–4 meses</td></tr>
+    <tr><td>A2 (conversación cotidiana)</td><td>160–220 h</td><td>6–8 meses</td></tr>
+    <tr><td>B1 (independiente básico)</td><td>300–380 h</td><td>12–15 meses</td></tr>
+    <tr><td>B2 (DELF B2, trabajo/universidad)</td><td>550–700 h</td><td>22–28 meses</td></tr>
+  </tbody>
+</table>
+<p>Estas son horas de estudio <em>activo</em>. Ver series en francés sin atención no cuenta. Las clases 1:1 con retroalimentación son las más eficientes.</p>
+
+<h2>Los tres primeros meses: qué priorizar</h2>
+<p>El error más común de los adultos principiantes es querer entender todo la gramática antes de hablar. La secuencia correcta:</p>
+<ol>
+  <li><strong>Fonética primero</strong>: el francés tiene sonidos que no existen en español (la "u" ü, la "r" gutural, los sonidos nasales en/an/on). Si no los aprendes desde el inicio, construyes hábitos difíciles de corregir.</li>
+  <li><strong>Frases de supervivencia</strong>: saludos, presentaciones, pedir en un restaurante, preguntar precios. Vocabulario de alta frecuencia que puedes usar desde la semana 1.</li>
+  <li><strong>Presente + los verbos más frecuentes</strong>: être (ser/estar), avoir (tener), aller (ir), faire (hacer), vouloir (querer), pouvoir (poder). Estos 6 verbos irregulares cubren el 50% de la conversación básica.</li>
+</ol>
+
+<h2>Los obstáculos típicos para hispanohablantes en francés</h2>
+<ul>
+  <li><strong>La pronunciación silent letters</strong>: en francés, muchas letras finales no se pronuncian. "Vous parlez" se pronuncia "voo parlay" — la "s" final de "vous" y la "z" de "parlez" son mudas.</li>
+  <li><strong>Los géneros</strong>: como en español, pero con palabras que cambian de género (la mer = el mar, la lune = la luna). No hay lógica perfecta — se aprende con exposición.</li>
+  <li><strong>El liaison</strong>: la unión de consonantes al hablar. "Vous avez" se dice "voo zave" — la "s" de "vous" se une a la "a" de "avez."</li>
+  <li><strong>El subjuntivo</strong>: más frecuente en francés que en español moderno. "Il faut que tu le saches" (es necesario que lo sepas) — el subjuntivo en cláusulas subordinadas es cotidiano.</li>
+</ul>
+
+<h2>Recursos gratuitos para empezar</h2>
+<ul>
+  <li><strong>RFI Apprendre le français</strong>: noticias en francés con guías de vocabulario. Nivel A2–B2.</li>
+  <li><strong>TV5Monde Langue française</strong>: ejercicios interactivos con videos reales. A1–C2.</li>
+  <li><strong>Podcast "Coffee Break French"</strong>: muy bien estructurado para principiantes angloparlantes y hispanohablantes. A1–B2.</li>
+  <li><strong>Anki + mazo de Français pour débutants</strong>: vocabulario de alta frecuencia con repetición espaciada.</li>
+</ul>
+
+<h2>¿Cuándo conviene tener clases 1:1?</h2>
+<p>Desde el principio, si el objetivo es llegar a B1 o B2 en menos de 2 años. Las clases 1:1 reducen el tiempo total porque un tutor corrige los errores en tiempo real, antes de que se vuelvan hábitos. Aprender solo durante 6 meses y luego buscar clases significa 6 meses de errores consolidados.</p>
+
+<h2>WeLearn y el francés para adultos</h2>
+<p>En WeLearn la mayoría de nuestros estudiantes de francés son adultos que empiezan desde cero o desde un nivel muy básico. El programa se adapta al ritmo real de un adulto con trabajo, familia y poco tiempo — pero con las horas correctas. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20adulto%20y%20quiero%20aprender%20franc%C3%A9s%20desde%20cero.%20%C2%BFC%C3%B3mo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Empieza con una clase de diagnóstico gratis</a>.</p>
+<p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF y DALF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/cuanto-tiempo-para-aprender-un-idioma-desde-cero">¿Cuánto tiempo se necesita para aprender un idioma desde cero?</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
