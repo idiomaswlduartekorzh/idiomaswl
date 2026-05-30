@@ -4660,6 +4660,183 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/como-aprender-un-idioma-mas-rapido">Cómo aprender un idioma más rápido: lo que dice la ciencia</a> y <a href="/blog/aprender-idiomas-con-series-y-peliculas">Aprender idiomas con series y películas: lo que funciona</a>.</p>
     `,
   },
+  // ── Article 64 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'icfes-ingles-plan-estudio-3-meses',
+    title: 'ICFES inglés en 3 meses: plan de estudio semanal para subir tu puntaje',
+    description:
+      'Plan de estudio semana a semana para mejorar tu puntaje de inglés en el ICFES Saber 11 en 3 meses. Incluye recursos gratuitos, simulacros y las áreas específicas donde los estudiantes pierden más puntos.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'ICFES',
+    tags: ['ICFES inglés en 3 meses plan de estudio', 'subir puntaje inglés ICFES Colombia', 'preparación ICFES inglés semana a semana', 'ICFES inglés recursos gratuitos', 'mejorar inglés para ICFES rápido'],
+    body: `
+<h2>¿Cuánto vale el inglés en el ICFES Saber 11?</h2>
+<p>La prueba de inglés del ICFES Saber 11 no hace parte del puntaje global de 500 puntos que la mayoría de universidades miran para admisiones. Sin embargo, el nivel de inglés sí importa de dos formas:</p>
+<ol>
+  <li><strong>Puntaje individual reportado por niveles</strong> (A1, A2, B1, B2+): varias universidades, especialmente para carreras internacionales, piden que hayas alcanzado al menos B1 en inglés ICFES.</li>
+  <li><strong>Becas y fondos</strong>: algunos programas de becas (Ser Pilo Paga, Generación E, etc.) tienen requisitos mínimos de nivel de inglés en el ICFES.</li>
+</ol>
+<p>Para la mayoría de estudiantes, el objetivo es pasar del nivel A2 al B1+ en el ICFES, ya que ese salto abre muchas puertas universitarias.</p>
+
+<h2>Qué evalúa el ICFES en inglés</h2>
+<p>La prueba de inglés del ICFES Saber 11 tiene únicamente sección de <strong>lectura (Reading)</strong>: textos cortos y medianos con preguntas de comprensión, vocabulario en contexto e inferencia. No evalúa Writing, Speaking ni Listening. Esto tiene una implicación importante: <strong>el plan de estudio debe enfocarse casi exclusivamente en comprensión lectora en inglés</strong>.</p>
+<table>
+  <thead><tr><th>Área</th><th>Peso</th><th>Estrategia</th></tr></thead>
+  <tbody>
+    <tr><td>Vocabulario en contexto</td><td>~30%</td><td>Leer textos variados en inglés, contextos de palabras desconocidas</td></tr>
+    <tr><td>Comprensión de ideas principales</td><td>~30%</td><td>Practicar identificar el main idea y los topic sentences</td></tr>
+    <tr><td>Inferencia y cohesión</td><td>~20%</td><td>Ejercicios de deducción lógica del significado</td></tr>
+    <tr><td>Gramática implícita</td><td>~20%</td><td>Conectores, tiempos verbales, estructura de oraciones</td></tr>
+  </tbody>
+</table>
+
+<h2>Plan de estudio: 12 semanas para subir un nivel en inglés ICFES</h2>
+<table>
+  <thead><tr><th>Semanas</th><th>Objetivo</th><th>Actividades</th></tr></thead>
+  <tbody>
+    <tr><td>1–2</td><td>Diagnóstico y vocabulario básico</td><td>Hacer un simulacro ICFES oficial. Identificar vocabulario desconocido. Listas A1–A2.</td></tr>
+    <tr><td>3–4</td><td>Gramática funcional para Reading</td><td>Tiempos verbales (presente, pasado, presente perfecto). Conectores y coherencia.</td></tr>
+    <tr><td>5–6</td><td>Vocabulario A2–B1</td><td>Estudio de listas de vocabulario frecuente (Longman 3000, Word frequency lists). Lectura de textos A2.</td></tr>
+    <tr><td>7–8</td><td>Estrategias de lectura</td><td>Skimming y scanning. Identificar ideas principales sin leer todo el texto. Textos B1.</td></tr>
+    <tr><td>9–10</td><td>Simulacros ICFES</td><td>2 simulacros completos (pruebas oficiales anteriores). Revisión de errores.</td></tr>
+    <tr><td>11</td><td>Vocabulario específico en contextos académicos</td><td>Textos sobre ciencia, historia, tecnología (los más frecuentes en ICFES).</td></tr>
+    <tr><td>12</td><td>Simulacro final + ajuste</td><td>Prueba oficial anterior. Revisar solo los tipos de preguntas donde más fallas.</td></tr>
+  </tbody>
+</table>
+
+<h2>Recursos gratuitos para preparar el inglés ICFES</h2>
+<ul>
+  <li><strong>ICFES Interactivo</strong> (icfesinteractivo.gov.co): simulacros oficiales de pruebas anteriores</li>
+  <li><strong>British Council Learn English</strong> (learnenglish.britishcouncil.org): materiales gratuitos de lectura por nivel</li>
+  <li><strong>Duolingo</strong> (solo para vocabulario básico A1–A2 — no es suficiente solo con esto)</li>
+  <li><strong>Newsela</strong> (newsela.com): artículos de noticias adaptados por nivel de lectura</li>
+  <li><strong>BBC Learning English</strong> (bbc.co.uk/learningenglish): lecturas y podcasts gratis por nivel</li>
+</ul>
+
+<h2>Los 4 errores más comunes que bajan el puntaje de inglés en el ICFES</h2>
+<ol>
+  <li><strong>Traducir palabra por palabra</strong>: en vez de inferir el significado del contexto, muchos estudiantes se bloquean con una palabra desconocida y pierden tiempo</li>
+  <li><strong>Leer todo el texto antes de ver las preguntas</strong>: mejor ver la pregunta primero, luego leer enfocado en encontrar la respuesta</li>
+  <li><strong>No distinguir entre la idea principal y los detalles</strong>: las preguntas de "main idea" buscan la tesis central, no los ejemplos</li>
+  <li><strong>Estudiar gramática sin practicar lectura</strong>: el ICFES evalúa gramática dentro de textos, no de forma aislada</li>
+</ol>
+
+<h2>WeLearn y la preparación ICFES inglés</h2>
+<p>En WeLearn tenemos un plan específico para el inglés ICFES de 8 a 12 semanas, con tutores que conocen el formato y los tipos de preguntas. Incluye simulacros semanales con feedback específico. La primera clase de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20ingl%C3%A9s%20para%20el%20ICFES%20Saber%2011%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20plan%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>.</p>
+<p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">ICFES Saber 11: guía completa de niveles de inglés</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
+    `,
+  },
+  // ── Article 65 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'frances-para-estudiar-medicina-en-francia-belgica',
+    title: 'Estudiar medicina en Francia o Bélgica: nivel de francés, costos y proceso desde Colombia',
+    description:
+      'Guía para colombianos que quieren estudiar medicina en Francia o Bélgica: nivel de francés requerido (C1 mínimo), costos de matrícula comparados con Colombia y EE.UU., visa y proceso de admisión.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Francés',
+    tags: ['estudiar medicina en Francia Colombia', 'medicina en Bélgica colombianos requisitos', 'francés C1 para medicina Europa', 'precio matrícula medicina Francia 2026', 'visa estudiante medicina Francia Colombia'],
+    body: `
+<h2>¿Por qué médicos colombianos miran a Francia y Bélgica?</h2>
+<p>La formación médica en Colombia es excelente pero altamente competitiva en cupos y cara en universidades privadas. Francia y Bélgica ofrecen alternativas con costos de matrícula radicalmente más bajos: en Francia, las universidades públicas cobran entre €3.000 y €5.000 por año a estudiantes extranjeros, mientras que Bélgica (especialmente la Université Libre de Bruxelles y UCLouvain) cobra entre €2.000 y €4.500. Para referencias, una carrera de medicina en Colombia puede costar entre $80 y $250 millones COP en una universidad privada reconocida.</p>
+<p>Además, el título médico francés o belga (Diplôme de Docteur en Médecine) es reconocido automáticamente en toda la Unión Europea — lo que significa que un médico colombiano graduado en Francia puede ejercer en España, Italia, Alemania o cualquier otro país de la UE sin revalidar su título.</p>
+
+<h2>Nivel de francés requerido para medicina en Francia y Bélgica</h2>
+<table>
+  <thead><tr><th>País/Universidad</th><th>Nivel mínimo</th><th>Certificación aceptada</th><th>Evaluación adicional</th></tr></thead>
+  <tbody>
+    <tr><td>Universidades francesas (PASS/LAS)</td><td>C1 (DALF C1 mínimo)</td><td>DALF C1, TCF C1, DELF B2 + test de institución</td><td>Entrevista oral + evaluación de aptitud académica</td></tr>
+    <tr><td>UCLouvain (Bélgica)</td><td>C1</td><td>DALF C1, TCF 558+</td><td>Examen de bachillerato equivalencia y entrevista</td></tr>
+    <tr><td>ULB (Bruselas)</td><td>C1</td><td>DALF C1 o equivalente</td><td>Examen de conocimientos previos en ciencias</td></tr>
+    <tr><td>Universidades de Estrasburgo / Lyon (medicina)</td><td>C1–C2</td><td>DALF C1 o DALF C2</td><td>Examen PASS (muy competitivo)</td></tr>
+  </tbody>
+</table>
+<p>El nivel C1 en francés es el mínimo formal, pero dado que el sistema PASS francés (Parcours Accès Santé Spécifique) es extremadamente competitivo — con tasas de selección de 15–20% — los candidatos que logran entrar suelen tener nivel C2 o nativo.</p>
+
+<h2>El sistema médico francés: qué es el PASS y cuántos años son</h2>
+<p>La carrera de medicina en Francia dura mínimo 9 años (6 de formación básica + 3 de especialización). El PASS es el primer año de selección brutal: solo el 15–25% continúa directamente a medicina. Los demás deben optar por otra carrera de salud (odontología, farmacia, kiné) o intentar por otras vías (LAS).</p>
+<p>Para un colombiano sin base en el sistema educativo francés, acceder directamente a medicina es extremadamente difícil. Algunas vías alternativas más accesibles:</p>
+<ul>
+  <li><strong>Bélgica</strong>: el sistema belga es diferente y permite, en algunas universidades, el acceso a medicina sin pasar por el filtro del PASS francés. Es la vía más utilizada por estudiantes latinoamericanos</li>
+  <li><strong>Preparación en alianza</strong>: algunos estudiantes colombianos hacen 1–2 años de preparación intensiva en Francia (clases preparatorias) antes de intentar el PASS</li>
+</ul>
+
+<h2>Costos reales de estudiar medicina en Francia vs. Colombia</h2>
+<table>
+  <thead><tr><th>Concepto</th><th>Francia (anual)</th><th>Colombia privada (anual)</th></tr></thead>
+  <tbody>
+    <tr><td>Matrícula</td><td>€3.000–€5.000</td><td>$14M–$35M COP</td></tr>
+    <tr><td>Alojamiento</td><td>€400–€1.000/mes</td><td>$600K–$1.5M COP/mes</td></tr>
+    <tr><td>Alimentación y gastos</td><td>€300–€600/mes</td><td>$500K–$1.2M COP/mes</td></tr>
+    <tr><td>Seguro médico estudiante</td><td>€100–€250/año</td><td>N/A (cubierto por familia)</td></tr>
+  </tbody>
+</table>
+<p>La diferencia de matrícula es enorme. La diferencia de costo de vida es menor (Francia es caro) pero el ahorro total puede ser significativo para una familia colombiana de clase media-alta.</p>
+
+<h2>Cuánto tiempo necesitas para el C1 de francés para medicina</h2>
+<p>Si partes de cero, llegar al C1 de francés requiere entre 30 y 42 meses de estudio intenso (2–3 clases semanales + práctica diaria). Si tienes base A2 o B1, ese tiempo se reduce significativamente. Para medicina, el C1 no es el objetivo final — necesitas el C1 certificado (DALF C1) más fluidez en vocabulario médico y científico en francés.</p>
+
+<h2>WeLearn y el francés para medicina en Francia y Bélgica</h2>
+<p>En WeLearn preparamos para el DALF C1 con tutores especializados en francés académico. Si tu objetivo es medicina en Francia o Bélgica, el plan incluye vocabulario científico y médico desde el nivel B2. La primera sesión de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20franc%C3%A9s%20para%20estudiar%20medicina%20en%20Francia%20o%20B%C3%A9lgica%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de francés</a>.</p>
+<p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF y DALF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa de preparación para colombianos</a>.</p>
+    `,
+  },
+  // ── Article 66 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'coreano-para-trabajar-en-samsung-lg-hyundai',
+    title: 'Coreano para trabajar en Samsung, LG, Hyundai o Kia en Colombia',
+    description:
+      'Guía práctica de coreano para profesionales colombianos que trabajan o quieren trabajar en empresas coreanas. Nivel recomendado, frases clave para el entorno laboral y cómo diferenciarte en una empresa surcoreana.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Coreano',
+    tags: ['coreano para trabajar Samsung LG Colombia', 'empresas coreanas Colombia aprender coreano', 'coreano laboral Colombia Hyundai Kia', 'nivel coreano para empresa coreana Colombia', 'coreano profesional hispanohablantes'],
+    body: `
+<h2>¿Por qué las empresas coreanas en Colombia valoran el coreano?</h2>
+<p>Samsung, LG, Hyundai, Kia, SK, Lotte, Daewoo, Kumho y decenas de empresas coreanas tienen presencia activa en Colombia. El mercado colombiano es uno de los mayores receptores de inversión coreana en América Latina. La comunicación dentro de estas empresas es mayoritariamente en inglés o español, pero hay algo que distingue radicalmente a un empleado local que habla coreano: acceso a comunicación directa con la casa matriz, comprensión de la cultura corporativa coreana (balli-balli: la urgencia del momento), y una confianza que los coreanos construyen más rápidamente con quien habla su idioma.</p>
+<p>No necesitas ser fluido — un nivel A2–B1 en coreano puede abrir puertas que un perfecto inglés no abre.</p>
+
+<h2>Qué nivel de coreano necesitas según tu rol</h2>
+<table>
+  <thead><tr><th>Rol en empresa coreana</th><th>Nivel útil</th><th>Qué necesitas</th></tr></thead>
+  <tbody>
+    <tr><td>Atención al cliente / vendedor</td><td>A1–A2</td><td>Saludos, cortesías básicas, números, agradecimiento formal</td></tr>
+    <tr><td>Soporte técnico / administrativo</td><td>A2–B1</td><td>Comunicación básica por email, instrucciones simples, vocabulario técnico de tu área</td></tr>
+    <tr><td>Coordinador / gerente de área</td><td>B1–B2</td><td>Reuniones con gerentes coreanos, emails formales, presentaciones en coreano</td></tr>
+    <tr><td>Liaison / coordinador con casa matriz</td><td>B2+</td><td>Comunicación fluida con Corea, entender documentos corporativos, negociar</td></tr>
+    <tr><td>Trabajo en Corea del Sur (transferencia)</td><td>TOPIK II Nivel 4+</td><td>Vivir, trabajar y comunicarse en Corea con clientes y colegas locales</td></tr>
+  </tbody>
+</table>
+
+<h2>Frases esenciales para el entorno laboral en una empresa coreana</h2>
+<table>
+  <thead><tr><th>Situación</th><th>Coreano</th><th>Romanización</th><th>Español</th></tr></thead>
+  <tbody>
+    <tr><td>Saludo al llegar</td><td>안녕하세요</td><td>Annyeonghaseyo</td><td>Buenos días / Hola (formal)</td></tr>
+    <tr><td>Saludo al jefe coreano</td><td>수고하십니다</td><td>Sugohasipnida</td><td>"Gracias por su trabajo" (muy formal)</td></tr>
+    <tr><td>Al despedirse</td><td>수고하셨습니다</td><td>Sugohasyeosseupnida</td><td>"Gracias por su esfuerzo de hoy"</td></tr>
+    <tr><td>Entendido / De acuerdo</td><td>알겠습니다</td><td>Algetsseupnida</td><td>Entendido (formal)</td></tr>
+    <tr><td>Sí / de acuerdo</td><td>네</td><td>Ne</td><td>Sí (formal)</td></tr>
+    <tr><td>Disculpe / con permiso</td><td>실례합니다</td><td>Sillyeehamnida</td><td>Con permiso / disculpe</td></tr>
+    <tr><td>Brindo / salud (comidas)</td><td>건배!</td><td>Geonbae!</td><td>¡Salud!</td></tr>
+    <tr><td>Buen trabajo / así se hace</td><td>잘 했어요</td><td>Jal haesseoyo</td><td>Bien hecho</td></tr>
+  </tbody>
+</table>
+
+<h2>La cultura corporativa coreana: lo que no te enseñan en ningún libro</h2>
+<ul>
+  <li><strong>Jerarquía estricta (연공서열 yeon-gong-seo-yeol)</strong>: el rango y la antigüedad definen cómo te diriges a cada persona. Aprender los títulos (부장 bujang = gerente, 과장 gwajang = jefe de sección, 대리 daeri = asistente) es tan importante como el idioma.</li>
+  <li><strong>Balli-balli (빨리빨리)</strong>: la cultura de la urgencia. Las solicitudes de los coreanos suelen llevar la expectativa de respuesta inmediata. No es descortesía — es estilo.</li>
+  <li><strong>Cenas y hweshik (회식)</strong>: las cenas de equipo son socialmente importantes. Saber decir ¡건배! (Geonbae — ¡salud!) y conocer algo de cultura culinaria coreana construye relaciones que los informes no construyen.</li>
+  <li><strong>Confucianismo en la oficina</strong>: la lealtad a la empresa y al superior directo es valor cultural profundo. Expresar desacuerdo en público es muy mal visto; hacerlo en privado es más aceptable.</li>
+</ul>
+
+<h2>WeLearn y el coreano para empresas coreanas</h2>
+<p>En WeLearn preparamos coreano con enfoque práctico desde el día 1 — incluyendo vocabulario laboral y cultural para entornos coreanos. Si ya trabajas en Samsung, LG o similar, o quieres diferenciarte para ese mercado laboral, la primera clase de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20para%20trabajar%20en%20una%20empresa%20coreana%20en%20Colombia%20y%20quisiera%20m%C3%A1s%20info." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>Lee también: <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Hangul en 1 semana: la guía definitiva para hispanohablantes</a> y <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
