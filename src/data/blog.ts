@@ -1178,7 +1178,7 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-    slug: 'puntaje-icfes-ingles-niveles-y-como-mejorar',
+    slug: 'icfes-saber-11-niveles-ingles-guia-completa',
     title: 'Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje',
     description:
       'Guía completa sobre el componente de inglés del ICFES: cómo se califica, qué evalúa, qué significa cada nivel A1-B2 y el plan de preparación para subir 10-20 puntos en 3 meses.',

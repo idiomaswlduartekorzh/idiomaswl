@@ -373,9 +373,9 @@ export default function PreparacionICFESPage() {
             <h2 className={s.h2}>Guías gratuitas para el ICFES inglés</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
               {[
-                { cat: 'ICFES', color: '#0f7c3e', title: 'Puntaje ICFES inglés: niveles y cómo mejorar en 3 meses', slug: 'puntaje-icfes-ingles-niveles-y-como-mejorar' },
+                { cat: 'ICFES', color: '#0f7c3e', title: 'Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje', slug: 'icfes-saber-11-niveles-ingles-guia-completa' },
                 { cat: 'Inglés', color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
-                { cat: 'IELTS', color: '#1a4fcc', title: '¿IELTS o TOEFL? Cuál elegir según tu objetivo', slug: 'ielts-vs-toefl-cual-tomar-en-colombia' },
+                { cat: 'Método', color: '#c87941', title: '¿Cuánto cuesta aprender inglés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ingles-colombia-2026' },
               ].map(a => (
                 <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
                   <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

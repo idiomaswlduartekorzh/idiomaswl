@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 const WA = '573005004253';
 function waLink(plan: string, langName: string) {
@@ -215,6 +216,24 @@ export default function PreciosClient() {
 
         {/* ── Comparison table ── */}
         <CompareTable lang={lang.name} exam={lang.exams[0]} sessions={sessions} annual={annual} />
+
+        {/* ── Blog resources ── */}
+        <div style={{ marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid var(--line-soft)' }}>
+          <p style={{ fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '0.5rem' }}>Del blog WeLearn</p>
+          <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--ink)', marginBottom: '1.25rem' }}>Guías para tomar la mejor decisión</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))', gap: '0.85rem' }}>
+            {[
+              { cat: 'Método', color: '#c87941', title: '¿Cuánto cuesta aprender inglés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ingles-colombia-2026' },
+              { cat: 'Inglés', color: '#1a4fcc', title: 'Clases de inglés online en Colombia: guía 2026', slug: 'clases-de-ingles-online-colombia' },
+              { cat: 'Inglés', color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
+            ].map(a => (
+              <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
+                <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: 0 }}>{a.title} →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
 
       </div>
     </main>
