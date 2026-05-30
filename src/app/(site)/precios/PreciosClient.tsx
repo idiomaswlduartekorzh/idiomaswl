@@ -24,6 +24,41 @@ function formatCOP(n: number) {
   return '$' + n.toLocaleString('es-CO');
 }
 
+type BlogArticle = { cat: string; color: string; title: string; slug: string };
+
+const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
+  ingles: [
+    { cat: 'Método',   color: '#c87941', title: '¿Cuánto cuesta aprender inglés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ingles-colombia-2026' },
+    { cat: 'Inglés',   color: '#1a4fcc', title: 'Clases de inglés online en Colombia: guía 2026', slug: 'clases-de-ingles-online-colombia' },
+    { cat: 'Inglés',   color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
+  ],
+  coreano: [
+    { cat: 'Coreano',  color: '#c8202e', title: '¿Cuánto cuesta aprender coreano en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-coreano-colombia-2026' },
+    { cat: 'Coreano',  color: '#c8202e', title: 'Clases de coreano online en Colombia: guía para elegir bien', slug: 'clases-de-coreano-online-colombia' },
+    { cat: 'Coreano',  color: '#c8202e', title: 'TOPIK I: cómo prepararlo desde cero y pasar al primer intento', slug: 'topik-1-preparacion-guia-para-principiantes' },
+  ],
+  frances: [
+    { cat: 'Francés',  color: '#1a2ecc', title: 'DELF y DALF: la guía completa para colombianos', slug: 'delf-dalf-guia-preparacion-colombianos' },
+    { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
+    { cat: 'Inglés',   color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
+  ],
+  aleman: [
+    { cat: 'Alemán',   color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
+    { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
+    { cat: 'Inglés',   color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
+  ],
+  italiano: [
+    { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia', slug: 'cils-celi-certificacion-italiano-colombia' },
+    { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
+    { cat: 'Inglés',   color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
+  ],
+  portugues: [
+    { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
+    { cat: 'Método',    color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
+    { cat: 'Inglés',    color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
+  ],
+};
+
 export default function PreciosClient() {
   const [lang, setLang] = useState(LANGUAGES[0]);
   const [sessions, setSessions] = useState<2 | 4>(2);
@@ -222,16 +257,12 @@ export default function PreciosClient() {
         {/* ── Comparison table ── */}
         <CompareTable lang={lang.name} exam={lang.exams[0]} sessions={sessions} annual={annual} />
 
-        {/* ── Blog resources ── */}
+        {/* ── Blog resources (dynamic by language) ── */}
         <div style={{ marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid var(--line-soft)' }}>
           <p style={{ fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '0.5rem' }}>Del blog WeLearn</p>
           <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--ink)', marginBottom: '1.25rem' }}>Guías para tomar la mejor decisión</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))', gap: '0.85rem' }}>
-            {[
-              { cat: 'Método', color: '#c87941', title: '¿Cuánto cuesta aprender inglés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ingles-colombia-2026' },
-              { cat: 'Inglés', color: '#1a4fcc', title: 'Clases de inglés online en Colombia: guía 2026', slug: 'clases-de-ingles-online-colombia' },
-              { cat: 'Inglés', color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
-            ].map(a => (
+            {(BLOG_BY_LANG[lang.slug] ?? BLOG_BY_LANG.ingles).map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
                 <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: 0 }}>{a.title} →</p>
