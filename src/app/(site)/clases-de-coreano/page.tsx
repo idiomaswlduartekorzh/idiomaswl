@@ -716,6 +716,7 @@ export default function ClasesDeCoreanoPage() {
                 { cat: 'Coreano', title: 'TOPIK II: cómo pasar del nivel 2 al nivel 4 en coreano', slug: 'topik-ii-como-subir-de-nivel' },
                 { cat: 'Coreano', title: 'TOPIK 2026: fechas, centros en Colombia y cómo inscribirse', slug: 'topik-fechas-centros-colombia-latinoamerica-2026' },
                 { cat: 'Coreano', title: 'Hangul en 1 semana: la guía definitiva para hispanohablantes', slug: 'hangul-aprender-en-una-semana-guia-completa' },
+                { cat: 'Coreano', title: 'Coreano para trabajar en Samsung, LG, Hyundai o Kia en Colombia', slug: 'coreano-para-trabajar-en-samsung-lg-hyundai' },
               ].map(a => (
                 <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
                   <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#c8202e', background: 'rgba(200,32,46,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

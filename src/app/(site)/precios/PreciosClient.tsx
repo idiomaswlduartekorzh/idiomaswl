@@ -40,7 +40,7 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
   frances: [
     { cat: 'Francés',  color: '#1a2ecc', title: 'DELF y DALF: cuál nivel necesitas según tu objetivo', slug: 'delf-cual-nivel-necesitas-y-para-que-sirve' },
     { cat: 'Francés',  color: '#1a2ecc', title: 'TCF Canadá: francés para inmigrar a Quebec', slug: 'tcf-canada-frances-para-inmigrar-a-quebec' },
-    { cat: 'Francés',  color: '#1a2ecc', title: '¿Cuánto cuesta aprender francés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-frances-colombia-2026' },
+    { cat: 'Francés',  color: '#1a2ecc', title: 'Francés para estudiar medicina en Francia o Bélgica', slug: 'frances-para-estudiar-medicina-en-francia-belgica' },
   ],
   aleman: [
     { cat: 'Alemán',   color: '#1a2ecc', title: 'Alemán para enfermería en Alemania: B2 y Fachsprachprüfung', slug: 'aleman-para-enfermeria-en-alemania' },

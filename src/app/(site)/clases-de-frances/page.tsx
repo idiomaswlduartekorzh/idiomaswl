@@ -201,7 +201,7 @@ const FAQS = [
 const BLOG_POSTS = [
   { cat: 'Francés', color: '#1a2ecc', title: 'DELF y DALF: cuál nivel necesitas según tu objetivo real', slug: 'delf-cual-nivel-necesitas-y-para-que-sirve' },
   { cat: 'Francés', color: '#1a2ecc', title: 'TCF Canadá: el examen de francés para inmigrar a Quebec', slug: 'tcf-canada-frances-para-inmigrar-a-quebec' },
-  { cat: 'Francés', color: '#1a2ecc', title: 'DELF y DALF: la guía completa para colombianos', slug: 'delf-dalf-guia-preparacion-colombianos' },
+  { cat: 'Francés', color: '#1a2ecc', title: 'Francés para estudiar medicina en Francia o Bélgica: guía completa', slug: 'frances-para-estudiar-medicina-en-francia-belgica' },
 ];
 
 // WhatsApp SVG icon
