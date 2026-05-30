@@ -133,9 +133,9 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Portugués', color: '#166534', title: 'Clases de portugués online en Colombia: guía para elegir bien', slug: 'clases-de-portugues-online-colombia' },
   { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
   { cat: 'Método',    color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
-  { cat: 'Inglés',    color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
 ];
 
 const WaIcon = () => (

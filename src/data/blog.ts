@@ -3392,6 +3392,134 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a>.</p>
     `,
   },
+  // ── Article 43 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-italiano-online-colombia',
+    title: 'Clases de italiano online en Colombia: guía para elegir bien',
+    description:
+      'Cómo elegir clases de italiano online en Colombia: qué diferencia un programa serio de uno genérico, cuánto tiempo necesitas para el CILS y por qué el italiano es el idioma más accesible para hispanohablantes.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Italiano',
+    tags: ['clases de italiano online Colombia', 'academia de italiano Colombia', 'aprender italiano Colombia', 'CILS Colombia', 'italiano para ciudadanía italiana'],
+    body: `
+<h2>Por qué el italiano es el idioma más accesible para colombianos</h2>
+<p>El italiano y el español comparten el 80–85% del vocabulario de uso cotidiano. A diferencia del francés (donde la pronunciación es radicalmente diferente) o el alemán (con casos gramaticales complejos), el italiano se escribe prácticamente como se pronuncia y su gramática tiene un punto de partida muy similar al español. Un hispanohablante promedio puede alcanzar conversación básica en italiano en 3–4 meses de estudio serio — la mitad del tiempo que toma el inglés.</p>
+<p>Dicho esto, "accesible" no significa "sin dificultad". El congiuntivo italiano (subjuntivo), la doble consonante, las preposiciones articuladas (del, della, dello, degli) y la distinción formal/informal del "lei" vs "tu" son puntos donde el hispanohablante comete errores persistentes. Un buen programa los trabaja desde el principio, no los ignora.</p>
+
+<h2>Define tu objetivo antes de elegir un programa</h2>
+<p>El plan ideal de italiano depende completamente de para qué lo quieres:</p>
+<ul>
+  <li><strong>Ciudadanía italiana por residencia:</strong> requieres demostrar nivel B1 — el CILS UNO B1 o el CELI 2 son los certificados aceptados.</li>
+  <li><strong>Estudiar en universidad italiana:</strong> la mayoría de programas en italiano exigen B2 o superior. Las universidades públicas italianas son de bajo costo y alta calidad — especialmente para diseño, arquitectura, gastronomía y arte.</li>
+  <li><strong>Trabajo en empresa italiana en Colombia o en Italia:</strong> el nivel mínimo funcional es B1. Para roles de gestión o comunicación directa con clientes italianos, B2 es más adecuado.</li>
+  <li><strong>Viajes y cultura:</strong> con un A2 sólido ya te desenvuelves en Italia. El italiano también es una ventaja en sectores como moda, gastronomía y restauración de arte.</li>
+  <li><strong>Certificación CILS/CELI como diferencial profesional:</strong> el italiano certificado es un diferencial en contextos de negocios internacionales, hostelería de lujo y turismo.</li>
+</ul>
+
+<h2>Lo que diferencia un buen programa de italiano</h2>
+
+<h3>1. Pronunciación y melodía desde el inicio</h3>
+<p>El italiano es un idioma musical — el acento, el ritmo y la entonación afectan directamente cómo te perciben los hablantes nativos. Un buen programa trabaja la fonética (las vocales abiertas y cerradas, la doble consonante, la prosodia) desde el primer mes. Si el programa no incluye práctica oral desde el inicio, vas a "leer bien" pero no "sonar" italiano.</p>
+
+<h3>2. Congiuntivo trabajado gradualmente</h3>
+<p>El congiuntivo en italiano es omnipresente. Aparece en el CILS B1, B2 y C1. Un programa que lo pospone "porque es avanzado" crea estudiantes que llegan al B1 con una brecha enorme. Debe presentarse con contexto y práctica desde el nivel A2–B1.</p>
+
+<h3>3. Preparación específica para CILS o CELI si ese es tu objetivo</h3>
+<p>El CILS y el CELI tienen estructuras de examen diferentes entre sí y diferentes del lenguaje conversacional. Si tu objetivo es la ciudadanía italiana (B1) o la universidad, necesitas un tutor que conozca los criterios de evaluación actuales — no solo que hable italiano bien. Los criterios de producción escrita del CILS, en particular, penalizan errores que no afectan la comunicación real.</p>
+
+<h3>4. Autenticidad del material</h3>
+<p>El italiano de los libros de texto y el italiano real tienen diferencias importantes en registro, expresiones idiomáticas y velocidad. Un buen programa incluye materiales auténticos desde el nivel A2: podcasts, artículos simplificados de periódicos italianos, series italianas. Los mejores tutores usan La Repubblica, VIVO italiano y series como "Suburra" o "Gomorra" (con subtítulos en italiano, no en español).</p>
+
+<h2>Señales de alerta al elegir un curso de italiano</h2>
+<ul>
+  <li><strong>"Aprende italiano conversacional sin gramática":</strong> el italiano sin gramática produce un nivel que se estanca en A2. La gramática italiana es el andamiaje — no el enemigo.</li>
+  <li><strong>No incluye práctica del Parlato desde el inicio:</strong> si el programa es solo lectura y escritura, no te prepara para el CILS o para hablar con italianos reales.</li>
+  <li><strong>Grupos de más de 6 personas para nivel inicial:</strong> los errores de pronunciación y congiuntivo necesitan corrección individual e inmediata.</li>
+  <li><strong>Tutor sin formación en CILS/CELI:</strong> conocer italiano y saber preparar un examen son competencias diferentes.</li>
+</ul>
+
+<h2>¿Cuánto tiempo necesitas para el CILS?</h2>
+<table>
+  <thead><tr><th>Nivel CILS</th><th>Horas de estudio</th><th>Alcance</th></tr></thead>
+  <tbody>
+    <tr><td>A2</td><td>120–200 h</td><td>Conversación cotidiana básica, viajes</td></tr>
+    <tr><td>B1 (UNO)</td><td>300–450 h</td><td>Ciudadanía italiana; trabajo básico</td></tr>
+    <tr><td>B2 (DUE)</td><td>550–800 h</td><td>Universidad italiana; trabajo formal</td></tr>
+    <tr><td>C1 (TRE)</td><td>900–1.300 h</td><td>Posgrado; docentes; traducción profesional</td></tr>
+  </tbody>
+</table>
+<p>Para hispanohablantes, estos tiempos se reducen un 20–30% comparado con hablantes de inglés u otras lenguas no romances — especialmente en vocabulario y comprensión escrita.</p>
+
+<h2>WeLearn y las clases de italiano online</h2>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. Empezamos con una sesión de diagnóstico gratuita que evalúa tu nivel y diseña el plan exacto para tu objetivo — sea el B1 para ciudadanía, el B2 para la universidad o la fluidez conversacional para viajes y trabajo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20italiano%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a> para más información.</p>
+<p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: guía completa para certificar tu italiano desde Colombia</a> y <a href="/blog/clases-de-frances-online-colombia">Clases de francés online en Colombia: guía para elegir bien</a>.</p>
+    `,
+  },
+  // ── Article 44 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-portugues-online-colombia',
+    title: 'Clases de portugués online en Colombia: guía para elegir bien',
+    description:
+      'Cómo elegir clases de portugués online en Colombia: qué diferencia un programa serio, cuánto tiempo necesitas para el Celpe-Bras y por qué el portugués brasileño es estratégico para colombianos en 2026.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Portugués',
+    tags: ['clases de portugués online Colombia', 'academia de portugués Colombia', 'aprender portugués Colombia', 'Celpe-Bras Colombia', 'portugués brasileño Colombia'],
+    body: `
+<h2>Por qué el portugués es estratégico para colombianos en 2026</h2>
+<p>Colombia y Brasil comparten frontera (Leticia–Tabatinga), una creciente relación comercial y un mercado laboral cada vez más interconectado. Brasil es la 9ª economía mundial: tiene las mejores universidades de América Latina (USP, Unicamp, UFRJ) y un mercado laboral que activamente busca profesionales latinoamericanos en sectores como tecnología, energía, agro y fintech. Para los colombianos, el portugués brasileño es el segundo idioma con mejor retorno de inversión después del inglés — y el más rápido de aprender.</p>
+<p>Sin embargo, la demanda de clases de portugués creció más rápido que la calidad de la oferta. Esta guía te ayuda a encontrar el programa correcto.</p>
+
+<h2>Define tu objetivo: brasileño vs. europeo</h2>
+<p>El portugués de Brasil y el de Portugal son el mismo idioma con variantes importantes de pronunciación, vocabulario y registro formal. El Celpe-Bras (el examen oficial brasileño) evalúa exclusivamente el portugués de Brasil. Si tu objetivo es estudiar o trabajar en Brasil, aprender el portugués europeo primero es un error que ralentiza tu progreso.</p>
+<p>Los objetivos más comunes de colombianos que estudian portugués:</p>
+<ul>
+  <li><strong>Acceder a universidades brasileñas:</strong> el Celpe-Bras Intermediário Superior es el mínimo para la mayoría de programas de posgrado en la USP, Unicamp y la UFRJ. Las universidades públicas brasileñas tienen bajísimo costo para extranjeros.</li>
+  <li><strong>Trabajar en empresa brasileña en Colombia o en Brasil:</strong> el nivel funcional mínimo es B1 equivalente (Intermediário del Celpe-Bras).</li>
+  <li><strong>Homologar títulos profesionales en Brasil:</strong> médicos, abogados e ingenieros colombianos que quieren ejercer en Brasil deben demostrar nivel de portugués — el Celpe-Bras es el examen aceptado.</li>
+  <li><strong>Fluidez conversacional para comercio Colombia-Brasil:</strong> el creciente intercambio comercial en el corredor Bogotá–Leticia–Manaus y en el Eje Cafetero crea demanda de profesionales bilingües.</li>
+</ul>
+
+<h2>Lo que diferencia un buen programa de portugués brasileño</h2>
+
+<h3>1. Enfoque en el portugués de Brasil desde el inicio</h3>
+<p>Un tutor que enseña portugués europeo mezclado con brasileño crea confusión. Las diferencias de pronunciación (la reducción vocálica brasileña, el "você" vs "tu", las gírias), de vocabulario (ônibus vs autocarro, celular vs telemóvel) y de registro son significativas. Si tu objetivo es el Celpe-Bras, el programa debe ser 100% brasileño.</p>
+
+<h3>2. Preparación para las tarefas del Celpe-Bras</h3>
+<p>El Celpe-Bras no evalúa gramática aislada. Evalúa si puedes usar el portugués para hacer cosas reales: escribir una carta de reclamación, dar una opinión sobre un texto, participar en una conversación sobre un tema de la actualidad brasileña. Los tutores que no conocen el formato específico del Celpe-Bras no pueden prepararte adecuadamente — aunque hablen portugués perfectamente.</p>
+
+<h3>3. Cultura e idioma integrados</h3>
+<p>El portugués de Brasil está profundamente ligado a la cultura: música (sertanejo, forró, MPB), televisión (Globo), jerga regional y humor. Un buen programa integra cultura desde el principio — no como "bonus", sino como parte del método. Los candidatos que solo estudian gramática sin exposición cultural siempre tienen una comprensión auditiva débil en el Celpe-Bras.</p>
+
+<h3>4. Producción oral constante</h3>
+<p>El Celpe-Bras tiene una parte oral significativa (Interação Oral): una conversación de 20 minutos con un evaluador sobre textos y temas de la actualidad. Los programas que no practican conversación desde el inicio producen candidatos que leen bien pero fallan en la parte oral.</p>
+
+<h2>Señales de alerta al elegir un curso de portugués</h2>
+<ul>
+  <li><strong>El tutor mezcla portugués de Brasil con el de Portugal:</strong> son variantes que se pueden aprender simultáneamente a nivel avanzado, pero para principiantes crea interferencia.</li>
+  <li><strong>No incluye material auditivo auténtico brasileño:</strong> series como "Narcos: México" en doblaje brasileño o "3%" en Netflix, podcasts como "Café Brasil" — son herramientas básicas que un buen tutor usa.</li>
+  <li><strong>No hay práctica de escritura al estilo Celpe-Bras:</strong> las "tarefas escritas" del Celpe-Bras tienen un formato específico que hay que practicar repetidamente.</li>
+  <li><strong>Promesas de "portugués en 2 meses":</strong> el portugués es rápido para hispanohablantes, pero alcanzar el Intermediário Superior del Celpe-Bras toma 10–16 meses de práctica constante — no semanas.</li>
+</ul>
+
+<h2>¿Cuánto tiempo necesitas para el Celpe-Bras?</h2>
+<table>
+  <thead><tr><th>Nivel Celpe-Bras</th><th>Horas de estudio</th><th>Alcance</th></tr></thead>
+  <tbody>
+    <tr><td>Intermediário</td><td>250–400 h</td><td>Comunicación básica; contextos simples</td></tr>
+    <tr><td>Intermediário Superior</td><td>450–650 h</td><td>Universidades brasileñas; trabajo de equipo</td></tr>
+    <tr><td>Avançado</td><td>700–1.000 h</td><td>Trabajo profesional; homologación de títulos</td></tr>
+    <tr><td>Superior</td><td>1.100–1.400 h</td><td>Docencia; traducción; medicina en Brasil</td></tr>
+  </tbody>
+</table>
+<p>Los hispanohablantes llegan al Intermediário 30–40% más rápido que los hablantes de inglés — principalmente en comprensión lectora y producción escrita. La comprensión oral con acento carioca o paulista toma más tiempo.</p>
+
+<h2>WeLearn y las clases de portugués online</h2>
+<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. La clase diagnóstico gratuita evalúa tu nivel y define el camino exacto hacia el nivel que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20portugu%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
+<p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/clases-de-italiano-online-colombia">Clases de italiano online en Colombia: guía para elegir bien</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

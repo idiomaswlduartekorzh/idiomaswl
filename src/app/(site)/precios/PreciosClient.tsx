@@ -48,14 +48,14 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
   ],
   italiano: [
+    { cat: 'Italiano', color: '#009246', title: 'Clases de italiano online en Colombia: guía para elegir bien', slug: 'clases-de-italiano-online-colombia' },
     { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia', slug: 'cils-celi-certificacion-italiano-colombia' },
     { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
-    { cat: 'Inglés',   color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
   ],
   portugues: [
+    { cat: 'Portugués', color: '#166534', title: 'Clases de portugués online en Colombia: guía para elegir bien', slug: 'clases-de-portugues-online-colombia' },
     { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
     { cat: 'Método',    color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
-    { cat: 'Inglés',    color: '#1a4fcc', title: 'Niveles A1–C2: qué significa cada nivel y para qué sirve', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
   ],
 };
 
