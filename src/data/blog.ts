@@ -4837,6 +4837,452 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Hangul en 1 semana: la guía definitiva para hispanohablantes</a> y <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos</a>.</p>
     `,
   },
+  // ── ARTICLE 67 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-academic-vs-general-training-cual-elegir',
+    title: 'IELTS Academic vs IELTS General Training: cuál debes tomar y por qué',
+    description: 'Diferencia entre IELTS Academic y General Training: qué evalúa cada uno, cuándo usarlo, puntajes requeridos y cuál te conviene según tu objetivo.',
+    category: 'IELTS',
+    tags: ['IELTS Academic', 'IELTS General Training', 'examen IELTS', 'inglés certificación'],
+    date: '2026-05-20',
+    readTime: 7,
+    body: `
+<p>Una de las preguntas más frecuentes antes de inscribirse al IELTS es: ¿Academic o General Training? Tomar la versión equivocada puede invalidarte el resultado ante una universidad o migración — aunque tu puntaje haya sido excelente. Esta guía resuelve la duda de una vez por todas.</p>
+
+<h2>La diferencia fundamental</h2>
+<p>Ambas versiones miden las mismas habilidades (Reading, Listening, Writing y Speaking) y comparten el mismo Listening y Speaking. La diferencia está en <strong>Reading</strong> y <strong>Writing</strong>:</p>
+
+<table>
+  <thead><tr><th>Módulo</th><th>Academic</th><th>General Training</th></tr></thead>
+  <tbody>
+    <tr><td>Reading</td><td>Textos académicos (revistas, libros, periódicos científicos). Mayor complejidad léxica y estructura argumentativa.</td><td>Textos del mundo laboral y cotidiano: avisos, manuales, artículos de opinión. Vocabulario más funcional.</td></tr>
+    <tr><td>Writing Task 1</td><td>Describe un gráfico, tabla, diagrama o mapa. Mínimo 150 palabras.</td><td>Escribe una carta (formal, semiformal o informal). Mínimo 150 palabras.</td></tr>
+    <tr><td>Writing Task 2</td><td>Ensayo argumentativo (igual en ambas versiones). Mínimo 250 palabras.</td><td>Ensayo argumentativo (igual). Mínimo 250 palabras.</td></tr>
+    <tr><td>Listening</td><td>Idéntico en ambas versiones.</td><td>Idéntico en ambas versiones.</td></tr>
+    <tr><td>Speaking</td><td>Idéntico en ambas versiones.</td><td>Idéntico en ambas versiones.</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuándo necesitas IELTS Academic?</h2>
+<ul>
+  <li><strong>Estudios universitarios de pregrado o posgrado</strong> en el Reino Unido, Australia, Canadá, Irlanda, Nueva Zelanda y otros países angloparlantes. Es el requisito estándar.</li>
+  <li><strong>Programas de residencia médica y profesiones reguladas</strong> (medicina, enfermería, farmacia, odontología) en Australia, UK y Canadá. Muchas juntas profesionales exigen IELTS Academic específicamente.</li>
+  <li><strong>Becas y programas académicos</strong> como Chevening, Australia Awards, Fulbright (en algunos casos), GKS.</li>
+  <li><strong>Registro profesional</strong> en el UK o Australia (ingenieros, profesores, contadores): generalmente Academic.</li>
+</ul>
+
+<h2>¿Cuándo necesitas IELTS General Training?</h2>
+<ul>
+  <li><strong>Visa de trabajo o residencia permanente</strong> en Australia (subclass 189, 190, 491), Canadá (Express Entry, PNP), Nueva Zelanda, UK Skilled Worker.</li>
+  <li><strong>Programas de migración familiar</strong> (reagrupación familiar en UK, Australia, Canadá).</li>
+  <li><strong>Cursos cortos o de formación no universitaria</strong> en UK o Australia (diplomas, cursos técnicos, certificaciones profesionales).</li>
+  <li><strong>Permisos de trabajo temporales</strong> en algunos países donde el inglés es requisito de visa.</li>
+</ul>
+
+<h2>Puntajes requeridos por objetivo</h2>
+<table>
+  <thead><tr><th>Objetivo</th><th>Versión</th><th>Puntaje típico</th></tr></thead>
+  <tbody>
+    <tr><td>Maestría en UK/Australia</td><td>Academic</td><td>Overall 6.5–7.0 (mín. 6.0 por módulo)</td></tr>
+    <tr><td>MBA top-tier</td><td>Academic</td><td>Overall 7.0–7.5</td></tr>
+    <tr><td>Enfermería en UK (NMC)</td><td>Academic</td><td>Overall 7.0 (mín. 7.0 en cada módulo)</td></tr>
+    <tr><td>Medicina en Australia (AMC)</td><td>Academic</td><td>Overall 7.5 (mín. 7.0 por módulo)</td></tr>
+    <tr><td>Express Entry Canadá</td><td>General</td><td>CLB 9 = 8.0 L/R, 7.5 W/S (para puntos máximos)</td></tr>
+    <tr><td>Residencia Australia (189/190)</td><td>General o Academic</td><td>Competent = 6.0 cada módulo</td></tr>
+    <tr><td>Skilled Worker UK</td><td>General</td><td>B1 = 4.0 por módulo (SELT approved)</td></tr>
+    <tr><td>Curso técnico/diploma UK</td><td>General</td><td>Overall 5.5–6.0</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Puede usarse Academic donde piden General Training (o viceversa)?</h2>
+<p>Para migración: muchos países aceptan <em>ambas</em> versiones. Australia y Canadá aceptan tanto Academic como General Training para visas de trabajo/residencia. Sin embargo, si tu proceso es específicamente académico (una universidad), no aceptan General Training.</p>
+<p><strong>Regla práctica:</strong></p>
+<ul>
+  <li>Si vas a estudiar en una universidad → <strong>Academic</strong> siempre.</li>
+  <li>Si vas a trabajar o migrar (sin propósito universitario) → <strong>General Training</strong>.</li>
+  <li>Si tienes planes de estudiar Y migrar → considera hacer <strong>Academic</strong> (más exigente, pero válido para ambos en muchos casos).</li>
+</ul>
+
+<h2>¿Cuál es más difícil?</h2>
+<p>El IELTS Academic tiene un Reading significativamente más complejo, con vocabulario especializado y textos densos de revistas académicas. El Writing Task 1 Academic (describir gráficos) también tiene una curva de aprendizaje distinta a la carta del General. Sin embargo, los puntajes se calculan de la misma manera y la escala de banda es la misma para ambas versiones.</p>
+
+<h2>¿Se puede cambiar de versión el día del examen?</h2>
+<p>No. Debes inscribirte en la versión correcta desde el inicio. Si te equivocas, el resultado no será válido para tu propósito aunque el puntaje sea bueno. Verifica siempre con la institución o proceso migratorio exactamente qué versión piden.</p>
+
+<h2>Preparación en WeLearn</h2>
+<p>En WeLearn preparamos las dos versiones del IELTS. Si no tienes claro cuál necesitas, la primera sesión de diagnóstico es gratuita y te ayudamos a definir la versión, el puntaje objetivo y el plan de estudio. <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparaci%C3%B3n%20para%20el%20IELTS%20y%20no%20s%C3%A9%20si%20Academic%20o%20General.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ielts-bandas-0-9-que-significa-cada-puntaje">Bandas IELTS 0–9: qué significa cada puntaje</a> y <a href="/blog/ielts-writing-task-2-guia-completa-para-principiantes">IELTS Writing Task 2: guía completa para principiantes</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 68 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-entrevistas-de-trabajo-en-multinacionales',
+    title: 'Inglés para entrevistas de trabajo en multinacionales: guía práctica',
+    description: 'Cómo preparar una entrevista de trabajo en inglés para multinacionales. Frases clave, errores comunes, estructura de respuestas STAR y recursos.',
+    category: 'Inglés',
+    tags: ['inglés trabajo', 'entrevista trabajo inglés', 'inglés profesional', 'multinacional'],
+    date: '2026-05-21',
+    readTime: 8,
+    body: `
+<p>Tienes el perfil, tienes la experiencia — pero la entrevista será en inglés y eso te genera ansiedad. Es normal. El inglés de trabajo es un registro específico que se puede preparar, y hacerlo bien puede ser la diferencia entre quedar o no quedar en esa multinacional.</p>
+
+<h2>¿Qué nivel de inglés necesitas para una entrevista en multinacional?</h2>
+<p>Depende del rol:</p>
+<table>
+  <thead><tr><th>Rol</th><th>Nivel mínimo real</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>Operativo / soporte técnico</td><td>B1</td><td>Puede seguir instrucciones, responder emails básicos, participar en reuniones simples.</td></tr>
+    <tr><td>Profesional junior</td><td>B2</td><td>Participa en reuniones, redacta reportes, presenta resultados. El nivel más común requerido.</td></tr>
+    <tr><td>Liderazgo, ventas, cliente internacional</td><td>C1</td><td>Negocia, persuade, presenta con fluidez. Usa inglés bajo presión.</td></tr>
+    <tr><td>Dirección / C-suite</td><td>C1–C2</td><td>Inglés natural, rango amplio de registro (formal, informal, técnico).</td></tr>
+  </tbody>
+</table>
+
+<h2>La estructura STAR para respuestas en inglés</h2>
+<p>La mayoría de entrevistas en multinacionales usan preguntas de comportamiento (<em>behavioral questions</em>). La estructura STAR te ayuda a responderlas con claridad:</p>
+<ul>
+  <li><strong>S — Situation</strong>: describe brevemente el contexto.</li>
+  <li><strong>T — Task</strong>: cuál era tu responsabilidad.</li>
+  <li><strong>A — Action</strong>: qué hiciste específicamente.</li>
+  <li><strong>R — Result</strong>: cuál fue el resultado, en lo posible con datos.</li>
+</ul>
+
+<p><strong>Ejemplo de pregunta típica:</strong> "Tell me about a time you had to manage a difficult stakeholder."</p>
+<p><strong>Respuesta STAR:</strong> "In my previous role at [company], a client was unhappy with delivery timelines (S). I was responsible for the account and had to de-escalate the situation (T). I scheduled a call, acknowledged their frustration, and presented a revised timeline with weekly check-ins (A). The client renewed their contract and we exceeded their satisfaction score by 15% that quarter (R)."</p>
+
+<h2>Frases de apertura y cierre que suenan naturales</h2>
+<p><strong>Al inicio de la entrevista:</strong></p>
+<ul>
+  <li>"Thank you for having me — I've been looking forward to this conversation."</li>
+  <li>"I've done quite a bit of research on the role and I'm excited to tell you more about my background."</li>
+</ul>
+<p><strong>Para pedir aclaración sin perder compostura:</strong></p>
+<ul>
+  <li>"Could you clarify what you mean by [X]? I want to make sure I address the right point."</li>
+  <li>"Just to confirm — are you asking about [X] or [Y]?"</li>
+</ul>
+<p><strong>Al cerrar la entrevista:</strong></p>
+<ul>
+  <li>"What does success look like in this role after the first 90 days?"</li>
+  <li>"Is there anything about my background that gives you pause? I'd love to address it directly."</li>
+</ul>
+
+<h2>Errores comunes de colombianos en inglés de entrevista</h2>
+<ul>
+  <li><strong>Traducir literalmente del español</strong>: "I make" en vez de "I am." / "Actually" (en español = en realidad; en inglés = de hecho). Usar "actually" cuando quieres decir "en verdad" puede confundir.</li>
+  <li><strong>No usar conectores de discurso</strong>: hablar en bloques sin "however," "which led to," "as a result," "that said" hace que el inglés suene entrecortado.</li>
+  <li><strong>Hablar demasiado rápido por nervios</strong>: en inglés, las pausas son parte del discurso. Hablar pausado suena más seguro, no más lento.</li>
+  <li><strong>No preparar preguntas para el entrevistador</strong>: en cultura anglosajona, no tener preguntas se interpreta como desinterés.</li>
+  <li><strong>Subjuntivo calcado</strong>: "It is important that you know" (correcto) en vez de "Es importante que sepas" traducido como "It is important that you know" — ok, pero cuidado con "I suggested him to do it" (incorrecto) en vez de "I suggested that he do it."</li>
+</ul>
+
+<h2>Vocabulario de alto impacto en entrevistas</h2>
+<table>
+  <thead><tr><th>En vez de...</th><th>Usa esto</th></tr></thead>
+  <tbody>
+    <tr><td>I worked in a team</td><td>I collaborated cross-functionally</td></tr>
+    <tr><td>I helped</td><td>I contributed to / I facilitated</td></tr>
+    <tr><td>I did many things</td><td>I wore multiple hats</td></tr>
+    <tr><td>It was difficult</td><td>It was a high-stakes / resource-constrained situation</td></tr>
+    <tr><td>I know Excel</td><td>I'm proficient in Excel / I leverage Excel to...</td></tr>
+    <tr><td>I want this job</td><td>I'm particularly drawn to this role because...</td></tr>
+  </tbody>
+</table>
+
+<h2>Plan de preparación de 4 semanas</h2>
+<ul>
+  <li><strong>Semana 1</strong>: Graba tu presentación personal en inglés (2 minutos). Escúchala. Identifica errores de pronunciación y fluidez.</li>
+  <li><strong>Semana 2</strong>: Prepara 8–10 historias STAR de tu experiencia. Escríbelas, practica diciéndolas en voz alta.</li>
+  <li><strong>Semana 3</strong>: Simula entrevistas con un hablante nativo o tutor. Pide retroalimentación específica de gramática y registro.</li>
+  <li><strong>Semana 4</strong>: Practica bajo presión: timer de 90 segundos por respuesta. Trabaja el cierre y las preguntas al entrevistador.</li>
+</ul>
+
+<h2>WeLearn y el inglés profesional</h2>
+<p>Si tienes una entrevista en inglés próxima, nuestras clases 1:1 se enfocan exactamente en el vocabulario, registro y fluidez que necesitas para ese contexto. No es inglés genérico — es tu industria, tu nivel, tu objetivo. <a href="https://wa.me/573005004253?text=Hola%2C%20tengo%20una%20entrevista%20de%20trabajo%20en%20ingl%C3%A9s%20y%20quiero%20prepararme.%20%C2%BFTienen%20clases%20para%20eso%3F" target="_blank" rel="noopener noreferrer">Cuéntanos tu caso por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ingles-b2-c1-para-trabajo-remoto-global">Inglés B2–C1 para trabajo remoto: lo que realmente necesitas</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 69 ──────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-tiempo-para-aprender-un-idioma-desde-cero',
+    title: '¿Cuánto tiempo se necesita para aprender un idioma desde cero?',
+    description: 'Estimaciones reales de tiempo para alcanzar B1, B2 y C1 en inglés, francés, alemán, italiano, portugués y coreano. Con datos del FSI y la experiencia WeLearn.',
+    category: 'Método',
+    tags: ['tiempo aprender idioma', 'FSI idiomas', 'método aprendizaje', 'cuánto tiempo inglés'],
+    date: '2026-05-22',
+    readTime: 8,
+    body: `
+<p>"¿En cuánto tiempo lo aprendo?" Es la primera pregunta que casi todo el mundo hace — y la respuesta honesta es: depende. Pero "depende" no es muy útil si tienes una fecha límite (un examen, una visa, un trabajo). Aquí están los números reales, con contexto.</p>
+
+<h2>La referencia más confiable: el FSI</h2>
+<p>El Foreign Service Institute del gobierno de Estados Unidos ha publicado estimaciones basadas en miles de aprendices angloparlantes adultos en cursos intensivos (entre 25 y 30 horas semanales). Son el estudio más riguroso disponible sobre tiempos de adquisición de idiomas.</p>
+<p>Importante: los datos FSI son para hablantes de inglés aprendiendo desde cero. Para hispanohablantes, los idiomas romances (francés, italiano, portugués) son significativamente más fáciles de lo que el FSI indica — porque ya compartimos base latina con el español.</p>
+
+<h2>Estimaciones por idioma (ajustadas para hispanohablantes)</h2>
+<table>
+  <thead><tr><th>Idioma</th><th>Horas hasta B1</th><th>Horas hasta B2</th><th>Horas hasta C1</th><th>Dificultad relativa</th></tr></thead>
+  <tbody>
+    <tr><td>Inglés</td><td>300–400 h</td><td>600–700 h</td><td>1.000–1.200 h</td><td>⭐⭐ Media</td></tr>
+    <tr><td>Portugués</td><td>150–250 h</td><td>400–500 h</td><td>700–900 h</td><td>⭐ Fácil</td></tr>
+    <tr><td>Italiano</td><td>200–300 h</td><td>450–550 h</td><td>800–1.000 h</td><td>⭐ Fácil</td></tr>
+    <tr><td>Francés</td><td>300–400 h</td><td>600–700 h</td><td>900–1.100 h</td><td>⭐⭐ Media</td></tr>
+    <tr><td>Alemán</td><td>450–600 h</td><td>750–950 h</td><td>1.200–1.500 h</td><td>⭐⭐⭐ Alta</td></tr>
+    <tr><td>Coreano</td><td>700–900 h</td><td>1.200–1.500 h</td><td>2.000+ h</td><td>⭐⭐⭐⭐ Muy alta</td></tr>
+  </tbody>
+</table>
+
+<h2>Convertir horas en tiempo real de tu vida</h2>
+<table>
+  <thead><tr><th>Horas de estudio por semana</th><th>B1 inglés (350 h)</th><th>B2 inglés (650 h)</th></tr></thead>
+  <tbody>
+    <tr><td>2 horas/semana</td><td>175 semanas (≈ 3.4 años)</td><td>325 semanas (≈ 6 años)</td></tr>
+    <tr><td>5 horas/semana</td><td>70 semanas (≈ 16 meses)</td><td>130 semanas (≈ 2.5 años)</td></tr>
+    <tr><td>10 horas/semana</td><td>35 semanas (≈ 8 meses)</td><td>65 semanas (≈ 15 meses)</td></tr>
+    <tr><td>20 horas/semana (intensivo)</td><td>18 semanas (≈ 4 meses)</td><td>33 semanas (≈ 8 meses)</td></tr>
+  </tbody>
+</table>
+<p>Estas son horas de <em>estudio activo</em> — con atención, práctica deliberada y retroalimentación. Ver series sin atención o escuchar música de fondo no cuentan como horas de aprendizaje.</p>
+
+<h2>Factores que aceleran el aprendizaje</h2>
+<ul>
+  <li><strong>Clases 1:1 con retroalimentación en tiempo real</strong>: el método más eficiente conocido. Un tutor detecta y corrige patrones de error que un app nunca detecta.</li>
+  <li><strong>Consistencia diaria</strong>: 30 minutos diarios (3.5 h/semana) supera a 4 horas un solo día a la semana. El cerebro consolida vocabulario y estructuras durante el sueño.</li>
+  <li><strong>Input comprensible</strong>: consumir contenido en el idioma al nivel i+1 (un paso por encima de tu nivel actual). Series con subtítulos en el idioma objetivo, no en español.</li>
+  <li><strong>Output forzado</strong>: hablar y escribir desde el día 1. La producción activa consolida lo que el input pasivo solo introduce.</li>
+  <li><strong>Objetivo claro</strong>: estudiar para un examen específico (IELTS 7.0, DELF B2, TOPIK II) es más eficiente que "quiero aprender inglés" porque estructura el estudio.</li>
+</ul>
+
+<h2>Lo que nadie te dice</h2>
+<p>Las apps de idiomas (Duolingo, Babbel) son buenas para mantenimiento y vocabulario suplementario, pero estudios independientes muestran que llevan a la ilusión de progreso más que a progreso real. Después de 34 horas de Duolingo, el aprendiz promedio alcanza A2 — lo que en un curso estructurado toma 40-60 horas. La diferencia no es enorme, pero la retención y fluidez oral sí son significativamente inferiores.</p>
+
+<h2>¿Y si ya tengo algo de base?</h2>
+<p>Si tienes A2 en inglés (estudiaste en el colegio), tu punto de partida ya está adelantado. El tramo A2→B2 suele tomar entre 350 y 450 horas de estudio activo, no 650. El conocimiento previo, aunque haya dormido años, reduce el tiempo necesario más de lo que la gente espera.</p>
+
+<h2>Conclusión práctica</h2>
+<p>Si tu meta es B2 en inglés y puedes dedicar 8 horas semanales (2 clases + práctica), estás mirando unos 18–20 meses de trabajo constante. Si es coreano hasta TOPIK I (B1), con 8 horas semanales son cerca de 2 años. El camino es largo — por eso importa tanto empezar bien.</p>
+<p>En WeLearn diseñamos un plan personalizado basado en tu nivel actual, tu objetivo y tu disponibilidad real de tiempo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20tiempo%20necesito%20para%20aprender%20%5Bidioma%5D%20y%20c%C3%B3mo%20puedo%20empezar." target="_blank" rel="noopener noreferrer">Cuéntanos qué idioma y cuál es tu meta</a>.</p>
+<p>Lee también: <a href="/blog/aprender-dos-idiomas-a-la-vez-es-posible">¿Se pueden aprender dos idiomas a la vez?</a> y <a href="/blog/metodo-welearn-17-pasos-para-aprender-un-idioma">El método WeLearn de 17 pasos explicado</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 70 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-canada-express-entry-requisitos-2026',
+    title: 'Inglés para migrar a Canadá por Express Entry: CLB, IELTS y puntajes 2026',
+    description: 'Guía completa de inglés para Express Entry Canadá en 2026: niveles CLB, equivalencias IELTS y CELPIP, puntajes mínimos y cómo maximizar tu CRS.',
+    category: 'Migración',
+    tags: ['Express Entry Canadá', 'inglés Canadá', 'CLB IELTS', 'migrar Canadá'],
+    date: '2026-05-23',
+    readTime: 8,
+    body: `
+<p>El inglés es uno de los factores con mayor peso en el Express Entry de Canadá. Un buen puntaje de idioma puede ser la diferencia entre una invitación (ITA) este año o esperar indefinidamente. Esta guía te explica exactamente qué necesitas y cómo lograrlo.</p>
+
+<h2>¿Qué es el CLB (Canadian Language Benchmarks)?</h2>
+<p>El CLB es la escala oficial de Canadá para medir el inglés (y el francés). Va del nivel 1 al 12. Todos los programas de Express Entry piden un CLB mínimo y convierten tu puntaje IELTS o CELPIP al CLB correspondiente.</p>
+
+<h2>Equivalencias CLB ↔ IELTS General Training</h2>
+<table>
+  <thead><tr><th>CLB</th><th>IELTS Reading</th><th>IELTS Writing</th><th>IELTS Listening</th><th>IELTS Speaking</th></tr></thead>
+  <tbody>
+    <tr><td>CLB 4</td><td>3.5</td><td>4.0</td><td>4.5</td><td>4.0</td></tr>
+    <tr><td>CLB 5</td><td>4.0</td><td>5.0</td><td>5.0</td><td>5.0</td></tr>
+    <tr><td>CLB 6</td><td>5.0</td><td>5.5</td><td>5.5</td><td>5.5</td></tr>
+    <tr><td>CLB 7</td><td>6.0</td><td>6.0</td><td>6.0</td><td>6.0</td></tr>
+    <tr><td>CLB 8</td><td>6.5</td><td>6.5</td><td>7.5</td><td>6.5</td></tr>
+    <tr><td>CLB 9</td><td>7.0</td><td>7.0</td><td>8.0</td><td>7.0</td></tr>
+    <tr><td>CLB 10</td><td>7.5</td><td>7.5</td><td>8.5</td><td>7.5</td></tr>
+    <tr><td>CLB 11</td><td>8.0</td><td>8.0</td><td>8.5</td><td>8.0</td></tr>
+    <tr><td>CLB 12</td><td>9.0</td><td>9.0</td><td>9.0</td><td>9.0</td></tr>
+  </tbody>
+</table>
+
+<h2>Puntajes mínimos por programa</h2>
+<table>
+  <thead><tr><th>Programa</th><th>CLB mínimo</th><th>IELTS equivalente (General)</th></tr></thead>
+  <tbody>
+    <tr><td>Federal Skilled Worker (FSW)</td><td>CLB 7</td><td>6.0 en cada módulo</td></tr>
+    <tr><td>Canadian Experience Class (CEC)</td><td>CLB 7 (NOC TEER 0/1) o CLB 5 (TEER 2/3)</td><td>6.0 o 5.0 por módulo</td></tr>
+    <tr><td>Federal Skilled Trades (FST)</td><td>CLB 5 Reading/Writing, CLB 4 Speaking/Listening</td><td>~5.0 R/W, ~4.5 S/L</td></tr>
+  </tbody>
+</table>
+
+<h2>Cómo el inglés suma puntos CRS</h2>
+<p>El CRS (Comprehensive Ranking System) asigna hasta <strong>136 puntos</strong> por idioma si estás sin pareja, y hasta <strong>128 puntos</strong> si estás con pareja. La siguiente tabla muestra puntos por CLB en la primera lengua oficial (inglés o francés):</p>
+<table>
+  <thead><tr><th>CLB</th><th>Sin pareja (cada habilidad)</th><th>Total 4 habilidades</th></tr></thead>
+  <tbody>
+    <tr><td>CLB 7</td><td>17 pts</td><td>68 pts</td></tr>
+    <tr><td>CLB 8</td><td>23 pts</td><td>92 pts</td></tr>
+    <tr><td>CLB 9</td><td>31 pts</td><td>124 pts</td></tr>
+    <tr><td>CLB 10+</td><td>34 pts</td><td>136 pts</td></tr>
+  </tbody>
+</table>
+<p>La diferencia entre CLB 7 y CLB 9 en el CRS es de <strong>56 puntos</strong> — una diferencia enorme que en muchos draws equivale a 6–12 meses de espera menos.</p>
+
+<h2>IELTS vs CELPIP: ¿cuál elegir?</h2>
+<p>Ambos son aceptados por IRCC (Immigration, Refugees and Citizenship Canada). El CELPIP es exclusivamente en computador y diseñado específicamente para Canadá. Ventajas del CELPIP:</p>
+<ul>
+  <li>Más rápido: resultado en 4–5 días (vs 2–13 días para IELTS).</li>
+  <li>El Speaking es por computador (grabas tu respuesta), lo que elimina la ansiedad de hablar con un examinador.</li>
+  <li>La escala CELPIP es directamente CLB (misma numeración), más fácil de interpretar.</li>
+</ul>
+<p>Ventajas del IELTS General Training:</p>
+<ul>
+  <li>Más centros de examen disponibles en Colombia.</li>
+  <li>Reconocido por más instituciones internacionales (también válido para Australia, UK, NZ).</li>
+</ul>
+
+<h2>Estrategia recomendada para colombianos</h2>
+<ol>
+  <li>Evalúa tu nivel actual con un simulacro IELTS General Training.</li>
+  <li>Calcula cuántos puntos CRS ganas si subes de CLB 7 a CLB 9 (generalmente ~56 puntos).</li>
+  <li>Decide si vale la pena invertir 3–6 meses de preparación para ese salto o si tu CRS ya es competitivo.</li>
+  <li>Si el inglés no es tu cuello de botella, considera agregar puntos por francés (segunda lengua oficial): CLB 5+ en francés suma puntos adicionales de bilinguismo.</li>
+</ol>
+
+<h2>WeLearn y Express Entry</h2>
+<p>Preparamos candidatos para IELTS General Training con foco específico en los puntajes que maximizan el CRS. Si tu objetivo es CLB 9 (IELTS 7.0–8.0 por módulo), contáctanos: diseñamos un plan de preparación con fecha objetivo de examen. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20General%20para%20Express%20Entry%20de%20Canad%C3%A1.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-migrar-a-nueva-zelanda-ielts">Inglés para migrar a Nueva Zelanda con IELTS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 71 ──────────────────────────────────────────────────────────
+  {
+    slug: 'aleman-a1-a-b1-cuanto-tiempo-y-plan-de-estudio',
+    title: 'Alemán de A1 a B1: cuánto tiempo toma y cómo organizarte',
+    description: 'Tiempo real para alcanzar B1 en alemán desde cero, etapas A1, A2, B1, errores comunes de hispanohablantes y plan de estudio semana a semana.',
+    category: 'Alemán',
+    tags: ['aprender alemán', 'alemán A1 B1', 'tiempo alemán', 'plan alemán'],
+    date: '2026-05-24',
+    readTime: 7,
+    body: `
+<p>El B1 en alemán es el nivel de quiebre: es el mínimo para muchas visas de trabajo, para reunificación familiar en Alemania, y para muchos programas de reconocimiento de títulos. Pero el alemán tiene fama de difícil — ¿cuánto tiempo realmente toma y cómo se organiza el camino?</p>
+
+<h2>Tiempo estimado A1 → B1 para hispanohablantes</h2>
+<table>
+  <thead><tr><th>Etapa</th><th>Horas de estudio</th><th>Duración típica (8 h/semana)</th><th>Hitos</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>80–120 h</td><td>2–3 meses</td><td>Alfabeto, género, números, presente, saludos, rutinas</td></tr>
+    <tr><td>A2</td><td>150–200 h</td><td>4–5 meses</td><td>Pasado (Perfekt), dativo, preposiciones básicas, compras, viajes</td></tr>
+    <tr><td>B1</td><td>200–300 h</td><td>5–7 meses</td><td>Konjunktiv II, futuro, Passiv, vocabulario laboral, textos auténticos</td></tr>
+  </tbody>
+</table>
+<p><strong>Total A1 → B1: 430–620 horas de estudio activo.</strong> Con 8 horas semanales (2 clases de 1h + práctica diaria), estás mirando entre 12 y 18 meses.</p>
+
+<h2>Por qué el alemán es difícil para hispanohablantes</h2>
+<ul>
+  <li><strong>Los géneros (der/die/das)</strong>: el español tiene 2 géneros, el alemán 3 — y los artículos cambian según el caso (Nominativ, Akkusativ, Dativ, Genitiv). Hay 16 formas del artículo definido. Se aprenden con práctica, no con lógica.</li>
+  <li><strong>Las declinaciones (casos gramaticales)</strong>: en español el caso se indica por posición; en alemán por las terminaciones de artículos y adjetivos. "Ich sehe den Mann" vs "Der Mann sieht mich" — el orden cambia sin perder claridad porque el caso ya está marcado.</li>
+  <li><strong>Los verbos separables (Trennbare Verben)</strong>: "aufmachen" (abrir) → "Ich mache die Tür auf." El prefijo va al final. El cerebro hispanohablante tarda en anticipar el final de la oración.</li>
+  <li><strong>Las palabras compuestas</strong>: "Donaudampfschiffahrtsgesellschaftskapitän" — sí, existe. Pero las compuestas cotidianas (Krankenhaus = hospital, literalmente "casa de enfermos") son lógicas y fascinantes.</li>
+</ul>
+
+<h2>Lo que sí ayuda a hispanohablantes</h2>
+<ul>
+  <li><strong>Cognados latinos</strong>: alemán y español comparten raíces indoeuropeas. Muchas palabras son reconocibles: Student, Musik, Hotel, Telefon, Situation, Analyse.</li>
+  <li><strong>Pronunciación fonética</strong>: a diferencia del inglés, el alemán se pronuncia como se escribe. Una vez que aprendes las reglas (ü, ö, ä, sch, ch), no hay sorpresas.</li>
+  <li><strong>Estructura lógica</strong>: aunque complejo, el alemán es muy sistemático. Las reglas tienen excepciones, pero son menos que en inglés.</li>
+</ul>
+
+<h2>Plan de estudio semana a semana (fase A1–A2)</h2>
+<table>
+  <thead><tr><th>Semanas</th><th>Foco principal</th><th>Práctica recomendada</th></tr></thead>
+  <tbody>
+    <tr><td>1–4</td><td>Fonética, alfabeto, saludos, números, artículos (Nominativ)</td><td>15 min/día Anki con géneros, audios de pronunciación</td></tr>
+    <tr><td>5–8</td><td>Verbos en presente (regular e irregular), oraciones simples</td><td>Escribir 5 frases diarias sobre tu rutina en alemán</td></tr>
+    <tr><td>9–12</td><td>Acusativo, preposiciones (mit, bei, in, an...), vocabulario cotidiano</td><td>Escuchar Deutsche Welle Langsam gesprochene Nachrichten</td></tr>
+    <tr><td>13–16</td><td>Pretérito (Perfekt) con haben/sein, verbos modales (können, müssen, wollen)</td><td>Narrar el fin de semana pasado en 5 oraciones</td></tr>
+    <tr><td>17–20</td><td>Dativo, verbos separables, conectores (weil, dass, obwohl)</td><td>Textos de nivel A2 de Goethe Institut (gratuitos online)</td></tr>
+    <tr><td>21–26</td><td>B1: Konjunktiv II, Passiv, vocabulario laboral, textos auténticos</td><td>Podcast Easy German, noticias básicas en alemán</td></tr>
+  </tbody>
+</table>
+
+<h2>Exámenes de alemán disponibles para colombianos</h2>
+<ul>
+  <li><strong>Goethe-Zertifikat A1, A2, B1, B2, C1</strong>: el más reconocido globalmente. Válido para visas alemanas y reconocimiento de títulos. El Goethe Institut tiene sede en Bogotá.</li>
+  <li><strong>TestDaF</strong>: para acceso a universidades alemanas (equivale a C1). Más especializado que el Goethe B2/C1.</li>
+  <li><strong>DSH</strong>: examen de acceso directo a universidades alemanas. Solo en instituciones certificadas.</li>
+</ul>
+
+<h2>WeLearn y el alemán</h2>
+<p>Preparamos alemán desde A1 con instructores especializados. El método WeLearn adapta el ritmo a tu velocidad — algunos completan A1→B1 en 12 meses, otros en 18, según disponibilidad. Lo importante es la consistencia. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20a%20aprender%20alem%C3%A1n%20desde%20cero%20con%20WeLearn.%20%C2%BFC%C3%B3mo%20funciona%3F" target="_blank" rel="noopener noreferrer">Agenda tu clase de diagnóstico gratis</a>.</p>
+<p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/trabajar-en-alemania-nivel-aleman-requerido">Trabajar en Alemania: qué nivel de alemán necesitas</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 72 ──────────────────────────────────────────────────────────
+  {
+    slug: 'visa-trabajo-corea-e7-requisitos-nivel-coreano',
+    title: 'Visa de trabajo E-7 en Corea del Sur: nivel de coreano y requisitos para colombianos',
+    description: 'Todo sobre la visa E-7 para trabajar en Corea del Sur: nivel de coreano requerido, sectores, documentos, diferencia con E-9 y H-2, y cómo prepararte.',
+    category: 'Coreano',
+    tags: ['visa trabajo Corea', 'E-7 Corea del Sur', 'trabajar en Corea', 'TOPIK visa'],
+    date: '2026-05-25',
+    readTime: 8,
+    body: `
+<p>La visa E-7 (Actividades Específicas) es la puerta de entrada al mercado laboral coreano para profesionales calificados de todo el mundo, incluidos colombianos. Si quieres trabajar en Corea en tu área de especialización — tecnología, ingeniería, diseño, cocina, deportes — esta es tu visa.</p>
+
+<h2>¿Qué es la visa E-7?</h2>
+<p>La visa E-7 autoriza trabajo en categorías específicas definidas por el gobierno coreano (MOEL — Ministerio de Empleo y Trabajo). A diferencia de visas de trabajo no cualificado (E-9, H-2), la E-7 está diseñada para profesionales con título universitario y experiencia relevante.</p>
+
+<h2>Sectores y ocupaciones E-7 para latinoamericanos</h2>
+<table>
+  <thead><tr><th>Categoría</th><th>Ejemplos de ocupaciones</th><th>Nivel coreano típicamente requerido</th></tr></thead>
+  <tbody>
+    <tr><td>Tecnología de la información</td><td>Desarrollador de software, ingeniero de datos, diseñador UX</td><td>Ninguno requerido legalmente (inglés aceptado en muchas empresas tech)</td></tr>
+    <tr><td>Manufactura especializada</td><td>Ingeniero de producción, técnico de calidad</td><td>TOPIK II nivel 3 recomendado (B1)</td></tr>
+    <tr><td>Gastronomía / Chefs</td><td>Chef de cocina latinoamericana, instructores culinarios</td><td>Sin requisito formal, pero coreano básico (A2–B1) muy útil</td></tr>
+    <tr><td>Educación y lengua</td><td>Profesor de español nativo (E-2 reemplazada por E-7 en algunos casos)</td><td>Sin requisito formal para enseñanza de español</td></tr>
+    <tr><td>Diseño y arte</td><td>Diseñador industrial, artista, productor musical</td><td>TOPIK I nivel 2 recomendado</td></tr>
+    <tr><td>Salud y medicina</td><td>Profesionales con licencia homologada en Corea</td><td>TOPIK II nivel 4–5 (B2–C1) + examen de licencia en coreano</td></tr>
+    <tr><td>K-Content (entretenimiento)</td><td>Productor, actor, bailarín, influencer certificado</td><td>Variable según contrato</td></tr>
+  </tbody>
+</table>
+
+<h2>Requisitos principales para la E-7</h2>
+<ul>
+  <li><strong>Oferta de trabajo de empresa coreana</strong>: la empresa patrocinadora debe estar registrada en Corea y cumplir requisitos de tamaño (para startups se aplican condiciones distintas).</li>
+  <li><strong>Título universitario</strong>: generalmente se exige pregrado en área relacionada con el trabajo. En algunos casos, experiencia comprobada puede sustituir el título.</li>
+  <li><strong>Experiencia relevante</strong>: mínimo 1 año (para ciertas categorías) o según el tipo de ocupación.</li>
+  <li><strong>Salario mínimo</strong>: debe ser igual o superior al salario mínimo coreano (en 2026, alrededor de KRW 2.096.270/mes ≈ COP 6,5M).</li>
+  <li><strong>Revisión por puntos</strong>: el sistema E-7 usa un ranking de puntos (edad, educación, experiencia, idioma coreano, salario ofrecido). El idioma coreano suma puntos aunque no sea obligatorio.</li>
+</ul>
+
+<h2>¿El coreano es obligatorio para la E-7?</h2>
+<p>Legalmente, no para todas las categorías. Sin embargo:</p>
+<ul>
+  <li><strong>TOPIK II nivel 3 suma puntos</strong> en el sistema de evaluación de la E-7, lo que puede ser decisivo en sectores competitivos.</li>
+  <li><strong>TOPIK II nivel 5–6</strong> suma aún más puntos y abre puertas a empresas más grandes y salarios más altos.</li>
+  <li>Para médicos, enfermeras y profesionales de la salud, el TOPIK II nivel 4–5 es prácticamente indispensable porque el examen de licencia profesional es en coreano.</li>
+  <li>Para trabajo en startups de tecnología en Seúl (muchas operan en inglés), el coreano puede no ser el factor decisivo — pero siempre suma.</li>
+</ul>
+
+<h2>E-7 vs E-9 vs H-2: diferencias clave</h2>
+<table>
+  <thead><tr><th>Visa</th><th>Tipo de trabajo</th><th>Elegibilidad Colombia</th><th>Duración</th></tr></thead>
+  <tbody>
+    <tr><td>E-7</td><td>Trabajo especializado/profesional</td><td>Sí (con oferta + requisitos)</td><td>Hasta 3 años, renovable</td></tr>
+    <tr><td>E-9</td><td>Trabajo no cualificado (manufactura, agricultura, pesca)</td><td>No (solo países con MOU con Corea — Colombia no está incluida en 2026)</td><td>—</td></tr>
+    <tr><td>H-2</td><td>Trabajo libre para coreanos de ultramar (F-4 asociada)</td><td>No (requiere ascendencia coreana)</td><td>—</td></tr>
+  </tbody>
+</table>
+<p>Colombia no hace parte del programa E-9, por lo que la E-7 es la vía más accesible para trabajo en Corea sin ascendencia coreana.</p>
+
+<h2>Ruta recomendada para colombianos</h2>
+<ol>
+  <li><strong>Definir sector de aplicación</strong>: tecnología, gastronomía, diseño, etc.</li>
+  <li><strong>Aprender coreano hasta TOPIK I nivel 2 (mínimo)</strong>: 6–12 meses de estudio constante. Da una ventaja real en el sistema de puntos.</li>
+  <li><strong>Aplicar a ofertas en plataformas coreanas</strong>: Saramin (사람인), JobKorea, LinkedIn Corea.</li>
+  <li><strong>Conseguir la carta de oferta y solicitar la visa</strong> en el Consulado de Corea en Bogotá.</li>
+</ol>
+
+<h2>WeLearn y el coreano para Corea</h2>
+<p>Preparamos coreano con enfoque en el TOPIK y en vocabulario laboral real. Si tu meta es trabajar en Corea, aprender el idioma es la inversión más estratégica que puedes hacer ahora. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20para%20trabajar%20en%20Corea%20del%20Sur.%20%C2%BFC%C3%B3mo%20puedo%20empezar%3F" target="_blank" rel="noopener noreferrer">Primera clase de diagnóstico gratis — escríbenos</a>.</p>
+<p>Lee también: <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos</a> y <a href="/blog/topik-i-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
