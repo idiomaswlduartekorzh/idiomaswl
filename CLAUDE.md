@@ -110,7 +110,7 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con **30 artículos** (IELTS×13, TOEFL×4, ICFES×3, Coreano×6, Migración×3, Alemán×1, Portugués×1, Método×1, Francés×1) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings |
+| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con **35 artículos** (IELTS×15, TOEFL×4, ICFES×3, Coreano×7, Migración×4, Alemán×1, Portugués×1, Método×2, Francés×1, Inglés×1) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings |
 | M4.2 | Sistema de testimonios en video | **PENDIENTE** — necesita videos de David |
 | M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — OG images edge en todas las rutas públicas, BreadcrumbList en todas las páginas, poweredByHeader: false, next/font/google para Geist. Pendiente: medir Lighthouse mobile en producción |
 
@@ -128,15 +128,16 @@ public/
 - **Nav links**: Home, Inglés, Coreano, Exámenes, Blog, Precios (en `SiteNav.tsx`). Correcto.
 - **BreadcrumbList**: añadido a todos los pages: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion, blog, blog/[slug].
 - **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes).
-- **30 artículos blog**: 1-25 (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + 26-Goethe, 27-Celpe-Bras, 28-Método aprendizaje, 29-IELTS Writing Task 1, 30-DELF/DALF.
+- **35 artículos blog**: 1-25 (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + 26-Goethe, 27-Celpe-Bras, 28-Método aprendizaje, 29-IELTS Writing Task 1, 30-DELF/DALF, 31-IELTS Listening errores, 32-Costo inglés Colombia, 33-TOPIK II subir nivel, 34-Inglés trabajo remoto, 35-Migrar España inglés.
 - **TOPIK Diagnóstico**: `src/data/mocks/topik-set-1.ts` (30 preguntas MCQ al estilo TOPIK I, 3 partes: 빈칸/안내문/지문), `TOPIKPracticeClient.tsx` (quiz → LeadCaptureModal → results con nivel). Ruta: `/examenes/topik/practica/set-1`. Sección en `/clases-de-coreano`. Scoring: 70%+ = Nivel 2, 40-69% = Nivel 1, <40% = Iniciante.
 - **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering: /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes, /practica. Root `/` redirige a /home.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
-- **Platform actions**: `src/lib/actions/` tiene: `assignPlan.ts`, `signOut.ts`, `trackActivity.ts`, `saveProgress.ts`, `saveLead.ts`, `scoreSubmission.ts`, `saveExamResult.ts`.
+- **Platform actions**: `src/lib/actions/` tiene: `assignPlan.ts`, `signOut.ts`, `trackActivity.ts`, `saveProgress.ts`, `saveLead.ts`, `scoreSubmission.ts`, `saveExamResult.ts`, `updateProfile.ts` (actualiza `full_name` en `profiles`).
 - **Platform utils**: `src/lib/utils/streak.ts` — `calculateStreak(dates: string[]): number`.
-- **Dashboard routes**: `/dashboard/student` (StudentDashboardClient), `/dashboard/student/progreso` (ProgresoClient — grid actividad + historial simulacros + progreso coreano), `/dashboard/admin` (JoseDashboard/ZhannaDashboard), `/dashboard/welearn` (WelearnDashboardClient — datos aún placeholder).
+- **Dashboard routes**: `/dashboard/student` (StudentDashboardClient), `/dashboard/student/progreso` (ProgresoClient — grid actividad + historial simulacros + progreso coreano), `/dashboard/student/perfil` (PerfilClient — editar nombre, ver plan/email/fecha), `/dashboard/admin` (JoseDashboard via JoseDashboardServer / ZhannaDashboard via ZhannaDashboardServer — ambos con datos reales), `/dashboard/welearn` (WelearnDashboardClient — datos aún placeholder).
 - **Engagement features (student dashboard)**: Tip del día (14 tips rotando daily), Reto semanal (8 MCQ rotando weekly con feedback inmediato). Implementados en StudentDashboardClient como arrays estáticos con rotación por fecha.
 - **Admin StudentList**: `src/app/(site)/dashboard/admin/StudentList.tsx` — tabla de estudiantes con búsqueda, filtro por plan, asignación inline de plan con server action.
 - **markStepComplete**: ya está llamado en `LessonRuntime.tsx` al completar lecciones coreanas. No es pendiente.
-- **Blog colores categorías**: home page y blog/[slug] page tienen CTAs y colores para Alemán (#1a2ecc), Francés (#1a2ecc), Portugués (#166534), Método (#7c3aed), Migración (#0369a1).
+- **Blog colores categorías**: home page y blog/[slug] page tienen CTAs y colores para Alemán (#1a2ecc), Francés (#1a2ecc), Portugués (#166534), Método (#7c3aed), Migración (#0369a1), Inglés (#1a4fcc).
+- **ZhannaDashboard**: ahora recibe `realData` (totalStudents + weekSimulacros) desde `ZhannaDashboardServer`. "Clases hoy" se computa dinámicamente desde `weekSchedule` según el día actual.
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
