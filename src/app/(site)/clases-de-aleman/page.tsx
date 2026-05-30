@@ -202,8 +202,8 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Alemán', color: '#1a2ecc', title: 'Alemán para enfermería en Alemania: nivel B2 y la Fachsprachprüfung', slug: 'aleman-para-enfermeria-en-alemania' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?', slug: 'trabajar-en-alemania-nivel-aleman-requerido' },
-  { cat: 'Alemán', color: '#1a2ecc', title: '¿Cuánto cuesta aprender alemán en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-aleman-colombia-2026' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
 ];
 

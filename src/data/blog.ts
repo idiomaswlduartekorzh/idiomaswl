@@ -3895,6 +3895,224 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a> y <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave que necesitas conocer</a>.</p>
     `,
   },
+  // ── Article 52 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'tcf-canada-frances-para-inmigrar-a-quebec',
+    title: 'TCF Canadá: el examen de francés para inmigrar a Quebec (guía 2026)',
+    description:
+      'Guía completa del TCF Canadá para colombianos: qué puntaje necesitas para Express Entry y el PRTQ, cómo funciona el examen y cómo prepararte desde Colombia con tutor especializado.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Francés',
+    tags: ['TCF Canadá colombianos', 'francés para inmigrar a Quebec', 'examen francés inmigración Canadá', 'PRTQ programa residentes temporales Quebec', 'Express Entry francés puntaje mínimo'],
+    body: `
+<h2>¿Por qué el francés abre puertas en Canadá?</h2>
+<p>Canadá es uno de los países con mayor demanda de inmigrantes del mundo, y Quebec — la provincia francófona — tiene su propio sistema de selección de inmigrantes. Hablar francés multiplica tus puntos en Express Entry (el sistema federal de selección de residencia permanente) y te permite aplicar directamente al <strong>Programme Régulier des Travailleurs Qualifiés de Quebec (PRTQ)</strong>, sin depender del sistema federal. Para colombianos con experiencia profesional y estudios universitarios, el francés puede ser la llave que acelera significativamente el proceso.</p>
+
+<h2>¿Qué es el TCF Canadá y cómo se diferencia del TCF estándar?</h2>
+<p>El TCF (Test de Connaissance du Français) tiene dos variantes relevantes para inmigración a Canadá:</p>
+<table>
+  <thead><tr><th>Variante</th><th>Para qué sirve</th><th>Secciones</th></tr></thead>
+  <tbody>
+    <tr><td>TCF Canadá</td><td>Procesos de inmigración a Quebec (PRTQ, MIDI)</td><td>Escucha + Lectura + Escritura + Producción oral</td></tr>
+    <tr><td>TCF pour le Québec (TEF/TCF)</td><td>Express Entry y otras vías federales</td><td>Varía según la modalidad</td></tr>
+    <tr><td>TCF estándar</td><td>Universidades europeas, DELF/DALF equivalencias</td><td>Escucha + Lectura (+ oral/escritura opcional)</td></tr>
+  </tbody>
+</table>
+<p>Para el PRTQ (la vía de Quebec), el examen que solicitan es el <strong>TCF Québec</strong> o el TEF Canada (del Centre de Langue française). Ambos evalúan las mismas 4 competencias (Compréhension de l'oral, Compréhension des écrits, Maîtrise des structures de la langue, Expression orale, Expression écrite) pero con temáticas y dificultad adaptadas al contexto canadiense.</p>
+
+<h2>Puntajes mínimos para inmigrar a Quebec</h2>
+<table>
+  <thead><tr><th>Nivel CECRL</th><th>TCF Canadá — Compréhension orale</th><th>Para qué aplica</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>100–179</td><td>Conocimiento básico. No suficiente para procesos migratorios.</td></tr>
+    <tr><td>A2</td><td>180–299</td><td>Muy limitado. Puntaje bajo en PRTQ.</td></tr>
+    <tr><td>B1</td><td>300–399</td><td>Aceptable para PRTQ; suma pocos puntos en Express Entry.</td></tr>
+    <tr><td>B2</td><td>400–498</td><td>Buen puntaje PRTQ; suma puntos importantes en Express Entry.</td></tr>
+    <tr><td>C1</td><td>499–598</td><td>Excelente. Máximos puntos en francés para ambas vías.</td></tr>
+    <tr><td>C2</td><td>599–699</td><td>Bilingüe. Puntuación máxima.</td></tr>
+  </tbody>
+</table>
+<p>Para Express Entry (vía federal), hablar francés a nivel B1+ suma hasta 50 puntos adicionales al CRS (Comprehensive Ranking System), y B2+ suma hasta 100 puntos adicionales. Esto puede ser determinante para recibir una invitación de residencia permanente.</p>
+
+<h2>¿Cuánto tiempo necesitas para alcanzar el B2 de francés desde cero?</h2>
+<table>
+  <thead><tr><th>Punto de partida</th><th>Tiempo estimado para B2</th><th>Observación</th></tr></thead>
+  <tbody>
+    <tr><td>Desde cero (sin base)</td><td>18–28 meses (2 clases/semana)</td><td>El francés es exigente en pronunciación y gramática formal</td></tr>
+    <tr><td>Con base A2 (básico)</td><td>10–16 meses</td><td>La base acelera el proceso</td></tr>
+    <tr><td>Con base B1 (intermedio)</td><td>6–10 meses</td><td>Ideal para preparación intensiva</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Dónde se presenta el TCF Canadá en Colombia?</h2>
+<p>El TCF Canadá se puede presentar en centros autorizados del CIEP (Centre international d'études pédagogiques) en Colombia. La Alianza Francesa en Bogotá, Medellín, Cali y Barranquilla son los centros más comunes. El costo ronda los $400.000–$600.000 COP (según modalidad completa o parcial). Las fechas varían — consulta directamente con la Alianza Francesa de tu ciudad.</p>
+
+<h2>Cómo prepararte para el TCF Canadá desde Colombia</h2>
+<ol>
+  <li><strong>Define tu nivel actual</strong>: una sesión de diagnóstico gratuita te ubica en tu nivel real.</li>
+  <li><strong>Trabaja los módulos específicos del TCF Canadá</strong>: el vocabulario y los temas del examen tienen un contexto canadiense/quebequés que difiere del francés europeo estándar.</li>
+  <li><strong>Enfócate en producción oral</strong>: el examen de expresión oral se hace con examinator real o grabación. Es la sección que más reprobados genera.</li>
+  <li><strong>Practica con simulacros oficiales</strong>: el CIEP publica materiales de práctica en su sitio web.</li>
+</ol>
+
+<h2>WeLearn y la preparación para el TCF Canadá</h2>
+<p>En WeLearn preparamos para el TCF Canadá con tutores especializados en francés para inmigración. Conocemos el formato, el vocabulario específico y los criterios de corrección del examen. La primera sesión de diagnóstico es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TCF%20Canad%C3%A1%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">Habla con un tutor por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de clases de francés</a>.</p>
+<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: requisitos de IELTS e inglés para residencia permanente</a>.</p>
+    `,
+  },
+  // ── Article 53 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'hangul-aprender-en-una-semana-guia-completa',
+    title: 'Hangul en 1 semana: la guía definitiva para hispanohablantes',
+    description:
+      'Aprende a leer y escribir Hangul en 7 días con esta guía paso a paso para hispanohablantes. Cómo funciona el sistema de escritura coreano, los 24 caracteres base y cómo practicar cada día.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'Coreano',
+    tags: ['aprender Hangul desde cero', 'Hangul para principiantes hispanohablantes', 'aprender coreano escritura', 'alfabeto coreano guía Colombia', 'Hangul en 7 días'],
+    body: `
+<h2>¿Por qué el Hangul es el mejor punto de partida?</h2>
+<p>El Hangul (한글) es el sistema de escritura oficial de Corea del Sur, creado en 1443 por el rey Sejong el Grande con un objetivo explícito: ser fácil de aprender. Y lo cumple. A diferencia del chino (más de 3.000 caracteres para leer un periódico) o el japonés (tres sistemas de escritura simultáneos), el Hangul tiene 40 caracteres base (14 consonantes y 10 vocales básicas, más variantes) que se combinan en bloques silábicos.</p>
+<p>Para hispanohablantes, la curva de aprendizaje del Hangul es de <strong>5 a 10 días de práctica constante</strong>. Después de eso, puedes leer cualquier texto en coreano — aunque no entiendas el significado todavía. Esto es revolucionario: en japonés o chino, podrías pasar meses sin poder leer.</p>
+
+<h2>Cómo funciona el Hangul: la lógica del sistema</h2>
+<p>El Hangul no es un abecedario lineal como el español. Es un <strong>sistema silábico por bloques</strong>: cada sílaba se escribe como un bloque compacto que combina una consonante inicial + una vocal + (opcionalmente) una consonante final. Por ejemplo:</p>
+<ul>
+  <li>한 = ㅎ (h) + ㅏ (a) + ㄴ (n) → "han"</li>
+  <li>글 = ㄱ (g) + ㅡ (eu) + ㄹ (l) → "geul"</li>
+  <li>한글 = Hangul</li>
+</ul>
+<p>La lógica de los bloques sigue reglas predecibles: consonante arriba-izquierda + vocal a la derecha o abajo + consonante al fondo (si existe). Una vez que entiendes la estructura, leer se vuelve automático.</p>
+
+<h2>Los 14 consonantes base del Hangul</h2>
+<table>
+  <thead><tr><th>Carácter</th><th>Sonido aproximado</th><th>Truco de memoria</th></tr></thead>
+  <tbody>
+    <tr><td>ㄱ</td><td>g / k</td><td>Parece una pistola de lado (gun)</td></tr>
+    <tr><td>ㄴ</td><td>n</td><td>Parece una L invertida → "nariz"</td></tr>
+    <tr><td>ㄷ</td><td>d / t</td><td>Dos líneas → "dos"</td></tr>
+    <tr><td>ㄹ</td><td>r / l (entre los dos)</td><td>Escalera → "rulo"</td></tr>
+    <tr><td>ㅁ</td><td>m</td><td>Cuadrado cerrado → "marco"</td></tr>
+    <tr><td>ㅂ</td><td>b / p</td><td>Como una urna → "barril"</td></tr>
+    <tr><td>ㅅ</td><td>s</td><td>Dos patas → "serpiente"</td></tr>
+    <tr><td>ㅇ</td><td>ng / muda inicial</td><td>Círculo → cero</td></tr>
+    <tr><td>ㅈ</td><td>j / ch</td><td>Como ㅅ con techo → "jefe"</td></tr>
+    <tr><td>ㅊ</td><td>ch aspirado</td><td>ㅈ con acento → "chico"</td></tr>
+    <tr><td>ㅋ</td><td>k aspirado</td><td>ㄱ con línea → "kick"</td></tr>
+    <tr><td>ㅌ</td><td>t aspirado</td><td>ㄷ con línea → "top"</td></tr>
+    <tr><td>ㅍ</td><td>p aspirado</td><td>ㅂ con línea → "pop"</td></tr>
+    <tr><td>ㅎ</td><td>h</td><td>Sombrero → "hat"</td></tr>
+  </tbody>
+</table>
+
+<h2>Las 10 vocales base del Hangul</h2>
+<table>
+  <thead><tr><th>Carácter</th><th>Sonido</th><th>Truco</th></tr></thead>
+  <tbody>
+    <tr><td>ㅏ</td><td>a</td><td>Línea vertical con raya a la derecha → "a" abierta</td></tr>
+    <tr><td>ㅓ</td><td>eo (entre o y e)</td><td>Línea vertical con raya a la izquierda</td></tr>
+    <tr><td>ㅗ</td><td>o</td><td>Línea horizontal con raya arriba</td></tr>
+    <tr><td>ㅜ</td><td>u (como "oo")</td><td>Línea horizontal con raya abajo</td></tr>
+    <tr><td>ㅡ</td><td>eu (sonido especial)</td><td>Solo línea horizontal</td></tr>
+    <tr><td>ㅣ</td><td>i</td><td>Solo línea vertical</td></tr>
+    <tr><td>ㅑ</td><td>ya</td><td>ㅏ con doble raya → "ya"</td></tr>
+    <tr><td>ㅕ</td><td>yeo</td><td>ㅓ con doble raya → "yeo"</td></tr>
+    <tr><td>ㅛ</td><td>yo</td><td>ㅗ con doble raya → "yo"</td></tr>
+    <tr><td>ㅠ</td><td>yu</td><td>ㅜ con doble raya → "yu"</td></tr>
+  </tbody>
+</table>
+
+<h2>Plan de 7 días para aprender el Hangul</h2>
+<table>
+  <thead><tr><th>Día</th><th>Objetivo</th><th>Práctica (20-30 min)</th></tr></thead>
+  <tbody>
+    <tr><td>Día 1</td><td>Consonantes ㄱ ㄴ ㄷ ㄹ ㅁ</td><td>Escribe cada una 10 veces, di el sonido en voz alta</td></tr>
+    <tr><td>Día 2</td><td>Consonantes ㅂ ㅅ ㅇ ㅈ ㅊ</td><td>Escribe + practica combinándolas con ㅏ (a)</td></tr>
+    <tr><td>Día 3</td><td>Consonantes ㅋ ㅌ ㅍ ㅎ + revisión</td><td>Practica lectura de sílabas simples CV</td></tr>
+    <tr><td>Día 4</td><td>Vocales ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ</td><td>Combina con todas las consonantes aprendidas</td></tr>
+    <tr><td>Día 5</td><td>Vocales compuestas ㅑ ㅕ ㅛ ㅠ + vocales combinadas</td><td>Lee palabras simples: 아버지, 어머니, 학교</td></tr>
+    <tr><td>Día 6</td><td>Consonantes finales (받침)</td><td>Lee palabras con bloque de 3: 한국, 학생, 일본</td></tr>
+    <tr><td>Día 7</td><td>Práctica integradora</td><td>Lee un texto simple completo o lee el menú de un restaurante coreano</td></tr>
+  </tbody>
+</table>
+
+<h2>Herramientas gratuitas para practicar Hangul</h2>
+<ul>
+  <li><strong>Naver Dictionary</strong> (kr.dict.naver.com): el mejor diccionario coreano con audio de pronunciación real</li>
+  <li><strong>Talk To Me In Korean (TTMIK)</strong>: lecciones gratuitas en inglés que empiezan desde el Hangul</li>
+  <li><strong>Duolingo coreano</strong>: útil solo para memorizar caracteres, no para gramática</li>
+  <li><strong>Método WeLearn paso 1</strong>: en nuestra plataforma el paso 1 incluye práctica guiada de Hangul con audio nativo</li>
+</ul>
+
+<h2>Qué sigue después del Hangul</h2>
+<p>Una vez que puedes leer Hangul fluidamente (sin pensar en cada letra), el siguiente paso es vocabulario básico y estructuras gramaticales. El coreano tiene una gramática muy diferente al español (verbo al final, partículas de caso, honoríficos), pero con un método estructurado un hispanohablante puede llegar a conversación básica (A2) en 4–6 meses.</p>
+<p>En WeLearn el <a href="/metodo">método de 17 pasos</a> empieza exactamente por el Hangul y lo construye todo desde cero. La primera clase es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20a%20aprender%20coreano%20desde%20Hangul%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>Lee también: <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero en Colombia: la guía completa</a> y <a href="/blog/aprender-coreano-siendo-hispanohablante">Ventajas y retos de aprender coreano siendo hispanohablante</a>.</p>
+    `,
+  },
+  // ── Article 54 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'aleman-para-enfermeria-en-alemania',
+    title: 'Alemán para enfermería en Alemania: nivel B2 y la Fachsprachprüfung explicada',
+    description:
+      'Guía completa para enfermeras y enfermeros colombianos que quieren trabajar en Alemania: nivel de alemán requerido (B2), qué es la Fachsprachprüfung, cómo reconocer el título y cuánto tiempo necesitas para prepararte.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Alemán',
+    tags: ['alemán para enfermería Alemania Colombia', 'Fachsprachprüfung Colombia', 'enfermería Alemania nivel B2 alemán', 'reconocimiento título enfermería Alemania', 'trabajar enfermera Alemania desde Colombia'],
+    body: `
+<h2>¿Por qué Alemania busca enfermeras colombianas?</h2>
+<p>Alemania tiene un déficit estructural de más de 200.000 enfermeros y enfermeras. La Fachkräfteeinwanderungsgesetz (FEG) de 2023 simplificó drásticamente el proceso para que enfermeras de países no-UE puedan trabajar en hospitales y clínicas alemanas. Colombia es uno de los países con mayor número de solicitudes de reconocimiento de títulos de enfermería en los Länder alemanes, especialmente en Renania del Norte-Westfalia, Baviera y Baden-Wurtemberg.</p>
+<p>El obstáculo principal no es el proceso de visado ni el reconocimiento del título — es el idioma. Sin B2 de alemán, el proceso se paraliza.</p>
+
+<h2>¿Qué nivel de alemán necesitas para trabajar como enfermero/a en Alemania?</h2>
+<table>
+  <thead><tr><th>Etapa del proceso</th><th>Nivel requerido</th><th>Certificación aceptada</th></tr></thead>
+  <tbody>
+    <tr><td>Solicitud de reconocimiento del título (Berufsanerkennung)</td><td>B2 general</td><td>Goethe B2, telc B2, DSH-1</td></tr>
+    <tr><td>Contrato con empleador alemán (Anerkennungsvisum)</td><td>B2 recomendado</td><td>Cualquier B2 reconocido</td></tr>
+    <tr><td>Fachsprachprüfung (examen de lenguaje profesional médico)</td><td>B2+ enfermería</td><td>Solo en el Land alemán donde trabajes</td></tr>
+    <tr><td>Ejercer como enfermero/a reconocido/a</td><td>B2 + Fachsprachprüfung aprobada</td><td>Sin Fachsprachprüfung no puedes ejercer</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué es la Fachsprachprüfung (FSP)?</h2>
+<p>La Fachsprachprüfung es el examen de lenguaje especializado para profesiones médicas y de enfermería en Alemania. No es un examen de alemán general — evalúa tu capacidad para:</p>
+<ul>
+  <li>Comunicarte con pacientes (anamnesis, explicación de procedimientos, instrucciones)</li>
+  <li>Comunicarte con médicos y colegas (presentación de casos, registro de información clínica)</li>
+  <li>Redactar documentación clínica (informes de enfermería, notas de evolución)</li>
+</ul>
+<p>Cada Land alemán administra su propia FSP. Las más accesibles para extranjeros son las de Baviera, Renania del Norte-Westfalia y Berlín. El examen tiene dos partes: una presentación de caso clínico oral y una prueba de documentación escrita. La duración total es de aprox. 45 minutos a 1 hora.</p>
+<p>Se puede reprobar y repetir. Muchos candidatos lo hacen en su segunda o tercera convocatoria.</p>
+
+<h2>Ruta completa para enfermeras colombianas que quieren ir a Alemania</h2>
+<ol>
+  <li><strong>Preparación del alemán en Colombia</strong>: empieza con B1 y trabaja hasta B2 con enfoque en vocabulario médico desde B1.</li>
+  <li><strong>Certificación Goethe B2</strong>: necesaria para iniciar el proceso de reconocimiento del título.</li>
+  <li><strong>Solicitud de reconocimiento del título</strong> (Berufsanerkennung) ante la autoridad competente del Land de destino. Se hace desde Colombia.</li>
+  <li><strong>Contrato de trabajo</strong> con hospital o clínica en Alemania. Muchos empleadores ayudan con el proceso de visa y algunos ofrecen cursos adicionales de alemán al llegar.</li>
+  <li><strong>Visa y llegada a Alemania</strong>: tienes un período de reconocimiento provisional (usualmente 2 años) para completar el proceso.</li>
+  <li><strong>Preparación y aprobación de la Fachsprachprüfung</strong>: una vez en Alemania, te preparas con recursos del empleador y presentas el examen ante las autoridades del Land.</li>
+</ol>
+
+<h2>Cuánto tiempo necesitas para el B2 desde cero</h2>
+<table>
+  <thead><tr><th>Nivel actual</th><th>Tiempo para Goethe B2 (2 clases/semana)</th></tr></thead>
+  <tbody>
+    <tr><td>Sin alemán (A0)</td><td>24–36 meses</td></tr>
+    <tr><td>A2 básico</td><td>16–22 meses</td></tr>
+    <tr><td>B1 intermedio</td><td>8–14 meses</td></tr>
+  </tbody>
+</table>
+<p>El alemán para enfermería requiere vocabulario técnico específico (nombres de medicamentos, procedimientos de enfermería, anatomía) que se trabaja mejor con un tutor especializado desde el nivel B1. Esperar hasta el B2 para empezar el vocabulario médico retrasa todo el proceso.</p>
+
+<h2>WeLearn y la preparación de alemán para enfermería</h2>
+<p>En WeLearn preparamos para el Goethe B2 e incluimos vocabulario de enfermería desde el nivel B1 en los planes de estudiantes que van a Alemania a trabajar en salud. La primera sesión de diagnóstico es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20enfermera%2Fenfermero%20y%20quiero%20preparar%20el%20alem%C3%A1n%20para%20trabajar%20en%20Alemania.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-aleman">nuestra página de clases de alemán</a>.</p>
+<p>Lee también: <a href="/blog/trabajar-en-alemania-nivel-aleman-requerido">Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
