@@ -127,8 +127,8 @@ public/
 - **GTM**: ✅ Configurado y publicado. Version 4: tags click_whatsapp (GA4+Meta Pixel), lead_simulacro (GA4+Meta Pixel). Triggers: Click WhatsApp, Lead Simulacro. Variables: dataLayer.
 - **Nav links**: Home, Inglés, Coreano, Exámenes, Blog, Precios (en `SiteNav.tsx`). Correcto.
 - **BreadcrumbList**: añadido a todos los pages: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion, blog, blog/[slug].
-- **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes).
-- **35 artículos blog**: 1-25 (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + 26-Goethe, 27-Celpe-Bras, 28-Método aprendizaje, 29-IELTS Writing Task 1, 30-DELF/DALF, 31-IELTS Listening errores, 32-Costo inglés Colombia, 33-TOPIK II subir nivel, 34-Inglés trabajo remoto, 35-Migrar España inglés.
+- **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes). Blog sections en: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion.
+- **35 artículos blog**: 1-25 (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + 26-Goethe, 27-Celpe-Bras, 28-Método aprendizaje, 29-IELTS Writing Task 1, 30-DELF/DALF, 31-IELTS Listening errores, 32-Costo inglés Colombia, 33-TOPIK II subir nivel, 34-Inglés trabajo remoto, 35-Migrar España inglés. ⚠️ Artículo 14 slug: `icfes-saber-11-niveles-ingles-guia-completa` (se corrigió slug duplicado que tenía `puntaje-icfes-ingles-niveles-y-como-mejorar`).
 - **TOPIK Diagnóstico**: `src/data/mocks/topik-set-1.ts` (30 preguntas MCQ al estilo TOPIK I, 3 partes: 빈칸/안내문/지문), `TOPIKPracticeClient.tsx` (quiz → LeadCaptureModal → results con nivel). Ruta: `/examenes/topik/practica/set-1`. Sección en `/clases-de-coreano`. Scoring: 70%+ = Nivel 2, 40-69% = Nivel 1, <40% = Iniciante.
 - **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering: /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes, /practica. Root `/` redirige a /home.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
@@ -138,6 +138,6 @@ public/
 - **Engagement features (student dashboard)**: Tip del día (14 tips rotando daily), Reto semanal (8 MCQ rotando weekly con feedback inmediato). Implementados en StudentDashboardClient como arrays estáticos con rotación por fecha.
 - **Admin StudentList**: `src/app/(site)/dashboard/admin/StudentList.tsx` — tabla de estudiantes con búsqueda, filtro por plan, asignación inline de plan con server action.
 - **markStepComplete**: ya está llamado en `LessonRuntime.tsx` al completar lecciones coreanas. No es pendiente.
-- **Blog colores categorías**: home page y blog/[slug] page tienen CTAs y colores para Alemán (#1a2ecc), Francés (#1a2ecc), Portugués (#166534), Método (#7c3aed), Migración (#0369a1), Inglés (#1a4fcc).
+- **Blog colores categorías**: home page y blog/[slug] page tienen CTAs y colores para IELTS (#0f3d8c), Alemán (#1a2ecc), Francés (#1a2ecc), Portugués (#166534), Método (#7c3aed), Migración (#0369a1), Inglés (#1a4fcc).
 - **ZhannaDashboard**: ahora recibe `realData` (totalStudents + weekSimulacros) desde `ZhannaDashboardServer`. "Clases hoy" se computa dinámicamente desde `weekSchedule` según el día actual.
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
