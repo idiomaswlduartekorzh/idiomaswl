@@ -3520,6 +3520,152 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/clases-de-italiano-online-colombia">Clases de italiano online en Colombia: guía para elegir bien</a>.</p>
     `,
   },
+  // ── Article 45 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-aleman-colombia-2026',
+    title: '¿Cuánto cuesta aprender alemán en Colombia en 2026? Guía de precios y opciones',
+    description:
+      'Precios reales de clases de alemán en Colombia en 2026: apps, academias, tutores particulares y preparación Goethe-Zertifikat. Cuánto necesitas invertir para llegar al B1 y qué opciones ofrecen mejor relación costo-beneficio.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Alemán',
+    tags: ['cuánto cuesta aprender alemán Colombia', 'precio clases de alemán Colombia', 'academia de alemán Bucaramanga', 'Goethe preparación costo Colombia', 'aprender alemán 2026'],
+    body: `
+<h2>¿Por qué el alemán tiene una demanda creciente en Colombia?</h2>
+<p>Desde 2023, la demanda de alemán en Colombia creció impulsada por tres factores: la nueva ley alemana de inmigración laboral (<em>Fachkräfteeinwanderungsgesetz</em>) que abrió cupos para profesionales calificados latinoamericanos, el aumento de colombianos que solicitan visas de trabajo y posgrado en Alemania, y el interés en las becas DAAD y Humboldt. La consecuencia directa: más personas buscan clases de alemán — y los precios varían enormemente.</p>
+<p>Esta guía te da los precios reales del mercado colombiano en 2026 para que tomes una decisión informada.</p>
+
+<h2>Cuánto cuesta aprender alemán: comparación de opciones</h2>
+<table>
+  <thead><tr><th>Opción</th><th>Costo mensual (COP)</th><th>Pros</th><th>Contras</th></tr></thead>
+  <tbody>
+    <tr><td>Apps (Duolingo, Babbel)</td><td>$0–$60.000</td><td>Flexible, económico</td><td>No cubre gramática avanzada, no sirve para Goethe</td></tr>
+    <tr><td>YouTube / gratuito</td><td>$0</td><td>Abundante contenido</td><td>Sin estructura, sin retroalimentación, sin progresión clara</td></tr>
+    <tr><td>Academia grupal en Colombia</td><td>$200.000–$400.000</td><td>Estructura, comunidad</td><td>Ritmo lento (A1 puede tomar 1–2 años), grupos grandes</td></tr>
+    <tr><td>Instituto Goethe (presencial)</td><td>$400.000–$800.000</td><td>Calidad reconocida, certificación propia</td><td>Caro, no siempre disponible en todas las ciudades</td></tr>
+    <tr><td>Tutor particular online (1:1)</td><td>$300.000–$700.000</td><td>Ritmo personalizado, feedback inmediato</td><td>Calidad varía según tutor</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep Goethe, diagnóstico gratis</td><td>Requiere compromiso mínimo de estudio autónomo</td></tr>
+  </tbody>
+</table>
+
+<h2>Inversión total por nivel para el Goethe-Zertifikat</h2>
+<table>
+  <thead><tr><th>Meta</th><th>Inversión total estimada</th><th>Tiempo con WeLearn (2 clases/semana)</th></tr></thead>
+  <tbody>
+    <tr><td>Goethe A1 (visa familiar)</td><td>$1,8M–$3,5M COP</td><td>5–7 meses</td></tr>
+    <tr><td>Goethe B1 (visa trabajo, ciudadanía)</td><td>$5M–$10M COP</td><td>14–20 meses</td></tr>
+    <tr><td>Goethe B2 (universidad alemana)</td><td>$8M–$15M COP</td><td>20–28 meses</td></tr>
+    <tr><td>Goethe C1 (trabajo profesional)</td><td>$12M–$22M COP</td><td>28–36 meses</td></tr>
+  </tbody>
+</table>
+<p>A esto se añade el costo del examen Goethe: entre $400.000 y $750.000 COP según el nivel y el centro de examinación (el Instituto Goethe en Bogotá o aliados en otras ciudades). El Goethe se puede repetir si no se pasa, sin restricciones de intentos.</p>
+
+<h2>¿Qué incluye y qué no en los precios de academias?</h2>
+<p>Al comparar precios, pregunta siempre:</p>
+<ul>
+  <li><strong>¿El precio incluye materiales?</strong> Los libros Netzwerk, Schritte Plus o Aspekte (estándar para Goethe) cuestan entre $80.000 y $180.000 COP adicionales.</li>
+  <li><strong>¿Hay evaluaciones del progreso?</strong> Un programa de calidad evalúa tu nivel cada 4–6 semanas y ajusta el plan.</li>
+  <li><strong>¿Incluye práctica de los 4 componentes del Goethe?</strong> Hören (escucha), Lesen (lectura), Schreiben (escritura) y Sprechen (conversación). Muchos programas omiten el Speaking.</li>
+  <li><strong>¿El tutor tiene formación en DaF (Deutsch als Fremdsprache)?</strong> No es lo mismo un hablante nativo que alguien formado en enseñanza de alemán como lengua extranjera.</li>
+</ul>
+
+<h2>WeLearn y las clases de alemán</h2>
+<p>En WeLearn ofrecemos clases de alemán 1:1 desde $180.000 COP/mes (plan Preparación: 4 clases de 1 hora), diseñadas según tu nivel y tu objetivo. Si tu meta es el Goethe B1, preparamos específicamente los 4 módulos del examen. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20alem%C3%A1n%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
+<p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
+    `,
+  },
+  // ── Article 46 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-frances-colombia-2026',
+    title: '¿Cuánto cuesta aprender francés en Colombia en 2026? Guía de precios y opciones',
+    description:
+      'Precios reales de clases de francés en Colombia en 2026: Alianza Francesa, academias, tutores online y preparación DELF. Cuánto necesitas invertir para llegar al B2 y qué opción tiene mejor costo-beneficio.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Francés',
+    tags: ['cuánto cuesta aprender francés Colombia', 'precio clases de francés Colombia', 'Alianza Francesa precio Colombia', 'DELF preparación costo Colombia', 'aprender francés 2026'],
+    body: `
+<h2>La demanda de francés en Colombia en 2026</h2>
+<p>El francés es el segundo idioma más estudiado en Colombia después del inglés. La demanda está impulsada por múltiples factores: el programa de becas Eiffel del gobierno francés atrae a profesionales y estudiantes de posgrado; el francés es requerido para la ciudadanía francesa cuando se solicita por residencia (B1 mínimo); y los sectores de petróleo, minería, telecomunicaciones y diplomacia tienen vínculos directos con países francófonos. El resultado: una oferta de clases de francés muy variada en precio y calidad.</p>
+
+<h2>Cuánto cuesta aprender francés: comparación de opciones</h2>
+<table>
+  <thead><tr><th>Opción</th><th>Costo mensual (COP)</th><th>Pros</th><th>Contras</th></tr></thead>
+  <tbody>
+    <tr><td>Apps (Duolingo, Babbel)</td><td>$0–$60.000</td><td>Flexible, vocabulario básico</td><td>No sirve para DELF, no desarrolla producción oral real</td></tr>
+    <tr><td>YouTube / recursos gratuitos</td><td>$0</td><td>Contenido variado</td><td>Sin estructura progresiva ni retroalimentación</td></tr>
+    <tr><td>Alianza Francesa (presencial)</td><td>$350.000–$600.000</td><td>Calidad reconocida, certificación DELF in-house</td><td>Caro, grupos grandes, ritmo lento</td></tr>
+    <tr><td>Academia grupal online</td><td>$150.000–$350.000</td><td>Más flexible que presencial</td><td>Grupos de hasta 15 personas, poco tiempo de speaking</td></tr>
+    <tr><td>Tutor particular online (1:1)</td><td>$250.000–$600.000</td><td>Ritmo personalizado</td><td>Calidad varía; no todos conocen el DELF</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep DELF, diagnóstico gratis</td><td>Requiere práctica autónoma diaria</td></tr>
+  </tbody>
+</table>
+
+<h2>Inversión total por nivel para el DELF/DALF</h2>
+<table>
+  <thead><tr><th>Meta</th><th>Inversión total estimada</th><th>Tiempo con WeLearn (2 clases/semana)</th></tr></thead>
+  <tbody>
+    <tr><td>DELF A2</td><td>$2,5M–$5M COP</td><td>5–8 meses</td></tr>
+    <tr><td>DELF B1 (ciudadanía francesa)</td><td>$5M–$10M COP</td><td>10–16 meses</td></tr>
+    <tr><td>DELF B2 (universidad francesa)</td><td>$9M–$17M COP</td><td>18–26 meses</td></tr>
+    <tr><td>DALF C1 (beca Eiffel, posgrado)</td><td>$14M–$25M COP</td><td>26–36 meses</td></tr>
+  </tbody>
+</table>
+<p>El costo del examen DELF oscila entre $250.000 y $500.000 COP según el nivel y el centro de examinación (Alianza Francesa, universidades aliadas). El DALF C1/C2 es más caro. Los diplomas DELF/DALF no tienen vencimiento — son válidos de por vida.</p>
+
+<h2>La Alianza Francesa vs. tutor particular: ¿qué elegir?</h2>
+<p>La Alianza Francesa ofrece un entorno institucional reconocido y la posibilidad de hacer el DELF directamente en sus instalaciones. Sin embargo, sus grupos son de 12–20 personas, el ritmo no se adapta al estudiante individual y el costo es significativamente más alto que tutores especializados. Para alguien con un objetivo de tiempo definido (como preparar el DELF B1 para ciudadanía en 12 meses), un tutor 1:1 con experiencia en DELF suele ser más eficiente y económico.</p>
+<p>Para estudiantes sin objetivo de examen que solo quieren conversación básica, la Alianza Francesa o grupos son válidos. Para todo objetivo con fecha límite o nivel B1+, un tutor especializado es la opción más efectiva.</p>
+
+<h2>WeLearn y las clases de francés</h2>
+<p>En WeLearn ofrecemos clases de francés 1:1 desde $180.000 COP/mes (plan Preparación: 4 clases de 1 hora), con preparación DELF incluida si ese es tu objetivo. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20franc%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a>.</p>
+<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
+    `,
+  },
+  // ── Article 47 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-italiano-colombia-2026',
+    title: '¿Cuánto cuesta aprender italiano en Colombia en 2026? Guía de precios',
+    description:
+      'Precios reales de clases de italiano en Colombia en 2026: apps, Dante Alighieri, tutores online y preparación CILS. Cuánto necesitas invertir para el B1 de ciudadanía italiana y qué opción ofrece mejor costo-beneficio.',
+    date: '2026-05-30',
+    readTime: 5,
+    category: 'Italiano',
+    tags: ['cuánto cuesta aprender italiano Colombia', 'precio clases de italiano Colombia', 'Instituto Dante Alighieri Colombia', 'CILS preparación costo Colombia', 'italiano ciudadanía italiana costo'],
+    body: `
+<h2>¿Por qué más colombianos estudian italiano en 2026?</h2>
+<p>Tres factores impulsan el interés en italiano en Colombia: la posibilidad de solicitar ciudadanía italiana por descenso o por residencia (el B1 es requerido para la vía por naturalización), el atractivo de las universidades italianas (con costos de matrícula muy bajos para extranjeros), y la demanda en sectores como diseño, moda, restauración de arte y gastronomía. El italiano también es el idioma más fácil para hispanohablantes — lo que hace que la inversión sea menor comparada con el alemán o el francés.</p>
+
+<h2>Cuánto cuesta aprender italiano: comparación de opciones</h2>
+<table>
+  <thead><tr><th>Opción</th><th>Costo mensual (COP)</th><th>Pros</th><th>Contras</th></tr></thead>
+  <tbody>
+    <tr><td>Apps (Duolingo, Babbel)</td><td>$0–$60.000</td><td>Vocabulario básico, flexible</td><td>No sirve para CILS/CELI, sin gramática estructurada</td></tr>
+    <tr><td>YouTube / recursos gratuitos</td><td>$0</td><td>Contenido variado</td><td>Sin estructura ni feedback</td></tr>
+    <tr><td>Dante Alighieri (presencial)</td><td>$250.000–$500.000</td><td>Reconocimiento institucional, materiales oficiales</td><td>Grupos grandes, ritmo fijo, no siempre en tu ciudad</td></tr>
+    <tr><td>Academia grupal online</td><td>$120.000–$300.000</td><td>Asequible</td><td>Poco tiempo de speaking, ritmo no adaptable</td></tr>
+    <tr><td>Tutor particular online (1:1)</td><td>$200.000–$500.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep CILS, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+  </tbody>
+</table>
+
+<h2>Inversión total por nivel para el CILS</h2>
+<table>
+  <thead><tr><th>Meta</th><th>Inversión total estimada</th><th>Tiempo con WeLearn (2 clases/semana)</th></tr></thead>
+  <tbody>
+    <tr><td>CILS A2 (conversación básica)</td><td>$1,5M–$3M COP</td><td>3–5 meses</td></tr>
+    <tr><td>CILS B1 — UNO (ciudadanía italiana)</td><td>$3,5M–$7M COP</td><td>7–12 meses</td></tr>
+    <tr><td>CILS B2 — DUE (universidad italiana)</td><td>$6M–$12M COP</td><td>12–18 meses</td></tr>
+    <tr><td>CILS C1 — TRE (trabajo profesional)</td><td>$10M–$18M COP</td><td>18–28 meses</td></tr>
+  </tbody>
+</table>
+<p>El examen CILS cuesta entre $200.000 y $450.000 COP según el nivel. Se puede presentar en algunos centros universitarios aliados en Colombia y también viajando a Ecuador o directamente a Italia (donde los precios son similares). El CILI es permanente: no vence.</p>
+
+<h2>WeLearn y las clases de italiano</h2>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. El proceso empieza con una sesión de diagnóstico gratuita. Desde $180.000 COP/mes para el plan Preparación (4 clases de 1 hora). <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20italiano%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>.</p>
+<p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano</a> y <a href="/blog/cuanto-cuesta-aprender-coreano-colombia-2026">¿Cuánto cuesta aprender coreano en Colombia en 2026?</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

@@ -38,19 +38,19 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Coreano',  color: '#c8202e', title: 'TOPIK I: cómo prepararlo desde cero y pasar al primer intento', slug: 'topik-1-preparacion-guia-para-principiantes' },
   ],
   frances: [
+    { cat: 'Francés',  color: '#1a2ecc', title: '¿Cuánto cuesta aprender francés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-frances-colombia-2026' },
     { cat: 'Francés',  color: '#1a2ecc', title: 'Clases de francés online en Colombia: guía para elegir bien', slug: 'clases-de-frances-online-colombia' },
     { cat: 'Francés',  color: '#1a2ecc', title: 'DELF y DALF: la guía completa para colombianos', slug: 'delf-dalf-guia-preparacion-colombianos' },
-    { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
   ],
   aleman: [
+    { cat: 'Alemán',   color: '#1a2ecc', title: '¿Cuánto cuesta aprender alemán en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-aleman-colombia-2026' },
     { cat: 'Alemán',   color: '#1a2ecc', title: 'Clases de alemán online en Colombia: guía para elegir bien', slug: 'clases-de-aleman-online-colombia' },
     { cat: 'Alemán',   color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
-    { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
   ],
   italiano: [
+    { cat: 'Italiano', color: '#009246', title: '¿Cuánto cuesta aprender italiano en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-italiano-colombia-2026' },
     { cat: 'Italiano', color: '#009246', title: 'Clases de italiano online en Colombia: guía para elegir bien', slug: 'clases-de-italiano-online-colombia' },
-    { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia', slug: 'cils-celi-certificacion-italiano-colombia' },
-    { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
+    { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano', slug: 'cils-celi-certificacion-italiano-colombia' },
   ],
   portugues: [
     { cat: 'Portugués', color: '#166534', title: 'Clases de portugués online en Colombia: guía para elegir bien', slug: 'clases-de-portugues-online-colombia' },
