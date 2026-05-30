@@ -2170,7 +2170,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   <li><strong>Práctica de escritura con retroalimentación:</strong> el Schreiben es la sección donde más puntos se pierden sin corrección externa.</li>
   <li><strong>Simulacros con material oficial:</strong> el Goethe-Institut publica materiales de práctica gratuitos en su web para cada nivel.</li>
 </ol>
-<p>En WeLearn preparamos para todos los niveles del Goethe con tutores especializados en alemán. Si tu objetivo es el A1, B1 o C1, <a href="/clases-de-ingles">escríbenos por WhatsApp</a> y diseñamos un plan de preparación a tu medida.</p>
+<p>En WeLearn preparamos para todos los niveles del Goethe con tutores especializados en alemán. Si tu objetivo es el A1, B1 o C1, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20Goethe-Zertifikat%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> y diseñamos un plan de preparación a tu medida.</p>
 
 <h2>¿Vale la pena el Goethe para conseguir trabajo en Alemania?</h2>
 <p>Sí — pero con matices. Para la mayoría de visas de trabajo en Alemania (Fachkräfteeinwanderungsgesetz, la ley de inmigración de trabajadores calificados), el nivel mínimo recomendado es <strong>B1</strong> para ocupaciones con contacto con el público, y <strong>B2 o C1</strong> para trabajos en salud, educación o áreas reguladas. El certificado Goethe es la forma más reconocida de demostrar ese nivel.</p>

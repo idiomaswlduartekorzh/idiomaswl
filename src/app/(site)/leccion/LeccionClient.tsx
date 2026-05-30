@@ -512,6 +512,28 @@ export default function LeccionClient() {
         </div>
       </section>
 
+      {/* ── Blog ──────────────────────────────────────────────────────────────── */}
+      <section style={{ padding: 'clamp(3rem, 7vw, 5rem) 1.5rem', background: 'var(--bg-alt)' }}>
+        <div className="wrap">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <p style={{ fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '0.5rem' }}>Del blog WeLearn</p>
+            <h2 style={{ fontSize: 'clamp(1.4rem, 3vw, 1.9rem)', fontWeight: 800, color: 'var(--ink)', marginBottom: '1.25rem' }}>Artículos sobre aprendizaje de idiomas</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '0.85rem' }}>
+              {[
+                { cat: 'Método', color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que la ciencia dice', slug: 'como-aprender-un-idioma-mas-rapido' },
+                { cat: 'Inglés', color: '#1a4fcc', title: 'Por qué te bloqueas al hablar inglés y cómo superarlo', slug: 'como-mejorar-el-ingles-hablado' },
+                { cat: 'Método', color: '#7c3aed', title: 'Aprender idiomas con series y películas: cómo hacerlo bien', slug: 'aprender-idiomas-con-series-y-peliculas' },
+              ].map(a => (
+                <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
+                  <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
+                  <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: 0 }}>{a.title} →</p>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ── CTA final ─────────────────────────────────────────────────────────── */}
       <section className="lec-cta">
         <motion.div
