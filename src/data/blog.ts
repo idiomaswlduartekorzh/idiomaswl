@@ -4301,6 +4301,178 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación completa para colombianos</a> y <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL: ¿cuál tomar en Colombia?</a>.</p>
     `,
   },
+  // ── Article 58 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-para-estudiar-en-irlanda',
+    title: 'Estudiar en Irlanda con IELTS: universidades, costos y puntaje mínimo 2026',
+    description:
+      'Guía para colombianos que quieren estudiar en Irlanda: puntaje IELTS requerido, costos de universidades irlandesas, visa de estudiante y por qué Irlanda es alternativa a UK tras el Brexit.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'IELTS',
+    tags: ['IELTS para estudiar en Irlanda Colombia', 'universidades irlandesas colombianos requisitos', 'visa de estudiante Irlanda IELTS', 'estudiar en Irlanda alternativa UK Brexit', 'IELTS 6.5 Irlanda'],
+    body: `
+<h2>¿Por qué Irlanda se convirtió en alternativa real a UK para colombianos?</h2>
+<p>Después del Brexit (2020), UK dejó de ser parte de la Unión Europea. Esto impacta a estudiantes colombianos de dos formas: los títulos de universidades irlandesas (UE) tienen reconocimiento en 27 países europeos, mientras que los títulos de UK no. Además, Irlanda tiene un mercado laboral tech muy sólido (sede europea de Google, Meta, Apple, Amazon, Microsoft) que ofrece oportunidades laborales post-estudio significativas.</p>
+<p>El English-speaking EU country con vías de trabajo post-estudio es, hoy, Irlanda. La visa de estudiante irlandesa (Study Visa) permite trabajar hasta 20 horas semanales durante el año académico y 40 horas en vacaciones. Después de graduarse, existe el "Third Level Graduate Scheme" que permite trabajar en Irlanda por 12 a 24 meses sin necesidad de work permit.</p>
+
+<h2>Puntaje IELTS requerido en universidades irlandesas</h2>
+<table>
+  <thead><tr><th>Universidad</th><th>IELTS mínimo (pregrado)</th><th>IELTS mínimo (posgrado)</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td>Trinity College Dublin (TCD)</td><td>6.5 (6.0 en cada sección)</td><td>6.5–7.0</td><td>Top 100 mundial</td></tr>
+    <tr><td>University College Dublin (UCD)</td><td>6.5</td><td>6.5–7.0</td><td>Fuerte en negocios y derecho</td></tr>
+    <tr><td>University College Cork (UCC)</td><td>6.0–6.5</td><td>6.5</td><td>Fuerte en medicina y ciencias</td></tr>
+    <tr><td>NUI Galway (University of Galway)</td><td>6.0–6.5</td><td>6.5</td><td>Fuerte en ingeniería</td></tr>
+    <tr><td>Dublin City University (DCU)</td><td>6.0</td><td>6.5</td><td>Fuerte en comunicación y tech</td></tr>
+    <tr><td>Maynooth University</td><td>6.0</td><td>6.0–6.5</td><td>Accesible, programas en humanidades</td></tr>
+  </tbody>
+</table>
+
+<h2>Costos de estudiar en Irlanda en 2026</h2>
+<table>
+  <thead><tr><th>Concepto</th><th>Costo anual estimado</th></tr></thead>
+  <tbody>
+    <tr><td>Matrícula pregrado (fuera de UE)</td><td>€10.000–€25.000/año</td></tr>
+    <tr><td>Matrícula posgrado (fuera de UE)</td><td>€10.000–€20.000/año</td></tr>
+    <tr><td>Alojamiento (Dublin)</td><td>€800–€1.400/mes</td></tr>
+    <tr><td>Alojamiento (otras ciudades)</td><td>€600–€1.000/mes</td></tr>
+    <tr><td>Alimentación y gastos</td><td>€400–€700/mes</td></tr>
+  </tbody>
+</table>
+<p>Irlanda es significativamente más cara que España o Italia en costo de vida, pero comparable a UK y mucho más asequible que EE.UU. o Canadá para matrícula universitaria.</p>
+
+<h2>Proceso de visa de estudiante para Colombia → Irlanda</h2>
+<ol>
+  <li>Obtener la carta de admisión de la universidad irlandesa.</li>
+  <li>Demostrar fondos suficientes (aproximadamente €10.000–€15.000 en cuenta bancaria).</li>
+  <li>Presentar IELTS o certificado de idioma equivalente (Cambridge, PTE) al nivel requerido.</li>
+  <li>Solicitar la visa de estudio (Study Visa Type D) ante el Consulado irlandés en Bogotá o Madrid.</li>
+  <li>Obtener la Residence Permit al llegar a Irlanda (necesaria para trabajar legalmente).</li>
+</ol>
+
+<h2>¿Cuánto tiempo necesitas para preparar el IELTS 6.5?</h2>
+<p>Para un candidato con nivel B1 sólido (capaz de sostener conversación y leer textos en inglés), alcanzar el IELTS 6.5 requiere generalmente entre 8 y 16 semanas de preparación estructurada. La clave es no preparar el examen en general — prepararlo por secciones (Reading, Listening, Writing Task 1 y 2, Speaking) con ejercicios específicos del formato IELTS.</p>
+
+<h2>WeLearn y la preparación IELTS para Irlanda</h2>
+<p>En WeLearn preparamos para el IELTS con tutores que conocen el examen y los requisitos específicos de las universidades de destino. La primera sesión es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20estudiar%20en%20Irlanda%20y%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>Lee también: <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: requisitos de IELTS e inglés</a>.</p>
+    `,
+  },
+  // ── Article 59 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-coreano-con-kpop-y-dramas-funciona',
+    title: 'Aprender coreano con K-pop y K-dramas: qué funciona y qué no',
+    description:
+      'Guía honesta sobre aprender coreano con K-pop y K-dramas: qué sí puedes aprender de forma natural, qué no puedes aprender solo con contenido, y cómo combinar ambos para avanzar de verdad.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Coreano',
+    tags: ['aprender coreano con K-pop y K-dramas', 'coreano con dramas netflix Colombia', 'aprender coreano autodidacta K-pop', 'K-drama para aprender coreano hispanohablantes', 'coreano informal vs formal'],
+    body: `
+<h2>La pregunta honesta: ¿se puede aprender coreano con K-dramas?</h2>
+<p>La respuesta corta: sí y no. Puedes aprender muchísimo vocabulario, pronunciación y expresiones de la vida cotidiana. Pero hay cosas fundamentales del coreano — la gramática formal, los honoríficos, el sistema de escritura, el lenguaje profesional — que los K-dramas no enseñan bien o directamente no enseñan.</p>
+<p>La trampa más común es la siguiente: alguien lleva dos años viendo dramas y escuchando BTS, siente que "entiende bastante", pero cuando intenta escribir, leer o hablar en un contexto real, se da cuenta de que tiene huecos enormes en gramática y vocabulario formal.</p>
+
+<h2>Lo que SÍ puedes aprender de K-pop y K-dramas</h2>
+<ul>
+  <li><strong>Pronunciación y ritmo</strong>: escuchar coreano nativo constantemente entrena el oído para los sonidos que no existen en español (como ㅓ, ㅡ, la distinción entre ㄹ y ㅇ)</li>
+  <li><strong>Vocabulario cotidiano</strong>: expresiones del día a día como saludos, emociones, comida, familia, situaciones románticas (muy frecuentes en dramas)</li>
+  <li><strong>Expresiones idiomáticas</strong>: frases hechas que no enseñan los libros — 대박! (¡increíble!), 어떡해 (¿qué hago?), 화이팅 (ánimo)</li>
+  <li><strong>Motivación</strong>: el mayor activo del K-pop/K-drama como herramienta de aprendizaje. El engagement emocional con el contenido hace que el estudio no se sienta como estudio</li>
+  <li><strong>Velocidad del habla real</strong>: los coreanos hablan a velocidad natural, con contracciones y reducciones que los libros no muestran</li>
+</ul>
+
+<h2>Lo que NO puedes aprender solo con K-pop y K-dramas</h2>
+<ul>
+  <li><strong>Hangul</strong>: sin aprender a leer el sistema de escritura, el aprendizaje por input auditivo tiene un techo muy bajo</li>
+  <li><strong>Gramática formal</strong>: los dramas usan principalmente formas habladas informales (반말 banmal) y el nivel de educación (존댓말 jondaemal). La gramática completa — incluyendo conectores, formas nominalizadas, condicionales — no está expuesta suficientemente</li>
+  <li><strong>Escritura</strong>: ningún drama te enseña a escribir</li>
+  <li><strong>Coreano profesional y académico</strong>: el lenguaje del TOPIK, de los negocios o de la academia requiere vocabulario Sino-coreano (한자어) que rara vez aparece en dramas de entretenimiento</li>
+  <li><strong>Producción oral estructurada</strong>: entender coreano y producirlo son habilidades distintas. Los dramas entrenan el input, no el output</li>
+</ul>
+
+<h2>Cómo combinar K-pop/K-dramas con estudio estructurado</h2>
+<table>
+  <thead><tr><th>Estrategia</th><th>Cómo hacerlo</th></tr></thead>
+  <tbody>
+    <tr><td>Shadowing con K-pop</td><td>Aprende la letra completa de 5 canciones, practica pronunciarlas en voz alta copiando el ritmo y la entonación</td></tr>
+    <tr><td>Dramas con subtítulos en coreano</td><td>Ve un episodio con subtítulos en inglés, luego el mismo episodio con subtítulos en coreano. Pausa y lee cada bloque</td></tr>
+    <tr><td>Método de input intensivo</td><td>Elige una escena de 2–3 minutos de tu drama favorito y analiza cada línea con diccionario</td></tr>
+    <tr><td>Vocabulario en contexto</td><td>Anota palabras nuevas que escuchas en dramas y estúdialas con Anki (tarjetas con audio del drama)</td></tr>
+    <tr><td>Clase + contenido</td><td>En clases aprende la gramática y el vocabulario formal; fuera de clases, consume K-pop y K-dramas para practicar el input</td></tr>
+  </tbody>
+</table>
+
+<h2>Los mejores K-dramas para aprender coreano por nivel</h2>
+<ul>
+  <li><strong>Principiantes (A1–A2)</strong>: <em>Weightlifting Fairy Kim Bok-joo</em>, <em>Reply 1988</em> — diálogos cotidianos, vocabulario simple</li>
+  <li><strong>Intermedios (B1)</strong>: <em>Crash Landing on You</em>, <em>Hospital Playlist</em> — más vocabulario formal, diferentes acentos</li>
+  <li><strong>Avanzados (B2+)</strong>: dramas de sala de juntas (<em>Misaeng</em>) o dramas históricos (<em>Jewel in the Palace</em>) — vocabulario formal y arcaico</li>
+</ul>
+
+<h2>WeLearn y el coreano para fans de K-pop y K-dramas</h2>
+<p>En WeLearn sabemos que muchos de nuestros estudiantes de coreano llegan por el K-pop o los dramas. El <a href="/metodo">método de 17 pasos</a> aprovecha esa motivación y la convierte en estructura real: Hangul desde el día 1, gramática progresiva y mucho contenido cultural. La primera clase es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20me%20gusta%20el%20K-pop%20y%20los%20K-dramas%20y%20quiero%20aprender%20coreano%20de%20verdad.%20%C2%BFCuánto%20cuesta%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>Lee también: <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Hangul en 1 semana: la guía definitiva para hispanohablantes</a> y <a href="/blog/aprender-coreano-siendo-hispanohablante">Ventajas y retos de aprender coreano siendo hispanohablante</a>.</p>
+    `,
+  },
+  // ── Article 60 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-b2-c1-para-trabajo-remoto-global',
+    title: 'Inglés B2–C1 para trabajo remoto: lo que necesitas para empleadores globales',
+    description:
+      'Guía para colombianos que buscan trabajo remoto en empresas internacionales: qué nivel de inglés necesitas, por qué B2 no siempre es suficiente, cómo practicar el inglés profesional y cómo certificarlo.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Inglés',
+    tags: ['inglés B2 C1 trabajo remoto Colombia', 'nivel inglés trabajo remoto empresas globales', 'inglés profesional para trabajo remoto', 'inglés C1 empleos internacionales Colombia', 'preparar inglés para trabajo remoto'],
+    body: `
+<h2>¿Qué nivel de inglés necesita un colombiano para trabajar remotamente con empleadores globales?</h2>
+<p>La respuesta varía según el rol, la empresa y el grado de autonomía del trabajo. Pero hay una realidad que muchos candidatos descubren tarde: <strong>B2 teórico no es lo mismo que B2 funcional en entornos de trabajo remoto</strong>. En un trabajo remoto con equipo distribuido, el inglés no es solo para comunicarse — es para ser percibido como competente, confiable y profesional.</p>
+
+<h2>Inglés por tipo de rol remoto</h2>
+<table>
+  <thead><tr><th>Tipo de rol</th><th>Nivel mínimo real</th><th>Por qué</th></tr></thead>
+  <tbody>
+    <tr><td>Desarrollador de software (individual contributor)</td><td>B2 técnico</td><td>Código, PRs, Slack, documentación técnica. Menos reuniones verbales.</td></tr>
+    <tr><td>Diseñador UX/UI</td><td>B2 + presentación oral clara</td><td>Presentar diseños a stakeholders en inglés requiere vocabulario de diseño y claridad</td></tr>
+    <tr><td>Customer Success / Support</td><td>B2 escrito muy sólido + speaking claro</td><td>Comunicación directa con clientes angloparlantes</td></tr>
+    <tr><td>Project Manager / Scrum Master</td><td>C1</td><td>Facilitar reuniones, negociar plazos, redactar specs complejos</td></tr>
+    <tr><td>Marketing / Copywriter</td><td>C1–C2</td><td>La redacción persuasiva en inglés requiere matices que B2 no garantiza</td></tr>
+    <tr><td>Finance / Legal</td><td>C1</td><td>Vocabulario técnico especializado y documentos contractuales</td></tr>
+  </tbody>
+</table>
+
+<h2>Las 4 competencias del inglés profesional remoto</h2>
+<p>El inglés de trabajo remoto tiene exigencias específicas que el inglés académico no cubre completamente:</p>
+<ol>
+  <li><strong>Slack / email profesional</strong>: saber escribir mensajes directos, claros y con el tono correcto (no muy formal, no muy informal). Expresiones como "circling back", "per my last email", "heads up", "let's loop in..." son parte del vocabulario estándar.</li>
+  <li><strong>Video calls</strong>: hablar con confianza en llamadas con lag, interrupciones y sin poder leer bien el lenguaje corporal. Saber decir "sorry, you broke up there" o "can you repeat that?" sin sentir vergüenza.</li>
+  <li><strong>Documentación técnica o de proyecto</strong>: redactar tickets, specs, retrospectivas, reportes de estado. Requiere vocabulario específico y capacidad de síntesis.</li>
+  <li><strong>Negociación y feedback</strong>: decir no, pedir más tiempo, dar feedback crítico — en inglés formal pero no agresivo.</li>
+</ol>
+
+<h2>¿Necesitas certificar tu inglés para trabajar remoto?</h2>
+<p>La mayoría de empleadores de trabajo remoto no piden IELTS ni TOEFL para contratarte — lo evalúan en la entrevista directamente. Sin embargo, tener una certificación puede ayudar en dos escenarios:</p>
+<ul>
+  <li>Si el rol lo requiere explícitamente (muchos roles en empresas reguladas, consultoría o educación)</li>
+  <li>Si tu CV está compitiendo con muchos otros candidatos y necesitas una señal tangible de nivel</li>
+</ul>
+<p>En ese caso, el IELTS o el TOEFL son reconocidos globalmente. Para trabajo remoto (no migración), el TOEFL Essentials puede ser suficiente y es más accesible en costo.</p>
+
+<h2>Cómo practicar el inglés específico para trabajo remoto</h2>
+<ul>
+  <li><strong>Unirte a comunidades de developers hispanohablantes que trabajan en inglés</strong> (No Fluff Jobs, Remote OK, Slack communities) y leer cómo se comunican</li>
+  <li><strong>Practicar mock interviews en inglés</strong> con feedback sobre pronunciación, vocabulario y fluidez</li>
+  <li><strong>Redactar tu perfil de LinkedIn en inglés</strong> y recibir feedback de un tutor nativo o especializado</li>
+  <li><strong>Hablar inglés en reuniones simuladas</strong> — esto es exactamente lo que hacemos en WeLearn para estudiantes con objetivo laboral</li>
+</ul>
+
+<h2>WeLearn y el inglés para trabajo remoto</h2>
+<p>En WeLearn diseñamos planes de inglés enfocados en el objetivo específico del estudiante. Si tu meta es conseguir trabajo remoto con empresa internacional, el plan se enfoca en inglés profesional, entrevistas, comunicación escrita y speaking en llamadas. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20ingl%C3%A9s%20para%20trabajar%20de%20forma%20remota%20con%20empresas%20internacionales.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-trabajo-remoto-empleadores-globales">Inglés para trabajo remoto: lo que buscan los empleadores globales</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
