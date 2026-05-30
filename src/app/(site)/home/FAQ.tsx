@@ -18,6 +18,18 @@ const ITEMS = [
     q: '¿Incluye preparación para exámenes?',
     a: 'Sí. Hay rutas específicas para TOEFL, IELTS, ICFES, Goethe, DELF/DALF y CILS con simulacros por objetivo.',
   },
+  {
+    q: '¿Las clases son online o presenciales?',
+    a: '100% online. Tenemos sede en Bucaramanga pero atendemos estudiantes en toda Colombia y en el exterior. Las clases 1:1 son por videollamada con tutor asignado.',
+  },
+  {
+    q: '¿En cuánto tiempo puedo alcanzar un nivel B2 en inglés?',
+    a: 'Depende del punto de partida. Desde A2 con 5–7 horas semanales, entre 12 y 18 meses. Desde B1, entre 9 y 12 meses. La clase de diagnóstico gratuita define el plan exacto para tu objetivo.',
+  },
+  {
+    q: '¿Cómo funciona la clase de diagnóstico gratuita?',
+    a: 'Es una sesión de 30 a 45 minutos con un tutor de WeLearn donde evaluamos tu nivel real, entendemos tu objetivo (examen, trabajo, migración) y te damos un plan de preparación personalizado. Sin compromiso de matrícula.',
+  },
 ];
 
 export default function FAQ() {
