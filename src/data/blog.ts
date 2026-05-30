@@ -1578,6 +1578,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 
 <h2>Cuánto tiempo lleva mejorar el Writing Task 2</h2>
 <p>Con práctica activa — escribir 2 ensayos por semana y recibir retroalimentación específica sobre los cuatro criterios — la mayoría de candidatos en nivel B1 ve mejora de 0.5–1 Band en 6–8 semanas. La clave es la retroalimentación: la autocorrección tiene límites porque no identificas los errores que cometes sistemáticamente.</p>
+<p>Lee también: <a href="/blog/ielts-writing-task-1-como-describir-graficas">IELTS Writing Task 1: cómo describir gráficas y alcanzar Band 7</a>.</p>
 <p>Si quieres prepararte para el Writing del IELTS con retroalimentación real de un tutor que conoce los criterios de evaluación, puedes <a href="/clases-de-ingles">conocer el programa de preparación WeLearn</a>. Las clases incluyen práctica de Writing con feedback específico por sección.</p>
     `,
   },
@@ -2476,6 +2477,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Cómo practicar IELTS Listening efectivamente</h2>
 <p>En WeLearn trabajamos el Listening con simulacros cronometrados en condiciones reales, análisis de errores post-test y práctica de distractor recognition. Si quieres prepararte con acompañamiento real, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20IELTS%20Listening%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía completa de preparación</a>.</p>
     `,
   },
 
@@ -2611,6 +2613,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>WeLearn y el coreano de nivel intermedio</h2>
 <p>En WeLearn acompañamos estudiantes desde cero hasta preparación para TOPIK II con clases personalizadas y material propio. Si ya tienes TOPIK I y quieres dar el siguiente paso, <a href="https://wa.me/573005004253?text=Hola%2C%20tengo%20TOPIK%20I%20y%20quiero%20prepararme%20para%20TOPIK%20II%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave y cuál presentar</a> y <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: guía de preparación para principiantes</a>.</p>
     `,
   },
 
@@ -2661,6 +2664,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Cómo te ayuda WeLearn</h2>
 <p>En WeLearn diseñamos planes de estudio orientados a objetivos laborales concretos: desde inglés conversacional para trabajo remoto hasta preparación para exámenes que abren puertas internacionales. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20ingl%C3%A9s%20para%20trabajo%20remoto%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para una diagnóstico gratuito.</p>
+<p>Lee también: <a href="/blog/ingles-para-trabajar-en-empresas-multinacionales">Inglés para trabajar en empresas multinacionales en Colombia</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">qué significa cada nivel de inglés (A1-C2)</a>.</p>
     `,
   },
 
