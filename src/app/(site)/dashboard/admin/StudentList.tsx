@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useTransition } from 'react'
+import { useState, useTransition, useCallback } from 'react'
 import { assignPlan } from '@/lib/actions/assignPlan'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
 
@@ -60,6 +60,13 @@ export default function StudentList({ students }: { students: StudentRow[] }) {
   const [pending, startTransition] = useTransition()
   const [saving, setSaving] = useState<string | null>(null)
   const [toast, setToast]   = useState<string | null>(null)
+
+  const copyEmail = useCallback((email: string) => {
+    navigator.clipboard.writeText(email).then(() => {
+      setToast(`Email copiado: ${email}`)
+      setTimeout(() => setToast(null), 2500)
+    })
+  }, [])
 
   const filtered = list.filter(s => {
     const matchSearch = !search || s.email.includes(search) || (s.full_name ?? '').toLowerCase().includes(search.toLowerCase())
@@ -125,7 +132,15 @@ export default function StudentList({ students }: { students: StudentRow[] }) {
           ))}
         </div>
         <span style={{ fontSize: 11, color: MUTED, whiteSpace: 'nowrap' }}>
-          {filtered.length} de {list.length} · {list.filter(s => !s.last_active).length} sin actividad
+          {filtered.length} de {list.length}
+          {' · '}
+          <span style={{ color: '#d97706', fontWeight: 600 }}>
+            {list.filter(s => { if (!s.last_active) return false; const d = Math.floor((Date.now() - new Date(s.last_active).getTime()) / 86400000); return d > 7 && d <= 30 }).length} en riesgo
+          </span>
+          {' · '}
+          <span style={{ color: '#dc2626', fontWeight: 600 }}>
+            {list.filter(s => { if (!s.last_active) return true; return Math.floor((Date.now() - new Date(s.last_active).getTime()) / 86400000) > 30 }).length} inactivos
+          </span>
         </span>
       </div>
 
@@ -139,7 +154,7 @@ export default function StudentList({ students }: { students: StudentRow[] }) {
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
             <thead>
               <tr>
-                {['Estudiante', 'Estado', 'Plan', 'Simulacros', 'Último acceso', 'Inscrito', 'Cambiar plan'].map(h => (
+                {['Estudiante', 'Estado', 'Plan', 'Simulacros', 'Último acceso', 'Inscrito', 'Cambiar plan', ''].map(h => (
                   <th key={h} style={{
                     textAlign: 'left', padding: '6px 10px',
                     color: MUTED, fontWeight: 600, fontSize: 10,
@@ -227,6 +242,21 @@ export default function StudentList({ students }: { students: StudentRow[] }) {
                         </button>
                       ))}
                     </div>
+                  </td>
+
+                  {/* Copy email */}
+                  <td style={{ padding: '10px 6px' }}>
+                    <button
+                      onClick={() => copyEmail(student.email)}
+                      title={`Copiar email: ${student.email}`}
+                      style={{
+                        padding: '3px 7px', borderRadius: 6, border: `1px solid ${BORDER}`,
+                        background: 'transparent', color: MUTED, fontSize: 10,
+                        fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap',
+                      }}
+                    >
+                      ✉
+                    </button>
                   </td>
                 </tr>
               ))}
