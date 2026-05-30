@@ -17,7 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/metodo`,          lastModified: now, changeFrequency: 'monthly', priority: 0.9  },
     { url: `${BASE}/leccion`,         lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/practica`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${BASE}/practica/vocabulario-coreano`, lastModified: now, changeFrequency: 'monthly', priority: 0.65 },
     { url: `${BASE}/precios`,         lastModified: now, changeFrequency: 'monthly', priority: 0.7  },
 
     // ── High-intent landing pages ──────────────────────────────────────────────
