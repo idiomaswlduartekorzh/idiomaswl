@@ -16,8 +16,8 @@ const LANGUAGES = [
   { slug: 'coreano',   flag: '🇰🇷', name: 'Coreano',   exams: ['TOPIK I', 'TOPIK II'],                   landing: '/clases-de-coreano' },
   { slug: 'frances',   flag: '🇫🇷', name: 'Francés',   exams: ['DELF A1–B2', 'DALF C1–C2'],              landing: '/clases-de-frances' },
   { slug: 'aleman',    flag: '🇩🇪', name: 'Alemán',    exams: ['Goethe A1', 'Goethe B1', 'Goethe C1'],   landing: '/clases-de-aleman' },
-  { slug: 'italiano',  flag: '🇮🇹', name: 'Italiano',  exams: ['CILS', 'CELI'],                          landing: null },
-  { slug: 'portugues', flag: '🇧🇷', name: 'Portugués', exams: ['CELPE-Bras'],                            landing: null },
+  { slug: 'italiano',  flag: '🇮🇹', name: 'Italiano',  exams: ['CILS', 'CELI'],                          landing: '/clases-de-italiano' },
+  { slug: 'portugues', flag: '🇧🇷', name: 'Portugués', exams: ['CELPE-Bras'],                            landing: '/clases-de-portugues' },
 ];
 
 function formatCOP(n: number) {

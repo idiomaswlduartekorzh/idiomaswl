@@ -129,8 +129,8 @@ const IDIOMAS = [
   { code: '한', name: 'Coreano',   native: '한국어',    desc: 'Método visual WeLearn',    active: true,  href: '/clases-de-coreano' },
   { code: 'Fr', name: 'Francés',   native: 'Français',  desc: 'DELF · DALF',              active: true,  href: '/clases-de-frances' },
   { code: 'De', name: 'Alemán',    native: 'Deutsch',   desc: 'Goethe-Zertifikat',        active: true,  href: '/clases-de-aleman'  },
-  { code: 'It', name: 'Italiano',  native: 'Italiano',  desc: 'CILS · CELI',              active: true,  href: '/precios'           },
-  { code: 'Pt', name: 'Portugués', native: 'Português', desc: 'CELPE-Bras',               active: true,  href: '/precios'           },
+  { code: 'It', name: 'Italiano',  native: 'Italiano',  desc: 'CILS · CELI',              active: true,  href: '/clases-de-italiano'  },
+  { code: 'Pt', name: 'Portugués', native: 'Português', desc: 'CELPE-Bras',               active: true,  href: '/clases-de-portugues' },
   { code: '日', name: 'Japonés',   native: '日本語',    desc: 'JLPT · Próximamente',      active: false, href: null                 },
   { code: 'Py', name: 'Ruso',      native: 'Русский',   desc: 'TORFL · Próximamente',     active: false, href: null                 },
 ];

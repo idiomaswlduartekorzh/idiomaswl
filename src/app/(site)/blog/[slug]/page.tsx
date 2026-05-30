@@ -90,11 +90,11 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLinkLabel: 'Ver clases de alemán',
   },
   Portugués: {
-    title: '¿Quieres prepararte para el Celpe-Bras?',
-    desc: 'Te ayudamos a preparar el Celpe-Bras con tutor especializado. Ideal para quienes quieren estudiar o trabajar en Brasil.',
-    msg: 'Hola, leí el artículo de WeLearn sobre el Celpe-Bras y quiero saber más sobre las clases de portugués.',
-    pageLink: '/examenes/celpe-bras',
-    pageLinkLabel: 'Ver simulacros de Celpe-Bras',
+    title: '¿Quieres aprender portugués o preparar el Celpe-Bras?',
+    desc: 'Clases de portugués brasileño online con tutor especializado. Preparamos Celpe-Bras Intermediário hasta Superior. Clase diagnóstico gratis.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el portugués y quiero saber más sobre las clases de portugués.',
+    pageLink: '/clases-de-portugues',
+    pageLinkLabel: 'Ver clases de portugués',
   },
   Francés: {
     title: '¿Quieres aprender francés o preparar el DELF?',
@@ -104,11 +104,11 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLinkLabel: 'Ver clases de francés',
   },
   Italiano: {
-    title: '¿Quieres prepararte para el CILS o CELI?',
-    desc: 'Clases de italiano con enfoque en exámenes oficiales. Preparamos CILS y CELI de A2 hasta C2 con docentes especializados.',
-    msg: 'Hola, leí el artículo de WeLearn sobre el CILS y CELI y quiero saber más sobre las clases de italiano.',
-    pageLink: '/examenes/cils-celi',
-    pageLinkLabel: 'Ver simulacros de CILS',
+    title: '¿Quieres aprender italiano o preparar el CILS?',
+    desc: 'Clases de italiano online con tutor especializado. Preparamos CILS y CELI de A2 hasta C2, ciudadanía italiana y estudios en Italia.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el italiano y quiero saber más sobre las clases de italiano.',
+    pageLink: '/clases-de-italiano',
+    pageLinkLabel: 'Ver clases de italiano',
   },
   Método: {
     title: '¿Listo para aprender un idioma con método?',
