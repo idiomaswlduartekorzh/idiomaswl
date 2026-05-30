@@ -133,8 +133,8 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Portugués', color: '#166534', title: 'Portugués para negocios con Brasil: nivel y guía práctica', slug: 'portugues-para-negocios-con-brasil-nivel-recomendado' },
   { cat: 'Portugués', color: '#166534', title: '¿Cuánto cuesta aprender portugués en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-portugues-colombia-2026' },
-  { cat: 'Portugués', color: '#166534', title: 'Clases de portugués online en Colombia: guía para elegir bien', slug: 'clases-de-portugues-online-colombia' },
   { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
 ];
 

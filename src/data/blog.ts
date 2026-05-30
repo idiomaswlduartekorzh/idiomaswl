@@ -4113,6 +4113,194 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/trabajar-en-alemania-nivel-aleman-requerido">Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
     `,
   },
+  // ── Article 55 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'italiano-para-estudiar-en-italia-costos-y-requisitos',
+    title: 'Estudiar en Italia: costos, nivel de italiano requerido y cómo aplicar desde Colombia',
+    description:
+      'Guía completa para colombianos que quieren estudiar en universidades italianas: costos reales de matrícula, nivel de italiano requerido (B2 o C1), exámenes de idioma aceptados y cómo prepararte.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Italiano',
+    tags: ['estudiar en Italia colombianos requisitos', 'nivel italiano para universidad italiana', 'CILS B2 universidad Italia', 'costos universidades italianas extranjeros', 'visa de estudio Italia colombianos'],
+    body: `
+<h2>¿Por qué estudiar en Italia es una opción real para colombianos?</h2>
+<p>Italia tiene uno de los sistemas universitarios más asequibles del mundo para extranjeros. A diferencia del Reino Unido (£15.000–£35.000/año), EE.UU. (US$20.000–$60.000/año) o Canadá (CAD$15.000–$35.000/año), las universidades públicas italianas cobran entre €1.000 y €4.000 por año en matrícula para estudiantes internacionales — con exenciones o descuentos para quienes demuestran bajos ingresos según el sistema ISEE. Muchas universidades italianas están en el top 500 mundial (Politecnico di Milano, La Sapienza, Bologna, Torino), con fortalezas en ingeniería, diseño, arquitectura y medicina.</p>
+<p>El principal requisito de admisión para programas en italiano es — como era de esperarse — el dominio del italiano a nivel universitario.</p>
+
+<h2>Nivel de italiano requerido para estudiar en Italia</h2>
+<table>
+  <thead><tr><th>Tipo de programa</th><th>Nivel mínimo requerido</th><th>Certificación típica</th></tr></thead>
+  <tbody>
+    <tr><td>Pregrado (Laurea) en italiano</td><td>B2 (mínimo) — C1 recomendado</td><td>CILS DUE-B2, CELI 3-B2, PLIDA B2</td></tr>
+    <tr><td>Posgrado (Laurea Magistrale) en italiano</td><td>B2–C1</td><td>CILS TRE-C1, CELI 4-C1</td></tr>
+    <tr><td>Programas en inglés (dobles titulaciones)</td><td>IELTS 6.5 / TOEFL 90+</td><td>Sin requisito de italiano formal</td></tr>
+    <tr><td>Politecnico di Milano, Torino (inglés)</td><td>B2–C1 inglés + A2 italiano (recomendado)</td><td>Generalmente IELTS/TOEFL</td></tr>
+  </tbody>
+</table>
+<p>El examen de admisión CISIA (para ingeniería y ciencias) y el TOLC son en italiano, por lo que un nivel sólido es indispensable incluso para programas técnicos.</p>
+
+<h2>Costos reales de vivir y estudiar en Italia como colombiano</h2>
+<table>
+  <thead><tr><th>Concepto</th><th>Costo mensual estimado</th></tr></thead>
+  <tbody>
+    <tr><td>Matrícula universitaria (anual, prorrateada)</td><td>€80–€330/mes</td></tr>
+    <tr><td>Alojamiento (residencia universitaria)</td><td>€200–€500/mes</td></tr>
+    <tr><td>Alojamiento (piso compartido)</td><td>€300–€600/mes según ciudad</td></tr>
+    <tr><td>Alimentación</td><td>€200–€350/mes</td></tr>
+    <tr><td>Transporte</td><td>€25–€60/mes (abono mensual)</td></tr>
+    <tr><td>Total estimado</td><td>€700–€1.300/mes</td></tr>
+  </tbody>
+</table>
+<p>Ciudades más asequibles: Nápoles, Bari, Palermo, Bologna, Torino. Más caras: Milán y Roma. Muchas universidades ofrecen becas Er.go (Emilia Romagna), DSU (Toscana), BeForte y otras becas regionales que pueden cubrir matrícula + alojamiento para estudiantes con bajo ISEE familiar.</p>
+
+<h2>Cuánto tiempo necesitas para alcanzar el B2 de italiano</h2>
+<p>Para hispanohablantes, el italiano es el idioma europeo más accesible. El Marco Común Europeo estima 200–250 horas de instrucción para llegar del nivel cero al B2. Con 2 clases por semana más práctica diaria:</p>
+<table>
+  <thead><tr><th>Ritmo</th><th>Tiempo A0 → B2</th></tr></thead>
+  <tbody>
+    <tr><td>2 clases/semana + práctica diaria</td><td>14–20 meses</td></tr>
+    <tr><td>3 clases/semana + práctica intensa</td><td>9–14 meses</td></tr>
+    <tr><td>Plan intensivo (5+ clases/semana)</td><td>5–8 meses</td></tr>
+  </tbody>
+</table>
+
+<h2>Proceso de admisión en universidades italianas para colombianos</h2>
+<ol>
+  <li><strong>Elige la universidad y el programa</strong>: usa <em>universitaly.it</em> para buscar programas disponibles para extranjeros.</li>
+  <li><strong>Verifica los requisitos de idioma</strong>: cada universidad publica sus requisitos específicos. Algunos aceptan declaraciones de nivel propio para el primer año con condición de certificar antes de graduarse.</li>
+  <li><strong>Apostilla y legaliza documentos</strong> (diploma de bachillerato y, si aplica, título universitario previo) ante la Cancillería colombiana + Consulado italiano en Colombia.</li>
+  <li><strong>Solicita la previscrizione</strong> (preregistro) en el Consulado italiano en Colombia entre enero y abril del año en que quieres entrar.</li>
+  <li><strong>Presenta el examen de italiano</strong> requerido por la universidad si no tienes certificación previa.</li>
+  <li><strong>Solicita la visa de estudio</strong> (Visto D per studio) con el carta di ammissione de la universidad.</li>
+</ol>
+
+<h2>WeLearn y la preparación de italiano para universidades</h2>
+<p>En WeLearn preparamos para el CILS B2 y C1 — las certificaciones más aceptadas por universidades italianas. El proceso empieza con una sesión de diagnóstico gratuita para saber exactamente dónde estás y cuánto tiempo necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20estudiar%20en%20Italia%20y%20necesito%20preparar%20mi%20italiano.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita <a href="/clases-de-italiano">nuestra página de clases de italiano</a>.</p>
+<p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano desde Colombia</a> y <a href="/blog/ciudadania-italiana-italiano-b1-requisito">Ciudadanía italiana: el requisito de italiano B1 explicado</a>.</p>
+    `,
+  },
+  // ── Article 56 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'portugues-para-negocios-con-brasil-nivel-recomendado',
+    title: 'Portugués para negocios con Brasil: nivel recomendado y guía práctica',
+    description:
+      'Guía para profesionales y empresarios colombianos que trabajan o quieren trabajar con Brasil: qué nivel de portugués necesitas, por qué el portuñol no es suficiente y cómo alcanzar el B2 conversacional para negocios.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Portugués',
+    tags: ['portugués para negocios Brasil Colombia', 'nivel portugués negocios empresas brasileñas', 'aprender portugués profesional Colombia', 'portuñol vs portugués formal', 'portugués B2 negocios'],
+    body: `
+<h2>¿Por qué el portugués es clave para hacer negocios con Brasil?</h2>
+<p>Brasil es la décima economía del mundo y el principal socio comercial de Colombia en América del Sur. São Paulo concentra el mayor PIB de Latinoamérica y es sede de miles de empresas que necesitan intermediarios comerciales, proveedores, distribuidores y consultores de habla hispanohablante. Sin embargo, en el mundo de los negocios en Brasil, el inglés tiene penetración baja fuera del sector tech — la mayoría de las reuniones, contratos, negociaciones y relaciones comerciales se hacen en portugués.</p>
+<p>El "portuñol" — la mezcla informal de español y portugués — funciona para conversaciones turísticas, pero en un contexto de negocios formal puede costar contratos, credibilidad y relaciones comerciales valiosas.</p>
+
+<h2>¿Qué nivel de portugués necesitas para negocios?</h2>
+<table>
+  <thead><tr><th>Nivel CECRL</th><th>Capacidad real en contexto de negocios</th><th>¿Suficiente?</th></tr></thead>
+  <tbody>
+    <tr><td>A1–A2</td><td>Saludos, frases básicas, comprender letreros</td><td>❌ No para negocios</td></tr>
+    <tr><td>B1</td><td>Conversación básica, emails simples, entender en reuniones</td><td>⚠️ Muy limitado</td></tr>
+    <tr><td>B2</td><td>Reuniones, negociaciones, contratos, presentaciones</td><td>✅ Funcional para negocios</td></tr>
+    <tr><td>C1</td><td>Presentaciones complejas, redacción técnica, negociación avanzada</td><td>✅✅ Ideal</td></tr>
+  </tbody>
+</table>
+<p>Para un profesional colombiano que quiere hacer negocios con Brasil, el objetivo realista es el <strong>B2 conversacional</strong>. Con ese nivel puedes llevar reuniones, escribir emails profesionales, participar en llamadas con socios brasileños y entender documentos contractuales sin necesidad de traductor.</p>
+
+<h2>Lo que diferencia el portugués de negocios del portugués general</h2>
+<p>El portugués de negocios tiene un vocabulario y un registro específicos:</p>
+<ul>
+  <li><strong>Vocabulario técnico</strong>: términos financieros (fluxo de caixa = flujo de caja), logísticos (prazo de entrega, nota fiscal), legales (contrato de prestação de serviços)</li>
+  <li><strong>Registro formal</strong>: el portugués de negocios en Brasil usa el presente do indicativo formal, el futuro do pretérito para propuestas ("gostaríamos de..."), y expresiones epistolares específicas</li>
+  <li><strong>Velocidad y acento</strong>: los paulistanos (São Paulo) hablan rápido, con caída de sílabas y mucho vocabulario del cotidiano empresarial que no aparece en apps de idiomas</li>
+  <li><strong>Cultura de negociación</strong>: en Brasil las negociaciones son relacionales — saber hacer pequeña charla (papo) en portugués construye confianza que los números solos no logran</li>
+</ul>
+
+<h2>Cuánto tiempo necesitas para alcanzar B2 de portugués</h2>
+<table>
+  <thead><tr><th>Punto de partida</th><th>Tiempo estimado (2 clases/sem)</th></tr></thead>
+  <tbody>
+    <tr><td>A0 (sin base)</td><td>10–16 meses para B2 funcional</td></tr>
+    <tr><td>A2 (base básica)</td><td>6–10 meses</td></tr>
+    <tr><td>B1 (intermedio)</td><td>4–7 meses</td></tr>
+  </tbody>
+</table>
+<p>Para hispanohablantes, el portugués tiene una curva de aprendizaje significativamente más corta que el inglés o el alemán. La inversión en tiempo es menor para un impacto comercial comparable.</p>
+
+<h2>WeLearn y el portugués para negocios</h2>
+<p>En WeLearn preparamos para el Celpe-Bras y para el portugués de negocios con tutores especializados en portugués brasileño. Podemos adaptar el plan a tu sector (tecnología, manufactura, agro, finanzas) e incluir vocabulario específico desde el inicio. Primera sesión gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20aprender%20portugu%C3%A9s%20para%20hacer%20negocios%20con%20Brasil.%20%C2%BFPueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-portugues">nuestra página de clases de portugués</a>.</p>
+<p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/cuanto-cuesta-aprender-portugues-colombia-2026">¿Cuánto cuesta aprender portugués en Colombia en 2026?</a>.</p>
+    `,
+  },
+  // ── Article 57 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'toefl-ibt-vs-toefl-essentials-cual-elegir-2026',
+    title: 'TOEFL iBT vs TOEFL Essentials: diferencias y cuál elegir en 2026',
+    description:
+      'Comparación completa entre TOEFL iBT y TOEFL Essentials: qué mide cada uno, qué universidades y empleadores aceptan cada versión, costos y cuál es más fácil de preparar para colombianos.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'TOEFL',
+    tags: ['TOEFL iBT vs TOEFL Essentials diferencias', 'TOEFL Essentials Colombia 2026', 'cuál TOEFL tomar Colombia', 'TOEFL para visa USA', 'TOEFL para universidad EE.UU. Colombia'],
+    body: `
+<h2>¿Por qué hay dos TOEFL ahora?</h2>
+<p>ETS (Educational Testing Service), la organización que administra el TOEFL, lanzó el <strong>TOEFL Essentials</strong> en 2021 como una alternativa más accesible y flexible al TOEFL iBT. El objetivo fue ampliar el acceso al mercado de pruebas de inglés, especialmente en países donde el TOEFL iBT era difícil de tomar (centros limitados, costos altos, esperas largas). Para los colombianos, esto ha creado una pregunta legítima: ¿cuál tomo?</p>
+
+<h2>Diferencias clave entre TOEFL iBT y TOEFL Essentials</h2>
+<table>
+  <thead><tr><th>Característica</th><th>TOEFL iBT</th><th>TOEFL Essentials</th></tr></thead>
+  <tbody>
+    <tr><td>Duración</td><td>~2 horas (versión actual reducida)</td><td>~1,5 horas</td></tr>
+    <tr><td>Modalidad</td><td>Centro de pruebas o en casa (At-Home)</td><td>Solo en casa (online supervisado)</td></tr>
+    <tr><td>Secciones</td><td>Reading, Listening, Speaking, Writing</td><td>Reading, Listening, Speaking, Writing (más corto)</td></tr>
+    <tr><td>Escala de puntuación</td><td>0–120 (suma de 4 secciones 0–30)</td><td>1–12 (escala propia)</td></tr>
+    <tr><td>Costo (Colombia)</td><td>US$230–$250</td><td>US$135–$145</td></tr>
+    <tr><td>Resultados</td><td>6 días hábiles</td><td>6 días hábiles</td></tr>
+    <tr><td>Validez</td><td>2 años</td><td>2 años</td></tr>
+    <tr><td>Reconocimiento universitario</td><td>+11.000 instituciones worldwide</td><td>Menor (especialmente para posgrado de élite)</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué acepta cada versión?</h2>
+<p><strong>TOEFL iBT</strong>: es el estándar para:</p>
+<ul>
+  <li>Universidades de EE.UU. (Ivy League, grandes universidades públicas)</li>
+  <li>Universidades de Canadá, Australia, Nueva Zelanda</li>
+  <li>Programas de visa de EE.UU. (visa F-1 de estudiante)</li>
+  <li>Employers internacionales que piden evidencia de nivel avanzado</li>
+  <li>Programas de maestría y doctorado en general</li>
+</ul>
+<p><strong>TOEFL Essentials</strong>: es aceptado por:</p>
+<ul>
+  <li>Más de 1.300 instituciones (principalmente de pregrado o programas de inglés de admisión condicional)</li>
+  <li>Algunos programas de posgrado, pero no todos</li>
+  <li>Programas de transferencia de crédito y cursos intensivos de idioma</li>
+  <li>Empleadores que no tienen requisitos específicos de versión</li>
+</ul>
+<p>⚠️ Antes de tomar el TOEFL Essentials, verifica explícitamente con la universidad o programa de destino si lo aceptan. Las grandes universidades de investigación en EE.UU. (MIT, Stanford, Harvard, Michigan, UCLA, etc.) aceptan el iBT pero muchas no tienen el Essentials en su lista oficial.</p>
+
+<h2>¿Cuál es más difícil?</h2>
+<p>El TOEFL iBT es más exigente en términos de nivel académico requerido — usa textos de nivel universitario, argumentación abstracta y vocabulario académico. El TOEFL Essentials usa contenido más cotidiano y es más corto. Sin embargo, el Essentials no es significativamente "fácil" — sigue siendo un examen de nivel B2–C1.</p>
+<p>Para un candidato que está preparado para el TOEFL iBT, el Essentials no presenta dificultad adicional.</p>
+
+<h2>¿Cuál tomar? — La decisión según tu objetivo</h2>
+<table>
+  <thead><tr><th>Objetivo</th><th>Tomar</th></tr></thead>
+  <tbody>
+    <tr><td>Maestría/doctorado en EE.UU. o Canadá</td><td>✅ TOEFL iBT</td></tr>
+    <tr><td>Pregrado en EE.UU. (top 100)</td><td>✅ TOEFL iBT</td></tr>
+    <tr><td>Pregrado en EE.UU. (universidades regionales)</td><td>Verificar — posiblemente Essentials</td></tr>
+    <tr><td>Certificación para empleo (no visa)</td><td>✅ TOEFL Essentials (más barato)</td></tr>
+    <tr><td>Programa intensivo de inglés en USA</td><td>Cualquiera — verificar con el programa</td></tr>
+    <tr><td>Visa de trabajo en EE.UU. (H-1B) con empleador</td><td>Depende del empleador — ninguno obligatorio por visa</td></tr>
+  </tbody>
+</table>
+
+<h2>Preparación para el TOEFL desde Colombia</h2>
+<p>En WeLearn preparamos para el TOEFL iBT con tutores especializados. El proceso incluye diagnóstico de nivel, plan por sección y simulacros de examen. La primera sesión es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOEFL%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación completa para colombianos</a> y <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL: ¿cuál tomar en Colombia?</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

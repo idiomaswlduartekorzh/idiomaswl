@@ -165,8 +165,8 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Italiano', color: '#009246', title: 'Estudiar en Italia: costos, nivel de italiano y cómo aplicar', slug: 'italiano-para-estudiar-en-italia-costos-y-requisitos' },
   { cat: 'Italiano', color: '#009246', title: 'Ciudadanía italiana: el requisito de italiano B1 explicado', slug: 'ciudadania-italiana-italiano-b1-requisito' },
-  { cat: 'Italiano', color: '#009246', title: '¿Cuánto cuesta aprender italiano en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-italiano-colombia-2026' },
   { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia', slug: 'cils-celi-certificacion-italiano-colombia' },
 ];
 

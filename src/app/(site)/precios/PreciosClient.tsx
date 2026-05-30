@@ -48,13 +48,13 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Alemán',   color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
   ],
   italiano: [
+    { cat: 'Italiano', color: '#009246', title: 'Estudiar en Italia: costos, nivel de italiano y cómo aplicar', slug: 'italiano-para-estudiar-en-italia-costos-y-requisitos' },
     { cat: 'Italiano', color: '#009246', title: 'Ciudadanía italiana: el requisito de italiano B1 explicado', slug: 'ciudadania-italiana-italiano-b1-requisito' },
-    { cat: 'Italiano', color: '#009246', title: '¿Cuánto cuesta aprender italiano en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-italiano-colombia-2026' },
     { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano', slug: 'cils-celi-certificacion-italiano-colombia' },
   ],
   portugues: [
+    { cat: 'Portugués', color: '#166534', title: 'Portugués para negocios con Brasil: nivel y guía práctica', slug: 'portugues-para-negocios-con-brasil-nivel-recomendado' },
     { cat: 'Portugués', color: '#166534', title: '¿Cuánto cuesta aprender portugués en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-portugues-colombia-2026' },
-    { cat: 'Portugués', color: '#166534', title: 'Clases de portugués online en Colombia: guía para elegir bien', slug: 'clases-de-portugues-online-colombia' },
     { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
   ],
 };
