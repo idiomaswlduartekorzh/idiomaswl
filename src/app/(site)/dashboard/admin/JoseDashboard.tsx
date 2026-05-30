@@ -346,17 +346,34 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
           </div>
 
           {/* KPI strip */}
-          <Card style={{ padding: '16px 24px' }}>
-            <div style={{ display: 'flex', gap: 0, alignItems: 'stretch' }}>
-              <Stat label="Simulacros totales" value={String(data.totalCount)} sub="enviados" />
-              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-              <Stat label="Esta semana" value={String(data.thisWeekCount)} sub="simulacros" />
-              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-              <Stat label="Semana anterior" value={String(data.lastWeekCount)} sub="simulacros" />
-              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-              <Stat label="Exámenes distintos" value={String(data.perExam.length)} sub="tipos" />
-            </div>
-          </Card>
+          {(() => {
+            const oneWeekAgo = new Date(now.getTime() - 7 * 86400000)
+            const newStudentsThisWeek = data.students.filter(s => {
+              if (!s.enrolled_at) return false
+              return new Date(s.enrolled_at) >= oneWeekAgo
+            }).length
+            return (
+              <Card style={{ padding: '16px 24px' }}>
+                <div style={{ display: 'flex', gap: 0, alignItems: 'stretch', flexWrap: 'wrap' }}>
+                  <Stat label="Simulacros totales" value={String(data.totalCount)} sub="enviados" />
+                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+                  <Stat label="Esta semana" value={String(data.thisWeekCount)} sub="simulacros" />
+                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+                  <Stat label="Semana anterior" value={String(data.lastWeekCount)} sub="simulacros" />
+                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+                  <Stat label="Exámenes distintos" value={String(data.perExam.length)} sub="tipos" />
+                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+                  <Stat label="Estudiantes" value={String(data.students.length)} sub="registrados" />
+                  {newStudentsThisWeek > 0 && (
+                    <>
+                      <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+                      <Stat label="Nuevos esta semana" value={String(newStudentsThisWeek)} sub="estudiantes" />
+                    </>
+                  )}
+                </div>
+              </Card>
+            )
+          })()}
 
           {/* Row 2: Exam breakdown + Top users */}
           <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 14 }}>

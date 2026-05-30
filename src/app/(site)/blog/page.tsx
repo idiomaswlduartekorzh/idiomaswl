@@ -78,6 +78,9 @@ export default function BlogPage() {
             Guías escritas por David Duarte y el equipo de WeLearn. Sin relleno: solo
             lo que funciona para preparar exámenes y aprender idiomas desde Colombia.
           </p>
+          <p style={{ fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', marginTop: '0.5rem' }}>
+            {BLOG_POSTS.length} artículos gratuitos
+          </p>
         </div>
 
         {/* Interactive filter + grid — client rendered */}
