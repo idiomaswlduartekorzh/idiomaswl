@@ -82,6 +82,41 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLink: '/clases-de-coreano',
     pageLinkLabel: 'Ver clases de coreano',
   },
+  Alemán: {
+    title: '¿Quieres prepararte para el Goethe?',
+    desc: 'Te ayudamos a preparar el Goethe-Zertifikat desde Colombia. Plan personalizado según tu nivel y meta.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el Goethe-Zertifikat y quiero saber más sobre las clases de alemán.',
+    pageLink: '/examenes/goethe',
+    pageLinkLabel: 'Ver simulacros de Goethe',
+  },
+  Portugués: {
+    title: '¿Quieres prepararte para el Celpe-Bras?',
+    desc: 'Te ayudamos a preparar el Celpe-Bras con tutor especializado. Ideal para quienes quieren estudiar o trabajar en Brasil.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el Celpe-Bras y quiero saber más sobre las clases de portugués.',
+    pageLink: '/examenes/celpe-bras',
+    pageLinkLabel: 'Ver simulacros de Celpe-Bras',
+  },
+  Francés: {
+    title: '¿Quieres prepararte para el DELF o DALF?',
+    desc: 'Clases de francés con enfoque en exámenes oficiales. Preparamos DELF A1 hasta DALF C2 con docentes especializados.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el DELF y DALF y quiero saber más sobre las clases de francés.',
+    pageLink: '/examenes/delf-dalf',
+    pageLinkLabel: 'Ver simulacros de DELF',
+  },
+  Método: {
+    title: '¿Listo para aprender un idioma con método?',
+    desc: 'Conoce el método WeLearn de 17 pasos, diseñado para hispanohablantes que quieren hablar idiomas, no solo aprenderlos.',
+    msg: 'Hola, leí el artículo de WeLearn sobre aprendizaje de idiomas y quiero saber más sobre el método.',
+    pageLink: '/metodo',
+    pageLinkLabel: 'Ver el método WeLearn',
+  },
+  Migración: {
+    title: '¿Planeas migrar y necesitas certificar tu inglés?',
+    desc: 'Preparación IELTS y TOEFL para migrar a Canadá, Australia o EE.UU. Con tutor experto y plan personalizado.',
+    msg: 'Hola, leí el artículo de WeLearn sobre migración e inglés y quiero saber más sobre la preparación.',
+    pageLink: '/clases-de-ingles',
+    pageLinkLabel: 'Ver clases de inglés',
+  },
 };
 
 const DEFAULT_CTA: CtaConfig = {

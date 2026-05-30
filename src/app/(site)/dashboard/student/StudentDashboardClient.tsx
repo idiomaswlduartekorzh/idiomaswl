@@ -261,11 +261,94 @@ function getDailyTip() {
   return DAILY_TIPS[dayOfYear % DAILY_TIPS.length]
 }
 
+/* ── Reto semanal (rotación semanal) ────────────────────────────────────── */
+interface Challenge {
+  week: number
+  tag: string
+  question: string
+  options: string[]
+  correct: number // 0-indexed
+  explanation: string
+}
+
+const WEEKLY_CHALLENGES: Challenge[] = [
+  {
+    week: 1, tag: 'IELTS',
+    question: 'En IELTS Writing Task 2, ¿cuántas palabras mínimas se requieren?',
+    options: ['150 palabras', '200 palabras', '250 palabras', '300 palabras'],
+    correct: 2,
+    explanation: 'Task 2 requiere mínimo 250 palabras. Task 1 requiere 150. Respuestas más cortas reciben penalización automática.',
+  },
+  {
+    week: 2, tag: 'Coreano',
+    question: '¿Cómo se dice "Hola" (saludo formal) en coreano?',
+    options: ['안녕 (Annyeong)', '안녕하세요 (Annyeonghaseyo)', '감사합니다 (Gamsahamnida)', '미안해요 (Mianhaeyo)'],
+    correct: 1,
+    explanation: '안녕하세요 es el saludo formal estándar. 안녕 es informal entre amigos. 감사합니다 significa "gracias" y 미안해요 es "lo siento".',
+  },
+  {
+    week: 3, tag: 'TOEFL',
+    question: '¿Cuánto tiempo dura la sección de Reading del TOEFL iBT?',
+    options: ['30 minutos', '45 minutos', '54 minutos', '72 minutos'],
+    correct: 2,
+    explanation: 'La sección de Reading del TOEFL iBT tiene 2 pasajes con 10 preguntas cada uno y dura 54 minutos.',
+  },
+  {
+    week: 4, tag: 'Gramática',
+    question: 'Elige la oración gramaticalmente correcta:',
+    options: [
+      'She has been study English for 3 years.',
+      'She has been studying English for 3 years.',
+      'She have been studying English for 3 years.',
+      'She have study English for 3 years.',
+    ],
+    correct: 1,
+    explanation: 'Se usa Present Perfect Continuous (have/has + been + V-ing) para acciones que empezaron en el pasado y continúan. "She" usa "has".',
+  },
+  {
+    week: 5, tag: 'ICFES',
+    question: '¿Cuántas preguntas de inglés tiene el ICFES Saber 11?',
+    options: ['30 preguntas', '45 preguntas', '55 preguntas', '60 preguntas'],
+    correct: 1,
+    explanation: 'La prueba de Inglés del ICFES Saber 11 tiene 45 preguntas. Evalúa habilidades de Reading y escucha con 90 minutos.',
+  },
+  {
+    week: 6, tag: 'Vocabulario',
+    question: '¿Cuál es el sinónimo más preciso de "substantial"?',
+    options: ['Small', 'Considerable', 'Beautiful', 'Quick'],
+    correct: 1,
+    explanation: '"Substantial" significa "considerable" o "significativo". Dominar sinónimos formales es clave para IELTS Band 7+.',
+  },
+  {
+    week: 7, tag: 'Coreano',
+    question: '¿Cuántas vocales básicas tiene el alfabeto coreano (한글)?',
+    options: ['8', '10', '14', '21'],
+    correct: 1,
+    explanation: 'Hangeul tiene 10 vocales básicas y 14 consonantes básicas. Las vocales adicionales son combinaciones de estas.',
+  },
+  {
+    week: 8, tag: 'IELTS',
+    question: '¿Cuántos módulos evalúa el IELTS Academic?',
+    options: ['2', '3', '4', '5'],
+    correct: 2,
+    explanation: 'IELTS evalúa 4 módulos: Listening, Reading, Writing y Speaking. La duración total es aproximadamente 2 horas y 45 minutos.',
+  },
+]
+
+function getWeeklyChallenge(): Challenge {
+  const now = new Date()
+  const startOfYear = new Date(now.getFullYear(), 0, 1)
+  const weekNumber = Math.floor((now.getTime() - startOfYear.getTime()) / (7 * 86400000))
+  return WEEKLY_CHALLENGES[weekNumber % WEEKLY_CHALLENGES.length]
+}
+
 /* ── Component ─────────────────────────────────────────────────────────────── */
 export default function StudentDashboardClient({ name, plan, streak, stats, recentExams, koreanLessons }: Props) {
   const [sideOpen, setSideOpen] = useState(false)
+  const [challengeAnswer, setChallengeAnswer] = useState<number | null>(null)
   const initial = name[0]?.toUpperCase() ?? 'E'
   const dailyTip = getDailyTip()
+  const weeklyChallenge = getWeeklyChallenge()
 
   const STATS: { num: string; label: string; icon: ReactNode }[] = [
     { num: String(stats?.simulacros ?? 0),   label: 'Simulacros',  icon: IC.clipboard2 },
@@ -466,6 +549,46 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
                       <p className="std-rec-card__mocks">{ex.mocks} disponible</p>
                     </Link>
                   ))}
+                </div>
+              </section>
+
+              {/* Reto semanal */}
+              <section className="std-section">
+                <div className="std-section__head">
+                  <h2 className="std-section__title">🏆 Reto de la semana</h2>
+                  <span style={{ fontSize: 10, fontWeight: 700, fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.05em', background: 'var(--bg-2)', border: '1px solid var(--line-soft)', padding: '3px 8px', borderRadius: 20 }}>
+                    {weeklyChallenge.tag}
+                  </span>
+                </div>
+                <div className="std-challenge-card">
+                  <p className="std-challenge-q">{weeklyChallenge.question}</p>
+                  <div className="std-challenge-opts">
+                    {weeklyChallenge.options.map((opt, i) => {
+                      let optClass = 'std-challenge-opt'
+                      if (challengeAnswer !== null) {
+                        if (i === weeklyChallenge.correct) optClass += ' std-challenge-opt--correct'
+                        else if (i === challengeAnswer && i !== weeklyChallenge.correct) optClass += ' std-challenge-opt--wrong'
+                        else optClass += ' std-challenge-opt--dim'
+                      }
+                      return (
+                        <button
+                          key={i}
+                          className={optClass}
+                          onClick={() => { if (challengeAnswer === null) setChallengeAnswer(i) }}
+                          disabled={challengeAnswer !== null}
+                        >
+                          <span className="std-challenge-opt__letter">{['A','B','C','D'][i]}</span>
+                          {opt}
+                        </button>
+                      )
+                    })}
+                  </div>
+                  {challengeAnswer !== null && (
+                    <div className={`std-challenge-exp${challengeAnswer === weeklyChallenge.correct ? ' std-challenge-exp--correct' : ' std-challenge-exp--wrong'}`}>
+                      <strong>{challengeAnswer === weeklyChallenge.correct ? '✓ ¡Correcto!' : '✗ Incorrecto'}</strong>
+                      <span> — {weeklyChallenge.explanation}</span>
+                    </div>
+                  )}
                 </div>
               </section>
 
@@ -1257,6 +1380,95 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
         .std-tip-widget {
           background: linear-gradient(135deg, #f0f3ff 0%, #e8ecff 100%);
           border: 1px solid rgba(26,46,204,0.15);
+        }
+
+        /* Reto semanal */
+        .std-challenge-card {
+          background: rgba(248,247,255,0.72);
+          backdrop-filter: blur(28px) saturate(2);
+          -webkit-backdrop-filter: blur(28px) saturate(2);
+          border: 1px solid rgba(20,33,92,0.10);
+          border-radius: 18px;
+          box-shadow: 0 4px 20px rgba(20,33,92,0.08), inset 0 1px 0 rgba(255,255,255,0.85);
+          padding: 20px;
+        }
+        .std-challenge-q {
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--ink);
+          margin: 0 0 16px;
+          line-height: 1.5;
+          letter-spacing: -0.01em;
+        }
+        .std-challenge-opts {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-bottom: 14px;
+        }
+        .std-challenge-opt {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 14px;
+          border-radius: 10px;
+          border: 1px solid var(--line-soft);
+          background: var(--bg);
+          text-align: left;
+          font-size: 13px;
+          color: var(--ink);
+          cursor: pointer;
+          transition: border-color 0.15s, background 0.15s;
+          font-weight: 500;
+        }
+        .std-challenge-opt:hover:not(:disabled) {
+          border-color: rgba(26,46,204,0.4);
+          background: #f0f3ff;
+        }
+        .std-challenge-opt--correct {
+          border-color: #16a34a !important;
+          background: #f0fdf4 !important;
+          color: #15803d;
+          font-weight: 600;
+        }
+        .std-challenge-opt--wrong {
+          border-color: #dc2626 !important;
+          background: #fef2f2 !important;
+          color: #b91c1c;
+        }
+        .std-challenge-opt--dim {
+          opacity: 0.45;
+        }
+        .std-challenge-opt__letter {
+          width: 22px;
+          height: 22px;
+          border-radius: 6px;
+          background: var(--bg-2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: 800;
+          font-family: var(--mono);
+          color: var(--muted);
+          flex-shrink: 0;
+        }
+        .std-challenge-exp {
+          font-size: 12px;
+          line-height: 1.5;
+          border-radius: 8px;
+          padding: 10px 12px;
+          margin-top: 4px;
+        }
+        .std-challenge-exp--correct {
+          background: #f0fdf4;
+          color: #15803d;
+          border: 1px solid #bbf7d0;
+        }
+        .std-challenge-exp--wrong {
+          background: #fef2f2;
+          color: #991b1b;
+          border: 1px solid #fecaca;
         }
 
         /* Lock card (plan gate) */
