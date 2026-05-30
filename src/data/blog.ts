@@ -3245,6 +3245,153 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
     `,
   },
+  // ── Article 41 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-aleman-online-colombia',
+    title: 'Clases de alemán online en Colombia: guía para elegir bien y avanzar de verdad',
+    description:
+      'Cómo elegir clases de alemán online en Colombia: qué diferencia a un buen programa, qué exige el Goethe-Zertifikat y cuánto tiempo necesitas para alcanzar el nivel que necesitas para trabajar o migrar a Alemania.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Alemán',
+    tags: ['clases de alemán online Colombia', 'academia de alemán Colombia', 'aprender alemán Colombia', 'Goethe Zertifikat Colombia', 'alemán para trabajar en Alemania'],
+    body: `
+<h2>¿Por qué hay tanta demanda de alemán en Colombia?</h2>
+<p>El alemán dejó de ser un idioma de nicho en Colombia. La demanda creció impulsada por tres factores concretos: la apertura del mercado laboral alemán a profesionales calificados de fuera de la Unión Europea (la <em>Fachkräfteeinwanderungsgesetz</em> o ley de inmigración de trabajadores calificados), el creciente número de colombianos que solicitan visa de trabajo o estudio en Alemania, y el interés en las becas DAAD y Humboldt. En 2024–2025, Colombia se convirtió en uno de los países latinoamericanos con mayor número de aplicantes al Goethe-Zertifikat.</p>
+<p>El resultado es un mercado de clases de alemán que creció rápido sin que la calidad creciera al mismo ritmo. Esta guía te ayuda a encontrar la opción correcta.</p>
+
+<h2>Define tu objetivo antes de buscar clases</h2>
+<p>El camino correcto depende completamente de lo que quieres lograr:</p>
+<ul>
+  <li><strong>Visa de trabajo en Alemania (trabajo calificado):</strong> el nivel mínimo recomendado es <strong>B1</strong> para la mayoría de sectores, y <strong>B2–C1</strong> para salud, educación y áreas reguladas.</li>
+  <li><strong>Estudiar en universidad alemana:</strong> la mayoría de programas en alemán exigen <strong>B2 o C1</strong> (TestDaF o DSH para admisión).</li>
+  <li><strong>Beca DAAD:</strong> exige mínimo B2 certificado para muchos programas.</li>
+  <li><strong>Migrar con tu pareja alemana (visa de reagrupación familiar):</strong> requiere demostrar <strong>A1</strong> del Goethe para la visa de entrada, y A2–B1 para la residencia permanente.</li>
+  <li><strong>Trabajar en empresa alemana en Colombia:</strong> el nivel necesario depende de la empresa; muchas aceptan B1 funcional sin certificado.</li>
+</ul>
+<p>Si tu objetivo es el Goethe-Zertifikat, el enfoque es muy diferente al de las clases conversacionales. No lo confundas: tomar clases de alemán genéricas no te prepara para el Goethe a menos que el programa incluya simulacros del examen específico.</p>
+
+<h2>Lo que diferencia un programa de alemán que funciona</h2>
+
+<h3>1. Estructura gramatical explícita desde el inicio</h3>
+<p>El alemán es un idioma de género gramatical (der/die/das), cuatro casos (nominativo, acusativo, dativo, genitivo) y orden variable de la oración. Estos no son detalles: son la estructura de todo el idioma. Un programa que evita la gramática "para no asustar" produce estudiantes que nunca pueden construir oraciones correctas por encima del A2. Busca un programa que aborde la gramática de forma sistemática y contextualizada — no que la evite.</p>
+
+<h3>2. Pronunciación desde la primera semana</h3>
+<p>El alemán tiene sonidos que no existen en español: la Ü (ü), la Ö (ö), el sonido "ch" (como en "ich"), el sonido "r" gutural, y las vocales largas vs. cortas. Aprenderlos mal desde el principio crea hábitos muy difíciles de corregir. Un buen programa incluye práctica de pronunciación con retroalimentación desde la primera sesión.</p>
+
+<h3>3. Preparación específica para Goethe si ese es tu objetivo</h3>
+<p>El Goethe-Zertifikat tiene un formato específico: Hören (escucha), Lesen (lectura), Schreiben (escritura) y Sprechen (conversación oral). La sección de Schreiben, en particular, penaliza errores gramaticales que no afectan la comunicación real pero sí el examen. Necesitas tutores que conozcan los criterios de evaluación actuales del Goethe, no solo que hablen alemán bien.</p>
+
+<h3>4. Inmersión mínima diaria</h3>
+<p>El alemán se aprende con práctica sostenida. La diferencia entre alguien que llega al B1 en 12 meses y alguien que llega en 20 meses generalmente no es el talento sino la inmersión: ¿cuántos minutos al día escuchas, lees o piensas en alemán fuera de clase? Un buen programa da herramientas para la práctica diaria autónoma — podcasts, lecturas graduadas, apps complementarias — no solo las clases.</p>
+
+<h2>Señales de alerta al elegir clases de alemán</h2>
+<ul>
+  <li><strong>Promesas de "alemán en 3 meses":</strong> el alemán es clasificado por el Instituto de Servicio Exterior de EE.UU. como un idioma de dificultad media-alta para hispanohablantes. Alcanzar un B1 funcional toma entre 10 y 16 meses con dedicación seria — no 3 meses.</li>
+  <li><strong>Sin énfasis en los casos gramaticales:</strong> si el programa minimiza "der/die/das" o los casos, el estudiante llegará a un punto (A2–B1) donde no puede avanzar sin volver atrás.</li>
+  <li><strong>Grupos de más de 8 personas para alemán inicial:</strong> los errores de pronunciación y gramática en los primeros meses necesitan corrección individual inmediata. En grupos grandes no se puede dar esa atención.</li>
+  <li><strong>Tutor que solo "habla alemán bien":</strong> un hablante nativo de alemán sin formación pedagógica puede enseñar conversación básica pero raramente puede preparar para el Goethe-Zertifikat o explicar la gramática de forma sistemática a hispanohablantes.</li>
+</ul>
+
+<h2>¿Cuánto tiempo necesitas para alcanzar cada nivel?</h2>
+
+<table>
+  <thead><tr><th>Nivel</th><th>Horas de estudio</th><th>Examen Goethe</th><th>Alcance</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>80–120 h</td><td>Goethe A1 / Start Deutsch 1</td><td>Frases básicas, presentación, visa familiar</td></tr>
+    <tr><td>A2</td><td>200–300 h</td><td>Goethe A2</td><td>Comunicación cotidiana simple</td></tr>
+    <tr><td>B1</td><td>350–500 h</td><td>Goethe B1 / Zertifikat Deutsch</td><td>Visa de trabajo; comunicación laboral básica</td></tr>
+    <tr><td>B2</td><td>600–900 h</td><td>Goethe B2</td><td>Trabajo en sectores regulados; posgrados</td></tr>
+    <tr><td>C1</td><td>1.000–1.400 h</td><td>Goethe C1 (GDS)</td><td>Trabajo profesional avanzado; docentes</td></tr>
+  </tbody>
+</table>
+
+<p>Con 5–6 horas semanales de estudio activo (clases + práctica propia), puedes alcanzar el B1 en 14–18 meses partiendo de cero. Para B2 o C1, el tiempo se extiende porque la gramática avanzada del alemán (subjuntivo II, cláusulas relativas complejas, compuestos nominales) requiere mucho tiempo de exposición.</p>
+
+<h2>Preguntas que debes hacer antes de inscribirte</h2>
+<ol>
+  <li>¿El tutor tiene formación específica en enseñanza de alemán (DaF: Deutsch als Fremdsprache)?</li>
+  <li>¿El programa incluye práctica de los 4 componentes del Goethe desde el nivel que me interesa?</li>
+  <li>¿Con qué frecuencia hacen simulacros del examen Goethe con feedback?</li>
+  <li>¿El programa evalúa mi nivel antes de empezar y me ubica en el punto correcto?</li>
+  <li>¿Qué recursos recomiendan para práctica autónoma entre clases?</li>
+</ol>
+
+<h2>WeLearn y las clases de alemán online</h2>
+<p>En WeLearn ofrecemos clases de alemán 1:1 con tutores especializados en DaF (Deutsch als Fremdsprache) y en preparación del Goethe-Zertifikat. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel actual, entiende tu objetivo (visa de trabajo, Goethe B1, beca DAAD) y diseña el plan exacto para alcanzarlo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20alem%C3%A1n%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para agendar tu diagnóstico.</p>
+<p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/clases-de-ingles-online-colombia">Clases de inglés online en Colombia: cómo elegir bien</a>.</p>
+    `,
+  },
+  // ── Article 42 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-frances-online-colombia',
+    title: 'Clases de francés online en Colombia: guía para elegir bien y llegar al DELF',
+    description:
+      'Cómo elegir clases de francés online en Colombia: qué diferencia un buen programa, qué exige el DELF B2 y cuánto tiempo necesitas para alcanzar el nivel que necesitas para estudiar o trabajar en países francófonos.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Francés',
+    tags: ['clases de francés online Colombia', 'academia de francés Colombia', 'aprender francés Colombia', 'DELF Colombia', 'francés para estudiar en Francia'],
+    body: `
+<h2>El francés en Colombia: más demanda de la que se cree</h2>
+<p>El francés es el tercer idioma más estudiado en Colombia después del inglés y el coreano, según datos de institutos culturales. La demanda crece impulsada por tres razones: Colombia tiene frontera con países francófonos (la Guayana Francesa), el programa de becas Eiffel del gobierno francés atrae a muchos profesionales, y la alianza económica Colombia-UE ha aumentado la demanda de francés en sectores como petróleo, minería, telecomunicaciones y diplomacia. Además, el DELF B1 es requisito para muchos programas de ciudadanía francesa.</p>
+<p>El reto: la oferta de clases de francés en Colombia varía mucho en calidad, especialmente en preparación para el DELF.</p>
+
+<h2>Primero: define qué necesitas lograr</h2>
+<ul>
+  <li><strong>Estudiar en universidad francesa:</strong> la mayoría de programas en francés exigen <strong>DELF B2 o DALF C1</strong>. Las universidades de élite (Sciences Po, ENS) suelen pedir C1.</li>
+  <li><strong>Beca Eiffel del gobierno francés:</strong> exige B2 mínimo; la mayoría de perfiles aceptados tienen C1.</li>
+  <li><strong>Ciudadanía francesa por matrimonio o residencia:</strong> requiere B1 — equivalente al DELF B1.</li>
+  <li><strong>Trabajar en empresa francófona en Colombia:</strong> B1–B2 funcional, con o sin certificado según la empresa.</li>
+  <li><strong>Entender francés para viajes o cultura:</strong> A2–B1 conversacional sin necesidad de certificado.</li>
+</ul>
+
+<h2>La ventaja de ser hispanohablante</h2>
+<p>El francés comparte el 80% del vocabulario con el español. "Importance", "nation", "organisation", "communication" — son idénticas o casi idénticas. Esta ventaja es real y acelera especialmente la comprensión lectora y el vocabulario pasivo. Sin embargo, hay trampas importantes:</p>
+<ul>
+  <li><strong>Falsos cognados:</strong> "actuellement" no significa "actualmente" sino "en este momento"; "sensible" en francés significa "sensible/delicado", no "razonable".</li>
+  <li><strong>Pronunciación:</strong> el francés tiene nasal (en, an, on, in, un), liaison (enlace entre palabras) y la "r" uvular. Nada de esto existe en español y se aprende lento sin práctica oral sistemática.</li>
+  <li><strong>El subjuntivo francés:</strong> el subjonctif se usa más que en español y en contextos diferentes. Ignorarlo genera errores que bajan el Band en el DELF.</li>
+</ul>
+
+<h2>Lo que diferencia un buen programa de francés</h2>
+
+<h3>Retroalimentación en producción oral desde el inicio</h3>
+<p>Muchos estudiantes de francés leen bien pero no pueden hablar con fluidez. La razón: pasaron meses aprendiendo vocabulario y gramática sin practicar producción oral con retroalimentación. En francés, la liaison (unión de sonidos entre palabras) y el ritmo del habla son hábitos que solo se desarrollan hablando, no leyendo.</p>
+
+<h3>Preparación específica para el DELF</h3>
+<p>El DELF evalúa cuatro competencias por separado y tiene criterios de calificación muy específicos. La Compréhension de l'oral (escucha) usa grabaciones auténticas de noticias, entrevistas y conversaciones cotidianas — muy diferentes del francés "escolar" que suena lento y claro. La Production écrite penaliza no respetar el género textual correcto (carta formal, artículo, post de foro). Un programa que no trabaja con material auténtico y con los criterios reales del DELF no prepara para el examen.</p>
+
+<h3>Vocabulario temático y no solo estructuras</h3>
+<p>A partir de B1, el DELF y el uso real del francés requieren vocabulario temático: medio ambiente, trabajo, tecnología, salud, cultura. Un programa que solo enseña estructuras gramaticales y vocabulario básico llega a un techo en el A2–B1 sin el léxico para avanzar.</p>
+
+<h2>Señales de alerta</h2>
+<ul>
+  <li><strong>Clases solo en español sobre el francés:</strong> para niveles A1–A2 hay algo de instrucción en español, pero a partir de B1 la mayor parte de la clase debería ser en francés. Un programa que nunca inmerge al estudiante en el idioma produce comprensión pero no fluidez.</li>
+  <li><strong>Sin práctica de producción oral grabada:</strong> para el DELF, parte de la evaluación es una presentación oral de 3–10 minutos. Practicar sin grabarse y analizar la propia pronunciación deja puntos ciegos que el examen saca a la luz.</li>
+  <li><strong>Promesa de "B2 en 6 meses desde cero":</strong> desde cero, alcanzar B2 toma entre 18 y 24 meses con 5+ horas semanales. Menos tiempo o menos horas es posible pero no probable.</li>
+</ul>
+
+<h2>¿Cuánto tiempo necesitas?</h2>
+
+<table>
+  <thead><tr><th>Nivel</th><th>Horas de estudio</th><th>Examen DELF</th><th>Alcance</th></tr></thead>
+  <tbody>
+    <tr><td>A1</td><td>80–100 h</td><td>DELF A1</td><td>Frases básicas, presentación, cortesías</td></tr>
+    <tr><td>A2</td><td>180–250 h</td><td>DELF A2</td><td>Comunicación cotidiana; integración escolar</td></tr>
+    <tr><td>B1</td><td>350–500 h</td><td>DELF B1</td><td>Ciudadanía francesa; comunicación laboral</td></tr>
+    <tr><td>B2</td><td>600–800 h</td><td>DELF B2</td><td>Universidad francesa; empleos en Francofonía</td></tr>
+    <tr><td>C1</td><td>900–1.200 h</td><td>DALF C1</td><td>Posgrado; beca Eiffel; profesiones reguladas</td></tr>
+  </tbody>
+</table>
+
+<p>La ventaja de ser hispanohablante reduce estos tiempos en un 15–25% comparado con un anglohablante — principalmente en comprensión lectora y vocabulario. Sin embargo, la pronunciación y la producción oral toman el mismo tiempo de práctica que para cualquier otra lengua materna.</p>
+
+<h2>WeLearn y las clases de francés online</h2>
+<p>En WeLearn preparamos para todos los niveles del DELF/DALF con tutores especializados, material actualizado y práctica oral con retroalimentación en cada sesión. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel real y define el plan para alcanzar tu objetivo — ya sea el DELF B1 para ciudadanía, el B2 para la universidad o el C1 para la beca Eiffel. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20franc%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para agendar tu diagnóstico.</p>
+<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
