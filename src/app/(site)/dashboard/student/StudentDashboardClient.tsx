@@ -237,10 +237,35 @@ const RADAR_DATA = [
   { skill: 'Vocab',     value: 74 },
 ]
 
+/* ── Tips del día (rotación diaria) ─────────────────────────────────────── */
+const DAILY_TIPS = [
+  { emoji: '🎧', tag: 'Listening', text: 'Escucha 10 minutos de inglés nativo hoy sin subtítulos. Tu cerebro empieza a ajustarse a la velocidad real del idioma.' },
+  { emoji: '📝', tag: 'Writing', text: 'Antes de escribir un essay, dedica 2 minutos a esquematizar: tesis + 2 argumentos + ejemplo cada uno. Ahorras tiempo y escribes más claro.' },
+  { emoji: '🗣️', tag: 'Speaking', text: 'Practica "shadowing": repite en voz alta justo después de escuchar al hablante nativo, imitando entonación y ritmo.' },
+  { emoji: '📖', tag: 'Reading', text: 'Lee el párrafo introductorio y las primeras frases de cada sección antes de responder. El contexto global mejora tu comprensión.' },
+  { emoji: '🧠', tag: 'Vocabulario', text: 'Aprende 5 palabras nuevas en contexto (en oraciones reales), no aisladas. El contexto activa la memoria a largo plazo.' },
+  { emoji: '⏱️', tag: 'IELTS', text: 'En IELTS Writing Task 2, dedica exactamente 40 minutos: 5 planear + 30 escribir + 5 revisar. La estructura vale más que la extensión.' },
+  { emoji: '🔊', tag: 'Pronunciación', text: 'Grábate hablando durante 1 minuto y escúchate. Identificar tus errores propios es más eficaz que cualquier corrección externa.' },
+  { emoji: '🇰🇷', tag: 'Coreano', text: '한글 (Hangeul) se aprende en 2 horas si lo abordas como bloques de sílabas, no letras individuales. Empieza por las 14 consonantes básicas.' },
+  { emoji: '💡', tag: 'Método', text: 'La repetición espaciada es la herramienta #1 para memorizar vocabulario. Revisa lo aprendido a las 24h, 3 días y 7 días.' },
+  { emoji: '🎯', tag: 'TOEFL', text: 'En TOEFL Integrated Writing, no copies el texto: parafrasea. Los graders penalizan el copy-paste aunque sea correcto gramaticalmente.' },
+  { emoji: '📱', tag: 'Inmersión', text: 'Cambia el idioma de tu teléfono al idioma que estás aprendiendo. Usas el celular decenas de veces al día — eso es práctica gratis.' },
+  { emoji: '✍️', tag: 'ICFES', text: 'En inglés ICFES, las preguntas de "idea principal" siempre están en el título o el primer párrafo. No leas todo el texto primero.' },
+  { emoji: '🌱', tag: 'Constancia', text: '15 minutos diarios superan a 3 horas los sábados. El idioma se aprende en acumulación, no en explosiones. Practica hoy.' },
+  { emoji: '🇩🇪', tag: 'Alemán', text: 'Para el Goethe, el vocabulario temático es clave: viajes, trabajo, hogar, salud. Aprende los sustantivos siempre con su artículo (der/die/das).' },
+]
+
+function getDailyTip() {
+  const today = new Date()
+  const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000)
+  return DAILY_TIPS[dayOfYear % DAILY_TIPS.length]
+}
+
 /* ── Component ─────────────────────────────────────────────────────────────── */
 export default function StudentDashboardClient({ name, plan, streak, stats, recentExams, koreanLessons }: Props) {
   const [sideOpen, setSideOpen] = useState(false)
   const initial = name[0]?.toUpperCase() ?? 'E'
+  const dailyTip = getDailyTip()
 
   const STATS: { num: string; label: string; icon: ReactNode }[] = [
     { num: String(stats?.simulacros ?? 0),   label: 'Simulacros',  icon: IC.clipboard2 },
@@ -462,6 +487,18 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
 
             {/* RIGHT COLUMN */}
             <div className="std-col-side">
+
+              {/* Tip del día */}
+              <div className="std-widget std-tip-widget">
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+                  <span style={{ fontSize: 22 }}>{dailyTip.emoji}</span>
+                  <div>
+                    <p style={{ margin: 0, fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#1a2ecc' }}>Tip del día</p>
+                    <p style={{ margin: 0, fontSize: 11, fontWeight: 600, color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{dailyTip.tag}</p>
+                  </div>
+                </div>
+                <p style={{ margin: 0, fontSize: 13, color: 'var(--ink)', lineHeight: 1.55 }}>{dailyTip.text}</p>
+              </div>
 
               {/* Streak */}
               <div className="std-widget std-streak">
@@ -1214,6 +1251,12 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
           font-size: 11px;
           color: var(--muted);
           margin: 0;
+        }
+
+        /* Tip del día */
+        .std-tip-widget {
+          background: linear-gradient(135deg, #f0f3ff 0%, #e8ecff 100%);
+          border: 1px solid rgba(26,46,204,0.15);
         }
 
         /* Lock card (plan gate) */

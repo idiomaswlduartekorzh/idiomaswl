@@ -84,11 +84,11 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M1.1 | Landing inglés/IELTS alta conversión — `/clases-de-ingles` | **HECHO** — pendiente foto real `public/images/david-duarte.jpg` y 3 testimonios reales |
+| M1.1 | Landing inglés/IELTS alta conversión — `/clases-de-ingles` | **HECHO** — `public/images/david-duarte.jpg` en producción + 3 testimonios reales (Leonardo, Carlos, Karen) |
 | M1.2 | Botón WhatsApp flotante en todas las páginas | **HECHO** — `src/components/WhatsAppFloat.tsx`, mensaje por URL, evento GTM `click_whatsapp` |
-| M1.3 | Captura de leads en simulacros (email + WA + nombre + idioma) | **HECHO** — tabla `leads` en Supabase + `saveLead` action + `LeadCaptureModal` en ExamReport. ⚠️ Pendiente: crear tabla `leads` en Supabase dashboard |
-| M1.4 | Eventos de conversión GA4 + Meta Pixel (click_whatsapp, lead_simulacro, etc.) | **PENDIENTE GTM** — código ya dispara `window.dataLayer.push()`. Falta: crear triggers + tags en GTM-57NXLPZV y publicar versión |
-| M1.5 | Página de precios reescrita (corregir incoherencias, CTA a WhatsApp) | **HECHO** — `src/app/(site)/precios/PreciosClient.tsx` usa `waLink()` para todos los CTAs |
+| M1.3 | Captura de leads en simulacros (email + WA + nombre + idioma) | **HECHO** — tabla `leads` en Supabase (ya existe) + `saveLead` action + `LeadCaptureModal` en ExamReport |
+| M1.4 | Eventos de conversión GA4 + Meta Pixel (click_whatsapp, lead_simulacro, etc.) | **HECHO** — GTM-57NXLPZV configurado: 4 tags, 2 triggers, 5 variables, Versión 4 publicada |
+| M1.5 | Página de precios reescrita (corregir incoherencias, CTA a WhatsApp) | **HECHO** — `src/app/(site)/precios/PreciosClient.tsx` usa `waLink()` para todos los CTAs. Precios: Prep $180K, Intensivo 2x $280K, 4x $480K |
 
 ### NIVEL 2 — REPLICAR EL MOTOR
 
@@ -102,7 +102,7 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M3.1 | Panel de estudiante MVP (solo coreano) | **HECHO** — dashboard conectado a Supabase: exam stats reales (simulacros, mejor score, días activo), progreso coreano real desde `user_progress` tabla, historial de últimos exámenes |
+| M3.1 | Panel de estudiante MVP (solo coreano) | **HECHO** — dashboard conectado a Supabase: exam stats reales, racha real (`daily_activity`), progreso coreano (`user_progress`), planes (autodidacta/preparacion/intensivo), logout, panel admin con listado de estudiantes y asignación de planes |
 | M3.2 | Pasos 18, 19, 20 del método | **PENDIENTE** — necesita contenido de David |
 | M3.3 | Página de pre-venta Miembro Fundador | **HECHO** — `src/app/(site)/miembro-fundador/` con 50 cupos, 6 beneficios, timeline, comparador, Course JSON-LD |
 
@@ -110,7 +110,7 @@ public/
 
 | ID | Misión | Estado |
 |----|--------|--------|
-| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con **25 artículos** (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings + links inversos desde landings + Blog/BlogPosting schema en /blog + sección blog en home page |
+| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con **30 artículos** (IELTS×13, TOEFL×4, ICFES×3, Coreano×6, Migración×3, Alemán×1, Portugués×1, Método×1, Francés×1) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings |
 | M4.2 | Sistema de testimonios en video | **PENDIENTE** — necesita videos de David |
 | M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — OG images edge en todas las rutas públicas, BreadcrumbList en todas las páginas, poweredByHeader: false, next/font/google para Geist. Pendiente: medir Lighthouse mobile en producción |
 
@@ -119,17 +119,21 @@ public/
 ## Notas técnicas activas
 
 - **Korean assets (steps 008-019)**: 552MB en disco local, excluidos de git (`.gitignore`) y de Vercel (`.vercelignore`). NO commitear.
-- **`public/images/david-duarte.jpg`**: aún no existe. La landing de inglés tiene `fill` con `objectFit: cover` listo para recibirla.
-- **Testimonios**: la landing `/clases-de-ingles` tiene 3 testimonios placeholder. Reemplazar con reales cuando David los tenga.
-- **Supabase `leads` tabla**: migración SQL en `supabase/migrations/20260528000000_leads.sql`. ⚠️ Pendiente: ejecutar en Supabase dashboard.
-- **Supabase `user_progress` tabla**: migración SQL en `supabase/migrations/20260529000000_user_progress.sql`. ⚠️ Pendiente: ejecutar en Supabase dashboard. Necesaria para M3.1 (progreso real de lecciones).
+- **`public/images/david-duarte.jpg`**: ✅ En producción (commitida y desplegada).
+- **Testimonios reales**: Leonardo Pinto (Inglés/USA), Daniel Zuluaga (Celpe-Bras/USP), Karen Ayala (Goethe/Alemán), Carlos Torres (TOEFL/Maestría). En home y clases-de-ingles.
+- **Supabase tablas activas**: `leads`, `user_progress`, `profiles` (con columna `plan`), `exam_submissions`, `daily_activity`. Todas existen y tienen RLS.
+- **Supabase migración pendiente**: `supabase/migrations/20260529200000_plan_and_activity.sql` — David debe ejecutar en SQL Editor. Añade columna `plan` a `profiles` y tabla `daily_activity`.
 - **`saveProgress.ts`**: acción de servidor para marcar pasos como completados. Pendiente: llamar a `markStepComplete('korean', stepId)` al final de cada lección coreana.
-- **GTM M1.4**: el código ya hace `window.dataLayer.push({ event: 'click_whatsapp' })` y `{ event: 'lead_simulacro' }`. Solo falta crear los triggers y tags en tagmanager.google.com (GTM-57NXLPZV) y publicar.
+- **GTM**: ✅ Configurado y publicado. Version 4: tags click_whatsapp (GA4+Meta Pixel), lead_simulacro (GA4+Meta Pixel). Triggers: Click WhatsApp, Lead Simulacro. Variables: dataLayer.
 - **Nav links**: Home, Inglés, Coreano, Exámenes, Blog, Precios (en `SiteNav.tsx`). Correcto.
 - **BreadcrumbList**: añadido a todos los pages: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion, blog, blog/[slug].
 - **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes).
-- **25 artículos blog**: 1-IELTS Band7, 2-ICFES inglés, 3-Coreano desde cero, 4-TOEFL guía, 5-TOPIK I, 6-IELTS vs TOEFL, 7-Inglés multinacionales, 8-Beca GKS, 9-Series y películas, 10-Niveles A1-C2, 11-Hablar inglés bloqueo, 12-IELTS Academic vs General, 13-3 meses IELTS plan, 14-ICFES puntaje niveles, 15-Migrar Canadá IELTS, 16-Coreano hispanohablante, 17-TOEFL estrategias sección, 18-IELTS Writing Task2, 19-Inglés EE.UU. trabajo, 20-Costo IELTS Colombia 2026, 21-Enfermeras inglés exterior, 22-TOPIK I vs II, 23-Clases inglés online Colombia, 24-Costo TOEFL Colombia 2026, 25-Migrar Australia IELTS.
+- **30 artículos blog**: 1-25 (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + 26-Goethe, 27-Celpe-Bras, 28-Método aprendizaje, 29-IELTS Writing Task 1, 30-DELF/DALF.
 - **TOPIK Diagnóstico**: `src/data/mocks/topik-set-1.ts` (30 preguntas MCQ al estilo TOPIK I, 3 partes: 빈칸/안내문/지문), `TOPIKPracticeClient.tsx` (quiz → LeadCaptureModal → results con nivel). Ruta: `/examenes/topik/practica/set-1`. Sección en `/clases-de-coreano`. Scoring: 70%+ = Nivel 2, 40-69% = Nivel 1, <40% = Iniciante.
 - **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering: /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes, /practica. Root `/` redirige a /home.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
+- **Platform actions**: `src/lib/actions/` tiene: `assignPlan.ts`, `signOut.ts`, `trackActivity.ts`, `saveProgress.ts`, `saveLead.ts`, `scoreSubmission.ts`.
+- **Platform utils**: `src/lib/utils/streak.ts` — `calculateStreak(dates: string[]): number`.
+- **Dashboard routes**: `/dashboard/student` (StudentDashboardClient), `/dashboard/admin` (JoseDashboard/ZhannaDashboard), `/dashboard/welearn` (WelearnDashboardClient — datos aún placeholder).
+- **Admin StudentList**: `src/app/(site)/dashboard/admin/StudentList.tsx` — tabla de estudiantes con búsqueda, filtro por plan, asignación inline de plan con server action.
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
