@@ -5,7 +5,7 @@ const BASE = 'https://idiomaswl.com';
 
 const PUBLISHED_DAYS = [1, 2, 3, 4, 6, 7];
 
-const EXAM_SLUGS = ['ielts', 'toefl', 'icfes', 'goethe', 'cils-celi', 'delf-dalf', 'celpe-bras'];
+const EXAM_SLUGS = ['ielts', 'toefl', 'icfes', 'topik', 'goethe', 'cils-celi', 'delf-dalf', 'celpe-bras'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
