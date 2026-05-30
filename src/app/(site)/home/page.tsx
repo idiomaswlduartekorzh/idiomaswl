@@ -473,7 +473,7 @@ export default function HomePage() {
             <p className="wlh-section-eyebrow">09 — Blog</p>
             <h2 className="wlh-section-h2">Guías y recursos gratuitos.</h2>
             <p className="wlh-section-desc" style={{ maxWidth: 540, margin: '0 auto 2.5rem' }}>
-              Artículos prácticos sobre preparación IELTS, TOEFL, ICFES, coreano y más.
+              Artículos prácticos sobre IELTS, TOEFL, ICFES, coreano, alemán, italiano, portugués, francés y más.
               Sin relleno, solo lo que funciona.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
@@ -522,7 +522,7 @@ export default function HomePage() {
         <div className="wrap wlh-footer__inner">
           <div className="wlh-footer__brand">
             <span className="wlh-footer__logo"><strong>Idiomas</strong> WeLearn</span>
-            <p className="wlh-footer__tagline">Once pasos al día. Seis exámenes internacionales. Un método que funciona.</p>
+            <p className="wlh-footer__tagline">Seis idiomas. Doce certificaciones. Un método que funciona.</p>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Clases</p>
@@ -530,6 +530,8 @@ export default function HomePage() {
             <Link href="/clases-de-coreano">Coreano</Link>
             <Link href="/clases-de-frances">Francés</Link>
             <Link href="/clases-de-aleman">Alemán</Link>
+            <Link href="/clases-de-italiano">Italiano</Link>
+            <Link href="/clases-de-portugues">Portugués</Link>
             <Link href="/preparacion-icfes">ICFES Inglés</Link>
             <Link href="/miembro-fundador">Miembro Fundador</Link>
           </div>
