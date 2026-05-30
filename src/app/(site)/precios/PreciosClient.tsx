@@ -12,12 +12,12 @@ function waLink(plan: string, langName: string) {
 }
 
 const LANGUAGES = [
-  { slug: 'ingles',    flag: '🇬🇧', name: 'Inglés',    exams: ['IELTS', 'TOEFL iBT', 'ICFES'] },
-  { slug: 'coreano',   flag: '🇰🇷', name: 'Coreano',   exams: ['TOPIK I', 'TOPIK II'] },
-  { slug: 'frances',   flag: '🇫🇷', name: 'Francés',   exams: ['DELF A1–B2', 'DALF C1–C2'] },
-  { slug: 'aleman',    flag: '🇩🇪', name: 'Alemán',    exams: ['Goethe A1', 'Goethe B1', 'Goethe C1'] },
-  { slug: 'italiano',  flag: '🇮🇹', name: 'Italiano',  exams: ['CILS', 'CELI'] },
-  { slug: 'portugues', flag: '🇧🇷', name: 'Portugués', exams: ['CELPE-Bras'] },
+  { slug: 'ingles',    flag: '🇬🇧', name: 'Inglés',    exams: ['IELTS', 'TOEFL iBT', 'ICFES'],          landing: '/clases-de-ingles' },
+  { slug: 'coreano',   flag: '🇰🇷', name: 'Coreano',   exams: ['TOPIK I', 'TOPIK II'],                   landing: '/clases-de-coreano' },
+  { slug: 'frances',   flag: '🇫🇷', name: 'Francés',   exams: ['DELF A1–B2', 'DALF C1–C2'],              landing: null },
+  { slug: 'aleman',    flag: '🇩🇪', name: 'Alemán',    exams: ['Goethe A1', 'Goethe B1', 'Goethe C1'],   landing: null },
+  { slug: 'italiano',  flag: '🇮🇹', name: 'Italiano',  exams: ['CILS', 'CELI'],                          landing: null },
+  { slug: 'portugues', flag: '🇧🇷', name: 'Portugués', exams: ['CELPE-Bras'],                            landing: null },
 ];
 
 function formatCOP(n: number) {
@@ -87,6 +87,11 @@ export default function PreciosClient() {
           {lang.exams.map(ex => (
             <span key={ex} className="wlp-exam-chip">{ex}</span>
           ))}
+          {lang.landing && (
+            <Link href={lang.landing} style={{ marginLeft: 4, fontSize: '0.78rem', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}>
+              Ver clases de {lang.name} →
+            </Link>
+          )}
         </div>
 
         {/* ── Plans grid ── */}
