@@ -3318,7 +3318,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y las clases de alemán online</h2>
-<p>En WeLearn ofrecemos clases de alemán 1:1 con tutores especializados en DaF (Deutsch als Fremdsprache) y en preparación del Goethe-Zertifikat. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel actual, entiende tu objetivo (visa de trabajo, Goethe B1, beca DAAD) y diseña el plan exacto para alcanzarlo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20alem%C3%A1n%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para agendar tu diagnóstico.</p>
+<p>En WeLearn ofrecemos clases de alemán 1:1 con tutores especializados en DaF (Deutsch als Fremdsprache) y en preparación del Goethe-Zertifikat. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel actual, entiende tu objetivo (visa de trabajo, Goethe B1, beca DAAD) y diseña el plan exacto para alcanzarlo. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20alem%C3%A1n%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a> para más información.</p>
 <p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/clases-de-ingles-online-colombia">Clases de inglés online en Colombia: cómo elegir bien</a>.</p>
     `,
   },
@@ -3388,7 +3388,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>La ventaja de ser hispanohablante reduce estos tiempos en un 15–25% comparado con un anglohablante — principalmente en comprensión lectora y vocabulario. Sin embargo, la pronunciación y la producción oral toman el mismo tiempo de práctica que para cualquier otra lengua materna.</p>
 
 <h2>WeLearn y las clases de francés online</h2>
-<p>En WeLearn preparamos para todos los niveles del DELF/DALF con tutores especializados, material actualizado y práctica oral con retroalimentación en cada sesión. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel real y define el plan para alcanzar tu objetivo — ya sea el DELF B1 para ciudadanía, el B2 para la universidad o el C1 para la beca Eiffel. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20franc%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para agendar tu diagnóstico.</p>
+<p>En WeLearn preparamos para todos los niveles del DELF/DALF con tutores especializados, material actualizado y práctica oral con retroalimentación en cada sesión. El proceso empieza con una sesión de diagnóstico gratuita que evalúa tu nivel real y define el plan para alcanzar tu objetivo — ya sea el DELF B1 para ciudadanía, el B2 para la universidad o el C1 para la beca Eiffel. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20franc%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a> para más información.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a>.</p>
     `,
   },

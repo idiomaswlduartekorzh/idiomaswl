@@ -125,14 +125,14 @@ const faqJsonLd = {
 };
 
 const IDIOMAS = [
-  { code: 'En', name: 'Inglés',    native: 'English',   desc: 'IELTS · TOEFL · ICFES',   active: true  },
-  { code: '한', name: 'Coreano',   native: '한국어',    desc: 'Método visual WeLearn',    active: true  },
-  { code: 'Fr', name: 'Francés',   native: 'Français',  desc: 'DELF · DALF',              active: true  },
-  { code: 'De', name: 'Alemán',    native: 'Deutsch',   desc: 'Goethe-Zertifikat',        active: true  },
-  { code: 'It', name: 'Italiano',  native: 'Italiano',  desc: 'CILS · CELI',              active: true  },
-  { code: 'Pt', name: 'Portugués', native: 'Português', desc: 'CELPE-Bras',               active: true  },
-  { code: '日', name: 'Japonés',   native: '日本語',    desc: 'JLPT · Próximamente',      active: false },
-  { code: 'Py', name: 'Ruso',      native: 'Русский',   desc: 'TORFL · Próximamente',     active: false },
+  { code: 'En', name: 'Inglés',    native: 'English',   desc: 'IELTS · TOEFL · ICFES',   active: true,  href: '/clases-de-ingles'  },
+  { code: '한', name: 'Coreano',   native: '한국어',    desc: 'Método visual WeLearn',    active: true,  href: '/clases-de-coreano' },
+  { code: 'Fr', name: 'Francés',   native: 'Français',  desc: 'DELF · DALF',              active: true,  href: '/clases-de-frances' },
+  { code: 'De', name: 'Alemán',    native: 'Deutsch',   desc: 'Goethe-Zertifikat',        active: true,  href: '/clases-de-aleman'  },
+  { code: 'It', name: 'Italiano',  native: 'Italiano',  desc: 'CILS · CELI',              active: true,  href: '/precios'           },
+  { code: 'Pt', name: 'Portugués', native: 'Português', desc: 'CELPE-Bras',               active: true,  href: '/precios'           },
+  { code: '日', name: 'Japonés',   native: '日本語',    desc: 'JLPT · Próximamente',      active: false, href: null                 },
+  { code: 'Py', name: 'Ruso',      native: 'Русский',   desc: 'TORFL · Próximamente',     active: false, href: null                 },
 ];
 
 const METODO = [
@@ -316,7 +316,9 @@ export default function HomePage() {
                     <p className="wlh-lang-card__native">{lang.native}</p>
                     <div className="wlh-lang-card__footer">
                       <span className="wlh-lang-card__days">{lang.desc}</span>
-                      {lang.active && <button className="wlh-lang-card__cta">Ver ruta →</button>}
+                      {lang.active && lang.href && (
+                        <Link href={lang.href} className="wlh-lang-card__cta">Ver ruta →</Link>
+                      )}
                     </div>
                   </div>
                 </TiltCard>
@@ -508,6 +510,8 @@ export default function HomePage() {
             <div className="wlh-cta__btns">
               <Link href="/clases-de-ingles" className="btn wlh-cta__btn-primary">Clases de inglés →</Link>
               <Link href="/clases-de-coreano" className="btn btn-ghost wlh-cta__btn-ghost">Clases de coreano →</Link>
+              <Link href="/clases-de-frances" className="btn btn-ghost wlh-cta__btn-ghost">Clases de francés →</Link>
+              <Link href="/clases-de-aleman" className="btn btn-ghost wlh-cta__btn-ghost">Clases de alemán →</Link>
             </div>
           </div>
         </section>
@@ -524,6 +528,8 @@ export default function HomePage() {
             <p className="wlh-footer__col-title">Clases</p>
             <Link href="/clases-de-ingles">Inglés</Link>
             <Link href="/clases-de-coreano">Coreano</Link>
+            <Link href="/clases-de-frances">Francés</Link>
+            <Link href="/clases-de-aleman">Alemán</Link>
             <Link href="/preparacion-icfes">ICFES Inglés</Link>
             <Link href="/miembro-fundador">Miembro Fundador</Link>
           </div>
