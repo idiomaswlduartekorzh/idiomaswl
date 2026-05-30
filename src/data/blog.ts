@@ -18,6 +18,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Todo lo que necesitas saber para alcanzar Band 7 en el IELTS: qué mide cada sección, cuánto tiempo necesitas y el plan de estudio semana a semana.',
     date: '2026-05-01',
+    updatedDate: '2026-05-30',
     readTime: 9,
     category: 'IELTS',
     tags: ['IELTS', 'inglés', 'exámenes internacionales', 'Band 7', 'preparación'],
@@ -116,6 +117,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Qué mide el componente de inglés del ICFES Saber 11, cuál es el puntaje que piden las universidades colombianas y el plan de estudio más eficiente para subir de nivel.',
     date: '2026-05-08',
+    updatedDate: '2026-05-30',
     readTime: 7,
     category: 'ICFES',
     tags: ['ICFES', 'Saber 11', 'inglés', 'Colombia', 'universidades', 'B2'],
@@ -200,6 +202,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Todo lo que necesitas saber para comenzar a aprender coreano en Colombia: alfabeto, recursos gratuitos, examen TOPIK y por qué cada vez más colombianos estudian este idioma.',
     date: '2026-05-15',
+    updatedDate: '2026-05-30',
     readTime: 11,
     category: 'Coreano',
     tags: ['coreano', 'Hangul', 'TOPIK', 'K-pop', 'Korea', 'Colombia', 'aprender idiomas'],
@@ -301,6 +304,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Todo lo que necesitas saber sobre el TOEFL iBT: estructura del examen, puntaje mínimo para cada objetivo, diferencias con el IELTS y plan de estudio de 10 semanas.',
     date: '2026-05-20',
+    updatedDate: '2026-05-30',
     readTime: 8,
     category: 'TOEFL',
     tags: ['TOEFL iBT', 'inglés', 'exámenes internacionales', 'Estados Unidos', 'universidad', 'preparación'],
@@ -398,6 +402,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Guía completa del TOPIK I para hispanohablantes: qué evalúa, cómo se califica, materiales gratuitos y plan de estudio de 8 semanas para obtener el nivel 1 o 2.',
     date: '2026-05-22',
+    updatedDate: '2026-05-30',
     readTime: 7,
     category: 'Coreano',
     tags: ['TOPIK', 'TOPIK I', 'coreano', 'examen coreano', 'Korea', 'certificación', 'principiantes'],
@@ -495,6 +500,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Comparación completa entre IELTS y TOEFL iBT: diferencias de formato, puntajes, reconocimiento en universidades y cuál elegir según tu meta (migración, maestría o trabajo).',
     date: '2026-05-26',
+    updatedDate: '2026-05-30',
     readTime: 8,
     category: 'IELTS',
     tags: ['IELTS', 'TOEFL', 'inglés', 'exámenes internacionales', 'migración', 'Colombia', 'comparación'],
@@ -598,6 +604,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Qué nivel de inglés exigen Samsung, Deloitte, Accenture y otras multinacionales en Colombia, qué certificaciones tienen más peso y el plan realista para llegar ahí.',
     date: '2026-05-28',
+    updatedDate: '2026-05-30',
     readTime: 8,
     category: 'IELTS',
     tags: ['inglés profesional', 'multinacionales', 'Colombia', 'IELTS', 'B2', 'trabajo', 'carrera'],
