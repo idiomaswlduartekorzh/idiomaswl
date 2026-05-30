@@ -32,12 +32,13 @@ function formatDate(iso: string) {
 export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
   const [editing, setEditing]   = useState(false)
   const [value, setValue]       = useState(name)
+  const [savedName, setSavedName] = useState(name)
   const [saving, setSaving]     = useState(false)
   const [msg, setMsg]           = useState<{ ok: boolean; text: string } | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
   async function handleSave() {
-    if (!value.trim() || value.trim() === name) { setEditing(false); return }
+    if (!value.trim() || value.trim() === savedName) { setEditing(false); return }
     setSaving(true)
     setMsg(null)
     const fd = new FormData()
@@ -45,6 +46,7 @@ export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
     const res = await updateProfile(fd)
     setSaving(false)
     if (res.ok) {
+      setSavedName(value.trim())
       setMsg({ ok: true, text: '¡Nombre actualizado correctamente!' })
       setEditing(false)
     } else {
@@ -58,7 +60,7 @@ export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
     setTimeout(() => inputRef.current?.focus(), 60)
   }
 
-  const initial = (value[0] ?? 'E').toUpperCase()
+  const initial = (savedName[0] ?? 'E').toUpperCase()
 
   return (
     <div style={{
@@ -113,7 +115,7 @@ export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
             </div>
             <div>
               <h1 style={{ margin: 0, fontSize: 20, fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)' }}>
-                {value}
+                {savedName}
               </h1>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 6 }}>
                 <span style={{
@@ -180,7 +182,7 @@ export default function PerfilClient({ name, email, plan, joinedAt }: Props) {
                     {saving ? 'Guardando…' : 'Guardar'}
                   </button>
                   <button
-                    onClick={() => { setEditing(false); setValue(name) }}
+                    onClick={() => { setEditing(false); setValue(savedName) }}
                     style={{
                       padding: '6px 12px', borderRadius: 8,
                       background: 'transparent', color: 'var(--muted)',

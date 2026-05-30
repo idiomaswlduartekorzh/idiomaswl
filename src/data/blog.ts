@@ -2723,6 +2723,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <p>En WeLearn hemos acompañado a colombianos que preparan su migración a España con inglés orientado a sus objetivos laborales específicos. Si estás en ese proceso, <a href="https://wa.me/573005004253?text=Hola%2C%20voy%20a%20migrar%20a%20Espa%C3%B1a%20y%20quiero%20mejorar%20mi%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> para un diagnóstico gratuito.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">qué significa cada nivel de inglés</a>.</p>
     `,
   },
 ];
