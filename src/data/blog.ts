@@ -5714,6 +5714,424 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar banda 7</a> y <a href="/blog/ielts-listening-errores-comunes">IELTS Listening: los 7 errores más comunes y cómo evitarlos</a>.</p>
     `,
   },
+  // ── ARTICLE 79 ──────────────────────────────────────────────────────────
+  {
+    slug: 'toefl-speaking-integrated-tasks-como-responder',
+    title: 'TOEFL Speaking: cómo responder las Integrated Tasks para sacar 24+',
+    description: 'Estrategia completa para las preguntas integradas del TOEFL Speaking: estructura, notas, vocabulario de enlace y cómo practicar para 24+ puntos.',
+    category: 'TOEFL',
+    tags: ['TOEFL Speaking', 'integrated tasks TOEFL', 'puntaje TOEFL Speaking', 'TOEFL preparación'],
+    date: '2026-05-29',
+    readTime: 8,
+    body: `
+<p>El TOEFL Speaking tiene 4 preguntas (desde la nueva versión iBT de 2019) — 1 independiente y 3 integradas. Las tareas integradas (Integrated Tasks) son las que más diferencian al TOEFL del IELTS, y también las que más confunden a los estudiantes colombianos. Esta guía te enseña exactamente cómo manejarlas.</p>
+
+<h2>Estructura del TOEFL Speaking (versión actual)</h2>
+<table>
+  <thead><tr><th>Tarea</th><th>Tipo</th><th>Tiempo para hablar</th><th>Fuente</th></tr></thead>
+  <tbody>
+    <tr><td>Task 1</td><td>Independent</td><td>45 segundos</td><td>Solo tu opinión personal</td></tr>
+    <tr><td>Task 2</td><td>Integrated (Campus)</td><td>60 segundos</td><td>Lectura (45s) + Audio (conversación)</td></tr>
+    <tr><td>Task 3</td><td>Integrated (Academic)</td><td>60 segundos</td><td>Lectura (45s) + Audio (conferencia)</td></tr>
+    <tr><td>Task 4</td><td>Integrated (Academic)</td><td>60 segundos</td><td>Solo Audio (conferencia larga)</td></tr>
+  </tbody>
+</table>
+<p>El puntaje del Speaking va de 0 a 30. Un puntaje de 24+ es el nivel "Good" — suficiente para la mayoría de universidades estadounidenses.</p>
+
+<h2>Task 2: Integrated Campus</h2>
+<p>Leerás un aviso o carta del campus (un cambio de política, una propuesta de estudiante). Luego escucharás a dos estudiantes discutirlo. Uno expresa opinión positiva o negativa. Debes resumir la posición de ese estudiante.</p>
+<p><strong>Estructura de respuesta (60 segundos):</strong></p>
+<ol>
+  <li>(5–7 seg) Introducción: "The reading describes [la propuesta/cambio]. The man/woman [agrees/disagrees] with it."</li>
+  <li>(20–25 seg) Razón 1: "First, he/she argues that..." + detalle del audio.</li>
+  <li>(20–25 seg) Razón 2: "Second, he/she points out that..." + detalle del audio.</li>
+  <li>(5 seg) Cierre opcional: "For these reasons, he/she believes the proposal is [good/problematic]."</li>
+</ol>
+
+<h2>Task 3: Integrated Academic</h2>
+<p>Leerás una definición o concepto académico. Luego un profesor explica ese concepto con uno o dos ejemplos. Debes resumir el concepto y explicar cómo el ejemplo lo ilustra.</p>
+<p><strong>Estructura de respuesta (60 segundos):</strong></p>
+<ol>
+  <li>(5–7 seg) Concepto: "The reading introduces the concept of [X], which refers to..."</li>
+  <li>(25–30 seg) Ejemplo 1 del audio: "The professor illustrates this with the example of..."</li>
+  <li>(15–20 seg) Ejemplo 2 (si hay): "A second example is..."</li>
+</ol>
+
+<h2>Task 4: Integrated Lecture (solo audio)</h2>
+<p>Escucharás una conferencia académica de unos 90 segundos. No hay texto de lectura. Debes resumir los puntos principales.</p>
+<p><strong>Estructura de respuesta (60 segundos):</strong></p>
+<ol>
+  <li>(5–7 seg) Tema general: "The professor discusses [tema]."</li>
+  <li>(25–30 seg) Punto 1 con detalle del audio.</li>
+  <li>(20–25 seg) Punto 2 con detalle del audio.</li>
+</ol>
+
+<h2>Tomar notas eficientemente</h2>
+<p>En las Integrated Tasks tienes 15–30 segundos para preparar antes de hablar. Las notas son clave. Usa estas estrategias:</p>
+<ul>
+  <li><strong>Divide tu papel en dos columnas</strong>: Lectura | Audio. Captura solo palabras clave, no frases completas.</li>
+  <li><strong>Símbolos rápidos</strong>: ↑ (aumenta/mejora), ↓ (disminuye/empeora), = (es), → (causa/resultado), ✓ (positivo), ✗ (negativo).</li>
+  <li><strong>Nombres propios y números</strong>: captúralos exactamente. "The professor mentions that X company saved $2M" es detalle que sube el puntaje.</li>
+</ul>
+
+<h2>Vocabulary de conectores para tareas integradas</h2>
+<table>
+  <thead><tr><th>Función</th><th>Frases útiles</th></tr></thead>
+  <tbody>
+    <tr><td>Introducir concepto</td><td>"According to the reading...", "The passage describes..."</td></tr>
+    <tr><td>Introducir audio</td><td>"The professor explains...", "The speaker argues...", "The man/woman mentions..."</td></tr>
+    <tr><td>Conectar lectura y audio</td><td>"This illustrates the concept by...", "This is an example of..."</td></tr>
+    <tr><td>Agregar punto</td><td>"Additionally...", "Furthermore...", "A second point is..."</td></tr>
+    <tr><td>Concluir</td><td>"These examples show that...", "In this way, the professor demonstrates..."</td></tr>
+  </tbody>
+</table>
+
+<h2>Errores comunes en TOEFL Speaking integrado</h2>
+<ul>
+  <li><strong>Resumir solo la lectura e ignorar el audio</strong>: el audio tiene el peso mayor en Tasks 2 y 3. Si no mencionas los ejemplos o la posición del estudiante/profesor, el puntaje cae.</li>
+  <li><strong>Hablar demasiado lento por miedo a los errores</strong>: en el TOEFL, la fluidez pesa tanto como la precisión. Es mejor hablar con confianza y algún error menor que hablar perfectamente lento.</li>
+  <li><strong>No usar el tiempo de preparación</strong>: los 15–30 segundos de prep no son opcionales — es cuando organizas tus notas para la respuesta.</li>
+  <li><strong>Memorizar respuestas</strong>: los evaluadores del TOEFL están entrenados para detectar respuestas memorizadas. Practica la estructura, no el guion.</li>
+</ul>
+
+<h2>WeLearn y el TOEFL Speaking</h2>
+<p>En WeLearn hacemos simulacros de TOEFL con retroalimentación en tiempo real. Si el Speaking es tu módulo más débil, 6–8 sesiones de práctica enfocada pueden subirte 3–5 puntos. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20TOEFL%20Speaking%20con%20WeLearn.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía completa para colombianos</a> y <a href="/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026">TOEFL iBT vs TOEFL Essentials: cuál elegir en 2026</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 80 ──────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-speaking-fluency-coherence-como-mejorar-banda',
+    title: 'IELTS Speaking: cómo mejorar Fluency & Coherence para subir de banda',
+    description: 'Estrategias probadas para mejorar Fluency & Coherence en el IELTS Speaking. Qué evalúa el examinador, errores típicos y cómo practicar para banda 7+.',
+    category: 'IELTS',
+    tags: ['IELTS Speaking', 'fluency coherence IELTS', 'banda 7 Speaking', 'IELTS preparación'],
+    date: '2026-05-29',
+    readTime: 7,
+    body: `
+<p>El IELTS Speaking se evalúa en 4 criterios: Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, y Pronunciation. Cada uno pesa un 25%. Lo que sorprende a muchos estudiantes: Fluency & Coherence es el criterio más difícil de mejorar rápidamente — y también el que más confusión genera. Esta guía lo desmitifica.</p>
+
+<h2>¿Qué evalúa Fluency & Coherence exactamente?</h2>
+<p>No evalúa velocidad. Evalúa:</p>
+<ul>
+  <li><strong>Fluency</strong>: capacidad de hablar sin pausas largas o frecuentes, sin repetirse en exceso, sin buscar palabras constantemente. No significa hablar rápido — significa hablar sin interrupciones artificiales.</li>
+  <li><strong>Coherence</strong>: que las ideas estén conectadas de forma lógica. Que el examinador pueda seguir tu argumento sin perderse. Que uses conectores y marcadores de discurso naturalmente.</li>
+</ul>
+
+<h2>La diferencia entre banda 5 y banda 7 en Fluency</h2>
+<table>
+  <thead><tr><th>Criterio</th><th>Banda 5</th><th>Banda 7</th></tr></thead>
+  <tbody>
+    <tr><td>Pauses</td><td>Pausas frecuentes para buscar palabras o ideas. Repeticiones evidentes de arranque.</td><td>Pocas pausas, principalmente en puntos naturales de la oración. Sin repeticiones de arranque exageradas.</td></tr>
+    <tr><td>Hesitation devices</td><td>"Hmm... uh... I think... uh..."</td><td>"Well, that's an interesting question... I'd say..." / "Let me think about that..."</td></tr>
+    <tr><td>Connectors</td><td>Uso limitado: "and... and... and..."</td><td>Variados: "Although...", "Having said that...", "What's more...", "In terms of..."</td></tr>
+    <tr><td>Self-correction</td><td>Se corrige en mitad de una idea, interrumpiendo el flujo.</td><td>Se corrige de forma fluida: "...which is to say, what I mean is..."</td></tr>
+  </tbody>
+</table>
+
+<h2>Hedging devices: el secreto de la fluidez en B2–C1</h2>
+<p>Los hedging devices son frases que "ganar tiempo" de manera natural mientras organizas tu pensamiento. Son rasgos de hablantes nativos cultos, no señales de debilidad:</p>
+<ul>
+  <li>"That's a good question — I've never really thought about it before, but I suppose..."</li>
+  <li>"It's hard to say exactly, but from what I understand..."</li>
+  <li>"Off the top of my head, I'd say..."</li>
+  <li>"That depends a lot on the situation, but generally speaking..."</li>
+  <li>"I'm not entirely sure, but I think it's fair to say..."</li>
+</ul>
+<p>Practica estas frases hasta que salgan automáticamente. Cuando las necesites en el examen, no tendrás que buscarlas.</p>
+
+<h2>Marcadores de discurso para Coherence (banda 6→7)</h2>
+<p>Estos conectores dan estructura a tus ideas y los examinadores los reconocen como rasgos de B2+:</p>
+<ul>
+  <li><strong>Contraste</strong>: "Having said that...", "On the other hand...", "Whereas..."</li>
+  <li><strong>Elaborar</strong>: "What I mean by this is...", "To give you an example...", "In other words..."</li>
+  <li><strong>Añadir</strong>: "What's more...", "On top of that...", "Not to mention..."</li>
+  <li><strong>Secuencia</strong>: "To begin with...", "Following on from that...", "Ultimately..."</li>
+  <li><strong>Conceder</strong>: "I'll grant you that...", "I see your point, but...", "Even so..."</li>
+</ul>
+
+<h2>El monólogo (Part 2): cómo estructurarlo para banda 7</h2>
+<p>En la Part 2, tienes 1 minuto para preparar y 1–2 minutos para hablar sobre un tema (cue card). La estructura más sólida:</p>
+<ol>
+  <li><strong>Apertura</strong> (10 seg): presenta el tema. "I'd like to talk about a time when..."</li>
+  <li><strong>Desarrollo 1</strong> (30–35 seg): contexto y detalles sensoriales (dónde, cuándo, quién).</li>
+  <li><strong>Desarrollo 2</strong> (30–35 seg): la parte principal del relato o la explicación de la idea.</li>
+  <li><strong>Cierre reflexivo</strong> (10–15 seg): por qué fue importante / qué aprendiste / cómo te afectó.</li>
+</ol>
+<p>El cierre reflexivo es lo que separa banda 6 de banda 7 — muestra pensamiento elaborado, no solo narración de hechos.</p>
+
+<h2>Plan de práctica de 30 días</h2>
+<ul>
+  <li><strong>Días 1–10</strong>: grábate respondiendo 2 Part 1 questions por día (preguntas de 1–2 minutos sobre temas cotidianos). Escucha y cuenta las muletillas ("uh," "um," "you know").</li>
+  <li><strong>Días 11–20</strong>: practica 1 Part 2 cue card por día. Usa la estructura de 4 partes. Cronométrate.</li>
+  <li><strong>Días 21–30</strong>: simula la entrevista completa (Parts 1, 2 y 3) con un tutor. Pide retroalimentación específica sobre coherencia y conectores.</li>
+</ul>
+
+<h2>WeLearn y el IELTS Speaking</h2>
+<p>En WeLearn simulamos el IELTS Speaking con examinadores que conocen los criterios de evaluación y te dan retroalimentación específica por criterio. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20puntaje%20en%20IELTS%20Speaking%20con%20WeLearn.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Cuéntanos cuál es tu banda actual en Speaking</a>.</p>
+<p>Lee también: <a href="/blog/ielts-speaking-como-preparar-las-3-partes">IELTS Speaking: cómo preparar las 3 partes</a> y <a href="/blog/ielts-bandas-0-9-que-significa-cada-puntaje">Bandas IELTS 0–9: qué significa cada puntaje</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 81 ──────────────────────────────────────────────────────────
+  {
+    slug: 'aleman-para-suiza-oportunidades-trabajo-nivel-requerido',
+    title: 'Alemán para trabajar en Suiza: nivel requerido y oportunidades para latinoamericanos',
+    description: 'Guía de alemán para trabajar en Suiza: qué nivel necesitas por sector, salarios, cómo aplicar desde Colombia y por qué Suiza es diferente a Alemania.',
+    category: 'Alemán',
+    tags: ['trabajar en Suiza', 'alemán Suiza', 'visa trabajo Suiza', 'salario Suiza'],
+    date: '2026-05-29',
+    readTime: 7,
+    body: `
+<p>Alemania es el destino más conocido para quienes aprenden alemán — pero Suiza ofrece los salarios más altos del mundo y una demanda constante de profesionales calificados. Muchos colombianos no saben que Suiza tiene su propio proceso de migración, sus propias ventajas, y un nivel de alemán a veces diferente al que Alemania pide.</p>
+
+<h2>Los cuatro idiomas de Suiza</h2>
+<p>Suiza tiene cuatro regiones lingüísticas: alemán (74% de la población), francés (21%), italiano (5%) y romanche (1%). La Suiza alemana — Zurich, Berna, Basilea — es la región económicamente más potente y donde están la mayoría de empleos en finanzas, farmacéutica, ingeniería y tecnología.</p>
+<p><strong>Punto importante</strong>: el Suizerdeutsch (alemán suizo) es un dialecto muy diferente del Hochdeutsch (alemán estándar). En el trabajo formal, se usa Hochdeutsch — lo que aprendes en clases de alemán. En la vida cotidiana y en conversaciones informales, escucharás Suizerdeutsch, que puede ser difícil de entender inicialmente incluso para alemanes.</p>
+
+<h2>Nivel de alemán requerido por sector en Suiza</h2>
+<table>
+  <thead><tr><th>Sector</th><th>Nivel alemán</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td>Tecnología / IT (empresas internacionales)</td><td>B1–B2 (a veces inglés es suficiente)</td><td>Muchas empresas tech en Zurich operan en inglés internamente.</td></tr>
+    <tr><td>Finanzas (banca, UBS, Credit Suisse/UBS)</td><td>B2–C1</td><td>Documentación y comunicación formal en alemán. Inglés también requerido.</td></tr>
+    <tr><td>Farmacéutica (Novartis, Roche, Nestlé)</td><td>B2</td><td>Basilea es hub farmacéutico. Ambiente multicultural, inglés muy presente.</td></tr>
+    <tr><td>Salud / Medicina</td><td>C1 (obligatorio)</td><td>Requiere reconocimiento de título + examen de idioma. Proceso largo.</td></tr>
+    <tr><td>Hostelería y gastronomía</td><td>B1</td><td>Alta demanda, salarios bajos relativos pero aún altos globalmente.</td></tr>
+    <tr><td>Ingeniería (manufactura)</td><td>B2</td><td>ABB, Sulzer, y otros requieren comunicación técnica en alemán.</td></tr>
+  </tbody>
+</table>
+
+<h2>Salarios en Suiza vs Colombia</h2>
+<p>Para poner en perspectiva por qué Suiza vale la pena:</p>
+<table>
+  <thead><tr><th>Profesión</th><th>Salario mensual bruto Suiza (CHF)</th><th>Equivalente COP aproximado</th></tr></thead>
+  <tbody>
+    <tr><td>Ingeniero de software senior</td><td>CHF 9.000–14.000</td><td>$44M – $70M COP</td></tr>
+    <tr><td>Enfermera</td><td>CHF 6.000–8.000</td><td>$30M – $40M COP</td></tr>
+    <tr><td>Analista financiero</td><td>CHF 8.000–11.000</td><td>$40M – $55M COP</td></tr>
+    <tr><td>Chef de cocina</td><td>CHF 4.500–6.500</td><td>$22M – $32M COP</td></tr>
+  </tbody>
+</table>
+<p>El costo de vida en Suiza es muy alto — pero incluso descontando eso, el diferencial salarial es enorme.</p>
+
+<h2>Cómo aplicar desde Colombia</h2>
+<ol>
+  <li><strong>Obtener el nivel B2 certificado</strong>: Goethe-Zertifikat B2 o TELC Deutsch B2. Son reconocidos en Suiza.</li>
+  <li><strong>Conseguir una oferta laboral</strong>: Colombia no tiene acuerdo de libre circulación con Suiza (como sí tienen los países de la UE/EFTA). Necesitas una oferta laboral previa para la visa de trabajo.</li>
+  <li><strong>Visa de trabajo (L o B)</strong>: el empleador suizo inicia el proceso migratorio. Suiza tiene cuotas para trabajadores de fuera de la UE — los puestos más calificados (STEM, medicina, finanzas) tienen más opciones.</li>
+  <li><strong>Reconocimiento de título</strong>: según la profesión, puede requerir homologación ante SERI (Secretaría de Estado de Educación, Investigación e Innovación).</li>
+</ol>
+
+<h2>WeLearn y el alemán para Suiza</h2>
+<p>Si tu meta es trabajar en Suiza, el camino empieza con Hochdeutsch hasta B2 certificado — lo mismo que para Alemania, pero con la ventaja adicional de que en muchos sectores suizos el inglés complementa bien. Diseñamos el plan según tu sector y tu punto de partida. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20alem%C3%A1n%20para%20trabajar%20en%20Suiza.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Primera clase gratis — escríbenos</a>.</p>
+<p>Lee también: <a href="/blog/trabajar-en-alemania-nivel-aleman-requerido">Trabajar en Alemania: qué nivel de alemán necesitas</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 82 ──────────────────────────────────────────────────────────
+  {
+    slug: 'icfes-vocabulario-ingles-palabras-mas-frecuentes',
+    title: 'Vocabulario inglés ICFES: las 200 palabras más frecuentes en Saber 11',
+    description: 'Las 200 palabras de inglés más frecuentes en el ICFES Saber 11, organizadas por categoría semántica. Guía práctica para aumentar tu puntaje rápidamente.',
+    category: 'ICFES',
+    tags: ['vocabulario ICFES inglés', 'palabras frecuentes ICFES', 'Saber 11 inglés', 'inglés ICFES'],
+    date: '2026-05-30',
+    readTime: 8,
+    body: `
+<p>El inglés del ICFES Saber 11 evalúa comprensión lectora en contextos académicos y cotidianos. El vocabulario es uno de los factores más directamente entrenables — y hay patrones claros en qué palabras aparecen año tras año. Esta guía agrupa el vocabulario más frecuente para que lo puedas estudiar sistemáticamente.</p>
+
+<h2>Cómo está organizado el vocabulario en el ICFES</h2>
+<p>El ICFES evalúa tres tipos de vocabulario:</p>
+<ul>
+  <li><strong>Vocabulario en contexto</strong>: el significado de una palabra según cómo se usa en el texto (no necesariamente su definición del diccionario).</li>
+  <li><strong>Vocabulario de discurso</strong>: conectores, marcadores y transiciones que indican la estructura del texto (contrast, addition, cause-effect).</li>
+  <li><strong>Vocabulario temático</strong>: palabras de temas recurrentes como ciencia, tecnología, medio ambiente, sociedad, educación y arte.</li>
+</ul>
+
+<h2>Palabras de discurso y conectores (indispensables)</h2>
+<p>Estas palabras aparecen en casi todos los textos del ICFES y son esenciales para entender la estructura de las ideas:</p>
+<table>
+  <thead><tr><th>Función</th><th>Palabras clave</th></tr></thead>
+  <tbody>
+    <tr><td>Contraste / oposición</td><td>however, although, despite, whereas, on the contrary, nevertheless, in spite of, yet, but</td></tr>
+    <tr><td>Adición</td><td>furthermore, moreover, in addition, also, besides, as well as</td></tr>
+    <tr><td>Causa / resultado</td><td>therefore, thus, consequently, hence, as a result, due to, because of, since</td></tr>
+    <tr><td>Ejemplo</td><td>for instance, for example, such as, including, like</td></tr>
+    <tr><td>Secuencia</td><td>first, then, next, finally, subsequently, prior to, following</td></tr>
+    <tr><td>Énfasis</td><td>especially, particularly, above all, mainly, primarily</td></tr>
+    <tr><td>Concesión</td><td>although, even though, despite the fact that, while</td></tr>
+    <tr><td>Comparación</td><td>similarly, likewise, in the same way, compared to</td></tr>
+  </tbody>
+</table>
+
+<h2>Vocabulario temático más frecuente por categoría</h2>
+<p><strong>Ciencia y tecnología</strong> (aparece en ~40% de los textos ICFES):</p>
+<p>research, experiment, evidence, hypothesis, data, findings, develop, innovation, device, software, artificial intelligence, renewable energy, climate change, environment, species, habitat, extinct, sustainable</p>
+
+<p><strong>Sociedad y cultura</strong>:</p>
+<p>community, tradition, population, government, policy, citizen, rights, equality, diversity, culture, heritage, generation, rural, urban, economy, poverty, development</p>
+
+<p><strong>Educación</strong>:</p>
+<p>education, university, knowledge, academic, study, research, curriculum, scholarship, literacy, achievement, skill, discipline, access, opportunity</p>
+
+<p><strong>Salud y bienestar</strong>:</p>
+<p>health, disease, prevention, treatment, patient, symptoms, mental health, physical, nutrition, exercise, wellness, medicine, vaccine, pandemic, risk</p>
+
+<p><strong>Artes y comunicación</strong>:</p>
+<p>art, creativity, expression, literature, audience, media, communication, narrative, publish, exhibit, performance, influence</p>
+
+<h2>Palabras con significado diferente al español (falsos amigos)</h2>
+<p>Estas palabras parecen cognatoscon el español pero tienen significados distintos — y aparecer en el ICFES:</p>
+<table>
+  <thead><tr><th>Inglés</th><th>Parece significar...</th><th>Realmente significa</th></tr></thead>
+  <tbody>
+    <tr><td>actually</td><td>actualmente</td><td>en realidad / de hecho</td></tr>
+    <tr><td>eventually</td><td>eventualmente</td><td>finalmente / con el tiempo</td></tr>
+    <tr><td>library</td><td>librería</td><td>biblioteca</td></tr>
+    <tr><td>fabric</td><td>fábrica</td><td>tela / tejido</td></tr>
+    <tr><td>sensible</td><td>sensible (emotivo)</td><td>sensato / razonable</td></tr>
+    <tr><td>comprehensive</td><td>comprensivo</td><td>exhaustivo / completo</td></tr>
+    <tr><td>assist</td><td>asistir (ir)</td><td>ayudar / asistir (apoyar)</td></tr>
+    <tr><td>pretend</td><td>pretender</td><td>fingir / hacer como si</td></tr>
+  </tbody>
+</table>
+
+<h2>Cómo estudiar este vocabulario para el ICFES</h2>
+<ol>
+  <li><strong>Flashcards con contexto</strong>: no estudies "however = sin embargo." Estudia la oración: "The project was expensive; however, it was completed on time." El contexto fija el significado.</li>
+  <li><strong>Agrupa por función</strong>: aprende los conectores de contraste todos juntos, luego los de causa, etc. El cerebro retiene mejor en grupos semánticos.</li>
+  <li><strong>Aplica en lecturas reales</strong>: toma un texto en inglés de nivel B1–B2 y subraya cada conector. Identifica qué tipo de relación establece entre las ideas.</li>
+  <li><strong>Simulacros cronometrados</strong>: practica preguntas de vocabulario en contexto bajo tiempo. El ICFES tiene 45 preguntas en 50 minutos — la velocidad importa.</li>
+</ol>
+
+<h2>WeLearn y la preparación ICFES inglés</h2>
+<p>En WeLearn preparamos el inglés del ICFES con vocabulario, comprensión lectora y estrategias de examen. Si tienes el Saber 11 próximo, el simulacro gratuito en nuestra plataforma te dice exactamente cuál es tu nivel y en qué enfocarte. <a href="https://wa.me/573005004253?text=Hola%2C%20me%20preparo%20para%20el%20ICFES%20y%20quiero%20mejorar%20mi%20puntaje%20en%20ingl%C3%A9s.%20%C2%BFC%C3%B3mo%20pueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">Puntaje inglés ICFES: qué significan los niveles</a> y <a href="/blog/icfes-ingles-plan-estudio-3-meses">Plan de estudio inglés ICFES en 3 meses</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 83 ──────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-un-idioma-con-duolingo-funciona-realidad',
+    title: '¿Aprender un idioma con Duolingo funciona? Lo que dice la evidencia real',
+    description: 'Evaluación honesta de Duolingo como herramienta para aprender idiomas: qué sí funciona, qué no funciona, estudios reales y cómo usarlo correctamente.',
+    category: 'Método',
+    tags: ['Duolingo funciona', 'aprender idioma apps', 'Duolingo vs clases', 'método aprendizaje'],
+    date: '2026-05-30',
+    readTime: 7,
+    body: `
+<p>Duolingo tiene más de 500 millones de usuarios registrados y es la app de idiomas más descargada del mundo. Pero la pregunta que todo el mundo hace — ¿funciona para aprender un idioma de verdad? — merece una respuesta honesta, basada en evidencia, no en marketing ni en resentimiento.</p>
+
+<h2>Lo que Duolingo hace bien</h2>
+<ul>
+  <li><strong>Gamificación que mantiene el hábito</strong>: las rachas, los puntos XP y los desafíos diarios funcionan para construir el hábito de practicar. Para muchas personas, Duolingo es la única forma en que logran hacer algo en un idioma todos los días.</li>
+  <li><strong>Vocabulario básico (A1–A2)</strong>: los primeros 500–800 palabras de un idioma se aprenden razonablemente bien en Duolingo. El sistema de repetición espaciada (SRS) está basado en principios científicos sólidos.</li>
+  <li><strong>Bajo umbral de entrada</strong>: gratis, accesible, no requiere comprometerse con un horario. Para alguien que quiere "probar" un idioma antes de invertir en clases, es perfecto.</li>
+  <li><strong>Algunos idiomas están mejor diseñados que otros</strong>: los cursos de inglés para hispanohablantes, y los cursos de español para angloparlantes, están entre los mejores en términos de contenido y metodología.</li>
+</ul>
+
+<h2>Lo que Duolingo no hace</h2>
+<ul>
+  <li><strong>No desarrolla habla real</strong>: aunque Duolingo tiene ejercicios de pronunciación, la práctica de conversación libre es mínima. Hablar con fluidez requiere hablar — con personas reales, en situaciones reales.</li>
+  <li><strong>No explica gramática de forma efectiva</strong>: Duolingo usa un enfoque inductivo (aprende las reglas a través de ejemplos). Para muchos adultos hispanohablantes, explicación explícita de la gramática es más eficiente.</li>
+  <li><strong>No llega a B1 real</strong>: hay estudios que muestran que después de 34 horas de Duolingo, el aprendiz promedio puede pasar un examen de A2. Llegar a B1 con solo Duolingo requeriría cientos de horas — en ese tiempo, con clases estructuradas habrías llegado más lejos.</li>
+  <li><strong>Crea ilusión de progreso</strong>: los puntos XP y las ligas de competencia motivan, pero puedes acumular miles de XP manteniendo el mismo nivel de comprensión real. El progreso en la app no equivale al progreso en el idioma.</li>
+</ul>
+
+<h2>El estudio más citado sobre Duolingo</h2>
+<p>Un estudio de Vesselinov y Gould (2012) patrocinado por Duolingo mostró que 34 horas en Duolingo equivalen a un semestre universitario de español. Sin embargo, el estudio fue financiado por la propia empresa, tenía metodología cuestionada, y comparaba con semestres universitarios de baja intensidad. Estudios independientes posteriores han mostrado resultados mucho más modestos.</p>
+
+<h2>Cómo usar Duolingo inteligentemente (junto con otras herramientas)</h2>
+<p>El error no es usar Duolingo — es usarlo como única herramienta. El enfoque correcto:</p>
+<ul>
+  <li><strong>Duolingo como calentamiento diario (15 min)</strong>: mantén la racha para el vocabulario y el oído. No es tu clase — es tu rutina de mantenimiento.</li>
+  <li><strong>Clases 1:1 para estructura y conversación</strong>: 2–3 veces por semana para explicación de gramática, práctica oral dirigida y retroalimentación real.</li>
+  <li><strong>Input comprensible (i+1)</strong>: podcasts, series, artículos ligeramente por encima de tu nivel actual. Duolingo no puede reemplazar esto.</li>
+  <li><strong>Output activo</strong>: escribir, hablar, usar el idioma en contextos reales. Ninguna app te da esto.</li>
+</ul>
+
+<h2>¿Cuándo SÍ funciona solo Duolingo?</h2>
+<ul>
+  <li>Para mantener un idioma que ya aprendiste y no quieres olvidar.</li>
+  <li>Para hacer una primera exploración de un idioma nuevo antes de comprometerte.</li>
+  <li>Como suplemento de vocabulario cuando ya tienes una base sólida por otro medio.</li>
+</ul>
+
+<h2>Conclusión honesta</h2>
+<p>Duolingo es una herramienta, no un método completo. Usarlo bien —como parte de un plan que incluye exposición real, práctica de conversación y retroalimentación— puede ser muy útil. Usarlo como tu único recurso mientras esperas ser fluido en 3 meses es una expectativa que la app fomenta pero que los datos no respaldan.</p>
+<p>En WeLearn usamos aplicaciones y tecnología como complemento, no como sustituto de la instrucción real. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20un%20idioma%20de%20verdad%20y%20no%20solo%20con%20una%20app.%20%C2%BFC%C3%B3mo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Cuéntanos qué idioma quieres aprender</a>.</p>
+<p>Lee también: <a href="/blog/cuanto-tiempo-para-aprender-un-idioma-desde-cero">¿Cuánto tiempo se necesita para aprender un idioma desde cero?</a> y <a href="/blog/metodo-welearn-17-pasos-para-aprender-un-idioma">El método WeLearn de 17 pasos explicado</a>.</p>
+    `,
+  },
+
+  // ── ARTICLE 84 ──────────────────────────────────────────────────────────
+  {
+    slug: 'coreano-nivel-topik-3-4-como-alcanzarlo',
+    title: 'TOPIK II nivel 3 y 4: cómo alcanzarlos y qué se evalúa realmente',
+    description: 'Guía detallada para alcanzar TOPIK II nivel 3 y 4: diferencias entre niveles, qué evalúan las secciones y estrategia de estudio para hispanohablantes.',
+    category: 'Coreano',
+    tags: ['TOPIK II nivel 3', 'TOPIK nivel 4', 'coreano avanzado', 'preparación TOPIK'],
+    date: '2026-05-30',
+    readTime: 8,
+    body: `
+<p>El TOPIK II es el examen para niveles intermedios y avanzados de coreano (niveles 3 al 6). Aprobar con nivel 3 o 4 abre puertas reales en Corea: visa de trabajo E-7, acceso a universidades de pregrado, y credibilidad profesional en empresas coreanas. Esta guía te explica qué se evalúa y cómo estudiar.</p>
+
+<h2>¿Cuál es la diferencia entre nivel 3 y nivel 4?</h2>
+<table>
+  <thead><tr><th>Aspecto</th><th>Nivel 3</th><th>Nivel 4</th></tr></thead>
+  <tbody>
+    <tr><td>Vocabulario</td><td>~3.000–4.000 palabras</td><td>~5.000–6.000 palabras</td></tr>
+    <tr><td>Contextos</td><td>Vida cotidiana, conversación social, temas básicos de actualidad</td><td>Temas abstractos, trabajo, medios, noticias, argumentación</td></tr>
+    <tr><td>Gramática</td><td>Estructuras intermedias: -는데, -기 때문에, -어서/아서, -면서</td><td>Estructuras avanzadas: -는 반면에, -(으)ㄹ수록, -고 보니, pasiva/causativa</td></tr>
+    <tr><td>Writing</td><td>Puede describir situaciones y expresar opiniones simples</td><td>Puede escribir ensayos con argumento estructurado y vocabulario formal</td></tr>
+    <tr><td>CEFR equivalente</td><td>B1 (aproximado)</td><td>B2 (aproximado)</td></tr>
+    <tr><td>Puntaje mínimo</td><td>120/300 (en TOPIK II)</td><td>150/300 (en TOPIK II)</td></tr>
+  </tbody>
+</table>
+
+<h2>Estructura del TOPIK II</h2>
+<p>El TOPIK II tiene dos sesiones:</p>
+<ul>
+  <li><strong>Sesión 1 — Lectura (읽기)</strong>: 50 preguntas de opción múltiple en 70 minutos. Evalúa comprensión de textos escritos de complejidad creciente.</li>
+  <li><strong>Sesión 2 — Audición (듣기) + Escritura (쓰기)</strong>: 50 preguntas de audición (60 min) + 4 preguntas de escritura (50 min). La escritura incluye preguntas cortas de completar y un ensayo largo de 200–300 caracteres.</li>
+</ul>
+<p>El puntaje máximo es 300 (100 por sección). Para nivel 3: mínimo 120 total. Para nivel 4: mínimo 150 total.</p>
+
+<h2>Las secciones más difíciles para hispanohablantes</h2>
+<ul>
+  <li><strong>Escritura — el ensayo largo</strong>: escribir 200–300 caracteres en coreano con argumento estructurado es el mayor reto. Se evalúa contenido, organización, vocabulario y gramática. Muchos hispanohablantes dominan la gramática oral pero no la escritura formal en hangeul.</li>
+  <li><strong>Audición — velocidad y contexto</strong>: los diálogos del TOPIK II son más largos y más naturales que los del TOPIK I. Hay contextos de trabajo, noticias, y conferencias que requieren vocabulario específico.</li>
+  <li><strong>Vocabulario de Hanja (caracteres chinos)</strong>: el coreano formal usa mucho vocabulario de origen chino (한자어 hanja-eo). Palabras como 경제 (economía), 환경 (ambiente), 교육 (educación) son esenciales para nivel 3–4.</li>
+</ul>
+
+<h2>Plan de estudio para alcanzar nivel 3 (desde TOPIK I nivel 2)</h2>
+<table>
+  <thead><tr><th>Meses</th><th>Foco</th><th>Recursos</th></tr></thead>
+  <tbody>
+    <tr><td>1–2</td><td>Vocabulario de Hanja básico (500 palabras), gramática intermedia (-는데, -기 위해)</td><td>Topik One app, Anki con vocabulario TOPIK II</td></tr>
+    <tr><td>3–4</td><td>Lectura de textos auténticos cortos (noticias fáciles, textos de manual)</td><td>News in Korean (beginner), 세종학당 materiales B1</td></tr>
+    <tr><td>5–6</td><td>Simulacros TOPIK II sección Lectura, práctica de escritura corta (빈칸 채우기)</td><td>Exámenes pasados de TOPIK II (disponibles en topik.go.kr)</td></tr>
+    <tr><td>7–8</td><td>Ensayo largo: estructura, conectores formales, párrafos de inicio/cierre</td><td>Tutorías 1:1 con corrección de escritura</td></tr>
+    <tr><td>9–10</td><td>Simulacros completos con tiempo real, audición intensiva</td><td>YouTube TOPIK prep channels coreanos, clases de conversación formal</td></tr>
+  </tbody>
+</table>
+
+<h2>Estructura del ensayo TOPIK II (쓰기 4번)</h2>
+<p>El ensayo largo de escritura tiene un tema dado y pide un texto de 200–300 caracteres con posición y argumentos. La estructura recomendada:</p>
+<ol>
+  <li><strong>Introducción</strong> (2–3 oraciones): presenta el tema y tu posición. "최근 ___이/가 중요한 문제로 떠오르고 있다. 나는 ___ 라고 생각한다."</li>
+  <li><strong>Argumento 1</strong> (3–4 oraciones): primer punto con ejemplo o razón.</li>
+  <li><strong>Argumento 2</strong> (3–4 oraciones): segundo punto con evidencia o contraste.</li>
+  <li><strong>Conclusión</strong> (2 oraciones): reafirma la posición. "따라서 ___이/가 필요하다고 생각한다."</li>
+</ol>
+
+<h2>WeLearn y el TOPIK II</h2>
+<p>Preparamos estudiantes para el TOPIK II nivel 3 y 4 con simulacros, corrección de escritura y práctica de audición. Si ya tienes TOPIK I nivel 2 y quieres avanzar, la clase de diagnóstico te dice exactamente qué brecha hay que cerrar. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOPIK%20II%20nivel%203%20o%204.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/topik-ii-como-subir-de-nivel">TOPIK II: cómo pasar del nivel 2 al nivel 4</a> y <a href="/blog/topik-i-preparacion-guia-para-principiantes">TOPIK I: guía para principiantes</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
