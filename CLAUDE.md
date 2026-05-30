@@ -132,8 +132,11 @@ public/
 - **TOPIK Diagnóstico**: `src/data/mocks/topik-set-1.ts` (30 preguntas MCQ al estilo TOPIK I, 3 partes: 빈칸/안내문/지문), `TOPIKPracticeClient.tsx` (quiz → LeadCaptureModal → results con nivel). Ruta: `/examenes/topik/practica/set-1`. Sección en `/clases-de-coreano`. Scoring: 70%+ = Nivel 2, 40-69% = Nivel 1, <40% = Iniciante.
 - **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering: /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes, /practica. Root `/` redirige a /home.
 - **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
-- **Platform actions**: `src/lib/actions/` tiene: `assignPlan.ts`, `signOut.ts`, `trackActivity.ts`, `saveProgress.ts`, `saveLead.ts`, `scoreSubmission.ts`.
+- **Platform actions**: `src/lib/actions/` tiene: `assignPlan.ts`, `signOut.ts`, `trackActivity.ts`, `saveProgress.ts`, `saveLead.ts`, `scoreSubmission.ts`, `saveExamResult.ts`.
 - **Platform utils**: `src/lib/utils/streak.ts` — `calculateStreak(dates: string[]): number`.
-- **Dashboard routes**: `/dashboard/student` (StudentDashboardClient), `/dashboard/admin` (JoseDashboard/ZhannaDashboard), `/dashboard/welearn` (WelearnDashboardClient — datos aún placeholder).
+- **Dashboard routes**: `/dashboard/student` (StudentDashboardClient), `/dashboard/student/progreso` (ProgresoClient — grid actividad + historial simulacros + progreso coreano), `/dashboard/admin` (JoseDashboard/ZhannaDashboard), `/dashboard/welearn` (WelearnDashboardClient — datos aún placeholder).
+- **Engagement features (student dashboard)**: Tip del día (14 tips rotando daily), Reto semanal (8 MCQ rotando weekly con feedback inmediato). Implementados en StudentDashboardClient como arrays estáticos con rotación por fecha.
 - **Admin StudentList**: `src/app/(site)/dashboard/admin/StudentList.tsx` — tabla de estudiantes con búsqueda, filtro por plan, asignación inline de plan con server action.
+- **markStepComplete**: ya está llamado en `LessonRuntime.tsx` al completar lecciones coreanas. No es pendiente.
+- **Blog colores categorías**: home page y blog/[slug] page tienen CTAs y colores para Alemán (#1a2ecc), Francés (#1a2ecc), Portugués (#166534), Método (#7c3aed), Migración (#0369a1).
 - **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.

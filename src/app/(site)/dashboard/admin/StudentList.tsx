@@ -32,6 +32,14 @@ function formatDate(iso: string | null) {
   return new Date(iso).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric' })
 }
 
+function activityStatus(lastActive: string | null): { label: string; color: string; bg: string } {
+  if (!lastActive) return { label: 'Sin actividad', color: '#6b7280', bg: '#f3f4f6' }
+  const days = Math.floor((Date.now() - new Date(lastActive).getTime()) / 86400000)
+  if (days <= 7)  return { label: 'Activo',     color: '#16a34a', bg: '#dcfce7' }
+  if (days <= 30) return { label: 'En riesgo',  color: '#d97706', bg: '#fef3c7' }
+  return             { label: 'Inactivo',    color: '#dc2626', bg: '#fee2e2' }
+}
+
 function PlanBadge({ plan }: { plan: StudentPlan }) {
   const opt = PLAN_OPTS.find(o => o.value === plan)!
   return (
@@ -117,7 +125,7 @@ export default function StudentList({ students }: { students: StudentRow[] }) {
           ))}
         </div>
         <span style={{ fontSize: 11, color: MUTED, whiteSpace: 'nowrap' }}>
-          {filtered.length} estudiante{filtered.length !== 1 ? 's' : ''}
+          {filtered.length} de {list.length} · {list.filter(s => !s.last_active).length} sin actividad
         </span>
       </div>
 
@@ -131,7 +139,7 @@ export default function StudentList({ students }: { students: StudentRow[] }) {
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
             <thead>
               <tr>
-                {['Estudiante', 'Plan', 'Simulacros', 'Último acceso', 'Inscrito', 'Cambiar plan'].map(h => (
+                {['Estudiante', 'Estado', 'Plan', 'Simulacros', 'Último acceso', 'Inscrito', 'Cambiar plan'].map(h => (
                   <th key={h} style={{
                     textAlign: 'left', padding: '6px 10px',
                     color: MUTED, fontWeight: 600, fontSize: 10,
@@ -163,6 +171,18 @@ export default function StudentList({ students }: { students: StudentRow[] }) {
                         <p style={{ margin: 0, color: MUTED, fontSize: 11 }}>{student.email}</p>
                       </div>
                     </div>
+                  </td>
+
+                  {/* Activity status */}
+                  <td style={{ padding: '10px 10px' }}>
+                    {(() => {
+                      const st = activityStatus(student.last_active)
+                      return (
+                        <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 7px', borderRadius: 100, background: st.bg, color: st.color }}>
+                          {st.label}
+                        </span>
+                      )
+                    })()}
                   </td>
 
                   {/* Current plan */}
