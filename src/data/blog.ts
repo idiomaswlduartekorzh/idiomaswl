@@ -2563,7 +2563,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>¿Qué ofrece WeLearn?</h2>
 <p>En WeLearn manejamos clases 1:1 y grupales con precios decrecientes por volumen de horas, preparación para IELTS y TOEFL con seguimiento real, y plataforma de simulacros gratuita. Si quieres saber qué plan es mejor para ti, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20cuesta%20aprender%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> y te damos una recomendación sin compromiso.</p>
-<p>Lee también: <a href="/blog/clases-de-ingles-online-colombia">Clases de inglés online en Colombia: guía 2026</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
+<p>Lee también: <a href="/blog/clases-de-ingles-online-colombia">Clases de inglés online en Colombia: guía 2026</a>, <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a> y <a href="/blog/cuanto-cuesta-aprender-coreano-colombia-2026">¿Cuánto cuesta aprender coreano en Colombia en 2026?</a>.</p>
     `,
   },
 
@@ -3165,6 +3165,84 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>En WeLearn preparamos para coreano con método estructurado desde Hangeul hasta TOPIK II. Las clases son online 1:1, empezamos con una sesión de diagnóstico gratuita que evalúa tu nivel real y define tu ruta — ya sea conversacional, TOPIK o beca GKS. Nuestros tutores tienen formación específica en coreano y experiencia con estudiantes colombianos que aprenden el idioma en contexto hispanohablante.</p>
 <p>Si quieres saber si WeLearn es la opción correcta para ti, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20empezar%20clases%20de%20coreano%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-coreano">página de clases de coreano</a> para ver el plan completo.</p>
 <p>Lee también: <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero en Colombia: la guía completa</a> y <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a>.</p>
+    `,
+  },
+  // ── Article 40 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-coreano-colombia-2026',
+    title: '¿Cuánto cuesta aprender coreano en Colombia en 2026? Guía de precios honesta',
+    description:
+      'Precios reales de aprender coreano en Colombia en 2026: apps, tutores freelance, academias online y presenciales. Qué incluye cada opción y cuál es la mejor relación costo-resultado.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Coreano',
+    tags: ['cuánto cuesta aprender coreano Colombia', 'precio clases coreano Colombia', 'academia coreano Colombia 2026', 'coreano online Colombia', 'TOPIK preparación costo'],
+    body: `
+<h2>El mercado de coreano en Colombia: muchas opciones, precios muy variables</h2>
+<p>Aprender coreano en Colombia en 2026 puede costarte desde $0 al mes (apps gratuitas + YouTube) hasta $600.000 COP mensuales o más (clases 1:1 intensivas). La diferencia de precio refleja, en la mayoría de los casos, una diferencia real de resultado — pero no siempre. Esta guía te ayuda a entender qué obtienes por cada rango de inversión.</p>
+
+<h2>Rangos de precio por tipo de opción</h2>
+
+<table>
+  <thead><tr><th>Opción</th><th>Precio mensual (COP)</th><th>Ideal para</th><th>Limitaciones</th></tr></thead>
+  <tbody>
+    <tr><td>Apps (Duolingo, LingoDeer)</td><td>$0–$50.000</td><td>Vocabulario inicial, Hangeul</td><td>Sin speaking real, sin gramática profunda</td></tr>
+    <tr><td>Cursos grabados (Udemy, Coursera)</td><td>$30.000–$150.000 (pago único)</td><td>Base gramatical</td><td>Sin retroalimentación, sin producción oral</td></tr>
+    <tr><td>Tutor freelance (Italki, Preply)</td><td>$120.000–$280.000 (4–8 h/mes)</td><td>Conversación informal</td><td>Calidad variable, sin estructura curricular</td></tr>
+    <tr><td>Academia online (grupos)</td><td>$150.000–$350.000</td><td>Nivel inicial con estructura</td><td>Poca atención individual, ritmo grupal</td></tr>
+    <tr><td>Academia online (1:1 especializada)</td><td>$250.000–$600.000</td><td>TOPIK, beca GKS, objetivo definido</td><td>Mayor inversión, requiere compromiso</td></tr>
+    <tr><td>Academia presencial (Bogotá, Medellín)</td><td>$200.000–$500.000</td><td>Quienes prefieren presencial</td><td>Horarios fijos, desplazamiento</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué obtienes (y qué no) con cada opción?</h2>
+
+<h3>Apps como Duolingo o LingoDeer</h3>
+<p>Las apps son excelentes para aprender Hangeul (el alfabeto coreano) y construir vocabulario pasivo. Duolingo tiene gamificación efectiva para la constancia. El problema: <strong>ninguna app llega a TOPIK I Nivel 2</strong> por sí sola. La producción oral no se desarrolla, y la gramática se presenta de forma tan simplificada que muchos usuarios llegan a nivel A2 sin poder construir oraciones propias. Son una herramienta complementaria, no un programa completo.</p>
+
+<h3>Tutores freelance en Italki o Preply</h3>
+<p>Los tutores en plataformas internacionales cobran en dólares o euros. Para 4 sesiones de 1 hora mensuales, el costo puede rondar los USD 40–80 (unos $160.000–$320.000 COP). La ventaja es flexibilidad y acceso a hablantes nativos de Corea del Sur. La desventaja: la calidad varía enormemente. Un tutor puede ser nativo de coreano y no tener ninguna formación pedagógica. Para TOPIK, busca tutores que explícitamente mencionen preparación para el examen y pide referencias.</p>
+
+<h3>Academia online con grupos</h3>
+<p>El rango de $150.000–$350.000/mes cubre la mayoría de academias de coreano colombianas con grupos de 5–15 personas. A este precio obtienes estructura curricular, material de clase y cierta interacción oral. El límite es la atención individual — en un grupo de 10 personas, cada estudiante recibe máximo 6 minutos de producción oral por hora de clase. Para alcanzar el TOPIK, necesitas más práctica personalizada.</p>
+
+<h3>Academia 1:1 especializada</h3>
+<p>Las clases 1:1 con un tutor que tiene experiencia en TOPIK y en enseñar coreano a hispanohablantes son la opción más eficiente si tienes un objetivo claro. El tutor adapta cada clase a tus errores específicos, avanza a tu ritmo y puede diseñar el simulacro de TOPIK ajustado a tu nivel. El costo es mayor pero el tiempo hasta alcanzar el objetivo suele ser menor: un estudiante que hace 2 horas semanales de clases 1:1 estructuradas puede avanzar más rápido que otro que hace 4 horas semanales de clase en grupo.</p>
+
+<h2>Costo total para alcanzar cada nivel</h2>
+<p>Partiendo de cero, esta es la inversión estimada para alcanzar cada nivel del coreano:</p>
+
+<table>
+  <thead><tr><th>Objetivo</th><th>Tiempo estimado</th><th>Inversión total (1:1)</th><th>Inversión total (grupo)</th></tr></thead>
+  <tbody>
+    <tr><td>A2 / Conversación básica</td><td>6–9 meses</td><td>$1.500.000–$2.700.000</td><td>$900.000–$1.575.000</td></tr>
+    <tr><td>TOPIK I (Nivel 1–2)</td><td>9–14 meses</td><td>$2.250.000–$4.200.000</td><td>$1.350.000–$2.450.000</td></tr>
+    <tr><td>TOPIK II (Nivel 3–4) / Beca GKS</td><td>18–24 meses</td><td>$4.500.000–$7.200.000</td><td>$2.700.000–$4.200.000</td></tr>
+  </tbody>
+</table>
+
+<p>Estas cifras parecen altas, pero hay que comparar con el costo de oportunidad: una beca GKS cubre matrícula universitaria en Corea del Sur (valorada en USD 10.000–25.000 por año) y manutención. La inversión en preparación es claramente rentable si el objetivo es la beca.</p>
+
+<h2>El costo del TOPIK en Colombia</h2>
+<p>Además de las clases, hay que considerar el costo del examen mismo. El TOPIK en Colombia se presenta en el <strong>Centro Cultural Coreano</strong> en Bogotá (y en sedes universitarias en otras ciudades durante algunas convocatorias). El costo aproximado en 2026 es:</p>
+<ul>
+  <li><strong>TOPIK I:</strong> alrededor de $80.000–$120.000 COP por aplicación</li>
+  <li><strong>TOPIK II:</strong> alrededor de $100.000–$150.000 COP por aplicación</li>
+</ul>
+<p>El examen se aplica dos veces al año en Colombia (generalmente abril y octubre). Inscríbete con anticipación porque los cupos se agotan rápido en Bogotá.</p>
+
+<h2>¿Cómo elegir la opción correcta para tu objetivo?</h2>
+<ul>
+  <li><strong>Si quieres explorar si el coreano te gusta:</strong> empieza con una app (gratis) + YouTube. Antes de invertir, confirma que te motiva el idioma.</li>
+  <li><strong>Si quieres conversación informal para ver dramas sin subtítulos:</strong> tutor freelance nativo + apps. Presupuesto: $150.000–$200.000/mes.</li>
+  <li><strong>Si quieres el TOPIK I en 12 meses:</strong> academia con estructura curricular, preferiblemente 1:1 o grupos pequeños (máx. 5 personas). Presupuesto: $250.000–$400.000/mes.</li>
+  <li><strong>Si quieres la beca GKS o el TOPIK II:</strong> preparación 1:1 especializada con simulacros del examen. Es la inversión más alta pero la más eficiente en tiempo.</li>
+</ul>
+
+<h2>WeLearn y las clases de coreano</h2>
+<p>En WeLearn ofrecemos clases de coreano 1:1 con tutor especializado, desde nivel cero hasta TOPIK II. Empezamos con una sesión de diagnóstico gratuita para definir tu nivel real, tu objetivo y el plan exacto para alcanzarlo. Los precios están estructurados por paquetes de horas con descuento por volumen — sin contratos largos ni matrícula oculta.</p>
+<p>Si quieres saber el precio exacto para tu nivel y objetivo, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20coreano%20en%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita nuestra <a href="/precios">página de precios</a>.</p>
+<p>Lee también: <a href="/blog/clases-de-coreano-online-colombia">Clases de coreano online en Colombia: guía para elegir bien</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
     `,
   },
 ];

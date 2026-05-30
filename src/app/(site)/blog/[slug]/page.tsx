@@ -103,6 +103,13 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLink: '/examenes/delf-dalf',
     pageLinkLabel: 'Ver simulacros de DELF',
   },
+  Italiano: {
+    title: '¿Quieres prepararte para el CILS o CELI?',
+    desc: 'Clases de italiano con enfoque en exámenes oficiales. Preparamos CILS y CELI de A2 hasta C2 con docentes especializados.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el CILS y CELI y quiero saber más sobre las clases de italiano.',
+    pageLink: '/examenes/cils-celi',
+    pageLinkLabel: 'Ver simulacros de CILS',
+  },
   Método: {
     title: '¿Listo para aprender un idioma con método?',
     desc: 'Conoce el método WeLearn de 17 pasos, diseñado para hispanohablantes que quieren hablar idiomas, no solo aprenderlos.',
