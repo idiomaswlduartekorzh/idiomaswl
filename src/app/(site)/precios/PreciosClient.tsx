@@ -43,13 +43,13 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Francés',  color: '#1a2ecc', title: 'DELF y DALF: la guía completa para colombianos', slug: 'delf-dalf-guia-preparacion-colombianos' },
   ],
   aleman: [
+    { cat: 'Alemán',   color: '#1a2ecc', title: 'Trabajar en Alemania: ¿qué nivel de alemán necesitas?', slug: 'trabajar-en-alemania-nivel-aleman-requerido' },
     { cat: 'Alemán',   color: '#1a2ecc', title: '¿Cuánto cuesta aprender alemán en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-aleman-colombia-2026' },
-    { cat: 'Alemán',   color: '#1a2ecc', title: 'Clases de alemán online en Colombia: guía para elegir bien', slug: 'clases-de-aleman-online-colombia' },
     { cat: 'Alemán',   color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
   ],
   italiano: [
+    { cat: 'Italiano', color: '#009246', title: 'Ciudadanía italiana: el requisito de italiano B1 explicado', slug: 'ciudadania-italiana-italiano-b1-requisito' },
     { cat: 'Italiano', color: '#009246', title: '¿Cuánto cuesta aprender italiano en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-italiano-colombia-2026' },
-    { cat: 'Italiano', color: '#009246', title: 'Clases de italiano online en Colombia: guía para elegir bien', slug: 'clases-de-italiano-online-colombia' },
     { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano', slug: 'cils-celi-certificacion-italiano-colombia' },
   ],
   portugues: [

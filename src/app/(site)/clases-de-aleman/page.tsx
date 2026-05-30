@@ -202,8 +202,8 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Alemán', color: '#1a2ecc', title: 'Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?', slug: 'trabajar-en-alemania-nivel-aleman-requerido' },
   { cat: 'Alemán', color: '#1a2ecc', title: '¿Cuánto cuesta aprender alemán en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-aleman-colombia-2026' },
-  { cat: 'Alemán', color: '#1a2ecc', title: 'Clases de alemán online en Colombia: guía para elegir bien', slug: 'clases-de-aleman-online-colombia' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
 ];
 

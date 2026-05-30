@@ -3713,6 +3713,188 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/cuanto-cuesta-aprender-frances-colombia-2026">¿Cuánto cuesta aprender francés en Colombia en 2026?</a>.</p>
     `,
   },
+  // ── Article 49 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ciudadania-italiana-italiano-b1-requisito',
+    title: 'Ciudadanía italiana: el requisito de italiano B1 explicado paso a paso',
+    description:
+      'Si eres descendiente de italianos o llevas años en Italia, necesitas el B1 de italiano para la ciudadanía por naturalización. Aquí te explicamos qué examen vale, cómo prepararte y cuánto tiempo necesitas desde cero.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Italiano',
+    tags: ['ciudadanía italiana requisito italiano B1', 'CILS B1 ciudadanía italiana Colombia', 'ciudadanía italiana por descendencia italiano', 'aprender italiano ciudadanía italiana', 'naturalización italiana colombianos'],
+    body: `
+<h2>¿Por qué necesitas italiano B1 para la ciudadanía italiana?</h2>
+<p>Desde 2023, la reforma del Decreto Legislativo 36 introdujo el requisito de acreditar nivel B1 de italiano para todas las solicitudes de ciudadanía italiana por naturalización (art. 9, D.Lgs. 5/2/1992 n.19), incluyendo la vía por matrimonio con ciudadano/a italiano/a. Para la ciudadanía <em>iure sanguinis</em> (por descendencia directa), la exigencia lingüística no aplica directamente a los descendientes — pero sí aplica si el proceso se tramita por la vía de la naturalización o si la solicitud se hace en Italia como residente.</p>
+<p>Resumiendo qué aplica a quién:</p>
+<ul>
+  <li><strong>Iure sanguinis (descendencia pura)</strong>: no se exige B1 formalmente, pero los consulados italianos en Colombia pueden pedirte documentar conocimiento básico del idioma como parte del proceso.</li>
+  <li><strong>Ciudadanía por naturalización (10 años de residencia en Italia)</strong>: B1 certificado obligatorio desde 2023.</li>
+  <li><strong>Ciudadanía por matrimonio</strong>: B1 certificado obligatorio desde 2023.</li>
+</ul>
+
+<h2>¿Qué examen certifica el B1 de italiano para ciudadanía?</h2>
+<p>El gobierno italiano acepta las siguientes certificaciones para acreditar el nivel B1:</p>
+<table>
+  <thead><tr><th>Certificación</th><th>Institución</th><th>Válida para ciudadanía</th></tr></thead>
+  <tbody>
+    <tr><td>CILS UNO-B1</td><td>Università per Stranieri di Siena</td><td>✅ Sí</td></tr>
+    <tr><td>CELI 2 (B1)</td><td>Università per Stranieri di Perugia</td><td>✅ Sí</td></tr>
+    <tr><td>PLIDA B1</td><td>Dante Alighieri</td><td>✅ Sí</td></tr>
+    <tr><td>AIL B1</td><td>Accademia Italiana di Lingua</td><td>✅ Sí</td></tr>
+    <tr><td>IT-A1, IT-A2, IT-B1</td><td>Examen integración (solo residentes en Italia)</td><td>✅ Sí (solo en Italia)</td></tr>
+    <tr><td>Duolingo, otros cursos</td><td>Varias plataformas</td><td>❌ No</td></tr>
+  </tbody>
+</table>
+<p>El más accesible para colombianos que tramitan el proceso desde Colombia o que van a Italia a completar el trámite es el <strong>CILS B1 (CILS UNO-B1)</strong>, que se puede presentar en centros autorizados en varios países de América Latina.</p>
+
+<h2>¿Cuánto tiempo necesitas para llegar al B1 de italiano desde cero?</h2>
+<p>Como hispanohablante, tienes una ventaja enorme. El italiano comparte entre el 70% y el 80% del vocabulario con el español, y la gramática es muy similar. El Marco Común Europeo de Referencia estima 150–200 horas de instrucción efectiva para pasar de A1 a B1. Con 2 clases por semana más práctica autónoma diaria:</p>
+<table>
+  <thead><tr><th>Ritmo de estudio</th><th>Tiempo estimado A1→B1</th></tr></thead>
+  <tbody>
+    <tr><td>2 clases/semana + 30 min/día práctica</td><td>8–14 meses</td></tr>
+    <tr><td>3 clases/semana + 1 hora/día práctica</td><td>5–9 meses</td></tr>
+    <tr><td>Plan intensivo (5 clases/semana)</td><td>3–5 meses</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué evalúa el CILS B1?</h2>
+<p>El CILS B1 tiene 5 secciones: Escucha (Ascolto), Lectura (Lettura), Escritura (Scrittura), Gramática (Analisi delle strutture di comunicazione) y Producción Oral (Produzione Orale). La sección más difícil para hispanohablantes suele ser la escucha del italiano formal/estándar (velocidad y conectores discursivos) y la escritura de textos formales. El examen dura aproximadamente 3,5 horas y la nota mínima para aprobar es el 75% en cada sección.</p>
+
+<h2>Cómo prepararte para el CILS B1 desde Colombia</h2>
+<ol>
+  <li><strong>Diagnóstico de nivel</strong>: identifica si partes de cero o ya tienes base en italiano o francés/portugués/latín.</li>
+  <li><strong>Plan estructurado</strong>: no uses solo apps — necesitas gramática italiana (los tiempos verbales, el congiuntivo, los pronombres son claves en el B1).</li>
+  <li><strong>Práctica de examen</strong>: el CILS tiene un formato específico. Es indispensable practicar con simulacros de exámenes anteriores (disponibles en el sitio de la UNISTRASI).</li>
+  <li><strong>Speaking</strong>: habla italiano regularmente con un tutor. Muchos candidatos fallan la producción oral por falta de práctica con feedback real.</li>
+</ol>
+
+<h2>¿Dónde se presenta el CILS en Colombia?</h2>
+<p>El CILS tiene centros autorizados en Bogotá, Medellín y Cali (confirma la disponibilidad y fechas directamente con la Università per Stranieri di Siena o con los centros locales autorizados en Colombia, ya que los calendarios cambian cada año). También puedes presentarlo en Ecuador o Argentina, o directamente en Italia si vas a completar tu trámite de ciudadanía allá.</p>
+
+<h2>WeLearn y la preparación CILS para ciudadanía italiana</h2>
+<p>En WeLearn preparamos para el CILS B1 con un plan personalizado desde cualquier nivel inicial. El proceso empieza con una sesión de diagnóstico gratuita. Escríbenos por WhatsApp para saber cuánto tiempo necesitas según tu nivel actual: <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparar%20el%20CILS%20B1%20para%20la%20ciudadan%C3%ADa%20italiana%20y%20quiero%20saber%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Hablar con un tutor de WeLearn</a>.</p>
+<p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano desde Colombia</a> y <a href="/blog/clases-de-italiano-online-colombia">Clases de italiano online en Colombia: guía para elegir bien</a>.</p>
+    `,
+  },
+  // ── Article 50 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'trabajar-en-alemania-nivel-aleman-requerido',
+    title: 'Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?',
+    description:
+      'Guía de niveles de alemán requeridos para trabajar en Alemania según profesión y tipo de visa. Desde A2 para trabajos no calificados hasta C1 para medicina y derecho. Con la nueva Ley de Inmigración de Trabajadores Calificados.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Alemán',
+    tags: ['trabajar en Alemania nivel alemán', 'visa de trabajo Alemania alemán requerido', 'Fachkräfteeinwanderungsgesetz nivel alemán', 'nivel B1 B2 alemán trabajo Alemania', 'alemán profesional Colombia'],
+    body: `
+<h2>¿Sí o no: ¿se necesita alemán para trabajar en Alemania?</h2>
+<p>La respuesta corta: depende. Hay roles técnicos y científicos en empresas internacionales donde el inglés es suficiente (especialmente en sectores IT, ingeniería de software, investigación). Pero la realidad del mercado laboral alemán es que <strong>la mayoría de trabajos requieren al menos A2–B1 en el día a día</strong>, y muchas profesiones reguladas exigen B2 o C1 para el reconocimiento del título y el ejercicio legal de la profesión.</p>
+
+<h2>Nivel de alemán requerido por tipo de trabajo y visa</h2>
+<table>
+  <thead><tr><th>Situación</th><th>Nivel mínimo recomendado</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td>Chancenkarte (Tarjeta de Oportunidades) — buscar empleo en Alemania</td><td>A1 formal, B1 recomendado</td><td>No es visa de trabajo; permite buscar empleo hasta 1 año</td></tr>
+    <tr><td>IT / Desarrolladores de software en empresa internacional</td><td>A2–B1 (a veces inglés basta)</td><td>Depende de la empresa y el equipo</td></tr>
+    <tr><td>Ingeniería, manufactura, logística</td><td>B1–B2</td><td>Comunicación técnica con colegas y supervisores</td></tr>
+    <tr><td>Enfermería (Pflegeberufe)</td><td>B2 + "Fachsprachprüfung"</td><td>Examen de lenguaje profesional médico obligatorio</td></tr>
+    <tr><td>Medicina — reconocimiento de título (Approbation)</td><td>C1 + examen Fachsprachprüfung</td><td>Sin C1 no hay reconocimiento profesional</td></tr>
+    <tr><td>Docencia en colegios/universidades</td><td>C1–C2</td><td>Requiere hablar y escribir con total fluidez académica</td></tr>
+    <tr><td>Gastronomía, construcción, cuidado del hogar</td><td>A2–B1</td><td>Comunicación básica en el entorno laboral</td></tr>
+    <tr><td>Ciudadanía alemana (naturalización)</td><td>B1</td><td>Goethe B1 o equivalente reconocido</td></tr>
+  </tbody>
+</table>
+
+<h2>La Fachkräfteeinwanderungsgesetz (FEG) y el alemán</h2>
+<p>La Ley de Inmigración de Trabajadores Calificados (FEG), reforzada en 2023 y 2024, facilita la entrada de profesionales de países no-UE, incluida Colombia. No exige un nivel específico de alemán para solicitar muchas visas de trabajo, pero sí para la integración laboral efectiva. Las personas que llegan con B1 ya establecido tienen mucho mayor éxito en el mercado laboral que quienes llegan sin alemán.</p>
+
+<h2>¿Goethe A1, B1 o C1? ¿Cuál necesito?</h2>
+<ul>
+  <li><strong>Goethe A1 (Start Deutsch 1)</strong>: requerido para la visa de reagrupación familiar. También para demostrar conocimiento básico en algunos procesos de ciudadanía.</li>
+  <li><strong>Goethe B1 (Zertifikat Deutsch)</strong>: el estándar para migrar por trabajo no especializado, para la ciudadanía alemana y para muchos programas de visa laboral.</li>
+  <li><strong>Goethe B2 / C1</strong>: para profesiones reguladas (medicina, enfermería, derecho, docencia) y para acceder a universidades alemanas sin prueba complementaria.</li>
+</ul>
+
+<h2>Cuánto tiempo necesitas para alcanzar cada nivel</h2>
+<table>
+  <thead><tr><th>Nivel objetivo</th><th>Horas estimadas (desde cero)</th><th>Con WeLearn (2 clases/semana)</th></tr></thead>
+  <tbody>
+    <tr><td>Goethe A1</td><td>80–100 horas</td><td>4–6 meses</td></tr>
+    <tr><td>Goethe B1</td><td>250–350 horas</td><td>12–18 meses</td></tr>
+    <tr><td>Goethe B2</td><td>400–500 horas</td><td>18–28 meses</td></tr>
+    <tr><td>Goethe C1</td><td>600–700 horas</td><td>26–40 meses</td></tr>
+  </tbody>
+</table>
+<p>El alemán es uno de los idiomas más complejos para hispanohablantes (casos gramaticales, artículos con 3 géneros, estructura de oración flexible), por lo que la constancia y el feedback de un tutor especializado marcan una diferencia significativa.</p>
+
+<h2>WeLearn y la preparación para trabajar en Alemania</h2>
+<p>En WeLearn preparamos para los exámenes Goethe con tutores especializados, desde A1 para visa familiar hasta C1 para profesiones reguladas. La primera sesión de diagnóstico es gratuita. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20alem%C3%A1n%20para%20trabajar%20en%20Alemania%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases." target="_blank" rel="noopener noreferrer">Habla con un tutor de WeLearn</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
+<p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-aleman-colombia-2026">¿Cuánto cuesta aprender alemán en Colombia en 2026?</a>.</p>
+    `,
+  },
+  // ── Article 51 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'topik-fechas-centros-colombia-latinoamerica-2026',
+    title: 'TOPIK 2026: fechas de examen, centros en Colombia y cómo inscribirse',
+    description:
+      'Todo lo que necesitas saber sobre el TOPIK en Colombia y América Latina en 2026: fechas oficiales, centros de aplicación, cómo inscribirse en NIIED y qué hacer si no hay centro en tu ciudad.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Coreano',
+    tags: ['TOPIK Colombia 2026 fechas', 'examen TOPIK Colombia inscripción', 'centros TOPIK Colombia Latinoamérica', 'cómo inscribirse TOPIK 2026', 'TOPIK Bogotá costo'],
+    body: `
+<h2>¿Qué es el TOPIK y por qué tomarlo?</h2>
+<p>El TOPIK (Test of Proficiency in Korean / 한국어능력시험) es el examen oficial del gobierno de Corea del Sur para certificar el dominio del coreano como lengua extranjera. Es el único certificado reconocido por las universidades coreanas, los programas GKS (Government Korean Scholarship), los procesos de visa de trabajo (E-7, H-2) y los empleadores en Korea. Si quieres estudiar en Corea, solicitar una beca GKS, o trabajar en empresas coreanas en Colombia (Samsung, LG, Hyundai), el TOPIK es la credencial estándar.</p>
+
+<h2>TOPIK I vs TOPIK II: ¿cuál presentar?</h2>
+<table>
+  <thead><tr><th>Examen</th><th>Niveles</th><th>Para quién</th><th>Secciones</th></tr></thead>
+  <tbody>
+    <tr><td>TOPIK I</td><td>Nivel 1 y Nivel 2</td><td>Principiantes e intermedios básicos (A1–A2)</td><td>Escucha + Lectura</td></tr>
+    <tr><td>TOPIK II</td><td>Niveles 3, 4, 5 y 6</td><td>Intermedios-avanzados (B1–C2)</td><td>Escucha + Lectura + Escritura</td></tr>
+  </tbody>
+</table>
+<p>Para la beca GKS se requiere mínimo Nivel 3 (TOPIK II). Para la mayoría de programas de pregrado en Corea se exige Nivel 3–4. Para posgrado, Nivel 4–5.</p>
+
+<h2>Fechas del TOPIK en 2026</h2>
+<p>El TOPIK se presenta 6 veces al año en Corea, pero en el exterior (incluyendo Colombia y América Latina) se ofrecen habitualmente 2 a 3 convocatorias por año. Las fechas específicas para 2026 en Colombia aún no han sido publicadas oficialmente, pero históricamente las convocatorias en el exterior suelen realizarse en:</p>
+<table>
+  <thead><tr><th>Convocatoria</th><th>Período típico de examen</th><th>Inscripciones</th></tr></thead>
+  <tbody>
+    <tr><td>1ª convocatoria exterior</td><td>Abril–Mayo</td><td>Enero–Febrero</td></tr>
+    <tr><td>2ª convocatoria exterior</td><td>Octubre–Noviembre</td><td>Julio–Agosto</td></tr>
+  </tbody>
+</table>
+<p>⚠️ Las fechas exactas cambian cada año. Consulta siempre el sitio oficial: <strong>www.topik.go.kr</strong>. El Ministerio de Educación de Corea publica el calendario global generalmente entre enero y febrero de cada año.</p>
+
+<h2>¿Dónde se presenta el TOPIK en Colombia?</h2>
+<p>Colombia tiene centros autorizados del TOPIK principalmente en <strong>Bogotá</strong> (usualmente en la Embajada de Corea del Sur o en centros culturales asociados). Ocasionalmente se abre un centro en Medellín. Si estás fuera de estas ciudades, tienes dos opciones:</p>
+<ol>
+  <li><strong>Desplazarte a Bogotá</strong>: el costo del examen (aproximadamente $80.000–$150.000 COP según el nivel y el año) justifica el viaje si ya tienes nivel suficiente.</li>
+  <li><strong>Presentarlo en otro país de la región</strong>: Chile, Argentina, México y Brasil tienen más convocatorias y más centros autorizados. Algunos estudiantes combinan el examen con un viaje.</li>
+</ol>
+
+<h2>Cómo inscribirse al TOPIK paso a paso</h2>
+<ol>
+  <li>Ve a <strong>www.topik.go.kr</strong> y selecciona "Overseas" en el menú de registro.</li>
+  <li>Crea una cuenta con tu email. Necesitarás una foto en formato específico.</li>
+  <li>Selecciona el país (Colombia), el centro de aplicación y la fecha.</li>
+  <li>Paga la tarifa de inscripción (generalmente entre $20.000 y $80.000 COP equivalente, pero varía cada año).</li>
+  <li>Descarga tu comprobante de inscripción y llévalo el día del examen junto con tu cédula o pasaporte.</li>
+</ol>
+<p>El sitio web del TOPIK está en coreano e inglés. Si tienes dificultades con el proceso, el Centro Cultural Coreano en Bogotá puede orientarte.</p>
+
+<h2>¿Cuánto cuesta el TOPIK en Colombia?</h2>
+<p>El costo varía anualmente. Históricamente ha estado entre 20 y 50 USD por convocatoria para el exterior. Consulta la tarifa actualizada directamente en la plataforma de inscripción. Recuerda que el TOPIK no tiene fecha de vencimiento — una vez obtienes tu nivel, el certificado es permanente.</p>
+
+<h2>Cómo prepararte para el TOPIK desde Colombia</h2>
+<p>La preparación para el TOPIK I requiere mínimo 3–6 meses de estudio para alguien que parte de cero. Para el TOPIK II (Nivel 3+), espera 12 o más meses si empiezas sin base. Los puntos críticos son: vocabulario TOPIK (hay listas específicas para cada nivel), comprensión auditiva de velocidad media-rápida, y lectura de textos formales y periodísticos en coreano.</p>
+<p>En WeLearn usamos el <a href="/metodo">método de 17 pasos</a> diseñado específicamente para hispanohablantes, con énfasis en Hangul, gramática estructurada y preparación para el TOPIK. La primera clase de diagnóstico es gratis: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOPIK%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-coreano">nuestra página de coreano</a>.</p>
+<p>Lee también: <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a> y <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave que necesitas conocer</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
