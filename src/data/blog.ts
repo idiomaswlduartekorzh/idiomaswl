@@ -4473,6 +4473,193 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/ingles-para-trabajo-remoto-empleadores-globales">Inglés para trabajo remoto: lo que buscan los empleadores globales</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
     `,
   },
+  // ── Article 61 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-migrar-a-nueva-zelanda-ielts',
+    title: 'Migrar a Nueva Zelanda: puntaje IELTS requerido y tipos de visa en 2026',
+    description:
+      'Guía completa para colombianos que quieren migrar a Nueva Zelanda: qué puntaje IELTS necesitas, tipos de visa disponibles (Skilled Migrant, Working Holiday, Global Impact), costos y cómo prepararte.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Migración',
+    tags: ['migrar a Nueva Zelanda Colombia IELTS', 'visa Nueva Zelanda colombianos 2026', 'IELTS puntaje mínimo Nueva Zelanda', 'Skilled Migrant Nueva Zelanda requisitos', 'working holiday visa Nueva Zelanda Colombia'],
+    body: `
+<h2>¿Por qué Nueva Zelanda para colombianos?</h2>
+<p>Nueva Zelanda es consistentemente uno de los países más vivibles del mundo y ha construido uno de los sistemas de inmigración más claros y accesibles para profesionales calificados. A diferencia de Canadá (con Express Entry muy competitivo) o Australia (con costos de vida más altos), Nueva Zelanda tiene puntos a favor específicos: menor competencia en la cola de inmigración, calidad de vida excepcional (especialmente fuera de Auckland), y un mercado laboral con escasez de profesionales en salud, ingeniería, IT y construcción.</p>
+<p>Colombia tiene vuelos directos a Auckland vía Bogotá-Miami-Auckland o Bogotá-Lima-Auckland, y la comunidad colombiana en NZ ha crecido significativamente desde 2018.</p>
+
+<h2>Tipos de visa para colombianos que quieren vivir en Nueva Zelanda</h2>
+<table>
+  <thead><tr><th>Tipo de visa</th><th>Para quién</th><th>Requisito de inglés</th><th>Duración</th></tr></thead>
+  <tbody>
+    <tr><td>Working Holiday Visa</td><td>18–30 años (hasta 35 desde 2023)</td><td>IELTS 5.0 o equivalente</td><td>12 meses (renovable 1 vez)</td></tr>
+    <tr><td>Skilled Migrant Category Resident Visa</td><td>Profesionales calificados con oferta de trabajo</td><td>IELTS 6.5 overall (6.0 por sección)</td><td>Residencia permanente</td></tr>
+    <tr><td>Accredited Employer Work Visa (AEWV)</td><td>Trabajadores con empleador acreditado en NZ</td><td>IELTS 5.0 básico (6.5 para profesiones reguladas)</td><td>Hasta 5 años</td></tr>
+    <tr><td>Visa de estudiante</td><td>Estudiantes en instituciones neozelandesas</td><td>IELTS 5.5–6.5 (según institución)</td><td>Duración del programa</td></tr>
+    <tr><td>Global Impact Visa (Edmund Hillary)</td><td>Innovadores y emprendedores de alto impacto</td><td>No hay requisito de IELTS explícito</td><td>28 meses</td></tr>
+  </tbody>
+</table>
+
+<h2>IELTS requerido según el tipo de residencia en NZ</h2>
+<p>Immigration New Zealand (INZ) usa el IELTS como el estándar principal para acreditar dominio del inglés. Los puntajes mínimos requeridos son:</p>
+<ul>
+  <li><strong>Residencia permanente (Skilled Migrant)</strong>: IELTS 6.5 overall, con no menos de 6.0 en cada sección (Reading, Listening, Writing, Speaking)</li>
+  <li><strong>Profesiones reguladas</strong> (médicos, enfermeras, abogados, contadores): IELTS 7.0+ en cada sección, dependiendo del colegio profesional</li>
+  <li><strong>Working Holiday</strong>: IELTS 5.0 o certificado de una institución de habla inglesa. Algunas posiciones laborales pueden pedir más</li>
+  <li><strong>AEWV</strong>: IELTS 5.0 para roles no especializados; hasta 6.5 para roles técnicos o de liderazgo</li>
+</ul>
+<p>Nueva Zelanda también acepta Cambridge English, PTE Academic y TOEFL iBT como alternativas al IELTS.</p>
+
+<h2>Sectores más demandados en Nueva Zelanda para colombianos</h2>
+<table>
+  <thead><tr><th>Sector</th><th>Roles más buscados</th><th>IELTS recomendado</th></tr></thead>
+  <tbody>
+    <tr><td>Salud</td><td>Enfermeras, médicos, fisioterapeutas</td><td>7.0+ (cada sección)</td></tr>
+    <tr><td>IT / Tecnología</td><td>Desarrolladores, ingenieros de datos, UX</td><td>6.5</td></tr>
+    <tr><td>Ingeniería</td><td>Civil, mecánica, eléctrica</td><td>6.5</td></tr>
+    <tr><td>Construcción</td><td>Electricistas, plomeros, carpinteros</td><td>5.0–6.0</td></tr>
+    <tr><td>Educación</td><td>Docentes de primaria y secundaria</td><td>7.5 (Teaching Council NZ)</td></tr>
+    <tr><td>Agricultura</td><td>Técnicos agrícolas, trabajadores rurales</td><td>5.0–5.5</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuánto tiempo necesitas para preparar el IELTS para NZ?</h2>
+<p>Para un IELTS 6.5 (residencia permanente), un candidato con nivel B2 real necesita típicamente 8–16 semanas de preparación intensiva. El foco debe estar en Writing y Speaking, las secciones donde los candidatos hispanohablantes suelen perder más puntos.</p>
+
+<h2>WeLearn y la preparación IELTS para Nueva Zelanda</h2>
+<p>En WeLearn preparamos para el IELTS Academic y General Training con tutores especializados. Conocemos los requisitos específicos de Immigration New Zealand y diseñamos el plan según tu objetivo de visa. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20migrar%20a%20Nueva%20Zelanda%20y%20quiero%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>Lee también: <a href="/blog/migrar-a-australia-con-ielts">Migrar a Australia con IELTS: puntajes mínimos y tipos de visa</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: requisitos de inglés para residencia permanente</a>.</p>
+    `,
+  },
+  // ── Article 62 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'delf-cual-nivel-necesitas-y-para-que-sirve',
+    title: 'DELF y DALF: cuál nivel necesitas según tu objetivo real en 2026',
+    description:
+      'Guía práctica del DELF y DALF para colombianos: qué nivel necesitas para trabajar en Francia, estudiar en Quebec, o hacer la Alianza Francesa, y cuál es la diferencia entre DELF y DALF.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Francés',
+    tags: ['DELF cuál nivel necesito Colombia', 'DELF A2 B1 B2 para qué sirve', 'DALF C1 para universidades francesas', 'diferencia DELF DALF Colombia', 'DELF para visa Francia colombianos'],
+    body: `
+<h2>DELF vs DALF: ¿cuál es la diferencia?</h2>
+<p>El DELF (Diplôme d'Études en Langue Française) y el DALF (Diplôme Approfondi de Langue Française) son las certificaciones oficiales de francés del Ministerio de Educación Nacional de Francia. Son las únicas certificaciones de francés como lengua extranjera emitidas directamente por el gobierno francés y reconocidas internacionalmente sin fecha de vencimiento.</p>
+<table>
+  <thead><tr><th>Certificación</th><th>Niveles</th><th>Para quién</th></tr></thead>
+  <tbody>
+    <tr><td>DELF</td><td>A1, A2, B1, B2</td><td>Usuarios básicos e intermedios del francés</td></tr>
+    <tr><td>DALF</td><td>C1, C2</td><td>Usuarios avanzados — acceso a universidades, profesionales</td></tr>
+  </tbody>
+</table>
+<p>Cada nivel es independiente: puedes tener el DELF B1 sin tener el A1 o A2. Tampoco es necesario presentarlos en orden.</p>
+
+<h2>Qué nivel de DELF necesitas según tu objetivo</h2>
+<table>
+  <thead><tr><th>Objetivo</th><th>Nivel mínimo recomendado</th><th>Notas</th></tr></thead>
+  <tbody>
+    <tr><td>Residencia en Francia (visa de reagrupación familiar)</td><td>DELF A2</td><td>Exigido formalmente para algunas visas de larga duración</td></tr>
+    <tr><td>Trabajar en Francia como empleado calificado</td><td>DELF B1–B2</td><td>B2 para roles con interacción con clientes o pacientes</td></tr>
+    <tr><td>Estudiar en universidades francesas (pregrado)</td><td>DALF C1</td><td>La mayoría de universidades francesas exigen C1 o TCF equivalente</td></tr>
+    <tr><td>Trabajar como médico/enfermera en Francia</td><td>DALF C1 + prueba específica del Consejo de la Orden</td><td>Similar al Fachsprachprüfung en Alemania</td></tr>
+    <tr><td>Inmigrar a Quebec (Express Entry)</td><td>TCF Canadá B2 equivalente</td><td>El DELF B2 no se usa directamente — se usa el TCF Canadá</td></tr>
+    <tr><td>Citizenship en Francia (naturalización)</td><td>DELF B1 mínimo</td><td>Requerimiento desde 2012</td></tr>
+    <tr><td>Acreditación académica / CV profesional</td><td>DELF B2</td><td>El nivel reconocido como "dominio funcional" del francés</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué evalúa cada nivel del DELF?</h2>
+<ul>
+  <li><strong>DELF A1</strong>: comprensión y producción oral y escrita muy básica. Vocabulario de supervivencia. Duración: ~2h10min.</li>
+  <li><strong>DELF A2</strong>: intercambio de información sobre rutina diaria, entorno inmediato. Duración: ~2h30min.</li>
+  <li><strong>DELF B1</strong>: interacción fluida sobre temas familiares, capacidad de dar opiniones. Duración: ~2h50min. El más popular para objetivos migratorios.</li>
+  <li><strong>DELF B2</strong>: participar activamente en debates, textos complejos, argumentación. Duración: ~2h30min. El más valorado laboralmente.</li>
+  <li><strong>DALF C1</strong>: textos académicos complejos, producción oral muy fluida. Duración: ~3h30min. Obligatorio para universidades francesas.</li>
+  <li><strong>DALF C2</strong>: dominio casi nativo. Síntesis de múltiples textos complejos, argumentación sofisticada. Duración: ~4h.</li>
+</ul>
+
+<h2>¿Cuánto cuesta el DELF en Colombia?</h2>
+<p>El DELF se presenta en la Alianza Francesa de cada ciudad. Los costos aproximados (varían por ciudad y nivel) son:</p>
+<table>
+  <thead><tr><th>Nivel</th><th>Costo aproximado (COP)</th></tr></thead>
+  <tbody>
+    <tr><td>DELF A1</td><td>$300.000–$400.000</td></tr>
+    <tr><td>DELF A2</td><td>$320.000–$420.000</td></tr>
+    <tr><td>DELF B1</td><td>$380.000–$500.000</td></tr>
+    <tr><td>DELF B2</td><td>$420.000–$550.000</td></tr>
+    <tr><td>DALF C1</td><td>$500.000–$650.000</td></tr>
+    <tr><td>DALF C2</td><td>$520.000–$700.000</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuánto tiempo necesitas para cada nivel de DELF?</h2>
+<table>
+  <thead><tr><th>Meta</th><th>Tiempo estimado (desde cero, 2 clases/semana)</th></tr></thead>
+  <tbody>
+    <tr><td>DELF A2</td><td>5–8 meses</td></tr>
+    <tr><td>DELF B1</td><td>10–16 meses</td></tr>
+    <tr><td>DELF B2</td><td>18–26 meses</td></tr>
+    <tr><td>DALF C1</td><td>26–38 meses</td></tr>
+  </tbody>
+</table>
+
+<h2>WeLearn y la preparación DELF/DALF</h2>
+<p>En WeLearn preparamos para el DELF B1, B2 y DALF C1 con tutores especializados en francés para colombianos. El plan se adapta a tu nivel inicial y tu fecha de examen. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20DELF%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-frances">nuestra página de francés</a>.</p>
+<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa de preparación para colombianos</a> y <a href="/blog/tcf-canada-frances-para-inmigrar-a-quebec">TCF Canadá: el examen de francés para inmigrar a Quebec</a>.</p>
+    `,
+  },
+  // ── Article 63 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-dos-idiomas-a-la-vez-es-posible',
+    title: '¿Se pueden aprender dos idiomas a la vez? Lo que dice la ciencia',
+    description:
+      'Guía basada en evidencia sobre si es posible aprender dos idiomas simultáneamente: cuándo tiene sentido, cuándo no, y cómo organizar el estudio si quieres aprender dos idiomas al mismo tiempo.',
+    date: '2026-05-30',
+    readTime: 6,
+    category: 'Método',
+    tags: ['aprender dos idiomas a la vez', 'aprender dos idiomas simultáneamente Colombia', 'inglés y coreano a la vez', 'multilingüismo estrategia aprendizaje', 'cuántos idiomas aprender a la vez'],
+    body: `
+<h2>La pregunta que muchos se hacen</h2>
+<p>¿Puedo aprender inglés y coreano al mismo tiempo? ¿O inglés y portugués? ¿O francés y alemán? Es una de las preguntas más frecuentes que recibimos en WeLearn, especialmente de estudiantes que tienen dos objetivos urgentes: por ejemplo, necesitan el IELTS para una universidad y también quieren aprender coreano porque les gusta el K-pop.</p>
+<p>La respuesta honesta es: depende. Y las condiciones en que "sí" o "no" tienen mucho que ver con tu nivel actual, tu tiempo disponible, y cuán similares son los dos idiomas.</p>
+
+<h2>Lo que la ciencia dice sobre el aprendizaje de múltiples idiomas</h2>
+<p>La investigación en psicolingüística muestra que el cerebro humano puede procesar y almacenar múltiples idiomas, pero con algunas condiciones:</p>
+<ul>
+  <li><strong>Interferencia léxica</strong>: cuando dos idiomas son similares (ej. español y portugués), el vocabulario de uno interfiere con el otro, especialmente en los primeros meses</li>
+  <li><strong>Carga cognitiva</strong>: aprender dos idiomas desde cero simultáneamente divide los recursos cognitivos disponibles y puede ralentizar el progreso en ambos</li>
+  <li><strong>Ventaja del multilingüismo previo</strong>: si ya hablas más de dos idiomas, añadir un tercero o cuarto es significativamente más fácil</li>
+  <li><strong>El rol de la proficiencia base</strong>: si uno de los dos idiomas ya está en nivel B1+, aprenderlo no requiere tanto esfuerzo cognitivo y puedes dedicar más recursos al nuevo</li>
+</ul>
+
+<h2>¿Cuándo SÍ tiene sentido aprender dos idiomas a la vez?</h2>
+<table>
+  <thead><tr><th>Situación</th><th>¿Es viable?</th><th>Estrategia recomendada</th></tr></thead>
+  <tbody>
+    <tr><td>Tienes B1 en uno y empiezas el otro desde cero</td><td>✅ Sí, con estructura</td><td>2–3 clases/sem del nuevo + mantenimiento del actual</td></tr>
+    <tr><td>Los dos son completamente diferentes (ej. inglés + coreano)</td><td>✅ Sí, sin interferencia</td><td>Sesiones separadas, días alternos para cada idioma</td></tr>
+    <tr><td>Los dos son similares (ej. portugués + italiano)</td><td>⚠️ Con precaución</td><td>Espera solidificar el nivel B1 en uno antes de iniciar el otro</td></tr>
+    <tr><td>Los dos son desde cero y tienes poco tiempo</td><td>❌ No recomendado</td><td>Prioriza el más urgente, añade el segundo cuando llegues a A2</td></tr>
+    <tr><td>Uno es para examen urgente (IELTS en 3 meses)</td><td>❌ No para el segundo</td><td>Enfócate en el examen, el otro idioma puede esperar</td></tr>
+  </tbody>
+</table>
+
+<h2>Cómo organizar el estudio si quieres aprender dos idiomas</h2>
+<ol>
+  <li><strong>Alterna días, no horas</strong>: estudiar un idioma lunes, miércoles, viernes y el otro martes, jueves, sábado evita la mezcla de memorias que ocurre cuando cambias de idioma varias veces en el mismo día.</li>
+  <li><strong>Ten un objetivo claro para cada uno</strong>: "Quiero llegar a B2 en inglés para el IELTS" y "Quiero llegar a A2 en coreano para una visita a Corea". Objetivos claros evitan que uno de los dos se abandone.</li>
+  <li><strong>Reduce el input pasivo por idioma</strong>: el 70% del aprendizaje es input (lectura, escucha). Alterna los idiomas en tu consumo de contenido: K-dramas para el coreano, podcasts en inglés para el inglés.</li>
+  <li><strong>Haz seguimiento separado del progreso</strong>: llevar un diario o registro de vocabulario por idioma evita mezclarlos en la memoria de trabajo.</li>
+</ol>
+
+<h2>El caso de inglés + coreano: la combinación más popular en WeLearn</h2>
+<p>La combinación inglés + coreano es especialmente viable porque los dos idiomas son completamente diferentes en estructura, vocabulario y escritura. No hay interferencia léxica. El inglés (alfabeto latino) y el coreano (Hangul, sistema silábico) usan sistemas de escritura distintos, lo que además ayuda al cerebro a mantenerlos separados.</p>
+<p>En WeLearn tenemos estudiantes que llevan clases de inglés para el IELTS y al mismo tiempo están en el método de coreano. Lo que funciona: clases de inglés 2 veces por semana + clases de coreano 1 vez por semana. Con práctica autónoma de 20–30 min diarios por idioma, el progreso en ambos es real.</p>
+
+<h2>WeLearn y el aprendizaje de múltiples idiomas</h2>
+<p>Si tienes dos objetivos de idioma, el primer paso es una sesión de diagnóstico donde definimos cuál es tu nivel real en cada uno y qué plan tiene más sentido según tu tiempo disponible. Primera clase de diagnóstico gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20dos%20idiomas%20a%20la%20vez%20y%20quisiera%20que%20me%20orienten%20sobre%20cómo%20hacerlo." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-idiomas">nuestra página de idiomas</a>.</p>
+<p>Lee también: <a href="/blog/como-aprender-un-idioma-mas-rapido">Cómo aprender un idioma más rápido: lo que dice la ciencia</a> y <a href="/blog/aprender-idiomas-con-series-y-peliculas">Aprender idiomas con series y películas: lo que funciona</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
