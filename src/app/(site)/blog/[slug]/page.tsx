@@ -83,11 +83,11 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLinkLabel: 'Ver clases de coreano',
   },
   Alemán: {
-    title: '¿Quieres prepararte para el Goethe?',
-    desc: 'Te ayudamos a preparar el Goethe-Zertifikat desde Colombia. Plan personalizado según tu nivel y meta.',
-    msg: 'Hola, leí el artículo de WeLearn sobre el Goethe-Zertifikat y quiero saber más sobre las clases de alemán.',
-    pageLink: '/examenes/goethe',
-    pageLinkLabel: 'Ver simulacros de Goethe',
+    title: '¿Quieres aprender alemán o preparar el Goethe?',
+    desc: 'Clases de alemán online con tutor especializado. Preparamos Goethe A1 hasta C1 con plan personalizado según tu nivel y objetivo.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el alemán y quiero saber más sobre las clases de alemán.',
+    pageLink: '/clases-de-aleman',
+    pageLinkLabel: 'Ver clases de alemán',
   },
   Portugués: {
     title: '¿Quieres prepararte para el Celpe-Bras?',
@@ -97,11 +97,11 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLinkLabel: 'Ver simulacros de Celpe-Bras',
   },
   Francés: {
-    title: '¿Quieres prepararte para el DELF o DALF?',
-    desc: 'Clases de francés con enfoque en exámenes oficiales. Preparamos DELF A1 hasta DALF C2 con docentes especializados.',
-    msg: 'Hola, leí el artículo de WeLearn sobre el DELF y DALF y quiero saber más sobre las clases de francés.',
-    pageLink: '/examenes/delf-dalf',
-    pageLinkLabel: 'Ver simulacros de DELF',
+    title: '¿Quieres aprender francés o preparar el DELF?',
+    desc: 'Clases de francés online con tutor especializado. Preparamos DELF A1 hasta DALF C2 con plan personalizado según tu nivel y objetivo.',
+    msg: 'Hola, leí el artículo de WeLearn sobre el francés y quiero saber más sobre las clases de francés.',
+    pageLink: '/clases-de-frances',
+    pageLinkLabel: 'Ver clases de francés',
   },
   Italiano: {
     title: '¿Quieres prepararte para el CILS o CELI?',

@@ -22,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── High-intent landing pages ──────────────────────────────────────────────
     { url: `${BASE}/clases-de-ingles`,     lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE}/clases-de-coreano`,    lastModified: now, changeFrequency: 'monthly', priority: 0.92 },
+    { url: `${BASE}/clases-de-frances`,    lastModified: now, changeFrequency: 'monthly', priority: 0.88 },
+    { url: `${BASE}/clases-de-aleman`,     lastModified: now, changeFrequency: 'monthly', priority: 0.88 },
     { url: `${BASE}/preparacion-icfes`,    lastModified: now, changeFrequency: 'monthly', priority: 0.9  },
     { url: `${BASE}/miembro-fundador`,     lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
 
