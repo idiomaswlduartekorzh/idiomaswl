@@ -53,9 +53,9 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano', slug: 'cils-celi-certificacion-italiano-colombia' },
   ],
   portugues: [
+    { cat: 'Portugués', color: '#166534', title: '¿Cuánto cuesta aprender portugués en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-portugues-colombia-2026' },
     { cat: 'Portugués', color: '#166534', title: 'Clases de portugués online en Colombia: guía para elegir bien', slug: 'clases-de-portugues-online-colombia' },
     { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
-    { cat: 'Método',    color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
   ],
 };
 

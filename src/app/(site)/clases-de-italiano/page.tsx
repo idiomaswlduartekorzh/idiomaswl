@@ -165,9 +165,9 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Italiano', color: '#009246', title: '¿Cuánto cuesta aprender italiano en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-italiano-colombia-2026' },
   { cat: 'Italiano', color: '#009246', title: 'Clases de italiano online en Colombia: guía para elegir bien', slug: 'clases-de-italiano-online-colombia' },
   { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia', slug: 'cils-celi-certificacion-italiano-colombia' },
-  { cat: 'Método',   color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
 ];
 
 const WaIcon = () => (

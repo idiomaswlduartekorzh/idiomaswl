@@ -202,9 +202,9 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Alemán', color: '#1a2ecc', title: '¿Cuánto cuesta aprender alemán en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-aleman-colombia-2026' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Clases de alemán online en Colombia: guía para elegir bien', slug: 'clases-de-aleman-online-colombia' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
-  { cat: 'Método', color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
 ];
 
 const WaIcon = () => (

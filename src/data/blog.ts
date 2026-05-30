@@ -3666,6 +3666,53 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano</a> y <a href="/blog/cuanto-cuesta-aprender-coreano-colombia-2026">¿Cuánto cuesta aprender coreano en Colombia en 2026?</a>.</p>
     `,
   },
+  // ── Article 48 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-portugues-colombia-2026',
+    title: '¿Cuánto cuesta aprender portugués en Colombia en 2026? Guía de precios',
+    description:
+      'Precios reales de clases de portugués en Colombia en 2026: apps, recursos gratuitos, tutores online y preparación Celpe-Bras. Cuánto invertir para cada nivel y qué opción ofrece el mejor costo-beneficio para colombianos.',
+    date: '2026-05-30',
+    readTime: 5,
+    category: 'Portugués',
+    tags: ['cuánto cuesta aprender portugués Colombia', 'precio clases de portugués Colombia', 'Celpe-Bras preparación costo Colombia', 'portugués brasileño clases online Colombia', 'aprender portugués hispanohablantes'],
+    body: `
+<h2>¿Por qué más colombianos estudian portugués en 2026?</h2>
+<p>Brasil es el socio comercial más importante de Colombia en América del Sur, y el portugués brasileño abre puertas en comercio exterior, manufactura, tecnología (São Paulo es el Silicon Valley de Latinoamérica) y la academia (varias de las mejores universidades de la región son brasileñas). Para hispanohablantes, el portugués es uno de los idiomas más accesibles del mundo: comparte entre el 70% y el 80% del vocabulario con el español, y hablantes de español suelen alcanzar un nivel conversacional básico en 3 a 5 meses de estudio consistente.</p>
+
+<h2>Cuánto cuesta aprender portugués: comparación de opciones</h2>
+<table>
+  <thead><tr><th>Opción</th><th>Costo mensual (COP)</th><th>Pros</th><th>Contras</th></tr></thead>
+  <tbody>
+    <tr><td>Apps (Duolingo, Babbel)</td><td>$0–$60.000</td><td>Vocabulario básico, flexible</td><td>No sirve para Celpe-Bras, sin gramática estructurada</td></tr>
+    <tr><td>YouTube / recursos gratuitos</td><td>$0</td><td>Contenido nativo abundante</td><td>Sin estructura ni feedback de pronunciación</td></tr>
+    <tr><td>Academia grupal presencial</td><td>$150.000–$350.000</td><td>Ambiente social</td><td>Poco tiempo de speaking, ritmo fijo, no especializado en Celpe-Bras</td></tr>
+    <tr><td>Academia grupal online</td><td>$100.000–$250.000</td><td>Asequible</td><td>Sin personalización, grupos grandes</td></tr>
+    <tr><td>Tutor particular online (1:1)</td><td>$180.000–$450.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep Celpe-Bras, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+  </tbody>
+</table>
+
+<h2>Inversión total por nivel para el Celpe-Bras</h2>
+<table>
+  <thead><tr><th>Meta</th><th>Inversión total estimada</th><th>Tiempo con WeLearn (2 clases/semana)</th></tr></thead>
+  <tbody>
+    <tr><td>Conversacional básico (B1 equivalente)</td><td>$1,5M–$3M COP</td><td>3–5 meses</td></tr>
+    <tr><td>Celpe-Bras Intermediário</td><td>$3M–$6M COP</td><td>6–10 meses</td></tr>
+    <tr><td>Celpe-Bras Intermediário Superior</td><td>$5M–$10M COP</td><td>10–16 meses</td></tr>
+    <tr><td>Celpe-Bras Superior</td><td>$8M–$15M COP</td><td>16–24 meses</td></tr>
+  </tbody>
+</table>
+<p>El examen Celpe-Bras es gratuito si eres estudiante de una universidad partner en Colombia. Para candidatos externos, el costo depende del centro de aplicación; en Colombia suele oscilar entre $150.000 y $300.000 COP. El certificado no tiene fecha de vencimiento y es reconocido por todas las universidades y empresas de Brasil como certificación oficial de dominio del portugués como lengua extranjera.</p>
+
+<h2>Ventaja de ser hispanohablante</h2>
+<p>Para colombianos, el portugués tiene una curva de aprendizaje mucho más amable que el alemán, el coreano o el inglés. La gramática es similar, la pronunciación es asequible y el vocabulario compartido elimina la mayor barrera del aprendizaje de idiomas. Esto significa que la inversión total en tiempo y dinero para alcanzar el nivel Intermediário del Celpe-Bras es considerablemente menor que para certificaciones equivalentes en otros idiomas.</p>
+
+<h2>WeLearn y las clases de portugués</h2>
+<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. El proceso empieza con una sesión de diagnóstico gratuita para ubicar tu nivel real. Desde $180.000 COP/mes para el plan Preparación (4 clases de 1 hora). <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20portugu%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
+<p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/cuanto-cuesta-aprender-frances-colombia-2026">¿Cuánto cuesta aprender francés en Colombia en 2026?</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

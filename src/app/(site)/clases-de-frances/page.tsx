@@ -199,9 +199,9 @@ const FAQS = [
 ];
 
 const BLOG_POSTS = [
+  { cat: 'Francés', color: '#1a2ecc', title: '¿Cuánto cuesta aprender francés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-frances-colombia-2026' },
   { cat: 'Francés', color: '#1a2ecc', title: 'Clases de francés online en Colombia: guía para elegir bien', slug: 'clases-de-frances-online-colombia' },
   { cat: 'Francés', color: '#1a2ecc', title: 'DELF y DALF: la guía completa para colombianos', slug: 'delf-dalf-guia-preparacion-colombianos' },
-  { cat: 'Método',  color: '#7c3aed', title: 'Cómo aprender un idioma más rápido: lo que dice la ciencia', slug: 'como-aprender-un-idioma-mas-rapido' },
 ];
 
 // WhatsApp SVG icon
