@@ -179,7 +179,7 @@ const NAV: { group: string; items: { label: string; href: string; icon: ReactNod
     items: [
       { label: 'Inicio',          href: '/dashboard/student', icon: IC.grid,        active: true  },
       { label: 'Mis exámenes',    href: '/examenes',          icon: IC.clipboard,   active: false },
-      { label: 'Mi progreso',     href: '#',                  icon: IC.trendingUp,  active: false },
+      { label: 'Mi progreso',     href: '/dashboard/student/progreso', icon: IC.trendingUp, active: false },
     ],
   },
   {
