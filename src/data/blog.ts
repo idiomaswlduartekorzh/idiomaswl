@@ -106,7 +106,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>¿Cuándo es momento de tomar clases?</h2>
 <p>El autodidacta puede llegar a Band 6.5 con recursos gratuitos y disciplina. Para dar el salto de 6.5 a 7.0 (o de 7.0 a 7.5), el cuello de botella suele ser Writing y Speaking — y ahí un tutor que da retroalimentación real sobre tus textos y grabaciones marca la diferencia.</p>
 <p>La razón: los errores que te tienen estancado en 6.5 suelen ser puntos ciegos que tú no ves porque llevas semanas mirando el mismo tipo de respuesta. Un evaluador externo los ve en segundos. Si estás en esa etapa, puedes <a href="/clases-de-ingles">conocer cómo trabajamos el IELTS en WeLearn</a> o hacer un simulacro gratuito para ver dónde estás exactamente.</p>
-<p>Lee también: <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses: plan semana a semana</a> y <a href="/blog/ielts-writing-task-2-como-mejorar-el-band">IELTS Writing Task 2: cómo mejorar el Band en el ensayo argumentativo</a>.</p>
+<p>Lee también: <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses: plan semana a semana</a>, <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar Band 7</a> y <a href="/blog/ielts-speaking-como-preparar-las-3-partes">IELTS Speaking: cómo preparar las 3 partes</a>.</p>
     `,
   },
 
@@ -1187,7 +1187,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>La preparación autodidacta con este plan es posible si tienes disciplina y experiencia evaluando tu propio trabajo. El mayor riesgo de la preparación solo es el Writing: la autocorrección tiene un límite claro porque no puedes detectar los errores que cometes sistemáticamente — precisamente porque los cometes sin notarlos.</p>
 <p>Un tutor con experiencia en IELTS acelera significativamente la preparación en Writing y Speaking porque puede darte retroalimentación específica que tú solo no puedes generarte. En WeLearn, la preparación para IELTS es 1:1 con tutor asignado — la clase de diagnóstico gratis te permite evaluar el nivel, decidir el plan y empezar a prepararte con dirección clara.</p>
 <p>Si quieres agendar tu diagnóstico gratuito o tienes preguntas sobre la preparación, puedes hacerlo por <a href="/clases-de-ingles">nuestra página de clases de inglés</a>.</p>
-<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/ielts-writing-task-2-como-mejorar-el-band">IELTS Writing Task 2: cómo mejorar el Band en el ensayo argumentativo</a>.</p>
+<p>Lee también: <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar Band 7</a>, <a href="/blog/ielts-speaking-como-preparar-las-3-partes">IELTS Speaking: cómo preparar las 3 partes</a> y <a href="/blog/ielts-writing-task-2-como-mejorar-el-band">IELTS Writing Task 2: cómo mejorar el Band en el ensayo argumentativo</a>.</p>
     `,
   },
   {
@@ -2504,7 +2504,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Cómo practicar IELTS Listening efectivamente</h2>
 <p>En WeLearn trabajamos el Listening con simulacros cronometrados en condiciones reales, análisis de errores post-test y práctica de distractor recognition. Si quieres prepararte con acompañamiento real, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20IELTS%20Listening%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
-<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía completa de preparación</a>.</p>
+<p>Lee también: <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar Band 7</a>, <a href="/blog/ielts-speaking-como-preparar-las-3-partes">IELTS Speaking: cómo preparar las 3 partes</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía completa de preparación</a>.</p>
     `,
   },
 
@@ -2756,6 +2756,230 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <p>En WeLearn hemos acompañado a colombianos que preparan su migración a España con inglés orientado a sus objetivos laborales específicos. Si estás en ese proceso, <a href="https://wa.me/573005004253?text=Hola%2C%20voy%20a%20migrar%20a%20Espa%C3%B1a%20y%20quiero%20mejorar%20mi%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> para un diagnóstico gratuito.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">qué significa cada nivel de inglés</a>.</p>
+    `,
+  },
+
+  // ── Article 36 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-reading-estrategias-para-band-7',
+    title: 'IELTS Reading: estrategias para alcanzar Band 7 sin leer todo el texto',
+    description:
+      'Guía completa de estrategias para el IELTS Reading: los 5 tipos de pregunta más difíciles, cómo gestionar el tiempo y los errores que bajan el Band en hispanohablantes.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'IELTS',
+    tags: ['IELTS Reading', 'IELTS Band 7', 'True False Not Given', 'Matching Headings', 'IELTS Colombia', 'estrategias IELTS'],
+    body: `
+<h2>El error número uno en el IELTS Reading</h2>
+<p>La mayoría de hispanohablantes entra al IELTS Reading con la misma estrategia que usa para leer en español: empezar por el principio y leer cada palabra. En español eso funciona porque llevas décadas haciéndolo. En inglés bajo presión de tiempo, es una trampa que destruye el puntaje.</p>
+<p>El IELTS Reading te da 60 minutos para 3 textos académicos (aprox. 900 palabras cada uno) y 40 preguntas. No hay tiempo para leer todo. Los candidatos que logran Band 7 no son necesariamente mejores lectores — son mejores estrategas.</p>
+
+<h2>Cómo está estructurado el IELTS Academic Reading</h2>
+<p>Los tres textos del IELTS Academic vienen de revistas académicas, periódicos de calidad o libros de no ficción. Su nivel corresponde a lo que un estudiante de pregrado anglófono lee regularmente. Los temas son variados: tecnología, historia, ciencias, negocios, sociedad.</p>
+<p>Las 40 preguntas están distribuidas en grupos por tipo. Los tipos más frecuentes son:</p>
+<ul>
+  <li><strong>Multiple Choice (MCQ)</strong>: Elige la mejor respuesta de 4 opciones. Parece fácil; la trampa está en los distractores que usan palabras del texto con significado diferente.</li>
+  <li><strong>True / False / Not Given</strong>: El más problemático para hispanohablantes. Ver la diferencia entre "False" (el texto dice lo contrario) y "Not Given" (el texto no menciona el tema) requiere entrenamiento específico.</li>
+  <li><strong>Matching Headings</strong>: Asociar un título a cada párrafo. Exige captar la idea principal de cada párrafo, no los detalles.</li>
+  <li><strong>Matching Information</strong>: Encontrar en qué párrafo aparece una información específica. Rápido si sabes cómo buscar.</li>
+  <li><strong>Summary / Note / Sentence Completion</strong>: Completar frases o resúmenes con palabras del texto. Exactitud de vocabulario es clave.</li>
+  <li><strong>Short Answer Questions</strong>: Respuestas de máximo 3 palabras tomadas directamente del texto.</li>
+</ul>
+
+<h2>La estrategia de los mejores candidatos: preguntas primero</h2>
+<p>El principio central de una buena estrategia de IELTS Reading es este: <strong>lee las preguntas antes de leer el texto</strong>. Siempre.</p>
+<p>¿Por qué? Porque el texto tiene demasiada información. Tu cerebro no puede retener todo — pero sí puede buscar información específica cuando sabe qué buscar. Al leer las preguntas primero, conviertes la lectura en una búsqueda guiada: sabes qué información es relevante y cuál puedes ignorar.</p>
+
+<p>El proceso paso a paso:</p>
+<ol>
+  <li>Lee el título del texto y el primer párrafo completo (da contexto general, 45 segundos).</li>
+  <li>Lee el primer grupo de preguntas y márcalas con palabras clave.</li>
+  <li>Vuelve al texto y busca solo las palabras clave de las preguntas — escanea, no leas.</li>
+  <li>Cuando encuentres la zona relevante, lee ese párrafo completo para responder.</li>
+  <li>Avanza al siguiente grupo de preguntas antes de leer el siguiente bloque del texto.</li>
+</ol>
+<p>Esta estrategia reduce el tiempo de lectura en un 30-40% sin perder precisión.</p>
+
+<h2>True / False / Not Given: el tipo de pregunta que más baja el Band</h2>
+<p>El True/False/Not Given (o Yes/No/Not Given en algunas versiones) es la fuente de errores más común para hispanohablantes. La trampa: confundir "False" con "Not Given".</p>
+
+<h3>Cómo distinguirlos correctamente</h3>
+<ul>
+  <li><strong>True</strong>: la afirmación está explícita en el texto y coincide con lo que dice.</li>
+  <li><strong>False</strong>: el texto dice lo <em>contrario</em> de la afirmación. No simplemente algo diferente — lo contrario.</li>
+  <li><strong>Not Given</strong>: el texto no toca el tema de la afirmación en absoluto. No está ni a favor ni en contra.</li>
+</ul>
+
+<p>El error clásico: leer una afirmación sobre "los efectos económicos de X" y no encontrar información sobre eso en el texto — y marcar "False" porque el texto habla de efectos sociales, no económicos. La respuesta correcta es "Not Given": el texto no dice nada sobre efectos económicos; no los contradice.</p>
+<p>El criterio definitivo: ¿el texto contradice explícitamente la afirmación? Si la respuesta es sí → False. Si el texto no menciona el tema → Not Given.</p>
+
+<h2>Matching Headings: cómo evitar la trampa de las palabras similares</h2>
+<p>En el Matching Headings, los títulos suelen compartir vocabulario con el párrafo — pero el título incorrecto. El truco de los examinadores es crear títulos que contienen palabras del párrafo pero describen la idea de otro párrafo o un detalle en vez de la idea principal.</p>
+
+<p>La estrategia correcta:</p>
+<ol>
+  <li>Lee el párrafo e identifica la <em>idea central</em> (no los ejemplos, no los detalles).</li>
+  <li>Resume la idea en tus propias palabras en 4-5 palabras antes de ver los títulos.</li>
+  <li>Ahora compara tu resumen con los títulos disponibles — es mucho más fácil encontrar el correcto cuando tienes tu propio resumen.</li>
+  <li>Elimina los que son claramente incorrectos. Con 2-3 opciones restantes, relee el párrafo con cada título en mente.</li>
+</ol>
+
+<h2>Gestión del tiempo: la clave que separa Band 6 de Band 7</h2>
+<p>Muchos candidatos llegan al Texto 3 sin tiempo suficiente porque invirtieron demasiado en el Texto 1 (el más fácil) buscando respuestas perfectas.</p>
+<p>El reparto ideal del tiempo:</p>
+<ul>
+  <li><strong>Texto 1</strong>: 15–18 minutos (el más corto y accesible)</li>
+  <li><strong>Texto 2</strong>: 18–20 minutos (complejidad media)</li>
+  <li><strong>Texto 3</strong>: 20–22 minutos (el más denso académicamente)</li>
+  <li><strong>Revisión</strong>: 2–4 minutos si sobra tiempo</li>
+</ul>
+<p>Si a los 17 minutos no has terminado el Texto 1, marca la mejor respuesta disponible para las preguntas sin responder y avanza. No dejes preguntas en blanco — no hay penalización por respuesta incorrecta.</p>
+
+<h2>Vocabulario académico: el otro cuello de botella</h2>
+<p>El IELTS Academic usa vocabulario de nivel B2-C1. Las preguntas de completion y short answer requieren extraer palabras exactas del texto. El problema: si no reconoces las palabras clave en el texto porque son nuevas para ti, no puedes localizar la zona relevante.</p>
+<p>El Academic Word List (AWL) de Coxhead (570 palabras de alta frecuencia en textos académicos) es la lista más eficiente para preparar. Con las 570 palabras del AWL más las 2.000 más frecuentes del inglés general, reconocerás el 85-90% del vocabulario del IELTS Reading.</p>
+
+<h2>Plan de mejora de 4 semanas específico para Reading</h2>
+<ul>
+  <li><strong>Semana 1</strong>: Diagnóstico. Haz un texto completo del Cambridge IELTS Practice Tests y clasifica cada error por tipo de pregunta. ¿Cuántos TF/NG erraste? ¿Cuántos Matching Headings? Eso define tus 2 semanas siguientes.</li>
+  <li><strong>Semana 2</strong>: Ataque al tipo de pregunta donde más falles. Haz 15–20 preguntas de ese tipo al día, analiza cada error.</li>
+  <li><strong>Semana 3</strong>: Velocidad. Practica el escaneo consciente — busca palabras clave sin leer oraciones completas. Mide tu tiempo por texto.</li>
+  <li><strong>Semana 4</strong>: Simulacros completos. Un texto de Cambridge cada dos días. Mide Band por texto y ajusta la gestión del tiempo según tus resultados.</li>
+</ul>
+
+<h2>Los recursos más confiables para practicar</h2>
+<ul>
+  <li><strong>Cambridge IELTS Practice Tests (Series 1–17)</strong>: los textos más parecidos al examen real. Son la fuente primaria para la práctica.</li>
+  <li><strong>IELTS.org Official Practice Materials</strong>: descarga gratuita de materiales de práctica con claves de respuesta.</li>
+  <li><strong>The Economist / Scientific American</strong>: lectura semanal en inglés académico que construye velocidad y vocabulario.</li>
+  <li><strong>Simulacros WeLearn</strong>: practica reading estilo IELTS con retroalimentación y análisis por tipo de pregunta.</li>
+</ul>
+
+<h2>¿Cuándo se necesita un tutor para Reading?</h2>
+<p>El IELTS Reading es la sección donde más colombianos creen que pueden prepararse solos — y tienen parcialmente razón. Con los recursos correctos y disciplina de análisis de errores, es posible subir de Band 5.5 a 6.5 de forma autónoma.</p>
+<p>El salto de 6.5 a 7.0 es más difícil de hacer solo porque los errores que te tienen en 6.5 suelen ser puntos ciegos: patrones de error que no ves porque llevas semanas practicando el mismo tipo de texto de la misma manera. Un tutor que revisa tu metodología (no solo tus respuestas) puede identificar en dos sesiones lo que tú no has detectado en semanas.</p>
+<p>Si estás en esa etapa y quieres acelerar la preparación, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de IELTS en WeLearn</a>. La primera sesión es de diagnóstico gratuito y incluye una revisión de tus patrones de error en Reading.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía completa de preparación</a> y <a href="/blog/ielts-listening-errores-comunes">IELTS Listening: los 7 errores más comunes y cómo evitarlos</a>.</p>
+    `,
+  },
+
+  // ── Article 37 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-speaking-como-preparar-las-3-partes',
+    title: 'IELTS Speaking: cómo preparar las 3 partes y alcanzar Band 7',
+    description:
+      'Guía práctica para el IELTS Speaking: qué evalúan en cada parte, los errores que más bajan el Band en hispanohablantes y el plan de práctica semana a semana para alcanzar 7.0.',
+    date: '2026-05-30',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['IELTS Speaking', 'IELTS Band 7', 'IELTS Speaking Part 2', 'fluidez inglés', 'IELTS Colombia', 'preparación IELTS'],
+    body: `
+<h2>Por qué el IELTS Speaking es diferente a todo lo que practicaste antes</h2>
+<p>El IELTS Speaking es el único componente del IELTS que se hace cara a cara con un evaluador humano (o por videollamada en el formato Computer-Delivered IELTS). No hay pantalla, no hay opciones múltiples, no hay texto del que tomar palabras. Solo tú y una conversación en inglés de 11 a 14 minutos.</p>
+<p>Para la mayoría de colombianos, eso es lo más intimidante. Y es también la razón por la que Speaking es la sección más subestimada durante la preparación: muchos la dejan para la última semana porque "es solo hablar" — y llegan al examen sin haber hecho ni 10 horas de práctica real.</p>
+<p>La ironía: el Speaking es la sección que más mejora con práctica constante, y la que menos mejora con el estudio pasivo (leer, escuchar, hacer ejercicios de gramática).</p>
+
+<h2>Cómo se califica el IELTS Speaking: los 4 criterios</h2>
+<p>El evaluador califica con cuatro criterios de igual peso (25% cada uno):</p>
+<ul>
+  <li><strong>Fluency and Coherence (Fluidez y coherencia)</strong>: ¿hablas con continuidad? ¿las ideas están organizadas? No es hablar sin pausas — es no quedarse bloqueado y organizar las ideas con lógica.</li>
+  <li><strong>Lexical Resource (Recursos léxicos)</strong>: ¿usas vocabulario variado y preciso? ¿evitas repetir las mismas palabras? El evaluador nota si siempre usas "good" cuando podrías usar "effective", "valuable" o "rewarding".</li>
+  <li><strong>Grammatical Range and Accuracy (Variedad y precisión gramatical)</strong>: ¿usas estructuras variadas? ¿cometes errores que dificultan la comprensión? Algunos errores son aceptables; los que generan ambigüedad bajan el Band.</li>
+  <li><strong>Pronunciation</strong>: ¿se entiende lo que dices? No es acento británico ni americano — es inteligibilidad. Un colombiano con acento fuerte puede lograr Band 7 si es consistente y claro.</li>
+</ul>
+<p>Clave: los criterios no se compensan entre sí de forma directa. Si tienes Lexical Resource Band 8 pero Fluency Band 5, tu promedio no sube a 6.5 — el evaluador pondera la imagen global de la conversación.</p>
+
+<h2>Las 3 partes del IELTS Speaking</h2>
+
+<h3>Part 1: Conversación personal (4–5 minutos)</h3>
+<p>El evaluador hace preguntas sobre temas familiares: tu trabajo o estudios, tu ciudad, hobbies, rutinas diarias. Las preguntas son predecibles — los temas rotan entre un conjunto estable.</p>
+<p>El error más común: respuestas de una o dos palabras. "Do you like cooking?" → "Yes, I do." → Band 4.</p>
+<p>La respuesta correcta extiende, explica y ejemplifica: "Yes, I actually enjoy cooking quite a bit. I find it relaxing after a long day at work — there's something meditative about following a recipe carefully. Lately I've been trying to learn more traditional Colombian dishes, like ajiaco, which takes a bit of patience but the result is worth it."</p>
+<p>Fórmula básica de Part 1: afirmar + razón + ejemplo o detalle personal. 3–5 oraciones por respuesta.</p>
+
+<h3>Part 2: Monólogo largo (3–4 minutos)</h3>
+<p>Recibes una tarjeta con un tema y cuatro puntos que debes cubrir. Tienes 1 minuto para prepararte y luego 2 minutos para hablar sin que el evaluador te interrumpa. Después, una o dos preguntas de seguimiento.</p>
+<p>Ejemplo de tarjeta: "Describe a teacher who had a positive influence on you. You should say: who this person was, what subject they taught, what made them special, and explain how they influenced your life."</p>
+<p>El 1 minuto de preparación es más valioso de lo que parece. Úsalo para:</p>
+<ol>
+  <li>Anotar palabras clave para cada punto de la tarjeta (no oraciones completas — son distractores).</li>
+  <li>Decidir qué estructura general usarás: cronológica, temática o por ejemplos.</li>
+  <li>Recordar 2–3 palabras de vocabulario específico que enriquezcan la respuesta.</li>
+</ol>
+<p>El objetivo es hablar los 2 minutos completos. Si terminas en 70 segundos, hay un problema. Practica con cronómetro hasta que extender respuestas sea natural.</p>
+
+<h3>Part 3: Discusión abstracta (4–5 minutos)</h3>
+<p>Esta es la parte que más diferencia los Bands. El evaluador conecta el tema de la Part 2 con preguntas más abstractas y de opinión: "Do you think the education system in Colombia prepares young people for the job market?" o "How has technology changed the way people learn today?"</p>
+<p>Para lograr Band 7 en Part 3 necesitas:</p>
+<ul>
+  <li>Dar tu opinión con argumentos, no solo afirmaciones: "I think X because... For example... This suggests that..."</li>
+  <li>Usar estructuras de contraste y concesión: "Although... However... On the other hand... It's true that... but..."</li>
+  <li>Mostrar que puedes especular e hipotetizar: "It's possible that... This could lead to... There might be..."</li>
+</ul>
+<p>No hay respuestas correctas o incorrectas en Part 3. Lo que evalúan es la calidad del pensamiento en inglés, no las ideas en sí.</p>
+
+<h2>Los 5 errores que destruyen el Band en Speaking</h2>
+<ol>
+  <li><strong>Memorizar respuestas completas.</strong> Los evaluadores reconocen respuestas memorizadas por la cadencia robótica y el vocabulario artificialmente formal. Si suenas memorizado, el evaluador puede interrumpirte y cambiar el tema. Prepara ideas y vocabulario — no guiones.</li>
+  <li><strong>Traducir mentalmente del español.</strong> El tiempo que tarda la traducción mental crea pausas largas y estructuras que suenan a español con palabras inglesas. La solución: entrenamiento de "pensar en inglés" con práctica de self-talk diaria.</li>
+  <li><strong>Respuestas demasiado cortas en Part 1.</strong> El evaluador necesita suficiente material para evaluar tu idioma. Si das respuestas de una oración, no tiene con qué calificar.</li>
+  <li><strong>Ignorar la pronunciación hasta la última semana.</strong> Pronunciación no es acento — es claridad. Si los diptongos, las consonantes finales y el ritmo de la frase son inconsistentes, el evaluador tiene que hacer esfuerzo para entenderte. Ese esfuerzo baja el puntaje de Pronunciation.</li>
+  <li><strong>No practicar con otro hablante.</strong> Hablar solo frente al espejo o grabar monólogos desarrolla fluidez pero no la adaptabilidad de una conversación real. La sección de Speaking es interactiva. Practica con alguien que te haga preguntas impredecibles.</li>
+</ol>
+
+<h2>Plan de práctica de 8 semanas para Speaking</h2>
+<h3>Semanas 1–2: Construcción de base</h3>
+<ul>
+  <li>Self-talk 15 minutos diarios: narra en inglés lo que haces, piensas o planeas. "I'm making coffee. I prefer black coffee because... Today I have a meeting with... I'm looking forward to..."</li>
+  <li>Graba 2 respuestas de Part 1 por día y escúchalas para identificar tus patterns de error más frecuentes.</li>
+  <li>Aprende 5 palabras académicas/formales diarias y úsalas activamente en el self-talk.</li>
+</ul>
+
+<h3>Semanas 3–5: Práctica por partes</h3>
+<ul>
+  <li>Part 1: practica respuestas extendidas (3–5 oraciones) con la fórmula afirmar + razón + ejemplo.</li>
+  <li>Part 2: un tema de tarjeta al día con 1 minuto de preparación y 2 minutos de monólogo cronometrado.</li>
+  <li>Part 3: practica con preguntas de opinión abstractas. Usa conectores de argumento: "This suggests that... A key reason for this is... While it's true that... this doesn't mean..."</li>
+  <li>Una sesión semanal con un compañero o tutor para simular el examen completo.</li>
+</ul>
+
+<h3>Semanas 6–8: Simulacros completos y ajuste fino</h3>
+<ul>
+  <li>Dos simulacros completos de Speaking por semana (11–14 minutos cada uno).</li>
+  <li>Después de cada simulacro, identifica: ¿qué palabras repetiste demasiado? ¿En qué punto bajó la fluidez? ¿Usaste estructuras variadas en Part 3?</li>
+  <li>La semana previa al examen: no aprendas vocabulario nuevo. Consolida lo que ya tienes.</li>
+</ul>
+
+<h2>Temas más frecuentes del IELTS Speaking</h2>
+<p>Aunque el examen es impredecible, los temas rotan en un conjunto estable. Prepara respuestas generales (no memorizadas) para estos grupos:</p>
+<ul>
+  <li><strong>Work and study</strong>: tu campo de trabajo o estudio, motivaciones, futuro profesional.</li>
+  <li><strong>Hometown and travel</strong>: tu ciudad, sus características, lugares que te gustan, experiencias de viaje.</li>
+  <li><strong>Technology</strong>: redes sociales, smartphones, impacto en la sociedad, trabajo remoto.</li>
+  <li><strong>Education</strong>: sistema educativo, profesores, aprendizaje de idiomas, habilidades importantes.</li>
+  <li><strong>Environment</strong>: cambio climático, transporte sostenible, consumo responsable.</li>
+  <li><strong>Health and lifestyle</strong>: ejercicio, dieta, estrés, bienestar mental.</li>
+  <li><strong>Arts and culture</strong>: música, cine, libros, festividades tradicionales.</li>
+</ul>
+<p>No memorices respuestas para cada tema — prepara banco de ideas, vocabulario específico y estructuras de argumento que puedas adaptar a cualquier pregunta.</p>
+
+<h2>Pronunciación: lo que realmente importa</h2>
+<p>El evaluador no espera ni prefiere un acento nativo. Espera inteligibilidad consistente. Los aspectos de pronunciación que más afectan el Band son:</p>
+<ul>
+  <li><strong>Consonantes finales</strong>: el español tiende a "comer" consonantes al final de palabra (especialmente /s/, /t/, /d/, /k/). En inglés son fundamentales: "I walk" vs. "I walked" — sin la /t/ final, el tiempo verbal desaparece.</li>
+  <li><strong>Vocales:</strong> las vocales del español son 5; el inglés tiene 12–15. La diferencia entre "ship" y "sheep", entre "bit" y "beat", puede cambiar el significado.</li>
+  <li><strong>Ritmo y énfasis:</strong> el inglés es un idioma de estrés léxico (ciertas sílabas son fuertes, otras se reducen). En español todas las sílabas tienen peso similar. Aprender dónde va el énfasis en palabras de 3+ sílabas mejora drásticamente la comprensibilidad.</li>
+</ul>
+<p>La mejor práctica de pronunciación: shadowing (imitar audio de hablantes nativos al mismo tiempo que lo escuchas). Empieza con contenido lento y claro (TED Talks, BBC Learning English) y aumenta la velocidad progresivamente.</p>
+
+<h2>¿Solo o con un tutor?</h2>
+<p>Puedes mejorar tu Speaking significativamente de forma autónoma con self-talk, shadowing y práctica de monólogos. Pero hay dos límites claros del autodidactismo en Speaking:</p>
+<ul>
+  <li>No puedes recrear la presión de una conversación real con alguien que hace preguntas impredecibles.</li>
+  <li>Tus puntos ciegos de pronunciación y gramática son invisibles para ti precisamente porque llevas años cometiéndolos inconscientemente.</li>
+</ul>
+<p>Para dar el salto de Band 6 a Band 7 en Speaking, la retroalimentación de un hablante externo — que identifica tus errores sistemáticos — es el atajo más eficiente que existe. En WeLearn incluimos práctica de Speaking con retroalimentación real en cada sesión. Puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de IELTS</a> o hacer un simulacro de Speaking gratuito para tener una línea base.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía completa de preparación</a> y <a href="/blog/como-mejorar-el-ingles-hablado">Por qué te bloqueas al hablar inglés y cómo superarlo</a>.</p>
     `,
   },
 ];

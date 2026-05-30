@@ -527,15 +527,15 @@ export default function ClasesDeInglesPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1rem' }}>
             {[
               { cat: 'IELTS', title: 'Cómo sacar Band 7 en el IELTS', slug: 'como-sacar-band-7-en-ielts' },
+              { cat: 'IELTS', title: 'IELTS Reading: estrategias para alcanzar Band 7', slug: 'ielts-reading-estrategias-para-band-7' },
+              { cat: 'IELTS', title: 'IELTS Speaking: cómo preparar las 3 partes', slug: 'ielts-speaking-como-preparar-las-3-partes' },
               { cat: 'TOEFL', title: 'TOEFL iBT: guía completa para colombianos', slug: 'toefl-ibt-preparacion-guia-completa' },
               { cat: 'IELTS', title: 'IELTS vs TOEFL: ¿cuál es mejor para ti?', slug: 'ielts-vs-toefl-cual-tomar-en-colombia' },
               { cat: 'Inglés', title: 'Niveles de inglés A1–C2: qué significa cada uno', slug: 'niveles-de-ingles-a1-a2-b1-b2-c1-c2' },
               { cat: 'Trabajo', title: 'Inglés para empresas multinacionales', slug: 'ingles-para-trabajar-en-empresas-multinacionales' },
               { cat: 'Speaking', title: 'Por qué te bloqueas al hablar inglés y cómo superarlo', slug: 'como-mejorar-el-ingles-hablado' },
               { cat: 'Migración', title: 'IELTS para migrar a Canadá: qué puntaje necesitas por visa', slug: 'migrar-a-canada-requisitos-ielts-ingles' },
-              { cat: 'TOEFL', title: 'TOEFL iBT: estrategias por sección para llegar a 100 puntos', slug: 'toefl-ibt-estrategias-por-seccion' },
               { cat: 'IELTS', title: 'IELTS Listening: los 7 errores más comunes y cómo evitarlos', slug: 'ielts-listening-errores-comunes' },
-              { cat: 'Inglés', title: 'Inglés para trabajo remoto: cómo convencer a empleadores globales', slug: 'ingles-para-trabajo-remoto-empleadores-globales' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
