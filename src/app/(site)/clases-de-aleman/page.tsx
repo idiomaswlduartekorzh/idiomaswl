@@ -205,6 +205,7 @@ const BLOG_POSTS = [
   { cat: 'Alemán', color: '#1a2ecc', title: 'Alemán para enfermería en Alemania: nivel B2 y la Fachsprachprüfung', slug: 'aleman-para-enfermeria-en-alemania' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Trabajar en Alemania: ¿qué nivel de alemán necesitas según tu profesión?', slug: 'trabajar-en-alemania-nivel-aleman-requerido' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Goethe-Zertifikat: guía completa para colombianos', slug: 'goethe-zertifikat-guia-completa-colombia' },
+  { cat: 'Alemán', color: '#1a2ecc', title: 'Alemán de A1 a B1: cuánto tiempo toma y cómo organizarte', slug: 'aleman-a1-a-b1-cuanto-tiempo-y-plan-de-estudio' },
 ];
 
 const WaIcon = () => (

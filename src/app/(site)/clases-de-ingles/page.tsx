@@ -539,6 +539,9 @@ export default function ClasesDeInglesPage() {
               { cat: 'IELTS', title: 'Estudiar en Irlanda con IELTS: universidades, costos y puntaje mínimo', slug: 'ielts-para-estudiar-en-irlanda' },
               { cat: 'TOEFL', title: 'TOEFL iBT vs TOEFL Essentials: diferencias y cuál elegir en 2026', slug: 'toefl-ibt-vs-toefl-essentials-cual-elegir-2026' },
               { cat: 'Inglés', title: 'Inglés B2–C1 para trabajo remoto: lo que necesitas para empleadores globales', slug: 'ingles-b2-c1-para-trabajo-remoto-global' },
+              { cat: 'Inglés', title: 'Inglés para entrevistas en multinacionales: estructura STAR y frases clave', slug: 'ingles-para-entrevistas-de-trabajo-en-multinacionales' },
+              { cat: 'Migración', title: 'Inglés para Express Entry Canadá: CLB, IELTS y cómo maximizar tu CRS', slug: 'ingles-para-canada-express-entry-requisitos-2026' },
+              { cat: 'IELTS', title: 'IELTS Academic vs General Training: cuál debes tomar y por qué', slug: 'ielts-academic-vs-general-training-cual-elegir' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
