@@ -117,6 +117,13 @@ const CTA_BY_CATEGORY: Record<string, CtaConfig> = {
     pageLink: '/clases-de-ingles',
     pageLinkLabel: 'Ver clases de inglés',
   },
+  Inglés: {
+    title: '¿Quieres mejorar tu inglés para objetivos reales?',
+    desc: 'Clases personalizadas de inglés con tutor especializado. Desde conversación laboral hasta certificaciones internacionales.',
+    msg: 'Hola, leí un artículo de WeLearn sobre inglés y quiero saber más sobre las clases disponibles.',
+    pageLink: '/clases-de-ingles',
+    pageLinkLabel: 'Ver clases de inglés',
+  },
 };
 
 const DEFAULT_CTA: CtaConfig = {

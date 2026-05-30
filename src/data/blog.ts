@@ -2433,6 +2433,298 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>En WeLearn preparamos para todos los niveles del DELF con material actualizado y práctica de producción oral y escrita con retroalimentación real. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para empezar con una diagnóstico gratuito.</p>
     `,
   },
+  // ── Article 31 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-listening-errores-comunes',
+    title: 'IELTS Listening: los 7 errores más comunes y cómo evitarlos',
+    description: 'La sección de Listening es la que más puntos regala en IELTS — si sabes evitar las trampas. Aquí los 7 errores que bajan tu puntaje y cómo corregirlos.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'IELTS',
+    tags: ['IELTS', 'Listening', 'preparación IELTS', 'inglés', 'exámenes internacionales'],
+    body: `
+<h2>Por qué el Listening parece fácil — y no lo es</h2>
+<p>El IELTS Listening es la sección con el puntaje promedio más alto entre candidatos hispanohablantes, pero también la que más estudiantes subestiman. Escuchan el audio una vez, sin pausa, y las preguntas tienen trampas diseñadas específicamente para quien no conoce el formato.</p>
+<p>Con la estructura correcta, Band 8 en Listening es alcanzable en pocas semanas. Sin estrategia, incluso estudiantes con buen inglés se quedan en Band 6.</p>
+
+<h2>Error 1: No leer las preguntas antes de escuchar</h2>
+<p>Tienes 30-45 segundos antes de cada sección para leer las preguntas. El 90 % de los candidatos los desperdicia esperando que empiece el audio. Ese tiempo es oro: anticipa el tipo de información que necesitas (un número, un nombre, un lugar) y subráyalo en la pregunta.</p>
+<p><strong>Corrección:</strong> durante el audio, escucha buscando respuestas específicas. No intentes entender todo; busca la respuesta a cada pregunta en orden.</p>
+
+<h2>Error 2: Escribir exactamente lo que escuchas sin verificar spelling</h2>
+<p>El IELTS penaliza errores de ortografía, incluso si la respuesta es correcta conceptualmente. "Recieve" en vez de "receive" o "accomodation" en vez de "accommodation" cuestan puntos reales.</p>
+<p><strong>Corrección:</strong> estudia vocabulario de spelling frecuente en IELTS Listening: nombres propios (Geoffrey, Katherine), palabras de booking y turismo (accommodation, reservation, departure), y números de código (A-14-C vs A40C). El examen dicta lentamente nombres complicados — escúchalos con atención total.</p>
+
+<h2>Error 3: Perder el hilo después de un error</h2>
+<p>Una respuesta que no encontraste puede hacerte perder 2 o 3 más. Muchos candidatos se quedan "atascados" en una pregunta que ya pasó mientras el audio sigue avanzando.</p>
+<p><strong>Corrección:</strong> si no escuchaste una respuesta, márcala con un signo de interrogación y avanza inmediatamente a la siguiente pregunta. Al final del audio tienes tiempo para completar las respuestas que dejaste en blanco.</p>
+
+<h2>Error 4: No reconocer las distractor words</h2>
+<p>El IELTS Listening usa distractor words a propósito: el hablante menciona una opción y luego la contradice o cambia. Ejemplo: "The meeting is on Tuesday — actually, let me check… it's on Thursday." Si marcaste "Tuesday", perdiste.</p>
+<p><strong>Corrección:</strong> cuando escuches información que parece respuesta, espera un segundo. Si el hablante añade "actually", "but", "I mean", "sorry" o "let me correct that", la información va a cambiar. Escucha hasta el final del pensamiento.</p>
+
+<h2>Error 5: No familiarizarse con los acentos</h2>
+<p>El IELTS usa acentos británico, australiano, americano, neozelandés e incluso indio o sudafricano en sus audios. Si solo has escuchado inglés americano estándar, el acento australiano puede confundirte al inicio.</p>
+<p><strong>Corrección:</strong> practica con BBC Radio, Australian Broadcasting Corporation (ABC) y podcasts de acceso libre. Dos semanas de exposición diversificada hacen una diferencia visible.</p>
+
+<h2>Error 6: Ignorar el Section 4 (el más difícil)</h2>
+<p>La Sección 4 es un monólogo académico — una conferencia o charla universitaria — sin diálogo ni conversación. Es la más difícil porque no hay pausas naturales y el vocabulario es académico especializado. Muchos candidatos se preparan con las Secciones 1-3 y se llevan una sorpresa al final.</p>
+<p><strong>Corrección:</strong> practica Sección 4 con grabaciones de TED-Ed, conferencias de Cambridge o University of Oxford Open Learning. Acostúmbrate al ritmo de un monólogo académico de 5-6 minutos sin interrupciones.</p>
+
+<h2>Error 7: No repasar las respuestas en los 10 minutos finales</h2>
+<p>Al terminar el audio, tienes 10 minutos para pasar las respuestas al formulario de respuesta. Muchos candidatos copian mecánicamente sin revisar. Este tiempo es para verificar spelling, asegurarte de que las respuestas tienen sentido gramatical (la pregunta dice "the meeting was ___"; no puedes poner un adverbio), y corregir respuestas que dudaste.</p>
+
+<h2>Cómo practicar IELTS Listening efectivamente</h2>
+<p>En WeLearn trabajamos el Listening con simulacros cronometrados en condiciones reales, análisis de errores post-test y práctica de distractor recognition. Si quieres prepararte con acompañamiento real, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20IELTS%20Listening%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
+    `,
+  },
+
+  // ── Article 32 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-ingles-colombia-2026',
+    title: '¿Cuánto cuesta aprender inglés en Colombia en 2026? (Guía de precios real)',
+    description: 'Comparativa honesta de precios para aprender inglés en Colombia: academias presenciales, apps, clases online y el costo-beneficio real de cada opción.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'Método',
+    tags: ['aprender inglés', 'Colombia', 'clases online', 'precios', 'costo'],
+    body: `
+<h2>El problema con los precios del inglés en Colombia</h2>
+<p>La oferta de inglés en Colombia va desde $0 (Duolingo) hasta más de $3.000.000 COP al mes en academias premium. La diferencia en resultado real entre esas opciones no es proporcional al precio. Este artículo es una guía honesta para que decidas dónde invertir según tu objetivo real.</p>
+
+<h2>Opción 1: Apps gratuitas (Duolingo, Babbel)</h2>
+<p><strong>Costo:</strong> $0 – $50.000 COP/mes (versión premium)</p>
+<p><strong>Para quién:</strong> alguien que quiere exposición básica al idioma como complemento, o que empieza desde cero con vocabulario simple.</p>
+<p><strong>Limitación crítica:</strong> las apps no desarrollan Speaking real ni Writing académico. Son buenas para vocabulario pasivo pero no preparan para ningún examen ni para conversación real. Un estudiante que solo usa Duolingo un año sigue sin poder sostener una conversación de trabajo.</p>
+
+<h2>Opción 2: Academias presenciales masivas</h2>
+<p><strong>Costo:</strong> $250.000 – $600.000 COP/mes (British Council, Centro Colombo Americano, Berlitz)</p>
+<p><strong>Para quién:</strong> quienes prefieren el entorno presencial y tienen horario fijo disponible.</p>
+<p><strong>Limitación crítica:</strong> grupos de 15-25 estudiantes. El tiempo de speaking real por estudiante por clase es de 3-5 minutos. Ciclos de 6 meses con poco avance medible. Los programas completos pueden tomar 3-4 años y costar $15-25 millones COP en total.</p>
+
+<h2>Opción 3: Plataformas de clases online masivas</h2>
+<p><strong>Costo:</strong> $80.000 – $250.000 COP/mes (Open English, Rosetta Stone, Preply con tutores básicos)</p>
+<p><strong>Para quién:</strong> quienes tienen horario flexible y buscan practicar conversación con diferentes personas.</p>
+<p><strong>Limitación crítica:</strong> los tutores no son necesariamente profesores certificados. La calidad varía enormemente. Sin un currículo estructurado, el progreso es irregular. No hay preparación específica para exámenes.</p>
+
+<h2>Opción 4: Clases 1:1 con tutor especializado</h2>
+<p><strong>Costo:</strong> $60.000 – $180.000 COP/hora (tutores particulares) | $45.000 – $90.000 COP/hora (plataformas como WeLearn con descuento por volumen)</p>
+<p><strong>Para quién:</strong> quienes tienen un objetivo específico (IELTS, trabajo, migración) y quieren progreso medible.</p>
+<p><strong>Ventaja real:</strong> tiempo de práctica 100 % sobre el estudiante. Un tutor especializado puede llevar a alguien de B1 a B2 en 3-4 meses con 3 horas semanales. La inversión total suele ser menor que una academia masiva con mejores resultados.</p>
+
+<h2>Opción 5: Preparación para exámenes (IELTS/TOEFL)</h2>
+<p><strong>Costo:</strong> $400.000 – $1.500.000 COP (cursos de 8-16 semanas)</p>
+<p><strong>Para quién:</strong> quienes necesitan un puntaje específico para visa, universidad o trabajo.</p>
+<p><strong>Importante:</strong> la preparación para exámenes no es lo mismo que "aprender inglés". Requiere conocer el formato, las estrategias por sección y práctica con material oficial. Un estudiante con B2 puede obtener Band 6 o Band 7.5 dependiendo de su preparación específica para el examen.</p>
+
+<h2>El verdadero costo: tiempo vs dinero</h2>
+<p>El inglés no es un gasto puntual; es una inversión de tiempo. La pregunta no es "¿cuánto cuesta?" sino "¿cuánto tiempo tengo y cuál es mi objetivo?":</p>
+<ul>
+  <li><strong>Objetivo laboral básico (B1):</strong> 6-9 meses con 5-7h semanales de práctica real</li>
+  <li><strong>IELTS Band 6.5:</strong> 3-6 meses de preparación específica desde B2</li>
+  <li><strong>Inglés para multinacional (B2-C1):</strong> 12-18 meses con práctica intensiva</li>
+</ul>
+
+<h2>¿Qué ofrece WeLearn?</h2>
+<p>En WeLearn manejamos clases 1:1 y grupales con precios decrecientes por volumen de horas, preparación para IELTS y TOEFL con seguimiento real, y plataforma de simulacros gratuita. Si quieres saber qué plan es mejor para ti, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20cuesta%20aprender%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> y te damos una recomendación sin compromiso.</p>
+    `,
+  },
+
+  // ── Article 33 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'topik-ii-como-subir-de-nivel',
+    title: 'TOPIK II: cómo pasar del nivel 2 al nivel 4 en coreano',
+    description: 'Si ya tienes TOPIK I nivel 2, el siguiente paso es TOPIK II. Aquí la diferencia real entre los niveles, los temas más difíciles y el plan de estudio para subir.',
+    date: '2026-05-30',
+    readTime: 9,
+    category: 'Coreano',
+    tags: ['TOPIK', 'TOPIK II', 'coreano', 'examen coreano', 'nivel intermedio'],
+    body: `
+<h2>¿Qué es el TOPIK II y cuándo tomarlo?</h2>
+<p>El TOPIK (Test of Proficiency in Korean) tiene dos partes: TOPIK I cubre los niveles 1 y 2 (básico), y TOPIK II cubre los niveles 3, 4, 5 y 6 (intermedio a avanzado). Si ya pasaste TOPIK I con nivel 2 o tienes estudios equivalentes, el TOPIK II es tu siguiente meta.</p>
+<p>El TOPIK II es requisito para:</p>
+<ul>
+  <li>Estudiar en universidades coreanas (nivel 3-4 para pregrado, nivel 5-6 para posgrado)</li>
+  <li>Visas de trabajo en Corea del Sur (E7, F visas)</li>
+  <li>Becas GKS (Government Scholarship) del gobierno coreano</li>
+  <li>Naturalización como ciudadano coreano (nivel 4+)</li>
+</ul>
+
+<h2>La diferencia real entre TOPIK I y TOPIK II</h2>
+<p>El salto de TOPIK I nivel 2 a TOPIK II nivel 3 es uno de los más difíciles en el aprendizaje del coreano. No es solo vocabulario adicional: cambia el tipo de razonamiento que requiere el examen.</p>
+<ul>
+  <li><strong>TOPIK I:</strong> situaciones cotidianas (pedir comida, presentarse, comprar). Gramática básica. Vocabulario de ~1500-2000 palabras.</li>
+  <li><strong>TOPIK II nivel 3-4:</strong> textos más abstractos (noticias simples, cartas formales). Expresiones idiomáticas. Vocabulario de ~3000-6000 palabras. Escritura (쓰기) requerida.</li>
+  <li><strong>TOPIK II nivel 5-6:</strong> textos académicos y literarios. Vocabulario ≥ 8000 palabras. Essays de 200-300 caracteres con argumentos elaborados.</li>
+</ul>
+
+<h2>Las secciones del TOPIK II</h2>
+<p>El TOPIK II tiene tres secciones:</p>
+<ol>
+  <li><strong>듣기 (Listening) — 60 preguntas, 110 puntos</strong>: diálogos, noticias, conferencias.</li>
+  <li><strong>읽기 (Reading) — 50 preguntas, 110 puntos</strong>: textos de noticias, anuncios, artículos académicos simples.</li>
+  <li><strong>쓰기 (Writing) — 4 preguntas, 100 puntos</strong>: completar oraciones (문장 완성), email formal (중급 작문), y dos essays de opción en los niveles altos. Es la sección más difícil para hispanohablantes porque requiere producción activa.</li>
+</ol>
+<p>Los niveles se asignan según el puntaje total:</p>
+<ul>
+  <li>Nivel 3: 120-149 puntos</li>
+  <li>Nivel 4: 150-189 puntos</li>
+  <li>Nivel 5: 190-229 puntos</li>
+  <li>Nivel 6: 230-300 puntos</li>
+</ul>
+
+<h2>Los cuellos de botella para hispanohablantes</h2>
+<h3>1. La sección de Escritura (쓰기)</h3>
+<p>Es la sección donde más puntos se pierden. El TOPIK II requiere escribir en coreano formal (문어체), no en el coreano conversacional que aprendiste al inicio. La diferencia es significativa: 저는 대학생입니다 (formal) vs 나는 대학생이야 (informal). Los textos de nivel 3-4 deben usar terminaciones formales en todo momento.</p>
+
+<h3>2. El vocabulario de noticias y economía</h3>
+<p>El Reading de nivel 4 incluye textos de periódicos coreanos. Palabras como 경제 성장 (crecimiento económico), 환율 (tipo de cambio) o 대기업 (chaebol/gran empresa) aparecen frecuentemente. Sin vocabulario temático, es casi imposible inferir el significado.</p>
+
+<h3>3. Las expresiones gramaticales complejas</h3>
+<p>TOPIK II usa patrones gramaticales de nivel intermedio-avanzado que raramente aparecen en conversación básica:</p>
+<ul>
+  <li>-음에도 불구하고 (a pesar de que)</li>
+  <li>-는 반면에 (mientras que, por otro lado)</li>
+  <li>-(으)로 인해 (debido a, como resultado de)</li>
+  <li>-기 마련이다 (inevitablemente, es natural que)</li>
+</ul>
+
+<h2>Plan de estudio para alcanzar TOPIK II nivel 4</h2>
+<h3>Fase 1 (meses 1-2): vocabulario y gramática intermedia</h3>
+<ul>
+  <li>Aprende 20-25 palabras nuevas diarias con flashcards (Anki con mazo TOPIK II)</li>
+  <li>Estudia los patrones gramaticales de nivel 3-4 con ejemplos de contexto</li>
+  <li>Lee una noticia simple de 뉴스 (naver news) diariamente — sin presión de entenderlo todo</li>
+</ul>
+<h3>Fase 2 (meses 3-4): práctica con exámenes reales</h3>
+<ul>
+  <li>Resuelve 2 exámenes TOPIK II anteriores (disponibles en el sitio oficial topik.go.kr)</li>
+  <li>Trabaja la sección de Escritura: escribe un email formal de 150-200 caracteres semanalmente</li>
+  <li>Practica Listening con velocidad 1.0x (no uses 0.75x — el examen es a velocidad real)</li>
+</ul>
+<h3>Fase 3 (mes 5-6): simulacros y corrección</h3>
+<ul>
+  <li>Un examen completo en condiciones reales cada 10 días</li>
+  <li>Analiza errores en Escritura con retroalimentación de un hablante nativo o tutor</li>
+  <li>Las últimas dos semanas: repasar vocabulario marcado y patrones gramaticales con errores frecuentes</li>
+</ul>
+
+<h2>WeLearn y el coreano de nivel intermedio</h2>
+<p>En WeLearn acompañamos estudiantes desde cero hasta preparación para TOPIK II con clases personalizadas y material propio. Si ya tienes TOPIK I y quieres dar el siguiente paso, <a href="https://wa.me/573005004253?text=Hola%2C%20tengo%20TOPIK%20I%20y%20quiero%20prepararme%20para%20TOPIK%20II%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
+    `,
+  },
+
+  // ── Article 34 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-trabajo-remoto-empleadores-globales',
+    title: 'Inglés para trabajo remoto: cómo convencer a empleadores globales',
+    description: 'El inglés para trabajo remoto es diferente al inglés para un examen. Aquí las habilidades concretas que buscan los empleadores globales y cómo desarrollarlas.',
+    date: '2026-05-30',
+    readTime: 8,
+    category: 'Inglés',
+    tags: ['inglés trabajo remoto', 'trabajo remoto Colombia', 'inglés profesional', 'empleos internacionales', 'inglés laboral'],
+    body: `
+<h2>El trabajo remoto cambió lo que significa "saber inglés"</h2>
+<p>Antes de la pandemia, el inglés laboral en Colombia era un filtro binario: lo tienes (para trabajar en multinacional) o no lo tienes. Hoy, con millones de colombianos trabajando para empresas de EE.UU., Canadá, Reino Unido e Israel desde Medellín o Bogotá, el estándar subió y se especializó.</p>
+<p>No basta con "comunicarse en inglés". Los empleadores remotos evalúan habilidades específicas que tienen poco que ver con el puntaje del IELTS y mucho que ver con cómo te desenvuelves en una reunión de Zoom a las 8am con un equipo de 5 países.</p>
+
+<h2>Lo que realmente evalúan los empleadores remotos globales</h2>
+<h3>1. Asynchronous writing — la habilidad #1</h3>
+<p>En equipos remotos, el 70-80 % de la comunicación es escrita y asíncrona: Slack, email, Notion, GitHub, Confluence. Tu capacidad de explicar un problema, proponer una solución o dar contexto en un mensaje de texto es más importante que tu pronunciation.</p>
+<p>Los errores que más cuestan en trabajo remoto no son gramaticales — son de claridad. "It doesn't work" es menos útil que "The login endpoint returns a 403 when the token expires after 24 hours. I reproduced it 3 times with different accounts." Aprende a escribir con precisión, no con ornamento.</p>
+
+<h3>2. Meetings en inglés con personas de múltiples acentos</h3>
+<p>Un call con un equipo internacional puede tener un manager de India, un developer de Polonia, un designer de Brasil y un PM de California. Cada uno habla inglés con su acento nativo. Si solo practicaste con inglés americano estándar, los primeros meses serán difíciles.</p>
+<p>Practica escuchando inglés con acentos variados (Australian, Indian, British RP, South African) para entrenar tu oído.</p>
+
+<h3>3. Giving and receiving feedback en inglés</h3>
+<p>La cultura del feedback en empresas anglófonas es directa pero no agresiva. Frases que parecen normales en español ("eso está mal", "ese enfoque no funciona") se perciben como hostiles sin los softeners correctos en inglés: "I think there might be a better approach here", "Have you considered…?", "This is a good start — I'd suggest…"</p>
+
+<h3>4. Professional email conventions</h3>
+<p>Los emails en inglés profesional tienen convenciones distintas al español: son más cortos, más directos, usan subject lines descriptivos y terminan con un call-to-action claro. "Please let me know if you have any questions" es diferente a "Could you please review and share your thoughts by Thursday?" La segunda versión asigna una tarea clara con fecha.</p>
+
+<h2>Vocabulario técnico vs inglés general</h2>
+<p>Para trabajo remoto en tech, finanzas, marketing o diseño necesitas vocabulario de tu industria específica además del inglés general. Una persona con B2 general y vocabulario sólido de su sector consigue trabajo remoto más fácilmente que alguien con C1 general sin vocabulario especializado.</p>
+<p>Estrategia práctica: sigue cuentas de LinkedIn y YouTube en inglés en tu industria. Leer posts de líderes de tu sector durante 15 minutos diarios expone vocabulary in context, que retiene mejor que flashcards aislados.</p>
+
+<h2>El proceso de entrevista en inglés para trabajo remoto</h2>
+<p>Las entrevistas remotas suelen tener 2-3 rondas:</p>
+<ol>
+  <li><strong>HR screening (20 min)</strong> — "Tell me about yourself", motivación, disponibilidad horaria. Aquí se filtra el 60 % de candidatos cuyo inglés no es suficientemente fluido.</li>
+  <li><strong>Technical interview (45-90 min)</strong> — Prueba práctica o case study. El inglés es secundario pero debe ser suficiente para explicar tu razonamiento.</li>
+  <li><strong>Culture fit / final interview</strong> — Con el manager o equipo. Evalúan comunicación, personalidad, cómo manejas ambigüedad.</li>
+</ol>
+<p>La preparación más efectiva para entrevistas en inglés es hacer mock interviews. Practica respuestas a preguntas STAR (Situation, Task, Action, Result) en voz alta, cronometrado, y grábate. Escuchar tu propia forma de hablar bajo presión es incómodo pero invaluable.</p>
+
+<h2>Salarios del trabajo remoto y el ROI de aprender inglés</h2>
+<p>Un developer colombiano con inglés C1 puede cobrar USD 3.000-6.000/mes en empresas de EE.UU. vs USD 800-1.500/mes en el mercado local. Un diseñador UX con inglés B2+ tiene acceso a plataformas como Toptal o Upwork donde la tarifa mínima competitiva es USD 30-50/hora. El ROI de invertir 6-12 meses en subir de B1 a B2-C1 en inglés es extraordinario en cualquier sector.</p>
+
+<h2>Cómo te ayuda WeLearn</h2>
+<p>En WeLearn diseñamos planes de estudio orientados a objetivos laborales concretos: desde inglés conversacional para trabajo remoto hasta preparación para exámenes que abren puertas internacionales. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20ingl%C3%A9s%20para%20trabajo%20remoto%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para una diagnóstico gratuito.</p>
+    `,
+  },
+
+  // ── Article 35 ─────────────────────────────────────────────────────────────
+  {
+    slug: 'migrar-a-espana-requisitos-de-ingles',
+    title: 'Migrar a España desde Colombia: ¿qué nivel de inglés necesitas realmente?',
+    description: 'España es el destino migratorio más popular entre colombianos. Aquí los requisitos reales de inglés para visas, trabajo y convalidaciones en España.',
+    date: '2026-05-30',
+    readTime: 7,
+    category: 'Migración',
+    tags: ['migrar a España', 'Colombia a España', 'visa España', 'inglés para España', 'vivir en España'],
+    body: `
+<h2>España: el destino migratorio colombiano más popular</h2>
+<p>Más de 400.000 colombianos viven actualmente en España según datos del INE. La proximidad cultural e idiomática, la facilidad de convalidar títulos universitarios y el acceso al mercado europeo hacen de España el destino preferido antes de explorar Canada o Australia.</p>
+<p>Pero hay una pregunta que muchos colombianos hacen cuando planean migrar a España: "¿Necesito inglés para vivir allá?" La respuesta depende de tu objetivo.</p>
+
+<h2>Para la visa en sí: el inglés no es requisito</h2>
+<p>Las visas principales para colombianos en España no requieren certificado de inglés:</p>
+<ul>
+  <li><strong>Visa de residencia no lucrativa:</strong> requiere demostrar solvencia económica (≈ $30.000 EUR/año), seguro médico privado y antecedentes penales. No piden inglés.</li>
+  <li><strong>Visa de emprendedor / nómada digital:</strong> tampoco exige inglés oficialmente. Requiere plan de negocio o contrato con empresa extranjera.</li>
+  <li><strong>Reagrupación familiar:</strong> sin requisito lingüístico en inglés.</li>
+</ul>
+<p>El español es el idioma oficial y el que usarás en trámites, instituciones y vida diaria. La ventaja para colombianos es obvia.</p>
+
+<h2>Para trabajar en España: depende del sector</h2>
+<h3>Sectores donde el inglés NO es indispensable (al inicio)</h3>
+<ul>
+  <li>Hostelería y turismo doméstico</li>
+  <li>Construcción y obra</li>
+  <li>Cuidado de personas mayores y servicios domésticos</li>
+  <li>Comercio local</li>
+</ul>
+
+<h3>Sectores donde el inglés es INDISPENSABLE</h3>
+<ul>
+  <li><strong>Tecnología (IT):</strong> el 80 % de ofertas laborales tech en Madrid y Barcelona especifican "inglés nivel alto o avanzado". La documentación, los standups con equipos internacionales y las herramientas están en inglés.</li>
+  <li><strong>Turismo internacional y hoteles de cadena:</strong> Marriott, Hilton, Meliá piden inglés B2-C1 para cualquier posición de cara al público.</li>
+  <li><strong>Finanzas y banca:</strong> Santander, BBVA y otras entidades globales con sede en España requieren inglés para posiciones de nivel medio-alto.</li>
+  <li><strong>Consultoría y servicios empresariales:</strong> Accenture, Deloitte, PwC en España operan con inglés como idioma interno.</li>
+  <li><strong>Universidades y centros de investigación:</strong> los programas de doctorado y muchos master requieren demostrar inglés académico (B2-C1).</li>
+</ul>
+
+<h2>Para convalidar títulos universitarios</h2>
+<p>España tiene uno de los procesos de convalidación más favorables para colombianos gracias al convenio de reconocimiento mutuo de títulos. El proceso en sí no exige inglés. Sin embargo, si quieres estudiar un máster o doctorado en España para mejorar tu perfil (común entre colombianos que migran con carrera hecha), la mayoría de programas de posgrado en universidades top (Complutense, Autónoma de Barcelona, IE, IESE) exigen IELTS 6.5 o TOEFL 79+.</p>
+
+<h2>El inglés como diferencial competitivo en España</h2>
+<p>Con millones de migrantes latinoamericanos compitiendo por los mismos empleos, el inglés se convierte en un diferencial que puede hacerte más valioso que un candidato español nativo sin esa habilidad. Un colombiano con B2 sólido y experiencia relevante tiene ventaja sobre un español con tu mismo perfil pero sin inglés en sectores internacionalizados.</p>
+
+<h2>¿IELTS o DELE para España?</h2>
+<p>Si tu objetivo es España, el certificado de inglés más reconocido es el IELTS (aceptado por universidades, empresas y algunos procesos de visa). El Cambridge C1/C2 también tiene muy buena reputación. El DELE es el equivalente en español — sirve para demostrar que manejas español a nivel avanzado (útil para colombianos que quieren acreditar su nivel para acceder a ciertas plataformas o programas).</p>
+
+<h2>Resumen: ¿cuánto inglés necesitas para España?</h2>
+<ul>
+  <li><strong>Vida cotidiana:</strong> sin inglés estás bien — el español cubre todo.</li>
+  <li><strong>Trabajo en tech, finanzas, consultoría o turismo internacional:</strong> B2 mínimo, C1 preferido.</li>
+  <li><strong>Posgrado en universidad top:</strong> IELTS 6.5-7.0 o TOEFL 79-100.</li>
+  <li><strong>Emprendimiento digital con clientes internacionales:</strong> B2+ para poder prospectar y atender clientes anglófonos.</li>
+</ul>
+
+<p>En WeLearn hemos acompañado a colombianos que preparan su migración a España con inglés orientado a sus objetivos laborales específicos. Si estás en ese proceso, <a href="https://wa.me/573005004253?text=Hola%2C%20voy%20a%20migrar%20a%20Espa%C3%B1a%20y%20quiero%20mejorar%20mi%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> para un diagnóstico gratuito.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

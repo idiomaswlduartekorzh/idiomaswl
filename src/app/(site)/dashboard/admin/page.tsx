@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import JoseDashboardServer from './JoseDashboardServer'
-import ZhannaDashboard from './ZhannaDashboard'
+import ZhannaDashboardServer from './ZhannaDashboardServer'
 import { JOSE_EMAILS, ZHANNA_EMAILS } from '@/lib/config/admins'
 
 export default async function AdminPage() {
@@ -17,7 +17,7 @@ export default async function AdminPage() {
   }
 
   if (ZHANNA_EMAILS.includes(email as typeof ZHANNA_EMAILS[number])) {
-    return <ZhannaDashboard />
+    return <ZhannaDashboardServer />
   }
 
   redirect('/dashboard')

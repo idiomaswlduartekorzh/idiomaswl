@@ -14,6 +14,7 @@ import {
 } from 'recharts'
 import { motion } from 'framer-motion'
 import { BookOpen, Users, CheckSquare, Calendar, TrendingUp } from 'lucide-react'
+import type { ZhannaRealData } from './ZhannaDashboardServer'
 
 // ─── Palette ────────────────────────────────────────────────────────────────
 const C = {
@@ -136,7 +137,7 @@ function EstadoBadge({ estado }: { estado: string }) {
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
-export default function ZhannaDashboard() {
+export default function ZhannaDashboard({ realData }: { realData?: ZhannaRealData }) {
   const [tasks, setTasks] = useState(initialTasks)
 
   const toggleTask = (id: number) =>
@@ -148,6 +149,14 @@ export default function ZhannaDashboard() {
     month: 'long',
     day: 'numeric',
   })
+
+  // Compute today's class count from weekSchedule
+  const DAY_KEYS = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb']
+  const todayKey = DAY_KEYS[new Date().getDay()]
+  const clasesHoy = (weekSchedule as WeekSchedule)[todayKey]?.length ?? 0
+
+  // Live pending task count (updates when user checks tasks)
+  const pendingCount = tasks.filter(t => !t.done).length
 
   return (
     <div
@@ -221,9 +230,9 @@ export default function ZhannaDashboard() {
           </h2>
           <div style={{ display: 'flex', gap: 16 }}>
             {[
-              { icon: BookOpen, label: 'Clases hoy', value: '3', color: C.blue },
-              { icon: Users, label: 'Estudiantes activos', value: '28', color: '#8b5cf6' },
-              { icon: CheckSquare, label: 'Tareas pendientes', value: '5', color: C.amber },
+              { icon: BookOpen, label: 'Clases hoy', value: String(clasesHoy), color: C.blue },
+              { icon: Users, label: 'Estudiantes registrados', value: String(realData?.totalStudents ?? '…'), color: '#8b5cf6' },
+              { icon: CheckSquare, label: 'Tareas pendientes', value: String(pendingCount), color: C.amber },
             ].map(({ icon: Icon, label, value, color }) => (
               <motion.div
                 key={label}

@@ -201,8 +201,8 @@ const NAV: { group: string; items: { label: string; href: string; icon: ReactNod
   {
     group: 'Cuenta',
     items: [
-      { label: 'Mi perfil',      href: '#', icon: IC.user,     active: false },
-      { label: 'Configuración',  href: '#', icon: IC.settings, active: false },
+      { label: 'Mi perfil',      href: '/dashboard/student/perfil', icon: IC.user,     active: false },
+      { label: 'Soporte WA',     href: 'https://wa.me/573005004253?text=Hola%2C%20necesito%20ayuda%20con%20mi%20cuenta%20en%20WeLearn.', icon: IC.helpCircle, active: false },
     ],
   },
 ]
