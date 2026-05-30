@@ -106,6 +106,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>¿Cuándo es momento de tomar clases?</h2>
 <p>El autodidacta puede llegar a Band 6.5 con recursos gratuitos y disciplina. Para dar el salto de 6.5 a 7.0 (o de 7.0 a 7.5), el cuello de botella suele ser Writing y Speaking — y ahí un tutor que da retroalimentación real sobre tus textos y grabaciones marca la diferencia.</p>
 <p>La razón: los errores que te tienen estancado en 6.5 suelen ser puntos ciegos que tú no ves porque llevas semanas mirando el mismo tipo de respuesta. Un evaluador externo los ve en segundos. Si estás en esa etapa, puedes <a href="/clases-de-ingles">conocer cómo trabajamos el IELTS en WeLearn</a> o hacer un simulacro gratuito para ver dónde estás exactamente.</p>
+<p>Lee también: <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses: plan semana a semana</a> y <a href="/blog/ielts-writing-task-2-como-mejorar-el-band">IELTS Writing Task 2: cómo mejorar el Band en el ensayo argumentativo</a>.</p>
     `,
   },
 
@@ -189,6 +190,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>¿Vale la pena tomar clases de preparación ICFES inglés?</h2>
 <p>Depende de dónde estás. Si estás en nivel A2 y quieres llegar a B1, el estudio autónomo con buenos recursos es suficiente si tienes disciplina. Si quieres llegar a B2 o tienes menos de 8 semanas para el examen, un tutor que analice tus simulacros y te dé retroalimentación real ahorra tiempo —y puede ser la diferencia entre quedar admitido o repetir el año. Conoce cómo funciona nuestra <a href="/preparacion-icfes">preparación para el inglés del ICFES</a> con simulacros incluidos.</p>
+<p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
   },
 
@@ -289,6 +291,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>El coreano tarda entre 1.000 y 1.500 horas para alcanzar fluidez conversacional (clasificado por el FSI como idioma de Categoría IV para angloparlantes; para hispanohablantes es similar). Son entre 2 y 4 años con estudio diario moderado.</p>
 <p>Lo que separa a los estudiantes que llegan del TOPIK II a los que abandonan en el mes 3 no es talento lingüístico: es la conexión con el idioma. Los que más avanzan son los que tienen una razón personal fuerte —una serie, un viaje planeado, un amigo coreano, un sueño de estudiar allá.</p>
 <p>Encuentra tu razón. El idioma vendrá solo si la razón es real. Si quieres empezar con estructura desde el primer día, conoce nuestro <a href="/clases-de-coreano">método de coreano para hispanohablantes</a> — diseñado específicamente para este camino.</p>
+<p>Lee también: <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a> y <a href="/blog/beca-gks-corea-del-sur-para-colombianos">Beca GKS de Corea del Sur para colombianos: requisitos y rol del TOPIK</a>.</p>
     `,
   },
 
@@ -385,6 +388,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong><a href="/examenes/toefl">Simulacros WeLearn</a></strong>: banco de preguntas estilo TOEFL con retroalimentación automática por sección.</li>
 </ul>
 <p>Si buscas preparación guiada con tutor 1:1, puedes revisar cómo funciona nuestro programa de <a href="/clases-de-ingles">preparación para exámenes internacionales de inglés</a>.</p>
+<p>Lee también: <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL en Colombia: ¿cuál es mejor para tu objetivo?</a> y <a href="/blog/toefl-ibt-estrategias-por-seccion">TOEFL iBT: estrategias por sección para subir el puntaje</a>.</p>
     `,
   },
 
@@ -482,6 +486,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>El vocabulario y la gramática del Nivel 1-2 son limitados y sistemáticos. No hay ambigüedades.</li>
 </ol>
 <p>El mayor reto no es el contenido: es la constancia. El coreano requiere práctica diaria. Veinte días de estudio intensivo no reemplazan seis meses de trabajo regular. Si quieres un plan estructurado con tutor desde el primer día, conoce nuestras <a href="/clases-de-coreano">clases de coreano con preparación TOPIK</a> incluida.</p>
+<p>Lee también: <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave y cuál presentar según tu nivel</a> y <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero en Colombia: la guía completa para 2026</a>.</p>
     `,
   },
   {
@@ -584,6 +589,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Si tienes un objetivo específico: sigue al destino, no al examen. Revisa los requisitos de la universidad o el programa migratorio al que aplicas y usa el puntaje que piden.</p>
 <p>Si no tienes un objetivo definido aún y quieres "tener el examen listo": <strong>IELTS Academic</strong> tiene mayor reconocimiento global y más opciones de sede en Colombia. Es la apuesta más segura si no sabes todavía a dónde vas.</p>
 <p>En cualquier caso, la preparación estructurada hace la diferencia. Puedes ver cómo abordamos ambos exámenes en nuestro programa de <a href="/clases-de-ingles">preparación para certificaciones de inglés</a>, o hacer un <a href="/examenes">simulacro gratuito de IELTS o TOEFL</a> para saber dónde estás ahora.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/cuanto-cuesta-el-ielts-en-colombia-2026">¿Cuánto cuesta el IELTS en Colombia en 2026?</a>.</p>
     `,
   },
   {
@@ -667,6 +673,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Por dónde empezar</h2>
 <p>Si ya estás en B1 y tu objetivo es llegar a B2 con orientación al mundo profesional, la ruta más eficiente combina trabajo en producción (hablar y escribir) con retroalimentación real de un tutor — no solo apps ni cursos grabados.</p>
 <p>En WeLearn trabajamos inglés profesional con enfoque en el entorno corporativo latinoamericano: reuniones, presentaciones, emails y preparación para IELTS o TOEFL si lo necesitas. Puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés</a> o hacer un <a href="/examenes">simulacro gratuito de IELTS</a> para ver tu nivel actual antes de decidir cualquier cosa.</p>
+<p>Lee también: <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a>.</p>
     `,
   },
   {
@@ -767,6 +774,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>El camino empieza ahora</h2>
 <p>La Beca GKS no es un sueño inalcanzable para colombianos. Es un proceso planificado. Y el coreano es el elemento que más puedes controlar desde hoy: no depende de tu historial académico pasado ni de tus cartas de recomendación — depende de que empieces a estudiarlo con método.</p>
 <p>Si tu meta es llegar al TOPIK Nivel 3 para la próxima convocatoria GKS, necesitas un plan de 8 a 12 meses. Puedes <a href="/clases-de-coreano">conocer cómo funciona nuestro método de coreano</a> — diseñado específicamente para hispanohablantes con objetivos concretos como el TOPIK — o leer primero nuestra <a href="/blog/aprender-coreano-desde-cero-guia-colombia">guía completa para aprender coreano desde cero en Colombia</a>.</p>
+<p>Lee también: <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a> y <a href="/blog/topik-i-vs-topik-ii-diferencias">TOPIK I vs TOPIK II: diferencias clave y cuál presentar según tu nivel</a>.</p>
     `,
   },
   {
@@ -852,6 +860,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 <p>Los estudiantes que más avanzan hacen ambas cosas. Después de las clases, practican con material real — series, música, podcasts, libros. Las series sin clases producen comprensión pasiva. Las clases sin series producen conocimiento sin naturalidad. La combinación produce fluidez real.</p>
 <p>Si quieres empezar con el coreano usando este método combinado, puedes revisar nuestro <a href="/clases-de-coreano">programa de coreano WeLearn</a> — diseñado específicamente para hispanohablantes que aprenden de contenido coreano. Para inglés con preparación para certificaciones, nuestro <a href="/clases-de-ingles">programa de inglés con IELTS y TOEFL</a> combina clases con práctica con material auténtico.</p>
+<p>Lee también: <a href="/blog/como-aprender-un-idioma-mas-rapido">Cómo aprender un idioma más rápido: los 7 principios que separan a los poliglotas</a> y <a href="/blog/como-mejorar-el-ingles-hablado">Por qué te bloqueas al hablar inglés y cómo superarlo</a>.</p>
     `,
   },
   {
@@ -942,6 +951,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>B2 → C1</strong>: 12–18 meses. Matices, vocabulario académico, fluidez sin esfuerzo. Preparación para exámenes como IELTS 7.0+ o TOEFL 95+.</li>
 </ul>
 <p>Si ya sabes tu nivel y quieres un plan concreto para subir al siguiente, puedes <a href="/clases-de-ingles">conocer cómo funcionan las clases de inglés en WeLearn</a> — el primer paso es una clase de diagnóstico gratis donde evaluamos tu nivel real y diseñamos el plan. También puedes hacer un <a href="/examenes">simulacro de IELTS gratuito</a> para tener un punto de referencia concreto hoy mismo.</p>
+<p>Lee también: <a href="/blog/ingles-para-trabajar-en-empresas-multinacionales">Inglés para trabajar en empresas multinacionales en Colombia</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a>.</p>
     `,
   },
   {
@@ -1007,6 +1017,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Si uno de tus objetivos es el IELTS, la sección de Speaking es la que más se beneficia de este tipo de práctica — y la más subestimada. El error más común: prepararse intensamente para Listening, Reading y Writing, y abordar Speaking la semana anterior al examen.</p>
 <p>La sección de Speaking del IELTS tiene 3 partes: una conversación personal (Part 1), un monólogo de 2 minutos sobre un tema dado (Part 2) y una discusión más profunda sobre ese tema (Part 3). La fluidez, la coherencia y el vocabulario en contexto son los criterios que más diferencian un Band 6 de un Band 7.</p>
 <p>Si quieres trabajar específicamente la sección de Speaking del IELTS o mejorar el inglés hablado para el trabajo, puedes <a href="/clases-de-ingles">conocer cómo funcionamos en WeLearn</a> — las clases 1:1 incluyen práctica de producción con retroalimentación en cada sesión.</p>
+<p>Lee también: <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a>.</p>
     `,
   },
   {
@@ -1067,6 +1078,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>La respuesta corta: verifica la convocatoria específica a la que vas a aplicar. Cada universidad, cada proceso migratorio y cada colegios profesional indica explícitamente qué módulo acepta. Nunca asumas.</p>
 <p>Si tienes un objetivo claro pero no sabes cuál módulo requiere, o si quieres prepararte para el IELTS con una estrategia específica para Academic o General Training, puedes <a href="/clases-de-ingles">agendar una clase de diagnóstico gratis en WeLearn</a> — en esa sesión revisamos tu objetivo, te orientamos sobre qué módulo necesitas y diseñamos el plan de preparación más eficiente.</p>
 <p>Y si quieres practicar antes con un simulacro gratuito, puedes <a href="/examenes/ielts">hacer el simulacro de IELTS</a> en nuestra plataforma.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses: plan semana a semana</a>.</p>
     `,
   },
   {
@@ -1175,6 +1187,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>La preparación autodidacta con este plan es posible si tienes disciplina y experiencia evaluando tu propio trabajo. El mayor riesgo de la preparación solo es el Writing: la autocorrección tiene un límite claro porque no puedes detectar los errores que cometes sistemáticamente — precisamente porque los cometes sin notarlos.</p>
 <p>Un tutor con experiencia en IELTS acelera significativamente la preparación en Writing y Speaking porque puede darte retroalimentación específica que tú solo no puedes generarte. En WeLearn, la preparación para IELTS es 1:1 con tutor asignado — la clase de diagnóstico gratis te permite evaluar el nivel, decidir el plan y empezar a prepararte con dirección clara.</p>
 <p>Si quieres agendar tu diagnóstico gratuito o tienes preguntas sobre la preparación, puedes hacerlo por <a href="/clases-de-ingles">nuestra página de clases de inglés</a>.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/ielts-writing-task-2-como-mejorar-el-band">IELTS Writing Task 2: cómo mejorar el Band en el ensayo argumentativo</a>.</p>
     `,
   },
   {
@@ -1266,6 +1279,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Con el plan descrito — simulacros semanales, análisis de errores y vocabulario activo — la mayoría de estudiantes con punto de partida A2 sube entre 10 y 20 puntos en 3 meses. Eso es suficiente para pasar de A2 a B1 en la mayoría de los casos.</p>
 <p>Para llegar a B2 (81–100) desde A2 generalmente se necesita entre 6 y 12 meses, dependiendo del punto de partida exacto y la consistencia de la preparación. B2 requiere un nivel real de inglés, no solo estrategia de examen.</p>
 <p>Si quieres prepararte con acompañamiento de un tutor, hacer simulacros en la plataforma de WeLearn y tener un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a> o hacer primero el <a href="/examenes/icfes">simulacro de diagnóstico gratis</a>.</p>
+<p>Lee también: <a href="/blog/puntaje-icfes-ingles-niveles-y-como-mejorar">Puntaje ICFES inglés: niveles, puntaje mínimo y cómo mejorarlo en 3 meses</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
   },
   {
@@ -1349,6 +1363,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   <li>Desde B2: 8–14 semanas.</li>
 </ul>
 <p>Si migrar a Canadá es tu objetivo y necesitas prepararte para el IELTS General Training, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a>. La clase de diagnóstico gratis identifica en cuánto tiempo puedes alcanzar el puntaje que necesitas según tu nivel actual.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/ielts-academic-vs-general-training">IELTS Academic vs General Training: ¿cuál necesitas tomar?</a>.</p>
     `,
   },
   {
@@ -1417,6 +1432,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   <li>Práctica de producción oral desde la segunda semana, aunque sean frases de 4 palabras.</li>
 </ol>
 <p>Si quieres aprender coreano con un método diseñado específicamente para hispanohablantes, con guía fonética desde el sistema de sonidos del español, puedes revisar <a href="/clases-de-coreano">nuestro programa de coreano</a> — incluye la ruta completa desde cero hasta conversación fluida.</p>
+<p>Lee también: <a href="/blog/aprender-coreano-desde-cero-guia-colombia">Aprender coreano desde cero en Colombia: la guía completa para 2026</a> y <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: cómo prepararlo desde cero y pasar al primer intento</a>.</p>
     `,
   },
   {
@@ -1503,6 +1519,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>100 puntos en el TOEFL equivale aproximadamente a IELTS 7.0. Para alcanzarlo desde nivel B1–B2, necesitas entre 12 y 20 semanas de preparación estructurada dependiendo de tu punto de partida.</p>
 <p>La sección que más fácilmente puede subir con estrategia es Reading (+5–8 puntos con 4 semanas de práctica intensiva). La que más tarda en mejorar es Speaking (requiere fluidez real, no solo estrategia).</p>
 <p>Si quieres prepararte para el TOEFL con una ruta específica por sección, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a> — las clases son 1:1 con tutor y se adaptan a las secciones donde más necesitas mejorar. También puedes <a href="/examenes/toefl">hacer el simulacro de TOEFL gratis</a> para tener una línea base antes de empezar.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación desde cero para colombianos</a> y <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL en Colombia: ¿cuál es mejor para tu objetivo?</a>.</p>
     `,
   },
   {
@@ -1657,6 +1674,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   <li><strong>Certificación si aplica</strong>: TOEFL 80+ o IELTS Academic 6.5+ si tu campo lo requiere (enfermería, medicina, algunas universidades).</li>
 </ol>
 <p>Si trabajar en EE.UU. o en una empresa americana desde Colombia es tu meta, puedes <a href="/clases-de-ingles">conocer cómo preparamos en WeLearn</a> — el programa incluye inglés profesional y preparación para certificaciones IELTS y TOEFL según tu objetivo específico.</p>
+<p>Lee también: <a href="/blog/ingles-para-trabajar-en-empresas-multinacionales">Inglés para trabajar en empresas multinacionales en Colombia</a> y <a href="/blog/ingles-para-enfermeras-colombianas">Inglés para enfermeras colombianas que quieren trabajar en el exterior</a>.</p>
     `,
   },
   {
@@ -1727,6 +1745,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>El precio del examen es solo una parte del costo real. Muchos colombianos presentan el IELTS dos o tres veces porque no se prepararon adecuadamente la primera vez — a un costo de $870.000–$920.000 COP por intento.</p>
 <p>Invertir en preparación antes de presentar el examen tiene más sentido financiero que repetirlo: el costo de 10–12 semanas de preparación con un tutor suele ser igual o menor al costo de un segundo intento del examen.</p>
 <p>Si estás considerando presentar el IELTS y quieres prepararte para pasarlo en el primer intento con el puntaje que necesitas, puedes <a href="/clases-de-ingles">conocer el programa de preparación IELTS de WeLearn</a> — empezamos con una clase de diagnóstico gratis que define exactamente cuánto tiempo necesitas.</p>
+<p>Lee también: <a href="/blog/como-prepararse-para-el-ielts-en-3-meses">Cómo prepararse para el IELTS en 3 meses: plan semana a semana</a> y <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL en Colombia: ¿cuál es mejor para tu objetivo?</a>.</p>
     `,
   },
   {
@@ -1803,6 +1822,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   <li>Prepárate con foco en el examen específico (IELTS Academic u OET). La preparación médica/clínica del OET lo hace particularmente valioso si vas a presentar IELTS o TOEFL: practica con materiales clínicos en inglés simultáneamente.</li>
 </ol>
 <p>Si eres enfermera y quieres prepararte para el IELTS Academic o el OET con el puntaje que requiere tu proceso de migración, puedes <a href="/clases-de-ingles">conocer el programa de preparación WeLearn</a> — la clase de diagnóstico gratis te dice exactamente cuánto tiempo necesitas y diseñamos el plan para tu objetivo específico.</p>
+<p>Lee también: <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá desde Colombia: qué puntaje de IELTS necesitas</a> y <a href="/blog/migrar-a-australia-con-ielts">Migrar a Australia desde Colombia: requisitos de IELTS y cómo prepararse</a>.</p>
     `,
   },
   {
@@ -2032,6 +2052,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>Considerando solo el precio del examen, el IELTS es más barato (~$870.000–$920.000 COP vs ~$950.000–$1.000.000 COP para el TOEFL). Sin embargo, el costo total de "obtener el puntaje que necesitas" puede ser diferente según cuántas veces necesites presentarlo.</p>
 <p>Si tu objetivo es específicamente universidades norteamericanas o el sistema de salud americano, el TOEFL tiene más reconocimiento histórico en EE.UU. Para migración, IELTS es preferido en la mayoría de procesos. Para más detalles sobre cuál elegir, revisa nuestra guía <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL: cuál tomar en Colombia</a>.</p>
 <p>Si quieres prepararte para el TOEFL iBT con simulacros y clases 1:1, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a> — en esa sesión evaluamos tu nivel, te orientamos sobre el examen correcto para tu objetivo y diseñamos el plan.</p>
+<p>Lee también: <a href="/blog/cuanto-cuesta-el-ielts-en-colombia-2026">¿Cuánto cuesta el IELTS en Colombia en 2026?</a> y <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación desde cero para colombianos</a>.</p>
     `,
   },
   {
@@ -2109,6 +2130,7 @@ Para Proficient English (7.0 en cada sección) desde B1–B2: 16–24 semanas.<b
 Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B2+.</p>
 <p>El requisito "en cada sección" hace que el perfil de preparación deba ser balanceado. No puedes compensar un Speaking débil con un Reading alto. Si tu Speaking es 5.5 y el resto es 7.0, el plan debe enfocarse intensamente en Speaking para alcanzar el 6.0 mínimo en esa sección.</p>
 <p>Si migrar a Australia es tu objetivo y necesitas prepararte para el IELTS con foco en el puntaje específico que requieres, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a>. El plan se diseña para que cada sección alcance el umbral requerido.</p>
+<p>Lee también: <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá desde Colombia: qué puntaje de IELTS necesitas</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a>.</p>
     `,
   },
   // ── Article 26 ──────────────────────────────────────────────────────────────
@@ -2230,6 +2252,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>Celpe-Bras vs otros certificados de portugués</h2>
 <p>Existen otros certificados (CAPLE de Portugal, DEPLE), pero el Celpe-Bras es el único reconocido en Brasil para los propósitos más comunes (universidades, homologaciones). Si tu objetivo es estudiar o trabajar en Portugal, el CAPLE puede ser más relevante. Si es Brasil, el Celpe-Bras es el estándar.</p>
 <p>En WeLearn preparamos para el Celpe-Bras con enfoque en producción real: escritura, conversación y materiales auténticos. <a href="/precios">Consulta nuestros planes</a> o <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20Celpe-Bras%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a>.</p>
+<p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía de preparación para colombianos</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a>.</p>
     `,
   },
 
@@ -2287,6 +2310,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>El método de los 11 pasos de WeLearn</h2>
 <p>En WeLearn diseñamos cada sesión diaria integrando estos principios: activación contextual, input comprensible graduado, producción guiada y repaso espaciado acumulativo. Cada día de aprendizaje combina los mecanismos de adquisición más eficientes de manera que se complementan, no que se repiten.</p>
 <p>Si quieres aprender cómo funciona el método en detalle, <a href="/metodo">visita la página del método WeLearn</a>. Si quieres empezar a aplicarlo a tu idioma objetivo, <a href="/precios">revisa nuestros planes</a>.</p>
+<p>Lee también: <a href="/blog/aprender-idiomas-con-series-y-peliculas">Aprender idiomas con series y películas: cómo hacerlo bien</a> y <a href="/blog/como-mejorar-el-ingles-hablado">Por qué te bloqueas al hablar inglés y cómo superarlo</a>.</p>
     `,
   },
 
@@ -2434,6 +2458,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   <li>Algunas empresas multinacionales francesas en Colombia (Total, BNP Paribas, Renault) lo valoran para perfiles bilingües</li>
 </ul>
 <p>En WeLearn preparamos para todos los niveles del DELF con material actualizado y práctica de producción oral y escrita con retroalimentación real. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DELF%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para empezar con una diagnóstico gratuito.</p>
+<p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse desde Colombia</a>.</p>
     `,
   },
   // ── Article 31 ─────────────────────────────────────────────────────────────
@@ -2531,6 +2556,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>¿Qué ofrece WeLearn?</h2>
 <p>En WeLearn manejamos clases 1:1 y grupales con precios decrecientes por volumen de horas, preparación para IELTS y TOEFL con seguimiento real, y plataforma de simulacros gratuita. Si quieres saber qué plan es mejor para ti, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20cuesta%20aprender%20ingl%C3%A9s%20con%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> y te damos una recomendación sin compromiso.</p>
+<p>Lee también: <a href="/blog/clases-de-ingles-online-colombia">Clases de inglés online en Colombia: guía 2026</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
   },
 
