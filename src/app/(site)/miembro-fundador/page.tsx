@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import s from './page.module.css';
 
 const WA = '573005004253';
@@ -243,6 +244,31 @@ export default function MiembroFundadorPage() {
                 <li>✅ Preparación completa para TOPIK I y II</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════ BLOG ══════════════ */}
+      <section className={s.section} style={{ paddingTop: '2.5rem', paddingBottom: '3rem' }}>
+        <div className={s.wrap}>
+          <p className={s.sectionEyebrow}>Del blog WeLearn</p>
+          <h2 className={s.h2} style={{ marginBottom: '1.5rem' }}>Aprende antes de empezar</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1rem' }}>
+            {[
+              { cat: 'Coreano', title: 'Aprender coreano desde cero en Colombia: la guía completa', slug: 'aprender-coreano-desde-cero-guia-colombia' },
+              { cat: 'Coreano', title: 'TOPIK II: cómo pasar del nivel 2 al nivel 4', slug: 'topik-ii-como-subir-de-nivel' },
+              { cat: 'Coreano', title: 'Beca GKS de Corea del Sur para colombianos', slug: 'beca-gks-corea-del-sur-para-colombianos' },
+            ].map(a => (
+              <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#c8202e', background: 'rgba(200,32,46,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
+                <p style={{ fontSize: '0.9rem', fontWeight: 600, lineHeight: 1.4, color: 'var(--ink)', margin: 0 }}>{a.title} →</p>
+              </Link>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <Link href="/blog" style={{ fontSize: '0.9rem', color: 'var(--muted)', textDecoration: 'none', fontWeight: 500 }}>
+              Ver todos los artículos →
+            </Link>
           </div>
         </div>
       </section>
