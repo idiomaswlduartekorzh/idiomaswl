@@ -6534,6 +6534,886 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF y DALF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/cuanto-tiempo-para-aprender-un-idioma-desde-cero">¿Cuánto tiempo se necesita para aprender un idioma desde cero?</a>.</p>
     `,
   },
+  // ── Article 91 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-listening-sections-3-4-estrategias-avanzadas',
+    title: 'IELTS Listening Sections 3 y 4: estrategias para las partes más difíciles',
+    description: 'Las secciones 3 y 4 del IELTS Listening son las más exigentes. Aprende las estrategias específicas para sacar banda 7 o más en estas partes académicas.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'IELTS',
+    tags: ['IELTS', 'Listening', 'banda 7', 'academic', 'estrategias'],
+    body: `
+<h2>Por qué las secciones 3 y 4 del IELTS Listening son diferentes</h2>
+<p>El IELTS Listening tiene cuatro secciones en orden de dificultad creciente. Las secciones 1 y 2 son conversacionales y cotidianas. Las secciones 3 y 4 son académicas y presentan desafíos específicos que sorprenden a muchos candidatos:</p>
+<ul>
+  <li><strong>Sección 3</strong>: conversación académica entre 2–4 personas (estudiantes + tutor, discusión de seminario, revisión de proyecto). Más voces, turnos de habla rápidos, opiniones que cambian.</li>
+  <li><strong>Sección 4</strong>: monólogo académico — una conferencia universitaria completa sin pausas. Vocabulario especializado, estructura argumentativa, sin repetición.</li>
+</ul>
+<p>Un candidato que saca banda 6 en secciones 1–2 puede caer a banda 4.5 en la sección 4 si no prepara específicamente estos formatos.</p>
+
+<h2>Sección 3: maneja múltiples voces</h2>
+<h3>El problema del turno de habla</h3>
+<p>Con 2, 3 o 4 hablantes, el audio cambia de voz rápidamente. El error más común: perder el hilo de quién dice qué y responder con la opinión del hablante equivocado. Las preguntas frecuentemente preguntan sobre "the student's opinion" vs. "the tutor's opinion."</p>
+
+<h3>Estrategia pre-listening para sección 3</h3>
+<ol>
+  <li>Lee las preguntas e identifica cuántos hablantes hay (el enunciado lo dice).</li>
+  <li>Marca con letras los hablantes: A = estudiante, B = tutor, C = otro estudiante.</li>
+  <li>Identifica si las preguntas preguntan por el contenido (qué se dice) o por el hablante (quién lo dice).</li>
+  <li>Subraya las palabras clave que anticipas escuchar.</li>
+</ol>
+
+<h3>Señales de transición entre hablantes</h3>
+<p>Los hablantes en IELTS Listening Section 3 usan marcadores de discurso que señalan cambios de opinión o de turno:</p>
+<ul>
+  <li>"Actually, I think..." / "To be honest..." — el hablante va a contradecir o matizar</li>
+  <li>"Yes, but..." / "I'm not so sure about that..." — desacuerdo</li>
+  <li>"Exactly!" / "That's a good point" — acuerdo, señal de continuidad</li>
+  <li>"What about...?" / "Have you considered...?" — cambio de subtema</li>
+</ul>
+
+<h3>Question types frecuentes en sección 3</h3>
+<ul>
+  <li><strong>Multiple choice</strong> (una o varias respuestas correctas): escucha hasta que el hablante concluya — frecuentemente expresan una opinión inicial que luego corrigen.</li>
+  <li><strong>Matching</strong>: relacionar hablantes con opiniones. Clave: el audio usa sinónimos, no las palabras exactas del test.</li>
+  <li><strong>Plan/diagram labelling</strong>: menos común en S3, más en S2, pero aparece.</li>
+</ul>
+
+<h2>Sección 4: domina el monólogo académico</h2>
+<h3>La estructura de una conferencia IELTS</h3>
+<p>La sección 4 sigue la estructura de una conferencia universitaria. Si internalizas este esquema, puedes anticipar cuándo vendrá la información que buscas:</p>
+<ol>
+  <li><strong>Introducción</strong>: el tema, por qué importa, lo que se cubrirá (1–2 min)</li>
+  <li><strong>Background/context</strong>: historia, estadísticas, definiciones (2–3 min)</li>
+  <li><strong>Cuerpo principal</strong>: 2–4 puntos o ejemplos con detalles específicos (5–6 min)</li>
+  <li><strong>Conclusión</strong>: implicaciones, preguntas abiertas, resumen (1 min)</li>
+</ol>
+<p>Las respuestas correctas están distribuidas a lo largo de toda la conferencia — una por subtema aproximadamente.</p>
+
+<h3>Vocabulario académico que aparece en sección 4</h3>
+<p>La conferencia usa vocabulario del Academic Word List (AWL). Palabras como <em>fundamental, subsequent, hypothesis, implications, albeit, hitherto, constitute, predominantly</em> aparecen con frecuencia. Estudia las primeras 100 palabras del AWL antes del examen.</p>
+
+<h3>Notas mientras escuchas</h3>
+<p>En la sección 4 tienes tiempo para leer las preguntas antes del audio. Usa ese tiempo para:</p>
+<ul>
+  <li>Predecir el tipo de respuesta: ¿número? ¿adjetivo? ¿sustantivo plural?</li>
+  <li>Identificar el límite de palabras (una palabra, dos palabras, o número)</li>
+  <li>Notar si la pregunta tiene secuencia (preguntas 32, 33, 34 correlacionadas con el flujo del audio)</li>
+</ul>
+
+<h3>Errores ortográficos = respuesta incorrecta</h3>
+<p>En sección 4 (y todo el Listening), la ortografía cuenta. "Fotosíntesis" escrito "photosintesis" en vez de "photosynthesis" es incorrecto. Practica la ortografía de términos científicos, geográficos y técnicos que suelen aparecer.</p>
+
+<h2>Tabla de bandas en Listening y qué implica</h2>
+<table>
+  <thead><tr><th>Aciertos (de 40)</th><th>Banda</th></tr></thead>
+  <tbody>
+    <tr><td>39–40</td><td>9.0</td></tr>
+    <tr><td>37–38</td><td>8.5</td></tr>
+    <tr><td>35–36</td><td>8.0</td></tr>
+    <tr><td>32–34</td><td>7.5</td></tr>
+    <tr><td>30–31</td><td>7.0</td></tr>
+    <tr><td>26–29</td><td>6.5</td></tr>
+    <tr><td>23–25</td><td>6.0</td></tr>
+    <tr><td>18–22</td><td>5.5</td></tr>
+  </tbody>
+</table>
+<p>Para banda 7.0 necesitas 30 de 40 correctas. Para banda 7.5, 32 de 40. En las secciones 3 y 4 hay 20 preguntas — acierta 14 o más de ellas y ya tienes la base para banda 7.</p>
+
+<h2>Práctica específica para S3 y S4</h2>
+<ul>
+  <li><strong>TED Talks académicas</strong>: escucha sin subtítulos 10 min por día. Secciones sobre ciencia, tecnología, sociedad. Toma notas del esquema principal.</li>
+  <li><strong>BBC Radio 4 "In Our Time"</strong>: paneles académicos — perfectos para S3 (múltiples voces).</li>
+  <li><strong>Cambridge IELTS 14–19</strong>: practica S3 y S4 de cada test completo bajo condiciones reales.</li>
+  <li><strong>British Council "Road to IELTS"</strong>: ejercicios gratuitos por tipo de pregunta.</li>
+</ul>
+
+<h2>WeLearn y la preparación IELTS Listening</h2>
+<p>En WeLearn trabajamos las cuatro secciones del Listening con estrategias específicas por tipo de pregunta. Los candidatos que llegan con banda 5.5 alcanzan 7.0+ en 8–12 semanas con práctica guiada. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20Listening%20y%20mejorar%20mi%20banda.%20%C2%BFTienen%20plan%20disponible%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empecemos con un diagnóstico</a>.</p>
+<p>También te puede interesar: <a href="/blog/ielts-de-banda-6-a-banda-7-que-cambia">De banda 6 a banda 7: qué cambia y cómo lograrlo</a> y <a href="/blog/ielts-reading-true-false-not-given-estrategia">IELTS Reading: True, False, Not Given — estrategia completa</a>.</p>
+    `,
+  },
+
+  // ── Article 92 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'coreano-k-dramas-para-aprender-series-recomendadas',
+    title: 'Aprender coreano con K-dramas: qué funciona y qué no',
+    description: 'Ver K-dramas puede acelerar tu aprendizaje de coreano, pero solo si lo haces correctamente. Guía práctica con series recomendadas según tu nivel.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Coreano',
+    tags: ['Coreano', 'K-dramas', 'aprendizaje', 'Netflix', 'recursos'],
+    body: `
+<h2>¿Realmente se aprende coreano viendo K-dramas?</h2>
+<p>La respuesta honesta: parcialmente sí, si tienes ya una base — y casi nada, si empiezas desde cero. Los K-dramas son una herramienta poderosa de <strong>refuerzo y exposición auténtica</strong>, no un método de aprendizaje inicial.</p>
+<p>Lo que sí logran los K-dramas:</p>
+<ul>
+  <li>Entrenamiento auditivo — tu oído se acostumbra al ritmo, la entonación y los sonidos del coreano real</li>
+  <li>Vocabulario contextual — las palabras que más se usan en conversación cotidiana</li>
+  <li>Frases hechas y expresiones coloquiales que no están en los libros</li>
+  <li>Motivación — ver el idioma en contexto real mantiene el interés</li>
+</ul>
+<p>Lo que no logran solos:</p>
+<ul>
+  <li>Enseñarte gramática sistemáticamente</li>
+  <li>Corregir tu pronunciación</li>
+  <li>Prepararte para un examen (TOPIK)</li>
+  <li>Darte coreano formal (el de los dramas es informal y a veces incorrecto)</li>
+</ul>
+
+<h2>Método correcto: Active Watching vs. Passive Watching</h2>
+<h3>Passive watching (poco efectivo)</h3>
+<p>Ver K-dramas con subtítulos en español sin pausar. Es entretenido y hay algo de exposición auditiva, pero el cerebro está leyendo en español y no procesando el coreano. Aprendizaje real: mínimo.</p>
+
+<h3>Active watching (muy efectivo)</h3>
+<ol>
+  <li><strong>Subtítulos en coreano</strong>: necesitas al menos nivel básico de lectura hangul (A1).</li>
+  <li><strong>Pausa + repite</strong>: cuando escuchas una frase nueva, pausa, intenta entenderla, luego lee el subtítulo, luego repite en voz alta.</li>
+  <li><strong>Anki del drama</strong>: toma 5–10 palabras o frases nuevas por episodio y añádelas a tu mazo de flashcards.</li>
+  <li><strong>Shadow talk</strong>: repite las líneas imitando exactamente la entonación del actor. Esto mejora pronunciación y fluidez.</li>
+</ol>
+
+<h2>K-dramas recomendados por nivel</h2>
+<h3>Nivel principiante (A1–A2): habla lenta y vocabulario básico</h3>
+<ul>
+  <li><strong>My Love from the Star (별에서 온 그대)</strong>: ritmo moderado, vocabulario cotidiano.</li>
+  <li><strong>Coffee Prince (커피 프린스)</strong>: situaciones cotidianas, vocabulario de café y relaciones.</li>
+  <li><strong>My Mister (나의 아저씨)</strong>: conversaciones más lentas, diálogos reflexivos.</li>
+</ul>
+<h3>Nivel intermedio (B1): variedad de registros</h3>
+<ul>
+  <li><strong>Reply 1988 (응답하라 1988)</strong>: vocabulario familiar, expresiones coloquiales de los 80s–90s.</li>
+  <li><strong>Hospital Playlist (슬기로운 의사생활)</strong>: vocabulario médico + conversaciones de amigos. Bueno para vocabulario técnico.</li>
+  <li><strong>Misaeng (미생)</strong>: coreano de oficina y negocios. Perfecto si el objetivo es trabajar en empresa coreana.</li>
+</ul>
+<h3>Nivel avanzado (B2–C1): coreano natural y acelerado</h3>
+<ul>
+  <li><strong>Signal (시그널)</strong>: coreano policial intenso, vocabulario especializado.</li>
+  <li><strong>Mr. Sunshine (미스터 션샤인)</strong>: coreano histórico y formal — exigente pero muy enriquecedor.</li>
+  <li><strong>Squid Game (오징어 게임)</strong>: coreano coloquial intenso y expresiones de jerga.</li>
+</ul>
+
+<h2>Vocabulario clave que aprenderás en K-dramas</h2>
+<p>Estas expresiones aparecen en casi todos los dramas:</p>
+<ul>
+  <li>아이고 (aigu) — expresión de sorpresa o lamento (equivalente a "¡ay!")</li>
+  <li>진짜요? (jinjjayo?) — ¿De verdad?</li>
+  <li>어떻게 (eotteoke) — ¿Cómo? / ¿Qué hago?</li>
+  <li>괜찮아요 (gwaenchanayo) — Estoy bien / No hay problema</li>
+  <li>빨리빨리 (ppallippalli) — Rápido, rápido — expresión cultural de urgencia</li>
+  <li>대박 (daebak) — ¡Increíble! / ¡Está buenísimo!</li>
+</ul>
+
+<h2>Netflix tiene subtítulos en coreano — cómo activarlos</h2>
+<p>En Netflix puedes cambiar el subtítulo de audio al coreano: ve a "Subtítulos/Audio" durante la reproducción y selecciona "Coreano" en subtítulos. Esto muestra el texto en hangul sincronizado con el audio — perfecto para active watching.</p>
+<p>Herramienta adicional: la extensión <strong>Language Reactor</strong> (Chrome) muestra subtítulos duales (coreano + español) y permite hacer clic en cualquier palabra para ver su significado y guardarla en flashcards.</p>
+
+<h2>Los K-dramas no reemplazan las clases</h2>
+<p>Muchos estudiantes pasan meses viendo dramas con la expectativa de "absorber" el idioma. No funciona así. Los K-dramas son el mejor complemento cuando ya tienes la gramática base de A1–B1. Si empiezas desde cero, primero construye la estructura — hangul, partículas, conjugaciones básicas — y luego usa los dramas para acelerar.</p>
+<p>En WeLearn combinamos clases estructuradas con recursos como K-dramas, canciones y podcasts para que el aprendizaje sea efectivo <em>y</em> entretenido. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano.%20%C2%BFComo%20funciona%20el%20metodo%20de%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Pregúntanos cómo funciona el programa</a>.</p>
+<p>También te puede interesar: <a href="/blog/coreano-pronunciacion-batchim-consonantes-finales">Pronunciación coreana: batchim y consonantes finales</a> y <a href="/blog/topik-1-preparacion-guia-para-principiantes">TOPIK I: guía de preparación para principiantes</a>.</p>
+    `,
+  },
+
+  // ── Article 93 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'migrar-a-nueva-zelanda-ingles-requisitos-visa-2026',
+    title: 'Migrar a Nueva Zelanda: requisitos de inglés y tipos de visa en 2026',
+    description: 'Nueva Zelanda es uno de los destinos más buscados por colombianos y latinoamericanos. Conoce los requisitos de inglés para cada tipo de visa y cómo prepararte.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'Migración',
+    tags: ['Migración', 'Nueva Zelanda', 'IELTS', 'visa', 'inglés'],
+    body: `
+<h2>Por qué Nueva Zelanda atrae a latinoamericanos</h2>
+<p>Nueva Zelanda combina alta calidad de vida, seguridad, naturaleza y un mercado laboral con escasez en sectores clave: salud, construcción, tecnología, agricultura e ingeniería. El país recibe inmigrantes con sistema de puntos similar al canadiense. En 2025–2026, con el sistema Skilled Migrant Category reformado, las oportunidades son reales para perfiles calificados de Colombia, Venezuela, Argentina y Brasil.</p>
+
+<h2>Sistema migratorio de Nueva Zelanda — visión general</h2>
+<p>Immigration New Zealand (INZ) gestiona cuatro rutas principales:</p>
+<ol>
+  <li><strong>Skilled Migrant Category (SMC)</strong>: visa permanente por puntos — trabajo calificado + inglés + edad + educación</li>
+  <li><strong>Accredited Employer Work Visa (AEWV)</strong>: trabajo temporal con empleador acreditado — la más usada en 2024–2026</li>
+  <li><strong>Student Visa</strong>: para estudiar en universidades neozelandesas</li>
+  <li><strong>Working Holiday Visa</strong>: turismo + trabajo hasta 12 meses, para menores de 30 años (algunos países hasta 35)</li>
+</ol>
+
+<h2>Requisitos de inglés por tipo de visa</h2>
+<h3>Skilled Migrant Category (SMC)</h3>
+<p>Requiere demostrar inglés "competente" como mínimo. Las pruebas aceptadas y puntajes mínimos son:</p>
+<table>
+  <thead><tr><th>Prueba</th><th>Puntaje mínimo</th></tr></thead>
+  <tbody>
+    <tr><td>IELTS Academic/General</td><td>Banda global 6.5, no menos de 6.0 en ningún módulo</td></tr>
+    <tr><td>TOEFL iBT</td><td>79 total, no menos de 18 en cualquier sección</td></tr>
+    <tr><td>PTE Academic</td><td>58 promedio, no menos de 50 en ninguna habilidad</td></tr>
+    <tr><td>Cambridge C1/C2</td><td>176 general, no menos de 169 en ninguna habilidad</td></tr>
+  </tbody>
+</table>
+<p>Importante: el requisito es "overall" — pero si tienes una sub-banda baja (ej. Writing 5.5), puede afectar tu puntaje total aunque el promedio sea 6.5.</p>
+
+<h3>Accredited Employer Work Visa (AEWV)</h3>
+<p>El empleador generalmente requiere inglés funcional, pero INZ no siempre exige un examen estandarizado. Sin embargo, para empleadores en sectores regulados (salud, educación), se exige IELTS o equivalente. Para trabajo no regulado, depende del empleador.</p>
+
+<h3>Student Visa</h3>
+<p>Las universidades neozelandesas (University of Auckland, Victoria University of Wellington, University of Canterbury) aceptan:</p>
+<ul>
+  <li>IELTS Academic: generalmente 6.0–6.5 para posgrado, 5.5–6.0 para pregrado</li>
+  <li>TOEFL iBT: 80–90 para posgrado</li>
+  <li>Algunos programas tienen cursos de inglés pre-ingreso si tienes nivel más bajo</li>
+</ul>
+
+<h3>Working Holiday Visa</h3>
+<p>Colombia tiene acuerdo de Working Holiday con Nueva Zelanda desde 2022 para menores de 35 años. No requiere examen de inglés — pero necesitas inglés básico para comunicarte con empleadores. B1 es el mínimo práctico.</p>
+
+<h2>Nueva Zelanda vs. Canadá vs. Australia: comparativa de inglés requerido</h2>
+<table>
+  <thead><tr><th>País</th><th>Visa principal</th><th>IELTS mínimo (inmigración)</th></tr></thead>
+  <tbody>
+    <tr><td>Nueva Zelanda</td><td>SMC</td><td>6.5 global</td></tr>
+    <tr><td>Canadá</td><td>Express Entry</td><td>6.0 CLB 7 (equivalente)</td></tr>
+    <tr><td>Australia</td><td>Skilled Independent 189</td><td>6.0–7.0 según categoría</td></tr>
+    <tr><td>Reino Unido</td><td>Skilled Worker</td><td>B1 (cualquier prueba aprobada)</td></tr>
+  </tbody>
+</table>
+
+<h2>Sectores con mayor demanda en Nueva Zelanda</h2>
+<ul>
+  <li><strong>Salud</strong>: enfermería, medicina general, odontología, fisioterapia — altamente demandados con fast-track migratorio</li>
+  <li><strong>Construcción e ingeniería</strong>: electricistas, ingenieros civiles, arquitectos</li>
+  <li><strong>TI</strong>: desarrolladores, analistas de datos, ciberseguridad</li>
+  <li><strong>Agricultura</strong>: sector estacional con Working Holiday principalmente</li>
+  <li><strong>Educación</strong>: profesores con título reconocido + inglés alto</li>
+</ul>
+
+<h2>Timeline realista para un colombiano</h2>
+<p>Si estás en nivel B1 de inglés y quieres llegar a IELTS 6.5:</p>
+<ul>
+  <li>B1 → B2: 4–6 meses con 8–10 horas semanales de estudio</li>
+  <li>B2 → IELTS 6.5: 2–3 meses de preparación específica</li>
+  <li>Total estimado: 6–9 meses desde B1</li>
+</ul>
+<p>Si estás en A2, añade 4–6 meses más para llegar a B1 sólido.</p>
+
+<h2>WeLearn y la preparación para Nueva Zelanda</h2>
+<p>Trabajamos con candidatos a Nueva Zelanda, Australia y Canadá preparando IELTS con el objetivo específico de cada visa. Conocemos los sub-bandas críticas y diseñamos el plan de estudio para que no quedes corto en Writing o Speaking. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20IELTS%20para%20migrar%20a%20Nueva%20Zelanda.%20%C2%BFTienen%20un%20programa%3F" target="_blank" rel="noopener noreferrer">Cuéntanos tu perfil y te orientamos</a>.</p>
+<p>Lee también: <a href="/blog/migrar-a-australia-ielts-visa-puntos-2026">Migrar a Australia: IELTS, visa por puntos y oportunidades</a> y <a href="/blog/ingles-para-canada-express-entry-requisitos-2026">Inglés para Canadá Express Entry 2026</a>.</p>
+    `,
+  },
+
+  // ── Article 94 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-writing-task-2-tipos-de-ensayo-y-estructura',
+    title: 'IELTS Writing Task 2: tipos de ensayo, estructura y errores comunes',
+    description: 'El Task 2 del IELTS Writing vale el 66% de tu nota. Aprende los 5 tipos de ensayo, cómo estructurarlos correctamente y los errores que bajan tu banda.',
+    date: '2026-05-31',
+    readTime: 12,
+    category: 'IELTS',
+    tags: ['IELTS', 'Writing', 'Task 2', 'ensayo', 'banda 7'],
+    body: `
+<h2>Por qué el Task 2 es el más importante del Writing</h2>
+<p>En el IELTS Writing hay dos tareas: Task 1 (150 palabras, 33% de la nota) y Task 2 (250 palabras, 67% de la nota). La mayoría de candidatos invierten más tiempo en Task 1 — un error estratégico. Si Task 2 va mal, el Writing global no puede subir de banda 6 aunque Task 1 sea perfecto.</p>
+<p>Task 2 es un ensayo de opinión o argumentación sobre un tema de actualidad. Tienes 40 minutos para escribirlo. El evaluador califica cuatro criterios: Task Achievement, Coherence & Cohesion, Lexical Resource, Grammatical Range & Accuracy.</p>
+
+<h2>Los 5 tipos de pregunta Task 2</h2>
+<h3>Tipo 1: Opinion (Agree/Disagree)</h3>
+<p><em>Ejemplo: "Technology is making young people more isolated. To what extent do you agree or disagree?"</em></p>
+<p>Estructura ideal:</p>
+<ul>
+  <li>Intro: parafrasea + da tu posición clara (acuerdo total, desacuerdo total, o acuerdo parcial)</li>
+  <li>Párrafo 2: primer argumento a favor de tu posición</li>
+  <li>Párrafo 3: segundo argumento o contrapunto (si es posición parcial)</li>
+  <li>Conclusión: reafirma tu posición</li>
+</ul>
+<p>Error frecuente: "to some extent I agree, to some extent I disagree" — posición ambigua. El evaluador quiere una posición clara. Puedes matizar ("while X has merit, overall I believe Y") pero con dirección definida.</p>
+
+<h3>Tipo 2: Discussion (Discuss both views + opinion)</h3>
+<p><em>Ejemplo: "Some people think governments should invest more in public transport. Others believe private transport is preferable. Discuss both views and give your opinion."</em></p>
+<p>Estructura:</p>
+<ul>
+  <li>Intro: parafrasea + anticipa que discutirás ambas vistas + opción de dar tu opinión aquí o en la conclusión</li>
+  <li>Párrafo 2: primera vista (la que NO es tu opinión)</li>
+  <li>Párrafo 3: segunda vista (la que SÍ es tu opinión, con más argumentos)</li>
+  <li>Conclusión: refuerza tu opinión</li>
+</ul>
+
+<h3>Tipo 3: Problem-Solution</h3>
+<p><em>Ejemplo: "Traffic congestion in cities is a growing problem. What are the causes and what measures can be taken to address this?"</em></p>
+<p>Estructura:</p>
+<ul>
+  <li>Intro: parafrasea el problema</li>
+  <li>Párrafo 2: causas (2–3 causas con explicación)</li>
+<li>Párrafo 3: soluciones (2–3 soluciones concretas)</li>
+  <li>Conclusión: resumen</li>
+</ul>
+
+<h3>Tipo 4: Advantages-Disadvantages</h3>
+<p><em>Ejemplo: "Working from home has become more common. What are the advantages and disadvantages of this trend?"</em></p>
+<p>Si la pregunta pide advantages AND disadvantages, presenta ambos aunque tengas una opinión. Si pide "do the advantages outweigh the disadvantages?", debes dar tu posición clara.</p>
+
+<h3>Tipo 5: Two-part question</h3>
+<p><em>Ejemplo: "Why do people prefer to work abroad? What are the effects on their home country?"</em></p>
+<p>Cada párrafo del cuerpo responde una pregunta. No mezcles las respuestas.</p>
+
+<h2>Estructura universal recomendada (4 párrafos)</h2>
+<ol>
+  <li><strong>Introducción (40–60 palabras)</strong>: 2–3 oraciones. Parafrasea el tema (nunca copies la pregunta). Da tu posición o anticipa los puntos.</li>
+  <li><strong>Párrafo 1 cuerpo (80–100 palabras)</strong>: idea principal + desarrollo + ejemplo.</li>
+  <li><strong>Párrafo 2 cuerpo (80–100 palabras)</strong>: segunda idea + desarrollo + ejemplo.</li>
+  <li><strong>Conclusión (30–50 palabras)</strong>: résuma tu posición. Nunca introduces ideas nuevas.</li>
+</ol>
+<p>Total: 250–280 palabras. Más de 350 no añade puntos y te roba tiempo.</p>
+
+<h2>Cohesion & Coherence: cómo conectar ideas correctamente</h2>
+<p>Los evaluadores revisan que el texto fluya lógicamente. Usa conectores variados — pero no los sobre-uses:</p>
+<ul>
+  <li><strong>Añadir</strong>: Furthermore, Moreover, In addition, Additionally</li>
+  <li><strong>Contrastar</strong>: However, Nevertheless, On the other hand, Conversely</li>
+  <li><strong>Ejemplificar</strong>: For instance, For example, To illustrate</li>
+  <li><strong>Concluir</strong>: In conclusion, To summarise, Overall</li>
+  <li><strong>Causa-efecto</strong>: As a result, Consequently, This leads to, Therefore</li>
+</ul>
+<p>Error frecuente: empezar cada oración con un conector ("Firstly… Secondly… Thirdly… Finally…") — mecánico y repetitivo. Varía la estructura de las oraciones.</p>
+
+<h2>Lexical Resource: vocabulario que sube tu banda</h2>
+<p>Banda 5: vocabulario básico, muchas repeticiones.<br>
+Banda 6: algo de variación, algunos errores de colocación.<br>
+Banda 7: vocabulario apropiado al tema, colocaciones correctas, pocos errores.<br>
+Banda 8: amplio rango léxico, uso idiomático natural.</p>
+<p>Para subir a banda 7: aprende "word families" — sustantivo, verbo, adjetivo, adverbio de cada tema. Ej. educate / education / educational / educationally. Usa nominalizaciones: "the rise of urbanisation" en vez de "more people move to cities."</p>
+
+<h2>Errores que bajan la banda automáticamente</h2>
+<ul>
+  <li>Copiar la pregunta textualmente en la introducción → Task Achievement penalizado</li>
+  <li>Menos de 250 palabras → penalización automática</li>
+  <li>Sin conclusión → Coherence penalizado</li>
+  <li>Cambiar de opinión entre el primer párrafo y la conclusión → inconsistencia</li>
+  <li>Usar solo tiempos simples (presente y pasado) → Grammatical Range bajo</li>
+  <li>Bullet points o listas → formato incorrecto para Task 2</li>
+</ul>
+
+<h2>WeLearn y la preparación IELTS Writing</h2>
+<p>Writing es la habilidad más difícil de mejorar sin retroalimentación experta. En WeLearn corregimos tus ensayos Task 2 con criterios de banda real y te mostramos exactamente qué cambiar para subir medio punto o un punto. <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20mejorar%20mi%20IELTS%20Writing%20Task%202.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos esta semana</a>.</p>
+<p>También te puede interesar: <a href="/blog/ielts-writing-task-1-como-describir-graficos-tablas-diagramas">IELTS Writing Task 1: cómo describir gráficos, tablas y diagramas</a> y <a href="/blog/ielts-de-banda-6-a-banda-7-que-cambia">De banda 6 a banda 7: qué cambia</a>.</p>
+    `,
+  },
+
+  // ── Article 95 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-idiomas-tecnica-inmersion-en-casa',
+    title: 'Inmersión en casa: cómo crear un ambiente de idioma sin viajar',
+    description: 'No necesitas vivir en el extranjero para hacer inmersión lingüística. Técnicas probadas para crear un ambiente de exposición diaria al idioma que quieres aprender.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Método',
+    tags: ['Método', 'inmersión', 'aprendizaje', 'autodidacta', 'hábitos'],
+    body: `
+<h2>El mito de "necesito vivir allá para aprender el idioma"</h2>
+<p>Vivir en un país de habla de la lengua objetivo acelera el aprendizaje — pero no porque el ambiente sea mágico. Lo que funciona es la <strong>cantidad de exposición diaria</strong>. Una persona en Colombia que consume 3–4 horas de inglés al día aprenderá más rápido que alguien en Londres que solo habla con hispanohablantes y consume contenido en español.</p>
+<p>La inmersión en casa es sistemática, no accidental. Se construye.</p>
+
+<h2>El principio: saturación de la lengua objetivo</h2>
+<p>Tu cerebro aprende un idioma cuando lo encuentra frecuentemente en contextos variados. La meta es convertir el idioma en una presencia constante en tu día — no en una "tarea" que haces 30 minutos y luego desaparece.</p>
+<p>Nivel de exposición diaria recomendado:</p>
+<ul>
+  <li><strong>Principiante</strong>: 1 hora de input + 30 min de práctica activa</li>
+  <li><strong>Intermedio</strong>: 2 horas de input + 1 hora de producción (habla o escritura)</li>
+  <li><strong>Avanzado</strong>: 3–4 horas de uso real (trabajo, entretenimiento, estudio)</li>
+</ul>
+
+<h2>Técnicas de inmersión en casa — por habilidad</h2>
+
+<h3>Listening (comprensión auditiva)</h3>
+<ul>
+  <li><strong>Cambia el idioma de tus dispositivos</strong>: teléfono, computador, apps, asistente de voz — todo al idioma objetivo. Al principio es incómodo; en 2 semanas, normal.</li>
+  <li><strong>Podcasts en el desplazamiento</strong>: cocinar, ejercitarse, manejar — usa ese tiempo. Podcasts para principiantes (Slow Spanish, Coffee Break French, TTMIK para coreano) o nativos (NPR, France Inter, KBS World Radio).</li>
+  <li><strong>Series con audio en el idioma objetivo</strong>: no solo subtítulos — cambia el audio al idioma. Incluso si no entiendes todo, el oído se calibra.</li>
+  <li><strong>YouTube en el idioma</strong>: canales de cocina, viajes, deportes, tecnología en el idioma objetivo. El contenido de interés personal retiene la atención más que las lecciones.</li>
+</ul>
+
+<h3>Reading (lectura)</h3>
+<ul>
+  <li><strong>Redes sociales en el idioma</strong>: sigue cuentas en inglés/coreano/francés — Twitter, Instagram, Reddit. Tu feed se convierte en práctica pasiva constante.</li>
+  <li><strong>Noticias</strong>: BBC Learning English, NHK World, RFI, Deutsche Welle tienen noticias en versión simplificada para aprendientes.</li>
+  <li><strong>Libros de tu nivel</strong>: no empieces con literatura clásica. Empieza con libros infantiles del idioma objetivo (nivel A1–A2) y avanza. Graded readers existen para todos los niveles.</li>
+  <li><strong>Etiquetas en tu hogar</strong>: post-its en los objetos de tu casa con el nombre en el idioma objetivo. Básico pero efectivo para vocabulario concreto.</li>
+</ul>
+
+<h3>Speaking (producción oral)</h3>
+<ul>
+  <li><strong>Self-talk</strong>: hablar solo en el idioma. Describe lo que haces: "I'm making coffee. I need to find my keys. Today I have to..." — sin audiencia, sin presión.</li>
+  <li><strong>Shadowing</strong>: imita línea a línea lo que escuchas en audios o videos. Captura entonación, ritmo y sonidos nativos.</li>
+  <li><strong>iTalki / Preply / HelloTalk</strong>: conversa con hablantes nativos o intercambio de idiomas. 30 min/semana con un nativo vale más que 5 horas de apps.</li>
+  <li><strong>Graba tu voz</strong>: lee un texto en voz alta, grábate, compara con el audio nativo. Identificas tus errores de pronunciación de forma objetiva.</li>
+</ul>
+
+<h3>Writing (producción escrita)</h3>
+<ul>
+  <li><strong>Diario en el idioma</strong>: escribe 5–10 oraciones diarias sobre tu día. Nivel básico es suficiente al principio.</li>
+  <li><strong>Anki con frases completas</strong>: no solo palabras aisladas. "I've been waiting for an hour" aprende mejor que "wait" solo.</li>
+  <li><strong>Intercambio por escrito</strong>: HelloTalk o Tandem — chatear con nativos en el idioma. Corrección mutual.</li>
+</ul>
+
+<h2>El sistema de 30 días de inmersión en casa</h2>
+<p>Una rutina realista para alguien con trabajo o estudio:</p>
+<ul>
+  <li><strong>Mañana (15 min)</strong>: podcast o audio en el idioma mientras desayunas o te alistas</li>
+  <li><strong>Mediodía (10 min)</strong>: leer noticias o artículo corto en el idioma</li>
+  <li><strong>Tarde (30 min)</strong>: clase, flashcards o lección estructurada</li>
+  <li><strong>Noche (30–60 min)</strong>: serie, película o YouTube en el idioma</li>
+</ul>
+<p>Total: 1.5–2 horas diarias. En 30 días, una diferencia notable en comprensión auditiva.</p>
+
+<h2>Lo que no funciona en la inmersión en casa</h2>
+<ul>
+  <li>Consumir solo contenido fácil y nunca empujarte al siguiente nivel</li>
+  <li>Solo input (escuchar/leer) sin producción (hablar/escribir)</li>
+  <li>Apps de gamificación como única herramienta — no desarrollan fluidez</li>
+  <li>Traducir en tu cabeza en vez de pensar directamente en el idioma</li>
+</ul>
+
+<h2>La inmersión necesita estructura</h2>
+<p>La inmersión sin guía pedagógica consolida errores. Necesitas un tutor que corrija tu pronunciación, señale patrones gramaticales incorrectos y estructure tu progresión. En WeLearn combinamos inmersión en casa con clases 1:1 para que el aprendizaje sea sistemático y sin errores consolidados. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20un%20idioma%20y%20necesito%20un%20plan%20de%20inmersion%20estructurado.%20%C2%BFComo%20funciona%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Escríbenos y te armamos un plan</a>.</p>
+<p>Lee también: <a href="/blog/cuanto-tiempo-para-aprender-un-idioma-desde-cero">¿Cuánto tiempo para aprender un idioma desde cero?</a> y <a href="/blog/aprender-un-idioma-con-duolingo-funciona-realidad">¿Duolingo funciona para aprender un idioma?</a>.</p>
+    `,
+  },
+
+  // ── Article 96 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'aleman-b2-reconocimiento-titulo-enfermeria-alemania',
+    title: 'Alemán B2 para enfermería: reconocimiento de título y proceso en Alemania',
+    description: 'Si eres enfermero/a latinoamericano/a y quieres trabajar en Alemania, el alemán B2 es obligatorio. Guía completa del proceso de reconocimiento de título y visado.',
+    date: '2026-05-31',
+    readTime: 11,
+    category: 'Alemán',
+    tags: ['Alemán', 'enfermería', 'Alemania', 'B2', 'reconocimiento de título', 'migración'],
+    body: `
+<h2>Por qué Alemania necesita enfermeros extranjeros</h2>
+<p>Alemania enfrenta una crisis severa de personal de salud: faltan más de 200,000 profesionales de enfermería. El sistema de salud alemán activamente recluta en Latinoamérica — Colombia, México, Brasil, Bolivia — y en Europa del sur. Para un enfermero colombiano, venezolano o peruano, Alemania representa salarios de €2,500–€3,500 mensuales netos con seguro médico, pensión y 30 días de vacaciones.</p>
+<p>El requisito fundamental: <strong>alemán B2 certificado por Goethe Institut u organismo equivalente</strong>.</p>
+
+<h2>El proceso paso a paso</h2>
+<h3>Paso 1: Evaluación de equivalencia del título</h3>
+<p>Cada Bundesland (estado federal) tiene su propio organismo de reconocimiento. Los más activos con latinoamericanos:</p>
+<ul>
+  <li><strong>Bayern (Baviera)</strong>: Regierung von Mittelfranken — proceso riguroso pero transparente</li>
+  <li><strong>Baden-Württemberg</strong>: Regierungspräsidium Stuttgart</li>
+  <li><strong>NRW (Nordrhein-Westfalen)</strong>: Bezirksregierung Münster — uno de los más activos con colombianos</li>
+</ul>
+<p>Presentas tu título, plan de estudios, transcripciones y actas. Evalúan si tu formación equivale a la alemana (Gesundheits- und Krankenpfleger/in). Si hay diferencias significativas, exigen una práctica compensatoria (Anpassungslehrgang) de 3–12 meses.</p>
+
+<h3>Paso 2: Alemán B2 — el requisito de idioma</h3>
+<p>Sin B2 no hay reconocimiento definitivo. Las certificaciones aceptadas:</p>
+<ul>
+  <li>Goethe-Zertifikat B2</li>
+  <li>TestDaF (para contexto universitario, menos común en enfermería)</li>
+  <li>ÖSD B2</li>
+  <li>Telc Deutsch B2 (muy aceptado en contexto profesional de salud)</li>
+</ul>
+<p>Además del B2 general, muchos Bundesländer exigen adicionalmente el <strong>Telc Deutsch B2-C1 Pflege</strong> — examen específico de alemán médico para enfermería. Este examen evalúa vocabulario médico, documentación clínica, comunicación con pacientes y colegas.</p>
+
+<h3>Paso 3: Visado</h3>
+<p>Con el reconocimiento condicional (o incluso en proceso) y B2, puedes solicitar:</p>
+<ul>
+  <li><strong>Visado de búsqueda de trabajo</strong> (Aufenthaltserlaubnis zur Arbeitssuche) — 6 meses para encontrar empleador</li>
+  <li><strong>Visado de reconocimiento</strong> (Anerkennungsaufenthalt) — si necesitas hacer práctica compensatoria en Alemania</li>
+  <li><strong>Carta de compromiso laboral</strong>: muchos hospitales alemanes contratan directamente y patrocinan el visado</li>
+</ul>
+
+<h3>Paso 4: Llegada y práctica compensatoria (si aplica)</h3>
+<p>Si tu título tuvo deficiencias en ciertas áreas (ej. pediatría o cuidados intensivos), el Bundesland asigna un período de práctica supervisada en un hospital alemán. Durante este período ya recibes salario (€1,800–€2,200/mes). Al finalizar y superar la evaluación, se emite el reconocimiento definitivo (Berufserlaubnis).</p>
+
+<h2>Salarios reales de enfermería en Alemania (2026)</h2>
+<table>
+  <thead><tr><th>Nivel</th><th>Salario bruto mensual</th><th>Neto estimado</th></tr></thead>
+  <tbody>
+    <tr><td>Enfermero sin reconocimiento (práctica)</td><td>€2,200–€2,500</td><td>€1,700–€2,000</td></tr>
+    <tr><td>Enfermero con reconocimiento definitivo</td><td>€3,000–€3,800</td><td>€2,300–€2,900</td></tr>
+    <tr><td>Especialista (UCI, pediátrica, quirúrgica)</td><td>€3,800–€4,500</td><td>€2,800–€3,400</td></tr>
+    <tr><td>Jefe de turno / supervisor</td><td>€4,200–€5,500</td><td>€3,100–€4,000</td></tr>
+  </tbody>
+</table>
+
+<h2>Cuánto tiempo toma llegar a B2</h2>
+<p>Para hispanohablantes, el alemán es difícil pero estructurado. Los tiempos realistas:</p>
+<ul>
+  <li><strong>A1</strong>: 2–3 meses (8 h/semana)</li>
+  <li><strong>A2</strong>: 2–3 meses adicionales</li>
+  <li><strong>B1</strong>: 3–4 meses adicionales</li>
+  <li><strong>B2</strong>: 4–6 meses adicionales</li>
+  <li><strong>Total desde cero</strong>: 12–18 meses con estudio serio y continuo</li>
+</ul>
+<p>Si ya tienes A2 o B1 de estudios previos, el camino a B2 es 4–8 meses.</p>
+
+<h2>El alemán médico: vocabulario clave de enfermería</h2>
+<p>Algunas palabras que aparecen en el Telc B2-C1 Pflege:</p>
+<ul>
+  <li>Blutdruck messen — tomar la tensión arterial</li>
+  <li>Pflegedokumentation — documentación de enfermería</li>
+  <li>Wundversorgung — cuidado de heridas</li>
+  <li>Medikamentengabe — administración de medicamentos</li>
+  <li>Patientenaufnahme — admisión del paciente</li>
+  <li>Dienstübergabe — cambio de turno (reporte entre enfermeros)</li>
+</ul>
+
+<h2>WeLearn y el alemán para enfermería</h2>
+<p>Trabajamos con enfermeros latinoamericanos que buscan el B2 para el proceso de reconocimiento en Alemania. El programa cubre alemán general (A1–B2) con vocabulario médico integrado desde el nivel intermedio. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20enfermero%2Fa%20y%20quiero%20aprender%20alem%C3%A1n%20para%20trabajar%20en%20Alemania.%20%C2%BFTienen%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu nivel actual de alemán</a>.</p>
+<p>Lee también: <a href="/blog/aleman-a1-a-b1-cuanto-tiempo-y-plan-de-estudio">Alemán de A1 a B1: cuánto tiempo y plan de estudio</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para Colombia</a>.</p>
+    `,
+  },
+
+  // ── Article 97 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-residencia-medica-en-estados-unidos',
+    title: 'Inglés para médicos que quieren hacer residencia en Estados Unidos',
+    description: 'USMLE, ECFMG y la entrevista de residencia requieren inglés de alto nivel. Guía para médicos latinoamericanos que preparan su camino al match de residencia.',
+    date: '2026-05-31',
+    readTime: 11,
+    category: 'Inglés',
+    tags: ['Inglés', 'medicina', 'USMLE', 'residencia médica', 'Estados Unidos', 'C1'],
+    body: `
+<h2>El inglés como barrera y palanca en el match de residencia</h2>
+<p>Cada año miles de médicos de Colombia, Venezuela, México, Argentina y Brasil intentan hacer una residencia médica en Estados Unidos. El proceso — ECFMG certification, USMLE Steps, Match — es largo y competitivo. El inglés médico de alto nivel es condición necesaria pero no suficiente. Sin inglés C1 funcional en contexto médico, el proceso se vuelve imposible.</p>
+<p>Este artículo no cubre el proceso USMLE completo — solo el componente de inglés y cómo dominarlo.</p>
+
+<h2>¿Qué nivel de inglés se necesita?</h2>
+<p>Para el proceso de residencia médica en Estados Unidos necesitas inglés en dos niveles:</p>
+<ol>
+  <li><strong>Inglés de examen (USMLE Steps 1, 2 CK)</strong>: lectura académica densa, comprensión de casos clínicos en inglés, vocabulario médico preciso. Nivel B2–C1 académico.</li>
+  <li><strong>Inglés conversacional médico (entrevistas de residencia)</strong>: presentarte como profesional, discutir casos clínicos, responder preguntas de behavioral medicine, comunicarte con patients y attendings. Nivel C1 funcional.</li>
+</ol>
+<p>Muchos IMGs (International Medical Graduates) tienen B2 académico pero C1 conversacional débil — y eso los pone en desventaja en la entrevista.</p>
+
+<h2>USMLE y el inglés: lo que el examen pide</h2>
+<h3>Step 1 y Step 2 CK</h3>
+<p>Son exámenes de conocimiento médico, pero están 100% en inglés y con casos clínicos de hasta 200 palabras por vignette. La dificultad lingüística está en:</p>
+<ul>
+  <li>Vocabulario médico especializado (pharmacology, pathophysiology, anatomy)</li>
+  <li>Comprensión de negaciones y matices ("most likely NOT to cause", "least appropriate next step")</li>
+  <li>Velocidad de lectura — tienes ~90 segundos por pregunta en el Step 2 CK</li>
+</ul>
+<p>Si tu inglés médico es débil, pasarás tiempo leyendo la pregunta en vez de analizando el caso — tiempo fatal en este formato.</p>
+
+<h3>Step 2 CS (Clinical Skills) — eliminado en 2021</h3>
+<p>El USMLE Step 2 CS fue eliminado por ECFMG en 2021 como consecuencia de la pandemia. Los programas de residencia ahora evalúan las habilidades clínicas en persona durante las entrevistas o durante rotaciones de observership.</p>
+
+<h2>La entrevista de residencia: el reto lingüístico más difícil</h2>
+<p>Las entrevistas de residencia (Match interview) son la evaluación más exigente de inglés porque son:</p>
+<ul>
+  <li><strong>En tiempo real</strong>: no puedes pausar ni releer</li>
+  <li><strong>De alta presión</strong>: el estrés afecta el inglés — el acento se acentúa, el vocabulario se reduce</li>
+  <li><strong>Comportamentales</strong>: preguntas como "Tell me about a time you made a mistake" requieren narrativa fluida</li>
+  <li><strong>Culturalmente específicas</strong>: el humor, el ritmo de conversación, las expectativas de una entrevista médica estadounidense son diferentes a las latinoamericanas</li>
+</ul>
+
+<h3>Preguntas frecuentes en entrevistas de residencia (y cómo responderlas)</h3>
+<ul>
+  <li><strong>"Why did you choose this specialty?"</strong> → respuesta concisa, personal, con una historia clínica que te marcó</li>
+  <li><strong>"What are your weaknesses?"</strong> → nombra una debilidad real que estás trabajando, no un disfraz de fortaleza</li>
+  <li><strong>"Tell me about yourself"</strong> → 2 minutos máximo: formación + experiencia clave + por qué este programa</li>
+  <li><strong>"How do you handle stress?"</strong> → da un ejemplo concreto con resultado positivo</li>
+  <li><strong>"Where do you see yourself in 10 years?"</strong> → alineado con el fellowship o práctica en USA, muestra planificación</li>
+</ul>
+
+<h2>Vocabulario médico en inglés: categorías clave</h2>
+<p>Para USMLE y la práctica clínica, domina estas áreas:</p>
+<ul>
+  <li><strong>Chief complaints</strong>: shortness of breath, chest tightness, dyspnea on exertion, orthopnea</li>
+  <li><strong>Physical exam findings</strong>: dullness to percussion, decreased breath sounds, JVD, S3 gallop</li>
+  <li><strong>Lab values</strong>: hyponatremia, leukocytosis, elevated troponin, prolonged PT/INR</li>
+  <li><strong>Procedural language</strong>: informed consent, sterile technique, post-procedural monitoring</li>
+  <li><strong>Behavioral health</strong>: depression screen, PHQ-9, CAGE questionnaire, capacity assessment</li>
+</ul>
+
+<h2>Observerships y rotaciones: el inglés en contexto real</h2>
+<p>Muchos IMGs hacen observerships o rotaciones clínicas en hospitales de Estados Unidos antes del Match. Este es el mejor momento para practicar inglés médico real — presentar casos en morning rounds, entender la charting en Epic, comunicarte con nurses y attendings. El acento se ajusta naturalmente en 4–8 semanas de inmersión.</p>
+<p>Si no tienes acceso a observerships, practica presentando casos clínicos en inglés — grábate, escucha, ajusta.</p>
+
+<h2>WeLearn y el inglés médico</h2>
+<p>Trabajamos con médicos en proceso USMLE y preparación de match. El programa incluye inglés conversacional de alto nivel, vocabulario médico por especialidad, simulaciones de entrevista de residencia y lectura de casos clínicos al ritmo del Step 2. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20m%C3%A9dico%20y%20me%20estoy%20preparando%20para%20residencia%20en%20USA.%20%C2%BFTienen%20programa%20de%20ingl%C3%A9s%20m%C3%A9dico%3F" target="_blank" rel="noopener noreferrer">Cuéntanos en qué etapa del proceso estás</a>.</p>
+<p>Lee también: <a href="/blog/ingles-b2-c1-para-trabajo-remoto-global">Inglés B2–C1 para trabajo remoto y global</a> y <a href="/blog/ingles-tecnico-para-programadores-y-desarrolladores">Inglés técnico para profesionales</a>.</p>
+    `,
+  },
+
+  // ── Article 98 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'portugues-europeo-vs-brasileno-para-aprender',
+    title: 'Portugués europeo vs. brasileño: ¿cuál aprender según tu objetivo?',
+    description: 'Las diferencias entre el portugués de Portugal y el de Brasil van más allá del acento. Descubre cuál variante te conviene aprender según tu meta laboral o migratoria.',
+    date: '2026-05-31',
+    readTime: 8,
+    category: 'Portugués',
+    tags: ['Portugués', 'Brasil', 'Portugal', 'variantes', 'Celpe-Bras', 'CAPLE'],
+    body: `
+<h2>La misma lengua, dos mundos diferentes</h2>
+<p>Español de España y de Colombia son mutuamente inteligibles con pequeñas diferencias. El portugués europeo y el brasileño tienen diferencias mayores — en pronunciación, vocabulario, gramática, y registros formales e informales — al punto de que un brasileño y un portugués pueden tener dificultades de comprensión oral cuando se hablan rápido.</p>
+<p>Para un hispanohablante que aprende portugués desde cero, la elección de la variante no es cosmética: afecta los materiales, los certificados y las oportunidades.</p>
+
+<h2>Diferencias principales entre EP y BP</h2>
+<h3>Pronunciación (la diferencia más notoria)</h3>
+<p>El portugués europeo (PE) "come" las vocales — las vocales átonas se reducen o casi desaparecen. "Computador" en PE suena casi "cmputdor". El portugués brasileño (PB) abre y alarga las vocales — "computador" suena claramente "computáDOR".</p>
+<p>Para hispanohablantes, el PB es más fácil de entender inicialmente porque las vocales son más claras y la pronunciación más lenta y abierta. El PE requiere más tiempo de adaptación auditiva.</p>
+
+<h3>Vocabulario cotidiano</h3>
+<table>
+  <thead><tr><th>Español</th><th>Portugués de Brasil</th><th>Portugués de Portugal</th></tr></thead>
+  <tbody>
+    <tr><td>Autobús</td><td>ônibus</td><td>autocarro</td></tr>
+    <tr><td>Computadora</td><td>computador / notebook</td><td>computador / portátil</td></tr>
+    <tr><td>Celular</td><td>celular</td><td>telemóvel</td></tr>
+    <tr><td>Jugo de naranja</td><td>suco de laranja</td><td>sumo de laranja</td></tr>
+    <tr><td>Tren (metro)</td><td>metrô</td><td>metro</td></tr>
+    <tr><td>Frigorífico</td><td>geladeira</td><td>frigorífico</td></tr>
+  </tbody>
+</table>
+
+<h3>Gramática — colocación de pronombres</h3>
+<p>En BP (especialmente informal): "Me dá isso" (dame eso) — pronombre antes del verbo.<br>
+En PE (formal): "Dá-me isso" — pronombre después del verbo (enclítico).<br>
+Esta diferencia hace que el portugués formal escrito europeo suene más distante para quienes aprenden con materiales brasileños.</p>
+
+<h3>Formas de tratamiento</h3>
+<p>En BP se usa "você" masivamente, incluso con personas mayores: "Você quer café?"<br>
+En PE se usa "você" en contextos más formales; el "tu" informal es más común entre pares, y "o senhor / a senhora" en contextos de respeto.<br>
+Esta diferencia puede generar malentendidos culturales.</p>
+
+<h2>¿Cuál variante aprender según tu objetivo?</h2>
+<h3>Aprender PB si...</h3>
+<ul>
+  <li>Quieres trabajar o hacer negocios con Brasil (la mayor economía de Latinoamérica)</li>
+  <li>Planeas hacer el <strong>Celpe-Bras</strong> (único examen de certificación brasileño reconocido globalmente)</li>
+  <li>Tu red de contactos, clientes o empleadores son brasileños</li>
+  <li>Consumes contenido de entretenimiento brasileño (musica, novelas, series)</li>
+  <li>Eres principiante — PB es más accesible al inicio</li>
+</ul>
+<h3>Aprender PE si...</h3>
+<ul>
+  <li>Quieres migrar a <strong>Portugal</strong> (visa D3, ciudadanía por origen, Golden Visa)</li>
+  <li>Planeas el <strong>CAPLE</strong> o el examen de lengua de la ciudadanía portuguesa</li>
+  <li>Tu empresa trabaja con Portugal, Angola, Mozambique, Cabo Verde</li>
+  <li>Quieres acceder al mercado laboral europeo vía Portugal</li>
+</ul>
+
+<h2>Certificaciones de portugués: Celpe-Bras vs. CAPLE</h2>
+<h3>Celpe-Bras (Brasil)</h3>
+<ul>
+  <li>Emitido por el MEC de Brasil — el único certificado oficial de PB reconocido internacionalmente</li>
+  <li>Niveles: Intermediário, Intermediário Superior, Avançado, Avançado Superior</li>
+  <li>Se aplica en Colombia: Instituto Brasileiro de Río Bogotá, Curitiba y otras ciudades</li>
+  <li>Requerido para ejercer en universidades o entidades públicas brasileñas</li>
+</ul>
+<h3>CAPLE (Portugal)</h3>
+<ul>
+  <li>Universidad de Lisboa — niveles A1–C2 (CIPLE, DEPLE, DIPLE, DAPLE, DUPLE)</li>
+  <li>El nivel B2 (DIPLE) es lo mínimo para visa de trabajo calificado en Portugal</li>
+  <li>El nivel A2 o B1 es suficiente para visa de nómada digital y residencia larga estadía</li>
+  <li>Se aplica en centros autorizados — no tan disponible en Colombia como Celpe-Bras</li>
+</ul>
+
+<h2>¿Puedo aprender los dos a la vez?</h2>
+<p>No recomendado para principiantes — genera confusión. Aprende una variante bien hasta B1 y luego adapta a la otra. La gramática es 95% idéntica; el vocabulario y la pronunciación divergen. Alguien con PB B2 puede adaptarse al PE en 2–3 meses de exposición intensa.</p>
+
+<h2>WeLearn y el portugués</h2>
+<p>En WeLearn enseñamos principalmente PB con conciencia de las variantes — explicamos las diferencias cuando son relevantes para el objetivo del estudiante. Si tu meta es Portugal, adaptamos el programa. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20portugu%C3%A9s%20y%20no%20s%C3%A9%20si%20estudiar%20el%20brasile%C3%B1o%20o%20el%20europeo.%20%C2%BFMe%20pueden%20orientar%3F" target="_blank" rel="noopener noreferrer">Escríbenos y te orientamos según tu objetivo</a>.</p>
+<p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse</a> y <a href="/blog/migrar-a-portugal-nivel-ingles-o-portugues-requisitos">Migrar a Portugal: nivel de inglés o portugués requerido</a>.</p>
+    `,
+  },
+
+  // ── Article 99 ───────────────────────────────────────────────────────────────
+  {
+    slug: 'toefl-ibt-estructura-completa-y-estrategia-2026',
+    title: 'TOEFL iBT 2026: estructura completa, puntajes y estrategia por sección',
+    description: 'Guía actualizada del TOEFL iBT 2026 después del rediseño. Conoce la nueva duración, el Academic Discussion Task y la estrategia óptima para cada sección.',
+    date: '2026-05-31',
+    readTime: 12,
+    category: 'TOEFL',
+    tags: ['TOEFL', 'iBT', 'estructura', 'estrategia', 'puntaje', '2026'],
+    body: `
+<h2>El TOEFL iBT en 2026 — qué cambió</h2>
+<p>ETS rediseñó el TOEFL iBT en agosto de 2023 con el objetivo de reducir la duración y hacer el examen más eficiente. El formato vigente en 2026:</p>
+<ul>
+  <li>Duración total: <strong>~2 horas</strong> (antes 3 horas)</li>
+  <li>Se eliminó la sección independiente de Writing (Opinion Essay) y se reemplazó por el <strong>Academic Discussion Task</strong></li>
+  <li>Se redujo el número de pasajes de Reading (de 3–4 a 2)</li>
+  <li>Listening se redujo proporcionalmente</li>
+</ul>
+
+<h2>Estructura del TOEFL iBT 2026</h2>
+<table>
+  <thead><tr><th>Sección</th><th>Duración</th><th>Preguntas</th><th>Puntaje</th></tr></thead>
+  <tbody>
+    <tr><td>Reading</td><td>35 minutos</td><td>20 preguntas (2 pasajes)</td><td>0–30</td></tr>
+    <tr><td>Listening</td><td>36 minutos</td><td>28 preguntas (2 lecturas + 3 conferencias)</td><td>0–30</td></tr>
+    <tr><td>Speaking</td><td>16 minutos</td><td>4 tareas</td><td>0–30</td></tr>
+    <tr><td>Writing</td><td>29 minutos</td><td>2 tareas</td><td>0–30</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>~2 horas</strong></td><td>—</td><td><strong>0–120</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>Reading: estrategia para los 2 pasajes</h2>
+<p>Dos pasajes académicos de 700–800 palabras cada uno. 10 preguntas por pasaje. Temas: ciencias naturales, historia, ciencias sociales, artes.</p>
+<h3>Tipos de pregunta</h3>
+<ul>
+  <li>Factual Information: "According to paragraph 2, what is..."</li>
+  <li>Negative Factual: "Which of the following is NOT mentioned..."</li>
+  <li>Inference: "What can be inferred about..."</li>
+  <li>Vocabulary in Context: "The word X in paragraph 3 is closest in meaning to..."</li>
+  <li>Prose Summary / Category Chart: ordenar ideas principales o clasificarlas — valen 2–3 puntos cada una</li>
+</ul>
+<h3>Estrategia</h3>
+<ol>
+  <li>Lee la pregunta antes de leer el párrafo correspondiente</li>
+  <li>Para Vocabulary in Context: usa el contexto, no memorices palabras aisladas</li>
+  <li>Para Prose Summary: identifica las 3 ideas más importantes del texto — las opciones incorrectas son detalles menores o contradicen el texto</li>
+  <li>Manejo del tiempo: 17 minutos por pasaje máximo</li>
+</ol>
+
+<h2>Listening: conferencias y conversaciones</h2>
+<p>El Listening tiene dos partes: 2 conversaciones campus-related (estudiante + administrador) y 3 conferencias académicas. 28 preguntas totales.</p>
+<h3>Lo que evalúan</h3>
+<ul>
+  <li>Comprensión de la idea principal</li>
+  <li>Propósito de la conversación</li>
+  <li>Detalles específicos (fechas, cifras, nombres)</li>
+  <li>Actitud del hablante e inferencia sobre su posición</li>
+  <li>Organización del discurso</li>
+</ul>
+<h3>Estrategia</h3>
+<ul>
+  <li>Toma notas activamente — el examen te proporciona papel borrador</li>
+  <li>Para conferencias: anota el tema principal, los 2–3 puntos de apoyo y los ejemplos</li>
+  <li>Para conversaciones: identifica el problema del estudiante y la solución propuesta</li>
+  <li>No te pierdas por una palabra desconocida — sigue el flujo del audio</li>
+</ul>
+
+<h2>Speaking: 4 tareas en 16 minutos</h2>
+<table>
+  <thead><tr><th>Tarea</th><th>Tipo</th><th>Prep</th><th>Respuesta</th></tr></thead>
+  <tbody>
+    <tr><td>Task 1 (Independent)</td><td>Opinión personal</td><td>15 seg</td><td>45 seg</td></tr>
+    <tr><td>Task 2 (Integrated)</td><td>Leer + escuchar + hablar</td><td>30 seg</td><td>60 seg</td></tr>
+    <tr><td>Task 3 (Integrated)</td><td>Leer + escuchar + hablar</td><td>30 seg</td><td>60 seg</td></tr>
+    <tr><td>Task 4 (Integrated)</td><td>Escuchar (conferencia) + hablar</td><td>20 seg</td><td>60 seg</td></tr>
+  </tbody>
+</table>
+<p>Las tareas integradas requieren resumir y sintetizar información de múltiples fuentes — no dar tu opinión, sino reportar.</p>
+<h3>Estrategia Speaking</h3>
+<ul>
+  <li>Task 1: 3 partes — posición + razón 1 + razón 2 (o posición + razón + ejemplo)</li>
+  <li>Tasks 2–4: parafrasea las ideas principales del texto/audio. No inventes. Usa conectores: "According to the reading...", "The professor explains that..."</li>
+  <li>Habla a ritmo natural — no muy rápido (pierde claridad) ni muy lento (pierdes contenido)</li>
+</ul>
+
+<h2>Writing: Integrated Task + Academic Discussion Task</h2>
+<h3>Writing Task 1 — Integrated (20 min)</h3>
+<p>Lees un pasaje de 300 palabras (3 minutos), escuchas una conferencia que cuestiona o desarrolla el texto, y escribes 150–225 palabras resumiendo cómo la conferencia se relaciona con el pasaje. No das tu opinión.</p>
+<p>Estructura: introducción → punto 1 de la conferencia vs. el pasaje → punto 2 → punto 3 → conclusión opcional.</p>
+
+<h3>Writing Task 2 — Academic Discussion (10 min)</h3>
+<p>El nuevo formato desde 2023. Lees una discusión online de una clase universitaria: el profesor da un tema y dos estudiantes opinan. Tienes que contribuir con tu propia posición original en al menos 100 palabras.</p>
+<p>Estrategia:</p>
+<ul>
+  <li>Lee rápido las 2 opiniones de los estudiantes — 1 minuto</li>
+  <li>Escoge una posición clara (puede ser de acuerdo con uno, desacuerdo, o una posición matizada propia)</li>
+  <li>Estructura: tu posición → razón + ejemplo → si el tiempo lo permite, referencia una de las opiniones de los compañeros</li>
+  <li>Escribe 120–150 palabras mínimo, 200 como máximo</li>
+  <li>ETS evalúa: relevancia al tema, coherencia, gramática y vocabulario</li>
+</ul>
+
+<h2>Puntajes por universidad — referencia rápida</h2>
+<table>
+  <thead><tr><th>Institución</th><th>TOEFL mínimo (posgrado)</th></tr></thead>
+  <tbody>
+    <tr><td>Harvard, MIT, Stanford</td><td>100–105</td></tr>
+    <tr><td>State universities USA</td><td>80–90</td></tr>
+    <tr><td>Universidades de Canadá</td><td>86–100</td></tr>
+    <tr><td>Universidades de Australia</td><td>79–90</td></tr>
+    <tr><td>Universidades de Reino Unido</td><td>87–100 (muchas prefieren IELTS)</td></tr>
+  </tbody>
+</table>
+
+<h2>WeLearn y la preparación TOEFL</h2>
+<p>Preparamos TOEFL con instructores que conocen el formato actualizado de 2023–2026. Especial énfasis en el Academic Discussion Task (el nuevo Writing) y en el Speaking integrado — las secciones que más impactan el puntaje. <a href="https://wa.me/573005004253?text=Hola%2C%20me%20quiero%20preparar%20para%20el%20TOEFL%20iBT.%20%C2%BFTienen%20clases%20disponibles%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos con un simulacro diagnóstico</a>.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026">TOEFL iBT vs. TOEFL Essentials: cuál elegir</a> y <a href="/blog/toefl-speaking-integrated-tasks-como-responder">TOEFL Speaking: cómo responder las tareas integradas</a>.</p>
+    `,
+  },
+
+  // ── Article 100 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'italiano-para-ciudadania-italiana-nivel-b1',
+    title: 'Italiano para ciudadanía italiana: qué nivel se exige y cómo prepararse',
+    description: 'Desde 2021, Italia exige un examen de italiano B1 para obtener la ciudadanía por naturalización. Guía completa para latinoamericanos con ascendencia italiana.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'Italiano',
+    tags: ['Italiano', 'ciudadanía italiana', 'B1', 'jus sanguinis', 'CILS', 'CELI'],
+    body: `
+<h2>El nuevo requisito de italiano B1 para ciudadanía por naturalización</h2>
+<p>Desde diciembre de 2021, Italia exige que los solicitantes de ciudadanía italiana por naturalización (no por ascendencia / jus sanguinis) demuestren un nivel B1 de italiano certificado. Esta medida, introducida por la Legge 132/2018 pero implementada progresivamente, aplica específicamente a:</p>
+<ul>
+  <li>Ciudadanía por residencia legal de 10 años en Italia</li>
+  <li>Ciudadanía por matrimonio con ciudadano italiano</li>
+  <li>Ciudadanía por naturalización en casos especiales</li>
+</ul>
+<p>Importante: la ciudadanía por <strong>jus sanguinis</strong> (ascendencia italiana) NO requiere examen de idioma — se tramita en el consulado y no hay requisito lingüístico formal.</p>
+
+<h2>¿Quiénes son los latinoamericanos más afectados?</h2>
+<p>Hay dos perfiles principales de latinoamericanos que buscan ciudadanía italiana:</p>
+<ol>
+  <li><strong>Jus sanguinis</strong>: colombianos, argentinos, brasileños, venezolanos con bisabuelos o tatarabuelos italianos emigrados en el siglo XIX–XX. No necesitan B1 para la ciudadanía, pero sí para vivir e integrarse en Italia.</li>
+  <li><strong>Naturalización</strong>: latinoamericanos que ya viven en Italia (estudiantes, trabajadores, cónyuges) y tras 10 años de residencia quieren la ciudadanía. Para estos, el B1 es obligatorio.</li>
+</ol>
+
+<h2>Certificados de italiano B1 aceptados por el gobierno italiano</h2>
+<p>El Ministerio dell'Interno acepta certificaciones de organismos acreditados. Los más relevantes para candidatos latinoamericanos:</p>
+<table>
+  <thead><tr><th>Institución</th><th>Certificado B1</th><th>Disponible en Colombia</th></tr></thead>
+  <tbody>
+    <tr><td>Università per Stranieri di Siena</td><td>CILS B1</td><td>Sí (centros autorizados)</td></tr>
+    <tr><td>Università per Stranieri di Perugia</td><td>CELI 2 (B1)</td><td>Sí (centros autorizados)</td></tr>
+    <tr><td>Società Dante Alighieri</td><td>PLIDA B1</td><td>Sí (sede en Bogotá)</td></tr>
+    <tr><td>AIL Roma</td><td>IT B1</td><td>Limitado</td></tr>
+  </tbody>
+</table>
+<p>El CILS y el CELI son los más reconocidos y exigidos explícitamente en los formularios del consolato. Si tu trámite es ante un consulado italiano en Colombia, verifica qué certificados aceptan.</p>
+
+<h2>Qué evalúa el CILS B1 — estructura del examen</h2>
+<p>El CILS B1 tiene 5 secciones:</p>
+<ol>
+  <li><strong>Ascolto (escucha)</strong>: 20 min — 2 textos orales con preguntas de selección múltiple</li>
+  <li><strong>Analisi delle strutture di comunicazione</strong>: 30 min — gramática y vocabulario en contexto</li>
+  <li><strong>Lettura (lectura)</strong>: 50 min — 3 textos con preguntas de comprensión</li>
+  <li><strong>Scrittura (escritura)</strong>: 60 min — 2 tareas escritas (email o carta + texto breve)</li>
+  <li><strong>Produzione orale (habla)</strong>: 8–10 min — entrevista con examinador sobre temas cotidianos</li>
+</ol>
+<p>Puntaje mínimo para aprobar cada sección: generalmente el 75% del puntaje máximo de esa parte.</p>
+
+<h2>Cuánto tiempo se necesita para llegar a B1 de italiano</h2>
+<p>Para hispanohablantes, el italiano es uno de los idiomas más accesibles — comparte 80%+ del vocabulario con el español. Tiempos estimados:</p>
+<ul>
+  <li><strong>Principiante absoluto → A1</strong>: 1–2 meses (6 h/semana)</li>
+  <li><strong>A1 → A2</strong>: 2 meses</li>
+  <li><strong>A2 → B1</strong>: 3–4 meses</li>
+  <li><strong>Total desde cero → B1</strong>: 5–8 meses con estudio constante</li>
+</ul>
+<p>Para alguien que ya tiene español sólido, el B1 de italiano es alcanzable en 4–6 meses si estudia con disciplina.</p>
+
+<h2>Tramitar la ciudadanía italiana desde Colombia</h2>
+<p>El proceso de jus sanguinis se tramita en el Consulado de Italia en Bogotá (cubre todo Colombia). Los pasos generales:</p>
+<ol>
+  <li>Obtener actas de nacimiento, matrimonio y defunción de antepasados italianos (con apostilla)</li>
+  <li>Certificados colombianos (nacimiento, matrimonio, antecedentes)</li>
+  <li>Traducción oficial al italiano</li>
+  <li>Turno en el consulado (el tiempo de espera varía de 1–4 años dependiendo del volumen)</li>
+  <li>Entrevista consulado + presentación de documentos</li>
+</ol>
+<p>El idioma italiano no es requisito para jus sanguinis — pero cuando viajas a Italia para verificar o si el proceso continúa allá, tener al menos A2–B1 facilita enormemente el trámite.</p>
+
+<h2>WeLearn y el italiano para ciudadanía</h2>
+<p>Trabajamos con familias latinoamericanas en proceso de ciudadanía italiana — jus sanguinis y naturalización. El programa va de cero a B1 con énfasis en las habilidades del CILS o CELI. <a href="https://wa.me/573005004253?text=Hola%2C%20estoy%20tramitando%20la%20ciudadan%C3%ADa%20italiana%20y%20necesito%20aprender%20italiano%20hasta%20B1.%20%C2%BFTienen%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu situación actual</a>.</p>
+<p>Lee también: <a href="/blog/ciudadania-italiana-italiano-b1-requisito">Ciudadanía italiana y el requisito de italiano B1</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: certificaciones de italiano en Colombia</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

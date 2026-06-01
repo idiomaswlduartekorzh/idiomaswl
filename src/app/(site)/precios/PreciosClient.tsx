@@ -51,11 +51,13 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Italiano', color: '#009246', title: 'Estudiar en Italia: costos, nivel de italiano y cómo aplicar', slug: 'italiano-para-estudiar-en-italia-costos-y-requisitos' },
     { cat: 'Italiano', color: '#009246', title: 'Ciudadanía italiana: el requisito de italiano B1 explicado', slug: 'ciudadania-italiana-italiano-b1-requisito' },
     { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano', slug: 'cils-celi-certificacion-italiano-colombia' },
+    { cat: 'Italiano', color: '#009246', title: 'Italiano B1 para ciudadanía italiana: examen y proceso', slug: 'italiano-para-ciudadania-italiana-nivel-b1' },
   ],
   portugues: [
     { cat: 'Portugués', color: '#166534', title: 'Migrar a Portugal: inglés, portugués y requisitos 2026', slug: 'migrar-a-portugal-nivel-ingles-o-portugues-requisitos' },
     { cat: 'Portugués', color: '#166534', title: 'Portugués para negocios con Brasil: nivel y guía práctica', slug: 'portugues-para-negocios-con-brasil-nivel-recomendado' },
     { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
+    { cat: 'Portugués', color: '#166534', title: 'Portugués europeo vs. brasileño: cuál aprender según tu objetivo', slug: 'portugues-europeo-vs-brasileno-para-aprender' },
   ],
 };
 

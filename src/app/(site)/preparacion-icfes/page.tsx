@@ -378,6 +378,7 @@ export default function PreparacionICFESPage() {
                 { cat: 'Método', color: '#c87941', title: '¿Cuánto cuesta aprender inglés en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-ingles-colombia-2026' },
                 { cat: 'ICFES', color: '#0f7c3e', title: 'Plan de estudio inglés ICFES en 3 meses: semana a semana', slug: 'icfes-ingles-plan-estudio-3-meses' },
                 { cat: 'ICFES', color: '#0f7c3e', title: 'Vocabulario inglés ICFES: las 200 palabras más frecuentes en Saber 11', slug: 'icfes-vocabulario-ingles-palabras-mas-frecuentes' },
+                { cat: 'Método', color: '#c87941', title: 'Inmersión en casa: cómo crear un ambiente de idioma sin viajar', slug: 'aprender-idiomas-tecnica-inmersion-en-casa' },
               ].map(a => (
                 <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
                   <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: a.color, background: a.color + '18', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

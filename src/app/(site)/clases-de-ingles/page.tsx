@@ -544,6 +544,11 @@ export default function ClasesDeInglesPage() {
               { cat: 'IELTS', title: 'IELTS Academic vs General Training: cuál debes tomar y por qué', slug: 'ielts-academic-vs-general-training-cual-elegir' },
               { cat: 'IELTS', title: 'IELTS de banda 6 a 7: qué cambia y cómo cruzar esa barrera', slug: 'ielts-de-banda-6-a-banda-7-que-cambia' },
               { cat: 'Inglés', title: 'Inglés técnico para programadores: vocabulario, daily meetings y entrevistas', slug: 'ingles-tecnico-para-programadores-y-desarrolladores' },
+              { cat: 'IELTS', title: 'IELTS Listening Secciones 3 y 4: estrategias para banda 7+', slug: 'ielts-listening-sections-3-4-estrategias-avanzadas' },
+              { cat: 'IELTS', title: 'IELTS Writing Task 2: tipos de ensayo, estructura y errores comunes', slug: 'ielts-writing-task-2-tipos-de-ensayo-y-estructura' },
+              { cat: 'TOEFL', title: 'TOEFL iBT 2026: estructura completa, puntajes y estrategia por sección', slug: 'toefl-ibt-estructura-completa-y-estrategia-2026' },
+              { cat: 'Inglés', title: 'Inglés para médicos: residencia en Estados Unidos y USMLE', slug: 'ingles-para-residencia-medica-en-estados-unidos' },
+              { cat: 'Migración', title: 'Migrar a Nueva Zelanda: requisitos de inglés y tipos de visa 2026', slug: 'migrar-a-nueva-zelanda-ingles-requisitos-visa-2026' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

@@ -204,6 +204,7 @@ const BLOG_POSTS = [
   { cat: 'Francés', color: '#1a2ecc', title: 'Francés para estudiar medicina en Francia o Bélgica: guía completa', slug: 'frances-para-estudiar-medicina-en-francia-belgica' },
   { cat: 'Francés', color: '#1a2ecc', title: 'Francés B2: qué puertas abre en trabajo, universidad y migración', slug: 'frances-b2-para-que-sirve-que-puertas-abre' },
   { cat: 'Francés', color: '#1a2ecc', title: 'Aprender francés siendo adulto desde cero en Colombia: guía realista', slug: 'aprender-frances-adulto-desde-cero-colombia' },
+  { cat: 'Método', color: '#7c3aed', title: 'Inmersión en casa: cómo crear un ambiente de idioma sin viajar', slug: 'aprender-idiomas-tecnica-inmersion-en-casa' },
 ];
 
 // WhatsApp SVG icon

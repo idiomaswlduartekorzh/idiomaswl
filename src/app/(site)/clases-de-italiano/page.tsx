@@ -169,6 +169,7 @@ const BLOG_POSTS = [
   { cat: 'Italiano', color: '#009246', title: 'Ciudadanía italiana: el requisito de italiano B1 explicado', slug: 'ciudadania-italiana-italiano-b1-requisito' },
   { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano desde Colombia', slug: 'cils-celi-certificacion-italiano-colombia' },
   { cat: 'Italiano', color: '#009246', title: 'Italiano de cero a B2: cuánto tiempo toma y cómo estudiarlo', slug: 'italiano-de-cero-a-b2-cuanto-tiempo-y-como-estudiarlo' },
+  { cat: 'Italiano', color: '#009246', title: 'Italiano B1 para ciudadanía italiana: examen y proceso completo', slug: 'italiano-para-ciudadania-italiana-nivel-b1' },
 ];
 
 const WaIcon = () => (
