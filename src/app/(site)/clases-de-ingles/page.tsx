@@ -45,6 +45,21 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
+      name: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?',
+      acceptedAnswer: { '@type': 'Answer', text: 'El Plan Preparación empieza en $180.000 COP/mes. El Plan Intensivo va de $280.000 a $480.000/mes según la frecuencia. También vendemos paquetes de horas prepago (4, 10 y 20 horas) con mejor precio por hora. La clase de diagnóstico inicial es gratis y sin compromiso.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Tienen paquetes de horas de inglés con descuento?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Vendemos paquetes prepago de 4, 10 y 20 horas de clases en vivo. Entre más horas compras, menor es el precio por hora. Escríbenos por WhatsApp para conocer las opciones actuales.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Hay clases de inglés presenciales en Bucaramanga?',
+      acceptedAnswer: { '@type': 'Answer', text: 'WeLearn opera online por videollamada, atendiendo con la misma calidad a estudiantes en Bucaramanga, Floridablanca, Girón, Piedecuesta y toda Colombia. Tutor asignado, plan personalizado y evaluación continua.' },
+    },
+    {
+      '@type': 'Question',
       name: '¿Cuánto tiempo necesito para prepararme para el IELTS?',
       acceptedAnswer: { '@type': 'Answer', text: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
     },
@@ -68,7 +83,10 @@ const faqJsonLd = {
 
 const FAQS = [
   { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT y ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
+  { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'El Plan Preparación empieza en $180.000 COP/mes. El Plan Intensivo va de $280.000 a $480.000/mes según la frecuencia de clases. También vendemos paquetes de horas prepago (4, 10 y 20 horas) con mejor precio por hora — ideales si no quieres un plan mensual fijo. La clase de diagnóstico siempre es gratis.' },
+  { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Vendemos paquetes prepago de 4, 10 y 20 horas de clases en vivo. Entre más horas compras, menor es el precio por hora. Escríbenos por WhatsApp para conocer las opciones actuales y precios exactos.' },
   { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
+  { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'WeLearn opera principalmente online por videollamada, lo que nos permite atender con la misma calidad a estudiantes en Bucaramanga, Floridablanca, Girón, Piedecuesta y toda Colombia. Las clases online tienen exactamente la misma rigurosidad que la presencial: tutor asignado, plan personalizado y evaluación continua.' },
   { q: '¿Cómo funciona la clase de diagnóstico gratis?', a: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo y diseñamos el plan. Sin costo y sin compromiso.' },
   { q: '¿Las clases son individuales o grupales?', a: 'Ofrecemos clases 1:1 con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes.' },
   { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. Todas las clases son 100% online. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
@@ -224,6 +242,14 @@ const PRECIOS = [
     featured: false,
   },
 ];
+
+const PAQUETES_HORAS = [
+  { label: '4 horas', desc: 'Para reforzar un área específica o probar WeLearn sin compromiso mensual.', badge: null },
+  { label: '10 horas', desc: 'El más popular. Cubre una unidad completa con mejor precio por hora.', badge: 'Más popular' },
+  { label: '20 horas', desc: 'Preparación seria de IELTS o TOEFL al mejor precio por hora disponible.', badge: 'Mejor precio/hora' },
+];
+
+const WA_PAQUETE = wa('Hola, me interesa un paquete de horas de inglés con WeLearn. ¿Qué opciones tienen?');
 
 const TESTIMONIALS = [
   {
@@ -453,6 +479,32 @@ export default function ClasesDeInglesPage() {
               </div>
             ))}
           </div>
+          {/* Paquetes de horas */}
+          <div style={{ marginTop: '2.5rem', paddingTop: '2.25rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+            <p style={{ fontWeight: 700, fontSize: '1rem', color: 'rgba(255,255,255,0.9)', marginBottom: '0.35rem' }}>
+              ¿Prefieres pagar por horas sin compromiso mensual?
+            </p>
+            <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.5)', marginBottom: '1.5rem' }}>
+              Tenemos paquetes prepago de clases en vivo. Entre más horas compras, mejor es el precio por hora.
+            </p>
+            <div className={s.grid3} style={{ gap: '1rem' }}>
+              {PAQUETES_HORAS.map(pkg => (
+                <div key={pkg.label} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 14, padding: '1.25rem', position: 'relative' }}>
+                  {pkg.badge && (
+                    <span style={{ position: 'absolute', top: -10, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent)', fontSize: '0.68rem', fontWeight: 700, padding: '0.18rem 0.75rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
+                      {pkg.badge}
+                    </span>
+                  )}
+                  <p style={{ fontWeight: 800, fontSize: '1rem', color: '#fff', marginBottom: '0.4rem' }}>Paquete {pkg.label}</p>
+                  <p style={{ fontSize: '0.82rem', color: 'rgba(255,255,255,0.58)', lineHeight: 1.55, marginBottom: '1rem' }}>{pkg.desc}</p>
+                  <a href={WA_PAQUETE} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', background: 'rgba(255,255,255,0.12)', color: '#fff', fontWeight: 700, fontSize: '0.82rem', padding: '0.5rem', borderRadius: 8, textDecoration: 'none' }}>
+                    Consultar precio →
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <p style={{
             textAlign: 'center',
             marginTop: '1.75rem',

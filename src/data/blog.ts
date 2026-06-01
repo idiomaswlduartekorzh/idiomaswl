@@ -9064,6 +9064,311 @@ And explain whether you would recommend it to others.</em>
 <p>Lee también: <a href="/blog/italiano-de-cero-a-b2-cuanto-tiempo-y-como-estudiarlo">Italiano de cero a B2: cuánto tiempo y cómo</a> y <a href="/blog/aprender-idiomas-tecnica-inmersion-en-casa">Inmersión en casa: cómo crear un ambiente de idioma</a>.</p>
     `,
   },
+  // ── Article 123 ────────────────────────────────────────────────────────────
+  {
+    slug: 'academias-de-ingles-en-bucaramanga-comparativa-2026',
+    title: 'Academias de inglés en Bucaramanga: comparativa 2026 y cómo elegir',
+    description:
+      'Las mejores academias de inglés en Bucaramanga en 2026: qué ofrece cada una, precios, metodología y cuál elegir según tu objetivo (IELTS, TOEFL, inglés conversacional o trabajo remoto).',
+    date: '2026-06-01',
+    readTime: 8,
+    category: 'Inglés',
+    tags: ['academias de inglés Bucaramanga', 'clases de inglés Bucaramanga', 'inglés Bucaramanga', 'mejor academia inglés Bucaramanga', 'curso inglés Bucaramanga 2026'],
+    body: `
+<h2>¿Cómo está el mercado de inglés en Bucaramanga en 2026?</h2>
+<p>Bucaramanga tiene una oferta creciente de academias de inglés, pero la calidad varía enormemente. Desde institutos con 30 años de tradición como el Celai Institute hasta academias especializadas en certificaciones internacionales como WeLearn, cada opción tiene un perfil diferente. Esta guía te ayuda a elegir según lo que realmente necesitas.</p>
+<p>El error más común al elegir academia de inglés en Bucaramanga es fijarse solo en el precio o en la cercanía. Lo que realmente importa es: ¿La academia tiene experiencia en tu objetivo específico? ¿Tienen tutores certificados? ¿Qué resultados tienen sus estudiantes?</p>
+
+<h2>Tipos de academias de inglés en Bucaramanga</h2>
+
+<h3>1. Academias tradicionales con sede física</h3>
+<p>Son las más conocidas en Bucaramanga: Celai Institute, Caisa Centro de Idiomas, New English, Best English. Ofrecen clases presenciales en grupos, horarios fijos y niveles desde A1. Sus ventajas son la estructura y la interacción social; sus desventajas, los grupos grandes (10–20 personas) que limitan la corrección individual y la velocidad de progreso.</p>
+<p>Costo aproximado en academias tradicionales de Bucaramanga: entre $300.000 y $900.000 COP por nivel (1–2 meses).</p>
+
+<h3>2. Centros oficiales con énfasis cultural</h3>
+<p>El Centro Colombo Americano tiene presencia en Bucaramanga y es reconocido por su enfoque cultural anglosajón. Tiene certificación de calidad y programas desde A1 hasta C1. Es una buena opción si buscas el componente cultural además del lingüístico. Sus grupos también son medianos a grandes.</p>
+
+<h3>3. Academias especializadas en exámenes internacionales</h3>
+<p>Si tu objetivo es IELTS, TOEFL, ICFES o cualquier certificación oficial, necesitas una academia que conozca los criterios de evaluación de esos exámenes específicos — no solo que enseñe inglés general. WeLearn es la academia en Bucaramanga especializada en preparación de exámenes internacionales, con tutores que conocen los estándares del British Council (IELTS) y ETS (TOEFL) y con simulacros integrados en la plataforma.</p>
+
+<h3>4. Plataformas online (sin presencia en Bucaramanga)</h3>
+<p>Canadian College, English Training y otras plataformas ofrecen cursos online dirigidos a Bucaramanga. Son opciones válidas para inglés general, pero rara vez tienen la profundidad de preparación para exámenes internacionales que una academia especializada.</p>
+
+<h2>Comparativa de factores clave</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Academias tradicionales</th>
+      <th>Colombo Americano</th>
+      <th>WeLearn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Tamaño de grupo</td><td>10–20 personas</td><td>8–15 personas</td><td>1:1 (individual)</td></tr>
+    <tr><td>Especialización IELTS/TOEFL</td><td>Básica</td><td>Media</td><td>Alta (método propio)</td></tr>
+    <tr><td>Tutor asignado</td><td>No</td><td>No</td><td>Sí, desde el día 1</td></tr>
+    <tr><td>Modalidad</td><td>Presencial</td><td>Presencial/online</td><td>Online (toda Colombia)</td></tr>
+    <tr><td>Precio/mes</td><td>$300K–$900K/nivel</td><td>$400K–$1.2M/nivel</td><td>Desde $180K/mes</td></tr>
+    <tr><td>Simulacros de examen</td><td>Limitados</td><td>Limitados</td><td>Ilimitados en plataforma</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuánto cuesta el inglés en Bucaramanga en 2026?</h2>
+<p>Los precios varían significativamente según la modalidad:</p>
+<ul>
+  <li><strong>Academias tradicionales presenciales:</strong> $300.000 a $900.000 por nivel (1–2 meses de clases grupales)</li>
+  <li><strong>Centros de idiomas con prestigio:</strong> $400.000 a $1.500.000 por nivel</li>
+  <li><strong>Clases individuales con tutor particular:</strong> $40.000 a $90.000 por hora</li>
+  <li><strong>WeLearn (plan mensual):</strong> desde $180.000/mes (preparación) a $480.000/mes (intensivo 4x/semana)</li>
+  <li><strong>WeLearn (paquetes de horas):</strong> paquetes de 4, 10 y 20 horas con precio decreciente por hora</li>
+</ul>
+<p>Para preparación de IELTS o TOEFL, los paquetes de horas individuales con tutor especializado suelen ser más eficientes que los cursos grupales — aunque el costo por hora sea similar, la velocidad de progreso es mucho mayor.</p>
+
+<h2>Cómo elegir la academia correcta según tu objetivo</h2>
+
+<h3>Si necesitas IELTS o TOEFL para migrar o estudiar en el exterior</h3>
+<p>Necesitas una academia que conozca los criterios de evaluación del examen. El IELTS Band 7+ requiere un nivel de producción oral y escrita muy específico — no basta con "saber inglés". Busca una academia con tutores que hayan preparado candidatos para ese puntaje y que usen simulacros con los estándares reales del examen. WeLearn es la opción en Bucaramanga especializada en este perfil.</p>
+
+<h3>Si necesitas inglés conversacional para trabajo o viajes</h3>
+<p>Las academias tradicionales con grupos medianos pueden funcionar bien para este objetivo. El Colombo Americano tiene buen enfoque cultural. WeLearn también ofrece preparación conversacional 1:1 si prefieres progreso más rápido.</p>
+
+<h3>Si eres estudiante y necesitas mejorar para el ICFES</h3>
+<p>Para el ICFES Saber 11 necesitas un enfoque específico en comprensión de lectura, gramática funcional y vocabulario académico. La preparación ICFES de WeLearn tiene ruta propia con simulacros al estilo del examen. Muchas academias tradicionales ofrecen esto también, pero con grupos más grandes.</p>
+
+<h3>Si tienes presupuesto ajustado</h3>
+<p>Los cursos gratuitos de la Alcaldía de Bucaramanga en alianza con el SENA son una opción para inglés básico. Para niveles intermedios o avanzados, el Plan Preparación de WeLearn ($180.000/mes) ofrece una relación calidad-precio muy alta comparada con la oferta tradicional.</p>
+
+<h2>Conclusión: la academia correcta depende de tu objetivo</h2>
+<p>No existe "la mejor academia de inglés en Bucaramanga" sin contexto. Si tu objetivo es una certificación internacional con puntaje específico, WeLearn es la opción más especializada. Si buscas clases presenciales en grupo con horarios fijos, Celai o Praxis English son opciones sólidas. Lo más importante: define primero qué necesitas lograr y en cuánto tiempo.</p>
+<p>¿Quieres saber qué academia y qué plan se adapta mejor a tu objetivo? <a href="https://wa.me/573005004253?text=Hola%2C%20vi%20el%20art%C3%ADculo%20sobre%20academias%20de%20ingl%C3%A9s%20en%20Bucaramanga%20y%20quiero%20saber%20cu%C3%A1l%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> — te damos una recomendación honesta en menos de 2 horas.</p>
+<p>Lee también: <a href="/blog/cuanto-cuesta-aprender-ingles-en-bucaramanga-2026">¿Cuánto cuesta aprender inglés en Bucaramanga en 2026?</a> y <a href="/blog/clases-de-ingles-presenciales-vs-online-bucaramanga">Clases de inglés presenciales vs online en Bucaramanga</a>.</p>
+    `,
+  },
+  // ── Article 124 ────────────────────────────────────────────────────────────
+  {
+    slug: 'cuanto-cuesta-aprender-ingles-en-bucaramanga-2026',
+    title: '¿Cuánto cuesta aprender inglés en Bucaramanga en 2026? Precios reales',
+    description:
+      'Guía completa de precios de clases de inglés en Bucaramanga 2026: academias tradicionales, clases particulares, plataformas online y paquetes de horas. Cuánto pagar según tu objetivo.',
+    date: '2026-06-01',
+    readTime: 7,
+    category: 'Inglés',
+    tags: ['cuánto cuesta inglés Bucaramanga', 'precio clases inglés Bucaramanga', 'academia inglés Bucaramanga precio', 'clases particulares inglés Bucaramanga', 'paquetes inglés Bucaramanga'],
+    body: `
+<h2>¿Cuánto se paga por aprender inglés en Bucaramanga?</h2>
+<p>Esta es una de las preguntas más frecuentes de quienes quieren mejorar su inglés en Bucaramanga. Los precios varían enormemente según la modalidad, el tamaño del grupo, la especialización del tutor y si las clases son presenciales u online. Esta guía te da los precios reales del mercado en 2026.</p>
+
+<h2>Precios según modalidad en Bucaramanga</h2>
+
+<h3>Academias tradicionales (grupos presenciales)</h3>
+<p>Las academias más conocidas en Bucaramanga como Celai Institute, CAISA, Praxis English y New English manejan grupos de 8–20 personas con precios por nivel (1–2 meses):</p>
+<table>
+  <thead><tr><th>Academia</th><th>Precio por nivel</th><th>Modalidad</th></tr></thead>
+  <tbody>
+    <tr><td>Academias básicas</td><td>$300.000–$500.000</td><td>Grupal presencial</td></tr>
+    <tr><td>Academias premium</td><td>$600.000–$900.000</td><td>Grupal presencial/online</td></tr>
+    <tr><td>Centro Colombo Americano</td><td>$700.000–$1.500.000</td><td>Grupal presencial</td></tr>
+    <tr><td>Superprof (profesores particulares)</td><td>$30.000–$80.000/hora</td><td>Individual, variable</td></tr>
+  </tbody>
+</table>
+<p><em>Nota: el precio "por nivel" cubre entre 40 y 80 horas de clase, dependiendo de la academia. El costo real por hora suele ser de $5.000 a $15.000 en grupos.</em></p>
+
+<h3>Plataformas online con enfoque en Bucaramanga</h3>
+<p>Varias plataformas como Canadian College y English Training ofrecen cursos online dirigidos a Bucaramanga:</p>
+<ul>
+  <li>Canadian College: desde $300.000/nivel, online</li>
+  <li>English Training: desde $250.000/nivel, cursos A1–C1</li>
+  <li>Best English: modalidad online desde $200.000/mes</li>
+</ul>
+<p>Estas plataformas son funcionales para inglés general, pero rara vez tienen la profundidad necesaria para preparación de exámenes IELTS o TOEFL.</p>
+
+<h3>Clases individuales con tutor particular</h3>
+<p>Los precios de profesores particulares de inglés en Bucaramanga (según Superprof y el mercado local) oscilan entre:</p>
+<ul>
+  <li>Tutor sin formación certificada: $25.000–$40.000/hora</li>
+  <li>Tutor con formación universitaria en inglés: $50.000–$70.000/hora</li>
+  <li>Tutor especializado en IELTS/TOEFL: $60.000–$90.000/hora</li>
+</ul>
+
+<h3>WeLearn — Academia especializada en Bucaramanga</h3>
+<table>
+  <thead><tr><th>Plan</th><th>Precio</th><th>¿Qué incluye?</th></tr></thead>
+  <tbody>
+    <tr><td>Diagnóstico</td><td>Gratis</td><td>45 min: evaluación de nivel + plan personalizado</td></tr>
+    <tr><td>Plan Preparación</td><td>$180.000/mes</td><td>Simulacros + feedback escrito + chat tutor 24h</td></tr>
+    <tr><td>Plan Intensivo 2x/sem</td><td>$280.000/mes</td><td>Sesiones en vivo + tutor asignado + plan</td></tr>
+    <tr><td>Plan Intensivo 4x/sem</td><td>$480.000/mes</td><td>Sesiones en vivo frecuentes + tutor + evaluación mensual</td></tr>
+    <tr><td>Paquete 4 horas</td><td>Consultar WA</td><td>Clases en vivo prepago, sin compromiso mensual</td></tr>
+    <tr><td>Paquete 10 horas</td><td>Consultar WA</td><td>Mejor precio/hora que compras sueltas</td></tr>
+    <tr><td>Paquete 20 horas</td><td>Consultar WA</td><td>Mejor precio/hora disponible</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuánto cuesta prepararse para el IELTS en Bucaramanga?</h2>
+<p>La preparación para el IELTS en Bucaramanga tiene un costo total que incluye el programa de preparación más el costo del examen en sí:</p>
+<ul>
+  <li><strong>Costo del examen IELTS</strong> (British Council / IDP): aproximadamente $1.100.000–$1.200.000 COP</li>
+  <li><strong>Preparación en academia tradicional (grupal, 3 meses):</strong> $600.000–$1.800.000</li>
+  <li><strong>Preparación con WeLearn (Plan Intensivo 2x, 3 meses):</strong> $840.000 total</li>
+  <li><strong>Preparación con paquete de horas WeLearn (20h):</strong> consultar por WhatsApp</li>
+</ul>
+<p>La eficiencia del aprendizaje individual hace que el costo total de alcanzar Band 7 pueda ser menor con WeLearn que con cursos grupales, aunque el precio por hora parezca mayor — porque se llega al objetivo más rápido y con menos intentos de examen.</p>
+
+<h2>¿Cuánto cuesta prepararse para el TOEFL en Bucaramanga?</h2>
+<p>El examen TOEFL iBT cuesta aproximadamente USD 235 (~$1.000.000 COP al tipo de cambio de 2026). La preparación:</p>
+<ul>
+  <li>Cursos grupales en academia: $500.000–$1.200.000 (variable en meses)</li>
+  <li>WeLearn Plan Intensivo (2 meses): $560.000</li>
+  <li>Paquete de horas WeLearn: consultar por WhatsApp</li>
+</ul>
+
+<h2>¿Vale la pena invertir en inglés en Bucaramanga?</h2>
+<p>El retorno de inversión del inglés en Colombia sigue siendo uno de los más altos en educación no formal. Un profesional con IELTS Band 7 o TOEFL 90+ puede acceder a estudiar en el exterior, trabajar remoto para empresas internacionales o migrar a Canadá, Australia o el Reino Unido — con un aumento de ingresos del 3x–10x comparado con el mercado local.</p>
+<p>Comparado con el costo de una maestría en Colombia ($15M–$40M) o un viaje de intercambio, invertir $500.000–$1.000.000 en preparación de inglés certificado es una de las mejores decisiones económicas disponibles en 2026.</p>
+
+<h2>Conclusión: cómo optimizar tu inversión en inglés</h2>
+<p>Si tu objetivo es conseguir un puntaje certificado (IELTS, TOEFL, ICFES), las clases individuales con tutor especializado tienen mejor relación inversión/resultado que los cursos grupales. Si tu objetivo es inglés conversacional general, las academias tradicionales o las plataformas online funcionan bien a menor costo.</p>
+<p>¿Quieres saber exactamente cuánto te costaría prepararte para tu objetivo específico? <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20me%20costar%C3%ADa%20preparar%20mi%20ingl%C3%A9s%20con%20WeLearn%20en%20Bucaramanga." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> y te damos una cotización personalizada.</p>
+<p>Lee también: <a href="/blog/academias-de-ingles-en-bucaramanga-comparativa-2026">Academias de inglés en Bucaramanga: comparativa 2026</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a>.</p>
+    `,
+  },
+  // ── Article 125 ────────────────────────────────────────────────────────────
+  {
+    slug: 'clases-de-ingles-presenciales-vs-online-bucaramanga',
+    title: 'Clases de inglés presenciales vs online en Bucaramanga: guía honesta 2026',
+    description:
+      'Comparación real entre clases de inglés presenciales y online en Bucaramanga: ventajas, desventajas, diferencias de precio y cuál es mejor según tu objetivo en 2026.',
+    date: '2026-06-01',
+    readTime: 7,
+    category: 'Inglés',
+    tags: ['clases de inglés online Bucaramanga', 'inglés presencial vs online Bucaramanga', 'academia inglés online Bucaramanga', 'aprender inglés desde casa Bucaramanga', 'videollamada inglés Colombia'],
+    body: `
+<h2>¿Presencial u online? La pregunta equivocada</h2>
+<p>Muchos estudiantes en Bucaramanga empiezan buscando "clases de inglés presenciales" por costumbre o por la idea de que aprender frente a un tutor físico es mejor. Pero la evidencia pedagógica y la experiencia de miles de estudiantes muestran que el formato no es el factor determinante: lo que importa es la calidad del tutor, la frecuencia de práctica y la personalización del plan.</p>
+<p>Esta guía compara honestamente ambas opciones para que tomes la mejor decisión.</p>
+
+<h2>Ventajas reales de las clases presenciales en Bucaramanga</h2>
+<ul>
+  <li><strong>Estructura forzada:</strong> el horario fijo y el desplazamiento crean un compromiso externo que puede ayudar a estudiantes con poca autodisciplina.</li>
+  <li><strong>Interacción social directa:</strong> en grupos, escuchas inglés de otros compañeros (aunque no siempre es correcto) y hay cierta dinámica de clase grupal.</li>
+  <li><strong>Cero problemas de conexión:</strong> no hay riesgo de corte de internet o problemas de audio.</li>
+</ul>
+
+<h2>Desventajas de las clases presenciales en Bucaramanga</h2>
+<ul>
+  <li><strong>Grupos grandes:</strong> la mayoría de academias presenciales en Bucaramanga manejan grupos de 10–20 estudiantes. El tiempo de práctica individual por clase es de 3–5 minutos. Insuficiente para progresar rápido.</li>
+  <li><strong>Horarios inflexibles:</strong> las academias presenciales tienen horarios fijos. Si trabajas o estudias, adaptarte puede ser difícil.</li>
+  <li><strong>Desplazamiento:</strong> en Bucaramanga, ir a una academia puede tomar 20–45 minutos de ida. Son 40–90 minutos perdidos por clase.</li>
+  <li><strong>Precio por hora real más alto:</strong> aunque el precio "por nivel" parece razonable, dividido entre las horas de práctica individual, el costo por hora efectiva es elevado.</li>
+</ul>
+
+<h2>Ventajas reales de las clases online desde Bucaramanga</h2>
+<ul>
+  <li><strong>1:1 accesible:</strong> las plataformas online permiten clases individuales a precios comparables con los grupos presenciales. En WeLearn, el Plan Intensivo individual cuesta $280.000/mes por 2 sesiones semanales en vivo.</li>
+  <li><strong>Sin desplazamiento:</strong> aprendes desde tu casa en Bucaramanga, Floridablanca, Girón o Piedecuesta. 0 minutos perdidos en tráfico.</li>
+  <li><strong>Horarios flexibles:</strong> sesiones disponibles en la mañana, tarde y noche. Se adaptan al trabajo y al estudio.</li>
+  <li><strong>Tutores especializados:</strong> online puedes acceder a tutores especializados en IELTS o TOEFL que quizás no están disponibles en academias presenciales locales.</li>
+  <li><strong>Materiales digitales y simulacros:</strong> las plataformas online como WeLearn integran simulacros de examen, banco de preguntas y retroalimentación escrita que los entornos presenciales no ofrecen.</li>
+</ul>
+
+<h2>¿Las clases online son tan efectivas como las presenciales?</h2>
+<p>Sí. La evidencia de múltiples estudios sobre aprendizaje de idiomas (incluyendo investigaciones del British Council) muestra que las clases online 1:1 producen resultados iguales o mejores que las presenciales cuando:</p>
+<ul>
+  <li>El tutor tiene la misma calificación</li>
+  <li>La frecuencia de práctica es igual o mayor</li>
+  <li>El estudiante tiene un espacio tranquilo y una conexión estable</li>
+</ul>
+<p>La clave es la calidad del tutor y la frecuencia de práctica — no si están físicamente en la misma habitación.</p>
+
+<h2>¿Para qué tipo de estudiante funciona mejor cada opción?</h2>
+<table>
+  <thead>
+    <tr><th>Perfil</th><th>Recomendación</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Estudiante universitario con tiempo libre</td><td>Online o presencial — ambos funcionan</td></tr>
+    <tr><td>Profesional con horario exigente</td><td>Online (horarios flexibles, sin desplazamiento)</td></tr>
+    <tr><td>Preparación IELTS/TOEFL con puntaje objetivo</td><td>Online 1:1 con tutor especializado (WeLearn)</td></tr>
+    <tr><td>Niño o adolescente con poca autodisciplina</td><td>Presencial en academia con estructura fija</td></tr>
+    <tr><td>Persona en Floridablanca, Girón o Piedecuesta</td><td>Online (evita el desplazamiento largo a Bucaramanga centro)</td></tr>
+    <tr><td>Presupuesto muy ajustado</td><td>Academias tradicionales presenciales o plataformas básicas online</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué pasa con el speaking en clases online?</h2>
+<p>El mito más común es que el speaking no puede desarrollarse bien en clases online. Es falso. La producción oral en videollamada tiene las mismas condiciones que el IELTS Speaking — que también es por videollamada o teléfono desde 2020. En WeLearn, el speaking es el componente central de cada sesión: grabamos las respuestas, las analizamos y las corregimos con criterios del British Council.</p>
+
+<h2>WeLearn: academia online en Bucaramanga con resultados verificables</h2>
+<p>WeLearn ofrece clases de inglés online para estudiantes en todo Bucaramanga y el área metropolitana (Floridablanca, Girón, Piedecuesta). El Plan Intensivo incluye sesiones en vivo 2 o 4 veces por semana con tutor asignado, plan de estudio personalizado y evaluación mensual de progreso.</p>
+<p>También ofrecemos paquetes de horas prepago (4, 10 y 20 horas) con precio por hora decreciente — ideal si quieres probar sin compromiso mensual.</p>
+<p><a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20comparar%20las%20opciones%20de%20clases%20de%20ingl%C3%A9s%20online%20en%20Bucaramanga%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para tu clase de diagnóstico gratis o visita nuestra página de <a href="/clases-de-ingles">clases de inglés</a>.</p>
+<p>Lee también: <a href="/blog/academias-de-ingles-en-bucaramanga-comparativa-2026">Academias de inglés en Bucaramanga: comparativa 2026</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-en-bucaramanga-2026">¿Cuánto cuesta aprender inglés en Bucaramanga?</a>.</p>
+    `,
+  },
+  // ── Article 126 ────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-bucaramanga-centros-de-examen-y-registro',
+    title: 'IELTS en Bucaramanga: centros autorizados, fechas y cómo registrarse',
+    description:
+      'Todo lo que necesitas saber sobre el IELTS en Bucaramanga: dónde presentarlo, cuánto cuesta, cómo registrarse y cómo prepararte con WeLearn para alcanzar el puntaje que necesitas.',
+    date: '2026-06-01',
+    readTime: 6,
+    category: 'IELTS',
+    tags: ['IELTS Bucaramanga', 'presentar IELTS Bucaramanga', 'centro IELTS Bucaramanga', 'preparación IELTS Bucaramanga', 'costo IELTS Colombia 2026'],
+    body: `
+<h2>¿Dónde se presenta el IELTS en Bucaramanga?</h2>
+<p>El IELTS (International English Language Testing System) se puede presentar en Bucaramanga a través de los centros autorizados por el British Council e IDP. En 2026, el Centro Colombo Americano de Bucaramanga es el punto de aplicación más accesible para residentes del área metropolitana. También hay opciones en Bogotá, Medellín y Cali si las fechas en Bucaramanga están llenas.</p>
+<p>El examen IELTS Computer-Delivered (IELTS CD) está disponible con mayor frecuencia que el papel — hasta 3–4 veces por semana en algunos centros. Esto facilita mucho encontrar una fecha disponible en Bucaramanga.</p>
+
+<h2>¿Cuánto cuesta el IELTS en Colombia en 2026?</h2>
+<p>El costo del examen IELTS en Colombia es de aproximadamente <strong>$1.100.000 a $1.200.000 COP</strong> (equivalente a ~USD 270–290), dependiendo del centro y del tipo de examen (papel o computador). El precio es el mismo para IELTS Academic y IELTS General Training.</p>
+<p>Este costo no incluye la preparación — si quieres invertir el dinero de forma eficiente, necesitas llegar al examen con el nivel adecuado para no tener que presentarlo dos o tres veces.</p>
+
+<h2>IELTS Academic vs General Training: ¿cuál presentar en Bucaramanga?</h2>
+<ul>
+  <li><strong>IELTS Academic:</strong> para admisión a universidades, posgrados y programas profesionales en el exterior. También para programas de salud (enfermería, medicina) en UK, Canadá o Australia.</li>
+  <li><strong>IELTS General Training:</strong> para migración (Skilled Worker UK, Express Entry Canadá, Australia PR) y programas de trabajo/estudio general.</li>
+</ul>
+<p>Si no estás seguro cuál presentar, el tipo de visa o el programa de admisión lo determina. En WeLearn te ayudamos a identificar cuál necesitas en tu clase de diagnóstico.</p>
+
+<h2>¿Qué puntaje necesito? Los Band más comunes</h2>
+<table>
+  <thead><tr><th>Objetivo</th><th>Band mínimo típico</th></tr></thead>
+  <tbody>
+    <tr><td>Visa de trabajo UK (Skilled Worker)</td><td>Band 6.0</td></tr>
+    <tr><td>Express Entry Canadá (CLB 9)</td><td>Band 7.0</td></tr>
+    <tr><td>Universidad en UK (pregrado)</td><td>Band 6.0–6.5</td></tr>
+    <tr><td>Universidad en Australia (pregrado)</td><td>Band 6.0–6.5</td></tr>
+    <tr><td>Maestría en UK o Australia</td><td>Band 6.5–7.0</td></tr>
+    <tr><td>Programa de enfermería UK/Australia</td><td>Band 7.0 (cada sección ≥ 7.0)</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cómo registrarse para el IELTS en Bucaramanga?</h2>
+<ol>
+  <li>Entra al sitio del <a href="https://www.britishcouncil.org.co/examenes/ielts" target="_blank" rel="noopener noreferrer">British Council Colombia</a> o de <a href="https://www.idp.com/colombia/" target="_blank" rel="noopener noreferrer">IDP Colombia</a></li>
+  <li>Selecciona "Bucaramanga" como ciudad y elige la fecha disponible</li>
+  <li>Crea una cuenta y completa el registro con tu cédula o pasaporte</li>
+  <li>Paga el examen (transferencia bancaria o tarjeta de crédito)</li>
+  <li>Recibirás confirmación y los detalles del centro por correo</li>
+</ol>
+<p>Se recomienda registrarse con al menos 4–6 semanas de anticipación, especialmente para fechas de fin de mes o de temporada alta (enero, mayo, agosto).</p>
+
+<h2>¿Cuánto tiempo de preparación necesito en Bucaramanga?</h2>
+<p>El tiempo de preparación depende de tu nivel actual:</p>
+<ul>
+  <li><strong>Nivel B1 (intermedio):</strong> 3–4 meses de preparación para alcanzar Band 6.5</li>
+  <li><strong>Nivel B2 (intermedio-alto):</strong> 6–10 semanas para Band 7.0</li>
+  <li><strong>Nivel C1:</strong> 4–6 semanas de preparación técnica del examen para Band 7.5+</li>
+</ul>
+
+<h2>Preparación para IELTS en Bucaramanga con WeLearn</h2>
+<p>WeLearn ofrece preparación para IELTS con clases online desde Bucaramanga. Nuestros estudiantes han alcanzado Band 7.0+ en IELTS Academic y General. El programa incluye simulacros completos, retroalimentación escrita por sección (Reading, Listening, Writing y Speaking) y sesiones en vivo con tutor asignado.</p>
+<p><a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20preparaci%C3%B3n%20para%20el%20IELTS%20desde%20Bucaramanga.%20%C2%BFC%C3%B3mo%20funciona%20el%20programa%20de%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para agendar tu clase de diagnóstico gratis y armar un plan según tu fecha de examen.</p>
+<p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
