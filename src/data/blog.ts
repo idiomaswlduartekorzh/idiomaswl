@@ -7414,6 +7414,785 @@ Esta diferencia puede generar malentendidos culturales.</p>
 <p>Lee también: <a href="/blog/ciudadania-italiana-italiano-b1-requisito">Ciudadanía italiana y el requisito de italiano B1</a> y <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: certificaciones de italiano en Colombia</a>.</p>
     `,
   },
+  // ── Article 101 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-speaking-parte-2-cue-card-como-hablar-2-minutos',
+    title: 'IELTS Speaking Parte 2: cómo hablar 2 minutos sobre cualquier tema',
+    description: 'La Parte 2 del IELTS Speaking es la que más candidatos temen. Aprende la estructura, técnicas de extensión y cómo preparar temas frecuentes para hablar con fluidez.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['IELTS', 'Speaking', 'cue card', 'banda 7', 'fluidez'],
+    body: `
+<h2>Qué es la Parte 2 del IELTS Speaking</h2>
+<p>El IELTS Speaking tiene 3 partes. La Parte 2 — también llamada <strong>Long Turn</strong> o <strong>Cue Card</strong> — es donde el candidato habla solo durante 1–2 minutos sobre un tema dado. El evaluador entrega una tarjeta (cue card) con el tema y 3–4 puntos guía. Tienes 1 minuto para prepararte con papel y lápiz, y luego debes hablar por al menos 1 minuto (idealmente 2 minutos).</p>
+<p>Ejemplo de cue card:</p>
+<blockquote>
+<em>Describe a book you have read that you found interesting.<br>
+You should say:<br>
+— what the book was about<br>
+— why you decided to read it<br>
+— what you found interesting about it<br>
+And explain whether you would recommend it to others.</em>
+</blockquote>
+
+<h2>Por qué la Parte 2 es difícil</h2>
+<ul>
+  <li>Hablar solo 2 minutos sin interrupciones ni preguntas de apoyo es culturalmente inusual</li>
+  <li>El nerviosismo puede bloquear el vocabulario justo cuando más se necesita</li>
+  <li>Muchos candidatos se quedan sin ideas a los 45 segundos</li>
+  <li>La monitorización excesiva (autocorregirse mentalmente) fragmenta el discurso</li>
+</ul>
+
+<h2>Estructura universal para cualquier cue card</h2>
+<p>Usa esta estructura PREP (Point → Reason → Example → Point again):</p>
+<ol>
+  <li><strong>Introducción (10–15 seg)</strong>: nombra el tema y da contexto. "I'd like to talk about..."</li>
+  <li><strong>Primer punto guía (20–25 seg)</strong>: responde el primero de los bullet points con una oración principal + desarrollo</li>
+  <li><strong>Segundo punto guía (20–25 seg)</strong>: segundo bullet</li>
+  <li><strong>Tercer punto guía (20–25 seg)</strong>: tercer bullet</li>
+  <li><strong>Punto final (15–20 seg)</strong>: el último bullet o una conclusión/reflexión personal</li>
+</ol>
+<p>Total: ~1 min 30 seg a 2 min. No necesitas más.</p>
+
+<h2>Técnicas de extensión: cómo añadir tiempo de calidad</h2>
+<p>Cuando te quedas sin ideas, usa estas técnicas para extender naturalmente:</p>
+<ul>
+  <li><strong>Contraste temporal</strong>: "When I was younger, I used to... but nowadays..."</li>
+  <li><strong>Consecuencias</strong>: "Because of this, I became more interested in... which led me to..."</li>
+  <li><strong>Comparación</strong>: "Compared to other [books/places/people], this one was particularly..."</li>
+  <li><strong>Emoción</strong>: "What struck me most was... I remember feeling..."</li>
+  <li><strong>Contrafactual</strong>: "If I hadn't [read that book/visited that place], I probably would never have..."</li>
+</ul>
+
+<h2>Los temas más frecuentes en la Parte 2 y cómo prepararlos</h2>
+<p>El IELTS recicla categorías temáticas. Prepara historias personales para estos grupos:</p>
+<ul>
+  <li><strong>Personas</strong>: alguien que admiras, un amigo importante, una persona que te influyó</li>
+  <li><strong>Lugares</strong>: un lugar que visitaste, tu ciudad favorita, un lugar que quieres visitar</li>
+  <li><strong>Objetos</strong>: algo que recibiste de regalo, un objeto importante, una foto especial</li>
+  <li><strong>Actividades</strong>: un hobby, un deporte, algo que haces para relajarte</li>
+  <li><strong>Experiencias</strong>: un viaje, un logro, un momento difícil, algo que aprendiste</li>
+  <li><strong>Medios</strong>: un libro, una película, una canción, un programa de TV</li>
+</ul>
+<p>Prepara 1–2 historias por categoría antes del examen. Cualquier cue card cae en una de estas 6 categorías.</p>
+
+<h2>El minuto de preparación: cómo usarlo</h2>
+<ol>
+  <li>Lee la cue card completa (10 segundos)</li>
+  <li>Decide exactamente qué historia o ejemplo vas a usar (10 segundos)</li>
+  <li>Escribe 2–3 palabras clave por bullet point — no frases completas (30 segundos)</li>
+  <li>Decide tu primera oración de apertura (10 segundos)</li>
+</ol>
+<p>No intentes escribir todo lo que vas a decir — es contraproducente. Las palabras clave son suficientes para guiarte.</p>
+
+<h2>Vocabulario de cohesión para la Parte 2</h2>
+<p>Usa estos conectores para hacer el discurso fluido y natural:</p>
+<ul>
+  <li><strong>Para iniciar</strong>: "I'd like to talk about...", "The [book/place] I have in mind is..."</li>
+  <li><strong>Para añadir</strong>: "What's more...", "On top of that...", "Another thing I remember is..."</li>
+  <li><strong>Para concluir</strong>: "Overall...", "Looking back on it...", "To sum up my experience..."</li>
+  <li><strong>Para ganar tiempo</strong>: "That's an interesting question...", "Let me think about that for a moment..." (solo en partes 1 y 3 — en parte 2 hablas directamente)</li>
+</ul>
+
+<h2>Error más común: hablar de lo que sabes, no de lo que te piden</h2>
+<p>Si la cue card pide "describe a time when you helped someone" y hablas de tu trabajo de voluntariado en general (no de una experiencia específica), el evaluador lo nota. Task Achievement en Speaking exige responder exactamente lo que pide la tarjeta, no el tema más amplio.</p>
+
+<h2>WeLearn y la preparación IELTS Speaking</h2>
+<p>Practicamos las 3 partes del Speaking con simulacros grabados y retroalimentación específica por banda. La Parte 2 se trabaja con cue cards reales del banco de preguntas actual. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20IELTS%20Speaking%20y%20la%20Parte%202.%20%C2%BFTienen%20clases%20de%20practica%3F" target="_blank" rel="noopener noreferrer">Escríbenos y simulamos tu examen esta semana</a>.</p>
+<p>Lee también: <a href="/blog/ielts-speaking-fluency-coherence-como-mejorar-banda">IELTS Speaking: fluidez y coherencia para subir tu banda</a> y <a href="/blog/ielts-de-banda-6-a-banda-7-que-cambia">De banda 6 a banda 7: qué cambia</a>.</p>
+    `,
+  },
+
+  // ── Article 102 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-profesionales-de-salud-colombia',
+    title: 'Inglés para profesionales de salud en Colombia: médicos, enfermeros y fisioterapeutas',
+    description: 'El inglés es clave para acceder a literatura médica internacional, congresos y oportunidades laborales. Guía para profesionales de salud colombianos que quieren mejorar su inglés.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Inglés',
+    tags: ['Inglés', 'medicina', 'salud', 'profesional', 'C1', 'vocabulario médico'],
+    body: `
+<h2>Por qué el inglés es esencial en las profesiones de salud</h2>
+<p>El 95% de la investigación médica publicada en revistas de alto impacto está en inglés. <em>The Lancet, NEJM, JAMA, BMJ, Nature Medicine</em> — sin inglés, accedes a esa ciencia con meses de retraso (cuando hay traducción) o no accedes. Para un médico, enfermero, fisioterapeuta, nutricionista o cualquier profesional de salud colombiano, el inglés ya no es un lujo: es una herramienta profesional básica.</p>
+<p>Además de la literatura, el inglés abre:</p>
+<ul>
+  <li>Rotaciones clínicas y congresos internacionales</li>
+  <li>Maestrías y doctorados en universidades anglófonas</li>
+  <li>Telemedicina con pacientes internacionales</li>
+  <li>Oportunidades laborales en Canadá, Estados Unidos, Australia, Reino Unido</li>
+  <li>Investigación y publicación de papers</li>
+</ul>
+
+<h2>Niveles de inglés y lo que habilita cada uno</h2>
+<table>
+  <thead><tr><th>Nivel</th><th>Lo que puedes hacer en medicina</th></tr></thead>
+  <tbody>
+    <tr><td>A2</td><td>Leer artículos simples con diccionario. Presentarte en un congreso en lo básico.</td></tr>
+    <tr><td>B1</td><td>Entender abstract de papers. Comunicarte con colegas internacionales por email.</td></tr>
+    <tr><td>B2</td><td>Leer papers completos con fluidez. Participar en discusiones académicas. Presentar un caso clínico.</td></tr>
+    <tr><td>C1</td><td>Publicar papers. Hacer rotaciones clínicas. Entrevistas de residencia. Congresos internacionales.</td></tr>
+    <tr><td>C2</td><td>Nativo efectivo. Práctica clínica independiente en país angloparlante.</td></tr>
+  </tbody>
+</table>
+
+<h2>Vocabulario médico clave por especialidad</h2>
+<h3>Medicina interna y urgencias</h3>
+<ul>
+  <li>Chief complaint, presenting symptoms, clinical history</li>
+  <li>Vital signs: blood pressure (BP), heart rate (HR), respiratory rate (RR), O2 saturation (SpO2)</li>
+  <li>Physical exam: auscultation, percussion, palpation, inspection</li>
+  <li>Differential diagnosis, rule out, work-up</li>
+  <li>SOAP note: Subjective, Objective, Assessment, Plan</li>
+</ul>
+<h3>Enfermería</h3>
+<ul>
+  <li>Nursing care plan, nursing diagnoses, outcomes, interventions</li>
+  <li>Medication administration: PO (per os), IV (intravenous), IM, SQ</li>
+  <li>Patient safety, fall prevention, pressure ulcer prevention</li>
+  <li>Handoff / shift report: SBAR (Situation, Background, Assessment, Recommendation)</li>
+</ul>
+<h3>Fisioterapia</h3>
+<ul>
+  <li>Range of motion (ROM), muscle strength, functional mobility</li>
+  <li>Therapeutic exercise, manual therapy, neuromuscular reeducation</li>
+  <li>Gait analysis, balance training, proprioception</li>
+  <li>ICF (International Classification of Functioning) framework</li>
+</ul>
+
+<h2>Cómo leer un paper médico en inglés — metodología</h2>
+<p>Leer un paper no es leer de inicio a fin. La estrategia más eficiente para profesionales ocupados:</p>
+<ol>
+  <li><strong>Abstract</strong> (1 min): ¿de qué trata y qué encontró?</li>
+  <li><strong>Introduction</strong> (2 min): contexto y pregunta de investigación</li>
+  <li><strong>Results</strong> (3–5 min): tablas, gráficos, hallazgos principales</li>
+  <li><strong>Conclusion/Discussion</strong> (3 min): implicaciones clínicas</li>
+  <li><strong>Methods</strong>: solo si necesitas evaluar la validez del estudio</li>
+</ol>
+<p>Con B2 de inglés puedes aplicar esta metodología y extraer el valor clínico en 10 minutos por paper.</p>
+
+<h2>El inglés médico vs. el inglés general — qué estudiar primero</h2>
+<p>Error frecuente: esperar a tener inglés "perfecto" antes de estudiar vocabulario médico. La realidad: el vocabulario médico en inglés es en gran parte de origen latino — y como hispanohablante, ya lo reconoces. <em>Hypertension, inflammation, cardiovascular, neurological, hepatic, renal, pulmonary</em> — estas palabras ya las entiendes. Tu ventaja natural como hispanohablante en inglés médico es mayor que en inglés coloquial.</p>
+<p>Estrategia recomendada:</p>
+<ul>
+  <li>Estudia inglés general hasta B1</li>
+  <li>Desde B1, integra vocabulario médico específico a tu área</li>
+  <li>Lee 1 abstract por día en inglés (PubMed, Cochrane)</li>
+  <li>Escucha 1 podcast médico por semana (NEJM Quick Takes, The Lancet Voice, British Medical Journal)</li>
+</ul>
+
+<h2>Recursos gratuitos para profesionales de salud</h2>
+<ul>
+  <li><strong>PubMed</strong>: acceso gratuito a millones de abstracts y muchos papers completos (PubMed Central)</li>
+  <li><strong>Cochrane Library</strong>: revisiones sistemáticas en inglés — los abstracts son gratuitos</li>
+  <li><strong>BMJ Open</strong>: journal de acceso abierto, papers completos gratis</li>
+  <li><strong>NEJM Quick Takes</strong>: videos de 5 minutos resumiendo los mejores papers de la semana</li>
+  <li><strong>Medscape en inglés</strong>: noticias, guías clínicas, CME — cambia la configuración al inglés</li>
+</ul>
+
+<h2>WeLearn y el inglés para profesionales de salud</h2>
+<p>Diseñamos programas de inglés para médicos, enfermeros y fisioterapeutas que necesitan inglés funcional — desde leer papers hasta entrevistas para residencia o trabajo en el exterior. El programa se adapta a horarios de guardia y rotaciones. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20profesional%20de%20salud%20y%20quiero%20mejorar%20mi%20ingl%C3%A9s%20m%C3%A9dico.%20%C2%BFTienen%20un%20programa%20para%20m%C3%AD%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu especialidad y nivel actual</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-residencia-medica-en-estados-unidos">Inglés para médicos que quieren hacer residencia en Estados Unidos</a> y <a href="/blog/ingles-b2-c1-para-trabajo-remoto-global">Inglés B2–C1 para trabajo remoto y global</a>.</p>
+    `,
+  },
+
+  // ── Article 103 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'migrar-a-espana-nivel-ingles-y-espanol-que-necesitas',
+    title: 'Migrar a España desde Colombia: ¿qué nivel de inglés necesitas realmente?',
+    description: 'España es el segundo destino migratorio de colombianos. Analizamos si necesitas inglés, cuánto importa, y qué idiomas abren más puertas en el mercado laboral español.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Migración',
+    tags: ['Migración', 'España', 'inglés', 'visa', 'trabajo', 'B2'],
+    body: `
+<h2>La paradoja del inglés para colombianos en España</h2>
+<p>España es el país con más colombianos en el exterior después de Estados Unidos. Y tiene una paradoja lingüística: los colombianos ya hablan el idioma del país de destino — el español. Entonces, ¿para qué sirve el inglés en España?</p>
+<p>Más de lo que parece. El mercado laboral español, especialmente en tecnología, turismo internacional, finanzas y multinacionales con sede en España, premia enormemente el inglés. En sectores como IT, el inglés B2 puede significar la diferencia entre un salario de €22,000 y uno de €35,000 al año.</p>
+
+<h2>Visas para colombianos en España</h2>
+<h3>Visa de trabajo por cuenta ajena</h3>
+<p>Un empleador español te ofrece un contrato. El requisito lingüístico lo pone el empleador, no la visa. Para la mayoría de sectores, el español es suficiente. Para multinacionales y tecnología, piden inglés B2 o C1.</p>
+
+<h3>Visa Nómada Digital</h3>
+<p>La visa de nómada digital española (aprobada en 2023) es para trabajadores remotos con empleador fuera de España. No hay requisito oficial de inglés, pero si tu empleador es internacional, ya tienes inglés de trabajo. El trámite consular se hace en español.</p>
+
+<h3>Arraigo laboral → residencia</h3>
+<p>Tras 2 años de trabajo con contrato en España, puedes solicitar el arraigo laboral. Sin requisito de idioma adicional (ya tienes el español).</p>
+
+<h3>Ciudadanía española — el plazo más corto del mundo para latinoamericanos</h3>
+<p>Colombia tiene tratado con España: solo 2 años de residencia legal para pedir la ciudadanía (vs. 10 para otros países). Para el examen de conocimientos constitucionales (CCSE) el idioma es el español. Para el DELE A2 requerido, el español es el idioma — pero el nivel es muy bajo para un colombiano nativo.</p>
+
+<h2>¿Dónde el inglés sí marca la diferencia en España?</h2>
+<h3>Tecnología y startups</h3>
+<p>Madrid y Barcelona tienen ecosistemas tech crecientes con empresas internacionales. Empresas como Cabify, Glovo, Factorial, Typeform y decenas de startups de inversión internacional trabajan en inglés internamente. Los desarrolladores con inglés C1 ganan €15,000–€25,000 más que los que solo tienen español.</p>
+
+<h3>Turismo y hostelería internacional</h3>
+<p>Hoteles de 4–5 estrellas, cruceros con sede en España, agencias de viaje internacionales — inglés B2 mínimo para posiciones de guest relations, concierge y management.</p>
+
+<h3>Banca y finanzas</h3>
+<p>BBVA, Santander, CaixaBank tienen operaciones globales. Las posiciones de análisis financiero, trading y consultoría estratégica requieren inglés fluido para comunicarse con clientes y contrapartes internacionales.</p>
+
+<h3>Consultoría y big four</h3>
+<p>Deloitte, PwC, KPMG, EY en España trabajan en inglés con clientes multinacionales. Para profesionales con perfil internacional (contadores, abogados, ingenieros), el inglés C1 es casi obligatorio para avanzar más allá del nivel junior.</p>
+
+<h2>Inglés vs. catalán en España</h2>
+<p>Un punto que muchos colombianos no anticipan: en Cataluña (Barcelona), el catalán es co-oficial y algunas administraciones lo prefieren. Para trabajar en el sector público catalán, el catalán es más útil que el inglés. Para el sector privado y startups, el inglés supera al catalán en utilidad práctica.</p>
+<p>En Madrid, Andalucía, Valencia y otras regiones: inglés es la segunda lengua práctica. No hay ambigüedad.</p>
+
+<h2>Comparativa: inglés en España vs. otros destinos europeos</h2>
+<table>
+  <thead><tr><th>País</th><th>Inglés en el mercado laboral</th><th>Idioma local necesario</th></tr></thead>
+  <tbody>
+    <tr><td>España</td><td>Muy valorado, no obligatorio en todos los sectores</td><td>Español (ya lo tienes)</td></tr>
+    <tr><td>Portugal</td><td>Útil, pero el portugués es prioritario</td><td>Portugués B1–B2</td></tr>
+    <tr><td>Alemania</td><td>Útil en tech; alemán sigue siendo esencial</td><td>Alemán B1–B2 mínimo</td></tr>
+    <tr><td>Países Bajos</td><td>Muy alto — muchas empresas trabajan 100% en inglés</td><td>Holandés deseable pero no obligatorio</td></tr>
+    <tr><td>Francia</td><td>Útil en multinacionales; el francés es la norma</td><td>Francés B2 mínimo</td></tr>
+  </tbody>
+</table>
+
+<h2>Nivel de inglés recomendado por perfil</h2>
+<ul>
+  <li><strong>Hostelería, comercio, administración local</strong>: B1 suficiente en muchos casos</li>
+  <li><strong>Educación, salud pública</strong>: B1–B2 para acceder a mejores posiciones</li>
+  <li><strong>Tecnología, startups, consultoras</strong>: B2 mínimo, C1 ideal</li>
+  <li><strong>Finanzas internacionales, trading, investment banking</strong>: C1–C2</li>
+  <li><strong>Nómada digital con empleador internacional</strong>: depende del empleador; generalmente B2+</li>
+</ul>
+
+<h2>WeLearn y el inglés para Colombia → España</h2>
+<p>Preparamos candidatos que quieren migrar a España con inglés suficiente para el mercado laboral objetivo. El programa se enfoca en inglés profesional — emails, reuniones, presentaciones — en el contexto de tu sector. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20migrar%20a%20Espa%C3%B1a%20y%20necesito%20mejorar%20mi%20ingl%C3%A9s%20profesional.%20%C2%BFTienen%20un%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos y comenzamos con tu diagnóstico</a>.</p>
+<p>Lee también: <a href="/blog/migrar-a-portugal-nivel-ingles-o-portugues-requisitos">Migrar a Portugal: inglés o portugués — qué necesitas</a> y <a href="/blog/ingles-b2-c1-para-trabajo-remoto-global">Inglés B2–C1 para trabajo remoto y global</a>.</p>
+    `,
+  },
+
+  // ── Article 104 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'frances-para-vivir-en-canada-diferencias-ingles-frances',
+    title: 'Francés para vivir en Canadá: cuándo es más valioso que el inglés',
+    description: 'En Quebec y ciertas provincias de Canadá, el francés puede ser más importante que el inglés para conseguir residencia y trabajo. Guía para colombianos.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'Francés',
+    tags: ['Francés', 'Canadá', 'Quebec', 'migración', 'TCF', 'TEF'],
+    body: `
+<h2>Canadá tiene dos lenguas oficiales — y eso cambia todo</h2>
+<p>La mayoría de colombianos piensa en Canadá como un destino de inglés. Pero Canadá es bilingüe — inglés y francés son co-oficiales en el gobierno federal, y Quebec (la provincia más grande por territorio) tiene el francés como único idioma oficial. En 2026, el gobierno canadiense ha aumentado significativamente los cupos de inmigración francófona como parte de su Plan de Inmigración Francófona.</p>
+<p>Resultado: tener francés abre puertas de residencia que el inglés solo no abre.</p>
+
+<h2>Vías de inmigración donde el francés es clave</h2>
+<h3>Express Entry — puntos por francés</h3>
+<p>En el sistema Express Entry, hablar francés da puntos adicionales de CRS (Comprehensive Ranking System):</p>
+<ul>
+  <li>Francés nivel CLB 7+ + inglés CLB 5+: <strong>25 puntos adicionales</strong></li>
+  <li>Francés nivel CLB 7+ sin requisito de inglés: <strong>50 puntos adicionales</strong></li>
+</ul>
+<p>En un sistema donde la diferencia entre ser invitado o no puede ser 5–10 puntos, el francés puede ser decisivo para perfiles que no llegan al corte por factores como edad o experiencia.</p>
+
+<h3>Quebec Skilled Worker (QSWP)</h3>
+<p>Quebec tiene su propio sistema de selección de inmigrantes. El francés da entre 6 y 16 puntos (de un máximo posible de 100 en la grille de sélection). Un solicitante con francés B2 tiene ventaja significativa sobre uno sin francés. El proceso: selección de Quebec → luego solicitud federal de residencia permanente.</p>
+
+<h3>Francophone Mobility Program</h3>
+<p>Permite trabajar fuera de Quebec en posiciones francófonas con permiso de trabajo simplificado. Las provincias de New Brunswick, Ontario franco (Ottawa, Sudbury), Manitoba y Alberta tienen comunidades francófonas activas que acogen inmigrantes con francés.</p>
+
+<h2>Exámenes de francés aceptados por IRCC (Immigration, Refugees and Citizenship Canada)</h2>
+<table>
+  <thead><tr><th>Examen</th><th>Organismo</th><th>Equivalencia CLB</th></tr></thead>
+  <tbody>
+    <tr><td>TEF Canada</td><td>CCIP (Chambre de commerce)</td><td>El más aceptado para Express Entry</td></tr>
+    <tr><td>TCF Canada</td><td>France Éducation International</td><td>También aceptado por IRCC</td></tr>
+    <tr><td>DELF/DALF</td><td>Alliance Française / Ministerio de Francia</td><td>No aceptado directamente por IRCC para EE</td></tr>
+  </tbody>
+</table>
+<p>Nota importante: para Express Entry y Quebec, IRCC solo acepta TEF Canada y TCF Canada — no el DELF. El DELF es válido para otras cosas (universidades, empleadores) pero no para el proceso de inmigración.</p>
+
+<h2>¿Qué nivel de francés necesito para los 25 puntos de Express Entry?</h2>
+<p>Para los 25 puntos extra (French + English): necesitas CLB 7 en francés, que equivale aproximadamente a:</p>
+<ul>
+  <li>TEF Canada: 207–232 (comprensión oral), 226–270 (expresión escrita)</li>
+  <li>TCF Canada: 549–610 (comprensión oral), 14–16 (expresión escrita)</li>
+</ul>
+<p>CLB 7 en francés corresponde aproximadamente a NCLC B2 — nivel intermedio-alto.</p>
+
+<h2>Vivir en Quebec: el francés en la vida diaria</h2>
+<p>Quebec es una sociedad mayoritariamente francófona. El inglés se habla en Montreal (especialmente el barrio de Côte-des-Neiges, Plateau Mont-Royal) pero en el resto de la provincia — Quebec City, Laval, Longueuil, Sherbrooke, Trois-Rivières — el francés es el idioma de trabajo, administración, salud y vida social.</p>
+<p>Para integrarse y progresar en Quebec más allá de Montreal, el francés B2 es el mínimo práctico. Muchos colombianos en Quebec confirman que su inglés no les sirvió tanto como esperaban — y que aprender francés fue la clave de su integración.</p>
+
+<h2>Francés + inglés = máxima empleabilidad en Canadá</h2>
+<p>La combinación más poderosa en el mercado laboral canadiense: inglés C1 + francés B2. Un profesional bilingüe en ambas lenguas oficiales tiene acceso al 100% del mercado laboral federal, empresas con contratos gubernamentales (donde la ley de idiomas oficiales exige empleados bilingües), y toda la economía de Quebec más las provincias anglófonas.</p>
+
+<h2>WeLearn y el francés para Canadá</h2>
+<p>Preparamos el TCF Canada y TEF Canada con foco en los componentes que más pesan en Express Entry y Quebec. El programa incluye simulacros de comprensión oral y expresión escrita bajo condiciones reales. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20franc%C3%A9s%20para%20migrar%20a%20Canad%C3%A1%20o%20Quebec.%20%C2%BFTienen%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos y comenzamos</a>.</p>
+<p>Lee también: <a href="/blog/tcf-canada-frances-para-inmigrar-a-quebec">TCF Canadá: el examen de francés para inmigrar a Quebec</a> y <a href="/blog/ingles-para-canada-express-entry-requisitos-2026">Express Entry Canadá: inglés y CRS score</a>.</p>
+    `,
+  },
+
+  // ── Article 105 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'coreano-nivel-minimo-para-trabajar-en-corea',
+    title: 'Coreano: ¿cuál es el nivel mínimo para trabajar en Corea del Sur?',
+    description: 'Trabajar en Corea del Sur como extranjero es posible, pero el nivel de coreano requerido varía enormemente según el sector. Análisis realista por tipo de trabajo y visa.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Coreano',
+    tags: ['Coreano', 'Corea del Sur', 'trabajo', 'visa', 'TOPIK', 'inglés'],
+    body: `
+<h2>¿Necesitas coreano para trabajar en Corea del Sur?</h2>
+<p>La respuesta honesta: depende enormemente del sector. Hay trabajos en Corea del Sur donde el coreano es indispensable desde el día uno, y trabajos donde el inglés es suficiente para años. Conocer esta diferencia antes de emigrar puede ahorrarte 2 años de frustración.</p>
+
+<h2>Sectores donde el inglés es suficiente (con poco o nada de coreano)</h2>
+<h3>Enseñanza de inglés (E-2 Visa)</h3>
+<p>El mayor empleador de extranjeros en Corea del Sur es el sistema de academias de inglés (hagwon) y las escuelas públicas (EPIK program). Para estos trabajos:</p>
+<ul>
+  <li>Inglés nativo o C1 es el requisito</li>
+  <li>Coreano: no requerido — los estudiantes están aprendiendo inglés, no coreano</li>
+  <li>Salario: ₩2,000,000–₩2,800,000/mes + alojamiento incluido en muchos contratos</li>
+  <li>Visa E-2: para hablantes nativos de inglés de países específicos (USA, Canadá, Australia, UK, Irlanda, Sudáfrica, Nueva Zelanda)</li>
+</ul>
+<p>Nota: Colombia y la mayoría de Latinoamérica no califican para E-2 directamente. Sin embargo, si tienes pasaporte de uno de esos países o ciudadanía, aplica.</p>
+
+<h3>Tecnología en empresas multinacionales</h3>
+<p>Samsung, LG, Hyundai-Kia, SK, Kakao, Naver — todas tienen divisiones internacionales donde el inglés es el idioma de trabajo. Posiciones de engineering, data science, UX/UI design, marketing international tienen vacantes para extranjeros con inglés C1 y experiencia técnica. Coreano ayuda pero no siempre es obligatorio.</p>
+
+<h2>Sectores donde el coreano es esencial desde el inicio</h2>
+<h3>Cualquier trabajo que implique atención al cliente coreano</h3>
+<p>Retail, hospitalidad, administración, ventas, servicio al cliente — estos sectores requieren coreano fluido porque el cliente habla coreano. Sin TOPIK 4–5, las oportunidades son mínimas.</p>
+
+<h3>Trabajo de oficina en empresa coreana pequeña o mediana</h3>
+<p>Las PyMEs coreanas (las más numerosas) trabajan completamente en coreano. Correos internos, reuniones, reportes, relaciones con jefes y colegas — todo en coreano. Sin al menos TOPIK 3, la integración es muy difícil.</p>
+
+<h3>Salud, educación local, derecho</h3>
+<p>Para ejercer medicina, derecho o enseñanza en el sistema local coreano, se requiere acreditación local + coreano C1–C2. Prácticamente inaccesible para extranjeros sin años de estudio intensivo.</p>
+
+<h2>El TOPIK como requisito laboral y de visa</h2>
+<table>
+  <thead><tr><th>TOPIK</th><th>Nivel</th><th>Implicaciones laborales</th></tr></thead>
+  <tbody>
+    <tr><td>TOPIK I Nivel 1</td><td>A1–A2</td><td>Comunicación muy básica. No suficiente para la mayoría de empleos.</td></tr>
+    <tr><td>TOPIK I Nivel 2</td><td>A2–B1</td><td>Conversación cotidiana. Visa E-7 no es viable aún.</td></tr>
+    <tr><td>TOPIK II Nivel 3</td><td>B1</td><td>Mínimo para visa E-7 en algunos sectores. Trabajo administrativo básico posible.</td></tr>
+    <tr><td>TOPIK II Nivel 4</td><td>B2</td><td>Trabajo en empresa coreana viable. Integración laboral plena.</td></tr>
+    <tr><td>TOPIK II Nivel 5–6</td><td>C1–C2</td><td>Cualquier posición profesional. Universidad coreana. Maestría/doctorado.</td></tr>
+  </tbody>
+</table>
+
+<h2>Visa E-7 (Profesional Calificado) — el camino para latinoamericanos</h2>
+<p>La visa E-7 es la principal ruta para que profesionales latinoamericanos trabajen en Corea del Sur en su campo. Requiere:</p>
+<ul>
+  <li>Título universitario en el área de trabajo</li>
+  <li>Oferta de trabajo de empleador coreano</li>
+  <li>Coreano TOPIK 3+ o inglés según el empleador</li>
+  <li>Salario mínimo establecido por el Ministerio de Empleo</li>
+</ul>
+<p>Sectores con más demanda E-7: TI, ingeniería, investigación, gestión internacional, educación superior.</p>
+
+<h2>Cuánto tiempo para llegar a TOPIK 4 desde cero</h2>
+<ul>
+  <li>TOPIK I Nivel 1: 3–4 meses (6 h/semana)</li>
+  <li>TOPIK I Nivel 2: 4–6 meses adicionales</li>
+  <li>TOPIK II Nivel 3: 4–6 meses adicionales</li>
+  <li>TOPIK II Nivel 4: 6–8 meses adicionales</li>
+  <li><strong>Total desde cero a TOPIK 4</strong>: 18–24 meses con estudio serio</li>
+</ul>
+
+<h2>WeLearn y el coreano para trabajo en Corea</h2>
+<p>Preparamos para TOPIK I y II con enfoque en el vocabulario y gramática de los exámenes reales. Si tu objetivo es trabajar en Corea del Sur, diseñamos un plan de estudio con la hoja de ruta realista para tu perfil. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20para%20trabajar%20en%20Corea%20del%20Sur.%20%C2%BFComo%20funciona%20el%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos con el diagnóstico</a>.</p>
+<p>Lee también: <a href="/blog/visa-trabajo-corea-e7-requisitos-nivel-coreano">Visa E-7 Corea del Sur: requisitos de coreano</a> y <a href="/blog/coreano-nivel-topik-3-4-como-alcanzarlo">TOPIK II niveles 3 y 4: cómo alcanzarlos</a>.</p>
+    `,
+  },
+
+  // ── Article 106 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-vs-duolingo-english-test-diferencias',
+    title: 'IELTS vs. Duolingo English Test: diferencias, cuál aceptan las universidades y cuál elegir',
+    description: 'El Duolingo English Test es más barato y rápido que el IELTS. Pero no todas las universidades lo aceptan. Comparativa completa para tomar la decisión correcta.',
+    date: '2026-05-31',
+    readTime: 8,
+    category: 'IELTS',
+    tags: ['IELTS', 'Duolingo English Test', 'universidades', 'admisión', 'examen de inglés'],
+    body: `
+<h2>El Duolingo English Test como alternativa al IELTS</h2>
+<p>En 2020, el Duolingo English Test (DET) ganó aceptación masiva como alternativa al IELTS y TOEFL cuando las pruebas presenciales fueron canceladas por la pandemia. Muchas universidades top de Estados Unidos, Canadá y el Reino Unido empezaron a aceptarlo. En 2026, el DET sigue siendo una opción válida — pero con limitaciones importantes que debes conocer antes de decidir.</p>
+
+<h2>Comparativa básica</h2>
+<table>
+  <thead><tr><th>Característica</th><th>IELTS</th><th>Duolingo English Test</th></tr></thead>
+  <tbody>
+    <tr><td>Duración</td><td>2h 45min</td><td>~1 hora</td></tr>
+    <tr><td>Costo</td><td>USD $215–$245</td><td>USD $65</td></tr>
+    <tr><td>Formato</td><td>Presencial (salvo IELTS Online)</td><td>100% online desde casa</td></tr>
+    <tr><td>Resultados</td><td>13 días (académico/general)</td><td>48 horas</td></tr>
+    <tr><td>Vigencia</td><td>2 años</td><td>2 años</td></tr>
+    <tr><td>Aceptación migratoria</td><td>Global (UK, Canadá, Australia, NZ)</td><td>No aceptado para visas</td></tr>
+    <tr><td>Aceptación universitaria</td><td>Prácticamente universal</td><td>4,000+ instituciones (pero no todas)</td></tr>
+  </tbody>
+</table>
+
+<h2>Cuándo el Duolingo English Test SÍ funciona</h2>
+<ul>
+  <li>Tu universidad objetivo lo acepta explícitamente (verifica en su web oficial)</li>
+  <li>No necesitas el examen para visa de estudiante — solo para admisión universitaria</li>
+  <li>Tienes presupuesto limitado y tiempo limitado</li>
+  <li>Vives en una región donde el IELTS presencial es difícil de acceder</li>
+  <li>Quieres un resultado rápido para una deadline de aplicación pronto</li>
+</ul>
+
+<h2>Cuándo el Duolingo English Test NO es suficiente</h2>
+<ul>
+  <li>Necesitas el examen para solicitar una visa de estudiante (UK, Canadá, Australia, USA F-1)</li>
+  <li>Tu universidad objetivo no lo acepta (muchas de la Ivy League aún prefieren IELTS/TOEFL)</li>
+  <li>Quieres usar el resultado para inmigración laboral o residencia</li>
+  <li>Tu empleador requiere IELTS/TOEFL específicamente</li>
+  <li>Las universidades de tu país anfitrión no han actualizado su política a DET</li>
+</ul>
+
+<h2>Universidades top que aceptan DET (2026)</h2>
+<p>Lista de universidades de alto perfil que aceptan el Duolingo English Test:</p>
+<ul>
+  <li>MIT, Yale, Columbia, Duke, Carnegie Mellon (verificar por programa)</li>
+  <li>University of Toronto, McGill, UBC (Canadá)</li>
+  <li>London Business School, Imperial College (UK — solo algunos programas)</li>
+  <li>Universidad Autónoma de Madrid, IE Business School (España)</li>
+</ul>
+<p>Siempre verifica en la página oficial de admisiones de la universidad específica — la política puede cambiar año a año.</p>
+
+<h2>Puntaje DET y equivalencias</h2>
+<table>
+  <thead><tr><th>DET Score</th><th>Equivalencia aproximada IELTS</th><th>Nivel CEFR</th></tr></thead>
+  <tbody>
+    <tr><td>160+</td><td>8.0–9.0</td><td>C2</td></tr>
+    <tr><td>145–155</td><td>7.0–7.5</td><td>C1</td></tr>
+    <tr><td>130–140</td><td>6.5</td><td>B2+</td></tr>
+    <tr><td>110–125</td><td>6.0</td><td>B2</td></tr>
+    <tr><td>95–105</td><td>5.5</td><td>B1+</td></tr>
+  </tbody>
+</table>
+
+<h2>El formato del DET — qué evalúa</h2>
+<p>El DET es un examen adaptativo — se ajusta en dificultad según tus respuestas. Tipos de ejercicios:</p>
+<ul>
+  <li><strong>Literacy</strong>: dictar palabras, completar palabras, leer en voz alta, identificar palabras reales de no-palabras</li>
+  <li><strong>Comprehension</strong>: escuchar y seleccionar, completar frases</li>
+  <li><strong>Production</strong>: describir imágenes, hablar sobre temas (grabado en video)</li>
+  <li><strong>Video Interview</strong>: 1–3 preguntas conversacionales grabadas al final</li>
+</ul>
+<p>El DET evalúa las mismas habilidades que el IELTS (reading, listening, speaking, writing) pero en formato más corto y menos predecible — no hay estrategias de "tipo de pregunta" tan claras como en IELTS.</p>
+
+<h2>¿Cuál elegir para Colombia?</h2>
+<p>Para colombianos que buscan estudiar en el exterior:</p>
+<ul>
+  <li>Si tu destino es USA, UK, Canadá o Australia para visa de estudiante: <strong>IELTS o TOEFL</strong></li>
+  <li>Si tu destino es una universidad en España, Latinoamérica o Europa que acepta DET: <strong>DET puede ser suficiente</strong></li>
+  <li>Si tienes múltiples opciones y no sabes cuál elegirás: <strong>IELTS</strong> — es la opción universal</li>
+</ul>
+
+<h2>WeLearn y la preparación para exámenes de inglés</h2>
+<p>Preparamos IELTS y TOEFL con metodología probada. Si tu objetivo es el DET, el inglés que necesitas es el mismo — solo cambia la práctica del formato específico. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20un%20examen%20de%20ingles.%20No%20s%C3%A9%20si%20IELTS%2C%20TOEFL%20o%20Duolingo%20English%20Test.%20%C2%BFMe%20pueden%20orientar%3F" target="_blank" rel="noopener noreferrer">Escríbenos y te orientamos según tu universidad objetivo</a>.</p>
+<p>Lee también: <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs. TOEFL: cuál tomar en Colombia</a> y <a href="/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026">TOEFL iBT vs. TOEFL Essentials</a>.</p>
+    `,
+  },
+
+  // ── Article 107 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'italiano-trabajar-en-italia-visas-y-nivel-requerido',
+    title: 'Trabajar en Italia: visas disponibles para latinoamericanos y nivel de italiano requerido',
+    description: 'Italia tiene alta demanda de trabajadores en salud, construcción y hostelería. Guía completa de visas, requisitos de idioma y oportunidades laborales para colombianos y latinoamericanos.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'Italiano',
+    tags: ['Italiano', 'Italia', 'trabajo', 'visa', 'migración', 'B1', 'B2'],
+    body: `
+<h2>Italia como destino migratorio para latinoamericanos</h2>
+<p>Italia tiene un vínculo histórico profundo con Latinoamérica — millones de italianos emigraron a Argentina, Brasil, Uruguay y Colombia entre 1880 y 1960. Sus descendientes son ahora ciudadanos italianos potenciales (jus sanguinis) y también inmigrantes económicos. En 2025–2026, Italia amplió sus cupos de inmigración laboral (Decreto Flussi) precisamente porque enfrenta escasez de mano de obra calificada y no calificada.</p>
+
+<h2>Sistema de visas laborales en Italia</h2>
+<h3>Decreto Flussi (cuotas anuales de inmigración laboral)</h3>
+<p>El gobierno italiano publica cada año un decreto con los cupos de trabajadores extranjeros que puede admitir. En 2024, el decreto fue de 151,000 trabajadores (uno de los más altos en años). Los sectores prioritarios:</p>
+<ul>
+  <li>Agricultura y pesca (quota stagionale — estacional)</li>
+  <li>Construcción y metalurgia</li>
+  <li>Turismo y hostelería</li>
+  <li>Cuidados del hogar (badanti/colf — cuidadores de ancianos y domésticos)</li>
+  <li>Transporte</li>
+</ul>
+<p>Para aplicar, necesitas un empleador en Italia que te patrocine. El trámite se hace desde el consulado italiano en tu país.</p>
+
+<h3>Visto de trabajo autónomo</h3>
+<p>Para profesionales independientes — arquitectos, diseñadores, consultores, artistas — que trabajarán en Italia de forma autónoma. Requiere contrato o carta de encargo de cliente italiano.</p>
+
+<h3>Blue Card europea (Carta Blu UE)</h3>
+<p>Para profesionales altamente calificados (ingenieros, médicos, informáticos) con título universitario y oferta de trabajo con salario alto. Da acceso a toda la UE después de 18 meses en Italia.</p>
+
+<h2>Nivel de italiano requerido por sector</h2>
+<table>
+  <thead><tr><th>Sector</th><th>Nivel mínimo práctico</th><th>Certificado recomendado</th></tr></thead>
+  <tbody>
+    <tr><td>Agricultura estacional</td><td>A1–A2</td><td>No requerido</td></tr>
+    <tr><td>Construcción</td><td>A2–B1</td><td>No siempre requerido</td></tr>
+    <tr><td>Cuidadores (badanti)</td><td>B1</td><td>CELI 2 o PLIDA B1 deseable</td></tr>
+    <tr><td>Hostelería, turismo</td><td>B1–B2</td><td>Beneficioso</td></tr>
+    <tr><td>Salud (enfermería)</td><td>B2 + italiano médico</td><td>CELI 3 + curso médico obligatorio</td></tr>
+    <tr><td>IT, tecnología</td><td>B1 (inglés suficiente en muchos casos)</td><td>Depende del empleador</td></tr>
+    <tr><td>Docencia, derecho, medicina</td><td>C1–C2</td><td>Obligatorio + acreditación local</td></tr>
+  </tbody>
+</table>
+
+<h2>El sector de cuidadores (badanti) — oportunidad real para latinoamericanos</h2>
+<p>Italia tiene 14 millones de personas mayores de 65 años — el 23% de la población. La demanda de cuidadores en hogares es enorme y creciente. Un badante (cuidador de anciano) gana €900–€1,500/mes con alojamiento y comida incluidos en muchos casos.</p>
+<p>Requisitos típicos:</p>
+<ul>
+  <li>Italiano B1 funcional para comunicarse con el anciano y la familia</li>
+  <li>Experiencia en cuidado o salud (deseable pero no siempre obligatorio)</li>
+  <li>Referencias</li>
+</ul>
+<p>Muchos latinoamericanos — especialmente mujeres colombianas, peruanas y ecuatorianas — trabajan en este sector. El italiano B1 es el nivel que abre esta puerta.</p>
+
+<h2>Enfermería en Italia — el proceso para latinoamericanos</h2>
+<p>Similar al proceso en Alemania pero en italiano:</p>
+<ol>
+  <li>Evaluación del título en la región italiana de destino (Ordine delle Professioni Infermieristiche)</li>
+  <li>Italiano B2 + examen de italiano médico (CELI Medicina o similar)</li>
+  <li>Período de práctica supervisada si hay deficiencias formativas</li>
+  <li>Iscrizione all'Ordine (registro profesional)</li>
+  <li>Salario: €1,800–€2,800/mes dependiendo de la región y especialización</li>
+</ol>
+
+<h2>Cuánto tiempo para llegar a B1 de italiano siendo hispanohablante</h2>
+<p>El italiano es el idioma más accesible para hispanohablantes después del portugués:</p>
+<ul>
+  <li>A1: 1–2 meses (4–6 h/semana)</li>
+  <li>A2: 2 meses adicionales</li>
+  <li>B1: 2–3 meses adicionales</li>
+  <li><strong>Total desde cero a B1</strong>: 4–6 meses — el más rápido de las lenguas romances</li>
+</ul>
+
+<h2>WeLearn y el italiano para trabajar en Italia</h2>
+<p>Trabajamos con candidatos que buscan trabajar en Italia — desde cuidadores hasta enfermeros y profesionales IT. El programa cubre italiano general hasta B1–B2 con vocabulario laboral integrado. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20italiano%20para%20trabajar%20en%20Italia.%20%C2%BFTienen%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu perfil y objetivo</a>.</p>
+<p>Lee también: <a href="/blog/italiano-de-cero-a-b2-cuanto-tiempo-y-como-estudiarlo">Italiano de cero a B2: cuánto tiempo y cómo</a> y <a href="/blog/italiano-para-ciudadania-italiana-nivel-b1">Italiano B1 para ciudadanía italiana</a>.</p>
+    `,
+  },
+
+  // ── Article 108 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'toefl-ibt-puntaje-minimo-canada-universidades',
+    title: 'TOEFL iBT para Canadá: puntaje mínimo por universidad y provincia',
+    description: 'Cada universidad canadiense tiene sus propios requisitos de TOEFL. Guía con los puntajes mínimos de las principales universidades de Canadá y consejos para alcanzarlos.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'TOEFL',
+    tags: ['TOEFL', 'Canadá', 'universidades', 'puntaje', 'admisión', 'estudiantes'],
+    body: `
+<h2>TOEFL en Canadá: lo que debes saber primero</h2>
+<p>Canadá acepta tanto IELTS como TOEFL para admisión universitaria y para la visa de estudiante (Study Permit). A diferencia del Reino Unido (donde el IELTS domina) o Estados Unidos (donde el TOEFL es más tradicional), en Canadá ambos exámenes tienen igual reconocimiento. La elección depende de tus fortalezas y de los requisitos específicos de tu programa.</p>
+<p>Sin embargo, para la visa de estudiante canadiense (IRCC), el inglés mínimo requerido también puede demostrarse con IELTS o TOEFL — pero IELTS tiende a ser más usado en las embajadas canadienses.</p>
+
+<h2>Puntajes mínimos TOEFL iBT por universidad canadiense</h2>
+<table>
+  <thead><tr><th>Universidad</th><th>Provincia</th><th>TOEFL iBT mínimo (posgrado)</th><th>TOEFL iBT mínimo (pregrado)</th></tr></thead>
+  <tbody>
+    <tr><td>University of Toronto</td><td>Ontario</td><td>93–100</td><td>80–89</td></tr>
+    <tr><td>University of British Columbia (UBC)</td><td>BC</td><td>90–100</td><td>90</td></tr>
+    <tr><td>McGill University</td><td>Quebec</td><td>86–102</td><td>86</td></tr>
+    <tr><td>University of Waterloo</td><td>Ontario</td><td>90</td><td>86</td></tr>
+    <tr><td>University of Alberta</td><td>Alberta</td><td>90</td><td>86</td></tr>
+    <tr><td>Simon Fraser University (SFU)</td><td>BC</td><td>93</td><td>80</td></tr>
+    <tr><td>York University</td><td>Ontario</td><td>79–88</td><td>79</td></tr>
+    <tr><td>Ryerson / Toronto Metropolitan</td><td>Ontario</td><td>79–88</td><td>79</td></tr>
+    <tr><td>University of Ottawa</td><td>Ontario</td><td>86</td><td>79</td></tr>
+    <tr><td>Dalhousie University</td><td>Nova Scotia</td><td>80</td><td>77</td></tr>
+  </tbody>
+</table>
+<p>Nota: los puntajes pueden variar por facultad o programa. Siempre verifica directamente en la web del programa al que aplicas.</p>
+
+<h2>TOEFL vs. IELTS para Canadá — recomendación</h2>
+<p>Elige TOEFL si:</p>
+<ul>
+  <li>Tu fortaleza es el Reading y el Listening — el TOEFL los evalúa bien</li>
+  <li>Te sientes cómodo escribiendo ensayos en computador</li>
+  <li>Prefieres el formato 100% digital sin componente escrito a mano</li>
+</ul>
+<p>Elige IELTS si:</p>
+<ul>
+  <li>Tu fortaleza es el Speaking conversacional (la Parte 3 del IELTS es más abierta)</li>
+  <li>También necesitas el examen para visa de trabajo o inmigración posterior</li>
+  <li>Tu universidad objetivo lo requiere explícitamente</li>
+</ul>
+
+<h2>Sub-scores que más pesan en programas canadienses</h2>
+<p>Muchos programas de posgrado en Canadá tienen requisitos de sub-score mínimos, no solo el total:</p>
+<ul>
+  <li><strong>Writing</strong>: MBA, derecho, ciencias sociales — típicamente 22–25 mínimo</li>
+  <li><strong>Speaking</strong>: educación, trabajo social, psicología — 22–24 mínimo</li>
+  <li><strong>Reading y Listening</strong>: ciencias, ingeniería, tecnología — no siempre tienen sub-score mínimo pero afectan el total</li>
+</ul>
+<p>Estrategia: identifica qué sub-scores exige tu programa antes de empezar a prepararte — así puedes enfocar el tiempo de estudio.</p>
+
+<h2>Timeline de preparación para llegar a 90+</h2>
+<p>Si estás en nivel B1 de inglés y necesitas TOEFL 90:</p>
+<ul>
+  <li>B1 → B2: 4–5 meses (8 h/semana de estudio)</li>
+  <li>B2 → TOEFL 90: 2–3 meses de preparación específica para el examen</li>
+  <li><strong>Total</strong>: 6–8 meses</li>
+</ul>
+<p>Si ya estás en B2 sólido: 2–3 meses de preparación específica son suficientes para la mayoría.</p>
+
+<h2>El TOEFL y la visa de estudiante canadiense</h2>
+<p>Para el Study Permit (visa de estudiante), Immigration Canada no exige un puntaje específico de TOEFL — exige que la universidad te haya admitido, y la universidad ya verificó el inglés. Sin embargo, en 2024–2026, Canada ha agregado controles adicionales de admisión genuina. Tener un TOEFL alto ayuda a demostrar que eres un estudiante legítimo con capacidad lingüística real.</p>
+
+<h2>WeLearn y la preparación TOEFL para Canadá</h2>
+<p>Preparamos candidatos para TOEFL con objetivos específicos de admisión universitaria canadiense. El plan de estudio se ajusta al puntaje que necesitas y a las sub-secciones más críticas de tu programa. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOEFL%20para%20aplicar%20a%20universidades%20de%20Canada.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos con el diagnóstico</a>.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-estructura-completa-y-estrategia-2026">TOEFL iBT 2026: estructura completa y estrategia</a> y <a href="/blog/ingles-para-canada-express-entry-requisitos-2026">Inglés para Canadá Express Entry</a>.</p>
+    `,
+  },
+
+  // ── Article 109 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'como-mantener-la-motivacion-aprendiendo-un-idioma',
+    title: 'Cómo mantener la motivación aprendiendo un idioma cuando el progreso se siente lento',
+    description: 'El bajón de motivación es normal en el aprendizaje de idiomas — especialmente en el nivel intermedio. Estrategias probadas para mantenerte constante y salir del estancamiento.',
+    date: '2026-05-31',
+    readTime: 8,
+    category: 'Método',
+    tags: ['Método', 'motivación', 'constancia', 'intermedio', 'hábitos', 'progreso'],
+    body: `
+<h2>El "valley of despair" del aprendizaje de idiomas</h2>
+<p>Hay un momento en el aprendizaje de idiomas que casi todos los estudiantes experimentan — especialmente entre los niveles A2 y B1. Al principio, el progreso es visible y emocionante: aprendes palabras nuevas, entiendes frases, dices tus primeras oraciones. Pero en algún punto, el progreso se vuelve invisible. Llevas meses estudiando y sientes que no avanzas.</p>
+<p>Este fenómeno se llama el "valley of despair" (valle de la desesperanza) en el argot de aprendizaje de idiomas. Es la fase donde la mayoría abandona — no porque el idioma sea imposible, sino porque la percepción del progreso cae antes de que el progreso real sea visible.</p>
+
+<h2>Por qué el progreso parece detenerse</h2>
+<p>En los primeros meses (A1–A2), aprendes vocabulario concreto y estructuras básicas — el progreso es medible y notorio. En el nivel intermedio (B1–B2), lo que se desarrolla es:</p>
+<ul>
+  <li>Comprensión de matices, no solo de palabras</li>
+  <li>Velocidad de procesamiento — entender a velocidad natural</li>
+  <li>Automatización de gramática — que no tengas que pensar las reglas</li>
+  <li>Vocabulario de baja frecuencia — palabras que aparecen menos a menudo</li>
+</ul>
+<p>Todo esto es progreso real, pero no se mide fácilmente. No hay una "habilidad nueva" obvia que veas de un día para otro. La meseta es una ilusión óptica del aprendizaje.</p>
+
+<h2>Señales de que sí estás progresando (aunque no lo sientas)</h2>
+<ul>
+  <li>Entiendes más de lo que esperabas en un video o podcast</li>
+  <li>Tardas menos en formular oraciones (aunque no te des cuenta)</li>
+  <li>Un texto que antes te costaba 30 minutos ahora te toma 15</li>
+  <li>Cometías un error gramatical sistemático que ya no cometes</li>
+  <li>Puedes mantener una conversación más tiempo sin agotarte mentalmente</li>
+</ul>
+<p>Registra estos momentos — llevar un diario de aprendizaje donde anotas lo que antes no podías y ahora sí, te da evidencia objetiva de progreso.</p>
+
+<h2>Estrategias para salir del estancamiento</h2>
+<h3>1. Cambia el tipo de práctica</h3>
+<p>Si llevas meses haciendo flashcards y gramática, añade conversación real. Si llevas meses en conversación, trabaja lectura intensiva. El cambio de tipo de actividad reinicia la percepción de progreso y activa diferentes partes del aprendizaje.</p>
+
+<h3>2. Baja el nivel del material de consumo</h3>
+<p>Paradójicamente, bajar el nivel del material que consumes (series más sencillas, libros más fáciles) puede acelerar el progreso porque procesas más fluidamente y el cerebro empieza a automatizar. Leer o escuchar "too hard" todo el tiempo genera fatiga sin comprensión.</p>
+
+<h3>3. Establece una meta pequeña y cercana</h3>
+<p>En vez de "quiero llegar a C1", pon una meta de 2 semanas: "Esta semana voy a aprender 20 palabras de vocabulario de cocina y a ver 3 episodios de mi serie sin subtítulos." Las metas pequeñas y alcanzadas crean la sensación de progreso.</p>
+
+<h3>4. Conecta el idioma con algo que genuinamente disfrutes</h3>
+<p>Si te encanta la cocina, sigue canales de YouTube de cocina en el idioma objetivo. Si te apasiona el fútbol, escucha análisis de partidos en ese idioma. La motivación intrínseca (el idioma como medio para algo que amas) es más sostenible que la motivación extrínseca (el certificado, el trabajo).</p>
+
+<h3>5. Habla con alguien — nativo o no</h3>
+<p>La conversación real, aunque sea imperfecta, activa la motivación de manera única. Ver que puedes comunicarte — aunque cometas errores — es el refuerzo más poderoso. Intercambios de idiomas (HelloTalk, Tandem), tutores ocasionales o clases regulares sirven para esto.</p>
+
+<h3>6. Mide de otra forma</h3>
+<p>En vez de "¿cuánto entendí hoy?", mide "¿cuántas horas he estudiado esta semana?" o "¿cuántos días seguidos he practicado?" Los streaks de hábito son más manejables que los indicadores de resultado cuando estás en la meseta.</p>
+
+<h2>La motivación viene después de la acción, no antes</h2>
+<p>Muchos estudiantes esperan sentirse motivados para estudiar. Pero la motivación funciona al revés: la acción genera motivación. Empieza aunque no tengas ganas — los primeros 5 minutos de cualquier sesión de estudio son los más difíciles. Después de eso, el cerebro se engancha.</p>
+<p>El sistema de hábitos funciona mejor que la motivación: a las 7pm estudio 30 minutos — siempre, sin discutir con uno mismo si tengo ganas o no.</p>
+
+<h2>El papel del tutor en los momentos de bajón</h2>
+<p>Un tutor que conoce tu nivel y tu progreso puede ver lo que tú no ves: cuánto has avanzado. Las clases regulares tienen un componente de accountability que los estudiantes autodidactas no tienen — y en los momentos de bajón, esa estructura externa puede ser la diferencia entre continuar y abandonar.</p>
+<p>En WeLearn nuestros estudiantes de largo plazo reportan que las clases regulares fueron lo que los mantuvo en el idioma cuando el estudio solo ya no funcionaba. <a href="https://wa.me/573005004253?text=Hola%2C%20estoy%20aprendiendo%20un%20idioma%20pero%20siento%20que%20no%20avanzo.%20%C2%BFTienen%20clases%20de%20apoyo%3F" target="_blank" rel="noopener noreferrer">Escríbenos y hablemos de tu situación</a>.</p>
+<p>Lee también: <a href="/blog/cuanto-tiempo-para-aprender-un-idioma-desde-cero">¿Cuánto tiempo para aprender un idioma desde cero?</a> y <a href="/blog/aprender-un-idioma-con-duolingo-funciona-realidad">¿Duolingo funciona para aprender un idioma?</a>.</p>
+    `,
+  },
+
+  // ── Article 110 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-general-training-para-migracion-vs-academic',
+    title: 'IELTS General Training para migración: diferencias con Academic y qué esperar',
+    description: 'Si vas a migrar a Reino Unido, Canadá, Australia o Nueva Zelanda, probablemente necesitas el IELTS General Training, no el Academic. Descubre las diferencias y cómo prepararte.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['IELTS', 'General Training', 'migración', 'UK', 'Canadá', 'Australia'],
+    body: `
+<h2>IELTS Academic vs. General Training — la diferencia fundamental</h2>
+<p>Ambas versiones del IELTS evalúan las cuatro habilidades (Listening, Reading, Writing, Speaking) con la misma escala de bandas. Pero el contenido difiere en Reading y Writing:</p>
+<ul>
+  <li><strong>Academic</strong>: textos académicos complejos (ciencia, historia, economía), Writing Task 1 con gráficos, enfocado en admisión universitaria</li>
+  <li><strong>General Training</strong>: textos cotidianos (anuncios, manuales, cartas), Writing Task 1 con carta formal o informal, enfocado en migración y trabajo</li>
+</ul>
+<p>Listening y Speaking son idénticos en ambas versiones — las mismas preguntas, el mismo evaluador, la misma escala.</p>
+
+<h2>¿Cuándo necesitas el General Training?</h2>
+<ul>
+  <li><strong>UK Skilled Worker Visa</strong>: requiere IELTS Life Skills o IELTS UKVI (versión especial) — a veces General, dependiendo del visado</li>
+  <li><strong>Canadá Express Entry</strong>: General Training es aceptado y equivale al Academic en el sistema CLB</li>
+  <li><strong>Australia Skilled Migration (points-based)</strong>: General Training es el estándar para migración laboral</li>
+  <li><strong>Nueva Zelanda SMC</strong>: acepta ambos — General o Academic</li>
+  <li><strong>Australia PR para trabajadores no calificados</strong>: General Training</li>
+</ul>
+<p>Regla práctica: si vas a migrar como trabajador, elige General Training. Si vas a estudiar en universidad, elige Academic.</p>
+
+<h2>IELTS General Training Reading — cómo funciona</h2>
+<p>El Reading del General Training tiene tres secciones con textos de dificultad creciente:</p>
+<ol>
+  <li><strong>Section 1</strong>: 2–3 textos cortos — avisos, carteles, horarios, anuncios. Muy concreto y directo. Generalmente preguntas True/False/Not Given o matching.</li>
+  <li><strong>Section 2</strong>: 2 textos relacionados con el trabajo — contratos, manuales, políticas de empresa. Vocabulario laboral.</li>
+  <li><strong>Section 3</strong>: 1 texto largo — artículo de revista o periódico sobre un tema de interés general. Más complejo, similar al Academic pero no tan técnico.</li>
+</ol>
+<p>Muchos candidatos encuentran el GT Reading más fácil que el Academic en las secciones 1 y 2, pero la sección 3 puede sorprender si no la practican.</p>
+
+<h2>IELTS General Training Writing — Task 1 (carta)</h2>
+<p>En vez de describir un gráfico, escribes una <strong>carta</strong> (150 palabras mínimo, 20 minutos). Hay tres tipos:</p>
+<ul>
+  <li><strong>Carta formal</strong>: a una empresa, institución o persona desconocida. Tono: formal. Fórmula: Dear Sir/Madam → firma: Yours faithfully.</li>
+  <li><strong>Carta semi-formal</strong>: a un vecino, gerente, alguien con quien tienes relación pero no íntima. Tono: educado pero no tan rígido.</li>
+  <li><strong>Carta informal</strong>: a un amigo o familiar. Tono: natural y conversacional. Fórmula: Dear [nombre] → firma: Best wishes / Take care.</li>
+</ul>
+<h3>Estructura universal para la carta GT</h3>
+<ol>
+  <li><strong>Saludo + apertura</strong>: "I am writing to / I am writing with regard to..."</li>
+  <li><strong>Párrafo 1</strong>: primer bullet point del prompt</li>
+  <li><strong>Párrafo 2</strong>: segundo bullet point</li>
+  <li><strong>Párrafo 3</strong>: tercer bullet point</li>
+  <li><strong>Cierre</strong>: "I look forward to hearing from you / I hope to receive a response at your earliest convenience."</li>
+  <li><strong>Firma</strong>: según el tipo de carta</li>
+</ol>
+
+<h2>Task 2 en General Training — igual que Academic</h2>
+<p>El Task 2 (ensayo de 250 palabras, 40 minutos) es idéntico en formato al Academic. Los temas son generales — opinión, discusión, ventajas/desventajas sobre temas de sociedad, tecnología, educación. Las estrategias de estructura son las mismas.</p>
+
+<h2>Puntajes mínimos para migración — referencia rápida</h2>
+<table>
+  <thead><tr><th>Destino / Programa</th><th>IELTS mínimo</th><th>Versión</th></tr></thead>
+  <tbody>
+    <tr><td>Canadá Express Entry (FSW)</td><td>6.0 (CLB 7)</td><td>Academic o GT</td></tr>
+    <tr><td>Australia Skilled 189</td><td>6.0–7.0 (según ocupación)</td><td>Academic o GT</td></tr>
+    <tr><td>Nueva Zelanda SMC</td><td>6.5 global</td><td>Academic o GT</td></tr>
+    <tr><td>UK Skilled Worker</td><td>B1 (SELT — prueba aprobada por UKVI)</td><td>UKVI specific</td></tr>
+    <tr><td>Australia Family Visa</td><td>Variable (a veces sin requisito)</td><td>GT generalmente</td></tr>
+  </tbody>
+</table>
+
+<h2>Cómo preparar el General Training diferente del Academic</h2>
+<ul>
+  <li>Practica las secciones 1 y 2 del GT Reading con textos cotidianos — son diferentes al Academic y es fácil subestimarlas</li>
+  <li>Practica los 3 tipos de carta (formal, semi-formal, informal) del Task 1 — es la diferencia más importante vs. Academic</li>
+  <li>El Task 2 y el Listening son los mismos — usa los mismos materiales</li>
+  <li>Cambridge IELTS Official Practice Tests tienen volúmenes específicos de GT</li>
+</ul>
+
+<h2>WeLearn y la preparación IELTS General Training</h2>
+<p>Preparamos IELTS Academic y General Training. Para candidatos de migración, el programa incluye simulacros de la carta GT y práctica de Reading específico para este formato. <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20prepararme%20para%20el%20IELTS%20General%20Training%20para%20migrar.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos y diseñamos tu plan según el país de destino</a>.</p>
+<p>Lee también: <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs. General Training: cuál tomar</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: qué puntaje IELTS necesitas por visa</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

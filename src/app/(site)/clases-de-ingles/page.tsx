@@ -549,6 +549,11 @@ export default function ClasesDeInglesPage() {
               { cat: 'TOEFL', title: 'TOEFL iBT 2026: estructura completa, puntajes y estrategia por sección', slug: 'toefl-ibt-estructura-completa-y-estrategia-2026' },
               { cat: 'Inglés', title: 'Inglés para médicos: residencia en Estados Unidos y USMLE', slug: 'ingles-para-residencia-medica-en-estados-unidos' },
               { cat: 'Migración', title: 'Migrar a Nueva Zelanda: requisitos de inglés y tipos de visa 2026', slug: 'migrar-a-nueva-zelanda-ingles-requisitos-visa-2026' },
+              { cat: 'IELTS', title: 'IELTS Speaking Parte 2: cómo hablar 2 minutos sobre cualquier tema', slug: 'ielts-speaking-parte-2-cue-card-como-hablar-2-minutos' },
+              { cat: 'Inglés', title: 'Inglés para profesionales de salud: médicos, enfermeros y fisioterapeutas', slug: 'ingles-para-profesionales-de-salud-colombia' },
+              { cat: 'Migración', title: 'Migrar a España: nivel de inglés que necesitas realmente', slug: 'migrar-a-espana-nivel-ingles-y-espanol-que-necesitas' },
+              { cat: 'IELTS', title: 'IELTS vs. Duolingo English Test: diferencias y cuál aceptan las universidades', slug: 'ielts-vs-duolingo-english-test-diferencias' },
+              { cat: 'IELTS', title: 'IELTS General Training para migración: diferencias con Academic', slug: 'ielts-general-training-para-migracion-vs-academic' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>
