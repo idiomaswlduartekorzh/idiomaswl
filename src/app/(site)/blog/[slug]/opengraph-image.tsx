@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { getPostBySlug } from '@/data/blog';
 
-export const runtime = 'edge';
+// runtime = 'nodejs' (default) — edge limit is 1 MB, blog data exceeds it
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
