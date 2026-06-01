@@ -53,8 +53,8 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
     { cat: 'Italiano', color: '#009246', title: 'CILS y CELI: la guía completa para certificar tu italiano', slug: 'cils-celi-certificacion-italiano-colombia' },
   ],
   portugues: [
+    { cat: 'Portugués', color: '#166534', title: 'Migrar a Portugal: inglés, portugués y requisitos 2026', slug: 'migrar-a-portugal-nivel-ingles-o-portugues-requisitos' },
     { cat: 'Portugués', color: '#166534', title: 'Portugués para negocios con Brasil: nivel y guía práctica', slug: 'portugues-para-negocios-con-brasil-nivel-recomendado' },
-    { cat: 'Portugués', color: '#166534', title: '¿Cuánto cuesta aprender portugués en Colombia en 2026?', slug: 'cuanto-cuesta-aprender-portugues-colombia-2026' },
     { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
   ],
 };
