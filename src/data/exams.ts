@@ -253,6 +253,7 @@ export const EXAMS: Record<string, Exam> = {
     ],
     mocks: [
       { id: 'set-1', title: 'DELF B1 – Épreuve 1', subtitle: 'Compréhension oral · Écrits · Production écrite · Orale', free: true, parts: 5, questions: 22 },
+      { id: 'set-2', title: 'DELF B1 – Épreuve oficial (Sujet démo 02)', subtitle: 'Audio real · Restaurants · Bilinguisme · Locations saisonnières', free: true, parts: 4, questions: 36 },
     ],
     available: true,
   },
