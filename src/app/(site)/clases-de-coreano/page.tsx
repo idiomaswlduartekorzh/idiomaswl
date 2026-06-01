@@ -722,6 +722,7 @@ export default function ClasesDeCoreanoPage() {
                 { cat: 'Coreano', title: 'Batchim: guía de consonantes finales del coreano para hispanohablantes', slug: 'coreano-pronunciacion-batchim-consonantes-finales' },
                 { cat: 'Coreano', title: 'Aprender coreano con K-dramas: qué funciona y qué no', slug: 'coreano-k-dramas-para-aprender-series-recomendadas' },
                 { cat: 'Coreano', title: 'Nivel mínimo de coreano para trabajar en Corea del Sur', slug: 'coreano-nivel-minimo-para-trabajar-en-corea' },
+                { cat: 'Coreano', title: 'Aprender coreano con K-pop: qué funciona y cómo hacerlo', slug: 'coreano-canciones-kpop-para-aprender-idioma' },
               ].map(a => (
                 <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none' }}>
                   <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#c8202e', background: 'rgba(200,32,46,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

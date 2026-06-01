@@ -138,6 +138,7 @@ const BLOG_POSTS = [
   { cat: 'Portugués', color: '#166534', title: 'Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia', slug: 'celpe-bras-que-es-como-prepararse' },
   { cat: 'Portugués', color: '#166534', title: 'Portugués de Brasil vs Portugal: diferencias para estudiantes colombianos', slug: 'portugues-brasil-vs-portugal-diferencias-para-aprender' },
   { cat: 'Portugués', color: '#166534', title: 'Portugués europeo vs. brasileño: cuál aprender según tu objetivo', slug: 'portugues-europeo-vs-brasileno-para-aprender' },
+  { cat: 'Portugués', color: '#166534', title: 'Portugués para estudiar en Brasil: universidades, becas y nivel requerido', slug: 'portugues-para-estudiar-en-brasil-universidades-y-requisitos' },
 ];
 
 const WaIcon = () => (

@@ -208,6 +208,7 @@ const BLOG_POSTS = [
   { cat: 'Alemán', color: '#1a2ecc', title: 'Alemán de A1 a B1: cuánto tiempo toma y cómo organizarte', slug: 'aleman-a1-a-b1-cuanto-tiempo-y-plan-de-estudio' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Alemán para trabajar en Suiza: nivel requerido y salarios', slug: 'aleman-para-suiza-oportunidades-trabajo-nivel-requerido' },
   { cat: 'Alemán', color: '#1a2ecc', title: 'Alemán B2 para enfermería: reconocimiento de título y proceso en Alemania', slug: 'aleman-b2-reconocimiento-titulo-enfermeria-alemania' },
+  { cat: 'Alemán', color: '#1a2ecc', title: 'DSH: el examen de alemán para entrar a universidades en Alemania', slug: 'aleman-dsh-examen-para-universidades-alemanas' },
 ];
 
 const WaIcon = () => (

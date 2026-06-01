@@ -554,6 +554,11 @@ export default function ClasesDeInglesPage() {
               { cat: 'Migración', title: 'Migrar a España: nivel de inglés que necesitas realmente', slug: 'migrar-a-espana-nivel-ingles-y-espanol-que-necesitas' },
               { cat: 'IELTS', title: 'IELTS vs. Duolingo English Test: diferencias y cuál aceptan las universidades', slug: 'ielts-vs-duolingo-english-test-diferencias' },
               { cat: 'IELTS', title: 'IELTS General Training para migración: diferencias con Academic', slug: 'ielts-general-training-para-migracion-vs-academic' },
+              { cat: 'IELTS', title: 'Vocabulario IELTS para banda 7: temas frecuentes y cómo dominarlos', slug: 'ielts-vocabulario-para-banda-7-temas-frecuentes' },
+              { cat: 'Inglés', title: 'Inglés para negocios internacionales: negociaciones y contratos', slug: 'ingles-para-negociaciones-y-contratos-internacionales' },
+              { cat: 'Migración', title: 'Migrar al Reino Unido 2026: requisitos de inglés por tipo de visa', slug: 'migrar-reino-unido-requisitos-ingles-visa-2026' },
+              { cat: 'IELTS', title: 'IELTS Reading: skimming, scanning y técnicas para ahorrar tiempo', slug: 'ielts-reading-skimming-scanning-tecnicas' },
+              { cat: 'Inglés', title: 'Inglés jurídico para abogados: contratos, arbitraje y documentos legales', slug: 'ingles-para-abogados-y-profesionales-del-derecho' },
             ].map(a => (
               <Link key={a.slug} href={`/blog/${a.slug}`} style={{ display: 'block', padding: '1rem 1.1rem', borderRadius: 10, border: '1px solid var(--line-soft)', background: 'var(--bg)', textDecoration: 'none', transition: 'box-shadow 0.15s' }}>
                 <span style={{ display: 'inline-block', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#1a4fcc', background: 'rgba(26,79,204,0.1)', padding: '2px 8px', borderRadius: 100, marginBottom: '0.55rem' }}>{a.cat}</span>

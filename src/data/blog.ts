@@ -8193,6 +8193,877 @@ And explain whether you would recommend it to others.</em>
 <p>Lee también: <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs. General Training: cuál tomar</a> y <a href="/blog/migrar-a-canada-requisitos-ielts-ingles">Migrar a Canadá: qué puntaje IELTS necesitas por visa</a>.</p>
     `,
   },
+  // ── Article 111 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-vocabulario-para-banda-7-temas-frecuentes',
+    title: 'Vocabulario IELTS para banda 7: los temas más frecuentes y cómo dominarlos',
+    description: 'Conocer el vocabulario de los temas recurrentes del IELTS puede subirte media o una banda entera. Guía de vocabulario temático para Writing, Speaking y Reading.',
+    date: '2026-05-31',
+    readTime: 11,
+    category: 'IELTS',
+    tags: ['IELTS', 'vocabulario', 'banda 7', 'Writing', 'Speaking', 'temas'],
+    body: `
+<h2>Por qué el vocabulario temático es clave para el IELTS</h2>
+<p>El IELTS no es un examen de memoria de vocabulario — pero el criterio "Lexical Resource" en Writing y Speaking evalúa explícitamente qué tan amplio y preciso es tu vocabulario. Para pasar de banda 6 a banda 7, necesitas vocabulario más variado, colocaciones correctas y términos más sofisticados.</p>
+<p>Lo importante: el IELTS usa los mismos temas repetidamente. Hay aproximadamente 12 temas que aparecen en el 90% de los exámenes. Dominar el vocabulario de estos temas te da una ventaja enorme porque puedes anticipar y preparar las palabras antes del examen.</p>
+
+<h2>Los 12 temas más frecuentes del IELTS</h2>
+<ol>
+  <li>Education (educación, sistema educativo, aprendizaje)</li>
+  <li>Technology (redes sociales, IA, innovación)</li>
+  <li>Environment (cambio climático, sostenibilidad, contaminación)</li>
+  <li>Health (salud pública, estilo de vida, sistema de salud)</li>
+  <li>Work (mercado laboral, automatización, trabajo remoto)</li>
+  <li>Crime and justice (crimen, sistema judicial, seguridad)</li>
+  <li>Culture and society (globalización, tradiciones, identidad)</li>
+  <li>Media and communication (medios, periodismo, redes sociales)</li>
+  <li>Transport and urban planning (transporte, ciudades, infraestructura)</li>
+  <li>Family and social relationships (familia, matrimonio, redes sociales)</li>
+  <li>Science and research (investigación científica, ética, avances)</li>
+  <li>Tourism and travel (turismo masivo, impacto cultural, viajes)</li>
+</ol>
+
+<h2>Vocabulario por tema — lista rápida</h2>
+
+<h3>1. Education</h3>
+<ul>
+  <li><strong>Sustantivos</strong>: curriculum, literacy, numeracy, vocational training, higher education, extracurricular activities, standardized testing, academic achievement</li>
+  <li><strong>Verbos</strong>: to foster (fomentar), to equip (preparar), to pursue (buscar/cursar), to assess (evaluar), to cultivate</li>
+  <li><strong>Frases</strong>: "to broaden one's horizons", "to prepare students for the workforce", "to promote critical thinking"</li>
+</ul>
+
+<h3>2. Technology</h3>
+<ul>
+  <li><strong>Sustantivos</strong>: artificial intelligence, automation, surveillance, digital divide, algorithm, misinformation, cybersecurity, innovation</li>
+  <li><strong>Verbos</strong>: to revolutionise, to disrupt, to facilitate, to exacerbate, to streamline</li>
+  <li><strong>Frases</strong>: "at an unprecedented rate", "double-edged sword", "technological advancements have transformed..."</li>
+</ul>
+
+<h3>3. Environment</h3>
+<ul>
+  <li><strong>Sustantivos</strong>: carbon footprint, greenhouse gas emissions, renewable energy, biodiversity, deforestation, sustainable development, climate change</li>
+  <li><strong>Verbos</strong>: to mitigate, to deplete, to conserve, to offset, to contaminate</li>
+  <li><strong>Frases</strong>: "long-term environmental consequences", "environmentally friendly alternatives", "to address climate change"</li>
+</ul>
+
+<h3>4. Health</h3>
+<ul>
+  <li><strong>Sustantivos</strong>: sedentary lifestyle, obesity, mental health, healthcare system, life expectancy, preventable disease, well-being</li>
+  <li><strong>Verbos</strong>: to alleviate, to combat, to address, to deteriorate, to promote</li>
+  <li><strong>Frases</strong>: "sedentary lifestyles have contributed to...", "rising rates of obesity", "accessible healthcare"</li>
+</ul>
+
+<h3>5. Work</h3>
+<ul>
+  <li><strong>Sustantivos</strong>: unemployment, automation, remote working, work-life balance, gig economy, productivity, workforce</li>
+  <li><strong>Verbos</strong>: to outsource, to replace (jobs), to enhance (productivity), to struggle</li>
+  <li><strong>Frases</strong>: "the rise of the gig economy", "machines have replaced human workers", "flexible working arrangements"</li>
+</ul>
+
+<h2>Colocaciones — las combinaciones que marcan la diferencia</h2>
+<p>Una colocación es una combinación natural de palabras. Los evaluadores del IELTS reconocen el uso de colocaciones como señal de vocabulario avanzado:</p>
+<ul>
+  <li>❌ "do a crime" → ✅ "commit a crime"</li>
+  <li>❌ "make a research" → ✅ "conduct research" / "carry out research"</li>
+  <li>❌ "very big problem" → ✅ "a pressing issue" / "a significant challenge"</li>
+  <li>❌ "says that" → ✅ "argues that" / "contends that" / "maintains that"</li>
+  <li>❌ "help the economy" → ✅ "boost the economy" / "stimulate economic growth"</li>
+</ul>
+
+<h2>Cómo aprender vocabulario para el IELTS eficientemente</h2>
+<ol>
+  <li><strong>Aprende familias de palabras, no palabras aisladas</strong>: educate → education → educational → educationally → uneducated</li>
+  <li><strong>Aprende en contexto</strong>: lee artículos de The Guardian, BBC, The Economist sobre los 12 temas — la exposición en contexto es más efectiva que listas</li>
+  <li><strong>Practica sustitución</strong>: coge una frase que escribirías normalmente y sustitúyela por un equivalente más sofisticado</li>
+  <li><strong>Anki con ejemplos de oración</strong>: no flashcards de traducción — flashcards con la palabra en una oración completa del IELTS</li>
+  <li><strong>10 palabras nuevas por semana, no 50</strong>: mejor pocas bien aprendidas que muchas superficiales</li>
+</ol>
+
+<h2>Vocabulario académico (Academic Word List)</h2>
+<p>El AWL (Academic Word List) es un recurso gratuito en línea con las 570 familias de palabras más frecuentes en textos académicos en inglés. Para IELTS banda 7, dominar las primeras 200 del AWL es suficiente. Palabras como: <em>analyse, concept, constitute, establish, indicate, involve, major, method, occur, policy, principle, require, significant, theory</em>.</p>
+
+<h2>WeLearn y el vocabulario IELTS</h2>
+<p>En nuestras clases de preparación IELTS trabajamos vocabulario temático de forma sistemática — no listas de palabras sueltas, sino vocabulario en contexto de Writing y Speaking con feedback inmediato. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20y%20mejorar%20mi%20vocabulario%20para%20banda%207.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos con tu diagnóstico de banda actual</a>.</p>
+<p>Lee también: <a href="/blog/ielts-writing-task-2-tipos-de-ensayo-y-estructura">IELTS Writing Task 2: estructura y errores</a> y <a href="/blog/ielts-de-banda-6-a-banda-7-que-cambia">De banda 6 a banda 7: qué cambia</a>.</p>
+    `,
+  },
+
+  // ── Article 112 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'portugues-para-estudiar-en-brasil-universidades-y-requisitos',
+    title: 'Portugués para estudiar en Brasil: universidades, becas y nivel requerido',
+    description: 'Brasil tiene universidades de clase mundial y programas de becas para latinoamericanos. Descubre qué nivel de portugués necesitas y cómo prepararte para estudiar allí.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Portugués',
+    tags: ['Portugués', 'Brasil', 'universidades', 'becas', 'Celpe-Bras', 'estudiantes'],
+    body: `
+<h2>Por qué estudiar en Brasil es una opción real para colombianos</h2>
+<p>Brasil tiene 7 universidades entre las 400 mejores del mundo (QS Ranking 2026): USP, UNICAMP, UFRJ, UNESP, UFMG, UFRGS, UnB. Muchos programas de posgrado son gratuitos o de bajo costo, y existen becas específicas para latinoamericanos. El obstáculo principal para la mayoría de colombianos: el portugués.</p>
+<p>El idioma de instrucción en prácticamente todas las universidades brasileñas es el portugués — incluso en programas de ciencias e ingeniería. Sin portugués funcional, el aprendizaje académico es muy limitado.</p>
+
+<h2>Nivel de portugués requerido por tipo de programa</h2>
+<table>
+  <thead><tr><th>Programa</th><th>Nivel mínimo práctico</th><th>Certificado frecuentemente exigido</th></tr></thead>
+  <tbody>
+    <tr><td>Pregrado (graduação)</td><td>B2</td><td>Celpe-Bras Intermediário o superior</td></tr>
+    <tr><td>Maestría (mestrado)</td><td>B2–C1</td><td>Celpe-Bras Intermediário Superior</td></tr>
+    <tr><td>Doctorado (doutorado)</td><td>C1</td><td>Celpe-Bras Avançado</td></tr>
+    <tr><td>Cursos de extensión / online</td><td>B1 puede ser suficiente</td><td>Generalmente no exigido</td></tr>
+  </tbody>
+</table>
+
+<h2>El Celpe-Bras — el examen clave</h2>
+<p>El Celpe-Bras (Certificado de Proficiência em Língua Portuguesa para Estrangeiros) es el único certificado oficial de portugués brasileño reconocido por el gobierno de Brasil. Es equivalente al IELTS para Brasil. Sus niveles:</p>
+<ul>
+  <li><strong>Intermediário</strong>: equivale a B2 — el mínimo para la mayoría de universidades</li>
+  <li><strong>Intermediário Superior</strong>: B2–C1 — exigido por algunas universidades top</li>
+  <li><strong>Avançado</strong>: C1 — requerido para doctorado y algunas maestrías en USP</li>
+  <li><strong>Avançado Superior</strong>: C1–C2 — el nivel más alto</li>
+</ul>
+<p>El examen se aplica dos veces al año (mayo y octubre) en centros autorizados en Colombia: Bogotá (Instituto Brasileiro) y otras ciudades. Precio aproximado: COP $300,000–$400,000.</p>
+
+<h2>Becas para colombianos en Brasil</h2>
+<h3>CAPES/CNPq (Gobierno brasileño)</h3>
+<p>El gobierno federal brasileño tiene programas de becas para posgrado — maestría y doctorado — con estipendio mensual de R$2,200–R$4,100 (BRL). Para colombianos existe el convenio CAPES-MEN. El Celpe-Bras es generalmente requisito.</p>
+
+<h3>OEA — Becas para Latinoamérica</h3>
+<p>La OEA tiene becas para posgrado en universidades de América Latina, incluyendo Brasil. Se requiere nivel de idioma del país de destino.</p>
+
+<h3>Becas de las propias universidades</h3>
+<p>USP, UNICAMP y UFRJ tienen programas de becas propios para estudiantes internacionales. Muchas incluyen exención de matrícula y ayuda de manutención.</p>
+
+<h2>Cuánto tiempo para llegar a Celpe-Bras Intermediário (B2) desde cero</h2>
+<p>Para hispanohablantes, el portugués es el idioma más fácil. Tiempos estimados:</p>
+<ul>
+  <li>A1: 1 mes (6 h/semana)</li>
+  <li>A2: 1–2 meses</li>
+  <li>B1: 2–3 meses</li>
+  <li>B2 (Celpe-Bras Intermediário): 3–4 meses adicionales</li>
+  <li><strong>Total desde cero</strong>: 7–10 meses con estudio consistente</li>
+</ul>
+<p>El mayor desafío para colombianos en el Celpe-Bras: la producción oral y escrita. La comprensión llega rápido — hablar y escribir con precisión requiere práctica activa.</p>
+
+<h2>Proceso de admisión en universidades brasileñas para extranjeros</h2>
+<p>Cada universidad tiene su propio proceso. El más común para extranjeros:</p>
+<ol>
+  <li>Selección de programa y verificación de requisitos en el sitio de la universidad</li>
+  <li>Envío de documentos: historial académico + diploma + Celpe-Bras</li>
+  <li>Traducción jurada al portugués de los documentos colombianos</li>
+  <li>Carta de motivación en portugués</li>
+  <li>Para doctorado: carta de orientador (professor que acepte supervisarte)</li>
+  <li>Visa de estudiante en el consulado brasileño en Colombia</li>
+</ol>
+
+<h2>Vida en Brasil como estudiante colombiano</h2>
+<p>Las ciudades universitarias más accesibles económicamente: Campinas (UNICAMP), Belo Horizonte (UFMG), Porto Alegre (UFRGS) — costo de vida más bajo que São Paulo y Río. São Paulo y Río tienen las mejores universidades pero también el costo más alto.</p>
+<p>El choque lingüístico más común: el portugués hablado rápidamente por brasileños tiene reducción de sílabas y "engolamiento" que no se aprende en clase. La inmersión tarda 2–4 semanas en ajustar el oído.</p>
+
+<h2>WeLearn y el portugués para estudiar en Brasil</h2>
+<p>Preparamos el Celpe-Bras con enfoque en las cuatro habilidades exigidas por el examen — comprensión oral, lectura, escritura y producción oral. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20portugu%C3%A9s%20para%20estudiar%20en%20Brasil.%20%C2%BFTienen%20preparaci%C3%B3n%20para%20el%20Celpe-Bras%3F" target="_blank" rel="noopener noreferrer">Escríbenos con el programa al que aspiras</a>.</p>
+<p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es y cómo prepararse</a> y <a href="/blog/portugues-europeo-vs-brasileno-para-aprender">Portugués europeo vs. brasileño: cuál aprender</a>.</p>
+    `,
+  },
+
+  // ── Article 113 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'aleman-dsh-examen-para-universidades-alemanas',
+    title: 'DSH: el examen de alemán para entrar a universidades en Alemania',
+    description: 'El DSH (Deutsche Sprachprüfung für den Hochschulzugang) es el examen de alemán más exigido para estudiar en Alemania. Guía completa de su estructura, nivel requerido y cómo prepararse.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'Alemán',
+    tags: ['Alemán', 'DSH', 'universidades', 'Alemania', 'C1', 'estudiar'],
+    body: `
+<h2>Qué es el DSH y para qué sirve</h2>
+<p>El DSH (Deutsche Sprachprüfung für den Hochschulzugang — Examen de Lengua Alemana para el Acceso a la Universidad) es el examen que la mayoría de universidades públicas alemanas exigen a estudiantes extranjeros para ingresar a programas en alemán. A diferencia del Goethe-Zertifikat o el TestDaF, el DSH es administrado directamente por cada universidad — lo que significa que el formato puede variar ligeramente entre instituciones, aunque el nivel de exigencia es comparable.</p>
+<p>No existe el DSH global — lo toma cada universidad individualmente. Solo puedes tomarlo en Alemania, generalmente antes del semestre.</p>
+
+<h2>DSH vs. TestDaF — ¿cuál elegir?</h2>
+<table>
+  <thead><tr><th>Característica</th><th>DSH</th><th>TestDaF</th></tr></thead>
+  <tbody>
+    <tr><td>¿Dónde se toma?</td><td>Solo en Alemania (en la universidad)</td><td>En todo el mundo (centros autorizados)</td></tr>
+    <tr><td>¿Cuándo?</td><td>Antes del semestre (fechas variables)</td><td>Varias veces al año</td></tr>
+    <tr><td>¿Costo?</td><td>Gratuito en muchas universidades</td><td>EUR 175 aprox.</td></tr>
+    <tr><td>Reconocimiento</td><td>Universal en universidades alemanas</td><td>Universal en universidades alemanas</td></tr>
+    <tr><td>Nivel mínimo</td><td>DSH-2 (equivale a C1)</td><td>TDN 4 (equivale a C1)</td></tr>
+  </tbody>
+</table>
+<p>Para latinoamericanos que preparan desde Colombia: el TestDaF es la opción práctica porque se puede tomar antes de viajar a Alemania. El DSH se toma allá.</p>
+
+<h2>Niveles del DSH</h2>
+<ul>
+  <li><strong>DSH-1</strong>: equivale aproximadamente a B2+ — acceso limitado, solo algunos programas específicos</li>
+  <li><strong>DSH-2</strong>: equivale a C1 — el nivel estándar que la mayoría de universidades exige para todos los programas</li>
+  <li><strong>DSH-3</strong>: equivale a C2 — el nivel más alto; abre todos los programas y demuestra dominio casi nativo</li>
+</ul>
+
+<h2>Estructura del examen DSH</h2>
+<p>El DSH evalúa cuatro competencias principales. El formato exacto varía por universidad, pero la estructura típica es:</p>
+<ol>
+  <li><strong>Hörverstehen (Comprensión oral)</strong>: escuchas un texto académico (conferencia, entrevista) y respondes preguntas de comprensión. Duración: 30–45 min.</li>
+  <li><strong>Leseverstehen (Comprensión lectora)</strong>: lees 1–2 textos académicos de 600–900 palabras y respondes preguntas de comprensión y análisis. Duración: 45–60 min.</li>
+  <li><strong>Wissenschaftssprachliche Strukturen (Estructuras del alemán académico)</strong>: ejercicios de gramática y uso del idioma académico — pasiva, conectores, nominalización. Duración: 30 min.</li>
+  <li><strong>Textproduktion (Producción escrita)</strong>: escribes un texto académico de 250–400 palabras respondiendo a los textos leídos. Es la parte más exigente. Duración: 60–70 min.</li>
+</ol>
+
+<h2>Alemán académico — qué diferencia el DSH del Goethe</h2>
+<p>El Goethe-Zertifikat B2 evalúa alemán general — conversación, vida diaria, textos de revistas. El DSH evalúa <strong>alemán académico universitario</strong>:</p>
+<ul>
+  <li>Nominalización: "Es wurde festgestellt, dass..." (Se estableció que...)</li>
+  <li>Pasiva: "Die Ergebnisse wurden analysiert" (Los resultados fueron analizados)</li>
+  <li>Conectores académicos: "Demzufolge, Infolgedessen, Dennoch, Obwohl, Allerdings"</li>
+  <li>Citas y referencias: "Laut Müller (2023) ..."</li>
+  <li>Vocabulario científico por disciplina</li>
+</ul>
+
+<h2>Cuánto alemán necesitas antes de preparar el DSH</h2>
+<p>Para tener éxito en el DSH-2 (el nivel estándar), necesitas llegar a Alemania con al menos B2 sólido de alemán general. La preparación específica del DSH (académico) desde B2 toma 3–4 meses intensivos.</p>
+<p>Timeline desde Colombia:</p>
+<ul>
+  <li>Alemán A1–B2 en Colombia: 12–18 meses</li>
+  <li>Llegada a Alemania → Studienkolleg o curso intensivo → DSH: 4–6 meses adicionales</li>
+</ul>
+
+<h2>El Studienkolleg — para quienes no tienen B2 al llegar</h2>
+<p>Si llegas a Alemania sin el nivel suficiente de alemán, muchas universidades ofrecen el <strong>Studienkolleg</strong> — un año de preparación académica en alemán antes de la universidad. Al final del Studienkolleg tomas el Feststellungsprüfung (examen de equivalencia). Es una ruta legítima y frecuente para latinoamericanos.</p>
+
+<h2>Universidades que aceptan el TestDaF en lugar del DSH</h2>
+<p>La mayoría de universidades alemanas aceptan el TestDaF (con TDN 4 en todas las secciones) como equivalente al DSH-2. Esto significa que puedes certificar tu alemán en Colombia antes de solicitar admisión — ideal para el proceso de visa.</p>
+
+<h2>WeLearn y el alemán para universidades en Alemania</h2>
+<p>Preparamos alemán desde A1 hasta B2 con miras al TestDaF o DSH. El vocabulario académico y las estructuras del alemán universitario se integran desde B1 para que llegues a Alemania con la base correcta. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20alem%C3%A1n%20para%20estudiar%20en%20una%20universidad%20alemana.%20%C2%BFTienen%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu nivel actual de alemán</a>.</p>
+<p>Lee también: <a href="/blog/aleman-a1-a-b1-cuanto-tiempo-y-plan-de-estudio">Alemán de A1 a B1: plan de estudio</a> y <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía para Colombia</a>.</p>
+    `,
+  },
+
+  // ── Article 114 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-negociaciones-y-contratos-internacionales',
+    title: 'Inglés para negocios internacionales: negociaciones, contratos y presentaciones',
+    description: 'El inglés de negocios internacional tiene vocabulario, estructuras y convenciones propias. Guía para profesionales colombianos que negocian en inglés con contrapartes globales.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'Inglés',
+    tags: ['Inglés', 'negocios', 'contratos', 'negociación', 'B2', 'C1', 'business English'],
+    body: `
+<h2>El inglés de negocios internacionales — qué lo hace diferente</h2>
+<p>El inglés de negocios no es simplemente inglés con vocabulario de empresa. Tiene convenciones específicas de comunicación, niveles de formalidad, frases hedging (de atenuación), estructuras de negociación y un protocolo de correspondencia que difieren del inglés conversacional. Un profesional colombiano con B2 de inglés general puede tener dificultades en una negociación internacional si no conoce estas convenciones.</p>
+
+<h2>Vocabulario de negociación — frases clave</h2>
+<h3>Abrir una negociación</h3>
+<ul>
+  <li>"We're here today to discuss the terms of..."</li>
+  <li>"I'd like to propose / suggest that we..."</li>
+  <li>"Our position on this matter is..."</li>
+  <li>"Perhaps we could start by outlining our key priorities."</li>
+</ul>
+
+<h3>Hacer concesiones y condiciones</h3>
+<ul>
+  <li>"We'd be willing to accept X, provided that..."</li>
+  <li>"We could consider that, on the condition that..."</li>
+  <li>"That's a possibility, but only if..."</li>
+  <li>"We can be flexible on the timeline, but the price is non-negotiable."</li>
+</ul>
+
+<h3>Pedir clarificación (sin perder la posición)</h3>
+<ul>
+  <li>"Could you elaborate on that point?"</li>
+  <li>"If I understand correctly, you're suggesting that..."</li>
+  <li>"I'd like to make sure we're on the same page regarding..."</li>
+  <li>"What exactly do you mean by 'reasonable notice'?"</li>
+</ul>
+
+<h3>Rechazar sin cerrar la puerta</h3>
+<ul>
+  <li>"That's not something we're in a position to accept at this stage."</li>
+  <li>"I'm afraid that falls outside our parameters."</li>
+  <li>"We'd need to revisit that aspect — perhaps there's a middle ground."</li>
+  <li>"I appreciate the offer, but we'll need to give this further thought."</li>
+</ul>
+
+<h3>Cerrar el acuerdo</h3>
+<ul>
+  <li>"I think we've reached a consensus on the main points."</li>
+  <li>"Let's put this in writing and circle back by [date]."</li>
+  <li>"We're pleased to move forward on these terms."</li>
+  <li>"I'll have our legal team draft the contract for review."</li>
+</ul>
+
+<h2>Vocabulario de contratos en inglés</h2>
+<p>Los contratos internacionales en inglés usan vocabulario jurídico específico:</p>
+<ul>
+  <li><strong>Parties</strong>: las partes del contrato (Provider, Client, Licensor, Licensee)</li>
+  <li><strong>Whereas</strong>: considerando que (inicia las cláusulas de antecedentes)</li>
+  <li><strong>Hereinafter referred to as</strong>: en adelante denominado como</li>
+  <li><strong>Indemnification</strong>: indemnización — la parte A protege a la parte B de ciertos riesgos</li>
+  <li><strong>Liability</strong>: responsabilidad legal</li>
+  <li><strong>Force majeure</strong>: fuerza mayor — eventos fuera del control de las partes</li>
+  <li><strong>Governing law</strong>: ley aplicable — qué jurisdicción regula el contrato</li>
+  <li><strong>Termination clause</strong>: cláusula de terminación</li>
+  <li><strong>Confidentiality / NDA</strong>: confidencialidad / Non-Disclosure Agreement</li>
+  <li><strong>Dispute resolution</strong>: resolución de disputas (arbitraje, mediación, litigio)</li>
+</ul>
+
+<h2>Presentaciones en inglés ante clientes internacionales</h2>
+<p>Una presentación de negocios en inglés sigue una estructura reconocible para audiencias angloparlantes:</p>
+<ol>
+  <li><strong>Hook</strong>: abre con una pregunta, estadística impactante o afirmación que captura la atención</li>
+  <li><strong>Overview</strong>: "Today I'll be covering three main points: [A], [B] and [C]"</li>
+  <li><strong>Content</strong>: desarrolla cada punto con datos, ejemplos, historias</li>
+  <li><strong>Summary</strong>: "To summarise, we've seen that..."</li>
+  <li><strong>Call to action</strong>: "The next step is... I'd like to propose that..."</li>
+  <li><strong>Q&A</strong>: "I'd be happy to take any questions."</li>
+</ol>
+
+<h3>Frases para el Q&A (lo que más da nervios)</h3>
+<ul>
+  <li>"That's a great question — let me address that directly."</li>
+  <li>"I don't have that figure to hand, but I'll follow up with you after the meeting."</li>
+  <li>"Could you clarify what specifically you mean? I want to make sure I answer the right question."</li>
+  <li>"I think what you're really asking is..."</li>
+</ul>
+
+<h2>Emails de negocios en inglés — registro correcto</h2>
+<p>El registro de un email de negocios en inglés sigue una escala:</p>
+<ul>
+  <li><strong>Formal</strong> (cliente nuevo, gobierno, legal): "Dear Mr./Ms. Smith," → "Yours sincerely,"</li>
+  <li><strong>Semi-formal</strong> (contraparte conocida): "Dear James," → "Best regards," / "Kind regards,"</li>
+  <li><strong>Informal</strong> (colega cercano): "Hi James," → "Best," / "Thanks,"</li>
+</ul>
+<p>Error frecuente de colombianos: usar "Dear [nombre]" con alguien que ya te escribe con "Hi" — suena excesivamente formal y crea distancia. Iguala el registro del interlocutor.</p>
+
+<h2>WeLearn y el inglés de negocios</h2>
+<p>Preparamos inglés de negocios internacional para profesionales colombianos con exposición al mundo angloparlante: negociación, presentaciones, emails y redacción de contratos. El programa se adapta a tu sector (finanzas, comercio, tecnología, consultoría). <a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20mejorar%20mi%20ingl%C3%A9s%20de%20negocios%20para%20negociaciones%20internacionales.%20%C2%BFTienen%20programa%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu área profesional</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-entrevistas-de-trabajo-en-multinacionales">Inglés para entrevistas en multinacionales</a> y <a href="/blog/ingles-b2-c1-para-trabajo-remoto-global">Inglés B2–C1 para trabajo remoto</a>.</p>
+    `,
+  },
+
+  // ── Article 115 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'migrar-reino-unido-requisitos-ingles-visa-2026',
+    title: 'Migrar al Reino Unido en 2026: requisitos de inglés por tipo de visa',
+    description: 'El Reino Unido tiene requisitos específicos de inglés para cada tipo de visa. Guía actualizada con los niveles exigidos, pruebas aceptadas y cómo prepararse desde Colombia.',
+    date: '2026-05-31',
+    readTime: 10,
+    category: 'Migración',
+    tags: ['Migración', 'Reino Unido', 'inglés', 'visa', 'Skilled Worker', 'IELTS UKVI'],
+    body: `
+<h2>El inglés como requisito formal en las visas del Reino Unido</h2>
+<p>El Home Office del Reino Unido exige demostrar nivel de inglés para la mayoría de visas de trabajo y residencia. A diferencia de otros destinos donde el inglés es un "plus", en el Reino Unido el idioma es un requisito legal — sin la prueba aprobada, la visa se deniega.</p>
+<p>Post-Brexit (desde 2021), el sistema de puntos (Points-Based Immigration System) reemplazó la libre circulación de la UE. Ahora todos los extranjeros — incluyendo europeos — necesitan patrocinio laboral y cumplir requisitos de idioma.</p>
+
+<h2>Pruebas de inglés aceptadas para visas UK</h2>
+<p>El Home Office tiene una lista de "Secure English Language Tests" (SELTs) — las únicas pruebas aceptadas para visas. No son las mismas que para universidades:</p>
+<ul>
+  <li><strong>IELTS for UKVI</strong>: versión especial del IELTS con protocolo de seguridad adicional. Diferente del IELTS regular (aunque el contenido es similar).</li>
+  <li><strong>Trinity College London ISE</strong>: Speaking & Listening integrado con Writing & Reading</li>
+  <li><strong>LanguageCert International ESOL SELT</strong></li>
+  <li><strong>Pearson PTE Academic UKVI</strong></li>
+  <li><strong>PSI Services</strong></li>
+</ul>
+<p>El IELTS académico o general regular (no UKVI) NO es válido para la mayoría de visas del Home Office. Debes tomar específicamente el IELTS for UKVI.</p>
+
+<h2>Requisitos de inglés por tipo de visa</h2>
+<h3>Skilled Worker Visa (Visa de Trabajador Calificado)</h3>
+<p>Requisito: inglés nivel B1 (CEFR) demostrado con prueba SELT</p>
+<p>IELTS for UKVI mínimo: 4.0 en cada componente (Listening, Reading, Writing, Speaking)</p>
+<p>Sin embargo, puedes quedar exento si:</p>
+<ul>
+  <li>Eres nacional de un país donde el inglés es idioma oficial (USA, Canadá, Australia, etc.)</li>
+  <li>Tienes un título universitario impartido completamente en inglés</li>
+  <li>Ya tienes un permiso de residencia previo en UK basado en inglés</li>
+</ul>
+
+<h3>Student Visa (Visa de Estudiante)</h3>
+<p>El requisito lo pone la universidad, no el Home Office directamente. Pero la universidad debe verificar el inglés antes de emitir el CAS (Confirmation of Acceptance for Studies). Niveles típicos:</p>
+<ul>
+  <li>Pregrado: IELTS for UKVI 5.5–6.0</li>
+  <li>Posgrado (maestría): IELTS for UKVI 6.0–6.5</li>
+  <li>Doctorado: IELTS for UKVI 6.5–7.0</li>
+</ul>
+
+<h3>UK Global Talent Visa</h3>
+<p>Diseñada para líderes en ciencias, humanidades, ingeniería, artes digitales o academia. Si eres aprobado por el organismo evaluador (Royal Society, British Academy, Tech Nation, etc.), no hay requisito de inglés específico — la evaluación del talento es el criterio.</p>
+
+<h3>Graduate Visa (Post-Study Work)</h3>
+<p>Para graduados de universidades UK que quieren quedarse a trabajar 2 años (3 para doctorados). No requiere prueba de inglés adicional — ya la aprobaste para entrar a estudiar.</p>
+
+<h3>Family Visa (reunificación familiar)</h3>
+<p>Si te reúnes con un ciudadano o residente permanente del UK:</p>
+<ul>
+  <li>Requiere inglés mínimo A1 (IELTS for UKVI 3.0–3.5 en cada componente)</li>
+  <li>Aumenta a A2 cuando renuevas (FLR(M))</li>
+  <li>B1 para la solicitud de Settlement (ILR — Indefinite Leave to Remain)</li>
+</ul>
+
+<h2>IELTS for UKVI — cómo tomarlo desde Colombia</h2>
+<p>El IELTS for UKVI está disponible en los mismos centros que el IELTS regular (British Council, IDP). Debes especificar que quieres el IELTS for UKVI al registrarte — no el Academic o General estándar. El costo es similar: aproximadamente USD $250–$280.</p>
+<p>Los resultados son válidos por 2 años para la solicitud de visa.</p>
+
+<h2>Life in the UK Test — para residencia permanente</h2>
+<p>Después de 5 años de residencia legal en UK, puedes solicitar el Indefinite Leave to Remain (ILR). Además del inglés B1, debes pasar el <strong>Life in the UK Test</strong> — un examen de historia, cultura y valores británicos. Tiene 24 preguntas y debes acertar 18 (75%). Se estudia con un libro oficial.</p>
+
+<h2>Timeline para un colombiano — de B1 a visa Skilled Worker</h2>
+<ul>
+  <li>Si estás en A2: 6–8 meses para llegar a B1 estable</li>
+  <li>Si estás en B1: 2–3 meses de preparación específica para IELTS for UKVI (4.0 en cada componente)</li>
+  <li>Si estás en B2: el B1 del examen es alcanzable sin preparación extensa — practica el formato específico</li>
+</ul>
+
+<h2>WeLearn y el inglés para migración al Reino Unido</h2>
+<p>Preparamos IELTS for UKVI para candidatos a visas del Home Office. Conocemos los requisitos específicos de cada tipo de visa y ajustamos la preparación según el nivel que necesitas demostrar. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20migrar%20al%20Reino%20Unido%20y%20necesito%20prepararme%20para%20el%20IELTS%20for%20UKVI.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos con el tipo de visa que buscas</a>.</p>
+<p>Lee también: <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs. General Training</a> y <a href="/blog/migrar-a-australia-ielts-visa-puntos-2026">Migrar a Australia: IELTS y visa por puntos</a>.</p>
+    `,
+  },
+
+  // ── Article 116 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'coreano-canciones-kpop-para-aprender-idioma',
+    title: 'Aprender coreano con K-pop: qué funciona y cómo hacerlo correctamente',
+    description: 'El K-pop puede ser una herramienta de aprendizaje de coreano, pero solo si lo usas bien. Guía práctica con canciones recomendadas y método de estudio con música.',
+    date: '2026-05-31',
+    readTime: 8,
+    category: 'Coreano',
+    tags: ['Coreano', 'K-pop', 'música', 'aprendizaje', 'hangul', 'vocabulario'],
+    body: `
+<h2>El K-pop como motivador y herramienta de aprendizaje</h2>
+<p>Muchos estudiantes de coreano empezaron por el K-pop — las canciones de BTS, BLACKPINK, Stray Kids, aespa crean un vínculo emocional con el idioma que es difícil de replicar con libros de texto. La pregunta es si ese vínculo se puede convertir en aprendizaje real. La respuesta es sí — con el método correcto.</p>
+<p>Lo que el K-pop sí aporta:</p>
+<ul>
+  <li>Vocabulario frecuente en contexto emocional (más memorable)</li>
+  <li>Pronunciación: escuchas coreano real repetidamente</li>
+  <li>Motivación sostenida — las canciones que amas, las escuchas cientos de veces</li>
+  <li>Familiarización con el ritmo y la entonación del coreano</li>
+</ul>
+<p>Lo que no aporta por sí solo:</p>
+<ul>
+  <li>Gramática sistemática</li>
+  <li>Vocabulario formal o de examen (TOPIK)</li>
+  <li>Producción activa (hablar)</li>
+  <li>Coreano de conversación real (las letras son poéticas y no representan el habla natural)</li>
+</ul>
+
+<h2>El método correcto: estudio activo con canciones</h2>
+<h3>Paso 1: Escoge una canción que genuinamente ames</h3>
+<p>La motivación es clave. Si no amas la canción, el método no funciona porque el cerebro no retiene lo que no le importa.</p>
+
+<h3>Paso 2: Lee la letra en hangul (no en romanización)</h3>
+<p>Antes de buscar la traducción, intenta leer la letra en hangul. Si no puedes, es señal de que necesitas consolidar el hangul primero (1–2 semanas de práctica intensiva de lectura). La romanización (escribir coreano en letras latinas) es un atajo que retrasa el aprendizaje real.</p>
+
+<h3>Paso 3: Aprende la letra línea por línea</h3>
+<ol>
+  <li>Escucha la línea</li>
+  <li>Lee la línea en hangul</li>
+  <li>Busca la traducción de cada palabra (no de la frase completa — palabra por palabra)</li>
+  <li>Identifica la gramática: ¿qué partícula se usa? ¿Qué conjugación verbal?</li>
+  <li>Repite la línea en voz alta imitando la pronunciación del artista</li>
+</ol>
+
+<h3>Paso 4: Crea flashcards de las palabras nuevas</h3>
+<p>De cada canción, extrae 5–10 palabras que no conocías y añádelas a tu mazo de Anki. Una canción estudiada así puede darte 30–50 palabras nuevas en contexto memorable.</p>
+
+<h3>Paso 5: Canta o recita la canción completa</h3>
+<p>Aprende la canción de memoria. La producción activa (cantarla tú) activa una parte diferente del aprendizaje que solo escuchar. Además, cada vez que la escuches, el vocabulario se refuerza.</p>
+
+<h2>Canciones recomendadas por nivel</h2>
+<h3>Principiante (A1) — vocabulario básico y pronunciación clara</h3>
+<ul>
+  <li>BTS — "Spring Day" (봄날): vocabulario de emociones y naturaleza. Pronunciación clara.</li>
+  <li>IU — "Good Day" (좋은 날): vocabulario cotidiano, expresiones de sentimientos.</li>
+  <li>EXO — "Lucky One": mezcla de inglés y coreano fácil de distinguir.</li>
+</ul>
+
+<h3>Intermedio (A2–B1) — gramática más compleja</h3>
+<ul>
+  <li>BTS — "DNA": pronombres y verbos de acción. Ritmo más rápido.</li>
+  <li>BLACKPINK — "How You Like That": vocabulario de actitud y confianza.</li>
+  <li>Stray Kids — "Miroh": vocabulario de autoconfianza y superación. Coreano más coloquial.</li>
+</ul>
+
+<h3>Avanzado (B1+) — coreano poético y complejo</h3>
+<ul>
+  <li>BTS — "Blood Sweat & Tears" (피 땀 눈물): vocabulario literario, referencias culturales.</li>
+  <li>RM — "Moonchild": poético, reflexivo, vocabulario culto.</li>
+  <li>IU — "Palette" (팔레트): letra introspectiva con vocabulario de adultos.</li>
+</ul>
+
+<h2>Vocabulario frecuente en K-pop</h2>
+<p>Estas palabras aparecen en decenas de canciones — aprenderlas te da una base:</p>
+<ul>
+  <li>사랑 (sarang) — amor</li>
+  <li>마음 (ma-eum) — corazón / mente / sentimiento</li>
+  <li>눈물 (nunmul) — lágrimas</li>
+  <li>빛 (bit) — luz</li>
+  <li>꿈 (kkum) — sueño</li>
+  <li>함께 (hamkke) — juntos</li>
+  <li>별 (byeol) — estrella</li>
+  <li>영원 (yeonwon) — eternidad / para siempre</li>
+</ul>
+
+<h2>K-pop no reemplaza el estudio estructurado</h2>
+<p>El K-pop es el complemento perfecto para el aprendizaje de coreano — no el método principal. Las canciones te dan motivación, vocabulario contextual y exposición auditiva. La gramática, las partículas, los niveles de formalidad y la preparación para el TOPIK requieren estudio sistemático.</p>
+<p>En WeLearn integramos recursos como K-pop y K-dramas en el programa de coreano como complemento a las clases estructuradas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20aprender%20coreano%20y%20me%20gusta%20el%20K-pop.%20%C2%BFTienen%20un%20programa%20que%20integre%20esto%3F" target="_blank" rel="noopener noreferrer">Escríbenos y armamos tu plan</a>.</p>
+<p>Lee también: <a href="/blog/coreano-k-dramas-para-aprender-series-recomendadas">K-dramas para aprender coreano</a> y <a href="/blog/hangul-aprender-en-una-semana-guia-completa">Aprender hangul en 1 semana</a>.</p>
+    `,
+  },
+
+  // ── Article 117 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ielts-reading-skimming-scanning-tecnicas',
+    title: 'IELTS Reading: skimming, scanning y las técnicas que realmente dan tiempo',
+    description: 'El tiempo es el mayor enemigo en el IELTS Reading. Aprende las técnicas de skimming y scanning correctamente aplicadas al formato IELTS para terminar los 3 pasajes a tiempo.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'IELTS',
+    tags: ['IELTS', 'Reading', 'skimming', 'scanning', 'tiempo', 'estrategia'],
+    body: `
+<h2>El problema del tiempo en el IELTS Reading</h2>
+<p>El IELTS Reading tiene 60 minutos para leer 3 pasajes (2,000–2,500 palabras en total) y responder 40 preguntas. Muchos candidatos no terminan — no por falta de inglés, sino por falta de estrategia de lectura eficiente. Leer cada palabra de cada pasaje es un error fatal.</p>
+<p>La solución: skimming y scanning. Dos técnicas de lectura rápida que, correctamente aplicadas al IELTS, pueden reducir tu tiempo de lectura a la mitad sin perder precisión.</p>
+
+<h2>Skimming — leer para la idea general</h2>
+<p>Skimming es leer muy rápidamente para capturar la idea general de un texto — sin detenerse en detalles. Técnicamente:</p>
+<ul>
+  <li>Lees el <strong>título</strong> y el primer párrafo completo</li>
+  <li>De los párrafos centrales, lees solo la <strong>primera oración</strong> (topic sentence)</li>
+  <li>Lees el <strong>último párrafo</strong> completo (conclusión)</li>
+</ul>
+<p>Con skimming puedes entender el tema principal, la estructura del argumento y el tono del texto en 2–3 minutos (vs. 10–12 minutos leyendo todo). Esto te permite ubicar las respuestas más rápidamente después.</p>
+
+<h3>Cuándo usar skimming en el IELTS Reading</h3>
+<ul>
+  <li>Al inicio de cada pasaje: skim primero (90 segundos máximo) antes de leer las preguntas</li>
+  <li>Para preguntas de "main idea" o "purpose of the text"</li>
+  <li>Para preguntas de "Which paragraph discusses..."</li>
+</ul>
+
+<h2>Scanning — buscar información específica</h2>
+<p>Scanning es buscar un dato específico en el texto sin leer todo — como cuando buscas un número de teléfono en una lista. El ojo recorre el texto buscando un patrón visual (número, nombre propio, palabra clave).</p>
+<p>Para el IELTS Reading:</p>
+<ol>
+  <li>Lees la pregunta e identificas la palabra clave (key word)</li>
+  <li>Buscas esa palabra (o un sinónimo) en el pasaje con el ojo — no leyendo</li>
+  <li>Cuando la encuentras, lees las 2–3 oraciones alrededor para responder</li>
+</ol>
+
+<h3>Sinónimos y paráfrasis — el desafío del scanning en IELTS</h3>
+<p>El IELTS nunca usa las mismas palabras de la pregunta en el texto — siempre parafrasea. Ejemplo:</p>
+<ul>
+  <li>Pregunta: "According to the text, what is the main cause of deforestation?"</li>
+  <li>Texto: "The primary driver of forest loss is agricultural expansion."</li>
+</ul>
+<p>Debes escanear buscando el <em>significado</em>, no la palabra literal. Sinónimo: "cause" = "driver". Esto requiere vocabulario amplio y práctica con paráfrasis.</p>
+
+<h2>Distribución del tiempo por pasaje</h2>
+<p>El IELTS tiene 3 pasajes en orden de dificultad creciente. Distribución recomendada:</p>
+<ul>
+  <li><strong>Pasaje 1</strong>: 17–18 minutos (el más fácil, menos tiempo = más para los difíciles)</li>
+  <li><strong>Pasaje 2</strong>: 20 minutos</li>
+  <li><strong>Pasaje 3</strong>: 22–23 minutos (el más difícil)</li>
+</ul>
+<p>Total: 60 minutos. No uses más de 18 minutos en el pasaje 1 aunque no hayas terminado — avanza y regresa si sobra tiempo.</p>
+
+<h2>Tipos de pregunta y estrategia de tiempo</h2>
+<table>
+  <thead><tr><th>Tipo de pregunta</th><th>Estrategia</th><th>Tiempo por pregunta</th></tr></thead>
+  <tbody>
+    <tr><td>True/False/Not Given</td><td>Seguir el orden del texto; subrayar la sección relevante</td><td>60–90 seg</td></tr>
+    <tr><td>Multiple choice</td><td>Leer el stem + todas las opciones antes de buscar en el texto</td><td>90 seg</td></tr>
+    <tr><td>Matching headings</td><td>Skim cada párrafo + leer la primera/última oración</td><td>60 seg por párrafo</td></tr>
+    <tr><td>Sentence completion</td><td>Scan por la palabra clave + completar con palabras del texto</td><td>60 seg</td></tr>
+    <tr><td>Summary completion</td><td>Leer el resumen primero para entender qué información busca</td><td>2 min total</td></tr>
+  </tbody>
+</table>
+
+<h2>El error más caro: empezar a leer antes de leer las preguntas</h2>
+<p>El error clásico de candidatos sin preparación: leer el pasaje completo, luego ir a las preguntas. Esto consume el doble del tiempo necesario. El orden correcto:</p>
+<ol>
+  <li>Skim rápido del pasaje (90 seg) — solo para el mapa mental</li>
+  <li>Lee las preguntas del primer bloque</li>
+  <li>Scan del pasaje buscando la información específica</li>
+  <li>Responde</li>
+  <li>Pasa al siguiente bloque de preguntas</li>
+</ol>
+
+<h2>Práctica de velocidad lectora</h2>
+<p>Para mejorar la velocidad de lectura en inglés:</p>
+<ul>
+  <li>Lee noticias en inglés diariamente (BBC, The Guardian) — cronometrado. El objetivo es 250–300 palabras por minuto.</li>
+  <li>Practica "not sub-vocalising" — no pronunciar internamente las palabras. La voz interna limita la velocidad.</li>
+  <li>Usa los textos de Cambridge IELTS 14–19 cronometrados — 20 minutos por pasaje máximo.</li>
+</ul>
+
+<h2>WeLearn y la preparación IELTS Reading</h2>
+<p>Trabajamos las técnicas de skimming y scanning de forma sistemática con textos reales del IELTS. En 4–6 semanas de práctica guiada, la mayoría de estudiantes reduce su tiempo de lectura sin perder precisión. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20IELTS%20Reading%20y%20administrar%20mejor%20el%20tiempo.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos esta semana</a>.</p>
+<p>Lee también: <a href="/blog/ielts-reading-true-false-not-given-estrategia">IELTS Reading: True, False, Not Given</a> y <a href="/blog/ielts-listening-sections-3-4-estrategias-avanzadas">IELTS Listening secciones 3 y 4</a>.</p>
+    `,
+  },
+
+  // ── Article 118 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'frances-dalf-c1-para-universidades-y-trabajo-en-francia',
+    title: 'DALF C1: qué puertas abre en Francia, Quebec y el mundo francófono',
+    description: 'El DALF C1 es el certificado de francés más valorado para trabajar y estudiar en Francia o Quebec. Guía de su estructura, nivel exigido y cómo prepararse.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Francés',
+    tags: ['Francés', 'DALF', 'C1', 'Francia', 'Quebec', 'universidades', 'trabajo'],
+    body: `
+<h2>Qué es el DALF C1 y por qué importa</h2>
+<p>El DALF (Diplôme Approfondi de Langue Française) es el diploma de francés de alto nivel — C1 y C2 — emitido por el Ministerio de Educación francés a través de France Éducation International. El DALF C1 certifica un nivel avanzado de francés que permite:</p>
+<ul>
+  <li>Ingresar a universidades francesas sin examen adicional de idioma</li>
+  <li>Acceder a programas de maestría y doctorado en Francia, Bélgica, Suiza francófona y Quebec</li>
+  <li>Trabajar en empresas internacionales con operaciones en países francófonos</li>
+  <li>Solicitar la carta de residencia francesa en proceso de naturalización</li>
+</ul>
+<p>El DALF C1 es reconocido de por vida — nunca vence. Es la única certificación de francés que muchas universidades francesas aceptan para exención del examen de idioma.</p>
+
+<h2>DALF C1 vs. TCF/TEF — cuándo elegir cada uno</h2>
+<table>
+  <thead><tr><th>Examen</th><th>Propósito principal</th><th>Vigencia</th><th>Costo aprox.</th></tr></thead>
+  <tbody>
+    <tr><td>DALF C1/C2</td><td>Universidades, empleo, naturalización</td><td>De por vida</td><td>EUR 115–150</td></tr>
+    <tr><td>DELF B2/B1</td><td>Universidades (nivel más bajo), integración</td><td>De por vida</td><td>EUR 80–115</td></tr>
+    <tr><td>TCF Canada</td><td>Solo immigración canadiense (Express Entry, Quebec)</td><td>2 años</td><td>EUR 150–200</td></tr>
+    <tr><td>TEF Canada</td><td>Solo inmigración canadiense</td><td>2 años</td><td>EUR 150–200</td></tr>
+    <tr><td>TCF (estándar)</td><td>Universidades, trabajo (no inmigración)</td><td>2 años</td><td>EUR 130</td></tr>
+  </tbody>
+</table>
+<p>Regla general: si tu objetivo es estudiar o trabajar en Francia o Bélgica a largo plazo, el DALF C1 es la inversión correcta — no vence y es el estándar académico. Si tu objetivo es inmigrar a Canadá, el TCF Canada o TEF Canada son los únicos válidos para IRCC.</p>
+
+<h2>Estructura del DALF C1</h2>
+<p>El DALF C1 evalúa cuatro habilidades:</p>
+<ol>
+  <li><strong>Compréhension de l'oral (CO)</strong>: comprensión auditiva — escuchas 2 documentos auténticos (conferencia, entrevista, debate) y respondes preguntas de análisis. Duración: 40 min.</li>
+  <li><strong>Compréhension des écrits (CE)</strong>: comprensión lectora — lees 2–3 textos complejos (artículo, ensayo, texto de opinión) y respondes preguntas de síntesis. Duración: 50 min.</li>
+  <li><strong>Production écrite (PE)</strong>: producción escrita — escribes un texto argumentativo de 700–1000 palabras sobre un tema dado (a partir de los textos leídos). Duración: 2h30.</li>
+  <li><strong>Production orale (PO)</strong>: producción oral — expones un tema durante 30 minutos de preparación + 30 minutos de presentación y debate con el examinador. Nivel de discusión académica.</li>
+</ol>
+
+<h2>Lo que se evalúa en la producción oral C1</h2>
+<p>La producción oral del DALF C1 no es una conversación — es una <strong>presentación académica y debate</strong>. El candidato recibe un "dossier" de documentos (artículos, datos, extractos) sobre un tema de actualidad y debe:</p>
+<ul>
+  <li>Analizar y sintetizar los documentos en 30 minutos de preparación</li>
+  <li>Presentar una posición argumentada en 10 minutos</li>
+  <li>Defender su posición en un intercambio con el examinador (20 minutos)</li>
+</ul>
+<p>Los temas suelen ser sociales, culturales o científicos: inteligencia artificial, medio ambiente, desigualdad, diversidad cultural, futuro del trabajo.</p>
+
+<h2>Cuánto francés necesitas para superar el DALF C1</h2>
+<p>El C1 de francés para hispanohablantes es alcanzable — pero requiere tiempo:</p>
+<ul>
+  <li>Desde cero (A0): 2–3 años de estudio serio (8 h/semana)</li>
+  <li>Desde B2: 6–12 meses de preparación intensiva del nivel C1</li>
+  <li>Desde B1 sólido: 12–18 meses</li>
+</ul>
+<p>Lo más exigente del C1: la producción oral académica y la escritura argumentativa de alta densidad. Son habilidades que requieren práctica constante con retroalimentación — no se desarrollan solo con exposición pasiva.</p>
+
+<h2>Dónde tomar el DALF C1 en Colombia</h2>
+<p>El DALF se aplica en centros autorizados Alliance Française en Colombia:</p>
+<ul>
+  <li>Alliance Française de Bogotá</li>
+  <li>Alliance Française de Medellín</li>
+  <li>Alliance Française de Cali</li>
+  <li>Alliance Française de Barranquilla</li>
+</ul>
+<p>Las convocatorias son en mayo y noviembre generalmente. Las inscripciones abren 2–3 meses antes. El resultado llega en 4–6 semanas.</p>
+
+<h2>WeLearn y la preparación DALF C1</h2>
+<p>La preparación para el DALF C1 es especializada — requiere dominar el argot académico del francés, las estructuras de ensayo formal y la presentación oral de nivel universitario. En WeLearn preparamos el DALF C1 con tutores especializados en el formato. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20DALF%20C1%20de%20franc%C3%A9s.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu nivel actual de francés</a>.</p>
+<p>Lee también: <a href="/blog/delf-cual-nivel-necesitas-y-para-que-sirve">DELF: cuál nivel necesitas según tu objetivo</a> y <a href="/blog/frances-b2-para-que-sirve-que-puertas-abre">Francés B2: qué puertas abre</a>.</p>
+    `,
+  },
+
+  // ── Article 119 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'ingles-para-abogados-y-profesionales-del-derecho',
+    title: 'Inglés jurídico para abogados colombianos: contratos, arbitraje y documentos legales',
+    description: 'El inglés jurídico tiene vocabulario y convenciones propias. Guía para abogados colombianos que trabajan con clientes o firmas internacionales.',
+    date: '2026-05-31',
+    readTime: 9,
+    category: 'Inglés',
+    tags: ['Inglés', 'derecho', 'jurídico', 'abogados', 'contratos', 'C1', 'professional'],
+    body: `
+<h2>El inglés jurídico — un idioma dentro del idioma</h2>
+<p>El inglés legal tiene su propio vocabulario, su propia sintaxis y sus propias convenciones que lo diferencian del inglés general. Un abogado colombiano con inglés B2 general puede entender el 80% de un contrato en inglés — pero ese 20% restante de tecnicismos jurídicos puede ser la diferencia entre un acuerdo favorable y uno desventajoso.</p>
+<p>El inglés jurídico importa cuando:</p>
+<ul>
+  <li>Tu firma representa a clientes extranjeros con contratos en inglés</li>
+  <li>Participas en arbitrajes internacionales (CCI, ICSID, ICC)</li>
+  <li>Redactas o revisas contratos de joint ventures, M&A, licencias de IP</li>
+  <li>Correspondes con abogados o contrapartes en países angloparlantes</li>
+  <li>Quieres realizar un LLM en una universidad angloparlante</li>
+</ul>
+
+<h2>Vocabulario jurídico esencial — inglés vs. español</h2>
+<h3>Tipos de documentos legales</h3>
+<ul>
+  <li>Agreement / Contract — contrato / acuerdo</li>
+  <li>Deed — escritura (pública)</li>
+  <li>Memorandum of Understanding (MOU) — memorando de entendimiento</li>
+  <li>Letter of Intent (LOI) — carta de intención</li>
+  <li>Non-Disclosure Agreement (NDA) — acuerdo de confidencialidad</li>
+  <li>Power of Attorney — poder notarial</li>
+  <li>Affidavit — declaración jurada</li>
+  <li>Brief — escrito / memorial</li>
+</ul>
+
+<h3>Términos contractuales</h3>
+<ul>
+  <li>Consideration — contraprestación (lo que cada parte da a cambio)</li>
+  <li>Breach of contract — incumplimiento de contrato</li>
+  <li>Liquidated damages — daños y perjuicios pactados</li>
+  <li>Indemnify and hold harmless — indemnizar y mantener indemne</li>
+  <li>Representations and warranties — declaraciones y garantías</li>
+  <li>Covenants — obligaciones / compromisos contractuales</li>
+  <li>Conditions precedent — condiciones suspensivas</li>
+  <li>Assignment — cesión (de derechos u obligaciones)</li>
+  <li>Severability — divisibilidad (cláusula de independencia de cláusulas)</li>
+</ul>
+
+<h3>Términos de litigio y arbitraje</h3>
+<ul>
+  <li>Claimant / Respondent — demandante / demandado (en arbitraje)</li>
+  <li>Plaintiff / Defendant — demandante / demandado (en litigio)</li>
+  <li>Discovery — descubrimiento probatorio (fase de intercambio de pruebas)</li>
+  <li>Deposition — declaración extrajudicial bajo juramento</li>
+  <li>Injunction — orden judicial de hacer o no hacer</li>
+  <li>Stay of proceedings — suspensión del proceso</li>
+  <li>Award — laudo (en arbitraje)</li>
+  <li>Enforcement — ejecución (de un laudo o sentencia)</li>
+</ul>
+
+<h2>Cómo leer un contrato en inglés — metodología</h2>
+<p>Los contratos anglosajones (common law) siguen una estructura diferente al derecho civil colombiano. La secuencia típica:</p>
+<ol>
+  <li><strong>Recitals / Whereas clauses</strong>: antecedentes del contrato — por qué las partes contratan</li>
+  <li><strong>Definitions</strong>: define los términos usados en el contrato — crucial leerlas primero</li>
+  <li><strong>Operative clauses</strong>: las obligaciones reales de cada parte</li>
+  <li><strong>Representations and Warranties</strong>: lo que cada parte declara como verdadero</li>
+  <li><strong>Conditions</strong>: requisitos que deben cumplirse para que el contrato sea efectivo</li>
+  <li><strong>General Provisions / Boilerplate</strong>: cláusulas estándar (governing law, entire agreement, amendments)</li>
+  <li><strong>Schedules / Annexes</strong>: documentos adjuntos con detalles técnicos o listas</li>
+</ol>
+<p>El "boilerplate" (cláusulas tipo) parece poco importante pero puede ser decisivo: la cláusula de "governing law" determina qué jurisdicción resuelve conflictos.</p>
+
+<h2>El inglés oral en reuniones jurídicas internacionales</h2>
+<p>Las reuniones de negociación de contratos o arbitrajes internacionales tienen convenciones orales específicas:</p>
+<ul>
+  <li>"Our position is that..." — la forma de presentar una posición jurídica</li>
+  <li>"Without prejudice to our rights under..." — sin perjuicio de nuestros derechos bajo...</li>
+  <li>"We reserve the right to..." — nos reservamos el derecho a...</li>
+  <li>"Subject to final documentation..." — sujeto a documentación definitiva...</li>
+  <li>"We have no objection in principle, provided that..." — no tenemos objeción en principio, siempre que...</li>
+</ul>
+
+<h2>LLM en universidades angloparlantes — el inglés requerido</h2>
+<p>Para un LLM (Master of Laws) en:</p>
+<ul>
+  <li>Harvard, Yale, NYU: IELTS 7.0–7.5 o TOEFL 100+</li>
+  <li>UCL, LSE, King's College (UK): IELTS 6.5–7.0</li>
+  <li>University of Toronto, McGill (Canadá): IELTS 6.5–7.0</li>
+</ul>
+<p>Además del inglés del examen, necesitas inglés jurídico para el "Personal Statement" (carta de motivación) y las entrevistas de admisión.</p>
+
+<h2>WeLearn y el inglés jurídico</h2>
+<p>Trabajamos inglés de especialidad para abogados — vocabulario contractual, estructura de documentos, redacción de emails jurídicos en inglés y preparación oral para reuniones internacionales. El programa se adapta al perfil del abogado: litigante, transaccional, arbitraje, propiedad intelectual. <a href="https://wa.me/573005004253?text=Hola%2C%20soy%20abogado%2Fa%20y%20necesito%20mejorar%20mi%20ingl%C3%A9s%20jur%C3%ADdico.%20%C2%BFTienen%20programa%20especializado%3F" target="_blank" rel="noopener noreferrer">Escríbenos con tu área del derecho</a>.</p>
+<p>Lee también: <a href="/blog/ingles-para-negociaciones-y-contratos-internacionales">Inglés para negociaciones y contratos internacionales</a> y <a href="/blog/ingles-b2-c1-para-trabajo-remoto-global">Inglés B2–C1 para profesionales</a>.</p>
+    `,
+  },
+
+  // ── Article 120 ──────────────────────────────────────────────────────────────
+  {
+    slug: 'aprender-italiano-con-musica-y-peliculas',
+    title: 'Aprender italiano con música y películas: método práctico para hispanohablantes',
+    description: 'La música italiana y el cine italiano son las herramientas de inmersión más placenteras. Guía con recursos recomendados y método de estudio activo para hispanohablantes.',
+    date: '2026-05-31',
+    readTime: 8,
+    category: 'Italiano',
+    tags: ['Italiano', 'música', 'películas', 'inmersión', 'recursos', 'aprendizaje'],
+    body: `
+<h2>Por qué el italiano se presta especialmente a la inmersión cultural</h2>
+<p>El italiano tiene una tradición cultural tan rica en música, cine y gastronomía que la inmersión cultural es uno de los métodos más placenteros y efectivos de aprendizaje. A diferencia del coreano o el alemán, donde la cultura pop puede ser menos accesible inicialmente, el italiano tiene décadas de música famosa mundialmente (Pavarotti, Eros Ramazzotti, Laura Pausini) y un cine con subtítulos disponibles en plataformas globales.</p>
+<p>Además, como hispanohablante, ya entiendes el 70–80% del vocabulario italiano — lo que hace que la inmersión sea productiva desde etapas muy tempranas.</p>
+
+<h2>Método activo con canciones italianas</h2>
+<h3>Por qué la música funciona para aprender italiano</h3>
+<ul>
+  <li>El italiano cantado es más claro que el hablado — las vocales se articulan completamente</li>
+  <li>La música activa memoria emocional — retienes vocabulario aprendido en contexto emotivo</li>
+  <li>La melodía fija frases completas en la memoria de largo plazo</li>
+  <li>El ritmo y la entonación del italiano se internalizan naturalmente</li>
+</ul>
+
+<h3>Canciones recomendadas por nivel</h3>
+<p><strong>Principiante (A1–A2)</strong>:</p>
+<ul>
+  <li><strong>Volare (Nel blu dipinto di blu)</strong> — Domenico Modugno: vocabulario simple, emocional</li>
+  <li><strong>O sole mio</strong> — tradicional napolitana: pronunciación clara, vocabulario de naturaleza</li>
+  <li><strong>Al di là</strong> — Emilio Pericoli: estructura de oraciones simple</li>
+</ul>
+
+<p><strong>Intermedio (B1)</strong>:</p>
+<ul>
+  <li><strong>Azzurro</strong> — Adriano Celentano: italiano coloquial, expresiones cotidianas</li>
+  <li><strong>Un'estate italiana</strong> — Gianna Nannini y Edoardo Bennato: vocabulario de verano y nostalgia</li>
+  <li><strong>Grande amore</strong> — Il Volo: vocabulario romántico formal</li>
+</ul>
+
+<p><strong>Avanzado (B2+)</strong>:</p>
+<ul>
+  <li><strong>La vita è bella</strong> — Roberto Benigni (banda sonora): lírica poética</li>
+  <li><strong>Rinascerò, rinascerai</strong> — Roby Facchinetti y Stefano D'Orazio: vocabulario de resiliencia</li>
+  <li><strong>Canzoni tradizionali toscanas</strong>: dialecto y vocabulario regional avanzado</li>
+</ul>
+
+<h2>Películas y series italianas para aprender</h2>
+<h3>Principiantes (con subtítulos en italiano)</h3>
+<ul>
+  <li><strong>Benvenuti al Sud</strong> (2010): comedia italiana ligera, accento variado</li>
+  <li><strong>Pane e Tulipani</strong> (2000): italiano estándar, trama cotidiana</li>
+  <li><strong>Mine Vaganti</strong> (2010): historia familiar, vocabulario cotidiano</li>
+</ul>
+
+<h3>Intermedios</h3>
+<ul>
+  <li><strong>La vita è bella</strong> (1997): Roberto Benigni — italiano hermoso y expresivo</li>
+  <li><strong>Gomorrah</strong> (serie): italiano napolitano, vocabulario coloquial intenso</li>
+  <li><strong>Suburra</strong> (Netflix, serie): italiano romano moderno, trama policial</li>
+</ul>
+
+<h3>Avanzados</h3>
+<ul>
+  <li><strong>Il commissario Montalbano</strong> (serie): italiano siciliano, policial, vocabulario rico</li>
+  <li><strong>My Brilliant Friend (L'amica geniale)</strong>: dialecto napolitano + italiano estándar — basada en las novelas de Elena Ferrante</li>
+  <li><strong>Fellini — La Dolce Vita</strong>: italiano clásico culto</li>
+</ul>
+
+<h2>Netflix, Rai Play y YouTube — dónde encontrar contenido italiano</h2>
+<ul>
+  <li><strong>Netflix</strong>: tiene varias series italianas originales con audio y subtítulos en italiano. Busca "Italian originals" y activa el audio en italiano.</li>
+  <li><strong>Rai Play</strong> (aplicación gratuita): la televisión pública italiana. Disponible fuera de Italia con VPN. Programas de cocina, noticias, telenovelas, documentales — todo en italiano real.</li>
+  <li><strong>YouTube en italiano</strong>: canales de cocina (Cucina Italiana), viajes, humor, ciencia — cambia las preferencias de idioma al italiano para que el algoritmo te muestre contenido italiano.</li>
+  <li><strong>Podcast di Radio Rai</strong>: podcasts gratuitos de la radio pública italiana — noticias, debates, programas culturales.</li>
+</ul>
+
+<h2>Estructura de sesión de estudio con italiano cultural</h2>
+<p>Ejemplo de sesión de 45 minutos usando música y cine:</p>
+<ul>
+  <li><strong>5 min</strong>: repaso de flashcards Anki del día anterior</li>
+  <li><strong>10 min</strong>: escucha activa de una canción (técnica línea por línea)</li>
+  <li><strong>20 min</strong>: ver un episodio o fragmento de serie con subtítulos en italiano (pausa + repetición de frases clave)</li>
+  <li><strong>10 min</strong>: escribir 5–8 frases propias usando vocabulario nuevo aprendido</li>
+</ul>
+
+<h2>WeLearn y el italiano</h2>
+<p>En WeLearn integramos la cultura italiana en el programa de enseñanza — música, cine, gastronomía y actualidad como contexto para el aprendizaje. El programa va de cero a B2, con el vocabulario y las estructuras necesarias para el CILS o el trabajo en Italia. <a href="https://wa.me/573005004253?text=Hola%2C%20me%20interesa%20aprender%20italiano.%20%C2%BFComo%20funciona%20el%20programa%20de%20WeLearn%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos</a>.</p>
+<p>Lee también: <a href="/blog/italiano-de-cero-a-b2-cuanto-tiempo-y-como-estudiarlo">Italiano de cero a B2: cuánto tiempo y cómo</a> y <a href="/blog/aprender-idiomas-tecnica-inmersion-en-casa">Inmersión en casa: cómo crear un ambiente de idioma</a>.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

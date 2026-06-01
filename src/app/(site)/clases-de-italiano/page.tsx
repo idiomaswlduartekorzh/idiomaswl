@@ -171,6 +171,7 @@ const BLOG_POSTS = [
   { cat: 'Italiano', color: '#009246', title: 'Italiano de cero a B2: cuánto tiempo toma y cómo estudiarlo', slug: 'italiano-de-cero-a-b2-cuanto-tiempo-y-como-estudiarlo' },
   { cat: 'Italiano', color: '#009246', title: 'Italiano B1 para ciudadanía italiana: examen y proceso completo', slug: 'italiano-para-ciudadania-italiana-nivel-b1' },
   { cat: 'Italiano', color: '#009246', title: 'Trabajar en Italia: visas y nivel de italiano por sector', slug: 'italiano-trabajar-en-italia-visas-y-nivel-requerido' },
+  { cat: 'Italiano', color: '#009246', title: 'Aprender italiano con música y películas: método práctico', slug: 'aprender-italiano-con-musica-y-peliculas' },
 ];
 
 const WaIcon = () => (

@@ -206,6 +206,7 @@ const BLOG_POSTS = [
   { cat: 'Francés', color: '#1a2ecc', title: 'Aprender francés siendo adulto desde cero en Colombia: guía realista', slug: 'aprender-frances-adulto-desde-cero-colombia' },
   { cat: 'Método', color: '#7c3aed', title: 'Inmersión en casa: cómo crear un ambiente de idioma sin viajar', slug: 'aprender-idiomas-tecnica-inmersion-en-casa' },
   { cat: 'Francés', color: '#1a2ecc', title: 'Francés para vivir en Canadá: cuándo es más valioso que el inglés', slug: 'frances-para-vivir-en-canada-diferencias-ingles-frances' },
+  { cat: 'Francés', color: '#1a2ecc', title: 'DALF C1: qué puertas abre en Francia, Quebec y el mundo francófono', slug: 'frances-dalf-c1-para-universidades-y-trabajo-en-francia' },
 ];
 
 // WhatsApp SVG icon
