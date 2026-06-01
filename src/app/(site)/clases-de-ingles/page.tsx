@@ -16,9 +16,9 @@ const WA_TRABAJO = wa('Hola, quiero mejorar mi inglés para trabajo o para comun
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Clases de Inglés Online en Colombia — IELTS, TOEFL, ICFES | WeLearn',
+  title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, ICFES | WeLearn',
   description:
-    'Clases de inglés online con preparación para IELTS, TOEFL e ICFES Saber 11. Profesor políglota en 8 idiomas y directora académica. Clase de diagnóstico gratis. Bucaramanga y todo Colombia.',
+    'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL e ICFES Saber 11. Profesor políglota en 8 idiomas. Clase de diagnóstico gratis.',
   keywords: [
     'clases de inglés', 'inglés Bucaramanga', 'preparación IELTS Colombia',
     'preparación TOEFL Colombia', 'ICFES inglés Saber 11', 'aprender inglés online Colombia',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://idiomaswl.com/clases-de-ingles' },
   openGraph: {
-    title: 'Clases de Inglés Online en Colombia — IELTS, TOEFL, ICFES | WeLearn',
-    description: 'Preparación real para IELTS, TOEFL e ICFES. Clase de diagnóstico gratis. Bucaramanga y todo Colombia.',
+    title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, ICFES | WeLearn',
+    description: 'Academia de inglés en Bucaramanga. Preparación IELTS, TOEFL e ICFES con método propio. Clase de diagnóstico gratis para toda Colombia.',
     url: 'https://idiomaswl.com/clases-de-ingles',
   },
 };
@@ -94,16 +94,42 @@ const jsonLd = {
       },
     },
     {
-      '@type': 'LocalBusiness',
+      '@type': ['LocalBusiness', 'LanguageSchool'],
       name: 'Idiomas WeLearn',
+      alternateName: 'WeLearn Academia de Idiomas',
       url: 'https://idiomaswl.com',
       telephone: '+573005004253',
+      email: 'info@idiomaswl.com',
+      image: 'https://idiomaswl.com/images/david-duarte.jpg',
+      priceRange: '$$',
+      currenciesAccepted: 'COP',
+      paymentAccepted: 'Cash, Credit Card, Transfer',
+      description: 'Academia de idiomas en Bucaramanga con clases online para toda Colombia. Especialistas en inglés, coreano, francés, alemán, italiano y portugués. Preparación IELTS, TOEFL, ICFES, TOPIK, Goethe, DELF, CILS y Celpe-Bras.',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Bucaramanga',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
+        postalCode: '680001',
         addressCountry: 'CO',
       },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 7.1193,
+        longitude: -73.1227,
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Bucaramanga' },
+        { '@type': 'City', name: 'Bogotá' },
+        { '@type': 'City', name: 'Medellín' },
+        { '@type': 'Country', name: 'Colombia' },
+      ],
+      hasMap: 'https://maps.google.com/?q=Idiomas+WeLearn+Bucaramanga',
+      openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
+      sameAs: [
+        'https://wa.me/573005004253',
+        'https://idiomaswl.com',
+      ],
     },
     {
       '@type': 'BreadcrumbList',
@@ -240,7 +266,7 @@ export default function ClasesDeInglesPage() {
           {/* Copy */}
           <div>
             <p className="wlh-section-eyebrow" style={{ marginBottom: '1rem' }}>
-              Clases de inglés online · Colombia
+              Academia de inglés · Bucaramanga y Colombia
             </p>
             <h1 style={{
               fontSize: 'clamp(2rem, 4.5vw, 3.2rem)',
@@ -308,8 +334,7 @@ export default function ClasesDeInglesPage() {
           <p className="wlh-section-eyebrow">01 — ¿Para qué necesitas el inglés?</p>
           <h2 className="wlh-section-h2">Cada objetivo, una preparación específica.</h2>
           <p className="wlh-section-desc">
-            No todas las clases de inglés son iguales. Tu plan de estudio en WeLearn
-            depende de exactamente lo que necesitas lograr.
+            No todas las clases de inglés son iguales. En Idiomas WeLearn — academia de inglés en Bucaramanga con cobertura nacional online — tu plan de estudio depende de exactamente lo que necesitas lograr.
           </p>
           <div className={s.grid4} style={{ marginTop: '2.5rem' }}>
             {INTENTS.map(intent => (

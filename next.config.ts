@@ -80,6 +80,21 @@ const nextConfig: NextConfig = {
     root: __dirname,
   },
 
+  // Image optimization — serve modern formats (WebP/AVIF) automatically
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    // Cache optimized images for 30 days
+    minimumCacheTTL: 2592000,
+    // Remote images from Supabase storage
+    remotePatterns: [
+      { protocol: 'https', hostname: '*.supabase.co' },
+      { protocol: 'https', hostname: 'lh3.googleusercontent.com' },
+    ],
+  },
+
+  // Compress responses
+  compress: true,
+
   async headers() {
     return [
       {

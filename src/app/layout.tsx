@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -11,10 +11,6 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const BASE_URL = 'https://idiomaswl.com';
 
@@ -88,12 +84,17 @@ export default function RootLayout({
     <html
       lang="es"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} h-full antialiased`}
     >
       {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       <head>
         {/* Theme: must run synchronously before paint — keep as inline script */}
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {/* Preconnect to external domains to reduce latency */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://wa.me" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* Google Tag Manager (noscript) — immediately after <body> open */}

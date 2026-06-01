@@ -10,9 +10,9 @@ const WA_TOPIK     = encodeURIComponent('Hola, quiero prepararme para el examen 
 const WA_FUNDADOR  = encodeURIComponent('Hola, me interesa el cupo de Miembro Fundador de coreano en WeLearn. ¿Quedan cupos disponibles?');
 
 export const metadata: Metadata = {
-  title: 'Aprende Coreano Online — Clases con Profesor Nativo | WeLearn',
+  title: 'Clases de Coreano en Bucaramanga y Online — TOPIK, Hangul | WeLearn',
   description:
-    'Aprende coreano con el método WeLearn: pronunciación, Hangul, vocabulario esencial y preparación TOPIK. Clases 1:1 con tutor. Cupos de Miembro Fundador disponibles. Desde Bucaramanga, para toda Colombia.',
+    'Academia de coreano en Bucaramanga con clases online para toda Colombia. Hangul, pronunciación, TOPIK I y II. Clases 1:1 con tutor especializado. Cupos de Miembro Fundador disponibles.',
   keywords: [
     'clases de coreano online Colombia',
     'aprender coreano Bucaramanga',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     'WeLearn coreano',
   ],
   openGraph: {
-    title: 'Aprende Coreano Online con el método WeLearn',
+    title: 'Clases de Coreano en Bucaramanga y Online — WeLearn',
     description:
-      'Hangul, pronunciación, vocabulario esencial y TOPIK. Clases 1:1 con tutor. 50 cupos de Miembro Fundador. Para colombianos que van en serio.',
+      'Academia de coreano en Bucaramanga. Hangul, pronunciación, TOPIK I y II. Clases 1:1. 50 cupos de Miembro Fundador para toda Colombia.',
     url: 'https://idiomaswl.com/clases-de-coreano',
   },
   alternates: { canonical: 'https://idiomaswl.com/clases-de-coreano' },
@@ -96,18 +96,34 @@ const jsonLd = {
       },
     },
     {
-      '@type': 'LocalBusiness',
+      '@type': ['LocalBusiness', 'LanguageSchool'],
       '@id': 'https://idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
-      description: 'Academia de idiomas online. Clases de coreano, inglés, francés, alemán, italiano y portugués.',
+      alternateName: 'WeLearn Academia de Idiomas',
+      description: 'Academia de idiomas en Bucaramanga con clases online para toda Colombia. Coreano, inglés, francés, alemán, italiano y portugués. Preparación TOPIK, IELTS, TOEFL, Goethe, DELF, CILS y Celpe-Bras.',
       url: 'https://idiomaswl.com',
       telephone: '+573005004253',
+      image: 'https://idiomaswl.com/images/david-duarte.jpg',
+      priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Bucaramanga',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
+        postalCode: '680001',
         addressCountry: 'CO',
       },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 7.1193,
+        longitude: -73.1227,
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Bucaramanga' },
+        { '@type': 'City', name: 'Bogotá' },
+        { '@type': 'Country', name: 'Colombia' },
+      ],
+      openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
     },
     {
       '@type': 'BreadcrumbList',
@@ -175,7 +191,7 @@ export default function ClasesDeCoreanoPage() {
           <div className={s.heroInner}>
             <div className={s.heroText}>
               <div className={s.heroKorean}>안녕하세요</div>
-              <p className={s.eyebrow}>Coreano online · WeLearn</p>
+              <p className={s.eyebrow}>Academia de coreano · Bucaramanga y Colombia</p>
               <h1 className={s.h1}>
                 Aprende coreano<br />
                 <span className={s.accent}>de verdad.</span>
