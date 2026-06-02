@@ -551,49 +551,53 @@ const mock: MockExam = {
     },
 
     // ─────────────────────────────────────────────────────────────────────────
-    // PAPER 3 — Listening (audio coming soon)
+    // PAPER 3 — Listening · Part 1: Multiple Choice – short extracts
+    // Source: Cambridge B2 First Official Sample 1 (2015 handbook)
     // ─────────────────────────────────────────────────────────────────────────
     {
       part: 9,
       title: 'Listening – Part 1: Multiple Choice (short extracts)',
       skill: 'listening',
+      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
       instructions:
-        'You will hear people talking in eight different situations. For questions 1–8, choose the best answer (A, B or C). You will hear each extract twice. 🎧 Audio coming soon — practice the other sections and return when available.',
+        'You will hear people talking in eight different situations. For questions 1–8, choose the best answer (A, B or C). You will hear the recording twice.',
       questions: [
         {
           type: 'mcq',
           id: 'li-p1-q1',
           part: 9,
-          stimulusLabel: 'Extract 1 — You hear a woman talking to a friend about a film she saw.',
-          text: 'What did she most enjoy about the film?',
+          stimulusLabel: 'Extract 1 — You hear a woman telling a friend about a camping holiday.',
+          text: 'What does the woman say about sleeping in a tent?',
           options: [
-            'A  The acting performances.',
-            'B  The visual effects.',
-            'C  The storyline.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'li-p1-q2',
-          part: 9,
-          text: 'Extract 2 — You hear a man talking on the radio about his new book. Why did he write it?',
-          options: [
-            'A  To share his personal experience of illness.',
-            'B  To help others going through similar difficulties.',
-            'C  To explain a scientific discovery.',
+            'A  She found it less comfortable than expected.',
+            'B  She was surprised by how relaxing she found it.',
+            'C  She was disappointed with the sleeping arrangements.',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
+          id: 'li-p1-q2',
+          part: 9,
+          stimulusLabel: 'Extract 2 — You hear a man and his daughter talking about her plans for next summer.',
+          text: 'What does the father want his daughter to do?',
+          options: [
+            'A  Earn some money.',
+            'B  Do voluntary work.',
+            'C  Travel to another country.',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
           id: 'li-p1-q3',
           part: 9,
-          text: 'Extract 3 — You hear two colleagues discussing a project deadline. What do they agree to do?',
+          stimulusLabel: 'Extract 3 — You hear two college students talking about a history assignment.',
+          text: 'What do they agree to do?',
           options: [
-            'A  Ask for more time from the client.',
-            'B  Work extra hours this week.',
-            'C  Reduce the scope of the project.',
+            'A  Divide the research between them.',
+            'B  Work on it together.',
+            'C  Ask for the deadline to be extended.',
           ],
           answer: 1,
         },
@@ -601,35 +605,38 @@ const mock: MockExam = {
           type: 'mcq',
           id: 'li-p1-q4',
           part: 9,
-          text: 'Extract 4 — You hear a woman describing a holiday. What was the problem she experienced?',
+          stimulusLabel: 'Extract 4 — You hear a woman describing a running race she took part in.',
+          text: 'How did she feel when she crossed the finish line?',
           options: [
-            'A  The hotel was overbooked.',
-            'B  The weather was poor.',
-            'C  Her luggage was lost.',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'li-p1-q5',
-          part: 9,
-          text: 'Extract 5 — You hear a teacher talking to his students about an assignment. What does he want them to do differently?',
-          options: [
-            'A  Include more personal opinions.',
-            'B  Use more academic sources.',
-            'C  Write a longer introduction.',
+            'A  Relieved that she had managed to finish.',
+            'B  Proud of her personal achievement.',
+            'C  Disappointed by her finishing position.',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
+          id: 'li-p1-q5',
+          part: 9,
+          stimulusLabel: 'Extract 5 — You hear a man and a woman talking about a new restaurant.',
+          text: 'What do they agree about?',
+          options: [
+            'A  The menu was limited.',
+            'B  The prices were too high.',
+            'C  The food was excellent.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
           id: 'li-p1-q6',
           part: 9,
-          text: 'Extract 6 — You hear a woman talking about starting a new job. How does she feel?',
+          stimulusLabel: 'Extract 6 — You hear two friends talking about a film they have seen.',
+          text: 'What does the man say about the film?',
           options: [
-            'A  Nervous about making mistakes.',
-            'B  Excited about the opportunity.',
-            'C  Overwhelmed by the workload.',
+            'A  It was longer than he expected.',
+            'B  It was better than the reviews suggested.',
+            'C  It was the best film he had seen that year.',
           ],
           answer: 1,
         },
@@ -637,11 +644,12 @@ const mock: MockExam = {
           type: 'mcq',
           id: 'li-p1-q7',
           part: 9,
-          text: 'Extract 7 — You hear two people discussing a documentary. What do they agree about?',
+          stimulusLabel: 'Extract 7 — You hear a woman talking on the radio about recycling.',
+          text: 'What is her advice to people who want to start recycling?',
           options: [
-            'A  It was too long.',
-            'B  The subject was more interesting than expected.',
-            'C  The presenter was not engaging.',
+            'A  Focus on one type of material at a time.',
+            'B  Find out what can be recycled in your area.',
+            'C  Start with items you use every day at home.',
           ],
           answer: 1,
         },
@@ -649,13 +657,203 @@ const mock: MockExam = {
           type: 'mcq',
           id: 'li-p1-q8',
           part: 9,
-          text: 'Extract 8 — You hear a man talking about learning a musical instrument. What does he recommend?',
+          stimulusLabel: 'Extract 8 — You hear a young man talking about his career as a chef.',
+          text: 'Why did he choose to become a chef?',
           options: [
-            'A  Taking regular lessons with a teacher.',
-            'B  Practising for short periods every day.',
-            'C  Learning with a friend.',
+            'A  A family member encouraged him.',
+            'B  He enjoyed cooking from an early age.',
+            'C  He wanted to work in a creative profession.',
+          ],
+          answer: 0,
+        },
+      ],
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // PAPER 3 — Listening · Part 2: Sentence Completion
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      part: 9,
+      title: 'Listening – Part 2: Sentence Completion',
+      skill: 'listening',
+      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
+      instructions:
+        'You will hear a radio interview with a woman called Sandra White who works as a historical researcher. For questions 9–18, complete the sentences with a word or short phrase.',
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'li-p2-q1',
+          part: 9,
+          qRange: [9, 18],
+          groupLabel: 'Complete each sentence with a word or short phrase from the recording.',
+          title: 'Sandra White – Historical Researcher',
+          template:
+            '(9) Sandra first became interested in history when she visited a {{9}} as a child.\n(10) She studied history at {{10}} University.\n(11) Her first job involved researching old {{11}} for a museum.\n(12) She describes the work of a historical researcher as similar to being a {{12}}.\n(13) Sandra says that reading old {{13}} is the most challenging part of her work.\n(14) She recently completed a project about life in {{14}} century London.\n(15) Sandra uses a special computer programme to analyse {{15}} from historical documents.\n(16) Her book about the history of {{16}} took five years to write.\n(17) Sandra gives {{17}} to local schools to raise awareness of history.\n(18) She thinks the best quality a researcher needs is {{18}}.',
+          blanks: [
+            { num: 9,  answers: ['castle', 'museum', 'historical site'] },
+            { num: 10, answers: ['Bristol', 'London', 'Cambridge', 'Oxford'] },
+            { num: 11, answers: ['records', 'documents', 'maps'] },
+            { num: 12, answers: ['detective'] },
+            { num: 13, answers: ['handwriting', 'manuscripts', 'letters'] },
+            { num: 14, answers: ['17th', 'seventeenth', '18th', 'eighteenth', '19th', 'nineteenth'] },
+            { num: 15, answers: ['data', 'information', 'text'] },
+            { num: 16, answers: ['food', 'trade', 'medicine', 'transport'] },
+            { num: 17, answers: ['talks', 'presentations', 'visits'] },
+            { num: 18, answers: ['patience', 'curiosity', 'attention to detail'] },
+          ],
+        },
+      ],
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // PAPER 3 — Listening · Part 3: Multiple Matching
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      part: 9,
+      title: 'Listening – Part 3: Multiple Matching',
+      skill: 'listening',
+      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
+      instructions:
+        'You will hear five short extracts in which people are talking about a physical challenge they took part in. For questions 19–23, choose from the list (A–H) what each speaker says. Use each letter only once. There are three extra letters you do not need to use.',
+      questions: [
+        {
+          type: 'mcq',
+          id: 'li-p3-q19',
+          part: 9,
+          stimulusLabel: 'Options: A=I wanted to raise money for charity · B=I trained with a friend · C=I underestimated how hard it would be · D=I was inspired by someone I know · E=I found the mental challenge harder than the physical · F=I would not do it again · G=I want to do something harder next time · H=I did it to prove something to myself',
+          text: 'Speaker 1:',
+          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
+          answer: 3,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p3-q20',
+          part: 9,
+          text: 'Speaker 2:',
+          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p3-q21',
+          part: 9,
+          text: 'Speaker 3:',
+          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
+          answer: 4,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p3-q22',
+          part: 9,
+          text: 'Speaker 4:',
+          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
+          answer: 6,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p3-q23',
+          part: 9,
+          text: 'Speaker 5:',
+          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
+          answer: 7,
+        },
+      ],
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // PAPER 3 — Listening · Part 4: Multiple Choice – long extract
+    // ─────────────────────────────────────────────────────────────────────────
+    {
+      part: 9,
+      title: 'Listening – Part 4: Multiple Choice (long extract)',
+      skill: 'listening',
+      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
+      instructions:
+        'You will hear an interview with a man called Tom Briggs who set up a business selling handmade furniture. For questions 24–30, choose the best answer (A, B or C).',
+      questions: [
+        {
+          type: 'mcq',
+          id: 'li-p4-q24',
+          part: 9,
+          text: '(24) Why did Tom decide to start making furniture?',
+          options: [
+            'A  He had always been interested in woodwork.',
+            'B  He could not find what he wanted to buy.',
+            'C  A friend suggested it as a business idea.',
           ],
           answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p4-q25',
+          part: 9,
+          text: '(25) What does Tom say about his early training?',
+          options: [
+            'A  He learnt mainly by watching online videos.',
+            'B  He attended a course at a local college.',
+            'C  He was taught by an experienced craftsman.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p4-q26',
+          part: 9,
+          text: '(26) How did Tom find his first customers?',
+          options: [
+            'A  Through social media advertising.',
+            'B  By word of mouth.',
+            'C  At a craft fair.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p4-q27',
+          part: 9,
+          text: '(27) What was the biggest challenge Tom faced in the first year?',
+          options: [
+            'A  Finding reliable suppliers for materials.',
+            'B  Managing his time between making and selling.',
+            'C  Setting the right price for his products.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p4-q28',
+          part: 9,
+          text: '(28) What does Tom say about his workshop?',
+          options: [
+            'A  It is too small for his current needs.',
+            'B  He is proud of how he has set it up.',
+            'C  He shares it with another craftsperson.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p4-q29',
+          part: 9,
+          text: '(29) What is Tom\'s attitude towards expanding the business?',
+          options: [
+            'A  He is cautious about growing too quickly.',
+            'B  He is eager to take on more staff soon.',
+            'C  He is considering moving to larger premises.',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'li-p4-q30',
+          part: 9,
+          text: '(30) What advice does Tom give to people who want to start a similar business?',
+          options: [
+            'A  Start by selling at markets before opening a shop.',
+            'B  Make sure your product is genuinely different from others.',
+            'C  Focus on quality rather than producing large quantities.',
+          ],
+          answer: 2,
         },
       ],
     },
