@@ -604,6 +604,26 @@ export default function ClasesDeCoreanoPage() {
                 <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--muted)' }}>Pronunciación — Audio</div>
                 <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Escucha y repite. Ejercicios de pronunciación con audio nativo para entrenar el oído.</div>
               </div>
+
+              {/* Live Quiz — FREE */}
+              <Link
+                href="/practica/live/coreano-1"
+                style={{
+                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
+                  padding: '1.25rem', borderRadius: 14,
+                  border: '1.5px solid rgba(99,60,180,0.5)',
+                  background: 'rgba(99,60,180,0.08)',
+                  textDecoration: 'none', transition: 'border-color .2s',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🎬</span>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#7c3aed', background: 'rgba(99,60,180,0.15)', padding: '2px 8px', borderRadius: 100 }}>Live Quiz</span>
+                </div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Quiz en vivo — Set 1</div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Partículas, formalidad y vocabulario al estilo TOPIK. 8 preguntas con timer y votación en vivo. ¿Le atinas?</div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>⚡ 8 preguntas · Sin registro · Timer 30s</div>
+              </Link>
             </div>
           </div>
         </section>
