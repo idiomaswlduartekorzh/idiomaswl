@@ -345,6 +345,34 @@ export const EXAMS: Record<string, Exam> = {
     ],
     available: true,
   },
+  'cambridge-b2': {
+    slug: 'cambridge-b2',
+    name: 'Cambridge B2 First',
+    fullName: 'Cambridge B2 First (FCE) – First Certificate in English',
+    flag: '🇬🇧',
+    language: 'Inglés',
+    color: '#1d4ed8',
+    colorDark: '#1e3a8a',
+    tagline: 'La certificación más reconocida de inglés upper-intermediate en el mundo.',
+    description: 'El B2 First (antes FCE) es una certificación Cambridge válida de por vida, reconocida por más de 25,000 organizaciones en 130 países. Prueba las 4 habilidades más Use of English. Ideal para trabajo, estudio y migración.',
+    totalTime: '3h 29min',
+    totalQuestions: '84',
+    scoreRange: '140 – 190',
+    scoreName: 'Cambridge English Scale',
+    passing: 'Grade C (160+) para B2 · Grade A (180+) equivale a C1',
+    recognized: ['Universidades del Reino Unido, Irlanda y Australia', 'Más de 25,000 empleadores y gobiernos en 130 países', 'Visas de trabajo y estudio en países angloparlantes'],
+    levels: ['B1', 'B2', 'C1'],
+    sections: [
+      { name: 'Reading & Use of English', icon: '📖', time: '1h 15min', questions: 52, color: '#1d4ed8', types: ['Part 1: Multiple choice cloze (8 Qs)', 'Part 2: Open cloze (8 Qs)', 'Part 3: Word formation (8 Qs)', 'Part 4: Key word transformation (6 Qs)', 'Part 5: Multiple choice (6 Qs)', 'Part 6: Gapped text (6 Qs)', 'Part 7: Multiple matching (10 Qs)'] },
+      { name: 'Writing', icon: '✍️', time: '1h 20min', questions: 2, color: '#2563eb', types: ['Part 1: Essay (compulsory, 140–190 words)', 'Part 2: Article / Email / Letter / Report / Review (140–190 words)'] },
+      { name: 'Listening', icon: '🎧', time: '~40min', questions: 30, color: '#3b82f6', types: ['Part 1: Multiple choice – short extracts (8 Qs)', 'Part 2: Sentence completion (10 Qs)', 'Part 3: Multiple matching (5 Qs)', 'Part 4: Multiple choice – long extract (7 Qs)'] },
+      { name: 'Speaking', icon: '🎙️', time: '14–20min', questions: 4, color: '#60a5fa', types: ['Part 1: Interview (personal questions)', 'Part 2: Long turn (compare 2 photos, 1 min)', 'Part 3: Collaborative task (2-way discussion)', 'Part 4: Discussion (examiner-led follow-up)'] },
+    ],
+    mocks: [
+      { id: 'set-1', title: 'Cambridge B2 First – Practice Test 1', subtitle: 'Reading & Use of English · Writing · Listening · Speaking', free: true, parts: 7, questions: 52 },
+    ],
+    available: true,
+  },
 };
 
 export const EXAM_LIST = Object.values(EXAMS);

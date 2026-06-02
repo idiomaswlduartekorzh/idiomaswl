@@ -7,7 +7,7 @@ import TOEFLPracticeClient from './TOEFLPracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
 import TOPIKPracticeClient from './TOPIKPracticeClient';
 
-const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras']);
+const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
 export async function generateMetadata({ params }: { params: Promise<{ exam: string; mockId: string }> }) {
   const { exam: slug, mockId } = await params;
