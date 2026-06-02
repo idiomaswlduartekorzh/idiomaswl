@@ -270,12 +270,12 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
               onClick={() => setActiveTab('students')}
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'students' ? TEXT : 'transparent', color: activeTab === 'students' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
               <Users size={13} /> Estudiantes
-              {data.students.length > 0 && (
-                <span style={{ background: A, color: '#fff', borderRadius: 100, fontSize: 9, fontWeight: 800, padding: '1px 6px', marginLeft: 2 }}>
-                  {data.students.length}
-                </span>
-              )}
             </button>
+            <a
+              href="/dashboard/admin/live/create"
+              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: 'rgba(99,60,180,0.25)', color: '#a78bfa', fontSize: 12, fontWeight: 700, cursor: 'pointer', textDecoration: 'none', flexShrink: 0 }}>
+              🎬 Live Quiz
+            </a>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
