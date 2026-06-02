@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import { joinSession, submitAnswer } from '@/lib/actions/gameSessions'
-import AudioPlayer from './AudioPlayer'
+import { joinSession, submitAnswer, getParticipantScore } from '@/lib/actions/gameSessions'
+import AudioPlayer from '@/components/AudioPlayer'
 import type { LiveSet } from '@/data/live-sets/types'
 
 type SessionStatus = 'lobby' | 'question' | 'locked' | 'reveal' | 'finished'
@@ -17,8 +17,10 @@ const LEVEL_COLOR: Record<string, string> = {
   'TOPIK-I': '#0f3d8c', 'TOPIK-II': '#4338ca',
   'B2': '#7c3aed', 'C1': '#be185d',
 }
+// FIX: added audio-listen
 const TYPE_LABEL: Record<string, string> = {
-  choice: '어휘', formality: '격식체', particle: '조사', blank: '빈칸', 'korean-read': '한국어',
+  choice: '어휘', formality: '격식체', particle: '조사',
+  blank: '빈칸', 'korean-read': '한국어', 'audio-listen': '🔊 Audio',
 }
 
 export default function ParticipantClient({ session, set }: Props) {
@@ -32,23 +34,37 @@ export default function ParticipantClient({ session, set }: Props) {
   const [error, setError]             = useState('')
   const [selectedAnswer, setSelected] = useState<string | null>(null)
   const [answered, setAnswered]       = useState(false)
+  // FIX: score synced from server on mount/rejoin
   const [score, setScore]             = useState(0)
   const answeredSet = useRef<Set<number>>(new Set())
   const supabase = createClient()
 
+  // FIX: restore session from localStorage AND re-fetch real score
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY(session.code))
-    if (stored) { const { pid, n } = JSON.parse(stored); setPid(pid); setName(n || ''); setJoined(true) }
+    if (!stored) return
+    const { pid, n } = JSON.parse(stored)
+    setPid(pid); setName(n || ''); setJoined(true)
+    // Re-fetch authoritative score from server
+    getParticipantScore(pid).then(s => setScore(s)).catch(() => {})
   }, [session.code])
 
+  // Reset answer state per question
   useEffect(() => {
     if (!answeredSet.current.has(questionIndex)) { setSelected(null); setAnswered(false) }
   }, [questionIndex])
 
+  // Realtime session updates
   useEffect(() => {
     const ch = supabase.channel(`part_${session.id}`)
-      .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'game_sessions', filter: `id=eq.${session.id}` },
-        (p) => { const s = p.new as Session; setGameStatus(s.status); setQI(s.current_question_index) })
+      .on('postgres_changes', {
+        event: 'UPDATE', schema: 'public', table: 'game_sessions',
+        filter: `id=eq.${session.id}`,
+      }, (p) => {
+        const s = p.new as Session
+        setGameStatus(s.status)
+        setQI(s.current_question_index)
+      })
       .subscribe()
     return () => { supabase.removeChannel(ch) }
   }, [session.id]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -57,20 +73,22 @@ export default function ParticipantClient({ session, set }: Props) {
     if (!name.trim()) { setError('Escribe tu nombre'); return }
     setJoining(true); setError('')
     try {
-      const { participantId: pid } = await joinSession(session.code, name, whatsapp)
+      const { participantId: pid, score: s } = await joinSession(session.code, name, whatsapp)
       localStorage.setItem(STORAGE_KEY(session.code), JSON.stringify({ pid, n: name }))
-      setPid(pid); setJoined(true)
+      setPid(pid); setJoined(true); setScore(s)
     } catch (e: unknown) { setError(e instanceof Error ? e.message : 'Error al unirse') }
     finally { setJoining(false) }
   }
 
   const handleAnswer = async (answer: string) => {
     if (answered || !participantId || gameStatus !== 'question') return
+    // Optimistic UI
     setSelected(answer); setAnswered(true); answeredSet.current.add(questionIndex)
-    const q = set.questions[questionIndex]
-    const ok = answer === q.correct
-    if (ok) setScore(s => s + 1)
-    try { await submitAnswer(session.id, participantId, questionIndex, answer, ok) } catch { /**/ }
+    try {
+      // FIX: correctness derived server-side, not trusted from client
+      const { isCorrect } = await submitAnswer(session.id, participantId, questionIndex, answer)
+      if (isCorrect) setScore(s => s + 1)
+    } catch { /**/ }
   }
 
   const question = set.questions[questionIndex]
@@ -96,12 +114,9 @@ export default function ParticipantClient({ session, set }: Props) {
             <span style={{ fontFamily: 'var(--mono)', fontSize: 18, fontWeight: 800, color: 'var(--accent)', letterSpacing: '0.12em' }}>{session.code}</span>
           </div>
         </div>
-
         <div style={{ display: 'flex', flexDirection: 'column', gap: 14, width: '100%' }}>
           <div>
-            <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-              Tu nombre *
-            </label>
+            <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Tu nombre *</label>
             <input type="text" value={name} onChange={e => setName(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && handleJoin()} placeholder="Juan Pérez"
               style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid var(--line-soft)', background: 'var(--bg-2)', color: 'var(--ink)', fontSize: 15, outline: 'none', boxSizing: 'border-box' }} />
@@ -114,11 +129,9 @@ export default function ParticipantClient({ session, set }: Props) {
               onKeyDown={e => e.key === 'Enter' && handleJoin()} placeholder="+57 300 000 0000"
               style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid var(--line-soft)', background: 'var(--bg-2)', color: 'var(--ink)', fontSize: 15, outline: 'none', boxSizing: 'border-box' }} />
           </div>
-
           {error && <p style={{ color: 'var(--accent)', fontSize: 13, margin: 0 }}>{error}</p>}
-
           <button onClick={handleJoin} disabled={joining}
-            style={{ padding: '12px', borderRadius: 10, border: 'none', background: 'var(--ink)', color: '#fff', fontSize: 15, fontWeight: 700, cursor: 'pointer', opacity: joining ? 0.6 : 1, transition: 'opacity 0.15s' }}>
+            style={{ padding: '12px', borderRadius: 10, border: 'none', background: 'var(--ink)', color: '#fff', fontSize: 15, fontWeight: 700, cursor: 'pointer', opacity: joining ? 0.6 : 1 }}>
             {joining ? 'Entrando...' : '✓ Entrar al quiz'}
           </button>
         </div>
@@ -140,7 +153,6 @@ export default function ParticipantClient({ session, set }: Props) {
           <p style={{ margin: '0 0 2px', fontSize: 11, fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Tu sesión</p>
           <p style={{ margin: 0, fontFamily: 'var(--mono)', fontSize: 24, fontWeight: 800, color: 'var(--accent)', letterSpacing: '0.15em' }}>{session.code}</p>
         </div>
-        <p style={{ marginTop: 16, color: 'var(--muted)', fontSize: 13 }}>Puntos acumulados: <strong style={{ color: 'var(--ink)' }}>{score}</strong></p>
       </div>
     </div>
   )
@@ -155,9 +167,8 @@ export default function ParticipantClient({ session, set }: Props) {
           <div style={{ fontSize: 52, marginBottom: 8 }}>🏆</div>
           <h2 style={{ margin: '0 0 4px', fontSize: 26, fontWeight: 800, color: 'var(--ink)' }}>¡Terminaste!</h2>
           <p style={{ margin: '0 0 20px', color: 'var(--muted)' }}>{set.title}</p>
-
           <div style={{ background: 'var(--bg-2)', borderRadius: 12, padding: '20px 28px', border: '1px solid var(--line-soft)', width: '100%', boxSizing: 'border-box', marginBottom: 16 }}>
-            <p style={{ margin: '0 0 4px', fontSize: 11, fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Tu puntaje</p>
+            <p style={{ margin: '0 0 4px', fontSize: 11, fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Tu puntaje final</p>
             <p style={{ margin: 0, fontSize: 52, fontWeight: 800, color: 'var(--ink)', lineHeight: 1 }}>
               {score}<span style={{ fontSize: 20, color: 'var(--muted)', fontWeight: 400 }}>/{total}</span>
             </p>
@@ -165,7 +176,6 @@ export default function ParticipantClient({ session, set }: Props) {
               {pct >= 70 ? '🔥 Nivel TOPIK-I — ¡Excelente!' : pct >= 40 ? '📚 Buen avance — sigue practicando' : '💪 Empieza por los fundamentos'}
             </p>
           </div>
-
           <a href="/clases-de-coreano" style={{ display: 'block', width: '100%', padding: '12px', borderRadius: 10, background: 'var(--ink)', color: '#fff', textAlign: 'center', textDecoration: 'none', fontWeight: 700, fontSize: 15, boxSizing: 'border-box' }}>
             Ver clases de coreano →
           </a>
@@ -179,12 +189,11 @@ export default function ParticipantClient({ session, set }: Props) {
 
   return (
     <div className="prac-shell">
-      {/* Topbar */}
       <div className="prac-topbar">
         <div className="prac-topbar__left">
           <span className="prac-topbar__title">{set.titleKo}</span>
         </div>
-        <div className="prac-topbar__right" style={{ display: 'flex', alignItems: 'center', gap: 16, flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexShrink: 0 }}>
           <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
             {questionIndex + 1}/{set.questions.length}
           </span>
@@ -195,17 +204,13 @@ export default function ParticipantClient({ session, set }: Props) {
         </div>
       </div>
 
-      {/* Content */}
       <div style={{ maxWidth: 560, margin: '0 auto', padding: '1.5rem 1rem' }}>
-
-        {/* Status notice */}
         {gameStatus === 'locked' && !answered && (
           <div style={{ background: 'rgba(217,119,6,0.1)', border: '1px solid rgba(217,119,6,0.3)', borderRadius: 10, padding: '10px 14px', marginBottom: 16, textAlign: 'center' }}>
             <p style={{ margin: 0, color: '#d97706', fontWeight: 600, fontSize: 14 }}>⏸ Tiempo agotado — sin respuesta</p>
           </div>
         )}
 
-        {/* Question card */}
         <div className="prac-question">
           <div className="prac-question__header">
             <span className="prac-question__num">Pregunta {questionIndex + 1}</span>
@@ -214,7 +219,7 @@ export default function ParticipantClient({ session, set }: Props) {
                 {question.level}
               </span>
               <span style={{ fontSize: 10, fontWeight: 600, padding: '2px 8px', borderRadius: 100, color: 'var(--muted)', background: 'var(--bg-2)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                {TYPE_LABEL[question.type]}
+                {TYPE_LABEL[question.type] ?? question.type}
               </span>
             </div>
           </div>
@@ -228,7 +233,6 @@ export default function ParticipantClient({ session, set }: Props) {
 
           <p className="prac-question__text">{question.prompt}</p>
 
-          {/* Audio player — only for audio-listen questions */}
           {question.type === 'audio-listen' && question.audioText && (
             <div style={{ marginBottom: 16 }}>
               <AudioPlayer
@@ -240,7 +244,6 @@ export default function ParticipantClient({ session, set }: Props) {
             </div>
           )}
 
-          {/* Options */}
           <div className="prac-options">
             {ids.map(id => {
               const opt = question.options.find(o => o.id === id)
@@ -271,15 +274,14 @@ export default function ParticipantClient({ session, set }: Props) {
                   <span className="prac-option__letter" style={letterStyle}>
                     {isRevealed && isCorrect ? '✓' : id}
                   </span>
-                  <span className="prac-option__text">
-                    {opt.text}
-                    {/* Romanization — always shown for non-audio, shown after reveal for audio */}
-                    {opt.romanization && (question.type !== 'audio-listen' || isRevealed) && (
-                      <span style={{ marginLeft: 8, fontSize: '0.82rem', color: 'var(--muted)' }}>{opt.romanization}</span>
-                    )}
-                    {/* Meaning revealed after answer for audio questions */}
+                  <span className="prac-option__text" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <span>{opt.text}
+                      {opt.romanization && (question.type !== 'audio-listen' || isRevealed) && (
+                        <span style={{ marginLeft: 8, fontSize: '0.82rem', color: 'var(--muted)' }}>{opt.romanization}</span>
+                      )}
+                    </span>
                     {opt.meaning && isRevealed && question.type === 'audio-listen' && (
-                      <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--muted)', marginTop: 2 }}>{opt.meaning}</span>
+                      <span style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: 2 }}>{opt.meaning}</span>
                     )}
                   </span>
                 </button>
@@ -287,7 +289,6 @@ export default function ParticipantClient({ session, set }: Props) {
             })}
           </div>
 
-          {/* Feedback */}
           {answered && !isRevealed && (
             <div style={{ background: 'rgba(15,61,140,0.07)', border: '1px solid rgba(15,61,140,0.2)', borderRadius: 10, padding: '10px 14px', textAlign: 'center' }}>
               <p style={{ margin: 0, color: '#0f3d8c', fontWeight: 600, fontSize: 14 }}>✓ Respuesta enviada — espera que David revele</p>
@@ -301,7 +302,7 @@ export default function ParticipantClient({ session, set }: Props) {
               border: `1px solid ${selectedAnswer === question.correct ? 'rgba(5,150,105,0.3)' : 'rgba(200,32,46,0.2)'}`,
             }}>
               {selectedAnswer === question.correct ? (
-                <><p style={{ margin: '0 0 2px', fontSize: 18, fontWeight: 800, color: '#059669' }}>🎉 ¡Correcto! +1 punto</p></>
+                <p style={{ margin: 0, fontSize: 18, fontWeight: 800, color: '#059669' }}>🎉 ¡Correcto! +1 punto</p>
               ) : (
                 <>
                   <p style={{ margin: '0 0 4px', fontSize: 16, fontWeight: 700, color: 'var(--accent)' }}>✗ Incorrecto</p>

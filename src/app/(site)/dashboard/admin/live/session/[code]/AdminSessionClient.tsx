@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { updateSessionStatus } from '@/lib/actions/gameSessions'
+import AudioPlayer from '@/components/AudioPlayer'
 import type { LiveSet } from '@/data/live-sets/types'
 
 type SessionStatus = 'lobby' | 'question' | 'locked' | 'reveal' | 'finished'
@@ -10,8 +11,10 @@ interface Session { id: string; code: string; set_id: string; status: SessionSta
 interface Participant { id: string; name: string; whatsapp: string | null; score: number; joined_at: string }
 interface Answer { participant_id: string; question_index: number; answer: string; is_correct: boolean; answered_at: string }
 
+// FIX: added audio-listen
 const TYPE_LABEL: Record<string, string> = {
-  choice:'어휘', formality:'격식체', particle:'조사', blank:'빈칸', 'korean-read':'한국어',
+  choice:'어휘', formality:'격식체', particle:'조사',
+  blank:'빈칸', 'korean-read':'한국어', 'audio-listen':'🔊 Audio',
 }
 const LEVEL_COLOR: Record<string, string> = {
   'A1':'#059669','A2':'#059669','TOPIK-I':'#0f3d8c','TOPIK-II':'#4338ca','B2':'#7c3aed','C1':'#be185d',
@@ -131,7 +134,8 @@ export default function AdminSessionClient({ session: init, set, initialParticip
               </button>
             )}
             <div style={{ marginLeft:'auto', display:'flex', gap:10 }}>
-              {[0,1,2,3,4,5,6,7].slice(0,set.questions.length).map(i => (
+              {/* FIX: nav dots now dynamic, not hardcoded to 8 */}
+              {Array.from({ length: set.questions.length }, (_, i) => i).map(i => (
                 <div key={i} style={{
                   width:24, height:24, borderRadius:6, display:'flex', alignItems:'center', justifyContent:'center',
                   fontSize:10, fontWeight:700, background: i === qIndex ? 'var(--accent)' : 'var(--bg-2)',
@@ -163,6 +167,18 @@ export default function AdminSessionClient({ session: init, set, initialParticip
                 </div>
               )}
               <p className="prac-question__text">{question.prompt}</p>
+
+              {/* FIX: admin audio player for audio-listen questions */}
+              {question.type === 'audio-listen' && question.audioText && (
+                <div style={{ marginBottom: 12 }}>
+                  <AudioPlayer
+                    text={question.audioText}
+                    rate={question.audioRate ?? 0.85}
+                    autoPlay={false}
+                    maxPlays={10}
+                  />
+                </div>
+              )}
 
               {/* Options with vote bars */}
               <div className="prac-options">
