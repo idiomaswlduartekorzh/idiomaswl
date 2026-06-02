@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import Link from 'next/link';
+import { saveExamResult } from '@/lib/actions/saveExamResult';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam,
@@ -412,10 +413,11 @@ function SectionView({
 
 // ── Results ───────────────────────────────────────────────────────────────────
 
-function ResultsView({ mock, exam, mcqAnswers, onRetry }: {
+function ResultsView({ mock, exam, mcqAnswers, writeAnswers, onRetry }: {
   mock: MockExam;
   exam: Exam;
   mcqAnswers: Record<string, number>;
+  writeAnswers: Record<string, string>;
   onRetry: () => void;
 }) {
   const mcqSections = mock.sections.map(sec => {
@@ -427,6 +429,12 @@ function ResultsView({ mock, exam, mcqAnswers, onRetry }: {
   const totalCorrect = mcqSections.reduce((a, s) => a + s.correct, 0);
   const totalQ = mcqSections.reduce((a, s) => a + s.total, 0);
   const score = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
+
+  // Collect all write questions across all sections
+  const writeQuestions = mock.sections.flatMap(sec =>
+    sec.questions.filter(q => q.type === 'write') as WriteQuestion[]
+  );
+  const writtenResponses = writeQuestions.filter(q => writeAnswers[q.id]?.trim());
 
   return (
     <div className="prac-results">
@@ -456,9 +464,34 @@ function ResultsView({ mock, exam, mcqAnswers, onRetry }: {
         </div>
       )}
 
-      <div className="prac-results__note" style={{ padding: '1rem', background: '#f8f9fa', borderRadius: 8, margin: '1.5rem 0' }}>
-        <p style={{ margin: 0, color: '#555', fontSize: '0.9rem' }}>
-          Las secciones de escritura y expresión oral requieren evaluación por un examinador humano y no se puntúan automáticamente.
+      {/* Writing responses — shown to student for self-review */}
+      {writtenResponses.length > 0 && (
+        <div style={{ margin: '1.5rem 0' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem' }}>
+            ✍️ Tus respuestas escritas
+          </h3>
+          <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem' }}>
+            Estas respuestas han sido enviadas a tu profesor para corrección. Recibirás feedback personalizado.
+          </p>
+          {writtenResponses.map(q => (
+            <div key={q.id} style={{ marginBottom: '1.25rem', background: '#f8f9fa', borderRadius: 10, padding: '1rem', border: '1px solid #e5e7eb' }}>
+              <p style={{ margin: '0 0 0.5rem', fontSize: '0.8rem', fontWeight: 700, color: '#555', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                {q.stimulusLabel ?? `Tarea ${q.taskNumber ?? ''}`}
+              </p>
+              <div style={{ fontSize: '0.9rem', color: '#222', whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
+                {writeAnswers[q.id]}
+              </div>
+              <p style={{ margin: '0.5rem 0 0', fontSize: '0.78rem', color: '#888' }}>
+                {writeAnswers[q.id].trim().split(/\s+/).length} palabras
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div className="prac-results__note" style={{ padding: '1rem', background: '#fff7ed', borderRadius: 8, margin: '1rem 0', border: '1px solid #fed7aa' }}>
+        <p style={{ margin: 0, color: '#9a3412', fontSize: '0.88rem', fontWeight: 600 }}>
+          📬 Tus respuestas escritas y de expresión oral han sido enviadas a tu profesor para revisión. Pronto recibirás feedback.
         </p>
       </div>
 
@@ -519,10 +552,55 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     setPhase('intro');
   }, []);
 
+  // Save to Supabase when entering results phase
+  useEffect(() => {
+    if (phase !== 'results') return;
+
+    const mcqSections = mock.sections.map(sec => {
+      const qs = sec.questions.filter(q => q.type === 'mcq' || q.type === 'dialog') as MCQQuestion[];
+      const correct = qs.filter(q => mcqAnswers[q.id] === q.answer).length;
+      return { title: sec.title, skill: sec.skill ?? '', correct, total: qs.length };
+    }).filter(s => s.total > 0);
+
+    const totalCorrect = mcqSections.reduce((a, s) => a + s.correct, 0);
+    const totalQ = mcqSections.reduce((a, s) => a + s.total, 0);
+    const score = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
+
+    // Collect write answers keyed by task label
+    const writeQuestions = mock.sections.flatMap(sec =>
+      sec.questions.filter(q => q.type === 'write') as WriteQuestion[]
+    );
+    const task1 = writeQuestions.find(q => q.taskNumber === 1);
+    const task2 = writeQuestions.find(q => q.taskNumber === 2);
+
+    saveExamResult(
+      {
+        examSlug: exam.slug,
+        examName: exam.name,
+        mockTitle: mock.title,
+        totalScore: score,
+        totalMax: 100,
+        totalLabel: `${totalCorrect}/${totalQ} preguntas objetivas correctas`,
+        skills: mcqSections.map(s => ({
+          name: s.title,
+          skill: s.skill,
+          score: s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0,
+          max: 100,
+          label: `${s.correct}/${s.total}`,
+        })),
+      },
+      {
+        writing_task1_answer: task1 ? (writeAnswers[task1.id] ?? undefined) : undefined,
+        writing_task2_answer: task2 ? (writeAnswers[task2.id] ?? undefined) : undefined,
+      }
+    ).catch(() => {/* silent — don't block UI */});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase]);
+
   if (phase === 'results') {
     return (
       <div className="prac-shell">
-        <ResultsView mock={mock} exam={exam} mcqAnswers={mcqAnswers} onRetry={handleRetry} />
+        <ResultsView mock={mock} exam={exam} mcqAnswers={mcqAnswers} writeAnswers={writeAnswers} onRetry={handleRetry} />
       </div>
     );
   }

@@ -90,9 +90,8 @@ export default async function JoseDashboardServer() {
     .sort((a, b) => b.count - a.count)
     .slice(0, 5)
 
-  // IELTS submissions pending writing/speaking review
+  // All exams with written/speaking responses pending review
   const pendingIelts = rows.filter(r =>
-    r.exam_slug === 'ielts' &&
     (r.writing_band == null || r.speaking_band == null) &&
     (r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers)
   )

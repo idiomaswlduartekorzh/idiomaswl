@@ -110,7 +110,7 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
         <ClipboardCheck size={16} color={A} />
         <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: A }}>
-          IELTS — Pendientes de corrección ({pending.length})
+          Correcciones pendientes — todos los exámenes ({pending.length})
         </h3>
       </div>
 
@@ -133,7 +133,7 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
                   {item.user_name ?? item.user_email ?? 'Anónimo'}
                 </p>
                 <p style={{ margin: 0, fontSize: 11, color: MUTED }}>
-                  {item.mock_title} · {formatDate(item.created_at)}
+                  {item.exam_name} · {item.mock_title} · {formatDate(item.created_at)}
                 </p>
               </button>
             ))}
