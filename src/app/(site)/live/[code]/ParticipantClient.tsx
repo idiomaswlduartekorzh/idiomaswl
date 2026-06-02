@@ -6,212 +6,166 @@ import { joinSession, submitAnswer } from '@/lib/actions/gameSessions'
 import type { LiveSet } from '@/data/live-sets/types'
 
 type SessionStatus = 'lobby' | 'question' | 'locked' | 'reveal' | 'finished'
-
-interface Session {
-  id: string
-  code: string
-  set_id: string
-  status: SessionStatus
-  current_question_index: number
-}
-
-interface Props {
-  session: Session
-  set: LiveSet
-}
+interface Session { id: string; code: string; set_id: string; status: SessionStatus; current_question_index: number }
+interface Props { session: Session; set: LiveSet }
 
 const STORAGE_KEY = (code: string) => `wl_participant_${code}`
 
+const LEVEL_COLOR: Record<string, string> = {
+  'A1': '#059669', 'A2': '#059669',
+  'TOPIK-I': '#0f3d8c', 'TOPIK-II': '#4338ca',
+  'B2': '#7c3aed', 'C1': '#be185d',
+}
+const TYPE_LABEL: Record<string, string> = {
+  choice: '어휘', formality: '격식체', particle: '조사', blank: '빈칸', 'korean-read': '한국어',
+}
+
 export default function ParticipantClient({ session, set }: Props) {
-  const [gameStatus, setGameStatus] = useState<SessionStatus>(session.status as SessionStatus)
-  const [questionIndex, setQuestionIndex] = useState(session.current_question_index)
-  const [participantId, setParticipantId] = useState<string | null>(null)
-  const [sessionId] = useState(session.id)
-  const [joined, setJoined] = useState(false)
-  const [name, setName] = useState('')
-  const [whatsapp, setWhatsapp] = useState('')
-  const [joining, setJoining] = useState(false)
-  const [error, setError] = useState('')
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
-  const [answered, setAnswered] = useState(false)
-  const [score, setScore] = useState(0)
-  // track which questions were answered to reset per question
-  const answeredQuestions = useRef<Set<number>>(new Set())
+  const [gameStatus, setGameStatus]   = useState<SessionStatus>(session.status)
+  const [questionIndex, setQI]        = useState(session.current_question_index)
+  const [participantId, setPid]       = useState<string | null>(null)
+  const [joined, setJoined]           = useState(false)
+  const [name, setName]               = useState('')
+  const [whatsapp, setWhatsapp]       = useState('')
+  const [joining, setJoining]         = useState(false)
+  const [error, setError]             = useState('')
+  const [selectedAnswer, setSelected] = useState<string | null>(null)
+  const [answered, setAnswered]       = useState(false)
+  const [score, setScore]             = useState(0)
+  const answeredSet = useRef<Set<number>>(new Set())
   const supabase = createClient()
 
-  // Restore participant from localStorage
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY(session.code))
-    if (stored) {
-      const { pid } = JSON.parse(stored)
-      setParticipantId(pid)
-      setJoined(true)
-    }
+    if (stored) { const { pid, n } = JSON.parse(stored); setPid(pid); setName(n || ''); setJoined(true) }
   }, [session.code])
 
-  // Reset answer state when question changes
   useEffect(() => {
-    if (!answeredQuestions.current.has(questionIndex)) {
-      setSelectedAnswer(null)
-      setAnswered(false)
-    }
+    if (!answeredSet.current.has(questionIndex)) { setSelected(null); setAnswered(false) }
   }, [questionIndex])
 
-  // Supabase Realtime — subscribe to session changes
   useEffect(() => {
-    const channel = supabase
-      .channel(`session_${session.id}`)
-      .on(
-        'postgres_changes',
-        {
-          event: 'UPDATE',
-          schema: 'public',
-          table: 'game_sessions',
-          filter: `id=eq.${session.id}`,
-        },
-        (payload) => {
-          const updated = payload.new as Session
-          setGameStatus(updated.status as SessionStatus)
-          setQuestionIndex(updated.current_question_index)
-        }
-      )
+    const ch = supabase.channel(`part_${session.id}`)
+      .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'game_sessions', filter: `id=eq.${session.id}` },
+        (p) => { const s = p.new as Session; setGameStatus(s.status); setQI(s.current_question_index) })
       .subscribe()
-
-    return () => { supabase.removeChannel(channel) }
+    return () => { supabase.removeChannel(ch) }
   }, [session.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleJoin = async () => {
     if (!name.trim()) { setError('Escribe tu nombre'); return }
-    setJoining(true)
-    setError('')
+    setJoining(true); setError('')
     try {
       const { participantId: pid } = await joinSession(session.code, name, whatsapp)
-      localStorage.setItem(STORAGE_KEY(session.code), JSON.stringify({ pid, name }))
-      setParticipantId(pid)
-      setJoined(true)
-    } catch (e: unknown) {
-      setError(e instanceof Error ? e.message : 'Error al unirse')
-    } finally {
-      setJoining(false)
-    }
+      localStorage.setItem(STORAGE_KEY(session.code), JSON.stringify({ pid, n: name }))
+      setPid(pid); setJoined(true)
+    } catch (e: unknown) { setError(e instanceof Error ? e.message : 'Error al unirse') }
+    finally { setJoining(false) }
   }
 
   const handleAnswer = async (answer: string) => {
     if (answered || !participantId || gameStatus !== 'question') return
-    setSelectedAnswer(answer)
-    setAnswered(true)
-    answeredQuestions.current.add(questionIndex)
-
-    const question = set.questions[questionIndex]
-    const isCorrect = answer === question.correct
-
-    if (isCorrect) setScore(s => s + 1)
-
-    try {
-      await submitAnswer(sessionId, participantId, questionIndex, answer, isCorrect)
-    } catch { /* silent */ }
+    setSelected(answer); setAnswered(true); answeredSet.current.add(questionIndex)
+    const q = set.questions[questionIndex]
+    const ok = answer === q.correct
+    if (ok) setScore(s => s + 1)
+    try { await submitAnswer(session.id, participantId, questionIndex, answer, ok) } catch { /**/ }
   }
 
   const question = set.questions[questionIndex]
-  const ids: ('A' | 'B' | 'C' | 'D')[] = ['A', 'B', 'C', 'D']
+  const ids: ('A'|'B'|'C'|'D')[] = ['A','B','C','D']
+  const isRevealed = gameStatus === 'reveal'
 
-  // ── Join screen ──
-  if (!joined) {
-    return (
-      <div className="min-h-screen bg-[#08080f] text-white flex flex-col items-center justify-center px-6 py-10"
-        style={{ fontFamily: 'system-ui, sans-serif' }}>
-        <div className="w-full max-w-sm space-y-6">
-          <div className="text-center">
-            <p className="text-white/40 text-sm tracking-widest uppercase mb-1">WeLearn Live</p>
-            <h1 className="text-3xl font-bold">코리아 퀴즈</h1>
-            <p className="text-white/50 mt-1">Sesión · {session.code}</p>
-          </div>
-
-          <div className="space-y-3">
-            <div>
-              <label className="text-sm text-white/50 mb-1 block">Tu nombre *</label>
-              <input
-                type="text"
-                value={name}
-                onChange={e => setName(e.target.value)}
-                onKeyDown={e => e.key === 'Enter' && handleJoin()}
-                placeholder="Juan Pérez"
-                className="w-full bg-white/8 border border-white/15 rounded-xl px-4 py-3 text-white placeholder:text-white/25 focus:outline-none focus:border-blue-500 text-base"
-              />
+  // ── Join ──────────────────────────────────────────────────────────────────
+  if (!joined) return (
+    <div className="prac-shell prac-shell--intro">
+      <div className="prac-intro" style={{ maxWidth: 440 }}>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+            <div style={{ width: 36, height: 36, borderRadius: 10, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span style={{ color: '#fff', fontSize: 18 }}>🎬</span>
             </div>
             <div>
-              <label className="text-sm text-white/50 mb-1 block">WhatsApp <span className="text-white/30">(para recibir tu reporte)</span></label>
-              <input
-                type="tel"
-                value={whatsapp}
-                onChange={e => setWhatsapp(e.target.value)}
-                onKeyDown={e => e.key === 'Enter' && handleJoin()}
-                placeholder="+57 300 000 0000"
-                className="w-full bg-white/8 border border-white/15 rounded-xl px-4 py-3 text-white placeholder:text-white/25 focus:outline-none focus:border-blue-500 text-base"
-              />
+              <p style={{ margin: 0, fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--muted)' }}>WeLearn Live</p>
+              <p style={{ margin: 0, fontWeight: 800, color: 'var(--ink)', fontSize: 15 }}>{set.titleKo}</p>
             </div>
+          </div>
+          <div style={{ background: 'var(--bg-2)', borderRadius: 10, padding: '8px 14px', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)' }}>SESIÓN</span>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: 18, fontWeight: 800, color: 'var(--accent)', letterSpacing: '0.12em' }}>{session.code}</span>
+          </div>
+        </div>
 
-            {error && <p className="text-red-400 text-sm">{error}</p>}
-
-            <button
-              onClick={handleJoin}
-              disabled={joining}
-              className="w-full py-4 bg-blue-600 hover:bg-blue-500 disabled:opacity-50 rounded-xl text-lg font-bold transition-colors cursor-pointer"
-            >
-              {joining ? 'Entrando...' : '✓ Entrar al quiz'}
-            </button>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14, width: '100%' }}>
+          <div>
+            <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              Tu nombre *
+            </label>
+            <input type="text" value={name} onChange={e => setName(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && handleJoin()} placeholder="Juan Pérez"
+              style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid var(--line-soft)', background: 'var(--bg-2)', color: 'var(--ink)', fontSize: 15, outline: 'none', boxSizing: 'border-box' }} />
+          </div>
+          <div>
+            <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--muted)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              WhatsApp <span style={{ fontWeight: 400, textTransform: 'none' }}>(recibe tu reporte)</span>
+            </label>
+            <input type="tel" value={whatsapp} onChange={e => setWhatsapp(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && handleJoin()} placeholder="+57 300 000 0000"
+              style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid var(--line-soft)', background: 'var(--bg-2)', color: 'var(--ink)', fontSize: 15, outline: 'none', boxSizing: 'border-box' }} />
           </div>
 
-          <p className="text-center text-white/25 text-xs">
-            Tu información es solo para enviarte el reporte.
-          </p>
-        </div>
-      </div>
-    )
-  }
+          {error && <p style={{ color: 'var(--accent)', fontSize: 13, margin: 0 }}>{error}</p>}
 
-  // ── Lobby (waiting for David to start) ──
-  if (gameStatus === 'lobby') {
-    return (
-      <div className="min-h-screen bg-[#08080f] text-white flex flex-col items-center justify-center px-6 text-center"
-        style={{ fontFamily: 'system-ui, sans-serif' }}>
-        <div className="space-y-6">
-          <div className="text-6xl animate-pulse">⏳</div>
-          <h2 className="text-2xl font-bold">¡Listo, {name || 'jugador'}!</h2>
-          <p className="text-white/50">Esperando que David inicie el quiz...</p>
-          <div className="bg-white/5 rounded-2xl px-8 py-4 inline-block">
-            <p className="text-white/40 text-sm">Tu sesión</p>
-            <p className="text-2xl font-bold tracking-widest text-blue-400">{session.code}</p>
-          </div>
-          <p className="text-white/30 text-sm">Puntos: {score}</p>
+          <button onClick={handleJoin} disabled={joining}
+            style={{ padding: '12px', borderRadius: 10, border: 'none', background: 'var(--ink)', color: '#fff', fontSize: 15, fontWeight: 700, cursor: 'pointer', opacity: joining ? 0.6 : 1, transition: 'opacity 0.15s' }}>
+            {joining ? 'Entrando...' : '✓ Entrar al quiz'}
+          </button>
         </div>
+        <p style={{ marginTop: 16, fontSize: 11, color: 'var(--muted)', textAlign: 'center', width: '100%' }}>
+          Tu información solo se usa para enviarte el reporte.
+        </p>
       </div>
-    )
-  }
+    </div>
+  )
 
-  // ── Finished ──
+  // ── Lobby ─────────────────────────────────────────────────────────────────
+  if (gameStatus === 'lobby') return (
+    <div className="prac-shell prac-shell--intro">
+      <div className="prac-intro" style={{ maxWidth: 420, alignItems: 'center', textAlign: 'center' }}>
+        <div style={{ fontSize: 48, marginBottom: 8 }}>⏳</div>
+        <h2 style={{ margin: '0 0 4px', fontSize: 22, fontWeight: 800, color: 'var(--ink)' }}>¡Listo, {name}!</h2>
+        <p style={{ margin: '0 0 20px', color: 'var(--muted)' }}>Esperando que David inicie el quiz...</p>
+        <div style={{ background: 'var(--bg-2)', borderRadius: 12, padding: '12px 28px', border: '1px solid var(--line-soft)' }}>
+          <p style={{ margin: '0 0 2px', fontSize: 11, fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Tu sesión</p>
+          <p style={{ margin: 0, fontFamily: 'var(--mono)', fontSize: 24, fontWeight: 800, color: 'var(--accent)', letterSpacing: '0.15em' }}>{session.code}</p>
+        </div>
+        <p style={{ marginTop: 16, color: 'var(--muted)', fontSize: 13 }}>Puntos acumulados: <strong style={{ color: 'var(--ink)' }}>{score}</strong></p>
+      </div>
+    </div>
+  )
+
+  // ── Finished ─────────────────────────────────────────────────────────────
   if (gameStatus === 'finished') {
     const total = set.questions.length
+    const pct = Math.round((score / total) * 100)
     return (
-      <div className="min-h-screen bg-[#08080f] text-white flex flex-col items-center justify-center px-6 text-center"
-        style={{ fontFamily: 'system-ui, sans-serif' }}>
-        <div className="space-y-6 max-w-sm">
-          <div className="text-6xl">🏆</div>
-          <h2 className="text-3xl font-bold">¡Terminaste!</h2>
-          <div className="bg-white/5 rounded-2xl p-6">
-            <p className="text-white/40 text-sm mb-1">Tu puntaje</p>
-            <p className="text-5xl font-bold text-blue-400">{score}<span className="text-xl text-white/30">/{total}</span></p>
+      <div className="prac-shell prac-shell--intro">
+        <div className="prac-intro" style={{ maxWidth: 420, alignItems: 'center', textAlign: 'center' }}>
+          <div style={{ fontSize: 52, marginBottom: 8 }}>🏆</div>
+          <h2 style={{ margin: '0 0 4px', fontSize: 26, fontWeight: 800, color: 'var(--ink)' }}>¡Terminaste!</h2>
+          <p style={{ margin: '0 0 20px', color: 'var(--muted)' }}>{set.title}</p>
+
+          <div style={{ background: 'var(--bg-2)', borderRadius: 12, padding: '20px 28px', border: '1px solid var(--line-soft)', width: '100%', boxSizing: 'border-box', marginBottom: 16 }}>
+            <p style={{ margin: '0 0 4px', fontSize: 11, fontFamily: 'var(--mono)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Tu puntaje</p>
+            <p style={{ margin: 0, fontSize: 52, fontWeight: 800, color: 'var(--ink)', lineHeight: 1 }}>
+              {score}<span style={{ fontSize: 20, color: 'var(--muted)', fontWeight: 400 }}>/{total}</span>
+            </p>
+            <p style={{ margin: '8px 0 0', fontSize: 13, color: pct >= 70 ? '#059669' : pct >= 40 ? '#d97706' : 'var(--muted)' }}>
+              {pct >= 70 ? '🔥 Nivel TOPIK-I — ¡Excelente!' : pct >= 40 ? '📚 Buen avance — sigue practicando' : '💪 Empieza por los fundamentos'}
+            </p>
           </div>
-          {score >= total * 0.7
-            ? <p className="text-emerald-400 font-semibold">🔥 Nivel TOPIK-I — ¡Excelente!</p>
-            : score >= total * 0.4
-            ? <p className="text-amber-400 font-semibold">📚 Buen avance — sigue practicando</p>
-            : <p className="text-white/60">Arranca desde los fundamentos 💪</p>
-          }
-          <a
-            href="/clases-de-coreano"
-            className="block w-full py-3 bg-blue-600 hover:bg-blue-500 rounded-xl font-semibold transition-colors"
-          >
+
+          <a href="/clases-de-coreano" style={{ display: 'block', width: '100%', padding: '12px', borderRadius: 10, background: 'var(--ink)', color: '#fff', textAlign: 'center', textDecoration: 'none', fontWeight: 700, fontSize: 15, boxSizing: 'border-box' }}>
             Ver clases de coreano →
           </a>
         </div>
@@ -219,124 +173,137 @@ export default function ParticipantClient({ session, set }: Props) {
     )
   }
 
-  // ── Active question ──
+  // ── Active question ───────────────────────────────────────────────────────
   if (!question) return null
 
-  const isRevealed = gameStatus === 'reveal'
-  const isLocked = gameStatus === 'locked'
-
   return (
-    <div className="min-h-screen bg-[#08080f] text-white flex flex-col"
-      style={{ fontFamily: 'system-ui, sans-serif' }}>
-
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-        <span className="text-sm text-white/40">{name}</span>
-        <span className="text-sm font-bold text-blue-400">⭐ {score} pts</span>
-        <span className="text-sm text-white/40">{questionIndex + 1}/{set.questions.length}</span>
+    <div className="prac-shell">
+      {/* Topbar */}
+      <div className="prac-topbar">
+        <div className="prac-topbar__left">
+          <span className="prac-topbar__title">{set.titleKo}</span>
+        </div>
+        <div className="prac-topbar__right" style={{ display: 'flex', alignItems: 'center', gap: 16, flexShrink: 0 }}>
+          <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+            {questionIndex + 1}/{set.questions.length}
+          </span>
+          <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 8, padding: '4px 10px', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <span style={{ color: '#fbbf24', fontSize: 13 }}>⭐</span>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: 14, fontWeight: 700, color: '#fff' }}>{score}</span>
+          </div>
+        </div>
       </div>
 
-      <div className="flex-1 flex flex-col px-4 py-6 max-w-lg mx-auto w-full space-y-5">
+      {/* Content */}
+      <div style={{ maxWidth: 560, margin: '0 auto', padding: '1.5rem 1rem' }}>
 
-        {/* Status bar */}
-        {isLocked && !answered && (
-          <div className="bg-amber-500/15 border border-amber-500/30 rounded-xl px-4 py-2 text-center">
-            <p className="text-amber-400 text-sm font-semibold">⏸ Tiempo agotado</p>
+        {/* Status notice */}
+        {gameStatus === 'locked' && !answered && (
+          <div style={{ background: 'rgba(217,119,6,0.1)', border: '1px solid rgba(217,119,6,0.3)', borderRadius: 10, padding: '10px 14px', marginBottom: 16, textAlign: 'center' }}>
+            <p style={{ margin: 0, color: '#d97706', fontWeight: 600, fontSize: 14 }}>⏸ Tiempo agotado — sin respuesta</p>
           </div>
         )}
 
-        {/* Context */}
-        {question.context && (
-          <p className="text-white/50 text-sm italic border-l-2 border-white/20 pl-3">
-            {question.context}
-          </p>
-        )}
+        {/* Question card */}
+        <div className="prac-question">
+          <div className="prac-question__header">
+            <span className="prac-question__num">Pregunta {questionIndex + 1}</span>
+            <div style={{ display: 'flex', gap: 6 }}>
+              <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 100, color: '#fff', background: LEVEL_COLOR[question.level] ?? '#6b7280', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                {question.level}
+              </span>
+              <span style={{ fontSize: 10, fontWeight: 600, padding: '2px 8px', borderRadius: 100, color: 'var(--muted)', background: 'var(--bg-2)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                {TYPE_LABEL[question.type]}
+              </span>
+            </div>
+          </div>
 
-        {/* Prompt */}
-        <div className="bg-white/5 rounded-2xl p-5">
-          <p className="text-xl font-semibold leading-snug">{question.prompt}</p>
+          {question.context && (
+            <div className="prac-stimulus">
+              <p className="prac-stimulus__label">Contexto</p>
+              <p className="prac-stimulus__text">{question.context}</p>
+            </div>
+          )}
+
+          <p className="prac-question__text">{question.prompt}</p>
+
+          {/* Options */}
+          <div className="prac-options">
+            {ids.map(id => {
+              const opt = question.options.find(o => o.id === id)
+              if (!opt) return null
+              const isSelected = selectedAnswer === id
+              const isCorrect = id === question.correct
+              const canSelect = !answered && gameStatus === 'question'
+
+              let extraClass = ''
+              let letterStyle: React.CSSProperties = {}
+              let borderStyle: React.CSSProperties = {}
+
+              if (isSelected && !isRevealed) { extraClass = 'prac-option--selected' }
+              if (isRevealed && isCorrect) {
+                borderStyle = { borderColor: '#059669', background: 'rgba(5,150,105,0.07)' }
+                letterStyle = { background: '#059669', color: '#fff' }
+              }
+              if (isRevealed && isSelected && !isCorrect) {
+                borderStyle = { borderColor: 'var(--accent)', background: 'rgba(200,32,46,0.06)' }
+              }
+
+              return (
+                <button key={id}
+                  onClick={() => canSelect && handleAnswer(id)}
+                  disabled={!canSelect}
+                  className={`prac-option ${extraClass}`}
+                  style={{ cursor: canSelect ? 'pointer' : 'default', ...borderStyle }}>
+                  <span className="prac-option__letter" style={letterStyle}>
+                    {isRevealed && isCorrect ? '✓' : id}
+                  </span>
+                  <span className="prac-option__text">
+                    {opt.text}
+                    {opt.romanization && (
+                      <span style={{ marginLeft: 8, fontSize: '0.82rem', color: 'var(--muted)' }}>{opt.romanization}</span>
+                    )}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+
+          {/* Feedback */}
+          {answered && !isRevealed && (
+            <div style={{ background: 'rgba(15,61,140,0.07)', border: '1px solid rgba(15,61,140,0.2)', borderRadius: 10, padding: '10px 14px', textAlign: 'center' }}>
+              <p style={{ margin: 0, color: '#0f3d8c', fontWeight: 600, fontSize: 14 }}>✓ Respuesta enviada — espera que David revele</p>
+            </div>
+          )}
+
+          {isRevealed && answered && (
+            <div style={{
+              borderRadius: 10, padding: '12px 16px', textAlign: 'center',
+              background: selectedAnswer === question.correct ? 'rgba(5,150,105,0.08)' : 'rgba(200,32,46,0.06)',
+              border: `1px solid ${selectedAnswer === question.correct ? 'rgba(5,150,105,0.3)' : 'rgba(200,32,46,0.2)'}`,
+            }}>
+              {selectedAnswer === question.correct ? (
+                <><p style={{ margin: '0 0 2px', fontSize: 18, fontWeight: 800, color: '#059669' }}>🎉 ¡Correcto! +1 punto</p></>
+              ) : (
+                <>
+                  <p style={{ margin: '0 0 4px', fontSize: 16, fontWeight: 700, color: 'var(--accent)' }}>✗ Incorrecto</p>
+                  <p style={{ margin: 0, fontSize: 13, color: 'var(--muted)' }}>
+                    Era: <strong style={{ color: 'var(--ink)' }}>{question.options.find(o => o.id === question.correct)?.text}</strong>
+                  </p>
+                </>
+              )}
+            </div>
+          )}
+
+          {isRevealed && !answered && (
+            <div style={{ background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 10, padding: '10px 14px', textAlign: 'center' }}>
+              <p style={{ margin: '0 0 2px', color: 'var(--muted)', fontSize: 14 }}>No respondiste a tiempo</p>
+              <p style={{ margin: 0, fontSize: 13, color: 'var(--muted)' }}>
+                Era: <strong style={{ color: 'var(--ink)' }}>{question.options.find(o => o.id === question.correct)?.text}</strong>
+              </p>
+            </div>
+          )}
         </div>
-
-        {/* Options */}
-        <div className="grid grid-cols-2 gap-3">
-          {ids.map(id => {
-            const opt = question.options.find(o => o.id === id)
-            if (!opt) return null
-
-            const isSelected = selectedAnswer === id
-            const isCorrect = id === question.correct
-            const canSelect = !answered && gameStatus === 'question'
-
-            let bg = 'bg-white/8 border-white/15'
-            if (isSelected && !isRevealed) bg = 'bg-blue-600/40 border-blue-500'
-            if (isRevealed && isCorrect) bg = 'bg-emerald-600/40 border-emerald-500'
-            if (isRevealed && isSelected && !isCorrect) bg = 'bg-red-600/30 border-red-500/50'
-
-            return (
-              <button
-                key={id}
-                onClick={() => canSelect && handleAnswer(id)}
-                disabled={!canSelect}
-                className={`
-                  relative flex flex-col items-center justify-center gap-1
-                  rounded-2xl border p-4 min-h-[90px]
-                  transition-all duration-200 text-center
-                  ${bg}
-                  ${canSelect ? 'cursor-pointer active:scale-95' : 'cursor-default'}
-                `}
-              >
-                <span className="text-xs text-white/40 font-bold">{id}</span>
-                <span className="text-base font-semibold leading-tight">{opt.text}</span>
-                {opt.romanization && (
-                  <span className="text-xs text-white/40">{opt.romanization}</span>
-                )}
-                {isRevealed && isCorrect && (
-                  <span className="absolute top-2 right-2 text-emerald-400 text-xs font-bold">✓</span>
-                )}
-              </button>
-            )
-          })}
-        </div>
-
-        {/* Answered confirmation */}
-        {answered && !isRevealed && (
-          <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl px-4 py-3 text-center">
-            <p className="text-blue-400 font-semibold">✓ Respuesta enviada</p>
-            <p className="text-white/40 text-sm">Espera que David revele...</p>
-          </div>
-        )}
-
-        {/* Reveal feedback */}
-        {isRevealed && answered && (
-          <div className={`rounded-xl px-4 py-4 text-center border ${
-            selectedAnswer === question.correct
-              ? 'bg-emerald-500/15 border-emerald-500/40'
-              : 'bg-red-500/10 border-red-500/30'
-          }`}>
-            {selectedAnswer === question.correct ? (
-              <>
-                <p className="text-2xl font-bold text-emerald-400">🎉 ¡Correcto!</p>
-                <p className="text-white/60 text-sm mt-1">+1 punto</p>
-              </>
-            ) : (
-              <>
-                <p className="text-xl font-bold text-red-400">✗ Incorrecto</p>
-                <p className="text-white/50 text-sm mt-1">
-                  Era: <span className="text-white font-semibold">{question.options.find(o => o.id === question.correct)?.text}</span>
-                </p>
-              </>
-            )}
-          </div>
-        )}
-
-        {isRevealed && !answered && (
-          <div className="bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-center">
-            <p className="text-white/50">No respondiste a tiempo</p>
-            <p className="text-white/30 text-sm">
-              Era: <span className="text-white font-medium">{question.options.find(o => o.id === question.correct)?.text}</span>
-            </p>
-          </div>
-        )}
       </div>
     </div>
   )
