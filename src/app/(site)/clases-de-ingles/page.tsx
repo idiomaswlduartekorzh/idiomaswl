@@ -13,16 +13,18 @@ const WA_IELTS   = wa('Hola, necesito preparación para el IELTS. ¿Cómo puedo 
 const WA_TOEFL   = wa('Hola, necesito preparación para el TOEFL iBT. ¿Cómo puedo agendar mi clase de diagnóstico gratis?');
 const WA_ICFES   = wa('Hola, necesito mejorar mi inglés para el ICFES Saber 11. ¿Cómo puedo agendar mi clase de diagnóstico gratis?');
 const WA_TRABAJO = wa('Hola, quiero mejorar mi inglés para trabajo o para comunicarme con fluidez. ¿Cómo funciona la clase de diagnóstico gratis?');
+const WA_FCE     = wa('Hola, necesito preparación para el Cambridge B2 First (FCE). ¿Cómo puedo agendar mi clase de diagnóstico gratis?');
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, ICFES | WeLearn',
+  title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, FCE, ICFES | WeLearn',
   description:
-    'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL e ICFES Saber 11. Profesor políglota en 8 idiomas. Clase de diagnóstico gratis.',
+    'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL, Cambridge B2 First (FCE) e ICFES Saber 11. Profesor políglota en 8 idiomas. Clase de diagnóstico gratis.',
   keywords: [
     'clases de inglés', 'inglés Bucaramanga', 'preparación IELTS Colombia',
     'preparación TOEFL Colombia', 'ICFES inglés Saber 11', 'aprender inglés online Colombia',
     'clases inglés online', 'IELTS Bucaramanga', 'TOEFL Bucaramanga',
+    'Cambridge B2 First Colombia', 'FCE preparación Colombia', 'FCE Bucaramanga',
     'inglés para trabajo', 'inglés para migrar',
   ],
   alternates: { canonical: 'https://idiomaswl.com/clases-de-ingles' },
@@ -41,7 +43,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Qué exámenes de inglés preparan en WeLearn?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Preparamos IELTS Academic y General, TOEFL iBT y ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
     },
     {
       '@type': 'Question',
@@ -82,7 +84,7 @@ const faqJsonLd = {
 };
 
 const FAQS = [
-  { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT y ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
+  { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
   { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'El Plan Preparación empieza en $180.000 COP/mes. El Plan Intensivo va de $280.000 a $480.000/mes según la frecuencia de clases. También vendemos paquetes de horas prepago (4, 10 y 20 horas) con mejor precio por hora — ideales si no quieres un plan mensual fijo. La clase de diagnóstico siempre es gratis.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Vendemos paquetes prepago de 4, 10 y 20 horas de clases en vivo. Entre más horas compras, menor es el precio por hora. Escríbenos por WhatsApp para conocer las opciones actuales y precios exactos.' },
   { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
@@ -184,6 +186,14 @@ const INTENTS = [
     desc: 'Para subir el puntaje en inglés de las pruebas de Estado. Estrategia específica para el componente de inglés del ICFES.',
     waUrl: WA_ICFES,
     simulacro: { label: 'Hacer simulacro ICFES gratis →', href: '/examenes/icfes' },
+  },
+  {
+    icon: '🎖️',
+    title: 'Cambridge B2 First (FCE)',
+    target: 'Grade B–C (160+) · Grade A (180+)',
+    desc: 'Certificación reconocida en más de 25,000 organizaciones en 130 países. Válida de por vida. Ideal para trabajo, postgrados y migración al Reino Unido o Australia.',
+    waUrl: WA_FCE,
+    simulacro: { label: 'Hacer simulacro FCE gratis →', href: '/examenes/cambridge-b2/practica/set-1' },
   },
   {
     icon: '💼',
