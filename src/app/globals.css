@@ -2012,8 +2012,34 @@ button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   margin-bottom: 1.8rem;
+}
+/* LanguagePracticeClient intro section items */
+.prac-intro__section-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--line-soft);
+  background: var(--surface);
+  font-size: 0.85rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+.prac-intro__section-num {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  min-width: 22px;
+}
+.prac-intro__section-sep {
+  color: var(--muted);
+  opacity: 0.5;
+  font-size: 0.75rem;
 }
 .prac-intro__section {
   display: flex;
@@ -3652,8 +3678,11 @@ button {
   z-index: 10;
 }
 .lang-section-tab {
-  padding: 0.5rem 0.9rem;
-  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   border: 1.5px solid var(--border);
   border-radius: 8px 8px 0 0;
@@ -3663,10 +3692,31 @@ button {
   transition: all 0.15s;
   white-space: nowrap;
 }
+.lang-section-tab:hover:not(.lang-section-tab--active) {
+  background: var(--bg-2);
+  color: var(--ink);
+}
 .lang-section-tab--active {
   background: var(--surface);
   color: var(--fg);
   border-bottom-color: var(--surface);
+}
+.lang-section-tab__num {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--bg-2);
+}
+.lang-section-tab--active .lang-section-tab__num {
+  background: rgba(0,0,0,0.06);
+  opacity: 0.9;
+}
+.lang-section-tab__label {
+  font-size: 0.78rem;
 }
 
 /* Section layout */

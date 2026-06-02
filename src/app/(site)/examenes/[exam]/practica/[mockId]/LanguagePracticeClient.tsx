@@ -111,10 +111,12 @@ function MCQRenderer({
           } else if (answer === i) {
             cls += ' lang-opt--selected';
           }
+          // Strip leading letter prefix added by some mock files (e.g. "A  role" → "role")
+          const optText = opt.replace(/^[A-H][\s.)\-]+/, '');
           return (
             <button key={i} onClick={() => !showResult && onAnswer(i)} className={cls}>
               <span className="lang-opt__letter">{String.fromCharCode(65 + i)}</span>
-              <span>{opt}</span>
+              <span>{optText}</span>
             </button>
           );
         })}
@@ -292,6 +294,45 @@ function SpeakRenderer({ q }: { q: SpeakQuestion }) {
   );
 }
 
+// ── Passage text: renders [WORD] as keyword badges ───────────────────────────
+
+function PassageText({ text }: { text: string }) {
+  // Split on [WORD] patterns and render them as styled badges
+  const parts = text.split(/(\[[A-Z-]+\])/g);
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (/^\[[A-Z-]+\]$/.test(part)) {
+          const word = part.slice(1, -1);
+          return (
+            <span
+              key={i}
+              style={{
+                display: 'inline-block',
+                fontFamily: 'var(--mono, monospace)',
+                fontSize: '0.72em',
+                fontWeight: 700,
+                letterSpacing: '0.06em',
+                color: '#1d4ed8',
+                background: '#eff6ff',
+                border: '1px solid #bfdbfe',
+                borderRadius: 4,
+                padding: '1px 6px',
+                margin: '0 2px',
+                verticalAlign: 'middle',
+                textTransform: 'uppercase',
+              }}
+            >
+              {word}
+            </span>
+          );
+        }
+        return <span key={i}>{part}</span>;
+      })}
+    </>
+  );
+}
+
 // ── Section view ──────────────────────────────────────────────────────────────
 
 function SectionView({
@@ -336,8 +377,10 @@ function SectionView({
 
       {section.passage && (
         <div className="lang-section__passage">
-          <p className="lang-section__passage-label">Texto</p>
-          <div className="lang-section__passage-text">{section.passage}</div>
+          <p className="lang-section__passage-label">📄 Read the text</p>
+          <div className="lang-section__passage-text">
+            <PassageText text={section.passage} />
+          </div>
         </div>
       )}
 
@@ -623,9 +666,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
             </div>
           </div>
           <div className="prac-intro__sections">
-            {mock.sections.map(s => (
-              <div key={s.part} className="prac-intro__section-item">
-                <span className="prac-intro__section-num">Parte {s.part}</span>
+            {mock.sections.map((s, i) => (
+              <div key={`${s.part}-${i}`} className="prac-intro__section-item">
+                <span className="prac-intro__section-num">{String(i + 1).padStart(2, '0')}</span>
+                <span className="prac-intro__section-sep">·</span>
                 <span>{s.title}</span>
               </div>
             ))}
@@ -645,16 +689,33 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     <div className="prac-shell">
       {/* Section tabs */}
       <div className="lang-section-tabs">
-        {mock.sections.map((s, i) => (
-          <button
-            key={s.part}
-            onClick={() => setSectionIdx(i)}
-            className={`lang-section-tab${i === sectionIdx ? ' lang-section-tab--active' : ''}`}
-            style={i === sectionIdx ? { borderColor: exam.color, color: exam.color } : {}}
-          >
-            {s.title.split('–')[0].trim()}
-          </button>
-        ))}
+        {mock.sections.map((s, i) => {
+          // Build a compact unique label: abbreviate skill group + part number
+          const base = s.title.split('–')[0].trim();
+          const partMatch = s.title.match(/Part\s+(\d+)/i);
+          const partSuffix = partMatch ? ` P${partMatch[1]}` : '';
+          const shortBase = base
+            .replace('Reading & Use of English', 'R&UoE')
+            .replace('Compréhension de l\'oral', 'CO')
+            .replace('Compréhension des écrits', 'CE')
+            .replace('Production écrite', 'PE')
+            .replace('Production orale', 'PO')
+            .replace('Listening', 'Listening')
+            .replace('Writing', 'Writing')
+            .replace('Speaking', 'Speaking');
+          const label = shortBase + (partSuffix && !shortBase.includes('P') ? partSuffix : '');
+          return (
+            <button
+              key={`tab-${i}`}
+              onClick={() => setSectionIdx(i)}
+              className={`lang-section-tab${i === sectionIdx ? ' lang-section-tab--active' : ''}`}
+              style={i === sectionIdx ? { borderColor: exam.color, color: exam.color } : {}}
+            >
+              <span className="lang-section-tab__num">{String(i + 1).padStart(2, '0')}</span>
+              <span className="lang-section-tab__label">{label}</span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Current section */}
