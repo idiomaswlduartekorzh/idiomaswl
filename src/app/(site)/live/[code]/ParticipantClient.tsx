@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { joinSession, submitAnswer } from '@/lib/actions/gameSessions'
+import AudioPlayer from './AudioPlayer'
 import type { LiveSet } from '@/data/live-sets/types'
 
 type SessionStatus = 'lobby' | 'question' | 'locked' | 'reveal' | 'finished'
@@ -227,6 +228,18 @@ export default function ParticipantClient({ session, set }: Props) {
 
           <p className="prac-question__text">{question.prompt}</p>
 
+          {/* Audio player — only for audio-listen questions */}
+          {question.type === 'audio-listen' && question.audioText && (
+            <div style={{ marginBottom: 16 }}>
+              <AudioPlayer
+                text={question.audioText}
+                rate={question.audioRate ?? 0.85}
+                autoPlay={!answered}
+                maxPlays={3}
+              />
+            </div>
+          )}
+
           {/* Options */}
           <div className="prac-options">
             {ids.map(id => {
@@ -260,8 +273,13 @@ export default function ParticipantClient({ session, set }: Props) {
                   </span>
                   <span className="prac-option__text">
                     {opt.text}
-                    {opt.romanization && (
+                    {/* Romanization — always shown for non-audio, shown after reveal for audio */}
+                    {opt.romanization && (question.type !== 'audio-listen' || isRevealed) && (
                       <span style={{ marginLeft: 8, fontSize: '0.82rem', color: 'var(--muted)' }}>{opt.romanization}</span>
+                    )}
+                    {/* Meaning revealed after answer for audio questions */}
+                    {opt.meaning && isRevealed && question.type === 'audio-listen' && (
+                      <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--muted)', marginTop: 2 }}>{opt.meaning}</span>
                     )}
                   </span>
                 </button>

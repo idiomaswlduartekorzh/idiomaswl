@@ -5,6 +5,7 @@ const set: LiveSet = {
   title: 'Coreano — Set 1: Partículas y Formalidad',
   titleKo: '한국어 세트 1: 조사와 격식체',
   lang: 'ko',
+  difficulty: 2 as const,
   questions: [
     {
       id: 'q1',

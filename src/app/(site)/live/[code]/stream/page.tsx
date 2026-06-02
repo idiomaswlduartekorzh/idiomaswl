@@ -2,9 +2,12 @@ import { notFound } from 'next/navigation'
 import { createAdminClient } from '@/lib/supabase/admin'
 import StreamClient from './StreamClient'
 import coreano1 from '@/data/live-sets/coreano-1'
+import nivel1 from '@/data/live-sets/coreano-nivel-1'
+import nivel2 from '@/data/live-sets/coreano-nivel-2'
+import nivel3 from '@/data/live-sets/coreano-nivel-3'
 import type { LiveSet } from '@/data/live-sets/types'
 
-const SETS: Record<string, LiveSet> = { 'coreano-1': coreano1 }
+const SETS: Record<string, LiveSet> = { 'coreano-1': coreano1, 'coreano-nivel-1': nivel1, 'coreano-nivel-2': nivel2, 'coreano-nivel-3': nivel3 }
 
 export default async function StreamPage({
   params,

@@ -5,7 +5,46 @@ import { createSession } from '@/lib/actions/gameSessions'
 import { useRouter } from 'next/navigation'
 
 const AVAILABLE_SETS = [
-  { id: 'coreano-1', label: '한국어 Set 1 — Partículas y Formalidad', questions: 8 },
+  {
+    id: 'coreano-nivel-1',
+    label: '레벨 1 — Saludos y básico',
+    sublabel: 'Audio: palabras del día a día · Gramática: partículas A1',
+    questions: 8,
+    difficulty: 1,
+    expected: '70-80% de acierto',
+    color: '#059669',
+    emoji: '🟢',
+  },
+  {
+    id: 'coreano-nivel-2',
+    label: '레벨 2 — Fonética y gramática',
+    sublabel: 'Audio: pares mínimos (있 vs 없) · Gramática: conectores',
+    questions: 8,
+    difficulty: 2,
+    expected: '55-65% de acierto',
+    color: '#d97706',
+    emoji: '🟡',
+  },
+  {
+    id: 'coreano-nivel-3',
+    label: '레벨 3 — Desafío',
+    sublabel: 'Audio: consonantes aspiradas/tensas · Gramática TOPIK-II',
+    questions: 8,
+    difficulty: 3,
+    expected: '40-55% de acierto',
+    color: '#dc2626',
+    emoji: '🔴',
+  },
+  {
+    id: 'coreano-1',
+    label: 'Set original — Partículas y Formalidad',
+    sublabel: 'El set clásico sin audio (solo gramática)',
+    questions: 8,
+    difficulty: 1,
+    expected: '60-70% de acierto',
+    color: '#6b7280',
+    emoji: '⬜',
+  },
 ]
 
 export default function CreateSessionPage() {
@@ -97,20 +136,32 @@ export default function CreateSessionPage() {
         </div>
 
         <div className="space-y-3">
-          {AVAILABLE_SETS.map(s => (
-            <button
-              key={s.id}
-              onClick={() => setSelectedSet(s.id)}
-              className={`w-full text-left px-5 py-4 rounded-2xl border transition-all cursor-pointer ${
-                selectedSet === s.id
-                  ? 'bg-blue-600/20 border-blue-500'
-                  : 'bg-white/5 border-white/10 hover:border-white/20'
-              }`}
-            >
-              <p className="font-semibold">{s.label}</p>
-              <p className="text-white/40 text-sm mt-0.5">{s.questions} preguntas</p>
-            </button>
-          ))}
+          {AVAILABLE_SETS.map(s => {
+            const sel = selectedSet === s.id
+            return (
+              <button
+                key={s.id}
+                onClick={() => setSelectedSet(s.id)}
+                style={{
+                  width: '100%', textAlign: 'left', padding: '16px 20px', borderRadius: 16,
+                  border: `2px solid ${sel ? s.color : 'rgba(255,255,255,0.1)'}`,
+                  background: sel ? `${s.color}18` : 'rgba(255,255,255,0.04)',
+                  cursor: 'pointer', transition: 'all 0.15s',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 4 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <span style={{ fontSize: 16 }}>{s.emoji}</span>
+                    <span style={{ fontWeight: 700, fontSize: 15, color: '#fff' }}>{s.label}</span>
+                  </div>
+                  <span style={{ fontSize: 11, fontWeight: 600, padding: '2px 8px', borderRadius: 100, background: `${s.color}25`, color: s.color }}>
+                    {s.expected}
+                  </span>
+                </div>
+                <p style={{ margin: 0, fontSize: 12, color: 'rgba(255,255,255,0.4)' }}>{s.sublabel} · {s.questions} preguntas</p>
+              </button>
+            )
+          })}
         </div>
 
         {error && <p className="text-red-400 text-sm text-center">{error}</p>}
