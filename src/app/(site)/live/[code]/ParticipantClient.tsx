@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { joinSession, submitAnswer, getParticipantScore } from '@/lib/actions/gameSessions'
 import AudioPlayer from '@/components/AudioPlayer'
@@ -36,8 +36,22 @@ export default function ParticipantClient({ session, set }: Props) {
   const [answered, setAnswered]       = useState(false)
   // FIX: score synced from server on mount/rejoin
   const [score, setScore]             = useState(0)
+  // FIX #2: timer
+  const [timeLeft, setTimeLeft]       = useState(30)
+  const timerRef                      = useRef<ReturnType<typeof setInterval> | null>(null)
   const answeredSet = useRef<Set<number>>(new Set())
   const supabase = createClient()
+
+  const stopTimer = useCallback(() => {
+    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null }
+  }, [])
+  const startTimer = useCallback(() => {
+    stopTimer(); setTimeLeft(30)
+    timerRef.current = setInterval(() => {
+      setTimeLeft(t => { if (t <= 1) { stopTimer(); return 0 } return t - 1 })
+    }, 1000)
+  }, [stopTimer])
+  useEffect(() => () => stopTimer(), [stopTimer])
 
   // FIX: restore session from localStorage AND re-fetch real score
   useEffect(() => {
@@ -64,6 +78,9 @@ export default function ParticipantClient({ session, set }: Props) {
         const s = p.new as Session
         setGameStatus(s.status)
         setQI(s.current_question_index)
+        // FIX #2: sync timer with game state
+        if (s.status === 'question') startTimer()
+        else stopTimer()
       })
       .subscribe()
     return () => { supabase.removeChannel(ch) }
@@ -193,8 +210,21 @@ export default function ParticipantClient({ session, set }: Props) {
         <div className="prac-topbar__left">
           <span className="prac-topbar__title">{set.titleKo}</span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexShrink: 0 }}>
-          <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
+          {/* FIX #2: timer visible on participant */}
+          {gameStatus === 'question' && (
+            <div style={{
+              background: timeLeft <= 10 ? 'rgba(200,32,46,0.3)' : 'rgba(255,255,255,0.1)',
+              borderRadius: 8, padding: '4px 10px', display: 'flex', alignItems: 'center', gap: 5,
+              transition: 'background 0.3s',
+            }}>
+              <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)' }}>⏱</span>
+              <span style={{ fontFamily: 'var(--mono)', fontSize: 16, fontWeight: 800, color: timeLeft <= 10 ? '#fca5a5' : '#fff', minWidth: 20, textAlign: 'center' }}>
+                {timeLeft}
+              </span>
+            </div>
+          )}
+          <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
             {questionIndex + 1}/{set.questions.length}
           </span>
           <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 8, padding: '4px 10px', display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -203,6 +233,17 @@ export default function ParticipantClient({ session, set }: Props) {
           </div>
         </div>
       </div>
+      {/* FIX #2: timer progress bar below topbar */}
+      {gameStatus === 'question' && (
+        <div style={{ height: 3, background: 'rgba(255,255,255,0.08)' }}>
+          <div style={{
+            height: '100%',
+            width: `${(timeLeft / 30) * 100}%`,
+            background: timeLeft <= 10 ? 'linear-gradient(90deg,#c8202e,#f97316)' : 'linear-gradient(90deg,#3b82f6,#818cf8)',
+            transition: 'width 1s linear',
+          }} />
+        </div>
+      )}
 
       <div style={{ maxWidth: 560, margin: '0 auto', padding: '1.5rem 1rem' }}>
         {gameStatus === 'locked' && !answered && (
@@ -289,9 +330,15 @@ export default function ParticipantClient({ session, set }: Props) {
             })}
           </div>
 
+          {/* FIX #5: answered waiting state with timer context */}
           {answered && !isRevealed && (
-            <div style={{ background: 'rgba(15,61,140,0.07)', border: '1px solid rgba(15,61,140,0.2)', borderRadius: 10, padding: '10px 14px', textAlign: 'center' }}>
-              <p style={{ margin: 0, color: '#0f3d8c', fontWeight: 600, fontSize: 14 }}>✓ Respuesta enviada — espera que David revele</p>
+            <div style={{ background: 'rgba(15,61,140,0.07)', border: '1px solid rgba(15,61,140,0.2)', borderRadius: 10, padding: '14px 16px', textAlign: 'center' }}>
+              <p style={{ margin: '0 0 6px', color: '#0f3d8c', fontWeight: 700, fontSize: 15 }}>✓ Respuesta enviada</p>
+              <p style={{ margin: 0, fontSize: 12, color: 'var(--muted)' }}>
+                {gameStatus === 'question'
+                  ? `Esperando que los demás respondan... (${timeLeft}s)`
+                  : 'Votación cerrada — David está por revelar'}
+              </p>
             </div>
           )}
 

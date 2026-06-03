@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { updateSessionStatus } from '@/lib/actions/gameSessions'
 import AudioPlayer from '@/components/AudioPlayer'
@@ -36,7 +36,20 @@ export default function AdminSessionClient({ session: init, set, initialParticip
   const [participants, setP]      = useState<Participant[]>(initialParticipants)
   const [answers, setA]           = useState<Answer[]>(initialAnswers)
   const [loading, setLoading]     = useState(false)
+  const [timeLeft, setTimeLeft]   = useState(30)
+  const timerRef                  = useRef<ReturnType<typeof setInterval> | null>(null)
   const supabase = createClient()
+
+  const stopTimer = useCallback(() => {
+    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null }
+  }, [])
+  const startTimer = useCallback(() => {
+    stopTimer(); setTimeLeft(30)
+    timerRef.current = setInterval(() => {
+      setTimeLeft(t => { if (t <= 1) { stopTimer(); return 0 } return t - 1 })
+    }, 1000)
+  }, [stopTimer])
+  useEffect(() => () => stopTimer(), [stopTimer])
 
   const question = set.questions[qIndex]
   const ids: ('A'|'B'|'C'|'D')[] = ['A','B','C','D']
@@ -51,7 +64,13 @@ export default function AdminSessionClient({ session: init, set, initialParticip
   useEffect(() => {
     const ch = supabase.channel(`admin_${init.id}`)
       .on('postgres_changes', { event:'UPDATE', schema:'public', table:'game_sessions', filter:`id=eq.${init.id}` },
-        (p) => { const s = p.new as Session; setStatus(s.status); setQIndex(s.current_question_index) })
+        (p) => {
+          const s = p.new as Session
+          setStatus(s.status)
+          setQIndex(s.current_question_index)
+          if (s.status === 'question') startTimer()
+          else stopTimer()
+        })
       .on('postgres_changes', { event:'INSERT', schema:'public', table:'game_participants', filter:`session_id=eq.${init.id}` },
         (p) => setP(prev => [...prev, p.new as Participant]))
       .on('postgres_changes', { event:'INSERT', schema:'public', table:'game_answers', filter:`session_id=eq.${init.id}` },
@@ -133,6 +152,24 @@ export default function AdminSessionClient({ session: init, set, initialParticip
                 🏁 Terminar sesión
               </button>
             )}
+            {/* FIX #9: skip button — available in question/locked/reveal (not lobby/finished) */}
+            {!isLast && ['question','locked','reveal'].includes(status) && (
+              <button onClick={() => { if (confirm('¿Saltar esta pregunta?')) act('question', qIndex + 1) }} disabled={loading}
+                style={{ padding:'8px 14px', borderRadius:8, border:'1px solid var(--line-soft)', background:'transparent', color:'var(--muted)', fontSize:12, fontWeight:600, cursor:'pointer', opacity:loading?0.5:1, marginLeft:4 }}>
+                Saltar →
+              </button>
+            )}
+
+            {/* FIX #2: timer display in admin */}
+            {status === 'question' && (
+              <div style={{ display:'flex', alignItems:'center', gap:6, background: timeLeft <= 10 ? 'rgba(200,32,46,0.15)' : 'rgba(255,255,255,0.05)', borderRadius:8, padding:'4px 12px', border: timeLeft <= 10 ? '1px solid rgba(200,32,46,0.3)' : '1px solid var(--line-soft)' }}>
+                <span style={{ fontSize:11, color:'var(--muted)' }}>⏱</span>
+                <span style={{ fontFamily:'var(--mono,monospace)', fontSize:18, fontWeight:800, color: timeLeft <= 10 ? 'var(--accent)' : 'var(--ink)', minWidth:24, textAlign:'center' }}>
+                  {timeLeft}
+                </span>
+              </div>
+            )}
+
             <div style={{ marginLeft:'auto', display:'flex', gap:10 }}>
               {/* FIX: nav dots now dynamic, not hardcoded to 8 */}
               {Array.from({ length: set.questions.length }, (_, i) => i).map(i => (
