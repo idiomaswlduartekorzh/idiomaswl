@@ -252,8 +252,9 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Production orale', icon: '🎙️', time: '~15 min', questions: 3, color: '#4d71dd', types: ['Monologue suivi', 'Exercice en interaction'] },
     ],
     mocks: [
-      { id: 'set-1', title: 'DELF B1 – Épreuve 1', subtitle: 'Compréhension oral · Écrits · Production écrite · Orale', free: true, parts: 5, questions: 22 },
-      { id: 'set-2', title: 'DELF B1 – Épreuve oficial (Sujet démo 02)', subtitle: 'Audio real · Restaurants · Bilinguisme · Locations saisonnières', free: true, parts: 4, questions: 36 },
+      { id: 'set-1',    title: 'DELF B1 – Épreuve 1',                    subtitle: 'Compréhension oral · Écrits · Production écrite · Orale',              free: true,  parts: 5,  questions: 22 },
+      { id: 'set-2',    title: 'DELF B1 – Épreuve officielle (Sujet démo 02)', subtitle: 'Audio real · Restaurants · Bilinguisme · Locations saisonnières', free: true,  parts: 6,  questions: 36 },
+      { id: 'b2-set-1', title: 'DELF B2 – Épreuve officielle (Sujet démo 02)', subtitle: 'Sport matinal · Flex office · Téléphone au collège · Vélo · Cinéma', free: true,  parts: 8,  questions: 34 },
     ],
     available: true,
   },

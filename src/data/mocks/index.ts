@@ -44,6 +44,7 @@ import toeflSet2 from './toefl-set-2';
 import cilsCeliSet1 from './cils-celi-set-1';
 import delfDalfSet1 from './delf-dalf-set-1';
 import delfDalfSet2 from './delf-b1-set-2';
+import delfB2Set1 from './delf-b2-set-1';
 import goetheSet1 from './goethe-set-1';
 import celpeBrasSet1 from './celpe-bras-set-1';
 import topikSet1 from './topik-set-1';
@@ -98,7 +99,8 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'toefl:set-2': toeflSet2,
   'cils-celi:set-1': cilsCeliSet1,
   'delf-dalf:set-1': delfDalfSet1,
-  'delf-dalf:set-2': delfDalfSet2,
+  'delf-dalf:set-2':    delfDalfSet2,
+  'delf-dalf:b2-set-1': delfB2Set1,
   'goethe:set-1': goetheSet1,
   'celpe-bras:set-1': celpeBrasSet1,
   // ── TOPIK ─────────────────────────────────────────────────────────────────

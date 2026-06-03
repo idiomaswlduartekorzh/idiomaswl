@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
+import { saveExamResult } from '@/lib/actions/saveExamResult';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion } from '@/data/mocks/types';
 
@@ -338,7 +339,24 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
 
   const handleSubmit = useCallback(() => {
     setPhase('results');
-  }, []);
+    // Save to admin dashboard
+    const qs = allQuestions as MCQQuestion[];
+    const correct = qs.filter(q => answers[q.id] === q.answer).length;
+    const score = Math.round((correct / qs.length) * 100);
+    saveExamResult({
+      examSlug: exam.slug,
+      examName: exam.name,
+      mockTitle: mock.title,
+      totalScore: score,
+      totalMax: 100,
+      totalLabel: `${correct}/${qs.length} correctas`,
+      skills: mock.sections.map(sec => {
+        const sqs = sec.questions.filter(q => q.type === 'mcq') as MCQQuestion[];
+        const sc = sqs.filter(q => answers[q.id] === q.answer).length;
+        return { skill: sec.title, score: sqs.length ? Math.round(sc/sqs.length*100) : 0, max: 100, label: `${sc}/${sqs.length}` };
+      }),
+    }).catch(() => {});
+  }, [allQuestions, answers, exam, mock]);
 
   const handleRetry = useCallback(() => {
     setAnswers({});

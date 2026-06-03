@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import Link from 'next/link';
+import { saveExamResult } from '@/lib/actions/saveExamResult';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion } from '@/data/mocks/types';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
@@ -103,7 +104,19 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
     setPhase('lead');
   }
 
-  function handleLeadClose() { setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  function handleLeadClose() {
+    setPhase('results');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    saveExamResult({
+      examSlug: exam.slug,
+      examName: exam.name,
+      mockTitle: mock.title,
+      totalScore: score,
+      totalMax: totalQ,
+      totalLabel: `${score}/${totalQ} — TOPIK I ${levelInfo.level}`,
+      skills: [{ skill: 'Lectura 읽기', score, max: totalQ, label: `${score}/${totalQ}` }],
+    }).catch(() => {});
+  }
 
   const waMsg = encodeURIComponent(`Hola! Acabo de hacer el diagnóstico TOPIK I en WeLearn y obtuve ${score}/30 (${levelInfo.level}). ¿Cómo puedo mejorar mi coreano?`);
   const waHref = `https://wa.me/${WA_NUMBER}?text=${waMsg}`;
