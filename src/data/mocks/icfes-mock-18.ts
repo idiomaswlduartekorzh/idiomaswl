@@ -33,11 +33,11 @@ const mock: MockExam = {
             'OFFICE OPEN MONDAY TO FRIDAY\n8:00 AM – 5:00 PM\nClosed on public holidays.',
           text: 'Where would you most likely see this notice?',
           options: [
-            'At a hospital',
             'At a government office or business',
+            'At a hospital',
             'At a school',
           ],
-          answer: 1,
+          answer: 0,
         },
         {
           type: 'mcq',
@@ -64,10 +64,10 @@ const mock: MockExam = {
           text: 'What is the purpose of this notice?',
           options: [
             'To warn people about dangerous animals in the area',
-            'To remind people to dispose of rubbish correctly',
             'To advertise a local cleaning service',
+            'To remind people to dispose of rubbish correctly',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -93,11 +93,11 @@ const mock: MockExam = {
             'SMOKING IS NOT PERMITTED WITHIN 5 METRES OF THIS BUILDING.\nThank you for respecting our policy.',
           text: 'Where would you most likely see this sign?',
           options: [
-            'Inside a restaurant',
             'Near the entrance of a building',
+            'Inside a restaurant',
             'At a private garden',
           ],
-          answer: 1,
+          answer: 0,
         },
       ],
     },
@@ -251,8 +251,8 @@ const mock: MockExam = {
           id: 'p4q1',
           part: 4,
           text: 'Choose the best word for blank (16).',
-          options: ['study', 'write', 'read', 'think'],
-          answer: 0,
+          options: ['write', 'read', 'think', 'study'],
+          answer: 3,
         },
         {
           type: 'mcq',

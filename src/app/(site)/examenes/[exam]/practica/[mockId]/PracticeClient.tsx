@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
+import { saveLead } from '@/lib/actions/saveLead';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
 
@@ -854,13 +855,97 @@ function ResultsView({
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-type Phase = 'intro' | 'exam' | 'results';
+type Phase = 'intro' | 'exam' | 'lead' | 'results';
+
+// ── Lead gate (shown after exam, before results) ───────────────────────────────
+function LeadGateView({
+  exam,
+  onSubmit,
+}: {
+  exam: Exam;
+  onSubmit: (lead: { name: string; email: string; whatsapp: string }) => Promise<void>;
+}) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!name.trim()) { setError('Ingresa tu nombre'); return; }
+    if (!email.trim() || !email.includes('@')) { setError('Ingresa un correo válido'); return; }
+    if (!whatsapp.trim() || whatsapp.replace(/\D/g, '').length < 7) { setError('Ingresa un WhatsApp válido'); return; }
+    setLoading(true);
+    setError('');
+    await onSubmit({ name: name.trim(), email: email.trim(), whatsapp: whatsapp.trim() });
+    setLoading(false);
+  }
+
+  return (
+    <div className="prac-lead-gate" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+      <div className="prac-lead-gate__card">
+        <div className="prac-lead-gate__icon">🎯</div>
+        <h2 className="prac-lead-gate__title">¡Tu simulacro está listo!</h2>
+        <p className="prac-lead-gate__sub">
+          Déjanos tus datos y te mostramos tu resultado, análisis por parte y respuestas correctas.
+          También te enviaremos consejos personalizados para mejorar tu puntaje.
+        </p>
+        <form onSubmit={handleSubmit} className="prac-lead-gate__form">
+          <div className="prac-lead-gate__field">
+            <label className="prac-lead-gate__label">Nombre completo</label>
+            <input
+              type="text"
+              value={name}
+              onChange={e => setName(e.target.value)}
+              placeholder="Ej. Valentina García"
+              className="prac-lead-gate__input"
+              disabled={loading}
+              autoFocus
+            />
+          </div>
+          <div className="prac-lead-gate__field">
+            <label className="prac-lead-gate__label">Correo electrónico</label>
+            <input
+              type="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              placeholder="tu@correo.com"
+              className="prac-lead-gate__input"
+              disabled={loading}
+            />
+          </div>
+          <div className="prac-lead-gate__field">
+            <label className="prac-lead-gate__label">WhatsApp</label>
+            <input
+              type="tel"
+              value={whatsapp}
+              onChange={e => setWhatsapp(e.target.value)}
+              placeholder="Ej. 3001234567"
+              className="prac-lead-gate__input"
+              disabled={loading}
+            />
+          </div>
+          {error && <p className="prac-lead-gate__error">{error}</p>}
+          <button type="submit" className="btn prac-lead-gate__btn" disabled={loading}>
+            {loading ? 'Guardando…' : 'Ver mis resultados →'}
+          </button>
+        </form>
+        <p className="prac-lead-gate__privacy">
+          Tus datos son confidenciales. No los compartimos con terceros.
+        </p>
+      </div>
+    </div>
+  );
+}
 
 export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [flagged, setFlagged] = useState<Set<string>>(new Set());
+  // Holds computed score while user fills the lead gate
+  const pendingResultRef = useRef<{ correct: number; total: number; score: number } | null>(null);
 
   const allQuestions = getAllQuestions(mock) as MCQQuestion[];
   const currentQuestion = allQuestions[currentIdx];
@@ -910,24 +995,42 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   }, [allQuestions]);
 
   const handleSubmit = useCallback(() => {
-    setPhase('results');
-    // Save to admin dashboard
+    // Compute score and go to lead gate — actual save happens after lead form
     const qs = allQuestions as MCQQuestion[];
     const correct = qs.filter(q => answers[q.id] === q.answer).length;
     const score = Math.round((correct / qs.length) * 100);
-    saveExamResult({
-      examSlug: exam.slug,
-      examName: exam.name,
-      mockTitle: mock.title,
-      totalScore: score,
-      totalMax: 100,
-      totalLabel: `${correct}/${qs.length} correctas`,
-      skills: mock.sections.map(sec => {
-        const sqs = sec.questions.filter(q => q.type === 'mcq') as MCQQuestion[];
-        const sc = sqs.filter(q => answers[q.id] === q.answer).length;
-        return { skill: sec.title, score: sqs.length ? Math.round(sc/sqs.length*100) : 0, max: 100, label: `${sc}/${sqs.length}` };
+    pendingResultRef.current = { correct, total: qs.length, score };
+    setPhase('lead');
+  }, [allQuestions, answers]);
+
+  const handleLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string }) => {
+    const qs = allQuestions as MCQQuestion[];
+    const { correct, total, score } = pendingResultRef.current ?? { correct: 0, total: qs.length, score: 0 };
+    // Save lead + exam result in parallel
+    await Promise.allSettled([
+      saveLead({
+        name: lead.name,
+        whatsapp: lead.whatsapp,
+        email: lead.email,
+        examSlug: exam.slug,
+        examScore: `${score}/100 (${correct}/${total} correctas)`,
+        source: 'icfes-practica',
       }),
-    }).catch(() => {});
+      saveExamResult({
+        examSlug: exam.slug,
+        examName: exam.name,
+        mockTitle: mock.title,
+        totalScore: score,
+        totalMax: 100,
+        totalLabel: `${correct}/${total} correctas`,
+        skills: mock.sections.map(sec => {
+          const sqs = sec.questions.filter(q => q.type === 'mcq') as MCQQuestion[];
+          const sc = sqs.filter(q => answers[q.id] === q.answer).length;
+          return { skill: sec.title, score: sqs.length ? Math.round(sc / sqs.length * 100) : 0, max: 100, label: `${sc}/${sqs.length}` };
+        }),
+      }),
+    ]);
+    setPhase('results');
   }, [allQuestions, answers, exam, mock]);
 
   const handleRetry = useCallback(() => {
@@ -936,6 +1039,14 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     setCurrentIdx(0);
     setPhase('intro');
   }, []);
+
+  if (phase === 'lead') {
+    return (
+      <div className="prac-shell">
+        <LeadGateView exam={exam} onSubmit={handleLeadSubmit} />
+      </div>
+    );
+  }
 
   if (phase === 'results') {
     return (

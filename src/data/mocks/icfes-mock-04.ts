@@ -427,12 +427,12 @@ const mock: MockExam = {
           part: 6,
           text: 'What must students demonstrate to be selected for the programme?',
           options: [
-            'Experience living away from their family before',
             'A good academic record, language skills, and adaptability',
+            'Experience living away from their family before',
             'Permission from their school principal and parents',
             'A personal project about the country they wish to visit',
           ],
-          answer: 1,
+          answer: 0,
         },
         {
           type: 'mcq',
@@ -441,11 +441,11 @@ const mock: MockExam = {
           text: 'What is the role of a "school buddy" in the programme?',
           options: [
             'A teacher who supports the student with academic work',
-            'A local student who helps the exchange student adapt to school life',
             'A programme coordinator who monitors the student\'s progress',
+            'A local student who helps the exchange student adapt to school life',
             'A member of the host family who accompanies the student to school',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -466,12 +466,12 @@ const mock: MockExam = {
           part: 6,
           text: 'What can be inferred from the final paragraph?',
           options: [
-            'The programme is too expensive and needs more government funding.',
             'Returning students have a positive effect on the schools they come back to.',
+            'The programme is too expensive and needs more government funding.',
             'Most Colombian schools are not interested in international exchange.',
             'Foreign language learning has declined in Colombian schools.',
           ],
-          answer: 1,
+          answer: 0,
         },
       ],
     },

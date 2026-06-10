@@ -186,8 +186,8 @@ const mock: MockExam = {
           part: 3,
           stimulus: 'I think robots will replace all jobs one day.',
           text: '',
-          options: ['I disagree — many jobs need human creativity.', 'Robots are very small.', 'Jobs are important.'],
-          answer: 0,
+          options: ['Robots are very small.', 'Jobs are important.', 'I disagree — many jobs need human creativity.'],
+          answer: 2,
         },
         {
           type: 'dialog',

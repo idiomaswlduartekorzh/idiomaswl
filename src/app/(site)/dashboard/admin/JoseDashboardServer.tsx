@@ -28,6 +28,17 @@ export interface ExamSubmission {
   reviewed_by?: string | null
 }
 
+export interface LeadRow {
+  id: string
+  name: string | null
+  whatsapp: string | null
+  email: string | null
+  exam_slug: string | null
+  exam_score: string | null
+  source: string | null
+  created_at: string
+}
+
 export interface DashboardData {
   submissions: ExamSubmission[]
   totalCount: number
@@ -38,6 +49,7 @@ export interface DashboardData {
   topUsers: { user_email: string; count: number }[]
   pendingIelts: ExamSubmission[]
   students: StudentRow[]
+  icfesLeads: LeadRow[]
 }
 
 export default async function JoseDashboardServer() {
@@ -127,6 +139,16 @@ export default async function JoseDashboardServer() {
     last_active:     lastActiveMap.get(p.id) ?? null,
   }))
 
+  // ── ICFES leads (from lead-gate form) ───────────────────────────────────────
+  const { data: leadsData } = await supabase
+    .from('leads')
+    .select('id, name, whatsapp, email, exam_slug, exam_score, source, created_at')
+    .eq('source', 'icfes-practica')
+    .order('created_at', { ascending: false })
+    .limit(200)
+
+  const icfesLeads: LeadRow[] = (leadsData ?? []) as LeadRow[]
+
   const dashboardData: DashboardData = {
     submissions: rows,
     totalCount: rows.length,
@@ -137,6 +159,7 @@ export default async function JoseDashboardServer() {
     topUsers,
     pendingIelts,
     students,
+    icfesLeads,
   }
 
   return <JoseDashboard data={dashboardData} />

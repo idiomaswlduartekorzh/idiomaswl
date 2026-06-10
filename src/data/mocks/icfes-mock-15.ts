@@ -266,8 +266,8 @@ const mock: MockExam = {
           id: 'p4q3',
           part: 4,
           text: 'Choose the best word for blank (18).',
-          options: ['familiar', 'popular', 'recent', 'useful'],
-          answer: 1,
+          options: ['familiar', 'recent', 'useful', 'popular'],
+          answer: 3,
         },
         {
           type: 'mcq',
