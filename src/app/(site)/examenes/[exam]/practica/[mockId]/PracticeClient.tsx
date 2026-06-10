@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import type { Exam } from '@/data/exams';
-import type { MockExam, MCQQuestion } from '@/data/mocks/types';
+import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -147,7 +147,7 @@ function QuestionView({
   onSubmit,
 }: {
   question: MCQQuestion;
-  section?: import('@/data/mocks/types').MockSection;
+  section?: MockSection;
   index: number;
   total: number;
   selectedAnswer: number | undefined;
