@@ -261,7 +261,7 @@ function MatchingGridSection({
   onGoPrev,
   onGoNext,
   isFirstSection,
-  // startNum unused here (matching grid numbers by qi+6 logic internally)
+  startNum = 6,
 }: {
   section: MockSection;
   startNum?: number;
@@ -324,7 +324,7 @@ function MatchingGridSection({
                 className={`mg__row${isAct ? ' mg__row--act' : ''}${sel !== undefined ? ' mg__row--done' : ''}`}
                 onClick={() => setActiveId(isAct ? null : mcq.id)}
               >
-                <span className="mg__row-n">{qi + 6}.</span>
+                <span className="mg__row-n">{startNum + qi}.</span>
                 <span className="mg__row-txt">{mcq.text}</span>
                 <span className={`mg__ans${sel !== undefined ? ' mg__ans--set' : ''}`}>
                   {sel !== undefined ? String.fromCharCode(65 + sel) : ''}

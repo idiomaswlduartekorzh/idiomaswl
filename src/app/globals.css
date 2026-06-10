@@ -3381,12 +3381,18 @@ button {
   flex-shrink: 0;
 }
 .cl__qopts {
-  display: flex;
-  flex-wrap: wrap;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.4rem;
 }
+@media (max-width: 520px) {
+  .cl__qopts { grid-template-columns: repeat(2, 1fr); }
+}
 .cl__qopt {
-  padding: 0.28rem 0.7rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.3rem 0.6rem;
   border: 1.5px solid #ccc;
   border-radius: 5px;
   font-size: 0.84rem;
