@@ -6,8 +6,6 @@ import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
 
 // ── Vocabulary matching grid (ICFES Parte 2) ─────────────────────────────────
-// Renders all 5 questions at once in a two-column layout matching the official
-// ICFES cuadernillo format: descriptions (left) | word bank A–H (right).
 function MatchingGridSection({
   section,
   answers,
@@ -15,7 +13,6 @@ function MatchingGridSection({
   onGoPrev,
   onGoNext,
   isFirstSection,
-  isLastSection,
 }: {
   section: MockSection;
   answers: Record<string, number>;
@@ -25,121 +22,99 @@ function MatchingGridSection({
   isFirstSection: boolean;
   isLastSection: boolean;
 }) {
-  const questions = section.questions as MCQQuestion[];
-  // A–G from the first question's options; H is the example answer
-  const wordsAG = questions[0]?.options ?? [];
-  const wordH   = section.exampleAnswer ?? '';
-  const allWords = [...wordsAG, wordH]; // index 0–6 = A–G, index 7 = H
+  const questions  = section.questions as MCQQuestion[];
+  const wordsAG    = questions[0]?.options ?? [];          // 7 words → A–G
+  const allWords   = [...wordsAG, section.exampleAnswer ?? '']; // 8th = H
 
-  // which description row is currently "active" (waiting for a word click)
+  // active row: the description the student last clicked
   const [activeId, setActiveId] = useState<string | null>(null);
 
   return (
-    <div className="prac-matching">
+    <div className="mg">
       {/* Category title */}
-      <h2 className="prac-matching__topic">{section.topic}</h2>
+      <h2 className="mg__title">{section.topic}</h2>
 
-      {/* Example block */}
-      <div className="prac-matching__example-block">
-        <span className="prac-matching__ex-badge">Ejemplo:</span>
-        <p className="prac-matching__ex-text">
-          <strong>0.</strong>&nbsp;&nbsp;{section.exampleText}
-        </p>
-        {/* Respuesta row — circles A–H, H filled dark */}
-        <div className="prac-matching__respuesta">
-          <span className="prac-matching__resp-label">Respuesta:</span>
-          <div className="prac-matching__resp-row">
-            <span className="prac-matching__resp-zero">0.</span>
-            {allWords.map((_, i) => {
-              const letter = String.fromCharCode(65 + i);
-              const isH = i === allWords.length - 1;
-              return (
-                <span
-                  key={letter}
-                  className={`prac-matching__circle${isH ? ' prac-matching__circle--filled' : ''}`}
-                >
-                  {letter}
-                </span>
-              );
-            })}
-          </div>
+      {/* ── Example block ── */}
+      <div className="mg__ex">
+        <span className="mg__ex-pill">Ejemplo:</span>
+        <p className="mg__ex-text"><strong>0.</strong>&nbsp;&nbsp;{section.exampleText}</p>
+        <div className="mg__resp-box">
+          <span className="mg__resp-lbl">Respuesta:</span>
+          <span className="mg__resp-zero">0.</span>
+          {allWords.map((_, i) => (
+            <span
+              key={i}
+              className={`mg__circ${i === allWords.length - 1 ? ' mg__circ--on' : ''}`}
+            >
+              {String.fromCharCode(65 + i)}
+            </span>
+          ))}
         </div>
       </div>
 
-      <hr className="prac-matching__hr" />
+      {/* Hint */}
+      <p className="mg__hint">
+        {activeId
+          ? 'Ahora haz clic en la palabra correcta en la columna derecha →'
+          : 'Haz clic en una descripción para activarla, luego selecciona la palabra correspondiente.'}
+      </p>
 
-      {/* Two-column table */}
-      <div className="prac-matching__table">
+      {/* ── Two-column table ── */}
+      <div className="mg__table">
 
-        {/* LEFT — numbered descriptions */}
-        <div className="prac-matching__left">
-          {questions.map((q, i) => {
-            const mcq    = q as MCQQuestion;
-            const sel    = answers[mcq.id];
-            const isActive = activeId === mcq.id;
-            const selLetter = sel !== undefined ? String.fromCharCode(65 + sel) : null;
+        {/* LEFT — descriptions */}
+        <div className="mg__left">
+          {questions.map((q, qi) => {
+            const mcq   = q as MCQQuestion;
+            const sel   = answers[mcq.id];
+            const isAct = activeId === mcq.id;
             return (
               <div
                 key={mcq.id}
-                className={[
-                  'prac-matching__desc',
-                  isActive             ? 'prac-matching__desc--active'   : '',
-                  sel !== undefined    ? 'prac-matching__desc--answered' : '',
-                ].join(' ')}
-                onClick={() => setActiveId(isActive ? null : mcq.id)}
+                className={`mg__row${isAct ? ' mg__row--act' : ''}${sel !== undefined ? ' mg__row--done' : ''}`}
+                onClick={() => setActiveId(isAct ? null : mcq.id)}
               >
-                <span className="prac-matching__desc-num">{i + 6}.</span>
-                <span className="prac-matching__desc-text">{mcq.text}</span>
-                <span className={`prac-matching__desc-ans${selLetter ? ' prac-matching__desc-ans--set' : ''}`}>
-                  {selLetter ?? '—'}
+                <span className="mg__row-n">{qi + 6}.</span>
+                <span className="mg__row-txt">{mcq.text}</span>
+                <span className={`mg__ans${sel !== undefined ? ' mg__ans--set' : ''}`}>
+                  {sel !== undefined ? String.fromCharCode(65 + sel) : ''}
                 </span>
               </div>
             );
           })}
         </div>
 
-        {/* Vertical divider */}
-        <div className="prac-matching__vdiv" />
+        {/* Divider */}
+        <div className="mg__vline" />
 
         {/* RIGHT — word bank A–H */}
-        <div className="prac-matching__right">
-          {allWords.map((word, i) => {
-            const letter    = String.fromCharCode(65 + i);
-            const isH       = i === allWords.length - 1;
-            const isUsed    = !isH && questions.some(q => answers[q.id] === i);
-            const clickable = !isH && activeId !== null;
+        <div className="mg__right">
+          {allWords.map((word, wi) => {
+            const isH    = wi === allWords.length - 1;
+            const isUsed = !isH && questions.some(q => answers[q.id] === wi);
+            const canPick = !isH && activeId !== null;
             return (
               <div
-                key={letter}
-                className={[
-                  'prac-matching__word',
-                  isH       ? 'prac-matching__word--example'   : '',
-                  isUsed    ? 'prac-matching__word--used'      : '',
-                  clickable ? 'prac-matching__word--clickable' : '',
-                ].join(' ')}
+                key={wi}
+                className={`mg__word${isH ? ' mg__word--H' : ''}${isUsed ? ' mg__word--used' : ''}${canPick ? ' mg__word--pick' : ''}`}
                 onClick={() => {
-                  if (!clickable) return;
-                  onAnswerById(activeId!, i);
-                  // auto-advance to next unanswered description
+                  if (!canPick) return;
+                  onAnswerById(activeId!, wi);
                   const next = questions.find(q => q.id !== activeId && answers[q.id] === undefined);
                   setActiveId(next?.id ?? null);
                 }}
               >
-                <span className="prac-matching__word-letter">{letter}.</span>
-                <span className="prac-matching__word-text">{word}</span>
+                <strong className="mg__wltr">{String.fromCharCode(65 + wi)}.</strong>
+                <span className="mg__wtxt">{word}</span>
               </div>
             );
           })}
         </div>
       </div>
 
-      {/* Navigation footer */}
+      {/* Navigation */}
       <div className="prac-question__footer">
-        <button
-          className="btn btn-ghost btn-sm"
-          onClick={onGoPrev}
-          disabled={isFirstSection}
-        >
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
           ← Anterior
         </button>
         <button className="btn btn-sm" onClick={onGoNext}>

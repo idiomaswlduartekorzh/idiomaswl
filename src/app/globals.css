@@ -2711,239 +2711,202 @@ button {
 [data-theme="dark"] .prac-word-bank { background: #131826; border-color: #2a3550; }
 [data-theme="dark"] .prac-passage-box { background: #141414; border-color: #2a2a2a; }
 
-/* ── ICFES Vocabulary Matching Grid (Parte 2) ────────────────────────────── */
-.prac-matching {
-  width: 100%;
-}
+/* ── ICFES Vocabulary Matching Grid ─────────────────────────────────────── */
+.mg { width: 100%; }
 
-/* Category title */
-.prac-matching__topic {
+.mg__title {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--ink);
-  margin: 0 0 1.4rem;
+  margin: 0 0 1.2rem;
 }
 
-/* Example block */
-.prac-matching__example-block {
-  margin-bottom: 1.4rem;
-}
-.prac-matching__ex-badge {
+/* Example */
+.mg__ex { margin-bottom: 1.2rem; }
+
+.mg__ex-pill {
   display: inline-block;
-  background: #e5e7eb;
-  color: #374151;
-  font-size: 0.8rem;
+  background: #e8e9ea;
+  color: #444;
+  font-size: 0.78rem;
   font-weight: 700;
-  padding: 2px 10px;
-  border-radius: 4px;
-  margin-bottom: 0.65rem;
+  padding: 2px 9px;
+  border-radius: 3px;
+  margin-bottom: 0.55rem;
 }
-.prac-matching__ex-text {
-  font-size: 0.95rem;
-  color: var(--ink);
-  margin: 0 0 0.9rem;
+.mg__ex-text {
+  font-size: 0.92rem;
   line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 0.7rem;
 }
+
 /* Respuesta row */
-.prac-matching__respuesta {
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  background: #f3f4f6;
-  border-radius: 8px;
-  padding: 0.55rem 1rem;
-  flex-wrap: wrap;
-}
-.prac-matching__resp-label {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #374151;
-  white-space: nowrap;
-}
-.prac-matching__resp-row {
+.mg__resp-box {
   display: flex;
   align-items: center;
   gap: 5px;
+  background: #f4f5f6;
+  border: 1px solid #d0d3d8;
+  border-radius: 6px;
+  padding: 6px 12px;
   flex-wrap: wrap;
 }
-.prac-matching__resp-zero {
-  font-size: 0.88rem;
+.mg__resp-lbl {
+  font-size: 0.82rem;
   font-weight: 700;
-  margin-right: 3px;
-  color: #374151;
+  color: #333;
+  margin-right: 6px;
+  white-space: nowrap;
 }
-/* Letter circles in the example Respuesta row */
-.prac-matching__circle {
-  width: 28px;
-  height: 28px;
+.mg__resp-zero {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #333;
+  margin-right: 2px;
+}
+.mg__circ {
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  border: 1.5px solid #9ca3af;
+  border: 1.5px solid #b0b5bc;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  color: #6b7280;
+  color: #777;
   flex-shrink: 0;
+  line-height: 1;
 }
-.prac-matching__circle--filled {
-  background: #374151;
-  border-color: #374151;
+.mg__circ--on {
+  background: #222;
+  border-color: #222;
   color: #fff;
 }
 
-/* Divider */
-.prac-matching__hr {
-  border: none;
-  border-top: 1px solid #d1d5db;
-  margin: 0 0 0;
-}
-
 /* ── Two-column table ── */
-.prac-matching__table {
+.mg__table {
   display: grid;
-  grid-template-columns: 1fr 1px 220px;
-  border: 1px solid #d1d5db;
+  grid-template-columns: 3fr 1px 2fr;
+  border: 1px solid #cdd0d6;
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
 
-/* LEFT column — descriptions */
-.prac-matching__left {
-  padding: 0;
-}
-.prac-matching__desc {
+/* LEFT */
+.mg__left { padding: 0; }
+
+.mg__row {
   display: flex;
   align-items: flex-start;
-  gap: 0.6rem;
+  gap: 0.5rem;
   padding: 0.85rem 1rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e4e6ea;
   cursor: pointer;
-  transition: background 0.12s;
-  position: relative;
+  transition: background 0.1s;
+  user-select: none;
 }
-.prac-matching__desc:last-child {
-  border-bottom: none;
-}
-.prac-matching__desc:hover {
-  background: #f9fafb;
-}
-.prac-matching__desc--active {
-  background: #eff6ff;
-  border-left: 3px solid #3b82f6;
-}
-.prac-matching__desc--answered {
-  background: #f0fdf4;
-}
-.prac-matching__desc--active.prac-matching__desc--answered {
-  background: #eff6ff;
-  border-left: 3px solid #3b82f6;
-}
-.prac-matching__desc-num {
-  font-size: 0.88rem;
+.mg__row:last-child { border-bottom: none; }
+.mg__row:hover:not(.mg__row--act) { background: #fafafa; }
+.mg__row--act  { background: #fffbf0; }
+.mg__row--done .mg__row-n { color: #15803d; }
+
+.mg__row-n {
+  font-size: 0.87rem;
   font-weight: 700;
   color: var(--ink);
-  min-width: 1.4rem;
-  padding-top: 1px;
+  min-width: 1.6rem;
   flex-shrink: 0;
+  padding-top: 1px;
 }
-.prac-matching__desc-text {
-  font-size: 0.9rem;
-  color: var(--ink);
-  line-height: 1.55;
+.mg__row-txt {
   flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink);
 }
-/* Selected letter badge shown next to the description */
-.prac-matching__desc-ans {
-  font-size: 0.8rem;
+/* Answer badge */
+.mg__ans {
+  font-size: 0.72rem;
   font-weight: 700;
-  color: #9ca3af;
-  min-width: 1.4rem;
-  text-align: center;
-  padding-top: 1px;
-  flex-shrink: 0;
-}
-.prac-matching__desc-ans--set {
-  background: #374151;
-  color: #fff;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  width: 22px;
-  height: 22px;
+  border: 1.5px solid #d1d5db;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.72rem;
+  color: #aaa;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: 2px;
+}
+.mg__ans--set {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
 }
 
-/* Vertical divider */
-.prac-matching__vdiv {
-  background: #d1d5db;
-  width: 1px;
-}
+/* Vertical line */
+.mg__vline { background: #cdd0d6; }
 
-/* RIGHT column — word bank */
-.prac-matching__right {
-  padding: 0;
-}
-.prac-matching__word {
+/* RIGHT */
+.mg__right { padding: 0; }
+
+.mg__word {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  padding: 0.65rem 1rem;
-  border-bottom: 1px solid #e5e7eb;
-  transition: background 0.12s;
+  gap: 0.65rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #e4e6ea;
+  transition: background 0.1s;
 }
-.prac-matching__word:last-child {
-  border-bottom: none;
-}
-.prac-matching__word--clickable {
-  cursor: pointer;
-}
-.prac-matching__word--clickable:hover {
-  background: #fef9f0;
-}
-.prac-matching__word--used {
-  opacity: 0.45;
-}
-/* H row — the example word, greyed out */
-.prac-matching__word--example {
-  background: #f3f4f6;
-  opacity: 0.7;
-}
-.prac-matching__word-letter {
-  font-size: 0.88rem;
+.mg__word:last-child { border-bottom: none; }
+.mg__word--pick { cursor: pointer; }
+.mg__word--pick:hover { background: #fef9ee; }
+.mg__word--used { opacity: 0.4; }
+.mg__word--H { background: #f4f5f6; }
+
+.mg__wltr {
+  font-size: 0.87rem;
   font-weight: 700;
+  min-width: 1.4rem;
   color: var(--ink);
-  min-width: 1.3rem;
   flex-shrink: 0;
 }
-.prac-matching__word-text {
-  font-size: 0.9rem;
+.mg__wtxt {
+  font-size: 0.87rem;
   color: var(--ink);
+}
+
+/* Hint shown above the table when no row is active */
+.mg__hint {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 0.5rem 0 0.75rem;
+  font-style: italic;
 }
 
 /* Dark mode */
-[data-theme="dark"] .prac-matching__ex-badge { background: #2a2a2a; color: #d1d5db; }
-[data-theme="dark"] .prac-matching__respuesta { background: #1f2937; }
-[data-theme="dark"] .prac-matching__resp-label { color: #d1d5db; }
-[data-theme="dark"] .prac-matching__resp-zero { color: #d1d5db; }
-[data-theme="dark"] .prac-matching__circle { border-color: #4b5563; color: #9ca3af; }
-[data-theme="dark"] .prac-matching__circle--filled { background: #d1d5db; border-color: #d1d5db; color: #111; }
-[data-theme="dark"] .prac-matching__hr { border-color: #374151; }
-[data-theme="dark"] .prac-matching__table { border-color: #374151; }
-[data-theme="dark"] .prac-matching__desc { border-color: #374151; }
-[data-theme="dark"] .prac-matching__desc:hover { background: #1f2937; }
-[data-theme="dark"] .prac-matching__desc--active { background: #1e3a5f; border-left-color: #3b82f6; }
-[data-theme="dark"] .prac-matching__desc--answered { background: #14532d22; }
-[data-theme="dark"] .prac-matching__desc-ans--set { background: #d1d5db; color: #111; }
-[data-theme="dark"] .prac-matching__vdiv { background: #374151; }
-[data-theme="dark"] .prac-matching__word { border-color: #374151; }
-[data-theme="dark"] .prac-matching__word--clickable:hover { background: #1c1a14; }
-[data-theme="dark"] .prac-matching__word--example { background: #1f2937; }
+[data-theme="dark"] .mg__ex-pill { background: #2c2d30; color: #ccc; }
+[data-theme="dark"] .mg__resp-box { background: #1c1e22; border-color: #383b42; }
+[data-theme="dark"] .mg__resp-lbl,
+[data-theme="dark"] .mg__resp-zero { color: #ccc; }
+[data-theme="dark"] .mg__circ { border-color: #555; color: #888; }
+[data-theme="dark"] .mg__circ--on { background: #d1d5db; border-color: #d1d5db; color: #111; }
+[data-theme="dark"] .mg__table { border-color: #383b42; }
+[data-theme="dark"] .mg__row { border-color: #2c2f36; }
+[data-theme="dark"] .mg__row:hover:not(.mg__row--act) { background: #1c1e22; }
+[data-theme="dark"] .mg__row--act { background: #1e1c0d; }
+[data-theme="dark"] .mg__ans { border-color: #444; color: #666; }
+[data-theme="dark"] .mg__ans--set { background: #d1d5db; border-color: #d1d5db; color: #111; }
+[data-theme="dark"] .mg__vline { background: #383b42; }
+[data-theme="dark"] .mg__word { border-color: #2c2f36; }
+[data-theme="dark"] .mg__word--pick:hover { background: #1a1700; }
+[data-theme="dark"] .mg__word--H { background: #1c1e22; }
 
 
 /* ---- IELTS Practice ---- */
