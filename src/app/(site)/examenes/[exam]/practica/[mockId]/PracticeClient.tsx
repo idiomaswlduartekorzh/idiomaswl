@@ -13,6 +13,7 @@ function NoticesGridSection({
   onGoPrev,
   onGoNext,
   isFirstSection,
+  startNum,
 }: {
   section: MockSection;
   answers: Record<string, number>;
@@ -21,6 +22,7 @@ function NoticesGridSection({
   onGoNext: () => void;
   isFirstSection: boolean;
   isLastSection: boolean;
+  startNum: number;
 }) {
   const questions = section.questions as MCQQuestion[];
   const exAnsIdx = section.exampleAnswer
@@ -65,7 +67,7 @@ function NoticesGridSection({
           const sel = answers[mcq.id];
           return (
             <div key={mcq.id} className="ng__item">
-              <span className="ng__item-n">{qi + 1}.</span>
+              <span className="ng__item-n">{startNum + qi}.</span>
               <div className="ng__notice-box">
                 <pre className="ng__notice-text">{mcq.stimulus}</pre>
               </div>
@@ -101,6 +103,95 @@ function NoticesGridSection({
   );
 }
 
+// ── Dialogs grid (ICFES Parte 3) ─────────────────────────────────────────────
+function DialogsGridSection({
+  section,
+  answers,
+  onAnswerById,
+  onGoPrev,
+  onGoNext,
+  isFirstSection,
+  startNum,
+}: {
+  section: MockSection;
+  answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void;
+  onGoNext: () => void;
+  isFirstSection: boolean;
+  isLastSection: boolean;
+  startNum: number;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  const exAnsIdx = section.exampleAnswer
+    ? section.exampleAnswer.charCodeAt(0) - 65
+    : 0;
+
+  return (
+    <div className="dg">
+      <p className="dg__instr">{section.instructions}</p>
+
+      {/* ── Example block ── */}
+      {section.exampleStimulus && (
+        <div className="dg__ex">
+          <span className="dg__ex-pill">Ejemplo:</span>
+          <div className="dg__ex-row">
+            <div className="dg__bubble">
+              <p className="dg__bubble-text">{section.exampleStimulus}</p>
+            </div>
+            <div className="dg__resp-row">
+              <span className="dg__resp-lbl">Respuesta:</span>
+              <span className="dg__resp-zero">0.</span>
+              {['A', 'B', 'C'].map((ltr, i) => (
+                <span key={i} className={`dg__circ${i === exAnsIdx ? ' dg__circ--on' : ''}`}>
+                  {ltr}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className="dg__rule" />
+
+      {/* ── Questions ── */}
+      <div className="dg__items">
+        {questions.map((q, qi) => {
+          const mcq = q as MCQQuestion;
+          const sel = answers[mcq.id];
+          return (
+            <div key={mcq.id} className="dg__item">
+              <span className="dg__num">{startNum + qi}.</span>
+              <p className="dg__stmt">{mcq.stimulus}</p>
+              <div className="dg__opts">
+                {mcq.options.map((opt, oi) => (
+                  <button
+                    key={oi}
+                    className={`dg__opt${sel === oi ? ' dg__opt--sel' : ''}`}
+                    onClick={() => onAnswerById(mcq.id, oi)}
+                  >
+                    <span className="dg__opt-ltr">{String.fromCharCode(65 + oi)}</span>
+                    <span className="dg__opt-txt">{opt}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          Siguiente →
+        </button>
+      </div>
+    </div>
+  );
+}
+
 // ── Vocabulary matching grid (ICFES Parte 2) ─────────────────────────────────
 function MatchingGridSection({
   section,
@@ -109,8 +200,10 @@ function MatchingGridSection({
   onGoPrev,
   onGoNext,
   isFirstSection,
+  // startNum unused here (matching grid numbers by qi+6 logic internally)
 }: {
   section: MockSection;
+  startNum?: number;
   answers: Record<string, number>;
   onAnswerById: (qId: string, idx: number) => void;
   onGoPrev: () => void;
@@ -718,27 +811,30 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
       {/* Main layout */}
       <div className="prac-body">
         <div className="prac-main">
-          {currentSection?.sectionStyle === 'notices-grid' ? (
-            <NoticesGridSection
-              section={currentSection}
-              answers={answers}
-              onAnswerById={handleAnswerById}
-              onGoPrev={handlePrevSection}
-              onGoNext={handleNextSection}
-              isFirstSection={mock.sections[0].part === currentPart}
-              isLastSection={mock.sections[mock.sections.length - 1].part === currentPart}
-            />
-          ) : currentSection?.sectionStyle === 'matching-grid' ? (
-            <MatchingGridSection
-              section={currentSection}
-              answers={answers}
-              onAnswerById={handleAnswerById}
-              onGoPrev={handlePrevSection}
-              onGoNext={handleNextSection}
-              isFirstSection={mock.sections[0].part === currentPart}
-              isLastSection={mock.sections[mock.sections.length - 1].part === currentPart}
-            />
-          ) : (
+          {(() => {
+            const sectionStart = allQuestions.findIndex(q => q.part === currentPart) + 1;
+            const isFirst = mock.sections[0].part === currentPart;
+            const isLast = mock.sections[mock.sections.length - 1].part === currentPart;
+            const sharedProps = {
+              section: currentSection!,
+              answers,
+              onAnswerById: handleAnswerById,
+              onGoPrev: handlePrevSection,
+              onGoNext: handleNextSection,
+              isFirstSection: isFirst,
+              isLastSection: isLast,
+              startNum: sectionStart,
+            };
+            if (currentSection?.sectionStyle === 'notices-grid') {
+              return <NoticesGridSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'dialogs-grid') {
+              return <DialogsGridSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'matching-grid') {
+              return <MatchingGridSection {...sharedProps} />;
+            }
+            return (
             <QuestionView
               question={currentQuestion}
               section={currentSection}
@@ -758,7 +854,8 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
                 handleSubmit();
               }}
             />
-          )}
+            );
+          })()}
         </div>
 
         <aside className="prac-sidebar">

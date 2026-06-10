@@ -164,88 +164,62 @@ const mock: MockExam = {
     },
 
     // ── PARTE 3 ── Diálogos (preguntas 11–15) ────────────────────────────────
-    // Formato real: conversación con un espacio en blanco (___). 3 opciones.
-    // Nivel A2–B1.
+    // Formato real ICFES: una frase dicha por persona A → el estudiante
+    // elige la mejor respuesta (A, B o C). Sin texto auxiliar de pregunta.
+    // Nivel A2.
     {
       part: 3,
       title: 'Parte 3 — Diálogos',
+      sectionStyle: 'dialogs-grid',
+      exampleStimulus: 'I think I am getting sick.',
+      exampleAnswer: 'A',
       instructions:
-        'Read the following conversations (questions 11 to 15) and choose the option (A, B, or C) that best completes each one.',
+        'Complete las cinco conversaciones. En las preguntas 11 – 15, marque A, B ó C en su hoja de respuestas.',
       questions: [
         {
           type: 'dialog',
           id: 'p3q1',
           part: 3,
-          stimulusStyle: 'dialog-box',
-          stimulus:
-            'Passenger: "Excuse me, what time does the next bus to the city centre leave?"\nDriver: "I\'m not sure. Let me check the timetable for you."\nPassenger: ___',
-          text: 'What does the passenger most likely say?',
-          options: [
-            'The bus is always late around here.',
-            'Thanks, I appreciate it.',
-            'Do you know where the terminal is?',
-          ],
-          answer: 1,
+          stimulus: "We're from London.",
+          text: '',
+          options: ['Not at all.', 'Yes, please.', 'How interesting.'],
+          answer: 2,
         },
         {
           type: 'dialog',
           id: 'p3q2',
           part: 3,
-          stimulusStyle: 'dialog-box',
-          stimulus:
-            'Customer: "I\'d like to return this jacket. I bought it last week."\nShop assistant: "Of course. Do you have the receipt?"\nCustomer: ___',
-          text: 'What does the customer most likely say?',
-          options: [
-            'Yes, here it is.',
-            'The jacket is very expensive.',
-            'I don\'t like the colour.',
-          ],
-          answer: 0,
+          stimulus: 'I hate basketball.',
+          text: '',
+          options: ['You are, too.', 'I do, too.', 'It can, too.'],
+          answer: 1,
         },
         {
           type: 'dialog',
           id: 'p3q3',
           part: 3,
-          stimulusStyle: 'dialog-box',
-          stimulus:
-            'Teacher: "Has everyone finished the reading assignment for today?"\nStudent: "I\'m sorry, I forgot to bring mine."\nTeacher: ___',
-          text: 'What does the teacher most likely say?',
-          options: [
-            'The assignment was very difficult.',
-            'We\'ll discuss it in next week\'s class.',
-            'Make sure you hand it in tomorrow, please.',
-          ],
+          stimulus: 'I hope Andrew will get here soon.',
+          text: '',
+          options: ["I hope he hasn't.", 'He usually gets it.', "I'm sure he will."],
           answer: 2,
         },
         {
           type: 'dialog',
           id: 'p3q4',
           part: 3,
-          stimulusStyle: 'dialog-box',
-          stimulus:
-            'Sara: "Are you coming to Pedro\'s birthday party on Saturday?"\nLuis: "I\'d love to, but I\'m not sure I can make it."\nSara: ___',
-          text: 'What does Sara most likely say?',
-          options: [
-            'Let me know if you can come.',
-            'Pedro will not be happy.',
-            'The party starts at eight.',
-          ],
+          stimulus: "John's broken this plate.",
+          text: '',
+          options: ["It doesn't matter.", 'Here you are.', "That's very good."],
           answer: 0,
         },
         {
           type: 'dialog',
           id: 'p3q5',
           part: 3,
-          stimulusStyle: 'dialog-box',
-          stimulus:
-            'Tourist: "Excuse me, is there a pharmacy near here?"\nLocal: "Yes, there\'s one on the next block, next to the supermarket."\nTourist: ___',
-          text: 'What does the tourist most likely say?',
-          options: [
-            'I need to buy some medicine.',
-            'Is the supermarket open on Sundays?',
-            'Thank you very much.',
-          ],
-          answer: 2,
+          stimulus: 'When do you study?',
+          text: '',
+          options: ['At school.', 'In the evenings.', 'In the library.'],
+          answer: 1,
         },
       ],
     },
