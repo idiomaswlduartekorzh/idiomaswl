@@ -375,6 +375,144 @@ function MatchingGridSection({
   );
 }
 
+// ── Cloze text (ICFES Parte 4) ───────────────────────────────────────────────
+
+function renderClozePassage(text: string): React.ReactNode[] {
+  const segs: React.ReactNode[] = [];
+  const re = /\((\d+)\)\s*___/g;
+  let last = 0; let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) segs.push(text.slice(last, m.index));
+    segs.push(<mark key={m.index} className="cl__blank">({m[1]})</mark>);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) segs.push(text.slice(last));
+  return segs;
+}
+
+function ClozeSection({
+  section, answers, onAnswerById, onGoPrev, onGoNext, isFirstSection, isLastSection, startNum,
+}: {
+  section: MockSection; answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void; onGoNext: () => void;
+  isFirstSection: boolean; isLastSection: boolean; startNum: number;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  return (
+    <div className="cl">
+      <p className="cl__instr">{section.instructions}</p>
+
+      {section.passage && (
+        <div className="cl__passage">
+          <p className="cl__passage-text">{renderClozePassage(section.passage)}</p>
+        </div>
+      )}
+
+      <div className="cl__rule" />
+
+      <div className="cl__qs">
+        {questions.map((q, qi) => {
+          const sel = answers[q.id];
+          return (
+            <div key={q.id} className="cl__qrow">
+              <span className="cl__qnum">{startNum + qi}.</span>
+              <div className="cl__qopts">
+                {q.options.map((opt, oi) => (
+                  <button
+                    key={oi}
+                    className={`cl__qopt${sel === oi ? ' cl__qopt--sel' : ''}`}
+                    onClick={() => onAnswerById(q.id, oi)}
+                  >
+                    <strong>{String.fromCharCode(65 + oi)}.</strong>&nbsp;{opt}
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          {isLastSection ? 'Finalizar examen' : 'Siguiente →'}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ── Reading section (ICFES Partes 5–7) ───────────────────────────────────────
+
+function ReadingSection({
+  section, answers, onAnswerById, onGoPrev, onGoNext, isFirstSection, isLastSection, startNum,
+}: {
+  section: MockSection; answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void; onGoNext: () => void;
+  isFirstSection: boolean; isLastSection: boolean; startNum: number;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  return (
+    <div className="rd">
+      <p className="rd__instr">{section.instructions}</p>
+
+      <div className="rd__layout">
+        {/* Left column: passage */}
+        {section.passage && (
+          <div className="rd__passage-col">
+            {section.passageTitle && (
+              <p className="rd__passage-title">{section.passageTitle}</p>
+            )}
+            <div className="rd__passage">
+              <p className="rd__passage-text">{section.passage}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Right column: questions */}
+        <div className="rd__questions-col">
+          {questions.map((q, qi) => {
+            const sel = answers[q.id];
+            return (
+              <div key={q.id} className="rd__item">
+                <div className="rd__item-hd">
+                  <span className="rd__qnum">{startNum + qi}.</span>
+                  <p className="rd__qtext">{q.text}</p>
+                </div>
+                <div className="rd__opts">
+                  {q.options.map((opt, oi) => (
+                    <button
+                      key={oi}
+                      className={`rd__opt${sel === oi ? ' rd__opt--sel' : ''}`}
+                      onClick={() => onAnswerById(q.id, oi)}
+                    >
+                      <span className="rd__opt-ltr">{String.fromCharCode(65 + oi)}.</span>
+                      <span className="rd__opt-txt">{opt}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          {isLastSection ? 'Finalizar examen' : 'Siguiente →'}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function formatTime(secs: number) {
@@ -894,6 +1032,12 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
             }
             if (currentSection?.sectionStyle === 'matching-grid') {
               return <MatchingGridSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'cloze-text') {
+              return <ClozeSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'reading') {
+              return <ReadingSection {...sharedProps} />;
             }
             return (
             <QuestionView

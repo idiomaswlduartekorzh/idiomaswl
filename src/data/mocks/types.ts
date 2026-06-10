@@ -147,7 +147,8 @@ export interface MockSection {
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
   // ── Section layout variants ──────────────────────────────────────────────
-  sectionStyle?: 'matching-grid' | 'notices-grid' | 'dialogs-grid';
+  sectionStyle?: 'matching-grid' | 'notices-grid' | 'dialogs-grid' | 'cloze-text' | 'reading';
+  passageTitle?: string;  // shown as heading above the reading passage
   // matching-grid (ICFES Part 2)
   topic?: string;          // category title shown bold-centered, e.g. "Health"
   exampleText?: string;    // example question text

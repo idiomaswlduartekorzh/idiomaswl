@@ -231,6 +231,7 @@ const mock: MockExam = {
     {
       part: 4,
       title: 'Parte 4 — Completar el texto',
+      sectionStyle: 'cloze-text',
       instructions:
         'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
       passage:
@@ -310,6 +311,8 @@ const mock: MockExam = {
     {
       part: 5,
       title: 'Parte 5 — Comprensión de lectura: texto corto',
+      sectionStyle: 'reading',
+      passageTitle: 'The International Pen Pal Project',
       instructions:
         'Read the text and answer questions 24 to 30. Choose the best option (A, B, C, or D).',
       passage:
@@ -414,6 +417,8 @@ const mock: MockExam = {
     {
       part: 6,
       title: 'Parte 6 — Comprensión de lectura: texto largo',
+      sectionStyle: 'reading',
+      passageTitle: 'Making a Difference: The Green Neighbourhood Project',
       instructions:
         'Read the text and answer questions 31 to 35. Some questions require you to infer information from the text. Choose the best option (A, B, C, or D).',
       passage:
@@ -494,6 +499,8 @@ const mock: MockExam = {
     {
       part: 7,
       title: 'Parte 7 — Texto de opinión',
+      sectionStyle: 'reading',
+      passageTitle: 'Smartphones and Young People: A Question of Balance',
       instructions:
         'Read the text and answer questions 36 to 45. Choose the best option (A, B, C, or D).',
       passage:

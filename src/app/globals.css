@@ -3318,6 +3318,227 @@ button {
 [data-theme="dark"] .dg__opt--sel { background: rgba(200, 32, 46, 0.12); }
 
 
+/* ── ICFES cloze text (Parte 4) ──────────────────────────────────────────── */
+.cl {
+  padding: 0.5rem 0;
+}
+.cl__instr {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+.cl__passage {
+  background: var(--bg-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.cl__passage-text {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--ink);
+  margin: 0;
+}
+.cl__blank {
+  display: inline-block;
+  background: rgba(200, 32, 46, 0.09);
+  color: var(--accent);
+  font-weight: 700;
+  font-style: normal;
+  border-bottom: 2px solid var(--accent);
+  padding: 0 3px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  line-height: 1;
+  vertical-align: baseline;
+}
+.cl__rule {
+  border: none;
+  border-top: 2px solid var(--line-soft);
+  margin: 1rem 0 0.8rem;
+}
+.cl__qs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.cl__qrow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.cl__qrow:last-child { border-bottom: none; }
+.cl__qnum {
+  font-weight: 700;
+  font-size: 0.88rem;
+  min-width: 2rem;
+  padding-top: 0.25rem;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.cl__qopts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.cl__qopt {
+  padding: 0.28rem 0.7rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.84rem;
+  cursor: pointer;
+  background: transparent;
+  color: var(--ink);
+  transition: background 0.1s, border-color 0.1s;
+  white-space: nowrap;
+}
+.cl__qopt:hover { background: var(--bg-2); border-color: #aaa; }
+.cl__qopt--sel {
+  border-color: var(--accent);
+  background: rgba(200, 32, 46, 0.07);
+  font-weight: 600;
+}
+
+/* Dark mode */
+[data-theme="dark"] .cl__passage { background: #1a1c22; border-color: #2c2f36; }
+[data-theme="dark"] .cl__blank { background: rgba(200,32,46,0.15); }
+[data-theme="dark"] .cl__qrow { border-color: #2c2f36; }
+[data-theme="dark"] .cl__qopt { border-color: #383b42; }
+[data-theme="dark"] .cl__qopt:hover { background: #1a1c22; border-color: #555; }
+[data-theme="dark"] .cl__qopt--sel { background: rgba(200,32,46,0.14); }
+
+
+/* ── ICFES reading section (Partes 5–7) ──────────────────────────────────── */
+.rd {
+  padding: 0.5rem 0;
+}
+.rd__instr {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+.rd__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.8rem;
+  align-items: start;
+}
+.rd__passage-col {
+  position: sticky;
+  top: 8px;
+  align-self: start;
+}
+.rd__passage-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.rd__passage {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+  max-height: 74vh;
+  overflow-y: auto;
+  background: var(--bg);
+  scrollbar-width: thin;
+}
+.rd__passage-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--ink);
+  margin: 0;
+  white-space: pre-line;
+}
+.rd__questions-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.rd__item {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.rd__item:last-child { border-bottom: none; }
+.rd__item-hd {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.rd__qnum {
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  padding-top: 0.05rem;
+  color: var(--ink);
+}
+.rd__qtext {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0;
+}
+.rd__opts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  padding-left: 1.4rem;
+}
+.rd__opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding: 0.28rem 0.6rem;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  font-size: 0.86rem;
+  color: var(--ink);
+  transition: background 0.1s;
+}
+.rd__opt:hover { background: var(--bg-2); }
+.rd__opt--sel {
+  border-color: var(--accent);
+  background: rgba(200, 32, 46, 0.06);
+  font-weight: 500;
+}
+.rd__opt-ltr {
+  font-weight: 700;
+  min-width: 1.1rem;
+  flex-shrink: 0;
+}
+.rd__opt-txt { flex: 1; line-height: 1.4; }
+
+/* Mobile: stack passage above questions */
+@media (max-width: 700px) {
+  .rd__layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .rd__passage-col { position: static; }
+  .rd__passage { max-height: 40vh; }
+  .rd__opts { padding-left: 1rem; }
+}
+
+/* Dark mode */
+[data-theme="dark"] .rd__passage { background: #1a1c22; border-color: #2c2f36; }
+[data-theme="dark"] .rd__item { border-color: #2c2f36; }
+[data-theme="dark"] .rd__opt:hover { background: #1a1c22; }
+[data-theme="dark"] .rd__opt--sel { background: rgba(200,32,46,0.12); }
+
+
 /* ---- IELTS Practice ---- */
 
 /* Skill tabs */
