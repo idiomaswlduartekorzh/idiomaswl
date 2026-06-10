@@ -104,7 +104,7 @@ export default function StreamClient({
 
   // ── Realtime ───────────────────────────────────────────────────────────────
   useEffect(() => {
-    const ch = supabase.channel(`stream_${session.id}`)
+    const ch = supabase!.channel(`stream_${session.id}`)
       .on('postgres_changes', {
         event: 'UPDATE', schema: 'public', table: 'game_sessions',
         filter: `id=eq.${session.id}`,
@@ -151,7 +151,7 @@ export default function StreamClient({
         setVotes(prev => ({ ...prev, [k]: prev[k] + 1 }))
       })
       .subscribe()
-    return () => { supabase.removeChannel(ch) }
+    return () => { supabase!.removeChannel(ch) }
   }, [session.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const question = set.questions[qIndex]

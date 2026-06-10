@@ -62,7 +62,7 @@ export default function AdminSessionClient({ session: init, set, initialParticip
   const pct = (id:'A'|'B'|'C'|'D') => totalVotes === 0 ? 0 : Math.round((votes[id]/totalVotes)*100)
 
   useEffect(() => {
-    const ch = supabase.channel(`admin_${init.id}`)
+    const ch = supabase!.channel(`admin_${init.id}`)
       .on('postgres_changes', { event:'UPDATE', schema:'public', table:'game_sessions', filter:`id=eq.${init.id}` },
         (p) => {
           const s = p.new as Session
@@ -76,7 +76,7 @@ export default function AdminSessionClient({ session: init, set, initialParticip
       .on('postgres_changes', { event:'INSERT', schema:'public', table:'game_answers', filter:`session_id=eq.${init.id}` },
         (p) => setA(prev => [...prev, p.new as Answer]))
       .subscribe()
-    return () => { supabase.removeChannel(ch) }
+    return () => { supabase!.removeChannel(ch) }
   }, [init.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const act = useCallback(async (s: SessionStatus, idx?: number) => {

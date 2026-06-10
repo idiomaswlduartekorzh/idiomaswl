@@ -70,7 +70,7 @@ export default function ParticipantClient({ session, set }: Props) {
 
   // Realtime session updates
   useEffect(() => {
-    const ch = supabase.channel(`part_${session.id}`)
+    const ch = supabase!.channel(`part_${session.id}`)
       .on('postgres_changes', {
         event: 'UPDATE', schema: 'public', table: 'game_sessions',
         filter: `id=eq.${session.id}`,
@@ -83,7 +83,7 @@ export default function ParticipantClient({ session, set }: Props) {
         else stopTimer()
       })
       .subscribe()
-    return () => { supabase.removeChannel(ch) }
+    return () => { supabase!.removeChannel(ch) }
   }, [session.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleJoin = async () => {
