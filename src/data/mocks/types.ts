@@ -17,6 +17,7 @@ export interface MCQQuestion {
   part: number;
   stimulus?: string;
   stimulusLabel?: string;
+  stimulusStyle?: 'notice' | 'sign' | 'dialog-box'; // visual treatment of stimulus
   text: string;
   options: string[];
   answer: number; // 0-indexed
@@ -139,7 +140,8 @@ export interface MockSection {
   title: string;
   skill?: 'listening' | 'reading' | 'writing' | 'speaking' | 'general';
   instructions: string;
-  passage?: string;
+  passage?: string;        // shared reading passage shown above every question
+  sectionNote?: string;    // e.g. word bank shown above Part 2 questions
   transcript?: string;
   audioUrl?: string;       // URL to audio file (if available)
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge

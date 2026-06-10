@@ -3,434 +3,359 @@ import type { MockExam } from './types';
 const mock: MockExam = {
   id: 'mock-01',
   examSlug: 'icfes',
-  title: 'Mock 1 · Rutinas y ciudad',
-  subtitle: 'Saber 11 · Componente de Inglés · 55 preguntas · 60 minutos',
+  title: 'Mock 1 · Vida cotidiana y ciudad',
+  subtitle: 'Saber 11 · Componente de Inglés · 45 preguntas · 60 minutos',
   timeMinutes: 60,
   sections: [
+    // ── PARTE 1 — Avisos e instrucciones (5q, 3 opciones) ──────────────────
     {
       part: 1,
-      title: 'Parte 1 — Vocabulario: relacionar palabras',
-      instructions: 'Match each word with its correct description.',
+      title: 'Parte 1 — Avisos e instrucciones',
+      instructions:
+        'Look at the following signs and notices. Choose the place where you would most likely see each one.',
       questions: [
         {
           type: 'mcq',
           id: 'p1q1',
           part: 1,
-          text: 'A place in the city where you can borrow books for free.',
-          options: ['Supermarket', 'Library', 'Hospital', 'Museum'],
+          stimulusStyle: 'notice',
+          stimulus:
+            'PLEASE DO NOT FEED THE ANIMALS\nThank you for keeping them safe and healthy.',
+          text: 'Where would you most likely see this notice?',
+          options: ['In a restaurant', 'In a zoo or wildlife park', 'At a train station'],
           answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q2',
           part: 1,
-          text: 'The daily activities that someone does at the same time every day.',
-          options: ['Routine', 'Festival', 'Emergency', 'Schedule'],
-          answer: 0,
+          stimulusStyle: 'notice',
+          stimulus:
+            'QUIET PLEASE\nExaminations in progress.\nStudents must not be disturbed.',
+          text: 'Where would you most likely see this sign?',
+          options: ['In a supermarket', 'At a sports field', 'At a school or university'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p1q3',
           part: 1,
-          text: 'A vehicle that travels underground and carries many passengers.',
-          options: ['Taxi', 'Tram', 'Subway', 'Ferry'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'CAUTION — WET FLOOR\nPlease use the other entrance.\nCleaning in progress.',
+          text: 'Where would you most likely see this sign?',
+          options: [
+            'In an office or shopping mall',
+            'At a beach',
+            'On a highway',
+          ],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'p1q4',
           part: 1,
-          text: 'An outdoor area in a city with grass, trees, and benches where people relax.',
-          options: ['Parking lot', 'Park', 'Market', 'Sidewalk'],
-          answer: 1,
+          stimulusStyle: 'notice',
+          stimulus:
+            'DANGER — HIGH VOLTAGE\nDo not touch.\nAuthorized personnel only.',
+          text: 'Where would you most likely see this sign?',
+          options: [
+            'Near electrical equipment or a power station',
+            'In a hospital waiting room',
+            'At a public swimming pool',
+          ],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'p1q5',
           part: 1,
-          text: 'To move from one home or city to another to live there.',
-          options: ['Travel', 'Commute', 'Relocate', 'Visit'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'SALE NOW ON!\nUp to 50% off all winter clothing.\nThis weekend only. While stocks last.',
+          text: 'Where would you most likely see this notice?',
+          options: [
+            'At a bus terminal',
+            'In a clothing store or shopping center',
+            'At a hospital',
+          ],
+          answer: 1,
         },
       ],
     },
+
+    // ── PARTE 2 — Vocabulario: relacionar palabras (5q, banco A–G) ─────────
     {
       part: 2,
-      title: 'Parte 2 — Diálogos',
-      instructions: 'Read each dialogue and choose the best response to complete it.',
+      title: 'Parte 2 — Vocabulario: relacionar palabras',
+      instructions:
+        'Match each description with the correct word from the box. There are two extra words you do not need to use.',
+      sectionNote:
+        'A. schedule   B. receipt   C. commute   D. pharmacist   E. crosswalk   F. fine   G. volunteer',
       questions: [
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q1',
           part: 2,
-          stimulus: 'Person A: "Excuse me, how do I get to the train station from here?"\nPerson B: _______',
-          text: 'What is the best response for Person B?',
+          text: 'A marked area painted on the road where pedestrians can safely cross the street.',
           options: [
-            '"The station is usually very busy at this time."',
-            '"Sorry, I\'m not from around here either."',
-            '"Go straight ahead and turn left at the traffic light."',
-            '"Trains run every 30 minutes from platform 2."',
+            'A. schedule',
+            'B. receipt',
+            'C. commute',
+            'D. pharmacist',
+            'E. crosswalk',
+            'F. fine',
+            'G. volunteer',
           ],
-          answer: 2,
+          answer: 4,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q2',
           part: 2,
-          stimulus: 'Cashier: "That will be twelve dollars and fifty cents, please."\nCustomer: _______',
-          text: 'What does the customer say next?',
+          text: 'A document given to a customer as proof of payment after buying something.',
           options: [
-            '"Here you go. Keep the change."',
-            '"Do you accept credit cards?"',
-            '"I only have a fifty. Do you have change?"',
-            '"Is there a discount for members?"',
+            'A. schedule',
+            'B. receipt',
+            'C. commute',
+            'D. pharmacist',
+            'E. crosswalk',
+            'F. fine',
+            'G. volunteer',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q3',
           part: 2,
-          stimulus: 'Receptionist: "Good morning! Do you have a reservation?"\nGuest: "No, I don\'t. Do you have any rooms available?"\nReceptionist: _______',
-          text: 'What does the receptionist say?',
+          text: 'A trained health professional who works in a pharmacy and prepares and sells medicines.',
           options: [
-            '"I\'m afraid we\'re fully booked this weekend."',
-            '"Check-in time is at three in the afternoon."',
-            '"Could I see some identification, please?"',
-            '"Let me check for you. What type of room do you need?"',
+            'A. schedule',
+            'B. receipt',
+            'C. commute',
+            'D. pharmacist',
+            'E. crosswalk',
+            'F. fine',
+            'G. volunteer',
           ],
           answer: 3,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q4',
           part: 2,
-          stimulus: 'Friend A: "I\'m really tired today. I couldn\'t sleep last night."\nFriend B: _______',
-          text: 'What is the most natural response from Friend B?',
+          text: 'A list that shows the times when services such as buses, trains, or events take place.',
           options: [
-            '"You should go to bed earlier."',
-            '"I had a great time at the party."',
-            '"What time does your bus arrive?"',
-            '"The coffee shop is closed."',
+            'A. schedule',
+            'B. receipt',
+            'C. commute',
+            'D. pharmacist',
+            'E. crosswalk',
+            'F. fine',
+            'G. volunteer',
           ],
           answer: 0,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q5',
           part: 2,
-          stimulus: 'Teacher: "Did everyone finish the homework?"\nStudent: _______',
-          text: 'Which response is most appropriate?',
+          text: 'A sum of money that a person must pay as a punishment for breaking a rule or law.',
           options: [
-            '"I didn\'t have time. Could I hand it in tomorrow?"',
-            '"Actually, I wasn\'t sure what the assignment was."',
-            '"I finished it, but question five was difficult."',
-            '"We had a lot of tests this week."',
+            'A. schedule',
+            'B. receipt',
+            'C. commute',
+            'D. pharmacist',
+            'E. crosswalk',
+            'F. fine',
+            'G. volunteer',
           ],
-          answer: 2,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q6',
-          part: 2,
-          stimulus: 'Doctor: "How long have you had this headache?"\nPatient: _______',
-          text: 'What does the patient say?',
-          options: [
-            '"I take the bus to get here."',
-            '"My sister is also a doctor."',
-            '"Since yesterday afternoon. It\'s getting worse."',
-            '"The pharmacy is next to the hospital."',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q7',
-          part: 2,
-          stimulus: 'Colleague A: "We have a meeting at three o\'clock. Can you make it?"\nColleague B: "I\'m not sure. I have another appointment at two-thirty."\nColleague A: _______',
-          text: 'What does Colleague A say?',
-          options: [
-            '"If you can\'t come, just let me know so I can inform the team."',
-            '"The meeting room is on the fourth floor."',
-            '"We could move it to three-thirty if that works better."',
-            '"I prefer to have meetings in the morning."',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q8',
-          part: 2,
-          stimulus: 'Tourist: "Is this bus going to the city center?"\nDriver: _______',
-          text: 'What is the driver\'s most helpful response?',
-          options: [
-            '"The next bus comes in about ten minutes."',
-            '"You should check the route map at the stop."',
-            '"I drive this route every day."',
-            '"Yes, it stops right in front of the main square."',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q9',
-          part: 2,
-          stimulus: 'Librarian: "Can I help you find something?"\nStudent: "Yes, I\'m looking for books about urban planning."\nLibrarian: _______',
-          text: 'What does the librarian say?',
-          options: [
-            '"Follow me. Those books are in section C on the second floor."',
-            '"You might want to start with our digital catalog."',
-            '"We just received some new books on that topic."',
-            '"Urban planning is a very popular subject these days."',
-          ],
-          answer: 0,
+          answer: 5,
         },
       ],
     },
+
+    // ── PARTE 3 — Diálogos (5q, 3 opciones) ───────────────────────────────
     {
       part: 3,
-      title: 'Parte 3 — Completar oraciones',
-      instructions: 'Choose the word or phrase that best completes each sentence.',
+      title: 'Parte 3 — Diálogos',
+      instructions:
+        'Read each conversation and choose the best response to complete it.',
       questions: [
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q1',
           part: 3,
-          text: 'Maria _______ to work by bicycle every morning because she lives close to the office.',
-          options: ['is going', 'goes', 'went', 'will go'],
-          answer: 1,
+          stimulusStyle: 'dialog-box',
+          stimulus:
+            'Customer: "Excuse me, do you have this jacket in a larger size?"\nShop assistant: ________',
+          text: 'What does the shop assistant say?',
+          options: [
+            "I'll check in the stockroom for you.",
+            'The jackets are on the second floor.',
+            'We accept returns within 30 days.',
+          ],
+          answer: 0,
         },
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q2',
           part: 3,
-          text: 'The city _______ a new public library next year to serve the growing community.',
-          options: ['is building', 'was built', 'built', 'had built'],
-          answer: 0,
+          stimulusStyle: 'dialog-box',
+          stimulus:
+            'María: "I haven\'t seen you in ages! How have you been?"\nCarlos: "Pretty good, actually. I just started a new job."\nMaría: ________',
+          text: 'What does María say next?',
+          options: [
+            'What time do you usually get there?',
+            "That's great! What do you do now?",
+            "I've been looking for a job too.",
+          ],
+          answer: 1,
         },
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q3',
           part: 3,
-          text: 'If you want to catch the bus, you _______ leave now because it departs in five minutes.',
-          options: ['might', 'should', 'could', 'would'],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q4',
-          part: 3,
-          text: 'The streets were very _______ this morning because of the heavy rain.',
-          options: ['traffic', 'crowded', 'quiet', 'noisy'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q5',
-          part: 3,
-          text: 'My brother has lived in this city _______ he was a child.',
-          options: ['for', 'during', 'since', 'while'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q6',
-          part: 3,
-          text: 'The new metro line will _______ travel time across the city by almost 30 minutes.',
-          options: ['increase', 'extend', 'reduce', 'change'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q7',
-          part: 3,
-          text: 'People who live in the city center often _______ public transport instead of driving.',
-          options: ['use', 'make', 'take of', 'go'],
+          stimulusStyle: 'dialog-box',
+          stimulus:
+            'Receptionist: "Good morning. How can I help you?"\nPatient: "I\'d like to make an appointment with Dr. Gómez, please."\nReceptionist: ________',
+          text: 'What does the receptionist say?',
+          options: [
+            'Are you a new or returning patient?',
+            'Dr. Gómez is very experienced.',
+            'Our clinic closes at 6 p.m.',
+          ],
           answer: 0,
         },
         {
-          type: 'mcq',
-          id: 'p3q8',
+          type: 'dialog',
+          id: 'p3q4',
           part: 3,
-          text: 'Before the presentation, she _______ her notes three times to make sure everything was correct.',
-          options: ['review', 'reviewed', 'is reviewing', 'reviews'],
+          stimulusStyle: 'dialog-box',
+          stimulus:
+            'Tom: "Should I bring anything to the party?"\nLisa: "Just yourself! Everything is taken care of."\nTom: ________',
+          text: 'What does Tom say?',
+          options: [
+            'How many people are coming?',
+            "That's a relief! See you there.",
+            'I can bring some food if you like.',
+          ],
           answer: 1,
         },
         {
-          type: 'mcq',
-          id: 'p3q9',
+          type: 'dialog',
+          id: 'p3q5',
           part: 3,
-          text: 'The city council decided _______ a new cycling lane along the main avenue.',
-          options: ['add', 'adding', 'to add', 'have added'],
-          answer: 2,
+          stimulusStyle: 'dialog-box',
+          stimulus:
+            'Teacher: "Your project is due next Friday."\nStudent: "Excuse me, can we hand it in earlier if we\'re finished?"\nTeacher: ________',
+          text: 'What does the teacher say?',
+          options: [
+            'Of course. You can submit it whenever you are ready.',
+            'The project must be at least five pages long.',
+            "Yes, we'll discuss the topics tomorrow.",
+          ],
+          answer: 0,
         },
       ],
     },
+
+    // ── PARTE 4 — Completar el texto (cloze, 8q) ──────────────────────────
     {
       part: 4,
-      title: 'Parte 4 — Comprensión visual',
-      instructions: 'Read the notice or sign and answer the questions that follow.',
+      title: 'Parte 4 — Completar el texto',
+      instructions:
+        'Read the text below. Choose the word (A, B, C or D) that best fits each blank.',
+      passage:
+        'The Medellín Metro is an important (1) ___ of the city\'s public transport system. It connects different parts of the city and helps thousands of people (2) ___ from one place to another every day. The metro has two lines that cross in the center of the city. To use it, passengers need to buy a prepaid card (3) ___ a station or through an app. The card can be recharged (4) ___ any of the 27 stations on the network. The metro runs (5) ___ five in the morning until eleven at night. During rush hours, trains can (6) ___ very crowded, especially between 7 and 9 in the morning. Many commuters (7) ___ to arrive earlier to avoid the crowds. The metro was created to (8) ___ the traffic problems that affected the city for many years.',
       questions: [
         {
           type: 'mcq',
           id: 'p4q1',
           part: 4,
-          stimulus: '--- NOTICE ---\nCITY PARK\nOpen daily: 6:00 AM – 9:00 PM\nDogs must be on leash at all times.\nNo food or drinks near the fountain area.\nFree Wi-Fi available at the main pavilion.',
-          stimulusLabel: 'Read the park notice.',
-          text: 'What must dog owners do when they are in the park?',
-          options: [
-            'Leave the park before 9 PM.',
-            'Stay near the fountain area.',
-            'Connect to the free Wi-Fi.',
-            'Keep their dogs on a leash.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (1).',
+          options: ['piece', 'part', 'section', 'area'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q2',
           part: 4,
-          stimulus: '--- NOTICE ---\nCITY PARK\nOpen daily: 6:00 AM – 9:00 PM\nDogs must be on leash at all times.\nNo food or drinks near the fountain area.\nFree Wi-Fi available at the main pavilion.',
-          stimulusLabel: 'Read the park notice.',
-          text: 'Where can visitors use the internet for free?',
-          options: [
-            'Near the fountain.',
-            'At the park entrance.',
-            'At the main pavilion.',
-            'In the dog area.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (2).',
+          options: ['travel', 'walked', 'commuted', 'move'],
+          answer: 3,
         },
         {
           type: 'mcq',
           id: 'p4q3',
           part: 4,
-          stimulus: 'BUS SCHEDULE — ROUTE 12\nMonday to Friday: Every 15 minutes from 5:30 AM to 11:00 PM\nSaturday: Every 20 minutes from 7:00 AM to 10:00 PM\nSunday: Every 30 minutes from 8:00 AM to 8:00 PM\n* No service on public holidays.',
-          stimulusLabel: 'Look at the bus schedule.',
-          text: 'How often does Bus Route 12 run on Saturdays?',
-          options: [
-            'Every 15 minutes.',
-            'Every 30 minutes.',
-            'Every 20 minutes.',
-            'Every hour.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (3).',
+          options: ['in', 'at', 'on', 'by'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q4',
           part: 4,
-          stimulus: 'BUS SCHEDULE — ROUTE 12\nMonday to Friday: Every 15 minutes from 5:30 AM to 11:00 PM\nSaturday: Every 20 minutes from 7:00 AM to 10:00 PM\nSunday: Every 30 minutes from 8:00 AM to 8:00 PM\n* No service on public holidays.',
-          stimulusLabel: 'Look at the bus schedule.',
-          text: 'Which statement about Route 12 is TRUE?',
-          options: [
-            'It does not operate on public holidays.',
-            'It runs every day of the year.',
-            'It starts at 5:30 AM on Sundays.',
-            'It runs until midnight on weekdays.',
-          ],
-          answer: 0,
+          text: 'Choose the best word for blank (4).',
+          options: ['every', 'all', 'any', 'each'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q5',
           part: 4,
-          stimulus: 'COMMUNITY CENTER\nEnglish Conversation Club\nEvery Wednesday, 6:00 PM – 7:30 PM\nRoom 204\nFree for all residents.\nNo registration required — just show up!\nContact: info@communitycenter.org',
-          stimulusLabel: 'Read the flyer.',
-          text: 'Who can attend the English Conversation Club?',
-          options: [
-            'Only registered members.',
-            'People who speak advanced English.',
-            'All residents, for free.',
-            'Students from the local school only.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (5).',
+          options: ['from', 'since', 'between', 'during'],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'p4q6',
           part: 4,
-          stimulus: 'COMMUNITY CENTER\nEnglish Conversation Club\nEvery Wednesday, 6:00 PM – 7:30 PM\nRoom 204\nFree for all residents.\nNo registration required — just show up!\nContact: info@communitycenter.org',
-          stimulusLabel: 'Read the flyer.',
-          text: 'What does "No registration required" mean?',
-          options: [
-            'You cannot join if you are not registered.',
-            'The club is not accepting new members.',
-            'You must pay a registration fee.',
-            'You do not need to sign up in advance.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (6).',
+          options: ['be', 'become', 'get', 'turn'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q7',
           part: 4,
-          stimulus: 'ROAD WORKS AHEAD\nLane closure: Monday 14 Apr – Friday 18 Apr\nExpect delays of up to 20 minutes\nFollow diversionary route via Oak Street\nWe apologize for any inconvenience.',
-          stimulusLabel: 'Read the road sign.',
-          text: 'What should drivers expect during the road works?',
-          options: [
-            'There will be delays of up to 20 minutes.',
-            'The road will be completely closed.',
-            'The works will last for one month.',
-            'All vehicles must use the highway.',
-          ],
+          text: 'Choose the best word for blank (7).',
+          options: ['prefer', 'want', 'plan', 'decide'],
           answer: 0,
         },
         {
           type: 'mcq',
           id: 'p4q8',
           part: 4,
-          stimulus: 'ROAD WORKS AHEAD\nLane closure: Monday 14 Apr – Friday 18 Apr\nExpect delays of up to 20 minutes\nFollow diversionary route via Oak Street\nWe apologize for any inconvenience.',
-          stimulusLabel: 'Read the road sign.',
-          text: 'What alternative route do drivers need to take?',
-          options: [
-            'Through the city center.',
-            'On the highway.',
-            'Via Oak Street.',
-            'Using the northern bypass.',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p4q9',
-          part: 4,
-          stimulus: 'APARTMENT FOR RENT\n2 bedrooms · 1 bathroom · 65 m2\nFurnished · 4th floor · No elevator\nMonthly rent: $650 (utilities not included)\nPets: small dogs only\nAvailable: July 1st\nCall 555-0192',
-          stimulusLabel: 'Read the rental advertisement.',
-          text: 'Which statement about the apartment is TRUE?',
-          options: [
-            'Utilities are included in the rent.',
-            'The apartment is available immediately.',
-            'Large dogs are not allowed.',
-            'The apartment is on the ground floor.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (8).',
+          options: ['fix', 'avoid', 'increase', 'reduce'],
+          answer: 3,
         },
       ],
     },
+
+    // ── PARTE 5 — Texto corto: comprensión (7q) ───────────────────────────
     {
       part: 5,
-      title: 'Parte 5 — Texto corto',
-      instructions: 'Read the text and answer the questions.',
+      title: 'Parte 5 — Comprensión de lectura: texto corto',
+      instructions:
+        'Read the following text and answer the questions. Choose the best option (A, B, C or D).',
+      passage:
+        "In recent years, urban gardening has become very popular in Bogotá. Many residents have started growing their own vegetables on rooftops, balconies, and even in small shared spaces in their neighborhoods.\n\nThe trend began as a way to access fresh food at lower costs. However, it has grown into much more than that. Community gardens have become meeting points where neighbors share seeds, exchange knowledge, and build stronger relationships. In some districts, schools have also created garden spaces to teach students about nature and healthy eating.\n\nThe city government has supported the movement by offering workshops and donating gardening materials to low-income communities. These programs aim to improve both food security and community well-being.\n\nHowever, urban gardening also presents challenges. Limited space, pollution, and water access are common problems, especially in densely populated areas. Some experts argue that without proper planning, gardens in polluted urban environments could actually make produce less safe to eat.\n\nDespite these concerns, most participants report that urban gardening has had a positive impact on their lives. They mention benefits such as reduced grocery bills, improved mental health, and a greater sense of community.",
       questions: [
         {
           type: 'mcq',
           id: 'p5q1',
           part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the main purpose of the CityBike program?',
+          text: 'What is the main topic of the text?',
           options: [
-            'To replace all buses in the city.',
-            'To offer an alternative way to travel short distances.',
-            'To encourage people to buy bicycles.',
-            'To reduce the cost of public transport.',
+            'The history of farming in Colombia',
+            'A growing trend in city gardens and its effects',
+            'How the government controls food production',
+            'The problems with pollution in Bogotá',
           ],
           answer: 1,
         },
@@ -438,41 +363,25 @@ The program has been very popular. In its first six months, over 25,000 people s
           type: 'mcq',
           id: 'p5q2',
           part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How much does a user pay for a 45-minute bike trip without a monthly subscription?',
+          text: 'According to the text, why did urban gardening first start in Bogotá?',
           options: [
-            'Nothing — all trips are free.',
-            '$0.50',
-            '$1.00',
-            '$8.00',
+            'To protect the local environment',
+            'Because schools encouraged it as a project',
+            'To access fresh food at lower prices',
+            'As a government-funded initiative',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p5q3',
           part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'According to the text, what has the CityBike program helped improve?',
+          text: 'What role have community gardens played in neighborhoods?',
           options: [
-            'Road infrastructure and lighting.',
-            'Traffic and air quality in the city center.',
-            'The number of buses on the road.',
-            'The price of gasoline in the city.',
+            'They have replaced traditional food markets.',
+            'They have helped people connect and share knowledge.',
+            'They have reduced crime rates significantly.',
+            'They have created new jobs for local residents.',
           ],
           answer: 1,
         },
@@ -480,41 +389,25 @@ The program has been very popular. In its first six months, over 25,000 people s
           type: 'mcq',
           id: 'p5q4',
           part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Which word in the text is closest in meaning to "started"?',
+          text: 'What support has the city government provided to the urban gardening movement?',
           options: [
-            'launched',
-            'registered',
-            'completed',
-            'reduced',
+            'It built new parks with large garden areas.',
+            'It reduced taxes for garden supply stores.',
+            'It offered workshops and donated gardening materials.',
+            'It made it compulsory for schools to create gardens.',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p5q5',
           part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What can be inferred about the CityBike program?',
+          text: 'What is one challenge that urban gardening faces in big cities?',
           options: [
-            'Most users prefer it only for long distances.',
-            'The program was not well received by residents.',
-            'The program was more successful than expected.',
-            'City officials want to shut it down after one year.',
+            'Too many volunteers without proper coordination',
+            'Lack of public interest in growing vegetables',
+            'Limited space and difficulty accessing water',
+            'Very high prices for imported plant seeds',
           ],
           answer: 2,
         },
@@ -522,342 +415,148 @@ The program has been very popular. In its first six months, over 25,000 people s
           type: 'mcq',
           id: 'p5q6',
           part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How do people register for CityBike?',
+          text: 'What concern do some experts have about urban gardens in polluted areas?',
           options: [
-            'By calling a phone number.',
-            'Only at city hall.',
-            'Online or at any station with an ID.',
-            'By sending an email to the program.',
+            'Gardens could attract insects into homes.',
+            'Produce grown there might not be safe to eat.',
+            'Urban gardens reduce available green spaces.',
+            'Growing vegetables inside wastes too much energy.',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q7',
           part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How many bicycle stations are available in the city?',
-          options: ['25', '60', '200', '500'],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q8',
-          part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What benefit does a monthly subscription offer compared to paying per trip?',
-          options: [
-            'It allows unlimited trips of any length for free.',
-            'It provides unlimited 45-minute rides for $8.',
-            'It gives a discount on public bus fares.',
-            'It allows users to rent the bike overnight.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q9',
-          part: 5,
-          stimulus: `City Bikes: A New Way to Commute
-
-Last year, the city of Medellin launched a new bike-sharing program called CityBike. With over 500 bicycles available at 60 stations across the city, residents can now rent a bike for short trips instead of using a car or bus.
-
-To use the service, people register online or at any station using their ID card. The first 30 minutes of each trip are free, and after that, users pay a small fee of $0.50 per additional 15 minutes. A monthly subscription costs $8 and gives unlimited 45-minute rides.
-
-The program has been very popular. In its first six months, over 25,000 people signed up and more than 200,000 trips were completed. City officials say that the program has helped reduce traffic and air pollution in the city center.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The word "residents" in the text refers to:',
-          options: [
-            'Tourists visiting the city.',
-            'City government officials.',
-            'People who live in the city.',
-            'Bus and taxi drivers.',
-          ],
+          text: 'What does the word "densely" mean in paragraph 4?',
+          options: ['Slowly', 'Recently', 'Heavily', 'Carefully'],
           answer: 2,
         },
       ],
     },
+
+    // ── PARTE 6 — Texto largo: inferencia (5q) ────────────────────────────
     {
       part: 6,
-      title: 'Parte 6 — Texto largo: inferencia',
-      instructions: 'Read the longer text carefully and answer the questions. Use inference and context clues.',
+      title: 'Parte 6 — Comprensión de lectura: texto largo',
+      instructions:
+        'Read the following text and answer the questions. Some answers require you to infer information from the text.',
+      passage:
+        "Access to technology is no longer a luxury — for many people, it is a necessity. Yet millions around the world, including many in Colombia, still lack reliable internet access and digital devices. This gap is known as the 'digital divide,' and it continues to grow as society becomes increasingly dependent on technology.\n\nIn rural areas, poor infrastructure means that internet connections are often slow or nonexistent. Even when connectivity exists, high device costs and data plans make them unaffordable for low-income families. In cities, the situation is somewhat better, but significant inequalities remain between wealthy and poor neighborhoods.\n\nEducation has been one of the areas most severely impacted. During the COVID-19 pandemic, schools across Colombia moved to online learning. Students with computers and internet access could continue their studies, while others fell behind or dropped out entirely. This widening gap threatens to deepen existing social inequalities for an entire generation.\n\nExperts argue that providing hardware and connectivity is not enough. Teachers must also receive training, and communities must develop the digital skills needed to benefit from online resources.\n\nWithout access to digital tools, people are excluded from educational opportunities, job markets, and civic participation. Bridging this gap is essential — not only for individual advancement, but for the development of society as a whole.",
       questions: [
         {
           type: 'mcq',
           id: 'p6q1',
           part: 6,
-          stimulus: `The Changing Face of City Centers
-
-For decades, city centers around the world were dominated by cars. Wide roads, large parking lots, and fast-moving traffic made walking or cycling unpleasant and dangerous. Many shops closed as people preferred to drive to out-of-town malls. City centers became dirty, noisy, and less attractive.
-
-However, a major shift has been happening over the last 20 years. Many cities have begun to redesign their centers by reducing car traffic and creating more space for pedestrians and cyclists. In Oslo, Norway, the city removed nearly all car parking from the center in 2019. In Barcelona, Spain, the "superblocks" project transformed certain street areas into car-free zones with seating, gardens, and play areas.
-
-The results have been largely positive. Local businesses report higher foot traffic and increased sales. Residents say they feel safer and the air quality has improved. Children can play outside again. The streets feel alive.
-
-Critics, however, argue that these changes hurt people who depend on cars, particularly those with disabilities or who live far from the city center and cannot easily use public transport. They call for a more balanced approach that considers everyone's needs.
-
-Despite these concerns, the trend continues. More cities are experimenting with pedestrianization, green spaces, and smarter public transport. The goal is not to ban cars entirely, but to give people better options and make city centers places where people want to be, not just pass through.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the main idea of the text?',
+          text: "What is the 'digital divide,' according to the text?",
           options: [
-            'City centers are being redesigned to prioritize people over cars.',
-            'Cars should be completely banned from all city centers.',
-            'Shopping malls have destroyed traditional city centers.',
-            'Public transport is the only solution to urban traffic problems.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q2',
-          part: 6,
-          stimulus: `The Changing Face of City Centers
-
-For decades, city centers around the world were dominated by cars. Wide roads, large parking lots, and fast-moving traffic made walking or cycling unpleasant and dangerous. Many shops closed as people preferred to drive to out-of-town malls. City centers became dirty, noisy, and less attractive.
-
-However, a major shift has been happening over the last 20 years. Many cities have begun to redesign their centers by reducing car traffic and creating more space for pedestrians and cyclists. In Oslo, Norway, the city removed nearly all car parking from the center in 2019. In Barcelona, Spain, the "superblocks" project transformed certain street areas into car-free zones with seating, gardens, and play areas.
-
-The results have been largely positive. Local businesses report higher foot traffic and increased sales. Residents say they feel safer and the air quality has improved. Children can play outside again. The streets feel alive.
-
-Critics, however, argue that these changes hurt people who depend on cars, particularly those with disabilities or who live far from the city center and cannot easily use public transport. They call for a more balanced approach that considers everyone's needs.
-
-Despite these concerns, the trend continues. More cities are experimenting with pedestrianization, green spaces, and smarter public transport. The goal is not to ban cars entirely, but to give people better options and make city centers places where people want to be, not just pass through.`,
-          stimulusLabel: 'Read the article.',
-          text: 'According to the text, what happened to many city center shops in the past?',
-          options: [
-            'They moved to city centers because of better infrastructure.',
-            'They closed because people drove to out-of-town malls instead.',
-            'They became more popular when car traffic increased.',
-            'They were forced to close by new government regulations.',
+            'The difference between digital and printed media',
+            'The unequal access people have to technology',
+            'The gap between cheap and expensive devices',
+            'The inability of governments to regulate the internet',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
-          id: 'p6q3',
+          id: 'p6q2',
           part: 6,
-          stimulus: `The Changing Face of City Centers
-
-For decades, city centers around the world were dominated by cars. Wide roads, large parking lots, and fast-moving traffic made walking or cycling unpleasant and dangerous. Many shops closed as people preferred to drive to out-of-town malls. City centers became dirty, noisy, and less attractive.
-
-However, a major shift has been happening over the last 20 years. Many cities have begun to redesign their centers by reducing car traffic and creating more space for pedestrians and cyclists. In Oslo, Norway, the city removed nearly all car parking from the center in 2019. In Barcelona, Spain, the "superblocks" project transformed certain street areas into car-free zones with seating, gardens, and play areas.
-
-The results have been largely positive. Local businesses report higher foot traffic and increased sales. Residents say they feel safer and the air quality has improved. Children can play outside again. The streets feel alive.
-
-Critics, however, argue that these changes hurt people who depend on cars, particularly those with disabilities or who live far from the city center and cannot easily use public transport. They call for a more balanced approach that considers everyone's needs.
-
-Despite these concerns, the trend continues. More cities are experimenting with pedestrianization, green spaces, and smarter public transport. The goal is not to ban cars entirely, but to give people better options and make city centers places where people want to be, not just pass through.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What does the phrase "higher foot traffic" suggest about local businesses?',
+          text: 'Why is internet access more difficult in rural areas?',
           options: [
-            'More people are walking past and into the shops.',
-            'Shops have had to hire more staff to handle deliveries.',
-            'Local businesses have had to reduce their prices.',
-            'Fewer cars mean fewer customers for the shops.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q4',
-          part: 6,
-          stimulus: `The Changing Face of City Centers
-
-For decades, city centers around the world were dominated by cars. Wide roads, large parking lots, and fast-moving traffic made walking or cycling unpleasant and dangerous. Many shops closed as people preferred to drive to out-of-town malls. City centers became dirty, noisy, and less attractive.
-
-However, a major shift has been happening over the last 20 years. Many cities have begun to redesign their centers by reducing car traffic and creating more space for pedestrians and cyclists. In Oslo, Norway, the city removed nearly all car parking from the center in 2019. In Barcelona, Spain, the "superblocks" project transformed certain street areas into car-free zones with seating, gardens, and play areas.
-
-The results have been largely positive. Local businesses report higher foot traffic and increased sales. Residents say they feel safer and the air quality has improved. Children can play outside again. The streets feel alive.
-
-Critics, however, argue that these changes hurt people who depend on cars, particularly those with disabilities or who live far from the city center and cannot easily use public transport. They call for a more balanced approach that considers everyone's needs.
-
-Despite these concerns, the trend continues. More cities are experimenting with pedestrianization, green spaces, and smarter public transport. The goal is not to ban cars entirely, but to give people better options and make city centers places where people want to be, not just pass through.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the critics\' main concern about pedestrianization?',
-          options: [
-            'It costs too much money to redesign city streets.',
-            'It will destroy the history and culture of old city centers.',
-            'It makes cycling more dangerous because of more pedestrians.',
-            'It may create difficulties for people who rely on cars.',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q5',
-          part: 6,
-          stimulus: `The Changing Face of City Centers
-
-For decades, city centers around the world were dominated by cars. Wide roads, large parking lots, and fast-moving traffic made walking or cycling unpleasant and dangerous. Many shops closed as people preferred to drive to out-of-town malls. City centers became dirty, noisy, and less attractive.
-
-However, a major shift has been happening over the last 20 years. Many cities have begun to redesign their centers by reducing car traffic and creating more space for pedestrians and cyclists. In Oslo, Norway, the city removed nearly all car parking from the center in 2019. In Barcelona, Spain, the "superblocks" project transformed certain street areas into car-free zones with seating, gardens, and play areas.
-
-The results have been largely positive. Local businesses report higher foot traffic and increased sales. Residents say they feel safer and the air quality has improved. Children can play outside again. The streets feel alive.
-
-Critics, however, argue that these changes hurt people who depend on cars, particularly those with disabilities or who live far from the city center and cannot easily use public transport. They call for a more balanced approach that considers everyone's needs.
-
-Despite these concerns, the trend continues. More cities are experimenting with pedestrianization, green spaces, and smarter public transport. The goal is not to ban cars entirely, but to give people better options and make city centers places where people want to be, not just pass through.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Which of the following best describes the author\'s overall attitude toward these urban changes?',
-          options: [
-            'Strongly opposed — cars are essential for modern cities.',
-            'Completely neutral — the author does not express any opinion.',
-            'Cautiously optimistic — the trend is positive but has challenges.',
-            'Strongly supportive — all cities should ban cars immediately.',
+            'People there prefer traditional communication methods.',
+            'Governments have not passed laws to support rural connectivity.',
+            'Internet infrastructure is often weak or nonexistent.',
+            'Rural families cannot apply for government subsidy programs.',
           ],
           answer: 2,
         },
         {
           type: 'mcq',
-          id: 'p6q6',
+          id: 'p6q3',
           part: 6,
-          stimulus: `The Changing Face of City Centers
-
-For decades, city centers around the world were dominated by cars. Wide roads, large parking lots, and fast-moving traffic made walking or cycling unpleasant and dangerous. Many shops closed as people preferred to drive to out-of-town malls. City centers became dirty, noisy, and less attractive.
-
-However, a major shift has been happening over the last 20 years. Many cities have begun to redesign their centers by reducing car traffic and creating more space for pedestrians and cyclists. In Oslo, Norway, the city removed nearly all car parking from the center in 2019. In Barcelona, Spain, the "superblocks" project transformed certain street areas into car-free zones with seating, gardens, and play areas.
-
-The results have been largely positive. Local businesses report higher foot traffic and increased sales. Residents say they feel safer and the air quality has improved. Children can play outside again. The streets feel alive.
-
-Critics, however, argue that these changes hurt people who depend on cars, particularly those with disabilities or who live far from the city center and cannot easily use public transport. They call for a more balanced approach that considers everyone's needs.
-
-Despite these concerns, the trend continues. More cities are experimenting with pedestrianization, green spaces, and smarter public transport. The goal is not to ban cars entirely, but to give people better options and make city centers places where people want to be, not just pass through.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The phrase "places where people want to be, not just pass through" implies that city centers should be:',
+          text: 'What happened to students without internet access during the COVID-19 pandemic?',
           options: [
-            'Destinations where people enjoy spending time, not just routes.',
-            'Places where cars can move faster without stopping.',
-            'Zones reserved only for tourism and entertainment.',
-            'Areas where only local residents are allowed.',
+            'They were provided with free devices by the government.',
+            'They studied through radio and television instead.',
+            'They fell behind or left school entirely.',
+            'They performed better thanks to parental support at home.',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
-          id: 'p6q7',
+          id: 'p6q4',
           part: 6,
-          stimulus: `The Changing Face of City Centers
-
-For decades, city centers around the world were dominated by cars. Wide roads, large parking lots, and fast-moving traffic made walking or cycling unpleasant and dangerous. Many shops closed as people preferred to drive to out-of-town malls. City centers became dirty, noisy, and less attractive.
-
-However, a major shift has been happening over the last 20 years. Many cities have begun to redesign their centers by reducing car traffic and creating more space for pedestrians and cyclists. In Oslo, Norway, the city removed nearly all car parking from the center in 2019. In Barcelona, Spain, the "superblocks" project transformed certain street areas into car-free zones with seating, gardens, and play areas.
-
-The results have been largely positive. Local businesses report higher foot traffic and increased sales. Residents say they feel safer and the air quality has improved. Children can play outside again. The streets feel alive.
-
-Critics, however, argue that these changes hurt people who depend on cars, particularly those with disabilities or who live far from the city center and cannot easily use public transport. They call for a more balanced approach that considers everyone's needs.
-
-Despite these concerns, the trend continues. More cities are experimenting with pedestrianization, green spaces, and smarter public transport. The goal is not to ban cars entirely, but to give people better options and make city centers places where people want to be, not just pass through.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What can be inferred about Oslo\'s approach to urban redesign?',
+          text: 'What do experts say is needed beyond simply providing internet access?',
           options: [
-            'Oslo only redesigned one small street in 2019.',
-            'Oslo decided to add more parking to attract shoppers.',
-            'Oslo\'s changes were strongly opposed by all residents.',
-            'Oslo took a radical step by removing most central parking.',
+            'Newer and faster devices for every student',
+            'Digital skills training for people and teachers',
+            'Lower subscription prices for internet services',
+            'More public libraries equipped with computers',
           ],
-          answer: 3,
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'p6q5',
+          part: 6,
+          text: "What does 'bridging' this gap mean, according to the last paragraph?",
+          options: [
+            'Building physical roads and bridges between cities',
+            'Investing in faster transport infrastructure',
+            'Reducing the inequality in access to technology',
+            'Connecting national governments through digital platforms',
+          ],
+          answer: 2,
         },
       ],
     },
+
+    // ── PARTE 7 — Texto de opinión/argumento (10q) ────────────────────────
     {
       part: 7,
-      title: 'Parte 7 — Texto de opinion',
-      instructions: 'Read the opinion text and answer the questions about the author\'s argument.',
+      title: 'Parte 7 — Texto de opinión',
+      instructions:
+        'Read the following opinion text and answer the questions. Choose the best option (A, B, C or D).',
+      passage:
+        "Over the past decade, social media has transformed the way we communicate, share information, and experience the world. Platforms like Instagram, TikTok, and YouTube have given ordinary people extraordinary tools to connect, create, and influence. But as these platforms have grown, so have concerns about their impact on society. The question many governments, educators, and citizens are now asking is: should social media be regulated — and if so, how?\n\nThose who support regulation argue that social media companies have failed to protect their users, particularly young people. Studies have linked heavy social media use to anxiety, depression, and poor sleep quality among teenagers. Additionally, misinformation spreads rapidly on these platforms, sometimes with dangerous consequences, as seen during the COVID-19 pandemic. Supporters of regulation believe that platforms should be legally required to monitor harmful content and limit addictive features.\n\nOpponents of regulation, however, warn that government control of social media could threaten freedom of expression. If governments decide what content is acceptable, they could potentially use this power to silence criticism or suppress political opposition. History offers many examples of countries where media censorship has been used as a tool of oppression.\n\nA middle ground proposed by some experts is independent oversight — a body made up of legal experts, journalists, and civil society representatives who could review complaints about social media content without direct government involvement. This approach aims to balance user protection with freedom of expression.\n\nThe debate is far from resolved. What is clear, however, is that the current situation — where a handful of private companies make decisions that affect billions of people — is increasingly difficult to justify. Whether through regulation, independent oversight, or corporate self-regulation, meaningful change is needed.",
       questions: [
         {
           type: 'mcq',
           id: 'p7q1',
           part: 7,
-          stimulus: `Should Cities Be Built Around People, Not Cars?
-
-Most modern cities were designed decades ago, when cars were seen as the symbol of progress and freedom. Streets were made wide, parking lots were built everywhere, and public spaces disappeared under concrete. But ask yourself: is that the kind of city you want to live in?
-
-I believe cities must be redesigned to put people first. Walking, cycling, and public transport should be the priority, not private cars. Research consistently shows that cities with less car traffic have lower rates of air pollution, fewer traffic accidents, and higher quality of life for their residents. Amsterdam, Copenhagen, and Bogotá are leading examples of cities that have successfully transformed their urban spaces.
-
-Some argue that removing cars hurts the economy. But the evidence points to the opposite. When streets are pedestrianized, local shops thrive, tourism increases, and property values rise. People stay longer, spend more, and feel more connected to their community.
-
-Of course, a complete ban on cars would be unrealistic. We must ensure that elderly people, those with disabilities, and those in rural areas still have access to the center. But the goal should be clear: a city center where walking feels safe, cycling is encouraged, and public transport is reliable enough that owning a car becomes a choice, not a necessity.
-
-The cities of tomorrow must be planned for the many, not for the few who can afford a private vehicle. This is not just about convenience — it is about fairness, health, and the future of urban life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What is the author\'s main argument in this text?',
+          text: 'What is the main purpose of this text?',
           options: [
-            'Cars should be completely banned from all urban areas.',
-            'Public transport should replace cycling in all cities.',
-            'Only wealthy cities can afford to reduce car traffic.',
-            'Cities should be redesigned to prioritize people over cars.',
+            'To explain how social media platforms make money',
+            'To discuss different perspectives on regulating social media',
+            'To argue that social media should be banned for teenagers',
+            'To describe the history of internet platforms',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q2',
           part: 7,
-          stimulus: `Should Cities Be Built Around People, Not Cars?
-
-Most modern cities were designed decades ago, when cars were seen as the symbol of progress and freedom. Streets were made wide, parking lots were built everywhere, and public spaces disappeared under concrete. But ask yourself: is that the kind of city you want to live in?
-
-I believe cities must be redesigned to put people first. Walking, cycling, and public transport should be the priority, not private cars. Research consistently shows that cities with less car traffic have lower rates of air pollution, fewer traffic accidents, and higher quality of life for their residents. Amsterdam, Copenhagen, and Bogotá are leading examples of cities that have successfully transformed their urban spaces.
-
-Some argue that removing cars hurts the economy. But the evidence points to the opposite. When streets are pedestrianized, local shops thrive, tourism increases, and property values rise. People stay longer, spend more, and feel more connected to their community.
-
-Of course, a complete ban on cars would be unrealistic. We must ensure that elderly people, those with disabilities, and those in rural areas still have access to the center. But the goal should be clear: a city center where walking feels safe, cycling is encouraged, and public transport is reliable enough that owning a car becomes a choice, not a necessity.
-
-The cities of tomorrow must be planned for the many, not for the few who can afford a private vehicle. This is not just about convenience — it is about fairness, health, and the future of urban life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'How does the author respond to the claim that removing cars hurts the economy?',
+          text: 'What do supporters of regulation believe platforms should do?',
           options: [
-            'By arguing that pedestrianization actually benefits local economies.',
-            'By agreeing that economic concerns are the most important issue.',
-            'By saying that the economy is less important than the environment.',
-            'By ignoring the economic argument entirely.',
+            'Stop operating for users under the age of 18',
+            'Cooperate fully with government censorship teams',
+            'Monitor harmful content and reduce addictive features',
+            'Focus only on positive and educational content',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p7q3',
           part: 7,
-          stimulus: `Should Cities Be Built Around People, Not Cars?
-
-Most modern cities were designed decades ago, when cars were seen as the symbol of progress and freedom. Streets were made wide, parking lots were built everywhere, and public spaces disappeared under concrete. But ask yourself: is that the kind of city you want to live in?
-
-I believe cities must be redesigned to put people first. Walking, cycling, and public transport should be the priority, not private cars. Research consistently shows that cities with less car traffic have lower rates of air pollution, fewer traffic accidents, and higher quality of life for their residents. Amsterdam, Copenhagen, and Bogotá are leading examples of cities that have successfully transformed their urban spaces.
-
-Some argue that removing cars hurts the economy. But the evidence points to the opposite. When streets are pedestrianized, local shops thrive, tourism increases, and property values rise. People stay longer, spend more, and feel more connected to their community.
-
-Of course, a complete ban on cars would be unrealistic. We must ensure that elderly people, those with disabilities, and those in rural areas still have access to the center. But the goal should be clear: a city center where walking feels safe, cycling is encouraged, and public transport is reliable enough that owning a car becomes a choice, not a necessity.
-
-The cities of tomorrow must be planned for the many, not for the few who can afford a private vehicle. This is not just about convenience — it is about fairness, health, and the future of urban life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What does the author mean by "a city center where owning a car becomes a choice, not a necessity"?',
+          text: 'According to the text, what is one effect of heavy social media use on teenagers?',
           options: [
-            'Cars should be given to all residents for free.',
-            'The government should decide who is allowed to own a car.',
-            'Public transport should be good enough that people do not need to own a car.',
-            'Cars should only be used on weekends in the city center.',
+            'It significantly reduces their interest in academic work.',
+            'It makes them spend more quality time with their families.',
+            'It can lead to anxiety and poor sleep quality.',
+            'It makes them more responsible technology users.',
           ],
           answer: 2,
         },
@@ -865,74 +564,38 @@ The cities of tomorrow must be planned for the many, not for the few who can aff
           type: 'mcq',
           id: 'p7q4',
           part: 7,
-          stimulus: `Should Cities Be Built Around People, Not Cars?
-
-Most modern cities were designed decades ago, when cars were seen as the symbol of progress and freedom. Streets were made wide, parking lots were built everywhere, and public spaces disappeared under concrete. But ask yourself: is that the kind of city you want to live in?
-
-I believe cities must be redesigned to put people first. Walking, cycling, and public transport should be the priority, not private cars. Research consistently shows that cities with less car traffic have lower rates of air pollution, fewer traffic accidents, and higher quality of life for their residents. Amsterdam, Copenhagen, and Bogotá are leading examples of cities that have successfully transformed their urban spaces.
-
-Some argue that removing cars hurts the economy. But the evidence points to the opposite. When streets are pedestrianized, local shops thrive, tourism increases, and property values rise. People stay longer, spend more, and feel more connected to their community.
-
-Of course, a complete ban on cars would be unrealistic. We must ensure that elderly people, those with disabilities, and those in rural areas still have access to the center. But the goal should be clear: a city center where walking feels safe, cycling is encouraged, and public transport is reliable enough that owning a car becomes a choice, not a necessity.
-
-The cities of tomorrow must be planned for the many, not for the few who can afford a private vehicle. This is not just about convenience — it is about fairness, health, and the future of urban life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'The phrase "planned for the many, not for the few" suggests that the author believes current cities:',
+          text: 'Why do those who oppose regulation worry about government control?',
           options: [
-            'Mainly serve the interests of wealthy car owners.',
-            'Are well-designed for most people.',
-            'Are too expensive for most residents.',
-            'Have too many parks and green spaces.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p7q5',
-          part: 7,
-          stimulus: `Should Cities Be Built Around People, Not Cars?
-
-Most modern cities were designed decades ago, when cars were seen as the symbol of progress and freedom. Streets were made wide, parking lots were built everywhere, and public spaces disappeared under concrete. But ask yourself: is that the kind of city you want to live in?
-
-I believe cities must be redesigned to put people first. Walking, cycling, and public transport should be the priority, not private cars. Research consistently shows that cities with less car traffic have lower rates of air pollution, fewer traffic accidents, and higher quality of life for their residents. Amsterdam, Copenhagen, and Bogotá are leading examples of cities that have successfully transformed their urban spaces.
-
-Some argue that removing cars hurts the economy. But the evidence points to the opposite. When streets are pedestrianized, local shops thrive, tourism increases, and property values rise. People stay longer, spend more, and feel more connected to their community.
-
-Of course, a complete ban on cars would be unrealistic. We must ensure that elderly people, those with disabilities, and those in rural areas still have access to the center. But the goal should be clear: a city center where walking feels safe, cycling is encouraged, and public transport is reliable enough that owning a car becomes a choice, not a necessity.
-
-The cities of tomorrow must be planned for the many, not for the few who can afford a private vehicle. This is not just about convenience — it is about fairness, health, and the future of urban life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'Which of the following best describes the author\'s writing strategy?',
-          options: [
-            'The author presents only one side and ignores opposing views.',
-            'The author presents a clear position but acknowledges practical limits.',
-            'The author uses only statistics to support the argument.',
-            'The author avoids taking a personal position on the issue.',
+            'Regulation would make social media platforms more expensive.',
+            'It could be used to silence criticism or opposition.',
+            'Governments do not understand how social media algorithms work.',
+            'Regulation would slow down technological progress.',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
+          id: 'p7q5',
+          part: 7,
+          text: 'What does the word "misinformation" in paragraph 2 most likely mean?',
+          options: [
+            'Correct information that very few people believe',
+            'Information shared at very high speed online',
+            'False or inaccurate information',
+            'Information that governments keep secret',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
           id: 'p7q6',
           part: 7,
-          stimulus: `Should Cities Be Built Around People, Not Cars?
-
-Most modern cities were designed decades ago, when cars were seen as the symbol of progress and freedom. Streets were made wide, parking lots were built everywhere, and public spaces disappeared under concrete. But ask yourself: is that the kind of city you want to live in?
-
-I believe cities must be redesigned to put people first. Walking, cycling, and public transport should be the priority, not private cars. Research consistently shows that cities with less car traffic have lower rates of air pollution, fewer traffic accidents, and higher quality of life for their residents. Amsterdam, Copenhagen, and Bogotá are leading examples of cities that have successfully transformed their urban spaces.
-
-Some argue that removing cars hurts the economy. But the evidence points to the opposite. When streets are pedestrianized, local shops thrive, tourism increases, and property values rise. People stay longer, spend more, and feel more connected to their community.
-
-Of course, a complete ban on cars would be unrealistic. We must ensure that elderly people, those with disabilities, and those in rural areas still have access to the center. But the goal should be clear: a city center where walking feels safe, cycling is encouraged, and public transport is reliable enough that owning a car becomes a choice, not a necessity.
-
-The cities of tomorrow must be planned for the many, not for the few who can afford a private vehicle. This is not just about convenience — it is about fairness, health, and the future of urban life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What does the word "thrive" mean in the context of this text?',
+          text: 'What is the "middle ground" proposed by some experts?',
           options: [
-            'Survive with difficulty.',
-            'Close permanently.',
-            'Grow and be very successful.',
-            'Move to a new location.',
+            'Allowing social media companies to regulate themselves freely',
+            'Blocking all controversial platforms in certain countries',
+            'Creating an independent body to review content complaints',
+            'Giving governments full authority to monitor all communications',
           ],
           answer: 2,
         },
@@ -940,26 +603,53 @@ The cities of tomorrow must be planned for the many, not for the few who can aff
           type: 'mcq',
           id: 'p7q7',
           part: 7,
-          stimulus: `Should Cities Be Built Around People, Not Cars?
-
-Most modern cities were designed decades ago, when cars were seen as the symbol of progress and freedom. Streets were made wide, parking lots were built everywhere, and public spaces disappeared under concrete. But ask yourself: is that the kind of city you want to live in?
-
-I believe cities must be redesigned to put people first. Walking, cycling, and public transport should be the priority, not private cars. Research consistently shows that cities with less car traffic have lower rates of air pollution, fewer traffic accidents, and higher quality of life for their residents. Amsterdam, Copenhagen, and Bogotá are leading examples of cities that have successfully transformed their urban spaces.
-
-Some argue that removing cars hurts the economy. But the evidence points to the opposite. When streets are pedestrianized, local shops thrive, tourism increases, and property values rise. People stay longer, spend more, and feel more connected to their community.
-
-Of course, a complete ban on cars would be unrealistic. We must ensure that elderly people, those with disabilities, and those in rural areas still have access to the center. But the goal should be clear: a city center where walking feels safe, cycling is encouraged, and public transport is reliable enough that owning a car becomes a choice, not a necessity.
-
-The cities of tomorrow must be planned for the many, not for the few who can afford a private vehicle. This is not just about convenience — it is about fairness, health, and the future of urban life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'According to the author, what would make a complete ban on cars "unrealistic"?',
+          text: 'What does "suppress" in paragraph 3 most likely mean?',
           options: [
-            'The high cost of building new public transport.',
-            'The political opposition from car manufacturers.',
-            'The fact that cycling is dangerous in most cities.',
-            'The need to maintain access for people who cannot easily use alternatives.',
+            'Encourage or promote openly',
+            'Publish and share widely',
+            'Prevent from being seen or heard',
+            'Explain clearly to the public',
           ],
-          answer: 3,
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q8',
+          part: 7,
+          text: "What is the author's view of the current situation with social media?",
+          options: [
+            'It is working well and needs no changes.',
+            'Social media companies are already doing enough to protect users.',
+            'Having a few private companies control so much influence is hard to justify.',
+            'Governments are already taking the right steps to address the problem.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q9',
+          part: 7,
+          text: 'What conclusion does the author reach?',
+          options: [
+            'The debate will soon be resolved by international law.',
+            'Corporate self-regulation is the most effective solution.',
+            'Meaningful change is needed, though the best approach is still debated.',
+            'Regulation is impossible without seriously limiting free expression.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q10',
+          part: 7,
+          text: 'What would be the BEST title for this text?',
+          options: [
+            'Why Social Media Is Dangerous for Young People',
+            'The History of Government Control of the Internet',
+            'Regulating Social Media: Risks, Benefits, and Alternatives',
+            'How Social Media Companies Protect Their Users',
+          ],
+          answer: 2,
         },
       ],
     },

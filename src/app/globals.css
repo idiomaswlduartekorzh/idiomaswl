@@ -2610,6 +2610,103 @@ button {
   flex-wrap: wrap;
 }
 
+/* ── ICFES notice/sign stimulus ──────────────────────────────────────────── */
+.prac-notice-box {
+  background: #fffef5;
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 3px 3px 0 #ccc;
+}
+.prac-notice-box__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.prac-notice-box__text {
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* ── ICFES dialog-box stimulus ───────────────────────────────────────────── */
+.prac-dialog-box {
+  background: var(--bg-2);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.prac-dialog-box__text {
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  margin: 0;
+  font-style: italic;
+  color: var(--ink);
+}
+
+/* ── ICFES word bank (Part 2) ────────────────────────────────────────────── */
+.prac-word-bank {
+  background: #f0f4ff;
+  border: 1.5px solid #14215c;
+  border-radius: 6px;
+  padding: 0.75rem 1.1rem;
+  margin-bottom: 1.1rem;
+}
+.prac-word-bank__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #14215c;
+  margin-bottom: 0.35rem;
+}
+.prac-word-bank__words {
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ── ICFES shared passage (Parts 4–7) ────────────────────────────────────── */
+.prac-passage-box {
+  background: var(--bg-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 1.4rem;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.prac-passage-box__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.prac-passage-box__text {
+  font-size: 0.93rem;
+  line-height: 1.75;
+  color: var(--ink);
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+[data-theme="dark"] .prac-notice-box { background: #1e1e1a; border-color: #666; box-shadow: 3px 3px 0 #333; }
+[data-theme="dark"] .prac-word-bank { background: #0f1a3a; border-color: #3a5298; }
+[data-theme="dark"] .prac-word-bank__label { color: #7b9ee8; }
+
 
 /* ---- IELTS Practice ---- */
 

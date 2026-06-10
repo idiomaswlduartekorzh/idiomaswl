@@ -105,8 +105,36 @@ function QuestionNav({
   );
 }
 
+function StimulusBox({ question }: { question: MCQQuestion }) {
+  if (!question.stimulus) return null;
+  const style = question.stimulusStyle;
+  if (style === 'notice' || style === 'sign') {
+    return (
+      <div className="prac-notice-box">
+        {question.stimulusLabel && <p className="prac-notice-box__label">{question.stimulusLabel}</p>}
+        <pre className="prac-notice-box__text">{question.stimulus}</pre>
+      </div>
+    );
+  }
+  if (style === 'dialog-box') {
+    return (
+      <div className="prac-dialog-box">
+        {question.stimulusLabel && <p className="prac-stimulus__label">{question.stimulusLabel}</p>}
+        <pre className="prac-dialog-box__text">{question.stimulus}</pre>
+      </div>
+    );
+  }
+  return (
+    <div className="prac-stimulus">
+      {question.stimulusLabel && <p className="prac-stimulus__label">{question.stimulusLabel}</p>}
+      <pre className="prac-stimulus__text">{question.stimulus}</pre>
+    </div>
+  );
+}
+
 function QuestionView({
   question,
+  section,
   index,
   total,
   selectedAnswer,
@@ -119,6 +147,7 @@ function QuestionView({
   onSubmit,
 }: {
   question: MCQQuestion;
+  section?: import('@/data/mocks/types').MockSection;
   index: number;
   total: number;
   selectedAnswer: number | undefined;
@@ -139,12 +168,21 @@ function QuestionView({
         </button>
       </div>
 
-      {question.stimulus && (
-        <div className="prac-stimulus">
-          {question.stimulusLabel && <p className="prac-stimulus__label">{question.stimulusLabel}</p>}
-          <pre className="prac-stimulus__text">{question.stimulus}</pre>
+      {section?.sectionNote && (
+        <div className="prac-word-bank">
+          <p className="prac-word-bank__label">Word Bank</p>
+          <p className="prac-word-bank__words">{section.sectionNote}</p>
         </div>
       )}
+
+      {section?.passage && (
+        <div className="prac-passage-box">
+          <p className="prac-passage-box__label">Read the text</p>
+          <p className="prac-passage-box__text">{section.passage}</p>
+        </div>
+      )}
+
+      <StimulusBox question={question} />
 
       <p className="prac-question__text">{question.text}</p>
 
@@ -315,6 +353,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   const allQuestions = getAllQuestions(mock) as MCQQuestion[];
   const currentQuestion = allQuestions[currentIdx];
   const currentPart = currentQuestion?.part ?? 1;
+  const currentSection = mock.sections.find(s => s.part === currentPart);
 
   const handleAnswer = useCallback((optIdx: number) => {
     if (!currentQuestion) return;
@@ -440,6 +479,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
         <div className="prac-main">
           <QuestionView
             question={currentQuestion}
+            section={currentSection}
             index={currentIdx}
             total={allQuestions.length}
             selectedAnswer={answers[currentQuestion?.id]}
