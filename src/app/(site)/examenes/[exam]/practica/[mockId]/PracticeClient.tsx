@@ -170,14 +170,14 @@ function QuestionView({
 
       {section?.sectionNote && (
         <div className="prac-word-bank">
-          <p className="prac-word-bank__label">Word Bank</p>
+          <p className="prac-word-bank__label">Banco de palabras</p>
           <p className="prac-word-bank__words">{section.sectionNote}</p>
         </div>
       )}
 
       {section?.passage && (
         <div className="prac-passage-box">
-          <p className="prac-passage-box__label">Read the text</p>
+          <p className="prac-passage-box__label">Lea el siguiente texto</p>
           <p className="prac-passage-box__text">{section.passage}</p>
         </div>
       )}
@@ -187,16 +187,19 @@ function QuestionView({
       <p className="prac-question__text">{question.text}</p>
 
       <div className="prac-options">
-        {question.options.map((opt, i) => (
-          <button
-            key={i}
-            onClick={() => onAnswer(i)}
-            className={`prac-option${selectedAnswer === i ? ' prac-option--selected' : ''}`}
-          >
-            <span className="prac-option__letter">{String.fromCharCode(65 + i)}</span>
-            <span className="prac-option__text">{opt}</span>
-          </button>
-        ))}
+        {question.options.map((opt, i) => {
+          const displayText = opt.replace(/^[A-G]\.\s+/, '');
+          return (
+            <button
+              key={i}
+              onClick={() => onAnswer(i)}
+              className={`prac-option${selectedAnswer === i ? ' prac-option--selected' : ''}`}
+            >
+              <span className="prac-option__letter">{String.fromCharCode(65 + i)}</span>
+              <span className="prac-option__text">{displayText}</span>
+            </button>
+          );
+        })}
       </div>
 
       <div className="prac-question__footer">
