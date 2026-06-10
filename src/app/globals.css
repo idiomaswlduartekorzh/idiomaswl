@@ -2240,7 +2240,7 @@ button {
 
 .prac-question {
   background: var(--surface);
-  border-radius: 14px;
+  border-radius: 8px;
   border: 1px solid var(--line-soft);
   padding: 1.8rem;
 }
@@ -2311,10 +2311,10 @@ button {
 .prac-option {
   display: flex;
   align-items: flex-start;
-  gap: 0.8rem;
-  padding: 0.85rem 1rem;
-  border-radius: 10px;
-  border: 1.5px solid var(--line-soft);
+  gap: 0.75rem;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--line-soft);
   background: var(--surface);
   cursor: pointer;
   text-align: left;
@@ -2324,23 +2324,25 @@ button {
 .prac-option:hover { border-color: var(--ink); background: var(--bg-2); }
 .prac-option--selected { border-color: var(--accent); background: rgba(200, 32, 46, 0.06); }
 .prac-option__letter {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
   background: var(--bg-2);
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   transition: background 0.15s, color 0.15s;
+  border: 1px solid var(--line-soft);
 }
 .prac-option--selected .prac-option__letter {
   background: var(--accent);
   color: #fff;
+  border-color: var(--accent);
 }
 .prac-option__text {
   font-size: 0.95rem;
@@ -2635,6 +2637,938 @@ button {
   margin-top: 2rem;
   flex-wrap: wrap;
 }
+
+/* ── ICFES notice/sign stimulus ──────────────────────────────────────────── */
+.prac-notice-box {
+  background: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 1rem 1.3rem;
+  margin-bottom: 1.2rem;
+}
+.prac-notice-box__label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.prac-notice-box__text {
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  margin: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ── ICFES dialog-box stimulus ───────────────────────────────────────────── */
+.prac-dialog-box {
+  background: var(--bg-2);
+  border: 1px solid var(--line-soft);
+  border-left: 3px solid var(--line-soft);
+  border-radius: 4px;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.prac-dialog-box__text {
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* ── ICFES word bank (Part 2) ────────────────────────────────────────────── */
+.prac-word-bank {
+  background: #f8f9fc;
+  border: 1px solid #c8d0e0;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.1rem;
+}
+.prac-word-bank__label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.prac-word-bank__words {
+  font-size: 0.88rem;
+  color: var(--ink);
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* ── ICFES shared passage (Parts 4–7) ────────────────────────────────────── */
+.prac-passage-box {
+  background: #fafafa;
+  border: 1px solid #dde1ea;
+  border-radius: 4px;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.4rem;
+  max-height: 340px;
+  overflow-y: auto;
+}
+.prac-passage-box__label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.prac-passage-box__text {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--ink);
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+[data-theme="dark"] .prac-notice-box { background: #1a1a18; border-color: #555; }
+[data-theme="dark"] .prac-dialog-box { border-color: #333; border-left-color: #555; }
+[data-theme="dark"] .prac-word-bank { background: #131826; border-color: #2a3550; }
+[data-theme="dark"] .prac-passage-box { background: #141414; border-color: #2a2a2a; }
+
+/* ── ICFES Vocabulary Matching Grid ─────────────────────────────────────── */
+.mg { width: 100%; }
+
+.mg__title {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 1.2rem;
+}
+
+/* Example */
+.mg__ex { margin-bottom: 1.2rem; }
+
+.mg__ex-pill {
+  display: inline-block;
+  background: #e8e9ea;
+  color: #444;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 3px;
+  margin-bottom: 0.55rem;
+}
+.mg__ex-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 0.7rem;
+}
+
+/* Respuesta row */
+.mg__resp-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f4f5f6;
+  border: 1px solid #d0d3d8;
+  border-radius: 6px;
+  padding: 6px 12px;
+  flex-wrap: wrap;
+}
+.mg__resp-lbl {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #333;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+.mg__resp-zero {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #333;
+  margin-right: 2px;
+}
+.mg__circ {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1.5px solid #b0b5bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #777;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.mg__circ--on {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
+
+/* ── Two-column table ── */
+.mg__table {
+  display: grid;
+  grid-template-columns: 3fr 1px 2fr;
+  border: 1px solid #cdd0d6;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+/* LEFT */
+.mg__left { padding: 0; }
+
+.mg__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e4e6ea;
+  cursor: pointer;
+  transition: background 0.1s;
+  user-select: none;
+}
+.mg__row:last-child { border-bottom: none; }
+.mg__row:hover:not(.mg__row--act) { background: #fafafa; }
+.mg__row--act  { background: #fffbf0; }
+.mg__row--done .mg__row-n { color: #15803d; }
+
+.mg__row-n {
+  font-size: 0.87rem;
+  font-weight: 700;
+  color: var(--ink);
+  min-width: 1.6rem;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+.mg__row-txt {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+/* Answer badge */
+.mg__ans {
+  font-size: 0.72rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.mg__ans--set {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Vertical line */
+.mg__vline { background: #cdd0d6; }
+
+/* RIGHT */
+.mg__right { padding: 0; }
+
+.mg__word {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #e4e6ea;
+  transition: background 0.1s;
+}
+.mg__word:last-child { border-bottom: none; }
+.mg__word--pick { cursor: pointer; }
+.mg__word--pick:hover { background: #fef9ee; }
+.mg__word--used { opacity: 0.4; }
+.mg__word--H { background: #f4f5f6; }
+
+.mg__wltr {
+  font-size: 0.87rem;
+  font-weight: 700;
+  min-width: 1.4rem;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.mg__wtxt {
+  font-size: 0.87rem;
+  color: var(--ink);
+}
+
+/* Hint shown above the table when no row is active */
+.mg__hint {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 0.5rem 0 0.75rem;
+  font-style: italic;
+}
+
+/* Dark mode */
+[data-theme="dark"] .mg__ex-pill { background: #2c2d30; color: #ccc; }
+[data-theme="dark"] .mg__resp-box { background: #1c1e22; border-color: #383b42; }
+[data-theme="dark"] .mg__resp-lbl,
+[data-theme="dark"] .mg__resp-zero { color: #ccc; }
+[data-theme="dark"] .mg__circ { border-color: #555; color: #888; }
+[data-theme="dark"] .mg__circ--on { background: #d1d5db; border-color: #d1d5db; color: #111; }
+[data-theme="dark"] .mg__table { border-color: #383b42; }
+[data-theme="dark"] .mg__row { border-color: #2c2f36; }
+[data-theme="dark"] .mg__row:hover:not(.mg__row--act) { background: #1c1e22; }
+[data-theme="dark"] .mg__row--act { background: #1e1c0d; }
+[data-theme="dark"] .mg__ans { border-color: #444; color: #666; }
+[data-theme="dark"] .mg__ans--set { background: #d1d5db; border-color: #d1d5db; color: #111; }
+[data-theme="dark"] .mg__vline { background: #383b42; }
+[data-theme="dark"] .mg__word { border-color: #2c2f36; }
+[data-theme="dark"] .mg__word--pick:hover { background: #1a1700; }
+[data-theme="dark"] .mg__word--H { background: #1c1e22; }
+
+/* ── ICFES notices grid (Parte 1) ────────────────────────────────────────── */
+.ng {
+  padding: 0.5rem 0;
+}
+.ng__instr {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+  line-height: 1.55;
+}
+
+/* Example block */
+.ng__ex {
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+.ng__ex-pill {
+  display: inline-block;
+  background: #e2e4e8;
+  padding: 0.18rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+.ng__item--example {
+  opacity: 0.9;
+}
+
+/* Respuesta row */
+.ng__resp-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+.ng__resp-lbl {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-right: 0.2rem;
+}
+.ng__resp-zero {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-right: 0.15rem;
+}
+.ng__circ {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid #777;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #666;
+}
+.ng__circ--on {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Divider */
+.ng__rule {
+  border: none;
+  border-top: 2px solid var(--line-soft);
+  margin: 1rem 0 1.4rem;
+}
+
+/* Notice box — double-border (solid outer + dashed inner) */
+.ng__notice-box {
+  background: #fffef5;
+  border: 2.5px solid #2a2a2a;
+  padding: 0.75rem 0.9rem;
+  position: relative;
+  flex: 0 0 38%;
+  max-width: 240px;
+}
+.ng__notice-box::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px dashed #999;
+  pointer-events: none;
+}
+.ng__notice-text {
+  font-family: inherit;
+  white-space: pre-wrap;
+  font-size: 0.83rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+  color: #111;
+}
+
+/* Question rows */
+.ng__items {
+  display: flex;
+  flex-direction: column;
+}
+.ng__item {
+  display: flex;
+  gap: 0.9rem 1rem;
+  align-items: flex-start;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.ng__item:last-child { border-bottom: none; }
+.ng__item-n {
+  font-weight: 700;
+  font-size: 0.95rem;
+  min-width: 1.4rem;
+  padding-top: 0.6rem;
+  color: var(--ink);
+}
+.ng__item-right {
+  flex: 1;
+  min-width: 0;
+}
+.ng__item-q {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.55rem;
+  line-height: 1.4;
+}
+
+/* Options A/B/C */
+.ng__opts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.ng__opt {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.32rem 0.6rem;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  font-size: 0.86rem;
+  color: var(--ink);
+  transition: background 0.1s;
+}
+.ng__opt:hover { background: var(--bg-2); }
+.ng__opt--sel {
+  border-color: var(--accent);
+  background: rgba(200, 32, 46, 0.06);
+  font-weight: 500;
+}
+.ng__opt-ltr {
+  font-weight: 700;
+  min-width: 1.1rem;
+  color: inherit;
+}
+.ng__opt-txt { flex: 1; }
+
+/* Mobile: stack notice + options */
+@media (max-width: 580px) {
+  .ng__item { flex-wrap: wrap; }
+  .ng__notice-box { flex: 0 0 calc(100% - 2rem); max-width: none; }
+  .ng__item-right { flex: 0 0 100%; }
+}
+
+/* Dark mode */
+[data-theme="dark"] .ng__ex { background: #1a1c22; }
+[data-theme="dark"] .ng__ex-pill { background: #2c2e34; color: #aaa; }
+[data-theme="dark"] .ng__notice-box { background: #1e1c0d; border-color: #c8b96a; }
+[data-theme="dark"] .ng__notice-box::before { border-color: #6b5e2a; }
+[data-theme="dark"] .ng__notice-text { color: #e8ddb0; }
+[data-theme="dark"] .ng__circ { border-color: #555; color: #888; }
+[data-theme="dark"] .ng__circ--on { background: #d1d5db; border-color: #d1d5db; color: #111; }
+[data-theme="dark"] .ng__item { border-color: #2c2f36; }
+[data-theme="dark"] .ng__rule { border-color: #2c2f36; }
+[data-theme="dark"] .ng__opt:hover { background: #1a1c22; }
+[data-theme="dark"] .ng__opt--sel { background: rgba(200, 32, 46, 0.12); }
+
+
+/* ── ICFES dialogs grid (Parte 3) ────────────────────────────────────────── */
+.dg {
+  padding: 0.5rem 0;
+}
+.dg__instr {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+  line-height: 1.55;
+}
+
+/* Example block */
+.dg__ex {
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+.dg__ex-pill {
+  display: inline-block;
+  background: #e2e4e8;
+  padding: 0.18rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 0.7rem;
+}
+/* Scene — two people illustration */
+.dg__scene {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8rem;
+  background: #f3f4f8;
+  border-radius: 10px;
+  padding: 1rem 1rem 0.6rem;
+  margin-bottom: 0.7rem;
+}
+.dg__scene-person--l,
+.dg__scene-person--r {
+  flex-shrink: 0;
+  line-height: 0;
+}
+.dg__scene-mid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-bottom: 0.2rem;
+  min-width: 0;
+}
+.dg__scene-bubble {
+  background: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 10px 10px 10px 3px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.4;
+  max-width: 280px;
+}
+.dg__scene-exopts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: flex-end;
+  width: 100%;
+}
+.dg__scene-exopt {
+  background: #fff;
+  border: 1.5px solid #bbb;
+  border-radius: 5px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.83rem;
+  color: #333;
+}
+
+/* Hide person SVGs on very small screens */
+@media (max-width: 480px) {
+  .dg__scene-person--l,
+  .dg__scene-person--r { display: none; }
+}
+
+/* Respuesta row */
+.dg__resp-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+.dg__resp-lbl {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-right: 0.2rem;
+}
+.dg__resp-zero {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-right: 0.15rem;
+}
+.dg__circ {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid #777;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #666;
+}
+.dg__circ--on {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Divider */
+.dg__rule {
+  border: none;
+  border-top: 2px solid var(--line-soft);
+  margin: 1rem 0 0.8rem;
+}
+
+/* Question rows */
+.dg__items {
+  display: flex;
+  flex-direction: column;
+}
+.dg__item {
+  display: grid;
+  grid-template-columns: 2rem 1fr 1fr;
+  gap: 0.4rem 2rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.dg__item:last-child { border-bottom: none; }
+.dg__num {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+  padding-top: 0.15rem;
+}
+.dg__stmt {
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.45;
+  margin: 0;
+  padding-top: 0.1rem;
+}
+
+/* Options */
+.dg__opts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.dg__opt {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.28rem 0.5rem;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  font-size: 0.88rem;
+  color: var(--ink);
+  transition: background 0.1s;
+}
+.dg__opt:hover { background: var(--bg-2); }
+.dg__opt--sel {
+  border-color: var(--accent);
+  background: rgba(200, 32, 46, 0.06);
+  font-weight: 500;
+}
+.dg__opt-ltr {
+  font-weight: 700;
+  min-width: 1rem;
+}
+.dg__opt-txt { flex: 1; }
+
+/* Mobile: stack statement above options */
+@media (max-width: 580px) {
+  .dg__item {
+    grid-template-columns: 2rem 1fr;
+  }
+  .dg__opts {
+    grid-column: 1 / -1;
+    padding-left: 2rem;
+  }
+}
+
+/* Dark mode */
+[data-theme="dark"] .dg__ex { background: #1a1c22; }
+[data-theme="dark"] .dg__ex-pill { background: #2c2e34; color: #aaa; }
+[data-theme="dark"] .dg__scene { background: #1c1e24; }
+[data-theme="dark"] .dg__scene-bubble { background: #252830; border-color: #383b42; color: #dde; }
+[data-theme="dark"] .dg__scene-exopt { background: #252830; border-color: #383b42; color: #dde; }
+[data-theme="dark"] .dg__circ { border-color: #555; color: #888; }
+[data-theme="dark"] .dg__circ--on { background: #d1d5db; border-color: #d1d5db; color: #111; }
+[data-theme="dark"] .dg__item { border-color: #2c2f36; }
+[data-theme="dark"] .dg__rule { border-color: #2c2f36; }
+[data-theme="dark"] .dg__opt:hover { background: #1a1c22; }
+[data-theme="dark"] .dg__opt--sel { background: rgba(200, 32, 46, 0.12); }
+
+
+/* ── ICFES cloze text (Parte 4) ──────────────────────────────────────────── */
+.cl {
+  padding: 0.5rem 0;
+}
+.cl__instr {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+.cl__passage {
+  background: var(--bg-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.cl__passage-text {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--ink);
+  margin: 0;
+}
+.cl__blank {
+  display: inline-block;
+  background: rgba(200, 32, 46, 0.09);
+  color: var(--accent);
+  font-weight: 700;
+  font-style: normal;
+  border-bottom: 2px solid var(--accent);
+  padding: 0 3px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  line-height: 1;
+  vertical-align: baseline;
+}
+.cl__rule {
+  border: none;
+  border-top: 2px solid var(--line-soft);
+  margin: 1rem 0 0.8rem;
+}
+.cl__qs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.cl__qrow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.cl__qrow:last-child { border-bottom: none; }
+.cl__qnum {
+  font-weight: 700;
+  font-size: 0.88rem;
+  min-width: 2rem;
+  padding-top: 0.25rem;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.cl__qopts {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+}
+@media (max-width: 520px) {
+  .cl__qopts { grid-template-columns: repeat(2, 1fr); }
+}
+.cl__qopt {
+  width: 100%;
+  text-align: left;
+  padding: 0.3rem 0.6rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.84rem;
+  cursor: pointer;
+  background: transparent;
+  color: var(--ink);
+  transition: background 0.1s, border-color 0.1s;
+  white-space: nowrap;
+}
+.cl__qopt:hover { background: var(--bg-2); border-color: #aaa; }
+.cl__qopt--sel {
+  border-color: var(--accent);
+  background: rgba(200, 32, 46, 0.07);
+  font-weight: 600;
+}
+
+/* Dark mode */
+[data-theme="dark"] .cl__passage { background: #1a1c22; border-color: #2c2f36; }
+[data-theme="dark"] .cl__blank { background: rgba(200,32,46,0.15); }
+[data-theme="dark"] .cl__qrow { border-color: #2c2f36; }
+[data-theme="dark"] .cl__qopt { border-color: #383b42; }
+[data-theme="dark"] .cl__qopt:hover { background: #1a1c22; border-color: #555; }
+[data-theme="dark"] .cl__qopt--sel { background: rgba(200,32,46,0.14); }
+
+
+/* ── ICFES reading section (Partes 5–7) ──────────────────────────────────── */
+.rd {
+  padding: 0.5rem 0;
+}
+.rd__instr {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+.rd__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.8rem;
+  align-items: start;
+}
+.rd__passage-col {
+  position: sticky;
+  top: 8px;
+  align-self: start;
+}
+.rd__passage-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.rd__passage {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+  max-height: 74vh;
+  overflow-y: auto;
+  background: var(--bg);
+  scrollbar-width: thin;
+}
+.rd__passage-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--ink);
+  margin: 0;
+  white-space: pre-line;
+}
+.rd__questions-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.rd__item {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.rd__item:last-child { border-bottom: none; }
+.rd__item-hd {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.rd__qnum {
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  padding-top: 0.05rem;
+  color: var(--ink);
+}
+.rd__qtext {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0;
+}
+.rd__opts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  padding-left: 1.4rem;
+}
+.rd__opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding: 0.28rem 0.6rem;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  font-size: 0.86rem;
+  color: var(--ink);
+  transition: background 0.1s;
+}
+.rd__opt:hover { background: var(--bg-2); }
+.rd__opt--sel {
+  border-color: var(--accent);
+  background: rgba(200, 32, 46, 0.06);
+  font-weight: 500;
+}
+.rd__opt-ltr {
+  font-weight: 700;
+  min-width: 1.1rem;
+  flex-shrink: 0;
+}
+.rd__opt-txt { flex: 1; line-height: 1.4; }
+
+/* Mobile: stack passage above questions */
+@media (max-width: 700px) {
+  .rd__layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .rd__passage-col { position: static; }
+  .rd__passage { max-height: 40vh; }
+  .rd__opts { padding-left: 1rem; }
+}
+
+/* Dark mode */
+[data-theme="dark"] .rd__passage { background: #1a1c22; border-color: #2c2f36; }
+[data-theme="dark"] .rd__item { border-color: #2c2f36; }
+[data-theme="dark"] .rd__opt:hover { background: #1a1c22; }
+[data-theme="dark"] .rd__opt--sel { background: rgba(200,32,46,0.12); }
 
 
 /* ---- IELTS Practice ---- */

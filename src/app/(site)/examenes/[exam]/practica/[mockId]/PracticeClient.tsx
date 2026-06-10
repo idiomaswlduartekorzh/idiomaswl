@@ -4,7 +4,515 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import type { Exam } from '@/data/exams';
-import type { MockExam, MCQQuestion } from '@/data/mocks/types';
+import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
+
+// ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
+function NoticesGridSection({
+  section,
+  answers,
+  onAnswerById,
+  onGoPrev,
+  onGoNext,
+  isFirstSection,
+  startNum,
+}: {
+  section: MockSection;
+  answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void;
+  onGoNext: () => void;
+  isFirstSection: boolean;
+  isLastSection: boolean;
+  startNum: number;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  const exAnsIdx = section.exampleAnswer
+    ? section.exampleAnswer.charCodeAt(0) - 65
+    : 0;
+
+  return (
+    <div className="ng">
+      <p className="ng__instr">{section.instructions}</p>
+
+      {/* ── Example row ── */}
+      {section.exampleStimulus && (
+        <div className="ng__ex">
+          <span className="ng__ex-pill">Ejemplo:</span>
+          <div className="ng__item ng__item--example">
+            <span className="ng__item-n">0.</span>
+            <div className="ng__notice-box">
+              <pre className="ng__notice-text">{section.exampleStimulus}</pre>
+            </div>
+            <div className="ng__item-right">
+              <p className="ng__item-q">{section.exampleText}</p>
+              <div className="ng__resp-row">
+                <span className="ng__resp-lbl">Respuesta:</span>
+                <span className="ng__resp-zero">0.</span>
+                {['A', 'B', 'C'].map((ltr, i) => (
+                  <span key={i} className={`ng__circ${i === exAnsIdx ? ' ng__circ--on' : ''}`}>
+                    {ltr}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className="ng__rule" />
+
+      {/* ── Questions ── */}
+      <div className="ng__items">
+        {questions.map((q, qi) => {
+          const mcq = q as MCQQuestion;
+          const sel = answers[mcq.id];
+          return (
+            <div key={mcq.id} className="ng__item">
+              <span className="ng__item-n">{startNum + qi}.</span>
+              <div className="ng__notice-box">
+                <pre className="ng__notice-text">{mcq.stimulus}</pre>
+              </div>
+              <div className="ng__item-right">
+                <p className="ng__item-q">{mcq.text}</p>
+                <div className="ng__opts">
+                  {mcq.options.map((opt, oi) => (
+                    <button
+                      key={oi}
+                      className={`ng__opt${sel === oi ? ' ng__opt--sel' : ''}`}
+                      onClick={() => onAnswerById(mcq.id, oi)}
+                    >
+                      <span className="ng__opt-ltr">{String.fromCharCode(65 + oi)}.</span>
+                      <span className="ng__opt-txt">{opt}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          Siguiente →
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ── Inline SVG person silhouettes ────────────────────────────────────────────
+function PersonSVG({ gender }: { gender: 'f' | 'm' }) {
+  const skin = '#c5c9d6';
+  const hair = '#7c8096';
+  const body = '#9da1b0';
+  if (gender === 'f') {
+    return (
+      <svg viewBox="0 0 70 110" width="58" height="92" aria-hidden="true">
+        {/* Long hair (back layer) */}
+        <path d="M14 36 Q12 58 20 82 Q28 92 35 92 Q42 92 50 82 Q58 58 56 36 Q48 18 35 18 Q22 18 14 36Z" fill={hair} opacity="0.55"/>
+        {/* Head */}
+        <circle cx="35" cy="30" r="20" fill={skin}/>
+        {/* Hair (front/top) */}
+        <path d="M15 30 Q15 12 35 10 Q55 12 55 30 L55 40 Q47 50 35 48 Q23 50 15 40Z" fill={hair}/>
+        {/* Neck */}
+        <rect x="28" y="46" width="14" height="10" rx="3" fill={skin}/>
+        {/* Body */}
+        <path d="M4 110 Q4 78 20 70 Q27 66 35 66 Q43 66 50 70 Q66 78 66 110Z" fill={body}/>
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 70 110" width="58" height="92" aria-hidden="true">
+      {/* Head */}
+      <circle cx="35" cy="30" r="20" fill={skin}/>
+      {/* Short hair */}
+      <path d="M15 30 Q15 12 35 10 Q55 12 55 30 L55 34 Q49 42 35 40 Q21 42 15 34Z" fill={hair}/>
+      {/* Neck */}
+      <rect x="28" y="48" width="14" height="10" rx="3" fill={skin}/>
+      {/* Body (broader shoulders) */}
+      <path d="M0 110 Q0 74 18 66 Q26 62 35 62 Q44 62 52 66 Q70 74 70 110Z" fill={body}/>
+    </svg>
+  );
+}
+
+// ── Dialogs grid (ICFES Parte 3) ─────────────────────────────────────────────
+function DialogsGridSection({
+  section,
+  answers,
+  onAnswerById,
+  onGoPrev,
+  onGoNext,
+  isFirstSection,
+  startNum,
+}: {
+  section: MockSection;
+  answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void;
+  onGoNext: () => void;
+  isFirstSection: boolean;
+  isLastSection: boolean;
+  startNum: number;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  const exAnsIdx = section.exampleAnswer
+    ? section.exampleAnswer.charCodeAt(0) - 65
+    : 0;
+
+  return (
+    <div className="dg">
+      <p className="dg__instr">{section.instructions}</p>
+
+      {/* ── Example block ── */}
+      {section.exampleStimulus && (
+        <div className="dg__ex">
+          <span className="dg__ex-pill">Ejemplo:</span>
+
+          {/* Scene with two people */}
+          <div className="dg__scene">
+            {/* Left: female speaker */}
+            <div className="dg__scene-person dg__scene-person--l">
+              <PersonSVG gender="f" />
+            </div>
+
+            {/* Middle: speech bubble + response options */}
+            <div className="dg__scene-mid">
+              <div className="dg__scene-bubble">
+                {section.exampleStimulus}
+              </div>
+              {section.exampleOptions && (
+                <div className="dg__scene-exopts">
+                  {section.exampleOptions.map((opt, i) => (
+                    <div key={i} className="dg__scene-exopt">
+                      <strong>{String.fromCharCode(65 + i)}.</strong>&nbsp;{opt}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Right: male listener */}
+            <div className="dg__scene-person dg__scene-person--r">
+              <PersonSVG gender="m" />
+            </div>
+          </div>
+
+          {/* Respuesta */}
+          <div className="dg__resp-row">
+            <span className="dg__resp-lbl">Respuesta:</span>
+            <span className="dg__resp-zero">0.</span>
+            {['A', 'B', 'C'].map((ltr, i) => (
+              <span key={i} className={`dg__circ${i === exAnsIdx ? ' dg__circ--on' : ''}`}>
+                {ltr}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div className="dg__rule" />
+
+      {/* ── Questions ── */}
+      <div className="dg__items">
+        {questions.map((q, qi) => {
+          const mcq = q as MCQQuestion;
+          const sel = answers[mcq.id];
+          return (
+            <div key={mcq.id} className="dg__item">
+              <span className="dg__num">{startNum + qi}.</span>
+              <p className="dg__stmt">{mcq.stimulus}</p>
+              <div className="dg__opts">
+                {mcq.options.map((opt, oi) => (
+                  <button
+                    key={oi}
+                    className={`dg__opt${sel === oi ? ' dg__opt--sel' : ''}`}
+                    onClick={() => onAnswerById(mcq.id, oi)}
+                  >
+                    <span className="dg__opt-ltr">{String.fromCharCode(65 + oi)}</span>
+                    <span className="dg__opt-txt">{opt}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          Siguiente →
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ── Vocabulary matching grid (ICFES Parte 2) ─────────────────────────────────
+function MatchingGridSection({
+  section,
+  answers,
+  onAnswerById,
+  onGoPrev,
+  onGoNext,
+  isFirstSection,
+  startNum = 6,
+}: {
+  section: MockSection;
+  startNum?: number;
+  answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void;
+  onGoNext: () => void;
+  isFirstSection: boolean;
+  isLastSection: boolean;
+}) {
+  const questions  = section.questions as MCQQuestion[];
+  const wordsAG    = questions[0]?.options ?? [];          // 7 words → A–G
+  const allWords   = [...wordsAG, section.exampleAnswer ?? '']; // 8th = H
+
+  // active row: the description the student last clicked
+  const [activeId, setActiveId] = useState<string | null>(null);
+
+  return (
+    <div className="mg">
+      {/* Category title */}
+      <h2 className="mg__title">{section.topic}</h2>
+
+      {/* ── Example block ── */}
+      <div className="mg__ex">
+        <span className="mg__ex-pill">Ejemplo:</span>
+        <p className="mg__ex-text"><strong>0.</strong>&nbsp;&nbsp;{section.exampleText}</p>
+        <div className="mg__resp-box">
+          <span className="mg__resp-lbl">Respuesta:</span>
+          <span className="mg__resp-zero">0.</span>
+          {allWords.map((_, i) => (
+            <span
+              key={i}
+              className={`mg__circ${i === allWords.length - 1 ? ' mg__circ--on' : ''}`}
+            >
+              {String.fromCharCode(65 + i)}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Hint */}
+      <p className="mg__hint">
+        {activeId
+          ? 'Ahora haz clic en la palabra correcta en la columna derecha →'
+          : 'Haz clic en una descripción para activarla, luego selecciona la palabra correspondiente.'}
+      </p>
+
+      {/* ── Two-column table ── */}
+      <div className="mg__table">
+
+        {/* LEFT — descriptions */}
+        <div className="mg__left">
+          {questions.map((q, qi) => {
+            const mcq   = q as MCQQuestion;
+            const sel   = answers[mcq.id];
+            const isAct = activeId === mcq.id;
+            return (
+              <div
+                key={mcq.id}
+                className={`mg__row${isAct ? ' mg__row--act' : ''}${sel !== undefined ? ' mg__row--done' : ''}`}
+                onClick={() => setActiveId(isAct ? null : mcq.id)}
+              >
+                <span className="mg__row-n">{startNum + qi}.</span>
+                <span className="mg__row-txt">{mcq.text}</span>
+                <span className={`mg__ans${sel !== undefined ? ' mg__ans--set' : ''}`}>
+                  {sel !== undefined ? String.fromCharCode(65 + sel) : ''}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Divider */}
+        <div className="mg__vline" />
+
+        {/* RIGHT — word bank A–H */}
+        <div className="mg__right">
+          {allWords.map((word, wi) => {
+            const isH    = wi === allWords.length - 1;
+            const isUsed = !isH && questions.some(q => answers[q.id] === wi);
+            const canPick = !isH && activeId !== null;
+            return (
+              <div
+                key={wi}
+                className={`mg__word${isH ? ' mg__word--H' : ''}${isUsed ? ' mg__word--used' : ''}${canPick ? ' mg__word--pick' : ''}`}
+                onClick={() => {
+                  if (!canPick) return;
+                  onAnswerById(activeId!, wi);
+                  const next = questions.find(q => q.id !== activeId && answers[q.id] === undefined);
+                  setActiveId(next?.id ?? null);
+                }}
+              >
+                <strong className="mg__wltr">{String.fromCharCode(65 + wi)}.</strong>
+                <span className="mg__wtxt">{word}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Navigation */}
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          Siguiente →
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ── Cloze text (ICFES Parte 4) ───────────────────────────────────────────────
+
+function renderClozePassage(text: string): React.ReactNode[] {
+  const segs: React.ReactNode[] = [];
+  const re = /\((\d+)\)\s*___/g;
+  let last = 0; let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) segs.push(text.slice(last, m.index));
+    segs.push(<mark key={m.index} className="cl__blank">({m[1]})</mark>);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) segs.push(text.slice(last));
+  return segs;
+}
+
+function ClozeSection({
+  section, answers, onAnswerById, onGoPrev, onGoNext, isFirstSection, isLastSection, startNum,
+}: {
+  section: MockSection; answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void; onGoNext: () => void;
+  isFirstSection: boolean; isLastSection: boolean; startNum: number;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  return (
+    <div className="cl">
+      <p className="cl__instr">{section.instructions}</p>
+
+      {section.passage && (
+        <div className="cl__passage">
+          <p className="cl__passage-text">{renderClozePassage(section.passage)}</p>
+        </div>
+      )}
+
+      <div className="cl__rule" />
+
+      <div className="cl__qs">
+        {questions.map((q, qi) => {
+          const sel = answers[q.id];
+          return (
+            <div key={q.id} className="cl__qrow">
+              <span className="cl__qnum">{startNum + qi}.</span>
+              <div className="cl__qopts">
+                {q.options.map((opt, oi) => (
+                  <button
+                    key={oi}
+                    className={`cl__qopt${sel === oi ? ' cl__qopt--sel' : ''}`}
+                    onClick={() => onAnswerById(q.id, oi)}
+                  >
+                    <strong>{String.fromCharCode(65 + oi)}.</strong>&nbsp;{opt}
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          {isLastSection ? 'Finalizar examen' : 'Siguiente →'}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ── Reading section (ICFES Partes 5–7) ───────────────────────────────────────
+
+function ReadingSection({
+  section, answers, onAnswerById, onGoPrev, onGoNext, isFirstSection, isLastSection, startNum,
+}: {
+  section: MockSection; answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void; onGoNext: () => void;
+  isFirstSection: boolean; isLastSection: boolean; startNum: number;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  return (
+    <div className="rd">
+      <p className="rd__instr">{section.instructions}</p>
+
+      <div className="rd__layout">
+        {/* Left column: passage */}
+        {section.passage && (
+          <div className="rd__passage-col">
+            {section.passageTitle && (
+              <p className="rd__passage-title">{section.passageTitle}</p>
+            )}
+            <div className="rd__passage">
+              <p className="rd__passage-text">{section.passage}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Right column: questions */}
+        <div className="rd__questions-col">
+          {questions.map((q, qi) => {
+            const sel = answers[q.id];
+            return (
+              <div key={q.id} className="rd__item">
+                <div className="rd__item-hd">
+                  <span className="rd__qnum">{startNum + qi}.</span>
+                  <p className="rd__qtext">{q.text}</p>
+                </div>
+                <div className="rd__opts">
+                  {q.options.map((opt, oi) => (
+                    <button
+                      key={oi}
+                      className={`rd__opt${sel === oi ? ' rd__opt--sel' : ''}`}
+                      onClick={() => onAnswerById(q.id, oi)}
+                    >
+                      <span className="rd__opt-ltr">{String.fromCharCode(65 + oi)}.</span>
+                      <span className="rd__opt-txt">{opt}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          {isLastSection ? 'Finalizar examen' : 'Siguiente →'}
+        </button>
+      </div>
+    </div>
+  );
+}
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -106,8 +614,36 @@ function QuestionNav({
   );
 }
 
+function StimulusBox({ question }: { question: MCQQuestion }) {
+  if (!question.stimulus) return null;
+  const style = question.stimulusStyle;
+  if (style === 'notice' || style === 'sign') {
+    return (
+      <div className="prac-notice-box">
+        {question.stimulusLabel && <p className="prac-notice-box__label">{question.stimulusLabel}</p>}
+        <pre className="prac-notice-box__text">{question.stimulus}</pre>
+      </div>
+    );
+  }
+  if (style === 'dialog-box') {
+    return (
+      <div className="prac-dialog-box">
+        {question.stimulusLabel && <p className="prac-stimulus__label">{question.stimulusLabel}</p>}
+        <pre className="prac-dialog-box__text">{question.stimulus}</pre>
+      </div>
+    );
+  }
+  return (
+    <div className="prac-stimulus">
+      {question.stimulusLabel && <p className="prac-stimulus__label">{question.stimulusLabel}</p>}
+      <pre className="prac-stimulus__text">{question.stimulus}</pre>
+    </div>
+  );
+}
+
 function QuestionView({
   question,
+  section,
   index,
   total,
   selectedAnswer,
@@ -120,6 +656,7 @@ function QuestionView({
   onSubmit,
 }: {
   question: MCQQuestion;
+  section?: MockSection;
   index: number;
   total: number;
   selectedAnswer: number | undefined;
@@ -140,26 +677,38 @@ function QuestionView({
         </button>
       </div>
 
-      {question.stimulus && (
-        <div className="prac-stimulus">
-          {question.stimulusLabel && <p className="prac-stimulus__label">{question.stimulusLabel}</p>}
-          <pre className="prac-stimulus__text">{question.stimulus}</pre>
+      {section?.sectionNote && (
+        <div className="prac-word-bank">
+          <p className="prac-word-bank__label">Banco de palabras</p>
+          <p className="prac-word-bank__words">{section.sectionNote}</p>
         </div>
       )}
+
+      {section?.passage && (
+        <div className="prac-passage-box">
+          <p className="prac-passage-box__label">Lea el siguiente texto</p>
+          <p className="prac-passage-box__text">{section.passage}</p>
+        </div>
+      )}
+
+      <StimulusBox question={question} />
 
       <p className="prac-question__text">{question.text}</p>
 
       <div className="prac-options">
-        {question.options.map((opt, i) => (
-          <button
-            key={i}
-            onClick={() => onAnswer(i)}
-            className={`prac-option${selectedAnswer === i ? ' prac-option--selected' : ''}`}
-          >
-            <span className="prac-option__letter">{String.fromCharCode(65 + i)}</span>
-            <span className="prac-option__text">{opt}</span>
-          </button>
-        ))}
+        {question.options.map((opt, i) => {
+          const displayText = opt.replace(/^[A-G]\.\s+/, '');
+          return (
+            <button
+              key={i}
+              onClick={() => onAnswer(i)}
+              className={`prac-option${selectedAnswer === i ? ' prac-option--selected' : ''}`}
+            >
+              <span className="prac-option__letter">{String.fromCharCode(65 + i)}</span>
+              <span className="prac-option__text">{displayText}</span>
+            </button>
+          );
+        })}
       </div>
 
       <div className="prac-question__footer">
@@ -316,11 +865,34 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   const allQuestions = getAllQuestions(mock) as MCQQuestion[];
   const currentQuestion = allQuestions[currentIdx];
   const currentPart = currentQuestion?.part ?? 1;
+  const currentSection = mock.sections.find(s => s.part === currentPart);
 
   const handleAnswer = useCallback((optIdx: number) => {
     if (!currentQuestion) return;
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: optIdx }));
   }, [currentQuestion]);
+
+  // Used by MatchingGridSection to set answers for any question by id
+  const handleAnswerById = useCallback((qId: string, idx: number) => {
+    setAnswers(prev => ({ ...prev, [qId]: idx }));
+  }, []);
+
+  // Jump to first question of the section after current
+  const handleNextSection = useCallback(() => {
+    const nextIdx = allQuestions.findIndex(q => q.part > currentPart);
+    if (nextIdx !== -1) setCurrentIdx(nextIdx);
+    else handleSubmit();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allQuestions, currentPart]);
+
+  // Jump to last question of the section before current
+  const handlePrevSection = useCallback(() => {
+    let last = -1;
+    for (let i = 0; i < allQuestions.length; i++) {
+      if (allQuestions[i].part < currentPart) last = i;
+    }
+    if (last !== -1) setCurrentIdx(last);
+  }, [allQuestions, currentPart]);
 
   const handleFlag = useCallback(() => {
     if (!currentQuestion) return;
@@ -456,24 +1028,57 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
       {/* Main layout */}
       <div className="prac-body">
         <div className="prac-main">
-          <QuestionView
-            question={currentQuestion}
-            index={currentIdx}
-            total={allQuestions.length}
-            selectedAnswer={answers[currentQuestion?.id]}
-            isFlagged={flagged.has(currentQuestion?.id)}
-            onAnswer={handleAnswer}
-            onFlag={handleFlag}
-            onPrev={() => setCurrentIdx(i => Math.max(0, i - 1))}
-            onNext={() => setCurrentIdx(i => Math.min(allQuestions.length - 1, i + 1))}
-            isLast={currentIdx === allQuestions.length - 1}
-            onSubmit={() => {
-              if (unanswered > 0) {
-                if (!confirm(`Tienes ${unanswered} pregunta${unanswered !== 1 ? 's' : ''} sin responder. ¿Seguro que quieres finalizar?`)) return;
-              }
-              handleSubmit();
-            }}
-          />
+          {(() => {
+            const sectionStart = allQuestions.findIndex(q => q.part === currentPart) + 1;
+            const isFirst = mock.sections[0].part === currentPart;
+            const isLast = mock.sections[mock.sections.length - 1].part === currentPart;
+            const sharedProps = {
+              section: currentSection!,
+              answers,
+              onAnswerById: handleAnswerById,
+              onGoPrev: handlePrevSection,
+              onGoNext: handleNextSection,
+              isFirstSection: isFirst,
+              isLastSection: isLast,
+              startNum: sectionStart,
+            };
+            if (currentSection?.sectionStyle === 'notices-grid') {
+              return <NoticesGridSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'dialogs-grid') {
+              return <DialogsGridSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'matching-grid') {
+              return <MatchingGridSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'cloze-text') {
+              return <ClozeSection {...sharedProps} />;
+            }
+            if (currentSection?.sectionStyle === 'reading') {
+              return <ReadingSection {...sharedProps} />;
+            }
+            return (
+            <QuestionView
+              question={currentQuestion}
+              section={currentSection}
+              index={currentIdx}
+              total={allQuestions.length}
+              selectedAnswer={answers[currentQuestion?.id]}
+              isFlagged={flagged.has(currentQuestion?.id)}
+              onAnswer={handleAnswer}
+              onFlag={handleFlag}
+              onPrev={() => setCurrentIdx(i => Math.max(0, i - 1))}
+              onNext={() => setCurrentIdx(i => Math.min(allQuestions.length - 1, i + 1))}
+              isLast={currentIdx === allQuestions.length - 1}
+              onSubmit={() => {
+                if (unanswered > 0) {
+                  if (!confirm(`Tienes ${unanswered} pregunta${unanswered !== 1 ? 's' : ''} sin responder. ¿Seguro que quieres finalizar?`)) return;
+                }
+                handleSubmit();
+              }}
+            />
+            );
+          })()}
         </div>
 
         <aside className="prac-sidebar">

@@ -150,12 +150,16 @@ const METODO = [
 ];
 
 const EXAMENES = [
-  { badge: 'ACADEMIC',        name: 'TOEFL',     lang: 'Inglés · iBT',               weeks: '8 semanas',  mocks: '12 simulacros', slug: 'toefl'     },
-  { badge: 'BAND 7+',        name: 'IELTS',     lang: 'Inglés · Academic & General', weeks: '8 semanas',  mocks: '10 simulacros', slug: 'ielts'     },
-  { badge: 'COLOMBIA',       name: 'ICFES',     lang: 'Inglés · Saber 11',           weeks: '12 semanas', mocks: '20 simulacros', slug: 'icfes'     },
-  { badge: 'ZERTIFIKAT',     name: 'Goethe',    lang: 'Alemán · A1 – C2',            weeks: '10 semanas', mocks: '8 simulacros',  slug: 'goethe'    },
-  { badge: 'OFFICIEL',       name: 'DELF/DALF', lang: 'Francés · A1 – C2',           weeks: '10 semanas', mocks: '8 simulacros',  slug: 'delf-dalf' },
-  { badge: 'CERTIFICAZIONE', name: 'CILS',      lang: 'Italiano · A1 – C2',          weeks: '10 semanas', mocks: '6 simulacros',  slug: 'cils-celi' },
+  { badge: 'ACADEMIC',        name: 'TOEFL',           lang: 'Inglés · iBT',               weeks: '8 semanas',  mocks: '12 simulacros', slug: 'toefl'        },
+  { badge: 'BAND 7+',        name: 'IELTS',           lang: 'Inglés · Academic & General', weeks: '8 semanas',  mocks: '10 simulacros', slug: 'ielts'        },
+  { badge: 'B2 FIRST',       name: 'Cambridge B2',    lang: 'Inglés · FCE',               weeks: '10 semanas', mocks: '4 simulacros',  slug: 'cambridge-b2' },
+  { badge: 'COLOMBIA',       name: 'ICFES',           lang: 'Inglés · Saber 11',           weeks: '12 semanas', mocks: '20 simulacros', slug: 'icfes'        },
+  { badge: 'ZERTIFIKAT',     name: 'Goethe',          lang: 'Alemán · A1 – C2',            weeks: '10 semanas', mocks: '8 simulacros',  slug: 'goethe'       },
+  { badge: 'OFFICIEL B1',    name: 'DELF B1',         lang: 'Francés · Nivel B1',          weeks: '8 semanas',  mocks: '2 simulacros',  slug: 'delf-b1'      },
+  { badge: 'OFFICIEL B2',    name: 'DELF B2',         lang: 'Francés · Nivel B2',          weeks: '10 semanas', mocks: '1 simulacro',   slug: 'delf-b2'      },
+  { badge: 'CERTIFICAZIONE', name: 'CILS',            lang: 'Italiano · A1 – C2',          weeks: '10 semanas', mocks: '6 simulacros',  slug: 'cils-celi'    },
+  { badge: '초급 · 중급',      name: 'TOPIK',           lang: 'Coreano · Nivel I y II',      weeks: '12 semanas', mocks: '6 simulacros',  slug: 'topik'        },
+  { badge: 'BRASIL',         name: 'CELPE-BRAS',      lang: 'Portugués · Intermediário+',  weeks: '10 semanas', mocks: '4 simulacros',  slug: 'celpe-bras'   },
 ];
 
 const TEAM = [
@@ -540,8 +544,12 @@ export default function HomePage() {
             <p className="wlh-footer__col-title">Exámenes</p>
             <Link href="/examenes/toefl">TOEFL</Link>
             <Link href="/examenes/ielts">IELTS</Link>
+            <Link href="/examenes/cambridge-b2">Cambridge B2 (FCE)</Link>
             <Link href="/examenes/icfes">ICFES</Link>
             <Link href="/examenes/goethe">Goethe</Link>
+            <Link href="/examenes/delf-b1">DELF B1</Link>
+            <Link href="/examenes/delf-b2">DELF B2</Link>
+            <Link href="/examenes/topik">TOPIK</Link>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Compañía</p>

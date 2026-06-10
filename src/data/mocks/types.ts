@@ -17,6 +17,7 @@ export interface MCQQuestion {
   part: number;
   stimulus?: string;
   stimulusLabel?: string;
+  stimulusStyle?: 'notice' | 'sign' | 'dialog-box'; // visual treatment of stimulus
   text: string;
   options: string[];
   answer: number; // 0-indexed
@@ -139,11 +140,23 @@ export interface MockSection {
   title: string;
   skill?: 'listening' | 'reading' | 'writing' | 'speaking' | 'general';
   instructions: string;
-  passage?: string;
+  passage?: string;        // shared reading passage shown above every question
+  sectionNote?: string;    // e.g. word bank shown above Part 2 questions
   transcript?: string;
   audioUrl?: string;       // URL to audio file (if available)
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
+  // ── Section layout variants ──────────────────────────────────────────────
+  sectionStyle?: 'matching-grid' | 'notices-grid' | 'dialogs-grid' | 'cloze-text' | 'reading';
+  passageTitle?: string;  // shown as heading above the reading passage
+  // matching-grid (ICFES Part 2)
+  topic?: string;          // category title shown bold-centered, e.g. "Health"
+  exampleText?: string;    // example question text
+  exampleAnswer?: string;  // matching-grid: H word; notices-grid: answer letter ('A'/'B'/'C')
+  // notices-grid (ICFES Part 1)
+  exampleStimulus?: string;  // notice/sign text shown in the example row
+  // dialogs-grid (ICFES Part 3)
+  exampleOptions?: string[]; // A/B/C options shown in the example scene
 }
 
 export interface MockExam {
