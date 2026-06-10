@@ -69,6 +69,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
     setSuccess('');
     setLoading(true);
     const supabase = createClient();
+    if (!supabase) { setError('Servicio no disponible en este momento.'); setLoading(false); return; }
 
     if (mode === 'login') {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
@@ -89,6 +90,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
   const handleGoogle = async () => {
     const supabase = createClient();
+    if (!supabase) return;
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: `${window.location.origin}/auth/callback` },

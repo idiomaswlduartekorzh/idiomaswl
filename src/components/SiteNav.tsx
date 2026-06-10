@@ -77,6 +77,7 @@ export default function SiteNav() {
 
   useEffect(() => {
     const supabase = createClient();
+    if (!supabase) { setLoading(false); return; }
     supabase.auth.getUser().then(({ data }) => {
       setUser(data.user);
       setLoading(false);
@@ -89,6 +90,7 @@ export default function SiteNav() {
 
   const handleSignOut = async () => {
     const supabase = createClient();
+    if (!supabase) return;
     await supabase.auth.signOut();
     router.push('/home');
     router.refresh();
