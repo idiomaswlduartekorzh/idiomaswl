@@ -146,6 +146,11 @@ export interface MockSection {
   audioUrl?: string;       // URL to audio file (if available)
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
+  // ── Vocabulary matching grid (ICFES Part 2) ─────────────────────────────
+  sectionStyle?: 'matching-grid';
+  topic?: string;          // category title shown bold-centered, e.g. "Health"
+  exampleText?: string;    // the example question (item 0)
+  exampleAnswer?: string;  // the word for slot H (used only in the example)
 }
 
 export interface MockExam {

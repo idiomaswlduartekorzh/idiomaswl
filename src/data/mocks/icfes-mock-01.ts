@@ -101,96 +101,60 @@ const mock: MockExam = {
       ],
     },
 
-    // ── PARTE 2 ── Vocabulario: banco de palabras (preguntas 6–10) ───────────
-    // Formato real: 7 palabras (A–G), 2 sobran. Descripción → elegir palabra.
+    // ── PARTE 2 ── Vocabulario: cuadrícula de emparejamiento (preguntas 6–10) ─
+    // Formato real ICFES: 8 palabras (A–H), H = ejemplo, 2 de A–G sobran.
+    // options = las 7 palabras A–G (sin prefijo de letra).
+    // El componente MatchingGrid las combina con exampleAnswer para la columna derecha.
     // Nivel A2.
     {
       part: 2,
       title: 'Parte 2 — Vocabulario',
+      sectionStyle: 'matching-grid',
+      topic: 'Health',
+      exampleText: 'Some people feel this pain in the stomach area, often after eating bad food.',
+      exampleAnswer: 'stomachache',
       instructions:
-        'Read the following descriptions (questions 6 to 10). Choose the correct word from the box. There are TWO extra words you will not need.',
-      sectionNote:
-        'A. luggage   B. fare   C. librarian   D. departure   E. forecast   F. neighbourhood   G. allergic',
+        'Read descriptions 6 to 10. Which word from column (A – G) matches each description? Mark the correct letter. There are TWO extra words you will not need.',
       questions: [
         {
           type: 'mcq',
           id: 'p2q1',
           part: 2,
-          text: 'The bags and suitcases that a person carries when travelling.',
-          options: [
-            'A. luggage',
-            'B. fare',
-            'C. librarian',
-            'D. departure',
-            'E. forecast',
-            'F. neighbourhood',
-            'G. allergic',
-          ],
+          text: 'You make this sound when something irritates the inside of your throat.',
+          options: ['cough', 'fever', 'headache', 'medicine', 'rash', 'sneeze', 'wound'],
           answer: 0,
         },
         {
           type: 'mcq',
           id: 'p2q2',
           part: 2,
-          text: 'The amount of money you pay to travel on a bus, train, or taxi.',
-          options: [
-            'A. luggage',
-            'B. fare',
-            'C. librarian',
-            'D. departure',
-            'E. forecast',
-            'F. neighbourhood',
-            'G. allergic',
-          ],
+          text: 'When you have this, your body temperature becomes much higher than normal.',
+          options: ['cough', 'fever', 'headache', 'medicine', 'rash', 'sneeze', 'wound'],
           answer: 1,
         },
         {
           type: 'mcq',
           id: 'p2q3',
           part: 2,
-          text: 'A person who works in a library and helps people find information and books.',
-          options: [
-            'A. luggage',
-            'B. fare',
-            'C. librarian',
-            'D. departure',
-            'E. forecast',
-            'F. neighbourhood',
-            'G. allergic',
-          ],
-          answer: 2,
+          text: 'You take this when you are ill to help your body recover and feel better.',
+          options: ['cough', 'fever', 'headache', 'medicine', 'rash', 'sneeze', 'wound'],
+          answer: 3,
         },
         {
           type: 'mcq',
           id: 'p2q4',
           part: 2,
-          text: 'A prediction about what the weather will be like in the near future.',
-          options: [
-            'A. luggage',
-            'B. fare',
-            'C. librarian',
-            'D. departure',
-            'E. forecast',
-            'F. neighbourhood',
-            'G. allergic',
-          ],
+          text: 'Small red spots that appear on the skin, often caused by an allergy or insect bite.',
+          options: ['cough', 'fever', 'headache', 'medicine', 'rash', 'sneeze', 'wound'],
           answer: 4,
         },
         {
           type: 'mcq',
           id: 'p2q5',
           part: 2,
-          text: 'The area where you live, made up of nearby streets and houses.',
-          options: [
-            'A. luggage',
-            'B. fare',
-            'C. librarian',
-            'D. departure',
-            'E. forecast',
-            'F. neighbourhood',
-            'G. allergic',
-          ],
-          answer: 5,
+          text: 'A cut or broken area on the skin, usually caused by an accident or injury.',
+          options: ['cough', 'fever', 'headache', 'medicine', 'rash', 'sneeze', 'wound'],
+          answer: 6,
         },
       ],
     },

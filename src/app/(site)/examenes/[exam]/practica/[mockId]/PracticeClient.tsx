@@ -5,6 +5,151 @@ import Link from 'next/link';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
 
+// ── Vocabulary matching grid (ICFES Parte 2) ─────────────────────────────────
+// Renders all 5 questions at once in a two-column layout matching the official
+// ICFES cuadernillo format: descriptions (left) | word bank A–H (right).
+function MatchingGridSection({
+  section,
+  answers,
+  onAnswerById,
+  onGoPrev,
+  onGoNext,
+  isFirstSection,
+  isLastSection,
+}: {
+  section: MockSection;
+  answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void;
+  onGoNext: () => void;
+  isFirstSection: boolean;
+  isLastSection: boolean;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  // A–G from the first question's options; H is the example answer
+  const wordsAG = questions[0]?.options ?? [];
+  const wordH   = section.exampleAnswer ?? '';
+  const allWords = [...wordsAG, wordH]; // index 0–6 = A–G, index 7 = H
+
+  // which description row is currently "active" (waiting for a word click)
+  const [activeId, setActiveId] = useState<string | null>(null);
+
+  return (
+    <div className="prac-matching">
+      {/* Category title */}
+      <h2 className="prac-matching__topic">{section.topic}</h2>
+
+      {/* Example block */}
+      <div className="prac-matching__example-block">
+        <span className="prac-matching__ex-badge">Ejemplo:</span>
+        <p className="prac-matching__ex-text">
+          <strong>0.</strong>&nbsp;&nbsp;{section.exampleText}
+        </p>
+        {/* Respuesta row — circles A–H, H filled dark */}
+        <div className="prac-matching__respuesta">
+          <span className="prac-matching__resp-label">Respuesta:</span>
+          <div className="prac-matching__resp-row">
+            <span className="prac-matching__resp-zero">0.</span>
+            {allWords.map((_, i) => {
+              const letter = String.fromCharCode(65 + i);
+              const isH = i === allWords.length - 1;
+              return (
+                <span
+                  key={letter}
+                  className={`prac-matching__circle${isH ? ' prac-matching__circle--filled' : ''}`}
+                >
+                  {letter}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      <hr className="prac-matching__hr" />
+
+      {/* Two-column table */}
+      <div className="prac-matching__table">
+
+        {/* LEFT — numbered descriptions */}
+        <div className="prac-matching__left">
+          {questions.map((q, i) => {
+            const mcq    = q as MCQQuestion;
+            const sel    = answers[mcq.id];
+            const isActive = activeId === mcq.id;
+            const selLetter = sel !== undefined ? String.fromCharCode(65 + sel) : null;
+            return (
+              <div
+                key={mcq.id}
+                className={[
+                  'prac-matching__desc',
+                  isActive             ? 'prac-matching__desc--active'   : '',
+                  sel !== undefined    ? 'prac-matching__desc--answered' : '',
+                ].join(' ')}
+                onClick={() => setActiveId(isActive ? null : mcq.id)}
+              >
+                <span className="prac-matching__desc-num">{i + 6}.</span>
+                <span className="prac-matching__desc-text">{mcq.text}</span>
+                <span className={`prac-matching__desc-ans${selLetter ? ' prac-matching__desc-ans--set' : ''}`}>
+                  {selLetter ?? '—'}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Vertical divider */}
+        <div className="prac-matching__vdiv" />
+
+        {/* RIGHT — word bank A–H */}
+        <div className="prac-matching__right">
+          {allWords.map((word, i) => {
+            const letter    = String.fromCharCode(65 + i);
+            const isH       = i === allWords.length - 1;
+            const isUsed    = !isH && questions.some(q => answers[q.id] === i);
+            const clickable = !isH && activeId !== null;
+            return (
+              <div
+                key={letter}
+                className={[
+                  'prac-matching__word',
+                  isH       ? 'prac-matching__word--example'   : '',
+                  isUsed    ? 'prac-matching__word--used'      : '',
+                  clickable ? 'prac-matching__word--clickable' : '',
+                ].join(' ')}
+                onClick={() => {
+                  if (!clickable) return;
+                  onAnswerById(activeId!, i);
+                  // auto-advance to next unanswered description
+                  const next = questions.find(q => q.id !== activeId && answers[q.id] === undefined);
+                  setActiveId(next?.id ?? null);
+                }}
+              >
+                <span className="prac-matching__word-letter">{letter}.</span>
+                <span className="prac-matching__word-text">{word}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Navigation footer */}
+      <div className="prac-question__footer">
+        <button
+          className="btn btn-ghost btn-sm"
+          onClick={onGoPrev}
+          disabled={isFirstSection}
+        >
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          Siguiente →
+        </button>
+      </div>
+    </div>
+  );
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function formatTime(secs: number) {
@@ -363,6 +508,28 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: optIdx }));
   }, [currentQuestion]);
 
+  // Used by MatchingGridSection to set answers for any question by id
+  const handleAnswerById = useCallback((qId: string, idx: number) => {
+    setAnswers(prev => ({ ...prev, [qId]: idx }));
+  }, []);
+
+  // Jump to first question of the section after current
+  const handleNextSection = useCallback(() => {
+    const nextIdx = allQuestions.findIndex(q => q.part > currentPart);
+    if (nextIdx !== -1) setCurrentIdx(nextIdx);
+    else handleSubmit();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allQuestions, currentPart]);
+
+  // Jump to last question of the section before current
+  const handlePrevSection = useCallback(() => {
+    let last = -1;
+    for (let i = 0; i < allQuestions.length; i++) {
+      if (allQuestions[i].part < currentPart) last = i;
+    }
+    if (last !== -1) setCurrentIdx(last);
+  }, [allQuestions, currentPart]);
+
   const handleFlag = useCallback(() => {
     if (!currentQuestion) return;
     setFlagged(prev => {
@@ -480,25 +647,37 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
       {/* Main layout */}
       <div className="prac-body">
         <div className="prac-main">
-          <QuestionView
-            question={currentQuestion}
-            section={currentSection}
-            index={currentIdx}
-            total={allQuestions.length}
-            selectedAnswer={answers[currentQuestion?.id]}
-            isFlagged={flagged.has(currentQuestion?.id)}
-            onAnswer={handleAnswer}
-            onFlag={handleFlag}
-            onPrev={() => setCurrentIdx(i => Math.max(0, i - 1))}
-            onNext={() => setCurrentIdx(i => Math.min(allQuestions.length - 1, i + 1))}
-            isLast={currentIdx === allQuestions.length - 1}
-            onSubmit={() => {
-              if (unanswered > 0) {
-                if (!confirm(`Tienes ${unanswered} pregunta${unanswered !== 1 ? 's' : ''} sin responder. ¿Seguro que quieres finalizar?`)) return;
-              }
-              handleSubmit();
-            }}
-          />
+          {currentSection?.sectionStyle === 'matching-grid' ? (
+            <MatchingGridSection
+              section={currentSection}
+              answers={answers}
+              onAnswerById={handleAnswerById}
+              onGoPrev={handlePrevSection}
+              onGoNext={handleNextSection}
+              isFirstSection={mock.sections[0].part === currentPart}
+              isLastSection={mock.sections[mock.sections.length - 1].part === currentPart}
+            />
+          ) : (
+            <QuestionView
+              question={currentQuestion}
+              section={currentSection}
+              index={currentIdx}
+              total={allQuestions.length}
+              selectedAnswer={answers[currentQuestion?.id]}
+              isFlagged={flagged.has(currentQuestion?.id)}
+              onAnswer={handleAnswer}
+              onFlag={handleFlag}
+              onPrev={() => setCurrentIdx(i => Math.max(0, i - 1))}
+              onNext={() => setCurrentIdx(i => Math.min(allQuestions.length - 1, i + 1))}
+              isLast={currentIdx === allQuestions.length - 1}
+              onSubmit={() => {
+                if (unanswered > 0) {
+                  if (!confirm(`Tienes ${unanswered} pregunta${unanswered !== 1 ? 's' : ''} sin responder. ¿Seguro que quieres finalizar?`)) return;
+                }
+                handleSubmit();
+              }}
+            />
+          )}
         </div>
 
         <aside className="prac-sidebar">
