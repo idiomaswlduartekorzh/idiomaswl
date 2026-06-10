@@ -5,6 +5,102 @@ import Link from 'next/link';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
 
+// ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
+function NoticesGridSection({
+  section,
+  answers,
+  onAnswerById,
+  onGoPrev,
+  onGoNext,
+  isFirstSection,
+}: {
+  section: MockSection;
+  answers: Record<string, number>;
+  onAnswerById: (qId: string, idx: number) => void;
+  onGoPrev: () => void;
+  onGoNext: () => void;
+  isFirstSection: boolean;
+  isLastSection: boolean;
+}) {
+  const questions = section.questions as MCQQuestion[];
+  const exAnsIdx = section.exampleAnswer
+    ? section.exampleAnswer.charCodeAt(0) - 65
+    : 0;
+
+  return (
+    <div className="ng">
+      <p className="ng__instr">{section.instructions}</p>
+
+      {/* ── Example row ── */}
+      {section.exampleStimulus && (
+        <div className="ng__ex">
+          <span className="ng__ex-pill">Ejemplo:</span>
+          <div className="ng__item ng__item--example">
+            <span className="ng__item-n">0.</span>
+            <div className="ng__notice-box">
+              <pre className="ng__notice-text">{section.exampleStimulus}</pre>
+            </div>
+            <div className="ng__item-right">
+              <p className="ng__item-q">{section.exampleText}</p>
+              <div className="ng__resp-row">
+                <span className="ng__resp-lbl">Respuesta:</span>
+                <span className="ng__resp-zero">0.</span>
+                {['A', 'B', 'C'].map((ltr, i) => (
+                  <span key={i} className={`ng__circ${i === exAnsIdx ? ' ng__circ--on' : ''}`}>
+                    {ltr}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className="ng__rule" />
+
+      {/* ── Questions ── */}
+      <div className="ng__items">
+        {questions.map((q, qi) => {
+          const mcq = q as MCQQuestion;
+          const sel = answers[mcq.id];
+          return (
+            <div key={mcq.id} className="ng__item">
+              <span className="ng__item-n">{qi + 1}.</span>
+              <div className="ng__notice-box">
+                <pre className="ng__notice-text">{mcq.stimulus}</pre>
+              </div>
+              <div className="ng__item-right">
+                <p className="ng__item-q">{mcq.text}</p>
+                <div className="ng__opts">
+                  {mcq.options.map((opt, oi) => (
+                    <button
+                      key={oi}
+                      className={`ng__opt${sel === oi ? ' ng__opt--sel' : ''}`}
+                      onClick={() => onAnswerById(mcq.id, oi)}
+                    >
+                      <span className="ng__opt-ltr">{String.fromCharCode(65 + oi)}.</span>
+                      <span className="ng__opt-txt">{opt}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="prac-question__footer">
+        <button className="btn btn-ghost btn-sm" onClick={onGoPrev} disabled={isFirstSection}>
+          ← Anterior
+        </button>
+        <button className="btn btn-sm" onClick={onGoNext}>
+          Siguiente →
+        </button>
+      </div>
+    </div>
+  );
+}
+
 // ── Vocabulary matching grid (ICFES Parte 2) ─────────────────────────────────
 function MatchingGridSection({
   section,
@@ -622,7 +718,17 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
       {/* Main layout */}
       <div className="prac-body">
         <div className="prac-main">
-          {currentSection?.sectionStyle === 'matching-grid' ? (
+          {currentSection?.sectionStyle === 'notices-grid' ? (
+            <NoticesGridSection
+              section={currentSection}
+              answers={answers}
+              onAnswerById={handleAnswerById}
+              onGoPrev={handlePrevSection}
+              onGoNext={handleNextSection}
+              isFirstSection={mock.sections[0].part === currentPart}
+              isLastSection={mock.sections[mock.sections.length - 1].part === currentPart}
+            />
+          ) : currentSection?.sectionStyle === 'matching-grid' ? (
             <MatchingGridSection
               section={currentSection}
               answers={answers}

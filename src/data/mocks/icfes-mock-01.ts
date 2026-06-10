@@ -20,6 +20,10 @@ const mock: MockExam = {
     {
       part: 1,
       title: 'Parte 1 — Avisos e instrucciones',
+      sectionStyle: 'notices-grid',
+      exampleStimulus: 'BUS STOP\nPlease stand behind the line.\nThank you.',
+      exampleText: 'Where could you see this sign?',
+      exampleAnswer: 'A',
       instructions:
         'The following notices give information about different places. Read each notice carefully and answer questions 1 to 5.',
       questions: [

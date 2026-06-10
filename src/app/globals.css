@@ -2908,6 +2908,198 @@ button {
 [data-theme="dark"] .mg__word--pick:hover { background: #1a1700; }
 [data-theme="dark"] .mg__word--H { background: #1c1e22; }
 
+/* ── ICFES notices grid (Parte 1) ────────────────────────────────────────── */
+.ng {
+  padding: 0.5rem 0;
+}
+.ng__instr {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+  line-height: 1.55;
+}
+
+/* Example block */
+.ng__ex {
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+.ng__ex-pill {
+  display: inline-block;
+  background: #e2e4e8;
+  padding: 0.18rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+.ng__item--example {
+  opacity: 0.9;
+}
+
+/* Respuesta row */
+.ng__resp-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+.ng__resp-lbl {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-right: 0.2rem;
+}
+.ng__resp-zero {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-right: 0.15rem;
+}
+.ng__circ {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid #777;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #666;
+}
+.ng__circ--on {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Divider */
+.ng__rule {
+  border: none;
+  border-top: 2px solid var(--line-soft);
+  margin: 1rem 0 1.4rem;
+}
+
+/* Notice box — double-border (solid outer + dashed inner) */
+.ng__notice-box {
+  background: #fffef5;
+  border: 2.5px solid #2a2a2a;
+  padding: 0.75rem 0.9rem;
+  position: relative;
+  flex: 0 0 38%;
+  max-width: 240px;
+}
+.ng__notice-box::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px dashed #999;
+  pointer-events: none;
+}
+.ng__notice-text {
+  font-family: inherit;
+  white-space: pre-wrap;
+  font-size: 0.83rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+  color: #111;
+}
+
+/* Question rows */
+.ng__items {
+  display: flex;
+  flex-direction: column;
+}
+.ng__item {
+  display: flex;
+  gap: 0.9rem 1rem;
+  align-items: flex-start;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.ng__item:last-child { border-bottom: none; }
+.ng__item-n {
+  font-weight: 700;
+  font-size: 0.95rem;
+  min-width: 1.4rem;
+  padding-top: 0.6rem;
+  color: var(--ink);
+}
+.ng__item-right {
+  flex: 1;
+  min-width: 0;
+}
+.ng__item-q {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.55rem;
+  line-height: 1.4;
+}
+
+/* Options A/B/C */
+.ng__opts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.ng__opt {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.32rem 0.6rem;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  font-size: 0.86rem;
+  color: var(--ink);
+  transition: background 0.1s;
+}
+.ng__opt:hover { background: var(--bg-2); }
+.ng__opt--sel {
+  border-color: var(--accent);
+  background: rgba(200, 32, 46, 0.06);
+  font-weight: 500;
+}
+.ng__opt-ltr {
+  font-weight: 700;
+  min-width: 1.1rem;
+  color: inherit;
+}
+.ng__opt-txt { flex: 1; }
+
+/* Mobile: stack notice + options */
+@media (max-width: 580px) {
+  .ng__item { flex-wrap: wrap; }
+  .ng__notice-box { flex: 0 0 calc(100% - 2rem); max-width: none; }
+  .ng__item-right { flex: 0 0 100%; }
+}
+
+/* Dark mode */
+[data-theme="dark"] .ng__ex { background: #1a1c22; }
+[data-theme="dark"] .ng__ex-pill { background: #2c2e34; color: #aaa; }
+[data-theme="dark"] .ng__notice-box { background: #1e1c0d; border-color: #c8b96a; }
+[data-theme="dark"] .ng__notice-box::before { border-color: #6b5e2a; }
+[data-theme="dark"] .ng__notice-text { color: #e8ddb0; }
+[data-theme="dark"] .ng__circ { border-color: #555; color: #888; }
+[data-theme="dark"] .ng__circ--on { background: #d1d5db; border-color: #d1d5db; color: #111; }
+[data-theme="dark"] .ng__item { border-color: #2c2f36; }
+[data-theme="dark"] .ng__rule { border-color: #2c2f36; }
+[data-theme="dark"] .ng__opt:hover { background: #1a1c22; }
+[data-theme="dark"] .ng__opt--sel { background: rgba(200, 32, 46, 0.12); }
+
 
 /* ---- IELTS Practice ---- */
 
