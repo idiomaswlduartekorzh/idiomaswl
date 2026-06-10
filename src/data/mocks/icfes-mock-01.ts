@@ -172,6 +172,7 @@ const mock: MockExam = {
       title: 'Parte 3 — Diálogos',
       sectionStyle: 'dialogs-grid',
       exampleStimulus: 'I think I am getting sick.',
+      exampleOptions: ['I am sorry.', 'I can too.', 'I need it.'],
       exampleAnswer: 'A',
       instructions:
         'Complete las cinco conversaciones. En las preguntas 11 – 15, marque A, B ó C en su hoja de respuestas.',

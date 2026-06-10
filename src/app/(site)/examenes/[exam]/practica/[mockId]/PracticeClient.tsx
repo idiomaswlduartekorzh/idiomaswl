@@ -103,6 +103,41 @@ function NoticesGridSection({
   );
 }
 
+// ── Inline SVG person silhouettes ────────────────────────────────────────────
+function PersonSVG({ gender }: { gender: 'f' | 'm' }) {
+  const skin = '#c5c9d6';
+  const hair = '#7c8096';
+  const body = '#9da1b0';
+  if (gender === 'f') {
+    return (
+      <svg viewBox="0 0 70 110" width="58" height="92" aria-hidden="true">
+        {/* Long hair (back layer) */}
+        <path d="M14 36 Q12 58 20 82 Q28 92 35 92 Q42 92 50 82 Q58 58 56 36 Q48 18 35 18 Q22 18 14 36Z" fill={hair} opacity="0.55"/>
+        {/* Head */}
+        <circle cx="35" cy="30" r="20" fill={skin}/>
+        {/* Hair (front/top) */}
+        <path d="M15 30 Q15 12 35 10 Q55 12 55 30 L55 40 Q47 50 35 48 Q23 50 15 40Z" fill={hair}/>
+        {/* Neck */}
+        <rect x="28" y="46" width="14" height="10" rx="3" fill={skin}/>
+        {/* Body */}
+        <path d="M4 110 Q4 78 20 70 Q27 66 35 66 Q43 66 50 70 Q66 78 66 110Z" fill={body}/>
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 70 110" width="58" height="92" aria-hidden="true">
+      {/* Head */}
+      <circle cx="35" cy="30" r="20" fill={skin}/>
+      {/* Short hair */}
+      <path d="M15 30 Q15 12 35 10 Q55 12 55 30 L55 34 Q49 42 35 40 Q21 42 15 34Z" fill={hair}/>
+      {/* Neck */}
+      <rect x="28" y="48" width="14" height="10" rx="3" fill={skin}/>
+      {/* Body (broader shoulders) */}
+      <path d="M0 110 Q0 74 18 66 Q26 62 35 62 Q44 62 52 66 Q70 74 70 110Z" fill={body}/>
+    </svg>
+  );
+}
+
 // ── Dialogs grid (ICFES Parte 3) ─────────────────────────────────────────────
 function DialogsGridSection({
   section,
@@ -135,19 +170,45 @@ function DialogsGridSection({
       {section.exampleStimulus && (
         <div className="dg__ex">
           <span className="dg__ex-pill">Ejemplo:</span>
-          <div className="dg__ex-row">
-            <div className="dg__bubble">
-              <p className="dg__bubble-text">{section.exampleStimulus}</p>
+
+          {/* Scene with two people */}
+          <div className="dg__scene">
+            {/* Left: female speaker */}
+            <div className="dg__scene-person dg__scene-person--l">
+              <PersonSVG gender="f" />
             </div>
-            <div className="dg__resp-row">
-              <span className="dg__resp-lbl">Respuesta:</span>
-              <span className="dg__resp-zero">0.</span>
-              {['A', 'B', 'C'].map((ltr, i) => (
-                <span key={i} className={`dg__circ${i === exAnsIdx ? ' dg__circ--on' : ''}`}>
-                  {ltr}
-                </span>
-              ))}
+
+            {/* Middle: speech bubble + response options */}
+            <div className="dg__scene-mid">
+              <div className="dg__scene-bubble">
+                {section.exampleStimulus}
+              </div>
+              {section.exampleOptions && (
+                <div className="dg__scene-exopts">
+                  {section.exampleOptions.map((opt, i) => (
+                    <div key={i} className="dg__scene-exopt">
+                      <strong>{String.fromCharCode(65 + i)}.</strong>&nbsp;{opt}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
+
+            {/* Right: male listener */}
+            <div className="dg__scene-person dg__scene-person--r">
+              <PersonSVG gender="m" />
+            </div>
+          </div>
+
+          {/* Respuesta */}
+          <div className="dg__resp-row">
+            <span className="dg__resp-lbl">Respuesta:</span>
+            <span className="dg__resp-zero">0.</span>
+            {['A', 'B', 'C'].map((ltr, i) => (
+              <span key={i} className={`dg__circ${i === exAnsIdx ? ' dg__circ--on' : ''}`}>
+                {ltr}
+              </span>
+            ))}
           </div>
         </div>
       )}

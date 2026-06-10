@@ -3131,27 +3131,60 @@ button {
   color: #555;
   margin-bottom: 0.7rem;
 }
-.dg__ex-row {
+/* Scene — two people illustration */
+.dg__scene {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8rem;
+  background: #f3f4f8;
+  border-radius: 10px;
+  padding: 1rem 1rem 0.6rem;
+  margin-bottom: 0.7rem;
+}
+.dg__scene-person--l,
+.dg__scene-person--r {
+  flex-shrink: 0;
+  line-height: 0;
+}
+.dg__scene-mid {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.7rem;
+  padding-bottom: 0.2rem;
+  min-width: 0;
 }
-
-/* Speech bubble */
-.dg__bubble {
-  display: inline-block;
+.dg__scene-bubble {
   background: #fff;
   border: 1.5px solid #ccc;
-  border-radius: 10px 10px 10px 2px;
-  padding: 0.55rem 0.9rem;
-  position: relative;
-  max-width: 400px;
-}
-.dg__bubble-text {
-  font-size: 0.92rem;
+  border-radius: 10px 10px 10px 3px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.88rem;
   font-style: italic;
-  color: var(--ink);
-  margin: 0;
+  color: #333;
+  line-height: 1.4;
+  max-width: 280px;
+}
+.dg__scene-exopts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: flex-end;
+  width: 100%;
+}
+.dg__scene-exopt {
+  background: #fff;
+  border: 1.5px solid #bbb;
+  border-radius: 5px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.83rem;
+  color: #333;
+}
+
+/* Hide person SVGs on very small screens */
+@media (max-width: 480px) {
+  .dg__scene-person--l,
+  .dg__scene-person--r { display: none; }
 }
 
 /* Respuesta row */
@@ -3274,7 +3307,9 @@ button {
 /* Dark mode */
 [data-theme="dark"] .dg__ex { background: #1a1c22; }
 [data-theme="dark"] .dg__ex-pill { background: #2c2e34; color: #aaa; }
-[data-theme="dark"] .dg__bubble { background: #1c1e24; border-color: #383b42; }
+[data-theme="dark"] .dg__scene { background: #1c1e24; }
+[data-theme="dark"] .dg__scene-bubble { background: #252830; border-color: #383b42; color: #dde; }
+[data-theme="dark"] .dg__scene-exopt { background: #252830; border-color: #383b42; color: #dde; }
 [data-theme="dark"] .dg__circ { border-color: #555; color: #888; }
 [data-theme="dark"] .dg__circ--on { background: #d1d5db; border-color: #d1d5db; color: #111; }
 [data-theme="dark"] .dg__item { border-color: #2c2f36; }

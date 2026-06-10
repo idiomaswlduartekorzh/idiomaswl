@@ -153,7 +153,9 @@ export interface MockSection {
   exampleText?: string;    // example question text
   exampleAnswer?: string;  // matching-grid: H word; notices-grid: answer letter ('A'/'B'/'C')
   // notices-grid (ICFES Part 1)
-  exampleStimulus?: string; // notice/sign text shown in the example row
+  exampleStimulus?: string;  // notice/sign text shown in the example row
+  // dialogs-grid (ICFES Part 3)
+  exampleOptions?: string[]; // A/B/C options shown in the example scene
 }
 
 export interface MockExam {
