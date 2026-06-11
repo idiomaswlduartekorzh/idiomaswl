@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react';
 import type { CSSProperties } from 'react';
 import Link from 'next/link';
 import KoreanCycle from './KoreanCycle';
+import KoreanCompounds from './KoreanCompounds';
 import IcfesStressPractice from './IcfesStressPractice';
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -149,7 +150,7 @@ const XP_PER_LEVEL  = 200;
 export default function PracticaClient() {
   const [selected,  setSelected]  = useState<string | null>(null);
   const [xp,        setXp]        = useState(0);
-  const [activeTab, setActiveTab] = useState<'reader' | 'batchim' | 'quiz' | 'jamo' | 'cycle'>('reader');
+  const [activeTab, setActiveTab] = useState<'reader' | 'batchim' | 'quiz' | 'jamo' | 'cycle' | 'compounds'>('reader');
 
   const addXp = useCallback((n: number) => setXp(p => p + n), []);
 
@@ -410,11 +411,12 @@ export default function PracticaClient() {
           {/* Tool tabs */}
           <div style={{ display:'flex', gap:'0.5rem', marginBottom:'1.5rem', flexWrap:'wrap' }}>
             {([
-              { id:'cycle',   label:'🔄 Ciclo de aprendizaje', badge: 'NUEVO' },
-              { id:'reader',  label:'📖 Lector de Hangul',     badge: null },
-              { id:'jamo',    label:'🔡 Tabla de Jamo',         badge: null },
-              { id:'batchim', label:'🎵 Reglas de Batchim',     badge: null },
-              { id:'quiz',    label:'🧠 Quiz',                  badge: null },
+              { id:'cycle',     label:'🔄 Ciclo de aprendizaje', badge: null   },
+              { id:'compounds', label:'🧩 Bloques de vocabulario',badge: 'NUEVO'},
+              { id:'reader',    label:'📖 Lector de Hangul',     badge: null   },
+              { id:'jamo',      label:'🔡 Tabla de Jamo',         badge: null   },
+              { id:'batchim',   label:'🎵 Reglas de Batchim',     badge: null   },
+              { id:'quiz',      label:'🧠 Quiz',                  badge: null   },
             ] as const).map(tab => (
               <button
                 key={tab.id}
@@ -437,11 +439,12 @@ export default function PracticaClient() {
           </div>
 
           {/* Tool content */}
-          {activeTab === 'cycle'   && <KoreanCycle     addXp={addXp} />}
-          {activeTab === 'reader'  && <KoreanReader    addXp={addXp} />}
-          {activeTab === 'jamo'    && <JamoTable        addXp={addXp} />}
-          {activeTab === 'batchim' && <BatchimAnalyzer  addXp={addXp} />}
-          {activeTab === 'quiz'    && <SyllableQuiz     addXp={addXp} />}
+          {activeTab === 'cycle'     && <KoreanCycle      addXp={addXp} />}
+          {activeTab === 'compounds' && <KoreanCompounds  addXp={addXp} />}
+          {activeTab === 'reader'    && <KoreanReader     addXp={addXp} />}
+          {activeTab === 'jamo'      && <JamoTable         addXp={addXp} />}
+          {activeTab === 'batchim'   && <BatchimAnalyzer   addXp={addXp} />}
+          {activeTab === 'quiz'      && <SyllableQuiz      addXp={addXp} />}
         </div>
       </div>
     </section>
