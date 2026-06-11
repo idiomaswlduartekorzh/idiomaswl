@@ -2,16 +2,16 @@ import type { Metadata } from 'next';
 import PracticaClient from './PracticaClient';
 
 export const metadata: Metadata = {
-  title: 'Práctica de Coreano y Lectura',
+  title: 'Herramientas de Práctica — IELTS, ICFES, Coreano',
   description:
-    'Herramientas interactivas para dominar el coreano: lector con desglose silábico Hangul, pronunciación en tiempo real, reglas fonéticas del batchim y ciclo de lectura con textos A1–B1.',
+    'Practica IELTS Writing Task 1 (conectores Band 6–7), ICFES inglés bajo estrés y coreano con lector Hangul interactivo, batchim y ciclo de lectura A1–B1.',
   keywords: [
-    'Hangul aprender', 'leer coreano', 'batchim reglas', 'práctica coreano',
-    'desglose silábico coreano', 'textos coreanos A1 B1',
+    'IELTS Writing Task 1 conectores', 'práctica IELTS gratuita',
+    'ICFES inglés práctica', 'Hangul aprender', 'leer coreano', 'batchim reglas',
   ],
   openGraph: {
-    title: 'Práctica de Coreano — Idiomas WeLearn',
-    description: 'Lector Hangul interactivo, reglas fonéticas del batchim y ciclo de lectura con textos A1–B1.',
+    title: 'Práctica de Idiomas y Exámenes — Idiomas WeLearn',
+    description: 'IELTS Writing Task 1, ICFES inglés bajo estrés y herramientas interactivas de coreano.',
     url: 'https://idiomaswl.com/practica',
   },
   alternates: {
