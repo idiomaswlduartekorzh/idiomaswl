@@ -123,9 +123,9 @@ export default function ConnectorsGame({ activity }: { activity: ConnectorsActiv
           {activity.chartCategories.map((cat, i) => (
             <div key={cat} className="wt1-bars__col">
               <div className="wt1-bars__wrap">
-                <span className="wt1-bars__val">{activity.chartValues[i]}{activity.chartUnit}</span>
                 <div className="wt1-bars__bar" style={{ height: `${activity.chartValues[i]}%` }} />
               </div>
+              <span className="wt1-bars__val">{activity.chartValues[i]}{activity.chartUnit}</span>
               <span className="wt1-bars__label">{cat}</span>
             </div>
           ))}
