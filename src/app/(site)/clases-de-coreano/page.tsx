@@ -605,6 +605,26 @@ export default function ClasesDeCoreanoPage() {
                 <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Escucha y repite. Ejercicios de pronunciación con audio nativo para entrenar el oído.</div>
               </div>
 
+              {/* Bloques de vocabulario — FREE */}
+              <Link
+                href="/aprende-coreano/palabras-compuestas"
+                style={{
+                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
+                  padding: '1.25rem', borderRadius: 14,
+                  border: '1.5px solid rgba(5,150,105,0.45)',
+                  background: 'rgba(5,150,105,0.08)',
+                  textDecoration: 'none', transition: 'border-color .2s',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🧩</span>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#059669', background: 'rgba(5,150,105,0.15)', padding: '2px 8px', borderRadius: 100 }}>Nuevo</span>
+                </div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Bloques de vocabulario — 합성어</div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Combina raíces coreanas para descubrir palabras compuestas. 23 raíces, 20 compuestos, 3 modos de práctica.</div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>🧩 Combinar · Familias · Quiz — Sin registro</div>
+              </Link>
+
               {/* Live Quiz — FREE */}
               <Link
                 href="/practica/live/coreano-1"
