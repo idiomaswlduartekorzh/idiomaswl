@@ -562,7 +562,7 @@ const MODES: { id: Mode; label: string; desc: string }[] = [
   { id: 'quiz',    label: '🧠 Quiz',      desc: '10 preguntas para poner a prueba lo aprendido' },
 ];
 
-export default function KoreanCompounds({ addXp }: { addXp: (n: number) => void }) {
+export default function KoreanCompounds({ addXp = () => {} }: { addXp?: (n: number) => void }) {
   const [mode, setMode]       = useState<Mode>('combine');
   const [showIntro, setShowIntro] = useState(true);
 

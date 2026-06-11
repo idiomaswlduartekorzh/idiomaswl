@@ -425,7 +425,7 @@ export default function PalabrasCompuestasPage() {
               Cada compuesto encontrado te da <strong style={{ color:'var(--ink)' }}>+15 XP</strong>.
             </p>
             <div style={{ borderRadius:20, border:'1.5px solid var(--line-soft)', padding:'1.5rem', background:'var(--bg)' }}>
-              <KoreanCompounds addXp={() => {}} />
+              <KoreanCompounds />
             </div>
           </section>
 
