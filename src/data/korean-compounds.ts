@@ -186,13 +186,99 @@ export const COMPOUNDS: KoreanCompound[] = [
     note: 'Al unirse 나무+잎, se agrega 사이시옷: 나뭇잎. La pronunciación es [나문닙].',
   },
 
-  // ── misc ──────────────────────────────────────────────────────────────────
+  // ── 눈 familia extendida ──────────────────────────────────────────────────
+  {
+    id: 'nunbich', parts: ['nun', 'bich'],
+    hangul: '눈빛', romanization: 'nunbit', level: 'A1',
+    meaning: 'mirada / expresión de los ojos',
+    explanation: 'La "luz" (빛) de los "ojos" (눈). La expresión que transmiten los ojos sin palabras.',
+  },
+  {
+    id: 'nungil', parts: ['nun', 'gil'],
+    hangul: '눈길', romanization: 'nungil', level: 'A2',
+    meaning: 'camino nevado / mirada',
+    explanation: '"Camino" (길) de "nieve" (눈) en sentido literal. En sentido figurado, la dirección de la mirada.',
+    note: '눈 puede ser ojo o nieve. 눈길 tiene ambos significados según el contexto.',
+  },
+  {
+    id: 'nunga', parts: ['nun', 'ga'],
+    hangul: '눈가', romanization: 'nunga', level: 'A2',
+    meaning: 'rabillo / zona alrededor del ojo',
+    explanation: 'El "borde" (가) del "ojo" (눈). La zona que rodea el ojo, especialmente el rabillo.',
+  },
+
+  // ── 손·발 familia extendida ───────────────────────────────────────────────
+  {
+    id: 'songil', parts: ['son', 'gil'],
+    hangul: '손길', romanization: 'songil', level: 'A2',
+    meaning: 'toque / mano amiga',
+    explanation: 'El "camino" (길) de la "mano" (손). El alcance o el toque de una mano — también se usa para un gesto de ayuda.',
+  },
+  {
+    id: 'balgil', parts: ['bal', 'gil'],
+    hangul: '발길', romanization: 'balgil', level: 'A2',
+    meaning: 'pisada / patada',
+    explanation: 'El "camino" (길) del "pie" (발). El movimiento del pie al caminar, y también un puntapié.',
+  },
+
+  // ── 물 familia extendida ──────────────────────────────────────────────────
+  {
+    id: 'mulgogi', parts: ['mul', 'gogi'],
+    hangul: '물고기', romanization: 'mulgogi', level: 'A1',
+    meaning: 'pez / pescado',
+    explanation: 'La "carne" (고기) del "agua" (물). ¡Un pez es literalmente la carne del agua en coreano! Es uno de los compuestos más elegantes del idioma.',
+  },
+  {
+    id: 'mulga', parts: ['mul', 'ga'],
+    hangul: '물가', romanization: 'mulga', level: 'A1',
+    meaning: 'orilla del agua / ribera',
+    explanation: 'El "borde" (가) del "agua" (물). La orilla de un río, lago o mar.',
+  },
+  {
+    id: 'mulgil', parts: ['mul', 'gil'],
+    hangul: '물길', romanization: 'mulgil', level: 'A2',
+    meaning: 'cauce / canal de agua',
+    explanation: 'El "camino" (길) del "agua" (물). El recorrido que hace el agua — un río, canal o acequia.',
+  },
+
+  // ── 꽃 familia extendida ──────────────────────────────────────────────────
+  {
+    id: 'kkotnip', parts: ['kkot', 'ip'],
+    hangul: '꽃잎', romanization: 'kkonnip', level: 'A1',
+    meaning: 'pétalo',
+    explanation: 'La "hoja" (잎) de la "flor" (꽃). Los pétalos son como las hojas de una flor.',
+    note: 'Saiiot: 꽃+잎 → 꽃잎, pronunciado [꼰닙].',
+  },
+
+  // ── 하늘 familia extendida ────────────────────────────────────────────────
+  {
+    id: 'haneulbich', parts: ['haneul', 'bich'],
+    hangul: '하늘빛', romanization: 'haneulbit', level: 'A2',
+    meaning: 'resplandor del cielo / azul cielo',
+    explanation: 'La "luz/color" (빛) del "cielo" (하늘). El tono o el brillo del cielo, más poético que 하늘색.',
+  },
   {
     id: 'haneulsaek', parts: ['haneul', 'saek'],
     hangul: '하늘색', romanization: 'haneulsaek', level: 'A2',
-    meaning: 'azul cielo',
-    explanation: 'El "color" (색) del "cielo" (하늘). El celeste, el color cielo.',
+    meaning: 'azul cielo (color)',
+    explanation: 'El "color" (색) del "cielo" (하늘). El celeste clásico. 하늘색 es más específico al color; 하늘빛 es más poético.',
   },
+
+  // ── 불 familia extendida ──────────────────────────────────────────────────
+  {
+    id: 'bulgil', parts: ['bul', 'gil'],
+    hangul: '불길', romanization: 'bulgil', level: 'A2',
+    meaning: 'llamarada / presagio',
+    explanation: 'El "camino" (길) del "fuego" (불). Las llamas que avanzan. También se usa como adjetivo para decir que algo es de mal agüero.',
+  },
+  {
+    id: 'bulbaram', parts: ['bul', 'baram'],
+    hangul: '불바람', romanization: 'bulbaram', level: 'B1',
+    meaning: 'vendaval ardiente / tormenta de fuego',
+    explanation: 'El "viento" (바람) del "fuego" (불). Una ráfaga de calor extremo, también se usa metafóricamente.',
+  },
+
+  // ── misc ──────────────────────────────────────────────────────────────────
   {
     id: 'jiban', parts: ['jip', 'an'],
     hangul: '집안', romanization: 'jizan', level: 'A2',
