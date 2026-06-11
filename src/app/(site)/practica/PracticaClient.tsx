@@ -206,7 +206,7 @@ export default function PracticaClient() {
 
             {/* IELTS Writing Task 1 card */}
             <Link
-              href="/examenes/ielts/writing-conectores"
+              href="/practica/ielts-writing-conectores"
               style={{
                 display: 'flex',
                 alignItems: 'stretch',
