@@ -5,7 +5,6 @@ import type { CSSProperties } from 'react';
 import Link from 'next/link';
 import KoreanCycle from './KoreanCycle';
 import KoreanCompounds from './KoreanCompounds';
-import IcfesStressPractice from './IcfesStressPractice';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Language catalogue
@@ -161,31 +160,6 @@ export default function PracticaClient() {
   const xpInLevel = xp % XP_PER_LEVEL;
   const xpPct     = (xpInLevel / XP_PER_LEVEL) * 100;
 
-  /* ── ICFES stress practice ─────────────────────────────────────────────── */
-  if (selected === 'icfes') {
-    return (
-      <section className="wl-section">
-        <div className="wrap">
-          <div style={{ maxWidth: 720, margin: '0 auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
-              <button
-                onClick={() => setSelected(null)}
-                className="btn btn-ghost btn-sm"
-                style={{ fontSize: '0.82rem' }}
-              >
-                ← Volver
-              </button>
-              <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>
-                Práctica / ICFES
-              </span>
-            </div>
-            <IcfesStressPractice />
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   /* ── Language grid ──────────────────────────────────────────────────────── */
   if (!selected) {
     return (
@@ -302,27 +276,19 @@ export default function PracticaClient() {
             </Link>
 
             {/* ICFES card */}
-            <button
-              onClick={() => setSelected('icfes')}
+            <Link
+              href="/practica/icfes-saber-11"
               style={{
-                '--exam-color': '#dc2626',
-                width: '100%',
-                textAlign: 'left',
-                cursor: 'pointer',
-                appearance: 'none',
-                WebkitAppearance: 'none',
-                margin: 0,
-                padding: 0,
-                font: 'inherit',
+                display: 'flex',
+                alignItems: 'stretch',
+                textDecoration: 'none',
                 color: 'inherit',
                 background: 'linear-gradient(135deg, rgba(220,38,38,0.08) 0%, rgba(83,74,183,0.05) 100%)',
                 border: '1.5px solid rgba(220,38,38,0.2)',
                 borderRadius: 18,
                 overflow: 'hidden',
-                display: 'flex',
-                alignItems: 'stretch',
                 transition: 'box-shadow 0.2s, border-color 0.2s',
-              } as CSSProperties}
+              }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(220,38,38,0.15)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(220,38,38,0.4)'; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(220,38,38,0.2)'; }}
             >
@@ -338,12 +304,12 @@ export default function PracticaClient() {
                       </span>
                     </div>
                     <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
-                      Práctica bajo estrés · English Component · Temporizador + escritura libre
+                      Juego adaptativo · 4 niveles · Detecta tus puntos débiles
                     </div>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-                  {['⏱ Temporizador', '🎲 Preguntas aleatorias', '✍️ Escritura libre', '📊 Resultados detallados'].map(tag => (
+                  {['🧠 Adaptativo', '💾 Checkpoint', '📋 Avisos + Diálogos', '📖 Lectura + Gramática'].map(tag => (
                     <span key={tag} style={{ fontSize: '0.72rem', padding: '0.2rem 0.6rem', borderRadius: 6, background: 'rgba(220,38,38,0.08)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
                       {tag}
                     </span>
@@ -353,7 +319,7 @@ export default function PracticaClient() {
               <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#dc2626', fontSize: '1.2rem', fontWeight: 700 }}>
                 →
               </div>
-            </button>
+            </Link>
           </div>
 
           {/* Language tools */}
