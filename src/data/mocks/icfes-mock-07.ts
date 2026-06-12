@@ -1,484 +1,364 @@
 import type { MockExam } from './types';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// ICFES Saber 11 · Componente de Inglés — Mock 07
+// Nivel: A2–B1  ·  45 preguntas  ·  60 minutos
+// Tema: Tecnología e internet
+// ─────────────────────────────────────────────────────────────────────────────
 const mock: MockExam = {
   id: 'mock-07',
   examSlug: 'icfes',
-  title: 'Mock 7 · Deporte y tiempo libre',
-  subtitle: 'Saber 11 · Componente de Inglés · 55 preguntas · 60 minutos',
+  title: 'Mock 7 · Tecnología e internet',
+  subtitle: 'Saber 11 · Componente de Inglés · 45 preguntas · 60 minutos',
   timeMinutes: 60,
   sections: [
+
+    // ── PARTE 1 ── Avisos e instrucciones (preguntas 1–5) ────────────────────
     {
       part: 1,
-      title: 'Parte 1 — Vocabulario: relacionar palabras',
-      instructions: 'Match each word with its correct description.',
+      title: 'Parte 1 — Avisos e instrucciones',
+      sectionStyle: 'notices-grid',
+      exampleStimulus: 'BUS STOP\nPlease stand behind the line.\nThank you.',
+      exampleText: 'Where could you see this sign?',
+      exampleAnswer: 'A',
+      instructions:
+        'The following notices give information about different places. Read each notice carefully and answer questions 1 to 5.',
       questions: [
         {
           type: 'mcq',
           id: 'p1q1',
           part: 1,
-          text: 'The person who leads and trains a sports team, giving instructions and developing strategy.',
-          options: ['Coach', 'Supporter', 'Referee', 'Spectator'],
-          answer: 0,
+          stimulusStyle: 'notice',
+          stimulus:
+            'COMPUTER LAB\nLOG OUT WHEN YOU FINISH — DO NOT LEAVE SESSIONS OPEN\nFailure to comply may result in loss of access.',
+          text: 'What does this notice tell users to do?',
+          options: [
+            'Turn off all the computers when they leave',
+            'Close their account when they finish using the lab',
+            'Sign out of the computer after they have finished',
+          ],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p1q2',
           part: 1,
-          text: 'A set of planned physical exercises done regularly to improve fitness and health.',
-          options: ['Tournament', 'Workout', 'Hobby', 'League'],
+          stimulusStyle: 'notice',
+          stimulus:
+            'PHONE STORE\nALL PHONES ON DISPLAY ARE LOCKED — ASK STAFF FOR ASSISTANCE\nThank you for your patience.',
+          text: 'What should customers do if they want to look at a phone?',
+          options: [
+            'Unlock the phone themselves',
+            'Ask a member of staff for help',
+            'Read the instruction manual next to the phone',
+          ],
           answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q3',
           part: 1,
-          text: 'A sports competition in which many players or teams compete against each other over several rounds.',
-          options: ['Trophy', 'Training', 'Tournament', 'Transfer'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'LIBRARY\nNO FOOD OR DRINKS NEAR THE COMPUTERS\nHelp us keep the equipment in good condition.',
+          text: 'What is the purpose of this notice?',
+          options: [
+            'To remind people to eat before entering the library',
+            'To protect the computer equipment from damage',
+            'To encourage people to use the library café area',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q4',
           part: 1,
-          text: 'An activity that someone does for pleasure during their free time, not as a job.',
-          options: ['Career', 'Ambition', 'Talent', 'Hobby'],
-          answer: 3,
+          stimulusStyle: 'notice',
+          stimulus:
+            'SCHOOL\nMOBILE PHONES MUST BE KEPT IN BAGS DURING CLASS\nStudents who break this rule will lose their phone for the day.',
+          text: 'Where would you most likely see this notice?',
+          options: [
+            'In a shopping centre',
+            'In a school classroom',
+            'At a train station',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q5',
           part: 1,
-          text: 'A physical injury in a muscle caused by overuse or sudden movement during exercise.',
-          options: ['Fatigue', 'Bruise', 'Strain', 'Fracture'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'OFFICE\nDO NOT SHARE YOUR PASSWORD WITH ANYONE\nIf you think your account has been compromised, contact IT immediately.',
+          text: 'What is the main message of this notice?',
+          options: [
+            'Staff should create new passwords every week',
+            'Staff should keep their passwords private and secure',
+            'Staff should ask IT for a new password each month',
+          ],
+          answer: 1,
         },
       ],
     },
+
+    // ── PARTE 2 ── Vocabulario: cuadrícula de emparejamiento (preguntas 6–10) ─
     {
       part: 2,
-      title: 'Parte 2 — Diálogos',
-      instructions: 'Read each dialogue and choose the best response to complete it.',
+      title: 'Parte 2 — Vocabulario',
+      sectionStyle: 'matching-grid',
+      topic: 'Technology',
+      exampleText: 'To copy data or a file from the internet to your device.',
+      exampleAnswer: 'download',
+      instructions:
+        'Read descriptions 6 to 10. Which word from column (A – G) matches each description? Mark the correct letter. There are TWO extra words you will not need.',
       questions: [
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q1',
           part: 2,
-          stimulus: 'Friend A: "I\'ve been feeling really stressed lately. What do you do to relax?"\nFriend B: _______',
-          text: 'What is Friend B\'s most helpful response?',
-          options: [
-            '"I go for a run three times a week. It really clears my mind."',
-            '"I usually watch a lot of television."',
-            '"Stress is a normal part of life."',
-            '"You should sleep more hours."',
-          ],
-          answer: 0,
+          text: 'The flat surface of a device, such as a phone or computer, where images and text are displayed.',
+          options: ['battery', 'cable', 'keyboard', 'password', 'screen', 'software', 'storage'],
+          answer: 4,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q2',
           part: 2,
-          stimulus: 'Coach: "You\'ve been training hard, but your technique still needs work. How do you feel about that?"\nPlayer: _______',
-          text: 'What does the player say?',
-          options: [
-            '"I think I\'m ready to retire from the sport."',
-            '"The other players have the same problem."',
-            '"I always do my best during practice."',
-            '"I appreciate the feedback. Can you show me specifically what I need to improve?"',
-          ],
-          answer: 3,
+          text: 'A set of keys arranged in rows that you press to type text or commands into a computer.',
+          options: ['battery', 'cable', 'keyboard', 'password', 'screen', 'software', 'storage'],
+          answer: 2,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q3',
           part: 2,
-          stimulus: 'Parent: "Are you sure you want to join the swimming team? It\'s a big commitment."\nTeenager: "Yes, absolutely. I\'ve been swimming for three years and I really want to compete."\nParent: _______',
-          text: 'What does the parent say?',
-          options: [
-            '"Swimming pools are very expensive."',
-            '"All right. I\'ll support you. Let\'s find out about registration."',
-            '"You should try a less demanding sport first."',
-            '"The swim team only takes the best players."',
-          ],
-          answer: 1,
+          text: 'A device inside a phone or laptop that stores electrical energy and powers it when unplugged.',
+          options: ['battery', 'cable', 'keyboard', 'password', 'screen', 'software', 'storage'],
+          answer: 0,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q4',
           part: 2,
-          stimulus: 'Gym receptionist: "Good morning! Are you a member here?"\nVisitor: "Not yet. I\'d like to find out more about joining."\nReceptionist: _______',
-          text: 'What is the receptionist\'s most helpful response?',
-          options: [
-            '"The gym opens at six in the morning."',
-            '"Of course! Let me give you a tour and explain our membership options."',
-            '"You should sign up online."',
-            '"We are very busy right now."',
-          ],
-          answer: 1,
+          text: 'Programs and applications that are installed on a computer or device and make it function.',
+          options: ['battery', 'cable', 'keyboard', 'password', 'screen', 'software', 'storage'],
+          answer: 5,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q5',
           part: 2,
-          stimulus: 'Teammate A: "We lost the match, but you played really well today."\nTeammate B: _______',
-          text: 'Which response is most appropriate?',
-          options: [
-            '"The referee made a lot of bad decisions."',
-            '"I scored the most goals on the team."',
-            '"I don\'t think I played well at all."',
-            '"Thank you. It was disappointing to lose, but we\'ll learn from it."',
-          ],
+          text: 'A secret word or combination of characters used to access a protected account or device.',
+          options: ['battery', 'cable', 'keyboard', 'password', 'screen', 'software', 'storage'],
           answer: 3,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q6',
-          part: 2,
-          stimulus: 'Doctor: "You\'ve been running long distances without proper rest. What does your weekly training schedule look like?"\nAthlete: _______',
-          text: 'What does the athlete say?',
-          options: [
-            '"I run every day, about 15 kilometers each session, with no rest days."',
-            '"I prefer swimming to running."',
-            '"I usually train in the morning before breakfast."',
-            '"My coach thinks I need to run faster."',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q7',
-          part: 2,
-          stimulus: 'Sports journalist: "Congratulations on winning the championship! What was the key to your team\'s success?"\nSports captain: _______',
-          text: 'What does the captain say?',
-          options: [
-            '"We were lucky that the other teams were not very good."',
-            '"I think I was the most important player this season."',
-            '"We worked incredibly hard as a unit, and everyone contributed. It was a true team effort."',
-            '"The trophy is very beautiful."',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q8',
-          part: 2,
-          stimulus: 'Student A: "What do you usually do on weekends?"\nStudent B: "I love painting. It helps me unwind after a long week."\nStudent A: _______',
-          text: 'What is Student A\'s most natural response?',
-          options: [
-            '"Painting is very expensive."',
-            '"You should try a sport instead."',
-            '"I prefer playing video games."',
-            '"That sounds really relaxing. Do you paint people or landscapes?"',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q9',
-          part: 2,
-          stimulus: 'Physical education teacher: "Class, today we\'re going to practice passing in basketball. Get into pairs, please."\nStudent: "Excuse me, I hurt my wrist yesterday. Can I sit this one out?"\nTeacher: _______',
-          text: 'What does the teacher say?',
-          options: [
-            '"You need a doctor\'s note for that."',
-            '"Everyone must participate today."',
-            '"Of course. Please sit on the bench and watch. I hope your wrist feels better soon."',
-            '"You can still try — just use your other hand."',
-          ],
-          answer: 2,
         },
       ],
     },
+
+    // ── PARTE 3 ── Diálogos (preguntas 11–15) ────────────────────────────────
     {
       part: 3,
-      title: 'Parte 3 — Completar oraciones',
-      instructions: 'Choose the word or phrase that best completes each sentence.',
+      title: 'Parte 3 — Diálogos',
+      sectionStyle: 'dialogs-grid',
+      exampleStimulus: 'I think I am getting sick.',
+      exampleOptions: ['I am sorry.', 'I can too.', 'I need it.'],
+      exampleAnswer: 'A',
+      instructions:
+        'Complete las cinco conversaciones. En las preguntas 11 – 15, marque A, B ó C en su hoja de respuestas.',
       questions: [
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q1',
           part: 3,
-          text: 'She _______ tennis every Saturday morning since she was twelve years old.',
-          options: ['plays', 'has been playing', 'played', 'is playing'],
-          answer: 1,
+          stimulus: 'My phone battery dies every afternoon.',
+          text: '',
+          options: [
+            'You should charge it more often.',
+            'Batteries are very expensive.',
+            'Buy a completely new phone.',
+          ],
+          answer: 0,
         },
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q2',
           part: 3,
-          text: 'The team _______ practice early tomorrow because the match starts at noon.',
-          options: ['will begin', 'begins', 'began', 'is beginning'],
-          answer: 0,
+          stimulus: "I can't remember my email password.",
+          text: '',
+          options: [
+            'Create a completely new email account.',
+            'Passwords are unnecessary these days.',
+            'Try resetting it online.',
+          ],
+          answer: 2,
         },
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q3',
           part: 3,
-          text: 'Regular exercise is important not only _______ physical health but also for mental well-being.',
-          options: ['for', 'because of', 'despite', 'although'],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q4',
-          part: 3,
-          text: 'The athlete _______ injured during practice, so she was unable to compete in the finals.',
-          options: ['gets', 'got', 'getting', 'has get'],
+          stimulus: "There's no Wi-Fi signal in this area.",
+          text: '',
+          options: [
+            'I never use Wi-Fi anyway.',
+            'We can use mobile data instead.',
+            'The internet is overrated.',
+          ],
           answer: 1,
         },
         {
-          type: 'mcq',
-          id: 'p3q5',
+          type: 'dialog',
+          id: 'p3q4',
           part: 3,
-          text: 'Cycling is a great _______ for people who want a low-impact form of exercise.',
-          options: ['optionally', 'optional', 'option', 'opting'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q6',
-          part: 3,
-          text: 'You should warm up _______ you start any intense physical activity to avoid injury.',
-          options: ['after', 'until', 'since', 'before'],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q7',
-          part: 3,
-          text: 'The new sports center _______ thousands of visitors since it opened last spring.',
-          options: ['attracts', 'attracted', 'has attracted', 'is attracting'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q8',
-          part: 3,
-          text: 'If you practice _______, you will see significant improvement in your performance within a few weeks.',
-          options: ['consistently', 'consistent', 'consistency', 'consisting'],
+          stimulus: 'My computer crashed and I lost all my work.',
+          text: '',
+          options: [
+            'You should save your files more often.',
+            'Computers always break down eventually.',
+            'That work was not important anyway.',
+          ],
           answer: 0,
         },
         {
-          type: 'mcq',
-          id: 'p3q9',
+          type: 'dialog',
+          id: 'p3q5',
           part: 3,
-          text: 'Many people take up hobbies such as gardening or photography _______ they want to reduce screen time.',
-          options: ['however', 'despite', 'unless', 'because'],
-          answer: 3,
+          stimulus: 'I spend four hours a day on social media.',
+          text: '',
+          options: [
+            'I spend even more than that.',
+            'Social media is very important.',
+            'That might be too much time.',
+          ],
+          answer: 2,
         },
       ],
     },
+
+    // ── PARTE 4 ── Completar el texto (preguntas 16–23) ──────────────────────
     {
       part: 4,
-      title: 'Parte 4 — Comprensión visual',
-      instructions: 'Read the notice or sign and answer the questions that follow.',
+      title: 'Parte 4 — Completar el texto',
+      sectionStyle: 'cloze-text',
+      instructions:
+        'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
+      passage:
+        "Mobile (16) ___ have changed the way people communicate. In the 1990s, they were large and heavy, and were used only for voice (17) ___. By the 2000s, they had become smaller and started to include basic (18) ___ access. Today, smartphones include high-quality (19) ___ and allow users to do almost anything, from banking to watching films. They have become extremely (20) ___ among people of all ages. One of the biggest concerns about modern phones is the time people spend on (21) ___ media. Many young people find it difficult to imagine life without these devices. They connect people across the (22) ___ and have transformed healthcare, education, and business. As (23) ___ continues to develop, future phones will be even more powerful than today's.",
       questions: [
         {
           type: 'mcq',
           id: 'p4q1',
           part: 4,
-          stimulus: '--- COMMUNITY SPORTS CENTER ---\nGRAND OPENING — SATURDAY, MARCH 15TH\nActivities available:\n• Swimming pool (ages 6 and up)\n• Basketball court (open play, no booking required)\n• Yoga studio (class booking required)\n• Fitness gym (adults 16+ only)\nMembership: $15/month · Free trial available for first-time visitors\nOpen daily: 6:00 AM – 10:00 PM',
-          stimulusLabel: 'Read the sports center notice.',
-          text: 'Which activity requires advance booking?',
-          options: [
-            'Swimming.',
-            'Yoga classes.',
-            'Basketball.',
-            'The fitness gym.',
-          ],
-          answer: 1,
+          text: 'Choose the best word for blank (16).',
+          options: ['phones', 'screens', 'cables', 'keyboards'],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'p4q2',
           part: 4,
-          stimulus: '--- COMMUNITY SPORTS CENTER ---\nGRAND OPENING — SATURDAY, MARCH 15TH\nActivities available:\n• Swimming pool (ages 6 and up)\n• Basketball court (open play, no booking required)\n• Yoga studio (class booking required)\n• Fitness gym (adults 16+ only)\nMembership: $15/month · Free trial available for first-time visitors\nOpen daily: 6:00 AM – 10:00 PM',
-          stimulusLabel: 'Read the sports center notice.',
-          text: 'Who is NOT allowed to use the fitness gym?',
-          options: [
-            'Adults over 18.',
-            'Young people under 16.',
-            'People without a membership.',
-            'First-time visitors.',
-          ],
-          answer: 1,
+          text: 'Choose the best word for blank (17).',
+          options: ['travel', 'messages', 'communication', 'connection'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q3',
           part: 4,
-          stimulus: 'SWIMMING POOL RULES\n• Shower before entering the pool.\n• No running on the pool deck.\n• Children under 10 must be accompanied by an adult.\n• No food or drinks in the pool area.\n• Swim caps are required for all users.\n• The pool closes for maintenance every Tuesday from 8:00 AM – 10:00 AM.',
-          stimulusLabel: 'Read the pool rules.',
-          text: 'What must all swimmers wear?',
-          options: [
-            'A life jacket.',
-            'Goggles.',
-            'Waterproof footwear.',
-            'A swim cap.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (18).',
+          options: ['radio', 'internet', 'television', 'newspaper'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q4',
           part: 4,
-          stimulus: 'SWIMMING POOL RULES\n• Shower before entering the pool.\n• No running on the pool deck.\n• Children under 10 must be accompanied by an adult.\n• No food or drinks in the pool area.\n• Swim caps are required for all users.\n• The pool closes for maintenance every Tuesday from 8:00 AM – 10:00 AM.',
-          stimulusLabel: 'Read the pool rules.',
-          text: 'When is the pool closed for maintenance?',
-          options: [
-            'Every Tuesday from 8:00 AM to 10:00 AM.',
-            'Every Monday morning.',
-            'Every Saturday afternoon.',
-            'Every Sunday from 6:00 AM to 8:00 AM.',
-          ],
-          answer: 0,
+          text: 'Choose the best word for blank (19).',
+          options: ['radios', 'printers', 'batteries', 'cameras'],
+          answer: 3,
         },
         {
           type: 'mcq',
           id: 'p4q5',
           part: 4,
-          stimulus: 'INTER-SCHOOL SPORTS DAY\nDate: Friday, May 23rd · 8:00 AM – 4:00 PM\nVenue: Parque Deportivo Central\nEvents: 100m sprint · Long jump · Relay race · Football · Volleyball\nAll student participants must bring:\n• School ID card\n• Signed permission form\n• Water bottle and snacks\nResults announced at 3:30 PM. Medals awarded to top 3 finishers in each event.',
-          stimulusLabel: 'Read the sports day flyer.',
-          text: 'What must students bring to participate in Sports Day?',
-          options: [
-            'A school uniform and sports shoes.',
-            'A medical certificate and emergency contact form.',
-            'A school ID card, a signed permission form, and water and snacks.',
-            'Their coach and a team captain.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (20).',
+          options: ['rare', 'popular', 'complicated', 'expensive'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q6',
           part: 4,
-          stimulus: 'INTER-SCHOOL SPORTS DAY\nDate: Friday, May 23rd · 8:00 AM – 4:00 PM\nVenue: Parque Deportivo Central\nEvents: 100m sprint · Long jump · Relay race · Football · Volleyball\nAll student participants must bring:\n• School ID card\n• Signed permission form\n• Water bottle and snacks\nResults announced at 3:30 PM. Medals awarded to top 3 finishers in each event.',
-          stimulusLabel: 'Read the sports day flyer.',
-          text: 'How many students receive medals in each event?',
-          options: [
-            'Only the first-place finisher.',
-            'The top five finishers.',
-            'All participants.',
-            'The top three finishers.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (21).',
+          options: ['social', 'digital', 'online', 'public'],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'p4q7',
           part: 4,
-          stimulus: 'YOGA CLASS TIMETABLE — JULY\nMondayS & Wednesdays: Beginners Yoga · 7:00 AM – 8:00 AM · Studio 1\nTuesdays & Thursdays: Intermediate Flow · 6:00 PM – 7:15 PM · Studio 2\nSaturdays: Relaxation & Mindfulness · 9:00 AM – 10:30 AM · Studio 1\n* Book online at least 24 hours in advance.\n* Bring your own mat or rent one for $2 at reception.',
-          stimulusLabel: 'Read the yoga timetable.',
-          text: 'How far in advance must students book a yoga class?',
-          options: [
-            'At least 30 minutes before.',
-            'At least two days before.',
-            'At least 24 hours before.',
-            'At least one week before.',
-          ],
+          text: 'Choose the best word for blank (22).',
+          options: ['city', 'school', 'world', 'office'],
           answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q8',
           part: 4,
-          stimulus: 'YOGA CLASS TIMETABLE — JULY\nMondayS & Wednesdays: Beginners Yoga · 7:00 AM – 8:00 AM · Studio 1\nTuesdays & Thursdays: Intermediate Flow · 6:00 PM – 7:15 PM · Studio 2\nSaturdays: Relaxation & Mindfulness · 9:00 AM – 10:30 AM · Studio 1\n* Book online at least 24 hours in advance.\n* Bring your own mat or rent one for $2 at reception.',
-          stimulusLabel: 'Read the yoga timetable.',
-          text: 'What can students do if they do not have a yoga mat?',
-          options: [
-            'Borrow one from another student.',
-            'Rent one at reception for $2.',
-            'Skip the class and rebook.',
-            'Use a towel instead.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p4q9',
-          part: 4,
-          stimulus: 'BICYCLE RENTAL — RIVERSIDE PARK\nHours: Daily, 8:00 AM – 6:00 PM\nRates:\n• 1 hour: $5\n• Half day (4 hours): $15\n• Full day: $25\nHelmet included. ID required as deposit.\nReturn bikes 15 minutes before closing time.\nNo cycling on footpaths — cycling lanes only.',
-          stimulusLabel: 'Read the bicycle rental sign.',
-          text: 'What is used as a deposit when renting a bicycle?',
-          options: [
-            'An ID document.',
-            'A cash deposit of $10.',
-            'A credit card.',
-            'A signed rental agreement.',
-          ],
-          answer: 0,
+          text: 'Choose the best word for blank (23).',
+          options: ['science', 'fashion', 'art', 'technology'],
+          answer: 3,
         },
       ],
     },
+
+    // ── PARTE 5 ── Comprensión: texto corto (preguntas 24–30) ────────────────
     {
       part: 5,
-      title: 'Parte 5 — Texto corto',
-      instructions: 'Read the text and answer the questions.',
+      title: 'Parte 5 — Comprensión de lectura: texto corto',
+      sectionStyle: 'reading',
+      passageTitle: 'Coding Classes in Colombian Schools',
+      instructions:
+        'Read the text and answer questions 24 to 30. Choose the best option (A, B, C, or D).',
+      passage:
+        "CODING CLASSES IN COLOMBIAN SCHOOLS\n\nIn 2022, the Colombian government announced a national initiative to introduce coding and programming classes in secondary schools across the country. The programme, called Código Colombia, aims to prepare young people for the digital economy by giving them the skills needed to work in technology-related fields.\n\nAs part of the initiative, the Ministry of Education partnered with several technology companies to provide training for teachers. Over twelve thousand teachers from public schools participated in workshops where they learned how to teach basic programming languages such as Scratch and Python. The government also provided computers and tablets to schools in rural and lower-income areas, where access to technology has historically been limited.\n\nStudents who have participated in the programme report that they enjoy learning to code. Many say that programming makes them think more creatively and helps them solve problems in new ways. Some students have already created their own simple applications and websites.\n\nExperts believe that digital skills will be essential in the job market of the future. According to recent data, Colombia will need hundreds of thousands of technology professionals in the next decade. Programmes like Código Colombia are seen as a crucial step in meeting this demand and reducing the gap between Colombia's digital capacity and that of more technologically developed countries.",
       questions: [
         {
           type: 'mcq',
           id: 'p5q1',
           part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Why was the sports center built in Barrio Norte?',
+          text: 'What is the main goal of the Código Colombia programme?',
           options: [
-            'Because local teenagers had no safe recreational spaces nearby.',
-            'To host national sports competitions.',
-            'To replace an old gym that was falling apart.',
-            'Because the neighborhood requested a swimming pool specifically.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q2',
-          part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What do teenagers need to register at the sports center?',
-          options: [
-            'A parent\'s signature and payment form.',
-            'A school ID.',
-            'A medical certificate.',
-            'A letter from their school principal.',
+            'To teach students how to use social media safely',
+            'To prepare young people with skills for the digital economy',
+            'To replace all traditional subjects with computer science',
+            'To help Colombian schools buy new computers',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
+          id: 'p5q2',
+          part: 5,
+          text: 'How were teachers prepared to teach coding?',
+          options: [
+            'They studied at universities for two years.',
+            'They learned through online videos independently.',
+            'They attended workshops organised with technology companies.',
+            'They were replaced by professional programmers.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
           id: 'p5q3',
           part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What feature of the center helps students with their schoolwork?',
+          text: 'Why were computers and tablets provided to rural schools in particular?',
           options: [
-            'Free internet access in the fitness area.',
-            'A tutoring service offered by the coaches.',
-            'A study room where they can do homework.',
-            'A library with academic textbooks.',
+            'Rural schools have more students than city schools.',
+            'Rural students are more interested in technology.',
+            'Access to technology in those areas has traditionally been limited.',
+            'The government wanted to test new equipment in rural areas first.',
           ],
           answer: 2,
         },
@@ -486,394 +366,170 @@ The opening was celebrated with a community tournament, which attracted over 200
           type: 'mcq',
           id: 'p5q4',
           part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How many people attended the opening tournament as participants or spectators?',
+          text: 'According to paragraph 3, how has coding affected students?',
           options: [
-            'Over 200 in total.',
-            'Over 500 in total.',
-            'Over 1,000 in total.',
-            'Over 700 in total.',
+            'It has made them more interested in maths and science.',
+            'It has helped them think more creatively and solve problems.',
+            'It has reduced the time they spend on social media.',
+            'It has encouraged them to study abroad.',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q5',
           part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The word "densely" in the first paragraph most likely means:',
+          text: 'The word "crucial" in the final paragraph most likely means:',
           options: [
-            'Quietly and peacefully.',
-            'In a very modern and developed way.',
-            'With a very high concentration of people.',
-            'Far from the city center.',
+            'interesting but not necessary',
+            'extremely important',
+            'difficult to achieve',
+            'well known and popular',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q6',
           part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'According to local officials, what are the two main goals of the center?',
+          text: 'What does the text say about Colombia\'s future technology workforce?',
           options: [
-            'To reduce youth crime and improve health outcomes.',
-            'To attract sponsors and host national tournaments.',
-            'To provide jobs for coaches and support local schools.',
-            'To train professional athletes and promote the city internationally.',
+            'Colombia already has enough technology professionals.',
+            'Colombia will need hundreds of thousands more technology workers.',
+            'Most Colombian students are not interested in technology jobs.',
+            'Colombia plans to hire technology experts from other countries.',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q7',
           part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What plans are mentioned for the future of the sports center?',
+          text: 'Which of the following is NOT mentioned in the text?',
           options: [
-            'To build an outdoor running track.',
-            'To expand the swimming pool to 50 meters.',
-            'To open a second location in another neighborhood.',
-            'To add a dance studio and a martial arts room.',
+            'The names of programming languages taught in the programme',
+            'The number of teachers who received training',
+            'How much money the government spent on the programme',
+            'The types of projects students have already created',
           ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q8',
-          part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'On which days and times is the center open for teenagers?',
-          options: [
-            'Monday to Saturday, 8:00 AM – 4:00 PM.',
-            'Monday to Friday afternoons and Saturday mornings.',
-            'Every day from 6:00 AM to 10:00 PM.',
-            'Tuesday to Sunday, 3:00 PM to 8:00 PM.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q9',
-          part: 5,
-          stimulus: `New Sports Center Opens Its Doors for Teenagers in Barrio Norte
-
-A modern community sports center officially opened last month in Barrio Norte, one of the most densely populated neighborhoods in the city. The center was built in response to growing concerns from local parents and educators about the lack of safe recreational spaces for teenagers, many of whom had been spending their afternoons on the streets with little to do.
-
-The facility includes a full-size indoor basketball court, a football pitch, a 25-meter swimming pool, and a dedicated fitness area for young people aged 13 to 17. All activities are completely free of charge for residents who register with a school ID. Classes and training sessions are scheduled every afternoon from 3:00 PM to 7:00 PM, Monday through Friday, and on Saturday mornings.
-
-The center is staffed by five qualified coaches who offer structured training in each sport, as well as informal open-play sessions. It also has a study room where students can do homework before or after their sports session.
-
-The opening was celebrated with a community tournament, which attracted over 200 participants and more than 500 spectators. Local officials say the center is part of a broader initiative to reduce youth crime and improve health outcomes in the area. Plans are already underway to add a dance studio and a martial arts room before the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What can be inferred about the sports center from this text?',
-          options: [
-            'It is likely to close after one year due to lack of funding.',
-            'It has been well received by the community and is expected to grow.',
-            'It only serves young people who are already skilled athletes.',
-            'It was built to compete with private sports clubs in the area.',
-          ],
-          answer: 1,
+          answer: 2,
         },
       ],
     },
+
+    // ── PARTE 6 ── Comprensión: texto largo (preguntas 31–35) ────────────────
     {
       part: 6,
-      title: 'Parte 6 — Texto largo: inferencia',
-      instructions: 'Read the longer text carefully and answer the questions. Use inference and context clues.',
+      title: 'Parte 6 — Comprensión de lectura: texto largo',
+      sectionStyle: 'reading',
+      passageTitle: 'Artificial Intelligence in Education',
+      instructions:
+        'Read the text and answer questions 31 to 35. Some questions require you to infer information from the text. Choose the best option (A, B, C, or D).',
+      passage:
+        "ARTIFICIAL INTELLIGENCE IN EDUCATION\n\nArtificial intelligence, commonly known as AI, is beginning to transform education in ways that were impossible to imagine just a decade ago. From personalised learning platforms to automated marking systems, AI tools are being introduced in schools and universities around the world — and Colombia is no exception.\n\nOne of the most promising applications of AI in education is the development of adaptive learning software. These programmes analyse a student's performance in real time and adjust the difficulty and type of content accordingly. If a student struggles with a particular grammar rule or mathematical concept, the platform will provide additional practice exercises automatically. This means that students can learn at their own pace, without having to wait for a teacher to notice their difficulties.\n\nTeachers, however, have mixed feelings about AI in the classroom. Many appreciate that automated tools can save time on administrative tasks such as grading routine exercises, freeing them to focus on more meaningful activities with their students. Others worry that an over-reliance on AI could reduce the human connection that is central to effective teaching. They argue that no algorithm can replace the empathy, creativity, and experience that a skilled teacher brings to the classroom.\n\nPrivacy is another concern. AI learning platforms collect large amounts of data about students — their strengths, weaknesses, habits, and progress. Questions remain about who owns this data, how it is stored, and whether it could be misused in the future.\n\nDespite these concerns, most education experts agree that AI is here to stay. The challenge is not whether to use it, but how to use it wisely — in ways that support teachers rather than replace them, and that protect students' rights and wellbeing.",
       questions: [
         {
           type: 'mcq',
           id: 'p6q1',
           part: 6,
-          stimulus: `Moving for the Mind: How Exercise Transforms Mental Health
-
-For most of human history, physical activity was simply a part of daily survival — people walked, lifted, ran, and worked with their bodies without giving it much thought. Today, millions of people live sedentary lives, sitting at desks, staring at screens, and moving very little throughout the day. The consequences, researchers are now discovering, extend far beyond the physical body.
-
-A growing body of scientific evidence confirms that regular physical activity has profound benefits for mental health. Studies consistently show that people who exercise regularly are significantly less likely to suffer from depression, anxiety, and chronic stress. Exercise triggers the release of endorphins — chemicals produced in the brain that create feelings of pleasure and reduce pain. This is sometimes called the "runner's high," but it applies to any sustained physical activity, from swimming to cycling to dancing.
-
-Beyond brain chemistry, exercise also reshapes how the brain is structured. Research has found that aerobic exercise promotes neurogenesis — the growth of new brain cells — particularly in the hippocampus, the region associated with memory and learning. Regular physical activity has been linked to reduced cognitive decline in older adults and improved academic performance in children.
-
-The mental health benefits go beyond biological processes. Exercise often provides structure, routine, and a sense of achievement. Completing a workout, reaching a personal fitness goal, or improving performance in a sport can significantly boost self-esteem. Group sports and fitness classes add a social dimension, reducing isolation and building community connections.
-
-Despite all this evidence, millions of people worldwide remain largely inactive. Barriers include lack of time, access to facilities, financial constraints, and the motivation to start. Public health experts argue that governments must do more to make physical activity accessible — through urban design that encourages walking and cycling, free community sports programs, and workplace wellness initiatives.
-
-The message is increasingly clear: exercise is not merely a tool for weight management or physical appearance. It is one of the most effective, low-cost interventions available for mental well-being. In a world grappling with a growing mental health crisis, moving more may be one of the most important things a person can do for their mind.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the main argument of this text?',
+          text: 'What is the main idea of the text?',
           options: [
-            'People today exercise far too much and risk physical injury.',
-            'The brain is not affected by physical exercise.',
-            'Depression and anxiety can only be treated with medication.',
-            'Regular physical activity has significant benefits for mental health.',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q2',
-          part: 6,
-          stimulus: `Moving for the Mind: How Exercise Transforms Mental Health
-
-For most of human history, physical activity was simply a part of daily survival — people walked, lifted, ran, and worked with their bodies without giving it much thought. Today, millions of people live sedentary lives, sitting at desks, staring at screens, and moving very little throughout the day. The consequences, researchers are now discovering, extend far beyond the physical body.
-
-A growing body of scientific evidence confirms that regular physical activity has profound benefits for mental health. Studies consistently show that people who exercise regularly are significantly less likely to suffer from depression, anxiety, and chronic stress. Exercise triggers the release of endorphins — chemicals produced in the brain that create feelings of pleasure and reduce pain. This is sometimes called the "runner's high," but it applies to any sustained physical activity, from swimming to cycling to dancing.
-
-Beyond brain chemistry, exercise also reshapes how the brain is structured. Research has found that aerobic exercise promotes neurogenesis — the growth of new brain cells — particularly in the hippocampus, the region associated with memory and learning. Regular physical activity has been linked to reduced cognitive decline in older adults and improved academic performance in children.
-
-The mental health benefits go beyond biological processes. Exercise often provides structure, routine, and a sense of achievement. Completing a workout, reaching a personal fitness goal, or improving performance in a sport can significantly boost self-esteem. Group sports and fitness classes add a social dimension, reducing isolation and building community connections.
-
-Despite all this evidence, millions of people worldwide remain largely inactive. Barriers include lack of time, access to facilities, financial constraints, and the motivation to start. Public health experts argue that governments must do more to make physical activity accessible — through urban design that encourages walking and cycling, free community sports programs, and workplace wellness initiatives.
-
-The message is increasingly clear: exercise is not merely a tool for weight management or physical appearance. It is one of the most effective, low-cost interventions available for mental well-being. In a world grappling with a growing mental health crisis, moving more may be one of the most important things a person can do for their mind.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What are endorphins, according to the text?',
-          options: [
-            'Chemicals in the brain that create pleasure and reduce pain.',
-            'Muscles in the body that are used during running.',
-            'A type of medication prescribed for depression.',
-            'A form of aerobic exercise used in therapy.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q3',
-          part: 6,
-          stimulus: `Moving for the Mind: How Exercise Transforms Mental Health
-
-For most of human history, physical activity was simply a part of daily survival — people walked, lifted, ran, and worked with their bodies without giving it much thought. Today, millions of people live sedentary lives, sitting at desks, staring at screens, and moving very little throughout the day. The consequences, researchers are now discovering, extend far beyond the physical body.
-
-A growing body of scientific evidence confirms that regular physical activity has profound benefits for mental health. Studies consistently show that people who exercise regularly are significantly less likely to suffer from depression, anxiety, and chronic stress. Exercise triggers the release of endorphins — chemicals produced in the brain that create feelings of pleasure and reduce pain. This is sometimes called the "runner's high," but it applies to any sustained physical activity, from swimming to cycling to dancing.
-
-Beyond brain chemistry, exercise also reshapes how the brain is structured. Research has found that aerobic exercise promotes neurogenesis — the growth of new brain cells — particularly in the hippocampus, the region associated with memory and learning. Regular physical activity has been linked to reduced cognitive decline in older adults and improved academic performance in children.
-
-The mental health benefits go beyond biological processes. Exercise often provides structure, routine, and a sense of achievement. Completing a workout, reaching a personal fitness goal, or improving performance in a sport can significantly boost self-esteem. Group sports and fitness classes add a social dimension, reducing isolation and building community connections.
-
-Despite all this evidence, millions of people worldwide remain largely inactive. Barriers include lack of time, access to facilities, financial constraints, and the motivation to start. Public health experts argue that governments must do more to make physical activity accessible — through urban design that encourages walking and cycling, free community sports programs, and workplace wellness initiatives.
-
-The message is increasingly clear: exercise is not merely a tool for weight management or physical appearance. It is one of the most effective, low-cost interventions available for mental well-being. In a world grappling with a growing mental health crisis, moving more may be one of the most important things a person can do for their mind.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What does the text say about neurogenesis and the hippocampus?',
-          options: [
-            'Neurogenesis only occurs in young children, not in adults.',
-            'The hippocampus is responsible for controlling emotional responses during sport.',
-            'Aerobic exercise promotes the growth of new brain cells in the area linked to memory and learning.',
-            'Neurogenesis can cause memory problems if exercise is too intense.',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q4',
-          part: 6,
-          stimulus: `Moving for the Mind: How Exercise Transforms Mental Health
-
-For most of human history, physical activity was simply a part of daily survival — people walked, lifted, ran, and worked with their bodies without giving it much thought. Today, millions of people live sedentary lives, sitting at desks, staring at screens, and moving very little throughout the day. The consequences, researchers are now discovering, extend far beyond the physical body.
-
-A growing body of scientific evidence confirms that regular physical activity has profound benefits for mental health. Studies consistently show that people who exercise regularly are significantly less likely to suffer from depression, anxiety, and chronic stress. Exercise triggers the release of endorphins — chemicals produced in the brain that create feelings of pleasure and reduce pain. This is sometimes called the "runner's high," but it applies to any sustained physical activity, from swimming to cycling to dancing.
-
-Beyond brain chemistry, exercise also reshapes how the brain is structured. Research has found that aerobic exercise promotes neurogenesis — the growth of new brain cells — particularly in the hippocampus, the region associated with memory and learning. Regular physical activity has been linked to reduced cognitive decline in older adults and improved academic performance in children.
-
-The mental health benefits go beyond biological processes. Exercise often provides structure, routine, and a sense of achievement. Completing a workout, reaching a personal fitness goal, or improving performance in a sport can significantly boost self-esteem. Group sports and fitness classes add a social dimension, reducing isolation and building community connections.
-
-Despite all this evidence, millions of people worldwide remain largely inactive. Barriers include lack of time, access to facilities, financial constraints, and the motivation to start. Public health experts argue that governments must do more to make physical activity accessible — through urban design that encourages walking and cycling, free community sports programs, and workplace wellness initiatives.
-
-The message is increasingly clear: exercise is not merely a tool for weight management or physical appearance. It is one of the most effective, low-cost interventions available for mental well-being. In a world grappling with a growing mental health crisis, moving more may be one of the most important things a person can do for their mind.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How does group exercise help people beyond the physical benefits?',
-          options: [
-            'It makes people more competitive and motivated to win.',
-            'It is more effective than individual exercise for weight loss.',
-            'It allows people to exercise without needing professional coaching.',
-            'It reduces isolation and builds social connections.',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q5',
-          part: 6,
-          stimulus: `Moving for the Mind: How Exercise Transforms Mental Health
-
-For most of human history, physical activity was simply a part of daily survival — people walked, lifted, ran, and worked with their bodies without giving it much thought. Today, millions of people live sedentary lives, sitting at desks, staring at screens, and moving very little throughout the day. The consequences, researchers are now discovering, extend far beyond the physical body.
-
-A growing body of scientific evidence confirms that regular physical activity has profound benefits for mental health. Studies consistently show that people who exercise regularly are significantly less likely to suffer from depression, anxiety, and chronic stress. Exercise triggers the release of endorphins — chemicals produced in the brain that create feelings of pleasure and reduce pain. This is sometimes called the "runner's high," but it applies to any sustained physical activity, from swimming to cycling to dancing.
-
-Beyond brain chemistry, exercise also reshapes how the brain is structured. Research has found that aerobic exercise promotes neurogenesis — the growth of new brain cells — particularly in the hippocampus, the region associated with memory and learning. Regular physical activity has been linked to reduced cognitive decline in older adults and improved academic performance in children.
-
-The mental health benefits go beyond biological processes. Exercise often provides structure, routine, and a sense of achievement. Completing a workout, reaching a personal fitness goal, or improving performance in a sport can significantly boost self-esteem. Group sports and fitness classes add a social dimension, reducing isolation and building community connections.
-
-Despite all this evidence, millions of people worldwide remain largely inactive. Barriers include lack of time, access to facilities, financial constraints, and the motivation to start. Public health experts argue that governments must do more to make physical activity accessible — through urban design that encourages walking and cycling, free community sports programs, and workplace wellness initiatives.
-
-The message is increasingly clear: exercise is not merely a tool for weight management or physical appearance. It is one of the most effective, low-cost interventions available for mental well-being. In a world grappling with a growing mental health crisis, moving more may be one of the most important things a person can do for their mind.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What barriers to exercise does the text identify?',
-          options: [
-            'Poor weather, physical disability, and fear of injury.',
-            'Social pressure, competition, and the high cost of sports equipment.',
-            'Lack of time, access to facilities, financial constraints, and motivation.',
-            'Poor nutrition, lack of sleep, and work-related stress.',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q6',
-          part: 6,
-          stimulus: `Moving for the Mind: How Exercise Transforms Mental Health
-
-For most of human history, physical activity was simply a part of daily survival — people walked, lifted, ran, and worked with their bodies without giving it much thought. Today, millions of people live sedentary lives, sitting at desks, staring at screens, and moving very little throughout the day. The consequences, researchers are now discovering, extend far beyond the physical body.
-
-A growing body of scientific evidence confirms that regular physical activity has profound benefits for mental health. Studies consistently show that people who exercise regularly are significantly less likely to suffer from depression, anxiety, and chronic stress. Exercise triggers the release of endorphins — chemicals produced in the brain that create feelings of pleasure and reduce pain. This is sometimes called the "runner's high," but it applies to any sustained physical activity, from swimming to cycling to dancing.
-
-Beyond brain chemistry, exercise also reshapes how the brain is structured. Research has found that aerobic exercise promotes neurogenesis — the growth of new brain cells — particularly in the hippocampus, the region associated with memory and learning. Regular physical activity has been linked to reduced cognitive decline in older adults and improved academic performance in children.
-
-The mental health benefits go beyond biological processes. Exercise often provides structure, routine, and a sense of achievement. Completing a workout, reaching a personal fitness goal, or improving performance in a sport can significantly boost self-esteem. Group sports and fitness classes add a social dimension, reducing isolation and building community connections.
-
-Despite all this evidence, millions of people worldwide remain largely inactive. Barriers include lack of time, access to facilities, financial constraints, and the motivation to start. Public health experts argue that governments must do more to make physical activity accessible — through urban design that encourages walking and cycling, free community sports programs, and workplace wellness initiatives.
-
-The message is increasingly clear: exercise is not merely a tool for weight management or physical appearance. It is one of the most effective, low-cost interventions available for mental well-being. In a world grappling with a growing mental health crisis, moving more may be one of the most important things a person can do for their mind.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What does the author suggest governments should do to help people exercise more?',
-          options: [
-            'Make exercise legally mandatory for all citizens.',
-            'Improve urban design, offer free community programs, and promote workplace wellness.',
-            'Tax unhealthy foods and use the money to build gyms.',
-            'Hire personal trainers to work in schools and offices.',
+            'AI has already replaced most teachers in Colombian schools.',
+            'AI in education offers benefits but also raises important concerns.',
+            'Students learn better when they use AI instead of textbooks.',
+            'AI is too expensive for most schools to use effectively.',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
-          id: 'p6q7',
+          id: 'p6q2',
           part: 6,
-          stimulus: `Moving for the Mind: How Exercise Transforms Mental Health
-
-For most of human history, physical activity was simply a part of daily survival — people walked, lifted, ran, and worked with their bodies without giving it much thought. Today, millions of people live sedentary lives, sitting at desks, staring at screens, and moving very little throughout the day. The consequences, researchers are now discovering, extend far beyond the physical body.
-
-A growing body of scientific evidence confirms that regular physical activity has profound benefits for mental health. Studies consistently show that people who exercise regularly are significantly less likely to suffer from depression, anxiety, and chronic stress. Exercise triggers the release of endorphins — chemicals produced in the brain that create feelings of pleasure and reduce pain. This is sometimes called the "runner's high," but it applies to any sustained physical activity, from swimming to cycling to dancing.
-
-Beyond brain chemistry, exercise also reshapes how the brain is structured. Research has found that aerobic exercise promotes neurogenesis — the growth of new brain cells — particularly in the hippocampus, the region associated with memory and learning. Regular physical activity has been linked to reduced cognitive decline in older adults and improved academic performance in children.
-
-The mental health benefits go beyond biological processes. Exercise often provides structure, routine, and a sense of achievement. Completing a workout, reaching a personal fitness goal, or improving performance in a sport can significantly boost self-esteem. Group sports and fitness classes add a social dimension, reducing isolation and building community connections.
-
-Despite all this evidence, millions of people worldwide remain largely inactive. Barriers include lack of time, access to facilities, financial constraints, and the motivation to start. Public health experts argue that governments must do more to make physical activity accessible — through urban design that encourages walking and cycling, free community sports programs, and workplace wellness initiatives.
-
-The message is increasingly clear: exercise is not merely a tool for weight management or physical appearance. It is one of the most effective, low-cost interventions available for mental well-being. In a world grappling with a growing mental health crisis, moving more may be one of the most important things a person can do for their mind.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The word "sedentary" in the first paragraph most likely describes people who:',
+          text: 'How does adaptive learning software help students?',
           options: [
-            'Spend most of their time sitting and do very little physical activity.',
-            'Exercise excessively and risk overtraining.',
-            'Work outdoors in physically demanding jobs.',
-            'Follow a strict diet without doing exercise.',
+            'It allows students to choose the subjects they want to study.',
+            'It connects students with private tutors around the world.',
+            'It adjusts content and difficulty based on each student\'s performance.',
+            'It sends reports about student progress directly to parents.',
           ],
-          answer: 0,
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p6q3',
+          part: 6,
+          text: 'According to paragraph 3, what do some teachers worry about regarding AI?',
+          options: [
+            'AI tools are too difficult for most teachers to learn to use.',
+            'Over-reliance on AI could reduce the human connection in teaching.',
+            'AI programmes make students less willing to study independently.',
+            'AI systems cost schools too much money to maintain.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'p6q4',
+          part: 6,
+          text: 'What privacy concern does the text mention?',
+          options: [
+            'AI platforms share student data with other students.',
+            'Students\' personal photos are stored without permission.',
+            'Questions remain about who owns student data and how it is used.',
+            'AI systems give teachers access to students\' private messages.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p6q5',
+          part: 6,
+          text: 'What can be inferred from the final paragraph about the author\'s view?',
+          options: [
+            'AI should be removed from all schools immediately.',
+            'AI can be beneficial in education if it is used thoughtfully.',
+            'Teachers should be replaced by AI as quickly as possible.',
+            'The risks of AI in education are too great to ignore.',
+          ],
+          answer: 1,
         },
       ],
     },
+
+    // ── PARTE 7 ── Texto de opinión/argumento (preguntas 36–45) ──────────────
     {
       part: 7,
-      title: 'Parte 7 — Texto de opinion',
-      instructions: "Read the opinion text and answer the questions about the author's argument.",
+      title: 'Parte 7 — Texto de opinión',
+      sectionStyle: 'reading',
+      passageTitle: 'Is Technology Making Us Less Social?',
+      instructions:
+        'Read the text and answer questions 36 to 45. Choose the best option (A, B, C, or D).',
+      passage:
+        "IS TECHNOLOGY MAKING US LESS SOCIAL?\n\nA few decades ago, the idea of spending an entire evening at home, communicating with dozens of people from around the world without leaving your sofa, would have seemed extraordinary. Today, it is completely normal. The rise of smartphones, social media, and instant messaging has transformed how we interact — but has it made us more social, or less?\n\nSome people argue that technology has made us more connected than ever before. Social media platforms allow people to maintain friendships across great distances. Messaging apps let families separated by migration keep in close contact. Online communities bring together people who share interests or experiences, giving a sense of belonging to individuals who might feel isolated in their local environment. For many, especially those who are shy, technology provides a safer and less intimidating space to communicate.\n\nCritics, however, point to a different reality. While we may be sending more messages than ever, many researchers argue that the quality of our social interactions has declined. Face-to-face conversations require active listening, empathy, and the reading of body language — skills that are not exercised when we type short messages or post images online. Studies have found that heavy social media users often report feeling lonely and disconnected, despite spending hours interacting online.\n\nThere is also the issue of phubbing — the habit of looking at your phone while in the company of other people. Research shows that even the visible presence of a smartphone on a dinner table reduces the quality of the conversation, as people are distracted by the device.\n\nThe truth is probably more nuanced than either side admits. Technology can enrich our social lives when it is used to complement face-to-face relationships, but it becomes harmful when it begins to substitute them. Like most tools, its value depends entirely on how we choose to use it.",
       questions: [
         {
           type: 'mcq',
           id: 'p7q1',
           part: 7,
-          stimulus: `Are Professional Athletes Paid Too Much?
-
-When a professional footballer signs a contract worth fifty million dollars per year, or a basketball player earns more in a single game than a teacher earns in a lifetime, it is natural to ask: are we getting our priorities right? I believe the astronomical salaries paid to professional athletes are fundamentally unjust and reflect deeply distorted values in our society.
-
-The argument that "the market decides" is often used to defend these salaries. And yes, technically, sports leagues are private businesses, and if people are willing to pay for tickets, merchandise, and TV subscriptions, then high salaries follow. But this logic ignores the broader question of what we, as a society, choose to value and reward.
-
-Consider the professions that are truly essential to human well-being: doctors, nurses, teachers, social workers, firefighters, and scientists. These individuals dedicate years to training, often work in difficult conditions, and make contributions that quite literally keep society functioning. Yet many of them struggle to pay rent. Meanwhile, an athlete who hits a ball or runs with it earns thousands of times more.
-
-Defenders of high athlete salaries argue that elite athletes are rare talents whose careers are short and physically demanding. This is true. But scarcity and difficulty are not unique to sport. Surgeons train for a decade and perform procedures that can save lives. Their work is also physically and mentally demanding, and yet their compensation is nowhere near that of a top footballer.
-
-Others point out that athletes create enormous economic activity — they fill stadiums, support local businesses, and generate tax revenue. Again, this is partially true. But the same argument could be made for teachers, who educate the next generation of workers, innovators, and citizens.
-
-I am not suggesting that athletes should be paid nothing, or even poorly. Athletic excellence is a genuine achievement that deserves recognition and fair reward. But when the gap between the highest and lowest earners in a society becomes so extreme, it speaks to a fundamental problem with our collective values. We need to redirect some of that wealth — through taxation and policy — toward the professions that hold our communities together.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What is the author\'s main argument?',
+          text: 'What central question does this text explore?',
           options: [
-            'The extremely high salaries of professional athletes reflect distorted societal values.',
-            'Professional athletes should not be allowed to earn more than doctors.',
-            'Sports leagues should be nationalized and controlled by governments.',
-            'Athletes should donate all of their income to social causes.',
+            'How smartphones were designed and developed',
+            'Whether technology has made people more or less social',
+            'Which social media platform is the most popular',
+            'How messaging apps have changed the business world',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q2',
           part: 7,
-          stimulus: `Are Professional Athletes Paid Too Much?
-
-When a professional footballer signs a contract worth fifty million dollars per year, or a basketball player earns more in a single game than a teacher earns in a lifetime, it is natural to ask: are we getting our priorities right? I believe the astronomical salaries paid to professional athletes are fundamentally unjust and reflect deeply distorted values in our society.
-
-The argument that "the market decides" is often used to defend these salaries. And yes, technically, sports leagues are private businesses, and if people are willing to pay for tickets, merchandise, and TV subscriptions, then high salaries follow. But this logic ignores the broader question of what we, as a society, choose to value and reward.
-
-Consider the professions that are truly essential to human well-being: doctors, nurses, teachers, social workers, firefighters, and scientists. These individuals dedicate years to training, often work in difficult conditions, and make contributions that quite literally keep society functioning. Yet many of them struggle to pay rent. Meanwhile, an athlete who hits a ball or runs with it earns thousands of times more.
-
-Defenders of high athlete salaries argue that elite athletes are rare talents whose careers are short and physically demanding. This is true. But scarcity and difficulty are not unique to sport. Surgeons train for a decade and perform procedures that can save lives. Their work is also physically and mentally demanding, and yet their compensation is nowhere near that of a top footballer.
-
-Others point out that athletes create enormous economic activity — they fill stadiums, support local businesses, and generate tax revenue. Again, this is partially true. But the same argument could be made for teachers, who educate the next generation of workers, innovators, and citizens.
-
-I am not suggesting that athletes should be paid nothing, or even poorly. Athletic excellence is a genuine achievement that deserves recognition and fair reward. But when the gap between the highest and lowest earners in a society becomes so extreme, it speaks to a fundamental problem with our collective values. We need to redirect some of that wealth — through taxation and policy — toward the professions that hold our communities together.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'How does the author respond to the "market decides" argument?',
+          text: 'According to paragraph 2, what is one way technology helps families?',
           options: [
-            'By fully agreeing that market forces should always determine salaries.',
-            'By arguing that market logic ignores the question of what society should truly value.',
-            'By saying that sports leagues should be banned from operating as private businesses.',
-            'By claiming that fans should stop paying to watch sports.',
+            'It allows families to save money on travel.',
+            'It helps families separated by migration stay in close contact.',
+            'It enables families to watch television together online.',
+            'It gives families access to cheaper healthcare services.',
           ],
           answer: 1,
         },
@@ -881,26 +537,12 @@ I am not suggesting that athletes should be paid nothing, or even poorly. Athlet
           type: 'mcq',
           id: 'p7q3',
           part: 7,
-          stimulus: `Are Professional Athletes Paid Too Much?
-
-When a professional footballer signs a contract worth fifty million dollars per year, or a basketball player earns more in a single game than a teacher earns in a lifetime, it is natural to ask: are we getting our priorities right? I believe the astronomical salaries paid to professional athletes are fundamentally unjust and reflect deeply distorted values in our society.
-
-The argument that "the market decides" is often used to defend these salaries. And yes, technically, sports leagues are private businesses, and if people are willing to pay for tickets, merchandise, and TV subscriptions, then high salaries follow. But this logic ignores the broader question of what we, as a society, choose to value and reward.
-
-Consider the professions that are truly essential to human well-being: doctors, nurses, teachers, social workers, firefighters, and scientists. These individuals dedicate years to training, often work in difficult conditions, and make contributions that quite literally keep society functioning. Yet many of them struggle to pay rent. Meanwhile, an athlete who hits a ball or runs with it earns thousands of times more.
-
-Defenders of high athlete salaries argue that elite athletes are rare talents whose careers are short and physically demanding. This is true. But scarcity and difficulty are not unique to sport. Surgeons train for a decade and perform procedures that can save lives. Their work is also physically and mentally demanding, and yet their compensation is nowhere near that of a top footballer.
-
-Others point out that athletes create enormous economic activity — they fill stadiums, support local businesses, and generate tax revenue. Again, this is partially true. But the same argument could be made for teachers, who educate the next generation of workers, innovators, and citizens.
-
-I am not suggesting that athletes should be paid nothing, or even poorly. Athletic excellence is a genuine achievement that deserves recognition and fair reward. But when the gap between the highest and lowest earners in a society becomes so extreme, it speaks to a fundamental problem with our collective values. We need to redirect some of that wealth — through taxation and policy — toward the professions that hold our communities together.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'Which professions does the author use as a contrast to show that essential workers are underpaid?',
+          text: 'The word "intimidating" in paragraph 2 most likely means:',
           options: [
-            'Lawyers, judges, and politicians.',
-            'Engineers, architects, and urban planners.',
-            'Doctors, teachers, nurses, firefighters, and scientists.',
-            'Journalists, writers, and musicians.',
+            'boring and repetitive',
+            'expensive and difficult to access',
+            'making someone feel nervous or afraid',
+            'requiring a lot of technical skill',
           ],
           answer: 2,
         },
@@ -908,109 +550,92 @@ I am not suggesting that athletes should be paid nothing, or even poorly. Athlet
           type: 'mcq',
           id: 'p7q4',
           part: 7,
-          stimulus: `Are Professional Athletes Paid Too Much?
-
-When a professional footballer signs a contract worth fifty million dollars per year, or a basketball player earns more in a single game than a teacher earns in a lifetime, it is natural to ask: are we getting our priorities right? I believe the astronomical salaries paid to professional athletes are fundamentally unjust and reflect deeply distorted values in our society.
-
-The argument that "the market decides" is often used to defend these salaries. And yes, technically, sports leagues are private businesses, and if people are willing to pay for tickets, merchandise, and TV subscriptions, then high salaries follow. But this logic ignores the broader question of what we, as a society, choose to value and reward.
-
-Consider the professions that are truly essential to human well-being: doctors, nurses, teachers, social workers, firefighters, and scientists. These individuals dedicate years to training, often work in difficult conditions, and make contributions that quite literally keep society functioning. Yet many of them struggle to pay rent. Meanwhile, an athlete who hits a ball or runs with it earns thousands of times more.
-
-Defenders of high athlete salaries argue that elite athletes are rare talents whose careers are short and physically demanding. This is true. But scarcity and difficulty are not unique to sport. Surgeons train for a decade and perform procedures that can save lives. Their work is also physically and mentally demanding, and yet their compensation is nowhere near that of a top footballer.
-
-Others point out that athletes create enormous economic activity — they fill stadiums, support local businesses, and generate tax revenue. Again, this is partially true. But the same argument could be made for teachers, who educate the next generation of workers, innovators, and citizens.
-
-I am not suggesting that athletes should be paid nothing, or even poorly. Athletic excellence is a genuine achievement that deserves recognition and fair reward. But when the gap between the highest and lowest earners in a society becomes so extreme, it speaks to a fundamental problem with our collective values. We need to redirect some of that wealth — through taxation and policy — toward the professions that hold our communities together.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'The author admits that elite athletes have "rare talents" and short careers. What is the purpose of this admission?',
+          text: 'What argument do critics make about the quality of online social interactions?',
           options: [
-            'To prove that athletes deserve higher salaries than doctors.',
-            'To agree with defenders of high athlete salaries completely.',
-            'To suggest that athletic careers should be extended through better healthcare.',
-            'To show that the author is being fair before arguing that scarcity and difficulty also apply to other professions.',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p7q5',
-          part: 7,
-          stimulus: `Are Professional Athletes Paid Too Much?
-
-When a professional footballer signs a contract worth fifty million dollars per year, or a basketball player earns more in a single game than a teacher earns in a lifetime, it is natural to ask: are we getting our priorities right? I believe the astronomical salaries paid to professional athletes are fundamentally unjust and reflect deeply distorted values in our society.
-
-The argument that "the market decides" is often used to defend these salaries. And yes, technically, sports leagues are private businesses, and if people are willing to pay for tickets, merchandise, and TV subscriptions, then high salaries follow. But this logic ignores the broader question of what we, as a society, choose to value and reward.
-
-Consider the professions that are truly essential to human well-being: doctors, nurses, teachers, social workers, firefighters, and scientists. These individuals dedicate years to training, often work in difficult conditions, and make contributions that quite literally keep society functioning. Yet many of them struggle to pay rent. Meanwhile, an athlete who hits a ball or runs with it earns thousands of times more.
-
-Defenders of high athlete salaries argue that elite athletes are rare talents whose careers are short and physically demanding. This is true. But scarcity and difficulty are not unique to sport. Surgeons train for a decade and perform procedures that can save lives. Their work is also physically and mentally demanding, and yet their compensation is nowhere near that of a top footballer.
-
-Others point out that athletes create enormous economic activity — they fill stadiums, support local businesses, and generate tax revenue. Again, this is partially true. But the same argument could be made for teachers, who educate the next generation of workers, innovators, and citizens.
-
-I am not suggesting that athletes should be paid nothing, or even poorly. Athletic excellence is a genuine achievement that deserves recognition and fair reward. But when the gap between the highest and lowest earners in a society becomes so extreme, it speaks to a fundamental problem with our collective values. We need to redirect some of that wealth — through taxation and policy — toward the professions that hold our communities together.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What solution does the author propose at the end of the article?',
-          options: [
-            'Setting a maximum salary limit for all professional athletes.',
-            'Reducing the amount of money people spend on sports.',
-            'Using taxation and policy to redirect wealth toward essential professions.',
-            'Requiring athletes to work in public service for part of the year.',
+            'Online interactions are more honest than face-to-face ones.',
+            'Online messages are more creative than verbal conversations.',
+            'The quality of interactions has declined even though the quantity has increased.',
+            'Online communication is only effective for professional relationships.',
           ],
           answer: 2,
         },
         {
           type: 'mcq',
+          id: 'p7q5',
+          part: 7,
+          text: 'According to paragraph 3, which skills are NOT exercised when we type messages online?',
+          options: [
+            'Reading, writing, and spelling',
+            'Active listening, empathy, and reading body language',
+            'Logical thinking and problem-solving',
+            'Creativity and imagination',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
           id: 'p7q6',
           part: 7,
-          stimulus: `Are Professional Athletes Paid Too Much?
-
-When a professional footballer signs a contract worth fifty million dollars per year, or a basketball player earns more in a single game than a teacher earns in a lifetime, it is natural to ask: are we getting our priorities right? I believe the astronomical salaries paid to professional athletes are fundamentally unjust and reflect deeply distorted values in our society.
-
-The argument that "the market decides" is often used to defend these salaries. And yes, technically, sports leagues are private businesses, and if people are willing to pay for tickets, merchandise, and TV subscriptions, then high salaries follow. But this logic ignores the broader question of what we, as a society, choose to value and reward.
-
-Consider the professions that are truly essential to human well-being: doctors, nurses, teachers, social workers, firefighters, and scientists. These individuals dedicate years to training, often work in difficult conditions, and make contributions that quite literally keep society functioning. Yet many of them struggle to pay rent. Meanwhile, an athlete who hits a ball or runs with it earns thousands of times more.
-
-Defenders of high athlete salaries argue that elite athletes are rare talents whose careers are short and physically demanding. This is true. But scarcity and difficulty are not unique to sport. Surgeons train for a decade and perform procedures that can save lives. Their work is also physically and mentally demanding, and yet their compensation is nowhere near that of a top footballer.
-
-Others point out that athletes create enormous economic activity — they fill stadiums, support local businesses, and generate tax revenue. Again, this is partially true. But the same argument could be made for teachers, who educate the next generation of workers, innovators, and citizens.
-
-I am not suggesting that athletes should be paid nothing, or even poorly. Athletic excellence is a genuine achievement that deserves recognition and fair reward. But when the gap between the highest and lowest earners in a society becomes so extreme, it speaks to a fundamental problem with our collective values. We need to redirect some of that wealth — through taxation and policy — toward the professions that hold our communities together.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'The word "astronomical" in the first paragraph is used to describe salaries that are:',
+          text: 'What does the term "phubbing" refer to?',
           options: [
-            'Extremely large and difficult to imagine.',
-            'Related to the science of astronomy and space.',
-            'Paid to athletes who compete in international games.',
-            'Calculated using a complex mathematical formula.',
+            'Sending rude messages to other people online',
+            'Using a phone to record conversations without permission',
+            'Looking at your phone while in the company of other people',
+            'Spending too many hours playing games on a smartphone',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p7q7',
           part: 7,
-          stimulus: `Are Professional Athletes Paid Too Much?
-
-When a professional footballer signs a contract worth fifty million dollars per year, or a basketball player earns more in a single game than a teacher earns in a lifetime, it is natural to ask: are we getting our priorities right? I believe the astronomical salaries paid to professional athletes are fundamentally unjust and reflect deeply distorted values in our society.
-
-The argument that "the market decides" is often used to defend these salaries. And yes, technically, sports leagues are private businesses, and if people are willing to pay for tickets, merchandise, and TV subscriptions, then high salaries follow. But this logic ignores the broader question of what we, as a society, choose to value and reward.
-
-Consider the professions that are truly essential to human well-being: doctors, nurses, teachers, social workers, firefighters, and scientists. These individuals dedicate years to training, often work in difficult conditions, and make contributions that quite literally keep society functioning. Yet many of them struggle to pay rent. Meanwhile, an athlete who hits a ball or runs with it earns thousands of times more.
-
-Defenders of high athlete salaries argue that elite athletes are rare talents whose careers are short and physically demanding. This is true. But scarcity and difficulty are not unique to sport. Surgeons train for a decade and perform procedures that can save lives. Their work is also physically and mentally demanding, and yet their compensation is nowhere near that of a top footballer.
-
-Others point out that athletes create enormous economic activity — they fill stadiums, support local businesses, and generate tax revenue. Again, this is partially true. But the same argument could be made for teachers, who educate the next generation of workers, innovators, and citizens.
-
-I am not suggesting that athletes should be paid nothing, or even poorly. Athletic excellence is a genuine achievement that deserves recognition and fair reward. But when the gap between the highest and lowest earners in a society becomes so extreme, it speaks to a fundamental problem with our collective values. We need to redirect some of that wealth — through taxation and policy — toward the professions that hold our communities together.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'Which best describes the author\'s stance toward professional athletes themselves?',
+          text: 'According to the research mentioned in paragraph 4, what effect does a phone on the table have?',
           options: [
-            'The author believes athletes are dishonest and do not deserve any pay.',
-            'The author fully supports current athlete salary levels.',
-            'The author thinks athletes should compete purely for the love of the sport, without pay.',
-            'The author respects athletic achievement but argues the pay gap is unjust.',
+            'People talk more because they feel more relaxed.',
+            'People argue more about topics they have read online.',
+            'The quality of the conversation is reduced.',
+            'People finish their meals faster than usual.',
           ],
-          answer: 3,
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q8',
+          part: 7,
+          text: 'The word "nuanced" in the final paragraph most likely means:',
+          options: [
+            'completely wrong and based on false data',
+            'more complex and less extreme than it first appears',
+            'very simple and easy for everyone to understand',
+            'based on scientific research and evidence',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q9',
+          part: 7,
+          text: "According to the author, when does technology become harmful to social life?",
+          options: [
+            'When it is used by children under the age of twelve',
+            'When it is used in schools and workplaces',
+            'When it substitutes face-to-face relationships rather than complementing them',
+            'When people spend more than two hours a day using it',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q10',
+          part: 7,
+          text: "Which statement BEST summarises the author's conclusion?",
+          options: [
+            'Technology is making society far less social and should be restricted.',
+            'The impact of technology on social life depends on how people use it.',
+            'Social media is always harmful and should be avoided completely.',
+            'Face-to-face communication is no longer necessary in the modern world.',
+          ],
+          answer: 1,
         },
       ],
     },

@@ -130,6 +130,8 @@ export default function SiteNav() {
               ? pathname.startsWith('/clases-de-coreano')
               : href === '/clases-de-idiomas'
               ? pathname.startsWith('/clases-de-') && !pathname.startsWith('/clases-de-ingles') && !pathname.startsWith('/clases-de-coreano')
+              : href === '/practica'
+              ? pathname.startsWith('/practica')
               : href === '/blog'
               ? pathname.startsWith('/blog')
               : href === '/precios'

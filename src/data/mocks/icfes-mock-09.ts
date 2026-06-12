@@ -1,682 +1,469 @@
 import type { MockExam } from './types';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// ICFES Saber 11 · Componente de Inglés — Mock 09
+// Nivel: A2–B1  ·  45 preguntas  ·  60 minutos
+// Tema: Trabajo y carrera
+// ─────────────────────────────────────────────────────────────────────────────
 const mock: MockExam = {
   id: 'mock-09',
   examSlug: 'icfes',
-  title: 'Mock 9 · Arte y medios',
-  subtitle: 'Saber 11 · Componente de Inglés · 55 preguntas · 60 minutos',
+  title: 'Mock 9 · Trabajo y carrera',
+  subtitle: 'Saber 11 · Componente de Inglés · 45 preguntas · 60 minutos',
   timeMinutes: 60,
   sections: [
+
+    // ── PARTE 1 ── Avisos e instrucciones (preguntas 1–5) ────────────────────
     {
       part: 1,
-      title: 'Parte 1 — Vocabulario: relacionar palabras',
-      instructions: 'Match each word with its correct description.',
+      title: 'Parte 1 — Avisos e instrucciones',
+      sectionStyle: 'notices-grid',
+      exampleStimulus: 'BUS STOP\nPlease stand behind the line.\nThank you.',
+      exampleText: 'Where could you see this sign?',
+      exampleAnswer: 'A',
+      instructions:
+        'The following notices give information about different places. Read each notice carefully and answer questions 1 to 5.',
       questions: [
         {
           type: 'mcq',
           id: 'p1q1',
           part: 1,
-          text: 'A person who creates paintings, sculptures, or other works of visual art.',
-          options: ['Artist', 'Author', 'Journalist', 'Director'],
-          answer: 0,
+          stimulusStyle: 'notice',
+          stimulus:
+            'OFFICE\nTHIS AREA IS FOR STAFF ONLY\nUnauthorised persons must not enter.',
+          text: 'Who is allowed to enter this area?',
+          options: [
+            'Anyone who has an appointment',
+            'Only employees who work there',
+            'Visitors who sign in at reception',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q2',
           part: 1,
-          text: 'A series of moving images shown on a screen, often telling a story.',
-          options: ['Album', 'Film', 'Exhibition', 'Broadcast'],
-          answer: 1,
+          stimulusStyle: 'notice',
+          stimulus:
+            'JOB CENTRE\nTAKE A NUMBER AND WAIT TO BE CALLED\nDo not approach the desk without a number.',
+          text: 'What does this notice tell people to do?',
+          options: [
+            'Go directly to the nearest available desk',
+            'Wait outside until their name is announced',
+            'Take a number and wait until they are called',
+          ],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p1q3',
           part: 1,
-          text: 'The ability to produce something new and original using imagination.',
-          options: ['Accuracy', 'Discipline', 'Creativity', 'Loyalty'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'FACTORY\nSAFETY GOGGLES MUST BE WORN AT ALL TIMES\nProtective equipment is available at the entrance.',
+          text: 'What is the purpose of this notice?',
+          options: [
+            'To inform workers about goggles available to purchase',
+            'To remind workers to wear eye protection for safety',
+            'To tell visitors that the factory is closed',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q4',
           part: 1,
-          text: 'An online platform where users can share short messages, photos, and videos with other users.',
-          options: ['Database', 'Browser', 'Search engine', 'Social media'],
-          answer: 3,
+          stimulusStyle: 'notice',
+          stimulus:
+            'RECRUITMENT AGENCY\nPLEASE BRING YOUR CV AND TWO FORMS OF ID\nAppointments without documents cannot be processed.',
+          text: 'What must job seekers bring when they visit?',
+          options: [
+            'A reference letter and a bank statement',
+            'Their CV and two forms of identification',
+            'A completed application form and a photograph',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q5',
           part: 1,
-          text: 'A public event where works of art are displayed for people to see.',
-          options: ['Concert', 'Performance', 'Exhibition', 'Festival'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'STAFF CANTEEN\nSTAFF MUST SWIPE THEIR CARD BEFORE ENTERING\nVisitors are not permitted in this area.',
+          text: 'Where would you most likely see this notice?',
+          options: [
+            'At the entrance to a public café',
+            'At the door of a staff dining area',
+            'Outside a supermarket checkout',
+          ],
+          answer: 1,
         },
       ],
     },
+
+    // ── PARTE 2 ── Vocabulario: cuadrícula de emparejamiento (preguntas 6–10) ─
     {
       part: 2,
-      title: 'Parte 2 — Diálogos',
-      instructions: 'Read each dialogue and choose the best response to complete it.',
+      title: 'Parte 2 — Vocabulario',
+      sectionStyle: 'matching-grid',
+      topic: 'Work',
+      exampleText: 'When an employee is given a higher position and usually more money at work.',
+      exampleAnswer: 'promotion',
+      instructions:
+        'Read descriptions 6 to 10. Which word from column (A – G) matches each description? Mark the correct letter. There are TWO extra words you will not need.',
       questions: [
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q1',
           part: 2,
-          stimulus: 'Student: "I\'ve been learning to paint watercolors. Do you think I should take formal classes?"\nArt teacher: _______',
-          text: 'What is the most helpful response from the art teacher?',
-          options: [
-            '"Classes can help you develop technique, but practicing on your own is just as important."',
-            '"Painting is not a useful skill in the modern world."',
-            '"Only professional artists need painting lessons."',
-            '"You should focus on digital design instead."',
-          ],
-          answer: 0,
+          text: 'A formal meeting in which an employer asks a candidate questions to decide if they are suitable for a job.',
+          options: ['applicant', 'colleague', 'contract', 'interview', 'overtime', 'resume', 'salary'],
+          answer: 3,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q2',
           part: 2,
-          stimulus: 'Journalist: "The new film festival attracted record attendance this year. What do you think made it so successful?"\nOrganizer: _______',
-          text: 'What is the most relevant response from the organizer?',
-          options: [
-            '"I prefer watching films at home."',
-            '"The weather was very good this year."',
-            '"Film festivals are not as popular as music events."',
-            '"We offered a diverse program and made tickets more affordable for young people."',
-          ],
-          answer: 3,
+          text: 'The fixed amount of money an employee receives regularly, usually paid each month, for their work.',
+          options: ['applicant', 'colleague', 'contract', 'interview', 'overtime', 'resume', 'salary'],
+          answer: 6,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q3',
           part: 2,
-          stimulus: 'Friend A: "Did you listen to the new album that came out yesterday?"\nFriend B: "Not yet — what style of music is it?"\nFriend A: _______',
-          text: 'What does Friend A say next?',
-          options: [
-            '"Music is very important to me."',
-            '"It\'s a mix of jazz and electronic sounds. I think you\'d like it."',
-            '"I don\'t usually buy albums anymore."',
-            '"The singer is from Brazil, I think."',
-          ],
+          text: 'A person who works in the same organisation or team as you.',
+          options: ['applicant', 'colleague', 'contract', 'interview', 'overtime', 'resume', 'salary'],
           answer: 1,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q4',
           part: 2,
-          stimulus: 'Customer: "I\'d like to cancel my streaming subscription."\nAgent: "I\'m sorry to hear that. Can you tell us why?"\nCustomer: _______',
-          text: 'What is the most natural response from the customer?',
-          options: [
-            '"Streaming is very popular these days."',
-            '"The price went up and I\'m not watching enough to justify the cost."',
-            '"I love all the shows available."',
-            '"My internet connection is very fast."',
-          ],
-          answer: 1,
+          text: 'A written legal agreement between an employer and employee that sets out the terms of the job.',
+          options: ['applicant', 'colleague', 'contract', 'interview', 'overtime', 'resume', 'salary'],
+          answer: 2,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q5',
           part: 2,
-          stimulus: 'Parent: "You spend too much time on social media. It\'s affecting your grades."\nTeenager: _______',
-          text: 'Which response is the most appropriate?',
-          options: [
-            '"Social media is more important than school."',
-            '"My grades are fine. Don\'t worry about it."',
-            '"All my friends use social media all day."',
-            '"You\'re right. I\'ll set a time limit for myself and focus more on studying."',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q6',
-          part: 2,
-          stimulus: 'Museum guide: "This painting was created in 1887 and uses a technique called pointillism."\nVisitor: _______',
-          text: 'What does the visitor say?',
-          options: [
-            '"Interesting! So the artist used tiny dots of color instead of brushstrokes?"',
-            '"I don\'t really enjoy modern art."',
-            '"Is there a café in this museum?"',
-            '"I prefer photography to painting."',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q7',
-          part: 2,
-          stimulus: 'Director: "We need to cut the budget for this film. Which department can reduce costs?"\nProducer: "The visual effects team has suggested switching to more practical effects on set."\nDirector: _______',
-          text: 'What does the director say?',
-          options: [
-            '"I prefer digital effects for every scene."',
-            '"We should hire more actors instead."',
-            '"That\'s a good idea. It could also make the film feel more authentic."',
-            '"Let\'s postpone the film until next year."',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q8',
-          part: 2,
-          stimulus: 'Radio host: "Our next guest is a young musician who went viral on social media last month. Welcome!"\nMusician: _______',
-          text: 'What is the most natural response from the musician?',
-          options: [
-            '"I don\'t like listening to the radio."',
-            '"Social media is not very useful for artists."',
-            '"I prefer classical music to pop."',
-            '"Thank you for having me! It\'s been a crazy and exciting few weeks."',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q9',
-          part: 2,
-          stimulus: 'Editor: "Your article on street art is interesting, but it needs a stronger conclusion."\nWriter: _______',
-          text: 'What does the writer say?',
-          options: [
-            '"Street art is illegal in most cities."',
-            '"I think the article is perfect as it is."',
-            '"You\'re right. I\'ll revise it and add a stronger final paragraph before the deadline."',
-            '"Conclusions are not necessary for opinion pieces."',
-          ],
-          answer: 2,
+          text: 'A document that lists a person\'s education, work experience, and skills, used when applying for a job.',
+          options: ['applicant', 'colleague', 'contract', 'interview', 'overtime', 'resume', 'salary'],
+          answer: 5,
         },
       ],
     },
+
+    // ── PARTE 3 ── Diálogos (preguntas 11–15) ────────────────────────────────
     {
       part: 3,
-      title: 'Parte 3 — Completar oraciones',
-      instructions: 'Choose the word or phrase that best completes each sentence.',
+      title: 'Parte 3 — Diálogos',
+      sectionStyle: 'dialogs-grid',
+      exampleStimulus: 'I think I am getting sick.',
+      exampleOptions: ['I am sorry.', 'I can too.', 'I need it.'],
+      exampleAnswer: 'A',
+      instructions:
+        'Complete las cinco conversaciones. En las preguntas 11 – 15, marque A, B ó C en su hoja de respuestas.',
       questions: [
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q1',
           part: 3,
-          text: 'The young singer _______ millions of followers on social media after posting a video of her performance.',
-          options: ['gaining', 'gained', 'gains', 'gain'],
-          answer: 1,
+          stimulus: 'I have a job interview tomorrow morning.',
+          text: '',
+          options: [
+            'Good luck — prepare well tonight.',
+            'Interviews are very easy.',
+            'I hate working too.',
+          ],
+          answer: 0,
         },
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q2',
           part: 3,
-          text: 'The documentary about street art _______ on the national television channel next Friday.',
-          options: ['will air', 'aired', 'airs', 'has aired'],
-          answer: 0,
+          stimulus: 'My boss asked me to work on Saturday.',
+          text: '',
+          options: [
+            'You should say no immediately.',
+            'Bosses are always wrong.',
+            'I hope they pay you extra.',
+          ],
+          answer: 2,
         },
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q3',
           part: 3,
-          text: 'Many artists believe that digital tools have made it easier _______ their work with a global audience.',
-          options: ['to share', 'sharing', 'share', 'shared'],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q4',
-          part: 3,
-          text: 'The film _______ three major awards at the international cinema festival last weekend.',
-          options: ['wins', 'won', 'winning', 'has win'],
+          stimulus: 'I got a pay rise this month.',
+          text: '',
+          options: [
+            'Pay rises are extremely rare.',
+            'Congratulations — you deserve it.',
+            'Money is not important in life.',
+          ],
           answer: 1,
         },
         {
-          type: 'mcq',
-          id: 'p3q5',
+          type: 'dialog',
+          id: 'p3q4',
           part: 3,
-          text: 'Critics argue that streaming platforms pay musicians _______ per stream, making it difficult to earn a living.',
-          options: ['very high', 'too much', 'too little', 'enough'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q6',
-          part: 3,
-          text: 'The gallery _______ in the city center for over fifty years before it was forced to close.',
-          options: ['operates', 'operated', 'operating', 'had operated'],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q7',
-          part: 3,
-          text: 'Social media has _______ the way people discover new music, replacing traditional radio in many markets.',
-          options: ['transform', 'transforming', 'transformed', 'transforms'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q8',
-          part: 3,
-          text: 'The mural was painted _______ a group of local students over the course of two weeks.',
-          options: ['by', 'with', 'from', 'through'],
+          stimulus: "I don't like my new job.",
+          text: '',
+          options: [
+            'Give it some time.',
+            'Quit immediately.',
+            'All jobs are the same.',
+          ],
           answer: 0,
         },
         {
-          type: 'mcq',
-          id: 'p3q9',
+          type: 'dialog',
+          id: 'p3q5',
           part: 3,
-          text: 'If the band _______ earlier, they would have had time to rehearse before the concert.',
-          options: ['arrives', 'arrived', 'would arrive', 'had arrived'],
-          answer: 3,
+          stimulus: 'I am thinking of changing careers.',
+          text: '',
+          options: [
+            'You should never change jobs.',
+            'All careers are equal anyway.',
+            'What kind of work interests you?',
+          ],
+          answer: 2,
         },
       ],
     },
+
+    // ── PARTE 4 ── Completar el texto (preguntas 16–23) ──────────────────────
     {
       part: 4,
-      title: 'Parte 4 — Comprensión visual',
-      instructions: 'Read the notice or sign and answer the questions that follow.',
+      title: 'Parte 4 — Completar el texto',
+      sectionStyle: 'cloze-text',
+      instructions:
+        'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
+      passage:
+        "Finding good (16) ___ is one of the biggest challenges for young Colombians today. Many graduates have a university degree but lack practical (17) ___. Employers often prefer candidates who have already studied at (18) ___ and completed internships, because they come with both knowledge and technical (19) ___. The average (20) ___ for entry-level positions has not kept up with the rising cost of living. Many large (21) ___ prefer to hire people who are flexible, adaptable, and willing to learn quickly. Young people who want to stand out must (22) ___ early and prepare their CV carefully. With the right attitude and preparation, there are real (23) ___ available for those who are motivated.",
       questions: [
         {
           type: 'mcq',
           id: 'p4q1',
           part: 4,
-          stimulus: '--- NOTICE ---\nCITY ART GALLERY\nSummer Exhibition: "Colors of Colombia"\nOpen: Wednesday to Monday, 10:00 AM – 7:00 PM\nClosed Tuesdays\nAdmission: Adults $8 · Students and seniors $4 · Children under 12 FREE\nGuided tours available at 11:00 AM and 3:00 PM daily.',
-          stimulusLabel: 'Read the gallery notice.',
-          text: 'What time are guided tours available?',
-          options: [
-            'At 10:00 AM and 2:00 PM.',
-            'At 11:00 AM and 3:00 PM.',
-            'At 12:00 PM and 4:00 PM.',
-            'Only at 11:00 AM.',
-          ],
+          text: 'Choose the best word for blank (16).',
+          options: ['friends', 'jobs', 'schools', 'houses'],
           answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q2',
           part: 4,
-          stimulus: '--- NOTICE ---\nCITY ART GALLERY\nSummer Exhibition: "Colors of Colombia"\nOpen: Wednesday to Monday, 10:00 AM – 7:00 PM\nClosed Tuesdays\nAdmission: Adults $8 · Students and seniors $4 · Children under 12 FREE\nGuided tours available at 11:00 AM and 3:00 PM daily.',
-          stimulusLabel: 'Read the gallery notice.',
-          text: 'How much does a senior citizen pay to enter the gallery?',
-          options: ['Free', '$4', '$8', '$10'],
-          answer: 1,
+          text: 'Choose the best word for blank (17).',
+          options: ['languages', 'opinions', 'experience', 'hobbies'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q3',
           part: 4,
-          stimulus: 'MUSIC WORKSHOP — FREE REGISTRATION\nInstruments: guitar, piano, drums, vocals\nLevel: beginner to intermediate\nSchedule: Saturdays, 9:00 AM – 12:00 PM\nLocation: Cultural Center, Room 5\nAll materials provided\nSpaces limited to 20 participants per session\nRegister online at: culture.citycouncil.gov',
-          stimulusLabel: 'Read the workshop announcement.',
-          text: 'What is NOT provided by the workshop?',
-          options: [
-            'Musical instruments.',
-            'All necessary materials.',
-            'Free registration.',
-            'A certificate of completion.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (18).',
+          options: ['school', 'university', 'abroad', 'home'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q4',
           part: 4,
-          stimulus: 'MUSIC WORKSHOP — FREE REGISTRATION\nInstruments: guitar, piano, drums, vocals\nLevel: beginner to intermediate\nSchedule: Saturdays, 9:00 AM – 12:00 PM\nLocation: Cultural Center, Room 5\nAll materials provided\nSpaces limited to 20 participants per session\nRegister online at: culture.citycouncil.gov',
-          stimulusLabel: 'Read the workshop announcement.',
-          text: 'How many people can attend each workshop session?',
-          options: [
-            'Up to 20 people.',
-            'Up to 12 people.',
-            'Up to 5 people.',
-            'There is no limit.',
-          ],
+          text: 'Choose the best word for blank (19).',
+          options: ['skills', 'opinions', 'hobbies', 'problems'],
           answer: 0,
         },
         {
           type: 'mcq',
           id: 'p4q5',
           part: 4,
-          stimulus: 'FILM FESTIVAL — CALL FOR SUBMISSIONS\nCategory: Short films (under 20 minutes)\nTheme: "Life in the City"\nOpen to: filmmakers aged 18–35\nDeadline: September 15\nLanguage: Any (English subtitles required)\nSubmit via the official website. No entry fee.\nWinners announced at the closing ceremony on October 3.',
-          stimulusLabel: 'Read the festival announcement.',
-          text: 'What is required for films submitted in a language other than English?',
-          options: [
-            'A translation of the script.',
-            'An English voiceover track.',
-            'English subtitles.',
-            'A summary in English.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (20).',
+          options: ['rent', 'salary', 'grade', 'budget'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q6',
           part: 4,
-          stimulus: 'FILM FESTIVAL — CALL FOR SUBMISSIONS\nCategory: Short films (under 20 minutes)\nTheme: "Life in the City"\nOpen to: filmmakers aged 18–35\nDeadline: September 15\nLanguage: Any (English subtitles required)\nSubmit via the official website. No entry fee.\nWinners announced at the closing ceremony on October 3.',
-          stimulusLabel: 'Read the festival announcement.',
-          text: 'Which statement about the film festival is TRUE?',
-          options: [
-            'Only English-language films are accepted.',
-            'Films must be longer than 20 minutes.',
-            'The competition is open to people of all ages.',
-            'There is no cost to submit a film.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (21).',
+          options: ['schools', 'hospitals', 'companies', 'families'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q7',
           part: 4,
-          stimulus: 'STREET ART TOUR — EVERY SATURDAY\nExplore murals and graffiti in the historic district.\nDuration: 2.5 hours | Distance: approx. 3 km\nMeeting point: Corner of 5th Avenue and Main Street\nDeparture: 10:00 AM sharp — do not arrive late\nCost: $15 per person (includes a photo booklet)\nGroups of 10 or more: 20% discount\nBooking required: tours@streetarttour.com',
-          stimulusLabel: 'Read the tour information.',
-          text: 'What do participants receive as part of the tour cost?',
-          options: [
-            'A free meal at a local restaurant.',
-            'A certificate from the city.',
-            'A photo booklet of the murals.',
-            'A discount for future tours.',
-          ],
+          text: 'Choose the best word for blank (22).',
+          options: ['study', 'travel', 'apply', 'retire'],
           answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q8',
           part: 4,
-          stimulus: 'STREET ART TOUR — EVERY SATURDAY\nExplore murals and graffiti in the historic district.\nDuration: 2.5 hours | Distance: approx. 3 km\nMeeting point: Corner of 5th Avenue and Main Street\nDeparture: 10:00 AM sharp — do not arrive late\nCost: $15 per person (includes a photo booklet)\nGroups of 10 or more: 20% discount\nBooking required: tours@streetarttour.com',
-          stimulusLabel: 'Read the tour information.',
-          text: 'What discount is available for large groups?',
-          options: [
-            '10% for groups of 5 or more.',
-            '20% for groups of 10 or more.',
-            '15% for groups of 8 or more.',
-            '25% for groups of 15 or more.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p4q9',
-          part: 4,
-          stimulus: 'PODCAST LAUNCH EVENT\n"The Creative Mind" — Episode 1 Live Recording\nFeaturing: Artists, musicians, and filmmakers\nVenue: Studio B, Broadcasting House\nDate: Thursday, April 10 · 7:00 PM\nFree entry — seats limited\nRSVP by April 7: rsvp@creativemind.com\n18+ only. Photo ID required at the door.',
-          stimulusLabel: 'Read the event notice.',
-          text: 'What must attendees bring to enter the event?',
-          options: [
-            'A photo identification document.',
-            'A student ID card.',
-            'A printed ticket.',
-            'An invitation letter.',
-          ],
-          answer: 0,
+          text: 'Choose the best word for blank (23).',
+          options: ['risks', 'problems', 'doubts', 'opportunities'],
+          answer: 3,
         },
       ],
     },
+
+    // ── PARTE 5 ── Comprensión: texto corto (preguntas 24–30) ────────────────
     {
       part: 5,
-      title: 'Parte 5 — Texto corto',
-      instructions: 'Read the text and answer the questions.',
+      title: 'Parte 5 — Comprensión de lectura: texto corto',
+      sectionStyle: 'reading',
+      passageTitle: 'How to Prepare for a Job Interview',
+      instructions:
+        'Read the text and answer questions 24 to 30. Choose the best option (A, B, C, or D).',
+      passage:
+        "HOW TO PREPARE FOR A JOB INTERVIEW\n\nA job interview is one of the most important steps in the process of finding employment. Whether you are applying for your first job or making a career change, how you prepare can make the difference between success and failure.\n\nThe first step is to research the company. Before your interview, find out what the organisation does, what its values are, and what products or services it offers. This shows the interviewer that you are genuinely interested and have made an effort to understand the role.\n\nNext, practise answering common interview questions. Questions like 'Tell me about yourself', 'What are your strengths and weaknesses?' and 'Why do you want to work here?' are asked in almost every interview. Preparing clear, honest, and specific answers to these questions will help you feel more confident on the day.\n\nYour appearance also matters. Dress professionally, arrive on time, and bring a copy of your CV. Make eye contact, speak clearly, and listen carefully to each question before answering. Small details such as a firm handshake and a polite manner can leave a very positive impression.\n\nFinally, remember that an interview is a two-way conversation. At the end, you will usually be invited to ask your own questions. Preparing one or two thoughtful questions about the role or the company shows that you are seriously interested in the position.",
       questions: [
         {
           type: 'mcq',
           id: 'p5q1',
           part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the main goal of the ArtReach program?',
+          text: 'What is the main purpose of this text?',
           options: [
-            'To provide free creative education to underprivileged youth.',
-            'To sell digital artwork created by students.',
-            'To train professional graphic designers for large companies.',
-            'To raise money for a new community center.',
+            'To describe different types of jobs available in Colombia',
+            'To explain how job interviews are evaluated by employers',
+            'To give advice on how to prepare successfully for a job interview',
+            'To tell the story of someone who found a job through an interview',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p5q2',
           part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Why did Sofia Ramírez start ArtReach?',
+          text: 'According to paragraph 2, why should you research the company before the interview?',
           options: [
-            'She wanted to become famous as a nonprofit director.',
-            'She grew up in the same neighborhood and lacked access to art tools as a child.',
-            'She was asked by the local government to start the program.',
-            'She wanted to compete with other digital art schools.',
+            'So you can correct the interviewer if they make a mistake',
+            'So you can decide whether the company is worth working for',
+            'To show the interviewer that you are genuinely interested in the role',
+            'To find out whether the company has had any problems in the past',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p5q3',
           part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What do students produce by the end of the three-month program?',
+          text: 'The phrase "common interview questions" in paragraph 3 most likely refers to:',
           options: [
-            'An animated short film.',
-            'A written report on digital design.',
-            'A personal digital art portfolio.',
-            'A group mural for the community center.',
+            'very difficult technical questions specific to one industry',
+            'questions that are frequently asked in many types of interview',
+            'questions that only managers and directors are asked',
+            'questions written by the government for official job applications',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q4',
           part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How many students have been hired as junior designers after completing the program?',
-          options: ['Two', 'Eighty', 'Twelve', 'Four'],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q5',
-          part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The word "renovated" most likely means:',
+          text: 'According to paragraph 4, which of the following is NOT mentioned as advice on presentation?',
           options: [
-            'Destroyed and rebuilt from scratch.',
-            'Purchased from the city government.',
-            'Repaired and improved after a period of disuse.',
-            'Decorated with student artwork.',
+            'Dress professionally',
+            'Arrive on time',
+            'Memorise the company\'s history',
+            'Make eye contact',
           ],
           answer: 2,
         },
         {
           type: 'mcq',
+          id: 'p5q5',
+          part: 5,
+          text: 'The word "impression" in paragraph 4 most likely means:',
+          options: [
+            'a formal document you give the interviewer',
+            'the effect you have on someone\'s opinion of you',
+            'a special technique used in interviews',
+            'a type of professional qualification',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
           id: 'p5q6',
           part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What does ArtReach plan to do by the end of the year?',
+          text: 'Why should you prepare your own questions for the end of the interview?',
           options: [
-            'Expand the program to two more neighborhoods.',
-            'Create an online course for international students.',
-            'Open a professional design agency.',
-            'Partner with a national television channel.',
+            'To show that you are not afraid of the interviewer',
+            'Because the employer will test you on your questions',
+            'To show that you are seriously interested in the position',
+            'Because interviews always end early if you have no questions',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p5q7',
           part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What can be inferred from Sofia\'s quote "I had the ideas, but never the tools"?',
+          text: 'Which of the following BEST describes the tone of this text?',
           options: [
-            'She did not enjoy art when she was young.',
-            'Only wealthy children can develop creative skills.',
-            'Art tools are too expensive for professional designers.',
-            'Creative potential exists regardless of economic conditions.',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q8',
-          part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Which skills are taught in the ArtReach sessions?',
-          options: [
-            'Drawing, sculpture, and oil painting.',
-            'Digital illustration, photo editing, and basic animation.',
-            'Photography, video editing, and typography.',
-            'Web design, coding, and 3D modeling.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q9',
-          part: 5,
-          stimulus: `Brushstrokes of Hope: Free Art for Underserved Youth
-
-In the low-income neighborhood of Villa Nueva, a nonprofit organization called ArtReach has launched a free digital art program for children and teenagers who would otherwise have no access to creative education. The program, which began in January, operates from a renovated community center and provides participants with tablets, styluses, and professional software used by graphic designers worldwide.
-
-ArtReach was founded by former graphic designer Sofia Ramírez, who grew up in the same neighborhood and remembers having no access to art materials as a child. "I had the ideas, but never the tools," she says. "This program gives young people both."
-
-Each week, students attend two-hour sessions where they learn digital illustration, photo editing, and basic animation. By the end of the three-month program, participants complete a personal portfolio that they can use to apply for scholarships or design internships. So far, twelve graduates have won places at university arts programs, and four have been hired as junior designers by local companies. The program currently serves 80 students and plans to expand to two additional neighborhoods by the end of the year.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How often do students attend sessions at ArtReach?',
-          options: [
-            'Every day for three months.',
-            'The text does not specify exact frequency, only weekly sessions.',
-            'Three times per week.',
-            'Once a month.',
+            'Critical and negative about job seekers',
+            'Practical and encouraging',
+            'Formal and academic',
+            'Informal and humorous',
           ],
           answer: 1,
         },
       ],
     },
+
+    // ── PARTE 6 ── Comprensión: texto largo (preguntas 31–35) ────────────────
     {
       part: 6,
-      title: 'Parte 6 — Texto largo: inferencia',
-      instructions: 'Read the longer text carefully and answer the questions. Use inference and context clues.',
+      title: 'Parte 6 — Comprensión de lectura: texto largo',
+      sectionStyle: 'reading',
+      passageTitle: 'Working From Home: A New Way of Working',
+      instructions:
+        'Read the text and answer questions 31 to 35. Some questions require you to infer information from the text. Choose the best option (A, B, C, or D).',
+      passage:
+        "WORKING FROM HOME: A NEW WAY OF WORKING\n\nBefore 2020, working from home was considered a privilege reserved for a small number of highly skilled professionals. The global pandemic changed all of this almost overnight. Millions of workers around the world — including in Colombia — suddenly found themselves working from their kitchens, bedrooms, and living rooms. Several years later, the debate about whether remote work is truly better than office work continues.\n\nProponents of remote work argue that the benefits are significant. Workers save time and money by not commuting. Many report higher levels of productivity, as they can structure their day around their most focused hours. The flexibility to work from any location has also opened opportunities for people in smaller cities and rural areas who previously could not access well-paid jobs in the capital. For parents and carers, remote work can make it easier to balance professional and personal responsibilities.\n\nHowever, critics point out that working from home is not suitable for everyone. Many workers find it difficult to separate their professional and personal lives when both happen in the same space. Social isolation is another concern — without the daily contact with colleagues that office life provides, some remote workers report feelings of loneliness and disconnection. Junior employees, in particular, may miss out on the informal learning that comes from observing and interacting with more experienced colleagues in person.\n\nCompanies have responded in different ways. Some have adopted a fully remote model, closing their physical offices altogether. Others have introduced hybrid arrangements, requiring employees to come into the office for a set number of days each week while allowing them to work remotely for the rest of the time.\n\nMost experts agree that there is no single solution that works for all organisations or all employees. The future of work will likely involve a greater variety of arrangements, with flexibility and individual choice playing a central role.",
       questions: [
         {
           type: 'mcq',
           id: 'p6q1',
           part: 6,
-          stimulus: `The Streaming Revolution: How Digital Platforms Reshaped the Music Industry
-
-Twenty years ago, buying music meant going to a record store. You browsed physical shelves, chose an album, paid for it, and took it home. The music industry was controlled by a small number of powerful record labels that decided which artists got signed, which songs got radio airplay, and ultimately which musicians became famous. The system was rigid, profitable — and about to be completely disrupted.
-
-The first major disruption came with digital piracy in the early 2000s. Platforms like Napster allowed users to share music files for free, causing album sales to collapse. The major labels scrambled to respond, but their attempts to sue individual music fans only damaged their image without solving the problem. It was Apple, not the labels, that eventually provided a viable alternative — iTunes allowed users to legally purchase individual songs for 99 cents, ending the era of buying a whole album to get one song you liked.
-
-But the real transformation came with streaming. Services like Spotify, launched in 2008, and later Apple Music, Amazon Music, and Tidal, offered users access to tens of millions of songs for a monthly subscription fee — or even for free, supported by advertising. Almost overnight, the logic of music ownership changed. Why buy a song when you could stream anything, any time, for less than the price of a coffee?
-
-The impact on the industry has been enormous and contradictory. Revenue from recorded music has recovered after years of decline — global streaming revenues surpassed $17 billion in 2022. Independent artists can now distribute their music globally without needing a record label, using platforms like DistroKid or TuneCore. Some musicians have built enormous audiences without traditional industry support.
-
-Yet the same system that liberated some artists has left others struggling. The average stream on Spotify pays between $0.003 and $0.005 — meaning an artist needs around 250 streams to earn a single dollar. To earn a monthly wage of $2,000, a musician would need approximately 500,000 streams every month. For all but the most successful artists, that is an unreachable target. Critics argue that the streaming model concentrates wealth among the top 1% of artists while the vast majority earn almost nothing.
-
-The music industry continues to evolve. Some artists have turned to live performances, merchandise, and direct fan subscriptions — using platforms like Patreon — to build sustainable incomes outside of streaming royalties. The question facing the industry is not whether streaming is here to stay, but whether it can be made fair for everyone who makes the music that millions enjoy each day.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the main idea of this text?',
+          text: 'What caused remote work to become widespread?',
           options: [
-            'Streaming services have destroyed the music industry beyond recovery.',
-            'Record labels are more powerful today than they were twenty years ago.',
-            'Digital piracy was the only real threat to the music industry.',
-            'Streaming transformed the music industry in ways that benefit some artists and harm others.',
+            'A new government law requiring people to work from home',
+            'The global pandemic forced many workers to work remotely',
+            'Companies discovered it was cheaper to close their offices',
+            'Workers went on strike and refused to come into the office',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p6q2',
           part: 6,
-          stimulus: `The Streaming Revolution: How Digital Platforms Reshaped the Music Industry
-
-Twenty years ago, buying music meant going to a record store. You browsed physical shelves, chose an album, paid for it, and took it home. The music industry was controlled by a small number of powerful record labels that decided which artists got signed, which songs got radio airplay, and ultimately which musicians became famous. The system was rigid, profitable — and about to be completely disrupted.
-
-The first major disruption came with digital piracy in the early 2000s. Platforms like Napster allowed users to share music files for free, causing album sales to collapse. The major labels scrambled to respond, but their attempts to sue individual music fans only damaged their image without solving the problem. It was Apple, not the labels, that eventually provided a viable alternative — iTunes allowed users to legally purchase individual songs for 99 cents, ending the era of buying a whole album to get one song you liked.
-
-But the real transformation came with streaming. Services like Spotify, launched in 2008, and later Apple Music, Amazon Music, and Tidal, offered users access to tens of millions of songs for a monthly subscription fee — or even for free, supported by advertising. Almost overnight, the logic of music ownership changed. Why buy a song when you could stream anything, any time, for less than the price of a coffee?
-
-The impact on the industry has been enormous and contradictory. Revenue from recorded music has recovered after years of decline — global streaming revenues surpassed $17 billion in 2022. Independent artists can now distribute their music globally without needing a record label, using platforms like DistroKid or TuneCore. Some musicians have built enormous audiences without traditional industry support.
-
-Yet the same system that liberated some artists has left others struggling. The average stream on Spotify pays between $0.003 and $0.005 — meaning an artist needs around 250 streams to earn a single dollar. To earn a monthly wage of $2,000, a musician would need approximately 500,000 streams every month. For all but the most successful artists, that is an unreachable target. Critics argue that the streaming model concentrates wealth among the top 1% of artists while the vast majority earn almost nothing.
-
-The music industry continues to evolve. Some artists have turned to live performances, merchandise, and direct fan subscriptions — using platforms like Patreon — to build sustainable incomes outside of streaming royalties. The question facing the industry is not whether streaming is here to stay, but whether it can be made fair for everyone who makes the music that millions enjoy each day.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Why did the major record labels\' response to piracy damage their image?',
+          text: 'According to paragraph 2, how has remote work helped people outside capital cities?',
           options: [
-            'They sued individual music fans instead of solving the problem.',
-            'They reduced music prices too quickly.',
-            'They partnered with illegal file-sharing platforms.',
-            'They removed popular artists from their rosters.',
+            'It has allowed them to move to Bogotá more easily.',
+            'It has given them access to well-paid jobs they could not reach before.',
+            'It has reduced the cost of living in smaller cities.',
+            'It has provided them with free internet and computer equipment.',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p6q3',
           part: 6,
-          stimulus: `The Streaming Revolution: How Digital Platforms Reshaped the Music Industry
-
-Twenty years ago, buying music meant going to a record store. You browsed physical shelves, chose an album, paid for it, and took it home. The music industry was controlled by a small number of powerful record labels that decided which artists got signed, which songs got radio airplay, and ultimately which musicians became famous. The system was rigid, profitable — and about to be completely disrupted.
-
-The first major disruption came with digital piracy in the early 2000s. Platforms like Napster allowed users to share music files for free, causing album sales to collapse. The major labels scrambled to respond, but their attempts to sue individual music fans only damaged their image without solving the problem. It was Apple, not the labels, that eventually provided a viable alternative — iTunes allowed users to legally purchase individual songs for 99 cents, ending the era of buying a whole album to get one song you liked.
-
-But the real transformation came with streaming. Services like Spotify, launched in 2008, and later Apple Music, Amazon Music, and Tidal, offered users access to tens of millions of songs for a monthly subscription fee — or even for free, supported by advertising. Almost overnight, the logic of music ownership changed. Why buy a song when you could stream anything, any time, for less than the price of a coffee?
-
-The impact on the industry has been enormous and contradictory. Revenue from recorded music has recovered after years of decline — global streaming revenues surpassed $17 billion in 2022. Independent artists can now distribute their music globally without needing a record label, using platforms like DistroKid or TuneCore. Some musicians have built enormous audiences without traditional industry support.
-
-Yet the same system that liberated some artists has left others struggling. The average stream on Spotify pays between $0.003 and $0.005 — meaning an artist needs around 250 streams to earn a single dollar. To earn a monthly wage of $2,000, a musician would need approximately 500,000 streams every month. For all but the most successful artists, that is an unreachable target. Critics argue that the streaming model concentrates wealth among the top 1% of artists while the vast majority earn almost nothing.
-
-The music industry continues to evolve. Some artists have turned to live performances, merchandise, and direct fan subscriptions — using platforms like Patreon — to build sustainable incomes outside of streaming royalties. The question facing the industry is not whether streaming is here to stay, but whether it can be made fair for everyone who makes the music that millions enjoy each day.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What advantage did iTunes offer compared to traditional album purchases?',
+          text: 'According to paragraph 3, what specific disadvantage do junior employees face when working remotely?',
           options: [
-            'It allowed users to share music files for free.',
-            'It gave artists a larger share of music revenue.',
-            'It sold individual songs, so people did not need to buy a full album.',
-            'It was the first platform to stream music online.',
+            'They earn less money than they would in an office.',
+            'They have to work longer hours from home.',
+            'They may miss out on informal learning from more experienced colleagues.',
+            'They are not trusted to work without supervision.',
           ],
           answer: 2,
         },
@@ -684,195 +471,78 @@ The music industry continues to evolve. Some artists have turned to live perform
           type: 'mcq',
           id: 'p6q4',
           part: 6,
-          stimulus: `The Streaming Revolution: How Digital Platforms Reshaped the Music Industry
-
-Twenty years ago, buying music meant going to a record store. You browsed physical shelves, chose an album, paid for it, and took it home. The music industry was controlled by a small number of powerful record labels that decided which artists got signed, which songs got radio airplay, and ultimately which musicians became famous. The system was rigid, profitable — and about to be completely disrupted.
-
-The first major disruption came with digital piracy in the early 2000s. Platforms like Napster allowed users to share music files for free, causing album sales to collapse. The major labels scrambled to respond, but their attempts to sue individual music fans only damaged their image without solving the problem. It was Apple, not the labels, that eventually provided a viable alternative — iTunes allowed users to legally purchase individual songs for 99 cents, ending the era of buying a whole album to get one song you liked.
-
-But the real transformation came with streaming. Services like Spotify, launched in 2008, and later Apple Music, Amazon Music, and Tidal, offered users access to tens of millions of songs for a monthly subscription fee — or even for free, supported by advertising. Almost overnight, the logic of music ownership changed. Why buy a song when you could stream anything, any time, for less than the price of a coffee?
-
-The impact on the industry has been enormous and contradictory. Revenue from recorded music has recovered after years of decline — global streaming revenues surpassed $17 billion in 2022. Independent artists can now distribute their music globally without needing a record label, using platforms like DistroKid or TuneCore. Some musicians have built enormous audiences without traditional industry support.
-
-Yet the same system that liberated some artists has left others struggling. The average stream on Spotify pays between $0.003 and $0.005 — meaning an artist needs around 250 streams to earn a single dollar. To earn a monthly wage of $2,000, a musician would need approximately 500,000 streams every month. For all but the most successful artists, that is an unreachable target. Critics argue that the streaming model concentrates wealth among the top 1% of artists while the vast majority earn almost nothing.
-
-The music industry continues to evolve. Some artists have turned to live performances, merchandise, and direct fan subscriptions — using platforms like Patreon — to build sustainable incomes outside of streaming royalties. The question facing the industry is not whether streaming is here to stay, but whether it can be made fair for everyone who makes the music that millions enjoy each day.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What does the text say about how much Spotify pays per stream?',
+          text: 'What is a hybrid working arrangement?',
           options: [
-            'It pays $1 per stream.',
-            'Payment depends on whether the artist is signed to a label.',
-            'It pays a fixed monthly fee to all artists.',
-            'It pays between $0.003 and $0.005 per stream.',
+            'Working only from home with occasional video calls',
+            'Working partly in the office and partly from home',
+            'Sharing an office with workers from different companies',
+            'Working different hours each day depending on the project',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p6q5',
           part: 6,
-          stimulus: `The Streaming Revolution: How Digital Platforms Reshaped the Music Industry
-
-Twenty years ago, buying music meant going to a record store. You browsed physical shelves, chose an album, paid for it, and took it home. The music industry was controlled by a small number of powerful record labels that decided which artists got signed, which songs got radio airplay, and ultimately which musicians became famous. The system was rigid, profitable — and about to be completely disrupted.
-
-The first major disruption came with digital piracy in the early 2000s. Platforms like Napster allowed users to share music files for free, causing album sales to collapse. The major labels scrambled to respond, but their attempts to sue individual music fans only damaged their image without solving the problem. It was Apple, not the labels, that eventually provided a viable alternative — iTunes allowed users to legally purchase individual songs for 99 cents, ending the era of buying a whole album to get one song you liked.
-
-But the real transformation came with streaming. Services like Spotify, launched in 2008, and later Apple Music, Amazon Music, and Tidal, offered users access to tens of millions of songs for a monthly subscription fee — or even for free, supported by advertising. Almost overnight, the logic of music ownership changed. Why buy a song when you could stream anything, any time, for less than the price of a coffee?
-
-The impact on the industry has been enormous and contradictory. Revenue from recorded music has recovered after years of decline — global streaming revenues surpassed $17 billion in 2022. Independent artists can now distribute their music globally without needing a record label, using platforms like DistroKid or TuneCore. Some musicians have built enormous audiences without traditional industry support.
-
-Yet the same system that liberated some artists has left others struggling. The average stream on Spotify pays between $0.003 and $0.005 — meaning an artist needs around 250 streams to earn a single dollar. To earn a monthly wage of $2,000, a musician would need approximately 500,000 streams every month. For all but the most successful artists, that is an unreachable target. Critics argue that the streaming model concentrates wealth among the top 1% of artists while the vast majority earn almost nothing.
-
-The music industry continues to evolve. Some artists have turned to live performances, merchandise, and direct fan subscriptions — using platforms like Patreon — to build sustainable incomes outside of streaming royalties. The question facing the industry is not whether streaming is here to stay, but whether it can be made fair for everyone who makes the music that millions enjoy each day.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The text says the impact of streaming has been "enormous and contradictory." What does this mean?',
+          text: 'What can be inferred from the final paragraph about the future of work?',
           options: [
-            'Streaming has been both very large in scale and confusing to understand.',
-            'Streaming has had a small but positive effect on the music industry.',
-            'Streaming has produced both positive and negative effects at the same time.',
-            'Streaming is contradicting what scientists predicted about digital media.',
+            'All companies will eventually return to full-time office work.',
+            'Remote work will completely replace traditional office environments.',
+            'A single standard working model will emerge for all industries.',
+            'Flexible arrangements will become more common in the future.',
           ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q6',
-          part: 6,
-          stimulus: `The Streaming Revolution: How Digital Platforms Reshaped the Music Industry
-
-Twenty years ago, buying music meant going to a record store. You browsed physical shelves, chose an album, paid for it, and took it home. The music industry was controlled by a small number of powerful record labels that decided which artists got signed, which songs got radio airplay, and ultimately which musicians became famous. The system was rigid, profitable — and about to be completely disrupted.
-
-The first major disruption came with digital piracy in the early 2000s. Platforms like Napster allowed users to share music files for free, causing album sales to collapse. The major labels scrambled to respond, but their attempts to sue individual music fans only damaged their image without solving the problem. It was Apple, not the labels, that eventually provided a viable alternative — iTunes allowed users to legally purchase individual songs for 99 cents, ending the era of buying a whole album to get one song you liked.
-
-But the real transformation came with streaming. Services like Spotify, launched in 2008, and later Apple Music, Amazon Music, and Tidal, offered users access to tens of millions of songs for a monthly subscription fee — or even for free, supported by advertising. Almost overnight, the logic of music ownership changed. Why buy a song when you could stream anything, any time, for less than the price of a coffee?
-
-The impact on the industry has been enormous and contradictory. Revenue from recorded music has recovered after years of decline — global streaming revenues surpassed $17 billion in 2022. Independent artists can now distribute their music globally without needing a record label, using platforms like DistroKid or TuneCore. Some musicians have built enormous audiences without traditional industry support.
-
-Yet the same system that liberated some artists has left others struggling. The average stream on Spotify pays between $0.003 and $0.005 — meaning an artist needs around 250 streams to earn a single dollar. To earn a monthly wage of $2,000, a musician would need approximately 500,000 streams every month. For all but the most successful artists, that is an unreachable target. Critics argue that the streaming model concentrates wealth among the top 1% of artists while the vast majority earn almost nothing.
-
-The music industry continues to evolve. Some artists have turned to live performances, merchandise, and direct fan subscriptions — using platforms like Patreon — to build sustainable incomes outside of streaming royalties. The question facing the industry is not whether streaming is here to stay, but whether it can be made fair for everyone who makes the music that millions enjoy each day.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What alternative income strategies are some artists using instead of relying on streaming royalties?',
-          options: [
-            'Selling physical albums exclusively in record stores.',
-            'Live performances, merchandise, and direct fan subscriptions.',
-            'Partnering with major record labels for guaranteed income.',
-            'Creating video games and film soundtracks.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q7',
-          part: 6,
-          stimulus: `The Streaming Revolution: How Digital Platforms Reshaped the Music Industry
-
-Twenty years ago, buying music meant going to a record store. You browsed physical shelves, chose an album, paid for it, and took it home. The music industry was controlled by a small number of powerful record labels that decided which artists got signed, which songs got radio airplay, and ultimately which musicians became famous. The system was rigid, profitable — and about to be completely disrupted.
-
-The first major disruption came with digital piracy in the early 2000s. Platforms like Napster allowed users to share music files for free, causing album sales to collapse. The major labels scrambled to respond, but their attempts to sue individual music fans only damaged their image without solving the problem. It was Apple, not the labels, that eventually provided a viable alternative — iTunes allowed users to legally purchase individual songs for 99 cents, ending the era of buying a whole album to get one song you liked.
-
-But the real transformation came with streaming. Services like Spotify, launched in 2008, and later Apple Music, Amazon Music, and Tidal, offered users access to tens of millions of songs for a monthly subscription fee — or even for free, supported by advertising. Almost overnight, the logic of music ownership changed. Why buy a song when you could stream anything, any time, for less than the price of a coffee?
-
-The impact on the industry has been enormous and contradictory. Revenue from recorded music has recovered after years of decline — global streaming revenues surpassed $17 billion in 2022. Independent artists can now distribute their music globally without needing a record label, using platforms like DistroKid or TuneCore. Some musicians have built enormous audiences without traditional industry support.
-
-Yet the same system that liberated some artists has left others struggling. The average stream on Spotify pays between $0.003 and $0.005 — meaning an artist needs around 250 streams to earn a single dollar. To earn a monthly wage of $2,000, a musician would need approximately 500,000 streams every month. For all but the most successful artists, that is an unreachable target. Critics argue that the streaming model concentrates wealth among the top 1% of artists while the vast majority earn almost nothing.
-
-The music industry continues to evolve. Some artists have turned to live performances, merchandise, and direct fan subscriptions — using platforms like Patreon — to build sustainable incomes outside of streaming royalties. The question facing the industry is not whether streaming is here to stay, but whether it can be made fair for everyone who makes the music that millions enjoy each day.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What can be inferred from the final sentence about the author\'s view of streaming?',
-          options: [
-            'The author accepts streaming as permanent but believes it needs to be fairer.',
-            'The author believes streaming should be abolished.',
-            'The author thinks only top artists deserve to earn money from streaming.',
-            'The author argues that streaming is already fair to all musicians.',
-          ],
-          answer: 0,
+          answer: 3,
         },
       ],
     },
+
+    // ── PARTE 7 ── Texto de opinión/argumento (preguntas 36–45) ──────────────
     {
       part: 7,
-      title: 'Parte 7 — Texto de opinion',
-      instructions: "Read the opinion text and answer the questions about the author's argument.",
+      title: 'Parte 7 — Texto de opinión',
+      sectionStyle: 'reading',
+      passageTitle: 'Is a University Degree Necessary for Success?',
+      instructions:
+        'Read the text and answer questions 36 to 45. Choose the best option (A, B, C, or D).',
+      passage:
+        "IS A UNIVERSITY DEGREE NECESSARY FOR SUCCESS?\n\nFor generations, a university degree has been considered the most reliable path to professional success. Parents in Colombia and across Latin America have sacrificed enormously to send their children to university, believing that a degree is a guarantee of a better life. But as the world of work changes rapidly, many people are beginning to ask whether this belief is still justified.\n\nThose who argue in favour of university education point to the statistics. On average, university graduates in Colombia earn significantly more than those with only secondary school qualifications. A degree provides not only specialised knowledge but also critical thinking skills, the ability to communicate clearly, and a professional network that can open doors throughout a career. For professions such as medicine, law, and engineering, a university qualification is a legal requirement — there is simply no alternative.\n\nOn the other hand, critics of the traditional model argue that the higher education system has not kept pace with the demands of the modern economy. Many graduates enter the job market with outdated knowledge, significant debts, and a lack of practical skills. Meanwhile, vocational training programmes — which teach specific technical skills such as programming, electrical work, or digital marketing — can prepare young people for well-paid employment in a fraction of the time and at a much lower cost.\n\nThe rise of entrepreneurship has further complicated the picture. Many of the most successful business people in the world, from technology pioneers to innovative small business owners, never completed a university degree. What they had instead was a clear vision, strong practical skills, and the determination to learn from experience.\n\nPerhaps the most honest answer is that success depends less on the type of qualification a person holds and more on their motivation, adaptability, and willingness to keep learning throughout their career. In a world that is changing faster than any educational institution can respond, the ability to learn continuously may matter more than any certificate on the wall.",
       questions: [
         {
           type: 'mcq',
           id: 'p7q1',
           part: 7,
-          stimulus: `Is Social Media Destroying Genuine Human Connection?
-
-We have never been more "connected" — and yet many people have never felt more alone. Across the world, billions of people spend hours each day scrolling through feeds, liking posts, and watching strangers perform their lives for an audience. We call this connection. I call it a performance.
-
-I believe social media, in its current form, is doing serious damage to genuine human relationships. The platforms are designed not to help you connect, but to keep you engaged — and engagement means keeping your attention through emotional stimulation: outrage, envy, comparison, and validation. Every "like" is a small hit of dopamine. Every unflattering comparison to someone else's curated life is a small wound.
-
-True human connection requires vulnerability, presence, and time — three things that social media actively discourages. A quick comment on a friend's photo is not the same as a real conversation. A birthday message on someone's wall is not care — it is a performance of care. We are becoming experts at appearing connected while growing increasingly isolated.
-
-The effects on mental health are well documented. Numerous studies link heavy social media use — particularly among teenagers — to increased rates of anxiety, depression, and loneliness. The irony is devastating: the tools built to bring us together are making us feel more alone.
-
-Some argue that social media allows people to maintain long-distance relationships and helps marginalized groups find community and support. This is true, and it is important. But these genuine uses are exceptions, not the rule. The majority of our social media time is not spent building meaningful connections — it is spent consuming content and broadcasting ourselves.
-
-We need to make a conscious choice to invest in real relationships: to put down the phone, look someone in the eyes, and be present. Technology is a tool. We have allowed it to become a substitute for life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: "What is the author's central claim?",
+          text: 'What central question does this text address?',
           options: [
-            'Social media is damaging genuine human connection rather than enhancing it.',
-            'Social media should be completely banned by all governments.',
-            'People should stop using technology entirely and return to face-to-face life.',
-            'Social media is only harmful to teenagers, not to adults.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p7q2',
-          part: 7,
-          stimulus: `Is Social Media Destroying Genuine Human Connection?
-
-We have never been more "connected" — and yet many people have never felt more alone. Across the world, billions of people spend hours each day scrolling through feeds, liking posts, and watching strangers perform their lives for an audience. We call this connection. I call it a performance.
-
-I believe social media, in its current form, is doing serious damage to genuine human relationships. The platforms are designed not to help you connect, but to keep you engaged — and engagement means keeping your attention through emotional stimulation: outrage, envy, comparison, and validation. Every "like" is a small hit of dopamine. Every unflattering comparison to someone else's curated life is a small wound.
-
-True human connection requires vulnerability, presence, and time — three things that social media actively discourages. A quick comment on a friend's photo is not the same as a real conversation. A birthday message on someone's wall is not care — it is a performance of care. We are becoming experts at appearing connected while growing increasingly isolated.
-
-The effects on mental health are well documented. Numerous studies link heavy social media use — particularly among teenagers — to increased rates of anxiety, depression, and loneliness. The irony is devastating: the tools built to bring us together are making us feel more alone.
-
-Some argue that social media allows people to maintain long-distance relationships and helps marginalized groups find community and support. This is true, and it is important. But these genuine uses are exceptions, not the rule. The majority of our social media time is not spent building meaningful connections — it is spent consuming content and broadcasting ourselves.
-
-We need to make a conscious choice to invest in real relationships: to put down the phone, look someone in the eyes, and be present. Technology is a tool. We have allowed it to become a substitute for life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'According to the author, what are social media platforms actually designed to do?',
-          options: [
-            'Help people form meaningful friendships around the world.',
-            'Keep users engaged through emotional stimulation.',
-            'Educate people about current events and global issues.',
-            'Create safe spaces for honest self-expression.',
+            'How Colombian universities can improve their teaching methods',
+            'Whether a university degree is essential for professional success',
+            'Which university subjects lead to the highest-paying jobs',
+            'How parents can afford to pay for their children\'s university education',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
+          id: 'p7q2',
+          part: 7,
+          text: 'According to paragraph 2, which of the following is a benefit of a university education?',
+          options: [
+            'Graduates never have to update their knowledge after studying.',
+            'A degree guarantees employment in any field.',
+            'University develops critical thinking and communication skills.',
+            'University students earn money while they study.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
           id: 'p7q3',
           part: 7,
-          stimulus: `Is Social Media Destroying Genuine Human Connection?
-
-We have never been more "connected" — and yet many people have never felt more alone. Across the world, billions of people spend hours each day scrolling through feeds, liking posts, and watching strangers perform their lives for an audience. We call this connection. I call it a performance.
-
-I believe social media, in its current form, is doing serious damage to genuine human relationships. The platforms are designed not to help you connect, but to keep you engaged — and engagement means keeping your attention through emotional stimulation: outrage, envy, comparison, and validation. Every "like" is a small hit of dopamine. Every unflattering comparison to someone else's curated life is a small wound.
-
-True human connection requires vulnerability, presence, and time — three things that social media actively discourages. A quick comment on a friend's photo is not the same as a real conversation. A birthday message on someone's wall is not care — it is a performance of care. We are becoming experts at appearing connected while growing increasingly isolated.
-
-The effects on mental health are well documented. Numerous studies link heavy social media use — particularly among teenagers — to increased rates of anxiety, depression, and loneliness. The irony is devastating: the tools built to bring us together are making us feel more alone.
-
-Some argue that social media allows people to maintain long-distance relationships and helps marginalized groups find community and support. This is true, and it is important. But these genuine uses are exceptions, not the rule. The majority of our social media time is not spent building meaningful connections — it is spent consuming content and broadcasting ourselves.
-
-We need to make a conscious choice to invest in real relationships: to put down the phone, look someone in the eyes, and be present. Technology is a tool. We have allowed it to become a substitute for life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What does the author mean by calling a birthday message on social media "a performance of care"?',
+          text: 'According to paragraph 2, for which professions is a university degree legally required?',
           options: [
-            'It requires a lot of effort and planning to write a birthday message.',
-            'Social media birthday messages are more sincere than phone calls.',
-            'It looks like caring, but it does not involve genuine emotional investment.',
-            'Sending a birthday message makes people feel truly connected.',
+            'Technology and digital marketing',
+            'Business, finance, and accounting',
+            'Medicine, law, and engineering',
+            'Design, art, and music',
           ],
           answer: 2,
         },
@@ -880,109 +550,92 @@ We need to make a conscious choice to invest in real relationships: to put down 
           type: 'mcq',
           id: 'p7q4',
           part: 7,
-          stimulus: `Is Social Media Destroying Genuine Human Connection?
-
-We have never been more "connected" — and yet many people have never felt more alone. Across the world, billions of people spend hours each day scrolling through feeds, liking posts, and watching strangers perform their lives for an audience. We call this connection. I call it a performance.
-
-I believe social media, in its current form, is doing serious damage to genuine human relationships. The platforms are designed not to help you connect, but to keep you engaged — and engagement means keeping your attention through emotional stimulation: outrage, envy, comparison, and validation. Every "like" is a small hit of dopamine. Every unflattering comparison to someone else's curated life is a small wound.
-
-True human connection requires vulnerability, presence, and time — three things that social media actively discourages. A quick comment on a friend's photo is not the same as a real conversation. A birthday message on someone's wall is not care — it is a performance of care. We are becoming experts at appearing connected while growing increasingly isolated.
-
-The effects on mental health are well documented. Numerous studies link heavy social media use — particularly among teenagers — to increased rates of anxiety, depression, and loneliness. The irony is devastating: the tools built to bring us together are making us feel more alone.
-
-Some argue that social media allows people to maintain long-distance relationships and helps marginalized groups find community and support. This is true, and it is important. But these genuine uses are exceptions, not the rule. The majority of our social media time is not spent building meaningful connections — it is spent consuming content and broadcasting ourselves.
-
-We need to make a conscious choice to invest in real relationships: to put down the phone, look someone in the eyes, and be present. Technology is a tool. We have allowed it to become a substitute for life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'The author describes the link between social media and loneliness as an "irony." Why?',
+          text: 'The phrase "has not kept pace with" in paragraph 3 most likely means:',
           options: [
-            'Because social media was invented to isolate people, not connect them.',
-            'Because most people are happy with their social media relationships.',
-            'Because loneliness is a new phenomenon that did not exist before social media.',
-            'Because tools designed to bring people together are actually making them feel more alone.',
+            'has become more advanced than',
+            'has failed to develop at the same speed as',
+            'has completely rejected the ideas of',
+            'has successfully adapted to',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q5',
           part: 7,
-          stimulus: `Is Social Media Destroying Genuine Human Connection?
-
-We have never been more "connected" — and yet many people have never felt more alone. Across the world, billions of people spend hours each day scrolling through feeds, liking posts, and watching strangers perform their lives for an audience. We call this connection. I call it a performance.
-
-I believe social media, in its current form, is doing serious damage to genuine human relationships. The platforms are designed not to help you connect, but to keep you engaged — and engagement means keeping your attention through emotional stimulation: outrage, envy, comparison, and validation. Every "like" is a small hit of dopamine. Every unflattering comparison to someone else's curated life is a small wound.
-
-True human connection requires vulnerability, presence, and time — three things that social media actively discourages. A quick comment on a friend's photo is not the same as a real conversation. A birthday message on someone's wall is not care — it is a performance of care. We are becoming experts at appearing connected while growing increasingly isolated.
-
-The effects on mental health are well documented. Numerous studies link heavy social media use — particularly among teenagers — to increased rates of anxiety, depression, and loneliness. The irony is devastating: the tools built to bring us together are making us feel more alone.
-
-Some argue that social media allows people to maintain long-distance relationships and helps marginalized groups find community and support. This is true, and it is important. But these genuine uses are exceptions, not the rule. The majority of our social media time is not spent building meaningful connections — it is spent consuming content and broadcasting ourselves.
-
-We need to make a conscious choice to invest in real relationships: to put down the phone, look someone in the eyes, and be present. Technology is a tool. We have allowed it to become a substitute for life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'How does the author treat the argument that social media helps marginalized groups?',
+          text: 'According to paragraph 3, what is one advantage of vocational training over university?',
           options: [
-            'The author completely rejects it as false.',
-            'The author uses it as the main reason to support social media.',
-            'The author accepts it as valid but considers it an exception rather than the norm.',
-            'The author ignores it and does not address it at all.',
+            'Vocational training is more respected by employers.',
+            'Vocational programmes prepare students in less time and at lower cost.',
+            'Vocational training leads to higher salaries than university degrees.',
+            'Vocational qualifications are recognised in more countries.',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q6',
           part: 7,
-          stimulus: `Is Social Media Destroying Genuine Human Connection?
-
-We have never been more "connected" — and yet many people have never felt more alone. Across the world, billions of people spend hours each day scrolling through feeds, liking posts, and watching strangers perform their lives for an audience. We call this connection. I call it a performance.
-
-I believe social media, in its current form, is doing serious damage to genuine human relationships. The platforms are designed not to help you connect, but to keep you engaged — and engagement means keeping your attention through emotional stimulation: outrage, envy, comparison, and validation. Every "like" is a small hit of dopamine. Every unflattering comparison to someone else's curated life is a small wound.
-
-True human connection requires vulnerability, presence, and time — three things that social media actively discourages. A quick comment on a friend's photo is not the same as a real conversation. A birthday message on someone's wall is not care — it is a performance of care. We are becoming experts at appearing connected while growing increasingly isolated.
-
-The effects on mental health are well documented. Numerous studies link heavy social media use — particularly among teenagers — to increased rates of anxiety, depression, and loneliness. The irony is devastating: the tools built to bring us together are making us feel more alone.
-
-Some argue that social media allows people to maintain long-distance relationships and helps marginalized groups find community and support. This is true, and it is important. But these genuine uses are exceptions, not the rule. The majority of our social media time is not spent building meaningful connections — it is spent consuming content and broadcasting ourselves.
-
-We need to make a conscious choice to invest in real relationships: to put down the phone, look someone in the eyes, and be present. Technology is a tool. We have allowed it to become a substitute for life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What does "curated life" mean in the context of this text?',
+          text: 'What example does paragraph 4 use to support the idea that degrees are not always necessary?',
           options: [
-            'A carefully selected and edited version of someone\'s life presented online.',
-            'A life lived without the use of technology.',
-            'A life based on traditional values and strong community ties.',
-            'A career in art, design, or cultural work.',
+            'Government ministers who studied at top universities',
+            'Successful business people who never completed a university degree',
+            'Athletes who succeeded through hard work and talent alone',
+            'Teachers who trained through vocational programmes',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q7',
           part: 7,
-          stimulus: `Is Social Media Destroying Genuine Human Connection?
-
-We have never been more "connected" — and yet many people have never felt more alone. Across the world, billions of people spend hours each day scrolling through feeds, liking posts, and watching strangers perform their lives for an audience. We call this connection. I call it a performance.
-
-I believe social media, in its current form, is doing serious damage to genuine human relationships. The platforms are designed not to help you connect, but to keep you engaged — and engagement means keeping your attention through emotional stimulation: outrage, envy, comparison, and validation. Every "like" is a small hit of dopamine. Every unflattering comparison to someone else's curated life is a small wound.
-
-True human connection requires vulnerability, presence, and time — three things that social media actively discourages. A quick comment on a friend's photo is not the same as a real conversation. A birthday message on someone's wall is not care — it is a performance of care. We are becoming experts at appearing connected while growing increasingly isolated.
-
-The effects on mental health are well documented. Numerous studies link heavy social media use — particularly among teenagers — to increased rates of anxiety, depression, and loneliness. The irony is devastating: the tools built to bring us together are making us feel more alone.
-
-Some argue that social media allows people to maintain long-distance relationships and helps marginalized groups find community and support. This is true, and it is important. But these genuine uses are exceptions, not the rule. The majority of our social media time is not spent building meaningful connections — it is spent consuming content and broadcasting ourselves.
-
-We need to make a conscious choice to invest in real relationships: to put down the phone, look someone in the eyes, and be present. Technology is a tool. We have allowed it to become a substitute for life.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What action does the author recommend in the final paragraph?',
+          text: 'The word "entrepreneurship" in paragraph 4 most likely refers to:',
           options: [
-            'Deleting all social media accounts permanently.',
-            'Reporting harmful content to platform moderators.',
-            'Limiting social media use to only professional purposes.',
-            'Consciously choosing to invest in face-to-face, present relationships.',
+            'working as an employee in a large company',
+            'studying business at a prestigious university',
+            'starting and running your own business',
+            'managing a government institution',
           ],
-          answer: 3,
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q8',
+          part: 7,
+          text: 'According to the final paragraph, what quality may matter most in a rapidly changing world?',
+          options: [
+            'Having a degree from a well-known university',
+            'The ability to earn a high salary quickly',
+            'The ability to keep learning continuously',
+            'Having a large professional network',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q9',
+          part: 7,
+          text: 'What is the author\'s tone in the final paragraph?',
+          options: [
+            'Strongly in favour of university education',
+            'Strongly opposed to university education',
+            'Balanced and nuanced, offering a middle view',
+            'Confused and uncertain about the topic',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q10',
+          part: 7,
+          text: "Which statement BEST summarises the author's overall position?",
+          options: [
+            'A university degree is always necessary for success in Colombia.',
+            'Vocational training is always better than university education.',
+            'Success depends on motivation and adaptability more than on qualifications alone.',
+            'The university system must be completely replaced by vocational training.',
+          ],
+          answer: 2,
         },
       ],
     },

@@ -333,6 +333,29 @@ function PassageText({ text }: { text: string }) {
   );
 }
 
+// ── Transcript block (collapsible) ───────────────────────────────────────────
+
+function TranscriptBlock({ transcript }: { transcript: string }) {
+  const [open, setOpen] = useState(true);
+  return (
+    <div className="lang-section__passage">
+      <button
+        onClick={() => setOpen(o => !o)}
+        className="lang-section__passage-label"
+        style={{ cursor: 'pointer', background: 'none', border: 'none', textAlign: 'left', width: '100%', display: 'flex', alignItems: 'center', gap: 6, padding: 0 }}
+      >
+        <span>📄 Transcript</span>
+        <span style={{ fontSize: '0.75em', opacity: 0.7 }}>{open ? '▲' : '▼'}</span>
+      </button>
+      {open && (
+        <div className="lang-section__passage-text" style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', lineHeight: 1.75 }}>
+          {transcript}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Section view ──────────────────────────────────────────────────────────────
 
 function SectionView({
@@ -384,11 +407,8 @@ function SectionView({
         </div>
       )}
 
-      {section.transcript && !section.audioUrl && (
-        <div className="lang-section__passage">
-          <p className="lang-section__passage-label">Transcripción (audio)</p>
-          <div className="lang-section__passage-text">{section.transcript}</div>
-        </div>
+      {section.transcript && (
+        <TranscriptBlock transcript={section.transcript} />
       )}
 
       <div className="lang-section__questions">

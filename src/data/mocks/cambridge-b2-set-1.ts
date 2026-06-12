@@ -552,15 +552,47 @@ const mock: MockExam = {
 
     // ─────────────────────────────────────────────────────────────────────────
     // PAPER 3 — Listening · Part 1: Multiple Choice – short extracts
-    // Source: Cambridge B2 First Official Sample 1 (2015 handbook)
     // ─────────────────────────────────────────────────────────────────────────
     {
       part: 9,
       title: 'Listening – Part 1: Multiple Choice (short extracts)',
       skill: 'listening',
-      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
+      transcript: `EXTRACT 1 — A woman telling a friend about a camping holiday
+Woman: "I honestly thought I'd have a terrible night's sleep — you know what I'm like at home with my fancy mattress! But honestly, I was so wrong. I fell asleep the moment my head hit the pillow and didn't wake up until sunrise. The fresh air, the sounds of nature... I've never slept so soundly in my life. It was genuinely the most relaxing part of the whole trip."
+
+EXTRACT 2 — A man and his daughter talking about her plans for next summer
+Daughter: "I'm thinking of going travelling around Southeast Asia with some friends."
+Father: "That sounds amazing, but travel costs money. Have you thought about getting a summer job first? I'd feel a lot better if you could fund it yourself rather than asking me for help."
+Daughter: "But all my friends are going straight after exams..."
+Father: "I know, but honestly — if you saved for two or three months, you'd have a much better trip. Just think about it."
+
+EXTRACT 3 — Two college students talking about a history assignment
+Student 1: "This assignment is enormous. Should we split the topics — you take half, I take half?"
+Student 2: "I thought about that, but we'd end up with something really inconsistent. The writing styles would be completely different."
+Student 1: "True. What if we both worked through it together in the library?"
+Student 2: "Yeah, I think that's better. We can keep each other on track and it'll feel less overwhelming."
+Student 1: "Agreed. Saturday morning?"
+
+EXTRACT 4 — A woman describing a running race she took part in
+Woman: "I'd trained for months for that race. I wasn't fast — nowhere near the front — but when I crossed that finish line, I wasn't thinking about where I'd finished. I just felt this enormous surge of pride. I'd set myself a goal and I'd done it. My time, my achievement. I burst into tears, if I'm honest."
+
+EXTRACT 5 — A man and a woman talking about a new restaurant
+Man: "I finally went to that new Italian place."
+Woman: "And? Was it expensive?"
+Man: "The prices were fine, actually. And the menu is quite short — maybe eight or nine dishes — but honestly, every single thing we ordered was extraordinary. The pasta especially. The best I've had outside Italy."
+Woman: "My colleague said exactly the same thing about the food."
+
+EXTRACT 6 — Two friends talking about a film they have seen
+Woman: "Did you see that new thriller? The reviews were all over the place."
+Man: "I did. I went in expecting to be disappointed, honestly. But it really surprised me — it was genuinely better than anything those reviewers suggested. I wouldn't say it was the best thing I've ever seen, but it was solid. Worth your time."
+
+EXTRACT 7 — A woman talking on the radio about recycling
+Woman: "The biggest mistake people make when they start recycling is assuming the rules are the same everywhere. They're not. What gets collected, how it needs to be sorted, what goes in which bin — it all varies by area. So before you do anything else, go to your council's website and read their guidance. Once you know exactly what applies to you, everything else follows naturally."
+
+EXTRACT 8 — A young man talking about his career as a chef
+Man: "People assume I always knew I wanted to cook, but it wasn't like that at all. My uncle has run a restaurant for decades and I used to spend school holidays helping out there. When I was about sixteen, he pulled me aside and said, 'You've got a real feel for this — you should train seriously.' That conversation changed everything. Without him saying that, I honestly think I'd be doing something completely different now."`,
       instructions:
-        'You will hear people talking in eight different situations. For questions 1–8, choose the best answer (A, B or C). You will hear the recording twice.',
+        'Read each extract and choose the best answer (A, B or C). In the real exam, you would listen to recordings — here, read the transcripts carefully instead.',
       questions: [
         {
           type: 'mcq',
@@ -676,9 +708,39 @@ const mock: MockExam = {
       part: 9,
       title: 'Listening – Part 2: Sentence Completion',
       skill: 'listening',
-      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
+      transcript: `RADIO INTERVIEW — Sandra White, historical researcher
+
+Presenter: "Sandra, when did history first capture your imagination?"
+Sandra: "I was about eight years old. My parents took me to visit a castle during the school summer holidays and I was completely fascinated. Standing in those old rooms, I kept thinking about all the people who had lived there hundreds of years ago. That visit planted a seed."
+
+Presenter: "And where did you study?"
+Sandra: "I did my undergraduate degree at Bristol University, then a postgraduate at London. Bristol is where I really fell in love with original sources."
+
+Presenter: "What was your first professional role?"
+Sandra: "I was taken on by a local museum to research their old records — mainly parish registers, tax documents, that sort of thing. Most people would find it terribly dull, but I was in my element."
+
+Presenter: "How would you describe the work to someone with no background in it?"
+Sandra: "The best comparison is being a detective. You're given a puzzle — a gap in the historical record — and you have to piece together clues from fragments of evidence to find an answer. It really is detective work."
+
+Presenter: "What do you find most challenging?"
+Sandra: "Reading old handwriting, without a doubt. Documents from the sixteenth and seventeenth centuries were written in scripts that are almost unrecognisable to modern eyes. It takes years of practice to read them fluently."
+
+Presenter: "Tell us about your most recent project."
+Sandra: "I've just completed a major study on everyday life in seventeenth century London — what people ate, how they travelled, how they dealt with illness. It's one of the richest periods for surviving records."
+
+Presenter: "You use technology in your research too, don't you?"
+Sandra: "Yes — I use a specialised computer programme to analyse data from historical documents. It can identify patterns across thousands of records far faster than any human reader. It's transformed how we work."
+
+Presenter: "You've also written a book?"
+Sandra: "I have — about the history of food in Britain. It took five years to research and write. I'm enormously proud of it, though I'd do several things differently now."
+
+Presenter: "You do outreach work with schools?"
+Sandra: "Yes, I give talks to local schools whenever I can. History can feel abstract and distant for young people, so I try to make it immediate — to show them that real people lived these stories."
+
+Presenter: "Finally — what quality does a good historical researcher most need?"
+Sandra: "Patience, above everything. You can spend weeks tracking down a single fact that may not even exist in the historical record. If you're not patient, this work will destroy you."`,
       instructions:
-        'You will hear a radio interview with a woman called Sandra White who works as a historical researcher. For questions 9–18, complete the sentences with a word or short phrase.',
+        'Read the interview transcript and complete the sentences with a word or short phrase. In the real exam, you would listen to the recording — here, read carefully instead.',
       questions: [
         {
           type: 'formgroup',
@@ -712,9 +774,24 @@ const mock: MockExam = {
       part: 9,
       title: 'Listening – Part 3: Multiple Matching',
       skill: 'listening',
-      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
+      transcript: `Five speakers talking about a physical challenge they completed.
+
+SPEAKER 1:
+"I'd been aware of the challenge for years but never seriously considered it for myself. Then my neighbour — who's not particularly sporty at all — went and completed it. Watching her do something I'd assumed was beyond ordinary people made me think, 'Well, if she can manage it, maybe I can too.' She didn't even know she'd inspired me until I told her afterwards."
+
+SPEAKER 2:
+"To be honest, the physical side of it was almost secondary for me. My brother had been through a really difficult time with his health, and the charity that supported him changed his life. So when the opportunity came up to do something challenging and raise funds for them at the same time, I didn't hesitate. The training was hard, but the reason I was doing it kept me going."
+
+SPEAKER 3:
+"I'd trained really hard — I was physically prepared. My body held up fine, actually. What I wasn't ready for was the voice in my head somewhere past the halfway point telling me to stop, that I couldn't do it. Fighting that mental battle was far more draining than anything physical. That's the part nobody warns you about."
+
+SPEAKER 4:
+"I finished it and I'm really proud. But honestly? I was already thinking about what's next before I'd even crossed the finish line. I want something more demanding — longer distance, more elevation. Once you realise what you're capable of, a small challenge doesn't feel satisfying anymore. I want to push it further."
+
+SPEAKER 5:
+"People in my life had always told me I wasn't the sporty type. And for years I believed them. Entering this challenge was partly about shutting those voices out — the external ones and the internal ones. I needed to know the truth about what I could do. Standing at the finish line, I had my answer. That was worth every hard training session."`,
       instructions:
-        'You will hear five short extracts in which people are talking about a physical challenge they took part in. For questions 19–23, choose from the list (A–H) what each speaker says. Use each letter only once. There are three extra letters you do not need to use.',
+        'Read the five extracts and choose from the options (A–H) what each speaker says. Use each letter only once. In the real exam, you would listen — here, read the transcripts carefully.',
       questions: [
         {
           type: 'mcq',
@@ -767,9 +844,30 @@ const mock: MockExam = {
       part: 9,
       title: 'Listening – Part 4: Multiple Choice (long extract)',
       skill: 'listening',
-      audioUrl: '/audio/cambridge-b2/set-1-listening.mp3',
+      transcript: `INTERVIEW — Tom Briggs, handmade furniture maker
+
+Presenter: "Tom, how did you end up making furniture for a living?"
+Tom: "I was renovating my house and had a very specific idea for a dining table — the exact style, dimensions, the type of wood. I searched everywhere and simply couldn't find what I had in mind. Everything was either wrong or just generic. So I thought, I'll try making it myself. That first table turned out better than I expected, and I suppose I never stopped."
+
+Presenter: "Did you have any formal training?"
+Tom: "Not at first. But there was a retired craftsman in my village — a man who'd spent forty years making furniture — and he took me on, informally. I spent about a year working with him, watching and learning. That kind of hands-on tuition from someone experienced is worth more than anything else. I'm very grateful to him."
+
+Presenter: "How did your business actually start?"
+Tom: "I made a side table as a birthday present for my sister, and she took it along to a local craft fair — not to sell, just as something to show off. But people kept asking her where it was from. So I went along to the next fair with four pieces, and they all sold on the day. That was the moment I realised this could be a real business."
+
+Presenter: "What was the hardest thing you faced in that first year?"
+Tom: "Pricing. When you pour twenty or thirty hours into a piece, how do you put a fair number on that? I kept charging too little because I felt awkward asking for what it was genuinely worth. I was essentially working for nothing. Learning to value my own time and skill was a real battle."
+
+Presenter: "Tell us about your workspace."
+Tom: "It's a converted garage at the bottom of my garden. I've spent three years getting it exactly right — the tool layout, the ventilation, the lighting. Every time I walk in, I feel ready to work. I'm genuinely proud of how it's set up. It's my favourite place to be."
+
+Presenter: "Are you looking to grow the business?"
+Tom: "People ask me that often. Investors have approached me. But I'm very cautious about scaling up too quickly. Growing fast is how you lose the thing that made you different in the first place. I need to be involved in every piece personally — the moment I'm not, I'm just running a factory. That's not what I want."
+
+Presenter: "What advice would you give someone thinking of doing something similar?"
+Tom: "Don't try to compete on price or volume. You'll lose to mass manufacturers every time. Instead, focus entirely on quality — make every single piece the best you possibly can. The customers who choose handmade aren't looking for cheap. They want something made with care that will last decades. Give them that, and you'll find your audience."`,
       instructions:
-        'You will hear an interview with a man called Tom Briggs who set up a business selling handmade furniture. For questions 24–30, choose the best answer (A, B or C).',
+        'Read the interview and choose the best answer (A, B or C). In the real exam, you would listen to the recording — here, read the transcript carefully instead.',
       questions: [
         {
           type: 'mcq',

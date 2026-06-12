@@ -201,11 +201,107 @@ export default function PracticaClient() {
             Desglose silábico, pronunciación interactiva y práctica de estrés para exámenes.
           </p>
 
-          {/* ICFES stress block */}
+          {/* Exam practice block */}
           <div style={{ marginBottom: '2.5rem' }}>
             <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--mono)', marginBottom: '0.85rem' }}>
               Práctica de exámenes
             </p>
+
+            {/* IELTS Writing Task 1 card */}
+            <Link
+              href="/practica/ielts-writing-conectores"
+              style={{
+                display: 'flex',
+                alignItems: 'stretch',
+                textDecoration: 'none',
+                color: 'inherit',
+                background: 'linear-gradient(135deg, rgba(15,61,140,0.07) 0%, rgba(37,99,235,0.04) 100%)',
+                border: '1.5px solid rgba(15,61,140,0.2)',
+                borderRadius: 18,
+                overflow: 'hidden',
+                marginBottom: '0.75rem',
+                transition: 'box-shadow 0.2s, border-color 0.2s',
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(15,61,140,0.14)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(15,61,140,0.4)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(15,61,140,0.2)'; }}
+            >
+              <div style={{ width: 5, background: 'linear-gradient(180deg, #0f3d8c, #2563eb)', flexShrink: 0 }} />
+              <div style={{ padding: '1.4rem 1.75rem', flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.55rem' }}>
+                  <span style={{ fontSize: '1.9rem' }}>🇬🇧</span>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      <span style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--ink)' }}>IELTS Writing Task 1</span>
+                      <span style={{ fontSize: '0.62rem', fontWeight: 800, background: '#0f3d8c', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>
+                        NUEVO
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
+                      Coherence &amp; Cohesion · Ordena oraciones + identifica conectores trampa
+                    </div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
+                  {['📝 7 oraciones reales', '🔗 13 conectores', '⚠️ Trampas ocultas', '📊 Feedback Band 6–7'].map(tag => (
+                    <span key={tag} style={{ fontSize: '0.7rem', padding: '0.18rem 0.55rem', borderRadius: 6, background: 'rgba(15,61,140,0.08)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#0f3d8c', fontSize: '1.2rem', fontWeight: 700 }}>
+                →
+              </div>
+            </Link>
+
+            {/* English Comprehension card */}
+            <Link
+              href="/practica/the-grandmothers-ledger"
+              style={{
+                display: 'flex',
+                alignItems: 'stretch',
+                textDecoration: 'none',
+                color: 'inherit',
+                background: 'linear-gradient(135deg, rgba(5,150,105,0.07) 0%, rgba(16,185,129,0.04) 100%)',
+                border: '1.5px solid rgba(5,150,105,0.2)',
+                borderRadius: 18,
+                overflow: 'hidden',
+                marginBottom: '0.75rem',
+                transition: 'box-shadow 0.2s, border-color 0.2s',
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(5,150,105,0.14)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(5,150,105,0.4)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(5,150,105,0.2)'; }}
+            >
+              <div style={{ width: 5, background: 'linear-gradient(180deg, #059669, #10b981)', flexShrink: 0 }} />
+              <div style={{ padding: '1.4rem 1.75rem', flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.55rem' }}>
+                  <span style={{ fontSize: '1.9rem' }}>🎙️</span>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      <span style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--ink)' }}>The Grandmother&apos;s Ledger</span>
+                      <span style={{ fontSize: '0.62rem', fontWeight: 800, background: '#059669', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>
+                        NUEVO
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
+                      English B1–B2 · Reading + Listening comprehension · Family dispute story
+                    </div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
+                  {['🎙 2 voice notes', '📖 Reading + Listening', '🧠 19 questions', '📊 Feedback B1–B2'].map(tag => (
+                    <span key={tag} style={{ fontSize: '0.7rem', padding: '0.18rem 0.55rem', borderRadius: 6, background: 'rgba(5,150,105,0.08)', color: '#059669', border: '1px solid rgba(5,150,105,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#059669', fontSize: '1.2rem', fontWeight: 700 }}>
+                →
+              </div>
+            </Link>
+
+            {/* ICFES card */}
             <button
               onClick={() => setSelected('icfes')}
               style={{

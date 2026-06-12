@@ -1,473 +1,344 @@
 import type { MockExam } from './types';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// ICFES Saber 11 · Componente de Inglés — Mock 02
+// Nivel: A2–B1  ·  45 preguntas  ·  60 minutos
+// Tema: Viajes y transporte
+// ─────────────────────────────────────────────────────────────────────────────
 const mock: MockExam = {
   id: 'mock-02',
   examSlug: 'icfes',
-  title: 'Mock 2 · Viajes y servicios',
-  subtitle: 'Saber 11 · Componente de Inglés · 55 preguntas · 60 minutos',
+  title: 'Mock 2 · Viajes y transporte',
+  subtitle: 'Saber 11 · Componente de Inglés · 45 preguntas · 60 minutos',
   timeMinutes: 60,
   sections: [
+
+    // ── PARTE 1 ── Avisos e instrucciones (preguntas 1–5) ────────────────────
     {
       part: 1,
-      title: 'Parte 1 — Vocabulario: relacionar palabras',
-      instructions: 'Match each word with its correct description.',
+      title: 'Parte 1 — Avisos e instrucciones',
+      sectionStyle: 'notices-grid',
+      exampleStimulus: 'WELCOME ABOARD\nPlease fasten your seatbelt.\nThank you for flying with us.',
+      exampleText: 'Where would you see this notice?',
+      exampleAnswer: 'A',
+      instructions:
+        'The following notices give information about different places. Read each notice carefully and answer questions 1 to 5.',
       questions: [
         {
           type: 'mcq',
           id: 'p1q1',
           part: 1,
-          text: 'A building where travelers pay to sleep overnight, usually with meals and services.',
-          options: ['Hotel', 'Airport', 'Station', 'Embassy'],
-          answer: 0,
+          stimulusStyle: 'notice',
+          stimulus:
+            'NO TRANSIT WITHOUT VISA\nPassengers travelling beyond this point\nmust present a valid visa.\nPlease have your documents ready.',
+          text: 'What does this notice tell passengers?',
+          options: [
+            'They need to buy a ticket before continuing.',
+            'They must show a visa to pass through this point.',
+            'They should collect their luggage here.',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q2',
           part: 1,
-          text: 'An official document issued by a government that allows a person to travel abroad.',
-          options: ['Visa', 'Passport', 'Ticket', 'License'],
+          stimulusStyle: 'notice',
+          stimulus:
+            'MIND THE GAP\nPlease take care when boarding\nand alighting from the train.\nStand clear of the doors.',
+          text: 'Where would you most likely see this notice?',
+          options: [
+            'At an airport departure gate',
+            'On a train platform',
+            'Inside a taxi or private car',
+          ],
           answer: 1,
         },
         {
           type: 'mcq',
           id: 'p1q3',
           part: 1,
-          text: 'The area in an airport where passengers wait before boarding their flight.',
-          options: ['Customs', 'Baggage claim', 'Departure gate', 'Check-in desk'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'CHECKOUT: 12:00 PM\nLate checkout is subject to an additional charge.\nPlease contact reception if you require more time.',
+          text: 'What is the purpose of this notice?',
+          options: [
+            'To inform guests about the time they must leave their room',
+            'To advertise a discount on room prices',
+            'To remind guests to pay their bill at the restaurant',
+          ],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'p1q4',
           part: 1,
-          text: 'A person who guides tourists to historical or natural sites and explains important information.',
-          options: ['Travel agent', 'Steward', 'Receptionist', 'Tour guide'],
-          answer: 3,
+          stimulusStyle: 'notice',
+          stimulus:
+            'PHOTOGRAPHY ALLOWED WITHOUT FLASH\nPlease respect other visitors.\nDo not touch the exhibits.',
+          text: 'Which of these is permitted according to the notice?',
+          options: [
+            'Taking photos using a camera flash',
+            'Touching the objects on display',
+            'Taking photos without using a flash',
+          ],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p1q5',
           part: 1,
-          text: 'A trip in which all major expenses — transport, hotel, and sometimes meals — are included in one price.',
-          options: ['Layover', 'Transfer', 'Package tour', 'Day trip'],
-          answer: 2,
+          stimulusStyle: 'notice',
+          stimulus:
+            'ROAD CLOSED\nDETOUR AHEAD\nFollow the signs to the alternative route.\nWe apologise for any inconvenience.',
+          text: 'What does this sign tell drivers?',
+          options: [
+            'The road is open but under repair',
+            'Drivers must follow a different route because the road is blocked',
+            'The speed limit on this road has been reduced',
+          ],
+          answer: 1,
         },
       ],
     },
+
+    // ── PARTE 2 ── Vocabulario: cuadrícula de emparejamiento (preguntas 6–10) ─
     {
       part: 2,
-      title: 'Parte 2 — Diálogos',
-      instructions: 'Read each dialogue and choose the best response to complete it.',
+      title: 'Parte 2 — Vocabulario',
+      sectionStyle: 'matching-grid',
+      topic: 'Transport',
+      exampleText: 'A person who travels on a bus, train, or plane but does not drive it.',
+      exampleAnswer: 'passenger',
+      instructions:
+        'Read descriptions 6 to 10. Which word from column (A – G) matches each description? Mark the correct letter. There are TWO extra words you will not need.',
       questions: [
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q1',
           part: 2,
-          stimulus: 'Airline agent: "I\'m sorry, your flight has been delayed by two hours."\nPassenger: _______',
-          text: 'What is the most natural response from the passenger?',
-          options: [
-            '"Oh no. Is there a lounge where I can wait?"',
-            '"That\'s fine, I prefer long flights."',
-            '"I will book a different airline next time."',
-            '"How many bags can I check in?"',
-          ],
+          text: 'The moment when a plane, train, or bus reaches its destination.',
+          options: ['arrival', 'departure', 'journey', 'luggage', 'platform', 'ticket', 'vehicle'],
           answer: 0,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q2',
           part: 2,
-          stimulus: 'Hotel receptionist: "Good evening! Welcome to Grand View Hotel. Do you have a reservation?"\nGuest: "Yes, I do. It\'s under the name Torres."\nReceptionist: _______',
-          text: 'What does the receptionist say next?',
-          options: [
-            '"I\'m afraid we are fully booked tonight."',
-            '"Checkout time is 11 AM."',
-            '"The restaurant closes at nine."',
-            '"Let me pull that up for you. Could I see your ID, please?"',
-          ],
+          text: 'The bags and suitcases that a traveller takes on a trip.',
+          options: ['arrival', 'departure', 'journey', 'luggage', 'platform', 'ticket', 'vehicle'],
           answer: 3,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q3',
           part: 2,
-          stimulus: 'Tourist: "Excuse me, which bus goes to the old town?"\nLocal resident: _______',
-          text: 'What is the most helpful response?',
-          options: [
-            '"I don\'t have a bus pass."',
-            '"Take bus number 7 from that stop across the street."',
-            '"The old town is very beautiful in summer."',
-            '"I usually walk to the market."',
-          ],
-          answer: 1,
+          text: 'A raised area beside a railway track where passengers wait and board trains.',
+          options: ['arrival', 'departure', 'journey', 'luggage', 'platform', 'ticket', 'vehicle'],
+          answer: 4,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q4',
           part: 2,
-          stimulus: 'Travel agent: "Would you prefer a window or an aisle seat?"\nCustomer: _______',
-          text: 'Which response fits the context?',
-          options: [
-            '"I already have my passport."',
-            '"I\'d like a window seat, please. I enjoy the view."',
-            '"The hotel should have two beds."',
-            '"We are traveling in December."',
-          ],
-          answer: 1,
+          text: 'A piece of paper or card that gives you the right to travel on a bus, train, or plane.',
+          options: ['arrival', 'departure', 'journey', 'luggage', 'platform', 'ticket', 'vehicle'],
+          answer: 5,
         },
         {
-          type: 'dialog',
+          type: 'mcq',
           id: 'p2q5',
           part: 2,
-          stimulus: 'Customs officer: "Do you have anything to declare?"\nTraveler: _______',
-          text: 'What does the traveler say?',
-          options: [
-            '"My suitcase is very heavy."',
-            '"My connecting flight leaves at noon."',
-            '"I have been traveling for ten hours."',
-            '"No, just personal belongings."',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q6',
-          part: 2,
-          stimulus: 'Hotel guest: "The shower in my room isn\'t working properly."\nFront desk staff: _______',
-          text: 'What is the best response from the staff?',
-          options: [
-            '"I\'m sorry to hear that. I\'ll send maintenance right away."',
-            '"Our rooms are cleaned every day."',
-            '"Breakfast is served from seven to ten."',
-            '"You can check out at noon."',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q7',
-          part: 2,
-          stimulus: 'Tour guide: "This cathedral was built in the fifteenth century. Any questions?"\nTourist: _______',
-          text: 'What is the most appropriate follow-up question?',
-          options: [
-            '"How far is the airport from here?"',
-            '"Is there a hotel nearby?"',
-            '"How long did it take to build it?"',
-            '"Can we eat inside?"',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q8',
-          part: 2,
-          stimulus: 'Passenger A: "I think we missed our connection in Madrid."\nPassenger B: "Really? What should we do?"\nPassenger A: _______',
-          text: 'What does Passenger A suggest?',
-          options: [
-            '"Let\'s wait here until someone finds us."',
-            '"The food in Madrid is excellent."',
-            '"I prefer traveling by train."',
-            '"Let\'s go to the airline\'s service desk and ask for help."',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'dialog',
-          id: 'p2q9',
-          part: 2,
-          stimulus: 'Waiter: "Are you ready to order, or do you need a few more minutes?"\nDiner: _______',
-          text: 'What is the most natural response from the diner?',
-          options: [
-            '"The table is too small."',
-            '"We arrived this morning from Bogotá."',
-            '"I\'ll have the grilled fish, please. And a glass of water."',
-            '"The menu is in Spanish."',
-          ],
-          answer: 2,
+          text: 'Any machine with an engine used for transporting people or goods on land.',
+          options: ['arrival', 'departure', 'journey', 'luggage', 'platform', 'ticket', 'vehicle'],
+          answer: 6,
         },
       ],
     },
+
+    // ── PARTE 3 ── Diálogos (preguntas 11–15) ────────────────────────────────
     {
       part: 3,
-      title: 'Parte 3 — Completar oraciones',
-      instructions: 'Choose the word or phrase that best completes each sentence.',
+      title: 'Parte 3 — Diálogos',
+      sectionStyle: 'dialogs-grid',
+      exampleStimulus: 'Is this the right bus to the city centre?',
+      exampleOptions: ['Yes, get on board.', 'I take the train.', 'Buses are slow.'],
+      exampleAnswer: 'A',
+      instructions:
+        'Complete las cinco conversaciones. En las preguntas 11 – 15, marque A, B ó C en su hoja de respuestas.',
       questions: [
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q1',
           part: 3,
-          text: 'Passengers are advised to _______ at least two hours before an international flight.',
-          options: ['depart', 'arrive', 'cancel', 'board'],
-          answer: 1,
+          stimulus: 'My train leaves in ten minutes!',
+          text: '',
+          options: ['Hurry up then.', 'That is too late.', 'I missed mine.'],
+          answer: 0,
         },
         {
-          type: 'mcq',
+          type: 'dialog',
           id: 'p3q2',
           part: 3,
-          text: 'The hotel room _______ a beautiful view of the ocean from the balcony.',
-          options: ['offers', 'shows', 'gives out', 'presents to'],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q3',
-          part: 3,
-          text: 'By the time they reached the beach resort, they _______ for more than twelve hours.',
-          options: ['had been traveling', 'are traveling', 'travel', 'will travel'],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q4',
-          part: 3,
-          text: 'The tour package _______ flights, accommodation, and daily breakfast.',
-          options: ['contains', 'includes', 'adds', 'gives'],
+          stimulus: 'I lost my suitcase at the airport.',
+          text: '',
+          options: ['Try the bus instead.', 'What colour is it?', 'You should fly more.'],
           answer: 1,
         },
         {
-          type: 'mcq',
-          id: 'p3q5',
+          type: 'dialog',
+          id: 'p3q3',
           part: 3,
-          text: 'Travelers _______ exchange their currency before leaving for countries with limited banking services.',
-          options: ['might', 'ought to', 'should', 'could have'],
+          stimulus: 'Do you know how to get to the city centre?',
+          text: '',
+          options: ['I live far away.', 'It is very crowded.', 'Yes, take bus number 5.'],
           answer: 2,
         },
         {
-          type: 'mcq',
-          id: 'p3q6',
+          type: 'dialog',
+          id: 'p3q4',
           part: 3,
-          text: 'The airline announced that the flight _______ due to a technical problem with the aircraft.',
-          options: ['is canceled', 'has been canceling', 'cancels', 'was canceled'],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q7',
-          part: 3,
-          text: 'The resort is _______ popular during the summer months that rooms must be booked months in advance.',
-          options: ['very', 'too', 'so', 'such'],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p3q8',
-          part: 3,
-          text: 'To collect your luggage, please go to _______ claim area on the ground floor.',
-          options: ['baggage', 'cargo', 'suitcase', 'package'],
+          stimulus: 'The flight has been delayed by two hours.',
+          text: '',
+          options: ["Let's get a coffee then.", 'I prefer trains anyway.', 'I am not surprised.'],
           answer: 0,
         },
         {
-          type: 'mcq',
-          id: 'p3q9',
+          type: 'dialog',
+          id: 'p3q5',
           part: 3,
-          text: 'She decided _______ an extra night at the hotel because the return flight was postponed.',
-          options: ['booking', 'have booked', 'book', 'to book'],
-          answer: 3,
+          stimulus: "I can't find my passport!",
+          text: '',
+          options: ['Passports are expensive.', 'Check your bag again.', 'You do not need one.'],
+          answer: 1,
         },
       ],
     },
+
+    // ── PARTE 4 ── Completar el texto (preguntas 16–23) ──────────────────────
     {
       part: 4,
-      title: 'Parte 4 — Comprensión visual',
-      instructions: 'Read the notice or sign and answer the questions that follow.',
+      title: 'Parte 4 — Completar el texto',
+      sectionStyle: 'cloze-text',
+      instructions:
+        'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
+      passage:
+        "Every Sunday, Bogotá holds one of its most (16) ___ community events: the Ciclovía. For several hours, the city closes over 120 (17) ___ of roads to motor vehicles. Thousands of (18) ___ and individuals take to the streets on bicycles, skateboards, and on foot. The event is completely (19) ___ to the public, meaning anyone can participate without paying. Participants use the opportunity to (20) ___, enjoy the fresh air, and connect with their neighbours. Along the route, it is possible to (21) ___ bicycles if you do not own one. The streets remain (22) ___ to cars until early afternoon, when the roads return to normal. The Ciclovía has become a symbol of the (23) ___, showing that Bogotá is much more than a busy metropolis.",
       questions: [
         {
           type: 'mcq',
           id: 'p4q1',
           part: 4,
-          stimulus: '--- HOTEL NOTICE ---\nGRAND VIEW HOTEL\nCheck-in: 3:00 PM | Check-out: 12:00 PM\nRoom service available 24 hours.\nBreakfast buffet: 7:00 AM – 10:30 AM (Floor 2)\nGuests must show key card to enter the pool area.\nQuiet hours: 11:00 PM – 7:00 AM',
-          stimulusLabel: 'Read the hotel notice.',
-          text: 'What must guests show to use the pool?',
-          options: [
-            'Their passport.',
-            'Their hotel key card.',
-            'A booking confirmation email.',
-            'A printed receipt.',
-          ],
-          answer: 1,
+          text: 'Choose the best word for blank (16).',
+          options: ['popular', 'ordinary', 'expensive', 'private'],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'p4q2',
           part: 4,
-          stimulus: '--- HOTEL NOTICE ---\nGRAND VIEW HOTEL\nCheck-in: 3:00 PM | Check-out: 12:00 PM\nRoom service available 24 hours.\nBreakfast buffet: 7:00 AM – 10:30 AM (Floor 2)\nGuests must show key card to enter the pool area.\nQuiet hours: 11:00 PM – 7:00 AM',
-          stimulusLabel: 'Read the hotel notice.',
-          text: 'At what time must guests leave their room on the day of departure?',
-          options: [
-            '11:00 AM',
-            '12:00 PM',
-            '3:00 PM',
-            '10:30 AM',
-          ],
+          text: 'Choose the best word for blank (17).',
+          options: ['metres', 'kilometres', 'streets', 'blocks'],
           answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q3',
           part: 4,
-          stimulus: 'AIRPORT INFORMATION\nFlight: AV407 to Miami\nDeparture: 14:35\nGate: B12\nBoarding begins: 14:05\nStatus: ON TIME\n⚠ Final call will be announced 10 minutes before departure.\nPlease have your boarding pass and ID ready.',
-          stimulusLabel: 'Read the airport departure sign.',
-          text: 'When does boarding start for flight AV407?',
-          options: [
-            'At 14:35.',
-            'At 14:25.',
-            'At 13:55.',
-            'At 14:05.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (18).',
+          options: ['tourists', 'drivers', 'families', 'workers'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q4',
           part: 4,
-          stimulus: 'AIRPORT INFORMATION\nFlight: AV407 to Miami\nDeparture: 14:35\nGate: B12\nBoarding begins: 14:05\nStatus: ON TIME\n⚠ Final call will be announced 10 minutes before departure.\nPlease have your boarding pass and ID ready.',
-          stimulusLabel: 'Read the airport departure sign.',
-          text: 'What should passengers have ready when boarding?',
-          options: [
-            'Their boarding pass and ID.',
-            'Their luggage tags and hotel reservation.',
-            'Their travel insurance and visa.',
-            'Their passport and hotel key card.',
-          ],
-          answer: 0,
+          text: 'Choose the best word for blank (19).',
+          options: ['open', 'free', 'safe', 'easy'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q5',
           part: 4,
-          stimulus: 'TOURISM OFFICE — CITY OF CARTAGENA\nFree walking tours: Tuesday & Thursday, 9:00 AM\nMeet at Plaza de Bolívar (look for the yellow umbrella).\nTour lasts approximately 2 hours.\nDonations welcome but not required.\nFor private tours, call: 310-555-0174',
-          stimulusLabel: 'Read the tourism flyer.',
-          text: 'Where do participants meet for the free walking tour?',
-          options: [
-            'At the Tourism Office.',
-            'At the city bus terminal.',
-            'At Plaza de Bolívar, near a yellow umbrella.',
-            'At the entrance of the cathedral.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (20).',
+          options: ['sleep', 'exercise', 'study', 'drive'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q6',
           part: 4,
-          stimulus: 'TOURISM OFFICE — CITY OF CARTAGENA\nFree walking tours: Tuesday & Thursday, 9:00 AM\nMeet at Plaza de Bolívar (look for the yellow umbrella).\nTour lasts approximately 2 hours.\nDonations welcome but not required.\nFor private tours, call: 310-555-0174',
-          stimulusLabel: 'Read the tourism flyer.',
-          text: 'Which statement about the walking tour is TRUE?',
-          options: [
-            'It runs every day of the week.',
-            'Payment is required before joining.',
-            'The tour lasts four hours.',
-            'Private tours can be arranged by phone.',
-          ],
-          answer: 3,
+          text: 'Choose the best word for blank (21).',
+          options: ['buy', 'repair', 'rent', 'sell'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p4q7',
           part: 4,
-          stimulus: 'RENTAL CAR — TERMS & CONDITIONS\nMinimum driver age: 21 years\nValid driver\'s license required.\nFuel policy: Return full.\nAdditional driver fee: $10/day\nInsurance included in base price.\nLate returns charged at $25/hour.',
-          stimulusLabel: 'Read the rental car terms.',
-          text: 'What happens if a customer returns the car late?',
-          options: [
-            'They will be charged $10 per day.',
-            'The insurance is canceled.',
-            'They must pay $25 for each hour late.',
-            'The car will be collected free of charge.',
-          ],
-          answer: 2,
+          text: 'Choose the best word for blank (22).',
+          options: ['open', 'closed', 'empty', 'narrow'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p4q8',
           part: 4,
-          stimulus: 'RENTAL CAR — TERMS & CONDITIONS\nMinimum driver age: 21 years\nValid driver\'s license required.\nFuel policy: Return full.\nAdditional driver fee: $10/day\nInsurance included in base price.\nLate returns charged at $25/hour.',
-          stimulusLabel: 'Read the rental car terms.',
-          text: 'Which of the following is included in the base price?',
-          options: [
-            'Fuel for the entire trip.',
-            'Insurance.',
-            'An additional driver.',
-            'A GPS device.',
-          ],
+          text: 'Choose the best word for blank (23).',
+          options: ['country', 'city', 'region', 'neighbourhood'],
           answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p4q9',
-          part: 4,
-          stimulus: 'CRUISE SHIP ANNOUNCEMENT\nDear guests, we will arrive at Puerto Limón at 8:00 AM tomorrow.\nExcursions depart from Deck 3 at 9:00 AM sharp.\nAll guests must be back on board by 5:00 PM.\nDinner service begins at 7:00 PM in the Grand Dining Room.',
-          stimulusLabel: 'Read the cruise ship announcement.',
-          text: 'What is the deadline for passengers to return to the ship?',
-          options: [
-            '5:00 PM.',
-            '9:00 AM.',
-            '8:00 AM.',
-            '7:00 PM.',
-          ],
-          answer: 0,
         },
       ],
     },
+
+    // ── PARTE 5 ── Comprensión: texto corto (preguntas 24–30) ────────────────
     {
       part: 5,
-      title: 'Parte 5 — Texto corto',
-      instructions: 'Read the text and answer the questions.',
+      title: 'Parte 5 — Comprensión de lectura: texto corto',
+      sectionStyle: 'reading',
+      passageTitle: 'Budget Travel Tips for Students',
+      instructions:
+        'Read the text and answer questions 24 to 30. Choose the best option (A, B, C, or D).',
+      passage:
+        "BUDGET TRAVEL TIPS FOR STUDENTS\n\nTravelling on a limited budget is challenging, but many students do it successfully every year. With a little planning, it is possible to visit new places without spending a lot of money.\n\nThe first step is to book transport and accommodation as early as possible. Prices for flights and buses are often much cheaper if you buy tickets weeks or even months in advance. Travelling during off-peak seasons, such as autumn or early spring, also helps reduce costs significantly.\n\nWhen it comes to accommodation, there are several affordable options. Youth hostels are one of the most popular choices because they offer shared dormitory rooms at low prices. Many hostels also organise social activities, making it easy to meet other travellers.\n\nEating cheaply while travelling is another important skill. Visiting local markets and cooking your own meals, where possible, can save a great deal of money compared to eating in restaurants every day. Street food is also a wonderful and inexpensive way to try the local cuisine.\n\nFinally, it is a good idea to research free or low-cost attractions before you arrive. Many museums and galleries offer free entry on certain days of the week. Walking tours, parks, and public beaches are also excellent ways to explore a city without spending anything.\n\nWith the right attitude and some careful preparation, travelling as a student can be one of the most rewarding experiences of your life.",
       questions: [
         {
           type: 'mcq',
           id: 'p5q1',
           part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the main purpose of the SkyStay Rewards program?',
+          text: 'What is the main purpose of this text?',
           options: [
-            'To offer frequent travelers rewards for their spending.',
-            'To replace the hotel\'s existing room service.',
-            'To advertise cheaper flights for hotel guests.',
-            'To encourage guests to eat only at hotel restaurants.',
+            'To warn students about the dangers of travelling alone',
+            'To give advice on how students can travel without spending much money',
+            'To advertise cheap flights and hotels for young people',
+            'To describe the best destinations for student travel in the world',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q2',
           part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How many points does a member earn per dollar spent?',
-          options: ['5', '10', '200', '500'],
-          answer: 1,
+          text: 'According to the text, when is it cheapest to buy transport tickets?',
+          options: [
+            'On the day of travel',
+            'One week before departure',
+            'Several weeks or months in advance',
+            'During the summer holiday season',
+          ],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p5q3',
           part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What bonus do new members receive when they register?',
+          text: 'Why are youth hostels recommended in the text?',
           options: [
-            'A free room upgrade.',
-            'A 10% discount on their next stay.',
-            '200 welcome points.',
-            'A free spa treatment.',
+            'They provide private rooms with luxury facilities.',
+            'They are located only in city centres.',
+            'They offer cheap shared rooms and social activities.',
+            'They serve free meals to guests every morning.',
           ],
           answer: 2,
         },
@@ -475,359 +346,170 @@ Joining is completely free. Travelers can register online or ask at the front de
           type: 'mcq',
           id: 'p5q4',
           part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What advantage do Gold and Platinum members have over Bronze members?',
+          text: 'The phrase "off-peak seasons" in paragraph 2 most likely means:',
           options: [
-            'They earn more points per dollar.',
-            'They receive a monthly cash refund.',
-            'They can use points at any hotel brand.',
-            'They need fewer points for a free night and get extra perks.',
+            'times of the year when the weather is very warm',
+            'periods that are less busy and often less expensive',
+            'weeks when public transport does not operate',
+            'holidays when all attractions are closed',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q5',
           part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The word "redeemed" in the text means:',
+          text: 'What does the text suggest about eating cheaply while travelling?',
           options: [
-            'Earned by spending money.',
-            'Transferred to another person.',
-            'Used or exchanged for a reward.',
-            'Canceled after a period of time.',
+            'Students should only eat at fast-food restaurants.',
+            'Cooking your own food and eating street food can save money.',
+            'It is impossible to eat well on a student budget.',
+            'Restaurants in tourist areas always offer student discounts.',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p5q6',
           part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How are points added to a member\'s account?',
+          text: 'Which of the following is mentioned as a free or low-cost activity?',
           options: [
-            'Automatically when the membership number is given at check-in.',
-            'By filling out a form at the end of each stay.',
-            'By calling customer service after checkout.',
-            'By scanning a card at the hotel entrance.',
+            'Taking guided tours by car',
+            'Visiting theme parks and water parks',
+            'Walking tours and visiting public parks',
+            'Attending concerts and live shows',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p5q7',
           part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'How many SkyStay hotel properties are mentioned in the text?',
-          options: ['10', '200', '500', '300'],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q8',
-          part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Which of the following can points NOT be used for, according to the text?',
+          text: 'Which statement BEST summarises the text?',
           options: [
-            'Free nights.',
-            'Free airport transfers.',
-            'Travel vouchers.',
-            'Room upgrades.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'p5q9',
-          part: 5,
-          stimulus: `SkyStay Rewards: Earn Points Every Night
-
-SkyStay Hotels has launched a new loyalty program called SkyStay Rewards, designed to give frequent travelers more value for every stay. Members earn 10 points for every dollar spent on rooms, dining, and spa services at any of the 300 SkyStay properties worldwide.
-
-Points can be redeemed for free nights, room upgrades, and travel vouchers. Bronze members need 500 points for a free night, while Gold and Platinum members enjoy reduced thresholds and exclusive perks such as late checkout and complimentary breakfast.
-
-Joining is completely free. Travelers can register online or ask at the front desk during their next stay. Points are added automatically when the membership number is provided at check-in. Members also receive a welcome bonus of 200 points upon registration, enough to start saving toward their first reward right away.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What can be inferred about the SkyStay Rewards program?',
-          options: [
-            'It is only available to business travelers.',
-            'It is designed to encourage guests to return to SkyStay hotels.',
-            'Members must pay a monthly fee to stay enrolled.',
-            'Points expire after six months.',
+            'Travelling is too expensive for most students and should be avoided.',
+            'Students can travel affordably by planning ahead and making smart choices.',
+            'The best student travel experiences are always in Europe.',
+            'Students must choose between comfort and saving money when they travel.',
           ],
           answer: 1,
         },
       ],
     },
+
+    // ── PARTE 6 ── Comprensión: texto largo (preguntas 31–35) ────────────────
     {
       part: 6,
-      title: 'Parte 6 — Texto largo: inferencia',
-      instructions: 'Read the longer text carefully and answer the questions. Use inference and context clues.',
+      title: 'Parte 6 — Comprensión de lectura: texto largo',
+      sectionStyle: 'reading',
+      passageTitle: 'How Air Travel Changed the World',
+      instructions:
+        'Read the text and answer questions 31 to 35. Some questions require you to infer information from the text. Choose the best option (A, B, C, or D).',
+      passage:
+        "HOW AIR TRAVEL CHANGED THE WORLD\n\nIn the early twentieth century, crossing the Atlantic Ocean by ship took about a week. Today, the same journey by aeroplane takes fewer than eight hours. This dramatic change in travel time is just one example of how air travel has transformed the way people live, work, and connect with each other.\n\nCommercial aviation began in the 1920s, though early flights were slow, uncomfortable, and available only to the very wealthy. The real revolution came after the Second World War, when new jet engine technology made it possible to carry more passengers at higher speeds. By the 1960s and 1970s, the introduction of wide-body aircraft — such as the Boeing 747 — made flying affordable for the middle classes for the first time.\n\nThe economic impact of air travel has been enormous. Tourism became a global industry, with millions of people each year visiting countries they could never have reached by land or sea. International trade also grew rapidly, as goods that could not survive long sea journeys — fresh food, electronic components, and medical supplies — could now be transported in hours.\n\nHowever, air travel also brings serious problems. Aircraft engines produce large amounts of carbon dioxide and other greenhouse gases, making aviation one of the most significant contributors to climate change. As concerns about the environment have grown, scientists and engineers have been working to develop cleaner and more fuel-efficient aircraft. Several airlines are already testing planes powered partly by sustainable fuels.\n\nDespite these challenges, the demand for air travel continues to grow, particularly in Asia and Latin America, where a growing middle class is travelling internationally for the first time. How the industry manages this growth while reducing its environmental impact will be one of the great questions of the coming decades.",
       questions: [
         {
           type: 'mcq',
           id: 'p6q1',
           part: 6,
-          stimulus: `Budget Travel: Changing the World of Tourism
-
-Twenty years ago, traveling internationally was a privilege reserved for those with significant financial resources. Transatlantic flights cost hundreds of dollars, and the idea of spending a weekend in a foreign capital seemed unrealistic for most ordinary people. Today, that picture has changed dramatically.
-
-The rise of budget airlines has been one of the most significant forces reshaping global tourism. Carriers such as Ryanair in Europe and IndiGo in Asia introduced a no-frills model that stripped away extras — meals, assigned seating, and generous baggage allowances — and passed the savings on to customers. As a result, the number of international tourists worldwide jumped from 435 million in 1990 to over 1.4 billion in 2019, according to the World Tourism Organization.
-
-But this democratization of travel has not come without consequences. Popular destinations such as Barcelona, Venice, and Bali have struggled with overtourism — the phenomenon where excessive visitor numbers put pressure on infrastructure, raise living costs for local residents, and damage natural environments. In Venice, the resident population has declined from 175,000 in the 1950s to fewer than 50,000 today, partly because rising rents driven by tourism have made the city unaffordable for locals.
-
-Governments and tourism boards have responded in different ways. Some cities have introduced tourist taxes, charging visitors a nightly fee that funds local services. Others have set visitor limits at sensitive natural or cultural sites. Amsterdam has gone further, actively campaigning to discourage low-budget, short-stay tourists and instead attract visitors who stay longer and contribute more to the local economy.
-
-The debate around budget travel ultimately reflects a deeper question: who benefits from mass tourism, and at what cost? As the industry continues to grow, striking a balance between accessibility and sustainability will be the defining challenge of the coming decades.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What is the main idea of this text?',
+          text: 'According to paragraph 1, what does the comparison between a ship and a plane crossing the Atlantic show?',
           options: [
-            'Budget airlines are causing environmental disasters around the world.',
-            'Governments should ban all budget airlines to protect local communities.',
-            'International travel is now only possible for wealthy people.',
-            'The growth of affordable travel has transformed tourism while creating new challenges.',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q2',
-          part: 6,
-          stimulus: `Budget Travel: Changing the World of Tourism
-
-Twenty years ago, traveling internationally was a privilege reserved for those with significant financial resources. Transatlantic flights cost hundreds of dollars, and the idea of spending a weekend in a foreign capital seemed unrealistic for most ordinary people. Today, that picture has changed dramatically.
-
-The rise of budget airlines has been one of the most significant forces reshaping global tourism. Carriers such as Ryanair in Europe and IndiGo in Asia introduced a no-frills model that stripped away extras — meals, assigned seating, and generous baggage allowances — and passed the savings on to customers. As a result, the number of international tourists worldwide jumped from 435 million in 1990 to over 1.4 billion in 2019, according to the World Tourism Organization.
-
-But this democratization of travel has not come without consequences. Popular destinations such as Barcelona, Venice, and Bali have struggled with overtourism — the phenomenon where excessive visitor numbers put pressure on infrastructure, raise living costs for local residents, and damage natural environments. In Venice, the resident population has declined from 175,000 in the 1950s to fewer than 50,000 today, partly because rising rents driven by tourism have made the city unaffordable for locals.
-
-Governments and tourism boards have responded in different ways. Some cities have introduced tourist taxes, charging visitors a nightly fee that funds local services. Others have set visitor limits at sensitive natural or cultural sites. Amsterdam has gone further, actively campaigning to discourage low-budget, short-stay tourists and instead attract visitors who stay longer and contribute more to the local economy.
-
-The debate around budget travel ultimately reflects a deeper question: who benefits from mass tourism, and at what cost? As the industry continues to grow, striking a balance between accessibility and sustainability will be the defining challenge of the coming decades.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What business model did budget airlines introduce, according to the text?',
-          options: [
-            'A no-frills model that removed extras and reduced ticket costs.',
-            'A luxury model offering premium services at low prices.',
-            'A subscription model where passengers pay a monthly travel fee.',
-            'A cooperative model where passengers share the cost of flights.',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q3',
-          part: 6,
-          stimulus: `Budget Travel: Changing the World of Tourism
-
-Twenty years ago, traveling internationally was a privilege reserved for those with significant financial resources. Transatlantic flights cost hundreds of dollars, and the idea of spending a weekend in a foreign capital seemed unrealistic for most ordinary people. Today, that picture has changed dramatically.
-
-The rise of budget airlines has been one of the most significant forces reshaping global tourism. Carriers such as Ryanair in Europe and IndiGo in Asia introduced a no-frills model that stripped away extras — meals, assigned seating, and generous baggage allowances — and passed the savings on to customers. As a result, the number of international tourists worldwide jumped from 435 million in 1990 to over 1.4 billion in 2019, according to the World Tourism Organization.
-
-But this democratization of travel has not come without consequences. Popular destinations such as Barcelona, Venice, and Bali have struggled with overtourism — the phenomenon where excessive visitor numbers put pressure on infrastructure, raise living costs for local residents, and damage natural environments. In Venice, the resident population has declined from 175,000 in the 1950s to fewer than 50,000 today, partly because rising rents driven by tourism have made the city unaffordable for locals.
-
-Governments and tourism boards have responded in different ways. Some cities have introduced tourist taxes, charging visitors a nightly fee that funds local services. Others have set visitor limits at sensitive natural or cultural sites. Amsterdam has gone further, actively campaigning to discourage low-budget, short-stay tourists and instead attract visitors who stay longer and contribute more to the local economy.
-
-The debate around budget travel ultimately reflects a deeper question: who benefits from mass tourism, and at what cost? As the industry continues to grow, striking a balance between accessibility and sustainability will be the defining challenge of the coming decades.`,
-          stimulusLabel: 'Read the article.',
-          text: 'Why has Venice\'s resident population declined significantly?',
-          options: [
-            'Because of a major earthquake that destroyed much of the city.',
-            'Because many residents left to find work in other countries.',
-            'Because rising rents driven by tourism made the city too expensive for locals.',
-            'Because the government relocated residents to build more hotels.',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q4',
-          part: 6,
-          stimulus: `Budget Travel: Changing the World of Tourism
-
-Twenty years ago, traveling internationally was a privilege reserved for those with significant financial resources. Transatlantic flights cost hundreds of dollars, and the idea of spending a weekend in a foreign capital seemed unrealistic for most ordinary people. Today, that picture has changed dramatically.
-
-The rise of budget airlines has been one of the most significant forces reshaping global tourism. Carriers such as Ryanair in Europe and IndiGo in Asia introduced a no-frills model that stripped away extras — meals, assigned seating, and generous baggage allowances — and passed the savings on to customers. As a result, the number of international tourists worldwide jumped from 435 million in 1990 to over 1.4 billion in 2019, according to the World Tourism Organization.
-
-But this democratization of travel has not come without consequences. Popular destinations such as Barcelona, Venice, and Bali have struggled with overtourism — the phenomenon where excessive visitor numbers put pressure on infrastructure, raise living costs for local residents, and damage natural environments. In Venice, the resident population has declined from 175,000 in the 1950s to fewer than 50,000 today, partly because rising rents driven by tourism have made the city unaffordable for locals.
-
-Governments and tourism boards have responded in different ways. Some cities have introduced tourist taxes, charging visitors a nightly fee that funds local services. Others have set visitor limits at sensitive natural or cultural sites. Amsterdam has gone further, actively campaigning to discourage low-budget, short-stay tourists and instead attract visitors who stay longer and contribute more to the local economy.
-
-The debate around budget travel ultimately reflects a deeper question: who benefits from mass tourism, and at what cost? As the industry continues to grow, striking a balance between accessibility and sustainability will be the defining challenge of the coming decades.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What strategy has Amsterdam adopted to manage tourism?',
-          options: [
-            'Building more budget hotels to accommodate more visitors.',
-            'Closing the city to international tourists during peak season.',
-            'Introducing a ban on all budget airlines operating to the city.',
-            'Discouraging short-stay tourists and attracting those who spend more time and money.',
-          ],
-          answer: 3,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q5',
-          part: 6,
-          stimulus: `Budget Travel: Changing the World of Tourism
-
-Twenty years ago, traveling internationally was a privilege reserved for those with significant financial resources. Transatlantic flights cost hundreds of dollars, and the idea of spending a weekend in a foreign capital seemed unrealistic for most ordinary people. Today, that picture has changed dramatically.
-
-The rise of budget airlines has been one of the most significant forces reshaping global tourism. Carriers such as Ryanair in Europe and IndiGo in Asia introduced a no-frills model that stripped away extras — meals, assigned seating, and generous baggage allowances — and passed the savings on to customers. As a result, the number of international tourists worldwide jumped from 435 million in 1990 to over 1.4 billion in 2019, according to the World Tourism Organization.
-
-But this democratization of travel has not come without consequences. Popular destinations such as Barcelona, Venice, and Bali have struggled with overtourism — the phenomenon where excessive visitor numbers put pressure on infrastructure, raise living costs for local residents, and damage natural environments. In Venice, the resident population has declined from 175,000 in the 1950s to fewer than 50,000 today, partly because rising rents driven by tourism have made the city unaffordable for locals.
-
-Governments and tourism boards have responded in different ways. Some cities have introduced tourist taxes, charging visitors a nightly fee that funds local services. Others have set visitor limits at sensitive natural or cultural sites. Amsterdam has gone further, actively campaigning to discourage low-budget, short-stay tourists and instead attract visitors who stay longer and contribute more to the local economy.
-
-The debate around budget travel ultimately reflects a deeper question: who benefits from mass tourism, and at what cost? As the industry continues to grow, striking a balance between accessibility and sustainability will be the defining challenge of the coming decades.`,
-          stimulusLabel: 'Read the article.',
-          text: 'The word "democratization" as used in the text suggests that affordable travel:',
-          options: [
-            'Was created by democratic governments.',
-            'Reduced the quality of the tourism experience.',
-            'Made travel possible for a wider range of people.',
-            'Eliminated all differences between social classes.',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'p6q6',
-          part: 6,
-          stimulus: `Budget Travel: Changing the World of Tourism
-
-Twenty years ago, traveling internationally was a privilege reserved for those with significant financial resources. Transatlantic flights cost hundreds of dollars, and the idea of spending a weekend in a foreign capital seemed unrealistic for most ordinary people. Today, that picture has changed dramatically.
-
-The rise of budget airlines has been one of the most significant forces reshaping global tourism. Carriers such as Ryanair in Europe and IndiGo in Asia introduced a no-frills model that stripped away extras — meals, assigned seating, and generous baggage allowances — and passed the savings on to customers. As a result, the number of international tourists worldwide jumped from 435 million in 1990 to over 1.4 billion in 2019, according to the World Tourism Organization.
-
-But this democratization of travel has not come without consequences. Popular destinations such as Barcelona, Venice, and Bali have struggled with overtourism — the phenomenon where excessive visitor numbers put pressure on infrastructure, raise living costs for local residents, and damage natural environments. In Venice, the resident population has declined from 175,000 in the 1950s to fewer than 50,000 today, partly because rising rents driven by tourism have made the city unaffordable for locals.
-
-Governments and tourism boards have responded in different ways. Some cities have introduced tourist taxes, charging visitors a nightly fee that funds local services. Others have set visitor limits at sensitive natural or cultural sites. Amsterdam has gone further, actively campaigning to discourage low-budget, short-stay tourists and instead attract visitors who stay longer and contribute more to the local economy.
-
-The debate around budget travel ultimately reflects a deeper question: who benefits from mass tourism, and at what cost? As the industry continues to grow, striking a balance between accessibility and sustainability will be the defining challenge of the coming decades.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What does the text say tourist taxes are used for?',
-          options: [
-            'To fund budget airline routes.',
-            'To finance local services.',
-            'To compensate residents who move away.',
-            'To build new airports.',
+            'Ships are still more comfortable than aeroplanes for long journeys.',
+            'Air travel has dramatically reduced the time needed for long journeys.',
+            'The Atlantic Ocean is too dangerous for ships today.',
+            'Few people travelled internationally before the invention of the aeroplane.',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
-          id: 'p6q7',
+          id: 'p6q2',
           part: 6,
-          stimulus: `Budget Travel: Changing the World of Tourism
-
-Twenty years ago, traveling internationally was a privilege reserved for those with significant financial resources. Transatlantic flights cost hundreds of dollars, and the idea of spending a weekend in a foreign capital seemed unrealistic for most ordinary people. Today, that picture has changed dramatically.
-
-The rise of budget airlines has been one of the most significant forces reshaping global tourism. Carriers such as Ryanair in Europe and IndiGo in Asia introduced a no-frills model that stripped away extras — meals, assigned seating, and generous baggage allowances — and passed the savings on to customers. As a result, the number of international tourists worldwide jumped from 435 million in 1990 to over 1.4 billion in 2019, according to the World Tourism Organization.
-
-But this democratization of travel has not come without consequences. Popular destinations such as Barcelona, Venice, and Bali have struggled with overtourism — the phenomenon where excessive visitor numbers put pressure on infrastructure, raise living costs for local residents, and damage natural environments. In Venice, the resident population has declined from 175,000 in the 1950s to fewer than 50,000 today, partly because rising rents driven by tourism have made the city unaffordable for locals.
-
-Governments and tourism boards have responded in different ways. Some cities have introduced tourist taxes, charging visitors a nightly fee that funds local services. Others have set visitor limits at sensitive natural or cultural sites. Amsterdam has gone further, actively campaigning to discourage low-budget, short-stay tourists and instead attract visitors who stay longer and contribute more to the local economy.
-
-The debate around budget travel ultimately reflects a deeper question: who benefits from mass tourism, and at what cost? As the industry continues to grow, striking a balance between accessibility and sustainability will be the defining challenge of the coming decades.`,
-          stimulusLabel: 'Read the article.',
-          text: 'What does the author identify as the defining challenge for the tourism industry in the coming decades?',
+          text: 'What made air travel affordable for ordinary people for the first time?',
           options: [
-            'Balancing accessibility and sustainability in mass tourism.',
-            'Training more travel agents and tour guides.',
-            'Building enough airports to handle growing passenger numbers.',
-            'Convincing governments to remove tourist taxes.',
+            'The invention of the first aeroplane in the early 1900s',
+            'Government programmes to subsidise airline tickets',
+            'The introduction of wide-body aircraft in the 1960s and 1970s',
+            'Increased competition between airlines after the Second World War',
           ],
-          answer: 0,
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p6q3',
+          part: 6,
+          text: 'The text mentions "fresh food, electronic components, and medical supplies" as examples of:',
+          options: [
+            'products that are produced only in one country',
+            'goods that benefit from fast air transport because they cannot survive long journeys',
+            'items that are too heavy to transport by air',
+            'products that are banned on commercial flights',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'p6q4',
+          part: 6,
+          text: 'What environmental problem caused by air travel is mentioned in the text?',
+          options: [
+            'Noise pollution around airports',
+            'Water contamination from aircraft fuel',
+            'Production of large amounts of greenhouse gases',
+            'Destruction of forests to build new airports',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p6q5',
+          part: 6,
+          text: 'What can be inferred from the final paragraph?',
+          options: [
+            'The number of people flying will decrease in Asia and Latin America.',
+            'The aviation industry does not care about its environmental impact.',
+            'The growth of air travel is slowing down globally.',
+            'Balancing the growth of air travel with environmental concerns is a major future challenge.',
+          ],
+          answer: 3,
         },
       ],
     },
+
+    // ── PARTE 7 ── Texto de opinión/argumento (preguntas 36–45) ──────────────
     {
       part: 7,
-      title: 'Parte 7 — Texto de opinion',
-      instructions: "Read the opinion text and answer the questions about the author's argument.",
+      title: 'Parte 7 — Texto de opinión',
+      sectionStyle: 'reading',
+      passageTitle: 'Is Tourism Always Good for a Country?',
+      instructions:
+        'Read the text and answer questions 36 to 45. Choose the best option (A, B, C, or D).',
+      passage:
+        "IS TOURISM ALWAYS GOOD FOR A COUNTRY?\n\nEvery year, hundreds of millions of people travel abroad for pleasure. Tourism is often described as one of the world's most important industries, generating trillions of dollars and supporting millions of jobs. But is tourism always beneficial for the countries that receive visitors? The answer, as with most complex questions, is not simple.\n\nThe economic arguments in favour of tourism are powerful. When tourists arrive in a country, they spend money on hotels, restaurants, tours, and souvenirs. This creates employment for local people and generates tax revenue for governments. In some countries — particularly small island nations and developing economies — tourism can represent the largest source of national income. Without it, many communities would struggle to survive financially.\n\nTourism also has cultural benefits. When visitors travel to a new country, they often become interested in its history, traditions, and local way of life. This interest can help preserve ancient sites, local crafts, and traditional festivals that might otherwise disappear. Moreover, interaction between people of different nationalities can promote mutual understanding and reduce prejudice.\n\nHowever, critics argue that mass tourism brings serious disadvantages. Popular destinations often suffer from overcrowding, which damages the natural environment and reduces the quality of life for local residents. The beautiful beaches of Cartagena, the historic streets of cities such as Florence, and the fragile ecosystems of the Galápagos Islands have all been affected by too many visitors.\n\nFurthermore, the economic benefits of tourism are not always shared equally. In many destinations, large international hotel chains take most of the profit, while local businesses and workers receive only a small share. This form of economic inequality is sometimes called 'tourism leakage.'\n\nFinally, tourism can threaten local culture rather than protect it. When a destination becomes too popular, authentic traditions are sometimes replaced by performances designed to entertain tourists. Local people may feel pressure to change their lifestyle or abandon their customs to meet visitors' expectations.\n\nThe challenge for governments and communities is to find a balance — to welcome visitors and benefit from their spending without sacrificing the environment, the culture, or the wellbeing of local people. Sustainable tourism, which aims to minimise negative impacts and maximise benefits, may offer the best path forward.",
       questions: [
         {
           type: 'mcq',
           id: 'p7q1',
           part: 7,
-          stimulus: `Do Tourist Resorts Harm Local Communities?
-
-Every year, millions of tourists flock to beach resorts, mountain retreats, and island destinations in search of relaxation. The resorts that cater to them promise comfort, luxury, and a seamless experience — but at what cost to the communities that host them?
-
-I argue that large, all-inclusive tourist resorts frequently do more harm than good to local populations. When travelers book an all-inclusive package, they pay one price upfront and spend almost everything within the resort — food, drinks, entertainment, and excursions. The money stays inside the resort gates and rarely reaches local restaurants, market vendors, taxi drivers, or artisans. Studies in the Caribbean have shown that for every dollar spent at an all-inclusive resort, less than twenty cents enters the local economy.
-
-Beyond economics, there is the issue of land and resources. Large resorts often occupy prime coastal land that was once accessible to local fishermen and families. When a private resort claims a beach, local residents lose access to a resource they have used for generations. Water and electricity consumption at luxury resorts is also significantly higher than in surrounding communities, straining limited infrastructure and driving up costs for everyone.
-
-Supporters of resorts argue that they create jobs. This is true, but most positions are low-paid service roles, while management and ownership remain in the hands of foreign corporations. The profits flow abroad, and local workers have little opportunity to advance.
-
-What communities really need is a different kind of tourism — one that distributes its benefits more widely. Homestays, locally owned guesthouses, and community-led tours keep money circulating within the economy and allow residents to shape how their territory is presented to the world. Until the tourism industry embraces this model more seriously, local communities will continue to bear the costs while others collect the rewards.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: "What is the author's main claim in this text?",
+          text: 'What is the main purpose of this text?',
           options: [
-            'Large all-inclusive resorts often harm local communities more than they help them.',
-            'Tourism should be completely banned in developing countries.',
-            'Tourist resorts create so many jobs that their benefits outweigh all negatives.',
-            'Tourists should pay higher prices to stay in luxury resorts.',
+            'To encourage more people to travel internationally',
+            'To explain the history of tourism as an industry',
+            'To present different views on whether tourism benefits countries',
+            'To argue that all tourism should be stopped immediately',
           ],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'p7q2',
           part: 7,
-          stimulus: `Do Tourist Resorts Harm Local Communities?
-
-Every year, millions of tourists flock to beach resorts, mountain retreats, and island destinations in search of relaxation. The resorts that cater to them promise comfort, luxury, and a seamless experience — but at what cost to the communities that host them?
-
-I argue that large, all-inclusive tourist resorts frequently do more harm than good to local populations. When travelers book an all-inclusive package, they pay one price upfront and spend almost everything within the resort — food, drinks, entertainment, and excursions. The money stays inside the resort gates and rarely reaches local restaurants, market vendors, taxi drivers, or artisans. Studies in the Caribbean have shown that for every dollar spent at an all-inclusive resort, less than twenty cents enters the local economy.
-
-Beyond economics, there is the issue of land and resources. Large resorts often occupy prime coastal land that was once accessible to local fishermen and families. When a private resort claims a beach, local residents lose access to a resource they have used for generations. Water and electricity consumption at luxury resorts is also significantly higher than in surrounding communities, straining limited infrastructure and driving up costs for everyone.
-
-Supporters of resorts argue that they create jobs. This is true, but most positions are low-paid service roles, while management and ownership remain in the hands of foreign corporations. The profits flow abroad, and local workers have little opportunity to advance.
-
-What communities really need is a different kind of tourism — one that distributes its benefits more widely. Homestays, locally owned guesthouses, and community-led tours keep money circulating within the economy and allow residents to shape how their territory is presented to the world. Until the tourism industry embraces this model more seriously, local communities will continue to bear the costs while others collect the rewards.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'According to the author, what happens to most of the money spent at all-inclusive resorts?',
+          text: 'According to paragraph 2, how does tourism help governments?',
           options: [
-            'It is donated to local charities.',
-            'It stays within the resort and rarely reaches the local economy.',
-            'It is shared equally between the resort and local businesses.',
-            'It is used to improve local roads and infrastructure.',
+            'It allows governments to reduce spending on education.',
+            'It generates tax revenue that governments can use.',
+            'It forces governments to build better roads and airports.',
+            'It gives governments control over local businesses.',
           ],
           answer: 1,
         },
@@ -835,24 +517,12 @@ What communities really need is a different kind of tourism — one that distrib
           type: 'mcq',
           id: 'p7q3',
           part: 7,
-          stimulus: `Do Tourist Resorts Harm Local Communities?
-
-Every year, millions of tourists flock to beach resorts, mountain retreats, and island destinations in search of relaxation. The resorts that cater to them promise comfort, luxury, and a seamless experience — but at what cost to the communities that host them?
-
-I argue that large, all-inclusive tourist resorts frequently do more harm than good to local populations. When travelers book an all-inclusive package, they pay one price upfront and spend almost everything within the resort — food, drinks, entertainment, and excursions. The money stays inside the resort gates and rarely reaches local restaurants, market vendors, taxi drivers, or artisans. Studies in the Caribbean have shown that for every dollar spent at an all-inclusive resort, less than twenty cents enters the local economy.
-
-Beyond economics, there is the issue of land and resources. Large resorts often occupy prime coastal land that was once accessible to local fishermen and families. When a private resort claims a beach, local residents lose access to a resource they have used for generations. Water and electricity consumption at luxury resorts is also significantly higher than in surrounding communities, straining limited infrastructure and driving up costs for everyone.
-
-Supporters of resorts argue that they create jobs. This is true, but most positions are low-paid service roles, while management and ownership remain in the hands of foreign corporations. The profits flow abroad, and local workers have little opportunity to advance.
-
-What communities really need is a different kind of tourism — one that distributes its benefits more widely. Homestays, locally owned guesthouses, and community-led tours keep money circulating within the economy and allow residents to shape how their territory is presented to the world. Until the tourism industry embraces this model more seriously, local communities will continue to bear the costs while others collect the rewards.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'How does the author address the argument that resorts create jobs?',
+          text: 'The word "preserve" in paragraph 3 most likely means:',
           options: [
-            'By saying it is completely false.',
-            'By ignoring this point and focusing only on land use.',
-            'By admitting it is true but arguing that the jobs are mostly low-paid with limited advancement.',
-            'By saying that local workers prefer to work in other industries.',
+            'to destroy or remove',
+            'to study and document carefully',
+            'to keep something from being lost or damaged',
+            'to advertise and promote widely',
           ],
           answer: 2,
         },
@@ -860,47 +530,25 @@ What communities really need is a different kind of tourism — one that distrib
           type: 'mcq',
           id: 'p7q4',
           part: 7,
-          stimulus: `Do Tourist Resorts Harm Local Communities?
-
-Every year, millions of tourists flock to beach resorts, mountain retreats, and island destinations in search of relaxation. The resorts that cater to them promise comfort, luxury, and a seamless experience — but at what cost to the communities that host them?
-
-I argue that large, all-inclusive tourist resorts frequently do more harm than good to local populations. When travelers book an all-inclusive package, they pay one price upfront and spend almost everything within the resort — food, drinks, entertainment, and excursions. The money stays inside the resort gates and rarely reaches local restaurants, market vendors, taxi drivers, or artisans. Studies in the Caribbean have shown that for every dollar spent at an all-inclusive resort, less than twenty cents enters the local economy.
-
-Beyond economics, there is the issue of land and resources. Large resorts often occupy prime coastal land that was once accessible to local fishermen and families. When a private resort claims a beach, local residents lose access to a resource they have used for generations. Water and electricity consumption at luxury resorts is also significantly higher than in surrounding communities, straining limited infrastructure and driving up costs for everyone.
-
-Supporters of resorts argue that they create jobs. This is true, but most positions are low-paid service roles, while management and ownership remain in the hands of foreign corporations. The profits flow abroad, and local workers have little opportunity to advance.
-
-What communities really need is a different kind of tourism — one that distributes its benefits more widely. Homestays, locally owned guesthouses, and community-led tours keep money circulating within the economy and allow residents to shape how their territory is presented to the world. Until the tourism industry embraces this model more seriously, local communities will continue to bear the costs while others collect the rewards.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What type of tourism does the author recommend as an alternative?',
+          text: 'Which of the following is given as an example of a place damaged by overcrowding?',
           options: [
-            'Luxury cruises that visit multiple destinations.',
-            'Government-controlled tourism managed by national parks.',
-            'Large international hotel chains with more social programs.',
-            'Locally owned guesthouses, homestays, and community-led tours.',
+            'The streets of Bogotá',
+            'The beaches of Cartagena',
+            'The rainforests of the Amazon',
+            'The ruins of Machu Picchu',
           ],
-          answer: 3,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q5',
           part: 7,
-          stimulus: `Do Tourist Resorts Harm Local Communities?
-
-Every year, millions of tourists flock to beach resorts, mountain retreats, and island destinations in search of relaxation. The resorts that cater to them promise comfort, luxury, and a seamless experience — but at what cost to the communities that host them?
-
-I argue that large, all-inclusive tourist resorts frequently do more harm than good to local populations. When travelers book an all-inclusive package, they pay one price upfront and spend almost everything within the resort — food, drinks, entertainment, and excursions. The money stays inside the resort gates and rarely reaches local restaurants, market vendors, taxi drivers, or artisans. Studies in the Caribbean have shown that for every dollar spent at an all-inclusive resort, less than twenty cents enters the local economy.
-
-Beyond economics, there is the issue of land and resources. Large resorts often occupy prime coastal land that was once accessible to local fishermen and families. When a private resort claims a beach, local residents lose access to a resource they have used for generations. Water and electricity consumption at luxury resorts is also significantly higher than in surrounding communities, straining limited infrastructure and driving up costs for everyone.
-
-What communities really need is a different kind of tourism — one that distributes its benefits more widely. Homestays, locally owned guesthouses, and community-led tours keep money circulating within the economy and allow residents to shape how their territory is presented to the world. Until the tourism industry embraces this model more seriously, local communities will continue to bear the costs while others collect the rewards.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'The phrase "bear the costs while others collect the rewards" suggests that:',
+          text: "What does 'tourism leakage' refer to in paragraph 5?",
           options: [
-            'Local communities receive the largest share of tourism income.',
-            'Tourism is equally beneficial for both resorts and local populations.',
-            'Local communities suffer the negative effects while corporations take the profits.',
-            'Resort workers are well paid for the difficulties they face.',
+            'The problem of tourists leaving rubbish in natural areas',
+            'The loss of tourists to competing destinations',
+            'A situation where tourism money does not stay in the local economy',
+            'Water and energy wasted by large hotels',
           ],
           answer: 2,
         },
@@ -908,51 +556,66 @@ What communities really need is a different kind of tourism — one that distrib
           type: 'mcq',
           id: 'p7q6',
           part: 7,
-          stimulus: `Do Tourist Resorts Harm Local Communities?
-
-Every year, millions of tourists flock to beach resorts, mountain retreats, and island destinations in search of relaxation. The resorts that cater to them promise comfort, luxury, and a seamless experience — but at what cost to the communities that host them?
-
-I argue that large, all-inclusive tourist resorts frequently do more harm than good to local populations. When travelers book an all-inclusive package, they pay one price upfront and spend almost everything within the resort — food, drinks, entertainment, and excursions. The money stays inside the resort gates and rarely reaches local restaurants, market vendors, taxi drivers, or artisans. Studies in the Caribbean have shown that for every dollar spent at an all-inclusive resort, less than twenty cents enters the local economy.
-
-Beyond economics, there is the issue of land and resources. Large resorts often occupy prime coastal land that was once accessible to local fishermen and families. When a private resort claims a beach, local residents lose access to a resource they have used for generations. Water and electricity consumption at luxury resorts is also significantly higher than in surrounding communities, straining limited infrastructure and driving up costs for everyone.
-
-Supporters of resorts argue that they create jobs. This is true, but most positions are low-paid service roles, while management and ownership remain in the hands of foreign corporations. The profits flow abroad, and local workers have little opportunity to advance.
-
-What communities really need is a different kind of tourism — one that distributes its benefits more widely. Homestays, locally owned guesthouses, and community-led tours keep money circulating within the economy and allow residents to shape how their territory is presented to the world. Until the tourism industry embraces this model more seriously, local communities will continue to bear the costs while others collect the rewards.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'What does the author mean when saying resorts occupy "prime coastal land"?',
+          text: 'According to paragraph 6, how can tourism threaten local culture?',
           options: [
-            'The land is in a highly desirable location, previously used by local residents.',
-            'The land is located far from the ocean.',
-            'The land is very cheap and easy to develop.',
-            'The land was purchased legally from the local government.',
+            'Tourists bring foreign diseases that affect local communities.',
+            'Local traditions may be replaced by performances aimed at entertaining visitors.',
+            'Tourism causes young people to leave their home communities.',
+            'International tourists do not respect local laws and customs.',
           ],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'p7q7',
           part: 7,
-          stimulus: `Do Tourist Resorts Harm Local Communities?
-
-Every year, millions of tourists flock to beach resorts, mountain retreats, and island destinations in search of relaxation. The resorts that cater to them promise comfort, luxury, and a seamless experience — but at what cost to the communities that host them?
-
-I argue that large, all-inclusive tourist resorts frequently do more harm than good to local populations. When travelers book an all-inclusive package, they pay one price upfront and spend almost everything within the resort — food, drinks, entertainment, and excursions. The money stays inside the resort gates and rarely reaches local restaurants, market vendors, taxi drivers, or artisans. Studies in the Caribbean have shown that for every dollar spent at an all-inclusive resort, less than twenty cents enters the local economy.
-
-Beyond economics, there is the issue of land and resources. Large resorts often occupy prime coastal land that was once accessible to local fishermen and families. When a private resort claims a beach, local residents lose access to a resource they have used for generations. Water and electricity consumption at luxury resorts is also significantly higher than in surrounding communities, straining limited infrastructure and driving up costs for everyone.
-
-Supporters of resorts argue that they create jobs. This is true, but most positions are low-paid service roles, while management and ownership remain in the hands of foreign corporations. The profits flow abroad, and local workers have little opportunity to advance.
-
-What communities really need is a different kind of tourism — one that distributes its benefits more widely. Homestays, locally owned guesthouses, and community-led tours keep money circulating within the economy and allow residents to shape how their territory is presented to the world. Until the tourism industry embraces this model more seriously, local communities will continue to bear the costs while others collect the rewards.`,
-          stimulusLabel: 'Read the opinion article.',
-          text: 'Which word best describes the author\'s tone throughout this text?',
+          text: 'The phrase "mutual understanding" in paragraph 3 most likely means:',
           options: [
-            'Neutral and scientific.',
-            'Uncertain and confused.',
-            'Optimistic and celebratory.',
-            'Critical and persuasive.',
+            'a financial agreement between two countries',
+            'a feeling of respect and knowledge shared between different groups of people',
+            'a law that protects the rights of tourists',
+            'an organisation that promotes international travel',
           ],
-          answer: 3,
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q8',
+          part: 7,
+          text: 'What does the author suggest is the key challenge for governments?',
+          options: [
+            'Increasing the number of tourists visiting each year',
+            'Banning international hotel chains from operating in their country',
+            'Finding a balance between the benefits and the negative effects of tourism',
+            'Building more airports and hotels to welcome visitors',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q9',
+          part: 7,
+          text: "What is the author's overall attitude towards tourism?",
+          options: [
+            'Entirely negative — tourism causes more harm than good',
+            'Entirely positive — tourism should be promoted everywhere',
+            'Balanced — tourism has real benefits but also serious problems',
+            'Neutral — the author presents only statistics without any view',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'p7q10',
+          part: 7,
+          text: 'Which statement BEST summarises the final paragraph?',
+          options: [
+            'Governments should close their borders to tourists to protect their culture.',
+            'Sustainable tourism is one approach that tries to balance growth with responsibility.',
+            'The economic benefits of tourism always outweigh the cultural and environmental costs.',
+            'Local communities have no power to control the effects of tourism.',
+          ],
+          answer: 1,
         },
       ],
     },
