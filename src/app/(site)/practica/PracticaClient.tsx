@@ -18,13 +18,15 @@ interface LangEntry {
   tagline: string;
   color: string;
   available: boolean;
+  href?: string;
+  tools?: string;
 }
 
 const LANGUAGES: LangEntry[] = [
   { slug: 'english',    flag: '🇬🇧', name: 'Inglés',    tagline: 'Vocabulario, pronunciación y gramática desde cero.',         color: '#0066cc', available: false },
   { slug: 'german',     flag: '🇩🇪', name: 'Alemán',    tagline: 'Casos gramaticales, declinaciones y fonética alemana.',       color: '#dd0000', available: false },
   { slug: 'french',     flag: '🇫🇷', name: 'Francés',   tagline: 'Liaison, géneros y conjugaciones del francés moderno.',       color: '#003189', available: false },
-  { slug: 'italian',    flag: '🇮🇹', name: 'Italiano',  tagline: 'Pronunciación, verbos y ritmo del italiano nativo.',          color: '#009246', available: false },
+  { slug: 'italian',    flag: '🇮🇹', name: 'Italiano',  tagline: 'Artículos, tiempos verbales y gramática interactiva.',        color: '#009246', available: true, href: '/practica/italiano/grammatica', tools: '1 herramienta' },
   { slug: 'portuguese', flag: '🇧🇷', name: 'Portugués', tagline: 'Diferencias BR vs PT, nasales y verbos irregulares.',        color: '#009c3b', available: false },
   { slug: 'russian',    flag: '🇷🇺', name: 'Ruso',      tagline: 'Alfabeto cirílico, casos y pronunciación desde cero.',        color: '#cc0000', available: false },
   { slug: 'korean',     flag: '🇰🇷', name: 'Coreano',   tagline: 'Hangul, batchim, partículas y pronunciación interactiva.',   color: '#534AB7', available: true  },
@@ -263,43 +265,69 @@ export default function PracticaClient() {
             Herramientas de idiomas
           </p>
           <div className="wl-exams-catalog">
-            {LANGUAGES.map(lang => (
-              <button
-                key={lang.slug}
-                onClick={() => lang.available && setSelected(lang.slug)}
-                className={`wl-catalog-card${!lang.available ? ' wl-catalog-card--soon' : ''}`}
-                style={{
-                  '--exam-color': lang.color,
-                  textAlign: 'left',
-                  cursor: lang.available ? 'pointer' : 'default',
-                  appearance: 'none',
-                  WebkitAppearance: 'none',
-                  margin: 0,
-                  padding: 0,
-                  font: 'inherit',
-                  color: 'inherit',
-                } as CSSProperties}
-              >
-                <div className="wl-catalog-card__bar" />
-                <div className="wl-catalog-card__body">
-                  <div className="wl-catalog-card__top">
-                    <span className="wl-catalog-card__flag">{lang.flag}</span>
-                    {!lang.available
-                      ? <span className="wl-catalog-card__badge">Próximamente</span>
-                      : <span className="wl-catalog-card__badge" style={{ background:'rgba(83,74,183,0.08)', color:'#534AB7', borderColor:'rgba(83,74,183,0.25)' }}>Disponible</span>
-                    }
+            {LANGUAGES.map(lang => {
+              const cardStyle = {
+                '--exam-color': lang.color,
+                textAlign: 'left' as const,
+                cursor: lang.available ? 'pointer' : 'default',
+                appearance: 'none' as const,
+                WebkitAppearance: 'none' as const,
+                margin: 0,
+                padding: 0,
+                font: 'inherit',
+                color: 'inherit',
+                textDecoration: 'none',
+                display: 'flex',
+                flexDirection: 'column' as const,
+              } as CSSProperties;
+
+              const inner = (
+                <>
+                  <div className="wl-catalog-card__bar" />
+                  <div className="wl-catalog-card__body">
+                    <div className="wl-catalog-card__top">
+                      <span className="wl-catalog-card__flag">{lang.flag}</span>
+                      {!lang.available
+                        ? <span className="wl-catalog-card__badge">Próximamente</span>
+                        : <span className="wl-catalog-card__badge" style={{ background:'rgba(83,74,183,0.08)', color:'#534AB7', borderColor:'rgba(83,74,183,0.25)' }}>Disponible</span>
+                      }
+                    </div>
+                    <h2 className="wl-catalog-card__name">{lang.name}</h2>
+                    <p className="wl-catalog-card__tagline">{lang.tagline}</p>
                   </div>
-                  <h2 className="wl-catalog-card__name">{lang.name}</h2>
-                  <p className="wl-catalog-card__tagline">{lang.tagline}</p>
-                </div>
-                <div className="wl-catalog-card__footer">
-                  <span>{lang.available ? '3 herramientas' : 'En desarrollo'}</span>
-                  <span className="wl-catalog-card__cta">
-                    {lang.available ? 'Practicar →' : 'Próximamente'}
-                  </span>
-                </div>
-              </button>
-            ))}
+                  <div className="wl-catalog-card__footer">
+                    <span>{lang.available ? (lang.tools ?? '3 herramientas') : 'En desarrollo'}</span>
+                    <span className="wl-catalog-card__cta">
+                      {lang.available ? 'Practicar →' : 'Próximamente'}
+                    </span>
+                  </div>
+                </>
+              );
+
+              if (lang.available && lang.href) {
+                return (
+                  <Link
+                    key={lang.slug}
+                    href={lang.href}
+                    className={`wl-catalog-card`}
+                    style={cardStyle}
+                  >
+                    {inner}
+                  </Link>
+                );
+              }
+
+              return (
+                <button
+                  key={lang.slug}
+                  onClick={() => lang.available && setSelected(lang.slug)}
+                  className={`wl-catalog-card${!lang.available ? ' wl-catalog-card--soon' : ''}`}
+                  style={cardStyle}
+                >
+                  {inner}
+                </button>
+              );
+            })}
           </div>
         </div>
       </section>
