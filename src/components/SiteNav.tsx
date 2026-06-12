@@ -14,6 +14,7 @@ const NAV_LINKS = [
   { label: 'Coreano',   href: '/clases-de-coreano' },
   { label: 'Idiomas',   href: '/clases-de-idiomas' },
   { label: 'Exámenes',  href: '/examenes' },
+  { label: 'Práctica',  href: '/practica' },
   { label: 'Blog',      href: '/blog' },
   { label: 'Precios',   href: '/precios' },
 ];
@@ -126,6 +127,8 @@ export default function SiteNav() {
               ? pathname.startsWith('/clases-de-coreano')
               : href === '/clases-de-idiomas'
               ? pathname.startsWith('/clases-de-') && !pathname.startsWith('/clases-de-ingles') && !pathname.startsWith('/clases-de-coreano')
+              : href === '/practica'
+              ? pathname.startsWith('/practica')
               : href === '/blog'
               ? pathname.startsWith('/blog')
               : href === '/precios'
