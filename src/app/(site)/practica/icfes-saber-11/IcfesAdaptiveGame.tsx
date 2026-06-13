@@ -364,10 +364,10 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
     answer:3,
     justifications:[
       '"Is" sería correcto solo si el verbo principal fuera en presente ("She tells me").',
-      'En reported speech, el verbo principal "told" está en pasado, por eso el presente "is" retrocede a "was".',
       '"Been" es participio pasado y necesita un auxiliar ("has been"), no puede ir solo aquí.',
       '"Be" es la forma base del verbo y solo aparece con modales ("she must be"), no sola.',
-    ], justCorrect:1 },
+      'En reported speech, el verbo principal "told" está en pasado, por eso el presente "is" retrocede a "was".',
+    ], justCorrect:3 },
   { id:'g15', skill:'grammar', level:4,
     text:'"___ the bad weather, the game continued until the final whistle." (Contraste)',
     options:['Despite','However','Therefore','Although'],
@@ -563,9 +563,9 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
     justifications:[
       'El texto afirma lo contrario: la energía solar NO produce gases dañinos, a diferencia de los combustibles fósiles.',
       'El texto dice que el alto costo LIMITA su uso en países en desarrollo, no que no esté disponible allí.',
-      'El texto dice "the initial cost of installing solar panels can be high" — esa es la desventaja mencionada.',
       'El texto no menciona en absoluto que la energía solar solo funcione en países cálidos.',
-    ], justCorrect:2 },
+      'El texto dice "the initial cost of installing solar panels can be high" — esa es la desventaja mencionada.',
+    ], justCorrect:3 },
   { id:'r08', skill:'reading', level:4,
     stimulus:'In many Colombian cities, public libraries are not just places to read books. They also offer free computer access, language courses, and cultural events. These services are especially important for communities with limited economic resources.',
     text:'What is the MAIN purpose of this text?',
@@ -595,10 +595,10 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
     answer:1,
     justifications:[
       'El texto no menciona viajes al exterior — solo habla de admisiones universitarias en Colombia.',
-      'El texto dice explícitamente que los resultados "are used for university admissions throughout the country".',
       'El texto evalúa competencias de ESTUDIANTES al final del bachillerato, no el rendimiento de profesores.',
       'El texto no dice que los resultados determinen quiénes deben tomar clases de inglés.',
-    ], justCorrect:1 },
+      'El texto dice explícitamente que los resultados "are used for university admissions throughout the country".',
+    ], justCorrect:3 },
   { id:'r12', skill:'reading', level:4,
     stimulus:'Water is one of the most precious natural resources on Earth. In some regions of Colombia, communities must walk for hours to reach a water source. Governments and international organizations are working together to bring clean water to these areas.',
     text:'What can we INFER from this text?',
@@ -627,11 +627,11 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
     options:['To argue that cars should be banned from all cities','To describe the causes and responses to urban air pollution','To explain how electric vehicles work','To encourage people to use public transport'],
     answer:1,
     justifications:[
-      'El texto describe causas (emisiones e industria) y respuestas (transporte público, vehículos eléctricos).',
       'El texto no argumenta que se deban prohibir los carros — solo menciona vehículos eléctricos como alternativa.',
       'El texto no explica cómo funcionan los vehículos eléctricos — solo los menciona como una solución.',
       'Aunque se menciona el transporte público, el propósito del texto es más amplio: causas Y respuestas.',
-    ], justCorrect:0 },
+      'El texto describe causas (emisiones e industria) y respuestas (transporte público, vehículos eléctricos).',
+    ], justCorrect:3 },
 ];
 
 // ─── Level Config ─────────────────────────────────────────────────────────────
