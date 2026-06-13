@@ -11,7 +11,7 @@ const COLOR = '#0369a1';
 
 const PLANNED = [
   {
-    id: 1, title: 'Tom's Daily Routine',
+    id: 1, title: "Tom's Daily Routine",
     desc: 'Escucha a Tom describir su rutina matutina (60 palabras, ritmo lento A1). Responde 5 preguntas de comprensión.',
     script: '"Hi! My name is Tom. I wake up at seven o\'clock every morning. I take a shower and eat toast with orange juice. Then I take the bus to work. I finish at five. In the evening I watch TV."',
     questions: ['¿Cómo se llama el hablante?', '¿A qué hora se despierta?', '¿Qué desayuna?', '¿Cómo va al trabajo?', '¿A qué hora termina el trabajo?'],
