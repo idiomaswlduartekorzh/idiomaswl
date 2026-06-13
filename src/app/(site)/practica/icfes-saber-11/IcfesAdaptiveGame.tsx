@@ -973,17 +973,21 @@ export default function IcfesAdaptiveGame() {
   const [wrongAnswer, setWrongAnswer] = useState<string | null>(null);
   const [selected,    setSelected]    = useState<number | null>(null);
   const [timedOut,    setTimedOut]    = useState(false);
-  const [justPhase,   setJustPhase]   = useState(false);
-  const [mainCorrect, setMainCorrect] = useState<boolean | null>(null);
   const [selectedJust,setSelectedJust]= useState<number | null>(null);
   const [bonusEarned, setBonusEarned] = useState(0);
 
-  const intervalRef    = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
-  // refs to avoid stale closures in async handlers
-  const justPhaseRef   = useRef(false);
-  const mainCorrectRef = useRef<boolean | null>(null);
-  justPhaseRef.current   = justPhase;
-  mainCorrectRef.current = mainCorrect;
+  const intervalRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
+  // ref to avoid stale closure in timedOut effect
+  const selectedRef = useRef<number | null>(null);
+  selectedRef.current = selected;
+
+  // ── Derived phase helpers ──────────────────────────────────────────────────
+  // justPanelVisible: true while the justification panel should be rendered
+  // (= answer picked, L4 question with justifications, regardless of feedback)
+  const justPanelVisible = selected !== null && currentQ?.level === 4 && !!currentQ?.justifications;
+  // answerRevealed: show MCQ colour feedback as soon as answer is chosen
+  const answerRevealed = feedback !== null || selected !== null;
+
   const cfg = LEVEL_CFG[level];
 
   // Load checkpoint on mount
@@ -1026,8 +1030,6 @@ export default function IcfesAdaptiveGame() {
     setSelected(null);
     setWrongAnswer(null);
     setIsBonus(false);
-    setJustPhase(false);
-    setMainCorrect(null);
     setSelectedJust(null);
     setBonusEarned(0);
 
@@ -1112,8 +1114,6 @@ export default function IcfesAdaptiveGame() {
         setFeedback(null);
         setSelected(null);
         setWrongAnswer(null);
-        setJustPhase(false);
-        setMainCorrect(null);
         setSelectedJust(null);
         setBonusEarned(0);
         setTimeLeft(LEVEL_CFG[level].time);
@@ -1143,8 +1143,10 @@ export default function IcfesAdaptiveGame() {
     if (!timedOut) return;
     setTimedOut(false);
     if (!currentQ) return;
-    if (justPhaseRef.current) {
-      const mc = mainCorrectRef.current ?? false;
+    const sel = selectedRef.current;
+    if (sel !== null && currentQ.level === 4 && currentQ.justifications) {
+      // timeout during justification phase — grade the main answer, no bonus
+      const mc = sel === currentQ.answer;
       processAnswer(mc, mc ? undefined : currentQ.options[currentQ.answer], 0);
     } else {
       processAnswer(false, currentQ.options[currentQ.answer]);
@@ -1162,31 +1164,30 @@ export default function IcfesAdaptiveGame() {
       });
     }, 1000);
     return () => clearInterval(intervalRef.current);
-  }, [phase, feedback, currentQ, justPhase]);
+  }, [phase, feedback, currentQ, selected]);
 
   // ── Answer handler ─────────────────────────────────────────────────────────
   const handleAnswer = (idx: number) => {
-    if (feedback !== null || justPhase || !currentQ) return;
+    if (feedback !== null || selected !== null || !currentQ) return;
     setSelected(idx);
-    const correct = idx === currentQ.answer;
     if (currentQ.level === 4 && currentQ.justifications) {
+      // Two-phase: stop timer, give 20s for justification
       clearInterval(intervalRef.current);
-      setMainCorrect(correct);
-      setJustPhase(true);
       setTimeLeft(20);
     } else {
+      const correct = idx === currentQ.answer;
       processAnswer(correct, correct ? undefined : currentQ.options[currentQ.answer]);
     }
   };
 
   // ── Justification handler (Level 4 only) ───────────────────────────────────
   const handleJustification = (idx: number) => {
-    if (feedback !== null || !currentQ) return;
+    if (feedback !== null || selected === null || !currentQ) return;
     setSelectedJust(idx);
+    const correct = selected === currentQ.answer;
     const justCorrect = idx === currentQ.justCorrect;
-    const mc = mainCorrectRef.current ?? false;
-    const bonus = (mc && justCorrect) ? 5 : 0;
-    processAnswer(mc, mc ? undefined : currentQ.options[currentQ.answer], bonus);
+    const bonus = (correct && justCorrect) ? 5 : 0;
+    processAnswer(correct, correct ? undefined : currentQ.options[currentQ.answer], bonus);
   };
 
   const progressPct = ((baseCount + (feedback !== null && !isBonus ? 1 : 0)) / QUESTIONS_PER_LEVEL) * 100;
@@ -1280,7 +1281,6 @@ export default function IcfesAdaptiveGame() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {currentQ.options.map((opt, i) => {
               let cls = 'border border-white/10 bg-white/5 text-white hover:border-white/30 hover:bg-white/10 cursor-pointer';
-              const answerRevealed = feedback !== null || justPhase;
               if (answerRevealed) {
                 if (i === currentQ.answer) cls = 'border-green-500 bg-green-900/30 text-green-300 cursor-default';
                 else if (i === selected)  cls = 'border-red-500 bg-red-900/30 text-red-300 cursor-default';
@@ -1297,7 +1297,7 @@ export default function IcfesAdaptiveGame() {
 
           {/* ── Justification panel (Level 4 two-phase) ─────────────────────── */}
           <AnimatePresence>
-            {justPhase && currentQ.justifications && (
+            {justPanelVisible && currentQ.justifications && (
               <motion.div
                 initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} exit={{ opacity:0, y:8 }}
                 transition={{ duration:0.3 }}
