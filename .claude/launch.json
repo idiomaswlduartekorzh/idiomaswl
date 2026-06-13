@@ -5,8 +5,15 @@
       "name": "idiomaswl",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 3000,
+      "port": 3010,
       "autoPort": true
+    },
+    {
+      "name": "orozco-law",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "-p", "3002"],
+      "port": 3002,
+      "cwd": "/Users/josedavidduartesilva/Developer/orozco-law"
     }
   ]
 }

@@ -22,14 +22,14 @@ interface LangEntry {
 }
 
 const LANGUAGES: LangEntry[] = [
-  { slug: 'english',    flag: '🇬🇧', name: 'Inglés',    tagline: 'Vocabulario, pronunciación y gramática desde cero.',         color: '#0066cc', available: false },
-  { slug: 'german',     flag: '🇩🇪', name: 'Alemán',    tagline: 'Casos gramaticales, declinaciones y fonética alemana.',       color: '#dd0000', available: false },
-  { slug: 'french',     flag: '🇫🇷', name: 'Francés',   tagline: 'Liaison, géneros y conjugaciones del francés moderno.',       color: '#003189', available: false },
-  { slug: 'italian',    flag: '🇮🇹', name: 'Italiano',  tagline: 'Artículos, tiempos verbales y gramática interactiva.',        color: '#009246', available: true, href: '/practica/italiano/grammatica', tools: '1 herramienta' },
-  { slug: 'portuguese', flag: '🇧🇷', name: 'Portugués', tagline: 'Diferencias BR vs PT, nasales y verbos irregulares.',        color: '#009c3b', available: false },
-  { slug: 'russian',    flag: '🇷🇺', name: 'Ruso',      tagline: 'Alfabeto cirílico, casos y pronunciación desde cero.',        color: '#cc0000', available: false },
-  { slug: 'korean',     flag: '🇰🇷', name: 'Coreano',   tagline: 'Hangul, batchim, partículas y pronunciación interactiva.',   color: '#534AB7', available: true  },
-  { slug: 'japanese',   flag: '🇯🇵', name: 'Japonés',   tagline: 'Hiragana, katakana, kanji básico y entonación.',             color: '#bc002d', available: false },
+  { slug: 'english',    flag: '🇬🇧', name: 'Inglés',    tagline: 'Lectura A1, gramática interactiva, escritura y frases de supervivencia.',  color: '#0066cc', available: true,  href: '/practica/ingles',    tools: '4 habilidades A1' },
+  { slug: 'german',     flag: '🇩🇪', name: 'Alemán',    tagline: 'Lesen, Grammatik, Schreiben y Sprechen — nivel A1.',                        color: '#dd0000', available: true,  href: '/practica/aleman',    tools: '4 habilidades A1' },
+  { slug: 'french',     flag: '🇫🇷', name: 'Francés',   tagline: 'Lecture, grammaire, écriture y expression orale — nivel A1.',              color: '#003189', available: true,  href: '/practica/frances',   tools: '4 habilidades A1' },
+  { slug: 'italian',    flag: '🇮🇹', name: 'Italiano',  tagline: 'Artículos, tiempos verbales y gramática interactiva.',                      color: '#009246', available: true,  href: '/practica/italiano/grammatica', tools: '1 herramienta' },
+  { slug: 'portuguese', flag: '🇧🇷', name: 'Portugués', tagline: 'Leitura, gramática, escrita y expressão oral — nivel A1.',                  color: '#009c3b', available: true,  href: '/practica/portugues', tools: '4 habilidades A1' },
+  { slug: 'russian',    flag: '🇷🇺', name: 'Ruso',      tagline: 'Alfabeto cirílico, casos y pronunciación desde cero.',                      color: '#cc0000', available: false },
+  { slug: 'korean',     flag: '🇰🇷', name: 'Coreano',   tagline: 'Hangul, batchim, partículas y pronunciación interactiva.',                  color: '#534AB7', available: true  },
+  { slug: 'japanese',   flag: '🇯🇵', name: 'Japonés',   tagline: 'Hiragana, katakana, kanji básico y entonación.',                            color: '#bc002d', available: false },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -226,6 +226,72 @@ export default function PracticaClient() {
               <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#0f3d8c', fontSize: '1.2rem', fontWeight: 700 }}>
                 →
               </div>
+            </Link>
+
+            {/* IELTS hub card */}
+            <Link
+              href="/practica/ielts"
+              style={{
+                display: 'flex', alignItems: 'stretch', textDecoration: 'none', color: 'inherit',
+                background: 'linear-gradient(135deg, rgba(15,61,140,0.06) 0%, rgba(37,99,235,0.03) 100%)',
+                border: '1.5px solid rgba(15,61,140,0.18)', borderRadius: 18, overflow: 'hidden',
+                marginBottom: '0.75rem', transition: 'box-shadow 0.2s, border-color 0.2s',
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(15,61,140,0.12)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(15,61,140,0.35)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(15,61,140,0.18)'; }}
+            >
+              <div style={{ width: 5, background: 'linear-gradient(180deg, #0f3d8c, #1a4fcc)', flexShrink: 0 }} />
+              <div style={{ padding: '1.1rem 1.75rem', flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.45rem' }}>
+                  <span style={{ fontSize: '1.6rem' }}>📖</span>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      <span style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--ink)' }}>IELTS Academic — Reading</span>
+                      <span style={{ fontSize: '0.6rem', fontWeight: 800, background: '#0f3d8c', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>NUEVO</span>
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: '0.1rem' }}>True / False / Not Given · Pasaje sobre la selva amazónica</div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {['📖 8 afirmaciones', '🎯 T/F/NG', '💡 Feedback inmediato', '📊 Estrategia Band 6+'].map(tag => (
+                    <span key={tag} style={{ fontSize: '0.68rem', padding: '0.15rem 0.5rem', borderRadius: 6, background: 'rgba(15,61,140,0.08)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{tag}</span>
+                  ))}
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#0f3d8c', fontSize: '1.1rem', fontWeight: 700 }}>→</div>
+            </Link>
+
+            {/* TOEFL hub card */}
+            <Link
+              href="/practica/toefl"
+              style={{
+                display: 'flex', alignItems: 'stretch', textDecoration: 'none', color: 'inherit',
+                background: 'linear-gradient(135deg, rgba(26,79,204,0.06) 0%, rgba(59,130,246,0.03) 100%)',
+                border: '1.5px solid rgba(26,79,204,0.18)', borderRadius: 18, overflow: 'hidden',
+                marginBottom: '0.75rem', transition: 'box-shadow 0.2s, border-color 0.2s',
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(26,79,204,0.12)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(26,79,204,0.35)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(26,79,204,0.18)'; }}
+            >
+              <div style={{ width: 5, background: 'linear-gradient(180deg, #1a4fcc, #3b82f6)', flexShrink: 0 }} />
+              <div style={{ padding: '1.1rem 1.75rem', flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.45rem' }}>
+                  <span style={{ fontSize: '1.6rem' }}>🇺🇸</span>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      <span style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--ink)' }}>TOEFL iBT — Reading</span>
+                      <span style={{ fontSize: '0.6rem', fontWeight: 800, background: '#1a4fcc', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>NUEVO</span>
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: '0.1rem' }}>Multiple Choice · Pasaje académico sobre bioluminescencia</div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {['📖 6 preguntas', '🎯 Opción múltiple', '💡 Explicaciones detalladas', '⏱️ Nivel B2-C1'].map(tag => (
+                    <span key={tag} style={{ fontSize: '0.68rem', padding: '0.15rem 0.5rem', borderRadius: 6, background: 'rgba(26,79,204,0.08)', color: '#1a4fcc', border: '1px solid rgba(26,79,204,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{tag}</span>
+                  ))}
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#1a4fcc', fontSize: '1.1rem', fontWeight: 700 }}>→</div>
             </Link>
 
             {/* English Comprehension card */}

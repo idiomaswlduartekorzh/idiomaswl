@@ -1,0 +1,302 @@
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+
+// ─── True / False / Not Given ─────────────────────────────────────────────────
+
+const PASSAGE = `The Amazon rainforest is located mainly in Brazil, though it also extends into several other South American countries. It covers approximately 5.5 million square kilometres, making it the world's largest tropical rainforest. Scientists estimate that the Amazon produces around 20% of the world's oxygen through photosynthesis, which is why it is often called "the lungs of the planet." The rainforest is also home to approximately 10% of all animal species on Earth.
+
+In recent decades, deforestation has significantly reduced the size of the Amazon. According to scientists, approximately 17% of the Amazon has been lost in the last 50 years due to logging, agriculture, and urban expansion. Conservation organizations around the world have called for urgent action to protect the remaining forest.`;
+
+type TFNGValue = 'TRUE' | 'FALSE' | 'NOT GIVEN';
+
+interface TFNGStatement {
+  statement: string;
+  answer: TFNGValue;
+  explanation: string;
+}
+
+const STATEMENTS: TFNGStatement[] = [
+  {
+    statement: 'The Amazon rainforest is located exclusively in Brazil.',
+    answer: 'FALSE',
+    explanation: '"Mainly in Brazil" but also extends into other South American countries — so "exclusively" is FALSE.',
+  },
+  {
+    statement: 'The Amazon covers more than 5 million square kilometres.',
+    answer: 'TRUE',
+    explanation: '"Approximately 5.5 million square kilometres" — this is more than 5 million, so TRUE.',
+  },
+  {
+    statement: 'The Amazon produces all of the world\'s oxygen.',
+    answer: 'FALSE',
+    explanation: '"Around 20% of the world\'s oxygen" — not ALL. So FALSE.',
+  },
+  {
+    statement: 'The Amazon rainforest is the largest tropical rainforest in the world.',
+    answer: 'TRUE',
+    explanation: '"The world\'s largest tropical rainforest" is stated directly in the text — TRUE.',
+  },
+  {
+    statement: 'Scientists believe the Amazon is home to more than 10% of animal species.',
+    answer: 'FALSE',
+    explanation: 'The text says "approximately 10%" not "more than 10%" — FALSE.',
+  },
+  {
+    statement: 'Deforestation in the Amazon is caused only by logging.',
+    answer: 'FALSE',
+    explanation: '"Logging, agriculture, and urban expansion" — multiple causes, not only logging. FALSE.',
+  },
+  {
+    statement: 'The Amazon is sometimes called "the lungs of the planet".',
+    answer: 'TRUE',
+    explanation: 'Directly stated in the text: "often called \'the lungs of the planet\'" — TRUE.',
+  },
+  {
+    statement: 'The Brazilian government has introduced new laws to protect the Amazon.',
+    answer: 'NOT GIVEN',
+    explanation: 'The text mentions conservation organizations calling for action, but says nothing about specific Brazilian government laws — NOT GIVEN.',
+  },
+];
+
+function TFNGExercise() {
+  const [answers, setAnswers] = useState<Record<number, TFNGValue>>({});
+  const [revealed, setRevealed] = useState<Record<number, boolean>>({});
+  const [showResult, setShowResult] = useState(false);
+
+  const done = Object.keys(answers).length;
+  const correct = STATEMENTS.filter((s, i) => answers[i] === s.answer).length;
+
+  function pick(qi: number, val: TFNGValue) {
+    if (answers[qi]) return;
+    setAnswers(p => ({ ...p, [qi]: val }));
+    setRevealed(p => ({ ...p, [qi]: true }));
+  }
+
+  function reset() { setAnswers({}); setRevealed({}); setShowResult(false); }
+
+  const OPTIONS: TFNGValue[] = ['TRUE', 'FALSE', 'NOT GIVEN'];
+  const OPTION_COLORS: Record<TFNGValue, string> = {
+    TRUE: '#059669', FALSE: '#dc2626', 'NOT GIVEN': '#d97706',
+  };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+      {/* Passage */}
+      <div className="wl-card" style={{ padding: '1.5rem', borderLeft: '4px solid #0f3d8c' }}>
+        <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Reading Passage</p>
+        <div style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--ink-2)', whiteSpace: 'pre-line' }}>
+          {PASSAGE}
+        </div>
+      </div>
+
+      {/* Instructions */}
+      <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: 'rgba(15,61,140,0.07)', border: '1px solid rgba(15,61,140,0.2)', fontSize: '0.87rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
+        <strong style={{ color: '#0f3d8c' }}>Instrucciones:</strong> Para cada afirmación, elige:
+        <span style={{ background: 'rgba(5,150,105,0.15)', color: '#059669', fontWeight: 700, padding: '0 5px', borderRadius: 4, marginLeft: 6 }}>TRUE</span> — lo dice el texto ·
+        <span style={{ background: 'rgba(220,38,38,0.1)', color: '#dc2626', fontWeight: 700, padding: '0 5px', borderRadius: 4, marginLeft: 6 }}>FALSE</span> — contradice el texto ·
+        <span style={{ background: 'rgba(217,119,6,0.1)', color: '#d97706', fontWeight: 700, padding: '0 5px', borderRadius: 4, marginLeft: 6 }}>NOT GIVEN</span> — el texto no lo menciona
+      </div>
+
+      {/* Progress */}
+      {done > 0 && !showResult && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <div style={{ flex: 1, height: 6, background: 'var(--line-soft)', borderRadius: 4 }}>
+            <div style={{ height: '100%', width: `${(done / STATEMENTS.length) * 100}%`, background: '#0f3d8c', borderRadius: 4, transition: 'width 0.4s' }} />
+          </div>
+          <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{done}/{STATEMENTS.length}</span>
+        </div>
+      )}
+
+      {/* Questions */}
+      {!showResult && STATEMENTS.map((s, qi) => {
+        const ans = answers[qi];
+        const isDone = !!ans;
+        return (
+          <div key={qi} className="wl-card" style={{ padding: '1.25rem' }}>
+            <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>
+              Statement {qi + 1}
+            </div>
+            <p style={{ margin: '0 0 0.85rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.97rem', lineHeight: 1.6 }}>
+              &ldquo;{s.statement}&rdquo;
+            </p>
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+              {OPTIONS.map(opt => {
+                const isCorrect = opt === s.answer;
+                const isSelected = ans === opt;
+                let bg = 'var(--bg-2)', border = '1px solid var(--line-soft)', color = 'var(--ink)';
+                if (isDone && isCorrect)  { bg = `rgba(5,150,105,0.1)`; border = `1px solid #059669`; color = '#059669'; }
+                if (isDone && isSelected && !isCorrect) { bg = 'rgba(220,38,38,0.1)'; border = '1px solid #dc2626'; color = '#dc2626'; }
+                return (
+                  <button key={opt} onClick={() => pick(qi, opt)} disabled={isDone}
+                    style={{
+                      padding: '0.5rem 1rem', borderRadius: 8, fontSize: '0.85rem', fontWeight: 800,
+                      border, background: bg, color, cursor: isDone ? 'default' : 'pointer',
+                      fontFamily: 'var(--mono)', letterSpacing: '0.04em', transition: 'all 0.15s',
+                    }}
+                  >
+                    {opt}
+                  </button>
+                );
+              })}
+            </div>
+            {revealed[qi] && (
+              <div style={{ marginTop: '0.65rem', fontSize: '0.82rem', color: 'var(--ink-2)', padding: '0.5rem 0.75rem', borderRadius: 8, background: ans === s.answer ? 'rgba(5,150,105,0.07)' : 'rgba(220,38,38,0.07)', lineHeight: 1.6 }}>
+                {ans === s.answer ? '✅ ' : `✗ The answer is ${s.answer}. `}{s.explanation}
+              </div>
+            )}
+          </div>
+        );
+      })}
+
+      {done === STATEMENTS.length && !showResult && (
+        <button className="btn btn-sm" onClick={() => setShowResult(true)}>Ver resultado →</button>
+      )}
+
+      {showResult && (
+        <div className="wl-card" style={{ padding: '1.75rem', textAlign: 'center' }}>
+          <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{correct >= 6 ? '🎉' : correct >= 4 ? '⭐' : '📚'}</div>
+          <h2 style={{ margin: '0 0 0.5rem', color: 'var(--ink)' }}>{correct} / {STATEMENTS.length} correctas</h2>
+          <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
+            {correct >= 6 ? '¡Excelente comprensión lectora!' : correct >= 4 ? 'Buen intento. Revisa los errores.' : 'Vuelve a leer el texto con cuidado.'}
+          </p>
+          <p style={{ color: 'var(--muted)', fontSize: '0.83rem', margin: '0 0 1.25rem', fontStyle: 'italic' }}>
+            En IELTS, True/False/Not Given es una de las secciones más difíciles. La clave: no asumas — solo marca lo que el texto dice explícitamente.
+          </p>
+          <div style={{ display: 'flex', gap: '0.65rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button className="btn btn-sm" onClick={reset}>Intentar de nuevo</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Coming Soon card ─────────────────────────────────────────────────────────
+
+function ComingSoonCard({ title, tags }: { title: string; tags: string[] }) {
+  return (
+    <div className="wl-card" style={{ padding: '1.5rem', textAlign: 'center', borderTop: '3px solid rgba(15,61,140,0.2)' }}>
+      <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🔒</div>
+      <h3 style={{ margin: '0 0 0.4rem', color: 'var(--ink)', fontSize: '1.1rem' }}>{title}</h3>
+      <p style={{ color: 'var(--muted)', fontSize: '0.85rem', margin: '0 0 0.85rem' }}>Próximamente — en desarrollo.</p>
+      <div style={{ display: 'flex', gap: '0.4rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+        {tags.map(t => <span key={t} style={{ fontSize: '0.72rem', padding: '0.18rem 0.55rem', borderRadius: 20, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.15)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{t}</span>)}
+      </div>
+    </div>
+  );
+}
+
+// ─── Root ─────────────────────────────────────────────────────────────────────
+
+const SECTIONS = [
+  {
+    id: 'reading', label: 'Reading', icon: '📖',
+    desc: 'True/False/Not Given · Matching · Multiple choice',
+    badge: '1 ejercicio disponible',
+  },
+  { id: 'listening', label: 'Listening', icon: '🎧', desc: 'Próximamente' },
+  { id: 'writing',   label: 'Writing',   icon: '✏️', desc: 'Task 1 → Conectores disponible en /practica/ielts-writing-conectores' },
+  { id: 'speaking',  label: 'Speaking',  icon: '🗣️', desc: 'Próximamente' },
+];
+
+export default function IELTSHubClient() {
+  const [section, setSection] = useState<string | null>(null);
+
+  if (!section) {
+    return (
+      <section className="wl-section">
+        <div className="wrap">
+          <div style={{ maxWidth: 720, margin: '0 auto' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
+              <Link href="/practica" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Práctica</Link>
+              <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Práctica / IELTS</span>
+            </div>
+
+            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />🇬🇧 IELTS Academic</p>
+            <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Práctica de IELTS</h1>
+            <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem' }}>
+              El IELTS evalúa Reading, Listening, Writing y Speaking. Nivel objetivo: Band 6–8.
+            </p>
+
+            {/* Band scale */}
+            <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+              {[['1-4','Básico','#dc2626'],['5','Modesto','#f59e0b'],['6','Competente','#0f3d8c'],['7','Bueno','#0f3d8c'],['8-9','Experto','#059669']].map(([band, label, color]) => (
+                <span key={band} style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: `${color}15`, color, border: `1px solid ${color}40`, fontFamily: 'var(--mono)', fontWeight: 700 }}>
+                  Band {band} — {label}
+                </span>
+              ))}
+            </div>
+
+            <div className="wl-exams-catalog">
+              {SECTIONS.map(s => (
+                <button key={s.id}
+                  onClick={() => s.id === 'reading' && setSection(s.id)}
+                  className={`wl-catalog-card${s.id !== 'reading' ? ' wl-catalog-card--soon' : ''}`}
+                  style={{ '--exam-color': '#0f3d8c', textAlign: 'left', cursor: s.id === 'reading' ? 'pointer' : 'default', appearance: 'none', WebkitAppearance: 'none', margin: 0, padding: 0, font: 'inherit', color: 'inherit', display: 'flex', flexDirection: 'column' } as React.CSSProperties}
+                >
+                  <div className="wl-catalog-card__bar" />
+                  <div className="wl-catalog-card__body">
+                    <div className="wl-catalog-card__top">
+                      <span style={{ fontSize: '1.8rem' }}>{s.icon}</span>
+                      {s.id !== 'reading' && <span className="wl-catalog-card__badge">Próximamente</span>}
+                    </div>
+                    <h2 className="wl-catalog-card__name">{s.label}</h2>
+                    <p className="wl-catalog-card__tagline">{s.desc}</p>
+                  </div>
+                  <div className="wl-catalog-card__footer">
+                    <span>IELTS Academic</span>
+                    <span className="wl-catalog-card__cta">{s.id === 'reading' ? 'Practicar →' : 'Próximamente'}</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+
+            {/* Writing Task 1 link */}
+            <div style={{ marginTop: '1.5rem', padding: '1rem 1.25rem', borderRadius: 14, background: 'rgba(15,61,140,0.06)', border: '1.5px solid rgba(15,61,140,0.2)' }}>
+              <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                IELTS Writing Task 1 — YA DISPONIBLE
+              </span>
+              <p style={{ margin: '0.35rem 0 0.65rem', fontSize: '0.9rem', color: 'var(--ink-2)' }}>
+                Practica la coherencia y cohesión con conectores reales. Ejercicio completo con feedback Band 6–7.
+              </p>
+              <Link href="/practica/ielts-writing-conectores" className="btn btn-sm" style={{ fontSize: '0.84rem' }}>
+                Ir al ejercicio →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="wl-section">
+      <div className="wrap">
+        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
+            <button onClick={() => setSection(null)} className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← IELTS</button>
+            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>IELTS / Reading</span>
+          </div>
+          <p className="eyebrow" style={{ marginBottom: '0.3rem' }}><span className="ink-line" />📖 IELTS Reading — True / False / Not Given</p>
+          <p style={{ margin: '0 0 1.5rem', fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+            Lee el pasaje y decide si cada afirmación es TRUE, FALSE o NOT GIVEN según la información del texto.
+          </p>
+
+          <TFNGExercise />
+
+          {/* Coming soon */}
+          <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <p style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--mono)', margin: 0 }}>
+              Próximamente en IELTS Reading
+            </p>
+            <ComingSoonCard title="Matching Headings" tags={['Párrafos B2-C1', '6-8 headings', 'Estrategia de skimming']} />
+            <ComingSoonCard title="Multiple Choice" tags={['Questions B1-C1', '4 opciones', 'Pasaje académico real']} />
+            <ComingSoonCard title="Summary Completion" tags={['Fill in blanks', 'Word limit', 'Paraphrasing skills']} />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
