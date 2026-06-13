@@ -16,6 +16,8 @@ interface IcfesQuestion {
   text: string;
   options: string[];
   answer: number;
+  justifications?: string[];
+  justCorrect?: number;
 }
 
 interface SkillStats { correct: number; total: number; }
@@ -98,17 +100,35 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
     stimulus:'SWIMMING POOL NOTICE\nThis pool uses recycled water meeting national health standards.\nAll swimmers MUST shower before entering.\nNo running on the pool deck.',
     text:'What MUST swimmers do before entering the pool?',
     options:['Get permission from a lifeguard','Buy a ticket at the entrance','Take a shower','Wear a swimming cap'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      'El aviso dice "All swimmers MUST shower before entering" — regla obligatoria para todos.',
+      'Los avisos de piscina siempre requieren gorro de natación como norma principal.',
+      'Solo los nadadores profesionales necesitan seguir las reglas del aviso.',
+      'La regla sobre el agua reciclada aplica solo al personal de mantenimiento.',
+    ], justCorrect:0 },
   { id:'n14', skill:'notices', level:4,
     stimulus:'SCHOLARSHIP OPPORTUNITY\nThe National Education Foundation invites students aged 16–18 to apply for academic scholarships.\nApplicants must have a GPA of 4.0 or above.\nDeadline: March 31st. Visit our website for details.',
     text:'Who can apply for this scholarship?',
     options:['Any student over 18','Students aged 16–18 with high grades','Teachers looking for funding','University students only'],
-    answer:1 },
+    answer:1,
+    justifications:[
+      'Cualquier estudiante mayor de 16 años puede aplicar sin importar sus calificaciones.',
+      'El aviso indica "students aged 16–18" y un GPA de 4.0 o más — ambas condiciones son obligatorias.',
+      'Los profesores nominan a los estudiantes que consideran merecedores de la beca.',
+      'Solo los estudiantes universitarios con cartas de recomendación pueden aplicar.',
+    ], justCorrect:1 },
   { id:'n15', skill:'notices', level:4,
     stimulus:'HEALTH WARNING\nDo not take more than 4 tablets in 24 hours.\nKeep out of reach of children.\nConsult a doctor if symptoms persist for more than 3 days.',
     text:'What should you do if you are still ill after 3 days?',
     options:['Take more tablets','Stop taking the medicine','See a doctor','Buy a stronger medicine'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      'Después de 3 días, se pueden tomar más tabletas para acelerar la recuperación.',
+      'El aviso recomienda cambiar de medicamento si los síntomas no mejoran.',
+      'El aviso dice "Consult a doctor if symptoms persist for more than 3 days".',
+      'Si el medicamento no funciona después de 3 días, debes dejar de tomarlo automáticamente.',
+    ], justCorrect:2 },
 
   // ── VOCABULARIO ────────────────────────────────────────────────────────────
   { id:'vo01', skill:'vocabulary', level:1,
@@ -162,15 +182,33 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
   { id:'vo13', skill:'vocabulary', level:4,
     text:'"The new policy had a significant ___ on the quality of education in rural areas."',
     options:['Impact','Decoration','Routine','Instrument'],
-    answer:0 },
+    answer:0,
+    justifications:[
+      '"Have an impact on" es una colocación fija que significa "tener un efecto sobre algo".',
+      '"Decoration on education" es gramaticalmente posible cuando se describe la apariencia de una escuela.',
+      '"Routine on education" describe los hábitos de estudio habituales de una comunidad.',
+      '"Instrument on education" se usa cuando las políticas son herramientas del gobierno.',
+    ], justCorrect:0 },
   { id:'vo14', skill:'vocabulary', level:4,
     text:'"The government must ___ pollution if it wants to protect public health."',
     options:['Create','Encourage','Address','Ignore'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      '"Create" es correcto — el gobierno tiene que crear nuevas soluciones ambientales.',
+      '"Encourage" significa motivar, por eso el gobierno debe motivar a reducir la contaminación.',
+      '"Address a problem" significa enfrentarse directamente a un problema y tomar medidas concretas.',
+      '"Ignore" también puede funcionar porque el gobierno necesita concentrarse en la contaminación.',
+    ], justCorrect:2 },
   { id:'vo15', skill:'vocabulary', level:4,
     text:'"Schools promote sustainability by teaching students about recycling." The word "sustainability" means:',
     options:['The ability to generate profit','Using resources without harming future generations','The study of natural disasters','A type of environmental pollution'],
-    answer:1 },
+    answer:1,
+    justifications:[
+      'La sostenibilidad es el estudio de cómo prevenir desastres naturales en el futuro.',
+      'En economía, "sustainability" se refiere a la capacidad de generar ganancias de forma continua.',
+      'La sostenibilidad ambiental describe los efectos de la contaminación en los ecosistemas.',
+      'Sostenibilidad significa usar los recursos actuales sin comprometer los de las generaciones futuras.',
+    ], justCorrect:3 },
 
   // ── DIÁLOGOS ───────────────────────────────────────────────────────────────
   { id:'d01', skill:'dialogs', level:1,
@@ -247,7 +285,13 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
     stimulus:'Journalist: The city plans to close the park to build a shopping centre. What do you think?\nResident: I completely oppose this. ___\nJournalist: Why is that important?\nResident: Because green spaces improve quality of life for everyone.',
     text:'What does the resident most likely say in the blank?',
     options:['Shopping centres create jobs.','The park is essential for our community.','I don\'t use parks very often.','The city needs more development.'],
-    answer:1 },
+    answer:1,
+    justifications:[
+      'El residente se opone al plan, así que la opción A apoyaría al alcalde, no al residente.',
+      'La frase siguiente ("green spaces improve quality of life") confirma que el residente defiende el parque como esencial para la comunidad.',
+      'Decir "no uso los parques" debilitaría el argumento del residente contra la demolición.',
+      'Apoyar más desarrollo es consistente con la postura del alcalde, no la del residente opositor.',
+    ], justCorrect:1 },
 
   // ── GRAMÁTICA (cloze) ──────────────────────────────────────────────────────
   { id:'g01', skill:'grammar', level:2,
@@ -297,19 +341,43 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
   { id:'g12', skill:'grammar', level:4,
     text:'"He studied very hard. ___, he passed all his exams." (Resultado)',
     options:['However','Although','Therefore','Despite'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      '"Therefore" expresa consecuencia lógica: estudió duro → por eso (therefore) aprobó.',
+      '"However" indica contraste: estudió pero NO aprobó — significado opuesto al de la frase.',
+      '"Although" es una conjunción de contraste que va dentro de la misma oración, no entre dos.',
+      '"Despite" necesita ir seguido de un sustantivo o gerundio, no de una oración completa.',
+    ], justCorrect:0 },
   { id:'g13', skill:'grammar', level:4,
     text:'"The man ___ helped us find our way was very kind." (Relative pronoun, person)',
     options:['which','where','who','what'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      '"Which" se usa como pronombre relativo solo para cosas u objetos, no para personas.',
+      '"Where" introduce cláusulas relativas de lugar, no de persona.',
+      '"Who" es el pronombre relativo correcto para referirse a personas como sujeto de la cláusula.',
+      '"What" no funciona como pronombre relativo para introducir cláusulas de este tipo.',
+    ], justCorrect:2 },
   { id:'g14', skill:'grammar', level:4,
     text:'"She told me she ___ tired and needed to rest." (Reported speech)',
     options:['is','be','been','was'],
-    answer:3 },
+    answer:3,
+    justifications:[
+      '"Is" sería correcto solo si el verbo principal fuera en presente ("She tells me").',
+      'En reported speech, el verbo principal "told" está en pasado, por eso el presente "is" retrocede a "was".',
+      '"Been" es participio pasado y necesita un auxiliar ("has been"), no puede ir solo aquí.',
+      '"Be" es la forma base del verbo y solo aparece con modales ("she must be"), no sola.',
+    ], justCorrect:1 },
   { id:'g15', skill:'grammar', level:4,
     text:'"___ the bad weather, the game continued until the final whistle." (Contraste)',
     options:['Despite','However','Therefore','Although'],
-    answer:0 },
+    answer:0,
+    justifications:[
+      '"Despite" expresa contraste y va seguido de un sustantivo — aquí precede a "the bad weather".',
+      '"However" es adverbio conjuntivo que inicia una nueva oración independiente, no una frase con sustantivo.',
+      '"Therefore" indica consecuencia o resultado, no contraste entre el clima y el juego.',
+      '"Although" introduce una cláusula con sujeto y verbo ("Although it rained"), no un sustantivo solo.',
+    ], justCorrect:0 },
 
   // ── NOTICES nivel 3 — extra ───────────────────────────────────────────────
   { id:'n10b', skill:'notices', level:3,
@@ -469,47 +537,101 @@ const ALL_QUESTIONS: IcfesQuestion[] = [
     stimulus:'Social media has transformed the way young people communicate. While it offers opportunities to connect with friends and access information, excessive use can lead to anxiety and poor sleep. Experts advise limiting screen time and taking regular breaks from digital devices.',
     text:'According to the text, what do experts recommend?',
     options:['Stopping the use of social media completely','Using social media to improve mental health','Limiting screen time and taking breaks from devices','Installing apps to monitor social media use'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      'El texto dice "Experts advise limiting screen time and taking regular breaks from digital devices".',
+      'Los expertos recomiendan eliminar las redes sociales para reducir la ansiedad.',
+      'El texto sugiere que usar más redes sociales mejora la salud mental de los jóvenes.',
+      'El texto aconseja instalar aplicaciones para monitorear el uso de las redes sociales.',
+    ], justCorrect:0 },
   { id:'r06', skill:'reading', level:4,
     stimulus:'Gabriel García Márquez was a Colombian author born in Aracataca in 1927. He is best known for his novel "One Hundred Years of Solitude," published in 1967. García Márquez won the Nobel Prize in Literature in 1982 for his contribution to world literature.',
     text:'When did García Márquez win the Nobel Prize?',
     options:['1927','1967','1982','2004'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      '1927 es el año de nacimiento de García Márquez, no el año del Nobel.',
+      '1967 es la fecha de publicación de la novela, no el año del Premio Nobel.',
+      'El texto dice literalmente que ganó el Nobel "in 1982".',
+      '2004 no aparece en el texto — García Márquez murió en 2014, no en 2004.',
+    ], justCorrect:2 },
   { id:'r07', skill:'reading', level:4,
     stimulus:'Renewable energy sources such as solar and wind power are becoming increasingly important. Unlike fossil fuels, they do not produce harmful gases. However, the initial cost of installing solar panels can be high, which limits their use in developing countries.',
     text:'According to the text, what is one disadvantage of solar energy?',
     options:['It produces harmful gases','It is not available in developing countries','The installation cost is high','It only works in warm countries'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      'El texto afirma lo contrario: la energía solar NO produce gases dañinos, a diferencia de los combustibles fósiles.',
+      'El texto dice que el alto costo LIMITA su uso en países en desarrollo, no que no esté disponible allí.',
+      'El texto dice "the initial cost of installing solar panels can be high" — esa es la desventaja mencionada.',
+      'El texto no menciona en absoluto que la energía solar solo funcione en países cálidos.',
+    ], justCorrect:2 },
   { id:'r08', skill:'reading', level:4,
     stimulus:'In many Colombian cities, public libraries are not just places to read books. They also offer free computer access, language courses, and cultural events. These services are especially important for communities with limited economic resources.',
     text:'What is the MAIN purpose of this text?',
     options:['To explain how to join a public library','To describe the multiple services that libraries offer','To compare Colombian libraries with foreign ones','To encourage people to donate books to libraries'],
-    answer:1 },
+    answer:1,
+    justifications:[
+      'El texto no explica el proceso de afiliación a una biblioteca — no menciona membresías.',
+      'El texto enumera los servicios que ofrecen las bibliotecas: computadoras, cursos de idiomas y eventos culturales.',
+      'El texto no compara bibliotecas colombianas con las de otros países — solo habla de Colombia.',
+      'El texto no pide al lector que done libros — esa acción no aparece en ningún momento.',
+    ], justCorrect:1 },
   { id:'r09', skill:'reading', level:4,
     stimulus:'Volunteering abroad can be a life-changing experience. Many students choose to spend their gap year teaching English in rural areas. This not only helps local communities but also allows volunteers to develop their communication and leadership skills.',
     text:'What does "gap year" most likely mean in this context?',
     options:['An academic year at a foreign university','A year of intensive language study','A year taken off from studying to gain experience','A government program for young people'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      'El contexto muestra que los estudiantes salen de sus estudios regulares para hacer voluntariado — no para estudiar en el exterior.',
+      'Un "gap year" en contexto es un año fuera de los estudios formales para adquirir experiencia real.',
+      'El texto no describe el "gap year" como un año de estudio intensivo — es voluntariado, no clase.',
+      'No se menciona ningún programa gubernamental en el texto — es una decisión personal del estudiante.',
+    ], justCorrect:1 },
   { id:'r10', skill:'reading', level:4,
     stimulus:'The ICFES exam measures the academic competencies of Colombian students at the end of secondary school. The English component evaluates reading comprehension, vocabulary, and understanding of grammar structures. Results are used for university admissions throughout the country.',
     text:'According to the text, what is ONE use of ICFES results?',
     options:['To determine if students can travel abroad','For university admissions in Colombia','To measure teachers\'s performance','To decide which students should study English'],
-    answer:1 },
+    answer:1,
+    justifications:[
+      'El texto no menciona viajes al exterior — solo habla de admisiones universitarias en Colombia.',
+      'El texto dice explícitamente que los resultados "are used for university admissions throughout the country".',
+      'El texto evalúa competencias de ESTUDIANTES al final del bachillerato, no el rendimiento de profesores.',
+      'El texto no dice que los resultados determinen quiénes deben tomar clases de inglés.',
+    ], justCorrect:1 },
   { id:'r12', skill:'reading', level:4,
     stimulus:'Water is one of the most precious natural resources on Earth. In some regions of Colombia, communities must walk for hours to reach a water source. Governments and international organizations are working together to bring clean water to these areas.',
     text:'What can we INFER from this text?',
     options:['Colombia has enough clean water for everyone','Access to clean water is a problem in some Colombian communities','International organizations cause water pollution','Walking to water sources is good for health'],
-    answer:1 },
+    answer:1,
+    justifications:[
+      'El texto muestra lo contrario: comunidades deben caminar horas para llegar al agua — no hay suficiente para todos.',
+      'Si hay comunidades que caminan horas para buscar agua, se infiere que no tienen acceso fácil a ella.',
+      'Las organizaciones mencionadas trabajan para LLEVAR agua limpia, no para contaminarla.',
+      'Caminar horas para buscar agua es presentado como una dificultad, no como un beneficio de salud.',
+    ], justCorrect:1 },
   { id:'r14', skill:'reading', level:4,
     stimulus:'Technology has made it possible for people to work from any location. This trend, known as remote work, has grown significantly since 2020. While it offers flexibility and saves commuting time, it can also make it difficult to separate work life from personal life.',
     text:'What is a possible DISADVANTAGE of remote work mentioned in the text?',
     options:['It requires expensive technology','It is impossible to communicate with colleagues','It can be hard to keep work and personal life separate','It is only available in some countries'],
-    answer:2 },
+    answer:2,
+    justifications:[
+      'El texto no menciona que el trabajo remoto requiera tecnología cara — solo dice que es posible desde cualquier lugar.',
+      'El texto no dice que sea imposible comunicarse con colegas — eso no aparece como desventaja.',
+      'El texto dice "it can also make it difficult to separate work life from personal life" — esa es la desventaja.',
+      'El texto no menciona restricciones geográficas — dice que es posible desde "any location".',
+    ], justCorrect:2 },
   { id:'r15', skill:'reading', level:4,
     stimulus:'Air pollution in large cities is mainly caused by vehicle emissions and industrial activity. It can cause respiratory diseases, especially in children and elderly people. City governments are responding by expanding public transport networks and promoting the use of electric vehicles.',
     text:'What is the author\'s main purpose in this text?',
     options:['To argue that cars should be banned from all cities','To describe the causes and responses to urban air pollution','To explain how electric vehicles work','To encourage people to use public transport'],
-    answer:1 },
+    answer:1,
+    justifications:[
+      'El texto describe causas (emisiones e industria) y respuestas (transporte público, vehículos eléctricos).',
+      'El texto no argumenta que se deban prohibir los carros — solo menciona vehículos eléctricos como alternativa.',
+      'El texto no explica cómo funcionan los vehículos eléctricos — solo los menciona como una solución.',
+      'Aunque se menciona el transporte público, el propósito del texto es más amplio: causas Y respuestas.',
+    ], justCorrect:0 },
 ];
 
 // ─── Level Config ─────────────────────────────────────────────────────────────
@@ -851,8 +973,17 @@ export default function IcfesAdaptiveGame() {
   const [wrongAnswer, setWrongAnswer] = useState<string | null>(null);
   const [selected,    setSelected]    = useState<number | null>(null);
   const [timedOut,    setTimedOut]    = useState(false);
+  const [justPhase,   setJustPhase]   = useState(false);
+  const [mainCorrect, setMainCorrect] = useState<boolean | null>(null);
+  const [selectedJust,setSelectedJust]= useState<number | null>(null);
+  const [bonusEarned, setBonusEarned] = useState(0);
 
-  const intervalRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
+  const intervalRef    = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
+  // refs to avoid stale closures in async handlers
+  const justPhaseRef   = useRef(false);
+  const mainCorrectRef = useRef<boolean | null>(null);
+  justPhaseRef.current   = justPhase;
+  mainCorrectRef.current = mainCorrect;
   const cfg = LEVEL_CFG[level];
 
   // Load checkpoint on mount
@@ -895,6 +1026,10 @@ export default function IcfesAdaptiveGame() {
     setSelected(null);
     setWrongAnswer(null);
     setIsBonus(false);
+    setJustPhase(false);
+    setMainCorrect(null);
+    setSelectedJust(null);
+    setBonusEarned(0);
 
     const firstQ = pickWeighted(pool, used, initStats);
     setCurrentQ(firstQ);
@@ -911,12 +1046,13 @@ export default function IcfesAdaptiveGame() {
   }, [startLevel]);
 
   // ── Process answer ─────────────────────────────────────────────────────────
-  const processAnswer = useCallback((correct: boolean, correctAnswer?: string) => {
+  const processAnswer = useCallback((correct: boolean, correctAnswer?: string, bonusPts = 0) => {
     if (!currentQ) return;
     clearInterval(intervalRef.current);
 
     const multi = streak >= 5 ? 3 : streak >= 3 ? 2 : 1;
-    const pts = correct ? 10 * multi : 0;
+    const pts = correct ? 10 * multi + bonusPts : 0;
+    setBonusEarned(bonusPts);
 
     setFeedback(correct ? 'correct' : 'wrong');
     if (!correct && correctAnswer) setWrongAnswer(correctAnswer);
@@ -972,14 +1108,22 @@ export default function IcfesAdaptiveGame() {
         ? levelPool.filter(q => !newUsed.has(q.id) && q.skill === targetSkill)
         : [];
 
+      const resetForNext = () => {
+        setFeedback(null);
+        setSelected(null);
+        setWrongAnswer(null);
+        setJustPhase(false);
+        setMainCorrect(null);
+        setSelectedJust(null);
+        setBonusEarned(0);
+        setTimeLeft(LEVEL_CFG[level].time);
+      };
+
       if (targetSkill && bonusPool.length > 0) {
         const bq = bonusPool[Math.floor(Math.random() * bonusPool.length)];
         setCurrentQ(bq);
         setIsBonus(true);
-        setFeedback(null);
-        setSelected(null);
-        setWrongAnswer(null);
-        setTimeLeft(LEVEL_CFG[level].time);
+        resetForNext();
         return;
       }
 
@@ -989,10 +1133,7 @@ export default function IcfesAdaptiveGame() {
       if (nextQ) {
         setCurrentQ(nextQ);
         setIsBonus(false);
-        setFeedback(null);
-        setSelected(null);
-        setWrongAnswer(null);
-        setTimeLeft(LEVEL_CFG[level].time);
+        resetForNext();
       }
     }, 1600);
   }, [currentQ, score, lives, streak, skillStats, usedIds, isBonus, baseCount, bonusCount, level, levelPool]);
@@ -1002,8 +1143,12 @@ export default function IcfesAdaptiveGame() {
     if (!timedOut) return;
     setTimedOut(false);
     if (!currentQ) return;
-    const ans = currentQ.options[currentQ.answer];
-    processAnswer(false, ans);
+    if (justPhaseRef.current) {
+      const mc = mainCorrectRef.current ?? false;
+      processAnswer(mc, mc ? undefined : currentQ.options[currentQ.answer], 0);
+    } else {
+      processAnswer(false, currentQ.options[currentQ.answer]);
+    }
   }, [timedOut, currentQ, processAnswer]);
 
   // ── Timer ──────────────────────────────────────────────────────────────────
@@ -1017,14 +1162,31 @@ export default function IcfesAdaptiveGame() {
       });
     }, 1000);
     return () => clearInterval(intervalRef.current);
-  }, [phase, feedback, currentQ]);
+  }, [phase, feedback, currentQ, justPhase]);
 
   // ── Answer handler ─────────────────────────────────────────────────────────
   const handleAnswer = (idx: number) => {
-    if (feedback !== null || !currentQ) return;
+    if (feedback !== null || justPhase || !currentQ) return;
     setSelected(idx);
     const correct = idx === currentQ.answer;
-    processAnswer(correct, correct ? undefined : currentQ.options[currentQ.answer]);
+    if (currentQ.level === 4 && currentQ.justifications) {
+      clearInterval(intervalRef.current);
+      setMainCorrect(correct);
+      setJustPhase(true);
+      setTimeLeft(20);
+    } else {
+      processAnswer(correct, correct ? undefined : currentQ.options[currentQ.answer]);
+    }
+  };
+
+  // ── Justification handler (Level 4 only) ───────────────────────────────────
+  const handleJustification = (idx: number) => {
+    if (feedback !== null || !currentQ) return;
+    setSelectedJust(idx);
+    const justCorrect = idx === currentQ.justCorrect;
+    const mc = mainCorrectRef.current ?? false;
+    const bonus = (mc && justCorrect) ? 5 : 0;
+    processAnswer(mc, mc ? undefined : currentQ.options[currentQ.answer], bonus);
   };
 
   const progressPct = ((baseCount + (feedback !== null && !isBonus ? 1 : 0)) / QUESTIONS_PER_LEVEL) * 100;
@@ -1107,7 +1269,7 @@ export default function IcfesAdaptiveGame() {
               <motion.div initial={{ opacity:0, height:0 }} animate={{ opacity:1, height:'auto' }} exit={{ opacity:0, height:0 }}
                 className={`mb-4 text-center font-semibold text-base ${feedback === 'correct' ? 'text-green-400' : 'text-red-400'}`}>
                 {feedback === 'correct'
-                  ? <>✓ ¡Correcto! {streak >= 3 ? ` +${streak >= 5 ? 30 : 20} pt 🔥` : ' +10 pt'}</>
+                  ? <>✓ ¡Correcto! {streak >= 3 ? ` +${streak >= 5 ? 30 : 20} pt 🔥` : ' +10 pt'}{bonusEarned > 0 ? <span className="text-amber-300"> +{bonusEarned} 🧠</span> : null}</>
                   : wrongAnswer
                     ? <>✗ La respuesta era: <span className="font-bold text-white">&ldquo;{wrongAnswer}&rdquo;</span></>
                     : '✗ ¡Se acabó el tiempo!'}
@@ -1118,19 +1280,52 @@ export default function IcfesAdaptiveGame() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {currentQ.options.map((opt, i) => {
               let cls = 'border border-white/10 bg-white/5 text-white hover:border-white/30 hover:bg-white/10 cursor-pointer';
-              if (feedback !== null) {
+              const answerRevealed = feedback !== null || justPhase;
+              if (answerRevealed) {
                 if (i === currentQ.answer) cls = 'border-green-500 bg-green-900/30 text-green-300 cursor-default';
                 else if (i === selected)  cls = 'border-red-500 bg-red-900/30 text-red-300 cursor-default';
                 else                      cls = 'border-white/5 bg-transparent text-gray-600 cursor-default';
               }
               return (
-                <button key={i} onClick={() => handleAnswer(i)} disabled={feedback !== null}
+                <button key={i} onClick={() => handleAnswer(i)} disabled={answerRevealed}
                   className={`rounded-xl px-4 py-3 font-medium text-sm sm:text-base text-left transition-all duration-150 ${cls}`}>
                   <span className="font-bold mr-2 opacity-50">{['A','B','C','D'][i]}.</span>{opt}
                 </button>
               );
             })}
           </div>
+
+          {/* ── Justification panel (Level 4 two-phase) ─────────────────────── */}
+          <AnimatePresence>
+            {justPhase && currentQ.justifications && (
+              <motion.div
+                initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} exit={{ opacity:0, y:8 }}
+                transition={{ duration:0.3 }}
+                className="mt-5 pt-4 border-t border-white/10">
+                <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color:'#f59e0b' }}>
+                  🧠 ¿Por qué es correcta la respuesta?
+                </p>
+                <div className="grid grid-cols-1 gap-2">
+                  {currentQ.justifications.map((just, i) => {
+                    const done = selectedJust !== null || feedback !== null;
+                    let jcls = 'border border-white/10 bg-white/5 text-white hover:border-amber-400/50 hover:bg-amber-900/10 cursor-pointer';
+                    if (done) {
+                      if (i === currentQ.justCorrect) jcls = 'border-green-500 bg-green-900/20 text-green-300 cursor-default';
+                      else if (i === selectedJust)    jcls = 'border-red-500 bg-red-900/20 text-red-300 cursor-default';
+                      else                             jcls = 'border-white/5 bg-transparent text-gray-500 cursor-default';
+                    }
+                    return (
+                      <button key={i} onClick={() => handleJustification(i)}
+                        disabled={done}
+                        className={`rounded-xl px-4 py-2.5 font-medium text-sm text-left transition-all duration-150 ${jcls}`}>
+                        <span className="font-bold mr-2 opacity-50">{['A','B','C','D'][i]}.</span>{just}
+                      </button>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </motion.div>
       </AnimatePresence>
 
