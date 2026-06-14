@@ -99,6 +99,36 @@ const SETS: VocabSet[] = [
       { word: 'zero', es: '0', emoji: '0️⃣', example: 'La temperatura è zero gradi.', exampleEs: 'La temperatura es cero grados.', pronunciation: '[DZE-ro]' },
     ],
   },
+  {
+    id: 'casa', name: 'La casa', nameEs: 'La casa', emoji: '🏠',
+    words: [
+      { word: 'cucina', es: 'cocina', emoji: '🍳', example: 'La cucina è grande e moderna.', exampleEs: 'La cocina es grande y moderna.', pronunciation: '[ku-CHI-na]' },
+      { word: 'bagno', es: 'baño', emoji: '🚿', example: 'C\'è un bagno al piano di sopra.', exampleEs: 'Hay un baño en el piso de arriba.', pronunciation: '[BAN-yo]' },
+      { word: 'camera da letto', es: 'habitación/dormitorio', emoji: '🛏️', example: 'La mia camera da letto è piccola.', exampleEs: 'Mi habitación es pequeña.', pronunciation: '[KA-me-ra da LET-to]' },
+      { word: 'salotto', es: 'sala de estar', emoji: '🛋️', example: 'Guardo la TV in salotto.', exampleEs: 'Veo la tele en la sala.', pronunciation: '[sa-LOT-to]' },
+      { word: 'tavolo', es: 'mesa', emoji: '🪑', example: 'Il tavolo è in cucina.', exampleEs: 'La mesa está en la cocina.', pronunciation: '[TA-vo-lo]' },
+      { word: 'sedia', es: 'silla', emoji: '🪑', example: 'Metti la sedia vicino al muro.', exampleEs: 'Pon la silla cerca de la pared.', pronunciation: '[SE-dya]' },
+      { word: 'finestra', es: 'ventana', emoji: '🪟', example: 'Apri la finestra, per favore!', exampleEs: '¡Abre la ventana, por favor!', pronunciation: '[fi-NES-tra]' },
+      { word: 'porta', es: 'puerta', emoji: '🚪', example: 'La porta è aperta.', exampleEs: 'La puerta está abierta.', pronunciation: '[POR-ta]' },
+      { word: 'letto', es: 'cama', emoji: '🛏️', example: 'Il mio letto è molto comodo.', exampleEs: 'Mi cama es muy cómoda.', pronunciation: '[LET-to]' },
+      { word: 'lampada', es: 'lámpara', emoji: '💡', example: 'Accendi la lampada, è buio.', exampleEs: 'Enciende la lámpara, está oscuro.', pronunciation: '[LAM-pa-da]' },
+    ],
+  },
+  {
+    id: 'animali', name: 'Gli animali', nameEs: 'Los animales', emoji: '🐾',
+    words: [
+      { word: 'gatto', es: 'gato', emoji: '🐱', example: 'Il mio gatto si chiama Nero.', exampleEs: 'Mi gato se llama Negro.', pronunciation: '[GAT-to]' },
+      { word: 'cane', es: 'perro', emoji: '🐶', example: 'Il cane abbaia di notte.', exampleEs: 'El perro ladra de noche.', pronunciation: '[KA-ne]' },
+      { word: 'uccello', es: 'pájaro', emoji: '🐦', example: 'Un uccello canta fuori dalla finestra.', exampleEs: 'Un pájaro canta afuera de la ventana.', pronunciation: '[ut-CHEL-lo]' },
+      { word: 'pesce', es: 'pez/pescado', emoji: '🐟', example: 'Ho due pesci rossi.', exampleEs: 'Tengo dos peces rojos.', pronunciation: '[PE-she]' },
+      { word: 'cavallo', es: 'caballo', emoji: '🐴', example: 'Il cavallo è un animale nobile.', exampleEs: 'El caballo es un animal noble.', pronunciation: '[ka-VAL-lo]' },
+      { word: 'mucca', es: 'vaca', emoji: '🐄', example: 'La mucca dà il latte.', exampleEs: 'La vaca da leche.', pronunciation: '[MUK-ka]' },
+      { word: 'coniglio', es: 'conejo', emoji: '🐰', example: 'Il coniglio mangia le carote.', exampleEs: 'El conejo come zanahorias.', pronunciation: '[ko-NI-lyo]' },
+      { word: 'elefante', es: 'elefante', emoji: '🐘', example: "L'elefante ha la memoria lunga.", exampleEs: 'El elefante tiene buena memoria.', pronunciation: '[e-le-FAN-te]' },
+      { word: 'leone', es: 'león', emoji: '🦁', example: 'Il leone è il re degli animali.', exampleEs: 'El león es el rey de los animales.', pronunciation: '[le-O-ne]' },
+      { word: 'scimmia', es: 'mono', emoji: '🐒', example: 'La scimmia sale sugli alberi.', exampleEs: 'El mono sube a los árboles.', pronunciation: '[SHIM-mya]' },
+    ],
+  },
 ];
 
 type Mode = 'browse' | 'flashcard' | 'quiz';

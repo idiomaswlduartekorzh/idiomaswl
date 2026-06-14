@@ -65,6 +65,44 @@ const TEXTS: ReadingText[] = [
     openQ: 'Describe tu rutina diaria en ruso (transliteración OK). Usa: "Ya vstayú v... Ya... Vecherom ya..."',
     production: 'Usa verbos en primera persona del singular: vstayú, zavtrakayu, rabotayu, chitayu, lozhus\' spat\'...',
   },
+  {
+    id: 4, title: 'В магазине', titleEs: 'En la tienda', topic: 'Покупки · De compras', words: 62, grammar: 'Числа · Сколько стоит · Можно',
+    text: 'Я иду в магазин. В магазине есть фрукты, овощи и хлеб. Я беру яблоки, бананы и молоко. Продавец спрашивает: «Что ещё?» Я говорю: «Мне нужен хлеб, пожалуйста.» Продавец отвечает: «Хлеб стоит пятьдесят рублей.» Я плачу сто рублей. Продавец даёт сдачу — пятьдесят рублей. Я говорю: «Спасибо!» и выхожу из магазина.',
+    translit: 'Ya idu v magazin. V magazine yest\' frukty, ovoshchi i khleb. Ya beru yabloki, banany i moloko. Prodavets sprashivayet: "Chto yeshchyo?" Ya govoryu: "Mne nuzhen khleb, pozhaluysta." Prodavets otvechayet: "Khleb stoit pyat\'desyat rubley." Ya plachu sto rubley. Prodavets dayot sdachu — pyat\'desyat rubley. Ya govoryu: "Spasibo!" i vykhozhu iz magazina.',
+    vocab: { иду:'idu — voy (a pie)', магазин:'magazin — tienda', фрукты:'frukty — frutas', овощи:'ovoshchi — verduras', беру:'beru — tomo/cojo', продавец:'prodavets — vendedor', спрашивает:'sprashivayet — pregunta', нужен:'nuzhen — necesito (masc.)', стоит:'stoit — cuesta', плачу:'plachu — pago', сдачу:'sdachu — el cambio (dinero)', выхожу:'vykhozhu — salgo' },
+    preQ: [
+      { q: '¿Qué compras normalmente en el supermercado?', opts: ['Frutas/verduras', 'Carne/pescado', 'Todo tipo'], a: -1 },
+      { q: '¿Sabes cómo se dicen los números del 1 al 100 en ruso?', opts: ['Sí, bastante bien', 'Algunos', 'Muy pocos'], a: -1 },
+    ],
+    mcq: [
+      { q: '¿Qué significa "сколько стоит?" (skol\'ko stoit?)', cat: 'Vocabulario', opts: ['¿Qué necesitas?', '¿Cuánto cuesta?', '¿Dónde está?', '¿Cuándo abres?'], a: 1, fb: '"Сколько стоит?" = ¿cuánto cuesta? Сколько (skol\'ko) = cuánto; стоит (stoit) = cuesta.' },
+      { q: '¿Qué compra en la tienda?', cat: 'Comprensión', opts: ['Carne y verduras', 'Manzanas, bananas y leche', 'Pan y queso', 'Frutas y carne'], a: 1, fb: '"Я беру яблоки, бананы и молоко" = tomo manzanas, bananas y leche.' },
+      { q: '¿Cuánto cuesta el pan?', cat: 'Comprensión', opts: ['20 рублей', '50 рублей', '100 рублей', '75 рублей'], a: 1, fb: '"Хлеб стоит пятьдесят рублей" (khleb stoit pyat\'desyat rubley) = el pan cuesta cincuenta rublos.' },
+      { q: '"Мне нужен хлеб" — ¿por qué se dice "нужен" y no "нужна"?', cat: 'Gramática', opts: ['Porque es plural', 'Porque хлеб es masculino', 'Porque es negativo', 'Por el contexto'], a: 1, fb: '"Нужен" es la forma masculina. "Нужна" va con femeninos: "мне нужна вода" (necesito agua — вода es fem.).' },
+      { q: '¿Qué le da el vendedor al final?', cat: 'Comprensión', opts: ['Un recibo', 'El pan gratis', 'Cincuenta rublos de cambio', 'Más frutas'], a: 2, fb: '"Продавец даёт сдачу — пятьдесят рублей" = el vendedor da el cambio — cincuenta rublos.' },
+    ],
+    openQ: 'Escribe una compra simple en ruso (transliteración OK): "Ya idu v magazin. Mne nuzhen/nuzhna ___."',
+    production: 'Usa: iду v magazin, mne nuzhen (masc.) / nuzhna (fem.), stoit ___ rubley, spasibo.',
+  },
+  {
+    id: 5, title: 'Мои друзья', titleEs: 'Mis amigos', topic: 'Люди и характер · Personas', words: 60, grammar: 'Притяжательные + прилагательные согласования',
+    text: 'У меня есть два друга. Мой друг Иван — высокий и добрый. Он живёт в Москве и работает врачом. Моя подруга Наташа — весёлая и умная. Она учится в университете. Иван любит спорт, а Наташа любит читать книги. Мы часто встречаемся в кафе. Мы пьём кофе и разговариваем.',
+    translit: 'U menya yest\' dva druga. Moy drug Ivan — vysokiy i dobryy. On zhivyot v Moskve i rabotayet vrachom. Moya podruga Natasha — vyosyolaya i umnaya. Ona uchitsya v universitete. Ivan lyubit sport, a Natasha lyubit chitat\' knigi. My chasto vstrechayemsya v kafe. My p\'yom kofe i razgovarivaem.',
+    vocab: { друга:'druga — amigos (gen. pl.)', высокий:'vysokiy — alto', добрый:'dobryy — bueno/bondadoso', живёт:'zhivyot — vive', подруга:'podruga — amiga (fem.)', весёлая:'vesyolaya — alegre', умная:'umnaya — inteligente', учится:'uchitsya — estudia', часто:'chasto — frecuentemente', встречаемся:'vstrechayemsya — nos encontramos', разговариваем:'razgovarivaem — conversamos' },
+    preQ: [
+      { q: '¿Cuántos amigos cercanos tienes?', opts: ['1-2', '3-5', 'Más de 5'], a: -1 },
+      { q: '¿Qué adjetivos conoces en ruso?', opts: ['Varios', 'Solo algunos', 'Casi ninguno'], a: -1 },
+    ],
+    mcq: [
+      { q: '¿Cuántos amigos menciona el narrador?', cat: 'Comprensión', opts: ['Uno', 'Dos', 'Tres', 'Cuatro'], a: 1, fb: '"У меня есть два друга" (u menya yest\' dva druga) = tengo dos amigos.' },
+      { q: '"Мой" vs "Моя" — la diferencia es:', cat: 'Gramática', opts: ['Moy = plural, Moya = singular', 'Moy = masculino, Moya = femenino', 'Moy = formal, Moya = informal', 'Son iguales'], a: 1, fb: '"Мой" (moy) = mi (con masc.): мой друг. "Моя" (moya) = mi (con fem.): моя подруга. El posesivo concuerda con el género del sustantivo.' },
+      { q: '¿Qué hace Наташа?', cat: 'Comprensión', opts: ['Trabaja como médica', 'Estudia en la universidad', 'Vive en Moscú', 'Trabaja en una cafetería'], a: 1, fb: '"Она учится в университете" (ona uchitsya v universitete) = ella estudia en la universidad.' },
+      { q: '¿Qué significa "добрый" (dobryy)?', cat: 'Vocabulario', opts: ['Alto', 'Alegre', 'Bueno/bondadoso', 'Inteligente'], a: 2, fb: '"Добрый" (dobryy) = bueno/bondadoso, de buen corazón. "Высокий" = alto; "весёлый" = alegre; "умный" = inteligente.' },
+      { q: '¿Dónde se encuentran los amigos?', cat: 'Comprensión', opts: ['En casa de Iván', 'En la universidad', 'En un café', 'En el trabajo'], a: 2, fb: '"Мы часто встречаемся в кафе" (my chasto vstrechayemsya v kafe) = nos encontramos frecuentemente en un café.' },
+    ],
+    openQ: 'Describe a un amigo tuyo en ruso: "Moy drug ___ — [adjetivos]. On/ona zhivyot v ___ i [verb]."',
+    production: 'Usa: moy drug (masc.) / moya podruga (fem.), vysokiy/vysokaya, umniy/umnaya, zhivyot, rabotayet/uchitsya.',
+  },
 ];
 
 function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {

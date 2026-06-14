@@ -99,6 +99,36 @@ const SETS: VocabSet[] = [
       { word: 'いくら？', romaji: 'ikura?', es: '¿Cuánto cuesta?', emoji: '💴', example: 'これは いくらですか？', exampleRom: 'Kore wa ikura desu ka?', exampleEs: '¿Cuánto cuesta esto?' },
     ],
   },
+  {
+    id: 'ie', name: 'いえ・うち', romaji: 'ie / uchi', nameEs: 'La casa', emoji: '🏠',
+    words: [
+      { word: 'いえ / うち', romaji: 'ie / uchi', es: 'casa (ie=formal, uchi=informal)', emoji: '🏠', example: 'うちに かえります。', exampleRom: 'Uchi ni kaerimasu.', exampleEs: 'Regreso a casa.' },
+      { word: 'へや', romaji: 'heya', es: 'habitación', emoji: '🚪', example: 'わたしの へやは ちいさいです。', exampleRom: 'Watashi no heya wa chiisai desu.', exampleEs: 'Mi habitación es pequeña.' },
+      { word: 'だいどころ', romaji: 'daidokoro', es: 'cocina', emoji: '🍳', example: 'だいどころで りょうりします。', exampleRom: 'Daidokoro de ryouri shimasu.', exampleEs: 'Cocino en la cocina.' },
+      { word: 'おふろ', romaji: 'ofuro', es: 'baño/tina', emoji: '🛁', example: 'まいばん おふろに はいります。', exampleRom: 'Maiban ofuro ni hairimasu.', exampleEs: 'Me baño todas las noches.' },
+      { word: 'リビング', romaji: 'ribingu', es: 'sala de estar', emoji: '🛋️', example: 'リビングで テレビを みます。', exampleRom: 'Ribingu de terebi wo mimasu.', exampleEs: 'Veo televisión en la sala.' },
+      { word: 'つくえ', romaji: 'tsukue', es: 'escritorio', emoji: '🪑', example: 'つくえの うえに ほんが あります。', exampleRom: 'Tsukue no ue ni hon ga arimasu.', exampleEs: 'Hay un libro sobre el escritorio.' },
+      { word: 'いす', romaji: 'isu', es: 'silla', emoji: '🪑', example: 'いすに すわってください。', exampleRom: 'Isu ni suwatte kudasai.', exampleEs: 'Por favor, siéntese.' },
+      { word: 'まど', romaji: 'mado', es: 'ventana', emoji: '🪟', example: 'まどを あけてください。', exampleRom: 'Mado wo akete kudasai.', exampleEs: 'Por favor, abra la ventana.' },
+      { word: 'ドア', romaji: 'doa', es: 'puerta', emoji: '🚪', example: 'ドアを しめてください。', exampleRom: 'Doa wo shimete kudasai.', exampleEs: 'Por favor, cierre la puerta.' },
+      { word: 'ベッド', romaji: 'beddo', es: 'cama', emoji: '🛏️', example: 'ベッドで ねます。', exampleRom: 'Beddo de nemasu.', exampleEs: 'Duermo en la cama.' },
+    ],
+  },
+  {
+    id: 'kimochi', name: 'きもち', romaji: 'kimochi', nameEs: 'Emociones y estado', emoji: '😊',
+    words: [
+      { word: 'うれしい', romaji: 'ureshii', es: 'feliz/contento', emoji: '😊', example: 'プレゼントを もらって うれしいです。', exampleRom: 'Purezento wo moratte ureshii desu.', exampleEs: 'Estoy contento/a de recibir el regalo.' },
+      { word: 'かなしい', romaji: 'kanashii', es: 'triste', emoji: '😢', example: 'その えいがは かなしいです。', exampleRom: 'Sono eiga wa kanashii desu.', exampleEs: 'Esa película es triste.' },
+      { word: 'つかれた', romaji: 'tsukareta', es: 'cansado/a', emoji: '😴', example: 'きょうは とても つかれました。', exampleRom: 'Kyou wa totemo tsukaremashita.', exampleEs: 'Hoy me cansé mucho.' },
+      { word: 'おなかが すいた', romaji: 'onaka ga suita', es: 'tengo hambre', emoji: '🍽️', example: 'おなかが すきました！', exampleRom: 'Onaka ga sukimashita!', exampleEs: '¡Tengo hambre!' },
+      { word: 'すき', romaji: 'suki', es: 'me gusta / gusto', emoji: '❤️', example: 'にほんごが すきです。', exampleRom: 'Nihongo ga suki desu.', exampleEs: 'Me gusta el japonés.' },
+      { word: 'きらい', romaji: 'kirai', es: 'no me gusta / disgusto', emoji: '💔', example: 'たばこが きらいです。', exampleRom: 'Tabako ga kirai desu.', exampleEs: 'No me gusta el tabaco.' },
+      { word: 'こわい', romaji: 'kowai', es: 'da miedo / aterrador', emoji: '😱', example: 'その えいがは こわいです。', exampleRom: 'Sono eiga wa kowai desu.', exampleEs: 'Esa película da miedo.' },
+      { word: 'たのしい', romaji: 'tanoshii', es: 'divertido/agradable', emoji: '😄', example: 'りょこうは とても たのしいです。', exampleRom: 'Ryokou wa totemo tanoshii desu.', exampleEs: 'El viaje es muy divertido.' },
+      { word: 'だいじょうぶ', romaji: 'daijoubu', es: 'está bien / no hay problema', emoji: '🙂', example: 'だいじょうぶですか？', exampleRom: 'Daijoubu desu ka?', exampleEs: '¿Estás bien? / ¿Todo bien?' },
+      { word: 'びっくりした', romaji: 'bikkuri shita', es: 'me sorprendí / ¡qué susto!', emoji: '😲', example: 'びっくりしました！', exampleRom: 'Bikkuri shimashita!', exampleEs: '¡Me sorprendí! / ¡Qué susto!' },
+    ],
+  },
 ];
 
 type Mode = 'browse' | 'flashcard' | 'quiz';

@@ -99,6 +99,36 @@ const SETS: VocabSet[] = [
       { word: '몇?', romanization: 'myeot?', es: '¿Cuántos? (con contador)', emoji: '❓', example: '몇 개예요?', exampleRom: 'Myeot gae-yeyo?', exampleEs: '¿Cuántos son? (¿cuántas unidades?)' },
     ],
   },
+  {
+    id: 'jip', name: '집', romanization: 'jip', nameEs: 'La casa', emoji: '🏠',
+    words: [
+      { word: '집 (集)', romanization: 'jip', es: 'casa', emoji: '🏠', example: '저는 집에 있어요.', exampleRom: 'Jeoneun jibe isseoyo.', exampleEs: 'Estoy en casa.' },
+      { word: '방 (房)', romanization: 'bang', es: 'habitación', emoji: '🚪', example: '제 방은 작아요.', exampleRom: 'Je bang-eun jagayo.', exampleEs: 'Mi habitación es pequeña.' },
+      { word: '부엌', romanization: 'bueok', es: 'cocina', emoji: '🍳', example: '부엌에서 요리해요.', exampleRom: 'Bueog-eseo yorihaeyo.', exampleEs: 'Cocino en la cocina.' },
+      { word: '화장실', romanization: 'hwajangsil', es: 'baño', emoji: '🚿', example: '화장실이 어디예요?', exampleRom: 'Hwajangsil-i eodiyeyo?', exampleEs: '¿Dónde está el baño?' },
+      { word: '거실', romanization: 'geosil', es: 'sala de estar', emoji: '🛋️', example: '거실에서 TV를 봐요.', exampleRom: 'Geosil-eseo tibireul bwayo.', exampleEs: 'Veo TV en la sala.' },
+      { word: '책상', romanization: 'chaeksang', es: 'escritorio', emoji: '🪑', example: '책상 위에 책이 있어요.', exampleRom: 'Chaeksang wie chaeg-i isseoyo.', exampleEs: 'Hay un libro sobre el escritorio.' },
+      { word: '침대', romanization: 'chimdae', es: 'cama', emoji: '🛏️', example: '침대가 편해요.', exampleRom: 'Chimdae-ga pyeonhaeyo.', exampleEs: 'La cama es cómoda.' },
+      { word: '창문', romanization: 'changmun', es: 'ventana', emoji: '🪟', example: '창문을 열어요.', exampleRom: 'Changmun-eul yeoreoyo.', exampleEs: 'Abro la ventana.' },
+      { word: '문', romanization: 'mun', es: 'puerta', emoji: '🚪', example: '문을 닫아 주세요.', exampleRom: 'Mun-eul dada juseyo.', exampleEs: 'Por favor, cierre la puerta.' },
+      { word: '냉장고', romanization: 'naengjanggo', es: 'refrigerador', emoji: '🧊', example: '냉장고에 우유가 있어요.', exampleRom: 'Naengjanggo-e uyu-ga isseoyo.', exampleEs: 'Hay leche en el refrigerador.' },
+    ],
+  },
+  {
+    id: 'gamjeong', name: '감정', romanization: 'gamjeong', nameEs: 'Emociones y estado', emoji: '😊',
+    words: [
+      { word: '행복해요', romanization: 'haengbokhaeyo', es: 'soy/estoy feliz', emoji: '😊', example: '오늘 정말 행복해요.', exampleRom: 'Oneul jeongmal haengbokhaeyo.', exampleEs: 'Hoy estoy muy feliz.' },
+      { word: '슬퍼요', romanization: 'seulpeoyo', es: 'estoy triste', emoji: '😢', example: '영화가 슬퍼요.', exampleRom: 'Yeonghwa-ga seulpeoyo.', exampleEs: 'La película es triste.' },
+      { word: '피곤해요', romanization: 'pigonhaeyo', es: 'estoy cansado/a', emoji: '😴', example: '오늘 너무 피곤해요.', exampleRom: 'Oneul neomu pigonhaeyo.', exampleEs: 'Hoy estoy muy cansado/a.' },
+      { word: '배고파요', romanization: 'baegopayo', es: 'tengo hambre', emoji: '🍽️', example: '밥 먹어요, 배고파요!', exampleRom: 'Bap meogeoyo, baegopayo!', exampleEs: '¡Vamos a comer, tengo hambre!' },
+      { word: '좋아요', romanization: 'johayo', es: 'me gusta / está bien', emoji: '👍', example: '이 음악이 너무 좋아요.', exampleRom: 'I eumagui neomu johayo.', exampleEs: 'Me gusta mucho esta música.' },
+      { word: '싫어요', romanization: 'sireoyo', es: 'no me gusta / no quiero', emoji: '👎', example: '매운 음식이 싫어요.', exampleRom: 'Maeun eumsig-i sireoyo.', exampleEs: 'No me gusta la comida picante.' },
+      { word: '무서워요', romanization: 'museowayo', es: 'tengo miedo / da miedo', emoji: '😱', example: '귀신이 무서워요!', exampleRom: 'Gwisin-i museowayo!', exampleEs: '¡Los fantasmas me dan miedo!' },
+      { word: '기분이 좋아요', romanization: 'gibun-i johayo', es: 'me siento bien / de buen humor', emoji: '😄', example: '오늘 기분이 너무 좋아요!', exampleRom: 'Oneul gibun-i neomu johayo!', exampleEs: '¡Hoy me siento muy bien!' },
+      { word: '괜찮아요', romanization: 'gwaenchanayo', es: 'estoy bien / no importa', emoji: '🙂', example: '괜찮아요, 걱정하지 마세요.', exampleRom: 'Gwaenchanayo, geokjeongha-ji maseyo.', exampleEs: 'Estoy bien, no se preocupe.' },
+      { word: '신나요', romanization: 'sinnayo', es: 'estoy emocionado/a', emoji: '🤩', example: '여행이라서 신나요!', exampleRom: 'Yeohaeng-iraseo sinnayo!', exampleEs: '¡Estoy emocionado/a porque vamos de viaje!' },
+    ],
+  },
 ];
 
 type Mode = 'browse' | 'flashcard' | 'quiz';

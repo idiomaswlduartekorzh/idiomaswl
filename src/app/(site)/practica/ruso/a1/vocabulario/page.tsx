@@ -99,6 +99,36 @@ const SETS: VocabSet[] = [
       { word: 'первый', translit: 'pervyy', es: 'primero', emoji: '🥇', example: 'Первый урок.', exampleTranslit: 'Pervyy urok.', exampleEs: 'Primera clase.' },
     ],
   },
+  {
+    id: 'dom', name: 'Дом', nameTranslit: 'Dom', nameEs: 'La casa', emoji: '🏠',
+    words: [
+      { word: 'дом', translit: 'dom', es: 'casa/edificio', emoji: '🏠', example: 'Я живу в большом доме.', exampleTranslit: 'Ya zhivu v bolshom dome.', exampleEs: 'Vivo en una casa grande.' },
+      { word: 'квартира', translit: 'kvartira', es: 'apartamento', emoji: '🏢', example: 'Моя квартира на третьем этаже.', exampleTranslit: 'Moya kvartira na tretyem etazhe.', exampleEs: 'Mi apartamento está en el tercer piso.' },
+      { word: 'комната', translit: 'komnata', es: 'habitación', emoji: '🚪', example: 'В квартире три комнаты.', exampleTranslit: 'V kvartire tri komnaty.', exampleEs: 'El apartamento tiene tres habitaciones.' },
+      { word: 'кухня', translit: 'kukhnya', es: 'cocina', emoji: '🍳', example: 'Мама готовит на кухне.', exampleTranslit: 'Mama gotovit na kukhne.', exampleEs: 'Mamá cocina en la cocina.' },
+      { word: 'ванная', translit: 'vannaya', es: 'baño', emoji: '🚿', example: 'Ванная комната слева.', exampleTranslit: 'Vannaya komnata sleva.', exampleEs: 'El baño está a la izquierda.' },
+      { word: 'стол', translit: 'stol', es: 'mesa', emoji: '🪑', example: 'Книга на столе.', exampleTranslit: 'Kniga na stole.', exampleEs: 'El libro está sobre la mesa.' },
+      { word: 'стул', translit: 'stul', es: 'silla', emoji: '🪑', example: 'Сядь на стул!', exampleTranslit: 'Syad\' na stul!', exampleEs: '¡Siéntate en la silla!' },
+      { word: 'окно', translit: 'okno', es: 'ventana', emoji: '🪟', example: 'Открой окно, жарко.', exampleTranslit: 'Otkroy okno, zharko.', exampleEs: 'Abre la ventana, hace calor.' },
+      { word: 'дверь', translit: 'dver\'', es: 'puerta', emoji: '🚪', example: 'Закрой дверь, пожалуйста.', exampleTranslit: 'Zakroy dver\', pozhaluysta.', exampleEs: 'Cierra la puerta, por favor.' },
+      { word: 'кровать', translit: 'krovat\'', es: 'cama', emoji: '🛏️', example: 'Иди спать, уже поздно!', exampleTranslit: 'Idi spat\', uzhe pozdno!', exampleEs: '¡Ve a dormir, ya es tarde!' },
+    ],
+  },
+  {
+    id: 'odezhda', name: 'Одежда', nameTranslit: 'Odezhda', nameEs: 'La ropa', emoji: '👗',
+    words: [
+      { word: 'рубашка', translit: 'rubashka', es: 'camisa', emoji: '👕', example: 'Белая рубашка красивая.', exampleTranslit: 'Belaya rubashka krasivaya.', exampleEs: 'La camisa blanca es bonita.' },
+      { word: 'брюки', translit: 'bryuki', es: 'pantalón', emoji: '👖', example: 'Где мои чёрные брюки?', exampleTranslit: 'Gde moi chyornye bryuki?', exampleEs: '¿Dónde están mis pantalones negros?' },
+      { word: 'платье', translit: 'plat\'ye', es: 'vestido', emoji: '👗', example: 'Она носит красивое платье.', exampleTranslit: 'Ona nosit krasivoe plat\'ye.', exampleEs: 'Ella lleva un vestido bonito.' },
+      { word: 'куртка', translit: 'kurtka', es: 'chaqueta/chamarra', emoji: '🧥', example: 'Надень куртку, холодно!', exampleTranslit: 'Naden\' kurtku, kholodno!', exampleEs: '¡Ponte la chaqueta, hace frío!' },
+      { word: 'ботинки', translit: 'botinki', es: 'zapatos', emoji: '👞', example: 'Новые ботинки очень удобные.', exampleTranslit: 'Novye botinki ochen\' udobnye.', exampleEs: 'Los zapatos nuevos son muy cómodos.' },
+      { word: 'шапка', translit: 'shapka', es: 'gorro/gorra', emoji: '🧢', example: 'Зимой я ношу шапку.', exampleTranslit: 'Zimoy ya noshu shapku.', exampleEs: 'En invierno uso gorro.' },
+      { word: 'шарф', translit: 'sharf', es: 'bufanda', emoji: '🧣', example: 'Купи тёплый шарф.', exampleTranslit: 'Kupi tyoplyy sharf.', exampleEs: 'Compra una bufanda cálida.' },
+      { word: 'носки', translit: 'noski', es: 'calcetines', emoji: '🧦', example: 'Я купил три пары носков.', exampleTranslit: 'Ya kupil tri pary noskov.', exampleEs: 'Compré tres pares de calcetines.' },
+      { word: 'пальто', translit: 'pal\'to', es: 'abrigo', emoji: '🧥', example: 'Это пальто очень дорогое.', exampleTranslit: 'Eto pal\'to ochen\' dorogoye.', exampleEs: 'Este abrigo es muy caro.' },
+      { word: 'свитер', translit: 'sviter', es: 'suéter', emoji: '🧶', example: 'Мама связала свитер.', exampleTranslit: 'Mama svyazala sviter.', exampleEs: 'Mamá tejió un suéter.' },
+    ],
+  },
 ];
 
 type Mode = 'browse' | 'flashcard' | 'quiz';

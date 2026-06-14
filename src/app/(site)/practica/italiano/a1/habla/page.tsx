@@ -20,6 +20,14 @@ const PHRASES: Phrase[] = [
   { id: 10, phrase: 'Quanto costa?', phonetic: '[KWAN-to KOS-ta]', es: '¿Cuánto cuesta?', note: '"Quanto" = cuánto. "Costa" de "costare" = costar. Exactamente igual que en español en estructura y significado. Fácil de recordar.', category: 'Supervivencia' },
   { id: 11, phrase: 'Ho bisogno di aiuto.', phonetic: '[o bi-ZON-yo di a-YU-to]', es: 'Necesito ayuda.', note: '"Ho bisogno di" = tengo necesidad de = necesito. La "h" es muda. "Aiuto" = ayuda (cognado). Pronuncia: [o bi-ZON-yo di a-YU-to].', category: 'Supervivencia' },
   { id: 12, phrase: 'Arrivederci!', phonetic: '[ar-ri-ve-DER-chi]', es: '¡Hasta luego!', note: '"Arrivederci" = hasta volvernos a ver (a + rivedere + ci). Informal: "Ciao!" o "A presto!" (hasta pronto). La "c" antes de "i" suena [ch].', category: 'Despedidas' },
+  { id: 13, phrase: 'Come si dice ___ in italiano?', phonetic: '[KO-me si DI-che ... in i-ta-LYA-no]', es: '¿Cómo se dice ___ en italiano?', note: '"Come si dice" = ¿cómo se dice? Sujeto impersonal "si". Ejemplo: "Come si dice \'gracias\' in italiano?" → "Grazie!" Indispensable para aprender vocabulario en contexto.', category: 'Ayuda' },
+  { id: 14, phrase: 'Può parlare più lentamente?', phonetic: '[pwò par-LA-re pyu len-ta-MEN-te]', es: '¿Puede hablar más despacio?', note: '"Può" = puede (Lei formal). "Parlare" = hablar. "Più lentamente" = más lentamente. Alternativa informal: "Parla più piano?" (piano = despacio/suave). Muy útil con hablantes nativos rápidos.', category: 'Ayuda' },
+  { id: 15, phrase: 'Sto bene, grazie!', phonetic: '[sto BE-ne GRAT-tsje]', es: '¡Estoy bien, gracias!', note: '"Sto bene" usa STARE, no essere. Regla: para estados temporales → stare. "Come stai?" → "Sto bene!" "Come sta?" (formal) → "Sto benissimo!" (muy bien) o "Non sto bene" (no estoy bien).', category: 'Saludos' },
+  { id: 16, phrase: 'Ho fame / Ho sete.', phonetic: '[o FA-me] / [o SE-te]', es: 'Tengo hambre / Tengo sed.', note: '"Avere fame/sete" = tener hambre/sed. En italiano las sensaciones físicas usan AVERE (tener): ho fame, ho sete, ho sonno (sueño), ho freddo (frío), ho caldo (calor), ho paura (miedo).', category: 'Supervivencia' },
+  { id: 17, phrase: 'Mi dispiace.', phonetic: '[mi dis-PYA-che]', es: 'Lo siento / Me arrepiento.', note: '"Mi dispiace" = literalmente "me duele/pesa". Scusa/Scusi = disculpa (para chocar, interrumpir). Mi dispiace = lo siento (para condolencias o errores graves). La "c" antes de "e" suena [ch].', category: 'Cortesía' },
+  { id: 18, phrase: 'Va bene!', phonetic: '[va BE-ne]', es: '¡Está bien! / ¡De acuerdo!', note: '"Va bene" = lit. "va bien". Equivale a "OK", "de acuerdo", "está bien". "Va benissimo!" = perfectísimo. Pregunta: "Va bene così?" (¿Así está bien?) Respuesta: "Sì, va benissimo!"', category: 'Cortesía' },
+  { id: 19, phrase: 'A che ora...?', phonetic: '[a ke O-ra]', es: '¿A qué hora...?', note: '"A che ora" = a qué hora. Ejemplo: "A che ora chiude il museo?" (¿A qué hora cierra el museo?). "A che ora ci vediamo?" (¿A qué hora nos vemos?). Para decir la hora: "Sono le tre" (Son las tres).', category: 'Supervivencia' },
+  { id: 20, phrase: 'Vorrei un caffè, per favore.', phonetic: '[vor-REI un kaf-FE per fa-VO-re]', es: 'Quisiera un café, por favor.', note: '"Vorrei" = quisiera (condicional de volere). Es más educado que "voglio" (quiero). Úsalo en bares, restaurantes y tiendas. "Vorrei un cornetto e un cappuccino" (quisiera un croissant y un capuchino).', category: 'Supervivencia' },
 ];
 
 const CATEGORIES = ['Todos', 'Saludos', 'Presentación', 'Cortesía', 'Ayuda', 'Supervivencia', 'Despedidas'];
@@ -49,7 +57,7 @@ export default function HablaItalianoA1() {
         <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Espressione orale · Italiano A1</p>
         <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Frasi di sopravvivenza</h1>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0 0 0.75rem' }}>
-          12 frases esenciales con pronunciación detallada y notas para hispanohablantes. Practica en voz alta y marca las que dominas.
+          20 frases esenciales con pronunciación detallada y notas para hispanohablantes. Practica en voz alta y marca las que dominas.
         </p>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
