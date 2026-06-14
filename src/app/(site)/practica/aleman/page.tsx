@@ -16,7 +16,7 @@ const NIVELES = [
     href: '/practica/aleman/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: 'Grundkenntnisse', desc: 'Präteritum, Komparativ, Einkaufen gehen und Personen beschreiben.', available: false },
+  { nivel: 'A2', name: 'Grundkenntnisse', desc: 'Perfekt, Dativ, Modalverben im Präteritum, trennbare Verben und Komparativ.', href: '/practica/aleman/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
   { nivel: 'B1', name: 'Mittelstufe', desc: 'Konjunktiv II, Futur, schriftliche Produktion, Hörverstehen.', available: false },
   { nivel: 'B2', name: 'Gehobene Mittelstufe', desc: 'Passiv, Goethe B2-Vorbereitung, akademisches Vokabular.', available: false },
   { nivel: 'C1', name: 'Fortgeschritten', desc: 'Komplexe Grammatik, Kollokationen, Goethe C1-Vorbereitung.', available: false },

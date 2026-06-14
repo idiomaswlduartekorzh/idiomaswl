@@ -16,7 +16,7 @@ const NIVELES = [
     href: '/practica/portugues/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: 'Elementar', desc: 'Pretérito perfeito, verbos irregulares, fazer compras e descrever pessoas.', available: false },
+  { nivel: 'A2', name: 'Elementar', desc: 'Pretérito perfeito, imperfeito, pronomes oblíquos, ser vs estar e comparativos.', href: '/practica/portugues/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
   { nivel: 'B1', name: 'Intermediário', desc: 'Subjuntivo, futuro do pretérito, produção escrita, compreensão oral.', available: false },
   { nivel: 'B2', name: 'Intermediário avançado', desc: 'Preparação CELPE-Bras, vocabulário acadêmico, colocações.', available: false },
   { nivel: 'C1', name: 'Avançado', desc: 'Estilo formal, nuances gramaticais, nível superior CELPE-Bras.', available: false },

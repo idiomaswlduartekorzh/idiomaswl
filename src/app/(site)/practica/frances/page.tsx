@@ -16,7 +16,7 @@ const NIVELES = [
     href: '/practica/frances/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: 'Élémentaire', desc: 'Passé composé, imparfait, faire des achats et décrire des personnes.', available: false },
+  { nivel: 'A2', name: 'Élémentaire', desc: 'Passé composé, imparfait, pronoms COD/COI, comparatif/superlatif et futur.', href: '/practica/frances/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
   { nivel: 'B1', name: 'Intermédiaire', desc: 'Subjonctif, futur simple, production écrite, compréhension orale.', available: false },
   { nivel: 'B2', name: 'Intermédiaire avancé', desc: 'Conditionnel, préparation DELF B2, vocabulaire soutenu.', available: false },
   { nivel: 'C1', name: 'Avancé', desc: 'Style formel, préparation DALF C1, nuances grammaticales.', available: false },

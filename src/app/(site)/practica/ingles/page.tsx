@@ -16,7 +16,7 @@ const NIVELES = [
     href: '/practica/ingles/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: 'Elemental', desc: 'Pasado simple, comparativos, shopping y descripciones de personas.', available: false },
+  { nivel: 'A2', name: 'Elemental', desc: 'Pasado simple, comparativos, present continuous, going to/will y modales (can/could/should).', href: '/practica/ingles/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
   { nivel: 'B1', name: 'Intermedio', desc: 'Present perfect, primer condicional, ensayos de opinión, listening.', available: false },
   { nivel: 'B2', name: 'Intermedio alto', desc: 'Reported speech, preparación IELTS, vocabulario académico.', available: false },
   { nivel: 'C1', name: 'Avanzado', desc: 'Gramática compleja, colocaciones, escritura avanzada y nivel CAE.', available: false },
