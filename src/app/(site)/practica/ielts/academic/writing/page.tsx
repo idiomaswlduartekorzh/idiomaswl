@@ -18,8 +18,8 @@ const TASKS = [
     icon: '📝',
     time: '40 min · 250+ palabras',
     desc: 'Ensayo argumentativo: opinión, discusión de dos posturas, problema-solución, ventajas-desventajas.',
-    href: '#',
-    available: false,
+    href: '/practica/ielts/academic/writing/task2',
+    available: true,
   },
 ];
 
