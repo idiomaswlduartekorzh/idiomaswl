@@ -190,15 +190,23 @@ function ComingSoonCard({ title, tags }: { title: string; tags: string[] }) {
 
 // ─── Root ─────────────────────────────────────────────────────────────────────
 
-const SECTIONS = [
+const EXAM_TYPES = [
   {
-    id: 'reading', label: 'Reading', icon: '📖',
-    desc: 'True/False/Not Given · Matching · Multiple choice',
-    badge: '1 ejercicio disponible',
+    id: 'academic',
+    label: 'Academic',
+    icon: '🎓',
+    desc: 'Para universidades y programas académicos. Band objetivo 6–8.',
+    href: '/practica/ielts/academic',
+    available: true,
   },
-  { id: 'listening', label: 'Listening', icon: '🎧', desc: 'Próximamente' },
-  { id: 'writing',   label: 'Writing',   icon: '✏️', desc: 'Task 1 → Conectores disponible en /practica/ielts-writing-conectores' },
-  { id: 'speaking',  label: 'Speaking',  icon: '🗣️', desc: 'Próximamente' },
+  {
+    id: 'general',
+    label: 'General Training',
+    icon: '🌐',
+    desc: 'Para migración y trabajo. UK, Canadá, Australia.',
+    href: '#',
+    available: false,
+  },
 ];
 
 export default function IELTSHubClient() {
@@ -214,10 +222,10 @@ export default function IELTSHubClient() {
               <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Práctica / IELTS</span>
             </div>
 
-            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />🇬🇧 IELTS Academic</p>
+            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />🇬🇧 IELTS</p>
             <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Práctica de IELTS</h1>
             <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem' }}>
-              El IELTS evalúa Reading, Listening, Writing y Speaking. Nivel objetivo: Band 6–8.
+              El IELTS evalúa Reading, Listening, Writing y Speaking. Elige tu modalidad.
             </p>
 
             {/* Band scale */}
@@ -230,40 +238,48 @@ export default function IELTSHubClient() {
             </div>
 
             <div className="wl-exams-catalog">
-              {SECTIONS.map(s => (
-                <button key={s.id}
-                  onClick={() => s.id === 'reading' && setSection(s.id)}
-                  className={`wl-catalog-card${s.id !== 'reading' ? ' wl-catalog-card--soon' : ''}`}
-                  style={{ '--exam-color': '#0f3d8c', textAlign: 'left', cursor: s.id === 'reading' ? 'pointer' : 'default', appearance: 'none', WebkitAppearance: 'none', margin: 0, padding: 0, font: 'inherit', color: 'inherit', display: 'flex', flexDirection: 'column' } as React.CSSProperties}
-                >
-                  <div className="wl-catalog-card__bar" />
-                  <div className="wl-catalog-card__body">
-                    <div className="wl-catalog-card__top">
-                      <span style={{ fontSize: '1.8rem' }}>{s.icon}</span>
-                      {s.id !== 'reading' && <span className="wl-catalog-card__badge">Próximamente</span>}
+              {EXAM_TYPES.map(et => (
+                et.available
+                  ? (
+                    <Link key={et.id} href={et.href}
+                      className="wl-catalog-card"
+                      style={{ '--exam-color': '#0f3d8c', textAlign: 'left', display: 'flex', flexDirection: 'column', textDecoration: 'none' } as React.CSSProperties}
+                    >
+                      <div className="wl-catalog-card__bar" />
+                      <div className="wl-catalog-card__body">
+                        <div className="wl-catalog-card__top">
+                          <span style={{ fontSize: '1.8rem' }}>{et.icon}</span>
+                        </div>
+                        <h2 className="wl-catalog-card__name">{et.label}</h2>
+                        <p className="wl-catalog-card__tagline">{et.desc}</p>
+                      </div>
+                      <div className="wl-catalog-card__footer">
+                        <span>IELTS</span>
+                        <span className="wl-catalog-card__cta">Entrar →</span>
+                      </div>
+                    </Link>
+                  )
+                  : (
+                    <div key={et.id}
+                      className="wl-catalog-card wl-catalog-card--soon"
+                      style={{ '--exam-color': '#0f3d8c', textAlign: 'left', display: 'flex', flexDirection: 'column' } as React.CSSProperties}
+                    >
+                      <div className="wl-catalog-card__bar" />
+                      <div className="wl-catalog-card__body">
+                        <div className="wl-catalog-card__top">
+                          <span style={{ fontSize: '1.8rem' }}>{et.icon}</span>
+                          <span className="wl-catalog-card__badge">Próximamente</span>
+                        </div>
+                        <h2 className="wl-catalog-card__name">{et.label}</h2>
+                        <p className="wl-catalog-card__tagline">{et.desc}</p>
+                      </div>
+                      <div className="wl-catalog-card__footer">
+                        <span>IELTS</span>
+                        <span className="wl-catalog-card__cta">Próximamente</span>
+                      </div>
                     </div>
-                    <h2 className="wl-catalog-card__name">{s.label}</h2>
-                    <p className="wl-catalog-card__tagline">{s.desc}</p>
-                  </div>
-                  <div className="wl-catalog-card__footer">
-                    <span>IELTS Academic</span>
-                    <span className="wl-catalog-card__cta">{s.id === 'reading' ? 'Practicar →' : 'Próximamente'}</span>
-                  </div>
-                </button>
+                  )
               ))}
-            </div>
-
-            {/* Writing Task 1 link */}
-            <div style={{ marginTop: '1.5rem', padding: '1rem 1.25rem', borderRadius: 14, background: 'rgba(15,61,140,0.06)', border: '1.5px solid rgba(15,61,140,0.2)' }}>
-              <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                IELTS Writing Task 1 — YA DISPONIBLE
-              </span>
-              <p style={{ margin: '0.35rem 0 0.65rem', fontSize: '0.9rem', color: 'var(--ink-2)' }}>
-                Practica la coherencia y cohesión con conectores reales. Ejercicio completo con feedback Band 6–7.
-              </p>
-              <Link href="/practica/ielts-writing-conectores" className="btn btn-sm" style={{ fontSize: '0.84rem' }}>
-                Ir al ejercicio →
-              </Link>
             </div>
           </div>
         </div>
