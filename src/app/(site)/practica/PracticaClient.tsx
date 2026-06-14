@@ -25,11 +25,11 @@ const LANGUAGES: LangEntry[] = [
   { slug: 'english',    flag: '🇬🇧', name: 'Inglés',    tagline: 'Lectura A1, gramática interactiva, escritura y frases de supervivencia.',  color: '#0066cc', available: true,  href: '/practica/ingles',    tools: '4 habilidades A1' },
   { slug: 'german',     flag: '🇩🇪', name: 'Alemán',    tagline: 'Lesen, Grammatik, Schreiben y Sprechen — nivel A1.',                        color: '#dd0000', available: true,  href: '/practica/aleman',    tools: '4 habilidades A1' },
   { slug: 'french',     flag: '🇫🇷', name: 'Francés',   tagline: 'Lecture, grammaire, écriture y expression orale — nivel A1.',              color: '#003189', available: true,  href: '/practica/frances',   tools: '4 habilidades A1' },
-  { slug: 'italian',    flag: '🇮🇹', name: 'Italiano',  tagline: 'Artículos, tiempos verbales y gramática interactiva.',                      color: '#009246', available: true,  href: '/practica/italiano/grammatica', tools: '1 herramienta' },
+  { slug: 'italian',    flag: '🇮🇹', name: 'Italiano',  tagline: 'Artículos, tiempos verbales y gramática interactiva — nivel A1.',         color: '#009246', available: true,  href: '/practica/italiano',  tools: '6 habilidades A1' },
   { slug: 'portuguese', flag: '🇧🇷', name: 'Portugués', tagline: 'Leitura, gramática, escrita y expressão oral — nivel A1.',                  color: '#009c3b', available: true,  href: '/practica/portugues', tools: '4 habilidades A1' },
-  { slug: 'russian',    flag: '🇷🇺', name: 'Ruso',      tagline: 'Alfabeto cirílico, casos y pronunciación desde cero.',                      color: '#cc0000', available: false },
-  { slug: 'korean',     flag: '🇰🇷', name: 'Coreano',   tagline: 'Hangul, batchim, partículas y pronunciación interactiva.',                  color: '#534AB7', available: true  },
-  { slug: 'japanese',   flag: '🇯🇵', name: 'Japonés',   tagline: 'Hiragana, katakana, kanji básico y entonación.',                            color: '#bc002d', available: false },
+  { slug: 'russian',    flag: '🇷🇺', name: 'Ruso',      tagline: 'Alfabeto cirílico, casos, pronunciación y gramática — nivel A1.',           color: '#cc0000', available: true,  href: '/practica/ruso',      tools: '6 habilidades A1' },
+  { slug: 'korean',     flag: '🇰🇷', name: 'Coreano',   tagline: 'Hangul, batchim, partículas y pronunciación interactiva.',                  color: '#534AB7', available: true,  href: '/practica/coreano',   tools: '6 habilidades A1' },
+  { slug: 'japanese',   flag: '🇯🇵', name: 'Japonés',   tagline: 'Hiragana, katakana, cópula は〜です y vocabulario — nivel A1.',              color: '#bc002d', available: true,  href: '/practica/japones',   tools: '6 habilidades A1' },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
