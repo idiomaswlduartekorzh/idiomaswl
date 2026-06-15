@@ -16,7 +16,7 @@ const SKILLS = [
     label: 'Reading',
     icon: '📖',
     desc: 'True/False/Not Given · Matching · Multiple Choice. 60 minutos, 40 preguntas.',
-    href: '/practica/ielts',
+    href: '/practica/ielts/reading',
     available: true,
   },
   {
