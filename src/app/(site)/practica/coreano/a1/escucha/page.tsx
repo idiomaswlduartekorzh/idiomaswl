@@ -1,4 +1,17 @@
+import type { Metadata } from 'next'
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Comprensión Auditiva en Coreano A1 — Ejercicios interactivos gratis | Idiomas WeLearn',
+  description: 'Practica comprensión auditiva en coreano nivel A1 con ejercicios de comprensión auditiva con transcripciones. Ejercicios adaptativos, feedback inmediato y progresión pedagógica. Gratis en Idiomas WeLearn.',
+  keywords: ['escucha coreano', 'ejercicios de coreano a1', 'coreano a1 gratis', 'aprender coreano', 'practicar coreano online'],
+  openGraph: {
+    title: 'Comprensión Auditiva en Coreano A1 | Idiomas WeLearn',
+    description: 'Ejercicios interactivos de comprensión auditiva en coreano nivel A1. Gratis, adaptativo y con feedback inmediato.',
+    type: 'website', locale: 'es_CO',
+  },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano/a1/escucha' },
+}
 
 const COLOR = '#534AB7';
 

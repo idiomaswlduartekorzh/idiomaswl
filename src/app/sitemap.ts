@@ -50,6 +50,63 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     })),
 
+    // ── Practice — language hubs ───────────────────────────────────────────────
+    ...(['ingles', 'frances', 'portugues', 'aleman', 'italiano', 'coreano', 'japones', 'ruso'] as const).map((lang) => ({
+      url: `${BASE}/practica/${lang}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    })),
+
+    // ── Practice — level pages ────────────────────────────────────────────────
+    ...([] as { lang: string; level: string }[]).concat(
+      ['ingles', 'frances', 'portugues', 'aleman'].flatMap((lang) =>
+        ['a1', 'a2'].map((level) => ({ lang, level }))
+      ),
+      ['italiano', 'coreano', 'japones', 'ruso'].map((lang) => ({ lang, level: 'a1' }))
+    ).map(({ lang, level }) => ({
+      url: `${BASE}/practica/${lang}/${level}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.75,
+    })),
+
+    // ── Practice — skill pages ────────────────────────────────────────────────
+    ...([] as { lang: string; level: string; skill: string }[]).concat(
+      ['ingles', 'frances', 'portugues', 'aleman'].flatMap((lang) =>
+        ['a1', 'a2'].flatMap((level) =>
+          ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'escucha'].map((skill) => ({ lang, level, skill }))
+        )
+      ),
+      ['italiano', 'coreano', 'japones', 'ruso'].flatMap((lang) =>
+        ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'escucha'].map((skill) => ({ lang, level: 'a1', skill }))
+      )
+    ).map(({ lang, level, skill }) => ({
+      url: `${BASE}/practica/${lang}/${level}/${skill}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.65,
+    })),
+
+    // ── Practice — IELTS ──────────────────────────────────────────────────────
+    { url: `${BASE}/practica/ielts`,                          lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
+    { url: `${BASE}/practica/ielts/academic`,                 lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.8  },
+    { url: `${BASE}/practica/ielts/academic/writing`,         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.75 },
+    { url: `${BASE}/practica/ielts/academic/writing/task1`,   lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7  },
+    { url: `${BASE}/practica/ielts/academic/writing/task2`,   lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7  },
+    ...(['introduccion', 'overview', 'tendencias', 'comparaciones', 'procesos', 'mapas', 'tarea-completa'] as const).map((s) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task1/${s}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.65,
+    })),
+    ...(['tipo-ensayo', 'introduccion', 'parrafos-cuerpo', 'linking-language', 'conclusion', 'tarea-completa'] as const).map((s) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/${s}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.65,
+    })),
+
     // ── Korean lesson steps ────────────────────────────────────────────────────
     ...PUBLISHED_DAYS.map((day) => ({
       url: `${BASE}/courses/korean/step/${day}`,
