@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Japonés — Elige tu nivel JLPT | Idiomas WeLearn',
@@ -24,6 +25,15 @@ const NIVELES = [
 
 export default function JaponesPage() {
   return (
+    <>
+    <CourseSchema
+      name="Práctica de Japonés — Ejercicios interactivos JLPT"
+      description="Ejercicios de japonés por nivel JLPT: A1 disponible. Hiragana, Katakana, vocabulario y gramática."
+      url="https://idiomaswl.com/practica/japones"
+      educationalLevel="A1,N5"
+      teaches="Japonés, JLPT, Hiragana, Katakana"
+      inLanguage="ja"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 840 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
@@ -70,5 +80,6 @@ export default function JaponesPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

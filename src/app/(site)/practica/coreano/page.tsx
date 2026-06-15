@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import KoreanToolsClient from './KoreanToolsClient';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Coreano — Elige tu nivel TOPIK | Idiomas WeLearn',
@@ -23,13 +25,22 @@ const NIVELES = [
 ];
 
 const HERRAMIENTAS = [
-  { name: '🔊 Lectura Coreana', desc: 'Ciclo de lectura A1–B1 con descomposición de sílabas Hangul y romanización.', href: '/practica', tag: 'En Práctica principal' },
+  { name: '🔊 Lector Hangul', desc: 'Ciclo de lectura A1–B1 con descomposición de sílabas Hangul y romanización.', href: '/practica/coreano#herramientas', tag: 'En esta página' },
   { name: '🎤 Expresión Oral 1', desc: 'Introducción en coreano: 자기소개 (jagi sogae) con frases guiadas.', href: '/practica/korean-speaking-1', tag: 'Actividad' },
   { name: '📚 Vocabulario', desc: 'Palabras esenciales en coreano organizadas por tema con tarjetas de memoria.', href: '/practica/vocabulario-coreano', tag: 'Actividad' },
 ];
 
 export default function CoreanoPage() {
   return (
+    <>
+    <CourseSchema
+      name="Práctica de Coreano — Hangul y gramática TOPIK"
+      description="Ejercicios interactivos de coreano por nivel TOPIK. Hangul, partículas, verbos y vocabulario esencial."
+      url="https://idiomaswl.com/practica/coreano"
+      educationalLevel="A1,A2,B1"
+      teaches="Coreano, Hangul, TOPIK"
+      inLanguage="es"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 840 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
@@ -88,5 +99,7 @@ export default function CoreanoPage() {
         </div>
       </div>
     </section>
+    <KoreanToolsClient />
+    </>
   );
 }

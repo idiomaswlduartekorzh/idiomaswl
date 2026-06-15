@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import TTSPlayer from '@/components/practica/TTSPlayer';
 
 export const metadata: Metadata = {
   title: 'Português A1 Compreensão auditiva — Próximamente | Idiomas WeLearn',
@@ -79,6 +80,7 @@ export default function EscuchaPortuguesA1() {
                 <div style={{ fontSize:'0.65rem', fontWeight:800, color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.5rem' }}>Script</div>
                 <p style={{ margin:'0 0 0.85rem', fontSize:'0.88rem', color:'var(--ink)', lineHeight:1.65, fontStyle:'italic', borderLeft:`3px solid rgba(0,156,59,0.3)`, paddingLeft:'0.75rem' }}>
                   {ex.script}
+                <TTSPlayer text={ex.script} lang="pt-BR" label="Escuchar script" />
                 </p>
                 <div style={{ fontSize:'0.65rem', fontWeight:800, color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.4rem' }}>Perguntas de compreensão</div>
                 {ex.questions.map((q,i)=>(

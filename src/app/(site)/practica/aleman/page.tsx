@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Alemán — Elige tu nivel MCER | Idiomas WeLearn',
@@ -24,6 +25,15 @@ const NIVELES = [
 
 export default function AlemanPage() {
   return (
+    <>
+    <CourseSchema
+      name="Práctica de Alemán — Ejercicios interactivos MCER"
+      description="Ejercicios de alemán por nivel MCER: A1 y A2 disponibles. Vocabulario, gramática, escritura, habla y escucha."
+      url="https://idiomaswl.com/practica/aleman"
+      educationalLevel="A1,A2"
+      teaches="Alemán, Goethe-Zertifikat"
+      inLanguage="de"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 840 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
@@ -68,5 +78,6 @@ export default function AlemanPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

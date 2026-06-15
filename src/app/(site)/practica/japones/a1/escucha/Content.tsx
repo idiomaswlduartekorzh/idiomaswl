@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TTSPlayer from '@/components/practica/TTSPlayer';
 
 const COLOR = '#bc002d';
 
@@ -133,7 +134,7 @@ export default function EscuchaJaponesA1() {
                     <span style={{ fontSize: '0.68rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{ex.duration} · {ex.topic}</span>
                   </div>
                 </div>
-                <div style={{ padding: '0.5rem 0.85rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', fontSize: '0.78rem', color: 'var(--muted)', flexShrink: 0 }}>🎵 Audio próximamente</div>
+                <TTSPlayer text={ex.script.map(l => l.text).join(' ')} lang="ja-JP" label="Escuchar diálogo" />
               </div>
 
               <div style={{ marginBottom: '1.1rem' }}>

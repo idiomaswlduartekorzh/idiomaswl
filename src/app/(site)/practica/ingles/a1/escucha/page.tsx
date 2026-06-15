@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import TTSPlayer from '@/components/practica/TTSPlayer';
 
 export const metadata: Metadata = {
   title: 'Inglés A1 Escucha — Próximamente | Idiomas WeLearn',
@@ -81,6 +82,7 @@ export default function EscuchaInglesA1() {
                 <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>Script (texto que se grabará)</div>
                 <p style={{ margin: '0 0 0.85rem', fontSize: '0.88rem', color: 'var(--ink)', lineHeight: 1.65, fontStyle: 'italic', borderLeft: `3px solid rgba(3,105,161,0.3)`, paddingLeft: '0.75rem' }}>
                   {ex.script}
+                <TTSPlayer text={ex.script} lang="en-GB" label="Escuchar script" />
                 </p>
                 <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem' }}>Preguntas que se harán</div>
                 {ex.questions.map((q, i) => (

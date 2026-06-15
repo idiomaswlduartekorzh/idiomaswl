@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link';
+import TTSPlayer from '@/components/practica/TTSPlayer';
 
 export const metadata: Metadata = {
   title: 'Comprensión Auditiva en Coreano A1 — Ejercicios interactivos gratis | Idiomas WeLearn',
@@ -149,9 +150,7 @@ export default function EscuchaCoreanoA1() {
                     <span style={{ fontSize: '0.68rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{ex.duration} · {ex.topic}</span>
                   </div>
                 </div>
-                <div style={{ padding: '0.5rem 0.85rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', fontSize: '0.78rem', color: 'var(--muted)', flexShrink: 0 }}>
-                  🎵 Audio próximamente
-                </div>
+                <TTSPlayer text={ex.script.map(l => l.text).join(' ')} lang="ko-KR" label="Escuchar diálogo" />
               </div>
 
               <div style={{ marginBottom: '1.1rem' }}>

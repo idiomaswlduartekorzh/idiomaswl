@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Portugués — Elige tu nivel MCER | Idiomas WeLearn',
@@ -24,6 +25,15 @@ const NIVELES = [
 
 export default function PortuguesPage() {
   return (
+    <>
+    <CourseSchema
+      name="Práctica de Portugués — Ejercicios interactivos MCER"
+      description="Ejercicios de portugués brasileño por nivel: A1 y A2 disponibles. Vocabulario, gramática y comprensión."
+      url="https://idiomaswl.com/practica/portugues"
+      educationalLevel="A1,A2"
+      teaches="Portugués, CELPE-Bras"
+      inLanguage="pt"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 840 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
@@ -68,5 +78,6 @@ export default function PortuguesPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

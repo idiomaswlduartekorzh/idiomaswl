@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Italiano A1 — Elige una habilidad | Idiomas WeLearn',
@@ -22,6 +23,15 @@ const COLORS: Record<string, string> = { lectura: '#009246', gramatica: '#7c3aed
 
 export default function ItalianoA1Page() {
   return (
+    <>
+    <CourseSchema
+      name="Italiano A1 — Lectura, Gramática, Vocabulario y más"
+      description="Practica Italiano nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
+      url="https://idiomaswl.com/practica/italiano/a1"
+      educationalLevel="A1"
+      teaches="Italiano, habilidades MCER"
+      inLanguage="it"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
@@ -69,5 +79,6 @@ export default function ItalianoA1Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }

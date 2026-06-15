@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Inglés A2 — Elige una habilidad | Idiomas WeLearn',
@@ -49,6 +50,15 @@ const COLORS: Record<string, string> = {
 
 export default function InglesA2Page() {
   return (
+    <>
+    <CourseSchema
+      name="Inglés A2 — Lectura, Gramática, Vocabulario y más"
+      description="Practica Inglés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
+      url="https://idiomaswl.com/practica/ingles/a2"
+      educationalLevel="A2"
+      teaches="Inglés, habilidades MCER"
+      inLanguage="in"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
         {/* Breadcrumb */}
@@ -115,5 +125,6 @@ export default function InglesA2Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }

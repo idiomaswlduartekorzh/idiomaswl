@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import TTSPlayer from '@/components/practica/TTSPlayer';
 
 export const metadata: Metadata = {
   title: 'Deutsch A2 Hörverstehen — Próximamente | Idiomas WeLearn',
@@ -147,6 +148,7 @@ export default function EscuchaAlemanA2() {
                 <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>Script</div>
                 <p style={{ margin: '0 0 0.85rem', fontSize: '0.86rem', color: 'var(--ink)', lineHeight: 1.75, borderLeft: `3px solid rgba(3,105,161,0.25)`, paddingLeft: '0.75rem', whiteSpace: 'pre-line' }}>
                   {ex.script}
+                <TTSPlayer text={ex.script} lang="de-DE" label="Escuchar script" />
                 </p>
                 <div style={{ marginBottom: '0.85rem' }}>
                   <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem' }}>Vokabular</div>

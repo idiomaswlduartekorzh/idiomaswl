@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import InglesPageClient from './InglesPageClient'
+import { CourseSchema } from '@/components/practica/EducationSchema'
 
 export const metadata: Metadata = {
   title: 'Práctica de Inglés — Elige tu nivel MCER | Idiomas WeLearn',
@@ -8,5 +9,17 @@ export const metadata: Metadata = {
 }
 
 export default function InglesPage() {
-  return <InglesPageClient />
+  return (
+    <>
+      <CourseSchema
+        name="Práctica de Inglés — Ejercicios interactivos MCER"
+        description="Ejercicios interactivos de inglés por nivel: A1 disponible con lectura, gramática, escritura, habla, vocabulario y escucha."
+        url="https://idiomaswl.com/practica/ingles"
+        educationalLevel="A1,A2,B1"
+        teaches="Inglés, IELTS, TOEFL"
+        inLanguage="en"
+      />
+      <InglesPageClient />
+    </>
+  )
 }

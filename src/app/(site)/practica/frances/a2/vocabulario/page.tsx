@@ -1,9 +1,19 @@
 import type { Metadata } from 'next'
 import { practicaMetadata } from '@/lib/practica-metadata'
 import Content from './Content'
+import { QuizSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = practicaMetadata('frances', 'a2', 'vocabulario')
 
 export default function Page() {
-  return <Content />
+  return (
+    <>
+      <QuizSchema
+        name="Vocabulario de Francés A2 — Ejercicios interactivos"
+        url="https://idiomaswl.com/practica/frances/a2/vocabulario"
+        description="Ejercicios de vocabulario de Francés nivel A2: tarjetas, listas temáticas y práctica activa."
+      />
+      <Content />
+    </>
+  )
 }

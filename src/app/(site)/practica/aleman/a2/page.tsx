@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Alemán A2 — Grundkenntnisse | Idiomas WeLearn',
@@ -22,6 +23,15 @@ const COLORS: Record<string, string> = { lectura: '#dd0000', gramatica: '#7c3aed
 
 export default function AlemanA2Page() {
   return (
+    <>
+    <CourseSchema
+      name="Alemán A2 — Lectura, Gramática, Vocabulario y más"
+      description="Practica Alemán nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
+      url="https://idiomaswl.com/practica/aleman/a2"
+      educationalLevel="A2"
+      teaches="Alemán, habilidades MCER"
+      inLanguage="al"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
@@ -69,5 +79,6 @@ export default function AlemanA2Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import TTSPlayer from '@/components/practica/TTSPlayer';
 
 export const metadata: Metadata = {
   title: 'Italiano A1 Ascolto — Próximamente | Idiomas WeLearn',
@@ -78,6 +79,7 @@ export default function EscuchaItalianoA1() {
               <div style={{ padding: '1rem 1.5rem', borderTop: '1px solid var(--line-soft)' }}>
                 <p style={{ margin: '0 0 0.4rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase' }}>Script (per praticare la lettura ad alta voce)</p>
                 <p style={{ margin: '0 0 0.75rem', fontSize: '0.88rem', color: 'var(--ink)', lineHeight: 1.65, fontStyle: 'italic' }}>{ex.script}</p>
+                <TTSPlayer text={ex.script} lang="it-IT" label="Ascolta lo script" />
                 <p style={{ margin: '0 0 0.35rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase' }}>Domande di comprensione</p>
                 <ol style={{ margin: 0, padding: '0 0 0 1.2rem', fontSize: '0.83rem', color: 'var(--muted)', lineHeight: 1.8 }}>
                   {ex.questions.map((q, i) => <li key={i}>{q}</li>)}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Ruso — Elige tu nivel MCER | Idiomas WeLearn',
@@ -24,6 +25,15 @@ const NIVELES = [
 
 export default function RusoPage() {
   return (
+    <>
+    <CourseSchema
+      name="Práctica de Ruso — Ejercicios interactivos MCER"
+      description="Ejercicios de ruso por nivel MCER: A1 disponible. Alfabeto cirílico, vocabulario, gramática."
+      url="https://idiomaswl.com/practica/ruso"
+      educationalLevel="A1"
+      teaches="Ruso, alfabeto cirílico"
+      inLanguage="ru"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 840 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
@@ -70,5 +80,6 @@ export default function RusoPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

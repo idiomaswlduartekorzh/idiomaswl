@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Portugués A1 — Elige una habilidad | Idiomas WeLearn',
@@ -22,6 +23,15 @@ const COLORS: Record<string, string> = { lectura: '#009c3b', gramatica: '#7c3aed
 
 export default function PortuguesA1Page() {
   return (
+    <>
+    <CourseSchema
+      name="Portugués A1 — Lectura, Gramática, Vocabulario y más"
+      description="Practica Portugués nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
+      url="https://idiomaswl.com/practica/portugues/a1"
+      educationalLevel="A1"
+      teaches="Portugués, habilidades MCER"
+      inLanguage="po"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
@@ -66,5 +76,6 @@ export default function PortuguesA1Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Francés — Elige tu nivel MCER | Idiomas WeLearn',
@@ -24,6 +25,15 @@ const NIVELES = [
 
 export default function FrancesPage() {
   return (
+    <>
+    <CourseSchema
+      name="Práctica de Francés — Ejercicios interactivos MCER"
+      description="Ejercicios de francés por nivel MCER: A1 y A2 disponibles. Vocabulario, gramática, escritura, habla y escucha."
+      url="https://idiomaswl.com/practica/frances"
+      educationalLevel="A1,A2"
+      teaches="Francés, DELF, DALF"
+      inLanguage="fr"
+    />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 840 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>
@@ -68,5 +78,6 @@ export default function FrancesPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }
