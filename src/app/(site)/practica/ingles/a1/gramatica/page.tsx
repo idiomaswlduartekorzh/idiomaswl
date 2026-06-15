@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { saveSkillCompletion } from '@/lib/progress';
+import XPStreak from '@/components/practica/XPStreak';
 
 const COLOR = '#7c3aed';
 
@@ -100,6 +102,7 @@ export default function GramaticaInglesA1() {
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [revealed, setRevealed] = useState<Record<number, boolean>>({});
   const [showResult, setShowResult] = useState(false);
+  const [xpEarned, setXpEarned] = useState<number | null>(null);
 
   const data = GRAMMAR_TOPICS[topicKey];
   const total = data.qs.length;
@@ -112,9 +115,16 @@ export default function GramaticaInglesA1() {
     setRevealed(p => ({ ...p, [qi]: true }));
   }
 
-  function reset() { setAnswers({}); setRevealed({}); setShowResult(false); }
+  function reset() { setAnswers({}); setRevealed({}); setShowResult(false); setXpEarned(null); }
 
   function switchTopic(k: string) { setTopicKey(k); reset(); }
+
+  function handleShowResult() {
+    const score = Math.round((correct / total) * 100);
+    const earned = saveSkillCompletion('ingles', 'a1', 'gramatica', score);
+    setXpEarned(earned);
+    setShowResult(true);
+  }
 
   return (
     <section className="wl-section">
@@ -127,7 +137,10 @@ export default function GramaticaInglesA1() {
           <span style={{ color: COLOR, fontWeight: 800 }}>📐 Gramática</span>
         </div>
 
-        <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Grammar · Inglés A1</p>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.25rem' }}>
+          <p className="eyebrow" style={{ margin: 0 }}><span className="ink-line" />Grammar · Inglés A1</p>
+          <XPStreak showMotivation />
+        </div>
         <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Gramática A1</h1>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 520, margin: '0 0 1.75rem' }}>
           5 temas esenciales con 8–10 ejercicios cada uno. Explicación + ejemplos + feedback inmediato.
@@ -200,7 +213,7 @@ export default function GramaticaInglesA1() {
               );
             })}
             {done === total && (
-              <button className="btn btn-sm" onClick={() => setShowResult(true)} style={{ background: COLOR, borderColor: COLOR }}>
+              <button className="btn btn-sm" onClick={handleShowResult} style={{ background: COLOR, borderColor: COLOR }}>
                 Ver mi resultado →
               </button>
             )}
@@ -214,6 +227,13 @@ export default function GramaticaInglesA1() {
               {correct === total ? '🏆' : correct >= total * 0.7 ? '⭐' : '📖'}
             </div>
             <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)' }}>{correct} / {total} correctas</h2>
+            {xpEarned !== null && (
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', margin: '0 0 0.75rem', padding: '0.35rem 0.85rem', borderRadius: 20, background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.25)' }}>
+                <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#2563eb', fontFamily: 'var(--mono)' }}>
+                  +{xpEarned} XP ⚡
+                </span>
+              </div>
+            )}
             <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.5rem' }}>
               {correct === total ? '¡Perfecto! Dominas este tema.' : correct >= total * 0.7 ? 'Muy bien. Repasa los errores y vuelve a intentarlo.' : 'Estudia la explicación arriba y practica de nuevo.'}
             </p>

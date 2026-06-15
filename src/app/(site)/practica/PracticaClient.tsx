@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import type { CSSProperties } from 'react';
 import Link from 'next/link';
+import { getStreakInfo, getTotalXP, getTotalCompletedSkills } from '@/lib/progress';
 import KoreanCycle from './KoreanCycle';
 import KoreanCompounds from './KoreanCompounds';
 
@@ -152,8 +153,18 @@ export default function PracticaClient() {
   const [selected,  setSelected]  = useState<string | null>(null);
   const [xp,        setXp]        = useState(0);
   const [activeTab, setActiveTab] = useState<'reader' | 'batchim' | 'quiz' | 'jamo' | 'cycle' | 'compounds'>('reader');
+  const [globalStats, setGlobalStats] = useState<{ streak: number; xp: number; skills: number } | null>(null);
 
   const addXp = useCallback((n: number) => setXp(p => p + n), []);
+
+  useEffect(() => {
+    const streak = getStreakInfo();
+    const totalXp = getTotalXP();
+    const skills = getTotalCompletedSkills();
+    if (totalXp > 0 || skills > 0 || streak.count > 0) {
+      setGlobalStats({ streak: streak.count, xp: totalXp, skills });
+    }
+  }, []);
 
   const lang      = LANGUAGES.find(l => l.slug === selected);
   const level     = Math.floor(xp / XP_PER_LEVEL) + 1;
@@ -168,10 +179,46 @@ export default function PracticaClient() {
           <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>
             <span className="ink-line" />Herramientas gratuitas de práctica
           </p>
-          <h1 style={{ fontSize: '2.4rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
-            Elige una herramienta
-          </h1>
-          <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 2rem' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <h1 style={{ fontSize: '2.4rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
+              Elige una herramienta
+            </h1>
+            <Link href="/practica/mi-vocabulario" style={{ textDecoration: 'none' }}>
+              <div style={{
+                display: 'flex', alignItems: 'center', gap: '0.45rem',
+                padding: '0.45rem 0.9rem', borderRadius: 20,
+                border: '1.5px solid var(--line-soft)',
+                background: 'var(--bg)',
+                fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 700,
+                color: 'var(--ink)', transition: 'border-color 0.15s',
+              }}>
+                📖 Mi Vocabulario
+              </div>
+            </Link>
+          </div>
+
+          {/* Global progress stats */}
+          {globalStats && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', margin: '0.25rem 0 1.5rem', flexWrap: 'wrap' }}>
+              {globalStats.streak > 0 && (
+                <span style={{ fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 700, color: '#d97706' }}>
+                  🔥 {globalStats.streak} {globalStats.streak === 1 ? 'día' : 'días'}
+                </span>
+              )}
+              {globalStats.xp > 0 && (
+                <span style={{ fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 700, color: '#2563eb' }}>
+                  ⚡ {globalStats.xp} XP
+                </span>
+              )}
+              {globalStats.skills > 0 && (
+                <span style={{ fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 700, color: '#059669' }}>
+                  ✓ {globalStats.skills} habilidad{globalStats.skills !== 1 ? 'es' : ''} completada{globalStats.skills !== 1 ? 's' : ''}
+                </span>
+              )}
+            </div>
+          )}
+
+          <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: `${globalStats ? '0' : '0'} 0 2rem` }}>
             Desglose silábico, pronunciación interactiva y práctica de estrés para exámenes.
           </p>
 
