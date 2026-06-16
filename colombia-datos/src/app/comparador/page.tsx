@@ -11,7 +11,7 @@ import LineChart from '@/components/charts/LineChart';
 import IndicatorCard from '@/components/IndicatorCard';
 import MethodologyBadge from '@/components/MethodologyBadge';
 import WarningBox from '@/components/WarningBox';
-import { ChevronDown, Info, ExternalLink, AlertTriangle } from 'lucide-react';
+import { ChevronDown, Info, ExternalLink, AlertTriangle, TrendingUp, ChevronRight } from 'lucide-react';
 
 const INDICATOR_OPTIONS = INDICATORS.map((i) => ({
   value: i.id,
@@ -167,6 +167,7 @@ export default function ComparadorPage() {
   const [govB, setGovB] = useState('petro');
   const [indicatorId, setIndicatorId] = useState('pib-crecimiento');
   const [showContext, setShowContext] = useState(false);
+  const [showMacro, setShowMacro] = useState(false);
 
   const govDataA = GOVERNMENTS.find((g) => g.id === govA)!;
   const govDataB = GOVERNMENTS.find((g) => g.id === govB)!;
@@ -209,6 +210,11 @@ export default function ComparadorPage() {
     { startYear: govDataA.startYear, endYear: govDataA.endYear, label: govDataA.president.split(' ')[0], color: govDataA.color },
     { startYear: govDataB.startYear, endYear: govDataB.endYear, label: govDataB.president.split(' ')[0], color: govDataB.color },
   ];
+
+  // Macro context data — must be after minYear/maxYear are defined
+  const oilData = useMemo(() => getObservations('precio-petroleo').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
+  const fxData = useMemo(() => getObservations('tasa-cambio').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
+  const rateData = useMemo(() => getObservations('tasa-banrep').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
 
   return (
     <div className="min-h-screen bg-[#080d1a] bg-grid-dark">
@@ -411,6 +417,99 @@ export default function ComparadorPage() {
             formatY={(v) => v.toFixed(1)}
             sourceLabel={`Fuente: ${indicator.sourceIds.join(', ')}`}
           />
+        </div>
+
+        {/* Contexto macroeconómico */}
+        <div className="glass-card rounded-2xl mb-6 overflow-hidden">
+          <button
+            onClick={() => setShowMacro(!showMacro)}
+            className="w-full flex items-center justify-between p-5 hover:bg-slate-800/30 transition-colors"
+          >
+            <div className="flex items-center gap-3">
+              <TrendingUp className="w-4 h-4 text-slate-400" />
+              <div className="text-left">
+                <p className="text-white font-semibold text-sm">Contexto macroeconómico externo</p>
+                <p className="text-slate-500 text-xs">Precio petróleo · Tasa de cambio · Tasa Banrep — variables fuera del control del gobierno</p>
+              </div>
+            </div>
+            <ChevronRight className={`w-4 h-4 text-slate-400 transition-transform ${showMacro ? 'rotate-90' : ''}`} />
+          </button>
+
+          <AnimatePresence>
+            {showMacro && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                className="overflow-hidden"
+              >
+                <div className="px-5 pb-5 border-t border-slate-700/50">
+                  <p className="text-slate-500 text-xs mt-4 mb-4 leading-relaxed">
+                    Estas variables son <strong className="text-slate-400">exógenas</strong>: ningún gobierno colombiano las controla.
+                    Sin embargo, explican una parte significativa de los resultados económicos. El precio del petróleo
+                    determina ingresos fiscales; la tasa Banrep el costo del crédito; la tasa de cambio la inflación importada.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                      <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Precio Brent (USD/barril)</p>
+                      {oilData.length > 0 ? (
+                        <LineChart
+                          data={oilData}
+                          lines={[{ key: 'value', color: '#f59e0b', name: 'Brent', strokeWidth: 2 }]}
+                          referenceBands={referenceBands}
+                          height={180}
+                          formatY={(v) => `$${v.toFixed(0)}`}
+                          sourceLabel="Banrep/EIA"
+                        />
+                      ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
+                    </div>
+                    <div>
+                      <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Tasa de cambio (COP/USD)</p>
+                      {fxData.length > 0 ? (
+                        <LineChart
+                          data={fxData}
+                          lines={[{ key: 'value', color: '#a78bfa', name: 'TRM', strokeWidth: 2 }]}
+                          referenceBands={referenceBands}
+                          height={180}
+                          formatY={(v) => `${(v / 1000).toFixed(1)}k`}
+                          sourceLabel="Banrep"
+                        />
+                      ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
+                    </div>
+                    <div>
+                      <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Tasa Banrep (% anual)</p>
+                      {rateData.length > 0 ? (
+                        <LineChart
+                          data={rateData}
+                          lines={[{ key: 'value', color: '#34d399', name: 'Repo', strokeWidth: 2 }]}
+                          referenceBands={referenceBands}
+                          height={180}
+                          formatY={(v) => `${v.toFixed(1)}%`}
+                          sourceLabel="Banrep"
+                        />
+                      ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
+                    </div>
+                  </div>
+                  <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {[
+                      { label: 'Duque heredó (2018)', oil: '$72/barril', fx: '2.956 COP', rate: '4.25%', color: GOVERNMENTS.find(g=>g.id==='duque')?.color },
+                      { label: 'Petro heredó (2022)', oil: '$108/barril', fx: '4.260 COP', rate: '9.0%', color: GOVERNMENTS.find(g=>g.id==='petro')?.color },
+                      { label: 'Pico Banrep (2023)', oil: '$82/barril', fx: '4.325 COP', rate: '13.25%', color: '#ef4444' },
+                    ].map((item, i) => (
+                      <div key={i} className="bg-slate-800/30 rounded-lg p-3 border-l-2" style={{ borderColor: item.color }}>
+                        <p className="text-slate-500 text-xs mb-1">{item.label}</p>
+                        <div className="grid grid-cols-3 gap-1 text-xs">
+                          <div><p className="text-slate-600">Brent</p><p className="text-slate-300">{item.oil}</p></div>
+                          <div><p className="text-slate-600">TRM</p><p className="text-slate-300">{item.fx}</p></div>
+                          <div><p className="text-slate-600">Banrep</p><p className="text-slate-300">{item.rate}</p></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         {/* Contexto heredado */}
