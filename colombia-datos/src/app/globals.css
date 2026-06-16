@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #080d1a;
+  --background: #060b17;
   --foreground: #e2e8f0;
-  --surface: #0f172a;
-  --surface-2: #1e293b;
-  --border: #1e293b;
+  --surface: #0a1120;
+  --surface-2: #111827;
+  --border: #1a2332;
   --accent: #3b82f6;
   --accent-2: #6366f1;
   --muted: #64748b;
@@ -14,32 +14,109 @@
   --danger: #ef4444;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--background); }
-::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
 
+/* ─── Legacy glass (kept for compatibility) ─── */
 .glass {
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(30, 41, 59, 0.8);
+  background: rgba(10, 17, 32, 0.88);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(30, 41, 59, 0.7);
 }
 
 .glass-card {
-  background: rgba(30, 41, 59, 0.4);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(51, 65, 85, 0.6);
+  background: rgba(17, 24, 39, 0.45);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(51, 65, 85, 0.5);
 }
 
+/* ─── Apple-style liquid glass ─── */
+.liquid-glass {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(24px) saturate(180%) brightness(1.08);
+  -webkit-backdrop-filter: blur(24px) saturate(180%) brightness(1.08);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.liquid-glass-light {
+  background: rgba(30, 41, 59, 0.35);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── Ambient color glows for metric cards ─── */
+.shadow-glow-blue {
+  box-shadow:
+    0 0 0 1px rgba(59, 130, 246, 0.15),
+    0 0 24px rgba(59, 130, 246, 0.12),
+    0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-glow-green {
+  box-shadow:
+    0 0 0 1px rgba(34, 197, 94, 0.15),
+    0 0 24px rgba(34, 197, 94, 0.12),
+    0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-glow-red {
+  box-shadow:
+    0 0 0 1px rgba(239, 68, 68, 0.18),
+    0 0 28px rgba(239, 68, 68, 0.14),
+    0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-glow-amber {
+  box-shadow:
+    0 0 0 1px rgba(245, 158, 11, 0.15),
+    0 0 24px rgba(245, 158, 11, 0.12),
+    0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-glow-violet {
+  box-shadow:
+    0 0 0 1px rgba(139, 92, 246, 0.15),
+    0 0 24px rgba(139, 92, 246, 0.12),
+    0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Premium metric numbers ─── */
+.metric-number {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" 1;
+  line-height: 1;
+}
+
+/* ─── Text gradients ─── */
 .text-gradient {
   background: linear-gradient(135deg, #60a5fa, #a78bfa);
   -webkit-background-clip: text;
@@ -48,23 +125,57 @@ body {
 }
 
 .text-gradient-colombia {
-  background: linear-gradient(135deg, #f59e0b, #fbbf24, #3b82f6);
+  background: linear-gradient(135deg, #f59e0b, #fbbf24, #60a5fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.bg-grid-dark {
-  background-image:
-    linear-gradient(rgba(59, 130, 246, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.04) 1px, transparent 1px);
-  background-size: 48px 48px;
+.text-gradient-green {
+  background: linear-gradient(135deg, #34d399, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+.text-gradient-red {
+  background: linear-gradient(135deg, #f87171, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Subtle grid background ─── */
+.bg-grid-dark {
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* ─── Radial ambient light for hero sections ─── */
+.bg-radial-blue {
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
+}
+
+.bg-radial-red {
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(239, 68, 68, 0.07) 0%, transparent 60%);
+}
+
+.bg-radial-amber {
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(245, 158, 11, 0.07) 0%, transparent 60%);
+}
+
+.bg-radial-green {
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(34, 197, 94, 0.07) 0%, transparent 60%);
+}
+
+/* ─── Recharts tweaks ─── */
 .recharts-tooltip-wrapper { outline: none; }
 
+/* ─── Animations ─── */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -73,5 +184,17 @@ body {
   to { opacity: 1; }
 }
 
-.animate-fade-up { animation: fade-up 0.6s ease forwards; }
-.animate-fade-in { animation: fade-in 0.4s ease forwards; }
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-up  { animation: fade-up  0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.animate-fade-in  { animation: fade-in  0.4s ease forwards; }
+.animate-scale-in { animation: scale-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+
+/* ─── Divider ─── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(51, 65, 85, 0.6), transparent);
+}
