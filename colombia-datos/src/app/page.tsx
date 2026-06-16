@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { GOVERNMENTS } from '@/data/governments';
 import NavBar from '@/components/NavBar';
-import { TrendingUp, Shield, Leaf, Baby, Scale, Search, ChevronRight, AlertTriangle, BookOpen, BarChart3, Globe } from 'lucide-react';
+import { TrendingUp, Shield, Leaf, Baby, Scale, Search, ChevronRight, AlertTriangle, BookOpen, BarChart3, Globe, Building2 } from 'lucide-react';
 
 const MODULES = [
   { id: 'economia', label: 'Economía', icon: TrendingUp, color: '#3b82f6', desc: 'PIB, inflación, deuda, inversión, déficit fiscal' },
@@ -14,6 +14,7 @@ const MODULES = [
   { id: 'narcotrafico', label: 'Narcotráfico', icon: Search, color: '#10b981', desc: 'Coca, producción cocaína, erradicación' },
   { id: 'ambiente', label: 'Ambiente', icon: Leaf, color: '#22c55e', desc: 'Deforestación, petróleo, transición energética' },
   { id: 'infancia', label: 'Infancia', icon: Baby, color: '#f43f5e', desc: 'Desnutrición, mortalidad infantil, salud' },
+  { id: 'empresas', label: 'Empresas', icon: Building2, color: '#f97316', desc: 'Tejido empresarial, per cápita, supervivencia, comparación internacional' },
   { id: 'internacional', label: 'Colombia vs Mundo', icon: Globe, color: '#06b6d4', desc: 'Comparación contextualizada con referentes internacionales', badge: 'Próximamente' },
 ];
 
@@ -98,7 +99,7 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 mb-20">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-10">
           <h2 className="text-2xl font-bold text-white mb-2">Módulos de análisis</h2>
-          <p className="text-slate-400">7 dimensiones de gobernanza. Más de 300 datos históricos con fuentes trazables.</p>
+          <p className="text-slate-400">8 dimensiones de gobernanza. Más de 350 datos históricos con fuentes trazables.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -226,6 +227,7 @@ export default function HomePage() {
                 <li>UNODC — Cultivos ilícitos</li>
                 <li>Medicina Legal — Seguridad</li>
                 <li>IDEAM — Medio ambiente</li>
+                <li>Confecámaras — Tejido empresarial</li>
               </ul>
             </div>
             <div>

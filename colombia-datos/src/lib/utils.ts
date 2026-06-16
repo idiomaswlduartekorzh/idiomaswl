@@ -10,6 +10,10 @@ export function formatPercent(n: number, decimals = 1): string {
   return n.toFixed(decimals) + '%';
 }
 
+export function formatGini(n: number): string {
+  return n.toFixed(3);
+}
+
 export function getChangeColor(change: number, higherIsBetter: boolean): string {
   if (Math.abs(change) < 0.01) return 'text-slate-400';
   if (change > 0) return higherIsBetter ? 'text-emerald-400' : 'text-red-400';
@@ -61,6 +65,10 @@ export function computeGovStats(
   return { start, end, min, max, mean, change, changePercent };
 }
 
+export function clamp(val: number, min: number, max: number): number {
+  return Math.min(Math.max(val, min), max);
+}
+
 export const CATEGORY_COLORS: Record<string, string> = {
   economia: '#3b82f6',
   empleo: '#8b5cf6',
@@ -69,6 +77,7 @@ export const CATEGORY_COLORS: Record<string, string> = {
   narcotrafico: '#10b981',
   ambiente: '#22c55e',
   infancia: '#f43f5e',
+  empresas: '#f97316',
   educacion: '#06b6d4',
   salud: '#ec4899',
   corrupcion: '#6b7280',

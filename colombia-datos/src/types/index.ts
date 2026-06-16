@@ -32,6 +32,7 @@ export type IndicatorCategory =
   | 'narcotrafico'
   | 'ambiente'
   | 'infancia'
+  | 'empresas'
   | 'educacion'
   | 'salud'
   | 'corrupcion';
@@ -59,7 +60,7 @@ export interface Indicator {
   sourceIds: string[];
   comparabilityLevel: ComparabilityLevel;
   limitations: string[];
-  higherIsBetter: boolean;
+  higherIsBetter: boolean; // false = lower is better (e.g. unemployment, poverty)
   methodologyNotes?: string;
 }
 
@@ -73,7 +74,7 @@ export interface Observation {
   unit: string;
   sourceId: string;
   methodologyVersion?: string;
-  confidenceScore?: number;
+  confidenceScore?: number; // 0-1
   notes?: string;
   department?: string;
 }
