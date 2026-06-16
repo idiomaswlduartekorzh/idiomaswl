@@ -1,0 +1,55 @@
+import { Observation } from '@/types';
+
+// Tasa de desempleo nacional anual - DANE GEIH
+// Nota: Datos anteriores a 2007 usan metodología ENH (Encuesta Nacional de Hogares), no directamente comparables
+export const UNEMPLOYMENT: Observation[] = [
+  { indicatorId: 'desempleo', year: 1996, value: 11.2, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH; no comparable con GEIH post-2007' },
+  { indicatorId: 'desempleo', year: 1997, value: 12.0, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH' },
+  { indicatorId: 'desempleo', year: 1998, value: 15.3, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH; inicio crisis' },
+  { indicatorId: 'desempleo', year: 1999, value: 19.4, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH; pico crisis' },
+  { indicatorId: 'desempleo', year: 2000, value: 20.5, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH; máximo histórico' },
+  { indicatorId: 'desempleo', year: 2001, value: 18.2, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH' },
+  { indicatorId: 'desempleo', year: 2002, value: 17.8, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH; inicio Uribe' },
+  { indicatorId: 'desempleo', year: 2003, value: 16.7, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH' },
+  { indicatorId: 'desempleo', year: 2004, value: 15.4, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH' },
+  { indicatorId: 'desempleo', year: 2005, value: 14.1, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Metodología ENH' },
+  { indicatorId: 'desempleo', year: 2006, value: 12.0, unit: '%', sourceId: 'dane-geih', notes: '⚠️ Transición metodológica ENH→GEIH; periodo de empalme' },
+  { indicatorId: 'desempleo', year: 2007, value: 11.4, unit: '%', sourceId: 'dane-geih', notes: 'Primera medición completa con GEIH' },
+  { indicatorId: 'desempleo', year: 2008, value: 11.3, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2009, value: 12.0, unit: '%', sourceId: 'dane-geih', notes: 'Impacto crisis global; aumento leve' },
+  { indicatorId: 'desempleo', year: 2010, value: 11.8, unit: '%', sourceId: 'dane-geih', notes: 'Inicio Santos; herencia alta de Uribe 2' },
+  { indicatorId: 'desempleo', year: 2011, value: 10.8, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2012, value: 10.4, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2013, value: 9.7, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2014, value: 9.1, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2015, value: 8.9, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2016, value: 9.2, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2017, value: 9.4, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'desempleo', year: 2018, value: 9.7, unit: '%', sourceId: 'dane-geih', notes: 'Inicio Duque; ligero aumento vs 2017' },
+  { indicatorId: 'desempleo', year: 2019, value: 10.5, unit: '%', sourceId: 'dane-geih', notes: 'Aumento por migración venezolana y contracción del empleo formal' },
+  { indicatorId: 'desempleo', year: 2020, value: 15.9, unit: '%', sourceId: 'dane-geih', notes: '⚠️ COVID-19: cuarentenas masivas. Pico mensual: 21.4% (mayo 2020). Dato peor crisis laboral en 20 años.' },
+  { indicatorId: 'desempleo', year: 2021, value: 13.7, unit: '%', sourceId: 'dane-geih', notes: 'Recuperación parcial; persistencia de empleo informal y pérdida de empleos formales' },
+  { indicatorId: 'desempleo', year: 2022, value: 11.2, unit: '%', sourceId: 'dane-geih', notes: 'Recuperación; transición Duque-Petro (ago 2022)' },
+  { indicatorId: 'desempleo', year: 2023, value: 10.2, unit: '%', sourceId: 'dane-geih', notes: 'Descenso continuo bajo Petro' },
+  { indicatorId: 'desempleo', year: 2024, value: 9.8, unit: '%', sourceId: 'dane-geih', notes: 'Mínimo del periodo Petro; dato preliminar' },
+];
+
+// Informalidad laboral - DANE GEIH (% sobre ocupados, 13 ciudades)
+export const INFORMALITY: Observation[] = [
+  { indicatorId: 'informalidad', year: 2009, value: 58.6, unit: '%', sourceId: 'dane-geih', notes: 'Primera medición GEIH disponible para série larga' },
+  { indicatorId: 'informalidad', year: 2010, value: 58.5, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2011, value: 57.7, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2012, value: 57.0, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2013, value: 56.1, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2014, value: 55.5, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2015, value: 55.0, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2016, value: 55.7, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2017, value: 56.1, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2018, value: 56.3, unit: '%', sourceId: 'dane-geih', notes: 'Inicio Duque' },
+  { indicatorId: 'informalidad', year: 2019, value: 56.8, unit: '%', sourceId: 'dane-geih', notes: 'Ligero aumento; migración venezolana aumenta informalidad' },
+  { indicatorId: 'informalidad', year: 2020, value: 58.4, unit: '%', sourceId: 'dane-geih', notes: 'COVID: empleo informal más resiliente al regreso; formal más destruido' },
+  { indicatorId: 'informalidad', year: 2021, value: 57.9, unit: '%', sourceId: 'dane-geih' },
+  { indicatorId: 'informalidad', year: 2022, value: 57.5, unit: '%', sourceId: 'dane-geih', notes: 'Transición Duque-Petro' },
+  { indicatorId: 'informalidad', year: 2023, value: 56.8, unit: '%', sourceId: 'dane-geih', notes: 'Petro: ligera mejora; reforma laboral en debate' },
+  { indicatorId: 'informalidad', year: 2024, value: 56.2, unit: '%', sourceId: 'dane-geih', notes: 'Preliminar' },
+];
