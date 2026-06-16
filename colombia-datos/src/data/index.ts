@@ -8,6 +8,8 @@ export * from './observations/security';
 export * from './observations/narcotics';
 export * from './observations/environment';
 export * from './observations/health';
+export * from './observations/companies';
+export * from './observations/macro_context';
 
 import { Observation } from '@/types';
 import { GDP_GROWTH, INFLATION, DEBT_GDP, FDI } from './observations/economy';
@@ -17,6 +19,8 @@ import { HOMICIDE_RATE, KIDNAPPINGS, MASSACRES, SOCIAL_LEADERS_KILLED } from './
 import { COCA_HECTARES, COCAINE_PRODUCTION, COCA_ERADICATION } from './observations/narcotics';
 import { DEFORESTATION, OIL_PRODUCTION } from './observations/environment';
 import { INFANT_MORTALITY, ACUTE_MALNUTRITION, MALNUTRITION_GUAJIRA } from './observations/health';
+import { COMPANIES_CREATED, COMPANIES_CANCELLED, COMPANIES_STOCK, COMPANIES_PER_CAPITA, COMPANY_SURVIVAL_RATE } from './observations/companies';
+import { OIL_PRICE_BRENT, EXCHANGE_RATE, POLICY_RATE, GDP_PER_CAPITA, WORLD_GDP_GROWTH, TAX_REVENUE } from './observations/macro_context';
 
 export const ALL_OBSERVATIONS: Observation[] = [
   ...GDP_GROWTH,
@@ -40,6 +44,19 @@ export const ALL_OBSERVATIONS: Observation[] = [
   ...INFANT_MORTALITY,
   ...ACUTE_MALNUTRITION,
   ...MALNUTRITION_GUAJIRA,
+  // Empresas
+  ...COMPANIES_CREATED,
+  ...COMPANIES_CANCELLED,
+  ...COMPANIES_STOCK,
+  ...COMPANIES_PER_CAPITA,
+  ...COMPANY_SURVIVAL_RATE,
+  // Macro contexto
+  ...OIL_PRICE_BRENT,
+  ...EXCHANGE_RATE,
+  ...POLICY_RATE,
+  ...GDP_PER_CAPITA,
+  ...WORLD_GDP_GROWTH,
+  ...TAX_REVENUE,
 ];
 
 export function getObservations(
