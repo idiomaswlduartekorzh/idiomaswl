@@ -1,0 +1,51 @@
+import { Observation } from '@/types';
+
+// Deforestación anual (ha) - IDEAM
+export const DEFORESTATION: Observation[] = [
+  { indicatorId: 'deforestacion', year: 2000, value: 284620, unit: 'ha', sourceId: 'ideam', notes: '⚠️ Metodología antigua; no directamente comparable con datos post-2010' },
+  { indicatorId: 'deforestacion', year: 2001, value: 280000, unit: 'ha', sourceId: 'ideam', notes: '⚠️ Metodología antigua' },
+  { indicatorId: 'deforestacion', year: 2002, value: 270000, unit: 'ha', sourceId: 'ideam', notes: '⚠️ Metodología antigua' },
+  { indicatorId: 'deforestacion', year: 2005, value: 255000, unit: 'ha', sourceId: 'ideam', notes: '⚠️ Estimado; metodología antigua' },
+  { indicatorId: 'deforestacion', year: 2010, value: 310349, unit: 'ha', sourceId: 'ideam', notes: 'Inicio metodología IDEAM moderna (imágenes Landsat)' },
+  { indicatorId: 'deforestacion', year: 2011, value: 230000, unit: 'ha', sourceId: 'ideam' },
+  { indicatorId: 'deforestacion', year: 2012, value: 267000, unit: 'ha', sourceId: 'ideam' },
+  { indicatorId: 'deforestacion', year: 2013, value: 200000, unit: 'ha', sourceId: 'ideam' },
+  { indicatorId: 'deforestacion', year: 2014, value: 140356, unit: 'ha', sourceId: 'ideam', notes: 'Inicio Santos II; mínimo de esta era' },
+  { indicatorId: 'deforestacion', year: 2015, value: 124035, unit: 'ha', sourceId: 'ideam' },
+  { indicatorId: 'deforestacion', year: 2016, value: 178597, unit: 'ha', sourceId: 'ideam', notes: '⚠️ Acuerdo de Paz paradoja: FARC deja territorios, colonos y grupos ilegales los deforestan; +44%' },
+  { indicatorId: 'deforestacion', year: 2017, value: 219973, unit: 'ha', sourceId: 'ideam', notes: '⚠️ Pico de deforestación post-Acuerdo; fin Santos' },
+  { indicatorId: 'deforestacion', year: 2018, value: 197159, unit: 'ha', sourceId: 'ideam', notes: 'Inicio Duque; hereda crisis deforestación post-paz' },
+  { indicatorId: 'deforestacion', year: 2019, value: 158894, unit: 'ha', sourceId: 'ideam', notes: 'Baja bajo Duque; estrategia "Ruta Futuro"' },
+  { indicatorId: 'deforestacion', year: 2020, value: 171685, unit: 'ha', sourceId: 'ideam', notes: 'COVID: menos presencia estatal en zonas remotas; rebote' },
+  { indicatorId: 'deforestacion', year: 2021, value: 174103, unit: 'ha', sourceId: 'ideam', notes: 'Sigue alta bajo Duque; Amazonía como epicentro' },
+  { indicatorId: 'deforestacion', year: 2022, value: 139306, unit: 'ha', sourceId: 'ideam', notes: 'Transición Duque-Petro; Petro con agenda ambiental prioritaria' },
+  { indicatorId: 'deforestacion', year: 2023, value: 155000, unit: 'ha', sourceId: 'ideam', notes: 'Petro: aumento preocupante pese a agenda ambiental; minería ilegal y cultivos ilícitos asociados' },
+  { indicatorId: 'deforestacion', year: 2024, value: 145000, unit: 'ha', sourceId: 'ideam', notes: 'Estimado; dato provisional' },
+];
+
+// Producción de petróleo (miles de barriles/día) - ANH/Ecopetrol
+export const OIL_PRODUCTION: Observation[] = [
+  { indicatorId: 'produccion-petroleo', year: 2002, value: 584, unit: 'kbd', sourceId: 'banrep', notes: 'Inicio Uribe; producción en caída' },
+  { indicatorId: 'produccion-petroleo', year: 2003, value: 541, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2004, value: 528, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2005, value: 526, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2006, value: 529, unit: 'kbd', sourceId: 'banrep', notes: 'Inicio Uribe II' },
+  { indicatorId: 'produccion-petroleo', year: 2007, value: 531, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2008, value: 590, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2009, value: 671, unit: 'kbd', sourceId: 'banrep', notes: 'Inicio boom; recuperación Caño Limón, descubrimiento de nuevos campos' },
+  { indicatorId: 'produccion-petroleo', year: 2010, value: 786, unit: 'kbd', sourceId: 'banrep', notes: 'Inicio Santos; producción en fuerte aumento' },
+  { indicatorId: 'produccion-petroleo', year: 2011, value: 914, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2012, value: 944, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2013, value: 1006, unit: 'kbd', sourceId: 'banrep', notes: 'Máximo histórico absoluto; Colombia supera 1 millón de barriles/día' },
+  { indicatorId: 'produccion-petroleo', year: 2014, value: 990, unit: 'kbd', sourceId: 'banrep', notes: 'Inicio Santos II; inicio caída del precio internacional' },
+  { indicatorId: 'produccion-petroleo', year: 2015, value: 1009, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2016, value: 886, unit: 'kbd', sourceId: 'banrep', notes: 'Caída dura; precio petróleo en mínimos; inversión se retira' },
+  { indicatorId: 'produccion-petroleo', year: 2017, value: 855, unit: 'kbd', sourceId: 'banrep' },
+  { indicatorId: 'produccion-petroleo', year: 2018, value: 864, unit: 'kbd', sourceId: 'banrep', notes: 'Inicio Duque' },
+  { indicatorId: 'produccion-petroleo', year: 2019, value: 886, unit: 'kbd', sourceId: 'banrep', notes: 'Leve recuperación bajo Duque' },
+  { indicatorId: 'produccion-petroleo', year: 2020, value: 781, unit: 'kbd', sourceId: 'banrep', notes: 'COVID: caída de demanda; precio negativo en abril 2020' },
+  { indicatorId: 'produccion-petroleo', year: 2021, value: 746, unit: 'kbd', sourceId: 'banrep', notes: 'Recuperación lenta; ataques a oleoductos' },
+  { indicatorId: 'produccion-petroleo', year: 2022, value: 754, unit: 'kbd', sourceId: 'banrep', notes: 'Transición; Petro anuncia fin de exploración de petróleo' },
+  { indicatorId: 'produccion-petroleo', year: 2023, value: 788, unit: 'kbd', sourceId: 'banrep', notes: 'Sube pese a política Petro; campos existentes; debate sobre reservas futuras' },
+  { indicatorId: 'produccion-petroleo', year: 2024, value: 762, unit: 'kbd', sourceId: 'banrep', notes: 'Declive gradual; sin nuevas licencias para exploración, reservas se agotan' },
+];
