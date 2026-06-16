@@ -12,10 +12,10 @@ export * from './observations/companies';
 export * from './observations/macro_context';
 
 import { Observation } from '@/types';
-import { GDP_GROWTH, INFLATION, DEBT_GDP, FDI } from './observations/economy';
+import { GDP_GROWTH, INFLATION, DEBT_GDP, FDI, FISCAL_DEFICIT } from './observations/economy';
 import { UNEMPLOYMENT, INFORMALITY } from './observations/employment';
 import { MONETARY_POVERTY, EXTREME_POVERTY, GINI } from './observations/poverty';
-import { HOMICIDE_RATE, KIDNAPPINGS, MASSACRES, SOCIAL_LEADERS_KILLED } from './observations/security';
+import { HOMICIDE_RATE, KIDNAPPINGS, MASSACRES, SOCIAL_LEADERS_KILLED, DISPLACEMENT } from './observations/security';
 import { COCA_HECTARES, COCAINE_PRODUCTION, COCA_ERADICATION } from './observations/narcotics';
 import { DEFORESTATION, OIL_PRODUCTION } from './observations/environment';
 import { INFANT_MORTALITY, ACUTE_MALNUTRITION, MALNUTRITION_GUAJIRA } from './observations/health';
@@ -26,6 +26,7 @@ export const ALL_OBSERVATIONS: Observation[] = [
   ...GDP_GROWTH,
   ...INFLATION,
   ...DEBT_GDP,
+  ...FISCAL_DEFICIT,
   ...FDI,
   ...UNEMPLOYMENT,
   ...INFORMALITY,
@@ -35,6 +36,7 @@ export const ALL_OBSERVATIONS: Observation[] = [
   ...HOMICIDE_RATE,
   ...KIDNAPPINGS,
   ...MASSACRES,
+  ...DISPLACEMENT,
   ...SOCIAL_LEADERS_KILLED,
   ...COCA_HECTARES,
   ...COCAINE_PRODUCTION,

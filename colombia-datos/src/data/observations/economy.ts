@@ -105,6 +105,41 @@ export const DEBT_GDP: Observation[] = [
   { indicatorId: 'deuda-pib', year: 2024, value: 57.9, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado; debate sobre sostenibilidad fiscal' },
 ];
 
+// Déficit Fiscal GNC / PIB - MHCP (Marco Fiscal de Mediano Plazo)
+export const FISCAL_DEFICIT: Observation[] = [
+  { indicatorId: 'deficit-fiscal', year: 1994, value: -1.0, unit: '% PIB', sourceId: 'mhcp', notes: 'Samper: inicio con déficit moderado' },
+  { indicatorId: 'deficit-fiscal', year: 1995, value: -1.5, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 1996, value: -2.5, unit: '% PIB', sourceId: 'mhcp', notes: 'Crisis política; mayor gasto público' },
+  { indicatorId: 'deficit-fiscal', year: 1997, value: -3.2, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 1998, value: -4.0, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Pastrana; crisis cambiaria y colapso del UPAC' },
+  { indicatorId: 'deficit-fiscal', year: 1999, value: -6.5, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Pico crisis: recesión PIB −4.2% disparó el déficit; gasto social de emergencia' },
+  { indicatorId: 'deficit-fiscal', year: 2000, value: -5.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Ajuste fiscal post-crisis; aún déficit elevado' },
+  { indicatorId: 'deficit-fiscal', year: 2001, value: -4.5, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2002, value: -3.6, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Uribe I; reforma tributaria y ajuste fiscal' },
+  { indicatorId: 'deficit-fiscal', year: 2003, value: -2.8, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2004, value: -1.9, unit: '% PIB', sourceId: 'mhcp', notes: 'Boom económico facilita la consolidación fiscal' },
+  { indicatorId: 'deficit-fiscal', year: 2005, value: -1.2, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2006, value: -0.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Uribe II; mejor resultado fiscal de la era' },
+  { indicatorId: 'deficit-fiscal', year: 2007, value: -1.0, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2008, value: -1.4, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2009, value: -2.6, unit: '% PIB', sourceId: 'mhcp', notes: 'Crisis financiera global; mayor gasto contracíclico' },
+  { indicatorId: 'deficit-fiscal', year: 2010, value: -3.3, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Santos I; Fenómeno del Niño, reconstrucción; nueva regla fiscal en preparación' },
+  { indicatorId: 'deficit-fiscal', year: 2011, value: -2.8, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2012, value: -2.3, unit: '% PIB', sourceId: 'mhcp', notes: 'Regla fiscal (Ley 1473) entra en vigor; meta −2.4%' },
+  { indicatorId: 'deficit-fiscal', year: 2013, value: -2.4, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2014, value: -2.4, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Santos II; caída del petróleo presiona ingresos fiscales' },
+  { indicatorId: 'deficit-fiscal', year: 2015, value: -3.0, unit: '% PIB', sourceId: 'mhcp', notes: 'Colapso de ingresos Ecopetrol y regalías; necesidad de ajuste' },
+  { indicatorId: 'deficit-fiscal', year: 2016, value: -4.0, unit: '% PIB', sourceId: 'mhcp', notes: 'Gasto del proceso de paz + menor recaudo; incumplimiento de la regla fiscal' },
+  { indicatorId: 'deficit-fiscal', year: 2017, value: -3.6, unit: '% PIB', sourceId: 'mhcp' },
+  { indicatorId: 'deficit-fiscal', year: 2018, value: -3.1, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Duque; regla fiscal vigente, meta −3.1%' },
+  { indicatorId: 'deficit-fiscal', year: 2019, value: -2.5, unit: '% PIB', sourceId: 'mhcp', notes: 'Mejor resultado de Duque; cumplimiento de regla fiscal' },
+  { indicatorId: 'deficit-fiscal', year: 2020, value: -8.2, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ COVID-19: regla fiscal suspendida; gasto emergencia ~$35 billones; PIB −7%' },
+  { indicatorId: 'deficit-fiscal', year: 2021, value: -7.1, unit: '% PIB', sourceId: 'mhcp', notes: 'Aún en zona de emergencia; rebote del PIB ayuda levemente al ratio' },
+  { indicatorId: 'deficit-fiscal', year: 2022, value: -5.4, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Petro; reforma tributaria aprobada (dic 2022) para cerrar brecha' },
+  { indicatorId: 'deficit-fiscal', year: 2023, value: -4.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Ajuste gradual; debate sobre cumplimiento de la meta de la regla fiscal' },
+  { indicatorId: 'deficit-fiscal', year: 2024, value: -5.5, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Deterioro: FMI alertó sobre brecha fiscal; recorte presupuestal polémico de $23 billones' },
+];
+
 // IED - Banco de la República (millones USD)
 export const FDI: Observation[] = [
   { indicatorId: 'ied', year: 2000, value: 2436, unit: 'mill. USD', sourceId: 'banrep' },

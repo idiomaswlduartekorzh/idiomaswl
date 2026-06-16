@@ -87,6 +87,39 @@ export const MASSACRES: Observation[] = [
   { indicatorId: 'masacres', year: 2024, value: 76, unit: 'eventos', sourceId: 'indepaz', notes: 'Leve descenso; Preliminar' },
 ];
 
+// Desplazamiento forzado (declaraciones recibidas) - UARIV / RUV
+export const DISPLACEMENT: Observation[] = [
+  { indicatorId: 'desplazamiento', year: 1996, value: 181000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio del desplazamiento masivo moderno; FARC y AUC en expansión territorial' },
+  { indicatorId: 'desplazamiento', year: 1997, value: 257000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Masacres AUC en Urabá, sur de Bolívar; desplazamiento como arma de guerra' },
+  { indicatorId: 'desplazamiento', year: 1998, value: 308000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio Pastrana; conflicto recrudece en zonas rurales' },
+  { indicatorId: 'desplazamiento', year: 1999, value: 288000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Zona de Despeje (Caguán); la negociación no detiene el desplazamiento' },
+  { indicatorId: 'desplazamiento', year: 2000, value: 321000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Pico bajo Pastrana; violencia rural en máximos históricos' },
+  { indicatorId: 'desplazamiento', year: 2001, value: 343000, unit: 'personas', sourceId: 'unidad-victimas' },
+  { indicatorId: 'desplazamiento', year: 2002, value: 413000, unit: 'personas', sourceId: 'unidad-victimas', notes: '⚠️ Pico absoluto: ofensiva FARC-AUC; inicio Uribe con la peor crisis humanitaria de desplazamiento' },
+  { indicatorId: 'desplazamiento', year: 2003, value: 221000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Seguridad Democrática recupera territorios; primera caída significativa' },
+  { indicatorId: 'desplazamiento', year: 2004, value: 287000, unit: 'personas', sourceId: 'unidad-victimas' },
+  { indicatorId: 'desplazamiento', year: 2005, value: 310000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Desmovilización AUC incompleta; BACRIM ocupan espacios dejados' },
+  { indicatorId: 'desplazamiento', year: 2006, value: 221000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio Uribe II' },
+  { indicatorId: 'desplazamiento', year: 2007, value: 305000, unit: 'personas', sourceId: 'unidad-victimas' },
+  { indicatorId: 'desplazamiento', year: 2008, value: 380000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Pico bajo Uribe II; ofensivas militares generan desplazamiento colateral' },
+  { indicatorId: 'desplazamiento', year: 2009, value: 286000, unit: 'personas', sourceId: 'unidad-victimas' },
+  { indicatorId: 'desplazamiento', year: 2010, value: 280000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio Santos I' },
+  { indicatorId: 'desplazamiento', year: 2011, value: 259000, unit: 'personas', sourceId: 'unidad-victimas' },
+  { indicatorId: 'desplazamiento', year: 2012, value: 223000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio diálogos La Habana; tendencia bajista consistente' },
+  { indicatorId: 'desplazamiento', year: 2013, value: 196000, unit: 'personas', sourceId: 'unidad-victimas' },
+  { indicatorId: 'desplazamiento', year: 2014, value: 137000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio Santos II; acercamiento de paz reduce violencia rural' },
+  { indicatorId: 'desplazamiento', year: 2015, value: 67000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Cese unilateral FARC (dic 2014); caída dramática; mínimo histórico moderno' },
+  { indicatorId: 'desplazamiento', year: 2016, value: 75000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Firma del Acuerdo de Paz; vacíos territoriales FARC crean nuevos desplazamientos locales' },
+  { indicatorId: 'desplazamiento', year: 2017, value: 71000, unit: 'personas', sourceId: 'unidad-victimas' },
+  { indicatorId: 'desplazamiento', year: 2018, value: 145000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio Duque; rearme de disidencias FARC y expansión del ELN llenan vacíos' },
+  { indicatorId: 'desplazamiento', year: 2019, value: 184000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Aumento preocupante; territorios rurales sin presencia estatal efectiva' },
+  { indicatorId: 'desplazamiento', year: 2020, value: 79000, unit: 'personas', sourceId: 'unidad-victimas', notes: '⚠️ COVID: reducción aparente por confinamientos y limitaciones al registro, no refleja mejora real' },
+  { indicatorId: 'desplazamiento', year: 2021, value: 105000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Recuperación post-COVID; conflictos activos en Cauca, Chocó, Catatumbo' },
+  { indicatorId: 'desplazamiento', year: 2022, value: 120000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio Petro; "Paz Total" no detiene desplazamiento a corto plazo' },
+  { indicatorId: 'desplazamiento', year: 2023, value: 158000, unit: 'personas', sourceId: 'unidad-victimas', notes: '⚠️ Aumento significativo; fracasos en ceses al fuego con varios grupos; dato preliminar' },
+  { indicatorId: 'desplazamiento', year: 2024, value: 142000, unit: 'personas', sourceId: 'unidad-victimas', notes: '⚠️ Preliminar; datos en consolidación en el RUV' },
+];
+
 // Líderes sociales y excombatientes asesinados - Indepaz
 export const SOCIAL_LEADERS_KILLED: Observation[] = [
   { indicatorId: 'lideres-sociales', year: 2016, value: 133, unit: 'personas', sourceId: 'indepaz', notes: 'Inicio seguimiento sistemático post-Acuerdo de Paz' },
