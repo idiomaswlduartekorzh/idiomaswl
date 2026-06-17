@@ -96,6 +96,100 @@ function GovernmentSelector({
   );
 }
 
+function StatCard({
+  gov,
+  stats,
+  indicator,
+  formatVal,
+}: {
+  gov: (typeof GOVERNMENTS)[number];
+  stats: ReturnType<typeof computeGovStats>;
+  indicator: (typeof INDICATORS)[number];
+  formatVal: (v: number) => string;
+}) {
+  const isUp = (stats.change ?? 0) > 0;
+  const changeColor = stats.change !== null ? getChangeColor(stats.change, indicator.higherIsBetter) : 'text-slate-400';
+  const improved =
+    stats.change !== null &&
+    (indicator.higherIsBetter ? stats.change > 0 : stats.change < 0);
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="h-full">
+      <div className="glass-card rounded-xl p-5 h-full flex flex-col" style={{ borderTop: `3px solid ${gov.color}` }}>
+        {/* Header */}
+        <div className="flex items-start justify-between mb-5">
+          <div>
+            <p className="text-white font-bold text-sm leading-tight">{gov.president}</p>
+            <p className="text-slate-500 text-xs mt-0.5">{gov.startYear}–{gov.endYear}</p>
+          </div>
+          {stats.changePercent !== null && (
+            <span
+              className={`text-sm font-bold px-2.5 py-1 rounded-lg ${
+                Math.abs(stats.change ?? 0) < 0.01
+                  ? 'bg-slate-700/50 text-slate-400'
+                  : improved
+                  ? 'bg-emerald-500/15 text-emerald-400'
+                  : 'bg-red-500/15 text-red-400'
+              }`}
+            >
+              {isUp ? '↑' : '↓'} {Math.abs(stats.changePercent).toFixed(1)}%
+            </span>
+          )}
+        </div>
+
+        {/* Trajectory: inicio → final */}
+        {stats.start !== null && stats.end !== null ? (
+          <div className="flex items-center gap-3 mb-5">
+            <div className="text-center min-w-0">
+              <p className="text-slate-500 text-[10px] uppercase tracking-wider mb-1">Inicio</p>
+              <p className="text-2xl font-bold text-white tabular-nums leading-none">{formatVal(stats.start)}</p>
+            </div>
+            <div className="flex-1 flex flex-col items-center gap-1 min-w-0">
+              <div className="w-full flex items-center gap-0.5">
+                <div className="flex-1 h-px rounded-full" style={{ backgroundColor: gov.color + '50' }} />
+                <span className={`text-sm leading-none ${changeColor}`}>{isUp ? '▲' : '▼'}</span>
+                <div className="flex-1 h-px rounded-full" style={{ backgroundColor: gov.color + '50' }} />
+              </div>
+              {stats.change !== null && (
+                <p className={`text-[11px] font-semibold ${changeColor} text-center leading-tight`}>
+                  {stats.change > 0 ? '+' : ''}{formatVal(stats.change)}
+                  <span className="text-slate-500 font-normal ml-1">{indicator.unit}</span>
+                </p>
+              )}
+            </div>
+            <div className="text-center min-w-0">
+              <p className="text-slate-500 text-[10px] uppercase tracking-wider mb-1">Final</p>
+              <p className="text-2xl font-bold text-white tabular-nums leading-none">{formatVal(stats.end)}</p>
+            </div>
+          </div>
+        ) : (
+          <p className="text-slate-500 text-sm mb-5">Sin datos en este periodo</p>
+        )}
+
+        {/* Supporting stats */}
+        {stats.mean !== null && (
+          <div className="grid grid-cols-3 gap-2 pt-3 border-t border-slate-700/50 mt-auto">
+            {(
+              [
+                { key: 'Promedio', val: stats.mean },
+                { key: 'Mínimo', val: stats.min },
+                { key: 'Máximo', val: stats.max },
+              ] as { key: string; val: number | null }[]
+            ).map(({ key, val }) => (
+              <div key={key} className="text-center">
+                <p className="text-slate-500 text-[10px] uppercase tracking-wider mb-1">{key}</p>
+                <p className="text-white text-sm font-semibold tabular-nums">
+                  {val !== null ? formatVal(val) : '—'}
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </motion.div>
+  );
+}
+
 function IndicatorSelector({
   value,
   onChange,
@@ -145,6 +239,7 @@ function IndicatorSelector({
             transition={{ duration: 0.15 }}
             className="absolute top-full mt-2 w-full z-[200] glass rounded-xl shadow-2xl border border-slate-700 max-h-96 overflow-y-auto"
           >
+            {/* Category filter */}
             <div className="p-3 border-b border-slate-700/50 flex flex-wrap gap-2 sticky top-0 glass">
               <button
                 onMouseDown={(e) => { e.preventDefault(); setFilter(null); }}
@@ -252,6 +347,7 @@ export default function ComparadorPage() {
     };
   });
 
+  // Macro context data — must be after minYear/maxYear are defined
   const oilData = useMemo(() => getObservations('precio-petroleo').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
   const fxData = useMemo(() => getObservations('tasa-cambio').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
   const rateData = useMemo(() => getObservations('tasa-banrep').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
@@ -261,19 +357,34 @@ export default function ComparadorPage() {
       <NavBar />
 
       <div className="max-w-7xl mx-auto px-4 pt-24 pb-20">
+        {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-white mb-2">Comparador de Gobiernos</h1>
           <p className="text-slate-400">Selecciona dos presidentes y un indicador para comparar su desempeño con datos verificables.</p>
         </div>
 
+        {/* Selector panel */}
         <div className="glass rounded-2xl p-6 mb-8 relative z-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <GovernmentSelector label="Gobierno A" value={govA} onChange={setGovA} excludeId={govB} color={govDataA.color} />
-            <GovernmentSelector label="Gobierno B" value={govB} onChange={setGovB} excludeId={govA} color={govDataB.color} />
+            <GovernmentSelector
+              label="Gobierno A"
+              value={govA}
+              onChange={setGovA}
+              excludeId={govB}
+              color={govDataA.color}
+            />
+            <GovernmentSelector
+              label="Gobierno B"
+              value={govB}
+              onChange={setGovB}
+              excludeId={govA}
+              color={govDataB.color}
+            />
             <IndicatorSelector value={indicatorId} onChange={setIndicatorId} />
           </div>
         </div>
 
+        {/* Indicator info */}
         <div className="glass-card rounded-xl p-4 mb-6 flex flex-wrap items-start gap-4">
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-3 flex-wrap mb-2">
@@ -302,10 +413,22 @@ export default function ComparadorPage() {
               <div className="glass-card rounded-xl p-5">
                 <h3 className="text-white font-semibold text-sm mb-4">Ficha técnica del indicador</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Unidad</p><p className="text-slate-300">{indicator.unit}</p></div>
-                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Frecuencia</p><p className="text-slate-300">{indicator.frequency}</p></div>
-                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Fuentes</p><p className="text-slate-300">{indicator.sourceIds.join(', ')}</p></div>
-                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Comparabilidad histórica</p><MethodologyBadge level={indicator.comparabilityLevel} showLabel /></div>
+                  <div>
+                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Unidad</p>
+                    <p className="text-slate-300">{indicator.unit}</p>
+                  </div>
+                  <div>
+                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Frecuencia</p>
+                    <p className="text-slate-300">{indicator.frequency}</p>
+                  </div>
+                  <div>
+                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Fuentes</p>
+                    <p className="text-slate-300">{indicator.sourceIds.join(', ')}</p>
+                  </div>
+                  <div>
+                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Comparabilidad histórica</p>
+                    <MethodologyBadge level={indicator.comparabilityLevel} showLabel />
+                  </div>
                   {indicator.methodologyNotes && (
                     <div className="md:col-span-2">
                       <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Notas metodológicas</p>
@@ -318,7 +441,10 @@ export default function ComparadorPage() {
                     <p className="text-slate-500 text-xs uppercase tracking-wider mb-2">Limitaciones</p>
                     <ul className="space-y-1">
                       {indicator.limitations.map((lim, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-slate-400"><span className="text-amber-400 shrink-0">⚠</span>{lim}</li>
+                        <li key={i} className="flex gap-2 text-sm text-slate-400">
+                          <span className="text-amber-400 shrink-0">⚠</span>
+                          {lim}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -328,60 +454,22 @@ export default function ComparadorPage() {
           )}
         </AnimatePresence>
 
+        {/* Stat cards comparativas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          <motion.div key={`${govA}-${indicatorId}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            <div className="glass-card rounded-xl p-5" style={{ borderTop: `3px solid ${govDataA.color}` }}>
-              <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">{govDataA.president}</p>
-              <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-4xl font-bold text-white">{statsA.start !== null ? statsA.start.toFixed(1) : '—'}</span>
-                <span className="text-slate-400 text-sm">{indicator.unit}</span>
-                <span className="text-slate-500 text-xs">al inicio</span>
-              </div>
-              <div className="space-y-2">
-                {[{ label: 'Al final del periodo', value: statsA.end },{ label: 'Promedio del periodo', value: statsA.mean },{ label: 'Mínimo alcanzado', value: statsA.min },{ label: 'Máximo registrado', value: statsA.max }].map(({ label, value }) => (
-                  <div key={label} className="flex justify-between items-center">
-                    <span className="text-slate-500 text-xs">{label}</span>
-                    <span className="text-slate-300 text-sm font-medium">{value !== null ? value.toFixed(1) : '—'} <span className="text-slate-500 text-xs">{indicator.unit}</span></span>
-                  </div>
-                ))}
-                {statsA.change !== null && (
-                  <div className="flex justify-between items-center pt-2 border-t border-slate-700/50">
-                    <span className="text-slate-500 text-xs">Cambio total</span>
-                    <span className={`text-sm font-bold ${getChangeColor(statsA.change, indicator.higherIsBetter)}`}>
-                      {statsA.change > 0 ? '+' : ''}{statsA.change.toFixed(1)} ({statsA.changePercent !== null ? (statsA.changePercent > 0 ? '+' : '') + statsA.changePercent.toFixed(1) + '%' : '—'})
-                    </span>
-                  </div>
-                )}
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div key={`${govB}-${indicatorId}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            <div className="glass-card rounded-xl p-5" style={{ borderTop: `3px solid ${govDataB.color}` }}>
-              <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">{govDataB.president}</p>
-              <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-4xl font-bold text-white">{statsB.start !== null ? statsB.start.toFixed(1) : '—'}</span>
-                <span className="text-slate-400 text-sm">{indicator.unit}</span>
-                <span className="text-slate-500 text-xs">al inicio</span>
-              </div>
-              <div className="space-y-2">
-                {[{ label: 'Al final del periodo', value: statsB.end },{ label: 'Promedio del periodo', value: statsB.mean },{ label: 'Mínimo alcanzado', value: statsB.min },{ label: 'Máximo registrado', value: statsB.max }].map(({ label, value }) => (
-                  <div key={label} className="flex justify-between items-center">
-                    <span className="text-slate-500 text-xs">{label}</span>
-                    <span className="text-slate-300 text-sm font-medium">{value !== null ? value.toFixed(1) : '—'} <span className="text-slate-500 text-xs">{indicator.unit}</span></span>
-                  </div>
-                ))}
-                {statsB.change !== null && (
-                  <div className="flex justify-between items-center pt-2 border-t border-slate-700/50">
-                    <span className="text-slate-500 text-xs">Cambio total</span>
-                    <span className={`text-sm font-bold ${getChangeColor(statsB.change, indicator.higherIsBetter)}`}>
-                      {statsB.change > 0 ? '+' : ''}{statsB.change.toFixed(1)} ({statsB.changePercent !== null ? (statsB.changePercent > 0 ? '+' : '') + statsB.changePercent.toFixed(1) + '%' : '—'})
-                    </span>
-                  </div>
-                )}
-              </div>
-            </div>
-          </motion.div>
+          <StatCard
+            key={`${govA}-${indicatorId}`}
+            gov={govDataA}
+            stats={statsA}
+            indicator={indicator}
+            formatVal={chartFormatters.formatY}
+          />
+          <StatCard
+            key={`${govB}-${indicatorId}`}
+            gov={govDataB}
+            stats={statsB}
+            indicator={indicator}
+            formatVal={chartFormatters.formatY}
+          />
         </div>
 
         {/* Chart */}
@@ -463,25 +551,50 @@ export default function ComparadorPage() {
                 <div className="px-5 pb-5 border-t border-slate-700/50">
                   <p className="text-slate-500 text-xs mt-4 mb-4 leading-relaxed">
                     Estas variables son <strong className="text-slate-400">exógenas</strong>: ningún gobierno colombiano las controla.
-                    Sin embargo, explican una parte significativa de los resultados económicos.
+                    Sin embargo, explican una parte significativa de los resultados económicos. El precio del petróleo
+                    determina ingresos fiscales; la tasa Banrep el costo del crédito; la tasa de cambio la inflación importada.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
                       <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Precio Brent (USD/barril)</p>
                       {oilData.length > 0 ? (
-                        <LineChart data={oilData} lines={[{ key: 'value', color: '#f59e0b', name: 'Brent', strokeWidth: 2 }]} referenceBands={referenceBands} xDomain={[minYear, maxYear]} height={180} formatY={(v) => `$${v.toFixed(0)}`} sourceLabel="Banrep/EIA" />
+                        <LineChart
+                          data={oilData}
+                          lines={[{ key: 'value', color: '#f59e0b', name: 'Brent', strokeWidth: 2 }]}
+                          referenceBands={referenceBands}
+                          xDomain={[minYear, maxYear]}
+                          height={180}
+                          formatY={(v) => `$${v.toFixed(0)}`}
+                          sourceLabel="Banrep/EIA"
+                        />
                       ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
                     </div>
                     <div>
                       <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Tasa de cambio (COP/USD)</p>
                       {fxData.length > 0 ? (
-                        <LineChart data={fxData} lines={[{ key: 'value', color: '#a78bfa', name: 'TRM', strokeWidth: 2 }]} referenceBands={referenceBands} xDomain={[minYear, maxYear]} height={180} formatY={(v) => `${(v / 1000).toFixed(1)}k`} sourceLabel="Banrep" />
+                        <LineChart
+                          data={fxData}
+                          lines={[{ key: 'value', color: '#a78bfa', name: 'TRM', strokeWidth: 2 }]}
+                          referenceBands={referenceBands}
+                          xDomain={[minYear, maxYear]}
+                          height={180}
+                          formatY={(v) => `${(v / 1000).toFixed(1)}k`}
+                          sourceLabel="Banrep"
+                        />
                       ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
                     </div>
                     <div>
                       <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Tasa Banrep (% anual)</p>
                       {rateData.length > 0 ? (
-                        <LineChart data={rateData} lines={[{ key: 'value', color: '#34d399', name: 'Repo', strokeWidth: 2 }]} referenceBands={referenceBands} xDomain={[minYear, maxYear]} height={180} formatY={(v) => `${v.toFixed(1)}%`} sourceLabel="Banrep" />
+                        <LineChart
+                          data={rateData}
+                          lines={[{ key: 'value', color: '#34d399', name: 'Repo', strokeWidth: 2 }]}
+                          referenceBands={referenceBands}
+                          xDomain={[minYear, maxYear]}
+                          height={180}
+                          formatY={(v) => `${v.toFixed(1)}%`}
+                          sourceLabel="Banrep"
+                        />
                       ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
                     </div>
                   </div>
@@ -507,23 +620,39 @@ export default function ComparadorPage() {
           </AnimatePresence>
         </div>
 
+        {/* Contexto heredado */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           {[{ gov: govDataA }, { gov: govDataB }].map(({ gov }) => (
             gov.inheritedContext && (
               <div key={gov.id} className="glass-card rounded-xl p-5">
-                <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">Contexto heredado · {gov.president}</p>
+                <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">
+                  Contexto heredado · {gov.president}
+                </p>
                 <p className="text-slate-400 text-sm leading-relaxed">{gov.inheritedContext.notes}</p>
                 <div className="mt-3 pt-3 border-t border-slate-700/50 grid grid-cols-2 gap-2">
-                  <div><p className="text-slate-500 text-xs">Desempleo heredado</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.unemploymentRate}%</p></div>
-                  <div><p className="text-slate-500 text-xs">Inflación heredada</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.inflationRate}%</p></div>
-                  <div><p className="text-slate-500 text-xs">Deuda/PIB heredada</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.debtGdpRatio}%</p></div>
-                  <div><p className="text-slate-500 text-xs">Crecimiento año anterior</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.gdpGrowthPrev}%</p></div>
+                  <div>
+                    <p className="text-slate-500 text-xs">Desempleo heredado</p>
+                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.unemploymentRate}%</p>
+                  </div>
+                  <div>
+                    <p className="text-slate-500 text-xs">Inflación heredada</p>
+                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.inflationRate}%</p>
+                  </div>
+                  <div>
+                    <p className="text-slate-500 text-xs">Deuda/PIB heredada</p>
+                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.debtGdpRatio}%</p>
+                  </div>
+                  <div>
+                    <p className="text-slate-500 text-xs">Crecimiento año anterior</p>
+                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.gdpGrowthPrev}%</p>
+                  </div>
                 </div>
               </div>
             )
           ))}
         </div>
 
+        {/* Eventos de contexto */}
         {relevantEvents.length > 0 && (
           <div className="glass-card rounded-xl p-5 mb-6">
             <h3 className="text-white font-semibold text-sm mb-4 flex items-center gap-2">
@@ -533,7 +662,9 @@ export default function ComparadorPage() {
             <div className="space-y-3">
               {relevantEvents.map((evt, i) => (
                 <div key={i} className="flex gap-3">
-                  <div className="text-center shrink-0"><span className="text-slate-400 text-xs font-mono">{evt.year}</span></div>
+                  <div className="text-center shrink-0">
+                    <span className="text-slate-400 text-xs font-mono">{evt.year}</span>
+                  </div>
                   <div>
                     <p className="text-slate-200 text-sm font-medium">{evt.name}</p>
                     <p className="text-slate-400 text-xs leading-relaxed">{evt.description}</p>
@@ -553,6 +684,7 @@ export default function ComparadorPage() {
             construya su propia interpretación informada.
           </p>
         </WarningBox>
+
       </div>
     </div>
   );
