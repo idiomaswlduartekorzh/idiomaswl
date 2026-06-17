@@ -34,6 +34,7 @@ export const GDP_GROWTH: Observation[] = [
   { indicatorId: 'pib-crecimiento', year: 2023, value: 0.6, unit: '%', sourceId: 'dane', notes: 'Fuerte desaceleración; altas tasas de interés (Banrep), inflación y desconfianza empresarial' },
   { indicatorId: 'pib-crecimiento', year: 2024, value: 1.8, unit: '%', sourceId: 'dane', notes: 'Recuperación gradual; inflación bajando' },
   { indicatorId: 'pib-crecimiento', year: 2025, value: 2.8, unit: '%', sourceId: 'dane', notes: 'Preliminar; recuperación continúa; Banrep bajó tasa a ~7.25%' },
+  { indicatorId: 'pib-crecimiento', year: 2026, value: 3.1, unit: '%', sourceId: 'dane', notes: 'Estimado preliminar (a junio 2026); reactivación del crédito y consumo; año electoral' },
 ];
 
 // Inflación IPC anual - DANE
@@ -70,6 +71,7 @@ export const INFLATION: Observation[] = [
   { indicatorId: 'inflacion', year: 2023, value: 9.3, unit: '%', sourceId: 'dane', notes: 'Descenso gradual; Banrep con tasa del 13.25%' },
   { indicatorId: 'inflacion', year: 2024, value: 5.2, unit: '%', sourceId: 'dane', notes: 'Convergencia hacia la meta; aún sobre el 3%' },
   { indicatorId: 'inflacion', year: 2025, value: 4.9, unit: '%', sourceId: 'dane', notes: 'Preliminar; primer año bajo 5% desde 2021; desinflación continua' },
+  { indicatorId: 'inflacion', year: 2026, value: 4.2, unit: '%', sourceId: 'dane', notes: 'Estimado preliminar (a junio 2026); acercamiento gradual a la meta del 3%' },
 ];
 
 // Deuda pública / PIB - Ministerio de Hacienda
@@ -106,6 +108,7 @@ export const DEBT_GDP: Observation[] = [
   { indicatorId: 'deuda-pib', year: 2023, value: 59.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Reducción gradual; metas MFMP' },
   { indicatorId: 'deuda-pib', year: 2024, value: 57.9, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado; debate sobre sostenibilidad fiscal' },
   { indicatorId: 'deuda-pib', year: 2025, value: 56.5, unit: '% PIB', sourceId: 'mhcp', notes: 'Preliminar; ajuste gradual; MFMP objetivo <55% para 2027' },
+  { indicatorId: 'deuda-pib', year: 2026, value: 55.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado preliminar; reducción marginal; año electoral aumenta presión de gasto' },
 ];
 
 // Déficit Fiscal GNC / PIB - MHCP (Marco Fiscal de Mediano Plazo)
@@ -142,6 +145,7 @@ export const FISCAL_DEFICIT: Observation[] = [
   { indicatorId: 'deficit-fiscal', year: 2023, value: -4.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Ajuste gradual; debate sobre cumplimiento de la meta de la regla fiscal' },
   { indicatorId: 'deficit-fiscal', year: 2024, value: -5.5, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Deterioro: FMI alertó sobre brecha fiscal; recorte presupuestal polémico de $23 billones' },
   { indicatorId: 'deficit-fiscal', year: 2025, value: -4.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Preliminar; ajuste fiscal; regla fiscal sigue suspendida' },
+  { indicatorId: 'deficit-fiscal', year: 2026, value: -4.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado preliminar; reducción moderada; fin de gobierno Petro (agosto 2026)' },
 ];
 
 // IED - Banco de la República (millones USD)
@@ -172,4 +176,5 @@ export const FDI: Observation[] = [
   { indicatorId: 'ied', year: 2023, value: 10852, unit: 'mill. USD', sourceId: 'banrep', notes: 'Caída significativa; incertidumbre reformas Petro' },
   { indicatorId: 'ied', year: 2024, value: 10200, unit: 'mill. USD', sourceId: 'banrep', notes: 'Estimado provisional' },
   { indicatorId: 'ied', year: 2025, value: 9800, unit: 'mill. USD', sourceId: 'banrep', notes: 'Preliminar; incertidumbre reformas mantiene IED baja' },
+  { indicatorId: 'ied', year: 2026, value: 10400, unit: 'mill. USD', sourceId: 'banrep', notes: 'Estimado preliminar; leve recuperación por tasas Banrep más bajas y expectativa nuevo gobierno' },
 ];
