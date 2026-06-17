@@ -25,6 +25,8 @@ interface ReferenceBand {
   endYear: number;
   label: string;
   color: string;
+  fillOpacity?: number;
+  labelOpacity?: number;
 }
 
 interface Props {
@@ -38,6 +40,7 @@ interface Props {
   formatY?: (val: number) => string;
   formatTooltip?: (val: number) => string;
   sourceLabel?: string;
+  xDomain?: [number, number];
 }
 
 function CustomTooltip({
@@ -106,6 +109,7 @@ export default function LineChart({
   formatY,
   formatTooltip,
   sourceLabel,
+  xDomain,
 }: Props) {
   return (
     <div className="w-full">
@@ -123,14 +127,14 @@ export default function LineChart({
               x1={band.startYear}
               x2={band.endYear}
               fill={band.color}
-              fillOpacity={0.12}
+              fillOpacity={band.fillOpacity ?? 0.12}
               label={{
                 value: band.label,
                 position: 'insideTop',
                 fill: band.color,
                 fontSize: 10,
                 fontWeight: 600,
-                opacity: 0.85,
+                opacity: band.labelOpacity ?? 0.85,
               }}
             />
           ))}
@@ -145,6 +149,9 @@ export default function LineChart({
 
           <XAxis
             dataKey="year"
+            type="number"
+            domain={xDomain ?? ['dataMin', 'dataMax']}
+            allowDecimals={false}
             tick={{ fill: '#64748b', fontSize: 11 }}
             axisLine={{ stroke: '#1e293b' }}
             tickLine={false}

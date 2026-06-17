@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import NavBar from '@/components/NavBar';
 import { GOVERNMENTS } from '@/data/governments';
 import { INDICATORS, CATEGORY_LABELS, CATEGORY_ICONS } from '@/data/indicators';
 import { getObservations, CONTEXT_EVENTS } from '@/data/index';
-import { computeGovStats, getChangeColor, CATEGORY_COLORS } from '@/lib/utils';
+import { computeGovStats, getChangeColor, CATEGORY_COLORS, getChartFormatters } from '@/lib/utils';
 import LineChart from '@/components/charts/LineChart';
 import IndicatorCard from '@/components/IndicatorCard';
 import MethodologyBadge from '@/components/MethodologyBadge';
@@ -35,13 +35,24 @@ function GovernmentSelector({
   color: string;
 }) {
   const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
   const selected = GOVERNMENTS.find((g) => g.id === value);
 
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <p className="text-slate-400 text-xs uppercase tracking-wider mb-2">{label}</p>
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => setOpen((o) => !o)}
         className="w-full flex items-center justify-between gap-3 p-4 glass-card rounded-xl hover:border-slate-600 transition-all"
         style={{ borderLeft: `3px solid ${color}` }}
       >
@@ -55,18 +66,23 @@ function GovernmentSelector({
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: -4 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -4 }}
-            className="absolute top-full mt-2 w-full z-50 glass rounded-xl overflow-hidden shadow-2xl border border-slate-700"
+            initial={{ opacity: 0, y: -4, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -4, scale: 0.98 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-full mt-2 w-full z-[200] glass rounded-xl overflow-hidden shadow-2xl border border-slate-700"
           >
             {GOVERNMENTS.filter((g) => g.id !== excludeId).map((gov) => (
               <button
                 key={gov.id}
-                onClick={() => { onChange(gov.id); setOpen(false); }}
-                className={`w-full flex items-center gap-3 p-3 hover:bg-slate-800/50 transition-colors text-left ${gov.id === value ? 'bg-slate-800/30' : ''}`}
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  onChange(gov.id);
+                  setOpen(false);
+                }}
+                className={`w-full flex items-center gap-3 p-3 hover:bg-slate-700/60 transition-colors text-left ${gov.id === value ? 'bg-slate-800/50' : ''}`}
               >
-                <div className="w-1 h-8 rounded-full" style={{ backgroundColor: gov.color }} />
+                <div className="w-1 h-8 rounded-full shrink-0" style={{ backgroundColor: gov.color }} />
                 <div>
                   <p className="text-white text-sm font-medium">{gov.president}</p>
                   <p className="text-slate-500 text-xs">{gov.startYear}–{gov.endYear}</p>
@@ -89,19 +105,27 @@ function IndicatorSelector({
 }) {
   const [open, setOpen] = useState(false);
   const [filter, setFilter] = useState<string | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const selected = INDICATORS.find((i) => i.id === value);
   const categories = [...new Set(INDICATORS.map((i) => i.category))];
+  const filtered = filter ? INDICATORS.filter((i) => i.category === filter) : INDICATORS;
 
-  const filtered = filter
-    ? INDICATORS.filter((i) => i.category === filter)
-    : INDICATORS;
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <p className="text-slate-400 text-xs uppercase tracking-wider mb-2">Indicador</p>
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => setOpen((o) => !o)}
         className="w-full flex items-center justify-between gap-3 p-4 glass-card rounded-xl hover:border-slate-600 transition-all"
         style={{ borderLeft: `3px solid ${selected ? CATEGORY_COLORS[selected.category] : '#3b82f6'}` }}
       >
@@ -115,15 +139,15 @@ function IndicatorSelector({
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: -4 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -4 }}
-            className="absolute top-full mt-2 w-full z-50 glass rounded-xl overflow-hidden shadow-2xl border border-slate-700 max-h-96 overflow-y-auto"
+            initial={{ opacity: 0, y: -4, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -4, scale: 0.98 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-full mt-2 w-full z-[200] glass rounded-xl shadow-2xl border border-slate-700 max-h-96 overflow-y-auto"
           >
-            {/* Category filter */}
-            <div className="p-3 border-b border-slate-700/50 flex flex-wrap gap-2">
+            <div className="p-3 border-b border-slate-700/50 flex flex-wrap gap-2 sticky top-0 glass">
               <button
-                onClick={() => setFilter(null)}
+                onMouseDown={(e) => { e.preventDefault(); setFilter(null); }}
                 className={`text-xs px-3 py-1 rounded-full transition-colors ${!filter ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'}`}
               >
                 Todos
@@ -131,7 +155,7 @@ function IndicatorSelector({
               {categories.map((cat) => (
                 <button
                   key={cat}
-                  onClick={() => setFilter(cat)}
+                  onMouseDown={(e) => { e.preventDefault(); setFilter(cat); }}
                   className={`text-xs px-3 py-1 rounded-full transition-colors ${filter === cat ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'}`}
                 >
                   {CATEGORY_ICONS[cat]} {CATEGORY_LABELS[cat]}
@@ -142,8 +166,13 @@ function IndicatorSelector({
             {filtered.map((ind) => (
               <button
                 key={ind.id}
-                onClick={() => { onChange(ind.id); setOpen(false); setFilter(null); }}
-                className={`w-full flex items-start gap-3 p-3 hover:bg-slate-800/50 transition-colors text-left ${ind.id === value ? 'bg-slate-800/30' : ''}`}
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  onChange(ind.id);
+                  setOpen(false);
+                  setFilter(null);
+                }}
+                className={`w-full flex items-start gap-3 p-3 hover:bg-slate-700/60 transition-colors text-left ${ind.id === value ? 'bg-slate-800/50' : ''}`}
               >
                 <div
                   className="w-1 h-8 rounded-full mt-0.5 shrink-0"
@@ -178,6 +207,11 @@ export default function ComparadorPage() {
   const statsA = useMemo(() => computeGovStats(allObs, govDataA), [allObs, govDataA]);
   const statsB = useMemo(() => computeGovStats(allObs, govDataB), [allObs, govDataB]);
 
+  const chartFormatters = useMemo(
+    () => getChartFormatters(allObs.filter((o) => !o.department), indicator.unit),
+    [allObs, indicator.unit]
+  );
+
   const chartData = useMemo(() => {
     const years = [...new Set(allObs.filter((o) => !o.department).map((o) => o.year))].sort();
     return years.map((year) => {
@@ -206,12 +240,18 @@ export default function ComparadorPage() {
 
   const filteredChartData = chartData.filter((d) => d.year >= minYear && d.year <= maxYear);
 
-  const referenceBands = [
-    { startYear: govDataA.startYear, endYear: govDataA.endYear, label: govDataA.president.split(' ')[0], color: govDataA.color },
-    { startYear: govDataB.startYear, endYear: govDataB.endYear, label: govDataB.president.split(' ')[0], color: govDataB.color },
-  ];
+  const referenceBands = GOVERNMENTS.map((gov) => {
+    const isSelected = gov.id === govA || gov.id === govB;
+    return {
+      startYear: gov.startYear,
+      endYear:   gov.endYear,
+      label:     gov.president.split(' ')[0],
+      color:     gov.color,
+      fillOpacity:  isSelected ? 0.18 : 0.04,
+      labelOpacity: isSelected ? 0.9  : 0.35,
+    };
+  });
 
-  // Macro context data — must be after minYear/maxYear are defined
   const oilData = useMemo(() => getObservations('precio-petroleo').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
   const fxData = useMemo(() => getObservations('tasa-cambio').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
   const rateData = useMemo(() => getObservations('tasa-banrep').filter(o => o.year >= minYear && o.year <= maxYear).map(o => ({ year: o.year, value: o.value })), [minYear, maxYear]);
@@ -221,34 +261,19 @@ export default function ComparadorPage() {
       <NavBar />
 
       <div className="max-w-7xl mx-auto px-4 pt-24 pb-20">
-        {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-white mb-2">Comparador de Gobiernos</h1>
           <p className="text-slate-400">Selecciona dos presidentes y un indicador para comparar su desempeño con datos verificables.</p>
         </div>
 
-        {/* Selector panel */}
-        <div className="glass rounded-2xl p-6 mb-8">
+        <div className="glass rounded-2xl p-6 mb-8 relative z-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <GovernmentSelector
-              label="Gobierno A"
-              value={govA}
-              onChange={setGovA}
-              excludeId={govB}
-              color={govDataA.color}
-            />
-            <GovernmentSelector
-              label="Gobierno B"
-              value={govB}
-              onChange={setGovB}
-              excludeId={govA}
-              color={govDataB.color}
-            />
+            <GovernmentSelector label="Gobierno A" value={govA} onChange={setGovA} excludeId={govB} color={govDataA.color} />
+            <GovernmentSelector label="Gobierno B" value={govB} onChange={setGovB} excludeId={govA} color={govDataB.color} />
             <IndicatorSelector value={indicatorId} onChange={setIndicatorId} />
           </div>
         </div>
 
-        {/* Indicator info */}
         <div className="glass-card rounded-xl p-4 mb-6 flex flex-wrap items-start gap-4">
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-3 flex-wrap mb-2">
@@ -277,22 +302,10 @@ export default function ComparadorPage() {
               <div className="glass-card rounded-xl p-5">
                 <h3 className="text-white font-semibold text-sm mb-4">Ficha técnica del indicador</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Unidad</p>
-                    <p className="text-slate-300">{indicator.unit}</p>
-                  </div>
-                  <div>
-                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Frecuencia</p>
-                    <p className="text-slate-300">{indicator.frequency}</p>
-                  </div>
-                  <div>
-                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Fuentes</p>
-                    <p className="text-slate-300">{indicator.sourceIds.join(', ')}</p>
-                  </div>
-                  <div>
-                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Comparabilidad histórica</p>
-                    <MethodologyBadge level={indicator.comparabilityLevel} showLabel />
-                  </div>
+                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Unidad</p><p className="text-slate-300">{indicator.unit}</p></div>
+                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Frecuencia</p><p className="text-slate-300">{indicator.frequency}</p></div>
+                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Fuentes</p><p className="text-slate-300">{indicator.sourceIds.join(', ')}</p></div>
+                  <div><p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Comparabilidad histórica</p><MethodologyBadge level={indicator.comparabilityLevel} showLabel /></div>
                   {indicator.methodologyNotes && (
                     <div className="md:col-span-2">
                       <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Notas metodológicas</p>
@@ -305,10 +318,7 @@ export default function ComparadorPage() {
                     <p className="text-slate-500 text-xs uppercase tracking-wider mb-2">Limitaciones</p>
                     <ul className="space-y-1">
                       {indicator.limitations.map((lim, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-slate-400">
-                          <span className="text-amber-400 shrink-0">⚠</span>
-                          {lim}
-                        </li>
+                        <li key={i} className="flex gap-2 text-sm text-slate-400"><span className="text-amber-400 shrink-0">⚠</span>{lim}</li>
                       ))}
                     </ul>
                   </div>
@@ -318,30 +328,20 @@ export default function ComparadorPage() {
           )}
         </AnimatePresence>
 
-        {/* Stat cards comparativas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          <motion.div key={`${govA}-${indicatorId}`} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
+          <motion.div key={`${govA}-${indicatorId}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <div className="glass-card rounded-xl p-5" style={{ borderTop: `3px solid ${govDataA.color}` }}>
               <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">{govDataA.president}</p>
               <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-4xl font-bold text-white">
-                  {statsA.start !== null ? statsA.start.toFixed(1) : '—'}
-                </span>
+                <span className="text-4xl font-bold text-white">{statsA.start !== null ? statsA.start.toFixed(1) : '—'}</span>
                 <span className="text-slate-400 text-sm">{indicator.unit}</span>
                 <span className="text-slate-500 text-xs">al inicio</span>
               </div>
               <div className="space-y-2">
-                {[
-                  { label: 'Al final del periodo', value: statsA.end },
-                  { label: 'Promedio del periodo', value: statsA.mean },
-                  { label: 'Mínimo alcanzado', value: statsA.min },
-                  { label: 'Máximo registrado', value: statsA.max },
-                ].map(({ label, value }) => (
+                {[{ label: 'Al final del periodo', value: statsA.end },{ label: 'Promedio del periodo', value: statsA.mean },{ label: 'Mínimo alcanzado', value: statsA.min },{ label: 'Máximo registrado', value: statsA.max }].map(({ label, value }) => (
                   <div key={label} className="flex justify-between items-center">
                     <span className="text-slate-500 text-xs">{label}</span>
-                    <span className="text-slate-300 text-sm font-medium">
-                      {value !== null ? value.toFixed(1) : '—'} <span className="text-slate-500 text-xs">{indicator.unit}</span>
-                    </span>
+                    <span className="text-slate-300 text-sm font-medium">{value !== null ? value.toFixed(1) : '—'} <span className="text-slate-500 text-xs">{indicator.unit}</span></span>
                   </div>
                 ))}
                 {statsA.change !== null && (
@@ -356,28 +356,19 @@ export default function ComparadorPage() {
             </div>
           </motion.div>
 
-          <motion.div key={`${govB}-${indicatorId}`} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
+          <motion.div key={`${govB}-${indicatorId}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <div className="glass-card rounded-xl p-5" style={{ borderTop: `3px solid ${govDataB.color}` }}>
               <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">{govDataB.president}</p>
               <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-4xl font-bold text-white">
-                  {statsB.start !== null ? statsB.start.toFixed(1) : '—'}
-                </span>
+                <span className="text-4xl font-bold text-white">{statsB.start !== null ? statsB.start.toFixed(1) : '—'}</span>
                 <span className="text-slate-400 text-sm">{indicator.unit}</span>
                 <span className="text-slate-500 text-xs">al inicio</span>
               </div>
               <div className="space-y-2">
-                {[
-                  { label: 'Al final del periodo', value: statsB.end },
-                  { label: 'Promedio del periodo', value: statsB.mean },
-                  { label: 'Mínimo alcanzado', value: statsB.min },
-                  { label: 'Máximo registrado', value: statsB.max },
-                ].map(({ label, value }) => (
+                {[{ label: 'Al final del periodo', value: statsB.end },{ label: 'Promedio del periodo', value: statsB.mean },{ label: 'Mínimo alcanzado', value: statsB.min },{ label: 'Máximo registrado', value: statsB.max }].map(({ label, value }) => (
                   <div key={label} className="flex justify-between items-center">
                     <span className="text-slate-500 text-xs">{label}</span>
-                    <span className="text-slate-300 text-sm font-medium">
-                      {value !== null ? value.toFixed(1) : '—'} <span className="text-slate-500 text-xs">{indicator.unit}</span>
-                    </span>
+                    <span className="text-slate-300 text-sm font-medium">{value !== null ? value.toFixed(1) : '—'} <span className="text-slate-500 text-xs">{indicator.unit}</span></span>
                   </div>
                 ))}
                 {statsB.change !== null && (
@@ -395,26 +386,52 @@ export default function ComparadorPage() {
 
         {/* Chart */}
         <div className="glass rounded-2xl p-6 mb-6">
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between mb-4">
             <h3 className="text-white font-semibold">Serie histórica: {indicator.shortName}</h3>
-            <div className="flex gap-4 text-xs text-slate-400">
-              <span className="flex items-center gap-1">
-                <span className="w-3 h-0.5 inline-block" style={{ backgroundColor: govDataA.color }} />
-                {govDataA.president.split(' ')[0]}
-              </span>
-              <span className="flex items-center gap-1">
-                <span className="w-3 h-0.5 inline-block" style={{ backgroundColor: govDataB.color }} />
-                {govDataB.president.split(' ')[0]}
-              </span>
+          </div>
+
+          {/* Government timeline strip */}
+          <div className="mb-4">
+            <div className="flex items-stretch gap-0.5 rounded-lg overflow-hidden h-8 relative">
+              {GOVERNMENTS.filter(g => g.endYear >= minYear && g.startYear <= maxYear).map((gov) => {
+                const visStart = Math.max(gov.startYear, minYear);
+                const visEnd = Math.min(gov.endYear, maxYear);
+                const totalSpan = maxYear - minYear;
+                const widthPct = ((visEnd - visStart) / totalSpan) * 100;
+                const leftPct = ((visStart - minYear) / totalSpan) * 100;
+                const isSelected = gov.id === govA || gov.id === govB;
+                return (
+                  <div
+                    key={gov.id}
+                    className="absolute top-0 bottom-0 flex items-center justify-center overflow-hidden"
+                    style={{
+                      left: `${leftPct}%`,
+                      width: `${widthPct}%`,
+                      backgroundColor: gov.color + (isSelected ? '33' : '14'),
+                      borderLeft: isSelected ? `2px solid ${gov.color}` : `1px solid ${gov.color}40`,
+                    }}
+                  >
+                    <span
+                      className="text-[10px] font-semibold truncate px-1 select-none"
+                      style={{ color: gov.color, opacity: isSelected ? 1 : 0.5 }}
+                    >
+                      {gov.president.split(' ')[0]} {gov.startYear}–{gov.endYear}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
+
           <LineChart
             data={filteredChartData.map((d) => ({ year: d.year, value: d.value ?? 0 }))}
             lines={[{ key: 'value', color: '#60a5fa', name: indicator.shortName, strokeWidth: 2 }]}
             referenceBands={referenceBands}
+            xDomain={[minYear, maxYear]}
             yLabel={indicator.unit}
-            height={320}
-            formatY={(v) => v.toFixed(1)}
+            height={300}
+            formatY={chartFormatters.formatY}
+            formatTooltip={chartFormatters.formatTooltip}
             sourceLabel={`Fuente: ${indicator.sourceIds.join(', ')}`}
           />
         </div>
@@ -446,47 +463,25 @@ export default function ComparadorPage() {
                 <div className="px-5 pb-5 border-t border-slate-700/50">
                   <p className="text-slate-500 text-xs mt-4 mb-4 leading-relaxed">
                     Estas variables son <strong className="text-slate-400">exógenas</strong>: ningún gobierno colombiano las controla.
-                    Sin embargo, explican una parte significativa de los resultados económicos. El precio del petróleo
-                    determina ingresos fiscales; la tasa Banrep el costo del crédito; la tasa de cambio la inflación importada.
+                    Sin embargo, explican una parte significativa de los resultados económicos.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
                       <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Precio Brent (USD/barril)</p>
                       {oilData.length > 0 ? (
-                        <LineChart
-                          data={oilData}
-                          lines={[{ key: 'value', color: '#f59e0b', name: 'Brent', strokeWidth: 2 }]}
-                          referenceBands={referenceBands}
-                          height={180}
-                          formatY={(v) => `$${v.toFixed(0)}`}
-                          sourceLabel="Banrep/EIA"
-                        />
+                        <LineChart data={oilData} lines={[{ key: 'value', color: '#f59e0b', name: 'Brent', strokeWidth: 2 }]} referenceBands={referenceBands} xDomain={[minYear, maxYear]} height={180} formatY={(v) => `$${v.toFixed(0)}`} sourceLabel="Banrep/EIA" />
                       ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
                     </div>
                     <div>
                       <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Tasa de cambio (COP/USD)</p>
                       {fxData.length > 0 ? (
-                        <LineChart
-                          data={fxData}
-                          lines={[{ key: 'value', color: '#a78bfa', name: 'TRM', strokeWidth: 2 }]}
-                          referenceBands={referenceBands}
-                          height={180}
-                          formatY={(v) => `${(v / 1000).toFixed(1)}k`}
-                          sourceLabel="Banrep"
-                        />
+                        <LineChart data={fxData} lines={[{ key: 'value', color: '#a78bfa', name: 'TRM', strokeWidth: 2 }]} referenceBands={referenceBands} xDomain={[minYear, maxYear]} height={180} formatY={(v) => `${(v / 1000).toFixed(1)}k`} sourceLabel="Banrep" />
                       ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
                     </div>
                     <div>
                       <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wider">Tasa Banrep (% anual)</p>
                       {rateData.length > 0 ? (
-                        <LineChart
-                          data={rateData}
-                          lines={[{ key: 'value', color: '#34d399', name: 'Repo', strokeWidth: 2 }]}
-                          referenceBands={referenceBands}
-                          height={180}
-                          formatY={(v) => `${v.toFixed(1)}%`}
-                          sourceLabel="Banrep"
-                        />
+                        <LineChart data={rateData} lines={[{ key: 'value', color: '#34d399', name: 'Repo', strokeWidth: 2 }]} referenceBands={referenceBands} xDomain={[minYear, maxYear]} height={180} formatY={(v) => `${v.toFixed(1)}%`} sourceLabel="Banrep" />
                       ) : <p className="text-slate-600 text-xs">Sin datos en este rango</p>}
                     </div>
                   </div>
@@ -512,39 +507,23 @@ export default function ComparadorPage() {
           </AnimatePresence>
         </div>
 
-        {/* Contexto heredado */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           {[{ gov: govDataA }, { gov: govDataB }].map(({ gov }) => (
             gov.inheritedContext && (
               <div key={gov.id} className="glass-card rounded-xl p-5">
-                <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">
-                  Contexto heredado · {gov.president}
-                </p>
+                <p className="text-slate-400 text-xs uppercase tracking-wider mb-3">Contexto heredado · {gov.president}</p>
                 <p className="text-slate-400 text-sm leading-relaxed">{gov.inheritedContext.notes}</p>
                 <div className="mt-3 pt-3 border-t border-slate-700/50 grid grid-cols-2 gap-2">
-                  <div>
-                    <p className="text-slate-500 text-xs">Desempleo heredado</p>
-                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.unemploymentRate}%</p>
-                  </div>
-                  <div>
-                    <p className="text-slate-500 text-xs">Inflación heredada</p>
-                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.inflationRate}%</p>
-                  </div>
-                  <div>
-                    <p className="text-slate-500 text-xs">Deuda/PIB heredada</p>
-                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.debtGdpRatio}%</p>
-                  </div>
-                  <div>
-                    <p className="text-slate-500 text-xs">Crecimiento año anterior</p>
-                    <p className="text-white text-sm font-semibold">{gov.inheritedContext.gdpGrowthPrev}%</p>
-                  </div>
+                  <div><p className="text-slate-500 text-xs">Desempleo heredado</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.unemploymentRate}%</p></div>
+                  <div><p className="text-slate-500 text-xs">Inflación heredada</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.inflationRate}%</p></div>
+                  <div><p className="text-slate-500 text-xs">Deuda/PIB heredada</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.debtGdpRatio}%</p></div>
+                  <div><p className="text-slate-500 text-xs">Crecimiento año anterior</p><p className="text-white text-sm font-semibold">{gov.inheritedContext.gdpGrowthPrev}%</p></div>
                 </div>
               </div>
             )
           ))}
         </div>
 
-        {/* Eventos de contexto */}
         {relevantEvents.length > 0 && (
           <div className="glass-card rounded-xl p-5 mb-6">
             <h3 className="text-white font-semibold text-sm mb-4 flex items-center gap-2">
@@ -554,9 +533,7 @@ export default function ComparadorPage() {
             <div className="space-y-3">
               {relevantEvents.map((evt, i) => (
                 <div key={i} className="flex gap-3">
-                  <div className="text-center shrink-0">
-                    <span className="text-slate-400 text-xs font-mono">{evt.year}</span>
-                  </div>
+                  <div className="text-center shrink-0"><span className="text-slate-400 text-xs font-mono">{evt.year}</span></div>
                   <div>
                     <p className="text-slate-200 text-sm font-medium">{evt.name}</p>
                     <p className="text-slate-400 text-xs leading-relaxed">{evt.description}</p>
@@ -576,7 +553,6 @@ export default function ComparadorPage() {
             construya su propia interpretación informada.
           </p>
         </WarningBox>
-
       </div>
     </div>
   );
