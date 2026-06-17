@@ -18,10 +18,10 @@ export const DEFORESTATION: Observation[] = [
   { indicatorId: 'deforestacion', year: 2019, value: 158894, unit: 'ha', sourceId: 'ideam', notes: 'Baja bajo Duque; estrategia "Ruta Futuro"' },
   { indicatorId: 'deforestacion', year: 2020, value: 171685, unit: 'ha', sourceId: 'ideam', notes: 'COVID: menos presencia estatal en zonas remotas; rebote' },
   { indicatorId: 'deforestacion', year: 2021, value: 174103, unit: 'ha', sourceId: 'ideam', notes: 'Sigue alta bajo Duque; Amazonía como epicentro' },
-  { indicatorId: 'deforestacion', year: 2022, value: 139306, unit: 'ha', sourceId: 'ideam', notes: 'Transición Duque-Petro; Petro con agenda ambiental prioritaria' },
-  { indicatorId: 'deforestacion', year: 2023, value: 155000, unit: 'ha', sourceId: 'ideam', notes: 'Petro: aumento preocupante pese a agenda ambiental; minería ilegal y cultivos ilícitos asociados' },
-  { indicatorId: 'deforestacion', year: 2024, value: 145000, unit: 'ha', sourceId: 'ideam', notes: 'Estimado; dato provisional' },
-  { indicatorId: 'deforestacion', year: 2025, value: 132000, unit: 'ha', sourceId: 'ideam', notes: 'Estimado preliminar; leve mejora; acuerdos con comunidades en zonas críticas' },
+  { indicatorId: 'deforestacion', year: 2022, value: 123517, unit: 'ha', sourceId: 'ideam', notes: 'IDEAM oficial: 123.517 ha. Caída del 29% vs 2021; inicio Petro con agenda ambiental activa.' },
+  { indicatorId: 'deforestacion', year: 2023, value: 79256, unit: 'ha', sourceId: 'ideam', notes: '✅ IDEAM oficial: 79.256 ha — mínimo en 23 años. Reducción del 36% vs 2022; mayor logro ambiental del gobierno Petro.' },
+  { indicatorId: 'deforestacion', year: 2024, value: 113608, unit: 'ha', sourceId: 'ideam', notes: '⚠️ IDEAM oficial: 113.608 ha. Repunte preocupante (+43% vs 2023); Catatumbo y conflicto armado explican parte del alza.' },
+  { indicatorId: 'deforestacion', year: 2025, value: 108000, unit: 'ha', sourceId: 'ideam', notes: 'Estimado preliminar a junio 2026; leve mejora vs 2024 (113.608 ha); base: IDEAM detección temprana.' },
 ];
 
 // Producción de petróleo (miles de barriles/día) - ANH/Ecopetrol

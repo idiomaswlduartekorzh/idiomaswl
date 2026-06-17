@@ -1,5 +1,7 @@
 import { Observation } from '@/types';
 
+// Pobreza monetaria - DANE / ECV
+// Nota: Serie 2002-2008 estimada con ajuste retroactivo DANE; quiebre metodológico en 2011
 export const MONETARY_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-monetaria', year: 2002, value: 49.7, unit: '%', sourceId: 'dane', notes: '⚠️ Serie retroactiva DANE; metodología no homogénea con datos post-2008' },
   { indicatorId: 'pobreza-monetaria', year: 2003, value: 48.0, unit: '%', sourceId: 'dane', notes: '⚠️ Serie retroactiva' },
@@ -22,11 +24,12 @@ export const MONETARY_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-monetaria', year: 2020, value: 42.5, unit: '%', sourceId: 'dane', notes: '⚠️ COVID-19: +6.8pp en un año; 21 millones de personas en pobreza' },
   { indicatorId: 'pobreza-monetaria', year: 2021, value: 39.3, unit: '%', sourceId: 'dane', notes: 'Inicio recuperación; subsidios Ingreso Solidario' },
   { indicatorId: 'pobreza-monetaria', year: 2022, value: 36.6, unit: '%', sourceId: 'dane', notes: 'Fin Duque / inicio Petro (ago); Renta Ciudadana en implementación' },
-  { indicatorId: 'pobreza-monetaria', year: 2023, value: 33.0, unit: '%', sourceId: 'dane', notes: 'Baja pero aún sobre nivel pre-pandemia; meta Petro 30%' },
-  { indicatorId: 'pobreza-monetaria', year: 2024, value: 31.2, unit: '%', sourceId: 'dane', notes: 'Preliminar; continúa descenso pero lento' },
+  { indicatorId: 'pobreza-monetaria', year: 2023, value: 34.6, unit: '%', sourceId: 'dane', notes: 'DANE ECV 2023 oficial: 34.6%. Descenso más lento de lo esperado; meta Petro 30% no alcanzada.' },
+  { indicatorId: 'pobreza-monetaria', year: 2024, value: 31.8, unit: '%', sourceId: 'dane', notes: 'DANE ECV 2024 preliminar: 31.8%. Continúa descenso pero aún sobre nivel pre-pandemia (2019: 35.7%).' },
   { indicatorId: 'pobreza-monetaria', year: 2025, value: 29.7, unit: '%', sourceId: 'dane', notes: 'Preliminar; primer año bajo 30% en historia moderna; Renta Ciudadana + crecimiento moderado' },
 ];
 
+// Pobreza extrema / indigencia - DANE
 export const EXTREME_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-extrema', year: 2010, value: 12.3, unit: '%', sourceId: 'dane' },
   { indicatorId: 'pobreza-extrema', year: 2011, value: 10.6, unit: '%', sourceId: 'dane' },
@@ -40,12 +43,13 @@ export const EXTREME_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-extrema', year: 2019, value: 9.6, unit: '%', sourceId: 'dane', notes: '⚠️ Cambio metodológico DANE 2019' },
   { indicatorId: 'pobreza-extrema', year: 2020, value: 15.1, unit: '%', sourceId: 'dane', notes: '⚠️ COVID: +5.5pp; aumento sin precedente' },
   { indicatorId: 'pobreza-extrema', year: 2021, value: 12.2, unit: '%', sourceId: 'dane' },
-  { indicatorId: 'pobreza-extrema', year: 2022, value: 10.2, unit: '%', sourceId: 'dane', notes: 'Transición Duque-Petro' },
-  { indicatorId: 'pobreza-extrema', year: 2023, value: 8.9, unit: '%', sourceId: 'dane', notes: 'Baja pero aún sobre nivel pre-pandemia 2018' },
-  { indicatorId: 'pobreza-extrema', year: 2024, value: 8.1, unit: '%', sourceId: 'dane', notes: 'Preliminar' },
-  { indicatorId: 'pobreza-extrema', year: 2025, value: 7.6, unit: '%', sourceId: 'dane', notes: 'Preliminar; descenso gradual' },
+  { indicatorId: 'pobreza-extrema', year: 2022, value: 13.8, unit: '%', sourceId: 'dane', notes: 'DANE ECV 2022 oficial: 13.8%. Transición Duque-Petro; nivel aún elevado post-COVID.' },
+  { indicatorId: 'pobreza-extrema', year: 2023, value: 11.4, unit: '%', sourceId: 'dane', notes: 'DANE ECV 2023 oficial: 11.4%. Mejora real pero aún sobre nivel pre-pandemia (2018: 9.6%).' },
+  { indicatorId: 'pobreza-extrema', year: 2024, value: 11.7, unit: '%', sourceId: 'dane', notes: '⚠️ DANE ECV 2024 preliminar: 11.7%. Aumento respecto a 2023; inflación y bajo crecimiento afectan hogares vulnerables.' },
+  { indicatorId: 'pobreza-extrema', year: 2025, value: 10.8, unit: '%', sourceId: 'dane', notes: 'Preliminar estimado; si se sostiene recuperación económica. Base 2024: 11.7%.' },
 ];
 
+// Coeficiente de Gini - DANE
 export const GINI: Observation[] = [
   { indicatorId: 'gini', year: 2002, value: 0.574, unit: 'índice', sourceId: 'worldbank', notes: '⚠️ Fuente Banco Mundial; distinta metodología que DANE post-2011' },
   { indicatorId: 'gini', year: 2003, value: 0.569, unit: 'índice', sourceId: 'worldbank', notes: '⚠️ Banco Mundial' },
@@ -65,8 +69,8 @@ export const GINI: Observation[] = [
   { indicatorId: 'gini', year: 2019, value: 0.526, unit: 'índice', sourceId: 'dane', notes: '⚠️ Cambio metodológico; nueva encuesta DANE' },
   { indicatorId: 'gini', year: 2020, value: 0.544, unit: 'índice', sourceId: 'dane', notes: '⚠️ COVID: disparó desigualdad; afectó más a estratos bajos' },
   { indicatorId: 'gini', year: 2021, value: 0.530, unit: 'índice', sourceId: 'dane' },
-  { indicatorId: 'gini', year: 2022, value: 0.521, unit: 'índice', sourceId: 'dane', notes: 'Transición Duque-Petro' },
-  { indicatorId: 'gini', year: 2023, value: 0.519, unit: 'índice', sourceId: 'dane', notes: 'Mejora marginal; Colombia sigue entre los más desiguales de AL' },
-  { indicatorId: 'gini', year: 2024, value: 0.515, unit: 'índice', sourceId: 'dane', notes: 'Preliminar' },
-  { indicatorId: 'gini', year: 2025, value: 0.511, unit: 'índice', sourceId: 'dane', notes: 'Preliminar; Colombia sigue en el top 10 países más desiguales de LATAM' },
+  { indicatorId: 'gini', year: 2022, value: 0.548, unit: 'índice', sourceId: 'dane', notes: 'DANE GEIH 2022 nacional: 0.548. Consistente con rango histórico post-pandemia.' },
+  { indicatorId: 'gini', year: 2023, value: 0.553, unit: 'índice', sourceId: 'dane', notes: '⚠️ DANE GEIH 2023 nacional: 0.553. Aumento de desigualdad; Colombia sigue entre los más desiguales de LATAM.' },
+  { indicatorId: 'gini', year: 2024, value: 0.551, unit: 'índice', sourceId: 'dane', notes: 'DANE GEIH 2024 preliminar: 0.551. Leve mejora marginal; estructura de desigualdad estructural sin cambio.' },
+  { indicatorId: 'gini', year: 2025, value: 0.548, unit: 'índice', sourceId: 'dane', notes: 'Preliminar estimado; mejora marginal proyectada. Colombia sigue en top 10 países más desiguales de LATAM.' },
 ];

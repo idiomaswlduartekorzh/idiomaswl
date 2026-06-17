@@ -74,7 +74,10 @@ export const INFLATION: Observation[] = [
   { indicatorId: 'inflacion', year: 2026, value: 4.2, unit: '%', sourceId: 'dane', notes: 'Estimado preliminar (a junio 2026); acercamiento gradual a la meta del 3%' },
 ];
 
-// Deuda pública / PIB - Ministerio de Hacienda
+// Deuda pública GNC bruta / PIB - Ministerio de Hacienda (MHCP / MFMP)
+// METODOLOGÍA: Deuda bruta del Gobierno Nacional Central (GNC). Incluye TES y deuda externa pública.
+// NO confundir con: deuda neta GNC (−5/6pp), deuda externa total pública+privada, ni deuda SPNF.
+// Fuente: MHCP — Marco Fiscal de Mediano Plazo (ediciones anuales).
 export const DEBT_GDP: Observation[] = [
   { indicatorId: 'deuda-pib', year: 1994, value: 18.0, unit: '% PIB', sourceId: 'mhcp' },
   { indicatorId: 'deuda-pib', year: 1995, value: 19.5, unit: '% PIB', sourceId: 'mhcp' },
@@ -104,11 +107,11 @@ export const DEBT_GDP: Observation[] = [
   { indicatorId: 'deuda-pib', year: 2019, value: 52.5, unit: '% PIB', sourceId: 'mhcp' },
   { indicatorId: 'deuda-pib', year: 2020, value: 67.5, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ COVID: PIB cayó + gasto de emergencia dispararon deuda' },
   { indicatorId: 'deuda-pib', year: 2021, value: 68.1, unit: '% PIB', sourceId: 'mhcp', notes: 'Pico histórico de deuda/PIB; rebote del PIB empezó a bajar ratio al final' },
-  { indicatorId: 'deuda-pib', year: 2022, value: 63.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Boom PIB + precios petróleo redujeron ratio; inicio Petro' },
-  { indicatorId: 'deuda-pib', year: 2023, value: 59.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Reducción gradual; metas MFMP' },
-  { indicatorId: 'deuda-pib', year: 2024, value: 57.9, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado; debate sobre sostenibilidad fiscal' },
-  { indicatorId: 'deuda-pib', year: 2025, value: 56.5, unit: '% PIB', sourceId: 'mhcp', notes: 'Preliminar; ajuste gradual; MFMP objetivo <55% para 2027' },
-  { indicatorId: 'deuda-pib', year: 2026, value: 55.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado preliminar; reducción marginal; año electoral aumenta presión de gasto' },
+  { indicatorId: 'deuda-pib', year: 2022, value: 60.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Boom PIB (7.5%) + mayores ingresos petróleo redujeron ratio; inicio Petro. GNC bruta MHCP.' },
+  { indicatorId: 'deuda-pib', year: 2023, value: 56.7, unit: '% PIB', sourceId: 'mhcp', notes: 'Alta inflación (9.3%) elevó PIB nominal y redujo el ratio pese al déficit; GNC bruta MHCP.' },
+  { indicatorId: 'deuda-pib', year: 2024, value: 61.5, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Repunte: déficit fiscal de −6.8% del PIB revierte la tendencia; GNC bruta MHCP.' },
+  { indicatorId: 'deuda-pib', year: 2025, value: 64.4, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ GNC bruta 64,4% / GNC neta 58,5% / deuda externa total 53,8% del PIB. Dato oficial MHCP.' },
+  { indicatorId: 'deuda-pib', year: 2026, value: 63.5, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado preliminar; leve reducción si se cumple ajuste fiscal; año electoral. GNC bruta.' },
 ];
 
 // Déficit Fiscal GNC / PIB - MHCP (Marco Fiscal de Mediano Plazo)
@@ -143,9 +146,9 @@ export const FISCAL_DEFICIT: Observation[] = [
   { indicatorId: 'deficit-fiscal', year: 2021, value: -7.1, unit: '% PIB', sourceId: 'mhcp', notes: 'Aún en zona de emergencia; rebote del PIB ayuda levemente al ratio' },
   { indicatorId: 'deficit-fiscal', year: 2022, value: -5.4, unit: '% PIB', sourceId: 'mhcp', notes: 'Inicio Petro; reforma tributaria aprobada (dic 2022) para cerrar brecha' },
   { indicatorId: 'deficit-fiscal', year: 2023, value: -4.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Ajuste gradual; debate sobre cumplimiento de la meta de la regla fiscal' },
-  { indicatorId: 'deficit-fiscal', year: 2024, value: -5.5, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Deterioro: FMI alertó sobre brecha fiscal; recorte presupuestal polémico de $23 billones' },
-  { indicatorId: 'deficit-fiscal', year: 2025, value: -4.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Preliminar; ajuste fiscal; regla fiscal sigue suspendida' },
-  { indicatorId: 'deficit-fiscal', year: 2026, value: -4.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado preliminar; reducción moderada; fin de gobierno Petro (agosto 2026)' },
+  { indicatorId: 'deficit-fiscal', year: 2024, value: -6.8, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Dato oficial MHCP: −6.8% del PIB; el más alto desde la pandemia. FMI alertó; regla fiscal suspendida.' },
+  { indicatorId: 'deficit-fiscal', year: 2025, value: -6.4, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Dato oficial MHCP: −6.4% del PIB. Explicación del aumento de deuda a 64,4% del PIB.' },
+  { indicatorId: 'deficit-fiscal', year: 2026, value: -5.0, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado preliminar; proyección MHCP bajo escenario de ajuste gradual; fin de gobierno Petro (agosto 2026).' },
 ];
 
 // IED - Banco de la República (millones USD)
