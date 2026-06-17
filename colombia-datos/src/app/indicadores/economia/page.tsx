@@ -257,7 +257,7 @@ export default function EconomiaPage() {
             <MethodologyBadge level="alta" showLabel />
           </div>
           <p className="text-slate-400 text-sm mb-6 max-w-3xl">
-            La deuda pasó de 18% del PIB (1994) al 68.1% (2021), el mayor nivel histórico, impulsada por COVID. Desde 2022 bajó a 57.9% (2024). La regla fiscal vigente desde 2012 estableció metas de reducción, suspendidas durante la pandemia.
+            La deuda pasó de 18% del PIB (1994) al 68.1% (2021), el mayor nivel histórico, impulsada por COVID. En 2022 bajó a 60.8% por el boom del PIB, pero repuntó a 61.5% (2024) y 64.4% (2025) por déficits fiscales elevados (−6.8% y −6.4% del PIB). La regla fiscal vigente desde 2012 estableció metas de reducción, suspendidas durante la pandemia.
           </p>
 
           <div className="glass rounded-2xl p-6 mb-4">
@@ -338,9 +338,9 @@ export default function EconomiaPage() {
               },
               {
                 label: 'Petro 2024',
-                value: '−5.5%',
-                note: 'Deterioro respecto a 2023 (−4.2%). El FMI alertó sobre el incumplimiento de la regla fiscal. Recorte de $23 billones.',
-                sub: 'La reforma tributaria de 2022 fue insuficiente para cerrar la brecha. Debate activo sobre sostenibilidad.',
+                value: '−6.8%',
+                note: 'Dato oficial MHCP: −6.8% del PIB — el más alto desde la pandemia. FMI alertó; regla fiscal suspendida. Recorte de $23 billones.',
+                sub: 'La reforma tributaria de 2022 fue insuficiente para cerrar la brecha. El déficit de 2025 se estimó en −6.4%, explicando el alza de deuda a 64.4% del PIB.',
                 color: PET.color,
               },
             ].map((item, i) => (
@@ -444,7 +444,7 @@ export default function EconomiaPage() {
                 points: [
                   'Ingresos fiscales caen bruscamente; el déficit aumenta automáticamente.',
                   'IED se retrae: proyectos de exploración se cancelan.',
-                  'El peso se deválua, encareciendo importaciones y la deuda externa.',
+                  'El peso se devalúa, encareciendo importaciones y la deuda externa.',
                   'El PIB desacelera por efecto directo (producción) e indirecto (gasto público).',
                 ],
                 color: '#ef4444',
