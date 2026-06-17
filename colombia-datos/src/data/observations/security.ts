@@ -1,6 +1,5 @@
 import { Observation } from '@/types';
 
-// Tasa de homicidios por 100.000 hab - Medicina Legal / Policía Nacional
 export const HOMICIDE_RATE: Observation[] = [
   { indicatorId: 'homicidios-tasa', year: 1990, value: 79.3, unit: 'x100k', sourceId: 'medicina-legal', notes: 'Pico histórico: carteles Medellín y Cali, guerra total' },
   { indicatorId: 'homicidios-tasa', year: 1991, value: 81.8, unit: 'x100k', sourceId: 'medicina-legal', notes: 'Máximo histórico absoluto' },
@@ -37,9 +36,9 @@ export const HOMICIDE_RATE: Observation[] = [
   { indicatorId: 'homicidios-tasa', year: 2022, value: 26.1, unit: 'x100k', sourceId: 'medicina-legal', notes: 'Transición; Petro anuncia "Paz Total"' },
   { indicatorId: 'homicidios-tasa', year: 2023, value: 27.2, unit: 'x100k', sourceId: 'medicina-legal', notes: 'Aumento preocupante; grupos armados reconfigurados; negociaciones "Paz Total" lentas' },
   { indicatorId: 'homicidios-tasa', year: 2024, value: 26.8, unit: 'x100k', sourceId: 'medicina-legal', notes: 'Preliminar; datos al cierre no consolidados' },
+  { indicatorId: 'homicidios-tasa', year: 2025, value: 25.4, unit: 'x100k', sourceId: 'medicina-legal', notes: 'Preliminar; leve mejora; Catatumbo y Cauca siguen siendo focos' },
 ];
 
-// Secuestros (casos totales) - Policía Nacional / Fondelibertad
 export const KIDNAPPINGS: Observation[] = [
   { indicatorId: 'secuestros', year: 1996, value: 1938, unit: 'casos', sourceId: 'policia', notes: 'Samper; era de las FARC como fuerza de secuestro masivo' },
   { indicatorId: 'secuestros', year: 1997, value: 2121, unit: 'casos', sourceId: 'policia' },
@@ -70,9 +69,9 @@ export const KIDNAPPINGS: Observation[] = [
   { indicatorId: 'secuestros', year: 2022, value: 193, unit: 'casos', sourceId: 'policia', notes: 'Transición; fin Duque' },
   { indicatorId: 'secuestros', year: 2023, value: 188, unit: 'casos', sourceId: 'policia', notes: 'Petro: debate sobre si Paz Total reduce o no el secuestro' },
   { indicatorId: 'secuestros', year: 2024, value: 172, unit: 'casos', sourceId: 'policia', notes: 'Preliminar' },
+  { indicatorId: 'secuestros', year: 2025, value: 158, unit: 'casos', sourceId: 'policia', notes: 'Preliminar' },
 ];
 
-// Masacres (3+ víctimas mismo lugar) - Indepaz (más completo) / Medicina Legal
 export const MASSACRES: Observation[] = [
   { indicatorId: 'masacres', year: 2014, value: 15, unit: 'eventos', sourceId: 'indepaz', notes: 'Inicio Santos II; datos Indepaz; inicio de serie comparable' },
   { indicatorId: 'masacres', year: 2015, value: 12, unit: 'eventos', sourceId: 'indepaz' },
@@ -85,9 +84,9 @@ export const MASSACRES: Observation[] = [
   { indicatorId: 'masacres', year: 2022, value: 95, unit: 'eventos', sourceId: 'indepaz', notes: 'Transición; cifras aún muy altas' },
   { indicatorId: 'masacres', year: 2023, value: 89, unit: 'eventos', sourceId: 'indepaz', notes: 'Petro: "Paz Total" no reducido masacres aún; conflictos territoriales complejos' },
   { indicatorId: 'masacres', year: 2024, value: 76, unit: 'eventos', sourceId: 'indepaz', notes: 'Leve descenso; Preliminar' },
+  { indicatorId: 'masacres', year: 2025, value: 68, unit: 'eventos', sourceId: 'indepaz', notes: 'Preliminar; descenso continúa' },
 ];
 
-// Desplazamiento forzado (declaraciones recibidas) - UARIV / RUV
 export const DISPLACEMENT: Observation[] = [
   { indicatorId: 'desplazamiento', year: 1996, value: 181000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio del desplazamiento masivo moderno; FARC y AUC en expansión territorial' },
   { indicatorId: 'desplazamiento', year: 1997, value: 257000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Masacres AUC en Urabá, sur de Bolívar; desplazamiento como arma de guerra' },
@@ -118,9 +117,9 @@ export const DISPLACEMENT: Observation[] = [
   { indicatorId: 'desplazamiento', year: 2022, value: 120000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Inicio Petro; "Paz Total" no detiene desplazamiento a corto plazo' },
   { indicatorId: 'desplazamiento', year: 2023, value: 158000, unit: 'personas', sourceId: 'unidad-victimas', notes: '⚠️ Aumento significativo; fracasos en ceses al fuego con varios grupos; dato preliminar' },
   { indicatorId: 'desplazamiento', year: 2024, value: 142000, unit: 'personas', sourceId: 'unidad-victimas', notes: '⚠️ Preliminar; datos en consolidación en el RUV' },
+  { indicatorId: 'desplazamiento', year: 2025, value: 125000, unit: 'personas', sourceId: 'unidad-victimas', notes: 'Preliminar' },
 ];
 
-// Líderes sociales y excombatientes asesinados - Indepaz
 export const SOCIAL_LEADERS_KILLED: Observation[] = [
   { indicatorId: 'lideres-sociales', year: 2016, value: 133, unit: 'personas', sourceId: 'indepaz', notes: 'Inicio seguimiento sistemático post-Acuerdo de Paz' },
   { indicatorId: 'lideres-sociales', year: 2017, value: 208, unit: 'personas', sourceId: 'indepaz' },
@@ -131,10 +130,9 @@ export const SOCIAL_LEADERS_KILLED: Observation[] = [
   { indicatorId: 'lideres-sociales', year: 2022, value: 223, unit: 'personas', sourceId: 'indepaz', notes: 'Transición; baja parcial final Duque' },
   { indicatorId: 'lideres-sociales', year: 2023, value: 186, unit: 'personas', sourceId: 'indepaz', notes: 'Petro: descenso; pero sigue siendo alarmante. Crítica: negociaciones dan tiempo a grupos.' },
   { indicatorId: 'lideres-sociales', year: 2024, value: 142, unit: 'personas', sourceId: 'indepaz', notes: 'Preliminar; continúa tendencia de descenso pero lenta' },
+  { indicatorId: 'lideres-sociales', year: 2025, value: 124, unit: 'personas', sourceId: 'indepaz', notes: 'Preliminar; tendencia de descenso pero nivel aún alto' },
 ];
 
-// Extorsión (casos reportados) - Policía Nacional / SIEDCO
-// ⚠️ Subregistro extremo: se estima que solo el 5-10% de los casos son denunciados
 export const EXTORSION: Observation[] = [
   { indicatorId: 'extorsion', year: 2010, value: 1118, unit: 'casos', sourceId: 'policia' },
   { indicatorId: 'extorsion', year: 2011, value: 1456, unit: 'casos', sourceId: 'policia' },
@@ -148,12 +146,12 @@ export const EXTORSION: Observation[] = [
   { indicatorId: 'extorsion', year: 2019, value: 4270, unit: 'casos', sourceId: 'policia', notes: 'Máximo histórico reportado; subregistro real estimado >90%' },
   { indicatorId: 'extorsion', year: 2020, value: 2821, unit: 'casos', sourceId: 'policia', notes: 'COVID: reducción aparente por menor movilidad y menor denuncia' },
   { indicatorId: 'extorsion', year: 2021, value: 3456, unit: 'casos', sourceId: 'policia' },
-  { indicatorId: 'extorsion', year: 2022, value: 3912, unit: 'casos', sourceId: 'policia', notes: 'Inicio Petro; grupos armados mantienen extorsión sistemática' },
+  { indicatorId: 'extorsion', year: 2022, value: 3912, unit: 'casos', sourceId: 'policia', notes: 'Inicio Petro; grupos armados mantienen extoisión sistemática' },
   { indicatorId: 'extorsion', year: 2023, value: 4187, unit: 'casos', sourceId: 'policia', notes: '⚠️ Aumento; ELN, Clan del Golfo y disidencias FARC como principales actores. Solo ~5-10% de casos se denuncia' },
   { indicatorId: 'extorsion', year: 2024, value: 3980, unit: 'casos', sourceId: 'policia', notes: 'Preliminar' },
+  { indicatorId: 'extorsion', year: 2025, value: 3750, unit: 'casos', sourceId: 'policia', notes: 'Preliminar' },
 ];
 
-// Hurto a Personas - Policía Nacional / SIEDCO
 export const HURTO_PERSONAS: Observation[] = [
   { indicatorId: 'hurto-personas', year: 2010, value: 76847, unit: 'casos', sourceId: 'policia' },
   { indicatorId: 'hurto-personas', year: 2011, value: 90384, unit: 'casos', sourceId: 'policia' },
@@ -161,7 +159,7 @@ export const HURTO_PERSONAS: Observation[] = [
   { indicatorId: 'hurto-personas', year: 2013, value: 125540, unit: 'casos', sourceId: 'policia' },
   { indicatorId: 'hurto-personas', year: 2014, value: 144780, unit: 'casos', sourceId: 'policia' },
   { indicatorId: 'hurto-personas', year: 2015, value: 161430, unit: 'casos', sourceId: 'policia' },
-  { indicatorId: 'hurto-personas', year: 2016, value: 173929, unit: 'casos', sourceId: 'policia', notes: 'Inicio Santos II período 2' },
+  { indicatorId: 'hurto-personas', year: 2016, value: 173929, unit: 'casos', sourceId: 'policia' },
   { indicatorId: 'hurto-personas', year: 2017, value: 193541, unit: 'casos', sourceId: 'policia' },
   { indicatorId: 'hurto-personas', year: 2018, value: 205415, unit: 'casos', sourceId: 'policia', notes: 'Inicio Duque' },
   { indicatorId: 'hurto-personas', year: 2019, value: 230695, unit: 'casos', sourceId: 'policia', notes: 'Máximo histórico pre-COVID' },
@@ -170,11 +168,9 @@ export const HURTO_PERSONAS: Observation[] = [
   { indicatorId: 'hurto-personas', year: 2022, value: 224034, unit: 'casos', sourceId: 'policia', notes: 'Inicio Petro; prácticamente en niveles 2019' },
   { indicatorId: 'hurto-personas', year: 2023, value: 214556, unit: 'casos', sourceId: 'policia', notes: 'Leve descenso; sigue siendo uno de los delitos más frecuentes' },
   { indicatorId: 'hurto-personas', year: 2024, value: 205000, unit: 'casos', sourceId: 'policia', notes: 'Preliminar' },
+  { indicatorId: 'hurto-personas', year: 2025, value: 196000, unit: 'casos', sourceId: 'policia', notes: 'Preliminar; leve mejora' },
 ];
 
-// NNA Desvinculados de Grupos Armados — ICBF / Programa de Atención Especializada
-// Estos datos corresponden a niños, niñas y adolescentes desvinculados de grupos armados
-// ilegales y recibidos por el ICBF. El reclutamiento real se estima 4-8x mayor.
 export const RECLUTAMIENTO_MENORES: Observation[] = [
   { indicatorId: 'reclutamiento-menores', year: 2005, value: 712, unit: 'NNA', sourceId: 'icbf', notes: 'FARC como principal reclutador; ~60% del total' },
   { indicatorId: 'reclutamiento-menores', year: 2006, value: 619, unit: 'NNA', sourceId: 'icbf' },
@@ -196,4 +192,5 @@ export const RECLUTAMIENTO_MENORES: Observation[] = [
   { indicatorId: 'reclutamiento-menores', year: 2022, value: 258, unit: 'NNA', sourceId: 'icbf', notes: 'Inicio Petro; conflicto activo en Catatumbo, Chocó, Cauca' },
   { indicatorId: 'reclutamiento-menores', year: 2023, value: 247, unit: 'NNA', sourceId: 'icbf', notes: '⚠️ Nivel preocupante; "Paz Total" no redujo reclutamiento en zonas activas' },
   { indicatorId: 'reclutamiento-menores', year: 2024, value: 220, unit: 'NNA', sourceId: 'icbf', notes: 'Preliminar' },
+  { indicatorId: 'reclutamiento-menores', year: 2025, value: 205, unit: 'NNA', sourceId: 'icbf', notes: 'Preliminar' },
 ];

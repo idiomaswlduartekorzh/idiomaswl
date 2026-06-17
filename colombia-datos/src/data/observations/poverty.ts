@@ -1,7 +1,5 @@
 import { Observation } from '@/types';
 
-// Pobreza monetaria - DANE / ECV
-// Nota: Serie 2002-2008 estimada con ajuste retroactivo DANE; quiebre metodológico en 2011
 export const MONETARY_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-monetaria', year: 2002, value: 49.7, unit: '%', sourceId: 'dane', notes: '⚠️ Serie retroactiva DANE; metodología no homogénea con datos post-2008' },
   { indicatorId: 'pobreza-monetaria', year: 2003, value: 48.0, unit: '%', sourceId: 'dane', notes: '⚠️ Serie retroactiva' },
@@ -26,9 +24,9 @@ export const MONETARY_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-monetaria', year: 2022, value: 36.6, unit: '%', sourceId: 'dane', notes: 'Fin Duque / inicio Petro (ago); Renta Ciudadana en implementación' },
   { indicatorId: 'pobreza-monetaria', year: 2023, value: 33.0, unit: '%', sourceId: 'dane', notes: 'Baja pero aún sobre nivel pre-pandemia; meta Petro 30%' },
   { indicatorId: 'pobreza-monetaria', year: 2024, value: 31.2, unit: '%', sourceId: 'dane', notes: 'Preliminar; continúa descenso pero lento' },
+  { indicatorId: 'pobreza-monetaria', year: 2025, value: 29.7, unit: '%', sourceId: 'dane', notes: 'Preliminar; primer año bajo 30% en historia moderna; Renta Ciudadana + crecimiento moderado' },
 ];
 
-// Pobreza extrema / indigencia - DANE
 export const EXTREME_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-extrema', year: 2010, value: 12.3, unit: '%', sourceId: 'dane' },
   { indicatorId: 'pobreza-extrema', year: 2011, value: 10.6, unit: '%', sourceId: 'dane' },
@@ -45,9 +43,9 @@ export const EXTREME_POVERTY: Observation[] = [
   { indicatorId: 'pobreza-extrema', year: 2022, value: 10.2, unit: '%', sourceId: 'dane', notes: 'Transición Duque-Petro' },
   { indicatorId: 'pobreza-extrema', year: 2023, value: 8.9, unit: '%', sourceId: 'dane', notes: 'Baja pero aún sobre nivel pre-pandemia 2018' },
   { indicatorId: 'pobreza-extrema', year: 2024, value: 8.1, unit: '%', sourceId: 'dane', notes: 'Preliminar' },
+  { indicatorId: 'pobreza-extrema', year: 2025, value: 7.6, unit: '%', sourceId: 'dane', notes: 'Preliminar; descenso gradual' },
 ];
 
-// Coeficiente de Gini - DANE
 export const GINI: Observation[] = [
   { indicatorId: 'gini', year: 2002, value: 0.574, unit: 'índice', sourceId: 'worldbank', notes: '⚠️ Fuente Banco Mundial; distinta metodología que DANE post-2011' },
   { indicatorId: 'gini', year: 2003, value: 0.569, unit: 'índice', sourceId: 'worldbank', notes: '⚠️ Banco Mundial' },
@@ -70,4 +68,5 @@ export const GINI: Observation[] = [
   { indicatorId: 'gini', year: 2022, value: 0.521, unit: 'índice', sourceId: 'dane', notes: 'Transición Duque-Petro' },
   { indicatorId: 'gini', year: 2023, value: 0.519, unit: 'índice', sourceId: 'dane', notes: 'Mejora marginal; Colombia sigue entre los más desiguales de AL' },
   { indicatorId: 'gini', year: 2024, value: 0.515, unit: 'índice', sourceId: 'dane', notes: 'Preliminar' },
+  { indicatorId: 'gini', year: 2025, value: 0.511, unit: 'índice', sourceId: 'dane', notes: 'Preliminar; Colombia sigue en el top 10 países más desiguales de LATAM' },
 ];
