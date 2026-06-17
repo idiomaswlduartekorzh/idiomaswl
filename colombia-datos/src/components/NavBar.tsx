@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Inicio', href: '/' },
   { label: 'Comparador', href: '/comparador' },
   { label: 'Indicadores', href: '/indicadores' },
+  { label: 'vs LATAM', href: '/comparacion-regional' },
   { label: 'Metodología', href: '/metodologia' },
 ];
 

@@ -18,6 +18,8 @@ export const DEFICIT_HABITACIONAL: Observation[] = [
   { indicatorId: 'deficit-habitacional', year: 2021, value: 7.8, unit: '% hogares', sourceId: 'dane' },
   { indicatorId: 'deficit-habitacional', year: 2022, value: 7.5, unit: '% hogares', sourceId: 'dane' },
   { indicatorId: 'deficit-habitacional', year: 2023, value: 7.2, unit: '% hogares', sourceId: 'dane', notes: 'Preliminar; tendencia de reducción lenta pero sostenida' },
+  { indicatorId: 'deficit-habitacional', year: 2024, value: 6.9, unit: '% hogares', sourceId: 'dane', notes: 'Preliminar; tasas hipotecarias altas frenan acceso a vivienda' },
+  { indicatorId: 'deficit-habitacional', year: 2025, value: 6.7, unit: '% hogares', sourceId: 'dane', notes: 'Preliminar; leve mejora' },
 ];
 
 // Viviendas Nuevas Iniciadas — DANE CENAC / Estadísticas de Edificaciones
@@ -41,4 +43,6 @@ export const VIVIENDAS_INICIADAS: Observation[] = [
   { indicatorId: 'viviendas-iniciadas', year: 2021, value: 177000, unit: 'unidades', sourceId: 'dane', notes: 'Rebote fuerte; subsidios Mi Casa Ya impulsan demanda' },
   { indicatorId: 'viviendas-iniciadas', year: 2022, value: 154000, unit: 'unidades', sourceId: 'dane', notes: 'Inicio Petro; tasas de interés altas frenan construcción' },
   { indicatorId: 'viviendas-iniciadas', year: 2023, value: 143000, unit: 'unidades', sourceId: 'dane', notes: 'Mínimo reciente; tasas hipotecarias en máximos históricos (15%+); fin del ciclo expansivo' },
+  { indicatorId: 'viviendas-iniciadas', year: 2024, value: 128000, unit: 'unidades', sourceId: 'dane', notes: 'Mínimo reciente por tasas hipotecarias altas; sector constructor en contracción' },
+  { indicatorId: 'viviendas-iniciadas', year: 2025, value: 142000, unit: 'unidades', sourceId: 'dane', notes: 'Preliminar; rebote moderado; Banrep bajando tasas reactiva construcción' },
 ];
