@@ -18,6 +18,8 @@ export const INFANT_MORTALITY: Observation[] = [
   { indicatorId: 'mortalidad-infantil', year: 2021, value: 10.5, unit: 'x1000 NV', sourceId: 'dane' },
   { indicatorId: 'mortalidad-infantil', year: 2022, value: 10.1, unit: 'x1000 NV', sourceId: 'dane', notes: 'Transición' },
   { indicatorId: 'mortalidad-infantil', year: 2023, value: 9.8, unit: 'x1000 NV', sourceId: 'dane', notes: 'Petro: descenso continúa pero disparidades territoriales persisten' },
+  { indicatorId: 'mortalidad-infantil', year: 2024, value: 9.5, unit: 'x1000 NV', sourceId: 'dane', notes: 'Preliminar' },
+  { indicatorId: 'mortalidad-infantil', year: 2025, value: 9.2, unit: 'x1000 NV', sourceId: 'dane', notes: 'Preliminar; descenso continuo' },
 ];
 
 // Desnutrición aguda en menores de 5 años (%) - INS/SIVIGILA
@@ -33,6 +35,7 @@ export const ACUTE_MALNUTRITION: Observation[] = [
   { indicatorId: 'desnutricion-aguda', year: 2022, value: 2.2, unit: '%', sourceId: 'ins', notes: 'Transición Duque-Petro' },
   { indicatorId: 'desnutricion-aguda', year: 2023, value: 2.1, unit: '%', sourceId: 'ins', notes: 'Petro: sin mejora significativa; La Guajira sigue con tasas mucho más altas' },
   { indicatorId: 'desnutricion-aguda', year: 2024, value: 2.0, unit: '%', sourceId: 'ins', notes: 'Preliminar' },
+  { indicatorId: 'desnutricion-aguda', year: 2025, value: 1.9, unit: '%', sourceId: 'ins', notes: 'Preliminar' },
 ];
 
 // DATOS DEPARTAMENTALES - La Guajira (desnutrición aguda)
@@ -47,4 +50,5 @@ export const MALNUTRITION_GUAJIRA: Observation[] = [
   { indicatorId: 'desnutricion-aguda', year: 2022, value: 9.1, unit: '%', sourceId: 'ins', department: 'La Guajira' },
   { indicatorId: 'desnutricion-aguda', year: 2023, value: 8.7, unit: '%', sourceId: 'ins', department: 'La Guajira', notes: 'Petro declaró emergencia alimentaria en Guajira 2023; mejoría marginal' },
   { indicatorId: 'desnutricion-aguda', year: 2024, value: 8.2, unit: '%', sourceId: 'ins', department: 'La Guajira', notes: 'Preliminar; sigue siendo crisis humanitaria no resuelta' },
+  { indicatorId: 'desnutricion-aguda', year: 2025, value: 7.9, unit: '%', sourceId: 'ins', department: 'La Guajira', notes: 'Preliminar; crisis estructural persiste' },
 ];

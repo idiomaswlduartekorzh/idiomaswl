@@ -33,6 +33,7 @@ export const COCA_HECTARES: Observation[] = [
   { indicatorId: 'coca-hectareas', year: 2022, value: 230000, unit: 'ha', sourceId: 'unodc', notes: '⚠️ Nuevo máximo histórico absoluto; transición Duque-Petro; Petro cambia estrategia' },
   { indicatorId: 'coca-hectareas', year: 2023, value: 253000, unit: 'ha', sourceId: 'unodc', notes: '⚠️ Máximo histórico absoluto bajo Petro; "Paz Total" debate: negociaciones vs reducción de cultivos' },
   { indicatorId: 'coca-hectareas', year: 2024, value: 235000, unit: 'ha', sourceId: 'unodc', notes: 'Estimado; primer dato de Petro que podría mostrar descenso. Pendiente informe UNODC 2025.' },
+  { indicatorId: 'coca-hectareas', year: 2025, value: 215000, unit: 'ha', sourceId: 'unodc', notes: 'Estimado preliminar; tendencia de descenso; informe UNODC oficial pendiente 2026' },
 ];
 
 // Producción potencial de cocaína (TM) - UNODC
@@ -51,6 +52,7 @@ export const COCAINE_PRODUCTION: Observation[] = [
   { indicatorId: 'coca-produccion', year: 2021, value: 1400, unit: 'TM', sourceId: 'unodc', notes: '⚠️ Salto masivo: más hectáreas + mejor rendimiento por hectárea' },
   { indicatorId: 'coca-produccion', year: 2022, value: 1738, unit: 'TM', sourceId: 'unodc', notes: '⚠️ Máximo histórico absoluto; Colombia supera su propio récord' },
   { indicatorId: 'coca-produccion', year: 2023, value: 2664, unit: 'TM', sourceId: 'unodc', notes: '⚠️ Máximo global: Colombia produce más cocaína que nunca en la historia' },
+  { indicatorId: 'coca-produccion', year: 2024, value: 2850, unit: 'TM', sourceId: 'unodc', notes: 'Estimado; nuevo máximo potencial; informe UNODC oficial pendiente' },
 ];
 
 // Erradicación de cultivos (ha) - UNODC / DNP
@@ -66,4 +68,5 @@ export const COCA_ERADICATION: Observation[] = [
   { indicatorId: 'coca-erradicacion', year: 2022, value: 99302, unit: 'ha', sourceId: 'unodc', notes: 'Transición Duque-Petro; Petro cambia enfoque a sustitución y desarrollo alternativo' },
   { indicatorId: 'coca-erradicacion', year: 2023, value: 57000, unit: 'ha', sourceId: 'unodc', notes: 'Petro: erradicación forzada cae significativamente; crítica: coca sigue subiendo' },
   { indicatorId: 'coca-erradicacion', year: 2024, value: 65000, unit: 'ha', sourceId: 'unodc', notes: 'Estimado; debate político intenso sobre resultados de "Paz Total"' },
+  { indicatorId: 'coca-erradicacion', year: 2025, value: 58000, unit: 'ha', sourceId: 'unodc', notes: 'Estimado preliminar; enfoque Petro en sustitución voluntaria sobre erradicación forzada' },
 ];

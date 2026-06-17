@@ -45,6 +45,8 @@ export const DESERCION_ESCOLAR: Observation[] = [
   { indicatorId: 'desercion-escolar', year: 2021, value: 3.8, unit: '%', sourceId: 'men', notes: 'Recuperación parcial; brecha urbana-rural aún amplia' },
   { indicatorId: 'desercion-escolar', year: 2022, value: 3.5, unit: '%', sourceId: 'men' },
   { indicatorId: 'desercion-escolar', year: 2023, value: 3.3, unit: '%', sourceId: 'men', notes: 'Preliminar; retorno post-COVID sostenido' },
+  { indicatorId: 'desercion-escolar', year: 2024, value: 3.2, unit: '%', sourceId: 'men', notes: 'Preliminar' },
+  { indicatorId: 'desercion-escolar', year: 2025, value: 3.1, unit: '%', sourceId: 'men', notes: 'Preliminar' },
 ];
 
 // Cobertura Bruta Educación Superior — MEN / SNIES
@@ -70,4 +72,6 @@ export const COBERTURA_SUPERIOR: Observation[] = [
   { indicatorId: 'cobertura-superior', year: 2021, value: 51.3, unit: '%', sourceId: 'men', notes: 'Ajuste post-pandemia: deserción universitaria aumentó significativamente' },
   { indicatorId: 'cobertura-superior', year: 2022, value: 51.9, unit: '%', sourceId: 'men' },
   { indicatorId: 'cobertura-superior', year: 2023, value: 52.2, unit: '%', sourceId: 'men', notes: 'Petro: matrícula cero en IES públicas busca revertir tendencia; impacto 2024+' },
+  { indicatorId: 'cobertura-superior', year: 2024, value: 52.6, unit: '%', sourceId: 'men', notes: 'Preliminar; matrícula cero en universidades públicas impulsa cobertura' },
+  { indicatorId: 'cobertura-superior', year: 2025, value: 53.2, unit: '%', sourceId: 'men', notes: 'Preliminar; política de gratuidad Petro continúa' },
 ];

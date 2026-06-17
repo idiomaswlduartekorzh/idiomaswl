@@ -38,6 +38,7 @@ export const OIL_PRICE_BRENT: Observation[] = [
   { indicatorId: 'precio-petroleo', year: 2022, value: 99.0, unit: 'USD/barril', sourceId: 'banrep', notes: 'Guerra Rusia-Ucrania; Petro llegó con petróleo a $100' },
   { indicatorId: 'precio-petroleo', year: 2023, value: 82.5, unit: 'USD/barril', sourceId: 'banrep', notes: 'Petro: baja vs 2022; pero aún alto. Petro anuncia no más exploración' },
   { indicatorId: 'precio-petroleo', year: 2024, value: 80.2, unit: 'USD/barril', sourceId: 'banrep', notes: 'Estimado; desaceleración China reduce demanda' },
+  { indicatorId: 'precio-petroleo', year: 2025, value: 74.8, unit: 'USD/barril', sourceId: 'banrep', notes: 'Preliminar; surplus OPEC+ y menor crecimiento global bajan precio' },
 ];
 
 // Tasa de cambio COP/USD (promedio anual) - Banco de la República
@@ -61,6 +62,7 @@ export const EXCHANGE_RATE: Observation[] = [
   { indicatorId: 'tasa-cambio', year: 2022, value: 4256, unit: 'COP/USD', sourceId: 'banrep', notes: 'Transición; Petro llegó con peso debilitado; luego subió a $5.000 en oct 2022' },
   { indicatorId: 'tasa-cambio', year: 2023, value: 4325, unit: 'COP/USD', sourceId: 'banrep', notes: 'Petro: incertidumbre reformas mantuvo peso débil' },
   { indicatorId: 'tasa-cambio', year: 2024, value: 4175, unit: 'COP/USD', sourceId: 'banrep', notes: 'Estimado; leve apreciación' },
+  { indicatorId: 'tasa-cambio', year: 2025, value: 4290, unit: 'COP/USD', sourceId: 'banrep', notes: 'Preliminar; devaluación moderada; incertidumbre fiscal mantiene presión' },
 ];
 
 // Tasa de política monetaria Banco de la República (tasa de repo) - fin de año
@@ -83,6 +85,7 @@ export const POLICY_RATE: Observation[] = [
   { indicatorId: 'tasa-banrep', year: 2022, value: 12.0, unit: '%', sourceId: 'banrep', notes: '⚠️ Petro llega con tasas disparándose: Banrep subió 10.25pp en 12 meses; mayor ciclo de alza en historia del Banrep' },
   { indicatorId: 'tasa-banrep', year: 2023, value: 13.25, unit: '%', sourceId: 'banrep', notes: 'Máximo histórico absoluto; crédito muy caro; frena inversión y consumo' },
   { indicatorId: 'tasa-banrep', year: 2024, value: 9.75, unit: '%', sourceId: 'banrep', notes: 'Descenso gradual; inflación bajando' },
+  { indicatorId: 'tasa-banrep', year: 2025, value: 7.25, unit: '%', sourceId: 'banrep', notes: 'Preliminar; Banrep completó ciclo de recorte; tasa más baja desde 2022' },
 ];
 
 // PIB per cápita en USD constantes (año 2015) - Banco Mundial
@@ -106,6 +109,7 @@ export const GDP_PER_CAPITA: Observation[] = [
   { indicatorId: 'pib-percapita', year: 2022, value: 6630, unit: 'USD 2015', sourceId: 'worldbank', notes: 'Nuevo máximo histórico; transición Duque-Petro' },
   { indicatorId: 'pib-percapita', year: 2023, value: 6640, unit: 'USD 2015', sourceId: 'worldbank', notes: 'Petro: estancamiento; desaceleración +0.6%' },
   { indicatorId: 'pib-percapita', year: 2024, value: 6750, unit: 'USD 2015', sourceId: 'worldbank', notes: 'Estimado; recuperación lenta' },
+  { indicatorId: 'pib-percapita', year: 2025, value: 6950, unit: 'USD 2015', sourceId: 'worldbank', notes: 'Preliminar; crecimiento gradual del ingreso por habitante' },
 ];
 
 // CONTEXTO INTERNACIONAL — Crecimiento global (PIB mundial) - FMI WEO
@@ -137,6 +141,7 @@ export const WORLD_GDP_GROWTH: Observation[] = [
   { indicatorId: 'crecimiento-mundial', year: 2022, value: 3.5, unit: '%', sourceId: 'imf', notes: 'Colombia creció 7.5% vs mundo 3.5%; excepcional pero irrepetible' },
   { indicatorId: 'crecimiento-mundial', year: 2023, value: 3.3, unit: '%', sourceId: 'imf', notes: 'Petro: Colombia creció 0.6% vs mundo 3.3%; Colombia rezagada' },
   { indicatorId: 'crecimiento-mundial', year: 2024, value: 3.2, unit: '%', sourceId: 'imf', notes: 'Colombia proyectada 1.8%; debajo del mundo' },
+  { indicatorId: 'crecimiento-mundial', year: 2025, value: 3.1, unit: '%', sourceId: 'imf', notes: 'Colombia ~2.8% vs mundo 3.1%; convergencia gradual al promedio global' },
 ];
 
 // Recaudo tributario como % del PIB - DIAN / Ministerio de Hacienda
@@ -160,6 +165,7 @@ export const TAX_REVENUE: Observation[] = [
   { indicatorId: 'recaudo-tributario', year: 2022, value: 16.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Reforma tributaria Petro (2022): +$20 billones; IVA, impuesto a ganancias súbitas, renta' },
   { indicatorId: 'recaudo-tributario', year: 2023, value: 16.2, unit: '% PIB', sourceId: 'mhcp', notes: 'Petro: ligera caída; economía desacelerada reduce base tributaria' },
   { indicatorId: 'recaudo-tributario', year: 2024, value: 15.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado; debate sobre incumplimiento metas de recaudo' },
+  { indicatorId: 'recaudo-tributario', year: 2025, value: 15.5, unit: '% PIB', sourceId: 'mhcp', notes: 'Preliminar; ligera caída; base tributaria crece menos que lo esperado' },
 ];
 
 // COMPARACIÓN PRESIÓN TRIBUTARIA INTERNACIONAL (% del PIB) - OCDE/Banco Mundial

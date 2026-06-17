@@ -21,6 +21,7 @@ export const DEFORESTATION: Observation[] = [
   { indicatorId: 'deforestacion', year: 2022, value: 139306, unit: 'ha', sourceId: 'ideam', notes: 'Transición Duque-Petro; Petro con agenda ambiental prioritaria' },
   { indicatorId: 'deforestacion', year: 2023, value: 155000, unit: 'ha', sourceId: 'ideam', notes: 'Petro: aumento preocupante pese a agenda ambiental; minería ilegal y cultivos ilícitos asociados' },
   { indicatorId: 'deforestacion', year: 2024, value: 145000, unit: 'ha', sourceId: 'ideam', notes: 'Estimado; dato provisional' },
+  { indicatorId: 'deforestacion', year: 2025, value: 132000, unit: 'ha', sourceId: 'ideam', notes: 'Estimado preliminar; leve mejora; acuerdos con comunidades en zonas críticas' },
 ];
 
 // Producción de petróleo (miles de barriles/día) - ANH/Ecopetrol
@@ -48,4 +49,5 @@ export const OIL_PRODUCTION: Observation[] = [
   { indicatorId: 'produccion-petroleo', year: 2022, value: 754, unit: 'kbd', sourceId: 'banrep', notes: 'Transición; Petro anuncia fin de exploración de petróleo' },
   { indicatorId: 'produccion-petroleo', year: 2023, value: 788, unit: 'kbd', sourceId: 'banrep', notes: 'Sube pese a política Petro; campos existentes; debate sobre reservas futuras' },
   { indicatorId: 'produccion-petroleo', year: 2024, value: 762, unit: 'kbd', sourceId: 'banrep', notes: 'Declive gradual; sin nuevas licencias para exploración, reservas se agotan' },
+  { indicatorId: 'produccion-petroleo', year: 2025, value: 735, unit: 'kbd', sourceId: 'banrep', notes: 'Preliminar; declive continúa; debate sobre "cuántos años quedan" de petróleo sin exploración nueva' },
 ];
