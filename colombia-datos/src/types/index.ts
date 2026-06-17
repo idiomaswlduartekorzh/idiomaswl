@@ -35,7 +35,8 @@ export type IndicatorCategory =
   | 'empresas'
   | 'educacion'
   | 'salud'
-  | 'corrupcion';
+  | 'corrupcion'
+  | 'vivienda';
 
 export type ComparabilityLevel = 'alta' | 'media' | 'baja' | 'no-comparable';
 export type ReliabilityLevel = 'alta' | 'media' | 'baja';
@@ -56,7 +57,7 @@ export interface Indicator {
   category: IndicatorCategory;
   definition: string;
   unit: string;
-  frequency: 'anual' | 'trimestral' | 'mensual';
+  frequency: 'anual' | 'trimestral' | 'mensual' | 'trienal';
   sourceIds: string[];
   comparabilityLevel: ComparabilityLevel;
   limitations: string[];

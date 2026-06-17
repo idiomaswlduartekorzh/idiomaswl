@@ -69,6 +69,38 @@ export function clamp(val: number, min: number, max: number): number {
   return Math.min(Math.max(val, min), max);
 }
 
+export function getChartFormatters(observations: Observation[], unit = ''): {
+  formatY: (v: number) => string;
+  formatTooltip: (v: number) => string;
+} {
+  const maxAbs = observations.length
+    ? Math.max(...observations.map((o) => Math.abs(o.value)))
+    : 0;
+
+  if (maxAbs >= 1_000_000) {
+    return {
+      formatY: (v) => `${(v / 1_000_000).toFixed(1)}M`,
+      formatTooltip: (v) => `${v.toLocaleString('es-CO')} ${unit}`.trim(),
+    };
+  }
+  if (maxAbs >= 50_000) {
+    return {
+      formatY: (v) => `${(v / 1_000).toFixed(0)}k`,
+      formatTooltip: (v) => `${v.toLocaleString('es-CO')} ${unit}`.trim(),
+    };
+  }
+  if (maxAbs >= 1_000) {
+    return {
+      formatY: (v) => v.toLocaleString('es-CO'),
+      formatTooltip: (v) => `${v.toLocaleString('es-CO')} ${unit}`.trim(),
+    };
+  }
+  return {
+    formatY: (v) => v.toFixed(1),
+    formatTooltip: (v) => `${v.toFixed(2)} ${unit}`.trim(),
+  };
+}
+
 export const CATEGORY_COLORS: Record<string, string> = {
   economia: '#3b82f6',
   empleo: '#8b5cf6',
@@ -81,4 +113,5 @@ export const CATEGORY_COLORS: Record<string, string> = {
   educacion: '#06b6d4',
   salud: '#ec4899',
   corrupcion: '#6b7280',
+  vivienda: '#0ea5e9',
 };

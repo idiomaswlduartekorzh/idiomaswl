@@ -132,3 +132,68 @@ export const SOCIAL_LEADERS_KILLED: Observation[] = [
   { indicatorId: 'lideres-sociales', year: 2023, value: 186, unit: 'personas', sourceId: 'indepaz', notes: 'Petro: descenso; pero sigue siendo alarmante. Crítica: negociaciones dan tiempo a grupos.' },
   { indicatorId: 'lideres-sociales', year: 2024, value: 142, unit: 'personas', sourceId: 'indepaz', notes: 'Preliminar; continúa tendencia de descenso pero lenta' },
 ];
+
+// Extorsión (casos reportados) - Policía Nacional / SIEDCO
+// ⚠️ Subregistro extremo: se estima que solo el 5-10% de los casos son denunciados
+export const EXTORSION: Observation[] = [
+  { indicatorId: 'extorsion', year: 2010, value: 1118, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2011, value: 1456, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2012, value: 1890, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2013, value: 2210, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2014, value: 2412, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2015, value: 2876, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2016, value: 3147, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2017, value: 3420, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2018, value: 3587, unit: 'casos', sourceId: 'policia', notes: 'Inicio Duque; BACRIM y ELN como principales extorsionadores' },
+  { indicatorId: 'extorsion', year: 2019, value: 4270, unit: 'casos', sourceId: 'policia', notes: 'Máximo histórico reportado; subregistro real estimado >90%' },
+  { indicatorId: 'extorsion', year: 2020, value: 2821, unit: 'casos', sourceId: 'policia', notes: 'COVID: reducción aparente por menor movilidad y menor denuncia' },
+  { indicatorId: 'extorsion', year: 2021, value: 3456, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'extorsion', year: 2022, value: 3912, unit: 'casos', sourceId: 'policia', notes: 'Inicio Petro; grupos armados mantienen extorsión sistemática' },
+  { indicatorId: 'extorsion', year: 2023, value: 4187, unit: 'casos', sourceId: 'policia', notes: '⚠️ Aumento; ELN, Clan del Golfo y disidencias FARC como principales actores. Solo ~5-10% de casos se denuncia' },
+  { indicatorId: 'extorsion', year: 2024, value: 3980, unit: 'casos', sourceId: 'policia', notes: 'Preliminar' },
+];
+
+// Hurto a Personas - Policía Nacional / SIEDCO
+export const HURTO_PERSONAS: Observation[] = [
+  { indicatorId: 'hurto-personas', year: 2010, value: 76847, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'hurto-personas', year: 2011, value: 90384, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'hurto-personas', year: 2012, value: 105682, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'hurto-personas', year: 2013, value: 125540, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'hurto-personas', year: 2014, value: 144780, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'hurto-personas', year: 2015, value: 161430, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'hurto-personas', year: 2016, value: 173929, unit: 'casos', sourceId: 'policia', notes: 'Inicio Santos II período 2' },
+  { indicatorId: 'hurto-personas', year: 2017, value: 193541, unit: 'casos', sourceId: 'policia' },
+  { indicatorId: 'hurto-personas', year: 2018, value: 205415, unit: 'casos', sourceId: 'policia', notes: 'Inicio Duque' },
+  { indicatorId: 'hurto-personas', year: 2019, value: 230695, unit: 'casos', sourceId: 'policia', notes: 'Máximo histórico pre-COVID' },
+  { indicatorId: 'hurto-personas', year: 2020, value: 148311, unit: 'casos', sourceId: 'policia', notes: '⚠️ COVID: caída por movilidad reducida, no por mejora real' },
+  { indicatorId: 'hurto-personas', year: 2021, value: 188764, unit: 'casos', sourceId: 'policia', notes: 'Recuperación; paro nacional amplió vulnerabilidad' },
+  { indicatorId: 'hurto-personas', year: 2022, value: 224034, unit: 'casos', sourceId: 'policia', notes: 'Inicio Petro; prácticamente en niveles 2019' },
+  { indicatorId: 'hurto-personas', year: 2023, value: 214556, unit: 'casos', sourceId: 'policia', notes: 'Leve descenso; sigue siendo uno de los delitos más frecuentes' },
+  { indicatorId: 'hurto-personas', year: 2024, value: 205000, unit: 'casos', sourceId: 'policia', notes: 'Preliminar' },
+];
+
+// NNA Desvinculados de Grupos Armados — ICBF / Programa de Atención Especializada
+// Estos datos corresponden a niños, niñas y adolescentes desvinculados de grupos armados
+// ilegales y recibidos por el ICBF. El reclutamiento real se estima 4-8x mayor.
+export const RECLUTAMIENTO_MENORES: Observation[] = [
+  { indicatorId: 'reclutamiento-menores', year: 2005, value: 712, unit: 'NNA', sourceId: 'icbf', notes: 'FARC como principal reclutador; ~60% del total' },
+  { indicatorId: 'reclutamiento-menores', year: 2006, value: 619, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2007, value: 556, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2008, value: 498, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2009, value: 445, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2010, value: 389, unit: 'NNA', sourceId: 'icbf', notes: 'Inicio Santos; Seguridad Democrática redujo zonas FARC' },
+  { indicatorId: 'reclutamiento-menores', year: 2011, value: 348, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2012, value: 321, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2013, value: 298, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2014, value: 276, unit: 'NNA', sourceId: 'icbf', notes: 'Inicio Santos II; diálogos de paz en La Habana' },
+  { indicatorId: 'reclutamiento-menores', year: 2015, value: 254, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2016, value: 232, unit: 'NNA', sourceId: 'icbf', notes: 'Acuerdo de Paz; FARC se desmoviliza; menor reclutamiento FARC' },
+  { indicatorId: 'reclutamiento-menores', year: 2017, value: 263, unit: 'NNA', sourceId: 'icbf', notes: 'Inicio aumento: disidencias FARC, ELN y BACRIM compensan' },
+  { indicatorId: 'reclutamiento-menores', year: 2018, value: 245, unit: 'NNA', sourceId: 'icbf', notes: 'Inicio Duque' },
+  { indicatorId: 'reclutamiento-menores', year: 2019, value: 267, unit: 'NNA', sourceId: 'icbf', notes: 'Aumento: reconfiguración grupos armados post-paz' },
+  { indicatorId: 'reclutamiento-menores', year: 2020, value: 195, unit: 'NNA', sourceId: 'icbf', notes: 'COVID: territorios más aislados pero también menos registro' },
+  { indicatorId: 'reclutamiento-menores', year: 2021, value: 221, unit: 'NNA', sourceId: 'icbf' },
+  { indicatorId: 'reclutamiento-menores', year: 2022, value: 258, unit: 'NNA', sourceId: 'icbf', notes: 'Inicio Petro; conflicto activo en Catatumbo, Chocó, Cauca' },
+  { indicatorId: 'reclutamiento-menores', year: 2023, value: 247, unit: 'NNA', sourceId: 'icbf', notes: '⚠️ Nivel preocupante; "Paz Total" no redujo reclutamiento en zonas activas' },
+  { indicatorId: 'reclutamiento-menores', year: 2024, value: 220, unit: 'NNA', sourceId: 'icbf', notes: 'Preliminar' },
+];

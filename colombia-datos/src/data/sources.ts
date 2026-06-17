@@ -137,6 +137,38 @@ export const SOURCES: Source[] = [
     reliabilityLevel: 'alta',
     notes: 'Registro Único de Víctimas; desplazamiento forzado, victimización por conflicto',
   },
+  {
+    id: 'men',
+    name: 'Ministerio de Educación Nacional',
+    institution: 'MEN Colombia',
+    url: 'https://www.mineducacion.gov.co',
+    reliabilityLevel: 'alta',
+    notes: 'SIMAT (matrículas y deserción), SNIES (educación superior), resultados Saber 11',
+  },
+  {
+    id: 'ocde',
+    name: 'OCDE — PISA',
+    institution: 'Organización para la Cooperación y el Desarrollo Económicos',
+    url: 'https://www.oecd.org/pisa/',
+    reliabilityLevel: 'alta',
+    notes: 'Programme for International Student Assessment; Colombia participa desde 2006',
+  },
+  {
+    id: 'minvivienda',
+    name: 'Ministerio de Vivienda',
+    institution: 'Ministerio de Vivienda, Ciudad y Territorio',
+    url: 'https://minvivienda.gov.co',
+    reliabilityLevel: 'alta',
+    notes: 'Subsidios VIS/VIP, déficit habitacional, programas sociales de vivienda',
+  },
+  {
+    id: 'camacol',
+    name: 'CAMACOL',
+    institution: 'Cámara Colombiana de la Construcción',
+    url: 'https://camacol.co',
+    reliabilityLevel: 'alta',
+    notes: 'Estadísticas de edificaciones, viviendas iniciadas, sector constructor',
+  },
 ];
 
 export const getSourceById = (id: string) =>
