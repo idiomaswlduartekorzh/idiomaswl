@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Comparador', href: '/comparador' },
   { label: 'Indicadores', href: '/indicadores' },
   { label: 'vs LATAM', href: '/comparacion-regional' },
+  { label: 'Promesas', href: '/candidato-presidente' },
   { label: 'Metodología', href: '/metodologia' },
 ];
 
