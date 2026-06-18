@@ -156,7 +156,7 @@ export const GOVERNMENTS: Government[] = [
     endYear: 2026,
     color: '#0891b2',
     colorLight: '#ecfeff',
-    notes: 'Primer presidente de izquierda en Colombia, "paz total" con grupos armados, política antidrogas diferenciada, reforma tributaria, tensiones con el sector privado, inflación récord heredada.',
+    notes: 'Primer presidente de izquierda en Colombia. "Paz Total" con grupos armados con resultados mixtos. Política antidrogas diferenciada: coca alcanzó máximos históricos mundiales (2.664 TM cocaína en 2023). Reforma tributaria aprobada. Crisis del sistema de salud: ADRES acumuló deuda billonaria a hospitales/EPS, reforma salud fracasó en Congreso. Desigualdad (Gini) empeoró pese a reducción de pobreza monetaria. Déficit fiscal −6.8% del PIB en 2024: el más alto desde la pandemia. Deuda GNC escaló al 64.4% del PIB.',
     inheritedContext: {
       gdpGrowthPrev: 10.6,
       unemploymentRate: 10.8,
