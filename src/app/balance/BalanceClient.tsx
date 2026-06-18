@@ -20,7 +20,7 @@ import { GDP_GROWTH } from '@/data/observations/economy';
 import { UNEMPLOYMENT } from '@/data/observations/employment';
 import { MONETARY_POVERTY } from '@/data/observations/poverty';
 import { HOMICIDE_RATE } from '@/data/observations/security';
-import { COCA_HECTARES } from '@/data/observations/narcotics';
+import { COCAINE_PRODUCTION } from '@/data/observations/narcotics';
 import { DEFORESTATION } from '@/data/observations/environment';
 import { INFANT_MORTALITY } from '@/data/observations/health';
 import { COMPANIES_CREATED } from '@/data/observations/companies';
@@ -71,7 +71,7 @@ const KEY_CATEGORIES: Array<{
   { category: 'empleo',       indicatorId: 'desempleo',             observations: UNEMPLOYMENT },
   { category: 'pobreza',      indicatorId: 'pobreza-monetaria',     observations: MONETARY_POVERTY },
   { category: 'seguridad',    indicatorId: 'homicidios-tasa',       observations: HOMICIDE_RATE },
-  { category: 'narcotrafico', indicatorId: 'coca-hectareas',        observations: COCA_HECTARES },
+  { category: 'narcotrafico', indicatorId: 'coca-produccion',       observations: COCAINE_PRODUCTION },
   { category: 'ambiente',     indicatorId: 'deforestacion',         observations: DEFORESTATION },
   { category: 'infancia',     indicatorId: 'mortalidad-infantil',   observations: INFANT_MORTALITY },
   { category: 'empresas',     indicatorId: 'empresas-constituidas', observations: COMPANIES_CREATED },
@@ -188,7 +188,7 @@ export default function BalanceClient() {
   const [govAId, setGovAId] = useState(() => searchParams.get('ga') || 'duque');
   const [govBId, setGovBId] = useState(() => searchParams.get('gb') || 'petro');
 
-  // ── URL sync ───────────────────────────────────────────────────────────
+  // ── URL sync ─────────────────────────────────────────────────────────────
   const updateURL = useCallback(
     (updates: Record<string, string | null>) => {
       const params = new URLSearchParams(searchParams.toString());
@@ -227,7 +227,7 @@ export default function BalanceClient() {
   const handleGovAChange = (id: string) => { setGovAId(id); updateURL({ ga: id }); };
   const handleGovBChange = (id: string) => { setGovBId(id); updateURL({ gb: id }); };
 
-  // ── Computed ───────────────────────────────────────────────────────────
+  // ── Computed ─────────────────────────────────────────────────────────────
   const allBalances = useMemo<GovBalance[]>(() => {
     return GOVERNMENTS.map((gov) => {
       const categories: CategoryResult[] = KEY_CATEGORIES.map(
@@ -279,7 +279,7 @@ export default function BalanceClient() {
 
   const activePresetLabel = WEIGHT_PRESETS.find((p) => p.id === activePreset)?.label;
 
-  // ── Render ────────────────────────────────────────────────────────────────
+  // ── Render ───────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen bg-[#080d1a] text-slate-100">
 
@@ -303,8 +303,9 @@ export default function BalanceClient() {
 
       <div className="mx-auto max-w-7xl px-4 py-8 space-y-8">
 
-        {/* ── Controls row ──────────────────────────────────────────────────── */}
+        {/* ── Controls row ──────────────────────────────────────────────── */}
         <div className="flex flex-wrap items-center justify-between gap-3">
+          {/* View toggle */}
           <div className="flex gap-2">
             {([
               { id: 'recientes', label: 'Últimos 4 presidentes' },
@@ -325,6 +326,7 @@ export default function BalanceClient() {
           </div>
 
           <div className="flex items-center gap-3 flex-wrap">
+            {/* Legend */}
             <div className="flex flex-wrap items-center gap-3">
               {(Object.entries(TREND_CFG) as [TrendResult, typeof TREND_CFG[TrendResult]][]).map(([key, cfg]) => (
                 <div key={key} className="flex items-center gap-1.5">
@@ -335,6 +337,7 @@ export default function BalanceClient() {
                 </div>
               ))}
             </div>
+            {/* Weight toggle */}
             <button
               onClick={() => setShowWeights((v) => !v)}
               className={`px-3 py-2 rounded-lg text-xs font-medium transition-colors border ${
@@ -350,7 +353,7 @@ export default function BalanceClient() {
           </div>
         </div>
 
-        {/* ── Weight panel (collapsible) ─────────────────────────────────────────── */}
+        {/* ── Weight panel (collapsible) ───────────────────────────────── */}
         {showWeights && (
           <div className="bg-slate-800/40 border border-slate-700/60 rounded-xl p-5">
             <div className="flex flex-wrap items-start justify-between gap-3 mb-5">
@@ -480,6 +483,7 @@ export default function BalanceClient() {
                 </tr>
               ))}
 
+              {/* Score summary row */}
               <tr className="border-t border-slate-700 bg-slate-900/50">
                 <td className="px-4 py-3">
                   <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
@@ -515,7 +519,7 @@ export default function BalanceClient() {
           </table>
         </div>
 
-        {/* ── Detail panel ──────────────────────────────────────────────────── */}
+        {/* ── Detail panel ─────────────────────────────────────────────── */}
         {detail?.cat && detail?.gov && (
           <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5 animate-in fade-in duration-200">
             <div className="flex items-start justify-between gap-4 mb-4">
@@ -597,7 +601,7 @@ export default function BalanceClient() {
           </div>
         )}
 
-        {/* ── Ranking cards ───────────────────────────────────────────────────── */}
+        {/* ── Ranking cards ─────────────────────────────────────────────── */}
         <div>
           <div className="flex items-baseline gap-2 mb-4">
             <h2 className="text-base font-semibold text-slate-300">Ranking</h2>
@@ -673,7 +677,7 @@ export default function BalanceClient() {
           </div>
         </div>
 
-        {/* ── Head-to-head ────────────────────────────────────────────────────── */}
+        {/* ── Head-to-head ──────────────────────────────────────────────── */}
         <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-5">
           <h2 className="text-base font-semibold text-slate-300 mb-4">Cara a Cara</h2>
           <div className="flex flex-wrap items-center gap-3 mb-5">
@@ -742,6 +746,7 @@ export default function BalanceClient() {
                             <span className="text-xs text-slate-400">{CATEGORY_LABELS[category]}</span>
                           </div>
                         </td>
+
                         <td className={`py-2 px-3 text-center ${aWins ? 'bg-emerald-500/5' : ''}`}>
                           <div className="flex items-center justify-center gap-1.5">
                             {aWins && <span className="text-[10px] text-emerald-500">★</span>}
@@ -755,9 +760,11 @@ export default function BalanceClient() {
                             )}
                           </div>
                         </td>
+
                         <td className="py-2 px-2 text-center">
                           <span className="text-[10px] text-slate-800">·</span>
                         </td>
+
                         <td className={`py-2 px-3 text-center ${bWins ? 'bg-emerald-500/5' : ''}`}>
                           <div className="flex items-center justify-center gap-1.5">
                             {bWins && <span className="text-[10px] text-emerald-500">★</span>}
@@ -775,6 +782,7 @@ export default function BalanceClient() {
                     );
                   })}
 
+                  {/* Composite score row */}
                   <tr className="border-t border-slate-700 bg-slate-900/40">
                     <td className="py-3 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">
                       Puntaje
@@ -799,7 +807,7 @@ export default function BalanceClient() {
           )}
         </div>
 
-        {/* ── Methodology caveat ─────────────────────────────────────────────────── */}
+        {/* ── Methodology caveat ────────────────────────────────────────── */}
         <div className="bg-amber-500/5 border border-amber-500/20 rounded-xl p-5">
           <h3 className="text-sm font-semibold text-amber-400 mb-3">⚠️ Cómo leer esta herramienta</h3>
           <div className="text-sm text-slate-400 space-y-2">

@@ -29,9 +29,9 @@ export const EXTERNAL_SHOCKS: Partial<
     infancia: 'COVID-19 2020',
   },
   petro: {
-    economia: 'Herencia inflación 13.1% al inicio (2022)',
-    pobreza: 'Herencia post-COVID + inflación',
-    narcotrafico: 'Herencia acumulada: 253 k ha coca al asumir',
-    seguridad: 'Herencia: 94 masacres/año al inicio del mandato',
+    economia: 'Herencia inflación 13.1% al inicio (2022); descenso posterior liderado por Banco de la República',
+    pobreza: 'Herencia post-COVID + inflación; mejoras parcialmente apoyadas por Renta Ciudadana (costo fiscal)',
+    narcotrafico: 'Herencia: 230k ha coca y 1.738 TM producción al asumir (2022) — ya récords históricos',
+    seguridad: 'Herencia: 94 masacres/año y 27,0 homicidios x100k al inicio del mandato',
   },
 };
