@@ -26,9 +26,9 @@ const SKILLS = [
     n: 3,
     label: 'Tendencias',
     icon: '📈',
-    desc: 'Verbos (rise/fall/peak) + adverbios (sharply/gradually) + estructura completa para líneas de tiempo.',
+    desc: 'Lee gráficas reales de IELTS e identifica cuáles son las 2–3 tendencias más relevantes para mencionar. Aprende a distinguir lo esencial de lo accesorio.',
     href: '/practica/ielts/academic/writing/task1/tendencias',
-    tag: 'Line graphs',
+    tag: 'Line graphs · Bar charts',
   },
   {
     id: 'comparaciones',
@@ -58,8 +58,17 @@ const SKILLS = [
     tag: 'Maps',
   },
   {
-    id: 'tarea-completa',
+    id: 'vocabulario',
     n: 7,
+    label: 'Vocabulario de datos',
+    icon: '📚',
+    desc: 'Elige el verbo (rise/fall/peak) y adverbio (sharply/gradually) correctos para describir un cambio numérico. La oración se ensambla en tiempo real.',
+    href: '/practica/ielts/academic/writing/task1/vocabulario',
+    tag: 'Verb · Adverb · Structure',
+  },
+  {
+    id: 'tarea-completa',
+    n: 8,
     label: 'Tarea Completa',
     icon: '⏱️',
     desc: 'Práctica real: 20 minutos, contador de palabras, auto-evaluación con rúbrica Band 1–9.',
@@ -83,7 +92,7 @@ export default function Task1HubPage() {
             Writing Task 1
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem', lineHeight: 1.6 }}>
-            Describe datos visuales en 150+ palabras en 20 minutos. Domina las 7 sub-habilidades que separan
+            Describe datos visuales en 150+ palabras en 20 minutos. Domina las 8 sub-habilidades que separan
             Band 5 de Band 7+.
           </p>
 

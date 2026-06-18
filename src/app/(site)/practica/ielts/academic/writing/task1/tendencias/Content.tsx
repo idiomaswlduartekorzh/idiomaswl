@@ -3,186 +3,318 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+interface Observation {
+  text: string;
+  relevant: boolean;
+  explanation: string;
+}
+
+interface DataSeries {
+  label: string;
+  color: string;
+  values: number[];
+}
+
 interface Scenario {
-  subject: string;
-  from: number;
-  to: number;
+  id: string;
+  title: string;
   unit: string;
-  yearFrom: number;
-  yearTo: number;
-  correctVerb: string;
-  correctAdverb: string;
-  correctSentence: string;
+  years: number[];
+  series: DataSeries[];
+  yMax: number;
+  context: string;
+  observations: Observation[];
+  targetCount: number;
 }
 
 const SCENARIOS: Scenario[] = [
-  { subject: 'The number of cars sold', from: 20000, to: 85000, unit: 'units', yearFrom: 2010, yearTo: 2020, correctVerb: 'rose', correctAdverb: 'dramatically', correctSentence: 'The number of cars sold rose dramatically from 20,000 units in 2010 to 85,000 units in 2020.' },
-  { subject: 'The unemployment rate', from: 12, to: 4, unit: '%', yearFrom: 2015, yearTo: 2023, correctVerb: 'fell', correctAdverb: 'significantly', correctSentence: 'The unemployment rate fell significantly from 12% in 2015 to 4% in 2023.' },
-  { subject: 'Average house prices', from: 180000, to: 185000, unit: '£', yearFrom: 2000, yearTo: 2005, correctVerb: 'remained stable', correctAdverb: '', correctSentence: 'Average house prices remained relatively stable between 2000 and 2005, hovering around £180,000–185,000.' },
-  { subject: 'Tourist arrivals', from: 500000, to: 510000, unit: 'visitors', yearFrom: 2018, yearTo: 2019, correctVerb: 'increased', correctAdverb: 'slightly', correctSentence: 'Tourist arrivals increased slightly from 500,000 to 510,000 visitors between 2018 and 2019.' },
-  { subject: 'CO2 emissions', from: 8, to: 15, unit: 'million tonnes', yearFrom: 1990, yearTo: 2000, correctVerb: 'grew', correctAdverb: 'steadily', correctSentence: 'CO2 emissions grew steadily from 8 to 15 million tonnes between 1990 and 2000.' },
+  {
+    id: 'internet',
+    title: 'Internet penetration rate (%) — three world regions, 2000–2020',
+    unit: '%',
+    years: [2000, 2005, 2010, 2015, 2020],
+    yMax: 100,
+    series: [
+      { label: 'North America', color: '#0f3d8c', values: [45, 65, 75, 85, 90] },
+      { label: 'Latin America', color: '#059669', values: [5, 15, 35, 55, 70] },
+      { label: 'Africa', color: '#f59e0b', values: [2, 5, 10, 22, 40] },
+    ],
+    context: 'The line graph below shows the percentage of the population with internet access in three world regions between 2000 and 2020.',
+    observations: [
+      { text: 'All three regions experienced significant growth in internet usage over the period.', relevant: true, explanation: 'Correcto. Esta es la tendencia global más importante — un patrón compartido por todas las series. Debe ir en el overview.' },
+      { text: 'North America had the highest internet penetration rate at every data point.', relevant: true, explanation: 'Correcto. Destaca una característica constante y dominante a lo largo de todo el período. Merece mención.' },
+      { text: 'Latin America\'s rate rose from 5% in 2000 to 35% in 2010.', relevant: false, explanation: 'Demasiado específico para el overview. Los números exactos van en los párrafos del cuerpo, no como "tendencia clave".' },
+      { text: 'By 2020, the gap between regions had narrowed significantly compared to 2000.', relevant: true, explanation: 'Correcto. La convergencia es una tendencia analíticamente importante que demuestra pensamiento de nivel Band 7+.' },
+      { text: 'Africa saw a slight dip in internet usage around 2007.', relevant: false, explanation: 'Ningún dato indica una caída en África — los datos solo muestran crecimiento. Nunca describas tendencias que no están en el gráfico.' },
+    ],
+    targetCount: 3,
+  },
+  {
+    id: 'graduates',
+    title: 'University graduates (thousands) — STEM vs Arts & Humanities, 2000–2020',
+    unit: 'thousands',
+    years: [2000, 2005, 2010, 2015, 2020],
+    yMax: 220,
+    series: [
+      { label: 'STEM', color: '#0f3d8c', values: [80, 90, 120, 160, 200] },
+      { label: 'Arts & Humanities', color: '#dc2626', values: [100, 95, 90, 80, 70] },
+    ],
+    context: 'The graph below illustrates the number of university graduates (in thousands) in STEM subjects and Arts & Humanities between 2000 and 2020.',
+    observations: [
+      { text: 'STEM graduates increased steadily and consistently throughout the entire period.', relevant: true, explanation: 'Correcto. La tendencia dominante de una de las series — clara, progresiva y bien definida.' },
+      { text: 'Arts & Humanities graduates showed a consistent decline over the same period.', relevant: true, explanation: 'Correcto. La tendencia opuesta de la otra serie. El contraste entre ambas es el rasgo más llamativo del gráfico.' },
+      { text: 'STEM graduates rose by exactly 120,000 between 2000 and 2020.', relevant: false, explanation: 'El número exacto va en el cuerpo del ensayo, no en el overview. El overview captura tendencias, no cálculos precisos.' },
+      { text: 'In 2000, Arts & Humanities graduates outnumbered STEM graduates.', relevant: true, explanation: 'Correcto. Esta comparación de punto de partida da contexto a la divergencia — en 2000 Arts lideraba, en 2020 STEM dominaba.' },
+      { text: 'STEM and Arts figures crossed at some point between 2005 and 2010.', relevant: false, explanation: 'Vago e impreciso. Si el cruce es relevante, calcula el año exacto o deja la observación fuera del overview.' },
+    ],
+    targetCount: 3,
+  },
+  {
+    id: 'tourism',
+    title: 'International tourist arrivals (millions) — 3 countries, 2010–2020',
+    unit: 'millions',
+    years: [2010, 2012, 2014, 2016, 2018, 2020],
+    yMax: 45,
+    series: [
+      { label: 'Country A', color: '#0f3d8c', values: [10, 15, 22, 30, 38, 5] },
+      { label: 'Country B', color: '#059669', values: [20, 22, 24, 26, 28, 4] },
+      { label: 'Country C', color: '#7c3aed', values: [5, 8, 12, 18, 25, 3] },
+    ],
+    context: 'The line graph below shows the number of international tourist arrivals (in millions) to three countries between 2010 and 2020.',
+    observations: [
+      { text: 'All three countries saw a dramatic fall in tourist arrivals in 2020.', relevant: true, explanation: 'Correcto. El cambio más llamativo del gráfico — una caída repentina y severa que afectó a todos simultáneamente. Siempre menciona el cambio más dramático.' },
+      { text: 'Country A showed the steepest growth between 2010 and 2018, eventually overtaking Country B.', relevant: true, explanation: 'Correcto. Captura el crecimiento más pronunciado Y el cambio de liderazgo — un desarrollo comparativo significativo.' },
+      { text: 'Country C\'s arrivals rose from 5 million in 2010 to 8 million in 2012.', relevant: false, explanation: 'Un dato de punto específico que pertenece al cuerpo del ensayo. Demasiado estrecho y detallado para el overview.' },
+      { text: 'Country B consistently attracted more visitors than Country A before 2016.', relevant: true, explanation: 'Correcto. Esta observación comparativa contextualiza el cambio de posición — B lideraba inicialmente antes de que A lo superara.' },
+      { text: 'Tourism figures fluctuated throughout the period for all three countries.', relevant: false, explanation: 'Incorrecto — de 2010 a 2018 los tres muestran crecimiento sostenido, no fluctuación. Describir una tendencia incorrectamente es peor que omitirla.' },
+    ],
+    targetCount: 3,
+  },
 ];
 
-const VERBS = ['rose','increased','grew','fell','decreased','declined','remained stable','fluctuated','peaked','recovered'];
-const ADVERBS = ['sharply','dramatically','significantly','slightly','gradually','steadily','rapidly','moderately',''];
+// ─── SVG mini line chart ──────────────────────────────────────────────────────
 
-function dir(s: Scenario) {
-  if (s.correctVerb === 'remained stable') return 'stable';
-  return s.to > s.from ? 'up' : 'down';
+function MiniLineChart({ scenario }: { scenario: Scenario }) {
+  const W = 500, H = 170;
+  const PAD = { top: 12, right: 16, bottom: 28, left: 38 };
+  const cW = W - PAD.left - PAD.right;
+  const cH = H - PAD.top - PAD.bottom;
+  const xStep = cW / (scenario.years.length - 1);
+  const yScale = (v: number) => PAD.top + cH - (v / scenario.yMax) * cH;
+  const xPos = (i: number) => PAD.left + i * xStep;
+
+  const yTicks = [0, 0.25, 0.5, 0.75, 1];
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', maxWidth: 500, display: 'block' }} aria-label={scenario.title}>
+      {/* Grid */}
+      {yTicks.map((f, i) => (
+        <line key={i}
+          x1={PAD.left} y1={yScale(f * scenario.yMax)}
+          x2={W - PAD.right} y2={yScale(f * scenario.yMax)}
+          stroke="var(--line-soft)" strokeWidth={0.8}
+        />
+      ))}
+      {/* Y labels */}
+      {yTicks.map((f, i) => (
+        <text key={i}
+          x={PAD.left - 5} y={yScale(f * scenario.yMax) + 4}
+          textAnchor="end" fontSize={8.5} fill="var(--muted)">
+          {Math.round(f * scenario.yMax)}
+        </text>
+      ))}
+      {/* X labels */}
+      {scenario.years.map((yr, i) => (
+        <text key={i}
+          x={xPos(i)} y={H - 4}
+          textAnchor="middle" fontSize={8.5} fill="var(--muted)">
+          {yr}
+        </text>
+      ))}
+      {/* Series */}
+      {scenario.series.map(s => {
+        const pts = s.values.map((v, i) => `${xPos(i)},${yScale(v)}`).join(' ');
+        return (
+          <g key={s.label}>
+            <polyline points={pts} fill="none" stroke={s.color} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
+            {s.values.map((v, i) => (
+              <circle key={i} cx={xPos(i)} cy={yScale(v)} r={3} fill={s.color} />
+            ))}
+          </g>
+        );
+      })}
+    </svg>
+  );
 }
 
-const VERB_GROUPS = {
-  up: ['rose','increased','grew','recovered'],
-  down: ['fell','decreased','declined'],
-  stable: ['remained stable','fluctuated'],
-  any: VERBS,
-};
+// ─── Main component ───────────────────────────────────────────────────────────
 
-export default function TendenciasPage() {
-  const [idx, setIdx] = useState(0);
-  const [verb, setVerb] = useState('');
-  const [adverb, setAdverb] = useState('');
+export default function TendenciasContent() {
+  const [scenarioIdx, setScenarioIdx] = useState(0);
+  const [selected, setSelected] = useState<Set<number>>(new Set());
   const [revealed, setRevealed] = useState(false);
 
-  const sc = SCENARIOS[idx];
-  const direction = dir(sc);
-  const assembled = verb
-    ? `${sc.subject} ${verb}${adverb ? ' ' + adverb : ''} from ${sc.unit === '£' ? '£' : ''}${sc.from.toLocaleString()}${sc.unit !== '£' ? ' ' + sc.unit : ''} in ${sc.yearFrom} to ${sc.unit === '£' ? '£' : ''}${sc.to.toLocaleString()}${sc.unit !== '£' ? ' ' + sc.unit : ''} in ${sc.yearTo}.`
-    : '';
+  const sc = SCENARIOS[scenarioIdx];
 
-  const pct = Math.round(Math.abs((sc.to - sc.from) / sc.from) * 100);
+  function toggleObs(i: number) {
+    if (revealed) return;
+    setSelected(prev => {
+      const next = new Set(prev);
+      if (next.has(i)) { next.delete(i); } else { next.add(i); }
+      return next;
+    });
+  }
 
-  function next() {
-    setIdx(i => (i + 1) % SCENARIOS.length);
-    setVerb('');
-    setAdverb('');
+  function nextScenario() {
+    setScenarioIdx(i => (i + 1) % SCENARIOS.length);
+    setSelected(new Set());
     setRevealed(false);
   }
 
-  const availableVerbs = direction === 'up' ? VERB_GROUPS.up : direction === 'down' ? VERB_GROUPS.down : VERB_GROUPS.stable;
+  const correctCount = [...selected].filter(i => sc.observations[i].relevant).length;
+  const totalRelevant = sc.observations.filter(o => o.relevant).length;
 
   return (
     <section className="wl-section">
       <div className="wrap">
-        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <div style={{ maxWidth: 740, margin: '0 auto' }}>
+
+          {/* Breadcrumb */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
             <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Tendencias</span>
           </div>
 
+          {/* Header */}
           <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📈 Sub-habilidad 3 — Tendencias</p>
-          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Describir tendencias</h1>
-          <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.25rem', lineHeight: 1.65 }}>
-            Elige el verbo y adverbio correctos para describir el cambio. La oración se construye en tiempo real.
+          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Identificar tendencias relevantes</h1>
+          <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 0.75rem', lineHeight: 1.65, maxWidth: 600 }}>
+            En IELTS Task 1 no describes cada dato del gráfico — identificas las <strong style={{ color: 'var(--ink)' }}>2–3 tendencias más importantes</strong>. Practica decidir qué vale la pena mencionar y qué no.
           </p>
 
-          {/* Vocabulary reference */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
-            <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.2)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Verbos ↑</p>
-              <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>rise · increase · grow · climb · surge · recover · peak</p>
-            </div>
-            <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(220,38,38,0.05)', border: '1px solid rgba(220,38,38,0.2)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Verbos ↓</p>
-              <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>fall · decrease · decline · drop · plunge · dip</p>
-            </div>
-            <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Adverbios</p>
-              <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>sharply · dramatically · significantly · gradually · steadily · slightly · moderately</p>
-            </div>
-            <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(124,58,237,0.05)', border: '1px solid rgba(124,58,237,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Estructura</p>
-              <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>X [verb] [adverb] from A to B between [year] and [year]</p>
-            </div>
+          {/* Strategy note */}
+          <div style={{ padding: '0.75rem 1rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.18)', marginBottom: '1.5rem', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55 }}>
+            💡 <strong style={{ color: 'var(--ink)' }}>Regla Band 7+:</strong> menciona el patrón general, el dato más extremo y la comparación más llamativa. Evita números específicos en el overview y no inventes tendencias que no están en el gráfico.
           </div>
 
-          {/* Progress */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
+          {/* Scenario progress */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ flex: 1, height: 5, background: 'var(--line-soft)', borderRadius: 4 }}>
-              <div style={{ height: '100%', width: `${((idx + 1) / SCENARIOS.length) * 100}%`, background: '#0f3d8c', borderRadius: 4, transition: 'width 0.4s' }} />
+              <div style={{ height: '100%', width: `${((scenarioIdx + 1) / SCENARIOS.length) * 100}%`, background: '#0f3d8c', borderRadius: 4, transition: 'width 0.4s' }} />
             </div>
-            <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{idx + 1}/{SCENARIOS.length}</span>
+            <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)', whiteSpace: 'nowrap' }}>
+              Gráfica {scenarioIdx + 1} / {SCENARIOS.length}
+            </span>
           </div>
 
-          {/* Data card */}
-          <div className="wl-card" style={{ padding: '1.5rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.65rem' }}>Datos</p>
-            <p style={{ margin: '0 0 0.5rem', fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>{sc.subject}</p>
-            <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-              <div>
-                <span style={{ fontSize: '0.72rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{sc.yearFrom}</span>
-                <p style={{ margin: '0.1rem 0 0', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '1.4rem', color: 'var(--ink)' }}>
-                  {sc.unit === '£' ? '£' : ''}{sc.from.toLocaleString()} {sc.unit !== '£' ? sc.unit : ''}
-                </p>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', fontSize: '1.5rem' }}>
-                {direction === 'up' ? '→↗' : direction === 'down' ? '→↘' : '→'}
-                <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: direction === 'up' ? '#059669' : direction === 'down' ? '#dc2626' : '#0f3d8c', fontWeight: 700, marginLeft: '0.3rem' }}>
-                  {direction === 'stable' ? 'stable' : `${direction === 'up' ? '+' : '-'}${pct}%`}
-                </span>
-              </div>
-              <div>
-                <span style={{ fontSize: '0.72rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{sc.yearTo}</span>
-                <p style={{ margin: '0.1rem 0 0', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '1.4rem', color: 'var(--ink)' }}>
-                  {sc.unit === '£' ? '£' : ''}{sc.to.toLocaleString()} {sc.unit !== '£' ? sc.unit : ''}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Pickers */}
-          <div style={{ marginBottom: '1rem' }}>
-            <p style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.5rem' }}>1. Elige el verbo:</p>
-            <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-              {availableVerbs.map(v => (
-                <button key={v} onClick={() => !revealed && setVerb(v)}
-                  style={{ padding: '0.4rem 0.85rem', borderRadius: 8, fontSize: '0.85rem', fontWeight: 600, border: verb === v ? '2px solid #0f3d8c' : '1.5px solid var(--line-soft)', background: verb === v ? 'rgba(15,61,140,0.1)' : 'var(--bg-2)', color: verb === v ? '#0f3d8c' : 'var(--ink)', cursor: revealed ? 'default' : 'pointer', fontFamily: 'var(--mono)' }}>
-                  {v}
-                </button>
+          {/* Chart card */}
+          <div className="wl-card" style={{ padding: '1.25rem 1.5rem', marginBottom: '1.5rem' }}>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>
+              IELTS Academic — Line graph
+            </p>
+            <p style={{ margin: '0 0 1rem', fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--ink)', lineHeight: 1.55 }}>
+              {sc.context}
+            </p>
+            <p style={{ margin: '0 0 0.65rem', fontWeight: 700, fontSize: '0.88rem', color: 'var(--ink)' }}>
+              {sc.title}
+            </p>
+            <MiniLineChart scenario={sc} />
+            {/* Legend */}
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
+              {sc.series.map(s => (
+                <div key={s.label} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <div style={{ width: 20, height: 3, background: s.color, borderRadius: 2 }} />
+                  <span style={{ fontSize: '0.78rem', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{s.label}</span>
+                </div>
               ))}
             </div>
           </div>
 
-          {direction !== 'stable' && (
-            <div style={{ marginBottom: '1rem' }}>
-              <p style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.5rem' }}>2. Elige el adverbio:</p>
-              <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-                {ADVERBS.map((a, i) => (
-                  <button key={i} onClick={() => !revealed && setAdverb(a)}
-                    style={{ padding: '0.4rem 0.85rem', borderRadius: 8, fontSize: '0.85rem', fontWeight: 600, border: adverb === a ? '2px solid #7c3aed' : '1.5px solid var(--line-soft)', background: adverb === a ? 'rgba(124,58,237,0.1)' : 'var(--bg-2)', color: adverb === a ? '#7c3aed' : 'var(--ink)', cursor: revealed ? 'default' : 'pointer', fontFamily: 'var(--mono)' }}>
-                    {a === '' ? '(sin adverbio)' : a}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
+          {/* Observations */}
+          <p style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.75rem' }}>
+            Selecciona las <span style={{ color: '#0f3d8c' }}>{sc.targetCount} observaciones más importantes</span> para incluir en tu respuesta:
+          </p>
 
-          {/* Live assembly */}
-          {assembled && (
-            <div style={{ padding: '1rem 1.25rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1.5px solid rgba(15,61,140,0.2)', marginBottom: '1rem', fontSize: '0.97rem', color: 'var(--ink)', lineHeight: 1.7, fontStyle: 'italic' }}>
-              {assembled}
-            </div>
-          )}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.25rem' }}>
+            {sc.observations.map((obs, i) => {
+              const isSelected = selected.has(i);
+              const showResult = revealed;
+              const isCorrect = obs.relevant;
 
-          {(verb || direction === 'stable') && !revealed && (
-            <button className="btn btn-sm" onClick={() => setRevealed(true)} style={{ marginBottom: '1rem' }}>Ver respuesta modelo →</button>
-          )}
+              let bg = 'var(--bg-2)';
+              let border = '1.5px solid var(--line-soft)';
+              let labelColor = 'var(--ink)';
 
-          {revealed && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669' }}>
-                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Respuesta modelo</p>
-                <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.7, color: 'var(--ink)' }}>{sc.correctSentence}</p>
-                <div style={{ marginTop: '0.5rem', display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-                  <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(5,150,105,0.1)', color: '#059669', fontFamily: 'var(--mono)', fontWeight: 700 }}>Verbo: {sc.correctVerb}</span>
-                  {sc.correctAdverb && <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(124,58,237,0.1)', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 700 }}>Adverbio: {sc.correctAdverb}</span>}
+              if (showResult && isSelected && isCorrect) {
+                bg = 'rgba(5,150,105,0.07)';
+                border = '1.5px solid rgba(5,150,105,0.4)';
+              } else if (showResult && isSelected && !isCorrect) {
+                bg = 'rgba(220,38,38,0.06)';
+                border = '1.5px solid rgba(220,38,38,0.4)';
+              } else if (showResult && !isSelected && isCorrect) {
+                bg = 'rgba(245,158,11,0.06)';
+                border = '1.5px solid rgba(245,158,11,0.35)';
+              } else if (isSelected) {
+                bg = 'rgba(15,61,140,0.07)';
+                border = '2px solid #0f3d8c';
+                labelColor = '#0f3d8c';
+              }
+
+              return (
+                <div key={i}
+                  onClick={() => toggleObs(i)}
+                  style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: bg, border, cursor: revealed ? 'default' : 'pointer', transition: 'border-color 0.15s, background 0.15s' }}>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                    <div style={{
+                      width: 20, height: 20, borderRadius: 5, flexShrink: 0, marginTop: 1,
+                      border: isSelected ? 'none' : '2px solid var(--line-soft)',
+                      background: isSelected ? '#0f3d8c' : 'transparent',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    }}>
+                      {isSelected && <span style={{ color: '#fff', fontSize: '0.7rem', fontWeight: 800 }}>✓</span>}
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ margin: 0, fontSize: '0.9rem', color: labelColor, lineHeight: 1.55 }}>{obs.text}</p>
+                      {showResult && (
+                        <div style={{ marginTop: '0.5rem', padding: '0.5rem 0.75rem', borderRadius: 8, background: isCorrect ? 'rgba(5,150,105,0.08)' : 'rgba(220,38,38,0.06)', borderLeft: `3px solid ${isCorrect ? '#059669' : '#dc2626'}` }}>
+                          <span style={{ fontSize: '0.72rem', fontWeight: 800, color: isCorrect ? '#059669' : '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                            {isCorrect ? '✓ Relevante' : '✗ No es prioritaria'}
+                          </span>
+                          <p style={{ margin: '0.3rem 0 0', fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.55 }}>{obs.explanation}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
+              );
+            })}
+          </div>
+
+          {/* Actions */}
+          {!revealed ? (
+            <button
+              className="btn btn-sm"
+              onClick={() => setRevealed(true)}
+              disabled={selected.size === 0}
+              style={{ opacity: selected.size === 0 ? 0.5 : 1 }}>
+              Ver análisis →
+            </button>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              {/* Score */}
+              <div style={{ padding: '1rem 1.25rem', borderRadius: 12, background: correctCount === totalRelevant ? 'rgba(5,150,105,0.08)' : 'rgba(15,61,140,0.06)', border: `1.5px solid ${correctCount === totalRelevant ? 'rgba(5,150,105,0.3)' : 'rgba(15,61,140,0.2)'}` }}>
+                <p style={{ margin: 0, fontWeight: 700, fontSize: '0.95rem', color: correctCount === totalRelevant ? '#059669' : '#0f3d8c' }}>
+                  {correctCount === totalRelevant
+                    ? '¡Perfecto! Identificaste todas las tendencias clave.'
+                    : `Identificaste ${correctCount} de ${totalRelevant} tendencias clave. Revisa el análisis de las que te faltaron.`}
+                </p>
               </div>
-              <button className="btn btn-sm" onClick={next} style={{ alignSelf: 'flex-start' }}>
-                {idx < SCENARIOS.length - 1 ? 'Siguiente escenario →' : 'Volver al inicio →'}
+              <button className="btn btn-sm" onClick={nextScenario} style={{ alignSelf: 'flex-start' }}>
+                {scenarioIdx < SCENARIOS.length - 1 ? 'Siguiente gráfica →' : 'Volver al inicio →'}
               </button>
             </div>
           )}
+
         </div>
       </div>
     </section>
