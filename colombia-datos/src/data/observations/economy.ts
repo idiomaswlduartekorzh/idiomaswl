@@ -32,8 +32,8 @@ export const GDP_GROWTH: Observation[] = [
   { indicatorId: 'pib-crecimiento', year: 2021, value: 10.6, unit: '%', sourceId: 'dane', notes: '⚠️ Rebote estadístico post-COVID; no es crecimiento estructural; base de comparación muy baja' },
   { indicatorId: 'pib-crecimiento', year: 2022, value: 7.5, unit: '%', sourceId: 'dane', notes: 'Alto crecimiento; transición Duque-Petro; segundo trimestre Petro' },
   { indicatorId: 'pib-crecimiento', year: 2023, value: 0.6, unit: '%', sourceId: 'dane', notes: 'Fuerte desaceleración; altas tasas de interés (Banrep), inflación y desconfianza empresarial' },
-  { indicatorId: 'pib-crecimiento', year: 2024, value: 1.8, unit: '%', sourceId: 'dane', notes: 'Recuperación gradual; inflación bajando' },
-  { indicatorId: 'pib-crecimiento', year: 2025, value: 2.8, unit: '%', sourceId: 'dane', notes: 'Preliminar; recuperación continúa; Banrep bajó tasa a ~7.25%' },
+  { indicatorId: 'pib-crecimiento', year: 2024, value: 1.7, unit: '%', sourceId: 'dane', notes: 'DANE boletín IV trim 2024 (17 feb 2025): 1,7% oficial. Recuperación gradual pero débil.' },
+  { indicatorId: 'pib-crecimiento', year: 2025, value: 2.6, unit: '%', sourceId: 'dane', notes: 'DANE boletín IV trim 2025 (16 feb 2026): 2,6% oficial. Impulsado por comercio y servicios.' },
   { indicatorId: 'pib-crecimiento', year: 2026, value: 3.1, unit: '%', sourceId: 'dane', notes: 'Estimado preliminar (a junio 2026); reactivación del crédito y consumo; año electoral' },
 ];
 
@@ -109,7 +109,7 @@ export const DEBT_GDP: Observation[] = [
   { indicatorId: 'deuda-pib', year: 2021, value: 68.1, unit: '% PIB', sourceId: 'mhcp', notes: 'Pico histórico de deuda/PIB; rebote del PIB empezó a bajar ratio al final' },
   { indicatorId: 'deuda-pib', year: 2022, value: 60.8, unit: '% PIB', sourceId: 'mhcp', notes: 'Boom PIB (7.5%) + mayores ingresos petróleo redujeron ratio; inicio Petro. GNC bruta MHCP.' },
   { indicatorId: 'deuda-pib', year: 2023, value: 56.7, unit: '% PIB', sourceId: 'mhcp', notes: 'Alta inflación (9.3%) elevó PIB nominal y redujo el ratio pese al déficit; GNC bruta MHCP.' },
-  { indicatorId: 'deuda-pib', year: 2024, value: 61.5, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Repunte: déficit fiscal de −6.8% del PIB revierte la tendencia; GNC bruta MHCP.' },
+  { indicatorId: 'deuda-pib', year: 2024, value: 63.9, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ Repunte: 63,9% GNC bruta (La República/Minhacienda). Déficit −6.8% del PIB revierte la tendencia.' },
   { indicatorId: 'deuda-pib', year: 2025, value: 64.4, unit: '% PIB', sourceId: 'mhcp', notes: '⚠️ GNC bruta 64,4% / GNC neta 58,5% / deuda externa total 53,8% del PIB. Dato oficial MHCP.' },
   { indicatorId: 'deuda-pib', year: 2026, value: 63.5, unit: '% PIB', sourceId: 'mhcp', notes: 'Estimado preliminar; leve reducción si se cumple ajuste fiscal; año electoral. GNC bruta.' },
 ];
