@@ -7,7 +7,7 @@ import { getLevelProgress } from '@/lib/progress'
 
 const COLOR = '#0066cc'
 
-const SKILL_TOTALS: Record<string, number> = { a1: 6, a2: 6 }
+const SKILL_TOTALS: Record<string, number> = { a1: 6, a2: 6, b2: 1 }
 
 const NIVELES = [
   {
@@ -29,8 +29,9 @@ const NIVELES = [
   },
   {
     nivel: 'B2', key: 'b2', name: 'Intermedio alto',
-    desc: 'Reported speech, preparación IELTS, vocabulario académico.',
-    available: false,
+    desc: 'Use of English: Multiple Choice Cloze (FCE Part 1 / ICFES) + Word Formation (FCE Part 3). Textos de contexto colombiano y académico.',
+    href: '/practica/ingles/b2', available: true,
+    count: '1 habilidad · 40 ejercicios',
   },
   {
     nivel: 'C1', key: 'c1', name: 'Avanzado',
