@@ -14,6 +14,8 @@ export interface MockItem {
   free: boolean;
   parts: number;
   questions: number;
+  href?: string;   // override default /examenes/[exam]/practica/[id] link
+  badge?: string;  // extra badge e.g. "Oficial"
 }
 
 export interface Exam {
@@ -165,6 +167,9 @@ export const EXAMS: Record<string, Exam> = {
       { id: 'mock-18', title: 'Mock 18 · Viajes y turismo',           subtitle: '7 partes · 45 preguntas · Formato Saber 11', free: true, parts: 7, questions: 45 },
       { id: 'mock-19', title: 'Mock 19 · Ciencia y descubrimiento',   subtitle: '7 partes · 45 preguntas · Formato Saber 11', free: true, parts: 7, questions: 45 },
       { id: 'mock-20', title: 'Mock 20 · Sociedad y juventud',        subtitle: '7 partes · 45 preguntas · Formato Saber 11', free: true, parts: 7, questions: 45 },
+      { id: 'icfes-2023-g11', title: 'Cuadernillo Oficial 2023 — Grado 11', subtitle: 'Preguntas reales · 25 preguntas · 60 min', free: true, parts: 5, questions: 25, badge: 'Oficial', href: '/practica/icfes-saber-11/examenes/icfes-2023-g11' },
+      { id: 'icfes-2022-g11', title: 'Cuadernillo Oficial 2022 — Grado 11', subtitle: 'Preguntas reales · 25 preguntas · 60 min', free: true, parts: 5, questions: 25, badge: 'Oficial', href: '/practica/icfes-saber-11/examenes/icfes-2022-g11' },
+      { id: 'icfes-2019-ex1', title: 'Cuadernillo Oficial 2019 — Examen 1', subtitle: 'Preguntas reales · clave oficial · 25 preguntas', free: true, parts: 5, questions: 25, badge: 'Oficial', href: '/practica/icfes-saber-11/examenes/icfes-2019-ex1' },
     ],
     available: true,
   },

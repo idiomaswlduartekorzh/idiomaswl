@@ -52,11 +52,18 @@ export default function MockGrid({ exam }: { exam: Exam }) {
               <div className={`wl-mock-card${mock.free ? '' : ' wl-mock-card--locked'}`}>
                 <div className="wl-mock-card__header">
                   <span className="wl-mock-card__num">{String(i + 1).padStart(2, '0')}</span>
-                  {mock.free ? (
-                    <span className="wl-mock-card__tag wl-mock-card__tag--free">Gratis</span>
-                  ) : (
-                    <span className="wl-mock-card__tag wl-mock-card__tag--pro">Pro</span>
-                  )}
+                  <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
+                    {mock.badge && (
+                      <span style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', background: 'rgba(220,38,38,0.1)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.25)', borderRadius: 4, padding: '2px 6px' }}>
+                        {mock.badge}
+                      </span>
+                    )}
+                    {mock.free ? (
+                      <span className="wl-mock-card__tag wl-mock-card__tag--free">Gratis</span>
+                    ) : (
+                      <span className="wl-mock-card__tag wl-mock-card__tag--pro">Pro</span>
+                    )}
+                  </div>
                 </div>
                 <h3 className="wl-mock-card__title">{mock.title}</h3>
                 <p className="wl-mock-card__sub">{mock.subtitle}</p>
@@ -67,7 +74,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                 </div>
                 {mock.free ? (
                   <Link
-                    href={`/examenes/${exam.slug}/practica/${mock.id}`}
+                    href={mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`}
                     className="wl-mock-card__cta btn btn-sm"
                   >
                     Empezar →
