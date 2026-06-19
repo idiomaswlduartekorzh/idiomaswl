@@ -256,13 +256,20 @@ export default function PracticaClient() {
                     </div>
                   </div>
                 </div>
-                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '0.6rem' }}>
                   {['🧠 Adaptativo', '💾 Checkpoint', '📋 Avisos + Diálogos', '📖 Lectura + Gramática'].map(tag => (
                     <span key={tag} style={{ fontSize: '0.72rem', padding: '0.2rem 0.6rem', borderRadius: 6, background: 'rgba(220,38,38,0.08)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
                       {tag}
                     </span>
                   ))}
                 </div>
+                <a
+                  href="/practica/icfes-saber-11/examenes"
+                  onClick={e => e.stopPropagation()}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.75rem', fontWeight: 700, color: '#dc2626', fontFamily: 'var(--mono)', textDecoration: 'underline', textUnderlineOffset: 3 }}
+                >
+                  📄 Simulacros con cuadernillos oficiales (2019, 2022, 2023) →
+                </a>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#dc2626', fontSize: '1.2rem', fontWeight: 700 }}>
                 →
