@@ -3,67 +3,12 @@
 // Estructura por tema: explicación (server-rendered, SEO) + tabla + ejemplos
 // + errores comunes de hispanohablantes + ejercicios interactivos.
 
-export interface GQItem {
-  s: string;        // enunciado con ___ para el espacio
-  opts: string[];
-  a: number;        // índice de la opción correcta
-  fb: string;       // feedback
-}
-
-export interface GrammarTable {
-  caption: string;
-  headers: string[];
-  rows: string[][];
-}
-
-export interface GrammarExample {
-  en: string;
-  es: string;
-  note?: string;       // matiz opcional (registro, pronunciación, etc.)
-}
-
-export interface GrammarMistake {
-  wrong: string;
-  right: string;
-  note: string;
-}
-
-// Sub-sección explicativa con su propio subtítulo (H3) — permite estructurar
-// la lección como un profesor: forma, uso, contraste, pronunciación...
-export interface GrammarSection {
-  heading: string;
-  body: string[];
-}
-
-// Puente contrastivo español → inglés (la firma del filólogo): muestra el
-// instinto del hispanohablante y cómo se dice de verdad en inglés.
-export interface GrammarContrast {
-  es: string;
-  en: string;
-  note: string;
-}
-
-export interface GrammarTopic {
-  slug: string;
-  order: number;
-  title: string;       // título completo
-  shortTitle: string;  // para chips / índice
-  icon: string;
-  seoTitle: string;
-  seoDescription: string;
-  keywords: string[];
-  intro: string[];                  // párrafos de explicación introductoria
-  sections?: GrammarSection[];      // sub-secciones explicativas (opcional)
-  table: GrammarTable | null;       // tabla única (formato simple)
-  tables?: GrammarTable[];          // varias tablas (si se usa, sustituye a `table`)
-  contrast?: GrammarContrast[];     // contraste español → inglés (opcional)
-  examples: GrammarExample[];
-  commonMistakes: GrammarMistake[];
-  tip: string;
-  questions: GQItem[];
-}
-
-export const GRAMMAR_COLOR = '#7c3aed';
+import type { GrammarTopic } from './grammar-types';
+export type {
+  GQItem, GrammarTable, GrammarExample, GrammarMistake,
+  GrammarSection, GrammarContrast, GrammarTopic,
+} from './grammar-types';
+export { GRAMMAR_COLOR } from './grammar-types';
 
 export const TOPICS: GrammarTopic[] = [
   {

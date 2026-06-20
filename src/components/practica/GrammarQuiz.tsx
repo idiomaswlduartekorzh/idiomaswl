@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { saveSkillCompletion } from '@/lib/progress';
-import type { GQItem } from '@/data/practica/ingles-a1-gramatica';
+import type { GQItem } from '@/data/practica/grammar-types';
 
 interface Props {
   questions: GQItem[];

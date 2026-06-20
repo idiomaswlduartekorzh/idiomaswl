@@ -12,7 +12,7 @@ const COLOR = '#003189';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Lecture', eng: 'Lectura', desc: '5 textos A1 con vocabulario clickeable. Sophie à Paris, la famille, la maison, les repas, l\'école.', count: '5 textos · 25 preguntas', href: '/practica/frances/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammaire', eng: 'Gramática', desc: 'Articles (le/la/l\'/les/un/une), être au présent, avoir au présent, adjectifs qualificatifs.', count: '4 temas · 40+ ejercicios', href: '/practica/frances/a1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Grammaire', eng: 'Gramática', desc: 'Los 15 temas del A1: artículos, être, avoir, verbos -ER, negación, partitivos, posesivos, futuro próximo y más. Cada tema con explicación, tablas, contraste español→francés y ejercicios.', count: '15 temas · 200+ ejercicios', href: '/practica/frances/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Écriture', eng: 'Escritura', desc: '5 tareas guiadas con modelo: presentarse, describir la familia, la casa, las actividades y los gustos.', count: '5 prompts guiados', href: '/practica/frances/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expression orale', eng: 'Expresión oral', desc: '15 frases de supervivencia en francés con pronunciación detallada para hispanohablantes.', count: '15 frases esenciales', href: '/practica/frances/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulaire', eng: 'Vocabulario', desc: '6 sets temáticos: la famille, les couleurs, la nourriture, les jours, le corps, les chiffres.', count: '6 sets · 60+ palabras', href: '/practica/frances/a1/vocabulario' },

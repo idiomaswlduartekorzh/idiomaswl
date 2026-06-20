@@ -1,4 +1,4 @@
-import type { GrammarTopic, GrammarTable } from '@/data/practica/ingles-a1-gramatica';
+import type { GrammarTopic, GrammarTable } from '@/data/practica/grammar-types';
 
 const h2Style: React.CSSProperties = {
   fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)', margin: '0 0 0.75rem', letterSpacing: '-0.02em',
@@ -33,7 +33,7 @@ function TableBlock({ table, color }: { table: GrammarTable; color: string }) {
 }
 
 // Componente SERVER — todo el contenido se renderiza en el HTML inicial (SEO).
-export default function GrammarExplainer({ topic, color }: { topic: GrammarTopic; color: string }) {
+export default function GrammarExplainer({ topic, color, targetLang = 'inglés' }: { topic: GrammarTopic; color: string; targetLang?: string }) {
   const tables = topic.tables && topic.tables.length > 0 ? topic.tables : topic.table ? [topic.table] : [];
 
   return (
@@ -85,7 +85,7 @@ export default function GrammarExplainer({ topic, color }: { topic: GrammarTopic
       {/* Contraste español → inglés */}
       {topic.contrast && topic.contrast.length > 0 && (
         <section style={{ marginBottom: '1.75rem' }}>
-          <h2 style={h2Style}>Del español al inglés (evita la traducción literal)</h2>
+          <h2 style={h2Style}>Del español al {targetLang} (evita la traducción literal)</h2>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
             {topic.contrast.map((c, i) => (
               <li key={i} style={{ padding: '0.8rem 1rem', borderRadius: 10, background: `${color}07`, border: `1px solid ${color}22` }}>
