@@ -15,7 +15,8 @@ interface ReadingText {
   grammar: string;
   text: string;
   vocab: Record<string, string>;
-  preQ: { q: string; opts: string[]; a: number }[];
+  goal: string;                              // objetivo de lectura concreto
+  keyVocab: { w: string; t: string }[];      // vocabulario clave pre-enseñado
   mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[];
   openQ: string;
   production: string;
@@ -26,9 +27,14 @@ const TEXTS: ReadingText[] = [
     id: 1, title: 'My Daily Routine', topic: 'Vida cotidiana', words: 65, grammar: 'Presente simple',
     text: "Hi! My name is Tom. I am 25 years old. Every morning, I wake up at seven o'clock. I take a shower and have breakfast. I usually eat toast and drink orange juice. Then I take the bus to work. I work in an office near the city centre. I finish work at five o'clock in the afternoon. In the evening, I watch TV or read a book.",
     vocab: { wake:'despierto', shower:'ducha', breakfast:'desayuno', usually:'normalmente', toast:'tostadas', drink:'bebo', bus:'autobús', office:'oficina', centre:'centro', finish:'termino', evening:'noche/tarde', watch:'veo', book:'libro' },
-    preQ: [
-      { q: '¿A qué hora te despiertas normalmente?', opts: ['Antes de las 7', 'Entre las 7 y las 9', 'Después de las 9'], a: -1 },
-      { q: '¿Cómo vas normalmente al trabajo/colegio?', opts: ['En bus', 'Caminando', 'En carro', 'En bici'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿a qué hora se despierta Tom y cómo va al trabajo?',
+    keyVocab: [
+      { w: 'wake up', t: 'despertarse' },
+      { w: 'breakfast', t: 'desayuno' },
+      { w: 'take the bus', t: 'tomar el bus' },
+      { w: 'work', t: 'trabajo / trabajar' },
+      { w: 'finish', t: 'terminar' },
+      { w: 'evening', t: 'la tarde-noche' },
     ],
     mcq: [
       { q: '¿Qué significa "breakfast"?', cat: 'Vocabulario', opts: ['Almuerzo','Desayuno','Cena','Merienda'], a: 1, fb: '"Breakfast" = desayuno, la primera comida del día.' },
@@ -44,9 +50,14 @@ const TEXTS: ReadingText[] = [
     id: 2, title: 'My Family', topic: 'La familia', words: 58, grammar: 'Adjetivos + to be',
     text: "I have a small family. My mother is a nurse. She is very kind and patient. My father is a teacher. He is tall and funny. I have one sister. Her name is Emma. She is 18 years old. She loves music and art. We all live together in a house in the city. I love my family very much.",
     vocab: { mother:'madre/mamá', nurse:'enfermera', kind:'amable', patient:'paciente', father:'padre/papá', teacher:'maestro/a', tall:'alto/a', funny:'gracioso/a', sister:'hermana', loves:'ama/le encanta', music:'música', art:'arte', together:'juntos' },
-    preQ: [
-      { q: '¿Cuántas personas hay en tu familia (en casa)?', opts: ['2-3 personas', '4-5 personas', '6 o más'], a: -1 },
-      { q: '¿Qué profesión tiene alguien en tu familia?', opts: ['Médico/a o enfermero/a', 'Maestro/a', 'Otra profesión'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿a qué se dedican los padres y cómo se llama la hermana?',
+    keyVocab: [
+      { w: 'mother', t: 'madre' },
+      { w: 'father', t: 'padre' },
+      { w: 'nurse', t: 'enfermera' },
+      { w: 'teacher', t: 'maestro/a' },
+      { w: 'sister', t: 'hermana' },
+      { w: 'kind', t: 'amable' },
     ],
     mcq: [
       { q: '¿Qué significa "nurse"?', cat: 'Vocabulario', opts: ['Abogada','Médica','Enfermera','Maestra'], a: 2, fb: '"Nurse" = enfermero/a. Una persona que trabaja cuidando pacientes en hospitales o clínicas.' },
@@ -62,9 +73,14 @@ const TEXTS: ReadingText[] = [
     id: 3, title: 'My Home', topic: 'La casa', words: 67, grammar: 'There is / There are · Preposiciones',
     text: "I live in a small house. There are three rooms: a bedroom, a kitchen, and a living room. My bedroom is upstairs. In my bedroom there is a bed, a desk, and a big wardrobe. There are some books on the shelf next to the window. In front of the house there is a small garden. Next to the house there is a park. I love my home because it is comfortable and quiet.",
     vocab: { rooms:'habitaciones', bedroom:'dormitorio', kitchen:'cocina', living:'sala de estar', upstairs:'arriba/en el piso de arriba', desk:'escritorio', wardrobe:'armario/ropero', shelf:'estante', window:'ventana', front:'enfrente', garden:'jardín', park:'parque', comfortable:'cómodo/a', quiet:'tranquilo/a' },
-    preQ: [
-      { q: '¿En qué tipo de vivienda vives?', opts: ['Casa', 'Apartamento', 'Otro'], a: -1 },
-      { q: '¿Cuántas habitaciones tiene tu casa/apto?', opts: ['1-2', '3-4', '5 o más'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿cuántas habitaciones hay y qué hay enfrente de la casa?',
+    keyVocab: [
+      { w: 'room', t: 'habitación' },
+      { w: 'bedroom', t: 'dormitorio' },
+      { w: 'kitchen', t: 'cocina' },
+      { w: 'there is / are', t: 'hay' },
+      { w: 'garden', t: 'jardín' },
+      { w: 'next to', t: 'al lado de' },
     ],
     mcq: [
       { q: '¿Qué significa "wardrobe"?', cat: 'Vocabulario', opts: ['Escritorio','Cama','Armario/ropero','Estante'], a: 2, fb: '"Wardrobe" = armario o ropero. Es el mueble donde guardamos la ropa.' },
@@ -80,9 +96,14 @@ const TEXTS: ReadingText[] = [
     id: 4, title: 'Food I Like', topic: 'La comida', words: 55, grammar: 'I like / I don\'t like · Frecuencia',
     text: "I love food! My favourite meal is breakfast. Every morning I eat eggs and toast. I drink coffee with milk. For lunch I usually have rice and chicken. I don't like vegetables very much, but I eat fruit every day. My favourite fruits are apples and mangoes. I never eat fast food. On Sundays I cook spaghetti with tomato sauce for my family.",
     vocab: { favourite:'favorito/a', meal:'comida/plato', eggs:'huevos', toast:'tostadas', coffee:'café', lunch:'almuerzo', usually:'normalmente', rice:'arroz', chicken:'pollo', vegetables:'verduras/vegetales', fruit:'fruta', apples:'manzanas', mangoes:'mangos', cook:'cocino', spaghetti:'espaguetis', sauce:'salsa', never:'nunca' },
-    preQ: [
-      { q: '¿Cuál es tu comida favorita?', opts: ['Pasta/arroz', 'Carne/pollo', 'Frutas/verduras', 'Otra'], a: -1 },
-      { q: '¿Con qué frecuencia cocinas?', opts: ['Todos los días', 'A veces', 'Casi nunca'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿qué desayuna y qué no le gusta comer?',
+    keyVocab: [
+      { w: 'meal', t: 'comida / plato' },
+      { w: 'eggs', t: 'huevos' },
+      { w: 'vegetables', t: 'verduras' },
+      { w: 'fruit', t: 'fruta' },
+      { w: "I don't like", t: 'no me gusta' },
+      { w: 'never', t: 'nunca' },
     ],
     mcq: [
       { q: '¿Qué significa "meal"?', cat: 'Vocabulario', opts: ['Plato de comida','Menú','Receta','Restaurante'], a: 0, fb: '"Meal" = comida, plato o ingesta (breakfast es la primera meal del día).' },
@@ -98,9 +119,14 @@ const TEXTS: ReadingText[] = [
     id: 5, title: 'My School', topic: 'La escuela', words: 62, grammar: 'Presente simple · Días de la semana',
     text: "My school is not far from my home. I go to school from Monday to Friday. Classes start at eight in the morning. My favourite subjects are English and Science. My English teacher's name is Mr. Brown. He is young and very helpful. I have lunch at school with my friends. We usually eat sandwiches. School finishes at three thirty. After school, I do my homework.",
     vocab: { far:'lejos', monday:'lunes', friday:'viernes', classes:'clases', start:'empiezan', subjects:'materias', favourite:'favorito/a', science:'ciencias', helpful:'servicial/útil', lunch:'almuerzo', sandwiches:'sándwiches', finishes:'termina', homework:'tarea' },
-    preQ: [
-      { q: '¿Cuántos días a la semana vas a estudiar/trabajar?', opts: ['5 días', '6 días', 'Horario variable'], a: -1 },
-      { q: '¿Cuál es tu materia o área favorita?', opts: ['Ciencias exactas', 'Humanidades', 'Idiomas', 'Artes'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿qué días va a la escuela y cuáles son sus materias favoritas?',
+    keyVocab: [
+      { w: 'school', t: 'escuela / colegio' },
+      { w: 'subject', t: 'materia / asignatura' },
+      { w: 'teacher', t: 'profesor/a' },
+      { w: 'lunch', t: 'almuerzo' },
+      { w: 'homework', t: 'tarea' },
+      { w: 'from Monday to Friday', t: 'de lunes a viernes' },
     ],
     mcq: [
       { q: '¿Qué significa "subjects"?', cat: 'Vocabulario', opts: ['Libros','Materias/asignaturas','Clases','Profesores'], a: 1, fb: '"Subjects" = materias o asignaturas (English, Math, Science, History son subjects).' },
@@ -164,7 +190,6 @@ function MCQItem({ q, qi, answers, onAnswer }: {
 
 function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
   const [phase, setPhase] = useState<'pre' | 'read' | 'questions' | 'done'>('pre');
-  const [preAnswers, setPreAnswers] = useState<Record<number, number>>({});
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [activeWord, setActiveWord] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -209,28 +234,31 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
         })}
       </div>
 
-      {/* PRE-READING */}
+      {/* PRE-READING — vocabulario clave + objetivo (equipar antes de leer) */}
       {phase === 'pre' && (
         <div className="wl-card" style={{ padding: '1.5rem' }}>
-          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Antes de leer — activa tu conocimiento</p>
-          <p style={{ margin: '0 0 1.25rem', fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-            Piensa un momento antes de leer. No hay respuestas correctas o incorrectas — solo activa tu mente sobre el tema: <strong style={{ color: 'var(--ink)' }}>{t.topic}</strong>.
-          </p>
-          {t.preQ.map((pq, i) => (
-            <div key={i} style={{ marginBottom: '1.25rem' }}>
-              <p style={{ margin: '0 0 0.65rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.96rem' }}>{i + 1}. {pq.q}</p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {pq.opts.map((opt, oi) => (
-                  <button key={oi} onClick={() => setPreAnswers(p => ({ ...p, [i]: oi }))}
-                    className={preAnswers[i] === oi ? 'btn btn-sm' : 'btn btn-ghost btn-sm'}
-                    style={{ fontSize: '0.84rem' }}>
-                    {opt}
-                  </button>
-                ))}
+          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Antes de leer — prepárate</p>
+
+          {/* Objetivo de lectura */}
+          <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: `${COLOR}0d`, border: `1px solid ${COLOR}2a`, marginBottom: '1.25rem' }}>
+            <div style={{ fontSize: '0.66rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin: 0, fontWeight: 600, color: 'var(--ink)', fontSize: '0.97rem', lineHeight: 1.55 }}>{t.goal}</p>
+          </div>
+
+          {/* Vocabulario clave */}
+          <div style={{ fontSize: '0.66rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.6rem' }}>
+            📚 Vocabulario clave — apréndelo antes de leer
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '0.5rem', marginBottom: '1.25rem' }}>
+            {t.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding: '0.6rem 0.85rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.92rem' }}>{kv.w}</div>
+                <div style={{ color: 'var(--muted)', fontSize: '0.82rem' }}>{kv.t}</div>
               </div>
-            </div>
-          ))}
-          <button className="btn btn-sm" style={{ marginTop: '0.5rem' }} onClick={() => setPhase('read')}>
+            ))}
+          </div>
+
+          <button className="btn btn-sm" onClick={() => setPhase('read')}>
             Listo — ir al texto →
           </button>
         </div>
@@ -369,7 +397,7 @@ export default function LecturaInglesA1() {
         <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Reading · Inglés A1</p>
         <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Lectura A1</h1>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 540, margin: '0 0 2rem' }}>
-          5 textos progresivos. Cada texto tiene pre-lectura, vocabulario interactivo, preguntas adaptativas y producción libre.
+          5 textos progresivos. Cada texto empieza con vocabulario clave y un objetivo de lectura, luego el texto con cada palabra clicable, preguntas de comprensión y producción libre.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>

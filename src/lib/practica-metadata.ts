@@ -44,6 +44,33 @@ export function practicaMetadata(lang: string, level: string, skill: string): Me
   }
 }
 
+// Metadata para una página de un tema concreto de gramática (una URL por tema).
+export function grammarTopicMetadata(opts: {
+  lang: string
+  level: string
+  slug: string
+  title: string
+  description: string
+  keywords: string[]
+}): Metadata {
+  const { lang, level, slug, title, description, keywords } = opts
+  const url = `https://www.idiomaswl.com/practica/${lang}/${level}/gramatica/${slug}`
+  return {
+    // El layout raíz aplica el template "%s · Idiomas WeLearn"; no repetir la marca.
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      locale: 'es_CO',
+      url,
+    },
+    alternates: { canonical: url },
+  }
+}
+
 export function levelMetadata(lang: string, level: string): Metadata {
   const ln = langNames[lang] ?? lang
   const lv = levelNames[level] ?? level.toUpperCase()

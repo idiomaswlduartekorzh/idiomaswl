@@ -17,8 +17,8 @@ const HABILIDADES = [
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Artículos (a/an/the), verbo to be, pronombres personales, presente simple y plurales. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ingles/a1/gramatica',
+    desc: 'Los 15 temas del A1: artículos, verbo to be, present simple, present continuous, can, there is/are, preposiciones y más. Cada tema con explicación, tablas, ejemplos y ejercicios.',
+    count: '15 temas · 120+ ejercicios', href: '/practica/ingles/a1/gramatica',
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',
