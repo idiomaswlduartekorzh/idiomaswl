@@ -19,11 +19,27 @@ export interface GrammarTable {
 export interface GrammarExample {
   en: string;
   es: string;
+  note?: string;       // matiz opcional (registro, pronunciación, etc.)
 }
 
 export interface GrammarMistake {
   wrong: string;
   right: string;
+  note: string;
+}
+
+// Sub-sección explicativa con su propio subtítulo (H3) — permite estructurar
+// la lección como un profesor: forma, uso, contraste, pronunciación...
+export interface GrammarSection {
+  heading: string;
+  body: string[];
+}
+
+// Puente contrastivo español → inglés (la firma del filólogo): muestra el
+// instinto del hispanohablante y cómo se dice de verdad en inglés.
+export interface GrammarContrast {
+  es: string;
+  en: string;
   note: string;
 }
 
@@ -36,8 +52,11 @@ export interface GrammarTopic {
   seoTitle: string;
   seoDescription: string;
   keywords: string[];
-  intro: string[];     // párrafos de explicación
-  table: GrammarTable | null;
+  intro: string[];                  // párrafos de explicación introductoria
+  sections?: GrammarSection[];      // sub-secciones explicativas (opcional)
+  table: GrammarTable | null;       // tabla única (formato simple)
+  tables?: GrammarTable[];          // varias tablas (si se usa, sustituye a `table`)
+  contrast?: GrammarContrast[];     // contraste español → inglés (opcional)
   examples: GrammarExample[];
   commonMistakes: GrammarMistake[];
   tip: string;
@@ -58,32 +77,86 @@ export const TOPICS: GrammarTopic[] = [
       'Aprende cuándo usar a, an y the en inglés con explicación clara para hispanohablantes, tabla de uso, ejemplos traducidos, errores comunes y ejercicios interactivos. Nivel A1.',
     keywords: ['a an the explicación', 'artículos en inglés', 'cuándo usar a an the', 'artículos indefinidos inglés a1'],
     intro: [
-      'En inglés hay dos tipos de artículos: los indefinidos "a" y "an" (equivalen a "un/una") y el definido "the" (equivale a "el/la/los/las"). La diferencia entre "a" y "an" no depende de la letra escrita, sino del SONIDO con que empieza la palabra siguiente.',
-      'Usa "a" antes de un sonido consonántico (a dog, a car) y "an" antes de un sonido vocálico (an apple, an hour). Usa "the" cuando hablas de algo específico, ya mencionado o único en su contexto (the sun, the door).',
+      'En inglés hay tres artículos y un caso silencioso que casi nadie enseña pero que es el que más errores causa: la ausencia de artículo. Los indefinidos "a" y "an" equivalen a "un/una"; el definido "the" equivale a "el/la/los/las"; y en muchísimos casos donde el español pone "el/la/los", el inglés NO pone nada.',
+      'La regla de oro para "a" vs "an" sorprende a todos: no depende de la letra con la que se escribe la palabra, sino del SONIDO con que empieza. Por eso se dice "a university" (suena "yu-", consonántico) pero "an hour" (la h es muda, suena vocálico).',
+      'En este tema vas a aprender las tres decisiones: cuándo usar a/an, cuándo usar the, y —lo más importante para el hispanohablante— cuándo no usar ningún artículo.',
     ],
-    table: {
-      caption: 'Cuándo usar cada artículo',
-      headers: ['Artículo', 'Cuándo se usa', 'Ejemplo'],
-      rows: [
-        ['a', 'Antes de sonido consonántico, primera mención', 'a book, a university (suena "yu")'],
-        ['an', 'Antes de sonido vocálico', 'an egg, an hour (la "h" es muda)'],
-        ['the', 'Algo específico, único o ya mencionado', 'the moon, the teacher'],
-        ['— (sin artículo)', 'Plurales/incontables en sentido general', 'I like music, dogs are nice'],
-      ],
-    },
+    sections: [
+      {
+        heading: 'a o an: es cuestión de SONIDO, no de letra',
+        body: [
+          'Usa "a" antes de sonido consonántico (a dog, a car, a book) y "an" antes de sonido vocálico (an apple, an egg, an idea). Hasta aquí parece fácil, pero la trampa está en las palabras donde la letra y el sonido no coinciden.',
+          'Casos truculentos: "a university", "a uniform", "a one-way street" (todas empiezan con sonido de consonante: "yu-", "wun-"), frente a "an hour", "an honest man", "an MBA" (la "h" es muda o la letra se lee con sonido vocálico: "em-bi-ei"). Pronúnciala mentalmente antes de decidir.',
+        ],
+      },
+      {
+        heading: "Cuándo usar 'the'",
+        body: [
+          'Usa "the" cuando hablas de algo concreto que el oyente puede identificar: porque es único en el mundo (the sun, the moon), porque ya se mencionó antes (I have a dog. The dog is black.), o porque el contexto lo deja claro (the book on the table, close the door).',
+          'También con superlativos (the best, the biggest) y con construcciones del tipo "the + sustantivo + of..." (the capital of Colombia).',
+        ],
+      },
+      {
+        heading: 'Cuándo NO se usa artículo (el error estrella del hispanohablante)',
+        body: [
+          'Aquí está el 80% de los errores. Cuando hablas en sentido general de algo en plural o incontable, en inglés NO se usa artículo, aunque el español sí lo use: "Dogs are loyal" (los perros son leales), "I like music" (me gusta la música), "Money is important" (el dinero es importante).',
+          'Tampoco se usa artículo con los idiomas (I speak English), con las comidas (I have breakfast), ni con lugares cuando se mencionan por su función: go to school, go to bed, go to work, go home.',
+        ],
+      },
+      {
+        heading: 'a/an con las profesiones',
+        body: [
+          'Un punto donde el español hace lo contrario: en inglés las profesiones SÍ llevan "a/an". "Es médica" → "She is a doctor"; "Soy ingeniero" → "I am an engineer". Omitir el artículo ("She is doctor") es un error muy marcado.',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'a vs an (según el sonido)',
+        headers: ['Artículo', 'Sonido inicial', 'Ejemplos', 'Casos truculentos'],
+        rows: [
+          ['a', 'consonántico', 'a dog, a car, a house', 'a university, a uniform, a one-way street'],
+          ['an', 'vocálico', 'an apple, an egg, an idea', 'an hour, an honest man, an MBA'],
+        ],
+      },
+      {
+        caption: 'the vs. sin artículo',
+        headers: ['Situación', 'Artículo', 'Ejemplo'],
+        rows: [
+          ['Único / ya conocido', 'the', 'the sun, the door, the best'],
+          ['Plural o incontable en general', '— (nada)', 'dogs are nice, I like music'],
+          ['Idiomas', '— (nada)', 'I speak English'],
+          ['Lugares por su función', '— (nada)', 'go to school / bed / work / home'],
+        ],
+      },
+    ],
     examples: [
       { en: 'I have a dog and an old car.', es: 'Tengo un perro y un carro viejo.' },
-      { en: 'She is an engineer.', es: 'Ella es ingeniera.' },
-      { en: 'The sun is very bright today.', es: 'El sol está muy brillante hoy.' },
+      { en: 'She is an engineer at a big company.', es: 'Ella es ingeniera en una empresa grande.', note: 'Profesión → lleva "an/a".' },
+      { en: 'The sun is very bright today.', es: 'El sol está muy brillante hoy.', note: 'Único en el mundo → "the".' },
       { en: 'I need an umbrella because of the rain.', es: 'Necesito un paraguas por la lluvia.' },
-      { en: 'He is a student at the university.', es: 'Él es estudiante en la universidad.' },
+      { en: 'I like music and I speak English.', es: 'Me gusta la música y hablo inglés.', note: 'Gustos generales e idiomas → sin artículo.' },
+      { en: 'Dogs are loyal animals.', es: 'Los perros son animales leales.', note: 'Plural en sentido general → sin "the".' },
+      { en: 'I have breakfast at 7 and go to school.', es: 'Desayuno a las 7 y voy al colegio.', note: 'Comidas y "go to school" → sin artículo.' },
+      { en: 'It takes an hour by bus.', es: 'Toma una hora en bus.', note: '"hour" suena vocálico (h muda) → "an".' },
+    ],
+    contrast: [
+      { es: 'Me gusta la música.', en: 'I like music.', note: 'En sentido general no se usa "the". "I like the music" se referiría a una música concreta.' },
+      { es: 'Los perros son leales.', en: 'Dogs are loyal.', note: 'Plural general → sin artículo, aunque el español ponga "los".' },
+      { es: 'Hablo español.', en: 'I speak Spanish.', note: 'Los idiomas no llevan artículo en inglés.' },
+      { es: 'Es profesora.', en: 'She is a teacher.', note: 'Al revés que el español: la profesión en inglés SÍ lleva "a/an".' },
+      { es: 'Voy al colegio.', en: 'I go to school.', note: 'Lugares por su función (school, work, bed, home) → sin artículo.' },
     ],
     commonMistakes: [
-      { wrong: 'I have an dog.', right: 'I have a dog.', note: '"dog" empieza con sonido consonántico → a.' },
-      { wrong: 'She is a engineer.', right: 'She is an engineer.', note: '"engineer" empieza con sonido vocálico → an.' },
-      { wrong: 'I am a university student. → "an university"', right: 'a university', note: '"university" suena "yu-", consonántico → a.' },
+      { wrong: 'I like the music.', right: 'I like music.', note: 'En sentido general (gustos) no se usa "the".' },
+      { wrong: 'She is teacher.', right: 'She is a teacher.', note: 'Las profesiones en inglés necesitan "a/an".' },
+      { wrong: 'an university', right: 'a university', note: '"university" suena "yu-" (consonántico) → "a".' },
+      { wrong: 'a hour', right: 'an hour', note: 'La "h" es muda; el sonido es vocálico → "an".' },
+      { wrong: 'The dogs are nice. (en general)', right: 'Dogs are nice.', note: 'Plural genérico → sin artículo.' },
+      { wrong: 'I speak the English.', right: 'I speak English.', note: 'Los idiomas no llevan artículo.' },
     ],
-    tip: 'Truco: "an" va antes de SONIDO vocal, no de letra vocal. "An hour" (la h es muda), pero "a university" (suena "yu").',
+    tip: 'Tres reglas de oro: (1) a/an depende del SONIDO, no de la letra; (2) "the" para lo único o ya conocido; (3) NADA de artículo con plurales/incontables generales (I like music) ni con idiomas (I speak English).',
     questions: [
       { s: 'I have ___ dog.', opts: ['a', 'an', 'the'], a: 0, fb: '"A dog" — sonido consonántico (d-og). Usamos "a".' },
       { s: 'She eats ___ apple a day.', opts: ['a', 'an', 'the'], a: 1, fb: '"An apple" — sonido vocálico (a-pple). Usamos "an".' },
@@ -95,6 +168,12 @@ export const TOPICS: GrammarTopic[] = [
       { s: 'I need ___ umbrella.', opts: ['a', 'an', 'the'], a: 1, fb: '"An umbrella" — sonido vocálico (u-mbrella).' },
       { s: 'I study at ___ university.', opts: ['a', 'an', 'the'], a: 0, fb: '"A university" — suena "yu", sonido consonántico → "a".' },
       { s: '___ water in this lake is cold.', opts: ['A', 'An', 'The'], a: 2, fb: '"The water" — el agua específica de ese lago.' },
+      { s: 'I like ___ music. (en general)', opts: ['the', 'a', '— (nada)'], a: 2, fb: 'Gusto general → sin artículo.' },
+      { s: 'She is ___ doctor.', opts: ['a', 'the', '— (nada)'], a: 0, fb: 'Profesión → "a doctor".' },
+      { s: 'I speak ___ English.', opts: ['the', 'an', '— (nada)'], a: 2, fb: 'Los idiomas no llevan artículo.' },
+      { s: '___ dogs are loyal animals. (en general)', opts: ['The', 'A', '— (nada)'], a: 2, fb: 'Plural genérico → sin artículo.' },
+      { s: 'It takes ___ hour by bus.', opts: ['a', 'an', 'the'], a: 1, fb: '"hour" suena vocálico (h muda) → "an".' },
+      { s: '¿Cuál oración es CORRECTA?', opts: ['She is engineer.', 'She is an engineer.', 'She is a engineer.'], a: 1, fb: 'Profesión + sonido vocálico → "an engineer".' },
     ],
   },
   {
@@ -108,33 +187,98 @@ export const TOPICS: GrammarTopic[] = [
       'Explicación del verbo to be en inglés para principiantes: conjugación am/is/are, forma afirmativa, negativa y de pregunta, ejemplos traducidos, errores comunes y ejercicios. Nivel A1.',
     keywords: ['verbo to be explicación', 'to be en inglés', 'am is are', 'conjugación to be a1', 'verbo ser y estar en inglés'],
     intro: [
-      'El verbo "to be" significa "ser" Y "estar" — en inglés es un solo verbo para los dos. Es el verbo más importante del A1: se usa para nombre, nacionalidad, edad, profesión, estados de ánimo y descripciones.',
-      'Tiene tres formas en presente: "am" (solo con I), "is" (con he, she, it y sujetos en singular) y "are" (con you, we, they y sujetos en plural). En el habla diaria casi siempre se contrae: I am → I\'m, she is → she\'s, they are → they\'re.',
+      'El verbo "to be" es el más importante de todo el A1, y también el más rentable: una sola palabra inglesa hace el trabajo de dos verbos españoles, "ser" y "estar". Con él dices quién eres, de dónde vienes, tu edad, tu profesión, cómo te sientes, cómo es algo y dónde está. Si dominas "to be", ya puedes construir tus primeras decenas de frases.',
+      'Es un verbo irregular: en presente tiene tres formas distintas —am, is, are— mientras que casi todos los demás verbos ingleses tienen solo una o dos. La forma que elijas depende únicamente del sujeto, así que el primer paso es saber identificar el sujeto de la oración.',
+      'Para el hispanohablante hay dos trampas desde el primer día. La primera: en inglés el sujeto y el verbo NO se pueden omitir (no existe "I student", siempre "I am a student"). La segunda: la edad, el clima y estados como el hambre se expresan con "to be", no con "tener" ni "hacer". Las dos las vamos a fijar con ejemplos y ejercicios.',
     ],
-    table: {
-      caption: 'Conjugación de "to be" en presente',
-      headers: ['Sujeto', 'Forma', 'Contracción', 'Ejemplo'],
-      rows: [
-        ['I', 'am', "I'm", "I'm a student"],
-        ['You', 'are', "you're", "you're kind"],
-        ['He / She / It', 'is', "he's / she's / it's", "she's happy"],
-        ['We', 'are', "we're", "we're from Colombia"],
-        ['They', 'are', "they're", "they're friends"],
-      ],
-    },
+    sections: [
+      {
+        heading: 'Las tres formas y por qué',
+        body: [
+          '"am" es exclusiva del pronombre "I": es la única forma reservada a un solo sujeto. "is" se usa con la tercera persona del singular —he, she, it— y con cualquier sustantivo en singular (the coffee is hot, my brother is tall). "are" se usa con you, we, they y con cualquier sustantivo en plural (my parents are doctors).',
+          'Truco práctico: si puedes sustituir el sujeto por "he/she/it", usa "is"; si puedes sustituirlo por "they", usa "are". "The dog" → "it" → is. "My friends" → "they" → are.',
+        ],
+      },
+      {
+        heading: 'Contracciones: así suena de verdad',
+        body: [
+          'En la conversación y en la escritura informal, el nativo casi siempre contrae el verbo: I\'m, you\'re, he\'s, she\'s, it\'s, we\'re, they\'re. No usar la contracción no es un error, pero suena artificial y "de libro".',
+          'En negativo hay dos opciones: is not → isn\'t, are not → aren\'t. Para "I am not" la única contracción posible es "I\'m not" (NO existe "amn\'t"). Y ojo: "he\'s" puede significar "he is" o "he has"; lo aclara el contexto.',
+        ],
+      },
+      {
+        heading: 'Ser y estar: un solo verbo (tu gran ventaja)',
+        body: [
+          'En español sufres eligiendo entre "ser" y "estar"; en inglés ese problema desaparece. "Soy alto" y "estoy cansado" se dicen igual: I am tall / I am tired. Conclusión liberadora: cuando dudes entre ser y estar, en inglés siempre es "to be".',
+          'El reverso de la moneda: cosas que en español dices con otros verbos, en inglés van con "to be". La edad: "tengo 20 años" → I am 20 (years old). El clima: "hace frío" → it is cold. Y estados físicos: "tengo hambre/sed/miedo" → I am hungry / thirsty / afraid.',
+        ],
+      },
+      {
+        heading: 'Preguntas y respuestas cortas',
+        body: [
+          'Para preguntar con "to be" basta con poner el verbo delante del sujeto: Are you ready? Is she a teacher? Am I late? No se necesita ningún auxiliar como "do".',
+          'La respuesta corta reutiliza el mismo verbo: "Are you a student?" → "Yes, I am" / "No, I\'m not". "Is he your brother?" → "Yes, he is" / "No, he isn\'t". Nunca respondas solo "Yes" en un examen oral: completa con el verbo.',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Forma afirmativa',
+        headers: ['Sujeto', 'Forma', 'Contracción', 'Ejemplo'],
+        rows: [
+          ['I', 'am', "I'm", "I'm a student"],
+          ['You', 'are', "you're", "you're kind"],
+          ['He / She / It', 'is', "he's / she's / it's", "she's happy"],
+          ['We', 'are', "we're", "we're from Colombia"],
+          ['They', 'are', "they're", "they're friends"],
+        ],
+      },
+      {
+        caption: 'Forma negativa',
+        headers: ['Sujeto', 'Forma', 'Contracción', 'Ejemplo'],
+        rows: [
+          ['I', 'am not', "I'm not", "I'm not tired"],
+          ['He / She / It', 'is not', "isn't", "he isn't here"],
+          ['You / We / They', 'are not', "aren't", "we aren't ready"],
+        ],
+      },
+      {
+        caption: 'Preguntas y respuestas cortas',
+        headers: ['Pregunta', 'Respuesta afirmativa', 'Respuesta negativa'],
+        rows: [
+          ['Am I right?', 'Yes, you are.', "No, you aren't."],
+          ['Is she a doctor?', 'Yes, she is.', "No, she isn't."],
+          ['Are they ready?', 'Yes, they are.', "No, they aren't."],
+        ],
+      },
+    ],
     examples: [
-      { en: "I'm a teacher.", es: 'Soy profesor/a.' },
-      { en: 'She is very kind.', es: 'Ella es muy amable.' },
+      { en: "I'm a teacher and she's a nurse.", es: 'Soy profesor/a y ella es enfermera.' },
       { en: 'We are from Colombia.', es: 'Somos de Colombia.' },
-      { en: "He isn't at home.", es: 'Él no está en casa.' },
-      { en: 'Are you happy?', es: '¿Estás feliz?' },
+      { en: "He isn't at home right now.", es: 'Él no está en casa ahora mismo.', note: '"to be" también dice DÓNDE está algo (ubicación).' },
+      { en: 'Are you tired?', es: '¿Estás cansado/a?', note: 'Pregunta: el verbo va delante del sujeto.' },
+      { en: 'It is cold and windy today.', es: 'Hoy hace frío y viento.', note: 'El clima va con "it is", no con "hacer".' },
+      { en: 'I am 25 years old.', es: 'Tengo 25 años.', note: 'La edad va con "to be", nunca con "have".' },
+      { en: 'They are my best friends.', es: 'Son mis mejores amigos.' },
+      { en: "Yes, she is. / No, she isn't.", es: 'Sí (lo es). / No (no lo es).', note: 'La respuesta corta reutiliza el verbo "is".' },
+    ],
+    contrast: [
+      { es: 'Tengo 20 años.', en: 'I am 20 (years old).', note: 'La edad usa "to be", no "have". "I have 20 years" suena a que posees 20 años, no a tu edad.' },
+      { es: 'Hace frío.', en: 'It is cold.', note: 'El clima usa "it is" + adjetivo. No existe un verbo "hacer" para el tiempo en inglés.' },
+      { es: 'Estoy de acuerdo.', en: 'I agree.', note: '¡Cuidado! "agree" ya es un verbo. Decir "I am agree" es el error más típico del hispanohablante.' },
+      { es: 'Soy alto. / Estoy cansado.', en: 'I am tall. / I am tired.', note: 'El inglés no distingue ser/estar: ambos son "to be". Una preocupación menos.' },
+      { es: 'Tengo hambre.', en: 'I am hungry.', note: 'Hambre, sed y miedo son estados con "to be": I am hungry / thirsty / afraid.' },
     ],
     commonMistakes: [
-      { wrong: 'I have 20 years.', right: 'I am 20 years old.', note: 'La edad se dice con "to be", no con "have": I am... years old.' },
-      { wrong: 'She is have hungry.', right: 'She is hungry.', note: 'No mezcles dos verbos. Solo "is".' },
-      { wrong: 'They is friends.', right: 'They are friends.', note: 'Con they/we/you → are.' },
+      { wrong: 'I have 20 years.', right: 'I am 20 years old.', note: 'Transferencia del español "tener años". La edad en inglés se expresa con "to be".' },
+      { wrong: 'I am agree with you.', right: 'I agree with you.', note: '"agree" ya es verbo; no necesita "to be". Mismo caso: "I am understand" → "I understand".' },
+      { wrong: 'She nurse. / I student.', right: 'She is a nurse. / I am a student.', note: 'Nunca omitas el verbo "to be" ni el artículo "a/an" delante de la profesión.' },
+      { wrong: 'They is good friends.', right: 'They are good friends.', note: 'Con they/we/you → "are". Solo he/she/it y singulares llevan "is".' },
+      { wrong: 'Make cold today.', right: 'It is cold today.', note: 'El clima va con "it is" + adjetivo, no con un verbo tipo "hacer".' },
+      { wrong: 'He is have hungry.', right: 'He is hungry.', note: 'No juntes dos verbos. "tener hambre" = "to be hungry".' },
     ],
-    tip: 'Nemotecnia: "I am" = solo yo. "He/She/It is" = singular tercera persona. "We/You/They are" = todo lo demás plural.',
+    tip: 'Si dudas entre ser y estar, en inglés siempre es "to be". Y memoriza tres casos que NO usan have ni hacer: la edad (I am 20), el clima (it is cold) y el hambre (I am hungry).',
     questions: [
       { s: 'I ___ a student.', opts: ['am', 'is', 'are'], a: 0, fb: '"I am" — con "I" siempre usamos "am".' },
       { s: 'She ___ very kind.', opts: ['am', 'is', 'are'], a: 1, fb: '"She is" — con he/she/it usamos "is".' },
@@ -146,6 +290,12 @@ export const TOPICS: GrammarTopic[] = [
       { s: 'My parents ___ doctors.', opts: ['am', 'is', 'are'], a: 2, fb: '"Parents are" — sujeto plural → are.' },
       { s: 'I ___ not tired today.', opts: ['am', 'is', 'are'], a: 0, fb: '"I am not" — con "I" → am.' },
       { s: 'It ___ raining outside.', opts: ['am', 'is', 'are'], a: 1, fb: '"It is" — con it → is.' },
+      { s: 'She ___ a teacher; she is a nurse. (negativo)', opts: ["isn't", "aren't", "amn't"], a: 0, fb: 'Negativo de "is" → "isn\'t". Ojo: "amn\'t" no existe.' },
+      { s: 'We ___ ready yet. (negativo)', opts: ["isn't", "aren't", 'am not'], a: 1, fb: 'Con "we" → "aren\'t" (are not).' },
+      { s: '"Are you a student?" — "Yes, I ___."', opts: ['am', 'is', 'are'], a: 0, fb: 'Respuesta corta con "I" → "Yes, I am".' },
+      { s: '___ cold in Bogotá today. (clima)', opts: ['It is', 'I am', 'They are'], a: 0, fb: 'El clima va con "it is": "It is cold".' },
+      { s: '¿Cómo se dice "Tengo 30 años"?', opts: ['I have 30 years.', 'I am 30 years old.', 'I am 30 years.'], a: 1, fb: 'La edad: "I am 30 years old" (to be + número + years old).' },
+      { s: '¿Cuál oración es CORRECTA?', opts: ['I am agree with you.', 'I agree with you.', 'I am agree.'], a: 1, fb: '"agree" ya es verbo: "I agree", sin "to be".' },
     ],
   },
   {
@@ -446,30 +596,87 @@ export const TOPICS: GrammarTopic[] = [
       'El presente simple en inglés: la -s de la tercera persona, forma negativa con don\'t y doesn\'t. Explicación clara, tabla, ejemplos traducidos y ejercicios. Nivel A1.',
     keywords: ['present simple', 'presente simple inglés', 'don\'t doesn\'t', 'tercera persona s inglés', 'present simple a1'],
     intro: [
-      'El present simple describe rutinas, hábitos y verdades generales (I work, she studies). La regla más importante para hispanohablantes: con he, she, it el verbo lleva una -s al final (he works).',
-      'Para el negativo usamos don\'t (I/you/we/they) y doesn\'t (he/she/it) + el verbo en forma base. Importante: cuando aparece "doesn\'t", el verbo PIERDE la -s (She doesn\'t work, no "doesn\'t works").',
+      'El present simple es el tiempo verbal con el que hablas de tu vida: rutinas, hábitos, gustos y verdades generales (I work, she studies, water boils at 100°C). Es el primer tiempo que necesitas dominar porque lo usarás en casi todas tus frases del día a día.',
+      'Tiene una regla pequeña pero traicionera: con he, she, it (la tercera persona del singular) el verbo lleva una -s al final —he works, she studies—. Es la regla que más se olvida y la que más "delata" a un principiante.',
+      'En negativo se usan los auxiliares don\'t (con I, you, we, they) y doesn\'t (con he, she, it) seguidos del verbo en su forma base. La clave que vamos a machacar: cuando aparece "doesn\'t", el verbo PIERDE la -s.',
     ],
-    table: {
-      caption: 'Present simple — afirmativo y negativo',
-      headers: ['Sujeto', 'Afirmativo', 'Negativo'],
-      rows: [
-        ['I / you / we / they', 'work', "don't work"],
-        ['he / she / it', 'works (+s)', "doesn't work"],
-      ],
-    },
+    sections: [
+      {
+        heading: 'La -s de la tercera persona (lo que más se olvida)',
+        body: [
+          'Con he, she, it y cualquier sujeto singular, el verbo añade -s: I work → he works; they live → she lives. La mayoría solo añade -s, pero hay reglas de escritura: los verbos terminados en -s, -sh, -ch, -x, -o añaden -es (watch → watches, go → goes, do → does); los terminados en consonante + y cambian a -ies (study → studies, fly → flies).',
+          'Para el oído: esa -s se pronuncia de tres formas —/s/ en "works", /z/ en "plays" y /ɪz/ en "watches"—, pero al escribir basta con aplicar las reglas de arriba.',
+        ],
+      },
+      {
+        heading: "El negativo: don't y doesn't",
+        body: [
+          'La negación necesita un auxiliar: don\'t para I/you/we/they y doesn\'t para he/she/it. Y aquí está el punto de oro: "doesn\'t" ya se lleva la -s de la tercera persona, así que el verbo vuelve a su forma base. Se dice "She doesn\'t work", nunca "She doesn\'t works".',
+          'Otro reflejo a corregir: en español negamos con un simple "no + verbo" ("ella no come carne"). En inglés ese "no" suelto no funciona: necesitas doesn\'t/don\'t. "She no eat meat" → "She doesn\'t eat meat".',
+        ],
+      },
+      {
+        heading: 'Cuándo se usa (y cuándo NO)',
+        body: [
+          'Usa el present simple para hábitos y rutinas (I get up at 7), gustos (I like coffee), verdades y hechos (the Earth is round) y horarios (the train leaves at 9). Lo acompañan marcadores como every day, usually, always, on Mondays.',
+          'NO lo uses para una acción que ocurre en este momento: eso es el present continuous. "I work here" (rutina) frente a "I am working now" (ahora mismo).',
+        ],
+      },
+      {
+        heading: 'El presente español engaña',
+        body: [
+          'El presente español "trabajo" corresponde a DOS formas inglesas: "I work" (en general) e "I am working" (ahora mismo). El inglés las separa y el español no, así que no traduzcas "estoy trabajando" con present simple.',
+          'Regla rápida: si en la frase hay "ahora", "en este momento", "now" o "right now", casi seguro es present continuous, no present simple.',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'La -s de la tercera persona (escritura)',
+        headers: ['Terminación del verbo', 'Regla', 'Ejemplo'],
+        rows: [
+          ['general', '+ s', 'work → works'],
+          ['-s, -sh, -ch, -x, -o', '+ es', 'watch → watches, go → goes'],
+          ['consonante + y', 'y → ies', 'study → studies'],
+          ['vocal + y', '+ s', 'play → plays'],
+        ],
+      },
+      {
+        caption: 'Afirmativo y negativo',
+        headers: ['Sujeto', 'Afirmativo', 'Negativo'],
+        rows: [
+          ['I / you / we / they', 'work', "don't work"],
+          ['he / she / it', 'works (+s)', "doesn't work (sin -s)"],
+        ],
+      },
+    ],
     examples: [
       { en: 'I work in a bank.', es: 'Trabajo en un banco.' },
-      { en: 'She works in a bank.', es: 'Ella trabaja en un banco. (+s)' },
+      { en: 'She works in a bank.', es: 'Ella trabaja en un banco.', note: 'he/she/it → +s.' },
+      { en: 'He watches TV every night.', es: 'Él ve la tele cada noche.', note: 'termina en -ch → +es.' },
+      { en: 'My sister studies medicine.', es: 'Mi hermana estudia medicina.', note: 'consonante + y → ies.' },
       { en: "They don't eat meat.", es: 'Ellos no comen carne.' },
-      { en: "He doesn't speak French.", es: 'Él no habla francés.' },
-      { en: 'The sun rises in the east.', es: 'El sol sale por el este.' },
+      { en: "He doesn't speak French.", es: 'Él no habla francés.', note: "doesn't + verbo base (sin -s)." },
+      { en: 'The sun rises in the east.', es: 'El sol sale por el este.', note: 'verdad general.' },
+      { en: 'Water boils at 100 °C.', es: 'El agua hierve a 100 °C.' },
+    ],
+    contrast: [
+      { es: 'Ella trabaja en un banco.', en: 'She works in a bank.', note: 'Tercera persona del singular → el verbo lleva -s.' },
+      { es: 'No como carne.', en: "I don't eat meat.", note: 'La negación necesita "don\'t"; el "no" suelto del español no basta.' },
+      { es: 'Él no habla francés.', en: "He doesn't speak French.", note: '"doesn\'t" + verbo base, sin -s.' },
+      { es: 'Estudio inglés los lunes.', en: 'I study English on Mondays.', note: 'Rutina con marcador "on Mondays" → present simple.' },
+      { es: 'Estoy comiendo.', en: 'I am eating.', note: '¡Acción ahora mismo! NO es present simple, es present continuous.' },
     ],
     commonMistakes: [
       { wrong: 'She work here.', right: 'She works here.', note: 'Con he/she/it el verbo lleva -s.' },
-      { wrong: "He doesn't works.", right: "He doesn't work.", note: 'Con doesn\'t el verbo va en forma base, sin -s.' },
-      { wrong: "I doesn't like it.", right: "I don't like it.", note: 'Con I → don\'t, no doesn\'t.' },
+      { wrong: "He doesn't works.", right: "He doesn't work.", note: 'Con "doesn\'t" el verbo va en forma base, sin -s.' },
+      { wrong: "I doesn't like it.", right: "I don't like it.", note: 'Con I/you/we/they → "don\'t", no "doesn\'t".' },
+      { wrong: 'She no eat meat.', right: "She doesn't eat meat.", note: 'El "no + verbo" del español no funciona; usa "doesn\'t".' },
+      { wrong: 'He study English.', right: 'He studies English.', note: 'study → studies (consonante + y → ies).' },
+      { wrong: 'I am work every day.', right: 'I work every day.', note: 'La rutina va en present simple, sin "am". "am work" no existe.' },
     ],
-    tip: '"Doesn\'t" ya incluye la negación — el verbo vuelve a su forma base. No digas "She doesn\'t plays" sino "She doesn\'t play".',
+    tip: 'La -s de he/she/it es la regla más olvidada y la que más te delata. Y memoriza: en cuanto aparece don\'t/doesn\'t, el verbo SIEMPRE vuelve a su forma base (She doesn\'t work, no "works").',
     questions: [
       { s: 'She ___ to work every day.', opts: ['walk', 'walks', 'walking'], a: 1, fb: '"She walks" — con she/he/it añadimos -s.' },
       { s: 'They ___ in a big house.', opts: ['live', 'lives', 'is living'], a: 0, fb: '"They live" — con they usamos el verbo base sin -s.' },
@@ -480,6 +687,12 @@ export const TOPICS: GrammarTopic[] = [
       { s: 'She ___ speak Arabic. (negativo)', opts: ["don't", "doesn't", "isn't"], a: 1, fb: '"She doesn\'t speak" — con she → doesn\'t + verbo base.' },
       { s: 'It ___ snow in Cartagena. (negativo)', opts: ["don't", "doesn't", "isn't"], a: 1, fb: '"It doesn\'t snow" — con it → doesn\'t.' },
       { s: 'We ___ English on Mondays.', opts: ['studies', 'study', 'studys'], a: 1, fb: 'Con we → verbo base "study".' },
+      { s: 'He ___ TV every evening.', opts: ['watch', 'watchs', 'watches'], a: 2, fb: 'Termina en -ch → +es: "watches".' },
+      { s: 'My sister ___ medicine.', opts: ['studys', 'studies', 'study'], a: 1, fb: 'Consonante + y → ies: "studies".' },
+      { s: 'Water ___ at 100 °C.', opts: ['boil', 'boils', 'is boiling'], a: 1, fb: 'Verdad general, 3ª persona → "boils".' },
+      { s: 'Look! She ___ now. (acción ahora)', opts: ['runs', 'is running', 'run'], a: 1, fb: '"now" → present continuous: "is running", no present simple.' },
+      { s: '¿Cuál oración es CORRECTA?', opts: ['She no eat meat.', "She doesn't eat meat.", "She don't eats meat."], a: 1, fb: 'Negación → "doesn\'t" + verbo base.' },
+      { s: '¿Cómo se dice "Él no habla inglés"?', opts: ['He no speak English.', "He doesn't speak English.", "He doesn't speaks English."], a: 1, fb: '"He doesn\'t speak English" (verbo en forma base).' },
     ],
   },
   {

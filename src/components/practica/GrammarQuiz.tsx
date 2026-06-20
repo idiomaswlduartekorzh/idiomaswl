@@ -60,6 +60,7 @@ export default function GrammarQuiz({ questions, lang, level, skill, color }: Pr
           {questions.map((q, qi) => {
             const ans = answers[qi];
             const isDone = ans !== undefined;
+            const longOpts = q.opts.some(o => o.length > 16);
             return (
               <div key={qi} className="wl-card" style={{ padding: '1.25rem' }}>
                 <p style={{ margin: '0 0 0.85rem', fontSize: '1rem', fontWeight: 600, color: 'var(--ink)', lineHeight: 1.7 }}>
@@ -71,7 +72,7 @@ export default function GrammarQuiz({ questions, lang, level, skill, color }: Pr
                     )}</span>
                   ))}
                 </p>
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', flexDirection: longOpts ? 'column' : 'row' }}>
                   {q.opts.map((opt, oi) => {
                     const isCorrect = oi === q.a; const isSelected = ans === oi;
                     let bg = 'var(--bg-2)'; let border = `1px solid var(--line-soft)`; let color2 = 'var(--ink)';
@@ -79,8 +80,8 @@ export default function GrammarQuiz({ questions, lang, level, skill, color }: Pr
                     if (isDone && isSelected && !isCorrect) { bg = 'rgba(220,38,38,0.1)'; border = '1px solid #dc2626'; color2 = '#dc2626'; }
                     return (
                       <button key={oi} onClick={() => pick(qi, oi)} disabled={isDone}
-                        style={{ padding: '0.5rem 1.1rem', borderRadius: 8, fontSize: '0.92rem', fontWeight: 700, border, background: bg, color: color2, cursor: isDone ? 'default' : 'pointer', fontFamily: 'inherit', transition: 'all 0.15s' }}>
-                        {opt}
+                        style={{ padding: longOpts ? '0.6rem 0.9rem' : '0.5rem 1.1rem', borderRadius: 8, fontSize: '0.92rem', fontWeight: 700, border, background: bg, color: color2, cursor: isDone ? 'default' : 'pointer', fontFamily: 'inherit', transition: 'all 0.15s', textAlign: longOpts ? 'left' : 'center', width: longOpts ? '100%' : 'auto' }}>
+                        {longOpts && <span style={{ fontFamily: 'var(--mono)', fontSize: '0.75rem', opacity: 0.55, marginRight: '0.5rem' }}>{String.fromCharCode(65 + oi)}.</span>}{opt}
                       </button>
                     );
                   })}
