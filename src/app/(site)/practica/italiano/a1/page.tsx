@@ -12,7 +12,7 @@ const COLOR = '#009246';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Lettura', eng: 'Lectura', desc: '5 textos A1 con vocabulario clickeable. La vita di Sofia, la famiglia, la casa, il cibo, la scuola.', count: '5 textos · 25 preguntas', href: '/practica/italiano/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammatica', eng: 'Gramática', desc: 'Artículos (il/lo/la/i/gli/le), essere e avere, verbos -are/-ere/-ire, aggettivi, c\'è/ci sono.', count: '5 temas · 40+ ejercicios', href: '/practica/italiano/a1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Grammatica', eng: 'Gramática', desc: 'Los 15 temas del A1: artículos (il/lo/gli), essere, avere, verbos -are/-ere/-ire, negación, posesivos (il mio), preposiciones articuladas (al/nel/del), c\'è/ci sono y más. Con explicación, tablas y contraste español→italiano.', count: '15 temas · 200+ ejercicios', href: '/practica/italiano/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Scrittura', eng: 'Escritura', desc: '5 tareas guiadas con modelo: presentarsi, descrivere la famiglia, la casa, le attività e i gusti.', count: '5 prompts guiados', href: '/practica/italiano/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Espressione orale', eng: 'Expresión oral', desc: '12 frases de supervivencia en italiano con pronunciación detallada para hispanohablantes.', count: '12 frases esenciales', href: '/practica/italiano/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabolario', eng: 'Vocabulario', desc: '6 sets temáticos: la famiglia, i colori, il cibo, i giorni, il corpo, i numeri.', count: '6 sets · 60+ palabras', href: '/practica/italiano/a1/vocabulario' },

@@ -1,0 +1,1415 @@
+// Currículo de Gramática — Italiano A1
+// Cada tema es su propia URL indexable: /practica/italiano/a1/gramatica/<slug>
+// Profundidad de filólogo + contraste español↔italiano.
+
+import type { GrammarTopic } from './grammar-types';
+import { findTopic, topicNav } from './grammar-types';
+export { GRAMMAR_COLOR } from './grammar-types';
+export type { GQItem, GrammarTopic } from './grammar-types';
+
+export const TOPICS: GrammarTopic[] = [
+  {
+    slug: 'articulos-determinados',
+    order: 1,
+    title: 'Los artículos determinados en italiano (il, lo, l’, la, i, gli, le)',
+    shortTitle: 'Artículos determinados',
+    icon: '📘',
+    seoTitle: 'Artículos determinados en italiano (il, lo, la, i, gli, le): ejercicios | A1',
+    seoDescription:
+      'Los artículos determinados en italiano: il, lo, l’, la, i, gli, le. Cuándo usar "lo/gli" (s+consonante, z, gn, ps), plurales y diferencias con el español. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['artículos en italiano', 'il lo la i gli le', 'cuándo usar lo gli italiano', 'artículos determinados italiano a1'],
+    intro: [
+      'Los artículos determinados italianos (el/la/los/las) son más variados que en español porque dependen del SONIDO con que empieza la palabra siguiente, no solo del género. En masculino tienes tres formas: il, lo y l’; en femenino, la y l’.',
+      'La regla clave del masculino: usa "il" antes de la mayoría de consonantes (il libro), "lo" antes de s+consonante, z, gn, ps, x, y (lo studente, lo zaino, lo gnomo), y "l’" antes de vocal (l’amico). En femenino es más fácil: "la" ante consonante (la casa) y "l’" ante vocal (l’amica).',
+      'En plural, cada singular tiene su forma: il → i (i libri), lo/l’ → gli (gli studenti, gli amici), la/l’ → le (le case, le amiche). Donde el español dice siempre "los/las", el italiano elige entre i, gli y le.',
+    ],
+    sections: [
+      {
+        heading: 'Masculino: il, lo o l’ según el sonido',
+        body: [
+          '"il" ante consonante normal: il libro, il cane, il treno. "lo" ante s + consonante, z, gn, ps, x, y, pn: lo studente, lo zaino, lo psicologo, lo gnocco. "l’" ante vocal: l’amico, l’orso.',
+          'Es la misma lógica que en español con "a/an" del inglés: lo importante es el sonido inicial, no la letra suelta.',
+        ],
+      },
+      {
+        heading: 'Femenino y plurales',
+        body: [
+          'Femenino: "la" ante consonante (la donna, la macchina), "l’" ante vocal (l’amica, l’ora).',
+          'Plurales: il → i; lo y l’ (masc.) → gli; la y l’ (fem.) → le. Así: il libro → i libri; lo studente → gli studenti; l’amico → gli amici; la casa → le case; l’amica → le amiche.',
+        ],
+      },
+      {
+        heading: 'El contraste con el español',
+        body: [
+          'El español tiene solo el/la/los/las; el italiano reparte el masculino en il/lo/l’ y el plural en i/gli. Por eso "el estudiante" es "lo studente" (no "il studente") y "los amigos" es "gli amici" (no "i amici").',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Artículos determinados',
+        headers: ['', 'Singular', 'Plural', 'Ejemplo'],
+        rows: [
+          ['Masc. + consonante', 'il', 'i', 'il libro → i libri'],
+          ['Masc. + s+cons/z/gn/ps', 'lo', 'gli', 'lo studente → gli studenti'],
+          ['Masc. + vocal', 'l’', 'gli', 'l’amico → gli amici'],
+          ['Fem. + consonante', 'la', 'le', 'la casa → le case'],
+          ['Fem. + vocal', 'l’', 'le', 'l’amica → le amiche'],
+        ],
+      },
+      {
+        caption: '¿Cuándo "lo / gli"?',
+        headers: ['Antes de…', 'Ejemplo'],
+        rows: [
+          ['s + consonante', 'lo sport, lo studente'],
+          ['z', 'lo zaino, lo zio'],
+          ['gn, ps, x, y, pn', 'lo gnomo, lo psicologo'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'il libro è sul tavolo', es: 'el libro está sobre la mesa' },
+      { en: 'lo studente è bravo', es: 'el estudiante es bueno', note: 's+consonante → lo.' },
+      { en: 'l’amico di Marco', es: 'el amigo de Marco', note: 'ante vocal → l’.' },
+      { en: 'gli amici sono qui', es: 'los amigos están aquí', note: 'plural de lo/l’ → gli.' },
+      { en: 'le case sono grandi', es: 'las casas son grandes', note: 'fem. plural → le.' },
+      { en: 'lo zaino è nuovo', es: 'la mochila es nueva', note: 'ante z → lo.' },
+    ],
+    contrast: [
+      { es: 'el estudiante', en: 'lo studente', note: 's+consonante → "lo", no "il".' },
+      { es: 'los amigos', en: 'gli amici', note: 'plural de l’ → "gli".' },
+      { es: 'la mochila', en: 'lo zaino', note: '"zaino" empieza por z → "lo".' },
+      { es: 'la amiga', en: 'l’amica', note: 'fem. ante vocal → "l’".' },
+      { es: 'los libros', en: 'i libri', note: 'plural de "il" → "i".' },
+    ],
+    commonMistakes: [
+      { wrong: 'il studente', right: 'lo studente', note: 's+consonante → "lo".' },
+      { wrong: 'i amici', right: 'gli amici', note: 'plural ante vocal → "gli".' },
+      { wrong: 'lo libro', right: 'il libro', note: 'consonante normal → "il".' },
+      { wrong: 'la amica', right: 'l’amica', note: 'fem. ante vocal → "l’".' },
+      { wrong: 'il zaino', right: 'lo zaino', note: 'ante z → "lo".' },
+    ],
+    tip: 'Masculino: "il" (consonante), "lo" (s+cons, z, gn, ps), "l’" (vocal). Plural: il→i, lo/l’→gli, la/l’→le. El sonido manda, no la letra.',
+    questions: [
+      { s: '___ libro è interessante.', opts: ['il', 'lo', 'l’', 'la'], a: 0, fb: 'Consonante normal → "il".' },
+      { s: '___ studente studia molto.', opts: ['il', 'lo', 'l’', 'la'], a: 1, fb: 's+consonante → "lo".' },
+      { s: '___ amico di Marco.', opts: ['il', 'lo', 'l’', 'la'], a: 2, fb: 'Ante vocal → "l’".' },
+      { s: '___ casa è grande.', opts: ['il', 'lo', 'l’', 'la'], a: 3, fb: 'Fem. + consonante → "la".' },
+      { s: '___ zaino è nuovo.', opts: ['il', 'lo', 'l’', 'la'], a: 1, fb: 'Ante z → "lo".' },
+      { s: 'Plural de "il libro": ___ libri.', opts: ['i', 'gli', 'le', 'lo'], a: 0, fb: 'il → "i".' },
+      { s: 'Plural de "lo studente": ___ studenti.', opts: ['i', 'gli', 'le', 'lo'], a: 1, fb: 'lo → "gli".' },
+      { s: 'Plural de "l’amico": ___ amici.', opts: ['i', 'gli', 'le', 'l’'], a: 1, fb: 'l’ (masc.) → "gli".' },
+      { s: 'Plural de "la casa": ___ case.', opts: ['i', 'gli', 'le', 'la'], a: 2, fb: 'la → "le".' },
+      { s: '___ amica è gentile.', opts: ['il', 'lo', 'l’', 'la'], a: 2, fb: 'Fem. ante vocal → "l’".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['il studente', 'lo studente', 'l’studente'], a: 1, fb: 's+consonante → "lo studente".' },
+      { s: '¿Cómo se dice "los amigos"?', opts: ['i amici', 'gli amici', 'le amici'], a: 1, fb: 'plural ante vocal → "gli amici".' },
+      { s: '___ psicologo lavora qui.', opts: ['il', 'lo', 'l’'], a: 1, fb: 'ps → "lo".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['la amica', 'l’amica', 'lo amica'], a: 1, fb: 'fem. ante vocal → "l’amica".' },
+    ],
+  },
+  {
+    slug: 'articulos-indeterminados',
+    order: 2,
+    title: 'Los artículos indeterminados en italiano (un, uno, una, un’)',
+    shortTitle: 'Artículos indeterminados',
+    icon: '📙',
+    seoTitle: 'Artículos indeterminados en italiano (un, uno, una, un’): ejercicios | A1',
+    seoDescription:
+      'Los artículos indeterminados en italiano: un, uno, una, un’. Cuándo usar "uno", el apóstrofo de "un’" en femenino y diferencias con el español. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['artículos indeterminados italiano', 'un uno una', 'un apostrofo italiano', 'un uno diferencia a1'],
+    intro: [
+      'Los artículos indeterminados (un/una) siguen la misma lógica de sonido que los determinados. En masculino: "un" para casi todo (un libro, un amico), y "uno" antes de s+consonante, z, gn, ps (uno studente, uno zaino). En femenino: "una" ante consonante (una casa) y "un’" ante vocal (un’amica).',
+      'Detalle que confunde a todos: en masculino, "un amico" NO lleva apóstrofo (un + vocal va junto sin apóstrofo); en femenino, "un’amica" SÍ lleva apóstrofo. El apóstrofo marca el femenino ante vocal.',
+      'Frente al español (un/una), el italiano añade "uno" para esas palabras "difíciles" (s+consonante, z…), igual que el determinado usaba "lo".',
+    ],
+    sections: [
+      {
+        heading: 'Masculino: un o uno',
+        body: [
+          '"un" ante vocal o consonante normal: un libro, un cane, un amico (¡sin apóstrofo!). "uno" ante s+consonante, z, gn, ps: uno studente, uno zaino, uno psicologo.',
+          'Regla rápida: si el determinado pedía "lo", el indeterminado pide "uno".',
+        ],
+      },
+      {
+        heading: 'Femenino: una o un’',
+        body: [
+          '"una" ante consonante: una casa, una macchina. "un’" ante vocal: un’amica, un’ora. El apóstrofo es obligatorio y solo aparece en femenino.',
+        ],
+      },
+      {
+        heading: 'El apóstrofo distingue el género ante vocal',
+        body: [
+          'Ante vocal, "un amico" (masc., sin apóstrofo) y "un’amica" (fem., con apóstrofo) se diferencian justo por ese apóstrofo. Es una pista escrita del género.',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Artículos indeterminados',
+        headers: ['', 'Forma', 'Ejemplo'],
+        rows: [
+          ['Masc. normal/vocal', 'un', 'un libro, un amico'],
+          ['Masc. + s+cons/z/gn/ps', 'uno', 'uno studente, uno zaino'],
+          ['Fem. + consonante', 'una', 'una casa'],
+          ['Fem. + vocal', 'un’', 'un’amica'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Ho un libro.', es: 'Tengo un libro.' },
+      { en: 'C’è uno studente.', es: 'Hay un estudiante.', note: 's+consonante → uno.' },
+      { en: 'Ho un amico italiano.', es: 'Tengo un amigo italiano.', note: 'masc. + vocal → "un" SIN apóstrofo.' },
+      { en: 'È un’amica di Maria.', es: 'Es una amiga de María.', note: 'fem. + vocal → "un’" con apóstrofo.' },
+      { en: 'Compro una macchina.', es: 'Compro un carro.' },
+      { en: 'Uno zaino nuovo.', es: 'Una mochila nueva.', note: 'ante z → uno.' },
+    ],
+    contrast: [
+      { es: 'un estudiante', en: 'uno studente', note: 's+consonante → "uno".' },
+      { es: 'un amigo', en: 'un amico', note: 'masc. + vocal → "un" SIN apóstrofo.' },
+      { es: 'una amiga', en: 'un’amica', note: 'fem. + vocal → "un’" con apóstrofo.' },
+      { es: 'una mochila', en: 'uno zaino', note: '"zaino" empieza por z → "uno".' },
+      { es: 'un carro', en: 'una macchina', note: '"macchina" es femenino.' },
+    ],
+    commonMistakes: [
+      { wrong: 'un studente', right: 'uno studente', note: 's+consonante → "uno".' },
+      { wrong: 'un’amico', right: 'un amico', note: 'Masculino NO lleva apóstrofo.' },
+      { wrong: 'una amica', right: 'un’amica', note: 'Femenino ante vocal → "un’".' },
+      { wrong: 'un zaino', right: 'uno zaino', note: 'Ante z → "uno".' },
+      { wrong: 'uno libro', right: 'un libro', note: 'Consonante normal → "un".' },
+    ],
+    tip: 'Masculino: "un" (normal/vocal, sin apóstrofo) y "uno" (s+cons, z, gn, ps). Femenino: "una" (consonante) y "un’" (vocal, con apóstrofo). El apóstrofo solo en femenino.',
+    questions: [
+      { s: 'Ho ___ libro.', opts: ['un', 'uno', 'una', 'un’'], a: 0, fb: 'Consonante normal → "un".' },
+      { s: 'C’è ___ studente.', opts: ['un', 'uno', 'una', 'un’'], a: 1, fb: 's+consonante → "uno".' },
+      { s: 'Ho ___ amico. (masc.)', opts: ['un', 'uno', 'un’'], a: 0, fb: 'Masc. + vocal → "un" sin apóstrofo.' },
+      { s: 'È ___ amica. (fem.)', opts: ['un', 'uno', 'un’'], a: 2, fb: 'Fem. + vocal → "un’".' },
+      { s: 'Compro ___ macchina.', opts: ['un', 'uno', 'una'], a: 2, fb: 'Fem. + consonante → "una".' },
+      { s: '___ zaino nuovo.', opts: ['un', 'uno', 'una'], a: 1, fb: 'Ante z → "uno".' },
+      { s: '___ ora, per favore. (fem., vocal)', opts: ['un', 'una', 'un’'], a: 2, fb: 'Fem. + vocal → "un’ora".' },
+      { s: '___ cane grande.', opts: ['un', 'uno', 'una'], a: 0, fb: 'Consonante → "un".' },
+      { s: '___ psicologo famoso.', opts: ['un', 'uno', 'una'], a: 1, fb: 'ps → "uno".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['un studente', 'uno studente', 'una studente'], a: 1, fb: 's+consonante → "uno".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['un’amico', 'un amico', 'uno amico'], a: 1, fb: 'Masculino sin apóstrofo → "un amico".' },
+      { s: '¿Cómo se dice "una amiga"?', opts: ['una amica', 'un’amica', 'un amica'], a: 1, fb: 'Fem. + vocal → "un’amica".' },
+      { s: '___ donna gentile.', opts: ['un', 'una', 'un’'], a: 1, fb: 'Fem. + consonante → "una".' },
+      { s: '___ gnomo nel giardino.', opts: ['un', 'uno', 'una'], a: 1, fb: 'gn → "uno".' },
+    ],
+  },
+  {
+    slug: 'genero-numero-nombres',
+    order: 3,
+    title: 'El género y el plural de los nombres en italiano',
+    shortTitle: 'Género y plural de los nombres',
+    icon: '🔢',
+    seoTitle: 'Género y plural de los nombres en italiano (-o → -i, -a → -e): ejercicios | A1',
+    seoDescription:
+      'Cómo formar el plural en italiano cambiando la vocal final: -o → -i, -a → -e, -e → -i. Nombres invariables y casos especiales. Diferencias con el español. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['plural en italiano', 'genero numero nombres italiano', '-o -i -a -e italiano', 'plural italiano a1'],
+    intro: [
+      'En italiano el plural NO se forma añadiendo -s como en español, sino CAMBIANDO la vocal final del nombre. Es la diferencia que más cuesta automatizar: "un gatto" → "due gatti", "una casa" → "due case".',
+      'Las tres reglas básicas: los nombres en -o (casi siempre masculinos) hacen el plural en -i (libro → libri); los nombres en -a (casi siempre femeninos) lo hacen en -e (casa → case); y los nombres en -e (masculinos o femeninos) lo hacen en -i (cane → cani, chiave → chiavi).',
+      'Hay nombres invariables que no cambian en plural: los terminados en vocal acentuada (la città → le città), en consonante (lo sport → gli sport) y los abreviados (il cinema → i cinema). El plural se reconoce solo por el artículo.',
+    ],
+    sections: [
+      {
+        heading: 'Las tres reglas de la vocal final',
+        body: [
+          '-o → -i: il libro → i libri, il gatto → i gatti. -a → -e: la casa → le case, la ragazza → le ragazze. -e → -i: il cane → i cani, la chiave → le chiavi.',
+          'Como ves, la terminación -i sirve tanto para masculinos en -o como para nombres en -e: por eso el artículo (i, gli, le) es clave para saber el género.',
+        ],
+      },
+      {
+        heading: 'Nombres invariables',
+        body: [
+          'No cambian en plural: vocal acentuada (la città → le città, il caffè → i caffè), consonante final (il bar → i bar, lo sport → gli sport) y palabras abreviadas (la foto → le foto, il cinema → i cinema).',
+        ],
+      },
+      {
+        heading: 'Casos especiales de escritura',
+        body: [
+          'Los nombres en -co/-go pueden hacer -chi/-ghi (parco → parchi) o -ci/-gi (amico → amici, exception). Los en -ca/-ga hacen -che/-ghe (amica → amiche, riga → righe). Conviene aprenderlos con su plural.',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Las reglas del plural',
+        headers: ['Terminación', 'Plural', 'Ejemplo'],
+        rows: [
+          ['-o (masc.)', '-i', 'libro → libri'],
+          ['-a (fem.)', '-e', 'casa → case'],
+          ['-e (m./f.)', '-i', 'cane → cani'],
+          ['vocal acentuada', 'invariable', 'città → città'],
+          ['consonante', 'invariable', 'sport → sport'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'un libro → due libri', es: 'un libro → dos libros', note: '-o → -i.' },
+      { en: 'una casa → due case', es: 'una casa → dos casas', note: '-a → -e.' },
+      { en: 'un cane → due cani', es: 'un perro → dos perros', note: '-e → -i.' },
+      { en: 'la città → le città', es: 'la ciudad → las ciudades', note: 'acentuada → invariable.' },
+      { en: 'un’amica → due amiche', es: 'una amiga → dos amigas', note: '-ca → -che.' },
+      { en: 'il caffè → i caffè', es: 'el café → los cafés', note: 'invariable.' },
+    ],
+    contrast: [
+      { es: 'dos libros', en: 'due libri', note: 'el plural cambia la vocal: -o → -i.' },
+      { es: 'dos casas', en: 'due case', note: '-a → -e (no "casas").' },
+      { es: 'dos perros', en: 'due cani', note: '-e → -i.' },
+      { es: 'las ciudades', en: 'le città', note: 'acentuada → invariable; el plural se oye en "le".' },
+      { es: 'dos amigas', en: 'due amiche', note: '-ca → -che (se mantiene el sonido duro).' },
+    ],
+    commonMistakes: [
+      { wrong: 'due libros', right: 'due libri', note: 'El plural italiano no usa -s: -o → -i.' },
+      { wrong: 'due casas', right: 'due case', note: '-a → -e.' },
+      { wrong: 'le cittàs', right: 'le città', note: 'Acentuada → invariable.' },
+      { wrong: 'due amice', right: 'due amiche', note: '-ca → -che (con h).' },
+      { wrong: 'due cane', right: 'due cani', note: '-e → -i.' },
+    ],
+    tip: 'El plural italiano cambia la vocal: -o → -i, -a → -e, -e → -i. Nunca -s. Las palabras acentuadas (città) o en consonante (sport) no cambian.',
+    questions: [
+      { s: 'Plural de "libro": due ___.', opts: ['libri', 'libre', 'libros'], a: 0, fb: '-o → -i: "libri".' },
+      { s: 'Plural de "casa": due ___.', opts: ['casi', 'case', 'casas'], a: 1, fb: '-a → -e: "case".' },
+      { s: 'Plural de "cane": due ___.', opts: ['cane', 'cani', 'cane'], a: 1, fb: '-e → -i: "cani".' },
+      { s: 'Plural de "città": le ___.', opts: ['città', 'cittàe', 'cittài'], a: 0, fb: 'Acentuada → invariable.' },
+      { s: 'Plural de "ragazza": due ___.', opts: ['ragazze', 'ragazzi', 'ragazzas'], a: 0, fb: '-a → -e: "ragazze".' },
+      { s: 'Plural de "studente": gli ___.', opts: ['studente', 'studenti', 'studentes'], a: 1, fb: '-e → -i: "studenti".' },
+      { s: 'Plural de "amica": due ___.', opts: ['amice', 'amiche', 'amicas'], a: 1, fb: '-ca → -che: "amiche".' },
+      { s: 'Plural de "caffè": i ___.', opts: ['caffè', 'caffèi', 'caffès'], a: 0, fb: 'Invariable.' },
+      { s: 'Plural de "sport": gli ___.', opts: ['sporti', 'sport', 'sports'], a: 1, fb: 'Consonante → invariable.' },
+      { s: 'Plural de "chiave": le ___.', opts: ['chiave', 'chiavi', 'chiaves'], a: 1, fb: '-e → -i: "chiavi".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['due libros', 'due libri', 'due libre'], a: 1, fb: '-o → -i.' },
+      { s: '¿Cómo se dice "dos casas"?', opts: ['due casas', 'due case', 'due casi'], a: 1, fb: '-a → -e: "due case".' },
+      { s: 'Plural de "parco": i ___.', opts: ['parci', 'parchi', 'parcos'], a: 1, fb: '-co → -chi: "parchi".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['le cittàs', 'le città', 'le cittài'], a: 1, fb: 'Acentuada → invariable.' },
+    ],
+  },
+  {
+    slug: 'verbo-essere',
+    order: 4,
+    title: 'El verbo essere (ser/estar) en presente',
+    shortTitle: 'Verbo essere (ser/estar)',
+    icon: '⚡',
+    seoTitle: 'Verbo essere en italiano (ser/estar): conjugación y ejercicios | A1',
+    seoDescription:
+      'El verbo essere en italiano: conjugación (io sono, tu sei, lui è…), usos para identidad, nacionalidad y estado, y la diferencia con "stare". Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['verbo essere', 'essere conjugación', 'ser y estar en italiano', 'io sono tu sei lui è a1'],
+    intro: [
+      '"essere" significa "ser" y, en muchos casos, "estar": es el verbo más importante del italiano. Sirve para la identidad, la nacionalidad, la profesión, el estado y la ubicación: "Sono italiano", "Sono a casa".',
+      'Es irregular y hay que memorizarlo: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono. Atención a "è" con acento grave: NO es lo mismo que "e" (que significa "y").',
+      'Detalle importante: para el estado de salud y el progresivo, el italiano usa "stare", no "essere": "Come stai? — Sto bene." Pero para describir (soy/estoy alto, cansado, en casa) se usa "essere".',
+    ],
+    sections: [
+      {
+        heading: 'Conjugación (memorízala)',
+        body: [
+          'io sono · tu sei · lui/lei è · noi siamo · voi siete · loro sono. Fíjate en que "io sono" y "loro sono" comparten forma; el contexto y el pronombre los distinguen.',
+          'Cuidado con la tilde: "è" (es) lleva acento; "e" sin acento significa "y".',
+        ],
+      },
+      {
+        heading: 'Usos principales',
+        body: [
+          'Identidad/nacionalidad: "Sono Maria", "Siamo spagnoli". Profesión: "È medico" (sin artículo). Estado y descripción: "Sei stanco?". Ubicación: "Sono a Roma".',
+        ],
+      },
+      {
+        heading: 'essere o stare',
+        body: [
+          'Para la salud y el "¿cómo estás?", se usa "stare": "Come stai? — Sto bene / Sto male." Para casi todo lo demás (descripción, identidad, ubicación), "essere".',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'essere al presente',
+        headers: ['Pronombre', 'Forma', 'Ejemplo'],
+        rows: [
+          ['io', 'sono', 'io sono studente'],
+          ['tu', 'sei', 'tu sei gentile'],
+          ['lui / lei', 'è', 'lei è italiana'],
+          ['noi', 'siamo', 'noi siamo amici'],
+          ['voi', 'siete', 'voi siete pronti'],
+          ['loro', 'sono', 'loro sono a Roma'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Sono italiano.', es: 'Soy italiano.', note: 'el sujeto "io" se puede omitir, como en español.' },
+      { en: 'Lei è medico.', es: 'Ella es médica.', note: 'profesión sin artículo.' },
+      { en: 'Siamo stanchi.', es: 'Estamos cansados.', note: 'essere = ser/estar.' },
+      { en: 'Sei pronto?', es: '¿Estás listo?' },
+      { en: 'Loro sono a Roma.', es: 'Ellos están en Roma.' },
+      { en: 'Come stai? Sto bene.', es: '¿Cómo estás? Estoy bien.', note: 'la salud va con "stare".' },
+    ],
+    contrast: [
+      { es: 'Soy alto.', en: 'Sono alto.', note: 'essere = ser.' },
+      { es: 'Estoy cansado.', en: 'Sono stanco.', note: 'el mismo verbo "essere" = estar.' },
+      { es: 'Es médica.', en: 'È medico.', note: 'la profesión va sin artículo.' },
+      { es: '¿Cómo estás?', en: 'Come stai?', note: 'la salud usa "stare", no "essere".' },
+      { es: 'Somos amigos.', en: 'Siamo amici.', note: 'con "noi" → "siamo".' },
+    ],
+    commonMistakes: [
+      { wrong: 'Io è studente.', right: 'Io sono studente.', note: 'Con "io" → "sono".' },
+      { wrong: 'Lei è un medico.', right: 'Lei è medico.', note: 'La profesión va sin artículo.' },
+      { wrong: 'Come sei? (salud)', right: 'Come stai?', note: 'La salud va con "stare".' },
+      { wrong: 'Lui e italiano.', right: 'Lui è italiano.', note: '"è" lleva acento; "e" = y.' },
+      { wrong: 'Loro siamo amici.', right: 'Loro sono amici.', note: 'Con "loro" → "sono".' },
+    ],
+    tip: '"essere" = ser/estar: io sono, tu sei, lui è, noi siamo, voi siete, loro sono. La salud usa "stare" (Come stai?). Y "è" lleva acento (≠ "e" = y).',
+    questions: [
+      { s: 'Io ___ studente.', opts: ['sono', 'sei', 'è', 'siamo'], a: 0, fb: 'Con "io" → "sono".' },
+      { s: 'Tu ___ italiano?', opts: ['sono', 'sei', 'è', 'siete'], a: 1, fb: 'Con "tu" → "sei".' },
+      { s: 'Lei ___ medico.', opts: ['sono', 'sei', 'è', 'sono'], a: 2, fb: 'Con "lui/lei" → "è".' },
+      { s: 'Noi ___ amici.', opts: ['siamo', 'siete', 'sono', 'sei'], a: 0, fb: 'Con "noi" → "siamo".' },
+      { s: 'Voi ___ pronti?', opts: ['siamo', 'siete', 'sono', 'sei'], a: 1, fb: 'Con "voi" → "siete".' },
+      { s: 'Loro ___ a Roma.', opts: ['siamo', 'siete', 'sono', 'sei'], a: 2, fb: 'Con "loro" → "sono".' },
+      { s: 'Lei ___ molto gentile.', opts: ['sono', 'sei', 'è'], a: 2, fb: 'Con "lei" → "è".' },
+      { s: 'Come ___? (salud)', opts: ['sei', 'stai', 'è'], a: 1, fb: 'La salud → "stai" (stare).' },
+      { s: '— Sto ___. (bien)', opts: ['bene', 'sono', 'siamo'], a: 0, fb: '"Sto bene".' },
+      { s: 'Noi ___ spagnoli.', opts: ['sono', 'siamo', 'siete'], a: 1, fb: 'Con "noi" → "siamo".' },
+      { s: '¿Cómo se dice "Ella es médica"?', opts: ['Lei è un medico.', 'Lei è medico.', 'Lei ha medico.'], a: 1, fb: 'Profesión sin artículo → "Lei è medico".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Io è stanco.', 'Io sono stanco.', 'Io sei stanco.'], a: 1, fb: 'Con "io" → "sono".' },
+      { s: 'Tu ___ pronto?', opts: ['sono', 'sei', 'è'], a: 1, fb: 'Con "tu" → "sei".' },
+      { s: '¿Cómo se dice "Estoy cansado"?', opts: ['Sono stanco.', 'Ho stanco.', 'Sto stanco.'], a: 0, fb: 'Descripción → "Sono stanco".' },
+    ],
+  },
+  {
+    slug: 'verbo-avere',
+    order: 5,
+    title: 'El verbo avere (tener) en presente',
+    shortTitle: 'Verbo avere (tener)',
+    icon: '🔑',
+    seoTitle: 'Verbo avere en italiano (tener): conjugación, la edad y ejercicios | A1',
+    seoDescription:
+      'El verbo avere en italiano: conjugación (ho, hai, ha…), expresar la edad (ho vent’anni), tener hambre/sed/miedo y ejercicios. La "h" muda. Como el español "tener". Nivel A1.',
+    keywords: ['verbo avere', 'avere conjugación', 'tener en italiano', 'ho vent’anni edad italiano a1'],
+    intro: [
+      '"avere" significa "tener" y es, junto a "essere", el verbo clave del italiano. Sirve para la posesión (Ho una macchina), la familia (Ho due fratelli) y muchas expresiones de estado.',
+      'Su conjugación es irregular y empieza por una "h" que NO se pronuncia: io ho, tu hai, lui/lei ha, noi abbiamo, voi avete, loro hanno. Esa "h" es solo ortográfica; sirve para distinguir "ho" (tengo) de "o" (o) y "ha" (tiene) de "a" (a/en).',
+      'Buena noticia para el hispanohablante: como en español, la EDAD se dice con "tener": "Ho vent’anni" = "Tengo veinte años". También con hambre, sed, miedo, frío y calor se usa "avere".',
+    ],
+    sections: [
+      {
+        heading: 'Conjugación y la "h" muda',
+        body: [
+          'io ho · tu hai · lui/lei ha · noi abbiamo · voi avete · loro hanno. La "h" no se pronuncia: "ho" suena "o", "hanno" suena "anno".',
+          'Sirve para diferenciar por escrito: ho/o, hai/ai, ha/a, hanno/anno. Es ortografía, no sonido.',
+        ],
+      },
+      {
+        heading: 'La edad y las expresiones con avere',
+        body: [
+          'La edad: "Quanti anni hai? — Ho trent’anni." Nunca con "essere".',
+          'Estados con "avere": avere fame (tener hambre), avere sete (sed), avere paura (miedo), avere freddo/caldo (frío/calor), avere bisogno di (necesitar).',
+        ],
+      },
+      {
+        heading: 'avere o essere',
+        body: [
+          'Usa "avere" para lo que TIENES (posesión, edad, hambre): "Ho una sorella", "Ho fame". Usa "essere" para lo que ERES o tu estado descriptivo: "Sono alto", "Sono contento".',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'avere al presente',
+        headers: ['Pronombre', 'Forma', 'Ejemplo'],
+        rows: [
+          ['io', 'ho', 'io ho un gatto'],
+          ['tu', 'hai', 'tu hai ragione'],
+          ['lui / lei', 'ha', 'lei ha vent’anni'],
+          ['noi', 'abbiamo', 'noi abbiamo fame'],
+          ['voi', 'avete', 'voi avete tempo'],
+          ['loro', 'hanno', 'loro hanno una casa'],
+        ],
+      },
+      {
+        caption: 'Expresiones con avere',
+        headers: ['Italiano', 'Español'],
+        rows: [
+          ['avere … anni', 'tener … años'],
+          ['avere fame / sete', 'tener hambre / sed'],
+          ['avere paura', 'tener miedo'],
+          ['avere bisogno di', 'necesitar'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Ho vent’anni.', es: 'Tengo veinte años.', note: 'la edad con "avere", como en español.' },
+      { en: 'Lei ha due figli.', es: 'Ella tiene dos hijos.' },
+      { en: 'Abbiamo fame.', es: 'Tenemos hambre.', note: '"avere fame".' },
+      { en: 'Loro hanno una bella casa.', es: 'Tienen una casa bonita.' },
+      { en: 'Hai ragione.', es: 'Tienes razón.' },
+      { en: 'Non ho paura.', es: 'No tengo miedo.', note: 'negación con "non".' },
+    ],
+    contrast: [
+      { es: 'Tengo 20 años.', en: 'Ho vent’anni.', note: 'la edad con "avere" (como en español).' },
+      { es: 'Tengo hambre.', en: 'Ho fame.', note: 'estado físico con "avere".' },
+      { es: 'Tienes razón.', en: 'Hai ragione.', note: 'expresión fija con avere.' },
+      { es: 'Necesito ayuda.', en: 'Ho bisogno di aiuto.', note: 'necesitar = "avere bisogno di".' },
+      { es: 'Tienen una casa.', en: 'Hanno una casa.', note: 'con "loro" → "hanno".' },
+    ],
+    commonMistakes: [
+      { wrong: 'Io o un gatto.', right: 'Io ho un gatto.', note: 'Es "ho" con "h" (≠ "o" = o).' },
+      { wrong: 'Sono vent’anni.', right: 'Ho vent’anni.', note: 'La edad va con "avere", no "essere".' },
+      { wrong: 'Lei hanno due figli.', right: 'Lei ha due figli.', note: 'Con "lei" → "ha".' },
+      { wrong: 'Noi hanno fame.', right: 'Noi abbiamo fame.', note: 'Con "noi" → "abbiamo".' },
+      { wrong: 'Sono fame.', right: 'Ho fame.', note: '"tener hambre" va con avere.' },
+    ],
+    tip: '"avere" = tener: ho, hai, ha, abbiamo, avete, hanno. La "h" no se pronuncia. Y como en español, la edad va con "avere": "Ho 20 anni".',
+    questions: [
+      { s: 'Io ___ un gatto.', opts: ['ho', 'hai', 'ha', 'abbiamo'], a: 0, fb: 'Con "io" → "ho".' },
+      { s: 'Tu ___ ragione.', opts: ['ho', 'hai', 'ha', 'avete'], a: 1, fb: 'Con "tu" → "hai".' },
+      { s: 'Lei ___ vent’anni.', opts: ['ho', 'hai', 'ha', 'hanno'], a: 2, fb: 'Con "lui/lei" → "ha".' },
+      { s: 'Noi ___ fame.', opts: ['abbiamo', 'avete', 'hanno', 'hai'], a: 0, fb: 'Con "noi" → "abbiamo".' },
+      { s: 'Voi ___ tempo?', opts: ['abbiamo', 'avete', 'hanno', 'hai'], a: 1, fb: 'Con "voi" → "avete".' },
+      { s: 'Loro ___ paura.', opts: ['abbiamo', 'avete', 'hanno', 'ha'], a: 2, fb: 'Con "loro" → "hanno".' },
+      { s: 'Tu ___ sete?', opts: ['ho', 'hai', 'ha'], a: 1, fb: '"avere sete" → con "tu" → "hai".' },
+      { s: 'Lei ___ bisogno di aiuto.', opts: ['ho', 'hai', 'ha'], a: 2, fb: 'Con "lei" → "ha".' },
+      { s: 'Loro ___ molto lavoro.', opts: ['abbiamo', 'avete', 'hanno'], a: 2, fb: 'Con "loro" → "hanno".' },
+      { s: '¿Cómo se dice "Tengo 30 años"?', opts: ['Sono trent’anni.', 'Ho trent’anni.', 'Ho trenta anni di età.'], a: 1, fb: 'La edad → "Ho trent’anni".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Io o un gatto.', 'Io ho un gatto.', 'Io ha un gatto.'], a: 1, fb: 'Con "io" → "ho".' },
+      { s: 'Quanti anni ___? (a un amigo)', opts: ['sei', 'hai', 'ha'], a: 1, fb: 'La edad con avere → "hai".' },
+      { s: '¿Cómo se dice "Tengo hambre"?', opts: ['Sono fame.', 'Ho fame.', 'Ho la fame.'], a: 1, fb: '"Ho fame".' },
+      { s: 'Noi ___ una casa a Milano.', opts: ['abbiamo', 'hanno', 'avete'], a: 0, fb: 'Con "noi" → "abbiamo".' },
+    ],
+  },
+  {
+    slug: 'pronombres-sujeto',
+    order: 6,
+    title: 'Los pronombres sujeto en italiano (io, tu, lui, lei, noi, voi, loro)',
+    shortTitle: 'Pronombres sujeto',
+    icon: '👤',
+    seoTitle: 'Pronombres sujeto en italiano: tu/Lei, sujeto omitido y ejercicios | A1',
+    seoDescription:
+      'Los pronombres sujeto en italiano: io, tu, lui, lei, noi, voi, loro. Cuándo se omite el sujeto, el "Lei" formal y diferencias con el español. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['pronombres sujeto italiano', 'tu lei formale', 'sujeto omitido italiano', 'io tu lui lei a1'],
+    intro: [
+      'Los pronombres sujeto italianos (io, tu, lui, lei, noi, voi, loro) funcionan casi como en español, y eso facilita mucho las cosas. La gran ventaja: igual que en español, el sujeto SE PUEDE OMITIR porque la terminación del verbo ya dice quién hace la acción.',
+      'Así, "Parlo italiano" (sin "io") es perfectamente normal; se añade el pronombre solo para enfatizar o aclarar ("Io parlo italiano, lui parla spagnolo"). Esto te diferencia del inglés y del francés, donde el sujeto es obligatorio.',
+      'Para el "usted" formal, el italiano usa "Lei" (con mayúscula, conjugado en 3.ª persona): "Lei è il signor Rossi?". El "tu" es informal. Y "lui" = él, "lei" = ella (minúscula).',
+    ],
+    sections: [
+      {
+        heading: 'El sujeto se puede omitir (como en español)',
+        body: [
+          'La terminación del verbo identifica la persona, así que el pronombre es opcional: "Sono italiano" = "Io sono italiano". Se usa el pronombre para dar énfasis o contraste.',
+          'Es una facilidad enorme para el hispanohablante, porque funciona igual que en tu idioma.',
+        ],
+      },
+      {
+        heading: 'tu o Lei: informal y formal',
+        body: [
+          '"tu" para amigos, familia y gente joven. "Lei" (con mayúscula, en 3.ª persona singular) para el trato formal de usted: "Come sta, Lei?". El plural formal moderno suele ser "voi".',
+        ],
+      },
+      {
+        heading: 'lui, lei, loro',
+        body: [
+          '"lui" = él, "lei" = ella, "loro" = ellos/ellas (invariable, sin distinción de género). En italiano estándar moderno, "lui/lei/loro" han sustituido casi por completo a las antiguas formas "egli/ella/essi".',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Los pronombres sujeto',
+        headers: ['Pronombre', 'Significado', 'Ejemplo'],
+        rows: [
+          ['io', 'yo', 'io parlo'],
+          ['tu', 'tú (informal)', 'tu parli'],
+          ['lui / lei', 'él / ella', 'lui parla'],
+          ['Lei', 'usted (formal)', 'Lei parla'],
+          ['noi', 'nosotros/as', 'noi parliamo'],
+          ['voi', 'vosotros / ustedes', 'voi parlate'],
+          ['loro', 'ellos / ellas', 'loro parlano'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Parlo italiano.', es: 'Hablo italiano.', note: 'el sujeto "io" se omite, como en español.' },
+      { en: 'Io parlo italiano, lui parla spagnolo.', es: 'Yo hablo italiano, él habla español.', note: 'pronombre para contraste.' },
+      { en: 'Lei come sta?', es: '¿Cómo está usted?', note: '"Lei" formal → 3.ª persona.' },
+      { en: 'Lui è simpatico.', es: 'Él es simpático.' },
+      { en: 'Loro abitano a Roma.', es: 'Ellos viven en Roma.' },
+      { en: 'Tu sei italiano?', es: '¿Tú eres italiano?', note: 'tu = informal.' },
+    ],
+    contrast: [
+      { es: 'Hablo italiano.', en: 'Parlo italiano.', note: 'el sujeto se omite, igual que en español.' },
+      { es: '¿Cómo está usted?', en: 'Come sta, Lei?', note: 'usted → "Lei" en 3.ª persona.' },
+      { es: '¿Tú hablas italiano?', en: 'Tu parli italiano?', note: 'informal → "tu".' },
+      { es: 'Él habla, ella escucha.', en: 'Lui parla, lei ascolta.', note: 'lui = él, lei = ella.' },
+      { es: 'Ellos viven aquí.', en: 'Loro abitano qui.', note: '"loro" es invariable.' },
+    ],
+    commonMistakes: [
+      { wrong: 'Io parlo, ma è obbligatorio "io"', right: 'Parlo italiano. (sin "io")', note: 'El sujeto NO es obligatorio: se omite normalmente.' },
+      { wrong: 'Tu è italiano? (formal)', right: 'Lei è italiano? / Tu sei italiano?', note: 'Formal → "Lei"; informal → "tu sei".' },
+      { wrong: 'Loro è a Roma.', right: 'Loro sono a Roma.', note: 'Con "loro" → "sono".' },
+      { wrong: 'Lui e lei → "egli/ella" (anticuado)', right: 'lui / lei', note: 'El italiano moderno usa "lui/lei".' },
+      { wrong: 'Voi è pronti?', right: 'Voi siete pronti?', note: 'Con "voi" → "siete".' },
+    ],
+    tip: 'En italiano el sujeto se OMITE, como en español: "Parlo italiano". Usa el pronombre solo para enfatizar. "Lei" (mayúscula) = usted formal en 3.ª persona.',
+    questions: [
+      { s: '___ parlo italiano. (yo)', opts: ['Io', 'Tu', 'Lui', 'Noi'], a: 0, fb: '"yo" → "io".' },
+      { s: '___ sei italiano? (tú, informal)', opts: ['Io', 'Tu', 'Lei', 'Voi'], a: 1, fb: 'informal → "tu sei".' },
+      { s: 'Come sta ___? (usted, formal)', opts: ['tu', 'Lei', 'voi', 'loro'], a: 1, fb: 'formal → "Lei".' },
+      { s: '___ è simpatico. (él)', opts: ['Lui', 'Lei', 'Loro', 'Noi'], a: 0, fb: 'él → "lui".' },
+      { s: '___ abitano a Roma. (ellos)', opts: ['Lui', 'Lei', 'Loro', 'Voi'], a: 2, fb: 'ellos → "loro".' },
+      { s: '___ parliamo spagnolo. (nosotros)', opts: ['Io', 'Noi', 'Voi', 'Loro'], a: 1, fb: 'nosotros → "noi".' },
+      { s: '___ parlate inglese? (vosotros)', opts: ['Tu', 'Noi', 'Voi', 'Loro'], a: 2, fb: 'vosotros/ustedes → "voi".' },
+      { s: '___ è italiana. (ella)', opts: ['Lui', 'Lei', 'Loro'], a: 1, fb: 'ella → "lei".' },
+      { s: '¿El sujeto es obligatorio en italiano?', opts: ['Sí, siempre', 'No, se puede omitir', 'Solo con "io"'], a: 1, fb: 'Como en español, se omite normalmente.' },
+      { s: '¿Cómo se dice "Hablo italiano" (sin pronombre)?', opts: ['Io parlo italiano.', 'Parlo italiano.', 'Mi parlo italiano.'], a: 1, fb: 'El sujeto se omite: "Parlo italiano".' },
+      { s: '¿Cuál es CORRECTA? (formal)', opts: ['Tu come sta?', 'Lei come sta?', 'Voi come sta?'], a: 1, fb: 'formal → "Lei come sta?".' },
+      { s: 'Loro ___ a casa. (estar)', opts: ['è', 'sono', 'siamo'], a: 1, fb: 'Con "loro" → "sono".' },
+      { s: '¿Cómo se dice "ellos"?', opts: ['lui', 'lei', 'loro'], a: 2, fb: '"loro" (invariable).' },
+      { s: 'Io parlo italiano, ___ parla spagnolo. (él)', opts: ['lui', 'lei', 'loro'], a: 0, fb: 'él → "lui".' },
+    ],
+  },
+  {
+    slug: 'verbos-are',
+    order: 7,
+    title: 'Los verbos en -ARE en presente (parlare, abitare)',
+    shortTitle: 'Verbos en -ARE',
+    icon: '🗣️',
+    seoTitle: 'Verbos en -ARE en italiano (presente): terminaciones y ejercicios | A1',
+    seoDescription:
+      'La conjugación de los verbos en -ARE en presente: parlare, abitare, lavorare. Terminaciones -o, -i, -a, -iamo, -ate, -ano. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['verbos -are italiano', 'parlare conjugación', 'presente verbos are italiano', 'terminaciones are a1'],
+    intro: [
+      'Los verbos en -ARE (parlare, abitare, lavorare, mangiare…) son el grupo más numeroso y regular del italiano. Dominar este patrón te permite conjugar miles de verbos del día a día.',
+      'Se conjugan quitando -ARE y añadiendo: -o, -i, -a, -iamo, -ate, -ano. Así, "parlare" da: parlo, parli, parla, parliamo, parlate, parlano. Como el sujeto se omite, la terminación es la que indica la persona.',
+      'Buena noticia: las terminaciones se parecen mucho al español (-o, -as/-a…), pero ojo con dos detalles: "noi" termina en -iamo (parliamo) y "loro" en -ano con el acento en la antepenúltima sílaba (PARlano).',
+    ],
+    sections: [
+      {
+        heading: 'Las terminaciones (-o, -i, -a, -iamo, -ate, -ano)',
+        body: [
+          'parlo · parli · parla · parliamo · parlate · parlano. La 1.ª persona en -o y la 3.ª en -a se parecen al español; "noi -iamo" y "loro -ano" son las que hay que fijar.',
+          'Acento: "parlano" se pronuncia con el acento en "par-" (PARlano), no en la "a".',
+        ],
+      },
+      {
+        heading: 'Pequeños cambios de escritura',
+        body: [
+          'Verbos en -CARE y -GARE añaden una "h" en "tu" y "noi" para mantener el sonido duro: cercare → tu cerchi, noi cerchiamo; pagare → tu paghi, noi paghiamo.',
+          'Verbos en -CIARE y -GIARE pierden la "i" en "tu" y "noi": mangiare → tu mangi, noi mangiamo.',
+        ],
+      },
+      {
+        heading: 'Sujeto omitido',
+        body: [
+          'Como en español, no hace falta el pronombre: "Lavoro a Roma" ya significa "(Yo) trabajo en Roma". El pronombre se usa solo para enfatizar.',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'parlare (modelo de los verbos -ARE)',
+        headers: ['Pronombre', 'Forma', 'Terminación'],
+        rows: [
+          ['io', 'parlo', '-o'],
+          ['tu', 'parli', '-i'],
+          ['lui / lei', 'parla', '-a'],
+          ['noi', 'parliamo', '-iamo'],
+          ['voi', 'parlate', '-ate'],
+          ['loro', 'parlano', '-ano'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Parlo italiano.', es: 'Hablo italiano.' },
+      { en: 'Noi abitiamo a Milano.', es: 'Vivimos en Milán.', note: '"noi" → -iamo.' },
+      { en: 'Loro lavorano molto.', es: 'Ellos trabajan mucho.', note: '"loro" → -ano (PARlano).' },
+      { en: 'Tu mangi la pizza?', es: '¿Comes pizza?', note: 'mangiare → "mangi" (pierde la i).' },
+      { en: 'Noi cerchiamo un appartamento.', es: 'Buscamos un apartamento.', note: 'cercare → "cerchiamo".' },
+      { en: 'Voi parlate spagnolo.', es: 'Vosotros habláis español.' },
+    ],
+    contrast: [
+      { es: 'Hablo italiano.', en: 'Parlo italiano.', note: 'terminación -o, como en español.' },
+      { es: 'Vivimos en Roma.', en: 'Abitiamo a Roma.', note: '"noi" → -iamo (no -amos).' },
+      { es: 'Ellos trabajan.', en: 'Loro lavorano.', note: '"loro" → -ano.' },
+      { es: '¿Comes pizza?', en: 'Mangi la pizza?', note: 'mangiare → "mangi" (sin i).' },
+      { es: 'Buscamos casa.', en: 'Cerchiamo casa.', note: 'cercare → "cerchiamo" (con h).' },
+    ],
+    commonMistakes: [
+      { wrong: 'Noi parlamo', right: 'Noi parliamo', note: 'Con "noi" → -iamo.' },
+      { wrong: 'Loro parlan', right: 'Loro parlano', note: 'Con "loro" → -ano.' },
+      { wrong: 'Tu mangii', right: 'Tu mangi', note: 'mangiare pierde la "i": "mangi".' },
+      { wrong: 'Tu cerci', right: 'Tu cerchi', note: 'cercare añade "h": "cerchi".' },
+      { wrong: 'Io parla', right: 'Io parlo', note: 'Con "io" → -o.' },
+    ],
+    tip: 'Quita -ARE y añade -o, -i, -a, -iamo, -ate, -ano. Fija "noi -iamo" y "loro -ano". Verbos en -care/-gare añaden "h" (cerchi); en -ciare/-giare pierden la "i" (mangi).',
+    questions: [
+      { s: 'Io ___ italiano. (parlare)', opts: ['parlo', 'parli', 'parla', 'parlano'], a: 0, fb: 'Con "io" → "parlo".' },
+      { s: 'Tu ___ a Roma? (abitare)', opts: ['abito', 'abiti', 'abita', 'abitate'], a: 1, fb: 'Con "tu" → "abiti".' },
+      { s: 'Lui ___ molto. (lavorare)', opts: ['lavoro', 'lavori', 'lavora', 'lavorano'], a: 2, fb: 'Con "lui" → "lavora".' },
+      { s: 'Noi ___ a Milano. (abitare)', opts: ['abitamo', 'abitiamo', 'abitate'], a: 1, fb: 'Con "noi" → "abitiamo".' },
+      { s: 'Voi ___ spagnolo. (parlare)', opts: ['parla', 'parlate', 'parlano'], a: 1, fb: 'Con "voi" → "parlate".' },
+      { s: 'Loro ___ in ufficio. (lavorare)', opts: ['lavora', 'lavorate', 'lavorano'], a: 2, fb: 'Con "loro" → "lavorano".' },
+      { s: 'Tu ___ la pizza? (mangiare)', opts: ['mangi', 'mangii', 'mangie'], a: 0, fb: 'mangiare → "mangi" (sin doble i).' },
+      { s: 'Noi ___ un appartamento. (cercare)', opts: ['cerciamo', 'cerchiamo', 'ceriamo'], a: 1, fb: 'cercare → "cerchiamo".' },
+      { s: 'Loro ___ presto. (mangiare)', opts: ['mangiano', 'mangano', 'mangiono'], a: 0, fb: '"loro" → "mangiano".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Noi parlamo', 'Noi parliamo', 'Noi parlate'], a: 1, fb: 'Con "noi" → "parliamo".' },
+      { s: '¿Cómo se dice "Ellos trabajan"?', opts: ['Loro lavoran', 'Loro lavorano', 'Loro lavorate'], a: 1, fb: '"loro" → "lavorano".' },
+      { s: 'Tu ___ il conto. (pagare)', opts: ['paghi', 'pagi', 'pagghi'], a: 0, fb: 'pagare → "paghi" (con h).' },
+      { s: 'Io ___ la radio. (ascoltare)', opts: ['ascolto', 'ascolti', 'ascolta'], a: 0, fb: 'Con "io" → "ascolto".' },
+      { s: 'Voi ___ a casa. (tornare)', opts: ['tornano', 'tornate', 'torniamo'], a: 1, fb: 'Con "voi" → "tornate".' },
+    ],
+  },
+  {
+    slug: 'verbos-ere-ire',
+    order: 8,
+    title: 'Los verbos en -ERE e -IRE en presente (prendere, dormire, capire)',
+    shortTitle: 'Verbos en -ERE e -IRE',
+    icon: '📖',
+    seoTitle: 'Verbos en -ERE e -IRE en italiano (presente): conjugación y ejercicios | A1',
+    seoDescription:
+      'La conjugación en presente de los verbos en -ERE (prendere) e -IRE (dormire, capire). El grupo -isc- (capisco) y las terminaciones. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['verbos -ere -ire italiano', 'prendere dormire capire', 'capisco isc italiano', 'verbos ire isc a1'],
+    intro: [
+      'Además de los verbos en -ARE, el italiano tiene dos grupos más: los verbos en -ERE (prendere, leggere, vivere) y los verbos en -IRE (dormire, partire, aprire). Sus terminaciones se parecen bastante entre sí.',
+      'Los -ERE hacen: -o, -i, -e, -iamo, -ete, -ono (prendo, prendi, prende, prendiamo, prendete, prendono). Los -IRE hacen: -o, -i, -e, -iamo, -ite, -ono (dormo, dormi, dorme, dormiamo, dormite, dormono).',
+      'Dentro de los -IRE hay un subgrupo MUY común que intercala "-isc-" en cuatro formas: capire → capisco, capisci, capisce, capiamo, capite, capiscono. Verbos así: finire, preferire, pulire. Hay que reconocerlos.',
+    ],
+    sections: [
+      {
+        heading: 'Verbos en -ERE',
+        body: [
+          'prendo · prendi · prende · prendiamo · prendete · prendono. Igual que -ARE salvo "lui prende" (-e) y "voi prendete" (-ete), "loro prendono" (-ono).',
+          'Verbos frecuentes: leggere (leer), scrivere (escribir), vivere (vivir), mettere (poner).',
+        ],
+      },
+      {
+        heading: 'Verbos en -IRE (tipo dormire)',
+        body: [
+          'dormo · dormi · dorme · dormiamo · dormite · dormono. Igual que -ERE pero "voi" termina en -ite (dormite).',
+          'Verbos así: partire (salir), aprire (abrir), sentire (oír/sentir), offrire (ofrecer).',
+        ],
+      },
+      {
+        heading: 'Verbos en -IRE con "-isc-" (tipo capire)',
+        body: [
+          'Un grupo grande de -IRE intercala "-isc-" en io, tu, lui y loro: capisco, capisci, capisce, capiamo, capite, capiscono. En "noi" y "voi" NO aparece el -isc-.',
+          'Verbos así: finire (terminar), preferire (preferir), pulire (limpiar), spedire (enviar).',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Terminaciones -ERE / -IRE / -IRE (isc)',
+        headers: ['Pronombre', 'prendere', 'dormire', 'capire (isc)'],
+        rows: [
+          ['io', 'prendo', 'dormo', 'capisco'],
+          ['tu', 'prendi', 'dormi', 'capisci'],
+          ['lui / lei', 'prende', 'dorme', 'capisce'],
+          ['noi', 'prendiamo', 'dormiamo', 'capiamo'],
+          ['voi', 'prendete', 'dormite', 'capite'],
+          ['loro', 'prendono', 'dormono', 'capiscono'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Prendo un caffè.', es: 'Tomo un café.', note: '-ERE.' },
+      { en: 'Leggo un libro.', es: 'Leo un libro.', note: 'leggere (-ERE).' },
+      { en: 'Dormo otto ore.', es: 'Duermo ocho horas.', note: '-IRE.' },
+      { en: 'Non capisco.', es: 'No entiendo.', note: 'capire (isc) → "capisco".' },
+      { en: 'Preferisco il tè.', es: 'Prefiero el té.', note: 'preferire (isc).' },
+      { en: 'A che ora finisci?', es: '¿A qué hora terminas?', note: 'finire (isc) → "finisci".' },
+    ],
+    contrast: [
+      { es: 'Tomo un café.', en: 'Prendo un caffè.', note: '-ERE → "prendo".' },
+      { es: 'Duermo mucho.', en: 'Dormo molto.', note: '-IRE → "dormo".' },
+      { es: 'No entiendo.', en: 'Non capisco.', note: 'capire intercala -isc-.' },
+      { es: 'Prefiero el té.', en: 'Preferisco il tè.', note: 'preferire (isc).' },
+      { es: 'Escribimos una carta.', en: 'Scriviamo una lettera.', note: '-ERE "noi" → -iamo.' },
+    ],
+    commonMistakes: [
+      { wrong: 'Loro prendano', right: 'Loro prendono', note: '-ERE: "loro" → -ono.' },
+      { wrong: 'Voi dormete', right: 'Voi dormite', note: '-IRE: "voi" → -ite.' },
+      { wrong: 'Io capo', right: 'Io capisco', note: 'capire intercala -isc-: "capisco".' },
+      { wrong: 'Noi capisciamo', right: 'Noi capiamo', note: 'En "noi" NO va el -isc-.' },
+      { wrong: 'Lui prendi', right: 'Lui prende', note: '-ERE: "lui" → -e.' },
+    ],
+    tip: '-ERE: -o, -i, -e, -iamo, -ete, -ono. -IRE: igual pero "voi" → -ite. Y los verbos tipo "capire" intercalan -isc- (capisco) salvo en "noi/voi".',
+    questions: [
+      { s: 'Io ___ un caffè. (prendere)', opts: ['prendo', 'prendi', 'prende', 'prendono'], a: 0, fb: 'Con "io" → "prendo".' },
+      { s: 'Tu ___ un libro. (leggere)', opts: ['leggo', 'leggi', 'legge'], a: 1, fb: 'Con "tu" → "leggi".' },
+      { s: 'Lui ___ otto ore. (dormire)', opts: ['dormo', 'dormi', 'dorme'], a: 2, fb: 'Con "lui" → "dorme".' },
+      { s: 'Noi ___ una lettera. (scrivere)', opts: ['scriviamo', 'scrivete', 'scrivono'], a: 0, fb: 'Con "noi" → "scriviamo".' },
+      { s: 'Voi ___ presto. (dormire)', opts: ['dormete', 'dormite', 'dormono'], a: 1, fb: '-IRE: "voi" → "dormite".' },
+      { s: 'Loro ___ il treno. (prendere)', opts: ['prendano', 'prendono', 'prendete'], a: 1, fb: '"loro" → "prendono".' },
+      { s: 'Io non ___. (capire, isc)', opts: ['capo', 'capisco', 'capio'], a: 1, fb: 'capire intercala -isc-: "capisco".' },
+      { s: '___ il tè. (preferire, io)', opts: ['Prefero', 'Preferisco', 'Preferi'], a: 1, fb: 'preferire (isc) → "preferisco".' },
+      { s: 'A che ora ___? (finire, tu)', opts: ['fini', 'finisci', 'finis'], a: 1, fb: 'finire (isc) → "finisci".' },
+      { s: 'Noi ___ la casa. (pulire)', opts: ['puliamo', 'pulisciamo', 'pulite'], a: 0, fb: 'En "noi" no va el -isc-: "puliamo".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Voi dormete', 'Voi dormite', 'Voi dormono'], a: 1, fb: '-IRE: "voi" → "dormite".' },
+      { s: '¿Cómo se dice "No entiendo"?', opts: ['Non capo.', 'Non capisco.', 'Non capio.'], a: 1, fb: 'capire (isc) → "Non capisco".' },
+      { s: 'Lei ___ la porta. (aprire)', opts: ['apro', 'apri', 'apre'], a: 2, fb: 'Con "lei" → "apre".' },
+      { s: 'Loro ___ il lavoro. (finire, isc)', opts: ['finano', 'finiscono', 'finono'], a: 1, fb: 'finire (isc) → "finiscono".' },
+    ],
+  },
+  {
+    slug: 'la-negacion',
+    order: 9,
+    title: 'La negación en italiano (non)',
+    shortTitle: 'La negación (non)',
+    icon: '🚫',
+    seoTitle: 'La negación en italiano (non): explicación y ejercicios | A1',
+    seoDescription:
+      'Cómo formar la negación en italiano con "non" antes del verbo, y la doble negación (non… mai, non… niente, non… nessuno). Como el español "no". Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['negación en italiano', 'non italiano', 'non mai niente nessuno', 'doble negación italiano a1'],
+    intro: [
+      'La negación en italiano es de las más fáciles para el hispanohablante: basta con poner "non" delante del verbo, exactamente como el "no" del español. "Parlo inglese" → "Non parlo inglese".',
+      '"non" va siempre justo antes del verbo (y antes de los pronombres si los hay): "Non capisco", "Non lo so", "Non mi piace". No se elide ni cambia de forma.',
+      'Igual que en español, el italiano usa la DOBLE negación: "non… mai" (nunca), "non… niente/nulla" (nada), "non… nessuno" (nadie). "Non mangio mai carne", "Non c’è nessuno".',
+    ],
+    sections: [
+      {
+        heading: 'non + verbo',
+        body: [
+          'La estructura es simple: "non" delante del verbo. "Non lavoro oggi", "Non siamo pronti". Si hay pronombres átonos, "non" va antes de todo: "Non ti capisco", "Non lo voglio".',
+        ],
+      },
+      {
+        heading: 'La doble negación (como en español)',
+        body: [
+          'El italiano combina "non" con otra palabra negativa después del verbo: non… mai (nunca), non… niente / nulla (nada), non… nessuno (nadie), non… più (ya no), non… ancora (todavía no).',
+          'Igual que en español ("no… nunca"), no es un error: es la norma. "Non ho mai visto Roma."',
+        ],
+      },
+      {
+        heading: 'Cuando la palabra negativa va primero',
+        body: [
+          'Si la palabra negativa va ANTES del verbo, se quita "non": "Nessuno parla" (nadie habla), "Niente è facile" (nada es fácil). Es como en español: "Nadie habla".',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Afirmativa → negativa',
+        headers: ['Afirmativa', 'Negativa'],
+        rows: [
+          ['Parlo inglese.', 'Non parlo inglese.'],
+          ['Capisco.', 'Non capisco.'],
+          ['Mangio carne.', 'Non mangio mai carne.'],
+          ['C’è qualcuno.', 'Non c’è nessuno.'],
+        ],
+      },
+      {
+        caption: 'Dobles negaciones',
+        headers: ['Estructura', 'Significado', 'Ejemplo'],
+        rows: [
+          ['non… mai', 'nunca', 'Non fumo mai.'],
+          ['non… niente / nulla', 'nada', 'Non capisco niente.'],
+          ['non… nessuno', 'nadie', 'Non vedo nessuno.'],
+          ['non… più', 'ya no', 'Non lavoro più.'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Non parlo inglese.', es: 'No hablo inglés.', note: 'non + verbo.' },
+      { en: 'Non capisco.', es: 'No entiendo.' },
+      { en: 'Non mi piace il caffè.', es: 'No me gusta el café.', note: '"non" antes del pronombre.' },
+      { en: 'Non mangio mai carne.', es: 'Nunca como carne.', note: 'doble negación non… mai.' },
+      { en: 'Non c’è nessuno.', es: 'No hay nadie.', note: 'non… nessuno.' },
+      { en: 'Nessuno parla.', es: 'Nadie habla.', note: 'negativo antes del verbo → sin "non".' },
+    ],
+    contrast: [
+      { es: 'No hablo inglés.', en: 'Non parlo inglese.', note: 'igual que el español: "non" antes del verbo.' },
+      { es: 'No me gusta.', en: 'Non mi piace.', note: '"non" va antes del pronombre.' },
+      { es: 'Nunca fumo.', en: 'Non fumo mai.', note: 'doble negación, como en español.' },
+      { es: 'No hay nadie.', en: 'Non c’è nessuno.', note: 'non… nessuno.' },
+      { es: 'Nadie habla.', en: 'Nessuno parla.', note: 'negativo primero → sin "non".' },
+    ],
+    commonMistakes: [
+      { wrong: 'Io no parlo', right: 'Io non parlo', note: 'Es "non", no "no".' },
+      { wrong: 'Parlo non inglese', right: 'Non parlo inglese', note: '"non" va antes del verbo.' },
+      { wrong: 'Non fumo non mai', right: 'Non fumo mai', note: 'Solo un "non": "non… mai".' },
+      { wrong: 'Non mi piace non', right: 'Non mi piace', note: 'No se repite "non".' },
+      { wrong: 'Mi non piace', right: 'Non mi piace', note: '"non" va antes del pronombre.' },
+    ],
+    tip: 'Negar es fácil: "non" antes del verbo (y antes de los pronombres). La doble negación funciona como en español: "non… mai", "non… niente", "non… nessuno".',
+    questions: [
+      { s: 'Io ___ parlo inglese.', opts: ['no', 'non', 'niente'], a: 1, fb: 'Es "non", no "no".' },
+      { s: '___ capisco.', opts: ['No', 'Non', 'Mai'], a: 1, fb: '"Non capisco".' },
+      { s: 'Non ___ piace il caffè. (a mí)', opts: ['mi', 'ti', 'lo'], a: 0, fb: '"Non mi piace".' },
+      { s: 'Non mangio ___ carne. (nunca)', opts: ['mai', 'niente', 'nessuno'], a: 0, fb: 'nunca → "non… mai".' },
+      { s: 'Non capisco ___. (nada)', opts: ['mai', 'niente', 'nessuno'], a: 1, fb: 'nada → "non… niente".' },
+      { s: 'Non c’è ___. (nadie)', opts: ['mai', 'niente', 'nessuno'], a: 2, fb: 'nadie → "non… nessuno".' },
+      { s: 'Non lavoro ___. (ya no)', opts: ['mai', 'più', 'ancora'], a: 1, fb: 'ya no → "non… più".' },
+      { s: '___ parla. (nadie, antes del verbo)', opts: ['Non', 'Nessuno', 'Niente'], a: 1, fb: 'Negativo antes del verbo → "Nessuno parla".' },
+      { s: '¿Dónde va "non"?', opts: ['después del verbo', 'antes del verbo', 'al final'], a: 1, fb: '"non" va antes del verbo.' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Io no parlo.', 'Io non parlo.', 'Io parlo no.'], a: 1, fb: 'Es "non parlo".' },
+      { s: '¿Cómo se dice "No me gusta"?', opts: ['Mi non piace.', 'Non mi piace.', 'No mi piace.'], a: 1, fb: '"non" antes del pronombre: "Non mi piace".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Non fumo non mai.', 'Non fumo mai.', 'Fumo non mai.'], a: 1, fb: 'Solo un "non": "Non fumo mai".' },
+      { s: 'Non ___ visto Roma. (todavía no: non… ancora)', opts: ['mai', 'ancora ho', 'ho ancora'], a: 2, fb: '"Non ho ancora visto Roma".' },
+      { s: '¿Cómo se dice "No hay nadie"?', opts: ['C’è nessuno.', 'Non c’è nessuno.', 'Non c’è niente.'], a: 1, fb: '"Non c’è nessuno".' },
+    ],
+  },
+  {
+    slug: 'preguntas',
+    order: 10,
+    title: 'Hacer preguntas en italiano (entonación e interrogativos)',
+    shortTitle: 'Las preguntas',
+    icon: '❓',
+    seoTitle: 'Hacer preguntas en italiano (dove, come, quando): explicación y ejercicios | A1',
+    seoDescription:
+      'Cómo preguntar en italiano por entonación y con palabras interrogativas: dove, come, quando, quanto, perché, chi, che cosa. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['preguntas en italiano', 'dove come quando italiano', 'interrogativos italiano', 'che cosa chi a1'],
+    intro: [
+      'Hacer preguntas de sí/no en italiano es facilísimo: usas la MISMA frase afirmativa y solo subes la entonación al final. "Parli italiano." → "Parli italiano?". No hace falta auxiliar ni invertir el orden, igual que en español.',
+      'Para pedir información concreta usamos palabras interrogativas al principio: dove (dónde), come (cómo), quando (cuándo), quanto (cuánto), perché (por qué), chi (quién), che cosa / cosa / che (qué).',
+      'En el habla, "che cosa", "cosa" y "che" son intercambiables para "¿qué?": "Che cosa fai? / Cosa fai? / Che fai?" significan lo mismo. La forma corta "cosa" es muy común.',
+    ],
+    sections: [
+      {
+        heading: 'Preguntas de sí/no: solo la entonación',
+        body: [
+          'La estructura es idéntica a la afirmativa; cambia la entonación (y el signo "?"). "Sei italiano?", "Hai tempo?", "Vieni stasera?". Es exactamente como en español.',
+        ],
+      },
+      {
+        heading: 'Las palabras interrogativas',
+        body: [
+          'dove (dónde), come (cómo), quando (cuándo), quanto/a/i/e (cuánto, concuerda), perché (por qué/porque), chi (quién), che cosa/cosa/che (qué).',
+          'Suelen ir al principio: "Dove abiti?", "Come stai?", "Quando arrivi?", "Quanto costa?".',
+        ],
+      },
+      {
+        heading: '"qué": che cosa / cosa / che',
+        body: [
+          'Para "¿qué…?" tienes tres opciones equivalentes: "Che cosa mangi?", "Cosa mangi?", "Che mangi?". La más neutra es "che cosa"; "cosa" es muy frecuente en el habla.',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Palabras interrogativas',
+        headers: ['Italiano', 'Español', 'Ejemplo'],
+        rows: [
+          ['dove', 'dónde', 'Dove abiti?'],
+          ['come', 'cómo', 'Come stai?'],
+          ['quando', 'cuándo', 'Quando arrivi?'],
+          ['quanto', 'cuánto', 'Quanto costa?'],
+          ['perché', 'por qué', 'Perché studi italiano?'],
+          ['chi', 'quién', 'Chi è?'],
+          ['che cosa / cosa', 'qué', 'Cosa fai?'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Parli italiano?', es: '¿Hablas italiano?', note: 'solo la entonación.' },
+      { en: 'Dove abiti?', es: '¿Dónde vives?' },
+      { en: 'Come stai?', es: '¿Cómo estás?' },
+      { en: 'Quanto costa?', es: '¿Cuánto cuesta?' },
+      { en: 'Cosa fai stasera?', es: '¿Qué haces esta noche?', note: '"cosa" = qué.' },
+      { en: 'Chi è quella ragazza?', es: '¿Quién es esa chica?' },
+    ],
+    contrast: [
+      { es: '¿Hablas italiano?', en: 'Parli italiano?', note: 'igual que en español: solo la entonación.' },
+      { es: '¿Dónde vives?', en: 'Dove abiti?', note: 'dove = dónde.' },
+      { es: '¿Cómo estás?', en: 'Come stai?', note: 'come = cómo.' },
+      { es: '¿Cuánto cuesta?', en: 'Quanto costa?', note: 'quanto = cuánto.' },
+      { es: '¿Qué haces?', en: 'Cosa fai? / Che cosa fai?', note: 'qué → cosa / che cosa.' },
+    ],
+    commonMistakes: [
+      { wrong: 'Fai tu? (invertir como inglés)', right: 'Cosa fai? / Fai qualcosa?', note: 'No se invierte: la pregunta usa la entonación.' },
+      { wrong: 'Perché → "per che" (separado)', right: 'perché', note: '"perché" (por qué/porque) va junto y con acento.' },
+      { wrong: 'Quanto costano? → para uno', right: 'Quanto costa?', note: '"quanto" concuerda con lo que sigue (singular → costa).' },
+      { wrong: 'Dove sei abiti?', right: 'Dove abiti?', note: 'No mezcles verbos: "Dove abiti?".' },
+      { wrong: 'Che è? (¿quién es?)', right: 'Chi è?', note: '"chi" = quién; "che" = qué.' },
+    ],
+    tip: 'Preguntas sí/no: solo sube la entonación, como en español ("Parli italiano?"). Para info: dove, come, quando, quanto, perché, chi, cosa/che cosa al principio.',
+    questions: [
+      { s: '___ abiti? (¿dónde?)', opts: ['Dove', 'Come', 'Quando', 'Chi'], a: 0, fb: '"dove" = dónde.' },
+      { s: '___ stai? (¿cómo?)', opts: ['Dove', 'Come', 'Quando', 'Chi'], a: 1, fb: '"come" = cómo.' },
+      { s: '___ costa? (¿cuánto?)', opts: ['Come', 'Quando', 'Quanto', 'Chi'], a: 2, fb: '"quanto" = cuánto.' },
+      { s: '___ arrivi? (¿cuándo?)', opts: ['Dove', 'Quando', 'Quanto', 'Chi'], a: 1, fb: '"quando" = cuándo.' },
+      { s: '___ è quella ragazza? (¿quién?)', opts: ['Chi', 'Che', 'Dove', 'Come'], a: 0, fb: '"chi" = quién.' },
+      { s: '___ fai stasera? (¿qué?)', opts: ['Chi', 'Cosa', 'Dove', 'Quanto'], a: 1, fb: '"cosa" = qué.' },
+      { s: '___ studi italiano? (¿por qué?)', opts: ['Perché', 'Come', 'Dove'], a: 0, fb: '"perché" = por qué.' },
+      { s: '¿Cómo se hace una pregunta de sí/no?', opts: ['Invirtiendo el verbo', 'Solo con la entonación', 'Con un auxiliar'], a: 1, fb: 'Como en español: solo la entonación.' },
+      { s: '¿Cómo se dice "¿Hablas italiano?"?', opts: ['Parli italiano?', 'Fai tu italiano?', 'Do you parli italiano?'], a: 0, fb: 'Solo la entonación: "Parli italiano?".' },
+      { s: '___ è? (¿quién es?)', opts: ['Chi', 'Che', 'Cosa'], a: 0, fb: '"Chi è?" = ¿quién es?.' },
+      { s: '¿Cuál significa "qué"?', opts: ['chi', 'cosa', 'dove'], a: 1, fb: '"cosa / che cosa" = qué.' },
+      { s: '___ costa il biglietto? (¿cuánto?)', opts: ['Quanto', 'Quando', 'Come'], a: 0, fb: '"quanto" = cuánto.' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Che è quella ragazza?', 'Chi è quella ragazza?', 'Dove è quella ragazza?'], a: 1, fb: 'Para personas → "Chi è?".' },
+      { s: '___ vai in vacanza? (¿dónde?)', opts: ['Dove', 'Come', 'Quanto'], a: 0, fb: '"dove" = dónde.' },
+    ],
+  },
+  {
+    slug: 'concordancia-adjetivos',
+    order: 11,
+    title: 'La concordancia de los adjetivos en italiano',
+    shortTitle: 'Concordancia de adjetivos',
+    icon: '🎨',
+    seoTitle: 'Concordancia de los adjetivos en italiano (género y número): ejercicios | A1',
+    seoDescription:
+      'Cómo concuerdan los adjetivos en italiano: -o/-a/-i/-e y los adjetivos en -e (grande/grandi). Su posición y diferencias con el español. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['concordancia adjetivos italiano', 'adjetivos -o -a -i -e italiano', 'grande grandi', 'aggettivi a1'],
+    intro: [
+      'En italiano, como en español, el adjetivo concuerda en género y número con el nombre: "un ragazzo italiano", "una ragazza italiana", "ragazzi italiani", "ragazze italiane". La idea te resulta familiar; lo nuevo son las terminaciones.',
+      'Hay DOS tipos de adjetivos. Los del tipo "italiano" tienen cuatro formas: -o (masc. sing.), -a (fem. sing.), -i (masc. pl.), -e (fem. pl.). Los del tipo "grande" terminan en -e y tienen solo DOS formas: -e (singular, los dos géneros) y -i (plural, los dos géneros): grande/grandi.',
+      'La mayoría de los adjetivos van DESPUÉS del nombre (una macchina rossa), igual que en español; algunos muy comunes pueden ir delante (bello, buono, grande, piccolo, bravo).',
+    ],
+    sections: [
+      {
+        heading: 'Adjetivos de cuatro formas (-o/-a/-i/-e)',
+        body: [
+          'Concuerdan totalmente: alto → alto/alta/alti/alte. "Un ragazzo alto", "una ragazza alta", "due ragazzi alti", "due ragazze alte".',
+        ],
+      },
+      {
+        heading: 'Adjetivos en -e (dos formas: -e / -i)',
+        body: [
+          'Los terminados en -e no distinguen género: "grande" sirve para masculino y femenino en singular (un libro grande, una casa grande) y "grandi" para el plural (libri grandi, case grandi).',
+          'Otros así: intelligente, importante, difficile, verde, felice.',
+        ],
+      },
+      {
+        heading: 'La posición del adjetivo',
+        body: [
+          'La mayoría va DESPUÉS del nombre, sobre todo color y nacionalidad: "una macchina rossa", "un film italiano". Algunos frecuentes pueden ir delante con matiz: "una bella casa", "un buon amico".',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Adjetivo de cuatro formas (alto)',
+        headers: ['', 'Singular', 'Plural'],
+        rows: [
+          ['Masculino', 'alto', 'alti'],
+          ['Femenino', 'alta', 'alte'],
+        ],
+      },
+      {
+        caption: 'Adjetivo en -e (dos formas)',
+        headers: ['', 'Singular', 'Plural'],
+        rows: [
+          ['Masc. y fem.', 'grande', 'grandi'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'un ragazzo italiano', es: 'un chico italiano', note: '-o masc. sing.' },
+      { en: 'una ragazza italiana', es: 'una chica italiana', note: '-a fem. sing.' },
+      { en: 'due ragazzi italiani', es: 'dos chicos italianos', note: '-i masc. pl.' },
+      { en: 'una casa grande', es: 'una casa grande', note: 'adjetivo en -e: no cambia con el género.' },
+      { en: 'libri interessanti', es: 'libros interesantes', note: '-e → plural -i.' },
+      { en: 'una macchina rossa', es: 'un carro rojo', note: 'el color va después del nombre.' },
+    ],
+    contrast: [
+      { es: 'una chica italiana', en: 'una ragazza italiana', note: 'concuerda en -a, como en español.' },
+      { es: 'una casa grande', en: 'una casa grande', note: '"grande" no cambia en singular (masc./fem.).' },
+      { es: 'libros grandes', en: 'libri grandi', note: '"grande" → plural "grandi".' },
+      { es: 'dos chicas altas', en: 'due ragazze alte', note: 'fem. plural → -e.' },
+      { es: 'un carro rojo', en: 'una macchina rossa', note: 'el color va detrás del nombre.' },
+    ],
+    commonMistakes: [
+      { wrong: 'una ragazza italiano', right: 'una ragazza italiana', note: 'Debe concordar: fem. → -a.' },
+      { wrong: 'una casa granda', right: 'una casa grande', note: 'Los adjetivos en -e no hacen femenino en -a.' },
+      { wrong: 'libri grande', right: 'libri grandi', note: 'Plural de "grande" → "grandi".' },
+      { wrong: 'due ragazzi alte', right: 'due ragazzi alti', note: 'Masc. plural → -i.' },
+      { wrong: 'una rossa macchina', right: 'una macchina rossa', note: 'El color va después del nombre.' },
+    ],
+    tip: 'Adjetivos en -o: cuatro formas (-o/-a/-i/-e). Adjetivos en -e: solo dos (-e singular, -i plural), sin género. El color va después del nombre.',
+    questions: [
+      { s: 'una ragazza ___ (italiano)', opts: ['italiano', 'italiana', 'italiani', 'italiane'], a: 1, fb: 'Fem. sing. → "italiana".' },
+      { s: 'due ragazzi ___ (alto)', opts: ['alto', 'alta', 'alti', 'alte'], a: 2, fb: 'Masc. pl. → "alti".' },
+      { s: 'due ragazze ___ (alto)', opts: ['alti', 'alte', 'alta'], a: 1, fb: 'Fem. pl. → "alte".' },
+      { s: 'una casa ___ (grande)', opts: ['grando', 'granda', 'grande'], a: 2, fb: '"grande" no cambia en singular.' },
+      { s: 'libri ___ (grande)', opts: ['grande', 'grandi', 'grandes'], a: 1, fb: 'Plural → "grandi".' },
+      { s: 'una macchina ___ (rosso)', opts: ['rosso', 'rossa', 'rossi'], a: 1, fb: 'Fem. sing. → "rossa".' },
+      { s: 'un libro ___ (interessante)', opts: ['interessanto', 'interessante', 'interessanta'], a: 1, fb: '-e: no cambia en singular.' },
+      { s: 'case ___ (piccolo)', opts: ['piccoli', 'piccole', 'piccola'], a: 1, fb: 'Fem. pl. → "piccole".' },
+      { s: 'ragazzi ___ (intelligente)', opts: ['intelligenti', 'intelligente', 'intelligenta'], a: 0, fb: '-e → plural "intelligenti".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['una casa granda', 'una casa grande', 'una casa grando'], a: 1, fb: '"grande" no hace femenino en -a.' },
+      { s: '¿Cómo se dice "libros grandes"?', opts: ['libri grande', 'libri grandi', 'libri grandes'], a: 1, fb: 'Plural → "grandi".' },
+      { s: 'un ___ amico (buono, antes del nombre)', opts: ['buon', 'buona', 'buoni'], a: 0, fb: '"un buon amico".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['una rossa macchina', 'una macchina rossa', 'una macchina rosso'], a: 1, fb: 'El color va después y concuerda: "macchina rossa".' },
+      { s: 'due ragazze ___ (felice)', opts: ['felice', 'felici', 'felices'], a: 1, fb: '-e → plural "felici".' },
+    ],
+  },
+  {
+    slug: 'adjetivos-posesivos',
+    order: 12,
+    title: 'Los adjetivos posesivos en italiano (il mio, la mia, i miei…)',
+    shortTitle: 'Adjetivos posesivos',
+    icon: '🔐',
+    seoTitle: 'Adjetivos posesivos en italiano (il mio, la mia): el artículo y ejercicios | A1',
+    seoDescription:
+      'Los adjetivos posesivos en italiano: il mio, la mia, i miei, le mie… Por qué llevan artículo y la excepción de la familia (mia madre). Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['adjetivos posesivos italiano', 'il mio la mia', 'posesivos con artículo italiano', 'mia madre a1'],
+    intro: [
+      'Los adjetivos posesivos italianos (mio, tuo, suo, nostro, vostro, loro) concuerdan en género y número con el OBJETO poseído, como en español. La gran diferencia: en italiano el posesivo va precedido del ARTÍCULO. Donde el español dice "mi libro", el italiano dice "IL mio libro".',
+      'Por eso aprendes el posesivo en bloque con su artículo: il mio / la mia / i miei / le mie (mi/mis). El artículo y el posesivo concuerdan los dos con el objeto: "la mia casa", "i miei amici".',
+      'La excepción más importante: con los miembros de la familia en SINGULAR, NO se pone el artículo: "mia madre", "mio padre", "tuo fratello". Pero en plural sí: "i miei fratelli", "le mie sorelle". (Y "loro" siempre lleva artículo: "il loro padre".)',
+    ],
+    sections: [
+      {
+        heading: 'El posesivo lleva artículo',
+        body: [
+          'La fórmula normal es: artículo + posesivo + nombre. "Il mio libro", "la mia macchina", "i miei genitori", "le mie scarpe". Los dos (artículo y posesivo) concuerdan con el objeto.',
+          'Es la diferencia clave con el español, que no pone artículo ("mi libro", no "el mi libro").',
+        ],
+      },
+      {
+        heading: 'La excepción de la familia (singular)',
+        body: [
+          'Con familiares en singular, se omite el artículo: "mia madre", "mio padre", "tuo fratello", "sua sorella". En plural vuelve el artículo: "i miei fratelli", "le mie zie".',
+          'Ojo: "il loro" SIEMPRE lleva artículo, también con familia: "il loro padre".',
+        ],
+      },
+      {
+        heading: 'Las formas',
+        body: [
+          'mio/mia/miei/mie (mi), tuo/tua/tuoi/tue (tu), suo/sua/suoi/sue (su de él/ella/usted), nostro/nostra/nostri/nostre (nuestro), vostro/… (vuestro), loro (invariable: su de ellos).',
+          'Como en español, "suo/sua" concuerdan con el OBJETO, no con el dueño: "il suo libro" (su libro, de él o de ella).',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Posesivos (con artículo)',
+        headers: ['Dueño', 'Masc. sing.', 'Fem. sing.', 'Masc. pl.', 'Fem. pl.'],
+        rows: [
+          ['mi', 'il mio', 'la mia', 'i miei', 'le mie'],
+          ['tu', 'il tuo', 'la tua', 'i tuoi', 'le tue'],
+          ['su (él/ella)', 'il suo', 'la sua', 'i suoi', 'le sue'],
+          ['nuestro', 'il nostro', 'la nostra', 'i nostri', 'le nostre'],
+          ['su (de ellos)', 'il loro', 'la loro', 'i loro', 'le loro'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'il mio libro', es: 'mi libro', note: 'lleva artículo: "il mio".' },
+      { en: 'la mia macchina', es: 'mi carro', note: 'concuerda en femenino: "la mia".' },
+      { en: 'i miei amici', es: 'mis amigos', note: 'plural masc. → "i miei".' },
+      { en: 'mia madre', es: 'mi madre', note: 'familia en singular → SIN artículo.' },
+      { en: 'i miei fratelli', es: 'mis hermanos', note: 'familia en plural → CON artículo.' },
+      { en: 'il loro padre', es: 'el padre de ellos', note: '"loro" siempre con artículo.' },
+    ],
+    contrast: [
+      { es: 'mi libro', en: 'il mio libro', note: 'el italiano añade el artículo "il".' },
+      { es: 'mi casa', en: 'la mia casa', note: 'artículo + posesivo concuerdan con el objeto.' },
+      { es: 'mi madre', en: 'mia madre', note: 'familia singular → SIN artículo.' },
+      { es: 'mis hermanos', en: 'i miei fratelli', note: 'familia plural → CON artículo.' },
+      { es: 'su libro (de él)', en: 'il suo libro', note: '"suo" concuerda con el objeto, no con el dueño.' },
+    ],
+    commonMistakes: [
+      { wrong: 'mio libro', right: 'il mio libro', note: 'El posesivo italiano lleva artículo.' },
+      { wrong: 'la mia madre', right: 'mia madre', note: 'Familia en singular → sin artículo.' },
+      { wrong: 'mio fratelli', right: 'i miei fratelli', note: 'Plural + familia → "i miei fratelli".' },
+      { wrong: 'il mia casa', right: 'la mia casa', note: 'El artículo concuerda con el objeto (fem. → "la").' },
+      { wrong: 'loro padre', right: 'il loro padre', note: '"loro" siempre con artículo.' },
+    ],
+    tip: 'El posesivo italiano lleva artículo: "il mio libro" (no "mi libro"). Excepción: familia en singular sin artículo ("mia madre"), pero en plural sí ("i miei fratelli"). "loro" siempre con artículo.',
+    questions: [
+      { s: '___ libro è nuovo. (mi)', opts: ['il mio', 'mio', 'la mia'], a: 0, fb: 'Lleva artículo: "il mio".' },
+      { s: '___ macchina è rossa. (mi)', opts: ['il mio', 'la mia', 'i miei'], a: 1, fb: 'Fem. → "la mia".' },
+      { s: '___ amici sono qui. (mis)', opts: ['il mio', 'i miei', 'le mie'], a: 1, fb: 'Masc. pl. → "i miei".' },
+      { s: '___ madre è gentile. (mi, familia sing.)', opts: ['la mia', 'mia', 'il mio'], a: 1, fb: 'Familia singular → sin artículo: "mia madre".' },
+      { s: '___ fratelli abitano a Roma. (mis)', opts: ['mio', 'i miei', 'miei'], a: 1, fb: 'Familia plural → "i miei fratelli".' },
+      { s: '___ casa è grande. (tu)', opts: ['il tuo', 'la tua', 'i tuoi'], a: 1, fb: 'Fem. → "la tua".' },
+      { s: '___ libro. (su, de él)', opts: ['il suo', 'la sua', 'i suoi'], a: 0, fb: '"libro" masc. → "il suo".' },
+      { s: '___ padre. (de ellos)', opts: ['loro', 'il loro', 'i loro'], a: 1, fb: '"loro" siempre con artículo: "il loro padre".' },
+      { s: '___ scarpe. (mis, fem. pl.)', opts: ['i miei', 'le mie', 'la mia'], a: 1, fb: 'Fem. pl. → "le mie".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['mio libro', 'il mio libro', 'el mio libro'], a: 1, fb: 'Lleva artículo: "il mio libro".' },
+      { s: '¿Cómo se dice "mi madre"?', opts: ['la mia madre', 'mia madre', 'il mio madre'], a: 1, fb: 'Familia singular → "mia madre".' },
+      { s: '___ genitori. (nuestros)', opts: ['il nostro', 'i nostri', 'le nostre'], a: 1, fb: 'Masc. pl. → "i nostri".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['il mia casa', 'la mia casa', 'la mio casa'], a: 1, fb: 'Concuerda en fem.: "la mia casa".' },
+      { s: '___ sorella. (su, de ella, familia sing.)', opts: ['la sua', 'sua', 'il suo'], a: 1, fb: 'Familia singular → "sua sorella".' },
+    ],
+  },
+  {
+    slug: 'preposiciones-articuladas',
+    order: 13,
+    title: 'Las preposiciones y las preposiciones articuladas en italiano (al, nel, del…)',
+    shortTitle: 'Preposiciones articuladas',
+    icon: '🔗',
+    seoTitle: 'Preposiciones articuladas en italiano (al, nel, del, dal, sul): ejercicios | A1',
+    seoDescription:
+      'Las preposiciones italianas a, in, di, da, su y su fusión con el artículo (al, nel, del, dal, sul). Cuándo se contraen y diferencias con el español. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['preposiciones italiano', 'preposizioni articolate', 'al nel del dal sul', 'a in di da su italiano a1'],
+    intro: [
+      'Las preposiciones simples italianas más usadas son: di (de), a (a/en), da (de/desde), in (en), con (con), su (sobre), per (por/para), tra/fra (entre). Muchas se parecen al español, pero su uso no siempre coincide.',
+      'La gran novedad son las PREPOSICIONES ARTICULADAS: cuando "di, a, da, in, su" van seguidas de un artículo determinado, se FUSIONAN en una sola palabra. "a + il = al", "in + il = nel", "di + il = del", "da + il = dal", "su + il = sul".',
+      'En español solo contraes "a + el = al" y "de + el = del"; el italiano contrae mucho más y con todos los artículos (al, allo, alla, ai, agli, alle…). Es de lo que más hay que practicar.',
+    ],
+    sections: [
+      {
+        heading: 'Las preposiciones simples',
+        body: [
+          'di (de: posesión, origen), a (a/en: ciudad, dirección — "a Roma"), in (en: países, meses, medios — "in Italia"), da (de/desde, "a casa de" — "da Marco"), su (sobre), con (con), per (por/para).',
+          'Ojo: con ciudades se usa "a" (a Roma) y con países "in" (in Italia), parecido al francés.',
+        ],
+      },
+      {
+        heading: 'Las preposiciones articuladas',
+        body: [
+          'Al juntarse con el artículo, se fusionan: a+il=al, a+lo=allo, a+la=alla, a+i=ai, a+gli=agli, a+le=alle. Lo mismo con in (nel, nello, nella…), di (del, dello, della…), da (dal…), su (sul…).',
+          'Ejemplos: "Vado al cinema", "il libro è sul tavolo", "la casa del ragazzo", "nel frigorifero".',
+        ],
+      },
+      {
+        heading: '¿Cuándo se contrae y cuándo no?',
+        body: [
+          'Se contrae cuando hay artículo determinado: "Vado al mare" (a + il mare). No se contrae si no hay artículo: "Vado a Roma" (ciudad, sin artículo), "Sono in casa".',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'Preposiciones articuladas (+ il / la / i / le)',
+        headers: ['Prep.', '+ il', '+ la', '+ i', '+ le'],
+        rows: [
+          ['a', 'al', 'alla', 'ai', 'alle'],
+          ['in', 'nel', 'nella', 'nei', 'nelle'],
+          ['di', 'del', 'della', 'dei', 'delle'],
+          ['da', 'dal', 'dalla', 'dai', 'dalle'],
+          ['su', 'sul', 'sulla', 'sui', 'sulle'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Vado al cinema.', es: 'Voy al cine.', note: 'a + il = al.' },
+      { en: 'Il libro è sul tavolo.', es: 'El libro está sobre la mesa.', note: 'su + il = sul.' },
+      { en: 'La casa del ragazzo.', es: 'La casa del chico.', note: 'di + il = del.' },
+      { en: 'Vivo in Italia.', es: 'Vivo en Italia.', note: 'país → "in" (sin artículo).' },
+      { en: 'Abito a Roma.', es: 'Vivo en Roma.', note: 'ciudad → "a" (sin artículo).' },
+      { en: 'Vado da Marco.', es: 'Voy a casa de Marco.', note: '"da" = a casa de.' },
+    ],
+    contrast: [
+      { es: 'Voy al cine.', en: 'Vado al cinema.', note: 'a + il = al (como en español "al").' },
+      { es: 'El libro de la chica.', en: 'Il libro della ragazza.', note: 'di + la = della (el español no contrae "de la").' },
+      { es: 'En el frigorífico.', en: 'Nel frigorifero.', note: 'in + il = nel (el español no contrae "en el").' },
+      { es: 'Vivo en Italia.', en: 'Vivo in Italia.', note: 'país → "in".' },
+      { es: 'Voy a casa de Marco.', en: 'Vado da Marco.', note: '"da" = a casa de.' },
+    ],
+    commonMistakes: [
+      { wrong: 'Vado a il cinema.', right: 'Vado al cinema.', note: 'a + il se fusiona en "al".' },
+      { wrong: 'su il tavolo', right: 'sul tavolo', note: 'su + il = "sul".' },
+      { wrong: 'in il frigorifero', right: 'nel frigorifero', note: 'in + il = "nel".' },
+      { wrong: 'Vivo in Roma.', right: 'Abito a Roma.', note: 'Ciudad → "a"; país → "in".' },
+      { wrong: 'di la ragazza', right: 'della ragazza', note: 'di + la = "della".' },
+    ],
+    tip: 'Las preposiciones a/in/di/da/su se FUSIONAN con el artículo: al, nel, del, dal, sul. El italiano contrae mucho más que el español. Ciudad → "a"; país → "in".',
+    questions: [
+      { s: 'Vado ___ cinema. (a + il)', opts: ['a il', 'al', 'allo'], a: 1, fb: 'a + il = "al".' },
+      { s: 'Il libro è ___ tavolo. (su + il)', opts: ['su il', 'sul', 'sullo'], a: 1, fb: 'su + il = "sul".' },
+      { s: 'La casa ___ ragazzo. (di + il)', opts: ['di il', 'del', 'dello'], a: 1, fb: 'di + il = "del".' },
+      { s: '___ frigorifero c’è il latte. (in + il)', opts: ['In il', 'Nel', 'Nello'], a: 1, fb: 'in + il = "nel".' },
+      { s: 'Il libro ___ ragazza. (di + la)', opts: ['di la', 'della', 'del'], a: 1, fb: 'di + la = "della".' },
+      { s: 'Vivo ___ Italia.', opts: ['a', 'in', 'da'], a: 1, fb: 'país → "in Italia".' },
+      { s: 'Abito ___ Roma.', opts: ['a', 'in', 'da'], a: 0, fb: 'ciudad → "a Roma".' },
+      { s: 'Vado ___ Marco. (a casa de)', opts: ['a', 'da', 'in'], a: 1, fb: '"da Marco" = a casa de Marco.' },
+      { s: 'Vado ___ mare. (a + il)', opts: ['a il', 'al', 'alla'], a: 1, fb: 'a + il = "al mare".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Vado a il cinema.', 'Vado al cinema.', 'Vado a cinema.'], a: 1, fb: 'a + il = "al cinema".' },
+      { s: 'Le chiavi sono ___ tavolo. (su + il)', opts: ['su il', 'sul', 'sullo'], a: 1, fb: 'su + il = "sul".' },
+      { s: '¿Cómo se dice "en Italia"?', opts: ['a Italia', 'in Italia', 'nel Italia'], a: 1, fb: 'país → "in Italia".' },
+      { s: 'La macchina ___ amici. (di + gli)', opts: ['di gli', 'degli', 'dei'], a: 1, fb: 'di + gli = "degli".' },
+      { s: 'Vado ___ stazione. (a + la)', opts: ['a la', 'alla', 'allo'], a: 1, fb: 'a + la = "alla".' },
+    ],
+  },
+  {
+    slug: 'ci-e-ci-sono',
+    order: 14,
+    title: 'C’è y ci sono en italiano (hay)',
+    shortTitle: 'C’è / ci sono (hay)',
+    icon: '📍',
+    seoTitle: 'C’è y ci sono en italiano (hay): explicación y ejercicios | A1',
+    seoDescription:
+      'Cómo decir "hay" en italiano con c’è (singular) y ci sono (plural). Forma negativa, preguntas y diferencias con el español. Ejemplos y ejercicios. Nivel A1.',
+    keywords: ['c’è ci sono', 'hay en italiano', 'c’è ci sono diferencia', 'c’è ci sono a1'],
+    intro: [
+      'Para decir "hay" (que algo existe en un lugar), el italiano usa "c’è" y "ci sono". A diferencia del español, donde "hay" es invariable, el italiano DISTINGUE según el número: "c’è" para singular y "ci sono" para plural.',
+      '"C’è un libro sul tavolo" (hay un libro) frente a "Ci sono due libri" (hay dos libros). La elección depende de lo que viene después: singular → c’è; plural → ci sono.',
+      'En negativo se antepone "non": "Non c’è / Non ci sono". Y la pregunta se hace solo con la entonación: "C’è un bar qui vicino?", "Ci sono domande?".',
+    ],
+    sections: [
+      {
+        heading: 'c’è (singular) / ci sono (plural)',
+        body: [
+          'Mira el sustantivo que sigue: singular → "c’è" (C’è un problema); plural → "ci sono" (Ci sono molti turisti).',
+          '"c’è" es la contracción de "ci è"; siempre se escribe "c’è". "ci sono" se escribe separado.',
+        ],
+      },
+      {
+        heading: 'Negativo y pregunta',
+        body: [
+          'Negativo: "Non c’è… / Non ci sono…": "Non c’è latte", "Non ci sono sedie". Pregunta: solo la entonación: "C’è un bagno?", "Ci sono biglietti?". Respuesta corta: "Sì, c’è / No, non c’è".',
+        ],
+      },
+      {
+        heading: 'No confundir con "è" / "sono"',
+        body: [
+          '"c’è/ci sono" expresan existencia ("hay"); "è/sono" expresan identidad/descripción ("es/son"). "C’è un medico" (hay un médico) ≠ "È un medico" (es un médico).',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'c’è / ci sono',
+        headers: ['Forma', 'Singular', 'Plural'],
+        rows: [
+          ['Afirmativa', 'C’è un libro.', 'Ci sono due libri.'],
+          ['Negativa', 'Non c’è pane.', 'Non ci sono sedie.'],
+          ['Pregunta', 'C’è un bar?', 'Ci sono domande?'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'C’è un libro sul tavolo.', es: 'Hay un libro sobre la mesa.', note: 'singular → c’è.' },
+      { en: 'Ci sono due finestre.', es: 'Hay dos ventanas.', note: 'plural → ci sono.' },
+      { en: 'Non c’è latte nel frigo.', es: 'No hay leche en la nevera.', note: 'negativo singular.' },
+      { en: 'Ci sono molti turisti a Roma.', es: 'Hay muchos turistas en Roma.', note: 'plural → ci sono.' },
+      { en: 'C’è un bagno qui?', es: '¿Hay un baño aquí?', note: 'pregunta por entonación.' },
+      { en: 'Sì, c’è. / No, non c’è.', es: 'Sí, lo hay. / No, no hay.', note: 'respuesta corta.' },
+    ],
+    contrast: [
+      { es: 'Hay un problema.', en: 'C’è un problema.', note: 'singular → "c’è".' },
+      { es: 'Hay dos libros.', en: 'Ci sono due libri.', note: 'plural → "ci sono" (el español no cambia).' },
+      { es: 'No hay leche.', en: 'Non c’è latte.', note: 'negativo singular.' },
+      { es: 'Hay muchos turistas.', en: 'Ci sono molti turisti.', note: 'plural → "ci sono".' },
+      { es: '¿Hay un baño?', en: 'C’è un bagno?', note: 'pregunta por entonación.' },
+    ],
+    commonMistakes: [
+      { wrong: 'C’è due libri.', right: 'Ci sono due libri.', note: 'Plural → "ci sono".' },
+      { wrong: 'Ci sono un problema.', right: 'C’è un problema.', note: 'Singular → "c’è".' },
+      { wrong: 'È un libro sul tavolo. (=hay)', right: 'C’è un libro sul tavolo.', note: '"hay" → "c’è", no "è".' },
+      { wrong: 'Non c’è sedie.', right: 'Non ci sono sedie.', note: 'Plural → "ci sono".' },
+      { wrong: 'Ci è un libro.', right: 'C’è un libro.', note: 'Se escribe "c’è".' },
+    ],
+    tip: '"hay" se reparte según el número: "c’è" + singular, "ci sono" + plural. Negativo: "non c’è / non ci sono". No lo confundas con "è/sono" (es/son).',
+    questions: [
+      { s: '___ un libro sul tavolo.', opts: ['C’è', 'Ci sono', 'È'], a: 0, fb: 'singular → "c’è".' },
+      { s: '___ due finestre.', opts: ['C’è', 'Ci sono', 'È'], a: 1, fb: 'plural → "ci sono".' },
+      { s: '___ un problema.', opts: ['C’è', 'Ci sono', 'Sono'], a: 0, fb: 'singular → "c’è".' },
+      { s: '___ molti turisti.', opts: ['C’è', 'Ci sono', 'È'], a: 1, fb: 'plural → "ci sono".' },
+      { s: 'Non ___ latte. (negativo sing.)', opts: ['c’è', 'ci sono', 'è'], a: 0, fb: 'singular → "non c’è".' },
+      { s: 'Non ___ sedie. (negativo pl.)', opts: ['c’è', 'ci sono', 'sono'], a: 1, fb: 'plural → "non ci sono".' },
+      { s: '___ un bar qui vicino? (pregunta)', opts: ['C’è', 'Ci sono', 'È'], a: 0, fb: 'singular → "C’è un bar?".' },
+      { s: '___ domande? (pregunta pl.)', opts: ['C’è', 'Ci sono', 'Sono'], a: 1, fb: 'plural → "Ci sono domande?".' },
+      { s: '"C’è un bagno?" — "Sì, ___."', opts: ['c’è', 'ci sono', 'è'], a: 0, fb: 'respuesta corta → "Sì, c’è".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['C’è due libri.', 'Ci sono due libri.', 'È due libri.'], a: 1, fb: 'plural → "Ci sono due libri".' },
+      { s: '¿Cómo se dice "Hay un problema"?', opts: ['È un problema.', 'C’è un problema.', 'Ci sono un problema.'], a: 1, fb: 'singular → "C’è un problema".' },
+      { s: '___ molte macchine nel parcheggio.', opts: ['C’è', 'Ci sono'], a: 1, fb: 'plural → "ci sono".' },
+      { s: '¿Cuál es CORRECTA? (se escribe)', opts: ['Ci è un libro.', 'C’è un libro.', 'Cie un libro.'], a: 1, fb: 'Se escribe "c’è".' },
+      { s: 'Nel frigo non ___ niente.', opts: ['c’è', 'ci sono'], a: 0, fb: '"niente" (singular) → "non c’è".' },
+    ],
+  },
+  {
+    slug: 'verbos-irregulares-andare-fare-venire',
+    order: 15,
+    title: 'Verbos irregulares frecuentes: andare, fare, venire',
+    shortTitle: 'andare, fare, venire',
+    icon: '🧩',
+    seoTitle: 'Verbos irregulares en italiano (andare, fare, venire): conjugación y ejercicios | A1',
+    seoDescription:
+      'Conjugación en presente de tres verbos irregulares muy frecuentes en italiano: andare (ir), fare (hacer) y venire (venir). Usos, el clima con "fa" y ejercicios. Nivel A1.',
+    keywords: ['verbos irregulares italiano', 'andare fare venire', 'conjugación andare fare venire', 'verbos frecuentes italiano a1'],
+    intro: [
+      'Junto a "essere" y "avere", hay tres verbos irregulares que salen constantemente en el A1: andare (ir), fare (hacer) y venire (venir). No siguen el patrón regular y hay que memorizarlos.',
+      '"andare" expresa movimiento (Vado a Roma) y, con la preposición "a" + infinitivo, intención (Vado a mangiare). "fare" sirve para actividades, tareas, deporte y el clima (faccio sport, fa freddo). "venire" indica procedencia y movimiento hacia el hablante (Vengo dall’Italia).',
+      'Construcción útil con "andare": "andare a + infinitivo" para planes ("Vado a studiare"). Y con el clima, el italiano usa "fa": "fa caldo", "fa freddo" (hace calor/frío), igual que el español "hacer".',
+    ],
+    sections: [
+      {
+        heading: 'andare (ir) y fare (hacer)',
+        body: [
+          'andare: vado, vai, va, andiamo, andate, vanno. Movimiento + intención ("Vado a lavorare").',
+          'fare: faccio, fai, fa, facciamo, fate, fanno. Actividades y clima: fare sport, fare la spesa, fare i compiti; "fa caldo / fa freddo".',
+        ],
+      },
+      {
+        heading: 'venire (venir)',
+        body: [
+          'venire: vengo, vieni, viene, veniamo, venite, vengono. Procedencia: "Vengo dalla Colombia" (vengo de Colombia). Movimiento hacia quien habla: "Vieni alla festa?".',
+        ],
+      },
+      {
+        heading: 'El clima con fare',
+        body: [
+          'Para el tiempo atmosférico, el italiano usa "fa" (de fare): "fa caldo" (hace calor), "fa freddo" (hace frío), "fa bel tempo" (hace buen tiempo). Como el español "hacer".',
+        ],
+      },
+    ],
+    table: null,
+    tables: [
+      {
+        caption: 'andare / fare / venire (presente)',
+        headers: ['Pronombre', 'andare', 'fare', 'venire'],
+        rows: [
+          ['io', 'vado', 'faccio', 'vengo'],
+          ['tu', 'vai', 'fai', 'vieni'],
+          ['lui / lei', 'va', 'fa', 'viene'],
+          ['noi', 'andiamo', 'facciamo', 'veniamo'],
+          ['voi', 'andate', 'fate', 'venite'],
+          ['loro', 'vanno', 'fanno', 'vengono'],
+        ],
+      },
+    ],
+    examples: [
+      { en: 'Vado al lavoro in autobus.', es: 'Voy al trabajo en autobús.', note: 'andare = ir.' },
+      { en: 'Facciamo sport il sabato.', es: 'Hacemos deporte los sábados.', note: 'fare sport.' },
+      { en: 'Oggi fa freddo.', es: 'Hoy hace frío.', note: 'el clima → "fa".' },
+      { en: 'Vengo dalla Colombia.', es: 'Vengo de Colombia.', note: 'venire da = procedencia.' },
+      { en: 'Vai a scuola a piedi?', es: '¿Vas a la escuela a pie?' },
+      { en: 'Loro fanno i compiti.', es: 'Ellos hacen los deberes.', note: 'con "loro" → "fanno".' },
+    ],
+    contrast: [
+      { es: 'Voy a la escuela.', en: 'Vado a scuola.', note: 'andare = ir.' },
+      { es: 'Hace frío.', en: 'Fa freddo.', note: 'el clima con "fare", como "hacer".' },
+      { es: 'Vengo de Colombia.', en: 'Vengo dalla Colombia.', note: 'procedencia → "venire da".' },
+      { es: 'Hacemos las compras.', en: 'Facciamo la spesa.', note: 'fare la spesa.' },
+      { es: '¿Vienes a la fiesta?', en: 'Vieni alla festa?', note: 'venire → "vieni".' },
+    ],
+    commonMistakes: [
+      { wrong: 'Io faccio → "io faco"', right: 'Io faccio', note: '"fare": io → "faccio".' },
+      { wrong: 'Loro fano', right: 'Loro fanno', note: 'Con "loro" → "fanno".' },
+      { wrong: 'È freddo. (clima)', right: 'Fa freddo.', note: 'El clima va con "fare": "fa freddo".' },
+      { wrong: 'Vengo Colombia.', right: 'Vengo dalla Colombia.', note: 'Procedencia → "venire DA".' },
+      { wrong: 'Loro vanno → "loro vano"', right: 'Loro vanno', note: 'Con "loro" → "vanno".' },
+    ],
+    tip: 'Memoriza: andare (vado, vai, va, andiamo, andate, vanno), fare (faccio, fai, fa, facciamo, fate, fanno), venire (vengo, vieni, viene, veniamo, venite, vengono). El clima usa "fa".',
+    questions: [
+      { s: 'Io ___ al lavoro. (andare)', opts: ['vado', 'vai', 'va', 'vanno'], a: 0, fb: 'Con "io" → "vado".' },
+      { s: 'Noi ___ sport. (fare)', opts: ['facciamo', 'fate', 'fanno', 'faccio'], a: 0, fb: 'Con "noi" → "facciamo".' },
+      { s: 'Voi ___ la spesa? (fare)', opts: ['facciamo', 'fate', 'fanno'], a: 1, fb: 'Con "voi" → "fate".' },
+      { s: 'Oggi ___ freddo. (clima)', opts: ['è', 'fa', 'va'], a: 1, fb: 'El clima → "fa freddo".' },
+      { s: 'Io ___ dalla Colombia. (venire)', opts: ['vengo', 'vieni', 'veniamo'], a: 0, fb: 'Con "io" → "vengo".' },
+      { s: 'Loro ___ da Roma. (venire)', opts: ['vengo', 'viene', 'vengono'], a: 2, fb: 'Con "loro" → "vengono".' },
+      { s: 'Tu ___ a scuola? (andare)', opts: ['vado', 'vai', 'va'], a: 1, fb: 'Con "tu" → "vai".' },
+      { s: 'Loro ___ i compiti. (fare)', opts: ['facciamo', 'fate', 'fanno'], a: 2, fb: 'Con "loro" → "fanno".' },
+      { s: 'Io ___ i compiti. (fare)', opts: ['faccio', 'fai', 'fa'], a: 0, fb: 'Con "io" → "faccio".' },
+      { s: 'Oggi ___ caldo. (clima)', opts: ['è', 'fa', 'ha'], a: 1, fb: '"fa caldo".' },
+      { s: '¿Cuál es CORRECTA?', opts: ['Loro fano', 'Loro fanno', 'Loro fate'], a: 1, fb: 'Con "loro" → "fanno".' },
+      { s: '¿Cómo se dice "Vengo de Colombia"?', opts: ['Vengo Colombia.', 'Vengo dalla Colombia.', 'Viene dalla Colombia.'], a: 1, fb: '"Vengo dalla Colombia".' },
+      { s: 'Noi ___ a casa. (andare)', opts: ['vanno', 'andiamo', 'andate'], a: 1, fb: 'Con "noi" → "andiamo".' },
+      { s: '¿Cómo se dice "Hace frío"?', opts: ['È freddo.', 'Fa freddo.', 'Ha freddo.'], a: 1, fb: 'El clima → "Fa freddo".' },
+    ],
+  },
+];
+
+export function getTopic(slug: string): GrammarTopic | undefined {
+  return findTopic(TOPICS, slug);
+}
+
+export function getTopicNav(slug: string): { prev: GrammarTopic | null; next: GrammarTopic | null } {
+  return topicNav(TOPICS, slug);
+}
