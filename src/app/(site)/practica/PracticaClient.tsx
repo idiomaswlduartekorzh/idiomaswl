@@ -6,6 +6,20 @@ import Link from 'next/link';
 import { getStreakInfo, getTotalXP, getTotalCompletedSkills } from '@/lib/progress';
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Exam catalogue
+// ─────────────────────────────────────────────────────────────────────────────
+
+interface ExamEntry {
+  slug: string; flag: string; name: string; tagline: string; color: string; href: string; tools: string;
+}
+
+const EXAMS: ExamEntry[] = [
+  { slug: 'ielts',  flag: '🇬🇧', name: 'IELTS Academic', tagline: 'Reading T/F/NG · Writing Task 1 y Task 2 · Feedback inmediato — Band 6–8.',          color: '#0f3d8c', href: '/practica/ielts',         tools: '3 tipos de ejercicio' },
+  { slug: 'toefl',  flag: '🇺🇸', name: 'TOEFL iBT',      tagline: 'Lectura académica con opción múltiple y explicaciones detalladas — Nivel B2–C1.',    color: '#1a4fcc', href: '/practica/toefl',         tools: '1 pasaje · 6 preguntas'  },
+  { slug: 'icfes',  flag: '🇨🇴', name: 'ICFES Saber 11', tagline: 'Juego adaptativo 4 niveles + cuadernillos oficiales (2019, 2021, 2022, 2023).',       color: '#dc2626', href: '/practica/icfes-saber-11', tools: 'Adaptativo + Simulacros' },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
 // Language catalogue
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -93,188 +107,36 @@ export default function PracticaClient() {
           )}
 
           <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: `${globalStats ? '0' : '0'} 0 2rem` }}>
-            Desglose silábico, pronunciación interactiva y práctica de estrés para exámenes.
+            Practica para tu examen o elige un idioma para desarrollar tus habilidades.
           </p>
 
-          {/* Exam practice block */}
-          <div style={{ marginBottom: '2.5rem' }}>
-            <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--mono)', marginBottom: '0.85rem' }}>
-              Práctica de exámenes
-            </p>
-
-            {/* IELTS hub card */}
-            <Link
-              href="/practica/ielts"
-              style={{
-                display: 'flex', alignItems: 'stretch', textDecoration: 'none', color: 'inherit',
-                background: 'linear-gradient(135deg, rgba(15,61,140,0.07) 0%, rgba(37,99,235,0.04) 100%)',
-                border: '1.5px solid rgba(15,61,140,0.2)', borderRadius: 18, overflow: 'hidden',
-                marginBottom: '0.75rem', transition: 'box-shadow 0.2s, border-color 0.2s',
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(15,61,140,0.14)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(15,61,140,0.4)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(15,61,140,0.2)'; }}
-            >
-              <div style={{ width: 5, background: 'linear-gradient(180deg, #0f3d8c, #2563eb)', flexShrink: 0 }} />
-              <div style={{ padding: '1.4rem 1.75rem', flex: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.55rem' }}>
-                  <span style={{ fontSize: '1.9rem' }}>🇬🇧</span>
-                  <div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                      <span style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--ink)' }}>IELTS Academic</span>
-                      <span style={{ fontSize: '0.62rem', fontWeight: 800, background: '#0f3d8c', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>
-                        DISPONIBLE
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
-                      Reading · Writing Task 1 · Writing Task 2 — Band 6–8
-                    </div>
+          {/* Exam cards — same grid as language cards */}
+          <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--mono)', marginBottom: '0.85rem' }}>
+            Práctica de exámenes
+          </p>
+          <div className="wl-exams-catalog" style={{ marginBottom: '2.5rem' }}>
+            {EXAMS.map(ex => (
+              <Link
+                key={ex.slug}
+                href={ex.href}
+                className="wl-catalog-card"
+                style={{ '--exam-color': ex.color, textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' } as CSSProperties}
+              >
+                <div className="wl-catalog-card__bar" />
+                <div className="wl-catalog-card__body">
+                  <div className="wl-catalog-card__top">
+                    <span className="wl-catalog-card__flag">{ex.flag}</span>
+                    <span className="wl-catalog-card__badge" style={{ background: 'rgba(83,74,183,0.08)', color: '#534AB7', borderColor: 'rgba(83,74,183,0.25)' }}>Disponible</span>
                   </div>
+                  <h2 className="wl-catalog-card__name">{ex.name}</h2>
+                  <p className="wl-catalog-card__tagline">{ex.tagline}</p>
                 </div>
-                <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
-                  {['📖 Reading T/F/NG', '📊 Writing Task 1', '✍️ Writing Task 2', '🎯 Feedback inmediato'].map(tag => (
-                    <span key={tag} style={{ fontSize: '0.7rem', padding: '0.18rem 0.55rem', borderRadius: 6, background: 'rgba(15,61,140,0.08)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
-                      {tag}
-                    </span>
-                  ))}
+                <div className="wl-catalog-card__footer">
+                  <span>{ex.tools}</span>
+                  <span className="wl-catalog-card__cta">Practicar →</span>
                 </div>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#0f3d8c', fontSize: '1.2rem', fontWeight: 700 }}>
-                →
-              </div>
-            </Link>
-
-            {/* TOEFL hub card */}
-            <Link
-              href="/practica/toefl"
-              style={{
-                display: 'flex', alignItems: 'stretch', textDecoration: 'none', color: 'inherit',
-                background: 'linear-gradient(135deg, rgba(26,79,204,0.06) 0%, rgba(59,130,246,0.03) 100%)',
-                border: '1.5px solid rgba(26,79,204,0.18)', borderRadius: 18, overflow: 'hidden',
-                marginBottom: '0.75rem', transition: 'box-shadow 0.2s, border-color 0.2s',
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(26,79,204,0.12)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(26,79,204,0.35)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(26,79,204,0.18)'; }}
-            >
-              <div style={{ width: 5, background: 'linear-gradient(180deg, #1a4fcc, #3b82f6)', flexShrink: 0 }} />
-              <div style={{ padding: '1.1rem 1.75rem', flex: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.45rem' }}>
-                  <span style={{ fontSize: '1.6rem' }}>🇺🇸</span>
-                  <div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                      <span style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--ink)' }}>TOEFL iBT — Reading</span>
-                      <span style={{ fontSize: '0.6rem', fontWeight: 800, background: '#1a4fcc', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>NUEVO</span>
-                    </div>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: '0.1rem' }}>Multiple Choice · Pasaje académico sobre bioluminescencia</div>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  {['📖 6 preguntas', '🎯 Opción múltiple', '💡 Explicaciones detalladas', '⏱️ Nivel B2-C1'].map(tag => (
-                    <span key={tag} style={{ fontSize: '0.68rem', padding: '0.15rem 0.5rem', borderRadius: 6, background: 'rgba(26,79,204,0.08)', color: '#1a4fcc', border: '1px solid rgba(26,79,204,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{tag}</span>
-                  ))}
-                </div>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#1a4fcc', fontSize: '1.1rem', fontWeight: 700 }}>→</div>
-            </Link>
-
-            {/* English Comprehension card */}
-            <Link
-              href="/practica/the-grandmothers-ledger"
-              style={{
-                display: 'flex',
-                alignItems: 'stretch',
-                textDecoration: 'none',
-                color: 'inherit',
-                background: 'linear-gradient(135deg, rgba(5,150,105,0.07) 0%, rgba(16,185,129,0.04) 100%)',
-                border: '1.5px solid rgba(5,150,105,0.2)',
-                borderRadius: 18,
-                overflow: 'hidden',
-                marginBottom: '0.75rem',
-                transition: 'box-shadow 0.2s, border-color 0.2s',
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(5,150,105,0.14)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(5,150,105,0.4)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(5,150,105,0.2)'; }}
-            >
-              <div style={{ width: 5, background: 'linear-gradient(180deg, #059669, #10b981)', flexShrink: 0 }} />
-              <div style={{ padding: '1.4rem 1.75rem', flex: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.55rem' }}>
-                  <span style={{ fontSize: '1.9rem' }}>🎙️</span>
-                  <div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                      <span style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--ink)' }}>The Grandmother&apos;s Ledger</span>
-                      <span style={{ fontSize: '0.62rem', fontWeight: 800, background: '#059669', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>
-                        NUEVO
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
-                      English B1–B2 · Reading + Listening comprehension · Family dispute story
-                    </div>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
-                  {['🎙 2 voice notes', '📖 Reading + Listening', '🧠 19 questions', '📊 Feedback B1–B2'].map(tag => (
-                    <span key={tag} style={{ fontSize: '0.7rem', padding: '0.18rem 0.55rem', borderRadius: 6, background: 'rgba(5,150,105,0.08)', color: '#059669', border: '1px solid rgba(5,150,105,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#059669', fontSize: '1.2rem', fontWeight: 700 }}>
-                →
-              </div>
-            </Link>
-
-            {/* ICFES card */}
-            <Link
-              href="/practica/icfes-saber-11"
-              style={{
-                display: 'flex',
-                alignItems: 'stretch',
-                textDecoration: 'none',
-                color: 'inherit',
-                background: 'linear-gradient(135deg, rgba(220,38,38,0.08) 0%, rgba(83,74,183,0.05) 100%)',
-                border: '1.5px solid rgba(220,38,38,0.2)',
-                borderRadius: 18,
-                overflow: 'hidden',
-                transition: 'box-shadow 0.2s, border-color 0.2s',
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(220,38,38,0.15)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(220,38,38,0.4)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(220,38,38,0.2)'; }}
-            >
-              <div style={{ width: 5, background: 'linear-gradient(180deg, #dc2626, #534AB7)', flexShrink: 0 }} />
-              <div style={{ padding: '1.5rem 1.75rem', flex: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.6rem' }}>
-                  <span style={{ fontSize: '2rem' }}>🇨🇴</span>
-                  <div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)' }}>ICFES Saber 11</span>
-                      <span style={{ fontSize: '0.65rem', fontWeight: 800, background: '#dc2626', color: '#fff', borderRadius: 5, padding: '0.15rem 0.5rem', fontFamily: 'var(--mono)', letterSpacing: '0.05em' }}>
-                        NUEVO
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.15rem' }}>
-                      Juego adaptativo · 4 niveles · Detecta tus puntos débiles
-                    </div>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '0.6rem' }}>
-                  {['🧠 Adaptativo', '💾 Checkpoint', '📋 Avisos + Diálogos', '📖 Lectura + Gramática'].map(tag => (
-                    <span key={tag} style={{ fontSize: '0.72rem', padding: '0.2rem 0.6rem', borderRadius: 6, background: 'rgba(220,38,38,0.08)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <a
-                  href="/practica/icfes-saber-11/examenes"
-                  onClick={e => e.stopPropagation()}
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.75rem', fontWeight: 700, color: '#dc2626', fontFamily: 'var(--mono)', textDecoration: 'underline', textUnderlineOffset: 3 }}
-                >
-                  📄 Simulacros con cuadernillos oficiales (2019, 2022, 2023) →
-                </a>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', paddingRight: '1.5rem', color: '#dc2626', fontSize: '1.2rem', fontWeight: 700 }}>
-                →
-              </div>
-            </Link>
+              </Link>
+            ))}
           </div>
 
           {/* Language tools */}
