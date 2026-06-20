@@ -3,9 +3,10 @@
 import { useState } from 'react'
 import {
   LayoutDashboard, Users, FileText, DollarSign, Settings,
-  Bell, MessageCircle, Globe, ArrowUpRight, Download,
-  Calendar, ChevronDown, BookOpen, GraduationCap, ClipboardCheck,
+  MessageCircle, Globe, BookOpen, GraduationCap, ClipboardCheck,
+  Calendar, Download,
 } from 'lucide-react'
+import type React from 'react'
 import { scoreSubmission } from '@/lib/actions/scoreSubmission'
 import { signOut } from '@/lib/actions/signOut'
 import {
@@ -54,9 +55,14 @@ function Stat({ label, value, sub }: { label: string; value: string; sub: string
   )
 }
 
-function IconBtn({ icon: Icon, active }: { icon: React.ElementType; active?: boolean }) {
+function IconBtn({ icon: Icon, active, onClick, disabled }: { icon: React.ElementType; active?: boolean; onClick?: () => void; disabled?: boolean }) {
   return (
-    <button style={{ width: 36, height: 36, borderRadius: 10, border: 'none', background: active ? A : 'transparent', color: active ? '#fff' : MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', flexShrink: 0 }}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      title={disabled ? 'Próximamente' : undefined}
+      style={{ width: 36, height: 36, borderRadius: 10, border: 'none', background: active ? A : 'transparent', color: active ? '#fff' : disabled ? BORDER : MUTED, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: onClick ? 'pointer' : 'default', flexShrink: 0 }}
+    >
       <Icon size={17} />
     </button>
   )
@@ -208,8 +214,21 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
+type Tab = 'overview' | 'students' | 'leads'
+
+const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null }[] = [
+  { Icon: LayoutDashboard, tab: 'overview' },
+  { Icon: Users,           tab: 'students' },
+  { Icon: BookOpen,        tab: null },
+  { Icon: MessageCircle,   tab: 'leads' },
+  { Icon: FileText,        tab: null },
+  { Icon: DollarSign,      tab: null },
+  { Icon: Settings,        tab: null },
+  { Icon: Globe,           tab: null },
+]
+
 export default function JoseDashboard({ data }: { data: DashboardData }) {
-  const [activeTab, setActiveTab] = useState<'overview' | 'students' | 'leads'>('overview')
+  const [activeTab, setActiveTab] = useState<Tab>('overview')
 
   const now = new Date()
   const dateStr = now.toLocaleDateString('es-ES', {
@@ -235,17 +254,14 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
         <div style={{ width: 36, height: 36, background: A, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
           <GraduationCap size={18} color="#fff" />
         </div>
-        {[
-          { Icon: LayoutDashboard, active: true },
-          { Icon: Users },
-          { Icon: BookOpen },
-          { Icon: MessageCircle },
-          { Icon: FileText },
-          { Icon: DollarSign },
-          { Icon: Settings },
-          { Icon: Globe },
-        ].map(({ Icon, active }, i) => (
-          <IconBtn key={i} icon={Icon} active={active} />
+        {SIDEBAR_ITEMS.map(({ Icon, tab }, i) => (
+          <IconBtn
+            key={i}
+            icon={Icon}
+            active={tab !== null && activeTab === tab}
+            onClick={tab ? () => setActiveTab(tab) : undefined}
+            disabled={tab === null}
+          />
         ))}
       </aside>
 
@@ -327,7 +343,7 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
                 </div>
               </div>
               <Card>
-                <StudentList students={data.students} />
+                <StudentList students={data.students} submissions={data.submissions} />
               </Card>
             </div>
           )}
@@ -415,19 +431,9 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
           {/* ── OVERVIEW TAB ── */}
           {activeTab === 'overview' && <>
 
-          {/* Title + filters */}
+          {/* Title */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <h1 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>Overview</h1>
-            <div style={{ display: 'flex', gap: 8 }}>
-              {[
-                { icon: Globe, label: 'Filtrar región' },
-                { icon: Calendar, label: 'Filtrar fecha' },
-              ].map(({ icon: Icon, label }) => (
-                <button key={label} style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '7px 13px', borderRadius: 20, border: `1px solid ${BORDER}`, background: CARD, fontSize: 11, color: TEXT, cursor: 'pointer', fontWeight: 500, boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-                  <Icon size={12} /> {label} <ChevronDown size={11} />
-                </button>
-              ))}
-            </div>
           </div>
 
           {/* KPI strip */}
@@ -508,11 +514,8 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
 
             {/* Estado exámenes — per-exam summary */}
             <Card style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 6 }}>
+              <div style={{ marginBottom: 6 }}>
                 <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700 }}>Estado exámenes</h3>
-                <button style={{ width: 26, height: 26, borderRadius: 7, border: `1px solid ${BORDER}`, background: 'transparent', color: MUTED, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <ArrowUpRight size={13} />
-                </button>
               </div>
               <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>
                 Estudiantes únicos: <strong style={{ color: TEXT, fontWeight: 700 }}>{data.topUsers.length}</strong>
@@ -550,11 +553,8 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
 
             {/* Recent submissions table */}
             <Card>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+              <div style={{ marginBottom: 12 }}>
                 <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700 }}>Últimos simulacros</h3>
-                <button style={{ width: 26, height: 26, borderRadius: 7, border: `1px solid ${BORDER}`, background: 'transparent', color: MUTED, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Download size={13} />
-                </button>
               </div>
               {data.recentSubmissions.length === 0 ? (
                 <p style={{ color: MUTED, fontSize: 13, textAlign: 'center', padding: '20px 0' }}>Sin simulacros registrados aún</p>

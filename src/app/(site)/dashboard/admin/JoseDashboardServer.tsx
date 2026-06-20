@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import JoseDashboard from './JoseDashboard'
 import type { StudentRow } from './StudentList'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
+import type { StudentSubject } from '@/lib/actions/inviteStudent'
 
 export interface ExamSubmission {
   id: string
@@ -111,7 +112,7 @@ export default async function JoseDashboardServer() {
   // ── Students list ────────────────────────────────────────────────────────────
   const { data: profileRows } = await supabase
     .from('profiles')
-    .select('id, email, full_name, plan, enrolled_at, created_at')
+    .select('id, email, full_name, plan, subject, enrolled_at, created_at')
     .eq('role', 'student')
     .order('created_at', { ascending: false })
 
@@ -134,6 +135,7 @@ export default async function JoseDashboardServer() {
     email:           p.email,
     full_name:       p.full_name ?? null,
     plan:            (p.plan as StudentPlan) ?? 'autodidacta',
+    subject:         (p.subject as StudentSubject | null) ?? null,
     enrolled_at:     p.enrolled_at ?? p.created_at ?? null,
     simulacro_count: simCountMap.get(p.id) ?? 0,
     last_active:     lastActiveMap.get(p.id) ?? null,
