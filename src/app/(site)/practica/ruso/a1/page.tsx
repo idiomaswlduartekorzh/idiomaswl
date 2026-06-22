@@ -12,7 +12,7 @@ const COLOR = '#cc0000';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Чтение', eng: 'Lectura', desc: '5 textos A1 en cirílico con transliteración y vocabulario interactivo. Priviet! Знакомство, семья, дом, еда.', count: '5 textos · 25 preguntas', href: '/practica/ruso/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Грамматика', eng: 'Gramática', desc: 'Alfabeto, pronombres, caso nominativo, conjugación presente (1ª y 2ª conjugación), números y adjetivos.', count: '5 temas · 40+ ejercicios', href: '/practica/ruso/a1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Грамматика', eng: 'Gramática', desc: 'Alfabeto cirílico, pronombres, género, posesivos, conjugaciones, casos (acusativo, preposicional, genitivo), números, pasado, futuro y negación. Con transliteración.', count: '15 temas · 180+ ejercicios', href: '/practica/ruso/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Письмо', eng: 'Escritura', desc: '5 tareas guiadas: presentarse, describir la familia, tu ciudad, actividades y gustos. En cirílico o transliteración.', count: '5 prompts guiados', href: '/practica/ruso/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Разговор', eng: 'Expresión oral', desc: '12 frases esenciales de supervivencia en ruso: cirílico + transliteración + pronunciación para hispanohablantes.', count: '12 frases esenciales', href: '/practica/ruso/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Словарь', eng: 'Vocabulario', desc: '6 sets temáticos con cirílico + transliteración + español: семья, цвета, еда, дни, тело, числа.', count: '6 sets · 60+ palabras', href: '/practica/ruso/a1/vocabulario' },

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const COLOR = '#bc002d';
 
-interface ReadingText { id: number; title: string; titleRom: string; titleEs: string; topic: string; words: number; grammar: string; text: string; textRom: string; vocab: Record<string, [string, string]>; preQ: { q: string; opts: string[] }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
+interface ReadingText { id: number; title: string; titleRom: string; titleEs: string; topic: string; words: number; grammar: string; text: string; textRom: string; vocab: Record<string, [string, string]>; goal: string; keyVocab: { w: string; t: string }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
 
 const TEXTS: ReadingText[] = [
   {
@@ -26,9 +26,14 @@ const TEXTS: ReadingText[] = [
       'しゅみは': ['shumi wa', 'hobby (tema は)'],
       'おんがく': ['ongaku', 'música'],
     },
-    preQ: [
-      { q: '¿Qué comida japonesa conoces?', opts: ['Sushi', 'Ramen', 'Tempura', 'Todas'] },
-      { q: '¿Has estudiado algún idioma antes?', opts: ['Sí, uno', 'Sí, varios', 'Estoy empezando'] },
+    goal: 'Lee la presentación de María y averigua: ¿de dónde es, dónde vive ahora, qué estudia y qué le gusta?',
+    keyVocab: [
+      { w: 'わたしは (watashi wa)', t: 'yo (tema)' },
+      { w: '〜じんです (jin desu)', t: 'soy (gentilicio) de…' },
+      { w: 'すんでいます (sunde imasu)', t: 'vivo' },
+      { w: 'べんきょうしています', t: 'estoy estudiando' },
+      { w: 'すきな (sukina)', t: 'favorito/a' },
+      { w: 'しゅみ (shumi)', t: 'hobby' },
     ],
     mcq: [
       { q: '¿Qué significa "コロンビアじんです"?', cat: 'Vocabulario', opts: ['Vivo en Colombia', 'Soy colombiano/a', 'Me gusta Colombia', 'Vengo de Colombia hoy'], a: 1, fb: '"コロンビアじん" = colombiano/a. 人(じん/jin) = persona de un país. Ej: にほんじん=japonés, アメリカじん=americano.' },
@@ -59,9 +64,14 @@ const TEXTS: ReadingText[] = [
       'なまえ': ['namae', 'nombre (名前)'],
       'だいすき': ['daisuki', 'amar mucho / me encanta (大好き)'],
     },
-    preQ: [
-      { q: '¿Cuántos son en tu familia?', opts: ['2-3 personas', '4-5 personas', '6 o más'] },
-      { q: '¿Tienes mascotas?', opts: ['Gato', 'Perro', 'Otra mascota', 'No'] },
+    goal: 'Lee el texto y averigua: ¿cuántos son en la familia, a qué se dedican y qué mascota tienen?',
+    keyVocab: [
+      { w: 'かぞく (kazoku)', t: 'familia' },
+      { w: '〜にん (nin)', t: 'contador de personas' },
+      { w: 'かいしゃいん (kaishain)', t: 'empleado de empresa' },
+      { w: 'せんせい (sensei)', t: 'profesor/a' },
+      { w: 'ねこ (neko)', t: 'gato' },
+      { w: 'います (imasu)', t: 'hay / está (seres vivos)' },
     ],
     mcq: [
       { q: '¿Cuántos son en la familia?', cat: 'Comprensión', opts: ['3人', '4人', '5人', '6人'], a: 1, fb: '"よにんです" (yo-nin desu) = somos cuatro. 四(よん/yo) = 4; 人(にん/nin) = personas.' },
@@ -91,9 +101,14 @@ const TEXTS: ReadingText[] = [
       'じゅういちじ': ['juuichiji', 'las 11 (十一時)'],
       'ねます': ['nemasu', 'me duermo / duermo (ねる=dormir)'],
     },
-    preQ: [
-      { q: '¿A qué hora te levantas normalmente?', opts: ['Antes de las 7', '7-8h', 'Después de las 8'] },
-      { q: '¿Dónde estudias con más frecuencia?', opts: ['En casa', 'En la biblioteca', 'En un café', 'En la universidad'] },
+    goal: 'Lee la rutina y averigua: ¿a qué hora se levanta, dónde estudia y qué hace por la noche?',
+    keyVocab: [
+      { w: 'まいにち (mainichi)', t: 'todos los días' },
+      { w: 'おきます (okimasu)', t: 'me levanto' },
+      { w: 'いきます (ikimasu)', t: 'voy' },
+      { w: 'べんきょうします', t: 'estudio' },
+      { w: 'がくしょく (gakushoku)', t: 'cafetería universitaria' },
+      { w: 'ねます (nemasu)', t: 'me duermo' },
     ],
     mcq: [
       { q: '¿A qué hora se levanta?', cat: 'Comprensión', opts: ['ごじ (5:00)', 'ろくじ (6:00)', 'しちじ (7:00)', 'はちじ (8:00)'], a: 1, fb: '"ろくじに おきます" = Me levanto a las 6. ろく = 6; じ = hora; に = partícula de hora.' },
@@ -123,9 +138,14 @@ const TEXTS: ReadingText[] = [
       'レジで': ['reji de', 'en la caja/caja registradora'],
       'はらいます': ['haraimasu', 'pago (払います, de 払う=pagar)'],
     },
-    preQ: [
-      { q: '¿Con qué frecuencia vas al supermercado?', opts: ['Todos los días', 'Varias veces/semana', 'Una vez/semana', 'Menos'] },
-      { q: '¿Sabes los números del 100 al 1000 en japonés?', opts: ['Sí', 'Algunos', 'No aún'] },
+    goal: 'Lee el diálogo de compras y averigua: ¿qué compra, a qué precio y cuántas unidades pide?',
+    keyVocab: [
+      { w: 'かいもの (kaimono)', t: 'compras' },
+      { w: 'かいます (kaimasu)', t: 'compro' },
+      { w: 'いくらですか (ikura desu ka)', t: '¿cuánto cuesta?' },
+      { w: '〜えん (en)', t: 'yenes' },
+      { w: '〜を ください (o kudasai)', t: 'deme…, por favor' },
+      { w: 'パンや (panya)', t: 'panadería' },
     ],
     mcq: [
       { q: '"いくらですか？" significa:', cat: 'Vocabulario', opts: ['¿Dónde está?', '¿Cuánto cuesta?', '¿Qué es esto?', '¿Cuántos hay?'], a: 1, fb: '"いくらですか？" (ikura desu ka?) = ¿cuánto cuesta? La pregunta de precio más importante en japonés.' },
@@ -154,9 +174,14 @@ const TEXTS: ReadingText[] = [
       'ひとが おおい': ['hito ga ooi', 'hay mucha gente (人が多い)'],
       'にぎやかです': ['nigiyaka desu', 'es animado/bullicioso (賑やか)'],
     },
-    preQ: [
-      { q: '¿Cómo describes tu ciudad o barrio?', opts: ['Muy animada', 'Tranquila', 'Está creciendo', 'Es un pueblo pequeño'] },
-      { q: '¿Qué tienes cerca de tu casa?', opts: ['Tiendas/cafés', 'Parques', 'Estación de tren/metro', 'Todo lo anterior'] },
+    goal: 'Lee la descripción de la ciudad y averigua: ¿qué lugares hay cerca, qué NO hay y cómo es la ciudad?',
+    keyVocab: [
+      { w: 'まち (machi)', t: 'ciudad / pueblo' },
+      { w: 'ちかくに (chikaku ni)', t: 'cerca' },
+      { w: 'あります (arimasu)', t: 'hay (objetos/lugares)' },
+      { w: 'ありません (arimasen)', t: 'no hay' },
+      { w: 'こうえん (kōen)', t: 'parque' },
+      { w: 'にぎやか (nigiyaka)', t: 'animado / bullicioso' },
     ],
     mcq: [
       { q: '"あります" vs "ありません" — ¿cuál es la diferencia?', cat: 'Gramática', opts: ['"あります" = es; "ありません" = no es', '"あります" = hay/existe; "ありません" = no hay/no existe', '"あります" = va; "ありません" = no va', 'Son contrarios pero de distinto verbo'], a: 1, fb: '"あります" (arimasu) = hay / existe (para objetos inanimados y lugares). "ありません" (arimasen) = no hay / no existe. La negación de -masu es siempre -masen.' },
@@ -172,7 +197,6 @@ const TEXTS: ReadingText[] = [
 
 function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
   const [phase, setPhase] = useState<'pre' | 'read' | 'questions' | 'done'>('pre');
-  const [preAnswers, setPreAnswers] = useState<Record<number, number>>({});
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [activeInfo, setActiveInfo] = useState<[string, string] | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -190,7 +214,7 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
         <button onClick={onBack} className="btn btn-ghost btn-sm">← テキスト一覧</button>
-        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>テキスト {t.id} / 3 — {t.titleEs}</span>
+        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>テキスト {t.id} / 5 — {t.titleEs}</span>
       </div>
 
       <div style={{ display: 'flex', gap: '0.5rem' }}>
@@ -210,16 +234,21 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
       {phase === 'pre' && (
         <div className="wl-card" style={{ padding: '1.5rem' }}>
           <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />読む前に — antes de leer</p>
-          {t.preQ.map((pq, i) => (
-            <div key={i} style={{ marginBottom: '1.25rem' }}>
-              <p style={{ margin: '0 0 0.65rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.96rem' }}>{i + 1}. {pq.q}</p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {pq.opts.map((opt, oi) => (
-                  <button key={oi} onClick={() => setPreAnswers(p => ({ ...p, [i]: oi }))} className={preAnswers[i] === oi ? 'btn btn-sm' : 'btn btn-ghost btn-sm'} style={{ fontSize: '0.84rem' }}>{opt}</button>
-                ))}
+          {/* Objetivo de lectura */}
+          <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: `${COLOR}0d`, border: `1px solid ${COLOR}2a`, marginBottom: '1.25rem' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin: 0, fontWeight: 600, color: 'var(--ink)', fontSize: '0.95rem', lineHeight: 1.55 }}>{t.goal}</p>
+          </div>
+          {/* Vocabulario clave */}
+          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.6rem' }}>📚 Vocabulario clave — apréndelo antes de leer</div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '0.5rem', marginBottom: '1.25rem' }}>
+            {t.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding: '0.6rem 0.85rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.88rem' }}>{kv.w}</div>
+                <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>{kv.t}</div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <button className="btn btn-sm" onClick={() => setPhase('read')} style={{ background: COLOR, borderColor: COLOR }}>読み始める →</button>
         </div>
       )}
@@ -351,7 +380,7 @@ export default function LecturaJaponesA1() {
         </div>
         <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />読む · Lectura Japonés A1</p>
         <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Lectura A1</h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 540, margin: '0 0 2rem' }}>3 textos en ひらがな・カタカナ con romaji disponible. Vocabulario interactivo: haz clic en palabras resaltadas.</p>
+        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 540, margin: '0 0 2rem' }}>5 textos en ひらがな・カタカナ con romaji disponible. Vocabulario interactivo: haz clic en palabras resaltadas.</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
           {TEXTS.map((t, i) => (
             <button key={t.id} onClick={() => setSelected(i)} style={{ textAlign: 'left', appearance: 'none', background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'inherit', font: 'inherit' }}>
