@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Gramática de Japonés A1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/japones/a1/gramatica"
+        url="https://www.idiomaswl.com/practica/japones/a1/gramatica"
         description="Ejercicios interactivos de gramática de Japonés nivel A1 con feedback inmediato y explicaciones."
       />
       <Content />

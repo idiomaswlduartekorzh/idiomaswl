@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Japonés A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Japonés A1: Hiragana, Katakana, ～は～です, あります/います, números y vocabulario esencial. Todo con romaji.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/japones/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/japones/a1' },
 };
 
 const COLOR = '#bc002d';
@@ -27,7 +27,7 @@ export default function JaponesA1Page() {
     <CourseSchema
       name="Japonés A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Japonés nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/japones/a1"
+      url="https://www.idiomaswl.com/practica/japones/a1"
       educationalLevel="A1"
       teaches="Japonés, habilidades MCER"
       inLanguage="ja"

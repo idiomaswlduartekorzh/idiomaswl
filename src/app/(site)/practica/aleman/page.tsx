@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Práctica de Alemán — Elige tu nivel MCER | Idiomas WeLearn',
   description: 'Ejercicios interactivos de alemán por nivel: A1 disponible con lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/aleman' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman' },
 };
 
 const COLOR = '#dd0000';
@@ -29,7 +29,7 @@ export default function AlemanPage() {
     <CourseSchema
       name="Práctica de Alemán — Ejercicios interactivos MCER"
       description="Ejercicios de alemán por nivel MCER: A1 y A2 disponibles. Vocabulario, gramática, escritura, habla y escucha."
-      url="https://idiomaswl.com/practica/aleman"
+      url="https://www.idiomaswl.com/practica/aleman"
       educationalLevel="A1,A2"
       teaches="Alemán, Goethe-Zertifikat"
       inLanguage="de"

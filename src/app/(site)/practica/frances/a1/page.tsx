@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Francés A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Francés A1: lectura, gramática (articles, être, avoir), escritura, expresión oral, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/frances/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/frances/a1' },
 };
 
 const COLOR = '#003189';
@@ -27,7 +27,7 @@ export default function FrancesA1Page() {
     <CourseSchema
       name="Francés A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Francés nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/frances/a1"
+      url="https://www.idiomaswl.com/practica/frances/a1"
       educationalLevel="A1"
       teaches="Francés, habilidades MCER"
       inLanguage="fr"

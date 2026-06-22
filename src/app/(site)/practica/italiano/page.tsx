@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Práctica de Italiano — Elige tu nivel MCER | Idiomas WeLearn',
   description: 'Ejercicios interactivos de italiano por nivel MCER. A1 disponible con lectura, gramática, escritura, expresión oral, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/italiano' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano' },
 };
 
 const COLOR = '#009246';
@@ -29,7 +29,7 @@ export default function ItalianoPage() {
     <CourseSchema
       name="Práctica de Italiano — Ejercicios interactivos MCER"
       description="Ejercicios de italiano por nivel MCER: A1 disponible. Vocabulario, gramática, escritura, habla y escucha."
-      url="https://idiomaswl.com/practica/italiano"
+      url="https://www.idiomaswl.com/practica/italiano"
       educationalLevel="A1"
       teaches="Italiano, CILS, CELI"
       inLanguage="it"

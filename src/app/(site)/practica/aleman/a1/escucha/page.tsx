@@ -5,7 +5,7 @@ import TTSPlayer from '@/components/practica/TTSPlayer';
 export const metadata: Metadata = {
   title: 'Deutsch A1 Hörverstehen — Próximamente | Idiomas WeLearn',
   description: 'Ejercicios de comprensión auditiva A1 en alemán. Diálogos auténticos con hablantes nativos en preparación.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/aleman/a1/escucha' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a1/escucha' },
 };
 
 const COLOR = '#dd0000';

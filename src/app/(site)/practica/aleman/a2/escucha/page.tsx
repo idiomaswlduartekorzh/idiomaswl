@@ -5,7 +5,7 @@ import TTSPlayer from '@/components/practica/TTSPlayer';
 export const metadata: Metadata = {
   title: 'Deutsch A2 Hörverstehen — Próximamente | Idiomas WeLearn',
   description: 'Ejercicios de comprensión auditiva A2 en alemán. Diálogos A2 con scripts completos, preguntas y vocabulario.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/aleman/a2/escucha' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a2/escucha' },
 };
 
 const COLOR = '#0369a1';

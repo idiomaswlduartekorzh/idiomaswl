@@ -15,6 +15,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: 'https://idiomaswl.com/sitemap.xml',
+    sitemap: 'https://www.idiomaswl.com/sitemap.xml',
   };
 }

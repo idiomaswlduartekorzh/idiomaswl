@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     'TOEFL Bucaramanga', 'preparación IELTS Bucaramanga', 'inglés online Bucaramanga',
     'clases inglés Santander Colombia', 'paquetes de inglés Bucaramanga',
   ],
-  alternates: { canonical: 'https://idiomaswl.com/clases-de-ingles-bucaramanga' },
+  alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga' },
   openGraph: {
     title: 'Clases de Inglés en Bucaramanga — Academia WeLearn',
     description: 'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL e ICFES. Diagnóstico gratis. Paquetes con descuento.',
-    url: 'https://idiomaswl.com/clases-de-ingles-bucaramanga',
+    url: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga',
   },
 };
 
@@ -39,10 +39,10 @@ const jsonLd = {
       '@type': ['LocalBusiness', 'LanguageSchool'],
       name: 'Idiomas WeLearn',
       alternateName: 'WeLearn Academia de Idiomas',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
       email: 'info@idiomaswl.com',
-      image: 'https://idiomaswl.com/images/david-duarte.jpg',
+      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
       priceRange: '$$',
       currenciesAccepted: 'COP',
       paymentAccepted: 'Cash, Credit Card, Transfer',
@@ -135,9 +135,9 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de Inglés', item: 'https://idiomaswl.com/clases-de-ingles' },
-        { '@type': 'ListItem', position: 3, name: 'Clases de Inglés en Bucaramanga', item: 'https://idiomaswl.com/clases-de-ingles-bucaramanga' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Inglés', item: 'https://www.idiomaswl.com/clases-de-ingles' },
+        { '@type': 'ListItem', position: 3, name: 'Clases de Inglés en Bucaramanga', item: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga' },
       ],
     },
   ],

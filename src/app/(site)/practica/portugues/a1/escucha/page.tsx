@@ -5,7 +5,7 @@ import TTSPlayer from '@/components/practica/TTSPlayer';
 export const metadata: Metadata = {
   title: 'Português A1 Compreensão auditiva — Próximamente | Idiomas WeLearn',
   description: 'Exercícios de compreensão auditiva A1 em português brasileiro. Diálogos autênticos em preparação.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/portugues/a1/escucha' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/a1/escucha' },
 };
 
 const COLOR = '#009c3b';

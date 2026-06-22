@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     openGraph: {
       title: `${exam.name} — Simulacros y preparación`,
       description: exam.tagline,
-      url: `https://idiomaswl.com/examenes/${slug}`,
+      url: `https://www.idiomaswl.com/examenes/${slug}`,
     },
     alternates: {
-      canonical: `https://idiomaswl.com/examenes/${slug}`,
+      canonical: `https://www.idiomaswl.com/examenes/${slug}`,
     },
   };
 }

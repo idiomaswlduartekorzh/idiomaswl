@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Ruso A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Ruso A1: alfabeto cirílico, gramática (casos, conjugaciones), escritura, frases esenciales y vocabulario con transliteración.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ruso/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso/a1' },
 };
 
 const COLOR = '#cc0000';
@@ -27,7 +27,7 @@ export default function RusoA1Page() {
     <CourseSchema
       name="Ruso A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Ruso nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/ruso/a1"
+      url="https://www.idiomaswl.com/practica/ruso/a1"
       educationalLevel="A1"
       teaches="Ruso, habilidades MCER"
       inLanguage="ru"

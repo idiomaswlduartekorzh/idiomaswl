@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Práctica de Francés — Elige tu nivel MCER | Idiomas WeLearn',
   description: 'Ejercicios interactivos de francés por nivel: A1 disponible con lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/frances' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/frances' },
 };
 
 const COLOR = '#003189';
@@ -29,7 +29,7 @@ export default function FrancesPage() {
     <CourseSchema
       name="Práctica de Francés — Ejercicios interactivos MCER"
       description="Ejercicios de francés por nivel MCER: A1 y A2 disponibles. Vocabulario, gramática, escritura, habla y escucha."
-      url="https://idiomaswl.com/practica/frances"
+      url="https://www.idiomaswl.com/practica/frances"
       educationalLevel="A1,A2"
       teaches="Francés, DELF, DALF"
       inLanguage="fr"

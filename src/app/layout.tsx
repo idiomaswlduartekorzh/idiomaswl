@@ -12,7 +12,7 @@ const geistSans = Geist({
 });
 
 
-const BASE_URL = 'https://idiomaswl.com';
+const BASE_URL = 'https://www.idiomaswl.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

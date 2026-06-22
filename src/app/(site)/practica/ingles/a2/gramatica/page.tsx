@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Gramática de Inglés A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/ingles/a2/gramatica"
+        url="https://www.idiomaswl.com/practica/ingles/a2/gramatica"
         description="Ejercicios interactivos de gramática de Inglés nivel A2 con feedback inmediato y explicaciones."
       />
       <Content />

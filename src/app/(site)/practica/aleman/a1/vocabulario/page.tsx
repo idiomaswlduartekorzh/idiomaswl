@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Alemán A1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/aleman/a1/vocabulario"
+        url="https://www.idiomaswl.com/practica/aleman/a1/vocabulario"
         description="Ejercicios de vocabulario de Alemán nivel A1: tarjetas, listas temáticas y práctica activa."
       />
       <Content />

@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Miembro Fundador Coreano — 50 Cupos · WeLearn',
     description: '50 cupos con precio vitalicio congelado. Únete a los primeros estudiantes de coreano en WeLearn.',
-    url: 'https://idiomaswl.com/miembro-fundador',
+    url: 'https://www.idiomaswl.com/miembro-fundador',
   },
-  alternates: { canonical: 'https://idiomaswl.com/miembro-fundador' },
+  alternates: { canonical: 'https://www.idiomaswl.com/miembro-fundador' },
 };
 
 const courseJsonLd = {
@@ -29,11 +29,11 @@ const courseJsonLd = {
   name: 'Coreano con WeLearn — Miembro Fundador',
   description:
     'Programa completo de coreano online con tutor 1:1, método de 17 pasos y preparación para TOPIK I y II. Acceso vitalicio al precio fundador para los primeros 50 estudiantes.',
-  url: 'https://idiomaswl.com/miembro-fundador',
+  url: 'https://www.idiomaswl.com/miembro-fundador',
   provider: {
     '@type': 'Organization',
     name: 'WeLearn',
-    url: 'https://idiomaswl.com',
+    url: 'https://www.idiomaswl.com',
   },
   educationalLevel: 'Beginner to Intermediate',
   teaches: 'Korean language (한국어), TOPIK I, TOPIK II',
@@ -48,7 +48,7 @@ const courseJsonLd = {
       availability: 'https://schema.org/LimitedAvailability',
       availabilityStarts: '2025-01-01',
       eligibleQuantity: { '@type': 'QuantitativeValue', value: 50, unitText: 'cupos' },
-      seller: { '@type': 'Organization', name: 'WeLearn', url: 'https://idiomaswl.com' },
+      seller: { '@type': 'Organization', name: 'WeLearn', url: 'https://www.idiomaswl.com' },
     },
   },
 };
@@ -107,8 +107,8 @@ export default function MiembroFundadorPage() {
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-            { '@type': 'ListItem', position: 2, name: 'Miembro Fundador', item: 'https://idiomaswl.com/miembro-fundador' },
+            { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+            { '@type': 'ListItem', position: 2, name: 'Miembro Fundador', item: 'https://www.idiomaswl.com/miembro-fundador' },
           ],
         }) }}
       />

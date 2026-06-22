@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Gramática Italiana — Práctica intensiva | Idiomas WeLearn',
   description:
     'Ejercicio interactivo de gramática italiana: artículos, tiempos verbales, pronombres relativos y más. Temporizador, 3 vidas y 4 niveles progresivos.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/italiano/grammatica' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/grammatica' },
 };
 
 export default function Page() {

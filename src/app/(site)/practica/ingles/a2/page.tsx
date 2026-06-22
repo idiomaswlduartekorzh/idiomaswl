@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Inglés A2 — Elige una habilidad | Idiomas WeLearn',
   description: 'Inglés A2: pasado simple, comparativos, present continuous, going to/will y modales. Lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/a2' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/a2' },
 };
 
 const COLOR = '#0066cc';
@@ -54,7 +54,7 @@ export default function InglesA2Page() {
     <CourseSchema
       name="Inglés A2 — Lectura, Gramática, Vocabulario y más"
       description="Practica Inglés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/ingles/a2"
+      url="https://www.idiomaswl.com/practica/ingles/a2"
       educationalLevel="A2"
       teaches="Inglés, habilidades MCER"
       inLanguage="in"

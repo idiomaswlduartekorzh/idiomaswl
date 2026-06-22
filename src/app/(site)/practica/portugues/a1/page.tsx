@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Portugués A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Portugués A1: leitura, gramática (artigos, ser/estar, verbos -AR), escritura, expressão oral, vocabulário e escuta.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/portugues/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/a1' },
 };
 
 const COLOR = '#009c3b';
@@ -27,7 +27,7 @@ export default function PortuguesA1Page() {
     <CourseSchema
       name="Portugués A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Portugués nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/portugues/a1"
+      url="https://www.idiomaswl.com/practica/portugues/a1"
       educationalLevel="A1"
       teaches="Portugués, habilidades MCER"
       inLanguage="po"

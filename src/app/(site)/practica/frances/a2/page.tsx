@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Francés A2 — Elige una habilidad | Idiomas WeLearn',
   description: 'Francés A2: lectura, gramática (passé composé, imparfait, pronoms COD/COI, comparatif/superlatif, futur), escritura, expresión oral, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/frances/a2' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/frances/a2' },
 };
 
 const COLOR = '#003189';
@@ -27,7 +27,7 @@ export default function FrancesA2Page() {
     <CourseSchema
       name="Francés A2 — Lectura, Gramática, Vocabulario y más"
       description="Practica Francés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/frances/a2"
+      url="https://www.idiomaswl.com/practica/frances/a2"
       educationalLevel="A2"
       teaches="Francés, habilidades MCER"
       inLanguage="fr"

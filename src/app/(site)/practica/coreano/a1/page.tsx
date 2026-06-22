@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Coreano A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Coreano A1: Hangul, 이에요/예요, partículas (은/는 이/가 을/를), números y verbos -아/어요. Todo con romanización.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/coreano/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano/a1' },
 };
 
 const COLOR = '#534AB7';
@@ -27,7 +27,7 @@ export default function CoreanoA1Page() {
     <CourseSchema
       name="Coreano A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Coreano nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/coreano/a1"
+      url="https://www.idiomaswl.com/practica/coreano/a1"
       educationalLevel="A1"
       teaches="Coreano, habilidades MCER"
       inLanguage="co"

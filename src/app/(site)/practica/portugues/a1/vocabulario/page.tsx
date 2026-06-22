@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Portugués A1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/portugues/a1/vocabulario"
+        url="https://www.idiomaswl.com/practica/portugues/a1/vocabulario"
         description="Ejercicios de vocabulario de Portugués nivel A1: tarjetas, listas temáticas y práctica activa."
       />
       <Content />

@@ -27,11 +27,11 @@ export const metadata: Metadata = {
     'Cambridge B2 First Colombia', 'FCE preparación Colombia', 'FCE Bucaramanga',
     'inglés para trabajo', 'inglés para migrar',
   ],
-  alternates: { canonical: 'https://idiomaswl.com/clases-de-ingles' },
+  alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles' },
   openGraph: {
     title: 'Clases de Inglés en Bucaramanga y Online — IELTS, TOEFL, ICFES | WeLearn',
     description: 'Academia de inglés en Bucaramanga. Preparación IELTS, TOEFL e ICFES con método propio. Clase de diagnóstico gratis para toda Colombia.',
-    url: 'https://idiomaswl.com/clases-de-ingles',
+    url: 'https://www.idiomaswl.com/clases-de-ingles',
   },
 };
 
@@ -104,7 +104,7 @@ const jsonLd = {
       provider: {
         '@type': 'EducationalOrganization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       offers: {
         '@type': 'Offer',
@@ -117,10 +117,10 @@ const jsonLd = {
       '@type': ['LocalBusiness', 'LanguageSchool'],
       name: 'Idiomas WeLearn',
       alternateName: 'WeLearn Academia de Idiomas',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
       email: 'info@idiomaswl.com',
-      image: 'https://idiomaswl.com/images/david-duarte.jpg',
+      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
       priceRange: '$$',
       currenciesAccepted: 'COP',
       paymentAccepted: 'Cash, Credit Card, Transfer',
@@ -148,14 +148,14 @@ const jsonLd = {
       openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
       sameAs: [
         'https://wa.me/573005004253',
-        'https://idiomaswl.com',
+        'https://www.idiomaswl.com',
       ],
     },
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de Inglés', item: 'https://idiomaswl.com/clases-de-ingles' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Inglés', item: 'https://www.idiomaswl.com/clases-de-ingles' },
       ],
     },
   ],

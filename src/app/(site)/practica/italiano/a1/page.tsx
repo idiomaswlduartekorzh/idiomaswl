@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Italiano A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Italiano A1: lectura con textos cortos, gramática (artículos, essere, avere, verbos), escritura guiada, expresión oral y vocabulario temático.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/italiano/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/a1' },
 };
 
 const COLOR = '#009246';
@@ -27,7 +27,7 @@ export default function ItalianoA1Page() {
     <CourseSchema
       name="Italiano A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Italiano nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/italiano/a1"
+      url="https://www.idiomaswl.com/practica/italiano/a1"
       educationalLevel="A1"
       teaches="Italiano, habilidades MCER"
       inLanguage="it"

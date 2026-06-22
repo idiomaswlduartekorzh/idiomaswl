@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Alemán A2 — Grundkenntnisse | Idiomas WeLearn',
   description: 'Alemán A2: Perfekt, Dativ, Modalverben im Präteritum, trennbare Verben und Komparativ. 6 habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/aleman/a2' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a2' },
 };
 
 const COLOR = '#dd0000';
@@ -27,7 +27,7 @@ export default function AlemanA2Page() {
     <CourseSchema
       name="Alemán A2 — Lectura, Gramática, Vocabulario y más"
       description="Practica Alemán nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/aleman/a2"
+      url="https://www.idiomaswl.com/practica/aleman/a2"
       educationalLevel="A2"
       teaches="Alemán, habilidades MCER"
       inLanguage="al"

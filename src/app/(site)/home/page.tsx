@@ -22,10 +22,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Idiomas WeLearn — Aprende un idioma, en serio',
     description: 'Once pasos diarios que imitan cómo el cerebro interioriza un idioma. Gratis para empezar.',
-    url: 'https://idiomaswl.com/home',
+    url: 'https://www.idiomaswl.com/home',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/home',
+    canonical: 'https://www.idiomaswl.com/home',
   },
 };
 
@@ -34,12 +34,12 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://idiomaswl.com/#organization',
+      '@id': 'https://www.idiomaswl.com/#organization',
       name: 'Idiomas WeLearn',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://idiomaswl.com/images/welearn-logo.png',
+        url: 'https://www.idiomaswl.com/images/welearn-logo.png',
       },
       description:
         'Plataforma de aprendizaje de idiomas con el método WeLearn: once etapas diarias para interiorizar vocabulario, gramática y pronunciación.',
@@ -47,36 +47,36 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://idiomaswl.com/#website',
-      url: 'https://idiomaswl.com',
+      '@id': 'https://www.idiomaswl.com/#website',
+      url: 'https://www.idiomaswl.com',
       name: 'Idiomas WeLearn',
       description: 'Aprende coreano, inglés, francés y más con once pasos diarios.',
-      publisher: { '@id': 'https://idiomaswl.com/#organization' },
+      publisher: { '@id': 'https://www.idiomaswl.com/#organization' },
     },
     {
       '@type': 'EducationalOrganization',
-      '@id': 'https://idiomaswl.com/#edu',
+      '@id': 'https://www.idiomaswl.com/#edu',
       name: 'Idiomas WeLearn',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       description: 'Plataforma educativa para aprender idiomas y prepararse para certificaciones internacionales como TOEFL, IELTS e ICFES.',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Idiomas disponibles',
         itemListElement: [
-          { '@type': 'Course', name: 'Coreano', description: 'Aprende coreano desde cero con el método WeLearn.', provider: { '@id': 'https://idiomaswl.com/#organization' } },
-          { '@type': 'Course', name: 'Inglés — TOEFL / IELTS / ICFES', description: 'Prepárate para certificaciones de inglés con simulacros completos.', provider: { '@id': 'https://idiomaswl.com/#organization' } },
-          { '@type': 'Course', name: 'Francés — DELF/DALF', description: 'Aprende francés y practica para el DELF.', provider: { '@id': 'https://idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Coreano', description: 'Aprende coreano desde cero con el método WeLearn.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Inglés — TOEFL / IELTS / ICFES', description: 'Prepárate para certificaciones de inglés con simulacros completos.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Francés — DELF/DALF', description: 'Aprende francés y practica para el DELF.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
         ],
       },
     },
     {
       '@type': 'Person',
-      '@id': 'https://idiomaswl.com/#david',
+      '@id': 'https://www.idiomaswl.com/#david',
       name: 'José David Duarte Silva',
       jobTitle: 'Políglota y co-fundador de Idiomas WeLearn',
       description: 'Políglota en 8 idiomas (español, inglés, coreano, alemán, portugués, italiano, francés y mandatario), docente de idiomas y fundador de WeLearn. Especialista en preparación de exámenes internacionales.',
-      url: 'https://idiomaswl.com/home',
-      worksFor: { '@id': 'https://idiomaswl.com/#organization' },
+      url: 'https://www.idiomaswl.com/home',
+      worksFor: { '@id': 'https://www.idiomaswl.com/#organization' },
       knowsLanguage: ['es', 'en', 'ko', 'de', 'pt', 'it', 'fr'],
     },
   ],

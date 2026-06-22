@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     title: 'Preparación Inglés ICFES Saber 11 — WeLearn',
     description:
       'Simulacros completos, análisis por sección y clases 1:1. Sube tu puntaje de inglés en el ICFES. Para estudiantes de todo Colombia.',
-    url: 'https://idiomaswl.com/preparacion-icfes',
+    url: 'https://www.idiomaswl.com/preparacion-icfes',
   },
-  alternates: { canonical: 'https://idiomaswl.com/preparacion-icfes' },
+  alternates: { canonical: 'https://www.idiomaswl.com/preparacion-icfes' },
 };
 
 const faqJsonLd = {
@@ -74,7 +74,7 @@ const jsonLd = {
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: [
         {
@@ -95,7 +95,7 @@ const jsonLd = {
     {
       '@type': 'LocalBusiness',
       name: 'Idiomas WeLearn',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
       address: {
         '@type': 'PostalAddress',
@@ -107,8 +107,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Preparación ICFES Inglés', item: 'https://idiomaswl.com/preparacion-icfes' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Preparación ICFES Inglés', item: 'https://www.idiomaswl.com/preparacion-icfes' },
       ],
     },
   ],

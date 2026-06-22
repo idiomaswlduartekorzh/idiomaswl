@@ -5,7 +5,7 @@ import TTSPlayer from '@/components/practica/TTSPlayer';
 export const metadata: Metadata = {
   title: 'Français A1 Compréhension orale — Próximamente | Idiomas WeLearn',
   description: 'Ejercicios de comprensión auditiva A1 de francés. Diálogos auténticos en preparación.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/frances/a1/escucha' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/frances/a1/escucha' },
 };
 
 const COLOR = '#003189';

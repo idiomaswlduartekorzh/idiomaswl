@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Gramática de Francés A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/frances/a2/gramatica"
+        url="https://www.idiomaswl.com/practica/frances/a2/gramatica"
         description="Ejercicios interactivos de gramática de Francés nivel A2 con feedback inmediato y explicaciones."
       />
       <Content />

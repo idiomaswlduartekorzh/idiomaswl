@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Gramática de Coreano A1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/coreano/a1/gramatica"
+        url="https://www.idiomaswl.com/practica/coreano/a1/gramatica"
         description="Ejercicios interactivos de gramática de Coreano nivel A1 con feedback inmediato y explicaciones."
       />
       <Content />

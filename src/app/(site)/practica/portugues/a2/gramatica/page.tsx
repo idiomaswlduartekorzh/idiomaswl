@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Gramática de Portugués A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/portugues/a2/gramatica"
+        url="https://www.idiomaswl.com/practica/portugues/a2/gramatica"
         description="Ejercicios interactivos de gramática de Portugués nivel A2 con feedback inmediato y explicaciones."
       />
       <Content />

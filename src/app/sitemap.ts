@@ -1,7 +1,24 @@
 import type { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/blog';
+import { TOPICS as INGLES_GRAMMAR } from '@/data/practica/ingles-a1-gramatica';
+import { TOPICS as FRANCES_GRAMMAR } from '@/data/practica/frances-a1-gramatica';
+import { TOPICS as ITALIANO_GRAMMAR } from '@/data/practica/italiano-a1-gramatica';
+import { TOPICS as PORTUGUES_GRAMMAR } from '@/data/practica/portugues-a1-gramatica';
+import { TOPICS as ALEMAN_GRAMMAR } from '@/data/practica/aleman-a1-gramatica';
 
-const BASE = 'https://idiomaswl.com';
+// www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
+// Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
+const BASE = 'https://www.idiomaswl.com';
+
+// Temas de gramática A1 con URL propia (una por tema) — clave para que Google
+// muestre estas páginas al buscar "verbo to be explicación", etc.
+const A1_GRAMMAR = [
+  { lang: 'ingles', topics: INGLES_GRAMMAR },
+  { lang: 'frances', topics: FRANCES_GRAMMAR },
+  { lang: 'italiano', topics: ITALIANO_GRAMMAR },
+  { lang: 'portugues', topics: PORTUGUES_GRAMMAR },
+  { lang: 'aleman', topics: ALEMAN_GRAMMAR },
+] as const;
 
 const PUBLISHED_DAYS = [1, 2, 3, 4, 6, 7];
 
@@ -87,6 +104,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
+
+    // ── Practice — A1 grammar topics (one indexable URL per topic) ─────────────
+    ...A1_GRAMMAR.flatMap(({ lang, topics }) =>
+      topics.map((t) => ({
+        url: `${BASE}/practica/${lang}/a1/gramatica/${t.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.72,
+      }))
+    ),
 
     // ── Practice — IELTS ──────────────────────────────────────────────────────
     { url: `${BASE}/practica/ielts`,                          lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },

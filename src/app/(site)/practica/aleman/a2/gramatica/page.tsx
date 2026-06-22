@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Gramática de Alemán A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/aleman/a2/gramatica"
+        url="https://www.idiomaswl.com/practica/aleman/a2/gramatica"
         description="Ejercicios interactivos de gramática de Alemán nivel A2 con feedback inmediato y explicaciones."
       />
       <Content />

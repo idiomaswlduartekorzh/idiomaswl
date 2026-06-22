@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Alemán A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Alemán A1: Lesen, Grammatik (Artikel, sein, Pronomen), Schreiben, Sprechen, Vokabular und Hören.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/aleman/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a1' },
 };
 
 const COLOR = '#dd0000';
@@ -27,7 +27,7 @@ export default function AlemanA1Page() {
     <CourseSchema
       name="Alemán A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Alemán nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/aleman/a1"
+      url="https://www.idiomaswl.com/practica/aleman/a1"
       educationalLevel="A1"
       teaches="Alemán, habilidades MCER"
       inLanguage="al"
