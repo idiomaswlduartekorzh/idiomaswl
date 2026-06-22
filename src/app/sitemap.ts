@@ -5,6 +5,7 @@ import { TOPICS as FRANCES_GRAMMAR } from '@/data/practica/frances-a1-gramatica'
 import { TOPICS as ITALIANO_GRAMMAR } from '@/data/practica/italiano-a1-gramatica';
 import { TOPICS as PORTUGUES_GRAMMAR } from '@/data/practica/portugues-a1-gramatica';
 import { TOPICS as ALEMAN_GRAMMAR } from '@/data/practica/aleman-a1-gramatica';
+import { TOPICS as COREANO_GRAMMAR } from '@/data/practica/coreano-a1-gramatica';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -18,6 +19,7 @@ const A1_GRAMMAR = [
   { lang: 'italiano', topics: ITALIANO_GRAMMAR },
   { lang: 'portugues', topics: PORTUGUES_GRAMMAR },
   { lang: 'aleman', topics: ALEMAN_GRAMMAR },
+  { lang: 'coreano', topics: COREANO_GRAMMAR },
 ] as const;
 
 const PUBLISHED_DAYS = [1, 2, 3, 4, 6, 7];

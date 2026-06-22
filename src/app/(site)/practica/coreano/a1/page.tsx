@@ -12,7 +12,7 @@ const COLOR = '#534AB7';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: '읽기 (Ilgi)', eng: 'Lectura', desc: '5 textos A1 en Hangul con romanización y vocabulario interactivo. 안녕하세요! Familia, casa, comida.', count: '5 textos · 25 preguntas', href: '/practica/coreano/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: '문법 (Munbeop)', eng: 'Gramática', desc: 'Hangul, 이에요/예요, partículas esenciales (은/는 이/가 을/를), números y verbos -아/어요.', count: '5 temas · 40+ ejercicios', href: '/practica/coreano/a1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: '문법 (Munbeop)', eng: 'Gramática', desc: 'Hangul, 이에요/예요, partículas (은/는 이/가 을/를 에/에서), presente, números, negación, pasado, -고 싶어요 y más. Con romanización.', count: '15 temas · 190+ ejercicios', href: '/practica/coreano/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: '쓰기 (Sseugi)', eng: 'Escritura', desc: '5 tareas guiadas: presentarse en coreano, familia, gustos. Acepta Hangul o romanización.', count: '5 prompts guiados', href: '/practica/coreano/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: '말하기 (Malhagi)', eng: 'Expresión oral', desc: '12 frases esenciales en coreano: Hangul + romanización + guía de pronunciación para hispanohablantes.', count: '12 frases esenciales', href: '/practica/coreano/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: '어휘 (Eohwi)', eng: 'Vocabulario', desc: '6 sets temáticos: 가족, 색깔, 음식, 요일, 신체, 숫자. Hangul + romanización + español.', count: '6 sets · 60+ palabras', href: '/practica/coreano/a1/vocabulario' },
