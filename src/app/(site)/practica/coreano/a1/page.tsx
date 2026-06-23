@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
   title: 'Coreano A1 — Elige una habilidad | Idiomas WeLearn',
@@ -79,6 +80,11 @@ export default function CoreanoA1Page() {
         </div>
       </div>
     </section>
+    <PracticaWABanner
+      idioma="coreano"
+      color="#534AB7"
+      msg="Hola, estoy practicando coreano en WeLearn y me gustaría agendar mi clase de diagnóstico gratis."
+    />
     </>
   );
 }

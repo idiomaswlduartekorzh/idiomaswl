@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import InglesA1Client from './InglesA1Client'
 import { CourseSchema } from '@/components/practica/EducationSchema'
+import { PracticaWABanner } from '@/components/PracticaWABanner'
 
 export const metadata: Metadata = {
   title: 'Inglés A1 — Elige una habilidad | Idiomas WeLearn',
@@ -20,6 +21,11 @@ export default function InglesA1Page() {
         inLanguage="en"
       />
       <InglesA1Client />
+      <PracticaWABanner
+        idioma="inglés"
+        color="#0066cc"
+        msg="Hola, estoy practicando inglés en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+      />
     </>
   )
 }

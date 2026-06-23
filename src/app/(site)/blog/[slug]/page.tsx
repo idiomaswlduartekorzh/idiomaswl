@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { BLOG_POSTS, getPostBySlug, getAllSlugs } from '@/data/blog';
+import { BlogScrollCapture } from '@/components/BlogScrollCapture';
 import s from './page.module.css';
 
 // ── Static params ─────────────────────────────────────────────────────────
@@ -275,7 +276,7 @@ export default async function BlogArticlePage(
             <p className={s.ctaDesc}>{cta.desc}</p>
             <div className={s.ctaActions}>
               <a
-                href={`https://wa.me/${WA}?text=${encodeURIComponent(cta.msg)}`}
+                href={`https://wa.me/${WA}?text=${encodeURIComponent(`${cta.msg} (Blog: ${post.slug})`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={s.ctaBtn}
@@ -308,5 +309,10 @@ export default async function BlogArticlePage(
         </article>
       </div>
     </main>
+    <BlogScrollCapture
+      slug={post.slug}
+      category={post.category}
+      waMsg={`${cta.msg} (Blog: ${post.slug})`}
+    />
   );
 }
