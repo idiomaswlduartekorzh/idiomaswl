@@ -4,86 +4,83 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
-  title: 'Inglés A2 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Inglés A2: pasado simple, comparativos, present continuous, going to/will y modales. Lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/a2' },
+  title: 'Japonés A2 — Elige una habilidad | Idiomas WeLearn',
+  description: 'Japonés A2: て-form, た-form, ～ています, ～たいです, ～ことができます, ～なければなりません. Lectura, gramática, vocabulario, escritura, habla y escucha.',
+  alternates: { canonical: 'https://idiomaswl.com/practica/japones/a2' },
 };
 
-const COLOR = '#0066cc';
+const COLOR = '#bc002d';
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Reading',
-    desc: '5 textos A2 (80-120 palabras): viajes, trabajo, opiniones. Vocabulario clickeable, 6 preguntas por texto.',
-    count: '5 textos · 30 preguntas', href: '/practica/ingles/a2/lectura', available: true,
+    id: 'lectura', emoji: '📖', name: '読む (Yomu)', eng: 'Lectura',
+    desc: '5 textos A2 en japonés (80-120 palabras) con romaji. Vocabulario interactivo clickeable, 6 preguntas por texto.',
+    count: '5 textos · 30 preguntas', href: '/practica/japones/a2/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Pasado simple, comparativos, present continuous, going to/will y modales. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ingles/a2/gramatica', available: true,
+    id: 'gramatica', emoji: '📐', name: '文法 (Bunpō)', eng: 'Gramática',
+    desc: 'て-form, た-form (pasado), ～ています, ～たいです (querer), ～ことができます (poder) y ～なければなりません (deber).',
+    count: '5 temas · 50+ ejercicios', href: '/practica/japones/a2/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',
-    desc: '5 tareas A2 con gramática integrada, modelo y checklist de revisión.',
-    count: '5 prompts guiados', href: '/practica/ingles/a2/escritura', available: true,
+    id: 'escritura', emoji: '✍️', name: '書く (Kaku)', eng: 'Escritura',
+    desc: '5 tareas A2 guiadas: emails, relatos, comparaciones. Acepta romaji o hiragana/katakana.',
+    count: '5 prompts guiados', href: '/practica/japones/a2/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Speaking',
-    desc: '20 frases A2 con contexto situacional, pronunciación y variantes formal/informal.',
-    count: '20 frases esenciales', href: '/practica/ingles/a2/habla', available: true,
+    id: 'habla', emoji: '🗣️', name: '話す (Hanasu)', eng: 'Expresión oral',
+    desc: '20 frases A2 con contexto situacional, romaji y guía de pronunciación para hispanohablantes.',
+    count: '20 frases esenciales', href: '/practica/japones/a2/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulary',
-    desc: '8 sets temáticos × 10 palabras. 3 modos de práctica: flashcard, MCQ y escribir.',
-    count: '8 sets · 80+ palabras', href: '/practica/ingles/a2/vocabulario', available: true,
+    id: 'vocabulario', emoji: '📚', name: '語彙 (Goi)', eng: 'Vocabulario',
+    desc: '8 sets temáticos × 10 palabras. Script japonés + romaji + español. 3 modos de práctica.',
+    count: '8 sets · 80+ palabras', href: '/practica/japones/a2/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: '3 diálogos A2 completos con scripts. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/ingles/a2/escucha', available: true,
+    id: 'escucha', emoji: '🎧', name: '聞く (Kiku)', eng: 'Escucha',
+    desc: '3 diálogos A2 completos con scripts en japonés y romaji. Audios en preparación.',
+    count: '3 diálogos próximamente', href: '/practica/japones/a2/escucha', available: true,
   },
 ];
 
 const COLORS: Record<string, string> = {
-  lectura: '#0066cc', gramatica: '#7c3aed', escritura: '#059669',
+  lectura: '#bc002d', gramatica: '#7c3aed', escritura: '#059669',
   habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1',
 };
 
-export default function InglesA2Page() {
+export default function JaponesA2Page() {
   return (
     <>
     <CourseSchema
-      name="Inglés A2 — Lectura, Gramática, Vocabulario y más"
-      description="Practica Inglés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/ingles/a2"
+      name="Japonés A2 — Lectura, Gramática, Vocabulario y más"
+      description="Practica Japonés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
+      url="https://idiomaswl.com/practica/japones/a2"
       educationalLevel="A2"
-      teaches="Inglés, habilidades MCER"
-      inLanguage="in"
+      teaches="Japonés, habilidades MCER"
+      inLanguage="ja"
     />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
-        {/* Breadcrumb */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
           <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
           <span>/</span>
-          <Link href="/practica/ingles" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇬🇧 Inglés</Link>
+          <Link href="/practica/japones" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇯🇵 Japonés</Link>
           <span>/</span>
           <span style={{ color: COLOR, fontWeight: 800 }}>A2</span>
         </div>
 
-        {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
           <div style={{ width: 56, height: 56, borderRadius: 14, background: COLOR, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem', fontWeight: 900, fontFamily: 'var(--mono)', flexShrink: 0 }}>A2</div>
           <div>
-            <p className="eyebrow" style={{ marginBottom: '0.2rem' }}><span className="ink-line" />Inglés A2 — Elemental</p>
+            <p className="eyebrow" style={{ marginBottom: '0.2rem' }}><span className="ink-line" />Japonés A2 — 初級</p>
             <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700 }}>Elige una habilidad</h1>
           </div>
         </div>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 2.5rem' }}>
-          Seis habilidades para consolidar el inglés elemental. Practica pasado simple, comparativos y modales.
+          Seis habilidades para consolidar el japonés elemental. Practica て-form, た-form, ～ています y más.
         </p>
 
-        {/* Habilidad grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
           {HABILIDADES.map(h => {
             const c = COLORS[h.id] ?? COLOR;
@@ -120,16 +117,15 @@ export default function InglesA2Page() {
           })}
         </div>
 
-        {/* Tip */}
-        <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,102,204,0.06)', border: '1px solid rgba(0,102,204,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: '#7c3aed' }}>Gramática</strong> para entender el pasado simple, luego practica con <strong style={{ color: COLOR }}>Lectura</strong> usando textos del mundo real.
+        <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(188,0,45,0.06)', border: '1px solid rgba(188,0,45,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+          💡 <strong style={{ color: 'var(--ink)' }}>ヒント (consejo):</strong> Empieza por <strong style={{ color: '#7c3aed' }}>文法 · Gramática</strong> para aprender la て-form — la llave de la gramática A2. Luego combínala con <strong style={{ color: COLOR }}>読む · Lectura</strong> para textos reales.
         </div>
       </div>
     </section>
     <PracticaWABanner
-      idioma="inglés"
-      color="#0066cc"
-      msg="Hola, estoy practicando inglés A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+      idioma="japonés"
+      color="#bc002d"
+      msg="Hola, estoy practicando japonés A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
     />
     </>
   );

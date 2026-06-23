@@ -4,86 +4,83 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
-  title: 'Inglés A2 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Inglés A2: pasado simple, comparativos, present continuous, going to/will y modales. Lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/a2' },
+  title: 'Italiano A2 — Elige una habilidad | Idiomas WeLearn',
+  description: 'Italiano A2: passato prossimo, imperfetto, futuro semplice, pronomi e comparativi. Lectura, gramática, vocabulario, escritura, habla y escucha.',
+  alternates: { canonical: 'https://idiomaswl.com/practica/italiano/a2' },
 };
 
-const COLOR = '#0066cc';
+const COLOR = '#009246';
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Reading',
-    desc: '5 textos A2 (80-120 palabras): viajes, trabajo, opiniones. Vocabulario clickeable, 6 preguntas por texto.',
-    count: '5 textos · 30 preguntas', href: '/practica/ingles/a2/lectura', available: true,
+    id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lettura',
+    desc: '5 testi A2 (80-120 palabras): viajes, trabajo, ciudad, amigos. Vocabulario clickeable, 6 domande per testo.',
+    count: '5 testi · 30 domande', href: '/practica/italiano/a2/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Pasado simple, comparativos, present continuous, going to/will y modales. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ingles/a2/gramatica', available: true,
+    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatica',
+    desc: 'Passato prossimo (essere/avere), imperfetto, futuro semplice, pronomi diretti/indiretti e comparativi.',
+    count: '5 temi · 50+ esercizi', href: '/practica/italiano/a2/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',
-    desc: '5 tareas A2 con gramática integrada, modelo y checklist de revisión.',
-    count: '5 prompts guiados', href: '/practica/ingles/a2/escritura', available: true,
+    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Scrittura',
+    desc: '5 compiti guidati A2 con modello e checklist di revisione: email, racconto, descrizione.',
+    count: '5 prompts guiados', href: '/practica/italiano/a2/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Speaking',
-    desc: '20 frases A2 con contexto situacional, pronunciación y variantes formal/informal.',
-    count: '20 frases esenciales', href: '/practica/ingles/a2/habla', available: true,
+    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Parlato',
+    desc: '20 frasi A2 con contesto situazionale, pronuncia e varianti formale/informale.',
+    count: '20 frasi essenziali', href: '/practica/italiano/a2/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulary',
-    desc: '8 sets temáticos × 10 palabras. 3 modos de práctica: flashcard, MCQ y escribir.',
-    count: '8 sets · 80+ palabras', href: '/practica/ingles/a2/vocabulario', available: true,
+    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabolario',
+    desc: '8 set tematici × 10 parole. 3 modalità: flashcard, scelta multipla e scrittura.',
+    count: '8 set · 80+ parole', href: '/practica/italiano/a2/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: '3 diálogos A2 completos con scripts. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/ingles/a2/escucha', available: true,
+    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Ascolto',
+    desc: '3 dialoghi A2 completi con script. Audio in preparazione.',
+    count: '3 dialoghi prossimamente', href: '/practica/italiano/a2/escucha', available: true,
   },
 ];
 
 const COLORS: Record<string, string> = {
-  lectura: '#0066cc', gramatica: '#7c3aed', escritura: '#059669',
+  lectura: '#009246', gramatica: '#7c3aed', escritura: '#059669',
   habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1',
 };
 
-export default function InglesA2Page() {
+export default function ItalianoA2Page() {
   return (
     <>
     <CourseSchema
-      name="Inglés A2 — Lectura, Gramática, Vocabulario y más"
-      description="Practica Inglés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/ingles/a2"
+      name="Italiano A2 — Lectura, Gramática, Vocabulario y más"
+      description="Practica Italiano nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
+      url="https://idiomaswl.com/practica/italiano/a2"
       educationalLevel="A2"
-      teaches="Inglés, habilidades MCER"
-      inLanguage="in"
+      teaches="Italiano, habilidades MCER"
+      inLanguage="it"
     />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
-        {/* Breadcrumb */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
           <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
           <span>/</span>
-          <Link href="/practica/ingles" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇬🇧 Inglés</Link>
+          <Link href="/practica/italiano" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇮🇹 Italiano</Link>
           <span>/</span>
           <span style={{ color: COLOR, fontWeight: 800 }}>A2</span>
         </div>
 
-        {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
           <div style={{ width: 56, height: 56, borderRadius: 14, background: COLOR, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem', fontWeight: 900, fontFamily: 'var(--mono)', flexShrink: 0 }}>A2</div>
           <div>
-            <p className="eyebrow" style={{ marginBottom: '0.2rem' }}><span className="ink-line" />Inglés A2 — Elemental</p>
+            <p className="eyebrow" style={{ marginBottom: '0.2rem' }}><span className="ink-line" />Italiano A2 — Elementare</p>
             <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700 }}>Elige una habilidad</h1>
           </div>
         </div>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 2.5rem' }}>
-          Seis habilidades para consolidar el inglés elemental. Practica pasado simple, comparativos y modales.
+          Sei abilità per consolidare l&apos;italiano elementare. Practica passato prossimo, imperfetto, futuro semplice e pronomi.
         </p>
 
-        {/* Habilidad grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
           {HABILIDADES.map(h => {
             const c = COLORS[h.id] ?? COLOR;
@@ -120,16 +117,15 @@ export default function InglesA2Page() {
           })}
         </div>
 
-        {/* Tip */}
-        <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,102,204,0.06)', border: '1px solid rgba(0,102,204,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: '#7c3aed' }}>Gramática</strong> para entender el pasado simple, luego practica con <strong style={{ color: COLOR }}>Lectura</strong> usando textos del mundo real.
+        <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,146,70,0.06)', border: '1px solid rgba(0,146,70,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+          💡 <strong style={{ color: 'var(--ink)' }}>Consiglio:</strong> Inizia con <strong style={{ color: '#7c3aed' }}>Gramática</strong> per padroneggiare il passato prossimo, poi esercitati con <strong style={{ color: COLOR }}>Lettura</strong> usando testi autentici.
         </div>
       </div>
     </section>
     <PracticaWABanner
-      idioma="inglés"
-      color="#0066cc"
-      msg="Hola, estoy practicando inglés A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+      idioma="italiano"
+      color="#009246"
+      msg="Hola, estoy practicando italiano A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
     />
     </>
   );

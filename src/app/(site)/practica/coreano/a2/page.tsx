@@ -4,86 +4,83 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
-  title: 'Inglés A2 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Inglés A2: pasado simple, comparativos, present continuous, going to/will y modales. Lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/a2' },
+  title: 'Coreano A2 — Elige una habilidad | Idiomas WeLearn',
+  description: 'Coreano A2: 았/었어요 (pasado), -(으)려고 하다 (intención), -(으)ㄹ 것 같다 (conjetura), -지만 (contraste), -아/어서 (causa/secuencia). 6 habilidades interactivas.',
+  alternates: { canonical: 'https://idiomaswl.com/practica/coreano/a2' },
 };
 
-const COLOR = '#0066cc';
+const COLOR = '#534AB7';
 
 const HABILIDADES = [
   {
-    id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Reading',
-    desc: '5 textos A2 (80-120 palabras): viajes, trabajo, opiniones. Vocabulario clickeable, 6 preguntas por texto.',
-    count: '5 textos · 30 preguntas', href: '/practica/ingles/a2/lectura', available: true,
+    id: 'lectura', emoji: '📖', name: '읽기 (Ilgi)', eng: 'Lectura',
+    desc: '5 textos A2 en Hangul (80-120 palabras) con romanización. Vocabulario interactivo, 6 preguntas por texto.',
+    count: '5 textos · 30 preguntas', href: '/practica/coreano/a2/lectura', available: true,
   },
   {
-    id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Pasado simple, comparativos, present continuous, going to/will y modales. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ingles/a2/gramatica', available: true,
+    id: 'gramatica', emoji: '📐', name: '문법 (Munbeop)', eng: 'Gramática',
+    desc: '았/었어요 (pasado), -(으)려고 하다 (intención), -(으)ㄹ 것 같다 (conjetura), -지만 (contraste) y -아/어서 (causa/secuencia).',
+    count: '5 temas · 50+ ejercicios', href: '/practica/coreano/a2/gramatica', available: true,
   },
   {
-    id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',
-    desc: '5 tareas A2 con gramática integrada, modelo y checklist de revisión.',
-    count: '5 prompts guiados', href: '/practica/ingles/a2/escritura', available: true,
+    id: 'escritura', emoji: '✍️', name: '쓰기 (Sseugi)', eng: 'Escritura',
+    desc: '5 tareas A2 guiadas: emails, relatos, comparaciones. Acepta Hangul o romanización.',
+    count: '5 prompts guiados', href: '/practica/coreano/a2/escritura', available: true,
   },
   {
-    id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Speaking',
-    desc: '20 frases A2 con contexto situacional, pronunciación y variantes formal/informal.',
-    count: '20 frases esenciales', href: '/practica/ingles/a2/habla', available: true,
+    id: 'habla', emoji: '🗣️', name: '말하기 (Malhagi)', eng: 'Expresión oral',
+    desc: '20 frases A2 con contexto situacional, Hangul + romanización + guía de pronunciación.',
+    count: '20 frases esenciales', href: '/practica/coreano/a2/habla', available: true,
   },
   {
-    id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulary',
-    desc: '8 sets temáticos × 10 palabras. 3 modos de práctica: flashcard, MCQ y escribir.',
-    count: '8 sets · 80+ palabras', href: '/practica/ingles/a2/vocabulario', available: true,
+    id: 'vocabulario', emoji: '📚', name: '어휘 (Eohwi)', eng: 'Vocabulario',
+    desc: '8 sets temáticos × 10 palabras. Hangul + romanización + español. 3 modos de práctica.',
+    count: '8 sets · 80+ palabras', href: '/practica/coreano/a2/vocabulario', available: true,
   },
   {
-    id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: '3 diálogos A2 completos con scripts. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/ingles/a2/escucha', available: true,
+    id: 'escucha', emoji: '🎧', name: '듣기 (Deutgi)', eng: 'Escucha',
+    desc: '3 diálogos A2 completos con scripts en Hangul y romanización. Audios en preparación.',
+    count: '3 diálogos próximamente', href: '/practica/coreano/a2/escucha', available: true,
   },
 ];
 
 const COLORS: Record<string, string> = {
-  lectura: '#0066cc', gramatica: '#7c3aed', escritura: '#059669',
+  lectura: '#534AB7', gramatica: '#7c3aed', escritura: '#059669',
   habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1',
 };
 
-export default function InglesA2Page() {
+export default function CoreanoA2Page() {
   return (
     <>
     <CourseSchema
-      name="Inglés A2 — Lectura, Gramática, Vocabulario y más"
-      description="Practica Inglés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/ingles/a2"
+      name="Coreano A2 — Lectura, Gramática, Vocabulario y más"
+      description="Practica Coreano nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
+      url="https://idiomaswl.com/practica/coreano/a2"
       educationalLevel="A2"
-      teaches="Inglés, habilidades MCER"
-      inLanguage="in"
+      teaches="Coreano, habilidades MCER"
+      inLanguage="ko"
     />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
-        {/* Breadcrumb */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
           <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
           <span>/</span>
-          <Link href="/practica/ingles" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇬🇧 Inglés</Link>
+          <Link href="/practica/coreano" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇰🇷 Coreano</Link>
           <span>/</span>
           <span style={{ color: COLOR, fontWeight: 800 }}>A2</span>
         </div>
 
-        {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
           <div style={{ width: 56, height: 56, borderRadius: 14, background: COLOR, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem', fontWeight: 900, fontFamily: 'var(--mono)', flexShrink: 0 }}>A2</div>
           <div>
-            <p className="eyebrow" style={{ marginBottom: '0.2rem' }}><span className="ink-line" />Inglés A2 — Elemental</p>
+            <p className="eyebrow" style={{ marginBottom: '0.2rem' }}><span className="ink-line" />Coreano A2 — 초급</p>
             <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700 }}>Elige una habilidad</h1>
           </div>
         </div>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 2.5rem' }}>
-          Seis habilidades para consolidar el inglés elemental. Practica pasado simple, comparativos y modales.
+          Seis habilidades para consolidar el coreano elemental. Practica el pasado, intención, conjetura y estructuras de contraste.
         </p>
 
-        {/* Habilidad grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
           {HABILIDADES.map(h => {
             const c = COLORS[h.id] ?? COLOR;
@@ -120,16 +117,15 @@ export default function InglesA2Page() {
           })}
         </div>
 
-        {/* Tip */}
-        <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(0,102,204,0.06)', border: '1px solid rgba(0,102,204,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-          💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> Empieza por <strong style={{ color: '#7c3aed' }}>Gramática</strong> para entender el pasado simple, luego practica con <strong style={{ color: COLOR }}>Lectura</strong> usando textos del mundo real.
+        <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: 'rgba(83,74,183,0.06)', border: '1px solid rgba(83,74,183,0.15)', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+          💡 <strong style={{ color: 'var(--ink)' }}>팁 (tip):</strong> Empieza por <strong style={{ color: '#7c3aed' }}>문법 · Gramática</strong> para dominar el pasado 았/었어요, luego practica con <strong style={{ color: COLOR }}>읽기 · Lectura</strong> usando textos reales. El vocabulario de <strong style={{ color: '#e11d48' }}>어휘</strong> consolidará todo.
         </div>
       </div>
     </section>
     <PracticaWABanner
-      idioma="inglés"
-      color="#0066cc"
-      msg="Hola, estoy practicando inglés A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+      idioma="coreano"
+      color="#534AB7"
+      msg="Hola, estoy practicando coreano A2 en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
     />
     </>
   );

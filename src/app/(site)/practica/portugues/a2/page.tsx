@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
   title: 'Portugués A2 — Elige una habilidad | Idiomas WeLearn',
@@ -79,6 +80,11 @@ export default function PortuguesA2Page() {
         </div>
       </div>
     </section>
+    <PracticaWABanner
+      idioma="portugués"
+      color="#009c3b"
+      msg="Hola, estoy practicando portugués A2 en WeLearn y me gustaría agendar uma classe de diagnóstico gratis."
+    />
     </>
   );
 }
