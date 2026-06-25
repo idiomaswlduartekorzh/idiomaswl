@@ -42,11 +42,17 @@ const HABILIDADES = [
     desc: '3 diálogos B1 con scripts. Audios en preparación.',
     count: '3 diálogos próximamente', href: '/practica/ingles/b1/escucha', available: true,
   },
+  {
+    id: 'conjunciones', emoji: '🎯', name: 'Quest: Conjunciones', eng: 'Conjunctions Quest',
+    desc: 'Domina and/but/although/when/if/however con 6 niveles progresivos: selección, escritura libre y sprint.',
+    count: '6 niveles · 48 ejercicios', href: '/practica/ingles/b1/conjunciones', available: true,
+  },
 ];
 
 const COLORS: Record<string, string> = {
   lectura: '#0066cc', gramatica: '#7c3aed', escritura: '#059669',
   habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1',
+  conjunciones: '#0066cc',
 };
 
 export default function InglesB1Page() {

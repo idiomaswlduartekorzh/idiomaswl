@@ -30,10 +30,15 @@ const HABILIDADES = [
     desc: 'Multiple matching, sentence completion y multiple choice al estilo FCE. Próximamente.',
     count: 'Próximamente', href: '#', available: false,
   },
+  {
+    id: 'conectores', emoji: '🎯', name: 'Quest: Conectores', eng: 'Advanced Connectors',
+    desc: 'Domina moreover, nevertheless, consequently, provided that, despite y más con 6 niveles progresivos.',
+    count: '6 niveles · 48 ejercicios', href: '/practica/ingles/b2/conectores', available: true,
+  },
 ];
 
 const COLORS: Record<string, string> = {
-  'uso-del-idioma': '#0369a1', reading: '#7c3aed', writing: '#059669', listening: '#d97706',
+  'uso-del-idioma': '#0369a1', reading: '#7c3aed', writing: '#059669', listening: '#d97706', conectores: '#cf142b',
 };
 
 export default function InglesB2Page() {

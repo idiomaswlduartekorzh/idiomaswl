@@ -42,11 +42,17 @@ const HABILIDADES = [
     desc: '3 dialoghi B1 con copioni. Audio in preparazione.',
     count: '3 dialoghi in arrivo', href: '/practica/italiano/b1/escucha', available: true,
   },
+  {
+    id: 'particelle', emoji: '🎯', name: 'Quest: Particelle', eng: 'Pronoun Particles',
+    desc: 'Domina ci, ne, gli, le, vi con 6 livelli progressivi: selezione, scrittura libera e sprint finale.',
+    count: '6 livelli · 48 esercizi', href: '/practica/italiano/b1/particelle', available: true,
+  },
 ];
 
 const COLORS: Record<string, string> = {
   lectura: '#009246', gramatica: '#7c3aed', escritura: '#059669',
   habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1',
+  particelle: '#009246',
 };
 
 export default function ItalianoB1Page() {
