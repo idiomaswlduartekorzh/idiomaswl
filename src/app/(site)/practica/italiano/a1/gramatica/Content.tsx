@@ -1,225 +1,140 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
+import QuestEngine from '@/components/practica/QuestEngine';
+import type { QuestLevel, QuestGuide } from '@/components/practica/QuestEngine';
 
-const COLOR = '#7c3aed';
-
-interface GQItem { s: string; opts: string[]; a: number; fb: string; }
-
-const GRAMMAR_TOPICS: Record<string, { title: string; icon: string; desc: string; tip: string; qs: GQItem[] }> = {
-  articoli: {
-    title: 'Articoli — il/la/un/una',
-    icon: '📌',
-    desc: 'Articolo determinativo: il (masc.), la (fem.), lo (masch. z/s+cons.), l\' (davanti vocale). Plurale: i, le, gli. Indeterminativo: un, una, uno, un\'.',
-    tip: 'Trucco: "lo" va davanti a z-, s+consonante, gn-, ps-, x-, y-. Esempi: lo zio, lo studente, lo gnomo. In tutto il resto: il.',
-    qs: [
-      { s: '___ libro è interessante.', opts: ['Il', 'Lo', 'La', 'Un'], a: 0, fb: '"Il libro" — libro è maschile, inizia con consonante normale: il.' },
-      { s: '___ amica di Maria è simpatica.', opts: ['Il', 'Lo', "L'", 'La'], a: 2, fb: '"L\'amica" — parola femminile che inizia con vocale: l\'.' },
-      { s: 'Ho ___ zaino nuovo.', opts: ['un', 'uno', "un'", 'una'], a: 1, fb: '"Uno zaino" — zaino inizia con z: si usa uno (indeterminativo maschile).' },
-      { s: '___ studente studia molto.', opts: ['Il', 'Lo', 'La', 'Un'], a: 1, fb: '"Lo studente" — studente inizia con s+t (gruppo consonantico): si usa lo.' },
-      { s: 'Leggo ___ libro ogni giorno.', opts: ['il', 'lo', 'un', 'uno'], a: 2, fb: '"un libro" — prima menzione, maschile con consonante normale: un.' },
-      { s: '___ case di Roma sono bellissime.', opts: ['Il', 'Le', 'I', 'Gli'], a: 1, fb: '"Le case" — case è femminile plurale: si usa le.' },
-      { s: '___ amici vengono stasera.', opts: ['I', 'Gli', 'Le', 'Il'], a: 1, fb: '"Gli amici" — amici inizia con vocale, plurale maschile: gli.' },
-      { s: 'Ho ___ sorella maggiore.', opts: ['un', 'uno', "un'", 'una'], a: 3, fb: '"una sorella" — sorella è femminile con consonante: una.' },
-      { s: '___ occhi di Giulia sono verdi.', opts: ['I', 'Gli', 'Le', 'L\''], a: 1, fb: '"Gli occhi" — occhi inizia con o (vocale), plurale maschile: gli.' },
-      { s: 'Compro ___ arancia al mercato.', opts: ['un', 'uno', "un'", 'una'], a: 2, fb: '"un\'arancia" — arancia è femminile con vocale: un\' (con apostrofo).' },
-    ],
-  },
-  essere_avere: {
-    title: 'Essere e Avere — presente',
-    icon: '🔵',
-    desc: 'ESSERE: sono / sei / è / siamo / siete / sono. AVERE: ho / hai / ha / abbiamo / avete / hanno. Nota: la h in avere è SEMPRE muta.',
-    tip: 'Memoria: "essere" = esistir, identidad. "avere" = tener. "Io sono studente" (soy), "io ho un libro" (tengo). En italiano "ho" no lleva acento — la h solo bloquea el hiato.',
-    qs: [
-      { s: 'Io ___ italiano.', opts: ['sono', 'sei', 'è', 'ho'], a: 0, fb: '"Io sono" — la 1ª persona singular de essere es "sono".' },
-      { s: 'Luca ___ venti anni.', opts: ['è', 'ha', 'sono', 'hai'], a: 1, fb: '"Luca ha" — per l\'età in italiano si usa AVERE: ha venti anni.' },
-      { s: 'Voi ___ di Milano?', opts: ['siete', 'avete', 'sono', 'siamo'], a: 0, fb: '"Voi siete" — 2ª persona plurale di essere.' },
-      { s: 'Noi ___ due gatti.', opts: ['siamo', 'abbiamo', 'hanno', 'avete'], a: 1, fb: '"Noi abbiamo" — 1ª persona plurale di avere: abbiamo.' },
-      { s: 'Tu ___ stanco?', opts: ['sei', 'hai', 'è', 'siete'], a: 0, fb: '"Tu sei" — 2ª persona singular di essere: sei.' },
-      { s: 'Maria ___ una borsa rossa.', opts: ['è', 'ha', 'sono', 'hai'], a: 1, fb: '"Maria ha" — ha (3ª persona singular di avere): tener.' },
-      { s: 'Loro ___ studenti universitari.', opts: ['sono', 'hanno', 'è', 'siete'], a: 0, fb: '"Loro sono" — 3ª persona plurale di essere: sono (uguale alla 1ª!).' },
-      { s: 'Io non ___ fame adesso.', opts: ['sono', 'ho', 'sei', 'ha'], a: 1, fb: '"non ho fame" — avere fame = tener hambre. Si usa avere per sensazioni fisiche.' },
-      { s: 'Dove ___ la fermata del bus?', opts: ['è', 'ha', 'sono', 'sei'], a: 0, fb: '"Dov\'è" — contratto di dove + è. La fermata è (está): essere per posizione.' },
-      { s: 'Gli studenti ___ molto entusiasmo.', opts: ['sono', 'hanno', 'è', 'siamo'], a: 1, fb: '"hanno entusiasmo" — avere per "tener algo": gli studenti hanno entusiasmo.' },
-    ],
-  },
-  verbi_are: {
-    title: 'Verbi -ARE/-ERE/-IRE al presente',
-    icon: '⏰',
-    desc: 'PARLARE: parlo/parli/parla/parliamo/parlate/parlano. VEDERE: vedo/vedi/vede/vediamo/vedete/vedono. DORMIRE: dormo/dormi/dorme/dormiamo/dormite/dormono.',
-    tip: 'La terminazione -ARE è la più frequente. Nota: la 3ª plurale termina sempre in -ano (-are), -ono (-ere/-ire). Confronta con lo spagnolo: -ar/-er/-ir seguono una logica simile!',
-    qs: [
-      { s: 'Io ___ (parlare) italiano ogni giorno.', opts: ['parlo', 'parli', 'parla', 'parlano'], a: 0, fb: '"parlo" — io + verbo -are: radice + -o. parl + o = parlo.' },
-      { s: 'Marco ___ (vedere) un film stasera.', opts: ['vedo', 'vedi', 'vede', 'vedono'], a: 2, fb: '"vede" — lui/lei + verbo -ere: radice + -e. ved + e = vede.' },
-      { s: 'Voi ___ (dormire) tardi il sabato?', opts: ['dormite', 'dormono', 'dormiamo', 'dormi'], a: 0, fb: '"dormite" — voi + verbo -ire: radice + -ite. dorm + ite = dormite.' },
-      { s: 'Noi ___ (lavorare) in un ufficio.', opts: ['lavorano', 'lavoriamo', 'lavorate', 'lavori'], a: 1, fb: '"lavoriamo" — noi + verbo -are: radice + -iamo. lavor + iamo = lavoriamo.' },
-      { s: 'Loro ___ (mangiare) la pizza.', opts: ['mangia', 'mangiamo', 'mangiate', 'mangiano'], a: 3, fb: '"mangiano" — loro + verbo -are: radice + -ano. mangi + ano = mangiano.' },
-      { s: 'Tu ___ (leggere) molti libri?', opts: ['leggo', 'leggi', 'legge', 'leggono'], a: 1, fb: '"leggi" — tu + verbo -ere: radice + -i. legg + i = leggi.' },
-      { s: 'Lei ___ (abitare) a Roma.', opts: ['abito', 'abiti', 'abita', 'abitano'], a: 2, fb: '"abita" — lei/lui + verbo -are: radice + -a. abit + a = abita.' },
-      { s: 'Io ___ (capire) bene lo spagnolo.', opts: ['capisci', 'capisce', 'capisco', 'capiscono'], a: 2, fb: '"capisco" — io + verbo -ire tipo -isc: cap + isco = capisco. (capire = verbo con infisso -isc-).' },
-    ],
-  },
-  pronomi: {
-    title: 'Pronomi soggetto e accordo',
-    icon: '👤',
-    desc: 'Pronomi: io, tu, lui/lei, noi, voi, loro. In italiano i pronomi soggetto sono FACOLTATIVI (si omettono spesso) perché la desinenza del verbo li indica.',
-    tip: 'A diferencia del español, en italiano "lei" (ella) y "Lei" (usted formal) son iguales. Se distinguen por contexto y mayúscula. "Voi" = ustedes (no "Usted" formal en el sur de Italia).',
-    qs: [
-      { s: 'Maria è italiana. ___ è di Roma.', opts: ['Lui', 'Lei', 'Loro', 'Essa'], a: 1, fb: '"Lei" — Maria è donna → pronome femminile singolare lei.' },
-      { s: 'Marco e Luca studiano. ___ studiano medicina.', opts: ['Noi', 'Voi', 'Loro', 'Lui'], a: 2, fb: '"Loro" — Marco e Luca sono un gruppo di terze persone → loro.' },
-      { s: 'Io e te siamo amici. ___ siamo colleghi da anni.', opts: ['Voi', 'Loro', 'Noi', 'Lui'], a: 2, fb: '"Noi" — io + te = noi (prima persona plurale).' },
-      { s: 'Il gatto dorme. ___ dorme sul divano.', opts: ['Lei', 'Lui', 'Esso', 'Loro'], a: 1, fb: '"Lui" — in italiano colloquiale si usa lui/lei anche per animali.' },
-      { s: '___ (voi) dove andate in vacanza quest\'estate?', opts: ['Tu', 'Loro', 'Voi', 'Noi'], a: 2, fb: '"Voi" — 2ª persona plurale, equivale a "ustedes" in spagnolo.' },
-      { s: 'La macchina è rossa. ___ è molto veloce.', opts: ['Lui', 'Lei', 'Esso', 'Loro'], a: 1, fb: '"Lei" — macchina è femminile, si usa lei (informale) o essa (formale).' },
-      { s: 'Io e mia sorella cuciniamo insieme. ___ cuciniamo la domenica.', opts: ['Voi', 'Loro', 'Noi', 'Tu'], a: 2, fb: '"Noi" — io + mia sorella = noi. Prima persona plurale.' },
-      { s: 'Il professore spiega bene. ___ spiega in modo chiaro.', opts: ['Lei', 'Lui', 'Voi', 'Loro'], a: 1, fb: '"Lui" — professore è maschile → lui.' },
-    ],
-  },
-  ce_ci_sono: {
-    title: "C'è / Ci sono + preposizioni di luogo",
-    icon: '📍',
-    desc: "C'È (c'è = ci è) = hay (singular). CI SONO = hay (plural). Preposizioni: in, a, su, sotto, vicino a, davanti a, dietro a, accanto a.",
-    tip: '"C\'è" o "ci sono" equivalen al "hay" español. "C\'è un libro" = hay un libro. "Ci sono libri" = hay libros. Attenzione: NON si usa essere senza ci per questo significato!',
-    qs: [
-      { s: "___ un gatto sul tetto.", opts: ["C'è", 'Ci sono', 'È', 'Sono'], a: 0, fb: '"C\'è un gatto" — un gatto è singolare → c\'è.' },
-      { s: '___ molte persone in piazza.', opts: ["C'è", 'Ci sono', 'È', 'Ha'], a: 1, fb: '"Ci sono molte persone" — persone è plurale → ci sono.' },
-      { s: 'Il libro è ___ tavolo.', opts: ['in', 'su', 'a', 'sotto'], a: 1, fb: '"sul tavolo" — su = sopra una superficie. Sul = su + il.' },
-      { s: 'La fermata è ___ all\'angolo.', opts: ['dietro', 'sotto', 'vicino', 'dentro'], a: 2, fb: '"vicino all\'angolo" — vicino a = cerca de. Indica prossimità.' },
-      { s: "___ due ristoranti ___ scuola.", opts: ["C'è / vicino alla", 'Ci sono / vicino alla', "C'è / sotto la", 'Ci sono / dentro la'], a: 1, fb: '"Ci sono due ristoranti vicino alla scuola" — due è plurale → ci sono; vicino alla = cerca de la.' },
-      { s: 'Il cane dorme ___ il letto.', opts: ['su', 'in', 'sotto', 'davanti a'], a: 2, fb: '"sotto il letto" — sotto = debajo de. Il cane è sotto il letto.' },
-      { s: 'La farmacia è ___ la banca.', opts: ['sotto', 'davanti a', 'accanto a', 'dentro'], a: 2, fb: '"accanto alla banca" — accanto a = al lado de. Indica posizione adiacente.' },
-      { s: "___ una piscina ___ palestra.", opts: ["C'è / in", "Ci sono / nella", "C'è / dentro la", "C'è / nella"], a: 3, fb: '"C\'è una piscina nella palestra" — una è singolare → c\'è; nella = in + la (dentro della palestra).' },
-    ],
-  },
+const guide: QuestGuide = {
+  title: 'Grammatica Italiana A1 — Guía de referencia',
+  body: 'Los 5 pilares del italiano A1: artículos (il/la/lo/l\'/i/le/gli + un/una/uno/un\'), essere (ser/estar), avere (tener), verbos en presente (-ARE/-ERE/-IRE) y la existencia (c\'è / ci sono).\nEl italiano tiene 2 géneros (masculino y femenino). Los pronombres sujeto son OPCIONALES porque la desinencia verbal los indica.',
+  tip: 'Truco "lo" vs "il": usa "lo" ante z-, s+consonante, gn-, ps-, x-, y- (lo zaino, lo studente, lo gnomo). Para todo lo demás: il. En plural: gli ante vocal o z/s+cons; i ante el resto.',
+  tableHead: ['Tema', 'Formas', 'Ejemplo'],
+  tableRows: [
+    ['Articoli def.', "il (m.) · la (f.) · lo (z/s+c) · l' (vocal) · i/le/gli (pl.)", "il libro · la casa · lo zaino · l'amico"],
+    ['Essere', 'sono · sei · è · siamo · siete · sono', 'Io sono studente · Lei è di Roma'],
+    ['Avere', 'ho · hai · ha · abbiamo · avete · hanno', 'Ho fame · Luca ha 20 anni'],
+    ['Verbi pres.', '-are: -o/-i/-a/-iamo/-ate/-ano', 'parlo · vedo · dormo · capisco'],
+    ["C'è / Ci sono", "c'è (sing.) · ci sono (pl.) + preposizioni", "C'è un gatto · Ci sono libri sul tavolo"],
+  ],
 };
 
+const levels: QuestLevel[] = [
+  {
+    type: 'choice',
+    icon: '📌',
+    title: "Articoli — il, la, lo, l', un, una…",
+    desc: "Articolo determinativo: il (masc.), la (fem.), lo (z, s+cons., gn-), l' (davanti vocale). Plurale: i, le, gli. Indeterminativo: un, una, uno, un'.",
+    items: [
+      { text: '___ libro è interessante.', opts: ['Il', 'Lo', 'La', 'Un'], ans: 'Il', hint: '"Il libro" — libro è maschile, inizia con consonante normale: il.' },
+      { text: '___ amica di Maria è simpatica.', opts: ['Il', 'Lo', "L'", 'La'], ans: "L'", hint: '"L\'amica" — parola femminile che inizia con vocale: l\'.' },
+      { text: 'Ho ___ zaino nuovo.', opts: ['un', 'uno', "un'", 'una'], ans: 'uno', hint: '"Uno zaino" — zaino inizia con z: si usa uno (indeterminativo maschile).' },
+      { text: '___ studente studia molto.', opts: ['Il', 'Lo', 'La', 'Un'], ans: 'Lo', hint: '"Lo studente" — studente inizia con s+t (gruppo consonantico): si usa lo.' },
+      { text: 'Leggo ___ libro ogni giorno.', opts: ['il', 'lo', 'un', 'uno'], ans: 'un', hint: '"un libro" — prima menzione, maschile con consonante normale: un.' },
+      { text: '___ case di Roma sono bellissime.', opts: ['Il', 'Le', 'I', 'Gli'], ans: 'Le', hint: '"Le case" — case è femminile plurale: si usa le.' },
+      { text: '___ amici vengono stasera.', opts: ['I', 'Gli', 'Le', 'Il'], ans: 'Gli', hint: '"Gli amici" — amici inizia con vocale, plurale maschile: gli.' },
+      { text: 'Ho ___ sorella maggiore.', opts: ['un', 'uno', "un'", 'una'], ans: 'una', hint: '"una sorella" — sorella è femminile con consonante: una.' },
+      { text: '___ occhi di Giulia sono verdi.', opts: ['I', 'Gli', 'Le', "L'"], ans: 'Gli', hint: '"Gli occhi" — occhi inizia con o (vocale), plurale maschile: gli.' },
+      { text: 'Compro ___ arancia al mercato.', opts: ['un', 'uno', "un'", 'una'], ans: "un'", hint: '"un\'arancia" — arancia è femminile con vocale: un\' (con apostrofo).' },
+    ],
+  },
+  {
+    type: 'choice',
+    icon: '🔵',
+    title: 'Essere e Avere — presente',
+    desc: 'ESSERE: sono / sei / è / siamo / siete / sono. AVERE: ho / hai / ha / abbiamo / avete / hanno. La h en avere es SIEMPRE muda.',
+    items: [
+      { text: 'Io ___ italiano.', opts: ['sono', 'sei', 'è', 'ho'], ans: 'sono', hint: '"Io sono" — 1ª persona singular di essere: sono.' },
+      { text: 'Luca ___ venti anni.', opts: ['è', 'ha', 'sono', 'hai'], ans: 'ha', hint: '"Luca ha" — per l\'età si usa AVERE: ha venti anni.' },
+      { text: 'Voi ___ di Milano?', opts: ['siete', 'avete', 'sono', 'siamo'], ans: 'siete', hint: '"Voi siete" — 2ª persona plurale di essere.' },
+      { text: 'Noi ___ due gatti.', opts: ['siamo', 'abbiamo', 'hanno', 'avete'], ans: 'abbiamo', hint: '"Noi abbiamo" — 1ª persona plurale di avere.' },
+      { text: 'Tu ___ stanco?', opts: ['sei', 'hai', 'è', 'siete'], ans: 'sei', hint: '"Tu sei" — 2ª persona singular di essere.' },
+      { text: 'Maria ___ una borsa rossa.', opts: ['è', 'ha', 'sono', 'hai'], ans: 'ha', hint: '"Maria ha" — 3ª persona singular di avere: ha.' },
+      { text: 'Loro ___ studenti universitari.', opts: ['sono', 'hanno', 'è', 'siete'], ans: 'sono', hint: '"Loro sono" — 3ª persona plurale di essere (igual a la 1ª!).' },
+      { text: 'Io non ___ fame adesso.', opts: ['sono', 'ho', 'sei', 'ha'], ans: 'ho', hint: '"non ho fame" — avere fame = tener hambre. Sensaciones físicas: avere.' },
+      { text: 'Dove ___ la fermata del bus?', opts: ['è', 'ha', 'sono', 'sei'], ans: 'è', hint: '"Dov\'è" = dónde está. Essere para posición/existencia.' },
+      { text: 'Gli studenti ___ molto entusiasmo.', opts: ['sono', 'hanno', 'è', 'siamo'], ans: 'hanno', hint: '"hanno entusiasmo" — avere per "tener algo": gli studenti hanno.' },
+    ],
+  },
+  {
+    type: 'choice',
+    icon: '⏰',
+    title: 'Verbi -ARE/-ERE/-IRE al presente',
+    desc: 'PARLARE: parlo/parli/parla/parliamo/parlate/parlano. VEDERE: vedo/vedi/vede/vediamo/vedete/vedono. DORMIRE: dormo/dormi/dorme/dormiamo/dormite/dormono.',
+    items: [
+      { text: 'Io ___ (parlare) italiano ogni giorno.', opts: ['parlo', 'parli', 'parla', 'parlano'], ans: 'parlo', hint: '"parlo" — io + -are: radice + -o. parl + o = parlo.' },
+      { text: 'Marco ___ (vedere) un film stasera.', opts: ['vedo', 'vedi', 'vede', 'vedono'], ans: 'vede', hint: '"vede" — lui/lei + -ere: radice + -e. ved + e = vede.' },
+      { text: 'Voi ___ (dormire) tardi il sabato?', opts: ['dormite', 'dormono', 'dormiamo', 'dormi'], ans: 'dormite', hint: '"dormite" — voi + -ire: radice + -ite. dorm + ite = dormite.' },
+      { text: 'Noi ___ (lavorare) in un ufficio.', opts: ['lavorano', 'lavoriamo', 'lavorate', 'lavori'], ans: 'lavoriamo', hint: '"lavoriamo" — noi + -are: radice + -iamo. lavor + iamo = lavoriamo.' },
+      { text: 'Loro ___ (mangiare) la pizza.', opts: ['mangia', 'mangiamo', 'mangiate', 'mangiano'], ans: 'mangiano', hint: '"mangiano" — loro + -are: radice + -ano. mangi + ano = mangiano.' },
+      { text: 'Tu ___ (leggere) molti libri?', opts: ['leggo', 'leggi', 'legge', 'leggono'], ans: 'leggi', hint: '"leggi" — tu + -ere: radice + -i. legg + i = leggi.' },
+      { text: 'Lei ___ (abitare) a Roma.', opts: ['abito', 'abiti', 'abita', 'abitano'], ans: 'abita', hint: '"abita" — lei/lui + -are: radice + -a. abit + a = abita.' },
+      { text: 'Io ___ (capire) bene lo spagnolo.', opts: ['capisci', 'capisce', 'capisco', 'capiscono'], ans: 'capisco', hint: '"capisco" — io + verbo -isc: cap + isco = capisco. Verbi con infisso -isc-.' },
+    ],
+  },
+  {
+    type: 'choice',
+    icon: '👤',
+    title: 'Pronomi soggetto',
+    desc: 'Pronomi: io, tu, lui/lei, noi, voi, loro. En italiano los pronombres son OPCIONALES porque la desinencia verbal los indica.',
+    items: [
+      { text: 'Maria è italiana. ___ è di Roma.', opts: ['Lui', 'Lei', 'Loro', 'Essa'], ans: 'Lei', hint: '"Lei" — Maria è donna → pronome femminile singolare lei.' },
+      { text: 'Marco e Luca studiano. ___ studiano medicina.', opts: ['Noi', 'Voi', 'Loro', 'Lui'], ans: 'Loro', hint: '"Loro" — Marco e Luca, terza persona plurale → loro.' },
+      { text: 'Io e te siamo amici. ___ siamo colleghi da anni.', opts: ['Voi', 'Loro', 'Noi', 'Lui'], ans: 'Noi', hint: '"Noi" — io + te = noi (prima persona plurale).' },
+      { text: 'Il gatto dorme. ___ dorme sul divano.', opts: ['Lei', 'Lui', 'Esso', 'Loro'], ans: 'Lui', hint: '"Lui" — in italiano colloquiale lui/lei anche per animali.' },
+      { text: "___ (voi) dove andate in vacanza?", opts: ['Tu', 'Loro', 'Voi', 'Noi'], ans: 'Voi', hint: '"Voi" — 2ª persona plurale, equivale a "ustedes".' },
+      { text: 'La macchina è rossa. ___ è molto veloce.', opts: ['Lui', 'Lei', 'Esso', 'Loro'], ans: 'Lei', hint: '"Lei" — macchina è femminile → lei (colloquiale).' },
+      { text: 'Io e mia sorella cuciniamo insieme. ___ cuciniamo la domenica.', opts: ['Voi', 'Loro', 'Noi', 'Tu'], ans: 'Noi', hint: '"Noi" — io + mia sorella = noi. Prima persona plurale.' },
+      { text: 'Il professore spiega bene. ___ spiega in modo chiaro.', opts: ['Lei', 'Lui', 'Voi', 'Loro'], ans: 'Lui', hint: '"Lui" — professore è maschile → lui.' },
+    ],
+  },
+  {
+    type: 'choice',
+    icon: '📍',
+    title: "C'è / Ci sono + preposizioni di luogo",
+    desc: "C'È = hay (singular). CI SONO = hay (plural). Preposizioni: in, su, sotto, vicino a, davanti a, dietro a, accanto a.",
+    items: [
+      { text: "___ un gatto sul tetto.", opts: ["C'è", 'Ci sono', 'È', 'Sono'], ans: "C'è", hint: '"C\'è un gatto" — singular → c\'è.' },
+      { text: '___ molte persone in piazza.', opts: ["C'è", 'Ci sono', 'È', 'Ha'], ans: 'Ci sono', hint: '"Ci sono molte persone" — plurale → ci sono.' },
+      { text: 'Il libro è ___ tavolo.', opts: ['in', 'su', 'a', 'sotto'], ans: 'su', hint: '"sul tavolo" — su = sopra una superficie. Sul = su + il.' },
+      { text: "La fermata è ___ all'angolo.", opts: ['dietro', 'sotto', 'vicino', 'dentro'], ans: 'vicino', hint: '"vicino all\'angolo" — vicino a = cerca de.' },
+      { text: "___ due ristoranti ___ scuola.", opts: ["C'è / vicino alla", 'Ci sono / vicino alla', "C'è / sotto la", 'Ci sono / dentro la'], ans: 'Ci sono / vicino alla', hint: '"Ci sono due ristoranti vicino alla scuola" — plurale → ci sono.' },
+      { text: 'Il cane dorme ___ il letto.', opts: ['su', 'in', 'sotto', 'davanti a'], ans: 'sotto', hint: '"sotto il letto" — sotto = debajo de.' },
+      { text: 'La farmacia è ___ la banca.', opts: ['sotto', 'davanti a', 'accanto a', 'dentro'], ans: 'accanto a', hint: '"accanto alla banca" — accanto a = al lado de.' },
+      { text: "___ una piscina ___ palestra.", opts: ["C'è / in", "Ci sono / nella", "C'è / dentro la", "C'è / nella"], ans: "C'è / nella", hint: '"C\'è una piscina nella palestra" — singolare → c\'è; nella = in + la.' },
+    ],
+  },
+  {
+    type: 'sprint',
+    icon: '⚡',
+    title: 'Sprint — tutti i temi!',
+    desc: 'Mix dei 5 temi A1. Scrivi veloce!',
+    inputWidth: 80,
+    items: [
+      { text: '___ libro è interessante. (art. masc.)', ans: 'Il', hint: 'masculino, consonante normal → il' },
+      { text: "___ amica di Maria è simpatica. (davanti vocale f.)", ans: "L'", hint: 'femenino + vocal → l\'' },
+      { text: 'Io ___ italiano. (essere)', ans: 'sono', hint: 'essere: io → sono' },
+      { text: 'Luca ___ venti anni. (avere)', ans: 'ha', hint: 'avere: lui → ha' },
+      { text: 'Io ___ (parlare) italiano ogni giorno.', ans: 'parlo', hint: '-are: io → parlo' },
+      { text: 'Marco ___ (vedere) un film stasera.', ans: 'vede', hint: '-ere: lui → vede' },
+      { text: 'Maria è italiana. ___ è di Roma.', ans: 'Lei', hint: 'femenino → lei' },
+      { text: 'Marco e Luca studiano. ___ studiano medicina.', ans: 'Loro', hint: 'terza plurale → loro' },
+      { text: "___ un gatto sul tetto. (hay sing.)", ans: "C'è", hint: "singular → c'è" },
+      { text: '___ molte persone in piazza. (hay pl.)', ans: 'Ci sono', hint: 'plural → ci sono' },
+    ],
+  },
+];
+
 export default function GramaticaItalianoA1() {
-  const topics = Object.entries(GRAMMAR_TOPICS);
-  const [topicKey, setTopicKey] = useState(topics[0][0]);
-  const [answers, setAnswers] = useState<Record<number, number>>({});
-  const [revealed, setRevealed] = useState<Record<number, boolean>>({});
-  const [showResult, setShowResult] = useState(false);
-
-  const data = GRAMMAR_TOPICS[topicKey];
-  const total = data.qs.length;
-  const done = Object.keys(answers).length;
-  const correct = data.qs.filter((q, i) => answers[i] === q.a).length;
-
-  function pick(qi: number, oi: number) {
-    if (answers[qi] !== undefined) return;
-    setAnswers(p => ({ ...p, [qi]: oi }));
-    setRevealed(p => ({ ...p, [qi]: true }));
-  }
-
-  function reset() { setAnswers({}); setRevealed({}); setShowResult(false); }
-  function switchTopic(k: string) { setTopicKey(k); reset(); }
-
   return (
-    <section className="wl-section">
-      <div className="wrap" style={{ maxWidth: 780 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-          <span>/</span>
-          <Link href="/practica/italiano/a1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇮🇹 Italiano A1</Link>
-          <span>/</span>
-          <span style={{ color: COLOR, fontWeight: 800 }}>📐 Gramática</span>
-        </div>
-
-        <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Grammatica · Italiano A1</p>
-        <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Grammatica A1</h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 520, margin: '0 0 1.75rem' }}>
-          5 temas esenciales con 8–10 ejercicios cada uno. Explicación + ejemplos + feedback inmediato.
-        </p>
-
-        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-          {topics.map(([k, v]) => (
-            <button key={k} onClick={() => switchTopic(k)}
-              className={topicKey === k ? 'btn btn-sm' : 'btn btn-ghost btn-sm'}
-              style={{ fontSize: '0.83rem', ...(topicKey === k ? { background: COLOR, borderColor: COLOR } : {}) }}>
-              {v.icon} {v.title}
-            </button>
-          ))}
-        </div>
-
-        <div style={{ padding: '1.25rem 1.4rem', borderRadius: 14, background: `${COLOR}0a`, border: `1px solid ${COLOR}22`, marginBottom: '1.5rem' }}>
-          <p style={{ margin: '0 0 0.5rem', fontSize: '0.9rem', color: 'var(--ink)', fontWeight: 600, lineHeight: 1.6 }}>📖 {data.desc}</p>
-          <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.6, fontStyle: 'italic' }}>✨ {data.tip}</p>
-        </div>
-
-        {done > 0 && !showResult && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-            <div style={{ flex: 1, height: 6, background: 'var(--line-soft)', borderRadius: 4 }}>
-              <div style={{ height: '100%', width: `${(done / total) * 100}%`, background: COLOR, borderRadius: 4, transition: 'width 0.4s' }} />
-            </div>
-            <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexShrink: 0 }}>{done}/{total}</span>
-          </div>
-        )}
-
-        {!showResult && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {data.qs.map((q, qi) => {
-              const ans = answers[qi];
-              const isDone = ans !== undefined;
-              return (
-                <div key={`${topicKey}-${qi}`} className="wl-card" style={{ padding: '1.25rem' }}>
-                  <p style={{ margin: '0 0 0.85rem', fontSize: '1rem', fontWeight: 600, color: 'var(--ink)', lineHeight: 1.7 }}>
-                    {qi + 1}. {q.s.split('___').map((part, i, arr) => (
-                      <span key={i}>{part}{i < arr.length - 1 && (
-                        <span style={{ display: 'inline-block', minWidth: 80, borderBottom: `2px solid ${COLOR}`, margin: '0 4px', verticalAlign: 'bottom' }}>
-                          {isDone && <span style={{ fontSize: '0.88rem', fontWeight: 800, color: answers[qi] === q.a ? '#059669' : '#dc2626' }}>{q.opts[ans]}</span>}
-                        </span>
-                      )}</span>
-                    ))}
-                  </p>
-                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                    {q.opts.map((opt, oi) => {
-                      const isCorrect = oi === q.a; const isSelected = ans === oi;
-                      let bg = 'var(--bg-2)'; let border = `1px solid var(--line-soft)`; let color = 'var(--ink)';
-                      if (isDone && isCorrect) { bg = 'rgba(5,150,105,0.1)'; border = '1px solid #059669'; color = '#059669'; }
-                      if (isDone && isSelected && !isCorrect) { bg = 'rgba(220,38,38,0.1)'; border = '1px solid #dc2626'; color = '#dc2626'; }
-                      return (
-                        <button key={oi} onClick={() => pick(qi, oi)} disabled={isDone}
-                          style={{ padding: '0.5rem 1.1rem', borderRadius: 8, fontSize: '0.92rem', fontWeight: 700, border, background: bg, color, cursor: isDone ? 'default' : 'pointer', fontFamily: 'inherit', transition: 'all 0.15s' }}>
-                          {opt}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {revealed[qi] && (
-                    <div style={{ marginTop: '0.65rem', fontSize: '0.82rem', color: 'var(--ink-2)', padding: '0.5rem 0.75rem', borderRadius: 8, background: ans === q.a ? 'rgba(5,150,105,0.07)' : 'rgba(220,38,38,0.07)' }}>
-                      {ans === q.a ? '✅ ' : `✗ Risposta: "${q.opts[q.a]}". `}{q.fb}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-            {done === total && (
-              <button className="btn btn-sm" onClick={() => setShowResult(true)} style={{ background: COLOR, borderColor: COLOR }}>
-                Vedere il risultato →
-              </button>
-            )}
-          </div>
-        )}
-
-        {showResult && (
-          <div className="wl-card" style={{ padding: '1.75rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{correct === total ? '🏆' : correct >= total * 0.7 ? '⭐' : '📖'}</div>
-            <h2 style={{ margin: '0 0 0.35rem', color: 'var(--ink)' }}>{correct} / {total} corrette</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.5rem' }}>
-              {correct === total ? 'Perfetto! Padroneggi questo tema.' : correct >= total * 0.7 ? 'Molto bene. Ripassala gli errori e riprova.' : 'Studia la spiegazione sopra e pratica di nuovo.'}
-            </p>
-            <div style={{ display: 'flex', gap: '0.65rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <button className="btn btn-sm" onClick={reset} style={{ background: COLOR, borderColor: COLOR }}>Riprovare</button>
-              <button className="btn btn-ghost btn-sm" onClick={() => {
-                const keys = Object.keys(GRAMMAR_TOPICS);
-                const next = keys[(keys.indexOf(topicKey) + 1) % keys.length];
-                switchTopic(next);
-              }}>Tema seguente →</button>
-            </div>
-          </div>
-        )}
-      </div>
-    </section>
+    <QuestEngine
+      color="#009246"
+      flag="🇮🇹"
+      storageKey="quest-it-a1-grammatik"
+      guide={guide}
+      levels={levels}
+      backHref="/practica/italiano/a1"
+      backLabel="Italiano A1"
+      title="Grammatica A1"
+      subtitle="Italiano A1 — Grammatica"
+    />
   );
 }
