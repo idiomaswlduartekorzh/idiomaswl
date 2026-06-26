@@ -58,7 +58,6 @@ const TASKS: WritingTask[] = [
     prompt: 'Explica las reglas de tu trabajo, escuela o casa usando ～なければなりません (hay que / debo) para las obligaciones y ～てはいけません (no se puede / está prohibido) para las prohibiciones. Escribe 5-6 reglas.',
     model: '私の学校のルールを説明します。まず、毎日九時までに来なければなりません。授業中に携帯電話を使ってはいけません。制服を着なければなりません。廊下で走ってはいけません。宿題は毎日提出しなければなりません。でも、先生に許可をもらえば、早退することができます。このルールは厳しいですが、大切だと思います。',
     modelRomaji: 'Watashi no gakkō no rūru o setsumei shimasu. Mazu, mainichi kuji made ni konakereba narimasen. Jugyōchū ni keitai denwa o tsukatte wa ikemasen. Seifuku o kinakereba narimasen. Rōka de hashitte wa ikemasen. Shukudai wa mainichi teifu shinakereba narimasen. Demo, sensei ni kyoka o moraeba, sōtai suru koto ga dekimasu. Kono rūru wa kibishii desu ga, taisetsu da to omoimasu.',
-    modelRomaji2: '',
     criteria: ['Usa ～なければなりません para al menos 3 obligaciones', 'Usa ～てはいけません para al menos 2 prohibiciones', 'Introduce el tema con "～のルールを説明します"', 'Cierra con tu opinión personal (～と思います)'],
     vocab: ['ルール (rūru)', '～なければなりません (~ nakereba narimasen)', '～てはいけません (~ te wa ikemasen)', '～することができます (~ suru koto ga dekimasu)', '毎日 (mainichi)', '許可 (kyoka)', '大切 (taisetsu)'],
     checklist: ['¿Usaste ～なければなりません para las obligaciones?', '¿Usaste ～てはいけません para las prohibiciones?', '¿Las reglas son claras y específicas?', '¿Hay al menos 5 reglas diferentes?'],

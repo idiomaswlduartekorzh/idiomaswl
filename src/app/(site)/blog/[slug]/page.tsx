@@ -223,6 +223,7 @@ export default async function BlogArticlePage(
   };
 
   return (
+    <>
     <main className={s.page}>
       <script
         type="application/ld+json"
@@ -314,5 +315,6 @@ export default async function BlogArticlePage(
       category={post.category}
       waMsg={`${cta.msg} (Blog: ${post.slug})`}
     />
+    </>
   );
 }
