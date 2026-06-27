@@ -1,0 +1,311 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'object-pronouns',
+  order: '08',
+  color: '#16a34a',
+  category: 'Foundations',
+  level: 'A1',
+  title: 'Pronombres objeto en inglés A1',
+  shortTitle: 'Object pronouns',
+  metaTitle: 'Pronombres objeto en inglés A1 | me, you, him, her, it, us, them — guía',
+  description: 'Aprende me, you, him, her, it, us y them con explicación orientada al hispanohablante, posición correcta en la frase y diferencias clave con los pronombres sujeto.',
+  lead: 'Los object pronouns reemplazan personas u objetos cuando están en posición de objeto, es decir, reciben la acción del verbo o van después de una preposición. Aprender a distinguirlos de los subject pronouns es clave para construir frases fluidas desde el nivel A1.',
+  outcomes: [
+    'Usar me, you, him, her, it, us y them en posición de objeto con precisión.',
+    'Distinguir subject pronouns (I, he, she…) de object pronouns (me, him, her…).',
+    'Colocar el object pronoun en el lugar correcto de la frase.',
+  ],
+  guide: {
+    goal: 'Reemplazar sustantivos en posición de objeto con el pronombre correcto sin confundir sujeto y objeto.',
+    model: 'Pregunta: ¿el pronombre hace la acción (sujeto) o recibe la acción (objeto)? Si recibe → object pronoun. Posición: después del verbo o después de preposición.',
+    formula: 'subject + verb + object pronoun | subject + verb + preposition + object pronoun',
+    decisions: [
+      'me → me recibo la acción.',
+      'you → tú/usted recibe la acción (igual que subject).',
+      'him → él recibe la acción (≠ he).',
+      'her → ella recibe la acción (= her possessive, diferente contexto).',
+      'it → cosa/animal recibe la acción (= subject it).',
+      'us → nosotros recibimos la acción.',
+      'them → ellos/ellas/esas cosas reciben la acción.',
+    ],
+    table: [
+      ['Subject pronoun', 'Object pronoun', 'Ejemplo'],
+      ['I', 'me', 'She helps me.'],
+      ['you', 'you', 'I see you.'],
+      ['he', 'him', 'I like him.'],
+      ['she', 'her', 'He calls her.'],
+      ['it', 'it', 'I need it.'],
+      ['we', 'us', 'They invite us.'],
+      ['they', 'them', 'I know them.'],
+    ],
+    mistakes: [
+      '"He calls she." → He calls her. Después del verbo, objeto: her.',
+      '"Me like coffee." → I like coffee. Me no puede ser sujeto.',
+      '"Between you and I." → Between you and me. Después de preposición: me.',
+    ],
+  },
+  seo: [
+    {
+      heading: 'Qué son los object pronouns y por qué importan',
+      paragraphs: [
+        'En inglés los pronombres cambian de forma según su función en la frase. Cuando el pronombre realiza la acción (sujeto) usamos: I, you, he, she, it, we, they. Cuando el pronombre recibe la acción o sigue a una preposición (objeto) usamos: me, you, him, her, it, us, them. El español tiene un sistema similar: yo / me, él / lo-le, ella / la-le, nosotros / nos, ellos / los-les, pero las formas no coinciden exactamente.',
+        'Para un hispanohablante el desafío principal es recordar que después del verbo o de una preposición hay que cambiar la forma. Decimos I call him, no I call he. She helps me, no She helps I. With them, no With they. Este cambio es sistemático y no requiere memorizar género como en español.',
+      ],
+    },
+    {
+      heading: 'Cuándo usar un object pronoun: dos posiciones clave',
+      paragraphs: [
+        'Posición 1: después del verbo como objeto directo o indirecto. I love it. She helps me. Can you call him? He gives us the book. El pronombre reemplaza a la persona u objeto que recibe la acción del verbo.',
+        'Posición 2: después de una preposición. This is for you. Come with us. Talk to her. Between you and me. Are you looking at them? En español también cambias la forma en estos contextos (para mí, con nosotros, entre tú y yo), aunque a veces la forma del pronombre en español no cambia tanto.',
+      ],
+    },
+    {
+      heading: 'I vs me: el error más frecuente del hispanohablante',
+      paragraphs: [
+        'Un error muy frecuente en todos los niveles es usar I donde debería ir me, especialmente con preposiciones. Between you and I parece elegante pero es incorrecto: debe ser Between you and me. Come with David and I también es incorrecto: Come with David and me.',
+        'La regla práctica: si puedes eliminar la otra persona de la frase y el pronombre queda en posición de objeto, debe ser me. Come with me (correcto) → Come with David and me (correcto). También: I suena bien como sujeto pero extraño después de una preposición: With I suena inmediatamente incorrecto.',
+      ],
+    },
+    {
+      heading: 'him vs her: cómo no confundirse',
+      paragraphs: [
+        'Him y her son los que más confusión generan porque en español "lo" puede referirse a cosas, y "le" puede ser tanto masculino como femenino. En inglés: him siempre es masculino (para él), her siempre es femenino (para ella). Si el referente es un hombre: call him, help him, ask him. Si es una mujer: call her, help her, ask her.',
+        'Nota adicional: her también es el adjetivo posesivo femenino (her book = su libro de ella). El contexto siempre aclara cuál es cuál: her (objeto) va después del verbo o preposición; her (posesivo) va antes del sustantivo.',
+      ],
+    },
+    {
+      heading: 'Errores frecuentes y sus correcciones',
+      paragraphs: [
+        'Error 1: "I love she." → I love her. Después del verbo love: objeto her. Error 2: "Call he when you arrive." → Call him when you arrive. Him en posición de objeto. Error 3: "This is a gift for I." → This is a gift for me. Después de preposición for: me. Error 4: "They invite we to the party." → They invite us to the party. We como objeto → us.',
+      ],
+      examples: [
+        ['Incorrecto', 'I see she every day.', 'Correcto', 'I see her every day.'],
+        ['Incorrecto', 'Can you help we?', 'Correcto', 'Can you help us?'],
+        ['Incorrecto', 'This letter is for he.', 'Correcto', 'This letter is for him.'],
+      ],
+    },
+  ],
+  visual: {
+    mode: 'subject-object-swap',
+    teacherLens: 'El estudiante aprende a identificar si el pronombre realiza o recibe la acción antes de elegir la forma correcta.',
+    graphicPrompt: 'Identifica la posición del pronombre en la frase: ¿antes o después del verbo?',
+    scene: [['I → me', 'after verb/preposition'], ['he → him', 'after verb/preposition'], ['we → us', 'after verb/preposition']],
+    learnerModes: ['visual: tabla sujeto → objeto', 'analítico: posición en la frase', 'oral: conversación cotidiana'],
+    practiceVerbs: ['Reemplaza', 'Identifica', 'Completa', 'Construye', 'Corrige', 'Conversa'],
+    reviewFocus: ['him vs her', 'me después de preposición', 'us vs them', 'posición en frase'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'Reconocimiento en contexto',
+        tag: 'Opción múltiple',
+        intro: 'Elige el object pronoun correcto para cada situación.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'Pidiendo ayuda',
+            lines: [['Carlos', 'I don\'t understand this exercise. Can you help ___?']],
+            options: ['I', 'me', 'my', 'mine'],
+            answer: 'me',
+            explain: 'Carlos recibe la ayuda → me.',
+          },
+          {
+            scene: 'Hablando del profesor',
+            lines: [['Ana', 'Professor David is great. I really like ___.']],
+            options: ['he', 'him', 'his', 'her'],
+            answer: 'him',
+            explain: 'David es masculino y recibe el "like": him.',
+          },
+          {
+            scene: 'Referencia a una compañera',
+            lines: [['Lina', 'Sofia is absent today. I\'ll call ___ later.']],
+            options: ['she', 'her', 'his', 'him'],
+            answer: 'her',
+            explain: 'Sofia es femenina y recibe el "call": her.',
+          },
+          {
+            scene: 'Regalo',
+            lines: [['Teacher', 'I have a surprise for the whole class. This is for ___.']],
+            options: ['we', 'our', 'us', 'they'],
+            answer: 'us',
+            explain: 'We en posición de objeto (después de preposición for): us.',
+          },
+          {
+            scene: 'Grupo externo',
+            lines: [['David', 'Ana and Marco invited us to their party. Do you know ___?']],
+            options: ['they', 'their', 'them', 'those'],
+            answer: 'them',
+            explain: 'They (Ana y Marco) en posición de objeto: them.',
+          },
+          {
+            scene: 'Objeto perdido',
+            lines: [['Sofia', 'Where is my phone? I can\'t find ___.']],
+            options: ['it', 'its', 'him', 'them'],
+            answer: 'it',
+            explain: 'My phone es una cosa singular → object pronoun it.',
+          },
+          {
+            scene: 'Invitación',
+            lines: [['Carlos', 'My friend is new here. Please be kind to ___.']],
+            options: ['he', 'him', 'his', 'her'],
+            answer: 'him',
+            explain: 'My friend (masculino aquí) después de preposición to: him.',
+          },
+          {
+            scene: 'Correo de tu profesora',
+            lines: [['Teacher', 'I sent you all an email. Did you read ___?']],
+            options: ['it', 'him', 'her', 'them'],
+            answer: 'it',
+            explain: 'An email es singular y una cosa → it.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Dos pronombres en un diálogo',
+        tag: '2 espacios',
+        intro: 'Completa los dos object pronouns en la misma situación.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Hablando de dos personas',
+            lines: [['Ana', 'Do you know Carlos and Lina?'], ['David', 'Yes, I know [[0]]. I see [[1]] every day at school.']],
+            blanks: [
+              { options: ['they', 'them', 'their'], answer: 'them', explain: 'Carlos y Lina reciben el "know": them.' },
+              { options: ['they', 'them', 'their'], answer: 'them', explain: 'Siguen siendo objeto del "see": them.' },
+            ],
+          },
+          {
+            scene: 'Intercambiando información',
+            lines: [['Sofia', 'My sister called me. I need to call [[0]] back.'], ['Marco', 'I know your sister. Tell [[1]] I said hello.']],
+            blanks: [
+              { options: ['she', 'her', 'him'], answer: 'her', explain: 'My sister (femenina) → call her back.' },
+              { options: ['she', 'her', 'him'], answer: 'her', explain: 'Your sister → tell her.' },
+            ],
+          },
+          {
+            scene: 'Preguntas sobre la clase',
+            lines: [['Student', 'I don\'t understand the homework. Can you explain [[0]] to [[1]]?']],
+            blanks: [
+              { options: ['it', 'him', 'them'], answer: 'it', explain: 'The homework (cosa singular) → it.' },
+              { options: ['I', 'me', 'my'], answer: 'me', explain: 'Yo recibo la explicación → me.' },
+            ],
+          },
+          {
+            scene: 'En la biblioteca',
+            lines: [['Librarian', 'Here is your book.'], ['Student', 'Thank you! I\'ve been looking for [[0]] everywhere. Can you recommend [[1]] more books?']],
+            blanks: [
+              { options: ['it', 'him', 'them'], answer: 'it', explain: 'Your book (cosa singular) → it.' },
+              { options: ['I', 'me', 'my'], answer: 'me', explain: 'Yo recibo la recomendación → me.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'Texto guiado',
+        tag: 'Opciones',
+        intro: 'Elige el object pronoun correcto para completar el texto.',
+        type: 'guidedText',
+        scene: 'Un día con mi grupo de estudio',
+        text: 'My study group is great. I really like [[0]]. My friend Carlos helps [[1]] with grammar every week. I always help [[2]] with writing. Our teacher sends [[3]] extra exercises by email. I read [[4]] carefully every night. Sofia is in our group too. I often talk to [[5]] about pronunciation. She gives [[6]] useful tips.',
+        blanks: [
+          { options: ['they', 'them', 'their'], answer: 'them', explain: 'My study group (plural como colectivo) → them.' },
+          { options: ['I', 'me', 'my'], answer: 'me', explain: 'Yo recibo la ayuda con gramática → me.' },
+          { options: ['he', 'him', 'his'], answer: 'him', explain: 'Carlos (masculino) recibe la ayuda → him.' },
+          { options: ['we', 'us', 'our'], answer: 'us', explain: 'Nosotros recibimos los ejercicios → us.' },
+          { options: ['they', 'them', 'their'], answer: 'them', explain: 'Los ejercicios (plural) → them.' },
+          { options: ['she', 'her', 'hers'], answer: 'her', explain: 'Sofia (femenina) después de preposición to → her.' },
+          { options: ['I', 'me', 'my'], answer: 'me', explain: 'Yo recibo los consejos → me.' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Texto libre',
+        tag: 'Sin opciones',
+        intro: 'Escribe el object pronoun correcto sin banco de ayuda.',
+        type: 'freeText',
+        scene: 'Mi relación con el inglés',
+        text: 'English is important to [[0]]. My teacher teaches [[1]] English every day. I love [[2]] because it opens many doors. My parents support [[3]] with my studies. They pay for [[4]] and I am very grateful.',
+        blanks: [
+          { answer: 'me', explain: 'A mí me importa el inglés → to me.' },
+          { answer: 'me', explain: 'El profesor me enseña → teaches me.' },
+          { answer: 'it', explain: 'English (cosa) → love it.' },
+          { answer: 'me', explain: 'Mis padres me apoyan → support me.' },
+          { answer: 'them', explain: 'Mis estudios (plural) → pay for them.' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Reemplazando sustantivos',
+        tag: 'Producción',
+        intro: 'Reescribe la frase usando el object pronoun para evitar la repetición.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Evitar repetición',
+            prompt: 'Rewrite: I see Carlos every day. I like Carlos a lot.',
+            answer: 'I see Carlos every day. I like him a lot.',
+            accepted: ['i see carlos every day i like him a lot', 'i see carlos every day. i like him a lot.'],
+            explain: 'Carlos (masculino) como objeto → him.',
+          },
+          {
+            scene: 'Referencia a una cosa',
+            prompt: 'Rewrite: I have a new book. I read the book every night.',
+            answer: 'I have a new book. I read it every night.',
+            accepted: ['i have a new book i read it every night', 'i have a new book. i read it every night.'],
+            explain: 'A new book (cosa) → it.',
+          },
+          {
+            scene: 'Referencia a un grupo',
+            prompt: 'Rewrite: My friends are great. I love my friends.',
+            answer: 'My friends are great. I love them.',
+            accepted: ['my friends are great i love them', 'my friends are great. i love them.'],
+            explain: 'My friends (plural) → them.',
+          },
+          {
+            scene: 'Referencia a una mujer',
+            prompt: 'Rewrite: Zhanna is the director. I respect Zhanna a lot.',
+            answer: 'Zhanna is the director. I respect her a lot.',
+            accepted: ['zhanna is the director i respect her a lot', 'zhanna is the director. i respect her a lot.'],
+            explain: 'Zhanna (femenina) → her.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Misión de conversación',
+        tag: 'Reto final',
+        intro: 'Responde con el object pronoun correcto en contexto real.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Recomendando algo',
+            prompt: 'Your friend asks about your English class. Say: I really enjoy ___. (the class)',
+            answer: 'I really enjoy it.',
+            accepted: ['i really enjoy it'],
+            explain: 'The class (cosa) → it.',
+          },
+          {
+            scene: 'Hablando de tu familia',
+            prompt: 'Talk about your parents: My parents are great. I love ___.',
+            answer: 'My parents are great. I love them.',
+            accepted: ['my parents are great i love them', 'my parents are great. i love them.', 'i love them'],
+            explain: 'My parents (plural) → them.',
+          },
+          {
+            scene: 'Pidiendo ayuda',
+            prompt: 'Ask your partner for help with grammar: Can you explain this to ___?',
+            answer: 'Can you explain this to me?',
+            accepted: ['can you explain this to me'],
+            explain: 'Yo recibo la explicación → to me.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic
