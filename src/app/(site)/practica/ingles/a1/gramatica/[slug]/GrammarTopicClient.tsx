@@ -27,7 +27,7 @@ interface State {
 }
 
 const initialState: State = {
-  phase: 'idle',
+  phase: 'practicing',
   activeLevelIdx: 0,
   currentIdx: 0,
   answers: {},
