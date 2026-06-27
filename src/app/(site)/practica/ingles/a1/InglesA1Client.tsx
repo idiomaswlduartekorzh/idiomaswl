@@ -17,8 +17,8 @@ const HABILIDADES = [
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Artículos (a/an/the), verbo to be, pronombres personales, presente simple y plurales. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ingles/a1/gramatica',
+    desc: 'Explicación de especialista para hispanohablantes + práctica progresiva de 6 niveles por tema. Las correcciones aparecen al terminar cada nivel.',
+    count: 'Temas A1 · 6 niveles c/u', href: '/practica/ingles/a1/gramatica',
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',
