@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getTopicsByLevel, getTopicBySlug } from '@/data/grammar/registry'
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
-import GrammarTopicClient from './GrammarTopicClient'
+import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 
 const IDIOMA = 'ingles'
 const NIVEL = 'a1'
