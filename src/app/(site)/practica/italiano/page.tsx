@@ -4,7 +4,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Italiano — Elige tu nivel MCER | Idiomas WeLearn',
-  description: 'Ejercicios interactivos de italiano por nivel MCER. A1 disponible y práctica integrada B2 con lectura, escucha, preguntas y escritura.',
+  description: 'Ejercicios interactivos de italiano por nivel MCER. A1, B1 y práctica integrada B2 con lectura, gramática, escucha y escritura.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano' },
 };
 
@@ -18,7 +18,12 @@ const NIVELES = [
     count: '6 habilidades · 40+ ejercicios',
   },
   { nivel: 'A2', name: 'Elementare', desc: 'Passato prossimo, comparativi, futuro semplice e descrizioni di persone.', available: false },
-  { nivel: 'B1', name: 'Intermedio', desc: 'Congiuntivo presente, condizionale, lessico professionale e ascolto.', available: false },
+  {
+    nivel: 'B1', name: 'Intermedio',
+    desc: 'Congiuntivo, condizionale, particelle pronominali, lettura, scrittura, ascolto e vocabolario.',
+    href: '/practica/italiano/b1', available: true,
+    count: '7 percorsi · 230+ esercizi',
+  },
   {
     nivel: 'B2', name: 'Intermedio alto',
     desc: 'Ejercicios integrados estilo TOEFL/IELTS: lectura, escucha, comprensión y escritura argumentativa.',
@@ -33,9 +38,9 @@ export default function ItalianoPage() {
     <>
     <CourseSchema
       name="Práctica de Italiano — Ejercicios interactivos MCER"
-      description="Ejercicios de italiano por nivel MCER: A1 y práctica integrada B2. Vocabulario, gramática, lectura, escucha y escritura."
+      description="Ejercicios de italiano por nivel MCER: A1, B1 y práctica integrada B2. Vocabulario, gramática, lectura, escucha y escritura."
       url="https://www.idiomaswl.com/practica/italiano"
-      educationalLevel="A1, B2"
+      educationalLevel="A1, B1, B2"
       teaches="Italiano, CILS, CELI"
       inLanguage="it"
     />
@@ -49,7 +54,7 @@ export default function ItalianoPage() {
         <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />🇮🇹 Italiano</p>
         <h1 style={{ fontSize: '2.2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Scegli il tuo livello</h1>
         <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 520, margin: '0 0 2.25rem' }}>
-          Ejercicios organizados por nivel MCER. Empieza en A1 y avanza a tu ritmo.
+          Ejercicios organizados por nivel MCER. Empieza en A1, practica B1 con gramática guiada o salta a los integrados B2.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           {NIVELES.map(n => {

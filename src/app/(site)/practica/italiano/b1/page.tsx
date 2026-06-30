@@ -5,8 +5,8 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
   title: 'Italiano B1 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Italiano B1 Intermedio: congiuntivo, condizionale, pronomi relativi, periodo ipotetico y discorso indiretto. Lectura, gramática, vocabulario, escritura, habla y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/italiano/b1' },
+  description: 'Italiano B1 Intermedio: congiuntivo, condizionale, particelle pronominali, pronomi relativi, periodo ipotetico y discorso indiretto. Lectura, gramática, vocabulario, escritura, habla y escucha.',
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/b1' },
 };
 
 const COLOR = '#009246';
@@ -19,8 +19,8 @@ const HABILIDADES = [
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatica',
-    desc: 'Congiuntivo presente, Condizionale presente, Pronomi relativi, Periodo ipotetico y Discorso indiretto.',
-    count: '5 temi · 50+ esercizi', href: '/practica/italiano/b1/gramatica', available: true,
+    desc: 'Congiuntivo, Condizionale, Particelle pronominali, Pronomi relativi, Periodo ipotetico y Discorso indiretto.',
+    count: '6 percorsi · 100+ esercizi', href: '/practica/italiano/b1/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Scrittura',
@@ -43,8 +43,8 @@ const HABILIDADES = [
     count: '3 dialoghi in arrivo', href: '/practica/italiano/b1/escucha', available: true,
   },
   {
-    id: 'particelle', emoji: '🎯', name: 'Quest: Particelle', eng: 'Pronoun Particles',
-    desc: 'Domina ci, ne, gli, le, vi con 6 livelli progressivi: selezione, scrittura libera e sprint finale.',
+    id: 'particelle', emoji: '🎯', name: 'Particelle pronominali', eng: 'Grammatica quest',
+    desc: 'Domina ci, ne, gli, le, vi con 6 livelli progressivi dentro il percorso di grammatica B1.',
     count: '6 livelli · 48 esercizi', href: '/practica/italiano/b1/particelle', available: true,
   },
 ];
@@ -60,8 +60,8 @@ export default function ItalianoB1Page() {
     <>
     <CourseSchema
       name="Italiano B1 — Lectura, Gramática, Vocabulario y más"
-      description="Practica Italiano nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con congiuntivo, condizionale y pronomi relativi."
-      url="https://idiomaswl.com/practica/italiano/b1"
+      description="Practica Italiano nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con congiuntivo, condizionale, particelle pronominali y pronomi relativi."
+      url="https://www.idiomaswl.com/practica/italiano/b1"
       educationalLevel="B1"
       teaches="Italiano, habilidades MCER"
       inLanguage="it"
@@ -84,7 +84,7 @@ export default function ItalianoB1Page() {
           </div>
         </div>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 2.5rem' }}>
-          Seis habilidades para el italiano intermedio. Practica il congiuntivo, il condizionale y i pronomi relativi.
+          Sette percorsi per l&apos;italiano intermedio. Practica il congiuntivo, il condizionale, le particelle pronominali y i pronomi relativi.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>

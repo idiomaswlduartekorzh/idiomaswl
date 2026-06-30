@@ -6,7 +6,7 @@ import { QuizSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Particelle Pronominali B1 — ci, ne, gli, le, vi | Idiomas WeLearn',
   description: 'Practica las partículas pronominales del italiano (ci, ne, gli, le, vi) con 6 niveles progresivos: selección, escritura libre y sprint final.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/italiano/b1/particelle' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/b1/particelle' },
 };
 
 const guide: QuestGuide = {
@@ -124,7 +124,7 @@ export default function ParticulasItalianoB1() {
     <>
       <QuizSchema
         name="Particelle Pronominali Italiane B1 — ci, ne, gli, le, vi"
-        url="https://idiomaswl.com/practica/italiano/b1/particelle"
+        url="https://www.idiomaswl.com/practica/italiano/b1/particelle"
         description="Ejercicios interactivos para dominar las partículas pronominales del italiano: ci, ne, gli, le, vi. 6 niveles progresivos con feedback inmediato."
       />
       <QuestEngine
@@ -133,8 +133,8 @@ export default function ParticulasItalianoB1() {
         storageKey="quest-it-b1-particelle"
         guide={guide}
         levels={levels}
-        backHref="/practica/italiano/b1"
-        backLabel="Italiano B1"
+        backHref="/practica/italiano/b1/gramatica"
+        backLabel="Gramática B1"
         title="Particelle Pronominali"
         subtitle="Italiano B1 — Grammatica"
       />
