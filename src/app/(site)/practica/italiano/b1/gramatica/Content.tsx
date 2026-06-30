@@ -276,10 +276,10 @@ export default function GramaticaItalianoB1() {
           }}>
             <div style={{ width: 44, height: 44, borderRadius: 11, background: '#009246', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', flexShrink: 0 }}>🎯</div>
             <div style={{ flex: 1, minWidth: 220 }}>
-              <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#009246', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>Percorso pronominale</div>
+              <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#009246', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>Quest guidato · 6 livelli</div>
               <div style={{ fontWeight: 850, color: 'var(--ink)', fontSize: '1rem', marginBottom: '0.18rem' }}>Particelle pronominali: ci, ne, gli, le, vi</div>
               <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.84rem', lineHeight: 1.55 }}>
-                6 livelli progressivi per distinguere luogo, quantità, complemento indiretto e forme pronominali in contesto.
+                Guida aperta, progressione a XP e sei livelli per distinguere luogo, quantità, complemento indiretto e forme pronominali in contesto.
               </p>
             </div>
             <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.55rem', color: '#009246', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 800 }}>

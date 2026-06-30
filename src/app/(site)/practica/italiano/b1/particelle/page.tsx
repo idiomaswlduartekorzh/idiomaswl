@@ -1,25 +1,33 @@
 import type { Metadata } from 'next';
 import QuestEngine from '@/components/practica/QuestEngine';
 import type { QuestLevel, QuestGuide } from '@/components/practica/QuestEngine';
-import { QuizSchema } from '@/components/practica/EducationSchema';
+import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Particelle Pronominali B1 — ci, ne, gli, le, vi | Idiomas WeLearn',
-  description: 'Practica las partículas pronominales del italiano (ci, ne, gli, le, vi) con 6 niveles progresivos: selección, escritura libre y sprint final.',
+  title: 'Particelle pronominali italiane B1 — ci, ne, gli, le, vi | Idiomas WeLearn',
+  description: 'Guía y quest interactivo de 6 niveles para practicar las particelle pronominali italiane: ci, ne, gli, le y vi. Explicación, ejemplos, errores frecuentes y feedback inmediato.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/b1/particelle' },
+  keywords: [
+    'particelle pronominali italiane',
+    'ci ne gli le vi italiano',
+    'pronombres ci ne italiano',
+    'gramatica italiana B1',
+    'ejercicios particelle italiano',
+  ],
 };
 
 const guide: QuestGuide = {
-  title: 'Partículas pronominales: ci, ne, gli, le, vi',
-  body: 'Las partículas pronominales sustituyen un nombre o complemento ya mencionado para evitar repeticiones. Casi siempre van ANTES del verbo (proclíticas): "Ne voglio ancora". Con infinitivo, van DESPUÉS: "Vuoi parlarne?".\n\nEn combinación, el orden es: mi/ti/ci/vi/gli + lo/la/li/le/ne. Cuando "ci" o "vi" preceden a "lo/la/li/le/ne", cambian a "ce" o "ve": "Ce lo dico" (te lo digo).',
-  tip: 'CI = luogo (vado lì → ci vado) o riflessivo/noi. NE = partitivo/quantità (ne voglio tre) o "di esso/di ciò". GLI = a lui / a loro (informal). LE = a lei.',
+  title: 'Guía B1: particelle pronominali ci, ne, gli, le, vi',
+  body: 'Las particelle pronominali son palabras pequeñas que sustituyen un lugar, una cantidad o un complemento ya mencionado. En italiano B1 aparecen todo el tiempo porque permiten evitar repeticiones: "Vado a Roma" puede convertirse en "Ci vado"; "Compro tre libri" puede convertirse en "Ne compro tre".\n\nCI suele reemplazar un lugar introducido por a, in o da, o una idea con verbos como pensare a: "Ci penso". NE reemplaza una cantidad o una expresión con di: "Ne voglio due", "Ne parliamo domani". GLI reemplaza "a lui" y, en el uso común, también "a loro"; LE reemplaza "a lei"; VI puede ser "a voi" o un lugar en registro más formal.\n\nLa posición normal es antes del verbo conjugado: "Ci vado", "Ne prendo due", "Gli scrivo". Con infinitivo puede ir al final y pegarse al verbo: "voglio andarci", "devo parlarne". En los tiempos compuestos, NE puede afectar el participio cuando expresa cantidad: "Ne ho comprate tre".\n\nEste quest tiene 6 niveles progresivos. Los niveles 1 y 2 trabajan reconocimiento con opciones; los niveles 3, 4 y 5 pasan a escritura libre en contextos cada vez más complejos; el nivel 6 es un sprint final para automatizar la respuesta. Para avanzar, necesitas contestar correctamente la mayoría de cada nivel.',
+  tip: 'Atajo mental: CI = lì/a ciò; NE = di qualcosa/quantità; GLI = a lui/a loro; LE = a lei; VI = a voi o lì en registro formal.',
   tableHead: ['Particella', 'Funzione principale', 'Esempio'],
   tableRows: [
-    ['ci', 'luogo (lì/qui) / noi', '"Ci vado ogni anno" (vado lì)'],
-    ['ne', 'partitivo / quantità / di ciò', '"Ne voglio tre" (di queste)'],
-    ['gli', 'c.ind. a lui / a loro', '"Gli ho detto tutto" (a lui)'],
-    ['le', 'c.ind. a lei', '"Le ho scritto ieri" (a lei)'],
-    ['vi', 'luogo / a voi (formale)', '"Vi aspetto qui" (a voi)'],
+    ['ci', 'luogo / a ciò', '"Ci vado ogni anno" = vado lì'],
+    ['ne', 'quantità / di ciò', '"Ne voglio tre" = tre di queste cose'],
+    ['gli', 'a lui / a loro', '"Gli ho detto tutto" = ho detto tutto a lui'],
+    ['le', 'a lei', '"Le ho scritto ieri" = ho scritto a lei'],
+    ['vi', 'a voi / luogo formale', '"Vi aspetto qui" = aspetto voi'],
+    ['-ci / -ne', 'dopo infinito', '"andarci", "parlarne", "prenderne due"'],
   ],
 };
 
@@ -122,10 +130,19 @@ const levels: QuestLevel[] = [
 export default function ParticulasItalianoB1() {
   return (
     <>
+      <GrammarLessonSchema
+        name="Particelle pronominali italiane B1 — ci, ne, gli, le, vi"
+        url="https://www.idiomaswl.com/practica/italiano/b1/particelle"
+        description="Guía de gramática italiana B1 sobre las particelle pronominali ci, ne, gli, le y vi, con explicación, ejemplos y un quest progresivo de 6 niveles."
+        educationalLevel="B1"
+        inLanguage="it"
+        keywords={['particelle pronominali', 'ci ne italiano', 'gli le vi italiano', 'gramatica italiana B1']}
+        course={{ name: 'Gramática de Italiano B1', url: 'https://www.idiomaswl.com/practica/italiano/b1/gramatica' }}
+      />
       <QuizSchema
         name="Particelle Pronominali Italiane B1 — ci, ne, gli, le, vi"
         url="https://www.idiomaswl.com/practica/italiano/b1/particelle"
-        description="Ejercicios interactivos para dominar las partículas pronominales del italiano: ci, ne, gli, le, vi. 6 niveles progresivos con feedback inmediato."
+        description="Quest interactivo para dominar las particelle pronominali italianas: ci, ne, gli, le y vi. 6 niveles progresivos con feedback inmediato."
       />
       <QuestEngine
         color="#009246"
@@ -137,6 +154,7 @@ export default function ParticulasItalianoB1() {
         backLabel="Gramática B1"
         title="Particelle Pronominali"
         subtitle="Italiano B1 — Grammatica"
+        defaultGuideOpen
       />
     </>
   );

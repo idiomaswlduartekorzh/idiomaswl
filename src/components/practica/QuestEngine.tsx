@@ -42,6 +42,7 @@ interface Props {
   backLabel: string;
   title: string;
   subtitle?: string;
+  defaultGuideOpen?: boolean;
 }
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
@@ -62,7 +63,7 @@ function accepts(input: string, ans: string | string[]): boolean {
 
 export default function QuestEngine({
   color, flag, storageKey, guide, levels,
-  backHref, backLabel, title, subtitle,
+  backHref, backLabel, title, subtitle, defaultGuideOpen = false,
 }: Props) {
   const [unlocked, setUnlocked] = useState(0);
   const [active, setActive] = useState(0);
@@ -70,17 +71,22 @@ export default function QuestEngine({
   const [checked, setChecked] = useState(false);
   const [results, setResults] = useState<boolean[] | null>(null);
   const [xp, setXP] = useState(0);
-  const [guideOpen, setGuideOpen] = useState(false);
+  const [guideOpen, setGuideOpen] = useState(defaultGuideOpen);
 
   useEffect(() => {
+    let cancelled = false;
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
-      if (typeof saved.unlocked === 'number') {
-        setUnlocked(saved.unlocked);
-        setActive(Math.min(saved.unlocked, levels.length - 1));
-      }
-      if (typeof saved.xp === 'number') setXP(saved.xp);
+      queueMicrotask(() => {
+        if (cancelled) return;
+        if (typeof saved.unlocked === 'number') {
+          setUnlocked(saved.unlocked);
+          setActive(Math.min(saved.unlocked, levels.length - 1));
+        }
+        if (typeof saved.xp === 'number') setXP(saved.xp);
+      });
     } catch {}
+    return () => { cancelled = true; };
   }, [storageKey, levels.length]);
 
   const level = levels[active];

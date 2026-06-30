@@ -44,7 +44,7 @@ const HABILIDADES = [
   },
   {
     id: 'particelle', emoji: '🎯', name: 'Particelle pronominali', eng: 'Grammatica quest',
-    desc: 'Domina ci, ne, gli, le, vi con 6 livelli progressivi dentro il percorso di grammatica B1.',
+    desc: 'Guida + quest con XP: domina ci, ne, gli, le, vi in 6 livelli progressivi dentro grammatica B1.',
     count: '6 livelli · 48 esercizi', href: '/practica/italiano/b1/particelle', available: true,
   },
 ];
