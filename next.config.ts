@@ -75,11 +75,6 @@ const nextConfig: NextConfig = {
   // Remove the X-Powered-By: Next.js response header (minor security improvement)
   poweredByHeader: false,
 
-  // Fix Turbopack workspace root (multiple package-lock.json files confuse it)
-  turbopack: {
-    root: __dirname,
-  },
-
   // Image optimization — serve modern formats (WebP/AVIF) automatically
   images: {
     formats: ['image/avif', 'image/webp'],

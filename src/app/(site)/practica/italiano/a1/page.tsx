@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
   title: 'Italiano A1 — Elige una habilidad | Idiomas WeLearn',
@@ -79,6 +80,11 @@ export default function ItalianoA1Page() {
         </div>
       </div>
     </section>
+    <PracticaWABanner
+      idioma="italiano"
+      color="#009246"
+      msg="Hola, estoy practicando italiano en WeLearn y me gustaría agendar una clase de diagnóstico gratis."
+    />
     </>
   );
 }

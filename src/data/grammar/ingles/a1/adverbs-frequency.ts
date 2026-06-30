@@ -1,0 +1,295 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'adverbs-frequency',
+  order: '18',
+  color: '#0369a1',
+  category: 'Adverbs',
+  level: 'A1',
+  title: 'Adverbios de frecuencia en inglés A1',
+  shortTitle: 'Adverbios de frecuencia',
+  metaTitle: 'Adverbios de frecuencia en inglés A1 | Always, Usually, Never',
+  description:
+    'Aprende los adverbios de frecuencia en inglés A1: always, usually, often, sometimes, rarely y never. Domina su posición en la oración y úsalos para hablar de rutinas.',
+  lead: 'Los adverbios de frecuencia responden a "¿con qué frecuencia?" Son 6 palabras clave: always (100%), usually (~80%), often (~60%), sometimes (~40%), rarely (~20%) y never (0%). Van siempre ANTES del verbo principal, pero DESPUÉS de to be.',
+  outcomes: [
+    'Reconocer y usar always, usually, often, sometimes, rarely, never.',
+    'Colocar el adverbio correctamente: antes del verbo o después de to be.',
+    'Hablar de rutinas y hábitos con adverbios de frecuencia.',
+  ],
+  guide: {
+    goal: 'Expresar con qué frecuencia ocurre algo usando el adverbio de frecuencia correcto y en la posición correcta.',
+    model: 'I always drink coffee. / She is never late. / We sometimes study at night.',
+    formula: 'Subject + adverb + main verb | Subject + to be + adverb',
+    decisions: [
+      'Con verbos comunes: adverbio va ANTES: I always study. / She never eats meat.',
+      'Con to be: adverbio va DESPUÉS: He is always happy. / We are never late.',
+      'Escala: always (100%) > usually > often > sometimes > rarely > never (0%).',
+      'Sometimes puede ir también al inicio: Sometimes I study at night.',
+      'NUNCA al final del verbo principal: "I study always" ❌ → I always study ✓.',
+    ],
+    table: [
+      ['Adverbio', 'Frecuencia aprox.', 'Ejemplo A1'],
+      ['always', '100% — siempre', 'I always wake up at 7.'],
+      ['usually', '80% — normalmente', 'She usually studies at night.'],
+      ['often', '60% — a menudo', 'We often practice speaking.'],
+      ['sometimes', '40% — a veces', 'He sometimes forgets his homework.'],
+      ['rarely / seldom', '20% — raramente', 'They rarely miss class.'],
+      ['never', '0% — nunca', 'I never arrive late.'],
+    ],
+    mistakes: [
+      '"I study always English" ❌ → I always study English ✓ — adverbio antes del verbo.',
+      '"She is always late" ✓ pero "She always is late" ❌ — con to be, el adverbio va después.',
+      '"I am never study" ❌ → I never study ✓ — never con verbo normal, no con be.',
+    ],
+  },
+  seo: [
+    {
+      heading: 'Qué son los adverbios de frecuencia y para qué sirven',
+      paragraphs: [
+        'Los adverbios de frecuencia en inglés indican con qué regularidad ocurre una acción. Los principales en A1 son: always (siempre), usually (normalmente), often (a menudo), sometimes (a veces), rarely (raramente) y never (nunca). Se usan con el present simple para hablar de rutinas y hábitos.',
+        'Son fundamentales para describir tu vida diaria: cuándo te despiertas, con qué frecuencia estudias, si llegas tarde a clase. En WeLearn los usamos desde el primer nivel porque permiten hablar de uno mismo de forma natural.',
+      ],
+    },
+    {
+      heading: 'La posición del adverbio: antes del verbo, después de to be',
+      paragraphs: [
+        'La regla de posición es la clave de este tema. Con verbos principales (study, eat, go, work): el adverbio va ANTES: I always study. / She never eats fast food. Con el verbo to be: el adverbio va DESPUÉS: He is always happy. / We are never late.',
+        'El error más común es poner el adverbio al final de la oración por influencia del español: "I study always" o "I am late never". En inglés la posición es fija y no puede cambiarse en estas frases.',
+      ],
+    },
+    {
+      heading: 'Sometimes: el adverbio más flexible',
+      paragraphs: [
+        'Sometimes es el único adverbio de esta lista que puede ir al inicio de la oración para darle énfasis: Sometimes I study at night. / Sometimes she forgets. Esta flexibilidad no existe con always, usually, often, rarely ni never.',
+        'Puedes usar esto para variar tus frases y sonar más natural: en lugar de decir siempre "I sometimes forget", puedes decir "Sometimes I forget" para mayor énfasis.',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'scale',
+    teacherLens: 'El estudiante aprende a elegir el adverbio correcto y a colocarlo en la posición adecuada.',
+    graphicPrompt: 'Escala de frecuencia: always 100% — usually 80% — often 60% — sometimes 40% — rarely 20% — never 0%.',
+    scene: [
+      ['always (100%)', 'I always brush my teeth. / She is always on time.'],
+      ['usually (80%)', 'I usually study at night. / He is usually tired.'],
+      ['sometimes (40%)', 'I sometimes forget. / We are sometimes late.'],
+      ['never (0%)', 'I never miss class. / She is never rude.'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    reviewFocus: ['posición antes del verbo', 'después de to be', 'escala de frecuencia', 'sometimes flexible'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'Reconocimiento de frecuencia',
+        tag: 'Opción múltiple',
+        intro: 'Elige el adverbio de frecuencia correcto según el porcentaje indicado.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'Descripción de hábito — 100%',
+            lines: [['Carlos', 'I ___ study before class. (every single day)']],
+            options: ['always', 'sometimes', 'never', 'rarely'],
+            answer: 'always',
+            explain: 'always = 100% — siempre, sin excepción.',
+          },
+          {
+            scene: 'Descripción de hábito — 0%',
+            lines: [['Ana', 'She ___ arrives late. (she is always on time)']],
+            options: ['never', 'always', 'usually', 'often'],
+            answer: 'never',
+            explain: 'never = 0% — nunca ocurre.',
+          },
+          {
+            scene: 'Descripción de hábito — ~80%',
+            lines: [['David', 'I ___ drink coffee in the morning. (almost every day)']],
+            options: ['usually', 'never', 'rarely', 'sometimes'],
+            answer: 'usually',
+            explain: 'usually = ~80% — casi siempre.',
+          },
+          {
+            scene: 'Descripción de hábito — ~40%',
+            lines: [['Sofia', 'I ___ watch movies in English. (maybe twice a week)']],
+            options: ['sometimes', 'always', 'never', 'usually'],
+            answer: 'sometimes',
+            explain: 'sometimes = ~40% — a veces.',
+          },
+          {
+            scene: 'Posición correcta con verbo',
+            lines: [['Teacher', 'Which is correct?']],
+            options: ['I always study English.', 'I study always English.', 'I study English always.', 'Always I study English.'],
+            answer: 'I always study English.',
+            explain: 'Adverbio va ANTES del verbo principal: I always study.',
+          },
+          {
+            scene: 'Posición correcta con to be',
+            lines: [['Lina', 'Which is correct?']],
+            options: ['She is always happy.', 'She always is happy.', 'Always she is happy.', 'She happy is always.'],
+            answer: 'She is always happy.',
+            explain: 'Con to be: adverbio DESPUÉS de is/am/are.',
+          },
+          {
+            scene: 'Descripción de hábito — ~20%',
+            lines: [['Marco', 'He ___ forgets to do homework. (almost never)']],
+            options: ['rarely', 'always', 'usually', 'often'],
+            answer: 'rarely',
+            explain: 'rarely = ~20% — casi nunca.',
+          },
+          {
+            scene: 'Descripción de hábito — ~60%',
+            lines: [['Carlos', 'We ___ practice speaking in class. (most classes)']],
+            options: ['often', 'never', 'rarely', 'sometimes'],
+            answer: 'often',
+            explain: 'often = ~60% — a menudo.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Adverbio en posición correcta',
+        tag: '2 espacios',
+        intro: 'Elige el adverbio y ponlo en la posición correcta.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Rutina de estudio',
+            lines: [['Ana', 'I [[0]] [[1]] English before dinner.']],
+            blanks: [
+              { options: ['always', 'never', 'rarely'], answer: 'always', explain: 'Hábito diario → always (100%).' },
+              { options: ['study', 'am', 'is'], answer: 'study', explain: 'I always study — adverbio antes del verbo.' },
+            ],
+          },
+          {
+            scene: 'Sobre la puntualidad',
+            lines: [['David', 'My students [[0]] [[1]] late.']],
+            blanks: [
+              { options: ['are', 'study', 'go'], answer: 'are', explain: 'To be: subject + am/is/are + adverb.' },
+              { options: ['never', 'always', 'study'], answer: 'never', explain: 'My students are never late. — after to be.' },
+            ],
+          },
+          {
+            scene: 'Hábito irregular',
+            lines: [['Carlos', 'I [[0]] [[1]] vocabulary at night.']],
+            blanks: [
+              { options: ['sometimes', 'am', 'are'], answer: 'sometimes', explain: 'sometimes = ~40%, antes del verbo.' },
+              { options: ['review', 'is', 'am'], answer: 'review', explain: 'I sometimes review — verbo base after adverb.' },
+            ],
+          },
+          {
+            scene: 'Estado con to be',
+            lines: [['Sofia', 'She [[0]] [[1]] nervous before exams.']],
+            blanks: [
+              { options: ['is', 'study', 'go'], answer: 'is', explain: 'To be: She is + adverb + adjective.' },
+              { options: ['always', 'study', 'usually go'], answer: 'always', explain: 'She is always nervous — adverb after to be.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'Un día en WeLearn',
+        tag: 'Opciones',
+        intro: 'Elige el adverbio de frecuencia para completar la descripción de un estudiante.',
+        type: 'guidedText',
+        scene: 'Rutina diaria de Carlos, estudiante de WeLearn',
+        text: 'Carlos [[0]] wakes up at 6 a.m. He [[1]] has breakfast — sometimes he skips it. He [[2]] arrives late to class because he is very responsible. He [[3]] practices English in the morning, maybe 3 times a week. He is [[4]] happy in class because he loves learning. After class, he [[5]] reviews his notes.',
+        blanks: [
+          { options: ['always', 'never', 'rarely'], answer: 'always', explain: 'Hábito de todos los días → always.' },
+          { options: ['sometimes', 'always', 'never'], answer: 'sometimes', explain: '"sometimes he skips" → sometimes.' },
+          { options: ['never', 'always', 'usually'], answer: 'never', explain: '"very responsible" → never arrives late.' },
+          { options: ['often', 'never', 'always'], answer: 'often', explain: '3 veces por semana ≈ often (~60%).' },
+          { options: ['always', 'rarely', 'never'], answer: 'always', explain: 'Con to be: He is always happy.' },
+          { options: ['usually', 'never', 'rarely'], answer: 'usually', explain: 'Casi siempre → usually (~80%).' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Mi rutina de estudio',
+        tag: 'Sin opciones',
+        intro: 'Escribe el adverbio de frecuencia correcto según el porcentaje indicado.',
+        type: 'freeText',
+        scene: 'Cuestionario de hábitos de estudio en WeLearn',
+        text: 'I ___ (100%) do my homework. I ___ (0%) miss class. I ___ (80%) listen to English music. I ___ (40%) watch YouTube in English. The teacher is ___ (100%) helpful. I am ___ (20%) tired after class.',
+        blanks: [
+          { answer: 'always', accepted: ['always'], explain: '100% → always.' },
+          { answer: 'never', accepted: ['never'], explain: '0% → never.' },
+          { answer: 'usually', accepted: ['usually', 'often'], explain: '80% → usually o often.' },
+          { answer: 'sometimes', accepted: ['sometimes'], explain: '40% → sometimes.' },
+          { answer: 'always', accepted: ['always'], explain: 'Con to be + 100% → always.' },
+          { answer: 'rarely', accepted: ['rarely', 'seldom'], explain: '20% → rarely o seldom.' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Escribiendo rutinas',
+        tag: 'Producción',
+        intro: 'Escribe oraciones completas con el adverbio en la posición correcta.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Hábito diario',
+            prompt: 'Escribe: "Yo siempre bebo café." (I / always / coffee / drink)',
+            answer: 'I always drink coffee.',
+            accepted: ['i always drink coffee', 'i always drink coffee.'],
+            explain: 'I always drink coffee. — always antes del verbo.',
+          },
+          {
+            scene: 'Con to be',
+            prompt: 'Escribe: "Ella nunca llega tarde." (She / is / never / late)',
+            answer: 'She is never late.',
+            accepted: ['she is never late', 'she is never late.'],
+            explain: 'She is never late. — never después de is.',
+          },
+          {
+            scene: 'Hábito irregular',
+            prompt: 'Escribe: "A veces estudio de noche." (Sometimes / I / study / at night)',
+            answer: 'Sometimes I study at night.',
+            accepted: ['sometimes i study at night', 'sometimes i study at night.', 'i sometimes study at night'],
+            explain: 'Sometimes I study at night. — sometimes puede ir al inicio.',
+          },
+          {
+            scene: 'Negando un hábito',
+            prompt: 'Escribe: "Él nunca falta a clase." (He / never / misses / class)',
+            answer: 'He never misses class.',
+            accepted: ['he never misses class', 'he never misses class.'],
+            explain: 'He never misses class. — never antes del verbo.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Mi perfil de estudiante',
+        tag: 'Reto final',
+        intro: 'Escribe 3 frases reales sobre tus hábitos de estudio.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Tus hábitos de inglés',
+            prompt: 'Write 2 sentences about how often you study English (use different adverbs).',
+            answer: 'I always study English at night. I sometimes practice speaking.',
+            accepted: ['always', 'usually', 'often', 'sometimes', 'rarely', 'never'],
+            explain: 'Use adverbs BEFORE the main verb: I [adverb] study/practice/review.',
+          },
+          {
+            scene: 'Tu puntualidad',
+            prompt: 'Write how often you are late: I am ___ late.',
+            answer: 'I am never late.',
+            accepted: ['i am never late', 'i am always late', 'i am sometimes late', 'i am rarely late', 'i am usually late'],
+            explain: 'I am [adverb] late. — adverb AFTER to be.',
+          },
+          {
+            scene: 'Algo que nunca haces',
+            prompt: 'Write one thing you never do: I never ___.',
+            answer: 'I never miss class.',
+            accepted: ['i never'],
+            explain: 'I never + verb (base form): I never miss, forget, arrive late.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic

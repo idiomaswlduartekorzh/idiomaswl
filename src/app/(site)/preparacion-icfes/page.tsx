@@ -325,6 +325,31 @@ export default function PreparacionICFESPage() {
           </div>
         </section>
 
+        {/* ══════════════ SIMULACRO DIRECTO ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <div style={{ background: 'linear-gradient(135deg, #0f3d8c12 0%, #0f3d8c06 100%)', border: '2px solid #0f3d8c30', borderRadius: 20, padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', flexWrap: 'wrap' }}>
+              <div>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: '#0f3d8c18', border: '1px solid #0f3d8c30', borderRadius: 8, padding: '0.2rem 0.7rem', fontSize: '0.72rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.7rem' }}>
+                  Gratis · Sin registro
+                </div>
+                <h3 style={{ margin: '0 0 0.4rem', fontSize: '1.3rem', fontWeight: 800, color: 'var(--ink)' }}>
+                  Haz el simulacro ICFES ahora mismo
+                </h3>
+                <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: 460 }}>
+                  45 preguntas · mismo formato del examen real · resultado por sección al instante. El primer paso para saber exactamente dónde estás.
+                </p>
+              </div>
+              <Link
+                href="/practica/icfes-saber-11"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#0f3d8c', color: '#fff', padding: '0.85rem 1.75rem', borderRadius: 12, fontWeight: 700, fontSize: '1rem', textDecoration: 'none', whiteSpace: 'nowrap', flexShrink: 0 }}
+              >
+                Iniciar simulacro gratis →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ══════════════ CTA MITAD ══════════════ */}
         <div className={s.midCta}>
           <div className={s.wrap}>
@@ -343,7 +368,7 @@ export default function PreparacionICFESPage() {
                 </svg>
                 Empezar preparación por WhatsApp
               </a>
-              <Link href="/examenes/icfes" className={s.ghostBtn}>
+              <Link href="/practica/icfes-saber-11" className={s.ghostBtn}>
                 Hacer simulacro gratis primero
               </Link>
             </div>
