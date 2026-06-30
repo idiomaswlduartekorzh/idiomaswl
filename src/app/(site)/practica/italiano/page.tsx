@@ -4,7 +4,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Italiano — Elige tu nivel MCER | Idiomas WeLearn',
-  description: 'Ejercicios interactivos de italiano por nivel MCER. A1 disponible con lectura, gramática, escritura, expresión oral, vocabulario y escucha.',
+  description: 'Ejercicios interactivos de italiano por nivel MCER. A1 disponible y práctica integrada B2 con lectura, escucha, preguntas y escritura.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano' },
 };
 
@@ -19,7 +19,12 @@ const NIVELES = [
   },
   { nivel: 'A2', name: 'Elementare', desc: 'Passato prossimo, comparativi, futuro semplice e descrizioni di persone.', available: false },
   { nivel: 'B1', name: 'Intermedio', desc: 'Congiuntivo presente, condizionale, lessico professionale e ascolto.', available: false },
-  { nivel: 'B2', name: 'Intermedio alto', desc: 'Congiuntivo passato, discorso indiretto, scrittura accademica.', available: false },
+  {
+    nivel: 'B2', name: 'Intermedio alto',
+    desc: 'Ejercicios integrados estilo TOEFL/IELTS: lectura, escucha, comprensión y escritura argumentativa.',
+    href: '/practica/italiano/b2', available: true,
+    count: '1 ejercicio integrado',
+  },
   { nivel: 'C1', name: 'Avanzato', desc: 'Grammatica complessa, collocazioni, scrittura avanzata e livello CILS C1.', available: false },
 ];
 
@@ -28,9 +33,9 @@ export default function ItalianoPage() {
     <>
     <CourseSchema
       name="Práctica de Italiano — Ejercicios interactivos MCER"
-      description="Ejercicios de italiano por nivel MCER: A1 disponible. Vocabulario, gramática, escritura, habla y escucha."
+      description="Ejercicios de italiano por nivel MCER: A1 y práctica integrada B2. Vocabulario, gramática, lectura, escucha y escritura."
       url="https://www.idiomaswl.com/practica/italiano"
-      educationalLevel="A1"
+      educationalLevel="A1, B2"
       teaches="Italiano, CILS, CELI"
       inLanguage="it"
     />
