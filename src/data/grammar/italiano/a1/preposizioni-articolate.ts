@@ -1,0 +1,302 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'preposizioni-articolate',
+  order: '13',
+  color: '#009246',
+  category: 'Preposiciones',
+  level: 'A1',
+  title: 'Preposizioni articolate en italiano A1 — Contracciones obligatorias',
+  shortTitle: 'Preposiciones articuladas',
+  metaTitle: 'Preposizioni articolate italiano A1 — del della nel sulla al alla dei agli',
+  description:
+    'Cuando las preposiciones di, a, in, su, da se combinan con el artículo determinado, forman contracciones obligatorias: del, della, dello, dell\', dei, degli, delle / al, alla, allo, all\', ai, agli, alle / nel, nella / sul, sulla. Con/per/tra/fra NO se contraen.',
+  lead: 'di + il = del, di + la = della, di + i = dei, di + gli = degli. A + il = al, a + la = alla, a + i = ai, a + gli = agli. In + il = nel, in + la = nella. Su + il = sul, su + la = sulla. Con/per/tra NO se contraen.',
+  outcomes: [
+    'Forma las contracciones de di, a, in, su y da con todos los artículos determinados',
+    'Reconoce que con/per/tra/fra no forman contracciones',
+    'Usa las preposizioni articolate en oraciones naturales del italiano A1',
+  ],
+
+  guide: {
+    goal: 'Usar correctamente las contracciones preposición + artículo del italiano.',
+    model: 'il libro del professore / vado alla scuola / i libri sono sul tavolo / viene dalla Colombia',
+    formula: 'preposición + artículo = forma contraída (OBLIGATORIO en italiano)',
+    decisions: [
+      'di + il → del | di + lo → dello | di + la → della | di + l\' → dell\'',
+      'di + i → dei | di + gli → degli | di + le → delle',
+      'a + il → al | a + lo → allo | a + la → alla | a + l\' → all\'',
+      'a + i → ai | a + gli → agli | a + le → alle',
+      'in + il → nel | in + lo → nello | in + la → nella | in + l\' → nell\'',
+      'in + i → nei | in + gli → negli | in + le → nelle',
+      'su + il → sul | su + lo → sullo | su + la → sulla | su + gli → sugli',
+      'da + il → dal | da + lo → dallo | da + la → dalla | da + gli → dagli',
+    ],
+    table: [
+      ['Prep.', 'il/lo/la/l\'', 'i/gli/le'],
+      ['di', 'del/dello/della/dell\'', 'dei/degli/delle'],
+      ['a', 'al/allo/alla/all\'', 'ai/agli/alle'],
+      ['in', 'nel/nello/nella/nell\'', 'nei/negli/nelle'],
+      ['su', 'sul/sullo/sulla/sull\'', 'sui/sugli/sulle'],
+    ],
+    mistakes: [
+      '"Di il libro" — MAL: di + il es OBLIGATORIO contraerlo: "del libro". No hay opción.',
+      '"Con il professore" — CORRECTO: con NO se contrae nunca. "Con il" se escribe separado.',
+      '"Al la scuola" — MAL: a + la = alla. Nunca se escriben separados.',
+    ],
+  },
+  seo: [
+    {
+      heading: 'Las preposizioni articolate: contracciones obligatorias',
+      paragraphs: [
+        'En italiano, cuando una preposición (di, a, in, su, da) va seguida de un artículo determinado (il, lo, la, l\', i, gli, le), la combinación es OBLIGATORIA y produce una forma contraída. No existe la opción de escribirlos separados como en español ("de el" → "del" es obligatorio en español pero solo con de y a).',
+        'En italiano, la obligación es mucho más amplia: afecta a cinco preposiciones. Di + il = del (nunca "di il"), a + la = alla (nunca "a la"), in + il = nel, su + le = sulle, da + gli = dagli. El italiano escrito incorrecto con preposiciones separadas es inmediatamente visible como error.',
+      ],
+    },
+    {
+      heading: 'Qué preposiciones se contraen y cuáles no',
+      paragraphs: [
+        'Se contraen: di, a, in, su, da. En A1 las más importantes son di (del/della/dei...) y a (al/alla/ai...) porque aparecen constantemente. In y su son muy frecuentes con artículo también: nel centro, sulla sedia, nella borsa.',
+        'NO se contraen nunca: con, per, tra, fra. "Con il professore" siempre se escribe así, nunca "col professore" en italiano estándar moderno (aunque "col" existió históricamente). "Per la lezione", "tra gli studenti" — siempre separadas.',
+      ],
+    },
+    {
+      heading: 'Cómo memorizar las contracciones en italiano',
+      paragraphs: [
+        'La estrategia más eficiente: aprende primero di y a con todos los artículos, ya que aparecen en casi todas las frases. Del professore, della classe, dei libri, delle penne, degli studenti. Al corso, alla scuola, ai ragazzi, alle ragazze, agli amici.',
+        'Luego add nel/nella/nei/nelle para in y sul/sulla/sui/sulle para su. Da forma: dal/dalla/dai/dagli/dalle — muy útile con movimiento. Una vez memorizadas estas cinco tablas, la lectura del italiano se vuelve mucho más fluida.',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'grammar-table',
+    teacherLens: 'El estudiante aprende las contracciones como una tabla de combinaciones, priorizando di y a por su frecuencia.',
+    graphicPrompt: 'Tabla de contracciones con colores: di (azul), a (verde), in (naranja), su (rojo). Con/per/tra marcadas como NO contraen.',
+    scene: [
+      ['di + il → del', 'il libro del professore'],
+      ['a + la → alla', 'vado alla scuola'],
+      ['in + il → nel', 'nel centro della città'],
+      ['su + il → sul', 'il libro è sul tavolo'],
+      ['con + il → con il', 'studio con il professore (sin contracción)'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    reviewFocus: ['contracciones obligatorias', 'con/per/tra no contraen', 'dei (masc. pl.) vs delle (fem. pl.)', 'agli vs ai'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'Contracción correcta',
+        tag: 'Opción múltiple',
+        intro: 'Elige la forma contraída (preposición + artículo) correcta.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'El libro del profesor',
+            lines: [['Carlo', 'Questo è il libro ___ professore di italiano.']],
+            options: ['del', 'di il', 'dello', 'della'],
+            answer: 'del',
+            explain: 'Di + il = del. Professore es masc. sing. con artículo il → del professore.',
+          },
+          {
+            scene: 'Voy a la escuela',
+            lines: [['Sofia', 'Ogni mattina vado ___ scuola di italiano.']],
+            options: ['alla', 'a la', 'al', 'allo'],
+            answer: 'alla',
+            explain: 'A + la = alla. Scuola es femenino → alla scuola.',
+          },
+          {
+            scene: 'Los libros de los estudiantes',
+            lines: [['David', 'Dove sono i libri ___ studenti?']],
+            options: ['degli', 'dei', 'delle', 'di gli'],
+            answer: 'degli',
+            explain: 'Di + gli = degli. Studenti es masculino plural que empieza por st- → gli studenti → degli studenti.',
+          },
+          {
+            scene: 'En el centro',
+            lines: [['Ana', 'La scuola WeLearn è ___ centro di Bucaramanga.']],
+            options: ['nel', 'in il', 'nello', 'nella'],
+            answer: 'nel',
+            explain: 'In + il = nel. Centro es masculino singular con il → nel centro.',
+          },
+          {
+            scene: 'Sobre la silla',
+            lines: [['Marco', 'La tua giacca è ___ sedia.']],
+            options: ['sulla', 'su la', 'sul', 'sullo'],
+            answer: 'sulla',
+            explain: 'Su + la = sulla. Sedia es femenino → sulla sedia.',
+          },
+          {
+            scene: 'Vengo de la Colombia',
+            lines: [['Lina', 'Vengo ___ Colombia ma vivo a Bogotá.']],
+            options: ['dalla', 'da la', 'dal', 'delle'],
+            answer: 'dalla',
+            explain: 'Da + la = dalla. Colombia (femenino con la) → dalla Colombia.',
+          },
+          {
+            scene: 'Estudio con el profesor',
+            lines: [['Carlo', 'Studio ___ professore ogni martedì.']],
+            options: ['con il', 'col', 'con lo', 'del'],
+            answer: 'con il',
+            explain: 'Con NO se contrae: siempre "con il". La forma "col" no es estándar moderno.',
+          },
+          {
+            scene: 'El nombre de los cursos',
+            lines: [['Zhanna', 'I nomi ___ corsi sono in italiano.']],
+            options: ['dei', 'degli', 'delle', 'di i'],
+            answer: 'dei',
+            explain: 'Di + i = dei. Corsi es masculino plural regular → dei corsi.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Dos contracciones en contexto',
+        tag: '2 espacios',
+        intro: 'Completa el diálogo con las contracciones correctas.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Los libros de la clase',
+            lines: [
+              ['Sofia', 'Dove sono i libri [[0]] studenti?'],
+              ['David', 'Sono [[1]] tavolo, come sempre.'],
+            ],
+            blanks: [
+              { options: ['degli', 'dei', 'delle'], answer: 'degli', explain: 'Di + gli = degli. Studenti → gli studenti.' },
+              { options: ['sul', 'sulla', 'nel'], answer: 'sul', explain: 'Su + il = sul. Tavolo masc. sing.' },
+            ],
+          },
+          {
+            scene: 'En la ciudad',
+            lines: [['Carlo', '[[0]] centro di Bogotá ci sono molte scuole [[1]] lingue.']],
+            blanks: [
+              { options: ['Nel', 'Nella', 'Nei'], answer: 'Nel', explain: 'In + il = nel. Centro masc. sing.' },
+              { options: ['di', 'delle', 'dei'], answer: 'di', explain: 'Di + le = delle... pero aquí "lingue" sin artículo: scuole di lingue (lingue en general, sin artículo).' },
+            ],
+          },
+          {
+            scene: 'Voy a las clases',
+            lines: [['Ana', 'Ogni giorno vado [[0]] lezioni [[1]] mattina.']],
+            blanks: [
+              { options: ['alle', 'alla', 'ai'], answer: 'alle', explain: 'A + le = alle. Lezioni fem. pl.' },
+              { options: ['della', 'del', 'delle'], answer: 'della', explain: 'Di + la = della. Mattina fem. sing.' },
+            ],
+          },
+          {
+            scene: 'El horario de los cursos',
+            lines: [['Zhanna', '[[0]] orari [[1]] corsi sono sul sito web.']],
+            blanks: [
+              { options: ['Gli', 'I', 'Le'], answer: 'Gli', explain: 'Orari empieza por vocal → gli orari.' },
+              { options: ['dei', 'degli', 'delle'], answer: 'dei', explain: 'Di + i = dei. Corsi masc. pl. regular.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'Una giornata tipica',
+        tag: 'Opciones',
+        intro: 'Completa el texto con las preposiciones articuladas correctas.',
+        type: 'guidedText',
+        scene: 'David describe un día típico en WeLearn',
+        text: 'La mattina arrivo [[0]] ufficio alle otto. Prendo i libri [[1]] scaffale e preparo la lezione. Gli studenti arrivano [[2]] nove. Metto i compiti [[3]] lavagna. Parliamo [[4]] argomenti [[5]] lezione. La sera vado [[6]] supermercato e poi torno a casa.',
+        blanks: [
+          { options: ['all\'', 'al', 'alla'], answer: 'all\'', explain: 'A + l\' = all\'. Ufficio empieza por u (vocal) → l\'ufficio → all\'ufficio.' },
+          { options: ['dallo', 'dallo', 'dalla'], answer: 'dallo', explain: 'Da + lo = dallo. Scaffale empieza por sc- → lo scaffale → dallo scaffale.' },
+          { options: ['alle', 'ai', 'agli'], answer: 'alle', explain: 'A + le = alle. Nove = las nueve (hora femenina plural).' },
+          { options: ['sulla', 'sul', 'nelle'], answer: 'sulla', explain: 'Su + la = sulla. Lavagna fem. sing.' },
+          { options: ['degli', 'degli', 'dei'], answer: 'degli', explain: 'Di + gli = degli. Argomenti empieza por a- → gli argomenti.' },
+          { options: ['della', 'del', 'delle'], answer: 'della', explain: 'Di + la = della. Lezione fem. sing.' },
+          { options: ['al', 'alla', 'nel'], answer: 'al', explain: 'A + il = al. Supermercato masc. sing.' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Sin opciones',
+        tag: 'Sin opciones',
+        intro: 'Escribe la preposición articulada correcta (contracción obligatoria).',
+        type: 'freeText',
+        scene: 'Frases sobre la vida de los estudiantes de WeLearn',
+        text: 'I compiti [[0]] studenti sono difficili. (di + gli) Vado [[1]] lezione ogni mattina. (a + la) Il professore viene [[2]] Colombia. (da + la) I libri sono [[3]] zaino. (in + lo) I nomi [[4]] insegnanti sono David e Zhanna. (di + le) Parliamo [[5]] temi [[6]] giorno. (di + i / di + il)',
+        blanks: [
+          { answer: 'degli', explain: 'Di + gli = degli. Studenti → gli studenti.' },
+          { answer: 'alla', explain: 'A + la = alla. Lezione fem. sing.' },
+          { answer: 'dalla', explain: 'Da + la = dalla. Colombia (femenino) → dalla Colombia.' },
+          { answer: 'nello', explain: 'In + lo = nello. Zaino empieza por z → lo zaino → nello zaino.' },
+          { answer: 'delle', explain: 'Di + le = delle. Insegnanti fem. pl.' },
+          { answer: 'dei', explain: 'Di + i = dei. Temi masc. pl. regular.' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Producción',
+        tag: 'Producción',
+        intro: 'Escribe la frase completa con la preposición articulada correcta.',
+        type: 'write',
+        items: [
+          {
+            scene: 'El nombre del profesor',
+            prompt: 'Escribe: El nombre del profesor es David. → Il nome ___ professore è David.',
+            answer: 'Il nome del professore è David.',
+            accepted: ['il nome del professore è david', 'il nome del professore e david'],
+            explain: 'Di + il = del. Professore masc. sing. → del professore.',
+          },
+          {
+            scene: 'Voy a las clases',
+            prompt: 'Escribe: Voy a las clases de italiano todos los días. → Vado ___ lezioni di italiano ogni giorno.',
+            answer: 'Vado alle lezioni di italiano ogni giorno.',
+            accepted: ['vado alle lezioni di italiano ogni giorno', 'vado alle lezioni di italiano ogni giorno.'],
+            explain: 'A + le = alle. Lezioni fem. pl.',
+          },
+          {
+            scene: 'Los libros de los estudiantes',
+            prompt: 'Escribe: Los libros de los estudiantes están en la bolsa. → I libri ___ studenti sono nella borsa.',
+            answer: 'I libri degli studenti sono nella borsa.',
+            accepted: ['i libri degli studenti sono nella borsa', 'i libri degli studenti sono nella borsa.'],
+            explain: 'Di + gli = degli (studenti → gli studenti). In + la = nella (borsa fem. sing.).',
+          },
+          {
+            scene: 'El libro está sobre la mesa',
+            prompt: 'Escribe: El cuaderno está sobre la mesa del profesor. → Il quaderno è ___ tavolo ___ professore.',
+            answer: 'Il quaderno è sul tavolo del professore.',
+            accepted: ['il quaderno è sul tavolo del professore', 'il quaderno e sul tavolo del professore'],
+            explain: 'Su + il = sul (tavolo masc. sing.). Di + il = del (professore masc. sing.).',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Misión final',
+        tag: 'Reto final',
+        intro: 'Usa preposizioni articolate para describir WeLearn y tu rutina.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Describe la escuela',
+            prompt: 'Scrivi del/della/dei/delle/degli... Descrivi WeLearn: La scuola ___ professori...',
+            answer: 'La scuola dei professori di WeLearn è nel centro di Bucaramanga. I nomi degli studenti sono sulla lista.',
+            accepted: ['dei professori', 'nel centro', 'degli studenti', 'sulla lista'],
+            explain: 'Dei professori (di+i), nel centro (in+il), degli studenti (di+gli), sulla lista (su+la).',
+          },
+          {
+            scene: 'Tu camino a clase',
+            prompt: 'Descrivi come vai a scuola: Vado ___ scuola. Arrivo ___ nove. Metto i libri ___.',
+            answer: 'Vado alla scuola. Arrivo alle nove. Metto i libri nello zaino.',
+            accepted: ['alla scuola', 'alle nove', 'nello zaino', 'sul tavolo'],
+            explain: 'Alla scuola (a+la), alle nove (a+le), nello zaino (in+lo).',
+          },
+          {
+            scene: 'Los materiales',
+            prompt: 'Parla dei materiali: I libri ___ studenti sono ___. I compiti sono ___.',
+            answer: 'I libri degli studenti sono sul tavolo. I compiti sono nella cartella del professore.',
+            accepted: ['degli studenti', 'sul tavolo', 'nella cartella', 'del professore'],
+            explain: 'Degli studenti (di+gli), sul tavolo (su+il), nella cartella (in+la), del professore (di+il).',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic

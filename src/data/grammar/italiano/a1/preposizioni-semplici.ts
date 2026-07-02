@@ -1,0 +1,312 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'preposizioni-semplici',
+  order: '12',
+  color: '#009246',
+  category: 'Preposiciones',
+  level: 'A1',
+  title: 'Preposizioni semplici en italiano A1 — a, in, di, da, su, con, per, tra/fra',
+  shortTitle: 'Preposiciones simples',
+  metaTitle: 'Preposiciones en italiano A1 — a in di da su con per tra fra usos principales',
+  description:
+    'Las 9 preposiciones simples del italiano: a, in, di, da, su, con, per, tra, fra. Usos principales en A1: a para lugar/hora, in para países/habitaciones, di para origen y posesión, da para procedencia y duración, su para posición, con para compañía, per para destinatario/fin.',
+  lead: 'A Roma, in Italia, di Marco, da Milano — las preposiciones simples italianas tienen usos específicos. A/in marcan lugar; di marcar origen y posesión; da indica procedencia; per indica fin o destinatario. Muchas se contraen con el artículo (ver tema siguiente).',
+  outcomes: [
+    'Usa a e in para expresar lugar y tiempo',
+    'Distingue di (origen/posesión), da (procedencia/duración), con, per y su',
+    'Forma frases básicas de localización, tiempo y compañía con las preposiciones correctas',
+  ],
+
+  guide: {
+    goal: 'Usar correctamente las preposiciones simples del italiano en contextos A1.',
+    model: 'Vado a Roma. Abito in Italia. Sono di Bogotá. Vengo da Medellín. Studio da tre anni.',
+    formula: 'preposición + nombre de lugar / hora / persona / sustantivo',
+    decisions: [
+      'A: ciudad, hora, destino — a Roma, a casa, alle otto, vado a studiare',
+      'IN: país, región, habitación, mezzo di trasporto — in Italia, in cucina, in treno',
+      'DI: origen, posesión, materia — sono di Bogotá, il libro di Marco, un corso di italiano',
+      'DA: procedencia, duración, caratteristica — vengo da Milano, studio da tre anni, un caffè da asporto',
+      'SU: posición encima — sul tavolo, sullo scaffale',
+      'CON: compañía, strumento — con Marco, con il treno, con la forchetta',
+      'PER: destino/beneficiario, scopo, durata futura — per te, parto per Roma, studia per due ore',
+      'TRA/FRA: entre personas/cosas, tiempo futuro — tra loro, tra cinque minuti',
+    ],
+    table: [
+      ['Preposición', 'Uso principal', 'Ejemplo WeLearn'],
+      ['a', 'ciudad / hora', 'a Bucaramanga / alle 9'],
+      ['in', 'país / habitación', 'in Italia / in classe'],
+      ['di', 'origen / posesión', 'di Colombia / il libro di David'],
+      ['da', 'procedencia / duración', 'da Medellín / studio da 2 anni'],
+      ['su', 'posición (encima)', 'i libri sono sul tavolo'],
+      ['con', 'compañía', 'studio con Sofia'],
+      ['per', 'destinatario / fin', 'questa lezione è per te'],
+      ['tra/fra', 'entre / en (tiempo)', 'tra 10 minuti / tra noi'],
+    ],
+    mistakes: [
+      '"Vado in Roma" — MAL: ciudades → "a": vado a Roma.',
+      '"Sono da Italia" — MAL: origen de país → "di": sono di Italia / sono italiano.',
+      '"Da" para duración en presente indica que la acción AÚN continúa: "Studio italiano da 2 anni" (llevo 2 años estudiando).',
+    ],
+  },
+  seo: [
+    {
+      heading: 'A vs In: la distinción más importante en italiano A1',
+      paragraphs: [
+        'La diferencia entre a e in es uno de los puntos más consultados del italiano A1. La regla práctica: se usa "a" con ciudades y pueblos (a Roma, a Milano, a Bucaramanga), y "in" con países, regiones, continentes y habitaciones de la casa (in Italia, in Colombia, in cucina, in bagno).',
+        'Hay excepciones memorables: "in centro" (en el centro), "in campagna" (en el campo), "in montagna" (en la montaña), "in spiaggia" (en la playa). Estos son usos fijos del italiano que el hispanohablante debe memorizar.',
+      ],
+    },
+    {
+      heading: 'Di y Da: origen, posesión y duración',
+      paragraphs: [
+        'Di tiene tres usos principales en A1: origen (Sono di Bogotá = soy de Bogotá), posesión (il libro di Marco = el libro de Marco) y complemento del nombre o tema (un corso di italiano, una lezione di grammatica).',
+        'Da es diferente: indica procedencia con movimiento (vengo da Roma = vengo de Roma), duración de una acción que continúa (studio italiano da sei mesi = llevo seis meses estudiando italiano), y también puede indicar "casa de alguien" (sono da Marco = estoy en casa de Marco). En español, "da" de duración se traduce como "hace + tiempo + que" o "llevar + tiempo + gerundio".',
+      ],
+    },
+    {
+      heading: 'Per, con, tra/fra: usos frecuentes en A1',
+      paragraphs: [
+        'Per indica destinatario (questo è per te = esto es para ti), finalidad (studio per imparare = estudio para aprender) y duración futura (parto per tre giorni = me voy por tres días). No confundir con "per" = porque/por cual no existe en A1.',
+        'Con indica compañía (con Marco, con i miei amici) y medio (con il treno, con la bici). Tra y fra son sinónimos: indican posición entre elementos (tra loro, fra amici) o tiempo que falta (tra cinque minuti = en cinco minutos, dentro de cinco minutos). Ambas se usan indistintamente.',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'preposition-map',
+    teacherLens: 'El estudiante aprende a → ciudades y horas, in → países y habitaciones, di → origen y posesión, da → procedencia y duración.',
+    graphicPrompt: 'Mapa de Italia con flechas: a Roma (ciudad), in Italia (país). Casa con etiquetas in cucina, in bagno. Línea temporal da 2 anni.',
+    scene: [
+      ['a + ciudad / hora', 'a Roma, alle 8'],
+      ['in + país / habitación', 'in Italia, in classe'],
+      ['di + origen / posesión', 'di Bogotá, di Marco'],
+      ['da + procedencia / duración', 'da Milano, da 3 anni'],
+      ['su / con / per / tra', 'sul tavolo / con Sofia / per te / tra noi'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    reviewFocus: ['a ciudad vs in país', 'da duración = llevar + tiempo', 'di origen vs da procedencia', 'per = para/por'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'Preposición correcta',
+        tag: 'Opción múltiple',
+        intro: 'Elige la preposición correcta para cada oración.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'Vivir en Italia',
+            lines: [['David', 'Zhanna abita ___ Italia da tre anni.']],
+            options: ['in', 'a', 'di', 'da'],
+            answer: 'in',
+            explain: 'In + país: in Italia. A se usa con ciudades.',
+          },
+          {
+            scene: 'Ir a Roma',
+            lines: [['Sofia', 'Il prossimo mese vado ___ Roma per studiare.']],
+            options: ['a', 'in', 'da', 'di'],
+            answer: 'a',
+            explain: 'A + ciudad: vado a Roma.',
+          },
+          {
+            scene: 'El libro de Carlo',
+            lines: [['Ana', 'Questo è il libro ___ Carlo. Lo prendo io?']],
+            options: ['di', 'da', 'a', 'con'],
+            answer: 'di',
+            explain: 'Di + nombre = posesión: il libro di Carlo.',
+          },
+          {
+            scene: 'Vengo de Medellín',
+            lines: [['Carlo', 'Vengo ___ Medellín. È una bella città!']],
+            options: ['da', 'di', 'a', 'in'],
+            answer: 'da',
+            explain: 'Da + ciudad = procedencia con movimiento: vengo da Medellín.',
+          },
+          {
+            scene: 'Sobre la mesa',
+            lines: [['Lina', 'I tuoi appunti sono ___ il tavolo.']],
+            options: ['su', 'a', 'in', 'per'],
+            answer: 'su',
+            explain: 'Su = encima de. Su + il = sul (contracción). Aquí: su il tavolo.',
+          },
+          {
+            scene: 'Para ti',
+            lines: [['Marco', 'Questa lezione speciale è ___ te, Carlo!']],
+            options: ['per', 'con', 'da', 'di'],
+            answer: 'per',
+            explain: 'Per + persona = para alguien: è per te.',
+          },
+          {
+            scene: 'Estudio italiano desde hace 2 años',
+            lines: [['Sofia', 'Studio italiano ___ due anni e faccio grandi progressi.']],
+            options: ['da', 'per', 'in', 'di'],
+            answer: 'da',
+            explain: 'Da + duración (con presente) = llevar X tiempo: studio da due anni = llevo 2 años estudiando.',
+          },
+          {
+            scene: 'Con Marco',
+            lines: [['Zhanna', 'Studia ___ Marco ogni martedì. Imparano insieme.']],
+            options: ['con', 'di', 'per', 'su'],
+            answer: 'con',
+            explain: 'Con + persona = compañía: studia con Marco.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Dos preposiciones en contexto',
+        tag: '2 espacios',
+        intro: 'Completa el diálogo con las preposiciones correctas.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'De dónde eres',
+            lines: [
+              ['David', 'Sei [[0]] Italia o [[1]] un altro paese?'],
+              ['Carlo', 'Sono [[0]] Colombia, vengo [[1]] Bogotá.'],
+            ],
+            blanks: [
+              { options: ['di', 'da', 'a'], answer: 'di', explain: 'Di + paese/città = origen: Sono di Colombia.' },
+              { options: ['da', 'di', 'a'], answer: 'da', explain: 'Da + città = procedencia: vengo da Bogotá.' },
+            ],
+          },
+          {
+            scene: 'Clases en WeLearn',
+            lines: [['Zhanna', 'La lezione inizia [[0]] le nove e finisce [[1]] le undici.']],
+            blanks: [
+              { options: ['alle', 'a le', 'delle'], answer: 'alle', explain: 'A + le = alle: alle nove. A indica la hora.' },
+              { options: ['alle', 'a le', 'delle'], answer: 'alle', explain: 'A + le = alle: alle undici.' },
+            ],
+          },
+          {
+            scene: 'Dónde estudias',
+            lines: [
+              ['Ana', 'Dove studi? [[0]] casa o [[1]] una scuola?'],
+              ['Lina', 'Studio [[0]] WeLearn — è una scuola [[1]] italiano.'],
+            ],
+            blanks: [
+              { options: ['a', 'in', 'di'], answer: 'a', explain: 'A casa = en casa. A con casa es una expresión fija.' },
+              { options: ['di', 'da', 'a'], answer: 'di', explain: 'Una scuola di italiano = una escuela de italiano. Di + materia.' },
+            ],
+          },
+          {
+            scene: 'El libro de Sofia',
+            lines: [['Marco', 'Il libro [[0]] Sofia è [[1]] il tavolo.']],
+            blanks: [
+              { options: ['di', 'da', 'a'], answer: 'di', explain: 'Il libro di Sofia = el libro de Sofia. Di + nombre = posesión.' },
+              { options: ['su', 'a', 'in'], answer: 'su', explain: 'Su il tavolo = sobre la mesa. Su indica posición encima.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'Un giorno con David',
+        tag: 'Opciones',
+        intro: 'Completa el texto con las preposiciones correctas.',
+        type: 'guidedText',
+        scene: 'David describe su jornada en WeLearn',
+        text: 'Ogni mattina vengo [[0]] casa alle otto. La scuola è [[1]] Bucaramanga, [[2]] Colombia. Lavoro [[3]] Zhanna — siamo soci. La lezione [[4]] italiano inizia alle nove. I libri sono [[5]] il tavolo. Questa lezione è [[6]] tutti voi. Tra poco finisce — [[7]] cinque minuti siamo liberi!',
+        blanks: [
+          { options: ['da', 'di', 'a'], answer: 'da', explain: 'Vengo da casa — da + luogo di provenienza.' },
+          { options: ['a', 'in', 'di'], answer: 'a', explain: 'A Bucaramanga — a + ciudad.' },
+          { options: ['in', 'a', 'di'], answer: 'in', explain: 'In Colombia — in + país.' },
+          { options: ['con', 'di', 'per'], answer: 'con', explain: 'Con Zhanna — con + persona = compañía.' },
+          { options: ['di', 'da', 'a'], answer: 'di', explain: 'La lezione di italiano — di + materia.' },
+          { options: ['su', 'a', 'in'], answer: 'su', explain: 'Sul tavolo — su + il = sul (encima).' },
+          { options: ['per', 'di', 'da'], answer: 'per', explain: 'Per tutti voi — per + destinatario.' },
+          { options: ['tra', 'da', 'per'], answer: 'tra', explain: 'Tra cinque minuti — tra = en (tiempo futuro).' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Sin opciones',
+        tag: 'Sin opciones',
+        intro: 'Escribe la preposición correcta en cada espacio.',
+        type: 'freeText',
+        scene: 'Sofia escribe sobre sí misma para presentarse a la clase',
+        text: 'Mi chiamo Sofia. Sono [[0]] Cali, [[1]] Colombia. Abito [[2]] Bogotá [[3]] tre anni. Studio italiano [[0]] WeLearn. Vengo [[4]] scuola [[5]] treno ogni mattina. Studio [[6]] le otto e mezza. La mia lezione è [[7]] te, David — grazie!',
+        blanks: [
+          { answer: 'di', explain: 'Di Cali — origen: sono di Cali.' },
+          { answer: 'in', explain: 'In Colombia — in + país.' },
+          { answer: 'a', explain: 'A Bogotá — a + ciudad.' },
+          { answer: 'da', explain: 'Da tre anni — duración que continúa: llevo 3 años.' },
+          { answer: 'a', explain: 'A WeLearn — a + nombre de lugar como ciudad.' },
+          { answer: 'in', explain: 'In treno — in + mezzo di trasporto.' },
+          { answer: 'alle', explain: 'Alle otto e mezza — a + le = alle + hora.' },
+          { answer: 'per', explain: 'Per te — per + persona = para ti.' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Producción',
+        tag: 'Producción',
+        intro: 'Escribe la oración completa usando la preposición correcta.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Soy de Colombia',
+            prompt: 'Escribe: Soy de Medellín, en Colombia. → Sono ___ Medellín, ___ Colombia.',
+            answer: 'Sono di Medellín, in Colombia.',
+            accepted: ['sono di medellín in colombia', 'sono di medellin in colombia'],
+            explain: 'Di + ciudad = origen. In + país = ubicación.',
+          },
+          {
+            scene: 'Llevo dos años estudiando',
+            prompt: 'Escribe: Estudio italiano desde hace dos años. → Studio italiano ___ due anni.',
+            answer: 'Studio italiano da due anni.',
+            accepted: ['studio italiano da due anni', 'studio italiano da due anni.'],
+            explain: 'Da + duración (con presente): studio da due anni = llevo dos años estudiando.',
+          },
+          {
+            scene: 'La clase es para vosotros',
+            prompt: 'Escribe: Esta clase de italiano es para vosotros. → Questa lezione ___ italiano è ___ voi.',
+            answer: 'Questa lezione di italiano è per voi.',
+            accepted: ['questa lezione di italiano è per voi', 'questa lezione di italiano e per voi'],
+            explain: 'Di + materia: lezione di italiano. Per + destinatario: per voi.',
+          },
+          {
+            scene: 'Voy a Roma con Marco',
+            prompt: 'Escribe: Voy a Roma con Marco el próximo mes. → Vado ___ Roma ___ Marco il prossimo mese.',
+            answer: 'Vado a Roma con Marco il prossimo mese.',
+            accepted: ['vado a roma con marco il prossimo mese', 'vado a roma con marco'],
+            explain: 'A + ciudad: a Roma. Con + persona: con Marco.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Misión final',
+        tag: 'Reto final',
+        intro: 'Usa preposiciones para hablar de ti mismo y de WeLearn.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Tu presentación',
+            prompt: 'Presentati: Sono ___ [città]. Vengo ___. Studio italiano ___.',
+            answer: 'Sono di Bogotá. Vengo dalla Colombia. Studio italiano da sei mesi a WeLearn.',
+            accepted: ['sono di', 'vengo da', 'studio italiano da'],
+            explain: 'Di origen, da procedencia, da duración.',
+          },
+          {
+            scene: 'Tu rutina en WeLearn',
+            prompt: 'Descrivi la tua routine: Vado ___ scuola ___. La lezione inizia ___.',
+            answer: 'Vado a scuola in treno. La lezione inizia alle nove. Studio con i miei amici.',
+            accepted: ['vado a scuola', 'in treno', 'alle nove', 'con i miei amici'],
+            explain: 'A scuola, in treno, alle + hora, con + compañía.',
+          },
+          {
+            scene: 'Describe WeLearn',
+            prompt: 'WeLearn è una scuola ___. È ___ Bucaramanga, ___. I libri sono ___ il tavolo.',
+            answer: 'WeLearn è una scuola di italiano. È a Bucaramanga, in Colombia. I libri sono sul tavolo.',
+            accepted: ['di italiano', 'a bucaramanga', 'in colombia', 'sul tavolo'],
+            explain: 'Di materia, a ciudad, in país, su encima.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic

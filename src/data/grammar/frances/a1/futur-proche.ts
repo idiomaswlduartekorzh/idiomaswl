@@ -1,0 +1,295 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'futur-proche',
+  order: '16',
+  color: '#1a2ecc',
+  category: 'Verbes',
+  level: 'A1',
+  title: 'Le Futur Proche en Français A1 — aller + infinitif',
+  shortTitle: 'Futur proche',
+  metaTitle: 'Futur proche en français A1 — je vais manger, tu vas partir, il va apprendre',
+  description:
+    'El futuro próximo (futur proche) se forma con el verbo aller en presente + infinitivo. Es la forma más usada en el francés hablado para expresar planes, intenciones y predicciones a corto plazo. Equivale al español "voy a + infinitivo".',
+  lead: 'Je vais étudier ce soir. Tu vas voyager en France. Il va faire beau demain. El futur proche es el futuro del francés cotidiano — mucho más frecuente que el futur simple en la conversación.',
+  outcomes: [
+    'Formar el futur proche con aller (présent) + infinitif.',
+    'Usar la negación ne...pas alrededor de aller: je ne vais pas manger.',
+    'Distinguir el futur proche (planes concretos) del présent (hábitos actuales).',
+  ],
+  guide: {
+    goal: 'Expresar planes, intenciones y predicciones usando aller + infinitif.',
+    model: 'Je vais étudier. / Tu vas voyager. / Elle va faire du sport. / Nous allons manger ensemble.',
+    formula: 'aller (présent) + infinitif du verbe principal',
+    decisions: [
+      'Conjugar aller según el sujeto: vais/vas/va/allons/allez/vont',
+      'El segundo verbo siempre en INFINITIVO: je vais manger (no "je vais mange")',
+      'Negación: ne...pas rodea SOLO a aller: je ne vais pas travailler (no "pas" antes del infinitivo)',
+      'Interrogación: Est-ce que tu vas venir? / Tu vas venir? (entonación)',
+      'Diferencia futur proche vs présent: je travaille (ahora/habitualmente) vs je vais travailler (esta tarde)',
+    ],
+    table: [
+      ['Sujeto', 'aller', 'Ejemplo (manger)'],
+      ['je', 'vais', 'je vais manger'],
+      ['tu', 'vas', 'tu vas manger'],
+      ['il / elle / on', 'va', 'il va manger'],
+      ['nous', 'allons', 'nous allons manger'],
+      ['vous', 'allez', 'vous allez manger'],
+      ['ils / elles', 'vont', 'ils vont manger'],
+    ],
+    mistakes: [
+      '"Je vais manger" ✓ — pero "Je vais mange" ❌: el segundo verbo SIEMPRE en infinitivo.',
+      '"Je ne pas vais travailler" ❌ → "Je ne vais pas travailler" ✓ — ne...pas rodea aller.',
+      '"Futur proche" ≠ futur simple: en A1 usa siempre aller + infinitif para el futuro.',
+    ],
+  },
+  seo: [
+    {
+      heading: 'El futur proche: el futuro natural del francés hablado',
+      paragraphs: [
+        'El futur proche (futur immédiat) es con diferencia el tiempo verbal más usado para expresar el futuro en el francés hablado moderno. Mientras el futur simple (je mangerai) es más formal y literario, el futur proche (je vais manger) aparece en más del 80% de las frases sobre planes y predicciones en la conversación cotidiana.',
+        'Se forma de manera muy sencilla y lógica: aller conjugado en presente + el verbo principal en infinitivo. Si sabes conjugar aller (vais/vas/va/allons/allez/vont) y conoces el infinitivo del verbo, tienes el futur proche. Ejemplos: Je vais étudier (voy a estudiar), Tu vas voyager (vas a viajar), Nous allons manger ensemble (vamos a comer juntos).',
+      ],
+    },
+    {
+      heading: 'Negación e interrogación en el futur proche',
+      paragraphs: [
+        'La negación del futur proche sigue la regla general: ne...pas rodea el verbo conjugado, que en este caso es aller. Je ne vais pas travailler demain. / Elle ne va pas venir. / Nous n\'allons pas partir. El infinitivo queda fuera de la negación.',
+        'Para preguntas, las tres formas de A1 funcionan: Est-ce que tu vas venir? (más formal) / Tu vas venir? (informal, entonación) / Vas-tu venir? (inversión, más literario). En A1, usa preferentemente Est-ce que o la entonación ascendente.',
+      ],
+    },
+    {
+      heading: 'Futur proche vs présent: ¿cuándo usar cada uno?',
+      paragraphs: [
+        'El présent expresa acciones habituales, repetidas o que ocurren en este momento. El futur proche expresa lo que VA A PASAR — planes, intenciones, predicciones a corto plazo. Je travaille le lundi (habitualmente, présent) vs Je vais travailler lundi prochain (el próximo lunes, plan concreto, futur proche).',
+        'En la conversación cotidiana, siempre que quieras hablar de algo que ocurrirá en el futuro, usa el futur proche. Demain je vais... / Ce week-end nous allons... / Ce soir elle va... Son las estructuras más naturales en francés hablado.',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'paradigm',
+    teacherLens: 'El futur proche = aller + infinitif. La negación rodea solo aller.',
+    graphicPrompt: 'Flecha hacia el futuro: ALLER (présent) → INFINITIF. Ejemplo: je VAIS + ÉTUDIER.',
+    scene: [
+      ['Plan inmediato', 'Je vais étudier ce soir. / Tu vas regarder le film.'],
+      ['Predicción', 'Il va pleuvoir demain. / Ça va bien se passer.'],
+      ['Negación', 'Je ne vais pas travailler. / Elle ne va pas venir.'],
+      ['Pregunta', 'Est-ce que tu vas venir? / Qu\'est-ce qu\'on va faire?'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    reviewFocus: ['aller conjugado + infinitivo', 'ne...pas rodea aller', 'no confundir con présent'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'Reconocimiento del futur proche',
+        tag: 'Opción múltiple',
+        intro: 'Elige la forma correcta de aller para completar el futur proche.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'Plan para esta noche',
+            lines: [['Carlos', 'Je ___ étudier ce soir.']],
+            options: ['vais', 'vas', 'allons', 'vont'],
+            answer: 'vais',
+            explain: '"Je" → je vais + infinitif. Futur proche en 1.ª persona singular.',
+          },
+          {
+            scene: 'Plan del fin de semana',
+            lines: [['Ana', 'Tu ___ voyager en France cet été?']],
+            options: ['vas', 'vais', 'allez', 'vont'],
+            answer: 'vas',
+            explain: '"Tu" → tu vas + infinitif.',
+          },
+          {
+            scene: 'Predicción del tiempo',
+            lines: [['David', 'Il ___ pleuvoir demain.']],
+            options: ['va', 'vais', 'vas', 'allons'],
+            answer: 'va',
+            explain: '"Il" → il va + infinitif. Para predicciones también se usa futur proche.',
+          },
+          {
+            scene: 'Plan de clase',
+            lines: [['Teacher', 'Nous ___ apprendre le futur proche aujourd\'hui.']],
+            options: ['allons', 'allez', 'vont', 'vais'],
+            answer: 'allons',
+            explain: '"Nous" → nous allons + infinitif.',
+          },
+          {
+            scene: 'Pregunta a la clase',
+            lines: [['David', 'Vous ___ faire l\'exercice maintenant?']],
+            options: ['allez', 'allons', 'vont', 'vas'],
+            answer: 'allez',
+            explain: '"Vous" → vous allez + infinitif.',
+          },
+          {
+            scene: 'Plan del grupo',
+            lines: [['Sofia', 'Ils ___ manger au restaurant ce soir.']],
+            options: ['vont', 'va', 'allez', 'allons'],
+            answer: 'vont',
+            explain: '"Ils" → ils vont + infinitif.',
+          },
+          {
+            scene: 'Negación de un plan',
+            lines: [['Marco', 'Je ne ___ pas travailler demain.']],
+            options: ['vais', 'vas', 'va', 'vont'],
+            answer: 'vais',
+            explain: 'Negación: je ne vais pas + infinitif. ne...pas rodea aller.',
+          },
+          {
+            scene: 'Plan para mañana',
+            lines: [['Lina', 'On ___ sortir après le cours.']],
+            options: ['va', 'vais', 'allons', 'vont'],
+            answer: 'va',
+            explain: '"On" se conjuga como "il/elle" → on va + infinitif.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Aller + infinitif',
+        tag: '2 espacios',
+        intro: 'Elige la forma de aller y el infinitivo correcto.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Esta noche',
+            lines: [['Carlos', 'Ce soir, je [[0]] [[1]] le nouveau film.']],
+            blanks: [
+              { options: ['vais', 'vas', 'allons'], answer: 'vais', explain: '"Je" → vais.' },
+              { options: ['regarder', 'regarde', 'regardé'], answer: 'regarder', explain: 'Infinitivo: regarder (mirar/ver).' },
+            ],
+          },
+          {
+            scene: 'El fin de semana',
+            lines: [['Ana', 'Nous [[0]] [[1]] au marché samedi.']],
+            blanks: [
+              { options: ['allons', 'allez', 'vont'], answer: 'allons', explain: '"Nous" → allons.' },
+              { options: ['aller', 'va', 'allons'], answer: 'aller', explain: 'Infinitivo: aller (ir).' },
+            ],
+          },
+          {
+            scene: 'Negando un plan',
+            lines: [['David', 'Elle ne [[0]] pas [[1]] aujourd\'hui.']],
+            blanks: [
+              { options: ['va', 'vais', 'allons'], answer: 'va', explain: '"Elle" → va (ne va pas).' },
+              { options: ['travailler', 'travaille', 'travaillé'], answer: 'travailler', explain: 'Infinitivo: travailler.' },
+            ],
+          },
+          {
+            scene: 'Plan del grupo',
+            lines: [['Sofia', 'Vous [[0]] [[1]] le français avec WeLearn?']],
+            blanks: [
+              { options: ['allez', 'allons', 'vont'], answer: 'allez', explain: '"Vous" → allez.' },
+              { options: ['apprendre', 'apprenez', 'apprend'], answer: 'apprendre', explain: 'Infinitivo: apprendre (aprender).' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'La semaine de Carlos',
+        tag: 'Opciones',
+        intro: 'Elige la forma correcta de aller para completar los planes de Carlos.',
+        type: 'guidedText',
+        scene: 'Carlos describe sus planes para la semana próxima',
+        text: 'La semaine prochaine, je [[0]] travailler du lundi au vendredi. Mardi soir, je [[1]] regarder un film français. Mercredi, mon ami et moi [[2]] manger au restaurant. Je ne [[3]] pas travailler le week-end — je [[4]] me reposer. Et toi, qu\'est-ce que tu [[5]] faire ce week-end?',
+        blanks: [
+          { options: ['vais', 'vas', 'allons'], answer: 'vais', explain: '"Je" → vais.' },
+          { options: ['vais', 'va', 'allons'], answer: 'vais', explain: '"Je" → vais (plan del martes).' },
+          { options: ['allons', 'allez', 'vont'], answer: 'allons', explain: '"Mon ami et moi" = nous → allons.' },
+          { options: ['vais', 'va', 'allons'], answer: 'vais', explain: '"je ne vais pas" — negación con aller.' },
+          { options: ['vais', 'vas', 'va'], answer: 'vais', explain: '"Je" → vais me reposer.' },
+          { options: ['vas', 'vais', 'allez'], answer: 'vas', explain: '"Tu" → vas faire.' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Mis planes',
+        tag: 'Sin opciones',
+        intro: 'Escribe la forma correcta de aller para expresar los planes.',
+        type: 'freeText',
+        scene: 'Completar planes personales y predicciones usando futur proche',
+        text: 'Ce soir, je ___ (vais/vas/va) regarder une série. Demain matin, tu ___ (vais/vas/va) travailler. Le week-end, nous ___ (allons/allez/vont) voyager. Elle ne ___ (vais/vas/va) pas venir à la fête. Ils ___ (allons/allez/vont) apprendre une nouvelle langue. On ___ (vais/vas/va) bien s\'amuser!',
+        blanks: [
+          { answer: 'vais', accepted: ['vais'], explain: '"Je" → vais.' },
+          { answer: 'vas', accepted: ['vas'], explain: '"Tu" → vas.' },
+          { answer: 'allons', accepted: ['allons'], explain: '"Nous" → allons.' },
+          { answer: 'va', accepted: ['va'], explain: '"Elle ne va pas" — negación.' },
+          { answer: 'vont', accepted: ['vont'], explain: '"Ils" → vont.' },
+          { answer: 'va', accepted: ['va'], explain: '"On" → va (como il/elle).' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Planes en frases completas',
+        tag: 'Producción',
+        intro: 'Escribe la frase completa en futur proche.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Un plan para esta noche',
+            prompt: 'Escribe: "Esta noche voy a estudiar francés." (Ce soir / je / aller / étudier le français)',
+            answer: 'Ce soir, je vais étudier le français.',
+            accepted: ['je vais étudier', 'je vais etudier'],
+            explain: 'Ce soir, je vais étudier le français. — aller (vais) + infinitif (étudier).',
+          },
+          {
+            scene: 'Plan negativo',
+            prompt: 'Escribe: "No vamos a trabajar el domingo." (Nous / ne pas / aller / travailler / dimanche)',
+            answer: 'Nous n\'allons pas travailler dimanche.',
+            accepted: ["nous n'allons pas travailler", 'nous ne allons pas travailler'],
+            explain: 'Nous n\'allons pas travailler dimanche. — ne...pas rodea allons.',
+          },
+          {
+            scene: 'Predicción',
+            prompt: 'Escribe: "Va a hacer buen tiempo mañana." (Il / aller / faire beau / demain)',
+            answer: 'Il va faire beau demain.',
+            accepted: ['il va faire beau'],
+            explain: 'Il va faire beau demain. — predicción con futur proche.',
+          },
+          {
+            scene: 'Pregunta sobre planes',
+            prompt: 'Escribe: "¿Qué vas a hacer este fin de semana?" (Qu\'est-ce que / tu / aller / faire / ce week-end?)',
+            answer: 'Qu\'est-ce que tu vas faire ce week-end?',
+            accepted: ["qu'est-ce que tu vas faire", 'tu vas faire quoi ce week-end'],
+            explain: 'Qu\'est-ce que tu vas faire ce week-end? — interrogativa + futur proche.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Mes projets de la semaine',
+        tag: 'Reto final',
+        intro: 'Describe tus planes reales para la semana usando le futur proche.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Esta semana',
+            prompt: 'Write 2 things you are going to do this week: Je vais...',
+            answer: 'Je vais étudier le français. Je vais faire du sport.',
+            accepted: ['je vais'],
+            explain: 'Je vais + infinitif: étudier, travailler, regarder, voyager, manger, sortir, apprendre...',
+          },
+          {
+            scene: 'Lo que NO vas a hacer',
+            prompt: 'Write 1 thing you are NOT going to do: Je ne vais pas...',
+            answer: 'Je ne vais pas travailler samedi.',
+            accepted: ['je ne vais pas'],
+            explain: 'Je ne vais pas + infinitif. ne...pas rodea aller, el infinitivo va después.',
+          },
+          {
+            scene: 'Planes con otra persona',
+            prompt: 'Write what you and a friend are going to do: Nous allons... / Mon ami(e) va...',
+            answer: 'Nous allons manger ensemble vendredi soir.',
+            accepted: ['nous allons', 'mon ami va', 'mon amie va', 'il va', 'elle va'],
+            explain: 'Nous allons + infinitif ou Mon ami(e) va + infinitif.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic

@@ -1,0 +1,290 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'negacion-completa',
+  order: '18',
+  color: '#dc2626',
+  category: 'Negación',
+  level: 'A1',
+  title: 'Negación completa en japonés A1 — Verbos, copula y adjetivos',
+  shortTitle: 'Negación completa',
+  metaTitle: 'Negación japonés A1 — masen ja arimasen ja nai desu kunai desu',
+  description:
+    'En español existe un solo "no" para negar cualquier cosa. En japonés A1 la negación varía según el tipo de predicado: verbos usan 〜ません, la cópula です tiene じゃありません/じゃないです, los adjetivos い usan 〜くありません/〜くないです, y los adjetivos な usan じゃありません. Dominar las cuatro formas te permite negar correctamente cualquier frase.',
+  lead: 'En español: "no". En japonés: cuatro formas según qué niegas. Verbo: 食べません. Cópula: じゃありません. Adj-い: おおきくないです. Adj-な: きれいじゃありません. ¡Aprende las cuatro!',
+  outcomes: [
+    'Niega verbos con 〜ません y 〜ませんでした (pasado negativo)',
+    'Niega la cópula con じゃありません / じゃないです / ではありません',
+    'Niega adjetivos い con 〜くないです y adjetivos な con じゃありません',
+  ],
+
+  guide: {
+    goal: 'Negar correctamente en japonés según el tipo de predicado: verbo, cópula, adj-い, adj-な.',
+    model: '日本語を 話しません。(No hablo japonés.) / これは きれいじゃないです。(Esto no es bonito.)',
+    formula: 'Verbo: ます→ません | Cópula: です→じゃありません | Adj-い: い→くない | Adj-な: な→じゃありません',
+    decisions: [
+      'VERBO negativo: raíz ます + ません. たべます→たべません (no como)',
+      'VERBO pasado negativo: ませんでした. たべませんでした (no comí)',
+      'CÓPULA negativa: です → じゃありません (formal) / じゃないです (coloquial) / ではありません (muy formal)',
+      'ADJ-い negativo: quitar い, añadir くありません o くないです. おおきい→おおきくないです (no es grande)',
+      'ADJ-な negativo: [na-adj stem] + じゃありません. きれい→きれいじゃありません (no es bonito)',
+      'EXCEPCIÓN: いい (bueno) → よくありません / よくないです (no よくない es casi correcto también)',
+    ],
+    table: [
+      ['Tipo de predicado', 'Negación formal', 'Ejemplo'],
+      ['Verbo (presente)', '〜ません', '食べません (no como)'],
+      ['Verbo (pasado)', '〜ませんでした', '食べませんでした (no comí)'],
+      ['Cópula です', 'じゃありません / じゃないです', 'がくせいじゃありません (no soy estudiante)'],
+      ['Adjetivo-い', '〜くありません / 〜くないです', 'おおきくないです (no es grande)'],
+      ['Adjetivo-な', '[stem]じゃありません', 'きれいじゃありません (no es bonito)'],
+      ['いい (bueno)', 'よくありません / よくないです', 'よくないです (no es bueno)'],
+    ],
+    mistakes: [
+      '"おおきいじゃありません" ✗ — adj-い: quitar い → おおきく+ないです = おおきくないです.',
+      '"きれいくないです" ✗ — adj-な NO usa くない: きれいじゃないです ✓.',
+      '"いいじゃありません" ✗ — いい es irregular: よくありません / よくないです.',
+    ],
+  },
+  seo: [
+    {
+      heading: 'Por qué el japonés tiene cuatro tipos de negación',
+      paragraphs: [
+        'En español, "no" funciona para todo: "no como", "no soy estudiante", "no es grande", "no es bonito". En japonés, la forma de negación depende de la categoría gramatical del predicado. Esto refleja que el japonés trata los verbos, la cópula y los adjetivos de manera fundamentalmente diferente — los adjetivos se conjugan como verbos, y hay dos clases de adjetivos con comportamientos distintos.',
+        'La buena noticia: cada tipo sigue un patrón claro. Los verbos quitan ます y añaden ません. La cópula です cambia a じゃありません. Los adjetivos い quitan la い final y añaden くないです. Los adjetivos な añaden じゃありません directamente después del stem. Una vez que identificas el tipo de predicado, la negación es mecánica.',
+      ],
+    },
+    {
+      heading: 'じゃありません vs ではありません vs じゃないです',
+      paragraphs: [
+        'Para negar la cópula (です) existen tres formas principales. ではありません (de wa arimasen) es la más formal y correcta en escritura. じゃありません (ja arimasen) es la contracción hablada de ではありません — más natural en conversación. じゃないです (ja nai desu) es la forma más coloquial y moderna, muy usada en el japonés cotidiano.',
+        'En nivel A1 puedes usar cualquiera de las tres, pero te recomendamos aprender じゃありません primero (equilibrio entre formalidad y naturalidad) y じゃないです como variante coloquial. La forma ではありません la verás mucho en textos escritos, exámenes JLPT y japonés formal.',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'negation-complete',
+    teacherLens: 'El estudiante aprende las cuatro formas de negación en japonés A1 y cuándo usar cada una.',
+    graphicPrompt: 'Tabla con 4 filas: verbo/cópula/adj-い/adj-な × afirmativo/negativo. Código de colores por tipo.',
+    scene: [
+      ['Verbo: ます → ません', 'たべます → たべません'],
+      ['Cópula: です → じゃありません', 'がくせいです → じゃありません'],
+      ['Adj-い: い → くない', 'おおきい → おおきくないです'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    reviewFocus: ['〜ません verbos', 'じゃありません cópula', '〜くないです adj-い', 'いい→よくない irregular'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'La negación correcta',
+        tag: 'Opción múltiple',
+        intro: 'Elige la forma negativa correcta según el tipo de predicado.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'No como carne',
+            lines: [['Carlos', 'にくを 食べ___。(No como carne.)']],
+            options: ['ません', 'ではありません', 'くないです', 'じゃないです'],
+            answer: 'ません',
+            explain: '食べます = verbo. Negativo de verbo → ません. 食べません.',
+          },
+          {
+            scene: 'No soy estudiante',
+            lines: [['Ana', 'わたしは がくせい___。(No soy estudiante.)']],
+            options: ['じゃありません', 'ません', 'くないです', 'くありません'],
+            answer: 'じゃありません',
+            explain: 'がくせいです = cópula (identidad). Negativo de cópula → じゃありません.',
+          },
+          {
+            scene: 'No es grande',
+            lines: [['David', 'このへやは おおき___。(Esta habitación no es grande.)']],
+            options: ['くないです', 'じゃないです', 'ません', 'ではありません'],
+            answer: 'くないです',
+            explain: 'おおきい = adjetivo-い. Negativo adj-い → い → くない + です = くないです.',
+          },
+          {
+            scene: 'No es bonito',
+            lines: [['Sofia', 'この えは きれい___。(Esta pintura no es bonita.)']],
+            options: ['じゃないです', 'くないです', 'ません', 'くありません'],
+            answer: 'じゃないです',
+            explain: 'きれい = adjetivo-な. Negativo adj-な → [stem]じゃないです = きれいじゃないです.',
+          },
+          {
+            scene: 'No es bueno',
+            lines: [['Marco', 'この てんきは ___。(El tiempo no es bueno.)']],
+            options: ['よくないです', 'いいじゃないです', 'いいません', 'よくじゃないです'],
+            answer: 'よくないです',
+            explain: 'いい (bueno) es irregular: negativo → よくない/よくないです. NO "いいくない".',
+          },
+          {
+            scene: 'No hablé japonés',
+            lines: [['Lina', 'きのう にほんごを 話し___。(Ayer no hablé japonés.)']],
+            options: ['ませんでした', 'ません', 'じゃありませんでした', 'くありませんでした'],
+            answer: 'ませんでした',
+            explain: 'Pasado negativo de verbo → ませんでした. 話しませんでした.',
+          },
+          {
+            scene: 'No es japonés',
+            lines: [['Zhanna', 'デービッドさんは にほんじん___。(David no es japonés.)']],
+            options: ['ではありません', 'ません', 'くないです', 'くありません'],
+            answer: 'ではありません',
+            explain: 'にほんじん + です = cópula. ではありません = forma formal de negación de です.',
+          },
+          {
+            scene: 'No es difícil',
+            lines: [['Carlos', 'にほんごは むずかし___。(El japonés no es difícil.)']],
+            options: ['くないです', 'じゃないです', 'ません', 'ではありません'],
+            answer: 'くないです',
+            explain: 'むずかしい = adjetivo-い. むずかし + くないです = むずかしくないです.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Negación en diálogo',
+        tag: '2 formas',
+        intro: 'Completa las dos negaciones del diálogo.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Presentación negativa',
+            lines: [['Ana', 'わたしは にほんじん[[0]]。にほんごが じょうずでは[[1]]。']],
+            blanks: [
+              { options: ['じゃありません', 'ません', 'くないです'], answer: 'じゃありません', explain: 'にほんじん + です → cópula negativa: じゃありません.' },
+              { options: ['ありません', 'ません', 'くないです'], answer: 'ありません', explain: 'じょうずではありません = no soy bueno/a en japonés. ではありません.' },
+            ],
+          },
+          {
+            scene: 'El tiempo hoy',
+            lines: [['David', 'きょうは あつ[[0]]。でも、さむ[[1]]。']],
+            blanks: [
+              { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'あつい (caluroso) = adj-い. あつ+くないです = あつくないです.' },
+              { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'さむい (frío) = adj-い. さむ+くないです = さむくないです.' },
+            ],
+          },
+          {
+            scene: 'Lo que no hice ayer',
+            lines: [['Sofia', 'きのう ごはんを たべ[[0]]。べんきょうも し[[1]]。']],
+            blanks: [
+              { options: ['ませんでした', 'ません', 'じゃありません'], answer: 'ませんでした', explain: 'Pasado negativo: ませんでした. たべませんでした.' },
+              { options: ['ませんでした', 'ません', 'じゃありません'], answer: 'ませんでした', explain: 'Pasado negativo: しませんでした (no estudié).' },
+            ],
+          },
+          {
+            scene: 'Este cuarto',
+            lines: [['Marco', 'このへやは しず[[0]]。きれい[[1]]。']],
+            blanks: [
+              { options: ['かじゃないです', 'くないです', 'じゃないです'], answer: 'かじゃないです', explain: 'しずか (tranquilo) = adj-な. しずか+じゃないです = しずかじゃないです.' },
+              { options: ['じゃないです', 'くないです', 'ません'], answer: 'じゃないです', explain: 'きれい (bonito) = adj-な. きれい+じゃないです = きれいじゃないです.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'Texto guiado — lo que Carlos no es',
+        tag: 'Opciones',
+        intro: 'Elige la forma negativa correcta para cada tipo de predicado.',
+        type: 'guidedText',
+        scene: 'Carlos se describe a sí mismo con negaciones en japonés',
+        text: 'わたしは にほんじん[[0]]。スペインじん[[1]]。せが たか[[2]]。かみは くろ[[3]]。にほんごが じょうず[[4]]。でも、毎日 べんきょうし[[5]] し、あきら[[6]]。',
+        blanks: [
+          { options: ['じゃありません', 'ません', 'くないです'], answer: 'じゃありません', explain: 'にほんじんです → cópula negativa: じゃありません.' },
+          { options: ['じゃありません', 'ません', 'くないです'], answer: 'じゃありません', explain: 'スペインじん+です → cópula negativa: じゃありません (no soy español).' },
+          { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'たかい (alto) = adj-い. たか+くないです = たかくないです (no soy alto).' },
+          { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'くろい (negro) = adj-い. くろ+くないです = くろくないです (no es negro).' },
+          { options: ['じゃありません', 'ません', 'くないです'], answer: 'じゃありません', explain: 'じょうず = adj-な. じょうずじゃありません (no soy bueno/a).' },
+          { options: ['ません', 'じゃありません', 'くないです'], answer: 'ません', explain: 'べんきょうします = verbo. べんきょうしません (no estudio)... pero aquí dice que sí estudia.' },
+          { options: ['めません', 'じゃありません', 'くないです'], answer: 'めません', explain: 'あきらめます (rendirse) → あきらめません (no me rindo). Verbo negativo.' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Sin opciones',
+        tag: 'Sin opciones',
+        intro: 'Escribe la forma negativa correcta según el tipo de predicado.',
+        type: 'freeText',
+        scene: 'Zhanna corrige afirmaciones incorrectas sobre WeLearn',
+        text: 'ウィーラーンは ちいさい がっこう[[0]]。(No es pequeña.) デービッドは にほんじん[[1]]。(No es japonés.) じゅぎょうは たいくつ[[2]]。(Las clases no son aburridas.) がくせいは にほんご を はな[[3]]。(Los estudiantes no hablan japonés todavía.) にほんごは むずか[[4]]。(El japonés no es difícil.) でも、かんたん[[5]] ですよ！(¡Pero tampoco es fácil!)',
+        blanks: [
+          { answer: 'じゃありません', accepted: ['じゃないです', 'ではありません'], explain: 'ちいさい がっこうです → cópula negativa: じゃありません.' },
+          { answer: 'じゃありません', accepted: ['じゃないです', 'ではありません'], explain: 'にほんじんです → cópula negativa: じゃありません.' },
+          { answer: 'じゃありません', accepted: ['じゃないです'], explain: 'たいくつ = adj-な. たいくつじゃありません (no es aburrido).' },
+          { answer: 'しません', explain: 'はなします = verbo. はなしません = no hablan.' },
+          { answer: 'しくないです', accepted: ['しくありません'], explain: 'むずかしい = adj-い. むずか+しくないです = むずかしくないです.' },
+          { answer: 'じゃないです', accepted: ['じゃありません', 'ではありません'], explain: 'かんたん = adj-な. かんたんじゃないです (no es fácil).' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Producción',
+        tag: 'Producción',
+        intro: 'Escribe la frase negativa completa en japonés.',
+        type: 'write',
+        items: [
+          {
+            scene: 'No como sushi',
+            prompt: 'Escribe: No como sushi. → すしを ___。',
+            answer: 'すしを 食べません。',
+            accepted: ['すしを 食べません', 'すしを たべません'],
+            explain: '食べます → 食べません. Verbo negativo: raíz + ません.',
+          },
+          {
+            scene: 'No es bonito',
+            prompt: 'Escribe: Esta flor no es bonita. → このはなは ___。',
+            answer: 'このはなは きれいじゃありません。',
+            accepted: ['このはなは きれいじゃありません', 'このはなは きれいじゃないです'],
+            explain: 'きれい = adj-な. きれい + じゃありません. NO くない.',
+          },
+          {
+            scene: 'No es grande',
+            prompt: 'Escribe: Este libro no es grande. → このほんは ___。',
+            answer: 'このほんは おおきくないです。',
+            accepted: ['このほんは おおきくないです', 'このほんは おおきくありません'],
+            explain: 'おおきい = adj-い. おおき + くないです. Quitar い, añadir くないです.',
+          },
+          {
+            scene: 'No soy japonés',
+            prompt: 'Escribe: No soy japonés/a. → わたしは ___。',
+            answer: 'わたしは にほんじんじゃありません。',
+            accepted: ['わたしは にほんじんじゃありません', 'わたしは にほんじんじゃないです', 'わたしは にほんじんではありません'],
+            explain: 'にほんじんです → cópula negativa: じゃありません / じゃないです / ではありません.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Misión negativa',
+        tag: 'Reto final',
+        intro: 'Usa los cuatro tipos de negación en un párrafo.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Negar identidad y verbo',
+            prompt: 'わたしは [no soy japonés] が、[no es difícil] です。にほんごを [no hablo] まだ。',
+            answer: 'わたしは にほんじんじゃありません が、むずかしくないです。にほんごを 話しません まだ。',
+            accepted: ['わたしは にほんじんじゃありません むずかしくないです にほんごを 話しません まだ'],
+            explain: 'じゃありません (cópula) + くないです (adj-い) + ません (verbo).',
+          },
+          {
+            scene: 'Negar adjetivos',
+            prompt: 'このへやは [no es tranquilo] し、[no es limpio] です。でも [no es pequeño]。',
+            answer: 'このへやは しずかじゃないです し、きれいじゃないです。でも ちいさくないです。',
+            accepted: ['このへやは しずかじゃないです きれいじゃないです でも ちいさくないです'],
+            explain: 'しずか(な)→じゃないです, きれい(な)→じゃないです, ちいさい(い)→くないです.',
+          },
+          {
+            scene: 'Negación mixta',
+            prompt: 'きのう [no comí] し、[no estudié]. でも [no fue un día malo]。',
+            answer: 'きのう 食べませんでした し、べんきょうしませんでした。でも わるい ひじゃなかったです。',
+            accepted: ['きのう 食べませんでした べんきょうしませんでした でも わるい ひじゃなかったです'],
+            explain: 'ませんでした (pasado negativo de verbos) + adj-な negativo pasado.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic

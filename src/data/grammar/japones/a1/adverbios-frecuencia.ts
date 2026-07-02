@@ -1,0 +1,292 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'adverbios-frecuencia',
+  order: '17',
+  color: '#dc2626',
+  category: 'Adverbios',
+  level: 'A1',
+  title: 'Adverbios de frecuencia en japonés A1 — いつも, よく, たまに',
+  shortTitle: 'Adverbios frecuencia',
+  metaTitle: 'Adverbios frecuencia japonés A1 — itsumo yoku tokidoki amari zenzen',
+  description:
+    'Los adverbios de frecuencia japoneses indican con qué regularidad ocurre algo. La regla MÁS IMPORTANTE: あまり (amari) y 全然 (zenzen) son adverbios de polaridad negativa — SIEMPRE deben ir con forma negativa del verbo. "あまり食べません" (no como mucho) ✓, "あまり食べます" ✗. Este error es el más frecuente en estudiantes hispanohablantes.',
+  lead: 'いつも (itsumo=siempre) → よく (yoku=a menudo) → 時々 (tokidoki=a veces) → たまに (tama ni=de vez en cuando) → あまり〜ない (amari〜nai=no mucho) → 全然〜ない (zenzen〜nai=para nada). あまり y 全然 van SIEMPRE con negativo.',
+  outcomes: [
+    'Usa los seis adverbios de frecuencia principales en posición correcta',
+    'Recuerda que あまり y 全然 exigen forma negativa del verbo',
+    'Evita el error de usar あまり con frases afirmativas',
+  ],
+
+  guide: {
+    goal: 'Usar adverbios de frecuencia en japonés A1 con la forma verbal correcta, especialmente あまり y 全然 con negativo.',
+    model: 'いつも コーヒーを 飲みます。(Siempre bebo café.) / あまり にくを 食べません。(No como mucha carne.)',
+    formula: '[adverbio de frecuencia] + [sujeto]は + [objeto]を + [verbo] — el adverbio puede ir al inicio o antes del verbo',
+    decisions: [
+      'いつも (itsumo) = siempre — con afirmativa: いつも べんきょうします',
+      'よく (yoku) = a menudo, frecuentemente — con afirmativa: よく えいがを 見ます',
+      '時々 (tokidoki) = a veces — con afirmativa: 時々 うちで たべます',
+      'たまに (tama ni) = de vez en cuando, raramente — con afirmativa: たまに すしを 食べます',
+      'あまり (amari) = no mucho — SIEMPRE con negativa: あまり 食べません ✓',
+      '全然 (zenzen) = para nada/totalmente — SIEMPRE con negativa: 全然 わかりません ✓',
+    ],
+    table: [
+      ['Adverbio', 'Romaji + significado', 'Ejemplo'],
+      ['いつも', 'itsumo = siempre', 'いつも にほんごを 勉強します。'],
+      ['よく', 'yoku = a menudo', 'よく えいがを 見ます。'],
+      ['時々', 'tokidoki = a veces', '時々 ともだちと あいます。'],
+      ['たまに', 'tama ni = de vez en cuando', 'たまに コーヒーを 飲みます。'],
+      ['あまり〜ない', 'amari〜nai = no mucho ⚠️', 'あまり にくを 食べません。'],
+      ['全然〜ない', 'zenzen〜nai = para nada ⚠️', '全然 わかりません。'],
+    ],
+    mistakes: [
+      '"あまり 食べます" ✗ — あまり SIEMPRE con negativa: あまり 食べません ✓. Error crítico.',
+      '"全然 わかります" ✗ — 全然 (zenzen=para nada) SIEMPRE con negativa: 全然 わかりません ✓.',
+      'Posición: los adverbios van al inicio de la frase O justo antes del verbo. NO entre sujeto y partícula.',
+    ],
+  },
+  seo: [
+    {
+      heading: 'あまり y 全然: los adverbios negativos del japonés',
+      paragraphs: [
+        'La regla más importante de los adverbios de frecuencia en japonés: あまり (amari) y 全然 (zenzen) son adverbios de POLARIDAD NEGATIVA. Esto significa que gramaticalmente requieren que el verbo esté en forma negativa. En español decimos "no como mucho" — en japonés el "no" ya está implícito en あまり: あまり 食べません (literalmente "mucho no-como" = "no como mucho").',
+        'Este concepto no existe en español, donde "mucho" puede ir con formas afirmativas o negativas. En japonés, usar あまり con una forma afirmativa (あまり 食べます) es gramaticalmente incorrecto. Aprende esto desde A1 y evitarás un error que cometen incluso estudiantes intermedios.',
+      ],
+    },
+    {
+      heading: 'Posición de los adverbios de frecuencia en la oración japonesa',
+      paragraphs: [
+        'Los adverbios de frecuencia en japonés son bastante flexibles en su posición. Pueden ir al inicio de la frase (antes del tema): いつも わたしは べんきょうします. O pueden ir directamente antes del verbo: わたしは いつも べんきょうします. Ambas posiciones son correctas, aunque la segunda es más natural en conversación.',
+        'A diferencia del inglés (donde "always" va entre sujeto y verbo) o del español (donde puede ir en muchas posiciones), en japonés el adverbio de frecuencia NUNCA va entre el objeto y la partícula を. La estructura correcta es: [tema]は + [adverbio] + [objeto]を + [verbo] o [adverbio] + [tema]は + [objeto]を + [verbo].',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'frequency-adverbs',
+    teacherLens: 'El estudiante aprende los seis adverbios de frecuencia con énfasis en la regla negativa de あまり y 全然.',
+    graphicPrompt: 'Escala de frecuencia: いつも→よく→時々→たまに→あまり〜ない→全然〜ない. Semáforo rojo para あまり/全然 con afirmativa.',
+    scene: [
+      ['いつも→よく→時々→たまに', 'con forma AFIRMATIVA'],
+      ['あまり〜ない (no mucho)', 'SIEMPRE negativo ⚠️'],
+      ['全然〜ない (para nada)', 'SIEMPRE negativo ⚠️'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    reviewFocus: ['escala de frecuencia', 'あまり + ません', '全然 + ません', 'posición del adverbio'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'El adverbio correcto',
+        tag: 'Opción múltiple',
+        intro: 'Elige el adverbio de frecuencia y la forma verbal correctos.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'Siempre estudio',
+            lines: [['Carlos', '___ にほんごを べんきょうします。(Siempre estudio japonés.)']],
+            options: ['いつも', 'あまり', '全然', 'たまに'],
+            answer: 'いつも',
+            explain: 'いつも (itsumo) = siempre. Con forma afirmativa. いつも べんきょうします.',
+          },
+          {
+            scene: 'No como mucha carne',
+            lines: [['Ana', '___ にくを 食べ___。(No como mucha carne.)']],
+            options: ['あまり / ません', 'いつも / ます', 'よく / ます', 'たまに / ます'],
+            answer: 'あまり / ません',
+            explain: 'あまり (no mucho) SIEMPRE con negativo: あまり 食べません ✓. ERROR: あまり 食べます ✗.',
+          },
+          {
+            scene: 'A menudo veo películas',
+            lines: [['David', '___ えいがを 見ます。(A menudo veo películas.)']],
+            options: ['よく', 'あまり', '全然', 'いつも'],
+            answer: 'よく',
+            explain: 'よく (yoku) = a menudo, frecuentemente. Con forma afirmativa.',
+          },
+          {
+            scene: 'No entiendo para nada',
+            lines: [['Sofia', '___ わかり___。(No entiendo para nada.)']],
+            options: ['全然 / ません', 'いつも / ます', 'よく / ます', 'たまに / ます'],
+            answer: '全然 / ません',
+            explain: '全然 (zenzen) = para nada. SIEMPRE con negativo: 全然 わかりません ✓.',
+          },
+          {
+            scene: 'A veces como fuera',
+            lines: [['Marco', '___ そとで たべます。(A veces como fuera de casa.)']],
+            options: ['時々', 'いつも', 'あまり', '全然'],
+            answer: '時々',
+            explain: '時々 (tokidoki) = a veces. Con forma afirmativa. 時々 たべます.',
+          },
+          {
+            scene: 'De vez en cuando',
+            lines: [['Lina', '___ すしを たべます。(De vez en cuando como sushi.)']],
+            options: ['たまに', 'いつも', 'あまり', '全然'],
+            answer: 'たまに',
+            explain: 'たまに (tama ni) = de vez en cuando, raramente. Con forma afirmativa.',
+          },
+          {
+            scene: 'No tomo café casi nunca',
+            lines: [['Zhanna', 'コーヒーは ___ 飲み___。(Casi no tomo café.)']],
+            options: ['あまり / ません', 'よく / ます', 'いつも / ます', '時々 / ます'],
+            answer: 'あまり / ません',
+            explain: 'あまり + ません = no mucho. コーヒーは あまり 飲みません.',
+          },
+          {
+            scene: 'No hablo japonés para nada',
+            lines: [['Carlos', 'にほんごは ___ 話し___。(No hablo japonés para nada.)']],
+            options: ['全然 / ません', 'いつも / ます', 'たまに / ます', 'よく / ます'],
+            answer: '全然 / ません',
+            explain: '全然 (zenzen=para nada) + ません. 全然 話しません.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Adverbio y forma verbal',
+        tag: '2 espacios',
+        intro: 'Completa el adverbio y la forma verbal correcta.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Hábitos de Carlos',
+            lines: [['Carlos', 'わたしは [[0]] にほんごを べんきょうし[[1]]。(Siempre estudio japonés.)']],
+            blanks: [
+              { options: ['いつも', 'あまり', '全然'], answer: 'いつも', explain: 'いつも = siempre. Con forma afirmativa.' },
+              { options: ['ます', 'ません', 'ました'], answer: 'ます', explain: 'いつも → forma afirmativa → ます.' },
+            ],
+          },
+          {
+            scene: 'Lo que no hace Ana',
+            lines: [['Ana', 'わたしは [[0]] さかなを たべ[[1]]。(No como mucho pescado.)']],
+            blanks: [
+              { options: ['あまり', 'いつも', 'よく'], answer: 'あまり', explain: 'あまり = no mucho. SIEMPRE con negativo.' },
+              { options: ['ません', 'ます', 'ました'], answer: 'ません', explain: 'あまり EXIGE negativo: たべません.' },
+            ],
+          },
+          {
+            scene: 'David a veces',
+            lines: [['David', '[[0]] ともだちと えいがを [[1]]。(A veces veo películas con amigos.)']],
+            blanks: [
+              { options: ['時々', '全然', 'あまり'], answer: '時々', explain: '時々 (tokidoki) = a veces. Con afirmativa.' },
+              { options: ['見ます', '見ません', 'みません'], answer: '見ます', explain: '時々 → afirmativa → 見ます.' },
+            ],
+          },
+          {
+            scene: 'Zhanna y el deporte',
+            lines: [['Zhanna', 'スポーツは [[0]] し[[1]]。でも、さんぽは [[0]] し[[1]]。(No hago deporte para nada. Pero camino a menudo.)']],
+            blanks: [
+              { options: ['全然 / よく', 'いつも / あまり', 'たまに / 全然'], answer: '全然 / よく', explain: '全然 (para nada)+ません → よく (a menudo)+ます. Contraste.' },
+              { options: ['ません / ます', 'ます / ません', 'ました / ました'], answer: 'ません / ます', explain: '全然+ません / よく+ます.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'Texto guiado — los hábitos de Sofia',
+        tag: 'Opciones',
+        intro: 'Elige el adverbio y la forma verbal correctos.',
+        type: 'guidedText',
+        scene: 'Sofia habla de sus hábitos cotidianos en la academia WeLearn',
+        text: 'わたしは [[0]] にほんごを べんきょうします。[[1]] えいごも べんきょうします。でも、かんじは [[2]] べんきょうし[[3]]。ごはんは [[4]] うちで たべます。レストランは [[5]] 行き[[6]]。コーヒーは [[7]] 飲み[[8]]。',
+        blanks: [
+          { options: ['いつも', 'あまり', '全然'], answer: 'いつも', explain: 'いつも (siempre) + ます (afirmativa).' },
+          { options: ['時々', '全然', 'あまり'], answer: '時々', explain: '時々 (a veces) + ます (afirmativa).' },
+          { options: ['あまり', 'いつも', 'よく'], answer: 'あまり', explain: 'あまり (no mucho) → necesita negativo.' },
+          { options: ['ません', 'ます', 'ました'], answer: 'ません', explain: 'あまり + ません = no estudio mucho kanji.' },
+          { options: ['よく', '全然', 'あまり'], answer: 'よく', explain: 'よく (a menudo) + ます (afirmativa).' },
+          { options: ['たまに', '全然', 'いつも'], answer: 'たまに', explain: 'たまに (de vez en cuando) + ます (afirmativa).' },
+          { options: ['ます', 'ません', 'ました'], answer: 'ます', explain: 'たまに + ます = de vez en cuando voy.' },
+          { options: ['全然', 'いつも', 'よく'], answer: '全然', explain: '全然 (para nada) → necesita negativo.' },
+          { options: ['ません', 'ます', 'ました'], answer: 'ません', explain: '全然 + ません = no bebo café para nada.' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Sin opciones',
+        tag: 'Sin opciones',
+        intro: 'Escribe el adverbio correcto y la forma verbal que lo acompaña.',
+        type: 'freeText',
+        scene: 'Marco describe sus hábitos de estudiante de japonés',
+        text: 'わたしは [[0]] (siempre) にほんごを べんきょうします。[[1]] (a menudo) アニメを 見ます。でも、かんじは [[2]] (no mucho) べんきょうしません。すし は [[3]] (de vez en cuando) たべます。スポーツは [[4]] (para nada) しません。[[5]] (a veces) ともだちと カラオケに いきます。',
+        blanks: [
+          { answer: 'いつも', explain: 'いつも (itsumo) = siempre. Con forma afirmativa.' },
+          { answer: 'よく', explain: 'よく (yoku) = a menudo. Con forma afirmativa.' },
+          { answer: 'あまり', explain: 'あまり (amari) = no mucho. La frase ya tiene ません (negativo).' },
+          { answer: 'たまに', explain: 'たまに (tama ni) = de vez en cuando. Con forma afirmativa.' },
+          { answer: '全然', explain: '全然 (zenzen) = para nada. La frase ya tiene ません.' },
+          { answer: '時々', explain: '時々 (tokidoki) = a veces. Con forma afirmativa.' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Producción',
+        tag: 'Producción',
+        intro: 'Escribe frases completas con adverbios de frecuencia.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Siempre bebo agua',
+            prompt: 'Escribe: Siempre bebo agua. → ___ みずを ___。',
+            answer: 'いつも みずを 飲みます。',
+            accepted: ['いつも みずを 飲みます', 'いつも みずを のみます'],
+            explain: 'いつも (siempre) + 飲みます (bebo). Afirmativa con いつも.',
+          },
+          {
+            scene: 'No como mucho azúcar',
+            prompt: 'Escribe: No como mucho azúcar. → ___ さとうを ___。',
+            answer: 'あまり さとうを 食べません。',
+            accepted: ['あまり さとうを 食べません', 'あまり さとうを たべません'],
+            explain: 'あまり + 食べません. REGLA: あまり SIEMPRE con negativo. さとう = azúcar.',
+          },
+          {
+            scene: 'No entiendo nada',
+            prompt: 'Escribe: No entiendo nada de kanji. → かんじは ___ ___。',
+            answer: 'かんじは 全然 わかりません。',
+            accepted: ['かんじは 全然 わかりません', 'かんじは ぜんぜん わかりません'],
+            explain: '全然 + わかりません. REGLA: 全然 SIEMPRE con negativo.',
+          },
+          {
+            scene: 'A veces',
+            prompt: 'Escribe: A veces como sushi con amigos. → ___ ともだちと すしを ___。',
+            answer: '時々 ともだちと すしを 食べます。',
+            accepted: ['時々 ともだちと すしを 食べます', 'ときどき ともだちと すしを たべます'],
+            explain: '時々 (a veces) + 食べます (afirmativa). 時々 = ときどき.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Misión de hábitos',
+        tag: 'Reto final',
+        intro: 'Habla de tus hábitos cotidianos usando todos los adverbios de frecuencia.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Lo que siempre y a menudo haces',
+            prompt: 'いつも ___ます。よく ___ます。(Siempre... A menudo...)',
+            answer: 'いつも にほんごを べんきょうします。よく えいがを 見ます。',
+            accepted: ['いつも にほんごを べんきょうします よく えいがを 見ます'],
+            explain: 'いつも y よく con formas AFIRMATIVAS (ます).',
+          },
+          {
+            scene: 'Lo que no haces',
+            prompt: 'あまり ___ません。全然 ___ません。(No mucho... Para nada...)',
+            answer: 'あまり にくを 食べません。全然 テレビを 見ません。',
+            accepted: ['あまり にくを 食べません 全然 テレビを 見ません'],
+            explain: 'あまり y 全然 SIEMPRE con NEGATIVO (ません). Regla de polaridad negativa.',
+          },
+          {
+            scene: 'La escala completa',
+            prompt: '___ます。___ます。___ます。___ません。___ません。',
+            answer: 'いつも べんきょうします。よく えいごを 話します。時々 たまに すしを 食べます。あまり さかなを 食べません。全然 わかりません。',
+            accepted: ['いつも べんきょうします よく えいごを 話します 時々 すしを 食べます あまり さかなを 食べません 全然 わかりません'],
+            explain: 'Escala: いつも→よく→時々→たまに (afirmativas) + あまり→全然 (negativas).',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic
