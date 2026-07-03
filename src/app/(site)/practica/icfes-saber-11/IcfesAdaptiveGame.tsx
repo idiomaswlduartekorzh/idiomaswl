@@ -31,6 +31,10 @@ interface SavedCheckpoint {
   savedAt: number;
 }
 
+interface IcfesAdaptiveGameProps {
+  embedded?: boolean;
+}
+
 // ─── Question Bank (75 questions · 5 skills · 4 levels) ──────────────────────
 
 const ALL_QUESTIONS: IcfesQuestion[] = [
@@ -709,7 +713,7 @@ function clearCheckpoint() {
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
-function TimerRing({ timeLeft, maxTime, color }: { timeLeft: number; maxTime: number; color: string }) {
+function TimerRing({ timeLeft, maxTime }: { timeLeft: number; maxTime: number }) {
   const r = 26, circ = 2 * Math.PI * r;
   const pct = timeLeft / maxTime;
   const offset = circ * (1 - pct);
@@ -727,7 +731,7 @@ function TimerRing({ timeLeft, maxTime, color }: { timeLeft: number; maxTime: nu
   );
 }
 
-function SkillBar({ skill, stats, color }: { skill: Skill; stats: SkillStats; color: string }) {
+function SkillBar({ skill, stats }: { skill: Skill; stats: SkillStats }) {
   if (stats.total === 0) return null;
   const pct = Math.round((stats.correct / stats.total) * 100);
   const barColor = pct >= 70 ? '#22c55e' : pct >= 50 ? '#f59e0b' : '#ef4444';
@@ -754,15 +758,24 @@ function StimulusBlock({ text, color }: { text: string; color: string }) {
   );
 }
 
+function shellClass(embedded: boolean, justify: 'center' | 'start' = 'center') {
+  return [
+    embedded ? 'min-h-[640px] rounded-2xl' : 'min-h-screen',
+    'bg-[#080810] flex flex-col items-center px-4',
+    justify === 'center' ? 'justify-center py-12' : 'justify-start py-8',
+  ].join(' ');
+}
+
 // ─── Intro Screen ─────────────────────────────────────────────────────────────
 
-function IntroScreen({ onStart, onResume, checkpoint }: {
+function IntroScreen({ onStart, onResume, checkpoint, embedded }: {
   onStart: () => void;
   onResume: (cp: SavedCheckpoint) => void;
   checkpoint: SavedCheckpoint | null;
+  embedded?: boolean;
 }) {
   return (
-    <div className="min-h-screen bg-[#080810] flex flex-col items-center justify-center px-4 py-12">
+    <div className={shellClass(Boolean(embedded))}>
       <motion.div initial={{ opacity:0, y:30 }} animate={{ opacity:1, y:0 }} className="w-full max-w-xl text-center">
         <div className="text-5xl mb-4">🇨🇴</div>
         <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">ICFES Saber 11</h1>
@@ -817,9 +830,10 @@ function IntroScreen({ onStart, onResume, checkpoint }: {
 
 // ─── Checkpoint Screen (between levels) ───────────────────────────────────────
 
-function CheckpointScreen({ level, score, lives, skillStats, onContinue }: {
+function CheckpointScreen({ level, score, lives, skillStats, onContinue, embedded }: {
   level: 1|2|3|4; score: number; lives: number;
   skillStats: SkillRecord; onContinue: () => void;
+  embedded?: boolean;
 }) {
   const nextLevel = (level + 1) as 2|3|4;
   const nextCfg = LEVEL_CFG[nextLevel];
@@ -827,7 +841,7 @@ function CheckpointScreen({ level, score, lives, skillStats, onContinue }: {
   const attempted = skills.filter(s => skillStats[s].total > 0);
 
   return (
-    <div className="min-h-screen bg-[#080810] flex flex-col items-center justify-center px-4 py-12">
+    <div className={shellClass(Boolean(embedded))}>
       <motion.div initial={{ opacity:0, scale:0.9 }} animate={{ opacity:1, scale:1 }} className="w-full max-w-md">
         <div className="text-center mb-6">
           <motion.div animate={{ rotate:[0,-10,10,-10,0] }} transition={{ delay:0.3, duration:0.5 }} className="text-6xl mb-3">🎯</motion.div>
@@ -850,7 +864,7 @@ function CheckpointScreen({ level, score, lives, skillStats, onContinue }: {
           <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 mb-5">
             <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Tu desempeño por habilidad</p>
             {attempted.map(skill => (
-              <SkillBar key={skill} skill={skill} stats={skillStats[skill]} color={LEVEL_CFG[level].color} />
+              <SkillBar key={skill} skill={skill} stats={skillStats[skill]} />
             ))}
           </div>
         )}
@@ -880,9 +894,9 @@ function CheckpointScreen({ level, score, lives, skillStats, onContinue }: {
 
 // ─── Game Over & Victory ──────────────────────────────────────────────────────
 
-function GameOverScreen({ score, onRetry }: { score: number; onRetry: () => void }) {
+function GameOverScreen({ score, onRetry, embedded }: { score: number; onRetry: () => void; embedded?: boolean }) {
   return (
-    <div className="min-h-screen bg-[#080810] flex flex-col items-center justify-center px-4 py-12">
+    <div className={shellClass(Boolean(embedded))}>
       <motion.div initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} className="w-full max-w-md text-center">
         <div className="text-6xl mb-4">💔</div>
         <h2 className="text-2xl font-bold text-white mb-2">Sin vidas</h2>
@@ -900,14 +914,14 @@ function GameOverScreen({ score, onRetry }: { score: number; onRetry: () => void
   );
 }
 
-function VictoryScreen({ score, skillStats, onRetry }: { score: number; skillStats: SkillRecord; onRetry: () => void }) {
+function VictoryScreen({ score, skillStats, onRetry, embedded }: { score: number; skillStats: SkillRecord; onRetry: () => void; embedded?: boolean }) {
   const skills = Object.keys(skillStats) as Skill[];
   const total = skills.reduce((s, k) => s + skillStats[k].total, 0);
   const correct = skills.reduce((s, k) => s + skillStats[k].correct, 0);
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
 
   return (
-    <div className="min-h-screen bg-[#080810] flex flex-col items-center justify-center px-4 py-12">
+    <div className={shellClass(Boolean(embedded))}>
       <motion.div initial={{ opacity:0, scale:0.8 }} animate={{ opacity:1, scale:1 }} className="w-full max-w-md text-center">
         <motion.div animate={{ rotate:[0,15,-15,10,-10,0], scale:[1,1.2,1] }} transition={{ delay:0.2, duration:0.8 }} className="text-7xl mb-4">🏆</motion.div>
         <h2 className="text-3xl font-bold text-white mb-2">¡Completado!</h2>
@@ -927,7 +941,7 @@ function VictoryScreen({ score, skillStats, onRetry }: { score: number; skillSta
         <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 mb-6 text-left">
           <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Resumen por habilidad</p>
           {skills.filter(s => skillStats[s].total > 0).map(skill => (
-            <SkillBar key={skill} skill={skill} stats={skillStats[skill]} color="#dc2626" />
+            <SkillBar key={skill} skill={skill} stats={skillStats[skill]} />
           ))}
         </div>
 
@@ -953,7 +967,7 @@ function VictoryScreen({ score, skillStats, onRetry }: { score: number; skillSta
 
 // ─── Main Game ────────────────────────────────────────────────────────────────
 
-export default function IcfesAdaptiveGame() {
+export default function IcfesAdaptiveGame({ embedded = false }: IcfesAdaptiveGameProps) {
   const [phase,       setPhase]       = useState<GamePhase>('intro');
   const [checkpoint,  setCheckpoint]  = useState<SavedCheckpoint | null>(null);
   const [level,       setLevel]       = useState<1|2|3|4>(1);
@@ -964,7 +978,6 @@ export default function IcfesAdaptiveGame() {
   const [levelPool,   setLevelPool]   = useState<IcfesQuestion[]>([]);
   const [usedIds,     setUsedIds]     = useState<Set<string>>(new Set());
   const [currentQ,    setCurrentQ]    = useState<IcfesQuestion | null>(null);
-  const [qIndex,      setQIndex]      = useState(0);
   const [baseCount,   setBaseCount]   = useState(0);
   const [bonusCount,  setBonusCount]  = useState(0);
   const [isBonus,     setIsBonus]     = useState(false);
@@ -979,7 +992,10 @@ export default function IcfesAdaptiveGame() {
   const intervalRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
   // ref to avoid stale closure in timedOut effect
   const selectedRef = useRef<number | null>(null);
-  selectedRef.current = selected;
+
+  useEffect(() => {
+    selectedRef.current = selected;
+  }, [selected]);
 
   // ── Derived phase helpers ──────────────────────────────────────────────────
   // justPanelVisible: true while the justification panel should be rendered
@@ -991,25 +1007,16 @@ export default function IcfesAdaptiveGame() {
   const cfg = LEVEL_CFG[level];
 
   // Load checkpoint on mount
-  useEffect(() => { setCheckpoint(loadCheckpoint()); }, []);
+  useEffect(() => {
+    const loadedCheckpoint = loadCheckpoint();
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setCheckpoint(loadedCheckpoint);
+  }, []);
 
   // ── Build level pool ───────────────────────────────────────────────────────
   const buildLevelPool = useCallback((lvl: 1|2|3|4) => {
     return shuffle(ALL_QUESTIONS.filter(q => q.level === lvl));
   }, []);
-
-  // ── Load first question of level ───────────────────────────────────────────
-  const loadQuestion = useCallback((pool: IcfesQuestion[], used: Set<string>, stats: SkillRecord, bonus: boolean) => {
-    const q = pickWeighted(pool.filter(q => !used.has(q.id)), new Set(), stats);
-    if (!q) return null;
-    setCurrentQ(q);
-    setIsBonus(bonus);
-    setFeedback(null);
-    setSelected(null);
-    setWrongAnswer(null);
-    setTimeLeft(LEVEL_CFG[level].time);
-    return q;
-  }, [level]);
 
   // ── Start a level (fresh or from checkpoint) ───────────────────────────────
   const startLevel = useCallback((lvl: 1|2|3|4, initScore: number, initLives: number, initStats: SkillRecord) => {
@@ -1021,7 +1028,6 @@ export default function IcfesAdaptiveGame() {
     setSkillStats(initStats);
     setLevelPool(pool);
     setUsedIds(used);
-    setQIndex(0);
     setBaseCount(0);
     setBonusCount(0);
     setStreak(0);
@@ -1141,6 +1147,7 @@ export default function IcfesAdaptiveGame() {
   // ── Timeout handler ────────────────────────────────────────────────────────
   useEffect(() => {
     if (!timedOut) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTimedOut(false);
     if (!currentQ) return;
     const sel = selectedRef.current;
@@ -1194,18 +1201,18 @@ export default function IcfesAdaptiveGame() {
 
   // ── Phase routing ──────────────────────────────────────────────────────────
   if (phase === 'intro') return (
-    <IntroScreen onStart={startGame} onResume={resumeFromCheckpoint} checkpoint={checkpoint} />
+    <IntroScreen onStart={startGame} onResume={resumeFromCheckpoint} checkpoint={checkpoint} embedded={embedded} />
   );
   if (phase === 'checkpoint') return (
     <CheckpointScreen level={level} score={score} lives={lives} skillStats={skillStats}
-      onContinue={() => startLevel((level + 1) as 2|3|4, score, lives, skillStats)} />
+      onContinue={() => startLevel((level + 1) as 2|3|4, score, lives, skillStats)} embedded={embedded} />
   );
-  if (phase === 'gameover') return <GameOverScreen score={score} onRetry={startGame} />;
-  if (phase === 'victory')  return <VictoryScreen score={score} skillStats={skillStats} onRetry={startGame} />;
+  if (phase === 'gameover') return <GameOverScreen score={score} onRetry={startGame} embedded={embedded} />;
+  if (phase === 'victory')  return <VictoryScreen score={score} skillStats={skillStats} onRetry={startGame} embedded={embedded} />;
   if (!currentQ) return null;
 
   return (
-    <div className="min-h-screen bg-[#080810] flex flex-col items-center justify-start px-4 py-8">
+    <div className={shellClass(embedded, 'start')}>
 
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <div className="w-full max-w-2xl flex items-center justify-between mb-4">
@@ -1233,7 +1240,7 @@ export default function IcfesAdaptiveGame() {
               ? <div className="text-xs font-bold text-amber-400">🔥 ×{streak >= 5 ? 3 : 2}</div>
               : <div className="text-xs text-gray-500">puntos</div>}
           </div>
-          <TimerRing timeLeft={timeLeft} maxTime={cfg.time} color={cfg.color} />
+          <TimerRing timeLeft={timeLeft} maxTime={cfg.time} />
         </div>
       </div>
 

@@ -60,8 +60,8 @@ export default async function StudentDashboardPage() {
     .order('created_at', { ascending: false })
     .limit(50)
 
-  let stats: DashboardStats = { simulacros: 0, mejorScore: 0, diasActivo: 0 }
-  let recentExams: RecentExam[] = []
+  const stats: DashboardStats = { simulacros: 0, mejorScore: 0, diasActivo: 0 }
+  const recentExams: RecentExam[] = []
 
   if (submissions && submissions.length > 0) {
     stats.simulacros = submissions.length
