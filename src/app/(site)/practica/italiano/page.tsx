@@ -89,6 +89,26 @@ export default function ItalianoPage() {
               : <div key={n.nivel}>{inner}</div>;
           })}
         </div>
+
+        <Link href="/practica/italiano/tiempos-verbales" style={{ textDecoration: 'none', color: 'inherit', display: 'block', marginTop: '1.75rem' }}>
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: '1.25rem',
+            padding: '1.2rem 1.5rem',
+            border: `1.5px solid ${COLOR}55`,
+            borderRadius: 16,
+            background: 'linear-gradient(135deg, rgba(0,146,70,0.1) 0%, transparent 100%)',
+          }}>
+            <div style={{ width: 58, height: 58, borderRadius: 14, flexShrink: 0, background: COLOR, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>⏱️</div>
+            <div style={{ flex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.55rem', marginBottom: '0.2rem', flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--ink)' }}>Tiempos Verbales — Modo en Vivo</span>
+                <span style={{ fontSize: '0.6rem', fontWeight: 800, background: COLOR, color: '#fff', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)' }}>GUIADO EN CLASE</span>
+              </div>
+              <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.5 }}>50 oraciones del español al italiano, de A1 a C2, sin pistas y contra el tiempo. Sin corrección automática — se revisa en vivo con el profesor.</p>
+            </div>
+            <span style={{ fontSize: '1.2rem', color: COLOR, fontWeight: 700, flexShrink: 0 }}>→</span>
+          </div>
+        </Link>
       </div>
     </section>
     </>
