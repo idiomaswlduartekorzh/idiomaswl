@@ -24,18 +24,34 @@
   height: 15px;
   border-radius: 999px;
 }
-.dashBlue { background: #1a2ecc; opacity: 0.55; }
-.dashRed  { background: #e8192c; opacity: 0.55; }
+.dashBlue { background: #3b52ff; opacity: 0.9; }
+.dashRed  { background: #ff3347; opacity: 0.9; }
 
-.dashTopLeft     { top: 6%;  left: -10px; }
-.dashTopRight    { top: 8%;  right: -10px; align-items: flex-end; }
-.dashBottomLeft  { bottom: 8%; left: -10px; }
-.dashBottomRight { bottom: 6%; right: -10px; align-items: flex-end; }
+.dashTopLeft     { top: 5%;  left: 0; }
+.dashTopRight    { top: 5%;  right: 0; align-items: flex-end; }
+.dashBottomRight { bottom: 5%; right: 0; align-items: flex-end; }
+.dashBottomLeft  { bottom: 5%; left: 0; }
 
 @media (max-width: 640px) {
-  .dashBlue, .dashRed { width: 34px; height: 11px; }
-  .dashCluster { gap: 7px; }
+  .dashBlue, .dashRed { width: 30px; height: 10px; }
+  .dashCluster { gap: 6px; }
 }
+
+/* Small inline pill divider — same dash shape, used as a section break */
+.pillDivider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0.9rem 0;
+}
+.dashBlueSm, .dashRedSm {
+  display: block;
+  width: 22px;
+  height: 8px;
+  border-radius: 999px;
+}
+.dashBlueSm { background: #3b52ff; }
+.dashRedSm  { background: #ff3347; }
 
 .wrap {
   position: relative;
@@ -120,7 +136,13 @@
 .pillOutline:hover { background: rgba(255, 255, 255, 0.09); border-color: rgba(255, 255, 255, 0.32); }
 
 .pillIcon { font-size: 1.15rem; line-height: 1; flex-shrink: 0; }
-.pillLabel { flex: 1; text-align: left; }
+.pillLabel { flex: 1; text-align: left; display: flex; flex-direction: column; gap: 2px; }
+.pillSub {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.75);
+}
 .pillBadge {
   font-size: 0.68rem;
   font-weight: 800;

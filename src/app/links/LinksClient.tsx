@@ -22,22 +22,28 @@ function track(label: string) {
 type Item = {
   href: string;
   label: string;
+  sub?: string;
   icon: string;
-  variant: 'primary' | 'blue' | 'outline';
+  variant: 'blue' | 'outline';
   badge?: string;
-  external?: boolean;
 };
 
-const ITEMS: Item[] = [
-  { href: '/clases-de-ingles',  label: 'Clases de inglés (IELTS · TOEFL · ICFES)', icon: '🇬🇧', variant: 'blue' },
-  { href: '/clases-de-coreano', label: 'Clases de coreano',                          icon: '🇰🇷', variant: 'blue' },
-  { href: '/miembro-fundador',  label: 'Miembro Fundador — coreano',                 icon: '⭐', variant: 'blue', badge: '50 cupos' },
-  { href: '/preparacion-icfes', label: 'Preparación ICFES inglés',                   icon: '🎓', variant: 'outline' },
-  { href: '/precios',           label: 'Precios y planes',                          icon: '💳', variant: 'outline' },
-  { href: '/practica',          label: 'Simulacros y práctica gratis',              icon: '📝', variant: 'outline' },
-  { href: '/metodo',            label: 'El método WeLearn (17 pasos)',             icon: '🧠', variant: 'outline' },
-  { href: '/blog',              label: 'Blog — guías y consejos',                  icon: '📰', variant: 'outline' },
-  { href: '/login',             label: 'Iniciar sesión — panel del estudiante',    icon: '🔑', variant: 'outline' },
+// Botones principales — el recorrido de mayor intención
+const PRIMARY_ITEMS: Item[] = [
+  { href: '/clases-de-coreano', label: 'Aprende coreano',        icon: '🇰🇷', variant: 'blue' },
+  { href: '/examenes',          label: 'Prepárate para tu examen', sub: 'IELTS · TOEFL · ICFES', icon: '🎯', variant: 'blue' },
+  { href: '/practica',          label: 'Aprende un idioma',       icon: '🌍', variant: 'blue' },
+  { href: '/home#equipo',       label: 'Quiénes somos',          icon: '🤝', variant: 'blue' },
+];
+
+// Enlaces secundarios
+const SECONDARY_ITEMS: Item[] = [
+  { href: '/clases-de-ingles',  label: 'Clases de inglés',            icon: '🇬🇧', variant: 'outline' },
+  { href: '/miembro-fundador',  label: 'Miembro Fundador — coreano',  icon: '⭐', variant: 'outline', badge: '50 cupos' },
+  { href: '/precios',           label: 'Precios y planes',            icon: '💳', variant: 'outline' },
+  { href: '/metodo',            label: 'El método WeLearn (17 pasos)', icon: '🧠', variant: 'outline' },
+  { href: '/blog',              label: 'Blog — guías y consejos',     icon: '📰', variant: 'outline' },
+  { href: '/login',             label: 'Iniciar sesión — panel del estudiante', icon: '🔑', variant: 'outline' },
 ];
 
 const SOCIALS = [
@@ -73,7 +79,7 @@ function SocialIcon({ icon }: { icon: string }) {
 export default function LinksClient() {
   return (
     <div className={styles.page}>
-      {/* Decorative pill dashes — echo the logo's corner motif */}
+      {/* Decorative pill dashes — the WeLearn logo's signature corner motif */}
       <div className={`${styles.dashCluster} ${styles.dashTopLeft}`} aria-hidden="true">
         <span className={styles.dashBlue} />
         <span className={styles.dashBlue} />
@@ -84,11 +90,12 @@ export default function LinksClient() {
         <span className={styles.dashRed} />
         <span className={styles.dashRed} />
       </div>
-      <div className={`${styles.dashCluster} ${styles.dashBottomLeft}`} aria-hidden="true">
+      <div className={`${styles.dashCluster} ${styles.dashBottomRight}`} aria-hidden="true">
+        <span className={styles.dashRed} />
         <span className={styles.dashRed} />
         <span className={styles.dashRed} />
       </div>
-      <div className={`${styles.dashCluster} ${styles.dashBottomRight}`} aria-hidden="true">
+      <div className={`${styles.dashCluster} ${styles.dashBottomLeft}`} aria-hidden="true">
         <span className={styles.dashBlue} />
         <span className={styles.dashBlue} />
       </div>
@@ -96,6 +103,13 @@ export default function LinksClient() {
       <main className={styles.wrap}>
         <div className={styles.avatar}>
           <Image src="/images/welearn-logo.png" alt="Idiomas WeLearn" width={112} height={112} priority />
+        </div>
+
+        {/* Pill divider — blue/red dashes, same shapes as the logo's underline accents */}
+        <div className={styles.pillDivider} aria-hidden="true">
+          <span className={styles.dashBlueSm} />
+          <span className={styles.dashRedSm} />
+          <span className={styles.dashBlueSm} />
         </div>
 
         <h1 className={styles.name}>Idiomas WeLearn</h1>
@@ -110,18 +124,39 @@ export default function LinksClient() {
           className={`${styles.pill} ${styles.pillWhatsapp}`}
         >
           <span className={styles.pillIcon}>💬</span>
-          <span className={styles.pillLabel}>Escríbenos por WhatsApp</span>
+          <span className={styles.pillLabel}>Estudia con nosotros</span>
         </a>
 
-        <nav className={styles.list} aria-label="Links de WeLearn">
-          {ITEMS.map((item) => (
+        <nav className={styles.list} aria-label="Links principales de WeLearn">
+          {PRIMARY_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => track(item.label)}
-              className={`${styles.pill} ${
-                item.variant === 'blue' ? styles.pillBlue : styles.pillOutline
-              }`}
+              className={`${styles.pill} ${styles.pillBlue}`}
+            >
+              <span className={styles.pillIcon}>{item.icon}</span>
+              <span className={styles.pillLabel}>
+                {item.label}
+                {item.sub && <span className={styles.pillSub}>{item.sub}</span>}
+              </span>
+            </Link>
+          ))}
+        </nav>
+
+        <div className={styles.pillDivider} aria-hidden="true">
+          <span className={styles.dashRedSm} />
+          <span className={styles.dashBlueSm} />
+          <span className={styles.dashRedSm} />
+        </div>
+
+        <nav className={styles.list} aria-label="Más enlaces de WeLearn">
+          {SECONDARY_ITEMS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => track(item.label)}
+              className={`${styles.pill} ${styles.pillOutline}`}
             >
               <span className={styles.pillIcon}>{item.icon}</span>
               <span className={styles.pillLabel}>{item.label}</span>
