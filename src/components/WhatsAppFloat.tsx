@@ -6,6 +6,7 @@ const WA = '573005004253';
 
 // Per-page pre-written messages. Matched by pathname prefix (most specific first).
 const PAGE_MESSAGES: [string, string][] = [
+  ['/nivel-radar',        'Hola, hice el Nivel Radar de WeLearn y quiero ayuda personalizada para avanzar mi inglés.'],
   ['/clases-de-coreano',  'Hola, vi la página de clases de coreano en WeLearn y quiero saber más sobre el programa.'],
   ['/clases-de-ingles',   'Hola, vi su página de clases de inglés y quiero agendar mi clase de diagnóstico gratis.'],
   ['/preparacion-icfes',  'Hola, vi la página de preparación ICFES inglés en WeLearn y quiero empezar.'],

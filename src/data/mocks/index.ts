@@ -49,6 +49,17 @@ import goetheSet1 from './goethe-set-1';
 import celpeBrasSet1 from './celpe-bras-set-1';
 import topikSet1 from './topik-set-1';
 import cambridgeB2Set1 from './cambridge-b2-set-1';
+import {
+  cambridgeB2Set2,
+  cambridgeB2Set3,
+  cambridgeB2Set4,
+  cambridgeB2Set5,
+  cambridgeB2Set6,
+  cambridgeB2Set7,
+  cambridgeB2Set8,
+  cambridgeB2Set9,
+  cambridgeB2Set10,
+} from './cambridge-b2-original-sets';
 
 const MOCK_REGISTRY: Record<string, MockExam> = {
   // ── ICFES mocks 1–10 (original) ───────────────────────────────────────────
@@ -106,6 +117,15 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   // ── TOPIK ─────────────────────────────────────────────────────────────────
   'topik:set-1': topikSet1,
   'cambridge-b2:set-1': cambridgeB2Set1,
+  'cambridge-b2:set-2': cambridgeB2Set2,
+  'cambridge-b2:set-3': cambridgeB2Set3,
+  'cambridge-b2:set-4': cambridgeB2Set4,
+  'cambridge-b2:set-5': cambridgeB2Set5,
+  'cambridge-b2:set-6': cambridgeB2Set6,
+  'cambridge-b2:set-7': cambridgeB2Set7,
+  'cambridge-b2:set-8': cambridgeB2Set8,
+  'cambridge-b2:set-9': cambridgeB2Set9,
+  'cambridge-b2:set-10': cambridgeB2Set10,
 };
 
 export function getMock(examSlug: string, mockId: string): MockExam | null {

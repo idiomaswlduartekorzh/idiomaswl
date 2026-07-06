@@ -5,7 +5,7 @@ import { TOPICS, getTopic, getTopicNav, GRAMMAR_COLOR } from '@/data/practica/in
 import { grammarTopicMetadata } from '@/lib/practica-metadata';
 import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema';
 import GrammarExplainer from '@/components/practica/GrammarExplainer';
-import GrammarQuiz from '@/components/practica/GrammarQuiz';
+import GrammarQuest from '@/components/practica/GrammarQuest';
 import XPStreak from '@/components/practica/XPStreak';
 
 interface Props {
@@ -15,6 +15,8 @@ interface Props {
 export function generateStaticParams() {
   return TOPICS.map(t => ({ topic: t.slug }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic: slug } = await params;
@@ -50,7 +52,7 @@ export default async function Page({ params }: Props) {
       <QuizSchema
         name={`Ejercicios — ${topic.title}`}
         url={url}
-        description={`Ejercicios interactivos con feedback inmediato sobre ${topic.shortTitle.toLowerCase()} en inglés A1.`}
+        description={`Quest progresiva de ejercicios sobre ${topic.shortTitle.toLowerCase()} en inglés A1, con niveles, revisión y práctica de errores frecuentes.`}
       />
 
       <section className="wl-section">
@@ -80,10 +82,10 @@ export default async function Page({ params }: Props) {
 
           {/* Ejercicios */}
           <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
-            Ejercicios — practica ahora
+            Ejercicios — quest progresiva
           </h2>
-          <GrammarQuiz
-            questions={topic.questions}
+          <GrammarQuest
+            topic={topic}
             lang="ingles"
             level="a1"
             skill="gramatica"

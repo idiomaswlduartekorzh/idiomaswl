@@ -12,6 +12,7 @@ import type {
   WriteQuestion,
   SpeakQuestion,
   FormGroupQuestion,
+  FormBlank,
   MultiSelectQuestion,
   MatchingGroupQuestion,
 } from '@/data/mocks/types';
@@ -26,6 +27,76 @@ function formatTime(s: number) {
   const m = Math.floor(s / 60).toString().padStart(2, '0');
   const sec = Math.floor(s % 60).toString().padStart(2, '0');
   return `${m}:${sec}`;
+}
+
+function normaliseAnswer(value: string) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[.,;:!?]+$/g, '')
+    .replace(/\s+/g, ' ');
+}
+
+function isAcceptedAnswer(value: string | undefined, blank: FormBlank) {
+  if (!value) return false;
+  const candidate = normaliseAnswer(value);
+  return blank.answers.some(answer => normaliseAnswer(answer) === candidate);
+}
+
+function sameLetterSet(a: string[], b: string[]) {
+  if (a.length !== b.length) return false;
+  const left = [...a].map(x => x.toUpperCase()).sort().join('|');
+  const right = [...b].map(x => x.toUpperCase()).sort().join('|');
+  return left === right;
+}
+
+function getObjectiveWeight(mock: MockExam, section: MockSection) {
+  if (mock.examSlug !== 'cambridge-b2') return 1;
+  const title = section.title.toLowerCase();
+  if (title.includes('part 4') || title.includes('part 5') || title.includes('part 6')) return 2;
+  return 1;
+}
+
+function getObjectiveScores(
+  mock: MockExam,
+  mcqAnswers: Record<string, number>,
+  formAnswers: Record<string, Record<number, string>>,
+  multiAnswers: Record<string, string[]>,
+  matchAnswers: Record<string, Record<number, string>>
+) {
+  return mock.sections.map(sec => {
+    let correct = 0;
+    let total = 0;
+    const weight = getObjectiveWeight(mock, sec);
+
+    sec.questions.forEach(q => {
+      if (q.type === 'mcq' || q.type === 'dialog') {
+        total += weight;
+        if (mcqAnswers[q.id] === q.answer) correct += weight;
+      }
+
+      if (q.type === 'formgroup') {
+        q.blanks.forEach(blank => {
+          total += weight;
+          if (isAcceptedAnswer(formAnswers[q.id]?.[blank.num], blank)) correct += weight;
+        });
+      }
+
+      if (q.type === 'multiselect') {
+        total += weight;
+        if (sameLetterSet(multiAnswers[q.id] ?? [], q.answers)) correct += weight;
+      }
+
+      if (q.type === 'matching') {
+        q.items.forEach(item => {
+          total += weight;
+          if ((matchAnswers[q.id]?.[item.num] ?? '').toUpperCase() === item.answer.toUpperCase()) correct += weight;
+        });
+      }
+    });
+
+    return { part: sec.part, title: sec.title, skill: sec.skill, total, correct };
+  }).filter(s => s.total > 0);
 }
 
 // ── Audio / Video player ──────────────────────────────────────────────────────
@@ -268,11 +339,34 @@ function WriteRenderer({
   );
 }
 
-function SpeakRenderer({ q }: { q: SpeakQuestion }) {
+function SpeakRenderer({
+  q,
+  value,
+  onChange,
+}: {
+  q: SpeakQuestion;
+  value: string;
+  onChange: (v: string) => void;
+}) {
   return (
     <div className="lang-q lang-q--speak">
       <div className="lang-speak__badge">🎙️ Parte {q.partNumber}</div>
       <p className="lang-q__text">{q.text}</p>
+      {q.imageUrls && q.imageUrls.length > 0 && (
+        <div className="lang-speak__images">
+          {q.imageUrls.map((url, i) => (
+            <figure key={url} className="lang-speak__image-card">
+              <img
+                src={url}
+                alt={q.imageAlts?.[i] ?? `Speaking Part ${q.partNumber} visual ${i + 1}`}
+                className="lang-speak__image"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          ))}
+        </div>
+      )}
       {q.cueCard && (
         <div className="lang-speak__cuecard">
           <p className="lang-speak__cuelabel">Tarjeta de apoyo</p>
@@ -290,6 +384,16 @@ function SpeakRenderer({ q }: { q: SpeakQuestion }) {
       <div className="lang-speak__note">
         Practica en voz alta. El examen real se realiza con un examinador.
       </div>
+      <label className="lang-speak__notes">
+        <span className="lang-speak__notes-label">Notas de respuesta</span>
+        <textarea
+          value={value}
+          onChange={e => onChange(e.target.value)}
+          className="lang-speak__notes-area"
+          rows={5}
+          placeholder="Escribe aquí tus ideas clave, conectores o una transcripción breve de tu respuesta..."
+        />
+      </label>
     </div>
   );
 }
@@ -362,11 +466,13 @@ function SectionView({
   section,
   mcqAnswers,
   writeAnswers,
+  speakingAnswers,
   formAnswers,
   multiAnswers,
   matchAnswers,
   onMCQ,
   onWrite,
+  onSpeak,
   onForm,
   onMulti,
   onMatch,
@@ -375,11 +481,13 @@ function SectionView({
   section: MockSection;
   mcqAnswers: Record<string, number>;
   writeAnswers: Record<string, string>;
+  speakingAnswers: Record<string, string>;
   formAnswers: Record<string, Record<number, string>>;
   multiAnswers: Record<string, string[]>;
   matchAnswers: Record<string, Record<number, string>>;
   onMCQ: (id: string, i: number) => void;
   onWrite: (id: string, v: string) => void;
+  onSpeak: (id: string, v: string) => void;
   onForm: (id: string, num: number, v: string) => void;
   onMulti: (id: string, letter: string) => void;
   onMatch: (id: string, num: number, v: string) => void;
@@ -435,7 +543,14 @@ function SectionView({
             );
           }
           if (q.type === 'speak') {
-            return <SpeakRenderer key={q.id} q={q as SpeakQuestion} />;
+            return (
+              <SpeakRenderer
+                key={q.id}
+                q={q as SpeakQuestion}
+                value={speakingAnswers[q.id] ?? ''}
+                onChange={v => onSpeak(q.id, v)}
+              />
+            );
           }
           if (q.type === 'formgroup') {
             return (
@@ -476,41 +591,47 @@ function SectionView({
 
 // ── Results ───────────────────────────────────────────────────────────────────
 
-function ResultsView({ mock, exam, mcqAnswers, writeAnswers, onRetry }: {
+function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, formAnswers, multiAnswers, matchAnswers, onRetry }: {
   mock: MockExam;
   exam: Exam;
   mcqAnswers: Record<string, number>;
   writeAnswers: Record<string, string>;
+  speakingAnswers: Record<string, string>;
+  formAnswers: Record<string, Record<number, string>>;
+  multiAnswers: Record<string, string[]>;
+  matchAnswers: Record<string, Record<number, string>>;
   onRetry: () => void;
 }) {
-  const mcqSections = mock.sections.map(sec => {
-    const qs = sec.questions.filter(q => q.type === 'mcq' || q.type === 'dialog') as MCQQuestion[];
-    const correct = qs.filter(q => mcqAnswers[q.id] === q.answer).length;
-    return { part: sec.part, title: sec.title, skill: sec.skill, total: qs.length, correct };
-  }).filter(s => s.total > 0);
+  const objectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
 
-  const totalCorrect = mcqSections.reduce((a, s) => a + s.correct, 0);
-  const totalQ = mcqSections.reduce((a, s) => a + s.total, 0);
+  const totalCorrect = objectiveSections.reduce((a, s) => a + s.correct, 0);
+  const totalQ = objectiveSections.reduce((a, s) => a + s.total, 0);
   const score = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
 
   // Collect all write questions across all sections
   const writeQuestions = mock.sections.flatMap(sec =>
     sec.questions.filter(q => q.type === 'write') as WriteQuestion[]
   );
+  const speakQuestions = mock.sections.flatMap(sec =>
+    sec.questions.filter(q => q.type === 'speak') as SpeakQuestion[]
+  );
   const writtenResponses = writeQuestions.filter(q => writeAnswers[q.id]?.trim());
+  const speakingNotes = speakQuestions.filter(q => speakingAnswers[q.id]?.trim());
+  const objectiveUnit = mock.examSlug === 'cambridge-b2' ? 'puntos objetivos' : 'correctas';
+  const hasReviewResponses = writtenResponses.length > 0 || speakingNotes.length > 0;
 
   return (
     <div className="prac-results">
       <div className="prac-results__hero" style={{ '--exam-color': exam.color } as React.CSSProperties}>
-        <p className="prac-results__label">Resultado — preguntas objetivas</p>
+        <p className="prac-results__label">Resultado - preguntas objetivas</p>
         <div className="prac-results__score">{score}</div>
         <p className="prac-results__score-sub">sobre 100</p>
-        <p className="prac-results__fraction">{totalCorrect} / {totalQ} correctas</p>
+        <p className="prac-results__fraction">{totalCorrect} / {totalQ} {objectiveUnit}</p>
       </div>
 
-      {mcqSections.length > 0 && (
+      {objectiveSections.length > 0 && (
         <div className="prac-results__sections">
-          {mcqSections.map(s => {
+          {objectiveSections.map(s => {
             const pct = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
             return (
               <div key={s.part} className="prac-results__sec">
@@ -529,22 +650,22 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, onRetry }: {
 
       {/* Writing responses — shown to student for self-review */}
       {writtenResponses.length > 0 && (
-        <div style={{ margin: '1.5rem 0' }}>
-          <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem' }}>
+        <div className="prac-results__responses">
+          <h3 className="prac-results__responses-title">
             ✍️ Tus respuestas escritas
           </h3>
-          <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem' }}>
+          <p className="prac-results__responses-copy">
             Estas respuestas han sido enviadas a tu profesor para corrección. Recibirás feedback personalizado.
           </p>
           {writtenResponses.map(q => (
-            <div key={q.id} style={{ marginBottom: '1.25rem', background: '#f8f9fa', borderRadius: 10, padding: '1rem', border: '1px solid #e5e7eb' }}>
-              <p style={{ margin: '0 0 0.5rem', fontSize: '0.8rem', fontWeight: 700, color: '#555', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            <div key={q.id} className="prac-results__response-card">
+              <p className="prac-results__response-label">
                 {q.stimulusLabel ?? `Tarea ${q.taskNumber ?? ''}`}
               </p>
-              <div style={{ fontSize: '0.9rem', color: '#222', whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
+              <div className="prac-results__response-text">
                 {writeAnswers[q.id]}
               </div>
-              <p style={{ margin: '0.5rem 0 0', fontSize: '0.78rem', color: '#888' }}>
+              <p className="prac-results__response-meta">
                 {writeAnswers[q.id].trim().split(/\s+/).length} palabras
               </p>
             </div>
@@ -552,9 +673,32 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, onRetry }: {
         </div>
       )}
 
-      <div className="prac-results__note" style={{ padding: '1rem', background: '#fff7ed', borderRadius: 8, margin: '1rem 0', border: '1px solid #fed7aa' }}>
-        <p style={{ margin: 0, color: '#9a3412', fontSize: '0.88rem', fontWeight: 600 }}>
-          📬 Tus respuestas escritas y de expresión oral han sido enviadas a tu profesor para revisión. Pronto recibirás feedback.
+      {speakingNotes.length > 0 && (
+        <div className="prac-results__responses">
+          <h3 className="prac-results__responses-title">
+            🎙️ Tus notas de Speaking
+          </h3>
+          <p className="prac-results__responses-copy">
+            Estas notas acompañan tu práctica oral para que el profesor pueda revisar ideas, estructura y vocabulario.
+          </p>
+          {speakingNotes.map(q => (
+            <div key={q.id} className="prac-results__response-card">
+              <p className="prac-results__response-label">
+                Speaking Part {q.partNumber}
+              </p>
+              <div className="prac-results__response-text">
+                {speakingAnswers[q.id]}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div className="prac-results__note">
+        <p>
+          {hasReviewResponses
+            ? '📬 Tus respuestas escritas y notas de Speaking han sido enviadas para revisión. Pronto recibirás feedback.'
+            : '📬 No agregaste respuestas escritas ni notas de Speaking para revisión. Puedes intentarlo de nuevo cuando quieras practicar el envío.'}
         </p>
       </div>
 
@@ -575,6 +719,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   const [sectionIdx, setSectionIdx] = useState(0);
   const [mcqAnswers, setMcqAnswers] = useState<Record<string, number>>({});
   const [writeAnswers, setWriteAnswers] = useState<Record<string, string>>({});
+  const [speakingAnswers, setSpeakingAnswers] = useState<Record<string, string>>({});
   const [formAnswers, setFormAnswers] = useState<Record<string, Record<number, string>>>({});
   const [multiAnswers, setMultiAnswers] = useState<Record<string, string[]>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<string, Record<number, string>>>({});
@@ -588,6 +733,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
 
   const handleWrite = useCallback((id: string, v: string) => {
     setWriteAnswers(prev => ({ ...prev, [id]: v }));
+  }, []);
+
+  const handleSpeak = useCallback((id: string, v: string) => {
+    setSpeakingAnswers(prev => ({ ...prev, [id]: v }));
   }, []);
 
   const handleForm = useCallback((id: string, num: number, v: string) => {
@@ -608,6 +757,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   const handleRetry = useCallback(() => {
     setMcqAnswers({});
     setWriteAnswers({});
+    setSpeakingAnswers({});
     setFormAnswers({});
     setMultiAnswers({});
     setMatchAnswers({});
@@ -619,14 +769,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   useEffect(() => {
     if (phase !== 'results') return;
 
-    const mcqSections = mock.sections.map(sec => {
-      const qs = sec.questions.filter(q => q.type === 'mcq' || q.type === 'dialog') as MCQQuestion[];
-      const correct = qs.filter(q => mcqAnswers[q.id] === q.answer).length;
-      return { title: sec.title, skill: sec.skill ?? '', correct, total: qs.length };
-    }).filter(s => s.total > 0);
+    const objectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
 
-    const totalCorrect = mcqSections.reduce((a, s) => a + s.correct, 0);
-    const totalQ = mcqSections.reduce((a, s) => a + s.total, 0);
+    const totalCorrect = objectiveSections.reduce((a, s) => a + s.correct, 0);
+    const totalQ = objectiveSections.reduce((a, s) => a + s.total, 0);
     const score = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
 
     // Collect write answers keyed by task label
@@ -634,7 +780,12 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
       sec.questions.filter(q => q.type === 'write') as WriteQuestion[]
     );
     const task1 = writeQuestions.find(q => q.taskNumber === 1);
-    const task2 = writeQuestions.find(q => q.taskNumber === 2);
+    const task2 =
+      writeQuestions.find(q => q.taskNumber === 2 && writeAnswers[q.id]?.trim()) ??
+      writeQuestions.find(q => q.taskNumber === 2);
+    const savedSpeakingAnswers = Object.fromEntries(
+      Object.entries(speakingAnswers).filter(([, value]) => value.trim())
+    );
 
     saveExamResult(
       {
@@ -644,9 +795,9 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
         totalScore: score,
         totalMax: 100,
         totalLabel: `${totalCorrect}/${totalQ} preguntas objetivas correctas`,
-        skills: mcqSections.map(s => ({
+        skills: objectiveSections.map(s => ({
           name: s.title,
-          skill: s.skill,
+          skill: s.skill ?? '',
           score: s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0,
           max: 100,
           label: `${s.correct}/${s.total}`,
@@ -655,6 +806,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
       {
         writing_task1_answer: task1 ? (writeAnswers[task1.id] ?? undefined) : undefined,
         writing_task2_answer: task2 ? (writeAnswers[task2.id] ?? undefined) : undefined,
+        speaking_answers: Object.keys(savedSpeakingAnswers).length > 0 ? savedSpeakingAnswers : undefined,
       }
     ).catch(() => {/* silent — don't block UI */});
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -663,7 +815,17 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   if (phase === 'results') {
     return (
       <div className="prac-shell">
-        <ResultsView mock={mock} exam={exam} mcqAnswers={mcqAnswers} writeAnswers={writeAnswers} onRetry={handleRetry} />
+        <ResultsView
+          mock={mock}
+          exam={exam}
+          mcqAnswers={mcqAnswers}
+          writeAnswers={writeAnswers}
+          speakingAnswers={speakingAnswers}
+          formAnswers={formAnswers}
+          multiAnswers={multiAnswers}
+          matchAnswers={matchAnswers}
+          onRetry={handleRetry}
+        />
       </div>
     );
   }
@@ -711,7 +873,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
       <div className="lang-section-tabs">
         {mock.sections.map((s, i) => {
           // Build a compact unique label: abbreviate skill group + part number
-          const base = s.title.split('–')[0].trim();
+          const base = s.title.split(/\s+[–-]\s+/)[0].trim();
           const partMatch = s.title.match(/Part\s+(\d+)/i);
           const partSuffix = partMatch ? ` P${partMatch[1]}` : '';
           const shortBase = base
@@ -743,11 +905,13 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
         section={currentSection}
         mcqAnswers={mcqAnswers}
         writeAnswers={writeAnswers}
+        speakingAnswers={speakingAnswers}
         formAnswers={formAnswers}
         multiAnswers={multiAnswers}
         matchAnswers={matchAnswers}
         onMCQ={handleMCQ}
         onWrite={handleWrite}
+        onSpeak={handleSpeak}
         onForm={handleForm}
         onMulti={handleMulti}
         onMatch={handleMatch}

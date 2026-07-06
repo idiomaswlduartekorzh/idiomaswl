@@ -51,10 +51,12 @@ export interface SpeakQuestion {
   type: 'speak';
   id: string;
   part: number;
-  partNumber: 1 | 2 | 3;
+  partNumber: 1 | 2 | 3 | 4;
   text: string;
   cueCard?: string;
   followUp?: string[];
+  imageUrls?: string[];
+  imageAlts?: string[];
 }
 
 // ── New group question types ───────────────────────────────────────────────────

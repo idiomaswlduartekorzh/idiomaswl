@@ -938,6 +938,168 @@ input.blank-field:focus,
 .rail-meter span { display: block; height: 100%; border-radius: inherit; background: var(--topic-color); transition: width 0.2s; }
 .rail-card .grammar-table { margin-top: 0; font-size: 0.72rem; }
 
+/* ── Grammar Quest embedded practice ───────────────────────────────────────── */
+.grammar-quest {
+  margin: 0 0 2.35rem;
+}
+.quest-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.quest-stat-card {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 0.8rem 0.9rem;
+}
+.quest-stat-card span {
+  display: block;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.quest-stat-card strong {
+  display: block;
+  margin-top: 0.22rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 950;
+}
+.quest-guide-card {
+  border: 1.5px solid color-mix(in srgb, var(--topic-color) 24%, var(--line-soft));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--topic-color) 7%, var(--surface));
+  padding: 0.95rem 1rem;
+  margin-bottom: 1rem;
+}
+.quest-guide-card ul {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+.quest-guide-card li {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.quest-best-score {
+  color: var(--topic-color) !important;
+  font-weight: 900 !important;
+}
+.quest-complete-banner {
+  display: grid;
+  gap: 0.2rem;
+  border: 1.5px solid color-mix(in srgb, var(--good) 35%, var(--line-soft));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--good) 8%, var(--surface));
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+}
+.quest-complete-banner strong {
+  color: var(--good);
+  font-weight: 950;
+}
+.quest-complete-banner span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.quest-options {
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+}
+.quest-prompt-card {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 1rem;
+}
+.quest-prompt-card span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.quest-prompt-card p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.04rem;
+  line-height: 1.6;
+  font-weight: 760;
+}
+.quest-input-zone {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.7rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.quest-zero-btn.is-selected {
+  border-color: var(--topic-color);
+  background: color-mix(in srgb, var(--topic-color) 10%, var(--surface));
+  color: var(--topic-color);
+}
+.quest-sprint-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.quest-sprint-stat {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 0.8rem;
+  text-align: center;
+}
+.quest-sprint-stat b {
+  display: block;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 1.45rem;
+  line-height: 1;
+  font-weight: 950;
+}
+.quest-sprint-stat span {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 850;
+}
+.quest-result-title {
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+}
+.quest-xp-note {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--topic-color) 32%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--topic-color) 9%, transparent);
+  color: var(--topic-color);
+  padding: 0.25rem 0.65rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+  margin: 0 0 0.15rem;
+}
+.quest-reset-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
 /* ── Topic navigation (prev/next) ───────────────────────────────────────────── */
 .topic-nav {
   display: grid;
@@ -1004,7 +1166,7 @@ input.blank-field:focus,
 }
 @media (max-width: 720px) {
   .topic-hero { padding-top: 2.2rem; }
-  .level-strip, .options, .result-box, .review-answer-grid, .topic-nav { grid-template-columns: 1fr; }
+  .level-strip, .options, .result-box, .review-answer-grid, .topic-nav, .quest-stat-row, .quest-input-zone, .quest-sprint-board { grid-template-columns: 1fr; }
   .dialogue-line { grid-template-columns: 1fr; gap: 0.25rem; }
   .question-topline { align-items: flex-start; flex-direction: column; }
   .mini-progress { width: 100%; max-width: none; }

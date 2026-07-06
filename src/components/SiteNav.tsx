@@ -10,6 +10,7 @@ import { useTheme } from '@/components/ThemeProvider';
 
 const NAV_LINKS = [
   { label: 'Home',      href: '/home' },
+  { label: 'Nivel Radar', href: '/nivel-radar' },
   { label: 'Inglés',    href: '/clases-de-ingles' },
   { label: 'Coreano',   href: '/clases-de-coreano' },
   { label: 'Idiomas',   href: '/clases-de-idiomas' },
@@ -122,6 +123,8 @@ export default function SiteNav() {
           {NAV_LINKS.map(({ label, href }) => {
             const active = href.startsWith('/examenes')
               ? pathname.startsWith('/examenes')
+              : href === '/nivel-radar'
+              ? pathname.startsWith('/nivel-radar')
               : href === '/practica'
               ? pathname.startsWith('/practica') || pathname.startsWith('/aprende-coreano')
               : href === '/clases-de-ingles'
