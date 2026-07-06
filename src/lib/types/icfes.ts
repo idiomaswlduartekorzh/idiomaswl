@@ -21,6 +21,15 @@ export interface DiagnosticAnswer {
   time_spent_seconds: number
 }
 
+/** Computed scoring of a diagnostic attempt (server-authored, client-rendered). */
+export interface DiagnosticResults {
+  overall_level: number
+  skill_levels: Record<string, number>
+  top_weaknesses: string[]
+  top_strengths: string[]
+  recommendations: string[]
+}
+
 export type IcfesSkill =
   | 'vocabulary_basic'
   | 'vocabulary_context'

@@ -125,13 +125,30 @@ export function IcfesStudentFlow({ userId, userName }: IcfesStudentFlowProps) {
     )
   }
 
-  if (state.status === 'diagnostic' && diagnosticQuestions.length > 0) {
+  if (state.status === 'diagnostic') {
+    if (diagnosticQuestions.length > 0) {
+      return (
+        <DiagnosticTest
+          userId={userId}
+          questions={diagnosticQuestions}
+          onComplete={handleDiagnosticComplete}
+        />
+      )
+    }
+    // Questions still loading (or failed to load) — never leave the student
+    // on a blank screen after onboarding.
     return (
-      <DiagnosticTest
-        userId={userId}
-        questions={diagnosticQuestions}
-        onComplete={handleDiagnosticComplete}
-      />
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-950 dark:to-slate-900">
+        <div className="text-center px-6">
+          <div className="mb-4 text-6xl">📝</div>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+            Preparando tu diagnóstico…
+          </h1>
+          <p className="mt-2 text-gray-600 dark:text-gray-400">
+            Si esta pantalla no avanza, recarga la página.
+          </p>
+        </div>
+      </div>
     )
   }
 

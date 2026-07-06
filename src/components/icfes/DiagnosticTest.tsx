@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { saveDiagnosticAnswers } from '@/lib/actions/icfes'
 import { toast } from 'sonner'
+import type { DiagnosticResults } from '@/lib/types/icfes'
+import { SKILL_LABELS } from '@/data/icfes-skills'
 
 interface DiagnosticTestProps {
   userId: string
@@ -23,25 +25,6 @@ interface DiagnosticQuestion {
   option_d: string
   correct_answer: string
   explanation_es: string
-}
-
-interface DiagnosticResults {
-  overall_level: number
-  skill_levels: Record<string, number>
-  top_weaknesses: string[]
-  recommendations: string[]
-}
-
-const SKILL_LABELS: Record<string, string> = {
-  vocabulary_basic: 'Vocabulario Básico',
-  vocabulary_context: 'Vocabulario en Contexto',
-  grammar_recognition: 'Gramática',
-  connectors: 'Conectores',
-  reference_words: 'Referencias',
-  main_idea: 'Idea Principal',
-  detail: 'Detalles',
-  inference: 'Inferencia',
-  paraphrase: 'Paráfrasis',
 }
 
 export function DiagnosticTest({
@@ -92,65 +75,28 @@ export function DiagnosticTest({
   const handleComplete = async () => {
     setLoading(true)
     try {
-      // Prepare answers for saving
-      const answersToSave = questions.map((q) => ({
+      // Answers are stored keyed by array index (see handleSelectAnswer), so
+      // read them back by index too — question_number may not equal index + 1.
+      const answersToSave = questions.map((q, i) => ({
         question_number: q.question_number,
         question_id: q.id,
-        student_answer: answers[q.question_number - 1] || '',
+        student_answer: answers[i] || '',
         correct_answer: q.correct_answer,
-        is_correct: answers[q.question_number - 1] === q.correct_answer,
+        is_correct: answers[i] === q.correct_answer,
         skill: q.skill,
         time_spent_seconds: Math.round(timeSpent / questions.length),
       }))
 
-      const result = await saveDiagnosticAnswers(userId, answersToSave)
+      // The server scores and persists; we render exactly what it returns so
+      // the displayed result can never disagree with the stored one.
+      const result = await saveDiagnosticAnswers(userId, answersToSave, timeSpent)
 
-      if (result.success) {
-        // Calculate results for display
-        const correct = Object.values(answers).filter(
-          (ans, idx) => ans === questions[idx].correct_answer
-        ).length
-
-        const skillLevels: Record<string, number> = {}
-        const skillCounts: Record<string, number> = {}
-
-        questions.forEach((q, idx) => {
-          if (!skillCounts[q.skill]) skillCounts[q.skill] = 0
-          if (!skillLevels[q.skill]) skillLevels[q.skill] = 0
-
-          skillCounts[q.skill]++
-          if (answers[idx] === q.correct_answer) {
-            skillLevels[q.skill]++
-          }
-        })
-
-        const skillPercentages: Record<string, number> = {}
-        for (const skill in skillLevels) {
-          skillPercentages[skill] = Math.round(
-            (skillLevels[skill] / skillCounts[skill]) * 100
-          )
-        }
-
-        const weaknesses = Object.entries(skillPercentages)
-          .filter(([_, level]) => level < 65)
-          .map(([skill]) => skill)
-          .sort((a, b) => skillPercentages[a] - skillPercentages[b])
-          .slice(0, 3)
-
-        const overallLevel = Math.round((correct / questions.length) * 100)
-
-        const results: DiagnosticResults = {
-          overall_level: overallLevel,
-          skill_levels: skillPercentages,
-          top_weaknesses: weaknesses,
-          recommendations: [],
-        }
-
+      if (result.success && result.results) {
         setCompleted(true)
-        onComplete(results)
+        onComplete(result.results)
         toast.success('¡Diagnóstico completado!')
       } else {
-        toast.error('Error guardando resultados')
+        toast.error(result.error ? `Error: ${result.error}` : 'Error guardando resultados')
       }
     } catch (error) {
       toast.error('Error en el diagnóstico')

@@ -297,6 +297,54 @@ CREATE POLICY "Diagnostic questions are public"
   ON icfes_diagnostic_questions FOR SELECT
   USING (true);
 
+-- ── Write policies ──────────────────────────────────────────────────────────
+-- The server actions write with the authenticated SSR client (auth.uid() =
+-- the student), NOT the service role. Without INSERT/UPDATE policies, RLS
+-- rejects every write ("new row violates row-level security policy").
+-- Each user may only write rows scoped to their own user_id.
+
+CREATE POLICY "Users can insert own onboarding"
+  ON icfes_onboarding FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own onboarding"
+  ON icfes_onboarding FOR UPDATE
+  USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own diagnostic"
+  ON icfes_diagnostic_results FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own diagnostic"
+  ON icfes_diagnostic_results FOR UPDATE
+  USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own diagnostic answers"
+  ON icfes_diagnostic_answers FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can delete own diagnostic answers"
+  ON icfes_diagnostic_answers FOR DELETE
+  USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own learning path"
+  ON icfes_learning_path FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own learning path"
+  ON icfes_learning_path FOR UPDATE
+  USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own vocabulary progress"
+  ON icfes_vocabulary_progress FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own vocabulary progress"
+  ON icfes_vocabulary_progress FOR UPDATE
+  USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own profile summary"
+  ON icfes_student_profile_summary FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own profile summary"
+  ON icfes_student_profile_summary FOR UPDATE
+  USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
 -- ============================================================================
 -- Comments (documentation)
 -- ============================================================================

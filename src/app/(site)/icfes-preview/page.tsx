@@ -6,6 +6,7 @@
  * Uses a stub userId so the UI renders without a live Supabase session.
  */
 import { useState } from 'react'
+import { notFound } from 'next/navigation'
 import { OnboardingFlow } from '@/components/icfes/OnboardingFlow'
 import { DiagnosticTest } from '@/components/icfes/DiagnosticTest'
 
@@ -44,6 +45,9 @@ const DEMO_QUESTIONS = [
 
 export default function IcfesPreviewPage() {
   const [view, setView] = useState<'onboarding' | 'diagnostic'>('onboarding')
+
+  // Dev-only harness — never expose on the public production site.
+  if (process.env.NODE_ENV === 'production') notFound()
 
   return (
     <div>
