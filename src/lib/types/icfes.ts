@@ -1,5 +1,47 @@
 export type IcfesBand = 'A-' | 'A' | 'A+' | 'B' | 'B+'
 
+// ── Vocabulary + spaced repetition ──────────────────────────────────────────
+
+/** A vocabulary word. Static content (src/data/icfes-vocabulary.ts). */
+export interface VocabularyWord {
+  /** Stable id, e.g. "voc-001", recorded in progress rows. */
+  id: string
+  word: string
+  /** Part of speech. */
+  pos: 'verb' | 'noun' | 'adjective' | 'adverb' | 'connector' | 'phrase'
+  /** Spanish translation. */
+  es: string
+  /** Example sentence in English. */
+  example_en: string
+  skill: IcfesSkill
+  difficulty: 1 | 2 | 3 | 4 | 5
+}
+
+/** SRS lifecycle status of a word for one student. */
+export type VocabStatus = 'new' | 'learning' | 'review' | 'mastered'
+
+/** How the student self-graded a flashcard. */
+export type ReviewGrade = 'again' | 'good' | 'easy'
+
+/** Persisted spaced-repetition state for one (student, word). */
+export interface VocabProgress {
+  word_key: string
+  status: VocabStatus
+  /** Leitner box 0..5; higher = longer interval. */
+  box: number
+  review_count: number
+  total_attempts: number
+  correct_attempts: number
+  /** ISO timestamp the card is next due, or null if never scheduled. */
+  next_review_at: string | null
+}
+
+/** A word plus the student's progress on it, ready to drill. */
+export interface VocabularyCard {
+  word: VocabularyWord
+  progress: VocabProgress
+}
+
 /** Student profile captured by the onboarding wizard. */
 export interface OnboardingProfile {
   level: 0 | 20 | 40 | 60 | 80 | 100
