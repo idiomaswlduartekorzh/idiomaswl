@@ -142,7 +142,7 @@ export async function saveDiagnosticAnswers(
       user_id: userId,
       diagnostic_result_id: resultData.id,
       question_number: answer.question_number,
-      question_id: answer.question_id,
+      question_key: answer.question_key,
       student_answer: answer.student_answer,
       correct_answer: answer.correct_answer,
       is_correct: answer.is_correct,

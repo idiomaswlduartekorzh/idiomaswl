@@ -10,10 +10,30 @@ export interface OnboardingProfile {
   recommendedPace: 'slow' | 'normal' | 'fast'
 }
 
+/** A diagnostic question. Static content — lives in version control, not the DB. */
+export interface DiagnosticQuestion {
+  /** Stable identifier (e.g. "diag-01"), recorded on each answer. */
+  id: string
+  question_number: number
+  question_text: string
+  /** Optional reading passage shown above the question. */
+  passage?: string
+  skill: IcfesSkill
+  difficulty: 1 | 2 | 3 | 4 | 5
+  option_a: string
+  option_b: string
+  option_c: string
+  option_d: string
+  /** 'A' | 'B' | 'C' | 'D' */
+  correct_answer: string
+  explanation_es: string
+}
+
 /** A single answer captured during the diagnostic test. */
 export interface DiagnosticAnswer {
   question_number: number
-  question_id: string
+  /** Stable key of the answered question (DiagnosticQuestion.id). */
+  question_key: string
   student_answer: string
   correct_answer: string
   is_correct: boolean

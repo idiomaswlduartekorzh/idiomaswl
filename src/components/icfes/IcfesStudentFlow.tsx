@@ -6,6 +6,7 @@ import { OnboardingFlow } from './OnboardingFlow'
 import { DiagnosticTest } from './DiagnosticTest'
 import { IcfesDashboardClient } from './IcfesDashboardClient'
 import type { OnboardingProfile } from '@/lib/types/icfes'
+import { ICFES_DIAGNOSTIC_QUESTIONS } from '@/data/icfes-diagnostic-questions'
 
 interface IcfesStudentFlowProps {
   userId: string
@@ -18,13 +19,24 @@ interface StudentState {
   diagnosticResults?: any
 }
 
+/** Map a persisted icfes_onboarding row into the client OnboardingProfile shape. */
+function rowToProfile(row: any): OnboardingProfile {
+  return {
+    level: row.initial_level,
+    minPerDay: row.min_per_day,
+    goal: row.goal,
+    examDate: new Date(row.exam_date),
+    weeksAvailable: row.weeks_available,
+    recommendedPace: row.recommended_pace,
+  }
+}
+
 /**
  * Main flow orchestrator for ICFES student journey
  * Manages: Onboarding → Diagnostic → Learning Dashboard
  */
 export function IcfesStudentFlow({ userId, userName }: IcfesStudentFlowProps) {
   const [state, setState] = useState<StudentState>({ status: 'loading' })
-  const [diagnosticQuestions, setDiagnosticQuestions] = useState<any[]>([])
 
   // Check student's progress
   useEffect(() => {
@@ -45,34 +57,15 @@ export function IcfesStudentFlow({ userId, userName }: IcfesStudentFlowProps) {
         // Onboarding done, diagnostic pending → show test
         setState({
           status: 'diagnostic',
-          onboardingProfile: {
-            level: onboardingResult.data.initial_level as any,
-            minPerDay: onboardingResult.data.min_per_day as any,
-            goal: onboardingResult.data.goal as any,
-            examDate: new Date(onboardingResult.data.exam_date),
-            weeksAvailable: onboardingResult.data.weeks_available,
-            recommendedPace: onboardingResult.data.recommended_pace as any,
-          },
+          onboardingProfile: rowToProfile(onboardingResult.data),
         })
-
-        // Load diagnostic questions
-        // TODO: Fetch from DB
-        const mockQuestions = generateMockDiagnosticQuestions()
-        setDiagnosticQuestions(mockQuestions)
         return
       }
 
       // Both done → show learning dashboard
       setState({
         status: 'learning',
-        onboardingProfile: {
-          level: onboardingResult.data.initial_level as any,
-          minPerDay: onboardingResult.data.min_per_day as any,
-          goal: onboardingResult.data.goal as any,
-          examDate: new Date(onboardingResult.data.exam_date),
-          weeksAvailable: onboardingResult.data.weeks_available,
-          recommendedPace: onboardingResult.data.recommended_pace as any,
-        },
+        onboardingProfile: rowToProfile(onboardingResult.data),
         diagnosticResults: diagnosticResult.data,
       })
     }
@@ -86,10 +79,6 @@ export function IcfesStudentFlow({ userId, userName }: IcfesStudentFlowProps) {
       status: 'diagnostic',
       onboardingProfile: profile,
     })
-
-    // Load diagnostic questions
-    const mockQuestions = generateMockDiagnosticQuestions()
-    setDiagnosticQuestions(mockQuestions)
   }
 
   const handleDiagnosticComplete = (results: any) => {
@@ -126,29 +115,12 @@ export function IcfesStudentFlow({ userId, userName }: IcfesStudentFlowProps) {
   }
 
   if (state.status === 'diagnostic') {
-    if (diagnosticQuestions.length > 0) {
-      return (
-        <DiagnosticTest
-          userId={userId}
-          questions={diagnosticQuestions}
-          onComplete={handleDiagnosticComplete}
-        />
-      )
-    }
-    // Questions still loading (or failed to load) — never leave the student
-    // on a blank screen after onboarding.
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-950 dark:to-slate-900">
-        <div className="text-center px-6">
-          <div className="mb-4 text-6xl">📝</div>
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            Preparando tu diagnóstico…
-          </h1>
-          <p className="mt-2 text-gray-600 dark:text-gray-400">
-            Si esta pantalla no avanza, recarga la página.
-          </p>
-        </div>
-      </div>
+      <DiagnosticTest
+        userId={userId}
+        questions={ICFES_DIAGNOSTIC_QUESTIONS}
+        onComplete={handleDiagnosticComplete}
+      />
     )
   }
 
@@ -184,57 +156,4 @@ export function IcfesStudentFlow({ userId, userName }: IcfesStudentFlowProps) {
   }
 
   return null
-}
-
-/**
- * Generate mock diagnostic questions for testing
- * TODO: Replace with DB fetch
- */
-function generateMockDiagnosticQuestions() {
-  return [
-    {
-      id: '1',
-      question_number: 1,
-      question_text: 'What does "enact" mean in this context: "The government enacted strict legislation"?',
-      skill: 'vocabulary_context',
-      difficulty: 2,
-      option_a: 'Cancel',
-      option_b: 'Approve and put into law',
-      option_c: 'Ignore',
-      option_d: 'Study',
-      correct_answer: 'B',
-      explanation_es:
-        '"Enact" significa promulgar o convertir en ley. Es un verbo común en textos legislativos.',
-    },
-    {
-      id: '2',
-      question_number: 2,
-      question_text: 'Which word can best replace "ambiguous" in: "The message was ambiguous"?',
-      skill: 'vocabulary_context',
-      difficulty: 2,
-      option_a: 'Clear',
-      option_b: 'Confusing or unclear',
-      option_c: 'Loud',
-      option_d: 'Old',
-      correct_answer: 'B',
-      explanation_es:
-        '"Ambiguous" significa que tiene más de un significado o es confuso. Es lo opuesto a "clear".',
-    },
-    {
-      id: '3',
-      question_number: 3,
-      question_text:
-        'What is the main idea of this text: "Trees help reduce carbon dioxide. They also provide oxygen and create habitats for animals."',
-      skill: 'main_idea',
-      difficulty: 2,
-      option_a: 'Animals live in trees',
-      option_b: 'Trees have many environmental benefits',
-      option_c: 'Carbon dioxide is bad',
-      option_d: 'Oxygen is important',
-      correct_answer: 'B',
-      explanation_es:
-        'La idea principal es que los árboles tienen muchos beneficios ambientales (CO2, oxígeno, hábitat).',
-    },
-    // ... Add more questions (20 total for real diagnostic)
-  ]
 }

@@ -156,36 +156,14 @@ CREATE TABLE IF NOT EXISTS icfes_vocabulary_progress (
 );
 
 -- ============================================================================
--- TABLE 6: icfes_diagnostic_questions
--- Purpose: Store the 20 diagnostic questions (pool for testing)
+-- Diagnostic questions are STATIC CONTENT, not a DB table.
+-- They live in version control at src/data/icfes-diagnostic-questions.ts so
+-- they can be edited/reviewed like code and need no seeding step. Answers
+-- record the question's stable string id in `question_key` (see below).
 -- ============================================================================
-CREATE TABLE IF NOT EXISTS icfes_diagnostic_questions (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-
-  question_number INTEGER NOT NULL, -- 1-20
-  question_text TEXT NOT NULL,
-  skill TEXT NOT NULL, -- which skill this tests
-  difficulty INTEGER NOT NULL CHECK (difficulty BETWEEN 1 AND 5),
-
-  -- Options
-  option_a TEXT NOT NULL,
-  option_b TEXT NOT NULL,
-  option_c TEXT NOT NULL,
-  option_d TEXT NOT NULL,
-  correct_answer TEXT NOT NULL, -- A, B, C, or D
-
-  -- Explanation
-  explanation_es TEXT NOT NULL,
-  explanation_teaching TEXT, -- why students get this wrong
-
-  created_at TIMESTAMP DEFAULT NOW(),
-  active BOOLEAN DEFAULT TRUE,
-
-  UNIQUE(question_number)
-);
 
 -- ============================================================================
--- TABLE 7: icfes_diagnostic_answers
+-- TABLE 6: icfes_diagnostic_answers
 -- Purpose: Track student's diagnostic test answers
 -- ============================================================================
 CREATE TABLE IF NOT EXISTS icfes_diagnostic_answers (
@@ -194,7 +172,7 @@ CREATE TABLE IF NOT EXISTS icfes_diagnostic_answers (
   diagnostic_result_id UUID NOT NULL REFERENCES icfes_diagnostic_results(id) ON DELETE CASCADE,
 
   question_number INTEGER NOT NULL,
-  question_id UUID REFERENCES icfes_diagnostic_questions(id),
+  question_key TEXT NOT NULL, -- stable id from the static question set (e.g. 'diag-01')
 
   -- Student's answer
   student_answer TEXT NOT NULL,
@@ -292,11 +270,6 @@ CREATE POLICY "Vocabulary catalog is public"
   ON icfes_vocabulary_catalog FOR SELECT
   USING (true);
 
--- Diagnostic questions are public (read-only)
-CREATE POLICY "Diagnostic questions are public"
-  ON icfes_diagnostic_questions FOR SELECT
-  USING (true);
-
 -- ── Write policies ──────────────────────────────────────────────────────────
 -- The server actions write with the authenticated SSR client (auth.uid() =
 -- the student), NOT the service role. Without INSERT/UPDATE policies, RLS
@@ -360,7 +333,7 @@ COMMENT ON TABLE icfes_vocabulary_progress IS 'Spaced Repetition tracking per st
 /*
 PENDING:
 - Seed icfes_vocabulary_catalog with 300 words (data task)
-- Seed icfes_diagnostic_questions with 20 questions (content task)
+- Diagnostic questions are static content (src/data/icfes-diagnostic-questions.ts) — no seeding needed
 - Create admin endpoints for managing these
 - Implement spaced repetition algorithm (next sprint)
 - Implement adaptive path algorithm (next sprint)

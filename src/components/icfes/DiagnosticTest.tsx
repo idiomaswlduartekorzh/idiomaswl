@@ -4,27 +4,13 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { saveDiagnosticAnswers } from '@/lib/actions/icfes'
 import { toast } from 'sonner'
-import type { DiagnosticResults } from '@/lib/types/icfes'
+import type { DiagnosticResults, DiagnosticQuestion } from '@/lib/types/icfes'
 import { SKILL_LABELS } from '@/data/icfes-skills'
 
 interface DiagnosticTestProps {
   userId: string
   questions: DiagnosticQuestion[]
   onComplete: (results: DiagnosticResults) => void
-}
-
-interface DiagnosticQuestion {
-  id: string
-  question_number: number
-  question_text: string
-  skill: string
-  difficulty: 1 | 2 | 3 | 4 | 5
-  option_a: string
-  option_b: string
-  option_c: string
-  option_d: string
-  correct_answer: string
-  explanation_es: string
 }
 
 export function DiagnosticTest({
@@ -79,7 +65,7 @@ export function DiagnosticTest({
       // read them back by index too — question_number may not equal index + 1.
       const answersToSave = questions.map((q, i) => ({
         question_number: q.question_number,
-        question_id: q.id,
+        question_key: q.id,
         student_answer: answers[i] || '',
         correct_answer: q.correct_answer,
         is_correct: answers[i] === q.correct_answer,
@@ -160,6 +146,13 @@ export function DiagnosticTest({
               {SKILL_LABELS[question.skill] || question.skill}
             </span>
           </div>
+
+          {/* Reading passage (comprehension items) */}
+          {question.passage && (
+            <p className="mb-6 rounded-lg border-l-4 border-blue-400 bg-blue-50 dark:bg-blue-900/20 p-4 text-base leading-relaxed text-gray-800 dark:text-gray-200">
+              {question.passage}
+            </p>
+          )}
 
           {/* Question text */}
           <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-8">

@@ -9,39 +9,7 @@ import { useState } from 'react'
 import { notFound } from 'next/navigation'
 import { OnboardingFlow } from '@/components/icfes/OnboardingFlow'
 import { DiagnosticTest } from '@/components/icfes/DiagnosticTest'
-
-const DEMO_QUESTIONS = [
-  {
-    id: '1',
-    question_number: 1,
-    question_text:
-      'What does "enact" mean in: "The government enacted strict legislation"?',
-    skill: 'vocabulary_context',
-    difficulty: 2 as const,
-    option_a: 'Cancel',
-    option_b: 'Approve and put into law',
-    option_c: 'Ignore',
-    option_d: 'Study',
-    correct_answer: 'B',
-    explanation_es:
-      '"Enact" significa promulgar o convertir en ley. Es un verbo común en textos legislativos.',
-  },
-  {
-    id: '2',
-    question_number: 2,
-    question_text:
-      'Which word can best replace "ambiguous" in: "The message was ambiguous"?',
-    skill: 'vocabulary_context',
-    difficulty: 2 as const,
-    option_a: 'Clear',
-    option_b: 'Confusing or unclear',
-    option_c: 'Loud',
-    option_d: 'Old',
-    correct_answer: 'B',
-    explanation_es:
-      '"Ambiguous" significa que tiene más de un significado o es confuso.',
-  },
-]
+import { ICFES_DIAGNOSTIC_QUESTIONS } from '@/data/icfes-diagnostic-questions'
 
 export default function IcfesPreviewPage() {
   const [view, setView] = useState<'onboarding' | 'diagnostic'>('onboarding')
@@ -76,7 +44,7 @@ export default function IcfesPreviewPage() {
       {view === 'diagnostic' && (
         <DiagnosticTest
           userId="preview-user"
-          questions={DEMO_QUESTIONS}
+          questions={ICFES_DIAGNOSTIC_QUESTIONS}
           onComplete={() => setView('onboarding')}
         />
       )}
