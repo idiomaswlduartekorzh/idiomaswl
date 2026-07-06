@@ -4,19 +4,13 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import { saveOnboarding } from '@/lib/actions/icfes'
 import { toast } from 'sonner'
+import type { OnboardingProfile } from '@/lib/types/icfes'
+
+export type { OnboardingProfile }
 
 interface OnboardingFlowProps {
   userId: string
   onComplete: (profile: OnboardingProfile) => void
-}
-
-interface OnboardingProfile {
-  level: 0 | 20 | 40 | 60 | 80 | 100
-  minPerDay: 30 | 60 | 90 | 120
-  goal: 'pass' | 'bandA' | 'bandAPlus'
-  examDate: Date
-  weeksAvailable: number
-  recommendedPace: 'slow' | 'normal' | 'fast'
 }
 
 const LEVEL_OPTIONS = [

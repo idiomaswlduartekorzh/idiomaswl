@@ -1,5 +1,26 @@
 export type IcfesBand = 'A-' | 'A' | 'A+' | 'B' | 'B+'
 
+/** Student profile captured by the onboarding wizard. */
+export interface OnboardingProfile {
+  level: 0 | 20 | 40 | 60 | 80 | 100
+  minPerDay: 30 | 60 | 90 | 120
+  goal: 'pass' | 'bandA' | 'bandAPlus'
+  examDate: Date
+  weeksAvailable: number
+  recommendedPace: 'slow' | 'normal' | 'fast'
+}
+
+/** A single answer captured during the diagnostic test. */
+export interface DiagnosticAnswer {
+  question_number: number
+  question_id: string
+  student_answer: string
+  correct_answer: string
+  is_correct: boolean
+  skill: string
+  time_spent_seconds: number
+}
+
 export type IcfesSkill =
   | 'vocabulary_basic'
   | 'vocabulary_context'

@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS icfes_vocabulary_catalog (
   -- ICFES metadata
   skill TEXT NOT NULL, -- which skill uses this word
   frequency_icfes_exams INTEGER DEFAULT 0, -- how many times appears
-  difficulty 1-5 INTEGER DEFAULT 2,
+  difficulty INTEGER DEFAULT 2 CHECK (difficulty BETWEEN 1 AND 5),
 
   -- Examples
   example_sentence_en TEXT,
@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS icfes_diagnostic_questions (
   question_number INTEGER NOT NULL, -- 1-20
   question_text TEXT NOT NULL,
   skill TEXT NOT NULL, -- which skill this tests
-  difficulty 1-5 INTEGER NOT NULL,
+  difficulty INTEGER NOT NULL CHECK (difficulty BETWEEN 1 AND 5),
 
   -- Options
   option_a TEXT NOT NULL,

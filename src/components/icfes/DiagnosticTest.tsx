@@ -231,7 +231,7 @@ export function DiagnosticTest({
               <motion.button
                 key={option.key}
                 onClick={() => handleSelectAnswer(option.key)}
-                disabled={isAnswered}
+                disabled={Boolean(isAnswered)}
                 className={`w-full p-4 rounded-lg border-2 transition-all text-left flex items-start gap-3 ${
                   isAnswered && answers[currentQuestion] === option.key
                     ? isCorrect

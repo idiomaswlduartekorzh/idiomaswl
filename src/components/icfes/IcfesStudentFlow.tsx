@@ -5,7 +5,7 @@ import { getOnboarding, getDiagnosticResults } from '@/lib/actions/icfes'
 import { OnboardingFlow } from './OnboardingFlow'
 import { DiagnosticTest } from './DiagnosticTest'
 import { IcfesDashboardClient } from './IcfesDashboardClient'
-import type { OnboardingProfile } from './OnboardingFlow'
+import type { OnboardingProfile } from '@/lib/types/icfes'
 
 interface IcfesStudentFlowProps {
   userId: string

@@ -1,7 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
-import type { OnboardingProfile } from '@/components/icfes/OnboardingFlow'
+import type { OnboardingProfile, DiagnosticAnswer } from '@/lib/types/icfes'
 
 /**
  * SPRINT 1: Onboarding
@@ -256,27 +256,4 @@ function generateRecommendations(weaknesses: string[], overallLevel: number): st
   }
 
   return recommendations
-}
-
-// ============================================================================
-// TYPES
-// ============================================================================
-
-export interface DiagnosticAnswer {
-  question_number: number
-  question_id: string
-  student_answer: string
-  correct_answer: string
-  is_correct: boolean
-  skill: string
-  time_spent_seconds: number
-}
-
-export interface OnboardingProfile {
-  level: 0 | 20 | 40 | 60 | 80 | 100
-  minPerDay: 30 | 60 | 90 | 120
-  goal: 'pass' | 'bandA' | 'bandAPlus'
-  examDate: Date
-  weeksAvailable: number
-  recommendedPace: 'slow' | 'normal' | 'fast'
 }
