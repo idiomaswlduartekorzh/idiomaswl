@@ -187,7 +187,7 @@ CREATE TABLE IF NOT EXISTS icfes_diagnostic_answers (
 );
 
 -- ============================================================================
--- TABLE 8: icfes_student_profile_summary
+-- TABLE 7: icfes_student_profile_summary
 -- Purpose: Quick access to student's current status (for dashboard)
 -- ============================================================================
 CREATE TABLE IF NOT EXISTS icfes_student_profile_summary (
@@ -232,40 +232,51 @@ CREATE INDEX IF NOT EXISTS idx_icfes_student_summary_user ON icfes_student_profi
 -- RLS (Row Level Security) Policies
 -- ============================================================================
 
--- Enable RLS on all tables
+-- Enable RLS on all tables (incl. the catalog: without RLS its "public read"
+-- policy is ignored and the table would be client-writable).
 ALTER TABLE icfes_onboarding ENABLE ROW LEVEL SECURITY;
 ALTER TABLE icfes_diagnostic_results ENABLE ROW LEVEL SECURITY;
 ALTER TABLE icfes_learning_path ENABLE ROW LEVEL SECURITY;
+ALTER TABLE icfes_vocabulary_catalog ENABLE ROW LEVEL SECURITY;
 ALTER TABLE icfes_vocabulary_progress ENABLE ROW LEVEL SECURITY;
 ALTER TABLE icfes_diagnostic_answers ENABLE ROW LEVEL SECURITY;
 ALTER TABLE icfes_student_profile_summary ENABLE ROW LEVEL SECURITY;
 
--- Students can only see their own data
+-- Students can only see their own data.
+-- DROP-before-CREATE makes this script safe to re-run (CREATE POLICY has no
+-- IF NOT EXISTS).
+DROP POLICY IF EXISTS "Users can view own onboarding" ON icfes_onboarding;
 CREATE POLICY "Users can view own onboarding"
   ON icfes_onboarding FOR SELECT
   USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can view own diagnostic" ON icfes_diagnostic_results;
 CREATE POLICY "Users can view own diagnostic"
   ON icfes_diagnostic_results FOR SELECT
   USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can view own learning path" ON icfes_learning_path;
 CREATE POLICY "Users can view own learning path"
   ON icfes_learning_path FOR SELECT
   USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can view own vocabulary progress" ON icfes_vocabulary_progress;
 CREATE POLICY "Users can view own vocabulary progress"
   ON icfes_vocabulary_progress FOR SELECT
   USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can view own diagnostic answers" ON icfes_diagnostic_answers;
 CREATE POLICY "Users can view own diagnostic answers"
   ON icfes_diagnostic_answers FOR SELECT
   USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can view own profile summary" ON icfes_student_profile_summary;
 CREATE POLICY "Users can view own profile summary"
   ON icfes_student_profile_summary FOR SELECT
   USING (auth.uid() = user_id);
 
--- Vocabulary catalog is public (read-only)
+-- Vocabulary catalog is public (read-only for clients; writes via service role).
+DROP POLICY IF EXISTS "Vocabulary catalog is public" ON icfes_vocabulary_catalog;
 CREATE POLICY "Vocabulary catalog is public"
   ON icfes_vocabulary_catalog FOR SELECT
   USING (true);
@@ -276,44 +287,56 @@ CREATE POLICY "Vocabulary catalog is public"
 -- rejects every write ("new row violates row-level security policy").
 -- Each user may only write rows scoped to their own user_id.
 
+DROP POLICY IF EXISTS "Users can insert own onboarding" ON icfes_onboarding;
 CREATE POLICY "Users can insert own onboarding"
   ON icfes_onboarding FOR INSERT
   WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "Users can update own onboarding" ON icfes_onboarding;
 CREATE POLICY "Users can update own onboarding"
   ON icfes_onboarding FOR UPDATE
   USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can insert own diagnostic" ON icfes_diagnostic_results;
 CREATE POLICY "Users can insert own diagnostic"
   ON icfes_diagnostic_results FOR INSERT
   WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "Users can update own diagnostic" ON icfes_diagnostic_results;
 CREATE POLICY "Users can update own diagnostic"
   ON icfes_diagnostic_results FOR UPDATE
   USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can insert own diagnostic answers" ON icfes_diagnostic_answers;
 CREATE POLICY "Users can insert own diagnostic answers"
   ON icfes_diagnostic_answers FOR INSERT
   WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "Users can delete own diagnostic answers" ON icfes_diagnostic_answers;
 CREATE POLICY "Users can delete own diagnostic answers"
   ON icfes_diagnostic_answers FOR DELETE
   USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can insert own learning path" ON icfes_learning_path;
 CREATE POLICY "Users can insert own learning path"
   ON icfes_learning_path FOR INSERT
   WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "Users can update own learning path" ON icfes_learning_path;
 CREATE POLICY "Users can update own learning path"
   ON icfes_learning_path FOR UPDATE
   USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can insert own vocabulary progress" ON icfes_vocabulary_progress;
 CREATE POLICY "Users can insert own vocabulary progress"
   ON icfes_vocabulary_progress FOR INSERT
   WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "Users can update own vocabulary progress" ON icfes_vocabulary_progress;
 CREATE POLICY "Users can update own vocabulary progress"
   ON icfes_vocabulary_progress FOR UPDATE
   USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can insert own profile summary" ON icfes_student_profile_summary;
 CREATE POLICY "Users can insert own profile summary"
   ON icfes_student_profile_summary FOR INSERT
   WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS "Users can update own profile summary" ON icfes_student_profile_summary;
 CREATE POLICY "Users can update own profile summary"
   ON icfes_student_profile_summary FOR UPDATE
   USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
