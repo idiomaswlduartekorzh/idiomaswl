@@ -1,5 +1,6 @@
 import type { GrammarTopic } from './types'
 import inglesA1 from './ingles/a1'
+import inglesA2 from './ingles/a2'
 import francesA1 from './frances/a1'
 import alemanA1 from './aleman/a1'
 import coreanoA1 from './coreano/a1'
@@ -9,7 +10,7 @@ import japonesA1 from './japones/a1'
 import rusoA1 from './ruso/a1'
 
 export const grammarRegistry: Record<string, Record<string, GrammarTopic[]>> = {
-  ingles: { a1: inglesA1 },
+  ingles: { a1: inglesA1, a2: inglesA2 },
   frances: { a1: francesA1 },
   aleman: { a1: alemanA1 },
   coreano: { a1: coreanoA1 },
