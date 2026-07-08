@@ -2,6 +2,47 @@
 
 ---
 
+# 🎨 WeLearn Frontend Intelligence Skill
+
+**Versión:** 1.0 Operacional  
+**Ubicación:** `.claude/skills/welearn-design/`  
+**Propósito:** Amplified craft para interfaces educativas (no automatización)
+
+## Acceso Rápido
+
+### Comandos Disponibles
+```bash
+/welearn-context      # Capturar contexto pedagógico (siempre primero)
+/welearn-design       # Generar propuesta coherente
+/welearn-audit        # Validar contra 60+ reglas
+/welearn-improve      # Sugerencias específicas
+/welearn-pedagogy     # Validar que enseña
+/welearn-a11y         # WCAG 2.1 AA/AAA
+/welearn-page-audit   # Auditoría integral
+/welearn-review       # Checklist pre-merge
+```
+
+### Documentación Clave
+- **Framework completo:** `.claude/skills/welearn-design/references/framework.md`
+- **Guía implementación:** `.claude/skills/welearn-design/references/implementation.md`
+- **Templates:** `PRODUCT.md` + `DESIGN.md` (copiar y customizar)
+- **Checklists:** Pre-design, pre-code, pre-review, pre-shipping
+
+### Principios Fundamentales
+1. **Context First** - Siempre capturar contexto pedagógico antes de diseñar
+2. **Amplified Craft** - Amplificar criterio humano, no automatizar
+3. **Determinístico** - 60+ reglas exactas, no opiniones
+4. **Pedagógicamente Integrado** - Interfaz que enseña, no solo informa
+5. **Modular** - 15 módulos independientes y reutilizables
+
+### Para Usar
+1. Leer `.claude/skills/welearn-design/index.md` (5 min)
+2. Llenar `PRODUCT.md` y `DESIGN.md` (1 hora)
+3. Ejecutar `/welearn-context` antes de cualquier diseño
+4. Seguir workflow: context → design → audit → improve → code
+
+---
+
 # Idiomas WeLearn — Memoria Técnica del Proyecto
 
 ## Quién es WeLearn
