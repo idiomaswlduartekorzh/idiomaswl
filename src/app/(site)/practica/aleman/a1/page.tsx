@@ -1,13 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
+import { LevelSchemaRenderer } from '@/components/practica/PracticeSchemaRenderer';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { levelMetadata } from '@/lib/practica-metadata';
 
-export const metadata: Metadata = {
-  title: 'Alemán A1 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Alemán A1: Lesen, Grammatik (Artikel, sein, Pronomen), Schreiben, Sprechen, Vokabular und Hören.',
-  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a1' },
-};
+export const metadata: Metadata = levelMetadata('aleman', 'a1');
 
 const COLOR = '#dd0000';
 
@@ -25,13 +23,14 @@ const COLORS: Record<string, string> = { lectura: '#dd0000', gramatica: '#7c3aed
 export default function AlemanA1Page() {
   return (
     <>
+    <LevelSchemaRenderer lang="aleman" level="a1" />
     <CourseSchema
       name="Alemán A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Alemán nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
       url="https://www.idiomaswl.com/practica/aleman/a1"
       educationalLevel="A1"
       teaches="Alemán, habilidades MCER"
-      inLanguage="al"
+      inLanguage="de"
     />
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 900 }}>
