@@ -71,6 +71,36 @@ export default function InglesPageClient() {
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          {/* Grandmother's Ledger — comprensión integrada B1-B2 */}
+          <Link href="/practica/the-grandmothers-ledger" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: '1.25rem',
+              padding: '1.2rem 1.5rem',
+              border: '1.5px solid rgba(5,150,105,0.28)',
+              borderRadius: 16,
+              background: 'linear-gradient(135deg, rgba(5,150,105,0.06) 0%, transparent 100%)',
+            }}>
+              <div style={{
+                width: 58, height: 58, borderRadius: 14, flexShrink: 0,
+                background: '#059669', color: '#fff',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem',
+              }}>🎙️</div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.55rem', marginBottom: '0.2rem', flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--ink)' }}>The Grandmother&apos;s Ledger</span>
+                  <span style={{ fontSize: '0.6rem', fontWeight: 800, background: '#059669', color: '#fff', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)' }}>B1–B2</span>
+                </div>
+                <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.5 }}>
+                  Comprensión integrada de lectura + listening. Historia de disputa familiar con 2 notas de voz y 19 preguntas.
+                </p>
+                <p style={{ margin: '0.4rem 0 0', fontSize: '0.73rem', color: '#059669', fontFamily: 'var(--mono)', fontWeight: 700 }}>
+                  1 ejercicio · 2 audios · 19 preguntas
+                </p>
+              </div>
+              <span style={{ fontSize: '1.2rem', color: '#059669', fontWeight: 700, flexShrink: 0 }}>→</span>
+            </div>
+          </Link>
+
           {NIVELES.map(n => {
             const prog = n.key ? levelData[n.key] : undefined
             const total = n.key ? (SKILL_TOTALS[n.key] ?? 0) : 0

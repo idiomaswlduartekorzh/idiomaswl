@@ -12,10 +12,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Práctica de Idiomas y Exámenes — Idiomas WeLearn',
     description: 'IELTS Writing Task 1, ICFES inglés bajo estrés y herramientas interactivas de coreano.',
-    url: 'https://idiomaswl.com/practica',
+    url: 'https://www.idiomaswl.com/practica',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/practica',
+    canonical: 'https://www.idiomaswl.com/practica',
   },
 };
 

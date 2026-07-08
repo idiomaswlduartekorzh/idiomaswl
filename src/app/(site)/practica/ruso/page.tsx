@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Práctica de Ruso — Elige tu nivel MCER | Idiomas WeLearn',
   description: 'Ejercicios interactivos de ruso por nivel MCER. A1 disponible: alfabeto cirílico, casos, pronunciación y vocabulario esencial.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ruso' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso' },
 };
 
 const COLOR = '#cc0000';
@@ -29,7 +29,7 @@ export default function RusoPage() {
     <CourseSchema
       name="Práctica de Ruso — Ejercicios interactivos MCER"
       description="Ejercicios de ruso por nivel MCER: A1 disponible. Alfabeto cirílico, vocabulario, gramática."
-      url="https://idiomaswl.com/practica/ruso"
+      url="https://www.idiomaswl.com/practica/ruso"
       educationalLevel="A1"
       teaches="Ruso, alfabeto cirílico"
       inLanguage="ru"

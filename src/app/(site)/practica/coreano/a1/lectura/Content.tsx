@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const COLOR = '#534AB7';
 
-interface ReadingText { id: number; title: string; titleRom: string; titleEs: string; topic: string; words: number; grammar: string; text: string; textRom: string; vocab: Record<string, [string, string]>; preQ: { q: string; opts: string[]; }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
+interface ReadingText { id: number; title: string; titleRom: string; titleEs: string; topic: string; words: number; grammar: string; text: string; textRom: string; vocab: Record<string, [string, string]>; goal: string; keyVocab: { w: string; t: string }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
 
 const TEXTS: ReadingText[] = [
   {
@@ -25,9 +25,14 @@ const TEXTS: ReadingText[] = [
       친구들이: ['chingudeuri', 'los amigos (들=plural + 이=sujeto)'],
       많아요: ['manayo', 'son muchos / hay muchos'],
     },
-    preQ: [
-      { q: '¿Cuántos idiomas hablas?', opts: ['Solo uno', 'Dos', 'Tres o más'] },
-      { q: '¿Cuál es tu hobby?', opts: ['Música', 'Deportes', 'Lectura', 'Viajes'] },
+    goal: 'Lee la presentación de Mina y averigua: ¿de dónde es, qué idiomas habla y qué le gusta?',
+    keyVocab: [
+      { w: '저는 (jeoneun)', t: 'yo (formal + tema)' },
+      { w: '학생이에요 (haksaeng-ieyo)', t: 'soy estudiante' },
+      { w: '사람이에요 (saram-ieyo)', t: 'soy una persona de…' },
+      { w: '살아요 (sarayo)', t: 'vivo' },
+      { w: '취미 (chwimi)', t: 'hobby / pasatiempo' },
+      { w: '좋아해요 (joahaeyo)', t: 'me gusta' },
     ],
     mcq: [
       { q: '¿Qué significa "저는 학생이에요"?', cat: 'Vocabulario', opts: ['Tengo un estudiante', 'Soy estudiante', 'El estudiante vino', 'Estudio coreano'], a: 1, fb: '"저는" = yo (tópico/tema), "학생이에요" = soy estudiante. La copula 이에요/예요 = ser.' },
@@ -56,9 +61,14 @@ const TEXTS: ReadingText[] = [
       강아지도: ['gangaji-do', 'también hay un perro (도=también)'],
       이름이: ['ireum-i', 'el nombre (이름 + partícula sujeto 이)'],
     },
-    preQ: [
-      { q: '¿Cuántos miembros tiene tu familia?', opts: ['2-3 personas', '4-5 personas', '6 o más'] },
-      { q: '¿Tienes mascota?', opts: ['Sí, un perro', 'Sí, un gato', 'Otra mascota', 'No'] },
+    goal: 'Lee el texto y averigua: ¿cuántos son en la familia, a qué se dedican y qué mascota tienen?',
+    keyVocab: [
+      { w: '가족 (gajok)', t: 'familia' },
+      { w: '명 (myeong)', t: 'contador de personas' },
+      { w: '의사 (uisa)', t: 'médico/a' },
+      { w: '선생님 (seonsaengnim)', t: 'profesor/a' },
+      { w: '살이에요 (sal-ieyo)', t: 'tiene… años' },
+      { w: '강아지 (gangaji)', t: 'perro / cachorro' },
     ],
     mcq: [
       { q: '¿Cuántos son en la familia de Mina?', cat: 'Comprensión', opts: ['3', '4', '5', '6'], a: 1, fb: '"가족이 네 명이에요" = en mi familia somos cuatro. 네 = 4 (número nativo); 명 = contador de personas.' },
@@ -88,9 +98,14 @@ const TEXTS: ReadingText[] = [
       들어요: ['deoreoyo', 'escucho (de 듣다=escuchar)'],
       자요: ['jayo', 'me duermo / duermo (de 자다=dormir)'],
     },
-    preQ: [
-      { q: '¿Cuándo eres más productivo/a?', opts: ['Mañana', 'Tarde', 'Noche', 'Cualquier hora'] },
-      { q: '¿Dónde sueles estudiar?', opts: ['En casa', 'En la biblioteca', 'En un café', 'En la universidad'] },
+    goal: 'Lee la rutina de hoy y averigua: ¿qué hace por la mañana, al mediodía y por la noche, y a qué horas?',
+    keyVocab: [
+      { w: '바빠요 (bappayo)', t: 'estoy ocupado/a' },
+      { w: '아침에 (achim-e)', t: 'por la mañana' },
+      { w: '수업 (sueop)', t: 'clase' },
+      { w: '먹어요 (meogeoyo)', t: 'como' },
+      { w: '공부해요 (gongbuhaeyo)', t: 'estudio' },
+      { w: '자요 (jayo)', t: 'duermo' },
     ],
     mcq: [
       { q: '¿A qué hora tiene clase de coreano?', cat: 'Comprensión', opts: ['아홉 시 (9h)', '열 시 (10h)', '열한 시 (11h)', '열두 시 (12h)'], a: 1, fb: '"열 시에 한국어 수업이 있어요" = A las 10 hay clase de coreano. 열 = 10 (número nativo); 시 = hora.' },
@@ -120,9 +135,14 @@ const TEXTS: ReadingText[] = [
       '한 병': ['han byeong', 'una botella (병=botella, contador)'],
       모두: ['modu', 'en total/todo'],
     },
-    preQ: [
-      { q: '¿Has ido alguna vez a un mercado coreano o asiático?', opts: ['Sí, varias veces', 'Solo una vez', 'No, pero me gustaría'] },
-      { q: '¿Sabes cómo decir los números del 100 al 1000 en coreano?', opts: ['Sí', 'Algunos', 'No aún'] },
+    goal: 'Lee el diálogo de compras y averigua: ¿qué compra, a qué precio y cuánto paga en total?',
+    keyVocab: [
+      { w: '시장 (sijang)', t: 'mercado' },
+      { w: '사요 (sayo)', t: 'compro' },
+      { w: '얼마예요? (eolmayeyo?)', t: '¿cuánto cuesta?' },
+      { w: '주세요 (juseyo)', t: 'deme, por favor' },
+      { w: '개 (gae)', t: 'unidad (contador)' },
+      { w: '모두 (modu)', t: 'en total' },
     ],
     mcq: [
       { q: '¿Qué significa "얼마예요?" (eolmayeyo?)', cat: 'Vocabulario', opts: ['¿Dónde está?', '¿Cuánto cuesta?', '¿Qué es esto?', '¿Cuántos hay?'], a: 1, fb: '"얼마예요?" = ¿cuánto cuesta? / ¿cuánto es? Imprescindible para hacer compras en Corea.' },
@@ -151,9 +171,14 @@ const TEXTS: ReadingText[] = [
       산책해요: ['sanchaek-haeyo', 'paseo/camino (산책하다=dar un paseo)'],
       주말에: ['jumal-e', 'los fines de semana (주말=fin de semana)'],
     },
-    preQ: [
-      { q: '¿Cómo es tu barrio?', opts: ['Muy animado', 'Tranquilo', 'Está en desarrollo', 'Es nuevo para mí'] },
-      { q: '¿Qué tienes cerca de tu casa?', opts: ['Tiendas y cafés', 'Parques', 'Metro/bus', 'Todo lo anterior'] },
+    goal: 'Lee la descripción del barrio y averigua: ¿qué lugares hay cerca, qué NO hay y qué hace ella los fines de semana?',
+    keyVocab: [
+      { w: '동네 (dongne)', t: 'barrio' },
+      { w: '근처에 (geuncheo-e)', t: 'cerca de' },
+      { w: '있어요 (isseoyo)', t: 'hay / está' },
+      { w: '없어요 (eopseoyo)', t: 'no hay / no está' },
+      { w: '공원 (gongwon)', t: 'parque' },
+      { w: '산책해요 (sanchaekhaeyo)', t: 'doy un paseo' },
     ],
     mcq: [
       { q: '"있어요" y "없어요" — ¿cuál es la diferencia?', cat: 'Gramática', opts: ['"있어요"=hay; "없어요"=no hay', '"있어요"=es; "없어요"=no es', '"있어요"=va; "없어요"=no va', 'Son sinónimos'], a: 0, fb: '"있어요" (isseoyo) = hay/existe/tengo; "없어요" (eopseoyo) = no hay/no existe/no tengo. Son los verbos de existencia del coreano.' },
@@ -169,7 +194,6 @@ const TEXTS: ReadingText[] = [
 
 function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
   const [phase, setPhase] = useState<'pre' | 'read' | 'questions' | 'done'>('pre');
-  const [preAnswers, setPreAnswers] = useState<Record<number, number>>({});
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [activeInfo, setActiveInfo] = useState<[string, string] | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -187,7 +211,7 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
         <button onClick={onBack} className="btn btn-ghost btn-sm">← 모든 텍스트</button>
-        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>텍스트 {t.id} / 3 — {t.titleEs}</span>
+        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>텍스트 {t.id} / 5 — {t.titleEs}</span>
         <span style={{ marginLeft: 'auto', fontSize: '0.7rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>📝 ~{t.words} 단어 · {t.grammar}</span>
       </div>
 
@@ -208,17 +232,21 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
       {phase === 'pre' && (
         <div className="wl-card" style={{ padding: '1.5rem' }}>
           <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />읽기 전에 — antes de leer</p>
-          {t.preQ.map((pq, i) => (
-            <div key={i} style={{ marginBottom: '1.25rem' }}>
-              <p style={{ margin: '0 0 0.65rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.96rem' }}>{i + 1}. {pq.q}</p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {pq.opts.map((opt, oi) => (
-                  <button key={oi} onClick={() => setPreAnswers(p => ({ ...p, [i]: oi }))}
-                    className={preAnswers[i] === oi ? 'btn btn-sm' : 'btn btn-ghost btn-sm'} style={{ fontSize: '0.84rem' }}>{opt}</button>
-                ))}
+          {/* Objetivo de lectura */}
+          <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: `${COLOR}0d`, border: `1px solid ${COLOR}2a`, marginBottom: '1.25rem' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin: 0, fontWeight: 600, color: 'var(--ink)', fontSize: '0.95rem', lineHeight: 1.55 }}>{t.goal}</p>
+          </div>
+          {/* Vocabulario clave */}
+          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.6rem' }}>📚 Vocabulario clave — apréndelo antes de leer</div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '0.5rem', marginBottom: '1.25rem' }}>
+            {t.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding: '0.6rem 0.85rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.88rem' }}>{kv.w}</div>
+                <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>{kv.t}</div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <button className="btn btn-sm" onClick={() => setPhase('read')} style={{ background: COLOR, borderColor: COLOR }}>읽기 시작 →</button>
         </div>
       )}
@@ -356,7 +384,7 @@ export default function LecturaCoreanoA1() {
         </div>
         <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />읽기 · Lectura Coreano A1</p>
         <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Lectura A1</h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 540, margin: '0 0 2rem' }}>3 textos en 한글 con romanización disponible y vocabulario interactivo. Haz clic en las palabras resaltadas para ver su romanización y significado.</p>
+        <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 540, margin: '0 0 2rem' }}>5 textos en 한글 con romanización disponible y vocabulario interactivo. Haz clic en las palabras resaltadas para ver su romanización y significado.</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
           {TEXTS.map((t, i) => (
             <button key={t.id} onClick={() => setSelected(i)} style={{ textAlign: 'left', appearance: 'none', background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'inherit', font: 'inherit' }}>

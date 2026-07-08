@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     title: 'El Método WeLearn — Ciencia + Pasión',
     description:
       'Más de 1.000 estudiantes. Más de 100 certificaciones internacionales aprobadas. Así funciona nuestra metodología.',
-    url: 'https://idiomaswl.com/metodo',
+    url: 'https://www.idiomaswl.com/metodo',
   },
-  alternates: { canonical: 'https://idiomaswl.com/metodo' },
+  alternates: { canonical: 'https://www.idiomaswl.com/metodo' },
 };
 
 const jsonLd = {
@@ -25,7 +25,7 @@ const jsonLd = {
     {
       '@type': 'EducationalOrganization',
       name: 'Idiomas WeLearn',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       description:
         'Plataforma educativa con metodología propia para aprender idiomas y obtener certificaciones internacionales.',
       founder: {
@@ -39,8 +39,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'El Método WeLearn', item: 'https://idiomaswl.com/metodo' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'El Método WeLearn', item: 'https://www.idiomaswl.com/metodo' },
       ],
     },
   ],

@@ -17,8 +17,8 @@ const HABILIDADES = [
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Explicación de especialista para hispanohablantes + práctica progresiva de 6 niveles por tema. Las correcciones aparecen al terminar cada nivel.',
-    count: 'Temas A1 · 6 niveles c/u', href: '/practica/ingles/a1/gramatica',
+    desc: 'Los 15 temas del A1: artículos, verbo to be, present simple, present continuous, can, there is/are, preposiciones y más. Cada tema con explicación, tablas, ejemplos y ejercicios.',
+    count: '15 temas · 120+ ejercicios', href: '/practica/ingles/a1/gramatica',
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',

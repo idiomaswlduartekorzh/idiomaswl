@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     title: 'Clases de Italiano Online — Preparación CILS y CELI | WeLearn',
     description:
       'Tutor especializado, preparación CILS/CELI, ciudadanía italiana y estudios en Italia. Clase diagnóstico gratis para colombianos.',
-    url: 'https://idiomaswl.com/clases-de-italiano',
+    url: 'https://www.idiomaswl.com/clases-de-italiano',
   },
-  alternates: { canonical: 'https://idiomaswl.com/clases-de-italiano' },
+  alternates: { canonical: 'https://www.idiomaswl.com/clases-de-italiano' },
 };
 
 const faqJsonLd = {
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'Course',
       name: 'Italiano con el método WeLearn',
       description: 'Aprende italiano desde cero hasta CILS/CELI C2. Preparación para ciudadanía italiana, estudios y trabajo en Italia.',
-      provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://idiomaswl.com' },
+      provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       hasCourseInstance: [{
         '@type': 'CourseInstance',
         courseMode: 'online',
@@ -97,17 +97,17 @@ const jsonLd = {
     },
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://idiomaswl.com/#localbusiness',
+      '@id': 'https://www.idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
       address: { '@type': 'PostalAddress', addressLocality: 'Bucaramanga', addressRegion: 'Santander', addressCountry: 'CO' },
     },
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de Italiano', item: 'https://idiomaswl.com/clases-de-italiano' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Italiano', item: 'https://www.idiomaswl.com/clases-de-italiano' },
       ],
     },
   ],

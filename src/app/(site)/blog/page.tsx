@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Blog de idiomas — Idiomas WeLearn',
     description: 'Guías prácticas de preparación IELTS, ICFES y coreano para hispanohablantes.',
-    url: 'https://idiomaswl.com/blog',
+    url: 'https://www.idiomaswl.com/blog',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/blog',
+    canonical: 'https://www.idiomaswl.com/blog',
   },
 };
 
@@ -28,25 +28,25 @@ const blogJsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://idiomaswl.com/blog' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.idiomaswl.com/blog' },
       ],
     },
     {
       '@type': 'Blog',
-      '@id': 'https://idiomaswl.com/blog',
-      url: 'https://idiomaswl.com/blog',
+      '@id': 'https://www.idiomaswl.com/blog',
+      url: 'https://www.idiomaswl.com/blog',
       name: 'Blog de Idiomas — Idiomas WeLearn',
       description: 'Guías prácticas de preparación IELTS, TOEFL, ICFES y aprendizaje de coreano escritas por David Duarte y el equipo pedagógico de WeLearn.',
       publisher: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       blogPost: BLOG_POSTS.map(p => ({
         '@type': 'BlogPosting',
         headline: p.title,
-        url: `https://idiomaswl.com/blog/${p.slug}`,
+        url: `https://www.idiomaswl.com/blog/${p.slug}`,
         datePublished: p.date,
         dateModified: p.updatedDate ?? p.date,
         author: { '@type': 'Person', name: 'José David Duarte Silva' },

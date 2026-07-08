@@ -8,7 +8,8 @@ const COLOR = '#009c3b';
 interface ReadingText {
   id: number; title: string; topic: string; text: string;
   vocab: Record<string, string>;
-  preQ: string[];
+  goal: string;                              // objetivo de lectura concreto
+  keyVocab: { w: string; t: string }[];      // vocabulario clave pre-enseñado
   mcq: { q: string; opts: string[]; a: number; fb: string }[];
   openQ: string; prodPrompt: string;
 }
@@ -18,7 +19,15 @@ const TEXTS: ReadingText[] = [
     id: 1, title: 'Olá, eu sou o Carlos', topic: 'Apresentação pessoal',
     text: "Olá! Meu nome é Carlos. Tenho trinta anos. Moro em São Paulo com minha esposa e meu filho. Trabalho num escritório perto de casa. Todo dia tomo café da manhã com pão e frutas. No fim de semana, gosto de ir ao parque com minha família. Adoro futebol e música brasileira.",
     vocab: { olá:'¡hola', nome:'nombre', tenho:'tengo', trinta:'treinta', moro:'vivo', esposa:'esposa', filho:'hijo', trabalho:'trabajo', escritório:'oficina', perto:'cerca', casa:'casa', manhã:'mañana', pão:'pan', frutas:'frutas', semana:'semana', gosto:'me gusta', parque:'parque', família:'familia', adoro:'adoro', futebol:'fútbol', música:'música', brasileira:'brasileña' },
-    preQ: ['¿Qué información personal crees que encontrarás en la presentación de Carlos?', '¿Qué significa "Meu nome é"? ¿Se parece a alguna expresión que conozcas?'],
+    goal: 'Lee el texto y averigua: ¿dónde vive Carlos y qué le gusta hacer los fines de semana?',
+    keyVocab: [
+      { w: 'meu nome é', t: 'mi nombre es' },
+      { w: 'tenho trinta anos', t: 'tengo treinta años' },
+      { w: 'moro em', t: 'vivo en' },
+      { w: 'trabalho', t: 'trabajo' },
+      { w: 'gosto de', t: 'me gusta' },
+      { w: 'fim de semana', t: 'fin de semana' },
+    ],
     mcq: [
       { q:'¿Qué significa "filho"?', opts:['hija','hijo','amigo','hermano'], a:1, fb:'"Filho" = hijo. "Filha" = hija.' },
       { q:'¿Qué significa "escritório"?', opts:['escuela','hospital','oficina','restaurante'], a:2, fb:'"Escritório" = oficina (lugar de trabajo).' },
@@ -32,7 +41,15 @@ const TEXTS: ReadingText[] = [
     id: 2, title: 'A família da Ana', topic: 'A família',
     text: "Meu nome é Ana. Tenho uma família grande. Meu pai se chama Roberto. Ele é professor e tem cinquenta anos. Minha mãe se chama Márcia. Ela é enfermeira. Tenho dois irmãos e uma irmã. Meu irmão mais velho se chama Lucas. Ele mora em Belo Horizonte. Minha irmã se chama Sofia. Ela tem dezessete anos.",
     vocab: { meu:'mi/meu', tenho:'tengo', pai:'padre', chama:'se llama', professor:'profesor', mãe:'madre', enfermeira:'enfermera', irmãos:'hermanos', irmã:'hermana', velho:'mayor/viejo', mora:'vive', horizonte:'horizonte', dezessete:'diecisiete' },
-    preQ: ['¿Qué palabras para miembros de la familia conoces en portugués?', '¿Cuál es la diferencia entre "irmão" e "irmã"?'],
+    goal: 'Lee el texto y averigua: ¿a qué se dedican los padres de Ana y cuántos hermanos tiene?',
+    keyVocab: [
+      { w: 'pai / mãe', t: 'padre / madre' },
+      { w: 'se chama', t: 'se llama' },
+      { w: 'professor / enfermeira', t: 'profesor / enfermera' },
+      { w: 'irmão / irmã', t: 'hermano / hermana' },
+      { w: 'mais velho', t: 'mayor' },
+      { w: 'mora em', t: 'vive en' },
+    ],
     mcq: [
       { q:'¿Qué profesión tiene el padre de Ana?', opts:['Médico','Abogado','Profesor','Ingeniero'], a:2, fb:'"Meu pai... é professor."' },
       { q:'¿Cómo se llama la madre de Ana?', opts:['Sofia','Márcia','Ana','Carla'], a:1, fb:'"Minha mãe se chama Márcia."' },
@@ -46,7 +63,15 @@ const TEXTS: ReadingText[] = [
     id: 3, title: 'O meu apartamento', topic: 'A moradia',
     text: "Moro num apartamento pequeno no centro de Recife. O apartamento tem dois quartos, uma sala, uma cozinha e um banheiro. Na sala, tem um sofá e uma televisão grande. No quarto, tem uma cama e um guarda-roupa. A cozinha é moderna. Gosto muito do meu apartamento porque fica perto do trabalho e tem uma vista bonita.",
     vocab: { apartamento:'apartamento', pequeno:'pequeño', centro:'centro', recife:'Recife', quartos:'habitaciones', sala:'sala', cozinha:'cocina', banheiro:'baño', sofá:'sofá', televisão:'televisión', quarto:'habitación', cama:'cama', guarda_roupa:'armario', moderna:'moderna', vista:'vista', bonita:'bonita' },
-    preQ: ['¿Qué habitaciones esperas encontrar en un apartamento brasileño?', '¿Qué significa "tem" en el contexto "O apartamento tem dois quartos"?'],
+    goal: 'Lee el texto y averigua: ¿cuántos cuartos tiene el apartamento y por qué le gusta al narrador?',
+    keyVocab: [
+      { w: 'apartamento', t: 'apartamento' },
+      { w: 'tem', t: 'tiene / hay' },
+      { w: 'quarto / sala / cozinha', t: 'habitación / sala / cocina' },
+      { w: 'banheiro', t: 'baño' },
+      { w: 'fica perto de', t: 'queda cerca de' },
+      { w: 'vista bonita', t: 'vista bonita' },
+    ],
     mcq: [
       { q:'¿En qué ciudad vive el narrador?', opts:['Fortaleza','Recife','Salvador','Natal'], a:1, fb:'"Moro no centro de Recife."' },
       { q:'¿Cuántos cuartos tiene el apartamento?', opts:['Uno','Dos','Tres','Cuatro'], a:1, fb:'"O apartamento tem dois quartos."' },
@@ -60,7 +85,15 @@ const TEXTS: ReadingText[] = [
     id: 4, title: 'A rotina do João', topic: 'A rotina diária',
     text: "Meu nome é João. Acordo às seis e meia. Tomo banho e me visto rapidamente. Tomo café da manhã com pão de queijo e café com leite. Às sete e meia, pego o metrô para ir ao trabalho. Trabalho das oito às cinco da tarde. Na hora do almoço, como numa lanchonete perto do escritório. À noite, volto para casa e janto com minha família.",
     vocab: { acordo:'me despierto', seis:'seis', meia:'y media', tomo:'tomo', banho:'baño/ducha', visto:'me visto', rapidamente:'rápidamente', pão_queijo:'pan de queso', leite:'leche', pego:'tomo/cojo', metrô:'metro', oito:'ocho', cinco:'cinco', tarde:'tarde', almoço:'almuerzo', como:'como', lanchonete:'cafetería/restaurante rápido', noite:'noche', volto:'vuelvo', janto:'ceno' },
-    preQ: ['¿Cuál es la primera cosa que hace João al levantarse?', '¿Conoces el "pão de queijo"? Es una especialidad brasileña. ¿Qué crees que es?'],
+    goal: 'Lee el texto y averigua: ¿a qué hora se despierta João y cómo va al trabajo?',
+    keyVocab: [
+      { w: 'acordo', t: 'me despierto' },
+      { w: 'tomo café da manhã', t: 'desayuno' },
+      { w: 'pego o metrô', t: 'tomo el metro' },
+      { w: 'trabalho das… às…', t: 'trabajo de… a…' },
+      { w: 'almoço', t: 'almuerzo' },
+      { w: 'janto', t: 'ceno' },
+    ],
     mcq: [
       { q:'¿A qué hora se despierta João?', opts:['A las seis','A las seis y media','A las siete','A las siete y media'], a:1, fb:'"Acordo às seis e meia" — a las seis y media.' },
       { q:'¿Qué toma João para desayunar?', opts:['Solo café','Pan de queso y café con leche','Cereales y jugo','Tostadas y fruta'], a:1, fb:'"Tomo café da manhã com pão de queijo e café com leite."' },
@@ -74,7 +107,15 @@ const TEXTS: ReadingText[] = [
     id: 5, title: 'No mercado', topic: 'Fazer compras',
     text: "Hoje eu vou ao mercado com minha mãe. Precisamos comprar legumes e frutas. Compro tomates, cenouras e batatas. Minha mãe compra maçãs e bananas. Os legumes estão frescos e não são muito caros. O vendedor é simpático. Ele nos dá um pouco de salsinha de graça. Pagamos vinte reais e voltamos para casa.",
     vocab: { hoje:'hoy', vou:'voy', mercado:'mercado', precisamos:'necesitamos', comprar:'comprar', legumes:'verduras', tomates:'tomates', cenouras:'zanahorias', batatas:'papas/patatas', maçãs:'manzanas', bananas:'bananas', frescos:'frescos', caros:'caros', vendedor:'vendedor', simpático:'simpático', salsinha:'perejil/perejil', graça:'gratis', pagamos:'pagamos', reais:'reales (moneda)', voltamos:'volvemos' },
-    preQ: ['¿Qué frutas y verduras conoces en portugués?', '¿Cuál es la moneda de Brasil? (pista: "reais")'],
+    goal: 'Lee el texto y averigua: ¿qué compra el narrador y cuánto pagan al final?',
+    keyVocab: [
+      { w: 'mercado', t: 'mercado' },
+      { w: 'legumes / frutas', t: 'verduras / frutas' },
+      { w: 'compro', t: 'compro' },
+      { w: 'frescos', t: 'frescos' },
+      { w: 'de graça', t: 'gratis' },
+      { w: 'pagamos / reais', t: 'pagamos / reales (moneda)' },
+    ],
     mcq: [
       { q:'¿Con quién va al mercado?', opts:['Con su padre','Con un amigo','Con su madre','Solo'], a:2, fb:'"...vou ao mercado com minha mãe."' },
       { q:'¿Qué compra el narrador?', opts:['Manzanas y bananas','Tomates, zanahorias y papas','Pan y queso','Leche y mantequilla'], a:1, fb:'"Compro tomates, cenouras e batatas."' },
@@ -97,7 +138,6 @@ type Phase = 'pre' | 'read' | 'questions' | 'done';
 
 function TextExercise({ t, onBack }: { t: ReadingText; onBack: () => void }) {
   const [phase, setPhase] = useState<Phase>('pre');
-  const [preAnswers, setPreAnswers] = useState<string[]>(['', '']);
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [revealed, setRevealed] = useState<Record<number, boolean>>({});
@@ -147,13 +187,18 @@ function TextExercise({ t, onBack }: { t: ReadingText; onBack: () => void }) {
             <div style={{ fontSize:'0.65rem', fontWeight:800, color:COLOR, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.3rem' }}>Tema · {t.topic}</div>
             <h2 style={{ margin:'0 0 0.25rem', fontWeight:700, fontSize:'1.4rem', color:'var(--ink)' }}>{t.title}</h2>
           </div>
-          <div style={{ padding:'1rem 1.2rem', borderRadius:12, background:'var(--bg-2)', border:'1px solid var(--line-soft)', marginBottom:'1rem' }}>
-            <div style={{ fontSize:'0.65rem', fontWeight:800, color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.6rem' }}>Antes de ler — reflita</div>
-            {t.preQ.map((q, i) => (
-              <div key={i} style={{ marginBottom:'0.75rem' }}>
-                <p style={{ margin:'0 0 0.3rem', fontSize:'0.9rem', fontWeight:600, color:'var(--ink)' }}>{i+1}. {q}</p>
-                <textarea value={preAnswers[i]} onChange={e => { const a=[...preAnswers]; a[i]=e.target.value; setPreAnswers(a); }} rows={2} placeholder="Escreva sua hipótese..."
-                  style={{ width:'100%', padding:'0.55rem 0.75rem', borderRadius:8, border:'1.5px solid var(--line-soft)', background:'var(--bg)', color:'var(--ink)', fontSize:'0.88rem', fontFamily:'inherit', boxSizing:'border-box', resize:'none' }} />
+          {/* Objetivo de lectura */}
+          <div style={{ padding:'0.9rem 1.1rem', borderRadius:12, background:`${COLOR}12`, border:`1px solid ${COLOR}33`, marginBottom:'1rem' }}>
+            <div style={{ fontSize:'0.66rem', fontWeight:800, color:COLOR, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin:0, fontWeight:600, color:'var(--ink)', fontSize:'0.95rem', lineHeight:1.55 }}>{t.goal}</p>
+          </div>
+          {/* Vocabulario clave */}
+          <div style={{ fontSize:'0.66rem', fontWeight:800, color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.6rem' }}>📚 Vocabulario clave — apréndelo antes de leer</div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(180px, 1fr))', gap:'0.5rem', marginBottom:'1.25rem' }}>
+            {t.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding:'0.6rem 0.85rem', borderRadius:10, background:'var(--bg-2)', border:'1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight:800, color:'var(--ink)', fontSize:'0.9rem' }}>{kv.w}</div>
+                <div style={{ color:'var(--muted)', fontSize:'0.8rem' }}>{kv.t}</div>
               </div>
             ))}
           </div>
@@ -247,7 +292,7 @@ function TextExercise({ t, onBack }: { t: ReadingText; onBack: () => void }) {
           <h2 style={{ margin:'0 0 0.25rem', fontWeight:800, color:'var(--ink)', fontSize:'1.5rem' }}>{score} / {t.mcq.length} corretas</h2>
           <p style={{ color:'var(--muted)', fontSize:'0.88rem', margin:'0 0 1.25rem' }}>{score===t.mcq.length?'Perfeito! Compreensão total.':score>=3?'Muito bem!':'Releia o texto e tente novamente.'}</p>
           <div style={{ display:'flex', gap:'0.65rem', justifyContent:'center', flexWrap:'wrap' }}>
-            <button className="btn btn-sm" onClick={() => { setPhase('pre'); setAnswers({}); setRevealed({}); setOpenAns(''); setProd(''); setPreAnswers(['','']); }} style={{ background:COLOR, borderColor:COLOR }}>Tentar de novo</button>
+            <button className="btn btn-sm" onClick={() => { setPhase('pre'); setAnswers({}); setRevealed({}); setOpenAns(''); setProd(''); }} style={{ background:COLOR, borderColor:COLOR }}>Tentar de novo</button>
             <button className="btn btn-ghost btn-sm" onClick={onBack}>← Outros textos</button>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Práctica de Coreano — Elige tu nivel TOPIK | Idiomas WeLearn',
   description: 'Ejercicios interactivos de coreano por nivel. A1 disponible: Hangul, partículas, verbos básicos y vocabulario esencial.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/coreano' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano' },
 };
 
 const COLOR = '#534AB7';
@@ -36,7 +36,7 @@ export default function CoreanoPage() {
     <CourseSchema
       name="Práctica de Coreano — Hangul y gramática TOPIK"
       description="Ejercicios interactivos de coreano por nivel TOPIK. Hangul, partículas, verbos y vocabulario esencial."
-      url="https://idiomaswl.com/practica/coreano"
+      url="https://www.idiomaswl.com/practica/coreano"
       educationalLevel="A1,A2,B1"
       teaches="Coreano, Hangul, TOPIK"
       inLanguage="es"

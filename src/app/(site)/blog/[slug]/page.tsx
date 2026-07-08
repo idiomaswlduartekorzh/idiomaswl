@@ -25,7 +25,7 @@ export async function generateMetadata(
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://idiomaswl.com/blog/${post.slug}`,
+      url: `https://www.idiomaswl.com/blog/${post.slug}`,
       type: 'article',
       publishedTime: post.date,
       modifiedTime: post.updatedDate ?? post.date,
@@ -33,7 +33,7 @@ export async function generateMetadata(
       tags: post.tags,
     },
     alternates: {
-      canonical: `https://idiomaswl.com/blog/${post.slug}`,
+      canonical: `https://www.idiomaswl.com/blog/${post.slug}`,
     },
   };
 }
@@ -168,29 +168,29 @@ export default async function BlogArticlePage(
     '@graph': [
       {
         '@type': 'Article',
-        '@id': `https://idiomaswl.com/blog/${post.slug}#article`,
+        '@id': `https://www.idiomaswl.com/blog/${post.slug}#article`,
         headline: post.title,
         description: post.description,
-        url: `https://idiomaswl.com/blog/${post.slug}`,
+        url: `https://www.idiomaswl.com/blog/${post.slug}`,
         datePublished: post.date,
         dateModified: post.updatedDate ?? post.date,
         author: {
           '@type': 'Person',
           name: 'José David Duarte Silva',
-          url: 'https://idiomaswl.com/home',
+          url: 'https://www.idiomaswl.com/home',
         },
         publisher: {
           '@type': 'Organization',
           name: 'Idiomas WeLearn',
-          url: 'https://idiomaswl.com',
+          url: 'https://www.idiomaswl.com',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://idiomaswl.com/images/welearn-logo.png',
+            url: 'https://www.idiomaswl.com/images/welearn-logo.png',
           },
         },
         mainEntityOfPage: {
           '@type': 'WebPage',
-          '@id': `https://idiomaswl.com/blog/${post.slug}`,
+          '@id': `https://www.idiomaswl.com/blog/${post.slug}`,
         },
         keywords: post.tags.join(', '),
         inLanguage: 'es-CO',
@@ -203,19 +203,19 @@ export default async function BlogArticlePage(
             '@type': 'ListItem',
             position: 1,
             name: 'Inicio',
-            item: 'https://idiomaswl.com',
+            item: 'https://www.idiomaswl.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Blog',
-            item: 'https://idiomaswl.com/blog',
+            item: 'https://www.idiomaswl.com/blog',
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: post.title,
-            item: `https://idiomaswl.com/blog/${post.slug}`,
+            item: `https://www.idiomaswl.com/blog/${post.slug}`,
           },
         ],
       },

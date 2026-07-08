@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Práctica de Portugués — Elige tu nivel MCER | Idiomas WeLearn',
   description: 'Ejercicios interactivos de portugués por nivel: A1 disponible con lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/portugues' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues' },
 };
 
 const COLOR = '#009c3b';
@@ -29,7 +29,7 @@ export default function PortuguesPage() {
     <CourseSchema
       name="Práctica de Portugués — Ejercicios interactivos MCER"
       description="Ejercicios de portugués brasileño por nivel: A1 y A2 disponibles. Vocabulario, gramática y comprensión."
-      url="https://idiomaswl.com/practica/portugues"
+      url="https://www.idiomaswl.com/practica/portugues"
       educationalLevel="A1,A2"
       teaches="Portugués, CELPE-Bras"
       inLanguage="pt"

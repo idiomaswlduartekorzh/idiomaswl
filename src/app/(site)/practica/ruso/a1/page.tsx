@@ -6,14 +6,14 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 export const metadata: Metadata = {
   title: 'Ruso A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Ruso A1: alfabeto cirílico, gramática (casos, conjugaciones), escritura, frases esenciales y vocabulario con transliteración.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ruso/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso/a1' },
 };
 
 const COLOR = '#cc0000';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Чтение', eng: 'Lectura', desc: '5 textos A1 en cirílico con transliteración y vocabulario interactivo. Priviet! Знакомство, семья, дом, еда.', count: '5 textos · 25 preguntas', href: '/practica/ruso/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Грамматика', eng: 'Gramática', desc: 'Alfabeto, pronombres, caso nominativo, conjugación presente (1ª y 2ª conjugación), números y adjetivos.', count: '5 temas · 40+ ejercicios', href: '/practica/ruso/a1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Грамматика', eng: 'Gramática', desc: 'Alfabeto cirílico, pronombres, género, posesivos, conjugaciones, casos (acusativo, preposicional, genitivo), números, pasado, futuro y negación. Con transliteración.', count: '15 temas · 180+ ejercicios', href: '/practica/ruso/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Письмо', eng: 'Escritura', desc: '5 tareas guiadas: presentarse, describir la familia, tu ciudad, actividades y gustos. En cirílico o transliteración.', count: '5 prompts guiados', href: '/practica/ruso/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Разговор', eng: 'Expresión oral', desc: '12 frases esenciales de supervivencia en ruso: cirílico + transliteración + pronunciación para hispanohablantes.', count: '12 frases esenciales', href: '/practica/ruso/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Словарь', eng: 'Vocabulario', desc: '6 sets temáticos con cirílico + transliteración + español: семья, цвета, еда, дни, тело, числа.', count: '6 sets · 60+ palabras', href: '/practica/ruso/a1/vocabulario' },
@@ -28,7 +28,7 @@ export default function RusoA1Page() {
     <CourseSchema
       name="Ruso A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Ruso nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/ruso/a1"
+      url="https://www.idiomaswl.com/practica/ruso/a1"
       educationalLevel="A1"
       teaches="Ruso, habilidades MCER"
       inLanguage="ru"

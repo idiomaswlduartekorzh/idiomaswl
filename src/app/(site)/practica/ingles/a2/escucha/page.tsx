@@ -5,7 +5,7 @@ import TTSPlayer from '@/components/practica/TTSPlayer';
 export const metadata: Metadata = {
   title: 'Inglés A2 Escucha — Próximamente | Idiomas WeLearn',
   description: 'Ejercicios de comprensión auditiva A2 de inglés. Diálogos con voz nativa en preparación.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/a2/escucha' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/a2/escucha' },
 };
 
 const COLOR = '#0369a1';

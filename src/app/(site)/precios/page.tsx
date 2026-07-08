@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     title: 'Planes y Precios — Idiomas WeLearn',
     description:
       'Planes desde $50.000/mes para inglés, coreano, francés, alemán y más. Simulacros ilimitados + tutor 1:1.',
-    url: 'https://idiomaswl.com/precios',
+    url: 'https://www.idiomaswl.com/precios',
   },
-  alternates: { canonical: 'https://idiomaswl.com/precios' },
+  alternates: { canonical: 'https://www.idiomaswl.com/precios' },
 };
 
 const faqJsonLd = {
@@ -83,8 +83,8 @@ export default function PreciosPage() {
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-            { '@type': 'ListItem', position: 2, name: 'Planes y Precios', item: 'https://idiomaswl.com/precios' },
+            { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+            { '@type': 'ListItem', position: 2, name: 'Planes y Precios', item: 'https://www.idiomaswl.com/precios' },
           ],
         }) }}
       />

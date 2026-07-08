@@ -8,7 +8,8 @@ const COLOR = '#003189';
 interface ReadingText {
   id: number; title: string; topic: string; text: string;
   vocab: Record<string, string>;
-  preQ: string[];
+  goal: string;                              // objetivo de lectura concreto
+  keyVocab: { w: string; t: string }[];      // vocabulario clave pre-enseñado
   mcq: { q: string; opts: string[]; a: number; fb: string }[];
   openQ: string; prodPrompt: string;
 }
@@ -18,7 +19,15 @@ const TEXTS: ReadingText[] = [
     id: 1, title: 'Bonjour, je suis Sophie', topic: 'Présentation personnelle',
     text: "Bonjour! Je m'appelle Sophie. J'ai vingt ans. J'habite à Paris avec mes parents. J'ai un frère et une sœur. Mon frère s'appelle Paul et il a dix-huit ans. Chaque matin, je bois du café et je mange une baguette. J'étudie le français à l'université. J'aime lire et écouter de la musique.",
     vocab: { bonjour:'¡hola', appelle:'llamo / se llama', habite:'vivo', parents:'padres', frère:'hermano', sœur:'hermana', matin:'mañana', bois:'bebo', café:'café', mange:'como', baguette:'baguette (pan)', étudie:'estudio', aime:'amo / me gusta', lire:'leer', écouter:'escuchar', musique:'música' },
-    preQ: ['¿Qué información personal esperas encontrar en una presentación en francés?', '¿Qué significa "J\'ai vingt ans"? Intenta adivinar.'],
+    goal: 'Lee el texto y averigua: ¿dónde vive Sophie y qué le gusta hacer?',
+    keyVocab: [
+      { w: "je m'appelle", t: 'me llamo' },
+      { w: "j'ai vingt ans", t: 'tengo veinte años' },
+      { w: "j'habite à", t: 'vivo en' },
+      { w: 'frère / sœur', t: 'hermano / hermana' },
+      { w: 'je mange / je bois', t: 'como / bebo' },
+      { w: "j'aime", t: 'me gusta' },
+    ],
     mcq: [
       { q:'¿Qué significa "frère"?', opts:['hermana','hermano','amigo','padre'], a:1, fb:'"Frère" = hermano. "Sœur" = hermana.' },
       { q:'¿Qué significa "matin"?', opts:['noche','tarde','mañana','semana'], a:2, fb:'"Matin" = mañana (parte del día).' },
@@ -32,7 +41,15 @@ const TEXTS: ReadingText[] = [
     id: 2, title: 'La famille Dupont', topic: 'La famille',
     text: "Voici la famille Dupont. Le père s'appelle Marc. Il est médecin. La mère s'appelle Claire. Elle est professeure. Ils ont deux enfants: une fille et un garçon. La fille s'appelle Léa. Elle a douze ans. Le garçon s'appelle Lucas. Il a neuf ans. La famille habite dans une grande maison à Lyon.",
     vocab: { voici:'aquí está / este es', père:'padre', mère:'madre', médecin:'médico', professeure:'profesora', enfants:'hijos / niños', fille:'hija / chica', garçon:'hijo / chico', douze:'doce', neuf:'nueve', grande:'grande', maison:'casa', lyon:'Lyon' },
-    preQ: ['¿Cuántos miembros puede tener una familia típica en Francia?', '¿Cuál es la diferencia entre "une fille" y "un garçon"?'],
+    goal: 'Lee el texto y averigua: ¿a qué se dedican los padres y cómo se llama la hija?',
+    keyVocab: [
+      { w: 'père / mère', t: 'padre / madre' },
+      { w: 'médecin', t: 'médico/a' },
+      { w: 'professeure', t: 'profesora' },
+      { w: 'fille / garçon', t: 'hija/chica / hijo/chico' },
+      { w: 'ils ont', t: 'ellos tienen' },
+      { w: 'grande maison', t: 'casa grande' },
+    ],
     mcq: [
       { q:'¿Qué profesión tiene Marc?', opts:['Profesor','Médico','Abogado','Ingeniero'], a:1, fb:'"Il est médecin" — Marc es médico.' },
       { q:'¿Cómo se llama la hija?', opts:['Claire','Marie','Léa','Sophie'], a:2, fb:'"La fille s\'appelle Léa."' },
@@ -46,7 +63,15 @@ const TEXTS: ReadingText[] = [
     id: 3, title: 'Mon appartement', topic: 'Le logement',
     text: "J'habite dans un appartement à Bordeaux. L'appartement est petit mais confortable. Il y a une cuisine, un salon et une chambre. Dans la cuisine, il y a une table et quatre chaises. Dans le salon, il y a un canapé et une télévision. Ma chambre est petite. Il y a un lit et une armoire. J'aime mon appartement.",
     vocab: { appartement:'apartamento', bordeaux:'Burdeos', petit:'pequeño', confortable:'cómodo', cuisine:'cocina', salon:'sala de estar', chambre:'habitación / cuarto', table:'mesa', chaises:'sillas', canapé:'sofá', télévision:'televisión', lit:'cama', armoire:'armario / ropero' },
-    preQ: ['¿Cuáles son las habitaciones de una casa típica en francés?', '¿Qué significa "il y a"? ¿Lo reconoces de inglés ("there is")?'],
+    goal: 'Lee el texto y averigua: ¿cuántas habitaciones tiene el apartamento y qué hay en cada una?',
+    keyVocab: [
+      { w: 'il y a', t: 'hay' },
+      { w: 'cuisine', t: 'cocina' },
+      { w: 'salon', t: 'sala de estar' },
+      { w: 'chambre', t: 'habitación / cuarto' },
+      { w: 'table / chaises', t: 'mesa / sillas' },
+      { w: 'petit mais confortable', t: 'pequeño pero cómodo' },
+    ],
     mcq: [
       { q:'¿Dónde vive el narrador?', opts:['En París','En Lyon','En Burdeos','En Toulouse'], a:2, fb:'"J\'habite dans un appartement à Bordeaux."' },
       { q:'¿Cómo es el apartamento?', opts:['Grande y lujoso','Pequeño pero cómodo','Feo y oscuro','Nuevo y moderno'], a:1, fb:'"Petit mais confortable" — pequeño pero cómodo.' },
@@ -60,7 +85,15 @@ const TEXTS: ReadingText[] = [
     id: 4, title: 'Ma journée', topic: 'La routine quotidienne',
     text: "Je m'appelle Antoine. Je me lève à sept heures. Je prends une douche et je mange des céréales. Je bois du café au lait. À huit heures et demie, je prends le métro pour aller à l'université. Les cours commencent à neuf heures. À midi, je mange à la cantine avec mes amis. L'après-midi, j'étudie à la bibliothèque. Le soir, je rentre chez moi à dix-huit heures.",
     vocab: { lève:'me levanto', prends:'tomo', douche:'ducha', céréales:'cereales', demie:'y media', métro:'metro', cours:'clases', commencent:'comienzan', midi:'mediodía', cantine:'comedor / cantina', amis:'amigos', bibliothèque:'biblioteca', rentre:'regreso', soir:'noche / tarde' },
-    preQ: ['¿Cómo dices "a las siete" en francés? (pista: "à sept heures")', '¿Qué hace Antoine para ir a la universidad?'],
+    goal: 'Lee el texto y averigua: ¿a qué hora se levanta Antoine y cómo va a la universidad?',
+    keyVocab: [
+      { w: 'je me lève', t: 'me levanto' },
+      { w: 'à sept heures', t: 'a las siete' },
+      { w: 'je prends le métro', t: 'tomo el metro' },
+      { w: 'les cours', t: 'las clases' },
+      { w: 'à midi', t: 'al mediodía' },
+      { w: 'le soir', t: 'por la noche/tarde' },
+    ],
     mcq: [
       { q:'¿A qué hora se levanta Antoine?', opts:['A las seis','A las siete','A las ocho','A las nueve'], a:1, fb:'"Je me lève à sept heures."' },
       { q:'¿Qué desayuna?', opts:['Baguette y café','Cereales y café con leche','Solo jugo','Croissant'], a:1, fb:'"Je mange des céréales. Je bois du café au lait."' },
@@ -74,7 +107,15 @@ const TEXTS: ReadingText[] = [
     id: 5, title: 'Le marché', topic: 'Faire des courses',
     text: "Aujourd'hui, je vais au marché avec ma mère. Il y a beaucoup de légumes et de fruits. J'achète des tomates, des carottes et des pommes de terre. Ma mère achète des pommes et des oranges. Les légumes sont frais et pas trop chers. Le marchand est sympa. Il nous donne un peu de persil gratuit. Nous payons dix euros et rentrons à la maison.",
     vocab: { marché:'mercado', légumes:'verduras', fruits:'frutas', achète:'compro', tomates:'tomates', carottes:'zanahorias', pommes:'manzanas', oranges:'naranjas', frais:'frescos', chers:'caros', marchand:'vendedor / comerciante', persil:'perejil', gratuit:'gratis', payons:'pagamos' },
-    preQ: ['¿Qué verduras y frutas conoces en francés?', '¿Qué significa "pas trop chers"? (pista: "pas" = no, "cher" = caro)'],
+    goal: 'Lee el texto y averigua: ¿qué compra el narrador y cuánto pagan al final?',
+    keyVocab: [
+      { w: 'marché', t: 'mercado' },
+      { w: 'légumes / fruits', t: 'verduras / frutas' },
+      { w: "j'achète", t: 'compro' },
+      { w: 'frais', t: 'frescos' },
+      { w: 'pas trop chers', t: 'no demasiado caros' },
+      { w: 'nous payons', t: 'pagamos' },
+    ],
     mcq: [
       { q:'¿Con quién va al mercado?', opts:['Con su padre','Con un amigo','Con su madre','Solo'], a:2, fb:'"Je vais au marché avec ma mère."' },
       { q:'¿Qué compra el narrador?', opts:['Manzanas y naranjas','Tomates, zanahorias y papas','Pan y queso','Leche y mantequilla'], a:1, fb:'"J\'achète des tomates, des carottes et des pommes de terre."' },
@@ -97,7 +138,6 @@ type Phase = 'pre' | 'read' | 'questions' | 'done';
 
 function TextExercise({ t, onBack }: { t: ReadingText; onBack: () => void }) {
   const [phase, setPhase] = useState<Phase>('pre');
-  const [preAnswers, setPreAnswers] = useState<string[]>(['', '']);
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [revealed, setRevealed] = useState<Record<number, boolean>>({});
@@ -151,13 +191,18 @@ function TextExercise({ t, onBack }: { t: ReadingText; onBack: () => void }) {
             <div style={{ fontSize:'0.65rem', fontWeight:800, color:COLOR, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.3rem' }}>Thème · {t.topic}</div>
             <h2 style={{ margin:'0 0 0.25rem', fontWeight:700, fontSize:'1.4rem', color:'var(--ink)' }}>{t.title}</h2>
           </div>
-          <div style={{ padding:'1rem 1.2rem', borderRadius:12, background:'var(--bg-2)', border:'1px solid var(--line-soft)', marginBottom:'1rem' }}>
-            <div style={{ fontSize:'0.65rem', fontWeight:800, color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.6rem' }}>Antes de leer — reflexiona</div>
-            {t.preQ.map((q, i) => (
-              <div key={i} style={{ marginBottom:'0.75rem' }}>
-                <p style={{ margin:'0 0 0.3rem', fontSize:'0.9rem', fontWeight:600, color:'var(--ink)' }}>{i+1}. {q}</p>
-                <textarea value={preAnswers[i]} onChange={e => { const a=[...preAnswers]; a[i]=e.target.value; setPreAnswers(a); }} rows={2} placeholder="Escribe tu hipótesis..."
-                  style={{ width:'100%', padding:'0.55rem 0.75rem', borderRadius:8, border:'1.5px solid var(--line-soft)', background:'var(--bg)', color:'var(--ink)', fontSize:'0.88rem', fontFamily:'inherit', boxSizing:'border-box', resize:'none' }} />
+          {/* Objetivo de lectura */}
+          <div style={{ padding:'0.9rem 1.1rem', borderRadius:12, background:`${COLOR}0d`, border:`1px solid ${COLOR}2a`, marginBottom:'1rem' }}>
+            <div style={{ fontSize:'0.65rem', fontWeight:800, color:COLOR, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin:0, fontWeight:600, color:'var(--ink)', fontSize:'0.95rem', lineHeight:1.55 }}>{t.goal}</p>
+          </div>
+          {/* Vocabulario clave */}
+          <div style={{ fontSize:'0.65rem', fontWeight:800, color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.6rem' }}>📚 Vocabulario clave — apréndelo antes de leer</div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(180px, 1fr))', gap:'0.5rem', marginBottom:'1.25rem' }}>
+            {t.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding:'0.6rem 0.85rem', borderRadius:10, background:'var(--bg-2)', border:'1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight:800, color:'var(--ink)', fontSize:'0.9rem' }}>{kv.w}</div>
+                <div style={{ color:'var(--muted)', fontSize:'0.8rem' }}>{kv.t}</div>
               </div>
             ))}
           </div>
@@ -259,7 +304,7 @@ function TextExercise({ t, onBack }: { t: ReadingText; onBack: () => void }) {
           <h2 style={{ margin:'0 0 0.25rem', fontWeight:800, color:'var(--ink)', fontSize:'1.5rem' }}>{score} / {t.mcq.length} correctas</h2>
           <p style={{ color:'var(--muted)', fontSize:'0.88rem', margin:'0 0 1.25rem' }}>{score===t.mcq.length?'¡Parfait! Comprensión perfecta.':score>=3?'Très bien — casi perfecto.':'Relee el texto y vuelve a intentarlo.'}</p>
           <div style={{ display:'flex', gap:'0.65rem', justifyContent:'center', flexWrap:'wrap' }}>
-            <button className="btn btn-sm" onClick={() => { setPhase('pre'); setAnswers({}); setRevealed({}); setOpenAns(''); setProd(''); setPreAnswers(['','']); }} style={{ background:COLOR, borderColor:COLOR }}>Intentar de nuevo</button>
+            <button className="btn btn-sm" onClick={() => { setPhase('pre'); setAnswers({}); setRevealed({}); setOpenAns(''); setProd(''); }} style={{ background:COLOR, borderColor:COLOR }}>Intentar de nuevo</button>
             <button className="btn btn-ghost btn-sm" onClick={onBack}>← Otros textos</button>
           </div>
         </div>

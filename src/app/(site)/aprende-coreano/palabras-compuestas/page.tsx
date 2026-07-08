@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Palabras Compuestas en Coreano — 합성어',
     description: 'Aprende a multiplicar tu vocabulario coreano combinando raíces. Herramienta interactiva + explicaciones con ejemplos reales.',
-    url: 'https://idiomaswl.com/aprende-coreano/palabras-compuestas',
+    url: 'https://www.idiomaswl.com/aprende-coreano/palabras-compuestas',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/aprende-coreano/palabras-compuestas',
+    canonical: 'https://www.idiomaswl.com/aprende-coreano/palabras-compuestas',
   },
 };
 
@@ -32,26 +32,26 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio',          item: 'https://idiomaswl.com/home' },
-        { '@type': 'ListItem', position: 2, name: 'Coreano',         item: 'https://idiomaswl.com/clases-de-coreano' },
-        { '@type': 'ListItem', position: 3, name: 'Palabras compuestas', item: 'https://idiomaswl.com/aprende-coreano/palabras-compuestas' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio',          item: 'https://www.idiomaswl.com/home' },
+        { '@type': 'ListItem', position: 2, name: 'Coreano',         item: 'https://www.idiomaswl.com/clases-de-coreano' },
+        { '@type': 'ListItem', position: 3, name: 'Palabras compuestas', item: 'https://www.idiomaswl.com/aprende-coreano/palabras-compuestas' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Palabras Compuestas en Coreano (합성어): Vocabulario × 10',
       description: 'Guía completa con ejemplos y herramienta interactiva para aprender las palabras compuestas del coreano.',
-      url: 'https://idiomaswl.com/aprende-coreano/palabras-compuestas',
+      url: 'https://www.idiomaswl.com/aprende-coreano/palabras-compuestas',
       inLanguage: 'es',
       author: {
         '@type': 'Person',
         name: 'José David Duarte Silva',
-        url: 'https://idiomaswl.com/home',
+        url: 'https://www.idiomaswl.com/home',
       },
       publisher: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       educationalLevel: 'beginner',
       teaches: ['Korean vocabulary', 'Korean morphology', 'Korean compound words'],

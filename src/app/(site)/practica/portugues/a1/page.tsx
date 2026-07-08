@@ -6,14 +6,14 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 export const metadata: Metadata = {
   title: 'Portugués A1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Portugués A1: leitura, gramática (artigos, ser/estar, verbos -AR), escritura, expressão oral, vocabulário e escuta.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/portugues/a1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/a1' },
 };
 
 const COLOR = '#009c3b';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Leitura', eng: 'Lectura', desc: '5 textos A1: Carlos em São Paulo, a família, a casa, a comida e a escola. Cada palavra com tradução ao clique.', count: '5 textos · 25 perguntas', href: '/practica/portugues/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Gramática', desc: 'Artigos (o/a/um/uma), ser vs. estar, verbos -AR no presente, pronomes pessoais e plural.', count: '5 temas · 50+ ejercicios', href: '/practica/portugues/a1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Gramática', desc: 'Los 15 temas del A1: artículos, ser, estar, ter, verbos -ar/-er/-ir, você, negación, contracciones (do/no/ao), posesivos, há/tem y más. Con explicación, tablas y contraste español→portugués.', count: '15 temas · 200+ ejercicios', href: '/practica/portugues/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Escrita', eng: 'Escritura', desc: '5 tarefas guiadas: apresentar-se, descrever a família, a casa, as atividades e as preferências.', count: '5 prompts guiados', href: '/practica/portugues/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expressão oral', eng: 'Expresión oral', desc: '15 frases de sobrevivência em português com pronúncia e notas para hispanohablantes.', count: '15 frases esenciales', href: '/practica/portugues/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulário', eng: 'Vocabulario', desc: '6 conjuntos temáticos: família, cores, comida, dias, corpo, números. Flashcards + 3 modos.', count: '6 sets · 60+ palabras', href: '/practica/portugues/a1/vocabulario' },
@@ -28,7 +28,7 @@ export default function PortuguesA1Page() {
     <CourseSchema
       name="Portugués A1 — Lectura, Gramática, Vocabulario y más"
       description="Practica Portugués nivel A1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-      url="https://idiomaswl.com/practica/portugues/a1"
+      url="https://www.idiomaswl.com/practica/portugues/a1"
       educationalLevel="A1"
       teaches="Portugués, habilidades MCER"
       inLanguage="po"

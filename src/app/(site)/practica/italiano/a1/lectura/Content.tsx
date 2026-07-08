@@ -5,16 +5,21 @@ import Link from 'next/link';
 
 const COLOR = '#009246';
 
-interface ReadingText { id: number; title: string; topic: string; words: number; grammar: string; text: string; vocab: Record<string, string>; preQ: { q: string; opts: string[]; a: number }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
+interface ReadingText { id: number; title: string; topic: string; words: number; grammar: string; text: string; vocab: Record<string, string>; goal: string; keyVocab: { w: string; t: string }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
 
 const TEXTS: ReadingText[] = [
   {
     id: 1, title: 'Mi chiamo Sofia', topic: 'Presentazione', words: 58, grammar: 'Essere + avere · Presente',
     text: 'Ciao! Mi chiamo Sofia. Ho ventitré anni. Sono di Napoli ma abito a Milano. Studio lingue all\'università. Parlo italiano, inglese e un po\' di spagnolo. Ho un gatto di nome Micio. Mi piace leggere e ascoltare musica. La mia canzone preferita è una canzone italiana classica.',
     vocab: { chiamo:'me llamo', anni:'años', abito:'vivo/habito', studio:'estudio', parlo:'hablo', gatto:'gato', piace:'me gusta', leggere:'leer', ascoltare:'escuchar', canzone:'canción', preferita:'favorita', classica:'clásica' },
-    preQ: [
-      { q: '¿De qué ciudad eres?', opts: ['Ciudad del norte', 'Ciudad del sur', 'Capital'], a: -1 },
-      { q: '¿Cuántas lenguas hablas tú?', opts: ['1', '2', '3 o más'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿de dónde es Sofia y qué idiomas habla?',
+    keyVocab: [
+      { w: 'mi chiamo', t: 'me llamo' },
+      { w: 'ho ventitré anni', t: 'tengo veintitrés años' },
+      { w: 'sono di / abito a', t: 'soy de / vivo en' },
+      { w: 'studio lingue', t: 'estudio idiomas' },
+      { w: 'parlo', t: 'hablo' },
+      { w: 'mi piace', t: 'me gusta' },
     ],
     mcq: [
       { q: '¿Qué significa "mi chiamo"?', cat: 'Vocabulario', opts: ['Me llaman','Me llamo','Yo soy','Mi nombre'], a: 1, fb: '"Mi chiamo" = me llamo (literalmente "me llaman"). Es la forma de presentarse en italiano.' },
@@ -30,9 +35,14 @@ const TEXTS: ReadingText[] = [
     id: 2, title: 'La famiglia di Marco', topic: 'La famiglia', words: 62, grammar: 'Aggettivi + essere · Pronomi',
     text: 'Marco ha una famiglia grande. Sua madre si chiama Anna. Lei è medica e lavora in un ospedale. Suo padre si chiama Luigi. Lui è insegnante di matematica. Marco ha due sorelle: Chiara e Giulia. Chiara ha diciotto anni e studia all\'università. Giulia ha quindici anni e va al liceo. Tutta la famiglia abita in una casa grande a Roma.',
     vocab: { famiglia:'familia', grande:'grande/numerosa', madre:'madre', medica:'médica', lavora:'trabaja', ospedale:'hospital', padre:'padre', insegnante:'maestro/a', sorelle:'hermanas', studia:'estudia', liceo:'bachillerato/secundaria', tutta:'toda', abita:'vive/habita' },
-    preQ: [
-      { q: '¿Cuántas personas hay en tu familia?', opts: ['1-2', '3-4', '5 o más'], a: -1 },
-      { q: '¿Alguien en tu familia es médico o maestro?', opts: ['Médico', 'Maestro', 'Otro', 'Ninguno'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿a qué se dedican los padres de Marco y cuántas hermanas tiene?',
+    keyVocab: [
+      { w: 'famiglia', t: 'familia' },
+      { w: 'madre / padre', t: 'madre / padre' },
+      { w: 'medica', t: 'médica' },
+      { w: 'insegnante', t: 'maestro/a' },
+      { w: 'sorelle', t: 'hermanas' },
+      { w: 'sua / suo', t: 'su (concuerda con el objeto)' },
     ],
     mcq: [
       { q: '¿Qué significa "insegnante"?', cat: 'Vocabulario', opts: ['Estudiante','Maestro/a','Doctor/a','Abogado/a'], a: 1, fb: '"Insegnante" = maestro/a, profesor/a. Viene de "insegnare" = enseñar.' },
@@ -48,9 +58,14 @@ const TEXTS: ReadingText[] = [
     id: 3, title: 'Il mio appartamento', topic: 'La casa', words: 65, grammar: "C'è · Ci sono · Preposizioni",
     text: 'Abito in un appartamento al secondo piano. Il mio appartamento non è grande, ma è molto comodo. Ci sono tre stanze: una cucina, un soggiorno e una camera da letto. In cucina c\'è un frigorifero nuovo e una piccola tavola. In soggiorno ci sono un divano, una libreria e una televisione. La camera da letto è tranquilla. Accanto al palazzo c\'è un bel parco.',
     vocab: { appartamento:'apartamento', piano:'piso/planta', comodo:'cómodo', stanze:'habitaciones', cucina:'cocina', soggiorno:'sala/salón', camera:'habitación/cuarto', frigorifero:'refrigerador/nevera', piccola:'pequeña', tavola:'mesa', divano:'sofá', libreria:'estantería', tranquilla:'tranquila', palazzo:'edificio', parco:'parque' },
-    preQ: [
-      { q: '¿En qué tipo de vivienda vives?', opts: ['Casa', 'Apartamento', 'Otro'], a: -1 },
-      { q: '¿En qué piso vives?', opts: ['Planta baja', 'Piso 1-3', 'Piso 4+'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿cuántas habitaciones tiene el apartamento y qué hay al lado del edificio?',
+    keyVocab: [
+      { w: 'c’è / ci sono', t: 'hay (singular / plural)' },
+      { w: 'stanze', t: 'habitaciones' },
+      { w: 'cucina / soggiorno', t: 'cocina / sala' },
+      { w: 'camera da letto', t: 'dormitorio' },
+      { w: 'frigorifero', t: 'nevera' },
+      { w: 'accanto al', t: 'al lado del' },
     ],
     mcq: [
       { q: '¿Qué significa "frigorifero"?', cat: 'Vocabulario', opts: ['Congelador','Horno','Refrigerador/nevera','Lavavajillas'], a: 2, fb: '"Frigorifero" = nevera/refrigerador (de "frigoris" = frío en latín).' },
@@ -66,9 +81,14 @@ const TEXTS: ReadingText[] = [
     id: 4, title: 'Cosa mangio di solito', topic: 'Il cibo', words: 60, grammar: 'Verbi -ARE · Frequenza',
     text: 'Amo il cibo italiano! La mia colazione preferita è un cornetto e un cappuccino. A pranzo di solito mangio pasta al pomodoro o pizza. Non mi piacciono molto le verdure, ma mangio sempre frutta. Le mie frutta preferite sono le arance e le fragole. La sera ceno con la mia famiglia. La domenica cuciniamo tutti insieme un risotto o una lasagna. Non mangio mai fast food.',
     vocab: { colazione:'desayuno', cornetto:'croissant', cappuccino:'capuchino', pranzo:'almuerzo', mangio:'como', pasta:'pasta', pomodoro:'tomate', verdure:'verduras', sempre:'siempre', frutta:'fruta', fragole:'fresas', ceno:'ceno', cuciniamo:'cocinamos', insieme:'juntos', mai:'nunca' },
-    preQ: [
-      { q: '¿Cuál es tu comida italiana favorita?', opts: ['Pizza','Pasta','Risotto','No conozco mucho'], a: -1 },
-      { q: '¿Con qué frecuencia cocinas en casa?', opts: ['Cada día','A veces','Casi nunca'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿qué almuerza normalmente y qué no come nunca?',
+    keyVocab: [
+      { w: 'colazione', t: 'desayuno' },
+      { w: 'a pranzo', t: 'en el almuerzo' },
+      { w: 'verdure / frutta', t: 'verduras / fruta' },
+      { w: 'sempre / mai', t: 'siempre / nunca' },
+      { w: 'non mi piacciono', t: 'no me gustan' },
+      { w: 'cuciniamo', t: 'cocinamos' },
     ],
     mcq: [
       { q: '¿Qué es un "cornetto"?', cat: 'Vocabulario', opts: ['Panecillo de maíz','Croissant/medialuna','Torta','Galleta'], a: 1, fb: '"Cornetto" = croissant/medialuna. Es el desayuno típico italiano junto al cappuccino.' },
@@ -84,9 +104,14 @@ const TEXTS: ReadingText[] = [
     id: 5, title: 'La mia giornata', topic: 'Routine quotidiana', words: 63, grammar: 'Verbi riflessivi · Espressioni di tempo',
     text: 'Mi alzo alle sette di mattina. Faccio la doccia e poi faccio colazione. Prendo un caffè e mangio un po\' di pane con la marmellata. Alle otto e mezzo prendo il tram per andare al lavoro. Lavoro in un ufficio nel centro della città. Finisco di lavorare alle sei di sera. La sera guardo la televisione o esco con gli amici. Vado a letto alle undici.',
     vocab: { alzo:'levanto (me levanto)', doccia:'ducha', colazione:'desayuno', pane:'pan', marmellata:'mermelada', tram:'tranvía', lavoro:'trabajo/trabajar', ufficio:'oficina', centro:'centro', finisco:'termino', esco:'salgo', amici:'amigos', letto:'cama', undici:'once' },
-    preQ: [
-      { q: '¿A qué hora te levantas normalmente?', opts: ['Antes de las 7', 'Entre 7-8', 'Después de las 8'], a: -1 },
-      { q: '¿Cómo vas al trabajo/universidad?', opts: ['Transporte público', 'Caminando', 'Carro'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿a qué hora se levanta y cómo va al trabajo?',
+    keyVocab: [
+      { w: 'mi alzo', t: 'me levanto' },
+      { w: 'faccio la doccia', t: 'me ducho' },
+      { w: 'prendo il tram', t: 'tomo el tranvía' },
+      { w: 'lavoro / ufficio', t: 'trabajo / oficina' },
+      { w: 'finisco', t: 'termino' },
+      { w: 'vado a letto', t: 'me voy a la cama' },
     ],
     mcq: [
       { q: '¿Qué significa "mi alzo"?', cat: 'Vocabulario', opts: ['Me duermo','Me levanto','Me ducho','Me desayuno'], a: 1, fb: '"Mi alzo" = me levanto. "Alzarsi" es un verbo reflexivo: mi alzo, ti alzi, si alza...' },
@@ -138,7 +163,6 @@ function MCQItem({ q, qi, answers, onAnswer }: { q: ReadingText['mcq'][0]; qi: n
 
 function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
   const [phase, setPhase] = useState<'pre' | 'read' | 'questions' | 'done'>('pre');
-  const [preAnswers, setPreAnswers] = useState<Record<number, number>>({});
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [activeWord, setActiveWord] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -174,19 +198,22 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
 
       {phase === 'pre' && (
         <div className="wl-card" style={{ padding: '1.5rem' }}>
-          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Prima di leggere — attiva le tue conoscenze</p>
-          <p style={{ margin: '0 0 1.25rem', fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>Pensa un momento prima di leggere. Tema: <strong style={{ color: 'var(--ink)' }}>{t.topic}</strong>.</p>
-          {t.preQ.map((pq, i) => (
-            <div key={i} style={{ marginBottom: '1.25rem' }}>
-              <p style={{ margin: '0 0 0.65rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.96rem' }}>{i + 1}. {pq.q}</p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {pq.opts.map((opt, oi) => (
-                  <button key={oi} onClick={() => setPreAnswers(p => ({ ...p, [i]: oi }))}
-                    className={preAnswers[i] === oi ? 'btn btn-sm' : 'btn btn-ghost btn-sm'} style={{ fontSize: '0.84rem' }}>{opt}</button>
-                ))}
+          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Prima di leggere — preparati</p>
+          {/* Objetivo de lectura */}
+          <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: `${COLOR}12`, border: `1px solid ${COLOR}33`, marginBottom: '1.25rem' }}>
+            <div style={{ fontSize: '0.66rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin: 0, fontWeight: 600, color: 'var(--ink)', fontSize: '0.95rem', lineHeight: 1.55 }}>{t.goal}</p>
+          </div>
+          {/* Vocabulario clave */}
+          <div style={{ fontSize: '0.66rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.6rem' }}>📚 Vocabulario clave — apréndelo antes de leer</div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '0.5rem', marginBottom: '1.25rem' }}>
+            {t.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding: '0.6rem 0.85rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.9rem' }}>{kv.w}</div>
+                <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>{kv.t}</div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <button className="btn btn-sm" onClick={() => setPhase('read')}>Pronto — vai al testo →</button>
         </div>
       )}

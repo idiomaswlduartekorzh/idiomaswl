@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'Coreano Introductorio 1 — Mi primera presentación oral',
     description:
       'Practica coreano oral desde el primer día: supervivencia, presentación modelo, vocabulario, personalización y escala de habla progresiva.',
-    url: 'https://idiomaswl.com/practica/korean-speaking-1',
+    url: 'https://www.idiomaswl.com/practica/korean-speaking-1',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/practica/korean-speaking-1',
+    canonical: 'https://www.idiomaswl.com/practica/korean-speaking-1',
   },
 };
 

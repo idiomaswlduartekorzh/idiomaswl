@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cómo funciona el Método WeLearn',
     description: 'Once etapas diarias diseñadas para que el cerebro interiorice un idioma de verdad.',
-    url: 'https://idiomaswl.com/leccion',
+    url: 'https://www.idiomaswl.com/leccion',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/leccion',
+    canonical: 'https://www.idiomaswl.com/leccion',
   },
 };
 
@@ -20,8 +20,8 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-    { '@type': 'ListItem', position: 2, name: 'Lecciones', item: 'https://idiomaswl.com/leccion' },
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+    { '@type': 'ListItem', position: 2, name: 'Lecciones', item: 'https://www.idiomaswl.com/leccion' },
   ],
 };
 

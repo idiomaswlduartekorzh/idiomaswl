@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     title: 'Clases de Alemán Online — Preparación Goethe-Zertifikat | WeLearn',
     description:
       'Tutor especializado, método estructurado, preparación Goethe. Desde A1 hasta C1. Clase diagnóstico gratis para colombianos.',
-    url: 'https://idiomaswl.com/clases-de-aleman',
+    url: 'https://www.idiomaswl.com/clases-de-aleman',
   },
-  alternates: { canonical: 'https://idiomaswl.com/clases-de-aleman' },
+  alternates: { canonical: 'https://www.idiomaswl.com/clases-de-aleman' },
 };
 
 const faqJsonLd = {
@@ -89,7 +89,7 @@ const jsonLd = {
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: [
         {
@@ -110,10 +110,10 @@ const jsonLd = {
     },
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://idiomaswl.com/#localbusiness',
+      '@id': 'https://www.idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
       description: 'Academia de idiomas online. Clases de alemán, inglés, coreano, francés, italiano y portugués.',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
       address: {
         '@type': 'PostalAddress',
@@ -125,8 +125,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de Alemán', item: 'https://idiomaswl.com/clases-de-aleman' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Alemán', item: 'https://www.idiomaswl.com/clases-de-aleman' },
       ],
     },
   ],

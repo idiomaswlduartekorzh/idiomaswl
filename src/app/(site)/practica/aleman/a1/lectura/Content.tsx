@@ -12,7 +12,8 @@ interface OpenQ { q: string; tip: string; }
 interface TextData {
   id: number; title: string; subtitle: string; text: string;
   vocab: Record<string, string>;
-  preQ: string; preA: string;
+  goal: string;                              // objetivo de lectura concreto
+  keyVocab: { w: string; t: string }[];      // vocabulario clave pre-enseñado
   mcqs: MCQ[];
   openQs: OpenQ[];
 }
@@ -22,8 +23,15 @@ const TEXTS: TextData[] = [
     id:1, title:'Ich bin Anna', subtitle:'Eine Studentin stellt sich vor',
     text:'Hallo! Ich heiße Anna. Ich bin 22 Jahre alt. Ich wohne in Berlin mit meinen Eltern. Ich habe einen Bruder, er heißt Klaus. Jeden Morgen trinke ich Kaffee und esse Brot. Ich lerne Deutsch an der Universität. Ich mag Musik und Sport. Am Wochenende gehe ich mit Freunden ins Kino.',
     vocab:{ 'heiße':'me llamo','Jahre alt':'años de edad','wohne':'vivo','Eltern':'padres','Bruder':'hermano','Morgen':'mañana','trinke':'bebo','Kaffee':'café','esse':'como','Brot':'pan','lerne':'aprendo','mag':'me gusta','Freunden':'amigos','Kino':'cine','Wochenende':'fin de semana' },
-    preQ:'¿Cómo te presentarías tú en alemán? ¿Qué información daría alguien de 22 años?',
-    preA:'Una persona joven normalmente da: nombre (Ich heiße), edad (Ich bin ___ Jahre alt), dónde vive (Ich wohne in), qué hace (Ich studiere/arbeite) y qué le gusta (Ich mag).',
+    goal:'Lee el texto y averigua: ¿dónde vive Anna y qué hace los fines de semana?',
+    keyVocab:[
+      { w:'ich heiße', t:'me llamo' },
+      { w:'ich bin 22 Jahre alt', t:'tengo 22 años' },
+      { w:'ich wohne in', t:'vivo en' },
+      { w:'ich habe einen Bruder', t:'tengo un hermano' },
+      { w:'ich lerne / ich mag', t:'aprendo / me gusta' },
+      { w:'am Wochenende', t:'el fin de semana' },
+    ],
     mcqs:[
       { q:'Wie heißt die Person?', opts:['Anna','Maria','Klaus','Laura'], answer:0, label:'vocabulario' },
       { q:'Wie alt ist Anna?', opts:['20 Jahre alt','22 Jahre alt','25 Jahre alt','28 Jahre alt'], answer:1, label:'comprensión' },
@@ -39,8 +47,15 @@ const TEXTS: TextData[] = [
     id:2, title:'Meine Familie', subtitle:'Thomas spricht über seine Familie',
     text:'Hallo, ich bin Thomas. Ich bin 35 Jahre alt und ich wohne in München. Ich habe eine Frau. Sie heißt Sandra. Wir haben zwei Kinder: einen Sohn und eine Tochter. Mein Sohn heißt Max und er ist 8 Jahre alt. Meine Tochter heißt Lena und sie ist 5 Jahre alt. Mein Vater heißt Georg. Er ist Rentner. Meine Mutter heißt Hilde. Sie ist Lehrerin. Wir sind eine glückliche Familie.',
     vocab:{ 'Frau':'esposa','Kinder':'hijos','Sohn':'hijo','Tochter':'hija','Vater':'padre','Mutter':'madre','Rentner':'jubilado','Lehrerin':'profesora (f.)','glücklich':'feliz','wohne':'vivo','heißt':'se llama' },
-    preQ:'¿Qué vocabulario familiar conoces en alemán? ¿Cómo se diría "mi madre es profesora"?',
-    preA:'"Meine Mutter ist Lehrerin" — en alemán los sustantivos se escriben con mayúscula y las profesiones no usan artículo después de "sein" (ser).',
+    goal:'Lee el texto y averigua: ¿a qué se dedican los padres y cuántos hermanos hay?',
+    keyVocab:[
+      { w:'Mutter / Vater', t:'madre / padre' },
+      { w:'ist Lehrerin', t:'es profesora' },
+      { w:'meine / mein', t:'mi (fem. / masc.)' },
+      { w:'Bruder / Schwester', t:'hermano / hermana' },
+      { w:'er ist / sie ist', t:'él es / ella es' },
+      { w:'Jahre alt', t:'años de edad' },
+    ],
     mcqs:[
       { q:'Wie alt ist Thomas?', opts:['25 Jahre','30 Jahre','35 Jahre','40 Jahre'], answer:2, label:'comprensión' },
       { q:'Wie heißt Thomas Frau?', opts:['Lena','Hilde','Sandra','Maria'], answer:2, label:'vocabulario' },
@@ -56,8 +71,15 @@ const TEXTS: TextData[] = [
     id:3, title:'Meine Wohnung', subtitle:'Maria beschreibt ihr Zuhause',
     text:'Ich heiße Maria und ich wohne in Hamburg. Meine Wohnung ist nicht sehr groß, aber sie ist gemütlich. Sie hat drei Zimmer: ein Wohnzimmer, ein Schlafzimmer und eine Küche. Es gibt auch ein Bad. Im Wohnzimmer stehen ein Sofa und ein Tisch. Im Schlafzimmer steht ein Bett. Ich habe keine Garage. Meine Wohnung ist im dritten Stock. Der Blick ist sehr schön.',
     vocab:{ 'Wohnung':'apartamento','groß':'grande','gemütlich':'cómodo/acogedor','Zimmer':'habitaciones','Wohnzimmer':'sala','Schlafzimmer':'dormitorio','Küche':'cocina','Bad':'baño','Sofa':'sofá','Tisch':'mesa','Bett':'cama','Garage':'garaje','Stock':'piso/planta','Blick':'vista','stehen':'estar (de pie)' },
-    preQ:'¿Cómo describirías tu propio apartamento en alemán? ¿Qué habitaciones tiene?',
-    preA:'Para describir habitaciones: "Es gibt ein/eine ___ (hay un/una)". Los sustantivos llevan artículo: das Wohnzimmer, das Schlafzimmer, die Küche, das Bad.',
+    goal:'Lee el texto y averigua: ¿qué habitaciones tiene el apartamento?',
+    keyVocab:[
+      { w:'es gibt', t:'hay' },
+      { w:'das Wohnzimmer', t:'la sala' },
+      { w:'das Schlafzimmer', t:'el dormitorio' },
+      { w:'die Küche', t:'la cocina' },
+      { w:'das Bad', t:'el baño' },
+      { w:'klein / groß', t:'pequeño / grande' },
+    ],
     mcqs:[
       { q:'Wo wohnt Maria?', opts:['Berlin','München','Hamburg','Frankfurt'], answer:2, label:'comprensión' },
       { q:'Wie viele Zimmer hat die Wohnung?', opts:['Zwei','Drei','Vier','Fünf'], answer:1, label:'comprensión' },
@@ -73,8 +95,15 @@ const TEXTS: TextData[] = [
     id:4, title:'Ein Tag in meinem Leben', subtitle:'Jonas erzählt von seinem Alltag',
     text:'Ich heiße Jonas und ich lebe in Köln. Ich stehe um sechs Uhr auf. Ich dusche und frühstücke. Zum Frühstück esse ich Müsli und trinke Orangensaft. Um acht Uhr fahre ich mit dem Bus zur Arbeit. Ich arbeite als Ingenieur. Mittags esse ich in der Kantine. Um achtzehn Uhr bin ich wieder zu Hause. Am Abend lese ich oder sehe ich fern. Ich gehe um elf Uhr schlafen.',
     vocab:{ 'lebe':'vivo','stehe auf':'me levanto','dusche':'me ducho','frühstücke':'desayuno','Frühstück':'desayuno','Müsli':'muesli/granola','Orangensaft':'jugo de naranja','fahre':'viajo','Bus':'autobús','Arbeit':'trabajo','Ingenieur':'ingeniero','Mittags':'al mediodía','Kantine':'cafetería','zu Hause':'en casa','fern':'televisión (sehe fern = veo tv)','schlafen':'dormir' },
-    preQ:'¿A qué hora te levantas tú? ¿Cómo se diría "me levanto a las 7" en alemán?',
-    preA:'"Ich stehe um sieben Uhr auf" — el verbo separable "aufstehen" parte el prefijo al final: "Ich stehe... auf". Los trenes horarios usan "Uhr" (reloj).',
+    goal:'Lee el texto y averigua: ¿a qué hora se levanta y qué hace por la mañana?',
+    keyVocab:[
+      { w:'ich stehe … auf', t:'me levanto (aufstehen, separable)' },
+      { w:'um sieben Uhr', t:'a las siete' },
+      { w:'das Frühstück', t:'el desayuno' },
+      { w:'ich gehe zur Arbeit', t:'voy al trabajo' },
+      { w:'am Abend', t:'por la noche' },
+      { w:'dann / danach', t:'luego / después' },
+    ],
     mcqs:[
       { q:'Wo lebt Jonas?', opts:['München','Berlin','Hamburg','Köln'], answer:3, label:'comprensión' },
       { q:'Wann steht Jonas auf?', opts:['Um fünf Uhr','Um sechs Uhr','Um sieben Uhr','Um acht Uhr'], answer:1, label:'comprensión' },
@@ -90,8 +119,15 @@ const TEXTS: TextData[] = [
     id:5, title:'Meine Hobbys', subtitle:'Lisa spricht über ihre Freizeit',
     text:'Ich heiße Lisa und ich komme aus Stuttgart. In meiner Freizeit spiele ich gern Gitarre. Ich übe jeden Tag eine Stunde. Ich höre auch viel Musik — meine Lieblingsband ist "Tokio Hotel". Am Wochenende gehe ich mit meiner Schwester schwimmen oder wir machen einen Spaziergang im Park. Ich lese auch sehr gern. Mein Lieblingsbuch ist "Der Kleine Prinz". Ich mag keine Videospiele.',
     vocab:{ 'Freizeit':'tiempo libre','spiele':'toco/juego','gern':'con gusto/me gusta','übe':'practico','Stunde':'hora','höre':'escucho','Lieblingsband':'banda favorita','Schwester':'hermana','schwimmen':'nadar','Spaziergang':'paseo','Lieblingsbuch':'libro favorito','mag':'me gusta (mögen)','Videospiele':'videojuegos' },
-    preQ:'¿Qué pasatiempos tienes tú? ¿Cómo se dice "me gusta escuchar música" en alemán?',
-    preA:'"Ich höre gern Musik" — "gern" + verbo = me gusta hacer algo. Es la estructura más natural para expresar gustos en alemán.',
+    goal:'Lee el texto y averigua: ¿qué pasatiempos tiene y qué hace los fines de semana?',
+    keyVocab:[
+      { w:'ich … gern', t:'me gusta (gern + verbo)' },
+      { w:'ich höre Musik', t:'escucho música' },
+      { w:'ich spiele', t:'juego / toco' },
+      { w:'ich treffe Freunde', t:'me encuentro con amigos' },
+      { w:'das Hobby', t:'el pasatiempo' },
+      { w:'am Wochenende', t:'el fin de semana' },
+    ],
     mcqs:[
       { q:'Woher kommt Lisa?', opts:['Berlin','München','Stuttgart','Köln'], answer:2, label:'comprensión' },
       { q:'Wie lange übt Lisa Gitarre?', opts:['Dreißig Minuten','Eine Stunde','Zwei Stunden','Jeden Abend'], answer:1, label:'comprensión' },
@@ -152,13 +188,18 @@ function TextExercise({ data, onBack }: { data: TextData; onBack: () => void }) 
         <div>
           <p className="eyebrow" style={{ marginBottom:'0.4rem' }}><span className="ink-line"/>Vor dem Lesen · Vor der Lektüre</p>
           <h2 style={{ fontSize:'1.75rem', margin:'0 0 1.25rem', fontWeight:700 }}>{data.title} — {data.subtitle}</h2>
-          <div style={{ padding:'1.1rem 1.3rem', borderRadius:14, background:`${COLOR}08`, border:`1.5px solid ${COLOR}25`, marginBottom:'1.25rem' }}>
-            <div style={{ fontSize:'0.65rem', fontWeight:800, color:COLOR, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.4rem' }}>Pregunta de activación</div>
-            <p style={{ margin:'0 0 0.75rem', color:'var(--ink)', lineHeight:1.6, fontWeight:600 }}>{data.preQ}</p>
-            <details>
-              <summary style={{ fontSize:'0.82rem', color:COLOR, cursor:'pointer', fontWeight:700 }}>💡 Ver orientación</summary>
-              <p style={{ margin:'0.5rem 0 0', fontSize:'0.85rem', color:'var(--muted)', lineHeight:1.55 }}>{data.preA}</p>
-            </details>
+          <div style={{ padding:'0.9rem 1.1rem', borderRadius:12, background:`${COLOR}10`, border:`1px solid ${COLOR}33`, marginBottom:'1rem' }}>
+            <div style={{ fontSize:'0.66rem', fontWeight:800, color:COLOR, fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin:0, color:'var(--ink)', lineHeight:1.55, fontWeight:600, fontSize:'0.95rem' }}>{data.goal}</p>
+          </div>
+          <div style={{ fontSize:'0.66rem', fontWeight:800, color:'var(--muted)', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:'0.6rem' }}>📚 Vocabulario clave — apréndelo antes de leer</div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(180px, 1fr))', gap:'0.5rem', marginBottom:'1.25rem' }}>
+            {data.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding:'0.6rem 0.85rem', borderRadius:10, background:'var(--bg-2)', border:'1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight:800, color:'var(--ink)', fontSize:'0.9rem' }}>{kv.w}</div>
+                <div style={{ color:'var(--muted)', fontSize:'0.8rem' }}>{kv.t}</div>
+              </div>
+            ))}
           </div>
           <button className="btn btn-sm" onClick={() => setPhase('read')} style={{ background:COLOR, borderColor:COLOR }}>Zum Text → Weiter</button>
         </div>

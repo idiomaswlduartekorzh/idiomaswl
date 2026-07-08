@@ -39,10 +39,10 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
       openGraph: {
         title: meta.seoTitle,
         description: meta.seoDescription,
-        url: `https://idiomaswl.com/courses/${lang}/step/${stepId}`,
+        url: `https://www.idiomaswl.com/courses/${lang}/step/${stepId}`,
       },
       alternates: {
-        canonical: `https://idiomaswl.com/courses/${lang}/step/${stepId}`,
+        canonical: `https://www.idiomaswl.com/courses/${lang}/step/${stepId}`,
       },
     };
   }
@@ -72,10 +72,10 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
     openGraph: {
       title,
       description,
-      url: `https://idiomaswl.com/courses/${lang}/step/${stepId}`,
+      url: `https://www.idiomaswl.com/courses/${lang}/step/${stepId}`,
     },
     alternates: {
-      canonical: `https://idiomaswl.com/courses/${lang}/step/${stepId}`,
+      canonical: `https://www.idiomaswl.com/courses/${lang}/step/${stepId}`,
     },
   };
 }

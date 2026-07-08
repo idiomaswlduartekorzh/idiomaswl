@@ -50,3 +50,46 @@ export function QuizSchema({ name, url, description }: { name: string; url: stri
     />
   );
 }
+
+interface GrammarLessonSchemaProps {
+  name: string;
+  url: string;
+  description: string;
+  educationalLevel?: string;
+  inLanguage?: string;
+  keywords?: string[];
+  course?: { name: string; url: string };
+}
+
+// Lección de gramática (explicación + ejercicios): LearningResource para
+// que Google entienda que es contenido educativo indexable por tema.
+export function GrammarLessonSchema({
+  name, url, description, educationalLevel = 'A1', inLanguage = 'en', keywords,
+  course = { name: 'Gramática de Inglés A1', url: 'https://www.idiomaswl.com/practica/ingles/a1/gramatica' },
+}: GrammarLessonSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name,
+    url,
+    description,
+    learningResourceType: ['Lesson', 'Quiz'],
+    educationalLevel,
+    inLanguage,
+    teaches: name,
+    isAccessibleForFree: true,
+    ...(keywords && keywords.length > 0 && { keywords: keywords.join(', ') }),
+    provider: { '@type': 'Organization', name: 'Idiomas WeLearn', sameAs: 'https://www.idiomaswl.com' },
+    isPartOf: {
+      '@type': 'Course',
+      name: course.name,
+      url: course.url,
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

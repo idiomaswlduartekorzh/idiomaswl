@@ -1,0 +1,191 @@
+.page {
+  position: relative;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: linear-gradient(160deg, #0a0e1e 0%, #10142c 55%, #0a0e1e 100%);
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 1.25rem 3rem;
+}
+
+/* ── Decorative pill dashes — corner motif borrowed from the WeLearn logo ── */
+.dashCluster {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: rotate(-38deg);
+  pointer-events: none;
+  z-index: 0;
+}
+.dashBlue, .dashRed {
+  display: block;
+  width: 46px;
+  height: 15px;
+  border-radius: 999px;
+}
+.dashBlue { background: #3b52ff; opacity: 0.9; }
+.dashRed  { background: #ff3347; opacity: 0.9; }
+
+.dashTopLeft     { top: 5%;  left: 0; }
+.dashTopRight    { top: 5%;  right: 0; align-items: flex-end; }
+.dashBottomRight { bottom: 5%; right: 0; align-items: flex-end; }
+.dashBottomLeft  { bottom: 5%; left: 0; }
+
+@media (max-width: 640px) {
+  .dashBlue, .dashRed { width: 30px; height: 10px; }
+  .dashCluster { gap: 6px; }
+}
+
+/* Small inline pill divider — same dash shape, used as a section break */
+.pillDivider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0.9rem 0;
+}
+.dashBlueSm, .dashRedSm {
+  display: block;
+  width: 22px;
+  height: 8px;
+  border-radius: 999px;
+}
+.dashBlueSm { background: #3b52ff; }
+.dashRedSm  { background: #ff3347; }
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(255, 255, 255, 0.08);
+  margin-bottom: 1.1rem;
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.name {
+  font-family: var(--sans);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+}
+.tagline {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #e8192c;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 0.6rem;
+}
+.sub {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 1.75rem;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 0.95rem 1.2rem;
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: transform 0.2s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.2s ease, background 0.2s ease;
+}
+.pill:hover { transform: translateY(-2px); }
+
+.pillWhatsapp {
+  background: #e8192c;
+  color: #fff;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 6px 22px rgba(232, 25, 44, 0.4);
+}
+.pillWhatsapp:hover { filter: brightness(1.08); }
+
+.pillBlue {
+  background: #1a2ecc;
+  color: #fff;
+}
+.pillBlue:hover { filter: brightness(1.15); }
+
+.pillOutline {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.pillOutline:hover { background: rgba(255, 255, 255, 0.09); border-color: rgba(255, 255, 255, 0.32); }
+
+.pillIcon { font-size: 1.15rem; line-height: 1; flex-shrink: 0; }
+.pillLabel { flex: 1; text-align: left; display: flex; flex-direction: column; gap: 2px; }
+.pillSub {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.pillBadge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 1.9rem;
+}
+.socialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.socialBtn:hover { background: rgba(255, 255, 255, 0.14); transform: translateY(-2px); }
+
+.backLink {
+  margin-top: 1.6rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.backLink:hover { color: rgba(255, 255, 255, 0.7); }

@@ -259,8 +259,35 @@ export default function GramaticaItalianoB1() {
         <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Grammatica · Italiano B1</p>
         <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Gramática B1</h1>
         <p style={{ color: 'var(--muted)', fontSize: '0.95rem', maxWidth: 560, margin: '0 0 1.5rem', lineHeight: 1.6 }}>
-          5 temi B1: congiuntivo, condizionale, periodo ipotetico, pronomi relativi y discorso indiretto. Tabelle, esempi, fill-in, trasformazioni e correzione errori.
+          6 percorsi B1: congiuntivo, condizionale, particelle pronominali, periodo ipotetico, pronomi relativi y discorso indiretto. Tabelle, esempi, fill-in, trasformazioni e quest guidati.
         </p>
+
+        <Link href="/practica/italiano/b1/particelle" style={{ textDecoration: 'none', color: 'inherit', display: 'block', marginBottom: '1.5rem' }}>
+          <div style={{
+            padding: '1rem 1.15rem',
+            borderRadius: 14,
+            background: 'linear-gradient(135deg, rgba(0,146,70,0.08) 0%, transparent 100%)',
+            border: '1.5px solid rgba(0,146,70,0.24)',
+            borderLeft: '4px solid #009246',
+            display: 'flex',
+            gap: '0.9rem',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+          }}>
+            <div style={{ width: 44, height: 44, borderRadius: 11, background: '#009246', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', flexShrink: 0 }}>🎯</div>
+            <div style={{ flex: 1, minWidth: 220 }}>
+              <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#009246', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>Quest guidato · 6 livelli</div>
+              <div style={{ fontWeight: 850, color: 'var(--ink)', fontSize: '1rem', marginBottom: '0.18rem' }}>Particelle pronominali: ci, ne, gli, le, vi</div>
+              <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.84rem', lineHeight: 1.55 }}>
+                Guida aperta, progressione a XP e sei livelli per distinguere luogo, quantità, complemento indiretto e forme pronominali in contesto.
+              </p>
+            </div>
+            <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.55rem', color: '#009246', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 800 }}>
+              <span>48 esercizi</span>
+              <span style={{ fontSize: '1rem' }}>→</span>
+            </div>
+          </div>
+        </Link>
 
         <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '1.75rem' }}>
           {TOPICS.map((tp, i) => (

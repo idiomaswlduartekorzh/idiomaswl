@@ -5,7 +5,7 @@ import TTSPlayer from '@/components/practica/TTSPlayer';
 export const metadata: Metadata = {
   title: 'Italiano A1 Ascolto — Próximamente | Idiomas WeLearn',
   description: 'Ejercicios de comprensión auditiva A1 de italiano. Scripts con voz nativa italiana en preparación.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/italiano/a1/escucha' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/italiano/a1/escucha' },
 };
 
 const COLOR = '#0369a1';

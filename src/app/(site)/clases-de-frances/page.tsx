@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     title: 'Clases de Francés Online — Preparación DELF/DALF | WeLearn',
     description:
       'Tutor especializado, método estructurado, preparación DELF/DALF. Clase diagnóstico gratis. Para colombianos que van en serio.',
-    url: 'https://idiomaswl.com/clases-de-frances',
+    url: 'https://www.idiomaswl.com/clases-de-frances',
   },
-  alternates: { canonical: 'https://idiomaswl.com/clases-de-frances' },
+  alternates: { canonical: 'https://www.idiomaswl.com/clases-de-frances' },
 };
 
 const faqJsonLd = {
@@ -89,7 +89,7 @@ const jsonLd = {
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: [
         {
@@ -110,10 +110,10 @@ const jsonLd = {
     },
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://idiomaswl.com/#localbusiness',
+      '@id': 'https://www.idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
       description: 'Academia de idiomas online. Clases de francés, coreano, inglés, alemán, italiano y portugués.',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
       address: {
         '@type': 'PostalAddress',
@@ -125,8 +125,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de Francés', item: 'https://idiomaswl.com/clases-de-frances' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Francés', item: 'https://www.idiomaswl.com/clases-de-frances' },
       ],
     },
   ],

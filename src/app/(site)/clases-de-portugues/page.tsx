@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de Portugués Online — Preparación Celpe-Bras | WeLearn',
     description: 'Tutor especializado, preparación Celpe-Bras, portugués brasileño real. Clase diagnóstico gratis para colombianos.',
-    url: 'https://idiomaswl.com/clases-de-portugues',
+    url: 'https://www.idiomaswl.com/clases-de-portugues',
   },
-  alternates: { canonical: 'https://idiomaswl.com/clases-de-portugues' },
+  alternates: { canonical: 'https://www.idiomaswl.com/clases-de-portugues' },
 };
 
 const faqJsonLd = {
@@ -68,7 +68,7 @@ const jsonLd = {
       '@type': 'Course',
       name: 'Portugués con el método WeLearn',
       description: 'Aprende portugués brasileño desde cero hasta Celpe-Bras con tutor especializado.',
-      provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://idiomaswl.com' },
+      provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       hasCourseInstance: [{
         '@type': 'CourseInstance',
         courseMode: 'online',
@@ -80,17 +80,17 @@ const jsonLd = {
     },
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://idiomaswl.com/#localbusiness',
+      '@id': 'https://www.idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
       address: { '@type': 'PostalAddress', addressLocality: 'Bucaramanga', addressRegion: 'Santander', addressCountry: 'CO' },
     },
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de Portugués', item: 'https://idiomaswl.com/clases-de-portugues' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Portugués', item: 'https://www.idiomaswl.com/clases-de-portugues' },
       ],
     },
   ],

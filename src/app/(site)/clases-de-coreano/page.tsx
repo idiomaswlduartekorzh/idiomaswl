@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     title: 'Clases de Coreano en Bucaramanga y Online — WeLearn',
     description:
       'Academia de coreano en Bucaramanga. Hangul, pronunciación, TOPIK I y II. Clases 1:1. 50 cupos de Miembro Fundador para toda Colombia.',
-    url: 'https://idiomaswl.com/clases-de-coreano',
+    url: 'https://www.idiomaswl.com/clases-de-coreano',
   },
-  alternates: { canonical: 'https://idiomaswl.com/clases-de-coreano' },
+  alternates: { canonical: 'https://www.idiomaswl.com/clases-de-coreano' },
 };
 
 const faqJsonLd = {
@@ -76,7 +76,7 @@ const jsonLd = {
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       hasCourseInstance: [
         {
@@ -97,13 +97,13 @@ const jsonLd = {
     },
     {
       '@type': ['LocalBusiness', 'LanguageSchool'],
-      '@id': 'https://idiomaswl.com/#localbusiness',
+      '@id': 'https://www.idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
       alternateName: 'WeLearn Academia de Idiomas',
       description: 'Academia de idiomas en Bucaramanga con clases online para toda Colombia. Coreano, inglés, francés, alemán, italiano y portugués. Preparación TOPIK, IELTS, TOEFL, Goethe, DELF, CILS y Celpe-Bras.',
-      url: 'https://idiomaswl.com',
+      url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
-      image: 'https://idiomaswl.com/images/david-duarte.jpg',
+      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
       priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
@@ -128,8 +128,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de Coreano', item: 'https://idiomaswl.com/clases-de-coreano' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de Coreano', item: 'https://www.idiomaswl.com/clases-de-coreano' },
       ],
     },
   ],

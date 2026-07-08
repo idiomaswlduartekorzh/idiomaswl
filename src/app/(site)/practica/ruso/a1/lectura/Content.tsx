@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const COLOR = '#cc0000';
 
-interface ReadingText { id: number; title: string; titleEs: string; topic: string; words: number; grammar: string; text: string; translit: string; vocab: Record<string, string>; preQ: { q: string; opts: string[]; a: number }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
+interface ReadingText { id: number; title: string; titleEs: string; topic: string; words: number; grammar: string; text: string; translit: string; vocab: Record<string, string>; goal: string; keyVocab: { w: string; t: string }[]; mcq: { q: string; cat: string; opts: string[]; a: number; fb: string }[]; openQ: string; production: string; }
 
 const TEXTS: ReadingText[] = [
   {
@@ -13,9 +13,14 @@ const TEXTS: ReadingText[] = [
     text: 'Привет! Меня зовут Анна. Мне двадцать два года. Я студентка. Я из Москвы. Сейчас я живу в Боготе, в Колумбии. Я изучаю испанский язык. Мой любимый предмет — история. У меня есть кот. Его зовут Мурка.',
     translit: 'Privet! Menya zovut Anna. Mne dvadtsat\' dva goda. Ya studentka. Ya iz Moskvy. Seychas ya zhivu v Bogote, v Kolumbii. Ya izuchayu ispanskiy yazyk. Moy lyubimyy predmet — istoriya. U menya yest\' kot. Yego zovut Murka.',
     vocab: { привет:'privet — hola', меня:'menya — me / a mí', зовут:'zovut — llaman (me llamo)', мне:'mne — me / a mí (dativo)', двадцать:'dvadtsat\' — veinte', студентка:'studentka — estudiante (f.)', живу:'zhivu — vivo (yo)', изучаю:'izuchayu — estudio/aprendo', язык:'yazyk — idioma/lengua', любимый:'lyubimyy — favorito', предмет:'predmet — materia/asignatura', история:'istoriya — historia', есть:'yest\' — hay / tengo', кот:'kot — gato (m.)' },
-    preQ: [
-      { q: '¿Cuántos años tienes tú?', opts: ['Menos de 20', '20-25', 'Más de 25'], a: -1 },
-      { q: '¿Estudias un idioma ahora?', opts: ['Sí, uno', 'Sí, varios', 'No actualmente'], a: -1 },
+    goal: 'Lee la presentación de Anna y averigua: ¿de dónde es, qué estudia y qué mascota tiene?',
+    keyVocab: [
+      { w: 'меня зовут (menya zovut)', t: 'me llamo' },
+      { w: 'мне ... года (mne ... goda)', t: 'tengo ... años' },
+      { w: 'я из (ya iz)', t: 'soy de' },
+      { w: 'я живу (ya zhivu)', t: 'vivo' },
+      { w: 'я изучаю (ya izuchayu)', t: 'estudio / aprendo' },
+      { w: 'у меня есть (u menya yest)', t: 'tengo' },
     ],
     mcq: [
       { q: '¿Qué significa "меня зовут"?', cat: 'Vocabulario', opts: ['Yo soy','Me llamo','Soy de','Tengo'], a: 1, fb: '"Меня зовут" (menya zovut) = me llaman = me llamo. Literalmente "a mí me llaman".' },
@@ -32,9 +37,14 @@ const TEXTS: ReadingText[] = [
     text: 'Моя семья небольшая. Моя мама — врач. Она работает в больнице. Мой папа — инженер. Он работает в офисе. У меня есть сестра. Её зовут Катя. Ей восемнадцать лет. Она учится в университете. Мы живём в большом доме в Санкт-Петербурге.',
     translit: 'Moya sem\'ya nebol\'shaya. Moya mama — vrach. Ona rabotayet v bol\'nitse. Moy papa — inzhener. On rabotayet v ofise. U menya yest\' sestra. Yey vosemnadtsat\' let. Ona uchitsya v universitete. My zhivyom v bol\'shom dome v Sankt-Peterburge.',
     vocab: { семья:'sem\'ya — familia', небольшая:'nebol\'shaya — pequeña', врач:'vrach — médico/a', работает:'rabotayet — trabaja', больнице:'bol\'nitse — hospital (loc.)', инженер:'inzhener — ingeniero', офисе:'ofise — oficina (loc.)', сестра:'sestra — hermana', учится:'uchitsya — estudia/se educa', живём:'zhivyom — vivimos', большом:'bol\'shom — grande (loc.)', доме:'dome — casa (loc.)' },
-    preQ: [
-      { q: '¿Cuántos miembros tiene tu familia?', opts: ['2-3', '4-5', '6 o más'], a: -1 },
-      { q: '¿Algún familiar es médico o ingeniero?', opts: ['Médico', 'Ingeniero', 'Otra profesión', 'Ninguno'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿a qué se dedican los padres, cuántos años tiene la hermana y dónde vive la familia?',
+    keyVocab: [
+      { w: 'семья (sem\'ya)', t: 'familia' },
+      { w: 'врач (vrach)', t: 'médico/a' },
+      { w: 'инженер (inzhener)', t: 'ingeniero' },
+      { w: 'работает (rabotayet)', t: 'trabaja' },
+      { w: 'сестра (sestra)', t: 'hermana' },
+      { w: 'мы живём (my zhivyom)', t: 'vivimos' },
     ],
     mcq: [
       { q: '¿Qué significa "врач" (vrach)?', cat: 'Vocabulario', opts: ['Ingeniero','Abogado','Médico/a','Maestro/a'], a: 2, fb: '"Врач" (vrach) = médico/a. Es un sustantivo masculino aunque puede referirse a hombre o mujer.' },
@@ -51,9 +61,14 @@ const TEXTS: ReadingText[] = [
     text: 'Я встаю в семь часов утра. Я принимаю душ и завтракаю. Я пью кофе и ем бутерброд. В половине девятого я еду на работу на метро. Я работаю в центре города. Я заканчиваю работу в шесть часов вечера. Вечером я читаю книги или смотрю телевизор. Я ложусь спать в одиннадцать часов.',
     translit: 'Ya vstayú v sem\' chasov utra. Ya prinimayu dush i zavtrakáyu. Ya p\'yu kofe i yem buterbrод. V polovine devyatogo ya édu na rabotu na metro. Ya rabotayu v tsentre goroda. Ya zakanchivayu rabotu v shest\' chasov vechera. Vecherom ya chitayu knigi ili smotryu televizor. Ya lozhus\' spat\' v odinnadtsat\' chasov.',
     vocab: { встаю:'vstayu — me levanto', утра:'utra — de la mañana (gen.)', принимаю:'prinimayu — tomo/recibo', душ:'dush — ducha', завтракаю:'zavtrakayu — desayuno', пью:'p\'yu — bebo', ем:'yem — como', еду:'yedu — voy (en vehículo)', заканчиваю:'zakanchivayu — termino', вечером:'vecherom — en la noche/tarde', читаю:'chitayu — leo', смотрю:'smotryu — veo/miro', ложусь:'lozhus\' — me acuesto' },
-    preQ: [
-      { q: '¿A qué hora te levantas normalmente?', opts: ['Antes de las 7', 'Entre 7-8', 'Después de las 8'], a: -1 },
-      { q: '¿Cómo vas al trabajo/universidad?', opts: ['Metro/bus', 'Caminando', 'Carro'], a: -1 },
+    goal: 'Lee la rutina y averigua: ¿a qué hora se levanta, cómo va al trabajo y qué hace por la noche?',
+    keyVocab: [
+      { w: 'я встаю (ya vstayu)', t: 'me levanto' },
+      { w: 'завтракаю (zavtrakayu)', t: 'desayuno' },
+      { w: 'я еду (ya yedu)', t: 'voy (en transporte)' },
+      { w: 'я работаю (ya rabotayu)', t: 'trabajo' },
+      { w: 'читаю (chitayu)', t: 'leo' },
+      { w: 'ложусь спать (lozhus\' spat\')', t: 'me acuesto a dormir' },
     ],
     mcq: [
       { q: '¿Qué significa "я встаю" (ya vstayu)?', cat: 'Vocabulario', opts: ['Me duermo','Me levanto','Me ducho','Desayuno'], a: 1, fb: '"Встаю" (vstayu) = me levanto. De "вставать" (vstavat\') = levantarse. Verbo reflexivo de movimiento.' },
@@ -70,9 +85,14 @@ const TEXTS: ReadingText[] = [
     text: 'Я иду в магазин. В магазине есть фрукты, овощи и хлеб. Я беру яблоки, бананы и молоко. Продавец спрашивает: «Что ещё?» Я говорю: «Мне нужен хлеб, пожалуйста.» Продавец отвечает: «Хлеб стоит пятьдесят рублей.» Я плачу сто рублей. Продавец даёт сдачу — пятьдесят рублей. Я говорю: «Спасибо!» и выхожу из магазина.',
     translit: 'Ya idu v magazin. V magazine yest\' frukty, ovoshchi i khleb. Ya beru yabloki, banany i moloko. Prodavets sprashivayet: "Chto yeshchyo?" Ya govoryu: "Mne nuzhen khleb, pozhaluysta." Prodavets otvechayet: "Khleb stoit pyat\'desyat rubley." Ya plachu sto rubley. Prodavets dayot sdachu — pyat\'desyat rubley. Ya govoryu: "Spasibo!" i vykhozhu iz magazina.',
     vocab: { иду:'idu — voy (a pie)', магазин:'magazin — tienda', фрукты:'frukty — frutas', овощи:'ovoshchi — verduras', беру:'beru — tomo/cojo', продавец:'prodavets — vendedor', спрашивает:'sprashivayet — pregunta', нужен:'nuzhen — necesito (masc.)', стоит:'stoit — cuesta', плачу:'plachu — pago', сдачу:'sdachu — el cambio (dinero)', выхожу:'vykhozhu — salgo' },
-    preQ: [
-      { q: '¿Qué compras normalmente en el supermercado?', opts: ['Frutas/verduras', 'Carne/pescado', 'Todo tipo'], a: -1 },
-      { q: '¿Sabes cómo se dicen los números del 1 al 100 en ruso?', opts: ['Sí, bastante bien', 'Algunos', 'Muy pocos'], a: -1 },
+    goal: 'Lee el diálogo en la tienda y averigua: ¿qué compra, cuánto cuesta el pan y cuánto cambio recibe?',
+    keyVocab: [
+      { w: 'магазин (magazin)', t: 'tienda' },
+      { w: 'я беру (ya beru)', t: 'tomo / cojo' },
+      { w: 'сколько стоит? (skol\'ko stoit?)', t: '¿cuánto cuesta?' },
+      { w: 'мне нужен (mne nuzhen)', t: 'necesito' },
+      { w: 'рублей (rubley)', t: 'rublos' },
+      { w: 'сдачу (sdachu)', t: 'el cambio (dinero)' },
     ],
     mcq: [
       { q: '¿Qué significa "сколько стоит?" (skol\'ko stoit?)', cat: 'Vocabulario', opts: ['¿Qué necesitas?', '¿Cuánto cuesta?', '¿Dónde está?', '¿Cuándo abres?'], a: 1, fb: '"Сколько стоит?" = ¿cuánto cuesta? Сколько (skol\'ko) = cuánto; стоит (stoit) = cuesta.' },
@@ -89,9 +109,14 @@ const TEXTS: ReadingText[] = [
     text: 'У меня есть два друга. Мой друг Иван — высокий и добрый. Он живёт в Москве и работает врачом. Моя подруга Наташа — весёлая и умная. Она учится в университете. Иван любит спорт, а Наташа любит читать книги. Мы часто встречаемся в кафе. Мы пьём кофе и разговариваем.',
     translit: 'U menya yest\' dva druga. Moy drug Ivan — vysokiy i dobryy. On zhivyot v Moskve i rabotayet vrachom. Moya podruga Natasha — vyosyolaya i umnaya. Ona uchitsya v universitete. Ivan lyubit sport, a Natasha lyubit chitat\' knigi. My chasto vstrechayemsya v kafe. My p\'yom kofe i razgovarivaem.',
     vocab: { друга:'druga — amigos (gen. pl.)', высокий:'vysokiy — alto', добрый:'dobryy — bueno/bondadoso', живёт:'zhivyot — vive', подруга:'podruga — amiga (fem.)', весёлая:'vesyolaya — alegre', умная:'umnaya — inteligente', учится:'uchitsya — estudia', часто:'chasto — frecuentemente', встречаемся:'vstrechayemsya — nos encontramos', разговариваем:'razgovarivaem — conversamos' },
-    preQ: [
-      { q: '¿Cuántos amigos cercanos tienes?', opts: ['1-2', '3-5', 'Más de 5'], a: -1 },
-      { q: '¿Qué adjetivos conoces en ruso?', opts: ['Varios', 'Solo algunos', 'Casi ninguno'], a: -1 },
+    goal: 'Lee el texto y averigua: ¿cómo son los dos amigos, qué hace cada uno y dónde se encuentran?',
+    keyVocab: [
+      { w: 'друг / подруга (drug / podruga)', t: 'amigo / amiga' },
+      { w: 'высокий (vysokiy)', t: 'alto' },
+      { w: 'добрый (dobryy)', t: 'bueno / bondadoso' },
+      { w: 'весёлая (vesyolaya)', t: 'alegre' },
+      { w: 'умная (umnaya)', t: 'inteligente' },
+      { w: 'встречаемся (vstrechayemsya)', t: 'nos encontramos' },
     ],
     mcq: [
       { q: '¿Cuántos amigos menciona el narrador?', cat: 'Comprensión', opts: ['Uno', 'Dos', 'Tres', 'Cuatro'], a: 1, fb: '"У меня есть два друга" (u menya yest\' dva druga) = tengo dos amigos.' },
@@ -107,7 +132,6 @@ const TEXTS: ReadingText[] = [
 
 function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
   const [phase, setPhase] = useState<'pre' | 'read' | 'questions' | 'done'>('pre');
-  const [preAnswers, setPreAnswers] = useState<Record<number, number>>({});
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [activeWord, setActiveWord] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -126,7 +150,7 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
         <button onClick={onBack} className="btn btn-ghost btn-sm">← Все тексты</button>
-        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Текст {t.id} / 3 — {t.title}</span>
+        <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Текст {t.id} / 5 — {t.title}</span>
         <span style={{ marginLeft: 'auto', fontSize: '0.7rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>📝 {t.words} слов · {t.grammar}</span>
       </div>
 
@@ -147,17 +171,21 @@ function ReadingLesson({ t, onBack }: { t: ReadingText; onBack: () => void }) {
       {phase === 'pre' && (
         <div className="wl-card" style={{ padding: '1.5rem' }}>
           <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Перед чтением — antes de leer</p>
-          {t.preQ.map((pq, i) => (
-            <div key={i} style={{ marginBottom: '1.25rem' }}>
-              <p style={{ margin: '0 0 0.65rem', fontWeight: 600, color: 'var(--ink)', fontSize: '0.96rem' }}>{i + 1}. {pq.q}</p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {pq.opts.map((opt, oi) => (
-                  <button key={oi} onClick={() => setPreAnswers(p => ({ ...p, [i]: oi }))}
-                    className={preAnswers[i] === oi ? 'btn btn-sm' : 'btn btn-ghost btn-sm'} style={{ fontSize: '0.84rem' }}>{opt}</button>
-                ))}
+          {/* Objetivo de lectura */}
+          <div style={{ padding: '0.9rem 1.1rem', borderRadius: 12, background: `${COLOR}0d`, border: `1px solid ${COLOR}2a`, marginBottom: '1.25rem' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.3rem' }}>🎯 Tu objetivo</div>
+            <p style={{ margin: 0, fontWeight: 600, color: 'var(--ink)', fontSize: '0.95rem', lineHeight: 1.55 }}>{t.goal}</p>
+          </div>
+          {/* Vocabulario clave */}
+          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.6rem' }}>📚 Vocabulario clave — apréndelo antes de leer</div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '0.5rem', marginBottom: '1.25rem' }}>
+            {t.keyVocab.map((kv, i) => (
+              <div key={i} style={{ padding: '0.6rem 0.85rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.88rem' }}>{kv.w}</div>
+                <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>{kv.t}</div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <button className="btn btn-sm" onClick={() => setPhase('read')}>Готово — читать →</button>
         </div>
       )}
@@ -296,7 +324,7 @@ export default function LecturaRusoA1() {
         <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Чтение · Ruso A1</p>
         <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Lectura A1</h1>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 540, margin: '0 0 2rem' }}>
-          3 textos en cirílico con transliteración disponible, vocabulario interactivo y preguntas de comprensión. Haz clic en las palabras resaltadas para ver su transliteración y significado.
+          5 textos en cirílico con transliteración disponible, vocabulario interactivo y preguntas de comprensión. Haz clic en las palabras resaltadas para ver su transliteración y significado.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
           {TEXTS.map((t, i) => (

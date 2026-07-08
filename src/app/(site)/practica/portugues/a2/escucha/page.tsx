@@ -5,7 +5,7 @@ import TTSPlayer from '@/components/practica/TTSPlayer';
 export const metadata: Metadata = {
   title: 'Português A2 Compreensão auditiva — Próximamente | Idiomas WeLearn',
   description: 'Exercícios de compreensão auditiva A2 em português brasileiro. Diálogos sobre aeroporto, entrevista de emprego e planejamento de viagem.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/portugues/a2/escucha' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/a2/escucha' },
 };
 
 const COLOR = '#0369a1';

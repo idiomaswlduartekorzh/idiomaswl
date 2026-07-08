@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Práctica de Japonés — Elige tu nivel JLPT | Idiomas WeLearn',
   description: 'Ejercicios interactivos de japonés por nivel. A1/N5 disponible: Hiragana, Katakana, copula desu y vocabulario esencial.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/japones' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/japones' },
 };
 
 const COLOR = '#bc002d';
@@ -29,7 +29,7 @@ export default function JaponesPage() {
     <CourseSchema
       name="Práctica de Japonés — Ejercicios interactivos JLPT"
       description="Ejercicios de japonés por nivel JLPT: A1 disponible. Hiragana, Katakana, vocabulario y gramática."
-      url="https://idiomaswl.com/practica/japones"
+      url="https://www.idiomaswl.com/practica/japones"
       educationalLevel="A1,N5"
       teaches="Japonés, JLPT, Hiragana, Katakana"
       inLanguage="ja"

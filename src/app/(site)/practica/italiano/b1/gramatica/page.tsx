@@ -10,8 +10,8 @@ export default function Page() {
     <>
       <QuizSchema
         name="Gramática de Italiano B1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/italiano/b1/gramatica"
-        description="Ejercicios de gramática italiana B1: congiuntivo presente, condizionale, periodo ipotetico, pronomi relativi y discorso indiretto."
+        url="https://www.idiomaswl.com/practica/italiano/b1/gramatica"
+        description="Ejercicios de gramática italiana B1: congiuntivo presente, condizionale, particelle pronominali, periodo ipotetico, pronomi relativi y discorso indiretto."
       />
       <Content />
     </>

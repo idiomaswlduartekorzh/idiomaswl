@@ -6,8 +6,8 @@
 ---
 
 ## INGLÉS A1 — Escucha
-**Acento recomendado:** Inglés británico / americano neutro  
-**Página:** `/practica/ingles/a1/escucha`  
+**Acento recomendado:** Inglés británico / americano neutro
+**Página:** `/practica/ingles/a1/escucha`
 **Formato de entrega:** MP3 ~95–110 wpm
 
 ### Audio 1 — Tom's Daily Routine
@@ -26,7 +26,7 @@
 ---
 
 ### Audio 2 — A Phone Conversation
-**Duración estimada:** ~45 seg | **WPM:** 100 | **Acento:** Inglés americano  
+**Duración estimada:** ~45 seg | **WPM:** 100 | **Acento:** Inglés americano
 **Nota de producción:** Dos voces (Maria y John). Se puede hacer con una sola voz diferenciando el tono.
 
 **Script:**
@@ -41,7 +41,7 @@
 ---
 
 ### Audio 3 — At the Coffee Shop
-**Duración estimada:** ~40 seg | **WPM:** 105 | **Acento:** Inglés británico  
+**Duración estimada:** ~40 seg | **WPM:** 105 | **Acento:** Inglés británico
 **Nota de producción:** Dos voces (cliente y barista).
 
 **Script:**
@@ -56,12 +56,12 @@
 ---
 
 ## FRANCÉS A1 — Compréhension orale
-**Acento recomendado:** Francés parisino / francés estándar de TV  
-**Página:** `/practica/frances/a1/escucha`  
+**Acento recomendado:** Francés parisino / francés estándar de TV
+**Página:** `/practica/frances/a1/escucha`
 **Formato de entrega:** MP3 ~95–100 wpm
 
 ### Audio 1 — Dialogue à la boulangerie
-**Duración estimada:** ~35 seg | **WPM:** 100 | **Acento:** Francés parisino  
+**Duración estimada:** ~35 seg | **WPM:** 100 | **Acento:** Francés parisino
 **Nota:** Dos voces (cliente + dependienta).
 
 **Script:**
@@ -76,7 +76,7 @@
 ---
 
 ### Audio 2 — Se présenter
-**Duración estimada:** ~30 seg | **WPM:** 95 | **Acento:** Francés estándar  
+**Duración estimada:** ~30 seg | **WPM:** 95 | **Acento:** Francés estándar
 **Nota:** Una sola voz (mujer joven, Sophie).
 
 **Script:**
@@ -91,7 +91,7 @@
 ---
 
 ### Audio 3 — La météo
-**Duración estimada:** ~30 seg | **WPM:** 100 | **Acento:** Francés de TV (locutor neutro)  
+**Duración estimada:** ~30 seg | **WPM:** 100 | **Acento:** Francés de TV (locutor neutro)
 **Nota:** Una sola voz, tono de noticieros.
 
 **Script:**
@@ -106,12 +106,12 @@
 ---
 
 ## ALEMÁN A1 — Hörverstehen
-**Acento recomendado:** Hochdeutsch (alemán estándar)  
-**Página:** `/practica/aleman/a1/escucha`  
+**Acento recomendado:** Hochdeutsch (alemán estándar)
+**Página:** `/practica/aleman/a1/escucha`
 **Formato de entrega:** MP3 ~95–105 wpm
 
 ### Audio 1 — Sich vorstellen
-**Duración estimada:** ~30 seg | **WPM:** 95 | **Acento:** Hochdeutsch  
+**Duración estimada:** ~30 seg | **WPM:** 95 | **Acento:** Hochdeutsch
 **Nota:** Una sola voz (hombre adulto, Stefan Müller).
 
 **Script:**
@@ -126,7 +126,7 @@
 ---
 
 ### Audio 2 — Im Supermarkt
-**Duración estimada:** ~40 seg | **WPM:** 100 | **Acento:** Hochdeutsch con acento suave del norte  
+**Duración estimada:** ~40 seg | **WPM:** 100 | **Acento:** Hochdeutsch con acento suave del norte
 **Nota:** Dos voces (cliente + cajera).
 
 **Script:**
@@ -141,7 +141,7 @@
 ---
 
 ### Audio 3 — Der Tagesablauf
-**Duración estimada:** ~40 seg | **WPM:** 105 | **Acento:** Hochdeutsch (acento berlinés suave)  
+**Duración estimada:** ~40 seg | **WPM:** 105 | **Acento:** Hochdeutsch (acento berlinés suave)
 **Nota:** Una sola voz (hombre o mujer).
 
 **Script:**
@@ -156,12 +156,12 @@
 ---
 
 ## ITALIANO A1 — Ascolto
-**Acento recomendado:** Italiano estándar (milanese / romano neutro)  
-**Página:** `/practica/italiano/a1/escucha`  
+**Acento recomendado:** Italiano estándar (milanese / romano neutro)
+**Página:** `/practica/italiano/a1/escucha`
 **Formato de entrega:** MP3 ~95–105 wpm
 
 ### Audio 1 — Presentarsi a scuola
-**Duración estimada:** ~25 seg | **WPM:** 95 | **Acento:** Italiano estándar (milanese)  
+**Duración estimada:** ~25 seg | **WPM:** 95 | **Acento:** Italiano estándar (milanese)
 **Nota:** Una sola voz (mujer joven, Sofia).
 
 **Script:**
@@ -177,7 +177,7 @@
 ---
 
 ### Audio 2 — Al bar — ordinare un caffè
-**Duración estimada:** ~40 seg | **WPM:** 100 | **Acento:** Italiano estándar  
+**Duración estimada:** ~40 seg | **WPM:** 100 | **Acento:** Italiano estándar
 **Nota:** Dos voces (cliente + barista).
 
 **Script:**
@@ -192,7 +192,7 @@
 ---
 
 ### Audio 3 — Una telefonata — dove sei?
-**Duración estimada:** ~35 seg | **WPM:** 105 | **Acento:** Italiano informal (jóvenes)  
+**Duración estimada:** ~35 seg | **WPM:** 105 | **Acento:** Italiano informal (jóvenes)
 **Nota:** Dos voces (Marco + amigo/a). Tono de conversación telefónica casual.
 
 **Script:**
@@ -207,12 +207,12 @@
 ---
 
 ## PORTUGUÉS A1 — Compreensão auditiva
-**Acento recomendado:** Portugués brasileño (São Paulo / Belo Horizonte)  
-**Página:** `/practica/portugues/a1/escucha`  
+**Acento recomendado:** Portugués brasileño (São Paulo / Belo Horizonte)
+**Página:** `/practica/portugues/a1/escucha`
 **Formato de entrega:** MP3 ~95–105 wpm
 
 ### Audio 1 — No restaurante
-**Duración estimada:** ~40 seg | **WPM:** 100 | **Acento:** Portugués brasileño  
+**Duración estimada:** ~40 seg | **WPM:** 100 | **Acento:** Portugués brasileño
 **Nota:** Tres voces (garçom + 2 clientes) o dos voces.
 
 **Script:**
@@ -227,7 +227,7 @@
 ---
 
 ### Audio 2 — Se apresentando
-**Duración estimada:** ~30 seg | **WPM:** 95 | **Acento:** Portugués brasileño (sotaque mineiro)  
+**Duración estimada:** ~30 seg | **WPM:** 95 | **Acento:** Portugués brasileño (sotaque mineiro)
 **Nota:** Una sola voz (mujer, Camila).
 
 **Script:**
@@ -242,7 +242,7 @@
 ---
 
 ### Audio 3 — No mercado
-**Duración estimada:** ~40 seg | **WPM:** 105 | **Acento:** Portugués brasileño (São Paulo)  
+**Duración estimada:** ~40 seg | **WPM:** 105 | **Acento:** Portugués brasileño (São Paulo)
 **Nota:** Dos voces (cliente + vendedor de mercado).
 
 **Script:**
@@ -257,7 +257,7 @@
 ---
 
 ## COREANO A1 — 듣기 (Escucha)
-**Nota especial:** El coreano YA tiene la sección de escucha completamente implementada con scripts en Hangul + romanización + glosario + MCQ. Lo que falta son los audios MP3.  
+**Nota especial:** El coreano YA tiene la sección de escucha completamente implementada con scripts en Hangul + romanización + glosario + MCQ. Lo que falta son los audios MP3.
 **Página:** `/practica/coreano/a1/escucha`
 
 ### Audio 1 — 반 소개 (Presentaciones en clase)
@@ -347,5 +347,5 @@
 - **Herramienta rápida:** ElevenLabs o Play.ht pueden generar voces nativas de alta calidad en todos estos idiomas en minutos. Costo mínimo.
 - **Formato:** MP3, 44.1kHz, 128kbps es suficiente para web.
 - **Velocidad:** Mantener los WPM indicados — A1 debe sentirse cómodo y pausado.
-- **Nombres de archivo sugeridos:** `[idioma]-a1-escucha-[1|2|3].mp3`  
+- **Nombres de archivo sugeridos:** `[idioma]-a1-escucha-[1|2|3].mp3`
   Ejemplo: `ingles-a1-escucha-1.mp3`, `coreano-a1-escucha-2.mp3`

@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Simulacros de Certificación — Idiomas WeLearn',
     description: 'TOEFL, IELTS, ICFES y más. Simulacros completos con feedback de IA.',
-    url: 'https://idiomaswl.com/examenes',
+    url: 'https://www.idiomaswl.com/examenes',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/examenes',
+    canonical: 'https://www.idiomaswl.com/examenes',
   },
 };
 

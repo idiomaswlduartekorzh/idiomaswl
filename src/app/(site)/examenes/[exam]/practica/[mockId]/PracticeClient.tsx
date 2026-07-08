@@ -276,7 +276,8 @@ function MatchingGridSection({
 }) {
   const questions  = section.questions as MCQQuestion[];
   const wordsAG    = questions[0]?.options ?? [];          // 7 words → A–G
-  const allWords   = [...wordsAG, section.exampleAnswer ?? '']; // 8th = H
+  // H word is optional — cuadernillos don't have an example/H entry
+  const allWords   = section.exampleAnswer ? [...wordsAG, section.exampleAnswer] : wordsAG;
 
   // active row: the description the student last clicked
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -286,23 +287,25 @@ function MatchingGridSection({
       {/* Category title */}
       <h2 className="mg__title">{section.topic}</h2>
 
-      {/* ── Example block ── */}
-      <div className="mg__ex">
-        <span className="mg__ex-pill">Ejemplo:</span>
-        <p className="mg__ex-text"><strong>0.</strong>&nbsp;&nbsp;{section.exampleText}</p>
-        <div className="mg__resp-box">
-          <span className="mg__resp-lbl">Respuesta:</span>
-          <span className="mg__resp-zero">0.</span>
-          {allWords.map((_, i) => (
-            <span
-              key={i}
-              className={`mg__circ${i === allWords.length - 1 ? ' mg__circ--on' : ''}`}
-            >
-              {String.fromCharCode(65 + i)}
-            </span>
-          ))}
+      {/* ── Example block (optional — cuadernillos omit it) ── */}
+      {section.exampleText && (
+        <div className="mg__ex">
+          <span className="mg__ex-pill">Ejemplo:</span>
+          <p className="mg__ex-text"><strong>0.</strong>&nbsp;&nbsp;{section.exampleText}</p>
+          <div className="mg__resp-box">
+            <span className="mg__resp-lbl">Respuesta:</span>
+            <span className="mg__resp-zero">0.</span>
+            {allWords.map((_, i) => (
+              <span
+                key={i}
+                className={`mg__circ${i === allWords.length - 1 ? ' mg__circ--on' : ''}`}
+              >
+                {String.fromCharCode(65 + i)}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Hint */}
       <p className="mg__hint">

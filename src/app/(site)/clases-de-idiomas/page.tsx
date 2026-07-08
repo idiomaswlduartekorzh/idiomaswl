@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clases de idiomas online en Colombia | WeLearn',
     description: 'Inglés, coreano, francés, alemán, italiano y portugués con tutores especializados. Primera clase gratis.',
-    url: 'https://idiomaswl.com/clases-de-idiomas',
+    url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://idiomaswl.com/clases-de-idiomas',
+    canonical: 'https://www.idiomaswl.com/clases-de-idiomas',
   },
 };
 
@@ -124,13 +124,13 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://idiomaswl.com/clases-de-idiomas#service',
+      '@id': 'https://www.idiomaswl.com/clases-de-idiomas#service',
       name: 'Clases de idiomas online — Idiomas WeLearn',
       description: 'Clases de idiomas online 1:1 en Colombia: inglés, coreano, francés, alemán, italiano y portugués con tutores especializados.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
-        url: 'https://idiomaswl.com',
+        url: 'https://www.idiomaswl.com',
       },
       serviceType: 'Clases de idiomas online',
       areaServed: 'Colombia',
@@ -139,8 +139,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://idiomaswl.com' },
-        { '@type': 'ListItem', position: 2, name: 'Clases de idiomas', item: 'https://idiomaswl.com/clases-de-idiomas' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Clases de idiomas', item: 'https://www.idiomaswl.com/clases-de-idiomas' },
       ],
     },
   ],

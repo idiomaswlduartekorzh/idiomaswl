@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Práctica ICFES Inglés — Juego adaptativo + Simulacros | Idiomas WeLearn',
   description:
     'Practica el componente de inglés del ICFES Saber 11 con un juego adaptativo de 4 niveles o con simulacros de cuadernillos oficiales (2019, 2022, 2023).',
-  alternates: { canonical: 'https://idiomaswl.com/practica/icfes-saber-11' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/icfes-saber-11' },
 };
 
 export default function Page() {
