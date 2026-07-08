@@ -30,7 +30,6 @@ export function practicaMetadata(lang: string, level: string, skill: string): Me
   const sk = skillNames[skill] ?? skill
   const desc = skillDescriptions[skill] ?? 'ejercicios interactivos'
   const url = `https://www.idiomaswl.com/practica/${lang}/${level}/${skill}`
-  const ogImage = practiceOGImage(lang, level, skill)
 
   return {
     title: `${sk} en ${ln} ${lv} — Ejercicios interactivos gratis | Idiomas WeLearn`,
@@ -42,7 +41,6 @@ export function practicaMetadata(lang: string, level: string, skill: string): Me
       type: 'website',
       locale: 'es_CO',
       url,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: `${sk} en ${ln} ${lv}` }],
     },
     alternates: {
       canonical: url,
@@ -62,7 +60,6 @@ export function grammarTopicMetadata(opts: {
   const { lang, level, slug, title, description, keywords } = opts
   const url = `https://www.idiomaswl.com/practica/${lang}/${level}/gramatica/${slug}`
   const { emoji } = getLangDisplay(lang)
-  const ogImage = practiceOGImage(lang, level, 'gramatica')
 
   return {
     title,
@@ -74,7 +71,6 @@ export function grammarTopicMetadata(opts: {
       type: 'article',
       locale: 'es_CO',
       url,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     alternates: { canonical: url },
   }
@@ -147,7 +143,6 @@ export function levelMetadata(lang: string, level: string): Metadata {
   const ln = langNames[lang] ?? lang
   const lv = levelNames[level] ?? level.toUpperCase()
   const url = `https://www.idiomaswl.com/practica/${lang}/${level}`
-  const ogImage = practiceOGImage(lang, level, 'nivel')
 
   return {
     title: `${ln} ${lv} — Práctica completa de las 6 habilidades | Idiomas WeLearn`,
@@ -159,7 +154,6 @@ export function levelMetadata(lang: string, level: string): Metadata {
       type: 'website',
       locale: 'es_CO',
       url,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: `${ln} ${lv}` }],
     },
     alternates: { canonical: url },
   }
