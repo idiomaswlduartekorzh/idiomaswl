@@ -193,4 +193,30 @@ La homepage se considera terminada solo si cumple TODO esto:
 
 ---
 
-*Fin de la ruta. Con las decisiones D1–D4 resueltas, la próxima iteración entrega el resource list (A) y el research SERP completo (B), y con eso el homepage se codea sobre terreno firme, sin adivinar.*
+---
+
+## 10. Decisiones tomadas por el fundador (LOCKED)
+
+| # | Decisión | Resuelto |
+|---|----------|----------|
+| D1 | **Nivel 3D** | ✅ **Hero moment + motion elegante.** Un solo efecto 3D memorable (hero multilingüe vivo) + motion premium 2D en el resto. Riesgo de performance controlado, SEO seguro. |
+| D2 | **Foco geo** | ✅ **DUAL — local + nacional.** Bucaramanga (presencial + local SEO, `LocalBusiness`) **y** nacional online (`EducationalOrganization`). Conviven en el mismo `@graph` sin canibalizar. |
+| D4 | **Datos verificables** | ✅ **+1000 estudiantes** (actualizar el "500+" del home a "1000+"), número exacto disponible · **Reseñas/rating reales** → habilita `AggregateRating` legítimo en schema · **Redes de David/Zhanna** → `sameAs` en la entidad `Person`. |
+
+**Implicaciones para el build:**
+- Estrategia SEO **dual local+nacional**: entidad `LocalBusiness` (Bucaramanga, NAP, `areaServed`, horarios si hay presencial) + `EducationalOrganization` (online nacional). Copy que sirva ambas intenciones ("en Bucaramanga y en toda Colombia, online").
+- Actualizar cifra a **1000+ estudiantes** en hero/stats.
+- Añadir `AggregateRating` al `@graph` **con reseñas reales** (pedir a David el rating y nº de reseñas exactos, o fuente Google Business).
+- Añadir `sameAs` (Instagram/LinkedIn/YouTube de David y Zhanna) a las entidades `Person` — refuerza E-E-A-T y AEO.
+
+**⚠️ Pendiente de confirmar (contradice CLAUDE.md "100% online"):** ¿hay clases **presenciales** reales en Bucaramanga, o es operación online con sede en Bucaramanga? Determina si el schema `LocalBusiness` lleva dirección/horarios físicos y qué promete el copy. **No asumir.**
+
+**Pendiente de recolectar para la próxima iteración (de David):**
+- Número exacto de estudiantes.
+- Rating promedio + nº de reseñas (fuente verificable).
+- URLs de redes de David y Zhanna para `sameAs`.
+- Confirmación presencial vs. online en Bucaramanga.
+
+---
+
+*Fin de la ruta. Con D1, D2 y D4 resueltas (falta confirmar presencial y recolectar datos exactos), la próxima iteración entrega el resource list (A) y el research SERP completo (B), y con eso el homepage se codea sobre terreno firme, sin adivinar.*
