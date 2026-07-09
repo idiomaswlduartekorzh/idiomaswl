@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
 import HeroLangSelector from './HeroLangSelector';
@@ -212,6 +213,14 @@ const METODO = [
   { n: '11', name: 'Examen acumulativo',   desc: 'Retención de largo plazo.',                             min: '10 min' },
 ];
 
+// Las 4 fases narrativas que agrupan los 11 pasos (icono SVG modelado in-house)
+const FASES = [
+  { icon: 'exposicion',    name: 'Exposición',    steps: 'Pasos 01 · 04 · 05',      desc: 'Ves, escuchas y lees el idioma en contexto antes de producir nada.' },
+  { icon: 'adquisicion',   name: 'Adquisición',   steps: 'Pasos 02 · 03 · 06 · 07', desc: 'Interiorizas vocabulario y patrones con quizzes y repaso espaciado.' },
+  { icon: 'produccion',    name: 'Producción',    steps: 'Pasos 08 · 09',           desc: 'Construyes frases y respondes en tiempo real, con apoyo del profesor.' },
+  { icon: 'consolidacion', name: 'Consolidación', steps: 'Pasos 10 · 11',           desc: 'Compruebas lo aprendido y lo fijas a largo plazo con exámenes.' },
+];
+
 const EXAMENES = [
   { badge: 'ACADEMIC',        name: 'TOEFL',           lang: 'Inglés · iBT',               weeks: '8 semanas',  mocks: '12 simulacros', slug: 'toefl'        },
   { badge: 'BAND 7+',        name: 'IELTS',           lang: 'Inglés · Academic & General', weeks: '8 semanas',  mocks: '10 simulacros', slug: 'ielts'        },
@@ -241,6 +250,7 @@ const MODALIDAD = [
 const TEAM = [
   {
     initials: 'JD',
+    img: '/images/david-duarte.jpg',
     name: 'José David Duarte Silva',
     role: 'Co-fundador · Director General',
     tags: ['Políglota · 8 idiomas', 'Lingüística aplicada', 'Metodología pedagógica'],
@@ -249,6 +259,7 @@ const TEAM = [
   },
   {
     initials: 'ZK',
+    img: null,
     name: 'Zhanna Korzh',
     role: 'Directora Académica',
     tags: ['Diseño curricular', 'Preparación de exámenes', 'Evaluación lingüística'],
@@ -283,6 +294,61 @@ const TESTIMONIALS = [
     quote: 'Realmente les agradezco a ustedes dos por toda la ayuda, el master dura 2 años pero mi profesor quiere que haga otro curso cuando me gradúe.',
   },
 ];
+
+// Íconos SVG modelados a mano (línea única, coherentes) — sin imágenes de IA
+function PhaseIcon({ name }: { name: string }) {
+  const p = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
+  switch (name) {
+    case 'exposicion':
+      return (
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path {...p} d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
+          <circle {...p} cx="12" cy="12" r="3" />
+        </svg>
+      );
+    case 'adquisicion':
+      return (
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path {...p} d="M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.2V16h6v-.3c0-.8.4-1.6 1-2.2A6 6 0 0 0 12 3Z" />
+          <path {...p} d="M9.5 19h5M10.5 21.5h3" />
+        </svg>
+      );
+    case 'produccion':
+      return (
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path {...p} d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z" />
+          <path {...p} d="M8.5 11.5h7M8.5 14.5h4" />
+        </svg>
+      );
+    case 'consolidacion':
+      return (
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path {...p} d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+          <path {...p} d="m8.5 12 2.5 2.5L15.5 10" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
+
+function MarkX() {
+  return (
+    <svg className="wlh-appvs__mark-svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <path d="m9 9 6 6M15 9l-6 6" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function MarkCheck() {
+  return (
+    <svg className="wlh-appvs__mark-svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <path d="m8 12.5 2.5 2.5L16 9.5" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
 
 export default function HomePage() {
   return (
@@ -367,8 +433,14 @@ export default function HomePage() {
               <div className="wlh-appvs__head wlh-appvs__head--wl">WeLearn</div>
               {APP_VS_WELEARN.map((row, i) => (
                 <div key={i} className="wlh-appvs__row-group">
-                  <div className="wlh-appvs__cell wlh-appvs__cell--app">{row.app}</div>
-                  <div className="wlh-appvs__cell wlh-appvs__cell--wl">{row.wl}</div>
+                  <div className="wlh-appvs__cell wlh-appvs__cell--app">
+                    <span className="wlh-appvs__mark wlh-appvs__mark--app"><MarkX /></span>
+                    <span>{row.app}</span>
+                  </div>
+                  <div className="wlh-appvs__cell wlh-appvs__cell--wl">
+                    <span className="wlh-appvs__mark wlh-appvs__mark--wl"><MarkCheck /></span>
+                    <span>{row.wl}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -383,15 +455,33 @@ export default function HomePage() {
 
       {/* 02 — METODO */}
       <section id="metodo" className="wlh-section wlh-section--alt">
-        <div className="wrap wlh-metodo-wrap">
-          <FadeUp className="wlh-metodo-left">
+        <div className="wrap">
+          <FadeUp>
             <p className="wlh-section-eyebrow">02 — El método</p>
             <h2 className="wlh-section-h2">El día tiene once pasos. Cada uno tiene una razón.</h2>
             <p className="wlh-section-desc">
               El método de 11 pasos de WeLearn estructura cada día de estudio en cuatro fases —exposición,
-              adquisición, producción y repaso espaciado— imitando cómo el cerebro interioriza una lengua
+              adquisición, producción y consolidación— imitando cómo el cerebro interioriza una lengua
               materna. Por eso el conocimiento se retiene y se convierte en habla, no en tarjetas olvidadas.
             </p>
+          </FadeUp>
+          <StaggerGrid className="wlh-fases-grid">
+            {FASES.map(fase => (
+              <StaggerItem key={fase.icon}>
+                <div className="wlh-fase-card">
+                  <span className="wlh-fase-card__icon"><PhaseIcon name={fase.icon} /></span>
+                  <h3 className="wlh-fase-card__name">{fase.name}</h3>
+                  <span className="wlh-fase-card__steps">{fase.steps}</span>
+                  <p className="wlh-fase-card__desc">{fase.desc}</p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGrid>
+        </div>
+        <div className="wrap wlh-metodo-wrap">
+          <FadeUp className="wlh-metodo-left">
+            <h3 className="wlh-metodo-subtitle">El día completo, paso a paso.</h3>
+            <p className="wlh-section-desc">Cada uno de los once pasos cumple una función concreta dentro de las cuatro fases.</p>
             <div className="wlh-metodo-tags">
               <span className="wlh-tag">Audio · Imagen · Texto</span>
               <span className="wlh-tag">Repaso espaciado</span>
@@ -556,8 +646,12 @@ export default function HomePage() {
           <div className="wlh-team-grid">
             {TEAM.map((member, i) => (
               <TeamCard key={member.name} className="wlh-team-card" delay={i * 0.12}>
-                <div className="wlh-team-card__avatar" style={{ background: member.accent }}>
-                  {member.initials}
+                <div className="wlh-team-card__avatar" style={member.img ? undefined : { background: member.accent }}>
+                  {member.img ? (
+                    <Image src={member.img} alt={`Foto de ${member.name}, ${member.role}`} width={80} height={80} className="wlh-team-card__photo" />
+                  ) : (
+                    member.initials
+                  )}
                 </div>
                 <div className="wlh-team-card__body">
                   <h3 className="wlh-team-card__name">{member.name}</h3>
