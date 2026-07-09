@@ -9,6 +9,11 @@ import secondConditional from './second-conditional-b1'
 import modalsMustHaveTo from './modals-must-have-to-b1'
 import passiveVoice from './passive-voice-b1'
 import relativeClauses from './relative-clauses-b1'
+import gerundsInfinitives from './gerunds-infinitives-b1'
+import reportedSpeech from './reported-speech-b1'
+import comparisonAdjectivesAdverbs from './comparison-adjectives-adverbs-b1'
+import quantifiers from './quantifiers-b1'
+import articlesAdvanced from './articles-advanced-b1'
 
 const topics: GrammarTopic[] = [
   pastContinuous,
@@ -21,6 +26,11 @@ const topics: GrammarTopic[] = [
   modalsMustHaveTo,
   passiveVoice,
   relativeClauses,
+  gerundsInfinitives,
+  reportedSpeech,
+  comparisonAdjectivesAdverbs,
+  quantifiers,
+  articlesAdvanced,
 ]
 
 export default topics
