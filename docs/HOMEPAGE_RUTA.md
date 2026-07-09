@@ -199,23 +199,23 @@ La homepage se considera terminada solo si cumple TODO esto:
 
 | # | Decisión | Resuelto |
 |---|----------|----------|
-| D1 | **Nivel 3D** | ✅ **Hero moment + motion elegante.** Un solo efecto 3D memorable (hero multilingüe vivo) + motion premium 2D en el resto. Riesgo de performance controlado, SEO seguro. |
-| D2 | **Foco geo** | ✅ **DUAL — local + nacional.** Bucaramanga (presencial + local SEO, `LocalBusiness`) **y** nacional online (`EducationalOrganization`). Conviven en el mismo `@graph` sin canibalizar. |
-| D4 | **Datos verificables** | ✅ **+1000 estudiantes** (actualizar el "500+" del home a "1000+"), número exacto disponible · **Reseñas/rating reales** → habilita `AggregateRating` legítimo en schema · **Redes de David/Zhanna** → `sameAs` en la entidad `Person`. |
+| D1 | **Nivel 3D** | ✅ **REVISADO → Motion premium "high-tech educativo", sin WebGL pesado.** El fundador prioriza minimizar riesgo SEO. Animaciones cinematográficas con Framer Motion + Lenis (ya instalados): reveals, parallax sutil, microinteracciones, tipografía animada. Cero canvas pesado. Visualmente premium/disruptivo **sin arriesgar Core Web Vitals**. |
+| D2 | **Foco geo** | ✅ **DUAL — presencial local + online nacional/mundial.** Sede física real en Bucaramanga (clases presenciales) + online para el resto de Colombia y el mundo. Schema `LocalBusiness` (con dirección/sede real) + `EducationalOrganization` (online). Conviven en el `@graph`. |
+| D4 | **Datos verificables** | ✅ **+1000 estudiantes** (actualizar "500+" → "1000+") · **Reseñas/rating reales** → habilita `AggregateRating` (falta el rating y nº exactos) · **Redes de marca:** TikTok `@idiomas.welearn` + Instagram `@idiomas_welearn` → `sameAs` en la entidad `Organization`. |
+
+**Presencial CONFIRMADO:** WeLearn tiene **sede física en Bucaramanga con clases presenciales** + modalidad online para el resto del país y el mundo. Corregir el "100% online" de CLAUDE.md → **"presencial en Bucaramanga y online en toda Colombia y el mundo"**. El schema `LocalBusiness` lleva dirección/sede real; el copy promete ambas modalidades.
 
 **Implicaciones para el build:**
-- Estrategia SEO **dual local+nacional**: entidad `LocalBusiness` (Bucaramanga, NAP, `areaServed`, horarios si hay presencial) + `EducationalOrganization` (online nacional). Copy que sirva ambas intenciones ("en Bucaramanga y en toda Colombia, online").
+- Estrategia SEO **dual**: `LocalBusiness` (Bucaramanga, NAP, `areaServed`) + `EducationalOrganization` (online). Copy que sirva ambas intenciones: *"En nuestra sede en Bucaramanga o desde cualquier lugar, online."*
 - Actualizar cifra a **1000+ estudiantes** en hero/stats.
-- Añadir `AggregateRating` al `@graph` **con reseñas reales** (pedir a David el rating y nº de reseñas exactos, o fuente Google Business).
-- Añadir `sameAs` (Instagram/LinkedIn/YouTube de David y Zhanna) a las entidades `Person` — refuerza E-E-A-T y AEO.
+- `sameAs` en `Organization`: `https://www.tiktok.com/@idiomas.welearn`, `https://www.instagram.com/idiomas_welearn/`.
+- Sistema visual: **motion premium sin WebGL** (Framer Motion + Lenis). Sin dependencias 3D nuevas.
 
-**⚠️ Pendiente de confirmar (contradice CLAUDE.md "100% online"):** ¿hay clases **presenciales** reales en Bucaramanga, o es operación online con sede en Bucaramanga? Determina si el schema `LocalBusiness` lleva dirección/horarios físicos y qué promete el copy. **No asumir.**
-
-**Pendiente de recolectar para la próxima iteración (de David):**
-- Número exacto de estudiantes.
-- Rating promedio + nº de reseñas (fuente verificable).
-- URLs de redes de David y Zhanna para `sameAs`.
-- Confirmación presencial vs. online en Bucaramanga.
+**Pendiente de recolectar (de David, no bloquea el arranque):**
+- Número exacto de estudiantes (para reemplazar "1000+" por cifra precisa si se desea).
+- Rating promedio + nº de reseñas + fuente (Google Business) para `AggregateRating`.
+- Dirección exacta de la sede en Bucaramanga (para NAP + `LocalBusiness`).
+- Redes personales de David/Zhanna (si existen) para `sameAs` en `Person`.
 
 ---
 
