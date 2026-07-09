@@ -11,17 +11,24 @@ import {
   CountUp, TiltCard, TeamCard, TestimonialCard,
 } from './HomeAnimations';
 
+// Mensaje pre-escrito de WhatsApp para la clase de diagnóstico gratis (CRM = WhatsApp)
+const WA_DIAGNOSTICO =
+  'https://wa.me/573005004253?text=Hola%2C%20quiero%20agendar%20mi%20clase%20de%20diagn%C3%B3stico%20gratis.';
+
 export const metadata: Metadata = {
-  title: 'Aprende un idioma, en serio',
+  title: 'Academia de idiomas en Bucaramanga y online — Aprende en serio',
   description:
-    'Once pasos diarios diseñados para que el cerebro interiorice un idioma de verdad. Vocabulario, gramática, escucha y producción. Coreano, inglés, francés, alemán, italiano, portugués y ruso.',
+    'Academia de idiomas con sede presencial en Bucaramanga y clases online en toda Colombia y el mundo. Profesores reales, método propio de 11 pasos y preparación para IELTS, TOEFL, ICFES, TOPIK, Goethe, DELF y más. Clase de diagnóstico gratis.',
   keywords: [
-    'aprender coreano', 'aprender inglés gratis', 'método WeLearn', 'TOEFL iBT',
-    'IELTS simulacro', 'ICFES saber 11 inglés', 'once pasos idioma',
+    'academia de idiomas online colombia', 'clases de idiomas bucaramanga',
+    'curso de ingles online colombia', 'preparación IELTS', 'preparación TOEFL',
+    'ICFES saber 11 inglés', 'aprender coreano desde cero', 'curso de alemán goethe',
+    'profesor de inglés bucaramanga', 'método WeLearn once pasos',
   ],
   openGraph: {
-    title: 'Idiomas WeLearn — Aprende un idioma, en serio',
-    description: 'Once pasos diarios que imitan cómo el cerebro interioriza un idioma. Gratis para empezar.',
+    title: 'Idiomas WeLearn — Academia de idiomas en Bucaramanga y online',
+    description:
+      'Presencial en Bucaramanga y online en toda Colombia. Profesores reales, método de 11 pasos y preparación de exámenes internacionales. Clase de diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/home',
   },
   alternates: {
@@ -42,30 +49,62 @@ const jsonLd = {
         url: 'https://www.idiomaswl.com/images/welearn-logo.png',
       },
       description:
-        'Plataforma de aprendizaje de idiomas con el método WeLearn: once etapas diarias para interiorizar vocabulario, gramática y pronunciación.',
-      sameAs: [],
+        'Academia de idiomas con sede presencial en Bucaramanga y clases online en toda Colombia y el mundo. Método WeLearn de once etapas diarias para interiorizar vocabulario, gramática y pronunciación.',
+      sameAs: [
+        'https://www.tiktok.com/@idiomas.welearn',
+        'https://www.instagram.com/idiomas_welearn/',
+      ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        telephone: '+573005004253',
+        availableLanguage: ['es', 'en'],
+      },
     },
     {
       '@type': 'WebSite',
       '@id': 'https://www.idiomaswl.com/#website',
       url: 'https://www.idiomaswl.com',
       name: 'Idiomas WeLearn',
-      description: 'Aprende coreano, inglés, francés y más con once pasos diarios.',
+      description: 'Aprende inglés, coreano, francés, alemán y más — presencial en Bucaramanga y online.',
       publisher: { '@id': 'https://www.idiomaswl.com/#organization' },
     },
     {
-      '@type': 'EducationalOrganization',
+      '@type': ['EducationalOrganization', 'LocalBusiness'],
       '@id': 'https://www.idiomaswl.com/#edu',
       name: 'Idiomas WeLearn',
       url: 'https://www.idiomaswl.com',
-      description: 'Plataforma educativa para aprender idiomas y prepararse para certificaciones internacionales como TOEFL, IELTS e ICFES.',
+      description:
+        'Academia de idiomas y preparación de exámenes internacionales (TOEFL, IELTS, ICFES, TOPIK, Goethe, DELF, CILS, CELPE-Bras). Clases presenciales en Bucaramanga y online en toda Colombia y el mundo.',
+      telephone: '+573005004253',
+      priceRange: '$$',
+      image: 'https://www.idiomaswl.com/images/welearn-logo.png',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Bucaramanga',
+        addressRegion: 'Santander',
+        addressCountry: 'CO',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Bucaramanga' },
+        { '@type': 'Country', name: 'Colombia' },
+        'Online',
+      ],
+      sameAs: [
+        'https://www.tiktok.com/@idiomas.welearn',
+        'https://www.instagram.com/idiomas_welearn/',
+      ],
+      parentOrganization: { '@id': 'https://www.idiomaswl.com/#organization' },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: 'Idiomas disponibles',
+        name: 'Idiomas y exámenes disponibles',
         itemListElement: [
-          { '@type': 'Course', name: 'Coreano', description: 'Aprende coreano desde cero con el método WeLearn.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
-          { '@type': 'Course', name: 'Inglés — TOEFL / IELTS / ICFES', description: 'Prepárate para certificaciones de inglés con simulacros completos.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
-          { '@type': 'Course', name: 'Francés — DELF/DALF', description: 'Aprende francés y practica para el DELF.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Inglés — TOEFL / IELTS / ICFES', description: 'Clases de inglés y preparación para certificaciones internacionales con simulacros completos.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Coreano — TOPIK', description: 'Aprende coreano desde cero con el método visual WeLearn y prepárate para el TOPIK.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Alemán — Goethe-Zertifikat', description: 'Cursos de alemán y preparación para los exámenes Goethe A1–C2.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Francés — DELF / DALF', description: 'Aprende francés y practica para el DELF y el DALF.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Italiano — CILS / CELI', description: 'Cursos de italiano y preparación para las certificaciones CILS y CELI.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
+          { '@type': 'Course', name: 'Portugués — CELPE-Bras', description: 'Aprende portugués y prepárate para el CELPE-Bras.', provider: { '@id': 'https://www.idiomaswl.com/#organization' } },
         ],
       },
     },
@@ -74,52 +113,68 @@ const jsonLd = {
       '@id': 'https://www.idiomaswl.com/#david',
       name: 'José David Duarte Silva',
       jobTitle: 'Políglota y co-fundador de Idiomas WeLearn',
-      description: 'Políglota en 8 idiomas (español, inglés, coreano, alemán, portugués, italiano, francés y mandatario), docente de idiomas y fundador de WeLearn. Especialista en preparación de exámenes internacionales.',
+      description: 'Políglota activo en 8 idiomas (español, inglés, coreano, alemán, portugués, italiano y francés), docente de idiomas y fundador de WeLearn. Especialista en preparación de exámenes internacionales.',
       url: 'https://www.idiomaswl.com/home',
+      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
       worksFor: { '@id': 'https://www.idiomaswl.com/#organization' },
       knowsLanguage: ['es', 'en', 'ko', 'de', 'pt', 'it', 'fr'],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.idiomaswl.com/#zhanna',
+      name: 'Zhanna Korzh',
+      jobTitle: 'Directora Académica de Idiomas WeLearn',
+      description: 'Directora académica de WeLearn. Lidera el diseño curricular y la preparación de exámenes internacionales de la academia.',
+      url: 'https://www.idiomaswl.com/home',
+      worksFor: { '@id': 'https://www.idiomaswl.com/#organization' },
     },
   ],
 };
 
+// FAQ answer-first optimizado para AEO — DEBE coincidir con FAQ.tsx (contenido visible)
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
       '@type': 'Question',
-      name: '¿En qué se diferencia WeLearn de otras apps?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Cada día integra 11 pasos con objetivos distintos: exposición, adquisición, retención, producción y revisión acumulativa. No es repetición de tarjetas ni gramática aislada.' },
+      name: '¿Cuál es la mejor academia de idiomas online en Colombia?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Idiomas WeLearn es una academia colombiana especializada en aprendizaje de idiomas y preparación de exámenes internacionales, con sede presencial en Bucaramanga y clases online en todo el país y el mundo. Enseña seis idiomas con profesores reales y un método propio de 11 pasos, con más de 1000 estudiantes preparados.' },
     },
     {
       '@type': 'Question',
-      name: '¿Puedo probar antes de pagar?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí. El primer paso de cada idioma está abierto sin tarjeta en esta fase de referencia.' },
+      name: '¿Dónde preparar el TOEFL o el IELTS en Bucaramanga?',
+      acceptedAnswer: { '@type': 'Answer', text: 'En Bucaramanga puedes prepararte para el TOEFL y el IELTS en Idiomas WeLearn, de forma presencial en su sede o en línea. Ofrece rutas específicas por examen con simulacros reales, retroalimentación por sección y tutoría personalizada, en lugar de un curso genérico de inglés.' },
     },
     {
       '@type': 'Question',
-      name: '¿Cuánto tiempo toma una sesión?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Entre 45 y 90 minutos según tu ritmo y el idioma seleccionado.' },
+      name: '¿Cuánto cuesta aprender inglés en Colombia?',
+      acceptedAnswer: { '@type': 'Answer', text: 'En Colombia, un curso de inglés en academia cuesta entre 150.000 y 526.000 pesos al mes, y las clases particulares van de 20.000 a 150.000 pesos la hora. La preparación de exámenes como TOEFL o IELTS puede superar el millón de pesos mensuales. WeLearn ofrece planes con precio transparente, sin costos ocultos.' },
     },
     {
       '@type': 'Question',
-      name: '¿Incluye preparación para exámenes?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Hay rutas específicas para TOEFL, IELTS, ICFES, Goethe, DELF/DALF y CILS con simulacros por objetivo.' },
+      name: '¿Cómo aprender un idioma sin usar apps que no funcionan?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Las apps enseñan palabras sueltas, pero no producción real ni conversación. Para aprender un idioma de verdad necesitas exposición, práctica guiada con un profesor y repaso espaciado. El método de 11 pasos de WeLearn estructura cada día en esas fases, imitando cómo el cerebro interioriza una lengua materna.' },
     },
     {
       '@type': 'Question',
-      name: '¿Las clases son online o presenciales?',
-      acceptedAnswer: { '@type': 'Answer', text: '100% online. Tenemos sede en Bucaramanga pero atendemos estudiantes en toda Colombia y en el exterior. Las clases 1:1 son por videollamada con tutor asignado.' },
+      name: '¿En cuánto tiempo se llega a un nivel B2 en inglés?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Alcanzar un B2 requiere entre 500 y 600 horas de aprendizaje guiado, normalmente de 1 a 2 años con estudio constante y acompañamiento de un profesor. En WeLearn, una clase de diagnóstico gratuita evalúa tu punto de partida y define un plan con fecha realista para tu objetivo.' },
     },
     {
       '@type': 'Question',
-      name: '¿En cuánto tiempo puedo alcanzar un nivel B2 en inglés?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Depende del punto de partida. Desde A2 con 5–7 horas semanales, entre 12 y 18 meses. Desde B1, entre 9 y 12 meses. La clase de diagnóstico gratuita define el plan exacto para tu objetivo.' },
+      name: '¿Las clases de WeLearn son online o presenciales?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Ambas. Idiomas WeLearn tiene sede presencial en Bucaramanga para clases cara a cara, y modalidad online para estudiantes en el resto de Colombia y el mundo. En los dos casos las clases son con profesores reales y tutor asignado, no lecciones automatizadas.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿WeLearn prepara para exámenes oficiales de idiomas?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. WeLearn ofrece rutas de preparación para TOEFL, IELTS, ICFES Saber 11, TOPIK de coreano, Goethe de alemán, DELF y DALF de francés, CILS de italiano y CELPE-Bras de portugués, con simulacros construidos a partir de los exámenes oficiales y retroalimentación por sección.' },
     },
     {
       '@type': 'Question',
       name: '¿Cómo funciona la clase de diagnóstico gratuita?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Es una sesión de 30 a 45 minutos con un tutor de WeLearn donde evaluamos tu nivel real, entendemos tu objetivo (examen, trabajo, migración) y te damos un plan de preparación personalizado. Sin compromiso de matrícula.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Es una sesión de 30 a 45 minutos con un tutor de WeLearn donde evaluamos tu nivel real, entendemos tu objetivo (examen, trabajo o migración) y te damos un plan de preparación personalizado. Sin compromiso de matrícula.' },
     },
   ],
 };
@@ -133,6 +188,14 @@ const IDIOMAS = [
   { code: 'Pt', name: 'Portugués', native: 'Português', desc: 'CELPE-Bras',               active: true,  href: '/clases-de-portugues' },
   { code: '日', name: 'Japonés',   native: '日本語',    desc: 'JLPT · Próximamente',      active: false, href: null                 },
   { code: 'Py', name: 'Ruso',      native: 'Русский',   desc: 'TORFL · Próximamente',     active: false, href: null                 },
+];
+
+// Contraste app vs. WeLearn — corazón del arco PAS (answer-first para AEO)
+const APP_VS_WELEARN = [
+  { app: 'Rachas, puntos y niveles que no significan nada', wl: 'Un objetivo real: tu examen, tu meta, tu fecha' },
+  { app: 'Frases sueltas que memorizas y olvidas', wl: 'Producción y conversación guiada con un profesor' },
+  { app: 'Un algoritmo que nunca te corrige', wl: 'Un profesor real que te corrige y te exige' },
+  { app: '“Tal vez algún día llegue a hablarlo”', wl: 'Un plan estructurado con fecha de examen' },
 ];
 
 const METODO = [
@@ -160,6 +223,19 @@ const EXAMENES = [
   { badge: 'CERTIFICAZIONE', name: 'CILS',            lang: 'Italiano · A1 – C2',          weeks: '10 semanas', mocks: '6 simulacros',  slug: 'cils-celi'    },
   { badge: '초급 · 중급',      name: 'TOPIK',           lang: 'Coreano · Nivel I y II',      weeks: '12 semanas', mocks: '6 simulacros',  slug: 'topik'        },
   { badge: 'BRASIL',         name: 'CELPE-BRAS',      lang: 'Portugués · Intermediário+',  weeks: '10 semanas', mocks: '4 simulacros',  slug: 'celpe-bras'   },
+];
+
+const MODALIDAD = [
+  {
+    tag: 'Presencial',
+    title: 'En nuestra sede en Bucaramanga',
+    desc: 'Clases cara a cara con profesores reales en Bucaramanga. Para quienes prefieren el aula, el contacto directo y una rutina de estudio con acompañamiento presencial.',
+  },
+  {
+    tag: 'Online',
+    title: 'Desde cualquier lugar de Colombia y el mundo',
+    desc: 'Clases en vivo por videollamada con tutor asignado, mismo método y mismo material. Para estudiantes en toda Colombia y colombianos en el exterior.',
+  },
 ];
 
 const TEAM = [
@@ -222,22 +298,29 @@ export default function HomePage() {
       {/* HERO */}
       <section className="wlh-hero">
         <HeroLeft>
-          <HeroItem><p className="wlh-eyebrow">Plataforma · 8 idiomas · 6 exámenes internacionales</p></HeroItem>
+          <HeroItem><p className="wlh-eyebrow">Academia de idiomas · Presencial en Bucaramanga y online en toda Colombia</p></HeroItem>
           <HeroItem>
             <h1 className="wlh-hero__h1">
-              Aprender un<br />idioma, <em>en serio.</em>
+              Aprende un<br />idioma, <em>en serio.</em>
             </h1>
           </HeroItem>
           <HeroItem>
             <p className="wlh-hero__desc">
-              Preparación real para exámenes internacionales y aprendizaje estructurado en once pasos diarios.
+              Sin apps que no llevan a ningún lado. Clases con profesores reales, un método propio de
+              11 pasos y preparación específica para IELTS, TOEFL, TOPIK, Goethe y más. En nuestra sede
+              en Bucaramanga o desde donde estés.
             </p>
           </HeroItem>
           <HeroItem>
             <div className="wlh-hero__ctas">
-              <Link href="/clases-de-ingles" className="btn wlh-hero__btn-primary">Empezar gratis</Link>
-              <Link href="#coreano-preview" className="btn btn-ghost wlh-hero__btn-ghost">Ver una lección</Link>
+              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Agenda tu clase gratis →</a>
+              <Link href="#leccion" className="btn btn-ghost wlh-hero__btn-ghost">Ver una lección</Link>
             </div>
+          </HeroItem>
+          <HeroItem>
+            <p style={{ marginTop: '1rem', fontSize: '0.82rem', color: 'var(--muted)', fontWeight: 600 }}>
+              Clase de diagnóstico gratis · Responde un humano · +1000 estudiantes preparados
+            </p>
           </HeroItem>
         </HeroLeft>
 
@@ -249,11 +332,11 @@ export default function HomePage() {
       {/* STATS ROW — gradient */}
       <StatsRow className="wlh-stats">
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num"><CountUp to={8} /></span>
-          <span className="wlh-stat__lbl">idiomas disponibles</span>
+          <span className="wlh-stat__num"><CountUp to={6} /></span>
+          <span className="wlh-stat__lbl">idiomas con profesor</span>
         </StatItem>
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num"><CountUp to={6} /></span>
+          <span className="wlh-stat__num"><CountUp to={10} suffix="+" /></span>
           <span className="wlh-stat__lbl">exámenes internacionales</span>
         </StatItem>
         <StatItem className="wlh-stat">
@@ -261,84 +344,54 @@ export default function HomePage() {
           <span className="wlh-stat__lbl">pasos del método diario</span>
         </StatItem>
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num"><CountUp to={500} suffix="+" /></span>
+          <span className="wlh-stat__num"><CountUp to={1000} suffix="+" /></span>
           <span className="wlh-stat__lbl">estudiantes preparados</span>
         </StatItem>
       </StatsRow>
 
-      {/* CERTIFICACIONES — moved up */}
-      <section id="examenes" className="wlh-section wlh-section--dark">
+      {/* 01 — EMPATÍA / PROBLEMA (App vs WeLearn) */}
+      <section id="por-que" className="wlh-section">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow wlh-section-eyebrow--light">01 — Certificaciones</p>
-            <h2 className="wlh-section-h2 wlh-section-h2--light">Preparación específica para exámenes.</h2>
-            <p className="wlh-section-desc wlh-section-desc--light">
-              Simulacros construidos a partir de los exámenes oficiales. Cada ruta incluye material de práctica, audios reales y retroalimentación por sección.
-            </p>
-          </FadeUp>
-          <StaggerGrid className="wlh-exams-grid">
-            {EXAMENES.map(ex => (
-              <StaggerItem key={ex.name}>
-                <TiltCard>
-                  <Link href={`/examenes/${ex.slug}`} className="wlh-exam-card">
-                    <span className="wlh-exam-card__badge">{ex.badge}</span>
-                    <h3 className="wlh-exam-card__name">{ex.name}</h3>
-                    <p className="wlh-exam-card__lang">{ex.lang}</p>
-                    <div className="wlh-exam-card__stats">
-                      <span>{ex.weeks}</span>
-                      <span>·</span>
-                      <span>{ex.mocks}</span>
-                    </div>
-                  </Link>
-                </TiltCard>
-              </StaggerItem>
-            ))}
-          </StaggerGrid>
-        </div>
-      </section>
-
-      {/* IDIOMAS */}
-      <section id="idiomas" className="wlh-section">
-        <div className="wrap">
-          <FadeUp>
-            <p className="wlh-section-eyebrow">02 — Catálogo</p>
-            <h2 className="wlh-section-h2">Ocho idiomas. Un mismo método.</h2>
+            <p className="wlh-section-eyebrow">01 — Por qué estás aquí</p>
+            <h2 className="wlh-section-h2">No fallaste tú. Falló el método.</h2>
             <p className="wlh-section-desc">
-              Cada idioma sigue la misma estructura de 11 pasos diarios, con contenido, ritmo y material de práctica adaptados a cada lengua.
+              Descargaste la app. Hiciste rachas de 200 días. Y al sentarte frente a un examen —o frente a
+              una persona real— seguías bloqueado. No es falta de disciplina: memorizar tarjetas no es
+              aprender un idioma. La tutoría con un profesor real supera al 98% del aprendizaje en solitario.
             </p>
           </FadeUp>
-          <StaggerGrid className="wlh-idiomas-grid">
-            {IDIOMAS.map(lang => (
-              <StaggerItem key={lang.name}>
-                <TiltCard>
-                  <div className={`wlh-lang-card${!lang.active ? ' wlh-lang-card--soon' : ''}`}>
-                    <div className="wlh-lang-card__top">
-                      <span className="wlh-lang-card__code">{lang.code}</span>
-                      {!lang.active && <span className="wlh-lang-card__soon-badge">Próximamente</span>}
-                    </div>
-                    <h3 className="wlh-lang-card__name">{lang.name}</h3>
-                    <p className="wlh-lang-card__native">{lang.native}</p>
-                    <div className="wlh-lang-card__footer">
-                      <span className="wlh-lang-card__days">{lang.desc}</span>
-                      {lang.active && lang.href && (
-                        <Link href={lang.href} className="wlh-lang-card__cta">Ver ruta →</Link>
-                      )}
-                    </div>
-                  </div>
-                </TiltCard>
-              </StaggerItem>
-            ))}
-          </StaggerGrid>
+          <FadeUp delay={0.1}>
+            <div className="wlh-appvs">
+              <div className="wlh-appvs__head wlh-appvs__head--app">Una app de idiomas</div>
+              <div className="wlh-appvs__head wlh-appvs__head--wl">WeLearn</div>
+              {APP_VS_WELEARN.map((row, i) => (
+                <div key={i} className="wlh-appvs__row-group">
+                  <div className="wlh-appvs__cell wlh-appvs__cell--app">{row.app}</div>
+                  <div className="wlh-appvs__cell wlh-appvs__cell--wl">{row.wl}</div>
+                </div>
+              ))}
+            </div>
+          </FadeUp>
+          <FadeUp delay={0.15}>
+            <div style={{ marginTop: '1.6rem' }}>
+              <Link href="#metodo" className="wlh-lang-card__cta" style={{ fontSize: '0.95rem' }}>Así enseñamos nosotros →</Link>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
-      {/* METODO — moved down */}
+      {/* 02 — METODO */}
       <section id="metodo" className="wlh-section wlh-section--alt">
         <div className="wrap wlh-metodo-wrap">
           <FadeUp className="wlh-metodo-left">
-            <p className="wlh-section-eyebrow">03 — Método</p>
-            <h2 className="wlh-section-h2">El día tiene once pasos.</h2>
-            <p className="wlh-section-desc">Exposición, integración, práctica y revisión acumulativa. Cada bloque cumple una función concreta en el ciclo de aprendizaje.</p>
+            <p className="wlh-section-eyebrow">02 — El método</p>
+            <h2 className="wlh-section-h2">El día tiene once pasos. Cada uno tiene una razón.</h2>
+            <p className="wlh-section-desc">
+              El método de 11 pasos de WeLearn estructura cada día de estudio en cuatro fases —exposición,
+              adquisición, producción y repaso espaciado— imitando cómo el cerebro interioriza una lengua
+              materna. Por eso el conocimiento se retiene y se convierte en habla, no en tarjetas olvidadas.
+            </p>
             <div className="wlh-metodo-tags">
               <span className="wlh-tag">Audio · Imagen · Texto</span>
               <span className="wlh-tag">Repaso espaciado</span>
@@ -372,12 +425,130 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* EQUIPO */}
-      <section id="equipo" className="wlh-section">
+      {/* 03 — CERTIFICACIONES */}
+      <section id="examenes" className="wlh-section wlh-section--dark">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">04 — Equipo</p>
-            <h2 className="wlh-section-h2">Quiénes están detrás de WeLearn.</h2>
+            <p className="wlh-section-eyebrow wlh-section-eyebrow--light">03 — Certificaciones</p>
+            <h2 className="wlh-section-h2 wlh-section-h2--light">Preparación específica para tu examen. Con simulacros reales.</h2>
+            <p className="wlh-section-desc wlh-section-desc--light">
+              Simulacros construidos a partir de los exámenes oficiales. Cada ruta incluye material de práctica, audios reales y retroalimentación por sección.
+            </p>
+          </FadeUp>
+          <StaggerGrid className="wlh-exams-grid">
+            {EXAMENES.map(ex => (
+              <StaggerItem key={ex.name}>
+                <TiltCard>
+                  <Link href={`/examenes/${ex.slug}`} className="wlh-exam-card">
+                    <span className="wlh-exam-card__badge">{ex.badge}</span>
+                    <h3 className="wlh-exam-card__name">{ex.name}</h3>
+                    <p className="wlh-exam-card__lang">{ex.lang}</p>
+                    <div className="wlh-exam-card__stats">
+                      <span>{ex.weeks}</span>
+                      <span>·</span>
+                      <span>{ex.mocks}</span>
+                    </div>
+                  </Link>
+                </TiltCard>
+              </StaggerItem>
+            ))}
+          </StaggerGrid>
+        </div>
+      </section>
+
+      {/* 04 — IDIOMAS */}
+      <section id="idiomas" className="wlh-section">
+        <div className="wrap">
+          <FadeUp>
+            <p className="wlh-section-eyebrow">04 — Catálogo</p>
+            <h2 className="wlh-section-h2">Seis idiomas. Un mismo método probado.</h2>
+            <p className="wlh-section-desc">
+              Cada idioma sigue la misma estructura de 11 pasos diarios, con contenido, ritmo y material de práctica adaptados a cada lengua.
+            </p>
+          </FadeUp>
+          <StaggerGrid className="wlh-idiomas-grid">
+            {IDIOMAS.map(lang => (
+              <StaggerItem key={lang.name}>
+                <TiltCard>
+                  <div className={`wlh-lang-card${!lang.active ? ' wlh-lang-card--soon' : ''}`}>
+                    <div className="wlh-lang-card__top">
+                      <span className="wlh-lang-card__code">{lang.code}</span>
+                      {!lang.active && <span className="wlh-lang-card__soon-badge">Próximamente</span>}
+                    </div>
+                    <h3 className="wlh-lang-card__name">{lang.name}</h3>
+                    <p className="wlh-lang-card__native">{lang.native}</p>
+                    <div className="wlh-lang-card__footer">
+                      <span className="wlh-lang-card__days">{lang.desc}</span>
+                      {lang.active && lang.href && (
+                        <Link href={lang.href} className="wlh-lang-card__cta">Ver ruta →</Link>
+                      )}
+                    </div>
+                  </div>
+                </TiltCard>
+              </StaggerItem>
+            ))}
+          </StaggerGrid>
+        </div>
+      </section>
+
+      {/* 05 — MODALIDAD (presencial + online) */}
+      <section id="modalidad" className="wlh-section wlh-section--alt">
+        <div className="wrap">
+          <FadeUp>
+            <p className="wlh-section-eyebrow">05 — Modalidad</p>
+            <h2 className="wlh-section-h2">En Bucaramanga o desde donde estés.</h2>
+            <p className="wlh-section-desc">
+              WeLearn nació en Bucaramanga y enseña en su sede de forma presencial, y también online para el
+              resto de Colombia y el mundo. Tú eliges la modalidad; el método y el acompañamiento son los mismos.
+            </p>
+          </FadeUp>
+          <div className="wlh-modalidad-grid">
+            {MODALIDAD.map((m, i) => (
+              <FadeUp key={m.tag} delay={i * 0.1}>
+                <div className="wlh-modalidad-card">
+                  <span className="wlh-tag">{m.tag}</span>
+                  <h3 className="wlh-modalidad-card__title">{m.title}</h3>
+                  <p className="wlh-modalidad-card__desc">{m.desc}</p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 06 — TESTIMONIOS */}
+      <section className="wlh-section">
+        <div className="wrap">
+          <FadeUp>
+            <p className="wlh-section-eyebrow">06 — Resultados</p>
+            <h2 className="wlh-section-h2">Estudiantes reales. Metas reales cumplidas.</h2>
+            <p className="wlh-section-desc">
+              Más de 1000 estudiantes han usado WeLearn para aprender un idioma y preparar sus exámenes internacionales.
+            </p>
+          </FadeUp>
+          <div className="wlh-testimonials-grid">
+            {TESTIMONIALS.map((t, i) => (
+              <TestimonialCard key={t.name} className="wlh-testimonial-card" delay={i * 0.1}>
+                <p className="wlh-testimonial-card__quote">"{t.quote}"</p>
+                <div className="wlh-testimonial-card__footer">
+                  <div className="wlh-testimonial-card__avatar">{t.name[0]}</div>
+                  <div>
+                    <p className="wlh-testimonial-card__name">{t.name} · {t.city}</p>
+                    <p className="wlh-testimonial-card__exam">{t.exam}</p>
+                  </div>
+                </div>
+              </TestimonialCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 07 — EQUIPO */}
+      <section id="equipo" className="wlh-section wlh-section--alt">
+        <div className="wrap">
+          <FadeUp>
+            <p className="wlh-section-eyebrow">07 — Equipo</p>
+            <h2 className="wlh-section-h2">Quiénes te van a enseñar.</h2>
             <p className="wlh-section-desc">
               WeLearn es una academia construida por profesionales con experiencia directa en aprendizaje de idiomas y preparación de exámenes internacionales.
             </p>
@@ -402,40 +573,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIOS */}
-      <section className="wlh-section wlh-section--alt">
+      {/* 08 — LECCION PREVIEW */}
+      <section id="leccion" className="wlh-section">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">05 — Resultados</p>
-            <h2 className="wlh-section-h2">Estudiantes que alcanzaron su objetivo.</h2>
-            <p className="wlh-section-desc">
-              Más de 500 estudiantes han usado WeLearn para preparar sus exámenes internacionales.
-            </p>
-          </FadeUp>
-          <div className="wlh-testimonials-grid">
-            {TESTIMONIALS.map((t, i) => (
-              <TestimonialCard key={t.name} className="wlh-testimonial-card" delay={i * 0.1}>
-                <p className="wlh-testimonial-card__quote">"{t.quote}"</p>
-                <div className="wlh-testimonial-card__footer">
-                  <div className="wlh-testimonial-card__avatar">{t.name[0]}</div>
-                  <div>
-                    <p className="wlh-testimonial-card__name">{t.name} · {t.city}</p>
-                    <p className="wlh-testimonial-card__exam">{t.exam}</p>
-                  </div>
-                </div>
-              </TestimonialCard>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* LECCION PREVIEW */}
-      <section id="coreano-preview" className="wlh-section">
-        <div className="wrap">
-          <FadeUp>
-            <p className="wlh-section-eyebrow">06 — Vista previa</p>
+            <p className="wlh-section-eyebrow">08 — Vista previa</p>
             <h2 className="wlh-section-h2">Mira cómo se ve un día completo.</h2>
-            <p className="wlh-section-desc">Preview modular de lección.</p>
+            <p className="wlh-section-desc">Explora un día real del método, paso por paso.</p>
           </FadeUp>
           <FadeUp delay={0.1}>
             <LessonTabs />
@@ -443,25 +587,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PRECIOS — teaser, sin duplicar la página /precios */}
+      {/* 09 — PRECIOS — teaser, sin duplicar la página /precios */}
       <section id="precios" className="wlh-section wlh-section--alt">
         <div className="wrap" style={{ textAlign: 'center' }}>
           <FadeUp>
-            <p className="wlh-section-eyebrow">07 — Precios</p>
-            <h2 className="wlh-section-h2">Desde $50.000 / mes.</h2>
+            <p className="wlh-section-eyebrow">09 — Precios</p>
+            <h2 className="wlh-section-h2">Un precio claro. Sin sorpresas.</h2>
             <p className="wlh-section-desc" style={{ maxWidth: 520, margin: '0 auto 2rem' }}>
-              Simulacros, retroalimentación y tutorías en vivo. Un precio único para todos los idiomas y exámenes. Sin letra pequeña.
+              Simulacros, retroalimentación y tutorías en vivo. Un precio transparente para todos los idiomas y exámenes. Sin letra pequeña.
             </p>
             <Link href="/precios" className="btn">Ver planes y precios →</Link>
           </FadeUp>
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* 10 — FAQ */}
       <section className="wlh-section">
         <div className="wrap wlh-faq-wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">08 — Preguntas</p>
+            <p className="wlh-section-eyebrow">10 — Preguntas</p>
             <h2 className="wlh-section-h2">Lo que casi siempre nos preguntan.</h2>
           </FadeUp>
           <FadeUp delay={0.1}>
@@ -470,12 +614,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* BLOG HIGHLIGHTS */}
+      {/* 11 — BLOG HIGHLIGHTS */}
       <FadeUp>
         <section className="wlh-section wlh-section--alt">
           <div className="wrap">
-            <p className="wlh-section-eyebrow">09 — Blog</p>
-            <h2 className="wlh-section-h2">Guías y recursos gratuitos.</h2>
+            <p className="wlh-section-eyebrow">11 — Blog</p>
+            <h2 className="wlh-section-h2">Guías gratuitas que sí sirven.</h2>
             <p className="wlh-section-desc" style={{ maxWidth: 540, margin: '0 auto 2.5rem' }}>
               Artículos prácticos sobre IELTS, TOEFL, ICFES, coreano, alemán, italiano, portugués, francés y más.
               Sin relleno, solo lo que funciona.
@@ -510,12 +654,14 @@ export default function HomePage() {
         <section className="wlh-cta">
           <div className="wrap" style={{ textAlign: 'center' }}>
             <p className="wlh-cta__eyebrow">Empieza hoy</p>
-            <h2 className="wlh-cta__h2">Tu primer día es gratis.</h2>
+            <h2 className="wlh-cta__h2">Tu primera clase de diagnóstico es gratis.</h2>
+            <p style={{ maxWidth: 540, margin: '0.75rem auto 2rem', color: 'rgba(255,255,255,0.8)', fontSize: '1rem', lineHeight: 1.6 }}>
+              30 minutos con un profesor real. Evaluamos tu nivel, entendemos tu meta y te damos un plan. Sin compromiso.
+            </p>
             <div className="wlh-cta__btns">
-              <Link href="/clases-de-ingles" className="btn wlh-cta__btn-primary">Clases de inglés →</Link>
+              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-cta__btn-primary" data-gtm="click_whatsapp">Agenda tu clase gratis por WhatsApp →</a>
+              <Link href="/clases-de-ingles" className="btn btn-ghost wlh-cta__btn-ghost">Clases de inglés →</Link>
               <Link href="/clases-de-coreano" className="btn btn-ghost wlh-cta__btn-ghost">Clases de coreano →</Link>
-              <Link href="/clases-de-frances" className="btn btn-ghost wlh-cta__btn-ghost">Clases de francés →</Link>
-              <Link href="/clases-de-aleman" className="btn btn-ghost wlh-cta__btn-ghost">Clases de alemán →</Link>
             </div>
           </div>
         </section>
@@ -526,7 +672,7 @@ export default function HomePage() {
         <div className="wrap wlh-footer__inner">
           <div className="wlh-footer__brand">
             <span className="wlh-footer__logo"><strong>Idiomas</strong> WeLearn</span>
-            <p className="wlh-footer__tagline">Seis idiomas. Doce certificaciones. Un método que funciona.</p>
+            <p className="wlh-footer__tagline">Seis idiomas. Doce certificaciones. Presencial en Bucaramanga y online en todo el mundo.</p>
           </div>
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Clases</p>
