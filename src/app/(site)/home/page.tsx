@@ -215,12 +215,12 @@ const METODO = [
 
 // Pilares del producto-plataforma (todos reales según el stack de WeLearn)
 const PLATAFORMA = [
-  { icon: 'cursos',     name: 'Cursos estructurados',        desc: 'Rutas completas por idioma y nivel (A1–C2), con contenido, ritmo y material adaptados a cada lengua.' },
-  { icon: 'simulacros', name: 'Simulacros de examen',        desc: 'Pruebas construidas a partir de los exámenes oficiales (IELTS, TOEFL, TOPIK, Goethe…), con puntaje y corrección por sección.' },
-  { icon: 'practica',   name: 'Práctica interactiva',        desc: 'Ejercicios de habla, escucha, lectura y escritura con audio real y evaluación de pronunciación.' },
-  { icon: 'teoria',     name: 'Teoría y gramática',          desc: 'Explicaciones claras y notas de gramática, estilo y cultura: entiendes el porqué, no solo el qué.' },
-  { icon: 'feedback',   name: 'Feedback de profesores reales', desc: 'Corrección humana y tutoría personalizada. Un profesor que te dice qué mejorar, no un algoritmo.' },
-  { icon: 'progreso',   name: 'Seguimiento de progreso',     desc: 'Panel de estudiante con tu racha, tus simulacros y tu avance por idioma, siempre a la vista.' },
+  { icon: 'cursos',     name: 'Cursos estructurados',        href: '/clases-de-idiomas', cta: 'Ver los idiomas',  desc: 'Rutas completas por idioma y nivel (A1–C2), con contenido, ritmo y material adaptados a cada lengua.' },
+  { icon: 'simulacros', name: 'Simulacros de examen',        href: '/examenes',          cta: 'Ver los exámenes', desc: 'Pruebas construidas a partir de los exámenes oficiales (IELTS, TOEFL, TOPIK, Goethe…), con puntaje y corrección por sección.' },
+  { icon: 'practica',   name: 'Práctica interactiva',        href: '/practica',          cta: 'Ir a la práctica', desc: 'Ejercicios de habla, escucha, lectura y escritura con audio real y evaluación de pronunciación.' },
+  { icon: 'teoria',     name: 'Teoría y gramática',          href: '/metodo',            cta: 'Ver el método',    desc: 'Explicaciones claras y notas de gramática, estilo y cultura: entiendes el porqué, no solo el qué.' },
+  { icon: 'feedback',   name: 'Feedback de profesores reales', href: '#equipo',          cta: 'Conoce al equipo', desc: 'Corrección humana y tutoría personalizada. Un profesor que te dice qué mejorar, no un algoritmo.' },
+  { icon: 'progreso',   name: 'Seguimiento de progreso',     href: '#leccion',           cta: 'Ver una lección',  desc: 'Panel de estudiante con tu racha, tus simulacros y tu avance por idioma, siempre a la vista.' },
 ];
 
 // Las 4 fases narrativas que agrupan los 11 pasos (icono SVG modelado in-house)
@@ -497,11 +497,12 @@ export default function HomePage() {
           <StaggerGrid className="wlh-pilares-grid">
             {PLATAFORMA.map(pilar => (
               <StaggerItem key={pilar.icon}>
-                <div className="wlh-pilar-card">
+                <Link href={pilar.href} className="wlh-pilar-card">
                   <span className="wlh-pilar-card__icon"><PillarIcon name={pilar.icon} /></span>
                   <h3 className="wlh-pilar-card__name">{pilar.name}</h3>
                   <p className="wlh-pilar-card__desc">{pilar.desc}</p>
-                </div>
+                  <span className="wlh-pilar-card__cta">{pilar.cta} <span aria-hidden="true">→</span></span>
+                </Link>
               </StaggerItem>
             ))}
           </StaggerGrid>
@@ -606,9 +607,9 @@ export default function HomePage() {
         <div className="wrap">
           <FadeUp>
             <p className="wlh-section-eyebrow">05 — Catálogo</p>
-            <h2 className="wlh-section-h2">Seis idiomas. Un mismo método probado.</h2>
+            <h2 className="wlh-section-h2">Seis idiomas. Una sola plataforma.</h2>
             <p className="wlh-section-desc">
-              Cada idioma sigue la misma estructura de 11 pasos diarios, con contenido, ritmo y material de práctica adaptados a cada lengua.
+              Cada idioma vive en la misma plataforma —cursos, simulacros y práctica interactiva— con contenido, ritmo y material adaptados a cada lengua.
             </p>
           </FadeUp>
           <StaggerGrid className="wlh-idiomas-grid">
