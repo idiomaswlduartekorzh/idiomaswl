@@ -254,7 +254,7 @@ const TEAM = [
   },
   {
     initials: 'ZK',
-    img: '/images/team-zhanna-korzh.png',
+    img: null, // TODO: subir public/images/team-zhanna-korzh.png y poner la ruta aquí
     name: 'Zhanna Korzh',
     role: 'Directora Académica',
     tags: ['Diseño curricular', 'Preparación de exámenes', 'Evaluación lingüística'],

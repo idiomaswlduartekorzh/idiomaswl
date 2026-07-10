@@ -7520,3 +7520,9 @@ body {
 /* v2.2 · reset del ciclo (sin máscara que clipe la palabra) */
 .wlh-hero__cycle { display: inline-block; overflow: visible; padding-bottom: 0; margin-bottom: 0; vertical-align: baseline; }
 .wlh-hero__cycle-word { display: inline-block; color: var(--accent); font-style: normal; will-change: transform, opacity; }
+
+/* v2.3 · Fundadores más prominentes (foto grande con anillo de acento) */
+.wlh-team-card__avatar {
+  width: 94px; height: 94px; min-width: 94px;
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px rgba(200,32,46,0.28);
+}
