@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Claude para simplificar el trabajo profesional</title>
+<style>
+:root{
+  --bg:#07111f; --panel:#0d1b2f; --panel2:#12243d; --text:#eef5ff; --muted:#a9bbd1;
+  --cyan:#48d7ff; --blue:#6e8cff; --green:#58e0a4; --amber:#ffc857; --red:#ff748c;
+  --purple:#bd8cff; --line:#284361; --white:#fff; --shadow:0 18px 50px rgba(0,0,0,.34);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:radial-gradient(circle at 20% 0%,#132b4d 0,#07111f 42%,#040a13 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow:hidden}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+.topbar{height:64px;display:flex;align-items:center;gap:16px;padding:0 20px;border-bottom:1px solid rgba(255,255,255,.10);background:rgba(4,10,19,.82);backdrop-filter:blur(18px);position:relative;z-index:20}
+.brand{font-weight:800;letter-spacing:.01em;white-space:nowrap}.brand span{color:var(--cyan)}
+.progress-wrap{flex:1;display:flex;align-items:center;gap:12px}.progress{height:8px;background:#13243a;border-radius:99px;overflow:hidden;flex:1}.progress>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--blue));transition:width .35s ease}.counter{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem;white-space:nowrap}
+.icon-btn,.nav-btn,.pill-btn{border:1px solid rgba(255,255,255,.14);background:#102039;color:var(--text);border-radius:12px;padding:9px 12px;transition:.2s}.icon-btn:hover,.nav-btn:hover,.pill-btn:hover{transform:translateY(-1px);border-color:var(--cyan);background:#17304f}.icon-btn{min-width:42px}
+.stage{height:calc(100% - 126px);position:relative;overflow:hidden}
+.slide{position:absolute;inset:0;padding:34px 5vw 28px;opacity:0;pointer-events:none;transform:translateX(24px) scale(.995);transition:opacity .28s ease,transform .32s ease;overflow:auto;scrollbar-width:thin;scrollbar-color:#35536f transparent}.slide.active{opacity:1;pointer-events:auto;transform:none}
+.slide-inner{max-width:1400px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--cyan);font-weight:800;font-size:.78rem;margin-bottom:10px}.title{font-size:clamp(2rem,4vw,4.9rem);line-height:1.02;margin:0 0 14px;max-width:1100px}.subtitle{font-size:clamp(1rem,1.55vw,1.45rem);line-height:1.5;color:var(--muted);max-width:1000px;margin:0 0 22px}.big-quote{font-size:clamp(1.5rem,2.7vw,3.2rem);line-height:1.17;font-weight:750;max-width:1100px;margin:18px 0}.accent{color:var(--cyan)}
+.grid{display:grid;gap:18px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{background:linear-gradient(180deg,rgba(18,36,61,.94),rgba(10,24,42,.94));border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:20px;box-shadow:var(--shadow);position:relative;overflow:hidden}.card::before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:3px;background:var(--card-accent,var(--blue));opacity:.9}.card h3{margin:0 0 8px;font-size:1.15rem}.card p{margin:0;color:var(--muted);line-height:1.5}.card .kicker{color:var(--card-accent,var(--blue));font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:9px}.card.cyan{--card-accent:var(--cyan)}.card.green{--card-accent:var(--green)}.card.amber{--card-accent:var(--amber)}.card.red{--card-accent:var(--red)}.card.purple{--card-accent:var(--purple)}
+.tag{display:inline-flex;padding:6px 10px;border-radius:999px;background:rgba(72,215,255,.12);border:1px solid rgba(72,215,255,.28);color:#bdefff;font-size:.82rem;font-weight:700;margin:3px}.tag.green{background:rgba(88,224,164,.12);border-color:rgba(88,224,164,.3);color:#bdf8db}.tag.amber{background:rgba(255,200,87,.12);border-color:rgba(255,200,87,.3);color:#ffe3a1}.tag.red{background:rgba(255,116,140,.12);border-color:rgba(255,116,140,.3);color:#ffc3ce}
+.footer{height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-top:1px solid rgba(255,255,255,.10);background:rgba(4,10,19,.88);position:relative;z-index:20}.slide-name{color:var(--muted);font-size:.92rem}.nav-actions{display:flex;gap:10px}.nav-btn.primary{background:linear-gradient(135deg,#2369ff,#6e8cff);border-color:transparent;font-weight:750}
+.drawer{position:fixed;z-index:50;left:0;top:0;bottom:0;width:min(420px,88vw);background:#071321;border-right:1px solid rgba(255,255,255,.14);box-shadow:var(--shadow);transform:translateX(-105%);transition:.28s;padding:20px;overflow:auto}.drawer.open{transform:none}.drawer-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.drawer h2{margin:0}.nav-list{display:grid;gap:8px}.nav-item{display:grid;grid-template-columns:38px 1fr auto;align-items:center;gap:10px;text-align:left;padding:12px;border-radius:13px;border:1px solid transparent;background:#0d1d31;color:var(--text)}.nav-item:hover,.nav-item.active{border-color:var(--cyan);background:#132b46}.nav-item b{font-size:.92rem}.nav-item span{color:var(--muted);font-size:.78rem}.overlay{position:fixed;z-index:40;inset:0;background:rgba(0,0,0,.58);opacity:0;pointer-events:none;transition:.25s}.overlay.show{opacity:1;pointer-events:auto}
+.modal{position:fixed;z-index:60;inset:5vh 4vw;background:#071321;border:1px solid rgba(255,255,255,.16);border-radius:24px;box-shadow:var(--shadow);display:none;overflow:hidden}.modal.show{display:flex;flex-direction:column}.modal-head{padding:15px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.1)}.modal-body{padding:18px;overflow:auto;flex:1}
+.path{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}.path .step{padding:11px 14px;border-radius:14px;background:#10233c;border:1px solid rgba(255,255,255,.14);font-weight:750}.path .arrow{color:var(--cyan);font-size:1.3rem}
+.prompt-box,textarea,input[type=text],input[type=number],select{width:100%;background:#071523;border:1px solid #294560;border-radius:12px;color:var(--text);padding:12px;outline:none}.prompt-box:focus,textarea:focus,input:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(72,215,255,.1)}textarea{min-height:130px;resize:vertical;line-height:1.45}.label{display:block;font-size:.82rem;color:#bcd0e5;font-weight:750;margin:0 0 6px}.form-row{display:grid;gap:12px}.form-row.two{grid-template-columns:1fr 1fr}.button-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.action{border:1px solid rgba(255,255,255,.15);background:#15304d;color:var(--text);padding:10px 13px;border-radius:11px;font-weight:750}.action.primary{background:linear-gradient(135deg,#1463ed,#765eff);border:0}.action.green{background:linear-gradient(135deg,#137d65,#27ba83);border:0}.action.danger{background:#4a1d2a;border-color:#8f3550}
+.metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.metric{background:#0b1c30;border:1px solid #263f5a;border-radius:13px;padding:12px;text-align:center}.metric strong{font-size:1.5rem;display:block}.metric small{color:var(--muted)}
+.note{padding:12px 14px;border-left:4px solid var(--amber);background:rgba(255,200,87,.09);border-radius:0 10px 10px 0;color:#ffe8b6;margin-top:12px;line-height:1.45}.success{border-left-color:var(--green);background:rgba(88,224,164,.09);color:#c7fae1}.danger-note{border-left-color:var(--red);background:rgba(255,116,140,.09);color:#ffd0d8}
+.context-wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}.context-box{height:330px;border:2px solid #41678d;border-radius:26px;background:#07101d;padding:14px;display:flex;flex-direction:column-reverse;gap:5px;overflow:hidden;position:relative}.context-box::after{content:"VENTANA DE CONTEXTO";position:absolute;top:10px;right:14px;color:#7d9dbb;font-size:.72rem;letter-spacing:.14em;font-weight:800}.ctx-segment{min-height:12px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#06121d;font-size:.78rem;font-weight:850;transition:height .3s,opacity .3s}.ctx-instructions{background:var(--cyan)}.ctx-history{background:var(--purple)}.ctx-files{background:var(--blue)}.ctx-examples{background:var(--green)}.ctx-tools{background:var(--amber)}.ctx-response{background:#f8a4ff}.ctx-noise{background:repeating-linear-gradient(45deg,#ff748c,#ff748c 8px,#7f2d42 8px,#7f2d42 16px);color:white}.sliders{display:grid;gap:10px}.slider-row{display:grid;grid-template-columns:110px 1fr 38px;gap:8px;align-items:center}.slider-row input{accent-color:var(--cyan)}
+.token-gauge{height:20px;background:#0a1a2d;border-radius:99px;overflow:hidden;border:1px solid #27445f}.token-gauge i{height:100%;display:block;width:0;background:linear-gradient(90deg,var(--green),var(--amber),var(--red));transition:.25s}.token-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.token-pane{background:#09192b;border:1px solid #29455f;border-radius:16px;padding:15px}
+.claros-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}.claros-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.claros-card{border:1px solid #2c4965;background:#0a1b2e;border-radius:14px;padding:13px;min-height:134px;transition:.2s}.claros-card:hover{border-color:var(--cyan);transform:translateY(-2px)}.claros-letter{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#06111d;font-weight:900;margin-bottom:8px}.claros-card h4{margin:0 0 7px}.claros-card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.4}.claros-card textarea{min-height:88px;margin-top:9px;font-size:.87rem}
+.assignment{display:flex;flex-direction:column;gap:12px;min-height:330px}.assignment .mission{font-size:1.15rem;line-height:1.45;padding:14px;border-radius:13px;background:#071625;border:1px solid #2e4c68}.file-list{display:flex;flex-wrap:wrap;gap:6px}.file-chip{font-size:.78rem;padding:6px 9px;border-radius:9px;background:#152940;color:#bad0e5}.download-link{display:inline-flex;align-items:center;gap:8px;color:#06121c;background:var(--green);text-decoration:none;padding:10px 13px;border-radius:11px;font-weight:850;width:max-content}
+.audit-list{display:grid;gap:12px}.audit-item{background:#091a2c;border:1px solid #29445e;border-radius:15px;padding:14px}.audit-options{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.audit-options button{border:1px solid #35536d;background:#10243b;color:var(--text);border-radius:9px;padding:7px 10px}.audit-options button.correct{background:#146c53;border-color:var(--green)}.audit-options button.wrong{background:#5c2635;border-color:var(--red)}.feedback{margin-top:8px;color:var(--muted);font-size:.86rem;min-height:18px}
+.layer-stack{display:grid;gap:10px}.layer{display:grid;grid-template-columns:150px 1fr 1fr;gap:13px;align-items:center;padding:13px;border:1px solid #2a4966;background:#0b1c30;border-radius:14px}.layer strong{color:var(--cyan)}.layer span{color:var(--muted);font-size:.9rem}.layer code{color:#d8c5ff}
+.quiz-task{padding:13px;border-radius:13px;background:#091a2b;border:1px solid #2c4862;margin-bottom:10px}.quiz-task p{margin:0 0 9px}.env-buttons{display:flex;gap:7px;flex-wrap:wrap}.env-buttons button{padding:8px 11px;border:1px solid #385872;background:#10243b;color:var(--text);border-radius:9px}.env-feedback{margin-top:7px;font-size:.87rem;color:var(--muted)}
+.canvas-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.canvas-grid textarea{min-height:78px}.preview{background:#06111e;border:1px solid #29455f;border-radius:15px;padding:15px;white-space:pre-wrap;line-height:1.5;color:#dcecff;max-height:310px;overflow:auto}
+.command-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.command-card{background:linear-gradient(180deg,#10243c,#091827);border:1px solid #2b4a67;border-radius:15px;padding:14px;min-height:112px}.command-card code{display:inline-block;color:#07111f;background:var(--cyan);border-radius:8px;padding:5px 8px;font-size:1rem;font-weight:900;margin-bottom:9px}.command-card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.42}
+.graph-svg{width:100%;height:100%;min-height:560px}.graph-line{stroke:#375c7e;stroke-width:3;fill:none;stroke-dasharray:7 10;animation:dash 18s linear infinite}.graph-node{cursor:pointer;filter:drop-shadow(0 12px 14px rgba(0,0,0,.32))}.graph-node circle{fill:#112944;stroke:#55dfff;stroke-width:2;transition:.2s}.graph-node:hover circle{fill:#183b5c;stroke:#fff;transform-origin:center;transform:scale(1.06)}.graph-node text{fill:#eef7ff;font-weight:800;font-size:14px;pointer-events:none;text-anchor:middle}.graph-node .small{font-size:11px;fill:#a9c5dc;font-weight:600}@keyframes dash{to{stroke-dashoffset:-170}}
+.toast{position:fixed;z-index:100;left:50%;bottom:78px;transform:translate(-50%,20px);opacity:0;background:#112a43;border:1px solid var(--cyan);padding:10px 15px;border-radius:12px;transition:.25s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+.checklist{display:grid;gap:8px}.check{display:flex;gap:9px;align-items:flex-start;color:#d9e8f6}.check i{width:22px;height:22px;border-radius:7px;background:rgba(88,224,164,.16);border:1px solid rgba(88,224,164,.4);display:grid;place-items:center;color:var(--green);font-style:normal;font-weight:900;flex:0 0 auto}
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:18px}.time-block{padding:10px;border-radius:12px;background:#0d2138;border:1px solid #294a68;text-align:center}.time-block b{display:block;color:var(--cyan)}.time-block small{color:var(--muted)}
+@media(max-width:980px){.grid.three,.grid.four,.claros-grid,.command-grid{grid-template-columns:1fr 1fr}.context-wrap,.token-compare{grid-template-columns:1fr}.slide{padding:24px}.layer{grid-template-columns:110px 1fr}.layer span:last-child{grid-column:2}.timeline{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.topbar{padding:0 10px}.brand{display:none}.grid.two,.grid.three,.grid.four,.claros-grid,.form-row.two,.canvas-grid,.command-grid{grid-template-columns:1fr}.metric-row{grid-template-columns:1fr 1fr}.slide{padding:20px 14px}.title{font-size:2.2rem}.footer{padding:0 10px}.slide-name{display:none}.context-box{height:260px}.layer{grid-template-columns:1fr}.layer span:last-child{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{.topbar,.footer,.drawer,.overlay,.modal{display:none!important}html,body{overflow:visible;background:#fff;color:#111}.slide{position:relative;opacity:1;transform:none;pointer-events:auto;page-break-after:always;height:auto;min-height:100vh}.card{box-shadow:none;color:#111;background:#fff}.card p,.subtitle{color:#333}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" title="Índice" aria-label="Abrir índice">☰</button>
+  <div class="brand">WELEARN <span>× CLAUDE PARA EL TRABAJO</span></div>
+  <div class="progress-wrap"><div class="progress"><i id="progressBar"></i></div><div class="counter" id="progressText">1 / 19 · 0 min</div></div>
+  <button class="icon-btn" id="graphBtn" title="Grafo de conocimiento" aria-label="Abrir grafo de conocimiento">⌘</button>
+  <button class="icon-btn" id="fullBtn" title="Pantalla completa" aria-label="Activar pantalla completa">⛶</button>
+</header>
+
+<aside class="drawer" id="drawer"><div class="drawer-head"><h2>Ruta de 120 minutos</h2><button class="icon-btn" id="closeDrawer">×</button></div><div class="nav-list" id="navList"></div></aside>
+<div class="overlay" id="overlay"></div>
+
+<main class="stage" id="stage">
+<section class="slide active" data-id="cover" data-title="Apertura" data-minutes="2">
+<div class="slide-inner">
+  <div class="eyebrow">Sesión práctica · 120 minutos</div>
+  <h1 class="title">De una tarea confusa a un <span class="accent">sistema claro</span></h1>
+  <p class="subtitle">Claude para simplificar el trabajo profesional sin entregar el criterio, la privacidad ni las llaves de la oficina a una máquina demasiado convincente.</p>
+  <div class="path">
+    <div class="step">Entender</div><div class="arrow">→</div><div class="step">Instruir</div><div class="arrow">→</div><div class="step">Verificar</div><div class="arrow">→</div><div class="step">Estandarizar</div><div class="arrow">→</div><div class="step">Delegar</div><div class="arrow">→</div><div class="step">Automatizar</div>
+  </div>
+  <div class="note success">Meta de salida: cada participante termina con una instrucción profesional, una Skill inicial y un flujo de automatización con control humano.</div>
+</div></section>
+
+<section class="slide" data-id="diagnosis" data-title="Diagnóstico" data-minutes="4">
+<div class="slide-inner">
+  <div class="eyebrow">Antes de tocar botones</div><h2 class="title">¿Qué parte de su trabajo merece ser simplificada?</h2>
+  <div class="grid three">
+    <div class="card cyan"><div class="kicker">Repetitivo</div><h3>¿Qué hace cada semana?</h3><p>Clasificar, consolidar, resumir, comparar, redactar o hacer seguimiento.</p></div>
+    <div class="card green"><div class="kicker">Criterio</div><h3>¿Qué exige su experiencia?</h3><p>Interpretar, decidir, negociar, priorizar o asumir responsabilidad.</p></div>
+    <div class="card red"><div class="kicker">Riesgo</div><h3>¿Qué error sería costoso?</h3><p>Inventar una fuente, alterar una cifra, enviar algo sin aprobación o mezclar datos sensibles.</p></div>
+  </div>
+  <p class="big-quote">Automatizamos primero lo <span class="accent">repetitivo y verificable</span>. El criterio queda en manos humanas.</p>
+</div></section>
+
+<section class="slide" data-id="llm" data-title="Qué es un LLM" data-minutes="6">
+<div class="slide-inner">
+  <div class="eyebrow">Fundamento 1</div><h2 class="title">Un LLM no es un oráculo. Es un motor de lenguaje.</h2>
+  <div class="grid two">
+    <div class="card cyan"><div class="kicker">Sí hace</div><h3>Interpreta patrones y genera lenguaje</h3><p>Puede organizar información, redactar, comparar, clasificar, razonar sobre datos recibidos y usar herramientas cuando están disponibles.</p></div>
+    <div class="card red"><div class="kicker">No garantiza</div><h3>Verdad, memoria total ni responsabilidad</h3><p>Puede sonar seguro cuando faltan datos. La fluidez es una propiedad del lenguaje, no un certificado notarial de exactitud.</p></div>
+  </div>
+  <div class="big-quote">Piense en un colaborador nuevo: <span class="accent">rápido, capaz y sin conocimiento tácito de su oficina.</span></div>
+  <div><span class="tag">Modelo</span><span class="tag">Contexto</span><span class="tag">Herramientas</span><span class="tag">Permisos</span><span class="tag red">Revisión humana</span></div>
+</div></section>
+
+<section class="slide" data-id="surfaces" data-title="Web, escritorio y terminal" data-minutes="4">
+<div class="slide-inner">
+  <div class="eyebrow">La interfaz cambia lo que puede hacer</div><h2 class="title">No es solo “el mismo chat en otra ventana”</h2>
+  <div class="grid three">
+    <div class="card cyan"><div class="kicker">Web</div><h3>Conversar y organizar</h3><p>Chat, Projects, archivos, investigación y creación de entregables. Menor fricción para comenzar.</p><div class="tag">pensar</div><div class="tag">redactar</div></div>
+    <div class="card green"><div class="kicker">Aplicación</div><h3>Integración con el computador</h3><p>Acceso más directo a funciones de escritorio y, según disponibilidad, trabajo delegado con archivos y aplicaciones.</p><div class="tag green">delegar</div><div class="tag green">integrar</div></div>
+    <div class="card purple"><div class="kicker">Terminal / Claude Code</div><h3>Operar sobre un sistema</h3><p>Lee directorios, edita archivos, ejecuta comandos y coordina herramientas. Más control, más permisos y más responsabilidad.</p><div class="tag">construir</div><div class="tag red">verificar</div></div>
+  </div>
+  <div class="note">La inteligencia disponible puede ser parecida, pero cambian las instrucciones del sistema, las herramientas, el entorno de ejecución y los permisos.</div>
+</div></section>
+
+<section class="slide" data-id="tokens" data-title="Tokens: dos presupuestos" data-minutes="7">
+<div class="slide-inner">
+  <div class="eyebrow">Fundamento 2</div><h2 class="title">Tokens, contexto y uso: tres conceptos, no una sola caja</h2>
+  <div class="grid three">
+    <div class="card cyan"><div class="kicker">Tokens</div><h3>Unidades de procesamiento</h3><p>El modelo divide el texto en fragmentos. Una palabra puede ocupar uno o varios tokens.</p></div>
+    <div class="card amber"><div class="kicker">Ventana de contexto</div><h3>Capacidad del trabajo actual</h3><p>Incluye instrucciones, historial, archivos recuperados, herramientas y la respuesta en curso.</p></div>
+    <div class="card red"><div class="kicker">Límite de uso</div><h3>Presupuesto del plan</h3><p>Depende del modelo, esfuerzo, longitud y tipo de tarea. No es idéntico a la capacidad de un chat.</p></div>
+  </div>
+  <p class="big-quote">Optimizar no es escribir lo mínimo. Es reducir el <span class="accent">trabajo total</span>: menos ruido, menos reintentos y menos correcciones.</p>
+  <div class="note danger-note">Una tarea en Cowork o Claude Code puede consumir más que una consulta simple porque realiza pasos intermedios y usa herramientas.</div>
+</div></section>
+
+<section class="slide" data-id="context-box" data-title="La caja de contexto" data-minutes="7">
+<div class="slide-inner">
+  <div class="eyebrow">Actividad visual</div><h2 class="title">¿Qué merece entrar en la caja?</h2>
+  <div class="context-wrap">
+    <div class="context-box" id="contextBox">
+      <div class="ctx-segment ctx-response" data-seg="response">Respuesta</div>
+      <div class="ctx-segment ctx-tools" data-seg="tools">Herramientas</div>
+      <div class="ctx-segment ctx-examples" data-seg="examples">Ejemplos</div>
+      <div class="ctx-segment ctx-files" data-seg="files">Archivos</div>
+      <div class="ctx-segment ctx-history" data-seg="history">Historial</div>
+      <div class="ctx-segment ctx-instructions" data-seg="instructions">Instrucciones</div>
+      <div class="ctx-segment ctx-noise" id="noiseSeg">Ruido</div>
+    </div>
+    <div>
+      <div class="sliders">
+        <div class="slider-row"><span>Instrucciones</span><input class="ctx-range" data-key="instructions" type="range" min="0" max="40" value="16"><b id="val-instructions">16</b></div>
+        <div class="slider-row"><span>Historial</span><input class="ctx-range" data-key="history" type="range" min="0" max="40" value="16"><b id="val-history">16</b></div>
+        <div class="slider-row"><span>Archivos</span><input class="ctx-range" data-key="files" type="range" min="0" max="50" value="28"><b id="val-files">28</b></div>
+        <div class="slider-row"><span>Ejemplos</span><input class="ctx-range" data-key="examples" type="range" min="0" max="30" value="10"><b id="val-examples">10</b></div>
+        <div class="slider-row"><span>Herramientas</span><input class="ctx-range" data-key="tools" type="range" min="0" max="30" value="10"><b id="val-tools">10</b></div>
+        <div class="slider-row"><span>Respuesta</span><input class="ctx-range" data-key="response" type="range" min="0" max="40" value="20"><b id="val-response">20</b></div>
+      </div>
+      <div class="metric-row"><div class="metric"><strong id="ctxTotal">100</strong><small>ocupación</small></div><div class="metric"><strong id="ctxSignal">100%</strong><small>señal</small></div><div class="metric"><strong id="ctxStatus">OK</strong><small>estado</small></div><div class="metric"><strong id="noiseValue">0</strong><small>ruido</small></div></div>
+      <div class="button-row"><button class="action danger" id="addNoise">Añadir carpeta irrelevante</button><button class="action green" id="clearNoise">Limpiar ruido</button><button class="action" id="resetContext">Restablecer</button></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="slide" data-id="token-lab" data-title="Laboratorio de tokens" data-minutes="7">
+<div class="slide-inner">
+  <div class="eyebrow">Actividad 1</div><h2 class="title">Mida cuánto ocupa su instrucción</h2>
+  <div class="token-compare">
+    <div class="token-pane"><label class="label" for="tokenInput">Escriba o pegue un texto</label><textarea id="tokenInput" placeholder="Ejemplo: Ayúdame con este informe..."></textarea><div class="button-row"><button class="action" data-token-sample="verbose">Ejemplo con ruido</button><button class="action" data-token-sample="clear">Ejemplo claro</button><button class="action" data-token-sample="english">Misma idea en inglés</button><button class="action" id="clearToken">Limpiar</button></div></div>
+    <div class="token-pane"><div class="metric-row"><div class="metric"><strong id="tokEstimate">0</strong><small>tokens aprox.</small></div><div class="metric"><strong id="wordCount">0</strong><small>palabras</small></div><div class="metric"><strong id="charCount">0</strong><small>caracteres</small></div><div class="metric"><strong id="signalScore">—</strong><small>estructura</small></div></div><div class="token-gauge" style="margin-top:16px"><i id="tokenGauge"></i></div><div class="note">Estimación pedagógica. No representa el saldo del plan ni sustituye el tokenizador oficial del modelo.</div><div class="note success" id="tokenAdvice">Escriba algo para ver la estimación.</div></div>
+  </div>
+  <p class="big-quote">Cada token debería aportar <span class="accent">objetivo, contexto, datos, procedimiento o control</span>.</p>
+</div></section>
+
+<section class="slide" data-id="project" data-title="Crear el Project" data-minutes="4">
+<div class="slide-inner">
+  <div class="eyebrow">Preparación del laboratorio</div><h2 class="title">Un Project guarda el contexto estable. El chat resuelve el encargo actual.</h2>
+  <div class="grid four">
+    <div class="card cyan"><div class="kicker">1</div><h3>Crear</h3><p>“Laboratorio IA – [función]”.</p></div>
+    <div class="card green"><div class="kicker">2</div><h3>Instrucción de seguridad</h3><p>Usar datos ficticios, señalar vacíos y no inventar fuentes.</p></div>
+    <div class="card amber"><div class="kicker">3</div><h3>Abrir chat nuevo</h3><p>Un chat limpio permite comparar mejor.</p></div>
+    <div class="card purple"><div class="kicker">4</div><h3>Cargar carpeta</h3><p>Subir únicamente el caso asignado.</p></div>
+  </div>
+  <div class="note">Los chats de un Project no comparten automáticamente todo su historial. Lo estable debe vivir en instrucciones o conocimiento del Project.</div>
+</div></section>
+
+<section class="slide" data-id="assignments" data-title="Asignaciones profesionales" data-minutes="10">
+<div class="slide-inner">
+  <div class="eyebrow">Actividad 2 · Línea base</div><h2 class="title">Mismo desafío pedagógico, dos profesiones</h2>
+  <div class="grid two">
+    <div class="card cyan assignment"><div class="kicker">Caso jurídico</div><h3>Contestación de acción de tutela</h3><div class="mission">“Con la información contenida en esta carpeta, elabore un borrador de contestación de la acción de tutela en representación de la entidad accionada.”</div><div class="file-list"><span class="file-chip">tutela y anexos</span><span class="file-chip">sentencia base</span><span class="file-chip">pagos</span><span class="file-chip">peticiones</span><span class="file-chip">correos contradictorios</span><span class="file-chip">jurisprudencia</span><span class="file-chip">ruido y duplicados</span></div><a class="download-link" href="/clase-claude/materiales/Carpeta_Abogado_Tutela_PARTICIPANTE.zip" download>⬇ Descargar carpeta jurídica</a></div>
+    <div class="card green assignment"><div class="kicker">Caso administrativo</div><h3>Informe ejecutivo de avance de obra</h3><div class="mission">“Con la información contenida en esta carpeta, prepare un informe ejecutivo de avance de la obra para la reunión de gerencia.”</div><div class="file-list"><span class="file-chip">contrato</span><span class="file-chip">presupuesto</span><span class="file-chip">cronograma</span><span class="file-chip">reportes semanales</span><span class="file-chip">facturas y pagos</span><span class="file-chip">riesgos</span><span class="file-chip">versiones obsoletas</span></div><a class="download-link" href="/clase-claude/materiales/Carpeta_Administradora_Obra_PARTICIPANTE.zip" download>⬇ Descargar carpeta administrativa</a></div>
+  </div>
+  <div class="note">Primera ejecución: escriban el prompt como lo harían hoy. Registren qué hizo bien, qué asumió, qué faltó y cuánto corregirían.</div>
+</div></section>
+
+<section class="slide" data-id="instruction" data-title="De prompt a instrucción" data-minutes="6">
+<div class="slide-inner">
+  <div class="eyebrow">Ingeniería de instrucciones</div><h2 class="title">Un prompt no es un deseo. Es una especificación de trabajo.</h2>
+  <div class="grid two">
+    <div class="card red"><div class="kicker">Prompt débil</div><h3>“Responda la tutela.”</h3><p>El modelo debe adivinar el rol, la estrategia, el estándar probatorio, las fuentes, el formato y los límites.</p></div>
+    <div class="card green"><div class="kicker">Instrucción profesional</div><h3>Define el trabajo y cómo evaluarlo</h3><p>Objetivo claro, datos disponibles, procedimiento, entregable, trazabilidad y salvaguardas.</p></div>
+  </div>
+  <p class="big-quote">La calidad no depende de una frase mágica. Depende de cuánta <span class="accent">ambigüedad operativa</span> eliminamos.</p>
+  <div class="checklist"><div class="check"><i>✓</i><span>Una persona nueva podría ejecutar la tarea sin pedir cinco aclaraciones.</span></div><div class="check"><i>✓</i><span>La salida se puede revisar con criterios observables.</span></div><div class="check"><i>✓</i><span>Los vacíos y riesgos quedan explícitos.</span></div></div>
+</div></section>
+
+<section class="slide" data-id="claros" data-title="Constructor CLAROS" data-minutes="13">
+<div class="slide-inner" style="justify-content:flex-start">
+  <div class="eyebrow">Actividad 3</div><h2 class="title" style="font-size:clamp(2rem,3.1vw,3.7rem)">Construya una instrucción con CLAROS</h2>
+  <div class="claros-tabs"><button class="action" data-claros-sample="general">Ejemplo general</button><button class="action" data-claros-sample="legal">Caso jurídico</button><button class="action" data-claros-sample="admin">Caso administrativo</button><button class="action danger" id="clearClaros">Vaciar</button></div>
+  <div class="claros-grid">
+    <div class="claros-card"><div class="claros-letter">C</div><h4>Contexto</h4><p>Quién eres, situación y propósito.</p><textarea id="c-context" placeholder="Actúa como..."></textarea></div>
+    <div class="claros-card"><div class="claros-letter">L</div><h4>Logro</h4><p>Resultado concreto que debe producir.</p><textarea id="c-goal" placeholder="El objetivo es..."></textarea></div>
+    <div class="claros-card"><div class="claros-letter">A</div><h4>Archivos o datos</h4><p>Fuentes autorizadas y datos disponibles.</p><textarea id="c-inputs" placeholder="Usa únicamente..."></textarea></div>
+    <div class="claros-card"><div class="claros-letter">R</div><h4>Ruta</h4><p>Pasos, orden y criterios de análisis.</p><textarea id="c-route" placeholder="Sigue estos pasos..."></textarea></div>
+    <div class="claros-card"><div class="claros-letter">O</div><h4>Output</h4><p>Formato, secciones y nivel de detalle.</p><textarea id="c-output" placeholder="Entrega..."></textarea></div>
+    <div class="claros-card"><div class="claros-letter">S</div><h4>Salvaguardas</h4><p>Qué no debe hacer y cómo marcar dudas.</p><textarea id="c-safety" placeholder="No inventes..."></textarea></div>
+  </div>
+  <div class="button-row"><button class="action primary" id="buildPrompt">Generar prompt</button><button class="action" id="copyPrompt">Copiar</button><button class="action" id="downloadPrompt">Descargar .md</button><span class="tag" id="clarosToken">0 tokens aprox.</span></div>
+  <pre class="preview" id="promptPreview">Complete las seis piezas o cargue un ejemplo.</pre>
+</div></section>
+
+<section class="slide" data-id="hallucinations" data-title="Alucinaciones y verificación" data-minutes="9">
+<div class="slide-inner" style="justify-content:flex-start">
+  <div class="eyebrow">Actividad 4</div><h2 class="title" style="font-size:clamp(2rem,3.2vw,3.7rem)">La respuesta puede sonar bien y seguir estando mal</h2>
+  <p class="subtitle">Clasifique cada afirmación: <b>H</b> hecho documentado, <b>P</b> afirmación de parte, <b>I</b> inferencia, <b>V</b> vacío o <b>A</b> sin sustento.</p>
+  <div class="audit-list" id="auditList"></div>
+  <div class="note success"><b>Tres controles mínimos:</b> usar solo fuentes proporcionadas · citar origen de afirmaciones relevantes · declarar vacíos en lugar de completarlos.</div>
+</div></section>
+
+<section class="slide" data-id="pause" data-title="Pausa" data-minutes="5">
+<div class="slide-inner" style="align-items:center;text-align:center">
+  <div class="eyebrow">65 minutos completados</div><h2 class="title">Pausa de cinco minutos</h2>
+  <p class="subtitle">Dejen abierto el prompt CLAROS y cierren pestañas innecesarias. La atención humana también tiene ventana de contexto, solo que nadie le instaló un indicador decente.</p>
+  <div style="font-size:7rem">☕</div>
+</div></section>
+
+<section class="slide" data-id="skills" data-title="De prompt a Skill" data-minutes="10">
+<div class="slide-inner" style="justify-content:flex-start">
+  <div class="eyebrow">Actividad 5</div><h2 class="title" style="font-size:clamp(2rem,3.2vw,3.7rem)">Si se repite, no debería escribirse desde cero</h2>
+  <div class="grid two">
+    <div class="card green"><div class="kicker">Contenido estable</div><h3>Va en la Skill</h3><p>Propósito, cuándo usarla, pasos, formato, controles, checklist, plantillas y ejemplos.</p></div>
+    <div class="card amber"><div class="kicker">Contenido variable</div><h3>Va en el encargo</h3><p>Nombres, fechas, expediente, semana, importes, archivos concretos y decisiones del caso.</p></div>
+  </div>
+  <div class="form-row two" style="margin-top:14px"><div><label class="label">Nombre de la Skill</label><input id="skillName" type="text" value="analisis-profesional-documentado"></div><div><label class="label">Cuándo usarla</label><input id="skillWhen" type="text" value="Cuando se reciba una carpeta documental y se necesite un borrador verificable."></div></div>
+  <div class="button-row"><button class="action primary" id="buildSkill">Generar SKILL.md desde CLAROS</button><button class="action" id="copySkill">Copiar</button><button class="action" id="downloadSkill">Descargar</button></div>
+  <pre class="preview" id="skillPreview">La Skill aparecerá aquí.</pre>
+</div></section>
+
+<section class="slide" data-id="layers" data-title="Dónde vive cada cosa" data-minutes="7">
+<div class="slide-inner">
+  <div class="eyebrow">Arquitectura del conocimiento</div><h2 class="title">Prompt, Project, Skill y CLAUDE.md no son sinónimos</h2>
+  <div class="layer-stack">
+    <div class="layer"><strong>Prompt</strong><span>Lo variable de esta ejecución.</span><span>“Analiza el expediente 2026-017 con estos archivos.”</span></div>
+    <div class="layer"><strong>Project</strong><span>Contexto compartido para una línea de trabajo.</span><span>Políticas, plantillas, instrucciones y conocimiento estable.</span></div>
+    <div class="layer"><strong>Skill</strong><span>Procedimiento reusable para una tarea.</span><span>Pasos, formato, checklist y salvaguardas.</span></div>
+    <div class="layer"><strong>CLAUDE.md</strong><span>Instrucciones persistentes de directorio en Claude Code.</span><span><code>No modificar /originales. Guardar resultados en /outputs.</code></span></div>
+  </div>
+  <div class="note">Regla rápida: variable → prompt · estable de negocio → Project · procedimiento → Skill · convenciones del sistema de archivos → CLAUDE.md.</div>
+</div></section>
+
+<section class="slide" data-id="environments" data-title="Chat, Cowork o Code" data-minutes="7">
+<div class="slide-inner" style="justify-content:flex-start">
+  <div class="eyebrow">Actividad 6</div><h2 class="title" style="font-size:clamp(2rem,3.2vw,3.8rem)">Use la herramienta mínima suficiente</h2>
+  <div class="grid three" style="margin-bottom:14px">
+    <div class="card cyan"><h3>Chat</h3><p>Pensar, redactar, comparar, explorar y refinar.</p></div>
+    <div class="card green"><h3>Cowork</h3><p>Delegar tareas multipaso con archivos, herramientas y entregables.</p></div>
+    <div class="card purple"><h3>Claude Code</h3><p>Operar sobre directorios, editar archivos, ejecutar comandos y construir sistemas.</p></div>
+  </div>
+  <div id="envQuiz"></div>
+</div></section>
+
+<section class="slide" data-id="automation" data-title="Canvas de automatización" data-minutes="4">
+<div class="slide-inner" style="justify-content:flex-start">
+  <div class="eyebrow">Actividad 7</div><h2 class="title" style="font-size:clamp(2rem,3vw,3.6rem)">Diseñe la automatización antes de activarla</h2>
+  <div class="canvas-grid">
+    <div><label class="label">Disparador</label><textarea id="a-trigger" placeholder="Cada viernes / al llegar una carpeta..."></textarea></div>
+    <div><label class="label">Entrada</label><textarea id="a-input" placeholder="Archivos, correos, datos..."></textarea></div>
+    <div><label class="label">Procedimiento</label><textarea id="a-process" placeholder="Clasificar, verificar, comparar..."></textarea></div>
+    <div><label class="label">Herramientas</label><textarea id="a-tools" placeholder="Project, Skill, Drive, carpeta local..."></textarea></div>
+    <div><label class="label">Salida</label><textarea id="a-output" placeholder="Borrador, informe, alertas..."></textarea></div>
+    <div><label class="label">Control humano</label><textarea id="a-control" placeholder="Quién revisa y qué aprueba..."></textarea></div>
+    <div><label class="label">Acciones prohibidas</label><textarea id="a-prohibited" placeholder="No enviar, no pagar, no borrar..."></textarea></div>
+    <div><label class="label">Medida de éxito</label><textarea id="a-success" placeholder="Tiempo, calidad, correcciones..."></textarea></div>
+  </div>
+  <div class="button-row"><button class="action primary" id="exportCanvas">Exportar Markdown</button><button class="action" data-auto-sample="legal">Ejemplo jurídico</button><button class="action" data-auto-sample="admin">Ejemplo administrativo</button></div>
+</div></section>
+
+<section class="slide" data-id="commands" data-title="Comandos esenciales de Claude" data-minutes="6">
+<div class="slide-inner" style="justify-content:flex-start">
+  <div class="eyebrow">Bonus práctico · Claude Code</div><h2 class="title" style="font-size:clamp(2rem,3.15vw,3.8rem)">Ocho comandos que evitan perder contexto, tiempo y trabajo</h2>
+  <p class="subtitle" style="margin-bottom:14px">Se escriben al comienzo del mensaje. Teclee <code>/</code> para ver los comandos disponibles en su versión y plan.</p>
+  <div class="command-grid">
+    <div class="command-card"><code>/context</code><p>Muestra qué está ocupando la ventana de contexto.</p></div>
+    <div class="command-card"><code>/compact</code><p>Resume la conversación para liberar contexto sin abandonar la tarea.</p></div>
+    <div class="command-card"><code>/clear</code><p>Empieza una conversación limpia cuando cambia el objetivo.</p></div>
+    <div class="command-card"><code>/rewind</code><p>Vuelve a un punto anterior: conversación, código o ambos.</p></div>
+    <div class="command-card"><code>/resume</code><p>Recupera una sesión anterior y continúa donde quedó.</p></div>
+    <div class="command-card"><code>/permissions</code><p>Revisa qué herramientas pueden actuar y cuáles deben pedir permiso.</p></div>
+    <div class="command-card"><code>/batch</code><p>Divide un cambio grande en unidades independientes y paralelizables.</p></div>
+    <div class="command-card"><code>/help</code><p>Abre la referencia de comandos disponible en esa instalación.</p></div>
+  </div>
+  <div class="note success"><b>Regla de bolsillo:</b> tarea nueva → <code>/clear</code> · contexto valioso pero lleno → <code>/compact</code> · camino equivocado → <code>/rewind</code> · trabajo grande e independiente → <code>/batch</code>.</div>
+</div></section>
+
+<section class="slide" data-id="close" data-title="Cierre" data-minutes="2">
+<div class="slide-inner">
+  <div class="eyebrow">Resultado de la sesión</div><h2 class="title">La habilidad no es “saber usar Claude”</h2>
+  <p class="big-quote">Es mirar una tarea y separar <span class="accent">qué exige criterio, qué puede documentarse y qué puede delegarse con seguridad.</span></p>
+  <div class="grid three">
+    <div class="card cyan"><h3>Una vez</h3><p>Hacer bien la tarea con una instrucción verificable.</p></div>
+    <div class="card green"><h3>Siempre</h3><p>Convertir el procedimiento estable en Skill.</p></div>
+    <div class="card amber"><h3>Después</h3><p>Delegar o automatizar con permisos y aprobación humana.</p></div>
+  </div>
+  <div class="note success">Regla final: automatice borradores y tareas reversibles antes de automatizar decisiones o acciones irreversibles.</div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="slide-name" id="slideName">Apertura · 2 min</div><div class="nav-actions"><button class="nav-btn" id="prevBtn">← Anterior</button><button class="nav-btn primary" id="nextBtn">Siguiente →</button></div></footer>
+
+<div class="modal" id="graphModal"><div class="modal-head"><div><b>Grafo de conocimiento</b> <span style="color:var(--muted)">· haga clic en un nodo</span></div><button class="icon-btn" id="closeGraph">×</button></div><div class="modal-body"><svg class="graph-svg" viewBox="0 0 1150 620" role="img" aria-label="Grafo de conocimiento de la clase">
+<path class="graph-line" d="M115 300 C190 300,190 130,280 130 S370 300,440 300 S520 105,610 105 S690 300,760 300 S850 130,930 130 S1010 300,1070 300"/>
+<path class="graph-line" d="M280 130 C300 220,360 260,440 300"/><path class="graph-line" d="M610 105 C620 190,690 245,760 300"/><path class="graph-line" d="M930 130 C930 220,1010 250,1070 300"/>
+<g class="graph-node" data-goto="llm" transform="translate(115,300)"><circle r="64"/><text y="-5">ENTENDER</text><text class="small" y="18">LLM · tokens</text></g>
+<g class="graph-node" data-goto="context-box" transform="translate(280,130)"><circle r="64"/><text y="-5">CONTEXTO</text><text class="small" y="18">señal · ruido</text></g>
+<g class="graph-node" data-goto="instruction" transform="translate(440,300)"><circle r="64"/><text y="-5">INSTRUIR</text><text class="small" y="18">CLAROS</text></g>
+<g class="graph-node" data-goto="hallucinations" transform="translate(610,105)"><circle r="64"/><text y="-5">VERIFICAR</text><text class="small" y="18">fuentes · vacíos</text></g>
+<g class="graph-node" data-goto="skills" transform="translate(760,300)"><circle r="64"/><text y="-5">ESTANDARIZAR</text><text class="small" y="18">Skills</text></g>
+<g class="graph-node" data-goto="environments" transform="translate(930,130)"><circle r="64"/><text y="-5">DELEGAR</text><text class="small" y="18">Cowork · Code</text></g>
+<g class="graph-node" data-goto="automation" transform="translate(1070,300)"><circle r="64"/><text y="-5">AUTOMATIZAR</text><text class="small" y="18">control humano</text></g>
+<g class="graph-node" data-goto="layers" transform="translate(610,500)"><circle r="64"/><text y="-5">GOBERNAR</text><text class="small" y="18">permisos · reglas</text></g>
+<path class="graph-line" d="M440 300 C480 430,530 500,610 500 C690 500,730 415,760 300"/>
+</svg></div></div>
+<div class="toast" id="toast">Copiado</div>
+
+<script>
+(() => {
+const slides=[...document.querySelectorAll('.slide')];
+const store={get(k){try{return window.localStorage.getItem(k)}catch{return null}},set(k,v){try{window.localStorage.setItem(k,v)}catch{}}};
+let current=Math.max(0,Math.min(slides.length-1,Number(store.get('claudeClassSlide')||0)));
+const totalMinutes=slides.reduce((a,s)=>a+Number(s.dataset.minutes||0),0);
+const bc=('BroadcastChannel' in window)?new BroadcastChannel('claude-class-sync'):null;
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+function elapsedBefore(i){return slides.slice(0,i).reduce((a,s)=>a+Number(s.dataset.minutes||0),0)}
+function showSlide(i,broadcast=true){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,n)=>s.classList.toggle('active',n===current));store.set('claudeClassSlide',current);const elapsed=elapsedBefore(current);$('#progressBar').style.width=((elapsed/totalMinutes)*100)+'%';$('#progressText').textContent=`${current+1} / ${slides.length} · ${elapsed} min`;$('#slideName').textContent=`${slides[current].dataset.title} · ${slides[current].dataset.minutes} min`;$('#prevBtn').disabled=current===0;$('#nextBtn').disabled=current===slides.length-1;$('#nextBtn').textContent=current===slides.length-1?'Finalizado ✓':'Siguiente →';$$('.nav-item').forEach((n,k)=>n.classList.toggle('active',k===current));if(broadcast){bc?.postMessage({type:'slide',index:current});if(window.parent!==window)window.parent.postMessage({type:'slide',index:current,id:slides[current].dataset.id},window.location.origin)}}
+function goId(id){const i=slides.findIndex(s=>s.dataset.id===id);if(i>=0)showSlide(i)}
+function buildNav(){const nav=$('#navList');let t=0;slides.forEach((s,i)=>{const b=document.createElement('button');b.className='nav-item';b.innerHTML=`<b>${String(i+1).padStart(2,'0')}</b><div><b>${s.dataset.title}</b><br><span>${t}–${t+Number(s.dataset.minutes)} min</span></div><span>${s.dataset.minutes}′</span>`;b.onclick=()=>{showSlide(i);closeDrawer()};nav.appendChild(b);t+=Number(s.dataset.minutes)})}
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)}
+function openDrawer(){$('#drawer').classList.add('open');$('#overlay').classList.add('show')}function closeDrawer(){$('#drawer').classList.remove('open');$('#overlay').classList.remove('show')}
+$('#menuBtn').onclick=openDrawer;$('#closeDrawer').onclick=closeDrawer;$('#overlay').onclick=()=>{closeDrawer();$('#graphModal').classList.remove('show')};$('#prevBtn').onclick=()=>showSlide(current-1);$('#nextBtn').onclick=()=>showSlide(current+1);$('#fullBtn').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+$('#graphBtn').onclick=()=>{$('#graphModal').classList.add('show');$('#overlay').classList.add('show')};$('#closeGraph').onclick=()=>{$('#graphModal').classList.remove('show');$('#overlay').classList.remove('show')};$$('.graph-node').forEach(n=>n.onclick=()=>{$('#graphModal').classList.remove('show');$('#overlay').classList.remove('show');goId(n.dataset.goto)});
+window.addEventListener('keydown',e=>{if(['TEXTAREA','INPUT','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowRight'||e.key==='PageDown')showSlide(current+1);if(e.key==='ArrowLeft'||e.key==='PageUp')showSlide(current-1);if(e.key.toLowerCase()==='m')openDrawer();if(e.key.toLowerCase()==='g')$('#graphBtn').click();if(e.key==='Escape'){closeDrawer();$('#graphModal').classList.remove('show');$('#overlay').classList.remove('show')}});
+window.addEventListener('message',e=>{if(e.origin===window.location.origin&&e.data?.type==='goto'&&Number.isInteger(e.data.index))showSlide(e.data.index,false)});bc?.addEventListener('message',e=>{if(e.data?.type==='goto'&&Number.isInteger(e.data.index))showSlide(e.data.index,false)});
+
+// Context box
+const ctxDefault={instructions:16,history:16,files:28,examples:10,tools:10,response:20};let noise=0;
+function renderContext(){let total=noise;Object.entries(ctxDefault).forEach(([k])=>{const inp=document.querySelector(`.ctx-range[data-key="${k}"]`);const v=Number(inp.value);document.querySelector(`[data-seg="${k}"]`).style.height=Math.max(6,v*2.35)+'px';$(`#val-${k}`).textContent=v;total+=v});$('#noiseSeg').style.height=noise?Math.max(8,noise*2.35)+'px':'0';$('#noiseSeg').style.opacity=noise?1:0;$('#ctxTotal').textContent=total;$('#noiseValue').textContent=noise;const signal=Math.max(0,Math.round(((total-noise)/Math.max(total,1))*100));$('#ctxSignal').textContent=signal+'%';$('#ctxStatus').textContent=total>100?'SATURADA':total>88?'AJUSTADA':'LIBRE';$('#ctxStatus').style.color=total>100?'var(--red)':total>88?'var(--amber)':'var(--green)'}
+$$('.ctx-range').forEach(i=>i.oninput=renderContext);$('#addNoise').onclick=()=>{noise=Math.min(38,noise+18);renderContext();toast('Ruido añadido')};$('#clearNoise').onclick=()=>{noise=0;renderContext();toast('Ruido eliminado')};$('#resetContext').onclick=()=>{Object.entries(ctxDefault).forEach(([k,v])=>document.querySelector(`.ctx-range[data-key="${k}"]`).value=v);noise=0;renderContext()};renderContext();
+
+// Token lab
+function estimateTokens(text){if(!text.trim())return 0;const chars=text.length;const words=(text.match(/[\p{L}\p{N}]+/gu)||[]).length;const punctuation=(text.match(/[^\p{L}\p{N}\s]/gu)||[]).length;const nonAscii=(text.match(/[^\x00-\x7F]/g)||[]).length;return Math.max(1,Math.round(chars/4.05+words*.08+punctuation*.18+nonAscii*.05))}
+function structureScore(t){const lower=t.toLowerCase();let n=0;['objetivo','contexto','archiv','datos','pasos','formato','salida','no invent','fuente','restric','verifica'].forEach(k=>{if(lower.includes(k))n++});return Math.min(100,n*10)}
+function renderTokens(){const t=$('#tokenInput').value;const tok=estimateTokens(t),words=(t.match(/[\p{L}\p{N}]+/gu)||[]).length,chars=t.length,score=structureScore(t);$('#tokEstimate').textContent=tok;$('#wordCount').textContent=words;$('#charCount').textContent=chars;$('#signalScore').textContent=t?score+'%':'—';$('#tokenGauge').style.width=Math.min(100,tok/3)+'%';let advice='Escriba algo para ver la estimación.';if(t){if(score<20)advice='El texto puede ser corto, pero todavía obliga al modelo a adivinar demasiado.';else if(score<60)advice='Hay dirección, pero faltan criterios de salida o salvaguardas.';else advice='La instrucción usa más estructura y probablemente necesite menos correcciones.'}$('#tokenAdvice').textContent=advice}
+const tokenSamples={verbose:'Hola Claude, espero que estés muy bien. Mira, resulta que tengo una carpeta con muchas cosas y necesito que me ayudes porque estoy bastante ocupado. Básicamente quiero que revises todo y hagas un informe bueno, completo, profesional y que no falte nada. Por favor hazlo lo mejor posible y dime qué piensas.',clear:'Objetivo: preparar un informe ejecutivo del proyecto. Usa únicamente los archivos adjuntos. Primero identifica avance físico, avance financiero, desviaciones, riesgos y decisiones pendientes. Entrega un resumen de una página y una tabla de acciones. Cita el archivo de origen de cada cifra y declara cualquier dato faltante.',english:'Objective: prepare an executive project report. Use only the attached files. Identify physical progress, financial progress, deviations, risks, and pending decisions. Deliver a one-page summary and an action table. Cite the source file for each figure and flag missing data.'};$$('[data-token-sample]').forEach(b=>b.onclick=()=>{$('#tokenInput').value=tokenSamples[b.dataset.tokenSample];renderTokens()});$('#tokenInput').oninput=renderTokens;$('#clearToken').onclick=()=>{$('#tokenInput').value='';renderTokens()};renderTokens();
+
+// CLAROS
+const claroFields=['context','goal','inputs','route','output','safety'];
+const samples={
+ general:{context:'Actúa como asistente profesional para apoyar una tarea documental. La persona responsable revisará el resultado antes de usarlo.',goal:'Preparar un borrador claro, verificable y útil para tomar decisiones.',inputs:'Usa únicamente los archivos y datos proporcionados en esta ejecución.',route:'1. Inventaría las fuentes. 2. Extrae hechos y cifras. 3. Detecta contradicciones y vacíos. 4. Organiza hallazgos. 5. Realiza una revisión final.',output:'Entrega resumen ejecutivo, tabla de hallazgos, riesgos, información faltante y próximos pasos.',safety:'No inventes datos ni fuentes. Distingue hechos, afirmaciones e inferencias. Cita el archivo de origen. No ejecutes acciones externas.'},
+ legal:{context:'Actúa como asistente jurídico de la entidad accionada. Debes apoyar la elaboración de un borrador de contestación de tutela, sujeto a revisión del abogado responsable.',goal:'Producir un borrador argumentado que responda a hechos y pretensiones, identifique problemas jurídicos, pruebas, riesgos y solicitudes al juez.',inputs:'Usa exclusivamente los documentos de la carpeta. No consultes ni inventes jurisprudencia adicional. Señala versiones duplicadas u obsoletas.',route:'1. Inventaría documentos. 2. Construye cronología. 3. Separa hechos probados, afirmaciones e inferencias. 4. Contrasta pretensiones con pruebas. 5. Analiza procedencia, cumplimiento, hecho superado, derecho de petición y vinculación de terceros cuando haya soporte. 6. Identifica argumentos favorables y desfavorables. 7. Verifica coherencia de fechas y pagos.',output:'Entrega: ficha del expediente; cronología; matriz hecho-prueba; problemas jurídicos; propuesta de contestación con secciones; solicitudes; anexos sugeridos; vacíos y alertas.',safety:'No inventes hechos, normas, radicados ni sentencias. Cita el archivo y página o sección cuando sea posible. Marca cualquier afirmación no documentada. No presentes el texto como concepto definitivo.'},
+ admin:{context:'Actúa como analista administrativo para preparar el informe de avance de una obra antes de una reunión de gerencia.',goal:'Consolidar el estado real del proyecto, explicar desviaciones y proponer decisiones priorizadas sin alterar los registros originales.',inputs:'Usa contrato, presupuesto, cronograma, reportes, interventoría, facturas, pagos, riesgos, inventarios y correos de la carpeta. Identifica versiones obsoletas.',route:'1. Inventaría fuentes. 2. Determina corte y versión vigente. 3. Reconcilia avance físico y financiero. 4. Separa contratado, aprobado, pendiente y rechazado. 5. Detecta duplicados y diferencias. 6. Resume calidad, SST, suministros y ruta crítica. 7. Prioriza decisiones y responsables.',output:'Entrega informe ejecutivo, tablero de cifras, variaciones, riesgos, decisiones pendientes, plan de acción y anexo de inconsistencias con fuente.',safety:'No inventes porcentajes, pagos ni rentabilidad. No autorices facturas. Conserva trazabilidad de cada cifra. Declara datos faltantes y conflictos entre fuentes.'}
+};
+function setClaros(sample){claroFields.forEach(k=>$(`#c-${k}`).value=sample[k]||'');buildPrompt();saveClaros()}
+function buildPrompt(){const labels={context:'CONTEXTO',goal:'LOGRO ESPERADO',inputs:'ARCHIVOS O DATOS',route:'RUTA DE TRABAJO',output:'OUTPUT / FORMATO',safety:'SALVAGUARDAS'};let out=[];claroFields.forEach(k=>{const v=$(`#c-${k}`).value.trim();if(v)out.push(`## ${labels[k]}\n${v}`)});const text=out.length?out.join('\n\n'):'Complete las seis piezas o cargue un ejemplo.';$('#promptPreview').textContent=text;$('#clarosToken').textContent=estimateTokens(text)+' tokens aprox.';store.set('claudeClarosPrompt',text);return text}
+function saveClaros(){claroFields.forEach(k=>store.set('claros-'+k,$(`#c-${k}`).value))}
+claroFields.forEach(k=>{const saved=store.get('claros-'+k);if(saved)$(`#c-${k}`).value=saved;$(`#c-${k}`).oninput=()=>{buildPrompt();saveClaros()}});$$('[data-claros-sample]').forEach(b=>b.onclick=()=>setClaros(samples[b.dataset.clarosSample]));$('#buildPrompt').onclick=()=>{buildPrompt();toast('Prompt generado')};$('#clearClaros').onclick=()=>{claroFields.forEach(k=>$(`#c-${k}`).value='');buildPrompt();saveClaros()};
+async function copyText(text){try{await navigator.clipboard.writeText(text);toast('Copiado')}catch{toast('Seleccione y copie manualmente')}}function download(name,text,type='text/markdown'){const a=document.createElement('a');const url=URL.createObjectURL(new Blob([text],{type}));a.href=url;a.download=name;a.hidden=true;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+$('#copyPrompt').onclick=()=>copyText(buildPrompt());$('#downloadPrompt').onclick=()=>download('prompt_CLAROS.md',buildPrompt());buildPrompt();
+
+// Audit
+const audit=[
+ {text:'“El pago fue procesado el 8 de abril”, según el comprobante bancario incluido.',ans:'H',why:'Es un hecho documentado si el archivo citado realmente contiene ese comprobante.'},
+ {text:'“La accionante afirma que la entidad ignoró tres peticiones.”',ans:'P',why:'Describe la posición de una parte, no prueba por sí sola la omisión.'},
+ {text:'“La demora probablemente agravó su situación económica.”',ans:'I',why:'Es una inferencia que requiere evidencia adicional.'},
+ {text:'“No se aportó constancia completa de notificación del acto.”',ans:'V',why:'Es un vacío documental que debe declararse.'},
+ {text:'“La Corte Constitucional ordenó en 2025 pagar todos los casos idénticos en 48 horas.”',ans:'A',why:'Afirmación específica sin fuente verificable en la carpeta.'}
+];
+const auditList=$('#auditList');audit.forEach((x,i)=>{const d=document.createElement('div');d.className='audit-item';d.innerHTML=`<b>${i+1}. ${x.text}</b><div class="audit-options">${['H','P','I','V','A'].map(v=>`<button data-choice="${v}">${v}</button>`).join('')}</div><div class="feedback"></div>`;d.querySelectorAll('button').forEach(b=>b.onclick=()=>{d.querySelectorAll('button').forEach(z=>z.classList.remove('correct','wrong'));b.classList.add(b.dataset.choice===x.ans?'correct':'wrong');d.querySelector('.feedback').textContent=(b.dataset.choice===x.ans?'Correcto. ':'Revise: ')+x.why});auditList.appendChild(d)});
+
+// Skill
+function buildSkill(){const prompt=buildPrompt();const name=($('#skillName').value.trim()||'skill-profesional').toLowerCase().replace(/[^a-z0-9áéíóúñ]+/gi,'-').replace(/^-|-$/g,'');const when=$('#skillWhen').value.trim();const text=`---\nname: ${name}\ndescription: ${when}\n---\n\n# Propósito\nEjecutar un procedimiento profesional documentado y verificable.\n\n# Cuándo usar\n${when}\n\n# Instrucciones\n${prompt}\n\n# Checklist final\n- [ ] Se usaron únicamente fuentes autorizadas.\n- [ ] Los hechos tienen trazabilidad.\n- [ ] Las inferencias están marcadas.\n- [ ] Los vacíos están declarados.\n- [ ] No se ejecutaron acciones externas sin aprobación.\n- [ ] El entregable cumple el formato solicitado.\n`;$('#skillPreview').textContent=text;store.set('claudeSkill',text);return text}
+$('#buildSkill').onclick=()=>{buildSkill();toast('SKILL.md generado')};$('#copySkill').onclick=()=>copyText(buildSkill());$('#downloadSkill').onclick=()=>download('SKILL.md',buildSkill());
+
+// Environment quiz
+const envTasks=[
+ {q:'Mejorar el tono de un correo de tres párrafos.',a:'Chat',why:'Es una interacción breve y reversible.'},
+ {q:'Revisar una carpeta, usar varias fuentes y entregar un informe completo.',a:'Cowork',why:'Es trabajo multipaso orientado a un resultado.'},
+ {q:'Renombrar cientos de archivos, generar índices y ejecutar validaciones locales.',a:'Claude Code',why:'Requiere operar sobre directorios y comandos.'},
+ {q:'Mantener políticas y plantillas de una línea de trabajo durante varios chats.',a:'Project',why:'Es conocimiento estable y organizado, no un modo de ejecución.'}
+];
+const env=$('#envQuiz');envTasks.forEach((x,i)=>{const d=document.createElement('div');d.className='quiz-task';d.innerHTML=`<p><b>${i+1}.</b> ${x.q}</p><div class="env-buttons">${['Chat','Project','Cowork','Claude Code'].map(v=>`<button data-v="${v}">${v}</button>`).join('')}</div><div class="env-feedback"></div>`;d.querySelectorAll('button').forEach(b=>b.onclick=()=>{d.querySelectorAll('button').forEach(z=>z.classList.remove('correct','wrong'));b.classList.add(b.dataset.v===x.a?'correct':'wrong');b.style.background=b.dataset.v===x.a?'#146c53':'#5c2635';d.querySelector('.env-feedback').textContent=(b.dataset.v===x.a?'Correcto. ':'La mejor opción aquí es '+x.a+'. ')+x.why});env.appendChild(d)});
+
+// Automation
+const autoSamples={legal:{trigger:'Al recibirse una carpeta nueva de tutela y asignarse responsable.',input:'Expediente ficticio o autorizado, auto admisorio, anexos, pruebas y plantillas aprobadas.',process:'Inventariar, construir cronología, separar hechos e inferencias, detectar vacíos, aplicar Skill y preparar borrador.',tools:'Project jurídico, Skill de contestación, carpeta de trabajo con permisos limitados.',output:'Borrador, matriz hecho-prueba, lista de anexos y alertas.',control:'Abogado responsable verifica hechos, estrategia, fuentes y firma.',prohibited:'No presentar, enviar, firmar ni consultar datos externos sin aprobación.',success:'Menor tiempo de preparación y cero afirmaciones sin trazabilidad.'},admin:{trigger:'Cada viernes al cierre de recepción de reportes de obra.',input:'Cronograma, presupuesto, reportes, facturas, pagos, riesgos e interventoría.',process:'Validar versiones, reconciliar cifras, comparar avance, detectar desviaciones y preparar acciones.',tools:'Project de obra, Skill de informe, carpeta controlada o conectores aprobados.',output:'Borrador de informe ejecutivo, alertas y tabla de decisiones.',control:'Gerente revisa cifras, autoriza decisiones y destinatarios.',prohibited:'No autorizar pagos, modificar originales ni enviar el informe.',success:'Informe preparado antes del comité con menos de dos correcciones de cifras.'}};
+const autoKeys=['trigger','input','process','tools','output','control','prohibited','success'];function saveCanvas(){autoKeys.forEach(k=>store.set('claudeCanvas-'+k,$(`#a-${k}`).value))}autoKeys.forEach(k=>{const saved=store.get('claudeCanvas-'+k);if(saved)$(`#a-${k}`).value=saved;$(`#a-${k}`).addEventListener('input',saveCanvas)});$$('[data-auto-sample]').forEach(b=>b.onclick=()=>{const s=autoSamples[b.dataset.autoSample];autoKeys.forEach(k=>$(`#a-${k}`).value=s[k]);saveCanvas()});$('#exportCanvas').onclick=()=>{const labels={trigger:'Disparador',input:'Entrada',process:'Procedimiento',tools:'Herramientas',output:'Salida',control:'Control humano',prohibited:'Acciones prohibidas',success:'Medida de éxito'};const text='# Canvas de automatización\n\n'+autoKeys.map(k=>`## ${labels[k]}\n${$(`#a-${k}`).value.trim()||'[pendiente]'}`).join('\n\n');download('canvas_automatizacion.md',text)};
+
+buildNav();showSlide(current,false);
+})();
+</script>
+</body>
+</html>
