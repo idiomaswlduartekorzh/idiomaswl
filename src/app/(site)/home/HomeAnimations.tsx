@@ -1,7 +1,33 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import { motion, animate, useInView, type Variants } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { motion, animate, useInView, AnimatePresence, type Variants } from 'framer-motion';
+
+// ── Hero: palabra que cicla entre idiomas (SSR-safe: renderiza el primero) ─────
+const CYCLE_WORDS = ['inglés', 'coreano', 'alemán', 'francés', 'italiano', 'portugués'];
+export function LangCycle() {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setI(v => (v + 1) % CYCLE_WORDS.length), 2200);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <span className="wlh-hero__cycle" aria-live="polite">
+      <AnimatePresence mode="wait">
+        <motion.em
+          key={i}
+          initial={{ opacity: 0, y: '0.4em', filter: 'blur(6px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          exit={{ opacity: 0, y: '-0.4em', filter: 'blur(6px)' }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="wlh-hero__cycle-word"
+        >
+          {CYCLE_WORDS[i]}
+        </motion.em>
+      </AnimatePresence>
+    </span>
+  );
+}
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },

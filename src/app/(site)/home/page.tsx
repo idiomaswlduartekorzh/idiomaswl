@@ -3,12 +3,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
-import HeroLangSelector from './HeroLangSelector';
 import { BLOG_POSTS } from '@/data/blog';
 import {
   FadeUp, StaggerGrid, StaggerItem,
   HeroLeft, HeroItem, HeroCard,
-  StatsRow, StatItem, StepRow,
+  StatsRow, StatItem, LangCycle,
   CountUp, TiltCard, TeamCard, TestimonialCard,
 } from './HomeAnimations';
 
@@ -199,20 +198,6 @@ const APP_VS_WELEARN = [
   { app: '“Tal vez algún día llegue a hablarlo”', wl: 'Un plan estructurado con fecha de examen' },
 ];
 
-const METODO = [
-  { n: '01', name: 'Activación',           desc: 'Imagen, audio y forma escrita para abrir contexto.',   min: '6 min' },
-  { n: '02', name: 'Adquisición guiada',   desc: 'Quiz inicial con palabras nuevas y recicladas.',        min: '8 min' },
-  { n: '03', name: 'Reconocimiento',       desc: 'Repaso espaciado de alta retención.',                   min: '10 min' },
-  { n: '04', name: 'Escucha sobrevivible', desc: 'Audio corto adaptado al nivel.',                        min: '7 min' },
-  { n: '05', name: 'Contexto',             desc: 'Notas de gramática, estilo y cultura.',                 min: '9 min' },
-  { n: '06', name: 'Descubrir el patrón',  desc: 'Detección guiada de estructuras.',                      min: '8 min' },
-  { n: '07', name: 'Microexplicaciones',   desc: 'Cápsulas breves para dudas frecuentes.',                min: '5 min' },
-  { n: '08', name: 'Producción guiada',    desc: 'Construcción de frases con apoyo.',                     min: '10 min' },
-  { n: '09', name: 'Interacción reactiva', desc: 'Respuestas rápidas en contexto.',                       min: '8 min' },
-  { n: '10', name: 'Examen del día',       desc: 'Comprobación de interiorización inmediata.',            min: '6 min' },
-  { n: '11', name: 'Examen acumulativo',   desc: 'Retención de largo plazo.',                             min: '10 min' },
-];
-
 // Pilares del producto-plataforma (todos reales según el stack de WeLearn)
 const PLATAFORMA = [
   { icon: 'cursos',     name: 'Cursos estructurados',        href: '/clases-de-idiomas', cta: 'Ver los idiomas',  desc: 'Rutas completas por idioma y nivel (A1–C2), con contenido, ritmo y material adaptados a cada lengua.' },
@@ -223,12 +208,12 @@ const PLATAFORMA = [
   { icon: 'progreso',   name: 'Seguimiento de progreso',     href: '#leccion',           cta: 'Ver una lección',  desc: 'Panel de estudiante con tu racha, tus simulacros y tu avance por idioma, siempre a la vista.' },
 ];
 
-// Las 4 fases narrativas que agrupan los 11 pasos (icono SVG modelado in-house)
-const FASES = [
-  { icon: 'exposicion',    name: 'Exposición',    steps: 'Pasos 01 · 04 · 05',      desc: 'Ves, escuchas y lees el idioma en contexto antes de producir nada.' },
-  { icon: 'adquisicion',   name: 'Adquisición',   steps: 'Pasos 02 · 03 · 06 · 07', desc: 'Interiorizas vocabulario y patrones con quizzes y repaso espaciado.' },
-  { icon: 'produccion',    name: 'Producción',    steps: 'Pasos 08 · 09',           desc: 'Construyes frases y respondes en tiempo real, con apoyo del profesor.' },
-  { icon: 'consolidacion', name: 'Consolidación', steps: 'Pasos 10 · 11',           desc: 'Compruebas lo aprendido y lo fijas a largo plazo con exámenes.' },
+// "Cómo funciona" — el recorrido del estudiante (4 pasos de captación)
+const COMO = [
+  { icon: 'exposicion',    n: '01', name: 'Diagnóstico gratis',    desc: 'Evaluamos tu nivel real y entendemos tu meta: examen, trabajo, viaje o migración.' },
+  { icon: 'adquisicion',   n: '02', name: 'Tu plan personalizado', desc: 'Diseñamos una ruta según tu idioma y objetivo, con una fecha realista para lograrlo.' },
+  { icon: 'produccion',    n: '03', name: 'Clases + práctica',     desc: 'Clases con profesor real, práctica interactiva, teoría y simulacros — presencial u online.' },
+  { icon: 'consolidacion', n: '04', name: 'Tu examen o tu meta',   desc: 'Llegas listo, con simulacros corregidos y feedback humano por sección.' },
 ];
 
 const EXAMENES = [
@@ -392,37 +377,69 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* HERO */}
-      <section className="wlh-hero">
+      <section className="wlh-hero wlh-hero--v2">
+        <div className="wlh-hero__aurora" aria-hidden="true" />
         <HeroLeft>
-          <HeroItem><p className="wlh-eyebrow">Academia de idiomas · Presencial en Bucaramanga y online en toda Colombia</p></HeroItem>
+          <HeroItem><p className="wlh-eyebrow">Academia de idiomas · Bucaramanga y online · +1000 estudiantes</p></HeroItem>
           <HeroItem>
-            <h1 className="wlh-hero__h1">
-              Aprende un<br />idioma, <em>en serio.</em>
+            <h1 className="wlh-hero__h1 wlh-hero__h1--v2">
+              Aprende <LangCycle /><br /><em>en serio.</em>
             </h1>
           </HeroItem>
           <HeroItem>
             <p className="wlh-hero__desc">
-              Una plataforma completa: cursos por niveles, simulacros de examen, práctica interactiva y
-              feedback de profesores reales. Preparación para IELTS, TOEFL, TOPIK, Goethe y más — en nuestra
-              sede en Bucaramanga o online, desde donde estés.
+              La plataforma que combina cursos, simulacros y práctica interactiva con el acompañamiento de
+              profesores reales. Preparación para IELTS, TOEFL, TOPIK, Goethe y más — presencial en
+              Bucaramanga u online en todo el mundo.
             </p>
           </HeroItem>
           <HeroItem>
             <div className="wlh-hero__ctas">
               <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Agenda tu clase gratis →</a>
-              <Link href="#leccion" className="btn btn-ghost wlh-hero__btn-ghost">Ver una lección</Link>
+              <Link href="#plataforma" className="btn btn-ghost wlh-hero__btn-ghost">Ver la plataforma</Link>
             </div>
           </HeroItem>
           <HeroItem>
-            <p style={{ marginTop: '1rem', fontSize: '0.82rem', color: 'var(--muted)', fontWeight: 600 }}>
-              Clase de diagnóstico gratis · Responde un humano · +1000 estudiantes preparados
-            </p>
+            <p className="wlh-hero__trustline">✓ Clase de diagnóstico gratis&nbsp;&nbsp;·&nbsp;&nbsp;✓ Responde un humano&nbsp;&nbsp;·&nbsp;&nbsp;✓ Sin tarjeta</p>
           </HeroItem>
         </HeroLeft>
 
         <HeroCard>
-          <HeroLangSelector />
+          <div className="wlh-proof">
+            <div className="wlh-proof__top">
+              <span className="wlh-proof__stars" aria-hidden="true">★★★★★</span>
+              <span className="wlh-proof__toplbl">+1000 estudiantes preparados</span>
+            </div>
+            <div className="wlh-proof__stats">
+              <div className="wlh-proof__stat"><strong><CountUp to={6} /></strong><span>idiomas</span></div>
+              <div className="wlh-proof__stat"><strong><CountUp to={10} suffix="+" /></strong><span>exámenes</span></div>
+              <div className="wlh-proof__stat"><strong><CountUp to={11} /></strong><span>certificaciones</span></div>
+            </div>
+            <blockquote className="wlh-proof__quote">
+              "Fui aceptado en la maestría en la USP. Eternamente agradecido."
+              <cite>— Daniel Zuluaga · Celpe-Bras, Portugués</cite>
+            </blockquote>
+            <div className="wlh-proof__exams">
+              {['IELTS', 'TOEFL', 'TOPIK', 'Goethe', 'DELF', 'ICFES'].map(e => (
+                <span key={e} className="wlh-proof__exam">{e}</span>
+              ))}
+            </div>
+          </div>
         </HeroCard>
+      </section>
+
+      {/* TRUST BAR — sellos de exámenes (marquee) */}
+      <section className="wlh-trustbar" aria-label="Exámenes para los que preparamos">
+        <div className="wrap">
+          <p className="wlh-trustbar__label">Preparación para los exámenes oficiales</p>
+        </div>
+        <div className="wlh-trustbar__track">
+          <div className="wlh-trustbar__row">
+            {['IELTS', 'TOEFL', 'ICFES', 'TOPIK', 'Goethe', 'DELF / DALF', 'CILS', 'CELPE-Bras', 'Cambridge B2', 'IELTS', 'TOEFL', 'ICFES', 'TOPIK', 'Goethe', 'DELF / DALF', 'CILS', 'CELPE-Bras', 'Cambridge B2'].map((e, i) => (
+              <span key={i} className="wlh-trustbar__item">{e}</span>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* STATS ROW — gradient */}
@@ -436,8 +453,8 @@ export default function HomePage() {
           <span className="wlh-stat__lbl">exámenes internacionales</span>
         </StatItem>
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num"><CountUp to={11} /></span>
-          <span className="wlh-stat__lbl">pasos del método diario</span>
+          <span className="wlh-stat__num">100%</span>
+          <span className="wlh-stat__lbl">profesores reales</span>
         </StatItem>
         <StatItem className="wlh-stat">
           <span className="wlh-stat__num"><CountUp to={1000} suffix="+" /></span>
@@ -509,65 +526,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 03 — METODO */}
+      {/* 03 — CÓMO FUNCIONA */}
       <section id="metodo" className="wlh-section">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">03 — El método</p>
-            <h2 className="wlh-section-h2">El día tiene once pasos. Cada uno tiene una razón.</h2>
+            <p className="wlh-section-eyebrow">03 — Cómo funciona</p>
+            <h2 className="wlh-section-h2">De cero a tu meta, con un plan claro.</h2>
             <p className="wlh-section-desc">
-              El método de 11 pasos de WeLearn estructura cada día de estudio en cuatro fases —exposición,
-              adquisición, producción y consolidación— imitando cómo el cerebro interioriza una lengua
-              materna. Por eso el conocimiento se retiene y se convierte en habla, no en tarjetas olvidadas.
+              Nada de improvisar. Empiezas con un diagnóstico gratis y avanzas con una ruta diseñada para tu
+              objetivo, acompañado por un profesor real de principio a fin.
             </p>
           </FadeUp>
-          <StaggerGrid className="wlh-fases-grid">
-            {FASES.map(fase => (
-              <StaggerItem key={fase.icon}>
-                <div className="wlh-fase-card">
-                  <span className="wlh-fase-card__icon"><PhaseIcon name={fase.icon} /></span>
-                  <h3 className="wlh-fase-card__name">{fase.name}</h3>
-                  <span className="wlh-fase-card__steps">{fase.steps}</span>
-                  <p className="wlh-fase-card__desc">{fase.desc}</p>
+          <StaggerGrid className="wlh-como-grid">
+            {COMO.map(paso => (
+              <StaggerItem key={paso.n}>
+                <div className="wlh-como-card">
+                  <span className="wlh-como-card__n">{paso.n}</span>
+                  <span className="wlh-como-card__icon"><PhaseIcon name={paso.icon} /></span>
+                  <h3 className="wlh-como-card__name">{paso.name}</h3>
+                  <p className="wlh-como-card__desc">{paso.desc}</p>
                 </div>
               </StaggerItem>
             ))}
           </StaggerGrid>
-        </div>
-        <div className="wrap wlh-metodo-wrap">
-          <FadeUp className="wlh-metodo-left">
-            <h3 className="wlh-metodo-subtitle">El día completo, paso a paso.</h3>
-            <p className="wlh-section-desc">Cada uno de los once pasos cumple una función concreta dentro de las cuatro fases.</p>
-            <div className="wlh-metodo-tags">
-              <span className="wlh-tag">Audio · Imagen · Texto</span>
-              <span className="wlh-tag">Repaso espaciado</span>
+          <FadeUp delay={0.1}>
+            <div className="wlh-como-foot">
+              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Empieza con tu diagnóstico gratis →</a>
+              <Link href="/metodo" className="wlh-como-link">Conoce el método de 11 pasos →</Link>
             </div>
           </FadeUp>
-          <div className="wlh-metodo-right">
-            {METODO.map((step, i) => (
-              <StepRow key={step.n} className="wlh-step-row" index={i}>
-                <span className="wlh-step-row__num">{step.n}</span>
-                <div className="wlh-step-row__info">
-                  <span className="wlh-step-row__name">{step.name}</span>
-                  <span className="wlh-step-row__desc">{step.desc}</span>
-                </div>
-                <span className="wlh-step-row__min">{step.min}</span>
-              </StepRow>
-            ))}
-          </div>
-        </div>
-        <div className="wrap" style={{ paddingTop: '1.5rem', paddingBottom: '0.5rem' }}>
-          <Link
-            href="/metodo"
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
-              padding: '0.6rem 1.4rem', borderRadius: 10,
-              background: 'var(--accent)', color: '#fff',
-              fontSize: 14, fontWeight: 700, textDecoration: 'none',
-            }}
-          >
-            Ver el método completo →
-          </Link>
         </div>
       </section>
 
