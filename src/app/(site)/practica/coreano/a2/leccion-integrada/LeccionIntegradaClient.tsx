@@ -1,16 +1,44 @@
 'use client';
+import { useEffect } from 'react';
 
 export default function LeccionIntegradaClient() {
+  useEffect(() => {
+    // Fetch and render the HTML file
+    const loadHTML = async () => {
+      try {
+        const response = await fetch('/korean-a2-lesson.html');
+        const html = await response.text();
+        const container = document.getElementById('lesson-container');
+        if (container) {
+          container.innerHTML = html;
+          // Re-execute scripts if any
+          const scripts = container.querySelectorAll('script');
+          scripts.forEach(script => {
+            const newScript = document.createElement('script');
+            if (script.src) {
+              newScript.src = script.src;
+            } else {
+              newScript.textContent = script.textContent;
+            }
+            container.appendChild(newScript);
+          });
+        }
+      } catch (error) {
+        console.error('Error loading lesson:', error);
+      }
+    };
+    
+    loadHTML();
+  }, []);
+
   return (
-    <iframe
-      src="/korean-a2-lesson.html"
+    <div
+      id="lesson-container"
       style={{
         width: '100%',
-        height: '100vh',
-        border: 'none',
+        minHeight: '100vh',
         display: 'block',
       }}
-      title="카페에 지갑을 두고 왔어요! - Lección Integrada Coreano A2"
     />
   );
 }
