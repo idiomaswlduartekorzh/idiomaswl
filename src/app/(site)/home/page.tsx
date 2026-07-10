@@ -11,9 +11,9 @@ import {
   CountUp, TiltCard, TeamCard, TestimonialCard,
 } from './HomeAnimations';
 
-// Mensaje pre-escrito de WhatsApp para la clase de diagnóstico gratis (CRM = WhatsApp)
+// Mensaje pre-escrito de WhatsApp — diagnóstico de nivel gratis (imán de leads; el resto se cobra)
 const WA_DIAGNOSTICO =
-  'https://wa.me/573005004253?text=Hola%2C%20quiero%20agendar%20mi%20clase%20de%20diagn%C3%B3stico%20gratis.';
+  'https://wa.me/573005004253?text=Hola%2C%20quiero%20hacer%20mi%20diagn%C3%B3stico%20de%20nivel%20gratis.';
 
 export const metadata: Metadata = {
   title: 'Academia de idiomas en Bucaramanga y online — Aprende en serio',
@@ -159,7 +159,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿En cuánto tiempo se llega a un nivel B2 en inglés?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Alcanzar un B2 requiere entre 500 y 600 horas de aprendizaje guiado, normalmente de 1 a 2 años con estudio constante y acompañamiento de un profesor. En WeLearn, una clase de diagnóstico gratuita evalúa tu punto de partida y define un plan con fecha realista para tu objetivo.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Alcanzar un B2 requiere entre 500 y 600 horas de aprendizaje guiado, normalmente de 1 a 2 años con estudio constante y acompañamiento de un profesor. En WeLearn, un diagnóstico de nivel gratis evalúa tu punto de partida y define un plan con fecha realista para tu objetivo.' },
     },
     {
       '@type': 'Question',
@@ -173,8 +173,8 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: '¿Cómo funciona la clase de diagnóstico gratuita?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Es una sesión de 30 a 45 minutos con un tutor de WeLearn donde evaluamos tu nivel real, entendemos tu objetivo (examen, trabajo o migración) y te damos un plan de preparación personalizado. Sin compromiso de matrícula.' },
+      name: '¿Cómo funciona el diagnóstico de nivel gratis?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Es un test de nivel sin costo: evaluamos en qué punto estás en el idioma, entendemos tu objetivo (examen, trabajo, viaje o migración) y te proponemos un plan de preparación personalizado. Sin compromiso de matrícula.' },
     },
   ],
 };
@@ -210,7 +210,7 @@ const PLATAFORMA = [
 
 // "Cómo funciona" — el recorrido del estudiante (4 pasos de captación)
 const COMO = [
-  { icon: 'exposicion',    n: '01', name: 'Diagnóstico gratis',    desc: 'Evaluamos tu nivel real y entendemos tu meta: examen, trabajo, viaje o migración.' },
+  { icon: 'exposicion',    n: '01', name: 'Diagnóstico de nivel',  desc: 'Haces un test gratis: evaluamos tu nivel real y entendemos tu meta (examen, trabajo, viaje o migración).' },
   { icon: 'adquisicion',   n: '02', name: 'Tu plan personalizado', desc: 'Diseñamos una ruta según tu idioma y objetivo, con una fecha realista para lograrlo.' },
   { icon: 'produccion',    n: '03', name: 'Clases + práctica',     desc: 'Clases con profesor real, práctica interactiva, teoría y simulacros — presencial u online.' },
   { icon: 'consolidacion', n: '04', name: 'Tu examen o tu meta',   desc: 'Llegas listo, con simulacros corregidos y feedback humano por sección.' },
@@ -383,7 +383,7 @@ export default function HomePage() {
           <HeroItem><p className="wlh-eyebrow">Academia de idiomas · Bucaramanga y online · +1000 estudiantes</p></HeroItem>
           <HeroItem>
             <h1 className="wlh-hero__h1 wlh-hero__h1--v2">
-              Aprende <LangCycle /><br /><em>en serio.</em>
+              Aprende<br /><LangCycle /><br /><em>en serio.</em>
             </h1>
           </HeroItem>
           <HeroItem>
@@ -395,12 +395,12 @@ export default function HomePage() {
           </HeroItem>
           <HeroItem>
             <div className="wlh-hero__ctas">
-              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Agenda tu clase gratis →</a>
+              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Diagnóstico de nivel gratis →</a>
               <Link href="#plataforma" className="btn btn-ghost wlh-hero__btn-ghost">Ver la plataforma</Link>
             </div>
           </HeroItem>
           <HeroItem>
-            <p className="wlh-hero__trustline">✓ Clase de diagnóstico gratis&nbsp;&nbsp;·&nbsp;&nbsp;✓ Responde un humano&nbsp;&nbsp;·&nbsp;&nbsp;✓ Sin tarjeta</p>
+            <p className="wlh-hero__trustline">✓ Test de nivel gratis&nbsp;&nbsp;·&nbsp;&nbsp;✓ Responde un humano&nbsp;&nbsp;·&nbsp;&nbsp;✓ Sin tarjeta</p>
           </HeroItem>
         </HeroLeft>
 
@@ -411,7 +411,7 @@ export default function HomePage() {
               <span className="wlh-proof__toplbl">+1000 estudiantes preparados</span>
             </div>
             <div className="wlh-proof__stats">
-              <div className="wlh-proof__stat"><strong><CountUp to={6} /></strong><span>idiomas</span></div>
+              <div className="wlh-proof__stat"><strong><CountUp to={8} /></strong><span>idiomas</span></div>
               <div className="wlh-proof__stat"><strong><CountUp to={10} suffix="+" /></strong><span>exámenes</span></div>
               <div className="wlh-proof__stat"><strong><CountUp to={11} /></strong><span>certificaciones</span></div>
             </div>
@@ -445,8 +445,8 @@ export default function HomePage() {
       {/* STATS ROW — gradient */}
       <StatsRow className="wlh-stats">
         <StatItem className="wlh-stat">
-          <span className="wlh-stat__num"><CountUp to={6} /></span>
-          <span className="wlh-stat__lbl">idiomas con profesor</span>
+          <span className="wlh-stat__num"><CountUp to={8} /></span>
+          <span className="wlh-stat__lbl">idiomas disponibles</span>
         </StatItem>
         <StatItem className="wlh-stat">
           <span className="wlh-stat__num"><CountUp to={10} suffix="+" /></span>
@@ -551,7 +551,7 @@ export default function HomePage() {
           </StaggerGrid>
           <FadeUp delay={0.1}>
             <div className="wlh-como-foot">
-              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Empieza con tu diagnóstico gratis →</a>
+              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Haz tu diagnóstico de nivel gratis →</a>
               <Link href="/metodo" className="wlh-como-link">Conoce el método de 11 pasos →</Link>
             </div>
           </FadeUp>
@@ -594,7 +594,7 @@ export default function HomePage() {
         <div className="wrap">
           <FadeUp>
             <p className="wlh-section-eyebrow">05 — Catálogo</p>
-            <h2 className="wlh-section-h2">Seis idiomas. Una sola plataforma.</h2>
+            <h2 className="wlh-section-h2">Ocho idiomas. Una sola plataforma.</h2>
             <p className="wlh-section-desc">
               Cada idioma vive en la misma plataforma —cursos, simulacros y práctica interactiva— con contenido, ritmo y material adaptados a cada lengua.
             </p>
@@ -791,12 +791,12 @@ export default function HomePage() {
         <section className="wlh-cta">
           <div className="wrap" style={{ textAlign: 'center' }}>
             <p className="wlh-cta__eyebrow">Empieza hoy</p>
-            <h2 className="wlh-cta__h2">Tu primera clase de diagnóstico es gratis.</h2>
+            <h2 className="wlh-cta__h2">Descubre tu nivel. Gratis.</h2>
             <p style={{ maxWidth: 540, margin: '0.75rem auto 2rem', color: 'rgba(255,255,255,0.8)', fontSize: '1rem', lineHeight: 1.6 }}>
-              30 minutos con un profesor real. Evaluamos tu nivel, entendemos tu meta y te damos un plan. Sin compromiso.
+              Haz tu diagnóstico de nivel sin costo. Vemos en qué punto estás y te proponemos un plan para llegar a tu meta.
             </p>
             <div className="wlh-cta__btns">
-              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-cta__btn-primary" data-gtm="click_whatsapp">Agenda tu clase gratis por WhatsApp →</a>
+              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-cta__btn-primary" data-gtm="click_whatsapp">Haz tu diagnóstico gratis →</a>
               <Link href="/clases-de-ingles" className="btn btn-ghost wlh-cta__btn-ghost">Clases de inglés →</Link>
               <Link href="/clases-de-coreano" className="btn btn-ghost wlh-cta__btn-ghost">Clases de coreano →</Link>
             </div>

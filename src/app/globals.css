@@ -7479,3 +7479,44 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .wlh-hero__aurora, .wlh-trustbar__row { animation: none; }
 }
+
+/* ==========================================================================
+   HOME v2.1 · ajustes: palabra masked-slot, aurora con orbes, sellos como chips
+   ========================================================================== */
+/* Palabra que cicla — máscara tipo slot (sin blur) */
+.wlh-hero__cycle { display: inline-flex; overflow: hidden; vertical-align: bottom; padding-bottom: 0.14em; margin-bottom: -0.14em; }
+.wlh-hero__cycle-word { display: inline-block; color: var(--accent); font-style: normal; will-change: transform; }
+
+/* Aurora enriquecida: orbes de color que derivan detrás del hero */
+.wlh-hero__aurora::before, .wlh-hero__aurora::after {
+  content: ''; position: absolute; border-radius: 50%; filter: blur(64px); pointer-events: none;
+}
+.wlh-hero__aurora::before {
+  width: 40vw; height: 40vw; left: -8vw; top: -10vw;
+  background: radial-gradient(circle, rgba(200,32,46,0.42), transparent 64%);
+  animation: wlhBlobA 20s ease-in-out infinite alternate;
+}
+.wlh-hero__aurora::after {
+  width: 36vw; height: 36vw; right: -6vw; top: -6vw;
+  background: radial-gradient(circle, rgba(26,46,204,0.38), transparent 64%);
+  animation: wlhBlobB 24s ease-in-out infinite alternate;
+}
+@keyframes wlhBlobA { to { transform: translate(6vw, 7vw) scale(1.16); } }
+@keyframes wlhBlobB { to { transform: translate(-5vw, 9vw) scale(1.12); } }
+
+/* Sellos de exámenes como chips (menos "línea aburrida") */
+.wlh-trustbar__row { gap: 1rem; animation-duration: 30s; }
+.wlh-trustbar__item {
+  font-size: 0.95rem; font-weight: 800; letter-spacing: -0.01em;
+  color: var(--ink-2); opacity: 1;
+  padding: 0.45rem 1.1rem; border: 1px solid var(--line-soft);
+  border-radius: 100px; background: var(--bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wlh-hero__aurora::before, .wlh-hero__aurora::after { animation: none; }
+}
+
+/* v2.2 · reset del ciclo (sin máscara que clipe la palabra) */
+.wlh-hero__cycle { display: inline-block; overflow: visible; padding-bottom: 0; margin-bottom: 0; vertical-align: baseline; }
+.wlh-hero__cycle-word { display: inline-block; color: var(--accent); font-style: normal; will-change: transform, opacity; }

@@ -21,7 +21,7 @@ const ITEMS = [
   },
   {
     q: '¿En cuánto tiempo se llega a un nivel B2 en inglés?',
-    a: 'Alcanzar un B2 requiere entre 500 y 600 horas de aprendizaje guiado, normalmente de 1 a 2 años con estudio constante y acompañamiento de un profesor. En WeLearn, una clase de diagnóstico gratuita evalúa tu punto de partida y define un plan con fecha realista para tu objetivo.',
+    a: 'Alcanzar un B2 requiere entre 500 y 600 horas de aprendizaje guiado, normalmente de 1 a 2 años con estudio constante y acompañamiento de un profesor. En WeLearn, un diagnóstico de nivel gratis evalúa tu punto de partida y define un plan con fecha realista para tu objetivo.',
   },
   {
     q: '¿Las clases de WeLearn son online o presenciales?',
@@ -32,8 +32,8 @@ const ITEMS = [
     a: 'Sí. WeLearn ofrece rutas de preparación para TOEFL, IELTS, ICFES Saber 11, TOPIK de coreano, Goethe de alemán, DELF y DALF de francés, CILS de italiano y CELPE-Bras de portugués, con simulacros construidos a partir de los exámenes oficiales y retroalimentación por sección.',
   },
   {
-    q: '¿Cómo funciona la clase de diagnóstico gratuita?',
-    a: 'Es una sesión de 30 a 45 minutos con un tutor de WeLearn donde evaluamos tu nivel real, entendemos tu objetivo (examen, trabajo o migración) y te damos un plan de preparación personalizado. Sin compromiso de matrícula.',
+    q: '¿Cómo funciona el diagnóstico de nivel gratis?',
+    a: 'Es un test de nivel sin costo: evaluamos en qué punto estás en el idioma, entendemos tu objetivo (examen, trabajo, viaje o migración) y te proponemos un plan de preparación personalizado. Sin compromiso de matrícula.',
   },
 ];
 

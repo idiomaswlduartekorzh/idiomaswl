@@ -13,13 +13,13 @@ export function LangCycle() {
   }, []);
   return (
     <span className="wlh-hero__cycle" aria-live="polite">
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" initial={false}>
         <motion.em
           key={i}
-          initial={{ opacity: 0, y: '0.4em', filter: 'blur(6px)' }}
-          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-          exit={{ opacity: 0, y: '-0.4em', filter: 'blur(6px)' }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -12 }}
+          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="wlh-hero__cycle-word"
         >
           {CYCLE_WORDS[i]}
