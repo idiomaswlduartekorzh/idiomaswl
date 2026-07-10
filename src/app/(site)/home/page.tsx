@@ -213,6 +213,16 @@ const METODO = [
   { n: '11', name: 'Examen acumulativo',   desc: 'Retención de largo plazo.',                             min: '10 min' },
 ];
 
+// Pilares del producto-plataforma (todos reales según el stack de WeLearn)
+const PLATAFORMA = [
+  { icon: 'cursos',     name: 'Cursos estructurados',        desc: 'Rutas completas por idioma y nivel (A1–C2), con contenido, ritmo y material adaptados a cada lengua.' },
+  { icon: 'simulacros', name: 'Simulacros de examen',        desc: 'Pruebas construidas a partir de los exámenes oficiales (IELTS, TOEFL, TOPIK, Goethe…), con puntaje y corrección por sección.' },
+  { icon: 'practica',   name: 'Práctica interactiva',        desc: 'Ejercicios de habla, escucha, lectura y escritura con audio real y evaluación de pronunciación.' },
+  { icon: 'teoria',     name: 'Teoría y gramática',          desc: 'Explicaciones claras y notas de gramática, estilo y cultura: entiendes el porqué, no solo el qué.' },
+  { icon: 'feedback',   name: 'Feedback de profesores reales', desc: 'Corrección humana y tutoría personalizada. Un profesor que te dice qué mejorar, no un algoritmo.' },
+  { icon: 'progreso',   name: 'Seguimiento de progreso',     desc: 'Panel de estudiante con tu racha, tus simulacros y tu avance por idioma, siempre a la vista.' },
+];
+
 // Las 4 fases narrativas que agrupan los 11 pasos (icono SVG modelado in-house)
 const FASES = [
   { icon: 'exposicion',    name: 'Exposición',    steps: 'Pasos 01 · 04 · 05',      desc: 'Ves, escuchas y lees el idioma en contexto antes de producir nada.' },
@@ -259,7 +269,7 @@ const TEAM = [
   },
   {
     initials: 'ZK',
-    img: null,
+    img: '/images/team-zhanna-korzh.png',
     name: 'Zhanna Korzh',
     role: 'Directora Académica',
     tags: ['Diseño curricular', 'Preparación de exámenes', 'Evaluación lingüística'],
@@ -332,6 +342,26 @@ function PhaseIcon({ name }: { name: string }) {
   }
 }
 
+function PillarIcon({ name }: { name: string }) {
+  const p = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
+  switch (name) {
+    case 'cursos':
+      return (<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path {...p} d="m12 3 9 5-9 5-9-5 9-5Z" /><path {...p} d="m3 12 9 5 9-5" /><path {...p} d="m3 16.5 9 5 9-5" /></svg>);
+    case 'simulacros':
+      return (<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><rect {...p} x="8" y="3" width="8" height="4" rx="1" /><path {...p} d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" /><path {...p} d="m9 14 2 2 4-4" /></svg>);
+    case 'practica':
+      return (<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><rect {...p} x="9" y="2" width="6" height="12" rx="3" /><path {...p} d="M5 10a7 7 0 0 0 14 0" /><path {...p} d="M12 17v4M8.5 21h7" /></svg>);
+    case 'teoria':
+      return (<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path {...p} d="M12 7v13" /><path {...p} d="M3 5.5A2 2 0 0 1 5 4h5a2 2 0 0 1 2 2v13a2 2 0 0 0-2-1.5H5a2 2 0 0 1-2-2Z" /><path {...p} d="M21 5.5A2 2 0 0 0 19 4h-5a2 2 0 0 0-2 2v13a2 2 0 0 1 2-1.5h5a2 2 0 0 0 2-2Z" /></svg>);
+    case 'feedback':
+      return (<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path {...p} d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z" /><path {...p} d="m8.5 12 2.3 2.3L15 9.5" /></svg>);
+    case 'progreso':
+      return (<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path {...p} d="M3 3v16a2 2 0 0 0 2 2h16" /><path {...p} d="m7 14 3.5-3.5 3 3L21 7" /><path {...p} d="M21 11V7h-4" /></svg>);
+    default:
+      return null;
+  }
+}
+
 function MarkX() {
   return (
     <svg className="wlh-appvs__mark-svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
@@ -372,9 +402,9 @@ export default function HomePage() {
           </HeroItem>
           <HeroItem>
             <p className="wlh-hero__desc">
-              Sin apps que no llevan a ningún lado. Clases con profesores reales, un método propio de
-              11 pasos y preparación específica para IELTS, TOEFL, TOPIK, Goethe y más. En nuestra sede
-              en Bucaramanga o desde donde estés.
+              Una plataforma completa: cursos por niveles, simulacros de examen, práctica interactiva y
+              feedback de profesores reales. Preparación para IELTS, TOEFL, TOPIK, Goethe y más — en nuestra
+              sede en Bucaramanga o online, desde donde estés.
             </p>
           </HeroItem>
           <HeroItem>
@@ -453,11 +483,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 02 — METODO */}
-      <section id="metodo" className="wlh-section wlh-section--alt">
+      {/* 02 — LA PLATAFORMA */}
+      <section id="plataforma" className="wlh-section wlh-section--alt">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">02 — El método</p>
+            <p className="wlh-section-eyebrow">02 — La plataforma</p>
+            <h2 className="wlh-section-h2">Todo para aprender en serio, en un solo lugar.</h2>
+            <p className="wlh-section-desc">
+              WeLearn no es una app de tarjetas ni un curso suelto. Es una plataforma completa que combina
+              cursos, simulacros, práctica y el acompañamiento de profesores reales — de principio a fin.
+            </p>
+          </FadeUp>
+          <StaggerGrid className="wlh-pilares-grid">
+            {PLATAFORMA.map(pilar => (
+              <StaggerItem key={pilar.icon}>
+                <div className="wlh-pilar-card">
+                  <span className="wlh-pilar-card__icon"><PillarIcon name={pilar.icon} /></span>
+                  <h3 className="wlh-pilar-card__name">{pilar.name}</h3>
+                  <p className="wlh-pilar-card__desc">{pilar.desc}</p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGrid>
+        </div>
+      </section>
+
+      {/* 03 — METODO */}
+      <section id="metodo" className="wlh-section">
+        <div className="wrap">
+          <FadeUp>
+            <p className="wlh-section-eyebrow">03 — El método</p>
             <h2 className="wlh-section-h2">El día tiene once pasos. Cada uno tiene una razón.</h2>
             <p className="wlh-section-desc">
               El método de 11 pasos de WeLearn estructura cada día de estudio en cuatro fases —exposición,
@@ -519,7 +574,7 @@ export default function HomePage() {
       <section id="examenes" className="wlh-section wlh-section--dark">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow wlh-section-eyebrow--light">03 — Certificaciones</p>
+            <p className="wlh-section-eyebrow wlh-section-eyebrow--light">04 — Certificaciones</p>
             <h2 className="wlh-section-h2 wlh-section-h2--light">Preparación específica para tu examen. Con simulacros reales.</h2>
             <p className="wlh-section-desc wlh-section-desc--light">
               Simulacros construidos a partir de los exámenes oficiales. Cada ruta incluye material de práctica, audios reales y retroalimentación por sección.
@@ -550,7 +605,7 @@ export default function HomePage() {
       <section id="idiomas" className="wlh-section">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">04 — Catálogo</p>
+            <p className="wlh-section-eyebrow">05 — Catálogo</p>
             <h2 className="wlh-section-h2">Seis idiomas. Un mismo método probado.</h2>
             <p className="wlh-section-desc">
               Cada idioma sigue la misma estructura de 11 pasos diarios, con contenido, ritmo y material de práctica adaptados a cada lengua.
@@ -585,7 +640,7 @@ export default function HomePage() {
       <section id="modalidad" className="wlh-section wlh-section--alt">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">05 — Modalidad</p>
+            <p className="wlh-section-eyebrow">06 — Modalidad</p>
             <h2 className="wlh-section-h2">En Bucaramanga o desde donde estés.</h2>
             <p className="wlh-section-desc">
               WeLearn nació en Bucaramanga y enseña en su sede de forma presencial, y también online para el
@@ -610,7 +665,7 @@ export default function HomePage() {
       <section className="wlh-section">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">06 — Resultados</p>
+            <p className="wlh-section-eyebrow">07 — Resultados</p>
             <h2 className="wlh-section-h2">Estudiantes reales. Metas reales cumplidas.</h2>
             <p className="wlh-section-desc">
               Más de 1000 estudiantes han usado WeLearn para aprender un idioma y preparar sus exámenes internacionales.
@@ -637,7 +692,7 @@ export default function HomePage() {
       <section id="equipo" className="wlh-section wlh-section--alt">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">07 — Equipo</p>
+            <p className="wlh-section-eyebrow">08 — Equipo</p>
             <h2 className="wlh-section-h2">Quiénes te van a enseñar.</h2>
             <p className="wlh-section-desc">
               WeLearn es una academia construida por profesionales con experiencia directa en aprendizaje de idiomas y preparación de exámenes internacionales.
@@ -671,7 +726,7 @@ export default function HomePage() {
       <section id="leccion" className="wlh-section">
         <div className="wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">08 — Vista previa</p>
+            <p className="wlh-section-eyebrow">09 — Vista previa</p>
             <h2 className="wlh-section-h2">Mira cómo se ve un día completo.</h2>
             <p className="wlh-section-desc">Explora un día real del método, paso por paso.</p>
           </FadeUp>
@@ -685,7 +740,7 @@ export default function HomePage() {
       <section id="precios" className="wlh-section wlh-section--alt">
         <div className="wrap" style={{ textAlign: 'center' }}>
           <FadeUp>
-            <p className="wlh-section-eyebrow">09 — Precios</p>
+            <p className="wlh-section-eyebrow">10 — Precios</p>
             <h2 className="wlh-section-h2">Un precio claro. Sin sorpresas.</h2>
             <p className="wlh-section-desc" style={{ maxWidth: 520, margin: '0 auto 2rem' }}>
               Simulacros, retroalimentación y tutorías en vivo. Un precio transparente para todos los idiomas y exámenes. Sin letra pequeña.
@@ -699,7 +754,7 @@ export default function HomePage() {
       <section className="wlh-section">
         <div className="wrap wlh-faq-wrap">
           <FadeUp>
-            <p className="wlh-section-eyebrow">10 — Preguntas</p>
+            <p className="wlh-section-eyebrow">11 — Preguntas</p>
             <h2 className="wlh-section-h2">Lo que casi siempre nos preguntan.</h2>
           </FadeUp>
           <FadeUp delay={0.1}>
@@ -712,7 +767,7 @@ export default function HomePage() {
       <FadeUp>
         <section className="wlh-section wlh-section--alt">
           <div className="wrap">
-            <p className="wlh-section-eyebrow">11 — Blog</p>
+            <p className="wlh-section-eyebrow">12 — Blog</p>
             <h2 className="wlh-section-h2">Guías gratuitas que sí sirven.</h2>
             <p className="wlh-section-desc" style={{ maxWidth: 540, margin: '0 auto 2.5rem' }}>
               Artículos prácticos sobre IELTS, TOEFL, ICFES, coreano, alemán, italiano, portugués, francés y más.

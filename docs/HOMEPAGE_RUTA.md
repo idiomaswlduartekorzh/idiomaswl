@@ -220,3 +220,19 @@ La homepage se considera terminada solo si cumple TODO esto:
 ---
 
 *Fin de la ruta. Con D1, D2 y D4 resueltas (falta confirmar presencial y recolectar datos exactos), la próxima iteración entrega el resource list (A) y el research SERP completo (B), y con eso el homepage se codea sobre terreno firme, sin adivinar.*
+
+---
+
+## 11. Re-scope v3 — de "método coreano" a producto-plataforma completo
+
+**Cambio de fondo (decisión del fundador):** la homepage dejó de ser sobre "los pasos del método coreano" (propósito original) y ahora representa un **producto más sólido y avanzado**: una plataforma que incluye **cursos, simulacros, práctica, ejercicios, teoría, feedback y seguimiento de progreso**, además del posicionamiento SEO/EAO.
+
+**Benchmark de producto (adoptar y mejorar):** análisis de `e2language.com` (plataforma de examen, 2.7M estudiantes). Su homepage presenta el producto-plataforma completo: grid de exámenes → mock tests "marcados por profesores" → cientos de preguntas de práctica → method lessons (teoría) → clases privadas con feedback en 48h → study pathway (progreso) → testimonios con resultados. **Nuestra ventaja para superarlo:** rostro humano (David políglota), sede local + online, y el mismo arsenal de producto — con precio transparente.
+
+**Implementado:**
+- Nueva sección flagship **"02 — La plataforma"**: 6 pilares (Cursos · Simulacros · Práctica · Teoría · Feedback · Progreso), todos **reales** según el stack (rutas de práctica, `scoreSubmission`, dashboard con racha/progreso, simulacros). Íconos SVG modelados in-house.
+- **Hero reencuadrado**: el subcopy ahora vende la plataforma completa, no solo "11 pasos".
+- **Método** pasó a ser "cómo funciona cada día de estudio" (parte del producto, no el producto entero). Renumeración de secciones (02 Plataforma empuja el resto +1).
+- **Equipo**: foto real de David + referencia a foto de Zhanna en `/images/team-zhanna-korzh.png` (pendiente de subir el archivo).
+
+**Pendiente de assets (fundador):** subir `public/images/team-zhanna-korzh.png` (renombrar el archivo actual) · descartado `david-hero.png` (no es el fundador). Reseñas/rating + dirección de sede siguen pendientes para `AggregateRating` y `LocalBusiness`.
