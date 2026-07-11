@@ -24,8 +24,9 @@ const NIVELES = [
   },
   {
     nivel: 'B1', key: 'b1', name: 'Intermedio',
-    desc: 'Present perfect, primer condicional, ensayos de opinión, listening.',
-    available: false,
+    desc: 'Present perfect, condicionales, voz pasiva, reported speech, relative clauses, phrasal verbs y más.',
+    href: '/practica/ingles/b1', available: true,
+    count: '20 temas · 120+ ejercicios',
   },
   {
     nivel: 'B2', key: 'b2', name: 'Intermedio alto',

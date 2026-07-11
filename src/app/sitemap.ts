@@ -11,7 +11,7 @@ const BASE = 'https://www.idiomaswl.com';
 // nivel, de habilidad y de cada tema de gramática. Al publicar un nuevo nivel
 // (p. ej. B1 de inglés), añádelo aquí y el sitemap lo incluye automáticamente.
 const PUBLISHED_LEVELS: Record<string, readonly string[]> = {
-  ingles:    ['a1', 'a2'],
+  ingles:    ['a1', 'a2', 'b1'],
   frances:   ['a1', 'a2'],
   portugues: ['a1', 'a2'],
   aleman:    ['a1', 'a2', 'b1'],

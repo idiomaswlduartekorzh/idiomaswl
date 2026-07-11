@@ -19,8 +19,8 @@ const HABILIDADES = [
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Present Perfect, Past Continuous, First/Second Conditional y Passive Voice. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ingles/b1/gramatica', available: true,
+    desc: 'Present Perfect, Past Continuous/Perfect, condicionales, Passive Voice, Reported Speech, Relative Clauses, Phrasal Verbs y más. 6 niveles por tema.',
+    count: '20 temas · 120+ ejercicios', href: '/practica/ingles/b1/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',
