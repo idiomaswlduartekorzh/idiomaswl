@@ -25,9 +25,9 @@ const NIVELES = [
   },
   {
     nivel: 'B1', name: 'Intermedio',
-    desc: 'Congiuntivo, condizionale, particelle pronominali, lettura, scrittura, ascolto e vocabolario.',
+    desc: 'Congiuntivo, condizionale, particelle pronominali (quest), lettura, scrittura, habla, vocabulario y escucha.',
     href: '/practica/italiano/b1', available: true,
-    count: '7 percorsi · 230+ esercizi',
+    count: '6 temas + 6 skills',
   },
   {
     nivel: 'B2', name: 'Intermedio alto',
