@@ -16,7 +16,7 @@ const PUBLISHED_LEVELS: Record<string, readonly string[]> = {
   portugues: ['a1', 'a2', 'b1'],
   aleman:    ['a1', 'a2', 'b1'],
   italiano:  ['a1', 'a2', 'b1'],
-  coreano:   ['a1', 'a2'],
+  coreano:   ['a1', 'a2', 'b1'],
   japones:   ['a1', 'a2'],
   ruso:      ['a1', 'a2'],
 };
