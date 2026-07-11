@@ -17,8 +17,8 @@ const PUBLISHED_LEVELS: Record<string, readonly string[]> = {
   aleman:    ['a1', 'a2', 'b1'],
   italiano:  ['a1', 'a2', 'b1'],
   coreano:   ['a1', 'a2', 'b1'],
+  ruso:      ['a1', 'a2', 'b1'],
   japones:   ['a1', 'a2'],
-  ruso:      ['a1', 'a2'],
 };
 
 const SKILLS = ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'escucha'] as const;
