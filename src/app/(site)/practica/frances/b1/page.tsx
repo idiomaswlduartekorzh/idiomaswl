@@ -5,15 +5,15 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 
 export const metadata: Metadata = {
   title: 'Francés B1 — Elige una habilidad | Idiomas WeLearn',
-  description: 'Francés B1: lectura, gramática (subjonctif, conditionnel, pronoms relatifs, plus-que-parfait, discours indirect), escritura, expresión oral, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/frances/b1' },
+  description: 'Francés B1: lectura, gramática (passé composé vs imparfait, subjonctif, conditionnel, pronoms relatifs, plus-que-parfait, discours indirect, voix passive), escritura, expresión oral, vocabulario y escucha. 20 temas + 6 niveles de práctica.',
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/frances/b1' },
 };
 
 const COLOR = '#003189';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Lecture', eng: 'Lectura', desc: '5 textos B1 (120-150 palabras): actualidad, cultura y ciencia. Subjonctif y conditionnel en contexto.', count: '5 textes · 30 questions', href: '/practica/frances/b1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammaire', eng: 'Gramática', desc: 'Subjonctif présent, Conditionnel, Pronoms relatifs, Plus-que-parfait y Discours indirect.', count: '5 thèmes · 50+ exercices', href: '/practica/frances/b1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Grammaire', eng: 'Gramática', desc: 'Passé composé vs Imparfait, Subjonctif, Conditionnel, Pronoms relatifs, Plus-que-parfait, Discours indirect, Voix passive, et plus. 6 niveaux par thème.', count: '20 thèmes · 120+ exercices', href: '/practica/frances/b1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Écriture', eng: 'Escritura', desc: "5 tareas B1: emails formales, essais d'opinion, descriptions.", count: '5 prompts guidés', href: '/practica/frances/b1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expression orale', eng: 'Habla', desc: '20 phrases B1 pour débats, opinions et conversations formelles.', count: '20 phrases essentielles', href: '/practica/frances/b1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulaire', eng: 'Vocabulario', desc: '8 sets thématiques × 10 mots. Flashcard, QCM et écriture.', count: '8 sets · 80+ mots', href: '/practica/frances/b1/vocabulario' },
@@ -27,8 +27,8 @@ export default function FrancesB1Page() {
     <>
     <CourseSchema
       name="Francés B1 — Lectura, Gramática, Vocabulario y más"
-      description="Practica Francés nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con subjonctif, conditionnel y feedback inmediato."
-      url="https://idiomaswl.com/practica/frances/b1"
+      description="Practica Francés nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con passé composé vs imparfait, subjonctif, conditionnel y feedback inmediato."
+      url="https://www.idiomaswl.com/practica/frances/b1"
       educationalLevel="B1"
       teaches="Francés, habilidades MCER"
       inLanguage="fr"

@@ -12,7 +12,7 @@ const BASE = 'https://www.idiomaswl.com';
 // (p. ej. B1 de inglés), añádelo aquí y el sitemap lo incluye automáticamente.
 const PUBLISHED_LEVELS: Record<string, readonly string[]> = {
   ingles:    ['a1', 'a2', 'b1'],
-  frances:   ['a1', 'a2'],
+  frances:   ['a1', 'a2', 'b1'],
   portugues: ['a1', 'a2'],
   aleman:    ['a1', 'a2', 'b1'],
   italiano:  ['a1', 'a2', 'b1'],
