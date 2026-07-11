@@ -13,7 +13,7 @@ const COLOR = '#dd0000';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Lesen', eng: 'Lectura', desc: '5 Texte B1 (120-150 Wörter): Alltag, Kultur, Umwelt. Konjunktiv II y Passiv en contexto.', count: '5 Texte · 30 Fragen', href: '/practica/aleman/b1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Grammatik', eng: 'Gramática', desc: 'Konjunktiv II, Relativsätze, Passiv Präsens, temporale Konjunktionen y Indirekte Rede.', count: '5 Themen · 50+ Übungen', href: '/practica/aleman/b1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Grammatik', eng: 'Gramática', desc: 'Konjunktiv II, Passiv, Relativsätze, Partizip, Reflexivverben, Wortbildung y más.', count: '20 Themen · 120+ Übungen', href: '/practica/aleman/b1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Schreiben', eng: 'Escritura', desc: '5 Aufgaben B1: formelle Briefe, Meinungsaufsätze, Vergleiche.', count: '5 geleitete Aufgaben', href: '/practica/aleman/b1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Sprechen', eng: 'Expresión oral', desc: '20 Ausdrücke B1 für Diskussionen, Meinungen y formelle Gespräche.', count: '20 wesentliche Ausdrücke', href: '/practica/aleman/b1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vokabular', eng: 'Vocabulario', desc: '8 Themenbereiche × 10 Wörter. Lernkarten, MCQ y Schreiben.', count: '8 Sets · 80+ Wörter', href: '/practica/aleman/b1/vocabulario' },

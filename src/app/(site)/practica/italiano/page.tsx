@@ -17,7 +17,12 @@ const NIVELES = [
     href: '/practica/italiano/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: 'Elementare', desc: 'Passato prossimo, comparativi, futuro semplice e descrizioni di persone.', available: false },
+  {
+    nivel: 'A2', name: 'Elementare',
+    desc: 'Passato prossimo, comparativi, futuro semplice e descrizioni di persone.',
+    href: '/practica/italiano/a2', available: true,
+    count: '6 habilidades · 50+ ejercicios',
+  },
   {
     nivel: 'B1', name: 'Intermedio',
     desc: 'Congiuntivo, condizionale, particelle pronominali, lettura, scrittura, ascolto e vocabolario.',
