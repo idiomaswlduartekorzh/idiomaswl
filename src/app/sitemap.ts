@@ -1,30 +1,27 @@
 import type { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/blog';
-import { TOPICS as INGLES_GRAMMAR } from '@/data/practica/ingles-a1-gramatica';
-import { TOPICS as FRANCES_GRAMMAR } from '@/data/practica/frances-a1-gramatica';
-import { TOPICS as ITALIANO_GRAMMAR } from '@/data/practica/italiano-a1-gramatica';
-import { TOPICS as PORTUGUES_GRAMMAR } from '@/data/practica/portugues-a1-gramatica';
-import { TOPICS as ALEMAN_GRAMMAR } from '@/data/practica/aleman-a1-gramatica';
-import { TOPICS as COREANO_GRAMMAR } from '@/data/practica/coreano-a1-gramatica';
-import { TOPICS as RUSO_GRAMMAR } from '@/data/practica/ruso-a1-gramatica';
-import { TOPICS as JAPONES_GRAMMAR } from '@/data/practica/japones-a1-gramatica';
+import { getTopicsByLevel } from '@/data/grammar/registry';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
 const BASE = 'https://www.idiomaswl.com';
 
-// Temas de gramática A1 con URL propia (una por tema) — clave para que Google
-// muestre estas páginas al buscar "verbo to be explicación", etc.
-const A1_GRAMMAR = [
-  { lang: 'ingles', topics: INGLES_GRAMMAR },
-  { lang: 'frances', topics: FRANCES_GRAMMAR },
-  { lang: 'italiano', topics: ITALIANO_GRAMMAR },
-  { lang: 'portugues', topics: PORTUGUES_GRAMMAR },
-  { lang: 'aleman', topics: ALEMAN_GRAMMAR },
-  { lang: 'coreano', topics: COREANO_GRAMMAR },
-  { lang: 'ruso', topics: RUSO_GRAMMAR },
-  { lang: 'japones', topics: JAPONES_GRAMMAR },
-] as const;
+// Niveles PUBLICADOS por idioma (available: true en el selector de nivel).
+// El sitemap solo debe anunciar niveles publicados: de aquí salen las URLs de
+// nivel, de habilidad y de cada tema de gramática. Al publicar un nuevo nivel
+// (p. ej. B1 de inglés), añádelo aquí y el sitemap lo incluye automáticamente.
+const PUBLISHED_LEVELS: Record<string, readonly string[]> = {
+  ingles:    ['a1', 'a2'],
+  frances:   ['a1', 'a2'],
+  portugues: ['a1', 'a2'],
+  aleman:    ['a1', 'a2', 'b1'],
+  italiano:  ['a1', 'a2', 'b1'],
+  coreano:   ['a1', 'a2'],
+  japones:   ['a1', 'a2'],
+  ruso:      ['a1', 'a2'],
+};
+
+const SKILLS = ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'escucha'] as const;
 
 const PUBLISHED_DAYS = [1, 2, 3, 4, 6, 7];
 
@@ -81,44 +78,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
 
-    // ── Practice — level pages ────────────────────────────────────────────────
-    ...([] as { lang: string; level: string }[]).concat(
-      ['ingles', 'frances', 'portugues', 'aleman'].flatMap((lang) =>
-        ['a1', 'a2'].map((level) => ({ lang, level }))
-      ),
-      ['italiano', 'coreano', 'japones', 'ruso'].map((lang) => ({ lang, level: 'a1' }))
-    ).map(({ lang, level }) => ({
-      url: `${BASE}/practica/${lang}/${level}`,
-      lastModified: now,
-      changeFrequency: 'weekly' as const,
-      priority: 0.75,
-    })),
-
-    // ── Practice — skill pages ────────────────────────────────────────────────
-    ...([] as { lang: string; level: string; skill: string }[]).concat(
-      ['ingles', 'frances', 'portugues', 'aleman'].flatMap((lang) =>
-        ['a1', 'a2'].flatMap((level) =>
-          ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'escucha'].map((skill) => ({ lang, level, skill }))
-        )
-      ),
-      ['italiano', 'coreano', 'japones', 'ruso'].flatMap((lang) =>
-        ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'escucha'].map((skill) => ({ lang, level: 'a1', skill }))
-      )
-    ).map(({ lang, level, skill }) => ({
-      url: `${BASE}/practica/${lang}/${level}/${skill}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.65,
-    })),
-
-    // ── Practice — A1 grammar topics (one indexable URL per topic) ─────────────
-    ...A1_GRAMMAR.flatMap(({ lang, topics }) =>
-      topics.map((t) => ({
-        url: `${BASE}/practica/${lang}/a1/gramatica/${t.slug}`,
+    // ── Practice — level pages (solo niveles publicados) ──────────────────────
+    ...Object.entries(PUBLISHED_LEVELS).flatMap(([lang, levels]) =>
+      levels.map((level) => ({
+        url: `${BASE}/practica/${lang}/${level}`,
         lastModified: now,
-        changeFrequency: 'monthly' as const,
-        priority: 0.72,
+        changeFrequency: 'weekly' as const,
+        priority: 0.75,
       }))
+    ),
+
+    // ── Practice — skill pages (solo niveles publicados) ──────────────────────
+    ...Object.entries(PUBLISHED_LEVELS).flatMap(([lang, levels]) =>
+      levels.flatMap((level) =>
+        SKILLS.map((skill) => ({
+          url: `${BASE}/practica/${lang}/${level}/${skill}`,
+          lastModified: now,
+          changeFrequency: 'monthly' as const,
+          priority: 0.65,
+        }))
+      )
+    ),
+
+    // ── Practice — grammar topics (una URL indexable por tema) ─────────────────
+    // Registry-driven: emite exactamente los temas que existen en cada nivel
+    // publicado. Clave para que Google muestre "konjunktiv ii explicación", etc.
+    ...Object.entries(PUBLISHED_LEVELS).flatMap(([lang, levels]) =>
+      levels.flatMap((level) =>
+        getTopicsByLevel(lang, level).map((t) => ({
+          url: `${BASE}/practica/${lang}/${level}/gramatica/${t.slug}`,
+          lastModified: now,
+          changeFrequency: 'monthly' as const,
+          priority: 0.72,
+        }))
+      )
     ),
 
     // ── Practice — IELTS ──────────────────────────────────────────────────────
