@@ -18,7 +18,12 @@ const NIVELES = [
     href: '/practica/coreano/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: '초급+', desc: '과거형 (-았/었어요), verbos irregulares, expresiones de tiempo.', available: false },
+  {
+    nivel: 'A2', name: '초급+',
+    desc: '과거형 (-았/었어요), verbos irregulares, expresiones de tiempo y negación.',
+    href: '/practica/coreano/a2', available: true,
+    count: '6 habilidades · 50+ ejercicios',
+  },
   { nivel: 'B1', name: '중급', desc: 'Conectores (-고, -지만, -아서), honoríficos y vocabulario TOPIK II.', available: false },
   { nivel: 'B2', name: '중급+', desc: 'Patrones causales y condicionales, registro formal/informal.', available: false },
   { nivel: 'C1', name: '고급', desc: 'Gramática avanzada, vocabulario académico y nivel TOPIK II 5–6.', available: false },

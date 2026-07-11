@@ -25,7 +25,7 @@ export default function GrammarIndexPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="gram-page" style={{ '--topic-color': '#c9a900' } as React.CSSProperties}>
+      <div className="gram-page" style={{ '--topic-color': '#1a2ecc' } as React.CSSProperties}>
         <div className="wrap">
           <nav aria-label="breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '1.5rem 0 0', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
             <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
@@ -34,7 +34,7 @@ export default function GrammarIndexPage() {
             <span>/</span>
             <Link href="/practica/aleman/b1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>B1</Link>
             <span>/</span>
-            <span style={{ color: '#c9a900', fontWeight: 800 }}>Gramática</span>
+            <span style={{ color: '#1a2ecc', fontWeight: 800 }}>Gramática</span>
           </nav>
 
           <section className="topic-hero" style={{ paddingBottom: '1.5rem' }}>
