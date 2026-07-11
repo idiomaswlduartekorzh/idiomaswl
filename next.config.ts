@@ -6,8 +6,8 @@ const securityHeaders = [
   // Prevent browsers from MIME-sniffing a response away from its declared content-type
   { key: 'X-Content-Type-Options', value: 'nosniff' },
 
-  // Prevent clickjacking — this page must not be embedded in an <iframe>
-  { key: 'X-Frame-Options', value: 'DENY' },
+  // Prevent third-party framing while allowing same-origin teaching previews
+  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
 
   // Stop legacy IE from rendering the page in Compatibility View
   { key: 'X-UA-Compatible', value: 'IE=edge' },
@@ -54,7 +54,7 @@ const securityHeaders = [
       // Images: own domain + Supabase storage + data URIs + blob (canvas) + GA4 + Meta Pixel
       "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com",
       // GTM noscript iframe
-      "frame-src https://www.googletagmanager.com",
+      "frame-src 'self' https://www.googletagmanager.com",
       // Audio/video from own server + Supabase storage + blob (MediaRecorder)
       "media-src 'self' blob: https://*.supabase.co",
       // Worker scripts (Next.js service worker / audio worklets)
@@ -63,8 +63,8 @@ const securityHeaders = [
       "object-src 'none'",
       // Forms only submit to own origin
       "form-action 'self'",
-      // Prevent this page from being framed (clickjacking)
-      "frame-ancestors 'none'",
+      // Prevent third-party framing while allowing same-origin teaching previews
+      "frame-ancestors 'self'",
       // Upgrade any accidental http:// requests to https://
       "upgrade-insecure-requests",
     ].join('; '),
@@ -72,6 +72,10 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: process.cwd(),
+  },
+
   // Remove the X-Powered-By: Next.js response header (minor security improvement)
   poweredByHeader: false,
 
@@ -89,6 +93,17 @@ const nextConfig: NextConfig = {
 
   // Compress responses
   compress: true,
+
+  // Route handlers read these standalone class assets at runtime on Vercel.
+  outputFileTracingIncludes: {
+    '/clase-claude': ['src/content/clase-claude/publico.html'],
+    '/dashboard/admin/clase-claude': [
+      'src/content/clase-claude/instructor.html',
+    ],
+    '/dashboard/admin/clase-claude/material-instructor': [
+      'src/content/clase-claude/Paquete_Completo_Instructor_Casos_Claude.zip',
+    ],
+  },
 
   async headers() {
     return [
