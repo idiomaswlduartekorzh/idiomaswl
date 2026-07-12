@@ -245,6 +245,10 @@ export const TOPICS: GrammarTopic[] = [
       { q: '¿Por qué "did you went" está mal?', a: 'Porque en preguntas y negaciones el pasado ya lo marca "did", así que el verbo principal vuelve a su forma base: "Did you go?" e "I didn\'t go". La forma irregular (went) solo se usa en afirmativo.' },
       { q: '¿Cómo se pronuncia el pasado de "read"?', a: 'El pasado "read" se escribe igual que el presente pero se pronuncia "red" (como el color rojo), no "riid". Es el caso más famoso de cambio de sonido sin cambio de escritura.' },
     ],
+    relatedResource: {
+      label: 'Descarga la lista de los 100 verbos irregulares más comunes (PDF gratis)',
+      url: '/practica/ingles/recursos/verbos-irregulares',
+    },
     questions: [
       { s: 'I ___ (go) to the party last night.', opts: ['goed', 'went', 'gone', 'go'], a: 1, fb: 'go → went (pasado).' },
       { s: 'She ___ (have) a great time.', opts: ['haved', 'had', 'has', 'having'], a: 1, fb: 'have → had.' },

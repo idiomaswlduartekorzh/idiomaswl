@@ -49,6 +49,13 @@ export interface GrammarFAQ {
   a: string;        // respuesta directa y breve (1-3 frases)
 }
 
+// Recurso descargable asociado (ej. lista completa de verbos irregulares en PDF)
+// enlazado desde un tema relacionado, tanto en la página como en su PDF.
+export interface GrammarRelatedResource {
+  label: string;     // texto del enlace/CTA
+  url: string;        // ruta del recurso (ej. /practica/ingles/recursos/verbos-irregulares)
+}
+
 export interface GrammarTopic {
   slug: string;
   order: number;
@@ -67,6 +74,7 @@ export interface GrammarTopic {
   commonMistakes: GrammarMistake[];
   tip: string;
   faq?: GrammarFAQ[];               // preguntas frecuentes (SEO/AEO, opcional)
+  relatedResource?: GrammarRelatedResource; // recurso descargable asociado (opcional)
   questions: GQItem[];
 }
 

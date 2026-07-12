@@ -94,6 +94,40 @@ export function GrammarLessonSchema({
   );
 }
 
+interface LearningResourceSchemaProps {
+  name: string;
+  url: string;
+  description: string;
+  inLanguage?: string;
+  keywords?: string[];
+}
+
+// Recurso de referencia standalone (ej. lista de verbos irregulares con PDF),
+// sin depender de isPartOf de un Course específico como GrammarLessonSchema.
+export function LearningResourceSchema({
+  name, url, description, inLanguage = 'en', keywords,
+}: LearningResourceSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name,
+    url,
+    description,
+    learningResourceType: ['Reference', 'Dataset'],
+    inLanguage,
+    teaches: name,
+    isAccessibleForFree: true,
+    ...(keywords && keywords.length > 0 && { keywords: keywords.join(', ') }),
+    provider: { '@type': 'Organization', name: 'Idiomas WeLearn', sameAs: 'https://www.idiomaswl.com' },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 // FAQPage — habilita los "recuadros de respuesta" (fragmentos destacados) en Google
 // y alimenta a las IA generativas (AEO). Se emite solo si el tema define preguntas.
 export function FAQSchema({ items }: { items: { q: string; a: string }[] }) {

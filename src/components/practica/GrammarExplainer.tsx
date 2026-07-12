@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { GrammarTopic, GrammarTable } from '@/data/practica/grammar-types';
 
 const h2Style: React.CSSProperties = {
@@ -139,6 +140,25 @@ export default function GrammarExplainer({ topic, color, targetLang = 'inglés' 
             ))}
           </div>
         </section>
+      )}
+
+      {/* Recurso descargable asociado (ej. lista completa de verbos irregulares) */}
+      {topic.relatedResource && (
+        <Link href={topic.relatedResource.url} style={{ textDecoration: 'none', color: 'inherit', display: 'block', marginTop: '1.75rem' }}>
+          <div style={{
+            padding: '1rem 1.2rem', borderRadius: 12, border: `1.5px solid ${color}33`, background: `${color}08`,
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap',
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              <span style={{ fontSize: '1.3rem' }} aria-hidden>📋</span>
+              <div>
+                <div style={{ fontSize: '0.68rem', color, fontFamily: 'var(--mono)', fontWeight: 700 }}>Recurso gratis</div>
+                <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.95rem' }}>{topic.relatedResource.label}</div>
+              </div>
+            </div>
+            <span style={{ color, fontSize: '1.1rem', fontWeight: 700, flexShrink: 0 }}>→</span>
+          </div>
+        </Link>
       )}
     </article>
   );
