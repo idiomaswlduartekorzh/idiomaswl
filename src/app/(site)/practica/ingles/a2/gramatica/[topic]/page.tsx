@@ -57,19 +57,6 @@ export default async function Page({ params }: Props) {
       />
       {topic.faq && topic.faq.length > 0 && <FAQSchema items={topic.faq} />}
 
-      {/* CSS de impresión: al "Descargar PDF" solo se imprime la lección (#printable) */}
-      <style>{`
-        @media print {
-          body * { visibility: hidden; }
-          #printable, #printable * { visibility: visible; }
-          #printable { position: absolute; left: 0; top: 0; width: 100%; padding: 0 1rem; }
-          .no-print { display: none !important; }
-          .print-only { display: block !important; }
-          /* Revela las respuestas de la FAQ aunque el <details> esté cerrado */
-          details:not([open]) > *:not(summary) { display: block !important; }
-        }
-      `}</style>
-
       <section className="wl-section">
         <div className="wrap" style={{ maxWidth: 780 }}>
           {/* Breadcrumb */}
@@ -89,23 +76,16 @@ export default async function Page({ params }: Props) {
             <span className="no-print"><XPStreak showMotivation /></span>
           </div>
 
-          {/* Bloque imprimible: título + explicación (esto es lo que va al PDF) */}
-          <div id="printable">
-            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', margin: '0 0 1.5rem' }}>
-              <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700, lineHeight: 1.15, flex: '1 1 auto' }}>
-                {topic.icon} {topic.title}
-              </h1>
-              <LessonPdfButton color={color} />
-            </div>
-
-            {/* Explicación (server-rendered, SEO) */}
-            <GrammarExplainer topic={topic} color={color} />
-
-            {/* Crédito solo visible en el PDF impreso */}
-            <p style={{ display: 'none', marginTop: '1.5rem', fontSize: '0.8rem', color: '#666' }} className="print-only">
-              Idiomas WeLearn · idiomaswl.com — {topic.title} (Inglés A2)
-            </p>
+          {/* Título + botón de descarga PDF membretado */}
+          <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', margin: '0 0 1.5rem' }}>
+            <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700, lineHeight: 1.15, flex: '1 1 auto' }}>
+              {topic.icon} {topic.title}
+            </h1>
+            <LessonPdfButton topic={topic} levelLabel="Inglés A2" skillLabel="Gramática" url={url} color={color} />
           </div>
+
+          {/* Explicación (server-rendered, SEO) */}
+          <GrammarExplainer topic={topic} color={color} />
 
           {/* Ejercicios */}
           <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
