@@ -32,10 +32,10 @@ const topic: GrammarTopic = {
       'En discurso indirecto: cambios de verbo requieren ajuste de modo',
     ],
     table: [
-      ['Tipo', 'Si + (prótasis)', 'Resultado (apódosis)', 'Significado'],
-      ['Realidad', 'se + presente/futuro', 'futuro/presente/imperativo', 'Hecho probable o general'],
-      ['Probabilidad', 'se + imperfecto indicativo', 'condicional', 'Menos probable, hipotético'],
-      ['Irrealidad', 'se + imperfecto subjuntivo', 'condicional compuesto', 'Contrario a la realidad'],
+      ['Tipo', 'Si + (prótasis) → Resultado (apódosis)', 'Significado'],
+      ['Realidad', 'se + presente/futuro → futuro/presente/imperativo', 'Hecho probable o general'],
+      ['Probabilidad', 'se + imperfecto indicativo → condicional', 'Menos probable, hipotético'],
+      ['Irrealidad', 'se + imperfecto subjuntivo → condicional compuesto', 'Contrario a la realidad'],
     ],
     mistakes: [
       '"Se chove, não vou" ✓ (realidad) vs "Se chovesse, não vou" ❌ (modo incorrecto, debería ser "não iria").',

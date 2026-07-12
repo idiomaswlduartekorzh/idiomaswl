@@ -34,6 +34,9 @@ const topic: GrammarTopic = {
       ['-고 나서', 'Después de (con intervalo)', '먹고 나서 → después de comer (hay intervalo)'],
       ['vs -자마자', 'Inmediato (sin intervalo)', '먹자마자 → tan pronto comí (instantáneo)'],
     ],
+    mistakes: [
+      '「먹고 나서 영화를 봤어요」 ✓ (después de comer, vi una película — con intervalo natural). 「먹자마자 영화를 봤어요」 implica inmediatez (en cuanto comí).',
+      'No confundir -고 나서 (secuencia con posible pausa) con -고 (simple conexión sin implicar orden estricto).'],
   },
 
   seo: [

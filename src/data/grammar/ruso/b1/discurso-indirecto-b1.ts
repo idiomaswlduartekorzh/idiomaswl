@@ -36,7 +36,7 @@ const topic: GrammarTopic = {
       'No mezcles directo y indirecto en la misma oración.'],
   },
   seo: [
-    {heading: '¿Qué es косвенная речь?', paragraphs: ['Косвенная речь es reportar lo que alguien dijo sin usar comillas directas. "Ella dijo que vendría" en lugar de \'Ella dijo "Vendré"'.', 'Requiere cambios de pronombres, tiempo verbal y conectores.']},
+    {heading: '¿Qué es косвенная речь?', paragraphs: ['Косвенная речь es reportar lo que alguien dijo sin usar comillas directas. "Ella dijo que vendría" en lugar de "Ella dijo: Vendré".', 'Requiere cambios de pronombres, tiempo verbal y conectores.']},
     {heading: 'Cambio de pronombres', paragraphs: ['"Я приду" → Он сказал, что он придёт (yo → él). "Ты пришла" → Она спросила, пришла ли я (tú → yo, en contexto del que reporta).', 'Los pronombres cambian según la perspectiva del que reporta.']},
     {heading: 'Cambio de tiempo verbal', paragraphs: ['En косвенная речь, el tiempo generalmente cambia al pasado o presente según la lógica. "Я приду завтра" → "Он сказал, что он придёт завтра" (futuro se mantiene o se convierte en implicación).', 'Presente directo puede ser presente o pasado en indirecto según contexto.']},
     {heading: 'Conectores: что, ли, какой', paragraphs: ['"Он сказал, что он приходит" (que — para afirmaciones). "Она спросила, придёт ли она" (ли — para yes/no preguntas).', 'Preguntas qué/cuál: "Он спросил, какую книгу я читал" (какой — para preguntas interrogativas).']},

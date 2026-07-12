@@ -32,7 +32,7 @@ const topic: GrammarTopic = {
       ['Masculino', '-ом/-ем', 'ручкой (con bolígrafo)'],
       ['Neutro', '-ом/-ем', 'окном (con ventana)'],
       ['Femenino', '-ой/-ей', 'ручкой (fem), тетрадью (cuaderno fem)'],
-      ['Plural', '-ами/-ями', 'ручками (bolígrafos)', 'книгами (libros)'],
+      ['Plural', '-ами/-ями', 'ручками (bolígrafos), книгами (libros)'],
     ],
     mistakes: [
       '"Я пишу ручкой" ✓ (no "я пишу ручку") — instrumental para instrumento.',

@@ -32,12 +32,12 @@ const topic: GrammarTopic = {
       'Participios: concordancia en voz pasiva reflexiva (as janelas se abriram)',
     ],
     table: [
-      ['Verbo reflexivo', 'Infinitivo', 'Presente 1ª persona', 'Pretérito 1ª persona'],
-      ['Levantar-se', 'infinitivo reflexivo', 'me levanto', 'me levantei'],
-      ['Vestir-se', 'infinitivo reflexivo', 'me visto', 'me vesti'],
-      ['Abrir-se', 'infinitivo reflexivo', 'me abro', 'me abri'],
-      ['Arrepender-se', 'infinitivo reflexivo', 'me arrependo', 'me arrependi'],
-      ['Lembrar-se', 'infinitivo reflexivo', 'me lembro', 'me lembrei'],
+      ['Verbo reflexivo', 'Presente 1ª persona', 'Pretérito 1ª persona'],
+      ['Levantar-se', 'me levanto', 'me levantei'],
+      ['Vestir-se', 'me visto', 'me vesti'],
+      ['Abrir-se', 'me abro', 'me abri'],
+      ['Arrepender-se', 'me arrependo', 'me arrependi'],
+      ['Lembrar-se', 'me lembro', 'me lembrei'],
     ],
     mistakes: [
       '"Eu levanto-me cedo" ❌ (enclítica en prótasis negativa) → "Eu me levanto cedo" ✓ (proclítica).',
