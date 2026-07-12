@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { TOPICS, getTopic, getTopicNav, GRAMMAR_COLOR } from '@/data/practica/ingles-a2-gramatica';
 import { grammarTopicMetadata } from '@/lib/practica-metadata';
-import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema';
+import { GrammarLessonSchema, QuizSchema, FAQSchema } from '@/components/practica/EducationSchema';
 import GrammarExplainer from '@/components/practica/GrammarExplainer';
 import GrammarQuest from '@/components/practica/GrammarQuest';
 import XPStreak from '@/components/practica/XPStreak';
+import LessonPdfButton from '@/components/practica/LessonPdfButton';
 
 interface Props {
   params: Promise<{ topic: string }>;
@@ -54,11 +55,25 @@ export default async function Page({ params }: Props) {
         url={url}
         description={`Quest progresiva de ejercicios sobre ${topic.shortTitle.toLowerCase()} en inglés A2, con niveles, revisión y práctica de errores frecuentes.`}
       />
+      {topic.faq && topic.faq.length > 0 && <FAQSchema items={topic.faq} />}
+
+      {/* CSS de impresión: al "Descargar PDF" solo se imprime la lección (#printable) */}
+      <style>{`
+        @media print {
+          body * { visibility: hidden; }
+          #printable, #printable * { visibility: visible; }
+          #printable { position: absolute; left: 0; top: 0; width: 100%; padding: 0 1rem; }
+          .no-print { display: none !important; }
+          .print-only { display: block !important; }
+          /* Revela las respuestas de la FAQ aunque el <details> esté cerrado */
+          details:not([open]) > *:not(summary) { display: block !important; }
+        }
+      `}</style>
 
       <section className="wl-section">
         <div className="wrap" style={{ maxWidth: 780 }}>
           {/* Breadcrumb */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
+          <div className="no-print" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
             <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
             <span>/</span>
             <Link href="/practica/ingles/a2" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇬🇧 Inglés A2</Link>
@@ -71,14 +86,26 @@ export default async function Page({ params }: Props) {
           {/* Header */}
           <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.25rem' }}>
             <p className="eyebrow" style={{ margin: 0 }}><span className="ink-line" />Grammar · Inglés A2 · Tema {topic.order} de {TOPICS.length}</p>
-            <XPStreak showMotivation />
+            <span className="no-print"><XPStreak showMotivation /></span>
           </div>
-          <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 1.5rem', fontWeight: 700, lineHeight: 1.15 }}>
-            {topic.icon} {topic.title}
-          </h1>
 
-          {/* Explicación (server-rendered, SEO) */}
-          <GrammarExplainer topic={topic} color={color} />
+          {/* Bloque imprimible: título + explicación (esto es lo que va al PDF) */}
+          <div id="printable">
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', margin: '0 0 1.5rem' }}>
+              <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700, lineHeight: 1.15, flex: '1 1 auto' }}>
+                {topic.icon} {topic.title}
+              </h1>
+              <LessonPdfButton color={color} />
+            </div>
+
+            {/* Explicación (server-rendered, SEO) */}
+            <GrammarExplainer topic={topic} color={color} />
+
+            {/* Crédito solo visible en el PDF impreso */}
+            <p style={{ display: 'none', marginTop: '1.5rem', fontSize: '0.8rem', color: '#666' }} className="print-only">
+              Idiomas WeLearn · idiomaswl.com — {topic.title} (Inglés A2)
+            </p>
+          </div>
 
           {/* Ejercicios */}
           <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>

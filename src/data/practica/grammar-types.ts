@@ -42,6 +42,13 @@ export interface GrammarContrast {
   note: string;
 }
 
+// Pregunta frecuente (para SEO/AEO: fragmentos destacados de Google + FAQPage schema).
+// Responde las búsquedas reales que hace la gente sobre el tema.
+export interface GrammarFAQ {
+  q: string;        // la pregunta tal como la buscaría el usuario
+  a: string;        // respuesta directa y breve (1-3 frases)
+}
+
 export interface GrammarTopic {
   slug: string;
   order: number;
@@ -59,6 +66,7 @@ export interface GrammarTopic {
   examples: GrammarExample[];
   commonMistakes: GrammarMistake[];
   tip: string;
+  faq?: GrammarFAQ[];               // preguntas frecuentes (SEO/AEO, opcional)
   questions: GQItem[];
 }
 

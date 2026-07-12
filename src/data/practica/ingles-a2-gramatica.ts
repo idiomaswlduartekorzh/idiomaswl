@@ -129,7 +129,12 @@ export const TOPICS: GrammarTopic[] = [
     seoTitle: 'Verbos irregulares en inglés (past simple): lista, explicación y ejercicios | A2',
     seoDescription:
       'Domina los verbos irregulares más frecuentes del inglés en past simple: go→went, have→had, see→saw, do→did. Explicación, tabla con los más usados, ejemplos, errores comunes y ejercicios. Nivel A2.',
-    keywords: ['verbos irregulares inglés', 'past simple irregular', 'go went gone', 'lista verbos irregulares a2', 'pasado irregular inglés'],
+    keywords: [
+      'verbos irregulares inglés', 'lista de verbos irregulares en inglés', 'verbos irregulares inglés pdf',
+      'verbos irregulares más usados en inglés', 'past simple irregular', 'go went gone', 'see saw seen',
+      'cómo memorizar los verbos irregulares en inglés', 'tabla de verbos irregulares inglés a2',
+      'pasado de los verbos irregulares', 'verbos irregulares con pronunciación', 'las 3 formas del verbo inglés',
+    ],
     intro: [
       'Junto a los verbos regulares (que forman el pasado con -ed), el inglés tiene un grupo de verbos irregulares que cambian de forma y hay que memorizar. La mala noticia: no siguen una regla fija. La buena: son un grupo cerrado, y los que de verdad importan en A2 son unos 40 o 50, que además son los más frecuentes del idioma (go, have, do, say, get, make, come...).',
       'Como en los regulares, la forma del pasado es la misma para todos los sujetos: I went, you went, he went, we went, they went. No hay que conjugar persona por persona. Lo único que cambia respecto a los regulares es la forma en sí: en vez de añadir -ed, el verbo se transforma (go → went, see → saw, buy → bought).',
@@ -155,6 +160,21 @@ export const TOPICS: GrammarTopic[] = [
         body: [
           'Aquí está la trampa más común. En afirmativo usas la forma irregular (I went, she saw). Pero en negativo y pregunta se usa "did/didn\'t" + el verbo BASE, no la forma de pasado: "Did you go?" (no "did you went"), "I didn\'t see" (no "I didn\'t saw").',
           'La lógica: "did" ya lleva la marca de pasado, así que el verbo principal se queda en su forma base. Esto se desarrolla en el tema de negativo y preguntas.',
+        ],
+      },
+      {
+        heading: 'Cómo memorizarlos sin morir en el intento',
+        body: [
+          'No intentes tragarte la lista alfabética de 200 verbos: es la forma más ineficaz. El cerebro retiene mejor por bloques con sonido común. Agrúpalos en familias: los que no cambian (cut-cut, put-put, cost-cost, hit-hit), los que solo cambian la vocal i→a (sit-sat, drink-drank, sing-sang, swim-swam, begin-began) y los que terminan en -ought/-aught (buy-bought, think-thought, bring-brought, teach-taught, catch-caught).',
+          'Segunda técnica: prioriza por frecuencia, no por orden. Los 20 verbos más usados (be, have, do, go, get, make, say, see, come, take, know, give, find, think, tell, become, leave, feel, put, mean) aparecen en más del 70% de las frases reales. Domínalos primero y ya podrás comunicarte; el resto llega con la exposición.',
+          'Tercera: apréndelos en voz alta y en cadena rítmica ("go-went-gone, see-saw-seen, take-took-taken"). Incluir desde el principio la tercera forma (el participio) te ahorra reaprenderlos cuando llegues al present perfect.',
+        ],
+      },
+      {
+        heading: 'Un aviso de pronunciación',
+        body: [
+          'Varios irregulares cambian mucho de sonido entre la base y el pasado, y ahí es donde el oído hispanohablante se pierde. "read" es el caso extremo: se escribe igual en presente y pasado, pero el pasado se pronuncia "red" (como el color), no "riid". "say" /sei/ pasa a "said" /sed/, y "pay" /pei/ a "paid" /peid/.',
+          'Presta atención también a "bought", "thought", "caught": esa combinación "-ough/-augh" no suena como se escribe; se pronuncia con un sonido /ɔː/ largo ("bot", "thot", "cot"). Escúchalos, no los leas en español.',
         ],
       },
     ],
@@ -211,6 +231,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'He seed a bird.', right: 'He saw a bird.', note: 'see → saw.' },
     ],
     tip: 'Memoriza los irregulares en cadenas por sonido (drink-drank, buy-bought) y recuerda dos cosas: la forma de pasado es única para todos los sujetos (excepto be: was/were), y tras "did/didn\'t" el verbo vuelve SIEMPRE a la base (Did you go?, no "did you went").',
+    faq: [
+      { q: '¿Cuántos verbos irregulares hay en inglés?', a: 'Existen alrededor de 200, pero en el uso diario solo se necesitan unos 50-70. En el nivel A2 basta con dominar los 20-30 más frecuentes (go, have, do, see, get, make…), que aparecen en la mayoría de las frases reales.' },
+      { q: '¿Cuál es la mejor forma de memorizar los verbos irregulares?', a: 'Agruparlos por patrón de sonido (los que no cambian: cut-cut; los de vocal i→a: drink-drank; los de -ought: buy-bought) y repetirlos en voz alta en cadena de tres formas (go-went-gone). Estudiar la lista alfabética completa es la forma más ineficaz.' },
+      { q: '¿Cuál es la diferencia entre "went" y "gone"?', a: '"went" es el pasado simple (I went to Paris = fui a París) y "gone" es el participio, que se usa con have en el present perfect (I have gone = he ido). No se mezclan: "I have went" es incorrecto.' },
+      { q: '¿Por qué "did you went" está mal?', a: 'Porque en preguntas y negaciones el pasado ya lo marca "did", así que el verbo principal vuelve a su forma base: "Did you go?" e "I didn\'t go". La forma irregular (went) solo se usa en afirmativo.' },
+      { q: '¿Cómo se pronuncia el pasado de "read"?', a: 'El pasado "read" se escribe igual que el presente pero se pronuncia "red" (como el color rojo), no "riid". Es el caso más famoso de cambio de sonido sin cambio de escritura.' },
+    ],
     questions: [
       { s: 'I ___ (go) to the party last night.', opts: ['goed', 'went', 'gone', 'go'], a: 1, fb: 'go → went (pasado).' },
       { s: 'She ___ (have) a great time.', opts: ['haved', 'had', 'has', 'having'], a: 1, fb: 'have → had.' },

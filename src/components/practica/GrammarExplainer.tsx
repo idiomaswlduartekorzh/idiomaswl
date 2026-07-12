@@ -125,6 +125,21 @@ export default function GrammarExplainer({ topic, color, targetLang = 'inglés' 
           <strong style={{ color }}>💡 Truco:</strong> {topic.tip}
         </p>
       </div>
+
+      {/* Preguntas frecuentes (SEO/AEO) */}
+      {topic.faq && topic.faq.length > 0 && (
+        <section style={{ marginTop: '1.75rem' }}>
+          <h2 style={h2Style}>Preguntas frecuentes</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+            {topic.faq.map((item, i) => (
+              <details key={i} style={{ padding: '0.85rem 1.1rem', borderRadius: 10, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                <summary style={{ fontWeight: 700, color: 'var(--ink)', cursor: 'pointer', fontSize: '0.96rem', lineHeight: 1.5 }}>{item.q}</summary>
+                <p style={{ margin: '0.6rem 0 0', color: 'var(--ink-2)', fontSize: '0.94rem', lineHeight: 1.7 }}>{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
     </article>
   );
 }

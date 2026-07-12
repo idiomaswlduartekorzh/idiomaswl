@@ -93,3 +93,24 @@ export function GrammarLessonSchema({
     />
   );
 }
+
+// FAQPage — habilita los "recuadros de respuesta" (fragmentos destacados) en Google
+// y alimenta a las IA generativas (AEO). Se emite solo si el tema define preguntas.
+export function FAQSchema({ items }: { items: { q: string; a: string }[] }) {
+  if (!items || items.length === 0) return null;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((it) => ({
+      '@type': 'Question',
+      name: it.q,
+      acceptedAnswer: { '@type': 'Answer', text: it.a },
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
