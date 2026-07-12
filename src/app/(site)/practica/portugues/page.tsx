@@ -4,7 +4,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Portugués — Elige tu nivel MCER | Idiomas WeLearn',
-  description: 'Ejercicios interactivos de portugués por nivel: A1 disponible con lectura, gramática, escritura, habla, vocabulario y escucha.',
+  description: 'Ejercicios interactivos de portugués por nivel: A1, A2 y B1 disponibles. Subjuntivo, futuro do pretérito, CELPE-Bras y vocabulario esencial.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues' },
 };
 
@@ -18,7 +18,12 @@ const NIVELES = [
     count: '6 habilidades · 40+ ejercicios',
   },
   { nivel: 'A2', name: 'Elementar', desc: 'Pretérito perfeito, imperfeito, pronomes oblíquos, ser vs estar e comparativos.', href: '/practica/portugues/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
-  { nivel: 'B1', name: 'Intermediário', desc: 'Subjuntivo, futuro do pretérito, produção escrita, compreensão oral.', available: false },
+  {
+    nivel: 'B1', name: 'Intermediário',
+    desc: 'Subjuntivo, futuro do pretérito, período hipotético, regência verbal e preparação CELPE-Bras.',
+    href: '/practica/portugues/b1', available: true,
+    count: '20 temas · 120+ ejercicios',
+  },
   { nivel: 'B2', name: 'Intermediário avançado', desc: 'Preparação CELPE-Bras, vocabulário acadêmico, colocações.', available: false },
   { nivel: 'C1', name: 'Avançado', desc: 'Estilo formal, nuances gramaticais, nível superior CELPE-Bras.', available: false },
 ];
@@ -28,9 +33,9 @@ export default function PortuguesPage() {
     <>
     <CourseSchema
       name="Práctica de Portugués — Ejercicios interactivos MCER"
-      description="Ejercicios de portugués brasileño por nivel: A1 y A2 disponibles. Vocabulario, gramática y comprensión."
+      description="Ejercicios de portugués brasileño por nivel: A1, A2 y B1 disponibles. Vocabulario, gramática y comprensión."
       url="https://www.idiomaswl.com/practica/portugues"
-      educationalLevel="A1,A2"
+      educationalLevel="A1,A2,B1"
       teaches="Portugués, CELPE-Bras"
       inLanguage="pt"
     />

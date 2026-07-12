@@ -6,7 +6,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 export const metadata: Metadata = {
   title: 'Coreano B1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Coreano B1: -(으)면 (condicional), -아/어야 하다 (obligación), -(으)ㄹ 수 있다 (capacidad), -기 때문에 (razón), -는데 (contexto/contraste). 6 habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/coreano/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano/b1' },
 };
 
 const COLOR = '#534AB7';
@@ -20,7 +20,7 @@ const HABILIDADES = [
   {
     id: 'gramatica', emoji: '📐', name: '문법 (Munbeop)', eng: 'Gramática',
     desc: '-(으)면, -아/어야 하다, -(으)ㄹ 수 있다, -기 때문에, -는데. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/coreano/b1/gramatica', available: true,
+    count: '20 temas · 120+ ejercicios', href: '/practica/coreano/b1/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: '쓰기 (Sseugi)', eng: 'Escritura',

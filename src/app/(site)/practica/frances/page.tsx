@@ -4,7 +4,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Francés — Elige tu nivel MCER | Idiomas WeLearn',
-  description: 'Ejercicios interactivos de francés por nivel: A1 disponible con lectura, gramática, escritura, habla, vocabulario y escucha.',
+  description: 'Ejercicios interactivos de francés por nivel: A1 y A2 disponibles con lectura, gramática, escritura, habla, vocabulario y escucha. B1 con 20 temas de gramática avanzada.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/frances' },
 };
 
@@ -18,7 +18,7 @@ const NIVELES = [
     count: '6 habilidades · 40+ ejercicios',
   },
   { nivel: 'A2', name: 'Élémentaire', desc: 'Passé composé, imparfait, pronoms COD/COI, comparatif/superlatif et futur.', href: '/practica/frances/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
-  { nivel: 'B1', name: 'Intermédiaire', desc: 'Subjonctif, futur simple, production écrite, compréhension orale.', available: false },
+  { nivel: 'B1', name: 'Intermédiaire', desc: 'Passé composé vs Imparfait, Subjonctif, Conditionnel, Pronoms relatifs, Plus-que-parfait, Discours indirect et plus.', href: '/practica/frances/b1', available: true, count: '20 temas · 120+ ejercicios' },
   { nivel: 'B2', name: 'Intermédiaire avancé', desc: 'Conditionnel, préparation DELF B2, vocabulaire soutenu.', available: false },
   { nivel: 'C1', name: 'Avancé', desc: 'Style formel, préparation DALF C1, nuances grammaticales.', available: false },
 ];
@@ -28,9 +28,9 @@ export default function FrancesPage() {
     <>
     <CourseSchema
       name="Práctica de Francés — Ejercicios interactivos MCER"
-      description="Ejercicios de francés por nivel MCER: A1 y A2 disponibles. Vocabulario, gramática, escritura, habla y escucha."
+      description="Ejercicios de francés por nivel MCER: A1, A2 y B1 disponibles. Vocabulario, gramática, escritura, habla y escucha. 20 temas B1 de gramática avanzada."
       url="https://www.idiomaswl.com/practica/frances"
-      educationalLevel="A1,A2"
+      educationalLevel="A1,A2,B1"
       teaches="Francés, DELF, DALF"
       inLanguage="fr"
     />

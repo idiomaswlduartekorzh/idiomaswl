@@ -12,13 +12,13 @@ const BASE = 'https://www.idiomaswl.com';
 // (p. ej. B1 de inglés), añádelo aquí y el sitemap lo incluye automáticamente.
 const PUBLISHED_LEVELS: Record<string, readonly string[]> = {
   ingles:    ['a1', 'a2', 'b1'],
-  frances:   ['a1', 'a2'],
-  portugues: ['a1', 'a2'],
+  frances:   ['a1', 'a2', 'b1'],
+  portugues: ['a1', 'a2', 'b1'],
   aleman:    ['a1', 'a2', 'b1'],
   italiano:  ['a1', 'a2', 'b1'],
-  coreano:   ['a1', 'a2'],
-  japones:   ['a1', 'a2'],
-  ruso:      ['a1', 'a2'],
+  coreano:   ['a1', 'a2', 'b1'],
+  ruso:      ['a1', 'a2', 'b1'],
+  japones:   ['a1', 'a2', 'b1'],
 };
 
 const SKILLS = ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'escucha'] as const;
