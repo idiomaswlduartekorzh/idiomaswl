@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:safe": "node scripts/safe-dev.js",
     "panic": "node scripts/panic-kill.js",
     "build": "next build",

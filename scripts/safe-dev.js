@@ -92,22 +92,35 @@ async function monitorAndRun() {
   log('green', '   Puerto: http://localhost:3010')
   log('blue', '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n')
 
+  // Techo de heap para Next: en 8GB de RAM evita que se coma toda la memoria
+  // y congele el macOS. Turbopack (default en Next 16) usa memoria nativa aparte,
+  // pero este cap protege el lado JS del dev server.
   const nextProcess = spawn('npm', ['run', 'dev'], {
     cwd: path.join(__dirname, '..'),
     stdio: 'inherit',
     shell: true,
+    env: { ...process.env, NODE_OPTIONS: '--max-old-space-size=3072' },
   })
 
-  // Monitoreo de recursos
+  // Monitoreo REAL: vigila la memoria LIBRE del sistema (no la de este script).
+  // Si la RAM libre cae por debajo del umbral crítico, mata Next antes de que
+  // el PC entre en swap masivo y se congele.
+  const totalMemGB = os.totalmem() / 1073741824
+  const WARN_FREE_MB = 900   // avisar
+  const KILL_FREE_MB = 400   // matar para salvar el PC
   const interval = setInterval(() => {
-    const memUsage = process.memoryUsage()
-    const memPercent = (memUsage.heapUsed / memUsage.heapTotal) * 100
-
-    if (memPercent > 80) {
-      log('red', `\n⚠️  MEMORIA ALTA: ${memPercent.toFixed(1)}%`)
-      log('yellow', '💡 Consejo: Abre menos tabs en el browser o recarga la página')
+    const freeMB = os.freemem() / 1048576
+    if (freeMB < KILL_FREE_MB) {
+      log('red', `\n🔥 RAM LIBRE CRÍTICA: ${freeMB.toFixed(0)} MB — matando Next para salvar el PC`)
+      nextProcess.kill('SIGKILL')
+      clearInterval(interval)
+      log('yellow', '💡 Reiniciá con: npm run dev:safe (y cerrá tabs/apps pesadas)')
+      process.exit(1)
+    } else if (freeMB < WARN_FREE_MB) {
+      log('red', `\n⚠️  RAM LIBRE BAJA: ${freeMB.toFixed(0)} MB de ${totalMemGB.toFixed(0)} GB`)
+      log('yellow', '💡 Cerrá tabs del browser o apps pesadas antes de que se congele')
     }
-  }, 10000)
+  }, 5000)
 
   nextProcess.on('exit', () => {
     clearInterval(interval)
