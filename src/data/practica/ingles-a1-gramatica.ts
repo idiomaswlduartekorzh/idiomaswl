@@ -102,6 +102,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I speak the English.', right: 'I speak English.', note: 'Los idiomas no llevan artículo.' },
     ],
     tip: 'Tres reglas de oro: (1) a/an depende del SONIDO, no de la letra; (2) "the" para lo único o ya conocido; (3) NADA de artículo con plurales/incontables generales (I like music) ni con idiomas (I speak English).',
+        faq: [
+      { q: "¿Cuándo se usa \"a\" y cuándo \"an\" en inglés?", a: "Depende del SONIDO con que empieza la palabra, no de la letra: \"a\" antes de sonido consonántico (a dog, a university) y \"an\" antes de sonido vocálico (an apple, an hour)." },
+      { q: "¿Cuándo NO se usa artículo en inglés?", a: "No se usa artículo con plurales o incontables en sentido general (I like music, dogs are nice), con idiomas (I speak English) ni con lugares por su función (go to school, go to bed)." },
+      { q: "¿Cuál es la diferencia entre \"a/an\" y \"the\"?", a: "\"a/an\" es indefinido (un/una, algo no concreto: a book) y \"the\" es definido (el/la/los/las, algo único o ya conocido: the sun, the book on the table)." },
+      { q: "¿Por qué se dice \"a university\" y no \"an university\"?", a: "Porque \"university\" empieza con sonido de consonante (\"yu-\"), aunque se escriba con vocal. La regla se rige por el sonido, no por la letra." },
+      { q: "¿Se dice \"she is teacher\" o \"she is a teacher\"?", a: "Se dice \"she is a teacher\". En inglés las profesiones llevan \"a/an\", al revés que en español donde decimos \"es profesora\" sin artículo." },
+    ],
     questions: [
       { s: 'I have ___ dog.', opts: ['a', 'an', 'the'], a: 0, fb: '"A dog" — sonido consonántico (d-og). Usamos "a".' },
       { s: 'She eats ___ apple a day.', opts: ['a', 'an', 'the'], a: 1, fb: '"An apple" — sonido vocálico (a-pple). Usamos "an".' },
@@ -224,6 +231,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'He is have hungry.', right: 'He is hungry.', note: 'No juntes dos verbos. "tener hambre" = "to be hungry".' },
     ],
     tip: 'Si dudas entre ser y estar, en inglés siempre es "to be". Y memoriza tres casos que NO usan have ni hacer: la edad (I am 20), el clima (it is cold) y el hambre (I am hungry).',
+        faq: [
+      { q: "¿Cómo se conjuga el verbo to be en presente?", a: "I am; you are; he/she/it is; we are; they are. Se contrae en el habla: I'm, you're, he's, she's, it's, we're, they're." },
+      { q: "¿\"to be\" significa ser o estar?", a: "Las dos: un solo verbo inglés cubre \"ser\" y \"estar\". \"I am tall\" (soy alto) y \"I am tired\" (estoy cansado) usan el mismo verbo." },
+      { q: "¿Cómo se dice la edad en inglés?", a: "Con el verbo \"to be\", no con \"tener\": \"I am 20 (years old)\" = \"tengo 20 años\". También el clima (it is cold) y el hambre (I am hungry)." },
+      { q: "¿Cómo se hacen preguntas con to be?", a: "Se pone el verbo delante del sujeto, sin auxiliar: \"Are you ready?\", \"Is she a teacher?\", \"Am I late?\"." },
+      { q: "¿Cuál es la forma negativa de to be?", a: "Se añade \"not\": I am not (I'm not), he is not (isn't), you are not (aren't). Ojo: \"amn't\" no existe; se dice \"I'm not\"." },
+    ],
     questions: [
       { s: 'I ___ a student.', opts: ['am', 'is', 'are'], a: 0, fb: '"I am" — con "I" siempre usamos "am".' },
       { s: 'She ___ very kind.', opts: ['am', 'is', 'are'], a: 1, fb: '"She is" — con he/she/it usamos "is".' },
@@ -329,6 +343,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'The table is old, she is...', right: 'The table is old, it is...', note: 'Las cosas son "it" aunque en español sean femeninas.' },
     ],
     tip: 'Regla de hierro: toda oración inglesa necesita sujeto. Para cosas, animales y el clima, ese sujeto es "it". Y "you" es una sola palabra para tú, usted y ustedes.',
+        faq: [
+      { q: "¿Cuáles son los pronombres personales en inglés?", a: "Los de sujeto son: I (yo), you (tú/usted), he (él), she (ella), it (ello/cosa/animal), we (nosotros), they (ellos/ellas)." },
+      { q: "¿Cuándo se usa \"it\" en inglés?", a: "\"it\" se usa para cosas, animales, el clima y situaciones impersonales: \"It is a book\", \"It is raining\", \"It is difficult\"." },
+      { q: "¿Se puede omitir el pronombre sujeto en inglés?", a: "No. A diferencia del español, el inglés siempre necesita sujeto: se dice \"I am a student\", nunca \"am a student\"." },
+      { q: "¿Cuál es la diferencia entre \"you\" singular y plural?", a: "\"you\" sirve para singular y plural: \"tú\", \"usted\" y \"ustedes/vosotros\" se dicen todos \"you\". El contexto lo aclara." },
+      { q: "¿Cuándo se usa \"they\"?", a: "\"they\" se usa para \"ellos/ellas\" (personas, animales o cosas en plural): \"My friends are here. They are happy.\"" },
+    ],
     questions: [
       { s: 'Maria is from Spain. ___ is from Spain.', opts: ['He', 'She', 'It', 'They'], a: 1, fb: '"She" — Maria es mujer.' },
       { s: 'Tom and I are friends. ___ are friends.', opts: ['We', 'They', 'You', 'It'], a: 0, fb: '"We" — cuando yo estoy incluido en el grupo.' },
@@ -433,6 +454,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'Their is happy.', right: 'They are happy.', note: 'No confundas "their" (posesivo) con "they\'re" (they are).' },
     ],
     tip: '"His" o "her" dependen de quién POSEE, no del objeto: el carro de Pedro es "his car". Y recuerda: "its" sin apóstrofo es posesión; "it\'s" con apóstrofo es "it is".',
+        faq: [
+      { q: "¿Cuáles son los adjetivos posesivos en inglés?", a: "my (mi), your (tu/su), his (su, de él), her (su, de ella), its (su, de una cosa/animal), our (nuestro), their (su, de ellos)." },
+      { q: "¿Cuál es la diferencia entre \"his\" y \"her\"?", a: "\"his\" es de un poseedor masculino (his car = su carro, de él) y \"her\" de uno femenino (her car = su carro, de ella). Dependen del dueño, no del objeto." },
+      { q: "¿Cuál es la diferencia entre \"its\" y \"it's\"?", a: "\"its\" es posesivo (su, de una cosa: the dog and its bone) e \"it's\" es la contracción de \"it is\" (it's cold). No llevan el mismo apóstrofo." },
+      { q: "¿Los adjetivos posesivos cambian con el plural?", a: "No. Son invariables: \"my book\" y \"my books\" usan igual \"my\". No existe \"mys\" ni concuerdan en número como en español." },
+      { q: "¿\"your\" es singular o plural?", a: "Ambos: \"your\" significa \"tu\", \"su\" (de usted) y \"vuestro/de ustedes\", igual que el pronombre \"you\"." },
+    ],
     questions: [
       { s: 'This is ___ name. (de mí)', opts: ['my', 'your', 'his', 'her'], a: 0, fb: '"my" = mi (de mí).' },
       { s: 'Peter loves ___ dog. (el perro de Peter)', opts: ['her', 'his', 'its', 'your'], a: 1, fb: 'Peter es hombre → "his".' },
@@ -530,6 +558,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'These car is fast.', right: 'This car is fast.', note: '"car" es singular → this.' },
     ],
     tip: 'Regla rápida: this/these = aquí cerca; that/those = allá lejos. Y la "s" de these/those te recuerda el plural. El número lo manda el sustantivo.',
+        faq: [
+      { q: "¿Cuál es la diferencia entre this, that, these y those?", a: "this (esto, cerca, singular), that (eso/aquello, lejos, singular), these (estos, cerca, plural), those (esos/aquellos, lejos, plural)." },
+      { q: "¿Cuándo se usa \"this\" y cuándo \"that\"?", a: "\"this\" para algo cercano en espacio o tiempo (this book, this morning) y \"that\" para algo lejano (that house, that day)." },
+      { q: "¿Cómo se dice \"estos\" y \"esos\" en inglés?", a: "\"estos\" es \"these\" (plural de this, cerca) y \"esos/aquellos\" es \"those\" (plural de that, lejos)." },
+      { q: "¿Los demostrativos concuerdan en número?", a: "Sí: this/that son singulares (this car) y these/those plurales (these cars). Deben coincidir con el sustantivo." },
+      { q: "¿Se puede usar this/that al teléfono?", a: "Sí: al presentarse por teléfono se usa \"this\" para uno mismo (\"This is Ana\") y \"that\" para el otro (\"Is that John?\")." },
+    ],
     questions: [
       { s: '___ is my pen. (cerca, singular)', opts: ['This', 'That', 'These', 'Those'], a: 0, fb: 'Cerca + singular → "this".' },
       { s: '___ shoes are dirty. (cerca, plural)', opts: ['This', 'That', 'These', 'Those'], a: 2, fb: 'Cerca + plural → "these".' },
@@ -633,6 +668,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'two knifes', right: 'two knives', note: '-fe cambia a -ves: knife → knives.' },
     ],
     tip: 'Vocal + y solo añade -s (boys, days); consonante + y cambia a -ies (cities, babies). Y cuidado con los incontables: "information", "advice" y "furniture" NUNCA llevan -s.',
+        faq: [
+      { q: "¿Cómo se forma el plural en inglés?", a: "Regla general: se añade -s (book → books). Tras -s, -sh, -ch, -x se añade -es (box → boxes), y consonante + y cambia a -ies (city → cities)." },
+      { q: "¿Cuáles son los plurales irregulares más comunes?", a: "man → men, woman → women, child → children, person → people, foot → feet, tooth → teeth, mouse → mice, fish → fish." },
+      { q: "¿Cómo se pluralizan las palabras terminadas en \"y\"?", a: "Si hay consonante antes de la y, cambia a -ies (baby → babies). Si hay vocal antes, solo se añade -s (boy → boys, day → days)." },
+      { q: "¿Qué palabras no tienen plural en inglés?", a: "Los incontables: water, money, information, advice, furniture. No se pluralizan ni llevan \"a/an\"." },
+      { q: "¿Cómo se pluraliza \"child\"?", a: "\"child\" es irregular: su plural es \"children\", no \"childs\"." },
+    ],
     questions: [
       { s: 'One book — two ___.', opts: ['books', 'bookes', 'bookies'], a: 0, fb: '"Books" — regla general: solo +s.' },
       { s: 'One box — two ___.', opts: ['boxs', 'boxes', 'boxies'], a: 1, fb: '"Boxes" — termina en x → +es.' },
@@ -735,6 +777,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'Have a book on the table.', right: 'There is a book on the table.', note: 'Existencia → there is, no "have".' },
     ],
     tip: 'Para decir "hay" NO uses "have": es there is/are. Mira lo que viene después: singular/incontable → there is; plural → there are. Y recuerda some (afirmativa) vs any (negativa/pregunta).',
+        faq: [
+      { q: "¿Cuál es la diferencia entre \"there is\" y \"there are\"?", a: "\"there is\" para singular o incontable (there is a book, there is water) y \"there are\" para plural (there are three books). Ambos significan \"hay\"." },
+      { q: "¿Cómo se dice \"hay\" en inglés?", a: "Con \"there is/there are\" en presente: \"there is a problem\" (hay un problema), \"there are many people\" (hay mucha gente)." },
+      { q: "¿Cómo se niega \"there is/are\"?", a: "Con \"there isn't / there aren't\": \"There isn't any milk\", \"There aren't any chairs\". También \"there is no + sustantivo\"." },
+      { q: "¿Cómo se pregunta con there is/are?", a: "Invirtiendo el orden: \"Is there a bank near here?\", \"Are there any questions?\". Respuestas cortas: \"Yes, there is / No, there isn't\"." },
+      { q: "¿\"There is\" o \"there are\" con una lista?", a: "Normalmente concuerda con el primer elemento: \"There is a table and two chairs\" (el primero es singular)." },
+    ],
     questions: [
       { s: '___ a cat on the sofa.', opts: ['There is', 'There are', 'It is'], a: 0, fb: 'Singular (a cat) → "there is".' },
       { s: '___ four people in my family.', opts: ['There is', 'There are', 'It has'], a: 1, fb: 'Plural (four people) → "there are".' },
@@ -835,6 +884,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I have got breakfast every day.', right: 'I have breakfast every day.', note: 'Acción cotidiana → "have", no "have got".' },
     ],
     tip: '"have got" y "have" significan lo mismo (tener). Con he/she/it usa "has". Y elige una construcción: "have got" va SIN do; "have" va CON do. Nunca "Do you have got?".',
+        faq: [
+      { q: "¿Qué significa \"have got\" en inglés?", a: "Significa \"tener\" (posesión), igual que \"have\". \"I have got a car\" = \"I have a car\" = tengo un carro. \"have got\" es más común en inglés británico." },
+      { q: "¿Cuál es la diferencia entre \"have\" y \"have got\"?", a: "Significan lo mismo para posesión. \"have got\" se contrae (I've got) y forma negativo/pregunta sin \"do\" (Have you got…?); \"have\" usa do/does (Do you have…?)." },
+      { q: "¿Cómo se conjuga \"have got\"?", a: "I/you/we/they have got ('ve got); he/she/it has got ('s got). \"She has got two sisters\"." },
+      { q: "¿Cómo se niega y se pregunta con \"have got\"?", a: "Negativo: haven't got / hasn't got. Pregunta: \"Have you got…?\", \"Has she got…?\". No usa el auxiliar \"do\"." },
+      { q: "¿Se usa \"have got\" para pasado?", a: "No. \"have got\" es solo presente. Para el pasado se usa \"had\" (I had a car), no \"had got\"." },
+    ],
     questions: [
       { s: 'I ___ got two sisters.', opts: ['have', 'has', 'am'], a: 0, fb: 'Con I → "have got".' },
       { s: 'She ___ got blue eyes.', opts: ['have', 'has', 'is'], a: 1, fb: 'Con she → "has got".' },
@@ -944,6 +1000,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I am work every day.', right: 'I work every day.', note: 'La rutina va en present simple, sin "am". "am work" no existe.' },
     ],
     tip: 'La -s de he/she/it es la regla más olvidada y la que más te delata. Y memoriza: en cuanto aparece don\'t/doesn\'t, el verbo SIEMPRE vuelve a su forma base (She doesn\'t work, no "works").',
+        faq: [
+      { q: "¿Cuándo se usa el present simple?", a: "Para hábitos y rutinas (I work every day), hechos generales (water boils at 100°C) y verdades permanentes (she lives in Rome)." },
+      { q: "¿Por qué se añade \"-s\" en la tercera persona?", a: "Con he/she/it el verbo lleva -s en afirmativo: \"she works\", \"he plays\". Es la marca de la tercera persona del singular." },
+      { q: "¿Cómo se forma el negativo del present simple?", a: "Con don't (I/you/we/they) o doesn't (he/she/it) + verbo base: \"I don't work\", \"she doesn't work\". Con doesn't el verbo pierde la -s." },
+      { q: "¿Cuándo se usa \"do\" y cuándo \"does\"?", a: "\"do\" con I, you, we, they y \"does\" con he, she, it. En negativo: don't / doesn't." },
+      { q: "¿Se dice \"she work\" o \"she works\"?", a: "En afirmativo, \"she works\" (con -s). Pero en negativo la -s pasa al auxiliar: \"she doesn't work\"." },
+    ],
     questions: [
       { s: 'She ___ to work every day.', opts: ['walk', 'walks', 'walking'], a: 1, fb: '"She walks" — con she/he/it añadimos -s.' },
       { s: 'They ___ in a big house.', opts: ['live', 'lives', 'is living'], a: 0, fb: '"They live" — con they usamos el verbo base sin -s.' },
@@ -1043,6 +1106,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'Who does live here?', right: 'Who lives here?', note: 'Cuando "who" es el sujeto, no se usa do.' },
     ],
     tip: 'En la pregunta, la -s de tercera persona se la lleva el "does": "Does she work?" (work sin s). Y toda pregunta necesita do/does, salvo cuando who/what es el propio sujeto.',
+        faq: [
+      { q: "¿Cómo se hacen preguntas en present simple?", a: "Con el auxiliar Do/Does al inicio + sujeto + verbo base: \"Do you like coffee?\", \"Does she work here?\"." },
+      { q: "¿Cuándo se usa \"Do\" y cuándo \"Does\" en preguntas?", a: "\"Do\" con I, you, we, they (\"Do they play?\") y \"Does\" con he, she, it (\"Does he play?\"). Con Does el verbo va en base, sin -s." },
+      { q: "¿Cómo se responde una pregunta con Do/Does?", a: "Con respuesta corta que repite el auxiliar: \"Do you like it?\" → \"Yes, I do / No, I don't\". \"Does she?\" → \"Yes, she does / No, she doesn't\"." },
+      { q: "¿Cómo se hacen preguntas con palabras interrogativas (wh-)?", a: "La wh-word va delante del auxiliar: \"Where do you live?\", \"What does she do?\", \"When do they arrive?\"." },
+      { q: "¿Por qué \"Does she works?\" está mal?", a: "Porque tras \"does\" el verbo vuelve a la forma base: lo correcto es \"Does she work?\". La -s ya la lleva \"does\"." },
+    ],
     questions: [
       { s: '___ you like pizza?', opts: ['Do', 'Does', 'Are'], a: 0, fb: 'Con you → "Do".' },
       { s: '___ she live in Bogotá?', opts: ['Do', 'Does', 'Is'], a: 1, fb: 'Con she → "Does".' },
@@ -1146,6 +1216,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I read twice a week books.', right: 'I read books twice a week.', note: '"twice a week" va al final de la frase.' },
     ],
     tip: 'Posición: ANTES del verbo normal (I never eat) pero DESPUÉS de "to be" (I am never sad). Y "never" ya es negativo: no lo juntes con "don\'t".',
+        faq: [
+      { q: "¿Cuáles son los adverbios de frecuencia en inglés?", a: "always (siempre), usually (normalmente), often (a menudo), sometimes (a veces), rarely (rara vez), never (nunca)." },
+      { q: "¿Dónde se colocan los adverbios de frecuencia?", a: "Antes del verbo principal (I always work) pero DESPUÉS del verbo \"to be\" (I am always late). \"Sometimes\" también puede ir al inicio." },
+      { q: "¿\"Never\" lleva verbo negativo?", a: "No. \"never\" ya es negativo, así que el verbo va en afirmativo: \"I never smoke\" (no \"I never don't smoke\")." },
+      { q: "¿Cómo se pregunta la frecuencia?", a: "Con \"How often…?\": \"How often do you exercise?\" → \"Twice a week / Every day / Usually\"." },
+      { q: "¿Dónde va \"always\" con el verbo to be?", a: "Después del verbo to be: \"She is always happy\", no \"She always is happy\"." },
+    ],
     questions: [
       { s: 'I ___ drink coffee in the morning. (100%)', opts: ['always', 'never', 'rarely'], a: 0, fb: '100% → "always".' },
       { s: 'She is ___ tired after work.', opts: ['often tired', 'tired often', 'often'], a: 0, fb: 'Con "is", el adverbio va después: "is often".' },
@@ -1245,6 +1322,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I am wanting a coffee.', right: 'I want a coffee.', note: 'Los verbos de estado (want, like, know) no van en continuous.' },
     ],
     tip: 'Fórmula: to be (am/is/are) + verbo-ing. Úsalo para "ahora" (I am writing now); para rutinas, present simple. Y ojo con la ortografía: make→making, run→running.',
+        faq: [
+      { q: "¿Cuándo se usa el present continuous?", a: "Para acciones que ocurren en este momento (I am studying now) o alrededor de este período (she is learning French this year)." },
+      { q: "¿Cómo se forma el present continuous?", a: "Con el verbo to be (am/is/are) + verbo -ing: \"I am working\", \"they are playing\", \"she is reading\"." },
+      { q: "¿Cuál es la diferencia entre present simple y continuous?", a: "Simple = hábitos y hechos (I work every day). Continuous = acción en progreso ahora (I am working right now)." },
+      { q: "¿Cómo se añade \"-ing\" a los verbos?", a: "Regla general +ing (play → playing). Si termina en -e se quita (make → making), y en verbo corto vocal+consonante se dobla (run → running)." },
+      { q: "¿Qué verbos no se usan en continuous?", a: "Los de estado (stative): like, want, know, understand, have (posesión). Se dice \"I want\", no \"I am wanting\"." },
+    ],
     questions: [
       { s: 'I ___ watching TV right now.', opts: ['am', 'is', 'are'], a: 0, fb: 'Con I → "am".' },
       { s: 'She is ___ a letter.', opts: ['write', 'writing', 'writes'], a: 1, fb: 'Verbo principal con -ing → "writing".' },
@@ -1345,6 +1429,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: "She doesn't can drive.", right: "She can't drive.", note: 'El negativo de "can" es "can\'t", no "doesn\'t can".' },
     ],
     tip: '"Can" es invariable: nunca lleva -s y nunca usa "to" ni "do". She can swim (no "cans", no "can to swim", no "does she can?").',
+        faq: [
+      { q: "¿Cómo se usa \"can\" en inglés?", a: "\"can\" expresa capacidad o habilidad (\"I can swim\"), permiso (\"Can I go?\") y posibilidad. Va seguido del verbo en base, sin \"to\"." },
+      { q: "¿Cuál es el negativo de \"can\"?", a: "\"cannot\", que se contrae en \"can't\": \"I can't swim\". Es igual para todos los sujetos." },
+      { q: "¿\"Can\" lleva \"to\" después?", a: "No. Se dice \"I can swim\", nunca \"I can to swim\". Los modales van con el verbo en forma base." },
+      { q: "¿\"Can\" cambia en la tercera persona?", a: "No. Es invariable: \"she can\", no \"she cans\". Ningún modal lleva -s en he/she/it." },
+      { q: "¿Cómo se pide permiso con \"can\"?", a: "Poniendo \"Can\" al inicio: \"Can I open the window?\", \"Can you help me?\". Es informal; \"could\" es más formal." },
+    ],
     questions: [
       { s: 'I ___ swim very well.', opts: ['can', 'cans', 'can to'], a: 0, fb: '"can" + verbo base.' },
       { s: 'She ___ play the guitar. (negativo)', opts: ["can't", "cann't", "doesn't can"], a: 0, fb: 'Negativo → "can\'t".' },
@@ -1448,6 +1539,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'The lamp is in front the sofa.', right: 'The lamp is in front of the sofa.', note: 'Es "in front OF".' },
     ],
     tip: 'in = dentro (in the room), on = sobre una superficie (on the wall), under = debajo. El "en" español se parte en in/on. Y memoriza: on the bus, pero in the car.',
+        faq: [
+      { q: "¿Cuáles son las preposiciones de lugar más usadas?", a: "in (en/dentro), on (sobre/encima), under (debajo), behind (detrás), in front of (delante), next to (al lado), between (entre)." },
+      { q: "¿Cuál es la diferencia entre \"in\", \"on\" y \"at\" de lugar?", a: "\"in\" para espacios cerrados o áreas (in the room, in Spain), \"on\" para superficies (on the table), \"at\" para puntos concretos (at the bus stop, at home)." },
+      { q: "¿Se dice \"in the wall\" o \"on the wall\"?", a: "\"on the wall\": los objetos colgados van con \"on\" (superficie). \"in the wall\" sería dentro de la pared." },
+      { q: "¿Cómo se dice \"al lado de\" en inglés?", a: "\"next to\" o \"beside\": \"The bank is next to the pharmacy\". También \"by\" para \"junto a\"." },
+      { q: "¿\"at home\" o \"in home\"?", a: "Se dice \"at home\" (en casa). \"home\" con la idea de lugar habitual va con \"at\", sin artículo." },
+    ],
     questions: [
       { s: 'The pen is ___ the table.', opts: ['on', 'in', 'under'], a: 0, fb: 'Sobre la superficie → "on".' },
       { s: 'The milk is ___ the fridge.', opts: ['on', 'in', 'next'], a: 1, fb: 'Dentro → "in".' },
@@ -1546,6 +1644,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'My birthday is at July.', right: 'My birthday is in July.', note: 'Con meses → in.' },
     ],
     tip: 'at = horas (at 5), on = días (on Friday), in = lo grande (in June, in 2025). Cuanto más amplio el periodo, más "grande" la preposición. Excepción famosa: "at night".',
+        faq: [
+      { q: "¿Cuándo se usa \"in\", \"on\" y \"at\" con el tiempo?", a: "\"at\" para horas y momentos puntuales (at 5, at night), \"on\" para días y fechas (on Monday, on July 4), \"in\" para meses, años y partes del día (in May, in 2020, in the morning)." },
+      { q: "¿Se dice \"in Monday\" o \"on Monday\"?", a: "\"on Monday\": los días de la semana van siempre con \"on\"." },
+      { q: "¿Qué preposición se usa con las horas?", a: "\"at\": \"at 7 o'clock\", \"at noon\", \"at midnight\". También \"at night\" (excepción de las partes del día)." },
+      { q: "¿Cómo se dice \"por la mañana\" en inglés?", a: "\"in the morning\" (in the afternoon, in the evening). Pero \"at night\" lleva \"at\", no \"in\"." },
+      { q: "¿Qué preposición se usa con meses y años?", a: "\"in\": \"in January\", \"in 2024\", \"in summer\". Los períodos largos van con \"in\"." },
+    ],
     questions: [
       { s: 'The meeting is ___ 3 PM.', opts: ['at', 'on', 'in'], a: 0, fb: 'Hora → "at".' },
       { s: 'I have class ___ Monday.', opts: ['at', 'on', 'in'], a: 1, fb: 'Día → "on".' },

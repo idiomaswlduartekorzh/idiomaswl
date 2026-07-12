@@ -101,6 +101,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I did worked.', right: 'I worked.', note: 'En afirmativo NO se usa "did"; solo verbo + ed.' },
     ],
     tip: 'Verbo regular en pasado = una sola forma para todos los sujetos (worked). Cuida la ortografía (studied, stopped, played) y recuerda que la sílaba extra /ɪd/ solo aparece cuando el verbo ya termina en t o d (wanted, needed).',
+        faq: [
+      { q: "¿Cómo se forma el pasado de los verbos regulares en inglés?", a: "Se añade -ed al verbo base (work → worked). Si termina en -e, solo -d (live → lived); consonante + y → -ied (study → studied); y verbos cortos doblan la consonante (stop → stopped)." },
+      { q: "¿Cómo se pronuncia la terminación \"-ed\"?", a: "De tres formas: /t/ tras sonido sordo (worked, stopped), /d/ tras sonido sonoro o vocal (played, lived) y /ɪd/ (sílaba extra) solo cuando el verbo termina en t o d (wanted, needed)." },
+      { q: "¿El pasado cambia según la persona en inglés?", a: "No. La forma es igual para todos los sujetos: I worked, you worked, he worked, we worked, they worked. No se conjuga persona por persona como en español." },
+      { q: "¿Cuándo se usa \"-ed\" y cuándo \"did\"?", a: "En afirmativo el verbo lleva -ed (I worked). En negativo y pregunta se usa did/didn't + verbo base (Did you work?, I didn't work), sin -ed." },
+      { q: "¿\"studyed\" o \"studied\"?", a: "\"studied\". Cuando el verbo termina en consonante + y, la y cambia a -ied: study → studied, try → tried." },
+    ],
     questions: [
       { s: 'Yesterday I ___ (work) from home.', opts: ['worked', 'work', 'workd', 'working'], a: 0, fb: 'worked: verbo regular + ed.' },
       { s: 'She ___ (live) in Rome for two years.', opts: ['lived', 'livd', 'liveed', 'living'], a: 0, fb: 'live termina en -e → solo +d: lived.' },
@@ -351,6 +358,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'Yes, I worked. (como respuesta corta)', right: 'Yes, I did.', note: 'La respuesta corta usa el auxiliar.' },
     ],
     tip: 'Regla única: con did/didn\'t el verbo vuelve SIEMPRE a la base (I didn\'t go, Did you see?). "did" ya carga el pasado. La única excepción es "to be" (was/were), que se niega y pregunta solo, sin "did".',
+        faq: [
+      { q: "¿Cómo se forma el negativo del pasado en inglés?", a: "Con \"didn't\" (did not) + verbo en base, igual para todos los sujetos: \"I didn't go\", \"she didn't work\". El verbo NO lleva la forma de pasado." },
+      { q: "¿Cómo se hacen preguntas en pasado?", a: "Con \"Did\" al inicio + sujeto + verbo base: \"Did you go?\", \"Did she work?\". Para preguntas wh-: \"What did you do?\", \"Where did they go?\"." },
+      { q: "¿Por qué \"did you went\" está mal?", a: "Porque \"did\" ya marca el pasado, así que el verbo vuelve a su forma base: lo correcto es \"Did you go?\". Nunca se usa la forma de pasado tras \"did\"." },
+      { q: "¿El verbo \"to be\" usa \"did\" en pasado?", a: "No. \"to be\" es la excepción: se niega y pregunta solo (I wasn't, Were you…?), sin \"did\". Se dice \"I wasn't there\", no \"I didn't was there\"." },
+      { q: "¿Cómo se responde una pregunta en pasado?", a: "Con respuesta corta usando el auxiliar: \"Did you work?\" → \"Yes, I did / No, I didn't\"." },
+    ],
     questions: [
       { s: "I ___ go to work yesterday.", opts: ["didn't", "don't", "doesn't", 'not'], a: 0, fb: 'Pasado negativo → didn\'t.' },
       { s: "She didn't ___ to the party.", opts: ['went', 'go', 'goes', 'going'], a: 1, fb: 'Tras didn\'t, base: go.' },
@@ -464,6 +478,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'She were reading.', right: 'She was reading.', note: 'she → was.' },
     ],
     tip: 'Past continuous = was/were + -ing, para la acción que estaba en progreso (el "fondo"). Combínalo con past simple para la interrupción: "I was sleeping (fondo) when you called (interrupción)". Y recuerda: los verbos de estado (know, want, like) no van en -ing.',
+        faq: [
+      { q: "¿Cuándo se usa el past continuous?", a: "Para una acción que estaba en progreso en un momento del pasado (\"At 8 I was having dinner\") y para la acción de fondo que otra interrumpe (\"I was cooking when the phone rang\")." },
+      { q: "¿Cómo se forma el past continuous?", a: "Con el pasado de \"to be\" (was/were) + verbo -ing: \"I was working\", \"they were playing\". was para I/he/she/it y were para you/we/they." },
+      { q: "¿Cuál es la diferencia entre past simple y past continuous?", a: "Past continuous = acción larga en progreso (I was reading). Past simple = acción corta o puntual que la interrumpe (…when she called)." },
+      { q: "¿Cuándo se usa \"while\" y cuándo \"when\"?", a: "\"while\" suele acompañar la acción larga en progreso (while I was studying) y \"when\" la corta y puntual (when the lights went out)." },
+      { q: "¿Qué verbos no van en past continuous?", a: "Los de estado (know, want, like, understand): se dice \"I knew the answer\", no \"I was knowing\"." },
+    ],
     questions: [
       { s: 'At 8 p.m. I ___ (have) dinner.', opts: ['was having', 'were having', 'had', 'am having'], a: 0, fb: 'I → was + having.' },
       { s: 'They ___ (play) football when it rained.', opts: ['was playing', 'were playing', 'played', 'are playing'], a: 1, fb: 'they → were + playing.' },
@@ -570,6 +591,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'as taller as', right: 'as tall as', note: 'Con "as...as" el adjetivo va en su forma base.' },
     ],
     tip: 'Adjetivo corto → +er (taller, bigger, happier). Adjetivo largo → more (more expensive). Nunca los dos juntos (jamás "more taller"). Memoriza los irregulares good→better, bad→worse. Y el "que" comparativo es "than", no "that".',
+        faq: [
+      { q: "¿Cómo se forman los comparativos en inglés?", a: "Adjetivos cortos + -er + than (taller than), y adjetivos largos con more … than (more expensive than). Nunca se combinan (no \"more taller\")." },
+      { q: "¿Cuándo se usa \"-er\" y cuándo \"more\"?", a: "\"-er\" con adjetivos de una sílaba (cheaper, faster) y los de dos terminados en -y (happier). \"more\" con adjetivos largos de tres o más sílabas (more difficult)." },
+      { q: "¿Cuáles son los comparativos irregulares?", a: "good → better, bad → worse, far → farther/further. \"This is better than that\", \"The traffic is worse today\"." },
+      { q: "¿Se dice \"taller that\" o \"taller than\"?", a: "\"taller than\". El \"que\" comparativo en inglés es \"than\", no \"that\"." },
+      { q: "¿Cómo se dice que dos cosas son iguales?", a: "Con \"as + adjetivo + as\": \"She is as tall as her brother\". En negativo, \"not as … as\" significa \"menos que\"." },
+    ],
     questions: [
       { s: 'My brother is ___ (tall) than me.', opts: ['more tall', 'taller', 'tallest', 'more taller'], a: 1, fb: 'tall (corto) → taller.' },
       { s: 'This car is ___ (expensive) than that one.', opts: ['expensiver', 'more expensive', 'more expensiver', 'most expensive'], a: 1, fb: 'largo → more expensive.' },
@@ -676,6 +704,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'the goodest', right: 'the best', note: 'No existe "goodest".' },
     ],
     tip: 'Superlativo = the + (-est) en cortos (the tallest) o the most en largos (the most expensive). Casi siempre lleva "the". Irregulares: the best, the worst. Y la preposición del grupo: "in" para lugares (in the class), "of" para periodos (of my life).',
+        faq: [
+      { q: "¿Cómo se forman los superlativos en inglés?", a: "Con \"the\": adjetivos cortos the + -est (the tallest) y adjetivos largos the most + adjetivo (the most expensive). Casi siempre llevan \"the\"." },
+      { q: "¿Cuáles son los superlativos irregulares?", a: "good → the best, bad → the worst, far → the farthest/furthest. \"the best film of the year\", \"the worst day\"." },
+      { q: "¿Se usa \"in\" o \"of\" con el superlativo?", a: "\"in\" con lugares y grupos (the tallest in the class) y \"of\" con períodos o \"all\" (the happiest day of my life)." },
+      { q: "¿Cuál es la diferencia entre comparativo y superlativo?", a: "El comparativo enfrenta dos cosas (taller than) y el superlativo destaca una sobre todas las demás (the tallest)." },
+      { q: "¿\"the most tallest\" es correcto?", a: "No. No se combinan \"most\" y \"-est\": lo correcto es \"the tallest\"." },
+    ],
     questions: [
       { s: 'He is ___ (tall) in the class.', opts: ['the tallest', 'the most tall', 'taller', 'tallest'], a: 0, fb: 'tall → the tallest.' },
       { s: 'This is ___ (expensive) restaurant in town.', opts: ['the expensivest', 'the most expensive', 'the more expensive', 'most expensive'], a: 1, fb: 'largo → the most expensive.' },
@@ -781,6 +816,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'It will going to rain.', right: "It's going to rain.", note: 'No se mezclan will y going to.' },
     ],
     tip: '"be going to" = am/is/are + going to + verbo base. Úsalo para planes ya decididos (I\'m going to travel) y para predicciones con evidencia presente (Look! It\'s going to rain). No olvides el "to be" y deja el verbo principal en base.',
+        faq: [
+      { q: "¿Cuándo se usa \"going to\" en inglés?", a: "Para planes e intenciones ya decididos (\"I'm going to study medicine\") y para predicciones con evidencia presente (\"Look at those clouds, it's going to rain\")." },
+      { q: "¿Cómo se forma \"be going to\"?", a: "Con el verbo to be (am/is/are) + going to + verbo en base: \"I am going to travel\", \"she is going to study\"." },
+      { q: "¿Cuál es la diferencia entre \"going to\" y \"will\"?", a: "\"going to\" para planes ya decididos y predicciones con evidencia; \"will\" para decisiones del momento, opiniones y promesas." },
+      { q: "¿Se dice \"I going to study\"?", a: "No. Falta el verbo \"to be\": \"I'm going to study\". Siempre lleva am/is/are." },
+      { q: "¿Qué forma del verbo va después de \"going to\"?", a: "La forma base (infinitivo sin \"to\"): \"going to eat\", \"going to be\". Nunca con -ing ni -s." },
+    ],
     questions: [
       { s: "I ___ going to study medicine.", opts: ['am', 'is', 'are', '—'], a: 0, fb: 'I → am going to.' },
       { s: "She ___ going to buy a car.", opts: ['am', 'is', 'are', 'be'], a: 1, fb: 'she → is going to.' },
@@ -888,6 +930,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'She wills help.', right: 'She will help.', note: '"will" nunca lleva -s.' },
     ],
     tip: '"will" + verbo base, igual para todos (won\'t en negativo). Úsalo para decisiones del momento (I\'ll get it), predicciones-opinión (I think it\'ll rain), promesas y ofertas. Regla de oro frente a going to: plan previo → going to; decides ahora → will.',
+        faq: [
+      { q: "¿Cuándo se usa \"will\" para el futuro?", a: "Para decisiones del momento (\"I'll get it\"), predicciones u opiniones (\"I think it will rain\"), promesas (\"I'll help you\") y ofrecimientos." },
+      { q: "¿Cómo se forma el futuro con \"will\"?", a: "will + verbo base, igual para todos los sujetos: \"I will go\", \"she will go\". Se contrae en 'll (I'll) y el negativo es \"won't\"." },
+      { q: "¿Cuál es la diferencia entre \"will\" y \"going to\"?", a: "Si el plan ya estaba decidido, \"going to\"; si decides en el momento de hablar, \"will\". Ej.: el teléfono suena → \"I'll answer it\"." },
+      { q: "¿Cuál es la contracción de \"will not\"?", a: "\"won't\": \"I won't be late\", \"She won't come\"." },
+      { q: "¿\"will\" cambia en la tercera persona?", a: "No. Es invariable y va con el verbo en base: \"she will go\", nunca \"she wills go\" ni \"she will goes\"." },
+    ],
     questions: [
       { s: "It's cold. I ___ close the window.", opts: ["'ll", 'going to', 'will to', 'am'], a: 0, fb: 'Decisión del momento → I\'ll (will).' },
       { s: 'She will ___ you tomorrow.', opts: ['calls', 'call', 'calling', 'to call'], a: 1, fb: 'will + base: call.' },
@@ -1003,6 +1052,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I have ate.', right: 'I have eaten.', note: 'Participio de eat = eaten.' },
     ],
     tip: 'Present perfect = have/has + participio (3ª forma en irregulares: gone, seen, done). Úsalo para experiencias sin fecha y acciones conectadas al presente (for/since). Si dices CUÁNDO exacto (yesterday, in 2010), cambia a past simple.',
+        faq: [
+      { q: "¿Cuándo se usa el present perfect?", a: "Para experiencias sin decir cuándo (\"I have visited Japan\"), acciones recientes con efecto en el presente (\"I've lost my keys\") y situaciones que empezaron antes y siguen (\"I have lived here for years\")." },
+      { q: "¿Cómo se forma el present perfect?", a: "Con have/has + participio pasado. En regulares el participio es igual al pasado (-ed); en irregulares es la tercera forma (go → gone, see → seen)." },
+      { q: "¿Cuál es la diferencia entre present perfect y past simple?", a: "Past simple con un momento pasado concreto (I saw her yesterday). Present perfect sin momento concreto o con conexión al presente (I have seen her)." },
+      { q: "¿Cuándo se usa \"for\" y cuándo \"since\"?", a: "\"for\" para la duración (for five years) y \"since\" para el punto de inicio (since 2019). Ambos con present perfect." },
+      { q: "¿Se dice \"I have visited Japan yesterday\"?", a: "No. Con un marcador de tiempo cerrado como \"yesterday\" se usa past simple: \"I visited Japan yesterday\"." },
+    ],
     questions: [
       { s: 'I ___ visited Japan.', opts: ['have', 'has', 'am', 'did'], a: 0, fb: 'I → have + participio.' },
       { s: 'She ___ just left.', opts: ['have', 'has', 'is', 'did'], a: 1, fb: 'she → has.' },
@@ -1107,6 +1163,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'How many money?', right: 'How much money?', note: 'money incontable → much (tema de quantifiers).' },
     ],
     tip: 'Incontables (water, money, advice, information) van en singular, sin "a/an" ni plural. some en afirmativas (I have some), any en negativas y preguntas (I don\'t have any / Is there any?). Excepción: some para ofrecer o pedir (Would you like some?).',
+        faq: [
+      { q: "¿Cuál es la diferencia entre sustantivos contables e incontables?", a: "Los contables se pueden contar y tienen plural (a book, two books); los incontables no (water, money, advice) y van en singular sin \"a/an\"." },
+      { q: "¿Cuándo se usa \"some\" y cuándo \"any\"?", a: "\"some\" en frases afirmativas (I have some money) y \"any\" en negativas y preguntas (I don't have any / Is there any?)." },
+      { q: "¿Por qué \"an information\" es incorrecto?", a: "Porque \"information\" es incontable: no lleva \"a/an\" ni plural. Se dice \"some information\" o \"a piece of information\"." },
+      { q: "¿Se usa \"some\" en preguntas?", a: "Sí, cuando ofreces o pides algo esperando un sí: \"Would you like some coffee?\", \"Can I have some water?\"." },
+      { q: "¿\"advices\" existe en inglés?", a: "No. \"advice\" es incontable y no tiene plural. \"Muchos consejos\" es \"a lot of advice\"." },
+    ],
     questions: [
       { s: 'I have ___ money. (afirmativa)', opts: ['any', 'some', 'a', 'an'], a: 1, fb: 'Afirmativa → some.' },
       { s: "I don't have ___ money.", opts: ['some', 'any', 'a', 'no any'], a: 1, fb: 'Negativa → any.' },
@@ -1213,6 +1276,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'How many money?', right: 'How much money?', note: 'Incontable → how much.' },
     ],
     tip: 'Contable → many, a few, how many (many books, a few friends). Incontable → much, a little, how much (much water, a little milk). "a lot of" sirve para ambos y es lo más natural en afirmativas. Recuerda: much/many brillan en negativas y preguntas.',
+        faq: [
+      { q: "¿Cuál es la diferencia entre \"much\" y \"many\"?", a: "\"many\" va con contables plurales (many books) y \"much\" con incontables (much money). En afirmativas suele preferirse \"a lot of\"." },
+      { q: "¿Cuándo se usa \"a few\" y cuándo \"a little\"?", a: "\"a few\" con contables (a few friends = unos pocos) y \"a little\" con incontables (a little milk = un poco)." },
+      { q: "¿\"a lot of\" va con contables o incontables?", a: "Con ambos, y es lo más natural en afirmativas: \"a lot of friends\", \"a lot of money\"." },
+      { q: "¿Cuándo se usa \"how much\" y cuándo \"how many\"?", a: "\"how many\" con contables (How many people?) y \"how much\" con incontables (How much time?). \"How much…?\" también pregunta el precio." },
+      { q: "¿Se dice \"much books\" o \"many books\"?", a: "\"many books\": \"books\" es contable. \"much\" solo va con incontables (much water)." },
+    ],
     questions: [
       { s: 'How ___ students are there?', opts: ['much', 'many', 'little', 'few'], a: 1, fb: 'Contable → how many.' },
       { s: "I don't have ___ time.", opts: ['many', 'much', 'a few', 'few'], a: 1, fb: 'time incontable → much.' },
@@ -1317,6 +1387,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'Do you must go?', right: 'Do you have to go?', note: 'must no usa "do"; la pregunta va con have to.' },
     ],
     tip: 'should = consejo (You should rest). must / have to = obligación. Modales (should, must) van con verbo base sin "to" y sin -s. Ojo con el negativo: mustn\'t = PROHIBIDO; don\'t have to = NO es necesario. No son lo mismo.',
+        faq: [
+      { q: "¿Cuál es la diferencia entre \"must\" y \"have to\"?", a: "Ambos expresan obligación. \"must\" suele venir de quien habla o de una norma; \"have to\" de una circunstancia externa. \"have to\" cambia por persona (has to) y usa do/does." },
+      { q: "¿Cuándo se usa \"should\"?", a: "Para dar consejos y recomendaciones: \"You should rest\", \"You shouldn't smoke\". Es más suave que must/have to." },
+      { q: "¿Cuál es la diferencia entre \"mustn't\" y \"don't have to\"?", a: "Son muy distintos: \"mustn't\" = está PROHIBIDO (You mustn't smoke); \"don't have to\" = NO es necesario, pero puedes (You don't have to come)." },
+      { q: "¿Los modales llevan \"to\" y \"-s\"?", a: "No. should y must van con el verbo en base sin \"to\" (You should rest) y no llevan -s (he should, no \"he shoulds\")." },
+      { q: "¿Cómo se pregunta con \"have to\"?", a: "Con do/does: \"Do you have to go?\". \"must\" no usa \"do\"; para preguntar obligación se prefiere \"have to\"." },
+    ],
     questions: [
       { s: 'You ___ see a doctor. (consejo)', opts: ['must', 'should', 'have to', 'shouldn\'t'], a: 1, fb: 'Consejo → should.' },
       { s: 'You ___ wear a seatbelt. (norma)', opts: ['should', 'must', 'don\'t have to', 'shouldn\'t'], a: 1, fb: 'Obligación/norma → must.' },
@@ -1413,6 +1490,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: "We'll stay home, if it rains.", right: 'We will stay home if it rains.', note: 'Sin coma cuando "if" va al final.' },
     ],
     tip: 'First conditional = if + present simple, will + base (If you study, you will pass). Nunca pongas "will" después de "if". Coma solo cuando la frase empieza por "if". "unless" = "si no" y ya es negativo.',
+        faq: [
+      { q: "¿Cómo se forma el primer condicional en inglés?", a: "Con \"if + present simple\" en la condición y \"will + verbo base\" en el resultado: \"If you study, you will pass\"." },
+      { q: "¿Por qué no se usa \"will\" después de \"if\"?", a: "Porque el futuro se marca solo en el resultado. Tras \"if\" va presente: \"If it rains…\", no \"If it will rain…\"." },
+      { q: "¿Cuándo se usa el first conditional?", a: "Para situaciones futuras reales y posibles: lo que pasará si se cumple una condición (\"If I have time, I'll call you\")." },
+      { q: "¿Dónde va la coma en el condicional?", a: "Cuando la frase empieza por \"if\", se separa con coma: \"If it rains, we will stay\". Si empieza por el resultado, no hay coma." },
+      { q: "¿Qué significa \"unless\"?", a: "\"unless\" significa \"a menos que / si no\" y ya incluye el negativo: \"You'll be late unless you hurry\"." },
+    ],
     questions: [
       { s: 'If it ___ (rain), we will stay home.', opts: ['will rain', 'rains', 'rain', 'raining'], a: 1, fb: 'Tras if → present: rains.' },
       { s: 'If you study, you ___ (pass).', opts: ['pass', 'will pass', 'passes', 'passing'], a: 1, fb: 'Resultado → will pass.' },
@@ -1518,6 +1602,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'I decided going.', right: 'I decided to go.', note: 'decide + to.' },
     ],
     tip: 'El primer verbo manda: enjoy/finish/mind + -ing; want/need/decide/would like + to. like/love/hate aceptan las dos. Y regla fija: tras preposición (good at, interested in) siempre -ing.',
+        faq: [
+      { q: "¿Cuándo se usa \"-ing\" y cuándo \"to\" después de un verbo?", a: "Depende del primer verbo. enjoy, finish, mind, avoid piden -ing (I enjoy reading); want, need, decide, would like piden to (I want to go)." },
+      { q: "¿Qué verbos van seguidos de gerundio (-ing)?", a: "enjoy, finish, keep, mind, avoid, suggest y, en general, tras preposiciones (good at cooking, interested in learning)." },
+      { q: "¿Qué verbos van seguidos de \"to\" + infinitivo?", a: "want, need, decide, hope, plan, learn, try, promise y \"would like\": \"I decided to leave\", \"I'd like to help\"." },
+      { q: "¿Se dice \"I enjoy to read\"?", a: "No. \"enjoy\" siempre va con -ing: \"I enjoy reading\"." },
+      { q: "¿Qué verbos aceptan las dos formas?", a: "like, love, hate, prefer, start, begin aceptan -ing o to con el mismo sentido: \"I like cooking\" = \"I like to cook\"." },
+    ],
     questions: [
       { s: 'I enjoy ___ (read).', opts: ['to read', 'reading', 'read', 'reads'], a: 1, fb: 'enjoy + -ing.' },
       { s: 'She wants ___ (travel).', opts: ['travelling', 'to travel', 'travel', 'travels'], a: 1, fb: 'want + to.' },
@@ -1624,6 +1715,13 @@ export const TOPICS: GrammarTopic[] = [
       { wrong: 'She drives careful.', right: 'She drives carefully.', note: 'Describe drive (verbo) → carefully.' },
     ],
     tip: 'Adverbio de modo = adjetivo + ly (slowly, carefully). Irregular clave: good → well. Algunos no cambian: fast, hard, late. Y tras be/look/seem/feel va ADJETIVO, no adverbio (she looks happy, no "happily").',
+        faq: [
+      { q: "¿Cómo se forman los adverbios de modo en inglés?", a: "Normalmente adjetivo + -ly (slow → slowly, careful → carefully). Consonante + y → -ily (happy → happily) y -le → -ly (terrible → terribly)." },
+      { q: "¿Cuál es el adverbio de \"good\"?", a: "\"well\" (irregular). \"She is a good singer\" (adjetivo) → \"She sings well\" (adverbio). Nunca \"goodly\"." },
+      { q: "¿Qué adverbios tienen la misma forma que el adjetivo?", a: "fast, hard y late: \"a fast car / he runs fast\", \"hard work / she works hard\". Ojo: \"hardly\" significa \"apenas\"." },
+      { q: "¿Cuál es la diferencia entre adjetivo y adverbio?", a: "El adjetivo describe un sustantivo (a careful driver) y el adverbio describe un verbo (he drives carefully)." },
+      { q: "¿Se dice \"she looks happy\" o \"she looks happily\"?", a: "\"she looks happy\". Tras verbos como be, look, seem, feel, taste va adjetivo, no adverbio." },
+    ],
     questions: [
       { s: 'She speaks English ___ (fluent).', opts: ['fluent', 'fluently', 'fluentily', 'fluant'], a: 1, fb: 'fluent → fluently.' },
       { s: 'He drives ___ (careful).', opts: ['careful', 'carefuly', 'carefully', 'carefull'], a: 2, fb: 'careful → carefully.' },

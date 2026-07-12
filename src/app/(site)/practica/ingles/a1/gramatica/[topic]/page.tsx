@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { TOPICS, getTopic, getTopicNav, GRAMMAR_COLOR } from '@/data/practica/ingles-a1-gramatica';
 import { grammarTopicMetadata } from '@/lib/practica-metadata';
-import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema';
+import { GrammarLessonSchema, QuizSchema, FAQSchema } from '@/components/practica/EducationSchema';
 import GrammarExplainer from '@/components/practica/GrammarExplainer';
 import GrammarQuest from '@/components/practica/GrammarQuest';
 import XPStreak from '@/components/practica/XPStreak';
+import LessonPdfButton from '@/components/practica/LessonPdfButton';
 
 interface Props {
   params: Promise<{ topic: string }>;
@@ -54,6 +55,7 @@ export default async function Page({ params }: Props) {
         url={url}
         description={`Quest progresiva de ejercicios sobre ${topic.shortTitle.toLowerCase()} en inglés A1, con niveles, revisión y práctica de errores frecuentes.`}
       />
+      {topic.faq && topic.faq.length > 0 && <FAQSchema items={topic.faq} />}
 
       <section className="wl-section">
         <div className="wrap" style={{ maxWidth: 780 }}>
@@ -73,9 +75,12 @@ export default async function Page({ params }: Props) {
             <p className="eyebrow" style={{ margin: 0 }}><span className="ink-line" />Grammar · Inglés A1 · Tema {topic.order} de {TOPICS.length}</p>
             <XPStreak showMotivation />
           </div>
-          <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 1.5rem', fontWeight: 700, lineHeight: 1.15 }}>
-            {topic.icon} {topic.title}
-          </h1>
+          <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', margin: '0 0 1.5rem' }}>
+            <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700, lineHeight: 1.15, flex: '1 1 auto' }}>
+              {topic.icon} {topic.title}
+            </h1>
+            <LessonPdfButton topic={topic} levelLabel="Inglés A1" skillLabel="Gramática" url={url} color={color} />
+          </div>
 
           {/* Explicación (server-rendered, SEO) */}
           <GrammarExplainer topic={topic} color={color} />
