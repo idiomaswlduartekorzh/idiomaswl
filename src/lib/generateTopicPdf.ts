@@ -10,14 +10,36 @@ import type { GrammarTopic } from '@/data/practica/grammar-types'
 // Paleta de marca WeLearn
 const NAVY: [number, number, number] = [20, 33, 92]    // #14215c
 const RED: [number, number, number] = [200, 32, 46]    // #c8202e
+const GREEN: [number, number, number] = [16, 150, 105]
 const INK: [number, number, number] = [34, 40, 60]
 const GRAY: [number, number, number] = [110, 118, 140]
 const SOFT: [number, number, number] = [232, 236, 244]
+
+// welearn-logo-mark.png es un recorte pre-generado (scripts: sharp) del banner
+// original, replicando el mismo crop que usa el header web (SiteNav: object-fit
+// cover, object-position "center 42%") para mostrar solo el wordmark "WeLearn",
+// sin las decoraciones diagonales de esquina. Aspect ratio real: ver LOGO_RATIO.
+const LOGO_RATIO = 1099 / 441 // ancho/alto del PNG recortado
 
 interface PdfMeta {
   levelLabel: string   // ej. "Inglés A2"
   skillLabel: string   // ej. "Gramática"
   url: string
+}
+
+// Los fuentes estándar de jsPDF (Helvetica) solo soportan WinAnsi/Latin-1.
+// El contenido pedagógico usa "→" y otros símbolos fuera de ese rango, que sin
+// sanear se corrompen en el PDF (mojibake tipo "!'"). Se reemplazan por
+// equivalentes ASCII/Latin-1 seguros, y cualquier otro carácter no soportado
+// (emoji, símbolos exóticos) se elimina en vez de corromperse silenciosamente.
+function S(text: string): string {
+  if (!text) return text
+  return text
+    .replace(/→/g, ' -> ')
+    .replace(/–/g, '-')
+    .replace(/[^\x00-\xFF]/g, '')
+    .replace(/ {2,}/g, ' ')
+    .trim()
 }
 
 async function loadDataUrl(url: string): Promise<string | null> {
@@ -46,7 +68,7 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
   const contentW = pageW - M * 2
   let y = M
 
-  const logo = await loadDataUrl('/images/welearn-logo.png')
+  const logo = await loadDataUrl('/images/welearn-logo-mark.png')
 
   // ---- helpers ----
   function ensure(space: number) {
@@ -59,7 +81,7 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
     const size = opts.size ?? 10.5
     const lh = opts.lh ?? 5
     doc.setFont('helvetica', 'normal').setFontSize(size).setTextColor(...(opts.color ?? INK))
-    const lines = doc.splitTextToSize(text, contentW) as string[]
+    const lines = doc.splitTextToSize(S(text), contentW) as string[]
     for (const line of lines) {
       ensure(lh)
       doc.text(line, M, y)
@@ -71,23 +93,26 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
     y += opts.gapTop ?? 3
     ensure(8)
     doc.setFont('helvetica', 'bold').setFontSize(opts.size ?? 12).setTextColor(...(opts.color ?? NAVY))
-    const lines = doc.splitTextToSize(text, contentW) as string[]
+    const lines = doc.splitTextToSize(S(text), contentW) as string[]
     for (const line of lines) { ensure(6); doc.text(line, M, y); y += 5.6 }
     y += 1.5
   }
 
   // ---- membrete (encabezado de marca) ----
+  const logoH = 9
+  const logoW = logoH * LOGO_RATIO
   const headerBottom = M + 16
   if (logo) {
-    try { doc.addImage(logo, 'PNG', M, y - 2, 15, 15) } catch { /* noop */ }
+    try { doc.addImage(logo, 'PNG', M, y, logoW, logoH) } catch { /* noop */ }
   }
-  doc.setFont('helvetica', 'bold').setFontSize(15).setTextColor(...NAVY)
-  doc.text('Idiomas WeLearn', M + 19, y + 4)
-  doc.setFont('helvetica', 'normal').setFontSize(9).setTextColor(...GRAY)
-  doc.text('Aprender un idioma, en serio.', M + 19, y + 9.5)
+  const textX = M + logoW + 5
+  doc.setFont('helvetica', 'bold').setFontSize(13).setTextColor(...NAVY)
+  doc.text('Idiomas WeLearn', textX, y + 4)
+  doc.setFont('helvetica', 'normal').setFontSize(8.5).setTextColor(...GRAY)
+  doc.text('Aprender un idioma, en serio.', textX, y + 9)
   // meta a la derecha
   doc.setFont('helvetica', 'bold').setFontSize(9).setTextColor(...RED)
-  doc.text(`${meta.levelLabel} · ${meta.skillLabel}`.toUpperCase(), pageW - M, y + 4, { align: 'right' })
+  doc.text(S(`${meta.levelLabel} · ${meta.skillLabel}`).toUpperCase(), pageW - M, y + 4, { align: 'right' })
   // regla azul con acento rojo
   y = headerBottom
   doc.setDrawColor(...NAVY).setLineWidth(0.6).line(M, y, pageW - M, y)
@@ -96,7 +121,7 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
 
   // ---- título del tema ----
   doc.setFont('helvetica', 'bold').setFontSize(19).setTextColor(...NAVY)
-  const titleLines = doc.splitTextToSize(topic.title, contentW) as string[]
+  const titleLines = doc.splitTextToSize(S(topic.title), contentW) as string[]
   for (const line of titleLines) { ensure(9); doc.text(line, M, y); y += 8 }
   if (topic.shortTitle && topic.seoDescription) {
     y += 1
@@ -119,8 +144,8 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
     heading(t.caption || 'Tabla de referencia', { size: 11, gapTop: 4 })
     autoTable(doc, {
       startY: y,
-      head: [t.headers],
-      body: t.rows,
+      head: [t.headers.map(S)],
+      body: t.rows.map((row) => row.map(S)),
       margin: { left: M, right: M },
       styles: { fontSize: 9, cellPadding: 2, textColor: INK, lineColor: SOFT, lineWidth: 0.1 },
       headStyles: { fillColor: NAVY, textColor: [255, 255, 255], fontStyle: 'bold' },
@@ -136,10 +161,10 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
     topic.examples.forEach((ex) => {
       ensure(6)
       doc.setFont('helvetica', 'bold').setFontSize(10).setTextColor(...NAVY)
-      const enLines = doc.splitTextToSize(ex.en, contentW) as string[]
+      const enLines = doc.splitTextToSize(S(ex.en), contentW) as string[]
       enLines.forEach((l) => { ensure(5); doc.text(l, M, y); y += 5 })
       doc.setFont('helvetica', 'italic').setFontSize(9.5).setTextColor(...GRAY)
-      const esLines = doc.splitTextToSize(`— ${ex.es}${ex.note ? `  (${ex.note})` : ''}`, contentW) as string[]
+      const esLines = doc.splitTextToSize(S(`- ${ex.es}${ex.note ? `  (${ex.note})` : ''}`), contentW) as string[]
       esLines.forEach((l) => { ensure(4.6); doc.text(l, M, y); y += 4.6 })
       y += 2
     })
@@ -151,10 +176,11 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
     topic.contrast.forEach((c) => {
       ensure(6)
       doc.setFont('helvetica', 'normal').setFontSize(9.5).setTextColor(...GRAY)
-      doc.text(`${c.es}  →  `, M, y)
-      const w = doc.getTextWidth(`${c.es}  →  `)
+      const esText = `${S(c.es)} -> `
+      doc.text(esText, M, y)
+      const w = doc.getTextWidth(esText)
       doc.setFont('helvetica', 'bold').setTextColor(...NAVY)
-      doc.text(c.en, M + w, y)
+      doc.text(S(c.en), M + w, y)
       y += 4.8
       paragraph(c.note, { size: 9, color: GRAY, gap: 1.5 })
     })
@@ -166,9 +192,11 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
     topic.commonMistakes.forEach((m) => {
       ensure(6)
       doc.setFont('helvetica', 'bold').setFontSize(9.5).setTextColor(...RED)
-      doc.text(`✗ ${m.wrong}`, M, y); y += 4.6
-      doc.setTextColor(16, 150, 105)
-      doc.text(`✓ ${m.right}`, M, y); y += 4.6
+      const wrongLines = doc.splitTextToSize(S(`Incorrecto: ${m.wrong}`), contentW) as string[]
+      wrongLines.forEach((l) => { ensure(4.6); doc.text(l, M, y); y += 4.6 })
+      doc.setTextColor(...GREEN)
+      const rightLines = doc.splitTextToSize(S(`Correcto: ${m.right}`), contentW) as string[]
+      rightLines.forEach((l) => { ensure(4.6); doc.text(l, M, y); y += 4.6 })
       paragraph(m.note, { size: 9, color: GRAY, gap: 1.5 })
     })
   }
@@ -177,15 +205,18 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
   if (topic.tip) {
     ensure(14)
     y += 2
-    doc.setFillColor(...SOFT).roundedRect(M, y, contentW, 0.1, 2, 2, 'F') // marcador
-    const tipLines = doc.splitTextToSize(`Truco: ${topic.tip}`, contentW - 8) as string[]
+    // El tamaño/estilo de fuente debe fijarse ANTES de splitTextToSize: jsPDF
+    // mide el ancho de línea con la fuente ACTUAL del doc en ese momento. Medir
+    // con una fuente y luego renderizar con otra (más grande) causa que el
+    // texto se salga de la caja — ese era el bug del recuadro desbordado.
+    doc.setFont('helvetica', 'bold').setFontSize(9.5)
+    const tipLines = doc.splitTextToSize(S(`Truco: ${topic.tip}`), contentW - 8) as string[]
     const boxH = tipLines.length * 4.8 + 6
     ensure(boxH)
     doc.setFillColor(245, 243, 252).roundedRect(M, y, contentW, boxH, 2, 2, 'F')
-    doc.setFont('helvetica', 'bold').setFontSize(9.5).setTextColor(124, 58, 237)
     let ty = y + 6
     tipLines.forEach((l, i) => {
-      doc.setFont('helvetica', i === 0 ? 'bold' : 'normal').setTextColor(...(i === 0 ? [124, 58, 237] as [number, number, number] : INK))
+      doc.setFont('helvetica', i === 0 ? 'bold' : 'normal').setFontSize(9.5).setTextColor(...(i === 0 ? [124, 58, 237] as [number, number, number] : INK))
       doc.text(l, M + 4, ty); ty += 4.8
     })
     y += boxH + 4
@@ -197,7 +228,7 @@ export async function generateTopicPdf(topic: GrammarTopic, meta: PdfMeta) {
     topic.faq.forEach((f) => {
       ensure(8)
       doc.setFont('helvetica', 'bold').setFontSize(10).setTextColor(...NAVY)
-      const qLines = doc.splitTextToSize(f.q, contentW) as string[]
+      const qLines = doc.splitTextToSize(S(f.q), contentW) as string[]
       qLines.forEach((l) => { ensure(5); doc.text(l, M, y); y += 5 })
       paragraph(f.a, { size: 9.5, color: INK, gap: 3 })
     })
