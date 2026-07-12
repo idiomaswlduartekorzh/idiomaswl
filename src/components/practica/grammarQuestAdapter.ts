@@ -248,6 +248,33 @@ function chunk<T>(items: T[], sizes: number[]): T[][] {
   return result
 }
 
+// Baraja las opciones de forma DETERMINISTA (sembrada por el texto de la pregunta).
+// Esto elimina el sesgo de posición de la respuesta correcta (que en los datos
+// tiende a caer en la 1ª o 2ª opción) sin depender de la posición para validar
+// —la respuesta se compara por valor—. Al ser determinista, el orden es idéntico
+// en servidor y cliente (no rompe la hidratación) y estable entre renders.
+function seededShuffle<T>(items: T[], seed: string): T[] {
+  let h = 2166136261
+  for (let i = 0; i < seed.length; i++) {
+    h ^= seed.charCodeAt(i)
+    h = Math.imul(h, 16777619)
+  }
+  // mulberry32 a partir del hash del seed
+  const rng = () => {
+    h |= 0
+    h = (h + 0x6d2b79f5) | 0
+    let t = Math.imul(h ^ (h >>> 15), 1 | h)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+  const out = [...items]
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1))
+    ;[out[i], out[j]] = [out[j], out[i]]
+  }
+  return out
+}
+
 function isZeroAnswer(answer: string) {
   return /nada|sin artículo|sin articulo|—|zero|no article/i.test(answer.trim())
 }
@@ -272,7 +299,7 @@ function toChoiceItem(q: GQItem, id: string, source: string): GrammarQuestItem {
     id,
     mode: 'choice',
     prompt: q.s,
-    options: q.opts,
+    options: seededShuffle(q.opts, q.s),
     answer,
     accepted: acceptedFor(answer),
     explanation: q.fb,
