@@ -19,8 +19,8 @@ const HABILIDADES = [
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
-    desc: 'Pasado simple, comparativos, present continuous, going to/will y modales. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ingles/a2/gramatica', available: true,
+    desc: 'Past simple, past continuous, comparativos y superlativos, futuro (will/going to), present perfect, cuantificadores, modales y condicional. Explicación profunda por tema.',
+    count: '15 temas · 240+ ejercicios', href: '/practica/ingles/a2/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Writing',
