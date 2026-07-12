@@ -6,7 +6,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 export const metadata: Metadata = {
   title: 'Alemán B1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Alemán B1: Konjunktiv II, Relativsätze, Passiv, temporale Konjunktionen e Indirekte Rede. 6 habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/aleman/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/b1' },
 };
 
 const COLOR = '#dd0000';

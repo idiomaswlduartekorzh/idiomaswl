@@ -4,7 +4,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Ruso — Elige tu nivel MCER | Idiomas WeLearn',
-  description: 'Ejercicios interactivos de ruso por nivel MCER. A1 disponible: alfabeto cirílico, casos, pronunciación y vocabulario esencial.',
+  description: 'Ejercicios interactivos de ruso por nivel MCER: A1, A2 y B1 disponibles. Alfabeto cirílico, casos, aspecto verbal y vocabulario esencial.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso' },
 };
 
@@ -23,7 +23,12 @@ const NIVELES = [
     href: '/practica/ruso/a2', available: true,
     count: '6 habilidades · 50+ ejercicios',
   },
-  { nivel: 'B1', name: 'Intermedio', desc: 'Aspecto verbal (perfectivo/imperfectivo), caso dativo e instrumental.', available: false },
+  {
+    nivel: 'B1', name: 'Intermedio',
+    desc: 'Aspecto verbal (perfectivo/imperfectivo), caso dativo e instrumental, discurso indirecto y participios.',
+    href: '/practica/ruso/b1', available: true,
+    count: '20 temas · 120+ ejercicios',
+  },
   { nivel: 'B2', name: 'Intermedio alto', desc: 'Participios, gerundios, subjuntivo y escritura académica.', available: false },
   { nivel: 'C1', name: 'Avanzado', desc: 'Registro formal, collocaciones idiomáticas y nivel TORFL-3.', available: false },
 ];
@@ -33,9 +38,9 @@ export default function RusoPage() {
     <>
     <CourseSchema
       name="Práctica de Ruso — Ejercicios interactivos MCER"
-      description="Ejercicios de ruso por nivel MCER: A1 disponible. Alfabeto cirílico, vocabulario, gramática."
+      description="Ejercicios de ruso por nivel MCER: A1, A2 y B1 disponibles. Alfabeto cirílico, vocabulario, gramática."
       url="https://www.idiomaswl.com/practica/ruso"
-      educationalLevel="A1"
+      educationalLevel="A1,A2,B1"
       teaches="Ruso, alfabeto cirílico"
       inLanguage="ru"
     />

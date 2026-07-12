@@ -6,7 +6,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 export const metadata: Metadata = {
   title: 'Ruso B1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Ruso B1: aspectos verbales (совершенный/несовершенный), caso instrumental, genitivo plural, condicionales con бы y participios. 6 habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ruso/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ruso/b1' },
 };
 
 const COLOR = '#cc0000';
@@ -20,7 +20,7 @@ const HABILIDADES = [
   {
     id: 'gramatica', emoji: '📐', name: 'Грамматика (Grammatika)', eng: 'Gramática',
     desc: 'Виды глагола (aspectos), Творительный падеж, Родительный мн.ч., Условные предложения y Причастия.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/ruso/b1/gramatica', available: true,
+    count: '20 temas · 120+ ejercicios', href: '/practica/ruso/b1/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: 'Письмо (Pismo)', eng: 'Escritura',

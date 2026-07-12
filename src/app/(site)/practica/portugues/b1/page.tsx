@@ -6,14 +6,14 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 export const metadata: Metadata = {
   title: 'Portugués B1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Portugués B1: o subjuntivo, o condicional, a voz passiva, pronomes relativos e discurso indireto. Exercícios interativos para o nível intermediário.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/portugues/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/portugues/b1' },
 };
 
 const COLOR = '#009c3b';
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Leitura', eng: 'Lectura', desc: '5 textos B1 (120-150 palavras): atualidade, cultura, ciência. Subjuntivo y Condicional em contexto.', count: '5 textos · 30 perguntas', href: '/practica/portugues/b1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Gramática', desc: 'Subjuntivo presente, Condicional, Voz passiva, Pronomes relativos y Discurso indireto.', count: '5 temas · 50+ exercícios', href: '/practica/portugues/b1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Gramática', desc: 'Subjuntivo presente, Condicional, Voz passiva, Pronomes relativos y Discurso indireto.', count: '20 temas · 120+ exercícios', href: '/practica/portugues/b1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Escrita', eng: 'Escritura', desc: '5 tarefas B1: emails formais, textos de opinião, descrições comparativas.', count: '5 tarefas guiadas', href: '/practica/portugues/b1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expressão oral', eng: 'Expresión oral', desc: '20 expressões B1 para debates, opiniões e conversas formais.', count: '20 expressões essenciais', href: '/practica/portugues/b1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulário', eng: 'Vocabulario', desc: '8 conjuntos temáticos × 10 palavras. Flashcard, MCQ e escrita.', count: '8 sets · 80+ palavras', href: '/practica/portugues/b1/vocabulario' },

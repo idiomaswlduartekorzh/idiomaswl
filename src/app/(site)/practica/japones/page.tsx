@@ -4,7 +4,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Japonés — Elige tu nivel JLPT | Idiomas WeLearn',
-  description: 'Ejercicios interactivos de japonés por nivel. A1/N5 disponible: Hiragana, Katakana, copula desu y vocabulario esencial.',
+  description: 'Ejercicios interactivos de japonés por nivel: A1/N5, A2/N4 y B1/N3 disponibles. Hiragana, Katakana, gramática N3 y vocabulario esencial.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/japones' },
 };
 
@@ -23,7 +23,12 @@ const NIVELES = [
     href: '/practica/japones/a2', available: true,
     count: '6 habilidades · 50+ ejercicios',
   },
-  { nivel: 'B1', name: 'N3', desc: 'Forma ta/nai, kanji N3 (~350 chars), expresiones condicionales.', available: false },
+  {
+    nivel: 'B1', name: 'N3',
+    desc: 'てしまう, 〜ばかり, 〜べき, 〜ために, 〜のに, 〜かもしれない y otras 15 estructuras clave N3.',
+    href: '/practica/japones/b1', available: true,
+    count: '20 temas · 120+ ejercicios',
+  },
   { nivel: 'B2', name: 'N2', desc: 'Gramática compleja, kanji N2 (~1000 chars), escritura formal.', available: false },
   { nivel: 'C1', name: 'N1', desc: 'Registro keigo, kanji N1 (~2000 chars), nivel JLPT N1.', available: false },
 ];
@@ -33,9 +38,9 @@ export default function JaponesPage() {
     <>
     <CourseSchema
       name="Práctica de Japonés — Ejercicios interactivos JLPT"
-      description="Ejercicios de japonés por nivel JLPT: A1 disponible. Hiragana, Katakana, vocabulario y gramática."
+      description="Ejercicios de japonés por nivel JLPT: A1/N5, A2/N4 y B1/N3 disponibles. Hiragana, Katakana, vocabulario y gramática."
       url="https://www.idiomaswl.com/practica/japones"
-      educationalLevel="A1,N5"
+      educationalLevel="A1,A2,B1,N5,N4,N3"
       teaches="Japonés, JLPT, Hiragana, Katakana"
       inLanguage="ja"
     />

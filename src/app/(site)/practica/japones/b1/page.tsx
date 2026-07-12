@@ -6,7 +6,7 @@ import { PracticaWABanner } from '@/components/PracticaWABanner';
 export const metadata: Metadata = {
   title: 'Japonés B1 — Elige una habilidad | Idiomas WeLearn',
   description: 'Japonés B1: voz pasiva, causativa, condicional 〜たら, 〜のに y permisos/prohibiciones. Lectura, gramática, vocabulario, escritura, habla y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/japones/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/japones/b1' },
 };
 
 const COLOR = '#bc002d';
@@ -20,7 +20,7 @@ const HABILIDADES = [
   {
     id: 'gramatica', emoji: '📐', name: '文法 (Bunpō)', eng: 'Gramática',
     desc: '〜てもいい/〜てはいけない, 受身形, 使役形, 〜たら y 〜のに. 10 ejercicios por tema.',
-    count: '5 temas · 50+ ejercicios', href: '/practica/japones/b1/gramatica', available: true,
+    count: '20 temas · 120+ ejercicios', href: '/practica/japones/b1/gramatica', available: true,
   },
   {
     id: 'escritura', emoji: '✍️', name: '書く (Kaku)', eng: 'Escritura',
