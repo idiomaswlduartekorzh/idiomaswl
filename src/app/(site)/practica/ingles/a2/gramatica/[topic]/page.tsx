@@ -8,6 +8,7 @@ import GrammarExplainer from '@/components/practica/GrammarExplainer';
 import GrammarQuest from '@/components/practica/GrammarQuest';
 import XPStreak from '@/components/practica/XPStreak';
 import LessonPdfButton from '@/components/practica/LessonPdfButton';
+import IrregularVerbsReference from '@/components/practica/IrregularVerbsReference';
 
 interface Props {
   params: Promise<{ topic: string }>;
@@ -86,6 +87,11 @@ export default async function Page({ params }: Props) {
 
           {/* Explicación (server-rendered, SEO) */}
           <GrammarExplainer topic={topic} color={color} />
+
+          {/* Recurso de referencia embebido (solo en el tema al que pertenece) */}
+          {topic.slug === 'past-simple-verbos-irregulares' && (
+            <IrregularVerbsReference color={color} />
+          )}
 
           {/* Ejercicios */}
           <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--ink)', margin: '0 0 1rem', letterSpacing: '-0.02em' }}>
