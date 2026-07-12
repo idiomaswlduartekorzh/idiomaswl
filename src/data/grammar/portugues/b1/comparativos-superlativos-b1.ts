@@ -64,7 +64,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Superlativos relativos: el más...', de...',
+      heading: 'Superlativos relativos: el más... de...',
       paragraphs: [
         'Estructura: o + mais/menos + adjetivo + de. Ejemplo: "Maria é a mais alta da turma" (Maria es la más alta de la clase). "Este é o livro menos interessante da biblioteca" (Este es el libro menos interesante de la biblioteca).',
         'El superlativo relativo se usa cuando el elemento es comparado dentro de un grupo o conjunto específico. La preposición "de" introduce el grupo.',
