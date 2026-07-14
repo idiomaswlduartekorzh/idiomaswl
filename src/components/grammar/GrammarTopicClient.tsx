@@ -1,6 +1,6 @@
 'use client'
 
-import { useReducer, Fragment } from 'react'
+import { useReducer, useMemo, Fragment } from 'react'
 import type {
   GrammarTopic,
   Level,
@@ -58,6 +58,21 @@ function reducer(s: State, a: Action): State {
     case 'BACK':
       return { ...initialState, activeLevelIdx: s.activeLevelIdx }
   }
+}
+
+// ── Option shuffling ─────────────────────────────────────────────────────────
+// Grammar topic data always lists the correct answer as the first element of
+// `options` (authoring convention), so rendering it verbatim puts the right
+// choice in position 1 on every question. Fisher-Yates shuffles the display
+// order while `answer`/scoring still reference the original string value.
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
 }
 
 // ── Scoring helpers ──────────────────────────────────────────────────────────
@@ -124,6 +139,10 @@ function TextWithBlanks({
   onChange: (key: string, value: string) => void
 }) {
   const parts = text.split(/\[\[(\d+)\]\]/)
+  const shuffledOptions = useMemo(
+    () => blanks.map((b) => (b.options ? shuffle(b.options) : undefined)),
+    [blanks],
+  )
   return (
     <p className="story-text">
       {parts.map((part, i) => {
@@ -140,7 +159,7 @@ function TextWithBlanks({
               onChange={(e) => onChange(key, e.target.value)}
             >
               <option value="">—</option>
-              {blank.options.map((o) => <option key={o} value={o}>{o}</option>)}
+              {shuffledOptions[bi]!.map((o) => <option key={o} value={o}>{o}</option>)}
             </select>
           )
         }
@@ -177,6 +196,7 @@ function ChoicePractice({
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
   const canProceed = !!(answers[`${idx}`])
+  const shuffledOptions = useMemo(() => shuffle(item.options), [item])
 
   function next() {
     if (isLast) {
@@ -205,7 +225,7 @@ function ChoicePractice({
         ))}
       </div>
       <div className="options">
-        {item.options.map((opt) => (
+        {shuffledOptions.map((opt) => (
           <button
             key={opt}
             className={`option${answers[`${idx}`] === opt ? ' is-selected' : ''}`}
@@ -242,6 +262,10 @@ function DualPractice({
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
   const canProceed = item.blanks.every((_, bi) => !!(answers[`${idx}-${bi}`]))
+  const shuffledOptions = useMemo(
+    () => item.blanks.map((b) => (b.options ? shuffle(b.options) : undefined)),
+    [item],
+  )
 
   function renderLine(line: [string, string]) {
     const [speaker, text] = line
@@ -254,7 +278,6 @@ function DualPractice({
             {parts.map((part, pi) => {
               if (pi % 2 === 0) return <Fragment key={pi}>{part}</Fragment>
               const bi = parseInt(part)
-              const blank = item.blanks[bi]
               const key = `${idx}-${bi}`
               return (
                 <select
@@ -264,7 +287,7 @@ function DualPractice({
                   onChange={(e) => dispatch({ type: 'SET', key, value: e.target.value })}
                 >
                   <option value="">—</option>
-                  {(blank?.options ?? []).map((o) => <option key={o} value={o}>{o}</option>)}
+                  {(shuffledOptions[bi] ?? []).map((o) => <option key={o} value={o}>{o}</option>)}
                 </select>
               )
             })}
