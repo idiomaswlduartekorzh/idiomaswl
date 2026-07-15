@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
 import HeroLangSelector from './HeroLangSelector';
@@ -165,6 +166,7 @@ const EXAMENES = [
 const TEAM = [
   {
     initials: 'JD',
+    image: undefined,
     name: 'José David Duarte Silva',
     role: 'Co-fundador · Director General',
     tags: ['Políglota · 8 idiomas', 'Lingüística aplicada', 'Metodología pedagógica'],
@@ -173,6 +175,7 @@ const TEAM = [
   },
   {
     initials: 'ZK',
+    image: '/images/team-zhanna-korzh.png',
     name: 'Zhanna Korzh',
     role: 'Directora Académica',
     tags: ['Diseño curricular', 'Preparación de exámenes', 'Evaluación lingüística'],
@@ -387,7 +390,15 @@ export default function HomePage() {
             {TEAM.map((member, i) => (
               <TeamCard key={member.name} className="wlh-team-card" delay={i * 0.12}>
                 <div className="wlh-team-card__avatar" style={{ background: member.accent }}>
-                  {member.initials}
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={`Portrait of ${member.name}`}
+                      width={160}
+                      height={160}
+                      className="wlh-team-card__avatar-image"
+                    />
+                  ) : member.initials}
                 </div>
                 <div className="wlh-team-card__body">
                   <h3 className="wlh-team-card__name">{member.name}</h3>
