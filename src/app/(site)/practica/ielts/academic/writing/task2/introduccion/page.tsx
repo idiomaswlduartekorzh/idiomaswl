@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
+import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 2 — Introducción — Hook + Thesis Band 7 | Idiomas WeLearn',
+  title: 'IELTS Writing Task 2 — Introducción — Hook + Thesis Band 7',
   description: 'Practica escribir introducciones del IELTS Writing Task 2: parafrasear el prompt, posición clara y thesis statement. Técnicas Band 7+ con ejemplos y feedback.',
   keywords: ['IELTS task 2 introducción', 'IELTS thesis statement', 'IELTS writing introducción', 'IELTS task 2 band 7'],
   openGraph: {
-    title: 'IELTS Task 2: Introducción — Hook + Thesis Band 7 | Idiomas WeLearn',
+    title: 'IELTS Task 2: Introducción — Hook + Thesis Band 7',
     description: 'Practica escribir introducciones del IELTS Writing Task 2: parafrasear el prompt, posición clara y thesis statement. Técnicas Band 7+ con ejemplos y feedback.',
     type: 'website', locale: 'es_CO',
   },
@@ -13,4 +14,15 @@ export const metadata: Metadata = {
 }
 
 import IntroduccionTask2Client from './IntroduccionTask2Client';
-export default function Page() { return <IntroduccionTask2Client />; }
+export default function Page() {
+  return (
+    <>
+      <Task2SkillStructuredData
+        name="IELTS Task 2 introducción"
+        path="/practica/ielts/academic/writing/task2/introduccion"
+        teaches={['essay introduction', 'paraphrase', 'thesis statement']}
+      />
+      <IntroduccionTask2Client />
+    </>
+  );
+}

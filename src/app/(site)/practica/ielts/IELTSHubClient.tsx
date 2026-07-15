@@ -2,6 +2,23 @@ import Link from 'next/link';
 
 const COLOR = '#0f3d8c';
 
+const MODALITIES = [
+  {
+    id: 'academic',
+    name: 'IELTS Academic',
+    desc: 'Ruta disponible para Reading académico, Writing Task 1 con datos visuales y Writing Task 2 argumentativo.',
+    href: '/practica/ielts/academic',
+    status: 'Disponible',
+  },
+  {
+    id: 'general-training',
+    name: 'IELTS General Training',
+    desc: 'Nuevo hub para entender diferencias oficiales, Reading funcional y Writing Task 1 carta con práctica inicial explicada.',
+    href: '/practica/ielts/general-training',
+    status: 'Nuevo',
+  },
+];
+
 const SKILLS = [
   {
     id: 'reading',
@@ -9,7 +26,7 @@ const SKILLS = [
     name: 'Reading',
     eng: 'Comprensión lectora',
     desc: 'True/False/Not Given · Matching Headings · Multiple Choice. 60 minutos, 40 preguntas, 3 pasajes académicos.',
-    count: 'T/F/NG disponible · más próximamente',
+    count: '14 tipos · 6 habilidades',
     href: '/practica/ielts/reading',
     available: true,
   },
@@ -77,14 +94,14 @@ export default function IELTSHubClient() {
             <p className="eyebrow" style={{ marginBottom: '0.2rem' }}>
               <span className="ink-line" />IELTS — International English Language Testing System
             </p>
-            <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: 0, fontWeight: 700 }}>
-              Elige una habilidad
+            <h1 style={{ fontSize: '2rem', letterSpacing: 0, margin: 0, fontWeight: 700 }}>
+              Práctica IELTS por modalidad y habilidad
             </h1>
           </div>
         </div>
 
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 1.25rem' }}>
-          El IELTS Academic evalúa las 4 habilidades del inglés en un mismo examen. Reading y Writing ya están disponibles para practicar.
+          IELTS tiene rutas Academic y General Training. Reading y Writing ya tienen contenido indexable, práctica original y ejercicios con respuestas explicadas.
         </p>
 
         {/* Band scale */}
@@ -106,13 +123,28 @@ export default function IELTSHubClient() {
           ))}
         </div>
 
-        {/* Modality note */}
-        <div style={{
-          padding: '0.65rem 1rem', borderRadius: 10,
-          background: `${COLOR}08`, border: `1px solid ${COLOR}22`,
-          fontSize: '0.84rem', color: 'var(--muted)', marginBottom: '2rem', lineHeight: 1.5,
-        }}>
-          💡 Modalidad actual: <strong style={{ color: 'var(--ink)' }}>IELTS Academic</strong> · General Training próximamente
+        {/* Modality pathways */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
+          {MODALITIES.map(modality => (
+            <Link key={modality.id} href={modality.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+              <div style={{
+                padding: '1rem',
+                borderRadius: 8,
+                border: `1px solid ${COLOR}28`,
+                background: '#fff',
+                height: '100%',
+                boxSizing: 'border-box' as const,
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                  <h2 style={{ margin: 0, fontSize: '1rem' }}>{modality.name}</h2>
+                  <span style={{ fontSize: '0.68rem', fontWeight: 800, color: COLOR, fontFamily: 'var(--mono)' }}>
+                    {modality.status}
+                  </span>
+                </div>
+                <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55 }}>{modality.desc}</p>
+              </div>
+            </Link>
+          ))}
         </div>
 
         {/* Skills grid */}
@@ -135,7 +167,7 @@ export default function IELTSHubClient() {
                   <span style={{ fontSize: '1.8rem' }}>{sk.emoji}</span>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--ink)' }}>{sk.name}</div>
-                    <div style={{ fontSize: '0.72rem', color: c, fontFamily: 'var(--mono)', fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: '0.05em' }}>{sk.eng}</div>
+                    <div style={{ fontSize: '0.72rem', color: c, fontFamily: 'var(--mono)', fontWeight: 700, textTransform: 'uppercase' as const, letterSpacing: 0 }}>{sk.eng}</div>
                   </div>
                   {!sk.available && (
                     <span style={{ fontSize: '0.58rem', fontWeight: 800, background: 'var(--line-soft)', color: 'var(--muted)', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)', whiteSpace: 'nowrap' as const }}>

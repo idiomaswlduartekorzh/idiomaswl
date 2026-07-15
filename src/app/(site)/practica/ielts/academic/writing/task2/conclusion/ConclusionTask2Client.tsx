@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 
 const BAND_COMPARE = {
   prompt: 'Social media has had a negative effect on the quality of human communication. To what extent do you agree or disagree?',
@@ -211,6 +212,13 @@ export default function ConclusionTask2Client() {
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
             La conclusión retoma tu tesis con vocabulario nuevo y sintetiza los puntos principales. 40–70 palabras es suficiente. Nunca introduzcas información nueva. El examinador lee esto última — es tu oportunidad de confirmar tu Band.
           </p>
+
+          <Task2OfficialReviewBlock
+            focus="Cerrar el ensayo reafirmando la tesis sin introducir ideas nuevas."
+            officialFormat="IELTS Academic Writing Task 2 requiere una respuesta completa y organizada. La conclusión es parte de esa respuesta, no un criterio oficial aislado."
+            welearnStrategy="Entrenamos conclusiones para confirmar posición, sintetizar razones y evitar cierres vagos o información nueva."
+            answerCheck="Una conclusión fuerte reformula la tesis, resume el razonamiento y mantiene el mismo alcance del prompt."
+          />
 
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1rem', cursor: 'pointer' }} onClick={() => setShowCompare(v => !v)}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

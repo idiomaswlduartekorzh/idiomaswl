@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
+import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 
 interface MapChange {
   id: string;
@@ -60,7 +62,7 @@ export default function MapasPage() {
   return (
     <section className="wl-section">
       <div className="wrap">
-        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
             <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Mapas</span>
@@ -72,6 +74,15 @@ export default function MapasPage() {
             Los mapas comparan un lugar antes y después. Necesitas vocabulario de ubicación y de cambio.
             Selecciona un cambio y escribe una oración para describirlo.
           </p>
+
+          <Task1OfficialReviewBlock
+            focus="Ubicar cambios espaciales y comparar estado inicial vs estado final."
+            officialFormat="IELTS Academic Writing Task 1 puede presentar mapas como información visual. Mapas es una ruta de práctica para ese input, no una tarea oficial independiente."
+            welearnStrategy="Separamos mapas porque requieren lenguaje de ubicación, transformación y comparación temporal."
+            answerCheck="Una respuesta sólida describe cambios visibles, usa preposiciones espaciales y no interpreta beneficios o razones no mostradas."
+          />
+
+          <Task1ChartTypeGuide />
 
           {/* Vocab */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>

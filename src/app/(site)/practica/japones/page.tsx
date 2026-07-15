@@ -18,7 +18,7 @@ const NIVELES = [
     count: '6 habilidades · 40+ ejercicios',
   },
   { nivel: 'A2', name: 'N4', desc: 'て形、～ている、adjectives い/な, verbos de movimiento, JLPT N4.', available: false },
-  { nivel: 'B1', name: 'N3', desc: 'Forma ta/nai, kanji N3 (~350 chars), expresiones condicionales.', available: false },
+  { nivel: 'B1', name: 'N3', desc: 'Forma ta/nai, kanji N3 (~350 chars), expresiones condicionales.', href: '/practica/japones/b1', available: true, count: '5 temas · 50+ ejercicios' },
   { nivel: 'B2', name: 'N2', desc: 'Gramática compleja, kanji N2 (~1000 chars), escritura formal.', available: false },
   { nivel: 'C1', name: 'N1', desc: 'Registro keigo, kanji N1 (~2000 chars), nivel JLPT N1.', available: false },
 ];

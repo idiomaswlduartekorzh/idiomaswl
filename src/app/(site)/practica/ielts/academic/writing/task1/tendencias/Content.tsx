@@ -1,7 +1,18 @@
 'use client';
 
 import { useState } from 'react';
+import type { ComponentType } from 'react';
 import Link from 'next/link';
+import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
+import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
+import {
+  IELTSBarChartVisual,
+  IELTSLineGraphVisual,
+  IELTSMapDiagramVisual,
+  IELTSProcessDiagramVisual,
+  IELTSPieChartVisual,
+  IELTSTableVisual,
+} from '../Task1VisualLab';
 
 interface Observation {
   text: string;
@@ -26,6 +37,54 @@ interface Scenario {
   observations: Observation[];
   targetCount: number;
 }
+
+type VisualType = 'line' | 'bar' | 'pie' | 'table' | 'process' | 'map';
+type VisualLesson = { id: VisualType; label: string; Chart: ComponentType<{ variant?: number }>; examples: { title: string; insight: string; explanation: string }[] };
+
+const VISUAL_LESSONS: VisualLesson[] = [
+  { id: 'line', label: 'Line graph', Chart: IELTSLineGraphVisual, examples: [
+    { title: 'Dirección global', insight: 'La mayoría de las líneas sube o baja.', explanation: 'Empieza por mirar si las series comparten una dirección. Ese patrón suele formar la primera oración del overview.' },
+    { title: 'Cambio de liderazgo', insight: 'Una línea adelanta a otra.', explanation: 'Compara el inicio y el final. Un cruce que cambia el ranking es más relevante que una cifra intermedia.' },
+    { title: 'Convergencia', insight: 'La distancia entre dos series se reduce.', explanation: 'No basta decir que ambas suben: observa si terminan más cerca o más lejos entre sí.' },
+    { title: 'Anomalía', insight: 'Hay un pico, caída o recuperación inesperada.', explanation: 'Una ruptura del patrón puede ser el rasgo más importante, siempre que sea visible y no una causa inventada.' },
+    { title: 'Estabilidad relativa', insight: 'Una serie cambia poco mientras otras se mueven.', explanation: 'Una línea estable puede funcionar como contraste frente a un crecimiento o caída acelerados.' },
+  ] },
+  { id: 'bar', label: 'Bar chart', Chart: IELTSBarChartVisual, examples: [
+    { title: 'Extremo superior', insight: 'Una categoría domina claramente.', explanation: 'En barras estáticas, la barra más alta puede organizar el overview si la diferencia es significativa.' },
+    { title: 'Extremo inferior', insight: 'Una categoría queda muy por debajo.', explanation: 'El contraste entre la mayor y la menor categoría suele ser más útil que enumerar todas.' },
+    { title: 'Jerarquía', insight: 'Las categorías forman un orden claro.', explanation: 'Resume la estructura: liderazgo, grupo intermedio y cola, sin convertirlo en una lista de cifras.' },
+    { title: 'Agrupación', insight: 'Varias barras tienen niveles parecidos.', explanation: 'Agrupar categorías similares ayuda al lector a ver el patrón sin describir cada barra por separado.' },
+    { title: 'Orden por categoría', insight: 'Las barras se organizan de mayor a menor.', explanation: 'Cuando el gráfico muestra un solo año, describe jerarquía y extremos; no inventes una tendencia temporal.' },
+  ] },
+  { id: 'pie', label: 'Pie chart', Chart: IELTSPieChartVisual, examples: [
+    { title: 'Sector mayor', insight: 'Una fuente o categoría ocupa la porción principal.', explanation: 'El sector dominante suele ser el primer rasgo que el lector necesita conocer.' },
+    { title: 'Sector menor', insight: 'Una porción representa una parte mínima.', explanation: 'Menciona el extremo inferior solo si contrasta claramente con los sectores principales.' },
+    { title: 'Mayoría combinada', insight: 'Dos sectores concentran la mayor parte.', explanation: 'Agrupa sectores cuando juntos explican la historia mejor que sus cifras individuales.' },
+    { title: 'Distribución equilibrada', insight: 'Las porciones son relativamente similares.', explanation: 'Si no hay un líder claro, el overview puede señalar que la distribución es bastante uniforme.' },
+    { title: 'Cambio de composición', insight: 'Dos pasteles muestran que el reparto cambia.', explanation: 'Compara la composición inicial y final: qué gana participación y qué pierde, sin confundirlo con una causa.' },
+  ] },
+  { id: 'table', label: 'Table', Chart: IELTSTableVisual, examples: [
+    { title: 'Patrón por filas', insight: 'Una variable aumenta o disminuye de forma consistente.', explanation: 'Busca una regularidad que atraviese varias filas, como una caída con la edad.' },
+    { title: 'Patrón por columnas', insight: 'Un país, grupo o año domina varias columnas.', explanation: 'Una categoría que lidera repetidamente puede ser una tendencia transversal.' },
+    { title: 'Extremos', insight: 'Hay valores máximos y mínimos claros.', explanation: 'Usa los extremos para orientar el overview y reserva los números para los detalles.' },
+    { title: 'Cambio compartido', insight: 'La mayoría de las celdas se mueve en la misma dirección.', explanation: 'El patrón común es más importante que una excepción aislada.' },
+    { title: 'Excepción', insight: 'Una categoría rompe el patrón general.', explanation: 'Una excepción merece atención cuando cambia la interpretación de toda la tabla.' },
+  ] },
+  { id: 'process', label: 'Process diagram', Chart: IELTSProcessDiagramVisual, examples: [
+    { title: 'Secuencia', insight: 'El proceso sigue etapas en un orden.', explanation: 'Resume el flujo general antes de describir los pasos individuales.' },
+    { title: 'Inicio y final', insight: 'El material termina transformado en otro producto.', explanation: 'Nombrar origen y resultado da al lector la estructura completa del proceso.' },
+    { title: 'Fases agrupables', insight: 'Varias etapas forman bloques naturales.', explanation: 'Agrupa preparación, tratamiento y resultado para evitar una lista mecánica.' },
+    { title: 'Proceso cíclico', insight: 'El final conecta con el inicio.', explanation: 'Si hay ciclo, el overview debe decirlo explícitamente porque cambia la organización de la respuesta.' },
+    { title: 'Sin tendencia numérica', insight: 'El visual muestra acciones, no cantidades.', explanation: 'No uses rise, fall o increase si el diagrama solo representa fases.' },
+  ] },
+  { id: 'map', label: 'Map', Chart: IELTSMapDiagramVisual, examples: [
+    { title: 'Urbanización', insight: 'El espacio se vuelve más desarrollado.', explanation: 'Resume el cambio de carácter del lugar, no cada edificio por separado.' },
+    { title: 'Uso del suelo', insight: 'Una función reemplaza a otra.', explanation: 'Fábricas, parques, viviendas y servicios pueden agruparse como cambios de uso.' },
+    { title: 'Infraestructura', insight: 'Aparecen o mejoran caminos y accesos.', explanation: 'La red de circulación puede ser una transformación global relevante.' },
+    { title: 'Pérdidas y adiciones', insight: 'Algunos elementos desaparecen y otros aparecen.', explanation: 'La comparación antes-después debe priorizar cambios, no inventar razones.' },
+    { title: 'Densidad', insight: 'El área final contiene más instalaciones.', explanation: 'Una mayor densidad puede funcionar como overview si se sostiene en todo el mapa.' },
+  ] },
+];
 
 const SCENARIOS: Scenario[] = [
   {
@@ -90,6 +149,71 @@ const SCENARIOS: Scenario[] = [
     ],
     targetCount: 3,
   },
+  {
+    id: 'energy',
+    title: 'Renewable energy generation (terawatt-hours) — 3 sources, 2000–2020',
+    unit: 'TWh',
+    years: [2000, 2005, 2010, 2015, 2020],
+    yMax: 120,
+    series: [
+      { label: 'Solar', color: '#f59e0b', values: [4, 12, 25, 55, 100] },
+      { label: 'Wind', color: '#0f3d8c', values: [18, 28, 40, 62, 88] },
+      { label: 'Hydro', color: '#059669', values: [70, 72, 75, 78, 80] },
+    ],
+    context: 'The line graph below shows renewable energy generation from three sources between 2000 and 2020.',
+    observations: [
+      { text: 'Solar experienced the fastest growth and finished close to the leading source.', relevant: true, explanation: 'Correcto. El ritmo de cambio y la posición final cuentan la historia más importante.' },
+      { text: 'Hydro remained relatively stable compared with the other sources.', relevant: true, explanation: 'Correcto. Una serie estable puede ser una tendencia relevante si contrasta con las demás.' },
+      { text: 'Solar generated exactly 25 TWh in 2010.', relevant: false, explanation: 'Es una cifra aislada. Puede apoyar el cuerpo, pero no es la mejor tendencia para el overview.' },
+      { text: 'Wind grew steadily but remained below hydro throughout the period.', relevant: true, explanation: 'Correcto. Combina dirección y posición relativa sin enumerar datos.' },
+      { text: 'Renewable energy became popular because governments changed their policies.', relevant: false, explanation: 'El gráfico no demuestra una causa. No añadas explicaciones externas.' },
+    ],
+    targetCount: 3,
+  },
+  {
+    id: 'commute',
+    title: 'Daily commuting modes (thousands) — one city, 2005–2025',
+    unit: 'thousands',
+    years: [2005, 2010, 2015, 2020, 2025],
+    yMax: 100,
+    series: [
+      { label: 'Car', color: '#dc2626', values: [80, 82, 78, 60, 48] },
+      { label: 'Bus', color: '#0f3d8c', values: [45, 48, 50, 52, 55] },
+      { label: 'Cycling', color: '#059669', values: [8, 12, 20, 35, 62] },
+    ],
+    context: 'The line graph below shows the number of people using three forms of transport for daily commuting between 2005 and 2025.',
+    observations: [
+      { text: 'Car use declined overall, while cycling increased considerably.', relevant: true, explanation: 'Correcto. Es el contraste de dirección que organiza la historia completa.' },
+      { text: 'Cycling overtook car use in 2025.', relevant: false, explanation: 'No ocurrió: cycling terminó por encima de bus, pero todavía por debajo de car.' },
+      { text: 'Bus use changed relatively little over the period.', relevant: true, explanation: 'Correcto. La estabilidad relativa es útil para contrastar las otras series.' },
+      { text: 'Car use was 82,000 in 2010.', relevant: false, explanation: 'Es un dato puntual, no una tendencia global.' },
+      { text: 'The gap between car and cycling narrowed substantially by the end.', relevant: true, explanation: 'Correcto. La convergencia final muestra un cambio comparativo relevante.' },
+    ],
+    targetCount: 3,
+  },
+];
+
+const TREND_DECISION_RULES = [
+  {
+    label: 'Patrón global',
+    question: '¿La mayoría sube, baja, se mantiene estable o cambia de dirección?',
+    example: 'All three categories increased, although at different speeds.',
+  },
+  {
+    label: 'Cambio de liderazgo',
+    question: '¿Una línea o categoría supera a otra?',
+    example: 'Country A overtook Country B in the second half of the period.',
+  },
+  {
+    label: 'Extremos',
+    question: '¿Quién termina más alto, más bajo o con el cambio más fuerte?',
+    example: 'The most dramatic growth was recorded in Latin America.',
+  },
+  {
+    label: 'Anomalía relevante',
+    question: '¿Hay una caída repentina, pico o recuperación que cambia la historia?',
+    example: 'All countries experienced a sharp fall in 2020 before any recovery.',
+  },
 ];
 
 // ─── SVG mini line chart ──────────────────────────────────────────────────────
@@ -147,6 +271,33 @@ function MiniLineChart({ scenario }: { scenario: Scenario }) {
   );
 }
 
+function VisualTrendLab() {
+  const [type, setType] = useState<VisualType>('line');
+  const [example, setExample] = useState(0);
+  const lesson = VISUAL_LESSONS.find((item) => item.id === type) ?? VISUAL_LESSONS[0];
+  const Chart = lesson.Chart;
+  const current = lesson.examples[example];
+
+  return (
+    <div style={{ marginBottom: '1.5rem' }}>
+      <h2 style={{ margin: '0 0 0.5rem', fontSize: '1.12rem' }}>Antes de practicar: cómo leer una tendencia</h2>
+      <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
+        No empieces seleccionando al azar. Primero identifica qué puede contar como tendencia según el visual: una dirección o cruce en una línea, una jerarquía en barras, una distribución en pasteles, un patrón en tablas, una secuencia en procesos o un cambio espacial en mapas.
+      </p>
+      <div role="tablist" aria-label="Tipos visuales para estudiar tendencias" style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', paddingBottom: '0.45rem' }}>
+        {VISUAL_LESSONS.map((item) => <button key={item.id} type="button" role="tab" aria-selected={type === item.id} onClick={() => { setType(item.id); setExample(0); }} style={{ flex: '0 0 auto', minWidth: 130, padding: '0.7rem 0.75rem', borderRadius: 8, border: type === item.id ? '2px solid #0f3d8c' : '1px solid var(--line-soft)', background: type === item.id ? 'rgba(15,61,140,0.07)' : 'var(--bg)', color: type === item.id ? '#0f3d8c' : 'var(--ink-2)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, cursor: 'pointer' }}>{item.label}</button>)}
+      </div>
+      <div style={{ display: 'flex', gap: '0.5rem', overflowX: 'auto', padding: '0.8rem 0 0.45rem' }}>
+        {lesson.examples.map((item, index) => <button key={item.title} type="button" onClick={() => setExample(index)} aria-pressed={example === index} style={{ flex: '0 0 auto', minWidth: 132, padding: '0.62rem 0.7rem', borderRadius: 8, border: example === index ? '2px solid #059669' : '1px solid var(--line-soft)', background: example === index ? 'rgba(5,150,105,0.07)' : 'var(--bg)', color: example === index ? '#047857' : 'var(--ink-2)', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}>{String(index + 1).padStart(2, '0')} · {item.title}</button>)}
+      </div>
+      <article role="tabpanel" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', alignItems: 'start', marginTop: '0.75rem', padding: '1rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
+        <div style={{ padding: '0.7rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)', overflow: 'hidden' }}><Chart variant={example} /></div>
+        <div><p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{current.title}</p><p style={{ margin: '0 0 0.55rem', color: 'var(--ink)', fontWeight: 800 }}>{current.insight}</p><p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.65 }}>{current.explanation}</p></div>
+      </article>
+    </div>
+  );
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function TendenciasContent() {
@@ -177,7 +328,7 @@ export default function TendenciasContent() {
   return (
     <section className="wl-section">
       <div className="wrap">
-        <div style={{ maxWidth: 740, margin: '0 auto' }}>
+        <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
 
           {/* Breadcrumb */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
@@ -192,19 +343,46 @@ export default function TendenciasContent() {
             En IELTS Task 1 no describes cada dato del gráfico — identificas las <strong style={{ color: 'var(--ink)' }}>2–3 tendencias más importantes</strong>. Practica decidir qué vale la pena mencionar y qué no.
           </p>
 
+          <Task1OfficialReviewBlock
+            focus="Distinguir tendencia global, punto extremo, contraste y cambio relevante."
+            officialFormat="IELTS Academic Writing Task 1 puede presentar líneas, barras, tablas, mapas o procesos. Identificar tendencias es una habilidad de análisis, no una categoría oficial aislada."
+            welearnStrategy="Usamos mini gráficos para practicar qué incluir y qué omitir antes de escribir el párrafo completo."
+            answerCheck="La mejor selección prioriza patrones sostenidos y comparaciones significativas; los números exactos se reservan para el cuerpo."
+          />
+
+          <Task1ChartTypeGuide />
+
+          <VisualTrendLab />
+
           {/* Strategy note */}
           <div style={{ padding: '0.75rem 1rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.18)', marginBottom: '1.5rem', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55 }}>
             💡 <strong style={{ color: 'var(--ink)' }}>Regla Band 7+:</strong> menciona el patrón general, el dato más extremo y la comparación más llamativa. Evita números específicos en el overview y no inventes tendencias que no están en el gráfico.
           </div>
 
-          {/* Scenario progress */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-            <div style={{ flex: 1, height: 5, background: 'var(--line-soft)', borderRadius: 4 }}>
-              <div style={{ height: '100%', width: `${((scenarioIdx + 1) / SCENARIOS.length) * 100}%`, background: '#0f3d8c', borderRadius: 4, transition: 'width 0.4s' }} />
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h2 style={{ margin: '0 0 0.6rem', fontSize: '1.08rem' }}>Qué cuenta como tendencia relevante</h2>
+            <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
+              Una tendencia relevante no es cualquier dato que aparece en el gráfico. Es una observación que ayuda al lector
+              a entender la historia completa: dirección, contraste, cambio de posición o evento atípico.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}>
+              {TREND_DECISION_RULES.map((rule) => (
+                <article key={rule.label} style={{ padding: '0.9rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
+                  <h3 style={{ margin: '0 0 0.35rem', fontSize: '0.92rem' }}>{rule.label}</h3>
+                  <p style={{ margin: '0 0 0.45rem', color: 'var(--ink-2)', lineHeight: 1.55, fontSize: '0.84rem' }}>{rule.question}</p>
+                  <p style={{ margin: 0, color: '#0f3d8c', lineHeight: 1.55, fontSize: '0.82rem', fontStyle: 'italic' }}>&ldquo;{rule.example}&rdquo;</p>
+                </article>
+              ))}
             </div>
-            <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)', whiteSpace: 'nowrap' }}>
-              Gráfica {scenarioIdx + 1} / {SCENARIOS.length}
-            </span>
+          </div>
+
+          {/* Visual selector */}
+          <div role="tablist" aria-label="Gráficas de tendencias" style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', paddingBottom: '0.45rem', marginBottom: '1.15rem' }}>
+            {SCENARIOS.map((scenario, index) => (
+              <button key={scenario.id} type="button" role="tab" aria-selected={scenarioIdx === index} onClick={() => { setScenarioIdx(index); setSelected(new Set()); setRevealed(false); }} style={{ flex: '0 0 auto', minWidth: 150, padding: '0.72rem 0.8rem', borderRadius: 8, border: scenarioIdx === index ? '2px solid #0f3d8c' : '1px solid var(--line-soft)', background: scenarioIdx === index ? 'rgba(15,61,140,0.07)' : 'var(--bg)', color: scenarioIdx === index ? '#0f3d8c' : 'var(--ink-2)', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textAlign: 'left', cursor: 'pointer' }}>
+                {String(index + 1).padStart(2, '0')} · {scenario.title.split(' — ')[0]}
+              </button>
+            ))}
           </div>
 
           {/* Chart card */}
@@ -315,7 +493,71 @@ export default function TendenciasContent() {
             </div>
           )}
 
+          <TrendPracticeEngine />
+
         </div>
+      </div>
+    </section>
+  );
+}
+
+type TrendPracticeItem = { scenario: number; question: string; options: string[]; correct: number; explanation: string };
+
+const TREND_PRACTICE_LEVELS: { title: string; items: TrendPracticeItem[] }[] = [
+  {
+    title: 'Nivel 1 · Clasifica la observación',
+    items: [
+      { scenario: 0, question: '¿Cuál es una tendencia global?', options: ['Latin America rose from 5% to 15%.', 'All three regions grew over the period.', 'North America reached 90% in 2020.', 'The graph has five data points.'], correct: 1, explanation: 'Una tendencia global afecta a la mayoría de las series y ayuda a resumir la historia completa.' },
+      { scenario: 3, question: '¿Qué contraste merece atención?', options: ['Solar grew much faster than hydro.', 'Solar reached 25 TWh in 2010.', 'The y-axis ends at 120.', 'There are three sources.'], correct: 0, explanation: 'El contraste de ritmo entre una serie acelerada y una estable es más útil que una cifra aislada.' },
+      { scenario: 4, question: '¿Qué observación describe convergencia?', options: ['Bus stayed near its original level.', 'Car and cycling moved closer together by the end.', 'Cycling stood at 12,000 in 2010.', 'The city used three transport modes.'], correct: 1, explanation: 'Convergencia significa que la distancia entre dos series se reduce.' },
+    ],
+  },
+  {
+    title: 'Nivel 2 · Selecciona los rasgos principales',
+    items: [
+      { scenario: 1, question: 'Elige la mejor pareja para un overview.', options: ['STEM rose steadily and Arts & Humanities declined.', 'STEM was 80,000 in 2000 and Arts was 70,000 in 2020.', 'The lines crossed near 2008 for an unknown reason.', 'There were two subject groups.'], correct: 0, explanation: 'La pareja resume las dos direcciones opuestas, que son el patrón central del gráfico.' },
+      { scenario: 2, question: '¿Qué combinación explica mejor el cambio de liderazgo?', options: ['Country C began at 5 million.', 'Country B led initially, but Country A grew faster and overtook it.', 'All three countries had six observations.', 'Country A ended at 5 million in 2020.'], correct: 1, explanation: 'Un cambio de liderazgo combina posición inicial, ritmo y posición posterior.' },
+      { scenario: 4, question: '¿Qué rasgos conviene priorizar?', options: ['Car declined, cycling rose and bus was relatively stable.', 'Car was 80,000 in 2005 and bus was 48,000 in 2010.', 'Cycling is better for the environment.', 'The lines use three colours.'], correct: 0, explanation: 'La opción reúne dirección y estabilidad, sin añadir opinión ni cifras innecesarias.' },
+    ],
+  },
+  {
+    title: 'Nivel 3 · Redacta la idea Band 7+',
+    items: [
+      { scenario: 2, question: '¿Qué oración sintetiza mejor el gráfico?', options: ['Overall, tourist arrivals increased in all three countries.', 'Overall, arrivals rose until 2018, with Country A overtaking Country B, before all three fell sharply in 2020.', 'Overall, Country C rose from 5 to 8 million.', 'Overall, tourism grew because of better flights.'], correct: 1, explanation: 'Incluye la tendencia inicial, el cambio de liderazgo y la anomalía final sin inventar causas.' },
+      { scenario: 3, question: '¿Qué overview evita tanto la lista como la interpretación?', options: ['Overall, solar rose from 4 to 100 TWh.', 'Overall, hydro was stable, while solar and wind grew, with solar recording the fastest expansion.', 'Overall, renewable energy policy was successful.', 'Overall, wind was 28 TWh in 2005.'], correct: 1, explanation: 'Resume estabilidad, crecimiento y ritmo relativo: tres rasgos comparables y visibles.' },
+      { scenario: 0, question: '¿Cuál es la versión más completa y prudente?', options: ['Overall, all regions grew, North America remained highest and the gap narrowed.', 'Overall, internet access increased because technology improved.', 'Overall, Latin America rose by 65 percentage points.', 'Overall, Africa was the weakest region.'], correct: 0, explanation: 'Combina patrón global, liderazgo y convergencia, sin causalidad ni lenguaje evaluativo.' },
+    ],
+  },
+];
+
+function TrendPracticeEngine() {
+  const [level, setLevel] = useState(0);
+  const [index, setIndex] = useState(0);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [checked, setChecked] = useState(false);
+  const [scores, setScores] = useState([0, 0, 0]);
+  const currentLevel = TREND_PRACTICE_LEVELS[level];
+  const current = currentLevel.items[index];
+  const scenario = SCENARIOS[current.scenario];
+  const correct = selected === current.correct;
+
+  function reset() { setSelected(null); setChecked(false); }
+  function check() { if (selected !== null && !checked) { if (correct) setScores((old) => old.map((score, i) => i === level ? score + 1 : score)); setChecked(true); } }
+  function next() { if (index < currentLevel.items.length - 1) { setIndex((old) => old + 1); reset(); } else { setLevel((old) => (old + 1) % TREND_PRACTICE_LEVELS.length); setIndex(0); reset(); } }
+
+  return (
+    <section aria-labelledby="task1-trends-practice" style={{ marginTop: '2.5rem' }}>
+      <p className="eyebrow"><span className="ink-line" />Motor progresivo WeLearn</p>
+      <h2 id="task1-trends-practice" style={{ margin: '0 0 0.4rem', fontSize: '1.45rem' }}>Practica tendencias por niveles</h2>
+      <p style={{ margin: '0 0 1.1rem', color: 'var(--muted)', lineHeight: 1.65 }}>Pasa de reconocer una tendencia a combinarla en un overview. Los ejercicios usan gráficos distintos y explican por qué una observación sí o no merece espacio.</p>
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>{TREND_PRACTICE_LEVELS.map((item, i) => <button key={item.title} type="button" className="btn btn-sm" aria-pressed={level === i} onClick={() => { setLevel(i); setIndex(0); reset(); }} style={{ flex: '1 1 180px', textAlign: 'left', whiteSpace: 'normal', opacity: level === i ? 1 : 0.68 }}><strong>{i + 1}. {item.title.split('·')[1]}</strong><br /><span style={{ fontSize: '0.72rem' }}>{scores[i]}/{item.items.length}</span></button>)}</div>
+      <div className="wl-card" style={{ padding: '1.15rem', borderTop: '4px solid #0f3d8c' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '0.85rem' }}><div><p style={{ margin: 0, color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{currentLevel.title}</p><p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Ejercicio {index + 1} de {currentLevel.items.length} · {scenario.title.split(' — ')[0]}</p></div><span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.76rem' }}>{Math.round(((index + 1) / currentLevel.items.length) * 100)}%</span></div>
+        <div style={{ padding: '0.7rem', background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 8, overflow: 'hidden' }}><MiniLineChart scenario={scenario} /></div>
+        <p style={{ margin: '0.85rem 0 0', fontWeight: 800, color: 'var(--ink)', lineHeight: 1.55 }}>{current.question}</p>
+        <div style={{ display: 'grid', gap: '0.55rem', marginTop: '0.8rem' }}>{current.options.map((option, i) => <button key={option} type="button" onClick={() => !checked && setSelected(i)} aria-pressed={selected === i} style={{ textAlign: 'left', padding: '0.8rem 0.9rem', borderRadius: 8, border: `1.5px solid ${checked && i === current.correct ? '#059669' : checked && selected === i ? '#dc2626' : selected === i ? '#0f3d8c' : 'var(--line-soft)'}`, background: checked && i === current.correct ? 'rgba(5,150,105,0.08)' : selected === i ? 'rgba(15,61,140,0.06)' : 'var(--bg)', color: 'var(--ink)', cursor: checked ? 'default' : 'pointer', lineHeight: 1.55 }}>{String.fromCharCode(65 + i)}. {option}</button>)}</div>
+        <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginTop: '1rem' }}><button type="button" className="btn btn-sm" onClick={check} disabled={selected === null || checked}>{checked ? (correct ? 'Correcto' : 'Revisa la explicación') : 'Comprobar respuesta'}</button>{checked && <button type="button" className="btn btn-sm" onClick={next}>{index === currentLevel.items.length - 1 ? 'Siguiente nivel →' : 'Siguiente ejercicio →'}</button>}</div>
+        {checked && <div role="status" style={{ marginTop: '0.85rem', padding: '0.8rem 0.9rem', borderRadius: 8, background: correct ? 'rgba(5,150,105,0.08)' : 'rgba(217,119,6,0.08)', border: `1px solid ${correct ? 'rgba(5,150,105,0.22)' : 'rgba(217,119,6,0.22)'}` }}><strong style={{ color: correct ? '#059669' : '#b45309' }}>{correct ? 'Bien visto.' : 'Todavía no.'}</strong><p style={{ margin: '0.25rem 0 0', color: 'var(--ink-2)', lineHeight: 1.55 }}>{current.explanation}</p></div>}
       </div>
     </section>
   );

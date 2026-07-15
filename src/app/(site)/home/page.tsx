@@ -236,6 +236,7 @@ export default function HomePage() {
           <HeroItem>
             <div className="wlh-hero__ctas">
               <Link href="/clases-de-ingles" className="btn wlh-hero__btn-primary">Empezar gratis</Link>
+              <Link href="/nivel-radar" className="btn btn-ghost wlh-hero__btn-ghost">Diagnóstico de nivel</Link>
               <Link href="#coreano-preview" className="btn btn-ghost wlh-hero__btn-ghost">Ver una lección</Link>
             </div>
           </HeroItem>

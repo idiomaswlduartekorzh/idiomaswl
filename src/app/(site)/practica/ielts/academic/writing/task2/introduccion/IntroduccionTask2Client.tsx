@@ -1,6 +1,9 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
+import Task2EssayTypeGuide from '../Task2EssayTypeGuide';
+import Task2LegoGuide from '../Task2LegoGuide';
 
 const BAND_COMPARE = {
   prompt: 'In many countries, students are under increasing pressure to succeed academically. Some argue this negatively affects their health. To what extent do you agree or disagree?',
@@ -36,9 +39,61 @@ const PHRASE_BANK = {
     'Opinión': ['I firmly believe that...', 'I am convinced that...', 'I strongly agree/disagree that...', 'In my view,...'],
     'Discusión': ['While both views have merit, I believe...', 'This essay will examine both perspectives before arguing that...'],
     'Problema-Solución': ['This essay will examine the causes before proposing...', 'After identifying the root causes, this essay will suggest...'],
+    'Ventajas-Desventajas': ['Although this trend has drawbacks, I believe its advantages outweigh them because...', 'This essay will examine both benefits and drawbacks before arguing that...'],
     'Dos preguntas': ['This essay will first explore [Q1] before assessing whether [Q2]...'],
   },
 };
+
+const INTRO_QUESTIONS = [
+  {
+    q: '1. ¿Cuál es el tema exacto?',
+    answer: 'Identifica el fenómeno central sin copiar el prompt. Esta respuesta se convierte en tu paráfrasis.',
+    example: 'online learning replacing traditional classes → the shift from classroom-based education to digital study',
+  },
+  {
+    q: '2. ¿Qué instrucción final debo responder?',
+    answer: 'La última pregunta manda la estructura: agree/disagree, discuss both views, causes/measures, outweigh o two-part.',
+    example: 'Do the advantages outweigh the disadvantages? → debo comparar ambos lados y decidir cuál pesa más.',
+  },
+  {
+    q: '3. ¿Cuál es mi posición o ruta?',
+    answer: 'Define si vas a tomar postura fuerte, balanceada o si vas a anunciar una ruta de causas/soluciones.',
+    example: 'I believe the advantages outweigh the drawbacks, provided that students receive structured guidance.',
+  },
+  {
+    q: '4. ¿Qué dos bloques de body voy a construir?',
+    answer: 'La tesis debe anticipar Body 1 y Body 2 para que el ensayo tenga dirección desde la introducción.',
+    example: 'Body 1: access and flexibility. Body 2: weaker social interaction but manageable with hybrid support.',
+  },
+];
+
+const THESIS_BY_TYPE = [
+  {
+    type: 'Opinión',
+    thesis: 'I strongly agree/disagree that...',
+    body: 'Body 1 defiende tu razón principal; Body 2 añade otra razón o refuta el contraargumento.',
+  },
+  {
+    type: 'Discusión',
+    thesis: 'This essay will examine both views before arguing that...',
+    body: 'Body 1 explica la primera postura; Body 2 explica la segunda y prepara tu opinión.',
+  },
+  {
+    type: 'Problema-Solución',
+    thesis: 'This essay will identify the main causes before proposing...',
+    body: 'Body 1 diagnostica causas/problemas; Body 2 propone medidas conectadas con esas causas.',
+  },
+  {
+    type: 'Ventajas-Desventajas',
+    thesis: 'Although there are clear drawbacks, I believe the advantages outweigh them because...',
+    body: 'Body 1 desarrolla beneficios; Body 2 desarrolla desventajas y evalúa cuál lado pesa más.',
+  },
+  {
+    type: 'Dos preguntas',
+    thesis: 'This essay will first explain why... before evaluating whether...',
+    body: 'Body 1 responde Q1; Body 2 responde Q2 de forma visible y completa.',
+  },
+];
 
 interface Exercise {
   type: string; prompt: string;
@@ -92,6 +147,21 @@ const EXERCISES: Exercise[] = [
       { label: 'No adelanta tu posición personal (solo describe el ensayo)', auto: () => true },
     ],
     hint: 'En Problema-Solución, la tesis no necesita expresar una opinión personal — debe anunciar la estructura: "This essay will examine the causes before proposing solutions." No copies el enunciado ni uses las mismas palabras para las causas y soluciones.',
+  },
+  {
+    type: 'Ventajas-Desventajas',
+    prompt: 'In many countries, more employees are working from home rather than commuting to a traditional office. Do the advantages of this development outweigh the disadvantages?',
+    models: [
+      { paraphrase: 'Remote work has become increasingly common across many economies, replacing the conventional model of daily office attendance for a growing number of employees.', thesis: 'Although this shift can weaken workplace collaboration, I believe its advantages outweigh the drawbacks because it improves flexibility, productivity and access to employment.', wc: 46 },
+      { paraphrase: 'The movement from office-based employment to home-based work has transformed the way many organisations and workers operate.', thesis: 'This essay will examine both the benefits and limitations of remote work before arguing that, overall, its advantages are more significant.', wc: 40 },
+    ],
+    checklist: [
+      { label: 'Máximo 70 palabras', auto: (t) => t.trim().split(/\s+/).filter(Boolean).length <= 70 },
+      { label: 'No copies frases del original', auto: (t, o) => !hasCopied(o, t) },
+      { label: 'Menciona ventajas y desventajas o beneficios/drawbacks', auto: (t) => /\b(advantages?|benefits?|drawbacks?|disadvantages?|limitations?)\b/i.test(t) },
+      { label: 'Responde si un lado outweigh/pesa más', auto: (t) => /\b(outweigh|more significant|greater|more important|pesan?|superan?)\b/i.test(t) },
+    ],
+    hint: 'En Ventajas-Desventajas, la intro no puede limitarse a "there are pros and cons". Si el prompt pregunta outweigh, tu tesis debe decir cuál lado pesa más.',
   },
   {
     type: 'Dos preguntas',
@@ -182,8 +252,52 @@ export default function IntroduccionTask2Client() {
           <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />✍️ Sub-habilidad 2</p>
           <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Introducción: Paraphrase + Thesis</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
-            La introducción del Task 2 tiene dos oraciones: (1) paráfrasis del tema sin copiar y (2) tesis que expresa tu posición o enfoque. Máximo 70 palabras. Un examinador juzga tu nivel en las primeras 10 segundos de lectura.
+            La introducción del Task 2 tiene dos oraciones: (1) paráfrasis del tema sin copiar y (2) tesis que expresa tu posición o enfoque. Máximo 70 palabras. Un examinador juzga tu nivel en los primeros 10 segundos de lectura.
           </p>
+
+          <Task2OfficialReviewBlock
+            focus="Escribir una paráfrasis precisa y una tesis que responda el tipo de pregunta."
+            officialFormat="IELTS Academic Writing Task 2 exige una respuesta ensayística de al menos 250 palabras. La introducción es una parte estratégica de la respuesta, no una tarea oficial separada."
+            welearnStrategy="Entrenamos introducciones para evitar copiar el prompt y para que la posición o enfoque aparezca antes de los párrafos de cuerpo."
+            answerCheck="Una introducción fuerte conserva el significado del prompt, evita clichés y anuncia una tesis clara compatible con la instrucción."
+          />
+
+          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1rem', borderTop: '3px solid #0f3d8c' }}>
+            <p className="eyebrow" style={{ marginBottom: '0.55rem' }}><span className="ink-line" />Las 4 preguntas de una introducción</p>
+            <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.12rem', letterSpacing: 0 }}>
+              Antes de escribir, responde esto y la introducción sale casi sola.
+            </h2>
+            <p style={{ margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.9rem' }}>
+              En Task 2 no necesitas un hook ni frases infladas. La introducción funciona como dos bloques:
+              paráfrasis del tema + tesis que responde la instrucción. Estas cuatro preguntas evitan que copies el prompt
+              o uses una estructura equivocada.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '0.75rem' }}>
+              {INTRO_QUESTIONS.map((item) => (
+                <article key={item.q} style={{ padding: '0.85rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                  <h3 style={{ margin: '0 0 0.35rem', fontSize: '0.92rem', color: 'var(--ink)' }}>{item.q}</h3>
+                  <p style={{ margin: '0 0 0.45rem', color: 'var(--ink-2)', lineHeight: 1.5, fontSize: '0.82rem' }}>{item.answer}</p>
+                  <p style={{ margin: 0, color: '#0f3d8c', fontFamily: 'var(--mono)', lineHeight: 1.45, fontSize: '0.74rem' }}>{item.example}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1rem' }}>
+            <h2 style={{ margin: '0 0 0.7rem', fontSize: '1.08rem', letterSpacing: 0 }}>Tesis y Body 1/Body 2 según el tipo de pregunta</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '0.75rem' }}>
+              {THESIS_BY_TYPE.map((item) => (
+                <article key={item.type} style={{ padding: '0.85rem', borderRadius: 8, border: '1px solid rgba(15,61,140,0.16)', background: 'rgba(15,61,140,0.04)' }}>
+                  <p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.74rem' }}>{item.type}</p>
+                  <p style={{ margin: '0 0 0.45rem', color: 'var(--ink)', fontFamily: 'var(--mono)', lineHeight: 1.45, fontSize: '0.78rem' }}>{item.thesis}</p>
+                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.5, fontSize: '0.8rem' }}>{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <Task2EssayTypeGuide />
+          <Task2LegoGuide />
 
           {/* Band comparison toggle */}
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1rem', cursor: 'pointer' }} onClick={() => setShowCompare(v => !v)}>

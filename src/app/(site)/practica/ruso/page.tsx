@@ -18,7 +18,7 @@ const NIVELES = [
     count: '6 habilidades · 40+ ejercicios',
   },
   { nivel: 'A2', name: 'Elementare', desc: 'Caso acusativo, pasado del verbo, verbos de movimiento (идти/ехать).', available: false },
-  { nivel: 'B1', name: 'Intermedio', desc: 'Aspecto verbal (perfectivo/imperfectivo), caso dativo e instrumental.', available: false },
+  { nivel: 'B1', name: 'Intermedio', desc: 'Aspecto verbal (perfectivo/imperfectivo), caso dativo e instrumental.', href: '/practica/ruso/b1', available: true, count: '5 temas · 50+ ejercicios' },
   { nivel: 'B2', name: 'Intermedio alto', desc: 'Participios, gerundios, subjuntivo y escritura académica.', available: false },
   { nivel: 'C1', name: 'Avanzado', desc: 'Registro formal, collocaciones idiomáticas y nivel TORFL-3.', available: false },
 ];

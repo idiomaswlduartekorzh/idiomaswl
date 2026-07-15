@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
+import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 
 const PROMPT = 'The graph below shows the percentage of households in the UK with access to broadband internet between 2003 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.';
 
@@ -52,6 +54,72 @@ const RUBRIC: { criterion: string; desc: string; bands: { band: string; descript
   },
 ];
 
+const LEGO_STEPS = [
+  { part: '1. Introducción', action: 'Parafrasea el enunciado sin añadir datos.', check: '¿Cambié verbo, tema y estructura?' },
+  { part: '2. Overview', action: 'Resume el patrón dominante sin cifras.', check: '¿Se entiende la historia del gráfico en 1-2 frases?' },
+  { part: '3. Body 1', action: 'Agrupa los datos principales del primer patrón.', check: '¿Incluí cifras exactas solo donde aportan evidencia?' },
+  { part: '4. Body 2', action: 'Añade contraste, cierre o segundo grupo.', check: '¿Comparé donde era relevante?' },
+  { part: '5. Revisión', action: 'Comprueba precisión, palabras y gramática.', check: '¿Hay 150+ palabras y ningún dato inventado?' },
+];
+
+const FULL_TASK_BANK = [
+  ['line', 'Urban cycling rates in three cities from 2000 to 2025', 'Overall, cycling increased in all three cities, with the sharpest growth in the city that began from the lowest base.'],
+  ['line', 'Electric car ownership in Japan, Germany and Canada between 2010 and 2024', 'Overall, ownership rose substantially in all countries, although Germany finished with the highest figure.'],
+  ['line', 'Average screen time among teenagers and adults from 2012 to 2024', 'Overall, both groups spent more time on screens, but teenagers remained consistently higher.'],
+  ['line', 'Museum visitor numbers in two European capitals from 2005 to 2020', 'Overall, visitors rose before a sharp fall at the end of the period.'],
+  ['line', 'Water consumption in agriculture, industry and homes between 1990 and 2020', 'Overall, agriculture used the most water throughout, while domestic use remained comparatively low.'],
+  ['bar', 'Monthly household spending on five categories in 2023', 'Overall, housing and food accounted for the largest spending, while entertainment was the smallest category.'],
+  ['bar', 'Preferred transport methods among commuters in six cities', 'Overall, public transport was dominant in most cities, whereas cycling remained the least common option.'],
+  ['bar', 'Employment rates for men and women in four sectors', 'Overall, male employment was higher in technical sectors, while female employment led in education and health.'],
+  ['bar', 'Average weekly study hours by university subject', 'Overall, medicine and engineering students studied the longest, while arts students recorded fewer hours.'],
+  ['bar', 'Coffee consumption in five countries in 2024', 'Overall, the Nordic countries consumed the most coffee, with the lowest figure recorded in the final country.'],
+  ['pie', 'Energy sources used by a country in 2000 and 2025', 'Overall, fossil fuels declined as renewables became a much larger part of the energy mix.'],
+  ['pie', 'Reasons students chose online courses in 2024', 'Overall, flexibility was the leading reason, while cost and tutor access made up smaller shares.'],
+  ['pie', 'Household waste composition before and after a recycling campaign', 'Overall, recyclable waste increased as general landfill waste decreased.'],
+  ['pie', 'University budget allocation across six departments', 'Overall, teaching and research received the largest shares, while administration accounted for less.'],
+  ['pie', 'Tourist spending categories in a coastal town', 'Overall, accommodation took the greatest share, whereas local transport represented the smallest proportion.'],
+  ['table', 'Internet use by age group in four countries', 'Overall, younger adults had the highest usage in every country, while the oldest group lagged behind.'],
+  ['table', 'Average salaries in five professions across three regions', 'Overall, technology roles paid the most, with regional differences visible across all jobs.'],
+  ['table', 'Participation in sports by gender and age group', 'Overall, participation was highest among younger groups and declined with age.'],
+  ['table', 'Public satisfaction with transport, health and education services', 'Overall, education received the strongest ratings, while transport was the weakest area.'],
+  ['table', 'Exports of four products from three countries', 'Overall, electronics dominated exports in two countries, while food products led in the third.'],
+  ['process', 'How glass bottles are recycled into new containers', 'Overall, the process is linear and involves collection, cleaning, melting and remoulding.'],
+  ['process', 'The production of olive oil from harvested olives', 'Overall, olive oil production follows a sequence from harvesting and crushing to separation and bottling.'],
+  ['process', 'How rainwater is collected and purified for household use', 'Overall, the system moves water through collection, filtration, storage and distribution.'],
+  ['process', 'The life cycle of a butterfly', 'Overall, this is a cyclical natural process with four main stages from egg to adult butterfly.'],
+  ['process', 'How bricks are manufactured for construction', 'Overall, brick production is a linear process involving clay preparation, shaping, drying, firing and delivery.'],
+  ['map', 'A town centre in 1990 and 2025', 'Overall, the town became more commercial and residential, with open spaces replaced by buildings.'],
+  ['map', 'A university campus before and after expansion', 'Overall, the campus expanded considerably, adding academic facilities and student accommodation.'],
+  ['map', 'A coastal village before and after tourism development', 'Overall, the village shifted from a local settlement to a tourist-oriented area.'],
+  ['map', 'An island before and after construction of visitor facilities', 'Overall, the island was developed with accommodation and transport links while some natural areas remained.'],
+  ['map', 'A park in 2000 and after redevelopment', 'Overall, the park became more recreational, with new sports and family facilities.'],
+  ['mixed', 'A line graph of gym membership and a pie chart of reasons for joining', 'Overall, membership increased steadily, and health was the main reason for joining.'],
+  ['mixed', 'A bar chart of household income and a table of savings rates', 'Overall, higher-income households saved more, although spending patterns varied by category.'],
+  ['mixed', 'A pie chart of energy sources and a line graph of emissions', 'Overall, renewable energy grew while emissions declined gradually.'],
+  ['mixed', 'A table of student numbers and a bar chart of course completion', 'Overall, enrolment increased, but completion rates differed sharply by course.'],
+  ['mixed', 'A map of a shopping area and a bar chart of visitor numbers', 'Overall, redevelopment coincided with higher visitor numbers.'],
+  ['line', 'Average rainfall in two regions across twelve months', 'Overall, rainfall followed opposite seasonal patterns in the two regions.'],
+  ['bar', 'Mobile phone ownership by income group', 'Overall, ownership rose with income, with the largest gap between the lowest and highest groups.'],
+  ['table', 'Library borrowing by genre and age group', 'Overall, fiction was most popular among younger users, while history appealed more to older readers.'],
+  ['process', 'How compost is produced from household food waste', 'Overall, compost production is a staged process from waste collection to decomposition and packaging.'],
+  ['map', 'A railway station before and after modernization', 'Overall, the station became larger and more accessible, with additional platforms and retail space.'],
+  ['line', 'Prices of three food products from 2010 to 2022', 'Overall, all prices increased, though one product rose much more sharply than the others.'],
+  ['bar', 'Percentage of people working from home in six industries', 'Overall, remote work was most common in digital industries and least common in manual sectors.'],
+  ['pie', 'Sources of municipal funding in two years', 'Overall, local taxes became less dominant as grants and service fees increased.'],
+  ['table', 'Average commute times by transport method and city size', 'Overall, car and bus commutes were longer in larger cities, while cycling times were more stable.'],
+  ['process', 'The stages involved in publishing a digital magazine', 'Overall, the process moves from content planning and editing to design, publication and promotion.'],
+  ['map', 'A residential neighbourhood before and after a new metro line', 'Overall, transport access improved and commercial facilities expanded near the station.'],
+  ['mixed', 'A line graph of online sales and a bar chart of product categories', 'Overall, online sales rose markedly, led mainly by electronics and clothing.'],
+  ['line', 'Population growth in three age groups from 1980 to 2040', 'Overall, the elderly population increased fastest, while the youngest group declined.'],
+  ['bar', 'Recycling rates for paper, plastic, glass and metal', 'Overall, paper and metal had the highest recycling rates, whereas plastic remained comparatively low.'],
+  ['pie', 'Time allocation in a typical student week', 'Overall, study and sleep accounted for most of the week, while leisure took a smaller share.'],
+].map(([type, prompt, overview], index) => ({
+  id: `task1-bank-${index + 1}`,
+  type,
+  prompt: `The ${type === 'map' ? 'maps' : type === 'process' ? 'diagram' : type === 'mixed' ? 'charts' : type === 'pie' ? 'pie charts' : type === 'table' ? 'table' : type === 'bar' ? 'bar chart' : 'line graph'} below show(s) ${prompt}. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.`,
+  overview,
+}));
+
 type Phase = 'intro' | 'writing' | 'scoring' | 'done';
 
 function formatTime(s: number) {
@@ -67,7 +135,9 @@ export default function TareaCompletaPage() {
   const [timerActive, setTimerActive] = useState(false);
   const [scores, setScores] = useState<Record<string, string>>({});
   const [showModel, setShowModel] = useState(false);
+  const [bankIdx, setBankIdx] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const bankItem = FULL_TASK_BANK[bankIdx];
 
   useEffect(() => {
     if (timerActive && timeLeft > 0) {
@@ -112,8 +182,34 @@ export default function TareaCompletaPage() {
             <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Práctica en condiciones reales</h1>
             <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
               20 minutos. 150+ palabras. Cuatro párrafos: Introducción → Overview → Body 1 → Body 2.
-              Al terminar, usas la rúbrica oficial para auto-evaluarte.
+              Al terminar, usas la rúbrica pedagógica WeLearn para auto-evaluarte.
             </p>
+
+            <Task1OfficialReviewBlock
+              focus="Integrar introducción, overview, cuerpo con datos y revisión final bajo tiempo."
+              officialFormat="IELTS Academic Writing Task 1 dura 20 minutos dentro del bloque de Writing y requiere al menos 150 palabras sobre información visual."
+              welearnStrategy="Esta práctica simula el flujo completo, pero la autoevaluación es pedagógica y no reemplaza una banda oficial."
+              answerCheck="La respuesta completa debe tener overview visible, datos seleccionados, comparaciones relevantes y control de tiempo."
+            />
+
+            <Task1ChartTypeGuide />
+
+            <div style={{ marginBottom: '1.5rem' }}>
+              <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Ensamble tipo Lego: une las subhabilidades</h2>
+              <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
+                Antes del cronómetro, practica el orden mental. Cada bloque existe por separado en las rutas anteriores;
+                aquí los unes para producir una respuesta completa.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '0.75rem' }}>
+                {LEGO_STEPS.map((step) => (
+                  <article key={step.part} style={{ padding: '0.9rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
+                    <h3 style={{ margin: '0 0 0.3rem', fontSize: '0.9rem' }}>{step.part}</h3>
+                    <p style={{ margin: '0 0 0.35rem', color: 'var(--ink-2)', lineHeight: 1.5, fontSize: '0.82rem' }}>{step.action}</p>
+                    <p style={{ margin: 0, color: '#0f3d8c', lineHeight: 1.45, fontSize: '0.76rem', fontWeight: 700 }}>{step.check}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
               {[
@@ -133,6 +229,36 @@ export default function TareaCompletaPage() {
             <div className="wl-card" style={{ padding: '1.5rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.5rem' }}>
               <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.6rem' }}>Task prompt</p>
               <p style={{ margin: 0, fontSize: '0.97rem', lineHeight: 1.75, color: 'var(--ink)' }}>{PROMPT}</p>
+            </div>
+
+            <div style={{ padding: '1.25rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)', marginBottom: '1.5rem' }}>
+              <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.05rem' }}>Banco de 50 prompts para práctica completa</h2>
+              <p style={{ margin: '0 0 0.85rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.88rem' }}>
+                Este banco cierra el flujo de subhabilidades: elige un prompt, escribe una introducción, decide el overview
+                y luego redacta bajo tiempo. La siguiente fase puede convertir cada prompt en gráfico dibujado.
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.85rem' }}>
+                <select
+                  value={bankIdx}
+                  onChange={(event) => setBankIdx(Number(event.target.value))}
+                  style={{ flex: 1, padding: '0.6rem 0.75rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)' }}
+                >
+                  {FULL_TASK_BANK.map((item, index) => (
+                    <option key={item.id} value={index}>
+                      {index + 1}. {item.type.toUpperCase()} — {item.prompt.slice(0, 72)}...
+                    </option>
+                  ))}
+                </select>
+                <span style={{ fontSize: '0.78rem', fontFamily: 'var(--mono)', color: '#0f3d8c', fontWeight: 800 }}>{bankIdx + 1}/50</span>
+              </div>
+              <div style={{ padding: '0.9rem 1rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)', marginBottom: '0.75rem' }}>
+                <p style={{ margin: '0 0 0.35rem', color: '#0f3d8c', fontWeight: 800, fontSize: '0.75rem', fontFamily: 'var(--mono)' }}>{bankItem.type.toUpperCase()}</p>
+                <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.65, fontSize: '0.9rem' }}>{bankItem.prompt}</p>
+              </div>
+              <div style={{ padding: '0.85rem 1rem', borderRadius: 8, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)' }}>
+                <p style={{ margin: '0 0 0.25rem', color: '#059669', fontWeight: 800, fontSize: '0.75rem', fontFamily: 'var(--mono)' }}>Overview modelo</p>
+                <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.6, fontSize: '0.86rem' }}>{bankItem.overview}</p>
+              </div>
             </div>
 
             {/* Imaginary chart description */}

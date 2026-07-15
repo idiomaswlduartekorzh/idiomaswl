@@ -8,23 +8,23 @@ const WA_MSG = encodeURIComponent('Hola, quiero saber cuál es mi nivel real de 
 export const metadata: Metadata = {
   title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés? | WeLearn',
   description:
-    'Descubre tu nivel real de inglés en 90 segundos. 6 preguntas, un resultado honesto y tu punto ciego exacto — el mismo diagnóstico que usamos con más de 2,000 estudiantes.',
+    'Diagnóstico adaptativo de inglés entre A1 y C2. Lectura, escucha, vocabulario y uso de la lengua con resultado orientativo inmediato.',
   keywords: [
     'nivel de inglés test', 'cuál es mi nivel de inglés', 'test de inglés gratis',
     'diagnóstico de inglés online', 'nivel real de inglés WeLearn',
   ],
   openGraph: {
     title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
-    description: '6 preguntas. 90 segundos. Tu nivel real de inglés y tu punto ciego, sin filtros.',
+    description: 'Un diagnóstico adaptativo de inglés A1–C2 con lectura, escucha, vocabulario y gramática.',
     url: 'https://www.idiomaswl.com/nivel-radar',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/nivel-radar' },
 };
 
 const HOW = [
-  { title: 'Respondes 6 preguntas', desc: 'Una mezcla de gramática, vocabulario y autopercepción real — nada de exámenes de una hora.' },
-  { title: 'Cruzamos el patrón', desc: 'Comparamos tus respuestas con el comportamiento de miles de hispanohablantes en cada nivel del método WeLearn.' },
-  { title: 'Ves tu nivel exacto', desc: 'Nivel CEFR, tu punto ciego específico y cuánto te falta para el siguiente — sin rodeos.' },
+  { title: 'Respondes ítems reales', desc: 'El diagnóstico alterna lectura, escucha, vocabulario y uso de la lengua. No usa respuestas de autopercepción.' },
+  { title: 'La dificultad se adapta', desc: 'Cada acierto eleva la exigencia y cada error la ajusta. Así localizamos tu límite funcional entre B1 y C2.' },
+  { title: 'Ves un mapa por habilidad', desc: 'Recibes un nivel orientativo y una prioridad de trabajo. Para escritura y habla, recomendamos una evaluación con tutor.' },
 ];
 
 export default function NivelRadarPage() {
@@ -48,7 +48,7 @@ export default function NivelRadarPage() {
       <section className={s.howSection}>
         <div className={s.wrap} style={{ maxWidth: 900 }}>
           <p className={s.sectionEyebrow}>¿Cómo funciona?</p>
-          <h2 className={s.h2}>No es un test cualquiera</h2>
+          <h2 className={s.h2}>No es un test de autopercepción</h2>
           <div className={s.howGrid}>
             {HOW.map((h, i) => (
               <div key={h.title} className={s.howCard}>

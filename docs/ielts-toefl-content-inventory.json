@@ -1,0 +1,245 @@
+{
+  "generatedAt": "2026-07-11",
+  "scope": ["/practica/ielts", "/practica/toefl"],
+  "officialSources": [
+    {
+      "exam": "toefl",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/about/content.html",
+      "notes": "ETS TOEFL iBT test content and structure. Used for 2026 task names, timing and scoring guardrails."
+    },
+    {
+      "exam": "ielts",
+      "url": "https://ielts.org/take-a-test/test-types/ielts-academic-test",
+      "notes": "IELTS Academic format and sections."
+    },
+    {
+      "exam": "ielts",
+      "url": "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test",
+      "notes": "IELTS Academic sample tasks and Reading question type list."
+    },
+    {
+      "exam": "ielts",
+      "url": "https://ielts.org/take-a-test/test-types/ielts-general-training-test",
+      "notes": "IELTS General Training format and sections. Used for Academic vs General Training guardrails."
+    },
+    {
+      "exam": "ielts",
+      "url": "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/general-training-test",
+      "notes": "IELTS General Training sample tasks and Reading/Writing differences."
+    }
+  ],
+  "externalMaterials": [
+    {
+      "path": "/Users/josedavidduartesilva/Documents/idiomaswl_ielts_skimming_preview.html",
+      "type": "html-preview",
+      "recommendedCluster": "ielts-reading-skills",
+      "recommendedRoutes": ["/practica/ielts/reading/habilidades/skimming"],
+      "status": "ready-to-convert"
+    },
+    {
+      "path": "/Users/josedavidduartesilva/Library/Mobile Documents/com~apple~Pages/Documents/Skimming exercise .pages",
+      "type": "pages-document",
+      "recommendedCluster": "ielts-reading-skills",
+      "recommendedRoutes": ["/practica/ielts/reading/habilidades/skimming"],
+      "status": "needs-export-or-manual-extraction"
+    },
+    {
+      "path": "/Users/josedavidduartesilva/Library/Mobile Documents/com~apple~Pages/Documents/Skimming and scanning .pages",
+      "type": "pages-document",
+      "recommendedCluster": "ielts-reading-skills",
+      "recommendedRoutes": [
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/habilidades/scanning"
+      ],
+      "status": "needs-export-or-manual-extraction"
+    },
+    {
+      "path": "/Users/josedavidduartesilva/Library/Mobile Documents/com~apple~Pages/Documents/Syllogism .pages",
+      "type": "pages-document",
+      "recommendedCluster": "reading-reasoning",
+      "recommendedRoutes": [
+        "/practica/toefl/reading/tipos-de-preguntas/inference",
+        "/practica/toefl/reading/habilidades/logical-relationships",
+        "/practica/ielts/reading/habilidades/inferencia"
+      ],
+      "status": "needs-export-or-manual-extraction"
+    },
+    {
+      "path": "/Users/josedavidduartesilva/Library/Mobile Documents/com~apple~Pages/Documents/TOEFL : IELTS writing question types model answer .pages",
+      "type": "pages-document",
+      "recommendedCluster": "writing-model-answers",
+      "recommendedRoutes": [
+        "/practica/toefl/writing/academic-discussion",
+        "/practica/toefl/writing/write-an-email",
+        "/practica/ielts/academic/writing/task2/tipo-ensayo"
+      ],
+      "status": "needs-export-or-manual-extraction"
+    },
+    {
+      "path": "/Users/josedavidduartesilva/Library/Mobile Documents/com~apple~Pages/Documents/TOEFL reading question types with examples.pages",
+      "type": "pages-document",
+      "recommendedCluster": "toefl-reading-compatibility-review",
+      "recommendedRoutes": [
+        "/practica/toefl/reading/tipos-de-preguntas/vocabulary",
+        "/practica/toefl/reading/tipos-de-preguntas/inference",
+        "/practica/toefl/reading/tipos-de-preguntas/factual-information",
+        "/practica/toefl/reading/tipos-de-preguntas/rhetorical-purpose",
+        "/practica/toefl/reading/tipos-de-preguntas/sentence-simplification"
+      ],
+      "status": "needs-current-format-review"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "ielts-reading-question-types",
+      "exam": "ielts",
+      "section": "reading",
+      "route": "/practica/ielts/reading/tipos-de-preguntas",
+      "status": "live",
+      "liveRoutes": [
+        "/practica/ielts/reading/tipos-de-preguntas/multiple-choice",
+        "/practica/ielts/reading/tipos-de-preguntas/true-false-not-given",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-information",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-headings",
+        "/practica/ielts/reading/tipos-de-preguntas/sentence-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/summary-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/diagram-labeling",
+        "/practica/ielts/reading/tipos-de-preguntas/yes-no-not-given",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-features",
+        "/practica/ielts/reading/tipos-de-preguntas/matching-sentence-endings",
+        "/practica/ielts/reading/tipos-de-preguntas/note-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/table-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/flow-chart-completion",
+        "/practica/ielts/reading/tipos-de-preguntas/short-answer"
+      ],
+      "plannedRoutes": [],
+      "qualityGaps": ["larger advanced passage banks after the current three-passage route-specific baseline", "periodic full-cluster visual regression checks as banks grow"]
+    },
+    {
+      "id": "ielts-reading-skills",
+      "exam": "ielts",
+      "section": "reading",
+      "route": "/practica/ielts/reading/habilidades",
+      "status": "partially-live",
+      "liveRoutes": [
+        "/practica/ielts/reading/habilidades/skimming",
+        "/practica/ielts/reading/habilidades/scanning",
+        "/practica/ielts/reading/habilidades/inferencia",
+        "/practica/ielts/reading/habilidades/parafrasis",
+        "/practica/ielts/reading/habilidades/limite-de-palabras",
+        "/practica/ielts/reading/habilidades/gestion-del-tiempo"
+      ],
+      "plannedRoutes": [],
+      "qualityGaps": ["larger timed mixed passage bank"]
+    },
+    {
+      "id": "ielts-general-training",
+      "exam": "ielts",
+      "section": "multi-skill",
+      "route": "/practica/ielts/general-training",
+      "status": "partially-live",
+      "liveRoutes": [
+        "/practica/ielts/general-training",
+        "/practica/ielts/general-training/reading",
+        "/practica/ielts/general-training/writing/task1",
+        "/practica/ielts/general-training/writing/task2"
+      ],
+      "plannedRoutes": [],
+      "qualityGaps": [
+        "larger General Training Reading timed mixed bank beyond the first functional/social/workplace text set",
+        "larger General Training Writing Task 1 timed review sets beyond the first original letter bank",
+        "larger General Training Writing Task 2 timed review sets beyond the first original essay bank",
+        "additional General Training child pages only after each page has canonical metadata, SSR instruction, practice, explained answers and sitemap readiness"
+      ]
+    },
+    {
+      "id": "ielts-academic-writing",
+      "exam": "ielts",
+      "section": "writing",
+      "route": "/practica/ielts/academic/writing",
+      "status": "partially-live",
+      "liveRoutes": [
+        "/practica/ielts/academic/writing/task1",
+        "/practica/ielts/academic/writing/rubrica",
+        "/practica/ielts/academic/writing/task1/introduccion",
+        "/practica/ielts/academic/writing/task1/overview",
+        "/practica/ielts/academic/writing/task1/tendencias",
+        "/practica/ielts/academic/writing/task1/comparaciones",
+        "/practica/ielts/academic/writing/task1/procesos",
+        "/practica/ielts/academic/writing/task1/mapas",
+        "/practica/ielts/academic/writing/task1/vocabulario",
+        "/practica/ielts/academic/writing/task1/tarea-completa",
+        "/practica/ielts/academic/writing/task1/graficos-lineales",
+        "/practica/ielts/academic/writing/task1/graficos-de-barras",
+        "/practica/ielts/academic/writing/task1/pie-charts",
+        "/practica/ielts/academic/writing/task1/tablas",
+        "/practica/ielts/academic/writing/task2",
+        "/practica/ielts/academic/writing/task2/tipo-ensayo",
+        "/practica/ielts/academic/writing/task2/introduccion",
+        "/practica/ielts/academic/writing/task2/parrafos-cuerpo",
+        "/practica/ielts/academic/writing/task2/linking-language",
+        "/practica/ielts/academic/writing/task2/conclusion",
+        "/practica/ielts/academic/writing/task2/tarea-completa",
+        "/practica/ielts/academic/writing/task2/opinion",
+        "/practica/ielts/academic/writing/task2/discussion",
+        "/practica/ielts/academic/writing/task2/advantages-disadvantages",
+        "/practica/ielts/academic/writing/task2/problem-solution",
+        "/practica/ielts/academic/writing/task2/direct-question",
+        "/practica/ielts/academic/writing/task2/model-answers"
+      ],
+      "plannedRoutes": [],
+      "qualityGaps": [
+        "route-specific prompt banks beyond the five Task 2 essay-type pilots",
+        "larger timed Writing Task 1 and Task 2 mixed review sets after the current route-level normalization pass"
+      ]
+    },
+    {
+      "id": "toefl-writing-current",
+      "exam": "toefl",
+      "section": "writing",
+      "route": "/practica/toefl/writing",
+      "status": "live",
+      "liveRoutes": [
+        "/practica/toefl/writing/build-a-sentence",
+        "/practica/toefl/writing/write-an-email",
+        "/practica/toefl/writing/write-an-email/banco-de-prompts",
+        "/practica/toefl/writing/academic-discussion",
+        "/practica/toefl/writing/academic-discussion/banco-de-prompts",
+        "/practica/toefl/writing/model-answers",
+        "/practica/toefl/writing/rubrica",
+        "/practica/toefl/writing/grammar-for-writing"
+      ],
+      "legacyRoutes": ["/practica/toefl/writing/integrated-writing"],
+      "plannedRoutes": [],
+      "qualityGaps": ["larger task-specific revision bank beyond Academic Discussion prompt-bank coverage", "more full-cycle timed writing sets"]
+    },
+    {
+      "id": "toefl-reading-current-and-compatible",
+      "exam": "toefl",
+      "section": "reading",
+      "route": "/practica/toefl/reading",
+      "status": "partially-live",
+      "liveRoutes": [
+        "/practica/toefl/reading/formato-2026",
+        "/practica/toefl/reading/formato-2026/complete-the-words",
+        "/practica/toefl/reading/formato-2026/read-in-daily-life",
+        "/practica/toefl/reading/formato-2026/read-an-academic-passage",
+        "/practica/toefl/reading/habilidades",
+        "/practica/toefl/reading/habilidades/logical-relationships",
+        "/practica/toefl/reading/habilidades/text-organisation",
+        "/practica/toefl/reading/habilidades/time-management",
+        "/practica/toefl/reading/tipos-de-preguntas/vocabulary",
+        "/practica/toefl/reading/tipos-de-preguntas/inference",
+        "/practica/toefl/reading/tipos-de-preguntas/factual-information",
+        "/practica/toefl/reading/tipos-de-preguntas/rhetorical-purpose",
+        "/practica/toefl/reading/tipos-de-preguntas/sentence-simplification"
+      ],
+      "plannedRoutes": [],
+      "qualityGaps": [
+        "legacy material review",
+        "more full-length transfer sets after the current Complete the Words, Read in Daily Life and Academic Passage baselines",
+        "periodic full-cluster visual regression checks as TOEFL Reading banks grow"
+      ]
+    }
+  ]
+}
