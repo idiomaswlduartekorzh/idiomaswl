@@ -2,6 +2,18 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
+import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
+import {
+  IELTSBarChartVisual,
+  IELTSLineGraphVisual,
+  IELTSMapDiagramVisual,
+  IELTSProcessDiagramVisual,
+  IELTSPieChartVisual,
+  IELTSTableVisual,
+} from '../Task1VisualLab';
+import Task1IntroductionPracticeEngine from './Task1IntroductionPracticeEngine';
+import WeLearnDownloadButton from '@/components/learning/WeLearnDownloadButton';
 
 const C = '#0f3d8c';
 
@@ -188,6 +200,75 @@ function BarChartWorkHours() {
   );
 }
 
+function TableSocialMedia() {
+  const rows = [
+    ['18-24', '92%', '88%', '85%'],
+    ['25-34', '84%', '79%', '72%'],
+    ['35-44', '68%', '61%', '54%'],
+    ['45+', '41%', '36%', '30%'],
+  ];
+  return (
+    <div style={{ overflowX: 'auto' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 420, fontSize: '0.82rem' }}>
+        <thead>
+          <tr>
+            {['Age group', 'USA', 'Canada', 'Australia'].map((h) => (
+              <th key={h} style={{ textAlign: 'left', padding: '0.55rem', borderBottom: '1px solid var(--line-soft)', color: '#0f3d8c' }}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row[0]}>
+              {row.map((cell) => (
+                <td key={cell} style={{ padding: '0.55rem', borderBottom: '1px solid var(--line-soft)', color: 'var(--ink-2)' }}>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function ProcessPlastic() {
+  const steps = ['Collection', 'Sorting', 'Washing', 'Melting', 'New products'];
+  return (
+    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+      {steps.map((step, index) => (
+        <div key={step} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <div style={{ padding: '0.65rem 0.8rem', borderRadius: 8, background: 'rgba(15,61,140,0.08)', border: '1px solid rgba(15,61,140,0.18)', color: '#0f3d8c', fontWeight: 800, fontSize: '0.78rem', fontFamily: 'var(--mono)' }}>
+            {step}
+          </div>
+          {index < steps.length - 1 && <span style={{ color: 'var(--muted)', fontWeight: 800 }}>→</span>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function MapTown() {
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+      {[
+        { label: '1990', cells: ['Park', 'Factory', 'Small road', 'Car park'] },
+        { label: '2020', cells: ['School', 'Housing', 'Dual carriageway', 'Shopping centre'] },
+      ].map((map) => (
+        <div key={map.label}>
+          <p style={{ margin: '0 0 0.35rem', fontSize: '0.75rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)' }}>{map.label}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.35rem', padding: '0.55rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
+            {map.cells.map((cell) => (
+              <div key={cell} style={{ minHeight: 42, borderRadius: 6, background: 'var(--bg)', border: '1px solid var(--line-soft)', display: 'grid', placeItems: 'center', color: 'var(--ink-2)', fontSize: '0.74rem', textAlign: 'center', padding: '0.25rem' }}>
+                {cell}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const EXAMPLES = [
@@ -247,6 +328,48 @@ const EXAMPLES = [
       changes: ['shows → compares', 'average → mean', 'employees → workers', 'in → across'],
     },
   },
+  {
+    id: 'table',
+    chartType: 'Tabla',
+    prompt: 'The table below shows the percentage of adults in four age groups who used social media daily in three countries in 2023.',
+    Chart: TableSocialMedia,
+    model1: {
+      text: 'The table provides data on the proportion of adults in four age groups who used social media every day in three countries in 2023.',
+      changes: ['shows → provides data on', 'percentage → proportion', 'used social media daily → used social media every day', 'in three countries → across three countries'],
+    },
+    model2: {
+      text: 'The table compares daily social media use among four adult age groups in the USA, Canada and Australia in 2023.',
+      changes: ['shows → compares', 'adults in four age groups → four adult age groups', 'three countries → USA, Canada and Australia'],
+    },
+  },
+  {
+    id: 'process',
+    chartType: 'Diagrama de proceso',
+    prompt: 'The diagram below shows the process of recycling plastic bottles into new products.',
+    Chart: IELTSProcessDiagramVisual,
+    model1: {
+      text: 'The diagram illustrates the stages involved in recycling used plastic bottles to manufacture new products.',
+      changes: ['shows → illustrates', 'process of recycling → stages involved in recycling', 'plastic bottles → used plastic bottles', 'into new products → to manufacture new products'],
+    },
+    model2: {
+      text: 'The diagram outlines how plastic bottles are recycled and converted into new items.',
+      changes: ['shows → outlines', 'process of recycling → how plastic bottles are recycled', 'into new products → converted into new items'],
+    },
+  },
+  {
+    id: 'map',
+    chartType: 'Mapa',
+    prompt: 'The maps below show the changes that took place in a town centre between 1990 and 2020.',
+    Chart: IELTSMapDiagramVisual,
+    model1: {
+      text: 'The maps illustrate how a town centre changed over the thirty-year period from 1990 to 2020.',
+      changes: ['show → illustrate', 'changes that took place → how a town centre changed', 'between 1990 and 2020 → over the thirty-year period from 1990 to 2020'],
+    },
+    model2: {
+      text: 'The two maps compare the layout of a town centre in 1990 with its layout in 2020.',
+      changes: ['show → compare', 'changes → layout in two years', 'between → in 1990 with its layout in 2020'],
+    },
+  },
 ];
 
 const PRACTICE = [
@@ -267,6 +390,117 @@ const PRACTICE = [
     hint: 'Cambia: "shows" → "illustrates/outlines/depicts", "process of recycling" → "stages involved in recycling / how plastic bottles are recycled", "plastic bottles" → "used plastic bottles"',
     model: 'The diagram illustrates the stages involved in recycling used plastic bottles to manufacture new products.',
     changes: ['shows → illustrates', 'process of recycling → stages involved in recycling', 'plastic bottles → used plastic bottles', 'new products → to manufacture new products (restructura)'],
+  },
+  {
+    prompt: 'The bar chart below shows the average monthly spending on five household categories in Canada in 2024.',
+    hint: 'Cambia: "shows" → "compares/presents", "average monthly spending" → "mean monthly expenditure", "household categories" → "areas of household expenditure"',
+    model: 'The bar chart compares mean monthly expenditure across five areas of household spending in Canada in 2024.',
+    changes: ['shows → compares', 'average monthly spending → mean monthly expenditure', 'five household categories → five areas of household spending'],
+  },
+  {
+    prompt: 'The pie charts below show the proportion of energy produced from six sources in a country in 2000 and 2025.',
+    hint: 'Cambia: "show" → "compare/illustrate", "proportion" → "share", "energy produced from" → "energy generated by", "in 2000 and 2025" → "in two years"',
+    model: 'The pie charts compare the share of energy generated by six sources in a country in 2000 and 2025.',
+    changes: ['show → compare', 'proportion → share', 'energy produced from → energy generated by'],
+  },
+  {
+    prompt: 'The maps below show how a university campus changed between 1995 and 2025.',
+    hint: 'Cambia: "show how changed" → "compare the layout / illustrate changes", "between" → "from ... to"',
+    model: 'The maps illustrate the changes to the layout of a university campus from 1995 to 2025.',
+    changes: ['show → illustrate', 'how a campus changed → changes to the layout of a campus', 'between → from ... to'],
+  },
+  {
+    prompt: 'The table below shows the number of international students enrolled in five subjects at a university in 2015 and 2025.',
+    hint: 'Cambia: "shows" → "presents", "number of" → "figures for", "enrolled in" → "studying / registered on"',
+    model: 'The table presents figures for international students studying five subjects at a university in 2015 and 2025.',
+    changes: ['shows → presents', 'number of → figures for', 'enrolled in → studying'],
+  },
+  {
+    prompt: 'The diagram below shows the life cycle of a salmon, from egg to adult fish.',
+    hint: 'Cambia: "shows" → "illustrates/outlines", "life cycle" → "stages in the development", "from egg to adult fish" → "from the egg stage to maturity"',
+    model: 'The diagram outlines the stages in the development of a salmon from the egg stage to maturity.',
+    changes: ['shows → outlines', 'life cycle → stages in the development', 'adult fish → maturity'],
+  },
+  {
+    prompt: 'The line graph below shows the percentage of people working from home in three industries from 2010 to 2024.',
+    hint: 'Cambia: "percentage of people working from home" → "proportion of remote workers", "in three industries" → "across three sectors"',
+    model: 'The line graph illustrates the proportion of remote workers across three sectors from 2010 to 2024.',
+    changes: ['percentage → proportion', 'people working from home → remote workers', 'industries → sectors'],
+  },
+  {
+    prompt: 'The bar chart below shows participation rates in six sports among teenagers in Australia in 2023.',
+    hint: 'Cambia: "participation rates" → "levels of participation", "among teenagers" → "for teenage Australians"',
+    model: 'The bar chart presents levels of participation in six sports among teenage Australians in 2023.',
+    changes: ['shows → presents', 'participation rates → levels of participation', 'teenagers in Australia → teenage Australians'],
+  },
+  {
+    prompt: 'The charts below show the reasons why students chose online courses and their completion rates in 2024.',
+    hint: 'Cambia: "show the reasons why" → "give information about students reasons", "completion rates" → "the proportion who completed"',
+    model: 'The charts give information about students\' reasons for choosing online courses and the proportion of learners who completed them in 2024.',
+    changes: ['show → give information about', 'reasons why students chose → students reasons for choosing', 'completion rates → proportion who completed'],
+  },
+];
+
+const EXAMPLE_GROUPS = [
+  {
+    id: 'line', label: 'Line graphs', Chart: IELTSLineGraphVisual,
+    examples: [
+      ['Internet access in three regions, 2000–2020.', 'The line graph illustrates the proportion of the population with internet access in three regions over a twenty-year period.', 'The chart presents changes in internet access across three regions from 2000 to 2020.', 'shows → illustrates · percentage → proportion'],
+      ['Public transport trips by mode, 2010–2025.', 'The line graph presents the number of journeys made by three modes of public transport between 2010 and 2025.', 'The chart compares public transport use across three modes over the period from 2010 to 2025.', 'shows → presents · trips → journeys · forms → modes'],
+      ['Households using renewable energy, 2005–2025.', 'The line graph shows the percentage of households using renewable energy in four countries over a twenty-year period.', 'The graph compares the share of households relying on renewable energy in four nations from 2005 to 2025.', 'percentage → share · countries → nations · between → from'],
+      ['Average temperature in three cities, 1990–2020.', 'The line graph illustrates average temperatures in three cities during the period from 1990 to 2020.', 'The chart provides information about mean temperatures across three urban areas over thirty years.', 'shows → illustrates · average → mean · cities → urban areas'],
+      ['Tourist arrivals in Spain and Portugal, 2005–2022.', 'The line graph depicts trends in tourist arrivals in Spain and Portugal over the period from 2005 to 2022.', 'The chart presents changes in visitor numbers in two European countries between 2005 and 2022.', 'shows → depicts · tourists visiting → visitor numbers · between → over'],
+    ],
+  },
+  {
+    id: 'bar', label: 'Bar charts', Chart: IELTSBarChartVisual,
+    examples: [
+      ['Household expenditure by category in 2024.', 'The bar chart presents household expenditure across five categories in 2024.', 'The chart compares spending on five areas of household consumption during 2024.', 'shows → presents · spending → expenditure · types → categories'],
+      ['University facilities chosen by students in 2018.', 'The bar chart illustrates the percentages of students choosing five university facilities in 2018.', 'The chart compares student preferences for different campus facilities in 2018.', 'shows → illustrates · students choosing → student preferences'],
+      ['Daily screen time by age group in 2023.', 'The bar chart presents average daily screen time among five age groups in 2023.', 'The chart compares the mean amount of time spent on screens by people in five age brackets.', 'shows → presents · average → mean · groups → brackets'],
+      ['Annual visitors to four museums in 2010.', 'The bar chart provides data on visitor numbers at four museums in 2010.', 'The chart compares the annual attendance figures for four museums during 2010.', 'shows → provides data on · visitors → attendance figures'],
+      ['Water use in five sectors in 2005.', 'The bar chart depicts water consumption across five sectors in 2005.', 'The chart presents the amount of water used by five different sectors during 2005.', 'shows → depicts · use → consumption · areas → sectors'],
+    ],
+  },
+  {
+    id: 'pie', label: 'Pie charts', Chart: IELTSPieChartVisual,
+    examples: [
+      ['Energy production by source in 2025.', 'The pie chart illustrates the proportions of energy produced from four sources in 2025.', 'The chart presents the share of national energy generation supplied by four sources during 2025.', 'shows → illustrates · proportion → share · produced → generation'],
+      ['Household spending in 2000 and 2020.', 'The pie charts compare household spending across four categories in 2000 and 2020.', 'The two charts illustrate how the distribution of household expenditure changed between 2000 and 2020.', 'show → compare · spending → expenditure · in two years → between'],
+      ['Reasons for choosing online courses in 2024.', 'The pie chart presents the main reasons students chose online courses in 2024.', 'The chart illustrates the distribution of students’ motives for selecting online courses during 2024.', 'shows → presents · reasons → motives · chose → selecting'],
+      ['Visitors to a national park by season.', 'The pie chart depicts the proportions of visitors arriving at a national park in each season.', 'The chart shows how annual park attendance was distributed across the four seasons.', 'shows → depicts · visitors → attendance · by season → across seasons'],
+      ['Electricity generation from four sources.', 'The pie charts compare the shares of electricity generated from four sources in two countries.', 'The two charts provide information about the composition of electricity production in two nations.', 'show → compare · shares → composition · countries → nations'],
+    ],
+  },
+  {
+    id: 'table', label: 'Tables', Chart: IELTSTableVisual,
+    examples: [
+      ['Daily social media use by age group in 2023.', 'The table provides data on daily social media use among four age groups in three countries in 2023.', 'The table compares the proportions of adults using social media every day across four age brackets.', 'shows → provides data on · percentage → proportion · groups → brackets'],
+      ['International students by subject in 2015 and 2025.', 'The table presents figures for international students studying four subjects at a university in 2015, 2020 and 2025.', 'The table compares enrolment numbers across four university subjects over a ten-year period.', 'number → figures · enrolled → studying · years → period'],
+      ['Average commuting time in four cities.', 'The table compares average commuting times by car, bus and train in four cities.', 'The table provides information about mean journey times for three transport modes across four urban areas.', 'shows → compares · time → journey times · cities → urban areas'],
+      ['Tourist satisfaction ratings by facility in 2024.', 'The table presents tourist satisfaction ratings for four facilities in 2024.', 'The table compares visitors’ assessments of accommodation, transport, food and guides during 2024.', 'shows → presents · ratings → assessments · tourists → visitors'],
+      ['Household recycling rates by material.', 'The table illustrates recycling rates for four materials in 2010, 2015 and 2020.', 'The table provides data on the proportion of paper, glass, plastic and metal recycled over a ten-year period.', 'shows → illustrates · percentage → proportion · years → period'],
+    ],
+  },
+  {
+    id: 'process', label: 'Process diagrams', Chart: IELTSProcessDiagramVisual,
+    examples: [
+      ['Recycling plastic bottles.', 'The process diagram illustrates the stages involved in recycling used plastic bottles into new products.', 'The diagram outlines how discarded plastic bottles are collected, treated and converted into new items.', 'shows → illustrates · process → stages · into → converted into'],
+      ['Producing coffee for sale.', 'The diagram presents the stages involved in producing coffee for sale.', 'The process outlines how coffee cherries are transformed into packaged coffee products.', 'shows → presents · produced → transformed · for sale → packaged'],
+      ['Producing bottled water.', 'The diagram illustrates how water is extracted, purified, bottled and distributed for consumption.', 'The process outlines the stages through which spring water becomes a bottled product.', 'shows → illustrates · made → becomes · stages → process'],
+      ['Manufacturing bricks.', 'The diagram depicts the stages involved in manufacturing bricks from clay.', 'The process shows how raw clay is shaped, dried and fired before delivery.', 'shows → depicts · making → manufacturing · from → using'],
+      ['The life cycle of a honey bee.', 'The diagram outlines the stages in the life cycle of a honey bee.', 'The process illustrates how a honey bee develops from an egg into an adult within a colony.', 'shows → outlines · development → life cycle · from → into'],
+    ],
+  },
+  {
+    id: 'map', label: 'Maps', Chart: IELTSMapDiagramVisual,
+    examples: [
+      ['Changes in a town centre, 1990–2020.', 'The maps illustrate how the layout of a town centre changed over the thirty-year period from 1990 to 2020.', 'The two maps compare the arrangement of a town centre in 1990 with its layout in 2020.', 'show → illustrate · changes → layout changed · between → over'],
+      ['Development of a university campus, 1995–2025.', 'The maps present changes to the layout of a university campus between 1995 and 2025.', 'The two maps compare the campus before and after a thirty-year period of development.', 'show → present · changes → development · between → before and after'],
+      ['Changes to a coastal village, 2000–2025.', 'The maps illustrate how a coastal village was transformed between 2000 and 2025.', 'The two maps compare the arrangement of the village at the beginning and end of the period.', 'show → illustrate · changes → transformed · layout → arrangement'],
+      ['Redevelopment of a park, 1980–2020.', 'The maps depict changes to the layout of a park over the forty-year period from 1980 to 2020.', 'The maps compare the park before and after its redevelopment.', 'show → depict · changed → redevelopment · between → before and after'],
+      ['A shopping centre before and after redevelopment.', 'The maps illustrate how the layout of a shopping centre changed after redevelopment.', 'The two maps compare the arrangement of the shopping centre before and after the building work.', 'show → illustrate · layout → arrangement · redevelopment → building work'],
+    ],
   },
 ];
 
@@ -292,24 +526,13 @@ const TIME_SYNS = [
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export default function IntroduccionContent() {
-  const [activeEx, setActiveEx] = useState<number | null>(null);
-  const [practiceIdx, setPracticeIdx] = useState(0);
-  const [text, setText] = useState('');
-  const [revealed, setRevealed] = useState(false);
-
-  const pr = PRACTICE[practiceIdx];
-  const wc = text.trim().split(/\s+/).filter(Boolean).length;
-
-  function nextPractice() {
-    setPracticeIdx(i => (i + 1) % PRACTICE.length);
-    setText('');
-    setRevealed(false);
-  }
+  const [activeGroup, setActiveGroup] = useState('line');
+  const [activeEx, setActiveEx] = useState('line-0');
 
   return (
     <section className="wl-section">
       <div className="wrap">
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
+        <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
 
           {/* Breadcrumb */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
@@ -329,6 +552,20 @@ export default function IntroduccionContent() {
           <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 2rem', lineHeight: 1.65 }}>
             La introducción es lo primero que el examinador lee. Si copias el enunciado, la calificación de <em>Lexical Resource</em> cae inmediatamente. Aquí aprendes a parafrasearla con precisión académica.
           </p>
+
+          <WeLearnDownloadButton
+            href="/downloads/ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf"
+            label="Descargar guía PDF"
+          />
+
+          <Task1OfficialReviewBlock
+            focus="Parafrasear el enunciado sin añadir tendencias, números ni interpretación."
+            officialFormat="IELTS Academic Writing Task 1 pide describir información visual en al menos 150 palabras. La introducción no es una tarea oficial separada; es una parte estratégica de la respuesta."
+            welearnStrategy="Entrenamos la introducción como microhabilidad porque reduce copia literal del prompt y prepara el overview."
+            answerCheck="Una buena respuesta cambia vocabulario y estructura, conserva todos los datos del enunciado y no inventa conclusiones."
+          />
+
+          <Task1ChartTypeGuide />
 
           {/* ── SECCIÓN 1: TEORÍA ─────────────────────────────────────────── */}
           <div style={{ background: `${C}07`, border: `1.5px solid ${C}22`, borderRadius: 18, padding: '1.75rem', marginBottom: '2rem' }}>
@@ -409,7 +646,7 @@ export default function IntroduccionContent() {
               { title: 'Sustantivos', rows: NOUN_SYNS },
               { title: 'Expresiones de tiempo', rows: TIME_SYNS },
             ].map(tbl => (
-              <div key={tbl.title} style={{ padding: '1rem 1.25rem', borderRadius: 14, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+              <div key={tbl.title} style={{ padding: '1rem 1.25rem', borderRadius: 14, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', overflowWrap: 'anywhere' }}>
                 <p style={{ fontSize: '0.68rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.6rem' }}>{tbl.title}</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {tbl.rows.map(r => (
@@ -432,129 +669,74 @@ export default function IntroduccionContent() {
           {/* ── SECCIÓN 3: EJEMPLOS CON GRÁFICAS ─────────────────────────── */}
           <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Ejemplos con gráficas reales</p>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.25rem' }}>
-            Estudia cada gráfica + enunciado y compara la introducción original con las dos versiones parafraseadas. Haz clic en cada ejemplo para expandirlo.
+            Cada tipo de visual tiene cinco referencias distintas. Estudia el enunciado, observa qué información debe conservarse y compara dos maneras válidas de parafrasearlo.
           </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2.5rem' }}>
-            {EXAMPLES.map((ex, idx) => {
-              const isOpen = activeEx === idx;
-              const { Chart } = ex;
-              return (
-                <div key={ex.id} style={{ borderRadius: 18, border: `1.5px solid ${isOpen ? C : 'var(--line-soft)'}`, overflow: 'hidden', transition: 'border-color 0.2s' }}>
-                  <button
-                    onClick={() => setActiveEx(isOpen ? null : idx)}
-                    style={{ width: '100%', padding: '1.1rem 1.4rem', background: isOpen ? `${C}08` : 'var(--bg)', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.75rem', textAlign: 'left' }}
-                  >
-                    <span style={{ fontSize: '0.62rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', background: `${C}15`, padding: '0.2rem 0.55rem', borderRadius: 6, flexShrink: 0 }}>Ejemplo {idx + 1}</span>
-                    <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--ink)', flex: 1 }}>{ex.chartType}</span>
-                    <span style={{ color: C, fontSize: '1rem', transition: 'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>▾</span>
-                  </button>
+          <div style={{ marginBottom: '2.5rem' }}>
+            <div role="tablist" aria-label="Tipos de visual" style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', paddingBottom: '0.55rem', borderBottom: '1px solid var(--line-soft)', scrollbarWidth: 'thin' }}>
+              {EXAMPLE_GROUPS.map((group) => (
+                <button key={group.id} type="button" role="tab" aria-selected={activeGroup === group.id} onClick={() => { setActiveGroup(group.id); setActiveEx(`${group.id}-0`); }} style={{ flex: '0 0 auto', minWidth: 126, padding: '0.7rem 0.85rem', borderRadius: 10, border: `1px solid ${activeGroup === group.id ? C : 'var(--line-soft)'}`, background: activeGroup === group.id ? `${C}10` : 'var(--bg)', color: activeGroup === group.id ? C : 'var(--muted)', cursor: 'pointer', textAlign: 'left' }}>
+                  <span style={{ display: 'block', fontSize: '0.68rem', fontFamily: 'var(--mono)', fontWeight: 800, textTransform: 'uppercase' }}>{group.label}</span>
+                  <span style={{ display: 'block', marginTop: '0.2rem', fontSize: '0.72rem' }}>5 referencias</span>
+                </button>
+              ))}
+            </div>
 
-                  {isOpen && (
-                    <div style={{ padding: '0 1.4rem 1.4rem' }}>
-                      {/* Chart */}
-                      <div style={{ background: 'var(--bg-2)', borderRadius: 12, padding: '1rem', marginBottom: '1rem', border: '1px solid var(--line-soft)' }}>
-                        <p style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.75rem' }}>Gráfica del examen</p>
-                        <Chart />
-                      </div>
-
-                      {/* Original prompt */}
-                      <div style={{ padding: '0.9rem 1.1rem', borderRadius: 10, background: 'rgba(220,38,38,0.06)', border: '1px solid rgba(220,38,38,0.2)', marginBottom: '1rem' }}>
-                        <p style={{ fontSize: '0.65rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.4rem' }}>Enunciado original — NO copies esto</p>
-                        <p style={{ margin: 0, fontSize: '0.92rem', color: 'var(--ink)', lineHeight: 1.65, fontStyle: 'italic' }}>&ldquo;{ex.prompt}&rdquo;</p>
-                      </div>
-
-                      {/* Model 1 */}
-                      <div style={{ padding: '1rem 1.1rem', borderRadius: 10, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.22)', marginBottom: '0.65rem' }}>
-                        <p style={{ fontSize: '0.65rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.4rem' }}>Introducción modelo A — Band 7+</p>
-                        <p style={{ margin: '0 0 0.65rem', fontSize: '0.95rem', color: 'var(--ink)', lineHeight: 1.7 }}>{ex.model1.text}</p>
-                        <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap' }}>
-                          {ex.model1.changes.map(c => (
-                            <span key={c} style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(5,150,105,0.1)', color: '#059669', border: '1px solid rgba(5,150,105,0.25)', fontFamily: 'var(--mono)' }}>{c}</span>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Model 2 */}
-                      <div style={{ padding: '1rem 1.1rem', borderRadius: 10, background: `${C}06`, border: `1px solid ${C}22` }}>
-                        <p style={{ fontSize: '0.65rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.4rem' }}>Introducción modelo B — alternativa válida</p>
-                        <p style={{ margin: '0 0 0.65rem', fontSize: '0.95rem', color: 'var(--ink)', lineHeight: 1.7 }}>{ex.model2.text}</p>
-                        <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap' }}>
-                          {ex.model2.changes.map(c => (
-                            <span key={c} style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: `${C}10`, color: C, border: `1px solid ${C}25`, fontFamily: 'var(--mono)' }}>{c}</span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  )}
+            {EXAMPLE_GROUPS.filter((group) => group.id === activeGroup).map((group) => (
+              <div key={group.id} role="tabpanel" style={{ paddingTop: '1.25rem' }}>
+                <p style={{ margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.6 }}>Seleccionaste <strong style={{ color: C }}>{group.label}</strong>. Elige una referencia para estudiar su visual y su paráfrasis con espacio suficiente.</p>
+                <div aria-label={`Referencias de ${group.label}`} style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', padding: '0.15rem 0.1rem 0.7rem', scrollbarWidth: 'thin' }}>
+                  {group.examples.map((example, exampleIndex) => {
+                    const exampleId = `${group.id}-${exampleIndex}`;
+                    const isSelected = activeEx === exampleId;
+                    return (
+                      <button key={exampleId} type="button" aria-current={isSelected ? 'true' : undefined} onClick={() => setActiveEx(exampleId)} style={{ flex: '1 0 150px', maxWidth: 190, minHeight: 66, padding: '0.7rem 0.75rem', borderRadius: 10, border: `1px solid ${isSelected ? C : 'var(--line-soft)'}`, background: isSelected ? `${C}0b` : 'var(--bg)', cursor: 'pointer', textAlign: 'left', boxShadow: isSelected ? `inset 0 -3px 0 ${C}` : 'none' }}>
+                        <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)' }}>EJEMPLO 0{exampleIndex + 1}</span>
+                        <span style={{ display: 'block', marginTop: '0.25rem', fontSize: '0.78rem', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.35 }}>{example[0]}</span>
+                      </button>
+                    );
+                  })}
                 </div>
-              );
-            })}
+                {(() => {
+                  const exampleIndex = Math.max(0, group.examples.findIndex((_, index) => `${group.id}-${index}` === activeEx));
+                  const example = group.examples[exampleIndex];
+                  const Chart = group.Chart;
+                  return (
+                    <article style={{ marginTop: '0.65rem', borderRadius: 14, border: '1px solid var(--line-soft)', background: 'var(--bg)', overflow: 'hidden' }}>
+                      <div style={{ padding: '0.8rem 1rem', background: `${C}08`, borderBottom: '1px solid var(--line-soft)', display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap' }}>
+                        <strong style={{ color: C, fontSize: '0.9rem' }}>Ejemplo {String(exampleIndex + 1).padStart(2, '0')} · {example[0]}</strong>
+                        <span style={{ color: 'var(--muted)', fontSize: '0.72rem', fontFamily: 'var(--mono)' }}>Referencia {exampleIndex + 1} de 5</span>
+                      </div>
+                      <div className="task1-intro-example-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(320px, 0.95fr)', gap: '1rem', padding: '1rem', alignItems: 'start' }}>
+                        <div style={{ background: 'var(--bg-2)', borderRadius: 10, padding: '0.75rem', border: '1px solid var(--line-soft)', minWidth: 0 }}>
+                          <p style={{ fontSize: '0.61rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.55rem' }}>Visual IELTS de referencia</p>
+                          <Chart variant={exampleIndex} />
+                        </div>
+                        <div style={{ minWidth: 0 }}>
+                          <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(220,38,38,0.06)', border: '1px solid rgba(220,38,38,0.2)', marginBottom: '0.65rem' }}>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Tema del enunciado</p>
+                            <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.55, fontStyle: 'italic', fontSize: '0.88rem' }}>{example[0]}</p>
+                          </div>
+                          <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.22)', marginBottom: '0.6rem' }}>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Modelo A · Band 7+</p>
+                            <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{example[1]}</p>
+                          </div>
+                          <div style={{ padding: '0.8rem', borderRadius: 8, background: `${C}06`, border: `1px solid ${C}22` }}>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Modelo B · alternativa válida</p>
+                            <p style={{ margin: '0 0 0.5rem', color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{example[2]}</p>
+                            <span style={{ fontSize: '0.68rem', color: C, fontFamily: 'var(--mono)', lineHeight: 1.45 }}>{example[3]}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  );
+                })()}
+              </div>
+            ))}
           </div>
 
           {/* ── SECCIÓN 4: PRÁCTICA INTERACTIVA ─────────────────────────── */}
-          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Práctica interactiva</p>
-          <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.25rem' }}>
-            Lee el enunciado y escribe tu propia introducción parafraseada. Luego revela la versión modelo.
-          </p>
-
-          {/* Progress */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-            <div style={{ flex: 1, height: 5, background: 'var(--line-soft)', borderRadius: 4 }}>
-              <div style={{ height: '100%', width: `${((practiceIdx + 1) / PRACTICE.length) * 100}%`, background: C, borderRadius: 4, transition: 'width 0.4s' }} />
-            </div>
-            <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{practiceIdx + 1}/{PRACTICE.length}</span>
-          </div>
-
-          {/* Prompt */}
-          <div className="wl-card" style={{ padding: '1.25rem', borderLeft: `4px solid ${C}`, marginBottom: '0.85rem' }}>
-            <p style={{ fontSize: '0.65rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>Enunciado</p>
-            <p style={{ margin: 0, fontSize: '0.97rem', lineHeight: 1.7, color: 'var(--ink)', fontStyle: 'italic' }}>&ldquo;{pr.prompt}&rdquo;</p>
-          </div>
-
-          {/* Hint */}
-          {!revealed && (
-            <div style={{ padding: '0.75rem 1rem', borderRadius: 10, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.25)', marginBottom: '0.85rem', fontSize: '0.84rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>
-              <strong style={{ color: '#d97706' }}>Pistas:</strong> {pr.hint}
-            </div>
-          )}
-
-          {/* Textarea */}
-          <div style={{ marginBottom: '0.85rem' }}>
-            <textarea
-              value={text}
-              onChange={e => setText(e.target.value)}
-              placeholder="Escribe aquí tu introducción parafraseada (1–2 oraciones, 30–45 palabras)…"
-              rows={3}
-              style={{ width: '100%', padding: '0.85rem', borderRadius: 10, border: `1.5px solid ${wc > 0 ? C + '55' : 'var(--line-soft)'}`, background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.95rem', fontFamily: 'inherit', lineHeight: 1.6, resize: 'vertical', boxSizing: 'border-box' }}
-            />
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.35rem' }}>
-              <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: wc >= 30 && wc <= 45 ? '#059669' : wc > 45 ? '#dc2626' : 'var(--muted)', fontWeight: wc > 0 ? 700 : 400 }}>
-                {wc} palabras {wc >= 30 && wc <= 45 ? '✓ longitud ideal' : wc > 45 ? '— un poco larga' : wc > 10 ? '— sigue escribiendo' : ''}
-              </span>
-              {text.trim().length > 15 && !revealed && (
-                <button className="btn btn-sm" onClick={() => setRevealed(true)}>Ver modelo →</button>
-              )}
-            </div>
-          </div>
-
-          {/* Model */}
-          {revealed && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.25rem' }}>
-              <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669' }}>
-                <p style={{ fontSize: '0.65rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>Introducción modelo</p>
-                <p style={{ margin: '0 0 0.65rem', fontSize: '0.95rem', lineHeight: 1.7, color: 'var(--ink)' }}>{pr.model}</p>
-                <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap' }}>
-                  {pr.changes.map(c => (
-                    <span key={c} style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(5,150,105,0.1)', color: '#059669', border: '1px solid rgba(5,150,105,0.25)', fontFamily: 'var(--mono)' }}>{c}</span>
-                  ))}
-                </div>
-              </div>
-              <button className="btn btn-sm" onClick={nextPractice} style={{ alignSelf: 'flex-start' }}>
-                {practiceIdx < PRACTICE.length - 1 ? 'Siguiente ejercicio →' : 'Volver al inicio →'}
-              </button>
-            </div>
-          )}
+          <Task1IntroductionPracticeEngine />
 
           {/* Next skill */}
           <div style={{ marginTop: '2rem', padding: '1.1rem 1.3rem', borderRadius: 14, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>

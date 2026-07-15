@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
+import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 
 interface Step {
   n: number;
@@ -64,7 +66,7 @@ export default function ProcesosPage() {
   return (
     <section className="wl-section">
       <div className="wrap">
-        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
             <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Procesos</span>
@@ -75,6 +77,15 @@ export default function ProcesosPage() {
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.25rem', lineHeight: 1.65 }}>
             Los procesos usan siempre voz pasiva y secuenciadores. Convierte cada paso activo a pasivo y elige el secuenciador correcto.
           </p>
+
+          <Task1OfficialReviewBlock
+            focus="Describir etapas en orden lógico con voz pasiva y secuencia clara."
+            officialFormat="IELTS Academic Writing Task 1 puede pedir describir un proceso como información visual. Proceso es una forma posible del input, no una sección oficial separada."
+            welearnStrategy="Entrenamos procesos aparte porque exigen gramática pasiva, orden temporal y ausencia de opinión."
+            answerCheck="Una respuesta fuerte agrupa etapas, usa secuenciadores precisos y evita inventar causas que el diagrama no muestra."
+          />
+
+          <Task1ChartTypeGuide />
 
           {/* Grammar box */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>

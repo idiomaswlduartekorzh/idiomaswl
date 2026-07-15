@@ -397,6 +397,7 @@ export default function HomePage() {
             <div className="wlh-hero__ctas">
               <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Diagnóstico de nivel gratis →</a>
               <Link href="#plataforma" className="btn btn-ghost wlh-hero__btn-ghost">Ver la plataforma</Link>
+              <Link href="/nivel-radar" className="btn btn-ghost wlh-hero__btn-ghost">Diagnóstico de nivel</Link>
             </div>
           </HeroItem>
           <HeroItem>

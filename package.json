@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
+    "dev:safe": "node scripts/safe-dev.js",
+    "panic": "node scripts/panic-kill.js",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:exam-practice-content": "node scripts/check-exam-practice-content.mjs",
+    "audit:ielts": "node scripts/audit-ielts-routes.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

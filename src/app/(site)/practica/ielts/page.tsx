@@ -3,8 +3,9 @@ import IELTSHubClient from './IELTSHubClient';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Práctica IELTS — Reading True/False/Not Given | Idiomas WeLearn',
-  description: 'Practica IELTS Academic Reading: True/False/Not Given con pasaje real, feedback inmediato y estrategias para Band 6–8.',
+  title: 'Práctica IELTS: Academic, General Training, Reading y Writing',
+  description:
+    'Practica IELTS en español con rutas Academic y General Training, Reading por tipos de pregunta, habilidades, Writing Task 1 y Task 2 con ejercicios explicados.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts' },
 };
 
@@ -12,12 +13,12 @@ export default function IELTSPage() {
   return (
     <>
       <CourseSchema
-        name="Práctica IELTS Academic — Reading y Writing"
-        description="Practica IELTS Academic: True/False/Not Given, Task 1 y Task 2. Feedback inmediato y estrategias para Band 6–8."
+        name="Práctica IELTS — Academic y General Training"
+        description="Practica IELTS con rutas Academic y General Training, Reading por tipos de pregunta, habilidades de lectura, Writing Task 1 y Task 2 con ejercicios explicados."
         url="https://www.idiomaswl.com/practica/ielts"
         educationalLevel="B1,B2,C1"
-        teaches="IELTS Academic, Reading, Writing, inglés"
-        inLanguage="en"
+        teaches="IELTS Academic, IELTS General Training, Reading, Writing, inglés"
+        inLanguage="es-CO"
       />
       <IELTSHubClient />
     </>

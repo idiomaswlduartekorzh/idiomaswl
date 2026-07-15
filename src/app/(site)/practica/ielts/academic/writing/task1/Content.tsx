@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Task1ChartTypeGuide from './Task1ChartTypeGuide';
 
 const SKILLS = [
   {
@@ -87,8 +88,8 @@ export default function Task1HubPage() {
             <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>IELTS / Academic / Writing / Task 1</span>
           </div>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📊 IELTS Academic Writing Task 1</p>
-          <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
+          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />IELTS Academic Writing Task 1</p>
+          <h1 style={{ fontSize: '2rem', letterSpacing: 0, margin: '0 0 0.5rem', fontWeight: 700 }}>
             Writing Task 1
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem', lineHeight: 1.6 }}>
@@ -101,6 +102,33 @@ export default function Task1HubPage() {
               <span key={t} style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{t}</span>
             ))}
           </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+              gap: '1rem',
+              marginBottom: '2rem',
+            }}
+          >
+            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
+              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Formato oficial vs estrategia WeLearn</h2>
+              <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
+                IELTS Academic Writing Task 1 pide describir información visual en al menos 150 palabras. WeLearn lo
+                divide en microhabilidades para practicar introducción, overview, selección de datos, comparaciones,
+                procesos, mapas y vocabulario antes de escribir una respuesta completa.
+              </p>
+            </article>
+            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#f8fafc' }}>
+              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Respuesta explicada</h2>
+              <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
+                Cada ruta practica una parte de la respuesta y explica qué revisar: si el overview resume el patrón
+                principal, si las comparaciones son relevantes y si el lenguaje de datos mantiene precisión.
+              </p>
+            </article>
+          </div>
+
+          <Task1ChartTypeGuide />
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
             {SKILLS.map(sk => (

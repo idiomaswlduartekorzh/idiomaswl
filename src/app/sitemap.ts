@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/blog';
 import { getTopicsByLevel } from '@/data/grammar/registry';
+import { EXAM_PRACTICE_ROUTES } from '@/data/practica-exams/seo-catalog';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -26,6 +27,8 @@ const SKILLS = ['lectura', 'gramatica', 'escritura', 'vocabulario', 'habla', 'es
 const PUBLISHED_DAYS = [1, 2, 3, 4, 6, 7];
 
 const EXAM_SLUGS = ['ielts', 'toefl', 'icfes', 'topik', 'goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2'];
+
+const PUBLISHED_EXAM_PRACTICE_ROUTES = EXAM_PRACTICE_ROUTES.filter((route) => route.status === 'published');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -116,22 +119,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Practice — IELTS ──────────────────────────────────────────────────────
     { url: `${BASE}/practica/ielts`,                          lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
+    { url: `${BASE}/practica/ielts/general-training`,         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/ielts/general-training/reading`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.67 },
+    { url: `${BASE}/practica/ielts/general-training/writing/task1`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.66 },
+    { url: `${BASE}/practica/ielts/general-training/writing/task2`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.66 },
+    { url: `${BASE}/practica/ielts/reading`,                   lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/ielts/reading/tipos-de-preguntas`, lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.76 },
+    { url: `${BASE}/practica/ielts/reading/habilidades`,        lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.74 },
     { url: `${BASE}/practica/ielts/academic`,                 lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.8  },
     { url: `${BASE}/practica/ielts/academic/writing`,         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.75 },
+    { url: `${BASE}/practica/ielts/academic/writing/rubrica`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
     { url: `${BASE}/practica/ielts/academic/writing/task1`,   lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7  },
     { url: `${BASE}/practica/ielts/academic/writing/task2`,   lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7  },
-    ...(['introduccion', 'overview', 'tendencias', 'comparaciones', 'procesos', 'mapas', 'tarea-completa'] as const).map((s) => ({
+    ...(['introduccion', 'overview', 'tendencias', 'comparaciones', 'procesos', 'mapas', 'vocabulario', 'tarea-completa', 'graficos-lineales', 'graficos-de-barras', 'pie-charts', 'tablas'] as const).map((s) => ({
       url: `${BASE}/practica/ielts/academic/writing/task1/${s}`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
-    ...(['tipo-ensayo', 'introduccion', 'parrafos-cuerpo', 'linking-language', 'conclusion', 'tarea-completa'] as const).map((s) => ({
+    { url: `${BASE}/recursos/ielts-writing-task-1-introduccion-pdf`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.78 },
+    ...(['tipo-ensayo', 'introduccion', 'parrafos-cuerpo', 'linking-language', 'conclusion', 'tarea-completa', 'opinion', 'discussion', 'advantages-disadvantages', 'problem-solution', 'direct-question', 'model-answers'] as const).map((s) => ({
       url: `${BASE}/practica/ielts/academic/writing/task2/${s}`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
+    ...PUBLISHED_EXAM_PRACTICE_ROUTES.map((route) => ({
+      url: `${BASE}${route.path}`,
+      lastModified: now,
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+    })),
+
+    // ── Practice — TOEFL ──────────────────────────────────────────────────────
+    { url: `${BASE}/practica/toefl`,                            lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.84 },
+    { url: `${BASE}/practica/toefl/reading`,                    lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/toefl/reading/tipos-de-preguntas`, lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.76 },
+    { url: `${BASE}/practica/toefl/writing`,                    lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/toefl/writing/model-answers`,      lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
+    { url: `${BASE}/practica/toefl/writing/rubrica`,            lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
+    { url: `${BASE}/practica/toefl/writing/grammar-for-writing`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
+    { url: `${BASE}/practica/toefl/writing/academic-discussion/banco-de-prompts`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.69 },
+    { url: `${BASE}/practica/toefl/writing/write-an-email/banco-de-prompts`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.69 },
 
     // ── Korean lesson steps ────────────────────────────────────────────────────
     ...PUBLISHED_DAYS.map((day) => ({

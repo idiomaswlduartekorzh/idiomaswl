@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 
 type Phase = 'select' | 'plan' | 'write' | 'checklist' | 'rubric' | 'models';
 
@@ -176,8 +177,14 @@ export default function TareaCompletaTask2Client() {
       <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />⏱ Sub-habilidad 6</p>
       <h1 style={{ fontSize: '1.75rem', fontWeight: 700, letterSpacing: '-0.03em', margin: '0 0 0.5rem' }}>Tarea Completa</h1>
       <p style={{ color: 'var(--muted)', fontSize: '0.93rem', margin: '0 0 1.75rem', lineHeight: 1.65 }}>
-        40 minutos. 250–280 palabras. Elige un prompt y escribe tu ensayo completo bajo condiciones de examen. Después compara con modelos reales Band 6 y Band 8.
+        40 minutos. 250–280 palabras. Elige un prompt y escribe tu ensayo completo bajo condiciones de examen. Después compara con modelos pedagógicos Band 6 y Band 8.
       </p>
+      <Task2OfficialReviewBlock
+        focus="Planear, escribir, revisar y comparar un ensayo completo bajo tiempo."
+        officialFormat="IELTS Academic Writing Task 2 dura aproximadamente 40 minutos dentro de Writing y exige al menos 250 palabras en respuesta a una pregunta."
+        welearnStrategy="Esta ruta simula el flujo completo con prompts originales, planificación, escritura, checklist y comparación pedagógica de modelos."
+        answerCheck="Una respuesta completa debe contestar el prompt, sostener una tesis, desarrollar párrafos y revisar cohesión, vocabulario y gramática antes de entregar."
+      />
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
         {PROMPTS.map((pr, i) => (
           <button key={i} onClick={() => { setPIdx(i); setPhase('plan'); }}

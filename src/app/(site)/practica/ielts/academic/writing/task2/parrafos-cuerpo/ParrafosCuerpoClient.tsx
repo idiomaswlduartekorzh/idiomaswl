@@ -1,6 +1,8 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
+import Task2LegoGuide from '../Task2LegoGuide';
 
 const BAND_COMPARE = {
   prompt: 'Governments should invest more in public transport than in road construction.',
@@ -87,6 +89,34 @@ const EXERCISES: Exercise[] = [
     e2model: 'The UK\'s sugar levy, introduced in 2018, prompted manufacturers to reformulate over 50% of affected products, reducing average sugar content by 28.8% without significant revenue losses for the industry — demonstrating that tax-based interventions can achieve meaningful dietary change.',
     lLabel: 'Link — conecta la solución con el problema específico que mencionaste en el Body 1',
     lModel: 'These complementary measures directly address the two root causes identified earlier: by making unhealthy food more expensive and physical activity more accessible, they reshape the everyday choices that collectively determine population-level health outcomes.',
+  },
+];
+
+const BODY_PLANS = [
+  {
+    type: 'Opinión',
+    body1: 'Razón principal que sostiene tu postura.',
+    body2: 'Segunda razón o contraargumento refutado sin perder tu posición.',
+  },
+  {
+    type: 'Discusión',
+    body1: 'Primera postura explicada con neutralidad y ejemplo.',
+    body2: 'Segunda postura explicada con neutralidad, seguida de tu evaluación.',
+  },
+  {
+    type: 'Problema-Solución',
+    body1: 'Causas/problemas específicos, no una lista vaga.',
+    body2: 'Soluciones que responden directamente a esas causas.',
+  },
+  {
+    type: 'Ventajas-Desventajas',
+    body1: 'Ventajas con impacto real y evidencia.',
+    body2: 'Desventajas más evaluación: cuál lado pesa más y por qué.',
+  },
+  {
+    type: 'Dos preguntas',
+    body1: 'Respuesta completa a la primera pregunta.',
+    body2: 'Respuesta completa a la segunda pregunta, sin convertirla en otro tipo.',
   },
 ];
 
@@ -178,6 +208,32 @@ export default function ParrafosCuerpoClient() {
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
             Todo párrafo de cuerpo Band 7+ sigue TEEL: Topic sentence (qué argumentas) → Explanation (cómo funciona) → Example (evidencia específica) → Link (conexión con el ensayo). El topic sentence ya está escrito — tú construyes E + E + L.
           </p>
+
+          <Task2OfficialReviewBlock
+            focus="Desarrollar párrafos de cuerpo con idea, explicación, evidencia y conexión."
+            officialFormat="IELTS Academic Writing Task 2 evalúa desarrollo de ideas dentro de un ensayo completo. TEEL es una estructura pedagógica WeLearn, no una plantilla oficial obligatoria."
+            welearnStrategy="Usamos TEEL para que cada párrafo haga trabajo argumentativo real y no se quede en afirmaciones generales."
+            answerCheck="Una respuesta fuerte explica el mecanismo, añade evidencia específica y cierra el párrafo conectándolo con la tesis."
+          />
+
+          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1rem', borderTop: '3px solid #0f3d8c' }}>
+            <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.08rem', letterSpacing: 0 }}>Body 1 y Body 2 cambian según el tipo de pregunta</h2>
+            <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.88rem' }}>
+              TEEL es el motor interno del párrafo, pero la función del párrafo depende del prompt. Antes de escribir,
+              decide qué bloque debe construir cada body paragraph.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '0.75rem' }}>
+              {BODY_PLANS.map((plan) => (
+                <article key={plan.type} style={{ padding: '0.85rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
+                  <p style={{ margin: '0 0 0.35rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.74rem' }}>{plan.type}</p>
+                  <p style={{ margin: '0 0 0.25rem', color: 'var(--ink-2)', lineHeight: 1.45, fontSize: '0.8rem' }}><strong>Body 1:</strong> {plan.body1}</p>
+                  <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.45, fontSize: '0.8rem' }}><strong>Body 2:</strong> {plan.body2}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <Task2LegoGuide />
 
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.5rem', cursor: 'pointer' }} onClick={() => setShowCompare(v => !v)}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

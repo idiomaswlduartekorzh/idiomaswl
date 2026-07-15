@@ -1,14 +1,17 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
+import Task2EssayTypeGuide from '../Task2EssayTypeGuide';
+import Task2LegoGuide from '../Task2LegoGuide';
 
-const TYPES = ['Opinión', 'Discusión', 'Problema-Solución', 'Dos preguntas'] as const;
+const TYPES = ['Opinión', 'Discusión', 'Problema-Solución', 'Ventajas-Desventajas', 'Dos preguntas'] as const;
 type T = typeof TYPES[number];
 
 const GUIDE: Record<T, { color: string; bg: string; keywords: string[]; structure: string; trap: string; band8: string }> = {
   'Opinión': {
     color: '#0f3d8c', bg: 'rgba(15,61,140,0.07)',
-    keywords: ['"To what extent do you agree or disagree?"', '"Do you agree or disagree?"', '"Do you think the advantages outweigh the disadvantages?"'],
+    keywords: ['"To what extent do you agree or disagree?"', '"Do you agree or disagree?"', '"Do you support or oppose this view?"'],
     structure: 'Intro (tesis clara) → Body 1 (argumento principal + evidencia) → Body 2 (segundo arg. o refuta contraargumento) → Conclusión',
     trap: 'Error Band 5: presentar "ambos lados por igual" como si fuera Discusión. Debes tomar UNA posición y defenderla.',
     band8: 'Band 8: posición clara desde la intro, mantenida en CADA párrafo. Evidencia específica. Sin frases como "On one hand / On the other hand" sin tomar partido.',
@@ -26,6 +29,13 @@ const GUIDE: Record<T, { color: string; bg: string; keywords: string[]; structur
     structure: 'Intro → Body 1 (2–3 causas con ejemplos) → Body 2 (soluciones que RESPONDEN directamente a esas causas) → Conclusión',
     trap: 'Error Band 5: proponer soluciones genéricas que no responden a las causas que mencionaste. La conexión causa→solución es obligatoria.',
     band8: 'Band 8: cada solución del Body 2 responde explícitamente a una causa del Body 1. Cadena lógica cerrada y coherente.',
+  },
+  'Ventajas-Desventajas': {
+    color: '#0891b2', bg: 'rgba(8,145,178,0.07)',
+    keywords: ['"What are the advantages and disadvantages?"', '"Do the advantages outweigh the disadvantages?"', '"Is this a positive or negative development?"'],
+    structure: 'Intro → Body 1 (ventajas) → Body 2 (desventajas + evaluación si pide outweigh) → Conclusión',
+    trap: 'Error Band 5: listar pros y contras sin decidir si un lado pesa más cuando el prompt pregunta "outweigh".',
+    band8: 'Band 8: ventajas y desventajas se explican con impacto real; si el prompt pide outweigh, tu tesis y conclusión dejan claro qué lado domina.',
   },
   'Dos preguntas': {
     color: '#d97706', bg: 'rgba(217,119,6,0.07)',
@@ -57,6 +67,13 @@ const QUIZ = [
     hint: '¿Cuántas preguntas hay? "What are the CAUSES?" y "What ACTIONS can be taken?" — son causa + solución. El tipo se llama Problema-Solución.',
     explanation: 'Las dos preguntas "causas + medidas" siempre indican Problema-Solución. Crítico: tus soluciones en Body 2 DEBEN responder a las causas que mencionaste en Body 1. Esta coherencia lógica diferencia Band 7 de Band 5.',
     keyword: 'What are the causes? / What actions can be taken?',
+  },
+  {
+    prompt: 'In many countries, more people are choosing to study online rather than attending traditional classes. Do the advantages of this development outweigh the disadvantages?',
+    type: 'Ventajas-Desventajas' as T, difficulty: 'Básico',
+    hint: 'La palabra clave es "advantages ... outweigh the disadvantages". Debes discutir ambos lados, pero también decidir cuál pesa más.',
+    explanation: 'Este prompt no es Opinión general aunque pida juicio. Es Ventajas-Desventajas con evaluación outweigh. Body 1 puede desarrollar ventajas; Body 2 puede desarrollar desventajas y explicar por qué pesan menos o más. La conclusión debe responder explícitamente si las ventajas superan las desventajas.',
+    keyword: 'Do the advantages outweigh the disadvantages?',
   },
   {
     prompt: 'An increasing number of people are leaving rural areas to live in cities. Why is this happening? Do you think this is a positive or negative development?',
@@ -191,8 +208,18 @@ export default function TipoEnsayoClient() {
           <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Identifica el tipo de ensayo</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.75rem', lineHeight: 1.65 }}>
             El error de identificación es el más costoso del Task 2: si eliges la estructura equivocada, <strong>tu Task Response no puede superar Band 5</strong>, sin importar lo bien que escribas.
-            Estudia los 4 tipos y sus señales antes de practicar.
+            Estudia los 5 tipos y sus señales antes de practicar.
           </p>
+
+          <Task2OfficialReviewBlock
+            focus="Reconocer la instrucción del prompt antes de elegir estructura."
+            officialFormat="IELTS Academic Writing Task 2 pide escribir un ensayo de al menos 250 palabras en respuesta a una pregunta. Las etiquetas opinión, discusión, problema-solución, ventajas-desventajas y dos preguntas son categorías pedagógicas WeLearn."
+            welearnStrategy="Entrenamos tipos de ensayo para evitar errores de Task Response: responder una pregunta distinta o usar una estructura que el prompt no pidió."
+            answerCheck="La respuesta correcta se decide por la instrucción final del prompt, no por el tema general ni por cuántas posturas aparecen en el enunciado."
+          />
+
+          <Task2EssayTypeGuide />
+          <Task2LegoGuide />
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '0.85rem', marginBottom: '2rem' }}>
             {(Object.keys(GUIDE) as T[]).map(type => {
@@ -228,7 +255,7 @@ export default function TipoEnsayoClient() {
           </div>
 
           <button className="btn" style={{ width: '100%', fontSize: '1rem', padding: '0.9rem' }} onClick={() => { setPhase('quiz'); setGuideOpen(null); }}>
-            Empezar práctica — 8 ejercicios →
+            Empezar práctica — {QUIZ.length} ejercicios →
           </button>
         </div>
       </div>

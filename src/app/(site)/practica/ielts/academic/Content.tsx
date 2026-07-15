@@ -55,6 +55,15 @@ export default function IELTSAcademicPage() {
             Modalidad requerida por universidades, programas de posgrado y visas de estudiante en UK, Australia y Canadá.
             Elige la habilidad que quieres practicar.
           </p>
+          <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 8, marginBottom: '1.25rem' }}>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+            <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
+              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic evalúa Listening, Reading, Writing y Speaking. En esta zona empezamos por Reading y Writing porque son las rutas con bancos completos, ejercicios y respuestas explicadas.
+            </p>
+            <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
+              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> separa el estudio por habilidad: Reading combina tipos oficiales de pregunta con habilidades como skimming y scanning; Writing separa Task 1, Task 2, rúbrica y modelos comentados.
+            </p>
+          </section>
 
           <div className="wl-exams-catalog">
             {SKILLS.map(sk => (

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 
 const BANK = [
   { cat: 'Adición', color: '#0f3d8c', bg: 'rgba(15,61,140,0.08)', items: ['Furthermore', 'Moreover', 'In addition', 'Additionally', 'What is more', 'Not only... but also'] },
@@ -191,6 +192,13 @@ export default function LinkingLanguageClient() {
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
             Los conectores determinan la lógica de tu argumento. El error más común de Band 5–6 es usar conectores de adición cuando se necesita contraste, o mezclar funciones. Cada conector tiene una función específica — aprende a elegir por la relación lógica entre las cláusulas.
           </p>
+
+          <Task2OfficialReviewBlock
+            focus="Elegir conectores según la relación lógica entre ideas."
+            officialFormat="IELTS Academic Writing Task 2 evalúa coherencia y cohesión dentro de un ensayo. Linking language es una habilidad transversal, no una tarea oficial separada."
+            welearnStrategy="Entrenamos conectores por función para evitar listas mecánicas y mejorar la progresión real del argumento."
+            answerCheck="Una respuesta fuerte usa conectores porque la relación lo exige: contraste, causa, ejemplo, concesión o cierre, no por decorar el texto."
+          />
 
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.5rem', cursor: 'pointer' }} onClick={() => setShowBank(v => !v)}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

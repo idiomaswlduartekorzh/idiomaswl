@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
+import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 
 interface Scenario {
   subject: string;
@@ -21,6 +23,11 @@ const SCENARIOS: Scenario[] = [
   { subject: 'Average house prices', from: 180000, to: 185000, unit: '£', yearFrom: 2000, yearTo: 2005, correctVerb: 'remained stable', correctAdverb: '', correctSentence: 'Average house prices remained relatively stable between 2000 and 2005, hovering around £180,000–185,000.' },
   { subject: 'Tourist arrivals', from: 500000, to: 510000, unit: 'visitors', yearFrom: 2018, yearTo: 2019, correctVerb: 'increased', correctAdverb: 'slightly', correctSentence: 'Tourist arrivals increased slightly from 500,000 to 510,000 visitors between 2018 and 2019.' },
   { subject: 'CO2 emissions', from: 8, to: 15, unit: 'million tonnes', yearFrom: 1990, yearTo: 2000, correctVerb: 'grew', correctAdverb: 'steadily', correctSentence: 'CO2 emissions grew steadily from 8 to 15 million tonnes between 1990 and 2000.' },
+  { subject: 'The share of online purchases', from: 18, to: 19, unit: '%', yearFrom: 2018, yearTo: 2019, correctVerb: 'increased', correctAdverb: 'slightly', correctSentence: 'The share of online purchases increased slightly from 18% in 2018 to 19% in 2019.' },
+  { subject: 'The proportion of students studying abroad', from: 6, to: 21, unit: '%', yearFrom: 2005, yearTo: 2020, correctVerb: 'rose', correctAdverb: 'significantly', correctSentence: 'The proportion of students studying abroad rose significantly from 6% in 2005 to 21% in 2020.' },
+  { subject: 'Factory output', from: 92, to: 91, unit: 'million units', yearFrom: 2016, yearTo: 2021, correctVerb: 'remained stable', correctAdverb: '', correctSentence: 'Factory output remained relatively stable between 2016 and 2021, hovering at around 91–92 million units.' },
+  { subject: 'Public transport use', from: 70, to: 38, unit: 'million trips', yearFrom: 2019, yearTo: 2020, correctVerb: 'fell', correctAdverb: 'dramatically', correctSentence: 'Public transport use fell dramatically from 70 million trips in 2019 to 38 million trips in 2020.' },
+  { subject: 'The price of wheat', from: 240, to: 310, unit: 'dollars per tonne', yearFrom: 2012, yearTo: 2018, correctVerb: 'grew', correctAdverb: 'gradually', correctSentence: 'The price of wheat grew gradually from 240 to 310 dollars per tonne between 2012 and 2018.' },
 ];
 
 const VERBS = ['rose','increased','grew','fell','decreased','declined','remained stable','fluctuated','peaked','recovered'];
@@ -37,6 +44,60 @@ const VERB_GROUPS = {
   stable: ['remained stable','fluctuated'],
   any: VERBS,
 };
+
+const VOCAB_REFERENCE = [
+  {
+    title: 'Subidas fuertes',
+    items: ['rocket', 'soar', 'surge', 'jump sharply', 'rise dramatically'],
+    note: 'Úsalas solo cuando el cambio sea grande y rápido. No escribas "soared slightly".',
+  },
+  {
+    title: 'Subidas moderadas',
+    items: ['rise', 'increase', 'grow', 'climb', 'edge up'],
+    note: 'Son más seguros para cambios normales o graduales.',
+  },
+  {
+    title: 'Bajadas fuertes',
+    items: ['plummet', 'plunge', 'drop sharply', 'fall dramatically'],
+    note: 'Reservadas para caídas grandes; si la caída es pequeña, usa "dip" o "fall slightly".',
+  },
+  {
+    title: 'Bajadas moderadas',
+    items: ['fall', 'decrease', 'decline', 'drop', 'dip'],
+    note: 'Decline suena más formal; dip normalmente es una bajada pequeña o temporal.',
+  },
+  {
+    title: 'Estabilidad y cambio irregular',
+    items: ['remain stable', 'level off', 'fluctuate', 'hover around', 'recover'],
+    note: 'Sirven para líneas que no suben o bajan de forma limpia.',
+  },
+  {
+    title: 'Sustantivos útiles',
+    items: ['a rise', 'an increase', 'a decline', 'a drop', 'a fluctuation', 'a peak'],
+    note: 'Alterna verbo y sustantivo para mejorar Lexical Resource.',
+  },
+  {
+    title: 'Intensidad',
+    items: ['slight', 'gradual', 'steady', 'marked', 'substantial', 'dramatic'],
+    note: 'Empareja intensidad con datos: slight para cambios pequeños, dramatic para cambios grandes.',
+  },
+  {
+    title: 'Conectores de contraste',
+    items: ['whereas', 'while', 'by contrast', 'in comparison', 'compared with'],
+    note: 'Úsalos para comparar dos categorías sin escribir frases repetidas.',
+  },
+];
+
+const STRUCTURE_BANK = [
+  'X rose sharply from A to B between YEAR and YEAR.',
+  'There was a gradual decline in X over the period.',
+  'X reached a peak of A in YEAR before falling to B.',
+  'The figure for X remained stable at around A.',
+  'While X increased, Y followed the opposite trend.',
+  'X accounted for the largest share, whereas Y represented the smallest proportion.',
+  'The amount of X was roughly twice as high as that of Y.',
+  'By the end of the period, X had overtaken Y.',
+];
 
 export default function VocabularioDatosContent() {
   const [idx, setIdx] = useState(0);
@@ -64,7 +125,7 @@ export default function VocabularioDatosContent() {
   return (
     <section className="wl-section">
       <div className="wrap">
-        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
             <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Vocabulario de datos</span>
@@ -75,6 +136,49 @@ export default function VocabularioDatosContent() {
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.25rem', lineHeight: 1.65 }}>
             Elige el verbo y adverbio correctos para describir el cambio numérico. La oración se construye en tiempo real.
           </p>
+
+          <Task1OfficialReviewBlock
+            focus="Elegir vocabulario de datos que sea preciso, natural y compatible con la tendencia."
+            officialFormat="IELTS Academic Writing Task 1 exige describir datos visuales con claridad. Vocabulario no es una tarea oficial; es un criterio de calidad dentro de la respuesta."
+            welearnStrategy="Entrenamos verbos, adverbios y estructuras para mejorar precisión sin memorizar frases infladas."
+            answerCheck="La mejor respuesta empareja dirección, intensidad y período: por ejemplo, rose sharply from A to B, no just increased."
+          />
+
+          <Task1ChartTypeGuide />
+
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Banco de vocabulario por función</h2>
+            <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
+              El documento de vocabulario separa dirección, intensidad y forma gramatical. Aquí lo convertimos en
+              una lista operativa: no memorices palabras sueltas; aprende cuándo usarlas.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}>
+              {VOCAB_REFERENCE.map((group) => (
+                <article key={group.title} style={{ padding: '0.9rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
+                  <h3 style={{ margin: '0 0 0.45rem', fontSize: '0.92rem' }}>{group.title}</h3>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem', marginBottom: '0.55rem' }}>
+                    {group.items.map((item) => (
+                      <span key={item} style={{ padding: '0.16rem 0.45rem', borderRadius: 999, background: 'rgba(15,61,140,0.08)', color: '#0f3d8c', fontSize: '0.72rem', fontFamily: 'var(--mono)', fontWeight: 700 }}>
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                  <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.5, fontSize: '0.78rem' }}>{group.note}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div style={{ padding: '1rem', borderRadius: 8, border: '1px solid rgba(15,61,140,0.18)', background: 'rgba(15,61,140,0.05)', marginBottom: '1.5rem' }}>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Estructuras que puedes reciclar</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '0.5rem' }}>
+              {STRUCTURE_BANK.map((pattern) => (
+                <p key={pattern} style={{ margin: 0, padding: '0.55rem 0.7rem', borderRadius: 8, background: 'var(--bg)', color: 'var(--ink-2)', fontSize: '0.82rem', lineHeight: 1.5, fontFamily: 'var(--mono)' }}>
+                  {pattern}
+                </p>
+              ))}
+            </div>
+          </div>
 
           {/* Vocabulary reference */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
