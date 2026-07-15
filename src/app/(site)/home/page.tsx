@@ -11,10 +11,6 @@ import {
   CountUp, TiltCard, TeamCard, TestimonialCard,
 } from './HomeAnimations';
 
-// Mensaje pre-escrito de WhatsApp — diagnóstico de nivel gratis (imán de leads; el resto se cobra)
-const WA_DIAGNOSTICO =
-  'https://wa.me/573005004253?text=Hola%2C%20quiero%20hacer%20mi%20diagn%C3%B3stico%20de%20nivel%20gratis.';
-
 export const metadata: Metadata = {
   title: 'Academia de idiomas en Bucaramanga y online — Aprende en serio',
   description:
@@ -395,7 +391,7 @@ export default function HomePage() {
           </HeroItem>
           <HeroItem>
             <div className="wlh-hero__ctas">
-              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Diagnóstico de nivel gratis →</a>
+              <Link href="/nivel-radar" className="btn wlh-hero__btn-primary" data-gtm="click_nivel_radar">Diagnóstico de nivel gratis →</Link>
               <Link href="#plataforma" className="btn btn-ghost wlh-hero__btn-ghost">Ver la plataforma</Link>
               <Link href="/nivel-radar" className="btn btn-ghost wlh-hero__btn-ghost">Diagnóstico de nivel</Link>
             </div>
@@ -552,7 +548,7 @@ export default function HomePage() {
           </StaggerGrid>
           <FadeUp delay={0.1}>
             <div className="wlh-como-foot">
-              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-hero__btn-primary" data-gtm="click_whatsapp">Haz tu diagnóstico de nivel gratis →</a>
+              <Link href="/nivel-radar" className="btn wlh-hero__btn-primary" data-gtm="click_nivel_radar">Haz tu diagnóstico de nivel gratis →</Link>
               <Link href="/metodo" className="wlh-como-link">Conoce el método de 11 pasos →</Link>
             </div>
           </FadeUp>
@@ -797,7 +793,7 @@ export default function HomePage() {
               Haz tu diagnóstico de nivel sin costo. Vemos en qué punto estás y te proponemos un plan para llegar a tu meta.
             </p>
             <div className="wlh-cta__btns">
-              <a href={WA_DIAGNOSTICO} target="_blank" rel="noopener noreferrer" className="btn wlh-cta__btn-primary" data-gtm="click_whatsapp">Haz tu diagnóstico gratis →</a>
+              <Link href="/nivel-radar" className="btn wlh-cta__btn-primary" data-gtm="click_nivel_radar">Haz tu diagnóstico gratis →</Link>
               <Link href="/clases-de-ingles" className="btn btn-ghost wlh-cta__btn-ghost">Clases de inglés →</Link>
               <Link href="/clases-de-coreano" className="btn btn-ghost wlh-cta__btn-ghost">Clases de coreano →</Link>
             </div>

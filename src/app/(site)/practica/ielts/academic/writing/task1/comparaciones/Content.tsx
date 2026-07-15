@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
+import ComparisonPracticeEngine from './ComparisonPracticeEngine';
 import type { ComponentType } from 'react';
 import {
   IELTSBarChartVisual,
@@ -196,33 +197,35 @@ export default function ComparacionesPage() {
         <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Comparaciones</span>
+            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Comparisons</span>
           </div>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />⚖️ Sub-habilidad 4 — Comparaciones</p>
-          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Comparar datos</h1>
+          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />⚖️ Sub-skill 4 — Comparisons</p>
+          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Compare data accurately</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.25rem', lineHeight: 1.65 }}>
-            En gráficos de barras, pasteles y tablas, el examinador espera comparaciones precisas con lenguaje de aproximación.
-            Escribe una oración que compare los dos valores.
+            In bar charts, pie charts and tables, the examiner expects accurate comparisons and controlled approximation language.
+            Practise selecting evidence before writing a complete sentence.
           </p>
 
           <Task1OfficialReviewBlock
-            focus="Comparar cifras relevantes sin convertir el cuerpo en una lista de datos."
-            officialFormat="IELTS Academic Writing Task 1 pide seleccionar y comparar información visual. Comparaciones es una microhabilidad de respuesta, no una tarea oficial independiente."
-            welearnStrategy="Aislamos comparaciones para practicar contraste, aproximación y agrupación antes de escribir párrafos completos."
-            answerCheck="Una buena comparación nombra ambas categorías, usa lenguaje proporcional y mantiene precisión sin repetir todos los números."
+            focus="Select and compare relevant figures without turning the body paragraph into a data list."
+            officialFormat="IELTS Academic Writing Task 1 requires candidates to select and compare visual information. Comparison is a response skill, not a separate official task."
+            welearnStrategy="We isolate comparison decisions so you can practise contrast, approximation and grouping before writing full paragraphs."
+            answerCheck="A strong comparison names both categories, uses proportionate language and stays accurate without repeating every figure."
           />
 
           <Task1ChartTypeGuide />
 
           <ComparisonVisualLab />
 
+          <ComparisonPracticeEngine />
+
           <div style={{ marginBottom: '1.5rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Cómo comparar sin sonar mecánico</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>How to compare without sounding mechanical</h2>
             <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
-              En Task 1 una comparación fuerte hace tres cosas: nombra las dos categorías, marca la diferencia con
-              intensidad adecuada y evita repetir números como una lista. Primero decide si el contraste es leve,
-              claro o enorme; después elige el lenguaje.
+              In Task 1, a strong comparison does three things: it names both categories, signals the size of the
+              difference and avoids repeating numbers as a list. Decide whether the contrast is slight, clear or
+              substantial, then choose the language.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}>
               {COMPARISON_MOVES.map((move) => (

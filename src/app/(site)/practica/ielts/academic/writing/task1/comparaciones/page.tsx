@@ -3,13 +3,13 @@ import { Task1SkillStructuredData } from '../Task1SkillStructuredData'
 import Content from './Content'
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 1 — Comparaciones — Datos y porcentajes',
-  description: 'Ejercicios de comparaciones en el IELTS Writing Task 1: datos, porcentajes, tablas y gráficos de barras. Vocabulary para comparar cifras Band 6–7.',
-  keywords: ['IELTS comparaciones','IELTS task 1 comparaciones','IELTS bar chart','IELTS table task 1'],
+  title: 'IELTS Writing Task 1 Comparisons: Charts, Data and Percentages',
+  description: 'Practise IELTS Writing Task 1 comparisons with bar charts, line graphs, pie charts and tables. Learn precise comparison language for Band 6–7 writing.',
+  keywords: ['IELTS Task 1 comparisons', 'IELTS comparison language', 'IELTS bar chart comparison', 'IELTS table comparison'],
   openGraph: {
-    title: 'IELTS Task 1: Comparaciones — Datos y porcentajes',
-    description: 'Ejercicios de comparaciones en el IELTS Writing Task 1: datos, porcentajes, tablas y gráficos de barras. Vocabulary para comparar cifras Band 6–7.',
-    type: 'website', locale: 'es_CO',
+    title: 'IELTS Task 1 Comparisons: Data and Percentages',
+    description: 'Practise selecting and comparing visual data with accurate IELTS Task 1 language.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1/comparaciones' },
 }
