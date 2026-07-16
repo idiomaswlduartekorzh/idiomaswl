@@ -13,6 +13,11 @@ const COLOR = '#534AB7';
 
 const HABILIDADES = [
   {
+    id: "leccion-integrada", emoji: "🎯", name: "통합 수업 (Tonghab Sueop)", eng: "Lección Integrada",
+    desc: "카페에 지갑을 두고 왔어요: 읽기, 듣기, 쓰기, 말하기. Una billetera desaparecida, pistas dispersas, tú resuelves el caso.",
+    count: "60 minutos · 6 etapas", href: "/practica/coreano/a2/leccion-integrada", available: true,
+  },
+  {
     id: 'lectura', emoji: '📖', name: '읽기 (Ilgi)', eng: 'Lectura',
     desc: '5 textos A2 en Hangul (80-120 palabras) con romanización. Vocabulario interactivo, 6 preguntas por texto.',
     count: '5 textos · 30 preguntas', href: '/practica/coreano/a2/lectura', available: true,
@@ -45,6 +50,7 @@ const HABILIDADES = [
 ];
 
 const COLORS: Record<string, string> = {
+  "leccion-integrada": "#dc2626",
   lectura: '#534AB7', gramatica: '#7c3aed', escritura: '#059669',
   habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1',
 };
