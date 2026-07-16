@@ -21,7 +21,7 @@ const RESPONSE_SCHEMA = {
         properties: {
           criterion: {
             type: 'STRING',
-            enum: ['taskResponse', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
+            enum: ['taskAchievement', 'taskResponse', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
           },
           band:   { type: 'NUMBER' },
           reason: { type: 'STRING' },
@@ -40,8 +40,10 @@ const RESPONSE_SCHEMA = {
           severity:    { type: 'STRING', enum: ['critica', 'moderada', 'menor'] },
           criterion:   {
             type: 'STRING',
-            enum: ['taskResponse', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
+            enum: ['taskAchievement', 'taskResponse', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
           },
+          // Nota: el enum acepta ambos criterios de tarea porque el esquema es
+          // compartido; el system prompt le dice cuál usar según el task.
         },
         required: ['quote', 'suggestion', 'explanation', 'severity', 'criterion'],
       },

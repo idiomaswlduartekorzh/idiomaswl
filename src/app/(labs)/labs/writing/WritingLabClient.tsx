@@ -6,7 +6,8 @@ import { SAMPLE_PROMPTS, WORD_TARGETS } from '@/lib/labs/rubrics/ielts-writing';
 import type { FreeAssessment, IeltsTask, TextIssue } from '@/lib/labs/types';
 
 const CRITERION_LABEL: Record<string, string> = {
-  taskResponse:      'Task Response',
+  taskAchievement:   'Task Achievement',   // Task 1
+  taskResponse:      'Task Response',      // Task 2
   coherenceCohesion: 'Coherence & Cohesion',
   lexicalResource:   'Lexical Resource',
   grammaticalRange:  'Grammar',

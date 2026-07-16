@@ -2,12 +2,25 @@
 
 export type IeltsTask = 'task1-academic' | 'task1-general' | 'task2';
 
-/** Los cuatro criterios oficiales de IELTS Writing. */
+/**
+ * Los cuatro criterios oficiales, 25% cada uno.
+ *
+ * OJO: el primer criterio cambia de nombre según el task —
+ * Task 1 se evalúa con Task Achievement, Task 2 con Task Response.
+ * No son intercambiables: TA mide si transfirió la información del gráfico;
+ * TR mide si formuló y sostuvo una posición. Ver criterionFor().
+ */
 export type IeltsCriterion =
-  | 'taskResponse'
+  | 'taskAchievement'      // solo Task 1
+  | 'taskResponse'         // solo Task 2
   | 'coherenceCohesion'
   | 'lexicalResource'
   | 'grammaticalRange';
+
+/** El criterio de tarea que corresponde a cada task. */
+export function criterionFor(task: IeltsTask): 'taskAchievement' | 'taskResponse' {
+  return task === 'task2' ? 'taskResponse' : 'taskAchievement';
+}
 
 export interface CriterionScore {
   criterion: IeltsCriterion;
