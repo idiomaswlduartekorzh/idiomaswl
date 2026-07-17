@@ -27,7 +27,7 @@ The rate of growth slowed somewhat in the second decade of the period. Neverthel
 const RUBRIC: { criterion: string; desc: string; bands: { band: string; descriptor: string }[] }[] = [
   {
     criterion: 'Task Achievement',
-    desc: '¿Respondiste todo lo que pide la tarea? ¿Cubriste las tendencias principales?',
+    desc: 'Did you answer every part of the task? Did you cover the main trends?',
     bands: [
       { band: '7–9', descriptor: 'Covers all requirements; clearly presents and highlights key features; makes relevant comparisons; data is accurately represented.' },
       { band: '5–6', descriptor: 'Addresses the task; presents main features but may be mechanical or miss some key comparisons.' },
@@ -36,7 +36,7 @@ const RUBRIC: { criterion: string; desc: string; bands: { band: string; descript
   },
   {
     criterion: 'Coherence & Cohesion',
-    desc: '¿Fluye lógicamente tu texto? ¿Usas conectores correctamente?',
+    desc: 'Does your response progress logically? Do your cohesive devices work correctly?',
     bands: [
       { band: '7–9', descriptor: 'Logical sequencing; cohesive devices used flexibly; clear progression throughout.' },
       { band: '5–6', descriptor: 'Information is generally arranged coherently; some cohesive devices used but may be repetitive.' },
@@ -45,7 +45,7 @@ const RUBRIC: { criterion: string; desc: string; bands: { band: string; descript
   },
   {
     criterion: 'Lexical Resource',
-    desc: '¿Variaste el vocabulario? ¿Usaste lenguaje de tendencias y comparación?',
+    desc: 'Did you vary your vocabulary? Did you use accurate trend and comparison language?',
     bands: [
       { band: '7–9', descriptor: 'Wide range; uses paraphrase effectively; rare errors in word choice; appropriate approximation language.' },
       { band: '5–6', descriptor: 'Adequate range; some attempts at less common vocabulary; noticeable errors but meaning is clear.' },
@@ -54,7 +54,7 @@ const RUBRIC: { criterion: string; desc: string; bands: { band: string; descript
   },
   {
     criterion: 'Grammatical Range & Accuracy',
-    desc: '¿Variaste las estructuras gramaticales? ¿Cuántos errores cometiste?',
+    desc: 'Did you vary your grammatical structures? How many errors did you make?',
     bands: [
       { band: '7–9', descriptor: 'Wide range of structures; majority of sentences error-free; minor errors only.' },
       { band: '5–6', descriptor: 'Mix of simple and complex sentences; some errors but rarely cause misunderstanding.' },
@@ -64,11 +64,11 @@ const RUBRIC: { criterion: string; desc: string; bands: { band: string; descript
 ];
 
 const LEGO_STEPS = [
-  { part: '1. Introducción', action: 'Parafrasea el enunciado sin añadir datos.', check: '¿Cambié verbo, tema y estructura?' },
-  { part: '2. Overview', action: 'Resume el patrón dominante sin cifras.', check: '¿Se entiende la historia del gráfico en 1-2 frases?' },
-  { part: '3. Body 1', action: 'Agrupa los datos principales del primer patrón.', check: '¿Incluí cifras exactas solo donde aportan evidencia?' },
-  { part: '4. Body 2', action: 'Añade contraste, cierre o segundo grupo.', check: '¿Comparé donde era relevante?' },
-  { part: '5. Revisión', action: 'Comprueba precisión, palabras y gramática.', check: '¿Hay 150+ palabras y ningún dato inventado?' },
+  { part: '1. Introduction', action: 'Paraphrase the prompt without adding data.', check: 'Did I change the verb, topic and structure?' },
+  { part: '2. Overview', action: 'Summarise the dominant pattern without figures.', check: 'Can the chart story be understood in 1–2 sentences?' },
+  { part: '3. Body 1', action: 'Group the main data from the first pattern.', check: 'Did I include exact figures only when they provide evidence?' },
+  { part: '4. Body 2', action: 'Add a contrast, close or second group.', check: 'Did I compare the relevant categories?' },
+  { part: '5. Review', action: 'Check accuracy, word count and grammar.', check: 'Are there 150+ words and no invented figures?' },
 ];
 
 const FULL_TASK_BANK = [
@@ -191,24 +191,24 @@ export default function TareaCompletaPage() {
     return (
       <section className="wl-section">
         <div className="wrap">
-          <div style={{ maxWidth: 720, margin: '0 auto' }}>
+          <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
               <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
-              <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Tarea Completa</span>
+              <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Full Task</span>
             </div>
 
-            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />⏱️ Sub-habilidad 7 — Tarea Completa</p>
-            <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Práctica en condiciones reales</h1>
+            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />⏱️ Sub-skill 7 — Full Task</p>
+            <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Timed full-task practice</h1>
             <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
-              20 minutos. 150+ palabras. Cuatro párrafos: Introducción → Overview → Body 1 → Body 2.
-              Al terminar, usas la rúbrica pedagógica WeLearn para auto-evaluarte.
+              20 minutes. 150+ words. Four paragraphs: Introduction → Overview → Body 1 → Body 2.
+              When you finish, use the WeLearn teaching rubric to self-assess your response.
             </p>
 
             <Task1OfficialReviewBlock
-              focus="Integrar introducción, overview, cuerpo con datos y revisión final bajo tiempo."
-              officialFormat="IELTS Academic Writing Task 1 dura 20 minutos dentro del bloque de Writing y requiere al menos 150 palabras sobre información visual."
-              welearnStrategy="Esta práctica simula el flujo completo, pero la autoevaluación es pedagógica y no reemplaza una banda oficial."
-              answerCheck="La respuesta completa debe tener overview visible, datos seleccionados, comparaciones relevantes y control de tiempo."
+              focus="Integrate an introduction, overview, selected data, comparisons and a final review under time pressure."
+              officialFormat="IELTS Academic Writing Task 1 takes 20 minutes within the Writing test and requires at least 150 words about visual information."
+              welearnStrategy="This practice simulates the full workflow, but the self-assessment is educational and does not replace an official band score."
+              answerCheck="A complete response needs a clear overview, selected data, relevant comparisons and controlled timing."
             />
 
             <Task1ChartTypeGuide />
@@ -224,10 +224,10 @@ export default function TareaCompletaPage() {
             </div>
 
             <div style={{ marginBottom: '1.5rem' }}>
-              <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Ensamble tipo Lego: une las subhabilidades</h2>
+              <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Lego-style assembly: connect the sub-skills</h2>
               <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
-                Antes del cronómetro, practica el orden mental. Cada bloque existe por separado en las rutas anteriores;
-                aquí los unes para producir una respuesta completa.
+                Before starting the timer, practise the mental order. Each block exists separately in the previous routes;
+                here you connect them to produce a complete response.
               </p>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '0.75rem' }}>
                 {LEGO_STEPS.map((step) => (
@@ -242,10 +242,10 @@ export default function TareaCompletaPage() {
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
               {[
-                { label: 'Introducción', tip: 'Parafrasea el enunciado' },
+                { label: 'Introduction', tip: 'Paraphrase the prompt' },
                 { label: 'Overview', tip: 'Tendencia principal, sin cifras' },
-                { label: 'Body 1', tip: 'Detalle con datos y tendencias' },
-                { label: 'Body 2', tip: 'Comparaciones o segundo grupo' },
+                { label: 'Body 1', tip: 'Details with data and trends' },
+                { label: 'Body 2', tip: 'Comparisons or a second group' },
               ].map((p, i) => (
                 <div key={i} style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)', textAlign: 'center' }}>
                   <p style={{ margin: '0 0 0.2rem', fontWeight: 700, fontSize: '0.9rem', color: 'var(--ink)' }}>{p.label}</p>
@@ -261,10 +261,10 @@ export default function TareaCompletaPage() {
             </div>
 
             <div style={{ padding: '1.25rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)', marginBottom: '1.5rem' }}>
-              <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.05rem' }}>Banco de 50 prompts para práctica completa</h2>
+              <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.05rem' }}>Bank of 50 prompts for full-task practice</h2>
               <p style={{ margin: '0 0 0.85rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.88rem' }}>
-                Este banco cierra el flujo de subhabilidades: elige un prompt, escribe una introducción, decide el overview
-                y luego redacta bajo tiempo. La siguiente fase puede convertir cada prompt en gráfico dibujado.
+                This bank completes the sub-skill workflow: choose a prompt, write an introduction, decide on the overview
+                and then write under time pressure. Each prompt can later be developed into a drawn visual.
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.85rem' }}>
                 <select
@@ -288,20 +288,20 @@ export default function TareaCompletaPage() {
                 <TaskVisual type={bankItem.type} variant={bankIdx} />
               </div>
               <div style={{ padding: '0.85rem 1rem', borderRadius: 8, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)' }}>
-                <p style={{ margin: '0 0 0.25rem', color: '#059669', fontWeight: 800, fontSize: '0.75rem', fontFamily: 'var(--mono)' }}>Overview modelo</p>
+                <p style={{ margin: '0 0 0.25rem', color: '#059669', fontWeight: 800, fontSize: '0.75rem', fontFamily: 'var(--mono)' }}>Model overview</p>
                 <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.6, fontSize: '0.86rem' }}>{bankItem.overview}</p>
               </div>
             </div>
 
             {/* Imaginary chart description */}
             <div style={{ padding: '1rem 1.25rem', borderRadius: 12, background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', marginBottom: '1.75rem', fontSize: '0.87rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
-              <strong style={{ color: '#d97706' }}>Datos del gráfico:</strong> Línea ascendente.
+              <strong style={{ color: '#d97706' }}>Chart data:</strong> Rising line.
               2003: 4% · 2005: 18% · 2008: 45% · 2010: 58% · 2013: 75% · 2016: 84% · 2020: 93% · 2023: 96%.
-              El crecimiento fue más rápido entre 2003–2008. Se estabilizó a partir de 2016.
+              Growth was fastest between 2003 and 2008. It levelled off from 2016 onwards.
             </div>
 
             <button className="btn" style={{ width: '100%', fontSize: '1rem', padding: '0.9rem' }} onClick={startTimer}>
-              Empezar — 20 minutos ⏱️
+              Start — 20 minutes ⏱️
             </button>
           </div>
         </div>
@@ -313,7 +313,7 @@ export default function TareaCompletaPage() {
     return (
       <section className="wl-section">
         <div className="wrap">
-          <div style={{ maxWidth: 720, margin: '0 auto' }}>
+          <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
             {/* Timer bar */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', padding: '0.75rem 1rem', borderRadius: 10, background: 'var(--bg-2)', border: '1.5px solid var(--line-soft)', position: 'sticky', top: 8, zIndex: 10 }}>
               <span style={{ fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '1.25rem', color: timerColor }}>
@@ -321,9 +321,9 @@ export default function TareaCompletaPage() {
               </span>
               <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                 <span style={{ fontFamily: 'var(--mono)', fontSize: '0.85rem', color: wordCount >= 150 ? '#059669' : '#d97706', fontWeight: 700 }}>
-                  {wordCount} / 150+ palabras
+                  {wordCount} / 150+ words
                 </span>
-                <button className="btn btn-sm" onClick={submitEarly}>Entregar →</button>
+                <button className="btn btn-sm" onClick={submitEarly}>Submit →</button>
               </div>
             </div>
 
@@ -334,13 +334,13 @@ export default function TareaCompletaPage() {
 
             {/* Data reminder */}
             <div style={{ padding: '0.65rem 0.9rem', borderRadius: 8, background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.2)', marginBottom: '0.75rem', fontSize: '0.8rem', color: 'var(--ink-2)', lineHeight: 1.55 }}>
-              Datos: 2003: 4% · 2005: 18% · 2008: 45% · 2010: 58% · 2013: 75% · 2016: 84% · 2020: 93% · 2023: 96%
+              Data: 2003: 4% · 2005: 18% · 2008: 45% · 2010: 58% · 2013: 75% · 2016: 84% · 2020: 93% · 2023: 96%
             </div>
 
             <textarea
               value={text}
               onChange={e => setText(e.target.value)}
-              placeholder={'Empieza con tu introducción (paráfrasis del enunciado)...\n\nLuego el Overview.\n\nLuego los párrafos de detalle.'}
+              placeholder={'Start with your introduction (a paraphrase of the prompt)...\n\nThen write the overview.\n\nThen write the detail paragraphs.'}
               rows={20}
               style={{ width: '100%', padding: '1rem', borderRadius: 10, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.97rem', fontFamily: 'inherit', lineHeight: 1.75, resize: 'vertical', boxSizing: 'border-box' }}
               autoFocus
@@ -348,9 +348,9 @@ export default function TareaCompletaPage() {
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.5rem' }}>
               <span style={{ fontFamily: 'var(--mono)', fontSize: '0.78rem', color: 'var(--muted)' }}>
-                {wordCount} palabras {wordCount < 150 ? `— faltan ${150 - wordCount}` : '— ✓ mínimo alcanzado'}
+                {wordCount} words {wordCount < 150 ? `— ${150 - wordCount} remaining` : '— ✓ minimum reached'}
               </span>
-              <button className="btn btn-sm" onClick={submitEarly}>Entregar ahora →</button>
+              <button className="btn btn-sm" onClick={submitEarly}>Submit now →</button>
             </div>
           </div>
         </div>
@@ -362,17 +362,17 @@ export default function TareaCompletaPage() {
     return (
       <section className="wl-section">
         <div className="wrap">
-          <div style={{ maxWidth: 720, margin: '0 auto' }}>
-            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Auto-evaluación</p>
-            <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Evalúa tu respuesta</h1>
+          <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
+            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Self-assessment</p>
+            <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Assess your response</h1>
             <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.5rem', lineHeight: 1.6 }}>
-              Lee cada criterio y elige el band que mejor describe tu texto. Sé honesto — es tu herramienta de mejora.
+              Read each criterion and choose the band that best describes your response. Be honest: this is a tool for improvement.
             </p>
 
             {/* Their text */}
             <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.5rem', maxHeight: 200, overflowY: 'auto' }}>
-              <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Tu respuesta ({wordCount} palabras)</p>
-              <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.75, color: 'var(--ink)', whiteSpace: 'pre-wrap' }}>{text || '(sin texto)'}</p>
+              <p style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Your response ({wordCount} words)</p>
+              <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.75, color: 'var(--ink)', whiteSpace: 'pre-wrap' }}>{text || '(no response yet)'}</p>
             </div>
 
             {/* Rubric */}
@@ -402,26 +402,26 @@ export default function TareaCompletaPage() {
                 <p style={{ fontSize: '0.75rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.07em', margin: '0 0 0.4rem' }}>Band estimado</p>
                 <p style={{ fontSize: '3rem', fontWeight: 800, fontFamily: 'var(--mono)', color: 'var(--ink)', margin: '0 0 0.25rem', lineHeight: 1 }}>{avgBand}</p>
                 <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: '0 0 1rem' }}>
-                  {Number(avgBand) >= 7 ? 'Excelente — nivel competitivo para universidades de élite.' : Number(avgBand) >= 5.5 ? 'Buen nivel. Enfócate en el criterio más bajo.' : 'Sigue practicando. Revisa las sub-habilidades 1–6.'}
+                  {Number(avgBand) >= 7 ? 'Strong work — a competitive level for demanding university contexts.' : Number(avgBand) >= 5.5 ? 'A solid base. Focus on your lowest criterion.' : 'Keep practising. Review sub-skills 1–6.'}
                 </p>
                 <button className="btn btn-sm" onClick={() => setShowModel(v => !v)}>
-                  {showModel ? 'Ocultar respuesta modelo' : 'Ver respuesta modelo Band 7 →'}
+                  {showModel ? 'Hide model answer' : 'View Band 7 model answer →'}
                 </button>
               </div>
             )}
 
             {showModel && (
               <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669', marginBottom: '1rem' }}>
-                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Respuesta modelo (Band 7+)</p>
+                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Model answer (Band 7+)</p>
                 <p style={{ margin: 0, fontSize: '0.93rem', lineHeight: 1.8, color: 'var(--ink)', whiteSpace: 'pre-wrap' }}>{MODEL_ANSWER}</p>
               </div>
             )}
 
             <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
               <button className="btn btn-sm" onClick={() => { setPhase('intro'); setText(''); setScores({}); setTimeLeft(20*60); setShowModel(false); }}>
-                Intentar de nuevo
+                Try again
               </button>
-              <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm">← Volver a Task 1</Link>
+              <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm">← Back to Task 1</Link>
             </div>
           </div>
         </div>

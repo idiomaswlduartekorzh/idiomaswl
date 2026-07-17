@@ -22,23 +22,54 @@ interface MapExercise {
 
 const EXERCISES: MapExercise[] = [
   {
-    title: 'Millfield town centre: 1990 versus 2020',
+    title: 'Town centre changes: 1990 versus 2020',
     changes: [
-      { id: 'a', before: 'Car park (north)', after: 'Shopping centre', location: 'to the north of the town centre', modelSentence: 'The car park that was located to the north of the town centre was replaced by a large shopping centre.' },
-      { id: 'b', before: 'Factory (east)', after: 'Residential area', location: 'to the east', modelSentence: 'The factory situated to the east was demolished and replaced by a residential area.' },
-      { id: 'c', before: 'Open park (south)', after: 'School', location: 'to the south', modelSentence: 'A new school was built on what had previously been an open park to the south of the town centre.' },
-      { id: 'd', before: 'Road (single lane)', after: 'Dual carriageway', location: 'adjacent to the river', modelSentence: 'The single-lane road adjacent to the river was widened into a dual carriageway.' },
+      { id: 'a', before: 'Park', after: 'Housing estate', location: 'in the north-western part of the centre', modelSentence: 'The park in the north-western part of the town centre was replaced by a housing estate.' },
+      { id: 'b', before: 'Factory', after: 'School', location: 'in the north-eastern part of the centre', modelSentence: 'The factory in the north-eastern part of the centre was demolished and replaced by a school.' },
+      { id: 'c', before: 'Small road', after: 'Dual carriageway', location: 'across the middle of the centre', modelSentence: 'The small road running across the centre was widened into a dual carriageway.' },
+      { id: 'd', before: 'Car park', after: 'Shopping centre', location: 'in the south-eastern area', modelSentence: 'The car park in the south-eastern area was converted into a shopping centre.' },
     ],
-    modelParagraph: 'Comparing the two maps, it is clear that Millfield underwent significant development between 1990 and 2020. The car park to the north was replaced by a large shopping centre, while the factory to the east was demolished and a residential area was built in its place. To the south, an open park was converted into a school. In addition, the road adjacent to the river was widened into a dual carriageway.',
+    modelParagraph: 'Comparing the two maps, the town centre underwent substantial redevelopment between 1990 and 2020. The park and factory in the northern half were replaced by a housing estate and a school respectively, while the small road across the centre was widened into a dual carriageway. In the south-east, the car park was converted into a shopping centre.',
   },
   {
-    title: 'Tourist island: before and after development',
+    title: 'University campus: 1995 versus 2025',
     changes: [
-      { id: 'a', before: 'Dense forest (north)', after: 'Hotel complex', location: 'to the north of the island', modelSentence: 'The dense forest that once covered the northern part of the island was cleared and replaced by a hotel complex.' },
-      { id: 'b', before: 'Empty beach (west)', after: 'Beach resort with facilities', location: 'on the western coast', modelSentence: 'A beach resort with restaurants and sports facilities was constructed on the previously undeveloped western coast.' },
-      { id: 'c', before: 'Fishing village (east)', after: 'Marina and yacht club', location: 'on the eastern side', modelSentence: 'The small fishing village on the eastern side was replaced by a marina and yacht club.' },
+      { id: 'a', before: 'Lecture hall', after: 'Library', location: 'in the north-west', modelSentence: 'The lecture hall in the north-west was replaced by a library.' },
+      { id: 'b', before: 'Garden', after: 'Student flats', location: 'in the north-east', modelSentence: 'The garden in the north-east was redeveloped as student flats.' },
+      { id: 'c', before: 'Car park', after: 'Cycle path', location: 'in the south-west', modelSentence: 'The car park in the south-west was replaced by a cycle path.' },
+      { id: 'd', before: 'Sports field', after: 'Sports centre', location: 'in the south-east', modelSentence: 'The sports field in the south-east was converted into a sports centre.' },
     ],
-    modelParagraph: 'The maps reveal considerable transformation of the island following tourist development. The dense forest to the north was cleared and replaced by a hotel complex, while a beach resort with various facilities was built along the previously empty western coastline. Most notably, the traditional fishing village on the eastern side was replaced by a marina and yacht club, signifying a shift from local to tourist-oriented activity.',
+    modelParagraph: 'The campus changed considerably between 1995 and 2025. The lecture hall and garden in the northern half were replaced by a library and student flats respectively. In the southern half, the car park became a cycle path, while the sports field was converted into a sports centre.',
+  },
+  {
+    title: 'Coastal village: 2000 versus 2025',
+    changes: [
+      { id: 'a', before: 'Fishing harbour', after: 'Marina', location: 'on the eastern coast', modelSentence: 'The fishing harbour on the eastern coast was redeveloped as a marina.' },
+      { id: 'b', before: 'Fields', after: 'Holiday resort', location: 'in the northern area', modelSentence: 'The fields in the northern area were replaced by a holiday resort.' },
+      { id: 'c', before: 'Narrow road', after: 'Main road', location: 'running through the village', modelSentence: 'The narrow road running through the village was widened into a main road.' },
+      { id: 'd', before: 'Cottages', after: 'Apartments', location: 'near the shoreline', modelSentence: 'The cottages near the shoreline were replaced by apartment buildings.' },
+    ],
+    modelParagraph: 'The coastal village experienced extensive development over the twenty-five-year period. The fishing harbour became a marina, while the fields in the north were replaced by a holiday resort. In addition, the narrow road through the village was widened and the cottages near the shoreline were replaced by apartments.',
+  },
+  {
+    title: 'Park redevelopment: 1980 versus 2020',
+    changes: [
+      { id: 'a', before: 'Woodland', after: 'Playground', location: 'in the north-west', modelSentence: 'The woodland in the north-west was cleared to make way for a playground.' },
+      { id: 'b', before: 'Pond', after: 'Cafe', location: 'in the north-east', modelSentence: 'The pond in the north-east was replaced by a cafe.' },
+      { id: 'c', before: 'Footpath', after: 'Cycle track', location: 'along the southern edge', modelSentence: 'The footpath along the southern edge was converted into a cycle track.' },
+      { id: 'd', before: 'Rose garden', after: 'Open-air stage', location: 'in the south-east', modelSentence: 'The rose garden in the south-east was replaced by an open-air stage.' },
+    ],
+    modelParagraph: 'The park was substantially redesigned between 1980 and 2020. Woodland and a pond in the northern half were replaced by a playground and a cafe, while the footpath along the southern edge became a cycle track. The rose garden was also removed and replaced by an open-air stage.',
+  },
+  {
+    title: 'Shopping centre redevelopment: before versus after',
+    changes: [
+      { id: 'a', before: 'Small shops', after: 'Department store', location: 'in the western block', modelSentence: 'The small shops in the western block were replaced by a department store.' },
+      { id: 'b', before: 'Bus stop', after: 'Taxi rank', location: 'beside the main entrance', modelSentence: 'The bus stop beside the main entrance was converted into a taxi rank.' },
+      { id: 'c', before: 'Market', after: 'Food court', location: 'in the central area', modelSentence: 'The market in the central area was redeveloped as a food court.' },
+      { id: 'd', before: 'Car park', after: 'Multi-storey car park', location: 'on the eastern side', modelSentence: 'The car park on the eastern side was replaced by a multi-storey car park.' },
+    ],
+    modelParagraph: 'The shopping centre was modernised in several ways. The small shops in the west were replaced by a department store, and the market in the centre became a food court. The bus stop beside the main entrance was converted into a taxi rank, while the car park on the eastern side was replaced by a multi-storey facility.',
   },
 ];
 
@@ -61,7 +92,7 @@ export default function MapasPage() {
   }
 
   return (
-    <section className="wl-section">
+    <section className="wl-section" lang="en">
       <div className="wrap">
         <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
@@ -124,10 +155,10 @@ export default function MapasPage() {
                   <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', fontFamily: 'var(--mono)', margin: '0 0 0.4rem', textTransform: 'uppercase' }}>{label}</p>
                   <div style={{ border: '1.5px solid var(--line-soft)', borderRadius: 10, padding: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', background: 'var(--bg-2)', minHeight: 120 }}>
                     {ex.changes.map(c => (
-                      <div key={c.id} style={{ fontSize: '0.78rem', padding: '0.3rem 0.6rem', borderRadius: 6, background: selectedChange === c.id ? 'rgba(15,61,140,0.1)' : 'var(--bg)', border: `1px solid ${selectedChange === c.id ? 'rgba(15,61,140,0.3)' : 'var(--line-soft)'}`, color: 'var(--ink-2)', cursor: 'pointer' }}
+                      <button type="button" key={c.id} aria-pressed={selectedChange === c.id} style={{ width: '100%', textAlign: 'left', fontSize: '0.78rem', padding: '0.3rem 0.6rem', borderRadius: 6, background: selectedChange === c.id ? 'rgba(15,61,140,0.1)' : 'var(--bg)', border: `1px solid ${selectedChange === c.id ? 'rgba(15,61,140,0.3)' : 'var(--line-soft)'}`, color: 'var(--ink-2)', cursor: 'pointer' }}
                         onClick={() => { setSelectedChange(c.id); setText(''); setRevealed(false); }}>
                         {ti === 0 ? c.before : c.after}
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </div>

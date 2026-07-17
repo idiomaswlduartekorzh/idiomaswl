@@ -43,21 +43,21 @@ const OVERVIEWS: OverviewOption[] = [
     text: 'Overall, rent accounted for the largest share of spending, while savings and other expenses made up only small proportions. Food was the second biggest category, ahead of transport and leisure.',
     correct: true,
     explanation:
-      'Correcto. Identifica el segmento dominante, los segmentos menores y el ranking general sin convertir el overview en una lista.',
+      'Correct. Identify the dominant segment, the smaller segments and the overall ranking without turning the overview into a list.',
   },
   {
     id: 'list',
     text: 'Overall, rent was 36%, food was 22%, transport was 15%, leisure was 14%, savings was 8% and other expenses were 5%.',
     correct: false,
     explanation:
-      'Esto enumera todos los porcentajes, pero no interpreta la distribución. El overview debe decir qué destaca.',
+      'This lists every percentage but does not interpret the distribution. The overview should explain what stands out.',
   },
   {
     id: 'wrong',
     text: 'Overall, spending was distributed almost equally across all categories, with no category standing out clearly.',
     correct: false,
     explanation:
-      'Incorrecto. Rent es claramente la categoría más grande y casi triplica algunas categorías menores.',
+      'Incorrect. Rent is clearly the largest category and is almost three times the size of some smaller categories.',
   },
 ];
 
@@ -67,69 +67,69 @@ const GROUPS: GroupOption[] = [
     text: 'Describe rent and food together as the two largest categories, with rent clearly leading.',
     useful: true,
     explanation:
-      'Fuerte. Estas dos categorías suman más de la mitad del gasto y merecen el primer párrafo de detalle.',
+      'Strong. These two categories account for more than half of spending and deserve the first detail paragraph.',
   },
   {
     id: 'middle',
     text: 'Compare transport and leisure because their shares are very similar.',
     useful: true,
     explanation:
-      'Fuerte. La similitud 15% vs 14% permite una comparación compacta y natural.',
+      'Strong. The similar figures of 15% and 14% allow for a compact, natural comparison.',
   },
   {
     id: 'small',
     text: 'Group savings and other as minor categories rather than giving them separate paragraphs.',
     useful: true,
     explanation:
-      'Útil. Son los segmentos más pequeños y juntos explican una parte secundaria del gráfico.',
+      'Useful. These are the smallest segments and together represent a secondary part of the chart.',
   },
   {
     id: 'clockwise',
     text: 'Describe the chart clockwise from the top, regardless of size or relationship.',
     useful: false,
     explanation:
-      'Débil. En IELTS Task 1 la estructura debe seguir patrones, no la posición visual del gráfico.',
+      'Weak. In IELTS Task 1, the structure should follow patterns rather than the visual position of the chart.',
   },
   {
     id: 'opinion',
     text: 'Explain that rent is highest because apartments became expensive in the city.',
     useful: false,
     explanation:
-      'No sirve. El pie chart no da causas; inventarlas rompe la precisión de Task 1.',
+      'Not useful. The pie chart does not provide causes; inventing them reduces Task 1 accuracy.',
   },
 ];
 
 const MODEL_ANSWER = [
   {
-    label: 'Introducción',
+    label: 'Introduction',
     text: 'The pie chart shows how young professionals in Northbridge allocated their monthly household spending in 2025 across six categories.',
-    note: 'Parafrasea el enunciado y conserva población, lugar, periodo y tema del gasto.',
+    note: 'Paraphrase the prompt and preserve the population, place, period and spending topic.',
   },
   {
     label: 'Overview',
     text: 'Overall, rent represented by far the largest share of expenditure, while savings and other costs accounted for the smallest proportions. Food was the second largest item, whereas transport and leisure were almost equal.',
-    note: 'Resume tamaño relativo, extremos y una comparación importante sin listar todos los porcentajes.',
+    note: 'Summarise relative size, extremes and one important comparison without listing every percentage.',
   },
   {
     label: 'Cuerpo 1',
     text: 'Rent took up 36% of monthly spending, making it the dominant category. Food was also substantial at 22%, meaning that these two essential expenses together accounted for well over half of the total budget.',
-    note: 'Agrupa las categorías grandes y añade una lectura agregada útil.',
+    note: 'Group the largest categories and add a useful aggregate observation.',
   },
   {
     label: 'Cuerpo 2',
     text: 'Transport and leisure were much smaller and very similar, at 15% and 14% respectively. The remaining categories were savings, at 8%, and other expenses, at just 5%, making them the least significant parts of the budget.',
-    note: 'Compara categorías medianas y agrupa las menores para evitar una lista mecánica.',
+    note: 'Compare medium-sized categories and group the smaller ones to avoid a mechanical list.',
   },
 ];
 
 const INTERNAL_LINKS = [
   { href: '/practica/ielts/academic/writing/task1', label: 'Task 1 hub' },
-  { href: '/practica/ielts/academic/writing/task1/graficos-lineales', label: 'Gráficos lineales' },
-  { href: '/practica/ielts/academic/writing/task1/graficos-de-barras', label: 'Gráficos de barras' },
+  { href: '/practica/ielts/academic/writing/task1/graficos-lineales', label: 'Line graphs' },
+  { href: '/practica/ielts/academic/writing/task1/graficos-de-barras', label: 'Bar charts' },
   { href: '/practica/ielts/academic/writing/task1/overview', label: 'Overview' },
-  { href: '/practica/ielts/academic/writing/task1/comparaciones', label: 'Comparaciones' },
-  { href: '/practica/ielts/academic/writing/task1/vocabulario', label: 'Vocabulario' },
-  { href: '/practica/ielts/academic/writing/task1/tarea-completa', label: 'Tarea completa' },
+  { href: '/practica/ielts/academic/writing/task1/comparaciones', label: 'Comparisons' },
+  { href: '/practica/ielts/academic/writing/task1/vocabulario', label: 'Data vocabulary' },
+  { href: '/practica/ielts/academic/writing/task1/tarea-completa', label: 'Full task' },
 ];
 
 function PieChart() {
@@ -243,7 +243,7 @@ function OptionCard({
       <span style={{ display: 'block', fontSize: '0.9rem', lineHeight: 1.55 }}>{text}</span>
       {revealed && (
         <span style={{ display: 'block', marginTop: '0.55rem', color: 'var(--muted)', fontSize: '0.82rem', lineHeight: 1.55 }}>
-          <strong style={{ color: positive ? '#047857' : '#991b1b' }}>{positive ? 'Respuesta fuerte: ' : 'Cuidado: '}</strong>
+          <strong style={{ color: positive ? '#047857' : '#991b1b' }}>{positive ? 'Strong choice: ' : 'Caution: '}</strong>
           {explanation}
         </span>
       )}
@@ -291,31 +291,31 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
             Pie charts en IELTS Writing Task 1
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: '0 0 1rem', maxWidth: 720 }}>
-            Aprende a describir pie charts sin caer en listas de porcentajes: detecta proporciones dominantes, agrupa segmentos pequeños y compara categorías con intención.
+            Learn to describe pie charts without turning your response into a list of percentages: identify dominant proportions, group small segments and compare categories with purpose.
           </p>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65, margin: '0 0 1rem', maxWidth: 720 }}>
-            La práctica incluye respuestas explicadas para proporciones y agrupación, más un modelo comentado de Task 1.
+            The practice includes explained answers for proportions and grouping, plus an annotated Task 1 model.
           </p>
 
           <div className="wl-card" style={{ padding: '1rem 1.1rem', marginBottom: '1.35rem', borderRadius: 8 }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic Writing Task 1 pide describir información visual. Un pie chart entra dentro de esa familia, pero no lo tratamos como tarea oficial aislada.
+              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic Writing Task 1 asks you to describe visual information. A pie chart belongs to this family, but we do not treat it as a separate official task.
             </p>
             <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> lo practicamos por separado porque exige resumir proporciones, combinar segmentos pequeños y evitar que el ensayo suene como una lista de porcentajes.
+              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> we practise it separately because it requires summarising proportions, combining small segments and avoiding a percentage list.
             </p>
           </div>
 
           <section aria-labelledby="workflow-heading">
             <h2 id="workflow-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '0 0 0.65rem' }}>
-              Flujo de trabajo para un pie chart
+              Workflow for a pie chart
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', marginBottom: '1.25rem' }}>
               {[
-                ['1', 'Lee el total', 'Confirma si los segmentos suman 100% y qué población o presupuesto representan.'],
-                ['2', 'Ubica extremos', 'Identifica la porción más grande y la más pequeña antes de escribir.'],
-                ['3', 'Agrupa segmentos', 'Une categorías pequeñas o similares para evitar una lista mecánica.'],
+                ['1', 'Read the total', 'Confirm that the segments add up to 100% and identify the population or budget represented.'],
+                ['2', 'Locate the extremes', 'Identify the largest and smallest portions before writing.'],
+                ['3', 'Group segments', 'Combine small or similar categories to avoid a mechanical list.'],
                 ['4', 'Compara proporciones', 'Usa fracciones aproximadas: nearly half, over a third, about twice as much.'],
               ].map(([step, title, copy]) => (
                 <article key={step} className="wl-card" style={{ padding: '0.95rem', borderRadius: 8 }}>
@@ -331,7 +331,7 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="practice-heading">
             <h2 id="practice-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '1.5rem 0 0.45rem' }}>
-              Ejercicio guiado: overview y agrupación de porcentajes
+              Guided exercise: overview and percentage grouping
             </h2>
             <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
               The pie chart below shows how young professionals in Northbridge allocated their monthly household spending in 2025.
@@ -339,7 +339,7 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
 
             <PieChart />
 
-            <h3 style={{ margin: '0 0 0.65rem', fontSize: '1.05rem' }}>Paso 1: escoge el mejor overview</h3>
+            <h3 style={{ margin: '0 0 0.65rem', fontSize: '1.05rem' }}>Step 1: choose the strongest overview</h3>
             <div style={{ display: 'grid', gap: '0.65rem', marginBottom: '0.85rem' }}>
               {OVERVIEWS.map((option) => (
                 <OptionCard
@@ -355,13 +355,13 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
             </div>
             {!overviewRevealed && (
               <button className="btn btn-sm" type="button" disabled={!overviewId} onClick={() => setOverviewRevealed(true)} style={{ opacity: overviewId ? 1 : 0.5, marginBottom: '1.25rem' }}>
-                Revisar overview
+                Check overview
               </button>
             )}
 
-            <h3 style={{ margin: '1.15rem 0 0.65rem', fontSize: '1.05rem' }}>Paso 2: selecciona las mejores decisiones de agrupación</h3>
+            <h3 style={{ margin: '1.15rem 0 0.65rem', fontSize: '1.05rem' }}>Step 2: select the strongest grouping decisions</h3>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.55 }}>
-              Elige qué decisiones ayudan a escribir una respuesta más analítica y menos repetitiva.
+              Choose the decisions that help you write a more analytical and less repetitive response.
             </p>
             <div style={{ display: 'grid', gap: '0.65rem', marginBottom: '0.85rem' }}>
               {GROUPS.map((group) => (
@@ -378,12 +378,12 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
             </div>
             {!groupsRevealed ? (
               <button className="btn btn-sm" type="button" disabled={groupIds.size === 0} onClick={() => setGroupsRevealed(true)} style={{ opacity: groupIds.size ? 1 : 0.5, marginBottom: '1rem' }}>
-                Revisar agrupación
+                Review the grouping
               </button>
             ) : (
               <div className="wl-card" style={{ padding: '0.9rem 1rem', borderRadius: 8, marginBottom: '1rem', background: 'rgba(15,61,140,0.05)' }}>
                 <p style={{ margin: 0, color: 'var(--ink)', fontWeight: 700 }}>
-                  Resultado: {groupScore} de {GROUPS.filter((group) => group.useful).length} decisiones fuertes seleccionadas.
+                  Result: {groupScore} of {GROUPS.filter((group) => group.useful).length} strong decisions selected.
                 </p>
               </div>
             )}
@@ -391,7 +391,7 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="model-heading" style={{ marginTop: '1.5rem' }}>
             <h2 id="model-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '0 0 0.8rem' }}>
-              Modelo de respuesta explicado
+              Explained model response
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {MODEL_ANSWER.map((part) => (
@@ -399,7 +399,7 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
                   <h3 style={{ margin: '0 0 0.45rem', fontSize: '0.95rem', color: '#0f3d8c' }}>{part.label}</h3>
                   <p style={{ margin: '0 0 0.6rem', color: 'var(--ink)', lineHeight: 1.65, fontSize: '0.92rem' }}>{part.text}</p>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.82rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>Por qué funciona:</strong> {part.note}
+                    <strong style={{ color: 'var(--ink)' }}>Why it works:</strong> {part.note}
                   </p>
                 </article>
               ))}
@@ -408,7 +408,7 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="links-heading" style={{ marginTop: '1.6rem' }}>
             <h2 id="links-heading" style={{ fontSize: '1.25rem', letterSpacing: '-0.02em', margin: '0 0 0.75rem' }}>
-              Sigue practicando Task 1
+              Keep practising Task 1
             </h2>
             <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
               {INTERNAL_LINKS.map((item) => (
@@ -421,7 +421,7 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="faq-heading" style={{ marginTop: '1.6rem' }}>
             <h2 id="faq-heading" style={{ fontSize: '1.25rem', letterSpacing: '-0.02em', margin: '0 0 0.75rem' }}>
-              Preguntas frecuentes
+              Frequently asked questions
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {faqs.map((faq) => (

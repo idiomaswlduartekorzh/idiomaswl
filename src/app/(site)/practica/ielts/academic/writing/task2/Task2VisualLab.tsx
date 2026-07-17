@@ -49,7 +49,8 @@ export function Task2EssayArchitectureVisual({ type }: { type: EssayType }) {
   ] as const;
 
   return (
-    <svg viewBox="0 0 760 238" style={{ width: '100%', display: 'block' }} role="img" aria-label={`${type} IELTS Writing Task 2 essay architecture`}>
+    <svg viewBox="0 0 760 238" style={{ width: '100%', display: 'block' }} role="img" aria-label={`${type} IELTS Writing Task 2 essay architecture`} focusable="false">
+      <desc>{type} essay architecture: introduction, thesis, two body paragraphs and conclusion. This is an original WeLearn learning visual, not an official IELTS document.</desc>
       <rect x="8" y="8" width="744" height="222" rx="16" fill="var(--bg)" stroke="var(--line-soft)" />
       <text x="28" y="34" fontSize="13" fontWeight="900" fill="var(--ink)">{type} essay architecture</text>
       <text x="28" y="53" fontSize="10" fill="var(--muted)">Original WeLearn visual: each paragraph has one job.</text>

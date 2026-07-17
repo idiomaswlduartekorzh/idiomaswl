@@ -91,7 +91,7 @@ const LESSONS: VisualLesson[] = [
     ],
     options: [
       { correct: true, text: 'Overall, solar and wind accounted for the majority of energy production, while other sources made up the smallest share.', reason: 'Correct: it groups segments and avoids exact percentages.' },
-      { correct: false, text: 'Overall, solar was 34%, wind was 28%, hydro was 22% and other sources were 16%.', reason: 'Demasiada cifra exacta para un overview.' },
+      { correct: false, text: 'Overall, solar was 34%, wind was 28%, hydro was 22% and other sources were 16%.', reason: 'This includes too many exact figures for an overview.' },
       { correct: false, text: 'Overall, energy production increased steadily over the period.', reason: 'Incorrect: a one-year pie chart does not show change over time.' },
     ],
   },

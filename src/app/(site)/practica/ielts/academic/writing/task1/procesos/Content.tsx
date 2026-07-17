@@ -21,26 +21,59 @@ interface ProcessExercise {
 
 const EXERCISES: ProcessExercise[] = [
   {
-    title: 'Recycled paper production',
+    title: 'Plastic bottle recycling',
     steps: [
-      { n: 1, active: 'Workers collect waste paper', passive: 'Waste paper is collected', sequencer: 'First,' },
-      { n: 2, active: 'Machines sort the paper by type', passive: 'The paper is sorted by type', sequencer: 'Next,' },
-      { n: 3, active: 'Workers add water and chemicals to create pulp', passive: 'Water and chemicals are added to create pulp', sequencer: 'After that,' },
-      { n: 4, active: 'Machines clean and filter the pulp', passive: 'The pulp is cleaned and filtered', sequencer: 'Then,' },
-      { n: 5, active: 'Rollers press and dry the pulp into sheets', passive: 'The pulp is pressed and dried into sheets', sequencer: 'Finally,' },
+      { n: 1, active: 'Workers collect used bottles from public recycling bins', passive: 'Used bottles are collected from public recycling bins', sequencer: 'First,' },
+      { n: 2, active: 'Workers separate plastic from other materials', passive: 'Plastic is separated from other materials', sequencer: 'Next,' },
+      { n: 3, active: 'Workers wash the bottles before cutting them into flakes', passive: 'The bottles are washed before being cut into flakes', sequencer: 'After that,' },
+      { n: 4, active: 'Machines heat the flakes and turn them into pellets', passive: 'The flakes are heated and turned into plastic pellets', sequencer: 'Then,' },
+      { n: 5, active: 'Manufacturers mould the pellets into new products', passive: 'The pellets are moulded into new products', sequencer: 'Finally,' },
     ],
-    modelParagraph: 'First, waste paper is collected and transported to a recycling facility. Next, the paper is sorted by type using machines. After that, water and chemicals are added to break down the paper into pulp. The pulp is then cleaned and filtered to remove impurities. Finally, the pulp is pressed and dried into thin sheets, which are rolled and prepared for distribution.',
+    modelParagraph: 'First, used bottles are collected from public recycling bins. Next, the plastic is separated from other materials at a recycling centre. After that, the bottles are washed before being cut into small flakes. The flakes are then heated and turned into plastic pellets. Finally, the pellets are moulded into new bottles, clothing or containers.',
   },
   {
-    title: 'Water purification process',
+    title: 'Coffee preparation for sale',
     steps: [
-      { n: 1, active: 'Engineers pump water from a river into a storage tank', passive: 'Water is pumped from a river into a storage tank', sequencer: 'First,' },
-      { n: 2, active: 'Workers add chemicals to remove large particles', passive: 'Chemicals are added to remove large particles', sequencer: 'Then,' },
-      { n: 3, active: 'Gravity causes particles to settle at the bottom', passive: 'Particles are allowed to settle at the bottom', sequencer: 'After this,' },
-      { n: 4, active: 'Filters remove remaining impurities', passive: 'Remaining impurities are removed by filters', sequencer: 'Subsequently,' },
-      { n: 5, active: 'Workers add chlorine to kill bacteria before distribution', passive: 'Chlorine is added to kill bacteria before distribution', sequencer: 'Finally,' },
+      { n: 1, active: 'Farmers pick ripe coffee cherries from the plants', passive: 'Ripe coffee cherries are picked from the plants', sequencer: 'First,' },
+      { n: 2, active: 'Workers spread the cherries out and dry them in the sun', passive: 'The cherries are spread out and dried in the sun', sequencer: 'Next,' },
+      { n: 3, active: 'Workers remove the outer layers from the dried fruit', passive: 'The outer layers are removed from the dried fruit', sequencer: 'After that,' },
+      { n: 4, active: 'Roasters heat the beans until they reach the desired colour', passive: 'The beans are heated until they reach the desired colour', sequencer: 'Then,' },
+      { n: 5, active: 'Workers grind and pack the roasted beans for sale', passive: 'The roasted beans are ground and packed for sale', sequencer: 'Finally,' },
     ],
-    modelParagraph: 'First, water is pumped from a river into a large storage tank. Chemicals are then added to remove large particles, which are allowed to settle at the bottom of the tank. After this, the water passes through a series of filters where remaining impurities are removed. Finally, chlorine is added to eliminate any remaining bacteria before the purified water is distributed to homes and businesses.',
+    modelParagraph: 'First, ripe coffee cherries are picked from the plants. Next, they are spread out and dried in the sun. After that, the outer layers are removed from the dried fruit. The beans are then heated until they reach the desired colour. Finally, the roasted beans are ground and packed for sale.',
+  },
+  {
+    title: 'Bottled water production',
+    steps: [
+      { n: 1, active: 'A company takes water from an underground spring', passive: 'Water is taken from an underground spring', sequencer: 'First,' },
+      { n: 2, active: 'Filters remove unwanted particles from the water', passive: 'Unwanted particles are removed from the water', sequencer: 'Next,' },
+      { n: 3, active: 'The company treats the water to make it safe to drink', passive: 'The water is treated to make it safe to drink', sequencer: 'After that,' },
+      { n: 4, active: 'Workers pour the clean water into plastic bottles', passive: 'Clean water is poured into plastic bottles', sequencer: 'Then,' },
+      { n: 5, active: 'Workers label the bottles and send them to shops', passive: 'The bottles are labelled and sent to shops', sequencer: 'Finally,' },
+    ],
+    modelParagraph: 'First, water is taken from an underground spring. Next, unwanted particles are removed by a filtering system. After that, the water is treated to make it safe to drink. Clean water is then poured into plastic bottles. Finally, the bottles are labelled and sent to shops for distribution.',
+  },
+  {
+    title: 'Brick manufacturing',
+    steps: [
+      { n: 1, active: 'An excavator removes clay from the ground', passive: 'Clay is removed from the ground by an excavator', sequencer: 'First,' },
+      { n: 2, active: 'A machine breaks the clay into smaller pieces', passive: 'The clay is broken into smaller pieces', sequencer: 'Next,' },
+      { n: 3, active: 'A mould shapes the material into rectangular bricks', passive: 'The material is shaped into rectangular bricks', sequencer: 'After that,' },
+      { n: 4, active: 'Workers leave the bricks in a drying chamber', passive: 'The bricks are left in a drying chamber', sequencer: 'Then,' },
+      { n: 5, active: 'A kiln heats the bricks before delivery', passive: 'The bricks are heated in a kiln before delivery', sequencer: 'Finally,' },
+    ],
+    modelParagraph: 'First, clay is removed from the ground by an excavator. Next, it is broken into smaller pieces. After that, the material is shaped into rectangular bricks. The bricks are then left in a drying chamber. Finally, they are heated in a kiln before being delivered.',
+  },
+  {
+    title: 'Honey bee life cycle',
+    steps: [
+      { n: 1, active: 'The queen lays eggs inside the cells of a hive', passive: 'Eggs are laid inside the cells of a hive', sequencer: 'First,' },
+      { n: 2, active: 'The eggs hatch and become small larvae', passive: 'The eggs hatch and become small larvae', sequencer: 'Next,' },
+      { n: 3, active: 'The bees seal the larvae inside cells to develop', passive: 'The larvae are sealed inside cells to develop', sequencer: 'After that,' },
+      { n: 4, active: 'Fully grown bees emerge from the cells', passive: 'Fully grown bees emerge from the cells', sequencer: 'Then,' },
+      { n: 5, active: 'Adult bees feed the young and maintain the hive', passive: 'The young are fed and the hive is maintained by adult bees', sequencer: 'Finally,' },
+    ],
+    modelParagraph: 'The cycle begins when eggs are laid inside the cells of a hive. Next, the eggs hatch and become small larvae, which are then sealed inside cells to develop. Fully grown bees subsequently emerge from the cells. Finally, adult bees feed the young and maintain the hive before the cycle begins again.',
   },
 ];
 
@@ -65,7 +98,7 @@ export default function ProcesosPage() {
   const done = Object.keys(answers).length === ex.steps.length;
 
   return (
-    <section className="wl-section">
+    <section className="wl-section" lang="en">
       <div className="wrap">
         <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
@@ -98,7 +131,7 @@ export default function ProcesosPage() {
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
               <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Passive voice</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
-                Sujeto + <strong>is/are</strong> + participio pasado<br />
+                Subject + <strong>is/are</strong> + past participle<br />
                 &ldquo;The material <strong>is heated</strong>&rdquo;<br />
                 &ldquo;Water <strong>is pumped</strong>&rdquo;
               </p>
@@ -128,8 +161,8 @@ export default function ProcesosPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '1.25rem' }}>
             {ex.steps.map(step => {
               const ans = answers[step.n];
-              const correct = revealed && ans === step.passive;
-              const wrong = revealed && ans && ans !== step.passive;
+              const correct = revealed && ans === step.sequencer;
+              const wrong = revealed && ans && ans !== step.sequencer;
               return (
                 <div key={step.n} className="wl-card" style={{ padding: '1.1rem' }}>
                   <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
@@ -146,7 +179,7 @@ export default function ProcesosPage() {
                           style={{ padding: '0.4rem 0.6rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}
                         >
                           <option value="">— sequencer —</option>
-                          {SEQUENCERS.map(s => <option key={s} value={step.passive}>{s} {step.passive.substring(0, 30)}…</option>)}
+                          {SEQUENCERS.map(s => <option key={s} value={s}>{s} {step.passive.substring(0, 30)}…</option>)}
                         </select>
                       </div>
                       {revealed && (

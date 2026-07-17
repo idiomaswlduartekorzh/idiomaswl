@@ -42,21 +42,21 @@ const OVERVIEWS: OverviewOption[] = [
     text: 'Overall, campus students were more likely to choose Business, Engineering and Health, while online learners preferred Languages and Design, with Languages showing the highest online figure.',
     correct: true,
     explanation:
-      'Correcto. Resume el contraste central entre los dos grupos y menciona la categoría dominante sin listar todas las cifras.',
+      'Correct. Summarise the central contrast between the two groups and mention the dominant category without listing every figure.',
   },
   {
     id: 'list',
     text: 'Overall, Business was 74% on campus and 52% online, Engineering was 68% and 41%, Design was 46% and 63%, Health was 58% and 35%, and Languages was 31% and 70%.',
     correct: false,
     explanation:
-      'Esto no es un overview: es una lista de datos. El overview debe interpretar el patrón, no copiar cada barra.',
+      'This is not an overview: it is a list of data. An overview should interpret the pattern rather than copy every bar.',
   },
   {
     id: 'wrong',
     text: 'Overall, online learners chose every subject more often than campus students, especially Business and Engineering.',
     correct: false,
     explanation:
-      'Incorrecto. Online supera a campus solo en Design y Languages; Business y Engineering son más altos en campus.',
+      'Incorrect. Online is higher than campus only in Design and Languages; campus is higher in Business and Engineering.',
   },
 ];
 
@@ -66,68 +66,68 @@ const GROUPS: GroupOption[] = [
     text: 'Group Business and Engineering together because both are high on campus and lower online.',
     useful: true,
     explanation:
-      'Fuerte. Agrupa categorías con el mismo comportamiento y permite un párrafo compacto con comparación directa.',
+      'Strong. It groups categories with the same behaviour and supports a compact paragraph with direct comparison.',
   },
   {
     id: 'online-high',
     text: 'Group Languages and Design together because both are higher online than on campus.',
     useful: true,
     explanation:
-      'Fuerte. Este grupo contrasta claramente con Business/Engineering y ayuda a construir el segundo párrafo.',
+      'Strong. This group clearly contrasts with Business and Engineering and helps build the second body paragraph.',
   },
   {
     id: 'health',
     text: 'Mention Health as a supporting campus-preferred category, but not as the headline trend.',
     useful: true,
     explanation:
-      'Útil. Health refuerza el patrón campus, aunque no es tan alto como Business o Engineering.',
+      'Useful. Health reinforces the campus pattern, although it is not as high as Business or Engineering.',
   },
   {
     id: 'visual-order',
     text: 'Describe the bars in the exact left-to-right order shown in the chart.',
     useful: false,
     explanation:
-      'Débil. El orden visual rara vez es la mejor estructura; en IELTS Task 1 conviene agrupar por patrón.',
+      'Weak. Visual order is rarely the best structure; in IELTS Task 1, grouping by pattern is more effective.',
   },
   {
     id: 'cause',
     text: 'Explain that online learners preferred Languages because language apps are popular.',
     useful: false,
     explanation:
-      'No sirve. El gráfico no da causas; Task 1 describe datos, no inventa explicaciones externas.',
+      'Not useful. The chart does not provide causes; Task 1 describes data rather than inventing external explanations.',
   },
 ];
 
 const MODEL_ANSWER = [
   {
-    label: 'Introducción',
+    label: 'Introduction',
     text: 'The bar chart compares the proportions of campus-based and online students who selected five subject areas in 2024.',
-    note: 'Parafrasea el enunciado y deja clara la unidad: proporciones de estudiantes.',
+    note: 'Paraphrase the prompt and make the unit clear: student proportions.',
   },
   {
     label: 'Overview',
     text: 'Overall, campus students showed stronger preferences for Business, Engineering and Health, whereas online learners were more likely to choose Languages and Design. The highest figure was for Business among campus students, while Languages was the leading online subject.',
-    note: 'Presenta el contraste principal y los líderes de cada grupo sin saturar con números.',
+    note: 'Present the main contrast and the leader in each group without overloading the response with figures.',
   },
   {
     label: 'Cuerpo 1',
     text: 'Business was the most popular campus subject, at 74%, compared with 52% among online learners. A similar pattern can be seen in Engineering, where the campus figure stood at 68%, substantially above the online figure of 41%.',
-    note: 'Agrupa dos categorías con el mismo patrón: campus alto y online más bajo.',
+    note: 'Group two categories with the same pattern: higher campus figures and lower online figures.',
   },
   {
     label: 'Cuerpo 2',
     text: 'By contrast, online students were more likely to choose Languages and Design, at 70% and 63% respectively, while the corresponding campus figures were 31% and 46%. Health also favored campus learners, with 58% choosing it compared with only 35% online.',
-    note: 'Cierra con el contraste inverso y añade Health como apoyo, no como idea principal.',
+    note: 'Close with the opposite contrast and add Health as supporting evidence rather than the main idea.',
   },
 ];
 
 const INTERNAL_LINKS = [
   { href: '/practica/ielts/academic/writing/task1', label: 'Task 1 hub' },
-  { href: '/practica/ielts/academic/writing/task1/graficos-lineales', label: 'Gráficos lineales' },
+  { href: '/practica/ielts/academic/writing/task1/graficos-lineales', label: 'Line graphs' },
   { href: '/practica/ielts/academic/writing/task1/overview', label: 'Overview' },
-  { href: '/practica/ielts/academic/writing/task1/comparaciones', label: 'Comparaciones' },
-  { href: '/practica/ielts/academic/writing/task1/vocabulario', label: 'Vocabulario' },
-  { href: '/practica/ielts/academic/writing/task1/tarea-completa', label: 'Tarea completa' },
+  { href: '/practica/ielts/academic/writing/task1/comparaciones', label: 'Comparisons' },
+  { href: '/practica/ielts/academic/writing/task1/vocabulario', label: 'Data vocabulary' },
+  { href: '/practica/ielts/academic/writing/task1/tarea-completa', label: 'Full task' },
 ];
 
 function BarChart() {
@@ -240,7 +240,7 @@ function OptionCard({
       <span style={{ display: 'block', fontSize: '0.9rem', lineHeight: 1.55 }}>{text}</span>
       {revealed && (
         <span style={{ display: 'block', marginTop: '0.55rem', color: 'var(--muted)', fontSize: '0.82rem', lineHeight: 1.55 }}>
-          <strong style={{ color: positive ? '#047857' : '#991b1b' }}>{positive ? 'Respuesta fuerte: ' : 'Cuidado: '}</strong>
+          <strong style={{ color: positive ? '#047857' : '#991b1b' }}>{positive ? 'Strong choice: ' : 'Caution: '}</strong>
           {explanation}
         </span>
       )}
@@ -285,35 +285,35 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
             IELTS Academic Writing Task 1
           </p>
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.05, letterSpacing: '-0.03em', margin: '0 0 0.85rem', fontWeight: 800 }}>
-            Gráficos de barras en IELTS Writing Task 1
+            Bar charts in IELTS Writing Task 1
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: '0 0 1rem', maxWidth: 720 }}>
-            Practica cómo transformar un bar chart en una respuesta organizada: leer categorías, detectar rankings, agrupar barras y comparar diferencias sin describir dato por dato.
+            Practise how to transform a bar chart into an organised response: read categories, identify rankings, group bars and compare differences without describing every item.
           </p>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65, margin: '0 0 1rem', maxWidth: 720 }}>
-            La práctica incluye respuestas explicadas para overview y agrupación, además de un modelo comentado de respuesta Task 1.
+            The practice includes explained answers for overviews and grouping, plus an annotated Task 1 model response.
           </p>
 
           <div className="wl-card" style={{ padding: '1rem 1.1rem', marginBottom: '1.35rem', borderRadius: 8 }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic Writing Task 1 pide describir información visual. Un gráfico de barras entra dentro de esa familia de gráficos, pero no lo presentamos como una tarea oficial separada.
+              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic Writing Task 1 asks you to describe visual information. A bar chart belongs to this family of visuals, but we do not present it as a separate official task.
             </p>
             <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> practicamos bar charts por separado porque suelen premiar la comparación selectiva: líderes, mínimos, brechas grandes, patrones por grupo y excepciones.
+              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> we practise bar charts separately because they reward selective comparison: leaders, lows, large gaps, group patterns and exceptions.
             </p>
           </div>
 
           <section aria-labelledby="workflow-heading">
             <h2 id="workflow-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '0 0 0.65rem' }}>
-              Flujo de trabajo para un bar chart
+              Workflow for a bar chart
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', marginBottom: '1.25rem' }}>
               {[
-                ['1', 'Define las categorías', 'Identifica qué compara cada barra y cuál es la unidad: porcentaje, número, dinero o frecuencia.'],
-                ['2', 'Encuentra rankings', 'Busca la barra más alta, la más baja y si un grupo domina en varias categorías.'],
-                ['3', 'Agrupa por patrón', 'Une categorías similares o contrastantes; no sigas el orden visual si no ayuda.'],
-                ['4', 'Selecciona brechas', 'Usa cifras donde la diferencia sea relevante, no para repetir cada valor.'],
+                ['1', 'Define the categories', 'Identify what each bar compares and the unit: percentage, number, money or frequency.'],
+                ['2', 'Find the rankings', 'Look for the highest and lowest bars and whether one group dominates several categories.'],
+                ['3', 'Group by pattern', 'Combine similar or contrasting categories; do not follow visual order if it does not help.'],
+                ['4', 'Select meaningful gaps', 'Use figures where the difference matters rather than repeating every value.'],
               ].map(([step, title, copy]) => (
                 <article key={step} className="wl-card" style={{ padding: '0.95rem', borderRadius: 8 }}>
                   <span style={{ display: 'inline-flex', width: 28, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 6, background: 'rgba(15,61,140,0.09)', color: '#0f3d8c', fontWeight: 800, fontFamily: 'var(--mono)', marginBottom: '0.55rem' }}>
@@ -328,7 +328,7 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="practice-heading">
             <h2 id="practice-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '1.5rem 0 0.45rem' }}>
-              Ejercicio guiado: overview y agrupación de barras
+              Guided exercise: overview and bar grouping
             </h2>
             <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
               The bar chart below compares the percentages of campus-based and online students who selected five subject areas in 2024.
@@ -336,7 +336,7 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
 
             <BarChart />
 
-            <h3 style={{ margin: '0 0 0.65rem', fontSize: '1.05rem' }}>Paso 1: escoge el mejor overview</h3>
+            <h3 style={{ margin: '0 0 0.65rem', fontSize: '1.05rem' }}>Step 1: choose the strongest overview</h3>
             <div style={{ display: 'grid', gap: '0.65rem', marginBottom: '0.85rem' }}>
               {OVERVIEWS.map((option) => (
                 <OptionCard
@@ -352,13 +352,13 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
             </div>
             {!overviewRevealed && (
               <button className="btn btn-sm" type="button" disabled={!overviewId} onClick={() => setOverviewRevealed(true)} style={{ opacity: overviewId ? 1 : 0.5, marginBottom: '1.25rem' }}>
-                Revisar overview
+                Check overview
               </button>
             )}
 
-            <h3 style={{ margin: '1.15rem 0 0.65rem', fontSize: '1.05rem' }}>Paso 2: decide cómo agrupar los datos</h3>
+            <h3 style={{ margin: '1.15rem 0 0.65rem', fontSize: '1.05rem' }}>Step 2: decide how to group the data</h3>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.55 }}>
-              Selecciona las decisiones de estructura que producirían una respuesta más clara.
+              Select the structural decisions that would produce a clearer response.
             </p>
             <div style={{ display: 'grid', gap: '0.65rem', marginBottom: '0.85rem' }}>
               {GROUPS.map((group) => (
@@ -375,12 +375,12 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
             </div>
             {!groupsRevealed ? (
               <button className="btn btn-sm" type="button" disabled={groupIds.size === 0} onClick={() => setGroupsRevealed(true)} style={{ opacity: groupIds.size ? 1 : 0.5, marginBottom: '1rem' }}>
-                Revisar agrupación
+                Review the grouping
               </button>
             ) : (
               <div className="wl-card" style={{ padding: '0.9rem 1rem', borderRadius: 8, marginBottom: '1rem', background: 'rgba(15,61,140,0.05)' }}>
                 <p style={{ margin: 0, color: 'var(--ink)', fontWeight: 700 }}>
-                  Resultado: {groupScore} de {GROUPS.filter((group) => group.useful).length} decisiones fuertes seleccionadas.
+                  Result: {groupScore} of {GROUPS.filter((group) => group.useful).length} strong decisions selected.
                 </p>
               </div>
             )}
@@ -388,7 +388,7 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="model-heading" style={{ marginTop: '1.5rem' }}>
             <h2 id="model-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '0 0 0.8rem' }}>
-              Modelo de respuesta explicado
+              Explained model response
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {MODEL_ANSWER.map((part) => (
@@ -396,7 +396,7 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
                   <h3 style={{ margin: '0 0 0.45rem', fontSize: '0.95rem', color: '#0f3d8c' }}>{part.label}</h3>
                   <p style={{ margin: '0 0 0.6rem', color: 'var(--ink)', lineHeight: 1.65, fontSize: '0.92rem' }}>{part.text}</p>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.82rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>Por qué funciona:</strong> {part.note}
+                    <strong style={{ color: 'var(--ink)' }}>Why it works:</strong> {part.note}
                   </p>
                 </article>
               ))}
@@ -405,7 +405,7 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="links-heading" style={{ marginTop: '1.6rem' }}>
             <h2 id="links-heading" style={{ fontSize: '1.25rem', letterSpacing: '-0.02em', margin: '0 0 0.75rem' }}>
-              Sigue practicando Task 1
+              Keep practising Task 1
             </h2>
             <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
               {INTERNAL_LINKS.map((item) => (
@@ -418,7 +418,7 @@ export default function GraficosDeBarrasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="faq-heading" style={{ marginTop: '1.6rem' }}>
             <h2 id="faq-heading" style={{ fontSize: '1.25rem', letterSpacing: '-0.02em', margin: '0 0 0.75rem' }}>
-              Preguntas frecuentes
+              Frequently asked questions
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {faqs.map((faq) => (

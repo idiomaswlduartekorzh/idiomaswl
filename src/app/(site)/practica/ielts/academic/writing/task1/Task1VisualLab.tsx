@@ -71,7 +71,8 @@ export function IELTSLineGraphVisual({ variant = 0 }: { variant?: number }) {
   const y = (v: number) => pad.top + ch - (v / data.yMax) * ch;
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title}>
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title} focusable="false">
+      <desc>{data.title}. {data.series.map((serie) => `${serie.label} moves from ${serie.values[0]}${data.unit} to ${serie.values[serie.values.length - 1]}${data.unit}`).join('; ')}.</desc>
       <text x={pad.left} y="18" fontSize="13" fontWeight="800" fill="var(--ink)">{data.title}</text>
       {[0, 0.25, 0.5, 0.75, 1].map((f) => (
         <g key={f}>
@@ -116,7 +117,8 @@ export function IELTSBarChartVisual({ variant = 0 }: { variant?: number }) {
   const max = data.max;
   const y = (v: number) => 220 - (v / max) * 160;
   return (
-    <svg viewBox="0 0 560 270" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title}>
+    <svg viewBox="0 0 560 270" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title} focusable="false">
+      <desc>{data.title}. The values are {data.labels.map((label, index) => `${label}: ${data.values[index]}${data.unit}`).join(', ')}.</desc>
       <text x="50" y="20" fontSize="13" fontWeight="800" fill="var(--ink)">{data.title}</text>
       {data.ticks.map((tick) => (
         <g key={tick}>
@@ -144,7 +146,7 @@ export function IELTSPieChartVisual({ variant = 0 }: { variant?: number }) {
     { title: 'Household spending by category, 2000 and 2020', charts: [{ label: '2000', data: [['Housing', 22], ['Food', 31], ['Transport', 17], ['Other', 30]] as PieData }, { label: '2020', data: [['Housing', 31], ['Food', 24], ['Transport', 19], ['Other', 26]] as PieData }] },
     { title: 'Reasons for choosing online courses, 2024', data: [['Flexibility', 42], ['Cost', 27], ['Access', 18], ['Other', 13]] },
     { title: 'Visitors to a national park by season', data: [['Summer', 28], ['Spring', 25], ['Autumn', 24], ['Winter', 23]] },
-    { title: 'Electricity generation in two countries', charts: [{ label: 'Country A', data: [['Gas', 36], ['Coal', 24], ['Nuclear', 22], ['Renewables', 18]] as PieData }, { label: 'Country B', data: [['Gas', 18], ['Coal', 42], ['Nuclear', 16], ['Renewables', 26]] as PieData }] },
+    { title: 'Electricity generation in two countries', charts: [{ label: 'Country A', data: [['Gas', 36], ['Coal', 24], ['Nuclear', 22], ['Renewables', 18]] as PieData }, { label: 'Country B', data: [['Gas', 18], ['Coal', 40], ['Nuclear', 16], ['Renewables', 26]] as PieData }] },
   ];
   const selected = datasets[variant % datasets.length];
   const charts = 'charts' in selected && selected.charts ? selected.charts : [{ label: '', data: selected.data as PieData }];
@@ -158,7 +160,8 @@ export function IELTSPieChartVisual({ variant = 0 }: { variant?: number }) {
     return { d: `M ${cx} ${cy} L ${a.x} ${a.y} A ${r} ${r} 0 ${sweep > 180 ? 1 : 0} 1 ${b.x} ${b.y} Z`, end };
   };
   return (
-    <svg viewBox="0 0 720 300" style={{ width: '100%', maxWidth: 720, display: 'block' }} role="img" aria-label={selected.title}>
+    <svg viewBox="0 0 720 300" style={{ width: '100%', maxWidth: 720, display: 'block' }} role="img" aria-label={selected.title} focusable="false">
+      <desc>{selected.title}. {charts.map((chart) => `${chart.label || 'The chart'} shows ${chart.data.map(([label, value]) => `${label} at ${value}%`).join(', ')}`).join('. ')}.</desc>
       <text x="36" y="22" fontSize="13" fontWeight="800" fill="var(--ink)">{selected.title}</text>
       {charts.map((chart, chartIndex) => {
         let angle = -90;
@@ -183,7 +186,7 @@ export function IELTSTableVisual({ variant = 0 }: { variant?: number }) {
   const rows = selected.rows;
   return (
     <div style={{ overflowX: 'auto', border: '1px solid var(--line-soft)', borderRadius: 8 }}>
-      <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 420, background: 'var(--bg)' }}>
+      <table aria-label={selected.caption} style={{ width: '100%', borderCollapse: 'collapse', minWidth: 420, background: 'var(--bg)' }}>
         <caption style={{ textAlign: 'left', padding: '0.7rem 0.8rem', fontWeight: 800, color: 'var(--ink)' }}>
           {selected.caption}
         </caption>
@@ -210,7 +213,8 @@ export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number })
   const steps = data.steps.map((step, i) => [String(i + 1), step[0], step[1]]);
   const palette = ['#0f3d8c', '#059669', '#7c3aed', '#d97706', '#dc2626'];
   return (
-    <svg viewBox="0 0 800 410" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title}>
+    <svg viewBox="0 0 800 410" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title} focusable="false">
+      <desc>{data.title}. The process contains {steps.length} stages, beginning with {steps[0][1]} and ending with {steps[steps.length - 1][1]}.</desc>
       <defs>
         <marker id={`arrow-task1-process-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
           <path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" />
@@ -278,7 +282,8 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
     </g>
   );
   return (
-    <svg viewBox="0 0 820 390" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title}>
+    <svg viewBox="0 0 820 390" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title} focusable="false">
+      <desc>{data.title}. The map compares {data.beforeLabel} with {data.afterLabel}; the labelled land uses and transport features are shown in the two panels.</desc>
       <defs>
         <marker id={`arrow-task1-map-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
           <path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" />
@@ -307,6 +312,58 @@ export function IELTSMixedVisual({ variant = 0 }: { variant?: number }) {
       <div style={{ minWidth: 0 }}><IELTSLineGraphVisual variant={variant} /></div>
       <div style={{ minWidth: 0 }}><IELTSBarChartVisual variant={variant} /></div>
     </div>
+  );
+}
+
+export function IELTSVocabularyTrendVisual({
+  subject,
+  from,
+  to,
+  unit,
+  yearFrom,
+  yearTo,
+}: {
+  subject: string;
+  from: number;
+  to: number;
+  unit: string;
+  yearFrom: number;
+  yearTo: number;
+}) {
+  const W = 560;
+  const H = 250;
+  const pad = { top: 40, right: 30, bottom: 48, left: 58 };
+  const max = Math.max(from, to, 1) * 1.18;
+  const chartHeight = 132;
+  const y = (value: number) => pad.top + chartHeight - (value / max) * chartHeight;
+  const points = [{ year: yearFrom, value: from }, { year: yearTo, value: to }];
+  const increase = to > from;
+  const stable = Math.abs(to - from) / Math.max(from, 1) < 0.05;
+  const color = stable ? '#0f3d8c' : increase ? '#059669' : '#dc2626';
+  const valueLabel = (value: number) => `${unit === '£' ? '£' : ''}${value.toLocaleString('en-GB')}${unit === '£' ? '' : ` ${unit}`}`;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', display: 'block' }} role="img" aria-label={`${subject} from ${yearFrom} to ${yearTo}`} focusable="false">
+      <desc>{subject} changes from {valueLabel(from)} in {yearFrom} to {valueLabel(to)} in {yearTo}.</desc>
+      <text x={pad.left} y="20" fontSize="13" fontWeight="800" fill="var(--ink)">{subject}</text>
+      <text x={pad.left} y="34" fontSize="10" fill="var(--muted)">Vocabulary focus: direction and intensity</text>
+      {[0, 0.5, 1].map((fraction) => (
+        <g key={fraction}>
+          <line x1={pad.left} x2={W - pad.right} y1={y(max * fraction)} y2={y(max * fraction)} stroke="var(--line-soft)" />
+          <text x={pad.left - 8} y={y(max * fraction) + 4} textAnchor="end" fontSize="10" fill="var(--muted)">{valueLabel(Math.round(max * fraction))}</text>
+        </g>
+      ))}
+      <polyline points={`${pad.left},${y(from)} ${W - pad.right},${y(to)}`} fill="none" stroke={color} strokeWidth="4" strokeLinecap="round" />
+      {points.map((point, index) => (
+        <g key={point.year}>
+          <circle cx={index === 0 ? pad.left : W - pad.right} cy={y(point.value)} r="6" fill={color} />
+          <text x={index === 0 ? pad.left : W - pad.right} y={y(point.value) - 12} textAnchor="middle" fontSize="11" fontWeight="800" fill={color}>{valueLabel(point.value)}</text>
+          <text x={index === 0 ? pad.left : W - pad.right} y={H - 18} textAnchor="middle" fontSize="10" fill="var(--muted)">{point.year}</text>
+        </g>
+      ))}
+      <line x1={pad.left} x2={pad.left} y1={pad.top} y2={H - pad.bottom} stroke="var(--ink-2)" />
+      <line x1={pad.left} x2={W - pad.right} y1={H - pad.bottom} y2={H - pad.bottom} stroke="var(--ink-2)" />
+      <text x={W - pad.right} y={H - 3} textAnchor="end" fontSize="10" fontWeight="800" fill={color}>{stable ? 'stable' : increase ? 'increase' : 'decrease'}</text>
+    </svg>
   );
 }
 

@@ -5,97 +5,97 @@ import Link from 'next/link';
 const LEGO_BLOCKS = [
   {
     n: 1,
-    name: 'Leer el prompt',
+    name: 'Read the prompt',
     route: '/practica/ielts/academic/writing/task2/tipo-ensayo',
-    skill: 'Detectar tipo de pregunta e instrucción final.',
-    output: 'Sé si debo opinar, discutir, diagnosticar, evaluar pros/contras o responder dos preguntas.',
+    skill: 'Detect the question type and final instruction.',
+    output: 'Know whether to give an opinion, discuss, diagnose, evaluate pros and cons or answer two questions.',
   },
   {
     n: 2,
     name: 'Paraphrasing',
     route: '/practica/ielts/academic/writing/task2/introduccion',
-    skill: 'Reescribir el tema sin copiar frases largas.',
-    output: 'Primera oración de la introducción.',
+    skill: 'Rewrite the topic without copying long phrases.',
+    output: 'The first sentence of the introduction.',
   },
   {
     n: 3,
-    name: 'Tomar posición',
+    name: 'Take a position',
     route: '/practica/ielts/academic/writing/task2/introduccion',
-    skill: 'Decidir stance, balance u hoja de ruta según el tipo.',
-    output: 'Tesis clara y compatible con la pregunta.',
+    skill: 'Choose a stance, balance or roadmap according to the type.',
+    output: 'A clear thesis that matches the question.',
   },
   {
     n: 4,
     name: 'Body 1',
     route: '/practica/ielts/academic/writing/task2/parrafos-cuerpo',
-    skill: 'Topic sentence + explicación + ejemplo + cierre.',
-    output: 'Primer argumento o primera pregunta respondida.',
+    skill: 'Topic sentence + explanation + example + closing link.',
+    output: 'The first argument or first question answered.',
   },
   {
     n: 5,
     name: 'Body 2',
     route: '/practica/ielts/academic/writing/task2/parrafos-cuerpo',
-    skill: 'Segundo argumento, postura opuesta, solución o Q2.',
-    output: 'Segundo bloque de desarrollo sin perder coherencia.',
+    skill: 'Second argument, opposing view, solution or Q2.',
+    output: 'The second development block without losing coherence.',
   },
   {
     n: 6,
     name: 'Linking words',
     route: '/practica/ielts/academic/writing/task2/linking-language',
-    skill: 'Conectar función lógica: contraste, causa, ejemplo, consecuencia, conclusión.',
-    output: 'Cohesión natural, no una cadena de conectores memorizados.',
+    skill: 'Connect logical functions: contrast, cause, example, result and conclusion.',
+    output: 'Natural cohesion instead of a memorised chain of linkers.',
   },
   {
     n: 7,
     name: 'Syllogism',
     route: '/practica/ielts/academic/writing/task2/parrafos-cuerpo',
-    skill: 'Premisa general + caso específico + conclusión controlada.',
-    output: 'Argumentos que no saltan de idea en idea.',
+    skill: 'General premise + specific case + controlled conclusion.',
+    output: 'Arguments that move logically from one idea to the next.',
   },
   {
     n: 8,
-    name: 'Conclusión',
+    name: 'Conclusion',
     route: '/practica/ielts/academic/writing/task2/conclusion',
-    skill: 'Reformular tesis y cerrar sin información nueva.',
-    output: 'Último párrafo breve y evaluativo.',
+    skill: 'Restate the thesis and close without new information.',
+    output: 'A brief, evaluative final paragraph.',
   },
   {
     n: 9,
-    name: 'Lectura crítica final',
+    name: 'Final critical reading',
     route: '/practica/ielts/academic/writing/task2/tarea-completa',
-    skill: 'Leer como examinador: instrucción, postura, desarrollo, cohesión, errores.',
-    output: 'Corrección rápida antes de entregar.',
+    skill: 'Read like an examiner: instruction, position, development, cohesion and errors.',
+    output: 'A quick correction pass before submitting.',
   },
   {
     n: 10,
-    name: 'Tarea completa',
+    name: 'Complete task',
     route: '/practica/ielts/academic/writing/task2/tarea-completa',
-    skill: '40 minutos, 250+ palabras, revisión global.',
-    output: 'Ensayo completo con checklist y modelo.',
+    skill: '40 minutes, 250+ words and a global review.',
+    output: 'A complete essay with a checklist and model answer.',
   },
 ];
 
 const LINKING_FUNCTIONS = [
-  ['Adición', 'moreover, furthermore, in addition, likewise'],
-  ['Contraste', 'however, nevertheless, whereas, by contrast'],
-  ['Causa', 'because, since, as a result of, due to'],
-  ['Consecuencia', 'therefore, consequently, hence, as a result'],
-  ['Ejemplo', 'for example, for instance, such as, this can be seen in'],
-  ['Concesión', 'although, even though, despite this, admittedly'],
-  ['Conclusión', 'overall, in conclusion, ultimately, for these reasons'],
+  ['Addition', 'moreover, furthermore, in addition, likewise'],
+  ['Contrast', 'however, nevertheless, whereas, by contrast'],
+  ['Cause', 'because, since, as a result of, due to'],
+  ['Result', 'therefore, consequently, hence, as a result'],
+  ['Example', 'for example, for instance, such as, this can be seen in'],
+  ['Concession', 'although, even though, despite this, admittedly'],
+  ['Conclusion', 'overall, in conclusion, ultimately, for these reasons'],
 ];
 
 const SYLLOGISM_MOVES = [
   {
-    label: 'Premisa general',
+    label: 'General premise',
     example: 'When children spend most of their free time online, they have fewer opportunities to practise face-to-face communication.',
   },
   {
-    label: 'Caso específico',
+    label: 'Specific case',
     example: 'For example, a teenager who studies and socialises mainly through a screen may avoid group activities at school.',
   },
   {
-    label: 'Conclusión lógica',
+    label: 'Logical conclusion',
     example: 'As a result, excessive screen time can weaken social confidence rather than simply change the medium of interaction.',
   },
 ];
@@ -103,22 +103,22 @@ const SYLLOGISM_MOVES = [
 const SENTENCE_TYPES = [
   {
     label: 'Claim sentence',
-    function: 'Presenta el punto central del párrafo.',
+    function: 'Presents the central point of the paragraph.',
     example: 'Public transport is a more efficient use of urban space than private cars.',
   },
   {
     label: 'Complex cause sentence',
-    function: 'Explica por qué ocurre algo usando because, since, as o due to.',
+    function: 'Explains why something happens using because, since, as or due to.',
     example: 'Because buses carry many passengers in limited space, they reduce congestion more effectively than road expansion.',
   },
   {
     label: 'Concession sentence',
-    function: 'Reconoce una objeción sin abandonar tu postura.',
+    function: 'Acknowledges an objection without abandoning your position.',
     example: 'Although road construction may relieve traffic temporarily, it often encourages more car use in the long term.',
   },
   {
     label: 'Result sentence',
-    function: 'Cierra una cadena lógica con therefore, as a result o consequently.',
+    function: 'Closes a logical chain with therefore, as a result or consequently.',
     example: 'Consequently, governments should prioritise mass transit when planning urban infrastructure.',
   },
 ];
@@ -127,31 +127,31 @@ export default function Task2LegoGuide() {
   return (
     <section style={{ margin: '1.75rem 0 2rem' }}>
       <p className="eyebrow" style={{ marginBottom: '0.75rem' }}>
-        <span className="ink-line" />Sistema Lego de Writing Task 2
+        <span className="ink-line" />Writing Task 2 Lego system
       </p>
       <div style={{ border: '1px solid var(--line-soft)', borderRadius: 8, overflow: 'hidden', background: 'var(--bg)' }}>
         <div style={{ padding: '1rem 1.15rem', background: 'rgba(5,150,105,0.06)', borderBottom: '1px solid var(--line-soft)' }}>
           <h2 style={{ margin: '0 0 0.35rem', fontSize: '1.08rem', letterSpacing: 0 }}>
-            Un ensayo deja de ser intimidante cuando cada oración tiene función.
+            An essay becomes manageable when every sentence has a function.
           </h2>
           <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.92rem' }}>
-            Piensa cada parte como un bloque: si el bloque no cumple una función, sobra. Si falta un bloque, el ensayo se cae.
-            Este flujo conecta los documentos de writing, conjunctions y syllogism con práctica IELTS real.
+            Treat each part as a block: if a block has no function, remove it. If a block is missing, the essay loses its structure.
+            This flow connects writing, conjunctions and syllogism resources with real IELTS practice.
           </p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))' }}>
           {LEGO_BLOCKS.map((block) => (
             <article key={block.name} style={{ padding: '0.95rem', borderRight: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)' }}>
               <p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontWeight: 900, fontSize: '0.72rem' }}>
-                BLOQUE {block.n}
+                BLOCK {block.n}
               </p>
               <h3 style={{ margin: '0 0 0.35rem', fontSize: '0.96rem' }}>{block.name}</h3>
               <p style={{ margin: '0 0 0.45rem', color: 'var(--ink-2)', lineHeight: 1.5, fontSize: '0.82rem' }}>{block.skill}</p>
               <p style={{ margin: '0 0 0.55rem', color: 'var(--muted)', lineHeight: 1.45, fontSize: '0.76rem' }}>
-                <strong>Resultado:</strong> {block.output}
+                <strong>Output:</strong> {block.output}
               </p>
               <Link href={block.route} style={{ color: '#0f3d8c', fontWeight: 800, fontSize: '0.8rem', textDecoration: 'none' }}>
-                Entrenar →
+                Practise →
               </Link>
             </article>
           ))}
@@ -160,7 +160,7 @@ export default function Task2LegoGuide() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '0.85rem', marginTop: '1rem' }}>
         <article style={{ padding: '1rem', borderRadius: 8, border: '1px solid rgba(15,61,140,0.18)', background: 'rgba(15,61,140,0.05)' }}>
-          <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Conjunctions y linking phrases por función</h3>
+          <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Conjunctions and linking phrases by function</h3>
           {LINKING_FUNCTIONS.map(([fn, words]) => (
             <p key={fn} style={{ margin: '0 0 0.35rem', color: 'var(--ink-2)', fontSize: '0.82rem', lineHeight: 1.45 }}>
               <strong>{fn}:</strong> <span style={{ fontFamily: 'var(--mono)', color: '#0f3d8c' }}>{words}</span>
@@ -168,7 +168,7 @@ export default function Task2LegoGuide() {
           ))}
         </article>
         <article style={{ padding: '1rem', borderRadius: 8, border: '1px solid rgba(124,58,237,0.18)', background: 'rgba(124,58,237,0.05)' }}>
-          <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Syllogism aplicado al Body paragraph</h3>
+          <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Syllogism applied to a body paragraph</h3>
           {SYLLOGISM_MOVES.map((move) => (
             <div key={move.label} style={{ marginBottom: '0.55rem' }}>
               <p style={{ margin: '0 0 0.2rem', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.76rem' }}>{move.label}</p>
@@ -177,7 +177,7 @@ export default function Task2LegoGuide() {
           ))}
         </article>
         <article style={{ padding: '1rem', borderRadius: 8, border: '1px solid rgba(217,119,6,0.2)', background: 'rgba(217,119,6,0.05)' }}>
-          <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Tipos de oración para construir argumentos</h3>
+          <h3 style={{ margin: '0 0 0.55rem', fontSize: '0.98rem' }}>Sentence types for building arguments</h3>
           {SENTENCE_TYPES.map((sentence) => (
             <div key={sentence.label} style={{ marginBottom: '0.55rem' }}>
               <p style={{ margin: '0 0 0.2rem', color: '#d97706', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.76rem' }}>{sentence.label}</p>

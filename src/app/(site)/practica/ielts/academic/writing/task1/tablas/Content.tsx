@@ -43,21 +43,21 @@ const OVERVIEWS: OverviewOption[] = [
     text: 'Overall, afternoon use was generally the highest across campus facilities, while evening activity was concentrated in social or recreational spaces. The Student Cafe recorded the highest single figure.',
     correct: true,
     explanation:
-      'Correcto. Resume patrón por columna, contraste por tipo de lugar y el máximo sin listar toda la tabla.',
+      'Correct. It summarises the column pattern, contrasts types of facility and identifies the maximum without listing the whole table.',
   },
   {
     id: 'list',
     text: 'Overall, the Central Library had 42, 65 and 31 users, the Sports Centre had 18, 46 and 58, and the Student Cafe had 35, 72 and 64.',
     correct: false,
     explanation:
-      'No es un overview. Copia celdas individuales y deja por fuera el patrón general.',
+      'This is not an overview. It copies individual cells and leaves out the overall pattern.',
   },
   {
     id: 'wrong',
     text: 'Overall, morning was the busiest period for every facility, especially the Sports Centre and Study Lounge.',
     correct: false,
     explanation:
-      'Incorrecto. La mañana solo lidera en el Computer Lab; en la mayoría de filas dominan afternoon o evening.',
+      'Incorrect. Morning is highest only in the Computer Lab; afternoon or evening leads in most rows.',
   },
 ];
 
@@ -67,70 +67,70 @@ const DETAILS: DetailOption[] = [
     text: 'Afternoon was the busiest period for the Central Library and Student Cafe, reaching 65 and 72 users respectively.',
     useful: true,
     explanation:
-      'Útil. Agrupa dos filas con el mismo patrón y usa cifras que prueban la idea.',
+      'Useful. It groups two rows with the same pattern and uses figures that support the point.',
   },
   {
     id: 'evening-social',
     text: 'Evening figures were highest in the Sports Centre and Study Lounge, at 58 and 69 users.',
     useful: true,
     explanation:
-      'Fuerte. Muestra un patrón por tipo de espacio y evita describir filas aisladas.',
+      'Strong. It shows a pattern by type of space rather than describing isolated rows.',
   },
   {
     id: 'computer-lab',
     text: 'The Computer Lab was unusual because morning use was slightly higher than afternoon use, at 51 compared with 49.',
     useful: true,
     explanation:
-      'Útil. Esta excepción ayuda a demostrar selección crítica de datos.',
+      'Useful. This exception demonstrates critical data selection.',
   },
   {
     id: 'random-cell',
     text: 'The Sports Centre had 46 users in the afternoon.',
     useful: false,
     explanation:
-      'Débil si aparece sola. Es una celda aislada y no explica un patrón completo.',
+      'Weak if used alone. It is an isolated cell and does not explain a complete pattern.',
   },
   {
     id: 'cause',
     text: 'The Student Cafe was busiest because students preferred cheaper lunch options.',
     useful: false,
     explanation:
-      'No sirve. La tabla no da razones; en Task 1 no inventamos causas externas.',
+      'Not useful. The table gives no reasons, so Task 1 should not introduce external causes.',
   },
 ];
 
 const MODEL_ANSWER = [
   {
-    label: 'Introducción',
+    label: 'Introduction',
     text: 'The table compares the average number of students using five campus facilities during the morning, afternoon and evening in 2025.',
-    note: 'Parafrasea el enunciado y conserva qué se compara, unidades y periodo.',
+    note: 'It paraphrases the prompt while retaining what is compared, the unit and the period.',
   },
   {
     label: 'Overview',
     text: 'Overall, afternoon use was generally the highest, especially in the Student Cafe and Central Library. In contrast, evening activity was stronger in the Sports Centre and Study Lounge, while the Computer Lab was the only facility used most in the morning.',
-    note: 'Resume patrones por columna y menciona la excepción principal.',
+    note: 'It summarises column patterns and identifies the main exception.',
   },
   {
-    label: 'Cuerpo 1',
+    label: 'Body 1',
     text: 'The Student Cafe recorded the highest single figure, with 72 students in the afternoon, followed by 64 in the evening. The Central Library showed a similar afternoon peak, rising from 42 users in the morning to 65 in the afternoon, before dropping to 31 in the evening.',
-    note: 'Agrupa las filas con pico en la tarde y usa cifras seleccionadas.',
+    note: 'It groups rows with an afternoon peak and selects figures that prove the comparison.',
   },
   {
-    label: 'Cuerpo 2',
+    label: 'Body 2',
     text: 'By contrast, the Sports Centre and Study Lounge were busier later in the day, reaching 58 and 69 evening users respectively. The Computer Lab followed a different pattern, with morning and afternoon figures almost equal at 51 and 49, then falling to 27 in the evening.',
-    note: 'Cierra con patrones opuestos y una excepción clara.',
+    note: 'It closes with contrasting patterns and a clear exception.',
   },
 ];
 
 const INTERNAL_LINKS = [
   { href: '/practica/ielts/academic/writing/task1', label: 'Task 1 hub' },
-  { href: '/practica/ielts/academic/writing/task1/graficos-lineales', label: 'Gráficos lineales' },
-  { href: '/practica/ielts/academic/writing/task1/graficos-de-barras', label: 'Gráficos de barras' },
+  { href: '/practica/ielts/academic/writing/task1/graficos-lineales', label: 'Line graphs' },
+  { href: '/practica/ielts/academic/writing/task1/graficos-de-barras', label: 'Bar charts' },
   { href: '/practica/ielts/academic/writing/task1/pie-charts', label: 'Pie charts' },
   { href: '/practica/ielts/academic/writing/task1/overview', label: 'Overview' },
-  { href: '/practica/ielts/academic/writing/task1/comparaciones', label: 'Comparaciones' },
-  { href: '/practica/ielts/academic/writing/task1/vocabulario', label: 'Vocabulario' },
-  { href: '/practica/ielts/academic/writing/task1/tarea-completa', label: 'Tarea completa' },
+  { href: '/practica/ielts/academic/writing/task1/comparaciones', label: 'Comparisons' },
+  { href: '/practica/ielts/academic/writing/task1/vocabulario', label: 'Data vocabulary' },
+  { href: '/practica/ielts/academic/writing/task1/tarea-completa', label: 'Complete task' },
 ];
 
 function PracticeTable() {
@@ -226,7 +226,7 @@ function OptionCard({
       <span style={{ display: 'block', fontSize: '0.9rem', lineHeight: 1.55 }}>{text}</span>
       {revealed && (
         <span style={{ display: 'block', marginTop: '0.55rem', color: 'var(--muted)', fontSize: '0.82rem', lineHeight: 1.55 }}>
-          <strong style={{ color: positive ? '#047857' : '#991b1b' }}>{positive ? 'Respuesta fuerte: ' : 'Cuidado: '}</strong>
+          <strong style={{ color: positive ? '#047857' : '#991b1b' }}>{positive ? 'Strong choice: ' : 'Caution: '}</strong>
           {explanation}
         </span>
       )}
@@ -270,36 +270,36 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
             <span className="ink-line" />
             IELTS Academic Writing Task 1
           </p>
-          <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.05, letterSpacing: '-0.03em', margin: '0 0 0.85rem', fontWeight: 800 }}>
-            Tablas en IELTS Writing Task 1
+              <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.05, letterSpacing: '-0.03em', margin: '0 0 0.85rem', fontWeight: 800 }}>
+            Tables in IELTS Writing Task 1
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.75, margin: '0 0 1rem', maxWidth: 720 }}>
-            Aprende a escribir sobre tablas sin copiar celda por celda: encuentra patrones por fila y columna, selecciona excepciones y convierte datos densos en una respuesta clara.
+            Learn to write about tables without copying them cell by cell: find row and column patterns, select exceptions and turn dense data into a clear response.
           </p>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65, margin: '0 0 1rem', maxWidth: 720 }}>
-            La práctica incluye respuestas explicadas para agrupación y selección de cifras, además de un modelo comentado de respuesta Task 1.
+            This practice includes explained answers for grouping and figure selection, plus an annotated Task 1 model answer.
           </p>
 
           <div className="wl-card" style={{ padding: '1rem 1.1rem', marginBottom: '1.35rem', borderRadius: 8 }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format vs WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic Writing Task 1 puede pedir describir una tabla como información visual. La tabla es una forma posible, no una tarea oficial aislada.
+              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic Writing Task 1 may ask you to describe a table as visual information. A table is one possible format, not a separate official task.
             </p>
             <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> practicamos tablas por separado porque obligan a filtrar datos: overview primero, grupos de filas o columnas después, y solo cifras con función.
+              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> we practise tables separately because they require data filtering: overview first, row or column groups next, and only figures that serve a purpose.
             </p>
           </div>
 
           <section aria-labelledby="workflow-heading">
             <h2 id="workflow-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '0 0 0.65rem' }}>
-              Flujo de trabajo para una tabla
+              A workflow for tables
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', marginBottom: '1.25rem' }}>
               {[
-                ['1', 'Lee filas y columnas', 'Define qué compara cada eje antes de mirar números sueltos.'],
-                ['2', 'Busca máximos y mínimos', 'Marca la cifra más alta, la más baja y cualquier excepción visible.'],
-                ['3', 'Agrupa patrones', 'Une filas o columnas con comportamiento parecido.'],
-                ['4', 'Reduce la densidad', 'No menciones cada celda: elige cifras que prueben tus comparaciones.'],
+                ['1', 'Read rows and columns', 'Define what each axis compares before looking at isolated figures.'],
+                ['2', 'Find highs and lows', 'Mark the highest and lowest figures and any visible exception.'],
+                ['3', 'Group patterns', 'Combine rows or columns that behave in similar ways.'],
+                ['4', 'Reduce the density', 'Do not mention every cell: choose figures that prove your comparisons.'],
               ].map(([step, title, copy]) => (
                 <article key={step} className="wl-card" style={{ padding: '0.95rem', borderRadius: 8 }}>
                   <span style={{ display: 'inline-flex', width: 28, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 6, background: 'rgba(15,61,140,0.09)', color: '#0f3d8c', fontWeight: 800, fontFamily: 'var(--mono)', marginBottom: '0.55rem' }}>
@@ -314,7 +314,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="practice-heading">
             <h2 id="practice-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '1.5rem 0 0.45rem' }}>
-              Ejercicio guiado: overview y selección de datos
+              Guided practice: overview and data selection
             </h2>
             <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
               The table below compares the average number of students using five campus facilities during three periods of the day in 2025.
@@ -322,7 +322,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
 
             <PracticeTable />
 
-            <h3 style={{ margin: '0 0 0.65rem', fontSize: '1.05rem' }}>Paso 1: escoge el mejor overview</h3>
+            <h3 style={{ margin: '0 0 0.65rem', fontSize: '1.05rem' }}>Step 1: choose the best overview</h3>
             <div style={{ display: 'grid', gap: '0.65rem', marginBottom: '0.85rem' }}>
               {OVERVIEWS.map((option) => (
                 <OptionCard
@@ -338,13 +338,13 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
             </div>
             {!overviewRevealed && (
               <button className="btn btn-sm" type="button" disabled={!overviewId} onClick={() => setOverviewRevealed(true)} style={{ opacity: overviewId ? 1 : 0.5, marginBottom: '1.25rem' }}>
-                Revisar overview
+                Check overview
               </button>
             )}
 
-            <h3 style={{ margin: '1.15rem 0 0.65rem', fontSize: '1.05rem' }}>Paso 2: selecciona datos útiles para el cuerpo</h3>
+            <h3 style={{ margin: '1.15rem 0 0.65rem', fontSize: '1.05rem' }}>Step 2: select useful data for the body</h3>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.55 }}>
-              Elige los datos que ayudan a explicar patrones, contrastes o excepciones.
+              Choose the data that help explain patterns, contrasts or exceptions.
             </p>
             <div style={{ display: 'grid', gap: '0.65rem', marginBottom: '0.85rem' }}>
               {DETAILS.map((detail) => (
@@ -361,12 +361,12 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
             </div>
             {!detailsRevealed ? (
               <button className="btn btn-sm" type="button" disabled={detailIds.size === 0} onClick={() => setDetailsRevealed(true)} style={{ opacity: detailIds.size ? 1 : 0.5, marginBottom: '1rem' }}>
-                Revisar datos
+                Check data
               </button>
             ) : (
               <div className="wl-card" style={{ padding: '0.9rem 1rem', borderRadius: 8, marginBottom: '1rem', background: 'rgba(15,61,140,0.05)' }}>
                 <p style={{ margin: 0, color: 'var(--ink)', fontWeight: 700 }}>
-                  Resultado: {detailScore} de {DETAILS.filter((detail) => detail.useful).length} datos fuertes seleccionados.
+                  Result: {detailScore} of {DETAILS.filter((detail) => detail.useful).length} strong data points selected.
                 </p>
               </div>
             )}
@@ -374,7 +374,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="model-heading" style={{ marginTop: '1.5rem' }}>
             <h2 id="model-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '0 0 0.8rem' }}>
-              Modelo de respuesta explicado
+              Explained model answer
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {MODEL_ANSWER.map((part) => (
@@ -382,7 +382,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
                   <h3 style={{ margin: '0 0 0.45rem', fontSize: '0.95rem', color: '#0f3d8c' }}>{part.label}</h3>
                   <p style={{ margin: '0 0 0.6rem', color: 'var(--ink)', lineHeight: 1.65, fontSize: '0.92rem' }}>{part.text}</p>
                   <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.82rem' }}>
-                    <strong style={{ color: 'var(--ink)' }}>Por qué funciona:</strong> {part.note}
+                    <strong style={{ color: 'var(--ink)' }}>Why it works:</strong> {part.note}
                   </p>
                 </article>
               ))}
@@ -391,7 +391,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="links-heading" style={{ marginTop: '1.6rem' }}>
             <h2 id="links-heading" style={{ fontSize: '1.25rem', letterSpacing: '-0.02em', margin: '0 0 0.75rem' }}>
-              Sigue practicando Task 1
+              Keep practising Task 1
             </h2>
             <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
               {INTERNAL_LINKS.map((item) => (
@@ -404,7 +404,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
 
           <section aria-labelledby="faq-heading" style={{ marginTop: '1.6rem' }}>
             <h2 id="faq-heading" style={{ fontSize: '1.25rem', letterSpacing: '-0.02em', margin: '0 0 0.75rem' }}>
-              Preguntas frecuentes
+              Frequently asked questions
             </h2>
             <div style={{ display: 'grid', gap: '0.75rem' }}>
               {faqs.map((faq) => (

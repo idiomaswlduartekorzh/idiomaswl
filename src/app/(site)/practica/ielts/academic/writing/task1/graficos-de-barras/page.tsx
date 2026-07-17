@@ -8,39 +8,39 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1/gra
 
 const FAQS = [
   {
-    question: '¿Un gráfico de barras es un tipo oficial separado en IELTS Writing Task 1?',
+    question: 'Is a bar chart a separate official IELTS Writing Task 1 type?',
     answer:
-      'No se debe presentar como una categoría oficial independiente. Oficialmente, IELTS Academic Writing Task 1 pide describir información visual como gráficos, tablas, mapas, diagramas o procesos. WeLearn separa los gráficos de barras como ruta de práctica porque suelen exigir comparar categorías, rankings y diferencias.',
+      'It should not be presented as an independent official category. IELTS Academic Writing Task 1 asks you to describe visual information such as graphs, tables, maps, diagrams or processes. WeLearn separates bar charts as a practice route because they often require category, ranking and difference comparisons.',
   },
   {
-    question: '¿Qué debe priorizar el overview en un bar chart?',
+    question: 'What should the overview prioritise in a bar chart?',
     answer:
-      'Debe resumir las diferencias más grandes: categoría líder, categoría más baja, contraste entre grupos, patrón general o cambio de ranking. No debe repetir cada barra una por una.',
+      'It should summarise the largest differences: the leading and lowest categories, group contrasts, an overall pattern or a change in ranking. It should not repeat every bar one by one.',
   },
   {
-    question: '¿Cómo organizo los párrafos del cuerpo en gráficos de barras?',
+    question: 'How should I organise bar chart body paragraphs?',
     answer:
-      'Agrupa categorías similares o contrastantes. En vez de describir todas las barras en orden visual, usa dos párrafos: uno para las categorías principales y otro para las secundarias o excepciones.',
+      'Group similar or contrasting categories. Instead of describing every bar in visual order, use two paragraphs: one for the main categories and another for secondary groups or exceptions.',
   },
 ];
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 1: gráficos de barras con ejercicios',
+  title: 'IELTS Writing Task 1 Bar Charts | Practice and Exercises',
   description:
-    'Practica IELTS Academic Writing Task 1 bar charts: overview, rankings, comparaciones, agrupación de datos y modelo de respuesta explicado.',
+    'Practise IELTS Academic Writing Task 1 bar charts with overview, ranking, comparison, data-grouping and model-answer exercises.',
   keywords: [
     'IELTS bar chart task 1',
-    'IELTS writing task 1 graficos de barras',
+    'IELTS Writing Task 1 bar chart practice',
     'IELTS academic writing bar chart',
     'IELTS bar chart overview',
     'IELTS writing task 1 comparisons',
   ],
   openGraph: {
-    title: 'IELTS Writing Task 1: gráficos de barras con ejercicios',
+    title: 'IELTS Writing Task 1 Bar Charts | Practice and Exercises',
     description:
-      'Lección práctica para responder bar charts en IELTS Academic Writing Task 1 con ejercicio original, feedback y modelo explicado.',
+      'Guided IELTS Academic Writing Task 1 bar chart practice with original exercises, feedback and an explained model answer.',
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
     url: URL,
   },
   alternates: { canonical: URL },
@@ -50,9 +50,9 @@ export default function Page() {
   return (
     <>
       <LearningResourceJsonLd
-        name="IELTS Writing Task 1: gráficos de barras"
+        name="IELTS Writing Task 1 bar charts"
         url={URL}
-        description="Lección y práctica original para escribir respuestas de IELTS Academic Writing Task 1 sobre gráficos de barras."
+        description="Original IELTS Academic Writing Task 1 lesson and practice for describing bar charts."
         teaches={[
           'IELTS Academic Writing Task 1',
           'bar charts',
@@ -68,11 +68,11 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 1', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1' },
-          { name: 'Gráficos de barras', url: URL },
+          { name: 'Bar charts', url: URL },
         ]}
       />
       <Content faqs={FAQS} />

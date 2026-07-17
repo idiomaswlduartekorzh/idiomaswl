@@ -8,39 +8,39 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1/tab
 
 const FAQS = [
   {
-    question: '¿Las tablas son una tarea oficial separada en IELTS Writing Task 1?',
+    question: 'Are tables a separate official IELTS Writing Task 1 task?',
     answer:
-      'No deben presentarse como una tarea oficial independiente. IELTS Academic Writing Task 1 pide describir información visual como gráficos, tablas, mapas, diagramas o procesos. WeLearn separa las tablas como ruta de práctica porque requieren seleccionar datos, agrupar filas y evitar copiar cada celda.',
+      'They should not be presented as an independent official task. IELTS Academic Writing Task 1 asks you to describe visual information such as graphs, tables, maps, diagrams or processes. WeLearn separates tables as a practice route because they require data selection, row grouping and careful avoidance of cell-by-cell copying.',
   },
   {
-    question: '¿Qué debe ir en el overview de una tabla?',
+    question: 'What belongs in a table overview?',
     answer:
-      'El overview debe resumir los patrones principales: categoría más alta o más baja, diferencias amplias, similitudes fuertes o un cambio general entre columnas. No debe repetir todas las cifras.',
+      'The overview should summarise the main patterns: the highest or lowest category, large differences, strong similarities or a general change between columns. It should not repeat every figure.',
   },
   {
-    question: '¿Cómo escribo sobre tablas sin sonar mecánico?',
+    question: 'How can I write about tables without sounding mechanical?',
     answer:
-      'Agrupa filas o columnas por patrón, usa comparaciones selectivas y menciona cifras solo cuando prueban una idea. Una buena respuesta no describe la tabla celda por celda.',
+      'Group rows or columns by pattern, use selective comparisons and mention figures only when they prove an idea. A strong response does not describe the table cell by cell.',
   },
 ];
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 1: tablas con ejercicios',
+  title: 'IELTS Writing Task 1 Tables | Practice and Exercises',
   description:
-    'Practica IELTS Academic Writing Task 1 tables: overview, selección de datos, agrupación por patrón, comparaciones y modelo de respuesta explicado.',
+    'Practise IELTS Academic Writing Task 1 tables with overview, data-selection, pattern-grouping, comparison and model-answer exercises.',
   keywords: [
     'IELTS table task 1',
-    'IELTS writing task 1 tablas',
+    'IELTS Writing Task 1 table practice',
     'IELTS academic writing table',
     'IELTS table overview',
     'IELTS writing task 1 data selection',
   ],
   openGraph: {
-    title: 'IELTS Writing Task 1: tablas con ejercicios',
+    title: 'IELTS Writing Task 1 Tables | Practice and Exercises',
     description:
-      'Lección práctica para responder tablas en IELTS Academic Writing Task 1 con ejercicio original, feedback y modelo explicado.',
+      'Guided IELTS Academic Writing Task 1 table practice with original exercises, feedback and an explained model answer.',
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
     url: URL,
   },
   alternates: { canonical: URL },
@@ -52,7 +52,7 @@ export default function Page() {
       <LearningResourceJsonLd
         name="IELTS Writing Task 1: tablas"
         url={URL}
-        description="Lección y práctica original para escribir respuestas de IELTS Academic Writing Task 1 sobre tablas."
+        description="Original IELTS Academic Writing Task 1 lesson and practice for describing tables."
         teaches={[
           'IELTS Academic Writing Task 1',
           'tables',
@@ -68,11 +68,11 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 1', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1' },
-          { name: 'Tablas', url: URL },
+          { name: 'Tables', url: URL },
         ]}
       />
       <Content faqs={FAQS} />

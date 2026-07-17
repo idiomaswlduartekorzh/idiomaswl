@@ -8,26 +8,26 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1/pie
 
 const FAQS = [
   {
-    question: '¿Pie chart es una tarea oficial independiente en IELTS Writing Task 1?',
+    question: 'Is a pie chart an independent official IELTS Writing Task 1 task?',
     answer:
-      'No conviene presentarlo como una tarea oficial separada. IELTS Academic Writing Task 1 pide describir información visual, y un pie chart es una de las formas posibles de esa información. WeLearn lo separa como ruta de práctica porque exige comparar proporciones y agrupar porcentajes.',
+      'It should not be presented as a separate official task. IELTS Academic Writing Task 1 asks you to describe visual information, and a pie chart is one possible form. WeLearn separates it as a practice route because it requires proportion comparisons and percentage grouping.',
   },
   {
-    question: '¿Qué debo mencionar primero en un pie chart?',
+    question: 'What should I mention first in a pie chart?',
     answer:
-      'Empieza por el overview: la porción más grande, la más pequeña y cualquier contraste dominante entre categorías. Los porcentajes exactos deben apoyar esos patrones, no reemplazarlos.',
+      'Start with the overview: the largest and smallest slices and any dominant contrast between categories. Exact percentages should support those patterns, not replace them.',
   },
   {
-    question: '¿Cómo evito repetir porcentajes en una respuesta de pie chart?',
+    question: 'How can I avoid repeating percentages in a pie chart response?',
     answer:
-      'Agrupa categorías pequeñas, compara categorías relacionadas y menciona solo cifras que expliquen una diferencia clara. No describas cada segmento como una lista aislada.',
+      'Group small categories, compare related categories and mention only figures that explain a clear difference. Do not describe every segment as an isolated list.',
   },
 ];
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 1: pie charts con ejercicios',
+  title: 'IELTS Writing Task 1 Pie Charts | Practice and Exercises',
   description:
-    'Practica IELTS Academic Writing Task 1 pie charts: overview, proporciones, agrupación de porcentajes, comparaciones y modelo de respuesta explicado.',
+    'Practise IELTS Academic Writing Task 1 pie charts with overview, proportions, percentage grouping, comparison and model-answer exercises.',
   keywords: [
     'IELTS pie chart task 1',
     'IELTS writing task 1 pie charts',
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     'IELTS writing task 1 percentages',
   ],
   openGraph: {
-    title: 'IELTS Writing Task 1: pie charts con ejercicios',
+    title: 'IELTS Writing Task 1 Pie Charts | Practice and Exercises',
     description:
-      'Lección práctica para responder pie charts en IELTS Academic Writing Task 1 con gráfico original, feedback y modelo explicado.',
+      'Guided IELTS Academic Writing Task 1 pie chart practice with an original visual, feedback and an explained model answer.',
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
     url: URL,
   },
   alternates: { canonical: URL },
@@ -52,7 +52,7 @@ export default function Page() {
       <LearningResourceJsonLd
         name="IELTS Writing Task 1: pie charts"
         url={URL}
-        description="Lección y práctica original para escribir respuestas de IELTS Academic Writing Task 1 sobre pie charts."
+        description="Original IELTS Academic Writing Task 1 lesson and practice for describing pie charts."
         teaches={[
           'IELTS Academic Writing Task 1',
           'pie charts',
@@ -68,7 +68,7 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 1', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1' },

@@ -8,39 +8,39 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1/gra
 
 const FAQS = [
   {
-    question: '¿Un gráfico lineal en IELTS Writing Task 1 es un tipo oficial de pregunta?',
+    question: 'Is a line graph an official IELTS Writing Task 1 question type?',
     answer:
-      'Es una forma frecuente de la información visual de IELTS Academic Writing Task 1. Oficialmente, la tarea pide describir información visual como gráficos, tablas, diagramas o procesos; WeLearn la practica como subruta porque los gráficos lineales requieren decisiones específicas sobre tendencias, cambios y comparaciones.',
+      'It is a common form of visual information in IELTS Academic Writing Task 1. The official task asks you to describe visual information such as graphs, tables, diagrams or processes; WeLearn practises it as a focused route because line graphs require specific decisions about trends, changes and comparisons.',
   },
   {
-    question: '¿Qué debe incluir el overview de un line graph?',
+    question: 'What should an IELTS line graph overview include?',
     answer:
-      'Debe resumir los patrones principales: tendencia general, cambio de liderazgo, punto más alto o bajo, convergencia, divergencia o cambio brusco. No debe convertirse en una lista de números exactos.',
+      'It should summarise the main patterns: overall trend, change in leadership, highest or lowest point, convergence, divergence or a sharp change. It should not become a list of exact figures.',
   },
   {
-    question: '¿Cuántas cifras debo mencionar en una respuesta de Task 1?',
+    question: 'How many figures should I mention in a Task 1 response?',
     answer:
-      'Usa solo las cifras necesarias para demostrar los cambios importantes. Una respuesta sólida suele seleccionar puntos de inicio y final, picos o mínimos relevantes y comparaciones clave entre series.',
+      'Use only the figures needed to demonstrate important changes. A strong response usually selects relevant starting and ending points, peaks or lows, and key comparisons between series.',
   },
 ];
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 1: gráficos lineales con ejercicios',
+  title: 'IELTS Writing Task 1 Line Graphs | Practice and Exercises',
   description:
-    'Aprende a responder IELTS Academic Writing Task 1 line graphs: overview, tendencias, comparaciones, vocabulario y práctica original con respuestas explicadas.',
+    'Learn how to answer IELTS Academic Writing Task 1 line graphs with original overview, trend, comparison and vocabulary practice with explained answers.',
   keywords: [
     'IELTS line graph task 1',
-    'IELTS writing task 1 graficos lineales',
+    'IELTS Writing Task 1 line graph practice',
     'IELTS academic writing graphs',
     'IELTS line graph overview',
     'IELTS writing task 1 practice',
   ],
   openGraph: {
-    title: 'IELTS Writing Task 1: gráficos lineales con ejercicios',
+    title: 'IELTS Writing Task 1 Line Graphs | Practice and Exercises',
     description:
-      'Práctica guiada para describir gráficos lineales en IELTS Academic Writing Task 1 con modelo de respuesta y explicación.',
+      'Guided IELTS Academic Writing Task 1 line graph practice with an original model answer and explanation.',
     type: 'website',
-    locale: 'es_CO',
+    locale: 'en_US',
     url: URL,
   },
   alternates: { canonical: URL },
@@ -50,9 +50,9 @@ export default function Page() {
   return (
     <>
       <LearningResourceJsonLd
-        name="IELTS Writing Task 1: gráficos lineales"
+        name="IELTS Writing Task 1 line graphs"
         url={URL}
-        description="Lección y práctica original para escribir respuestas de IELTS Academic Writing Task 1 sobre gráficos lineales."
+        description="Original IELTS Academic Writing Task 1 lesson and practice for describing line graphs."
         teaches={[
           'IELTS Academic Writing Task 1',
           'line graphs',
@@ -68,11 +68,11 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 1', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1' },
-          { name: 'Gráficos lineales', url: URL },
+          { name: 'Line graphs', url: URL },
         ]}
       />
       <Content faqs={FAQS} />

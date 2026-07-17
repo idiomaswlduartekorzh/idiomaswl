@@ -4,14 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
-import {
-  IELTSBarChartVisual,
-  IELTSLineGraphVisual,
-  IELTSMapDiagramVisual,
-  IELTSPieChartVisual,
-  IELTSProcessDiagramVisual,
-  IELTSTableVisual,
-} from '../Task1VisualLab';
+import { IELTSVocabularyTrendVisual } from '../Task1VisualLab';
 
 interface Scenario {
   subject: string;
@@ -55,44 +48,44 @@ const VERB_GROUPS = {
 
 const VOCAB_REFERENCE = [
   {
-    title: 'Subidas fuertes',
+    title: 'Strong increases',
     items: ['rocket', 'soar', 'surge', 'jump sharply', 'rise dramatically'],
-    note: 'Úsalas solo cuando el cambio sea grande y rápido. No escribas "soared slightly".',
+    note: 'Use these only when the change is large and rapid. Do not write "soared slightly".',
   },
   {
-    title: 'Subidas moderadas',
+    title: 'Moderate increases',
     items: ['rise', 'increase', 'grow', 'climb', 'edge up'],
-    note: 'Son más seguros para cambios normales o graduales.',
+    note: 'These are safer for ordinary or gradual changes.',
   },
   {
-    title: 'Bajadas fuertes',
+    title: 'Strong decreases',
     items: ['plummet', 'plunge', 'drop sharply', 'fall dramatically'],
-    note: 'Reservadas para caídas grandes; si la caída es pequeña, usa "dip" o "fall slightly".',
+    note: 'Reserve these for large falls; use "dip" or "fall slightly" for a small decrease.',
   },
   {
-    title: 'Bajadas moderadas',
+    title: 'Moderate decreases',
     items: ['fall', 'decrease', 'decline', 'drop', 'dip'],
-    note: 'Decline suena más formal; dip normalmente es una bajada pequeña o temporal.',
+    note: 'Decline sounds more formal; dip usually describes a small or temporary fall.',
   },
   {
-    title: 'Estabilidad y cambio irregular',
+    title: 'Stability and irregular change',
     items: ['remain stable', 'level off', 'fluctuate', 'hover around', 'recover'],
-    note: 'Sirven para líneas que no suben o bajan de forma limpia.',
+    note: 'Use these for lines that do not rise or fall in a clean pattern.',
   },
   {
-    title: 'Sustantivos útiles',
+    title: 'Useful nouns',
     items: ['a rise', 'an increase', 'a decline', 'a drop', 'a fluctuation', 'a peak'],
-    note: 'Alterna verbo y sustantivo para mejorar Lexical Resource.',
+    note: 'Alternate verbs and nouns to improve Lexical Resource.',
   },
   {
-    title: 'Intensidad',
+    title: 'Intensity',
     items: ['slight', 'gradual', 'steady', 'marked', 'substantial', 'dramatic'],
-    note: 'Empareja intensidad con datos: slight para cambios pequeños, dramatic para cambios grandes.',
+    note: 'Match intensity to the data: slight for small changes and dramatic for large ones.',
   },
   {
-    title: 'Conectores de contraste',
+    title: 'Contrast linkers',
     items: ['whereas', 'while', 'by contrast', 'in comparison', 'compared with'],
-    note: 'Úsalos para comparar dos categorías sin escribir frases repetidas.',
+    note: 'Use these to compare two categories without repeating the same sentence pattern.',
   },
 ];
 
@@ -130,28 +123,26 @@ export default function VocabularioDatosContent() {
 
   const availableVerbs = direction === 'up' ? VERB_GROUPS.up : direction === 'down' ? VERB_GROUPS.down : VERB_GROUPS.stable;
 
-  const Visual = [IELTSLineGraphVisual, IELTSBarChartVisual, IELTSPieChartVisual, IELTSTableVisual, IELTSProcessDiagramVisual, IELTSMapDiagramVisual][idx % 6];
-
   return (
-    <section className="wl-section">
+    <section className="wl-section" lang="en">
       <div className="wrap">
         <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Vocabulario de datos</span>
+            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Data vocabulary</span>
           </div>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📚 Sub-habilidad 7 — Vocabulario de datos</p>
-          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Vocabulario de datos</h1>
+          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📚 Sub-skill 7 — Data vocabulary</p>
+          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Data vocabulary</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.25rem', lineHeight: 1.65 }}>
-            Elige el verbo y adverbio correctos para describir el cambio numérico. La oración se construye en tiempo real.
+            Choose the correct verb and adverb to describe the numerical change. The sentence is built in real time.
           </p>
 
           <Task1OfficialReviewBlock
-            focus="Elegir vocabulario de datos que sea preciso, natural y compatible con la tendencia."
-            officialFormat="IELTS Academic Writing Task 1 exige describir datos visuales con claridad. Vocabulario no es una tarea oficial; es un criterio de calidad dentro de la respuesta."
-            welearnStrategy="Entrenamos verbos, adverbios y estructuras para mejorar precisión sin memorizar frases infladas."
-            answerCheck="La mejor respuesta empareja dirección, intensidad y período: por ejemplo, rose sharply from A to B, no just increased."
+            focus="Choose data vocabulary that is precise, natural and compatible with the trend."
+            officialFormat="IELTS Academic Writing Task 1 requires clear descriptions of visual data. Vocabulary is not a separate official task; it is a quality criterion within the response."
+            welearnStrategy="We train verbs, adverbs and structures to improve precision without memorising inflated phrases."
+            answerCheck="The best answer matches direction, intensity and period: for example, rose sharply from A to B, not just increased."
           />
 
           <Task1ChartTypeGuide />
@@ -162,15 +153,22 @@ export default function VocabularioDatosContent() {
               The correct verb and modifier depend on what the visual actually shows. Identify the direction, size and time frame first; then build the sentence.
             </p>
             <div style={{ padding: '0.75rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)' }}>
-              <Visual variant={idx} />
+              <IELTSVocabularyTrendVisual
+                subject={sc.subject}
+                from={sc.from}
+                to={sc.to}
+                unit={sc.unit}
+                yearFrom={sc.yearFrom}
+                yearTo={sc.yearTo}
+              />
             </div>
           </div>
 
           <div style={{ marginBottom: '1.5rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Banco de vocabulario por función</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Vocabulary bank by function</h2>
             <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
-              El documento de vocabulario separa dirección, intensidad y forma gramatical. Aquí lo convertimos en
-              una lista operativa: no memorices palabras sueltas; aprende cuándo usarlas.
+              This vocabulary bank separates direction, intensity and grammatical form. Treat it as an operating list:
+              do not memorise isolated words; learn when to use them.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}>
               {VOCAB_REFERENCE.map((group) => (
@@ -190,7 +188,7 @@ export default function VocabularioDatosContent() {
           </div>
 
           <div style={{ padding: '1rem', borderRadius: 8, border: '1px solid rgba(15,61,140,0.18)', background: 'rgba(15,61,140,0.05)', marginBottom: '1.5rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Estructuras que puedes reciclar</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Reusable sentence structures</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '0.5rem' }}>
               {STRUCTURE_BANK.map((pattern) => (
                 <p key={pattern} style={{ margin: 0, padding: '0.55rem 0.7rem', borderRadius: 8, background: 'var(--bg)', color: 'var(--ink-2)', fontSize: '0.82rem', lineHeight: 1.5, fontFamily: 'var(--mono)' }}>
@@ -203,19 +201,19 @@ export default function VocabularioDatosContent() {
           {/* Vocabulary reference */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.2)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Verbos ↑</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Upward verbs ↑</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>rise · increase · grow · climb · surge · recover · peak</p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(220,38,38,0.05)', border: '1px solid rgba(220,38,38,0.2)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Verbos ↓</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Downward verbs ↓</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>fall · decrease · decline · drop · plunge · dip</p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Adverbios</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Adverbs</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>sharply · dramatically · significantly · gradually · steadily · slightly · moderately</p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(124,58,237,0.05)', border: '1px solid rgba(124,58,237,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Estructura</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Structure</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>X [verb] [adverb] from A to B between [year] and [year]</p>
             </div>
           </div>
@@ -230,7 +228,7 @@ export default function VocabularioDatosContent() {
 
           {/* Data card */}
           <div className="wl-card" style={{ padding: '1.5rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.65rem' }}>Datos</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.65rem' }}>Data</p>
             <p style={{ margin: '0 0 0.5rem', fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>{sc.subject}</p>
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
               <div>
@@ -256,7 +254,7 @@ export default function VocabularioDatosContent() {
 
           {/* Pickers */}
           <div style={{ marginBottom: '1rem' }}>
-            <p style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.5rem' }}>1. Elige el verbo:</p>
+            <p style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.5rem' }}>1. Choose the verb:</p>
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
               {availableVerbs.map(v => (
                 <button key={v} onClick={() => !revealed && setVerb(v)}
@@ -269,7 +267,7 @@ export default function VocabularioDatosContent() {
 
           {direction !== 'stable' && (
             <div style={{ marginBottom: '1rem' }}>
-              <p style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.5rem' }}>2. Elige el adverbio:</p>
+              <p style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--ink)', margin: '0 0 0.5rem' }}>2. Choose the adverb:</p>
               <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
                 {ADVERBS.map((a, i) => (
                   <button key={i} onClick={() => !revealed && setAdverb(a)}
@@ -289,13 +287,13 @@ export default function VocabularioDatosContent() {
           )}
 
           {(verb || direction === 'stable') && !revealed && (
-            <button className="btn btn-sm" onClick={() => setRevealed(true)} style={{ marginBottom: '1rem' }}>Ver respuesta modelo →</button>
+            <button className="btn btn-sm" onClick={() => setRevealed(true)} style={{ marginBottom: '1rem' }}>View the model answer →</button>
           )}
 
           {revealed && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669' }}>
-                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Respuesta modelo</p>
+                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Model answer</p>
                 <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.7, color: 'var(--ink)' }}>{sc.correctSentence}</p>
                 <div style={{ marginTop: '0.5rem', display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
                   <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(5,150,105,0.1)', color: '#059669', fontFamily: 'var(--mono)', fontWeight: 700 }}>Verbo: {sc.correctVerb}</span>
@@ -303,7 +301,7 @@ export default function VocabularioDatosContent() {
                 </div>
               </div>
               <button className="btn btn-sm" onClick={next} style={{ alignSelf: 'flex-start' }}>
-                {idx < SCENARIOS.length - 1 ? 'Siguiente escenario →' : 'Volver al inicio →'}
+                {idx < SCENARIOS.length - 1 ? 'Next scenario →' : 'Back to the beginning →'}
               </button>
             </div>
           )}

@@ -4,14 +4,14 @@ const TASK1_BASE = 'https://www.idiomaswl.com/practica/ielts/academic/writing/ta
 
 const FAQS = [
   {
-    question: '¿Esta página es una tarea oficial separada de IELTS?',
+    question: 'Is this page a separate official IELTS task?',
     answer:
-      'No. Es una ruta pedagógica de WeLearn para practicar una habilidad específica dentro de IELTS Academic Writing Task 1.',
+      'No. This is a WeLearn teaching route for practising one specific skill within IELTS Academic Writing Task 1.',
   },
   {
-    question: '¿Cómo se usa esta práctica en una respuesta completa?',
+    question: 'How can this practice be used in a complete response?',
     answer:
-      'Entrena la habilidad, revisa la explicación y luego transfiérela a una respuesta Task 1 completa de al menos 150 palabras.',
+      'Train the skill, review the explanation and then transfer it to a complete Task 1 response of at least 150 words.',
   },
 ];
 
@@ -31,7 +31,7 @@ export function Task1SkillStructuredData({
       <LearningResourceJsonLd
         name={name}
         url={url}
-        description={`${name}: práctica guiada de IELTS Academic Writing Task 1 con enfoque WeLearn.`}
+        description={`${name}: guided IELTS Academic Writing Task 1 practice with a WeLearn teaching approach.`}
         teaches={['IELTS Academic Writing Task 1', ...teaches]}
         isPartOf={{
           name: 'IELTS Academic Writing Task 1',
@@ -41,7 +41,7 @@ export function Task1SkillStructuredData({
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 1', url: TASK1_BASE },

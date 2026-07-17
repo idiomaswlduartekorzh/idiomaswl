@@ -19,10 +19,10 @@ const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-acade
 const IELTS_ACADEMIC_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
 
 const DEFAULT_LINKS: RelatedLink[] = [
-  { href: '/practica/ielts/academic/writing/rubrica', label: 'Rúbrica Writing' },
+  { href: '/practica/ielts/academic/writing/rubrica', label: 'Writing rubric' },
   { href: '/practica/ielts/academic/writing/task2', label: 'Task 2 hub' },
   { href: '/practica/ielts/academic/writing/task2/model-answers', label: 'Model answers' },
-  { href: '/practica/ielts/general-training', label: 'Comparar General Training' },
+  { href: '/practica/ielts/general-training', label: 'Compare General Training' },
 ];
 
 export default function Task2OfficialReviewBlock({
@@ -34,7 +34,7 @@ export default function Task2OfficialReviewBlock({
 }: Task2OfficialReviewBlockProps) {
   return (
     <section
-      aria-label="Formato oficial vs estrategia WeLearn"
+      aria-label="Official format versus WeLearn strategy"
       style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
@@ -43,21 +43,21 @@ export default function Task2OfficialReviewBlock({
       }}
     >
       <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
-        <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+        <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
         <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.86rem' }}>
-          <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> {officialFormat}
+          <strong style={{ color: 'var(--ink)' }}>Official format:</strong> {officialFormat}
         </p>
         <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.86rem' }}>
-          <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> {welearnStrategy}
+          <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> {welearnStrategy}
         </p>
       </article>
       <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#f8fafc' }}>
-        <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Revisión de respuesta</h2>
+        <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Answer review</h2>
         <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.86rem' }}>
-          <strong style={{ color: 'var(--ink)' }}>Foco revisado:</strong> {focus}
+          <strong style={{ color: 'var(--ink)' }}>Review focus:</strong> {focus}
         </p>
         <p style={{ margin: '0 0 0.85rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.86rem' }}>
-          <strong style={{ color: 'var(--ink)' }}>Respuesta explicada:</strong> {answerCheck}
+          <strong style={{ color: 'var(--ink)' }}>Explained answer:</strong> {answerCheck}
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.45rem' }}>
           <a
