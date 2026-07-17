@@ -6,25 +6,25 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1'
 
 const FAQS = [
   {
-    question: '¿Qué pide IELTS Academic Writing Task 1?',
+    question: 'What does IELTS Academic Writing Task 1 ask you to do?',
     answer:
-      'Pide describir información visual en al menos 150 palabras. Puede ser una gráfica, tabla, proceso, mapa o combinación de datos visuales.',
+      'It asks you to describe visual information in at least 150 words. The input may be a graph, table, process, map or combination of visuals.',
   },
   {
-    question: '¿Estas habilidades son tareas oficiales separadas?',
+    question: 'Are these skills separate official tasks?',
     answer:
-      'No. Las rutas de introducción, overview, tendencias y comparaciones son microhabilidades WeLearn para entrenar mejor la tarea oficial de IELTS Academic Writing Task 1.',
+      'No. The introduction, overview, trends and comparisons routes are WeLearn micro-skills designed to train the official IELTS Academic Writing Task 1 more effectively.',
   },
 ]
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic Writing Task 1 — 8 habilidades esenciales',
-  description: 'Practica las habilidades del IELTS Writing Task 1: parafrasear, overview, tendencias, comparaciones, procesos, mapas, vocabulario y tarea completa. Ejercicios con feedback Band 6–7.',
-  keywords: ['IELTS writing task 1', 'IELTS task 1 ejercicios', 'IELTS academic writing task 1', 'IELTS task 1 band 7', 'IELTS overview', 'IELTS tendencias gráficas'],
+  title: 'IELTS Academic Writing Task 1: 8 Essential Skills',
+  description: 'Practise IELTS Writing Task 1 skills: paraphrasing, overviews, trends, comparisons, processes, maps, vocabulary and the complete task. Band 6–7 exercises with feedback.',
+  keywords: ['IELTS Writing Task 1', 'IELTS Task 1 exercises', 'IELTS Academic Writing Task 1', 'IELTS Task 1 Band 7', 'IELTS overview', 'IELTS graph trends'],
   openGraph: {
     title: 'IELTS Writing Task 1',
-    description: 'Ejercicios progresivos de IELTS Writing Task 1: desde parafrasear hasta tarea completa.',
-    type: 'website', locale: 'es_CO',
+    description: 'Progressive IELTS Writing Task 1 exercises, from paraphrasing to the complete task.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: URL },
 }
@@ -35,7 +35,7 @@ export default function Page() {
       <LearningResourceJsonLd
         name="IELTS Academic Writing Task 1"
         url={URL}
-        description="Hub de práctica para IELTS Academic Writing Task 1 con habilidades de descripción visual y rutas de práctica."
+        description="IELTS Academic Writing Task 1 practice hub with visual-description skills and guided practice routes."
         teaches={[
           'IELTS Academic Writing Task 1',
           'visual data description',
@@ -52,7 +52,7 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 1', url: URL },

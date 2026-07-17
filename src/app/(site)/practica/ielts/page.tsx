@@ -3,9 +3,9 @@ import IELTSHubClient from './IELTSHubClient';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'Práctica IELTS: Academic, General Training, Reading y Writing',
+  title: 'IELTS Practice: Academic, General Training, Reading and Writing',
   description:
-    'Practica IELTS en español con rutas Academic y General Training, Reading por tipos de pregunta, habilidades, Writing Task 1 y Task 2 con ejercicios explicados.',
+    'Practise IELTS with Academic and General Training routes, Reading question types, skill practice, and explained Writing Task 1 and Task 2 exercises.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts' },
 };
 
@@ -13,12 +13,12 @@ export default function IELTSPage() {
   return (
     <>
       <CourseSchema
-        name="Práctica IELTS — Academic y General Training"
-        description="Practica IELTS con rutas Academic y General Training, Reading por tipos de pregunta, habilidades de lectura, Writing Task 1 y Task 2 con ejercicios explicados."
+        name="IELTS Practice — Academic and General Training"
+        description="Practise IELTS with Academic and General Training routes, Reading question types, reading skills, and explained Writing Task 1 and Task 2 exercises."
         url="https://www.idiomaswl.com/practica/ielts"
         educationalLevel="B1,B2,C1"
-        teaches="IELTS Academic, IELTS General Training, Reading, Writing, inglés"
-        inLanguage="es-CO"
+        teaches="IELTS Academic, IELTS General Training, Reading, Writing, English"
+        inLanguage="en"
       />
       <IELTSHubClient />
     </>

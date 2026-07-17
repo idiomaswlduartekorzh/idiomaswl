@@ -7,9 +7,9 @@ const SKILLS = [
   {
     id: 'introduccion',
     n: 1,
-    label: 'Introducción',
+    label: 'Introduction',
     icon: '🔁',
-    desc: 'Parafrasear el enunciado sin copiar. Cambia vocabulario, clase gramatical y estructura.',
+    desc: 'Paraphrase the prompt without copying. Change vocabulary, word class and sentence structure.',
     href: '/practica/ielts/academic/writing/task1/introduccion',
     tag: 'Paraphrasing',
   },
@@ -18,41 +18,41 @@ const SKILLS = [
     n: 2,
     label: 'Overview',
     icon: '🔭',
-    desc: 'El párrafo más importante. 2 oraciones, sin números, tendencia principal. Donde más banda se pierde.',
+    desc: 'The most important paragraph: two sentences, no figures and the main trend. This is where many points are lost.',
     href: '/practica/ielts/academic/writing/task1/overview',
-    tag: 'Tendencia global',
+    tag: 'Overall trend',
   },
   {
     id: 'tendencias',
     n: 3,
-    label: 'Tendencias',
+    label: 'Trends',
     icon: '📈',
-    desc: 'Lee gráficas reales de IELTS e identifica cuáles son las 2–3 tendencias más relevantes para mencionar. Aprende a distinguir lo esencial de lo accesorio.',
+    desc: 'Read authentic-style IELTS graphs and identify the two or three most relevant trends to mention. Learn to distinguish the essential from the secondary.',
     href: '/practica/ielts/academic/writing/task1/tendencias',
     tag: 'Line graphs · Bar charts',
   },
   {
     id: 'comparaciones',
     n: 4,
-    label: 'Comparaciones',
+    label: 'Comparisons',
     icon: '⚖️',
-    desc: 'Comparar categorías con precisión: higher/lower, while, approximation language.',
+    desc: 'Compare categories precisely with higher/lower, while and approximation language.',
     href: '/practica/ielts/academic/writing/task1/comparaciones',
     tag: 'Bar · Pie · Table',
   },
   {
     id: 'procesos',
     n: 5,
-    label: 'Procesos',
+    label: 'Processes',
     icon: '⚙️',
-    desc: 'Voz pasiva y secuenciadores para describir diagramas de proceso paso a paso.',
+    desc: 'Use the passive voice and sequencing language to describe process diagrams step by step.',
     href: '/practica/ielts/academic/writing/task1/procesos',
     tag: 'Process diagrams',
   },
   {
     id: 'mapas',
     n: 6,
-    label: 'Mapas',
+    label: 'Maps',
     icon: '🗺️',
     desc: 'Lenguaje de ubicación (to the north of, adjacent to) y cambio (was replaced by, was demolished).',
     href: '/practica/ielts/academic/writing/task1/mapas',
@@ -61,18 +61,18 @@ const SKILLS = [
   {
     id: 'vocabulario',
     n: 7,
-    label: 'Vocabulario de datos',
+    label: 'Data vocabulary',
     icon: '📚',
-    desc: 'Elige el verbo (rise/fall/peak) y adverbio (sharply/gradually) correctos para describir un cambio numérico. La oración se ensambla en tiempo real.',
+    desc: 'Choose the correct verb (rise/fall/peak) and adverb (sharply/gradually) to describe a numerical change. The sentence is assembled in real time.',
     href: '/practica/ielts/academic/writing/task1/vocabulario',
     tag: 'Verb · Adverb · Structure',
   },
   {
     id: 'tarea-completa',
     n: 8,
-    label: 'Tarea Completa',
+    label: 'Complete Task',
     icon: '⏱️',
-    desc: 'Práctica real: 20 minutos, contador de palabras, auto-evaluación con rúbrica Band 1–9.',
+    desc: 'Full practice: 20 minutes, word counter and Band 1–9 rubric-based self-review.',
     href: '/practica/ielts/academic/writing/task1/tarea-completa',
     tag: 'Full Task · 20 min',
   },
@@ -93,8 +93,8 @@ export default function Task1HubPage() {
             Writing Task 1
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem', lineHeight: 1.6 }}>
-            Describe datos visuales en 150+ palabras en 20 minutos. Domina las 8 sub-habilidades que separan
-            Band 5 de Band 7+.
+            Describe visual data in 150+ words in 20 minutes. Master the eight sub-skills that separate
+            Band 5 from Band 7+.
           </p>
 
           <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
@@ -112,18 +112,18 @@ export default function Task1HubPage() {
             }}
           >
             <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
-              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Formato oficial vs estrategia WeLearn</h2>
+              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Official format versus WeLearn strategy</h2>
               <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
-                IELTS Academic Writing Task 1 pide describir información visual en al menos 150 palabras. WeLearn lo
-                divide en microhabilidades para practicar introducción, overview, selección de datos, comparaciones,
-                procesos, mapas y vocabulario antes de escribir una respuesta completa.
+                IELTS Academic Writing Task 1 asks you to describe visual information in at least 150 words. WeLearn
+                divides it into micro-skills for practising introductions, overviews, data selection, comparisons,
+                processes, maps and vocabulary before writing a complete response.
               </p>
             </article>
             <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#f8fafc' }}>
-              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Respuesta explicada</h2>
+              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Explained answer</h2>
               <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
-                Cada ruta practica una parte de la respuesta y explica qué revisar: si el overview resume el patrón
-                principal, si las comparaciones son relevantes y si el lenguaje de datos mantiene precisión.
+                Each route practises one part of the response and explains what to check: whether the overview summarises
+                the main pattern, whether comparisons are relevant and whether data language remains accurate.
               </p>
             </article>
           </div>
@@ -139,14 +139,14 @@ export default function Task1HubPage() {
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                     <span style={{ fontSize: '1.5rem' }}>{sk.icon}</span>
                     <span style={{ fontSize: '0.68rem', fontFamily: 'var(--mono)', fontWeight: 800, color: '#0f3d8c', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                      Sub-habilidad {sk.n}
+                      Sub-skill {sk.n}
                     </span>
                   </div>
                   <h3 style={{ margin: 0, fontWeight: 700, fontSize: '1.05rem', color: 'var(--ink)' }}>{sk.label}</h3>
                   <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--ink-2)', lineHeight: 1.6, flex: 1 }}>{sk.desc}</p>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.25rem' }}>
                     <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.15)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{sk.tag}</span>
-                    <span style={{ fontSize: '0.82rem', color: '#0f3d8c', fontWeight: 700 }}>Practicar →</span>
+                    <span style={{ fontSize: '0.82rem', color: '#0f3d8c', fontWeight: 700 }}>Practise →</span>
                   </div>
                 </div>
               </Link>

@@ -5,10 +5,10 @@ import Link from 'next/link';
 const TASKS = [
   {
     id: 'rubrica',
-    label: 'Rúbrica',
+    label: 'Rubric',
     icon: '✓',
-    time: 'Checklist · criterios · diagnóstico',
-    desc: 'Autoevaluación pedagógica para Task 1 y Task 2: criterio, evidencia, organización, vocabulario y gramática.',
+    time: 'Checklist · criteria · diagnosis',
+    desc: 'A guided self-review for Task 1 and Task 2: criteria, evidence, organisation, vocabulary and grammar.',
     href: '/practica/ielts/academic/writing/rubrica',
     available: true,
   },
@@ -17,7 +17,7 @@ const TASKS = [
     label: 'Task 1',
     icon: 'T1',
     time: '20 min · 150+ palabras',
-    desc: 'Describe datos visuales: gráficas, tablas, diagramas de proceso, mapas. 7 sub-habilidades.',
+    desc: 'Describe visual data: graphs, tables, process diagrams and maps. Seven sub-skills.',
     href: '/practica/ielts/academic/writing/task1',
     available: true,
   },
@@ -26,7 +26,7 @@ const TASKS = [
     label: 'Task 2',
     icon: 'T2',
     time: '40 min · 250+ palabras',
-    desc: 'Ensayo argumentativo: opinión, discusión de dos posturas, problema-solución, ventajas-desventajas.',
+    desc: 'Argumentative essay: opinion, discussion, problem and solution, and advantages and disadvantages.',
     href: '/practica/ielts/academic/writing/task2',
     available: true,
   },
@@ -47,19 +47,19 @@ export default function IELTSWritingPage() {
             Writing
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem', lineHeight: 1.6 }}>
-            60 minutos en total. Task 1 vale un tercio de la nota de Writing; Task 2 vale dos tercios.
-            Los 4 criterios de evaluación son: Task Achievement, Coherence &amp; Cohesion, Lexical Resource, Grammatical Range &amp; Accuracy.
+            60 minutes in total. Task 1 is worth one third of the Writing score; Task 2 is worth two thirds.
+            The four assessment criteria are Task Achievement, Coherence &amp; Cohesion, Lexical Resource, and Grammatical Range &amp; Accuracy.
           </p>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1rem', lineHeight: 1.6 }}>
-            Cada ruta activa incluye práctica original, respuesta explicada o modelo comentado para estudiar antes de escribir el ensayo completo.
+            Each active route includes original practice, an explained answer or an annotated model to study before writing a complete response.
           </p>
           <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 8, marginBottom: '1.25rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic Writing tiene dos tareas: Task 1 describe información visual en al menos 150 palabras y Task 2 responde una pregunta de ensayo en al menos 250 palabras.
+              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic Writing has two tasks: Task 1 describes visual information in at least 150 words, and Task 2 answers an essay question in at least 250 words.
             </p>
             <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> organizamos la práctica por rutas de transferencia: rúbrica, visuales de Task 1, familias pedagógicas de Task 2, prompts originales y modelos comentados.
+              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> practice is organised into transfer routes: rubric, Task 1 visuals, Task 2 question families, original prompts and annotated models.
             </p>
           </section>
 
@@ -88,7 +88,7 @@ export default function IELTSWritingPage() {
                     </div>
                     <div className="wl-catalog-card__footer">
                       <span>Writing</span>
-                      <span className="wl-catalog-card__cta">Practicar →</span>
+                      <span className="wl-catalog-card__cta">Practise →</span>
                     </div>
                   </Link>
                 )
@@ -101,7 +101,7 @@ export default function IELTSWritingPage() {
                     <div className="wl-catalog-card__body">
                       <div className="wl-catalog-card__top">
                         <span style={{ fontSize: '1.8rem' }}>{tk.icon}</span>
-                        <span className="wl-catalog-card__badge">Próximamente</span>
+                        <span className="wl-catalog-card__badge">Coming soon</span>
                       </div>
                       <h2 className="wl-catalog-card__name">{tk.label}</h2>
                       <p style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)', fontWeight: 700, margin: '0 0 0.3rem' }}>{tk.time}</p>
@@ -109,7 +109,7 @@ export default function IELTSWritingPage() {
                     </div>
                     <div className="wl-catalog-card__footer">
                       <span>Writing</span>
-                      <span className="wl-catalog-card__cta">Próximamente</span>
+                      <span className="wl-catalog-card__cta">Coming soon</span>
                     </div>
                   </div>
                 )
