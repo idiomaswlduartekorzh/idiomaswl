@@ -4,6 +4,14 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
+import {
+  IELTSBarChartVisual,
+  IELTSLineGraphVisual,
+  IELTSMapDiagramVisual,
+  IELTSPieChartVisual,
+  IELTSProcessDiagramVisual,
+  IELTSTableVisual,
+} from '../Task1VisualLab';
 
 interface Scenario {
   subject: string;
@@ -122,6 +130,8 @@ export default function VocabularioDatosContent() {
 
   const availableVerbs = direction === 'up' ? VERB_GROUPS.up : direction === 'down' ? VERB_GROUPS.down : VERB_GROUPS.stable;
 
+  const Visual = [IELTSLineGraphVisual, IELTSBarChartVisual, IELTSPieChartVisual, IELTSTableVisual, IELTSProcessDiagramVisual, IELTSMapDiagramVisual][idx % 6];
+
   return (
     <section className="wl-section">
       <div className="wrap">
@@ -145,6 +155,16 @@ export default function VocabularioDatosContent() {
           />
 
           <Task1ChartTypeGuide />
+
+          <div style={{ padding: '1.1rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)', marginBottom: '1.5rem' }}>
+            <p style={{ margin: '0 0 0.25rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Read the visual before choosing vocabulary</p>
+            <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.55 }}>
+              The correct verb and modifier depend on what the visual actually shows. Identify the direction, size and time frame first; then build the sentence.
+            </p>
+            <div style={{ padding: '0.75rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)' }}>
+              <Visual variant={idx} />
+            </div>
+          </div>
 
           <div style={{ marginBottom: '1.5rem' }}>
             <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Banco de vocabulario por función</h2>

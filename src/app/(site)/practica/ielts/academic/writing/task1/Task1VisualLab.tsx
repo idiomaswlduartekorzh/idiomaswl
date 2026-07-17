@@ -28,6 +28,39 @@ export function IELTSLineGraphVisual({ variant = 0 }: { variant?: number }) {
         { label: 'Tram', color: '#7c3aed', values: [15, 22, 34, 45, 49, 60] },
       ],
     },
+    {
+      title: 'Urban cycling in three districts, 2008-2023',
+      years: [2008, 2012, 2016, 2020, 2023],
+      yMax: 60,
+      unit: '%',
+      series: [
+        { label: 'North', color: '#0f3d8c', values: [12, 18, 29, 41, 55] },
+        { label: 'Central', color: '#059669', values: [45, 43, 40, 38, 36] },
+        { label: 'South', color: '#7c3aed', values: [20, 25, 24, 32, 46] },
+      ],
+    },
+    {
+      title: 'Weekly library visits by group, 2012-2022',
+      years: [2012, 2014, 2016, 2018, 2020, 2022],
+      yMax: 90,
+      unit: 'k',
+      series: [
+        { label: 'Students', color: '#0f3d8c', values: [80, 78, 76, 75, 75, 74] },
+        { label: 'Families', color: '#059669', values: [30, 36, 44, 53, 58, 62] },
+        { label: 'Retirees', color: '#d97706', values: [55, 52, 48, 44, 42, 40] },
+      ],
+    },
+    {
+      title: 'Renewable energy share in three regions, 2005-2025',
+      years: [2005, 2010, 2015, 2020, 2025],
+      yMax: 60,
+      unit: '%',
+      series: [
+        { label: 'Region A', color: '#0f3d8c', values: [18, 24, 31, 40, 52] },
+        { label: 'Region B', color: '#059669', values: [42, 39, 36, 30, 25] },
+        { label: 'Region C', color: '#dc2626', values: [12, 13, 18, 27, 39] },
+      ],
+    },
   ];
   const data = datasets[variant % datasets.length];
   const W = 560, H = 270;
@@ -83,7 +116,7 @@ export function IELTSBarChartVisual({ variant = 0 }: { variant?: number }) {
   const max = data.max;
   const y = (v: number) => 220 - (v / max) * 160;
   return (
-    <svg viewBox="0 0 560 270" style={{ width: '100%', display: 'block' }} role="img" aria-label="Household expenditure by category">
+    <svg viewBox="0 0 560 270" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title}>
       <text x="50" y="20" fontSize="13" fontWeight="800" fill="var(--ink)">{data.title}</text>
       {data.ticks.map((tick) => (
         <g key={tick}>
@@ -179,7 +212,7 @@ export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number })
   return (
     <svg viewBox="0 0 800 410" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title}>
       <defs>
-        <marker id="arrow-task1-process" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <marker id={`arrow-task1-process-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
           <path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" />
         </marker>
       </defs>
@@ -204,10 +237,10 @@ export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number })
           </g>
         );
       })}
-      <line x1="252" y1="172" x2="284" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd="url(#arrow-task1-process)" />
-      <line x1="498" y1="172" x2="530" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd="url(#arrow-task1-process)" />
-      <path d="M 672 228 C 672 257, 568 260, 568 272" fill="none" stroke="#0f3d8c" strokeWidth="2.5" markerEnd="url(#arrow-task1-process)" />
-      <line x1="288" y1="328" x2="254" y2="328" stroke="#0f3d8c" strokeWidth="2.5" markerEnd="url(#arrow-task1-process)" />
+      <line x1="252" y1="172" x2="284" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <line x1="498" y1="172" x2="530" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <path d="M 672 228 C 672 257, 568 260, 568 272" fill="none" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <line x1="288" y1="328" x2="254" y2="328" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
     </svg>
   );
 }
@@ -247,7 +280,7 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
   return (
     <svg viewBox="0 0 820 390" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title}>
       <defs>
-        <marker id="arrow-task1-map" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <marker id={`arrow-task1-map-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
           <path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" />
         </marker>
       </defs>
@@ -256,8 +289,8 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <text x="40" y="47" fontSize="15" fontWeight="800" fill="var(--ink)">{data.title}</text>
       <MapGrid title={data.beforeLabel} side="left" cells={cellsBefore} />
       <MapGrid title={data.afterLabel} side="right" cells={cellsAfter} />
-      <path d="M 390 220 L 426 220" stroke="#0f3d8c" strokeWidth="3" markerEnd="url(#arrow-task1-map)" />
-      <path d="M 738 88 L 738 116" stroke="#0f3d8c" strokeWidth="2" markerEnd="url(#arrow-task1-map)" />
+      <path d="M 390 220 L 426 220" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-${variant})`} />
+      <path d="M 738 88 L 738 116" stroke="#0f3d8c" strokeWidth="2" markerEnd={`url(#arrow-task1-map-${variant})`} />
       <text x="731" y="82" fontSize="11" fontWeight="900" fill="#0f3d8c">N</text>
       <text x="48" y="365" fontSize="10" fill="var(--muted)">Roads and land-use blocks are schematic, as in an IELTS Academic Task 1 map.</text>
     </svg>

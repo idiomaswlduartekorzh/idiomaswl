@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
+import { IELTSProcessDiagramVisual } from '../Task1VisualLab';
 
 interface Step {
   n: number;
@@ -20,7 +21,7 @@ interface ProcessExercise {
 
 const EXERCISES: ProcessExercise[] = [
   {
-    title: 'Producción de papel reciclado',
+    title: 'Recycled paper production',
     steps: [
       { n: 1, active: 'Workers collect waste paper', passive: 'Waste paper is collected', sequencer: 'First,' },
       { n: 2, active: 'Machines sort the paper by type', passive: 'The paper is sorted by type', sequencer: 'Next,' },
@@ -31,7 +32,7 @@ const EXERCISES: ProcessExercise[] = [
     modelParagraph: 'First, waste paper is collected and transported to a recycling facility. Next, the paper is sorted by type using machines. After that, water and chemicals are added to break down the paper into pulp. The pulp is then cleaned and filtered to remove impurities. Finally, the pulp is pressed and dried into thin sheets, which are rolled and prepared for distribution.',
   },
   {
-    title: 'Proceso de purificación del agua',
+    title: 'Water purification process',
     steps: [
       { n: 1, active: 'Engineers pump water from a river into a storage tank', passive: 'Water is pumped from a river into a storage tank', sequencer: 'First,' },
       { n: 2, active: 'Workers add chemicals to remove large particles', passive: 'Chemicals are added to remove large particles', sequencer: 'Then,' },
@@ -69,28 +70,33 @@ export default function ProcesosPage() {
         <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
             <Link href="/practica/ielts/academic/writing/task1" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Task 1</Link>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Procesos</span>
+          <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Processes</span>
           </div>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />⚙️ Sub-habilidad 5 — Procesos</p>
-          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Diagramas de proceso</h1>
+          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />⚙️ Sub-skill 5 — Processes</p>
+          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Process diagrams</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.25rem', lineHeight: 1.65 }}>
-            Los procesos usan siempre voz pasiva y secuenciadores. Convierte cada paso activo a pasivo y elige el secuenciador correcto.
+            Processes require the passive voice and sequencing language. Convert each active step into the passive and choose the correct sequencer.
           </p>
 
           <Task1OfficialReviewBlock
-            focus="Describir etapas en orden lógico con voz pasiva y secuencia clara."
-            officialFormat="IELTS Academic Writing Task 1 puede pedir describir un proceso como información visual. Proceso es una forma posible del input, no una sección oficial separada."
-            welearnStrategy="Entrenamos procesos aparte porque exigen gramática pasiva, orden temporal y ausencia de opinión."
-            answerCheck="Una respuesta fuerte agrupa etapas, usa secuenciadores precisos y evita inventar causas que el diagrama no muestra."
+            focus="Describe stages in logical order with the passive voice and clear sequencing."
+            officialFormat="IELTS Academic Writing Task 1 may ask you to describe a process as visual information. A process is a possible input, not a separate official section."
+            welearnStrategy="We isolate processes because they require passive grammar, time order and no personal opinion."
+            answerCheck="A strong response groups stages, uses precise sequencers and avoids inventing causes that the diagram does not show."
           />
 
           <Task1ChartTypeGuide />
 
+          <div className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)' }}>
+            <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
+            <IELTSProcessDiagramVisual variant={exIdx} />
+          </div>
+
           {/* Grammar box */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Voz pasiva</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Passive voice</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
                 Sujeto + <strong>is/are</strong> + participio pasado<br />
                 &ldquo;The material <strong>is heated</strong>&rdquo;<br />
@@ -98,7 +104,7 @@ export default function ProcesosPage() {
               </p>
             </div>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(124,58,237,0.05)', border: '1px solid rgba(124,58,237,0.15)' }}>
-              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Secuenciadores</p>
+              <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Sequencers</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
                 First · Then · Next · After that · Subsequently · Once · Before · Finally
               </p>
@@ -114,7 +120,7 @@ export default function ProcesosPage() {
           </div>
 
           <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '4px solid #0f3d8c', marginBottom: '1.25rem' }}>
-            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.35rem' }}>Proceso</p>
+            <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.35rem' }}>Process</p>
             <p style={{ margin: 0, fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>{ex.title}</p>
           </div>
 
@@ -130,7 +136,7 @@ export default function ProcesosPage() {
                     <span style={{ fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.9rem', color: '#0f3d8c', minWidth: 20 }}>{step.n}.</span>
                     <div style={{ flex: 1 }}>
                       <p style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--muted)' }}>
-                        Activo: <em style={{ color: 'var(--ink-2)' }}>{step.active}</em>
+                        Active: <em style={{ color: 'var(--ink-2)' }}>{step.active}</em>
                       </p>
                       <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
                         <select
@@ -139,7 +145,7 @@ export default function ProcesosPage() {
                           disabled={revealed}
                           style={{ padding: '0.4rem 0.6rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}
                         >
-                          <option value="">— secuenciador —</option>
+                          <option value="">— sequencer —</option>
                           {SEQUENCERS.map(s => <option key={s} value={step.passive}>{s} {step.passive.substring(0, 30)}…</option>)}
                         </select>
                       </div>
@@ -157,18 +163,18 @@ export default function ProcesosPage() {
 
           {!revealed && (
             <button className="btn btn-sm" onClick={() => setRevealed(true)} style={{ marginBottom: '1rem' }}>
-              Ver respuestas →
+              Reveal answers →
             </button>
           )}
 
           {revealed && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div className="wl-card" style={{ padding: '1.25rem', borderLeft: '3px solid #059669' }}>
-                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Párrafo modelo completo</p>
+                <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.5rem' }}>Complete model paragraph</p>
                 <p style={{ margin: 0, fontSize: '0.92rem', lineHeight: 1.8, color: 'var(--ink)' }}>{ex.modelParagraph}</p>
               </div>
               <button className="btn btn-sm" onClick={next} style={{ alignSelf: 'flex-start' }}>
-                {exIdx < EXERCISES.length - 1 ? 'Siguiente proceso →' : 'Volver al inicio →'}
+                {exIdx < EXERCISES.length - 1 ? 'Next process →' : 'Back to the beginning →'}
               </button>
             </div>
           )}
