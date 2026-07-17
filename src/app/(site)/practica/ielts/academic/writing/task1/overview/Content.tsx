@@ -40,19 +40,19 @@ const LESSONS: VisualLesson[] = [
     label: 'Line graph',
     Chart: () => <IELTSLineGraphVisual variant={0} />,
     examPrompt: 'The line graph below shows the percentage of people with internet access in three regions between 2000 and 2020.',
-    question: '¿Qué historia cambia con el tiempo?',
-    whatToLookFor: ['dirección general de cada línea', 'línea dominante', 'cruce o convergencia', 'cambio más rápido'],
+    question: 'What story changes over time?',
+    whatToLookFor: ['overall direction of each line', 'leading line', 'crossover or convergence', 'fastest change'],
     examples: [
-      { title: 'Ejemplo 1', insight: 'Las tres regiones suben.', overview: 'Overall, internet access increased in all three regions, although Region A remained the most connected throughout the period.', variant: 0 },
-      { title: 'Ejemplo 2', insight: 'La brecha se reduce.', overview: 'Overall, the gap between the regions narrowed considerably as the two lower-ranked regions experienced faster growth.', variant: 1 },
-      { title: 'Ejemplo 3', insight: 'Una línea lidera siempre.', overview: 'Overall, Region A consistently recorded the highest levels of internet access, while Region C remained the lowest despite steady growth.', variant: 2 },
-      { title: 'Ejemplo 4', insight: 'Crecimiento acelerado.', overview: 'Overall, the most notable feature was the rapid expansion in internet access outside the leading region.', variant: 3 },
-      { title: 'Ejemplo 5', insight: 'No hay caída.', overview: 'Overall, the graph shows a steady upward trend across all categories rather than any major fluctuation.', variant: 4 },
+      { title: 'Example 1', insight: 'All three regions rise.', overview: 'Overall, internet access increased in all three regions, although Region A remained the most connected throughout the period.', variant: 0 },
+      { title: 'Example 2', insight: 'The gap narrows.', overview: 'Overall, the gap between the regions narrowed considerably as the two lower-ranked regions experienced faster growth.', variant: 1 },
+      { title: 'Example 3', insight: 'One line always leads.', overview: 'Overall, Region A consistently recorded the highest levels of internet access, while Region C remained the lowest despite steady growth.', variant: 2 },
+      { title: 'Example 4', insight: 'Accelerating growth.', overview: 'Overall, the most notable feature was the rapid expansion in internet access outside the leading region.', variant: 3 },
+      { title: 'Example 5', insight: 'There is no decline.', overview: 'Overall, the graph shows a steady upward trend across all categories rather than any major fluctuation.', variant: 4 },
     ],
     options: [
-      { correct: true, text: 'Overall, internet access rose in all three regions, with Region A remaining highest and the gap between regions becoming narrower.', reason: 'Correcto: resume tendencia global, liderazgo y convergencia sin cifras.' },
-      { correct: false, text: 'Overall, Region A increased from 30% to 88%, while Region B rose from 12% to 79%.', reason: 'Demasiados datos exactos; eso pertenece al cuerpo, no al overview.' },
-      { correct: false, text: 'Overall, the graph shows internet access in three regions between 2000 and 2020.', reason: 'Solo repite el enunciado; no identifica la historia principal.' },
+      { correct: true, text: 'Overall, internet access rose in all three regions, with Region A remaining highest and the gap between regions becoming narrower.', reason: 'Correct: it summarises the global trend, leadership and convergence without figures.' },
+      { correct: false, text: 'Overall, Region A increased from 30% to 88%, while Region B rose from 12% to 79%.', reason: 'Too many exact figures; these belong in the detail paragraphs, not the overview.' },
+      { correct: false, text: 'Overall, the graph shows internet access in three regions between 2000 and 2020.', reason: 'It only repeats the prompt and does not identify the main story.' },
     ],
   },
   {
@@ -60,19 +60,19 @@ const LESSONS: VisualLesson[] = [
     label: 'Bar chart',
     Chart: IELTSBarChartVisual,
     examPrompt: 'The bar chart below shows household expenditure by category in one country in 2024.',
-    question: '¿Qué categorías dominan y cuáles quedan abajo?',
-    whatToLookFor: ['barra más alta', 'barra más baja', 'grupos similares', 'diferencias notables'],
+    question: 'Which categories dominate and which are lowest?',
+    whatToLookFor: ['highest bar', 'lowest bar', 'similar groups', 'notable differences'],
     examples: [
-      { title: 'Ejemplo 1', insight: 'Housing domina.', overview: 'Overall, housing accounted for the largest share of spending, while health represented the smallest category.', variant: 0 },
-      { title: 'Ejemplo 2', insight: 'Food, transport y leisure son el grupo medio.', overview: 'Overall, spending was concentrated most heavily on housing, whereas the remaining categories were noticeably lower.', variant: 1 },
-      { title: 'Ejemplo 3', insight: 'No hay tiempo.', overview: 'Overall, the chart compares relative spending levels rather than changes over time.', variant: 2 },
-      { title: 'Ejemplo 4', insight: 'Leisure supera food y transport.', overview: 'Overall, leisure was the second-largest item, behind housing but ahead of food and transport.', variant: 3 },
-      { title: 'Ejemplo 5', insight: 'El contraste es jerárquico.', overview: 'Overall, the data show a clear hierarchy, led by housing and ending with health.', variant: 4 },
+      { title: 'Example 1', insight: 'Housing dominates.', overview: 'Overall, housing accounted for the largest share of spending, while health represented the smallest category.', variant: 0 },
+      { title: 'Example 2', insight: 'Food, transport and leisure form the middle group.', overview: 'Overall, spending was concentrated most heavily on housing, whereas the remaining categories were noticeably lower.', variant: 1 },
+      { title: 'Example 3', insight: 'There is no time axis.', overview: 'Overall, the chart compares relative spending levels rather than changes over time.', variant: 2 },
+      { title: 'Example 4', insight: 'Leisure exceeds food and transport.', overview: 'Overall, leisure was the second-largest item, behind housing but ahead of food and transport.', variant: 3 },
+      { title: 'Example 5', insight: 'The contrast is hierarchical.', overview: 'Overall, the data show a clear hierarchy, led by housing and ending with health.', variant: 4 },
     ],
     options: [
-      { correct: true, text: 'Overall, housing took up the largest share of household spending, while health was the smallest category.', reason: 'Correcto: selecciona extremos relevantes sin listar todas las barras.' },
-      { correct: false, text: 'Overall, housing was 32%, food was 18%, transport was 16%, leisure was 21% and health was 13%.', reason: 'Esto es una lista de datos, no un overview.' },
-      { correct: false, text: 'Overall, household expenditure changed significantly during the period.', reason: 'Incorrecto: no hay periodo de tiempo visible.' },
+      { correct: true, text: 'Overall, housing took up the largest share of household spending, while health was the smallest category.', reason: 'Correct: it selects relevant extremes without listing every bar.' },
+      { correct: false, text: 'Overall, housing was 32%, food was 18%, transport was 16%, leisure was 21% and health was 13%.', reason: 'This is a list of figures, not an overview.' },
+      { correct: false, text: 'Overall, household expenditure changed significantly during the period.', reason: 'Incorrect: there is no visible time period.' },
     ],
   },
   {
@@ -80,19 +80,19 @@ const LESSONS: VisualLesson[] = [
     label: 'Pie charts',
     Chart: IELTSPieChartVisual,
     examPrompt: 'The pie chart below shows the proportion of energy produced from four sources in a country in 2025.',
-    question: '¿Qué porción ocupa más espacio y qué porciones son menores?',
-    whatToLookFor: ['sector mayor', 'sector menor', 'agrupaciones', 'distribución general'],
+    question: 'Which share is largest and which shares are smaller?',
+    whatToLookFor: ['largest segment', 'smallest segment', 'groupings', 'overall distribution'],
     examples: [
-      { title: 'Ejemplo 1', insight: 'Solar lidera.', overview: 'Overall, solar energy made up the largest share of production, while other sources contributed the smallest proportion.', variant: 0 },
-      { title: 'Ejemplo 2', insight: 'Solar y wind dominan juntos.', overview: 'Overall, production was mainly concentrated in solar and wind power, with the remaining sources accounting for smaller shares.', variant: 1 },
-      { title: 'Ejemplo 3', insight: 'No hay tendencia temporal.', overview: 'Overall, the chart shows the distribution of energy production at one point in time rather than a trend.', variant: 2 },
-      { title: 'Ejemplo 4', insight: 'Hydro es categoría media.', overview: 'Overall, hydro occupied a middle position, below solar and wind but above other sources.', variant: 3 },
-      { title: 'Ejemplo 5', insight: 'Distribución relativamente concentrada.', overview: 'Overall, most energy came from two leading sources rather than being evenly distributed.', variant: 4 },
+      { title: 'Example 1', insight: 'Solar leads.', overview: 'Overall, solar energy made up the largest share of production, while other sources contributed the smallest proportion.', variant: 0 },
+      { title: 'Example 2', insight: 'Solar and wind dominate together.', overview: 'Overall, production was mainly concentrated in solar and wind power, with the remaining sources accounting for smaller shares.', variant: 1 },
+      { title: 'Example 3', insight: 'There is no time trend.', overview: 'Overall, the chart shows the distribution of energy production at one point in time rather than a trend.', variant: 2 },
+      { title: 'Example 4', insight: 'Hydro is a middle category.', overview: 'Overall, hydro occupied a middle position, below solar and wind but above other sources.', variant: 3 },
+      { title: 'Example 5', insight: 'The distribution is fairly concentrated.', overview: 'Overall, most energy came from two leading sources rather than being evenly distributed.', variant: 4 },
     ],
     options: [
-      { correct: true, text: 'Overall, solar and wind accounted for the majority of energy production, while other sources made up the smallest share.', reason: 'Correcto: agrupa sectores y evita porcentajes exactos.' },
+      { correct: true, text: 'Overall, solar and wind accounted for the majority of energy production, while other sources made up the smallest share.', reason: 'Correct: it groups segments and avoids exact percentages.' },
       { correct: false, text: 'Overall, solar was 34%, wind was 28%, hydro was 22% and other sources were 16%.', reason: 'Demasiada cifra exacta para un overview.' },
-      { correct: false, text: 'Overall, energy production increased steadily over the period.', reason: 'Incorrecto: un pie chart de un solo año no muestra cambio temporal.' },
+      { correct: false, text: 'Overall, energy production increased steadily over the period.', reason: 'Incorrect: a one-year pie chart does not show change over time.' },
     ],
   },
   {
@@ -100,19 +100,19 @@ const LESSONS: VisualLesson[] = [
     label: 'Table',
     Chart: IELTSTableVisual,
     examPrompt: 'The table below shows daily social media use by age group in three countries in 2023.',
-    question: '¿Qué patrón se repite en filas y columnas?',
-    whatToLookFor: ['grupo más alto', 'grupo más bajo', 'patrón por edad', 'país dominante'],
+    question: 'What pattern is repeated across rows and columns?',
+    whatToLookFor: ['highest group', 'lowest group', 'age pattern', 'leading country'],
     examples: [
-      { title: 'Ejemplo 1', insight: 'Uso baja con la edad.', overview: 'Overall, daily social media use declined with age in all three countries.', variant: 0 },
-      { title: 'Ejemplo 2', insight: 'USA lidera.', overview: 'Overall, the USA recorded the highest figures across every age group, while Australia generally had the lowest.', variant: 1 },
-      { title: 'Ejemplo 3', insight: 'Jóvenes dominan.', overview: 'Overall, younger adults were far more likely to use social media daily than older adults.', variant: 2 },
-      { title: 'Ejemplo 4', insight: 'Patrón consistente.', overview: 'Overall, the same age-related pattern was visible in each country.', variant: 3 },
-      { title: 'Ejemplo 5', insight: 'No es una tabla para narrar celda por celda.', overview: 'Overall, the table is best summarised by age trend and country ranking rather than individual cells.', variant: 4 },
+      { title: 'Example 1', insight: 'Use falls with age.', overview: 'Overall, daily social media use declined with age in all three countries.', variant: 0 },
+      { title: 'Example 2', insight: 'The USA leads.', overview: 'Overall, the USA recorded the highest figures across every age group, while Australia generally had the lowest.', variant: 1 },
+      { title: 'Example 3', insight: 'Younger adults dominate.', overview: 'Overall, younger adults were far more likely to use social media daily than older adults.', variant: 2 },
+      { title: 'Example 4', insight: 'The pattern is consistent.', overview: 'Overall, the same age-related pattern was visible in each country.', variant: 3 },
+      { title: 'Example 5', insight: 'Do not narrate every cell.', overview: 'Overall, the table is best summarised by age trend and country ranking rather than individual cells.', variant: 4 },
     ],
     options: [
-      { correct: true, text: 'Overall, daily social media use fell as age increased, and the USA recorded the highest figures in every age group.', reason: 'Correcto: detecta patrón transversal en filas y columnas.' },
-      { correct: false, text: 'Overall, the 18-24 group in the USA was 92%, and the 45+ group in Australia was 32%.', reason: 'Solo toma dos celdas; no resume la tabla completa.' },
-      { correct: false, text: 'Overall, the table shows daily social media use by age group.', reason: 'Es repetición del prompt, no overview.' },
+      { correct: true, text: 'Overall, daily social media use fell as age increased, and the USA recorded the highest figures in every age group.', reason: 'Correct: it identifies a cross-table pattern across rows and columns.' },
+      { correct: false, text: 'Overall, the 18-24 group in the USA was 92%, and the 45+ group in Australia was 32%.', reason: 'It only selects two cells and does not summarise the complete table.' },
+      { correct: false, text: 'Overall, the table shows daily social media use by age group.', reason: 'It repeats the prompt instead of giving an overview.' },
     ],
   },
   {
@@ -120,19 +120,19 @@ const LESSONS: VisualLesson[] = [
     label: 'Process diagram',
     Chart: IELTSProcessDiagramVisual,
     examPrompt: 'The diagram below shows how plastic bottles are recycled into new products.',
-    question: '¿El proceso es lineal o cíclico y cuáles son sus fases grandes?',
-    whatToLookFor: ['inicio y final', 'número de etapas', 'fases agrupables', 'si hay ciclo o secuencia lineal'],
+    question: 'Is the process linear or cyclical, and what are its broad phases?',
+    whatToLookFor: ['start and end', 'number of stages', 'groupable phases', 'cycle or linear sequence'],
     examples: [
-      { title: 'Ejemplo 1', insight: 'Proceso lineal.', overview: 'Overall, the process is linear, beginning with the collection of used bottles and ending with the manufacture of new products.', variant: 0 },
-      { title: 'Ejemplo 2', insight: 'Tres fases grandes.', overview: 'Overall, plastic recycling involves three broad phases: collection and sorting, material preparation, and final manufacturing.', variant: 1 },
-      { title: 'Ejemplo 3', insight: 'No hay datos numéricos.', overview: 'Overall, the diagram focuses on stages in a sequence rather than quantities or trends.', variant: 2 },
-      { title: 'Ejemplo 4', insight: 'Transformación física.', overview: 'Overall, discarded bottles are gradually transformed from waste material into reusable plastic products.', variant: 3 },
-      { title: 'Ejemplo 5', insight: 'No expliques cada paso aún.', overview: 'Overall, the process moves from waste collection to industrial treatment before new items are produced.', variant: 4 },
+      { title: 'Example 1', insight: 'A linear process.', overview: 'Overall, the process is linear, beginning with the collection of used bottles and ending with the manufacture of new products.', variant: 0 },
+      { title: 'Example 2', insight: 'Three broad phases.', overview: 'Overall, plastic recycling involves three broad phases: collection and sorting, material preparation, and final manufacturing.', variant: 1 },
+      { title: 'Example 3', insight: 'There are no figures.', overview: 'Overall, the diagram focuses on stages in a sequence rather than quantities or trends.', variant: 2 },
+      { title: 'Example 4', insight: 'A physical transformation.', overview: 'Overall, discarded bottles are gradually transformed from waste material into reusable plastic products.', variant: 3 },
+      { title: 'Example 5', insight: 'Do not explain every step yet.', overview: 'Overall, the process moves from waste collection to industrial treatment before new items are produced.', variant: 4 },
     ],
     options: [
-      { correct: true, text: 'Overall, this is a linear process in which used plastic bottles are collected, processed and finally turned into new products.', reason: 'Correcto: captura estructura total sin narrar cada etapa.' },
-      { correct: false, text: 'Overall, the bottles are collected, sorted, washed, melted and manufactured into new products.', reason: 'Es demasiado secuencial; parece cuerpo del ensayo, no overview.' },
-      { correct: false, text: 'Overall, plastic recycling increased significantly over the period.', reason: 'Incorrecto: el diagrama no muestra cifras ni cambios en el tiempo.' },
+      { correct: true, text: 'Overall, this is a linear process in which used plastic bottles are collected, processed and finally turned into new products.', reason: 'Correct: it captures the overall structure without narrating every stage.' },
+      { correct: false, text: 'Overall, the bottles are collected, sorted, washed, melted and manufactured into new products.', reason: 'It is too sequential and reads like a body paragraph, not an overview.' },
+      { correct: false, text: 'Overall, plastic recycling increased significantly over the period.', reason: 'Incorrect: the diagram shows no figures or change over time.' },
     ],
   },
   {
@@ -140,19 +140,19 @@ const LESSONS: VisualLesson[] = [
     label: 'Map',
     Chart: IELTSMapDiagramVisual,
     examPrompt: 'The maps below show changes in a town centre between 1990 and 2020.',
-    question: '¿Cuál es la transformación espacial dominante?',
-    whatToLookFor: ['más urbano o más rural', 'qué desaparece', 'qué aparece', 'cambios de infraestructura'],
+    question: 'What is the dominant spatial transformation?',
+    whatToLookFor: ['more urban or rural', 'what disappears', 'what appears', 'infrastructure changes'],
     examples: [
-      { title: 'Ejemplo 1', insight: 'Urbanización.', overview: 'Overall, the town centre became more urbanised, with open and industrial areas replaced by residential, educational and commercial facilities.', variant: 0 },
-      { title: 'Ejemplo 2', insight: 'Infraestructura crece.', overview: 'Overall, the area was redeveloped substantially, especially through new housing, a school and improved road infrastructure.', variant: 1 },
-      { title: 'Ejemplo 3', insight: 'Cambios de uso del suelo.', overview: 'Overall, land use shifted away from factory and parking space towards services and residential development.', variant: 2 },
-      { title: 'Ejemplo 4', insight: 'No describas esquina por esquina.', overview: 'Overall, the most significant change was the replacement of older facilities with more modern public and commercial spaces.', variant: 3 },
-      { title: 'Ejemplo 5', insight: 'Comparación global.', overview: 'Overall, the later map shows a denser and more developed town centre than the earlier one.', variant: 4 },
+      { title: 'Example 1', insight: 'Urbanisation.', overview: 'Overall, the town centre became more urbanised, with open and industrial areas replaced by residential, educational and commercial facilities.', variant: 0 },
+      { title: 'Example 2', insight: 'Infrastructure expands.', overview: 'Overall, the area was redeveloped substantially, especially through new housing, a school and improved road infrastructure.', variant: 1 },
+      { title: 'Example 3', insight: 'Land use changes.', overview: 'Overall, land use shifted away from factory and parking space towards services and residential development.', variant: 2 },
+      { title: 'Example 4', insight: 'Do not describe every corner.', overview: 'Overall, the most significant change was the replacement of older facilities with more modern public and commercial spaces.', variant: 3 },
+      { title: 'Example 5', insight: 'A global comparison.', overview: 'Overall, the later map shows a denser and more developed town centre than the earlier one.', variant: 4 },
     ],
     options: [
-      { correct: true, text: 'Overall, the town centre became more developed, with industrial and open areas replaced by housing, education and commercial facilities.', reason: 'Correcto: resume transformación espacial y categorías de cambio.' },
+      { correct: true, text: 'Overall, the town centre became more developed, with industrial and open areas replaced by housing, education and commercial facilities.', reason: 'Correct: it summarises the spatial transformation and change categories.' },
       { correct: false, text: 'Overall, the factory was in the top right in 1990, while the school was in the top right in 2020.', reason: 'Demasiado localizado; eso va en detalles.' },
-      { correct: false, text: 'Overall, the number of residents increased dramatically.', reason: 'No hay datos de población en el mapa.' },
+      { correct: false, text: 'Overall, the number of residents increased dramatically.', reason: 'The map contains no population data.' },
     ],
   },
 ];
@@ -188,18 +188,18 @@ export default function OverviewPage() {
             <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Overview</span>
           </div>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Sub-habilidad 2 — Overview</p>
-          <h1 style={{ fontSize: '1.9rem', letterSpacing: 0, margin: '0 0 0.4rem', fontWeight: 700 }}>El párrafo Overview</h1>
+          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />Sub-skill 2 — Overview</p>
+          <h1 style={{ fontSize: '1.9rem', letterSpacing: 0, margin: '0 0 0.4rem', fontWeight: 700 }}>The Overview Paragraph</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.98rem', margin: '0 0 0.75rem', lineHeight: 1.65 }}>
-            El overview no es una introducción ni una lista de datos. Es el párrafo donde le dices al examinador:
-            “esta es la historia completa del visual”. Cambia según el input: líneas, barras, pasteles, tablas, procesos o mapas.
+            An overview is not an introduction or a list of figures. It tells the examiner the complete story of the visual.
+            Its focus changes with the input: lines, bars, pie charts, tables, processes or maps.
           </p>
 
           <Task1OfficialReviewBlock
-            focus="Seleccionar los rasgos principales del visual sin copiar datos exactos."
-            officialFormat="IELTS Academic Writing Task 1 evalúa si describes los rasgos principales de información visual. El overview es una estrategia de respuesta, no una sección oficial independiente."
-            welearnStrategy="Entrenamos el overview por tipo de input: primero identificas la historia visual, luego eliges qué oración resume mejor esa historia."
-            answerCheck="Una respuesta fuerte menciona tendencia dominante, contraste principal, distribución global, fases del proceso o transformación del mapa sin llenar el párrafo de cifras."
+            focus="Select the main features of the visual without copying exact figures."
+            officialFormat="IELTS Academic Writing Task 1 assesses how well you describe the main features of visual information. An overview is a response strategy, not a separate official section."
+            welearnStrategy="We train the overview by input type: first identify the visual story, then choose the sentence that summarises it most effectively."
+            answerCheck="A strong answer mentions the dominant trend, main contrast, overall distribution, process phases or map transformation without filling the paragraph with figures."
           />
 
           <Task1ChartTypeGuide />
@@ -247,8 +247,8 @@ export default function OverviewPage() {
           </div>
 
           <div style={{ marginBottom: '1.5rem' }}>
-            <h2 style={{ margin: '0 0 0.7rem', fontSize: '1.12rem', letterSpacing: 0 }}>Cinco ejemplos guiados para este tipo</h2>
-            <div role="tablist" aria-label={`Ejemplos de ${lesson.label}`} style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', paddingBottom: '0.45rem' }}>
+            <h2 style={{ margin: '0 0 0.7rem', fontSize: '1.12rem', letterSpacing: 0 }}>Five guided examples for this visual</h2>
+            <div role="tablist" aria-label={`Examples of ${lesson.label}`} style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', paddingBottom: '0.45rem' }}>
               {lesson.examples.map((example, index) => (
                 <button
                   key={example.title}
@@ -270,7 +270,7 @@ export default function OverviewPage() {
                     <p style={{ margin: '0 0 0.3rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900 }}>{example.title}</p>
                     <p style={{ margin: '0 0 0.7rem', color: 'var(--ink)', fontWeight: 800 }}>{example.insight}</p>
                     <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.65, fontStyle: 'italic' }}>“{example.overview}”</p>
-                    <p style={{ margin: '0.8rem 0 0', color: 'var(--muted)', fontSize: '0.82rem', lineHeight: 1.55 }}>Mira el visual primero: el overview resume esta historia, no cada dato.</p>
+                    <p style={{ margin: '0.8rem 0 0', color: 'var(--muted)', fontSize: '0.82rem', lineHeight: 1.55 }}>Study the visual first: the overview summarises this story, not every figure.</p>
                   </div>
                 </article>
               );
@@ -278,10 +278,10 @@ export default function OverviewPage() {
           </div>
 
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1rem' }}>
-            <p style={{ margin: '0 0 0.35rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase' }}>Motor de práctica</p>
-            <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.12rem', letterSpacing: 0 }}>Elige el overview correcto</h2>
+            <p style={{ margin: '0 0 0.35rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase' }}>Practice engine</p>
+            <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.12rem', letterSpacing: 0 }}>Choose the correct overview</h2>
             <p style={{ margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.6, fontSize: '0.9rem' }}>
-              Nivel 1: selecciona la oración que mejor resume la historia del visual. El overview correcto evita cifras exactas, no repite el prompt y no inventa información.
+              Level 1: select the sentence that best summarises the visual story. A correct overview avoids exact figures, does not repeat the prompt and does not invent information.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
               {lesson.options.map((option, index) => {
@@ -296,7 +296,7 @@ export default function OverviewPage() {
                     style={{ textAlign: 'left', padding: '0.9rem 1rem', borderRadius: 8, border, background: bg, cursor: locked ? 'default' : 'pointer', color: 'var(--ink)', lineHeight: 1.55 }}
                   >
                     <span style={{ fontWeight: 800, color: show ? (option.correct ? '#059669' : '#dc2626') : '#0f3d8c', marginRight: '0.35rem' }}>
-                      {show ? (option.correct ? 'Correcto' : 'Revisa') : `Opción ${index + 1}`}
+                      {show ? (option.correct ? 'Correct' : 'Review') : `Option ${index + 1}`}
                     </span>
                     {option.text}
                     {show && <p style={{ margin: '0.55rem 0 0', color: option.correct ? '#059669' : '#dc2626', fontSize: '0.84rem' }}>{option.reason}</p>}
@@ -306,7 +306,7 @@ export default function OverviewPage() {
             </div>
             {locked && (
               <button className="btn btn-sm" onClick={() => { setSelected(null); setLocked(false); }} style={{ marginTop: '0.9rem' }}>
-                Practicar otra vez
+                Practise again
               </button>
             )}
           </div>

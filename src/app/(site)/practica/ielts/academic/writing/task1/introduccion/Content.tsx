@@ -274,7 +274,7 @@ function MapTown() {
 const EXAMPLES = [
   {
     id: 'line',
-    chartType: 'Gráfica de líneas',
+    chartType: 'Line graph',
     prompt: 'The graph below shows the percentage of people using the internet in three countries between 2000 and 2020.',
     Chart: LineChartInternet,
     model1: {
@@ -288,7 +288,7 @@ const EXAMPLES = [
   },
   {
     id: 'bar',
-    chartType: 'Gráfico de barras',
+    chartType: 'Bar chart',
     prompt: 'The bar chart below shows the amount of money spent on different types of advertising in the UK in 2020.',
     Chart: BarChartAdvertising,
     model1: {
@@ -302,7 +302,7 @@ const EXAMPLES = [
   },
   {
     id: 'pie',
-    chartType: 'Gráficos de sectores',
+    chartType: 'Pie charts',
     prompt: 'The pie charts below show the proportion of male and female students studying four subjects at a university in 2010.',
     Chart: PieChartsStudents,
     model1: {
@@ -316,7 +316,7 @@ const EXAMPLES = [
   },
   {
     id: 'bar2',
-    chartType: 'Gráfico de barras',
+    chartType: 'Bar chart',
     prompt: 'The bar chart below shows the average number of hours worked per week by employees in five European countries in 2022.',
     Chart: BarChartWorkHours,
     model1: {
@@ -330,7 +330,7 @@ const EXAMPLES = [
   },
   {
     id: 'table',
-    chartType: 'Tabla',
+    chartType: 'Table',
     prompt: 'The table below shows the percentage of adults in four age groups who used social media daily in three countries in 2023.',
     Chart: TableSocialMedia,
     model1: {
@@ -344,7 +344,7 @@ const EXAMPLES = [
   },
   {
     id: 'process',
-    chartType: 'Diagrama de proceso',
+    chartType: 'Process diagram',
     prompt: 'The diagram below shows the process of recycling plastic bottles into new products.',
     Chart: IELTSProcessDiagramVisual,
     model1: {
@@ -358,7 +358,7 @@ const EXAMPLES = [
   },
   {
     id: 'map',
-    chartType: 'Mapa',
+    chartType: 'Map',
     prompt: 'The maps below show the changes that took place in a town centre between 1990 and 2020.',
     Chart: IELTSMapDiagramVisual,
     model1: {
@@ -542,44 +542,44 @@ export default function IntroduccionContent() {
             <span>/</span>
             <Link href="/practica/ielts/academic/writing/task1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Task 1</Link>
             <span>/</span>
-            <span style={{ color: C, fontWeight: 800 }}>Introducción</span>
+            <span style={{ color: C, fontWeight: 800 }}>Introduction</span>
           </div>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📝 Sub-habilidad 1 de 7 — Introducción</p>
+          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📝 Sub-skill 1 of 7 — Introduction</p>
           <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>
-            La Introducción y el Paraphrasing
+            Introduction and Paraphrasing
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 2rem', lineHeight: 1.65 }}>
-            La introducción es lo primero que el examinador lee. Si copias el enunciado, la calificación de <em>Lexical Resource</em> cae inmediatamente. Aquí aprendes a parafrasearla con precisión académica.
+            The introduction is the first thing the examiner reads. If you copy the prompt, your <em>Lexical Resource</em> score is affected immediately. Here you learn to paraphrase it with academic precision.
           </p>
 
           <WeLearnDownloadButton
             href="/downloads/ielts-writing-task-1-introduccion-paraphrasing-welearn.pdf"
-            label="Descargar guía PDF"
+              label="Download PDF guide"
           />
 
           <Task1OfficialReviewBlock
-            focus="Parafrasear el enunciado sin añadir tendencias, números ni interpretación."
-            officialFormat="IELTS Academic Writing Task 1 pide describir información visual en al menos 150 palabras. La introducción no es una tarea oficial separada; es una parte estratégica de la respuesta."
-            welearnStrategy="Entrenamos la introducción como microhabilidad porque reduce copia literal del prompt y prepara el overview."
-            answerCheck="Una buena respuesta cambia vocabulario y estructura, conserva todos los datos del enunciado y no inventa conclusiones."
+            focus="Paraphrase the prompt without adding trends, figures or interpretation."
+            officialFormat="IELTS Academic Writing Task 1 asks you to describe visual information in at least 150 words. The introduction is not a separate official task; it is a strategic part of the response."
+            welearnStrategy="We train the introduction as a micro-skill because it reduces literal copying and prepares the overview."
+            answerCheck="A strong answer changes vocabulary and structure, preserves every detail from the prompt and does not invent conclusions."
           />
 
           <Task1ChartTypeGuide />
 
-          {/* ── SECCIÓN 1: TEORÍA ─────────────────────────────────────────── */}
+          {/* ── SECTION 1: THEORY ─────────────────────────────────────────── */}
           <div style={{ background: `${C}07`, border: `1.5px solid ${C}22`, borderRadius: 18, padding: '1.75rem', marginBottom: '2rem' }}>
-            <p style={{ fontSize: '0.72rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 1rem' }}>¿Qué es la Introducción?</p>
+            <p style={{ fontSize: '0.72rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0 0 1rem' }}>What is the Introduction?</p>
 
             <p style={{ fontSize: '0.97rem', color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 1.25rem' }}>
-              La introducción del Task 1 es un <strong>párrafo de 1 a 2 oraciones</strong> que parafrasea el enunciado de la pregunta. Su único propósito es decirle al examinador <em>qué muestra el gráfico</em>, sin copiar las palabras del enunciado y sin mencionar tendencias ni datos específicos.
+              The Task 1 introduction is a <strong>one- or two-sentence paragraph</strong> that paraphrases the question prompt. Its only purpose is to tell the examiner <em>what the visual shows</em>, without copying the prompt or mentioning trends and specific figures.
             </p>
 
             {/* Formula */}
             <div style={{ background: 'var(--bg)', borderRadius: 12, padding: '1rem 1.25rem', marginBottom: '1.25rem', border: '1px solid var(--line-soft)' }}>
-              <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>Fórmula</p>
+              <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>Formula</p>
               <p style={{ fontSize: '0.97rem', color: C, fontWeight: 700, margin: 0, lineHeight: 1.65 }}>
-                The [tipo de gráfica] <span style={{ color: '#0369a1' }}>illustrates / presents / compares / depicts</span> [tema parafraseado] [período de tiempo o lugar si aparece].
+                The [visual type] <span style={{ color: '#0369a1' }}>illustrates / presents / compares / depicts</span> [paraphrased topic] [time period or place, if shown].
               </p>
             </div>
 
@@ -587,9 +587,9 @@ export default function IntroduccionContent() {
             <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
               {[
                 { label: '30–45 palabras', desc: 'longitud ideal', icon: '📏', c: '#059669' },
-                { label: '1–2 oraciones', desc: 'no más', icon: '✍️', c: C },
-                { label: 'Sin tendencias', desc: 'eso va en el overview', icon: '🚫', c: '#dc2626' },
-                { label: 'Sin números', desc: 'ni datos específicos', icon: '🔢', c: '#d97706' },
+                { label: '1–2 sentences', desc: 'no more', icon: '✍️', c: C },
+                { label: 'No trends', desc: 'save them for the overview', icon: '🚫', c: '#dc2626' },
+                { label: 'No figures', desc: 'or specific data', icon: '🔢', c: '#d97706' },
               ].map(item => (
                 <div key={item.label} style={{ flex: '1 1 160px', padding: '0.8rem 1rem', borderRadius: 12, background: `${item.c}10`, border: `1px solid ${item.c}30` }}>
                   <div style={{ fontSize: '1.2rem', marginBottom: '0.25rem' }}>{item.icon}</div>
@@ -604,7 +604,7 @@ export default function IntroduccionContent() {
               <div style={{ padding: '0.9rem 1rem', borderRadius: 12, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)' }}>
                 <p style={{ fontSize: '0.72rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>✓ Incluir</p>
                 <ul style={{ margin: 0, paddingLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
-                  {['Tipo de gráfica (line graph, bar chart…)', 'Tema / asunto (parafraseado)', 'Período de tiempo o lugar (si aparece)', 'Unidad de medida si es esencial'].map(t => (
+                  {['Visual type (line graph, bar chart…)', 'Topic / subject (paraphrased)', 'Time period or place (if shown)', 'Unit of measurement, if essential'].map(t => (
                     <li key={t} style={{ fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.5 }}>{t}</li>
                   ))}
                 </ul>
@@ -612,7 +612,7 @@ export default function IntroduccionContent() {
               <div style={{ padding: '0.9rem 1rem', borderRadius: 12, background: 'rgba(220,38,38,0.07)', border: '1px solid rgba(220,38,38,0.2)' }}>
                 <p style={{ fontSize: '0.72rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.5rem' }}>✗ Excluir</p>
                 <ul style={{ margin: 0, paddingLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
-                  {['Texto copiado del enunciado', 'Tendencias o comparaciones', 'Números o porcentajes concretos', 'Opiniones o comentarios propios'].map(t => (
+                  {['Copied prompt text', 'Trends or comparisons', 'Specific figures or percentages', 'Personal opinions or comments'].map(t => (
                     <li key={t} style={{ fontSize: '0.83rem', color: 'var(--ink-2)', lineHeight: 1.5 }}>{t}</li>
                   ))}
                 </ul>
@@ -620,14 +620,14 @@ export default function IntroduccionContent() {
             </div>
           </div>
 
-          {/* ── SECCIÓN 2: TÉCNICAS DE PARAPHRASING ──────────────────────── */}
-          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Técnicas de Paraphrasing</p>
+          {/* ── SECTION 2: PARAPHRASING TECHNIQUES ──────────────────────── */}
+          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Paraphrasing techniques</p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
             {[
-              { n: '01', title: 'Cambiar el verbo principal', body: 'El verbo "shows" es demasiado simple. Reemplázalo con un sinónimo más académico. Nunca uses "shows" si el enunciado ya lo tiene.' },
-              { n: '02', title: 'Cambiar sustantivos clave', body: 'Transforma los sustantivos en sinónimos de registro académico: percentage → proportion, number → figure, people → population/individuals.' },
-              { n: '03', title: 'Cambiar la estructura gramatical', body: 'Convierte gerundios en cláusulas relativas: "people using the internet" → "people who had internet access". O usa nominalizaciones: "countries that produce" → "producing countries".' },
+              { n: '01', title: 'Change the main verb', body: 'The verb "shows" is simple. Replace it with a more academic synonym. Avoid using "shows" when it already appears in the prompt.' },
+              { n: '02', title: 'Change key nouns', body: 'Transform nouns with academic synonyms: percentage → proportion, number → figure, people → population/individuals.' },
+              { n: '03', title: 'Change the sentence structure', body: 'Turn gerunds into relative clauses: "people using the internet" → "people who had internet access". You can also use nominalisation: "countries that produce" → "producing countries".' },
             ].map(t => (
               <div key={t.n} style={{ display: 'flex', gap: '1rem', padding: '1rem 1.25rem', borderRadius: 14, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', alignItems: 'flex-start' }}>
                 <div style={{ fontSize: '0.65rem', fontWeight: 900, fontFamily: 'var(--mono)', color: C, background: `${C}15`, padding: '0.25rem 0.5rem', borderRadius: 6, flexShrink: 0, marginTop: '0.1rem' }}>{t.n}</div>
@@ -666,10 +666,10 @@ export default function IntroduccionContent() {
             ))}
           </div>
 
-          {/* ── SECCIÓN 3: EJEMPLOS CON GRÁFICAS ─────────────────────────── */}
-          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Ejemplos con gráficas reales</p>
+          {/* ── SECTION 3: EXAMPLES WITH VISUALS ─────────────────────────── */}
+          <p className="eyebrow" style={{ marginBottom: '0.75rem' }}><span className="ink-line" />Examples with authentic-style visuals</p>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 1.25rem' }}>
-            Cada tipo de visual tiene cinco referencias distintas. Estudia el enunciado, observa qué información debe conservarse y compara dos maneras válidas de parafrasearlo.
+            Each visual type has five different references. Study the prompt, identify the information that must be preserved and compare two valid ways to paraphrase it.
           </p>
 
           <div style={{ marginBottom: '2.5rem' }}>
@@ -684,14 +684,14 @@ export default function IntroduccionContent() {
 
             {EXAMPLE_GROUPS.filter((group) => group.id === activeGroup).map((group) => (
               <div key={group.id} role="tabpanel" style={{ paddingTop: '1.25rem' }}>
-                <p style={{ margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.6 }}>Seleccionaste <strong style={{ color: C }}>{group.label}</strong>. Elige una referencia para estudiar su visual y su paráfrasis con espacio suficiente.</p>
+                <p style={{ margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.6 }}>You selected <strong style={{ color: C }}>{group.label}</strong>. Choose a reference to study its visual and paraphrase with enough space to read both clearly.</p>
                 <div aria-label={`Referencias de ${group.label}`} style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', padding: '0.15rem 0.1rem 0.7rem', scrollbarWidth: 'thin' }}>
                   {group.examples.map((example, exampleIndex) => {
                     const exampleId = `${group.id}-${exampleIndex}`;
                     const isSelected = activeEx === exampleId;
                     return (
                       <button key={exampleId} type="button" aria-current={isSelected ? 'true' : undefined} onClick={() => setActiveEx(exampleId)} style={{ flex: '1 0 150px', maxWidth: 190, minHeight: 66, padding: '0.7rem 0.75rem', borderRadius: 10, border: `1px solid ${isSelected ? C : 'var(--line-soft)'}`, background: isSelected ? `${C}0b` : 'var(--bg)', cursor: 'pointer', textAlign: 'left', boxShadow: isSelected ? `inset 0 -3px 0 ${C}` : 'none' }}>
-                        <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)' }}>EJEMPLO 0{exampleIndex + 1}</span>
+                        <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)' }}>EXAMPLE 0{exampleIndex + 1}</span>
                         <span style={{ display: 'block', marginTop: '0.25rem', fontSize: '0.78rem', fontWeight: 700, color: 'var(--ink)', lineHeight: 1.35 }}>{example[0]}</span>
                       </button>
                     );
@@ -704,25 +704,25 @@ export default function IntroduccionContent() {
                   return (
                     <article style={{ marginTop: '0.65rem', borderRadius: 14, border: '1px solid var(--line-soft)', background: 'var(--bg)', overflow: 'hidden' }}>
                       <div style={{ padding: '0.8rem 1rem', background: `${C}08`, borderBottom: '1px solid var(--line-soft)', display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap' }}>
-                        <strong style={{ color: C, fontSize: '0.9rem' }}>Ejemplo {String(exampleIndex + 1).padStart(2, '0')} · {example[0]}</strong>
+                        <strong style={{ color: C, fontSize: '0.9rem' }}>Example {String(exampleIndex + 1).padStart(2, '0')} · {example[0]}</strong>
                         <span style={{ color: 'var(--muted)', fontSize: '0.72rem', fontFamily: 'var(--mono)' }}>Referencia {exampleIndex + 1} de 5</span>
                       </div>
                       <div className="task1-intro-example-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(320px, 0.95fr)', gap: '1rem', padding: '1rem', alignItems: 'start' }}>
                         <div style={{ background: 'var(--bg-2)', borderRadius: 10, padding: '0.75rem', border: '1px solid var(--line-soft)', minWidth: 0 }}>
-                          <p style={{ fontSize: '0.61rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.55rem' }}>Visual IELTS de referencia</p>
+                          <p style={{ fontSize: '0.61rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.55rem' }}>IELTS reference visual</p>
                           <Chart variant={exampleIndex} />
                         </div>
                         <div style={{ minWidth: 0 }}>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(220,38,38,0.06)', border: '1px solid rgba(220,38,38,0.2)', marginBottom: '0.65rem' }}>
-                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Tema del enunciado</p>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Prompt topic</p>
                             <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.55, fontStyle: 'italic', fontSize: '0.88rem' }}>{example[0]}</p>
                           </div>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.22)', marginBottom: '0.6rem' }}>
-                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Modelo A · Band 7+</p>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Model A · Band 7+</p>
                             <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{example[1]}</p>
                           </div>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: `${C}06`, border: `1px solid ${C}22` }}>
-                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Modelo B · alternativa válida</p>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: C, fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Model B · valid alternative</p>
                             <p style={{ margin: '0 0 0.5rem', color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{example[2]}</p>
                             <span style={{ fontSize: '0.68rem', color: C, fontFamily: 'var(--mono)', lineHeight: 1.45 }}>{example[3]}</span>
                           </div>
@@ -735,14 +735,14 @@ export default function IntroduccionContent() {
             ))}
           </div>
 
-          {/* ── SECCIÓN 4: PRÁCTICA INTERACTIVA ─────────────────────────── */}
+          {/* ── SECTION 4: INTERACTIVE PRACTICE ─────────────────────────── */}
           <Task1IntroductionPracticeEngine />
 
           {/* Next skill */}
           <div style={{ marginTop: '2rem', padding: '1.1rem 1.3rem', borderRadius: 14, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
             <div>
-              <p style={{ margin: '0 0 0.15rem', fontSize: '0.75rem', color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Siguiente sub-habilidad</p>
-              <p style={{ margin: 0, fontWeight: 700, color: 'var(--ink)', fontSize: '0.97rem' }}>🔭 Overview — el párrafo más importante del Task 1</p>
+              <p style={{ margin: '0 0 0.15rem', fontSize: '0.75rem', color: 'var(--muted)', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Next sub-skill</p>
+              <p style={{ margin: 0, fontWeight: 700, color: 'var(--ink)', fontSize: '0.97rem' }}>🔭 Overview — the most important Task 1 paragraph</p>
             </div>
             <Link href="/practica/ielts/academic/writing/task1/overview" className="btn btn-sm">
               Ir a Overview →
