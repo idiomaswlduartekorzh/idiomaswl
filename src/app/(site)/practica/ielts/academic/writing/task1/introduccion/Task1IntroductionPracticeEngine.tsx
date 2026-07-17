@@ -46,7 +46,7 @@ const CLOZE: ClozeItem[] = [
     blank: ['presents', 'total expenditure on', 'various categories'],
     after: 'of advertising in the United Kingdom in 2020.',
     options: [['shows', 'presents', 'present'], ['the amount spent on', 'total expenditure on', 'overall spending on'], ['different categories', 'various categories', 'several types']],
-    explanation: 'La respuesta conserva el tipo de visual, el tema, el lugar y el año, pero cambia el verbo, el sustantivo y la estructura nominal.',
+    explanation: 'The answer preserves the visual type, topic, place and year, while changing the verb, noun and noun phrase structure.',
   },
   {
     chart: IELTSTableVisual,
@@ -57,7 +57,7 @@ const CLOZE: ClozeItem[] = [
     blank: ['presents figures for', 'international students studying', 'five subjects'],
     after: 'at a university in 2015 and 2025.',
     options: [['shows numbers for', 'provides data on', 'presents figures for'], ['international students enrolled in', 'international students studying', 'the number of international students enrolled in'], ['five subjects', 'five academic subjects', 'five university subjects']],
-    explanation: 'Figures for funciona para cantidades; studying reestructura enrolled in sin cambiar el significado.',
+    explanation: 'Figures for works for quantities; studying is restructured as enrolled in without changing the meaning.',
   },
   {
     chart: IELTSLineGraphVisual,
@@ -68,7 +68,7 @@ const CLOZE: ClozeItem[] = [
     blank: ['illustrates', 'the number of journeys made by', 'three modes'],
     after: 'of public transport over the period from 2010 to 2025.',
     options: [['presents', 'illustrates', 'depicts'], ['the number of journeys made by', 'the number of trips taken by', 'journeys made by'], ['three modes', 'three forms', 'three types']],
-    explanation: 'La paráfrasis mantiene number porque trips es contable y usa journeys/modes como sustituciones naturales.',
+    explanation: 'The paraphrase keeps number because trips is countable and uses journeys/modes as natural substitutions.',
   },
   {
     chart: IELTSPieChartVisual,
@@ -79,7 +79,7 @@ const CLOZE: ClozeItem[] = [
     blank: ['give information about', "students' reasons for choosing", 'online courses'],
     after: 'in 2024.',
     options: [['give information about', 'compare', 'present'], ["students' reasons for choosing", 'the reasons students gave for choosing', 'why students chose'], ['online courses', 'online learning courses', 'digital courses']],
-    explanation: 'Pie charts es plural, por eso give; reasons for choosing es la estructura natural después de reasons.',
+    explanation: 'Pie charts is plural, so give is required; reasons for choosing is the natural structure after reasons.',
   },
 ];
 
@@ -96,7 +96,7 @@ const CHOICE: ChoiceItem[] = [
       'The line graph illustrates the proportion of the population with internet access in three regions over the period from 2000 to 2020.',
       'The pie chart compares internet access in three regions in 2020.',
     ],
-    explanation: 'La respuesta correcta conserva visual, tema, unidades generales, regiones y periodo sin introducir datos concretos ni cambiar el tipo de gráfico.',
+    explanation: 'The correct answer preserves the visual, topic, broad units, regions and period without adding figures or changing the visual type.',
   },
   {
     chart: IELTSMapDiagramVisual,
@@ -110,7 +110,7 @@ const CHOICE: ChoiceItem[] = [
       'The maps compare the number of students in the lecture hall in 1995 and 2025.',
       'The map illustrates that the campus became better because a sports centre was added.',
     ],
-    explanation: 'Un mapa de cambios necesita layout/changes y el periodo; no debe inventar valoraciones ni convertir espacios en cantidades.',
+    explanation: 'A change map needs layout/changes and the period; it must not invent evaluations or turn spaces into quantities.',
   },
   {
     chart: IELTSProcessDiagramVisual,
@@ -124,7 +124,7 @@ const CHOICE: ChoiceItem[] = [
       'The line graph presents how clay changed between digging and firing.',
       'The diagram outlines the stages involved in manufacturing bricks.',
     ],
-    explanation: 'Para un proceso, la introducción identifica las etapas y el resultado general; no añade juicios, cifras ni tendencias.',
+    explanation: 'For a process, the introduction identifies the stages and overall outcome; it adds no judgements, figures or trends.',
   },
   {
     chart: IELTSPieChartVisual,
@@ -138,7 +138,7 @@ const CHOICE: ChoiceItem[] = [
       'The charts explain why countries should use renewable electricity.',
       'The bar charts compare four countries and their electricity production.',
     ],
-    explanation: 'La respuesta correcta mantiene plural, comparación, shares, fuentes y países, sin convertir la introducción en overview.',
+    explanation: 'The correct answer preserves the plural, comparison, shares, sources and countries without turning the introduction into an overview.',
   },
 ];
 
@@ -155,7 +155,7 @@ const PRODUCTION: ChoiceItem[] = [
       'The process proves that roasted coffee is better than fresh cherries.',
       'The line graph presents the amount of coffee sold in different years.',
     ],
-    explanation: 'Nivel 3 exige revisar la respuesta completa: tipo de visual, tema y propósito están alineados; los detalles pertenecen al cuerpo.',
+    explanation: 'Level 3 requires reviewing the complete answer: visual type, topic and purpose must align; details belong in the body.',
   },
   {
     chart: IELTSMapDiagramVisual,
@@ -169,7 +169,7 @@ const PRODUCTION: ChoiceItem[] = [
       'The maps present the exact number of visitors to the shopping centre.',
       'The two maps illustrate how the layout of a shopping centre changed after redevelopment.',
     ],
-    explanation: 'Una introducción de mapas describe el cambio de distribución; no evalúa las obras ni convierte las instalaciones en datos numéricos.',
+    explanation: 'A map introduction describes the change in layout; it does not evaluate the redevelopment or turn facilities into figures.',
   },
   {
     chart: IELTSBarChartVisual,
@@ -183,7 +183,7 @@ const PRODUCTION: ChoiceItem[] = [
       'The pie chart compares the proportion of water used by five sectors over time.',
       'The bar chart shows agriculture used 46 billion litres, more than every other sector.',
     ],
-    explanation: 'En este nivel debes eliminar datos concretos, explicaciones causales y cambios de formato antes de elegir.',
+    explanation: 'At this level, remove specific data, causal explanations and format changes before choosing.',
   },
 ];
 
@@ -192,7 +192,7 @@ function VisualFrame({ item }: { item: { chart: Chart; variant: number; label: s
   return (
     <div style={{ display: 'grid', gap: '0.8rem' }}>
       <div style={{ background: 'var(--bg-2)', border: '1px solid var(--line-soft)', borderRadius: 14, padding: '0.85rem', overflow: 'hidden' }}>
-        <p style={{ margin: '0 0 0.55rem', color: C, fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase' }}>Visual de práctica · {item.label}</p>
+        <p style={{ margin: '0 0 0.55rem', color: C, fontFamily: 'var(--mono)', fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase' }}>Practice visual · {item.label}</p>
         <Chart variant={item.variant} />
       </div>
       <div style={{ padding: '0.9rem 1rem', borderLeft: `3px solid ${C}`, background: `${C}08`, borderRadius: 10 }}>
@@ -205,9 +205,9 @@ function VisualFrame({ item }: { item: { chart: Chart; variant: number; label: s
 
 export default function Task1IntroductionPracticeEngine() {
   const levels = useMemo(() => [
-    { title: 'Nivel 1 · Construye la paráfrasis', tag: 'Bloques de vocabulario', items: CLOZE },
-    { title: 'Nivel 2 · Elige una introducción alineada', tag: 'Precisión y cobertura', items: CHOICE },
-    { title: 'Nivel 3 · Revisión de respuesta', tag: 'Criterio de examen', items: PRODUCTION },
+    { title: 'Level 1 · Build the paraphrase', tag: 'Vocabulary blocks', items: CLOZE },
+    { title: 'Level 2 · Choose an aligned introduction', tag: 'Precision and coverage', items: CHOICE },
+    { title: 'Level 3 · Review the response', tag: 'Exam criteria', items: PRODUCTION },
   ], []);
   const [level, setLevel] = useState(0);
   const [index, setIndex] = useState(0);
@@ -260,9 +260,9 @@ export default function Task1IntroductionPracticeEngine() {
 
   return (
     <section aria-labelledby="task1-intro-practice" style={{ marginTop: '2.5rem' }}>
-      <p className="eyebrow" style={{ marginBottom: '0.65rem' }}><span className="ink-line" />Motor progresivo</p>
-      <h2 id="task1-intro-practice" style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1.45rem' }}>Practica la introducción por niveles</h2>
-      <p style={{ margin: '0 0 1.25rem', color: 'var(--muted)', lineHeight: 1.65 }}>Cada nivel trabaja una decisión distinta: primero eliges palabras, después verificas que la oración cubra todo el enunciado y al final detectas errores que bajarían la precisión.</p>
+      <p className="eyebrow" style={{ marginBottom: '0.65rem' }}><span className="ink-line" />Progressive engine</p>
+      <h2 id="task1-intro-practice" style={{ margin: '0 0 0.35rem', color: 'var(--ink)', fontSize: '1.45rem' }}>Practise the introduction by level</h2>
+      <p style={{ margin: '0 0 1.25rem', color: 'var(--muted)', lineHeight: 1.65 }}>Each level trains a different decision: first choose words, then check that the sentence covers the complete prompt, and finally detect errors that reduce precision.</p>
 
       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
         {levels.map((item, i) => (
@@ -274,19 +274,19 @@ export default function Task1IntroductionPracticeEngine() {
 
       <div className="wl-card" style={{ padding: '1.2rem', borderTop: `4px solid ${C}` }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
-          <div><p style={{ margin: 0, fontWeight: 800, color: C, fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase' }}>{currentLevel.title}</p><p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Ejercicio {index + 1} de {currentLevel.items.length}</p></div>
+          <div><p style={{ margin: 0, fontWeight: 800, color: C, fontFamily: 'var(--mono)', fontSize: '0.72rem', textTransform: 'uppercase' }}>{currentLevel.title}</p><p style={{ margin: '0.2rem 0 0', color: 'var(--muted)', fontSize: '0.82rem' }}>Exercise {index + 1} of {currentLevel.items.length}</p></div>
           <span style={{ fontFamily: 'var(--mono)', color: 'var(--muted)', fontSize: '0.78rem' }}>{Math.round(((index + 1) / currentLevel.items.length) * 100)}%</span>
         </div>
         <VisualFrame item={current} />
 
         {isCloze && cloze ? (
           <div style={{ marginTop: '1rem' }}>
-            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Completa la introducción con el sinónimo y la estructura que mejor encajan:</p>
+            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Complete the introduction with the synonym and structure that fit best:</p>
             <div style={{ padding: '0.85rem', background: 'var(--bg-2)', borderRadius: 10, lineHeight: 2.2, color: 'var(--ink)' }}>
               <span>{cloze.before} </span>
               {cloze.blank.map((_, slot) => (
                 <select key={slot} value={answers[slot] ?? ''} onChange={(event) => chooseCloze(slot, event.target.value)} aria-label={`Bloque ${slot + 1}`} style={{ margin: '0 0.25rem', padding: '0.4rem 0.55rem', border: `1px solid ${C}55`, borderRadius: 7, background: 'var(--bg)', color: 'var(--ink)', maxWidth: '100%' }}>
-                  <option value="">elige...</option>
+                  <option value="">choose...</option>
                   {cloze.options[slot].map((option) => <option key={option} value={option}>{option}</option>)}
                 </select>
               ))}
@@ -295,7 +295,7 @@ export default function Task1IntroductionPracticeEngine() {
           </div>
         ) : choice ? (
           <div style={{ marginTop: '1rem' }}>
-            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Selecciona la introducción que conserva todos los elementos del enunciado sin añadir datos:</p>
+            <p style={{ margin: '0 0 0.7rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>Select the introduction that preserves every prompt element without adding data:</p>
             <div style={{ display: 'grid', gap: '0.55rem' }}>
               {choice.options.map((option, i) => <button key={option} type="button" onClick={() => setSelected(i)} aria-pressed={selected === i} style={{ textAlign: 'left', padding: '0.8rem 0.9rem', borderRadius: 9, border: `1px solid ${selected === i ? C : 'var(--line-soft)'}`, background: selected === i ? `${C}10` : 'var(--bg)', color: 'var(--ink)', cursor: 'pointer', lineHeight: 1.55 }}>{String.fromCharCode(65 + i)}. {option}</button>)}
             </div>
@@ -303,12 +303,12 @@ export default function Task1IntroductionPracticeEngine() {
         ) : null}
 
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap', marginTop: '1rem' }}>
-          <button type="button" className="btn btn-sm" onClick={checkAnswer} disabled={!canCheck || checked}>{checked ? (isCorrect ? 'Correcto' : 'Revisar explicación') : 'Comprobar respuesta'}</button>
-          {checked && <button type="button" className="btn btn-sm" onClick={next}>{index < currentLevel.items.length - 1 ? 'Siguiente ejercicio →' : level < levels.length - 1 ? 'Desbloquear siguiente nivel →' : 'Repetir motor →'}</button>}
+          <button type="button" className="btn btn-sm" onClick={checkAnswer} disabled={!canCheck || checked}>{checked ? (isCorrect ? 'Correct' : 'Review explanation') : 'Check answer'}</button>
+          {checked && <button type="button" className="btn btn-sm" onClick={next}>{index < currentLevel.items.length - 1 ? 'Next exercise →' : level < levels.length - 1 ? 'Unlock next level →' : 'Repeat engine →'}</button>}
         </div>
         {checked && (
           <div role="status" style={{ marginTop: '0.85rem', padding: '0.85rem 1rem', borderRadius: 10, background: isCorrect ? 'rgba(5,150,105,0.08)' : 'rgba(217,119,6,0.08)', border: `1px solid ${isCorrect ? 'rgba(5,150,105,0.22)' : 'rgba(217,119,6,0.22)'}` }}>
-            <strong style={{ color: isCorrect ? '#059669' : '#b45309' }}>{isCorrect ? 'Bien visto.' : 'Todavía no.'}</strong>
+            <strong style={{ color: isCorrect ? '#059669' : '#b45309' }}>{isCorrect ? 'Good observation.' : 'Not yet.'}</strong>
             <p style={{ margin: '0.3rem 0 0', color: 'var(--ink-2)', lineHeight: 1.6 }}>{isCloze ? cloze!.explanation : choice!.explanation}</p>
           </div>
         )}

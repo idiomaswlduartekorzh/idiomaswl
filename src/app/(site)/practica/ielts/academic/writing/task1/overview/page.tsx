@@ -3,13 +3,13 @@ import { Task1SkillStructuredData } from '../Task1SkillStructuredData'
 import Content from './Content'
 
 export const metadata: Metadata = {
-  title: 'IELTS Writing Task 1 — Overview — El párrafo más importante',
-  description: 'Aprende a escribir el overview del IELTS Writing Task 1. Técnica de 2 oraciones sin números, identificar la tendencia principal. Ejercicios Band 7.',
-  keywords: ['IELTS overview','IELTS task 1 overview','IELTS tendencia principal','IELTS writing band 7'],
+  title: 'IELTS Writing Task 1 Overview: The Most Important Paragraph',
+  description: 'Learn to write an IELTS Writing Task 1 overview with two sentences, no figures and the main trend. Band 7 practice.',
+  keywords: ['IELTS overview', 'IELTS Task 1 overview', 'IELTS main trend', 'IELTS Writing Band 7'],
   openGraph: {
-    title: 'IELTS Task 1: Overview — El párrafo más importante',
-    description: 'Aprende a escribir el overview del IELTS Writing Task 1. Técnica de 2 oraciones sin números, identificar la tendencia principal. Ejercicios Band 7.',
-    type: 'website', locale: 'es_CO',
+    title: 'IELTS Task 1 Overview: The Most Important Paragraph',
+    description: 'Learn to write an IELTS Writing Task 1 overview with two sentences, no figures and the main trend. Band 7 practice.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing/task1/overview' },
 }
