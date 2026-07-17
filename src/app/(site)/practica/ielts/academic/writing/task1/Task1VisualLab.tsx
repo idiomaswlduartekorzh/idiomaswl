@@ -297,6 +297,19 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
   );
 }
 
+export function IELTSMixedVisual({ variant = 0 }: { variant?: number }) {
+  return (
+    <div
+      role="img"
+      aria-label="Mixed IELTS Academic Writing Task 1 visual combining a line graph and a bar chart"
+      style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '0.75rem', alignItems: 'start' }}
+    >
+      <div style={{ minWidth: 0 }}><IELTSLineGraphVisual variant={variant} /></div>
+      <div style={{ minWidth: 0 }}><IELTSBarChartVisual variant={variant} /></div>
+    </div>
+  );
+}
+
 export const TASK1_VISUALS: Record<ChartKind, { label: string; component: (props?: any) => ReactElement }> = {
   line: { label: 'Line graph', component: IELTSLineGraphVisual },
   bar: { label: 'Bar chart', component: IELTSBarChartVisual },
