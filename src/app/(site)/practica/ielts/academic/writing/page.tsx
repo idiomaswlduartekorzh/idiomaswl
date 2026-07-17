@@ -3,13 +3,13 @@ import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/component
 import Content from './Content'
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic Writing — Task 1 y Task 2',
-  description: 'Domina el IELTS Academic Writing: Task 1 (datos visuales) y Task 2 (ensayo argumentativo). Ejercicios progresivos con feedback inmediato. Objetivo Band 7.',
-  keywords: ['IELTS academic writing', 'IELTS writing task 1', 'IELTS writing task 2', 'IELTS writing band 7', 'ejercicios IELTS writing'],
+  title: 'IELTS Academic Writing: Task 1 and Task 2',
+  description: 'Master IELTS Academic Writing: Task 1 visual data and Task 2 argumentative essays with progressive exercises and immediate feedback. Target Band 7.',
+  keywords: ['IELTS Academic Writing', 'IELTS Writing Task 1', 'IELTS Writing Task 2', 'IELTS Writing Band 7', 'IELTS Writing exercises'],
   openGraph: {
     title: 'IELTS Academic Writing',
-    description: 'Practica IELTS Writing Task 1 y Task 2 con ejercicios interactivos.',
-    type: 'website', locale: 'es_CO',
+    description: 'Practise IELTS Writing Task 1 and Task 2 with interactive exercises.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
 }
@@ -18,14 +18,14 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing'
 
 const FAQS = [
   {
-    question: '¿Qué incluye IELTS Academic Writing?',
+    question: 'What does IELTS Academic Writing include?',
     answer:
-      'IELTS Academic Writing incluye Task 1, una respuesta de al menos 150 palabras sobre información visual, y Task 2, un ensayo de al menos 250 palabras.',
+      'IELTS Academic Writing includes Task 1, a response of at least 150 words about visual information, and Task 2, an essay of at least 250 words.',
   },
   {
-    question: '¿Cómo organiza WeLearn la práctica de Writing?',
+    question: 'How does WeLearn organise Writing practice?',
     answer:
-      'WeLearn separa formato oficial y estrategia: primero entiende Task 1 y Task 2, luego practica microhabilidades, bancos de prompts, modelos comentados y revisión con rúbrica.',
+      'WeLearn separates the official format from strategy: first understand Task 1 and Task 2, then practise micro-skills, prompt banks, annotated models and rubric-based review.',
   },
 ]
 
@@ -33,16 +33,16 @@ export default function Page() {
   return (
     <>
       <LearningResourceJsonLd
-        name="IELTS Academic Writing práctica"
+        name="IELTS Academic Writing practice"
         url={URL}
-        description="Hub de práctica para IELTS Academic Writing Task 1 y Task 2 con rutas de rúbrica, ejercicios y respuestas explicadas."
+        description="IELTS Academic Writing Task 1 and Task 2 practice hub with rubric, exercise and explained-answer routes."
         teaches={['IELTS Writing Task 1', 'IELTS Writing Task 2', 'essay writing', 'visual data description']}
         isPartOf={{ name: 'IELTS Academic', url: 'https://www.idiomaswl.com/practica/ielts/academic' }}
       />
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'IELTS Academic', url: 'https://www.idiomaswl.com/practica/ielts/academic' },
           { name: 'Writing', url: URL },

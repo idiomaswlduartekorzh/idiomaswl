@@ -3,13 +3,13 @@ import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/component
 import Content from './Content'
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic — práctica completa de Writing, Reading y más',
-  description: 'Practica el IELTS Academic con ejercicios interactivos de Writing Task 1, Task 2, vocabulario académico y estrategias Band 7+. Gratis en Idiomas WeLearn.',
-  keywords: ['IELTS academic', 'IELTS práctica', 'IELTS writing ejercicios', 'preparación IELTS', 'IELTS band 7'],
+  title: 'IELTS Academic Practice: Writing, Reading and More',
+  description: 'Practise IELTS Academic with interactive Writing Task 1 and Task 2 exercises, academic vocabulary and Band 7+ strategies. Free on Idiomas WeLearn.',
+  keywords: ['IELTS Academic', 'IELTS practice', 'IELTS Writing exercises', 'IELTS preparation', 'IELTS Band 7'],
   openGraph: {
     title: 'IELTS Academic',
-    description: 'Ejercicios interactivos para el IELTS Academic. Writing Task 1, Task 2 y más.',
-    type: 'website', locale: 'es_CO',
+    description: 'Interactive IELTS Academic exercises for Writing Task 1, Task 2 and more.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts/academic' },
 }
@@ -18,14 +18,14 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic'
 
 const FAQS = [
   {
-    question: '¿Qué incluye IELTS Academic?',
+    question: 'What does IELTS Academic include?',
     answer:
-      'IELTS Academic incluye Listening, Reading, Writing y Speaking. En esta ruta organizamos la práctica por habilidad y distinguimos el formato oficial de las estrategias WeLearn.',
+      'IELTS Academic includes Listening, Reading, Writing and Speaking. This route organises practice by skill and distinguishes the official format from WeLearn strategies.',
   },
   {
-    question: '¿Esta página reemplaza los materiales oficiales de IELTS?',
+    question: 'Does this page replace official IELTS materials?',
     answer:
-      'No. Es una guía de práctica original de WeLearn que enlaza las habilidades disponibles y debe usarse junto con las fuentes oficiales del examen.',
+      'No. It is an original WeLearn practice guide that links to available skills and should be used alongside official exam resources.',
   },
 ]
 
@@ -33,16 +33,16 @@ export default function Page() {
   return (
     <>
       <LearningResourceJsonLd
-        name="IELTS Academic práctica"
+        name="IELTS Academic practice"
         url={URL}
-        description="Hub de práctica para IELTS Academic con rutas de Reading y Writing, ejercicios originales y navegación por habilidades."
+        description="IELTS Academic practice hub with Reading and Writing routes, original exercises and skill-based navigation."
         teaches={['IELTS Academic', 'Academic Reading', 'Academic Writing', 'exam practice']}
-        isPartOf={{ name: 'Práctica IELTS', url: 'https://www.idiomaswl.com/practica/ielts' }}
+        isPartOf={{ name: 'IELTS Practice', url: 'https://www.idiomaswl.com/practica/ielts' }}
       />
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'IELTS Academic', url: URL },
         ]}

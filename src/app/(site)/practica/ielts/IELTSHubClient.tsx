@@ -6,16 +6,16 @@ const MODALITIES = [
   {
     id: 'academic',
     name: 'IELTS Academic',
-    desc: 'Ruta disponible para Reading académico, Writing Task 1 con datos visuales y Writing Task 2 argumentativo.',
+    desc: 'Available route for Academic Reading, visual-data Writing Task 1 and argumentative Writing Task 2.',
     href: '/practica/ielts/academic',
-    status: 'Disponible',
+    status: 'Available',
   },
   {
     id: 'general-training',
     name: 'IELTS General Training',
-    desc: 'Nuevo hub para entender diferencias oficiales, Reading funcional y Writing Task 1 carta con práctica inicial explicada.',
+    desc: 'A focused hub for official differences, practical Reading and letter-based Writing Task 1 with explained practice.',
     href: '/practica/ielts/general-training',
-    status: 'Nuevo',
+    status: 'New',
   },
 ];
 
@@ -24,9 +24,9 @@ const SKILLS = [
     id: 'reading',
     emoji: '📖',
     name: 'Reading',
-    eng: 'Comprensión lectora',
-    desc: 'True/False/Not Given · Matching Headings · Multiple Choice. 60 minutos, 40 preguntas, 3 pasajes académicos.',
-    count: '14 tipos · 6 habilidades',
+    eng: 'Reading comprehension',
+    desc: 'True/False/Not Given · Matching Headings · Multiple Choice. 60 minutes, 40 questions and 3 academic passages.',
+    count: '14 question types · 6 skills',
     href: '/practica/ielts/reading',
     available: true,
   },
@@ -34,9 +34,9 @@ const SKILLS = [
     id: 'writing',
     emoji: '✏️',
     name: 'Writing',
-    eng: 'Escritura académica',
-    desc: 'Task 1 (datos visuales) y Task 2 (ensayo argumentativo). 60 min totales. 7 sub-habilidades por task.',
-    count: 'Task 1 · Task 2 · 14+ ejercicios',
+    eng: 'Academic writing',
+    desc: 'Task 1 (visual data) and Task 2 (argumentative essay). 60 minutes in total and 7 sub-skills per task.',
+    count: 'Task 1 · Task 2 · 14+ exercises',
     href: '/practica/ielts/academic/writing',
     available: true,
   },
@@ -44,9 +44,9 @@ const SKILLS = [
     id: 'listening',
     emoji: '🎧',
     name: 'Listening',
-    eng: 'Comprensión auditiva',
-    desc: '4 secciones con hablantes nativos. 30 minutos de audio + 10 minutos para transferir respuestas.',
-    count: 'Próximamente',
+    eng: 'Listening comprehension',
+    desc: 'Four sections with native speakers. 30 minutes of audio plus 10 minutes to transfer answers.',
+    count: 'Coming soon',
     href: '#',
     available: false,
   },
@@ -54,9 +54,9 @@ const SKILLS = [
     id: 'speaking',
     emoji: '🗣️',
     name: 'Speaking',
-    eng: 'Expresión oral',
-    desc: 'Part 1 (preguntas personales), Part 2 (monólogo 2 min con cue card), Part 3 (debate académico).',
-    count: 'Próximamente',
+    eng: 'Speaking production',
+    desc: 'Part 1 (personal questions), Part 2 (a two-minute cue-card talk) and Part 3 (academic discussion).',
+    count: 'Coming soon',
     href: '#',
     available: false,
   },
@@ -76,7 +76,7 @@ export default function IELTSHubClient() {
 
         {/* Breadcrumb */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
+          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Practice</Link>
           <span>/</span>
           <span style={{ color: 'var(--ink)' }}>🇬🇧 IELTS</span>
         </div>
@@ -95,23 +95,23 @@ export default function IELTSHubClient() {
               <span className="ink-line" />IELTS — International English Language Testing System
             </p>
             <h1 style={{ fontSize: '2rem', letterSpacing: 0, margin: 0, fontWeight: 700 }}>
-              Práctica IELTS por modalidad y habilidad
+              IELTS practice by format and skill
             </h1>
           </div>
         </div>
 
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 1.25rem' }}>
-          IELTS tiene rutas Academic y General Training. Reading y Writing ya tienen contenido indexable, práctica original y ejercicios con respuestas explicadas.
+          IELTS has Academic and General Training routes. Reading and Writing include indexable content, original practice and exercises with explained answers.
         </p>
 
         {/* Band scale */}
         <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
           {[
-            ['1–4', 'Básico', '#dc2626'],
-            ['5', 'Modesto', '#f59e0b'],
-            ['6', 'Competente', '#0369a1'],
-            ['7', 'Bueno', '#0f3d8c'],
-            ['8–9', 'Experto', '#059669'],
+            ['1–4', 'Basic', '#dc2626'],
+            ['5', 'Modest', '#f59e0b'],
+            ['6', 'Competent', '#0369a1'],
+            ['7', 'Good', '#0f3d8c'],
+            ['8–9', 'Expert', '#059669'],
           ].map(([band, label, color]) => (
             <span key={band} style={{
               fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20,
@@ -171,7 +171,7 @@ export default function IELTSHubClient() {
                   </div>
                   {!sk.available && (
                     <span style={{ fontSize: '0.58rem', fontWeight: 800, background: 'var(--line-soft)', color: 'var(--muted)', borderRadius: 5, padding: '0.1rem 0.4rem', fontFamily: 'var(--mono)', whiteSpace: 'nowrap' as const }}>
-                      PRÓXIMAMENTE
+                      COMING SOON
                     </span>
                   )}
                 </div>

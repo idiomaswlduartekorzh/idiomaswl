@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Task1SkillStructuredData } from '../Task1SkillStructuredData'
-import Content from './Content'
+import ComparisonsEnglish from './ComparisonsEnglish'
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 1 Comparisons: Charts, Data and Percentages',
@@ -18,11 +18,11 @@ export default function Page() {
   return (
     <>
       <Task1SkillStructuredData
-        name="IELTS Task 1 comparaciones"
+        name="IELTS Task 1 comparisons"
         path="/practica/ielts/academic/writing/task1/comparaciones"
         teaches={['comparisons', 'data selection', 'chart language']}
       />
-      <Content />
+      <ComparisonsEnglish />
     </>
   )
 }

@@ -7,7 +7,7 @@ const SKILLS = [
     id: 'writing',
     label: 'Writing',
     icon: '✏️',
-    desc: 'Task 1 (datos visuales) y Task 2 (ensayo argumentativo). 60 minutos totales.',
+    desc: 'Task 1 (visual data) and Task 2 (argumentative essay). 60 minutes in total.',
     href: '/practica/ielts/academic/writing',
     available: true,
   },
@@ -15,7 +15,7 @@ const SKILLS = [
     id: 'reading',
     label: 'Reading',
     icon: '📖',
-    desc: 'True/False/Not Given · Matching · Multiple Choice. 60 minutos, 40 preguntas.',
+    desc: 'True/False/Not Given · Matching · Multiple Choice. 60 minutes and 40 questions.',
     href: '/practica/ielts/reading',
     available: true,
   },
@@ -23,7 +23,7 @@ const SKILLS = [
     id: 'listening',
     label: 'Listening',
     icon: '🎧',
-    desc: 'Cuatro secciones con hablantes nativos. 30 minutos + 10 para transferir.',
+    desc: 'Four sections with native speakers. 30 minutes plus 10 minutes to transfer answers.',
     href: '#',
     available: false,
   },
@@ -31,7 +31,7 @@ const SKILLS = [
     id: 'speaking',
     label: 'Speaking',
     icon: '🗣️',
-    desc: 'Entrevista cara a cara: Part 1 (introducción), Part 2 (monólogo), Part 3 (debate).',
+    desc: 'Face-to-face interview: Part 1 (introduction), Part 2 (long turn) and Part 3 (discussion).',
     href: '#',
     available: false,
   },
@@ -52,16 +52,16 @@ export default function IELTSAcademicPage() {
             IELTS Academic
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 2rem', lineHeight: 1.6 }}>
-            Modalidad requerida por universidades, programas de posgrado y visas de estudiante en UK, Australia y Canadá.
-            Elige la habilidad que quieres practicar.
+            The format required by universities, postgraduate programmes and student visas in the UK, Australia and Canada.
+            Choose the skill you want to practise.
           </p>
           <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 8, marginBottom: '1.25rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> IELTS Academic evalúa Listening, Reading, Writing y Speaking. En esta zona empezamos por Reading y Writing porque son las rutas con bancos completos, ejercicios y respuestas explicadas.
+              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic assesses Listening, Reading, Writing and Speaking. This section starts with Reading and Writing because these routes have complete banks, exercises and explained answers.
             </p>
             <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> separa el estudio por habilidad: Reading combina tipos oficiales de pregunta con habilidades como skimming y scanning; Writing separa Task 1, Task 2, rúbrica y modelos comentados.
+              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> study is separated by skill: Reading combines official question types with skills such as skimming and scanning; Writing separates Task 1, Task 2, the rubric and annotated models.
             </p>
           </section>
 
@@ -83,7 +83,7 @@ export default function IELTSAcademicPage() {
                     </div>
                     <div className="wl-catalog-card__footer">
                       <span>IELTS Academic</span>
-                      <span className="wl-catalog-card__cta">Practicar →</span>
+                  <span className="wl-catalog-card__cta">Practise →</span>
                     </div>
                   </Link>
                 )
@@ -96,14 +96,14 @@ export default function IELTSAcademicPage() {
                     <div className="wl-catalog-card__body">
                       <div className="wl-catalog-card__top">
                         <span style={{ fontSize: '1.8rem' }}>{sk.icon}</span>
-                        <span className="wl-catalog-card__badge">Próximamente</span>
+                        <span className="wl-catalog-card__badge">Coming soon</span>
                       </div>
                       <h2 className="wl-catalog-card__name">{sk.label}</h2>
                       <p className="wl-catalog-card__tagline">{sk.desc}</p>
                     </div>
                     <div className="wl-catalog-card__footer">
                       <span>IELTS Academic</span>
-                      <span className="wl-catalog-card__cta">Próximamente</span>
+                      <span className="wl-catalog-card__cta">Coming soon</span>
                     </div>
                   </div>
                 )
