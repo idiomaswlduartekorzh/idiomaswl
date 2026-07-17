@@ -4,6 +4,14 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
+import {
+  IELTSBarChartVisual,
+  IELTSLineGraphVisual,
+  IELTSMapDiagramVisual,
+  IELTSPieChartVisual,
+  IELTSProcessDiagramVisual,
+  IELTSTableVisual,
+} from '../Task1VisualLab';
 
 const PROMPT = 'The graph below shows the percentage of households in the UK with access to broadband internet between 2003 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.';
 
@@ -122,6 +130,16 @@ const FULL_TASK_BANK = [
 
 type Phase = 'intro' | 'writing' | 'scoring' | 'done';
 
+function TaskVisual({ type, variant }: { type: string; variant: number }) {
+  if (type === 'bar') return <IELTSBarChartVisual variant={variant} />;
+  if (type === 'pie') return <IELTSPieChartVisual variant={variant} />;
+  if (type === 'table') return <IELTSTableVisual variant={variant} />;
+  if (type === 'process') return <IELTSProcessDiagramVisual variant={variant} />;
+  if (type === 'map') return <IELTSMapDiagramVisual variant={variant} />;
+  if (type === 'mixed') return <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '0.85rem' }}><IELTSLineGraphVisual variant={variant} /><IELTSPieChartVisual variant={variant} /></div>;
+  return <IELTSLineGraphVisual variant={variant} />;
+}
+
 function formatTime(s: number) {
   const m = Math.floor(s / 60);
   const sec = s % 60;
@@ -194,6 +212,16 @@ export default function TareaCompletaPage() {
 
             <Task1ChartTypeGuide />
 
+            <div style={{ padding: '1.1rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)', marginBottom: '1.5rem' }}>
+              <p style={{ margin: '0 0 0.25rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Visual evidence for this task</p>
+              <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.55 }}>
+                Study the visual before writing. Your overview and detail paragraphs must describe the patterns shown here, without inventing causes or unsupported figures.
+              </p>
+              <div style={{ padding: '0.75rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)' }}>
+                <TaskVisual type="line" variant={0} />
+              </div>
+            </div>
+
             <div style={{ marginBottom: '1.5rem' }}>
               <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.08rem' }}>Ensamble tipo Lego: une las subhabilidades</h2>
               <p style={{ margin: '0 0 0.9rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.92rem' }}>
@@ -254,6 +282,9 @@ export default function TareaCompletaPage() {
               <div style={{ padding: '0.9rem 1rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)', marginBottom: '0.75rem' }}>
                 <p style={{ margin: '0 0 0.35rem', color: '#0f3d8c', fontWeight: 800, fontSize: '0.75rem', fontFamily: 'var(--mono)' }}>{bankItem.type.toUpperCase()}</p>
                 <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.65, fontSize: '0.9rem' }}>{bankItem.prompt}</p>
+              </div>
+              <div style={{ padding: '0.75rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)', marginBottom: '0.75rem' }}>
+                <TaskVisual type={bankItem.type} variant={bankIdx} />
               </div>
               <div style={{ padding: '0.85rem 1rem', borderRadius: 8, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.2)' }}>
                 <p style={{ margin: '0 0 0.25rem', color: '#059669', fontWeight: 800, fontSize: '0.75rem', fontFamily: 'var(--mono)' }}>Overview modelo</p>
