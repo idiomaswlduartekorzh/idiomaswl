@@ -1,17 +1,17 @@
 /**
  * Puente de solo lectura hacia los mocks reales de IELTS.
  *
- * Nunca importa un archivo ielts-set-N.ts directamente — pasa siempre por
- * getMock(), el mismo accesor que usa IELTSPracticeClient.tsx. Así el motor
- * de corrección queda anclado a la asignación real del examen y no puede
- * evaluar contra una consigna que el cliente inventó.
+ * Import DINÁMICO del archivo exacto (nunca el getMock() central de
+ * @/data/mocks) — ese índice importa estáticamente los ~40+ mocks de TODOS
+ * los idiomas, y bundlearlo entero en esta API route infló la función a
+ * 1.12GB sin comprimir (límite de Vercel: 250MB), tumbando el deploy. Con
+ * import() dinámico, Next solo empaqueta el set-N que realmente se pide.
  *
  * Alcance actual: IELTS Academic, sets 1-4 (los únicos free:true en
  * EXAMS['ielts']). Ver GOAL: Motor de corrección personalizado por examen.
  */
 
-import { getMock } from '@/data/mocks';
-import type { WriteQuestion } from '@/data/mocks/types';
+import type { MockExam, WriteQuestion } from '@/data/mocks/types';
 
 export interface IeltsWritingAssignment {
   /** Consigna completa tal como la ve el estudiante en el examen real. */
@@ -21,16 +21,22 @@ export interface IeltsWritingAssignment {
   minWords: number;
 }
 
-const FREE_MOCK_IDS = ['set-1', 'set-2', 'set-3', 'set-4'] as const;
+const SET_LOADERS: Record<string, () => Promise<{ default: MockExam }>> = {
+  'set-1': () => import('@/data/mocks/ielts-set-1'),
+  'set-2': () => import('@/data/mocks/ielts-set-2'),
+  'set-3': () => import('@/data/mocks/ielts-set-3'),
+  'set-4': () => import('@/data/mocks/ielts-set-4'),
+};
 
 export function isFreeIeltsMock(mockId: string): boolean {
-  return (FREE_MOCK_IDS as readonly string[]).includes(mockId);
+  return mockId in SET_LOADERS;
 }
 
-function findWriteQuestion(mockId: string, taskNumber: 1 | 2): WriteQuestion | null {
-  const mock = getMock('ielts', mockId);
-  if (!mock) return null;
+async function findWriteQuestion(mockId: string, taskNumber: 1 | 2): Promise<WriteQuestion | null> {
+  const loader = SET_LOADERS[mockId];
+  if (!loader) return null;
 
+  const { default: mock } = await loader();
   for (const section of mock.sections) {
     if (section.skill !== 'writing') continue;
     for (const q of section.questions) {
@@ -45,11 +51,11 @@ function findWriteQuestion(mockId: string, taskNumber: 1 | 2): WriteQuestion | n
  * Devuelve null si el mock/tarea no existe (mockId inválido, o el set no
  * tiene Writing todavía).
  */
-export function getIeltsWritingAssignment(
+export async function getIeltsWritingAssignment(
   mockId: string,
   taskNumber: 1 | 2,
-): IeltsWritingAssignment | null {
-  const q = findWriteQuestion(mockId, taskNumber);
+): Promise<IeltsWritingAssignment | null> {
+  const q = await findWriteQuestion(mockId, taskNumber);
   if (!q) return null;
 
   // Task 1 (gráfico): la consigna vive en stimulusLabel; stimulus queda vacío.

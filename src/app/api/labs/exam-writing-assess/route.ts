@@ -2,9 +2,41 @@ import { NextResponse } from 'next/server';
 import { LABS_ENABLED, LIMITS, WRITING_ENGINE } from '@/lib/labs/config';
 import { checkRateLimit, pruneExpired, WRITING_RULE } from '@/lib/labs/rate-limit';
 import { assessWritingFree } from '@/lib/labs/providers/gemini';
+import type { InlineImage } from '@/lib/labs/providers/gemini';
 import { assessWritingGroq } from '@/lib/labs/providers/groq';
 import { assessWritingOpus } from '@/lib/labs/providers/anthropic';
 import type { FreeAssessment, LabsError, WritingRubric } from '@/lib/labs/types';
+
+const IMAGE_MIME: Record<string, string> = {
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.webp': 'image/webp',
+};
+
+/**
+ * Descarga la imagen vía HTTP (nunca fs.readFileSync con ruta dinámica —
+ * ver el comentario en providers/gemini.ts: eso infló la función a 1.3GB
+ * porque el Node File Trace de Vercel no puede resolver rutas dinámicas y
+ * empaqueta TODO /public por seguridad). req.url da el origin correcto
+ * tanto en local como en producción.
+ */
+async function fetchInlineImage(imageUrl: string, req: Request): Promise<InlineImage | null> {
+  const ext = imageUrl.slice(imageUrl.lastIndexOf('.')).toLowerCase();
+  const mimeType = IMAGE_MIME[ext];
+  if (!mimeType) return null;
+
+  try {
+    const absoluteUrl = new URL(imageUrl, req.url);
+    const res = await fetch(absoluteUrl);
+    if (!res.ok) return null;
+    const buf = Buffer.from(await res.arrayBuffer());
+    return { mimeType, data: buf.toString('base64') };
+  } catch (err) {
+    console.error('[labs/exam-writing-assess] no se pudo descargar la imagen', imageUrl, err);
+    return null;
+  }
+}
 
 import { getIeltsWritingAssignment, isFreeIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { ieltsWritingRubric } from '@/lib/labs/rubrics/ielts-writing';
@@ -32,7 +64,7 @@ type TaskNumber = 1 | 2;
 
 interface ExamAdapter {
   isFreeMock(mockId: string): boolean;
-  getAssignment(mockId: string, taskNumber: TaskNumber): { promptText: string; minWords: number; imageUrl?: string } | null;
+  getAssignment(mockId: string, taskNumber: TaskNumber): Promise<{ promptText: string; minWords: number; imageUrl?: string } | null>;
   rubric: WritingRubric<string>;
   taskIdFor(taskNumber: TaskNumber): string;
 }
@@ -120,7 +152,7 @@ export async function POST(req: Request) {
     );
   }
 
-  const assignment = adapter.getAssignment(mockId, taskNumber as TaskNumber);
+  const assignment = await adapter.getAssignment(mockId, taskNumber as TaskNumber);
   if (!assignment) {
     return NextResponse.json(
       { code: 'invalid_input', message: 'Este simulacro no tiene esa tarea de Writing.' },
@@ -129,20 +161,21 @@ export async function POST(req: Request) {
   }
 
   const task = adapter.taskIdFor(taskNumber as TaskNumber);
+  const image = assignment.imageUrl ? (await fetchInlineImage(assignment.imageUrl, req)) ?? undefined : undefined;
 
   // 'auto' (default en producción): Gemini para tareas con gráfico (visión
   // real), Groq para todo lo que es solo texto (más rápido, no se satura
   // tan fácil). Con LABS_WRITING_ENGINE forzada, ese motor gana siempre —
   // solo para pruebas.
   const engine = WRITING_ENGINE === 'auto'
-    ? (assignment.imageUrl ? 'gemini' : 'groq')
+    ? (image ? 'gemini' : 'groq')
     : WRITING_ENGINE;
 
   const result: FreeAssessment | LabsError = engine === 'anthropic'
     ? await assessWritingOpus(essay, assignment.promptText, task, adapter.rubric)
     : engine === 'groq'
-    ? await assessWritingGroq(essay, assignment.promptText, task, adapter.rubric, assignment.imageUrl)
-    : await assessWritingFree(essay, assignment.promptText, task, adapter.rubric, assignment.imageUrl);
+    ? await assessWritingGroq(essay, assignment.promptText, task, adapter.rubric, image)
+    : await assessWritingFree(essay, assignment.promptText, task, adapter.rubric, image);
 
   if ('code' in result) {
     const status = result.code === 'rate_limited' ? 429

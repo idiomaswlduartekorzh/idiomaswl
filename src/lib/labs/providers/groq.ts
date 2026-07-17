@@ -19,32 +19,16 @@
  * igual filtramos los criterios contra rubric.criteria antes de devolver.
  */
 
-import fs from 'node:fs';
-import path from 'node:path';
 import { providers, isConfigured } from '../config';
 import type { FreeAssessment, LabsError, WritingRubric } from '../types';
+import type { InlineImage } from './gemini';
 
-const IMAGE_MIME: Record<string, string> = {
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg',
-  '.webp': 'image/webp',
-};
-
-function readPublicImageDataUri(publicPath: string): string | null {
-  const ext = path.extname(publicPath).toLowerCase();
-  const mimeType = IMAGE_MIME[ext];
-  if (!mimeType) return null;
-
-  try {
-    const abs = path.join(process.cwd(), 'public', publicPath);
-    const buf = fs.readFileSync(abs);
-    return `data:${mimeType};base64,${buf.toString('base64')}`;
-  } catch (err) {
-    console.error('[labs/groq] no se pudo leer la imagen', publicPath, err);
-    return null;
-  }
-}
+/**
+ * La imagen llega YA descargada (mimeType + base64) desde el caller — nunca
+ * fs.readFileSync(path.join(process.cwd(), 'public', ...)) aquí. Ver el
+ * comentario largo en providers/gemini.ts: esa ruta dinámica hacía que el
+ * Node File Trace de Vercel empaquetara TODO /public (1.3GB) en la función.
+ */
 
 function buildJsonSchema(criterionKeys: string[]) {
   const criterionEnum = { type: 'string', enum: criterionKeys } as const;
@@ -94,7 +78,7 @@ export async function assessWritingGroq<TaskId extends string>(
   prompt: string,
   task: TaskId,
   rubric: WritingRubric<TaskId>,
-  imageUrl?: string,
+  image?: InlineImage,
 ): Promise<FreeAssessment | LabsError> {
   if (!isConfigured('groq')) {
     return { code: 'not_configured', message: 'Falta GROQ_API_KEY' };
@@ -103,7 +87,7 @@ export async function assessWritingGroq<TaskId extends string>(
   const wordCount = essay.trim().split(/\s+/).filter(Boolean).length;
   const { key, model, endpoint } = providers.groq;
 
-  const dataUri = imageUrl ? readPublicImageDataUri(imageUrl) : null;
+  const dataUri = image ? `data:${image.mimeType};base64,${image.data}` : null;
   const promptText = dataUri
     ? `PREGUNTA DEL EXAMEN (el gráfico/tabla referido está en la imagen adjunta — obsérvalo con atención antes de evaluar):\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`
     : `PREGUNTA DEL EXAMEN:\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`;

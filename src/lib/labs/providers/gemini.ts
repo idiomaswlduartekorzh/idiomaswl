@@ -5,36 +5,22 @@
  * Docs de límites: https://ai.google.dev/gemini-api/docs/rate-limits
  */
 
-import fs from 'node:fs';
-import path from 'node:path';
 import { providers, isConfigured } from '../config';
 import type { FreeAssessment, LabsError, WritingRubric } from '../types';
 
-const IMAGE_MIME: Record<string, string> = {
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg',
-  '.webp': 'image/webp',
-};
-
 /**
- * Lee una imagen de /public y la codifica para Gemini. Solo Task 1 Academic
- * la usa (el gráfico) — sin esto el motor califica Task Achievement a ciegas
- * de si el estudiante transcribió bien los datos reales.
+ * OJO: la imagen llega YA descargada (mimeType + base64) desde el caller —
+ * nunca leer con fs.readFileSync(path.join(process.cwd(), 'public', ...))
+ * aquí. Ese patrón con ruta dinámica hace que el Node File Trace de Vercel
+ * no pueda determinar qué archivo se necesita y empaquete TODO /public en la
+ * función (nos pasó: 1.3GB, incluyendo videos de coreano sin relación
+ * alguna, y tumbó el deploy — límite real 250MB). fetch() sobre la URL
+ * pública, resuelta por el caller con el origin del request, evita el
+ * problema por completo.
  */
-function readPublicImage(publicPath: string): { mimeType: string; data: string } | null {
-  const ext = path.extname(publicPath).toLowerCase();
-  const mimeType = IMAGE_MIME[ext];
-  if (!mimeType) return null;
-
-  try {
-    const abs = path.join(process.cwd(), 'public', publicPath);
-    const buf = fs.readFileSync(abs);
-    return { mimeType, data: buf.toString('base64') };
-  } catch (err) {
-    console.error('[labs/gemini] no se pudo leer la imagen', publicPath, err);
-    return null;
-  }
+export interface InlineImage {
+  mimeType: string;
+  data: string;
 }
 
 /**
@@ -87,8 +73,8 @@ export async function assessWritingFree<TaskId extends string>(
   prompt: string,
   task: TaskId,
   rubric: WritingRubric<TaskId>,
-  /** Ruta pública del gráfico (p.ej. '/ielts/images/writing-set1-task1-chester.png'). Solo tareas con gráfico. */
-  imageUrl?: string,
+  /** Ya descargada por el caller (fetch sobre la URL pública). Solo tareas con gráfico. */
+  image?: InlineImage,
 ): Promise<FreeAssessment | LabsError> {
   if (!isConfigured('gemini')) {
     return { code: 'not_configured', message: 'Falta GEMINI_API_KEY' };
@@ -99,7 +85,6 @@ export async function assessWritingFree<TaskId extends string>(
   const { key, model, endpoint } = providers.gemini;
   const url = `${endpoint}/${model}:generateContent?key=${key}`;
 
-  const image = imageUrl ? readPublicImage(imageUrl) : null;
   const promptText = image
     ? `PREGUNTA DEL EXAMEN (el gráfico/tabla referido está en la imagen adjunta — obsérvalo con atención antes de evaluar):\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`
     : `PREGUNTA DEL EXAMEN:\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`;
