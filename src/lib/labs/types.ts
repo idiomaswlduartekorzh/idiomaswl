@@ -40,6 +40,7 @@ export interface TextIssue {
   explanation:string;
   severity:   'critica' | 'moderada' | 'menor';
   criterion:  IeltsCriterion;
+  issueType?: 'vocabulary' | 'grammar' | 'style' | 'unclear';
 }
 
 /** Capa GRATIS: lo que ve cualquiera sin dejar datos. */
@@ -64,6 +65,14 @@ export interface FullAssessment extends FreeAssessment {
   weLearnStep?: string;
 }
 
+/** Reporte unificado de Writing (Task 1 + Task 2). */
+export interface IELTSWritingReport {
+  task1?: FreeAssessment;
+  task2?: FreeAssessment;
+  overallBand?: number;  // promedio de ambas tareas
+  generatedAt: number;   // timestamp
+}
+
 /** Azure Pronunciation Assessment, normalizado. */
 export interface PronunciationResult {
   accuracy:     number;   // 0–100
@@ -79,6 +88,6 @@ export interface PronunciationResult {
 }
 
 export interface LabsError {
-  code:    'not_configured' | 'rate_limited' | 'invalid_input' | 'provider_error';
+  code:    'not_configured' | 'rate_limited' | 'invalid_input' | 'provider_error' | 'text_too_long';
   message: string;
 }

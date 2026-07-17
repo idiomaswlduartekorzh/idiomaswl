@@ -18,6 +18,7 @@ export type ListeningExercise = {
   gist: ListeningQuestion
   details: ListeningQuestion[]
   consolidation: ListeningQuestion
+  audioAvailable?: boolean
 }
 
 const q = (prompt: string, correct: string, wrong: string[], feedback: string): ListeningQuestion => ({

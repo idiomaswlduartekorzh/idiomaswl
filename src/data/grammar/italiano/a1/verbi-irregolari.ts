@@ -1,0 +1,307 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'verbi-irregolari',
+  order: '15',
+  color: '#009246',
+  category: 'Verbos',
+  level: 'A1',
+  title: 'Verbi irregolari en italiano A1 — andare, fare, venire, volere, potere, dovere, sapere',
+  shortTitle: 'Verbos irregulares',
+  metaTitle: 'Verbos irregulares italiano A1 — andare fare venire volere potere dovere sapere',
+  description:
+    'Los 7 verbos irregulares esenciales del italiano A1: andare (vado/vai/va), fare (faccio/fai/fa), venire (vengo/vieni/viene), volere (voglio/vuoi/vuole), potere (posso/puoi/può), dovere (devo/devi/deve), sapere (so/sai/sa). Son irregulares solo en algunas personas.',
+  lead: 'Los irregulares más usados en A1: vado/vai/va (andare), faccio/fai/fa (fare), vengo/vieni/viene (venire), voglio/vuoi/vuole (volere), posso/puoi/può (potere), devo/devi/deve (dovere), so/sai/sa (sapere). Noi/voi son más regulares.',
+  outcomes: [
+    'Conjuga andare, fare y venire en todos los sujetos',
+    'Usa los modales volere, potere y dovere con el infinito para expresar querer/poder/deber',
+    'Distingue sapere (saber) y le aplica su conjugación irregular',
+  ],
+
+  guide: {
+    goal: 'Manejar los 7 verbos irregulares más frecuentes del italiano A1 en presente indicativo.',
+    model: 'Vado a scuola. Faccio i compiti. Vengo da Roma. Voglio studiare. Posso uscire. Devo lavorare.',
+    formula: 'verbo irregular conjugado + [infinito para modales]',
+    decisions: [
+      'ANDARE: vado/vai/va/andiamo/andate/vanno (io/loro son especiales)',
+      'FARE: faccio/fai/fa/facciamo/fate/fanno (io/loro; fac-ciamo)',
+      'VENIRE: vengo/vieni/viene/veniamo/venite/vengono (yo/ellos -eng-)',
+      'VOLERE: voglio/vuoi/vuole/vogliamo/volete/vogliono (io -gli-)',
+      'POTERE: posso/puoi/può/possiamo/potete/possono (io/tu/loro especiales)',
+      'DOVERE: devo/devi/deve/dobbiamo/dovete/devono (noi → dobb-)',
+      'SAPERE: so/sai/sa/sappiamo/sapete/sanno (io/loro muy irregulares)',
+      'Modales + infinito: voglio studiare, posso venire, devo lavorare',
+    ],
+    table: [
+      ['Sujeto', 'andare / fare', 'venire / volere'],
+      ['io', 'vado / faccio', 'vengo / voglio'],
+      ['tu', 'vai / fai', 'vieni / vuoi'],
+      ['lui/lei', 'va / fa', 'viene / vuole'],
+      ['noi', 'andiamo / facciamo', 'veniamo / vogliamo'],
+      ['voi', 'andate / fate', 'venite / volete'],
+      ['loro', 'vanno / fanno', 'vengono / vogliono'],
+    ],
+    mistakes: [
+      '"Io ando" — MAL: andare io es irregular → vado (no ando).',
+      '"Io faccio" — bien, pero "io fo" NO se usa. Y "fare noi → facciamo" (no faiamo).',
+      '"Posso" + infinito: "Posso mangiare" (puedo comer) — el infinito va sin "a" ni "di".',
+    ],
+  },
+  seo: [
+    {
+      heading: 'Por qué aprender estos 7 verbos irregulares primero',
+      paragraphs: [
+        'Andare, fare, venire, volere, potere, dovere y sapere son los verbos irregulares más frecuentes del italiano en conversación cotidiana. Aparecen en prácticamente cada intercambio: "Dove vai?" (¿A dónde vas?), "Cosa fai?" (¿Qué haces?), "Non posso venire" (No puedo venir), "Voglio imparare l\'italiano" (Quiero aprender italiano).',
+        'La buena noticia para el hispanohablante es que las formas de noi y voi son a menudo predecibles: andiamo, andate / facciamo, fate / veniamo, venite. Las irregularidades se concentran sobre todo en io, tu, lui/lei y loro.',
+      ],
+    },
+    {
+      heading: 'Andare, venire y fare: movimiento y acción',
+      paragraphs: [
+        'Andare (ir) tiene las formas más irregulares: vado/vai/va y vanno. El plural noi y voi es regular: andiamo, andate. Venire (venir) tiene el patrón -eng- en io y loro: vengo/vengono. Fare (hacer) en io es faccio y en loro fanno.',
+        'Andare y venire expresan movimiento desde perspectivas opuestas: andare = ir (alejarse del hablante), venire = venir (hacia el hablante). "Vado a scuola" (Voy a la escuela) pero si alguien te llama: "Vengo!" (¡Voy! / ¡Ya voy!).',
+      ],
+    },
+    {
+      heading: 'Los verbos modales: volere, potere y dovere',
+      paragraphs: [
+        'Volere (querer), potere (poder) y dovere (deber/tener que) son verbos modales: van seguidos de infinito sin preposición. "Voglio studiare" (Quiero estudiar), "Puoi aiutarmi?" (¿Puedes ayudarme?), "Devi fare i compiti" (Debes hacer los deberes).',
+        'Sapere (saber) es diferente: saber hacer algo = sapere + infinito: "So suonare la chitarra" (Sé tocar la guitarra). La diferencia entre potere (capacidad física/permiso) y sapere (habilidad aprendida) es importante: "Posso uscire?" (¿Puedo salir? = permiso) vs "Sai cucinare?" (¿Sabes cocinar? = habilidad).',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'verb-conjugation',
+    teacherLens: 'El estudiante memoriza los 7 verbos irregulares priorizando io/tu/lui/loro que son las formas más irregulares.',
+    graphicPrompt: 'Tabla de 7 verbos con formas irregulares resaltadas. Noi/voi en color más claro (más predecibles). Flecha modal + infinitivo.',
+    scene: [
+      ['vado/vai/va/vanno', 'andare — movimiento'],
+      ['faccio/fai/fa/fanno', 'fare — hacer'],
+      ['voglio/vuoi/vuole', 'volere — querer'],
+      ['posso/puoi/può', 'potere — poder'],
+      ['devo/devi/deve', 'dovere — deber'],
+      ['modal + infinito', 'voglio studiare / posso venire'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    practiceVerbs: ['andare', 'fare', 'venire', 'volere', 'potere', 'dovere', 'sapere'],
+    reviewFocus: ['vado no ando', 'faccio no facio', 'modales + infinito sin prep.', 'potere vs sapere'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'Forma correcta del irregular',
+        tag: 'Opción múltiple',
+        intro: 'Elige la forma correcta del verbo irregular.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'Voy a la escuela',
+            lines: [['Carlo', 'Ogni mattina io ___ a scuola a piedi. (andare)']],
+            options: ['vado', 'ando', 'vadi', 'vai'],
+            answer: 'vado',
+            explain: 'Io andare → vado. No "ando" — es la irregularidad clave de andare.',
+          },
+          {
+            scene: 'Qué hace David',
+            lines: [['Sofia', 'Cosa ___ David ogni giorno? (fare)']],
+            options: ['fa', 'fai', 'faccio', 'fanno'],
+            answer: 'fa',
+            explain: 'Lui/lei fa — tercera sg de fare.',
+          },
+          {
+            scene: 'Queremos estudiar',
+            lines: [['Zhanna', 'Noi ___ imparare l\'italiano bene. (volere)']],
+            options: ['vogliamo', 'voglio', 'volete', 'vogliono'],
+            answer: 'vogliamo',
+            explain: 'Noi vogliamo — primera pl de volere.',
+          },
+          {
+            scene: '¿Puedes ayudar?',
+            lines: [['David', 'Tu ___ aiutarmi con questa lezione? (potere)']],
+            options: ['puoi', 'posso', 'può', 'potete'],
+            answer: 'puoi',
+            explain: 'Tu puoi — segunda sg de potere.',
+          },
+          {
+            scene: 'Ellos vienen de Italia',
+            lines: [['Ana', 'I nuovi professori ___ dall\'Italia. (venire)']],
+            options: ['vengono', 'vengo', 'viene', 'veniamo'],
+            answer: 'vengono',
+            explain: 'Loro vengono — tercera pl de venire (-eng- en loro).',
+          },
+          {
+            scene: 'Debes estudiar',
+            lines: [['Marco', 'Carlo, tu ___ studiare di più! (dovere)']],
+            options: ['devi', 'devo', 'deve', 'dobbiamo'],
+            answer: 'devi',
+            explain: 'Tu devi — segunda sg de dovere.',
+          },
+          {
+            scene: 'Sé hablar italiano',
+            lines: [['Lina', 'Io ___ già parlare italiano! (sapere)']],
+            options: ['so', 'sai', 'sa', 'sappiamo'],
+            answer: 'so',
+            explain: 'Io so — primera sg de sapere. Muy irregular: so (no sappo).',
+          },
+          {
+            scene: 'Ellos hacen ejercicio',
+            lines: [['Carlo', 'David e Zhanna ___ sport ogni settimana. (fare)']],
+            options: ['fanno', 'fa', 'facciamo', 'fate'],
+            answer: 'fanno',
+            explain: 'Loro fanno — tercera pl de fare.',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Diálogos con irregolari',
+        tag: '2 espacios',
+        intro: 'Completa los diálogos con los verbos irregulares correctos.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Planes del fin de semana',
+            lines: [
+              ['David', 'Dove [[0]] questo weekend, Carlo? (andare)'],
+              ['Carlo', 'Non lo so. Forse [[1]] al mare. (andare)'],
+            ],
+            blanks: [
+              { options: ['vai', 'vado', 'va'], answer: 'vai', explain: 'Tu vai — segunda sg de andare.' },
+              { options: ['vado', 'vai', 'va'], answer: 'vado', explain: 'Io vado — primera sg de andare.' },
+            ],
+          },
+          {
+            scene: 'Querer y poder',
+            lines: [['Sofia', 'Io [[0]] venire alla festa ma non [[1]]. (volere / potere)']],
+            blanks: [
+              { options: ['voglio', 'vuoi', 'vuole'], answer: 'voglio', explain: 'Io voglio — primera sg de volere.' },
+              { options: ['posso', 'puoi', 'può'], answer: 'posso', explain: 'Io posso — primera sg de potere.' },
+            ],
+          },
+          {
+            scene: 'Qué saben hacer',
+            lines: [['Zhanna', '[[0]] cucinare bene, Carlo? E cosa [[1]] fare David? (sapere / sapere)']],
+            blanks: [
+              { options: ['Sai', 'So', 'Sa'], answer: 'Sai', explain: 'Tu sai — segunda sg de sapere.' },
+              { options: ['sa', 'so', 'sai'], answer: 'sa', explain: 'David (lui) sa — tercera sg de sapere.' },
+            ],
+          },
+          {
+            scene: 'Obligaciones',
+            lines: [['Ana', 'Noi [[0]] studiare molto e voi [[1]] fare i compiti. (dovere / dovere)']],
+            blanks: [
+              { options: ['dobbiamo', 'dovete', 'devono'], answer: 'dobbiamo', explain: 'Noi dobbiamo — primera pl de dovere.' },
+              { options: ['dovete', 'dobbiamo', 'devono'], answer: 'dovete', explain: 'Voi dovete — segunda pl de dovere.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'Una settimana intensa',
+        tag: 'Opciones',
+        intro: 'Completa el texto con los verbos irregulares en la forma correcta.',
+        type: 'guidedText',
+        scene: 'Carlo describe su semana de estudios intensivos en WeLearn',
+        text: 'Questa settimana [[0]] (andare) a scuola ogni giorno. [[1]] (dovere) preparare un esame. David [[2]] (fare) lezioni speciali per me. Zhanna mi [[3]] (dire) che [[4]] (potere) farcela. Io [[5]] (volere) imparare bene e [[6]] (sapere) che con impegno ce la [[7]] (fare).',
+        blanks: [
+          { options: ['vado', 'vai', 'va'], answer: 'vado', explain: 'Io vado — primera sg de andare.' },
+          { options: ['Devo', 'Devi', 'Deve'], answer: 'Devo', explain: 'Io devo — primera sg de dovere.' },
+          { options: ['fa', 'faccio', 'fanno'], answer: 'fa', explain: 'David (lui) fa — terza sg di fare.' },
+          { options: ['dice', 'dico', 'diciamo'], answer: 'dice', explain: 'Zhanna (lei) dice — dire terza sg.' },
+          { options: ['posso', 'puoi', 'può'], answer: 'posso', explain: 'Io posso — primera sg de potere.' },
+          { options: ['voglio', 'vuoi', 'vuole'], answer: 'voglio', explain: 'Io voglio — primera sg de volere.' },
+          { options: ['so', 'sai', 'sa'], answer: 'so', explain: 'Io so — prima sg di sapere.' },
+          { options: ['faccio', 'fa', 'fanno'], answer: 'faccio', explain: 'Io faccio — prima sg di fare.' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Sin opciones',
+        tag: 'Sin opciones',
+        intro: 'Escribe la forma correcta del verbo irregular.',
+        type: 'freeText',
+        scene: 'Zhanna habla de los planes y capacidades de los estudiantes de WeLearn',
+        text: 'I miei studenti [[0]] (volere) imparare l\'italiano velocemente. Loro [[1]] (potere) studiare ogni giorno. Marco non [[2]] (sapere) ancora pronunciare bene, ma ci prova. David [[3]] (andare) spesso in Italia per aggiornarsi. Noi [[4]] (fare) del nostro meglio. Voi [[5]] (dovere) praticare ogni giorno!',
+        blanks: [
+          { answer: 'vogliono', explain: 'Loro vogliono — terza pl de volere.' },
+          { answer: 'possono', explain: 'Loro possono — terza pl de potere.' },
+          { answer: 'sa', explain: 'Marco (lui) sa — terza sg de sapere.' },
+          { answer: 'va', explain: 'David (lui) va — terza sg de andare.' },
+          { answer: 'facciamo', explain: 'Noi facciamo — prima pl de fare.' },
+          { answer: 'dovete', explain: 'Voi dovete — seconda pl de dovere.' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Producción',
+        tag: 'Producción',
+        intro: 'Escribe la oración completa con el verbo irregular conjugado.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Quiero aprender italiano',
+            prompt: 'Escribe: Yo quiero aprender italiano este año. → Io ___ imparare l\'italiano quest\'anno. (volere)',
+            answer: 'Io voglio imparare l\'italiano quest\'anno.',
+            accepted: ['io voglio imparare l\'italiano quest\'anno', 'voglio imparare l\'italiano'],
+            explain: 'Io voglio + infinito: voglio imparare. Modal + infinito sin preposición.',
+          },
+          {
+            scene: 'Ellos no pueden venir',
+            prompt: 'Escribe: Ellos no pueden venir a clase hoy. → Loro non ___ venire in classe oggi. (potere)',
+            answer: 'Loro non possono venire in classe oggi.',
+            accepted: ['loro non possono venire in classe oggi', 'non possono venire'],
+            explain: 'Loro possono — terza pl de potere. Non possono venire.',
+          },
+          {
+            scene: 'David va a Italia',
+            prompt: 'Escribe: David va a Italia cada verano. → David ___ in Italia ogni estate. (andare)',
+            answer: 'David va in Italia ogni estate.',
+            accepted: ['david va in italia ogni estate', 'david va in italia ogni estate.'],
+            explain: 'Lui va — terza sg de andare. Va in Italia (in + país).',
+          },
+          {
+            scene: '¿Sabes cocinar?',
+            prompt: 'Pregunta a Carlo: ¿Sabes cocinar la pasta? → Tu ___ cucinare la pasta? (sapere)',
+            answer: 'Tu sai cucinare la pasta?',
+            accepted: ['tu sai cucinare la pasta', 'sai cucinare la pasta'],
+            explain: 'Tu sai — seconda sg de sapere. Sapere + infinito = saber hacer algo.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Misión final',
+        tag: 'Reto final',
+        intro: 'Usa los verbos irregulares para hablar de ti y de tus compañeros.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Tus planes y deseos',
+            prompt: 'Scrivi cosa vuoi e puoi fare: Voglio ___. Posso ___. Devo ___.',
+            answer: 'Voglio imparare l\'italiano bene. Posso studiare ogni giorno. Devo fare i compiti.',
+            accepted: ['voglio imparare', 'posso studiare', 'devo fare'],
+            explain: 'Voglio/posso/devo + infinito. Verbos modales A1 esenciales.',
+          },
+          {
+            scene: 'Tu compañero/a',
+            prompt: 'Descrivi il tuo amico: Va ___, fa ___, vuole ___, sa ___.',
+            answer: 'Il mio amico va a scuola ogni giorno. Fa sport e vuole imparare le lingue. Sa già parlare italiano.',
+            accepted: ['va a scuola', 'fa sport', 'vuole imparare', 'sa parlare'],
+            explain: 'Terza sg: va, fa, vuole, sa. Irregolari di andare, fare, volere, sapere.',
+          },
+          {
+            scene: 'Sobre WeLearn',
+            prompt: 'Cosa fanno a WeLearn? I professori fanno ___, gli studenti vengono ___, tutti vogliono ___.',
+            answer: 'I professori fanno lezioni fantastiche. Gli studenti vengono da tutta Colombia. Tutti vogliono imparare l\'italiano.',
+            accepted: ['fanno lezioni', 'vengono da', 'vogliono imparare'],
+            explain: 'Loro: fanno, vengono, vogliono. Terza pl de fare, venire, volere.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "npm run check:practica-catalog",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -10,11 +11,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "check:exam-practice-content": "node scripts/check-exam-practice-content.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",
     "clean": "rm -rf .next .turbo node_modules/.cache && echo '✓ Cache limpiado'"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.112.1",
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.105.4",
     "@wavesurfer/react": "^1.0.12",

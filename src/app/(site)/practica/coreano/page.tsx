@@ -5,7 +5,7 @@ import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
   title: 'Práctica de Coreano — Elige tu nivel TOPIK | Idiomas WeLearn',
-  description: 'Ejercicios interactivos de coreano por nivel. A1 disponible: Hangul, partículas, verbos básicos y vocabulario esencial.',
+  description: 'Ejercicios interactivos de coreano por nivel. Gramática A1, A2 y B1: Hangul, partículas, verbos y conectores TOPIK.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano' },
 };
 
@@ -18,8 +18,8 @@ const NIVELES = [
     href: '/practica/coreano/a1', available: true,
     count: '6 habilidades · 40+ ejercicios',
   },
-  { nivel: 'A2', name: '초급+', desc: '과거형 (-았/었어요), verbos irregulares, expresiones de tiempo.', available: false },
-  { nivel: 'B1', name: '중급', desc: 'Conectores (-고, -지만, -아서), honoríficos y vocabulario TOPIK II.', href: '/practica/coreano/b1', available: true, count: '5 temas · 50+ ejercicios' },
+  { nivel: 'A2', name: '초급+', desc: '과거형 (-았/었어요), verbos irregulares, expresiones de tiempo.', href: '/practica/coreano/a2', available: true, count: '20 temas de gramática' },
+  { nivel: 'B1', name: '중급', desc: 'Conectores (-고, -지만, -아서), honoríficos y vocabulario TOPIK II.', href: '/practica/coreano/b1', available: true, count: '20 temas de gramática' },
   { nivel: 'B2', name: '중급+', desc: 'Patrones causales y condicionales, registro formal/informal.', available: false },
   { nivel: 'C1', name: '고급', desc: 'Gramática avanzada, vocabulario académico y nivel TOPIK II 5–6.', available: false },
 ];

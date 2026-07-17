@@ -22,6 +22,9 @@
 
 # misc
 .DS_Store
+tmp/
+__pycache__/
+*.bak
 *.pem
 
 # debug

@@ -1,10 +1,17 @@
 import { NextResponse } from 'next/server';
-import { LABS_ENABLED, LIMITS } from '@/lib/labs/config';
+import { LABS_ENABLED, LIMITS, WRITING_ENGINE } from '@/lib/labs/config';
 import { checkRateLimit, pruneExpired, WRITING_RULE } from '@/lib/labs/rate-limit';
 import { assessWritingFree } from '@/lib/labs/providers/gemini';
+import { assessWritingOpus } from '@/lib/labs/providers/anthropic';
 import type { IeltsTask } from '@/lib/labs/types';
 
 const VALID_TASKS: IeltsTask[] = ['task1-academic', 'task1-general', 'task2'];
+
+/**
+ * Evaluar un ensayo tarda 40–60s. Sin esto, Vercel corta la función a los 10s
+ * (hobby) o 15s (pro) y el estudiante ve "el evaluador no respondió".
+ */
+export const maxDuration = 120;
 
 export async function POST(req: Request) {
   // Interruptor maestro: sin LABS_ENABLED, esta ruta no existe.
@@ -57,7 +64,8 @@ export async function POST(req: Request) {
     return NextResponse.json({ code: 'invalid_input', message: 'Task inválido.' }, { status: 400 });
   }
 
-  const result = await assessWritingFree(essay, prompt, task);
+  const assess = WRITING_ENGINE === 'anthropic' ? assessWritingOpus : assessWritingFree;
+  const result = await assess(essay, prompt, task);
 
   if ('code' in result) {
     const status = result.code === 'rate_limited' ? 429

@@ -11,6 +11,14 @@ const tools = [
     envVar:'GEMINI_API_KEY',
   },
   {
+    href:  '/labs/ielts-prototype',
+    name:  'Prototipo: IELTS Writing (Task 1 + Task 2)',
+    desc:  'Vista completa con reportes visuales por tarea. Dos evaluaciones separadas.',
+    cost:  '$0 — Gemini Flash',
+    ready: isConfigured('gemini'),
+    envVar:'GEMINI_API_KEY',
+  },
+  {
     href:  '/labs/speaking',
     name:  'Evaluador de pronunciación',
     desc:  'Audio → precisión por fonema. Azure Pronunciation Assessment.',

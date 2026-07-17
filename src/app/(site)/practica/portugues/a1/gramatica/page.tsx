@@ -1,77 +1,163 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import { CourseSchema } from '@/components/practica/EducationSchema'
-import { TOPICS, GRAMMAR_COLOR } from '@/data/practica/portugues-a1-gramatica'
-import XPStreak from '@/components/practica/XPStreak'
+import { generateGrammarIndexMetadata } from '@/lib/grammar-metadata'
+import { getTopicsByLevel } from '@/data/grammar/registry'
 
-export const metadata: Metadata = practicaMetadata('portugues', 'a1', 'gramatica')
+export const metadata: Metadata = generateGrammarIndexMetadata('portugues', 'a1')
 
-const COLOR = GRAMMAR_COLOR
+const IDIOMA = 'portugues'
+const NIVEL = 'a1'
 
-export default function Page() {
-  const totalQuestions = TOPICS.reduce((n, t) => n + t.questions.length, 0)
+export default function GrammarIndexPage() {
+  const topics = getTopicsByLevel(IDIOMA, NIVEL)
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },
+      { '@type': 'ListItem', position: 2, name: 'Portugués', item: 'https://www.idiomaswl.com/practica/portugues' },
+      { '@type': 'ListItem', position: 3, name: 'A1', item: 'https://www.idiomaswl.com/practica/portugues/a1' },
+      { '@type': 'ListItem', position: 4, name: 'Gramática A1', item: 'https://www.idiomaswl.com/practica/portugues/a1/gramatica' },
+    ],
+  }
+
   return (
     <>
-      <CourseSchema
-        name="Gramática de Portugués A1 — 15 temas con explicación y ejercicios"
-        description="Curso de gramática de portugués (brasileño) nivel A1: artículos, ser, estar, ter, verbos -ar/-er/-ir, contracciones (do/no/ao), posesivos, há/tem y más. Explicación, tablas, ejemplos y ejercicios."
-        url="https://www.idiomaswl.com/practica/portugues/a1/gramatica"
-        educationalLevel="A1"
-        teaches="Gramática del portugués, nivel A1 (MCER)"
-        inLanguage="pt"
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <section className="wl-section">
-        <div className="wrap" style={{ maxWidth: 820 }}>
-          {/* Breadcrumb */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
+      <div className="gram-page" style={{ '--topic-color': '#166534' } as React.CSSProperties}>
+        <div className="wrap">
+          <nav
+            aria-label="breadcrumb"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '1.5rem 0 0',
+              fontSize: '0.82rem',
+              fontFamily: 'var(--mono)',
+              color: 'var(--muted)',
+              flexWrap: 'wrap',
+            }}
+          >
             <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
             <span>/</span>
-            <Link href="/practica/portugues/a1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇧🇷 Português A1</Link>
+            <Link href="/practica/portugues" style={{ color: 'var(--muted)', textDecoration: 'none' }}>🇧🇷 Portugués</Link>
             <span>/</span>
-            <span style={{ color: COLOR, fontWeight: 800 }}>📐 Gramática</span>
-          </div>
+            <Link href="/practica/portugues/a1" style={{ color: 'var(--muted)', textDecoration: 'none' }}>A1</Link>
+            <span>/</span>
+            <span style={{ color: '#166534', fontWeight: 800 }}>Gramática</span>
+          </nav>
 
-          {/* Header */}
-          <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.25rem' }}>
-            <p className="eyebrow" style={{ margin: 0 }}><span className="ink-line" />Gramática · Portugués A1</p>
-            <XPStreak showMotivation />
-          </div>
-          <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>Gramática de Portugués A1</h1>
-          <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 560, margin: '0 0 2rem' }}>
-            {TOPICS.length} temas esenciales del nivel A1 (portugués brasileño). Cada tema tiene explicación clara, tablas, ejemplos
-            traducidos, errores comunes de hispanohablantes (contraste español→portugués) y {totalQuestions}+ ejercicios con feedback inmediato.
-          </p>
+          <section className="topic-hero" style={{ paddingBottom: '1.5rem' }}>
+            <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>
+              <span className="ink-line" />Gramática · Portugués A1
+            </p>
+            <h1 className="gram-h1" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>
+              Temas de gramática A1
+            </h1>
+            <p className="gram-lead">
+              Cada tema incluye explicación de especialista orientada al hispanohablante, laboratorio visual y práctica progresiva de 6 niveles. Supera el 65 % en cada nivel para desbloquear el siguiente.
+            </p>
+          </section>
 
-          {/* Lista de temas */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(330px, 1fr))', gap: '0.85rem' }}>
-            {TOPICS.map(t => (
-              <Link key={t.slug} href={`/practica/portugues/a1/gramatica/${t.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-                <div style={{
-                  display: 'flex', alignItems: 'center', gap: '1rem', height: '100%',
-                  padding: '1rem 1.2rem', borderRadius: 14, boxSizing: 'border-box',
-                  border: `1.5px solid ${COLOR}22`, background: `${COLOR}05`,
-                }}>
-                  <div style={{ width: 40, height: 40, borderRadius: 10, background: COLOR, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.1rem', flexShrink: 0 }}>
-                    {t.icon}
+          <div style={{ display: 'grid', gap: '0.9rem', paddingBottom: '3rem' }}>
+            {topics.map((topic) => (
+              <Link
+                key={topic.slug}
+                href={`/practica/${IDIOMA}/${NIVEL}/gramatica/${topic.slug}`}
+                style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+              >
+                <div
+                  style={{
+                    padding: '1.2rem 1.4rem',
+                    border: `1.5px solid ${topic.color}33`,
+                    borderRadius: 16,
+                    borderLeft: `5px solid ${topic.color}`,
+                    background: `linear-gradient(135deg, ${topic.color}08 0%, transparent 100%)`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '1.2rem',
+                    transition: 'box-shadow 0.18s',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: 46,
+                      height: 46,
+                      borderRadius: 12,
+                      background: topic.color,
+                      color: '#fff',
+                      display: 'grid',
+                      placeItems: 'center',
+                      fontFamily: 'var(--mono)',
+                      fontWeight: 950,
+                      fontSize: '0.86rem',
+                      flexShrink: 0,
+                    }}
+                  >
+                    {topic.order}
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontSize: '0.66rem', color: COLOR, fontFamily: 'var(--mono)', fontWeight: 700 }}>Tema {t.order}</div>
-                    <div style={{ fontWeight: 800, color: 'var(--ink)', fontSize: '0.95rem', lineHeight: 1.3 }}>{t.shortTitle}</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.2rem' }}>
+                      <span style={{ fontSize: '0.98rem', fontWeight: 900, color: 'var(--ink)' }}>
+                        {topic.shortTitle}
+                      </span>
+                      <span
+                        style={{
+                          fontSize: '0.67rem',
+                          fontFamily: 'var(--mono)',
+                          fontWeight: 800,
+                          color: topic.color,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.04em',
+                          borderRadius: 999,
+                          border: `1px solid ${topic.color}44`,
+                          padding: '0.12rem 0.38rem',
+                          background: `${topic.color}10`,
+                        }}
+                      >
+                        {topic.category}
+                      </span>
+                    </div>
+                    <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.86rem', lineHeight: 1.5 }}>
+                      {topic.lead}
+                    </p>
                   </div>
-                  <span style={{ color: COLOR, fontSize: '1.1rem', fontWeight: 700 }}>→</span>
+                  <span style={{ flexShrink: 0, color: topic.color, fontSize: '1.2rem', fontWeight: 700 }}>→</span>
                 </div>
               </Link>
             ))}
+
+            {topics.length === 0 && (
+              <div
+                style={{
+                  padding: '3rem',
+                  textAlign: 'center',
+                  color: 'var(--muted)',
+                  fontSize: '0.95rem',
+                  border: '1.5px solid var(--line-soft)',
+                  borderRadius: 16,
+                }}
+              >
+                Próximamente: temas de gramática A1.
+              </div>
+            )}
           </div>
 
-          {/* Tip */}
-          <div style={{ marginTop: '2rem', padding: '0.9rem 1.2rem', borderRadius: 12, background: `${COLOR}0a`, border: `1px solid ${COLOR}22`, fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.6 }}>
-            💡 <strong style={{ color: 'var(--ink)' }}>Consejo:</strong> sigue los temas en orden — están ordenados de lo más básico
-            (artículos, ser, estar) a lo más completo (contracciones, há/tem, presente continuo). Cada uno te toma 5–10 minutos.
+          <div style={{ paddingBottom: '2rem' }}>
+            <Link
+              href="/practica/portugues/a1"
+              style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.82rem', textDecoration: 'none' }}
+            >
+              ← Volver a Portugués A1
+            </Link>
           </div>
         </div>
-      </section>
+      </div>
     </>
   )
 }

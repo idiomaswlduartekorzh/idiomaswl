@@ -25,7 +25,8 @@ const NIVELES = [
   {
     nivel: 'B1', key: 'b1', name: 'Intermedio',
     desc: 'Present perfect, primer condicional, ensayos de opinión, listening.',
-    available: false,
+    href: '/practica/ingles/b1', available: true,
+    count: '20 temas de gramática',
   },
   {
     nivel: 'B2', key: 'b2', name: 'Intermedio alto',

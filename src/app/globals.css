@@ -3887,7 +3887,7 @@ button {
 .listen-catalog__head { display:flex; justify-content:space-between; padding:.25rem .35rem .75rem; color:#0369a1; font:700 .72rem var(--mono); text-transform:uppercase; }
 .listen-block { margin:.75rem 0; }.listen-block h2 { margin:.4rem .35rem; font:700 .7rem var(--mono); color:var(--muted); text-transform:uppercase; }
 .listen-card { width:100%; display:flex; gap:.55rem; text-align:left; padding:.6rem; border:0; border-radius:10px; background:transparent; cursor:pointer; color:var(--ink); }.listen-card:hover,.listen-card.is-active { background:rgba(3,105,161,.1); }.listen-card>span { width:1.45rem; height:1.45rem; border-radius:50%; display:grid; place-items:center; flex:none; background:#dbeafe; color:#0369a1; font-size:.72rem; font-weight:800; }.listen-card b,.listen-card small { display:block; }.listen-card b { font-size:.8rem; }.listen-card small { margin-top:.12rem; color:var(--muted); font-size:.66rem; }
-.listen-work { min-width:0; }.listen-back { color:var(--muted); text-decoration:none; font-size:.82rem; }.listen-work h1 { margin:.45rem 0; font-size:2rem; letter-spacing:-.035em; }.listen-objective { max-width:660px; color:var(--muted); margin:.2rem 0 .8rem; }.listen-tags { display:flex; gap:.4rem; flex-wrap:wrap; }.listen-tags span { padding:.22rem .5rem; border-radius:99px; background:#e0f2fe; color:#075985; font:700 .68rem var(--mono); }
+.listen-work { min-width:0; }.listen-back { color:var(--muted); text-decoration:none; font-size:.82rem; }.listen-work h1 { margin:.45rem 0; font-size:2rem; letter-spacing:-.035em; }.listen-series { margin:.15rem 0 .35rem; color:#0f766e; font:700 .82rem/1.45 var(--sans); }.listen-objective { max-width:660px; color:var(--muted); margin:.2rem 0 .8rem; }.listen-tags { display:flex; gap:.4rem; flex-wrap:wrap; }.listen-tags span { padding:.22rem .5rem; border-radius:99px; background:#e0f2fe; color:#075985; font:700 .68rem var(--mono); }
 .listen-steps { display:grid; grid-template-columns:repeat(7,1fr); gap:.25rem; list-style:none; margin:1.6rem 0; padding:0; }.listen-steps li { min-width:0; text-align:center; color:var(--muted); font-size:.63rem; }.listen-steps span { margin:auto auto .25rem; width:1.55rem; height:1.55rem; display:grid; place-items:center; border-radius:50%; background:var(--line-soft); font-weight:800; }.listen-steps em { display:block; font-style:normal; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }.listen-steps .is-current,.listen-steps .is-done { color:#0369a1; }.listen-steps .is-current span,.listen-steps .is-done span { background:#0369a1; color:#fff; }
 .listen-panel { margin-top:1rem; padding:1.35rem; border:1px solid #bae6fd; border-radius:16px; background:linear-gradient(135deg,#f0f9ff,transparent); }.listen-panel h2 { margin:.25rem 0 .5rem; font-size:1.2rem; }.listen-panel>p { color:var(--muted); line-height:1.6; }.listen-kicker { margin:0; color:#0369a1 !important; font:800 .7rem var(--mono); text-transform:uppercase; letter-spacing:.05em; }.listen-keywords { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.65rem; margin:1rem 0; }.listen-keywords button { padding:.75rem; text-align:left; border:1px solid #bae6fd; border-radius:10px; background:#fff; cursor:pointer; }.listen-keywords b,.listen-keywords span { display:block; }.listen-keywords span { margin-top:.28rem; color:var(--muted); font-size:.82rem; }
 .listen-primary,.listen-secondary { margin-top:1rem; padding:.68rem 1rem; border-radius:9px; border:0; cursor:pointer; font-weight:800; }.listen-primary { background:#0369a1; color:#fff; }.listen-primary:disabled { opacity:.45; cursor:not-allowed; }.listen-secondary { margin-left:.5rem; background:#e0f2fe; color:#075985; }
@@ -7359,3 +7359,353 @@ body {
 .wt1-tips-list { margin: 0; padding: 0 1rem 1rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
 .wt1-tips-list li { display: flex; gap: 8px; font-size: 13px; color: var(--ink); line-height: 1.5; border-left: 2px solid #0f3d8c; padding-left: 0.6rem; }
 .wt1-tips-list li span { flex-shrink: 0; }
+
+/* ==========================================================================
+   HOME · Sección "App vs WeLearn" (empatía / PAS) — Fase A
+   ========================================================================== */
+.wlh-appvs {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+  align-items: stretch;
+}
+.wlh-appvs__head {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+}
+.wlh-appvs__head--app {
+  color: var(--muted);
+  background: var(--bg-2);
+  border: 1px dashed var(--line-soft);
+}
+.wlh-appvs__head--wl {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+.wlh-appvs__row-group {
+  display: contents;
+}
+.wlh-appvs__cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  border: 1px solid var(--line-soft);
+}
+.wlh-appvs__mark { flex-shrink: 0; display: inline-flex; margin-top: 0.05rem; }
+.wlh-appvs__mark--app { color: var(--muted); }
+.wlh-appvs__mark--wl { color: var(--accent); }
+.wlh-appvs__mark-svg { display: block; }
+.wlh-appvs__cell--app {
+  color: var(--muted);
+  background: var(--bg-2);
+  text-decoration: line-through;
+  text-decoration-color: rgba(200, 32, 46, 0.35);
+  text-decoration-thickness: 1px;
+}
+.wlh-appvs__cell--wl {
+  color: var(--ink);
+  background: var(--bg);
+  font-weight: 600;
+  border-color: rgba(200, 32, 46, 0.28);
+  box-shadow: 0 1px 0 rgba(20, 33, 92, 0.04);
+}
+@media (max-width: 640px) {
+  .wlh-appvs { grid-template-columns: 1fr; gap: 0.4rem; }
+  .wlh-appvs__head { margin-top: 0.75rem; }
+  .wlh-appvs__head:first-child { margin-top: 0; }
+  .wlh-appvs__cell--app { text-decoration: none; opacity: 0.85; }
+}
+
+/* ==========================================================================
+   HOME · Sección "Modalidad" (presencial Bucaramanga + online) — Fase A
+   ========================================================================== */
+.wlh-modalidad-grid {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.wlh-modalidad-card {
+  padding: 1.6rem 1.6rem 1.7rem;
+  border-radius: 16px;
+  border: 1px solid var(--line-soft);
+  background: var(--bg);
+  height: 100%;
+}
+.wlh-modalidad-card__title {
+  margin: 0.9rem 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.wlh-modalidad-card__desc {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+@media (max-width: 640px) {
+  .wlh-modalidad-grid { grid-template-columns: 1fr; gap: 0.9rem; }
+}
+
+/* ==========================================================================
+   HOME · Método — 4 fases (íconos SVG in-house) + subtítulo — Fase B
+   ========================================================================== */
+.wlh-fases-grid {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.wlh-fase-card {
+  height: 100%;
+  padding: 1.4rem 1.3rem 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--line-soft);
+  background: var(--bg);
+}
+.wlh-fase-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  color: var(--accent);
+  background: rgba(200, 32, 46, 0.08);
+  margin-bottom: 0.9rem;
+}
+.wlh-fase-card__name {
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.wlh-fase-card__steps {
+  display: block;
+  font-family: var(--mono, monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+.wlh-fase-card__desc {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.wlh-metodo-subtitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+}
+@media (max-width: 900px) { .wlh-fases-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .wlh-fases-grid { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   HOME · Equipo — foto real en el avatar (fallback a iniciales) — Fase B
+   ========================================================================== */
+.wlh-team-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+.wlh-team-card__avatar { overflow: hidden; }
+
+/* ==========================================================================
+   HOME · "La plataforma" — 6 pilares del producto (íconos SVG in-house) — Fase B
+   ========================================================================== */
+.wlh-pilares-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+}
+.wlh-pilar-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.6rem 1.5rem 1.7rem;
+  border-radius: 16px;
+  border: 1px solid var(--line-soft);
+  background: var(--bg);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.wlh-pilar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(20, 33, 92, 0.08);
+  border-color: rgba(200, 32, 46, 0.25);
+}
+.wlh-pilar-card__cta {
+  margin-top: auto;
+  padding-top: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.wlh-pilar-card__cta span { transition: transform 0.2s ease; }
+.wlh-pilar-card:hover .wlh-pilar-card__cta { opacity: 1; transform: translateY(0); }
+.wlh-pilar-card:hover .wlh-pilar-card__cta span { transform: translateX(3px); }
+@media (hover: none) { .wlh-pilar-card__cta { opacity: 1; transform: none; } }
+.wlh-pilar-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 13px;
+  color: var(--accent);
+  background: rgba(200, 32, 46, 0.08);
+  margin-bottom: 1rem;
+}
+.wlh-pilar-card__name {
+  margin: 0 0 0.45rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.wlh-pilar-card__desc {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+@media (max-width: 860px) { .wlh-pilares-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .wlh-pilares-grid { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   HOME v2 · Hero premium (aurora + palabra que cicla + panel de prueba)
+   ========================================================================== */
+.wlh-hero--v2 { position: relative; overflow: hidden; }
+.wlh-hero__aurora {
+  position: absolute; inset: -25% -10% auto -10%; height: 150%;
+  background:
+    radial-gradient(40% 50% at 18% 22%, rgba(200,32,46,0.20), transparent 70%),
+    radial-gradient(45% 55% at 84% 14%, rgba(26,46,204,0.18), transparent 70%),
+    radial-gradient(55% 60% at 62% 92%, rgba(200,32,46,0.10), transparent 70%);
+  filter: blur(34px);
+  animation: wlhAurora 16s ease-in-out infinite alternate;
+  z-index: 0; pointer-events: none;
+}
+@keyframes wlhAurora {
+  0%   { transform: translate3d(0,0,0) scale(1); }
+  100% { transform: translate3d(0,-4%,0) scale(1.09); }
+}
+.wlh-hero--v2 .wlh-hero__left, .wlh-hero--v2 .wlh-hero__right { position: relative; z-index: 1; }
+.wlh-hero__h1--v2 { line-height: 1.03; }
+.wlh-hero__cycle { display: inline-block; }
+.wlh-hero__cycle-word { color: var(--accent); font-style: normal; display: inline-block; }
+.wlh-hero__trustline { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); font-weight: 700; }
+
+.wlh-proof {
+  background: var(--bg); border: 1px solid var(--line-soft); border-radius: 20px;
+  padding: 1.6rem 1.6rem 1.4rem; box-shadow: 0 30px 60px -30px rgba(20,33,92,0.4);
+}
+.wlh-proof__top { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; flex-wrap: wrap; }
+.wlh-proof__stars { color: #f5a623; letter-spacing: 2px; font-size: 1.05rem; }
+.wlh-proof__toplbl { font-size: 0.85rem; font-weight: 800; color: var(--ink); }
+.wlh-proof__stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.5rem; padding: 1rem 0; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+.wlh-proof__stat { text-align: center; }
+.wlh-proof__stat strong { display: block; font-size: 1.75rem; font-weight: 900; color: var(--accent); line-height: 1; letter-spacing: -0.02em; }
+.wlh-proof__stat span { font-size: 0.72rem; color: var(--muted); font-weight: 600; }
+.wlh-proof__quote { margin: 1.1rem 0; padding: 0; border: 0; font-size: 0.95rem; line-height: 1.5; color: var(--ink); font-style: italic; }
+.wlh-proof__quote cite { display: block; margin-top: 0.5rem; font-size: 0.78rem; color: var(--muted); font-style: normal; font-weight: 700; }
+.wlh-proof__exams { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.wlh-proof__exam { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.03em; color: var(--ink-2); background: var(--bg-2); border: 1px solid var(--line-soft); border-radius: 100px; padding: 0.22rem 0.62rem; }
+
+.wlh-trustbar { padding: 1.6rem 0 1.9rem; border-bottom: 1px solid var(--line-soft); overflow: hidden; background: var(--bg); }
+.wlh-trustbar__label { text-align: center; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.1rem; }
+.wlh-trustbar__track { width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.wlh-trustbar__row { display: inline-flex; gap: 2.6rem; white-space: nowrap; animation: wlhMarquee 34s linear infinite; will-change: transform; }
+.wlh-trustbar__item { font-size: 1.15rem; font-weight: 800; color: var(--ink); opacity: 0.45; letter-spacing: -0.01em; }
+@keyframes wlhMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.wlh-como-grid { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(4,1fr); gap: 1.1rem; }
+.wlh-como-card { position: relative; height: 100%; padding: 1.7rem 1.4rem 1.6rem; border-radius: 16px; border: 1px solid var(--line-soft); background: var(--bg); overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+.wlh-como-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(20,33,92,0.08); }
+.wlh-como-card__n { position: absolute; top: 0.5rem; right: 1rem; font-size: 2.7rem; font-weight: 900; color: var(--line-soft); line-height: 1; }
+.wlh-como-card__icon { display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:12px; color: var(--accent); background: rgba(200,32,46,0.08); margin-bottom: 0.9rem; }
+.wlh-como-card__name { margin: 0 0 0.4rem; font-size: 1.05rem; font-weight: 700; color: var(--ink); position: relative; }
+.wlh-como-card__desc { margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--muted); }
+.wlh-como-foot { display: flex; align-items: center; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap; }
+.wlh-como-link { font-size: 0.9rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+.wlh-como-link:hover { text-decoration: underline; }
+@media (max-width: 900px) { .wlh-como-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 520px) { .wlh-como-grid { grid-template-columns: 1fr; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .wlh-hero__aurora, .wlh-trustbar__row { animation: none; }
+}
+
+/* ==========================================================================
+   HOME v2.1 · ajustes: palabra masked-slot, aurora con orbes, sellos como chips
+   ========================================================================== */
+/* Palabra que cicla — máscara tipo slot (sin blur) */
+.wlh-hero__cycle { display: inline-flex; overflow: hidden; vertical-align: bottom; padding-bottom: 0.14em; margin-bottom: -0.14em; }
+.wlh-hero__cycle-word { display: inline-block; color: var(--accent); font-style: normal; will-change: transform; }
+
+/* Aurora enriquecida: orbes de color que derivan detrás del hero */
+.wlh-hero__aurora::before, .wlh-hero__aurora::after {
+  content: ''; position: absolute; border-radius: 50%; filter: blur(64px); pointer-events: none;
+}
+.wlh-hero__aurora::before {
+  width: 40vw; height: 40vw; left: -8vw; top: -10vw;
+  background: radial-gradient(circle, rgba(200,32,46,0.42), transparent 64%);
+  animation: wlhBlobA 20s ease-in-out infinite alternate;
+}
+.wlh-hero__aurora::after {
+  width: 36vw; height: 36vw; right: -6vw; top: -6vw;
+  background: radial-gradient(circle, rgba(26,46,204,0.38), transparent 64%);
+  animation: wlhBlobB 24s ease-in-out infinite alternate;
+}
+@keyframes wlhBlobA { to { transform: translate(6vw, 7vw) scale(1.16); } }
+@keyframes wlhBlobB { to { transform: translate(-5vw, 9vw) scale(1.12); } }
+
+/* Sellos de exámenes como chips (menos "línea aburrida") */
+.wlh-trustbar__row { gap: 1rem; animation-duration: 30s; }
+.wlh-trustbar__item {
+  font-size: 0.95rem; font-weight: 800; letter-spacing: -0.01em;
+  color: var(--ink-2); opacity: 1;
+  padding: 0.45rem 1.1rem; border: 1px solid var(--line-soft);
+  border-radius: 100px; background: var(--bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wlh-hero__aurora::before, .wlh-hero__aurora::after { animation: none; }
+}
+
+/* v2.2 · reset del ciclo (sin máscara que clipe la palabra) */
+.wlh-hero__cycle { display: inline-block; overflow: visible; padding-bottom: 0; margin-bottom: 0; vertical-align: baseline; }
+.wlh-hero__cycle-word { display: inline-block; color: var(--accent); font-style: normal; will-change: transform, opacity; }
+
+/* v2.3 · Fundadores más prominentes (foto grande con anillo de acento) */
+.wlh-team-card__avatar {
+  width: 94px; height: 94px; min-width: 94px;
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px rgba(200,32,46,0.28);
+}

@@ -18,7 +18,7 @@ const NIVELES = [
     count: '6 habilidades · 40+ ejercicios',
   },
   { nivel: 'A2', name: 'Grundkenntnisse', desc: 'Perfekt, Dativ, Modalverben im Präteritum, trennbare Verben und Komparativ.', href: '/practica/aleman/a2', available: true, count: '6 habilidades · 50+ ejercicios' },
-  { nivel: 'B1', name: 'Mittelstufe', desc: 'Konjunktiv II, Futur, schriftliche Produktion, Hörverstehen.', href: '/practica/aleman/b1', available: true, count: '5 Themen · 50+ Übungen' },
+  { nivel: 'B1', name: 'Mittelstufe', desc: 'Konjunktiv II, Futur, schriftliche Produktion, Hörverstehen.', href: '/practica/aleman/b1', available: true, count: '20 temas de gramática' },
   { nivel: 'B2', name: 'Gehobene Mittelstufe', desc: 'Passiv, Goethe B2-Vorbereitung, akademisches Vokabular.', available: false },
   { nivel: 'C1', name: 'Fortgeschritten', desc: 'Komplexe Grammatik, Kollokationen, Goethe C1-Vorbereitung.', available: false },
 ];

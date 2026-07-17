@@ -1,5 +1,7 @@
 @AGENTS.md
 
+> **Operación obligatoria:** antes de modificar contenido, integrar cambios o publicar, leer `docs/OPERACION-REPOSITORIO.md`. El repositorio canónico es `idiomaswl`; la rama `main` es la base de producción. No publicar desde un árbol con cambios sin commit ni desde el repositorio histórico `Welearnmiguel`.
+
 ---
 
 # Idiomas WeLearn — Memoria Técnica del Proyecto

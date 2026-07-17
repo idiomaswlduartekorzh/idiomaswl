@@ -33,6 +33,7 @@ function ToolCard({
   description,
   stats,
   cta,
+  href,
   onClick,
 }: {
   color: string;
@@ -42,25 +43,11 @@ function ToolCard({
   description: string;
   stats: string[];
   cta: string;
-  onClick: () => void;
+  href?: string;
+  onClick?: () => void;
 }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="wl-catalog-card"
-      style={{
-        '--exam-color': color,
-        textAlign: 'left',
-        cursor: 'pointer',
-        appearance: 'none',
-        WebkitAppearance: 'none',
-        margin: 0,
-        padding: 0,
-        font: 'inherit',
-        color: 'inherit',
-      } as CSSProperties}
-    >
+  const body = (
+    <>
       <div className="wl-catalog-card__bar" />
       <div className="wl-catalog-card__body">
         <div className="wl-catalog-card__top">
@@ -101,6 +88,43 @@ function ToolCard({
           Abrir <ArrowRight size={14} />
         </span>
       </div>
+    </>
+  );
+
+  const cardStyle = {
+    '--exam-color': color,
+    textAlign: 'left',
+    cursor: 'pointer',
+    margin: 0,
+    padding: 0,
+    font: 'inherit',
+    color: 'inherit',
+  } as CSSProperties;
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className="wl-catalog-card"
+        style={{ ...cardStyle, textDecoration: 'none', display: 'flex', flexDirection: 'column' }}
+      >
+        {body}
+      </Link>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="wl-catalog-card"
+      style={{
+        ...cardStyle,
+        appearance: 'none',
+        WebkitAppearance: 'none',
+      } as CSSProperties}
+    >
+      {body}
     </button>
   );
 }
@@ -156,7 +180,7 @@ export default function IcfesHubClient() {
               Elige cómo entrenar para el ICFES
             </h1>
             <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.65, margin: 0 }}>
-              Practica con una sesión rápida de vidas y racha, o entra a una ruta inteligente con diagnóstico, niveles, refuerzos y reporte por habilidad.
+              Practica con una sesión rápida, una ruta inteligente o módulos enfocados en sinónimos, inferencia, gramática, conectores y cloze.
             </p>
           </div>
           <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
@@ -188,6 +212,26 @@ export default function IcfesHubClient() {
             stats={['4 niveles', '3 vidas', 'feedback inmediato']}
             cta="Comenzar práctica rápida"
             onClick={() => setActiveTool('quick')}
+          />
+          <ToolCard
+            color="#047857"
+            icon={<BookOpenCheck size={23} />}
+            eyebrow="Gramática y cloze"
+            title="Gramática y conjunciones"
+            description="Banco adaptativo para tiempos verbales, conectores, preposiciones y cloze con modo docente."
+            stats={['56 preguntas', 'modo docente', 'refuerzo por error']}
+            cta="Practicar gramática ICFES"
+            href="/practica/icfes-saber-11/gramatica-conjunciones"
+          />
+          <ToolCard
+            color="#7c3aed"
+            icon={<Brain size={23} />}
+            eyebrow="Lectura fina"
+            title="Sinónimos e inferencia"
+            description="Entrena vocabulario en contexto, paráfrasis e inferencias con explicación inmediata."
+            stats={['sinónimos', 'paráfrasis', 'repaso de errores']}
+            cta="Practicar sinónimos"
+            href="/practica/icfes-saber-11/sinonimos-inferencia"
           />
           <ToolCard
             color={SMART_COLOR}

@@ -39,8 +39,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: '3 diálogos A2 completos con scripts. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/ingles/a2/escucha', available: true,
+    desc: 'The Corner Project: 20 monólogos A2 que siguen una historia. Vocabulario previo, comprensión, transcripción y práctica progresiva.',
+    count: '20 audios · una historia A2 completa', href: '/practica/ingles/a2/escucha', available: true,
   },
 ];
 

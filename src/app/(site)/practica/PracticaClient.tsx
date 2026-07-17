@@ -16,7 +16,7 @@ interface ExamEntry {
 const EXAMS: ExamEntry[] = [
   { slug: 'ielts',  flag: '🇬🇧', name: 'IELTS Academic', tagline: 'Reading T/F/NG · Writing Task 1 y Task 2 · Feedback inmediato — Band 6–8.',          color: '#0f3d8c', href: '/practica/ielts',         tools: '3 tipos de ejercicio' },
   { slug: 'toefl',  flag: '🇺🇸', name: 'TOEFL iBT',      tagline: 'Lectura académica con opción múltiple y explicaciones detalladas — Nivel B2–C1.',    color: '#1a4fcc', href: '/practica/toefl',         tools: '1 pasaje · 6 preguntas'  },
-  { slug: 'icfes',  flag: '🇨🇴', name: 'ICFES Saber 11', tagline: 'Juego adaptativo 4 niveles + cuadernillos oficiales (2019, 2021, 2022, 2023).',       color: '#dc2626', href: '/practica/icfes-saber-11', tools: 'Adaptativo + Simulacros' },
+  { slug: 'icfes',  flag: '🇨🇴', name: 'ICFES Saber 11', tagline: 'Gramática, conectores, sinónimos, inferencia, ruta adaptativa y cuadernillos oficiales.',       color: '#dc2626', href: '/practica/icfes-saber-11', tools: 'Gramática + Simulacros' },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

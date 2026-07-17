@@ -1,0 +1,295 @@
+import type { GrammarTopic } from '../../types'
+
+const topic: GrammarTopic = {
+  slug: 'adverbes-frequence',
+  order: '17',
+  color: '#1a2ecc',
+  category: 'Adverbes',
+  level: 'A1',
+  title: 'Les Adverbes de Fréquence en Français A1',
+  shortTitle: 'Adverbes de fréquence',
+  metaTitle: 'Adverbes de fréquence en français A1 — toujours, souvent, parfois, jamais',
+  description:
+    'Los adverbios de frecuencia en francés expresan con qué regularidad ocurre una acción: toujours (siempre), souvent (a menudo), parfois/quelquefois (a veces), rarement (raramente), jamais (nunca). Van después del verbo conjugado o entre el auxiliar y el participio.',
+  lead: 'Je mange toujours à midi. / Il va souvent au cinéma. / Elle ne sort jamais le dimanche. Los adverbios de frecuencia van después del verbo conjugado en francés — diferente al español donde pueden ir al inicio.',
+  outcomes: [
+    'Colocar los adverbios de frecuencia correctamente: después del verbo conjugado.',
+    'Usar ne...jamais para "nunca".',
+    'Expresar rutinas y hábitos con la escala toujours → jamais.',
+  ],
+  guide: {
+    goal: 'Expresar frecuencia de acciones usando los adverbios correctamente colocados.',
+    model: 'Je mange toujours à midi. / Il va souvent au cinéma. / Elle ne mange jamais de viande.',
+    formula: 'Sujeto + verbo conjugado + adverbe de fréquence + reste de la phrase',
+    decisions: [
+      'toujours (siempre, 100%) → je mange toujours à 8h',
+      'souvent (a menudo, ~70%) → il va souvent au cinéma',
+      'parfois / quelquefois (a veces, ~30%) → elle part parfois en voyage',
+      'rarement (raramente, ~10%) → nous mangeons rarement de la viande',
+      'jamais (nunca, 0%) → SIEMPRE con ne: je ne mange JAMAIS de poisson',
+    ],
+    table: [
+      ['Adverbe', 'Fréquence', 'Exemple'],
+      ['toujours', '100% — siempre', 'Je mange toujours à midi.'],
+      ['souvent', '~70% — a menudo', 'Il va souvent au sport.'],
+      ['parfois', '~30% — a veces', 'Elle sort parfois le soir.'],
+      ['rarement', '~10% — raramente', 'Nous voyageons rarement.'],
+      ['(ne)...jamais', '0% — nunca', 'Je ne mange jamais de poisson.'],
+    ],
+    mistakes: [
+      '"Toujours je mange" ❌ → "Je mange toujours" ✓ — el adverbe va DESPUÉS del verbo.',
+      '"Je mange jamais" ❌ → "Je ne mange jamais" ✓ — jamais SIEMPRE con ne.',
+      '"Ne...pas jamais" ❌ — no se combinan: usa solo ne...jamais para "nunca".',
+    ],
+  },
+  seo: [
+    {
+      heading: 'Adverbios de frecuencia en francés: posición y uso',
+      paragraphs: [
+        'Los adverbios de frecuencia en francés se colocan después del verbo conjugado, a diferencia del español donde pueden ir al principio de la frase. Compare: "Siempre como a las 8" (inicio) vs "Je mange toujours à 8h" (después del verbo). Esta diferencia de posición es uno de los primeros ajustes que deben hacer los hispanohablantes.',
+        'Los cinco adverbios de frecuencia más importantes en A1 forman una escala de 100% a 0%: toujours (siempre, 100%), souvent (a menudo, ~70%), parfois/quelquefois (a veces, ~30%), rarement (raramente, ~10%), jamais (nunca, 0%). Dominar estos cinco permite describir cualquier rutina o hábito en francés.',
+      ],
+    },
+    {
+      heading: 'Ne...jamais: la negación de frecuencia absoluta',
+      paragraphs: [
+        'Jamais es especial: para expresar "nunca", siempre se combina con ne en el lenguaje estándar. Je ne mange jamais de viande. / Il ne sort jamais le dimanche. / Nous ne voyageons jamais en avion. En el francés hablado informal, el ne puede desaparecer, pero en A1 es importante aprender la forma completa.',
+        'No confundir ne...jamais con ne...pas: je ne mange pas (no como, en este momento o en general) vs je ne mange jamais (no como NUNCA). Jamais implica ausencia total y permanente, pas implica simplemente negación.',
+      ],
+    },
+    {
+      heading: 'Posición con verbos compuestos',
+      paragraphs: [
+        'En los tiempos compuestos (passé composé, etc.), los adverbios cortos como toujours, souvent, parfois, rarement, jamais van entre el auxiliar (avoir/être) y el participio pasado. J\'ai toujours aimé le français. / Il a souvent voyagé en Europe. / Elle n\'a jamais mangé de sushi.',
+        'En A1 solo se trabaja el présent, pero conviene saber que la posición "entre auxiliar y participio" es un patrón consistente del francés que volverá en A2.',
+      ],
+    },
+  ],
+  visual: {
+    mode: 'scale',
+    teacherLens: 'El adverbe de fréquence va después del verbo conjugado. Jamais siempre con ne.',
+    graphicPrompt: 'Escala de frecuencia: toujours(100%) → souvent → parfois → rarement → jamais(0%).',
+    scene: [
+      ['toujours', 'Je mange toujours à midi. (100%)'],
+      ['souvent', 'Il va souvent au cinéma le week-end. (~70%)'],
+      ['parfois', 'Elle sort parfois avec ses amis le soir. (~30%)'],
+      ['rarement', 'Nous mangeons rarement de la viande. (~10%)'],
+      ['ne...jamais', 'Je ne bois jamais de café. (0%)'],
+    ],
+    learnerModes: ['reading', 'typing', 'choosing'],
+    reviewFocus: ['posición después del verbo', 'ne...jamais para nunca', 'escala de frecuencia'],
+  },
+  practice: {
+    levels: [
+      {
+        id: 'l1',
+        title: 'Posición del adverbe',
+        tag: 'Opción múltiple',
+        intro: 'Elige el adverbe de fréquence correcto según el contexto.',
+        type: 'choice',
+        items: [
+          {
+            scene: 'Hábito diario',
+            lines: [['Carlos', 'Je mange ___ à 13h. (100% du temps)']],
+            options: ['toujours', 'jamais', 'rarement', 'parfois'],
+            answer: 'toujours',
+            explain: '100% → toujours. Je mange toujours à 13h.',
+          },
+          {
+            scene: 'Algo que nunca hace',
+            lines: [['Ana', 'Je ne mange ___ de viande. (0%)']],
+            options: ['jamais', 'toujours', 'souvent', 'parfois'],
+            answer: 'jamais',
+            explain: '0% + ne → ne...jamais. Je ne mange jamais de viande.',
+          },
+          {
+            scene: 'Hábito frecuente',
+            lines: [['David', 'Il va ___ au sport le mardi. (~70%)']],
+            options: ['souvent', 'toujours', 'jamais', 'rarement'],
+            answer: 'souvent',
+            explain: '~70% → souvent. Il va souvent au sport.',
+          },
+          {
+            scene: 'Algo poco frecuente',
+            lines: [['Sofia', 'Elle mange ___ de la pizza. (~10%)']],
+            options: ['rarement', 'toujours', 'souvent', 'jamais'],
+            answer: 'rarement',
+            explain: '~10% → rarement. Elle mange rarement de la pizza.',
+          },
+          {
+            scene: 'Actividad irregular',
+            lines: [['Marco', 'Je voyage ___ en train. (~30%)']],
+            options: ['parfois', 'toujours', 'jamais', 'souvent'],
+            answer: 'parfois',
+            explain: '~30% → parfois. Je voyage parfois en train.',
+          },
+          {
+            scene: 'Posición correcta',
+            lines: [['Teacher', 'Laquelle est correcte?']],
+            options: ['Il mange souvent au restaurant.', 'Il souvent mange au restaurant.', 'Souvent il mange au restaurant.', 'Il mange au restaurant souvent.'],
+            answer: 'Il mange souvent au restaurant.',
+            explain: 'Adverbe après le verbe conjugé: "il mange souvent". Les autres positions sont incorrectes en A1.',
+          },
+          {
+            scene: 'Con ne...jamais',
+            lines: [['Lina', 'Elle ne sort ___ le dimanche.']],
+            options: ['jamais', 'toujours', 'parfois', 'souvent'],
+            answer: 'jamais',
+            explain: 'ne...jamais = nunca. Elle ne sort jamais le dimanche.',
+          },
+          {
+            scene: 'Rutina de Carlos',
+            lines: [['Carlos', 'Je ___ lis avant de dormir. (~70%)']],
+            options: ['lis souvent', 'souvent lis', 'lis de souvent', 'souvente lis'],
+            answer: 'lis souvent',
+            explain: '"Je lis souvent" — verbe + adverbe. No hay "souvente" (invariable).',
+          },
+        ],
+      },
+      {
+        id: 'l2',
+        title: 'Adverbe et structure',
+        tag: '2 espacios',
+        intro: 'Elige el adverbe y verifica la estructura correcta.',
+        type: 'dual',
+        items: [
+          {
+            scene: 'Hábito de estudio',
+            lines: [['Ana', 'Je [[0]] [[1]] le soir. (a menudo, estudiar)']],
+            blanks: [
+              { options: ['étudie souvent', 'souvent étudie', 'étudie'], answer: 'étudie souvent', explain: 'Verbe + souvent: "étudie souvent".' },
+              { options: ['le soir', 'la nuit', 'midi'], answer: 'le soir', explain: '"Le soir" — por la noche.' },
+            ],
+          },
+          {
+            scene: 'Lo que nunca hace',
+            lines: [['Carlos', 'Je ne [[0]] [[1]] de café.']],
+            blanks: [
+              { options: ['bois jamais', 'jamais bois', 'bois'], answer: 'bois jamais', explain: 'ne bois jamais — verbe + jamais dans la négation.' },
+              { options: ['de', 'du', 'des'], answer: 'de', explain: 'Negación → article de: je ne bois jamais DE café.' },
+            ],
+          },
+          {
+            scene: 'Hábito raro',
+            lines: [['Sofia', 'Nous [[0]] au restaurant. (~10%)']],
+            blanks: [
+              { options: ['mangeons rarement', 'rarement mangeons', 'mangeons'], answer: 'mangeons rarement', explain: '"Nous mangeons rarement" — verbe + adverbe.' },
+              { options: ['au', 'à', 'en'], answer: 'au', explain: '"au restaurant" — contraction de "à + le".' },
+            ],
+          },
+          {
+            scene: 'Pregunta de rutina',
+            lines: [['David', 'Tu vas [[0]] [[1]] le sport?']],
+            blanks: [
+              { options: ['souvent faire', 'faire souvent', 'souvent'], answer: 'souvent faire', explain: '"Tu vas souvent faire" — adverbe après "vas" (verbe conjugé).' },
+              { options: ['du', 'de', 'le'], answer: 'du', explain: '"faire du sport" — du = de + le.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'l3',
+        title: 'La journée de Marco',
+        tag: 'Opciones',
+        intro: 'Elige el adverbe de fréquence correcto para completar la rutina de Marco.',
+        type: 'guidedText',
+        scene: 'Marco describe su rutina semanal a la clase de WeLearn',
+        text: 'Je me lève [[0]] à 7h — c\'est ma routine. Le matin, je mange [[1]] du pain avec du café. Le midi, je mange [[2]] à la maison ou au bureau. Le soir, je regarde [[3]] la télé — seulement le week-end. Je ne fais [[4]] de sport le mardi — ce jour-là je travaille. Et le week-end, je lis [[5]] un livre avant de dormir.',
+        blanks: [
+          { options: ['toujours', 'jamais', 'rarement'], answer: 'toujours', explain: 'Rutina fija todos los días → toujours.' },
+          { options: ['toujours', 'parfois', 'jamais'], answer: 'toujours', explain: 'Desayuno siempre igual → toujours.' },
+          { options: ['parfois', 'toujours', 'jamais'], answer: 'parfois', explain: 'A veces en casa, a veces en la oficina → parfois.' },
+          { options: ['rarement', 'toujours', 'souvent'], answer: 'rarement', explain: 'Solo el fin de semana → rarement (raramente en la semana).' },
+          { options: ['jamais', 'toujours', 'parfois'], answer: 'jamais', explain: 'Je ne fais jamais de sport le mardi — ne...jamais.' },
+          { options: ['souvent', 'jamais', 'parfois'], answer: 'souvent', explain: 'Hábito frecuente del fin de semana → souvent.' },
+        ],
+      },
+      {
+        id: 'l4',
+        title: 'Mis hábitos',
+        tag: 'Sin opciones',
+        intro: 'Escribe el adverbe de fréquence correcto según el porcentaje indicado.',
+        type: 'freeText',
+        scene: 'Completar oraciones sobre hábitos personales con el adverbe correcto',
+        text: 'Je mange ___ (100%) à la cantine. / Il ne parle ___ (0%) en classe. / Elle va ___ (70%) à la bibliothèque. / Nous cuisinons ___ (30%) le week-end. / Vous lisez ___ (10%) des journaux. / Tu sors ___ (30%) avec tes amis.',
+        blanks: [
+          { answer: 'toujours', accepted: ['toujours'], explain: '100% → toujours.' },
+          { answer: 'jamais', accepted: ['jamais'], explain: '0% + ne → ne...jamais.' },
+          { answer: 'souvent', accepted: ['souvent'], explain: '70% → souvent.' },
+          { answer: 'parfois', accepted: ['parfois', 'quelquefois'], explain: '30% → parfois ou quelquefois.' },
+          { answer: 'rarement', accepted: ['rarement'], explain: '10% → rarement.' },
+          { answer: 'parfois', accepted: ['parfois', 'quelquefois'], explain: '30% → parfois.' },
+        ],
+      },
+      {
+        id: 'l5',
+        title: 'Mes habitudes',
+        tag: 'Producción',
+        intro: 'Escribe frases completas sobre tus hábitos con adverbes de fréquence.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Hábito diario',
+            prompt: 'Escribe: "Siempre desayuno antes de las 8." (Je / manger / toujours / avant 8h)',
+            answer: 'Je mange toujours avant 8h.',
+            accepted: ['je mange toujours', 'toujours je mange'],
+            explain: 'Je mange toujours avant 8h. — verbe + toujours.',
+          },
+          {
+            scene: 'Lo que nunca haces',
+            prompt: 'Escribe: "Nunca bebo alcohol." (Je / ne...jamais / boire / alcool)',
+            answer: 'Je ne bois jamais d\'alcool.',
+            accepted: ['je ne bois jamais', "je ne bois jamais d'alcool"],
+            explain: 'Je ne bois jamais d\'alcool. — ne...jamais.',
+          },
+          {
+            scene: 'Algo frecuente',
+            prompt: 'Escribe: "A menudo estudio por las noches." (J\'/ étudier / souvent / le soir)',
+            answer: 'J\'étudie souvent le soir.',
+            accepted: ["j'étudie souvent", "j'étudie souvent le soir"],
+            explain: 'J\'étudie souvent le soir. — verbe + souvent.',
+          },
+          {
+            scene: 'Algo que raramente haces',
+            prompt: 'Escribe: "Raramente veo televisión." (Je / regarder / rarement / la télé)',
+            answer: 'Je regarde rarement la télé.',
+            accepted: ['je regarde rarement'],
+            explain: 'Je regarde rarement la télé. — verbe + rarement.',
+          },
+        ],
+      },
+      {
+        id: 'l6',
+        title: 'Ma routine en français',
+        tag: 'Reto final',
+        intro: 'Describe tu rutina real usando los 5 adverbes de fréquence.',
+        type: 'write',
+        items: [
+          {
+            scene: 'Tus hábitos de estudio',
+            prompt: 'Write 2 sentences about how often you study French: J\'étudie... / Je parle...',
+            answer: 'J\'étudie souvent le français le soir. Je parle parfois avec mon professeur.',
+            accepted: ['toujours', 'souvent', 'parfois', 'rarement'],
+            explain: 'Use toujours/souvent/parfois/rarement after the conjugated verb.',
+          },
+          {
+            scene: 'Lo que nunca haces',
+            prompt: 'Write 1 thing you NEVER do: Je ne... jamais...',
+            answer: 'Je ne mange jamais de fast-food.',
+            accepted: ['je ne', 'jamais'],
+            explain: 'Je ne + verbe + jamais + objet. Ne...jamais pour "nunca".',
+          },
+          {
+            scene: 'Comparación con un amigo',
+            prompt: 'Write what you do often vs what your friend rarely does.',
+            answer: 'Je vais souvent au sport mais mon ami va rarement à la salle de sport.',
+            accepted: ['souvent', 'rarement', 'jamais', 'toujours', 'parfois'],
+            explain: 'Use souvent, rarement, parfois, toujours or jamais. Adverbe après le verbe.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default topic
