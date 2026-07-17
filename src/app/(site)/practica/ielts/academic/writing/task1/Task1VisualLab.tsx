@@ -200,11 +200,11 @@ export function IELTSTableVisual({ variant = 0 }: { variant?: number }) {
 
 export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number }) {
   const datasets = [
-    { title: 'The diagram below shows how plastic bottles are recycled.', steps: [['Collection', 'Used bottles are collected from public recycling bins.'], ['Sorting', 'Plastic is separated at a recycling centre.'], ['Washing', 'Bottles are cleaned before being cut into flakes.'], ['Melting', 'The flakes are heated into plastic pellets.'], ['Manufacturing', 'The pellets become new products.']] },
-    { title: 'The diagram below shows how coffee is produced for sale.', steps: [['Harvesting', 'Ripe coffee cherries are picked from the plants.'], ['Drying', 'The cherries are spread out and dried in the sun.'], ['Removing skins', 'The outer layers are removed from the dried fruit.'], ['Roasting', 'The beans are heated until they reach the desired colour.'], ['Packaging', 'Roasted beans are ground and packed for sale.']] },
-    { title: 'The diagram below shows the production of bottled water.', steps: [['Extraction', 'Water is taken from an underground spring.'], ['Filtering', 'Unwanted particles are removed from the water.'], ['Purification', 'The water is treated to make it safe to drink.'], ['Bottling', 'Clean water is poured into plastic bottles.'], ['Distribution', 'The bottles are labelled and sent to shops.']] },
-    { title: 'The diagram below shows how bricks are manufactured.', steps: [['Digging', 'Clay is removed from the ground by an excavator.'], ['Crushing', 'The clay is broken into smaller pieces.'], ['Moulding', 'The material is shaped into rectangular bricks.'], ['Drying', 'The bricks are left in a drying chamber.'], ['Firing', 'They are heated in a kiln before delivery.']] },
-    { title: 'The diagram below shows the life cycle of a honey bee.', steps: [['Egg', 'The queen lays eggs inside the cells of a hive.'], ['Larva', 'The eggs hatch and become small larvae.'], ['Pupa', 'The larvae are sealed inside cells to develop.'], ['Adult', 'Fully grown bees emerge from the cells.'], ['Colony', 'Adults feed the young and maintain the hive.']] },
+    { title: 'How plastic bottles are recycled', steps: [['Collection', 'Used bottles are collected from public recycling bins.'], ['Sorting', 'Plastic is separated at a recycling centre.'], ['Washing', 'Bottles are cleaned before being cut into flakes.'], ['Melting', 'The flakes are heated into plastic pellets.'], ['Manufacturing', 'The pellets become new products.']] },
+    { title: 'How coffee is prepared for sale', steps: [['Harvesting', 'Ripe coffee cherries are picked from the plants.'], ['Drying', 'The cherries are spread out and dried in the sun.'], ['Removing skins', 'The outer layers are removed from the dried fruit.'], ['Roasting', 'The beans are heated until they reach the desired colour.'], ['Packaging', 'Roasted beans are ground and packed for sale.']] },
+    { title: 'How bottled water is produced', steps: [['Extraction', 'Water is taken from an underground spring.'], ['Filtering', 'Unwanted particles are removed from the water.'], ['Purification', 'The water is treated to make it safe to drink.'], ['Bottling', 'Clean water is poured into plastic bottles.'], ['Distribution', 'The bottles are labelled and sent to shops.']] },
+    { title: 'How bricks are manufactured', steps: [['Digging', 'Clay is removed from the ground by an excavator.'], ['Crushing', 'The clay is broken into smaller pieces.'], ['Moulding', 'The material is shaped into rectangular bricks.'], ['Drying', 'The bricks are left in a drying chamber.'], ['Firing', 'They are heated in a kiln before delivery.']] },
+    { title: 'Honey bee life cycle', steps: [['Egg', 'The queen lays eggs inside the cells of a hive.'], ['Larva', 'The eggs hatch and become small larvae.'], ['Pupa', 'The larvae are sealed inside cells to develop.'], ['Adult', 'Fully grown bees emerge from the cells.'], ['Colony', 'Adults feed the young and maintain the hive.']] },
   ];
   const data = datasets[variant % datasets.length];
   const steps = data.steps.map((step, i) => [String(i + 1), step[0], step[1]]);
@@ -221,7 +221,7 @@ export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number })
       <text x="40" y="51" fontSize="17" fontWeight="800" fill="var(--ink)">{data.title}</text>
       <text x="40" y="96" fontSize="11" fontWeight="800" letterSpacing="1.4" fill="var(--muted)">SEQUENCE OF STAGES</text>
       {steps.map((step, i) => {
-        const x = 42 + (i % 3) * 246;
+        const x = i < 3 ? 42 + i * 246 : i === 3 ? 534 : 288;
         const y = i < 3 ? 116 : 272;
         const color = palette[i];
         return (
@@ -239,19 +239,19 @@ export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number })
       })}
       <line x1="252" y1="172" x2="284" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
       <line x1="498" y1="172" x2="530" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
-      <path d="M 672 228 C 672 257, 568 260, 568 272" fill="none" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
-      <line x1="288" y1="328" x2="254" y2="328" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <path d="M 672 228 C 672 257, 640 260, 640 272" fill="none" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <line x1="530" y1="328" x2="498" y2="328" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
     </svg>
   );
 }
 
 export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
   const datasets = [
-    { title: 'The maps below show changes in a town centre between 1990 and 2020.', beforeLabel: '1990', afterLabel: '2020', before: ['Park', 'Factory', 'Small road', 'Car park'], after: ['Housing estate', 'School', 'Dual carriageway', 'Shopping centre'] },
-    { title: 'The maps below show the development of a university campus between 1995 and 2025.', beforeLabel: '1995', afterLabel: '2025', before: ['Lecture hall', 'Garden', 'Car park', 'Sports field'], after: ['Library', 'Student flats', 'Cycle path', 'Sports centre'] },
-    { title: 'The maps below show changes to a coastal village between 2000 and 2025.', beforeLabel: '2000', afterLabel: '2025', before: ['Fishing harbour', 'Fields', 'Narrow road', 'Cottages'], after: ['Marina', 'Holiday resort', 'Main road', 'Apartments'] },
-    { title: 'The maps below show how a park changed between 1980 and 2020.', beforeLabel: '1980', afterLabel: '2020', before: ['Woodland', 'Pond', 'Footpath', 'Rose garden'], after: ['Playground', 'Cafe', 'Cycle track', 'Open-air stage'] },
-    { title: 'The maps below show a shopping centre before and after redevelopment.', beforeLabel: 'Before', afterLabel: 'After', before: ['Small shops', 'Bus stop', 'Market', 'Car park'], after: ['Department store', 'Taxi rank', 'Food court', 'Multi-storey car park'] },
+    { title: 'Town centre changes, 1990-2020', beforeLabel: '1990', afterLabel: '2020', before: ['Park', 'Factory', 'Small road', 'Car park'], after: ['Housing estate', 'School', 'Dual carriageway', 'Shopping centre'] },
+    { title: 'University campus development, 1995-2025', beforeLabel: '1995', afterLabel: '2025', before: ['Lecture hall', 'Garden', 'Car park', 'Sports field'], after: ['Library', 'Student flats', 'Cycle path', 'Sports centre'] },
+    { title: 'Coastal village changes, 2000-2025', beforeLabel: '2000', afterLabel: '2025', before: ['Fishing harbour', 'Fields', 'Narrow road', 'Cottages'], after: ['Marina', 'Holiday resort', 'Main road', 'Apartments'] },
+    { title: 'Park changes, 1980-2020', beforeLabel: '1980', afterLabel: '2020', before: ['Woodland', 'Pond', 'Footpath', 'Rose garden'], after: ['Playground', 'Cafe', 'Cycle track', 'Open-air stage'] },
+    { title: 'Shopping centre redevelopment', beforeLabel: 'Before', afterLabel: 'After', before: ['Small shops', 'Bus stop', 'Market', 'Car park'], after: ['Department store', 'Taxi rank', 'Food court', 'Multi-storey car park'] },
   ];
   const data = datasets[variant % datasets.length];
   const cellsBefore = data.before.map((label, i) => [label, ['#dcfce7', '#fee2e2', '#e5e7eb', '#dbeafe'][i]]);
