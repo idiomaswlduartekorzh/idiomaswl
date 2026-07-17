@@ -8,6 +8,7 @@ import {
   IELTSBarChartVisual,
   IELTSLineGraphVisual,
   IELTSMapDiagramVisual,
+  IELTSMixedVisual,
   IELTSPieChartVisual,
   IELTSProcessDiagramVisual,
   IELTSTableVisual,
@@ -136,7 +137,7 @@ function TaskVisual({ type, variant }: { type: string; variant: number }) {
   if (type === 'table') return <IELTSTableVisual variant={variant} />;
   if (type === 'process') return <IELTSProcessDiagramVisual variant={variant} />;
   if (type === 'map') return <IELTSMapDiagramVisual variant={variant} />;
-  if (type === 'mixed') return <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '0.85rem' }}><IELTSLineGraphVisual variant={variant} /><IELTSPieChartVisual variant={variant} /></div>;
+  if (type === 'mixed') return <IELTSMixedVisual variant={variant} />;
   return <IELTSLineGraphVisual variant={variant} />;
 }
 

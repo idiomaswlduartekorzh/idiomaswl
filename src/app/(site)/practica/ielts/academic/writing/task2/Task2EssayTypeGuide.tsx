@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { Task2EssayArchitectureVisual } from './Task2VisualLab';
 
 export const TASK2_ESSAY_TYPES = [
   {
-    name: 'Opinión',
+    name: 'Opinion',
     route: '/practica/ielts/academic/writing/task2/opinion',
     signal: 'To what extent do you agree or disagree? / Do you agree or disagree?',
     task: 'Tomar una posición clara y defenderla durante todo el ensayo.',
@@ -14,7 +15,7 @@ export const TASK2_ESSAY_TYPES = [
     trap: 'Tratar ambos lados por igual como si fuera Discussion.',
   },
   {
-    name: 'Discusión',
+    name: 'Discussion',
     route: '/practica/ielts/academic/writing/task2/discussion',
     signal: 'Discuss both views and give your own opinion.',
     task: 'Explicar ambas posturas y luego evaluar cuál es más convincente.',
@@ -24,7 +25,7 @@ export const TASK2_ESSAY_TYPES = [
     trap: 'Olvidar tu opinión o darla solo como frase decorativa.',
   },
   {
-    name: 'Problema y solución',
+    name: 'Problem–Solution',
     route: '/practica/ielts/academic/writing/task2/problem-solution',
     signal: 'What are the causes/problems? What measures/solutions can be taken?',
     task: 'Diagnosticar causas o problemas y proponer soluciones conectadas.',
@@ -34,7 +35,7 @@ export const TASK2_ESSAY_TYPES = [
     trap: 'Soluciones genéricas que no responden al diagnóstico.',
   },
   {
-    name: 'Ventajas y desventajas',
+    name: 'Advantages–Disadvantages',
     route: '/practica/ielts/academic/writing/task2/advantages-disadvantages',
     signal: 'Discuss the advantages and disadvantages. / Do the advantages outweigh the disadvantages?',
     task: 'Evaluar pros y contras de una tendencia o desarrollo.',
@@ -44,7 +45,7 @@ export const TASK2_ESSAY_TYPES = [
     trap: 'Enumerar pros/contras sin responder si un lado supera al otro.',
   },
   {
-    name: 'Preguntas directas',
+    name: 'Direct Questions',
     route: '/practica/ielts/academic/writing/task2/direct-question',
     signal: 'Why is this happening? Is this positive or negative? / What are the reasons? What effects does this have?',
     task: 'Responder dos preguntas explícitas sin dejar ninguna incompleta.',
@@ -70,6 +71,16 @@ export default function Task2EssayTypeGuide() {
             La instrucción final decide la estructura. Si identificas mal el tipo, puedes escribir bonito y aun así perder
             Task Response. WeLearn lo entrena como bloques Lego: cada tipo de pregunta cambia la tesis, los cuerpos y la conclusión.
           </p>
+        </div>
+        <div style={{ padding: '1rem 1.15rem', borderBottom: '1px solid var(--line-soft)', background: 'var(--bg-2)' }}>
+          <p style={{ margin: '0 0 0.7rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Visual architecture: choose the right essay skeleton</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
+            {TASK2_ESSAY_TYPES.map((type) => (
+              <div key={type.name} style={{ padding: '0.65rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg)' }}>
+                <Task2EssayArchitectureVisual type={type.name as Parameters<typeof Task2EssayArchitectureVisual>[0]['type']} />
+              </div>
+            ))}
+          </div>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))' }}>
           {TASK2_ESSAY_TYPES.map((type) => (
