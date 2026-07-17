@@ -2,7 +2,9 @@ import { NextResponse } from 'next/server';
 import { LABS_ENABLED, LIMITS, WRITING_ENGINE } from '@/lib/labs/config';
 import { checkRateLimit, pruneExpired, WRITING_RULE } from '@/lib/labs/rate-limit';
 import { assessWritingFree } from '@/lib/labs/providers/gemini';
+import { assessWritingGroq } from '@/lib/labs/providers/groq';
 import { assessWritingOpus } from '@/lib/labs/providers/anthropic';
+import { ieltsWritingRubric } from '@/lib/labs/rubrics/ielts-writing';
 import type { IeltsTask } from '@/lib/labs/types';
 
 const VALID_TASKS: IeltsTask[] = ['task1-academic', 'task1-general', 'task2'];
@@ -64,8 +66,17 @@ export async function POST(req: Request) {
     return NextResponse.json({ code: 'invalid_input', message: 'Task inválido.' }, { status: 400 });
   }
 
-  const assess = WRITING_ENGINE === 'anthropic' ? assessWritingOpus : assessWritingFree;
-  const result = await assess(essay, prompt, task);
+  // 'auto': Task 1 (gráfico) → Gemini, Task 2 → Groq. Mismo criterio que
+  // exam-writing-assess/route.ts.
+  const engine = WRITING_ENGINE === 'auto'
+    ? (task === 'task2' ? 'groq' : 'gemini')
+    : WRITING_ENGINE;
+
+  const result = engine === 'anthropic'
+    ? await assessWritingOpus(essay, prompt, task, ieltsWritingRubric)
+    : engine === 'groq'
+    ? await assessWritingGroq(essay, prompt, task, ieltsWritingRubric)
+    : await assessWritingFree(essay, prompt, task, ieltsWritingRubric);
 
   if ('code' in result) {
     const status = result.code === 'rate_limited' ? 429

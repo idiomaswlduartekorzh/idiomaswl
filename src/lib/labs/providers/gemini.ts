@@ -5,63 +5,90 @@
  * Docs de límites: https://ai.google.dev/gemini-api/docs/rate-limits
  */
 
+import fs from 'node:fs';
+import path from 'node:path';
 import { providers, isConfigured } from '../config';
-import type { FreeAssessment, IeltsTask, LabsError } from '../types';
-import { buildSystemPrompt } from '../rubrics/ielts-writing';
+import type { FreeAssessment, LabsError, WritingRubric } from '../types';
 
-/** Fuerza a Gemini a devolver exactamente la forma que espera la UI. */
-const RESPONSE_SCHEMA = {
-  type: 'OBJECT',
-  properties: {
-    overallBand: { type: 'NUMBER' },
-    criteria: {
-      type: 'ARRAY',
-      items: {
-        type: 'OBJECT',
-        properties: {
-          criterion: {
-            type: 'STRING',
-            enum: ['taskAchievement', 'taskResponse', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
+const IMAGE_MIME: Record<string, string> = {
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.webp': 'image/webp',
+};
+
+/**
+ * Lee una imagen de /public y la codifica para Gemini. Solo Task 1 Academic
+ * la usa (el gráfico) — sin esto el motor califica Task Achievement a ciegas
+ * de si el estudiante transcribió bien los datos reales.
+ */
+function readPublicImage(publicPath: string): { mimeType: string; data: string } | null {
+  const ext = path.extname(publicPath).toLowerCase();
+  const mimeType = IMAGE_MIME[ext];
+  if (!mimeType) return null;
+
+  try {
+    const abs = path.join(process.cwd(), 'public', publicPath);
+    const buf = fs.readFileSync(abs);
+    return { mimeType, data: buf.toString('base64') };
+  } catch (err) {
+    console.error('[labs/gemini] no se pudo leer la imagen', publicPath, err);
+    return null;
+  }
+}
+
+/**
+ * Arma el responseSchema a partir de los criterios de LA RÚBRICA ACTIVA — no
+ * hay nada de IELTS hardcodeado aquí. Cada familia de examen (IELTS/TOEFL/
+ * Cambridge) aporta su propia lista de criterios vía WritingRubric.criteria.
+ */
+function buildResponseSchema(criterionKeys: string[]) {
+  const criterionEnum = { type: 'STRING', enum: criterionKeys } as const;
+  return {
+    type: 'OBJECT',
+    properties: {
+      overallBand: { type: 'NUMBER' },
+      criteria: {
+        type: 'ARRAY',
+        items: {
+          type: 'OBJECT',
+          properties: {
+            criterion: criterionEnum,
+            band:      { type: 'NUMBER' },
+            reason:    { type: 'STRING' },
           },
-          band:   { type: 'NUMBER' },
-          reason: { type: 'STRING' },
+          required: ['criterion', 'band', 'reason'],
         },
-        required: ['criterion', 'band', 'reason'],
+      },
+      allIssues: {
+        type: 'ARRAY',
+        items: {
+          type: 'OBJECT',
+          properties: {
+            quote:       { type: 'STRING' },
+            suggestion:  { type: 'STRING' },
+            explanation: { type: 'STRING' },
+            severity:    { type: 'STRING', enum: ['critica', 'moderada', 'menor'] },
+            criterion:   criterionEnum,
+            issueType:   { type: 'STRING', enum: ['vocabulary', 'grammar', 'style', 'unclear'] },
+          },
+          required: ['quote', 'suggestion', 'explanation', 'severity', 'criterion', 'issueType'],
+        },
       },
     },
-    allIssues: {
-      type: 'ARRAY',
-      items: {
-        type: 'OBJECT',
-        properties: {
-          quote:       { type: 'STRING' },
-          suggestion:  { type: 'STRING' },
-          explanation: { type: 'STRING' },
-          severity:    { type: 'STRING', enum: ['critica', 'moderada', 'menor'] },
-          criterion:   {
-            type: 'STRING',
-            enum: ['taskAchievement', 'taskResponse', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
-          },
-          // Nota: el enum acepta ambos criterios de tarea porque el esquema es
-          // compartido; el system prompt le dice cuál usar según el task.
-          issueType:   {
-            type: 'STRING',
-            enum: ['vocabulary', 'grammar', 'style', 'unclear'],
-          },
-        },
-        required: ['quote', 'suggestion', 'explanation', 'severity', 'criterion', 'issueType'],
-      },
-    },
-  },
-  required: ['overallBand', 'criteria', 'allIssues'],
-} as const;
+    required: ['overallBand', 'criteria', 'allIssues'],
+  } as const;
+}
 
 const SEVERITY_ORDER = { critica: 0, moderada: 1, menor: 2 } as const;
 
-export async function assessWritingFree(
+export async function assessWritingFree<TaskId extends string>(
   essay: string,
   prompt: string,
-  task: IeltsTask,
+  task: TaskId,
+  rubric: WritingRubric<TaskId>,
+  /** Ruta pública del gráfico (p.ej. '/ielts/images/writing-set1-task1-chester.png'). Solo tareas con gráfico. */
+  imageUrl?: string,
 ): Promise<FreeAssessment | LabsError> {
   if (!isConfigured('gemini')) {
     return { code: 'not_configured', message: 'Falta GEMINI_API_KEY' };
@@ -72,19 +99,22 @@ export async function assessWritingFree(
   const { key, model, endpoint } = providers.gemini;
   const url = `${endpoint}/${model}:generateContent?key=${key}`;
 
+  const image = imageUrl ? readPublicImage(imageUrl) : null;
+  const promptText = image
+    ? `PREGUNTA DEL EXAMEN (el gráfico/tabla referido está en la imagen adjunta — obsérvalo con atención antes de evaluar):\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`
+    : `PREGUNTA DEL EXAMEN:\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`;
+
   const body = {
-    systemInstruction: { parts: [{ text: buildSystemPrompt(task) }] },
+    systemInstruction: { parts: [{ text: rubric.buildSystemPrompt(task) }] },
     contents: [{
       role: 'user',
-      parts: [{
-        // El conteo va calculado: pedirle al modelo que cuente palabras da
-        // cifras erradas, y la penalización por extensión depende de ese número.
-        text: `PREGUNTA DEL EXAMEN:\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`,
-      }],
+      parts: image
+        ? [{ inlineData: image }, { text: promptText }]
+        : [{ text: promptText }],
     }],
     generationConfig: {
       responseMimeType: 'application/json',
-      responseSchema:   RESPONSE_SCHEMA,
+      responseSchema:   buildResponseSchema(rubric.criteria.map((c) => c.key)),
       // Determinismo: el mismo ensayo debe dar el mismo band.
       temperature: 0,
       // Sin esto, gemini-flash-latest razona antes de responder y un ensayo de

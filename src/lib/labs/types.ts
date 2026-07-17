@@ -22,11 +22,18 @@ export function criterionFor(task: IeltsTask): 'taskAchievement' | 'taskResponse
   return task === 'task2' ? 'taskResponse' : 'taskAchievement';
 }
 
+/**
+ * `criterion` es la key del criterio dentro de la rúbrica activa (ver
+ * WritingRubric abajo) — string genérico porque cada familia de examen
+ * (IELTS/TOEFL/Cambridge) tiene sus propios criterios oficiales, distintos
+ * entre sí. La validez real la impone el responseSchema que arma el
+ * proveedor a partir de rubric.criteria, no el tipo de TypeScript.
+ */
 export interface CriterionScore {
-  criterion: IeltsCriterion;
-  /** Band 0–9 en pasos de 0.5. */
+  criterion: string;
+  /** Puntaje en la escala de la rúbrica activa (ver WritingRubric.scoreScale). */
   band:      number;
-  /** Por qué ese band, en español, referido al texto del estudiante. */
+  /** Por qué ese puntaje, en español, referido al texto del estudiante. */
   reason:    string;
 }
 
@@ -39,8 +46,27 @@ export interface TextIssue {
   /** Por qué está mal, en español. */
   explanation:string;
   severity:   'critica' | 'moderada' | 'menor';
-  criterion:  IeltsCriterion;
+  criterion:  string;
   issueType?: 'vocabulary' | 'grammar' | 'style' | 'unclear';
+}
+
+/** Un criterio de la rúbrica: la key que usa el JSON schema + su label humano. */
+export interface RubricCriterionSpec {
+  key:   string;
+  label: string;
+}
+
+/**
+ * Contrato genérico que debe cumplir la rúbrica de cada familia de examen
+ * (IELTS/TOEFL/Cambridge) para que providers/gemini.ts pueda armar el
+ * responseSchema y el system prompt sin conocer los criterios de antemano.
+ */
+export interface WritingRubric<TaskId extends string = string> {
+  examFamily: string;
+  criteria:   RubricCriterionSpec[];
+  /** Escala de puntaje de ESTA familia — no todas usan bandas 0-9 de IELTS. */
+  scoreScale: { min: number; max: number; step: number };
+  buildSystemPrompt(task: TaskId): string;
 }
 
 /** Capa GRATIS: lo que ve cualquiera sin dejar datos. */

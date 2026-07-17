@@ -9,12 +9,25 @@
 export const LABS_ENABLED = process.env.LABS_ENABLED === 'true';
 
 /**
- * Motor de writing. 'gemini' = free tier ($0). 'anthropic' = Opus (~$0,05 por
- * evaluación, mejor calidad). La rúbrica es la misma para ambos.
- * Sin la key del motor elegido, la ruta responde 503 y no rompe el sitio.
+ * Motor de writing.
+ *
+ * 'auto' (DEFAULT — sin LABS_WRITING_ENGINE seteada) es el modo de producción:
+ * Gemini para tareas con imagen (necesita visión real para calificar Task
+ * Achievement con precisión — Groq falló ese caso en pruebas), Groq para todo
+ * lo que es solo texto (mucho más rápido, 30 req/min vs. 10 de Gemini, y no
+ * se satura tan fácil). La decisión real vive en exam-writing-assess/route.ts
+ * → pickEngine(), que mira si la tarea trae imagen.
+ *
+ * 'gemini' | 'groq' | 'anthropic' fuerzan un único motor para TODO — solo
+ * para pruebas/depuración, nunca el comportamiento esperado en producción.
+ * 'anthropic' además está reservado para un futuro plan pago, no se activa
+ * solo con setear esto.
  */
-export const WRITING_ENGINE: 'gemini' | 'anthropic' =
-  process.env.LABS_WRITING_ENGINE === 'anthropic' ? 'anthropic' : 'gemini';
+export const WRITING_ENGINE: 'auto' | 'gemini' | 'groq' | 'anthropic' =
+  process.env.LABS_WRITING_ENGINE === 'anthropic' ? 'anthropic'
+  : process.env.LABS_WRITING_ENGINE === 'groq' ? 'groq'
+  : process.env.LABS_WRITING_ENGINE === 'gemini' ? 'gemini'
+  : 'auto';
 
 /** Proveedores que corren en el free tier. Sin key → la feature se degrada, no rompe. */
 export const providers = {
@@ -24,6 +37,14 @@ export const providers = {
     endpoint: 'https://generativelanguage.googleapis.com/v1beta/models',
     /** Free tier: 1.500 req/día, 10 req/min. Ver docs/blueprint-labs-ia.md */
     freeTierRpd: 1500,
+  },
+  groq: {
+    key:      process.env.GROQ_API_KEY ?? '',
+    /** Único modelo del free tier de Groq con visión + JSON mode a la vez. */
+    model:    'meta-llama/llama-4-scout-17b-16e-instruct',
+    endpoint: 'https://api.groq.com/openai/v1/chat/completions',
+    /** Free tier: hasta 14.400 req/día, 30 req/min. Ver console.groq.com/docs/rate-limits */
+    freeTierRpd: 14_400,
   },
   /** Capa de calidad. No es free tier: se paga por token. */
   anthropic: {
@@ -41,7 +62,7 @@ export const providers = {
   datamuse:   { endpoint: 'https://api.datamuse.com/words' },
 } as const;
 
-export function isConfigured(p: 'gemini' | 'anthropic' | 'azureSpeech'): boolean {
+export function isConfigured(p: 'gemini' | 'groq' | 'anthropic' | 'azureSpeech'): boolean {
   return providers[p].key.length > 0;
 }
 

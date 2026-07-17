@@ -4,6 +4,8 @@ import { useState, useCallback, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ExamReport } from '@/components/ExamReport';
+import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
+import { isFreeToeflMock } from '@/lib/labs/exam-bridge/toefl';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
@@ -346,28 +348,59 @@ function TOEFLResults({ mock, exam, ans, writeBands, speakBands, onRetry }: {
     { label:'Writing', score: wScore, raw:'Self-assessed' },
   ];
 
+  const wTask1 = wQs.find(q=>q.taskNumber===1);
+  const wTask2 = wQs.find(q=>q.taskNumber===2);
+
   return (
-    <ExamReport
-      data={{
-        examName: exam.name,
-        examSlug: exam.slug,
-        mockTitle: mock.title,
-        totalScore: total,
-        totalMax: 120,
-        totalLabel: `Total Score ${total}/120`,
-        accentColor: exam.color,
-        date: new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' }),
-        skills: sections.map(s => ({
-          skill: s.label,
-          score: s.score,
-          max: 30,
-          label: `${s.score}/30`,
-          raw: s.raw !== 'Self-assessed' ? s.raw : undefined,
-        })),
-      }}
-      onRetry={onRetry}
-      backHref="/examenes/toefl"
-    />
+    <>
+      <ExamReport
+        data={{
+          examName: exam.name,
+          examSlug: exam.slug,
+          mockTitle: mock.title,
+          totalScore: total,
+          totalMax: 120,
+          totalLabel: `Total Score ${total}/120`,
+          accentColor: exam.color,
+          date: new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' }),
+          skills: sections.map(s => ({
+            skill: s.label,
+            score: s.score,
+            max: 30,
+            label: `${s.score}/30`,
+            raw: s.raw !== 'Self-assessed' ? s.raw : undefined,
+          })),
+        }}
+        onRetry={onRetry}
+        backHref="/examenes/toefl"
+      />
+
+      {/* Motor automático de Writing (adicional al self-assess de arriba, no lo reemplaza) */}
+      {wQs.length > 0 && isFreeToeflMock(mock.id) && (
+        <>
+          {wTask1 && (ans.write[wTask1.id] ?? '').trim() && (
+            <WritingAssessmentPanel
+              examSlug="toefl"
+              mockId={mock.id}
+              taskNumber={1}
+              taskLabel="Writing — Integrated Task"
+              essay={ans.write[wTask1.id] ?? ''}
+              fallbackNotice="Tu respuesta de Integrated Writing ha sido registrada."
+            />
+          )}
+          {wTask2 && (ans.write[wTask2.id] ?? '').trim() && (
+            <WritingAssessmentPanel
+              examSlug="toefl"
+              mockId={mock.id}
+              taskNumber={2}
+              taskLabel="Writing — Academic Discussion"
+              essay={ans.write[wTask2.id] ?? ''}
+              fallbackNotice="Tu respuesta de Academic Discussion ha sido registrada."
+            />
+          )}
+        </>
+      )}
+    </>
   );
 }
 

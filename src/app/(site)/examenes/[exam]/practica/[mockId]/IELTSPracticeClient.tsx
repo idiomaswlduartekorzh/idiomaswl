@@ -4,7 +4,9 @@ import { useState, useCallback, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ExamReport } from '@/components/ExamReport';
+import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
+import { isFreeIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
@@ -743,15 +745,44 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
         backHref={`/examenes/ielts`}
       />
 
-      {/* Writing & Speaking — pending review notice */}
-      {(writeQs.length > 0 || speakQs.length > 0) && (
+      {/* Writing — motor automático solo en los sets gratuitos (set-1..4); el resto sigue con revisión manual */}
+      {writeQs.length > 0 && isFreeIeltsMock(mock.id) && (
+        <>
+          {task1 && (ans.write[task1.id] ?? '').trim() && (
+            <WritingAssessmentPanel
+              examSlug="ielts"
+              mockId={mock.id}
+              taskNumber={1}
+              taskLabel="Writing — Task 1"
+              essay={ans.write[task1.id] ?? ''}
+              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 1 en tu dashboard cuando esté corregida."
+            />
+          )}
+          {task2 && (ans.write[task2.id] ?? '').trim() && (
+            <WritingAssessmentPanel
+              examSlug="ielts"
+              mockId={mock.id}
+              taskNumber={2}
+              taskLabel="Writing — Task 2"
+              essay={ans.write[task2.id] ?? ''}
+              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 2 en tu dashboard cuando esté corregida."
+            />
+          )}
+        </>
+      )}
+
+      {/* Writing & Speaking — pending review notice (sets sin motor propio, o Speaking siempre) */}
+      {((writeQs.length > 0 && !isFreeIeltsMock(mock.id)) || speakQs.length > 0) && (
         <div className="ielts-pending-notice">
           <div className="ielts-pending-notice__icon">📝</div>
           <div>
-            <p className="ielts-pending-notice__title">Writing y Speaking — Pendiente de corrección</p>
+            <p className="ielts-pending-notice__title">
+              {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? 'Writing y Speaking' : 'Speaking'} — Pendiente de corrección
+            </p>
             <p className="ielts-pending-notice__sub">
-              Tus respuestas han sido enviadas al profesor. Recibirás tus bandas de Writing y Speaking
-              en tu dashboard cuando estén corregidas.
+              Tus respuestas han sido enviadas al profesor. Recibirás tus bandas
+              {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? ' de Writing y Speaking' : ' de Speaking'}
+              {' '}en tu dashboard cuando estén corregidas.
             </p>
           </div>
         </div>

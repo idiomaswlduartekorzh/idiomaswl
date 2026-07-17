@@ -3,6 +3,8 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
+import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
+import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam,
@@ -672,6 +674,36 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
           ))}
         </div>
       )}
+
+      {/* Motor automático de Writing — solo Cambridge B2 tiene rúbrica propia por ahora */}
+      {mock.examSlug === 'cambridge-b2' && isFreeCambridgeMock(mock.id) && (() => {
+        const cbTask1 = writeQuestions.find(q => q.taskNumber === 1);
+        const cbTask2 = writeQuestions.find(q => q.taskNumber === 2);
+        return (
+          <>
+            {cbTask1 && writeAnswers[cbTask1.id]?.trim() && (
+              <WritingAssessmentPanel
+                examSlug="cambridge-b2"
+                mockId={mock.id}
+                taskNumber={1}
+                taskLabel="Writing — Part 1 (Essay)"
+                essay={writeAnswers[cbTask1.id]}
+                fallbackNotice="Tu Part 1 ha sido registrada para revisión."
+              />
+            )}
+            {cbTask2 && writeAnswers[cbTask2.id]?.trim() && (
+              <WritingAssessmentPanel
+                examSlug="cambridge-b2"
+                mockId={mock.id}
+                taskNumber={2}
+                taskLabel="Writing — Part 2"
+                essay={writeAnswers[cbTask2.id]}
+                fallbackNotice="Tu Part 2 ha sido registrada para revisión."
+              />
+            )}
+          </>
+        );
+      })()}
 
       {speakingNotes.length > 0 && (
         <div className="prac-results__responses">

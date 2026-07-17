@@ -12,62 +12,57 @@
 
 import Anthropic from '@anthropic-ai/sdk';
 import { providers, isConfigured } from '../config';
-import type { FreeAssessment, IeltsTask, LabsError } from '../types';
-import { buildSystemPrompt } from '../rubrics/ielts-writing';
+import type { FreeAssessment, LabsError, WritingRubric } from '../types';
 
-const CRITERIA = [
-  'taskAchievement',
-  'taskResponse',
-  'coherenceCohesion',
-  'lexicalResource',
-  'grammaticalRange',
-] as const;
-
-/** JSON Schema estándar. Equivalente al RESPONSE_SCHEMA de Gemini. */
-const RESPONSE_SCHEMA = {
-  type: 'object',
-  properties: {
-    overallBand: { type: 'number' },
-    criteria: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          criterion: { type: 'string', enum: CRITERIA },
-          band:      { type: 'number' },
-          reason:    { type: 'string' },
+/** JSON Schema estándar. Equivalente al buildResponseSchema de Gemini. */
+function buildResponseSchema(criterionKeys: string[]) {
+  const criterionEnum = { type: 'string', enum: criterionKeys } as const;
+  return {
+    type: 'object',
+    properties: {
+      overallBand: { type: 'number' },
+      criteria: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            criterion: criterionEnum,
+            band:      { type: 'number' },
+            reason:    { type: 'string' },
+          },
+          required: ['criterion', 'band', 'reason'],
+          additionalProperties: false,
         },
-        required: ['criterion', 'band', 'reason'],
-        additionalProperties: false,
+      },
+      allIssues: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            quote:       { type: 'string' },
+            suggestion:  { type: 'string' },
+            explanation: { type: 'string' },
+            severity:    { type: 'string', enum: ['critica', 'moderada', 'menor'] },
+            criterion:   criterionEnum,
+            issueType:   { type: 'string', enum: ['vocabulary', 'grammar', 'style', 'unclear'] },
+          },
+          required: ['quote', 'suggestion', 'explanation', 'severity', 'criterion', 'issueType'],
+          additionalProperties: false,
+        },
       },
     },
-    allIssues: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          quote:       { type: 'string' },
-          suggestion:  { type: 'string' },
-          explanation: { type: 'string' },
-          severity:    { type: 'string', enum: ['critica', 'moderada', 'menor'] },
-          criterion:   { type: 'string', enum: CRITERIA },
-          issueType:   { type: 'string', enum: ['vocabulary', 'grammar', 'style', 'unclear'] },
-        },
-        required: ['quote', 'suggestion', 'explanation', 'severity', 'criterion', 'issueType'],
-        additionalProperties: false,
-      },
-    },
-  },
-  required: ['overallBand', 'criteria', 'allIssues'],
-  additionalProperties: false,
-} as const;
+    required: ['overallBand', 'criteria', 'allIssues'],
+    additionalProperties: false,
+  } as const;
+}
 
 const SEVERITY_ORDER = { critica: 0, moderada: 1, menor: 2 } as const;
 
-export async function assessWritingOpus(
+export async function assessWritingOpus<TaskId extends string>(
   essay: string,
   prompt: string,
-  task: IeltsTask,
+  task: TaskId,
+  rubric: WritingRubric<TaskId>,
 ): Promise<FreeAssessment | LabsError> {
   if (!isConfigured('anthropic')) {
     return { code: 'not_configured', message: 'Falta ANTHROPIC_API_KEY' };
@@ -84,10 +79,10 @@ export async function assessWritingOpus(
       .stream({
         model:      providers.anthropic.model,
         max_tokens: 8000,
-        system:     buildSystemPrompt(task),
+        system:     rubric.buildSystemPrompt(task),
         thinking:   { type: 'adaptive' },
         output_config: {
-          format: { type: 'json_schema', schema: RESPONSE_SCHEMA },
+          format: { type: 'json_schema', schema: buildResponseSchema(rubric.criteria.map((c) => c.key)) },
           effort: 'medium',
         },
         messages: [{

@@ -27,7 +27,7 @@
  * ─────────────────────────────────────────────────────────────────────────
  */
 
-import type { IeltsTask } from '../types';
+import type { IeltsTask, WritingRubric } from '../types';
 import { criterionFor } from '../types';
 
 /**
@@ -132,7 +132,12 @@ posición de principio a fin.`,
   'task1-academic': `TASK ACHIEVEMENT: transferir la información del gráfico con precisión.
 Es una tarea de transferencia de datos, NO de especulación: explicar causas que no están en
 el gráfico no suma, y suele restar. Debe seleccionar los rasgos salientes, dar un overview
-y apoyar con cifras.`,
+y apoyar con cifras.
+Si se adjunta una imagen del gráfico: obsérvala con atención antes de evaluar y VERIFICA que
+las cifras y tendencias que cita el estudiante coincidan con lo que realmente muestra el
+gráfico. Un ensayo bien escrito en inglés pero que inventa o distorsiona los datos del
+gráfico NO puede pasar de band 5 en Task Achievement, sin importar la calidad del idioma:
+esta tarea mide transferencia de información, no redacción en abstracto.`,
   'task1-general': `TASK ACHIEVEMENT: cumplir el propósito de la carta y cubrir los tres
 puntos del enunciado, con un tono (formal/informal) consistente y apropiado al destinatario.`,
 };
@@ -189,4 +194,23 @@ export const SAMPLE_PROMPTS: Record<IeltsTask, string[]> = {
   'task1-general': [
     'You recently stayed at a hotel and were unhappy with the service. Write a letter to the manager.',
   ],
+};
+
+/**
+ * Forma genérica que consume providers/gemini.ts (y a futuro anthropic.ts)
+ * sin conocer los criterios de IELTS de antemano. El criterio de tarea
+ * (taskAchievement vs taskResponse) queda representado en ambas keys — el
+ * bridge de cada examen decide cuál corresponde según el task real.
+ */
+export const ieltsWritingRubric: WritingRubric<IeltsTask> = {
+  examFamily: 'ielts',
+  scoreScale: { min: 0, max: 9, step: 0.5 },
+  criteria: [
+    { key: 'taskAchievement',  label: 'Task Achievement' },
+    { key: 'taskResponse',     label: 'Task Response' },
+    { key: 'coherenceCohesion', label: 'Coherence & Cohesion' },
+    { key: 'lexicalResource',  label: 'Lexical Resource' },
+    { key: 'grammaticalRange', label: 'Grammatical Range & Accuracy' },
+  ],
+  buildSystemPrompt,
 };

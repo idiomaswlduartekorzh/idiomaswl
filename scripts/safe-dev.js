@@ -6,10 +6,43 @@
  * O agregá a package.json: "dev:safe": "node scripts/safe-dev.js"
  */
 
-const { spawn, exec } = require('child_process')
+const { spawn, exec, execSync } = require('child_process')
 const path = require('path')
 const os = require('os')
 const fs = require('fs')
+
+/**
+ * os.freemem() en macOS solo cuenta páginas "free" puras — NO cuenta
+ * "inactive" (caché reclamable al instante) ni "speculative". macOS usa RAM
+ * libre para cachear archivos agresivamente, así que "free" real suele ser
+ * un número artificialmente bajo (100-200 MB) incluso con >1 GB realmente
+ * disponible. Esto hacía que el monitor matara Next casi apenas arrancaba.
+ * `vm_stat` reporta lo mismo que ve Activity Monitor como "disponible".
+ */
+function getAvailableMemMB() {
+  if (process.platform !== 'darwin') return os.freemem() / 1048576
+
+  try {
+    const out = execSync('vm_stat').toString()
+    const pageSizeMatch = out.match(/page size of (\d+) bytes/)
+    const pageSize = pageSizeMatch ? parseInt(pageSizeMatch[1], 10) : 4096
+
+    const pagesOf = (label) => {
+      const m = out.match(new RegExp(`${label}:\\s+(\\d+)\\.`))
+      return m ? parseInt(m[1], 10) : 0
+    }
+
+    const free = pagesOf('Pages free')
+    const inactive = pagesOf('Pages inactive')
+    const speculative = pagesOf('Pages speculative')
+
+    return ((free + inactive + speculative) * pageSize) / 1048576
+  } catch {
+    // Si vm_stat falla por lo que sea, no bloquear el monitoreo — usar el
+    // valor crudo de Node como último recurso.
+    return os.freemem() / 1048576
+  }
+}
 
 const COLORS = {
   reset: '\x1b[0m',
@@ -109,7 +142,7 @@ async function monitorAndRun() {
   const WARN_FREE_MB = 900   // avisar
   const KILL_FREE_MB = 400   // matar para salvar el PC
   const interval = setInterval(() => {
-    const freeMB = os.freemem() / 1048576
+    const freeMB = getAvailableMemMB()
     if (freeMB < KILL_FREE_MB) {
       log('red', `\n🔥 RAM LIBRE CRÍTICA: ${freeMB.toFixed(0)} MB — matando Next para salvar el PC`)
       nextProcess.kill('SIGKILL')
