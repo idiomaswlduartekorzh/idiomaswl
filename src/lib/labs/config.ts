@@ -18,13 +18,14 @@ export const LABS_ENABLED = process.env.LABS_ENABLED === 'true';
  * se satura tan fácil). La decisión real vive en exam-writing-assess/route.ts
  * → pickEngine(), que mira si la tarea trae imagen.
  *
- * 'gemini' | 'groq' | 'anthropic' fuerzan un único motor para TODO — solo
- * para pruebas/depuración, nunca el comportamiento esperado en producción.
- * 'anthropic' además está reservado para un futuro plan pago, no se activa
- * solo con setear esto.
+ * 'gemini' | 'groq' | 'nvidia' | 'anthropic' fuerzan un único motor para
+ * TODO — solo para pruebas/depuración, nunca el comportamiento esperado en
+ * producción. 'anthropic' además está reservado para un futuro plan pago,
+ * no se activa solo con setear esto.
  */
-export const WRITING_ENGINE: 'auto' | 'gemini' | 'groq' | 'anthropic' =
+export const WRITING_ENGINE: 'auto' | 'gemini' | 'groq' | 'nvidia' | 'anthropic' =
   process.env.LABS_WRITING_ENGINE === 'anthropic' ? 'anthropic'
+  : process.env.LABS_WRITING_ENGINE === 'nvidia' ? 'nvidia'
   : process.env.LABS_WRITING_ENGINE === 'groq' ? 'groq'
   : process.env.LABS_WRITING_ENGINE === 'gemini' ? 'gemini'
   : 'auto';
@@ -51,6 +52,19 @@ export const providers = {
     key:   process.env.ANTHROPIC_API_KEY ?? '',
     model: 'claude-opus-4-8',
   },
+  /**
+   * Tercer respaldo cuando Gemini Y Groq se saturan el mismo día (nos pasó).
+   * OJO: no es cuota diaria como los otros dos — son 1.000 créditos de
+   * inferencia GRATIS UNA SOLA VEZ al crear la cuenta en build.nvidia.com,
+   * con límite de 40 req/min. Sirve de colchón, no de reemplazo sostenible.
+   * Solo texto — Nemotron 3 Super no tiene visión, así que no sirve para
+   * IELTS Task 1 (necesita leer el gráfico).
+   */
+  nvidia: {
+    key:      process.env.NVIDIA_API_KEY ?? '',
+    model:    'nvidia/nemotron-3-super-120b-a12b',
+    endpoint: 'https://integrate.api.nvidia.com/v1/chat/completions',
+  },
   azureSpeech: {
     key:    process.env.AZURE_SPEECH_KEY ?? '',
     region: process.env.AZURE_SPEECH_REGION ?? 'eastus',
@@ -62,7 +76,7 @@ export const providers = {
   datamuse:   { endpoint: 'https://api.datamuse.com/words' },
 } as const;
 
-export function isConfigured(p: 'gemini' | 'groq' | 'anthropic' | 'azureSpeech'): boolean {
+export function isConfigured(p: 'gemini' | 'groq' | 'anthropic' | 'azureSpeech' | 'nvidia'): boolean {
   return providers[p].key.length > 0;
 }
 

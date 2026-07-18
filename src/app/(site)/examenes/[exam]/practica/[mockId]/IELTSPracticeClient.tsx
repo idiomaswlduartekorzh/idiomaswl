@@ -3,10 +3,12 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ExamReport } from '@/components/ExamReport';
-import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
+import { LeadCaptureModal } from '@/components/LeadCaptureModal';
+import { IELTSSummaryReport } from '@/components/labs/IELTSSummaryReport';
+import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPanel';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { isFreeIeltsMock } from '@/lib/labs/exam-bridge/ielts';
+import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
@@ -682,6 +684,23 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
   mock: MockExam; exam: Exam; ans: AllAnswers; onRetry: ()=>void;
 }) {
   const [saved, setSaved] = useState(false);
+  // Lazy init (no useEffect): esta vista solo se monta tras terminar el
+  // examen (transición de estado del lado del cliente), nunca en SSR.
+  const [leadCaptured, setLeadCaptured] = useState(() => {
+    try { return !!localStorage.getItem('wl_lead_captured'); } catch { return false; }
+  });
+  const [showDetailLead, setShowDetailLead] = useState(false);
+
+  function handleWantDetail() {
+    try {
+      if (localStorage.getItem('wl_lead_captured')) { setLeadCaptured(true); return; }
+    } catch {}
+    setShowDetailLead(true);
+  }
+  function handleDetailModalClose() {
+    setShowDetailLead(false);
+    try { setLeadCaptured(!!localStorage.getItem('wl_lead_captured')); } catch {}
+  }
 
   const lSections = getSkillSections(mock,'listening').filter(s=>!s.comingSoon);
   const rSections = getSkillSections(mock,'reading');
@@ -702,12 +721,51 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
   const task2 = writeQs.find(q=>q.taskNumber===2);
   const speakingAnswers = Object.fromEntries(speakQs.map(q=>[q.id, ans.speak[q.id]??'']));
 
+  // Motor automático solo en los sets gratuitos (set-1..4); el resto sigue
+  // con revisión manual. Se llama SIEMPRE (reglas de hooks) con essay=''
+  // cuando no aplica — el hook no fetchea en ese caso.
+  const writingEnabled = writeQs.length > 0 && isFreeIeltsMock(mock.id);
+  const task1Essay = writingEnabled && task1 ? (ans.write[task1.id] ?? '').trim() : '';
+  const task2Essay = writingEnabled && task2 ? (ans.write[task2.id] ?? '').trim() : '';
+  const task1Assessment = useWritingAssessment('ielts', mock.id, 1, task1Essay);
+  const task2Assessment = useWritingAssessment('ielts', mock.id, 2, task2Essay);
+
+  // Peso oficial IELTS: Task 2 cuenta el doble que Task 1.
+  const writingBand = (task1Assessment.state === 'success' && task2Assessment.state === 'success')
+    ? Math.round(((task1Assessment.result!.overallBand + task2Assessment.result!.overallBand * 2) / 3) * 2) / 2
+    : null;
+
+  // Si uno de los dos motores (Gemini + respaldo Groq) falló, writingBand se
+  // queda en null para siempre — sin esto el resumen muestra "…"
+  // indistinguible de "todavía cargando", cuando en realidad no va a
+  // resolver solo. 'unavailable' con essay presente cuenta como fallo real
+  // (la petición se hizo y falló), no como "tarea sin responder".
+  const taskFailed = (essay: string, state: typeof task1Assessment.state) =>
+    !!essay && (state === 'saturated' || state === 'unavailable');
+  const writingSaturated = writingEnabled && writingBand === null
+    && (taskFailed(task1Essay, task1Assessment.state) || taskFailed(task2Essay, task2Assessment.state));
+
   const autoSkills = [
     ...(hasListening ? [{ skill:'Listening', score:lBand!, max:9, label:`Band ${lBand}`, raw:`${lCorrect}/${lTotal} correct` }] : []),
     { skill:'Reading', score:rBand, max:9, label:`Band ${rBand}`, raw:`${rCorrect}/${rTotal} correct` },
+    ...(writingBand !== null ? [{ skill:'Writing', score:writingBand, max:9, label:`Band ${writingBand}` }] : []),
   ];
 
-  const partialBand = hasListening ? overallBand([lBand!, rBand]) : rBand;
+  // Para el resumen tipo TRF: Writing aparece como "…" mientras el motor
+  // responde (no bloquea la vista), Speaking como "Pendiente" — no se
+  // autoevalúa todavía, y mostrar un número inventado sería deshonesto.
+  const summarySkills: { skill: string; score: number | null | 'pending' | 'saturated'; max: number }[] = [
+    ...(hasListening ? [{ skill:'Listening', score:lBand as number, max:9 }] : []),
+    { skill:'Reading', score:rBand, max:9 },
+    ...(writingEnabled ? [{ skill:'Writing', score: writingSaturated ? 'saturated' as const : writingBand, max:9 }] : []),
+    ...(speakQs.length > 0 ? [{ skill:'Speaking', score:'pending' as const, max:9 }] : []),
+  ];
+
+  // La banda general de portada solo promedia lo que ya está listo — L/R
+  // aparecen al instante, Writing se suma en cuanto el motor responde (unos
+  // segundos), sin bloquear la vista del resumen.
+  const readyBands = [lBand, rBand, writingBand].filter((b): b is number => b !== null);
+  const partialBand = overallBand(readyBands);
 
   const reportData = {
     examName: exam.name,
@@ -736,40 +794,16 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const hasDetailContent = writingEnabled || (mock.sections.some(s=>(s.skill==='listening'||s.skill==='reading')&&!s.comingSoon));
+
   return (
     <div className="prac-results">
-      <ExamReport
-        data={reportData}
-        skipSave
-        onRetry={onRetry}
-        backHref={`/examenes/ielts`}
+      <IELTSSummaryReport
+        mockTitle={mock.title}
+        date={reportData.date}
+        skills={summarySkills}
+        overallBand={readyBands.length > 0 ? partialBand : null}
       />
-
-      {/* Writing — motor automático solo en los sets gratuitos (set-1..4); el resto sigue con revisión manual */}
-      {writeQs.length > 0 && isFreeIeltsMock(mock.id) && (
-        <>
-          {task1 && (ans.write[task1.id] ?? '').trim() && (
-            <WritingAssessmentPanel
-              examSlug="ielts"
-              mockId={mock.id}
-              taskNumber={1}
-              taskLabel="Writing — Task 1"
-              essay={ans.write[task1.id] ?? ''}
-              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 1 en tu dashboard cuando esté corregida."
-            />
-          )}
-          {task2 && (ans.write[task2.id] ?? '').trim() && (
-            <WritingAssessmentPanel
-              examSlug="ielts"
-              mockId={mock.id}
-              taskNumber={2}
-              taskLabel="Writing — Task 2"
-              essay={ans.write[task2.id] ?? ''}
-              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 2 en tu dashboard cuando esté corregida."
-            />
-          )}
-        </>
-      )}
 
       {/* Writing & Speaking — pending review notice (sets sin motor propio, o Speaking siempre) */}
       {((writeQs.length > 0 && !isFreeIeltsMock(mock.id)) || speakQs.length > 0) && (
@@ -786,6 +820,61 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
             </p>
           </div>
         </div>
+      )}
+
+      {/* Reporte detallado — bloqueado detrás del mismo lead que ya usa
+          LeadCaptureModal (flag wl_lead_captured compartido). Sin esto,
+          nada de pregunta-por-pregunta ni corrección de Writing se ve. */}
+      {hasDetailContent && !leadCaptured && (
+        <div className="mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 text-center">
+          <p className="text-3xl mb-2">🔒</p>
+          <p className="font-semibold text-[var(--fg)] mb-1">Reporte detallado bloqueado</p>
+          <p className="text-sm text-[var(--muted)] mb-4 max-w-md mx-auto">
+            Respuesta por respuesta de Listening y Reading, y la corrección completa de tu
+            Writing (errores marcados + versión corregida) — déjanos tu WhatsApp para verlo.
+          </p>
+          <button onClick={handleWantDetail} className="btn">Ver reporte detallado</button>
+        </div>
+      )}
+
+      {showDetailLead && (
+        <LeadCaptureModal
+          examSlug={exam.slug}
+          examScore={reportData.totalLabel}
+          examName={exam.name}
+          onClose={handleDetailModalClose}
+        />
+      )}
+
+      {leadCaptured && (
+      <>
+      {writingEnabled && (
+        <>
+          {task1Essay && (
+            <IELTSWritingReportPanel
+              examSlug="ielts"
+              mockId={mock.id}
+              taskNumber={1}
+              taskLabel="Writing — Task 1"
+              essay={task1Essay}
+              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 1 en tu dashboard cuando esté corregida."
+              state={task1Assessment.state}
+              result={task1Assessment.result}
+            />
+          )}
+          {task2Essay && (
+            <IELTSWritingReportPanel
+              examSlug="ielts"
+              mockId={mock.id}
+              taskNumber={2}
+              taskLabel="Writing — Task 2"
+              essay={task2Essay}
+              fallbackNotice="Tu respuesta ha sido enviada al profesor. Recibirás tu banda de Writing Task 2 en tu dashboard cuando esté corregida."
+              state={task2Assessment.state}
+              result={task2Assessment.result}
+            />
+          )}
+        </>
       )}
 
       <div className="prac-results__review">
@@ -914,6 +1003,8 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
           </div>
         ))}
       </div>
+      </>
+      )}
 
       <div className="prac-results__actions">
         <button onClick={onRetry} className="btn btn-ghost">Try again</button>

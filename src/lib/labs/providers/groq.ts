@@ -20,7 +20,7 @@
  */
 
 import { providers, isConfigured } from '../config';
-import type { FreeAssessment, LabsError, WritingRubric } from '../types';
+import type { FreeAssessment, FullAssessment, LabsError, WritingRubric } from '../types';
 import type { InlineImage } from './gemini';
 
 /**
@@ -65,8 +65,12 @@ function buildJsonSchema(criterionKeys: string[]) {
           additionalProperties: false,
         },
       },
+      rewritten: {
+        type: 'string',
+        description: 'El ensayo del estudiante reescrito corrigiendo todos los errores encontrados — sus ideas y estructura, no un ensayo genérico distinto.',
+      },
     },
-    required: ['overallBand', 'criteria', 'allIssues'],
+    required: ['overallBand', 'criteria', 'allIssues', 'rewritten'],
     additionalProperties: false,
   } as const;
 }
@@ -79,7 +83,7 @@ export async function assessWritingGroq<TaskId extends string>(
   task: TaskId,
   rubric: WritingRubric<TaskId>,
   image?: InlineImage,
-): Promise<FreeAssessment | LabsError> {
+): Promise<FullAssessment | LabsError> {
   if (!isConfigured('groq')) {
     return { code: 'not_configured', message: 'Falta GROQ_API_KEY' };
   }
@@ -155,7 +159,12 @@ export async function assessWritingGroq<TaskId extends string>(
 
   if (!raw) return lastError;
 
-  let parsed: { overallBand: number; criteria: FreeAssessment['criteria']; allIssues: FreeAssessment['topIssues'] };
+  let parsed: {
+    overallBand: number;
+    criteria:    FreeAssessment['criteria'];
+    allIssues:   FreeAssessment['topIssues'];
+    rewritten?:  string;
+  };
   try {
     parsed = JSON.parse(raw);
   } catch {
@@ -163,15 +172,24 @@ export async function assessWritingGroq<TaskId extends string>(
     return { code: 'provider_error', message: 'Respuesta ilegible del evaluador.' };
   }
 
+  // json_object (fallback sin schema) no garantiza NADA de forma — el modelo
+  // puede devolver "criteria"/"allIssues" con cualquier forma, o ninguna. Sin
+  // esta validación, un objeto/string en vez de array tumbaba el request con
+  // un 500 crudo en vez de degradar con gracia (nos pasó en producción).
+  if (!Array.isArray(parsed.criteria) || !Array.isArray(parsed.allIssues) || typeof parsed.overallBand !== 'number') {
+    console.error('[labs/groq] forma inesperada en json_object:', JSON.stringify(parsed).slice(0, 300));
+    return { code: 'provider_error', message: 'Respuesta con formato inesperado del evaluador.' };
+  }
+
   // Salvavidas para cuando cayó a json_object (sin enum forzado en servidor):
   // descarta cualquier criterio que no exista en la rúbrica activa.
   const validKeys = new Set(rubric.criteria.map((c) => c.key));
-  const criteria = (parsed.criteria ?? []).filter((c) => validKeys.has(c.criterion));
+  const criteria = parsed.criteria.filter((c) => c && validKeys.has(c.criterion));
 
   // Descarta citas que el modelo no copió literalmente — mismo criterio que
   // los demás proveedores.
-  const grounded = (parsed.allIssues ?? []).filter(
-    (i) => essay.includes(i.quote) && validKeys.has(i.criterion),
+  const grounded = parsed.allIssues.filter(
+    (i) => i && essay.includes(i.quote) && validKeys.has(i.criterion),
   );
   const sorted = [...grounded].sort(
     (a, b) => SEVERITY_ORDER[a.severity] - SEVERITY_ORDER[b.severity],
@@ -182,6 +200,9 @@ export async function assessWritingGroq<TaskId extends string>(
     criteria,
     topIssues:   sorted.slice(0, 3),
     hiddenIssueCount: Math.max(0, sorted.length - 3),
+    allIssues:   sorted,
+    // json_object (fallback sin schema) puede omitir rewritten — degradar al original.
+    rewritten:   parsed.rewritten ?? essay,
     wordCount,
   };
 }

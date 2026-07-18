@@ -5,7 +5,10 @@ import { assessWritingFree } from '@/lib/labs/providers/gemini';
 import type { InlineImage } from '@/lib/labs/providers/gemini';
 import { assessWritingGroq } from '@/lib/labs/providers/groq';
 import { assessWritingOpus } from '@/lib/labs/providers/anthropic';
-import type { FreeAssessment, LabsError, WritingRubric } from '@/lib/labs/types';
+import { assessWritingNvidia } from '@/lib/labs/providers/nvidia';
+import type { FullAssessment, LabsError, WritingRubric } from '@/lib/labs/types';
+
+type Engine = 'gemini' | 'groq' | 'nvidia' | 'anthropic';
 
 const IMAGE_MIME: Record<string, string> = {
   '.png': 'image/png',
@@ -163,19 +166,38 @@ export async function POST(req: Request) {
   const task = adapter.taskIdFor(taskNumber as TaskNumber);
   const image = assignment.imageUrl ? (await fetchInlineImage(assignment.imageUrl, req)) ?? undefined : undefined;
 
+  async function callEngine(eng: Engine): Promise<FullAssessment | LabsError> {
+    if (eng === 'anthropic') return assessWritingOpus(essay, assignment!.promptText, task, adapter.rubric);
+    if (eng === 'nvidia')    return assessWritingNvidia(essay, assignment!.promptText, task, adapter.rubric);
+    if (eng === 'groq')      return assessWritingGroq(essay, assignment!.promptText, task, adapter.rubric, image);
+    return assessWritingFree(essay, assignment!.promptText, task, adapter.rubric, image);
+  }
+
   // 'auto' (default en producción): Gemini para tareas con gráfico (visión
   // real), Groq para todo lo que es solo texto (más rápido, no se satura
-  // tan fácil). Con LABS_WRITING_ENGINE forzada, ese motor gana siempre —
-  // solo para pruebas.
-  const engine = WRITING_ENGINE === 'auto'
-    ? (image ? 'gemini' : 'groq')
-    : WRITING_ENGINE;
+  // tan fácil). Nemotron (NVIDIA) es tercer respaldo SOLO para tareas de
+  // solo texto — no tiene visión, así que nunca entra en la cadena de una
+  // tarea con gráfico (IELTS Task 1). Con LABS_WRITING_ENGINE forzada, ese
+  // motor gana siempre y SIN respaldo — modo de depuración de un solo
+  // proveedor.
+  const engineChain: Engine[] = WRITING_ENGINE === 'auto'
+    ? (image ? ['gemini', 'groq'] : ['groq', 'gemini', 'nvidia'])
+    : [WRITING_ENGINE];
 
-  const result: FreeAssessment | LabsError = engine === 'anthropic'
-    ? await assessWritingOpus(essay, assignment.promptText, task, adapter.rubric)
-    : engine === 'groq'
-    ? await assessWritingGroq(essay, assignment.promptText, task, adapter.rubric, image)
-    : await assessWritingFree(essay, assignment.promptText, task, adapter.rubric, image);
+  let result = await callEngine(engineChain[0]);
+  let engineUsed: Engine = engineChain[0];
+
+  // Solo reintenta con el siguiente motor de la cadena ante saturación/caída
+  // del actual — no ante errores de configuración (esos fallarían igual en
+  // el respaldo) ni de validación. Si la tarea lleva imagen y toca usar Groq
+  // de respaldo, la imagen se manda igual — el frontend marca el aviso de
+  // precisión cuando engineUsed no es 'gemini' en una tarea con gráfico.
+  for (const nextEngine of engineChain.slice(1)) {
+    if (!('code' in result) || (result.code !== 'rate_limited' && result.code !== 'provider_error')) break;
+    console.error(`[exam-writing-assess] ${engineUsed} falló (${result.code}), probando respaldo ${nextEngine}`);
+    result = await callEngine(nextEngine);
+    engineUsed = nextEngine;
+  }
 
   if ('code' in result) {
     const status = result.code === 'rate_limited' ? 429
@@ -184,5 +206,5 @@ export async function POST(req: Request) {
     return NextResponse.json(result, { status });
   }
 
-  return NextResponse.json(result);
+  return NextResponse.json({ ...result, engineUsed });
 }

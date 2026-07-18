@@ -7,9 +7,10 @@ export const metadata = {
 };
 
 const ENGINE_LABEL = {
-  auto:      'Automático — Gemini (Task 1) + Groq (Task 2)',
+  auto:      'Automático — Gemini (Task 1) + Groq (Task 2) + Nemotron (respaldo)',
   gemini:    'Gemini Flash (free tier)',
   groq:      'Groq — Llama 4 Scout (free tier)',
+  nvidia:    'NVIDIA Nemotron 3 Super (créditos gratis)',
   anthropic: 'Claude Opus',
 } as const;
 

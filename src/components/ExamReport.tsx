@@ -213,6 +213,9 @@ export function ExamReport({ data, onRetry, backHref, skipSave }: {
           <p className="exam-report__eyebrow">{data.examName} · {data.mockTitle}</p>
           <h2 className="exam-report__title">Performance Report</h2>
           {data.date && <p className="exam-report__date">{data.date}</p>}
+          <p style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: '0.35rem', maxWidth: '32rem', lineHeight: 1.4 }}>
+            Este es tu puntaje estimado por WeLearn — no es un resultado oficial certificado de {data.examName} ni sustituye el examen real.
+          </p>
         </div>
       </div>
 

@@ -12,7 +12,7 @@
 
 import Anthropic from '@anthropic-ai/sdk';
 import { providers, isConfigured } from '../config';
-import type { FreeAssessment, LabsError, WritingRubric } from '../types';
+import type { FreeAssessment, FullAssessment, LabsError, WritingRubric } from '../types';
 
 /** JSON Schema estándar. Equivalente al buildResponseSchema de Gemini. */
 function buildResponseSchema(criterionKeys: string[]) {
@@ -50,8 +50,12 @@ function buildResponseSchema(criterionKeys: string[]) {
           additionalProperties: false,
         },
       },
+      rewritten: {
+        type: 'string',
+        description: 'El ensayo del estudiante reescrito corrigiendo todos los errores encontrados — sus ideas y estructura, no un ensayo genérico distinto.',
+      },
     },
-    required: ['overallBand', 'criteria', 'allIssues'],
+    required: ['overallBand', 'criteria', 'allIssues', 'rewritten'],
     additionalProperties: false,
   } as const;
 }
@@ -63,7 +67,7 @@ export async function assessWritingOpus<TaskId extends string>(
   prompt: string,
   task: TaskId,
   rubric: WritingRubric<TaskId>,
-): Promise<FreeAssessment | LabsError> {
+): Promise<FullAssessment | LabsError> {
   if (!isConfigured('anthropic')) {
     return { code: 'not_configured', message: 'Falta ANTHROPIC_API_KEY' };
   }
@@ -111,6 +115,7 @@ export async function assessWritingOpus<TaskId extends string>(
     overallBand: number;
     criteria:    FreeAssessment['criteria'];
     allIssues:   FreeAssessment['topIssues'];
+    rewritten:   string;
   };
   try {
     parsed = JSON.parse(raw);
@@ -132,6 +137,8 @@ export async function assessWritingOpus<TaskId extends string>(
     criteria:    parsed.criteria ?? [],
     topIssues:   sorted.slice(0, 3),
     hiddenIssueCount: Math.max(0, sorted.length - 3),
+    allIssues:   sorted,
+    rewritten:   parsed.rewritten ?? essay,
     wordCount,
   };
 }

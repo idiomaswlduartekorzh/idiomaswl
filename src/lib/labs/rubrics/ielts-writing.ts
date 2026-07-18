@@ -176,10 +176,23 @@ Clasifica cada error con "issueType", que es lo que pinta el color sobre el text
 Ante la duda entre "vocabulary" y "grammar", elige el que el estudiante debe estudiar
 para no repetirlo.
 
+REPORTA TODOS los errores que encuentres en "allIssues" — no te limites a 3 ni resumas.
+El estudiante ve el conteo completo; omitir errores reales es peor que reportar de más.
+
+"rewritten": reescribe el ensayo COMPLETO del estudiante corrigiendo cada error de gramática,
+vocabulario y estilo que identificaste. Reglas estrictas:
+  · Es SU ensayo arreglado, no uno nuevo — mismas ideas, mismo orden de argumentos, misma
+    longitud aproximada. Si el estudiante comparó dos países, la reescritura compara los
+    mismos dos países con los mismos datos.
+  · NO subas el nivel de vocabulario más allá de lo necesario para corregir el error — no
+    conviertas un ensayo band 5 en uno band 9. El estudiante debe reconocer su propio texto.
+  · Corrige TODO lo que señalaste en allIssues, no solo los primeros tres.
+
 Devuelves SIEMPRE JSON válido conforme al esquema. Las bandas van en pasos de 0.5.
-Todas las explicaciones en español. Los "quote" deben ser fragmentos EXACTOS y literales del
-texto del estudiante, copiados carácter por carácter — si inventas o parafraseas una cita, el
-sistema la descarta y el error no se le muestra al estudiante.`;
+Todas las explicaciones en español (el "rewritten" va en inglés, es el ensayo). Los "quote"
+deben ser fragmentos EXACTOS y literales del texto del estudiante, copiados carácter por
+carácter — si inventas o parafraseas una cita, el sistema la descarta y el error no se le
+muestra al estudiante.`;
 }
 
 /** Prompts oficiales de práctica. Zhanna puede ampliar esta lista. */

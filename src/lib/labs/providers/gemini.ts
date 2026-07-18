@@ -6,7 +6,7 @@
  */
 
 import { providers, isConfigured } from '../config';
-import type { FreeAssessment, LabsError, WritingRubric } from '../types';
+import type { FreeAssessment, FullAssessment, LabsError, WritingRubric } from '../types';
 
 /**
  * OJO: la imagen llega YA descargada (mimeType + base64) desde el caller —
@@ -61,8 +61,12 @@ function buildResponseSchema(criterionKeys: string[]) {
           required: ['quote', 'suggestion', 'explanation', 'severity', 'criterion', 'issueType'],
         },
       },
+      rewritten: {
+        type: 'STRING',
+        description: 'El ensayo del estudiante reescrito corrigiendo todos los errores encontrados — sus ideas y estructura, no un ensayo genérico distinto.',
+      },
     },
-    required: ['overallBand', 'criteria', 'allIssues'],
+    required: ['overallBand', 'criteria', 'allIssues', 'rewritten'],
   } as const;
 }
 
@@ -75,7 +79,7 @@ export async function assessWritingFree<TaskId extends string>(
   rubric: WritingRubric<TaskId>,
   /** Ya descargada por el caller (fetch sobre la URL pública). Solo tareas con gráfico. */
   image?: InlineImage,
-): Promise<FreeAssessment | LabsError> {
+): Promise<FullAssessment | LabsError> {
   if (!isConfigured('gemini')) {
     return { code: 'not_configured', message: 'Falta GEMINI_API_KEY' };
   }
@@ -152,7 +156,12 @@ export async function assessWritingFree<TaskId extends string>(
 
   if (!raw) return lastError;
 
-  let parsed: { overallBand: number; criteria: FreeAssessment['criteria']; allIssues: FreeAssessment['topIssues'] };
+  let parsed: {
+    overallBand: number;
+    criteria:    FreeAssessment['criteria'];
+    allIssues:   FreeAssessment['topIssues'];
+    rewritten:   string;
+  };
   try {
     parsed = JSON.parse(raw);
   } catch {
@@ -173,6 +182,8 @@ export async function assessWritingFree<TaskId extends string>(
     criteria:    parsed.criteria ?? [],
     topIssues:   sorted.slice(0, 3),
     hiddenIssueCount: Math.max(0, sorted.length - 3),
+    allIssues:   sorted,
+    rewritten:   parsed.rewritten ?? essay,
     wordCount,
   };
 }

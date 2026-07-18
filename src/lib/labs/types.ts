@@ -73,20 +73,27 @@ export interface WritingRubric<TaskId extends string = string> {
 export interface FreeAssessment {
   overallBand: number;
   criteria:    CriterionScore[];
-  /** Máximo 3. El resto queda detrás del lead. */
+  /** Máximo 3. El resto queda detrás del lead (solo /labs prototype). */
   topIssues:   TextIssue[];
   wordCount:   number;
   /** Cuántos errores más se detectaron y no se muestran. Es el gancho. */
   hiddenIssueCount: number;
+  /**
+   * Motor que realmente generó este resultado — puede ser el de respaldo si
+   * el primario (definido por WRITING_ENGINE=auto) falló. Ver
+   * exam-writing-assess/route.ts. Ausente en el prototipo de /labs.
+   */
+  engineUsed?: 'gemini' | 'groq' | 'nvidia' | 'anthropic';
 }
 
-/** Capa PAGA (post-lead): el reporte completo. */
+/** Reporte completo — usado por los exámenes reales (no el teaser de /labs). */
 export interface FullAssessment extends FreeAssessment {
+  /** TODOS los errores encontrados, no solo los 3 del teaser. */
   allIssues:   TextIssue[];
-  /** El ensayo reescrito a band 7+, para comparar. */
+  /** El ensayo del estudiante reescrito corrigiendo los errores — SU ensayo, no uno genérico. */
   rewritten:   string;
-  /** Plan de mejora semana por semana. */
-  studyPlan:   { week: number; focus: string; actions: string[] }[];
+  /** Plan de mejora semana por semana. Opcional — no todas las rúbricas lo generan aún. */
+  studyPlan?:  { week: number; focus: string; actions: string[] }[];
   /** Puente al método WeLearn: qué paso de los 17 ataca esto. */
   weLearnStep?: string;
 }
