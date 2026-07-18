@@ -121,7 +121,7 @@ export default function ProcesosPage() {
 
           <Task1ChartTypeGuide />
 
-          <div className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)' }}>
+          <div className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
             <IELTSProcessDiagramVisual variant={exIdx} />
           </div>

@@ -141,7 +141,7 @@ export default function MapasPage() {
           </div>
 
           {/* Original IELTS-style map visual */}
-          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem' }}>
+          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.65rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
             <IELTSMapDiagramVisual variant={exIdx} />
           </div>
