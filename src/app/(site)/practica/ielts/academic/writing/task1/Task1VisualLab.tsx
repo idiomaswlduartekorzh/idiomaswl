@@ -201,51 +201,75 @@ export function IELTSTableVisual({ variant = 0 }: { variant?: number }) {
   );
 }
 
+function SvgLines({ x, y, lines, size = 11, color = 'var(--muted)', weight = 500, lineHeight = 14 }: { x: number; y: number; lines: string[]; size?: number; color?: string; weight?: number; lineHeight?: number }) {
+  return <text x={x} y={y} fontSize={size} fontWeight={weight} fill={color}>{lines.map((line, index) => <tspan key={`${line}-${index}`} x={x} dy={index === 0 ? 0 : lineHeight}>{line}</tspan>)}</text>;
+}
+
+function ProcessIcon({ variant, x, y, color }: { variant: number; x: number; y: number; color: string }) {
+  if (variant === 1) return <g transform={`translate(${x} ${y})`}><circle cx="16" cy="17" r="12" fill="#b45309" /><circle cx="29" cy="12" r="9" fill="#d97706" /><path d="M8 29 C18 24, 31 28, 38 36" fill="none" stroke="#166534" strokeWidth="4" strokeLinecap="round" /><path d="M12 35 H37" stroke="#a16207" strokeWidth="3" /></g>;
+  if (variant === 2) return <g transform={`translate(${x} ${y})`}><path d="M22 3 C22 3, 8 18, 8 27 A14 14 0 0 0 36 27 C36 18, 22 3, 22 3Z" fill="#38bdf8" stroke="#0369a1" strokeWidth="2" /><path d="M16 27 C20 31, 27 31, 31 26" fill="none" stroke="#e0f2fe" strokeWidth="2" /></g>;
+  if (variant === 3) return <g transform={`translate(${x} ${y})`}><path d="M5 15 H38 V36 H5Z" fill="#c2410c" stroke="#9a3412" strokeWidth="2" /><path d="M5 15 L12 8 H45 L38 15Z" fill="#f97316" stroke="#9a3412" strokeWidth="2" /><path d="M17 15 V36 M29 15 V36 M5 25 H38" stroke="#fed7aa" strokeWidth="2" /></g>;
+  if (variant === 4) return <g transform={`translate(${x} ${y})`}><ellipse cx="23" cy="22" rx="14" ry="11" fill="#facc15" stroke="#a16207" strokeWidth="2" /><path d="M15 14 L9 4 C17 2, 21 8, 21 14 M28 13 L35 4 C40 10, 36 16, 31 18" fill="#dbeafe" stroke="#2563eb" strokeWidth="2" /><path d="M16 14 V31 M24 12 V33 M32 16 V29" stroke="#713f12" strokeWidth="3" /><circle cx="37" cy="22" r="2" fill="#1f2937" /></g>;
+  return <g transform={`translate(${x} ${y})`}><path d="M13 7 H30 L34 13 V37 H9 V13Z" fill="#bfdbfe" stroke={color} strokeWidth="2" /><path d="M17 7 V14 H31" fill="none" stroke={color} strokeWidth="2" /><path d="M15 23 H29 M15 29 H29" stroke={color} strokeWidth="2" /></g>;
+}
+
 export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number }) {
   const datasets = [
-    { title: 'How plastic bottles are recycled', steps: [['Collection', 'Used bottles are collected from public recycling bins.'], ['Sorting', 'Plastic is separated at a recycling centre.'], ['Washing', 'Bottles are cleaned before being cut into flakes.'], ['Melting', 'The flakes are heated into plastic pellets.'], ['Manufacturing', 'The pellets become new products.']] },
-    { title: 'How coffee is prepared for sale', steps: [['Harvesting', 'Ripe coffee cherries are picked from the plants.'], ['Drying', 'The cherries are spread out and dried in the sun.'], ['Removing skins', 'The outer layers are removed from the dried fruit.'], ['Roasting', 'The beans are heated until they reach the desired colour.'], ['Packaging', 'Roasted beans are ground and packed for sale.']] },
-    { title: 'How bottled water is produced', steps: [['Extraction', 'Water is taken from an underground spring.'], ['Filtering', 'Unwanted particles are removed from the water.'], ['Purification', 'The water is treated to make it safe to drink.'], ['Bottling', 'Clean water is poured into plastic bottles.'], ['Distribution', 'The bottles are labelled and sent to shops.']] },
-    { title: 'How bricks are manufactured', steps: [['Digging', 'Clay is removed from the ground by an excavator.'], ['Crushing', 'The clay is broken into smaller pieces.'], ['Moulding', 'The material is shaped into rectangular bricks.'], ['Drying', 'The bricks are left in a drying chamber.'], ['Firing', 'They are heated in a kiln before delivery.']] },
-    { title: 'Honey bee life cycle', steps: [['Egg', 'The queen lays eggs inside the cells of a hive.'], ['Larva', 'The eggs hatch and become small larvae.'], ['Pupa', 'The larvae are sealed inside cells to develop.'], ['Adult', 'Fully grown bees emerge from the cells.'], ['Colony', 'Adults feed the young and maintain the hive.']] },
+    { title: 'How plastic bottles are recycled', steps: [['Collection', 'Used bottles are collected from public bins.'], ['Sorting', 'Plastic is separated at a recycling centre.'], ['Washing', 'Bottles are cleaned before being cut into flakes.'], ['Melting', 'The flakes are heated into plastic pellets.'], ['Manufacturing', 'The pellets become new products.']] },
+    { title: 'How coffee is prepared for sale', steps: [['Harvesting', 'Ripe cherries are picked from coffee plants.'], ['Drying', 'The cherries are spread out in the sun.'], ['Removing skins', 'The outer layers are removed from the fruit.'], ['Roasting', 'The beans are heated to the desired colour.'], ['Packaging', 'The beans are ground and packed for sale.']] },
+    { title: 'How bottled water is produced', steps: [['Extraction', 'Water is taken from an underground spring.'], ['Filtering', 'Unwanted particles are removed from the water.'], ['Purification', 'The water is treated to make it safe.'], ['Bottling', 'Clean water is poured into bottles.'], ['Distribution', 'The bottles are labelled and sent to shops.']] },
+    { title: 'How bricks are manufactured', steps: [['Digging', 'Clay is removed from the ground.'], ['Crushing', 'The clay is broken into smaller pieces.'], ['Moulding', 'The material is shaped into bricks.'], ['Drying', 'The bricks are left in a drying chamber.'], ['Firing', 'They are heated in a kiln before delivery.']] },
+    { title: 'Honey bee life cycle', steps: [['Egg', 'The queen lays eggs inside hive cells.'], ['Larva', 'The eggs hatch and become larvae.'], ['Pupa', 'The larvae develop inside sealed cells.'], ['Adult', 'Fully grown bees emerge from the cells.'], ['Colony', 'Adults feed the young and maintain the hive.']] },
   ];
   const data = datasets[variant % datasets.length];
-  const steps = data.steps.map((step, i) => [String(i + 1), step[0], step[1]]);
   const palette = ['#0f3d8c', '#059669', '#7c3aed', '#d97706', '#dc2626'];
+  const positions = [[34, 132], [245, 132], [456, 132], [456, 352], [245, 352]];
+  const lines = data.steps.map(([, text]) => text.match(/.{1,34}(?:\s|$)/g)?.map(line => line.trim()).slice(0, 2) ?? [text]);
   return (
-    <svg viewBox="0 0 800 410" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title} focusable="false">
-      <desc>{data.title}. The process contains {steps.length} stages, beginning with {steps[0][1]} and ending with {steps[steps.length - 1][1]}.</desc>
-      <defs>
-        <marker id={`arrow-task1-process-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-          <path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" />
-        </marker>
-      </defs>
-      <rect x="16" y="16" width="768" height="378" rx="18" fill="var(--bg)" stroke="var(--line-soft)" />
-      <rect x="16" y="16" width="768" height="58" rx="18" fill="rgba(15,61,140,0.07)" />
-      <text x="40" y="51" fontSize="17" fontWeight="800" fill="var(--ink)">{data.title}</text>
-      <text x="40" y="96" fontSize="11" fontWeight="800" letterSpacing="1.4" fill="var(--muted)">SEQUENCE OF STAGES</text>
-      {steps.map((step, i) => {
-        const x = i < 3 ? 42 + i * 246 : i === 3 ? 534 : 288;
-        const y = i < 3 ? 116 : 272;
-        const color = palette[i];
-        return (
-          <g key={step[0]}>
-            <rect x={x} y={y} width="210" height="112" rx="14" fill="var(--bg)" stroke="var(--line-soft)" />
-            <rect x={x} y={y} width="210" height="8" rx="4" fill={color} />
-            <circle cx={x + 28} cy={y + 32} r="18" fill={color} />
-            <text x={x + 28} y={y + 38} textAnchor="middle" fontSize="14" fontWeight="900" fill="#fff">{step[0]}</text>
-            <text x={x + 56} y={y + 37} fontSize="14" fontWeight="800" fill="var(--ink)">{step[1]}</text>
-            <foreignObject x={x + 18} y={y + 58} width="174" height="44">
-              <p style={{ margin: 0, color: 'var(--muted)', fontSize: 11, lineHeight: 1.3 }}>{step[2]}</p>
-            </foreignObject>
-          </g>
-        );
-      })}
-      <line x1="252" y1="172" x2="284" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
-      <line x1="498" y1="172" x2="530" y2="172" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
-      <path d="M 672 228 C 672 257, 640 260, 640 272" fill="none" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
-      <line x1="530" y1="328" x2="498" y2="328" stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-${variant})`} />
+    <div style={{ width: '100%' }}>
+      <style>{`.task1-visual-mobile{display:none}@media(max-width:640px){.task1-visual-wide{display:none!important}.task1-visual-mobile{display:block!important}}`}</style>
+    <svg className="task1-visual-wide" viewBox="0 0 720 570" style={{ width: '100%', minWidth: 640, display: 'block' }} role="img" aria-label={data.title} focusable="false">
+      <desc>{data.title}. A five-stage {variant === 4 ? 'cyclical life cycle' : 'process'} from {data.steps[0][0]} to {data.steps[4][0]}.</desc>
+      <defs><marker id={`arrow-task1-process-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" /></marker></defs>
+      <rect x="10" y="10" width="700" height="550" rx="18" fill="var(--bg)" stroke="var(--line-soft)" />
+      <rect x="10" y="10" width="700" height="70" rx="18" fill="rgba(15,61,140,0.07)" />
+      <text x="32" y="43" fontSize="17" fontWeight="900" fill="var(--ink)">{data.title}</text>
+      <text x="32" y="64" fontSize="10" fontWeight="800" letterSpacing="1.3" fill="var(--muted)">{variant === 4 ? 'CYCLICAL LIFE CYCLE' : 'LINEAR SEQUENCE OF STAGES'} · IELTS ACADEMIC TASK 1 VISUAL</text>
+      {data.steps.map((step, i) => { const [x, y] = positions[i]; const color = palette[i]; return <g key={step[0]}>
+        <rect x={x} y={y} width="180" height="146" rx="15" fill="var(--bg)" stroke="var(--line-soft)" />
+        <rect x={x} y={y} width="180" height="8" rx="4" fill={color} />
+        <circle cx={x + 27} cy={y + 35} r="17" fill={color} /><text x={x + 27} y={y + 40} textAnchor="middle" fontSize="13" fontWeight="900" fill="#fff">{i + 1}</text>
+        <ProcessIcon variant={variant} x={x + 112} y={y + 12} color={color} />
+        <SvgLines x={x + 18} y={y + 77} lines={step[0].match(/.{1,22}(?:\s|$)/g)?.map(line => line.trim()).slice(0, 2) ?? [step[0]]} size={13} color="var(--ink)" weight={900} lineHeight={15} />
+        <SvgLines x={x + 18} y={y + 111} lines={lines[i]} size={10} color="var(--muted)" lineHeight={13} />
+      </g>; })}
+      <line x1="214" y1="205" x2="238" y2="205" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <line x1="425" y1="205" x2="449" y2="205" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <path d="M546 278 V334" fill="none" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      <line x1="449" y1="425" x2="425" y2="425" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-process-${variant})`} />
+      {variant === 4 && <path d="M245 425 C145 510, 90 300, 126 275" fill="none" stroke="#059669" strokeWidth="2.5" strokeDasharray="7 6" markerEnd={`url(#arrow-task1-process-${variant})`} />}
+      <text x="32" y="535" fontSize="10" fill="var(--muted)">Describe the stages in order; do not add causes or opinions that the visual does not show.</text>
     </svg>
+    <svg className="task1-visual-mobile" viewBox="0 0 360 850" style={{ width: '100%', display: 'none' }} role="img" aria-label={`${data.title}, mobile process view`} focusable="false">
+      <desc>{data.title}. The five stages are shown in a vertical sequence for narrow screens.</desc>
+      <defs><marker id={`arrow-task1-process-mobile-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" /></marker></defs>
+      <rect x="8" y="8" width="344" height="834" rx="16" fill="var(--bg)" stroke="var(--line-soft)" />
+      <rect x="8" y="8" width="344" height="74" rx="16" fill="rgba(15,61,140,0.07)" />
+      <SvgLines x={24} y={38} lines={data.title.match(/.{1,30}(?:\s|$)/g)?.map(line => line.trim()).slice(0, 2) ?? [data.title]} size={15} color="var(--ink)" weight={900} lineHeight={18} />
+      <text x="24" y="70" fontSize="9" fontWeight="800" letterSpacing="1" fill="var(--muted)">{variant === 4 ? 'CYCLICAL LIFE CYCLE' : 'LINEAR PROCESS'} · IELTS TASK 1</text>
+      {data.steps.map((step, i) => { const y = 104 + i * 143; const color = palette[i]; return <g key={step[0]}>
+        <rect x="24" y={y} width="312" height="118" rx="14" fill="var(--bg)" stroke="var(--line-soft)" />
+        <rect x="24" y={y} width="312" height="7" rx="4" fill={color} />
+        <circle cx="49" cy={y + 32} r="16" fill={color} /><text x="49" y={y + 37} textAnchor="middle" fontSize="12" fontWeight="900" fill="#fff">{i + 1}</text>
+        <ProcessIcon variant={variant} x={267} y={y + 10} color={color} />
+        <SvgLines x={76} y={y + 39} lines={step[0].match(/.{1,25}(?:\s|$)/g)?.map(line => line.trim()).slice(0, 2) ?? [step[0]]} size={13} color="var(--ink)" weight={900} lineHeight={15} />
+        <SvgLines x={40} y={y + 76} lines={step[1].match(/.{1,43}(?:\s|$)/g)?.map(line => line.trim()).slice(0, 2) ?? [step[1]]} size={10} color="var(--muted)" lineHeight={13} />
+        {i < 4 && <line x1="180" y1={y + 119} x2="180" y2={y + 138} stroke="#0f3d8c" strokeWidth="2.5" markerEnd={`url(#arrow-task1-process-mobile-${variant})`} />}
+      </g>; })}
+      {variant === 4 && <path d="M32 786 C8 820, 10 98, 44 96" fill="none" stroke="#059669" strokeWidth="2" strokeDasharray="6 5" markerEnd={`url(#arrow-task1-process-mobile-${variant})`} />}
+      <text x="24" y="830" fontSize="9" fill="var(--muted)">Report the stages in order; do not add unsupported causes.</text>
+    </svg>
+    </div>
   );
 }
 
@@ -260,45 +284,69 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
   const data = datasets[variant % datasets.length];
   const cellsBefore = data.before.map((label, i) => [label, ['#dcfce7', '#fee2e2', '#e5e7eb', '#dbeafe'][i]]);
   const cellsAfter = data.after.map((label, i) => [label, ['#fef3c7', '#dbeafe', '#e5e7eb', '#ede9fe'][i]]);
-  const MapGrid = ({ title, cells, side }: { title: string; cells: string[][]; side: 'left' | 'right' }) => (
-    <g>
-      <text x={side === 'left' ? 74 : 454} y="82" fontSize="16" fontWeight="900" fill="var(--ink)">{title}</text>
-      <rect x={side === 'left' ? 52 : 432} y="96" width="330" height="252" rx="14" fill="rgba(15,61,140,0.035)" stroke="var(--line-soft)" />
-      <path d={side === 'left' ? 'M62 220 H372 M212 106 V338' : 'M442 220 H752 M592 106 V338'} stroke="#cbd5e1" strokeWidth="18" />
-      <path d={side === 'left' ? 'M62 220 H372 M212 106 V338' : 'M442 220 H752 M592 106 V338'} stroke="var(--bg)" strokeWidth="2" strokeDasharray="8 7" />
-      {cells.map((cell, i) => {
-        const baseX = side === 'left' ? 70 : 450;
-        const x = baseX + (i % 2) * 150;
-        const y = 110 + Math.floor(i / 2) * 112;
-        return (
-          <g key={cell[0]}>
-            <rect x={x} y={y} width="132" height="82" rx="11" fill={cell[1]} stroke="var(--line-soft)" />
-            <foreignObject x={x + 10} y={y + 25} width="112" height="38">
-              <p style={{ margin: 0, textAlign: 'center', color: 'var(--ink-2)', fontWeight: 800, fontSize: 11, lineHeight: 1.2 }}>{cell[0]}</p>
-            </foreignObject>
-          </g>
-        );
-      })}
-    </g>
-  );
+  const Feature = ({ label, x, y, after }: { label: string; x: number; y: number; after: boolean }) => {
+    const lower = label.toLowerCase();
+    const lines = label.match(/.{1,17}(?:\s|$)/g)?.map(line => line.trim()).slice(0, 2) ?? [label];
+    const tone = after ? '#0f3d8c' : '#64748b';
+    const isGreen = /park|garden|woodland|fields|pond/.test(lower);
+    const isRoad = /road|path|carriageway/.test(lower);
+    const isWater = /harbour|marina/.test(lower);
+    return <g>
+      <rect x={x} y={y} width="144" height="92" rx="12" fill={after ? '#f8fbff' : '#fff'} stroke={after ? 'rgba(15,61,140,0.35)' : 'var(--line-soft)'} />
+      {isGreen ? <path d={`M${x + 17} ${y + 25} C${x + 35} ${y + 8}, ${x + 55} ${y + 15}, ${x + 68} ${y + 30} C${x + 56} ${y + 52}, ${x + 31} ${y + 55}, ${x + 17} ${y + 25}`} fill="#bbf7d0" stroke="#16a34a" strokeWidth="1.5" /> : isRoad ? <g><path d={`M${x + 15} ${y + 30} H${x + 75}`} stroke="#94a3b8" strokeWidth="14" /><path d={`M${x + 15} ${y + 30} H${x + 75}`} stroke="#fff" strokeWidth="2" strokeDasharray="7 5" /></g> : isWater ? <path d={`M${x + 14} ${y + 34} C${x + 28} ${y + 22}, ${x + 42} ${y + 46}, ${x + 56} ${y + 34} S${x + 84} ${y + 22}, ${x + 104} ${y + 34}`} fill="none" stroke="#0284c7" strokeWidth="10" /> : <g><rect x={x + 18} y={y + 18} width="58" height="37" rx="4" fill={after ? '#bfdbfe' : '#e2e8f0'} stroke={tone} strokeWidth="1.5" /><path d={`M${x + 14} ${y + 18} L${x + 47} ${y + 5} L${x + 80} ${y + 18}`} fill={after ? '#93c5fd' : '#cbd5e1'} stroke={tone} strokeWidth="1.5" /><rect x={x + 42} y={y + 39} width="10" height="16" fill="#fff" stroke={tone} /></g>}
+      <SvgLines x={x + 82} y={y + 28} lines={lines} size={10} color="var(--ink-2)" weight={800} lineHeight={12} />
+    </g>;
+  };
+  const MapGrid = ({ title, cells, side }: { title: string; cells: string[][]; side: 'left' | 'right' }) => {
+    const baseX = side === 'left' ? 34 : 514;
+    return <g>
+      <text x={baseX + 12} y="84" fontSize="16" fontWeight="900" fill="var(--ink)">{title}</text>
+      <rect x={baseX} y="98" width="432" height="326" rx="16" fill={side === 'left' ? 'rgba(100,116,139,0.035)' : 'rgba(15,61,140,0.035)'} stroke="var(--line-soft)" />
+      <path d={`M${baseX + 12} 260 H${baseX + 420} M${baseX + 216} 110 V412`} stroke="#cbd5e1" strokeWidth="24" />
+      <path d={`M${baseX + 12} 260 H${baseX + 420} M${baseX + 216} 110 V412`} stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
+      <path d={`M${baseX + 48} 120 V400 M${baseX + 384} 120 V400`} stroke="#e2e8f0" strokeWidth="2" strokeDasharray="3 7" />
+      {cells.map((cell, i) => <Feature key={cell[0]} label={cell[0]} x={baseX + 22 + (i % 2) * 198} y={126 + Math.floor(i / 2) * 138} after={side === 'right'} />)}
+      <g transform={`translate(${baseX + 376} 112)`}><text x="0" y="0" fontSize="11" fontWeight="900" fill="#0f3d8c">N</text><path d="M5 7 V34" stroke="#0f3d8c" strokeWidth="2" markerEnd={`url(#arrow-task1-map-${variant})`} /></g>
+    </g>;
+  };
   return (
-    <svg viewBox="0 0 820 390" style={{ width: '100%', display: 'block' }} role="img" aria-label={data.title} focusable="false">
+    <div style={{ width: '100%' }}>
+      <style>{`.task1-map-mobile{display:none}@media(max-width:640px){.task1-map-wide{display:none!important}.task1-map-mobile{display:block!important}}`}</style>
+    <svg className="task1-map-wide" viewBox="0 0 980 520" style={{ width: '100%', minWidth: 900, display: 'block' }} role="img" aria-label={data.title} focusable="false">
       <desc>{data.title}. The map compares {data.beforeLabel} with {data.afterLabel}; the labelled land uses and transport features are shown in the two panels.</desc>
       <defs>
         <marker id={`arrow-task1-map-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
           <path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" />
         </marker>
       </defs>
-      <rect x="16" y="16" width="788" height="358" rx="18" fill="var(--bg)" stroke="var(--line-soft)" />
-      <rect x="16" y="16" width="788" height="50" rx="18" fill="rgba(15,61,140,0.07)" />
-      <text x="40" y="47" fontSize="15" fontWeight="800" fill="var(--ink)">{data.title}</text>
+      <rect x="16" y="16" width="948" height="488" rx="18" fill="var(--bg)" stroke="var(--line-soft)" />
+      <rect x="16" y="16" width="948" height="58" rx="18" fill="rgba(15,61,140,0.07)" />
+      <text x="40" y="48" fontSize="17" fontWeight="900" fill="var(--ink)">{data.title}</text>
+      <text x="40" y="66" fontSize="10" fontWeight="800" letterSpacing="1.2" fill="var(--muted)">BEFORE / AFTER MAP · LOCATION, CHANGE AND COMPARISON</text>
       <MapGrid title={data.beforeLabel} side="left" cells={cellsBefore} />
       <MapGrid title={data.afterLabel} side="right" cells={cellsAfter} />
-      <path d="M 390 220 L 426 220" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-${variant})`} />
-      <path d="M 738 88 L 738 116" stroke="#0f3d8c" strokeWidth="2" markerEnd={`url(#arrow-task1-map-${variant})`} />
-      <text x="731" y="82" fontSize="11" fontWeight="900" fill="#0f3d8c">N</text>
-      <text x="48" y="365" fontSize="10" fill="var(--muted)">Roads and land-use blocks are schematic, as in an IELTS Academic Task 1 map.</text>
+      <path d="M 470 260 L 505 260" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-${variant})`} />
+      <g transform="translate(42 454)"><rect x="0" y="0" width="14" height="14" rx="3" fill="#e2e8f0" stroke="#64748b" /><text x="22" y="11" fontSize="10" fill="var(--muted)">earlier feature</text><rect x="154" y="0" width="14" height="14" rx="3" fill="#dbeafe" stroke="#0f3d8c" /><text x="176" y="11" fontSize="10" fill="var(--muted)">later feature</text><rect x="304" y="0" width="14" height="14" rx="3" fill="#cbd5e1" stroke="#64748b" /><text x="326" y="11" fontSize="10" fill="var(--muted)">road or context</text></g>
+      <text x="42" y="492" fontSize="10" fill="var(--muted)">Use location, direction and change language; report only features supported by the maps.</text>
     </svg>
+    <svg className="task1-map-mobile" viewBox="0 0 360 900" style={{ width: '100%', display: 'none' }} role="img" aria-label={`${data.title}, mobile before and after map`} focusable="false">
+      <desc>{data.title}. The before and after panels are stacked vertically for narrow screens.</desc>
+      <defs><marker id={`arrow-task1-map-mobile-${variant}`} markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0f3d8c" /></marker></defs>
+      <rect x="8" y="8" width="344" height="884" rx="16" fill="var(--bg)" stroke="var(--line-soft)" />
+      <text x="24" y="38" fontSize="15" fontWeight="900" fill="var(--ink)">{data.title}</text>
+      <text x="24" y="58" fontSize="9" fontWeight="800" letterSpacing="1" fill="var(--muted)">BEFORE / AFTER MAP · IELTS TASK 1</text>
+      <rect x="20" y="82" width="320" height="320" rx="15" fill="rgba(100,116,139,0.035)" stroke="var(--line-soft)" />
+      <text x="32" y="108" fontSize="15" fontWeight="900" fill="var(--ink)">{data.beforeLabel}</text>
+      <path d="M28 242 H332 M180 92 V392" stroke="#cbd5e1" strokeWidth="22" /><path d="M28 242 H332 M180 92 V392" stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
+      {cellsBefore.map((cell, i) => <Feature key={cell[0]} label={cell[0]} x={30 + (i % 2) * 154} y={132 + Math.floor(i / 2) * 124} after={false} />)}
+      <path d="M180 416 V478" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-mobile-${variant})`} />
+      <rect x="20" y="500" width="320" height="320" rx="15" fill="rgba(15,61,140,0.035)" stroke="var(--line-soft)" />
+      <text x="32" y="526" fontSize="15" fontWeight="900" fill="var(--ink)">{data.afterLabel}</text>
+      <path d="M28 660 H332 M180 510 V810" stroke="#cbd5e1" strokeWidth="22" /><path d="M28 660 H332 M180 510 V810" stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
+      {cellsAfter.map((cell, i) => <Feature key={cell[0]} label={cell[0]} x={30 + (i % 2) * 154} y={550 + Math.floor(i / 2) * 124} after />)}
+      <text x="24" y="852" fontSize="9" fill="var(--muted)">Compare location, direction and change. Report only supported features.</text>
+    </svg>
+    </div>
   );
 }
 
