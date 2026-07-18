@@ -151,7 +151,7 @@ const LESSONS: VisualLesson[] = [
     ],
     options: [
       { correct: true, text: 'Overall, the town centre became more developed, with industrial and open areas replaced by housing, education and commercial facilities.', reason: 'Correct: it summarises the spatial transformation and change categories.' },
-      { correct: false, text: 'Overall, the factory was in the top right in 1990, while the school was in the top right in 2020.', reason: 'Demasiado localizado; eso va en detalles.' },
+      { correct: false, text: 'Overall, the factory was in the top right in 1990, while the school was in the top right in 2020.', reason: 'Too localised; this belongs in the detail paragraphs.' },
       { correct: false, text: 'Overall, the number of residents increased dramatically.', reason: 'The map contains no population data.' },
     ],
   },

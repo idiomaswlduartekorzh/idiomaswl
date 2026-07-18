@@ -673,7 +673,7 @@ export default function IntroduccionContent() {
           </p>
 
           <div style={{ marginBottom: '2.5rem' }}>
-            <div role="tablist" aria-label="Tipos de visual" style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', paddingBottom: '0.55rem', borderBottom: '1px solid var(--line-soft)', scrollbarWidth: 'thin' }}>
+            <div role="tablist" aria-label="Visual types" style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', paddingBottom: '0.55rem', borderBottom: '1px solid var(--line-soft)', scrollbarWidth: 'thin' }}>
               {EXAMPLE_GROUPS.map((group) => (
                 <button key={group.id} type="button" role="tab" aria-selected={activeGroup === group.id} onClick={() => { setActiveGroup(group.id); setActiveEx(`${group.id}-0`); }} style={{ flex: '0 0 auto', minWidth: 126, padding: '0.7rem 0.85rem', borderRadius: 10, border: `1px solid ${activeGroup === group.id ? C : 'var(--line-soft)'}`, background: activeGroup === group.id ? `${C}10` : 'var(--bg)', color: activeGroup === group.id ? C : 'var(--muted)', cursor: 'pointer', textAlign: 'left' }}>
                   <span style={{ display: 'block', fontSize: '0.68rem', fontFamily: 'var(--mono)', fontWeight: 800, textTransform: 'uppercase' }}>{group.label}</span>

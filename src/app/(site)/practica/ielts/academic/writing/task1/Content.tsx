@@ -54,7 +54,7 @@ const SKILLS = [
     n: 6,
     label: 'Maps',
     icon: '🗺️',
-    desc: 'Lenguaje de ubicación (to the north of, adjacent to) y cambio (was replaced by, was demolished).',
+    desc: 'Location language (to the north of, adjacent to) and change language (was replaced by, was demolished).',
     href: '/practica/ielts/academic/writing/task1/mapas',
     tag: 'Maps',
   },

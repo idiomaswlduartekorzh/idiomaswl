@@ -50,7 +50,7 @@ export default function Page() {
   return (
     <>
       <LearningResourceJsonLd
-        name="IELTS Writing Task 1: tablas"
+        name="IELTS Writing Task 1: tables"
         url={URL}
         description="Original IELTS Academic Writing Task 1 lesson and practice for describing tables."
         teaches={[

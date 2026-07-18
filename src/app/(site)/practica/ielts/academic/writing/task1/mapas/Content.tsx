@@ -22,7 +22,7 @@ interface MapExercise {
 
 const EXERCISES: MapExercise[] = [
   {
-    title: 'Town centre changes: 1990 versus 2020',
+    title: 'Town centre changes, 1990-2020',
     changes: [
       { id: 'a', before: 'Park', after: 'Housing estate', location: 'in the north-western part of the centre', modelSentence: 'The park in the north-western part of the town centre was replaced by a housing estate.' },
       { id: 'b', before: 'Factory', after: 'School', location: 'in the north-eastern part of the centre', modelSentence: 'The factory in the north-eastern part of the centre was demolished and replaced by a school.' },
@@ -32,7 +32,7 @@ const EXERCISES: MapExercise[] = [
     modelParagraph: 'Comparing the two maps, the town centre underwent substantial redevelopment between 1990 and 2020. The park and factory in the northern half were replaced by a housing estate and a school respectively, while the small road across the centre was widened into a dual carriageway. In the south-east, the car park was converted into a shopping centre.',
   },
   {
-    title: 'University campus: 1995 versus 2025',
+    title: 'University campus development, 1995-2025',
     changes: [
       { id: 'a', before: 'Lecture hall', after: 'Library', location: 'in the north-west', modelSentence: 'The lecture hall in the north-west was replaced by a library.' },
       { id: 'b', before: 'Garden', after: 'Student flats', location: 'in the north-east', modelSentence: 'The garden in the north-east was redeveloped as student flats.' },
@@ -42,7 +42,7 @@ const EXERCISES: MapExercise[] = [
     modelParagraph: 'The campus changed considerably between 1995 and 2025. The lecture hall and garden in the northern half were replaced by a library and student flats respectively. In the southern half, the car park became a cycle path, while the sports field was converted into a sports centre.',
   },
   {
-    title: 'Coastal village: 2000 versus 2025',
+    title: 'Coastal village changes, 2000-2025',
     changes: [
       { id: 'a', before: 'Fishing harbour', after: 'Marina', location: 'on the eastern coast', modelSentence: 'The fishing harbour on the eastern coast was redeveloped as a marina.' },
       { id: 'b', before: 'Fields', after: 'Holiday resort', location: 'in the northern area', modelSentence: 'The fields in the northern area were replaced by a holiday resort.' },
@@ -52,7 +52,7 @@ const EXERCISES: MapExercise[] = [
     modelParagraph: 'The coastal village experienced extensive development over the twenty-five-year period. The fishing harbour became a marina, while the fields in the north were replaced by a holiday resort. In addition, the narrow road through the village was widened and the cottages near the shoreline were replaced by apartments.',
   },
   {
-    title: 'Park redevelopment: 1980 versus 2020',
+    title: 'Park changes, 1980-2020',
     changes: [
       { id: 'a', before: 'Woodland', after: 'Playground', location: 'in the north-west', modelSentence: 'The woodland in the north-west was cleared to make way for a playground.' },
       { id: 'b', before: 'Pond', after: 'Cafe', location: 'in the north-east', modelSentence: 'The pond in the north-east was replaced by a cafe.' },
@@ -62,7 +62,7 @@ const EXERCISES: MapExercise[] = [
     modelParagraph: 'The park was substantially redesigned between 1980 and 2020. Woodland and a pond in the northern half were replaced by a playground and a cafe, while the footpath along the southern edge became a cycle track. The rose garden was also removed and replaced by an open-air stage.',
   },
   {
-    title: 'Shopping centre redevelopment: before versus after',
+    title: 'Shopping centre redevelopment',
     changes: [
       { id: 'a', before: 'Small shops', after: 'Department store', location: 'in the western block', modelSentence: 'The small shops in the western block were replaced by a department store.' },
       { id: 'b', before: 'Bus stop', after: 'Taxi rank', location: 'beside the main entrance', modelSentence: 'The bus stop beside the main entrance was converted into a taxi rank.' },
@@ -116,6 +116,22 @@ export default function MapasPage() {
 
           <Task1ChartTypeGuide />
 
+          <div role="tablist" aria-label="Map examples" style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', padding: '0 0 0.55rem', marginBottom: '0.85rem' }}>
+            {EXERCISES.map((item, index) => (
+              <button
+                key={item.title}
+                type="button"
+                role="tab"
+                aria-selected={exIdx === index}
+                aria-controls="map-example-panel"
+                onClick={() => { setExIdx(index); setSelectedChange(null); setText(''); setRevealed(false); }}
+                style={{ flex: '0 0 auto', minWidth: 170, padding: '0.65rem 0.75rem', borderRadius: 8, border: exIdx === index ? '2px solid #0f3d8c' : '1px solid var(--line-soft)', background: exIdx === index ? 'rgba(15,61,140,0.07)' : 'var(--bg)', color: exIdx === index ? '#0f3d8c' : 'var(--ink-2)', fontSize: '0.74rem', fontWeight: 800, cursor: 'pointer' }}
+              >
+                {String(index + 1).padStart(2, '0')} · {item.title}
+              </button>
+            ))}
+          </div>
+
           {/* Vocab */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
@@ -141,7 +157,7 @@ export default function MapasPage() {
           </div>
 
           {/* Original IELTS-style map visual */}
-          <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem', overflowX: 'auto' }}>
+          <div id="map-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.65rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
             <IELTSMapDiagramVisual variant={exIdx} />
           </div>

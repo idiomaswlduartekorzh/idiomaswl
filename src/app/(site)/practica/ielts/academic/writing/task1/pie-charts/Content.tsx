@@ -111,12 +111,12 @@ const MODEL_ANSWER = [
     note: 'Summarise relative size, extremes and one important comparison without listing every percentage.',
   },
   {
-    label: 'Cuerpo 1',
+    label: 'Body 1',
     text: 'Rent took up 36% of monthly spending, making it the dominant category. Food was also substantial at 22%, meaning that these two essential expenses together accounted for well over half of the total budget.',
     note: 'Group the largest categories and add a useful aggregate observation.',
   },
   {
-    label: 'Cuerpo 2',
+    label: 'Body 2',
     text: 'Transport and leisure were much smaller and very similar, at 15% and 14% respectively. The remaining categories were savings, at 8%, and other expenses, at just 5%, making them the least significant parts of the budget.',
     note: 'Compare medium-sized categories and group the smaller ones to avoid a mechanical list.',
   },
