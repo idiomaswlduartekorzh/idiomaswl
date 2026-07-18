@@ -21,7 +21,7 @@ interface ProcessExercise {
 
 const EXERCISES: ProcessExercise[] = [
   {
-    title: 'Plastic bottle recycling',
+    title: 'How plastic bottles are recycled',
     steps: [
       { n: 1, active: 'Workers collect used bottles from public recycling bins', passive: 'Used bottles are collected from public recycling bins', sequencer: 'First,' },
       { n: 2, active: 'Workers separate plastic from other materials', passive: 'Plastic is separated from other materials', sequencer: 'Next,' },
@@ -32,7 +32,7 @@ const EXERCISES: ProcessExercise[] = [
     modelParagraph: 'First, used bottles are collected from public recycling bins. Next, the plastic is separated from other materials at a recycling centre. After that, the bottles are washed before being cut into small flakes. The flakes are then heated and turned into plastic pellets. Finally, the pellets are moulded into new bottles, clothing or containers.',
   },
   {
-    title: 'Coffee preparation for sale',
+    title: 'How coffee is prepared for sale',
     steps: [
       { n: 1, active: 'Farmers pick ripe coffee cherries from the plants', passive: 'Ripe coffee cherries are picked from the plants', sequencer: 'First,' },
       { n: 2, active: 'Workers spread the cherries out and dry them in the sun', passive: 'The cherries are spread out and dried in the sun', sequencer: 'Next,' },
@@ -43,7 +43,7 @@ const EXERCISES: ProcessExercise[] = [
     modelParagraph: 'First, ripe coffee cherries are picked from the plants. Next, they are spread out and dried in the sun. After that, the outer layers are removed from the dried fruit. The beans are then heated until they reach the desired colour. Finally, the roasted beans are ground and packed for sale.',
   },
   {
-    title: 'Bottled water production',
+    title: 'How bottled water is produced',
     steps: [
       { n: 1, active: 'A company takes water from an underground spring', passive: 'Water is taken from an underground spring', sequencer: 'First,' },
       { n: 2, active: 'Filters remove unwanted particles from the water', passive: 'Unwanted particles are removed from the water', sequencer: 'Next,' },
@@ -54,7 +54,7 @@ const EXERCISES: ProcessExercise[] = [
     modelParagraph: 'First, water is taken from an underground spring. Next, unwanted particles are removed by a filtering system. After that, the water is treated to make it safe to drink. Clean water is then poured into plastic bottles. Finally, the bottles are labelled and sent to shops for distribution.',
   },
   {
-    title: 'Brick manufacturing',
+    title: 'How bricks are manufactured',
     steps: [
       { n: 1, active: 'An excavator removes clay from the ground', passive: 'Clay is removed from the ground by an excavator', sequencer: 'First,' },
       { n: 2, active: 'A machine breaks the clay into smaller pieces', passive: 'The clay is broken into smaller pieces', sequencer: 'Next,' },
@@ -121,7 +121,23 @@ export default function ProcesosPage() {
 
           <Task1ChartTypeGuide />
 
-          <div className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)', overflowX: 'auto' }}>
+          <div role="tablist" aria-label="Process examples" style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', padding: '0 0 0.55rem', marginBottom: '0.85rem' }}>
+            {EXERCISES.map((item, index) => (
+              <button
+                key={item.title}
+                type="button"
+                role="tab"
+                aria-selected={exIdx === index}
+                aria-controls="process-example-panel"
+                onClick={() => { setExIdx(index); setAnswers({}); setRevealed(false); }}
+                style={{ flex: '0 0 auto', minWidth: 170, padding: '0.65rem 0.75rem', borderRadius: 8, border: exIdx === index ? '2px solid #0f3d8c' : '1px solid var(--line-soft)', background: exIdx === index ? 'rgba(15,61,140,0.07)' : 'var(--bg)', color: exIdx === index ? '#0f3d8c' : 'var(--ink-2)', fontSize: '0.74rem', fontWeight: 800, cursor: 'pointer' }}
+              >
+                {String(index + 1).padStart(2, '0')} · {item.title}
+              </button>
+            ))}
+          </div>
+
+          <div id="process-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
             <IELTSProcessDiagramVisual variant={exIdx} />
           </div>

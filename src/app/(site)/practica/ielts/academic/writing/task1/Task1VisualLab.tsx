@@ -274,12 +274,13 @@ export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number })
 }
 
 export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
+  type MapPosition = 'north-west' | 'north-east' | 'south-west' | 'south-east';
   const datasets = [
-    { title: 'Town centre changes, 1990-2020', beforeLabel: '1990', afterLabel: '2020', before: ['Park', 'Factory', 'Small road', 'Car park'], after: ['Housing estate', 'School', 'Dual carriageway', 'Shopping centre'] },
-    { title: 'University campus development, 1995-2025', beforeLabel: '1995', afterLabel: '2025', before: ['Lecture hall', 'Garden', 'Car park', 'Sports field'], after: ['Library', 'Student flats', 'Cycle path', 'Sports centre'] },
-    { title: 'Coastal village changes, 2000-2025', beforeLabel: '2000', afterLabel: '2025', before: ['Fishing harbour', 'Fields', 'Narrow road', 'Cottages'], after: ['Marina', 'Holiday resort', 'Main road', 'Apartments'] },
-    { title: 'Park changes, 1980-2020', beforeLabel: '1980', afterLabel: '2020', before: ['Woodland', 'Pond', 'Footpath', 'Rose garden'], after: ['Playground', 'Cafe', 'Cycle track', 'Open-air stage'] },
-    { title: 'Shopping centre redevelopment', beforeLabel: 'Before', afterLabel: 'After', before: ['Small shops', 'Bus stop', 'Market', 'Car park'], after: ['Department store', 'Taxi rank', 'Food court', 'Multi-storey car park'] },
+    { title: 'Town centre changes, 1990-2020', beforeLabel: '1990', afterLabel: '2020', before: ['Park', 'Factory', 'Small road', 'Car park'], after: ['Housing estate', 'School', 'Dual carriageway', 'Shopping centre'], positions: ['north-west', 'north-east', 'south-west', 'south-east'] as MapPosition[] },
+    { title: 'University campus development, 1995-2025', beforeLabel: '1995', afterLabel: '2025', before: ['Lecture hall', 'Garden', 'Car park', 'Sports field'], after: ['Library', 'Student flats', 'Cycle path', 'Sports centre'], positions: ['north-west', 'north-east', 'south-west', 'south-east'] as MapPosition[] },
+    { title: 'Coastal village changes, 2000-2025', beforeLabel: '2000', afterLabel: '2025', before: ['Fishing harbour', 'Fields', 'Narrow road', 'Cottages'], after: ['Marina', 'Holiday resort', 'Main road', 'Apartments'], positions: ['north-east', 'north-west', 'south-west', 'south-east'] as MapPosition[] },
+    { title: 'Park changes, 1980-2020', beforeLabel: '1980', afterLabel: '2020', before: ['Woodland', 'Pond', 'Footpath', 'Rose garden'], after: ['Playground', 'Cafe', 'Cycle track', 'Open-air stage'], positions: ['north-west', 'north-east', 'south-west', 'south-east'] as MapPosition[] },
+    { title: 'Shopping centre redevelopment', beforeLabel: 'Before', afterLabel: 'After', before: ['Small shops', 'Bus stop', 'Market', 'Car park'], after: ['Department store', 'Taxi rank', 'Food court', 'Multi-storey car park'], positions: ['north-west', 'north-east', 'south-west', 'south-east'] as MapPosition[] },
   ];
   const data = datasets[variant % datasets.length];
   const cellsBefore = data.before.map((label, i) => [label, ['#dcfce7', '#fee2e2', '#e5e7eb', '#dbeafe'][i]]);
@@ -297,6 +298,18 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <SvgLines x={x + 82} y={y + 28} lines={lines} size={10} color="var(--ink-2)" weight={800} lineHeight={12} />
     </g>;
   };
+  const positionToDesktop = (position: MapPosition) => ({
+    'north-west': [22, 28],
+    'north-east': [220, 28],
+    'south-west': [22, 166],
+    'south-east': [220, 166],
+  }[position]);
+  const positionToMobile = (position: MapPosition, yOffset: number) => ({
+    'north-west': [10, yOffset],
+    'north-east': [164, yOffset],
+    'south-west': [10, yOffset + 124],
+    'south-east': [164, yOffset + 124],
+  }[position]);
   const MapGrid = ({ title, cells, side }: { title: string; cells: string[][]; side: 'left' | 'right' }) => {
     const baseX = side === 'left' ? 34 : 514;
     return <g>
@@ -305,7 +318,8 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <path d={`M${baseX + 12} 260 H${baseX + 420} M${baseX + 216} 110 V412`} stroke="#cbd5e1" strokeWidth="24" />
       <path d={`M${baseX + 12} 260 H${baseX + 420} M${baseX + 216} 110 V412`} stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
       <path d={`M${baseX + 48} 120 V400 M${baseX + 384} 120 V400`} stroke="#e2e8f0" strokeWidth="2" strokeDasharray="3 7" />
-      {cells.map((cell, i) => <Feature key={cell[0]} label={cell[0]} x={baseX + 22 + (i % 2) * 198} y={126 + Math.floor(i / 2) * 138} after={side === 'right'} />)}
+      {variant % datasets.length === 2 && <path d={`M${baseX + 382} 110 C${baseX + 398} 140, ${baseX + 374} 170, ${baseX + 392} 205 S${baseX + 374} 270, ${baseX + 392} 305 S${baseX + 374} 370, ${baseX + 392} 412 H${baseX + 432} V110 Z`} fill="#e0f2fe" stroke="#0284c7" strokeWidth="2" />}
+      {cells.map((cell, i) => { const [x, y] = positionToDesktop(data.positions[i]); return <Feature key={cell[0]} label={cell[0]} x={baseX + x} y={98 + y} after={side === 'right'} />; })}
       <g transform={`translate(${baseX + 376} 112)`}><text x="0" y="0" fontSize="11" fontWeight="900" fill="#0f3d8c">N</text><path d="M5 7 V34" stroke="#0f3d8c" strokeWidth="2" markerEnd={`url(#arrow-task1-map-${variant})`} /></g>
     </g>;
   };
@@ -326,7 +340,7 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <MapGrid title={data.beforeLabel} side="left" cells={cellsBefore} />
       <MapGrid title={data.afterLabel} side="right" cells={cellsAfter} />
       <path d="M 470 260 L 505 260" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-${variant})`} />
-      <g transform="translate(42 454)"><rect x="0" y="0" width="14" height="14" rx="3" fill="#e2e8f0" stroke="#64748b" /><text x="22" y="11" fontSize="10" fill="var(--muted)">earlier feature</text><rect x="154" y="0" width="14" height="14" rx="3" fill="#dbeafe" stroke="#0f3d8c" /><text x="176" y="11" fontSize="10" fill="var(--muted)">later feature</text><rect x="304" y="0" width="14" height="14" rx="3" fill="#cbd5e1" stroke="#64748b" /><text x="326" y="11" fontSize="10" fill="var(--muted)">road or context</text></g>
+      <g transform="translate(42 454)"><rect x="0" y="0" width="14" height="14" rx="3" fill="#e2e8f0" stroke="#64748b" /><text x="22" y="11" fontSize="10" fill="var(--muted)">earlier feature</text><rect x="154" y="0" width="14" height="14" rx="3" fill="#dbeafe" stroke="#0f3d8c" /><text x="176" y="11" fontSize="10" fill="var(--muted)">later feature</text><rect x="304" y="0" width="14" height="14" rx="3" fill="#cbd5e1" stroke="#64748b" /><text x="326" y="11" fontSize="10" fill="var(--muted)">road or context</text>{variant % datasets.length === 2 && <><rect x="454" y="0" width="14" height="14" rx="3" fill="#e0f2fe" stroke="#0284c7" /><text x="476" y="11" fontSize="10" fill="var(--muted)">coastal water</text></>}</g>
       <text x="42" y="492" fontSize="10" fill="var(--muted)">Use location, direction and change language; report only features supported by the maps.</text>
     </svg>
     <svg className="task1-map-mobile" viewBox="0 0 360 900" style={{ width: '100%', display: 'none' }} role="img" aria-label={`${data.title}, mobile before and after map`} focusable="false">
@@ -338,12 +352,14 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <rect x="20" y="82" width="320" height="320" rx="15" fill="rgba(100,116,139,0.035)" stroke="var(--line-soft)" />
       <text x="32" y="108" fontSize="15" fontWeight="900" fill="var(--ink)">{data.beforeLabel}</text>
       <path d="M28 242 H332 M180 92 V392" stroke="#cbd5e1" strokeWidth="22" /><path d="M28 242 H332 M180 92 V392" stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
-      {cellsBefore.map((cell, i) => <Feature key={cell[0]} label={cell[0]} x={30 + (i % 2) * 154} y={132 + Math.floor(i / 2) * 124} after={false} />)}
+      {variant % datasets.length === 2 && <path d="M318 92 C330 130, 310 165, 324 205 S310 280, 324 320 S310 360, 324 392 H340 V92 Z" fill="#e0f2fe" stroke="#0284c7" strokeWidth="2" />}
+      {cellsBefore.map((cell, i) => { const [x, y] = positionToMobile(data.positions[i], 132); return <Feature key={cell[0]} label={cell[0]} x={30 + x} y={y} after={false} />; })}
       <path d="M180 416 V478" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-mobile-${variant})`} />
       <rect x="20" y="500" width="320" height="320" rx="15" fill="rgba(15,61,140,0.035)" stroke="var(--line-soft)" />
       <text x="32" y="526" fontSize="15" fontWeight="900" fill="var(--ink)">{data.afterLabel}</text>
       <path d="M28 660 H332 M180 510 V810" stroke="#cbd5e1" strokeWidth="22" /><path d="M28 660 H332 M180 510 V810" stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
-      {cellsAfter.map((cell, i) => <Feature key={cell[0]} label={cell[0]} x={30 + (i % 2) * 154} y={550 + Math.floor(i / 2) * 124} after />)}
+      {variant % datasets.length === 2 && <path d="M318 510 C330 548, 310 583, 324 623 S310 698, 324 738 S310 778, 324 810 H340 V510 Z" fill="#e0f2fe" stroke="#0284c7" strokeWidth="2" />}
+      {cellsAfter.map((cell, i) => { const [x, y] = positionToMobile(data.positions[i], 550); return <Feature key={cell[0]} label={cell[0]} x={30 + x} y={y} after />; })}
       <text x="24" y="852" fontSize="9" fill="var(--muted)">Compare location, direction and change. Report only supported features.</text>
     </svg>
     </div>

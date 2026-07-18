@@ -110,12 +110,12 @@ const MODEL_ANSWER = [
     note: 'Summarise the main patterns without exact figures: increases, decreases, leadership and relative position.',
   },
   {
-    label: 'Cuerpo 1',
+    label: 'Body 1',
     text: 'In 2010, buses were the most common mode, at 42 million trips, compared with 25 million by metro. Metro journeys then increased at every point shown, reaching 49 million in 2016 and overtaking buses, before ending the period at 68 million.',
     note: 'Group the two most important lines because that is where the change in leadership occurs.',
   },
   {
-    label: 'Cuerpo 2',
+    label: 'Body 2',
     text: 'By contrast, bus use rose slightly to a peak of 48 million in 2014, then fell steadily to 35 million in 2020. Tram figures were much lower, although they doubled gradually from 10 million to 20 million over the same period.',
     note: 'Close with the bus peak and the lowest line, using only figures that support the pattern.',
   },

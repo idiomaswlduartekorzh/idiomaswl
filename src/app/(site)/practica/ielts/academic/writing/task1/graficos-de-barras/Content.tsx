@@ -110,12 +110,12 @@ const MODEL_ANSWER = [
     note: 'Present the main contrast and the leader in each group without overloading the response with figures.',
   },
   {
-    label: 'Cuerpo 1',
+    label: 'Body 1',
     text: 'Business was the most popular campus subject, at 74%, compared with 52% among online learners. A similar pattern can be seen in Engineering, where the campus figure stood at 68%, substantially above the online figure of 41%.',
     note: 'Group two categories with the same pattern: higher campus figures and lower online figures.',
   },
   {
-    label: 'Cuerpo 2',
+    label: 'Body 2',
     text: 'By contrast, online students were more likely to choose Languages and Design, at 70% and 63% respectively, while the corresponding campus figures were 31% and 46%. Health also favored campus learners, with 58% choosing it compared with only 35% online.',
     note: 'Close with the opposite contrast and add Health as supporting evidence rather than the main idea.',
   },
