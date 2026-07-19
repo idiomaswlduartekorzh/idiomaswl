@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-weekend-without-my-phone",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": ["es", "en"],
+  "level": { "cefr": "A2", "displayLabel": "English A2" },
+  "slug": "weekend-without-my-phone",
+  "series": { "id": "english-reading-batch-01", "episode": 3, "totalEpisodes": 6, "previousExerciseId": "en-a1-saturday-bus-guide", "nextExerciseId": "en-a2-community-garden-email" },
+  "classification": { "genre": "story", "topic": "A day without a phone", "intent": "daily-life", "tags": ["phone", "friends", "market", "past-simple"] },
+  "content": {
+    "title": { "es": "A Weekend Without My Phone", "en": "A Weekend Without My Phone" },
+    "intro": { "es": "Practica inglés A2 con una historia sobre resolver problemas cotidianos sin teléfono.", "en": "Practise A2 English with a story about solving everyday problems without a phone." },
+    "mission": { "es": "Identifica los dos problemas de Maya, cómo los resolvió y qué hábito cambió después.", "en": "Identify Maya’s two problems, how she solved them, and the habit she changed afterwards." },
+    "targetText": "Last Saturday, Maya left her phone at home by accident. She noticed it when the bus arrived, but she did not go back. At first, she felt nervous because she could not check the map or message her friend Sam. She asked the driver where to get off and wrote the stop name on a paper ticket. At the market, Maya waited beside the flower shop, their usual meeting place. Sam arrived ten minutes later. Without their phones, they looked carefully at the stalls, talked to the sellers, and tried a new fruit drink. Maya bought a small notebook to record places she wanted to visit. On the bus home, she realised that the day had felt longer and calmer. She still uses her phone every day, but now she sometimes leaves it in her bag when she meets friends.",
+    "plainTextForAnalysis": "Last Saturday, Maya left her phone at home by accident. She noticed it when the bus arrived, but she did not go back. At first, she felt nervous because she could not check the map or message her friend Sam. She asked the driver where to get off and wrote the stop name on a paper ticket. At the market, Maya waited beside the flower shop, their usual meeting place. Sam arrived ten minutes later. Without their phones, they looked carefully at the stalls, talked to the sellers, and tried a new fruit drink. Maya bought a small notebook to record places she wanted to visit. On the bus home, she realised that the day had felt longer and calmer. She still uses her phone every day, but now she sometimes leaves it in her bag when she meets friends.",
+    "wordCount": 140,
+    "estimatedMinutes": 12,
+    "objectives": [
+      { "es": "Comprender una secuencia narrativa en pasado.", "en": "Understand a narrative sequence in the past." },
+      { "es": "Relacionar problemas cotidianos con sus soluciones.", "en": "Connect everyday problems with their solutions." }
+    ],
+    "grammarFocus": ["past simple", "could not", "because and but", "present habit with sometimes"],
+    "vocabulary": [
+      { "surface": "by accident", "lemma": "by accident", "glosses": { "es": "por accidente", "en": "without planning or intending it" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "get off", "lemma": "get off", "glosses": { "es": "bajarse", "en": "leave a bus or train" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "stalls", "lemma": "stall", "glosses": { "es": "puestos de mercado", "en": "small stands where goods are sold" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" },
+      { "surface": "calmer", "lemma": "calm", "glosses": { "es": "más tranquilo", "en": "more relaxed and less worried" }, "audioRequired": false, "levelStatus": "within-level" }
+    ],
+    "culturalNote": { "es": "La historia presenta estrategias universales —preguntar, acordar un punto de encuentro y tomar notas— sin asumir acceso constante a tecnología.", "en": "The story presents universal strategies—asking, agreeing on a meeting point, and taking notes—without assuming constant access to technology." },
+    "spanishSpeakerNote": { "es": "En inglés, realised that introduce lo que Maya comprendió; that puede omitirse en conversación, pero aquí ayuda a leer la estructura.", "en": "Spanish speakers: realised that introduces what Maya understood; that can be omitted in conversation but clarifies the structure here." },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
+  "leveling": {
+    "targetCanDo": { "es": "Puedes seguir los eventos principales y las soluciones en una historia cotidiana sencilla.", "en": "You can follow the main events and solutions in a simple everyday story." },
+    "allowedGrammar": ["past simple regular and common irregular verbs", "could", "because", "but", "basic relative apposition"],
+    "disallowedGrammar": ["past perfect as a required contrast", "reported speech", "mixed conditionals"],
+    "maxOutOfLevelVocabularyPercent": 7,
+    "inferenceBand": "light",
+    "metrics": { "averageSentenceWords": 14, "maxSentenceWords": 20, "outOfLevelVocabularyPercent": 2.1, "glossedOutOfLevelItems": 1 },
+    "independentAssessment": { "estimatedLevel": "A2", "passed": true, "assessor": "Independent editorial preflight — human confirmation pending", "assessedAt": "2026-07-18T21:30:00-05:00", "notes": "Linear narrative with familiar problems, explicit solutions, and one light inference about changed behaviour." }
+  },
+  "questions": [
+    {
+      "id": "q-main", "type": "main-idea", "skill": "global", "prompt": "What is the story mainly about?",
+      "options": [{ "id": "lost-bus", "text": "Maya missing the last bus" }, { "id": "phone-day", "text": "Maya managing a day without her phone" }, { "id": "buy-phone", "text": "Maya buying a new phone at the market" }], "answer": "phone-day",
+      "feedback": { "correct": { "es": "Correcto. Toda la historia muestra cómo Maya vive el día sin teléfono.", "en": "Correct. The whole story shows how Maya manages the day without her phone." }, "incorrect": { "es": "Busca el problema que aparece desde el inicio y afecta varias acciones.", "en": "Find the problem introduced at the start that affects several actions." }, "strategy": { "es": "La idea principal conecta el problema inicial con el cambio final.", "en": "The main idea connects the opening problem with the final change." } },
+      "evidence": "Maya left her phone at home ... now she sometimes leaves it in her bag.", "maxAttempts": 2
+    },
+    {
+      "id": "q-driver", "type": "detail", "skill": "detail", "prompt": "How did Maya solve the map problem?",
+      "options": [{ "id": "sam", "text": "She called Sam." }, { "id": "driver", "text": "She asked the driver." }, { "id": "shop", "text": "She asked at the flower shop." }], "answer": "driver",
+      "feedback": { "correct": { "es": "Correcto. Preguntó al conductor dónde bajar.", "en": "Correct. She asked the driver where to get off." }, "incorrect": { "es": "Relee lo que hizo después de no poder mirar el mapa.", "en": "Read what she did after she could not check the map." }, "strategy": { "es": "Relaciona cada problema con la acción que aparece inmediatamente después.", "en": "Connect each problem with the action immediately after it." } },
+      "evidence": "She asked the driver where to get off.", "maxAttempts": 2
+    },
+    {
+      "id": "q-meeting", "type": "detail", "skill": "detail", "prompt": "Why did Maya wait beside the flower shop?",
+      "options": [{ "id": "buy", "text": "She wanted to buy flowers." }, { "id": "usual", "text": "It was their usual meeting place." }, { "id": "rain", "text": "She needed protection from rain." }], "answer": "usual",
+      "feedback": { "correct": { "es": "Correcto. Era su lugar habitual de encuentro.", "en": "Correct. It was their usual meeting place." }, "incorrect": { "es": "La explicación aparece después de una coma.", "en": "The explanation appears after a comma." }, "strategy": { "es": "Las aposiciones breves pueden explicar por qué un lugar es importante.", "en": "Short appositive phrases can explain why a place matters." } },
+      "evidence": "The flower shop, their usual meeting place.", "maxAttempts": 2
+    },
+    {
+      "id": "q-calmer", "type": "inference", "skill": "inference", "prompt": "What can we infer about Maya at the end?",
+      "options": [{ "id": "never", "text": "She never uses a phone now." }, { "id": "balance", "text": "She wants a little more time away from her phone." }, { "id": "angry", "text": "She is angry with Sam." }], "answer": "balance",
+      "feedback": { "correct": { "es": "Correcto. Sigue usando el teléfono, pero a veces lo deja guardado.", "en": "Correct. She still uses her phone but sometimes leaves it in her bag." }, "incorrect": { "es": "Combina las dos ideas de la última oración.", "en": "Combine the two ideas in the final sentence." }, "strategy": { "es": "Una inferencia válida debe respetar tanto still como but now.", "en": "A valid inference must respect both still and but now." } },
+      "evidence": "She still uses her phone every day, but now she sometimes leaves it in her bag.", "maxAttempts": 2
+    },
+    {
+      "id": "q-events", "type": "ordering", "skill": "organization", "prompt": "Put these events in story order.",
+      "options": [{ "id": "driver", "text": "Maya asks the driver for help." }, { "id": "sam", "text": "Sam arrives at the market." }, { "id": "notebook", "text": "Maya buys a notebook." }], "answer": ["driver", "sam", "notebook"],
+      "feedback": { "correct": { "es": "Correcto. Ese es el orden narrativo.", "en": "Correct. That is the narrative order." }, "incorrect": { "es": "Sigue el viaje desde el bus hasta el mercado.", "en": "Follow the journey from the bus to the market." }, "strategy": { "es": "Usa los cambios de lugar para reconstruir la secuencia.", "en": "Use changes of place to reconstruct the sequence." } },
+      "evidence": "Driver → Sam arrives → notebook.", "maxAttempts": 3
+    }
+  ],
+  "production": { "prompt": { "es": "Escribe 3–4 frases en inglés sobre una vez que resolviste un problema sin tecnología.", "en": "Write 3–4 English sentences about a time you solved a problem without technology." }, "minWords": 25, "maxWords": 80, "hints": ["At first...", "I asked...", "In the end..."], "scored": false },
+  "review": { "author": "WeLearn editorial draft", "languageReviewer": "Pending human English review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T21:30:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Original AI-assisted draft; human review blocks publication.", "languageDecision": "pending", "pedagogyDecision": "pending" },
+  "seo": { "title": { "es": "Lectura en inglés A2: un día sin teléfono | WeLearn", "en": "A2 English Reading: A Day Without a Phone | WeLearn" }, "description": { "es": "Practica inglés A2 con una historia en pasado, vocabulario, inferencia, secuencia y feedback.", "en": "Practise A2 English with a past-tense story, vocabulary, inference, sequencing, and feedback." }, "canonicalPath": "/es/practica/ingles/a2/lectura/weekend-without-my-phone", "indexable": false, "lastModified": "2026-07-18T21:30:00-05:00", "relatedExerciseIds": ["en-a1-saturday-bus-guide", "en-a2-community-garden-email"] }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a1-library-book-message",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": ["es", "en"],
+  "level": { "cefr": "A1", "displayLabel": "English A1" },
+  "slug": "library-book-message",
+  "series": { "id": "english-reading-batch-01", "episode": 1, "totalEpisodes": 6, "nextExerciseId": "en-a1-saturday-bus-guide" },
+  "classification": { "genre": "message", "topic": "Library collection message", "intent": "study", "tags": ["library", "time", "instructions", "school"] },
+  "content": {
+    "title": { "es": "Your Library Book Is Ready", "en": "Your Library Book Is Ready" },
+    "intro": { "es": "Practica inglés A1 con un mensaje breve de biblioteca. Localiza horarios, objetos y una instrucción concreta.", "en": "Practise A1 English with a short library message. Find times, objects, and one clear instruction." },
+    "mission": { "es": "Averigua qué debe llevar Leo, dónde está el libro y hasta cuándo pueden guardarlo.", "en": "Find out what Leo must bring, where the book is, and how long it can be kept." },
+    "targetText": "Hi Leo, your English book is ready at the library. You can collect it after school today. The library closes at six o’clock. Please bring your student card. The book is on the front desk beside the blue box. If you cannot come today, call Mrs Green before five. She can keep the book for you until Monday.",
+    "plainTextForAnalysis": "Hi Leo, your English book is ready at the library. You can collect it after school today. The library closes at six o'clock. Please bring your student card. The book is on the front desk beside the blue box. If you cannot come today, call Mrs Green before five. She can keep the book for you until Monday.",
+    "wordCount": 58,
+    "estimatedMinutes": 10,
+    "objectives": [
+      { "es": "Localizar una hora y una fecha límite en un mensaje.", "en": "Find a time and a deadline in a message." },
+      { "es": "Seguir una instrucción cotidiana breve.", "en": "Follow a short everyday instruction." }
+    ],
+    "grammarFocus": ["can for possibility", "imperatives", "time with at and before"],
+    "vocabulary": [
+      { "surface": "collect", "lemma": "collect", "glosses": { "es": "recoger", "en": "go and get something" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "closes", "lemma": "close", "glosses": { "es": "cierra", "en": "stops being open" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "front desk", "lemma": "front desk", "glosses": { "es": "mostrador de atención", "en": "the main service desk" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" },
+      { "surface": "until", "lemma": "until", "glosses": { "es": "hasta", "en": "up to a particular time" }, "audioRequired": false, "levelStatus": "within-level" }
+    ],
+    "culturalNote": { "es": "El mensaje usa una situación escolar global; las reglas y documentos de biblioteca varían según la institución.", "en": "The message uses a global school setting; library rules and documents vary by institution." },
+    "spanishSpeakerNote": { "es": "En inglés, before five significa antes de las cinco; no incluye necesariamente las cinco en punto.", "en": "Spanish speakers: before five means earlier than five, not necessarily at five exactly." },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
+  "leveling": {
+    "targetCanDo": { "es": "Puedes comprender información concreta en un mensaje cotidiano muy breve.", "en": "You can understand concrete information in a very short everyday message." },
+    "allowedGrammar": ["present simple", "can", "imperatives", "basic time expressions", "if plus present for a simple instruction"],
+    "disallowedGrammar": ["passive voice", "reported speech", "relative clauses"],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": { "averageSentenceWords": 8.3, "maxSentenceWords": 11, "outOfLevelVocabularyPercent": 1.7, "glossedOutOfLevelItems": 1 },
+    "independentAssessment": { "estimatedLevel": "A1", "passed": true, "assessor": "Independent editorial preflight — human confirmation pending", "assessedAt": "2026-07-18T21:30:00-05:00", "notes": "Short concrete message with explicit answers and one glossed service phrase." }
+  },
+  "questions": [
+    {
+      "id": "q-purpose", "type": "main-idea", "skill": "global", "prompt": "Why does Mrs Green send the message?",
+      "options": [{ "id": "ready", "text": "To say Leo’s book is ready" }, { "id": "lost", "text": "To say Leo lost his card" }, { "id": "closed", "text": "To say the library is closed today" }], "answer": "ready",
+      "feedback": { "correct": { "es": "Correcto. El mensaje empieza diciendo que el libro está listo.", "en": "Correct. The message begins by saying the book is ready." }, "incorrect": { "es": "Mira la primera oración y busca la razón principal.", "en": "Look at the first sentence for the main reason." }, "strategy": { "es": "En mensajes breves, la primera oración suele presentar el propósito.", "en": "In short messages, the first sentence often gives the purpose." } },
+      "evidence": "Your English book is ready at the library.", "maxAttempts": 2
+    },
+    {
+      "id": "q-close-time", "type": "detail", "skill": "detail", "prompt": "What time does the library close?",
+      "options": [{ "id": "five", "text": "At five" }, { "id": "six", "text": "At six" }, { "id": "seven", "text": "At seven" }], "answer": "six",
+      "feedback": { "correct": { "es": "Correcto. La biblioteca cierra a las seis.", "en": "Correct. The library closes at six." }, "incorrect": { "es": "Distingue la hora de cierre de la hora para llamar.", "en": "Separate the closing time from the time to call." }, "strategy": { "es": "Relaciona cada hora con el verbo de su oración.", "en": "Connect each time with the verb in its sentence." } },
+      "evidence": "The library closes at six o’clock.", "maxAttempts": 2
+    },
+    {
+      "id": "q-bring", "type": "detail", "skill": "detail", "prompt": "What should Leo bring?",
+      "options": [{ "id": "card", "text": "His student card" }, { "id": "box", "text": "A blue box" }, { "id": "ticket", "text": "A bus ticket" }], "answer": "card",
+      "feedback": { "correct": { "es": "Correcto. Leo debe llevar su carné estudiantil.", "en": "Correct. Leo should bring his student card." }, "incorrect": { "es": "Busca la oración que empieza con Please.", "en": "Find the sentence that begins with Please." }, "strategy": { "es": "Los imperativos suelen marcar instrucciones directas.", "en": "Imperatives often mark direct instructions." } },
+      "evidence": "Please bring your student card.", "maxAttempts": 2
+    },
+    {
+      "id": "q-until", "type": "vocabulary-in-context", "skill": "vocabulary", "prompt": "What does until Monday mean?",
+      "options": [{ "id": "only-sunday", "text": "Only on Sunday" }, { "id": "up-to-monday", "text": "Up to Monday" }, { "id": "after-monday", "text": "After Monday" }], "answer": "up-to-monday",
+      "feedback": { "correct": { "es": "Correcto. Until marca el límite de tiempo.", "en": "Correct. Until marks the time limit." }, "incorrect": { "es": "Piensa en el último día hasta el que guardan el libro.", "en": "Think about the last day the book is kept." }, "strategy": { "es": "Usa el contexto de guardar algo para identificar un límite temporal.", "en": "Use the context of keeping something to identify a time limit." } },
+      "evidence": "She can keep the book for you until Monday.", "maxAttempts": 2
+    },
+    {
+      "id": "q-actions", "type": "ordering", "skill": "organization", "prompt": "Put Leo’s possible actions in the order used in the message.",
+      "options": [{ "id": "bring", "text": "Bring his student card." }, { "id": "find", "text": "Find the book at the front desk." }, { "id": "call", "text": "Call Mrs Green if he cannot come." }], "answer": ["bring", "find", "call"],
+      "feedback": { "correct": { "es": "Correcto. Ese es el orden de las instrucciones.", "en": "Correct. That is the order of the instructions." }, "incorrect": { "es": "Sigue el mensaje desde Please hasta la última instrucción.", "en": "Follow the message from Please to the final instruction." }, "strategy": { "es": "Para organizar, rastrea cada acción en el orden visual del texto.", "en": "For ordering, track each action in the text’s visual order." } },
+      "evidence": "Bring the card → front desk → call before five.", "maxAttempts": 3
+    }
+  ],
+  "production": { "prompt": { "es": "Escribe un mensaje de 2–3 frases para decirle a alguien que un objeto está listo para recoger.", "en": "Write a 2–3 sentence message telling someone an item is ready to collect." }, "minWords": 10, "maxWords": 45, "hints": ["Your... is ready", "Please bring...", "before..."], "scored": false },
+  "review": { "author": "WeLearn editorial draft", "languageReviewer": "Pending human English review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T21:30:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Original AI-assisted draft; human review blocks publication.", "languageDecision": "pending", "pedagogyDecision": "pending" },
+  "seo": { "title": { "es": "Lectura en inglés A1: mensaje de biblioteca | WeLearn", "en": "A1 English Reading: Library Message | WeLearn" }, "description": { "es": "Practica inglés A1 con un mensaje corto de biblioteca, horarios, vocabulario, preguntas y feedback.", "en": "Practise A1 English with a short library message, times, vocabulary, questions, and feedback." }, "canonicalPath": "/es/practica/ingles/a1/lectura/library-book-message", "indexable": false, "lastModified": "2026-07-18T21:30:00-05:00", "relatedExerciseIds": ["en-a1-saturday-bus-guide"] }
+}
