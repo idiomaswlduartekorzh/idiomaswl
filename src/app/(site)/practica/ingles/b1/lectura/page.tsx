@@ -1,5 +1,12 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-export const metadata: Metadata = practicaMetadata('ingles', 'b1', 'lectura')
-export default function Page() { return <Content /> }
+import { buildHubMetadata, HubPage, resolveHubForRoute } from '@/components/reading/ReadingPageServer'
+
+export function generateMetadata(): Metadata {
+  const r = resolveHubForRoute('es', 'ingles', 'b1')
+  return buildHubMetadata('es', r.language, r.level, r.exercises)
+}
+
+export default function Page() {
+  const r = resolveHubForRoute('es', 'ingles', 'b1')
+  return <HubPage locale="es" {...r} />
+}

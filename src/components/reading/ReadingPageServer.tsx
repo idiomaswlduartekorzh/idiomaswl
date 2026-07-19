@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { ReadingHub } from './ReadingHub'
 import { ReadingLesson } from './ReadingLesson'
-import { ReadingLocaleShell } from './ReadingLocaleShell'
 import { ReadingStructuredData } from './ReadingStructuredData'
 import { availableExercises, findReadingExercise, findReadingHubExercises } from '@/lib/reading/catalog'
 import { LANGUAGE_NAMES, languageSlug, readingExercisePath, readingHubPath, resolveLanguageSlug } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from '@/lib/reading/types'
+import styles from './reading.module.css'
 
 function parseLevel(raw: string): CefrLevel | null {
   const level = raw.toUpperCase()
@@ -98,21 +98,22 @@ export function resolveHubForRoute(locale: TutorLocale, languageParam: string, l
 }
 
 export function ExercisePage({ exercise, locale }: { exercise: ReadingExercise; locale: TutorLocale }) {
-  const otherLocale: TutorLocale = locale === 'es' ? 'en' : 'es'
-  const alternateHref = readingExercisePath(otherLocale, exercise.language, exercise.level.cefr, exercise.slug)
   return (
-    <ReadingLocaleShell locale={locale} alternateHref={alternateHref}>
-      <ReadingStructuredData exercise={exercise} locale={locale} />
-      <ReadingLesson exercise={exercise} locale={locale} />
-    </ReadingLocaleShell>
+    <section className="wl-section">
+      <div className={`wrap ${styles.readingRoot}`} style={{ maxWidth: 900 }}>
+        <ReadingStructuredData exercise={exercise} locale={locale} />
+        <ReadingLesson exercise={exercise} locale={locale} />
+      </div>
+    </section>
   )
 }
 
 export function HubPage({ locale, language, level, exercises }: { locale: TutorLocale; language: ReadingLanguage; level: CefrLevel; exercises: ReadingExercise[] }) {
-  const otherLocale: TutorLocale = locale === 'es' ? 'en' : 'es'
   return (
-    <ReadingLocaleShell locale={locale} alternateHref={readingHubPath(otherLocale, language, level)}>
-      <ReadingHub locale={locale} language={language} level={level} exercises={exercises} />
-    </ReadingLocaleShell>
+    <section className="wl-section">
+      <div className={`wrap ${styles.readingRoot}`} style={{ maxWidth: 900 }}>
+        <ReadingHub locale={locale} language={language} level={level} exercises={exercises} />
+      </div>
+    </section>
   )
 }

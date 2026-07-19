@@ -109,6 +109,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...publishedReadings.flatMap((exercise) => {
       const esPath = readingExercisePath('es', exercise.language, exercise.level.cefr, exercise.slug);
       const enPath = readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug);
+      const lastModified = new Date(exercise.seo.lastModified);
+      // Idiomas con URL canónica unificada (ej. inglés en /practica/...): una sola entrada, sin hreflang duplicado.
+      if (esPath === enPath) {
+        return [{ url: `${BASE}${esPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.72 }];
+      }
       const alternates = {
         languages: {
           es: `${BASE}${esPath}`,
@@ -117,8 +122,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       };
       return [
-        { url: `${BASE}${esPath}`, lastModified: new Date(exercise.seo.lastModified), changeFrequency: 'monthly' as const, priority: 0.72, alternates },
-        { url: `${BASE}${enPath}`, lastModified: new Date(exercise.seo.lastModified), changeFrequency: 'monthly' as const, priority: 0.7, alternates },
+        { url: `${BASE}${esPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.72, alternates },
+        { url: `${BASE}${enPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.7, alternates },
       ];
     }),
 

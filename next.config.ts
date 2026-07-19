@@ -114,6 +114,18 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  async redirects() {
+    // El motor de lectura de inglés se unificó en las URLs canónicas /practica/ingles/{nivel}/lectura.
+    // Las rutas localizadas viejas (/es/ y /en/) se redirigen permanentemente para no fragmentar
+    // el direccionamiento en Google ni dejar contenido duplicado.
+    return [
+      { source: '/es/practica/ingles/:level/lectura', destination: '/practica/ingles/:level/lectura', permanent: true },
+      { source: '/es/practica/ingles/:level/lectura/:slug', destination: '/practica/ingles/:level/lectura/:slug', permanent: true },
+      { source: '/en/practice/english/:level/reading', destination: '/practica/ingles/:level/lectura', permanent: true },
+      { source: '/en/practice/english/:level/reading/:slug', destination: '/practica/ingles/:level/lectura/:slug', permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -13,6 +13,11 @@ export const LANGUAGE_NAMES: Record<TutorLocale, Record<ReadingLanguage, string>
 export function readingHubPath(locale: TutorLocale, language: ReadingLanguage, level: CefrLevel) {
   const languageSlug = LANGUAGE_SLUGS[locale][language]
   const normalizedLevel = level.toLowerCase()
+  // El inglés usa las URLs canónicas del sitio (/practica/...), unificadas con el resto
+  // de la práctica y sin prefijo de idioma, para no fragmentar el direccionamiento en Google.
+  if (language === 'en') {
+    return `/practica/ingles/${normalizedLevel}/lectura`
+  }
   return locale === 'es'
     ? `/es/practica/${languageSlug}/${normalizedLevel}/lectura`
     : `/en/practice/${languageSlug}/${normalizedLevel}/reading`
