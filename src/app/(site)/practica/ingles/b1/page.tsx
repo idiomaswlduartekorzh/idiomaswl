@@ -14,8 +14,8 @@ const COLOR = '#0066cc';
 const HABILIDADES = [
   {
     id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Reading',
-    desc: '10 lecturas B1 con audio narrado: noticias, cultura, ciencia. Present perfect y condicionales en contexto.',
-    count: '10 lecturas · con audio', href: '/es/practica/ingles/b1/lectura', available: true,
+    desc: '5 textos B1 (120-150 palabras): noticias, cultura, ciencia. Present perfect y condicionales en contexto.',
+    count: '5 textos · 30 preguntas', href: '/practica/ingles/b1/lectura', available: true,
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',
