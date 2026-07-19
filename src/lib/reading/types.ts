@@ -2,6 +2,7 @@ export type TutorLocale = 'es' | 'en'
 export type ReadingLanguage = 'en' | 'fr' | 'it' | 'de' | 'ru' | 'ja' | 'ko' | 'pt'
 export type CefrLevel = 'A0' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1'
 export type ReadingStatus = 'draft' | 'review' | 'approved' | 'published' | 'retired'
+export type ReadingReviewDecision = 'pending' | 'changes-requested' | 'approved'
 export type ReadingSkill = 'global' | 'detail' | 'vocabulary' | 'inference' | 'organization' | 'reference' | 'purpose' | 'tone'
 
 export type LocalizedText = Partial<Record<TutorLocale, string>>
@@ -143,6 +144,9 @@ export type ReadingExercise = {
     cultureChecked: true
     aiAssisted?: boolean
     aiUseNote?: string
+    languageDecision: ReadingReviewDecision
+    pedagogyDecision: ReadingReviewDecision
+    reviewNotes?: LocalizedText
   }
   seo: {
     title: LocalizedText

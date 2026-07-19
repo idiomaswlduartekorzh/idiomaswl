@@ -2,6 +2,8 @@
 
 La instrumentación usa el `dataLayer` ya instalado en Idiomas WeLearn. No envía el texto escrito por el estudiante ni datos personales.
 
+La política de seguridad permite el endpoint de recolección de Google usado por GTM (`https://www.google.com`) sin abrir dominios genéricos de terceros. La grabación de lectura no se incluye en analítica ni sale del dispositivo.
+
 ## Eventos implementados
 
 | Evento | Cuándo ocurre | Uso principal |

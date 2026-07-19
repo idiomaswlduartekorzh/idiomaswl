@@ -41,6 +41,7 @@ export function validateReadingExercise(exercise) {
   if (exercise.status === 'published') {
     const reviewers = [exercise.review?.author, exercise.review?.languageReviewer, exercise.review?.pedagogyReviewer]
     if (reviewers.some((reviewer) => !reviewer || PLACEHOLDER_REVIEWER.test(reviewer))) errors.push('published exercises require identified human reviewers')
+    if (exercise.review?.languageDecision !== 'approved' || exercise.review?.pedagogyDecision !== 'approved') errors.push('published exercises require approved language and pedagogy decisions')
     if (!exercise.seo?.indexable) errors.push('published exercises must be indexable')
   }
 
