@@ -5,6 +5,10 @@ import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
+import { isFreeGoetheMock } from '@/lib/labs/exam-bridge/goethe';
+import { isFreeCilsCeliMock } from '@/lib/labs/exam-bridge/cils-celi';
+import { isFreeDelfDalfMock } from '@/lib/labs/exam-bridge/delf-dalf';
+import { isFreeCelpeBrasMock } from '@/lib/labs/exam-bridge/celpe-bras';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam,
@@ -688,6 +692,7 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
                 taskNumber={1}
                 taskLabel="Writing — Part 1 (Essay)"
                 essay={writeAnswers[cbTask1.id]}
+                maxScore={5}
                 fallbackNotice="Tu Part 1 ha sido registrada para revisión."
               />
             )}
@@ -698,12 +703,115 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
                 taskNumber={2}
                 taskLabel="Writing — Part 2"
                 essay={writeAnswers[cbTask2.id]}
+                maxScore={5}
                 fallbackNotice="Tu Part 2 ha sido registrada para revisión."
               />
             )}
           </>
         );
       })()}
+
+      {mock.examSlug === 'goethe' && isFreeGoetheMock(mock.id) && (() => {
+        const gTask1 = writeQuestions.find(q => q.taskNumber === 1);
+        if (!gTask1 || !writeAnswers[gTask1.id]?.trim()) return null;
+        return (
+          <WritingAssessmentPanel
+            examSlug="goethe"
+            mockId={mock.id}
+            taskNumber={1}
+            taskLabel="Schreiben"
+            essay={writeAnswers[gTask1.id]}
+            maxScore={25}
+            fallbackNotice="Tu Schreiben ha sido registrado para revisión."
+          />
+        );
+      })()}
+
+      {mock.examSlug === 'cils-celi' && isFreeCilsCeliMock(mock.id) && (() => {
+        const cTask1 = writeQuestions.find(q => q.taskNumber === 1);
+        const cTask2 = writeQuestions.find(q => q.taskNumber === 2);
+        return (
+          <>
+            {cTask1 && writeAnswers[cTask1.id]?.trim() && (
+              <WritingAssessmentPanel
+                examSlug="cils-celi"
+                mockId={mock.id}
+                taskNumber={1}
+                taskLabel="Produzione Scritta 1"
+                essay={writeAnswers[cTask1.id]}
+                maxScore={20}
+                fallbackNotice="Tu Produzione Scritta 1 ha sido registrada para revisión."
+              />
+            )}
+            {cTask2 && writeAnswers[cTask2.id]?.trim() && (
+              <WritingAssessmentPanel
+                examSlug="cils-celi"
+                mockId={mock.id}
+                taskNumber={2}
+                taskLabel="Produzione Scritta 2"
+                essay={writeAnswers[cTask2.id]}
+                maxScore={20}
+                fallbackNotice="Tu Produzione Scritta 2 ha sido registrada para revisión."
+              />
+            )}
+          </>
+        );
+      })()}
+
+      {mock.examSlug === 'delf-dalf' && isFreeDelfDalfMock(mock.id) && (() => {
+        const dTask1 = writeQuestions.find(q => q.taskNumber === 1);
+        const dTask2 = writeQuestions.find(q => q.taskNumber === 2);
+        return (
+          <>
+            {dTask1 && writeAnswers[dTask1.id]?.trim() && (
+              <WritingAssessmentPanel
+                examSlug="delf-dalf"
+                mockId={mock.id}
+                taskNumber={1}
+                taskLabel="Production écrite"
+                essay={writeAnswers[dTask1.id]}
+                maxScore={25}
+                fallbackNotice="Tu Production écrite ha sido registrada para revisión."
+              />
+            )}
+            {dTask2 && writeAnswers[dTask2.id]?.trim() && (
+              <WritingAssessmentPanel
+                examSlug="delf-dalf"
+                mockId={mock.id}
+                taskNumber={2}
+                taskLabel="Production écrite — Tâche 2"
+                essay={writeAnswers[dTask2.id]}
+                maxScore={25}
+                fallbackNotice="Tu segunda tarea ha sido registrada para revisión."
+              />
+            )}
+          </>
+        );
+      })()}
+
+      {/* CELPE-Bras tiene 4 tareas reales — se ubican por section.part (1-4),
+          NO por taskNumber (ese campo se repite 1,2,1,2 en este mock, ver
+          exam-bridge/celpe-bras.ts). */}
+      {mock.examSlug === 'celpe-bras' && isFreeCelpeBrasMock(mock.id) && (
+        <>
+          {([1, 2, 3, 4] as const).map((partNumber) => {
+            const q = writeQuestions.find(wq => wq.part === partNumber);
+            if (!q || !writeAnswers[q.id]?.trim()) return null;
+            return (
+              <WritingAssessmentPanel
+                key={q.id}
+                examSlug="celpe-bras"
+                mockId={mock.id}
+                taskNumber={partNumber}
+                taskLabel={`Tarefa ${partNumber}`}
+                essay={writeAnswers[q.id]}
+                maxScore={5}
+                fallbackNotice={`Tu Tarefa ${partNumber} ha sido registrada para revisión.`}
+              />
+            );
+          })}
+        </>
+      )}
 
       {speakingNotes.length > 0 && (
         <div className="prac-results__responses">

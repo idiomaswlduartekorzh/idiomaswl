@@ -385,6 +385,7 @@ function TOEFLResults({ mock, exam, ans, writeBands, speakBands, onRetry }: {
               taskNumber={1}
               taskLabel="Writing — Integrated Task"
               essay={ans.write[wTask1.id] ?? ''}
+              maxScore={5}
               fallbackNotice="Tu respuesta de Integrated Writing ha sido registrada."
             />
           )}
@@ -395,6 +396,7 @@ function TOEFLResults({ mock, exam, ans, writeBands, speakBands, onRetry }: {
               taskNumber={2}
               taskLabel="Writing — Academic Discussion"
               essay={ans.write[wTask2.id] ?? ''}
+              maxScore={5}
               fallbackNotice="Tu respuesta de Academic Discussion ha sido registrada."
             />
           )}

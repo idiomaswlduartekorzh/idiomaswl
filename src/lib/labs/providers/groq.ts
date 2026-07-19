@@ -1,78 +1,51 @@
 /**
  * Groq — free tier de respaldo cuando Gemini se satura.
  *
- * API compatible con OpenAI (chat completions). Modelo: Llama 4 Scout, el
- * único del free tier de Groq con visión + JSON mode a la vez — necesario
- * para Task 1 de IELTS (el gráfico).
+ * API compatible con OpenAI (chat completions). Texto puro: Llama 3.3 70B,
+ * estable. Hasta el 18 jul 2026 usábamos Llama 4 Scout (visión + JSON) para
+ * todo, pero Groq lo deprecó (17 jun 2026) sin que nos enteráramos —
+ * devolvía model_not_found en silencio.
+ *
+ * SIN visión: probamos qwen/qwen3.6-27b (el único modelo con visión que le
+ * queda a Groq, marcado "preview") y sí lee gráficos reales correctamente,
+ * pero Groq limita ese modelo a 8.000 tokens/min EN TOTAL (prompt +
+ * respuesta) — nuestro esquema completo (rúbrica + imagen + ensayo + todos
+ * los errores + reescritura) pide ~5.000 tokens solo de entrada, y no
+ * queda presupuesto para que el modelo termine el JSON (probado: incluso
+ * al límite exacto de tokens permitido, se queda sin terminar). No vale la
+ * pena recortar el esquema para un respaldo terciario que casi nunca se
+ * activa — IELTS Task 1 (el único caso con imagen) se queda solo con
+ * Gemini, sin respaldo, ver exam-writing-assess/route.ts.
  *
  * Free tier: ~30 req/min, hasta 14.400 req/día (vs. 10 req/min de Gemini) y
  * corre en hardware LPU propio — mucho más rápido, sin los timeouts de 90s
  * que veníamos viendo con Gemini saturado.
  *
- * Docs: https://console.groq.com/docs/rate-limits · /docs/vision
- *
- * OJO — sin verificar en producción: el modo JSON estricto (response_format
- * json_schema, con enums) combinado con imagen no está 100% confirmado en la
- * documentación de Groq (solo confirma json_object + imagen). Por eso
- * intentamos json_schema primero y caemos a json_object si Groq lo rechaza —
- * en json_object perdemos la validación de enum en el servidor, por lo que
- * igual filtramos los criterios contra rubric.criteria antes de devolver.
+ * Docs: https://console.groq.com/docs/rate-limits
  */
 
 import { providers, isConfigured } from '../config';
 import type { FreeAssessment, FullAssessment, LabsError, WritingRubric } from '../types';
-import type { InlineImage } from './gemini';
 
 /**
- * La imagen llega YA descargada (mimeType + base64) desde el caller — nunca
- * fs.readFileSync(path.join(process.cwd(), 'public', ...)) aquí. Ver el
- * comentario largo en providers/gemini.ts: esa ruta dinámica hacía que el
- * Node File Trace de Vercel empaquetara TODO /public (1.3GB) en la función.
+ * Ninguno de los dos modelos que quedan en el free tier de Groq soporta
+ * response_format:json_schema (probado — llama-3.3 lo rechaza con 400; qwen
+ * sin probar pero no vale la pena arriesgar otro 400 silencioso). Con
+ * json_object suelto el modelo inventa su propia forma si no se la
+ * describimos explícitamente — probado: devolvió {content, organization,
+ * language, feedback} en vez de {overallBand, criteria, allIssues,
+ * rewritten}. Mismo patrón que providers/nvidia.ts.
  */
+function buildJsonInstruction(criterionKeys: string[]): string {
+  return `
 
-function buildJsonSchema(criterionKeys: string[]) {
-  const criterionEnum = { type: 'string', enum: criterionKeys } as const;
-  return {
-    type: 'object',
-    properties: {
-      overallBand: { type: 'number' },
-      criteria: {
-        type: 'array',
-        items: {
-          type: 'object',
-          properties: {
-            criterion: criterionEnum,
-            band:      { type: 'number' },
-            reason:    { type: 'string' },
-          },
-          required: ['criterion', 'band', 'reason'],
-          additionalProperties: false,
-        },
-      },
-      allIssues: {
-        type: 'array',
-        items: {
-          type: 'object',
-          properties: {
-            quote:       { type: 'string' },
-            suggestion:  { type: 'string' },
-            explanation: { type: 'string' },
-            severity:    { type: 'string', enum: ['critica', 'moderada', 'menor'] },
-            criterion:   criterionEnum,
-            issueType:   { type: 'string', enum: ['vocabulary', 'grammar', 'style', 'unclear'] },
-          },
-          required: ['quote', 'suggestion', 'explanation', 'severity', 'criterion', 'issueType'],
-          additionalProperties: false,
-        },
-      },
-      rewritten: {
-        type: 'string',
-        description: 'El ensayo del estudiante reescrito corrigiendo todos los errores encontrados — sus ideas y estructura, no un ensayo genérico distinto.',
-      },
-    },
-    required: ['overallBand', 'criteria', 'allIssues', 'rewritten'],
-    additionalProperties: false,
-  } as const;
+Responde SOLO con un objeto JSON válido, sin texto antes ni después, con exactamente esta forma:
+{
+  "overallBand": number,
+  "criteria": [{ "criterion": ${criterionKeys.map((k) => `"${k}"`).join(' | ')}, "band": number, "reason": string }],
+  "allIssues": [{ "quote": string (copiada LITERAL del ensayo del estudiante), "suggestion": string, "explanation": string, "severity": "critica" | "moderada" | "menor", "criterion": ${criterionKeys.map((k) => `"${k}"`).join(' | ')}, "issueType": "vocabulary" | "grammar" | "style" | "unclear" }],
+  "rewritten": string (el ensayo del estudiante reescrito corrigiendo los errores — sus ideas y estructura, no uno genérico distinto)
+}`;
 }
 
 const SEVERITY_ORDER = { critica: 0, moderada: 1, menor: 2 } as const;
@@ -82,7 +55,6 @@ export async function assessWritingGroq<TaskId extends string>(
   prompt: string,
   task: TaskId,
   rubric: WritingRubric<TaskId>,
-  image?: InlineImage,
 ): Promise<FullAssessment | LabsError> {
   if (!isConfigured('groq')) {
     return { code: 'not_configured', message: 'Falta GROQ_API_KEY' };
@@ -91,70 +63,43 @@ export async function assessWritingGroq<TaskId extends string>(
   const wordCount = essay.trim().split(/\s+/).filter(Boolean).length;
   const { key, model, endpoint } = providers.groq;
 
-  const dataUri = image ? `data:${image.mimeType};base64,${image.data}` : null;
-  const promptText = dataUri
-    ? `PREGUNTA DEL EXAMEN (el gráfico/tabla referido está en la imagen adjunta — obsérvalo con atención antes de evaluar):\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`
-    : `PREGUNTA DEL EXAMEN:\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`;
+  const userContent = `PREGUNTA DEL EXAMEN:\n${prompt}\n\nEXTENSIÓN (ya contada, úsala tal cual): ${wordCount} palabras\n\nENSAYO DEL ESTUDIANTE:\n${essay}`;
 
-  const userContent = dataUri
-    ? [{ type: 'text', text: promptText }, { type: 'image_url', image_url: { url: dataUri } }]
-    : promptText;
+  const systemPrompt = rubric.buildSystemPrompt(task) + buildJsonInstruction(rubric.criteria.map((c) => c.key));
 
-  const schema = buildJsonSchema(rubric.criteria.map((c) => c.key));
+  let raw = '';
+  let lastError: LabsError = { code: 'provider_error', message: 'El evaluador no respondió.' };
 
-  async function callGroq(responseFormat: unknown) {
-    return fetch(endpoint, {
+  try {
+    const res = await fetch(endpoint, {
       method:  'POST',
       headers: { 'content-type': 'application/json', authorization: `Bearer ${key}` },
       body: JSON.stringify({
         model,
         temperature: 0,
+        max_tokens: 2000,
         messages: [
-          { role: 'system', content: rubric.buildSystemPrompt(task) },
+          { role: 'system', content: systemPrompt },
           { role: 'user', content: userContent },
         ],
-        response_format: responseFormat,
+        response_format: { type: 'json_object' },
       }),
       signal: AbortSignal.timeout(60_000),
     });
-  }
 
-  let raw = '';
-  let lastError: LabsError = { code: 'provider_error', message: 'El evaluador no respondió.' };
-
-  // Intento 1: JSON schema estricto (con enums). Intento 2 (solo si el 1 da
-  // 400): JSON mode suelto — Groq podría no aceptar schema+imagen a la vez.
-  const attempts: unknown[] = [
-    { type: 'json_schema', json_schema: { name: 'writing_assessment', strict: true, schema } },
-  ];
-  if (dataUri) attempts.push({ type: 'json_object' });
-
-  for (const responseFormat of attempts) {
-    try {
-      const res = await callGroq(responseFormat);
-
-      if (res.status === 429) {
-        return { code: 'rate_limited', message: 'Cuota del free tier de Groq agotada por ahora.' };
-      }
-      if (res.status === 400) {
-        const bodyText = await res.text().catch(() => '');
-        console.error('[labs/groq] 400, probando siguiente response_format', bodyText.slice(0, 300));
-        lastError = { code: 'provider_error', message: 'El evaluador rechazó la solicitud.' };
-        continue;
-      }
-      if (!res.ok) {
-        console.error('[labs/groq]', res.status, await res.text().catch(() => ''));
-        lastError = { code: 'provider_error', message: 'El evaluador no respondió.' };
-        continue;
-      }
-
+    if (res.status === 429) {
+      return { code: 'rate_limited', message: 'Cuota del free tier de Groq agotada por ahora.' };
+    }
+    if (!res.ok) {
+      console.error('[labs/groq]', res.status, await res.text().catch(() => ''));
+      lastError = { code: 'provider_error', message: 'El evaluador rechazó la solicitud.' };
+    } else {
       const json = await res.json();
       raw = json?.choices?.[0]?.message?.content ?? '';
-      break;
-    } catch (err) {
-      console.error('[labs/groq] fetch', err);
-      lastError = { code: 'provider_error', message: 'El evaluador tardó demasiado. Intenta de nuevo.' };
     }
+  } catch (err) {
+    console.error('[labs/groq] fetch', err);
+    lastError = { code: 'provider_error', message: 'El evaluador tardó demasiado. Intenta de nuevo.' };
   }
 
   if (!raw) return lastError;
@@ -181,8 +126,8 @@ export async function assessWritingGroq<TaskId extends string>(
     return { code: 'provider_error', message: 'Respuesta con formato inesperado del evaluador.' };
   }
 
-  // Salvavidas para cuando cayó a json_object (sin enum forzado en servidor):
-  // descarta cualquier criterio que no exista en la rúbrica activa.
+  // json_object no fuerza enum en servidor — descarta cualquier criterio
+  // que no exista en la rúbrica activa.
   const validKeys = new Set(rubric.criteria.map((c) => c.key));
   const criteria = parsed.criteria.filter((c) => c && validKeys.has(c.criterion));
 
@@ -201,7 +146,7 @@ export async function assessWritingGroq<TaskId extends string>(
     topIssues:   sorted.slice(0, 3),
     hiddenIssueCount: Math.max(0, sorted.length - 3),
     allIssues:   sorted,
-    // json_object (fallback sin schema) puede omitir rewritten — degradar al original.
+    // Sin schema forzado el modelo puede omitir rewritten — degradar al original.
     rewritten:   parsed.rewritten ?? essay,
     wordCount,
   };

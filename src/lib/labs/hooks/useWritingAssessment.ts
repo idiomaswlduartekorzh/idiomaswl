@@ -17,10 +17,12 @@ export interface UseWritingAssessmentResult {
   result: FullAssessment | null;
 }
 
+export type ExamSlug = 'ielts' | 'toefl' | 'cambridge-b2' | 'goethe' | 'cils-celi' | 'delf-dalf' | 'celpe-bras';
+
 export function useWritingAssessment(
-  examSlug:   'ielts' | 'toefl' | 'cambridge-b2',
+  examSlug:   ExamSlug,
   mockId:     string,
-  taskNumber: 1 | 2,
+  taskNumber: 1 | 2 | 3 | 4,
   essay:      string,
 ): UseWritingAssessmentResult {
   const [state, setState] = useState<AssessmentState>(() => (essay.trim() ? 'loading' : 'unavailable'));

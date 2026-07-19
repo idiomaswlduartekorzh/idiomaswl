@@ -50,6 +50,18 @@ import { toeflWritingRubric } from '@/lib/labs/rubrics/toefl-writing';
 import { getCambridgeWritingAssignment, isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
 import { cambridgeB2WritingRubric } from '@/lib/labs/rubrics/cambridge-b2-writing';
 
+import { getGoetheWritingAssignment, isFreeGoetheMock } from '@/lib/labs/exam-bridge/goethe';
+import { goetheWritingRubric } from '@/lib/labs/rubrics/goethe-writing';
+
+import { getCilsCeliWritingAssignment, isFreeCilsCeliMock } from '@/lib/labs/exam-bridge/cils-celi';
+import { cilsCeliWritingRubric } from '@/lib/labs/rubrics/cils-celi-writing';
+
+import { getDelfDalfWritingAssignment, isFreeDelfDalfMock, levelForDelfDalfMock } from '@/lib/labs/exam-bridge/delf-dalf';
+import { delfDalfWritingRubric } from '@/lib/labs/rubrics/delf-dalf-writing';
+
+import { getCelpeBrasWritingAssignment, isFreeCelpeBrasMock } from '@/lib/labs/exam-bridge/celpe-bras';
+import { celpeBrasWritingRubric } from '@/lib/labs/rubrics/celpe-bras-writing';
+
 /**
  * Motor de corrección PERSONALIZADO POR EXAMEN. A diferencia de
  * /api/labs/writing-assess (el prototipo, donde el cliente manda la consigna
@@ -57,19 +69,29 @@ import { cambridgeB2WritingRubric } from '@/lib/labs/rubrics/cambridge-b2-writin
  * su ensayo. La consigna real (y la imagen del gráfico si aplica) la resuelve
  * el servidor desde los mocks oficiales — el estudiante no puede alterarla.
  *
- * Contrato uniforme para las 3 familias: taskNumber siempre 1|2 desde el
- * cliente. Cada adaptador lo traduce a su propio task id semántico
- * (IELTS: task1-academic/task2 · TOEFL: integrated/academic-discussion ·
- * Cambridge: essay/part2) y aporta su propia rúbrica — nunca se comparten.
+ * Contrato uniforme para todas las familias: taskNumber es 1..4 desde el
+ * cliente (la mayoría usa solo 1|2; CELPE-Bras usa las 4 — sus 4 tareas de
+ * Writing son reales, ver exam-bridge/celpe-bras.ts). Cada adaptador lo
+ * traduce a su propio task id semántico (IELTS: task1-academic/task2 ·
+ * TOEFL: integrated/academic-discussion · Cambridge: essay/part2) y aporta
+ * su propia rúbrica — nunca se comparten. Si un adaptador no tiene esa
+ * tarea, su getAssignment() devuelve null ANTES de que se llame
+ * taskIdFor() — no hace falta validar cuántas tareas soporta cada uno acá.
  */
 
-type TaskNumber = 1 | 2;
+type TaskNumber = 1 | 2 | 3 | 4;
 
 interface ExamAdapter {
   isFreeMock(mockId: string): boolean;
   getAssignment(mockId: string, taskNumber: TaskNumber): Promise<{ promptText: string; minWords: number; imageUrl?: string } | null>;
   rubric: WritingRubric<string>;
-  taskIdFor(taskNumber: TaskNumber): string;
+  /**
+   * mockId disponible acá (no solo taskNumber) para familias donde el task
+   * id semántico depende del SET, no solo del número de tarea — DELF/DALF
+   * usa esto para elegir la rúbrica de nivel B1 vs B2 según el mock, ver
+   * exam-bridge/delf-dalf.ts.
+   */
+  taskIdFor(taskNumber: TaskNumber, mockId: string): string;
 }
 
 const ADAPTERS: Record<string, ExamAdapter> = {
@@ -91,9 +113,36 @@ const ADAPTERS: Record<string, ExamAdapter> = {
     rubric: cambridgeB2WritingRubric,
     taskIdFor: (n) => (n === 1 ? 'essay' : 'part2'),
   },
+  goethe: {
+    isFreeMock: isFreeGoetheMock,
+    // El mock actual solo tiene UNA tarea (siempre 'schreiben') — n se ignora.
+    getAssignment: (mockId) => getGoetheWritingAssignment(mockId, 'schreiben'),
+    rubric: goetheWritingRubric,
+    taskIdFor: () => 'schreiben',
+  },
+  'cils-celi': {
+    isFreeMock: isFreeCilsCeliMock,
+    getAssignment: (mockId, n) => getCilsCeliWritingAssignment(mockId, n === 1 ? 'produzione1' : 'produzione2'),
+    rubric: cilsCeliWritingRubric,
+    taskIdFor: (n) => (n === 1 ? 'produzione1' : 'produzione2'),
+  },
+  'delf-dalf': {
+    isFreeMock: isFreeDelfDalfMock,
+    getAssignment: (mockId, n) => getDelfDalfWritingAssignment(mockId, n === 1 ? 1 : 2),
+    rubric: delfDalfWritingRubric,
+    // El nivel (b1/b2) depende del SET, no del número de tarea — ver
+    // exam-bridge/delf-dalf.ts.
+    taskIdFor: (_n, mockId) => levelForDelfDalfMock(mockId),
+  },
+  'celpe-bras': {
+    isFreeMock: isFreeCelpeBrasMock,
+    getAssignment: (mockId, n) => getCelpeBrasWritingAssignment(mockId, `tarefa${n}` as 'tarefa1' | 'tarefa2' | 'tarefa3' | 'tarefa4'),
+    rubric: celpeBrasWritingRubric,
+    taskIdFor: (n) => `tarefa${n}`,
+  },
 };
 
-const VALID_TASK_NUMBERS: TaskNumber[] = [1, 2];
+const VALID_TASK_NUMBERS: TaskNumber[] = [1, 2, 3, 4];
 
 export const maxDuration = 120;
 
@@ -163,25 +212,26 @@ export async function POST(req: Request) {
     );
   }
 
-  const task = adapter.taskIdFor(taskNumber as TaskNumber);
+  const task = adapter.taskIdFor(taskNumber as TaskNumber, mockId);
   const image = assignment.imageUrl ? (await fetchInlineImage(assignment.imageUrl, req)) ?? undefined : undefined;
 
   async function callEngine(eng: Engine): Promise<FullAssessment | LabsError> {
     if (eng === 'anthropic') return assessWritingOpus(essay, assignment!.promptText, task, adapter.rubric);
     if (eng === 'nvidia')    return assessWritingNvidia(essay, assignment!.promptText, task, adapter.rubric);
-    if (eng === 'groq')      return assessWritingGroq(essay, assignment!.promptText, task, adapter.rubric, image);
+    if (eng === 'groq')      return assessWritingGroq(essay, assignment!.promptText, task, adapter.rubric);
     return assessWritingFree(essay, assignment!.promptText, task, adapter.rubric, image);
   }
 
   // 'auto' (default en producción): Gemini para tareas con gráfico (visión
   // real), Groq para todo lo que es solo texto (más rápido, no se satura
   // tan fácil). Nemotron (NVIDIA) es tercer respaldo SOLO para tareas de
-  // solo texto — no tiene visión, así que nunca entra en la cadena de una
-  // tarea con gráfico (IELTS Task 1). Con LABS_WRITING_ENGINE forzada, ese
-  // motor gana siempre y SIN respaldo — modo de depuración de un solo
-  // proveedor.
+  // solo texto. Ni Groq ni Nemotron tienen visión viable para nuestro
+  // esquema completo (probado con ambos, ver providers/groq.ts) — IELTS
+  // Task 1 (el único caso con imagen) se queda solo con Gemini, sin
+  // respaldo. Con LABS_WRITING_ENGINE forzada, ese motor gana siempre y
+  // SIN respaldo — modo de depuración de un solo proveedor.
   const engineChain: Engine[] = WRITING_ENGINE === 'auto'
-    ? (image ? ['gemini', 'groq'] : ['groq', 'gemini', 'nvidia'])
+    ? (image ? ['gemini'] : ['groq', 'gemini', 'nvidia'])
     : [WRITING_ENGINE];
 
   let result = await callEngine(engineChain[0]);
@@ -189,9 +239,7 @@ export async function POST(req: Request) {
 
   // Solo reintenta con el siguiente motor de la cadena ante saturación/caída
   // del actual — no ante errores de configuración (esos fallarían igual en
-  // el respaldo) ni de validación. Si la tarea lleva imagen y toca usar Groq
-  // de respaldo, la imagen se manda igual — el frontend marca el aviso de
-  // precisión cuando engineUsed no es 'gemini' en una tarea con gráfico.
+  // el respaldo) ni de validación.
   for (const nextEngine of engineChain.slice(1)) {
     if (!('code' in result) || (result.code !== 'rate_limited' && result.code !== 'provider_error')) break;
     console.error(`[exam-writing-assess] ${engineUsed} falló (${result.code}), probando respaldo ${nextEngine}`);

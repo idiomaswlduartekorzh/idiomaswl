@@ -59,16 +59,20 @@ function bandColor(band: number, max: number) {
 }
 
 interface Props {
-  examSlug:   'ielts' | 'toefl' | 'cambridge-b2';
+  examSlug:   'ielts' | 'toefl' | 'cambridge-b2' | 'goethe' | 'cils-celi' | 'delf-dalf' | 'celpe-bras';
   mockId:     string;
-  taskNumber: 1 | 2;
+  taskNumber: 1 | 2 | 3 | 4;
   taskLabel:  string;
   essay:      string;
+  /** Máximo real de la escala de esa rúbrica (9 IELTS, 5 TOEFL/Cambridge/CELPE-Bras,
+   *  20 CILS, 25 DELF/DALF, 100 Goethe) — sin esto el color de la banda salía mal
+   *  para cualquier examen que no fuera /9. */
+  maxScore:   number;
   /** Texto de respaldo si el motor no está disponible (mantiene el mensaje original). */
   fallbackNotice: string;
 }
 
-export function WritingAssessmentPanel({ examSlug, mockId, taskNumber, taskLabel, essay, fallbackNotice }: Props) {
+export function WritingAssessmentPanel({ examSlug, mockId, taskNumber, taskLabel, essay, maxScore, fallbackNotice }: Props) {
   // Estado inicial ya resuelve el caso "sin ensayo" — evita setState síncrono
   // dentro del effect para esa rama.
   const [state, setState] = useState<'loading' | 'success' | 'saturated' | 'unavailable'>(
@@ -158,14 +162,14 @@ export function WritingAssessmentPanel({ examSlug, mockId, taskNumber, taskLabel
     <div className="mt-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5">
       <div className="flex items-baseline justify-between mb-4">
         <p className="text-sm font-semibold text-[var(--fg)]">{taskLabel}</p>
-        <p className={`text-2xl font-bold ${bandColor(result.overallBand, 9)}`}>{result.overallBand.toFixed(1)}</p>
+        <p className={`text-2xl font-bold ${bandColor(result.overallBand, maxScore)}`}>{result.overallBand.toFixed(1)}</p>
       </div>
 
       <div className="grid grid-cols-2 gap-2 mb-4 sm:grid-cols-4">
         {result.criteria.map((c) => (
           <div key={c.criterion} className="rounded-lg border border-[var(--border)] p-2">
             <p className="text-[10px] uppercase tracking-wide text-[var(--muted)]">{c.criterion}</p>
-            <p className={`text-lg font-bold ${bandColor(c.band, 9)}`}>{c.band}</p>
+            <p className={`text-lg font-bold ${bandColor(c.band, maxScore)}`}>{c.band}</p>
           </div>
         ))}
       </div>
