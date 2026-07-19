@@ -36,6 +36,7 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
   if (exercise.leveling?.independentAssessment?.estimatedLevel !== exercise.level?.cefr) errors.push('independent level assessment must match the declared CEFR level')
   if (exercise.language === 'ja' && (!exercise.level.jlpt || !exercise.level.mappingDisclaimer)) errors.push('Japanese exercises require JLPT and a mapping disclaimer')
   if (exercise.language === 'ko' && (!exercise.level.topik || !exercise.level.mappingDisclaimer)) errors.push('Korean exercises require TOPIK and a mapping disclaimer')
+  if (exercise.language === 'ko' && exercise.scriptSupport?.tokenizationMode !== 'custom') errors.push('Korean exercises require phrase-aware custom tokenization')
   if (exercise.language === 'pt' && exercise.variant !== 'pt-BR') errors.push('Portuguese exercises must use pt-BR')
 
   if (PUBLISHABLE_STATUSES.has(exercise.status)) {
@@ -49,6 +50,10 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
     if (!localized(exercise.seo.title, locale)) errors.push(`seo.title is missing for ${locale}`)
   }
 
+  for (const item of exercise.content?.vocabulary ?? []) {
+    if (!exercise.content.targetText.normalize('NFKC').includes(item.surface.normalize('NFKC'))) errors.push(`vocabulary surface is absent from target text: ${item.surface}`)
+    if (exercise.language === 'ko' && !item.reading) errors.push(`Korean vocabulary requires an optional-support reading: ${item.surface}`)
+  }
+
   if (errors.length) throw new Error(`${exercise.id || 'unknown exercise'}: ${errors.join('; ')}`)
 }
-
