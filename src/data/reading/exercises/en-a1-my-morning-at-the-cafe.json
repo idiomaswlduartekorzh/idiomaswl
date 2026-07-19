@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a1-my-morning-at-the-cafe",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": ["es", "en"],
+  "level": { "cefr": "A1", "displayLabel": "English A1" },
+  "slug": "my-morning-at-the-cafe",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "Café and morning routine",
+    "intent": "daily-life",
+    "tags": ["routine", "cafe", "time", "food"]
+  },
+  "content": {
+    "title": { "es": "My Morning at the Café", "en": "My Morning at the Café" },
+    "intro": {
+      "es": "Practica horarios, pedidos y rutinas cotidianas con una lectura breve en inglés A1. Completarla toma unos tres minutos.",
+      "en": "Practise times, orders, and daily routines with a short A1 English reading. It takes about three minutes."
+    },
+    "mission": {
+      "es": "Descubre qué pide Emma, a qué hora llega y qué compra para después.",
+      "en": "Find out what Emma orders, when she arrives, and what she buys for later."
+    },
+    "targetText": "Emma usually arrives at the café at eight o’clock. She sits near the window and orders tea with milk. Today, the café is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. Before she leaves, she orders a sandwich for later.",
+    "plainTextForAnalysis": "Emma usually arrives at the cafe at eight o'clock. She sits near the window and orders tea with milk. Today, the cafe is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. Before she leaves, she orders a sandwich for later.",
+    "wordCount": 55,
+    "estimatedMinutes": 3,
+    "objectives": [
+      "Identificar una hora y un pedido en un relato cotidiano.",
+      "Comprender la secuencia básica de una rutina."
+    ],
+    "grammarFocus": ["present simple", "present continuous", "time with at"],
+    "vocabulary": [
+      { "surface": "usually", "lemma": "usually", "glosses": { "es": "normalmente", "en": "most of the time" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "orders", "lemma": "order", "glosses": { "es": "pide", "en": "asks for food or a drink" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "counter", "lemma": "counter", "glosses": { "es": "mostrador", "en": "the service desk in a café" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" },
+      { "surface": "later", "lemma": "later", "glosses": { "es": "más tarde", "en": "after now" }, "audioRequired": false, "levelStatus": "within-level" }
+    ],
+    "culturalNote": {
+      "es": "La situación es deliberadamente global y no representa una costumbre exclusiva de un país anglófono.",
+      "en": "The situation is intentionally global and does not represent a custom unique to one English-speaking country."
+    },
+    "spanishSpeakerNote": "En inglés se usa at antes de una hora específica: at eight o’clock.",
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
+  "leveling": {
+    "targetCanDo": "Puede comprender información concreta y una secuencia corta en un texto cotidiano sencillo.",
+    "allowedGrammar": ["present simple", "present continuous", "time with at", "basic coordination with and"],
+    "disallowedGrammar": ["passive voice", "reported speech", "relative clauses", "idiomatic phrasal verbs"],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": { "averageSentenceWords": 9.2, "maxSentenceWords": 14, "outOfLevelVocabularyPercent": 1.7, "glossedOutOfLevelItems": 1 },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Independent editorial assessment — human confirmation pending",
+      "assessedAt": "2026-07-18T12:00:00-05:00",
+      "notes": "Automated preflight passed. Human language and pedagogy review are required before publication."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-main-idea", "type": "main-idea", "skill": "global", "prompt": "What is the text mainly about?",
+      "options": [{ "id": "school", "text": "A class at school" }, { "id": "morning", "text": "Emma’s morning at a café" }, { "id": "recipe", "text": "A recipe for tea" }],
+      "answer": "morning",
+      "feedback": {
+        "correct": { "es": "Correcto. Todas las acciones forman parte de la mañana de Emma en el café.", "en": "Correct. All the actions are part of Emma’s morning at the café." },
+        "incorrect": { "es": "Busca el lugar y la persona que aparecen durante todo el texto.", "en": "Look for the place and person that appear throughout the text." },
+        "strategy": { "es": "Para la idea general, busca elementos repetidos y no un detalle aislado.", "en": "For the main idea, look for repeated elements, not one isolated detail." },
+        "distractorNotes": {
+          "school": { "es": "La escuela solo aparece en la conversación de dos estudiantes.", "en": "School appears only in the students’ conversation." },
+          "recipe": { "es": "El texto menciona té, pero no explica una receta.", "en": "The text mentions tea but gives no recipe." }
+        }
+      },
+      "evidence": "Emma usually arrives at the café...", "maxAttempts": 2
+    },
+    {
+      "id": "q-arrival-time", "type": "detail", "skill": "detail", "prompt": "What time does Emma arrive?",
+      "options": [{ "id": "seven", "text": "At seven o’clock" }, { "id": "eight", "text": "At eight o’clock" }, { "id": "nine", "text": "At nine o’clock" }],
+      "answer": "eight",
+      "feedback": {
+        "correct": { "es": "Correcto. El texto dice “at eight o’clock”.", "en": "Correct. The text says “at eight o’clock”." },
+        "incorrect": { "es": "Vuelve a la primera oración y busca una expresión con at.", "en": "Return to the first sentence and find a phrase with at." },
+        "strategy": { "es": "Para localizar horarios, escanea números y expresiones de tiempo.", "en": "To find times, scan for numbers and time expressions." }
+      },
+      "evidence": "Emma usually arrives at the café at eight o’clock.", "maxAttempts": 2
+    },
+    {
+      "id": "q-usually", "type": "vocabulary-in-context", "skill": "vocabulary", "prompt": "What does usually mean in this text?",
+      "options": [{ "id": "always", "text": "Always" }, { "id": "normally", "text": "Normally" }, { "id": "quickly", "text": "Quickly" }],
+      "answer": "normally",
+      "feedback": {
+        "correct": { "es": "Correcto. Usually significa normalmente o la mayoría de las veces.", "en": "Correct. Usually means normally or most of the time." },
+        "incorrect": { "es": "La palabra describe con qué frecuencia sucede la rutina.", "en": "The word describes how often the routine happens." },
+        "strategy": { "es": "Usa la rutina de la oración para reconocer el adverbio de frecuencia.", "en": "Use the routine in the sentence to recognise the frequency adverb." }
+      },
+      "evidence": "Emma usually arrives...", "maxAttempts": 2
+    },
+    {
+      "id": "q-sandwich", "type": "true-false", "skill": "detail", "prompt": "Emma orders a sandwich for later.",
+      "options": [{ "id": "true", "text": "True" }, { "id": "false", "text": "False" }],
+      "answer": true,
+      "feedback": {
+        "correct": { "es": "Correcto. La última oración lo afirma directamente.", "en": "Correct. The final sentence states this directly." },
+        "incorrect": { "es": "Relee la última oración.", "en": "Read the final sentence again." },
+        "strategy": { "es": "En verdadero o falso, compara cada parte de la afirmación con el texto.", "en": "For true or false, compare every part of the statement with the text." }
+      },
+      "evidence": "Before she leaves, she orders a sandwich for later.", "maxAttempts": 2
+    },
+    {
+      "id": "q-order-events", "type": "ordering", "skill": "organization", "prompt": "Put the events in the correct order.",
+      "options": [{ "id": "arrives", "text": "Emma arrives at the café." }, { "id": "reads", "text": "Emma reads a message." }, { "id": "sandwich", "text": "Emma orders a sandwich." }],
+      "answer": ["arrives", "reads", "sandwich"],
+      "feedback": {
+        "correct": { "es": "Correcto. Ese es el orden del relato.", "en": "Correct. That is the order in the story." },
+        "incorrect": { "es": "Sigue el texto desde el principio hasta el final.", "en": "Follow the text from beginning to end." },
+        "strategy": { "es": "Busca marcadores como today y before, y sigue el orden del texto.", "en": "Look for markers such as today and before, and follow the text order." }
+      },
+      "evidence": "Arrives → reads a message → orders a sandwich.", "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": { "es": "Escribe 2–3 frases en inglés sobre tu rutina de la mañana.", "en": "Write 2–3 sentences in English about your morning routine." },
+    "minWords": 8, "maxWords": 45, "hints": ["I usually...", "at...", "before..."], "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-18T12:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "AI-assisted draft. It remains non-indexable until real human reviewers approve it."
+  },
+  "seo": {
+    "title": { "es": "Lectura en inglés A1: My Morning at the Café | WeLearn", "en": "A1 English Reading: My Morning at the Café | WeLearn" },
+    "description": { "es": "Practica inglés A1 con una lectura sobre una rutina en un café, vocabulario, preguntas y explicaciones.", "en": "Practise A1 English with a café routine, vocabulary, comprehension questions, and explanations." },
+    "canonicalPath": "/es/practica/ingles/a1/lectura/my-morning-at-the-cafe",
+    "indexable": false,
+    "lastModified": "2026-07-18T12:00:00-05:00",
+    "relatedExerciseIds": []
+  }
+}
+

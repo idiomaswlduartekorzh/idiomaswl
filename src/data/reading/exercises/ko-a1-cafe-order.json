@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ko-a1-cafe-order",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": ["es", "en"],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "Coreano inicial",
+    "topik": 1,
+    "mappingDisclaimer": "TOPIK y CEFR son escalas distintas; esta etiqueta es una orientación editorial, no una equivalencia oficial."
+  },
+  "slug": "cafe-order",
+  "series": null,
+  "classification": { "genre": "dialogue", "topic": "Ordering at a café", "intent": "daily-life", "tags": ["cafe", "hangul", "ordering"] },
+  "content": {
+    "title": { "es": "카페에서 주문하기", "en": "Ordering at a Café" },
+    "intro": { "es": "Prueba el adaptador de Hangul con un diálogo cotidiano breve y ayudas bajo demanda.", "en": "Try the Hangul adapter with a short everyday dialogue and optional support." },
+    "mission": { "es": "Identifica qué bebida pide 민지 y si la quiere caliente o fría.", "en": "Find out which drink Minji orders and whether she wants it hot or cold." },
+    "targetText": "직원: 어서 오세요. 무엇을 드릴까요? 민지: 따뜻한 아메리카노 한 잔 주세요. 직원: 여기에서 드세요? 민지: 아니요, 가지고 갈게요. 직원: 네, 사천 원입니다. 민지: 여기 있어요. 감사합니다.",
+    "plainTextForAnalysis": "직원 어서 오세요 무엇을 드릴까요 민지 따뜻한 아메리카노 한 잔 주세요 직원 여기에서 드세요 민지 아니요 가지고 갈게요 직원 네 사천 원입니다 민지 여기 있어요 감사합니다",
+    "wordCount": 40,
+    "estimatedMinutes": 4,
+    "objectives": ["Reconocer una bebida y una cantidad en un diálogo breve.", "Distinguir consumo en el lugar y para llevar."],
+    "grammarFocus": ["주세요", "한 잔", "-에서"],
+    "vocabulary": [
+      { "surface": "따뜻한", "lemma": "따뜻하다", "reading": "ttatteuthan", "glosses": { "es": "caliente", "en": "hot or warm" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "한 잔", "lemma": "잔", "reading": "han jan", "glosses": { "es": "una taza", "en": "one cup" }, "audioRequired": false, "levelStatus": "within-level" },
+      { "surface": "가지고 갈게요", "lemma": "가지고 가다", "reading": "gajigo galgeyo", "glosses": { "es": "lo llevaré", "en": "I will take it to go" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" }
+    ],
+    "culturalNote": { "es": "Este diálogo usa un registro cortés frecuente en atención al cliente; no representa la única forma posible de pedir.", "en": "This dialogue uses a polite register common in customer service; it is not the only possible way to order." },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": { "furigana": false, "romanization": "optional", "stressMarks": false, "tokenizationMode": "morphological" },
+  "leveling": {
+    "targetCanDo": "Puede reconocer una bebida, una cantidad y una decisión sencilla en un diálogo de servicio.",
+    "allowedGrammar": ["주세요", "한 잔", "-에서", "polite present endings"],
+    "disallowedGrammar": ["reported speech", "embedded clauses"],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "none",
+    "metrics": { "averageSentenceWords": 5, "maxSentenceWords": 7, "outOfLevelVocabularyPercent": 2.5, "glossedOutOfLevelItems": 1 },
+    "independentAssessment": { "estimatedLevel": "A1", "passed": true, "assessor": "Automated preflight — human confirmation pending", "assessedAt": "2026-07-18T12:00:00-05:00", "notes": "Demonstration fixture for the Hangul adapter; human review remains blocking." }
+  },
+  "questions": [
+    {
+      "id": "q-drink", "type": "detail", "skill": "detail", "prompt": "민지는 무엇을 주문해요?",
+      "options": [{ "id": "americano", "text": "아메리카노" }, { "id": "tea", "text": "차" }, { "id": "juice", "text": "주스" }], "answer": "americano",
+      "feedback": { "correct": { "es": "Correcto. 민지 pide un 아메리카노.", "en": "Correct. Minji orders an Americano." }, "incorrect": { "es": "Busca la bebida después de 따뜻한.", "en": "Look for the drink after 따뜻한." }, "strategy": { "es": "En un pedido, localiza el sustantivo antes de 주세요.", "en": "In an order, find the noun before 주세요." } },
+      "evidence": "따뜻한 아메리카노 한 잔 주세요.", "maxAttempts": 2
+    },
+    {
+      "id": "q-temperature", "type": "vocabulary-in-context", "skill": "vocabulary", "prompt": "따뜻한은 무슨 뜻이에요?",
+      "options": [{ "id": "hot", "text": "Hot" }, { "id": "cold", "text": "Cold" }, { "id": "large", "text": "Large" }], "answer": "hot",
+      "feedback": { "correct": { "es": "Correcto. 따뜻한 significa caliente o tibio.", "en": "Correct. 따뜻한 means hot or warm." }, "incorrect": { "es": "Revisa la glosa de vocabulario.", "en": "Check the vocabulary gloss." }, "strategy": { "es": "Relaciona el adjetivo con la bebida que modifica.", "en": "Connect the adjective with the drink it modifies." } },
+      "evidence": "따뜻한 아메리카노", "maxAttempts": 2
+    },
+    {
+      "id": "q-takeaway", "type": "true-false", "skill": "detail", "prompt": "민지는 카페에서 마셔요.",
+      "options": [{ "id": "true", "text": "True" }, { "id": "false", "text": "False" }], "answer": false,
+      "feedback": { "correct": { "es": "Correcto. Dice 가지고 갈게요: lo llevará.", "en": "Correct. She says 가지고 갈게요: she will take it to go." }, "incorrect": { "es": "Busca la respuesta después de 여기에서 드세요?", "en": "Find the reply after 여기에서 드세요?" }, "strategy": { "es": "Compara la pregunta del empleado con la respuesta de 민지.", "en": "Compare the employee’s question with Minji’s answer." } },
+      "evidence": "아니요, 가지고 갈게요.", "maxAttempts": 2
+    }
+  ],
+  "production": { "prompt": { "es": "Escribe un pedido de una bebida usando 주세요.", "en": "Write a drink order using 주세요." }, "minWords": 2, "maxWords": 20, "hints": ["___ 한 잔 주세요"], "scored": false },
+  "review": { "author": "WeLearn adapter demonstration", "languageReviewer": "Pending human Korean review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T12:00:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Non-publishable demonstration fixture pending human review." },
+  "seo": {
+    "title": { "es": "Lectura en coreano inicial: pedido en un café | WeLearn", "en": "Beginner Korean Reading: Ordering at a Café | WeLearn" },
+    "description": { "es": "Practica Hangul con un diálogo corto de café, vocabulario y preguntas de comprensión.", "en": "Practise Hangul with a short café dialogue, vocabulary, and comprehension questions." },
+    "canonicalPath": "/es/practica/coreano/a1/lectura/cafe-order", "indexable": false, "lastModified": "2026-07-18T12:00:00-05:00", "relatedExerciseIds": []
+  }
+}
+
