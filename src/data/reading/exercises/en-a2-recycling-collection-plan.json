@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-recycling-collection-plan",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
+  "slug": "recycling-collection-plan",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 17,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-school-exchange-diary",
+    "nextExerciseId": "en-a2-weekend-volunteer-shift"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "recycling",
+    "intent": "learning",
+    "tags": [
+      "recycling",
+      "article",
+      "a2",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Un plan mejor para recoger reciclaje",
+      "en": "A Better Recycling Collection Plan"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A2 con un texto original sobre recycling.",
+      "en": "Practise A2 English reading with an original text about recycling."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "The residents of Brookfield used to put recycling bags outside on different days, and the collection team often missed some streets. Last month, the council tested a clearer plan. Each street received a colour and a collection day. Blue streets put paper and cardboard outside on Monday, while green streets put glass and metal outside on Tuesday. A reminder card explained what could not go in the bags. After four weeks, fewer bags contained the wrong materials, but some residents said the colour system was confusing at night. The council will add brighter signs before deciding whether to keep the plan. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "plainTextForAnalysis": "The residents of Brookfield used to put recycling bags outside on different days, and the collection team often missed some streets. Last month, the council tested a clearer plan. Each street received a colour and a collection day. Blue streets put paper and cardboard outside on Monday, while green streets put glass and metal outside on Tuesday. A reminder card explained what could not go in the bags. After four weeks, fewer bags contained the wrong materials, but some residents said the colour system was confusing at night. The council will add brighter signs before deciding whether to keep the plan. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "wordCount": 145,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "vocabulary": [
+      {
+        "surface": "collection",
+        "lemma": "collection",
+        "glosses": {
+          "es": "collection",
+          "en": "meaning in context: collection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "materials",
+        "lemma": "materials",
+        "glosses": {
+          "es": "materials",
+          "en": "meaning in context: materials"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "confusing",
+        "lemma": "confusing",
+        "glosses": {
+          "es": "confusing",
+          "en": "meaning in context: confusing"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A2.",
+      "en": "You can understand and justify information in a A2 text."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 14.5,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A2 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the article mainly about?",
+      "options": [
+        {
+          "id": "plan",
+          "text": "A trial to improve recycling collection"
+        },
+        {
+          "id": "painting",
+          "text": "A plan to repaint houses"
+        },
+        {
+          "id": "traffic",
+          "text": "A new traffic-light system"
+        }
+      ],
+      "answer": "plan",
+      "evidence": "the council tested a clearer plan",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “the council tested a clearer plan”",
+          "en": "Correct. The evidence says: “the council tested a clearer plan”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La introducción presenta el problema y el resto evalúa el ensayo.",
+          "en": "La introducción presenta el problema y el resto evalúa el ensayo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What do blue streets put outside on Monday?",
+      "options": [
+        {
+          "id": "glass",
+          "text": "Glass and metal"
+        },
+        {
+          "id": "paper",
+          "text": "Paper and cardboard"
+        },
+        {
+          "id": "food",
+          "text": "Food waste"
+        }
+      ],
+      "answer": "paper",
+      "evidence": "Blue streets put paper and cardboard outside on Monday",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Blue streets put paper and cardboard outside on Monday”",
+          "en": "Correct. The evidence says: “Blue streets put paper and cardboard outside on Monday”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Busca el color y el día en la misma oración.",
+          "en": "Busca el color y el día en la misma oración."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why will the council add brighter signs?",
+      "options": [
+        {
+          "id": "visibility",
+          "text": "To make the colour system easier to see at night"
+        },
+        {
+          "id": "speed",
+          "text": "To collect bags faster in the morning"
+        },
+        {
+          "id": "cost",
+          "text": "To reduce the price of recycling"
+        }
+      ],
+      "answer": "visibility",
+      "evidence": "the colour system was confusing at night",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “the colour system was confusing at night”",
+          "en": "Correct. The evidence says: “the colour system was confusing at night”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La solución responde directamente al problema mencionado.",
+          "en": "La solución responde directamente al problema mencionado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Better Recycling Collection Plan”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "The team misses some streets."
+        },
+        {
+          "id": "step-1-2",
+          "text": "The council tests colour days."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Residents report the results."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "The team misses some streets. → The council tests colour days. → Residents report the results.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “The team misses some streets. → The council tests colour days. → Residents report the results.”",
+          "en": "Correct. The evidence says: “The team misses some streets. → The council tests colour days. → Residents report the results.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Better Recycling Collection Plan”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "The council tests colour days."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Residents report the results."
+        },
+        {
+          "id": "step-2-3",
+          "text": "The council adds brighter signs."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "The council tests colour days. → Residents report the results. → The council adds brighter signs.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “The council tests colour days. → Residents report the results. → The council adds brighter signs.”",
+          "en": "Correct. The evidence says: “The council tests colour days. → Residents report the results. → The council adds brighter signs.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 35,
+    "maxWords": 90,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A2: Un plan mejor para recoger reciclaje | WeLearn",
+      "en": "A2 English Reading: A Better Recycling Collection Plan | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con un plan mejor para recoger reciclaje, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A2 English with a better recycling collection plan, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/recycling-collection-plan",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-school-exchange-diary",
+      "en-a2-weekend-volunteer-shift"
+    ]
+  }
+}

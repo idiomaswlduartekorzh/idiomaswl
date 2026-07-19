@@ -1,0 +1,373 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a1-lost-and-found-message",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "English A1"
+  },
+  "slug": "lost-and-found-message",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 8,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a1-lunch-menu",
+    "nextExerciseId": "en-a1-train-platform-sign"
+  },
+  "classification": {
+    "genre": "message",
+    "topic": "lost property",
+    "intent": "learning",
+    "tags": [
+      "lost property",
+      "message",
+      "a1",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una mochila azul perdida",
+      "en": "A Lost Blue Backpack"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A1 con un texto original sobre lost property.",
+      "en": "Practise A1 English reading with an original text about lost property."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "A blue backpack was found near Room 4 after the English class. It has a small yellow star on the front and a name tag inside. The owner can collect it from the school office before four o’clock today. Please bring your student card. If nobody collects it today, the office will keep it until Friday.",
+    "plainTextForAnalysis": "A blue backpack was found near Room 4 after the English class. It has a small yellow star on the front and a name tag inside. The owner can collect it from the school office before four o’clock today. Please bring your student card. If nobody collects it today, the office will keep it until Friday.",
+    "wordCount": 56,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "present simple",
+      "can",
+      "imperatives",
+      "basic time expressions"
+    ],
+    "vocabulary": [
+      {
+        "surface": "owner",
+        "lemma": "owner",
+        "glosses": {
+          "es": "owner",
+          "en": "meaning in context: owner"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "collect",
+        "lemma": "collect",
+        "glosses": {
+          "es": "collect",
+          "en": "meaning in context: collect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "name tag",
+        "lemma": "name tag",
+        "glosses": {
+          "es": "name tag",
+          "en": "meaning in context: name tag"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A1.",
+      "en": "You can understand and justify information in a A1 text."
+    },
+    "allowedGrammar": [
+      "present simple",
+      "can",
+      "imperatives",
+      "basic time expressions"
+    ],
+    "disallowedGrammar": [
+      "passive voice",
+      "reported speech"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 11.2,
+      "maxSentenceWords": 14,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A1 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "purpose",
+      "skill": "global",
+      "prompt": "Why was this message written?",
+      "options": [
+        {
+          "id": "bag",
+          "text": "To help find the backpack’s owner"
+        },
+        {
+          "id": "room",
+          "text": "To change the English classroom"
+        },
+        {
+          "id": "class",
+          "text": "To cancel the English class"
+        }
+      ],
+      "answer": "bag",
+      "evidence": "A blue backpack was found",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “A blue backpack was found”",
+          "en": "Correct. The evidence says: “A blue backpack was found”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Busca quién necesita actuar y qué objeto se describe.",
+          "en": "Busca quién necesita actuar y qué objeto se describe."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Where can the owner collect the bag?",
+      "options": [
+        {
+          "id": "office",
+          "text": "At the school office"
+        },
+        {
+          "id": "room",
+          "text": "In Room 4"
+        },
+        {
+          "id": "library",
+          "text": "At the library"
+        }
+      ],
+      "answer": "office",
+      "evidence": "collect it from the school office",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “collect it from the school office”",
+          "en": "Correct. The evidence says: “collect it from the school office”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "El lugar donde se encontró no es el lugar de recogida.",
+          "en": "El lugar donde se encontró no es el lugar de recogida."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "The office keeps the bag until Friday if nobody comes today.",
+      "options": [
+        {
+          "id": "true",
+          "text": "True"
+        },
+        {
+          "id": "false",
+          "text": "False"
+        }
+      ],
+      "answer": "true",
+      "evidence": "the office will keep it until Friday",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “the office will keep it until Friday”",
+          "en": "Correct. The evidence says: “the office will keep it until Friday”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La condición if conecta la acción con el plazo.",
+          "en": "La condición if conecta la acción con el plazo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Is this detail stated in the text?",
+      "options": [
+        {
+          "id": "true",
+          "text": "True"
+        },
+        {
+          "id": "false",
+          "text": "False"
+        }
+      ],
+      "answer": "true",
+      "evidence": "A blue backpack was found",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “A blue backpack was found”",
+          "en": "Correct. The evidence says: “A blue backpack was found”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Comprueba si la afirmación aparece explícitamente en el texto.",
+          "en": "Comprueba si la afirmación aparece explícitamente en el texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these actions in the order used in “A Lost Blue Backpack”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Find the backpack."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Collect it from the office."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Keep it until Friday if needed."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Find the backpack. → Collect it from the office. → Keep it until Friday if needed.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Find the backpack. → Collect it from the office. → Keep it until Friday if needed.”",
+          "en": "Correct. The evidence says: “Find the backpack. → Collect it from the office. → Keep it until Friday if needed.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 15,
+    "maxWords": 55,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A1: Una mochila azul perdida | WeLearn",
+      "en": "A1 English Reading: A Lost Blue Backpack | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A1 con una mochila azul perdida, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A1 English with a lost blue backpack, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a1/lectura/lost-and-found-message",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a1-lunch-menu",
+      "en-a1-train-platform-sign"
+    ]
+  }
+}

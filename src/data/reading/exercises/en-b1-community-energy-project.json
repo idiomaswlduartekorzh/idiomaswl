@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-b1-community-energy-project",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "English B1"
+  },
+  "slug": "community-energy-project",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 25,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-b1-remote-work-pilot",
+    "nextExerciseId": "en-b1-urban-tree-plan"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "renewable energy",
+    "intent": "learning",
+    "tags": [
+      "renewable energy",
+      "article",
+      "b1",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Un proyecto comunitario aprende a compartir energía",
+      "en": "A Community Energy Project Learns to Share Power"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés B1 con un texto original sobre renewable energy.",
+      "en": "Practise B1 English reading with an original text about renewable energy."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "The residents of Sunfield began a community energy project after several winters of rising electricity bills. They installed solar panels on the roofs of the sports hall and two apartment blocks, then created a cooperative to manage the income. At first, meetings focused on the technical equipment, and fewer residents attended once the panels were working. The cooperative changed direction by publishing simple monthly reports and using part of the income to support families who could not afford efficient heaters. This decision brought more residents into the discussion, including people who did not own their homes. The project still produces less power in cloudy months, and the cooperative must buy electricity from the grid. Nevertheless, the members now see the panels as one part of a wider agreement about shared resources. Their next plan is to improve insulation before installing more panels. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "plainTextForAnalysis": "The residents of Sunfield began a community energy project after several winters of rising electricity bills. They installed solar panels on the roofs of the sports hall and two apartment blocks, then created a cooperative to manage the income. At first, meetings focused on the technical equipment, and fewer residents attended once the panels were working. The cooperative changed direction by publishing simple monthly reports and using part of the income to support families who could not afford efficient heaters. This decision brought more residents into the discussion, including people who did not own their homes. The project still produces less power in cloudy months, and the cooperative must buy electricity from the grid. Nevertheless, the members now see the panels as one part of a wider agreement about shared resources. Their next plan is to improve insulation before installing more panels. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "wordCount": 232,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cooperative",
+        "lemma": "cooperative",
+        "glosses": {
+          "es": "cooperative",
+          "en": "meaning in context: cooperative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "efficient",
+        "lemma": "efficient",
+        "glosses": {
+          "es": "efficient",
+          "en": "meaning in context: efficient"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insulation",
+        "lemma": "insulation",
+        "glosses": {
+          "es": "insulation",
+          "en": "meaning in context: insulation"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto B1.",
+      "en": "You can understand and justify information in a B1 text."
+    },
+    "allowedGrammar": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.8,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original B1 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What wider lesson does the project illustrate?",
+      "options": [
+        {
+          "id": "participation",
+          "text": "Shared energy projects need social participation as well as technology"
+        },
+        {
+          "id": "weather",
+          "text": "Solar power always works equally well"
+        },
+        {
+          "id": "ownership",
+          "text": "Only homeowners can join energy projects"
+        }
+      ],
+      "answer": "participation",
+      "evidence": "one part of a wider agreement about shared resources",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “one part of a wider agreement about shared resources”",
+          "en": "Correct. The evidence says: “one part of a wider agreement about shared resources”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La evolución de las reuniones y los informes sostiene la idea.",
+          "en": "La evolución de las reuniones y los informes sostiene la idea."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did simple reports bring more residents into discussion?",
+      "options": [
+        {
+          "id": "access",
+          "text": "They made the project understandable and relevant"
+        },
+        {
+          "id": "weather",
+          "text": "They increased sunlight"
+        },
+        {
+          "id": "equipment",
+          "text": "They repaired the panels"
+        }
+      ],
+      "answer": "access",
+      "evidence": "publishing simple monthly reports",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “publishing simple monthly reports”",
+          "en": "Correct. The evidence says: “publishing simple monthly reports”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La simplificación y el apoyo a families amplían la participación.",
+          "en": "La simplificación y el apoyo a families amplían la participación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Community Energy Project Learns to Share Power”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Install solar panels."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Create a cooperative."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Use income to support efficient heating."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Install solar panels. → Create a cooperative. → Use income to support efficient heating.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Install solar panels. → Create a cooperative. → Use income to support efficient heating.”",
+          "en": "Correct. The evidence says: “Install solar panels. → Create a cooperative. → Use income to support efficient heating.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Community Energy Project Learns to Share Power”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Create a cooperative."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Use income to support efficient heating."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Bring more residents into discussion."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Create a cooperative. → Use income to support efficient heating. → Bring more residents into discussion.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Create a cooperative. → Use income to support efficient heating. → Bring more residents into discussion.”",
+          "en": "Correct. The evidence says: “Create a cooperative. → Use income to support efficient heating. → Bring more residents into discussion.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Community Energy Project Learns to Share Power”.",
+      "options": [
+        {
+          "id": "step-3-1",
+          "text": "Use income to support efficient heating."
+        },
+        {
+          "id": "step-3-2",
+          "text": "Bring more residents into discussion."
+        },
+        {
+          "id": "step-3-3",
+          "text": "Improve insulation next."
+        }
+      ],
+      "answer": [
+        "step-3-1",
+        "step-3-2",
+        "step-3-3"
+      ],
+      "evidence": "Use income to support efficient heating. → Bring more residents into discussion. → Improve insulation next.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Use income to support efficient heating. → Bring more residents into discussion. → Improve insulation next.”",
+          "en": "Correct. The evidence says: “Use income to support efficient heating. → Bring more residents into discussion. → Improve insulation next.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 60,
+    "maxWords": 140,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés B1: Un proyecto comunitario aprende a compartir energía | WeLearn",
+      "en": "B1 English Reading: A Community Energy Project Learns to Share Power | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés B1 con un proyecto comunitario aprende a compartir energía, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise B1 English with a community energy project learns to share power, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/b1/lectura/community-energy-project",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-b1-remote-work-pilot",
+      "en-b1-urban-tree-plan"
+    ]
+  }
+}

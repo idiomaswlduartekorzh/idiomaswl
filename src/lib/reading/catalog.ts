@@ -5,6 +5,29 @@ import phoneWeekend from '@/data/reading/exercises/en-a2-weekend-without-my-phon
 import communityGarden from '@/data/reading/exercises/en-a2-community-garden-email.json'
 import fourDayWeek from '@/data/reading/exercises/en-b1-four-day-work-week.json'
 import repairCafe from '@/data/reading/exercises/en-b1-neighbourhood-repair-cafe.json'
+import birthdayPartyInvite from '@/data/reading/exercises/en-a1-birthday-party-invite.json'
+import lostAndFoundMessage from '@/data/reading/exercises/en-a1-lost-and-found-message.json'
+import lunchMenu from '@/data/reading/exercises/en-a1-lunch-menu.json'
+import morningSchoolNote from '@/data/reading/exercises/en-a1-morning-school-note.json'
+import parkCleanupPoster from '@/data/reading/exercises/en-a1-park-cleanup-poster.json'
+import petClinicCard from '@/data/reading/exercises/en-a1-pet-clinic-card.json'
+import trainPlatformSign from '@/data/reading/exercises/en-a1-train-platform-sign.json'
+import cookingClassReminder from '@/data/reading/exercises/en-a2-cooking-class-reminder.json'
+import firstJobInterview from '@/data/reading/exercises/en-a2-first-job-interview.json'
+import museumAudioGuide from '@/data/reading/exercises/en-a2-museum-audio-guide.json'
+import newNeighbourWelcome from '@/data/reading/exercises/en-a2-new-neighbour-welcome.json'
+import rainyDayBusChange from '@/data/reading/exercises/en-a2-rainy-day-bus-change.json'
+import recyclingCollectionPlan from '@/data/reading/exercises/en-a2-recycling-collection-plan.json'
+import schoolExchangeDiary from '@/data/reading/exercises/en-a2-school-exchange-diary.json'
+import weekendVolunteerShift from '@/data/reading/exercises/en-a2-weekend-volunteer-shift.json'
+import communityEnergyProject from '@/data/reading/exercises/en-b1-community-energy-project.json'
+import libraryStudyZones from '@/data/reading/exercises/en-b1-library-study-zones.json'
+import localFoodCooperative from '@/data/reading/exercises/en-b1-local-food-cooperative.json'
+import onlineCourseCompletion from '@/data/reading/exercises/en-b1-online-course-completion.json'
+import publicTransportFareChange from '@/data/reading/exercises/en-b1-public-transport-fare-change.json'
+import remoteWorkPilot from '@/data/reading/exercises/en-b1-remote-work-pilot.json'
+import urbanTreePlan from '@/data/reading/exercises/en-b1-urban-tree-plan.json'
+import workplaceMentoring from '@/data/reading/exercises/en-b1-workplace-mentoring.json'
 import koreanCafe from '@/data/reading/exercises/ko-a1-cafe-order.json'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
@@ -13,10 +36,33 @@ const RAW_EXERCISES: unknown[] = [
   cafeMorning,
   libraryMessage,
   saturdayBus,
+  morningSchoolNote,
+  petClinicCard,
+  parkCleanupPoster,
+  lunchMenu,
+  lostAndFoundMessage,
+  trainPlatformSign,
+  birthdayPartyInvite,
   phoneWeekend,
   communityGarden,
+  rainyDayBusChange,
+  newNeighbourWelcome,
+  cookingClassReminder,
+  schoolExchangeDiary,
+  recyclingCollectionPlan,
+  weekendVolunteerShift,
+  museumAudioGuide,
+  firstJobInterview,
   fourDayWeek,
   repairCafe,
+  libraryStudyZones,
+  remoteWorkPilot,
+  communityEnergyProject,
+  urbanTreePlan,
+  onlineCourseCompletion,
+  localFoodCooperative,
+  workplaceMentoring,
+  publicTransportFareChange,
   koreanCafe,
 ]
 

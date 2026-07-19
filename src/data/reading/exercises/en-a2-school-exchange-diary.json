@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-school-exchange-diary",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
+  "slug": "school-exchange-diary",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 16,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-cooking-class-reminder",
+    "nextExerciseId": "en-a2-recycling-collection-plan"
+  },
+  "classification": {
+    "genre": "diary",
+    "topic": "school exchange",
+    "intent": "learning",
+    "tags": [
+      "school exchange",
+      "diary",
+      "a2",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La primera semana del intercambio escolar",
+      "en": "A First Week on the School Exchange"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A2 con un texto original sobre school exchange.",
+      "en": "Practise A2 English reading with an original text about school exchange."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "When I arrived in Leeds for the school exchange, I expected to feel lonely. Instead, my host family invited me to a neighbourhood football match on the first evening. At school, my partner, Josh, showed me the library and explained the timetable. I understood most lessons, although I needed extra time with the science vocabulary. On Wednesday, our class visited a local theatre. I missed my parents that night, but I wrote them a message and felt better. By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "plainTextForAnalysis": "When I arrived in Leeds for the school exchange, I expected to feel lonely. Instead, my host family invited me to a neighbourhood football match on the first evening. At school, my partner, Josh, showed me the library and explained the timetable. I understood most lessons, although I needed extra time with the science vocabulary. On Wednesday, our class visited a local theatre. I missed my parents that night, but I wrote them a message and felt better. By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "wordCount": 141,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "vocabulary": [
+      {
+        "surface": "host family",
+        "lemma": "host family",
+        "glosses": {
+          "es": "host family",
+          "en": "meaning in context: host family"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "timetable",
+        "lemma": "timetable",
+        "glosses": {
+          "es": "timetable",
+          "en": "meaning in context: timetable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "directions",
+        "lemma": "directions",
+        "glosses": {
+          "es": "directions",
+          "en": "meaning in context: directions"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A2.",
+      "en": "You can understand and justify information in a A2 text."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 14.1,
+      "maxSentenceWords": 19,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A2 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the diary mainly about?",
+      "options": [
+        {
+          "id": "adaptation",
+          "text": "How the writer adapted during an exchange week"
+        },
+        {
+          "id": "football",
+          "text": "How to train for football"
+        },
+        {
+          "id": "theatre",
+          "text": "A review of a theatre show"
+        }
+      ],
+      "answer": "adaptation",
+      "evidence": "By Friday, I could ... join conversations",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “By Friday, I could ... join conversations”",
+          "en": "Correct. The evidence says: “By Friday, I could ... join conversations”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La conclusión muestra el cambio desde preocupación hasta confianza.",
+          "en": "La conclusión muestra el cambio desde preocupación hasta confianza."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did the writer feel better after messaging the parents?",
+      "options": [
+        {
+          "id": "connection",
+          "text": "Contact helped reduce homesickness"
+        },
+        {
+          "id": "lesson",
+          "text": "The message explained science"
+        },
+        {
+          "id": "timetable",
+          "text": "The message changed the schedule"
+        }
+      ],
+      "answer": "connection",
+      "evidence": "I missed my parents ... but I wrote them a message and felt better",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “I missed my parents ... but I wrote them a message and felt better”",
+          "en": "Correct. The evidence says: “I missed my parents ... but I wrote them a message and felt better”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La secuencia emocional permite inferir la función del mensaje.",
+          "en": "La secuencia emocional permite inferir la función del mensaje."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What is a timetable?",
+      "options": [
+        {
+          "id": "schedule",
+          "text": "A plan showing lesson times"
+        },
+        {
+          "id": "dictionary",
+          "text": "A book of word meanings"
+        },
+        {
+          "id": "ticket",
+          "text": "A pass for the theatre"
+        }
+      ],
+      "answer": "schedule",
+      "evidence": "explained the timetable",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “explained the timetable”",
+          "en": "Correct. The evidence says: “explained the timetable”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La referencia a las clases orienta el significado.",
+          "en": "La referencia a las clases orienta el significado."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A First Week on the School Exchange”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Arrive in Leeds."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Meet Josh and learn the timetable."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Visit the theatre."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Arrive in Leeds. → Meet Josh and learn the timetable. → Visit the theatre.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Arrive in Leeds. → Meet Josh and learn the timetable. → Visit the theatre.”",
+          "en": "Correct. The evidence says: “Arrive in Leeds. → Meet Josh and learn the timetable. → Visit the theatre.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A First Week on the School Exchange”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Meet Josh and learn the timetable."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Visit the theatre."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Join conversations confidently."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Meet Josh and learn the timetable. → Visit the theatre. → Join conversations confidently.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Meet Josh and learn the timetable. → Visit the theatre. → Join conversations confidently.”",
+          "en": "Correct. The evidence says: “Meet Josh and learn the timetable. → Visit the theatre. → Join conversations confidently.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 35,
+    "maxWords": 90,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A2: La primera semana del intercambio escolar | WeLearn",
+      "en": "A2 English Reading: A First Week on the School Exchange | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con la primera semana del intercambio escolar, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A2 English with a first week on the school exchange, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/school-exchange-diary",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-cooking-class-reminder",
+      "en-a2-recycling-collection-plan"
+    ]
+  }
+}

@@ -4,78 +4,394 @@
   "status": "draft",
   "language": "en",
   "variant": "en-global",
-  "tutorLocales": ["es", "en"],
-  "level": { "cefr": "A2", "displayLabel": "English A2" },
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
   "slug": "community-garden-email",
-  "series": { "id": "english-reading-batch-01", "episode": 4, "totalEpisodes": 6, "previousExerciseId": "en-a2-weekend-without-my-phone", "nextExerciseId": "en-b1-four-day-work-week" },
-  "classification": { "genre": "email", "topic": "Community garden volunteer day", "intent": "daily-life", "tags": ["community", "garden", "volunteering", "plans"] },
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 12,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-weekend-without-my-phone",
+    "nextExerciseId": "en-a2-rainy-day-bus-change"
+  },
+  "classification": {
+    "genre": "email",
+    "topic": "Community garden volunteer day",
+    "intent": "daily-life",
+    "tags": [
+      "community",
+      "garden",
+      "volunteering",
+      "plans"
+    ]
+  },
   "content": {
-    "title": { "es": "Help Us Prepare the Community Garden", "en": "Help Us Prepare the Community Garden" },
-    "intro": { "es": "Practica inglés A2 con un correo comunitario que combina plan, instrucciones, clima y fecha límite.", "en": "Practise A2 English with a community email combining a plan, instructions, weather, and a deadline." },
-    "mission": { "es": "Identifica cuándo será la actividad, qué opciones tienen los voluntarios y qué deben responder antes del jueves.", "en": "Identify when the activity happens, what volunteers can choose, and what they must reply before Thursday." },
+    "title": {
+      "es": "Help Us Prepare the Community Garden",
+      "en": "Help Us Prepare the Community Garden"
+    },
+    "intro": {
+      "es": "Practica inglés A2 con un correo comunitario que combina plan, instrucciones, clima y fecha límite.",
+      "en": "Practise A2 English with a community email combining a plan, instructions, weather, and a deadline."
+    },
+    "mission": {
+      "es": "Identifica cuándo será la actividad, qué opciones tienen los voluntarios y qué deben responder antes del jueves.",
+      "en": "Identify when the activity happens, what volunteers can choose, and what they must reply before Thursday."
+    },
     "targetText": "Subject: Help us prepare the community garden. Hello neighbours, we are getting the community garden ready for spring on Sunday, 14 April. We will meet at the main gate at nine thirty and finish around one. First, we are going to remove dry leaves and prepare four planting areas. After that, volunteers can choose between painting the wooden signs and planting herbs. Please wear old clothes and closed shoes. Bring gardening gloves if you have them, but we can lend tools and gloves to twenty people. The weather forecast says there may be light rain, so we will work unless there is a storm. Children are welcome with an adult. At midday, the café across the street will provide soup and bread. To help us plan the food, reply to this email before Thursday and tell us how many people are coming. Thank you, Lina, Garden coordinator.",
     "plainTextForAnalysis": "Subject: Help us prepare the community garden. Hello neighbours, we are getting the community garden ready for spring on Sunday, 14 April. We will meet at the main gate at nine thirty and finish around one. First, we are going to remove dry leaves and prepare four planting areas. After that, volunteers can choose between painting the wooden signs and planting herbs. Please wear old clothes and closed shoes. Bring gardening gloves if you have them, but we can lend tools and gloves to twenty people. The weather forecast says there may be light rain, so we will work unless there is a storm. Children are welcome with an adult. At midday, the cafe across the street will provide soup and bread. To help us plan the food, reply to this email before Thursday and tell us how many people are coming. Thank you, Lina, Garden coordinator.",
     "wordCount": 147,
     "estimatedMinutes": 12,
     "objectives": [
-      { "es": "Extraer plan, requisitos y fecha límite de un correo.", "en": "Extract a plan, requirements, and a deadline from an email." },
-      { "es": "Comprender una condición meteorológica sencilla.", "en": "Understand a simple weather condition." }
+      {
+        "es": "Extraer plan, requisitos y fecha límite de un correo.",
+        "en": "Extract a plan, requirements, and a deadline from an email."
+      },
+      {
+        "es": "Comprender una condición meteorológica sencilla.",
+        "en": "Understand a simple weather condition."
+      }
     ],
-    "grammarFocus": ["will and going to", "imperatives", "unless", "can for options"],
+    "grammarFocus": [
+      "will and going to",
+      "imperatives",
+      "unless",
+      "can for options"
+    ],
     "vocabulary": [
-      { "surface": "main gate", "lemma": "gate", "glosses": { "es": "entrada principal", "en": "the main entrance through a fence" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "planting areas", "lemma": "planting area", "glosses": { "es": "zonas de siembra", "en": "places prepared for growing plants" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" },
-      { "surface": "lend", "lemma": "lend", "glosses": { "es": "prestar", "en": "let someone use something temporarily" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "unless", "lemma": "unless", "glosses": { "es": "a menos que", "en": "except if" }, "audioRequired": false, "levelStatus": "within-level" }
+      {
+        "surface": "main gate",
+        "lemma": "gate",
+        "glosses": {
+          "es": "entrada principal",
+          "en": "the main entrance through a fence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "planting areas",
+        "lemma": "planting area",
+        "glosses": {
+          "es": "zonas de siembra",
+          "en": "places prepared for growing plants"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      },
+      {
+        "surface": "lend",
+        "lemma": "lend",
+        "glosses": {
+          "es": "prestar",
+          "en": "let someone use something temporarily"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unless",
+        "lemma": "unless",
+        "glosses": {
+          "es": "a menos que",
+          "en": "except if"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
     ],
-    "culturalNote": { "es": "Los jardines comunitarios pueden organizarse de formas distintas; el correo evita asumir propiedad, cuotas o trabajo obligatorio.", "en": "Community gardens can be organised in different ways; the email does not assume ownership, fees, or compulsory work." },
-    "spanishSpeakerNote": { "es": "Lend significa prestar algo a otra persona; borrow significa recibirlo prestado.", "en": "Spanish speakers: lend means give something temporarily; borrow means receive it temporarily." },
+    "culturalNote": {
+      "es": "Los jardines comunitarios pueden organizarse de formas distintas; el correo evita asumir propiedad, cuotas o trabajo obligatorio.",
+      "en": "Community gardens can be organised in different ways; the email does not assume ownership, fees, or compulsory work."
+    },
+    "spanishSpeakerNote": {
+      "es": "Lend significa prestar algo a otra persona; borrow significa recibirlo prestado.",
+      "en": "Spanish speakers: lend means give something temporarily; borrow means receive it temporarily."
+    },
     "sources": []
   },
   "audio": null,
-  "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
   "leveling": {
-    "targetCanDo": { "es": "Puedes comprender los detalles esenciales y requisitos de un correo comunitario sencillo.", "en": "You can understand the essential details and requirements in a simple community email." },
-    "allowedGrammar": ["will", "going to", "imperatives", "can", "unless in an explicit condition"],
-    "disallowedGrammar": ["mixed conditionals", "passive reporting structures", "complex nominalisation"],
+    "targetCanDo": {
+      "es": "Puedes comprender los detalles esenciales y requisitos de un correo comunitario sencillo.",
+      "en": "You can understand the essential details and requirements in a simple community email."
+    },
+    "allowedGrammar": [
+      "will",
+      "going to",
+      "imperatives",
+      "can",
+      "unless in an explicit condition"
+    ],
+    "disallowedGrammar": [
+      "mixed conditionals",
+      "passive reporting structures",
+      "complex nominalisation"
+    ],
     "maxOutOfLevelVocabularyPercent": 7,
     "inferenceBand": "light",
-    "metrics": { "averageSentenceWords": 12.3, "maxSentenceWords": 20, "outOfLevelVocabularyPercent": 2, "glossedOutOfLevelItems": 1 },
-    "independentAssessment": { "estimatedLevel": "A2", "passed": true, "assessor": "Independent editorial preflight — human confirmation pending", "assessedAt": "2026-07-18T21:30:00-05:00", "notes": "Familiar email structure with explicit sequencing and one supported conditional connector." }
+    "metrics": {
+      "averageSentenceWords": 12.3,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Independent editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-18T21:30:00-05:00",
+      "notes": "Familiar email structure with explicit sequencing and one supported conditional connector."
+    }
   },
   "questions": [
     {
-      "id": "q-purpose", "type": "purpose", "skill": "purpose", "prompt": "Why does Lina send the email?",
-      "options": [{ "id": "sell", "text": "To sell gardening tools" }, { "id": "invite", "text": "To organise a volunteer garden day" }, { "id": "cancel", "text": "To cancel a community event" }], "answer": "invite",
-      "feedback": { "correct": { "es": "Correcto. El correo organiza una jornada de preparación con voluntarios.", "en": "Correct. The email organises a garden preparation day with volunteers." }, "incorrect": { "es": "Combina el asunto con las acciones y la solicitud final.", "en": "Combine the subject with the actions and final request." }, "strategy": { "es": "El propósito de un correo suele aparecer en el asunto y repetirse en el cierre.", "en": "An email’s purpose often appears in the subject and returns in the closing." } },
-      "evidence": "Help us prepare the community garden ... tell us how many people are coming.", "maxAttempts": 2
+      "id": "q-purpose",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does Lina send the email?",
+      "options": [
+        {
+          "id": "sell",
+          "text": "To sell gardening tools"
+        },
+        {
+          "id": "invite",
+          "text": "To organise a volunteer garden day"
+        },
+        {
+          "id": "cancel",
+          "text": "To cancel a community event"
+        }
+      ],
+      "answer": "invite",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El correo organiza una jornada de preparación con voluntarios.",
+          "en": "Correct. The email organises a garden preparation day with volunteers."
+        },
+        "incorrect": {
+          "es": "Combina el asunto con las acciones y la solicitud final.",
+          "en": "Combine the subject with the actions and final request."
+        },
+        "strategy": {
+          "es": "El propósito de un correo suele aparecer en el asunto y repetirse en el cierre.",
+          "en": "An email’s purpose often appears in the subject and returns in the closing."
+        }
+      },
+      "evidence": "Help us prepare the community garden ... tell us how many people are coming.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-time", "type": "detail", "skill": "detail", "prompt": "When will the group meet?",
-      "options": [{ "id": "sunday-nine", "text": "Sunday at 9:30" }, { "id": "thursday-one", "text": "Thursday at 1:00" }, { "id": "sunday-midday", "text": "Sunday at midday" }], "answer": "sunday-nine",
-      "feedback": { "correct": { "es": "Correcto. Se encuentran el domingo a las nueve y media.", "en": "Correct. They meet on Sunday at nine thirty." }, "incorrect": { "es": "Distingue la hora de encuentro, la comida y la fecha límite.", "en": "Separate the meeting time, lunch time, and reply deadline." }, "strategy": { "es": "Asocia cada expresión temporal con su acción.", "en": "Match each time expression with its action." } },
-      "evidence": "We will meet at the main gate at nine thirty.", "maxAttempts": 2
+      "id": "q-time",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "When will the group meet?",
+      "options": [
+        {
+          "id": "sunday-nine",
+          "text": "Sunday at 9:30"
+        },
+        {
+          "id": "thursday-one",
+          "text": "Thursday at 1:00"
+        },
+        {
+          "id": "sunday-midday",
+          "text": "Sunday at midday"
+        }
+      ],
+      "answer": "sunday-nine",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Se encuentran el domingo a las nueve y media.",
+          "en": "Correct. They meet on Sunday at nine thirty."
+        },
+        "incorrect": {
+          "es": "Distingue la hora de encuentro, la comida y la fecha límite.",
+          "en": "Separate the meeting time, lunch time, and reply deadline."
+        },
+        "strategy": {
+          "es": "Asocia cada expresión temporal con su acción.",
+          "en": "Match each time expression with its action."
+        }
+      },
+      "evidence": "We will meet at the main gate at nine thirty.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-choice", "type": "detail", "skill": "detail", "prompt": "What can volunteers choose after preparing the planting areas?",
-      "options": [{ "id": "paint-plant", "text": "Paint signs or plant herbs" }, { "id": "cook", "text": "Make soup or bread" }, { "id": "buy", "text": "Buy tools or gloves" }], "answer": "paint-plant",
-      "feedback": { "correct": { "es": "Correcto. Pueden pintar señales o plantar hierbas.", "en": "Correct. They can paint signs or plant herbs." }, "incorrect": { "es": "Busca la frase can choose between.", "en": "Find the phrase can choose between." }, "strategy": { "es": "Los conectores between y and presentan dos opciones.", "en": "The connectors between and and present two options." } },
-      "evidence": "Volunteers can choose between painting the wooden signs and planting herbs.", "maxAttempts": 2
+      "id": "q-choice",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these activities in the order used in the email.",
+      "options": [
+        {
+          "id": "leaves",
+          "text": "Remove dry leaves"
+        },
+        {
+          "id": "choice",
+          "text": "Choose painting or planting"
+        },
+        {
+          "id": "food",
+          "text": "Have soup and bread"
+        }
+      ],
+      "answer": [
+        "leaves",
+        "choice",
+        "food"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Remove dry leaves → choose painting or planting → have soup and bread”",
+          "en": "Correct. The evidence says: “Remove dry leaves → choose painting or planting → have soup and bread”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "evidence": "Remove dry leaves → choose painting or planting → have soup and bread",
+      "maxAttempts": 3
     },
     {
-      "id": "q-weather", "type": "inference", "skill": "inference", "prompt": "What will happen if there is only light rain?",
-      "options": [{ "id": "work", "text": "The group will still work." }, { "id": "cancel", "text": "The event will be cancelled." }, { "id": "inside", "text": "Everyone will meet inside the café." }], "answer": "work",
-      "feedback": { "correct": { "es": "Correcto. Solo una tormenta detendría el trabajo.", "en": "Correct. Only a storm would stop the work." }, "incorrect": { "es": "Interpreta unless there is a storm.", "en": "Interpret unless there is a storm." }, "strategy": { "es": "Unless introduce la excepción, no la situación normal.", "en": "Unless introduces the exception, not the normal situation." } },
-      "evidence": "We will work unless there is a storm.", "maxAttempts": 2
+      "id": "q-weather",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What will happen if there is only light rain?",
+      "options": [
+        {
+          "id": "work",
+          "text": "The group will still work."
+        },
+        {
+          "id": "cancel",
+          "text": "The event will be cancelled."
+        },
+        {
+          "id": "inside",
+          "text": "Everyone will meet inside the café."
+        }
+      ],
+      "answer": "work",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Solo una tormenta detendría el trabajo.",
+          "en": "Correct. Only a storm would stop the work."
+        },
+        "incorrect": {
+          "es": "Interpreta unless there is a storm.",
+          "en": "Interpret unless there is a storm."
+        },
+        "strategy": {
+          "es": "Unless introduce la excepción, no la situación normal.",
+          "en": "Unless introduces the exception, not the normal situation."
+        }
+      },
+      "evidence": "We will work unless there is a storm.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-plan", "type": "ordering", "skill": "organization", "prompt": "Put the planned activities in order.",
-      "options": [{ "id": "leaves", "text": "Remove dry leaves." }, { "id": "choice", "text": "Choose painting or planting." }, { "id": "food", "text": "Have soup and bread." }], "answer": ["leaves", "choice", "food"],
-      "feedback": { "correct": { "es": "Correcto. Ese es el plan del correo.", "en": "Correct. That is the plan in the email." }, "incorrect": { "es": "Usa First, After that y At midday.", "en": "Use First, After that, and At midday." }, "strategy": { "es": "Los marcadores temporales construyen el esqueleto del texto.", "en": "Time markers build the text’s structure." } },
-      "evidence": "First → After that → At midday.", "maxAttempts": 3
+      "id": "q-plan",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put the planned activities in order.",
+      "options": [
+        {
+          "id": "leaves",
+          "text": "Remove dry leaves."
+        },
+        {
+          "id": "choice",
+          "text": "Choose painting or planting."
+        },
+        {
+          "id": "food",
+          "text": "Have soup and bread."
+        }
+      ],
+      "answer": [
+        "leaves",
+        "choice",
+        "food"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Ese es el plan del correo.",
+          "en": "Correct. That is the plan in the email."
+        },
+        "incorrect": {
+          "es": "Usa First, After that y At midday.",
+          "en": "Use First, After that, and At midday."
+        },
+        "strategy": {
+          "es": "Los marcadores temporales construyen el esqueleto del texto.",
+          "en": "Time markers build the text’s structure."
+        }
+      },
+      "evidence": "First → After that → At midday.",
+      "maxAttempts": 3
     }
   ],
-  "production": { "prompt": { "es": "Responde el correo en 3–4 frases: di cuántas personas van y qué actividad prefieren.", "en": "Reply to the email in 3–4 sentences: say how many people are coming and which activity they prefer." }, "minWords": 25, "maxWords": 80, "hints": ["I am writing to...", "There will be...", "We would like to..."], "scored": false },
-  "review": { "author": "WeLearn editorial draft", "languageReviewer": "Pending human English review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T21:30:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Original AI-assisted draft; human review blocks publication.", "languageDecision": "pending", "pedagogyDecision": "pending" },
-  "seo": { "title": { "es": "Lectura en inglés A2: correo de voluntariado | WeLearn", "en": "A2 English Reading: Volunteer Email | WeLearn" }, "description": { "es": "Practica inglés A2 con un correo sobre un jardín comunitario, planes, condiciones y preguntas.", "en": "Practise A2 English with a community garden email, plans, conditions, and questions." }, "canonicalPath": "/es/practica/ingles/a2/lectura/community-garden-email", "indexable": false, "lastModified": "2026-07-18T21:30:00-05:00", "relatedExerciseIds": ["en-a2-weekend-without-my-phone", "en-b1-four-day-work-week"] }
+  "production": {
+    "prompt": {
+      "es": "Responde el correo en 3–4 frases: di cuántas personas van y qué actividad prefieren.",
+      "en": "Reply to the email in 3–4 sentences: say how many people are coming and which activity they prefer."
+    },
+    "minWords": 25,
+    "maxWords": 80,
+    "hints": [
+      "I am writing to...",
+      "There will be...",
+      "We would like to..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-18T21:30:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura en inglés A2: correo de voluntariado | WeLearn",
+      "en": "A2 English Reading: Volunteer Email | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con un correo sobre un jardín comunitario, planes, condiciones y preguntas.",
+      "en": "Practise A2 English with a community garden email, plans, conditions, and questions."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/community-garden-email",
+    "indexable": false,
+    "lastModified": "2026-07-18T21:30:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-weekend-without-my-phone",
+      "en-a2-rainy-day-bus-change"
+    ]
+  }
 }

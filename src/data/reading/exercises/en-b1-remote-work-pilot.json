@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-b1-remote-work-pilot",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "English B1"
+  },
+  "slug": "remote-work-pilot",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 24,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-b1-library-study-zones",
+    "nextExerciseId": "en-b1-community-energy-project"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "workplace policy",
+    "intent": "learning",
+    "tags": [
+      "workplace policy",
+      "article",
+      "b1",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Qué reveló un piloto de trabajo remoto",
+      "en": "What a Remote-Work Pilot Revealed"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés B1 con un texto original sobre workplace policy.",
+      "en": "Practise B1 English reading with an original text about workplace policy."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "A medium-sized engineering firm allowed forty employees to work remotely on Wednesdays for three months. The experiment was designed to test flexibility without changing the company’s basic schedule. Teams agreed that every Wednesday meeting would be replaced by a written update unless a decision required discussion. Managers also recorded response times, completed tasks, and employee comments. Productivity remained similar, but junior staff reported that they missed quick questions at a colleague’s desk. To address this, the firm added an online help channel and paired each junior employee with a rotating mentor. By the third month, messages in the channel had become more focused and the number of urgent interruptions had fallen. The firm concluded that remote work itself was not the main issue; predictable communication routines mattered more. It will extend the pilot while comparing costs, satisfaction, and project quality. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "plainTextForAnalysis": "A medium-sized engineering firm allowed forty employees to work remotely on Wednesdays for three months. The experiment was designed to test flexibility without changing the company’s basic schedule. Teams agreed that every Wednesday meeting would be replaced by a written update unless a decision required discussion. Managers also recorded response times, completed tasks, and employee comments. Productivity remained similar, but junior staff reported that they missed quick questions at a colleague’s desk. To address this, the firm added an online help channel and paired each junior employee with a rotating mentor. By the third month, messages in the channel had become more focused and the number of urgent interruptions had fallen. The firm concluded that remote work itself was not the main issue; predictable communication routines mattered more. It will extend the pilot while comparing costs, satisfaction, and project quality. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "wordCount": 230,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "vocabulary": [
+      {
+        "surface": "flexibility",
+        "lemma": "flexibility",
+        "glosses": {
+          "es": "flexibility",
+          "en": "meaning in context: flexibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "response times",
+        "lemma": "response times",
+        "glosses": {
+          "es": "response times",
+          "en": "meaning in context: response times"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "interruptions",
+        "lemma": "interruptions",
+        "glosses": {
+          "es": "interruptions",
+          "en": "meaning in context: interruptions"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto B1.",
+      "en": "You can understand and justify information in a B1 text."
+    },
+    "allowedGrammar": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 16.4,
+      "maxSentenceWords": 23,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original B1 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What conclusion did the firm reach?",
+      "options": [
+        {
+          "id": "communication",
+          "text": "Predictable communication routines made remote work more effective"
+        },
+        {
+          "id": "schedule",
+          "text": "Remote work should replace the whole schedule"
+        },
+        {
+          "id": "mentors",
+          "text": "Junior staff no longer need colleagues"
+        }
+      ],
+      "answer": "communication",
+      "evidence": "predictable communication routines mattered more",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “predictable communication routines mattered more”",
+          "en": "Correct. The evidence says: “predictable communication routines mattered more”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La conclusión desplaza el foco de location a communication.",
+          "en": "La conclusión desplaza el foco de location a communication."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why was a rotating mentor added?",
+      "options": [
+        {
+          "id": "support",
+          "text": "To replace informal help for junior staff"
+        },
+        {
+          "id": "cost",
+          "text": "To lower the office rent"
+        },
+        {
+          "id": "speed",
+          "text": "To increase meeting frequency"
+        }
+      ],
+      "answer": "support",
+      "evidence": "junior staff reported that they missed quick questions",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “junior staff reported that they missed quick questions”",
+          "en": "Correct. The evidence says: “junior staff reported that they missed quick questions”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "El problema descrito explica la intervención.",
+          "en": "El problema descrito explica la intervención."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “What a Remote-Work Pilot Revealed”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Test remote Wednesdays."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Observe work and employee comments."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Add a mentor and help channel."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Test remote Wednesdays. → Observe work and employee comments. → Add a mentor and help channel.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Test remote Wednesdays. → Observe work and employee comments. → Add a mentor and help channel.”",
+          "en": "Correct. The evidence says: “Test remote Wednesdays. → Observe work and employee comments. → Add a mentor and help channel.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “What a Remote-Work Pilot Revealed”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Observe work and employee comments."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Add a mentor and help channel."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Compare the pilot’s wider results."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Observe work and employee comments. → Add a mentor and help channel. → Compare the pilot’s wider results.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Observe work and employee comments. → Add a mentor and help channel. → Compare the pilot’s wider results.”",
+          "en": "Correct. The evidence says: “Observe work and employee comments. → Add a mentor and help channel. → Compare the pilot’s wider results.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “What a Remote-Work Pilot Revealed”.",
+      "options": [
+        {
+          "id": "step-3-1",
+          "text": "Add a mentor and help channel."
+        },
+        {
+          "id": "step-3-2",
+          "text": "Compare the pilot’s wider results."
+        },
+        {
+          "id": "step-3-3",
+          "text": "Extend the pilot."
+        }
+      ],
+      "answer": [
+        "step-3-1",
+        "step-3-2",
+        "step-3-3"
+      ],
+      "evidence": "Add a mentor and help channel. → Compare the pilot’s wider results. → Extend the pilot.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Add a mentor and help channel. → Compare the pilot’s wider results. → Extend the pilot.”",
+          "en": "Correct. The evidence says: “Add a mentor and help channel. → Compare the pilot’s wider results. → Extend the pilot.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 60,
+    "maxWords": 140,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés B1: Qué reveló un piloto de trabajo remoto | WeLearn",
+      "en": "B1 English Reading: What a Remote-Work Pilot Revealed | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés B1 con qué reveló un piloto de trabajo remoto, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise B1 English with what a remote-work pilot revealed, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/b1/lectura/remote-work-pilot",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-b1-library-study-zones",
+      "en-b1-community-energy-project"
+    ]
+  }
+}

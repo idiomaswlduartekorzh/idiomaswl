@@ -4,78 +4,384 @@
   "status": "draft",
   "language": "en",
   "variant": "en-global",
-  "tutorLocales": ["es", "en"],
-  "level": { "cefr": "A1", "displayLabel": "English A1" },
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "English A1"
+  },
   "slug": "saturday-bus-guide",
-  "series": { "id": "english-reading-batch-01", "episode": 2, "totalEpisodes": 6, "previousExerciseId": "en-a1-library-book-message", "nextExerciseId": "en-a2-weekend-without-my-phone" },
-  "classification": { "genre": "schedule", "topic": "Saturday bus information", "intent": "travel", "tags": ["bus", "schedule", "ticket", "directions"] },
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 3,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a1-library-book-message",
+    "nextExerciseId": "en-a1-morning-school-note"
+  },
+  "classification": {
+    "genre": "schedule",
+    "topic": "Saturday bus information",
+    "intent": "travel",
+    "tags": [
+      "bus",
+      "schedule",
+      "ticket",
+      "directions"
+    ]
+  },
   "content": {
-    "title": { "es": "Saturday Bus 12", "en": "Saturday Bus 12" },
-    "intro": { "es": "Practica lectura funcional A1 con horarios, precio, paradas e indicaciones sencillas de bus.", "en": "Practise functional A1 reading with bus times, a ticket price, stops, and simple directions." },
-    "mission": { "es": "Descubre con qué frecuencia pasa el bus, cuánto cuesta y dónde bajar para ir al hospital.", "en": "Find out how often the bus runs, what it costs, and where to get off for the hospital." },
+    "title": {
+      "es": "Saturday Bus 12",
+      "en": "Saturday Bus 12"
+    },
+    "intro": {
+      "es": "Practica lectura funcional A1 con horarios, precio, paradas e indicaciones sencillas de bus.",
+      "en": "Practise functional A1 reading with bus times, a ticket price, stops, and simple directions."
+    },
+    "mission": {
+      "es": "Descubre con qué frecuencia pasa el bus, cuánto cuesta y dónde bajar para ir al hospital.",
+      "en": "Find out how often the bus runs, what it costs, and where to get off for the hospital."
+    },
     "targetText": "On Saturday, the number 12 bus leaves Central Station every thirty minutes. The first bus leaves at eight o’clock, and the last bus leaves at six in the evening. A ticket costs two pounds. Children under five travel free. The bus stops at the museum, the city park, and Riverside Market. Passengers for the hospital should get off at the city park and walk for five minutes.",
     "plainTextForAnalysis": "On Saturday, the number 12 bus leaves Central Station every thirty minutes. The first bus leaves at eight o'clock, and the last bus leaves at six in the evening. A ticket costs two pounds. Children under five travel free. The bus stops at the museum, the city park, and Riverside Market. Passengers for the hospital should get off at the city park and walk for five minutes.",
     "wordCount": 67,
     "estimatedMinutes": 10,
     "objectives": [
-      { "es": "Extraer horarios, precio y paradas de una guía breve.", "en": "Extract times, a price, and stops from a short guide." },
-      { "es": "Seguir una indicación sencilla de transporte.", "en": "Follow a simple transport direction." }
+      {
+        "es": "Extraer horarios, precio y paradas de una guía breve.",
+        "en": "Extract times, a price, and stops from a short guide."
+      },
+      {
+        "es": "Seguir una indicación sencilla de transporte.",
+        "en": "Follow a simple transport direction."
+      }
     ],
-    "grammarFocus": ["present simple for schedules", "every plus time", "should for directions"],
+    "grammarFocus": [
+      "present simple for schedules",
+      "every plus time",
+      "should for directions"
+    ],
     "vocabulary": [
-      { "surface": "every thirty minutes", "lemma": "every", "glosses": { "es": "cada treinta minutos", "en": "once in each thirty-minute period" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" },
-      { "surface": "ticket", "lemma": "ticket", "glosses": { "es": "tiquete o billete", "en": "a pass you buy for a journey" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "stops", "lemma": "stop", "glosses": { "es": "hace paradas", "en": "pauses to let passengers on or off" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "get off", "lemma": "get off", "glosses": { "es": "bajarse", "en": "leave a bus or train" }, "audioRequired": false, "levelStatus": "within-level" }
+      {
+        "surface": "every thirty minutes",
+        "lemma": "every",
+        "glosses": {
+          "es": "cada treinta minutos",
+          "en": "once in each thirty-minute period"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      },
+      {
+        "surface": "ticket",
+        "lemma": "ticket",
+        "glosses": {
+          "es": "tiquete o billete",
+          "en": "a pass you buy for a journey"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stops",
+        "lemma": "stop",
+        "glosses": {
+          "es": "hace paradas",
+          "en": "pauses to let passengers on or off"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "get off",
+        "lemma": "get off",
+        "glosses": {
+          "es": "bajarse",
+          "en": "leave a bus or train"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
     ],
-    "culturalNote": { "es": "El precio en libras sitúa el ejemplo en un contexto británico, pero la ruta y los lugares son ficticios.", "en": "The price in pounds gives the example a British context, but the route and places are fictional." },
-    "spanishSpeakerNote": { "es": "Get off se usa para bajarse de transporte público; no se traduce palabra por palabra como obtener fuera.", "en": "Spanish speakers: get off means leave public transport and should not be translated word by word." },
+    "culturalNote": {
+      "es": "El precio en libras sitúa el ejemplo en un contexto británico, pero la ruta y los lugares son ficticios.",
+      "en": "The price in pounds gives the example a British context, but the route and places are fictional."
+    },
+    "spanishSpeakerNote": {
+      "es": "Get off se usa para bajarse de transporte público; no se traduce palabra por palabra como obtener fuera.",
+      "en": "Spanish speakers: get off means leave public transport and should not be translated word by word."
+    },
     "sources": []
   },
   "audio": null,
-  "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
   "leveling": {
-    "targetCanDo": { "es": "Puedes encontrar información práctica en un aviso de transporte sencillo.", "en": "You can find practical information in a simple transport notice." },
-    "allowedGrammar": ["present simple", "basic coordination", "should", "time and price expressions"],
-    "disallowedGrammar": ["passive voice", "reported speech", "complex conditionals"],
+    "targetCanDo": {
+      "es": "Puedes encontrar información práctica en un aviso de transporte sencillo.",
+      "en": "You can find practical information in a simple transport notice."
+    },
+    "allowedGrammar": [
+      "present simple",
+      "basic coordination",
+      "should",
+      "time and price expressions"
+    ],
+    "disallowedGrammar": [
+      "passive voice",
+      "reported speech",
+      "complex conditionals"
+    ],
     "maxOutOfLevelVocabularyPercent": 5,
     "inferenceBand": "minimal",
-    "metrics": { "averageSentenceWords": 11.2, "maxSentenceWords": 17, "outOfLevelVocabularyPercent": 1.5, "glossedOutOfLevelItems": 1 },
-    "independentAssessment": { "estimatedLevel": "A1", "passed": true, "assessor": "Independent editorial preflight — human confirmation pending", "assessedAt": "2026-07-18T21:30:00-05:00", "notes": "Concrete schedule with numbers, familiar places, and one explicit direction." }
+    "metrics": {
+      "averageSentenceWords": 11.2,
+      "maxSentenceWords": 17,
+      "outOfLevelVocabularyPercent": 1.5,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Independent editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-18T21:30:00-05:00",
+      "notes": "Concrete schedule with numbers, familiar places, and one explicit direction."
+    }
   },
   "questions": [
     {
-      "id": "q-frequency", "type": "detail", "skill": "detail", "prompt": "How often does bus 12 leave on Saturday?",
-      "options": [{ "id": "fifteen", "text": "Every fifteen minutes" }, { "id": "thirty", "text": "Every thirty minutes" }, { "id": "sixty", "text": "Every sixty minutes" }], "answer": "thirty",
-      "feedback": { "correct": { "es": "Correcto. Sale cada treinta minutos.", "en": "Correct. It leaves every thirty minutes." }, "incorrect": { "es": "Busca la expresión que empieza con every.", "en": "Find the phrase that begins with every." }, "strategy": { "es": "Escanea números y unidades de tiempo.", "en": "Scan for numbers and units of time." } },
-      "evidence": "The number 12 bus leaves Central Station every thirty minutes.", "maxAttempts": 2
+      "id": "q-frequency",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How often does bus 12 leave on Saturday?",
+      "options": [
+        {
+          "id": "fifteen",
+          "text": "Every fifteen minutes"
+        },
+        {
+          "id": "thirty",
+          "text": "Every thirty minutes"
+        },
+        {
+          "id": "sixty",
+          "text": "Every sixty minutes"
+        }
+      ],
+      "answer": "thirty",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Sale cada treinta minutos.",
+          "en": "Correct. It leaves every thirty minutes."
+        },
+        "incorrect": {
+          "es": "Busca la expresión que empieza con every.",
+          "en": "Find the phrase that begins with every."
+        },
+        "strategy": {
+          "es": "Escanea números y unidades de tiempo.",
+          "en": "Scan for numbers and units of time."
+        }
+      },
+      "evidence": "The number 12 bus leaves Central Station every thirty minutes.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-last-bus", "type": "detail", "skill": "detail", "prompt": "When does the last bus leave?",
-      "options": [{ "id": "six-morning", "text": "At six in the morning" }, { "id": "six-evening", "text": "At six in the evening" }, { "id": "eight-evening", "text": "At eight in the evening" }], "answer": "six-evening",
-      "feedback": { "correct": { "es": "Correcto. El último bus sale a las seis de la tarde.", "en": "Correct. The last bus leaves at six in the evening." }, "incorrect": { "es": "Compara first bus y last bus.", "en": "Compare first bus and last bus." }, "strategy": { "es": "Relaciona cada hora con first o last antes de responder.", "en": "Match each time with first or last before answering." } },
-      "evidence": "The last bus leaves at six in the evening.", "maxAttempts": 2
+      "id": "q-last-bus",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "When does the last bus leave?",
+      "options": [
+        {
+          "id": "six-morning",
+          "text": "At six in the morning"
+        },
+        {
+          "id": "six-evening",
+          "text": "At six in the evening"
+        },
+        {
+          "id": "eight-evening",
+          "text": "At eight in the evening"
+        }
+      ],
+      "answer": "six-evening",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El último bus sale a las seis de la tarde.",
+          "en": "Correct. The last bus leaves at six in the evening."
+        },
+        "incorrect": {
+          "es": "Compara first bus y last bus.",
+          "en": "Compare first bus and last bus."
+        },
+        "strategy": {
+          "es": "Relaciona cada hora con first o last antes de responder.",
+          "en": "Match each time with first or last before answering."
+        }
+      },
+      "evidence": "The last bus leaves at six in the evening.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-child", "type": "true-false", "skill": "detail", "prompt": "A four-year-old child needs a ticket.",
-      "options": [{ "id": "true", "text": "True" }, { "id": "false", "text": "False" }], "answer": false,
-      "feedback": { "correct": { "es": "Correcto. Los menores de cinco viajan gratis.", "en": "Correct. Children under five travel free." }, "incorrect": { "es": "Compara la edad cuatro con under five.", "en": "Compare age four with under five." }, "strategy": { "es": "Convierte la condición de edad en un ejemplo concreto.", "en": "Turn the age condition into a concrete example." } },
-      "evidence": "Children under five travel free.", "maxAttempts": 2
+      "id": "q-child",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "A four-year-old child needs a ticket.",
+      "options": [
+        {
+          "id": "true",
+          "text": "True"
+        },
+        {
+          "id": "false",
+          "text": "False"
+        }
+      ],
+      "answer": false,
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Los menores de cinco viajan gratis.",
+          "en": "Correct. Children under five travel free."
+        },
+        "incorrect": {
+          "es": "Compara la edad cuatro con under five.",
+          "en": "Compare age four with under five."
+        },
+        "strategy": {
+          "es": "Convierte la condición de edad en un ejemplo concreto.",
+          "en": "Turn the age condition into a concrete example."
+        }
+      },
+      "evidence": "Children under five travel free.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-hospital", "type": "detail", "skill": "detail", "prompt": "Where should hospital passengers get off?",
-      "options": [{ "id": "museum", "text": "At the museum" }, { "id": "park", "text": "At the city park" }, { "id": "market", "text": "At Riverside Market" }], "answer": "park",
-      "feedback": { "correct": { "es": "Correcto. Deben bajar en el parque.", "en": "Correct. They should get off at the park." }, "incorrect": { "es": "Busca hospital en la última oración.", "en": "Find hospital in the final sentence." }, "strategy": { "es": "Para destinos, localiza el lugar y lee la instrucción completa.", "en": "For destinations, locate the place and read the full direction." } },
-      "evidence": "Passengers for the hospital should get off at the city park.", "maxAttempts": 2
+      "id": "q-hospital",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Where should hospital passengers get off?",
+      "options": [
+        {
+          "id": "museum",
+          "text": "At the museum"
+        },
+        {
+          "id": "park",
+          "text": "At the city park"
+        },
+        {
+          "id": "market",
+          "text": "At Riverside Market"
+        }
+      ],
+      "answer": "park",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Deben bajar en el parque.",
+          "en": "Correct. They should get off at the park."
+        },
+        "incorrect": {
+          "es": "Busca hospital en la última oración.",
+          "en": "Find hospital in the final sentence."
+        },
+        "strategy": {
+          "es": "Para destinos, localiza el lugar y lee la instrucción completa.",
+          "en": "For destinations, locate the place and read the full direction."
+        }
+      },
+      "evidence": "Passengers for the hospital should get off at the city park.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-route", "type": "ordering", "skill": "organization", "prompt": "Put these bus stops in route order.",
-      "options": [{ "id": "museum", "text": "The museum" }, { "id": "park", "text": "The city park" }, { "id": "market", "text": "Riverside Market" }], "answer": ["museum", "park", "market"],
-      "feedback": { "correct": { "es": "Correcto. Ese es el orden listado en la ruta.", "en": "Correct. That is the listed route order." }, "incorrect": { "es": "Relee la oración que enumera las tres paradas.", "en": "Read the sentence that lists the three stops." }, "strategy": { "es": "Las comas y and muestran la secuencia de una lista.", "en": "Commas and and show the sequence in a list." } },
-      "evidence": "The museum, the city park, and Riverside Market.", "maxAttempts": 3
+      "id": "q-route",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these bus stops in route order.",
+      "options": [
+        {
+          "id": "museum",
+          "text": "The museum"
+        },
+        {
+          "id": "park",
+          "text": "The city park"
+        },
+        {
+          "id": "market",
+          "text": "Riverside Market"
+        }
+      ],
+      "answer": [
+        "museum",
+        "park",
+        "market"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Ese es el orden listado en la ruta.",
+          "en": "Correct. That is the listed route order."
+        },
+        "incorrect": {
+          "es": "Relee la oración que enumera las tres paradas.",
+          "en": "Read the sentence that lists the three stops."
+        },
+        "strategy": {
+          "es": "Las comas y and muestran la secuencia de una lista.",
+          "en": "Commas and and show the sequence in a list."
+        }
+      },
+      "evidence": "The museum, the city park, and Riverside Market.",
+      "maxAttempts": 3
     }
   ],
-  "production": { "prompt": { "es": "Escribe 2–3 frases con información de una ruta imaginaria: hora, precio y una parada.", "en": "Write 2–3 sentences about an imaginary route: include a time, price, and stop." }, "minWords": 12, "maxWords": 50, "hints": ["The first...", "A ticket costs...", "The bus stops at..."], "scored": false },
-  "review": { "author": "WeLearn editorial draft", "languageReviewer": "Pending human English review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T21:30:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Original AI-assisted draft; human review blocks publication.", "languageDecision": "pending", "pedagogyDecision": "pending" },
-  "seo": { "title": { "es": "Lectura en inglés A1: horarios de bus | WeLearn", "en": "A1 English Reading: Bus Schedule | WeLearn" }, "description": { "es": "Practica inglés A1 con horarios de bus, precio, paradas, preguntas y explicaciones.", "en": "Practise A1 English with bus times, a ticket price, stops, questions, and explanations." }, "canonicalPath": "/es/practica/ingles/a1/lectura/saturday-bus-guide", "indexable": false, "lastModified": "2026-07-18T21:30:00-05:00", "relatedExerciseIds": ["en-a1-library-book-message", "en-a2-weekend-without-my-phone"] }
+  "production": {
+    "prompt": {
+      "es": "Escribe 2–3 frases con información de una ruta imaginaria: hora, precio y una parada.",
+      "en": "Write 2–3 sentences about an imaginary route: include a time, price, and stop."
+    },
+    "minWords": 12,
+    "maxWords": 50,
+    "hints": [
+      "The first...",
+      "A ticket costs...",
+      "The bus stops at..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-18T21:30:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura en inglés A1: horarios de bus | WeLearn",
+      "en": "A1 English Reading: Bus Schedule | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A1 con horarios de bus, precio, paradas, preguntas y explicaciones.",
+      "en": "Practise A1 English with bus times, a ticket price, stops, questions, and explanations."
+    },
+    "canonicalPath": "/es/practica/ingles/a1/lectura/saturday-bus-guide",
+    "indexable": false,
+    "lastModified": "2026-07-18T21:30:00-05:00",
+    "relatedExerciseIds": [
+      "en-a1-library-book-message",
+      "en-a1-morning-school-note"
+    ]
+  }
 }

@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-b1-online-course-completion",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "English B1"
+  },
+  "slug": "online-course-completion",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 27,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-b1-urban-tree-plan",
+    "nextExerciseId": "en-b1-local-food-cooperative"
+  },
+  "classification": {
+    "genre": "report",
+    "topic": "online learning",
+    "intent": "learning",
+    "tags": [
+      "online learning",
+      "report",
+      "b1",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Por qué los estudiantes terminan un curso en línea",
+      "en": "Why Learners Finish an Online Course"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés B1 con un texto original sobre online learning.",
+      "en": "Practise B1 English reading with an original text about online learning."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "An adult education centre reviewed the first year of its online English course after noticing that enrolment numbers were high but completion was uneven. Learners who finished usually studied in short sessions three times a week and received a personal message when they missed two activities. Interviews suggested that the message worked because it offered a next step rather than simply reminding people that they were behind. Learners who studied only at weekends often lost contact with the course during busy periods. The centre responded by adding a catch-up week after every four units and allowing learners to choose between two practice tasks. Completion improved slightly, although the change required tutors to prepare more materials. The review does not prove that flexible deadlines suit everyone. It does suggest that flexibility works best when a course still gives learners a clear rhythm, useful feedback, and a simple way to return after an interruption. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "plainTextForAnalysis": "An adult education centre reviewed the first year of its online English course after noticing that enrolment numbers were high but completion was uneven. Learners who finished usually studied in short sessions three times a week and received a personal message when they missed two activities. Interviews suggested that the message worked because it offered a next step rather than simply reminding people that they were behind. Learners who studied only at weekends often lost contact with the course during busy periods. The centre responded by adding a catch-up week after every four units and allowing learners to choose between two practice tasks. Completion improved slightly, although the change required tutors to prepare more materials. The review does not prove that flexible deadlines suit everyone. It does suggest that flexibility works best when a course still gives learners a clear rhythm, useful feedback, and a simple way to return after an interruption. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "wordCount": 242,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "vocabulary": [
+      {
+        "surface": "completion",
+        "lemma": "completion",
+        "glosses": {
+          "es": "completion",
+          "en": "meaning in context: completion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "catch-up week",
+        "lemma": "catch-up week",
+        "glosses": {
+          "es": "catch-up week",
+          "en": "meaning in context: catch-up week"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rhythm",
+        "lemma": "rhythm",
+        "glosses": {
+          "es": "rhythm",
+          "en": "meaning in context: rhythm"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto B1.",
+      "en": "You can understand and justify information in a B1 text."
+    },
+    "allowedGrammar": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.6,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original B1 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What does the review suggest?",
+      "options": [
+        {
+          "id": "support",
+          "text": "Flexible learning needs a clear rhythm and a route back"
+        },
+        {
+          "id": "weekends",
+          "text": "Weekend study is always ineffective"
+        },
+        {
+          "id": "messages",
+          "text": "Messages alone guarantee completion"
+        }
+      ],
+      "answer": "support",
+      "evidence": "flexibility works best when a course still gives learners a clear rhythm",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “flexibility works best when a course still gives learners a clear rhythm”",
+          "en": "Correct. The evidence says: “flexibility works best when a course still gives learners a clear rhythm”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La conclusión combina los hallazgos y limita la afirmación.",
+          "en": "La conclusión combina los hallazgos y limita la afirmación."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did the personal message help some learners?",
+      "options": [
+        {
+          "id": "next-step",
+          "text": "It offered a practical next step"
+        },
+        {
+          "id": "pressure",
+          "text": "It threatened to remove them"
+        },
+        {
+          "id": "schedule",
+          "text": "It added another weekend class"
+        }
+      ],
+      "answer": "next-step",
+      "evidence": "it offered a next step rather than simply reminding",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “it offered a next step rather than simply reminding”",
+          "en": "Correct. The evidence says: “it offered a next step rather than simply reminding”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "El contraste explica qué hizo útil al mensaje.",
+          "en": "El contraste explica qué hizo útil al mensaje."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Why Learners Finish an Online Course”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Notice uneven completion."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Interview learners."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Add catch-up weeks and task choice."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Notice uneven completion. → Interview learners. → Add catch-up weeks and task choice.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Notice uneven completion. → Interview learners. → Add catch-up weeks and task choice.”",
+          "en": "Correct. The evidence says: “Notice uneven completion. → Interview learners. → Add catch-up weeks and task choice.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Why Learners Finish an Online Course”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Interview learners."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Add catch-up weeks and task choice."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Observe a slight improvement."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Interview learners. → Add catch-up weeks and task choice. → Observe a slight improvement.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Interview learners. → Add catch-up weeks and task choice. → Observe a slight improvement.”",
+          "en": "Correct. The evidence says: “Interview learners. → Add catch-up weeks and task choice. → Observe a slight improvement.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Why Learners Finish an Online Course”.",
+      "options": [
+        {
+          "id": "step-3-1",
+          "text": "Add catch-up weeks and task choice."
+        },
+        {
+          "id": "step-3-2",
+          "text": "Observe a slight improvement."
+        },
+        {
+          "id": "step-3-3",
+          "text": "Qualify what the review proves."
+        }
+      ],
+      "answer": [
+        "step-3-1",
+        "step-3-2",
+        "step-3-3"
+      ],
+      "evidence": "Add catch-up weeks and task choice. → Observe a slight improvement. → Qualify what the review proves.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Add catch-up weeks and task choice. → Observe a slight improvement. → Qualify what the review proves.”",
+          "en": "Correct. The evidence says: “Add catch-up weeks and task choice. → Observe a slight improvement. → Qualify what the review proves.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 60,
+    "maxWords": 140,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés B1: Por qué los estudiantes terminan un curso en línea | WeLearn",
+      "en": "B1 English Reading: Why Learners Finish an Online Course | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés B1 con por qué los estudiantes terminan un curso en línea, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise B1 English with why learners finish an online course, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/b1/lectura/online-course-completion",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-b1-urban-tree-plan",
+      "en-b1-local-food-cooperative"
+    ]
+  }
+}

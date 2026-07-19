@@ -4,78 +4,398 @@
   "status": "draft",
   "language": "en",
   "variant": "en-global",
-  "tutorLocales": ["es", "en"],
-  "level": { "cefr": "B1", "displayLabel": "English B1" },
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "English B1"
+  },
   "slug": "neighbourhood-repair-cafe",
-  "series": { "id": "english-reading-batch-01", "episode": 6, "totalEpisodes": 6, "previousExerciseId": "en-b1-four-day-work-week" },
-  "classification": { "genre": "article", "topic": "A neighbourhood repair café", "intent": "culture", "tags": ["repair", "community", "sustainability", "skills"] },
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 22,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-b1-four-day-work-week",
+    "nextExerciseId": "en-b1-library-study-zones"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "A neighbourhood repair café",
+    "intent": "culture",
+    "tags": [
+      "repair",
+      "community",
+      "sustainability",
+      "skills"
+    ]
+  },
   "content": {
-    "title": { "es": "The Repair Café That Changed a Neighbourhood", "en": "The Repair Café That Changed a Neighbourhood" },
-    "intro": { "es": "Practica inglés B1 con un artículo sobre reparación, aprendizaje entre generaciones y comunidad.", "en": "Practise B1 English with an article about repair, intergenerational learning, and community." },
-    "mission": { "es": "Explica cómo creció el proyecto, por qué incluso una reparación fallida puede servir y qué cambio comunitario ocurrió.", "en": "Explain how the project grew, why even a failed repair can help, and what community change occurred." },
+    "title": {
+      "es": "The Repair Café That Changed a Neighbourhood",
+      "en": "The Repair Café That Changed a Neighbourhood"
+    },
+    "intro": {
+      "es": "Practica inglés B1 con un artículo sobre reparación, aprendizaje entre generaciones y comunidad.",
+      "en": "Practise B1 English with an article about repair, intergenerational learning, and community."
+    },
+    "mission": {
+      "es": "Explica cómo creció el proyecto, por qué incluso una reparación fallida puede servir y qué cambio comunitario ocurrió.",
+      "en": "Explain how the project grew, why even a failed repair can help, and what community change occurred."
+    },
     "targetText": "Every second Saturday, the basement of a public library in Toronto fills with broken lamps, silent radios, torn backpacks, and people who do not want to throw them away. The event is called a repair café, although it sells neither repairs nor coffee. Volunteers with practical skills sit beside the owners and try to understand what has gone wrong. The owners are expected to watch, ask questions, and help. The project began when local resident Amira Khan noticed how many small appliances appeared on the street before rubbish collection day. She invited three neighbours to repair objects in her garage. Twenty people arrived at the first meeting, and the garage quickly became too small. The library offered its basement, while a nearby bakery began donating drinks and bread. Not everything can be saved. Some devices need unavailable parts, and volunteers refuse to open equipment that may be dangerous. Even unsuccessful repairs can be useful, however, because owners learn why an object failed and how to buy a longer-lasting replacement. Over two years, the group has examined more than eight hundred items and repaired about sixty percent of them. Amira believes the numbers tell only part of the story. Teenagers have learned sewing from retired neighbours, newcomers have practised English while fixing bicycles, and people who once came with broken objects now return as volunteers. The café has therefore become less about saving individual products and more about sharing knowledge that a neighbourhood already possesses.",
     "plainTextForAnalysis": "Every second Saturday, the basement of a public library in Toronto fills with broken lamps, silent radios, torn backpacks, and people who do not want to throw them away. The event is called a repair cafe, although it sells neither repairs nor coffee. Volunteers with practical skills sit beside the owners and try to understand what has gone wrong. The owners are expected to watch, ask questions, and help. The project began when local resident Amira Khan noticed how many small appliances appeared on the street before rubbish collection day. She invited three neighbours to repair objects in her garage. Twenty people arrived at the first meeting, and the garage quickly became too small. The library offered its basement, while a nearby bakery began donating drinks and bread. Not everything can be saved. Some devices need unavailable parts, and volunteers refuse to open equipment that may be dangerous. Even unsuccessful repairs can be useful, however, because owners learn why an object failed and how to buy a longer-lasting replacement. Over two years, the group has examined more than eight hundred items and repaired about sixty percent of them. Amira believes the numbers tell only part of the story. Teenagers have learned sewing from retired neighbours, newcomers have practised English while fixing bicycles, and people who once came with broken objects now return as volunteers. The cafe has therefore become less about saving individual products and more about sharing knowledge that a neighbourhood already possesses.",
     "wordCount": 244,
     "estimatedMinutes": 15,
     "objectives": [
-      { "es": "Comprender desarrollo, resultados y significado social en un artículo.", "en": "Understand development, results, and social meaning in an article." },
-      { "es": "Interpretar contraste y reformulación en una conclusión.", "en": "Interpret contrast and reframing in a conclusion." }
+      {
+        "es": "Comprender desarrollo, resultados y significado social en un artículo.",
+        "en": "Understand development, results, and social meaning in an article."
+      },
+      {
+        "es": "Interpretar contraste y reformulación en una conclusión.",
+        "en": "Interpret contrast and reframing in a conclusion."
+      }
     ],
-    "grammarFocus": ["present perfect", "relative clauses", "although and however", "less about and more about"],
+    "grammarFocus": [
+      "present perfect",
+      "relative clauses",
+      "although and however",
+      "less about and more about"
+    ],
     "vocabulary": [
-      { "surface": "throw them away", "lemma": "throw away", "glosses": { "es": "botarlos o desecharlos", "en": "discard them as rubbish" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "appliances", "lemma": "appliance", "glosses": { "es": "electrodomésticos", "en": "machines used in the home" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "unavailable parts", "lemma": "unavailable", "glosses": { "es": "repuestos no disponibles", "en": "parts that cannot be obtained" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "longer-lasting", "lemma": "long-lasting", "glosses": { "es": "más duradero", "en": "able to remain useful for more time" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" }
+      {
+        "surface": "throw them away",
+        "lemma": "throw away",
+        "glosses": {
+          "es": "botarlos o desecharlos",
+          "en": "discard them as rubbish"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "appliances",
+        "lemma": "appliance",
+        "glosses": {
+          "es": "electrodomésticos",
+          "en": "machines used in the home"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unavailable parts",
+        "lemma": "unavailable",
+        "glosses": {
+          "es": "repuestos no disponibles",
+          "en": "parts that cannot be obtained"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "longer-lasting",
+        "lemma": "long-lasting",
+        "glosses": {
+          "es": "más duradero",
+          "en": "able to remain useful for more time"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
     ],
-    "culturalNote": { "es": "El proyecto y sus cifras son ficticios, inspirados en el formato comunitario general de los repair cafés, sin atribuir resultados a una organización real.", "en": "The project and figures are fictional, inspired by the general community repair-café format without attributing results to a real organisation." },
-    "spanishSpeakerNote": { "es": "Eventually no significa eventualmente en este texto; la conclusión usa therefore, que expresa por lo tanto.", "en": "Spanish speakers: therefore means por lo tanto and signals a conclusion based on earlier evidence." },
+    "culturalNote": {
+      "es": "El proyecto y sus cifras son ficticios, inspirados en el formato comunitario general de los repair cafés, sin atribuir resultados a una organización real.",
+      "en": "The project and figures are fictional, inspired by the general community repair-café format without attributing results to a real organisation."
+    },
+    "spanishSpeakerNote": {
+      "es": "Eventually no significa eventualmente en este texto; la conclusión usa therefore, que expresa por lo tanto.",
+      "en": "Spanish speakers: therefore means por lo tanto and signals a conclusion based on earlier evidence."
+    },
     "sources": []
   },
   "audio": null,
-  "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
   "leveling": {
-    "targetCanDo": { "es": "Puedes comprender cómo un artículo conecta hechos, resultados y una conclusión social.", "en": "You can understand how an article connects facts, results, and a social conclusion." },
-    "allowedGrammar": ["present simple", "past simple", "present perfect", "common relative clauses", "contrast markers"],
-    "disallowedGrammar": ["dense academic nominalisation", "advanced inversion", "specialist engineering language"],
+    "targetCanDo": {
+      "es": "Puedes comprender cómo un artículo conecta hechos, resultados y una conclusión social.",
+      "en": "You can understand how an article connects facts, results, and a social conclusion."
+    },
+    "allowedGrammar": [
+      "present simple",
+      "past simple",
+      "present perfect",
+      "common relative clauses",
+      "contrast markers"
+    ],
+    "disallowedGrammar": [
+      "dense academic nominalisation",
+      "advanced inversion",
+      "specialist engineering language"
+    ],
     "maxOutOfLevelVocabularyPercent": 10,
     "inferenceBand": "moderate",
-    "metrics": { "averageSentenceWords": 16.3, "maxSentenceWords": 29, "outOfLevelVocabularyPercent": 2.5, "glossedOutOfLevelItems": 1 },
-    "independentAssessment": { "estimatedLevel": "B1", "passed": true, "assessor": "Independent editorial preflight — human confirmation pending", "assessedAt": "2026-07-18T21:30:00-05:00", "notes": "Accessible feature article with chronological development, contrast, statistics, and a supported social inference." }
+    "metrics": {
+      "averageSentenceWords": 16.3,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 2.5,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Independent editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-18T21:30:00-05:00",
+      "notes": "Accessible feature article with chronological development, contrast, statistics, and a supported social inference."
+    }
   },
   "questions": [
     {
-      "id": "q-main", "type": "main-idea", "skill": "global", "prompt": "What is the article mainly showing?",
-      "options": [{ "id": "business", "text": "How to open a profitable repair business" }, { "id": "community", "text": "How repairing objects can also build community" }, { "id": "library", "text": "Why libraries should replace books with workshops" }], "answer": "community",
-      "feedback": { "correct": { "es": "Correcto. La reparación se convierte en intercambio de conocimiento y vínculos.", "en": "Correct. Repair develops into knowledge sharing and stronger connections." }, "incorrect": { "es": "Compara el inicio sobre objetos con la conclusión sobre conocimiento.", "en": "Compare the opening about objects with the conclusion about knowledge." }, "strategy": { "es": "La idea principal suele unir el ejemplo concreto con la conclusión más amplia.", "en": "The main idea often connects a concrete example with the broader conclusion." } },
-      "evidence": "Less about saving individual products and more about sharing knowledge.", "maxAttempts": 2
+      "id": "q-main",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the article mainly showing?",
+      "options": [
+        {
+          "id": "business",
+          "text": "How to open a profitable repair business"
+        },
+        {
+          "id": "community",
+          "text": "How repairing objects can also build community"
+        },
+        {
+          "id": "library",
+          "text": "Why libraries should replace books with workshops"
+        }
+      ],
+      "answer": "community",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La reparación se convierte en intercambio de conocimiento y vínculos.",
+          "en": "Correct. Repair develops into knowledge sharing and stronger connections."
+        },
+        "incorrect": {
+          "es": "Compara el inicio sobre objetos con la conclusión sobre conocimiento.",
+          "en": "Compare the opening about objects with the conclusion about knowledge."
+        },
+        "strategy": {
+          "es": "La idea principal suele unir el ejemplo concreto con la conclusión más amplia.",
+          "en": "The main idea often connects a concrete example with the broader conclusion."
+        }
+      },
+      "evidence": "Less about saving individual products and more about sharing knowledge.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-name", "type": "vocabulary-in-context", "skill": "vocabulary", "prompt": "Why is the name repair café slightly surprising?",
-      "options": [{ "id": "night", "text": "It only opens at night." }, { "id": "neither", "text": "It sells neither repairs nor coffee." }, { "id": "children", "text": "Only children can attend." }], "answer": "neither",
-      "feedback": { "correct": { "es": "Correcto. El nombre no describe una venta de reparación ni de café.", "en": "Correct. The name does not describe selling repairs or coffee." }, "incorrect": { "es": "Busca la oración con although y neither.", "en": "Find the sentence with although and neither." }, "strategy": { "es": "Although introduce un contraste con la expectativa creada por el nombre.", "en": "Although introduces a contrast with the expectation created by the name." } },
-      "evidence": "Although it sells neither repairs nor coffee.", "maxAttempts": 2
+      "id": "q-name",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put the project’s first growth steps in order.",
+      "options": [
+        {
+          "id": "garage",
+          "text": "Amira invites neighbours to her garage."
+        },
+        {
+          "id": "library",
+          "text": "The library offers its basement."
+        },
+        {
+          "id": "bakery",
+          "text": "A nearby bakery donates drinks and bread."
+        }
+      ],
+      "answer": [
+        "garage",
+        "library",
+        "bakery"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “garage → library basement → bakery donations”",
+          "en": "Correct. The evidence says: “garage → library basement → bakery donations”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "evidence": "garage → library basement → bakery donations",
+      "maxAttempts": 3
     },
     {
-      "id": "q-moved", "type": "detail", "skill": "detail", "prompt": "Why did the project move to the library?",
-      "options": [{ "id": "danger", "text": "The garage was dangerous." }, { "id": "small", "text": "The garage became too small." }, { "id": "bakery", "text": "The bakery needed the garage." }], "answer": "small",
-      "feedback": { "correct": { "es": "Correcto. Llegaron veinte personas y el garaje quedó pequeño.", "en": "Correct. Twenty people came and the garage became too small." }, "incorrect": { "es": "Relaciona la asistencia a la primera reunión con el cambio de lugar.", "en": "Connect attendance at the first meeting with the change of venue." }, "strategy": { "es": "La causa puede aparecer en una oración inmediatamente anterior a la solución.", "en": "A cause may appear immediately before its solution." } },
-      "evidence": "Twenty people arrived ... the garage quickly became too small.", "maxAttempts": 2
+      "id": "q-moved",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put the project’s later stages in order.",
+      "options": [
+        {
+          "id": "library",
+          "text": "The library offers its basement."
+        },
+        {
+          "id": "examined",
+          "text": "The group examines many items."
+        },
+        {
+          "id": "volunteers",
+          "text": "Former visitors return as volunteers."
+        }
+      ],
+      "answer": [
+        "library",
+        "examined",
+        "volunteers"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “library basement → examine items → former visitors volunteer”",
+          "en": "Correct. The evidence says: “library basement → examine items → former visitors volunteer”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "evidence": "library basement → examine items → former visitors volunteer",
+      "maxAttempts": 3
     },
     {
-      "id": "q-failed", "type": "inference", "skill": "inference", "prompt": "How can an unsuccessful repair still help an owner?",
-      "options": [{ "id": "free", "text": "The owner receives a free new device." }, { "id": "learn", "text": "The owner learns about the failure and future choices." }, { "id": "sell", "text": "The volunteer sells the broken parts." }], "answer": "learn",
-      "feedback": { "correct": { "es": "Correcto. Entiende la falla y puede elegir un reemplazo más duradero.", "en": "Correct. The owner understands the failure and can choose a longer-lasting replacement." }, "incorrect": { "es": "Lee la explicación después de because.", "en": "Read the explanation after because." }, "strategy": { "es": "Una reparación puede evaluarse por el aprendizaje, no solo por el objeto reparado.", "en": "A repair can be evaluated by learning, not only by the repaired object." } },
-      "evidence": "Owners learn why an object failed and how to buy a longer-lasting replacement.", "maxAttempts": 2
+      "id": "q-failed",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How can an unsuccessful repair still help an owner?",
+      "options": [
+        {
+          "id": "free",
+          "text": "The owner receives a free new device."
+        },
+        {
+          "id": "learn",
+          "text": "The owner learns about the failure and future choices."
+        },
+        {
+          "id": "sell",
+          "text": "The volunteer sells the broken parts."
+        }
+      ],
+      "answer": "learn",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Entiende la falla y puede elegir un reemplazo más duradero.",
+          "en": "Correct. The owner understands the failure and can choose a longer-lasting replacement."
+        },
+        "incorrect": {
+          "es": "Lee la explicación después de because.",
+          "en": "Read the explanation after because."
+        },
+        "strategy": {
+          "es": "Una reparación puede evaluarse por el aprendizaje, no solo por el objeto reparado.",
+          "en": "A repair can be evaluated by learning, not only by the repaired object."
+        }
+      },
+      "evidence": "Owners learn why an object failed and how to buy a longer-lasting replacement.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-growth", "type": "ordering", "skill": "organization", "prompt": "Put these stages of the project in order.",
-      "options": [{ "id": "garage", "text": "Amira invites neighbours to her garage." }, { "id": "library", "text": "The library offers its basement." }, { "id": "volunteers", "text": "Former visitors return as volunteers." }], "answer": ["garage", "library", "volunteers"],
-      "feedback": { "correct": { "es": "Correcto. La secuencia muestra crecimiento y participación.", "en": "Correct. The sequence shows growth and participation." }, "incorrect": { "es": "Sigue el proyecto desde su inicio hasta el resultado social final.", "en": "Follow the project from its beginning to the final social result." }, "strategy": { "es": "Combina pasado simple para el origen con presente perfecto para los cambios acumulados.", "en": "Combine past simple for the origin with present perfect for accumulated change." } },
-      "evidence": "Garage → library basement → return as volunteers.", "maxAttempts": 3
+      "id": "q-growth",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages of the project in order.",
+      "options": [
+        {
+          "id": "garage",
+          "text": "Amira invites neighbours to her garage."
+        },
+        {
+          "id": "library",
+          "text": "The library offers its basement."
+        },
+        {
+          "id": "volunteers",
+          "text": "Former visitors return as volunteers."
+        }
+      ],
+      "answer": [
+        "garage",
+        "library",
+        "volunteers"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La secuencia muestra crecimiento y participación.",
+          "en": "Correct. The sequence shows growth and participation."
+        },
+        "incorrect": {
+          "es": "Sigue el proyecto desde su inicio hasta el resultado social final.",
+          "en": "Follow the project from its beginning to the final social result."
+        },
+        "strategy": {
+          "es": "Combina pasado simple para el origen con presente perfecto para los cambios acumulados.",
+          "en": "Combine past simple for the origin with present perfect for accumulated change."
+        }
+      },
+      "evidence": "Garage → library basement → return as volunteers.",
+      "maxAttempts": 3
     }
   ],
-  "production": { "prompt": { "es": "Escribe 4–5 frases en inglés proponiendo un evento para compartir una habilidad en tu comunidad.", "en": "Write 4–5 English sentences proposing an event where people share a skill in your community." }, "minWords": 45, "maxWords": 120, "hints": ["The event would...", "People could...", "It would help because..."], "scored": false },
-  "review": { "author": "WeLearn editorial draft", "languageReviewer": "Pending human English review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T21:30:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Original fictional AI-assisted draft; human review blocks publication.", "languageDecision": "pending", "pedagogyDecision": "pending" },
-  "seo": { "title": { "es": "Lectura en inglés B1: un repair café comunitario | WeLearn", "en": "B1 English Reading: A Community Repair Café | WeLearn" }, "description": { "es": "Practica inglés B1 con un artículo sobre reparación, sostenibilidad, comunidad e inferencia.", "en": "Practise B1 English with an article about repair, sustainability, community, and inference." }, "canonicalPath": "/es/practica/ingles/b1/lectura/neighbourhood-repair-cafe", "indexable": false, "lastModified": "2026-07-18T21:30:00-05:00", "relatedExerciseIds": ["en-b1-four-day-work-week"] }
+  "production": {
+    "prompt": {
+      "es": "Escribe 4–5 frases en inglés proponiendo un evento para compartir una habilidad en tu comunidad.",
+      "en": "Write 4–5 English sentences proposing an event where people share a skill in your community."
+    },
+    "minWords": 45,
+    "maxWords": 120,
+    "hints": [
+      "The event would...",
+      "People could...",
+      "It would help because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-18T21:30:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original fictional AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura en inglés B1: un repair café comunitario | WeLearn",
+      "en": "B1 English Reading: A Community Repair Café | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés B1 con un artículo sobre reparación, sostenibilidad, comunidad e inferencia.",
+      "en": "Practise B1 English with an article about repair, sustainability, community, and inference."
+    },
+    "canonicalPath": "/es/practica/ingles/b1/lectura/neighbourhood-repair-cafe",
+    "indexable": false,
+    "lastModified": "2026-07-18T21:30:00-05:00",
+    "relatedExerciseIds": [
+      "en-b1-four-day-work-week",
+      "en-b1-library-study-zones"
+    ]
+  }
 }

@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-museum-audio-guide",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
+  "slug": "museum-audio-guide",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 19,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-weekend-volunteer-shift",
+    "nextExerciseId": "en-a2-first-job-interview"
+  },
+  "classification": {
+    "genre": "notice",
+    "topic": "museum visit",
+    "intent": "learning",
+    "tags": [
+      "museum visit",
+      "notice",
+      "a2",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una nueva audioguía del museo",
+      "en": "A New Audio Guide at the Museum"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A2 con un texto original sobre museum visit.",
+      "en": "Practise A2 English reading with an original text about museum visit."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "The City Museum has introduced a free audio guide for visitors aged twelve and over. Visitors can borrow a small player at the entrance or download the guide before arriving. The guide has twelve stops, but visitors do not need to follow them in order. Each stop lasts between three and five minutes and includes one question to discuss with a companion. The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects. Families with younger children can use the picture trail instead. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "plainTextForAnalysis": "The City Museum has introduced a free audio guide for visitors aged twelve and over. Visitors can borrow a small player at the entrance or download the guide before arriving. The guide has twelve stops, but visitors do not need to follow them in order. Each stop lasts between three and five minutes and includes one question to discuss with a companion. The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects. Families with younger children can use the picture trail instead. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "wordCount": 136,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "vocabulary": [
+      {
+        "surface": "introduced",
+        "lemma": "introduced",
+        "glosses": {
+          "es": "introduced",
+          "en": "meaning in context: introduced"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stops",
+        "lemma": "stops",
+        "glosses": {
+          "es": "stops",
+          "en": "meaning in context: stops"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "companion",
+        "lemma": "companion",
+        "glosses": {
+          "es": "companion",
+          "en": "meaning in context: companion"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A2.",
+      "en": "You can understand and justify information in a A2 text."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 15.1,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A2 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "purpose",
+      "skill": "global",
+      "prompt": "Why did the museum introduce the guide?",
+      "options": [
+        {
+          "id": "notice",
+          "text": "To help visitors notice details"
+        },
+        {
+          "id": "replace",
+          "text": "To remove all object labels"
+        },
+        {
+          "id": "speed",
+          "text": "To make everyone finish quickly"
+        }
+      ],
+      "answer": "notice",
+      "evidence": "designed to help visitors notice details",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “designed to help visitors notice details”",
+          "en": "Correct. The evidence says: “designed to help visitors notice details”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La frase final sobre labels limita lo que la guía pretende hacer.",
+          "en": "La frase final sobre labels limita lo que la guía pretende hacer."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How many stops does the guide have?",
+      "options": [
+        {
+          "id": "ten",
+          "text": "Ten"
+        },
+        {
+          "id": "twelve",
+          "text": "Twelve"
+        },
+        {
+          "id": "fifteen",
+          "text": "Fifteen"
+        }
+      ],
+      "answer": "twelve",
+      "evidence": "The guide has twelve stops",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “The guide has twelve stops”",
+          "en": "Correct. The evidence says: “The guide has twelve stops”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Los números aparecen explícitamente en el aviso.",
+          "en": "Los números aparecen explícitamente en el aviso."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "What does “them” refer to in “follow them in order”?",
+      "options": [
+        {
+          "id": "stops",
+          "text": "The twelve stops"
+        },
+        {
+          "id": "questions",
+          "text": "The questions"
+        },
+        {
+          "id": "labels",
+          "text": "The object labels"
+        }
+      ],
+      "answer": "stops",
+      "evidence": "The guide has twelve stops",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “The guide has twelve stops”",
+          "en": "Correct. The evidence says: “The guide has twelve stops”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "El pronombre retoma el grupo plural más cercano.",
+          "en": "El pronombre retoma el grupo plural más cercano."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A New Audio Guide at the Museum”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Borrow or download the guide."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Choose a museum stop."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Discuss its question."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Borrow or download the guide. → Choose a museum stop. → Discuss its question.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Borrow or download the guide. → Choose a museum stop. → Discuss its question.”",
+          "en": "Correct. The evidence says: “Borrow or download the guide. → Choose a museum stop. → Discuss its question.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A New Audio Guide at the Museum”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Choose a museum stop."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Discuss its question."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Compare the guide with the object label."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Choose a museum stop. → Discuss its question. → Compare the guide with the object label.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Choose a museum stop. → Discuss its question. → Compare the guide with the object label.”",
+          "en": "Correct. The evidence says: “Choose a museum stop. → Discuss its question. → Compare the guide with the object label.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 35,
+    "maxWords": 90,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A2: Una nueva audioguía del museo | WeLearn",
+      "en": "A2 English Reading: A New Audio Guide at the Museum | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con una nueva audioguía del museo, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A2 English with a new audio guide at the museum, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/museum-audio-guide",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-weekend-volunteer-shift",
+      "en-a2-first-job-interview"
+    ]
+  }
+}

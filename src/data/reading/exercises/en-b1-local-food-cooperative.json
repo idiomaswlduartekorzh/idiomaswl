@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-b1-local-food-cooperative",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "English B1"
+  },
+  "slug": "local-food-cooperative",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 28,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-b1-online-course-completion",
+    "nextExerciseId": "en-b1-workplace-mentoring"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "local food",
+    "intent": "learning",
+    "tags": [
+      "local food",
+      "article",
+      "b1",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Una cooperativa de alimentos cambia su modelo",
+      "en": "A Local Food Cooperative Changes Its Model"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés B1 con un texto original sobre local food.",
+      "en": "Practise B1 English reading with an original text about local food."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "The Riverbend Food Cooperative began as a weekly market where small farmers could sell directly to residents. The market attracted attention, but farmers found it difficult to plan production because sales changed greatly from week to week. In its second year, the cooperative introduced a membership scheme. Members paid a small monthly amount and received a box of seasonal produce, while non-members could still buy individual items at the market. The predictable orders helped farmers reduce waste, but some members complained that the boxes contained vegetables they did not know how to cook. The cooperative responded with short recipe cards and monthly demonstrations led by different farmers. It also created a reduced-price membership for households on lower incomes. The new model has not made the cooperative financially secure, yet it has connected planning, education, and access more closely than the original market did. The board now wants to measure food waste and member retention before expanding to another neighbourhood. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "plainTextForAnalysis": "The Riverbend Food Cooperative began as a weekly market where small farmers could sell directly to residents. The market attracted attention, but farmers found it difficult to plan production because sales changed greatly from week to week. In its second year, the cooperative introduced a membership scheme. Members paid a small monthly amount and received a box of seasonal produce, while non-members could still buy individual items at the market. The predictable orders helped farmers reduce waste, but some members complained that the boxes contained vegetables they did not know how to cook. The cooperative responded with short recipe cards and monthly demonstrations led by different farmers. It also created a reduced-price membership for households on lower incomes. The new model has not made the cooperative financially secure, yet it has connected planning, education, and access more closely than the original market did. The board now wants to measure food waste and member retention before expanding to another neighbourhood. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "wordCount": 249,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "vocabulary": [
+      {
+        "surface": "seasonal",
+        "lemma": "seasonal",
+        "glosses": {
+          "es": "seasonal",
+          "en": "meaning in context: seasonal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "predictable",
+        "lemma": "predictable",
+        "glosses": {
+          "es": "predictable",
+          "en": "meaning in context: predictable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retention",
+        "lemma": "retention",
+        "glosses": {
+          "es": "retention",
+          "en": "meaning in context: retention"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto B1.",
+      "en": "You can understand and justify information in a B1 text."
+    },
+    "allowedGrammar": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.8,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original B1 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the article’s central point?",
+      "options": [
+        {
+          "id": "model",
+          "text": "The cooperative changed its model to improve planning and access"
+        },
+        {
+          "id": "market",
+          "text": "Weekly markets never help farmers"
+        },
+        {
+          "id": "recipes",
+          "text": "Recipe cards are the main source of income"
+        }
+      ],
+      "answer": "model",
+      "evidence": "connected planning, education, and access",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “connected planning, education, and access”",
+          "en": "Correct. The evidence says: “connected planning, education, and access”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La idea central conecta los cambios y sus efectos.",
+          "en": "La idea central conecta los cambios y sus efectos."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did recipe cards become necessary?",
+      "options": [
+        {
+          "id": "unfamiliar",
+          "text": "Some members did not know how to use the vegetables"
+        },
+        {
+          "id": "waste",
+          "text": "Farmers stopped growing vegetables"
+        },
+        {
+          "id": "price",
+          "text": "Boxes became more expensive"
+        }
+      ],
+      "answer": "unfamiliar",
+      "evidence": "vegetables they did not know how to cook",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “vegetables they did not know how to cook”",
+          "en": "Correct. The evidence says: “vegetables they did not know how to cook”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La queja de miembros explica la respuesta educativa.",
+          "en": "La queja de miembros explica la respuesta educativa."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Local Food Cooperative Changes Its Model”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Run a weekly market."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Introduce membership boxes."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Add recipes and demonstrations."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Run a weekly market. → Introduce membership boxes. → Add recipes and demonstrations.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Run a weekly market. → Introduce membership boxes. → Add recipes and demonstrations.”",
+          "en": "Correct. The evidence says: “Run a weekly market. → Introduce membership boxes. → Add recipes and demonstrations.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Local Food Cooperative Changes Its Model”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Introduce membership boxes."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Add recipes and demonstrations."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Create reduced-price membership."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Introduce membership boxes. → Add recipes and demonstrations. → Create reduced-price membership.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Introduce membership boxes. → Add recipes and demonstrations. → Create reduced-price membership.”",
+          "en": "Correct. The evidence says: “Introduce membership boxes. → Add recipes and demonstrations. → Create reduced-price membership.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Local Food Cooperative Changes Its Model”.",
+      "options": [
+        {
+          "id": "step-3-1",
+          "text": "Add recipes and demonstrations."
+        },
+        {
+          "id": "step-3-2",
+          "text": "Create reduced-price membership."
+        },
+        {
+          "id": "step-3-3",
+          "text": "Measure waste and retention."
+        }
+      ],
+      "answer": [
+        "step-3-1",
+        "step-3-2",
+        "step-3-3"
+      ],
+      "evidence": "Add recipes and demonstrations. → Create reduced-price membership. → Measure waste and retention.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Add recipes and demonstrations. → Create reduced-price membership. → Measure waste and retention.”",
+          "en": "Correct. The evidence says: “Add recipes and demonstrations. → Create reduced-price membership. → Measure waste and retention.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 60,
+    "maxWords": 140,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés B1: Una cooperativa de alimentos cambia su modelo | WeLearn",
+      "en": "B1 English Reading: A Local Food Cooperative Changes Its Model | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés B1 con una cooperativa de alimentos cambia su modelo, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise B1 English with a local food cooperative changes its model, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/b1/lectura/local-food-cooperative",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-b1-online-course-completion",
+      "en-b1-workplace-mentoring"
+    ]
+  }
+}

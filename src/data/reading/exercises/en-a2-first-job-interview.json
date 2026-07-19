@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-first-job-interview",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
+  "slug": "first-job-interview",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 20,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-museum-audio-guide",
+    "nextExerciseId": "en-b1-four-day-work-week"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "employment",
+    "intent": "learning",
+    "tags": [
+      "employment",
+      "article",
+      "a2",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Prepararse para la primera entrevista de trabajo",
+      "en": "Preparing for a First Job Interview"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A2 con un texto original sobre employment.",
+      "en": "Practise A2 English reading with an original text about employment."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task. She did not memorise long answers because she wanted to sound natural. The evening before the interview, she checked the bus route and prepared two questions about the role. At the office, the manager asked about teamwork and reliability. Noor gave one clear example for each question and admitted when she did not know a technical word. She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "plainTextForAnalysis": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task. She did not memorise long answers because she wanted to sound natural. The evening before the interview, she checked the bus route and prepared two questions about the role. At the office, the manager asked about teamwork and reliability. Noor gave one clear example for each question and admitted when she did not know a technical word. She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "wordCount": 149,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "vocabulary": [
+      {
+        "surface": "reliability",
+        "lemma": "reliability",
+        "glosses": {
+          "es": "reliability",
+          "en": "meaning in context: reliability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "role",
+        "lemma": "role",
+        "glosses": {
+          "es": "role",
+          "en": "meaning in context: role"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "qualities",
+        "lemma": "qualities",
+        "glosses": {
+          "es": "qualities",
+          "en": "meaning in context: qualities"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A2.",
+      "en": "You can understand and justify information in a A2 text."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 16.6,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A2 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the article’s main lesson?",
+      "options": [
+        {
+          "id": "examples",
+          "text": "Specific work examples can make an interview answer stronger"
+        },
+        {
+          "id": "memorise",
+          "text": "Long memorised answers are always best"
+        },
+        {
+          "id": "route",
+          "text": "Bus routes decide interview results"
+        }
+      ],
+      "answer": "examples",
+      "evidence": "shown how she worked rather than only describing her qualities",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “shown how she worked rather than only describing her qualities”",
+          "en": "Correct. The evidence says: “shown how she worked rather than only describing her qualities”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La conclusión conecta la preparación con la forma de responder.",
+          "en": "La conclusión conecta la preparación con la forma de responder."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did Noor prepare questions for the manager?",
+      "options": [
+        {
+          "id": "interest",
+          "text": "To show interest and understand the role"
+        },
+        {
+          "id": "delay",
+          "text": "To make the interview longer"
+        },
+        {
+          "id": "technical",
+          "text": "To avoid every technical question"
+        }
+      ],
+      "answer": "interest",
+      "evidence": "prepared two questions about the role",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “prepared two questions about the role”",
+          "en": "Correct. The evidence says: “prepared two questions about the role”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Preparar preguntas sobre el cargo comunica interés.",
+          "en": "Preparar preguntas sobre el cargo comunica interés."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does reliability mean?",
+      "options": [
+        {
+          "id": "dependability",
+          "text": "Being someone others can depend on"
+        },
+        {
+          "id": "speed",
+          "text": "Working very quickly"
+        },
+        {
+          "id": "creativity",
+          "text": "Making unusual designs"
+        }
+      ],
+      "answer": "dependability",
+      "evidence": "the manager asked about teamwork and reliability",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “the manager asked about teamwork and reliability”",
+          "en": "Correct. The evidence says: “the manager asked about teamwork and reliability”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Teamwork and the work context point to dependable behaviour.",
+          "en": "Teamwork and the work context point to dependable behaviour."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Preparing for a First Job Interview”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Prepare examples and questions."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Check the bus route."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Answer with clear examples."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Prepare examples and questions. → Check the bus route. → Answer with clear examples.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Prepare examples and questions. → Check the bus route. → Answer with clear examples.”",
+          "en": "Correct. The evidence says: “Prepare examples and questions. → Check the bus route. → Answer with clear examples.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Preparing for a First Job Interview”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Check the bus route."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Answer with clear examples."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Reflect after the interview."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Check the bus route. → Answer with clear examples. → Reflect after the interview.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Check the bus route. → Answer with clear examples. → Reflect after the interview.”",
+          "en": "Correct. The evidence says: “Check the bus route. → Answer with clear examples. → Reflect after the interview.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 35,
+    "maxWords": 90,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A2: Prepararse para la primera entrevista de trabajo | WeLearn",
+      "en": "A2 English Reading: Preparing for a First Job Interview | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con prepararse para la primera entrevista de trabajo, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A2 English with preparing for a first job interview, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/first-job-interview",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-museum-audio-guide",
+      "en-b1-four-day-work-week"
+    ]
+  }
+}

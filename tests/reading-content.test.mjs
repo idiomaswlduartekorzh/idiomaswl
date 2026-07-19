@@ -1,18 +1,13 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readFile, readdir } from 'node:fs/promises'
 import { validateReadingExercise } from '../scripts/lib/reading-content-validator.mjs'
 
 const fixture = JSON.parse(await readFile(new URL('../src/data/reading/exercises/en-a1-my-morning-at-the-cafe.json', import.meta.url), 'utf8'))
 const koreanFixture = JSON.parse(await readFile(new URL('../src/data/reading/exercises/ko-a1-cafe-order.json', import.meta.url), 'utf8'))
-const batchFiles = [
-  'en-a1-library-book-message.json',
-  'en-a1-saturday-bus-guide.json',
-  'en-a2-weekend-without-my-phone.json',
-  'en-a2-community-garden-email.json',
-  'en-b1-four-day-work-week.json',
-  'en-b1-neighbourhood-repair-cafe.json',
-]
+const batchFiles = (await readdir(new URL('../src/data/reading/exercises/', import.meta.url)))
+  .filter((filename) => filename.startsWith('en-') && filename.endsWith('.json'))
+  .sort()
 const batchFixtures = await Promise.all(batchFiles.map(async (filename) =>
   JSON.parse(await readFile(new URL(`../src/data/reading/exercises/${filename}`, import.meta.url), 'utf8'))
 ))
@@ -72,29 +67,38 @@ test('ordering answers must reference declared option IDs', () => {
   assert.match(validateReadingExercise(invalid).join('\n'), /ordering answer/)
 })
 
-test('the six-reading English batch passes content validation', () => {
+test('the complete English corpus passes content validation', () => {
   for (const exercise of batchFixtures) {
     assert.deepEqual(validateReadingExercise(exercise), [], exercise.id)
   }
 })
 
-test('the English batch contains two private drafts at each requested level', () => {
+test('English has ten reviewable readings at each requested level', () => {
   for (const level of ['A1', 'A2', 'B1']) {
-    assert.equal(batchFixtures.filter((exercise) => exercise.level.cefr === level).length, 2)
+    assert.equal(batchFixtures.filter((exercise) => exercise.level.cefr === level).length, 10)
   }
 
-  assert.equal(new Set(batchFixtures.map((exercise) => exercise.id)).size, 6)
-  assert.equal(new Set(batchFixtures.map((exercise) => exercise.slug)).size, 6)
-  assert.ok(batchFixtures.every((exercise) => exercise.status === 'draft'))
+  assert.equal(batchFixtures.length, 30)
+  assert.equal(new Set(batchFixtures.map((exercise) => exercise.id)).size, 30)
+  assert.equal(new Set(batchFixtures.map((exercise) => exercise.slug)).size, 30)
+  assert.ok(batchFixtures.every((exercise) => exercise.status !== 'published'))
   assert.ok(batchFixtures.every((exercise) => exercise.seo.indexable === false))
   assert.ok(batchFixtures.every((exercise) => exercise.audio === null))
   assert.ok(batchFixtures.every((exercise) => exercise.questions.length === 5))
-  assert.ok(batchFixtures.every((exercise) => exercise.review.languageDecision === 'pending'))
-  assert.ok(batchFixtures.every((exercise) => exercise.review.pedagogyDecision === 'pending'))
+  assert.ok(batchFixtures.every((exercise) => exercise.review.languageDecision !== 'approved'))
+  assert.ok(batchFixtures.every((exercise) => exercise.review.pedagogyDecision !== 'approved'))
 })
 
-test('the English batch forms one ordered six-episode series', () => {
+test('the English corpus forms one ordered thirty-episode series', () => {
   const episodes = batchFixtures.map((exercise) => exercise.series?.episode).sort((a, b) => a - b)
-  assert.deepEqual(episodes, [1, 2, 3, 4, 5, 6])
-  assert.ok(batchFixtures.every((exercise) => exercise.series?.totalEpisodes === 6))
+  assert.deepEqual(episodes, Array.from({ length: 30 }, (_, index) => index + 1))
+  assert.ok(batchFixtures.every((exercise) => exercise.series?.totalEpisodes === 30))
+})
+
+test('question progression adds ordering sections as CEFR rises', () => {
+  for (const level of ['A1', 'A2', 'B1']) {
+    const readings = batchFixtures.filter((exercise) => exercise.level.cefr === level)
+    const expectedOrderingSections = level === 'A1' ? 1 : level === 'A2' ? 2 : 3
+    assert.ok(readings.every((exercise) => exercise.questions.filter((question) => question.type === 'ordering').length === expectedOrderingSections), level)
+  }
 })

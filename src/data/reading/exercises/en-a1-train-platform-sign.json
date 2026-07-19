@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a1-train-platform-sign",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A1",
+    "displayLabel": "English A1"
+  },
+  "slug": "train-platform-sign",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 9,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a1-lost-and-found-message",
+    "nextExerciseId": "en-a1-birthday-party-invite"
+  },
+  "classification": {
+    "genre": "notice",
+    "topic": "travel information",
+    "intent": "learning",
+    "tags": [
+      "travel information",
+      "notice",
+      "a1",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cambio de andén para el tren 6",
+      "en": "Platform Change for Train 6"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A1 con un texto original sobre travel information.",
+      "en": "Practise A1 English reading with an original text about travel information."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "Attention passengers for train 6 to Northbridge. The train will leave from platform 3 today, not platform 1. Please check your ticket before you walk downstairs. The train arrives at ten twenty and leaves at ten thirty. Passengers with large bags can use the lift beside the ticket office. The café near platform 3 is open until noon.",
+    "plainTextForAnalysis": "Attention passengers for train 6 to Northbridge. The train will leave from platform 3 today, not platform 1. Please check your ticket before you walk downstairs. The train arrives at ten twenty and leaves at ten thirty. Passengers with large bags can use the lift beside the ticket office. The café near platform 3 is open until noon.",
+    "wordCount": 58,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "present simple",
+      "can",
+      "imperatives",
+      "basic time expressions"
+    ],
+    "vocabulary": [
+      {
+        "surface": "platform",
+        "lemma": "platform",
+        "glosses": {
+          "es": "platform",
+          "en": "meaning in context: platform"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "passengers",
+        "lemma": "passengers",
+        "glosses": {
+          "es": "passengers",
+          "en": "meaning in context: passengers"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lift",
+        "lemma": "lift",
+        "glosses": {
+          "es": "lift",
+          "en": "meaning in context: lift"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A1.",
+      "en": "You can understand and justify information in a A1 text."
+    },
+    "allowedGrammar": [
+      "present simple",
+      "can",
+      "imperatives",
+      "basic time expressions"
+    ],
+    "disallowedGrammar": [
+      "passive voice",
+      "reported speech"
+    ],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "minimal",
+    "metrics": {
+      "averageSentenceWords": 9.7,
+      "maxSentenceWords": 12,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A1",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A1 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What change does the notice announce?",
+      "options": [
+        {
+          "id": "platform",
+          "text": "The train’s platform"
+        },
+        {
+          "id": "time",
+          "text": "The train’s destination"
+        },
+        {
+          "id": "cafe",
+          "text": "The café menu"
+        }
+      ],
+      "answer": "platform",
+      "evidence": "leave from platform 3 today, not platform 1",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “leave from platform 3 today, not platform 1”",
+          "en": "Correct. The evidence says: “leave from platform 3 today, not platform 1”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Compara el dato nuevo con el dato que ya no sirve.",
+          "en": "Compara el dato nuevo con el dato que ya no sirve."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What time does the train leave?",
+      "options": [
+        {
+          "id": "ten twenty",
+          "text": "At ten twenty"
+        },
+        {
+          "id": "ten thirty",
+          "text": "At ten thirty"
+        },
+        {
+          "id": "noon",
+          "text": "At noon"
+        }
+      ],
+      "answer": "ten thirty",
+      "evidence": "leaves at ten thirty",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “leaves at ten thirty”",
+          "en": "Correct. The evidence says: “leaves at ten thirty”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Distingue la hora de llegada de la hora de salida.",
+          "en": "Distingue la hora de llegada de la hora de salida."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What is a lift?",
+      "options": [
+        {
+          "id": "elevator",
+          "text": "A machine that takes people between floors"
+        },
+        {
+          "id": "stairs",
+          "text": "Steps downstairs"
+        },
+        {
+          "id": "ticket",
+          "text": "A paper for travel"
+        }
+      ],
+      "answer": "elevator",
+      "evidence": "Passengers with large bags can use the lift",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Passengers with large bags can use the lift”",
+          "en": "Correct. The evidence says: “Passengers with large bags can use the lift”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Large bags and downstairs suggest help moving between floors.",
+          "en": "Large bags and downstairs suggest help moving between floors."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "true-false",
+      "skill": "detail",
+      "prompt": "Is this detail stated in the text?",
+      "options": [
+        {
+          "id": "true",
+          "text": "True"
+        },
+        {
+          "id": "false",
+          "text": "False"
+        }
+      ],
+      "answer": "true",
+      "evidence": "leave from platform 3 today, not platform 1",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “leave from platform 3 today, not platform 1”",
+          "en": "Correct. The evidence says: “leave from platform 3 today, not platform 1”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Comprueba si la afirmación aparece explícitamente en el texto.",
+          "en": "Comprueba si la afirmación aparece explícitamente en el texto."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these actions in the order used in “Platform Change for Train 6”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Check the ticket."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Walk to platform 3."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Board train 6."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Check the ticket. → Walk to platform 3. → Board train 6.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Check the ticket. → Walk to platform 3. → Board train 6.”",
+          "en": "Correct. The evidence says: “Check the ticket. → Walk to platform 3. → Board train 6.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 15,
+    "maxWords": 55,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A1: Cambio de andén para el tren 6 | WeLearn",
+      "en": "A1 English Reading: Platform Change for Train 6 | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A1 con cambio de andén para el tren 6, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A1 English with platform change for train 6, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a1/lectura/train-platform-sign",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a1-lost-and-found-message",
+      "en-a1-birthday-party-invite"
+    ]
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-cooking-class-reminder",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
+  "slug": "cooking-class-reminder",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 15,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-new-neighbour-welcome",
+    "nextExerciseId": "en-a2-school-exchange-diary"
+  },
+  "classification": {
+    "genre": "email",
+    "topic": "adult learning",
+    "intent": "learning",
+    "tags": [
+      "adult learning",
+      "email",
+      "a2",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Qué llevar a la clase de cocina",
+      "en": "What to Bring to the Cooking Class"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A2 con un texto original sobre adult learning.",
+      "en": "Practise A2 English reading with an original text about adult learning."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "The community centre cooking class starts next Tuesday at six thirty. This month we are learning to make vegetable dumplings and a simple dipping sauce. The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers. Please tell the tutor about allergies when you arrive. The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning. The class ends at eight, and everyone can stay for a short tasting session. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "plainTextForAnalysis": "The community centre cooking class starts next Tuesday at six thirty. This month we are learning to make vegetable dumplings and a simple dipping sauce. The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers. Please tell the tutor about allergies when you arrive. The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning. The class ends at eight, and everyone can stay for a short tasting session. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "wordCount": 129,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "vocabulary": [
+      {
+        "surface": "dipping sauce",
+        "lemma": "dipping sauce",
+        "glosses": {
+          "es": "dipping sauce",
+          "en": "meaning in context: dipping sauce"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "leftovers",
+        "lemma": "leftovers",
+        "glosses": {
+          "es": "leftovers",
+          "en": "meaning in context: leftovers"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "workstations",
+        "lemma": "workstations",
+        "glosses": {
+          "es": "workstations",
+          "en": "meaning in context: workstations"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A2.",
+      "en": "You can understand and justify information in a A2 text."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 14.3,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A2 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "purpose",
+      "skill": "global",
+      "prompt": "What is the reminder mainly about?",
+      "options": [
+        {
+          "id": "class",
+          "text": "How to prepare for a cooking class"
+        },
+        {
+          "id": "exam",
+          "text": "How to pass a food exam"
+        },
+        {
+          "id": "market",
+          "text": "How to sell vegetables"
+        }
+      ],
+      "answer": "class",
+      "evidence": "The community centre cooking class starts",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “The community centre cooking class starts”",
+          "en": "Correct. The evidence says: “The community centre cooking class starts”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "El texto combina qué llevar, qué informar y cómo reservar el espacio.",
+          "en": "El texto combina qué llevar, qué informar y cómo reservar el espacio."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What should students bring?",
+      "options": [
+        {
+          "id": "ingredients",
+          "text": "Ingredients and bowls"
+        },
+        {
+          "id": "apron",
+          "text": "An apron and a container"
+        },
+        {
+          "id": "knives",
+          "text": "Knives and a clean towel"
+        }
+      ],
+      "answer": "apron",
+      "evidence": "bring a clean apron and a container",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “bring a clean apron and a container”",
+          "en": "Correct. The evidence says: “bring a clean apron and a container”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Distingue lo que proporciona el centro de lo que lleva el estudiante.",
+          "en": "Distingue lo que proporciona el centro de lo que lleva el estudiante."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "reference",
+      "skill": "reference",
+      "prompt": "What does “they” refer to in “students who cannot attend should cancel”?",
+      "options": [
+        {
+          "id": "students",
+          "text": "Students registered for the class"
+        },
+        {
+          "id": "tutors",
+          "text": "The tutors"
+        },
+        {
+          "id": "ingredients",
+          "text": "The ingredients"
+        }
+      ],
+      "answer": "students",
+      "evidence": "students who cannot attend",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “students who cannot attend”",
+          "en": "Correct. The evidence says: “students who cannot attend”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "El sustantivo inmediatamente anterior controla la referencia.",
+          "en": "El sustantivo inmediatamente anterior controla la referencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “What to Bring to the Cooking Class”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Cancel by Monday if necessary."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Arrive and report allergies."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Make dumplings and sauce."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Cancel by Monday if necessary. → Arrive and report allergies. → Make dumplings and sauce.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Cancel by Monday if necessary. → Arrive and report allergies. → Make dumplings and sauce.”",
+          "en": "Correct. The evidence says: “Cancel by Monday if necessary. → Arrive and report allergies. → Make dumplings and sauce.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “What to Bring to the Cooking Class”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Arrive and report allergies."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Make dumplings and sauce."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Stay for the tasting session."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Arrive and report allergies. → Make dumplings and sauce. → Stay for the tasting session.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Arrive and report allergies. → Make dumplings and sauce. → Stay for the tasting session.”",
+          "en": "Correct. The evidence says: “Arrive and report allergies. → Make dumplings and sauce. → Stay for the tasting session.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 35,
+    "maxWords": 90,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A2: Qué llevar a la clase de cocina | WeLearn",
+      "en": "A2 English Reading: What to Bring to the Cooking Class | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con qué llevar a la clase de cocina, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A2 English with what to bring to the cooking class, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/cooking-class-reminder",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-new-neighbour-welcome",
+      "en-a2-school-exchange-diary"
+    ]
+  }
+}

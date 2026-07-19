@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-b1-library-study-zones",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "English B1"
+  },
+  "slug": "library-study-zones",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 23,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-b1-neighbourhood-repair-cafe",
+    "nextExerciseId": "en-b1-remote-work-pilot"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "study habits",
+    "intent": "learning",
+    "tags": [
+      "study habits",
+      "article",
+      "b1",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Por qué la biblioteca creó zonas de estudio silencioso",
+      "en": "Why the Library Created Quiet Study Zones"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés B1 con un texto original sobre study habits.",
+      "en": "Practise B1 English reading with an original text about study habits."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "When the Westbrook Library asked students how they used the building, many said they valued the collection but struggled to concentrate. The main reading room had become a mixed space: some visitors worked silently, while others met for group projects or joined online lessons. Rather than asking one group to leave, the library converted two smaller rooms into quiet study zones. Phones had to be silent, conversations were not permitted, and bookings were limited to two hours so more students could use the space. After six weeks, reservations were usually full, but staff noticed that some students booked a room and did not arrive. The library therefore introduced a short cancellation rule and kept a few desks unbooked for walk-ins. The trial did not solve every problem, yet it showed that a shared building can support different forms of study when its spaces have clear purposes. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "plainTextForAnalysis": "When the Westbrook Library asked students how they used the building, many said they valued the collection but struggled to concentrate. The main reading room had become a mixed space: some visitors worked silently, while others met for group projects or joined online lessons. Rather than asking one group to leave, the library converted two smaller rooms into quiet study zones. Phones had to be silent, conversations were not permitted, and bookings were limited to two hours so more students could use the space. After six weeks, reservations were usually full, but staff noticed that some students booked a room and did not arrive. The library therefore introduced a short cancellation rule and kept a few desks unbooked for walk-ins. The trial did not solve every problem, yet it showed that a shared building can support different forms of study when its spaces have clear purposes. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
+    "wordCount": 236,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "vocabulary": [
+      {
+        "surface": "collection",
+        "lemma": "collection",
+        "glosses": {
+          "es": "collection",
+          "en": "meaning in context: collection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "converted",
+        "lemma": "converted",
+        "glosses": {
+          "es": "converted",
+          "en": "meaning in context: converted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "walk-ins",
+        "lemma": "walk-ins",
+        "glosses": {
+          "es": "walk-ins",
+          "en": "meaning in context: walk-ins"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto B1.",
+      "en": "You can understand and justify information in a B1 text."
+    },
+    "allowedGrammar": [
+      "past and present perfect contrast",
+      "modals for policy",
+      "linking contrast",
+      "reported findings",
+      "cause and effect"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.7,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original B1 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the article mainly arguing?",
+      "options": [
+        {
+          "id": "design",
+          "text": "Clear purposes can help one library support different study needs"
+        },
+        {
+          "id": "silence",
+          "text": "All library visitors should work in silence"
+        },
+        {
+          "id": "booking",
+          "text": "Reservations are more important than collections"
+        }
+      ],
+      "answer": "design",
+      "evidence": "support different forms of study when its spaces have clear purposes",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “support different forms of study when its spaces have clear purposes”",
+          "en": "Correct. The evidence says: “support different forms of study when its spaces have clear purposes”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La conclusión generaliza el resultado del ensayo.",
+          "en": "La conclusión generaliza el resultado del ensayo."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did the library keep some desks unbooked?",
+      "options": [
+        {
+          "id": "access",
+          "text": "To allow students without reservations to study"
+        },
+        {
+          "id": "silence",
+          "text": "To make the rooms quieter"
+        },
+        {
+          "id": "staff",
+          "text": "To give staff somewhere to work"
+        }
+      ],
+      "answer": "access",
+      "evidence": "kept a few desks unbooked for walk-ins",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “kept a few desks unbooked for walk-ins”",
+          "en": "Correct. The evidence says: “kept a few desks unbooked for walk-ins”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "walk-ins son personas que llegan sin reserva.",
+          "en": "walk-ins son personas que llegan sin reserva."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Why the Library Created Quiet Study Zones”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Survey student use."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Convert two rooms."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Measure reservations and attendance."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Survey student use. → Convert two rooms. → Measure reservations and attendance.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Survey student use. → Convert two rooms. → Measure reservations and attendance.”",
+          "en": "Correct. The evidence says: “Survey student use. → Convert two rooms. → Measure reservations and attendance.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Why the Library Created Quiet Study Zones”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Convert two rooms."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Measure reservations and attendance."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Add a cancellation rule and walk-in desks."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Convert two rooms. → Measure reservations and attendance. → Add a cancellation rule and walk-in desks.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Convert two rooms. → Measure reservations and attendance. → Add a cancellation rule and walk-in desks.”",
+          "en": "Correct. The evidence says: “Convert two rooms. → Measure reservations and attendance. → Add a cancellation rule and walk-in desks.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “Why the Library Created Quiet Study Zones”.",
+      "options": [
+        {
+          "id": "step-3-1",
+          "text": "Measure reservations and attendance."
+        },
+        {
+          "id": "step-3-2",
+          "text": "Add a cancellation rule and walk-in desks."
+        },
+        {
+          "id": "step-3-3",
+          "text": "Assess the mixed result."
+        }
+      ],
+      "answer": [
+        "step-3-1",
+        "step-3-2",
+        "step-3-3"
+      ],
+      "evidence": "Measure reservations and attendance. → Add a cancellation rule and walk-in desks. → Assess the mixed result.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Measure reservations and attendance. → Add a cancellation rule and walk-in desks. → Assess the mixed result.”",
+          "en": "Correct. The evidence says: “Measure reservations and attendance. → Add a cancellation rule and walk-in desks. → Assess the mixed result.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 60,
+    "maxWords": 140,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés B1: Por qué la biblioteca creó zonas de estudio silencioso | WeLearn",
+      "en": "B1 English Reading: Why the Library Created Quiet Study Zones | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés B1 con por qué la biblioteca creó zonas de estudio silencioso, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise B1 English with why the library created quiet study zones, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/b1/lectura/library-study-zones",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-b1-neighbourhood-repair-cafe",
+      "en-b1-remote-work-pilot"
+    ]
+  }
+}

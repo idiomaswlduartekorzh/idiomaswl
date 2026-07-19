@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-rainy-day-bus-change",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
+  "slug": "rainy-day-bus-change",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 13,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-community-garden-email",
+    "nextExerciseId": "en-a2-new-neighbour-welcome"
+  },
+  "classification": {
+    "genre": "notice",
+    "topic": "public transport",
+    "intent": "learning",
+    "tags": [
+      "public transport",
+      "notice",
+      "a2",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Cambio de ruta del autobús por lluvia",
+      "en": "A Change to the Rainy-Day Bus Route"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A2 con un texto original sobre public transport.",
+      "en": "Practise A2 English reading with an original text about public transport."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon. From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge. Passengers going to the farm should leave the bus at Oak Street and walk for about twelve minutes. The transport office expects the normal route to return tomorrow morning, if the water level falls. Check the website before travelling because another change is possible. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "plainTextForAnalysis": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon. From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge. Passengers going to the farm should leave the bus at Oak Street and walk for about twelve minutes. The transport office expects the normal route to return tomorrow morning, if the water level falls. Check the website before travelling because another change is possible. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "wordCount": 133,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "vocabulary": [
+      {
+        "surface": "flooded",
+        "lemma": "flooded",
+        "glosses": {
+          "es": "flooded",
+          "en": "meaning in context: flooded"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "route",
+        "lemma": "route",
+        "glosses": {
+          "es": "route",
+          "en": "meaning in context: route"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "water level",
+        "lemma": "water level",
+        "glosses": {
+          "es": "water level",
+          "en": "meaning in context: water level"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A2.",
+      "en": "You can understand and justify information in a A2 text."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 16.6,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A2 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "purpose",
+      "skill": "global",
+      "prompt": "Why was this notice published?",
+      "options": [
+        {
+          "id": "change",
+          "text": "To explain a temporary bus-route change"
+        },
+        {
+          "id": "ticket",
+          "text": "To sell cheaper bus tickets"
+        },
+        {
+          "id": "weather",
+          "text": "To describe a holiday forecast"
+        }
+      ],
+      "answer": "change",
+      "evidence": "bus 18 will use a different route this afternoon",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “bus 18 will use a different route this afternoon”",
+          "en": "Correct. The evidence says: “bus 18 will use a different route this afternoon”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Los avisos de servicio suelen explicar causa, cambio y duración.",
+          "en": "Los avisos de servicio suelen explicar causa, cambio y duración."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why should farm passengers leave at Oak Street?",
+      "options": [
+        {
+          "id": "walk",
+          "text": "They must walk from there to the farm"
+        },
+        {
+          "id": "close",
+          "text": "The farm is closed"
+        },
+        {
+          "id": "ticket",
+          "text": "They need a new ticket"
+        }
+      ],
+      "answer": "walk",
+      "evidence": "leave the bus at Oak Street and walk",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “leave the bus at Oak Street and walk”",
+          "en": "Correct. The evidence says: “leave the bus at Oak Street and walk”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La instrucción de caminar permite inferir la conexión restante.",
+          "en": "La instrucción de caminar permite inferir la conexión restante."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does flooded mean here?",
+      "options": [
+        {
+          "id": "covered",
+          "text": "Covered by too much water"
+        },
+        {
+          "id": "closed",
+          "text": "Closed for a holiday"
+        },
+        {
+          "id": "crowded",
+          "text": "Full of passengers"
+        }
+      ],
+      "answer": "covered",
+      "evidence": "heavy rain has flooded the road",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “heavy rain has flooded the road”",
+          "en": "Correct. The evidence says: “heavy rain has flooded the road”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La lluvia y el nivel del agua explican el término.",
+          "en": "La lluvia y el nivel del agua explican el término."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Change to the Rainy-Day Bus Route”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Heavy rain floods the road."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Bus 18 changes its route."
+        },
+        {
+          "id": "step-1-3",
+          "text": "The normal route may return tomorrow."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Heavy rain floods the road. → Bus 18 changes its route. → The normal route may return tomorrow.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Heavy rain floods the road. → Bus 18 changes its route. → The normal route may return tomorrow.”",
+          "en": "Correct. The evidence says: “Heavy rain floods the road. → Bus 18 changes its route. → The normal route may return tomorrow.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Change to the Rainy-Day Bus Route”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Bus 18 changes its route."
+        },
+        {
+          "id": "step-2-2",
+          "text": "The normal route may return tomorrow."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Passengers check before travelling."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Bus 18 changes its route. → The normal route may return tomorrow. → Passengers check before travelling.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Bus 18 changes its route. → The normal route may return tomorrow. → Passengers check before travelling.”",
+          "en": "Correct. The evidence says: “Bus 18 changes its route. → The normal route may return tomorrow. → Passengers check before travelling.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 35,
+    "maxWords": 90,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A2: Cambio de ruta del autobús por lluvia | WeLearn",
+      "en": "A2 English Reading: A Change to the Rainy-Day Bus Route | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con cambio de ruta del autobús por lluvia, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A2 English with a change to the rainy-day bus route, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/rainy-day-bus-change",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-community-garden-email",
+      "en-a2-new-neighbour-welcome"
+    ]
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "en-a2-weekend-volunteer-shift",
+  "status": "review",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "A2",
+    "displayLabel": "English A2"
+  },
+  "slug": "weekend-volunteer-shift",
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 18,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-recycling-collection-plan",
+    "nextExerciseId": "en-a2-museum-audio-guide"
+  },
+  "classification": {
+    "genre": "diary",
+    "topic": "volunteering",
+    "intent": "learning",
+    "tags": [
+      "volunteering",
+      "diary",
+      "a2",
+      "reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Un turno de voluntariado en el banco de alimentos",
+      "en": "A Volunteer Shift at the Food Bank"
+    },
+    "intro": {
+      "es": "Practica lectura de inglés A2 con un texto original sobre volunteering.",
+      "en": "Practise A2 English reading with an original text about volunteering."
+    },
+    "mission": {
+      "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
+      "en": "Identify the main idea, check evidence, and reconstruct the sequence."
+    },
+    "targetText": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works. At nine, the coordinator showed us the storage room and explained the labels. My first job was checking dates on tins. Later, I helped pack boxes for families with different needs. One box needed baby food, while another needed ingredients for a vegetarian meal. I had expected the work to be quiet, but the room became busy when a delivery arrived. Before leaving, I wrote down three ways to volunteer again. The shift was tiring, yet it made the community’s organisation visible to me. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "plainTextForAnalysis": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works. At nine, the coordinator showed us the storage room and explained the labels. My first job was checking dates on tins. Later, I helped pack boxes for families with different needs. One box needed baby food, while another needed ingredients for a vegetarian meal. I had expected the work to be quiet, but the room became busy when a delivery arrived. Before leaving, I wrote down three ways to volunteer again. The shift was tiring, yet it made the community’s organisation visible to me. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
+    "wordCount": 148,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Localizar información explícita y relaciones entre ideas.",
+        "en": "Locate explicit information and relationships between ideas."
+      },
+      {
+        "es": "Explicar una respuesta con evidencia textual.",
+        "en": "Explain an answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "vocabulary": [
+      {
+        "surface": "coordinator",
+        "lemma": "coordinator",
+        "glosses": {
+          "es": "coordinator",
+          "en": "meaning in context: coordinator"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "storage room",
+        "lemma": "storage room",
+        "glosses": {
+          "es": "storage room",
+          "en": "meaning in context: storage room"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "delivery",
+        "lemma": "delivery",
+        "glosses": {
+          "es": "delivery",
+          "en": "meaning in context: delivery"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
+    ],
+    "culturalNote": {
+      "es": "El contexto es original y sirve como escenario de comprensión; las prácticas reales pueden variar.",
+      "en": "The context is original and serves as a reading scenario; real practices may vary."
+    },
+    "spanishSpeakerNote": {
+      "es": "Busca conectores y palabras repetidas antes de traducir cada oración.",
+      "en": "Look for connectors and repeated words before translating every sentence."
+    },
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "Puedes comprender y justificar información en un texto A2.",
+      "en": "You can understand and justify information in a A2 text."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "present perfect basics",
+      "because and although",
+      "future plans",
+      "sequencing markers"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 5,
+    "inferenceBand": "light",
+    "metrics": {
+      "averageSentenceWords": 13.5,
+      "maxSentenceWords": 20,
+      "outOfLevelVocabularyPercent": 2,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "A2",
+      "passed": true,
+      "assessor": "Editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-19T00:00:00-05:00",
+      "notes": "Original A2 text with calibrated question progression."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What did the volunteer learn?",
+      "options": [
+        {
+          "id": "organisation",
+          "text": "How the food bank organises practical support"
+        },
+        {
+          "id": "cooking",
+          "text": "How to cook a vegetarian meal"
+        },
+        {
+          "id": "driving",
+          "text": "How to drive a delivery van"
+        }
+      ],
+      "answer": "organisation",
+      "evidence": "it made the community’s organisation visible",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “it made the community’s organisation visible”",
+          "en": "Correct. The evidence says: “it made the community’s organisation visible”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "La última frase interpreta toda la experiencia.",
+          "en": "La última frase interpreta toda la experiencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What was the first job?",
+      "options": [
+        {
+          "id": "pack",
+          "text": "Packing family boxes"
+        },
+        {
+          "id": "dates",
+          "text": "Checking dates on tins"
+        },
+        {
+          "id": "labels",
+          "text": "Writing new labels"
+        }
+      ],
+      "answer": "dates",
+      "evidence": "My first job was checking dates on tins",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “My first job was checking dates on tins”",
+          "en": "Correct. The evidence says: “My first job was checking dates on tins”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue el marcador first job.",
+          "en": "Sigue el marcador first job."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why were the boxes different?",
+      "options": [
+        {
+          "id": "needs",
+          "text": "Families had different needs"
+        },
+        {
+          "id": "size",
+          "text": "The boxes were different colours"
+        },
+        {
+          "id": "delivery",
+          "text": "The delivery arrived late"
+        }
+      ],
+      "answer": "needs",
+      "evidence": "families with different needs",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “families with different needs”",
+          "en": "Correct. The evidence says: “families with different needs”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Los ejemplos de baby food y vegetarian meal apoyan la inferencia.",
+          "en": "Los ejemplos de baby food y vegetarian meal apoyan la inferencia."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Volunteer Shift at the Food Bank”.",
+      "options": [
+        {
+          "id": "step-1-1",
+          "text": "Sign up for a shift."
+        },
+        {
+          "id": "step-1-2",
+          "text": "Check dates on tins."
+        },
+        {
+          "id": "step-1-3",
+          "text": "Pack boxes for different families."
+        }
+      ],
+      "answer": [
+        "step-1-1",
+        "step-1-2",
+        "step-1-3"
+      ],
+      "evidence": "Sign up for a shift. → Check dates on tins. → Pack boxes for different families.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Sign up for a shift. → Check dates on tins. → Pack boxes for different families.”",
+          "en": "Correct. The evidence says: “Sign up for a shift. → Check dates on tins. → Pack boxes for different families.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    },
+    {
+      "id": "q-5",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages in the order used in “A Volunteer Shift at the Food Bank”.",
+      "options": [
+        {
+          "id": "step-2-1",
+          "text": "Check dates on tins."
+        },
+        {
+          "id": "step-2-2",
+          "text": "Pack boxes for different families."
+        },
+        {
+          "id": "step-2-3",
+          "text": "Write ways to volunteer again."
+        }
+      ],
+      "answer": [
+        "step-2-1",
+        "step-2-2",
+        "step-2-3"
+      ],
+      "evidence": "Check dates on tins. → Pack boxes for different families. → Write ways to volunteer again.",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “Check dates on tins. → Pack boxes for different families. → Write ways to volunteer again.”",
+          "en": "Correct. The evidence says: “Check dates on tins. → Pack boxes for different families. → Write ways to volunteer again.”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "maxAttempts": 3
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escribe 3–5 frases que respondan a la situación del texto y usa una evidencia.",
+      "en": "Write 3–5 sentences responding to the text situation and use one piece of evidence."
+    },
+    "minWords": 35,
+    "maxWords": 90,
+    "hints": [
+      "First...",
+      "The text shows...",
+      "Because..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-19T00:00:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura de inglés A2: Un turno de voluntariado en el banco de alimentos | WeLearn",
+      "en": "A2 English Reading: A Volunteer Shift at the Food Bank | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés A2 con un turno de voluntariado en el banco de alimentos, preguntas de comprensión, vocabulario y feedback.",
+      "en": "Practise A2 English with a volunteer shift at the food bank, comprehension questions, vocabulary, and feedback."
+    },
+    "canonicalPath": "/es/practica/ingles/a2/lectura/weekend-volunteer-shift",
+    "indexable": false,
+    "lastModified": "2026-07-19T00:00:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-recycling-collection-plan",
+      "en-a2-museum-audio-guide"
+    ]
+  }
+}

@@ -4,78 +4,397 @@
   "status": "draft",
   "language": "en",
   "variant": "en-global",
-  "tutorLocales": ["es", "en"],
-  "level": { "cefr": "B1", "displayLabel": "English B1" },
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B1",
+    "displayLabel": "English B1"
+  },
   "slug": "four-day-work-week",
-  "series": { "id": "english-reading-batch-01", "episode": 5, "totalEpisodes": 6, "previousExerciseId": "en-a2-community-garden-email", "nextExerciseId": "en-b1-neighbourhood-repair-cafe" },
-  "classification": { "genre": "article", "topic": "Four-day working week trial", "intent": "work", "tags": ["work", "productivity", "experiment", "wellbeing"] },
+  "series": {
+    "id": "english-reading-complete-30",
+    "episode": 21,
+    "totalEpisodes": 30,
+    "previousExerciseId": "en-a2-first-job-interview",
+    "nextExerciseId": "en-b1-neighbourhood-repair-cafe"
+  },
+  "classification": {
+    "genre": "article",
+    "topic": "Four-day working week trial",
+    "intent": "work",
+    "tags": [
+      "work",
+      "productivity",
+      "experiment",
+      "wellbeing"
+    ]
+  },
   "content": {
-    "title": { "es": "Why an Office Tried a Four-Day Week", "en": "Why an Office Tried a Four-Day Week" },
-    "intro": { "es": "Practica inglés B1 con un artículo equilibrado sobre productividad, bienestar y límites de una semana laboral de cuatro días.", "en": "Practise B1 English with a balanced article about productivity, wellbeing, and the limits of a four-day week." },
-    "mission": { "es": "Distingue qué cambió realmente, qué problema apareció y por qué el artículo evita una conclusión universal.", "en": "Distinguish what actually changed, which problem appeared, and why the article avoids a universal conclusion." },
+    "title": {
+      "es": "Why an Office Tried a Four-Day Week",
+      "en": "Why an Office Tried a Four-Day Week"
+    },
+    "intro": {
+      "es": "Practica inglés B1 con un artículo equilibrado sobre productividad, bienestar y límites de una semana laboral de cuatro días.",
+      "en": "Practise B1 English with a balanced article about productivity, wellbeing, and the limits of a four-day week."
+    },
+    "mission": {
+      "es": "Distingue qué cambió realmente, qué problema apareció y por qué el artículo evita una conclusión universal.",
+      "en": "Distinguish what actually changed, which problem appeared, and why the article avoids a universal conclusion."
+    },
     "targetText": "For three months, a small design company in Bristol tested a four-day working week. Employees worked from Monday to Thursday but received the same monthly salary. The experiment did not mean fitting forty hours into four very long days. Instead, teams shortened meetings, protected periods of quiet work, and stopped sending routine internal emails. The office was also closed on Fridays. At the beginning, several clients worried that urgent requests would wait until Monday. The company responded by creating a shared emergency phone that one manager carried each Friday. In practice, the phone rang only twice during the entire trial. Productivity, measured by completed client projects, rose slightly. Sick days fell, and most employees said they had more energy on Monday mornings. Managers also asked employees to record overtime, so hidden extra work would not make the results look better. However, the change created pressure in the finance team, whose monthly deadlines could not always move. During the final month, the company allowed that team to rotate its day off instead of closing completely. The trial did not prove that every organisation should adopt the same schedule. A hospital, a school, and a design office have very different responsibilities. Still, the experiment showed that reducing working time depends on redesigning work, not simply removing a day. The company decided to continue the policy for another six months while tracking client satisfaction and staff workload.",
     "plainTextForAnalysis": "For three months, a small design company in Bristol tested a four-day working week. Employees worked from Monday to Thursday but received the same monthly salary. The experiment did not mean fitting forty hours into four very long days. Instead, teams shortened meetings, protected periods of quiet work, and stopped sending routine internal emails. The office was also closed on Fridays. At the beginning, several clients worried that urgent requests would wait until Monday. The company responded by creating a shared emergency phone that one manager carried each Friday. In practice, the phone rang only twice during the entire trial. Productivity, measured by completed client projects, rose slightly. Sick days fell, and most employees said they had more energy on Monday mornings. Managers also asked employees to record overtime, so hidden extra work would not make the results look better. However, the change created pressure in the finance team, whose monthly deadlines could not always move. During the final month, the company allowed that team to rotate its day off instead of closing completely. The trial did not prove that every organisation should adopt the same schedule. A hospital, a school, and a design office have very different responsibilities. Still, the experiment showed that reducing working time depends on redesigning work, not simply removing a day. The company decided to continue the policy for another six months while tracking client satisfaction and staff workload.",
     "wordCount": 233,
     "estimatedMinutes": 15,
     "objectives": [
-      { "es": "Identificar resultados, limitaciones y medidas de control en un artículo.", "en": "Identify results, limitations, and controls in an article." },
-      { "es": "Distinguir una conclusión matizada de una afirmación universal.", "en": "Distinguish a nuanced conclusion from a universal claim." }
+      {
+        "es": "Identificar resultados, limitaciones y medidas de control en un artículo.",
+        "en": "Identify results, limitations, and controls in an article."
+      },
+      {
+        "es": "Distinguir una conclusión matizada de una afirmación universal.",
+        "en": "Distinguish a nuanced conclusion from a universal claim."
+      }
     ],
-    "grammarFocus": ["past simple", "relative clauses", "contrast markers", "gerunds after prepositions"],
+    "grammarFocus": [
+      "past simple",
+      "relative clauses",
+      "contrast markers",
+      "gerunds after prepositions"
+    ],
     "vocabulary": [
-      { "surface": "routine internal emails", "lemma": "routine", "glosses": { "es": "correos internos rutinarios", "en": "regular messages sent inside the company" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "urgent requests", "lemma": "urgent", "glosses": { "es": "solicitudes urgentes", "en": "requests needing immediate attention" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "overtime", "lemma": "overtime", "glosses": { "es": "horas extra", "en": "time worked beyond normal hours" }, "audioRequired": false, "levelStatus": "within-level" },
-      { "surface": "staff workload", "lemma": "workload", "glosses": { "es": "carga laboral del personal", "en": "the amount of work employees must do" }, "audioRequired": false, "levelStatus": "out-of-level-glossed" }
+      {
+        "surface": "routine internal emails",
+        "lemma": "routine",
+        "glosses": {
+          "es": "correos internos rutinarios",
+          "en": "regular messages sent inside the company"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "urgent requests",
+        "lemma": "urgent",
+        "glosses": {
+          "es": "solicitudes urgentes",
+          "en": "requests needing immediate attention"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "overtime",
+        "lemma": "overtime",
+        "glosses": {
+          "es": "horas extra",
+          "en": "time worked beyond normal hours"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "staff workload",
+        "lemma": "workload",
+        "glosses": {
+          "es": "carga laboral del personal",
+          "en": "the amount of work employees must do"
+        },
+        "audioRequired": false,
+        "levelStatus": "out-of-level-glossed"
+      }
     ],
-    "culturalNote": { "es": "El caso es ficticio y evita presentar un modelo laboral como solución universal; las leyes y sectores cambian según el país.", "en": "The case is fictional and does not present one work model as universal; laws and sectors differ by country." },
-    "spanishSpeakerNote": { "es": "Actually no aparece aquí: in practice significa en la práctica, mientras que actually suele significar en realidad.", "en": "Spanish speakers: in practice means en la práctica, while actually usually means en realidad." },
+    "culturalNote": {
+      "es": "El caso es ficticio y evita presentar un modelo laboral como solución universal; las leyes y sectores cambian según el país.",
+      "en": "The case is fictional and does not present one work model as universal; laws and sectors differ by country."
+    },
+    "spanishSpeakerNote": {
+      "es": "Actually no aparece aquí: in practice significa en la práctica, mientras que actually suele significar en realidad.",
+      "en": "Spanish speakers: in practice means en la práctica, while actually usually means en realidad."
+    },
     "sources": []
   },
   "audio": null,
-  "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
   "leveling": {
-    "targetCanDo": { "es": "Puedes comprender los argumentos principales, resultados y reservas de un artículo laboral claro.", "en": "You can understand the main arguments, results, and reservations in a clear workplace article." },
-    "allowedGrammar": ["past simple", "common relative clauses", "contrast and cause markers", "gerund phrases"],
-    "disallowedGrammar": ["dense academic nominalisation", "inverted conditionals", "specialist statistical language"],
+    "targetCanDo": {
+      "es": "Puedes comprender los argumentos principales, resultados y reservas de un artículo laboral claro.",
+      "en": "You can understand the main arguments, results, and reservations in a clear workplace article."
+    },
+    "allowedGrammar": [
+      "past simple",
+      "common relative clauses",
+      "contrast and cause markers",
+      "gerund phrases"
+    ],
+    "disallowedGrammar": [
+      "dense academic nominalisation",
+      "inverted conditionals",
+      "specialist statistical language"
+    ],
     "maxOutOfLevelVocabularyPercent": 10,
     "inferenceBand": "moderate",
-    "metrics": { "averageSentenceWords": 13.7, "maxSentenceWords": 18, "outOfLevelVocabularyPercent": 2.6, "glossedOutOfLevelItems": 1 },
-    "independentAssessment": { "estimatedLevel": "B1", "passed": true, "assessor": "Independent editorial preflight — human confirmation pending", "assessedAt": "2026-07-18T21:30:00-05:00", "notes": "Clear expository structure with contrast, evidence, limitation, and moderate inference." }
+    "metrics": {
+      "averageSentenceWords": 13.7,
+      "maxSentenceWords": 18,
+      "outOfLevelVocabularyPercent": 2.6,
+      "glossedOutOfLevelItems": 1
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B1",
+      "passed": true,
+      "assessor": "Independent editorial preflight — human confirmation pending",
+      "assessedAt": "2026-07-18T21:30:00-05:00",
+      "notes": "Clear expository structure with contrast, evidence, limitation, and moderate inference."
+    }
   },
   "questions": [
     {
-      "id": "q-main", "type": "main-idea", "skill": "global", "prompt": "What is the article’s main conclusion?",
-      "options": [{ "id": "all", "text": "Every organisation should close on Fridays." }, { "id": "redesign", "text": "Shorter weeks require changes to how work is organised." }, { "id": "salary", "text": "Employees should accept a lower salary for fewer days." }], "answer": "redesign",
-      "feedback": { "correct": { "es": "Correcto. El artículo concluye que reducir tiempo exige rediseñar el trabajo.", "en": "Correct. The article concludes that reducing time requires redesigning work." }, "incorrect": { "es": "Revisa la idea que sigue a Still cerca del final.", "en": "Review the idea after Still near the end." }, "strategy": { "es": "En artículos matizados, la conclusión suele equilibrar resultados y límites.", "en": "In nuanced articles, the conclusion often balances results and limitations." } },
-      "evidence": "Reducing working time depends on redesigning work, not simply removing a day.", "maxAttempts": 2
+      "id": "q-main",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the article’s main conclusion?",
+      "options": [
+        {
+          "id": "all",
+          "text": "Every organisation should close on Fridays."
+        },
+        {
+          "id": "redesign",
+          "text": "Shorter weeks require changes to how work is organised."
+        },
+        {
+          "id": "salary",
+          "text": "Employees should accept a lower salary for fewer days."
+        }
+      ],
+      "answer": "redesign",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. El artículo concluye que reducir tiempo exige rediseñar el trabajo.",
+          "en": "Correct. The article concludes that reducing time requires redesigning work."
+        },
+        "incorrect": {
+          "es": "Revisa la idea que sigue a Still cerca del final.",
+          "en": "Review the idea after Still near the end."
+        },
+        "strategy": {
+          "es": "En artículos matizados, la conclusión suele equilibrar resultados y límites.",
+          "en": "In nuanced articles, the conclusion often balances results and limitations."
+        }
+      },
+      "evidence": "Reducing working time depends on redesigning work, not simply removing a day.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-hours", "type": "true-false", "skill": "detail", "prompt": "Employees completed forty hours in four longer days.",
-      "options": [{ "id": "true", "text": "True" }, { "id": "false", "text": "False" }], "answer": false,
-      "feedback": { "correct": { "es": "Correcto. El texto niega explícitamente esa interpretación.", "en": "Correct. The text explicitly rejects that interpretation." }, "incorrect": { "es": "Busca la oración con did not mean.", "en": "Find the sentence with did not mean." }, "strategy": { "es": "Una negación explícita invalida una paráfrasis aparentemente plausible.", "en": "An explicit negative can invalidate an otherwise plausible paraphrase." } },
-      "evidence": "The experiment did not mean fitting forty hours into four very long days.", "maxAttempts": 2
+      "id": "q-hours",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put the first changes in the trial in order.",
+      "options": [
+        {
+          "id": "shorten",
+          "text": "Teams shorten meetings."
+        },
+        {
+          "id": "quiet",
+          "text": "Teams protect quiet work."
+        },
+        {
+          "id": "emails",
+          "text": "Teams stop routine emails."
+        }
+      ],
+      "answer": [
+        "shorten",
+        "quiet",
+        "emails"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “shorten meetings → protect quiet work → stop routine emails”",
+          "en": "Correct. The evidence says: “shorten meetings → protect quiet work → stop routine emails”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "evidence": "shorten meetings → protect quiet work → stop routine emails",
+      "maxAttempts": 3
     },
     {
-      "id": "q-phone", "type": "purpose", "skill": "purpose", "prompt": "Why did the company create an emergency phone?",
-      "options": [{ "id": "track", "text": "To track employee locations" }, { "id": "clients", "text": "To handle urgent client requests on Fridays" }, { "id": "survey", "text": "To measure staff satisfaction" }], "answer": "clients",
-      "feedback": { "correct": { "es": "Correcto. Respondía al temor de los clientes sobre solicitudes urgentes.", "en": "Correct. It addressed client concerns about urgent requests." }, "incorrect": { "es": "Relaciona la preocupación de los clientes con la respuesta de la empresa.", "en": "Connect the clients’ concern with the company’s response." }, "strategy": { "es": "La estructura problem–response revela el propósito de una medida.", "en": "A problem–response structure reveals the purpose of a measure." } },
-      "evidence": "Clients worried ... The company responded by creating a shared emergency phone.", "maxAttempts": 2
+      "id": "q-phone",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put the company response in order.",
+      "options": [
+        {
+          "id": "concern",
+          "text": "Clients express concern."
+        },
+        {
+          "id": "phone",
+          "text": "The company creates an emergency phone."
+        },
+        {
+          "id": "rotate",
+          "text": "The finance team rotates its day off."
+        }
+      ],
+      "answer": [
+        "concern",
+        "phone",
+        "rotate"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La evidencia dice: “clients express concern → emergency phone → finance team rotates”",
+          "en": "Correct. The evidence says: “clients express concern → emergency phone → finance team rotates”"
+        },
+        "incorrect": {
+          "es": "Vuelve al fragmento indicado y separa la idea principal de los detalles.",
+          "en": "Return to the relevant part and separate the main idea from the details."
+        },
+        "strategy": {
+          "es": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder.",
+          "en": "Sigue los marcadores temporales y reconstruye la secuencia antes de responder."
+        }
+      },
+      "evidence": "clients express concern → emergency phone → finance team rotates",
+      "maxAttempts": 3
     },
     {
-      "id": "q-overtime", "type": "inference", "skill": "inference", "prompt": "Why did managers record overtime?",
-      "options": [{ "id": "pay", "text": "To reduce everyone’s salary" }, { "id": "valid", "text": "To check that the trial was not hiding extra work" }, { "id": "finance", "text": "To move the finance deadlines" }], "answer": "valid",
-      "feedback": { "correct": { "es": "Correcto. Querían evitar que horas ocultas mejoraran artificialmente los resultados.", "en": "Correct. They wanted to prevent hidden hours from making results look artificially better." }, "incorrect": { "es": "Lee la consecuencia introducida por so.", "en": "Read the consequence introduced by so." }, "strategy": { "es": "So suele conectar una acción con el resultado que busca prevenir o producir.", "en": "So often connects an action with the result it aims to prevent or produce." } },
-      "evidence": "So hidden extra work would not make the results look better.", "maxAttempts": 2
+      "id": "q-overtime",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did managers record overtime?",
+      "options": [
+        {
+          "id": "pay",
+          "text": "To reduce everyone’s salary"
+        },
+        {
+          "id": "valid",
+          "text": "To check that the trial was not hiding extra work"
+        },
+        {
+          "id": "finance",
+          "text": "To move the finance deadlines"
+        }
+      ],
+      "answer": "valid",
+      "feedback": {
+        "correct": {
+          "es": "Correcto. Querían evitar que horas ocultas mejoraran artificialmente los resultados.",
+          "en": "Correct. They wanted to prevent hidden hours from making results look artificially better."
+        },
+        "incorrect": {
+          "es": "Lee la consecuencia introducida por so.",
+          "en": "Read the consequence introduced by so."
+        },
+        "strategy": {
+          "es": "So suele conectar una acción con el resultado que busca prevenir o producir.",
+          "en": "So often connects an action with the result it aims to prevent or produce."
+        }
+      },
+      "evidence": "So hidden extra work would not make the results look better.",
+      "maxAttempts": 2
     },
     {
-      "id": "q-process", "type": "ordering", "skill": "organization", "prompt": "Put these stages of the trial in order.",
-      "options": [{ "id": "clients", "text": "Clients express concern." }, { "id": "phone", "text": "The company creates an emergency phone." }, { "id": "rotate", "text": "The finance team rotates its day off." }], "answer": ["clients", "phone", "rotate"],
-      "feedback": { "correct": { "es": "Correcto. La preocupación lleva a una respuesta y después a un ajuste de equipo.", "en": "Correct. The concern leads to a response and later a team adjustment." }, "incorrect": { "es": "Usa At the beginning y During the final month.", "en": "Use At the beginning and During the final month." }, "strategy": { "es": "Los marcadores de fase ayudan a reconstruir un experimento.", "en": "Stage markers help reconstruct an experiment." } },
-      "evidence": "At the beginning → company responded → during the final month.", "maxAttempts": 3
+      "id": "q-process",
+      "type": "ordering",
+      "skill": "organization",
+      "prompt": "Put these stages of the trial in order.",
+      "options": [
+        {
+          "id": "clients",
+          "text": "Clients express concern."
+        },
+        {
+          "id": "phone",
+          "text": "The company creates an emergency phone."
+        },
+        {
+          "id": "rotate",
+          "text": "The finance team rotates its day off."
+        }
+      ],
+      "answer": [
+        "clients",
+        "phone",
+        "rotate"
+      ],
+      "feedback": {
+        "correct": {
+          "es": "Correcto. La preocupación lleva a una respuesta y después a un ajuste de equipo.",
+          "en": "Correct. The concern leads to a response and later a team adjustment."
+        },
+        "incorrect": {
+          "es": "Usa At the beginning y During the final month.",
+          "en": "Use At the beginning and During the final month."
+        },
+        "strategy": {
+          "es": "Los marcadores de fase ayudan a reconstruir un experimento.",
+          "en": "Stage markers help reconstruct an experiment."
+        }
+      },
+      "evidence": "At the beginning → company responded → during the final month.",
+      "maxAttempts": 3
     }
   ],
-  "production": { "prompt": { "es": "Escribe 4–5 frases en inglés: ¿qué condición necesitaría una semana laboral más corta para funcionar en tu contexto?", "en": "Write 4–5 English sentences: what condition would a shorter working week need to work in your context?" }, "minWords": 45, "maxWords": 120, "hints": ["In my context...", "It could work if...", "However..."], "scored": false },
-  "review": { "author": "WeLearn editorial draft", "languageReviewer": "Pending human English review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T21:30:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Original fictional AI-assisted draft; human review blocks publication.", "languageDecision": "pending", "pedagogyDecision": "pending" },
-  "seo": { "title": { "es": "Lectura en inglés B1: semana laboral de cuatro días | WeLearn", "en": "B1 English Reading: Four-Day Work Week | WeLearn" }, "description": { "es": "Practica inglés B1 con un artículo sobre una semana laboral de cuatro días, resultados, límites e inferencias.", "en": "Practise B1 English with an article about a four-day week, results, limitations, and inference." }, "canonicalPath": "/es/practica/ingles/b1/lectura/four-day-work-week", "indexable": false, "lastModified": "2026-07-18T21:30:00-05:00", "relatedExerciseIds": ["en-a2-community-garden-email", "en-b1-neighbourhood-repair-cafe"] }
+  "production": {
+    "prompt": {
+      "es": "Escribe 4–5 frases en inglés: ¿qué condición necesitaría una semana laboral más corta para funcionar en tu contexto?",
+      "en": "Write 4–5 English sentences: what condition would a shorter working week need to work in your context?"
+    },
+    "minWords": 45,
+    "maxWords": 120,
+    "hints": [
+      "In my context...",
+      "It could work if...",
+      "However..."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft",
+    "languageReviewer": "Pending human English review",
+    "pedagogyReviewer": "Pending human pedagogy review",
+    "reviewedAt": "2026-07-18T21:30:00-05:00",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original fictional AI-assisted draft; human review blocks publication.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Lectura en inglés B1: semana laboral de cuatro días | WeLearn",
+      "en": "B1 English Reading: Four-Day Work Week | WeLearn"
+    },
+    "description": {
+      "es": "Practica inglés B1 con un artículo sobre una semana laboral de cuatro días, resultados, límites e inferencias.",
+      "en": "Practise B1 English with an article about a four-day week, results, limitations, and inference."
+    },
+    "canonicalPath": "/es/practica/ingles/b1/lectura/four-day-work-week",
+    "indexable": false,
+    "lastModified": "2026-07-18T21:30:00-05:00",
+    "relatedExerciseIds": [
+      "en-a2-first-job-interview",
+      "en-b1-neighbourhood-repair-cafe"
+    ]
+  }
 }
