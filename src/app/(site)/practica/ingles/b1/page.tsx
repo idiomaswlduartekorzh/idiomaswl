@@ -39,8 +39,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: '3 diálogos B1 con scripts. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/ingles/b1/escucha', available: true,
+    desc: 'The Corner Project: 20 episodios B1 con una historia continua (drama) y audio narrado.',
+    count: '20 episodios · con audio', href: '/practica/ingles/b1/escucha', available: true,
   },
   {
     id: 'conjunciones', emoji: '🎯', name: 'Quest: Conjunciones', eng: 'Conjunctions Quest',
