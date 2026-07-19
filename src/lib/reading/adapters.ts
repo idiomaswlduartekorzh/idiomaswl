@@ -25,7 +25,7 @@ const CAPABILITIES: Record<ReadingLanguage, ScriptCapabilities> = {
   ko: { supportsFurigana: false, supportsStressMarks: false, supportsRomanization: true, tokenizationMode: 'morphological', writingDirection: 'ltr' },
 }
 
-function normalizeLookup(value: string) {
+export function normalizeReadingLookup(value: string) {
   return value
     .normalize('NFKC')
     .replace(/^[\s“”‘’"'.,!?;:()[\]{}]+|[\s“”‘’"'.,!?;:()[\]{}]+$/gu, '')
@@ -43,14 +43,33 @@ export function getScriptCapabilities(exercise: ReadingExercise): ScriptCapabili
   }
 }
 
-export function tokenizeReadingText(text: string, language: ReadingLanguage): ReadingToken[] {
-  const parts = language === 'ja'
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function baseTokenize(text: string, language: ReadingLanguage) {
+  return language === 'ja'
     ? text.split(/([\s、。！？「」]+)/u)
-    : text.split(/(\s+|[.,!?;:]+)/u)
+    : text.split(/(\s+|[.,!?。！？;:]+)/u)
+}
+
+/**
+ * Keeps declared glossary phrases intact before applying script-level splitting.
+ * This is important for Korean counters and verb phrases such as "한 잔" and
+ * "가지고 갈게요", which cannot be discovered by whitespace splitting alone.
+ */
+export function tokenizeReadingText(text: string, language: ReadingLanguage, glossarySurfaces: string[] = []): ReadingToken[] {
+  const surfaces = [...new Set(glossarySurfaces.map((surface) => surface.trim()).filter(Boolean))]
+    .sort((a, b) => b.length - a.length)
+  const phrasePattern = surfaces.length
+    ? new RegExp(`(${surfaces.map(escapeRegExp).join('|')})`, 'giu')
+    : null
+  const chunks = phrasePattern ? text.split(phrasePattern) : [text]
+  const declaredLookups = new Set(surfaces.map(normalizeReadingLookup))
+  const parts = chunks.flatMap((chunk) => declaredLookups.has(normalizeReadingLookup(chunk)) ? [chunk] : baseTokenize(chunk, language))
 
   return parts.filter(Boolean).map((raw) => {
-    const lookup = normalizeLookup(raw)
+    const lookup = normalizeReadingLookup(raw)
     return { raw, lookup, isWord: lookup.length > 0 }
   })
 }
-

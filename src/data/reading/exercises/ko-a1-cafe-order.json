@@ -9,7 +9,7 @@
     "cefr": "A1",
     "displayLabel": "Coreano inicial",
     "topik": 1,
-    "mappingDisclaimer": "TOPIK y CEFR son escalas distintas; esta etiqueta es una orientación editorial, no una equivalencia oficial."
+    "mappingDisclaimer": { "es": "TOPIK y CEFR son escalas distintas; esta etiqueta es una orientación editorial, no una equivalencia oficial.", "en": "TOPIK and CEFR are different scales; this label is editorial guidance, not an official equivalence." }
   },
   "slug": "cafe-order",
   "series": null,
@@ -22,7 +22,10 @@
     "plainTextForAnalysis": "직원 어서 오세요 무엇을 드릴까요 민지 따뜻한 아메리카노 한 잔 주세요 직원 여기에서 드세요 민지 아니요 가지고 갈게요 직원 네 사천 원입니다 민지 여기 있어요 감사합니다",
     "wordCount": 40,
     "estimatedMinutes": 4,
-    "objectives": ["Reconocer una bebida y una cantidad en un diálogo breve.", "Distinguir consumo en el lugar y para llevar."],
+    "objectives": [
+      { "es": "Reconocer una bebida y una cantidad en un diálogo breve.", "en": "Recognise a drink and a quantity in a short dialogue." },
+      { "es": "Distinguir consumo en el lugar y para llevar.", "en": "Distinguish between drinking in and taking away." }
+    ],
     "grammarFocus": ["주세요", "한 잔", "-에서"],
     "vocabulary": [
       { "surface": "따뜻한", "lemma": "따뜻하다", "reading": "ttatteuthan", "glosses": { "es": "caliente", "en": "hot or warm" }, "audioRequired": false, "levelStatus": "within-level" },
@@ -33,9 +36,9 @@
     "sources": []
   },
   "audio": null,
-  "scriptSupport": { "furigana": false, "romanization": "optional", "stressMarks": false, "tokenizationMode": "morphological" },
+  "scriptSupport": { "furigana": false, "romanization": "optional", "stressMarks": false, "tokenizationMode": "custom" },
   "leveling": {
-    "targetCanDo": "Puede reconocer una bebida, una cantidad y una decisión sencilla en un diálogo de servicio.",
+    "targetCanDo": { "es": "Puedes reconocer una bebida, una cantidad y una decisión sencilla en un diálogo de servicio.", "en": "You can recognise a drink, a quantity, and a simple decision in a service dialogue." },
     "allowedGrammar": ["주세요", "한 잔", "-에서", "polite present endings"],
     "disallowedGrammar": ["reported speech", "embedded clauses"],
     "maxOutOfLevelVocabularyPercent": 5,
@@ -71,4 +74,3 @@
     "canonicalPath": "/es/practica/coreano/a1/lectura/cafe-order", "indexable": false, "lastModified": "2026-07-18T12:00:00-05:00", "relatedExerciseIds": []
   }
 }
-

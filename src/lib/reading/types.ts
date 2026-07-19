@@ -56,7 +56,7 @@ export type ReadingExercise = {
     displayLabel: string
     jlpt?: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
     topik?: number
-    mappingDisclaimer?: string
+    mappingDisclaimer?: LocalizedText
   }
   slug: string
   series: null | {
@@ -80,7 +80,7 @@ export type ReadingExercise = {
     plainTextForAnalysis?: string
     wordCount: number
     estimatedMinutes: number
-    objectives: string[]
+    objectives: LocalizedText[]
     grammarFocus?: string[]
     vocabulary: Array<{
       surface: string
@@ -91,7 +91,7 @@ export type ReadingExercise = {
       levelStatus?: 'within-level' | 'out-of-level-glossed'
     }>
     culturalNote?: LocalizedText
-    spanishSpeakerNote?: string
+    spanishSpeakerNote?: LocalizedText
     sources?: Array<{ label: string; url: string; accessedAt?: string }>
   }
   audio?: null | {
@@ -107,7 +107,7 @@ export type ReadingExercise = {
     tokenizationMode?: 'space' | 'morphological' | 'custom'
   }
   leveling: {
-    targetCanDo: string
+    targetCanDo: LocalizedText
     allowedGrammar: string[]
     disallowedGrammar?: string[]
     maxOutOfLevelVocabularyPercent: number
@@ -153,4 +153,3 @@ export type ReadingExercise = {
     relatedExerciseIds?: string[]
   }
 }
-

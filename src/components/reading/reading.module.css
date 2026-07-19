@@ -66,8 +66,6 @@
 .vocabChip { display: grid; grid-template-columns: auto 1fr; gap: 4px 8px; align-items: baseline; padding: 11px 13px; border: 1px solid var(--reading-line); border-radius: 12px; color: var(--reading-muted); background: #fff; text-align: left; cursor: pointer; }
 .vocabChip strong { color: var(--reading-blue); }
 .vocabChip em { grid-column: 1 / -1; color: #7e65b7; font-size: 11px; }
-.stationTitleRow { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; }
-.audioPending { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border-radius: 10px; color: var(--reading-muted); background: #f5f6fa; font-size: 11px; }
 .readingText { max-width: 900px; padding: 8px 0 26px; color: #202944; font-size: clamp(19px, 2.2vw, 25px); line-height: 2; }
 .hangulText { font-size: clamp(20px, 2.5vw, 28px); word-break: keep-all; }
 .glossWrap { position: relative; display: inline; }
@@ -147,8 +145,6 @@
   .hubHero h1, .lessonHero h1 { font-size: 41px; }
   .readingCard, .station { border-radius: 18px; }
   .station { padding: 19px 16px; }
-  .stationTitleRow { display: block; }
-  .audioPending { margin: -12px 0 20px; }
   .vocabGrid { grid-template-columns: 1fr; }
   .readingText { font-size: 19px; line-height: 1.9; }
   .glossPopover { left: 0; transform: none; }
@@ -161,4 +157,3 @@
 @media (prefers-reduced-motion: reduce) {
   .shell * { scroll-behavior: auto !important; transition: none !important; }
 }
-

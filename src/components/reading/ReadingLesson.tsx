@@ -1,12 +1,12 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import {
   ArrowLeft, ArrowRight, BookOpenCheck, Check, CheckCircle2, ChevronDown,
-  ChevronUp, CircleHelp, RotateCcw, Sparkles, Target, Volume2,
+  ChevronUp, CircleHelp, RotateCcw, Sparkles, Target,
 } from 'lucide-react'
-import { getScriptCapabilities, tokenizeReadingText } from '@/lib/reading/adapters'
+import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import type { ReadingExercise, ReadingQuestion, TutorLocale } from '@/lib/reading/types'
@@ -20,11 +20,11 @@ const COPY = {
   es: {
     back: 'Todas las lecturas', preview: 'Vista editorial · no indexable', words: 'palabras',
     before: 'Antes de leer', mission: 'Tu misión', vocabulary: 'Vocabulario clave',
-    read: 'Lee a tu ritmo', markRead: 'Marcar como leído', readDone: 'Texto leído', audioPending: 'Audio pendiente de revisión',
+    read: 'Lee a tu ritmo', markRead: 'Marcar como leído', readDone: 'Texto leído',
     check: 'Comprueba lo que entendiste', question: 'Pregunta', evidence: 'Evidencia', strategy: 'Estrategia',
     orderHelp: 'Usa los botones para cambiar el orden y luego comprueba tu respuesta.', submitOrder: 'Comprobar orden',
     use: 'Usa el idioma', unscored: 'Esta producción no cambia tu puntaje ni se envía a analítica.',
-    result: 'Tu resultado', answered: 'preguntas respondidas', correct: 'correctas', retry: 'Reintentar',
+    result: 'Tu resultado', answered: 'preguntas respondidas', correct: 'correctas', retry: 'Reintentar', success: '¡Buen trabajo!', keepGoing: 'Sigue practicando',
     finishPrompt: 'Responde todas las preguntas para ver tu resultado completo.',
     practised: 'Lo que practicaste', commonError: 'Ayuda para hispanohablantes', cultural: 'Nota cultural', faq: 'Preguntas frecuentes',
     faqLevel: '¿Qué nivel tiene esta lectura?', faqHelp: '¿Las ayudas revelan la respuesta?',
@@ -34,11 +34,11 @@ const COPY = {
   en: {
     back: 'All readings', preview: 'Editorial preview · not indexable', words: 'words',
     before: 'Before you read', mission: 'Your mission', vocabulary: 'Key vocabulary',
-    read: 'Read at your pace', markRead: 'Mark as read', readDone: 'Text read', audioPending: 'Audio pending review',
+    read: 'Read at your pace', markRead: 'Mark as read', readDone: 'Text read',
     check: 'Check what you understood', question: 'Question', evidence: 'Evidence', strategy: 'Strategy',
     orderHelp: 'Use the buttons to change the order, then check your answer.', submitOrder: 'Check order',
     use: 'Use the language', unscored: 'This response does not affect your score and is not sent to analytics.',
-    result: 'Your result', answered: 'questions answered', correct: 'correct', retry: 'Try again',
+    result: 'Your result', answered: 'questions answered', correct: 'correct', retry: 'Try again', success: 'Great work!', keepGoing: 'Keep practising',
     finishPrompt: 'Answer every question to see your full result.',
     practised: 'What you practised', commonError: 'Support for Spanish speakers', cultural: 'Cultural note', faq: 'Frequently asked questions',
     faqLevel: 'What level is this reading?', faqHelp: 'Do the support tools reveal the answer?',
@@ -49,12 +49,21 @@ const COPY = {
 
 type StoredAnswer = string | boolean | string[]
 
-function track(event: string, exercise: ReadingExercise, extra: Record<string, unknown> = {}) {
-  window.dataLayer?.push({
+function currentTimeMs() {
+  return Date.now()
+}
+
+function track(event: string, exercise: ReadingExercise, sessionId: string, startedAt: number, extra: Record<string, unknown> = {}) {
+  window.dataLayer = window.dataLayer ?? []
+  window.dataLayer.push({
     event,
+    reading_session_id: sessionId,
     reading_language: exercise.language,
     reading_level: exercise.level.cefr,
     reading_exercise_id: exercise.id,
+    reading_content_status: exercise.status,
+    reading_is_preview: exercise.status !== 'published',
+    reading_elapsed_seconds: Math.max(0, Math.round((Date.now() - startedAt) / 1000)),
     ...extra,
   })
 }
@@ -169,9 +178,16 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
   const [readComplete, setReadComplete] = useState(false)
   const [activeGloss, setActiveGloss] = useState<string | null>(null)
   const [production, setProduction] = useState('')
+  const sessionId = useRef('')
+  const startedAt = useRef(0)
+  const impressionTracked = useRef(false)
+  const completionTracked = useRef(false)
+  const glossOpenCount = useRef(0)
+  const uniqueGlosses = useRef(new Set<string>())
   const capabilities = getScriptCapabilities(exercise)
-  const tokens = useMemo(() => tokenizeReadingText(exercise.content.targetText, exercise.language), [exercise])
-  const vocabulary = useMemo(() => new Map(exercise.content.vocabulary.map((item) => [item.surface.toLocaleLowerCase(), item])), [exercise])
+  const glossarySurfaces = useMemo(() => exercise.content.vocabulary.map((item) => item.surface), [exercise])
+  const tokens = useMemo(() => tokenizeReadingText(exercise.content.targetText, exercise.language, glossarySurfaces), [exercise, glossarySurfaces])
+  const vocabulary = useMemo(() => new Map(exercise.content.vocabulary.map((item) => [normalizeReadingLookup(item.surface), item])), [exercise])
   const answeredCount = Object.keys(answers).length
   const score = exercise.questions.filter((question) => {
     const value = answers[question.id]
@@ -181,12 +197,54 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
   const wordCount = production.trim() ? production.trim().split(/\s+/u).length : 0
 
   useEffect(() => {
-    track('reading_impression', exercise, { tutor_locale: locale, genre: exercise.classification.genre })
+    if (impressionTracked.current) return
+    impressionTracked.current = true
+    startedAt.current = currentTimeMs()
+    sessionId.current = globalThis.crypto?.randomUUID?.() ?? `${exercise.id}-${Date.now()}`
+    track('reading_view', exercise, sessionId.current, startedAt.current, { tutor_locale: locale, reading_genre: exercise.classification.genre })
   }, [exercise, locale])
 
+  function trackEvent(event: string, extra: Record<string, unknown> = {}) {
+    track(event, exercise, sessionId.current || `${exercise.id}-pending`, startedAt.current, { tutor_locale: locale, ...extra })
+  }
+
   function answerQuestion(question: ReadingQuestion, answer: StoredAnswer) {
-    setAnswers((current) => ({ ...current, [question.id]: answer }))
-    track('question_answered', exercise, { question_id: question.id, skill: question.skill, correct: answersMatch(question, answer) })
+    const correct = answersMatch(question, answer)
+    const nextAnswers = { ...answers, [question.id]: answer }
+    setAnswers(nextAnswers)
+    trackEvent('reading_question_answer', { reading_question_id: question.id, reading_skill: question.skill, reading_is_correct: correct })
+    if (!correct) trackEvent('reading_error', { reading_question_id: question.id, reading_skill: question.skill })
+
+    const isNowComplete = Object.keys(nextAnswers).length === exercise.questions.length
+    if (isNowComplete && !completionTracked.current) {
+      completionTracked.current = true
+      const finalScore = exercise.questions.filter((item) => {
+        const value = nextAnswers[item.id]
+        return value !== undefined && answersMatch(item, value)
+      }).length
+      trackEvent('reading_complete', {
+        reading_score: finalScore,
+        reading_score_percent: Math.round((finalScore / exercise.questions.length) * 100),
+        reading_error_count: exercise.questions.length - finalScore,
+        reading_question_count: exercise.questions.length,
+        reading_gloss_open_count: glossOpenCount.current,
+        reading_unique_gloss_count: uniqueGlosses.current.size,
+        reading_text_marked_read: readComplete,
+      })
+    }
+  }
+
+  function toggleGloss(surface: string, lemma: string) {
+    const isOpening = activeGloss !== surface
+    setActiveGloss(isOpening ? surface : null)
+    if (!isOpening) return
+    glossOpenCount.current += 1
+    uniqueGlosses.current.add(lemma)
+    trackEvent('reading_gloss_open', {
+      reading_gloss_lemma: lemma,
+      reading_gloss_open_count: glossOpenCount.current,
+      reading_unique_gloss_count: uniqueGlosses.current.size,
+    })
   }
 
   function reset() {
@@ -194,7 +252,11 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
     setReadComplete(false)
     setActiveGloss(null)
     setProduction('')
-    track('reading_retried', exercise)
+    completionTracked.current = false
+    glossOpenCount.current = 0
+    uniqueGlosses.current.clear()
+    startedAt.current = currentTimeMs()
+    trackEvent('reading_retry')
   }
 
   return (
@@ -226,7 +288,7 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
             <h3>{copy.vocabulary}</h3>
             <div className={styles.vocabGrid}>
               {exercise.content.vocabulary.map((item) => (
-                <button key={item.surface} type="button" className={styles.vocabChip} onClick={() => setActiveGloss(activeGloss === item.surface ? null : item.surface)} aria-expanded={activeGloss === item.surface}>
+                <button key={item.surface} type="button" className={styles.vocabChip} onClick={() => toggleGloss(item.surface, item.lemma)} aria-expanded={activeGloss === item.surface}>
                   <strong>{item.surface}</strong><span>{localized(item.glosses, locale)}</span>
                   {activeGloss === item.surface && item.reading && <em>{item.reading}</em>}
                 </button>
@@ -237,10 +299,7 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
       </section>
 
       <section className={styles.station} aria-labelledby="assisted-reading">
-        <div className={styles.stationTitleRow}>
-          <h2 id="assisted-reading"><span>2</span>{copy.read}</h2>
-          <span className={styles.audioPending}><Volume2 size={16} /> {copy.audioPending}</span>
-        </div>
+        <h2 id="assisted-reading"><span>2</span>{copy.read}</h2>
         <div className={`${styles.readingText} ${exercise.language === 'ko' ? styles.hangulText : ''}`} lang={exercise.variant}>
           {tokens.map((token, index) => {
             const entry = vocabulary.get(token.lookup)
@@ -248,13 +307,13 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
             const open = activeGloss === entry.surface
             return (
               <span className={styles.glossWrap} key={`${token.raw}-${index}`}>
-                <button type="button" className={styles.glossWord} aria-expanded={open} onClick={() => { setActiveGloss(open ? null : entry.surface); track('gloss_opened', exercise, { lemma: entry.lemma }) }}>{token.raw}</button>
+                <button type="button" className={styles.glossWord} aria-expanded={open} onClick={() => toggleGloss(entry.surface, entry.lemma)}>{token.raw}</button>
                 {open && <span className={styles.glossPopover} role="tooltip"><strong>{localized(entry.glosses, locale)}</strong>{entry.reading && <em>{entry.reading}</em>}</span>}
               </span>
             )
           })}
         </div>
-        <button type="button" className={readComplete ? styles.completedButton : styles.secondaryButton} onClick={() => { setReadComplete(true); track('reading_started', exercise) }}>
+        <button type="button" className={readComplete ? styles.completedButton : styles.secondaryButton} onClick={() => { setReadComplete(true); trackEvent('reading_text_marked_read') }}>
           <CheckCircle2 size={17} /> {readComplete ? copy.readDone : copy.markRead}
         </button>
       </section>
@@ -287,8 +346,8 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
         <div className={styles.resultGrid}>
           <div className={styles.scoreRing} aria-label={`${score} ${copy.correct}`}><strong>{score}/{exercise.questions.length}</strong><span>{copy.correct}</span></div>
           <div className={styles.resultCopy}>
-            <h3>{complete ? (score >= Math.ceil(exercise.questions.length * 0.8) ? '¡Buen trabajo!' : (locale === 'es' ? 'Sigue practicando' : 'Keep practising')) : `${answeredCount}/${exercise.questions.length} ${copy.answered}`}</h3>
-            <p>{complete ? localized(exercise.leveling.targetCanDo ? { es: exercise.leveling.targetCanDo, en: `You practised: ${exercise.leveling.targetCanDo}` } : {}, locale) : copy.finishPrompt}</p>
+            <h3>{complete ? (score >= Math.ceil(exercise.questions.length * 0.8) ? copy.success : copy.keepGoing) : `${answeredCount}/${exercise.questions.length} ${copy.answered}`}</h3>
+            <p>{complete ? localized(exercise.leveling.targetCanDo, locale) : copy.finishPrompt}</p>
             <button type="button" className={styles.secondaryButton} onClick={reset}><RotateCcw size={16} /> {copy.retry}</button>
           </div>
           <div className={styles.skillBars}>
@@ -304,12 +363,12 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
       </section>
 
       <section className={styles.supportContent}>
-        <div><h2>{copy.practised}</h2><ul>{exercise.content.objectives.map((objective) => <li key={objective}>{objective}</li>)}</ul></div>
-        {exercise.content.spanishSpeakerNote && <div><h2>{copy.commonError}</h2><p>{exercise.content.spanishSpeakerNote}</p></div>}
+        <div><h2>{copy.practised}</h2><ul>{exercise.content.objectives.map((objective) => <li key={localized(objective, locale)}>{localized(objective, locale)}</li>)}</ul></div>
+        {exercise.content.spanishSpeakerNote && <div><h2>{copy.commonError}</h2><p>{localized(exercise.content.spanishSpeakerNote, locale)}</p></div>}
         {exercise.content.culturalNote && <div><h2>{copy.cultural}</h2><p>{localized(exercise.content.culturalNote, locale)}</p></div>}
         <div>
           <h2>{copy.faq}</h2>
-          <details><summary>{copy.faqLevel}</summary><p>{exercise.level.cefr}. {exercise.level.mappingDisclaimer}</p></details>
+          <details><summary>{copy.faqLevel}</summary><p>{exercise.level.cefr}. {exercise.level.mappingDisclaimer && localized(exercise.level.mappingDisclaimer, locale)}</p></details>
           <details><summary>{copy.faqHelp}</summary><p>{copy.faqHelpAnswer}</p></details>
         </div>
       </section>

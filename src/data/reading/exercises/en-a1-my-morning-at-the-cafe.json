@@ -24,13 +24,13 @@
       "es": "Descubre qué pide Emma, a qué hora llega y qué compra para después.",
       "en": "Find out what Emma orders, when she arrives, and what she buys for later."
     },
-    "targetText": "Emma usually arrives at the café at eight o’clock. She sits near the window and orders tea with milk. Today, the café is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. Before she leaves, she orders a sandwich for later.",
-    "plainTextForAnalysis": "Emma usually arrives at the cafe at eight o'clock. She sits near the window and orders tea with milk. Today, the cafe is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. Before she leaves, she orders a sandwich for later.",
-    "wordCount": 55,
+    "targetText": "Emma usually arrives at the café at eight o’clock. She sits near the window and orders tea with milk. Today, the café is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. At the end, she orders a sandwich for later. Then she leaves.",
+    "plainTextForAnalysis": "Emma usually arrives at the cafe at eight o'clock. She sits near the window and orders tea with milk. Today, the cafe is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. At the end, she orders a sandwich for later. Then she leaves.",
+    "wordCount": 58,
     "estimatedMinutes": 3,
     "objectives": [
-      "Identificar una hora y un pedido en un relato cotidiano.",
-      "Comprender la secuencia básica de una rutina."
+      { "es": "Identificar una hora y un pedido en un relato cotidiano.", "en": "Identify a time and an order in an everyday story." },
+      { "es": "Comprender la secuencia básica de una rutina.", "en": "Understand the basic sequence of a routine." }
     ],
     "grammarFocus": ["present simple", "present continuous", "time with at"],
     "vocabulary": [
@@ -43,18 +43,18 @@
       "es": "La situación es deliberadamente global y no representa una costumbre exclusiva de un país anglófono.",
       "en": "The situation is intentionally global and does not represent a custom unique to one English-speaking country."
     },
-    "spanishSpeakerNote": "En inglés se usa at antes de una hora específica: at eight o’clock.",
+    "spanishSpeakerNote": { "es": "En inglés se usa at antes de una hora específica: at eight o’clock.", "en": "Spanish speakers: English uses at before a specific time: at eight o’clock." },
     "sources": []
   },
   "audio": null,
   "scriptSupport": { "furigana": false, "romanization": "none", "stressMarks": false, "tokenizationMode": "space" },
   "leveling": {
-    "targetCanDo": "Puede comprender información concreta y una secuencia corta en un texto cotidiano sencillo.",
+    "targetCanDo": { "es": "Puedes comprender información concreta y una secuencia corta en un texto cotidiano sencillo.", "en": "You can understand concrete information and a short sequence in a simple everyday text." },
     "allowedGrammar": ["present simple", "present continuous", "time with at", "basic coordination with and"],
     "disallowedGrammar": ["passive voice", "reported speech", "relative clauses", "idiomatic phrasal verbs"],
     "maxOutOfLevelVocabularyPercent": 5,
     "inferenceBand": "minimal",
-    "metrics": { "averageSentenceWords": 9.2, "maxSentenceWords": 14, "outOfLevelVocabularyPercent": 1.7, "glossedOutOfLevelItems": 1 },
+    "metrics": { "averageSentenceWords": 8.3, "maxSentenceWords": 14, "outOfLevelVocabularyPercent": 1.7, "glossedOutOfLevelItems": 1 },
     "independentAssessment": {
       "estimatedLevel": "A1",
       "passed": true,
@@ -110,7 +110,7 @@
         "incorrect": { "es": "Relee la última oración.", "en": "Read the final sentence again." },
         "strategy": { "es": "En verdadero o falso, compara cada parte de la afirmación con el texto.", "en": "For true or false, compare every part of the statement with the text." }
       },
-      "evidence": "Before she leaves, she orders a sandwich for later.", "maxAttempts": 2
+      "evidence": "At the end, she orders a sandwich for later.", "maxAttempts": 2
     },
     {
       "id": "q-order-events", "type": "ordering", "skill": "organization", "prompt": "Put the events in the correct order.",
@@ -126,7 +126,7 @@
   ],
   "production": {
     "prompt": { "es": "Escribe 2–3 frases en inglés sobre tu rutina de la mañana.", "en": "Write 2–3 sentences in English about your morning routine." },
-    "minWords": 8, "maxWords": 45, "hints": ["I usually...", "at...", "before..."], "scored": false
+    "minWords": 8, "maxWords": 45, "hints": ["I usually...", "at...", "Then..."], "scored": false
   },
   "review": {
     "author": "WeLearn editorial draft",
@@ -147,4 +147,3 @@
     "relatedExerciseIds": []
   }
 }
-
