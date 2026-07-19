@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import {
   ArrowLeft, ArrowRight, BookOpenCheck, Check, CheckCircle2, ChevronDown,
-  ChevronUp, CircleHelp, RotateCcw, Sparkles, Target,
+  ChevronUp, CircleHelp, Pause, RotateCcw, Sparkles, Target, Volume2,
 } from 'lucide-react'
 import { ReadingRecorder } from './ReadingRecorder'
 import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
@@ -21,7 +21,7 @@ const COPY = {
   es: {
     back: 'Todas las lecturas', preview: 'Vista editorial · no indexable', words: 'palabras',
     before: 'Antes de leer', mission: 'Tu misión', vocabulary: 'Vocabulario clave',
-    read: 'Lee a tu ritmo', markRead: 'Marcar como leído', readDone: 'Texto leído',
+    read: 'Lee a tu ritmo', markRead: 'Marcar como leído', readDone: 'Texto leído', listen: 'Escuchar la lectura', pausePlayback: 'Pausar',
     check: 'Comprueba lo que entendiste', question: 'Pregunta', evidence: 'Evidencia', strategy: 'Estrategia', preparingQuestions: 'Preparando una versión distinta de las preguntas…',
     orderHelp: 'Usa los botones para cambiar el orden y luego comprueba tu respuesta.', submitOrder: 'Comprobar orden',
     use: 'Usa el idioma', unscored: 'Esta producción no cambia tu puntaje ni se envía a analítica.',
@@ -35,7 +35,7 @@ const COPY = {
   en: {
     back: 'All readings', preview: 'Editorial preview · not indexable', words: 'words',
     before: 'Before you read', mission: 'Your mission', vocabulary: 'Key vocabulary',
-    read: 'Read at your pace', markRead: 'Mark as read', readDone: 'Text read',
+    read: 'Read at your pace', markRead: 'Mark as read', readDone: 'Text read', listen: 'Listen to the reading', pausePlayback: 'Pause',
     check: 'Check what you understood', question: 'Question', evidence: 'Evidence', strategy: 'Strategy', preparingQuestions: 'Preparing a fresh question order…',
     orderHelp: 'Use the buttons to change the order, then check your answer.', submitOrder: 'Check order',
     use: 'Use the language', unscored: 'This response does not affect your score and is not sent to analytics.',
@@ -201,6 +201,8 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
   const copy = COPY[locale]
   const [answers, setAnswers] = useState<Record<string, StoredAnswer>>({})
   const [readComplete, setReadComplete] = useState(false)
+  const [audioPlaying, setAudioPlaying] = useState(false)
+  const audioRef = useRef<HTMLAudioElement>(null)
   const [activeGloss, setActiveGloss] = useState<string | null>(null)
   const [production, setProduction] = useState('')
   const [shuffleSeed, setShuffleSeed] = useState<number | null>(null)
@@ -359,6 +361,18 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
             )
           })}
         </div>
+        {exercise.audio && (
+          <>
+            <audio ref={audioRef} src={exercise.audio.src} preload="none" onPlay={() => setAudioPlaying(true)} onPause={() => setAudioPlaying(false)} onEnded={() => setAudioPlaying(false)} />
+            <button type="button" className={styles.secondaryButton} onClick={() => {
+              const el = audioRef.current
+              if (!el) return
+              if (el.paused) { el.playbackRate = exercise.audio?.defaultRate ?? 1; void el.play(); trackEvent('reading_audio_played') } else { el.pause() }
+            }}>
+              {audioPlaying ? <Pause size={17} /> : <Volume2 size={17} />} {audioPlaying ? copy.pausePlayback : copy.listen}
+            </button>
+          </>
+        )}
         <button type="button" className={readComplete ? styles.completedButton : styles.secondaryButton} onClick={() => { setReadComplete(true); trackEvent('reading_text_marked_read') }}>
           <CheckCircle2 size={17} /> {readComplete ? copy.readDone : copy.markRead}
         </button>

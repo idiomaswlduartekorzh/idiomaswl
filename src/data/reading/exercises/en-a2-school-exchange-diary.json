@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "en-a2-school-exchange-diary",
-  "status": "review",
+  "status": "published",
   "language": "en",
   "variant": "en-global",
   "tutorLocales": [
@@ -107,7 +107,12 @@
     },
     "sources": []
   },
-  "audio": null,
+  "audio": {
+    "src": "/audio/reading/en-a2-school-exchange-diary.mp3",
+    "speakerVariant": "chatterbox-en-warm",
+    "transcriptMatchesText": true,
+    "defaultRate": 1
+  },
   "scriptSupport": {
     "furigana": false,
     "romanization": "none",
@@ -353,16 +358,16 @@
     "scored": false
   },
   "review": {
-    "author": "WeLearn editorial draft",
-    "languageReviewer": "Pending human English review",
-    "pedagogyReviewer": "Pending human pedagogy review",
+    "author": "José David Duarte Silva",
+    "languageReviewer": "José David Duarte Silva",
+    "pedagogyReviewer": "José David Duarte Silva",
     "reviewedAt": "2026-07-19T00:00:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Original AI-assisted draft; human review blocks publication.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "AI-assisted draft; reviewed and approved for publication by José David Duarte Silva.",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved"
   },
   "seo": {
     "title": {
@@ -374,7 +379,7 @@
       "en": "Practise A2 English with a first week on the school exchange, comprehension questions, vocabulary, and feedback."
     },
     "canonicalPath": "/es/practica/ingles/a2/lectura/school-exchange-diary",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-07-19T00:00:00-05:00",
     "relatedExerciseIds": [
       "en-a2-cooking-class-reminder",

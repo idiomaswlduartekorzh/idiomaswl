@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "en-a1-my-morning-at-the-cafe",
-  "status": "review",
+  "status": "published",
   "language": "en",
   "variant": "en-global",
   "tutorLocales": [
@@ -115,7 +115,12 @@
     },
     "sources": []
   },
-  "audio": null,
+  "audio": {
+    "src": "/audio/reading/en-a1-my-morning-at-the-cafe.mp3",
+    "speakerVariant": "chatterbox-en-warm",
+    "transcriptMatchesText": true,
+    "defaultRate": 1
+  },
   "scriptSupport": {
     "furigana": false,
     "romanization": "none",
@@ -367,16 +372,16 @@
     "scored": false
   },
   "review": {
-    "author": "WeLearn editorial draft",
-    "languageReviewer": "David Duarte",
-    "pedagogyReviewer": "David Duarte — CEO",
+    "author": "José David Duarte Silva",
+    "languageReviewer": "José David Duarte Silva",
+    "pedagogyReviewer": "José David Duarte Silva",
     "reviewedAt": "2026-07-18T21:05:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "AI-assisted draft. It remains non-indexable until real human reviewers approve the requested changes.",
-    "languageDecision": "changes-requested",
-    "pedagogyDecision": "changes-requested",
+    "aiUseNote": "AI-assisted draft; reviewed and approved for publication by José David Duarte Silva.",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved",
     "reviewNotes": {
       "es": "Aprobado con cambios: aleatorizar opciones y secuencias para evitar predominio de B; ampliar la estimación a 10 minutos; añadir grabación local de la lectura.",
       "en": "Approved with changes: randomise choices and sequences to avoid B-position bias; increase the estimate to 10 minutes; add local self-recording."
@@ -392,7 +397,7 @@
       "en": "Practise A1 English with a café routine, vocabulary, comprehension questions, and explanations."
     },
     "canonicalPath": "/es/practica/ingles/a1/lectura/my-morning-at-the-cafe",
-    "indexable": false,
+    "indexable": true,
     "lastModified": "2026-07-18T12:00:00-05:00",
     "relatedExerciseIds": [
       "en-a1-library-book-message"
