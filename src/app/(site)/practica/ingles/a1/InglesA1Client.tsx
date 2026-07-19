@@ -12,8 +12,8 @@ const COLOR = '#0066cc'
 const HABILIDADES = [
   {
     id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Reading',
-    desc: '5 textos A1 con cada palabra clickeable para ver su traducción. Preguntas de vocabulario, comprensión y producción libre.',
-    count: '5 textos · 25 preguntas', href: '/practica/ingles/a1/lectura',
+    desc: '10 lecturas A1 con audio narrado, cada palabra clickeable, preguntas de comprensión, evidencia y producción libre.',
+    count: '10 lecturas · con audio', href: '/es/practica/ingles/a1/lectura',
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',

@@ -14,8 +14,8 @@ const COLOR = '#0066cc';
 const HABILIDADES = [
   {
     id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Reading',
-    desc: '5 textos A2 (80-120 palabras): viajes, trabajo, opiniones. Vocabulario clickeable, 6 preguntas por texto.',
-    count: '5 textos · 30 preguntas', href: '/practica/ingles/a2/lectura', available: true,
+    desc: '10 lecturas A2 con audio narrado: viajes, trabajo, opiniones. Vocabulario clickeable, comprensión y evidencia.',
+    count: '10 lecturas · con audio', href: '/es/practica/ingles/a2/lectura', available: true,
   },
   {
     id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammar',

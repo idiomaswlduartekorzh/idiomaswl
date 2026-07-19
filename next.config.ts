@@ -114,6 +114,16 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  async redirects() {
+    // El motor de lectura nuevo (10 lecturas + audio) vive en /es/practica/ingles/{nivel}/lectura.
+    // Las páginas viejas de 5 textos se redirigen permanentemente para evitar contenido duplicado.
+    return ['a1', 'a2', 'b1'].map((level) => ({
+      source: `/practica/ingles/${level}/lectura`,
+      destination: `/es/practica/ingles/${level}/lectura`,
+      permanent: true,
+    }));
+  },
 };
 
 export default nextConfig;
