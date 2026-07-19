@@ -17,8 +17,8 @@
   "content": {
     "title": { "es": "My Morning at the Café", "en": "My Morning at the Café" },
     "intro": {
-      "es": "Practica horarios, pedidos y rutinas cotidianas con una lectura breve en inglés A1. Completarla toma unos tres minutos.",
-      "en": "Practise times, orders, and daily routines with a short A1 English reading. It takes about three minutes."
+      "es": "Practica horarios, pedidos y rutinas cotidianas con una lectura breve en inglés A1. La experiencia completa toma unos diez minutos.",
+      "en": "Practise times, orders, and daily routines with a short A1 English reading. The full activity takes about ten minutes."
     },
     "mission": {
       "es": "Descubre qué pide Emma, a qué hora llega y qué compra para después.",
@@ -27,7 +27,7 @@
     "targetText": "Emma usually arrives at the café at eight o’clock. She sits near the window and orders tea with milk. Today, the café is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. At the end, she orders a sandwich for later. Then she leaves.",
     "plainTextForAnalysis": "Emma usually arrives at the cafe at eight o'clock. She sits near the window and orders tea with milk. Today, the cafe is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. At the end, she orders a sandwich for later. Then she leaves.",
     "wordCount": 58,
-    "estimatedMinutes": 3,
+    "estimatedMinutes": 10,
     "objectives": [
       { "es": "Identificar una hora y un pedido en un relato cotidiano.", "en": "Identify a time and an order in an everyday story." },
       { "es": "Comprender la secuencia básica de una rutina.", "en": "Understand the basic sequence of a routine." }
@@ -130,13 +130,19 @@
   },
   "review": {
     "author": "WeLearn editorial draft",
-    "languageReviewer": "Pending human English review",
-    "pedagogyReviewer": "Pending human pedagogy review",
-    "reviewedAt": "2026-07-18T12:00:00-05:00",
+    "languageReviewer": "David Duarte",
+    "pedagogyReviewer": "David Duarte — CEO",
+    "reviewedAt": "2026-07-18T21:05:00-05:00",
     "copyrightChecked": true,
     "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "AI-assisted draft. It remains non-indexable until real human reviewers approve it."
+    "aiUseNote": "AI-assisted draft. It remains non-indexable until real human reviewers approve the requested changes.",
+    "languageDecision": "changes-requested",
+    "pedagogyDecision": "changes-requested",
+    "reviewNotes": {
+      "es": "Aprobado con cambios: aleatorizar opciones y secuencias para evitar predominio de B; ampliar la estimación a 10 minutos; añadir grabación local de la lectura.",
+      "en": "Approved with changes: randomise choices and sequences to avoid B-position bias; increase the estimate to 10 minutes; add local self-recording."
+    }
   },
   "seo": {
     "title": { "es": "Lectura en inglés A1: My Morning at the Café | WeLearn", "en": "A1 English Reading: My Morning at the Café | WeLearn" },

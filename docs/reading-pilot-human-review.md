@@ -16,7 +16,7 @@ Vista de revisión en inglés:
 
 Emma usually arrives at the café at eight o’clock. She sits near the window and orders tea with milk. Today, the café is busy. A man is waiting at the counter, and two students are talking about school. Emma reads a short message from her sister. At the end, she orders a sandwich for later. Then she leaves.
 
-Extensión: 58 palabras · 7 oraciones · promedio editorial: 8,3 palabras por oración · máximo: 14 palabras.
+Extensión: 58 palabras · 7 oraciones · promedio editorial: 8,3 palabras por oración · máximo: 14 palabras · experiencia completa estimada: 10 minutos.
 
 Foco declarado: presente simple, presente continuo y `at` con horas. La revisión previa eliminó la subordinada temporal `Before she leaves` para mantener el texto dentro de la gramática declarada.
 
@@ -41,11 +41,11 @@ Revisar en ambas versiones de la interfaz:
 - [ ] El apoyo para hispanohablantes sobre `at eight o’clock` es correcto.
 - [ ] No hay una variante regional que deba declararse en lugar de `en-global`.
 
-Decisión lingüística: **APROBAR / APROBAR CON CAMBIOS / NO APROBAR**
+Decisión lingüística registrada: **APROBAR CON CAMBIOS**
 
-Nombre y rol del revisor: ____________________
+Nombre y rol del revisor: **David Duarte**
 
-Cambios solicitados, si existen: ____________________
+Cambios solicitados: aleatorizar las opciones para eliminar el predominio de la respuesta B y hacer que ordenar eventos nunca comience resuelto.
 
 ## Aprobación pedagógica
 
@@ -56,13 +56,21 @@ Cambios solicitados, si existen: ____________________
 - [ ] El feedback enseña una estrategia y cita evidencia.
 - [ ] La producción de 2–3 frases es alcanzable para A1.
 - [ ] Las glosas ayudan sin convertir la tarea en traducción palabra por palabra.
-- [ ] La duración estimada de 3 minutos es razonable.
+- [ ] La duración estimada de 10 minutos es razonable, incluyendo lectura, preguntas, producción y autoescucha.
 
-Decisión pedagógica: **APROBAR / APROBAR CON CAMBIOS / NO APROBAR**
+Decisión pedagógica registrada: **APROBAR CON CAMBIOS**
 
-Nombre y rol del revisor: ____________________
+Nombre y rol del revisor: **David Duarte — CEO**
 
-Cambios solicitados, si existen: ____________________
+Cambios solicitados: añadir la opción de grabarse leyendo, guardar la grabación solamente en el dispositivo y permitir que el estudiante se escuche.
+
+## Cambios aplicados para segunda revisión
+
+- Las opciones de respuesta se barajan en cada sesión.
+- La actividad de ordenar eventos siempre comienza en un orden distinto del correcto.
+- La experiencia se presenta como una actividad de 10 minutos.
+- Se añadió una grabadora privada con reproducción, reemplazo y borrado; usa almacenamiento local del navegador y no sube el audio.
+- El audio narrado del lote continúa invisible hasta que el batch esté completo.
 
 ## Respuesta corta para registrar la decisión
 

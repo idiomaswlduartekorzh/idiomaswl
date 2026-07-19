@@ -178,7 +178,7 @@
     "review": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["author", "languageReviewer", "pedagogyReviewer", "reviewedAt", "copyrightChecked", "cultureChecked"],
+      "required": ["author", "languageReviewer", "pedagogyReviewer", "reviewedAt", "copyrightChecked", "cultureChecked", "languageDecision", "pedagogyDecision"],
       "properties": {
         "author": {"type": "string", "minLength": 2, "maxLength": 120},
         "languageReviewer": {"type": "string", "minLength": 2, "maxLength": 120},
@@ -187,7 +187,10 @@
         "copyrightChecked": {"const": true},
         "cultureChecked": {"const": true},
         "aiAssisted": {"type": "boolean"},
-        "aiUseNote": {"type": "string", "maxLength": 500}
+        "aiUseNote": {"type": "string", "maxLength": 500},
+        "languageDecision": {"enum": ["pending", "changes-requested", "approved"]},
+        "pedagogyDecision": {"enum": ["pending", "changes-requested", "approved"]},
+        "reviewNotes": {"$ref": "#/$defs/localizedText"}
       }
     },
     "seo": {

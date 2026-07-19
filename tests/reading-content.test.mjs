@@ -10,10 +10,20 @@ test('the A1 pilot satisfies structural and leveling preflight checks', () => {
   assert.deepEqual(validateReadingExercise(fixture), [])
 })
 
-test('publication is blocked while human reviewers are pending', () => {
+test('publication is blocked while requested human changes await final approval', () => {
   const published = structuredClone(fixture)
   published.status = 'published'
   published.seo.indexable = true
+  assert.match(validateReadingExercise(published).join('\n'), /approved language and pedagogy decisions/)
+})
+
+test('publication still requires identified human reviewers after approval', () => {
+  const published = structuredClone(fixture)
+  published.status = 'published'
+  published.seo.indexable = true
+  published.review.languageDecision = 'approved'
+  published.review.pedagogyDecision = 'approved'
+  published.review.languageReviewer = 'Pending human English review'
   assert.match(validateReadingExercise(published).join('\n'), /identified human reviewers/)
 })
 

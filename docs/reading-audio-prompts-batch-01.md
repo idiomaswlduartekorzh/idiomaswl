@@ -1,6 +1,6 @@
 # Prompts de audio — lote 01 de lecturas
 
-Estado: prompts listos · audio no generado · controles invisibles en la interfaz.
+Estado: prompts listos · audio narrado no generado · controles de narración invisibles en la interfaz. La grabadora privada del estudiante es una función separada.
 
 Regla de activación: no añadir `audio.src` a ningún ejercicio ni mostrar controles hasta que todos los archivos del lote aprobado existan, coincidan exactamente con sus transcripciones y pasen control humano. El piloto conserva `"audio": null`.
 
@@ -35,4 +35,4 @@ Regla de activación: no añadir `audio.src` a ningún ejercicio ni mostrar cont
 
 ## Puerta para hacer visible el audio
 
-El lote solo se activa cuando cada fila del manifiesto tenga: archivo maestro, archivo web, coincidencia literal, aprobación lingüística, aprobación técnica y duración registrada. Hasta entonces, la página no anuncia audio pendiente ni reserva espacio para un reproductor.
+El lote solo se activa cuando cada fila del manifiesto tenga: archivo maestro, archivo web, coincidencia literal, aprobación lingüística, aprobación técnica y duración registrada. Hasta entonces, la página no anuncia audio narrado pendiente ni reserva espacio para ese reproductor. La auto-grabación local no depende del lote y nunca se sube a WeLearn.

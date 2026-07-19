@@ -75,6 +75,21 @@
 .secondaryButton, .completedButton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border: 1px solid #bfcdf2; border-radius: 11px; color: var(--reading-blue); background: white; font-weight: 700; cursor: pointer; }
 .completedButton { color: #16744a; border-color: #b6dfcc; background: #effaf5; }
 
+.recorder { display: grid; gap: 14px; margin-top: 22px; padding: 18px; border: 1px solid #cfdaf7; border-radius: 16px; background: linear-gradient(135deg, #f7f9ff, #eef3ff); }
+.recorderHeading { display: flex; gap: 12px; align-items: flex-start; }
+.recorderIcon { display: grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; border-radius: 11px; color: white; background: var(--reading-blue); }
+.recorderHeading h3 { margin: 0 0 5px; font-size: 15px; }
+.recorderHeading p { max-width: 720px; margin: 0; color: var(--reading-muted); font-size: 12px; line-height: 1.55; }
+.recorder > button { width: fit-content; }
+.recordingButton { display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding: 10px 14px; border: 1px solid #e09a98; border-radius: 11px; color: #8f2927; background: #fff1f0; font-weight: 750; cursor: pointer; }
+.recordingButton svg { fill: currentColor; }
+.localPlayback { display: grid; grid-template-columns: minmax(220px, 420px) 1fr auto; gap: 13px; align-items: center; }
+.localPlayback audio { width: 100%; height: 42px; }
+.localPlayback span { display: inline-flex; align-items: center; gap: 6px; color: #236846; font-size: 11px; }
+.localPlayback button { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border: 0; color: #8a302e; background: transparent; cursor: pointer; font-size: 11px; font-weight: 700; }
+.recorderError { margin: 0; color: #8a302e; font-size: 12px; }
+.questionLoading { margin: 0; padding: 18px; border: 1px dashed #c7d2ee; border-radius: 14px; color: var(--reading-muted); background: #fafbff; }
+
 .questionGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .questionWrap { min-width: 0; border: 1px solid var(--reading-line); border-radius: 18px; background: #fff; }
 .questionLabel { margin: 0; padding: 15px 18px 0; color: var(--reading-blue); font-family: var(--font-geist-mono), monospace; font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -152,6 +167,8 @@
   .resultGrid { grid-template-columns: 1fr; }
   .scoreRing { margin: auto; }
   .skillBars { grid-column: auto; }
+  .localPlayback { grid-template-columns: 1fr; }
+  .localPlayback button { padding-left: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

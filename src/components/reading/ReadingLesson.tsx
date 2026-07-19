@@ -6,6 +6,7 @@ import {
   ArrowLeft, ArrowRight, BookOpenCheck, Check, CheckCircle2, ChevronDown,
   ChevronUp, CircleHelp, RotateCcw, Sparkles, Target,
 } from 'lucide-react'
+import { ReadingRecorder } from './ReadingRecorder'
 import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
 import { readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
@@ -21,7 +22,7 @@ const COPY = {
     back: 'Todas las lecturas', preview: 'Vista editorial · no indexable', words: 'palabras',
     before: 'Antes de leer', mission: 'Tu misión', vocabulary: 'Vocabulario clave',
     read: 'Lee a tu ritmo', markRead: 'Marcar como leído', readDone: 'Texto leído',
-    check: 'Comprueba lo que entendiste', question: 'Pregunta', evidence: 'Evidencia', strategy: 'Estrategia',
+    check: 'Comprueba lo que entendiste', question: 'Pregunta', evidence: 'Evidencia', strategy: 'Estrategia', preparingQuestions: 'Preparando una versión distinta de las preguntas…',
     orderHelp: 'Usa los botones para cambiar el orden y luego comprueba tu respuesta.', submitOrder: 'Comprobar orden',
     use: 'Usa el idioma', unscored: 'Esta producción no cambia tu puntaje ni se envía a analítica.',
     result: 'Tu resultado', answered: 'preguntas respondidas', correct: 'correctas', retry: 'Reintentar', success: '¡Buen trabajo!', keepGoing: 'Sigue practicando',
@@ -35,7 +36,7 @@ const COPY = {
     back: 'All readings', preview: 'Editorial preview · not indexable', words: 'words',
     before: 'Before you read', mission: 'Your mission', vocabulary: 'Key vocabulary',
     read: 'Read at your pace', markRead: 'Mark as read', readDone: 'Text read',
-    check: 'Check what you understood', question: 'Question', evidence: 'Evidence', strategy: 'Strategy',
+    check: 'Check what you understood', question: 'Question', evidence: 'Evidence', strategy: 'Strategy', preparingQuestions: 'Preparing a fresh question order…',
     orderHelp: 'Use the buttons to change the order, then check your answer.', submitOrder: 'Check order',
     use: 'Use the language', unscored: 'This response does not affect your score and is not sent to analytics.',
     result: 'Your result', answered: 'questions answered', correct: 'correct', retry: 'Try again', success: 'Great work!', keepGoing: 'Keep practising',
@@ -51,6 +52,29 @@ type StoredAnswer = string | boolean | string[]
 
 function currentTimeMs() {
   return Date.now()
+}
+
+function hashSeed(value: string) {
+  let hash = 2166136261
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index)
+    hash = Math.imul(hash, 16777619)
+  }
+  return hash >>> 0
+}
+
+function shuffled<T>(items: T[], seed: number) {
+  const result = [...items]
+  let state = seed || 1
+  function random() {
+    state = (Math.imul(state, 1664525) + 1013904223) >>> 0
+    return state / 4294967296
+  }
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(random() * (index + 1))
+    ;[result[index], result[target]] = [result[target], result[index]]
+  }
+  return result
 }
 
 function track(event: string, exercise: ReadingExercise, sessionId: string, startedAt: number, extra: Record<string, unknown> = {}) {
@@ -74,16 +98,16 @@ function answersMatch(question: ReadingQuestion, value: StoredAnswer) {
 }
 
 function ChoiceQuestion({
-  question, locale, value, onAnswer,
+  question, locale, value, options, onAnswer,
 }: {
   question: ReadingQuestion
   locale: TutorLocale
   value?: StoredAnswer
+  options: NonNullable<ReadingQuestion['options']>
   onAnswer: (value: StoredAnswer) => void
 }) {
   const answered = value !== undefined
   const correct = answered && answersMatch(question, value)
-  const options = question.options ?? []
   return (
     <fieldset className={styles.questionCard}>
       <legend>{question.prompt}</legend>
@@ -123,18 +147,19 @@ function ChoiceQuestion({
 }
 
 function OrderingQuestion({
-  question, locale, value, onAnswer,
+  question, locale, value, options, onAnswer,
 }: {
   question: ReadingQuestion
   locale: TutorLocale
   value?: StoredAnswer
+  options: NonNullable<ReadingQuestion['options']>
   onAnswer: (value: StoredAnswer) => void
 }) {
-  const initial = question.options?.map((option) => option.id) ?? []
+  const initial = options.map((option) => option.id)
   const [order, setOrder] = useState<string[]>(Array.isArray(value) ? value : initial)
   const answered = Array.isArray(value)
   const correct = answered && answersMatch(question, value)
-  const labels = new Map(question.options?.map((option) => [option.id, option.text]))
+  const labels = new Map(options.map((option) => [option.id, option.text]))
 
   function move(index: number, direction: -1 | 1) {
     const target = index + direction
@@ -178,6 +203,7 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
   const [readComplete, setReadComplete] = useState(false)
   const [activeGloss, setActiveGloss] = useState<string | null>(null)
   const [production, setProduction] = useState('')
+  const [shuffleSeed, setShuffleSeed] = useState<number | null>(null)
   const sessionId = useRef('')
   const startedAt = useRef(0)
   const impressionTracked = useRef(false)
@@ -188,6 +214,25 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
   const glossarySurfaces = useMemo(() => exercise.content.vocabulary.map((item) => item.surface), [exercise])
   const tokens = useMemo(() => tokenizeReadingText(exercise.content.targetText, exercise.language, glossarySurfaces), [exercise, glossarySurfaces])
   const vocabulary = useMemo(() => new Map(exercise.content.vocabulary.map((item) => [normalizeReadingLookup(item.surface), item])), [exercise])
+  const shuffledOptions = useMemo(() => {
+    if (shuffleSeed === null) return new Map<string, NonNullable<ReadingQuestion['options']>>()
+    return new Map(exercise.questions.map((question, questionIndex) => {
+      let options = shuffled(question.options ?? [], shuffleSeed ^ hashSeed(question.id))
+      if (question.type === 'ordering' && Array.isArray(question.answer) && options.length > 1) {
+        const ids = options.map((option) => option.id)
+        if (ids.join('|') === question.answer.join('|')) options = [...options.slice(1), options[0]]
+      } else if (options.length > 1 && (typeof question.answer === 'string' || typeof question.answer === 'boolean')) {
+        const answerId = typeof question.answer === 'boolean' ? String(question.answer) : question.answer
+        const answerIndex = options.findIndex((option) => option.id === answerId)
+        if (answerIndex >= 0) {
+          const [answerOption] = options.splice(answerIndex, 1)
+          const targetIndex = (shuffleSeed + questionIndex) % (options.length + 1)
+          options.splice(targetIndex, 0, answerOption)
+        }
+      }
+      return [question.id, options]
+    }))
+  }, [exercise.questions, shuffleSeed])
   const answeredCount = Object.keys(answers).length
   const score = exercise.questions.filter((question) => {
     const value = answers[question.id]
@@ -201,6 +246,7 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
     impressionTracked.current = true
     startedAt.current = currentTimeMs()
     sessionId.current = globalThis.crypto?.randomUUID?.() ?? `${exercise.id}-${Date.now()}`
+    setShuffleSeed(hashSeed(sessionId.current))
     track('reading_view', exercise, sessionId.current, startedAt.current, { tutor_locale: locale, reading_genre: exercise.classification.genre })
   }, [exercise, locale])
 
@@ -316,22 +362,27 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
         <button type="button" className={readComplete ? styles.completedButton : styles.secondaryButton} onClick={() => { setReadComplete(true); trackEvent('reading_text_marked_read') }}>
           <CheckCircle2 size={17} /> {readComplete ? copy.readDone : copy.markRead}
         </button>
+        <ReadingRecorder exerciseId={exercise.id} locale={locale} />
       </section>
 
       <section className={styles.station} aria-labelledby="comprehension-check">
         <h2 id="comprehension-check"><span>3</span>{copy.check}</h2>
+        {shuffleSeed === null ? <p className={styles.questionLoading} aria-live="polite">{copy.preparingQuestions}</p> : (
         <div className={styles.questionGrid}>
-          {exercise.questions.map((question, index) => (
+          {exercise.questions.map((question, index) => {
+            const options = shuffledOptions.get(question.id) ?? []
+            return (
             <div key={question.id} className={styles.questionWrap}>
               <p className={styles.questionLabel}>{question.skill} · {copy.question} {index + 1}</p>
               {question.type === 'ordering' ? (
-                <OrderingQuestion question={question} locale={locale} value={answers[question.id]} onAnswer={(value) => answerQuestion(question, value)} />
+                <OrderingQuestion key={`${question.id}-${shuffleSeed}`} question={question} locale={locale} options={options} value={answers[question.id]} onAnswer={(value) => answerQuestion(question, value)} />
               ) : (
-                <ChoiceQuestion question={question} locale={locale} value={answers[question.id]} onAnswer={(value) => answerQuestion(question, value)} />
+                <ChoiceQuestion question={question} locale={locale} options={options} value={answers[question.id]} onAnswer={(value) => answerQuestion(question, value)} />
               )}
             </div>
-          ))}
+          )})}
         </div>
+        )}
       </section>
 
       <section className={styles.station} aria-labelledby="production-task">

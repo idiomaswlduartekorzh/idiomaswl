@@ -67,7 +67,7 @@
     }
   ],
   "production": { "prompt": { "es": "Escribe un pedido de una bebida usando 주세요.", "en": "Write a drink order using 주세요." }, "minWords": 2, "maxWords": 20, "hints": ["___ 한 잔 주세요"], "scored": false },
-  "review": { "author": "WeLearn adapter demonstration", "languageReviewer": "Pending human Korean review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T12:00:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Non-publishable demonstration fixture pending human review." },
+  "review": { "author": "WeLearn adapter demonstration", "languageReviewer": "Pending human Korean review", "pedagogyReviewer": "Pending human pedagogy review", "reviewedAt": "2026-07-18T12:00:00-05:00", "copyrightChecked": true, "cultureChecked": true, "aiAssisted": true, "aiUseNote": "Non-publishable demonstration fixture pending human review.", "languageDecision": "pending", "pedagogyDecision": "pending" },
   "seo": {
     "title": { "es": "Lectura en coreano inicial: pedido en un café | WeLearn", "en": "Beginner Korean Reading: Ordering at a Café | WeLearn" },
     "description": { "es": "Practica Hangul con un diálogo corto de café, vocabulario y preguntas de comprensión.", "en": "Practise Hangul with a short café dialogue, vocabulary, and comprehension questions." },
