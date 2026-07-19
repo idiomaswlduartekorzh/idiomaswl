@@ -2,6 +2,8 @@ import type { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/blog';
 import { grammarRegistry } from '@/data/grammar/registry';
 import { EXAM_PRACTICE_ROUTES } from '@/data/practica-exams/seo-catalog';
+import { publishedReadingExercises } from '@/lib/reading/catalog';
+import { readingExercisePath } from '@/lib/reading/routes';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -24,6 +26,7 @@ const PUBLISHED_EXAM_PRACTICE_ROUTES = EXAM_PRACTICE_ROUTES.filter((route) => ro
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const publishedReadings = publishedReadingExercises();
 
   return [
     // ── Core pages ─────────────────────────────────────────────────────────────
@@ -101,6 +104,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.72,
     })),
+
+    // ── Reading engine — only human-reviewed, published exercises ───────────
+    ...publishedReadings.flatMap((exercise) => {
+      const esPath = readingExercisePath('es', exercise.language, exercise.level.cefr, exercise.slug);
+      const enPath = readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug);
+      const alternates = {
+        languages: {
+          es: `${BASE}${esPath}`,
+          en: `${BASE}${enPath}`,
+          'x-default': `${BASE}${esPath}`,
+        },
+      };
+      return [
+        { url: `${BASE}${esPath}`, lastModified: new Date(exercise.seo.lastModified), changeFrequency: 'monthly' as const, priority: 0.72, alternates },
+        { url: `${BASE}${enPath}`, lastModified: new Date(exercise.seo.lastModified), changeFrequency: 'monthly' as const, priority: 0.7, alternates },
+      ];
+    }),
 
     // ── Practice — ICFES Saber 11 ────────────────────────────────────────────
     { url: `${BASE}/practica/icfes-saber-11`,                                  lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
