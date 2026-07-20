@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "A city report examined whether planting more trees would make hot neighbourhoods safer during summer. Researchers compared streets with mature trees, streets with young trees, and streets with almost no shade. The shaded streets were cooler, but the report warned that tree planting alone would not solve heat risk. Mature trees needed enough soil and water, while young trees required several years of care before providing much shade. Residents also asked for better benches and safer crossings, because a cooler street was not automatically a more usable street. The city therefore proposed a three-part programme: plant trees where heat measurements were highest, protect water supplies, and improve walking routes at the same time. Critics argued that the programme would be expensive. In response, the report recommended measuring health, shade, and pedestrian use together rather than promising one simple result. The plan will begin with two pilot districts and a public review after one summer. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "plainTextForAnalysis": "A city report examined whether planting more trees would make hot neighbourhoods safer during summer. Researchers compared streets with mature trees, streets with young trees, and streets with almost no shade. The shaded streets were cooler, but the report warned that tree planting alone would not solve heat risk. Mature trees needed enough soil and water, while young trees required several years of care before providing much shade. Residents also asked for better benches and safer crossings, because a cooler street was not automatically a more usable street. The city therefore proposed a three-part programme: plant trees where heat measurements were highest, protect water supplies, and improve walking routes at the same time. Critics argued that the programme would be expensive. In response, the report recommended measuring health, shade, and pedestrian use together rather than promising one simple result. The plan will begin with two pilot districts and a public review after one summer. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "wordCount": 244,
+    "targetText": "A city report examined whether planting more trees would make hot neighbourhoods safer during summer. Researchers compared streets with mature trees, streets with young trees, and streets with almost no shade. The shaded streets were cooler, but the report warned that tree planting alone would not solve heat risk. Mature trees needed enough soil and water, while young trees required several years of care before providing much shade. Residents also asked for better benches and safer crossings, because a cooler street was not automatically a more usable street. The city therefore proposed a three-part programme: plant trees where heat measurements were highest, protect water supplies, and improve walking routes at the same time. Critics argued that the programme would be expensive. In response, the report recommended measuring health, shade, and pedestrian use together rather than promising one simple result. Planners also had to consider who would look after the trees once the initial funding ended, since neglected young trees can die within a few seasons. Some residents offered to water the trees near their homes, but the report warned that goodwill alone was unreliable during holidays and heatwaves. For that reason, the programme set aside a small annual budget for watering and replacement, treating the trees as long-term public equipment rather than a one-off gift. The plan will begin with two pilot districts and a public review after one summer.",
+    "plainTextForAnalysis": "A city report examined whether planting more trees would make hot neighbourhoods safer during summer. Researchers compared streets with mature trees, streets with young trees, and streets with almost no shade. The shaded streets were cooler, but the report warned that tree planting alone would not solve heat risk. Mature trees needed enough soil and water, while young trees required several years of care before providing much shade. Residents also asked for better benches and safer crossings, because a cooler street was not automatically a more usable street. The city therefore proposed a three-part programme: plant trees where heat measurements were highest, protect water supplies, and improve walking routes at the same time. Critics argued that the programme would be expensive. In response, the report recommended measuring health, shade, and pedestrian use together rather than promising one simple result. Planners also had to consider who would look after the trees once the initial funding ended, since neglected young trees can die within a few seasons. Some residents offered to water the trees near their homes, but the report warned that goodwill alone was unreliable during holidays and heatwaves. For that reason, the programme set aside a small annual budget for watering and replacement, treating the trees as long-term public equipment rather than a one-off gift. The plan will begin with two pilot districts and a public review after one summer.",
+    "wordCount": 230,
     "estimatedMinutes": 15,
     "objectives": [
       {
@@ -227,7 +227,7 @@
       "id": "q-3",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “The Evidence Behind an Urban Tree Plan”.",
+      "prompt": "Put the first stages in the order used in “The Evidence Behind an Urban Tree Plan”.",
       "options": [
         {
           "id": "step-1-1",
@@ -268,7 +268,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “The Evidence Behind an Urban Tree Plan”.",
+      "prompt": "Put the middle stages in the order used in “The Evidence Behind an Urban Tree Plan”.",
       "options": [
         {
           "id": "step-2-1",
@@ -309,7 +309,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “The Evidence Behind an Urban Tree Plan”.",
+      "prompt": "Put the final stages in the order used in “The Evidence Behind an Urban Tree Plan”.",
       "options": [
         {
           "id": "step-3-1",

@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "When I arrived in Leeds for the school exchange, I expected to feel lonely. Instead, my host family invited me to a neighbourhood football match on the first evening. At school, my partner, Josh, showed me the library and explained the timetable. I understood most lessons, although I needed extra time with the science vocabulary. On Wednesday, our class visited a local theatre. I missed my parents that night, but I wrote them a message and felt better. By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "plainTextForAnalysis": "When I arrived in Leeds for the school exchange, I expected to feel lonely. Instead, my host family invited me to a neighbourhood football match on the first evening. At school, my partner, Josh, showed me the library and explained the timetable. I understood most lessons, although I needed extra time with the science vocabulary. On Wednesday, our class visited a local theatre. I missed my parents that night, but I wrote them a message and felt better. By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "wordCount": 141,
+    "targetText": "When I arrived in Leeds for the school exchange, I expected to feel lonely. Instead, my host family invited me to a neighbourhood football match on the first evening. At school, my partner, Josh, showed me the library and explained the timetable. I understood most lessons, although I needed extra time with the science vocabulary. On Wednesday, our class visited a local theatre. I missed my parents that night, but I wrote them a message and felt better. To remember new words, I started a small notebook and reviewed five of them each night before sleeping. Josh laughed at my pronunciation at first, but he soon began correcting me gently instead. By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head.",
+    "plainTextForAnalysis": "When I arrived in Leeds for the school exchange, I expected to feel lonely. Instead, my host family invited me to a neighbourhood football match on the first evening. At school, my partner, Josh, showed me the library and explained the timetable. I understood most lessons, although I needed extra time with the science vocabulary. On Wednesday, our class visited a local theatre. I missed my parents that night, but I wrote them a message and felt better. To remember new words, I started a small notebook and reviewed five of them each night before sleeping. Josh laughed at my pronunciation at first, but he soon began correcting me gently instead. By Friday, I could order lunch, ask for directions, and join conversations without translating every sentence in my head.",
+    "wordCount": 130,
     "estimatedMinutes": 12,
     "objectives": [
       {
@@ -264,7 +264,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A First Week on the School Exchange”.",
+      "prompt": "Put the first stages in the order used in “A First Week on the School Exchange”.",
       "options": [
         {
           "id": "step-1-1",
@@ -305,7 +305,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A First Week on the School Exchange”.",
+      "prompt": "Put the final stages in the order used in “A First Week on the School Exchange”.",
       "options": [
         {
           "id": "step-2-1",

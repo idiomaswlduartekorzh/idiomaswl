@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works. At nine, the coordinator showed us the storage room and explained the labels. My first job was checking dates on tins. Later, I helped pack boxes for families with different needs. One box needed baby food, while another needed ingredients for a vegetarian meal. I had expected the work to be quiet, but the room became busy when a delivery arrived. Before leaving, I wrote down three ways to volunteer again. The shift was tiring, yet it made the community’s organisation visible to me. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "plainTextForAnalysis": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works. At nine, the coordinator showed us the storage room and explained the labels. My first job was checking dates on tins. Later, I helped pack boxes for families with different needs. One box needed baby food, while another needed ingredients for a vegetarian meal. I had expected the work to be quiet, but the room became busy when a delivery arrived. Before leaving, I wrote down three ways to volunteer again. The shift was tiring, yet it made the community’s organisation visible to me. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "wordCount": 148,
+    "targetText": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works. At nine, the coordinator showed us the storage room and explained the labels. My first job was checking dates on tins. Later, I helped pack boxes for families with different needs. One box needed baby food, while another needed ingredients for a vegetarian meal. I had expected the work to be quiet, but the room became busy when a delivery arrived. Before leaving, I wrote down three ways to volunteer again. The coordinator explained that the busiest hours were usually just after lunch, when new donations and waiting families often arrived at the same time. The shift was tiring, yet it made the community’s organisation visible to me.",
+    "plainTextForAnalysis": "I signed up for a Saturday shift at the food bank because I wanted to understand how local support works. At nine, the coordinator showed us the storage room and explained the labels. My first job was checking dates on tins. Later, I helped pack boxes for families with different needs. One box needed baby food, while another needed ingredients for a vegetarian meal. I had expected the work to be quiet, but the room became busy when a delivery arrived. Before leaving, I wrote down three ways to volunteer again. The coordinator explained that the busiest hours were usually just after lunch, when new donations and waiting families often arrived at the same time. The shift was tiring, yet it made the community’s organisation visible to me.",
+    "wordCount": 128,
     "estimatedMinutes": 12,
     "objectives": [
       {
@@ -264,7 +264,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Volunteer Shift at the Food Bank”.",
+      "prompt": "Put the first stages in the order used in “A Volunteer Shift at the Food Bank”.",
       "options": [
         {
           "id": "step-1-1",
@@ -305,7 +305,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Volunteer Shift at the Food Bank”.",
+      "prompt": "Put the final stages in the order used in “A Volunteer Shift at the Food Bank”.",
       "options": [
         {
           "id": "step-2-1",

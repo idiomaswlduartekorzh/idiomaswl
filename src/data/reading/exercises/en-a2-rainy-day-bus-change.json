@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon. From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge. Passengers going to the farm should leave the bus at Oak Street and walk for about twelve minutes. The transport office expects the normal route to return tomorrow morning, if the water level falls. Check the website before travelling because another change is possible. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "plainTextForAnalysis": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon. From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge. Passengers going to the farm should leave the bus at Oak Street and walk for about twelve minutes. The transport office expects the normal route to return tomorrow morning, if the water level falls. Check the website before travelling because another change is possible. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "wordCount": 133,
+    "targetText": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon. From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge. Passengers going to the farm should leave the bus at Oak Street and walk for about twelve minutes. The transport office expects the normal route to return tomorrow morning, if the water level falls. Each driver will display a printed sign in the front window, so passengers can confirm the temporary route before they board. Anyone with heavy bags or reduced mobility can call the transport office and ask about a short taxi link from Oak Street. Check the website before travelling because another change is possible.",
+    "plainTextForAnalysis": "Because heavy rain has flooded the road beside Hill Farm, bus 18 will use a different route this afternoon. From two until six, it will stop at Oak Street and the sports centre, but it will not stop at Hill Farm or the old bridge. Passengers going to the farm should leave the bus at Oak Street and walk for about twelve minutes. The transport office expects the normal route to return tomorrow morning, if the water level falls. Each driver will display a printed sign in the front window, so passengers can confirm the temporary route before they board. Anyone with heavy bags or reduced mobility can call the transport office and ask about a short taxi link from Oak Street. Check the website before travelling because another change is possible.",
+    "wordCount": 132,
     "estimatedMinutes": 12,
     "objectives": [
       {
@@ -264,7 +264,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Change to the Rainy-Day Bus Route”.",
+      "prompt": "Put the first stages in the order used in “A Change to the Rainy-Day Bus Route”.",
       "options": [
         {
           "id": "step-1-1",
@@ -305,7 +305,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Change to the Rainy-Day Bus Route”.",
+      "prompt": "Put the final stages in the order used in “A Change to the Rainy-Day Bus Route”.",
       "options": [
         {
           "id": "step-2-1",

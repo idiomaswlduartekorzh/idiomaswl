@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import Link from 'next/link'
 import {
   ArrowLeft, ArrowRight, BookOpenCheck, Check, CheckCircle2, ChevronDown,
@@ -8,7 +8,7 @@ import {
 } from 'lucide-react'
 import { ReadingRecorder } from './ReadingRecorder'
 import { getScriptCapabilities, normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
-import { readingHubPath } from '@/lib/reading/routes'
+import { readingExercisePath, readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import type { ReadingExercise, ReadingQuestion, TutorLocale } from '@/lib/reading/types'
 import styles from './reading.module.css'
@@ -20,6 +20,10 @@ declare global {
 const COPY = {
   es: {
     back: 'Todas las lecturas', preview: 'Vista editorial · no indexable', words: 'palabras',
+    catalog: 'Ruta de lectura', eyebrowLabel: 'Lectura · Inglés', textWord: 'Texto', of: 'de', progress: 'Progreso del ejercicio',
+    stages: ['Preparar', 'Leer', 'Comprobar', 'Producir', 'Cierre'],
+    goRead: 'Ya estoy listo para leer', goCheck: 'Comprobar lo que entendí', goProduce: 'Ahora escribo yo', goResult: 'Ver mi resultado',
+    nextReading: 'Siguiente lectura',
     before: 'Antes de leer', mission: 'Tu misión', vocabulary: 'Vocabulario clave',
     read: 'Lee a tu ritmo', markRead: 'Marcar como leído', readDone: 'Texto leído', listen: 'Escuchar la lectura', pausePlayback: 'Pausar',
     check: 'Comprueba lo que entendiste', question: 'Pregunta', evidence: 'Evidencia', strategy: 'Estrategia', preparingQuestions: 'Preparando una versión distinta de las preguntas…',
@@ -34,6 +38,10 @@ const COPY = {
   },
   en: {
     back: 'All readings', preview: 'Editorial preview · not indexable', words: 'words',
+    catalog: 'Reading path', eyebrowLabel: 'Reading · English', textWord: 'Text', of: 'of', progress: 'Exercise progress',
+    stages: ['Prepare', 'Read', 'Check', 'Produce', 'Wrap-up'],
+    goRead: "I'm ready to read", goCheck: 'Check what I understood', goProduce: 'Now I write', goResult: 'See my result',
+    nextReading: 'Next reading',
     before: 'Before you read', mission: 'Your mission', vocabulary: 'Key vocabulary',
     read: 'Read at your pace', markRead: 'Mark as read', readDone: 'Text read', listen: 'Listen to the reading', pausePlayback: 'Pause',
     check: 'Check what you understood', question: 'Question', evidence: 'Evidence', strategy: 'Strategy', preparingQuestions: 'Preparing a fresh question order…',
@@ -197,8 +205,9 @@ function OrderingQuestion({
   )
 }
 
-export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise; locale: TutorLocale }) {
+export function ReadingLesson({ exercise, locale, siblings = [] }: { exercise: ReadingExercise; locale: TutorLocale; siblings?: ReadingExercise[] }) {
   const copy = COPY[locale]
+  const [stage, setStage] = useState(0)
   const [answers, setAnswers] = useState<Record<string, StoredAnswer>>({})
   const [readComplete, setReadComplete] = useState(false)
   const [audioPlaying, setAudioPlaying] = useState(false)
@@ -304,29 +313,61 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
     glossOpenCount.current = 0
     uniqueGlosses.current.clear()
     startedAt.current = currentTimeMs()
+    setStage(0)
     trackEvent('reading_retry')
   }
 
+  const hubHref = readingHubPath(locale, exercise.language, exercise.level.cefr)
+  const currentIndex = Math.max(0, siblings.findIndex((item) => item.id === exercise.id))
+  const nextSibling = siblings[currentIndex + 1]
+
   return (
-    <article className={styles.pageWidth}>
-      <nav className={styles.lessonBack}>
-        <Link href={readingHubPath(locale, exercise.language, exercise.level.cefr)}><ArrowLeft size={16} /> {copy.back}</Link>
-        {exercise.status !== 'published' && <span className={styles.previewPill}>{copy.preview}</span>}
-      </nav>
-
-      <header className={styles.lessonHero}>
-        <p className={styles.eyebrow}>{exercise.level.cefr} · {exercise.classification.topic} · {exercise.content.estimatedMinutes} min</p>
-        <h1>{localized(exercise.content.title, locale)}</h1>
-        <p className={styles.lead}>{localized(exercise.content.intro, locale)}</p>
-        <div className={styles.lessonMeta}>
-          <span>{exercise.level.cefr}</span><span>{exercise.content.wordCount} {copy.words}</span>
-          <span>{exercise.content.grammarFocus?.[0]}</span>
-          <span>{capabilities.tokenizationMode}</span>
+    <div className={`listen-shell ${styles.lessonShell}`}>
+      <aside className="listen-catalog" aria-label={copy.back}>
+        <div className="listen-catalog__head">
+          <span>{copy.catalog} {exercise.level.cefr}</span>
+          <strong>{currentIndex + 1}/{siblings.length || 1}</strong>
         </div>
-      </header>
+        <section className="listen-block">
+          {siblings.map((item, index) => (
+            <Link
+              key={item.id}
+              href={readingExercisePath(locale, item.language, item.level.cefr, item.slug)}
+              className={`listen-card${item.id === exercise.id ? ' is-active' : ''}`}
+              style={{ textDecoration: 'none' }}
+            >
+              <span>{index + 1}</span>
+              <div><b>{localized(item.content.title, locale)}</b><small>{item.content.estimatedMinutes} min · {item.content.wordCount} {copy.words}</small></div>
+            </Link>
+          ))}
+        </section>
+      </aside>
 
-      <section className={styles.station} aria-labelledby="before-reading">
-        <h2 id="before-reading"><span>1</span>{copy.before}</h2>
+      <article className={`listen-work ${styles.lessonWork}`}>
+        <Link href={hubHref} className="listen-back"><ArrowLeft size={14} /> {copy.back}</Link>
+        <p className="eyebrow"><span className="ink-line" />{copy.eyebrowLabel} · {exercise.level.cefr} · {copy.textWord} {currentIndex + 1} {copy.of} {siblings.length || 1}</p>
+        <h1>📖 {localized(exercise.content.title, locale)}</h1>
+        <p className="listen-objective">{localized(exercise.content.intro, locale)}</p>
+        <div className="listen-tags">
+          <span>{exercise.classification.topic}</span>
+          <span>{exercise.content.wordCount} {copy.words}</span>
+          <span>~{exercise.content.estimatedMinutes} min</span>
+          {exercise.content.grammarFocus?.[0] && <span>{exercise.content.grammarFocus[0]}</span>}
+          {exercise.status !== 'published' && <span>{copy.preview}</span>}
+        </div>
+
+        <ol className={`listen-steps ${styles.readingSteps}`} aria-label={copy.progress}>
+          {copy.stages.map((label, index) => (
+            <li key={label} className={index === stage ? 'is-current' : index < stage ? 'is-done' : ''}>
+              <span>{index < stage ? '✓' : index + 1}</span><em>{label}</em>
+            </li>
+          ))}
+        </ol>
+
+      <div hidden={stage !== 0}>
+      <section className="listen-panel" aria-labelledby="before-reading">
+        <p className="listen-kicker">1 · {copy.stages[0]}</p>
+        <h2 id="before-reading">{copy.before}</h2>
         <div className={styles.beforeGrid}>
           <div>
             <h3>{copy.mission}</h3>
@@ -344,10 +385,14 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
             </div>
           </div>
         </div>
+        <button type="button" className="listen-primary" onClick={() => setStage(1)}>{copy.goRead}</button>
       </section>
+      </div>
 
-      <section className={styles.station} aria-labelledby="assisted-reading">
-        <h2 id="assisted-reading"><span>2</span>{copy.read}</h2>
+      <div hidden={stage !== 1}>
+      <section className="listen-panel" aria-labelledby="assisted-reading">
+        <p className="listen-kicker">2 · {copy.stages[1]}</p>
+        <h2 id="assisted-reading">{copy.read}</h2>
         <div className={`${styles.readingText} ${exercise.language === 'ko' ? styles.hangulText : ''}`} lang={exercise.variant}>
           {tokens.map((token, index) => {
             const entry = vocabulary.get(token.lookup)
@@ -377,10 +422,14 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
           <CheckCircle2 size={17} /> {readComplete ? copy.readDone : copy.markRead}
         </button>
         <ReadingRecorder exerciseId={exercise.id} locale={locale} />
+        <div><button type="button" className="listen-primary" onClick={() => setStage(2)}>{copy.goCheck}</button></div>
       </section>
+      </div>
 
-      <section className={styles.station} aria-labelledby="comprehension-check">
-        <h2 id="comprehension-check"><span>3</span>{copy.check}</h2>
+      <div hidden={stage !== 2}>
+      <section className="listen-panel" aria-labelledby="comprehension-check">
+        <p className="listen-kicker">3 · {copy.stages[2]}</p>
+        <h2 id="comprehension-check">{copy.check}</h2>
         {shuffleSeed === null ? <p className={styles.questionLoading} aria-live="polite">{copy.preparingQuestions}</p> : (
         <div className={styles.questionGrid}>
           {exercise.questions.map((question, index) => {
@@ -397,19 +446,31 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
           )})}
         </div>
         )}
+        <button type="button" className="listen-primary" onClick={() => setStage(3)}>{copy.goProduce}</button>
       </section>
+      </div>
 
-      <section className={styles.station} aria-labelledby="production-task">
-        <h2 id="production-task"><span>4</span>{copy.use}</h2>
+      <div hidden={stage !== 3}>
+      <section className="listen-panel" aria-labelledby="production-task">
+        <p className="listen-kicker">4 · {copy.stages[3]}</p>
+        <h2 id="production-task">{copy.use}</h2>
         <label className={styles.productionLabel} htmlFor="reading-production">{localized(exercise.production.prompt, locale)}</label>
         <textarea id="reading-production" value={production} onChange={(event) => setProduction(event.target.value)} rows={5} placeholder={exercise.production.hints.join(' · ')} />
         <div className={styles.productionMeta}><span>{wordCount} / {exercise.production.maxWords} {copy.words}</span><span>{copy.unscored}</span></div>
+        <button type="button" className="listen-primary" onClick={() => setStage(4)}>{copy.goResult}</button>
       </section>
+      </div>
 
-      <section className={styles.station} aria-labelledby="reading-result">
-        <h2 id="reading-result"><span>5</span>{copy.result}</h2>
+      <div hidden={stage !== 4}>
+      <section className="listen-panel" aria-labelledby="reading-result">
+        <p className="listen-kicker">5 · {copy.stages[4]}</p>
+        <h2 id="reading-result">{copy.result}</h2>
         <div className={styles.resultGrid}>
-          <div className={styles.scoreRing} aria-label={`${score} ${copy.correct}`}><strong>{score}/{exercise.questions.length}</strong><span>{copy.correct}</span></div>
+          <div
+            className={styles.scoreRing}
+            aria-label={`${score} ${copy.correct}`}
+            style={{ '--score-pct': `${exercise.questions.length ? Math.round((score / exercise.questions.length) * 100) : 0}%` } as CSSProperties}
+          ><strong>{score}/{exercise.questions.length}</strong><span>{copy.correct}</span></div>
           <div className={styles.resultCopy}>
             <h3>{complete ? (score >= Math.ceil(exercise.questions.length * 0.8) ? copy.success : copy.keepGoing) : `${answeredCount}/${exercise.questions.length} ${copy.answered}`}</h3>
             <p>{complete ? localized(exercise.leveling.targetCanDo, locale) : copy.finishPrompt}</p>
@@ -439,7 +500,16 @@ export function ReadingLesson({ exercise, locale }: { exercise: ReadingExercise;
       </section>
 
       {exercise.status !== 'published' && <aside className={styles.reviewNotice}><CircleHelp size={18} /><span>{copy.reviewRequired}</span></aside>}
-      <Link className={styles.nextLink} href={readingHubPath(locale, exercise.language, exercise.level.cefr)}>{copy.back}<ArrowRight size={17} /></Link>
-    </article>
+      <div className={styles.lessonFooterLinks}>
+        <Link className={styles.nextLink} href={hubHref}>{copy.back}<ArrowRight size={17} /></Link>
+        {nextSibling && (
+          <Link className={styles.nextLink} href={readingExercisePath(locale, nextSibling.language, nextSibling.level.cefr, nextSibling.slug)}>
+            {copy.nextReading}<ArrowRight size={17} />
+          </Link>
+        )}
+      </div>
+      </div>
+      </article>
+    </div>
   )
 }

@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "Hello everyone, two families will move into Maple Court next month. The residents’ group would like to welcome them without making the first week too busy. On Saturday 3 June, we will leave a small basket at each door with local information, tea, and a map. In the afternoon, volunteers can show the families the recycling room, the bus stop, and the shared garden. Please do not visit their flats unless they invite you. If you can help, reply with one hour when you are free. We will make a rota and send it on Monday. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "plainTextForAnalysis": "Hello everyone, two families will move into Maple Court next month. The residents’ group would like to welcome them without making the first week too busy. On Saturday 3 June, we will leave a small basket at each door with local information, tea, and a map. In the afternoon, volunteers can show the families the recycling room, the bus stop, and the shared garden. Please do not visit their flats unless they invite you. If you can help, reply with one hour when you are free. We will make a rota and send it on Monday. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "wordCount": 140,
+    "targetText": "Hello everyone, two families will move into Maple Court next month. The residents’ group would like to welcome them without making the first week too busy. On Saturday 3 June, we will leave a small basket at each door with local information, tea, and a map. In the afternoon, volunteers can show the families the recycling room, the bus stop, and the shared garden. Please do not visit their flats unless they invite you. If you can help, reply with one hour when you are free. The group also asks everyone to keep the two visitor parking spaces free during that weekend, so the removal vans have room to unload. Anyone with spare boxes or garden pots can leave them, clearly labelled, in the hall. We will make a rota and send it on Monday.",
+    "plainTextForAnalysis": "Hello everyone, two families will move into Maple Court next month. The residents’ group would like to welcome them without making the first week too busy. On Saturday 3 June, we will leave a small basket at each door with local information, tea, and a map. In the afternoon, volunteers can show the families the recycling room, the bus stop, and the shared garden. Please do not visit their flats unless they invite you. If you can help, reply with one hour when you are free. The group also asks everyone to keep the two visitor parking spaces free during that weekend, so the removal vans have room to unload. Anyone with spare boxes or garden pots can leave them, clearly labelled, in the hall. We will make a rota and send it on Monday.",
+    "wordCount": 135,
     "estimatedMinutes": 12,
     "objectives": [
       {
@@ -264,7 +264,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Welcome Plan for New Neighbours”.",
+      "prompt": "Put the first stages in the order used in “A Welcome Plan for New Neighbours”.",
       "options": [
         {
           "id": "step-1-1",
@@ -305,7 +305,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Welcome Plan for New Neighbours”.",
+      "prompt": "Put the final stages in the order used in “A Welcome Plan for New Neighbours”.",
       "options": [
         {
           "id": "step-2-1",

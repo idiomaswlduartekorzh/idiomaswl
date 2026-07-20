@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "When the city transport authority proposed a small fare increase, it presented the change as necessary for more frequent buses. Public comments, however, showed that passengers were less concerned about the price of one trip than about the total cost of commuting every day. Students, part-time workers, and people who travelled between two jobs described different pressures. The authority revised the proposal. Instead of one increase for everyone, it kept the current single-trip price, introduced a cheaper monthly pass for low-income residents, and promised to publish punctuality data every quarter. Critics said the discount would be difficult to administer, while others argued that the plan did not raise enough money. Six months later, buses were slightly more frequent on two routes, but the authority could not yet separate the effect of the fare policy from other changes. Its next report will therefore include passenger numbers, travel patterns, and household access, rather than claiming a simple success. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "plainTextForAnalysis": "When the city transport authority proposed a small fare increase, it presented the change as necessary for more frequent buses. Public comments, however, showed that passengers were less concerned about the price of one trip than about the total cost of commuting every day. Students, part-time workers, and people who travelled between two jobs described different pressures. The authority revised the proposal. Instead of one increase for everyone, it kept the current single-trip price, introduced a cheaper monthly pass for low-income residents, and promised to publish punctuality data every quarter. Critics said the discount would be difficult to administer, while others argued that the plan did not raise enough money. Six months later, buses were slightly more frequent on two routes, but the authority could not yet separate the effect of the fare policy from other changes. Its next report will therefore include passenger numbers, travel patterns, and household access, rather than claiming a simple success. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "wordCount": 246,
+    "targetText": "When the city transport authority proposed a small fare increase, it presented the change as necessary for more frequent buses. Public comments, however, showed that passengers were less concerned about the price of one trip than about the total cost of commuting every day. Students, part-time workers, and people who travelled between two jobs described different pressures. The authority revised the proposal. Instead of one increase for everyone, it kept the current single-trip price, introduced a cheaper monthly pass for low-income residents, and promised to publish punctuality data every quarter. Critics said the discount would be difficult to administer, while others argued that the plan did not raise enough money. Six months later, buses were slightly more frequent on two routes, but the authority could not yet separate the effect of the fare policy from other changes. Administering the discount proved harder than expected, because the authority had to confirm each applicant’s income without making the process feel intrusive. To reduce paperwork, it eventually accepted the same documents that residents already used for other local benefits. Some drivers also reported that the new monthly pass sped up boarding, since fewer passengers paid in cash at the door, which helped the buses keep closer to their timetable. Its next report will therefore include passenger numbers, travel patterns, and household access, rather than claiming a simple success.",
+    "plainTextForAnalysis": "When the city transport authority proposed a small fare increase, it presented the change as necessary for more frequent buses. Public comments, however, showed that passengers were less concerned about the price of one trip than about the total cost of commuting every day. Students, part-time workers, and people who travelled between two jobs described different pressures. The authority revised the proposal. Instead of one increase for everyone, it kept the current single-trip price, introduced a cheaper monthly pass for low-income residents, and promised to publish punctuality data every quarter. Critics said the discount would be difficult to administer, while others argued that the plan did not raise enough money. Six months later, buses were slightly more frequent on two routes, but the authority could not yet separate the effect of the fare policy from other changes. Administering the discount proved harder than expected, because the authority had to confirm each applicant’s income without making the process feel intrusive. To reduce paperwork, it eventually accepted the same documents that residents already used for other local benefits. Some drivers also reported that the new monthly pass sped up boarding, since fewer passengers paid in cash at the door, which helped the buses keep closer to their timetable. Its next report will therefore include passenger numbers, travel patterns, and household access, rather than claiming a simple success.",
+    "wordCount": 225,
     "estimatedMinutes": 15,
     "objectives": [
       {
@@ -227,7 +227,7 @@
       "id": "q-3",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Fare Change and the Question of Access”.",
+      "prompt": "Put the first stages in the order used in “A Fare Change and the Question of Access”.",
       "options": [
         {
           "id": "step-1-1",
@@ -268,7 +268,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Fare Change and the Question of Access”.",
+      "prompt": "Put the middle stages in the order used in “A Fare Change and the Question of Access”.",
       "options": [
         {
           "id": "step-2-1",
@@ -309,7 +309,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Fare Change and the Question of Access”.",
+      "prompt": "Put the final stages in the order used in “A Fare Change and the Question of Access”.",
       "options": [
         {
           "id": "step-3-1",

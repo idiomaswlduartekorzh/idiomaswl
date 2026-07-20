@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "The City Museum has introduced a free audio guide for visitors aged twelve and over. Visitors can borrow a small player at the entrance or download the guide before arriving. The guide has twelve stops, but visitors do not need to follow them in order. Each stop lasts between three and five minutes and includes one question to discuss with a companion. The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects. Families with younger children can use the picture trail instead. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "plainTextForAnalysis": "The City Museum has introduced a free audio guide for visitors aged twelve and over. Visitors can borrow a small player at the entrance or download the guide before arriving. The guide has twelve stops, but visitors do not need to follow them in order. Each stop lasts between three and five minutes and includes one question to discuss with a companion. The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects. Families with younger children can use the picture trail instead. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "wordCount": 136,
+    "targetText": "The City Museum has introduced a free audio guide for visitors aged twelve and over. Visitors can borrow a small player at the entrance or download the guide before arriving. The guide has twelve stops, but visitors do not need to follow them in order. Each stop lasts between three and five minutes and includes one question to discuss with a companion. The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects. Staff can also lend headphones to visitors who prefer to listen alone, and a printed version is available for anyone who finds small screens difficult. The museum plans to add a second language to the guide later this year. Families with younger children can use the picture trail instead.",
+    "plainTextForAnalysis": "The City Museum has introduced a free audio guide for visitors aged twelve and over. Visitors can borrow a small player at the entrance or download the guide before arriving. The guide has twelve stops, but visitors do not need to follow them in order. Each stop lasts between three and five minutes and includes one question to discuss with a companion. The museum says the guide is designed to help visitors notice details, not to replace the labels beside the objects. Staff can also lend headphones to visitors who prefer to listen alone, and a printed version is available for anyone who finds small screens difficult. The museum plans to add a second language to the guide later this year. Families with younger children can use the picture trail instead.",
+    "wordCount": 131,
     "estimatedMinutes": 12,
     "objectives": [
       {
@@ -264,7 +264,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A New Audio Guide at the Museum”.",
+      "prompt": "Put the first stages in the order used in “A New Audio Guide at the Museum”.",
       "options": [
         {
           "id": "step-1-1",
@@ -305,7 +305,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A New Audio Guide at the Museum”.",
+      "prompt": "Put the final stages in the order used in “A New Audio Guide at the Museum”.",
       "options": [
         {
           "id": "step-2-1",

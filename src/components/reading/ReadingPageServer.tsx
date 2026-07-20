@@ -98,11 +98,12 @@ export function resolveHubForRoute(locale: TutorLocale, languageParam: string, l
 }
 
 export function ExercisePage({ exercise, locale }: { exercise: ReadingExercise; locale: TutorLocale }) {
+  const siblings = findReadingHubExercises(locale, exercise.language, exercise.level.cefr)
   return (
     <section className="wl-section">
       <div className={`wrap ${styles.readingRoot}`}>
         <ReadingStructuredData exercise={exercise} locale={locale} />
-        <ReadingLesson exercise={exercise} locale={locale} />
+        <ReadingLesson exercise={exercise} locale={locale} siblings={siblings} />
       </div>
     </section>
   )

@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "When the Westbrook Library asked students how they used the building, many said they valued the collection but struggled to concentrate. The main reading room had become a mixed space: some visitors worked silently, while others met for group projects or joined online lessons. Rather than asking one group to leave, the library converted two smaller rooms into quiet study zones. Phones had to be silent, conversations were not permitted, and bookings were limited to two hours so more students could use the space. After six weeks, reservations were usually full, but staff noticed that some students booked a room and did not arrive. The library therefore introduced a short cancellation rule and kept a few desks unbooked for walk-ins. The trial did not solve every problem, yet it showed that a shared building can support different forms of study when its spaces have clear purposes. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "plainTextForAnalysis": "When the Westbrook Library asked students how they used the building, many said they valued the collection but struggled to concentrate. The main reading room had become a mixed space: some visitors worked silently, while others met for group projects or joined online lessons. Rather than asking one group to leave, the library converted two smaller rooms into quiet study zones. Phones had to be silent, conversations were not permitted, and bookings were limited to two hours so more students could use the space. After six weeks, reservations were usually full, but staff noticed that some students booked a room and did not arrive. The library therefore introduced a short cancellation rule and kept a few desks unbooked for walk-ins. The trial did not solve every problem, yet it showed that a shared building can support different forms of study when its spaces have clear purposes. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "wordCount": 236,
+    "targetText": "When the Westbrook Library asked students how they used the building, many said they valued the collection but struggled to concentrate. The main reading room had become a mixed space: some visitors worked silently, while others met for group projects or joined online lessons. Rather than asking one group to leave, the library converted two smaller rooms into quiet study zones. Phones had to be silent, conversations were not permitted, and bookings were limited to two hours so more students could use the space. After six weeks, reservations were usually full, but staff noticed that some students booked a room and did not arrive. The library therefore introduced a short cancellation rule and kept a few desks unbooked for walk-ins. A few group users complained that the quiet rooms took space away from collaboration, so the library set aside one open table where low conversation was still allowed. Staff also learned that clear signs mattered as much as rules: when the purpose of each room was written on the door, students often corrected one another without needing a librarian. The changes cost very little, because they mainly involved organising existing rooms rather than building new ones. The trial did not solve every problem, yet it showed that a shared building can support different forms of study when its spaces have clear purposes.",
+    "plainTextForAnalysis": "When the Westbrook Library asked students how they used the building, many said they valued the collection but struggled to concentrate. The main reading room had become a mixed space: some visitors worked silently, while others met for group projects or joined online lessons. Rather than asking one group to leave, the library converted two smaller rooms into quiet study zones. Phones had to be silent, conversations were not permitted, and bookings were limited to two hours so more students could use the space. After six weeks, reservations were usually full, but staff noticed that some students booked a room and did not arrive. The library therefore introduced a short cancellation rule and kept a few desks unbooked for walk-ins. A few group users complained that the quiet rooms took space away from collaboration, so the library set aside one open table where low conversation was still allowed. Staff also learned that clear signs mattered as much as rules: when the purpose of each room was written on the door, students often corrected one another without needing a librarian. The changes cost very little, because they mainly involved organising existing rooms rather than building new ones. The trial did not solve every problem, yet it showed that a shared building can support different forms of study when its spaces have clear purposes.",
+    "wordCount": 222,
     "estimatedMinutes": 15,
     "objectives": [
       {
@@ -227,7 +227,7 @@
       "id": "q-3",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Why the Library Created Quiet Study Zones”.",
+      "prompt": "Put the first stages in the order used in “Why the Library Created Quiet Study Zones”.",
       "options": [
         {
           "id": "step-1-1",
@@ -268,7 +268,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Why the Library Created Quiet Study Zones”.",
+      "prompt": "Put the middle stages in the order used in “Why the Library Created Quiet Study Zones”.",
       "options": [
         {
           "id": "step-2-1",
@@ -309,7 +309,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Why the Library Created Quiet Study Zones”.",
+      "prompt": "Put the final stages in the order used in “Why the Library Created Quiet Study Zones”.",
       "options": [
         {
           "id": "step-3-1",

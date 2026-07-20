@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "A medium-sized engineering firm allowed forty employees to work remotely on Wednesdays for three months. The experiment was designed to test flexibility without changing the company’s basic schedule. Teams agreed that every Wednesday meeting would be replaced by a written update unless a decision required discussion. Managers also recorded response times, completed tasks, and employee comments. Productivity remained similar, but junior staff reported that they missed quick questions at a colleague’s desk. To address this, the firm added an online help channel and paired each junior employee with a rotating mentor. By the third month, messages in the channel had become more focused and the number of urgent interruptions had fallen. The firm concluded that remote work itself was not the main issue; predictable communication routines mattered more. It will extend the pilot while comparing costs, satisfaction, and project quality. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "plainTextForAnalysis": "A medium-sized engineering firm allowed forty employees to work remotely on Wednesdays for three months. The experiment was designed to test flexibility without changing the company’s basic schedule. Teams agreed that every Wednesday meeting would be replaced by a written update unless a decision required discussion. Managers also recorded response times, completed tasks, and employee comments. Productivity remained similar, but junior staff reported that they missed quick questions at a colleague’s desk. To address this, the firm added an online help channel and paired each junior employee with a rotating mentor. By the third month, messages in the channel had become more focused and the number of urgent interruptions had fallen. The firm concluded that remote work itself was not the main issue; predictable communication routines mattered more. It will extend the pilot while comparing costs, satisfaction, and project quality. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "wordCount": 230,
+    "targetText": "A medium-sized engineering firm allowed forty employees to work remotely on Wednesdays for three months. The experiment was designed to test flexibility without changing the company’s basic schedule. Teams agreed that every Wednesday meeting would be replaced by a written update unless a decision required discussion. Managers also recorded response times, completed tasks, and employee comments. Productivity remained similar, but junior staff reported that they missed quick questions at a colleague’s desk. To address this, the firm added an online help channel and paired each junior employee with a rotating mentor. By the third month, messages in the channel had become more focused and the number of urgent interruptions had fallen. The firm concluded that remote work itself was not the main issue; predictable communication routines mattered more. The mentors themselves gained something unexpected, because explaining a process to a junior colleague often revealed steps that the team had never written down. Human resources used these conversations to update the company’s short training notes. Not everyone was convinced, and two managers argued that a single remote day still made planning harder for clients in other time zones. The firm agreed to track client feedback separately, so that convenience for staff would not quietly become a cost for customers. It will extend the pilot while comparing costs, satisfaction, and project quality.",
+    "plainTextForAnalysis": "A medium-sized engineering firm allowed forty employees to work remotely on Wednesdays for three months. The experiment was designed to test flexibility without changing the company’s basic schedule. Teams agreed that every Wednesday meeting would be replaced by a written update unless a decision required discussion. Managers also recorded response times, completed tasks, and employee comments. Productivity remained similar, but junior staff reported that they missed quick questions at a colleague’s desk. To address this, the firm added an online help channel and paired each junior employee with a rotating mentor. By the third month, messages in the channel had become more focused and the number of urgent interruptions had fallen. The firm concluded that remote work itself was not the main issue; predictable communication routines mattered more. The mentors themselves gained something unexpected, because explaining a process to a junior colleague often revealed steps that the team had never written down. Human resources used these conversations to update the company’s short training notes. Not everyone was convinced, and two managers argued that a single remote day still made planning harder for clients in other time zones. The firm agreed to track client feedback separately, so that convenience for staff would not quietly become a cost for customers. It will extend the pilot while comparing costs, satisfaction, and project quality.",
+    "wordCount": 220,
     "estimatedMinutes": 15,
     "objectives": [
       {
@@ -227,7 +227,7 @@
       "id": "q-3",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “What a Remote-Work Pilot Revealed”.",
+      "prompt": "Put the first stages in the order used in “What a Remote-Work Pilot Revealed”.",
       "options": [
         {
           "id": "step-1-1",
@@ -268,7 +268,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “What a Remote-Work Pilot Revealed”.",
+      "prompt": "Put the middle stages in the order used in “What a Remote-Work Pilot Revealed”.",
       "options": [
         {
           "id": "step-2-1",
@@ -309,7 +309,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “What a Remote-Work Pilot Revealed”.",
+      "prompt": "Put the final stages in the order used in “What a Remote-Work Pilot Revealed”.",
       "options": [
         {
           "id": "step-3-1",

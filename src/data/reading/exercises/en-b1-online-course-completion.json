@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "An adult education centre reviewed the first year of its online English course after noticing that enrolment numbers were high but completion was uneven. Learners who finished usually studied in short sessions three times a week and received a personal message when they missed two activities. Interviews suggested that the message worked because it offered a next step rather than simply reminding people that they were behind. Learners who studied only at weekends often lost contact with the course during busy periods. The centre responded by adding a catch-up week after every four units and allowing learners to choose between two practice tasks. Completion improved slightly, although the change required tutors to prepare more materials. The review does not prove that flexible deadlines suit everyone. It does suggest that flexibility works best when a course still gives learners a clear rhythm, useful feedback, and a simple way to return after an interruption. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "plainTextForAnalysis": "An adult education centre reviewed the first year of its online English course after noticing that enrolment numbers were high but completion was uneven. Learners who finished usually studied in short sessions three times a week and received a personal message when they missed two activities. Interviews suggested that the message worked because it offered a next step rather than simply reminding people that they were behind. Learners who studied only at weekends often lost contact with the course during busy periods. The centre responded by adding a catch-up week after every four units and allowing learners to choose between two practice tasks. Completion improved slightly, although the change required tutors to prepare more materials. The review does not prove that flexible deadlines suit everyone. It does suggest that flexibility works best when a course still gives learners a clear rhythm, useful feedback, and a simple way to return after an interruption. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "wordCount": 242,
+    "targetText": "An adult education centre reviewed the first year of its online English course after noticing that enrolment numbers were high but completion was uneven. Learners who finished usually studied in short sessions three times a week and received a personal message when they missed two activities. Interviews suggested that the message worked because it offered a next step rather than simply reminding people that they were behind. Learners who studied only at weekends often lost contact with the course during busy periods. The centre responded by adding a catch-up week after every four units and allowing learners to choose between two practice tasks. Completion improved slightly, although the change required tutors to prepare more materials. The review does not prove that flexible deadlines suit everyone. Tutors noticed that the catch-up weeks helped most when they included a short summary of what learners had missed, not just extra time. A few learners, however, treated every unit as optional and fell further behind, which suggested that some structure still mattered. The centre is now testing whether a brief phone call, rather than another written message, makes a difference for learners who disappear for more than a month. It does suggest that flexibility works best when a course still gives learners a clear rhythm, useful feedback, and a simple way to return after an interruption.",
+    "plainTextForAnalysis": "An adult education centre reviewed the first year of its online English course after noticing that enrolment numbers were high but completion was uneven. Learners who finished usually studied in short sessions three times a week and received a personal message when they missed two activities. Interviews suggested that the message worked because it offered a next step rather than simply reminding people that they were behind. Learners who studied only at weekends often lost contact with the course during busy periods. The centre responded by adding a catch-up week after every four units and allowing learners to choose between two practice tasks. Completion improved slightly, although the change required tutors to prepare more materials. The review does not prove that flexible deadlines suit everyone. Tutors noticed that the catch-up weeks helped most when they included a short summary of what learners had missed, not just extra time. A few learners, however, treated every unit as optional and fell further behind, which suggested that some structure still mattered. The centre is now testing whether a brief phone call, rather than another written message, makes a difference for learners who disappear for more than a month. It does suggest that flexibility works best when a course still gives learners a clear rhythm, useful feedback, and a simple way to return after an interruption.",
+    "wordCount": 222,
     "estimatedMinutes": 15,
     "objectives": [
       {
@@ -227,7 +227,7 @@
       "id": "q-3",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Why Learners Finish an Online Course”.",
+      "prompt": "Put the first stages in the order used in “Why Learners Finish an Online Course”.",
       "options": [
         {
           "id": "step-1-1",
@@ -268,7 +268,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Why Learners Finish an Online Course”.",
+      "prompt": "Put the middle stages in the order used in “Why Learners Finish an Online Course”.",
       "options": [
         {
           "id": "step-2-1",
@@ -309,7 +309,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Why Learners Finish an Online Course”.",
+      "prompt": "Put the final stages in the order used in “Why Learners Finish an Online Course”.",
       "options": [
         {
           "id": "step-3-1",

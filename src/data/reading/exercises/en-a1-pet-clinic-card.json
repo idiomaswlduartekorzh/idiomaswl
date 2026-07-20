@@ -44,8 +44,8 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "The Green Street Pet Clinic has a new phone number. Please save 0188 442 900 in your phone. The clinic opens at nine every weekday and closes at five thirty. Saturday hours are ten to one. For an emergency, call the number on the blue card at the front desk. Dogs must wait outside until a nurse calls their name.",
-    "plainTextForAnalysis": "The Green Street Pet Clinic has a new phone number. Please save 0188 442 900 in your phone. The clinic opens at nine every weekday and closes at five thirty. Saturday hours are ten to one. For an emergency, call the number on the blue card at the front desk. Dogs must wait outside until a nurse calls their name.",
+    "targetText": "The Green Street Pet Clinic has a new phone number. Please save 0088 442 900 in your phone. The clinic opens at nine every weekday and closes at five thirty. Saturday hours are ten to one. For an emergency, call the number on the blue card at the front desk. Dogs must wait outside until a nurse calls their name.",
+    "plainTextForAnalysis": "The Green Street Pet Clinic has a new phone number. Please save 0088 442 900 in your phone. The clinic opens at nine every weekday and closes at five thirty. Saturday hours are ten to one. For an emergency, call the number on the blue card at the front desk. Dogs must wait outside until a nurse calls their name.",
     "wordCount": 60,
     "estimatedMinutes": 10,
     "objectives": [

@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "The Riverbend Food Cooperative began as a weekly market where small farmers could sell directly to residents. The market attracted attention, but farmers found it difficult to plan production because sales changed greatly from week to week. In its second year, the cooperative introduced a membership scheme. Members paid a small monthly amount and received a box of seasonal produce, while non-members could still buy individual items at the market. The predictable orders helped farmers reduce waste, but some members complained that the boxes contained vegetables they did not know how to cook. The cooperative responded with short recipe cards and monthly demonstrations led by different farmers. It also created a reduced-price membership for households on lower incomes. The new model has not made the cooperative financially secure, yet it has connected planning, education, and access more closely than the original market did. The board now wants to measure food waste and member retention before expanding to another neighbourhood. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "plainTextForAnalysis": "The Riverbend Food Cooperative began as a weekly market where small farmers could sell directly to residents. The market attracted attention, but farmers found it difficult to plan production because sales changed greatly from week to week. In its second year, the cooperative introduced a membership scheme. Members paid a small monthly amount and received a box of seasonal produce, while non-members could still buy individual items at the market. The predictable orders helped farmers reduce waste, but some members complained that the boxes contained vegetables they did not know how to cook. The cooperative responded with short recipe cards and monthly demonstrations led by different farmers. It also created a reduced-price membership for households on lower incomes. The new model has not made the cooperative financially secure, yet it has connected planning, education, and access more closely than the original market did. The board now wants to measure food waste and member retention before expanding to another neighbourhood. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "wordCount": 249,
+    "targetText": "The Riverbend Food Cooperative began as a weekly market where small farmers could sell directly to residents. The market attracted attention, but farmers found it difficult to plan production because sales changed greatly from week to week. In its second year, the cooperative introduced a membership scheme. Members paid a small monthly amount and received a box of seasonal produce, while non-members could still buy individual items at the market. The predictable orders helped farmers reduce waste, but some members complained that the boxes contained vegetables they did not know how to cook. The cooperative responded with short recipe cards and monthly demonstrations led by different farmers. It also created a reduced-price membership for households on lower incomes. The new model has not made the cooperative financially secure, yet it has connected planning, education, and access more closely than the original market did. The demonstrations had an unexpected effect, because several members who had first joined only for cheaper vegetables began volunteering at the market and suggesting new suppliers. At the same time, the reduced-price membership raised a difficult question, since a few full-paying members felt that the discount should be funded by the cooperative itself rather than by slightly higher prices for everyone else. The board now wants to measure food waste and member retention before expanding to another neighbourhood.",
+    "plainTextForAnalysis": "The Riverbend Food Cooperative began as a weekly market where small farmers could sell directly to residents. The market attracted attention, but farmers found it difficult to plan production because sales changed greatly from week to week. In its second year, the cooperative introduced a membership scheme. Members paid a small monthly amount and received a box of seasonal produce, while non-members could still buy individual items at the market. The predictable orders helped farmers reduce waste, but some members complained that the boxes contained vegetables they did not know how to cook. The cooperative responded with short recipe cards and monthly demonstrations led by different farmers. It also created a reduced-price membership for households on lower incomes. The new model has not made the cooperative financially secure, yet it has connected planning, education, and access more closely than the original market did. The demonstrations had an unexpected effect, because several members who had first joined only for cheaper vegetables began volunteering at the market and suggesting new suppliers. At the same time, the reduced-price membership raised a difficult question, since a few full-paying members felt that the discount should be funded by the cooperative itself rather than by slightly higher prices for everyone else. The board now wants to measure food waste and member retention before expanding to another neighbourhood.",
+    "wordCount": 221,
     "estimatedMinutes": 15,
     "objectives": [
       {
@@ -227,7 +227,7 @@
       "id": "q-3",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Local Food Cooperative Changes Its Model”.",
+      "prompt": "Put the first stages in the order used in “A Local Food Cooperative Changes Its Model”.",
       "options": [
         {
           "id": "step-1-1",
@@ -268,7 +268,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Local Food Cooperative Changes Its Model”.",
+      "prompt": "Put the middle stages in the order used in “A Local Food Cooperative Changes Its Model”.",
       "options": [
         {
           "id": "step-2-1",
@@ -309,7 +309,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Local Food Cooperative Changes Its Model”.",
+      "prompt": "Put the final stages in the order used in “A Local Food Cooperative Changes Its Model”.",
       "options": [
         {
           "id": "step-3-1",

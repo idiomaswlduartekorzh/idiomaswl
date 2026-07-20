@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "The residents of Sunfield began a community energy project after several winters of rising electricity bills. They installed solar panels on the roofs of the sports hall and two apartment blocks, then created a cooperative to manage the income. At first, meetings focused on the technical equipment, and fewer residents attended once the panels were working. The cooperative changed direction by publishing simple monthly reports and using part of the income to support families who could not afford efficient heaters. This decision brought more residents into the discussion, including people who did not own their homes. The project still produces less power in cloudy months, and the cooperative must buy electricity from the grid. Nevertheless, the members now see the panels as one part of a wider agreement about shared resources. Their next plan is to improve insulation before installing more panels. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "plainTextForAnalysis": "The residents of Sunfield began a community energy project after several winters of rising electricity bills. They installed solar panels on the roofs of the sports hall and two apartment blocks, then created a cooperative to manage the income. At first, meetings focused on the technical equipment, and fewer residents attended once the panels were working. The cooperative changed direction by publishing simple monthly reports and using part of the income to support families who could not afford efficient heaters. This decision brought more residents into the discussion, including people who did not own their homes. The project still produces less power in cloudy months, and the cooperative must buy electricity from the grid. Nevertheless, the members now see the panels as one part of a wider agreement about shared resources. Their next plan is to improve insulation before installing more panels. Taken together, these details show why a useful change needs more than a good first idea. People need clear information, a way to respond, and a follow-up measure that reveals what happened in practice. The result should therefore be read as evidence from one setting, not as a universal rule. A later review can test whether the same pattern appears elsewhere and whether the benefits justify the extra time, money, or coordination required. That cautious approach keeps the conclusion open while giving decision-makers a concrete basis for the next experiment.",
-    "wordCount": 232,
+    "targetText": "The residents of Sunfield began a community energy project after several winters of rising electricity bills. They installed solar panels on the roofs of the sports hall and two apartment blocks, then created a cooperative to manage the income. At first, meetings focused on the technical equipment, and fewer residents attended once the panels were working. The cooperative changed direction by publishing simple monthly reports and using part of the income to support families who could not afford efficient heaters. This decision brought more residents into the discussion, including people who did not own their homes. The project still produces less power in cloudy months, and the cooperative must buy electricity from the grid. Nevertheless, the members now see the panels as one part of a wider agreement about shared resources. One early disagreement concerned how to divide the savings. Some members wanted an equal share for every household, while others believed that families using the supported heaters should receive more. The cooperative decided to review the rule each year, using figures from the monthly reports rather than a single show of hands. This slower, evidence-based approach frustrated a few residents at first, but it reduced the feeling that a small group was making decisions behind closed doors, and attendance at meetings slowly recovered. Their next plan is to improve insulation before installing more panels.",
+    "plainTextForAnalysis": "The residents of Sunfield began a community energy project after several winters of rising electricity bills. They installed solar panels on the roofs of the sports hall and two apartment blocks, then created a cooperative to manage the income. At first, meetings focused on the technical equipment, and fewer residents attended once the panels were working. The cooperative changed direction by publishing simple monthly reports and using part of the income to support families who could not afford efficient heaters. This decision brought more residents into the discussion, including people who did not own their homes. The project still produces less power in cloudy months, and the cooperative must buy electricity from the grid. Nevertheless, the members now see the panels as one part of a wider agreement about shared resources. One early disagreement concerned how to divide the savings. Some members wanted an equal share for every household, while others believed that families using the supported heaters should receive more. The cooperative decided to review the rule each year, using figures from the monthly reports rather than a single show of hands. This slower, evidence-based approach frustrated a few residents at first, but it reduced the feeling that a small group was making decisions behind closed doors, and attendance at meetings slowly recovered. Their next plan is to improve insulation before installing more panels.",
+    "wordCount": 225,
     "estimatedMinutes": 15,
     "objectives": [
       {
@@ -227,7 +227,7 @@
       "id": "q-3",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Community Energy Project Learns to Share Power”.",
+      "prompt": "Put the first stages in the order used in “A Community Energy Project Learns to Share Power”.",
       "options": [
         {
           "id": "step-1-1",
@@ -268,7 +268,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Community Energy Project Learns to Share Power”.",
+      "prompt": "Put the middle stages in the order used in “A Community Energy Project Learns to Share Power”.",
       "options": [
         {
           "id": "step-2-1",
@@ -309,7 +309,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “A Community Energy Project Learns to Share Power”.",
+      "prompt": "Put the final stages in the order used in “A Community Energy Project Learns to Share Power”.",
       "options": [
         {
           "id": "step-3-1",

@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task. She did not memorise long answers because she wanted to sound natural. The evening before the interview, she checked the bus route and prepared two questions about the role. At the office, the manager asked about teamwork and reliability. Noor gave one clear example for each question and admitted when she did not know a technical word. She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "plainTextForAnalysis": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task. She did not memorise long answers because she wanted to sound natural. The evening before the interview, she checked the bus route and prepared two questions about the role. At the office, the manager asked about teamwork and reliability. Noor gave one clear example for each question and admitted when she did not know a technical word. She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "wordCount": 149,
+    "targetText": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task. She did not memorise long answers because she wanted to sound natural. The evening before the interview, she checked the bus route and prepared two questions about the role. At the office, the manager asked about teamwork and reliability. Noor gave one clear example for each question and admitted when she did not know a technical word. When she was unsure about one technical term, she explained how she would find the answer instead of guessing, and the manager seemed to appreciate that honesty. She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities.",
+    "plainTextForAnalysis": "Before her first job interview, Noor wrote down examples of times when she had solved a problem, helped a customer, or learned a new task. She did not memorise long answers because she wanted to sound natural. The evening before the interview, she checked the bus route and prepared two questions about the role. At the office, the manager asked about teamwork and reliability. Noor gave one clear example for each question and admitted when she did not know a technical word. When she was unsure about one technical term, she explained how she would find the answer instead of guessing, and the manager seemed to appreciate that honesty. She left without knowing the result, but she felt prepared because she had shown how she worked rather than only describing her qualities.",
+    "wordCount": 132,
     "estimatedMinutes": 12,
     "objectives": [
       {
@@ -264,7 +264,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Preparing for a First Job Interview”.",
+      "prompt": "Put the first stages in the order used in “Preparing for a First Job Interview”.",
       "options": [
         {
           "id": "step-1-1",
@@ -305,7 +305,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “Preparing for a First Job Interview”.",
+      "prompt": "Put the final stages in the order used in “Preparing for a First Job Interview”.",
       "options": [
         {
           "id": "step-2-1",

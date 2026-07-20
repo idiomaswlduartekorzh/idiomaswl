@@ -44,9 +44,9 @@
       "es": "Identifica la idea global, comprueba la evidencia y reconstruye la secuencia.",
       "en": "Identify the main idea, check evidence, and reconstruct the sequence."
     },
-    "targetText": "The community centre cooking class starts next Tuesday at six thirty. This month we are learning to make vegetable dumplings and a simple dipping sauce. The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers. Please tell the tutor about allergies when you arrive. The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning. The class ends at eight, and everyone can stay for a short tasting session. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "plainTextForAnalysis": "The community centre cooking class starts next Tuesday at six thirty. This month we are learning to make vegetable dumplings and a simple dipping sauce. The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers. Please tell the tutor about allergies when you arrive. The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning. The class ends at eight, and everyone can stay for a short tasting session. For planning purposes, readers should check the time, the conditions, and the person responsible. These details may change, so the safest choice is to confirm them before taking the next step. The message gives guidance, but people still need to make a practical decision.",
-    "wordCount": 129,
+    "targetText": "The community centre cooking class starts next Tuesday at six thirty. This month we are learning to make vegetable dumplings and a simple dipping sauce. The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers. Please tell the tutor about allergies when you arrive. The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning. Beginners are welcome, and the tutor demonstrates each step slowly before anyone tries it. Because places are limited, the centre keeps a short waiting list and opens a second group on Thursday whenever enough people ask. The class ends at eight, and everyone can stay for a short tasting session.",
+    "plainTextForAnalysis": "The community centre cooking class starts next Tuesday at six thirty. This month we are learning to make vegetable dumplings and a simple dipping sauce. The centre will provide bowls, knives, and all ingredients, but students should bring a clean apron and a container for leftovers. Please tell the tutor about allergies when you arrive. The kitchen has only eight workstations, so students who cannot attend should cancel by Monday morning. Beginners are welcome, and the tutor demonstrates each step slowly before anyone tries it. Because places are limited, the centre keeps a short waiting list and opens a second group on Thursday whenever enough people ask. The class ends at eight, and everyone can stay for a short tasting session.",
+    "wordCount": 121,
     "estimatedMinutes": 12,
     "objectives": [
       {
@@ -264,7 +264,7 @@
       "id": "q-4",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “What to Bring to the Cooking Class”.",
+      "prompt": "Put the first stages in the order used in “What to Bring to the Cooking Class”.",
       "options": [
         {
           "id": "step-1-1",
@@ -305,7 +305,7 @@
       "id": "q-5",
       "type": "ordering",
       "skill": "organization",
-      "prompt": "Put these stages in the order used in “What to Bring to the Cooking Class”.",
+      "prompt": "Put the final stages in the order used in “What to Bring to the Cooking Class”.",
       "options": [
         {
           "id": "step-2-1",

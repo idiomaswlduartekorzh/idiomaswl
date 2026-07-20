@@ -51,27 +51,28 @@ export function ReadingHub({
       </section>
 
       {exercises.length ? (
-        <section className={styles.cardGrid} aria-label={copy.title}>
+        <section className={styles.topicList} aria-label={copy.title}>
           {exercises.map((exercise, index) => (
-            <article className={styles.readingCard} key={exercise.id}>
-              <div className={styles.cardTopline}>
-                <span className={styles.levelPill}>{exercise.level.cefr}</span>
-                {exercise.status !== 'published' && <span className={styles.previewPill}>{copy.preview}</span>}
-              </div>
-              <p className={styles.cardNumber}>{String(index + 1).padStart(2, '0')}</p>
-              <h2>{localized(exercise.content.title, locale)}</h2>
-              <p>{localized(exercise.content.intro, locale)}</p>
-              <div className={styles.cardMeta}>
-                <span><Clock3 size={15} /> {exercise.content.estimatedMinutes} min</span>
-                <span><Sparkles size={15} /> {exercise.content.wordCount} {copy.words}</span>
-              </div>
-              <Link
-                className={styles.primaryLink}
-                href={readingExercisePath(locale, exercise.language, exercise.level.cefr, exercise.slug)}
-              >
-                {copy.start} <ArrowRight size={17} aria-hidden="true" />
-              </Link>
-            </article>
+            <Link
+              key={exercise.id}
+              className={styles.topicRow}
+              href={readingExercisePath(locale, exercise.language, exercise.level.cefr, exercise.slug)}
+            >
+              <span className={styles.topicNumber}>{index + 1}</span>
+              <span className={styles.topicBody}>
+                <span className={styles.topicHead}>
+                  <span className={styles.topicTitle}>{localized(exercise.content.title, locale)}</span>
+                  <span className={styles.topicTag}>{exercise.classification.genre}</span>
+                  {exercise.status !== 'published' && <span className={styles.previewPill}>{copy.preview}</span>}
+                </span>
+                <span className={styles.topicLead}>{localized(exercise.content.intro, locale)}</span>
+                <span className={styles.topicMeta}>
+                  <span><Clock3 size={13} /> {exercise.content.estimatedMinutes} min</span>
+                  <span><Sparkles size={13} /> {exercise.content.wordCount} {copy.words}</span>
+                </span>
+              </span>
+              <ArrowRight className={styles.topicArrow} size={20} aria-hidden="true" />
+            </Link>
           ))}
         </section>
       ) : (
