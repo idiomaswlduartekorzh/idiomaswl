@@ -90,11 +90,14 @@ export function StaggerItem({ children, className }: { children: React.ReactNode
 }
 
 // Hero left column — stagger each child
+// initial={false}: the hero H1 is the LCP element. Animating it in from
+// opacity:0 makes LCP wait on JS hydration (measured 8.6s on mobile).
+// Render already-visible and skip straight to "show" on mount.
 export function HeroLeft({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
       className="wlh-hero__left"
-      initial="hidden"
+      initial={false}
       animate="show"
       variants={staggerContainer}
     >
@@ -112,11 +115,13 @@ export function HeroItem({ children, className }: { children: React.ReactNode; c
 }
 
 // Hero card (right side) — fade-up + slight scale
+// initial={false}: same LCP reasoning as HeroLeft — render visible immediately,
+// don't gate first paint of above-the-fold content on JS hydration.
 export function HeroCard({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
       className="wlh-hero__right"
-      initial={{ opacity: 0, y: 36, scale: 0.97 }}
+      initial={false}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] as [number,number,number,number] }}
     >
