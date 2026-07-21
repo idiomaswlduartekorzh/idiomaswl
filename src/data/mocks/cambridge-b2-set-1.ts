@@ -1,4 +1,5 @@
 import type { MockExam } from './types';
+import { distributeAnswers } from './cambridge-b2-listening-sets';
 
 // Cambridge B2 First (FCE) – Practice Test 1
 // Structure follows the official Cambridge B2 First exam format.
@@ -552,84 +553,53 @@ const mock: MockExam = {
 
     // ─────────────────────────────────────────────────────────────────────────
     // PAPER 3 — Listening · Part 1: Multiple Choice – short extracts
+    // Audio real (englishpracticetest.net). Preguntas de comprensión propias
+    // de WeLearn — no reproducen el enunciado ni la transcripción originales.
     // ─────────────────────────────────────────────────────────────────────────
     {
       part: 9,
       title: 'Listening – Part 1: Multiple Choice (short extracts)',
       skill: 'listening',
-      transcript: `EXTRACT 1 — A woman telling a friend about a camping holiday
-Woman: "I honestly thought I'd have a terrible night's sleep — you know what I'm like at home with my fancy mattress! But honestly, I was so wrong. I fell asleep the moment my head hit the pillow and didn't wake up until sunrise. The fresh air, the sounds of nature... I've never slept so soundly in my life. It was genuinely the most relaxing part of the whole trip."
-
-EXTRACT 2 — A man and his daughter talking about her plans for next summer
-Daughter: "I'm thinking of going travelling around Southeast Asia with some friends."
-Father: "That sounds amazing, but travel costs money. Have you thought about getting a summer job first? I'd feel a lot better if you could fund it yourself rather than asking me for help."
-Daughter: "But all my friends are going straight after exams..."
-Father: "I know, but honestly — if you saved for two or three months, you'd have a much better trip. Just think about it."
-
-EXTRACT 3 — Two college students talking about a history assignment
-Student 1: "This assignment is enormous. Should we split the topics — you take half, I take half?"
-Student 2: "I thought about that, but we'd end up with something really inconsistent. The writing styles would be completely different."
-Student 1: "True. What if we both worked through it together in the library?"
-Student 2: "Yeah, I think that's better. We can keep each other on track and it'll feel less overwhelming."
-Student 1: "Agreed. Saturday morning?"
-
-EXTRACT 4 — A woman describing a running race she took part in
-Woman: "I'd trained for months for that race. I wasn't fast — nowhere near the front — but when I crossed that finish line, I wasn't thinking about where I'd finished. I just felt this enormous surge of pride. I'd set myself a goal and I'd done it. My time, my achievement. I burst into tears, if I'm honest."
-
-EXTRACT 5 — A man and a woman talking about a new restaurant
-Man: "I finally went to that new Italian place."
-Woman: "And? Was it expensive?"
-Man: "The prices were fine, actually. And the menu is quite short — maybe eight or nine dishes — but honestly, every single thing we ordered was extraordinary. The pasta especially. The best I've had outside Italy."
-Woman: "My colleague said exactly the same thing about the food."
-
-EXTRACT 6 — Two friends talking about a film they have seen
-Woman: "Did you see that new thriller? The reviews were all over the place."
-Man: "I did. I went in expecting to be disappointed, honestly. But it really surprised me — it was genuinely better than anything those reviewers suggested. I wouldn't say it was the best thing I've ever seen, but it was solid. Worth your time."
-
-EXTRACT 7 — A woman talking on the radio about recycling
-Woman: "The biggest mistake people make when they start recycling is assuming the rules are the same everywhere. They're not. What gets collected, how it needs to be sorted, what goes in which bin — it all varies by area. So before you do anything else, go to your council's website and read their guidance. Once you know exactly what applies to you, everything else follows naturally."
-
-EXTRACT 8 — A young man talking about his career as a chef
-Man: "People assume I always knew I wanted to cook, but it wasn't like that at all. My uncle has run a restaurant for decades and I used to spend school holidays helping out there. When I was about sixteen, he pulled me aside and said, 'You've got a real feel for this — you should train seriously.' That conversation changed everything. Without him saying that, I honestly think I'd be doing something completely different now."`,
+      audioUrl: '/audio/cambridge-b2/mock1/b2-test-23-1.mp3',
       instructions:
-        'Read each extract and choose the best answer (A, B or C). In the real exam, you would listen to recordings — here, read the transcripts carefully instead.',
+        'You will hear eight different recordings. For each question, choose the answer (A, B or C) that best fits what you hear. Play the audio above; you can replay it as often as you need.',
       questions: [
         {
           type: 'mcq',
           id: 'li-p1-q1',
           part: 9,
-          stimulusLabel: 'Extract 1 — You hear a woman telling a friend about a camping holiday.',
-          text: 'What does the woman say about sleeping in a tent?',
+          stimulusLabel: 'Extract 1 — A man briefs a group before a rainforest expedition.',
+          text: '(1) What does the man warn the group against doing?',
           options: [
-            'A  She found it less comfortable than expected.',
-            'B  She was surprised by how relaxing she found it.',
-            'C  She was disappointed with the sleeping arrangements.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq',
-          id: 'li-p1-q2',
-          part: 9,
-          stimulusLabel: 'Extract 2 — You hear a man and his daughter talking about her plans for next summer.',
-          text: 'What does the father want his daughter to do?',
-          options: [
-            'A  Earn some money.',
-            'B  Do voluntary work.',
-            'C  Travel to another country.',
+            'A  Washing with scented soap or shampoo.',
+            'B  Swimming in the rivers near their camp.',
+            'C  Sleeping without any insect cream on.',
           ],
           answer: 0,
         },
         {
           type: 'mcq',
+          id: 'li-p1-q2',
+          part: 9,
+          stimulusLabel: 'Extract 2 — Two parents discuss a school football competition.',
+          text: '(2) What is the woman’s overall opinion of the event?',
+          options: [
+            'A  It failed because too few people helped organise it.',
+            'B  It achieved its purpose even though it lacked excitement.',
+            'C  It was fun but did not raise the money it needed.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
           id: 'li-p1-q3',
           part: 9,
-          stimulusLabel: 'Extract 3 — You hear two college students talking about a history assignment.',
-          text: 'What do they agree to do?',
+          stimulusLabel: 'Extract 3 — A woman recalls her studies at the Beijing Opera School.',
+          text: '(3) How did she feel once her classes had begun?',
           options: [
-            'A  Divide the research between them.',
-            'B  Work on it together.',
-            'C  Ask for the deadline to be extended.',
+            'A  Proud of being the school’s first Western student.',
+            'B  Frustrated during the early lessons.',
+            'C  Worried that her language skills were too weak.',
           ],
           answer: 1,
         },
@@ -637,38 +607,38 @@ Man: "People assume I always knew I wanted to cook, but it wasn't like that at a
           type: 'mcq',
           id: 'li-p1-q4',
           part: 9,
-          stimulusLabel: 'Extract 4 — You hear a woman describing a running race she took part in.',
-          text: 'How did she feel when she crossed the finish line?',
+          stimulusLabel: 'Extract 4 — A comedian talks on the radio about his early career.',
+          text: '(4) Why is he telling this story?',
           options: [
-            'A  Relieved that she had managed to finish.',
-            'B  Proud of her personal achievement.',
-            'C  Disappointed by her finishing position.',
+            'A  To show how much luck helped him at the start.',
+            'B  To prove he was talented from a very young age.',
+            'C  To recommend the training he once received.',
           ],
-          answer: 1,
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'li-p1-q5',
           part: 9,
-          stimulusLabel: 'Extract 5 — You hear a man and a woman talking about a new restaurant.',
-          text: 'What do they agree about?',
+          stimulusLabel: 'Extract 5 — You hear a woman speaking on the phone.',
+          text: '(5) Who is she most probably talking to?',
           options: [
-            'A  The menu was limited.',
-            'B  The prices were too high.',
-            'C  The food was excellent.',
+            'A  An assistant or colleague at her workplace.',
+            'B  A travel agent she has never met.',
+            'C  A member of her own family.',
           ],
-          answer: 2,
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'li-p1-q6',
           part: 9,
-          stimulusLabel: 'Extract 6 — You hear two friends talking about a film they have seen.',
-          text: 'What does the man say about the film?',
+          stimulusLabel: 'Extract 6 — A novelist describes how she works.',
+          text: '(6) How does she say she develops ideas for her novels?',
           options: [
-            'A  It was longer than he expected.',
-            'B  It was better than the reviews suggested.',
-            'C  It was the best film he had seen that year.',
+            'A  She bases them directly on her own travels.',
+            'B  She lets them grow slowly in her mind over years.',
+            'C  She writes down every new idea straight away.',
           ],
           answer: 1,
         },
@@ -676,12 +646,12 @@ Man: "People assume I always knew I wanted to cook, but it wasn't like that at a
           type: 'mcq',
           id: 'li-p1-q7',
           part: 9,
-          stimulusLabel: 'Extract 7 — You hear a woman talking on the radio about recycling.',
-          text: 'What is her advice to people who want to start recycling?',
+          stimulusLabel: 'Extract 7 — A woman is speaking to a friend on the phone.',
+          text: '(7) What is she doing during the call?',
           options: [
-            'A  Focus on one type of material at a time.',
-            'B  Find out what can be recycled in your area.',
-            'C  Start with items you use every day at home.',
+            'A  Turning down an invitation.',
+            'B  Rejecting a criticism made about her.',
+            'C  Apologising for forgetting an event.',
           ],
           answer: 1,
         },
@@ -689,12 +659,12 @@ Man: "People assume I always knew I wanted to cook, but it wasn't like that at a
           type: 'mcq',
           id: 'li-p1-q8',
           part: 9,
-          stimulusLabel: 'Extract 8 — You hear a young man talking about his career as a chef.',
-          text: 'Why did he choose to become a chef?',
+          stimulusLabel: 'Extract 8 — You hear a radio announcement about a future programme.',
+          text: '(8) What kind of programme is being announced?',
           options: [
-            'A  A family member encouraged him.',
-            'B  He enjoyed cooking from an early age.',
-            'C  He wanted to work in a creative profession.',
+            'A  A drama featuring a child.',
+            'B  A reading from a children’s book.',
+            'C  A travel and holiday programme.',
           ],
           answer: 0,
         },
@@ -702,45 +672,15 @@ Man: "People assume I always knew I wanted to cook, but it wasn't like that at a
     },
 
     // ─────────────────────────────────────────────────────────────────────────
-    // PAPER 3 — Listening · Part 2: Sentence Completion
+    // PAPER 3 — Listening · Part 2: Sentence Completion (audio real, preguntas propias)
     // ─────────────────────────────────────────────────────────────────────────
     {
       part: 9,
       title: 'Listening – Part 2: Sentence Completion',
       skill: 'listening',
-      transcript: `RADIO INTERVIEW — Sandra White, historical researcher
-
-Presenter: "Sandra, when did history first capture your imagination?"
-Sandra: "I was about eight years old. My parents took me to visit a castle during the school summer holidays and I was completely fascinated. Standing in those old rooms, I kept thinking about all the people who had lived there hundreds of years ago. That visit planted a seed."
-
-Presenter: "And where did you study?"
-Sandra: "I did my undergraduate degree at Bristol University, then a postgraduate at London. Bristol is where I really fell in love with original sources."
-
-Presenter: "What was your first professional role?"
-Sandra: "I was taken on by a local museum to research their old records — mainly parish registers, tax documents, that sort of thing. Most people would find it terribly dull, but I was in my element."
-
-Presenter: "How would you describe the work to someone with no background in it?"
-Sandra: "The best comparison is being a detective. You're given a puzzle — a gap in the historical record — and you have to piece together clues from fragments of evidence to find an answer. It really is detective work."
-
-Presenter: "What do you find most challenging?"
-Sandra: "Reading old handwriting, without a doubt. Documents from the sixteenth and seventeenth centuries were written in scripts that are almost unrecognisable to modern eyes. It takes years of practice to read them fluently."
-
-Presenter: "Tell us about your most recent project."
-Sandra: "I've just completed a major study on everyday life in seventeenth century London — what people ate, how they travelled, how they dealt with illness. It's one of the richest periods for surviving records."
-
-Presenter: "You use technology in your research too, don't you?"
-Sandra: "Yes — I use a specialised computer programme to analyse data from historical documents. It can identify patterns across thousands of records far faster than any human reader. It's transformed how we work."
-
-Presenter: "You've also written a book?"
-Sandra: "I have — about the history of food in Britain. It took five years to research and write. I'm enormously proud of it, though I'd do several things differently now."
-
-Presenter: "You do outreach work with schools?"
-Sandra: "Yes, I give talks to local schools whenever I can. History can feel abstract and distant for young people, so I try to make it immediate — to show them that real people lived these stories."
-
-Presenter: "Finally — what quality does a good historical researcher most need?"
-Sandra: "Patience, above everything. You can spend weeks tracking down a single fact that may not even exist in the historical record. If you're not patient, this work will destroy you."`,
+      audioUrl: '/audio/cambridge-b2/mock1/b2-test-23-2.mp3',
       instructions:
-        'Read the interview transcript and complete the sentences with a word or short phrase. In the real exam, you would listen to the recording — here, read carefully instead.',
+        'You will hear a radio interview with Brian Coleford, who flies microlight aircraft. Complete each sentence with a word or short phrase, based on what you hear.',
       questions: [
         {
           type: 'formgroup',
@@ -748,136 +688,100 @@ Sandra: "Patience, above everything. You can spend weeks tracking down a single 
           part: 9,
           qRange: [9, 18],
           groupLabel: 'Complete each sentence with a word or short phrase from the recording.',
-          title: 'Sandra White – Historical Researcher',
+          title: 'Brian Coleford – microlight pilot',
           template:
-            '(9) Sandra first became interested in history when she visited a {{9}} as a child.\n(10) She studied history at {{10}} University.\n(11) Her first job involved researching old {{11}} for a museum.\n(12) She describes the work of a historical researcher as similar to being a {{12}}.\n(13) Sandra says that reading old {{13}} is the most challenging part of her work.\n(14) She recently completed a project about life in {{14}} century London.\n(15) Sandra uses a special computer programme to analyse {{15}} from historical documents.\n(16) Her book about the history of {{16}} took five years to write.\n(17) Sandra gives {{17}} to local schools to raise awareness of history.\n(18) She thinks the best quality a researcher needs is {{18}}.',
+            '(9) Before he retired, Brian worked as a pilot for {{9}}.\n(10) He says flying a microlight feels like being a bird because there is no {{10}} around him.\n(11) To change direction, the pilot has to {{11}} rather than lean.\n(12) On his record-breaking trip, Brian flew all the way from London to {{12}}.\n(13) The only change made to his aircraft was fitting a special {{13}}.\n(14) Planning the 49-day journey took Brian {{14}}.\n(15) His radio had a range of only {{15}}, so he was often out of contact.\n(16) Brian says the most dangerous part of the trip was flying over the {{16}}.\n(17) He describes his satellite navigation system as very {{17}}.\n(18) During the flight, his main difficulty was feeling {{18}}.',
           blanks: [
-            { num: 9,  answers: ['castle', 'museum', 'historical site'] },
-            { num: 10, answers: ['Bristol', 'London', 'Cambridge', 'Oxford'] },
-            { num: 11, answers: ['records', 'documents', 'maps'] },
-            { num: 12, answers: ['detective'] },
-            { num: 13, answers: ['handwriting', 'manuscripts', 'letters'] },
-            { num: 14, answers: ['17th', 'seventeenth', '18th', 'eighteenth', '19th', 'nineteenth'] },
-            { num: 15, answers: ['data', 'information', 'text'] },
-            { num: 16, answers: ['food', 'trade', 'medicine', 'transport'] },
-            { num: 17, answers: ['talks', 'presentations', 'visits'] },
-            { num: 18, answers: ['patience', 'curiosity', 'attention to detail'] },
+            { num: 9,  answers: ['British Airways', 'BA'] },
+            { num: 10, answers: ['cabin'] },
+            { num: 11, answers: ['push', 'push himself', 'push his weight'] },
+            { num: 12, answers: ['Australia'] },
+            { num: 13, answers: ['fuel tank', 'fuel-tank', 'petrol tank'] },
+            { num: 14, answers: ['nine months', '9 months'] },
+            { num: 15, answers: ['70 miles', 'seventy miles'] },
+            { num: 16, answers: ['sea', 'ocean'] },
+            { num: 17, answers: ['accurate'] },
+            { num: 18, answers: ['tired', 'tiredness', 'exhausted'] },
           ],
         },
       ],
     },
 
     // ─────────────────────────────────────────────────────────────────────────
-    // PAPER 3 — Listening · Part 3: Multiple Matching
+    // PAPER 3 — Listening · Part 3: Multiple Matching (audio real, preguntas propias)
     // ─────────────────────────────────────────────────────────────────────────
     {
       part: 9,
       title: 'Listening – Part 3: Multiple Matching',
       skill: 'listening',
-      transcript: `Five speakers talking about a physical challenge they completed.
-
-SPEAKER 1:
-"I'd been aware of the challenge for years but never seriously considered it for myself. Then my neighbour — who's not particularly sporty at all — went and completed it. Watching her do something I'd assumed was beyond ordinary people made me think, 'Well, if she can manage it, maybe I can too.' She didn't even know she'd inspired me until I told her afterwards."
-
-SPEAKER 2:
-"To be honest, the physical side of it was almost secondary for me. My brother had been through a really difficult time with his health, and the charity that supported him changed his life. So when the opportunity came up to do something challenging and raise funds for them at the same time, I didn't hesitate. The training was hard, but the reason I was doing it kept me going."
-
-SPEAKER 3:
-"I'd trained really hard — I was physically prepared. My body held up fine, actually. What I wasn't ready for was the voice in my head somewhere past the halfway point telling me to stop, that I couldn't do it. Fighting that mental battle was far more draining than anything physical. That's the part nobody warns you about."
-
-SPEAKER 4:
-"I finished it and I'm really proud. But honestly? I was already thinking about what's next before I'd even crossed the finish line. I want something more demanding — longer distance, more elevation. Once you realise what you're capable of, a small challenge doesn't feel satisfying anymore. I want to push it further."
-
-SPEAKER 5:
-"People in my life had always told me I wasn't the sporty type. And for years I believed them. Entering this challenge was partly about shutting those voices out — the external ones and the internal ones. I needed to know the truth about what I could do. Standing at the finish line, I had my answer. That was worth every hard training session."`,
+      audioUrl: '/audio/cambridge-b2/mock1/b2-test-23-3.mp3',
       instructions:
-        'Read the five extracts and choose from the options (A–H) what each speaker says. Use each letter only once. In the real exam, you would listen — here, read the transcripts carefully.',
+        'You will hear five people talking about a short course they attended. Choose from the list (A–H) what each speaker says. There are three extra letters you do not need. Use each letter once.',
       questions: [
         {
           type: 'mcq',
           id: 'li-p3-q19',
           part: 9,
-          stimulusLabel: 'Options: A=I wanted to raise money for charity · B=I trained with a friend · C=I underestimated how hard it would be · D=I was inspired by someone I know · E=I found the mental challenge harder than the physical · F=I would not do it again · G=I want to do something harder next time · H=I did it to prove something to myself',
-          text: 'Speaker 1:',
-          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
-          answer: 3,
+          stimulusLabel: 'Options — A: They plan to take a similar course again. · B: They felt it was excellent value for money. · C: They realised something about how they learn best. · D: The tutors advised them to move up to a higher level. · E: They enjoyed meeting people more than the course itself. · F: They were let down by the food and accommodation. · G: They made a friend they still keep in touch with. · H: They found the subject easier than they had feared.',
+          text: 'Speaker 1',
+          options: ['A  Plan to take a similar course again', 'B  Felt it was excellent value', 'C  Realised how they learn best', 'D  Advised to move up a level', 'E  Enjoyed the people more than the course', 'F  Let down by food and accommodation', 'G  Made a lasting friend', 'H  Found the subject easier than feared'],
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'li-p3-q20',
           part: 9,
-          text: 'Speaker 2:',
-          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
-          answer: 0,
+          text: 'Speaker 2',
+          options: ['A  Plan to take a similar course again', 'B  Felt it was excellent value', 'C  Realised how they learn best', 'D  Advised to move up a level', 'E  Enjoyed the people more than the course', 'F  Let down by food and accommodation', 'G  Made a lasting friend', 'H  Found the subject easier than feared'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'li-p3-q21',
           part: 9,
-          text: 'Speaker 3:',
-          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
-          answer: 4,
+          text: 'Speaker 3',
+          options: ['A  Plan to take a similar course again', 'B  Felt it was excellent value', 'C  Realised how they learn best', 'D  Advised to move up a level', 'E  Enjoyed the people more than the course', 'F  Let down by food and accommodation', 'G  Made a lasting friend', 'H  Found the subject easier than feared'],
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'li-p3-q22',
           part: 9,
-          text: 'Speaker 4:',
-          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
-          answer: 6,
+          text: 'Speaker 4',
+          options: ['A  Plan to take a similar course again', 'B  Felt it was excellent value', 'C  Realised how they learn best', 'D  Advised to move up a level', 'E  Enjoyed the people more than the course', 'F  Let down by food and accommodation', 'G  Made a lasting friend', 'H  Found the subject easier than feared'],
+          answer: 3,
         },
         {
           type: 'mcq',
           id: 'li-p3-q23',
           part: 9,
-          text: 'Speaker 5:',
-          options: ['A  Raise money for charity', 'B  Trained with a friend', 'C  Underestimated the difficulty', 'D  Inspired by someone they know', 'E  Mental > physical challenge', 'F  Would not do it again', 'G  Wants something harder next time', 'H  To prove something to themselves'],
-          answer: 7,
+          text: 'Speaker 5',
+          options: ['A  Plan to take a similar course again', 'B  Felt it was excellent value', 'C  Realised how they learn best', 'D  Advised to move up a level', 'E  Enjoyed the people more than the course', 'F  Let down by food and accommodation', 'G  Made a lasting friend', 'H  Found the subject easier than feared'],
+          answer: 4,
         },
       ],
     },
 
     // ─────────────────────────────────────────────────────────────────────────
-    // PAPER 3 — Listening · Part 4: Multiple Choice – long extract
+    // PAPER 3 — Listening · Part 4: Multiple Choice – long extract (audio real, preguntas propias)
     // ─────────────────────────────────────────────────────────────────────────
     {
       part: 9,
       title: 'Listening – Part 4: Multiple Choice (long extract)',
       skill: 'listening',
-      transcript: `INTERVIEW — Tom Briggs, handmade furniture maker
-
-Presenter: "Tom, how did you end up making furniture for a living?"
-Tom: "I was renovating my house and had a very specific idea for a dining table — the exact style, dimensions, the type of wood. I searched everywhere and simply couldn't find what I had in mind. Everything was either wrong or just generic. So I thought, I'll try making it myself. That first table turned out better than I expected, and I suppose I never stopped."
-
-Presenter: "Did you have any formal training?"
-Tom: "Not at first. But there was a retired craftsman in my village — a man who'd spent forty years making furniture — and he took me on, informally. I spent about a year working with him, watching and learning. That kind of hands-on tuition from someone experienced is worth more than anything else. I'm very grateful to him."
-
-Presenter: "How did your business actually start?"
-Tom: "I made a side table as a birthday present for my sister, and she took it along to a local craft fair — not to sell, just as something to show off. But people kept asking her where it was from. So I went along to the next fair with four pieces, and they all sold on the day. That was the moment I realised this could be a real business."
-
-Presenter: "What was the hardest thing you faced in that first year?"
-Tom: "Pricing. When you pour twenty or thirty hours into a piece, how do you put a fair number on that? I kept charging too little because I felt awkward asking for what it was genuinely worth. I was essentially working for nothing. Learning to value my own time and skill was a real battle."
-
-Presenter: "Tell us about your workspace."
-Tom: "It's a converted garage at the bottom of my garden. I've spent three years getting it exactly right — the tool layout, the ventilation, the lighting. Every time I walk in, I feel ready to work. I'm genuinely proud of how it's set up. It's my favourite place to be."
-
-Presenter: "Are you looking to grow the business?"
-Tom: "People ask me that often. Investors have approached me. But I'm very cautious about scaling up too quickly. Growing fast is how you lose the thing that made you different in the first place. I need to be involved in every piece personally — the moment I'm not, I'm just running a factory. That's not what I want."
-
-Presenter: "What advice would you give someone thinking of doing something similar?"
-Tom: "Don't try to compete on price or volume. You'll lose to mass manufacturers every time. Instead, focus entirely on quality — make every single piece the best you possibly can. The customers who choose handmade aren't looking for cheap. They want something made with care that will last decades. Give them that, and you'll find your audience."`,
+      audioUrl: '/audio/cambridge-b2/mock1/b2-test-23-4.mp3',
       instructions:
-        'Read the interview and choose the best answer (A, B or C). In the real exam, you would listen to the recording — here, read the transcript carefully instead.',
+        'You will hear an interview with Martin Middleton, a wildlife television programme maker. For each question, choose the answer (A, B or C) that fits best.',
       questions: [
         {
           type: 'mcq',
           id: 'li-p4-q24',
           part: 9,
-          text: '(24) Why did Tom decide to start making furniture?',
+          text: '(24) Where does Martin say his love of adventure began?',
           options: [
-            'A  He had always been interested in woodwork.',
-            'B  He could not find what he wanted to buy.',
-            'C  A friend suggested it as a business idea.',
+            'A  From living abroad when he was young.',
+            'B  From things he read about distant places as a child.',
+            'C  From a television film he saw about Africa.',
           ],
           answer: 1,
         },
@@ -885,23 +789,23 @@ Tom: "Don't try to compete on price or volume. You'll lose to mass manufacturers
           type: 'mcq',
           id: 'li-p4-q25',
           part: 9,
-          text: '(25) What does Tom say about his early training?',
+          text: '(25) What does he say about his early filming trip to Borneo?',
           options: [
-            'A  He learnt mainly by watching online videos.',
-            'B  He attended a course at a local college.',
-            'C  He was taught by an experienced craftsman.',
+            'A  They filmed whatever they came across, with no fixed plan.',
+            'B  They set out to make a programme about river life.',
+            'C  They were mainly interested in old buildings.',
           ],
-          answer: 2,
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'li-p4-q26',
           part: 9,
-          text: '(26) How did Tom find his first customers?',
+          text: '(26) How does Martin say wildlife filming has changed since the 1960s?',
           options: [
-            'A  Through social media advertising.',
-            'B  By word of mouth.',
-            'C  At a craft fair.',
+            'A  It has become more relaxed and spontaneous.',
+            'B  It relies far more on luck than before.',
+            'C  It is now planned in far greater detail.',
           ],
           answer: 2,
         },
@@ -909,35 +813,35 @@ Tom: "Don't try to compete on price or volume. You'll lose to mass manufacturers
           type: 'mcq',
           id: 'li-p4-q27',
           part: 9,
-          text: '(27) What was the biggest challenge Tom faced in the first year?',
+          text: '(27) How does Martin now look back on his iceberg experience?',
           options: [
-            'A  Finding reliable suppliers for materials.',
-            'B  Managing his time between making and selling.',
-            'C  Setting the right price for his products.',
+            'A  As a rather absurd situation to have ended up in.',
+            'B  As the most frightening moment of his career.',
+            'C  As something that left him feeling low.',
           ],
-          answer: 2,
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'li-p4-q28',
           part: 9,
-          text: '(28) What does Tom say about his workshop?',
+          text: '(28) What does Martin prefer to do when he goes on holiday?',
           options: [
-            'A  It is too small for his current needs.',
-            'B  He is proud of how he has set it up.',
-            'C  He shares it with another craftsperson.',
+            'A  Relax and do very little by the sea.',
+            'B  Stay somewhere especially comfortable.',
+            'C  Travel with a particular purpose in mind.',
           ],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',
           id: 'li-p4-q29',
           part: 9,
-          text: '(29) What is Tom\'s attitude towards expanding the business?',
+          text: '(29) What worries Martin about the growth of tourism?',
           options: [
-            'A  He is cautious about growing too quickly.',
-            'B  He is eager to take on more staff soon.',
-            'C  He is considering moving to larger premises.',
+            'A  That once-remote places are losing what made them special.',
+            'B  That it is becoming too expensive for ordinary travellers.',
+            'C  That it brings little money to local communities.',
           ],
           answer: 0,
         },
@@ -945,16 +849,17 @@ Tom: "Don't try to compete on price or volume. You'll lose to mass manufacturers
           type: 'mcq',
           id: 'li-p4-q30',
           part: 9,
-          text: '(30) What advice does Tom give to people who want to start a similar business?',
+          text: '(30) What is Martin’s overall view of tourism?',
           options: [
-            'A  Start by selling at markets before opening a shop.',
-            'B  Make sure your product is genuinely different from others.',
-            'C  Focus on quality rather than producing large quantities.',
+            'A  It should be discouraged wherever possible.',
+            'B  It can be positive when it is carefully managed.',
+            'C  It already works well almost everywhere.',
           ],
-          answer: 2,
+          answer: 1,
         },
       ],
     },
+
 
     // ─────────────────────────────────────────────────────────────────────────
     // PAPER 4 — Speaking
@@ -1015,5 +920,9 @@ Tom: "Don't try to compete on price or volume. You'll lose to mass manufacturers
     },
   ],
 };
+
+// Spread the listening correct answers across A/B/C (they were authored with the
+// correct option written first). Same deterministic transform as sets 2–10.
+mock.sections = distributeAnswers(mock.sections, 'set-1');
 
 export default mock;

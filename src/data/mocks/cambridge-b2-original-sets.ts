@@ -1,4 +1,5 @@
 import type { MockExam, MockSection, MCQQuestion, FormBlank } from './types';
+import { SET_LISTENING, buildListeningSections } from './cambridge-b2-listening-sets';
 
 type TopicSpec = {
   set: number;
@@ -600,12 +601,17 @@ function makeSpeaking(t: TopicSpec): MockSection {
 }
 
 function buildMock(t: TopicSpec): MockExam {
+  const listeningSpec = SET_LISTENING[t.set];
+  const listening = listeningSpec ? buildListeningSections(listeningSpec) : [];
+  const hasListening = listening.length > 0;
   return {
     id: `set-${t.set}`,
     examSlug: 'cambridge-b2',
     title: `Cambridge B2 First - Practice Test ${t.set}`,
-    subtitle: `${t.subtitle} - Listening pending`,
-    timeMinutes: 169,
+    subtitle: hasListening
+      ? `${t.subtitle} - Reading & Use of English · Writing · Listening · Speaking`
+      : `${t.subtitle} - Listening pending`,
+    timeMinutes: hasListening ? 209 : 169,
     sections: [
       makePart1(t),
       makePart2(t),
@@ -615,6 +621,7 @@ function buildMock(t: TopicSpec): MockExam {
       makePart6(t),
       makePart7(t),
       makeWriting(t),
+      ...listening,
       makeSpeaking(t),
     ],
   };
