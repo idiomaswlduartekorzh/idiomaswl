@@ -11,11 +11,11 @@ function answer(question: ListeningQuestion, choice: number | undefined) {
   return choice !== undefined && question.options[choice]?.correct
 }
 
-function speak(text: string) {
+function speak(text: string, lang: string) {
   if (!window.speechSynthesis) return
   window.speechSynthesis.cancel()
   const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'en-US'
+  utterance.lang = lang
   utterance.rate = 0.8
   window.speechSynthesis.speak(utterance)
 }
@@ -28,6 +28,9 @@ export default function ListeningJourney({
   progressKey,
   seriesTitle,
   seriesDescription,
+  languageLabel = 'Inglés',
+  skillLabel = 'Listening',
+  speechLang = 'en-US',
 }: {
   exercises: ListeningExercise[]
   level?: string
@@ -36,6 +39,12 @@ export default function ListeningJourney({
   progressKey?: string
   seriesTitle?: string
   seriesDescription?: string
+  /** Nombre del idioma para migas y encabezado (p. ej. "Italiano"). */
+  languageLabel?: string
+  /** Etiqueta de la destreza en el idioma meta (p. ej. "Ascolto"). */
+  skillLabel?: string
+  /** BCP-47 para speechSynthesis; sin esto las palabras se leen con acento inglés. */
+  speechLang?: string
 }) {
   const [selectedId, setSelectedId] = useState(exercises[0]?.id ?? '')
   const [stage, setStage] = useState<Stage>(0)
@@ -90,15 +99,15 @@ export default function ListeningJourney({
     <div className="listen-shell">
       <aside className="listen-catalog" aria-label={`Ejercicios de escucha ${level}`}>
         <div className="listen-catalog__head"><span>{seriesTitle ?? `Ruta ${level}`}</span><strong>{completed.length}/{exercises.length} completados</strong></div>
-        {[0, 1, 2, 3].map(block => {
+        {Array.from({ length: Math.ceil(exercises.length / 5) }, (_, block) => {
           const set = exercises.slice(block * 5, block * 5 + 5)
           return <section key={block} className="listen-block"><h2>Bloque {block + 1}</h2>{set.map(item => <button type="button" key={item.id} className={`listen-card${item.id === exercise.id ? ' is-active' : ''}`} onClick={() => selectExercise(item.id)}><span>{completed.includes(item.id) ? '✓' : item.order}</span><div><b>{item.title}</b><small>{item.audioAvailable === false ? 'Audio en preparación' : `${item.duration}s · ${item.titleEs}`}</small></div></button>)}</section>
         })}
       </aside>
 
       <section className="listen-work" id="listening-player">
-        <Link href={backHref} className="listen-back">← Inglés {level}</Link>
-        <p className="eyebrow"><span className="ink-line" />Listening · Inglés {level} · Ejercicio {exercise.order} de {exercises.length}</p>
+        <Link href={backHref} className="listen-back">← {languageLabel} {level}</Link>
+        <p className="eyebrow"><span className="ink-line" />{skillLabel} · {languageLabel} {level} · Ejercicio {exercise.order} de {exercises.length}</p>
         <h1>🎧 {exercise.title}</h1>
         {seriesDescription && <p className="listen-series">{seriesDescription}</p>}
         <p className="listen-objective">{exercise.objective}</p>
@@ -106,9 +115,9 @@ export default function ListeningJourney({
 
         <ol className="listen-steps" aria-label="Progreso del ejercicio">{STAGES.map((label, index) => <li key={label} className={index === stage ? 'is-current' : index < stage ? 'is-done' : ''}><span>{index < stage ? '✓' : index + 1}</span><em>{label}</em></li>)}</ol>
 
-        {stage === 0 && <section className="listen-panel"><p className="listen-kicker">1. Preparar el oído</p><h2>Palabras que te ayudarán a escuchar</h2><p>Escúchalas y relaciónalas con su significado. No necesitas memorizar todas.</p><div className="listen-keywords">{exercise.keywords.map(item => <button type="button" key={item.en} onClick={() => speak(item.en)}><b>🔊 {item.en}</b><span>{item.es}</span></button>)}</div><button className="listen-primary" onClick={nextStage}>Ya estoy listo para escuchar</button></section>}
+        {stage === 0 && <section className="listen-panel"><p className="listen-kicker">1. Preparar el oído</p><h2>Palabras que te ayudarán a escuchar</h2><p>Escúchalas y relaciónalas con su significado. No necesitas memorizar todas.</p><div className="listen-keywords">{exercise.keywords.map(item => <button type="button" key={item.en} onClick={() => speak(item.en, speechLang)}><b>🔊 {item.en}</b><span>{item.es}</span></button>)}</div><button className="listen-primary" onClick={nextStage}>Ya estoy listo para escuchar</button></section>}
 
-        {stage >= 1 && stage <= 5 && (audioAvailable ? <div className="listen-player"><audio ref={audioRef} src={`${audioBasePath}/listening-${String(exercise.order).padStart(2, '0')}.mp3`} onPlay={() => setPlayed(true)} onTimeUpdate={event => setCurrentTime(event.currentTarget.currentTime)} /><button className="listen-play" type="button" onClick={() => { const audio = audioRef.current; if (!audio) return; audio.paused ? audio.play() : audio.pause() }}>▶ Escuchar {played ? 'de nuevo' : ''}</button><button className="listen-rewind" type="button" onClick={() => { if (audioRef.current) audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5) }}>↺ 5 s</button><div className="listen-timeline"><span style={{ width: `${Math.min(100, (currentTime / exercise.duration) * 100)}%` }} /></div><small>{Math.floor(currentTime)} s / ~{exercise.duration} s</small></div> : <div className="listen-empty">🎙️ Este guion ya está preparado. El audio se activará cuando esté grabado.</div>)}
+        {stage >= 1 && stage <= 5 && (audioAvailable ? <div className="listen-player"><audio ref={audioRef} src={`${audioBasePath}/${exercise.audioFile ?? `listening-${String(exercise.order).padStart(2, '0')}`}.mp3`} onPlay={() => setPlayed(true)} onTimeUpdate={event => setCurrentTime(event.currentTarget.currentTime)} /><button className="listen-play" type="button" onClick={() => { const audio = audioRef.current; if (!audio) return; audio.paused ? audio.play() : audio.pause() }}>▶ Escuchar {played ? 'de nuevo' : ''}</button><button className="listen-rewind" type="button" onClick={() => { if (audioRef.current) audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5) }}>↺ 5 s</button><div className="listen-timeline"><span style={{ width: `${Math.min(100, (currentTime / exercise.duration) * 100)}%` }} /></div><small>{Math.floor(currentTime)} s / ~{exercise.duration} s</small></div> : <div className="listen-empty">🎙️ Este guion ya está preparado. El audio se activará cuando esté grabado.</div>)}
 
         {stage === 1 && <QuestionCard question={exercise.gist} choice={gistChoice} onChoose={setGistChoice} title="2. Primera escucha · idea general" help="Escucha sin leer. Busca el tema, no cada palabra." onContinue={nextStage} disabled={!audioAvailable || !played || gistChoice === undefined} />}
         {stage === 2 && <section className="listen-panel"><p className="listen-kicker">3. Segunda escucha · detalles</p><h2>Ahora busca datos concretos</h2>{exercise.details.length ? exercise.details.map((question, index) => <QuestionCard key={question.prompt} question={question} choice={detailChoices[index]} onChoose={choice => setDetailChoices(current => ({ ...current, [index]: choice }))} compact />) : <p>Las preguntas de detalle para este audio se activarán al cargar su guion alineado.</p>}<button className="listen-primary" onClick={nextStage} disabled={!played || (exercise.details.length > 0 && Object.keys(detailChoices).length < exercise.details.length)}>Revisar lo que escuché</button></section>}

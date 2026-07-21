@@ -19,6 +19,8 @@ export type ListeningExercise = {
   details: ListeningQuestion[]
   consolidation: ListeningQuestion
   audioAvailable?: boolean
+  /** Nombre del mp3 sin extensión. Por defecto: listening-<order>. */
+  audioFile?: string
 }
 
 const q = (prompt: string, correct: string, wrong: string[], feedback: string): ListeningQuestion => ({
