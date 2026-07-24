@@ -19,6 +19,9 @@ import icfesMock17 from './icfes-mock-17';
 import icfesMock18 from './icfes-mock-18';
 import icfesMock19 from './icfes-mock-19';
 import icfesMock20 from './icfes-mock-20';
+import icfesMock21 from './icfes-mock-21';
+import icfesMock22 from './icfes-mock-22';
+import icfesMock23 from './icfes-mock-23';
 import ieltsSet1 from './ielts-set-1';
 import ieltsSet2 from './ielts-set-2';
 import ieltsSet3 from './ielts-set-3';
@@ -86,6 +89,9 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'icfes:mock-18': icfesMock18,
   'icfes:mock-19': icfesMock19,
   'icfes:mock-20': icfesMock20,
+  'icfes:mock-21': icfesMock21,
+  'icfes:mock-22': icfesMock22,
+  'icfes:mock-23': icfesMock23,
   // ── IELTS Academic sets 1–20 ──────────────────────────────────────────────
   'ielts:set-1':  ieltsSet1,
   'ielts:set-2':  ieltsSet2,
