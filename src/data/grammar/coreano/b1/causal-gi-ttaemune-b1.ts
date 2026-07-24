@@ -168,7 +168,7 @@ const topic: GrammarTopic = {
         intro: 'Completa un análisis académico con -기 때문에.',
         type: 'guidedText',
         scene: 'Análisis de un problema social.',
-        text: '인구 증가 때문에 도시가 커지고 있어요. 개발이 빨라___ 환경 문제가 생겨요. 사람들이 자동차를 많이 타___ 오염이 심해졌어요. 정부가 조치를 취하지 않___ 상황이 악화될 거예요.',
+        text: '인구 증가 때문에 도시가 커지고 있어요. 개발이 빨라[[0]] 환경 문제가 생겨요. 사람들이 자동차를 많이 타[[1]] 오염이 심해졌어요. 정부가 조치를 취하지 않[[2]] 상황이 악화될 거예요.',
         blanks: [
           { options: ['어서', '기 때문에', '-니까'], answer: '기 때문에', explain: 'Análisis formal: -기 때문에.' },
           { options: ['어서', '기 때문에', '-도록'], answer: '기 때문에', explain: 'Análisis causal: -기 때문에.' },

@@ -109,7 +109,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Quizas no venga — 来る',
-            lines: [['David', '田中さんは___かもしれません。(quizas Tanaka no venga)']],
+            lines: [['Enzo', '田中さんは___かもしれません。(quizas Tanaka no venga)']],
             options: ['来ない', '来ません', '来ないです', '来る'],
             answer: '来ない',
             explain: 'Verbo negativo forma plana: 来ない + かもしれません = quizas no venga.',
@@ -137,14 +137,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Quizas este perdido',
-            lines: [['Jose', '彼は道に___かもしれません。(quizas este perdido — 迷う)']],
+            lines: [['Gael', '彼は道に___かもしれません。(quizas este perdido — 迷う)']],
             options: ['迷っている', '迷います', '迷いました', '迷う'],
             answer: '迷っている',
             explain: '迷っている (progresivo plano) + かもしれません = quizas este perdido ahora.',
           },
           {
             scene: 'Forma informal',
-            lines: [['Zhanna', '電車、遅れてる___。(quizas el tren este retrasado — informal)']],
+            lines: [['Elena', '電車、遅れてる___。(quizas el tren este retrasado — informal)']],
             options: ['かも', 'かもしれません', 'かもしれない', 'でしょう'],
             answer: 'かも',
             explain: 'かも es la forma informal muy abreviada de かもしれない. Muy usada en el habla cotidiana.',
@@ -168,7 +168,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sobre una persona',
-            lines: [['David', 'あの人、田中さん[[0]]かもしれないよ。'], ['Ana', 'でも、もっと若い[[1]]かもしれない。']],
+            lines: [['Enzo', 'あの人、田中さん[[0]]かもしれないよ。'], ['Ana', 'でも、もっと若い[[1]]かもしれない。']],
             blanks: [
               { options: ['かもしれません', 'だかもしれません', 'はかもしれません'], answer: 'かもしれません', explain: '田中さん (sustantivo) + かもしれません. Sin だ.' },
               { options: ['かもしれない', 'だかもしれない', 'はかもしれない'], answer: 'かもしれない', explain: 'もっと若い (adj. い comparativo) + かもしれない.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sobre el examen',
-            lines: [['Jose', 'この試験は[[0]]かもしれない。'], ['Zhanna', '私は[[1]]かもしれない、ちゃんと勉強したから。']],
+            lines: [['Gael', 'この試験は[[0]]かもしれない。'], ['Elena', '私は[[1]]かもしれない、ちゃんと勉強したから。']],
             blanks: [
               { options: ['難しい', '難しいです', '難しだ'], answer: '難しい', explain: '難しい (adj. い) + かもしれない.' },
               { options: ['大丈夫', '大丈夫だ', '大丈夫です'], answer: '大丈夫', explain: '大丈夫 (adj. な): SIN だ antes de かもしれない.' },
@@ -240,7 +240,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Quizas no venga a la clase',
-            prompt: 'Escribe: Quizas David no venga a la clase → 授業 + 来ない',
+            prompt: 'Escribe: Quizas Enzo no venga a la clase → 授業 + 来ない',
             answer: 'ダビッドさんは授業に来ないかもしれません。',
             accepted: ['来ないかもしれません', '来ないかもしれない'],
             explain: '来ない (negativo plano) + かもしれません.',

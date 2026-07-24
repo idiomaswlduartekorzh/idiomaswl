@@ -208,7 +208,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Forma el compuesto: die Arbeit + s + der Platz',
-            lines: [['Resultado', '→ ___ [[0]]']],
+            lines: [['Resultado', '→ [[0]] ']],
             blanks: [
               { answer: 'der Arbeitsplatz', explain: 'die Arbeit + -s- (Fugenelement) + der Platz → der Arbeitsplatz. Género: der (Platz).' },
             ],
@@ -229,7 +229,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Forma el compuesto: die Sonne + n + die Brille',
-            lines: [['Resultado', '→ ___ [[0]]']],
+            lines: [['Resultado', '→ [[0]] ']],
             blanks: [
               { answer: 'die Sonnenbrille', explain: 'die Sonne + -n- (Fugenelement) + die Brille → die Sonnenbrille. Género: die (Brille).' },
             ],

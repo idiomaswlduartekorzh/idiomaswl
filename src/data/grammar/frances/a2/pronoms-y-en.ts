@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el diálogo con y o en.',
         type: 'guidedText',
         scene: 'Un client parle avec le vendeur dans une épicerie.',
-        text: 'Client: Bonjour ! Vous avez du pain de campagne ? Vendeur: Oui, nous [[0]] avons. Client: J\'[[0]] prends deux. Et des tomates ? Vendeur: Il [[0]] reste quelques-unes. Client: Je vais aussi au marché — vous [[1]] allez ? Vendeur: J\'[[1]] vais parfois. Client: Vous pensez souvent aux promotions ? Vendeur: Oui, j\'[[1]] pense toujours !',
+        text: 'Client: Bonjour ! Vous avez du pain de campagne ? Vendeur: Oui, nous [[0]] avons. Client: J\'[[1]] prends deux. Et des tomates ? Vendeur: Il [[2]] reste quelques-unes. Client: Je vais aussi au marché — vous [[3]] allez ? Vendeur: J\'[[4]] vais parfois. Client: Vous pensez souvent aux promotions ? Vendeur: Oui, j\'[[5]] pense toujours !',
         blanks: [
           { options: ['en', 'y', 'le', 'lui'], answer: 'en', explain: '"en avons / j\'en prends / il en reste" = partitivo → en.' },
           { options: ['y', 'en', 'lui', 'le'], answer: 'y', explain: '"y allez / j\'y vais / j\'y pense" = lieu/à+chose → y.' },
@@ -182,7 +182,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe y o en para reemplazar el complemento.',
         type: 'freeText',
         scene: 'Remplacez le complément souligné par y ou en.',
-        text: 'Elle va à la bibliothèque. → Elle ___ va. / Il mange de la pizza. → Il ___ mange. / Nous pensons à notre voyage. → Nous ___ pensons. / Il a des sœurs ? — Oui, il ___ a trois.',
+        text: 'Elle va à la bibliothèque. → Elle [[0]] va. / Il mange de la pizza. → Il [[1]] mange. / Nous pensons à notre voyage. → Nous [[2]] pensons. / Il a des sœurs ? — Oui, il [[3]] a trois.',
         blanks: [
           { answer: 'y', explain: '"Elle y va" = va allí (lieu → y).' },
           { answer: 'en', explain: '"Il en mange" = come de ella (de la pizza → en partitivo).' },

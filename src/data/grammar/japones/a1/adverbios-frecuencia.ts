@@ -98,7 +98,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'A menudo veo películas',
-            lines: [['David', '___ えいがを 見ます。(A menudo veo películas.)']],
+            lines: [['Hugo', '___ えいがを 見ます。(A menudo veo películas.)']],
             options: ['よく', 'あまり', '全然', 'いつも'],
             answer: 'よく',
             explain: 'よく (yoku) = a menudo, frecuentemente. Con forma afirmativa.',
@@ -126,7 +126,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No tomo café casi nunca',
-            lines: [['Zhanna', 'コーヒーは ___ 飲み___。(Casi no tomo café.)']],
+            lines: [['Sara', 'コーヒーは ___ 飲み___。(Casi no tomo café.)']],
             options: ['あまり / ません', 'よく / ます', 'いつも / ます', '時々 / ます'],
             answer: 'あまり / ません',
             explain: 'あまり + ません = no mucho. コーヒーは あまり 飲みません.',
@@ -164,16 +164,16 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'David a veces',
-            lines: [['David', '[[0]] ともだちと えいがを [[1]]。(A veces veo películas con amigos.)']],
+            scene: 'Hugo a veces',
+            lines: [['Hugo', '[[0]] ともだちと えいがを [[1]]。(A veces veo películas con amigos.)']],
             blanks: [
               { options: ['時々', '全然', 'あまり'], answer: '時々', explain: '時々 (tokidoki) = a veces. Con afirmativa.' },
               { options: ['見ます', '見ません', 'みません'], answer: '見ます', explain: '時々 → afirmativa → 見ます.' },
             ],
           },
           {
-            scene: 'Zhanna y el deporte',
-            lines: [['Zhanna', 'スポーツは [[0]] し[[1]]。でも、さんぽは [[0]] し[[1]]。(No hago deporte para nada. Pero camino a menudo.)']],
+            scene: 'Sara y el deporte',
+            lines: [['Sara', 'スポーツは [[0]] し[[1]]。でも、さんぽは [[2]] し[[3]]。(No hago deporte para nada. Pero camino a menudo.)']],
             blanks: [
               { options: ['全然 / よく', 'いつも / あまり', 'たまに / 全然'], answer: '全然 / よく', explain: '全然 (para nada)+ません → よく (a menudo)+ます. Contraste.' },
               { options: ['ません / ます', 'ます / ません', 'ました / ました'], answer: 'ません / ます', explain: '全然+ません / よく+ます.' },

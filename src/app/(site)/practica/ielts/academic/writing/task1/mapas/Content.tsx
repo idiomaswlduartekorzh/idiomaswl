@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
-import { IELTSMapDiagramVisual } from '../Task1VisualLab';
+import MapPracticeEngine from './MapPracticeEngine';
 
 interface MapChange {
   id: string;
@@ -16,6 +16,7 @@ interface MapChange {
 
 interface MapExercise {
   title: string;
+  image: string;
   changes: MapChange[];
   modelParagraph: string;
 }
@@ -23,6 +24,7 @@ interface MapExercise {
 const EXERCISES: MapExercise[] = [
   {
     title: 'Town centre changes, 1990-2020',
+    image: '/images/ielts/task1/visual-bank/user-batch-02/06-map-town-centre.png',
     changes: [
       { id: 'a', before: 'Park', after: 'Housing estate', location: 'in the north-western part of the centre', modelSentence: 'The park in the north-western part of the town centre was replaced by a housing estate.' },
       { id: 'b', before: 'Factory', after: 'School', location: 'in the north-eastern part of the centre', modelSentence: 'The factory in the north-eastern part of the centre was demolished and replaced by a school.' },
@@ -33,6 +35,7 @@ const EXERCISES: MapExercise[] = [
   },
   {
     title: 'University campus development, 1995-2025',
+    image: '/images/ielts/task1/visual-bank/user-batch-02/07-map-university-campus.png',
     changes: [
       { id: 'a', before: 'Lecture hall', after: 'Library', location: 'in the north-west', modelSentence: 'The lecture hall in the north-west was replaced by a library.' },
       { id: 'b', before: 'Garden', after: 'Student flats', location: 'in the north-east', modelSentence: 'The garden in the north-east was redeveloped as student flats.' },
@@ -43,6 +46,7 @@ const EXERCISES: MapExercise[] = [
   },
   {
     title: 'Coastal village changes, 2000-2025',
+    image: '/images/ielts/task1/visual-bank/user-batch-02/08-map-coastal-village.png',
     changes: [
       { id: 'a', before: 'Fishing harbour', after: 'Marina', location: 'on the eastern coast', modelSentence: 'The fishing harbour on the eastern coast was redeveloped as a marina.' },
       { id: 'b', before: 'Fields', after: 'Holiday resort', location: 'in the northern area', modelSentence: 'The fields in the northern area were replaced by a holiday resort.' },
@@ -53,6 +57,7 @@ const EXERCISES: MapExercise[] = [
   },
   {
     title: 'Park changes, 1980-2020',
+    image: '/images/ielts/task1/visual-bank/user-batch-02/10-map-park-redevelopment.png',
     changes: [
       { id: 'a', before: 'Woodland', after: 'Playground', location: 'in the north-west', modelSentence: 'The woodland in the north-west was cleared to make way for a playground.' },
       { id: 'b', before: 'Pond', after: 'Cafe', location: 'in the north-east', modelSentence: 'The pond in the north-east was replaced by a cafe.' },
@@ -63,6 +68,7 @@ const EXERCISES: MapExercise[] = [
   },
   {
     title: 'Shopping centre redevelopment',
+    image: '/images/ielts/task1/visual-bank/user-batch-02/09-map-shopping-centre.png',
     changes: [
       { id: 'a', before: 'Small shops', after: 'Department store', location: 'in the western block', modelSentence: 'The small shops in the western block were replaced by a department store.' },
       { id: 'b', before: 'Bus stop', after: 'Taxi rank', location: 'beside the main entrance', modelSentence: 'The bus stop beside the main entrance was converted into a taxi rank.' },
@@ -112,6 +118,12 @@ export default function MapasPage() {
             officialFormat="IELTS Academic Writing Task 1 may present maps as visual information. Maps are a practice route for that input, not a separate official task."
             welearnStrategy="We isolate maps because they require location, transformation and time-comparison language."
             answerCheck="A strong response describes visible changes, uses spatial prepositions and does not infer benefits or reasons that are not shown."
+            relatedLinks={[
+              { href: '/practica/ielts/academic/writing/task1/overview', label: 'Write the overview' },
+              { href: '/practica/ielts/academic/writing/task1/body-1', label: 'Build Body 1' },
+              { href: '/practica/ielts/academic/writing/task1/body-2', label: 'Build Body 2' },
+              { href: '/practica/ielts/academic/writing/task1/procesos', label: 'Describe processes' },
+            ]}
           />
 
           <Task1ChartTypeGuide />
@@ -133,7 +145,7 @@ export default function MapasPage() {
           </div>
 
           {/* Vocab */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
               <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Location</p>
               <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
@@ -156,16 +168,23 @@ export default function MapasPage() {
             <span style={{ fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{exIdx + 1}/{EXERCISES.length}</span>
           </div>
 
-          {/* Original IELTS-style map visual */}
+          {/* Original WeLearn map visual */}
           <div id="map-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.65rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
-            <IELTSMapDiagramVisual variant={exIdx} />
+            <img
+              src={ex.image}
+              alt={`${ex.title}. Original WeLearn IELTS Task 1 map reference showing the before and after layout.`}
+              width={1600}
+              height={1000}
+              loading={exIdx === 0 ? 'eager' : 'lazy'}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 6 }}
+            />
           </div>
 
           {/* Guided map practice */}
           <div className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem' }}>
             <p style={{ fontSize: '0.7rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.75rem' }}>{ex.title}</p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem' }}>
               {['Before', 'After'].map((label, ti) => (
                 <div key={label}>
                   <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', fontFamily: 'var(--mono)', margin: '0 0 0.4rem', textTransform: 'uppercase' }}>{label}</p>
@@ -219,6 +238,8 @@ export default function MapasPage() {
           <button className="btn btn-sm" onClick={next}>
             {exIdx < EXERCISES.length - 1 ? 'Next map →' : 'Back to the beginning →'}
           </button>
+
+          <MapPracticeEngine />
         </div>
       </div>
     </section>

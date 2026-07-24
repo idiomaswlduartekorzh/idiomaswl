@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con себя/себе/собой o свой.',
         type: 'guidedText',
         scene: 'Анна рассказывает о себе.',
-        text: 'Мне нравится рассказывать о [[0]]. Я горжусь [[1]] — я много работала этот год. Я всегда ношу с [[1]] маленькую записную книжку. Я люблю [[2]] кота — он самый умный ! Мой коллега тоже любит кошек, но он любит [[3]] кошку больше.',
+        text: 'Мне нравится рассказывать о [[0]]. Я горжусь [[1]] — я много работала этот год. Я всегда ношу с [[2]] маленькую записную книжку. Я люблю [[3]] кота — он самый умный ! Мой коллега тоже любит кошек, но он любит [[4]] кошку больше.',
         blanks: [
           { options: ['себе', 'себя', 'собой', 'себе'], answer: 'себе', explain: '"о себе" — preposición о + prepositivo → себе.' },
           { options: ['собой', 'себя', 'себе', 'свой'], answer: 'собой', explain: '"горжусь собой / ношу с собой" — instrumental → собой.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe себя/себе/собой o свой con concordancia.',
         type: 'freeText',
         scene: 'Напишите правильную форму.',
-        text: 'Она думает о ___. (reflexivo, sobre sí misma) / Он доволен ___. (reflexivo, Instrumental) / Они взяли ___ паспорта. (sus propios, pl.) / Возьми зонтик с ___. (contigo, Instrumental)',
+        text: 'Она думает о [[0]]. (reflexivo, sobre sí misma) / Он доволен [[1]]. (reflexivo, Instrumental) / Они взяли [[2]] паспорта. (sus propios, pl.) / Возьми зонтик с [[3]]. (contigo, Instrumental)',
         blanks: [
           { answer: 'себе', explain: '"о себе" — preposición о + prepositivo → себе.' },
           { answer: 'собой', explain: '"доволен собой" — предикат со instrumental → собой.' },

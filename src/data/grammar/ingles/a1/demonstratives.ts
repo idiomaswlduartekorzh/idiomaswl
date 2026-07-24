@@ -62,7 +62,7 @@ const topic: GrammarTopic = {
     {
       heading: 'Usos cotidianos de los demostrativos en A1',
       paragraphs: [
-        'Presentaciones: This is my teacher, David. That is my classmate Ana. These are my notes. Señalando objetos: This is my phone. That is your book on the desk. Comercio: How much is this? Those shoes are expensive. En un aula: These exercises are easy. That board is hard to read from here.',
+        'Presentaciones: This is my teacher, Diego. That is my classmate Ana. These are my notes. Señalando objetos: This is my phone. That is your book on the desk. Comercio: How much is this? Those shoes are expensive. En un aula: These exercises are easy. That board is hard to read from here.',
         'En inglés hablado también se usa this para introducir algo o alguien por teléfono: Hi, this is Carlos. Y that para referirse a algo que acaba de suceder: That was great! Was that your teacher?',
       ],
     },
@@ -75,6 +75,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'This books are new.', 'Correcto', 'These books are new.'],
         ['Incorrecto', 'Those student is my friend.', 'Correcto', 'That student is my friend.'],
         ['Incorrecto', 'These is a great idea.', 'Correcto', 'This is a great idea.'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre this, that, these y those?',
+      paragraphs: [
+        'Se combinan cercanía y número: "this" (esto/este, cerca, singular), "that" (eso/aquel, lejos, singular), "these" (estos, cerca, plural), "those" (esos/aquellos, lejos, plural). Ejemplos: "this book", "that car", "these shoes", "those houses".',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan los demostrativos en inglés?',
+      paragraphs: [
+        'Van antes del sustantivo (o solos): "This is my phone", "I like those shoes". Marcan distancia (cerca = this/these; lejos = that/those) y número (singular = this/that; plural = these/those). A diferencia del español, no cambian por género.',
+      ],
+    },
+    {
+      heading: '¿"These" y "those" son singular o plural?',
+      paragraphs: [
+        'Ambos son plurales: "these" = estos/estas (cerca), "those" = esos/esas/aquellos (lejos). Sus equivalentes singulares son "this" y "that". Ejemplo: "this book" → "these books"; "that dog" → "those dogs".',
       ],
     },
   ],
@@ -171,9 +189,9 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Presentando personas',
-            lines: [['David', '[[0]] is Zhanna, my co-director. [[1]] are our star students from group A1.']],
+            lines: [['Diego', '[[0]] is Alba, my co-director. [[1]] are our star students from group A1.']],
             blanks: [
-              { options: ['This', 'These', 'That', 'Those'], answer: 'This', explain: 'Presentando a alguien cercano singular: This is Zhanna.' },
+              { options: ['This', 'These', 'That', 'Those'], answer: 'This', explain: 'Presentando a alguien cercano singular: This is Alba.' },
               { options: ['This', 'These', 'That', 'Those'], answer: 'These', explain: 'Presentando a un grupo cercano: These are our students.' },
             ],
           },
@@ -259,9 +277,9 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Presentación',
-            prompt: 'Corrige: These is my teacher, David. (Un solo profesor.)',
-            answer: 'This is my teacher, David.',
-            accepted: ['this is my teacher david', 'this is my teacher, david'],
+            prompt: 'Corrige: These is my teacher, Diego. (Un solo profesor.)',
+            answer: 'This is my teacher, Diego.',
+            accepted: ['this is my teacher diego', 'this is my teacher, diego'],
             explain: 'Singular: This is my teacher.',
           },
         ],

@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma progresiva correcta.',
         type: 'freeText',
         scene: '지금 무엇을 하고 있어요?',
-        text: '지금 한국어를 ___ (공부하다). / 그때 친구를 ___ (기다리다). / 음악을 ___ (듣다). / 옷을 ___ (입다 — estado resultado).',
+        text: '지금 한국어를 [[0]] (공부하다). / 그때 친구를 [[1]] (기다리다). / 음악을 [[2]] (듣다). / 옷을 [[3]] (입다 — estado resultado).',
         blanks: [
           { answer: '공부하고 있어요', explain: '"공부하고 있어요" = estoy estudiando.' },
           { answer: '기다리고 있었어요', explain: '"기다리고 있었어요" = estaba esperando (pasado progresivo).' },

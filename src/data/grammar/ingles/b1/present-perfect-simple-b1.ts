@@ -206,7 +206,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los deberes',
-            lines: [['', 'A: [[0]] you [[0]] (finish) your homework? B: Not [[1]].']],
+            lines: [['', 'A: [[0]] you [[1]] (finish) your homework? B: Not [[2]].']],
             blanks: [
               { options: ['Have / finished', 'Has / finished', 'Did / finish', 'Are / finishing'], answer: 'Have / finished', explain: 'Have you finished: you → have. Pregunta por resultado actual.' },
               { options: ['yet', 'already', 'just', 'ever'], answer: 'yet', explain: 'Not yet: todavía no (yet en negativas al final).' },

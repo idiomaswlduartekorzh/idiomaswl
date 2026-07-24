@@ -109,7 +109,7 @@ const topic: GrammarTopic = {
           {
             scene: 'мало + genitivo',
             lines: [['', 'У нас мало _____ . (tiempo — genitivo de время)']],
-            options: ['времени', 'время', 'времени', 'временем'],
+            options: ['времени', 'время', 'временем'],
             answer: 'времени',
             explain: 'мало + genitivo: время → времени (irregular neutro -мя → -мени).',
           },

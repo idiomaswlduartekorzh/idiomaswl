@@ -159,7 +159,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Logo que / en cuanto',
             lines: [['', 'Logo que ___ da escola, vamos ao parque.']],
-            options: ['sair', 'saíres', 'sair', 'sairem'],
+            options: ['sair', 'saíres', 'sairem'],
             answer: 'sair',
             explain: '"Sair" futuro conjuntivo: eu/ele = sair (igual al infinitivo en verbos regulares). "Logo que" + futuro conjuntivo.',
           },

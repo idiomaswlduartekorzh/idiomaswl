@@ -50,15 +50,55 @@ const topic: GrammarTopic = {
     {
       heading: 'El passato prossimo: el pasado más usado en italiano',
       paragraphs: [
-        'El passato prossimo es el tiempo pasado del italiano hablado y estándar. Equivale tanto al pretérito perfecto compuesto español ("he comido") como al pretérito indefinido ("comí") en contextos cotidianos. Con avere se construye con el auxiliar conjugado en presente más el participio pasado.',
-        'La regla de oro: los verbos transitivos (que tienen objeto directo) usan avere. Ho comprato il pane. Ho visto Maria. Ho fatto i compiti. Si el verbo lleva un complemento directo, casi siempre va con avere.',
+        'El passato prossimo es el tiempo pasado del italiano hablado. Equivale tanto al pretérito perfecto compuesto ("he comido") como al indefinido ("comí"). Con avere se forma con el auxiliar en presente + el participio pasado, y ese participio NO cambia con el sujeto (siempre en -o). Esta es la conjugación con avere:',
+      ],
+      table: [
+        ['Persona', 'avere', 'Ejemplo (mangiare → mangiato)'],
+        ['io', 'ho', 'ho mangiato'],
+        ['tu', 'hai', 'hai mangiato'],
+        ['lui/lei', 'ha', 'ha mangiato'],
+        ['noi', 'abbiamo', 'abbiamo mangiato'],
+        ['voi', 'avete', 'avete mangiato'],
+        ['loro', 'hanno', 'hanno mangiato'],
       ],
     },
     {
-      heading: 'Participios regulares e irregulares',
+      heading: 'Participios pasados: regulares e irregulares',
       paragraphs: [
-        'Los verbos en -are forman -ato (mangiare→mangiato), los en -ere forman -uto (vendere→venduto) y los en -ire forman -ito (finire→finito). Estos patrones cubren la mayoría de verbos cotidianos.',
-        'Los irregulares más frecuentes son: fare→fatto, dire→detto, scrivere→scritto, leggere→letto, prendere→preso, vedere→visto, chiudere→chiuso, perdere→perso. Como son tan usados, conviene memorizarlos directamente.',
+        'Los regulares se forman por conjugación: -are → -ato (mangiato), -ere → -uto (venduto), -ire → -ito (finito). Pero muchísimos verbos frecuentes de la segunda conjugación (-ere) tienen participio irregular y hay que memorizarlos. Esta es la tabla de los más usados:',
+      ],
+      table: [
+        ['Infinitivo', 'Participio', 'Español'],
+        ['fare', 'fatto', 'hecho'],
+        ['dire', 'detto', 'dicho'],
+        ['scrivere', 'scritto', 'escrito'],
+        ['leggere', 'letto', 'leído'],
+        ['prendere', 'preso', 'tomado'],
+        ['vedere', 'visto', 'visto'],
+        ['chiudere', 'chiuso', 'cerrado'],
+        ['aprire', 'aperto', 'abierto'],
+        ['chiedere', 'chiesto', 'pedido'],
+        ['mettere', 'messo', 'puesto'],
+        ['rispondere', 'risposto', 'respondido'],
+        ['bere', 'bevuto', 'bebido'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el passato prossimo con avere?',
+      paragraphs: [
+        'Con el presente de avere (ho, hai, ha, abbiamo, avete, hanno) + el participio pasado del verbo: "ho parlato", "hai venduto", "ha finito". Con avere el participio se queda invariable en -o, sin importar el sujeto: "Maria ha mangiato" (no "mangiata").',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa avere y cuándo essere en el passato prossimo?',
+      paragraphs: [
+        'Se usa avere con los verbos transitivos, los que llevan objeto directo ("Ho visto un film", "Ho mangiato la pizza"). Se usa essere con verbos de movimiento y de cambio de estado (andare, venire, uscire, nascere, diventare) y con los reflexivos. Con essere el participio SÍ concuerda: "Maria è andata".',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los participios irregulares más comunes en italiano?',
+      paragraphs: [
+        'fatto (fare), detto (dire), scritto (scrivere), letto (leggere), preso (prendere), visto (vedere), chiuso (chiudere), aperto (aprire), chiesto (chiedere), messo (mettere), risposto (rispondere) y bevuto (bere). Casi todos son de verbos en -ere, la conjugación con más irregularidades.',
       ],
     },
   ],
@@ -102,7 +142,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La novela',
-            lines: [['David', 'Ho ___ quel romanzo in tre giorni. (leggere)']],
+            lines: [['Leo', 'Ho ___ quel romanzo in tre giorni. (leggere)']],
             options: ['letto', 'leguto', 'leggito', 'leggo'],
             answer: 'letto',
             explain: 'Leggere → letto (irregular). Ho letto = He leído.',
@@ -130,7 +170,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La ventana',
-            lines: [['Zhanna', 'Chi ha ___ la finestra? Fa freddo! (chiudere)']],
+            lines: [['Alba', 'Chi ha ___ la finestra? Fa freddo! (chiudere)']],
             options: ['chiuso', 'chiuduto', 'chiudito', 'chiude'],
             answer: 'chiuso',
             explain: 'Chiudere → chiuso (irregular). Ha chiuso = Ha cerrado.',
@@ -169,7 +209,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El informe',
-            lines: [['David', 'Voi [[0]] [[1]] il rapporto? (avere / leggere)']],
+            lines: [['Leo', 'Voi [[0]] [[1]] il rapporto? (avere / leggere)']],
             blanks: [
               { options: ['avete', 'siete', 'avevano'], answer: 'avete', explain: 'Voi con avere → avete.' },
               { options: ['letto', 'leguto', 'leggito'], answer: 'letto', explain: 'Leggere → letto (irregular).' },
@@ -177,7 +217,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El mensaje del grupo',
-            lines: [['Zhanna', 'Carlo [[0]] [[1]] un messaggio a tutti. (avere / mandare)']],
+            lines: [['Alba', 'Carlo [[0]] [[1]] un messaggio a tutti. (avere / mandare)']],
             blanks: [
               { options: ['ha', 'è', 'aveva'], answer: 'ha', explain: 'Carlo (lui) con avere → ha.' },
               { options: ['mandato', 'mandito', 'manduto'], answer: 'mandato', explain: 'Mandare → mandato (regular -are).' },
@@ -209,7 +249,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma correcta del passato prossimo con avere.',
         type: 'freeText',
-        scene: 'David habla de su semana en WeLearn',
+        scene: 'Leo habla de su semana en WeLearn',
         text: 'Questa settimana [[0]] molto. (lavorare) Lunedì [[1]] le lezioni nuove. (preparare) Martedì [[2]] il cellulare — è stata una giornata difficile! (perdere) Mercoledì [[3]] agli studenti le date degli esami. (dire) Giovedì [[4]] l\'ufficio presto e sono andato a casa. (chiudere)',
         blanks: [
           { answer: 'ho lavorato', explain: 'Lavorare → lavorato (regular -are). Ho lavorato.' },

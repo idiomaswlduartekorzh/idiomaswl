@@ -92,10 +92,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella habla',
-            lines: [['João', 'A Zhanna fala russo — ___ é professora.']],
+            lines: [['João', 'A Lía fala russo — ___ é professora.']],
             options: ['ela', 'ele', 'você', 'eles'],
             answer: 'ela',
-            explain: 'Ela = ella. Zhanna es femenino → ela.',
+            explain: 'Ela = ella. Lía es femenino → ela.',
           },
           {
             scene: 'Brasil: preguntando a alguien',
@@ -106,7 +106,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ellos estudian',
-            lines: [['David', '___ estudam muito bem.']],
+            lines: [['Hugo', '___ estudam muito bem.']],
             options: ['Eles', 'Vocês', 'Nós', 'Ela'],
             answer: 'Eles',
             explain: 'Eles = ellos (masculino o mixto). Tercera persona plural.',
@@ -151,9 +151,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Presentación',
             lines: [
-              ['Carlos', '[[0]] me chamo Carlos. E [[1]]?'],
-              ['Ana', 'Eu me chamo Ana.'],
-            ],
+ ['Carlos', '[[0]] me chamo Carlos. E [[1]]?'],
+ ['Ana', 'Eu me chamo Ana.'],
+ ],
             blanks: [
               { options: ['Eu', 'Você', 'Ele'], answer: 'Eu', explain: 'Eu = yo. Carlos se presenta.' },
               { options: ['você', 'ele', 'nós'], answer: 'você', explain: 'E você? = ¿Y tú/usted? Pronombre en Brasil.' },
@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Nosotros y ellos',
-            lines: [['David', '[[0]] estudamos português e [[1]] estudam inglês.']],
+            lines: [['Hugo', '[[0]] estudamos português e [[1]] estudam inglês.']],
             blanks: [
               { options: ['Nós', 'Vocês', 'Eles'], answer: 'Nós', explain: 'Nós = nosotros. Primera plural.' },
               { options: ['eles', 'nós', 'vocês'], answer: 'eles', explain: 'Eles = ellos. Tercera plural.' },
@@ -178,9 +178,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Tú/usted y yo',
             lines: [
-              ['Professor', '[[0]] fala muito bem!'],
-              ['Aluno', 'Obrigado! [[1]] aprendo com você.'],
-            ],
+ ['Professor', '[[0]] fala muito bem!'],
+ ['Aluno', 'Obrigado! [[1]] aprendo com você.'],
+ ],
             blanks: [
               { options: ['Você', 'Tu', 'Ele'], answer: 'Você', explain: 'Você = tú/usted (Brasil). 3ª sg.' },
               { options: ['Eu', 'Você', 'Nós'], answer: 'Eu', explain: 'Eu = yo. Primera sg.' },
@@ -195,11 +195,11 @@ const topic: GrammarTopic = {
         intro: 'Completa con el pronombre correcto.',
         type: 'guidedText',
         scene: 'Apresentação de uma turma de português',
-        text: '[[0]] me chamo David e sou professor de português. A Zhanna é a codirectora — [[1]] é de origem ucraniana. [[2]] trabalhamos juntos na WeLearn. Os alunos são muito motivados — [[3]] estudam todos os dias. E [[4]], de onde você é?',
+        text: '[[0]] me chamo Hugo e sou professor de português. A Lía é a codirectora — [[1]] é de origem ucraniana. [[2]] trabalhamos juntos na WeLearn. Os alunos são muito motivados — [[3]] estudam todos os dias. E [[4]], de onde você é?',
         blanks: [
-          { options: ['Eu', 'Ele', 'Você'], answer: 'Eu', explain: 'Eu = yo. David se presenta.' },
-          { options: ['ela', 'ele', 'você'], answer: 'ela', explain: 'Ela = ella. Habla de Zhanna.' },
-          { options: ['Nós', 'Vocês', 'Eles'], answer: 'Nós', explain: 'Nós = nosotros. David y Zhanna.' },
+          { options: ['Eu', 'Ele', 'Você'], answer: 'Eu', explain: 'Eu = yo. Hugo se presenta.' },
+          { options: ['ela', 'ele', 'você'], answer: 'ela', explain: 'Ela = ella. Habla de Lía.' },
+          { options: ['Nós', 'Vocês', 'Eles'], answer: 'Nós', explain: 'Nós = nosotros. Hugo y Lía.' },
           { options: ['eles', 'nós', 'você'], answer: 'eles', explain: 'Eles = ellos. Los alumnos (masculino/mixto).' },
           { options: ['você', 'ele', 'ela'], answer: 'você', explain: 'Você = tú/usted. Pregunta al oyente.' },
         ],
@@ -211,13 +211,13 @@ const topic: GrammarTopic = {
         intro: 'Escribe el pronombre correcto sin opciones.',
         type: 'freeText',
         scene: 'Conversação entre estudantes',
-        text: '[[0]] me chamo Sofia. [[1]] e a Ana somos amigas. [[2]] estuda inglês e [[3]] estudo português. O professor se chama David — [[4]] é muito bom. Os alunos gostam das aulas — [[5]] aprendem muito.',
+        text: '[[0]] me chamo Sofia. [[1]] e a Ana somos amigas. [[2]] estuda inglês e [[3]] estudo português. O professor se chama Hugo — [[4]] é muito bom. Os alunos gostam das aulas — [[5]] aprendem muito.',
         blanks: [
           { answer: 'Eu', accepted: ['eu'], explain: 'Eu = yo. Sofia se presenta.' },
           { answer: 'Eu', accepted: ['eu'], explain: 'Eu e a Ana = yo y Ana. Primera sg.' },
           { answer: 'ela', explain: 'Ela = ella. La Ana.' },
           { answer: 'eu', explain: 'Eu estudo. Primera sg.' },
-          { answer: 'ele', explain: 'Ele = él. El profesor David.' },
+          { answer: 'ele', explain: 'Ele = él. El profesor Hugo.' },
           { answer: 'eles', accepted: ['elas', 'eles'], explain: 'Eles/elas = ellos/ellas. Los alumnos.' },
         ],
       },

@@ -114,7 +114,7 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           { scene: 'En el restaurante', lines: [['', 'Camarero: ありがとうございます。Tú: [[0]]. No entiendes el menú: [[1]]...']], blanks: [{ options: ['すみません', 'よろしく', 'わかりません', 'ありがとう'], answer: 'すみません', explain: 'すみません = Disculpe. Para llamar al camarero o para agradecer la molestia.' }, { options: ['わかりません', 'ありがとう', 'よろしく', 'もう一度'], answer: 'わかりません', explain: 'わかりません = No entiendo. Ante el menú desconocido.' }] },
-          { scene: 'Primera clase de japonés', lines: [['', 'David habla rápido. Tú: [[0]]。 Pides: [[1]]。']], blanks: [{ options: ['ありがとうございます', 'すみません', 'わかりません', 'よろしく'], answer: 'すみません', explain: 'すみません para interrumpir educadamente y llamar la atención del profesor.' }, { options: ['よろしくおねがいします', 'もう一度おねがいします', 'わかりません', 'ありがとう'], answer: 'もう一度おねがいします', explain: 'もう一度おねがいします = Por favor, una vez más.' }] },
+          { scene: 'Primera clase de japonés', lines: [['', 'Hugo habla rápido. Tú: [[0]]。 Pides: [[1]]。']], blanks: [{ options: ['ありがとうございます', 'すみません', 'わかりません', 'よろしく'], answer: 'すみません', explain: 'すみません para interrumpir educadamente y llamar la atención del profesor.' }, { options: ['よろしくおねがいします', 'もう一度おねがいします', 'わかりません', 'ありがとう'], answer: 'もう一度おねがいします', explain: 'もう一度おねがいします = Por favor, una vez más.' }] },
           { scene: 'Presentación formal', lines: [['', '"Soy Carlos de Colombia. Encantado." 私はコロンビアのCarlosです。[[0]]。']], blanks: [{ options: ['わかりません', 'すみません', 'よろしくおねがいします', 'ありがとうございます'], answer: 'よろしくおねがいします', explain: 'よろしくおねがいします siempre al final de la presentación. Obligatorio en cultura japonesa.' }, { options: ['(fin)', 'です', 'ます', 'ございます'], answer: '(fin)', explain: 'La frase termina con よろしくおねがいします。 Es la conclusión de la presentación.' }] },
           { scene: 'Recibir ayuda', lines: [['', 'Alguien te ayuda con la maleta. Tú primero dices [[0]], luego cuando termina: [[1]]。']], blanks: [{ options: ['すみません', 'わかりません', 'よろしく', 'もう一度'], answer: 'すみません', explain: 'すみません al recibir ayuda = reconocer la molestia que causas. Muy educado.' }, { options: ['ありがとうございます', 'すみません', 'よろしく', 'わかりません'], answer: 'ありがとうございます', explain: 'ありがとうございます = Muchas gracias al final de la ayuda recibida.' }] },
         ],
@@ -126,13 +126,13 @@ const topic: GrammarTopic = {
         intro: 'Elige la expresión correcta en cada turno del diálogo.',
         type: 'guidedText',
         scene: 'Primer día de Carlos en WeLearn Tokyo',
-        text: 'Carlos llega a WeLearn. David: 「ようこそ！」Carlos: 「[[0]]！WeLearnに来ました。」(¡Hola! He venido a WeLearn) David explica las reglas rápido. Carlos: 「[[1]]...はやいです...」(No entiendo. Muy rápido.) David repite. Carlos: 「[[2]]！」(¡Gracias!) David: 「じこしょうかいをしてください」(Preséntate.) Carlos: 「わたしはCarlosです。コロンビアから来ました。日本語をべんきょうします。[[3]]！」David: 「こちらこそ、[[4]]！」',
+        text: 'Carlos llega a WeLearn. Hugo: 「ようこそ！」Carlos: 「[[0]]！WeLearnに来ました。」(¡Hola! He venido a WeLearn) Hugo explica las reglas rápido. Carlos: 「[[1]]...はやいです...」(No entiendo. Muy rápido.) Hugo repite. Carlos: 「[[2]]！」(¡Gracias!) Hugo: 「じこしょうかいをしてください」(Preséntate.) Carlos: 「わたしはCarlosです。コロンビアから来ました。日本語をべんきょうします。[[3]]！」Hugo: 「こちらこそ、[[4]]！」',
         blanks: [
-          { options: ['わかりません', 'すみません', 'よろしく', 'ありがとうございます'], answer: 'すみません', explain: 'すみません al llegar = Disculpe / Hola (al llamar la atención de David al entrar).' },
+          { options: ['わかりません', 'すみません', 'よろしく', 'ありがとうございます'], answer: 'すみません', explain: 'すみません al llegar = Disculpe / Hola (al llamar la atención de Hugo al entrar).' },
           { options: ['ありがとうございます', 'すみません', 'わかりません', 'よろしく'], answer: 'わかりません', explain: 'わかりません = No entiendo. Respuesta natural cuando algo va demasiado rápido.' },
           { options: ['わかりません', 'よろしく', 'ありがとうございます', 'すみません'], answer: 'ありがとうございます', explain: 'ありがとうございます al recibir la repetición. Agradecer la molestia de repetir.' },
           { options: ['ありがとうございます', 'わかりません', 'すみません', 'よろしくおねがいします'], answer: 'よろしくおねがいします', explain: 'よろしくおねがいします al final de toda presentación. Siempre obligatorio en Japón.' },
-          { options: ['ありがとうございます', 'すみません', 'よろしくおねがいします', 'わかりません'], answer: 'よろしくおねがいします', explain: 'David responde con こちらこそ (yo también) + よろしくおねがいします. Fórmula recíproca.' },
+          { options: ['ありがとうございます', 'すみません', 'よろしくおねがいします', 'わかりません'], answer: 'よろしくおねがいします', explain: 'Hugo responde con こちらこそ (yo también) + よろしくおねがいします. Fórmula recíproca.' },
         ],
       },
       {

@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando de alguien tímido',
             lines: [['', 'She answered the question ___ — she wasn\'t sure if she was right.']],
-            options: ['nervously', 'nervous', 'nervously', 'nerveously'],
+            options: ['nervously', 'nervous', 'nerveously'],
             answer: 'nervously',
             explain: '"Nervous" (adj) + -ly → "nervously".',
           },

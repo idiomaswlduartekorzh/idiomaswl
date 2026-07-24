@@ -121,36 +121,21 @@ const topic: GrammarTopic = {
           {
             scene: 'Thomas dice: "Ich bin krank." ¿Cuál es la forma correcta en estilo indirecto?',
             lines: [['Direkt', 'Thomas sagt: "Ich bin krank."']],
-            options: [
-              'Thomas sagt, dass ich krank bin.',
-              'Thomas sagt, dass er krank ist.',
-              'Thomas sagt, dass er krank sein.',
-              'Thomas sagt, ob er krank ist.',
-            ],
+            options: ['Thomas sagt, dass ich krank bin.', 'Thomas sagt, dass er krank ist.', 'Thomas sagt, dass er krank sein.', 'Thomas sagt, ob er krank ist.'],
             answer: 'Thomas sagt, dass er krank ist.',
             explain: 'El pronombre cambia de "ich" a "er". En dass-Satz el verbo "ist" va al final.',
           },
           {
             scene: 'Anna fragt: "Hast du Zeit?" ¿Cuál es la forma correcta en estilo indirecto?',
             lines: [['Direkt', 'Anna fragt: "Hast du Zeit?"']],
-            options: [
-              'Anna fragt, dass du Zeit hast.',
-              'Anna fragt, ob du Zeit hast.',
-              'Anna fragt, ob du Zeit haben.',
-              'Anna fragt, wo du Zeit hast.',
-            ],
+            options: ['Anna fragt, dass du Zeit hast.', 'Anna fragt, ob du Zeit hast.', 'Anna fragt, ob du Zeit haben.', 'Anna fragt, wo du Zeit hast.'],
             answer: 'Anna fragt, ob du Zeit hast.',
             explain: 'Pregunta sí/no → ob + sujeto + … + verbo al final. "ob" = "si".',
           },
           {
             scene: 'El jefe dice: "Wir haben das Projekt beendet." ¿Cuál es la forma correcta?',
             lines: [['Direkt', 'Der Chef sagt: "Wir haben das Projekt beendet."']],
-            options: [
-              'Der Chef sagt, dass wir das Projekt beendet hat.',
-              'Der Chef sagt, dass sie das Projekt beendet haben.',
-              'Der Chef sagt, ob sie das Projekt beendet haben.',
-              'Der Chef sagt, dass wir das Projekt beendet sind.',
-            ],
+            options: ['Der Chef sagt, dass wir das Projekt beendet hat.', 'Der Chef sagt, dass sie das Projekt beendet haben.', 'Der Chef sagt, ob sie das Projekt beendet haben.', 'Der Chef sagt, dass wir das Projekt beendet sind.'],
             answer: 'Der Chef sagt, dass sie das Projekt beendet haben.',
             explain: '"Wir" del directo se convierte en "sie" al hablar de ellos. "haben" al final (Perfekt → haben + Partizip II).',
           },
@@ -164,12 +149,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Petra fragt: "Wo wohnst du?" ¿Cómo se reporta esta pregunta?',
             lines: [['Direkt', 'Petra fragt: "Wo wohnst du?"']],
-            options: [
-              'Petra fragt, ob du wohnst.',
-              'Petra fragt, wo du wohnst.',
-              'Petra fragt, dass du wohnst.',
-              'Petra fragt, wo wohnst du.',
-            ],
+            options: ['Petra fragt, ob du wohnst.', 'Petra fragt, wo du wohnst.', 'Petra fragt, dass du wohnst.', 'Petra fragt, wo wohnst du.'],
             answer: 'Petra fragt, wo du wohnst.',
             explain: 'Pregunta con W-Wort → W-Wort + sujeto + verbo al final. No se usa ob.',
           },
@@ -206,12 +186,7 @@ const topic: GrammarTopic = {
           {
             scene: '¿Con qué conector se introduce una petición indirecta "Er bittet mich, dass..."?',
             lines: [['Directo', '"Komm bitte morgen!" — er bittet mich.']],
-            options: [
-              'Er bittet, dass ich morgen kommt.',
-              'Er bittet mich, morgen zu kommen.',
-              'Er bittet ob ich morgen komme.',
-              'Er bittet, dass ich morgen kommen.',
-            ],
+            options: ['Er bittet, dass ich morgen kommt.', 'Er bittet mich, morgen zu kommen.', 'Er bittet ob ich morgen komme.', 'Er bittet, dass ich morgen kommen.'],
             answer: 'Er bittet mich, morgen zu kommen.',
             explain: 'bitten + Akkusativ + zu + Infinitiv. "Er bittet mich, morgen zu kommen." es la forma más natural para peticiones.',
           },

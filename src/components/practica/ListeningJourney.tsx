@@ -11,11 +11,11 @@ function answer(question: ListeningQuestion, choice: number | undefined) {
   return choice !== undefined && question.options[choice]?.correct
 }
 
-function speak(text: string) {
+function speak(text: string, lang = 'en-US') {
   if (!window.speechSynthesis) return
   window.speechSynthesis.cancel()
   const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'en-US'
+  utterance.lang = lang
   utterance.rate = 0.8
   window.speechSynthesis.speak(utterance)
 }
@@ -28,6 +28,7 @@ export default function ListeningJourney({
   progressKey,
   seriesTitle,
   seriesDescription,
+  speechLang = 'en-US',
 }: {
   exercises: ListeningExercise[]
   level?: string
@@ -36,6 +37,7 @@ export default function ListeningJourney({
   progressKey?: string
   seriesTitle?: string
   seriesDescription?: string
+  speechLang?: string
 }) {
   const [selectedId, setSelectedId] = useState(exercises[0]?.id ?? '')
   const [stage, setStage] = useState<Stage>(0)
@@ -106,7 +108,7 @@ export default function ListeningJourney({
 
         <ol className="listen-steps" aria-label="Progreso del ejercicio">{STAGES.map((label, index) => <li key={label} className={index === stage ? 'is-current' : index < stage ? 'is-done' : ''}><span>{index < stage ? '✓' : index + 1}</span><em>{label}</em></li>)}</ol>
 
-        {stage === 0 && <section className="listen-panel"><p className="listen-kicker">1. Preparar el oído</p><h2>Palabras que te ayudarán a escuchar</h2><p>Escúchalas y relaciónalas con su significado. No necesitas memorizar todas.</p><div className="listen-keywords">{exercise.keywords.map(item => <button type="button" key={item.en} onClick={() => speak(item.en)}><b>🔊 {item.en}</b><span>{item.es}</span></button>)}</div><button className="listen-primary" onClick={nextStage}>Ya estoy listo para escuchar</button></section>}
+        {stage === 0 && <section className="listen-panel"><p className="listen-kicker">1. Preparar el oído</p><h2>Palabras que te ayudarán a escuchar</h2><p>Escúchalas y relaciónalas con su significado. No necesitas memorizar todas.</p><div className="listen-keywords">{exercise.keywords.map(item => <button type="button" key={item.en} onClick={() => speak(item.en, speechLang)}><b>🔊 {item.en}</b><span>{item.es}</span></button>)}</div><button className="listen-primary" onClick={nextStage}>Ya estoy listo para escuchar</button></section>}
 
         {stage >= 1 && stage <= 5 && (audioAvailable ? <div className="listen-player"><audio ref={audioRef} src={`${audioBasePath}/listening-${String(exercise.order).padStart(2, '0')}.mp3`} onPlay={() => setPlayed(true)} onTimeUpdate={event => setCurrentTime(event.currentTarget.currentTime)} /><button className="listen-play" type="button" onClick={() => { const audio = audioRef.current; if (!audio) return; audio.paused ? audio.play() : audio.pause() }}>▶ Escuchar {played ? 'de nuevo' : ''}</button><button className="listen-rewind" type="button" onClick={() => { if (audioRef.current) audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5) }}>↺ 5 s</button><div className="listen-timeline"><span style={{ width: `${Math.min(100, (currentTime / exercise.duration) * 100)}%` }} /></div><small>{Math.floor(currentTime)} s / ~{exercise.duration} s</small></div> : <div className="listen-empty">🎙️ Este guion ya está preparado. El audio se activará cuando esté grabado.</div>)}
 

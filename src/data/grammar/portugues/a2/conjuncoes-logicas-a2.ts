@@ -128,14 +128,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La oportunidad',
-            lines: [['David', 'A proposta é interessante; ___, o prazo é muito curto.']],
-            options: ['contudo', 'portanto', 'além disso', 'portanto'],
+            lines: [['Dario', 'A proposta é interessante; ___, o prazo é muito curto.']],
+            options: ['contudo', 'portanto', 'além disso'],
             answer: 'contudo',
             explain: '"Contudo" para contraste formal (sin embargo): es interesante pero el plazo es corto.',
           },
           {
             scene: 'La espera',
-            lines: [['Zhanna', 'Ela estava cansada; ___, continuou esperando o resultado.']],
+            lines: [['Clara', 'Ela estava cansada; ___, continuou esperando o resultado.']],
             options: ['entretanto', 'portanto', 'além disso', 'então'],
             answer: 'entretanto',
             explain: '"Entretanto" para contraste: estaba cansada pero (sin embargo) siguió esperando.',

@@ -97,10 +97,10 @@ const topic: GrammarTopic = {
         items: [
           { scene: 'Dirección femenino', lines: [['', 'Lina VA a la escuela ahora: Лина идёт ___']], options: ['в школе', 'в школу', 'из школы', 'в школа'], answer: 'в школу', explain: 'Dirección (Куда?) → В + acusativo. школа (fem -а) → школу.' },
           { scene: 'Ubicación', lines: [['', 'Carlos ESTÁ en la escuela ahora: Карлос ___']], options: ['в школу', 'из школы', 'в школе', 'в школа'], answer: 'в школе', explain: 'Ubicación (Где?) → В + prepositivo. школа → школе.' },
-          { scene: 'Dirección НА', lines: [['', 'David VA al trabajo: Давид идёт ___']], options: ['на работе', 'на работу', 'с работы', 'на работа'], answer: 'на работу', explain: 'Dirección НА + acusativo. работа (fem -а) → работу.' },
+          { scene: 'Dirección НА', lines: [['', 'Dario VA al trabajo: Давид идёт ___']], options: ['на работе', 'на работу', 'с работы', 'на работа'], answer: 'на работу', explain: 'Dirección НА + acusativo. работа (fem -а) → работу.' },
           { scene: 'Origen ИЗ', lines: [['', 'Ana VIENE de la escuela: Анна идёт ___']], options: ['в школу', 'в школе', 'из школы', 'со школы'], answer: 'из школы', explain: 'Origen de interior → ИЗ + genitivo. школа → школы (gen fem).' },
           { scene: 'Masculino inanimado — dirección', lines: [['', 'Marco VA al centro: Марко идёт ___']], options: ['в центре', 'в центра', 'в центр', 'из центра'], answer: 'в центр', explain: 'Dirección В + acusativo. центр (masc inanimado) → центр sin cambio.' },
-          { scene: 'Origen С', lines: [['', 'Zhanna VIENE del trabajo: Жанна идёт ___']], options: ['на работе', 'на работу', 'из работы', 'с работы'], answer: 'с работы', explain: 'Origen de НА → С + genitivo. работа → работы (gen fem). С es par inverso de НА.' },
+          { scene: 'Origen С', lines: [['', 'Sara VIENE del trabajo: Жанна идёт ___']], options: ['на работе', 'на работу', 'из работы', 'с работы'], answer: 'с работы', explain: 'Origen de НА → С + genitivo. работа → работы (gen fem). С es par inverso de НА.' },
           { scene: 'Ciudad — dirección', lines: [['', 'Sofia VIAJA a Moscú (Москва — fem): Соня едет ___']], options: ['в Москве', 'из Москвы', 'в Москву', 'в Москва'], answer: 'в Москву', explain: 'Dirección В + acusativo. Москва (fem -а) → Москву.' },
           { scene: 'Contrast. В/НА dirección', lines: [['', '"Voy a clase" en ruso: Я иду ___']], options: ['в уроке', 'в урок', 'на урок', 'на уроке'], answer: 'на урок', explain: 'Урок/clase siempre НА. Dirección НА + acusativo. урок (masc) → урок sin cambio.' },
         ],
@@ -142,7 +142,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de dirección sin opciones de ayuda.',
         type: 'freeText',
         scene: 'Describiendo adónde van las personas',
-        text: '1. Zhanna va al trabajo (работа — fem): Жанна идёт [[0]]. 2. Sofia va a clase (урок — masc, НА): София идёт [[1]]. 3. Marco va a la tienda (магазин — masc inanimado): Марко идёт [[2]]. 4. Ana viene de la escuela (ИЗ + gen): Анна идёт [[3]]. 5. David viaja a Bogotá (Богота — fem -а): Давид едет [[4]].',
+        text: '1. Sara va al trabajo (работа — fem): Жанна идёт [[0]]. 2. Sofia va a clase (урок — masc, НА): София идёт [[1]]. 3. Marco va a la tienda (магазин — masc inanimado): Марко идёт [[2]]. 4. Ana viene de la escuela (ИЗ + gen): Анна идёт [[3]]. 5. Dario viaja a Bogotá (Богота — fem -а): Давид едет [[4]].',
         blanks: [
           { answer: 'на работу', accepted: ['на работу', 'На работу'], explain: 'Dirección НА + acusativo. работа (fem -а) → работу.' },
           { answer: 'на урок', accepted: ['на урок', 'На урок'], explain: 'Урок (masc) en dirección НА + acusativo → урок sin cambio.' },
@@ -161,7 +161,7 @@ const topic: GrammarTopic = {
           { scene: 'Dirección femenino', prompt: 'Traduce al ruso: "Lina va a la escuela a las 8." (в 8 часов — a las 8, идти — ir)', answer: 'Лина идёт в школу в 8 часов', accepted: ['лина идёт в школу', 'лина в школу в 8'], explain: 'В школу — dirección, acusativo. школа → школу (fem -а→-у).' },
           { scene: 'Contraste ubicación/dirección', prompt: 'Traduce DOS frases: "Estoy en la escuela" (ubicación) y "Voy a la escuela" (dirección).', answer: 'Я в школе. Я иду в школу.', accepted: ['я в школе', 'я иду в школу', 'в школе', 'в школу'], explain: 'В школе = ubicación (prepositivo). В школу = dirección (acusativo). La preposición es igual, el caso cambia.' },
           { scene: 'Origen С', prompt: 'Traduce al ruso: "Carlos viene del trabajo." (идти — ir, с + genitivo)', answer: 'Карлос идёт с работы', accepted: ['карлос идёт с работы', 'карлос с работы'], explain: 'С работы — origen de НА. работа → работы (gen fem). С es par inverso de НА.' },
-          { scene: 'Ciudad destino', prompt: 'Traduce al ruso: "Zhanna viaja a Moscú." (ехать — viajar en transporte)', answer: 'Жанна едет в Москву', accepted: ['жанна едет в москву', 'жанна едет в Москву'], explain: 'В Москву — dirección, acusativo. Москва (fem -а) → Москву.' },
+          { scene: 'Ciudad destino', prompt: 'Traduce al ruso: "Sara viaja a Moscú." (ехать — viajar en transporte)', answer: 'Жанна едет в Москву', accepted: ['жанна едет в москву', 'жанна едет в Москву'], explain: 'В Москву — dirección, acusativo. Москва (fem -а) → Москву.' },
         ],
       },
       {

@@ -104,15 +104,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David anuncia un viaje',
-            lines: [['David', 'Je vais ___ Paris la semaine prochaine.']],
+            scene: 'Gael anuncia un viaje',
+            lines: [['Gael', 'Je vais ___ Paris la semaine prochaine.']],
             options: ['à', 'en', 'au', 'aux'],
             answer: 'à',
             explain: 'Ciudad → siempre "à": "je vais à Paris".',
           },
           {
-            scene: 'Zhanna habla de su origen',
-            lines: [['Zhanna', 'Je viens ___ Ukraine. (Ukraine, femenino)']],
+            scene: 'Vera habla de su origen',
+            lines: [['Vera', 'Je viens ___ Ukraine. (Ukraine, femenino)']],
             options: ['d\'', 'du', 'des', 'de'],
             answer: "d'",
             explain: 'Origen de país fem./vocal: "de + pays" → "d\'Ukraine" (en francés, la preposición d\'origine es de/d\').',
@@ -153,8 +153,8 @@ const topic: GrammarTopic = {
             explain: '"Sur" = encima/sobre. Los libros están sobre la mesa.',
           },
           {
-            scene: 'David describe la escuela',
-            lines: [['David', 'Il y a un jardin ___ l\'école.']],
+            scene: 'Gael describe la escuela',
+            lines: [['Gael', 'Il y a un jardin ___ l\'école.']],
             options: ['devant', 'sur', 'dans', 'sous'],
             answer: 'devant',
             explain: '"Devant" = delante. El jardín está delante de la escuela.',
@@ -177,16 +177,16 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna busca objetos',
-            lines: [['Zhanna', 'Mon livre est [[0]] la table et mon stylo est [[1]] la chaise.']],
+            scene: 'Vera busca objetos',
+            lines: [['Vera', 'Mon livre est [[0]] la table et mon stylo est [[1]] la chaise.']],
             blanks: [
               { options: ['sur', 'sous', 'dans', 'devant'], answer: 'sur', explain: '"Sur" = encima de la mesa.' },
               { options: ['sous', 'sur', 'dans', 'devant'], answer: 'sous', explain: '"Sous" = debajo de la silla.' },
             ],
           },
           {
-            scene: 'David y Ana viajan',
-            lines: [['David', 'David habite [[0]] Bogotá et il va [[1]] Brésil cet été.']],
+            scene: 'Gael y Ana viajan',
+            lines: [['Gael', 'Gael habite [[0]] Bogotá et il va [[1]] Brésil cet été.']],
             blanks: [
               { options: ['à', 'en', 'au', 'aux'], answer: 'à', explain: '"Bogotá" es una ciudad → "à Bogotá".' },
               { options: ['au', 'en', 'à', 'aux'], answer: 'au', explain: '"Brésil" es masc. → "au Brésil".' },
@@ -206,10 +206,10 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Viaje con WeLearn',
         tag: 'Texto guiado',
-        intro: 'David describe un viaje cultural de WeLearn. Elige la preposición correcta en cada caso.',
+        intro: 'Gael describe un viaje cultural de WeLearn. Elige la preposición correcta en cada caso.',
         type: 'guidedText',
-        scene: 'David describe el viaje de estudiantes de WeLearn por el mundo.',
-        text: 'Les étudiants de WeLearn voyagent ! Ana habite [[0]] Madrid — elle est [[1]] Espagne. Carlos est allé [[2]] Brésil l\'an dernier. Zhanna est originaire [[3]] Ukraine mais elle habite maintenant [[0a]] Bucaramanga. Marco vit [[4]] États-Unis. Et Lina va partir [[5]] Japon la semaine prochaine. Tout le monde se retrouve [[6]] la salle de classe virtuelle de WeLearn.',
+        scene: 'Gael describe el viaje de estudiantes de WeLearn por el mundo.',
+        text: 'Les étudiants de WeLearn voyagent ! Ana habite [[0]] Madrid — elle est [[1]] Espagne. Carlos est allé [[2]] Brésil l\'an dernier. Vera est originaire [[3]] Ukraine mais elle habite maintenant [[0a]] Bucaramanga. Marco vit [[4]] États-Unis. Et Lina va partir [[5]] Japon la semaine prochaine. Tout le monde se retrouve [[6]] la salle de classe virtuelle de WeLearn.',
         blanks: [
           { options: ['à', 'en', 'au', 'aux'], answer: 'à', explain: '"Madrid" es ciudad → "à Madrid".' },
           { options: ['en', 'au', 'à', 'aux'], answer: 'en', explain: '"Espagne" termina en -e → fem. → "en Espagne".' },
@@ -245,14 +245,14 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'David habla de sus viajes de trabajo',
-            prompt: 'Di que David va a Seúl (ciudad en Corea del Sur) y a Japón este año.',
-            answer: 'David va à Séoul et au Japon cette année.',
+            scene: 'Gael habla de sus viajes de trabajo',
+            prompt: 'Di que Gael va a Seúl (ciudad en Corea del Sur) y a Japón este año.',
+            answer: 'Gael va à Séoul et au Japon cette année.',
             accepted: ['à Séoul', 'au Japon', 'en Corée'],
             explain: '"Séoul" = ciudad → à. "Japon" = masc. → au.',
           },
           {
-            scene: 'Zhanna describe la oficina',
+            scene: 'Vera describe la oficina',
             prompt: 'Di que los libros están sobre la mesa y que la bolsa está debajo de la silla.',
             answer: 'Les livres sont sur la table et le sac est sous la chaise.',
             accepted: ['sur la table', 'sous la chaise'],

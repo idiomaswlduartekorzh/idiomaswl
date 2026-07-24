@@ -186,7 +186,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta del diminutivo o aumentativo.',
         type: 'freeText',
         scene: 'Transformando palavras com sufixos.',
-        text: 'Mesa (dim.) → ___. / Cão (dim.) → ___. / Mulher (aum.) → ___. / Amor (dim.) → ___. / Nariz (aum.) → ___.',
+        text: 'Mesa (dim.) → [[0]]. / Cão (dim.) → [[1]]. / Mulher (aum.) → [[2]]. / Amor (dim.) → [[3]]. / Nariz (aum.) → [[4]].',
         blanks: [
           { answer: 'mesinha', explain: '"mesa" → -a + -inha = mesinha.' },
           { answer: 'cãozinho', explain: '"cão" → cãozinho (con -z- y manteniendo la nasalidad).' },

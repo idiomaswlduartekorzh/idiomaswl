@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el diálogo usando el gerúndio en el tiempo correcto.',
         type: 'guidedText',
         scene: 'Carlos chama Pedro pelo celular.',
-        text: 'Carlos: Oi Pedro, o que você [[0]]? Pedro: Estou [[1]] o jantar. E você? Carlos: [[2]] televisão. Fico [[3]] série todo dia. Pedro: E a Ana, o que ela [[0]]? Carlos: Ela [[4]] — vai ligar depois.',
+        text: 'Carlos: Oi Pedro, o que você [[0]]? Pedro: Estou [[1]] o jantar. E você? Carlos: [[2]] televisão. Fico [[3]] série todo dia. Pedro: E a Ana, o que ela [[4]]? Carlos: Ela [[5]] — vai ligar depois.',
         blanks: [
           { options: ['está fazendo', 'faz', 'fazia', 'vai fazer'], answer: 'está fazendo', explain: '"o que você está fazendo?" = ¿qué estás haciendo?' },
           { options: ['fazendo', 'fazer', 'fez', 'fazo'], answer: 'fazendo', explain: '"estou fazendo" → "fazer" → gerúndio: fazendo.' },
@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta de estar/ficar + gerúndio.',
         type: 'freeText',
         scene: 'Descrevendo ações em progresso ou contínuas.',
-        text: 'O professor ___ (explicar) a lição agora. / Ela ___ (ficar + reclamar) toda semana. / Nós ___ (trabalhar) muito hoje. / Você ___ (entender) o que eu digo? / Eles ___ (aprender) rápido.',
+        text: 'O professor [[0]] (explicar) a lição agora. / Ela [[1]] (ficar + reclamar) toda semana. / Nós [[2]] (trabalhar) muito hoje. / Você [[3]] (entender) o que eu digo? / Eles [[4]] (aprender) rápido.',
         blanks: [
           { answer: 'está explicando', explain: '"estar" + gerúndio: está explicando.' },
           { answer: 'fica reclamando', explain: '"ficar" + gerúndio: fica reclamando.' },

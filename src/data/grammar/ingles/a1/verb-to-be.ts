@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
     {
       heading: 'Contextos reales: cuándo usas to be en una conversación A1',
       paragraphs: [
-        'En una presentación personal: Hi, I\'m Carlos. I\'m from Barranquilla. I\'m a student at WeLearn. My teacher is David. He\'s very good. We\'re in the A1 group. Todas estas frases usan to be.',
+        'En una presentación personal: Hi, I\'m Carlos. I\'m from Barranquilla. I\'m a student at WeLearn. My teacher is Bruno. He\'s very good. We\'re in the A1 group. Todas estas frases usan to be.',
         'Describiendo una habitación: The board is white. The chairs are blue. My notebook is on the desk. It\'s new. También para emociones y estados: I\'m nervous but excited. She\'s ready for the exam. They\'re tired after class.',
       ],
     },
@@ -84,6 +84,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'Is my sister.', 'Correcto', 'She is my sister.'],
         ['Incorrecto', 'I is from Cali.', 'Correcto', 'I am from Cali.'],
         ['Incorrecto', 'They is students.', 'Correcto', 'They are students.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se usa el verbo "to be" en inglés?',
+      paragraphs: [
+        'Se elige la forma según el sujeto: I → am, he/she/it → is, you/we/they → are. Siempre lleva sujeto delante: "I am a student", "She is here", "They are ready". Sirve para identidad, origen, estados y ubicación (en español, ser y estar juntos).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre am, is y are?',
+      paragraphs: [
+        'Es solo cuestión del sujeto: "am" únicamente con I; "is" con he, she, it (y sustantivos singulares); "are" con you, we, they (y sustantivos plurales). Ejemplos: "I am", "the dog is", "the dogs are". El significado es el mismo; cambia la forma.',
+      ],
+    },
+    {
+      heading: '¿"To be" significa "ser" o "estar"?',
+      paragraphs: [
+        'Las dos cosas. El inglés no separa ser y estar como el español: "I am a teacher" (soy) y "I am tired" (estoy) usan el mismo verbo. La traducción depende del contexto, no de una elección de verbo en inglés.',
       ],
     },
   ],
@@ -142,10 +160,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Mensaje de voz',
-            lines: [['David', 'Hi Zhanna! We ___ at the coffee shop. Are you coming?']],
+            lines: [['Bruno', 'Hi Clara! We ___ at the coffee shop. Are you coming?']],
             options: ['am', 'is', 'are', 'be'],
             answer: 'are',
-            explain: 'We (David + otra persona) → are.',
+            explain: 'We (Bruno + otra persona) → are.',
           },
           {
             scene: 'Revisando el horario',
@@ -188,7 +206,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Presentando a dos amigos',
-            lines: [['Ana', 'David, this [[0]] my friend Marco. He and I [[1]] in the same class.']],
+            lines: [['Ana', 'Bruno, this [[0]] my friend Marco. He and I [[1]] in the same class.']],
             blanks: [
               { options: ['am', 'is', 'are'], answer: 'is', explain: 'This (Marco, third person) → is.' },
               { options: ['am', 'is', 'are'], answer: 'are', explain: 'He and I = we → are.' },

@@ -146,7 +146,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Quieres preguntar algo y hacer una petición suave.',
-            lines: [['', '聞きたいこと[[0]]...  少し時間[[1]]？']],
+            lines: [['', '聞きたいこと[[0]]... 少し時間[[1]]？']],
             blanks: [
               { options: ['があるんですが', 'があります', 'があるですが', 'があるのか'], answer: 'があるんですが', explain: '"聞きたいことがあるんですが" = es que tengo algo que preguntarle... (suave).' },
               { options: ['がありますか', 'があるんですか', 'があるか', 'はあるか'], answer: 'がありますか', explain: '"少し時間がありますか？" = ¿Tiene un momento? (petición directa educada).' },
@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el diálogo usando んです correctamente.',
         type: 'guidedText',
         scene: '田中さんが遅れて来ました。',
-        text: 'A: どうし[[0]]？B: すみません。電車が遅れ[[1]]。A: そう[[2]]か。大丈夫ですか？B: 実は、ちょっと具合が悪い[[1]]。A: えっ、早く帰った方がいい[[2]]ね。',
+        text: 'A: どうし[[0]]？B: すみません。電車が遅れ[[1]]。A: そう[[2]]か。大丈夫ですか？B: 実は、ちょっと具合が悪い[[3]]。A: えっ、早く帰った方がいい[[4]]ね。',
         blanks: [
           { options: ['たんですか', 'ましたか', 'たのか', 'たか'], answer: 'たんですか', explain: '"どうしたんですか？" = ¿Qué pasó? Pide explicación de algo observable.' },
           { options: ['たんです', 'ました', 'たです', 'たのか'], answer: 'たんです', explain: '"遅れたんです" / "悪いんです" = es que se atrasó / es que me siento mal.' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: transforma las oraciones simples en explicaciones con んです.',
         type: 'freeText',
         scene: '普通の文をんです文に変えてください。',
-        text: '疲れています → 疲れてい___。 / 学生です → 学生___。 / 難しいです → 難しい___。 / 行きたいです → 行きたい___が、お金がないです。',
+        text: '疲れています → 疲れてい[[0]]。 / 学生です → 学生[[1]]。 / 難しいです → 難しい[[2]]。 / 行きたいです → 行きたい[[3]]が、お金がないです。',
         blanks: [
           { answer: 'るんです', explain: '"疲れているんです" = es que estoy cansado.' },
           { answer: 'なんです', explain: '"学生なんです" = es que soy estudiante. N + なんです.' },

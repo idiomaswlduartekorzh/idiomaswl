@@ -129,7 +129,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Futuro regular -er',
             lines: [['', 'Você ___ o livro amanhã. (compreender)']],
-            options: ['compreende', 'compreenderá', 'compreendia', 'compreendia'],
+            options: ['compreende', 'compreenderá', 'compreendia'],
             answer: 'compreenderá',
             explain: 'Futuro regular: compreenderá (compreende + -rá).',
           },

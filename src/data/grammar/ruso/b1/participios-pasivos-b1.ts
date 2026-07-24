@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'En la oficina de correos',
-            lines: [['', 'Посылка, [[0]] другом, уже ___. (El paquete enviado por el amigo ya llegó / ya está enviado.)']],
+            lines: [['', 'Посылка, другом, уже [[0]]. (El paquete enviado por el amigo ya llegó / ya está enviado.)']],
             blanks: [
               { options: ['отправленная', 'отправленный', 'отправлен', 'отправленное'], answer: 'отправленная', explain: 'Посылка (femenino), forma larga atributiva (modifica al sustantivo) → отправленная.' },
               { options: ['получена', 'получено', 'полученная', 'полученный'], answer: 'получена', explain: 'Predicado con sujeto femenino (посылка) → forma corta: получена.' },

@@ -113,14 +113,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'En la tienda',
-            lines: [['David', '이천 원이에요. (Son 2.000 wones.) — ¿Cuántos wones?']],
+            lines: [['Gael', '이천 원이에요. (Son 2.000 wones.) — ¿Cuántos wones?']],
             options: ['2.000', '200', '20', '20.000'],
             answer: '2.000',
             explain: '이천(icheon) = 2 × 천(1.000) = 2.000 wones.',
           },
           {
             scene: 'Fecha de hoy',
-            lines: [['Zhanna', '오늘은 삼월 오일이에요. (Hoy es 5 de marzo.) — ¿Qué mes?']],
+            lines: [['Vera', '오늘은 삼월 오일이에요. (Hoy es 5 de marzo.) — ¿Qué mes?']],
             options: ['Marzo', 'Mayo', 'Enero', 'Octubre'],
             answer: 'Marzo',
             explain: '삼월(samwol) = tercer mes = marzo. 삼 = 3.',
@@ -162,7 +162,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Mes de examen',
-            lines: [['David', 'IELTS 시험이 구월이에요. (El examen IELTS es en septiembre.)']],
+            lines: [['Gael', 'IELTS 시험이 구월이에요. (El examen IELTS es en septiembre.)']],
             options: ['Septiembre', 'Junio', 'Noviembre', 'Diciembre'],
             answer: 'Septiembre',
             explain: '구월(guwol) = noveno mes = septiembre. 구 = 9.',
@@ -179,9 +179,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la cafetería',
             lines: [
-              ['Carlos', '이 커피는 얼마예요? (¿Cuánto cuesta este café?)'],
-              ['Vendedor', '[[0]] [[1]] 원이에요. (Son 3.500 wones.)'],
-            ],
+ ['Carlos', '이 커피는 얼마예요? (¿Cuánto cuesta este café?)'],
+ ['Vendedor', '[[0]] [[1]] 원이에요. (Son 3.500 wones.)'],
+ ],
             blanks: [
               { options: ['삼천', '이천', '사천', '오천'], answer: '삼천', explain: '삼천(samcheon) = 3.000. Tres mil wones.' },
               { options: ['오백', '백', '오십', '이백'], answer: '오백', explain: '오백(obaek) = 500. 삼천오백 = 3.500.' },
@@ -190,9 +190,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando de cumpleaños',
             lines: [
-              ['Ana', '생일이 언제예요? (¿Cuándo es tu cumpleaños?)'],
-              ['Lina', '[[0]] [[1]] 이일이에요. (Es el 2 de julio.)'],
-            ],
+ ['Ana', '생일이 언제예요? (¿Cuándo es tu cumpleaños?)'],
+ ['Lina', '[[0]] [[1]] 이일이에요. (Es el 2 de julio.)'],
+ ],
             blanks: [
               { options: ['칠월', '시월', '삼월', '오월'], answer: '칠월', explain: '칠월(chilwol) = julio (7월).' },
               { options: ['칠월', '팔월', '이월', '구월'], answer: '칠월', explain: 'Espera: la respuesta es 칠월 이일 = 2 de julio. 칠월 ya en [[0]].' },
@@ -201,9 +201,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Reservando mesa',
             lines: [
-              ['Sofia', '몇 분이에요? (¿Cuántas personas son?)'],
-              ['Marco', '[[0]] [[1]]이에요. (Somos 4 personas.)'],
-            ],
+ ['Sofia', '몇 분이에요? (¿Cuántas personas son?)'],
+ ['Marco', '[[0]] [[1]]이에요. (Somos 4 personas.)'],
+ ],
             blanks: [
               { options: ['사', '오', '삼', '이'], answer: '사', explain: '사(sa) = 4. Con 분(personas formales) — nativo también válido, pero aquí uso sino-coreano.' },
               { options: ['명', '분', '층', '시'], answer: '명', explain: '명(myeong) = contador de personas. 사 명 = 4 personas.' },
@@ -212,9 +212,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Hora de reunión',
             lines: [
-              ['David', '회의가 몇 시에 시작해요? (¿A qué hora empieza la reunión?)'],
-              ['Zhanna', '[[0]] 시 [[1]] 분에 시작해요. (Empieza a las 2 y 30.)'],
-            ],
+ ['Gael', '회의가 몇 시에 시작해요? (¿A qué hora empieza la reunión?)'],
+ ['Vera', '[[0]] 시 [[1]] 분에 시작해요. (Empieza a las 2 y 30.)'],
+ ],
             blanks: [
               { options: ['두', '이', '사', '오'], answer: '두', explain: 'HORAS usan número NATIVO: 두 시 = las 2. (두 = nativo para 2).' },
               { options: ['삼십', '이십', '오십', '사십'], answer: '삼십', explain: 'MINUTOS usan sino-coreano: 삼십 분 = 30 minutos.' },
@@ -228,7 +228,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el texto con los números sino-coreanos o nativos correctos.',
         type: 'guidedText',
-        scene: 'David habla sobre su agenda del mes',
+        scene: 'Gael habla sobre su agenda del mes',
         text: '저는 [[0]]월에 한국에 가요. (Voy a Corea en octubre.) 비행기가 [[1]] 일에 출발해요. (El avión sale el día 15.) 표 값은 [[2]] 만 원이에요. (El tiquete cuesta 500.000 wones.) 한국에 [[3]] 일 있어요. (Estaré 10 días en Corea.) 매일 [[4]] 시간 한국어를 공부해요. (Estudio coreano 3 horas al día.) 학원이 [[5]] 층에 있어요. (La academia está en el 7º piso.)',
         blanks: [
           { options: ['시', '십', '구', '팔'], answer: '시', explain: '10월 = 시월 (excepción: no 십월). Octubre = 시월.' },
@@ -246,7 +246,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el número sino-coreano correcto para cada situación.',
         type: 'freeText',
         scene: 'Práctica de números en contexto real',
-        text: '커피가 사천오백 원이에요. (El café cuesta ___.) / 오늘은 이월 삼일이에요. (Hoy es ___.) / 십오 분 기다려요. (Espera ___ minutos.) / 내 전화번호는 공일공-이천-오천이에요. (Mi número es ___.) / 회의실이 삼 층에 있어요. (La sala de reuniones está en ___. )',
+        text: '커피가 사천오백 원이에요. (El café cuesta [[0]].) / 오늘은 이월 삼일이에요. (Hoy es [[1]].) / 십오 분 기다려요. (Espera [[2]] minutos.) / 내 전화번호는 공일공-이천-오천이에요. (Mi número es [[3]].) / 회의실이 삼 층에 있어요. (La sala de reuniones está en [[4]]. )',
         blanks: [
           { answer: '4.500 wones', accepted: ['4.500', '4500', '4.500 wones', 'cuatro mil quinientos wones'], explain: '사천오백 = 4.000 + 500 = 4.500.' },
           { answer: '3 de febrero', accepted: ['3 de febrero', 'febrero 3', '2월 3일', 'el 3 de febrero'], explain: '이월(febrero) 삼일(día 3) = 3 de febrero.' },

@@ -4,6 +4,7 @@ import { getMock } from '@/data/mocks';
 import PracticeClient from './PracticeClient';
 import IELTSPracticeClient from './IELTSPracticeClient';
 import TOEFLPracticeClient from './TOEFLPracticeClient';
+import Toefl2026PracticeClient from './Toefl2026PracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
 import TOPIKPracticeClient from './TOPIKPracticeClient';
 
@@ -29,8 +30,20 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
   if (!exam || !mock) notFound();
 
   if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
-  if (slug === 'toefl') return <TOEFLPracticeClient exam={exam} mock={mock} />;
-  if (slug === 'topik') return <TOPIKPracticeClient exam={exam} mock={mock} />;
+  if (slug === 'toefl') {
+    // Mocks in the current official blueprint use the 2026 client; sets 1–4 (legacy
+    // pre-2026 format) keep the old client until migrated.
+    return mock.format === 'toefl-2026'
+      ? <Toefl2026PracticeClient exam={exam} mock={mock} />
+      : <TOEFLPracticeClient exam={exam} mock={mock} />;
+  }
+  // TOPIK: set-1 es el diagnóstico-gancho de leads (UI propia, sin timer);
+  // los demás sets son simulacros completos con el blueprint unificado.
+  if (slug === 'topik') {
+    return mockId === 'set-1'
+      ? <TOPIKPracticeClient exam={exam} mock={mock} />
+      : <LanguagePracticeClient exam={exam} mock={mock} />;
+  }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 
   return <PracticeClient exam={exam} mock={mock} />;

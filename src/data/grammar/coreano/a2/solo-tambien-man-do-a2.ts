@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con 만 o 도 según el contexto.',
         type: 'guidedText',
         scene: '유나가 자기소개를 해요.',
-        text: '저는 한국어[[0]] 공부해요. 영어[[1]] 조금 해요. 한국 드라마[[2]] 봐요. 요리[[1]] 좋아해요. 주말에[[0]] 시간이 있어요.',
+        text: '저는 한국어[[0]] 공부해요. 영어[[1]] 조금 해요. 한국 드라마[[2]] 봐요. 요리[[3]] 좋아해요. 주말에[[4]] 시간이 있어요.',
         blanks: [
           { options: ['만', '도', '을', '는'], answer: '만', explain: '"한국어만" = solo coreano (en exclusivo).' },
           { options: ['도', '만', '를', '이'], answer: '도', explain: '"영어도" = también inglés (inclusión).' },
@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe 만 o 도 en el espacio correcto.',
         type: 'freeText',
         scene: '상황에 맞게 만 또는 도를 써 보세요.',
-        text: '저___ 한국어를 배워요. (también) / 한 개___ 샀어요. (solo) / 서울에___ 가 봤어요. (también) / 오늘___ 쉬어요. (solo hoy) / 친구한테___ 말했어요. (solo a él)',
+        text: '저[[0]] 한국어를 배워요. (también) / 한 개[[1]] 샀어요. (solo) / 서울에[[2]] 가 봤어요. (también) / 오늘[[3]] 쉬어요. (solo hoy) / 친구한테[[4]] 말했어요. (solo a él)',
         blanks: [
           { answer: '도', explain: '"저도" = yo también.' },
           { answer: '만', explain: '"한 개만" = solo uno.' },

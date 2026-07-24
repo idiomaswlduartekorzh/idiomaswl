@@ -106,15 +106,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David anuncia el horario de clase',
-            lines: [['David', 'Le cours commence ___ 9 heures.']],
+            scene: 'Nico anuncia el horario de clase',
+            lines: [['Nico', 'Le cours commence ___ 9 heures.']],
             options: ['à', 'en', 'le', 'dans'],
             answer: 'à',
             explain: 'Hora exacta → "à 9 heures".',
           },
           {
-            scene: 'Zhanna describe su rutina',
-            lines: [['Zhanna', '___ lundi, j\'ai trois classes.']],
+            scene: 'Nora describe su rutina',
+            lines: [['Nora', '___ lundi, j\'ai trois classes.']],
             options: ['Le', 'En', 'À', 'Dans'],
             answer: 'Le',
             explain: '"Le lundi" = los lunes (habitual). Días de la semana → "le".',
@@ -155,8 +155,8 @@ const topic: GrammarTopic = {
             explain: '"Hiver" es masc. pero usa "en" (la excepción es solo printemps → au).',
           },
           {
-            scene: 'David describe su semana',
-            lines: [['David', 'Je travaille ___ vendredi soir.']],
+            scene: 'Nico describe su semana',
+            lines: [['Nico', 'Je travaille ___ vendredi soir.']],
             options: ['le', 'en', 'à', 'dans'],
             answer: 'le',
             explain: '"Le vendredi soir" = todos los viernes por la noche. Día → "le".',
@@ -179,8 +179,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna habla de las estaciones',
-            lines: [['Zhanna', '[[0]] hiver il fait froid mais [[1]] printemps il fait doux.']],
+            scene: 'Nora habla de las estaciones',
+            lines: [['Nora', '[[0]] hiver il fait froid mais [[1]] printemps il fait doux.']],
             blanks: [
               { options: ['En', 'Au', 'Le', 'Dans'], answer: 'En', explain: '"En hiver" — estación fem. → en.' },
               { options: ['au', 'en', 'le', 'dans'], answer: 'au', explain: '"Au printemps" — ¡única excepción! Masc. → au.' },
@@ -208,10 +208,10 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Un año en WeLearn',
         tag: 'Texto guiado',
-        intro: 'David describe el calendario de WeLearn. Elige la preposición de tiempo correcta.',
+        intro: 'Nico describe el calendario de WeLearn. Elige la preposición de tiempo correcta.',
         type: 'guidedText',
-        scene: 'David explica el calendario anual de la academia WeLearn.',
-        text: 'WeLearn commence ses cours [[0]] septembre. [[1]] hiver, les cours intensifs commencent [[2]] 8 heures du matin. [[3]] printemps, on organise des ateliers spéciaux. [[4]] lundi et [[5]] vendredi, David enseigne le coréen. Le programme finit [[6]] juin. [[7]] deux semaines, nous publions le calendrier complet.',
+        scene: 'Nico explica el calendario anual de la academia WeLearn.',
+        text: 'WeLearn commence ses cours [[0]] septembre. [[1]] hiver, les cours intensifs commencent [[2]] 8 heures du matin. [[3]] printemps, on organise des ateliers spéciaux. [[4]] lundi et [[5]] vendredi, Nico enseigne le coréen. Le programme finit [[6]] juin. [[7]] deux semaines, nous publions le calendrier complet.',
         blanks: [
           { options: ['en', 'au', 'le', 'dans'], answer: 'en', explain: '"En septembre" — mes → en.' },
           { options: ['En', 'Au', 'Le', 'Dans'], answer: 'En', explain: '"En hiver" — estación (exc. printemps) → en.' },
@@ -247,7 +247,7 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'David anuncia el comienzo de clases',
+            scene: 'Nico anuncia el comienzo de clases',
             prompt: 'Di que las clases empiezan en septiembre, los lunes a las 9 de la mañana.',
             answer: 'Les cours commencent en septembre, le lundi à 9 heures du matin.',
             accepted: ['en septembre', 'le lundi', 'à 9', 'à 9 heures'],
@@ -261,7 +261,7 @@ const topic: GrammarTopic = {
             explain: '"En été" (est. fem.) / "au printemps" (excepción: masc. → au).',
           },
           {
-            scene: 'Zhanna anuncia algo inminente',
+            scene: 'Nora anuncia algo inminente',
             prompt: 'Di que la reunión empieza dentro de diez minutos (dans).',
             answer: 'La réunion commence dans dix minutes.',
             accepted: ['dans dix minutes', 'dans 10 minutes', 'dans une heure', 'dans deux jours'],

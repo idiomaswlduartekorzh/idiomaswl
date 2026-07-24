@@ -113,15 +113,15 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Contexto formal',
-            lines: [['Zhanna', 'A empresa ___ os resultados na próxima semana.']],
+            lines: [['Lía', 'A empresa ___ os resultados na próxima semana.']],
             options: ['divulgará', 'vai divulgar', 'divulgou', 'divulgava'],
             answer: 'divulgará',
             explain: 'Futuro simple en contexto formal: divulgar (-ar) → divulgará (ela/a empresa).',
           },
           {
             scene: 'Plan cotidiano',
-            lines: [['David', 'Nós ___ no restaurante perto do escritório amanhã.']],
-            options: ['almoçaremos', 'almoçamos', 'almoçávamos', 'almoçamos'],
+            lines: [['Nico', 'Nós ___ no restaurante perto do escritório amanhã.']],
+            options: ['almoçaremos', 'almoçamos', 'almoçávamos'],
             answer: 'almoçaremos',
             explain: 'Almoçar (-ar) en futuro: almoçaremos (nós).',
           },
@@ -164,7 +164,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Plan de negocios (formal)',
-            lines: [['Zhanna', 'A empresa [[0]] (lançar) o produto em março e [[1]] (contratar) mais funcionários.']],
+            lines: [['Lía', 'A empresa [[0]] (lançar) o produto em março e [[1]] (contratar) mais funcionários.']],
             blanks: [
               { options: ['lançará', 'lançou', 'lança'], answer: 'lançará', explain: 'Lançar (-ar), 3ª sg: lançará.' },
               { options: ['contratará', 'contratou', 'contrata'], answer: 'contratará', explain: 'Contratar (-ar), 3ª sg: contratará.' },
@@ -180,7 +180,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La conferencia',
-            lines: [['David', 'O palestrante [[0]] (falar) sobre tecnologia e os participantes [[1]] (poder) fazer perguntas.']],
+            lines: [['Nico', 'O palestrante [[0]] (falar) sobre tecnologia e os participantes [[1]] (poder) fazer perguntas.']],
             blanks: [
               { options: ['falará', 'falou', 'falava'], answer: 'falará', explain: 'Falar (-ar), 3ª sg: falará.' },
               { options: ['poderão', 'puderam', 'podiam'], answer: 'poderão', explain: 'Poder en futuro: poderão (eles).' },

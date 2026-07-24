@@ -104,7 +104,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Predicción del tiempo',
-            lines: [['David', 'Il ___ pleuvoir demain.']],
+            lines: [['Diego', 'Il ___ pleuvoir demain.']],
             options: ['va', 'vais', 'vas', 'allons'],
             answer: 'va',
             explain: '"Il" → il va + infinitif. Para predicciones también se usa futur proche.',
@@ -118,7 +118,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pregunta a la clase',
-            lines: [['David', 'Vous ___ faire l\'exercice maintenant?']],
+            lines: [['Diego', 'Vous ___ faire l\'exercice maintenant?']],
             options: ['allez', 'allons', 'vont', 'vas'],
             answer: 'allez',
             explain: '"Vous" → vous allez + infinitif.',
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Negando un plan',
-            lines: [['David', 'Elle ne [[0]] pas [[1]] aujourd\'hui.']],
+            lines: [['Diego', 'Elle ne [[0]] pas [[1]] aujourd\'hui.']],
             blanks: [
               { options: ['va', 'vais', 'allons'], answer: 'va', explain: '"Elle" → va (ne va pas).' },
               { options: ['travailler', 'travaille', 'travaillé'], answer: 'travailler', explain: 'Infinitivo: travailler.' },
@@ -211,7 +211,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de aller para expresar los planes.',
         type: 'freeText',
         scene: 'Completar planes personales y predicciones usando futur proche',
-        text: 'Ce soir, je ___ (vais/vas/va) regarder une série. Demain matin, tu ___ (vais/vas/va) travailler. Le week-end, nous ___ (allons/allez/vont) voyager. Elle ne ___ (vais/vas/va) pas venir à la fête. Ils ___ (allons/allez/vont) apprendre une nouvelle langue. On ___ (vais/vas/va) bien s\'amuser!',
+        text: 'Ce soir, je [[0]] (vais/vas/va) regarder une série. Demain matin, tu [[1]] (vais/vas/va) travailler. Le week-end, nous [[2]] (allons/allez/vont) voyager. Elle ne [[3]] (vais/vas/va) pas venir à la fête. Ils [[4]] (allons/allez/vont) apprendre une nouvelle langue. On [[5]] (vais/vas/va) bien s\'amuser!',
         blanks: [
           { answer: 'vais', accepted: ['vais'], explain: '"Je" → vais.' },
           { answer: 'vas', accepted: ['vas'], explain: '"Tu" → vas.' },

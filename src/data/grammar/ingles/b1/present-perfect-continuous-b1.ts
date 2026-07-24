@@ -189,7 +189,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Un colega curioso',
-            lines: [['Colleague:', 'What [[0]] (you/do) with all those spreadsheets?'], ['You:', 'I [[0]] (analyze) our sales data [[1]] last week.']],
+            lines: [['Colleague:', 'What [[0]] (you/do) with all those spreadsheets?'], ['You:', 'I [[1]] (analyze) our sales data [[2]] last week.']],
             blanks: [
               { options: ['have you been doing', 'have you done', 'are you doing', 'did you do'], answer: 'have you been doing', explain: 'Have you been doing: pregunta por actividad en progreso reciente → present perfect continuous.' },
               { options: ['\'ve been analyzing', '\'ve analyzed', '\'m analyzing', 'analyzed'], answer: '\'ve been analyzing', explain: '\'ve been analyzing: actividad en progreso desde la semana pasada → present perfect continuous.' },

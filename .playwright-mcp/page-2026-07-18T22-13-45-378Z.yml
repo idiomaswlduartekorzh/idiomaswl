@@ -1,0 +1,226 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "WeLearn Idiomas WeLearn" [ref=f3e4] [cursor=pointer]:
+        - /url: /home
+        - img "WeLearn" [ref=f3e6]
+        - generic [ref=f3e7]: Idiomas WeLearn
+      - button "Abrir menú" [ref=f3e8] [cursor=pointer]
+  - main [ref=f3e12]:
+    - generic [ref=f3e15]:
+      - generic [ref=f3e16]:
+        - link "← Task 1" [ref=f3e17] [cursor=pointer]:
+          - /url: /practica/ielts/academic/writing/task1
+        - generic [ref=f3e18]: Task 1 / Maps
+      - paragraph [ref=f3e19]: 🗺️ Sub-skill 6 — Maps
+      - heading "Describe maps" [level=1] [ref=f3e21]
+      - paragraph [ref=f3e22]: Maps compare a place before and after a change. You need location and change vocabulary. Select a change and write a sentence to describe it.
+      - region "Official format versus WeLearn strategy" [ref=f3e23]:
+        - article [ref=f3e24]:
+          - heading "Official format versus WeLearn strategy" [level=2] [ref=f3e25]
+          - paragraph [ref=f3e26]:
+            - strong [ref=f3e27]: "Official format:"
+            - text: IELTS Academic Writing Task 1 may present maps as visual information. Maps are a practice route for that input, not a separate official task.
+          - paragraph [ref=f3e28]:
+            - strong [ref=f3e29]: "WeLearn strategy:"
+            - text: We isolate maps because they require location, transformation and time-comparison language.
+        - article [ref=f3e30]:
+          - heading "Answer review" [level=2] [ref=f3e31]
+          - paragraph [ref=f3e32]:
+            - strong [ref=f3e33]: "Review focus:"
+            - text: Locate spatial changes and compare the initial and final states.
+          - paragraph [ref=f3e34]:
+            - strong [ref=f3e35]: "Explained answer:"
+            - text: A strong response describes visible changes, uses spatial prepositions and does not infer benefits or reasons that are not shown.
+          - generic [ref=f3e36]:
+            - link "IELTS Academic source" [ref=f3e37] [cursor=pointer]:
+              - /url: https://ielts.org/take-a-test/test-types/ielts-academic-test
+            - link "IELTS samples" [ref=f3e38] [cursor=pointer]:
+              - /url: https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test
+            - link "Writing rubric" [ref=f3e39] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/rubrica
+            - link "Task 1 hub" [ref=f3e40] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/task1
+            - link "Model answers Task 2" [ref=f3e41] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/task2/model-answers
+            - link "Compare General Training" [ref=f3e42] [cursor=pointer]:
+              - /url: /practica/ielts/general-training
+      - generic [ref=f3e43]:
+        - paragraph [ref=f3e44]: Visual types in Task 1
+        - generic [ref=f3e46]:
+          - generic [ref=f3e47]:
+            - heading "Identify the visual before you practise the sub-skills." [level=2] [ref=f3e48]
+            - paragraph [ref=f3e49]: "Your response structure changes with the input: a line graph requires trends, a table requires grouping, a process requires sequencing and a map requires spatial transformation. This guide connects the official IELTS format with the WeLearn strategy."
+          - generic [ref=f3e50]:
+            - article [ref=f3e51]:
+              - heading "Line graph" [level=3] [ref=f3e52]
+              - paragraph [ref=f3e53]: Changes over time
+              - paragraph [ref=f3e54]:
+                - strong [ref=f3e55]: "Overview:"
+                - text: Look for the dominant trend, line crossing, peak, fall or convergence.
+              - paragraph [ref=f3e56]:
+                - strong [ref=f3e57]: "Body:"
+                - text: "Group the data by periods: starting point, rapid change, stabilisation or endpoint."
+              - paragraph [ref=f3e58]: rose steadily, peaked at, declined gradually, overtook, remained stable
+              - link "Practise this type →" [ref=f3e59] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/graficos-lineales
+            - article [ref=f3e60]:
+              - heading "Bar chart" [level=3] [ref=f3e61]
+              - paragraph [ref=f3e62]: Comparisons between categories
+              - paragraph [ref=f3e63]:
+                - strong [ref=f3e64]: "Overview:"
+                - text: Look for the highest and lowest categories and the clearest contrast.
+              - paragraph [ref=f3e65]:
+                - strong [ref=f3e66]: "Body:"
+                - text: Group similar categories instead of describing every bar separately.
+              - paragraph [ref=f3e67]: higher than, whereas, considerably lower, the largest proportion
+              - link "Practise this type →" [ref=f3e68] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/graficos-de-barras
+            - article [ref=f3e69]:
+              - heading "Pie charts" [level=3] [ref=f3e70]
+              - paragraph [ref=f3e71]: Parts of a whole
+              - paragraph [ref=f3e72]:
+                - strong [ref=f3e73]: "Overview:"
+                - text: Look for the dominant segment and how the distribution changes between two charts.
+              - paragraph [ref=f3e74]:
+                - strong [ref=f3e75]: "Body:"
+                - text: Compare large and small proportions; avoid listing every segment.
+              - paragraph [ref=f3e76]: accounted for, made up, represented, the smallest share
+              - link "Practise this type →" [ref=f3e77] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/pie-charts
+            - article [ref=f3e78]:
+              - heading "Table" [level=3] [ref=f3e79]
+              - paragraph [ref=f3e80]: Dense data in rows and columns
+              - paragraph [ref=f3e81]:
+                - strong [ref=f3e82]: "Overview:"
+                - text: Look for extremes, row or column patterns and categories that form groups.
+              - paragraph [ref=f3e83]:
+                - strong [ref=f3e84]: "Body:"
+                - text: Turn the table into two logical groups before you write.
+              - paragraph [ref=f3e85]: the figure for, respectively, by contrast, across all categories
+              - link "Practise this type →" [ref=f3e86] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/tablas
+            - article [ref=f3e87]:
+              - heading "Process diagram" [level=3] [ref=f3e88]
+              - paragraph [ref=f3e89]: Production stages or cycles
+              - paragraph [ref=f3e90]:
+                - strong [ref=f3e91]: "Overview:"
+                - text: Mention the number of stages and whether the process is linear or cyclical.
+              - paragraph [ref=f3e92]:
+                - strong [ref=f3e93]: "Body:"
+                - text: Use the passive voice and chronological order; do not invent reasons.
+              - paragraph [ref=f3e94]: is collected, is heated, after this, subsequently, finally
+              - link "Practise this type →" [ref=f3e95] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/procesos
+            - article [ref=f3e96]:
+              - heading "Map" [level=3] [ref=f3e97]
+              - paragraph [ref=f3e98]: Spatial changes over time
+              - paragraph [ref=f3e99]:
+                - strong [ref=f3e100]: "Overview:"
+                - text: "Look for the broad development: urbanisation, replacement, expansion or reduction."
+              - paragraph [ref=f3e101]:
+                - strong [ref=f3e102]: "Body:"
+                - text: Organise the description by zones or by the before-and-after comparison.
+              - paragraph [ref=f3e103]: was replaced by, was converted into, to the north of, adjacent to
+              - link "Practise this type →" [ref=f3e104] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/mapas
+            - article [ref=f3e105]:
+              - heading "Mixed chart" [level=3] [ref=f3e106]
+              - paragraph [ref=f3e107]: Two connected visuals
+              - paragraph [ref=f3e108]:
+                - strong [ref=f3e109]: "Overview:"
+                - text: Find the relationship between the visuals instead of treating them as separate tasks.
+              - paragraph [ref=f3e110]:
+                - strong [ref=f3e111]: "Body:"
+                - text: Use one paragraph per visual or organise around a shared relationship, as appropriate.
+              - paragraph [ref=f3e112]: while, in relation to, this corresponded with, a similar pattern
+              - link "Practise this type →" [ref=f3e113] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/tarea-completa
+      - generic [ref=f3e114]:
+        - heading "How to read a map before writing" [level=2] [ref=f3e115]
+        - paragraph [ref=f3e116]: Read the two states as a comparison of space. Locate the main roads and fixed reference points first, then identify what disappeared, what appeared and what remained. A useful overview describes the dominant redevelopment without guessing causes, population or success.
+      - tablist "Map examples" [ref=f3e117]:
+        - 'tab "01 · Town centre changes: 1990 versus 2020" [selected] [ref=f3e118] [cursor=pointer]'
+        - 'tab "02 · University campus: 1995 versus 2025" [ref=f3e119] [cursor=pointer]'
+        - 'tab "03 · Coastal village: 2000 versus 2025" [ref=f3e120] [cursor=pointer]'
+        - 'tab "04 · Park redevelopment: 1980 versus 2020" [ref=f3e121] [cursor=pointer]'
+        - 'tab "05 · Shopping centre redevelopment: before versus after" [ref=f3e122] [cursor=pointer]'
+      - generic [ref=f3e123]:
+        - generic [ref=f3e124]:
+          - paragraph [ref=f3e125]: Location
+          - generic [ref=f3e126]:
+            - generic [ref=f3e127]: to the north of
+            - generic [ref=f3e128]: to the south of
+            - generic [ref=f3e129]: to the east of
+            - generic [ref=f3e130]: to the west of
+            - generic [ref=f3e131]: adjacent to
+            - generic [ref=f3e132]: opposite
+            - generic [ref=f3e133]: between X and Y
+            - generic [ref=f3e134]: in the centre of
+            - generic [ref=f3e135]: on the western/eastern side
+        - generic [ref=f3e136]:
+          - paragraph [ref=f3e137]: Change
+          - generic [ref=f3e138]:
+            - generic [ref=f3e139]: was replaced by
+            - generic [ref=f3e140]: was demolished
+            - generic [ref=f3e141]: was built
+            - generic [ref=f3e142]: was extended
+            - generic [ref=f3e143]: was converted into
+            - generic [ref=f3e144]: was widened
+            - generic [ref=f3e145]: was cleared
+            - generic [ref=f3e146]: a new X was constructed
+      - generic [ref=f3e147]: 1/5
+      - generic [ref=f3e151]:
+        - paragraph [ref=f3e152]: IELTS-style visual reference
+        - img "IELTS-style map comparing a town centre in 1990 and 2020, including a park, factory, housing estate, school, roads, car park and shopping centre." [ref=f3e154]
+      - generic [ref=f3e155]:
+        - paragraph [ref=f3e156]: "Town centre changes: 1990 versus 2020"
+        - generic [ref=f3e157]:
+          - generic [ref=f3e158]:
+            - paragraph [ref=f3e159]: Before
+            - generic [ref=f3e160]:
+              - button "Park" [ref=f3e161] [cursor=pointer]
+              - button "Factory" [ref=f3e162] [cursor=pointer]
+              - button "Small road" [ref=f3e163] [cursor=pointer]
+              - button "Car park" [ref=f3e164] [cursor=pointer]
+          - generic [ref=f3e165]:
+            - paragraph [ref=f3e166]: After
+            - generic [ref=f3e167]:
+              - button "Housing estate" [ref=f3e168] [cursor=pointer]
+              - button "School" [ref=f3e169] [cursor=pointer]
+              - button "Dual carriageway" [ref=f3e170] [cursor=pointer]
+              - button "Shopping centre" [ref=f3e171] [cursor=pointer]
+        - paragraph [ref=f3e172]: Click an element to practise that sentence.
+      - generic [ref=f3e173]:
+        - paragraph [ref=f3e174]: Complete model paragraph
+        - paragraph [ref=f3e175]: Comparing the two maps, the town centre underwent substantial redevelopment between 1990 and 2020. The park and factory in the northern half were replaced by a housing estate and a school respectively, while the small road across the centre was widened into a dual carriageway. In the south-east, the car park was converted into a shopping centre.
+      - button "Next map →" [ref=f3e176] [cursor=pointer]
+      - region [ref=f3e177]:
+        - paragraph [ref=f3e178]: WeLearn progressive engine
+        - heading "Practise map writing by level" [level=2] [ref=f3e180]
+        - paragraph [ref=f3e181]: Identify a visible change first, then organise spatial evidence and build a cautious map overview.
+        - generic [ref=f3e182]:
+          - button "Level 1 Location and change" [pressed] [ref=f3e183] [cursor=pointer]:
+            - strong [ref=f3e184]: Level 1
+            - generic [ref=f3e185]: Location and change
+          - button "Level 2 Grouping and overview" [ref=f3e186] [cursor=pointer]:
+            - strong [ref=f3e187]: Level 2
+            - generic [ref=f3e188]: Grouping and overview
+          - button "Level 3 Precise map sentences" [ref=f3e189] [cursor=pointer]:
+            - strong [ref=f3e190]: Level 3
+            - generic [ref=f3e191]: Precise map sentences
+        - generic [ref=f3e192]:
+          - generic [ref=f3e193]:
+            - generic [ref=f3e194]: Exercise 1 of 2
+            - generic [ref=f3e195]: Level 1
+          - paragraph [ref=f3e196]: “A park becomes a housing estate in the north-west. Which sentence reports the visible change?”
+          - generic [ref=f3e197]:
+            - button "A. The housing estate was more popular than the park." [ref=f3e198] [cursor=pointer]
+            - button "B. The park was moved to the south-east." [ref=f3e199] [cursor=pointer]
+            - button "C. The park in the north-west was replaced by a housing estate." [ref=f3e200] [cursor=pointer]
+            - button "D. The park improved the quality of life in the town." [ref=f3e201] [cursor=pointer]
+          - button "Check answer" [disabled] [ref=f3e203] [cursor=pointer]
+  - link "Contáctanos por WhatsApp" [ref=f3e204] [cursor=pointer]:
+    - /url: https://wa.me/573005004253?text=Hola%2C%20estaba%20practicando%20en%20WeLearn%20y%20quiero%20saber%20c%C3%B3mo%20continuar%20mi%20preparaci%C3%B3n.
+  - button "Open Next.js Dev Tools" [ref=f3e214] [cursor=pointer]
+  - alert [ref=f3e218]

@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la descripción de una rutina con 전에/후에.',
         type: 'guidedText',
         scene: '준호가 하루 일과를 설명해요.',
-        text: '아침에 일어난 [[0]] 운동을 해요. 운동하[[1]] 전에 스트레칭을 해요. 샤워한 [[2]] 아침을 먹어요. 학교 [[3]] 친구를 만나요. 수업이 끝난 [[0]] 도서관에서 공부해요.',
+        text: '아침에 일어난 [[0]] 운동을 해요. 운동하[[1]] 전에 스트레칭을 해요. 샤워한 [[2]] 아침을 먹어요. 학교 [[3]] 친구를 만나요. 수업이 끝난 [[4]] 도서관에서 공부해요.',
         blanks: [
           { options: ['후에', '전에', '기에', '다음'], answer: '후에', explain: '"일어난 후에" = después de levantarse.' },
           { options: ['기', '는', 'ㄴ', '고'], answer: '기', explain: '"운동하기 전에" = antes de hacer ejercicio.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta para 전에 o 후에.',
         type: 'freeText',
         scene: '시간 순서 표현을 완성하세요.',
-        text: '자___ 전에 책을 읽어요. / 밥을 먹___ 다음에 커피를 마셔요. / 한국에 오___ 전에 한국어를 배웠어요. / 졸업___ 후에 취직할 거예요.',
+        text: '자[[0]] 전에 책을 읽어요. / 밥을 먹[[1]] 다음에 커피를 마셔요. / 한국에 오[[2]] 전에 한국어를 배웠어요. / 졸업[[3]] 후에 취직할 거예요.',
         blanks: [
           { answer: '기', explain: '"자기 전에" = antes de dormir. -기 + 전에.' },
           { answer: '은', explain: '"먹은 다음에" = después de comer. -은 (consonante final).' },

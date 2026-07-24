@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta de 것 같다.',
         type: 'freeText',
         scene: '상황을 보고 추측해 보세요.',
-        text: '그 사람이 한국 사람인 ___ 같아요. / 오늘 날씨가 춥___ 것 같아요. / 이미 출발___ 것 같아요. / 내일 늦___ 것 같아요.',
+        text: '그 사람이 한국 사람인 [[0]] 같아요. / 오늘 날씨가 춥[[1]] 것 같아요. / 이미 출발[[2]] 것 같아요. / 내일 늦[[3]] 것 같아요.',
         blanks: [
           { answer: '것', explain: '"한국 사람인 것 같아요" = Parece que es coreano.' },
           { answer: '은', explain: '"추운 것 같아요" = Parece que hace frío (adjetivo: 춥 → 추운).' },

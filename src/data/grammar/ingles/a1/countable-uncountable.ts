@@ -63,6 +63,24 @@ const topic: GrammarTopic = {
         'Much y many son más frecuentes en preguntas y negativas: How much money? / How many students? / I don\'t have much time. / I don\'t have many friends. En A1 practica las preguntas con How much? y How many? — son las más útiles.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre nombres contables e incontables en inglés?',
+      paragraphs: [
+        'Los contables se pueden contar y tienen plural (one apple, two apples). Los incontables no se cuentan ni tienen plural (water, money, information, advice). Trampa: varios que en español son contables, en inglés son incontables ("advice", "furniture", "news", "bread").',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "some" y cuándo "any"?',
+      paragraphs: [
+        '"some" en frases afirmativas ("I have some money", "There are some apples"); "any" en negativas e interrogativas ("I don\'t have any money", "Are there any apples?"). Ambos se usan con incontables y con plurales contables.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "much" y cuándo "many"?',
+      paragraphs: [
+        '"much" con incontables ("How much money?", "not much time"); "many" con contables en plural ("How many books?", "not many people"). En frases afirmativas se prefiere "a lot of" para ambos: "a lot of money", "a lot of friends".',
+      ],
+    },
   ],
   visual: {
     mode: 'table',
@@ -102,7 +120,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ofreciendo algo',
-            lines: [['David', 'Would you like ___ water?']],
+            lines: [['Iván', 'Would you like ___ water?']],
             options: ['some', 'any', 'many', 'much'],
             answer: 'some',
             explain: 'some water — oferta/afirmativa: some. Water es incontable.',
@@ -161,7 +179,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Cuántos estudiantes',
-            lines: [['David', 'How [[0]] [[1]] are in the advanced group?']],
+            lines: [['Iván', 'How [[0]] [[1]] are in the advanced group?']],
             blanks: [
               { options: ['many', 'much', 'some'], answer: 'many', explain: 'How many — students es contable.' },
               { options: ['students', 'student', 'a student'], answer: 'students', explain: 'How many students? — plural.' },
@@ -187,12 +205,12 @@ const topic: GrammarTopic = {
       },
       {
         id: 'l3',
-        title: 'En la librería con David',
+        title: 'En la librería con Iván',
         tag: 'Opciones',
         intro: 'Elige some, any, much o many para completar el diálogo.',
         type: 'guidedText',
-        scene: 'David y Carlos en la librería buscando materiales para el examen IELTS',
-        text: 'Carlos: Do you have [[0]] IELTS books? David: Yes, I have [[1]] books here. How [[2]] money do you have? Carlos: I don\'t have [[3]] money today. David: It\'s okay. Do you need [[4]] advice? Carlos: Yes please! I have [[5]] questions about the speaking test.',
+        scene: 'Iván y Carlos en la librería buscando materiales para el examen IELTS',
+        text: 'Carlos: Do you have [[0]] IELTS books? Iván: Yes, I have [[1]] books here. How [[2]] money do you have? Carlos: I don\'t have [[3]] money today. Iván: It\'s okay. Do you need [[4]] advice? Carlos: Yes please! I have [[5]] questions about the speaking test.',
         blanks: [
           { options: ['any', 'some', 'much'], answer: 'any', explain: 'Pregunta → any (Do you have any?).' },
           { options: ['some', 'any', 'much'], answer: 'some', explain: 'Afirmativa → some books.' },
@@ -209,7 +227,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe some, any, much o many según el contexto.',
         type: 'freeText',
         scene: 'Preparando la mochila para la clase de inglés',
-        text: 'I have ___ notebooks in my bag. I don\'t have ___ pens — only one. How ___ books do you need? I have ___ water. I don\'t have ___ time this morning. Can I have ___ help?',
+        text: 'I have [[0]] notebooks in my bag. I don\'t have [[1]] pens — only one. How [[2]] books do you need? I have [[3]] water. I don\'t have [[4]] time this morning. Can I have [[5]] help?',
         blanks: [
           { answer: 'some', accepted: ['some'], explain: 'Afirmativa + contable → some notebooks.' },
           { answer: 'any', accepted: ['any'], explain: 'Negativa + contable → any pens.' },

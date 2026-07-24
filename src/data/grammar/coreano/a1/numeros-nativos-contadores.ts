@@ -121,7 +121,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En clase',
-            lines: [['Zhanna', '학생이 ___ 명이에요. (Hay 3 estudiantes.)']],
+            lines: [['Iris', '학생이 ___ 명이에요. (Hay 3 estudiantes.)']],
             options: ['세', '셋', '삼', '세이'],
             answer: '세',
             explain: '셋(3) ante contador 명 cambia a 세. 세 명 = tres personas.',
@@ -135,7 +135,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Qué hora es?',
-            lines: [['David', '지금 몇 시예요? — 지금 ___ 시예요. (Son las 4.)']],
+            lines: [['Iván', '지금 몇 시예요? — 지금 ___ 시예요. (Son las 4.)']],
             options: ['네', '넷', '사', '네이'],
             answer: '네',
             explain: '넷(4) ante contador 시 cambia a 네. 네 시 = las cuatro.',
@@ -163,7 +163,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Cuánto cambia',
-            lines: [['David', '스물 명 vs 스무 명 — ¿Cuál es correcto?']],
+            lines: [['Iván', '스물 명 vs 스무 명 — ¿Cuál es correcto?']],
             options: ['스무 명', '스물 명', '이십 명', '스물이 명'],
             answer: '스무 명',
             explain: '스물(20) ante contador cambia a 스무: 스무 명 = veinte personas.',
@@ -180,9 +180,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En el mercado',
             lines: [
-              ['Ana', '귤 몇 개 드릴까요? (¿Cuántas mandarinas le doy?)'],
-              ['Carlos', '[[0]] [[1]] 주세요. (Deme 6, por favor.)'],
-            ],
+ ['Ana', '귤 몇 개 드릴까요? (¿Cuántas mandarinas le doy?)'],
+ ['Carlos', '[[0]] [[1]] 주세요. (Deme 6, por favor.)'],
+ ],
             blanks: [
               { options: ['여섯', '육', '일곱', '다섯'], answer: '여섯', explain: '여섯(6) no cambia ante contador. Seis mandarinas.' },
               { options: ['개', '명', '잔', '권'], answer: '개', explain: '개 = contador de objetos. 여섯 개 = seis piezas.' },
@@ -191,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la cafetería',
             lines: [
-              ['Lina', '아메리카노 몇 잔 드릴까요? (¿Cuántos americanos?)'],
-              ['Marco', '[[0]] [[1]] 주세요. (Dos, por favor.)'],
-            ],
+ ['Lina', '아메리카노 몇 잔 드릴까요? (¿Cuántos americanos?)'],
+ ['Marco', '[[0]] [[1]] 주세요. (Dos, por favor.)'],
+ ],
             blanks: [
               { options: ['두', '둘', '이', '한'], answer: '두', explain: '둘→두 ante contador. Dos cafés.' },
               { options: ['잔', '개', '명', '권'], answer: '잔', explain: '잔(jan) = vaso/taza. 두 잔 = dos tazas.' },
@@ -202,9 +202,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En el aula',
             lines: [
-              ['Zhanna', '오늘 수업에 학생이 몇 명 왔어요? (¿Cuántos estudiantes vinieron hoy?)'],
-              ['David', '[[0]] [[1]] 왔어요. (Vinieron ocho.)'],
-            ],
+ ['Iris', '오늘 수업에 학생이 몇 명 왔어요? (¿Cuántos estudiantes vinieron hoy?)'],
+ ['Iván', '[[0]] [[1]] 왔어요. (Vinieron ocho.)'],
+ ],
             blanks: [
               { options: ['여덟', '팔', '아홉', '일곱'], answer: '여덟', explain: '여덟(8) no cambia ante 명. Ocho estudiantes.' },
               { options: ['명', '개', '잔', '분'], answer: '명', explain: '명 = contador de personas (informal/neutro).' },
@@ -213,9 +213,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Cita con el médico',
             lines: [
-              ['Recepcionista', '몇 시 예약이에요? (¿A qué hora es su cita?)'],
-              ['Sofia', '[[0]] [[1]] 예약이에요. (A las 3.)'],
-            ],
+ ['Recepcionista', '몇 시 예약이에요? (¿A qué hora es su cita?)'],
+ ['Sofia', '[[0]] [[1]] 예약이에요. (A las 3.)'],
+ ],
             blanks: [
               { options: ['세', '셋', '삼', '세이'], answer: '세', explain: '셋→세 ante 시. Las horas usan número nativo.' },
               { options: ['시', '분', '일', '월'], answer: '시', explain: '시 = contador de horas. 세 시 = las tres.' },
@@ -247,7 +247,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el número nativo correcto (con la forma abreviada si aplica).',
         type: 'freeText',
         scene: 'Describir cantidades en el contexto de WeLearn',
-        text: '위런에 선생님이 ___ 분이에요. (Hay 2 profesores — formal.) / 오늘 수업이 ___ 시에 시작해요. (La clase empieza a las 10.) / 저는 책을 ___ 권 가지고 있어요. (Tengo 7 libros.) / 커피숍에 의자가 ___ 개 있어요. (Hay 9 sillas en la cafetería.) / 저는 스물___ 살이에요. (Tengo 22 años.)',
+        text: '위런에 선생님이 [[0]] 분이에요. (Hay 2 profesores — formal.) / 오늘 수업이 [[1]] 시에 시작해요. (La clase empieza a las 10.) / 저는 책을 [[2]] 권 가지고 있어요. (Tengo 7 libros.) / 커피숍에 의자가 [[3]] 개 있어요. (Hay 9 sillas en la cafetería.) / 저는 스물[[4]] 살이에요. (Tengo 22 años.)',
         blanks: [
           { answer: '두', accepted: ['두'], explain: '둘→두 ante 분. 두 분 = dos personas (formal).' },
           { answer: '열', accepted: ['열'], explain: '열 시 = las 10. 열 no cambia ante 시.' },

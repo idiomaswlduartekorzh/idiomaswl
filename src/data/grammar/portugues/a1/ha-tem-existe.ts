@@ -105,7 +105,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No hay tiempo',
-            lines: [['David', '___ tempo para isso agora.']],
+            lines: [['Hugo', '___ tempo para isso agora.']],
             options: ['Não há', 'Não há um', 'Não têm', 'Não hão'],
             answer: 'Não há',
             explain: 'Negativo: Não há. Sin artículo cuando es incontable.',
@@ -133,7 +133,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hay una oportunidad',
-            lines: [['Zhanna', '___ uma ótima oportunidade de aprender aqui.']],
+            lines: [['Lía', '___ uma ótima oportunidade de aprender aqui.']],
             options: ['Há', 'Hão', 'Têm', 'São'],
             answer: 'Há',
             explain: 'Há uma oportunidade: HÁ invariable para singular. Forma formal correcta.',
@@ -164,7 +164,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Opciones en el menú',
-            lines: [['David', '[[0]] muitas opções no menu mas [[1]] opção vegana.']],
+            lines: [['Hugo', '[[0]] muitas opções no menu mas [[1]] opção vegana.']],
             blanks: [
               { options: ['Há', 'Hão', 'Têm'], answer: 'Há', explain: 'Há muitas opções: formal. HÁ invariable.' },
               { options: ['não há', 'não hão', 'não tem'], answer: 'não há', explain: 'Não há (formal). Negativo de HÁ.' },
@@ -181,9 +181,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Hay alguna duda?',
             lines: [
-              ['Zhanna', '[[0]] alguma dúvida sobre as contrações?'],
-              ['Carlos', 'Sim! [[1]] muitas dúvidas!'],
-            ],
+ ['Lía', '[[0]] alguma dúvida sobre as contrações?'],
+ ['Carlos', 'Sim! [[1]] muitas dúvidas!'],
+ ],
             blanks: [
               { options: ['Há', 'Hão', 'Têm'], answer: 'Há', explain: 'Há alguma dúvida? (formal).' },
               { options: ['Tem', 'Têm', 'Não tem'], answer: 'Tem', explain: 'Tem muitas dúvidas: BP. Afirmativo para plural.' },

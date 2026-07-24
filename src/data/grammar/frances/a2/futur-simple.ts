@@ -195,7 +195,7 @@ const topic: GrammarTopic = {
         intro: "Escribe las formas correctas del futur simple sin ayuda de opciones.",
         type: 'freeText',
         scene: "Léa hace promesas a su amiga antes de irse de viaje",
-        text: "Je te promets: je t'___ tous les jours. Je ne t'___ jamais. Nous ___ ensemble quand je reviendrai. Tu ___ me voir à Paris. Et on ___ un super voyage!",
+        text: "Je te promets: je t'[[0]] tous les jours. Je ne t'[[1]] jamais. Nous [[2]] ensemble quand je reviendrai. Tu [[3]] me voir à Paris. Et on [[4]] un super voyage!",
         blanks: [
           { answer: "appellerai", accepted: ["appellerai", "écrirai", "enverrai"], explain: "Appeler en futur: je t'appellerai." },
           { answer: "oublierai", accepted: ["oublierai"], explain: "Oublier en futur: je ne t'oublierai jamais." },

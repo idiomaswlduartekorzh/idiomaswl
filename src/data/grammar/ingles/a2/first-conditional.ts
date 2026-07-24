@@ -200,9 +200,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Invitación condicionada',
             lines: [
-              ['A:', 'Will you come to my graduation?'],
-              ['B:', 'Of course! If they [[0]] me the day off, I [[1]] there.'],
-            ],
+ ['A:', 'Will you come to my graduation?'],
+ ['B:', 'Of course! If they [[0]] me the day off, I [[1]] there.'],
+ ],
             blanks: [
               { options: ['give', 'will give', 'gave', 'gives'], answer: 'give', explain: '"If they give me the day off" — presente simple.' },
               { options: ['\'ll be', 'would be', 'am', 'was'], answer: '\'ll be', explain: '"I\'ll be there" — will + base.' },

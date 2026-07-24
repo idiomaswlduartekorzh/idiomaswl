@@ -1,7 +1,14 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { motion, animate, useInView, AnimatePresence, type Variants } from 'framer-motion';
+import { m, LazyMotion, domAnimation, animate, useInView, AnimatePresence, type Variants } from 'framer-motion';
+
+// Provider que carga de forma diferida solo las features DOM de Framer Motion
+// (animaciones + variantes + exit + gestos hover/tap/inView). Reduce el bundle
+// inicial de ~34 KB a ~4.6 KB; el resto se hidrata bajo demanda.
+export function MotionProvider({ children }: { children: React.ReactNode }) {
+  return <LazyMotion features={domAnimation}>{children}</LazyMotion>;
+}
 
 // ── Hero: palabra que cicla entre idiomas (SSR-safe: renderiza el primero) ─────
 const CYCLE_WORDS = ['inglés', 'coreano', 'alemán', 'francés', 'italiano', 'portugués'];
@@ -14,7 +21,7 @@ export function LangCycle() {
   return (
     <span className="wlh-hero__cycle" aria-live="polite">
       <AnimatePresence mode="wait" initial={false}>
-        <motion.em
+        <m.em
           key={i}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,7 +30,7 @@ export function LangCycle() {
           className="wlh-hero__cycle-word"
         >
           {CYCLE_WORDS[i]}
-        </motion.em>
+        </m.em>
       </AnimatePresence>
     </span>
   );
@@ -51,7 +58,7 @@ export function FadeUp({ children, delay = 0, className }: {
   children: React.ReactNode; delay?: number; className?: string;
 }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       initial="hidden"
       whileInView="show"
@@ -62,14 +69,14 @@ export function FadeUp({ children, delay = 0, className }: {
       }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 // Stagger wrapper — children animate in sequence on scroll
 export function StaggerGrid({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       initial="hidden"
       whileInView="show"
@@ -77,58 +84,58 @@ export function StaggerGrid({ children, className }: { children: React.ReactNode
       variants={staggerContainer}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 export function StaggerItem({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div className={className} variants={staggerItem}>
+    <m.div className={className} variants={staggerItem}>
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 // Hero left column — stagger each child
 export function HeroLeft({ children }: { children: React.ReactNode }) {
   return (
-    <motion.div
+    <m.div
       className="wlh-hero__left"
       initial="hidden"
       animate="show"
       variants={staggerContainer}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 export function HeroItem({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div className={className} variants={fadeUp}>
+    <m.div className={className} variants={fadeUp}>
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 // Hero card (right side) — fade-up + slight scale
 export function HeroCard({ children }: { children: React.ReactNode }) {
   return (
-    <motion.div
+    <m.div
       className="wlh-hero__right"
       initial={{ opacity: 0, y: 36, scale: 0.97 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] as [number,number,number,number] }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 // Stats row — stagger
 export function StatsRow({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       initial="hidden"
       whileInView="show"
@@ -136,13 +143,13 @@ export function StatsRow({ children, className }: { children: React.ReactNode; c
       variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 export function StatItem({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       variants={{
         hidden: { opacity: 0, scale: 0.88 },
@@ -150,7 +157,7 @@ export function StatItem({ children, className }: { children: React.ReactNode; c
       }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -159,7 +166,7 @@ export function StepRow({ children, className, index }: {
   children: React.ReactNode; className?: string; index: number;
 }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       initial={{ opacity: 0, x: -24 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -167,7 +174,7 @@ export function StepRow({ children, className, index }: {
       transition={{ duration: 0.45, delay: index * 0.04, ease: [0.22,1,0.36,1] as [number,number,number,number] }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -196,7 +203,7 @@ export function CountUp({ to, suffix = '', className }: {
 // ── NEW: 3D Tilt card on hover ────────────────────────────────────────────────
 export function TiltCard({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       whileHover={{ rotateX: -4, rotateY: 5, scale: 1.025, z: 20 }}
       whileTap={{ scale: 0.98 }}
@@ -204,7 +211,7 @@ export function TiltCard({ children, className }: { children: React.ReactNode; c
       style={{ transformStyle: 'preserve-3d', willChange: 'transform' }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -213,7 +220,7 @@ export function TeamCard({ children, className, delay = 0 }: {
   children: React.ReactNode; className?: string; delay?: number;
 }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       initial={{ opacity: 0, y: 40, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -222,7 +229,7 @@ export function TeamCard({ children, className, delay = 0 }: {
       transition={{ duration: 0.6, delay, ease: [0.22,1,0.36,1] as [number,number,number,number] }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -231,7 +238,7 @@ export function TestimonialCard({ children, className, delay = 0 }: {
   children: React.ReactNode; className?: string; delay?: number;
 }) {
   return (
-    <motion.div
+    <m.div
       className={className}
       initial={{ opacity: 0, x: 30 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -239,6 +246,6 @@ export function TestimonialCard({ children, className, delay = 0 }: {
       transition={{ duration: 0.55, delay, ease: [0.22,1,0.36,1] as [number,number,number,number] }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

@@ -43,7 +43,14 @@ const topic: GrammarTopic = {
       heading: 'Por qué los artículos en inglés confunden al hispanohablante',
       paragraphs: [
         'En español los artículos concuerdan con el género y número del sustantivo: el libro, la mesa, los niños, las casas, un perro, una silla. Esta automatización de género es tan fuerte que cuando aprendes inglés el cerebro busca ese género y no lo encuentra. En inglés no existe concordancia de género: es siempre a, an o the, sin importar si el objeto es masculino o femenino en español.',
-        'Además, el inglés no usa artículo en contextos donde el español sí lo exige. Decimos La música es bonita pero en inglés general la frase es Music is beautiful, sin artículo. Por el contrario, el inglés usa artículo donde el español no lo pone: I am going to the store (voy a la tienda funciona igual). La diferencia definitiva/indefinida es la lógica que organiza el sistema inglés.',
+        'Además, el inglés no usa artículo en contextos donde el español sí lo exige. Decimos La música es bonita pero en inglés general la frase es Music is beautiful, sin artículo. Por el contrario, el inglés usa artículo donde el español no lo pone: I am going to the store (voy a la tienda funciona igual). Esta es la tabla que organiza todo el sistema:',
+      ],
+      table: [
+        ['Artículo', 'Cuándo se usa', 'Ejemplo'],
+        ['a', 'sonido consonántico, 1ª mención', 'a book, a university'],
+        ['an', 'sonido vocálico, 1ª mención', 'an apple, an hour'],
+        ['the', 'referencia conocida o única', 'the sun, the book (that one)'],
+        ['(sin artículo)', 'general, plural, incontable, idiomas', 'Music is nice, I study English'],
       ],
     },
     {
@@ -68,7 +75,7 @@ const topic: GrammarTopic = {
     {
       heading: 'Cuándo no se usa artículo en inglés',
       paragraphs: [
-        'Los contextos sin artículo más comunes en A1 son: nombres propios de personas y la mayoría de países y ciudades (David, Colombia, Bogotá, pero the United States porque "States" necesita artículo por ser plural de un nombre común), idiomas (I study English, She speaks French), materias y deportes en sentido general (I like music, He plays football), y sustantivos incontables o plurales cuando hablas en general (Water is important, Books are expensive).',
+        'Los contextos sin artículo más comunes en A1 son: nombres propios de personas y la mayoría de países y ciudades (Bruno, Colombia, Bogotá, pero the United States porque "States" necesita artículo por ser plural de un nombre común), idiomas (I study English, She speaks French), materias y deportes en sentido general (I like music, He plays football), y sustantivos incontables o plurales cuando hablas en general (Water is important, Books are expensive).',
         'Una señal de alerta: si en español usas el/la/los/las con sentido general (me gusta la música, los gatos son inteligentes), en inglés probablemente no se usa artículo (I like music, Cats are smart).',
       ],
     },
@@ -82,6 +89,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'She speaks the English.', 'Correcto', 'She speaks English.'],
         ['Incorrecto', 'I have a umbrella.', 'Correcto', 'I have an umbrella.'],
         ['Incorrecto', 'The sun is a star. A sun is very hot.', 'Correcto', 'The sun is a star. The sun is very hot.'],
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa a, an y the en inglés?',
+      paragraphs: [
+        '"a/an" (indefinido) para algo mencionado por primera vez o cualquiera de su tipo: "I have a car". "the" (definido) cuando hablante y oyente saben de cuál se habla, o es único: "the sun", "the car I bought". No hay concordancia de género: a/an/the valen para todo.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "a" y "an"?',
+      paragraphs: [
+        'Depende del SONIDO inicial de la palabra siguiente, no de la letra: "a" ante sonido consonántico (a book, a university —empieza por sonido /j/), "an" ante sonido vocálico (an apple, an hour —la h es muda). El truco: dilo en voz alta antes de elegir.',
+      ],
+    },
+    {
+      heading: '¿Cuándo NO se usa artículo en inglés?',
+      paragraphs: [
+        'Con idiomas (I study English), deportes y materias en general (I play football), sustantivos incontables o plurales en sentido general (Water is important, Cats are smart) y la mayoría de nombres propios y países (Bruno, Colombia). Si en español usas "el/la" con valor general, en inglés normalmente se omite.',
       ],
     },
   ],
@@ -147,7 +172,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablando en general',
-            lines: [['David', '___ music makes me happy.']],
+            lines: [['Bruno', '___ music makes me happy.']],
             options: ['A', 'An', 'The', '—'],
             answer: '—',
             explain: 'Música en sentido general no lleva artículo: Music makes me happy.',
@@ -227,7 +252,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el artículo correcto (a, an, the o nada) sin ayuda.',
         type: 'freeText',
         scene: 'Descripción de un nuevo compañero',
-        text: 'David is [[0]] new student in my class. He has [[1]] English dictionary and [[2]] notebook. [[3]] dictionary is very big. David speaks [[4]] Spanish and a little English.',
+        text: 'Bruno is [[0]] new student in my class. He has [[1]] English dictionary and [[2]] notebook. [[3]] dictionary is very big. Bruno speaks [[4]] Spanish and a little English.',
         blanks: [
           { answer: 'a', explain: 'Primera mención; new empieza con /n/ (consonante): a new student.' },
           { answer: 'an', explain: 'English empieza con /e/ (vocal): an English dictionary.' },

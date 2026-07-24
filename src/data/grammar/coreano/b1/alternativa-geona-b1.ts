@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
         intro: 'Completa un diálogo sobre opciones.',
         type: 'guidedText',
         scene: 'Conversación sobre preferencias y decisiones.',
-        text: '뭘 마실거야? 커피___ 차를 마실 수 있어. 뭘 할거야? 영화를 보___ 게임을 할 수 있어. 언제 와? 내일___ 모레에 올 거야.',
+        text: '뭘 마실거야? 커피[[0]] 차를 마실 수 있어. 뭘 할거야? 영화를 보[[1]] 게임을 할 수 있어. 언제 와? 내일[[2]] 모레에 올 거야.',
         blanks: [
           { options: ['거나', '고도'], answer: '거나', explain: '-거나 para alternativa.' },
           { options: ['거나', '고도'], answer: '거나', explain: '-거나 para alternativa.' },

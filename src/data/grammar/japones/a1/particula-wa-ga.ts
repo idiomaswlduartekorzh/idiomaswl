@@ -97,7 +97,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Me gusta el japonés',
-            lines: [['David', 'にほんご___ すきです。(Me gusta el japonés.)']],
+            lines: [['Hugo', 'にほんご___ すきです。(Me gusta el japonés.)']],
             options: ['が', 'は', 'を', 'で'],
             answer: 'が',
             explain: 'すきです (gustar) → が. にほんごが すきです.',
@@ -149,8 +149,8 @@ const topic: GrammarTopic = {
           {
             scene: 'Presentación y gusto',
             lines: [
-              ['Carlos', 'わたし[[0]] カルロスです。にほんご[[1]] すきです。'],
-            ],
+ ['Carlos', 'わたし[[0]] カルロスです。にほんご[[1]] すきです。'],
+ ],
             blanks: [
               { options: ['は', 'が', 'を'], answer: 'は', explain: 'Presentación: わたしは [tema].' },
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'すきです: [objeto]が すきです.' },
@@ -158,7 +158,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hay y no hay',
-            lines: [['David', 'ここに つくえ[[0]] あります。でも、いす[[1]] ありません。']],
+            lines: [['Hugo', 'ここに つくえ[[0]] あります。でも、いす[[1]] ありません。']],
             blanks: [
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'あります → が: つくえが あります.' },
               { options: ['は', 'が', 'を'], answer: 'は', explain: 'Contraste (でも): いすは ありません.' },

@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con las negaciones correctas.',
         type: 'guidedText',
         scene: 'Lucie décrit son ancien appartement.',
-        text: 'Dans mon ancien appartement, je ne dormais [[0]] bien. Il n\'y avait [[1]] de chauffage. Mes voisins ne faisaient [[1]] de bruit, mais le quartier était dangereux. Je ne sortais [[0]] seule le soir. Il n\'y avait [[2]] qui voulait habiter là-bas. Je n\'ai [[3]] regretté d\'être partie.',
+        text: 'Dans mon ancien appartement, je ne dormais [[0]] bien. Il n\'y avait [[1]] de chauffage. Mes voisins ne faisaient [[2]] de bruit, mais le quartier était dangereux. Je ne sortais [[3]] seule le soir. Il n\'y avait [[4]] qui voulait habiter là-bas. Je n\'ai [[5]] regretté d\'être partie.',
         blanks: [
           { options: ['plus', 'jamais', 'rien', 'personne'], answer: 'jamais', explain: '"ne dormais jamais bien / ne sortais jamais" — nunca/jamás.' },
           { options: ['pas', 'jamais', 'plus', 'rien'], answer: 'pas', explain: '"n\'y avait pas de chauffage / ne faisaient pas de bruit" — negación simple ne...pas.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la negación correcta.',
         type: 'freeText',
         scene: 'Complétez avec la bonne négation.',
-        text: 'Je ne veux ___ manger ce soir. (nada) / Il ne travaille ___ ici — il a changé de poste. (ya no) / Elle n\'a vu ___ pendant la fête. (a nadie) / Je n\'ai ___ cinq minutes. (solo)',
+        text: 'Je ne veux [[0]] manger ce soir. (nada) / Il ne travaille [[1]] ici — il a changé de poste. (ya no) / Elle n\'a vu [[2]] pendant la fête. (a nadie) / Je n\'ai [[3]] cinq minutes. (solo)',
         blanks: [
           { answer: 'rien', explain: '"ne veux rien manger" = no quiero comer nada.' },
           { answer: 'plus', explain: '"ne travaille plus" = ya no trabaja.' },

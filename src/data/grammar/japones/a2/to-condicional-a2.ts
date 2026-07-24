@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa las instrucciones de dirección usando ~と.',
         type: 'guidedText',
         scene: '駅から会社までの道を教えています。',
-        text: '駅を出る[[0]]、まっすぐ行きます。信号を[[1]] 右に曲がる[[0]]、大きい橋があります。橋を渡る[[0]]、すぐ左に建物が[[1]]。そこを入る[[0]]、受付があります。',
+        text: '駅を出る[[0]]、まっすぐ行きます。信号を[[1]] 右に曲がる[[2]]、大きい橋があります。橋を渡る[[3]]、すぐ左に建物が[[4]]。そこを入る[[5]]、受付があります。',
         blanks: [
           { options: ['と', 'たら', 'ば', 'なら'], answer: 'と', explain: '"出ると / 曲がると / 渡ると / 入ると" = instrucciones de dirección → ~と para resultados naturales.' },
           { options: ['渡ると', '渡ったら', '渡れば', '渡るなら'], answer: '渡ると', explain: '"信号を渡ると" → la instrucción continúa con ~と.' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: completa el resultado natural de cada condición.',
         type: 'freeText',
         scene: 'と を使って結果を書いてください。',
-        text: '右に曲がる___ (と), 駅があります。 / たくさん練習する___ (と), 上手になります。 / 春になる___ (と), 暖かくなります。 / このボタンを押す___ (と), 音が出ます。',
+        text: '右に曲がる[[0]] (と), 駅があります。 / たくさん練習する[[1]] (と), 上手になります。 / 春になる[[2]] (と), 暖かくなります。 / このボタンを押す[[3]] (と), 音が出ます。',
         blanks: [
           { answer: 'と', explain: '"右に曲がると" = instrucción de dirección, resultado natural.' },
           { answer: 'と', explain: '"練習すると" = ley de causa-efecto natural.' },

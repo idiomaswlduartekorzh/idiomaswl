@@ -103,7 +103,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Habilidades musicales',
-            lines: [['David', '저는 기타를 ___ (치다). (Puedo tocar la guitarra.)']],
+            lines: [['Hugo', '저는 기타를 ___ (치다). (Puedo tocar la guitarra.)']],
             options: ['칠 수 있어요', '치을 수 있어요', '칠 수 없어요', '치수 있어요'],
             answer: '칠 수 있어요',
             explain: '치다 → raiz 치 (vocal) → 칠 수 있어요.',
@@ -145,14 +145,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Lectura de hangul',
-            lines: [['Zhanna', '한글을 ___ (읽다)? (¿Puedes leer hangul?)']],
+            lines: [['Sara', '한글을 ___ (읽다)? (¿Puedes leer hangul?)']],
             options: ['읽을 수 있어요', '읽을 수 없어요', '읽ㄹ 수 있어요', '읽수 있어요'],
             answer: '읽을 수 있어요',
             explain: '읽다 → raiz 읽 (consonante) → 읽을 수 있어요.',
           },
           {
             scene: 'Imposibilidad de asistir',
-            lines: [['David', '미안해요, 오늘 파티에 ___ (오다, negacion). (Lo siento, hoy no puedo venir a la fiesta.)']],
+            lines: [['Hugo', '미안해요, 오늘 파티에 ___ (오다, negacion). (Lo siento, hoy no puedo venir a la fiesta.)']],
             options: ['올 수 없어요', '오을 수 없어요', '올 수 있어요', '못 올 수 없어요'],
             answer: '올 수 없어요',
             explain: '오다 → raiz 오 (vocal) → 올 수 없어요.',
@@ -169,9 +169,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Buscando ayuda',
             lines: [
-              ['Carlos', '이 문제를 [[0]] (풀다, puedes)? (¿Puedes resolver este problema?)'],
-              ['Ana', '네, [[1]] (있다). 같이 해봐요. (Si, puedo. Intentemoslo juntos.)'],
-            ],
+ ['Carlos', '이 문제를 [[0]] (풀다, puedes)? (¿Puedes resolver este problema?)'],
+ ['Ana', '네, [[1]] (있다). 같이 해봐요. (Si, puedo. Intentemoslo juntos.)'],
+ ],
             blanks: [
               { options: ['풀 수 있어요', '풀을 수 있어요', '푸을 수 있어요', '풀 수 없어요'], answer: '풀 수 있어요', explain: '풀다 → raiz 풀 (ㄹ) → 풀 수 있어요.' },
               { options: ['할 수 있어요', '할 수 없어요', '못 해요', '해요'], answer: '할 수 있어요', explain: 'Respuesta positiva: 할 수 있어요.' },
@@ -180,9 +180,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Restricciones de horario',
             lines: [
-              ['Zhanna', '토요일에 [[0]] (오다, puedes)? (¿Puedes venir el sabado?)'],
-              ['Marco', '아니요, 토요일에는 [[1]] (없다). 일요일은 어때요? (No, el sabado no puedo. ¿Que tal el domingo?)'],
-            ],
+ ['Sara', '토요일에 [[0]] (오다, puedes)? (¿Puedes venir el sabado?)'],
+ ['Marco', '아니요, 토요일에는 [[1]] (없다). 일요일은 어때요? (No, el sabado no puedo. ¿Que tal el domingo?)'],
+ ],
             blanks: [
               { options: ['올 수 있어요', '오을 수 있어요', '오을 수 없어요', '올 수 없어요'], answer: '올 수 있어요', explain: '오다 → 올 수 있어요.' },
               { options: ['올 수 없어요', '올 수 있어요', '못 옵니다', '오를 수 없어요'], answer: '올 수 없어요', explain: 'Negacion: 올 수 없어요.' },
@@ -191,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Habilidades culinarias',
             lines: [
-              ['Lina', '한국 음식 [[0]] (만들다, puedes)? (¿Puedes hacer comida coreana?)'],
-              ['Sofia', '김치찌개는 [[1]] (있다) 불고기는 아직 [[2]] (없다). (Puedo hacer kimchi jjigae pero el bulgogi todavia no puedo.)'],
-            ],
+ ['Lina', '한국 음식 [[0]] (만들다, puedes)? (¿Puedes hacer comida coreana?)'],
+ ['Sofia', '김치찌개는 [[1]] (있다) 불고기는 아직 [[2]] (없다). (Puedo hacer kimchi jjigae pero el bulgogi todavia no puedo.)'],
+ ],
             blanks: [
               { options: ['만들 수 있어요', '만들을 수 있어요', '만들 수 없어요', '만드을 수 있어요'], answer: '만들 수 있어요', explain: '만들다 → raiz 만들 (ㄹ) → 만들 수 있어요.' },
               { options: ['만들 수', '만들수', '만들 수 있어요,', '만드수'], answer: '만들 수 있어요,', explain: 'Positivo primero: 만들 수 있어요.' },
@@ -203,9 +203,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Peticion formal',
             lines: [
-              ['David', '내일 보고서를 [[0]] (제출하다, puedes)? (¿Puedes entregar el informe manana?)'],
-              ['Carlos', '네, 내일까지 [[1]] (있다). 걱정하지 마세요. (Si, puedo entregarlo manana. No se preocupe.)'],
-            ],
+ ['Hugo', '내일 보고서를 [[0]] (제출하다, puedes)? (¿Puedes entregar el informe manana?)'],
+ ['Carlos', '네, 내일까지 [[1]] (있다). 걱정하지 마세요. (Si, puedo entregarlo manana. No se preocupe.)'],
+ ],
             blanks: [
               { options: ['제출할 수 있어요', '제출할 수 없어요', '제출하을 수 있어요', '제출수 있어요'], answer: '제출할 수 있어요', explain: '제출하다 → 제출할 수 있어요.' },
               { options: ['제출할 수 있어요', '제출할 수 없어요', '제출해요', '못 제출해요'], answer: '제출할 수 있어요', explain: 'Confirmacion positiva: 제출할 수 있어요.' },
@@ -236,7 +236,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe si puedes o no puedes hacer cada actividad.',
         type: 'freeText',
         scene: 'Formulario de habilidades para una academia de idiomas',
-        text: '영어를 ___ (hablar — positivo). / 일본어를 ___ (leer — negativo). / 기타를 ___ (tocar — positivo, 치다). / 요리를 ___ (hacer — positivo, 하다). / 빨리 ___ (correr — negativo, 달리다).',
+        text: '영어를 [[0]] (hablar — positivo). / 일본어를 [[1]] (leer — negativo). / 기타를 [[2]] (tocar — positivo, 치다). / 요리를 [[3]] (hacer — positivo, 하다). / 빨리 [[4]] (correr — negativo, 달리다).',
         blanks: [
           { answer: '말할 수 있어요', explain: '말하다 → 말할 수 있어요.' },
           { answer: '읽을 수 없어요', explain: '읽다 → 읽을 수 없어요.' },

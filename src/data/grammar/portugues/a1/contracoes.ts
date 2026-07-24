@@ -130,7 +130,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Por el parque',
-            lines: [['David', 'Caminho ___ parque todas as tardes.']],
+            lines: [['Nico', 'Caminho ___ parque todas as tardes.']],
             options: ['pelo', 'por o', 'pelo o', 'per'],
             answer: 'pelo',
             explain: 'Por + o → pelo. OBLIGATORIO. "Por o parque" es incorrecto.',
@@ -144,7 +144,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Por las calles',
-            lines: [['Zhanna', 'Gosto de andar ___ ruas de São Paulo.']],
+            lines: [['Vera', 'Gosto de andar ___ ruas de São Paulo.']],
             options: ['pelas', 'por as', 'pelas as', 'pela'],
             answer: 'pelas',
             explain: 'Por + as → pelas. OBLIGATORIO. Ruas es plural femenino.',
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Por el centro',
-            lines: [['David', 'Vou [[0]] centro [[1]] cidade a pé.']],
+            lines: [['Nico', 'Vou [[0]] centro [[1]] cidade a pé.']],
             blanks: [
               { options: ['ao', 'a o', 'no'], answer: 'ao', explain: 'A + o centro → ao centro. Dirección.' },
               { options: ['da', 'de a', 'do'], answer: 'da', explain: 'De + a cidade → da cidade.' },
@@ -191,7 +191,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En una escuela del país',
-            lines: [['Zhanna', 'Estudo [[0]] escola [[1]] país.']],
+            lines: [['Vera', 'Estudo [[0]] escola [[1]] país.']],
             blanks: [
               { options: ['numa', 'em uma', 'na'], answer: 'numa', explain: 'Em + uma escola → numa escola. Art. indef. femenino.' },
               { options: ['do', 'de o', 'da'], answer: 'do', explain: 'De + o país → do país.' },

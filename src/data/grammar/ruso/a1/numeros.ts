@@ -116,7 +116,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma correcta del sustantivo con cada número.',
         type: 'guidedText',
         scene: 'Un día en WeLearn con números',
-        text: 'В академии WeLearn есть двадцать [[0]] студентов. (Hay 20 estudiantes.) Каждый день приходят три [[1]]. (Cada día llegan 3 profesores.) У Дэвида пять [[2]]. (David tiene 5 libros.) Один [[3]] говорит по-корейски. (Un estudiante habla coreano.) Цена за урок — восемьдесят [[4]] рублей. (El precio de la lección es 80 rublos.)',
+        text: 'В академии WeLearn есть двадцать [[0]] студентов. (Hay 20 estudiantes.) Каждый день приходят три [[1]]. (Cada día llegan 3 profesores.) У Дэвида пять [[2]]. (Tomás tiene 5 libros.) Один [[3]] говорит по-корейски. (Un estudiante habla coreano.) Цена за урок — восемьдесят [[4]] рублей. (El precio de la lección es 80 rublos.)',
         blanks: [
           { options: ['студент', 'студента', 'студентов', 'студенты'], answer: 'студентов', explain: 'Двадцать (20) + genitivo plural. студентов.' },
           { options: ['учитель', 'учителя', 'учителей', 'учители'], answer: 'учителя', explain: 'Три (3) = 2-4 + genitivo singular. учитель → учителя (-ель → -еля).' },

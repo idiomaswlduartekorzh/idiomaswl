@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el adverbio ruso correcto.',
         type: 'freeText',
         scene: 'Напиши наречие времени по-русски.',
-        text: 'Ayer (pasado) = ___ / Pronto (futuro cercano) = ___ / A veces (frecuencia media) = ___ / Aún no (negación incompleta) = ___',
+        text: 'Ayer (pasado) = [[0]] / Pronto (futuro cercano) = [[1]] / A veces (frecuencia media) = [[2]] / Aún no (negación incompleta) = [[3]]',
         blanks: [
           { answer: 'вчера', explain: '"вчера" — ayer. Pasado inmediato.' },
           { answer: 'скоро', explain: '"скоро" — pronto/en breve. Futuro cercano.' },

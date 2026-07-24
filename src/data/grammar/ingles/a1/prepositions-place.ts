@@ -97,6 +97,24 @@ const topic: GrammarTopic = {
         '"In front of" se escribe como tres palabras, no como una. Y no debe confundirse con "before", que indica posición en tiempo, no en espacio.',
       ],
     },
+    {
+      heading: '¿Cuándo se usa in, on y at para lugar en inglés?',
+      paragraphs: [
+        '"in" para espacios cerrados o áreas (in the room, in Bogotá, in the car); "on" para superficies y líneas (on the table, on the wall, on the bus); "at" para puntos concretos y direcciones (at the door, at the bus stop, at home). El español usa "en" para las tres, de ahí la confusión.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "in" y "at" para lugares?',
+      paragraphs: [
+        '"in" ve el lugar como un espacio que te rodea (in the office = dentro de la oficina); "at" lo ve como un punto o una actividad (at the office = en el trabajo). "at school" (estudiando) vs "in the school" (dentro del edificio).',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "en" (lugar) en inglés?',
+      paragraphs: [
+        'Depende: espacio cerrado → in ("en la habitación" = in the room); superficie → on ("en la mesa" = on the table); punto concreto → at ("en la parada" = at the bus stop). El "en" español se reparte entre in, on y at según el tipo de lugar.',
+      ],
+    },
   ],
 
   visual: {

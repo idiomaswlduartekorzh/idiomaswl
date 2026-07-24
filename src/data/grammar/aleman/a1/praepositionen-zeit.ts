@@ -60,7 +60,7 @@ const topic: GrammarTopic = {
       heading: 'Seit: presente con raíces en el pasado',
       paragraphs: [
         '"Seit" es una de las preposiciones más importantes del alemán y expresa una situación que comenzó en el pasado y continúa en el presente: Ich lerne seit 3 Jahren Deutsch (Llevo 3 años aprendiendo alemán / Desde hace 3 años aprendo alemán). En alemán se usa PRESENTE con seit, mientras que el español puede usar presente o pretérito imperfecto.',
-        'Esto es lo contrario del inglés (que usa present perfect) y similar al español coloquial. Ejemplos: Ich wohne seit einem Jahr in Köln. / Wir sind seit 2 Monaten in Deutschland. / David unterrichtet seit 5 Jahren Sprachen.',
+        'Esto es lo contrario del inglés (que usa present perfect) y similar al español coloquial. Ejemplos: Ich wohne seit einem Jahr in Köln. / Wir sind seit 2 Monaten in Deutschland. / Nico unterrichtet seit 5 Jahren Sprachen.',
       ],
     },
     {
@@ -105,14 +105,14 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David habla del horario del curso',
-            lines: [['David', 'Der Kurs beginnt ___ 9 Uhr.']],
+            scene: 'Nico habla del horario del curso',
+            lines: [['Nico', 'Der Kurs beginnt ___ 9 Uhr.']],
             options: ['um', 'am', 'im', 'in'],
             answer: 'um',
             explain: '"Um" se usa con horas exactas: um 9 Uhr.',
           },
           {
-            scene: 'Zhanna pregunta cuándo tiene clase Carlos',
+            scene: 'Nora pregunta cuándo tiene clase Carlos',
             lines: [['Carlos', 'Ich habe ___ Montag Deutschkurs.']],
             options: ['am', 'um', 'im', 'seit'],
             answer: 'am',
@@ -154,8 +154,8 @@ const topic: GrammarTopic = {
             explain: '"In" + tiempo expresa el futuro próximo: in 10 Minuten = dentro de 10 minutos.',
           },
           {
-            scene: 'David habla del trabajo por la mañana',
-            lines: [['David', '___ Morgen trinke ich immer Kaffee.']],
+            scene: 'Nico habla del trabajo por la mañana',
+            lines: [['Nico', '___ Morgen trinke ich immer Kaffee.']],
             options: ['Am', 'Im', 'Um', 'In'],
             answer: 'Am',
             explain: '"Am" con partes del día: am Morgen (por la mañana), am Nachmittag, am Abend.',
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Horario del curso de alemán en WeLearn',
-            lines: [['Zhanna', 'Der Kurs ist [[0]] [[1]] bis Freitag.']],
+            lines: [['Nora', 'Der Kurs ist [[0]] [[1]] bis Freitag.']],
             blanks: [
               { options: ['von', 'am', 'um', 'im'], answer: 'von', explain: '"Von...bis" para rango: von Montag bis Freitag.' },
               { options: ['Montag', 'Morgen', 'Januar', '8 Uhr'], answer: 'Montag', explain: 'El rango va de lunes (Montag) a viernes (Freitag).' },
@@ -209,7 +209,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige la preposición temporal correcta para cada hueco.',
         type: 'guidedText',
-        scene: 'Zhanna describe la semana típica de la academia WeLearn.',
+        scene: 'Nora describe la semana típica de la academia WeLearn.',
         text: 'Unsere Kurse beginnen [[0]] 9 Uhr. [[1]] Montag bis Freitag haben wir Unterricht. [[2]] Abend gibt es Konversationskurse. [[3]] Nacht machen wir nichts — das ist wichtig! [[4]] Sommer machen wir eine Intensivwoche. Ich unterrichte [[5]] fünf Jahren hier. In [[6]] Wochen beginnt ein neuer Kurs.',
         blanks: [
           { options: ['um', 'am', 'im', 'seit'], answer: 'um', explain: '"Um 9 Uhr" — horas exactas con "um".' },

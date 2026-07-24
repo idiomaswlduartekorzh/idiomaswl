@@ -8,7 +8,7 @@ const topic: GrammarTopic = {
   level: 'A1',
   title: 'Pronomi Soggetto en italiano A1 — Pronombres personales',
   shortTitle: 'Pronomi soggetto',
-  metaTitle: 'Pronomi soggetto italiano A1 — io tu lui lei noi voi loro',
+  metaTitle: 'Pronombres de sujeto italiano A1 — io, tu, lui, lei, noi, voi, loro (y el usted "Lei")',
   description:
     'Los pronombres de sujeto del italiano (io, tu, lui, lei, noi, voi, loro) equivalen a los del español con diferencias clave: lei significa "ella" pero también "usted" formal (Lei con mayúscula), y los pronombres se omiten frecuentemente porque la conjugación los hace redundantes.',
   lead: 'io/tu/lui/lei/noi/voi/loro. En italiano el sujeto suele omitirse: "parlo" ya significa "yo hablo". Pero hay que conocerlos para el énfasis y para reconocerlos al escuchar.',
@@ -48,8 +48,14 @@ const topic: GrammarTopic = {
     {
       heading: 'Pronombres de sujeto del italiano: io, tu, lui, lei, noi, voi, loro',
       paragraphs: [
-        'Los pronombres de sujeto del italiano son: io (yo), tu (tú), lui (él), lei (ella), noi (nosotros/as), voi (vosotros/as), loro (ellos/ellas). Para el hispanohablante son fáciles de aprender porque la lógica es idéntica al español, pero hay diferencias importantes.',
-        'La principal diferencia es que en italiano los pronombres de sujeto se omiten con mucha más frecuencia que en español. Mientras en español "hablo" ya implica "yo" pero solemos añadirlo, en italiano "parlo" es completamente natural sin "io". El pronombre se añade solo para énfasis o contraste.',
+        'Los pronombres de sujeto del italiano son fáciles para el hispanohablante porque la lógica es idéntica: cambian según la persona y el número. La diferencia principal es que en italiano se omiten mucho más (la terminación del verbo ya dice quién habla). Esta es la tabla completa, incluida la forma de cortesía:',
+      ],
+      table: [
+        ['Persona', 'Singular', 'Plural'],
+        ['1ª', 'io (yo)', 'noi (nosotros/as)'],
+        ['2ª', 'tu (tú)', 'voi (vosotros/as)'],
+        ['3ª', 'lui / lei (él / ella)', 'loro (ellos/as)'],
+        ['Cortesía', 'Lei (usted)', 'Loro / voi (ustedes)'],
       ],
     },
     {
@@ -64,6 +70,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'En italiano, los pronombres de sujeto son opcionales porque las terminaciones verbales identifican la persona. "Mangio" = yo como, "mangi" = tú comes, "mangia" = él/ella come. Por eso un hablante nativo dice "Parlo italiano" sin "io" a menos que quiera enfatizar que es él quien habla.',
         'Se usan los pronombres en tres casos: (1) énfasis: "Io non ci credo!" (¡Yo no me lo creo!); (2) contraste: "Tu parli italiano, io parlo spagnolo" (Tú hablas italiano, yo español); (3) cuando el verbo se omite: "Chi parla italiano? Io." (¿Quién habla italiano? Yo.).',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los pronombres personales de sujeto en italiano?',
+      paragraphs: [
+        'Son siete: io (yo), tu (tú), lui (él), lei (ella), noi (nosotros/as), voi (vosotros/as) y loro (ellos/ellas). A ellos se suma la forma de cortesía "Lei" (usted), que se conjuga en tercera persona del singular.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "lei" y "Lei" en italiano?',
+      paragraphs: [
+        '"lei" (minúscula) significa "ella"; "Lei" (mayúscula) es la forma de respeto "usted". Las dos se conjugan igual, en tercera persona del singular: "Lei parla italiano?" puede ser "¿Ella habla italiano?" o "¿Usted habla italiano?", según el contexto y la mayúscula.',
+      ],
+    },
+    {
+      heading: '¿Por qué en italiano se omite el pronombre de sujeto?',
+      paragraphs: [
+        'Porque la terminación del verbo ya identifica la persona: "parlo" solo puede ser "yo hablo", "parli" solo "tú hablas". Por eso el pronombre es opcional y el hablante nativo lo omite salvo para dar énfasis o marcar un contraste ("Io pago, tu offri il caffè").',
       ],
     },
   ],
@@ -132,7 +156,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Énfasis en vosotros',
-            lines: [['David', '___ parlate italiano molto bene! (¡Vosotros habláis italiano muy bien!)']],
+            lines: [['Diego', '___ parlate italiano molto bene! (¡Vosotros habláis italiano muy bien!)']],
             options: ['Voi', 'Loro', 'Noi', 'Tu'],
             answer: 'Voi',
             explain: 'Voi = vosotros/as. Segunda persona plural.',
@@ -156,9 +180,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Presentación mutua',
             lines: [
-              ['Carlo', '[[0]] mi chiamo Carlo. E [[1]]?'],
-              ['Sofia', 'Io mi chiamo Sofia.'],
-            ],
+ ['Carlo', '[[0]] mi chiamo Carlo. E [[1]]?'],
+ ['Sofia', 'Io mi chiamo Sofia.'],
+ ],
             blanks: [
               { options: ['Io', 'Tu', 'Lei'], answer: 'Io', explain: 'Io = yo. Carlo se presenta.' },
               { options: ['tu', 'lui', 'voi'], answer: 'tu', explain: 'E tu? = ¿Y tú? Pregunta informal.' },
@@ -174,9 +198,9 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Contraste nosotros/vosotros',
-            lines: [['David', '[[0]] siamo di Bogotá. E [[1]], di dove siete?']],
+            lines: [['Diego', '[[0]] siamo di Bogotá. E [[1]], di dove siete?']],
             blanks: [
-              { options: ['Noi', 'Voi', 'Loro'], answer: 'Noi', explain: 'Noi = nosotros. David habla del grupo.' },
+              { options: ['Noi', 'Voi', 'Loro'], answer: 'Noi', explain: 'Noi = nosotros. Diego habla del grupo.' },
               { options: ['voi', 'loro', 'noi'], answer: 'voi', explain: 'E voi = ¿Y vosotros? Segunda persona plural.' },
             ],
           },
@@ -197,11 +221,11 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto de presentación con el pronombre correcto.',
         type: 'guidedText',
         scene: 'Presentación en una clase de italiano',
-        text: '[[0]] mi chiamo Sofia. Sono di Milano. Il mio amico si chiama Marco — [[1]] è di Roma. La nostra insegnante è Zhanna — [[2]] insegna italiano e russo. [[3]] studiamo insieme da sei mesi. E [[4]], di dove siete?',
+        text: '[[0]] mi chiamo Sofia. Sono di Milano. Il mio amico si chiama Marco — [[1]] è di Roma. La nostra insegnante è Alba — [[2]] insegna italiano e russo. [[3]] studiamo insieme da sei mesi. E [[4]], di dove siete?',
         blanks: [
           { options: ['Io', 'Tu', 'Lei'], answer: 'Io', explain: 'Io = yo. Sofia se presenta.' },
           { options: ['lui', 'lei', 'voi'], answer: 'lui', explain: 'Lui = él. Habla del amigo Marco.' },
-          { options: ['Lei', 'Lui', 'Loro'], answer: 'Lei', explain: 'Lei = ella. Habla de la profesora Zhanna.' },
+          { options: ['Lei', 'Lui', 'Loro'], answer: 'Lei', explain: 'Lei = ella. Habla de la profesora Alba.' },
           { options: ['Noi', 'Voi', 'Loro'], answer: 'Noi', explain: 'Noi = nosotros. Sofia y Marco estudian juntos.' },
           { options: ['voi', 'loro', 'tu'], answer: 'voi', explain: 'E voi = ¿Y vosotros? Pregunta al grupo.' },
         ],
@@ -213,11 +237,11 @@ const topic: GrammarTopic = {
         intro: 'Escribe el pronombre correcto sin opciones.',
         type: 'freeText',
         scene: 'Conversación en WeLearn Italiano',
-        text: 'David è poliglotta — [[0]] parla otto lingue. Zhanna insegna con lui — [[1]] è di origine ucraina. [[2]] lavoriamo bene insieme. Gli studenti sono molto motivati — [[3]] studiano ogni giorno. E [[4]], studentessa, come stai?',
+        text: 'Diego è poliglotta — [[0]] parla otto lingue. Alba insegna con lui — [[1]] è di origine ucraina. [[2]] lavoriamo bene insieme. Gli studenti sono molto motivati — [[3]] studiano ogni giorno. E [[4]], studentessa, come stai?',
         blanks: [
-          { answer: 'lui', explain: 'Lui = él. Habla de David.' },
-          { answer: 'lei', explain: 'Lei = ella. Habla de Zhanna.' },
-          { answer: 'Noi', accepted: ['noi'], explain: 'Noi = nosotros. David y Zhanna trabajan juntos.' },
+          { answer: 'lui', explain: 'Lui = él. Habla de Diego.' },
+          { answer: 'lei', explain: 'Lei = ella. Habla de Alba.' },
+          { answer: 'Noi', accepted: ['noi'], explain: 'Noi = nosotros. Diego y Alba trabajan juntos.' },
           { answer: 'loro', explain: 'Loro = ellos. Los estudiantes.' },
           { answer: 'tu', explain: 'Tu = tú. Pregunta informal a la estudiante.' },
         ],
@@ -279,10 +303,10 @@ const topic: GrammarTopic = {
           {
             scene: 'Habla de tu grupo de estudio',
             prompt: 'Noi studiamo ___. ___ siamo ___. Il professore si chiama ___ — ___ insegna molto bene.',
-            answer: 'Noi studiamo italiano. Noi siamo studenti. Il professore si chiama David — lui insegna molto bene.',
+            answer: 'Noi studiamo italiano. Noi siamo studenti. Il professore si chiama Diego — lui insegna molto bene.',
             accepted: [
-              'noi studiamo italiano noi siamo studenti il professore si chiama david lui insegna molto bene',
-              'noi studiamo italiano noi siamo di bogotá il professore si chiama david lui insegna molto bene',
+              'noi studiamo italiano noi siamo studenti il professore si chiama diego lui insegna molto bene',
+              'noi studiamo italiano noi siamo di bogotá il professore si chiama diego lui insegna molto bene',
             ],
             explain: 'Noi per il gruppo, lui per il professore. Omissione normale in italiano.',
           },

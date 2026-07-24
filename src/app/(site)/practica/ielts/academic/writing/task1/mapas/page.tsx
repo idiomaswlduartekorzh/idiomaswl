@@ -4,7 +4,7 @@ import Content from './Content'
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 1 Maps: Describing Spatial Change',
-  description: 'Practise describing IELTS Writing Task 1 maps with spatial-change vocabulary, time comparisons and Band 7 structure.',
+  description: 'Practise describing IELTS Writing Task 1 maps with spatial-change vocabulary, time comparisons and structured visual analysis.',
   keywords: ['IELTS maps', 'IELTS Task 1 map', 'IELTS map Task 1', 'IELTS spatial change'],
   openGraph: {
     title: 'IELTS Task 1 Maps: Describing Spatial Change',

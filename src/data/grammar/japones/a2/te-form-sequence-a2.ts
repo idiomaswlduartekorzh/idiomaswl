@@ -103,7 +103,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Escribir — 書く (kaku = escribir)',
-            lines: [['David', '手紙を___、ポストに入れました。']],
+            lines: [['Dario', '手紙を___、ポストに入れました。']],
             options: ['書いて', '書って', '書きて', '書くて'],
             answer: '書いて',
             explain: '書く es Grupo 1: く→いて. 書く→書いて (kaite).',
@@ -138,14 +138,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hacer — する (suru = hacer)',
-            lines: [['Jose', '宿題を___、テレビを見ます。']],
+            lines: [['Leo', '宿題を___、テレビを見ます。']],
             options: ['して', 'すって', 'するて', 'します'],
             answer: 'して',
             explain: 'する es irregular: する→して (shite). Es uno de los dos verbos irregulares.',
           },
           {
             scene: 'Ir caminando — modo',
-            lines: [['Zhanna', '駅まで___行きます。 (voy caminando a la estacion)']],
+            lines: [['Clara', '駅まで___行きます。 (voy caminando a la estacion)']],
             options: ['歩いて', '歩って', '歩きます', '歩くて'],
             answer: '歩いて',
             explain: '歩く es Grupo 1: く→いて. 歩いて行く = ir caminando (te-form de modo).',
@@ -161,7 +161,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Rutina manana',
-            lines: [['David', '毎朝、シャワーを[[0]]、朝ごはんを[[1]]、出かけます。']],
+            lines: [['Dario', '毎朝、シャワーを[[0]]、朝ごはんを[[1]]、出かけます。']],
             blanks: [
               { options: ['浴びて', '浴びって', '浴びます'], answer: '浴びて', explain: '浴びる (abiru) es Grupo 2: 浴び + て = 浴びて.' },
               { options: ['食べて', '食べって', '食べます'], answer: '食べて', explain: '食べる es Grupo 2: 食べ + て = 食べて. Verbo intermedio.' },

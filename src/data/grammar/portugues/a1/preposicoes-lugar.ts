@@ -126,7 +126,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'De São Paulo',
-            lines: [['David', 'Eu sou ___ São Paulo.']],
+            lines: [['Iván', 'Eu sou ___ São Paulo.']],
             options: ['de', 'do', 'da', 'em'],
             answer: 'de',
             explain: 'Sou de São Paulo: origen. São Paulo sin artículo → de (sin contracción).',
@@ -140,7 +140,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Por el parque',
-            lines: [['Zhanna', 'Passo ___ parque todos os dias.']],
+            lines: [['Elena', 'Passo ___ parque todos os dias.']],
             options: ['pelo', 'por o', 'por', 'no'],
             answer: 'pelo',
             explain: 'Por + o parque → pelo parque. Contracción: por+o=pelo.',
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El libro en la mesa',
-            lines: [['David', 'O livro está [[0]] mesa e o caderno está [[1]] cadeira.']],
+            lines: [['Iván', 'O livro está [[0]] mesa e o caderno está [[1]] cadeira.']],
             blanks: [
               { options: ['na', 'no', 'em a'], answer: 'na', explain: 'Em + a mesa → na mesa.' },
               { options: ['na', 'no', 'em'], answer: 'na', explain: 'Em + a cadeira → na cadeira.' },

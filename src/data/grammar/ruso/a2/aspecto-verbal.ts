@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Proceso interrumpido',
-            lines: [['', 'Когда я [[0]], он вошёл. (yo ___ cuando él entró)']],
+            lines: [['', 'Когда я , он вошёл. (yo [[0]] cuando él entró)']],
             blanks: [
               { options: ['читал', 'прочитал', 'прочитаю'], answer: 'читал', explain: 'Proceso que fue interrumpido → imperfectivo: читал.' },
               { options: ['вошёл', 'входил', 'войти'], answer: 'вошёл', explain: 'Acción que interrumpió → perfectivo: вошёл.' },
@@ -191,7 +191,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pares de aspecto',
-            lines: [['', 'Он [[0]] книгу за два часа. (él ___ el libro en dos horas — completado)']],
+            lines: [['', 'Он книгу за два часа. (él [[0]] el libro en dos horas — completado)']],
             blanks: [
               { options: ['прочитал', 'читал', 'читает'], answer: 'прочитал', explain: 'За два часа (en dos horas, completado) → perfectivo.' },
               { options: ['книгу', 'книга', 'книге'], answer: 'книгу', explain: 'книга en acusativo → книгу (objeto directo).' },

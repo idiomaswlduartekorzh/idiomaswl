@@ -62,6 +62,24 @@ const topic: GrammarTopic = {
         'También se usa para hablar de posesiones materiales (I\'ve got a laptop) y familia (I\'ve got two brothers). En WeLearn lo practicamos desde A1 porque permite hablar de uno mismo de forma muy natural.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "have" y "have got"?',
+      paragraphs: [
+        'Significan lo mismo (tener/poseer). "have got" es más común en inglés británico y hablado ("I have got a car" / "I\'ve got a car"); "have" es más neutro y universal ("I have a car"). En preguntas y negaciones cambian: "Have you got…?" vs "Do you have…?".',
+      ],
+    },
+    {
+      heading: '¿Cómo se usa "have got" en inglés?',
+      paragraphs: [
+        'have/has got + sustantivo, normalmente contraído: "I\'ve got two brothers", "She\'s got a dog". Se usa para posesión, relaciones y características. Con he/she/it se usa "has got": "He has got blue eyes".',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas y negaciones con "have got"?',
+      paragraphs: [
+        'Pregunta: se invierte have/has ("Have you got a pen?", "Has she got time?"), sin do/does. Negación: "haven\'t got / hasn\'t got" ("I haven\'t got money", "He hasn\'t got a car"). Es distinto de "have", que en pregunta/negación usa do/does.',
+      ],
+    },
   ],
   visual: {
     mode: 'table',
@@ -94,14 +112,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Describiendo a la profesora',
-            lines: [['Student', 'Zhanna ___ a lot of patience with students.']],
+            lines: [['Student', 'Lía ___ a lot of patience with students.']],
             options: ['has got', 'have got', '\'ve got', 'haven\'t got'],
             answer: 'has got',
-            explain: 'She/Zhanna has got — 3.ª persona singular: has got.',
+            explain: 'She/Lía has got — 3.ª persona singular: has got.',
           },
           {
             scene: 'Preguntando a un compañero',
-            lines: [['David', '___ you got a pen?']],
+            lines: [['Nico', '___ you got a pen?']],
             options: ['Have', 'Has', 'Haven\'t', 'Got'],
             answer: 'Have',
             explain: 'Have you got? — pregunta con you: Have.',
@@ -115,10 +133,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando sobre él',
-            lines: [['Lina', '___ David got a WhatsApp group for students?']],
+            lines: [['Lina', '___ Nico got a WhatsApp group for students?']],
             options: ['Has', 'Have', 'Is', 'Does'],
             answer: 'Has',
-            explain: 'Has David got? — 3.ª persona: Has.',
+            explain: 'Has Nico got? — 3.ª persona: Has.',
           },
           {
             scene: 'Describiendo el grupo',
@@ -136,7 +154,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablando de los estudiantes',
-            lines: [['David', 'They ___ great pronunciation already!']],
+            lines: [['Nico', 'They ___ great pronunciation already!']],
             options: ['\'ve got', '\'s got', 'hasn\'t got', 'hasn\'t'],
             answer: '\'ve got',
             explain: 'They\'ve got — 3.ª persona plural: have got.',
@@ -176,7 +194,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Información del grupo',
-            lines: [['David', 'Our class [[0]] [[1]] twelve students this month.']],
+            lines: [['Nico', 'Our class [[0]] [[1]] twelve students this month.']],
             blanks: [
               { options: ['has', 'have', 'haven\'t'], answer: 'has', explain: '"Our class" = it → has got.' },
               { options: ['got', 'get', 'gets'], answer: 'got', explain: 'Our class has got — 3.ª persona.' },
@@ -208,7 +226,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con la forma correcta de have got.',
         type: 'freeText',
         scene: 'Cuestionario de perfil del estudiante en WeLearn',
-        text: 'I ___ (have got, I) a smartphone. My teacher ___ (has got, she) a lot of experience. We ___ (have got, we) class on Mondays. ___ (question: Have) you got a quiet place to study? My friend ___ (hasn\'t got) a dictionary. ___ (question: Has) the school got an app?',
+        text: 'I [[0]] (have got, I) a smartphone. My teacher [[1]] (has got, she) a lot of experience. We [[2]] (have got, we) class on Mondays. [[3]] (question: Have) you got a quiet place to study? My friend [[4]] (hasn\'t got) a dictionary. [[5]] (question: Has) the school got an app?',
         blanks: [
           { answer: '\'ve got', accepted: ['\'ve got', 'have got', "i've got", "i have got"], explain: 'I\'ve got — 1.ª persona afirmativa.' },
           { answer: '\'s got', accepted: ['\'s got', 'has got', "she's got", "she has got"], explain: 'She\'s got — 3.ª persona afirmativa.' },

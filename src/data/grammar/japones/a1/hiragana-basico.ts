@@ -90,56 +90,56 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Vocal',
-            lines: [['David', '¿Cómo se lee? → あ']],
+            lines: [['Hugo', '¿Cómo se lee? → あ']],
             options: ['a', 'i', 'u', 'e'],
             answer: 'a',
             explain: 'あ = a. Primera vocal del hiragana.',
           },
           {
             scene: 'Vocal',
-            lines: [['David', '¿Cómo se lee? → い']],
+            lines: [['Hugo', '¿Cómo se lee? → い']],
             options: ['i', 'a', 'u', 'e'],
             answer: 'i',
             explain: 'い = i. Segunda vocal del hiragana.',
           },
           {
             scene: 'Fila か',
-            lines: [['David', '¿Cómo se lee? → か']],
+            lines: [['Hugo', '¿Cómo se lee? → か']],
             options: ['ka', 'ki', 'sa', 'ta'],
             answer: 'ka',
             explain: 'か = ka. Consonante k + vocal a.',
           },
           {
             scene: 'Fila さ (irregular)',
-            lines: [['David', '¿Cómo se lee? → し']],
+            lines: [['Hugo', '¿Cómo se lee? → し']],
             options: ['shi', 'si', 'chi', 'su'],
             answer: 'shi',
             explain: 'し = shi (no "si"). Irregular en la fila さ.',
           },
           {
             scene: 'Fila た (irregular)',
-            lines: [['David', '¿Cómo se lee? → ち']],
+            lines: [['Hugo', '¿Cómo se lee? → ち']],
             options: ['chi', 'ti', 'tsu', 'ki'],
             answer: 'chi',
             explain: 'ち = chi (no "ti"). Irregular en la fila た.',
           },
           {
             scene: 'Fila た (irregular)',
-            lines: [['David', '¿Cómo se lee? → つ']],
+            lines: [['Hugo', '¿Cómo se lee? → つ']],
             options: ['tsu', 'tu', 'su', 'ku'],
             answer: 'tsu',
             explain: 'つ = tsu (no "tu"). Irregular, como en "tsunami".',
           },
           {
             scene: 'Fila な',
-            lines: [['David', '¿Cómo se lee? → の']],
+            lines: [['Hugo', '¿Cómo se lee? → の']],
             options: ['no', 'na', 'ne', 'ni'],
             answer: 'no',
             explain: 'の = no. También es la partícula posesiva del japonés.',
           },
           {
             scene: 'Consonante especial',
-            lines: [['David', '¿Cómo se lee? → ん']],
+            lines: [['Hugo', '¿Cómo se lee? → ん']],
             options: ['n', 'na', 'nu', 'ni'],
             answer: 'n',
             explain: 'ん = n. La única consonante sin vocal del hiragana.',
@@ -155,7 +155,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Palabra: いぬ',
-            lines: [['David', 'いぬ = [[0]] + [[1]] = ¿qué significa?']],
+            lines: [['Hugo', 'いぬ = [[0]] + [[1]] = ¿qué significa?']],
             blanks: [
               { options: ['i', 'a', 'u'], answer: 'i', explain: 'い = i.' },
               { options: ['nu', 'na', 'ni'], answer: 'nu', explain: 'ぬ = nu. いぬ = inu = perro.' },
@@ -163,7 +163,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Palabra: ねこ',
-            lines: [['David', 'ねこ = [[0]] + [[1]] = gato']],
+            lines: [['Hugo', 'ねこ = [[0]] + [[1]] = gato']],
             blanks: [
               { options: ['ne', 'na', 'ni'], answer: 'ne', explain: 'ね = ne.' },
               { options: ['ko', 'ka', 'ku'], answer: 'ko', explain: 'こ = ko. ねこ = neko = gato.' },
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Palabra: さけ',
-            lines: [['David', 'さけ = [[0]] + [[1]] = sake (alcohol de arroz)']],
+            lines: [['Hugo', 'さけ = [[0]] + [[1]] = sake (alcohol de arroz)']],
             blanks: [
               { options: ['sa', 'si', 'su'], answer: 'sa', explain: 'さ = sa.' },
               { options: ['ke', 'ki', 'ku'], answer: 'ke', explain: 'け = ke. さけ = sake.' },
@@ -179,7 +179,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Palabra: にほん',
-            lines: [['David', 'にほん = [[0]] + ho + [[1]] = Japón (nihon)']],
+            lines: [['Hugo', 'にほん = [[0]] + ho + [[1]] = Japón (nihon)']],
             blanks: [
               { options: ['ni', 'na', 'nu'], answer: 'ni', explain: 'に = ni.' },
               { options: ['n', 'na', 'no'], answer: 'n', explain: 'ん = n final. にほん = nihon = Japón.' },

@@ -46,16 +46,41 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '¿Cuándo usar "Lei" en italiano?',
+      heading: 'De "tu" a "Lei": qué cambia en la frase',
       paragraphs: [
-        'En Italia se usa "Lei" formal con personas adultas desconocidas, en contextos profesionales, con clientes, con personas de autoridad y en situaciones formales de negocios. Con amigos, familia, niños y jóvenes se usa "tu".',
-        'La forma "Lei" requiere siempre la conjugación de la tercera persona singular. Es similar al "usted" del español. En textos escritos formales, "Lei" se escribe con mayúscula para distinguirla de "lei" (ella).',
+        'La forma de cortesía "Lei" (equivale a "usted") se usa con desconocidos, en contextos profesionales, con clientes y personas de autoridad; con amigos, familia y jóvenes se usa "tu". Lo importante: "Lei" se conjuga SIEMPRE en tercera persona del singular, y arrastra el cambio de los pronombres y posesivos. Compara las dos formas:',
+      ],
+      table: [
+        ['Informal (tu)', 'Formal (Lei)', 'Español'],
+        ['Come stai?', 'Come sta?', '¿Cómo está?'],
+        ['Come ti chiami?', 'Come si chiama?', '¿Cómo se llama?'],
+        ['Ti aiuto.', 'La aiuto.', 'Le ayudo.'],
+        ['Ti scrivo.', 'Le scrivo.', 'Le escribo.'],
+        ['il tuo nome', 'il Suo nome', 'su nombre'],
       ],
     },
     {
       heading: 'Los pronombres formales: La y Le',
       paragraphs: [
         '"La" es el pronombre de objeto directo formal: "La ringrazio" (Le agradezco). "Le" es el pronombre de objeto indirecto formal: "Le scrivo domani" (Le escribo mañana). El posesivo formal es "Suo/Sua/Suoi/Sue".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "Lei" en italiano?',
+      paragraphs: [
+        'Con personas adultas que no conoces, en el trabajo, con clientes y con figuras de autoridad. Con amigos, familia, niños y gente joven se usa "tu". "Lei" (con mayúscula al escribir) equivale al "usted" español y se conjuga en tercera persona del singular.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga la forma de cortesía "Lei"?',
+      paragraphs: [
+        'Siempre en tercera persona del singular, como "él/ella": "Lei parla italiano?" (¿usted habla italiano?), "Lei è molto gentile" (usted es muy amable). Aunque se dirija a un hombre, el verbo va en tercera persona del singular.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "La" y "Le" formales?',
+      paragraphs: [
+        '"La" es el objeto directo formal (a usted, sin preposición): "La ringrazio", "La chiamo domani". "Le" es el objeto indirecto formal (a usted, con "a"): "Le scrivo", "Le mando l\'email". El posesivo de cortesía es "Suo/Sua/Suoi/Sue".',
       ],
     },
   ],
@@ -184,7 +209,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta para la comunicación formal.',
         type: 'freeText',
         scene: 'En un hotel, el recepcionista habla con una huésped.',
-        text: 'Come ___ (llamarse, Lei)? / Qual è il ___ (posesivo formal) numero di telefono? / ___ (objeto indirecto, Lei) confermo la prenotazione. / Come ___ (sentirsi, Lei) qui? / Posso aiutar___ (objeto directo, Lei)?',
+        text: 'Come [[0]] (llamarse, Lei)? / Qual è il [[1]] (posesivo formal) numero di telefono? / [[2]] (objeto indirecto, Lei) confermo la prenotazione. / Come [[3]] (sentirsi, Lei) qui? / Posso aiutar[[4]] (objeto directo, Lei)?',
         blanks: [
           { answer: 'si chiama', explain: '"Lei si chiama" = ¿cómo se llama usted?' },
           { answer: 'Suo', explain: '"Suo" = su (de usted).' },

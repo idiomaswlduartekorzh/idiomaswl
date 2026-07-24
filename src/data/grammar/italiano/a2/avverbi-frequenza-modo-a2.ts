@@ -48,15 +48,47 @@ const topic: GrammarTopic = {
     {
       heading: 'Los adverbios de frecuencia en italiano',
       paragraphs: [
-        'Los adverbios de frecuencia se colocan normalmente entre el sujeto y el verbo: "Io spesso mangio la pizza" o después del verbo auxiliar: "Ho sempre mangiato qui". La escala va de sempre (siempre) a mai (nunca).',
-        '"Mai" tiene un comportamiento especial: en oraciones negativas se usa con "non": "Non vado mai al cinema." En preguntas y frases afirmativas exclamativas puede ir sin "non": "Sei mai stato a Parigi?" / "Non ho mai visto niente di così bello!"',
+        'Los adverbios de frecuencia van normalmente después del verbo ("Mangio sempre la pasta") o, en tiempos compuestos, entre el auxiliar y el participio ("Ho sempre mangiato qui"). La escala va de sempre a mai:',
+      ],
+      table: [
+        ['Adverbio', 'Frecuencia', 'Español'],
+        ['sempre', '~100 %', 'siempre'],
+        ['di solito / spesso', '~70-80 %', 'normalmente / a menudo'],
+        ['a volte / qualche volta', '~40 %', 'a veces'],
+        ['raramente', '~10 %', 'raramente'],
+        ['non… mai', '0 %', 'nunca'],
       ],
     },
     {
-      heading: 'Adverbios de modo: -mente',
+      heading: 'Adverbios de modo: la formación con -mente',
       paragraphs: [
-        'Para formar adverbios de modo se toma la forma femenina del adjetivo y se añade -mente: lento → lenta → lentamente; felice → felicemente; veloce → velocemente. Los adverbios con -mente son invariables.',
-        '"Bene" y "male" son irregulares: no se dice *benemente o *malamente en el uso estándar.',
+        'Los adverbios de modo se forman sobre el adjetivo + -mente (equivale al español -mente). La regla depende de la terminación del adjetivo: los -o toman la forma femenina; los -e la conservan; y los acabados en -le/-re pierden la -e final. Son invariables:',
+      ],
+      table: [
+        ['Adjetivo', 'Regla', 'Adverbio'],
+        ['lento', 'fem. + mente', 'lentamente'],
+        ['veloce', '+ mente', 'velocemente'],
+        ['felice', '+ mente', 'felicemente'],
+        ['facile (-le)', 'cae la -e', 'facilmente'],
+        ['regolare (-re)', 'cae la -e', 'regolarmente'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forman los adverbios en -mente en italiano?',
+      paragraphs: [
+        'Sumando -mente al adjetivo: los -o usan la forma femenina (lento → lentamente), los -e la conservan (veloce → velocemente) y los acabados en -le o -re pierden la -e (facile → facilmente, regolare → regolarmente). Son invariables.',
+      ],
+    },
+    {
+      heading: '¿Dónde se colocan los adverbios de frecuencia en italiano?',
+      paragraphs: [
+        'Normalmente después del verbo: "Vado spesso al cinema". En los tiempos compuestos, entre el auxiliar y el participio: "Ho sempre studiato", "Non sono mai andato". "Di solito" y "a volte" también pueden abrir la frase.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dicen "bien" y "mal" en italiano?',
+      paragraphs: [
+        'Con los adverbios irregulares "bene" (bien) y "male" (mal), que NO se forman con -mente: "Parlo bene l\'italiano", "Ho dormito male". No existen "benemente" ni "malamente" en el uso estándar.',
       ],
     },
   ],
@@ -186,7 +218,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el adverbio de modo derivado del adjetivo indicado.',
         type: 'freeText',
         scene: 'Describiendo cómo hace las cosas la gente.',
-        text: 'Parla ___ (veloce). / Cammina ___ (lento). / Studia ___ (serio). / Risponde ___ (educato). / Arriva ___ (puntuale).',
+        text: 'Parla [[0]] (veloce). / Cammina [[1]] (lento). / Studia [[2]] (serio). / Risponde [[3]] (educato). / Arriva [[4]] (puntuale).',
         blanks: [
           { answer: 'velocemente', explain: 'veloce → velocemente.' },
           { answer: 'lentamente', explain: 'lento → lenta → lentamente.' },

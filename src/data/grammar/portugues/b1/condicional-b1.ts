@@ -174,7 +174,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Preferencia hipotética',
             lines: [['', 'Nós preferia___ ficar em casa esta noite.']],
-            options: ['preferiríamos', 'preferíamos', 'preferimos', 'preferimos'],
+            options: ['preferiríamos', 'preferíamos', 'preferimos'],
             answer: 'preferiríamos',
             explain: '"Preferir" condicional: preferir + -íamos = preferiríamos (nós). Acento en la sílaba tónica.',
           },

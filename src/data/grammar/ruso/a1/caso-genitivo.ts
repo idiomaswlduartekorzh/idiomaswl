@@ -48,7 +48,7 @@ const topic: GrammarTopic = {
       heading: '¿Qué es el caso genitivo en ruso y cuándo se usa?',
       paragraphs: [
         'El genitivo (родительный падеж) es el caso más frecuente del ruso después del nominativo. Tiene tres usos principales en A1: expresar posesión (книга Марины — el libro de Marina), expresar ausencia con нет (Нет книги — No hay libro), y seguir a ciertos números (два студента — dos estudiantes).',
-        'A diferencia del español, el ruso expresa la posesión sin preposición: el sustantivo poseedor simplemente toma la forma del genitivo. "El libro de David" → книга Давида (no "libro de Давид").',
+        'A diferencia del español, el ruso expresa la posesión sin preposición: el sustantivo poseedor simplemente toma la forma del genitivo. "El libro de Bruno" → книга Давида (no "libro de Давид").',
       ],
       table: [
         ['Uso', 'Estructura', 'Ejemplo'],
@@ -118,7 +118,7 @@ const topic: GrammarTopic = {
         intro: 'Completa las expresiones de posesión y ausencia con genitivo.',
         type: 'dual',
         items: [
-          { scene: 'Posesión con genitivo', lines: [['', '"El teléfono de David": телефон [[0]] → genitivo de Давид: [[1]]']], blanks: [{ options: ['Давида', 'Давиду', 'Давидом', 'Давид'], answer: 'Давида', explain: 'Давид (masc consonante) → Давида en genitivo.' }, { options: ['-а', '-у', '-е', '-ом'], answer: '-а', explain: 'Masculino consonante añade -а en genitivo.' }] },
+          { scene: 'Posesión con genitivo', lines: [['', '"El teléfono de Bruno": телефон [[0]] → genitivo de Давид: [[1]]']], blanks: [{ options: ['Давида', 'Давиду', 'Давидом', 'Давид'], answer: 'Давида', explain: 'Давид (masc consonante) → Давида en genitivo.' }, { options: ['-а', '-у', '-е', '-ом'], answer: '-а', explain: 'Masculino consonante añade -а en genitivo.' }] },
           { scene: 'У меня есть/нет', lines: [['', '"No tengo tiempo": У меня [[0]] [[1]].']], blanks: [{ options: ['нет', 'есть', 'не', 'нету'], answer: 'нет', explain: 'У меня нет = No tengo / No hay.' }, { options: ['времени', 'время', 'времени', 'временем'], answer: 'времени', explain: 'время (ntr) → времени en genitivo. нет siempre pide genitivo.' }] },
           { scene: 'У меня есть', lines: [['', '"Tengo una hermana": У меня [[0]] [[1]].']], blanks: [{ options: ['есть', 'нет', 'не', 'нету'], answer: 'есть', explain: 'У меня есть = Tengo.' }, { options: ['сестра', 'сестры', 'сестре', 'сестру'], answer: 'сестра', explain: 'Con есть el sustantivo va en NOMINATIVO. сестра (fem nominativo).' }] },
           { scene: 'Números y genitivo', lines: [['', '"Tres libros": три [[0]]; el genitivo de книга es [[1]].']], blanks: [{ options: ['книги', 'книга', 'книг', 'книге'], answer: 'книги', explain: 'три + genitivo singular. книга → книги.' }, { options: ['книги', 'книгу', 'книга', 'книге'], answer: 'книги', explain: 'Femenino -а → -ы/-и (после г → -и). книга → книги.' }] },
@@ -131,9 +131,9 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma genitiva correcta para cada espacio.',
         type: 'guidedText',
         scene: 'El genitivo en situaciones reales',
-        text: 'Это телефон [[0]]. (Este es el teléfono de Zhanna.) У [[1]] есть машина. (David tiene carro.) У Анны нет [[2]]. (Ana no tiene libro.) В классе три [[3]]. (En la clase hay tres estudiantes.) Нет [[4]]! (¡No hay tiempo!)',
+        text: 'Это телефон [[0]]. (Este es el teléfono de Vera.) У [[1]] есть машина. (Bruno tiene carro.) У Анны нет [[2]]. (Ana no tiene libro.) В классе три [[3]]. (En la clase hay tres estudiantes.) Нет [[4]]! (¡No hay tiempo!)',
         blanks: [
-          { options: ['Жанна', 'Жанны', 'Жанне', 'Жанну'], answer: 'Жанны', explain: 'Жанна → Жанны. Femenino -а → -ы en genitivo. Posesión: teléfono de Zhanna.' },
+          { options: ['Жанна', 'Жанны', 'Жанне', 'Жанну'], answer: 'Жанны', explain: 'Жанна → Жанны. Femenino -а → -ы en genitivo. Posesión: teléfono de Vera.' },
           { options: ['Давид', 'Давиде', 'Давида', 'Давиду'], answer: 'Давида', explain: 'У Давида есть. Давид → Давида en genitivo. La construcción "у + genitivo + есть".' },
           { options: ['книга', 'книгу', 'книги', 'книге'], answer: 'книги', explain: 'У Анны нет книги. Después de нет: genitivo. книга → книги.' },
           { options: ['студент', 'студента', 'студентов', 'студенты'], answer: 'студента', explain: 'Три + genitivo singular. студент → студента.' },
@@ -176,7 +176,7 @@ const topic: GrammarTopic = {
         intro: 'Habla de lo que tienes y no tienes usando el genitivo.',
         type: 'write',
         items: [
-          { scene: 'Presentando posesiones', prompt: 'Lina le cuenta a David qué tiene y qué no tiene. Escribe 3 oraciones: una con есть, dos con нет. Usa: ноутбук (laptop), время (tiempo), деньги (dinero, pl), друзья (amigos).', answer: 'У Лины есть ноутбук. У неё нет времени. У неё нет денег.', accepted: ['есть', 'нет'], explain: 'У Лины есть ноутбук. У неё нет времени. У неё нет денег. (у неё = de ella, genitivo).' },
+          { scene: 'Presentando posesiones', prompt: 'Lina le cuenta a Bruno qué tiene y qué no tiene. Escribe 3 oraciones: una con есть, dos con нет. Usa: ноутбук (laptop), время (tiempo), деньги (dinero, pl), друзья (amigos).', answer: 'У Лины есть ноутбук. У неё нет времени. У неё нет денег.', accepted: ['есть', 'нет'], explain: 'У Лины есть ноутбук. У неё нет времени. У неё нет денег. (у неё = de ella, genitivo).' },
           { scene: 'Posesión de objetos', prompt: 'Describe qué pertenece a quién en tu clase. Ej: "El libro de Ana, el teléfono de Marco". Escribe 2 oraciones con genitivo de posesión.', answer: 'Это книга Анны. Это телефон Марко.', accepted: ['книга', 'телефон', 'геnitivo'], explain: 'Это книга Анны. Esto + sustantivo + nombre en genitivo. Анна → Анны.' },
         ],
       },

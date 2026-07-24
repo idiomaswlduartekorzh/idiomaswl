@@ -93,7 +93,7 @@ const topic: GrammarTopic = {
         intro: 'Completa una rutina con -고 나서.',
         type: 'guidedText',
         scene: 'Descripción de actividades del día.',
-        text: '아침에 일어나___ 밥을 먹었어요. 밥 먹___ 학교에 갔어요. 학교 다니___ 집에 돌아왔어요.',
+        text: '아침에 일어나[[0]] 밥을 먹었어요. 밥 먹[[1]] 학교에 갔어요. 학교 다니[[2]] 집에 돌아왔어요.',
         blanks: [
           { options: ['고 나서', '자마자'], answer: '고 나서', explain: '-고 나서 para rutina.' },
           { options: ['고 나서', '자마자'], answer: '고 나서', explain: '-고 나서 para procedimiento.' },

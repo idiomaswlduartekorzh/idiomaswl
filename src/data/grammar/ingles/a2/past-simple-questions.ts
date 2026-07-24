@@ -188,9 +188,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Diálogo entre amigos',
             lines: [
-              ['A:', '[[0]] you see the game last night?'],
-              ['B:', 'No, I [[1]] have time. I was working.'],
-            ],
+ ['A:', '[[0]] you see the game last night?'],
+ ['B:', 'No, I [[1]] have time. I was working.'],
+ ],
             blanks: [
               { options: ['Did', 'Were', 'Do', 'Have'], answer: 'Did', explain: 'Pregunta: "Did you see…?" — auxiliar past simple.' },
               { options: ['didn\'t', 'don\'t', 'wasn\'t', 'haven\'t'], answer: 'didn\'t', explain: '"Didn\'t have time" — negativo + verbo base.' },
@@ -199,9 +199,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la oficina',
             lines: [
-              ['Manager:', '[[0]] everyone attend the meeting?'],
-              ['Employee:', 'No, Carlos [[1]] come — he was on a call.'],
-            ],
+ ['Manager:', '[[0]] everyone attend the meeting?'],
+ ['Employee:', 'No, Carlos [[1]] come — he was on a call.'],
+ ],
             blanks: [
               { options: ['Did', 'Were', 'Do', 'Was'], answer: 'Did', explain: '"Did everyone attend?" — Did + sujeto + base verb.' },
               { options: ['didn\'t', 'don\'t', 'wasn\'t', 'not'], answer: 'didn\'t', explain: '"Carlos didn\'t come" — didn\'t + verbo base.' },
@@ -210,9 +210,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Recordando las vacaciones',
             lines: [
-              ['A:', 'Where [[0]] you go on holiday this year?'],
-              ['B:', 'We [[1]] go anywhere — we stayed home.'],
-            ],
+ ['A:', 'Where [[0]] you go on holiday this year?'],
+ ['B:', 'We [[1]] go anywhere — we stayed home.'],
+ ],
             blanks: [
               { options: ['did', 'were', 'do', 'have'], answer: 'did', explain: '"Where did you go?" — Wh- + did + sujeto + base.' },
               { options: ['didn\'t', 'don\'t', 'weren\'t', 'haven\'t'], answer: 'didn\'t', explain: '"We didn\'t go anywhere" — negativo + base.' },
@@ -221,9 +221,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conversación sobre el restaurante',
             lines: [
-              ['A:', '[[0]] you like the food?'],
-              ['B:', 'Yes, I [[1]]! It was delicious.'],
-            ],
+ ['A:', '[[0]] you like the food?'],
+ ['B:', 'Yes, I [[1]]! It was delicious.'],
+ ],
             blanks: [
               { options: ['Did', 'Do', 'Were', 'Have'], answer: 'Did', explain: '"Did you like…?" — past simple question.' },
               { options: ['did', 'do', 'liked', 'was'], answer: 'did', explain: 'Respuesta corta: "Yes, I did." — no se repite "like".' },

@@ -105,8 +105,8 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           { scene: 'Вчера + pasado', lines: [['', '"Ayer estuve en casa": [[0]] я [[1]] дома.']], blanks: [{ options: ['Сейчас', 'Завтра', 'Вчера', 'Иногда'], answer: 'Вчера', explain: 'Вчера = ayer. Necesita verbo en pasado.' }, { options: ['буду', 'есть', 'был', 'иду'], answer: 'был', explain: 'Был = estuve/estaba (pasado masc de быть). Вчера я был дома.' }] },
-          { scene: 'Сейчас + presente', lines: [['', '"Ahora David trabaja": [[0]] Дэвид [[1]].']], blanks: [{ options: ['Вчера', 'Завтра', 'Сейчас', 'Иногда'], answer: 'Сейчас', explain: 'Сейчас = ahora. Verbo en presente.' }, { options: ['работал', 'будет работать', 'работает', 'работал'], answer: 'работает', explain: 'Работает = trabaja (presente, 3ª sing). Сейчас Дэвид работает.' }] },
-          { scene: 'Никогда не', lines: [['', '"Zhanna nunca llega tarde": Жанна [[0]] [[1]] опаздывает.']], blanks: [{ options: ['иногда', 'часто', 'никогда', 'всегда'], answer: 'никогда', explain: 'Никогда = nunca. Con doble negación обязательно: никогда не.' }, { options: ['да', 'уже', 'не', 'ещё'], answer: 'не', explain: 'Никогда + не = nunca. Жанна никогда не опаздывает = Zhanna nunca llega tarde.' }] },
+          { scene: 'Сейчас + presente', lines: [['', '"Ahora Gael trabaja": [[0]] Дэвид [[1]].']], blanks: [{ options: ['Вчера', 'Завтра', 'Сейчас', 'Иногда'], answer: 'Сейчас', explain: 'Сейчас = ahora. Verbo en presente.' }, { options: ['работал', 'будет работать', 'работает', 'работал'], answer: 'работает', explain: 'Работает = trabaja (presente, 3ª sing). Сейчас Дэвид работает.' }] },
+          { scene: 'Никогда не', lines: [['', '"Clara nunca llega tarde": Жанна [[0]] [[1]] опаздывает.']], blanks: [{ options: ['иногда', 'часто', 'никогда', 'всегда'], answer: 'никогда', explain: 'Никогда = nunca. Con doble negación обязательно: никогда не.' }, { options: ['да', 'уже', 'не', 'ещё'], answer: 'не', explain: 'Никогда + не = nunca. Жанна никогда не опаздывает = Clara nunca llega tarde.' }] },
           { scene: 'Каждый день + habitual', lines: [['', '"Cada día Leo el periódico": [[0]] я [[1]] газету.']], blanks: [{ options: ['Вчера', 'Завтра', 'Каждый день', 'Сейчас'], answer: 'Каждый день', explain: 'Каждый день = cada día.' }, { options: ['читал', 'прочитаю', 'читаю', 'читать'], answer: 'читаю', explain: 'Читаю = leo (presente habitual, 1ª sing). Каждый день я читаю газету.' }] },
         ],
       },
@@ -116,7 +116,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la expresión temporal correcta en cada espacio.',
         type: 'guidedText',
-        scene: 'Rutina de David — español, ruso y coreano',
+        scene: 'Rutina de Gael — español, ruso y coreano',
         text: 'Дэвид [[0]] преподаёт в академии. (Cada día enseña.) [[1]] он был в Москве на конференции. (Ayer estuvo en Moscú.) [[2]] он возвращается в Буcaramangu. (Mañana regresa.) Он [[3]] изучает новые языки. (Siempre estudia nuevos idiomas.) Он [[4]] не опаздывает на уроки. (Nunca llega tarde.)',
         blanks: [
           { options: ['вчера', 'завтра', 'сейчас', 'каждый день'], answer: 'каждый день', explain: 'Каждый день = cada día. Habitual presente.' },

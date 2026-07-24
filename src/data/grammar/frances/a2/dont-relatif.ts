@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con qui, que, où o dont.',
         type: 'guidedText',
         scene: 'Marie décrit son voyage au Portugal.',
-        text: 'Je suis allée à Lisbonne, une ville [[0]] j\'adore. C\'est une ville [[1]] a beaucoup de collines. Le quartier [[2]] j\'ai dormi s\'appelle l\'Alfama. Les gens [[1]] j\'ai rencontrés étaient très sympas. Le restaurant [[0]] je t\'avais parlé était délicieux. Et le jour [[2]] on a visité Sintra était magnifique.',
+        text: 'Je suis allée à Lisbonne, une ville [[0]] j\'adore. C\'est une ville [[1]] a beaucoup de collines. Le quartier [[2]] j\'ai dormi s\'appelle l\'Alfama. Les gens [[3]] j\'ai rencontrés étaient très sympas. Le restaurant [[4]] je t\'avais parlé était délicieux. Et le jour [[5]] on a visité Sintra était magnifique.',
         blanks: [
           { options: ['que', 'qui', 'dont', 'où'], answer: 'que', explain: '"que j\'adore / que je t\'avais parlé → dont" — COD de adore. Nota: \'dont\' va en la 5ª oración.' },
           { options: ['qui', 'que', 'dont', 'où'], answer: 'qui', explain: '"qui a / qui j\'ai rencontrés → que" — sujeto de a. Nota: \'que\' para rencontrer.' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe qui, que, qu\', où o dont.',
         type: 'freeText',
         scene: 'Complétez avec le bon pronom relatif.',
-        text: 'C\'est la chanson ___ j\'ai entendue à la radio. / L\'homme ___ m\'a aidé était très sympa. / C\'est la raison ___ je suis venu. / Le film ___ tu as besoin est ici.',
+        text: 'C\'est la chanson [[0]] j\'ai entendue à la radio. / L\'homme [[1]] m\'a aidé était très sympa. / C\'est la raison [[2]] je suis venu. / Le film [[3]] tu as besoin est ici.',
         blanks: [
           { answer: "qu'", explain: '"que/qu\'" — COD de ai entendue (j\' = sujeto). Devant voyelle → qu\'.' },
           { answer: 'qui', explain: '"qui m\'a aidé" — sujeto de a aidé.' },

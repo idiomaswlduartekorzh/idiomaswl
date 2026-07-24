@@ -48,15 +48,43 @@ const topic: GrammarTopic = {
     {
       heading: 'El futuro de probabilidad en italiano',
       paragraphs: [
-        'En italiano, el futuro simple tiene una función especial: expresar suposiciones o probabilidades sobre el momento presente. "Sarà in ufficio" no dice que alguien ESTARÁ en la oficina en el futuro, sino que PROBABLEMENTE ESTÁ en la oficina ahora mismo.',
-        'Este uso es muy común en la lengua coloquial italiana. Se reconoce porque no hay ninguna referencia temporal al futuro (no hay "domani", "la prossima settimana", etc.) y la pregunta que lo introduce suele ser sobre el presente: "Dove sarà?", "Perché non risponde?"',
+        'El futuro simple italiano tiene una función especial: expresar una suposición sobre el PRESENTE. "Sarà in ufficio" no significa "estará en la oficina mañana", sino "probablemente está en la oficina ahora". Equivale al español "estará / tendrá / serán…" con valor de conjetura. Estos ejemplos lo muestran:',
+      ],
+      table: [
+        ['Pregunta (presente)', 'Respuesta (futuro)', 'Significado'],
+        ['Che ore sono?', 'Saranno le tre.', 'Serán las tres (aprox.).'],
+        ['Dov\'è Luigi?', 'Sarà al lavoro.', 'Estará en el trabajo (supongo).'],
+        ['Quanti anni ha?', 'Avrà trent\'anni.', 'Tendrá unos treinta.'],
+        ['Perché non risponde?', 'Starà dormendo.', 'Estará durmiendo.'],
       ],
     },
     {
       heading: 'Cómo distinguir futuro real de futuro de probabilidad',
       paragraphs: [
-        'Futuro real: hay una referencia temporal al futuro ("domani", "la settimana prossima", "tra un\'ora") y expresa un hecho o intención futura.',
-        'Futuro de probabilidad: NO hay referencia al futuro, y expresa una suposición sobre el PRESENTE. Equivale a "probabilmente + presente" o "deve essere + aggettivo".',
+        'La misma forma verbal (sarà, avrà) sirve para las dos cosas; lo que decide es el contexto. Si hay una referencia temporal futura (domani, tra un\'ora), es futuro real; si no la hay y se responde a una duda sobre el presente, es probabilidad:',
+      ],
+      table: [
+        ['Tipo', 'Señal', 'Ejemplo'],
+        ['Futuro real', 'hay referencia futura', 'Domani sarò a Roma.'],
+        ['Futuro de probabilidad', 'suposición sobre el presente', 'Sarà a casa adesso.'],
+      ],
+    },
+    {
+      heading: '¿Qué es el futuro de probabilidad en italiano?',
+      paragraphs: [
+        'Es el uso del futuro simple para hacer una conjetura sobre el presente, no para hablar del porvenir. "Quanti anni avrà? Avrà cinquant\'anni" = ¿cuántos años tendrá? Tendrá unos cincuenta. Equivale a "probabilmente + presente".',
+      ],
+    },
+    {
+      heading: '¿Cómo se distingue el futuro real del futuro de probabilidad?',
+      paragraphs: [
+        'Por el contexto. Con una referencia temporal futura (domani, la settimana prossima) es futuro real: "Domani partirò". Sin referencia futura y respondiendo a una duda del presente, es probabilidad: "Dov\'è? — Sarà in ufficio". La forma verbal es idéntica.',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa una suposición sobre el presente en italiano?',
+      paragraphs: [
+        'Con el futuro simple (Sarà stanco = estará cansado) o con expresiones equivalentes: "probabilmente è stanco", "deve essere stanco", "forse è stanco". El futuro de probabilidad es la forma más idiomática y frecuente en el habla.',
       ],
     },
   ],
@@ -186,7 +214,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: usa el futuro semplice para expresar suposiciones sobre el presente.',
         type: 'freeText',
         scene: 'Respondiendo a preguntas con suposiciones.',
-        text: 'Perché dorme tanto? — ___ (probablemente está cansado, sarà). / Dove sono i bambini? — ___ (probablemente están jugando, staranno). / Quanti anni ha il professore? — ___ (probablemente tiene cincuenta, avrà). / Quanto costa quel vestito? — ___ (costará mucho, costerà). / Perché è triste? — ___ (probablemente tiene problemas, avrà).',
+        text: 'Perché dorme tanto? — [[0]] (probablemente está cansado, sarà). / Dove sono i bambini? — [[1]] (probablemente están jugando, staranno). / Quanti anni ha il professore? — [[2]] (probablemente tiene cincuenta, avrà). / Quanto costa quel vestito? — [[3]] (costará mucho, costerà). / Perché è triste? — [[4]] (probablemente tiene problemas, avrà).',
         blanks: [
           { answer: 'Sarà stanco', explain: '"sarà" + aggettivo = suposición presente.' },
           { answer: 'Staranno giocando', explain: '"staranno" + gerundio = progresivo de probabilidad.' },

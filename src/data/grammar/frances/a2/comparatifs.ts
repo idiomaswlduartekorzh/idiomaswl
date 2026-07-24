@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el comparativo correcto.',
         type: 'freeText',
         scene: 'Complétez avec la forme comparative correcte.',
-        text: 'Mon appartement est ___ grand que le tien. (más) / Ce café est ___ bon que l\'autre. (mejor) / Il lit ___ vite que moi. (tan) / Elle a ___ temps libre que lui. (menos)',
+        text: 'Mon appartement est [[0]] grand que le tien. (más) / Ce café est [[1]] bon que l\'autre. (mejor) / Il lit [[2]] vite que moi. (tan) / Elle a [[3]] temps libre que lui. (menos)',
         blanks: [
           { answer: 'plus', explain: '"plus grand que" = más grande que.' },
           { answer: 'meilleur', explain: '"meilleur que" = mejor que. Irregular de bon.' },

@@ -8,7 +8,7 @@ const topic: GrammarTopic = {
   level: 'A1',
   title: 'Articoli en italiano A1 — Artículos determinativos e indeterminativos',
   shortTitle: 'Articoli (il/la/un/una)',
-  metaTitle: 'Artículos italiano A1 — il la lo l\' i gli le un una uno',
+  metaTitle: 'Artículos en italiano A1 — tabla completa: il, lo, la, l\', i, gli, le, un, uno, una',
   description:
     'Los artículos del italiano son más variados que en español: il, lo, la, l\' (determinativos singulares) e i, gli, le (determinativos plurales); un, uno, una, un\' (indeterminativos). La elección depende del género, el número y la letra inicial del sustantivo.',
   lead: 'il/la/lo/l\' + i/gli/le (el/la + los/las). un/una/uno (un/una). La elección depende de género y de si el sustantivo empieza por vocal, s+consonante, z, gn, ps. Más complejo que en español, pero hay patrones claros.',
@@ -44,17 +44,54 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Artículos italianos: más formas, misma lógica',
+      heading: 'Los artículos determinados: la tabla completa (il, lo, la, l\', i, gli, le)',
       paragraphs: [
-        'El italiano tiene más formas de artículo que el español debido a reglas de eufonía (sonoridad). El sistema masculino tiene tres formas singulares (il, lo, l\') y dos plurales (i, gli), mientras el español solo tiene "el" y "los". El femenino es más simple: la/l\' y le.',
-        'La regla clave para los artículos masculinos: usa "lo" (no "il") antes de sustantivos que empiezan por s+consonante (lo studente), z (lo zoo), gn (lo gnomo), ps (lo psicologo), y (lo yogurt). Ante vocal, siempre "l\'" (l\'amico, l\'errore). Para todo lo demás masculino: "il" (il libro, il treno).',
+        'El italiano tiene más formas de artículo que el español por razones de eufonía (sonoridad): la forma depende del género, del número y de la letra con la que empieza el sustantivo. No hay que adivinarlo — se decide con esta tabla. Fíjate en que "lo/gli" son la clave: se usan ante s+consonante, z, gn, ps, y, y ante vocal (solo el plural gli).',
+      ],
+      table: [
+        ['El sustantivo empieza por…', 'Singular', 'Plural', 'Ejemplo'],
+        ['Masc. consonante', 'il', 'i', 'il libro → i libri'],
+        ['Masc. s+cons, z, gn, ps, y', 'lo', 'gli', 'lo studente → gli studenti'],
+        ['Masc. vocal', 'l\'', 'gli', 'l\'amico → gli amici'],
+        ['Fem. consonante', 'la', 'le', 'la casa → le case'],
+        ['Fem. vocal', 'l\'', 'le', 'l\'amica → le amiche'],
       ],
     },
     {
-      heading: 'Artículo determinativo vs indeterminativo',
+      heading: 'Los artículos indeterminados: un, uno, una, un\'',
       paragraphs: [
-        'El artículo determinativo (il, lo, la, l\', i, gli, le) corresponde al español "el, la, los, las" — se usa cuando nos referimos a algo específico o ya conocido. El indeterminativo (un, uno, una, un\') corresponde a "un, una" — para mencionar algo por primera vez o de forma genérica.',
-        '"Ho un libro" (tengo un libro, cualquiera) vs "Ho il libro" (tengo el libro, uno específico). La lógica es idéntica al español, solo cambian las formas. Una vez memorizadas las formas con sus reglas de distribución, el sistema es predecible.',
+        'El artículo indeterminado (equivale a "un/una") solo existe en singular y sigue la misma lógica de inicial que el determinado. Para el masculino, "uno" cubre los mismos casos que "lo"; para el femenino, "un\'" (con apóstrofo) va ante vocal.',
+      ],
+      table: [
+        ['El sustantivo empieza por…', 'Artículo', 'Ejemplo'],
+        ['Masc. consonante o vocal', 'un', 'un libro, un amico'],
+        ['Masc. s+cons, z, gn, ps, y', 'uno', 'uno studente, uno zaino'],
+        ['Fem. consonante', 'una', 'una casa'],
+        ['Fem. vocal', 'un\'', 'un\'amica'],
+      ],
+    },
+    {
+      heading: 'Determinado vs indeterminado: cuándo usar cada uno',
+      paragraphs: [
+        'El determinado (il, la, i…) señala algo específico o ya conocido, como "el/la/los/las" del español. El indeterminado (un, una…) menciona algo por primera vez o genérico, como "un/una". "Ho un libro" (tengo un libro cualquiera) frente a "Ho il libro" (tengo el libro concreto del que hablábamos). La lógica es idéntica al español; solo cambian las formas.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "lo" en lugar de "il" en italiano?',
+      paragraphs: [
+        'Se usa "lo" (no "il") ante sustantivos masculinos que empiezan por s+consonante (lo studente, lo sport), z (lo zaino), gn (lo gnomo), ps (lo psicologo) o y (lo yogurt). Ante vocal se usa "l\'" (l\'amico). Para el resto de masculinos, "il" (il cane, il treno).',
+      ],
+    },
+    {
+      heading: '¿Cuál es el plural de los artículos masculinos il, lo y l\'?',
+      paragraphs: [
+        '"il" hace plural "i" (il libro → i libri). Tanto "lo" como "l\'" hacen plural "gli" (lo studente → gli studenti; l\'amico → gli amici). Es decir, ante s+consonante, z, gn, ps, y, o ante vocal, el plural masculino siempre es "gli".',
+      ],
+    },
+    {
+      heading: '¿Cómo se eligen los artículos indeterminados un, uno, una y un\'?',
+      paragraphs: [
+        'Masculino: "un" ante consonante o vocal (un cane, un amico); "uno" ante s+consonante, z, gn, ps, y (uno studente). Femenino: "una" ante consonante (una casa); "un\'" con apóstrofo ante vocal (un\'amica). No existe plural del indeterminado: se usa el partitivo "dei/degli/delle" (dei libri = unos libros).',
       ],
     },
   ],
@@ -81,14 +118,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Un objeto de clase',
-            lines: [['David', '___ libro è sulla scrivania.']],
+            lines: [['Leo', '___ libro è sulla scrivania.']],
             options: ['Il', 'Lo', 'La', 'L\''],
             answer: 'Il',
             explain: 'Libro: masculino, empieza por L (consonante normal) → il.',
           },
           {
             scene: 'El estudiante',
-            lines: [['Zhanna', '___ studente è molto bravo.']],
+            lines: [['Emma', '___ studente è molto bravo.']],
             options: ['Lo', 'Il', 'La', 'I'],
             answer: 'Lo',
             explain: 'Studente: masculino, empieza por st (s+consonante) → lo.',
@@ -130,7 +167,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Un estudiante',
-            lines: [['David', 'Oggi abbiamo ___ studente nuovo in classe.']],
+            lines: [['Leo', 'Oggi abbiamo ___ studente nuovo in classe.']],
             options: ['uno', 'un', 'una', 'un\''],
             answer: 'uno',
             explain: 'Studente: masculino, s+consonante → uno.',
@@ -162,7 +199,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los estudiantes y los profesores',
-            lines: [['Zhanna', '[[0]] studenti e [[1]] professori sono in classe.']],
+            lines: [['Emma', '[[0]] studenti e [[1]] professori sono in classe.']],
             blanks: [
               { options: ['Gli', 'I', 'Le'], answer: 'Gli', explain: 'Studenti: masc pl, s+cons → gli.' },
               { options: ['i', 'gli', 'le'], answer: 'i', explain: 'Professori: masc pl, consonante → i.' },

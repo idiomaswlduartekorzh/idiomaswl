@@ -110,7 +110,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Beber cafe — コーヒーを飲む',
-            lines: [['David', '朝はコーヒーを___、新聞を読んだりします。']],
+            lines: [['Leo', '朝はコーヒーを___、新聞を読んだりします。']],
             options: ['飲んだり', '飲いたり', '飲みたり', '飲うたり'],
             answer: '飲んだり',
             explain: '飲む (Gr.1): む→んだ → 飲んだ → 飲んだり.',
@@ -138,14 +138,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablar — 話す',
-            lines: [['Jose', '友達と話___、笑ったりしました。']],
+            lines: [['Bruno', '友達と話___、笑ったりしました。']],
             options: ['したり', 'すたり', 'するたり', 'しており'],
             answer: 'したり',
             explain: '話す (Gr.1): す→した → 話した → 話したり.',
           },
           {
             scene: 'Alternancia de clima',
-            lines: [['Zhanna', '今日は暑かっ___、寒かったりします。']],
+            lines: [['Iris', '今日は暑かっ___、寒かったりします。']],
             options: ['たり', 'たり、', 'て', 'ました'],
             answer: 'たり',
             explain: 'Adjetivo い en pasado + たり: 暑かった → 暑かったり. Alternancia de estados.',
@@ -199,7 +199,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige la forma correcta de たり en cada espacio.',
         type: 'guidedText',
-        scene: 'David describe su fin de semana tipico',
+        scene: 'Leo describe su fin de semana tipico',
         text: '週末は友達と映画を[[0]]、レストランで食事を[[1]]します。家では音楽を[[2]]、本を[[3]]、ゆっくり[[4]]します。',
         blanks: [
           { options: ['見たり', '見て', '見ます'], answer: '見たり', explain: '見る (Gr.2): 見た → 見たり.' },

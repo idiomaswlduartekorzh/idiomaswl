@@ -102,7 +102,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Son las 2:30',
-            lines: [['David', '二時 半 です。= ___']],
+            lines: [['Tomás', '二時 半 です。= ___']],
             options: ['にじ はん', 'にじ さんじゅっぷん', 'ふたじ はん', 'にし はん'],
             answer: 'にじ はん',
             explain: '二時半 = にじ はん (niji han) = las dos y media. 半 (han) = 30 minutos.',
@@ -130,7 +130,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Minutos irregulares',
-            lines: [['Zhanna', '六分 を よんでください。']],
+            lines: [['Emma', '六分 を よんでください。']],
             options: ['ろっぷん', 'ろくふん', 'ろっふん', 'ろくぷん'],
             answer: 'ろっぷん',
             explain: '六分 = ろっぷん (roppun). 六(roku) → ろっ + ぷん. Cambio fun→pun.',
@@ -154,9 +154,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntando la hora',
             lines: [
-              ['Ana', 'すみません、いま [[0]] ですか？'],
-              ['David', '[[1]] です。'],
-            ],
+ ['Ana', 'すみません、いま [[0]] ですか？'],
+ ['Tomás', '[[1]] です。'],
+ ],
             blanks: [
               { options: ['なんじ', 'なにじ', 'どこじ'], answer: 'なんじ', explain: '何時 = なんじ (nanji) = ¿qué hora? なん antes de contador じ.' },
               { options: ['ごじはん', 'ごじさんじゅっぷん', 'ごしはん'], answer: 'ごじはん', explain: '五時半 = ごじはん (goji han = 5:30). 半 (han) = y media.' },
@@ -171,8 +171,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'El horario de David',
-            lines: [['David', 'ごご [[0]] から [[1]] まで おしえます。(Enseño de 2 PM a 6 PM.)']],
+            scene: 'El horario de Tomás',
+            lines: [['Tomás', 'ごご [[0]] から [[1]] まで おしえます。(Enseño de 2 PM a 6 PM.)']],
             blanks: [
               { options: ['にじ', 'ふたじ', 'にし'], answer: 'にじ', explain: '二時 = にじ (niji = 2). ごご にじ = 2 PM.' },
               { options: ['ろくじ', 'むじ', 'ろくし'], answer: 'ろくじ', explain: '六時 = ろくじ (rokují = 6). から〜まで = desde〜hasta.' },
@@ -211,7 +211,7 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe la hora o expresión de tiempo correcta.',
         type: 'freeText',
-        scene: 'Zhanna explica el horario de WeLearn',
+        scene: 'Emma explica el horario de WeLearn',
         text: 'じゅぎょうは [[0]](9 AM)に はじまります。[[1]](12:00)に ひるやすみです。[[2]](3:30 PM)から また じゅぎょうです。[[3]](5:00 PM)に おわります。[[4]](何時) ですか？と きかれたら、[[5]](10 minutos) と こたえます。',
         blanks: [
           { answer: 'ごぜん くじ', accepted: ['午前九時', '午前くじ'], explain: '午前九時 (gozen kuji) = 9 AM.' },

@@ -95,14 +95,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'De Brasil (contracción)',
-            lines: [['David', 'Sou ___ Brasil.']],
+            lines: [['Dario', 'Sou ___ Brasil.']],
             options: ['do', 'de o', 'da', 'ao'],
             answer: 'do',
             explain: 'De + o = do. Brasil es masculino → do Brasil.',
           },
           {
             scene: 'En la oficina (contracción)',
-            lines: [['Zhanna', 'Estou ___ escritório agora.']],
+            lines: [['Clara', 'Estou ___ escritório agora.']],
             options: ['no', 'em o', 'na', 'do'],
             answer: 'no',
             explain: 'Em + o = no. Escritório es masculino → no escritório.',
@@ -123,7 +123,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los alumnos',
-            lines: [['David', '___ alunos estudam muito.']],
+            lines: [['Dario', '___ alunos estudam muito.']],
             options: ['Os', 'As', 'Uns', 'O'],
             answer: 'Os',
             explain: 'Alunos: masculino plural → os (los).',
@@ -162,7 +162,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En la escuela y en el trabajo',
-            lines: [['David', 'Estou [[0]] escola de manhã e [[1]] escritório à tarde.']],
+            lines: [['Dario', 'Estou [[0]] escola de manhã e [[1]] escritório à tarde.']],
             blanks: [
               { options: ['na', 'no', 'em a'], answer: 'na', explain: 'Em + a (escola) = na.' },
               { options: ['no', 'na', 'em o'], answer: 'no', explain: 'Em + o (escritório) = no.' },
@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con el artículo o contracción correcta.',
         type: 'guidedText',
         scene: 'Rotina de uma estudante em Lisboa',
-        text: '[[0]] manhã eu vou [[1]] escola de português. Saio [[2]] casa às oito horas. [[3]] professora se chama Zhanna. [[4]] aulas são muito boas. À tarde vou [[5]] biblioteca estudar. Tenho [[6]] dicionário excelente.',
+        text: '[[0]] manhã eu vou [[1]] escola de português. Saio [[2]] casa às oito horas. [[3]] professora se chama Clara. [[4]] aulas são muito boas. À tarde vou [[5]] biblioteca estudar. Tenho [[6]] dicionário excelente.',
         blanks: [
           { options: ['De', 'Da', 'Do'], answer: 'De', explain: 'De manhã = por la mañana. Sin artículo en esta expresión.' },
           { options: ['à', 'ao', 'para a'], answer: 'à', explain: 'A + a (escola) = à. Destino femenino.' },
@@ -260,8 +260,8 @@ const topic: GrammarTopic = {
           {
             scene: 'Tu rutina',
             prompt: 'De manhã vou ___ [lugar]. Saio ___ [lugar] às ___. ___ professora/professor se chama ___.',
-            answer: 'De manhã vou à escola. Saio da escola às três. A professora se chama Zhanna.',
-            accepted: ['de manhã vou à escola saio da escola às três a professora se chama zhanna'],
+            answer: 'De manhã vou à escola. Saio da escola às três. A professora se chama Clara.',
+            accepted: ['de manhã vou à escola saio da escola às três a professora se chama clara'],
             explain: 'À escola (a+a), da escola (de+a), a professora (artículo determinado).',
           },
           {

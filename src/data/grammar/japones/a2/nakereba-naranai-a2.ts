@@ -110,7 +110,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tengo que comer — 食べる',
-            lines: [['David', '薬を飲む前に___。(tengo que comer antes de tomar la medicina)']],
+            lines: [['Hugo', '薬を飲む前に___。(tengo que comer antes de tomar la medicina)']],
             options: ['食べなければなりません', '食べなくてはなりません', '食べてはいけません', '食べません'],
             answer: '食べなければなりません',
             explain: '食べる (Gr.2): 食べない→食べなければなりません.',
@@ -138,14 +138,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tengo que volver pronto',
-            lines: [['Jose', '早く家に___。(tengo que volver a casa pronto)']],
+            lines: [['Tomás', '早く家に___。(tengo que volver a casa pronto)']],
             options: ['帰らなければなりません', '帰りなければなりません', '帰ってはいけません', '帰りません'],
             answer: '帰らなければなりません',
             explain: '帰る (kaeru, Gr.1): 帰らない→帰らなければなりません.',
           },
           {
             scene: 'Coloquial — tengo que ir',
-            lines: [['Zhanna', 'もう___。(tengo que irme ya — forma coloquial)']],
+            lines: [['Lía', 'もう___。(tengo que irme ya — forma coloquial)']],
             options: ['行かなきゃ', '行かなければなりません', '行かなくてはいけません', '行きません'],
             answer: '行かなきゃ',
             explain: '行かなきゃ es la forma coloquial de 行かなければならない. Muy comun en conversacion.',
@@ -177,7 +177,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Vida sana',
-            lines: [['David', '健康のために野菜を[[0]]し、運動も[[1]]。']],
+            lines: [['Hugo', '健康のために野菜を[[0]]し、運動も[[1]]。']],
             blanks: [
               { options: ['食べなければなりません', '食べます', '食べてはいけません'], answer: '食べなければなりません', explain: '食べる→食べない→食べなければなりません.' },
               { options: ['しなければなりません', 'します', 'してはいけません'], answer: 'しなければなりません', explain: 'する→しない→しなければなりません.' },

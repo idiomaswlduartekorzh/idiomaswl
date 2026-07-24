@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - paragraph [ref=e3]: "404"
+    - heading "Página no encontrada" [level=1] [ref=e4]
+    - paragraph [ref=e5]: La dirección que escribiste no existe o fue movida. Revisa el enlace o vuelve al inicio.
+    - generic [ref=e6]:
+      - link "← Ir al inicio" [ref=e7] [cursor=pointer]:
+        - /url: /home
+      - link "Ver lecciones" [ref=e8] [cursor=pointer]:
+        - /url: /leccion
+    - paragraph [ref=e9]:
+      - text: También puedes ir a
+      - link "Exámenes" [ref=e10] [cursor=pointer]:
+        - /url: /examenes
+      - text: o
+      - link "Práctica" [ref=e11] [cursor=pointer]:
+        - /url: /practica
+      - text: .
+  - alert [ref=e12]

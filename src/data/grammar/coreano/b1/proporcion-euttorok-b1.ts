@@ -129,7 +129,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con -ㄹ수록 manteniendo lógica proporcional.',
         type: 'guidedText',
         scene: 'Descripción de relaciones causa-efecto proporcionales.',
-        text: '공부할___ 더 많이 알 수 있어요. 나이가 들___ 더 지혜로워져요. 돈이 많___ 행복할까요?',
+        text: '공부할[[0]] 더 많이 알 수 있어요. 나이가 들[[1]] 더 지혜로워져요. 돈이 많[[2]] 행복할까요?',
         blanks: [
           { options: ['수록', '면'], answer: '수록', explain: '-ㄹ수록 para proporcionalidad.' },
           { options: ['수록', '면'], answer: '수록', explain: '-ㄹ수록 con edad.' },

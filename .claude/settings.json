@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"${CLAUDE_PROJECT_DIR:-.}\" && SID=$(jq -r '.session_id // \"unknown\"') && { echo; echo \"## $(date '+%Y-%m-%d %H:%M:%S') — sesión ${SID}\"; echo; echo '```'; git diff HEAD --stat 2>/dev/null; echo '```'; } >> docs/REGISTRO-DE-SESIONES.md",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

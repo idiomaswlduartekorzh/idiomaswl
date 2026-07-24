@@ -110,7 +110,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Opinion sobre una persona',
-            lines: [['David', 'あの人は先生___と思います。(creo que esa persona es profesora)']],
+            lines: [['Gael', 'あの人は先生___と思います。(creo que esa persona es profesora)']],
             options: ['だ', 'は', 'が', 'を'],
             answer: 'だ',
             explain: 'Sustantivo: 先生 + だ + と思います. だ es necesario antes de と con sustantivos.',
@@ -138,14 +138,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Creo que ya termino',
-            lines: [['Jose', 'もう___と思います。(creo que ya termino — 終わる)']],
+            lines: [['Iván', 'もう___と思います。(creo que ya termino — 終わる)']],
             options: ['終わった', '終わりました', '終わります', '終わっている'],
             answer: '終わった',
             explain: 'Verbo en forma た (pasado plano): 終わった + と思います = creo que ya termino.',
           },
           {
             scene: 'Opinion sobre la clase',
-            lines: [['Zhanna', 'この授業は___と思います。(creo que esta clase es interesante)']],
+            lines: [['Vera', 'この授業は___と思います。(creo que esta clase es interesante)']],
             options: ['面白い', '面白いです', '面白だ', '面白くない'],
             answer: '面白い',
             explain: '面白い es adjetivo い: forma plana directa + と思います.',
@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Suposicion sobre horario',
-            lines: [['David', '田中さんはもう[[0]]と思います。'], ['Ana', 'でも、まだ[[1]]と思いますよ。']],
+            lines: [['Gael', '田中さんはもう[[0]]と思います。'], ['Ana', 'でも、まだ[[1]]と思いますよ。']],
             blanks: [
               { options: ['帰った', '帰りました', '帰ります'], answer: '帰った', explain: '帰る→帰った (pasado plano) + と思います.' },
               { options: ['いる', 'います', 'いた'], answer: 'いる', explain: 'いる (forma plana presente) + と思います = creo que todavia esta.' },
@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sobre una persona',
-            lines: [['Jose', 'あの人は田中さん[[0]]と思います。'], ['Zhanna', '私は鈴木さん[[1]]と思います。']],
+            lines: [['Iván', 'あの人は田中さん[[0]]と思います。'], ['Vera', '私は鈴木さん[[1]]と思います。']],
             blanks: [
               { options: ['だ', 'が', 'は'], answer: 'だ', explain: '田中さん (sustantivo) + だ + と思います.' },
               { options: ['だ', 'が', 'は'], answer: 'だ', explain: '鈴木さん (sustantivo) + だ + と思います.' },
@@ -215,7 +215,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma plana correcta del elemento indicado.',
         type: 'freeText',
-        scene: 'Zhanna da su opinion sobre varios temas',
+        scene: 'Vera da su opinion sobre varios temas',
         text: 'この本は[[0]] (面白い)と思います。日本語は[[1]] (難しい)と思いますが、楽しいです。田中先生は[[2]] (優しい)と思います。明日は[[3]] (晴れる)と思います。この問題は[[4]] (簡単だ)と思います。',
         blanks: [
           { answer: '面白い', explain: 'Adjetivo い: forma plana 面白い.' },

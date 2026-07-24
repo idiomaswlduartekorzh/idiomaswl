@@ -51,8 +51,16 @@ const topic: GrammarTopic = {
     {
       heading: 'Los posesivos en italiano: concordancia con el objeto poseído',
       paragraphs: [
-        'Una diferencia clave respecto al español: los posesivos italianos concuerdan con el objeto poseído, no con el poseedor. "La mia sorella" = mi hermana (mia porque sorella es femenino). "Il mio fratello" = mi hermano (mio porque fratello es masculino). El poseedor es irrelevante para la forma del posesivo.',
-        'Los posesivos se colocan antes del sustantivo y llevan artículo determinado: il mio libro (mi libro), la tua casa (tu casa), i suoi amici (sus amigos), le nostre lezioni (nuestras clases). Esta estructura artículo + posesivo + sustantivo es la regla general.',
+        'Diferencia clave con el español: los posesivos italianos concuerdan con el objeto poseído, no con el poseedor. Por eso cada posesivo tiene cuatro formas (masc/fem × sing/plural) y hay que elegir según el sustantivo, no según quién posee. "La mia sorella" (femenino) frente a "il mio fratello" (masculino), aunque el poseedor sea el mismo. Esta es la tabla completa, con su artículo:',
+      ],
+      table: [
+        ['Poseedor', 'Singular (masc. / fem.)', 'Plural (masc. / fem.)'],
+        ['mi', 'il mio / la mia', 'i miei / le mie'],
+        ['tu', 'il tuo / la tua', 'i tuoi / le tue'],
+        ['su', 'il suo / la sua', 'i suoi / le sue'],
+        ['nuestro', 'il nostro / la nostra', 'i nostri / le nostre'],
+        ['vuestro', 'il vostro / la vostra', 'i vostri / le vostre'],
+        ['de ellos/as', 'il loro / la loro', 'i loro / le loro'],
       ],
     },
     {
@@ -66,7 +74,25 @@ const topic: GrammarTopic = {
       heading: 'Loro: el posesivo invariable',
       paragraphs: [
         'Loro es especial: nunca cambia de forma (a diferencia de mio/mia/miei/mie). Il loro libro, la loro casa, i loro amici, le loro sorelle — siempre "loro". Además, siempre lleva artículo, incluso con sustantivos de familia: il loro padre (no "loro padre").',
-        'Suo/sua/suoi/sue puede significar "su" de él O de ella. El contexto aclara: "Zhanna parla con suo marito" (su marido de Zhanna = el marido de ella). Si hay ambigüedad, se especifica: "il marito di Zhanna".',
+        'Suo/sua/suoi/sue puede significar "su" de él O de ella. El contexto aclara: "Emma parla con suo marito" (su marido de Emma = el marido de ella). Si hay ambigüedad, se especifica: "il marito di Emma".',
+      ],
+    },
+    {
+      heading: '¿Cómo concuerdan los posesivos en italiano?',
+      paragraphs: [
+        'Con el objeto poseído, no con el poseedor. Cada posesivo tiene cuatro formas: mio/mia/miei/mie, tuo/tua/tuoi/tue, suo/sua/suoi/sue, etc. Se elige la forma que coincide en género y número con el sustantivo: "i miei libri" (masc. pl.), "le mie chiavi" (fem. pl.).',
+      ],
+    },
+    {
+      heading: '¿Cuándo NO se usa el artículo con los posesivos italianos?',
+      paragraphs: [
+        'Con sustantivos de familia en singular y con los posesivos mio, tuo, suo, nostro, vostro: se dice "mio padre", "tua sorella", "suo fratello" (sin il/la). Pero vuelve el artículo en plural (i miei fratelli), con "loro" (il loro padre) y con formas afectivas o modificadas (la mia sorellina, il mio caro amico).',
+      ],
+    },
+    {
+      heading: '¿Por qué "loro" no cambia de forma?',
+      paragraphs: [
+        'Loro es el único posesivo invariable: sirve para masculino, femenino, singular y plural sin cambiar (il loro libro, la loro casa, i loro amici, le loro idee). Además, siempre lleva artículo, incluso con familia: "il loro padre", no "loro padre".',
       ],
     },
   ],
@@ -108,7 +134,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Su casa',
-            lines: [['David', 'Zhanna abita in ___ casa. (su casa de ella)']],
+            lines: [['Iván', 'Emma abita in ___ casa. (su casa de ella)']],
             options: ['la sua', 'il suo', 'le sue', 'sua'],
             answer: 'la sua',
             explain: 'Casa = femenino singular, no es familia → artículo + posesivo: la sua casa.',
@@ -143,7 +169,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Vuestros libros',
-            lines: [['David', 'Dove sono ___ libri? (vuestros libros)']],
+            lines: [['Iván', 'Dove sono ___ libri? (vuestros libros)']],
             options: ['i vostri', 'il vostro', 'la vostra', 'le vostre'],
             answer: 'i vostri',
             explain: 'Libri = masculino plural → i vostri libri.',
@@ -160,8 +186,8 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando de familia',
             lines: [
-              ['Carlo', '[[0]] padre è medico e [[1]] madre è insegnante. (mi padre / mi madre)'],
-            ],
+ ['Carlo', '[[0]] padre è medico e [[1]] madre è insegnante. (mi padre / mi madre)'],
+ ],
             blanks: [
               { options: ['Mio', 'Il mio', 'La mia'], answer: 'Mio', explain: 'Padre = familia sg → sin artículo: Mio padre.' },
               { options: ['mia', 'la mia', 'il mio'], answer: 'mia', explain: 'Madre = familia sg → sin artículo: mia madre.' },
@@ -169,7 +195,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Objetos en clase',
-            lines: [['David', 'Dov\'è [[0]] penna, Sofia? E dove sono [[1]] quaderni?']],
+            lines: [['Iván', 'Dov\'è [[0]] penna, Sofia? E dove sono [[1]] quaderni?']],
             blanks: [
               { options: ['la tua', 'tua', 'il tuo'], answer: 'la tua', explain: 'Penna = femenino singular, objeto → con artículo: la tua penna.' },
               { options: ['i tuoi', 'le tue', 'il tuo'], answer: 'i tuoi', explain: 'Quaderni = masculino plural → i tuoi quaderni.' },
@@ -177,7 +203,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La familia de ellos',
-            lines: [['Zhanna', '[[0]] figli studiano a Milano e [[1]] casa è grande. (de ellos)']],
+            lines: [['Emma', '[[0]] figli studiano a Milano e [[1]] casa è grande. (de ellos)']],
             blanks: [
               { options: ['I loro', 'Loro', 'Le loro'], answer: 'I loro', explain: 'Figli = masc. pl. → i loro figli. Loro siempre con artículo.' },
               { options: ['la loro', 'loro', 'il loro'], answer: 'la loro', explain: 'Casa = fem. sg. → la loro casa. Loro siempre con artículo.' },
@@ -199,8 +225,8 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa el texto sobre la familia y objetos de los personajes de WeLearn.',
         type: 'guidedText',
-        scene: 'David y Zhanna hablan de sus familias y sus cosas',
-        text: 'David: "[[0]] moglie si chiama Zhanna. [[1]] famiglia viene dall\'Ucraina. Abbiamo due gatti — [[2]] nomi sono Luna e Sole." Zhanna: "[[3]] scuola si chiama WeLearn. [[4]] studenti vengono da tutta Colombia. [[5]] sorella vive a Kiev e mi manca molto."',
+        scene: 'Iván y Emma hablan de sus familias y sus cosas',
+        text: 'Iván: "[[0]] moglie si chiama Emma. [[1]] famiglia viene dall\'Ucraina. Abbiamo due gatti — [[2]] nomi sono Luna e Sole." Emma: "[[3]] scuola si chiama WeLearn. [[4]] studenti vengono da tutta Colombia. [[5]] sorella vive a Kiev e mi manca molto."',
         blanks: [
           { options: ['Mia', 'La mia', 'Il mio'], answer: 'Mia', explain: 'Moglie = familia sg → sin artículo: Mia moglie.' },
           { options: ['La sua', 'Sua', 'Il suo'], answer: 'La sua', explain: 'Famiglia = sustantivo, no familia directa → con artículo: La sua famiglia.' },
@@ -217,7 +243,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el posesivo con el artículo correcto (o sin él si corresponde).',
         type: 'freeText',
         scene: 'Lina describe su vida y sus cosas',
-        text: '[[0]] casa è piccola ma accogliente. (mi casa) [[1]] fratello abita vicino. (mi hermano) [[2]] libri di italiano sono ovunque. (mis libros) [[3]] madre cucina benissimo. (mi madre) [[4]] amici vengono spesso a studiare. (mis amigos) [[5]] professore si chiama David. (mi profe)',
+        text: '[[0]] casa è piccola ma accogliente. (mi casa) [[1]] fratello abita vicino. (mi hermano) [[2]] libri di italiano sono ovunque. (mis libros) [[3]] madre cucina benissimo. (mi madre) [[4]] amici vengono spesso a studiare. (mis amigos) [[5]] professore si chiama Iván. (mi profe)',
         blanks: [
           { answer: 'La mia', explain: 'Casa = fem. sg., objeto → con artículo: La mia casa.' },
           { answer: 'Mio', explain: 'Fratello = familia sg → sin artículo: Mio fratello.' },
@@ -287,7 +313,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La familia de WeLearn',
-            prompt: 'Parla di David e Zhanna: ___ scuola si chiama WeLearn. ___ studenti...',
+            prompt: 'Parla di Iván e Emma: ___ scuola si chiama WeLearn. ___ studenti...',
             answer: 'La loro scuola si chiama WeLearn. I loro studenti vengono da tutta Colombia.',
             accepted: ['la loro scuola', 'i loro studenti'],
             explain: 'Loro siempre con artículo: la loro scuola, i loro studenti.',

@@ -95,14 +95,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Alumnos inteligentes',
-            lines: [['Zhanna', 'Os alunos da WeLearn são muito ___.']],
+            lines: [['Elena', 'Os alunos da WeLearn são muito ___.']],
             options: ['inteligentes', 'inteligente', 'inteligento', 'inteligenta'],
             answer: 'inteligentes',
             explain: 'Adjetivo -e: plural = inteligentes. No cambia de género, solo añade -s.',
           },
           {
             scene: 'Una buena profesora',
-            lines: [['Sofia', 'A Zhanna é uma professora muito ___.']],
+            lines: [['Sofia', 'A Elena é uma professora muito ___.']],
             options: ['boa', 'bom', 'bons', 'boas'],
             answer: 'boa',
             explain: 'Professora es femenino → boa (irregular: bom → boa).',
@@ -123,7 +123,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Malos resultados',
-            lines: [['David', 'Esses resultados são muito ___.']],
+            lines: [['Iván', 'Esses resultados são muito ___.']],
             options: ['maus', 'más', 'mau', 'má'],
             answer: 'maus',
             explain: 'Resultados es masculino plural → maus (irregular: mau → maus en plural).',
@@ -153,7 +153,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'La WeLearn',
-            lines: [['David', 'A WeLearn é uma escola [[0]] e muito [[1]].']],
+            lines: [['Iván', 'A WeLearn é uma escola [[0]] e muito [[1]].']],
             blanks: [
               { options: ['boa', 'bom', 'bons'], answer: 'boa', explain: 'Escola femenino → boa.' },
               { options: ['eficiente', 'eficiento', 'eficientes'], answer: 'eficiente', explain: 'Adjetivo -e: singular → eficiente (sin cambio de género).' },
@@ -161,7 +161,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El alumno',
-            lines: [['Zhanna', 'O Carlos é um aluno [[0]] e muito [[1]].']],
+            lines: [['Elena', 'O Carlos é um aluno [[0]] e muito [[1]].']],
             blanks: [
               { options: ['dedicado', 'dedicada', 'dedicados'], answer: 'dedicado', explain: 'Aluno masculino → dedicado.' },
               { options: ['inteligente', 'inteligento', 'inteligenta'], answer: 'inteligente', explain: 'Adjetivo -e: sin cambio de género → inteligente.' },
@@ -191,7 +191,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa la descripción eligiendo el adjetivo correcto.',
         type: 'guidedText',
-        scene: 'David descreve a WeLearn',
+        scene: 'Iván descreve a WeLearn',
         text: 'A WeLearn é uma escola [[0]] (buena). Temos professores [[1]] (dedicados, masc. pl.). As aulas são [[2]] (interesantes, pl.). O método é [[3]] (original). Os alunos são [[4]] (inteligentes, pl.) e muito [[5]] (trabajadores, masc. pl.). Os resultados são [[6]] (buenos, masc. pl.).',
         blanks: [
           { options: ['boa', 'bom', 'boas'], answer: 'boa', explain: 'Escola femenino → boa.' },
@@ -243,9 +243,9 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Una buena profesora',
-            prompt: 'Escribe: Zhanna es una muy buena profesora. → A Zhanna é uma ___ muito boa.',
-            answer: 'A Zhanna é uma professora muito boa.',
-            accepted: ['a zhanna é uma professora muito boa', 'a zhanna é uma boa professora'],
+            prompt: 'Escribe: Elena es una muy buena profesora. → A Elena é uma ___ muito boa.',
+            answer: 'A Elena é uma professora muito boa.',
+            accepted: ['a elena é uma professora muito boa', 'a elena é uma boa professora'],
             explain: 'Professora femenino → boa. Posición después del sustantivo más natural.',
           },
           {

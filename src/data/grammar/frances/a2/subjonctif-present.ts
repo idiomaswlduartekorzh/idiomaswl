@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa lo que dice el profesor usando subjonctif.',
         type: 'guidedText',
         scene: 'Le professeur parle à ses étudiants avant l\'examen.',
-        text: 'Il faut que vous [[0]] attentifs pendant l\'examen. Il est important que chacun [[1]] son propre travail. Je veux que vous [[0]] le temps de relire. Il faut aussi que vous [[2]] vos téléphones. Et je souhaite que tout le monde [[1]] de son mieux.',
+        text: 'Il faut que vous [[0]] attentifs pendant l\'examen. Il est important que chacun [[1]] son propre travail. Je veux que vous [[2]] le temps de relire. Il faut aussi que vous [[3]] vos téléphones. Et je souhaite que tout le monde [[4]] de son mieux.',
         blanks: [
           { options: ['soyez', 'êtes', 'seriez', 'serez'], answer: 'soyez', explain: '"que vous soyez / que vous preniez" — être: soyez. prendre: que vous preniez.' },
           { options: ['fasse', 'fait', 'ferait', 'fera'], answer: 'fasse', explain: '"que chacun fasse / que tout le monde fasse" — faire irregular: fasse (3ª sg).' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta del subjonctif présent.',
         type: 'freeText',
         scene: 'Complétez avec le subjonctif présent.',
-        text: 'Il faut que je ___ (avoir) le temps. / Je souhaite que tu ___ (être) heureux. / Il est nécessaire qu\'elle ___ (aller) à la réunion. / Il faut que nous ___ (faire) attention.',
+        text: 'Il faut que je [[0]] (avoir) le temps. / Je souhaite que tu [[1]] (être) heureux. / Il est nécessaire qu\'elle [[2]] (aller) à la réunion. / Il faut que nous [[3]] (faire) attention.',
         blanks: [
           { answer: 'aie', explain: '"que j\'aie" — avoir irregular: aie (je).' },
           { answer: 'sois', explain: '"que tu sois" — être irregular: sois (tu).' },

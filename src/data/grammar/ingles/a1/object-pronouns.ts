@@ -50,7 +50,17 @@ const topic: GrammarTopic = {
       heading: 'Qué son los object pronouns y por qué importan',
       paragraphs: [
         'En inglés los pronombres cambian de forma según su función en la frase. Cuando el pronombre realiza la acción (sujeto) usamos: I, you, he, she, it, we, they. Cuando el pronombre recibe la acción o sigue a una preposición (objeto) usamos: me, you, him, her, it, us, them. El español tiene un sistema similar: yo / me, él / lo-le, ella / la-le, nosotros / nos, ellos / los-les, pero las formas no coinciden exactamente.',
-        'Para un hispanohablante el desafío principal es recordar que después del verbo o de una preposición hay que cambiar la forma. Decimos I call him, no I call he. She helps me, no She helps I. With them, no With they. Este cambio es sistemático y no requiere memorizar género como en español.',
+        'Para un hispanohablante el desafío principal es recordar que después del verbo o de una preposición hay que cambiar la forma. Decimos I call him, no I call he. Esta es la tabla que empareja cada pronombre de sujeto con su forma de objeto:',
+      ],
+      table: [
+        ['Sujeto', 'Objeto', 'Ejemplo'],
+        ['I', 'me', 'She sees me.'],
+        ['you', 'you', 'I call you.'],
+        ['he', 'him', 'I know him.'],
+        ['she', 'her', 'We invited her.'],
+        ['it', 'it', 'I have it.'],
+        ['we', 'us', 'They helped us.'],
+        ['they', 'them', 'I met them.'],
       ],
     },
     {
@@ -63,8 +73,8 @@ const topic: GrammarTopic = {
     {
       heading: 'I vs me: el error más frecuente del hispanohablante',
       paragraphs: [
-        'Un error muy frecuente en todos los niveles es usar I donde debería ir me, especialmente con preposiciones. Between you and I parece elegante pero es incorrecto: debe ser Between you and me. Come with David and I también es incorrecto: Come with David and me.',
-        'La regla práctica: si puedes eliminar la otra persona de la frase y el pronombre queda en posición de objeto, debe ser me. Come with me (correcto) → Come with David and me (correcto). También: I suena bien como sujeto pero extraño después de una preposición: With I suena inmediatamente incorrecto.',
+        'Un error muy frecuente en todos los niveles es usar I donde debería ir me, especialmente con preposiciones. Between you and I parece elegante pero es incorrecto: debe ser Between you and me. Come with Iván and I también es incorrecto: Come with Iván and me.',
+        'La regla práctica: si puedes eliminar la otra persona de la frase y el pronombre queda en posición de objeto, debe ser me. Come with me (correcto) → Come with Iván and me (correcto). También: I suena bien como sujeto pero extraño después de una preposición: With I suena inmediatamente incorrecto.',
       ],
     },
     {
@@ -83,6 +93,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'I see she every day.', 'Correcto', 'I see her every day.'],
         ['Incorrecto', 'Can you help we?', 'Correcto', 'Can you help us?'],
         ['Incorrecto', 'This letter is for he.', 'Correcto', 'This letter is for him.'],
+      ],
+    },
+    {
+      heading: '¿Cuáles son los pronombres de objeto en inglés?',
+      paragraphs: [
+        'Son: me, you, him, her, it, us, them. Se usan cuando el pronombre recibe la acción o va después de una preposición: "Call me", "I saw him", "with them". Cada uno corresponde a un pronombre de sujeto (I→me, he→him, they→them).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "I" y "me"?',
+      paragraphs: [
+        '"I" es sujeto (hace la acción): "I love this song". "me" es objeto (la recibe) o va tras preposición: "She loves me", "with me". El error típico es "between you and I" → lo correcto es "between you and me", porque va tras preposición.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "him" y cuándo "her"?',
+      paragraphs: [
+        '"him" es el objeto de "he" (a él): "I called him". "her" es el objeto de "she" (a ella): "I called her". Se elige según el género de la persona que recibe la acción, no según el objeto poseído.',
       ],
     },
   ],
@@ -113,10 +141,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablando del profesor',
-            lines: [['Ana', 'Professor David is great. I really like ___.']],
+            lines: [['Ana', 'Professor Iván is great. I really like ___.']],
             options: ['he', 'him', 'his', 'her'],
             answer: 'him',
-            explain: 'David es masculino y recibe el "like": him.',
+            explain: 'Iván es masculino y recibe el "like": him.',
           },
           {
             scene: 'Referencia a una compañera',
@@ -134,7 +162,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Grupo externo',
-            lines: [['David', 'Ana and Marco invited us to their party. Do you know ___?']],
+            lines: [['Iván', 'Ana and Marco invited us to their party. Do you know ___?']],
             options: ['they', 'their', 'them', 'those'],
             answer: 'them',
             explain: 'They (Ana y Marco) en posición de objeto: them.',
@@ -171,7 +199,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Hablando de dos personas',
-            lines: [['Ana', 'Do you know Carlos and Lina?'], ['David', 'Yes, I know [[0]]. I see [[1]] every day at school.']],
+            lines: [['Ana', 'Do you know Carlos and Lina?'], ['Iván', 'Yes, I know [[0]]. I see [[1]] every day at school.']],
             blanks: [
               { options: ['they', 'them', 'their'], answer: 'them', explain: 'Carlos y Lina reciben el "know": them.' },
               { options: ['they', 'them', 'their'], answer: 'them', explain: 'Siguen siendo objeto del "see": them.' },
@@ -267,10 +295,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Referencia a una mujer',
-            prompt: 'Rewrite: Zhanna is the director. I respect Zhanna a lot.',
-            answer: 'Zhanna is the director. I respect her a lot.',
-            accepted: ['zhanna is the director i respect her a lot', 'zhanna is the director. i respect her a lot.'],
-            explain: 'Zhanna (femenina) → her.',
+            prompt: 'Rewrite: Emma is the director. I respect Emma a lot.',
+            answer: 'Emma is the director. I respect her a lot.',
+            accepted: ['emma is the director i respect her a lot', 'emma is the director. i respect her a lot.'],
+            explain: 'Emma (femenina) → her.',
           },
         ],
       },

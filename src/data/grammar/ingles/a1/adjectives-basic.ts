@@ -71,6 +71,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'A good teachers.', 'Correcto', 'Good teachers. (sin artículo en plural genérico)'],
       ],
     },
+    {
+      heading: '¿Dónde va el adjetivo en inglés?',
+      paragraphs: [
+        'Antes del sustantivo, al revés que el español: "a red car" (un coche rojo), "a big house" (una casa grande). También puede ir después del verbo to be: "The car is red". Nunca se pone detrás del sustantivo como en español ("a car red" es incorrecto).',
+      ],
+    },
+    {
+      heading: '¿Los adjetivos en inglés cambian por género o número?',
+      paragraphs: [
+        'No. El adjetivo inglés es invariable: no cambia por género ni por número. "a tall boy", "a tall girl", "tall boys", "tall girls" — siempre "tall". Es una gran ventaja frente al español, que sí concuerda (alto/alta/altos/altas).',
+      ],
+    },
+    {
+      heading: '¿Cómo se ordenan varios adjetivos en inglés?',
+      paragraphs: [
+        'El orden habitual es: opinión → tamaño → edad → color → origen → material + sustantivo. Por ejemplo "a nice big old brown wooden table". En A1 basta con recordar que la opinión va primero y el color cerca del sustantivo: "a beautiful red dress".',
+      ],
+    },
   ],
   visual: {
     mode: 'adjective-position',
@@ -92,7 +110,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Describiendo la academia',
-            lines: [['David', 'WeLearn is a ___ school. Our classes are very good.']],
+            lines: [['Gael', 'WeLearn is a ___ school. Our classes are very good.']],
             options: ['good', 'goods', 'goode', 'biens'],
             answer: 'good',
             explain: 'Los adjetivos en inglés son invariables: a good school.',

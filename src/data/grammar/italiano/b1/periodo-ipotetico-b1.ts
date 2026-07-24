@@ -48,8 +48,13 @@ const topic: GrammarTopic = {
     {
       heading: '¿Qué es el periodo ipotetico en italiano?',
       paragraphs: [
-        'El periodo ipotetico es la estructura que en italiano expresa condiciones y sus consecuencias. Tiene dos partes: la prótasis (la cláusula con "se") que introduce la condición, y la apódosis (la cláusula principal) que expresa la consecuencia. En italiano hay tres tipos principales según el grado de realidad o posibilidad de la condición.',
-        'A diferencia del español, en italiano NUNCA se usa el condizionale después de "se" condicional. Esta es la regla más importante: "Se avrei..." ❌ → siempre "Se avessi..." ✓.',
+        'El periodo ipotetico expresa una condición ("se…") y su consecuencia. Hay tres tipos según el grado de realidad, cada uno con una combinación fija de tiempos. La regla de oro: NUNCA se usa el condizionale después de "se" ("Se avrei…" ❌ → "Se avessi…" ✓). Esta tabla resume los tres tipos:',
+      ],
+      table: [
+        ['Tipo', 'Estructura (se… → …)', 'Ejemplo'],
+        ['1. Realtà (real)', 'se + presente → presente/futuro', 'Se studi, impari.'],
+        ['2. Possibilità (hipotético)', 'se + cong. imperfetto → condizionale', 'Se avessi tempo, verrei.'],
+        ['3. Impossibilità (irreal pasado)', 'se + cong. trapassato → condiz. passato', 'Se avessi studiato, avrei superato.'],
       ],
     },
     {
@@ -66,11 +71,13 @@ const topic: GrammarTopic = {
         'El congiuntivo imperfetto de los verbos regulares: -are → -assi, -assi, -asse, -assimo, -aste, -assero (parlare → parlassi); -ere → -essi (scrivere → scrivessi); -ire → -issi (dormire → dormissi).',
       ],
       table: [
-        ['Verbo', 'Yo (io)', 'Tú (tu)', 'Él/Ella', 'Nosotros', 'Ellos'],
-        ['essere', 'fossi', 'fossi', 'fosse', 'fossimo', 'fossero'],
-        ['avere', 'avessi', 'avessi', 'avesse', 'avessimo', 'avessero'],
-        ['parlare', 'parlassi', 'parlassi', 'parlasse', 'parlassimo', 'parlassero'],
-        ['potere', 'potessi', 'potessi', 'potesse', 'potessimo', 'potessero'],
+        ['Persona', 'essere', 'avere', 'parlare'],
+        ['io', 'fossi', 'avessi', 'parlassi'],
+        ['tu', 'fossi', 'avessi', 'parlassi'],
+        ['lui/lei', 'fosse', 'avesse', 'parlasse'],
+        ['noi', 'fossimo', 'avessimo', 'parlassimo'],
+        ['voi', 'foste', 'aveste', 'parlaste'],
+        ['loro', 'fossero', 'avessero', 'parlassero'],
       ],
     },
     {
@@ -78,6 +85,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'Se usa para condiciones imposibles porque se refieren al pasado. Estructura: "Se + congiuntivo trapassato + condizionale passato". El congiuntivo trapassato = avessi/fossi + participio passato. Ejemplos: "Se avessi studiato di più, avrei superato l\'esame" (Si hubiera estudiado más, habría aprobado el examen). "Se fosse arrivato in tempo, avremmo potuto parlare" (Si hubiera llegado a tiempo, habríamos podido hablar).',
         'Este tipo es equivalente al español "si hubiera... habría...". Se usa para hablar de situaciones del pasado que no ocurrieron y reflexionar sobre sus consecuencias hipotéticas.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los tres tipos de periodo ipotetico en italiano?',
+      paragraphs: [
+        'Tipo 1 (realidad): se + presente → presente/futuro ("Se piove, resto a casa"). Tipo 2 (posibilidad): se + congiuntivo imperfetto → condizionale presente ("Se avessi tempo, verrei"). Tipo 3 (imposibilidad, pasado): se + congiuntivo trapassato → condizionale passato ("Se avessi studiato, avrei superato").',
+      ],
+    },
+    {
+      heading: '¿Por qué no se usa el condicional después de "se" en italiano?',
+      paragraphs: [
+        'Porque es la norma del italiano: tras "se" condicional va el indicativo (tipo 1) o el congiuntivo (tipos 2 y 3), nunca el condizionale. "Se avrei tempo" ❌ → "Se avessi tempo" ✓. El condizionale va en la otra cláusula (la consecuencia): "Se avessi tempo, verrei".',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "si tuviera… haría" y "si hubiera… habría" en italiano?',
+      paragraphs: [
+        '"Si tuviera… haría" = tipo 2: "Se avessi… farei" ("Se avessi soldi, comprerei una casa"). "Si hubiera… habría" = tipo 3: "Se avessi avuto… avrei fatto" ("Se avessi avuto soldi, avrei comprato una casa"). El tipo 2 mira al presente/futuro; el tipo 3, al pasado.',
       ],
     },
   ],

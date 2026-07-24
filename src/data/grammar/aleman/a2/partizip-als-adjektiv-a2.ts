@@ -187,7 +187,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el participio correcto con su terminación.',
         type: 'freeText',
         scene: 'Describiendo objetos y personas en casa.',
-        text: 'Ich suche das ___ Buch. (kaufen, P.II) / Siehst du das ___ Baby? (schlafen, P.I) / Der ___ Brief liegt hier. (schreiben, P.II) / Die ___ Kinder spielen draußen. (lachen, P.I) / Das ___ Auto steht in der Garage. (reparieren, P.II)',
+        text: 'Ich suche das [[0]] Buch. (kaufen, P.II) / Siehst du das [[1]] Baby? (schlafen, P.I) / Der [[2]] Brief liegt hier. (schreiben, P.II) / Die [[3]] Kinder spielen draußen. (lachen, P.I) / Das [[4]] Auto steht in der Garage. (reparieren, P.II)',
         blanks: [
           { answer: 'gekaufte', explain: 'kaufen → gekauft + -e (neutro Nom.).' },
           { answer: 'schlafende', explain: 'schlafen → schlafend + -e (neutro Nom.).' },

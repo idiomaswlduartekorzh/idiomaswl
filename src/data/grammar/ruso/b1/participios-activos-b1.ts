@@ -119,7 +119,7 @@ const topic: GrammarTopic = {
           {
             scene: 'En la biblioteca',
             lines: [['', 'Студент, ___ книгу, — мой сосед. (El estudiante que lee el libro es mi vecino.)']],
-            options: ['читающий', 'читавший', 'читавший', 'прочитавший'],
+            options: ['читающий', 'читавший', 'прочитавший'],
             answer: 'читающий',
             explain: 'Acción presente/simultánea con НСВ → participio activo presente: читающий (-ющий de 1ª conj.).',
           },

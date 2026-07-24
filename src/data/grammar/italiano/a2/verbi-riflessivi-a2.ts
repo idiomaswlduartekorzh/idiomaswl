@@ -50,17 +50,51 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los verbos reflexivos en italiano: la rutina diaria',
+      heading: 'Los verbos reflexivos en presente: pronombre + verbo',
       paragraphs: [
-        'Los verbos reflexivos (verbi riflessivi) describen acciones que el sujeto hace sobre sí mismo: lavarsi (lavarse), alzarsi (levantarse), vestirsi (vestirse). Se identifican por el sufijo -si en el infinitivo y por los pronombres reflexivos que los acompañan.',
-        'En el presente, el pronombre reflexivo siempre va antes del verbo conjugado: mi lavo, ti lavi, si lava, ci laviamo, vi lavate, si lavano. En el infinitivo, se une al final: voglio lavarmi, devo alzarmi.',
+        'Los verbos reflexivos (verbi riflessivi) describen acciones que el sujeto hace sobre sí mismo: lavarsi (lavarse), alzarsi (levantarse), vestirsi (vestirse). Se reconocen por el -si del infinitivo. En presente, el pronombre reflexivo va SIEMPRE antes del verbo conjugado y cambia con la persona:',
+      ],
+      table: [
+        ['Persona', 'Pronombre', 'lavarsi (presente)'],
+        ['io', 'mi', 'mi lavo'],
+        ['tu', 'ti', 'ti lavi'],
+        ['lui/lei', 'si', 'si lava'],
+        ['noi', 'ci', 'ci laviamo'],
+        ['voi', 'vi', 'vi lavate'],
+        ['loro', 'si', 'si lavano'],
       ],
     },
     {
       heading: 'Passato prossimo de verbos reflexivos: siempre con essere',
       paragraphs: [
-        'Todos los verbos reflexivos forman el passato prossimo con essere. Esto significa que el participio tiene que concordar en género y número con el sujeto: mi sono alzato (él), mi sono alzata (ella), ci siamo alzati (ellos masc./mixto), ci siamo alzate (ellas).',
-        'Los errores más comunes son usar avere (ho alzato ✗) y olvidar la concordancia del participio. Recuerda: essere + participio variable es la fórmula de todos los reflexivos.',
+        'TODOS los reflexivos forman el passato prossimo con essere, así que el participio concuerda en género y número con el sujeto. El pronombre reflexivo va delante del auxiliar. El error típico es usar avere ("ho alzato" ✗) u olvidar la concordancia:',
+      ],
+      table: [
+        ['Persona', 'alzarsi (passato prossimo)'],
+        ['io', 'mi sono alzato/a'],
+        ['tu', 'ti sei alzato/a'],
+        ['lui/lei', 'si è alzato/a'],
+        ['noi', 'ci siamo alzati/e'],
+        ['voi', 'vi siete alzati/e'],
+        ['loro', 'si sono alzati/e'],
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan los verbos reflexivos en italiano?',
+      paragraphs: [
+        'Con el pronombre reflexivo (mi, ti, si, ci, vi, si) delante del verbo conjugado: mi lavo, ti alzi, si veste, ci svegliamo. Con infinitivo, el pronombre se pega al final y concuerda: "voglio lavarmi", "devo alzarmi".',
+      ],
+    },
+    {
+      heading: '¿Qué auxiliar usan los verbos reflexivos en el passato prossimo?',
+      paragraphs: [
+        'Siempre essere, nunca avere. Por eso el participio concuerda con el sujeto: "Maria si è svegliata", "i bambini si sono vestiti". El pronombre reflexivo va antes del auxiliar: "mi sono alzato", no "sono mi alzato".',
+      ],
+    },
+    {
+      heading: '¿Dónde va el pronombre reflexivo en italiano?',
+      paragraphs: [
+        'Antes del verbo conjugado (mi sveglio) y antes del auxiliar en los tiempos compuestos (mi sono svegliato). Con infinitivo, imperativo y gerundio se une al final del verbo: lavarmi, alzati!, lavandomi.',
       ],
     },
   ],
@@ -98,7 +132,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Marco',
-            lines: [['David', 'Marco ___ sempre tardi il weekend. (alzarsi)']],
+            lines: [['Nico', 'Marco ___ sempre tardi il weekend. (alzarsi)']],
             options: ['si alza', 'si alzano', 'mi alzo', 'ti alzi'],
             answer: 'si alza',
             explain: 'Marco (lui) → si alza. Tercera persona singular.',
@@ -140,7 +174,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Vosotros',
-            lines: [['David', 'A che ora ___ la mattina? (alzarsi — voi)']],
+            lines: [['Nico', 'A che ora ___ la mattina? (alzarsi — voi)']],
             options: ['vi alzate', 'si alzano', 'ci alziamo', 'vi alzano'],
             answer: 'vi alzate',
             explain: 'Voi → vi alzate.',
@@ -180,7 +214,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tú ayer',
-            lines: [['David', '— A che ora [[0]] sei [[1]] ieri? (alzarsi — tu, masc.)']],
+            lines: [['Nico', '— A che ora [[0]] sei [[1]] ieri? (alzarsi — tu, masc.)']],
             blanks: [
               { options: ['ti', 'mi', 'si', 'vi'], answer: 'ti', explain: 'Segunda persona (tu) → ti.' },
               { options: ['alzato', 'alzata', 'alzati', 'alzate'], answer: 'alzato', explain: 'Sujeto masculino singular → alzato.' },

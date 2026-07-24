@@ -78,12 +78,14 @@ Status: canonical planning map
 | --- | --- |
 | `/practica/ielts/academic/writing/task1/introduccion` | live |
 | `/practica/ielts/academic/writing/task1/overview` | live |
+| `/practica/ielts/academic/writing/task1/body-1` | live |
+| `/practica/ielts/academic/writing/task1/body-2` | live |
 | `/practica/ielts/academic/writing/task1/tendencias` | live |
 | `/practica/ielts/academic/writing/task1/comparaciones` | live |
 | `/practica/ielts/academic/writing/task1/procesos` | live |
 | `/practica/ielts/academic/writing/task1/mapas` | live |
-| `/practica/ielts/academic/writing/task1/vocabulario` | live |
-| `/practica/ielts/academic/writing/task1/tarea-completa` | live |
+| `/practica/ielts/academic/writing/task1/vocabulario` | live — visual-specific data vocabulary and cohesion engine |
+| `/practica/ielts/academic/writing/task1/tarea-completa` | live — fully paired timed visual tasks and final review |
 | `/practica/ielts/academic/writing/task1/graficos-lineales` | live |
 | `/practica/ielts/academic/writing/task1/graficos-de-barras` | live |
 | `/practica/ielts/academic/writing/task1/pie-charts` | live |

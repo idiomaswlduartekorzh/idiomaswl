@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta del verbo prefijado.',
         type: 'freeText',
         scene: 'Напишите правильный глагол.',
-        text: 'Студенты ___ в аудиторию. (entraron, perfectivo) / ___ , пожалуйста ! (Salgan, imperativo) / Мама уже ___. (se fue, perfectivo) / Он ___ ко мне каждый вторник. (pasa a verme, imperfectivo, hábito)',
+        text: 'Студенты [[0]] в аудиторию. (entraron, perfectivo) / [[1]] , пожалуйста ! (Salgan, imperativo) / Мама уже [[2]]. (se fue, perfectivo) / Он [[3]] ко мне каждый вторник. (pasa a verme, imperfectivo, hábito)',
         blanks: [
           { answer: 'вошли', explain: '"вошли" — войти, pasado plural perfectivo.' },
           { answer: 'Выйдите', explain: '"Выйдите" — imperativo pl. de выйти (Salgan/Salid).' },

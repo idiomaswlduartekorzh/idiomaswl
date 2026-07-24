@@ -53,15 +53,46 @@ const topic: GrammarTopic = {
     {
       heading: 'Stare per + infinito: inminencia en italiano',
       paragraphs: [
-        'La perífrasis stare per + infinito es la forma más natural en italiano para expresar que algo está a punto de ocurrir. Equivale exactamente a "estar a punto de" en español: sto per uscire = estoy a punto de salir, sta per piovere = está a punto de llover.',
-        'Se usa mucho en conversaciones cotidianas: Aspettami, sto per finire! (Espérame, ¡estoy a punto de terminar!). Il treno sta per partire (El tren está a punto de salir). Esta perífrasis expresa inminencia, es decir, que la acción ocurrirá en pocos segundos o minutos.',
+        'Stare per + infinito es la forma más natural de decir "estar a punto de": "Sto per uscire" (estoy a punto de salir), "Il treno sta per partire". Expresa inminencia (segundos o minutos). Conviene no confundirla con dos perífrasis vecinas — esta tabla las separa:',
+      ],
+      table: [
+        ['Perífrasis', 'Significado', 'Ejemplo'],
+        ['stare per + infinito', 'a punto de (inminente)', 'Sto per mangiare.'],
+        ['stare + gerundio', 'en curso (ahora mismo)', 'Sto mangiando.'],
+        ['appena + passato prossimo', 'acabar de (recién)', 'Ho appena mangiato.'],
       ],
     },
     {
-      heading: 'Stare per vs stare + gerundio',
+      heading: 'La conjugación de "stare per"',
       paragraphs: [
-        'Es importante distinguir dos perífrasis parecidas: stare + gerundio (acción en curso) y stare per + infinito (acción inminente). Sto mangiando significa "estoy comiendo" (la acción ya ocurre). Sto per mangiare significa "estoy a punto de comer" (la acción ocurrirá muy pronto).',
-        'En el pasado, stavo per + infinito expresa que estaba a punto de hacer algo: stavo per uscire quando ha telefonato Marco (estaba a punto de salir cuando llamó Marco). Aquí la acción pudo o no haberse completado según el contexto.',
+        'Solo se conjuga "stare" (irregular); "per + infinito" no cambia. En pasado, "stavo per + infinito" = estaba a punto de: "Stavo per uscire quando ha telefonato Marco". Esta es la forma presente:',
+      ],
+      table: [
+        ['Persona', 'stare per + infinito'],
+        ['io', 'sto per partire'],
+        ['tu', 'stai per partire'],
+        ['lui/lei', 'sta per partire'],
+        ['noi', 'stiamo per partire'],
+        ['voi', 'state per partire'],
+        ['loro', 'stanno per partire'],
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "estar a punto de" en italiano?',
+      paragraphs: [
+        'Con "stare per" + infinitivo: "Sto per partire" (estoy a punto de salir), "Sta per piovere" (está a punto de llover). Solo se conjuga stare; el infinitivo queda fijo. En pasado: "Stavo per chiamarti" (estaba a punto de llamarte).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "stare per" y "stare + gerundio"?',
+      paragraphs: [
+        '"stare per + infinito" = la acción va a ocurrir enseguida (Sto per mangiare = estoy a punto de comer). "stare + gerundio" = la acción ya está ocurriendo (Sto mangiando = estoy comiendo). Una es inminencia, la otra es acción en curso.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "acabar de" en italiano?',
+      paragraphs: [
+        'Con "appena" + passato prossimo: "Ho appena mangiato" (acabo de comer), "È appena uscito" (acaba de salir). No se usa "stare per" para eso: stare per es lo que va a pasar; "appena" + passato prossimo es lo que acaba de pasar.',
       ],
     },
   ],
@@ -105,10 +136,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La clase',
-            lines: [['David', 'Silenzio! ___ iniziare la lezione.']],
+            lines: [['Bruno', 'Silenzio! ___ iniziare la lezione.']],
             options: ['Stiamo per', 'Sto per', 'Stanno per', 'State per'],
             answer: 'Stiamo per',
-            explain: 'Noi (David y la clase) stiamo per: primera persona plural.',
+            explain: 'Noi (Bruno y la clase) stiamo per: primera persona plural.',
           },
           {
             scene: 'Los amigos',
@@ -155,8 +186,8 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'Zhanna',
-            lines: [['Zhanna', '[[0]] per [[1]] una riunione. Non disturbarmi!']],
+            scene: 'Clara',
+            lines: [['Clara', '[[0]] per [[1]] una riunione. Non disturbarmi!']],
             blanks: [
               { options: ['Sto', 'Stai', 'Sta', 'Stiamo'], answer: 'Sto', explain: 'Io sto per: primera persona singular.' },
               { options: ['iniziare', 'iniziando', 'iniziato'], answer: 'iniziare', explain: 'Stare per + infinito (nunca gerundio).' },
@@ -211,7 +242,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de stare per + infinito.',
         type: 'freeText',
         scene: 'La última hora antes de un examen importante',
-        text: 'L\'esame [[0]] iniziare tra cinque minuti. Gli studenti [[1]] entrare in aula. La professoressa Zhanna [[2]] distribuire i fogli. Io [[3]] svenire dalla tensione! Noi tutti [[4]] fare del nostro meglio.',
+        text: 'L\'esame [[0]] iniziare tra cinque minuti. Gli studenti [[1]] entrare in aula. La professoressa Clara [[2]] distribuire i fogli. Io [[3]] svenire dalla tensione! Noi tutti [[4]] fare del nostro meglio.',
         blanks: [
           { answer: 'sta per', explain: 'L\'esame (sing.) → sta per iniziare.' },
           { answer: 'stanno per', explain: 'Gli studenti (plur.) → stanno per entrare.' },

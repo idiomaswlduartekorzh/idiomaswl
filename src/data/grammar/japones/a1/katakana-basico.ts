@@ -24,7 +24,7 @@ const topic: GrammarTopic = {
     formula: 'Palabra extranjera → adaptar a sílabas japonesas → escribir en katakana + ー para vocales largas',
     decisions: [
       'Katakana para palabras extranjeras: コーヒー, テレビ, パン, レストラン',
-      'Katakana para nombres propios extranjeros: デービッド (David), カルロス (Carlos)',
+      'Katakana para nombres propios extranjeros: デービッド (Enzo), カルロス (Carlos)',
       'ー (línea larga) alarga la vocal anterior: コー = kō, ビー = bī',
       'L y R son el mismo símbolo en japonés: ら/ラ = ra (no hay distinción)',
       'Algunas consonantes no existen: el japonés adapta "sp" → ス+ぺ, "st" → ス+と',
@@ -83,7 +83,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Bebida caliente',
-            lines: [['David', 'コーヒー (kōhī) — ¿qué significa?']],
+            lines: [['Enzo', 'コーヒー (kōhī) — ¿qué significa?']],
             options: ['Café', 'Té', 'Agua', 'Leche'],
             answer: 'Café',
             explain: 'コーヒー (kōhī) = café. Préstamo del neerlandés "koffie". La ー alarga la vocal.',
@@ -125,14 +125,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Alojamiento',
-            lines: [['Zhanna', 'ホテル (hoteru) — ¿qué es?']],
+            lines: [['Iris', 'ホテル (hoteru) — ¿qué es?']],
             options: ['Hotel', 'Casa', 'Apartamento', 'Hostel'],
             answer: 'Hotel',
             explain: 'ホテル (hoteru) = hotel. La "l" final se convierte en ル (ru) por la fonología japonesa.',
           },
           {
             scene: 'Tecnología',
-            lines: [['David', 'スマートフォン (sumātofon) — ¿qué aparato es?']],
+            lines: [['Enzo', 'スマートフォン (sumātofon) — ¿qué aparato es?']],
             options: ['Smartphone', 'Laptop', 'Tablet', 'Televisor'],
             answer: 'Smartphone',
             explain: 'スマートフォン (sumātofon) = smartphone. スマホ es la abreviatura común.',

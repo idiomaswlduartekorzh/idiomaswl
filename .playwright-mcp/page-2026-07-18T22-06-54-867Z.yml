@@ -1,0 +1,250 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WeLearn Idiomas WeLearn" [ref=e4] [cursor=pointer]:
+        - /url: /home
+        - img "WeLearn" [ref=e6]
+        - generic [ref=e7]: Idiomas WeLearn
+      - navigation "Navegación principal" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /home
+        - link "Nivel Radar" [ref=e10] [cursor=pointer]:
+          - /url: /nivel-radar
+        - link "Inglés" [ref=e11] [cursor=pointer]:
+          - /url: /clases-de-ingles
+        - link "Coreano" [ref=e12] [cursor=pointer]:
+          - /url: /clases-de-coreano
+        - link "Idiomas" [ref=e13] [cursor=pointer]:
+          - /url: /clases-de-idiomas
+        - link "Exámenes" [ref=e14] [cursor=pointer]:
+          - /url: /examenes
+        - link "Práctica" [ref=e15] [cursor=pointer]:
+          - /url: /practica
+        - link "Blog" [ref=e16] [cursor=pointer]:
+          - /url: /blog
+        - link "Precios" [ref=e17] [cursor=pointer]:
+          - /url: /precios
+      - generic [ref=e18]:
+        - button "Cambiar a modo oscuro" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: ☀️
+        - link "Iniciar sesión" [ref=e268] [cursor=pointer]:
+          - /url: /login
+        - link "Empezar →" [ref=e269] [cursor=pointer]:
+          - /url: /clases-de-ingles
+  - main [ref=e23]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - link "← Task 1" [ref=e28] [cursor=pointer]:
+          - /url: /practica/ielts/academic/writing/task1
+        - generic [ref=e29]: Task 1 / Comparisons
+      - paragraph [ref=e30]: Sub-skill 4 · Comparisons
+      - heading "Compare visual data accurately" [level=1] [ref=e32]
+      - paragraph [ref=e33]: A strong IELTS Task 1 comparison names the categories, identifies the meaningful relationship and uses language that matches the size of the difference. Learn the decision first, then practise the sentence.
+      - region "Official format versus WeLearn strategy" [ref=e34]:
+        - article [ref=e35]:
+          - heading "Official format versus WeLearn strategy" [level=2] [ref=e36]
+          - paragraph [ref=e37]:
+            - strong [ref=e38]: "Official format:"
+            - text: IELTS Academic Writing Task 1 asks you to select and compare visual information. Comparison is a response skill, not a separate official task.
+          - paragraph [ref=e39]:
+            - strong [ref=e40]: "WeLearn strategy:"
+            - text: WeLearn isolates comparison decisions so you can practise contrast, approximation and grouping before writing complete paragraphs.
+        - article [ref=e41]:
+          - heading "Answer review" [level=2] [ref=e42]
+          - paragraph [ref=e43]:
+            - strong [ref=e44]: "Review focus:"
+            - text: Select and compare relevant evidence without turning your body paragraph into a data list.
+          - paragraph [ref=e45]:
+            - strong [ref=e46]: "Explained answer:"
+            - text: A precise comparison names both categories, keeps the unit accurate and avoids unsupported claims.
+          - generic [ref=e47]:
+            - link "IELTS Academic source" [ref=e48] [cursor=pointer]:
+              - /url: https://ielts.org/take-a-test/test-types/ielts-academic-test
+            - link "IELTS samples" [ref=e49] [cursor=pointer]:
+              - /url: https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test
+            - link "Writing rubric" [ref=e50] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/rubrica
+            - link "Task 1 hub" [ref=e51] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/task1
+            - link "Model answers Task 2" [ref=e52] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/task2/model-answers
+            - link "Compare General Training" [ref=e53] [cursor=pointer]:
+              - /url: /practica/ielts/general-training
+      - generic [ref=e54]:
+        - paragraph [ref=e55]: Visual types in Task 1
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - heading "Identify the visual before you practise the sub-skills." [level=2] [ref=e59]
+            - paragraph [ref=e60]: "Your response structure changes with the input: a line graph requires trends, a table requires grouping, a process requires sequencing and a map requires spatial transformation. This guide connects the official IELTS format with the WeLearn strategy."
+          - generic [ref=e61]:
+            - article [ref=e62]:
+              - heading "Line graph" [level=3] [ref=e63]
+              - paragraph [ref=e64]: Changes over time
+              - paragraph [ref=e65]:
+                - strong [ref=e66]: "Overview:"
+                - text: Look for the dominant trend, line crossing, peak, fall or convergence.
+              - paragraph [ref=e67]:
+                - strong [ref=e68]: "Body:"
+                - text: "Group the data by periods: starting point, rapid change, stabilisation or endpoint."
+              - paragraph [ref=e69]: rose steadily, peaked at, declined gradually, overtook, remained stable
+              - link "Practise this type →" [ref=e70] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/graficos-lineales
+            - article [ref=e71]:
+              - heading "Bar chart" [level=3] [ref=e72]
+              - paragraph [ref=e73]: Comparisons between categories
+              - paragraph [ref=e74]:
+                - strong [ref=e75]: "Overview:"
+                - text: Look for the highest and lowest categories and the clearest contrast.
+              - paragraph [ref=e76]:
+                - strong [ref=e77]: "Body:"
+                - text: Group similar categories instead of describing every bar separately.
+              - paragraph [ref=e78]: higher than, whereas, considerably lower, the largest proportion
+              - link "Practise this type →" [ref=e79] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/graficos-de-barras
+            - article [ref=e80]:
+              - heading "Pie charts" [level=3] [ref=e81]
+              - paragraph [ref=e82]: Parts of a whole
+              - paragraph [ref=e83]:
+                - strong [ref=e84]: "Overview:"
+                - text: Look for the dominant segment and how the distribution changes between two charts.
+              - paragraph [ref=e85]:
+                - strong [ref=e86]: "Body:"
+                - text: Compare large and small proportions; avoid listing every segment.
+              - paragraph [ref=e87]: accounted for, made up, represented, the smallest share
+              - link "Practise this type →" [ref=e88] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/pie-charts
+            - article [ref=e89]:
+              - heading "Table" [level=3] [ref=e90]
+              - paragraph [ref=e91]: Dense data in rows and columns
+              - paragraph [ref=e92]:
+                - strong [ref=e93]: "Overview:"
+                - text: Look for extremes, row or column patterns and categories that form groups.
+              - paragraph [ref=e94]:
+                - strong [ref=e95]: "Body:"
+                - text: Turn the table into two logical groups before you write.
+              - paragraph [ref=e96]: the figure for, respectively, by contrast, across all categories
+              - link "Practise this type →" [ref=e97] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/tablas
+            - article [ref=e98]:
+              - heading "Process diagram" [level=3] [ref=e99]
+              - paragraph [ref=e100]: Production stages or cycles
+              - paragraph [ref=e101]:
+                - strong [ref=e102]: "Overview:"
+                - text: Mention the number of stages and whether the process is linear or cyclical.
+              - paragraph [ref=e103]:
+                - strong [ref=e104]: "Body:"
+                - text: Use the passive voice and chronological order; do not invent reasons.
+              - paragraph [ref=e105]: is collected, is heated, after this, subsequently, finally
+              - link "Practise this type →" [ref=e106] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/procesos
+            - article [ref=e107]:
+              - heading "Map" [level=3] [ref=e108]
+              - paragraph [ref=e109]: Spatial changes over time
+              - paragraph [ref=e110]:
+                - strong [ref=e111]: "Overview:"
+                - text: "Look for the broad development: urbanisation, replacement, expansion or reduction."
+              - paragraph [ref=e112]:
+                - strong [ref=e113]: "Body:"
+                - text: Organise the description by zones or by the before-and-after comparison.
+              - paragraph [ref=e114]: was replaced by, was converted into, to the north of, adjacent to
+              - link "Practise this type →" [ref=e115] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/mapas
+            - article [ref=e116]:
+              - heading "Mixed chart" [level=3] [ref=e117]
+              - paragraph [ref=e118]: Two connected visuals
+              - paragraph [ref=e119]:
+                - strong [ref=e120]: "Overview:"
+                - text: Find the relationship between the visuals instead of treating them as separate tasks.
+              - paragraph [ref=e121]:
+                - strong [ref=e122]: "Body:"
+                - text: Use one paragraph per visual or organise around a shared relationship, as appropriate.
+              - paragraph [ref=e123]: while, in relation to, this corresponded with, a similar pattern
+              - link "Practise this type →" [ref=e124] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/tarea-completa
+      - region [ref=e125]:
+        - paragraph [ref=e126]: Guided visual lab
+        - heading "What counts as a useful comparison?" [level=2] [ref=e128]
+        - paragraph [ref=e129]: Choose a visual type, then inspect five different comparison patterns before entering the exercise engine.
+        - tablist "Visual types" [ref=e130]:
+          - tab "Line graph" [selected] [ref=e131] [cursor=pointer]
+          - tab "Bar chart" [ref=e132] [cursor=pointer]
+          - tab "Pie chart" [ref=e133] [cursor=pointer]
+          - tab "Table" [ref=e134] [cursor=pointer]
+        - generic [ref=e135]:
+          - button "01 · Start versus end" [pressed] [ref=e136] [cursor=pointer]
+          - button "02 · Rate of change" [ref=e137] [cursor=pointer]
+          - button "03 · Crossover" [ref=e138] [cursor=pointer]
+          - button "04 · Convergence and divergence" [ref=e139] [cursor=pointer]
+          - button "05 · Stable ranking" [ref=e140] [cursor=pointer]
+        - generic [ref=e141]:
+          - img "Internet access in three regions, 2000-2020" [ref=e143]:
+            - generic [ref=e145]: 0%
+            - generic [ref=e147]: 25%
+            - generic [ref=e149]: 50%
+            - generic [ref=e151]: 75%
+            - generic [ref=e153]: 100%
+            - generic [ref=e155]: "2000"
+            - generic [ref=e156]: "2005"
+            - generic [ref=e157]: "2010"
+            - generic [ref=e158]: "2015"
+            - generic [ref=e159]: "2020"
+            - generic [ref=e181]: Region A
+            - generic [ref=e184]: Region B
+            - generic [ref=e187]: Region C
+          - generic [ref=e190]:
+            - paragraph [ref=e191]: Start versus end
+            - heading "Compare the meaningful extremes." [level=3] [ref=e192]
+            - paragraph [ref=e193]: "Ask what the reader needs to understand: ranking, movement, distance, composition or an exception. That decision determines the comparison sentence."
+      - region [ref=e194]:
+        - paragraph [ref=e195]: WeLearn progressive engine
+        - heading "Practise comparisons by level" [level=2] [ref=e197]
+        - paragraph [ref=e198]: Move from identifying a relationship to selecting an overview and editing a precise IELTS comparison. Correct options change position between exercises.
+        - generic [ref=e199]:
+          - button "Level 1 Identify the relationship" [active] [pressed] [ref=e200] [cursor=pointer]:
+            - strong [ref=e201]: Level 1
+            - generic [ref=e202]: Identify the relationship
+          - button "Level 2 Group and summarise" [ref=e203] [cursor=pointer]:
+            - strong [ref=e204]: Level 2
+            - generic [ref=e205]: Group and summarise
+          - button "Level 3 Write with precision" [ref=e206] [cursor=pointer]:
+            - strong [ref=e207]: Level 3
+            - generic [ref=e208]: Write with precision
+        - generic [ref=e209]:
+          - img "Household expenditure by category, 2024 (%)" [ref=e211]:
+            - generic [ref=e213]: 0%
+            - generic [ref=e215]: 10%
+            - generic [ref=e217]: 20%
+            - generic [ref=e219]: 30%
+            - generic [ref=e221]:
+              - generic [ref=e223]: 32%
+              - generic [ref=e224]: Housing
+            - generic [ref=e225]:
+              - generic [ref=e227]: 18%
+              - generic [ref=e228]: Food
+            - generic [ref=e229]:
+              - generic [ref=e231]: 16%
+              - generic [ref=e232]: Transport
+            - generic [ref=e233]:
+              - generic [ref=e235]: 21%
+              - generic [ref=e236]: Leisure
+            - generic [ref=e237]:
+              - generic [ref=e239]: 13%
+              - generic [ref=e240]: Health
+          - generic [ref=e241]:
+            - generic [ref=e242]:
+              - generic [ref=e243]: Level 1 · Match the comparison
+              - generic [ref=e244]: 1/2
+            - paragraph [ref=e245]: Which sentence accurately compares the two highest categories?
+            - generic [ref=e246]:
+              - button "Video courses were more popular than language apps, at 46% and 31% respectively." [ref=e247] [cursor=pointer]
+              - button "Language apps accounted for exactly half of all preferences." [ref=e248] [cursor=pointer]
+              - button "The chart shows how language apps increased between 2010 and 2020." [ref=e249] [cursor=pointer]
+              - button "Language apps were more popular than video courses, at 46% and 31% respectively." [ref=e250] [cursor=pointer]
+      - generic [ref=e251]:
+        - heading "Write your own comparison" [level=2] [ref=e252]
+        - paragraph [ref=e253]: After completing the guided levels, write one sentence using two categories, one comparison structure and one accurate approximation phrase.
+  - link "Contáctanos por WhatsApp" [ref=e254] [cursor=pointer]:
+    - /url: https://wa.me/573005004253?text=Hola%2C%20estaba%20practicando%20en%20WeLearn%20y%20quiero%20saber%20c%C3%B3mo%20continuar%20mi%20preparaci%C3%B3n.
+    - generic: Escríbenos
+  - button "Open Next.js Dev Tools" [ref=e264] [cursor=pointer]
+  - alert [ref=e270]

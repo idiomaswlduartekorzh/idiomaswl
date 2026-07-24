@@ -96,7 +96,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella no tiene tiempo',
-            lines: [['Sofia', 'A Zhanna ___ tempo hoje.']],
+            lines: [['Sofia', 'A Iris ___ tempo hoje.']],
             options: ['não tem', 'tem não', 'não têm', 'n\'tem'],
             answer: 'não tem',
             explain: 'Não tem: NÃO + tem (3ª sg de ter). No "tem não" en posición formal.',
@@ -117,7 +117,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Énfasis BP coloquial',
-            lines: [['David', '— Você sabe falar coreano? — ___, é muito difícil! (énfasis)']],
+            lines: [['Diego', '— Você sabe falar coreano? — ___, é muito difícil! (énfasis)']],
             options: ['Não sei não', 'Sei não', 'Não sei', 'Não não sei'],
             answer: 'Não sei não',
             explain: 'Doble negación BP: Não sei não. El "não" final añade énfasis en el habla coloquial de Brasil.',
@@ -131,7 +131,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No hablamos',
-            lines: [['Zhanna', 'Nós ___ inglês nesta aula. Só português! (falar)']],
+            lines: [['Iris', 'Nós ___ inglês nesta aula. Só português! (falar)']],
             options: ['não falamos', 'falamos não', 'não falam', 'não falemos'],
             answer: 'não falamos',
             explain: 'Não falamos: NÃO + falamos. Primera plural de falar.',
@@ -155,9 +155,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntas y negaciones',
             lines: [
-              ['Lina', 'Você [[0]] espanhol? (falar)'],
-              ['Carlos', 'Não, eu [[1]] muito bem ainda. (falar)'],
-            ],
+ ['Lina', 'Você [[0]] espanhol? (falar)'],
+ ['Carlos', 'Não, eu [[1]] muito bem ainda. (falar)'],
+ ],
             blanks: [
               { options: ['não fala', 'fala', 'não falam'], answer: 'não fala', explain: 'Você não fala: negación de fala (3ª sg).' },
               { options: ['não falo', 'falo', 'não fala'], answer: 'não falo', explain: 'Eu não falo: NÃO + falo.' },
@@ -165,7 +165,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sin tiempo y sin dinero',
-            lines: [['David', 'Eu [[0]] tempo e [[1]] dinheiro para isso agora. (ter / ter)']],
+            lines: [['Diego', 'Eu [[0]] tempo e [[1]] dinheiro para isso agora. (ter / ter)']],
             blanks: [
               { options: ['não tenho', 'tenho não', 'não tem'], answer: 'não tenho', explain: 'Eu não tenho: NÃO + tenho.' },
               { options: ['não tenho', 'tenho não', 'não tem'], answer: 'não tenho', explain: 'Eu não tenho: NÃO siempre delante.' },
@@ -182,9 +182,9 @@ const topic: GrammarTopic = {
           {
             scene: 'BP énfasis',
             lines: [
-              ['Ana', 'Você gosta de acordar cedo?'],
-              ['Marco', '[[0]] [[1]]! Prefiro tarde. (doble negación BP)'],
-            ],
+ ['Ana', 'Você gosta de acordar cedo?'],
+ ['Marco', '[[0]] [[1]]! Prefiro tarde. (doble negación BP)'],
+ ],
             blanks: [
               { options: ['Não', 'N\'', 'Sim'], answer: 'Não', explain: 'Não: primera negación estándar.' },
               { options: ['gosto não', 'gosto sim', 'gosto'], answer: 'gosto não', explain: 'gosto não: doble negación BP coloquial para énfasis.' },
@@ -216,8 +216,8 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe la negación correcta sin ayuda.',
         type: 'freeText',
-        scene: 'Zhanna describe lo que no hace',
-        text: 'Eu [[0]] (beber) álcool. A Zhanna [[1]] (falar) coreano ainda. Nós [[2]] (trabalhar) aos domingos. Os alunos [[3]] (usar) tradutores on-line. Você [[4]] (ter) dúvidas? [[5]] (assistir) TV — prefiro ler.',
+        scene: 'Iris describe lo que no hace',
+        text: 'Eu [[0]] (beber) álcool. A Iris [[1]] (falar) coreano ainda. Nós [[2]] (trabalhar) aos domingos. Os alunos [[3]] (usar) tradutores on-line. Você [[4]] (ter) dúvidas? [[5]] (assistir) TV — prefiro ler.',
         blanks: [
           { answer: 'não bebo', explain: 'Eu não bebo: NÃO + bebo.' },
           { answer: 'não fala', explain: 'Ela não fala: NÃO + fala.' },

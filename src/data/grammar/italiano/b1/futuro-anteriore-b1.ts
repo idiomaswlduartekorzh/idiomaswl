@@ -51,8 +51,16 @@ const topic: GrammarTopic = {
     {
       heading: '¿Qué es el futuro anteriore en italiano?',
       paragraphs: [
-        'El futuro anteriore (futuro perfecto) expresa una acción que habrá ocurrido antes de otro momento o acción en el futuro. Se forma con il futuro semplice degli ausiliari avere (avrò, avrai...) o essere (sarò, sarai...) más il participio passato del verbo principal.',
-        'La equivalencia en español es clara: "avrò mangiato" = "habré comido"; "sarò partito" = "habré salido". Este tiempo es especialmente común en estructuras temporales con "quando" y "appena".',
+        'El futuro anteriore (futuro perfecto) expresa una acción que habrá terminado antes de otro momento futuro. Se forma con el futuro semplice del auxiliar (avrò / sarò) + el participio pasado, con las mismas reglas de auxiliar y concordancia del passato prossimo. Equivale al español "habré + participio". Esta es la tabla:',
+      ],
+      table: [
+        ['Persona', 'con avere (finire)', 'con essere (partire)'],
+        ['io', 'avrò finito', 'sarò partito/a'],
+        ['tu', 'avrai finito', 'sarai partito/a'],
+        ['lui/lei', 'avrà finito', 'sarà partito/a'],
+        ['noi', 'avremo finito', 'saremo partiti/e'],
+        ['voi', 'avrete finito', 'sarete partiti/e'],
+        ['loro', 'avranno finito', 'saranno partiti/e'],
       ],
     },
     {
@@ -67,6 +75,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'La estructura más frecuente en el uso temporal: "Quando/Appena/Non appena + futuro anteriore + futuro semplice". Ejemplos: "Quando avrai letto il libro, potrai guardare il film" / "Appena sarò tornato, ti manderò un messaggio" / "Non appena avremo finito, partiremo".',
         'Nota importante: en el italiano coloquial, a menudo se sustituye el futuro anteriore por el presente o el futuro semplice: "Quando finisco, ti chiamo" (más informal). El futuro anteriore es más preciso y formal.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el futuro anteriore en italiano?',
+      paragraphs: [
+        'Con el futuro semplice del auxiliar (avrò, avrai, avrà… / sarò, sarai, sarà…) + el participio pasado: "avrò mangiato", "sarò partito". Se elige avere o essere con las reglas del passato prossimo, y con essere el participio concuerda: "sarà arrivata".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el futuro anteriore?',
+      paragraphs: [
+        'Para una acción que se habrá completado antes de otra futura, sobre todo con quando, appena, dopo che ("Quando avrò finito, usciremo"), y para conjeturas sobre el pasado ("Non risponde: sarà uscito" = no contesta, habrá salido).',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "habré hecho" en italiano?',
+      paragraphs: [
+        'Con el futuro anteriore: "avrò fatto" (habré hecho), "sarò andato" (habré ido), "avremo finito" (habremos terminado). Ejemplo: "Domani a quest\'ora avrò già finito l\'esame" (mañana a esta hora ya habré terminado el examen).',
       ],
     },
     {

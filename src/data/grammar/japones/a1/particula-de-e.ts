@@ -90,7 +90,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Voy hacia Japón',
-            lines: [['David', 'にほん___ いきます。(Voy hacia/a Japón.)']],
+            lines: [['Dario', 'にほん___ いきます。(Voy hacia/a Japón.)']],
             options: ['へ', 'で', 'を', 'が'],
             answer: 'へ',
             explain: 'Dirección/trayecto → へ. にほんへ いきます. (に también es posible para destino.)',
@@ -125,7 +125,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Como con palillos',
-            lines: [['Zhanna', 'はし___ たべます。(Como con palillos.)']],
+            lines: [['Vera', 'はし___ たべます。(Como con palillos.)']],
             options: ['で', 'を', 'に', 'が'],
             answer: 'で',
             explain: 'Instrumento → で. はしで たべます. (palillos = はし)',
@@ -148,7 +148,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Trayecto y acción',
-            lines: [['David', 'でんしゃ[[0]] がっこう[[1]] いきます。(Voy a la escuela en tren.)']],
+            lines: [['Dario', 'でんしゃ[[0]] がっこう[[1]] いきます。(Voy a la escuela en tren.)']],
             blanks: [
               { options: ['で', 'に', 'へ'], answer: 'で', explain: 'Medio: でんしゃで (en tren).' },
               { options: ['に', 'で', 'を'], answer: 'に', explain: 'Destino: がっこうに いきます.' },
@@ -204,7 +204,7 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe で, に o へ sin opciones.',
         type: 'freeText',
-        scene: 'El viaje de David a Japón',
+        scene: 'El viaje de Dario a Japón',
         text: 'ひこうき[[0]] にほん[[1]] いきます。とうきょう[[2]] ホテル[[3]] とまります。えいご[[4]] はなせます。レストラン[[5]] すし[[6]] たべます。',
         blanks: [
           { answer: 'で', explain: 'Medio de transporte: ひこうきで (en avión).' },

@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Resultado esperado',
             lines: [['', '이 약을 먹으면 금방 나___ 거예요.']],
-            options: ['을', '는', '는', '았을'],
+            options: ['을', '는', '았을'],
             answer: '을',
             explain: '나을 거예요: 낫다 (raíz 나-) + 을 거예요. Raíz irregular ㅅ: 낫 → 나. Predicción.',
           },

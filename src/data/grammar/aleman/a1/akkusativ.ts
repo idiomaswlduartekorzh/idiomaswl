@@ -115,8 +115,8 @@ const topic: GrammarTopic = {
             explain: '"Freundin" = femenino, acusativo → "eine Freundin". Femenino NO cambia: eine → eine.',
           },
           {
-            scene: 'David lee en el descanso',
-            lines: [['David', 'Ich lese ___ Buch. (das Buch, neut.)']],
+            scene: 'Dario lee en el descanso',
+            lines: [['Dario', 'Ich lese ___ Buch. (das Buch, neut.)']],
             options: ['ein', 'einen', 'eine', 'das'],
             answer: 'ein',
             explain: '"Buch" = neutro, acusativo → "ein Buch". Neutro NO cambia: ein → ein.',
@@ -129,8 +129,8 @@ const topic: GrammarTopic = {
             explain: '"Kaffee" = masculino, acusativo → "einen Kaffee". Der → den / ein → einen.',
           },
           {
-            scene: 'Zhanna pregunta al grupo',
-            lines: [['Zhanna', 'Habt ihr ___ Stift? (der Stift, masc., bolígrafo)']],
+            scene: 'Lía pregunta al grupo',
+            lines: [['Lía', 'Habt ihr ___ Stift? (der Stift, masc., bolígrafo)']],
             options: ['einen', 'ein', 'eine', 'der'],
             answer: 'einen',
             explain: '"Stift" = masculino, objeto directo de "haben" → "einen Stift".',

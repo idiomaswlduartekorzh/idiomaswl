@@ -76,6 +76,17 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
 
+  // Tree-shaking de barrels: importa solo lo usado de estas librerías pesadas
+  // en lugar del paquete completo. Reduce el JS sin usar en el bundle inicial.
+  experimental: {
+    optimizePackageImports: [
+      'framer-motion',
+      'lucide-react',
+      'recharts',
+      '@wavesurfer/react',
+    ],
+  },
+
   // Remove the X-Powered-By: Next.js response header (minor security improvement)
   poweredByHeader: false,
 

@@ -152,7 +152,7 @@ const topic: GrammarTopic = {
           {
             scene: 'La semana pasada',
             lines: [['', 'He ___ in London for three years.']],
-            options: ['lived', 'liveed', 'lived', 'livd'],
+            options: ['lived', 'liveed', 'livd'],
             answer: 'lived',
             explain: '"Live" termina en -e → solo añade -d: lived.',
           },

@@ -8,7 +8,7 @@ const topic: GrammarTopic = {
   level: 'A1',
   title: 'Verbo Essere en italiano A1 — Ser y Estar',
   shortTitle: 'Essere (ser/estar)',
-  metaTitle: 'Verbo essere italiano A1 — sono sei è siamo siete sono',
+  metaTitle: 'Verbo essere italiano A1 — conjugación (sono, sei, è) y usos: ser y estar',
   description:
     'El verbo essere es uno de los más irregulares e importantes del italiano. Equivale tanto a "ser" como a "estar" del español, con una diferencia clave: en italiano el contexto determina cuál de los dos verbos españoles corresponde, ya que essere los cubre a los dos.',
   lead: 'Essere = ser + estar. sono/sei/è/siamo/siete/sono. En italiano no existe separación entre "ser" y "estar" como en español — essere los hace a ambos.',
@@ -50,8 +50,31 @@ const topic: GrammarTopic = {
     {
       heading: 'Essere: el verbo fundamental del italiano',
       paragraphs: [
-        'Essere (ser/estar) es el verbo más usado del italiano. Su conjugación es completamente irregular: sono, sei, è, siamo, siete, sono. Para el hispanohablante la buena noticia es que no hay que elegir entre "ser" y "estar" — essere cubre los dos.',
-        'Essere se usa para: identidad (Sono Marco), nacionalidad (Sono italiano), profesión (Sono insegnante), origen (Sei di Napoli?), ubicación (Siamo in classe), estados físicos o anímicos (È stanco), hora (Sono le tre) y mucho más.',
+        'Essere (ser/estar) es el verbo más usado del italiano. Su conjugación es completamente irregular: sono, sei, è, siamo, siete, sono. Para el hispanohablante la buena noticia es que no hay que elegir entre "ser" y "estar" — essere cubre los dos. Además es el auxiliar de muchos tiempos compuestos (sono andato = he ido).',
+        'Estos son los usos que debes reconocer de un vistazo, cada uno con su ejemplo:',
+      ],
+      table: [
+        ['Uso', 'Ejemplo (italiano)', 'Español'],
+        ['Identidad', 'Sono Marco.', 'Soy Marco.'],
+        ['Nacionalidad / origen', 'Sei di Napoli?', '¿Eres de Nápoles?'],
+        ['Profesión', 'È insegnante.', 'Es profesor(a).'],
+        ['Ubicación / estado', 'Siamo in classe.', 'Estamos en clase.'],
+        ['Descripción', 'È stanco.', 'Está cansado.'],
+        ['Hora', 'Sono le tre.', 'Son las tres.'],
+      ],
+    },
+    {
+      heading: '¿Essere es "ser" o "estar"? La clave está en el contexto',
+      paragraphs: [
+        'La duda número uno del hispanohablante: como en español separamos "ser" y "estar", uno espera dos verbos en italiano. Pero essere hace los dos trabajos; es el contexto —no el verbo— el que decide la traducción. Observa el mismo verbo traducido de las dos formas:',
+      ],
+      table: [
+        ['Frase italiana', 'Traducción', '¿Ser o estar?'],
+        ['Sono italiano.', 'Soy italiano.', 'ser (identidad)'],
+        ['Sono felice.', 'Estoy feliz.', 'estar (estado)'],
+        ['È il mio amico.', 'Es mi amigo.', 'ser (relación)'],
+        ['È a casa.', 'Está en casa.', 'estar (lugar)'],
+        ['Siamo pronti.', 'Estamos listos.', 'estar (estado)'],
       ],
     },
     {
@@ -65,6 +88,24 @@ const topic: GrammarTopic = {
       heading: 'Professione sin artículo indeterminado',
       paragraphs: [
         'Una regla que sorprende al hispanohablante: en italiano, al indicar profesión con essere, no se usa el artículo indeterminado. Donde el español dice "Soy un médico", el italiano dice "Sono medico" (sin "un"). La excepción es cuando la profesión va modificada: "Sono un bravo medico" (Soy un buen médico).',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga el verbo essere en presente?',
+      paragraphs: [
+        'Essere en presente indicativo: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono. Es completamente irregular, así que se memoriza de golpe. Fíjate en que "io sono" y "loro sono" comparten forma, y en que la tercera persona "è" lleva acento grave para no confundirse con "e" (y).',
+      ],
+    },
+    {
+      heading: '¿Essere significa "ser" o "estar"?',
+      paragraphs: [
+        'Las dos cosas. El italiano no distingue "ser" y "estar" como el español: essere cubre identidad y estado por igual. "Sono stanco" es "estoy cansado" y "Sono italiano" es "soy italiano" — el mismo verbo. La traducción al español depende del contexto, no de una elección de verbo en italiano.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre essere y stare?',
+      paragraphs: [
+        'Essere es el verbo general de ser/estar. Stare se reserva para salud y estados de ánimo ("Come stai?" = ¿cómo estás?), para la forma progresiva ("sto studiando" = estoy estudiando) y para expresiones fijas de permanencia. Regla práctica: para preguntar cómo está alguien usa stare, no essere ("Come stai?", no "Come sei?").',
       ],
     },
   ],
@@ -113,14 +154,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Dónde estamos',
-            lines: [['David', 'Noi ___ in classe adesso.']],
+            lines: [['Hugo', 'Noi ___ in classe adesso.']],
             options: ['siamo', 'sono', 'siete', 'sei'],
             answer: 'siamo',
             explain: 'Noi siamo = nosotros estamos. Primera persona plural.',
           },
           {
             scene: 'Elogio al grupo',
-            lines: [['Zhanna', 'Voi ___ studenti eccellenti!']],
+            lines: [['Nora', 'Voi ___ studenti eccellenti!']],
             options: ['siete', 'sono', 'siamo', 'sei'],
             answer: 'siete',
             explain: 'Voi siete = vosotros sois. Segunda persona plural.',
@@ -158,9 +199,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conociendo a alguien',
             lines: [
-              ['Carlo', 'Io [[0]] Carlo. Tu [[1]] Sofia, vero?'],
-              ['Sofia', 'Sì, esatto!'],
-            ],
+ ['Carlo', 'Io [[0]] Carlo. Tu [[1]] Sofia, vero?'],
+ ['Sofia', 'Sì, esatto!'],
+ ],
             blanks: [
               { options: ['sono', 'sei', 'è'], answer: 'sono', explain: 'Io sono Carlo. Primera persona.' },
               { options: ['sei', 'sono', 'è'], answer: 'sei', explain: 'Tu sei Sofia. Segunda persona.' },
@@ -168,7 +209,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Describiendo la clase',
-            lines: [['David', 'La classe [[0]] bella. Gli studenti [[1]] molto bravi.']],
+            lines: [['Hugo', 'La classe [[0]] bella. Gli studenti [[1]] molto bravi.']],
             blanks: [
               { options: ['è', 'sono', 'siamo'], answer: 'è', explain: 'La classe è bella. Singular femenino → è.' },
               { options: ['sono', 'è', 'siamo'], answer: 'sono', explain: 'Gli studenti sono = ellos son. Plural.' },
@@ -199,13 +240,13 @@ const topic: GrammarTopic = {
         intro: 'Completa la presentación con la forma correcta de essere.',
         type: 'guidedText',
         scene: 'Presentación de la academia WeLearn Italia',
-        text: 'WeLearn [[0]] una scuola di lingue. I fondatori [[1]] David e Zhanna. David [[2]] poliglotta — lui [[3]] molto appassionato dell\'insegnamento. Zhanna [[4]] direttrice accademica. Noi [[5]] una squadra eccellente!',
+        text: 'WeLearn [[0]] una scuola di lingue. I fondatori [[1]] Hugo e Nora. Hugo [[2]] poliglotta — lui [[3]] molto appassionato dell\'insegnamento. Nora [[4]] direttrice accademica. Noi [[5]] una squadra eccellente!',
         blanks: [
           { options: ['è', 'sono', 'siamo'], answer: 'è', explain: 'WeLearn è una scuola. Singular → è.' },
-          { options: ['sono', 'è', 'siamo'], answer: 'sono', explain: 'I fondatori sono David e Zhanna. Plural → sono.' },
-          { options: ['è', 'sono', 'sei'], answer: 'è', explain: 'David è poliglotta. Singular masculino → è.' },
+          { options: ['sono', 'è', 'siamo'], answer: 'sono', explain: 'I fondatori sono Hugo e Nora. Plural → sono.' },
+          { options: ['è', 'sono', 'sei'], answer: 'è', explain: 'Hugo è poliglotta. Singular masculino → è.' },
           { options: ['è', 'sono', 'sei'], answer: 'è', explain: 'Lui è molto appassionato. Descripción con essere.' },
-          { options: ['è', 'sono', 'siamo'], answer: 'è', explain: 'Zhanna è direttrice. Professione sin artículo.' },
+          { options: ['è', 'sono', 'siamo'], answer: 'è', explain: 'Nora è direttrice. Professione sin artículo.' },
           { options: ['siamo', 'sono', 'è'], answer: 'siamo', explain: 'Noi siamo una squadra. Primera plural → siamo.' },
         ],
       },

@@ -586,7 +586,7 @@ export default function IntroduccionContent() {
             {/* Word count */}
             <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
               {[
-                { label: '30–45 palabras', desc: 'longitud ideal', icon: '📏', c: '#059669' },
+                { label: '30–45 words', desc: 'recommended study range', icon: '📏', c: '#059669' },
                 { label: '1–2 sentences', desc: 'no more', icon: '✍️', c: C },
                 { label: 'No trends', desc: 'save them for the overview', icon: '🚫', c: '#dc2626' },
                 { label: 'No figures', desc: 'or specific data', icon: '🔢', c: '#d97706' },
@@ -677,7 +677,7 @@ export default function IntroduccionContent() {
               {EXAMPLE_GROUPS.map((group) => (
                 <button key={group.id} type="button" role="tab" aria-selected={activeGroup === group.id} onClick={() => { setActiveGroup(group.id); setActiveEx(`${group.id}-0`); }} style={{ flex: '0 0 auto', minWidth: 126, padding: '0.7rem 0.85rem', borderRadius: 10, border: `1px solid ${activeGroup === group.id ? C : 'var(--line-soft)'}`, background: activeGroup === group.id ? `${C}10` : 'var(--bg)', color: activeGroup === group.id ? C : 'var(--muted)', cursor: 'pointer', textAlign: 'left' }}>
                   <span style={{ display: 'block', fontSize: '0.68rem', fontFamily: 'var(--mono)', fontWeight: 800, textTransform: 'uppercase' }}>{group.label}</span>
-                  <span style={{ display: 'block', marginTop: '0.2rem', fontSize: '0.72rem' }}>5 referencias</span>
+                  <span style={{ display: 'block', marginTop: '0.2rem', fontSize: '0.72rem' }}>5 guided references</span>
                 </button>
               ))}
             </div>
@@ -685,7 +685,7 @@ export default function IntroduccionContent() {
             {EXAMPLE_GROUPS.filter((group) => group.id === activeGroup).map((group) => (
               <div key={group.id} role="tabpanel" style={{ paddingTop: '1.25rem' }}>
                 <p style={{ margin: '0 0 1rem', color: 'var(--muted)', lineHeight: 1.6 }}>You selected <strong style={{ color: C }}>{group.label}</strong>. Choose a reference to study its visual and paraphrase with enough space to read both clearly.</p>
-                <div aria-label={`Referencias de ${group.label}`} style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', padding: '0.15rem 0.1rem 0.7rem', scrollbarWidth: 'thin' }}>
+                <div aria-label={`Guided references for ${group.label}`} style={{ display: 'flex', gap: '0.55rem', overflowX: 'auto', padding: '0.15rem 0.1rem 0.7rem', scrollbarWidth: 'thin' }}>
                   {group.examples.map((example, exampleIndex) => {
                     const exampleId = `${group.id}-${exampleIndex}`;
                     const isSelected = activeEx === exampleId;
@@ -705,7 +705,7 @@ export default function IntroduccionContent() {
                     <article style={{ marginTop: '0.65rem', borderRadius: 14, border: '1px solid var(--line-soft)', background: 'var(--bg)', overflow: 'hidden' }}>
                       <div style={{ padding: '0.8rem 1rem', background: `${C}08`, borderBottom: '1px solid var(--line-soft)', display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap' }}>
                         <strong style={{ color: C, fontSize: '0.9rem' }}>Example {String(exampleIndex + 1).padStart(2, '0')} · {example[0]}</strong>
-                        <span style={{ color: 'var(--muted)', fontSize: '0.72rem', fontFamily: 'var(--mono)' }}>Referencia {exampleIndex + 1} de 5</span>
+                        <span style={{ color: 'var(--muted)', fontSize: '0.72rem', fontFamily: 'var(--mono)' }}>Reference {exampleIndex + 1} of 5</span>
                       </div>
                       <div className="task1-intro-example-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.05fr) minmax(320px, 0.95fr)', gap: '1rem', padding: '1rem', alignItems: 'start' }}>
                         <div style={{ background: 'var(--bg-2)', borderRadius: 10, padding: '0.75rem', border: '1px solid var(--line-soft)', minWidth: 0 }}>
@@ -718,7 +718,7 @@ export default function IntroduccionContent() {
                             <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.55, fontStyle: 'italic', fontSize: '0.88rem' }}>{example[0]}</p>
                           </div>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: 'rgba(5,150,105,0.06)', border: '1px solid rgba(5,150,105,0.22)', marginBottom: '0.6rem' }}>
-                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Model A · Band 7+</p>
+                            <p style={{ fontSize: '0.61rem', fontWeight: 800, color: '#059669', fontFamily: 'var(--mono)', textTransform: 'uppercase', margin: '0 0 0.3rem' }}>Model A · precise paraphrase</p>
                             <p style={{ margin: 0, color: 'var(--ink)', lineHeight: 1.6, fontSize: '0.88rem' }}>{example[1]}</p>
                           </div>
                           <div style={{ padding: '0.8rem', borderRadius: 8, background: `${C}06`, border: `1px solid ${C}22` }}>

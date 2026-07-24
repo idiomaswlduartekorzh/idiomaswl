@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con el participio correctamente acordado.',
         type: 'guidedText',
         scene: 'Emma raconte sa journée d\'hier.',
-        text: 'Hier, je suis [[0]] (partir) de chez moi à 8h. Je suis [[1]] (arriver) à l\'université en avance. J\'ai [[2]] (voir) mes amies dans le couloir. La conférence que j\'ai [[3]] (écouter) était super intéressante. Après, nous nous sommes [[0]] (retrouver) au café.',
+        text: 'Hier, je suis [[0]] (partir) de chez moi à 8h. Je suis [[1]] (arriver) à l\'université en avance. J\'ai [[2]] (voir) mes amies dans le couloir. La conférence que j\'ai [[3]] (écouter) était super intéressante. Après, nous nous sommes [[4]] (retrouver) au café.',
         blanks: [
           { options: ['partie', 'parti', 'parties', 'partis'], answer: 'partie', explain: '"suis partie" — être + je (Emma = fém. sg) → partie (-e).' },
           { options: ['arrivée', 'arrivé', 'arrivées', 'arrivés'], answer: 'arrivée', explain: '"suis arrivée" — être + je (Emma = fém. sg) → arrivée (-e).' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el participio con el acuerdo correcto.',
         type: 'freeText',
         scene: 'Complétez avec la bonne forme du participe passé.',
-        text: 'Les filles sont ___ (partir) hier. / La maison qu\'ils ont ___ (acheter) est grande. / Nous avons ___ (manger) une excellente pizza. / Elle s\'est ___ (habiller) rapidement.',
+        text: 'Les filles sont [[0]] (partir) hier. / La maison qu\'ils ont [[1]] (acheter) est grande. / Nous avons [[2]] (manger) une excellente pizza. / Elle s\'est [[3]] (habiller) rapidement.',
         blanks: [
           { answer: 'parties', explain: '"sont parties" — être + les filles (fém. pl) → parties (-es).' },
           { answer: 'achetée', explain: '"ont achetée" — avoir + COD (qu\' = la maison, fém. sg) avant → achetée (-e).' },

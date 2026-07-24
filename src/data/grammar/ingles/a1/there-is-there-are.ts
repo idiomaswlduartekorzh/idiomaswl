@@ -81,6 +81,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'Is there chairs in the room?', 'Correcto', 'Are there chairs in the room?'],
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "there is" y "there are"?',
+      paragraphs: [
+        '"there is" con singular o incontable ("There is a book", "There is milk"); "there are" con plural ("There are three books"). Ambos equivalen a "hay". Se elige según el sustantivo que sigue, no según nada más. Contracción: "there\'s" (there is).',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "hay" en inglés?',
+      paragraphs: [
+        'Con "there is" (singular/incontable) o "there are" (plural): "There is a problem", "There are many people". El español usa una sola forma ("hay"); el inglés obliga a elegir según el número de lo que hay.',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas y negaciones con there is/are?',
+      paragraphs: [
+        'Pregunta: se invierte ("Is there a bank near here?", "Are there any questions?"). Negación: "There isn\'t / There aren\'t" ("There isn\'t any milk", "There aren\'t any seats"). En preguntas y negaciones suele aparecer "any".',
+      ],
+    },
   ],
   visual: {
     mode: 'existence-map',

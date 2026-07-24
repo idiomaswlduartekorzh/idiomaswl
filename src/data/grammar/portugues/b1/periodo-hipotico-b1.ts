@@ -133,7 +133,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Tipo 3: Irrealidad',
             lines: [['', 'Se eu tivesse chegado a tempo, ___ a reunião.']],
-            options: ['atendo', 'atenderia', 'teria atendido', 'atenderia'],
+            options: ['atendo', 'atenderia', 'teria atendido'],
             answer: 'teria atendido',
             explain: 'Irrealidad/pasado: condicional compuesto (teria atendido).',
           },

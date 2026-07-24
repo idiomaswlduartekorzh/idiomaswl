@@ -167,7 +167,7 @@ const topic: GrammarTopic = {
         intro: 'Completa un diálogo con -을/ㄹ 수 있다/없다.',
         type: 'guidedText',
         scene: 'Conversación sobre capacidades y posibilidades.',
-        text: '너는 한국어를 ___ 있어? 나는 조금 할 수 있는데 완벽하게 할 수는 없어. 내일 만날 ___ 있어? 글쎄, 내일은 시간이 많지 않아서 만날 ___ 없을 것 같아.',
+        text: '너는 한국어를 [[0]] 있어? 나는 조금 할 수 있는데 완벽하게 할 수는 없어. 내일 만날 [[1]] 있어? 글쎄, 내일은 시간이 많지 않아서 만날 [[2]] 없을 것 같아.',
         blanks: [
           { options: ['할 수', '하ㄹ 수', '할'], answer: '할 수', explain: '-을/ㄹ 수 있다 (capacidad).' },
           { options: ['만날 수', '만나ㄹ 수', '만나'], answer: '만날 수', explain: '-을/ㄹ 수 있다 (posibilidad).' },

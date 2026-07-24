@@ -128,7 +128,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El examen',
-            lines: [['David', 'Vous ___ réussi l\'examen? Félicitations!']],
+            lines: [['Tomás', 'Vous ___ réussi l\'examen? Félicitations!']],
             options: ['avez', 'avons', 'ont', 'as'],
             answer: 'avez',
             explain: '"Vous" → vous avez + participé passé.',
@@ -222,7 +222,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe los auxiliares y participios correctos sin ayuda de opciones.',
         type: 'freeText',
         scene: 'Pierre cuenta sus vacaciones a un amigo',
-        text: 'Pendant les vacances, j\'___ visité Paris. J\'___ vu la Tour Eiffel et le Louvre. Nous ___ mangé dans de bons restaurants. Mes amis ___ pris beaucoup de photos. Et toi, tu ___ voyagé cet été?',
+        text: 'Pendant les vacances, j\'[[0]] visité Paris. J\'[[1]] vu la Tour Eiffel et le Louvre. Nous [[2]] mangé dans de bons restaurants. Mes amis [[3]] pris beaucoup de photos. Et toi, tu [[4]] voyagé cet été?',
         blanks: [
           { answer: 'ai', accepted: ['ai'], explain: '"Je" → j\'ai visité.' },
           { answer: 'ai', accepted: ['ai'], explain: '"Je" → j\'ai vu. Vu = participio de voir.' },

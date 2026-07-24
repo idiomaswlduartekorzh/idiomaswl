@@ -58,8 +58,16 @@ const topic: GrammarTopic = {
     {
       heading: 'Formación del condizionale passato',
       paragraphs: [
-        'La fórmula es: condizionale di avere/essere + participio passato. Para elegir el auxiliar, aplica la misma regla que para el passato prossimo: verbos transitivos → avere; verbos de movimiento, cambio de estado y reflexivos → essere.',
-        'Ejemplos con avere: avrei mangiato, avresti dormito, avrebbe lavorato, avremmo visto, avreste capito, avrebbero finito. Ejemplos con essere: sarei andato/a, saresti venuto/a, sarebbe partito/a, saremmo tornati/e, sareste usciti/e, sarebbero arrivati/e.',
+        'La fórmula es: condizionale presente de avere/essere + participio pasado. La elección del auxiliar y la concordancia siguen las mismas reglas del passato prossimo: transitivos → avere; movimiento, cambio de estado y reflexivos → essere (y el participio concuerda con el sujeto). Esta es la tabla:',
+      ],
+      table: [
+        ['Persona', 'con avere (mangiare)', 'con essere (andare)'],
+        ['io', 'avrei mangiato', 'sarei andato/a'],
+        ['tu', 'avresti mangiato', 'saresti andato/a'],
+        ['lui/lei', 'avrebbe mangiato', 'sarebbe andato/a'],
+        ['noi', 'avremmo mangiato', 'saremmo andati/e'],
+        ['voi', 'avreste mangiato', 'sareste andati/e'],
+        ['loro', 'avrebbero mangiato', 'sarebbero andati/e'],
       ],
     },
     {
@@ -67,6 +75,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'Uso 1 — Hipótesis pasadas: aparece en la cláusula principal del período hipotético tipo 3 (condición imposible en el pasado): "Se avessi studiato di più, avrei superato l\'esame" (Si hubiera estudiado más, habría aprobado el examen). La condición va con il congiuntivo trapassato.',
         'Uso 2 — Arrepentimientos y deseos: "Avrei voluto studiare medicina" (Habría querido estudiar medicina). "Sarei rimasto a casa" (Me habría quedado en casa). Uso 3 — Futuro en el pasado (discorso indiretto): "Ti chiamerò" → ha detto che mi avrebbe chiamato (Dijo que me llamaría).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el condizionale passato en italiano?',
+      paragraphs: [
+        'Con el condizionale presente del auxiliar (avrei/sarei…) + el participio pasado: "avrei parlato", "sarei andato". Se elige avere o essere con las reglas del passato prossimo, y con essere el participio concuerda con el sujeto: "Maria sarebbe partita".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el condizionale passato?',
+      paragraphs: [
+        'Para hipótesis pasadas ("Se avessi studiato, avrei superato l\'esame"), para deseos o arrepentimientos no cumplidos ("Avrei voluto viaggiare di più") y como futuro del pasado en el discurso indirecto ("Ha detto che sarebbe arrivato tardi").',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "habría hecho" en italiano?',
+      paragraphs: [
+        'Con el condizionale passato: "avrei fatto" (habría hecho), "sarei andato" (habría ido), "avremmo voluto" (habríamos querido). Equivale al español "habría/hubiera + participio": "Avrei comprato la casa se avessi avuto i soldi".',
       ],
     },
     {
@@ -157,7 +183,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Hipótesis del pasado',
             lines: [['', 'Avremmo ___ prima se il treno non fosse stato in ritardo.']],
-            options: ['arrivato', 'arrivati', 'arrivare', 'arrivato'],
+            options: ['arrivato', 'arrivati', 'arrivare'],
             answer: 'arrivato',
             explain: 'Con essere en condicional plural (avremmo — pero aquí con avere: "arrivare" → avremmo arrivato, sin essere).',
           },

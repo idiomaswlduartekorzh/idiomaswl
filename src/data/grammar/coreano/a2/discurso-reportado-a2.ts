@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: transforma la oración directa en indirecta.',
         type: 'freeText',
         scene: '직접 화법을 간접 화법으로 바꾸세요.',
-        text: '"피곤해요" → 피곤___ 했어요. / "오세요" → 오___ 했어요. / "어디 가요?" → 어디 가___ 물었어요.',
+        text: '"피곤해요" → 피곤[[0]] 했어요. / "오세요" → 오[[1]] 했어요. / "어디 가요?" → 어디 가[[2]] 물었어요.',
         blanks: [
           { answer: '하다고', explain: '"피곤하다고 했어요" = dijo que estaba cansado.' },
           { answer: '라고', explain: '"오라고 했어요" = dijo que viniera (orden).' },

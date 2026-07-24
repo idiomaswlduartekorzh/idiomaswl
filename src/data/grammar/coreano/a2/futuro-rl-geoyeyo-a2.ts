@@ -110,14 +110,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Que vas a comer',
-            lines: [['David', '점심에 뭐 ___? (가다) → (¿Que vas a comer al mediodia?)']],
+            lines: [['Leo', '점심에 뭐 ___? (가다) → (¿Que vas a comer al mediodia?)']],
             options: ['먹을 거예요', '먹ㄹ 거예요', '먹갈 거예요', '먹을거예요'],
             answer: '먹을 거예요',
             explain: '먹다 → raiz 먹 (consonante) → 먹을 거예요. Consonante + -을 거예요.',
           },
           {
             scene: 'Prediccion del tiempo',
-            lines: [['Zhanna', '오늘 비가 ___ (오다). (Creo que hoy va a llover.)']],
+            lines: [['Alba', '오늘 비가 ___ (오다). (Creo que hoy va a llover.)']],
             options: ['올 거예요', '오을 거예요', '오갈 거예요', '올거예요'],
             answer: '올 거예요',
             explain: '오다 → raiz 오 (vocal) → 올 거예요.',
@@ -152,7 +152,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Leyendo un libro',
-            lines: [['David', '저녁에 책을 ___ (읽다). (Esta noche voy a leer un libro.)']],
+            lines: [['Leo', '저녁에 책을 ___ (읽다). (Esta noche voy a leer un libro.)']],
             options: ['읽을 거예요', '읽ㄹ 거예요', '읽갈 거예요', '읽어 거예요'],
             answer: '읽을 거예요',
             explain: '읽다 → raiz 읽 (consonante) → 읽을 거예요.',
@@ -169,9 +169,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planes del fin de semana',
             lines: [
-              ['Lina', '이번 주말에 뭐 [[0]] (하다)? (¿Que vas a hacer este fin de semana?)'],
-              ['Carlos', '친구를 [[1]] (만나다). (Voy a encontrarme con un amigo.)'],
-            ],
+ ['Lina', '이번 주말에 뭐 [[0]] (하다)? (¿Que vas a hacer este fin de semana?)'],
+ ['Carlos', '친구를 [[1]] (만나다). (Voy a encontrarme con un amigo.)'],
+ ],
             blanks: [
               { options: ['할 거예요', '하을 거예요', '해 거예요', '할거예요'], answer: '할 거예요', explain: '하다 → 할 거예요 (vocal final).' },
               { options: ['만날 거예요', '만나을 거예요', '만나ㄹ 거예요', '만날거예요'], answer: '만날 거예요', explain: '만나다 → raiz 만나 (vocal) → 만날 거예요.' },
@@ -180,9 +180,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Prediccion del clima',
             lines: [
-              ['Ana', '내일 비가 [[0]] (오다)? (¿Crees que manana va a llover?)'],
-              ['Zhanna', '아마 [[1]] (오다). (Probablemente si.)'],
-            ],
+ ['Ana', '내일 비가 [[0]] (오다)? (¿Crees que manana va a llover?)'],
+ ['Alba', '아마 [[1]] (오다). (Probablemente si.)'],
+ ],
             blanks: [
               { options: ['올 거예요', '오을 거예요', '오ㄹ 거예요', '올거예요'], answer: '올 거예요', explain: '오다 → raiz 오 (vocal) → 올 거예요.' },
               { options: ['올 거예요', '오을 거예요', '오ㄹ 거예요', '올거예요'], answer: '올 거예요', explain: '아마 = probablemente. 오다 → 올 거예요.' },
@@ -191,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Negacion de planes',
             lines: [
-              ['Marco', '오늘 운동 [[0]] (하다)? (¿Vas a hacer ejercicio hoy?)'],
-              ['Sofia', '아니요, [[1]] (하다) — negacion. (No, no voy a hacerlo.)'],
-            ],
+ ['Marco', '오늘 운동 [[0]] (하다)? (¿Vas a hacer ejercicio hoy?)'],
+ ['Sofia', '아니요, [[1]] (하다) — negacion. (No, no voy a hacerlo.)'],
+ ],
             blanks: [
               { options: ['할 거예요', '하을 거예요', '해 거예요', '하ㄹ 거예요'], answer: '할 거예요', explain: '하다 → 할 거예요. Pregunta de futuro.' },
               { options: ['안 할 거예요', '안 하을 거예요', '할 없어요', '안해 거예요'], answer: '안 할 거예요', explain: '안 + 할 거예요 = no voy a hacerlo.' },
@@ -202,9 +202,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Comida de manana',
             lines: [
-              ['David', '내일 점심에 뭐 [[0]] (먹다)? (¿Que vas a comer manana al mediodia?)'],
-              ['Lina', '김치찌개를 [[1]] (먹다). (Voy a comer kimchi-jjigae.)'],
-            ],
+ ['Leo', '내일 점심에 뭐 [[0]] (먹다)? (¿Que vas a comer manana al mediodia?)'],
+ ['Lina', '김치찌개를 [[1]] (먹다). (Voy a comer kimchi-jjigae.)'],
+ ],
             blanks: [
               { options: ['먹을 거예요', '먹ㄹ 거예요', '먹어 거예요', '먹을거예요'], answer: '먹을 거예요', explain: '먹다 → raiz 먹 (consonante) → 먹을 거예요.' },
               { options: ['먹을 거예요', '먹ㄹ 거예요', '먹어 거예요', '먹을거예요'], answer: '먹을 거예요', explain: '김치찌개를 먹을 거예요 = voy a comer kimchi-jjigae.' },
@@ -237,7 +237,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de -(으)ㄹ 거예요 para cada verbo.',
         type: 'freeText',
         scene: 'Planes para la proxima semana',
-        text: '다음 주에 한국어를 ___. (공부하다) / 친구에게 전화를 ___. (하다) / 새 책을 ___. (읽다) / 음악을 ___. (듣다) / 저녁에 집에 ___. (오다)',
+        text: '다음 주에 한국어를 [[0]]. (공부하다) / 친구에게 전화를 [[1]]. (하다) / 새 책을 [[2]]. (읽다) / 음악을 [[3]]. (듣다) / 저녁에 집에 [[4]]. (오다)',
         blanks: [
           { answer: '공부할 거예요', explain: '공부하다 → raiz 공부하 (vocal) → 공부할 거예요.' },
           { answer: '할 거예요', explain: '하다 → raiz 하 (vocal) → 할 거예요.' },

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog",
+    "prebuild": "npm run check:practica-catalog && npm run check:grammar-exercises",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -12,6 +12,7 @@
     "start": "next start",
     "lint": "eslint",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
+    "check:grammar-exercises": "node scripts/check-grammar-exercises.mjs",
     "check:exam-practice-content": "node scripts/check-exam-practice-content.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",
     "clean": "rm -rf .next .turbo node_modules/.cache && echo '✓ Cache limpiado'"
@@ -47,5 +48,10 @@
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "browserslist": [
+    "last 3 years",
+    "not dead",
+    "not op_mini all"
+  ]
 }

@@ -226,7 +226,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la versión pasiva de cada oración activa indicada.',
         type: 'freeText',
         scene: 'Transformación de oraciones activas a pasivas.',
-        text: "Transformez les phrases suivantes en voix passive:\n[[0]] Les étudiants ont écrit les examens. → Les examens ___ par les étudiants.\n[[1]] Le chef a préparé le dîner. → Le dîner ___ par le chef.\n[[2]] Un architecte célèbre construira cet immeuble. → Cet immeuble ___.\n[[3]] On a volé les bijoux. → Les bijoux ___.\n[[4]] Le jury évalue les candidats. → Les candidats ___.",
+        text: "Transformez les phrases suivantes en voix passive:\n Les étudiants ont écrit les examens. → Les examens [[0]] par les étudiants.\n Le chef a préparé le dîner. → Le dîner [[1]] par le chef.\n Un architecte célèbre construira cet immeuble. → Cet immeuble [[2]].\n On a volé les bijoux. → Les bijoux [[3]].\n Le jury évalue les candidats. → Les candidats [[4]].",
         blanks: [
           { answer: 'ont été écrits', accepted: ['ont été écrits'], explain: '"Examens" masculino plural → écrits. Ont été = PC pasivo.' },
           { answer: 'a été préparé', accepted: ['a été préparé'], explain: '"Dîner" masculino singular → préparé. A été = PC pasivo.' },

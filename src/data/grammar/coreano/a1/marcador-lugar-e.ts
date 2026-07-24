@@ -115,7 +115,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Acción en lugar',
-            lines: [['David', '저는 카페___ 공부해요. (Estudio en el café.)']],
+            lines: [['Tomás', '저는 카페___ 공부해요. (Estudio en el café.)']],
             options: ['에서', '에', '를', '이'],
             answer: '에서',
             explain: 'Estudiar es una acción en un lugar → 에서. 카페에서 공부해요.',
@@ -143,14 +143,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Destino',
-            lines: [['Zhanna', '집___ 가요? (¿Vas a casa?)']],
+            lines: [['Iris', '집___ 가요? (¿Vas a casa?)']],
             options: ['에', '에서', '를', '이'],
             answer: '에',
             explain: '집에 가요 = voy a casa. Destino → 에.',
           },
           {
             scene: 'Regla tiempo',
-            lines: [['David', '오늘___ 수업이 있어요. ¿Necesita 에?']],
+            lines: [['Tomás', '오늘___ 수업이 있어요. ¿Necesita 에?']],
             options: ['오늘 NO lleva 에', 'lleva 에', 'lleva 에서', 'lleva 를'],
             answer: '오늘 NO lleva 에',
             explain: '오늘(hoy), 내일(mañana), 어제(ayer) son adverbios — NO llevan 에. Solo tiempos específicos.',
@@ -191,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'No está en casa',
             lines: [
-              ['Marco', '엄마가 집[[0]] [[1]]? (¿Está mamá en casa?)'],
-              ['Lina', '아니요, 지금 없어요. (No, ahora no está.)'],
-            ],
+ ['Marco', '엄마가 집[[0]] [[1]]? (¿Está mamá en casa?)'],
+ ['Lina', '아니요, 지금 없어요. (No, ahora no está.)'],
+ ],
             blanks: [
               { options: ['에', '에서', '가', '를'], answer: '에', explain: 'Ubicación (existencia) → 에.' },
               { options: ['있어요', '없어요', '가요', '해요'], answer: '있어요', explain: 'Pregunta de existencia: 집에 있어요?' },
@@ -207,7 +207,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa con 에 o 에서 según corresponda.',
         type: 'guidedText',
-        scene: 'La semana de David en WeLearn',
+        scene: 'La semana de Tomás en WeLearn',
         text: '저는 월요일[[0]] 학교에 가요. 교실[[1]] 있어요. 점심에 카페[[2]] 밥을 먹어요. 오후 3시[[3]] 수업이 있어요. 저녁에 집[[4]] 가요. 집[[5]] 공부해요.',
         blanks: [
           { options: ['에', '에서'], answer: '에', explain: '월요일에 = el lunes. Tiempo específico → 에.' },

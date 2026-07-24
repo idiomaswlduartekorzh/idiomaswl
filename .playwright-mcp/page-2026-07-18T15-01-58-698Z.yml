@@ -1,0 +1,291 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WeLearn Idiomas WeLearn" [ref=e4] [cursor=pointer]:
+        - /url: /home
+        - img "WeLearn" [ref=e6]
+        - generic [ref=e7]: Idiomas WeLearn
+      - navigation "Navegación principal" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /home
+        - link "Nivel Radar" [ref=e10] [cursor=pointer]:
+          - /url: /nivel-radar
+        - link "Inglés" [ref=e11] [cursor=pointer]:
+          - /url: /clases-de-ingles
+        - link "Coreano" [ref=e12] [cursor=pointer]:
+          - /url: /clases-de-coreano
+        - link "Idiomas" [ref=e13] [cursor=pointer]:
+          - /url: /clases-de-idiomas
+        - link "Exámenes" [ref=e14] [cursor=pointer]:
+          - /url: /examenes
+        - link "Práctica" [ref=e15] [cursor=pointer]:
+          - /url: /practica
+        - link "Blog" [ref=e16] [cursor=pointer]:
+          - /url: /blog
+        - link "Precios" [ref=e17] [cursor=pointer]:
+          - /url: /precios
+      - button "Cambiar a modo oscuro" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: ☀️
+  - main [ref=e23]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - link "← Task 1" [ref=e28] [cursor=pointer]:
+          - /url: /practica/ielts/academic/writing/task1
+        - generic [ref=e29]: Task 1 / Processes
+      - paragraph [ref=e30]: ⚙️ Sub-skill 5 — Processes
+      - heading "Process diagrams" [level=1] [ref=e32]
+      - paragraph [ref=e33]: Processes require the passive voice and sequencing language. Convert each active step into the passive and choose the correct sequencer.
+      - region "Official format versus WeLearn strategy" [ref=e34]:
+        - article [ref=e35]:
+          - heading "Official format versus WeLearn strategy" [level=2] [ref=e36]
+          - paragraph [ref=e37]:
+            - strong [ref=e38]: "Official format:"
+            - text: IELTS Academic Writing Task 1 may ask you to describe a process as visual information. A process is a possible input, not a separate official section.
+          - paragraph [ref=e39]:
+            - strong [ref=e40]: "WeLearn strategy:"
+            - text: We isolate processes because they require passive grammar, time order and no personal opinion.
+        - article [ref=e41]:
+          - heading "Answer review" [level=2] [ref=e42]
+          - paragraph [ref=e43]:
+            - strong [ref=e44]: "Review focus:"
+            - text: Describe stages in logical order with the passive voice and clear sequencing.
+          - paragraph [ref=e45]:
+            - strong [ref=e46]: "Explained answer:"
+            - text: A strong response groups stages, uses precise sequencers and avoids inventing causes that the diagram does not show.
+          - generic [ref=e47]:
+            - link "IELTS Academic source" [ref=e48] [cursor=pointer]:
+              - /url: https://ielts.org/take-a-test/test-types/ielts-academic-test
+            - link "IELTS samples" [ref=e49] [cursor=pointer]:
+              - /url: https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test
+            - link "Writing rubric" [ref=e50] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/rubrica
+            - link "Task 1 hub" [ref=e51] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/task1
+            - link "Model answers Task 2" [ref=e52] [cursor=pointer]:
+              - /url: /practica/ielts/academic/writing/task2/model-answers
+            - link "Compare General Training" [ref=e53] [cursor=pointer]:
+              - /url: /practica/ielts/general-training
+      - generic [ref=e54]:
+        - paragraph [ref=e55]: Tipos de gráfico en Task 1
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - heading "Antes de practicar subhabilidades, identifica el tipo de visual." [level=2] [ref=e59]
+            - paragraph [ref=e60]: "La estructura de respuesta cambia según el input: una línea pide tendencia, una tabla pide agrupación, un proceso pide secuencia y un mapa pide transformación espacial. Esta tarjeta es el puente entre formato oficial IELTS y estrategia WeLearn."
+          - generic [ref=e61]:
+            - article [ref=e62]:
+              - heading "Line graph" [level=3] [ref=e63]
+              - paragraph [ref=e64]: Cambios en el tiempo
+              - paragraph [ref=e65]:
+                - strong [ref=e66]: "Overview:"
+                - text: Busca tendencia dominante, cruce de líneas, pico, caída o convergencia.
+              - paragraph [ref=e67]:
+                - strong [ref=e68]: "Cuerpo:"
+                - text: "Agrupa por periodos: inicio, cambio rápido, estabilización o cierre."
+              - paragraph [ref=e69]: rose steadily, peaked at, declined gradually, overtook, remained stable
+              - link "Practicar este tipo →" [ref=e70] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/graficos-lineales
+            - article [ref=e71]:
+              - heading "Bar chart" [level=3] [ref=e72]
+              - paragraph [ref=e73]: Comparaciones entre categorías
+              - paragraph [ref=e74]:
+                - strong [ref=e75]: "Overview:"
+                - text: Busca la categoría más alta/baja y el contraste más claro.
+              - paragraph [ref=e76]:
+                - strong [ref=e77]: "Cuerpo:"
+                - text: Agrupa categorías similares; no describas barra por barra.
+              - paragraph [ref=e78]: higher than, whereas, considerably lower, the largest proportion
+              - link "Practicar este tipo →" [ref=e79] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/graficos-de-barras
+            - article [ref=e80]:
+              - heading "Pie charts" [level=3] [ref=e81]
+              - paragraph [ref=e82]: Partes de un total
+              - paragraph [ref=e83]:
+                - strong [ref=e84]: "Overview:"
+                - text: Busca el segmento dominante y cómo cambia la distribución si hay dos gráficos.
+              - paragraph [ref=e85]:
+                - strong [ref=e86]: "Cuerpo:"
+                - text: Compara proporciones grandes vs pequeñas; evita sumar todo.
+              - paragraph [ref=e87]: accounted for, made up, represented, the smallest share
+              - link "Practicar este tipo →" [ref=e88] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/pie-charts
+            - article [ref=e89]:
+              - heading "Table" [level=3] [ref=e90]
+              - paragraph [ref=e91]: Datos densos por filas/columnas
+              - paragraph [ref=e92]:
+                - strong [ref=e93]: "Overview:"
+                - text: Busca extremos, patrones por fila/columna y categorías que se agrupan.
+              - paragraph [ref=e94]:
+                - strong [ref=e95]: "Cuerpo:"
+                - text: Convierte la tabla en 2 grupos lógicos antes de escribir.
+              - paragraph [ref=e96]: the figure for, respectively, by contrast, across all categories
+              - link "Practicar este tipo →" [ref=e97] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/tablas
+            - article [ref=e98]:
+              - heading "Process diagram" [level=3] [ref=e99]
+              - paragraph [ref=e100]: Etapas de producción o ciclo
+              - paragraph [ref=e101]:
+                - strong [ref=e102]: "Overview:"
+                - text: Menciona número de etapas y si el proceso es lineal o cíclico.
+              - paragraph [ref=e103]:
+                - strong [ref=e104]: "Cuerpo:"
+                - text: Usa voz pasiva y orden temporal; no inventes razones.
+              - paragraph [ref=e105]: is collected, is heated, after this, subsequently, finally
+              - link "Practicar este tipo →" [ref=e106] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/procesos
+            - article [ref=e107]:
+              - heading "Map" [level=3] [ref=e108]
+              - paragraph [ref=e109]: Cambios espaciales antes/después
+              - paragraph [ref=e110]:
+                - strong [ref=e111]: "Overview:"
+                - text: "Busca desarrollo general: urbanización, reemplazos, expansión o reducción."
+              - paragraph [ref=e112]:
+                - strong [ref=e113]: "Cuerpo:"
+                - text: "Divide por zonas: norte/sur/centro o antes/después."
+              - paragraph [ref=e114]: was replaced by, was converted into, to the north of, adjacent to
+              - link "Practicar este tipo →" [ref=e115] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/mapas
+            - article [ref=e116]:
+              - heading "Mixed chart" [level=3] [ref=e117]
+              - paragraph [ref=e118]: Dos visuales conectados
+              - paragraph [ref=e119]:
+                - strong [ref=e120]: "Overview:"
+                - text: Encuentra la relación entre ambos visuales, no los trates como tareas separadas.
+              - paragraph [ref=e121]:
+                - strong [ref=e122]: "Cuerpo:"
+                - text: Un párrafo por visual o por relación común, según el caso.
+              - paragraph [ref=e123]: while, in relation to, this corresponded with, a similar pattern
+              - link "Practicar este tipo →" [ref=e124] [cursor=pointer]:
+                - /url: /practica/ielts/academic/writing/task1/tarea-completa
+      - generic [ref=e125]:
+        - paragraph [ref=e126]: IELTS-style visual reference
+        - img "How plastic bottles are recycled" [ref=e127]:
+          - generic [ref=e131]: SEQUENCE OF STAGES
+          - generic [ref=e132]:
+            - generic [ref=e136]: "1"
+            - generic [ref=e137]: Collection
+            - paragraph [ref=e139]: Used bottles are collected from public recycling bins.
+          - generic [ref=e140]:
+            - generic [ref=e144]: "2"
+            - generic [ref=e145]: Sorting
+            - paragraph [ref=e147]: Plastic is separated at a recycling centre.
+          - generic [ref=e148]:
+            - generic [ref=e152]: "3"
+            - generic [ref=e153]: Washing
+            - paragraph [ref=e155]: Bottles are cleaned before being cut into flakes.
+          - generic [ref=e156]:
+            - generic [ref=e160]: "4"
+            - generic [ref=e161]: Melting
+            - paragraph [ref=e163]: The flakes are heated into plastic pellets.
+          - generic [ref=e164]:
+            - generic [ref=e168]: "5"
+            - generic [ref=e169]: Manufacturing
+            - paragraph [ref=e171]: The pellets become new products.
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - paragraph [ref=e175]: Passive voice
+          - paragraph [ref=e176]:
+            - text: Subject +
+            - strong [ref=e177]: is/are
+            - text: + past participle“The material
+            - strong [ref=e178]: is heated
+            - text: ”“Water
+            - strong [ref=e179]: is pumped
+            - text: ”
+        - generic [ref=e180]:
+          - paragraph [ref=e181]: Sequencers
+          - paragraph [ref=e182]: First · Then · Next · After that · Subsequently · Once · Before · Finally
+      - generic [ref=e183]: 1/5
+      - generic [ref=e187]:
+        - paragraph [ref=e188]: Process
+        - paragraph [ref=e189]: Plastic bottle recycling
+      - generic [ref=e190]:
+        - generic [ref=e192]:
+          - generic [ref=e193]: "1."
+          - generic [ref=e194]:
+            - paragraph [ref=e195]:
+              - text: "Active:"
+              - emphasis [ref=e196]: Workers collect used bottles from public recycling bins
+            - combobox [ref=e198]:
+              - option "— sequencer —" [selected]
+              - option "First, Used bottles are collected fro…"
+              - option "Then, Used bottles are collected fro…"
+              - option "Next, Used bottles are collected fro…"
+              - option "After that, Used bottles are collected fro…"
+              - option "Subsequently, Used bottles are collected fro…"
+              - option "Once Used bottles are collected fro…"
+              - option "Before Used bottles are collected fro…"
+              - option "Finally, Used bottles are collected fro…"
+              - option "At this stage, Used bottles are collected fro…"
+        - generic [ref=e200]:
+          - generic [ref=e201]: "2."
+          - generic [ref=e202]:
+            - paragraph [ref=e203]:
+              - text: "Active:"
+              - emphasis [ref=e204]: Workers separate plastic from other materials
+            - combobox [ref=e206]:
+              - option "— sequencer —" [selected]
+              - option "First, Plastic is separated from othe…"
+              - option "Then, Plastic is separated from othe…"
+              - option "Next, Plastic is separated from othe…"
+              - option "After that, Plastic is separated from othe…"
+              - option "Subsequently, Plastic is separated from othe…"
+              - option "Once Plastic is separated from othe…"
+              - option "Before Plastic is separated from othe…"
+              - option "Finally, Plastic is separated from othe…"
+              - option "At this stage, Plastic is separated from othe…"
+        - generic [ref=e208]:
+          - generic [ref=e209]: "3."
+          - generic [ref=e210]:
+            - paragraph [ref=e211]:
+              - text: "Active:"
+              - emphasis [ref=e212]: Workers wash the bottles before cutting them into flakes
+            - combobox [ref=e214]:
+              - option "— sequencer —" [selected]
+              - option "First, The bottles are washed before …"
+              - option "Then, The bottles are washed before …"
+              - option "Next, The bottles are washed before …"
+              - option "After that, The bottles are washed before …"
+              - option "Subsequently, The bottles are washed before …"
+              - option "Once The bottles are washed before …"
+              - option "Before The bottles are washed before …"
+              - option "Finally, The bottles are washed before …"
+              - option "At this stage, The bottles are washed before …"
+        - generic [ref=e216]:
+          - generic [ref=e217]: "4."
+          - generic [ref=e218]:
+            - paragraph [ref=e219]:
+              - text: "Active:"
+              - emphasis [ref=e220]: Machines heat the flakes and turn them into pellets
+            - combobox [ref=e222]:
+              - option "— sequencer —" [selected]
+              - option "First, The flakes are heated and turn…"
+              - option "Then, The flakes are heated and turn…"
+              - option "Next, The flakes are heated and turn…"
+              - option "After that, The flakes are heated and turn…"
+              - option "Subsequently, The flakes are heated and turn…"
+              - option "Once The flakes are heated and turn…"
+              - option "Before The flakes are heated and turn…"
+              - option "Finally, The flakes are heated and turn…"
+              - option "At this stage, The flakes are heated and turn…"
+        - generic [ref=e224]:
+          - generic [ref=e225]: "5."
+          - generic [ref=e226]:
+            - paragraph [ref=e227]:
+              - text: "Active:"
+              - emphasis [ref=e228]: Manufacturers mould the pellets into new products
+            - combobox [ref=e230]:
+              - option "— sequencer —" [selected]
+              - option "First, The pellets are moulded into n…"
+              - option "Then, The pellets are moulded into n…"
+              - option "Next, The pellets are moulded into n…"
+              - option "After that, The pellets are moulded into n…"
+              - option "Subsequently, The pellets are moulded into n…"
+              - option "Once The pellets are moulded into n…"
+              - option "Before The pellets are moulded into n…"
+              - option "Finally, The pellets are moulded into n…"
+              - option "At this stage, The pellets are moulded into n…"
+      - button "Reveal answers →" [ref=e231] [cursor=pointer]
+  - link "Contáctanos por WhatsApp" [ref=e232] [cursor=pointer]:
+    - /url: https://wa.me/573005004253?text=Hola%2C%20estaba%20practicando%20en%20WeLearn%20y%20quiero%20saber%20c%C3%B3mo%20continuar%20mi%20preparaci%C3%B3n.
+    - generic: Escríbenos
+  - alert [ref=e237]

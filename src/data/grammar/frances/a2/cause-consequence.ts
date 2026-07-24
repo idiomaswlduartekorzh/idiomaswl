@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con conectores de causa o consecuencia.',
         type: 'guidedText',
         scene: 'Lucie explique pourquoi elle a changé de travail.',
-        text: 'J\'ai décidé de changer de travail [[0]] je n\'étais plus heureuse. Mon ancien patron était très exigeant, [[1]] j\'avais trop de stress. [[2]] je cherchais quelque chose de différent, j\'ai passé plusieurs entretiens. J\'ai trouvé un nouveau poste, [[3]] j\'ai accepté immédiatement. [[0]] le salaire est meilleur, c\'est encore mieux !',
+        text: 'J\'ai décidé de changer de travail [[0]] je n\'étais plus heureuse. Mon ancien patron était très exigeant, [[1]] j\'avais trop de stress. [[2]] je cherchais quelque chose de différent, j\'ai passé plusieurs entretiens. J\'ai trouvé un nouveau poste, [[3]] j\'ai accepté immédiatement. [[4]] le salaire est meilleur, c\'est encore mieux !',
         blanks: [
           { options: ['parce que', 'donc', "c'est pourquoi", 'car'], answer: 'parce que', explain: '"parce que" = causa directa. ¿Por qué cambió? Porque ya no era feliz.' },
           { options: ['donc', 'parce que', 'puisque', 'comme'], answer: 'donc', explain: '"donc" = consecuencia. Jefe exigente → demasiado estrés.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el conector de causa o consecuencia correcto.',
         type: 'freeText',
         scene: 'Complétez avec le bon connecteur.',
-        text: 'Je ne sors pas ce soir ___ je suis malade. (causa directa) / Le train est en retard, ___ nous allons rater notre correspondance. (consecuencia) / ___ tu connais la ville, tu peux nous guider. (causa conocida) / Il fait froid, ___ prenez votre manteau ! (consecuencia lógica)',
+        text: 'Je ne sors pas ce soir [[0]] je suis malade. (causa directa) / Le train est en retard, [[1]] nous allons rater notre correspondance. (consecuencia) / [[2]] tu connais la ville, tu peux nous guider. (causa conocida) / Il fait froid, [[3]] prenez votre manteau ! (consecuencia lógica)',
         blanks: [
           { answer: 'parce que', explain: '"parce que" = causa directa. Responde à pourquoi.' },
           { answer: 'donc', explain: '"donc" = consecuencia. Tren tarde → perder conexión.' },

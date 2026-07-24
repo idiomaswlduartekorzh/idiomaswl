@@ -170,7 +170,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la historia con el verbo correcto.',
         type: 'guidedText',
         scene: '誕生日パーティーの話です。',
-        text: '昨日、友達の誕生日でした。私は花をプレゼントして[[0]]。友達はケーキを[[1]]。田中さんは手作りの料理を作って[[2]]。私は田中さんに料理の作り方を教えて[[1]]。とても楽しい誕生日でした。',
+        text: '昨日、友達の誕生日でした。私は花をプレゼントして[[0]]。友達はケーキを[[1]]。田中さんは手作りの料理を作って[[2]]。私は田中さんに料理の作り方を教えて[[3]]。とても楽しい誕生日でした。',
         blanks: [
           { options: ['あげました', 'もらいました', 'くれました', 'もらってあげた'], answer: 'あげました', explain: '"プレゼントしてあげました" = le regalé (yo → amigo). て + あげる.' },
           { options: ['くれました', 'あげました', 'もらいました', 'くれてあげた'], answer: 'くれました', explain: '"ケーキをくれました" = me dio pastel (amigo → yo). くれる.' },
@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe あげる, もらう o くれる en la forma adecuada.',
         type: 'freeText',
         scene: '正しい動詞を書いてください。',
-        text: '弟に本を___ました。(yo di al hermano) / 母にセーターを___ました。(yo recibí de la madre) / 田中さんが助けて___ました。(田中さん dio a mí) / 友達のために料理して___ました。(yo di el favor)',
+        text: '弟に本を[[0]]ました。(yo di al hermano) / 母にセーターを[[1]]ました。(yo recibí de la madre) / 田中さんが助けて[[2]]ました。(田中さん dio a mí) / 友達のために料理して[[3]]ました。(yo di el favor)',
         blanks: [
           { answer: 'あげ', explain: '"弟にあげました" = yo → hermano. あげる.' },
           { answer: 'もらい', explain: '"母にもらいました" = yo ← madre. もらう.' },

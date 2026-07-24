@@ -121,14 +121,14 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la forma correcta del futuro próximo.',
         type: 'guidedText',
-        scene: 'Planos de David para a próxima semana',
-        text: 'Na próxima semana, David [[0]] muitas coisas. (va a hacer) Na segunda-feira, ele [[1]] uma reunião com Zhanna. (va a tener) Na terça, os alunos [[2]] um exame de português. (van a hacer) Na quinta, nós [[3]] uma festa na academia. (vamos a organizar) No fim de semana, David [[4]] descansar com a família. (va a descansar)',
+        scene: 'Planos de Nico para a próxima semana',
+        text: 'Na próxima semana, Nico [[0]] muitas coisas. (va a hacer) Na segunda-feira, ele [[1]] uma reunião com Nora. (va a tener) Na terça, os alunos [[2]] um exame de português. (van a hacer) Na quinta, nós [[3]] uma festa na academia. (vamos a organizar) No fim de semana, Nico [[4]] descansar com a família. (va a descansar)',
         blanks: [
-          { options: ['vai fazer', 'vou fazer', 'vamos fazer', 'vão fazer'], answer: 'vai fazer', explain: 'David (ele) → vai. fazer → infinitivo. Vai fazer = va a hacer.' },
-          { options: ['vai ter', 'vou ter', 'vamos ter', 'vão ter'], answer: 'vai ter', explain: 'ele (David) → vai. ter → infinitivo. Vai ter = va a tener.' },
+          { options: ['vai fazer', 'vou fazer', 'vamos fazer', 'vão fazer'], answer: 'vai fazer', explain: 'Nico (ele) → vai. fazer → infinitivo. Vai fazer = va a hacer.' },
+          { options: ['vai ter', 'vou ter', 'vamos ter', 'vão ter'], answer: 'vai ter', explain: 'ele (Nico) → vai. ter → infinitivo. Vai ter = va a tener.' },
           { options: ['vão fazer', 'vai fazer', 'vou fazer', 'vamos fazer'], answer: 'vão fazer', explain: 'Os alunos (eles) → vão. fazer → infinitivo. Vão fazer = van a hacer.' },
           { options: ['vamos organizar', 'vou organizar', 'vai organizar', 'vão organizar'], answer: 'vamos organizar', explain: 'Nós → vamos. organizar → infinitivo. Vamos organizar = vamos a organizar.' },
-          { options: ['vai descansar', 'vou descansar', 'vamos descansar', 'vão descansar'], answer: 'vai descansar', explain: 'David (ele) → vai. descansar → infinitivo. Vai descansar = va a descansar.' },
+          { options: ['vai descansar', 'vou descansar', 'vamos descansar', 'vão descansar'], answer: 'vai descansar', explain: 'Nico (ele) → vai. descansar → infinitivo. Vai descansar = va a descansar.' },
         ],
       },
       {
@@ -156,7 +156,7 @@ const topic: GrammarTopic = {
         items: [
           { scene: 'Planes personales', prompt: 'Traduce al portugués: "Voy a aprender portugués en WeLearn porque quiero vivir en Brasil." (porque = porque, quero = quiero, viver = vivir)', answer: 'Vou aprender português na WeLearn porque quero viver no Brasil', accepted: ['vou aprender', 'quero viver'], explain: 'Vou aprender (eu, futuro) + quero viver (querer + infinitivo). No Brasil = en Brasil (contracción em + o).' },
           { scene: 'Planes del grupo', prompt: 'Traduce al portugués: "Este fin de semana vamos a visitar São Paulo. ¿Vas a vir?" (este fim de semana = este fin de semana, visitar = visitar)', answer: 'Este fim de semana vamos visitar São Paulo. Você vai vir?', accepted: ['vamos visitar', 'vai vir'], explain: 'Vamos visitar (nós, futuro). Você vai vir? (você vai + vir infinitivo). "Vai vir" suena redundante pero es correcto.' },
-          { scene: 'Negación y afirmación', prompt: 'Traduce al portugués: "Zhanna va a enseñar la clase mañana pero yo no voy a estar. Ellos van a grabar la clase." (ensinar = enseñar, gravar = grabar, aula = clase)', answer: 'Zhanna vai ensinar a aula amanhã mas eu não vou estar. Eles vão gravar a aula.', accepted: ['vai ensinar', 'não vou', 'vão gravar'], explain: 'vai ensinar (ela), não vou estar (eu negativo), vão gravar (eles).' },
+          { scene: 'Negación y afirmación', prompt: 'Traduce al portugués: "Nora va a enseñar la clase mañana pero yo no voy a estar. Ellos van a grabar la clase." (ensinar = enseñar, gravar = grabar, aula = clase)', answer: 'Nora vai ensinar a aula amanhã mas eu não vou estar. Eles vão gravar a aula.', accepted: ['vai ensinar', 'não vou', 'vão gravar'], explain: 'vai ensinar (ela), não vou estar (eu negativo), vão gravar (eles).' },
           { scene: 'Pregunta de futuro', prompt: 'Traduce al portugués: "¿Qué vas a hacer después de la clase?" (depois da aula = después de la clase)', answer: 'O que você vai fazer depois da aula?', accepted: ['vai fazer'], explain: 'O que = ¿Qué? + você vai + fazer (infinitivo). depois da aula = depois de + a aula.' },
         ],
       },

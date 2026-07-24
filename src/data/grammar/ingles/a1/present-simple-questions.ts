@@ -87,6 +87,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'What you do on weekends?', 'Correcto', 'What do you do on weekends?'],
       ],
     },
+    {
+      heading: '¿Cómo se hacen preguntas en present simple?',
+      paragraphs: [
+        'Con el auxiliar Do/Does al principio + sujeto + verbo en forma base: "Do you work?", "Does she work?". El verbo principal no lleva -s en la pregunta ("Does he live here?", no "lives"). Con to be no se usa do: se invierte el orden ("Are you ready?").',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "Do" y cuándo "Does" en las preguntas?',
+      paragraphs: [
+        '"Do" con I, you, we, they ("Do they speak English?"). "Does" con he, she, it ("Does he speak English?"). Como la -s de la tercera persona va en el auxiliar "does", el verbo principal se queda en forma base.',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas con "wh-" (what, where, when…) en inglés?',
+      paragraphs: [
+        'Con la palabra wh- + auxiliar + sujeto + verbo base: "Where do you live?", "What does she do?", "When do they arrive?". La estructura es igual que la pregunta yes/no, pero añadiendo la palabra interrogativa al principio.',
+      ],
+    },
   ],
   visual: {
     mode: 'question-builder',
@@ -143,10 +161,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Conociendo personas',
-            lines: [['Ana', '___ David speak Korean?']],
+            lines: [['Ana', '___ Tomás speak Korean?']],
             options: ['Do', 'Does', 'Is', 'Are'],
             answer: 'Does',
-            explain: 'David → he → Does he speak?',
+            explain: 'Tomás → he → Does he speak?',
           },
           {
             scene: 'Respuesta corta afirmativa',

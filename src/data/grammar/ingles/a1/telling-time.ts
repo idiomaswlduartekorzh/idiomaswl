@@ -63,6 +63,24 @@ const topic: GrammarTopic = {
         'Noon significa mediodía (12:00 p.m.) y midnight significa medianoche (12:00 a.m.). Estas dos palabras son muy frecuentes y es importante memorizarlas para A1.',
       ],
     },
+    {
+      heading: '¿Cómo se dice la hora en inglés?',
+      paragraphs: [
+        'Dos formas. La sencilla: la hora + los minutos ("It\'s seven fifteen", "It\'s nine forty"). La tradicional: minutos + past/to + hora ("It\'s a quarter past seven", "It\'s twenty to nine"). Se empieza con "It\'s…". "o\'clock" solo para horas en punto: "It\'s three o\'clock".',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "past" y "to" para la hora?',
+      paragraphs: [
+        '"past" para los minutos DESPUÉS de la hora, hasta la media (from :01 to :30): "ten past six" (6:10), "half past six" (6:30). "to" para los minutos que faltan HASTA la siguiente hora (from :31 to :59): "twenty to seven" (6:40), "a quarter to seven" (6:45).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre a.m. y p.m. en inglés?',
+      paragraphs: [
+        '"a.m." es de medianoche a mediodía (madrugada y mañana): 7 a.m. = las 7 de la mañana. "p.m." es de mediodía a medianoche (tarde y noche): 7 p.m. = las 7 de la tarde. El inglés usa mucho el reloj de 12 horas con a.m./p.m. en vez del de 24.',
+      ],
+    },
   ],
   visual: {
     mode: 'question-map',
@@ -102,14 +120,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Son las 9:30',
-            lines: [['Ana', 'Zhanna\'s class starts at ___.']],
+            lines: [['Ana', 'Clara\'s class starts at ___.']],
             options: ['half past nine', 'half nine', 'nine and half', 'half to nine'],
             answer: 'half past nine',
             explain: 'half past nine = 9:30 — siempre "half past".',
           },
           {
             scene: 'Son las 4:45',
-            lines: [['David', 'The homework deadline is at ___.']],
+            lines: [['Dario', 'The homework deadline is at ___.']],
             options: ['quarter to five', 'quarter past four', 'quarter to four', 'four forty to'],
             answer: 'quarter to five',
             explain: 'quarter to five = 4:45 — 15 minutos PARA las 5.',
@@ -209,7 +227,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe cómo se dice cada hora en inglés.',
         type: 'freeText',
         scene: 'Rutina diaria de un estudiante de WeLearn',
-        text: 'I wake up at ___ (6:00). I eat breakfast at ___ (7:15). I go to class at ___ (6:30 p.m.). The class ends at ___ (8:45 p.m.). I study at home until ___ (10:00). I go to sleep at ___ (11:30).',
+        text: 'I wake up at [[0]] (6:00). I eat breakfast at [[1]] (7:15). I go to class at [[2]] (6:30 p.m.). The class ends at [[3]] (8:45 p.m.). I study at home until [[4]] (10:00). I go to sleep at [[5]] (11:30).',
         blanks: [
           { answer: 'six o\'clock', accepted: ["six o'clock", 'six oclock', '6 oclock', "6 o'clock"], explain: '6:00 = six o\'clock.' },
           { answer: 'quarter past seven', accepted: ['quarter past seven', 'seven fifteen'], explain: '7:15 = quarter past seven.' },

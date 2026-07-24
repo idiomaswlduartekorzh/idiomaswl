@@ -104,7 +104,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hábito frecuente',
-            lines: [['David', 'Il va ___ au sport le mardi. (~70%)']],
+            lines: [['Gael', 'Il va ___ au sport le mardi. (~70%)']],
             options: ['souvent', 'toujours', 'jamais', 'rarement'],
             answer: 'souvent',
             explain: '~70% → souvent. Il va souvent au sport.',
@@ -179,7 +179,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pregunta de rutina',
-            lines: [['David', 'Tu vas [[0]] [[1]] le sport?']],
+            lines: [['Gael', 'Tu vas [[0]] [[1]] le sport?']],
             blanks: [
               { options: ['souvent faire', 'faire souvent', 'souvent'], answer: 'souvent faire', explain: '"Tu vas souvent faire" — adverbe après "vas" (verbe conjugé).' },
               { options: ['du', 'de', 'le'], answer: 'du', explain: '"faire du sport" — du = de + le.' },
@@ -211,7 +211,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el adverbe de fréquence correcto según el porcentaje indicado.',
         type: 'freeText',
         scene: 'Completar oraciones sobre hábitos personales con el adverbe correcto',
-        text: 'Je mange ___ (100%) à la cantine. / Il ne parle ___ (0%) en classe. / Elle va ___ (70%) à la bibliothèque. / Nous cuisinons ___ (30%) le week-end. / Vous lisez ___ (10%) des journaux. / Tu sors ___ (30%) avec tes amis.',
+        text: 'Je mange [[0]] (100%) à la cantine. / Il ne parle [[1]] (0%) en classe. / Elle va [[2]] (70%) à la bibliothèque. / Nous cuisinons [[3]] (30%) le week-end. / Vous lisez [[4]] (10%) des journaux. / Tu sors [[5]] (30%) avec tes amis.',
         blanks: [
           { answer: 'toujours', accepted: ['toujours'], explain: '100% → toujours.' },
           { answer: 'jamais', accepted: ['jamais'], explain: '0% + ne → ne...jamais.' },

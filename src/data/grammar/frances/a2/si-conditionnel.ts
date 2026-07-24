@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa las hipótesis sobre la vida ideal.',
         type: 'guidedText',
         scene: 'Pierre imagine sa vie idéale.',
-        text: 'Si je [[0]] plus d\'argent, je [[1]] une grande maison. J\'[[0]] aussi une belle voiture. Si mes amis [[2]] du temps, nous [[1]] souvent en voyage. Ce [[3]] magnifique ! Et si je [[0]] en bonne santé, je [[1]] du sport tous les jours.',
+        text: 'Si je [[0]] plus d\'argent, je [[1]] une grande maison. J\'[[2]] aussi une belle voiture. Si mes amis [[3]] du temps, nous [[4]] souvent en voyage. Ce [[5]] magnifique ! Et si je [[6]] en bonne santé, je [[7]] du sport tous les jours.',
         blanks: [
           { options: ['avais', 'aurais', 'ai', 'aurai'], answer: 'avais', explain: '"si j\'avais / si j\'avais" — après si → imparfait (avais).' },
           { options: ['achèterais', 'achèterai', 'achetais', 'achète'], answer: 'achèterais', explain: '"j\'achèterais / nous partirions / je ferais" — conditionnel.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta (imparfait o conditionnel).',
         type: 'freeText',
         scene: 'Complétez avec la forme correcte.',
-        text: 'Si tu ___ (avoir) une baguette magique, que ferais-tu ? / Si nous ___ (être) à Paris, nous ___ (visiter) le Louvre. / Elle ___ (devoir) travailler moins si elle ___ (pouvoir).',
+        text: 'Si tu [[0]] (avoir) une baguette magique, que ferais-tu ? / Si nous [[1]] (être) à Paris, nous [[2]] (visiter) le Louvre. / Elle [[3]] (devoir) travailler moins si elle [[4]] (pouvoir).',
         blanks: [
           { answer: 'avais', explain: '"si tu avais" — après si → imparfait (avais).' },
           { answer: 'étions', explain: '"si nous étions" — être imparfait: étions.' },

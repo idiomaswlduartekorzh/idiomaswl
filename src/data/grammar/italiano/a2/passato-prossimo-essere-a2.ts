@@ -50,17 +50,54 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Essere auxiliar: cuándo y por qué',
+      heading: 'Essere auxiliar y la concordancia del participio',
       paragraphs: [
-        'El italiano usa essere como auxiliar con verbos intransitivos de movimiento (andare, venire, partire, arrivare, uscire, entrare, tornare), verbos de estado o cambio (rimanere, stare, nascere, morire, diventare) y todos los verbos reflexivos. La regla mnemotécnica en italiano es la sigla DEVENIR: la mayoría de verbos essere describen desplazamiento o cambio.',
-        'La característica principal del passato prossimo con essere es la concordancia del participio con el sujeto, igual que un adjetivo. Questo è fondamentale: María sono andata ✗ → Maria è andata ✓. Marco è andata ✗ → Marco è andato ✓.',
+        'El italiano usa essere como auxiliar con verbos intransitivos de movimiento (andare, venire, partire, uscire), de estado o cambio (nascere, morire, diventare, rimanere) y con todos los reflexivos. La diferencia clave con avere: aquí el participio concuerda con el sujeto en género y número, como un adjetivo. Esta es la tabla de concordancia:',
+      ],
+      table: [
+        ['Sujeto', 'Terminación', 'Ejemplo (andare)'],
+        ['io / tu / lui (masc.)', '-o', 'sono / sei / è andato'],
+        ['io / tu / lei (fem.)', '-a', 'sono / sei / è andata'],
+        ['noi / voi / loro (masc. o mixto)', '-i', 'siamo / siete / sono andati'],
+        ['noi / voi / loro (fem.)', '-e', 'siamo / siete / sono andate'],
       ],
     },
     {
-      heading: 'Los verbos essere más frecuentes',
+      heading: 'Los verbos que usan essere: tabla de participios',
       paragraphs: [
-        'Los verbos de movimiento y estado más usados con essere: andare (andato), venire (venuto), partire (partito), arrivare (arrivato), uscire (uscito), entrare (entrato), tornare (tornato), nascere (nato), morire (morto), rimanere (rimasto), stare (stato). Nota: stare y essere tienen el mismo participio: stato.',
-        'Hay verbos que pueden ser transitivos o intransitivos según el uso: correre, salire, scendere, passare. Cuando tienen objeto directo van con avere; sin objeto directo van con essere. Ho corso 5 km. (avere) / Sono corso in ospedale. (essere = movimiento rápido intransitivo).',
+        'Casi todos los verbos de movimiento y cambio de estado usan essere. Varios tienen participio irregular. Estos son los más frecuentes (recuerda: el participio luego concuerda con el sujeto):',
+      ],
+      table: [
+        ['Infinitivo', 'Participio', 'Español'],
+        ['andare', 'andato', 'ido'],
+        ['venire', 'venuto', 'venido'],
+        ['partire', 'partito', 'salido / partido'],
+        ['arrivare', 'arrivato', 'llegado'],
+        ['uscire', 'uscito', 'salido'],
+        ['entrare', 'entrato', 'entrado'],
+        ['tornare', 'tornato', 'vuelto'],
+        ['nascere', 'nato', 'nacido'],
+        ['morire', 'morto', 'muerto'],
+        ['rimanere', 'rimasto', 'quedado'],
+        ['essere / stare', 'stato', 'sido / estado'],
+      ],
+    },
+    {
+      heading: '¿Qué verbos usan essere en el passato prossimo?',
+      paragraphs: [
+        'Los intransitivos de movimiento (andare, venire, partire, arrivare, uscire, entrare, tornare), los de cambio de estado (nascere, morire, diventare, crescere), rimanere/restare, essere y stare, y todos los reflexivos (mi sono svegliato). Verbos como correre, salire o passare van con avere si llevan objeto directo y con essere si no.',
+      ],
+    },
+    {
+      heading: '¿Cómo concuerda el participio con el auxiliar essere?',
+      paragraphs: [
+        'Como un adjetivo, en género y número con el sujeto: -o (masc. sing.), -a (fem. sing.), -i (masc. o mixto plural), -e (fem. plural). "Marco è andato", "Maria è andata", "i ragazzi sono andati", "le ragazze sono andate". Es el error más típico: "Maria è andato" es incorrecto.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga el passato prossimo con essere?',
+      paragraphs: [
+        'Con el presente de essere (sono, sei, è, siamo, siete, sono) + el participio, que concuerda con el sujeto: "sono partito/partita", "siamo usciti/uscite". Ejemplo completo (venire, sujeto femenino): sono venuta, sei venuta, è venuta, siamo venute, siete venute, sono venute.',
       ],
     },
   ],
@@ -91,13 +128,13 @@ const topic: GrammarTopic = {
           {
             scene: 'El viaje a Roma',
             lines: [['Marco (m)', 'Ieri sono ___ a Roma in treno. (andare)']],
-            options: ['andato', 'andata', 'andati', 'andato'],
+            options: ['andato', 'andata', 'andati'],
             answer: 'andato',
             explain: 'Marco es masculino singular → sono andato.',
           },
           {
             scene: 'La llegada de Sofia',
-            lines: [['David', 'Sofia è ___ ieri sera dal treno. (arrivare)']],
+            lines: [['Iván', 'Sofia è ___ ieri sera dal treno. (arrivare)']],
             options: ['arrivata', 'arrivato', 'arrivati', 'arrivate'],
             answer: 'arrivata',
             explain: 'Sofia es femenino singular → è arrivata.',
@@ -111,7 +148,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El nacimiento',
-            lines: [['Zhanna', 'Il mio figlio è ___ nel 2018. (nascere)']],
+            lines: [['Alba', 'Il mio figlio è ___ nel 2018. (nascere)']],
             options: ['nato', 'nata', 'nati', 'nascuto'],
             answer: 'nato',
             explain: 'Figlio es masculino singular → è nato.',
@@ -139,10 +176,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La salida de ella',
-            lines: [['David', 'Zhanna ___ uscita dallo studio alle cinque. (essere)']],
+            lines: [['Iván', 'Alba ___ uscita dallo studio alle cinque. (essere)']],
             options: ['è', 'ha', 'era', 'sono'],
             answer: 'è',
-            explain: 'Uscire usa essere. Zhanna (f sing) → è uscita.',
+            explain: 'Uscire usa essere. Alba (f sing) → è uscita.',
           },
         ],
       },
@@ -179,7 +216,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El vuelo',
-            lines: [['Zhanna', 'Il volo [[0]] [[1]] in orario. (partire)']],
+            lines: [['Alba', 'Il volo [[0]] [[1]] in orario. (partire)']],
             blanks: [
               { options: ['è', 'ha', 'sono'], answer: 'è', explain: 'Partire usa essere. Il volo (m sing) → è.' },
               { options: ['partito', 'partita', 'partiti'], answer: 'partito', explain: 'Il volo (m sing) → partito.' },

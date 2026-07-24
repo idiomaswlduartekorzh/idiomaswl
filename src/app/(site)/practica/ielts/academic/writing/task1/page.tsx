@@ -13,17 +13,22 @@ const FAQS = [
   {
     question: 'Are these skills separate official tasks?',
     answer:
-      'No. The introduction, overview, trends and comparisons routes are WeLearn micro-skills designed to train the official IELTS Academic Writing Task 1 more effectively.',
+      'No. Introduction, overview, Body 1 and Body 2 are parts of one study response plan. Trends, comparisons, vocabulary, process language and map language are WeLearn micro-skills that support the official IELTS Academic Writing Task 1.',
+  },
+  {
+    question: 'Does IELTS prescribe a fixed number of paragraphs or words per paragraph?',
+    answer:
+      'No. IELTS requires at least 150 words for Academic Writing Task 1, but it does not prescribe paragraph names or paragraph word counts. WeLearn uses an Introduction, Overview, Body 1 and Body 2 plan to make practice more manageable.',
   },
 ]
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic Writing Task 1: 8 Essential Skills',
-  description: 'Practise IELTS Writing Task 1 skills: paraphrasing, overviews, trends, comparisons, processes, maps, vocabulary and the complete task. Band 6–7 exercises with feedback.',
-  keywords: ['IELTS Writing Task 1', 'IELTS Task 1 exercises', 'IELTS Academic Writing Task 1', 'IELTS Task 1 Band 7', 'IELTS overview', 'IELTS graph trends'],
+  title: 'IELTS Academic Writing Task 1: Structure, Skills and Practice',
+  description: 'Learn the IELTS Academic Writing Task 1 response structure: introduction, overview and two body paragraphs. Practise charts, tables, maps and process diagrams with guided exercises.',
+  keywords: ['IELTS Academic Writing Task 1', 'IELTS Task 1 structure', 'IELTS Task 1 introduction overview body paragraphs', 'IELTS Task 1 practice', 'IELTS Task 1 maps process diagrams'],
   openGraph: {
     title: 'IELTS Writing Task 1',
-    description: 'Progressive IELTS Writing Task 1 exercises, from paraphrasing to the complete task.',
+    description: 'A practical IELTS Academic Writing Task 1 guide: structure, visual types, guided practice and complete-task preparation.',
     type: 'website', locale: 'en_US',
   },
   alternates: { canonical: URL },

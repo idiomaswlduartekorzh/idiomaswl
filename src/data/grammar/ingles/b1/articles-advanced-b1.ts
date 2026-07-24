@@ -152,7 +152,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrumento musical',
-            lines: [['', 'David learned to play ___ guitar when he was twelve.']],
+            lines: [['', 'Hugo learned to play ___ guitar when he was twelve.']],
             options: ['the', 'a', 'an', '--'],
             answer: 'the',
             explain: 'Con instrumentos musicales se usa "the": play the guitar, play the piano, play the drums.',
@@ -175,7 +175,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Hábitos culturales',
-            lines: [['', '___ football is very popular in Colombia. It is ___ sport that unites the country.']],
+            lines: [['', '[[0]] football is very popular in Colombia. It is [[1]] sport that unites the country.']],
             blanks: [
               { options: ['--', 'The', 'A', 'An'], answer: '--', explain: 'Artículo cero con deportes en general: "Football is popular" (el deporte como concepto).' },
               { options: ['a', 'the', '--', 'an'], answer: 'a', explain: 'Primera mención de "sport" con adjetivo descriptivo → a sport (uno entre los deportes).' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Geografía de Colombia',
-            lines: [['', '___ Andes cross through Colombia from south to north. ___ Amazon rainforest covers much of the east.']],
+            lines: [['', '[[0]] Andes cross through Colombia from south to north. [[1]] Amazon rainforest covers much of the east.']],
             blanks: [
               { options: ['The', 'A', '--', 'An'], answer: 'The', explain: 'Cordilleras llevan "the": the Andes. Son una cadena de montañas, no una montaña individual.' },
               { options: ['The', 'A', '--', 'An'], answer: 'The', explain: 'Ríos y regiones geográficas conocidas llevan "the": the Amazon rainforest.' },
@@ -191,7 +191,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Una experiencia en el hospital',
-            lines: [['', 'My father went to ___ hospital yesterday. ___ hospital is only five minutes from our house.']],
+            lines: [['', 'My father went to [[0]] hospital yesterday. [[1]] hospital is only five minutes from our house.']],
             blanks: [
               { options: ['--', 'the', 'a', 'an'], answer: '--', explain: 'go to hospital (sin artículo) = ir como paciente. La función importa más que el lugar.' },
               { options: ['The', 'A', '--', 'An'], answer: 'The', explain: 'Segunda mención, ya especificado: "The hospital" (el que está cerca de casa).' },
@@ -199,7 +199,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Generalización y especificación',
-            lines: [['', '___ music has the power to change your mood. Have you heard ___ new album by that band?']],
+            lines: [['', '[[0]] music has the power to change your mood. Have you heard [[1]] new album by that band?']],
             blanks: [
               { options: ['--', 'The', 'A', 'An'], answer: '--', explain: 'Artículo cero con incontables en generalización: "Music has the power..." (la música en general).' },
               { options: ['the', 'a', 'an', '--'], answer: 'the', explain: '"The new album" = específico, conocido del contexto. Hay uno específico que se está mencionando.' },

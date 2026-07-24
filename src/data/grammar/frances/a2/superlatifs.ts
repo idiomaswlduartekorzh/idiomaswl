@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto de clasificación con superlativos.',
         type: 'guidedText',
         scene: 'On fait un classement des villes françaises.',
-        text: 'Paris est [[0]] grande ville de France. C\'est aussi [[1]] ville touristique du pays. La tour Eiffel est [[0]] monument de Paris. Lyon est connue pour avoir [[2]] gastronomie [[3]] réputée de France.',
+        text: 'Paris est [[0]] grande ville de France. C\'est aussi [[1]] ville touristique du pays. La tour Eiffel est [[2]] monument de Paris. Lyon est connue pour avoir [[3]] gastronomie [[4]] réputée de France.',
         blanks: [
           { options: ['la plus', 'le plus', 'la moins', 'plus'], answer: 'la plus', explain: '"la plus grande ville" — ville femenino → la plus.' },
           { options: ['la plus', 'le plus', 'la moins', 'plus'], answer: 'la plus', explain: '"la plus touristique" — ville sous-entendu, femenino → la plus.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el superlativo correcto.',
         type: 'freeText',
         scene: 'Complétez avec le bon superlatif.',
-        text: 'C\'est ___ bon film de l\'année. (el mejor) / Ce sont ___ étudiantes sérieuses. (las más) / Elle chante ___. (lo mejor — adverbio) / C\'est ___ pire solution. (la peor)',
+        text: 'C\'est [[0]] bon film de l\'année. (el mejor) / Ce sont [[1]] étudiantes sérieuses. (las más) / Elle chante [[2]]. (lo mejor — adverbio) / C\'est [[3]] pire solution. (la peor)',
         blanks: [
           { answer: 'le meilleur', explain: '"le meilleur film" = el mejor film. Irregular de bon (masc.).' },
           { answer: 'les plus', explain: '"les plus sérieuses" = las más serias. étudiantes femenino plural → les.' },

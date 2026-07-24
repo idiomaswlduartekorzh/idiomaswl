@@ -4,7 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
-import { IELTSProcessDiagramVisual } from '../Task1VisualLab';
+import Task1ApprovedProcessVisual from '../Task1ApprovedProcessVisual';
+import ProcessPracticeEngine from './ProcessPracticeEngine';
 
 interface Step {
   n: number;
@@ -117,6 +118,12 @@ export default function ProcesosPage() {
             officialFormat="IELTS Academic Writing Task 1 may ask you to describe a process as visual information. A process is a possible input, not a separate official section."
             welearnStrategy="We isolate processes because they require passive grammar, time order and no personal opinion."
             answerCheck="A strong response groups stages, uses precise sequencers and avoids inventing causes that the diagram does not show."
+            relatedLinks={[
+              { href: '/practica/ielts/academic/writing/task1/overview', label: 'Write the overview' },
+              { href: '/practica/ielts/academic/writing/task1/body-1', label: 'Build Body 1' },
+              { href: '/practica/ielts/academic/writing/task1/body-2', label: 'Build Body 2' },
+              { href: '/practica/ielts/academic/writing/task1/mapas', label: 'Describe maps' },
+            ]}
           />
 
           <Task1ChartTypeGuide />
@@ -139,11 +146,11 @@ export default function ProcesosPage() {
 
           <div id="process-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1rem', marginBottom: '1.25rem', background: 'var(--bg-2)', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.55rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
-            <IELTSProcessDiagramVisual variant={exIdx} />
+            <Task1ApprovedProcessVisual variant={exIdx} />
           </div>
 
           {/* Grammar box */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <div style={{ padding: '0.9rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.15)' }}>
               <p style={{ fontSize: '0.68rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 0.4rem' }}>Passive voice</p>
               <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--ink-2)', lineHeight: 1.65 }}>
@@ -227,6 +234,8 @@ export default function ProcesosPage() {
               </button>
             </div>
           )}
+
+          <ProcessPracticeEngine />
         </div>
       </div>
     </section>

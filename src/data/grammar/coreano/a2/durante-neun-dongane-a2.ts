@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta con 동안에.',
         type: 'freeText',
         scene: '동안에 표현을 완성하세요.',
-        text: '세 시간 ___ 영화를 봤어요. / 수업___ 동안에 잠을 잤어요. / 운동___ 동안에 음악을 들어요. / 한 달 ___ 한국어를 배웠어요.',
+        text: '세 시간 [[0]] 영화를 봤어요. / 수업[[1]] 동안에 잠을 잤어요. / 운동[[2]] 동안에 음악을 들어요. / 한 달 [[3]] 한국어를 배웠어요.',
         blanks: [
           { answer: '동안에', explain: '"세 시간 동안에" = durante tres horas.' },
           { answer: '하는', explain: '"수업하는 동안에" = durante la clase / mientras tengo clase.' },

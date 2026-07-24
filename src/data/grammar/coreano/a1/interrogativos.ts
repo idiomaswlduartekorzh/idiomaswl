@@ -126,7 +126,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando identidad',
-            lines: [['David', '저 사람이 ___ 예요? (¿Quién es esa persona?)']],
+            lines: [['Gael', '저 사람이 ___ 예요? (¿Quién es esa persona?)']],
             options: ['누구', '뭐', '어디', '왜'],
             answer: '누구',
             explain: '누구 = quién. 누구예요? = ¿Quién es?',
@@ -147,7 +147,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Posición del interrogativo',
-            lines: [['Zhanna', 'En coreano, ¿dónde va el interrogativo?']],
+            lines: [['Sara', 'En coreano, ¿dónde va el interrogativo?']],
             options: ['En la posición de la respuesta', 'Siempre al inicio', 'Siempre al final', 'Después del verbo'],
             answer: 'En la posición de la respuesta',
             explain: 'Los interrogativos van donde iría la respuesta — el verbo sigue al final.',
@@ -171,9 +171,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planes del fin de semana',
             lines: [
-              ['Carlos', '주말에 [[0]] 해요? (¿Qué haces el fin de semana?)'],
-              ['Ana', '한국어를 [[1]]. (Estudio coreano.)'],
-            ],
+ ['Carlos', '주말에 [[0]] 해요? (¿Qué haces el fin de semana?)'],
+ ['Ana', '한국어를 [[1]]. (Estudio coreano.)'],
+ ],
             blanks: [
               { options: ['뭐', '어디', '언제', '왜'], answer: '뭐', explain: 'Preguntando actividad → 뭐. 뭐 해요?' },
               { options: ['공부해요', '가요', '먹어요', '있어요'], answer: '공부해요', explain: '공부하다 → 공부해요. Respuesta a 뭐 해요?' },
@@ -182,9 +182,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Después de clase',
             lines: [
-              ['David', '수업 후에 [[0]] 가요? (¿Adónde vas después de clase?)'],
-              ['Marco', '카페에 [[1]]. (Voy al café.)'],
-            ],
+ ['Gael', '수업 후에 [[0]] 가요? (¿Adónde vas después de clase?)'],
+ ['Marco', '카페에 [[1]]. (Voy al café.)'],
+ ],
             blanks: [
               { options: ['어디', '뭐', '언제', '누구'], answer: '어디', explain: 'Preguntando destino → 어디. 어디 가요?' },
               { options: ['가요', '있어요', '먹어요', '해요'], answer: '가요', explain: '가다 → 가요. 카페에 가요.' },
@@ -193,9 +193,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Citando a un amigo',
             lines: [
-              ['Lina', '친구가 [[0]] 와요? (¿Cuándo viene el amigo?)'],
-              ['Sofia', '내일 [[1]]. (Viene mañana.)'],
-            ],
+ ['Lina', '친구가 [[0]] 와요? (¿Cuándo viene el amigo?)'],
+ ['Sofia', '내일 [[1]]. (Viene mañana.)'],
+ ],
             blanks: [
               { options: ['언제', '어디', '왜', '뭐'], answer: '언제', explain: 'Preguntando tiempo → 언제.' },
               { options: ['와요', '가요', '해요', '먹어요'], answer: '와요', explain: '오다 → 와요. 내일 와요.' },
@@ -204,9 +204,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conociendo a alguien',
             lines: [
-              ['Carlos', '저 분이 [[0]]? (¿Quién es esa persona?)'],
-              ['David', '저는 위런 선생님 데이비드[[1]]. (Soy David, maestro de WeLearn.)'],
-            ],
+ ['Carlos', '저 분이 [[0]]? (¿Quién es esa persona?)'],
+ ['Gael', '저는 위런 선생님 데이비드[[1]]. (Soy Gael, maestro de WeLearn.)'],
+ ],
             blanks: [
               { options: ['누구예요', '뭐예요', '어디예요', '언제예요'], answer: '누구예요', explain: '누구 + 예요 = ¿quién es? Preguntando identidad.' },
               { options: ['예요', '이에요', '있어요', '없어요'], answer: '예요', explain: '데이비드 termina en vocal → 예요.' },

@@ -128,14 +128,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los vecinos',
-            lines: [['Zhanna', 'Os vizinhos? Eu ___ vejo todos os dias.']],
+            lines: [['Clara', 'Os vizinhos? Eu ___ vejo todos os dias.']],
             options: ['os', 'eles', 'seus', 'lhes'],
             answer: 'os',
             explain: '"Os" es el pronombre de objeto directo masculino plural: Eu os vejo.',
           },
           {
             scene: 'La negación',
-            lines: [['David', 'Eu não ___ entendi nada do que você disse.']],
+            lines: [['Nico', 'Eu não ___ entendi nada do que você disse.']],
             options: ['te', 'tu', 'você', 'ti'],
             answer: 'te',
             explain: 'En negación: não + verbo + pronombre. "Te" para objeto de 2ª persona.',

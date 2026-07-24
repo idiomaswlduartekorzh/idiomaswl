@@ -116,14 +116,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Descripción de habitación',
-            lines: [['David', '방에 침대가 ___. (En la habitación hay una cama.)']],
+            lines: [['Hugo', '방에 침대가 ___. (En la habitación hay una cama.)']],
             options: ['있어요', '없어요', '이에요', '가요'],
             answer: '있어요',
             explain: '방에 침대가 있어요 = en la habitación hay una cama.',
           },
           {
             scene: 'No hay tiempo',
-            lines: [['Zhanna', '오늘 시간이 ___. 내일 해요. (Hoy no tengo tiempo. Lo hago mañana.)']],
+            lines: [['Vera', '오늘 시간이 ___. 내일 해요. (Hoy no tengo tiempo. Lo hago mañana.)']],
             options: ['있어요', '없어요', '이에요', '아니에요'],
             answer: '없어요',
             explain: '시간이 없어요 = no tengo tiempo.',
@@ -137,7 +137,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Respuesta negativa',
-            lines: [['Estudiante', '숙제가 있어요?'], ['David', '오늘은 ___. (Hoy no [hay tarea].)']],
+            lines: [['Estudiante', '숙제가 있어요?'], ['Hugo', '오늘은 ___. (Hoy no [hay tarea].)']],
             options: ['있어요', '없어요', '이에요', '아니에요'],
             answer: '없어요',
             explain: '오늘은 없어요 = hoy no hay. Respuesta negativa con 없어요.',
@@ -161,9 +161,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En clase',
             lines: [
-              ['Alumna', '선생님, 오늘 숙제가 [[0]]? (Profesor, ¿hay tarea hoy?)'],
-              ['David', '네, [[1]]. 책 3쪽이에요. (Sí, la hay. Son 3 páginas del libro.)'],
-            ],
+ ['Alumna', '선생님, 오늘 숙제가 [[0]]? (Profesor, ¿hay tarea hoy?)'],
+ ['Hugo', '네, [[1]]. 책 3쪽이에요. (Sí, la hay. Son 3 páginas del libro.)'],
+ ],
             blanks: [
               { options: ['있어요', '없어요'], answer: '있어요', explain: 'Pregunta por existencia de tarea: 숙제가 있어요?' },
               { options: ['있어요', '없어요'], answer: '있어요', explain: 'Respuesta afirmativa: sí hay. 있어요.' },
@@ -172,9 +172,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Buscando llaves',
             lines: [
-              ['Lina', '가방에 열쇠가 [[0]]? (¿Hay llaves en la mochila?)'],
-              ['Carlos', '아니요, [[1]]. 책상에 있어요. (No, no hay. Están en el escritorio.)'],
-            ],
+ ['Lina', '가방에 열쇠가 [[0]]? (¿Hay llaves en la mochila?)'],
+ ['Carlos', '아니요, [[1]]. 책상에 있어요. (No, no hay. Están en el escritorio.)'],
+ ],
             blanks: [
               { options: ['있어요', '없어요'], answer: '있어요', explain: 'Pregunta: 가방에 열쇠가 있어요?' },
               { options: ['있어요', '없어요'], answer: '없어요', explain: 'Negativa: 없어요 = no hay / no están.' },
@@ -183,9 +183,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la biblioteca',
             lines: [
-              ['Estudiante', '도서관에 컴퓨터가 [[0]]? (¿Hay computadores en la biblioteca?)'],
-              ['Bibliotecaria', '네, [[1]]. 이쪽으로 오세요. (Sí, los hay. Venga por aquí.)'],
-            ],
+ ['Estudiante', '도서관에 컴퓨터가 [[0]]? (¿Hay computadores en la biblioteca?)'],
+ ['Bibliotecaria', '네, [[1]]. 이쪽으로 오세요. (Sí, los hay. Venga por aquí.)'],
+ ],
             blanks: [
               { options: ['있어요', '없어요'], answer: '있어요', explain: 'Pregunta de existencia en lugar: 도서관에 있어요?' },
               { options: ['있어요', '없어요'], answer: '있어요', explain: 'Afirmativa: sí hay. 있어요.' },
@@ -194,9 +194,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Tiempo libre',
             lines: [
-              ['Ana', '이번 주말에 시간이 [[0]]? (¿Tienes tiempo este fin de semana?)'],
-              ['Marco', '토요일은 [[1]]. 일요일은 있어요. (El sábado no. El domingo sí.)'],
-            ],
+ ['Ana', '이번 주말에 시간이 [[0]]? (¿Tienes tiempo este fin de semana?)'],
+ ['Marco', '토요일은 [[1]]. 일요일은 있어요. (El sábado no. El domingo sí.)'],
+ ],
             blanks: [
               { options: ['있어요', '없어요'], answer: '있어요', explain: 'Pregunta de posesión (tiempo): 시간이 있어요?' },
               { options: ['있어요', '없어요'], answer: '없어요', explain: 'El sábado no tengo: 토요일은 없어요.' },

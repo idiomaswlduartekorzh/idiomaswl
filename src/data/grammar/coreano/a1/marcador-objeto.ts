@@ -121,7 +121,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Leyendo',
-            lines: [['David', '저는 책___ 읽어요. (Leo un libro.)']],
+            lines: [['Iván', '저는 책___ 읽어요. (Leo un libro.)']],
             options: ['을', '를', '이', '에'],
             answer: '을',
             explain: '책 termina en consonante ㄱ → 을. 책을 읽어요.',
@@ -149,7 +149,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Posición del objeto',
-            lines: [['Zhanna', '¿Dónde va el objeto con 을/를 en la oración?']],
+            lines: [['Elena', '¿Dónde va el objeto con 을/를 en la oración?']],
             options: ['Antes del verbo', 'Después del verbo', 'Al inicio siempre', 'Al final de todo'],
             answer: 'Antes del verbo',
             explain: 'En coreano (SOV) el objeto va antes del verbo: 밥을 먹어요 (verbo al final).',
@@ -172,7 +172,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Rutina matutina',
-            lines: [['Ana', '저는 아침에 커피___ [[0]]. (Por la mañana bebo café.)']],
+            lines: [['Ana', '저는 아침에 커피[[0]] . (Por la mañana bebo café.)']],
             blanks: [
               { options: ['를', '을', '에', '이'], answer: '를', explain: '커피 termina en vocal ㅣ → 를.' },
               { options: ['마셔요', '먹어요', '가요', '해요'], answer: '마셔요', explain: '마시다 → 마셔요 = bebo.' },
@@ -180,7 +180,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Estudiando',
-            lines: [['David', '저는 한국어___ [[0]]. (Estudio coreano.)']],
+            lines: [['Iván', '저는 한국어[[0]] . (Estudio coreano.)']],
             blanks: [
               { options: ['를', '을', '가', '는'], answer: '를', explain: '한국어 termina en vocal ㅓ → 를.' },
               { options: ['공부해요', '가요', '마셔요', '있어요'], answer: '공부해요', explain: '공부하다 → 공부해요 = estudio.' },
@@ -188,7 +188,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Comiendo',
-            lines: [['Marco', '저는 점심에 밥___ [[0]]. (Al mediodía como arroz.)']],
+            lines: [['Marco', '저는 점심에 밥[[0]] . (Al mediodía como arroz.)']],
             blanks: [
               { options: ['을', '를', '에', '이'], answer: '을', explain: '밥 termina en consonante ㅂ → 을.' },
               { options: ['먹어요', '마셔요', '가요', '해요'], answer: '먹어요', explain: '먹다 → 먹어요 = como.' },
@@ -197,9 +197,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntando qué comes',
             lines: [
-              ['Lina', '[[0]] 먹어요? (¿Qué comes?)'],
-              ['Carlos', '밥___ [[1]]. (Como arroz.)'],
-            ],
+ ['Lina', ' 먹어요? (¿Qué comes?)'],
+ ['Carlos', '밥[[0]] . (Como arroz.)'],
+ ],
             blanks: [
               { options: ['뭘', '뭐는', '뭐이', '뭐가'], answer: '뭘', explain: '뭐를 → 뭘 (coloquial). 뭘 먹어요? = ¿Qué comes?' },
               { options: ['을 먹어요', '를 먹어요', '이 먹어요', '가 먹어요'], answer: '을 먹어요', explain: '밥 + 을 + 먹어요. 밥을 먹어요.' },

@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la rutina usando 前に y 後で correctamente.',
         type: 'guidedText',
         scene: '山田さんの一日のルーティンを説明します。',
-        text: '山田さんは毎朝、起き[[0]] シャワーを浴びます。シャワー[[1]]、朝ご飯を食べます。出かけ[[0]]、バッグを確認します。学校[[1]]、友達に会います。帰宅し[[0]]、手を洗います。',
+        text: '山田さんは毎朝、起き[[0]] シャワーを浴びます。シャワー[[1]]、朝ご飯を食べます。出かけ[[2]]、バッグを確認します。学校[[3]]、友達に会います。帰宅し[[4]]、手を洗います。',
         blanks: [
           { options: ['た後で、', 'る前に、', 'て後で、', 'の後で、'], answer: 'た後で、', explain: '"起きた後で" = después de levantarse. 起きる → 起きた + 後で.' },
           { options: ['の後で、', 'の前に、', 'した後で、', 'する前に、'], answer: 'の後で、', explain: '"シャワーの後で" = después de la ducha. N + の + 後で.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma verbal correcta con 前に o 後で.',
         type: 'freeText',
         scene: '正しい形を書いてください。',
-        text: '寝る___ (前に), 歯を磨きます。 / 映画を見___ 後で, 感想を話します。 / 日本に来___ (前に), 日本語を勉強しました。 / 仕事が終わっ___ 後で, 帰ります。',
+        text: '寝る[[0]] (前に), 歯を磨きます。 / 映画を見[[1]] 後で, 感想を話します。 / 日本に来[[2]] (前に), 日本語を勉強しました。 / 仕事が終わっ[[3]] 後で, 帰ります。',
         blanks: [
           { answer: '前に', explain: '"寝る前に" = 寝る (dic.) + 前に. Forma completa ya dada.' },
           { answer: 'た', explain: '"映画を見た後で" = 見る → 見た + 後で.' },

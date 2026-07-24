@@ -51,22 +51,42 @@ const topic: GrammarTopic = {
     {
       heading: 'Verbos -ere e -ire: la segunda y tercera conjugación del italiano',
       paragraphs: [
-        'Los verbos en -ere incluyen verbos muy frecuentes: prendere (tomar/coger), vedere (ver), leggere (leer), scrivere (escribir), chiedere (preguntar/pedir), mettere (poner), rispondere (responder). Su conjugación en presente es: -o, -i, -e, -iamo, -ete, -ono.',
-        'Los verbos en -ire también son muy comunes: dormire (dormir), aprire (abrir), sentire (sentir/oír), partire (partir/salir), offrire (ofrecer). Siguen el patrón: -o, -i, -e, -iamo, -ite, -ono. La única diferencia con -ere está en voi: -ete (ere) vs -ite (ire).',
+        'Los verbos en -ere (prendere, vedere, leggere, scrivere) y en -ire (dormire, aprire, sentire, partire) comparten casi todas las terminaciones: -o, -i, -e, -iamo, -ono. La ÚNICA diferencia está en voi: -ete para los -ere, -ite para los -ire. Además, muchos -ire insertan -isc- (finire → finisco). Esta tabla muestra los tres patrones de un vistazo:',
+      ],
+      table: [
+        ['Persona', 'prendere (-ere)', 'dormire (-ire)', 'finire (-isc-)'],
+        ['io', 'prendo', 'dormo', 'finisco'],
+        ['tu', 'prendi', 'dormi', 'finisci'],
+        ['lui/lei', 'prende', 'dorme', 'finisce'],
+        ['noi', 'prendiamo', 'dormiamo', 'finiamo'],
+        ['voi', 'prendete', 'dormite', 'finite'],
+        ['loro', 'prendono', 'dormono', 'finiscono'],
       ],
     },
     {
       heading: 'El grupo -isc-: finire, capire y familia',
       paragraphs: [
-        'Muchos verbos en -ire insertan el sufijo -isc- entre el radical y la terminación en las personas io, tu, lui/lei y loro. Finire → finisco, finisci, finisce... finiscono. Capire → capisco, capisci, capisce... capiscono. Esta inserción NO aparece en noi y voi: finiamo, finite.',
-        'Otros verbos -isc- frecuentes en A1-A2: preferire (preferire → preferisco), costruire (costruisco), pulire (pulisco), spedire (spedisco), guarire (guarisco). Reconocerlos es clave porque son muy comunes en conversación cotidiana.',
+        'Muchos verbos en -ire insertan el sufijo -isc- entre el radical y la terminación en las cuatro personas "fuertes" (io, tu, lui/lei, loro). En noi y voi NO aparece: finiamo, finite. No hay una regla infalible para saber qué verbos son -isc-, así que conviene memorizar los más frecuentes:',
+      ],
+      table: [
+        ['Infinitivo', 'io (-isc-)', 'Significado'],
+        ['finire', 'finisco', 'terminar'],
+        ['capire', 'capisco', 'entender'],
+        ['preferire', 'preferisco', 'preferir'],
+        ['pulire', 'pulisco', 'limpiar'],
+        ['spedire', 'spedisco', 'enviar'],
       ],
     },
     {
-      heading: 'Cómo practicar los verbos -ere e -ire en italiano',
+      heading: '¿Cómo se conjugan los verbos en -ere e -ire en italiano?',
       paragraphs: [
-        'Una estrategia efectiva es aprender verbos por parejas de significado: prendere/lasciare (tomar/dejar), aprire/chiudere (abrir/cerrar), dormire/svegliarsi (dormir/despertarse). Practicar la conjugación en contexto real acelera la memorización.',
-        'Para el grupo -isc-, agrupa los verbos más usados y practica io/tu/lui y loro juntos, luego noi/voi separados. La distinción -isc- vs sin -isc- es la regla más importante de los verbos -ire en italiano A1.',
+        'Ambos toman -o, -i, -e, -iamo, -ono. La diferencia está solo en voi: los -ere hacen -ete (prendete) y los -ire hacen -ite (dormite). Ejemplo -ere: prendo, prendi, prende, prendiamo, prendete, prendono. Ejemplo -ire: dormo, dormi, dorme, dormiamo, dormite, dormono.',
+      ],
+    },
+    {
+      heading: '¿Qué verbos italianos llevan -isc- (finisco, capisco)?',
+      paragraphs: [
+        'Son verbos de la tercera conjugación (-ire) que insertan -isc- en io, tu, lui/lei y loro: finire→finisco, capire→capisco, preferire→preferisco, pulire→pulisco, spedire→spedisco, costruire→costruisco. En noi y voi vuelven a la forma sin -isc-: capiamo, capite.',
       ],
     },
   ],
@@ -102,7 +122,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Lees muy bien',
-            lines: [['David', 'Tu ___ molto bene, Sofia. (leggere)']],
+            lines: [['Iván', 'Tu ___ molto bene, Sofia. (leggere)']],
             options: ['leggi', 'legge', 'leggo', 'leggete'],
             answer: 'leggi',
             explain: 'Tu + radical legg- + -i = leggi. Segunda sg de -ere.',
@@ -116,7 +136,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Vosotros coméis',
-            lines: [['Zhanna', 'Voi ___ l\'italiano in questa classe. (capire)']],
+            lines: [['Iris', 'Voi ___ l\'italiano in questa classe. (capire)']],
             options: ['capite', 'capisce', 'capiamo', 'capiscono'],
             answer: 'capite',
             explain: 'Voi finite/capite — en -ire la terminación voi es -ite, sin -isc-.',
@@ -144,7 +164,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella parte mañana',
-            lines: [['David', 'Zhanna ___ per Roma domani. (partire)']],
+            lines: [['Iván', 'Iris ___ per Roma domani. (partire)']],
             options: ['parte', 'parto', 'parti', 'partono'],
             answer: 'parte',
             explain: 'Lei + radical part- + -e = parte. Tercera sg de -ire regular.',
@@ -161,9 +181,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la clase de italiano',
             lines: [
-              ['David', 'Tu [[0]] l\'italiano? (capire)'],
-              ['Carlo', 'Sì, ma non [[1]] tutto. (capire)'],
-            ],
+ ['Iván', 'Tu [[0]] l\'italiano? (capire)'],
+ ['Carlo', 'Sì, ma non [[1]] tutto. (capire)'],
+ ],
             blanks: [
               { options: ['capisci', 'capisce', 'capisco'], answer: 'capisci', explain: 'Tu capisci — grupo -isc- en segunda sg.' },
               { options: ['capisco', 'capisci', 'capisce'], answer: 'capisco', explain: 'Io capisco — primera sg -isc-.' },
@@ -172,9 +192,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Qué leen',
             lines: [
-              ['Sofia', 'Cosa [[0]] tu ogni sera? (leggere)'],
-              ['Lina', 'Di solito [[1]] un romanzo. (leggere)'],
-            ],
+ ['Sofia', 'Cosa [[0]] tu ogni sera? (leggere)'],
+ ['Lina', 'Di solito [[1]] un romanzo. (leggere)'],
+ ],
             blanks: [
               { options: ['leggi', 'leggo', 'legge'], answer: 'leggi', explain: 'Tu leggi — segunda sg de -ere.' },
               { options: ['leggo', 'leggi', 'legge'], answer: 'leggo', explain: 'Io leggo — primera sg de -ere.' },
@@ -205,14 +225,14 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con la forma correcta de cada verbo.',
         type: 'guidedText',
         scene: 'Una jornada normal en la academia WeLearn',
-        text: 'Ogni mattina David [[0]] (aprire) la scuola alle otto. Gli studenti [[1]] (arrivare) e [[2]] (prendere) posto. Zhanna [[3]] (scrivere) la lezione alla lavagna. Tutti [[4]] (leggere) le frasi insieme. Poi David [[5]] (chiedere) domande. Chi non [[6]] (capire) può chiedere aiuto. Alla fine noi [[7]] (finire) con una conversazione libera.',
+        text: 'Ogni mattina Iván [[0]] (aprire) la scuola alle otto. Gli studenti [[1]] (arrivare) e [[2]] (prendere) posto. Iris [[3]] (scrivere) la lezione alla lavagna. Tutti [[4]] (leggere) le frasi insieme. Poi Iván [[5]] (chiedere) domande. Chi non [[6]] (capire) può chiedere aiuto. Alla fine noi [[7]] (finire) con una conversazione libera.',
         blanks: [
-          { options: ['apre', 'apro', 'aprono'], answer: 'apre', explain: 'David (lui) apre — terza sg di aprire (-ire regular).' },
+          { options: ['apre', 'apro', 'aprono'], answer: 'apre', explain: 'Iván (lui) apre — terza sg di aprire (-ire regular).' },
           { options: ['arrivano', 'arriva', 'arriviamo'], answer: 'arrivano', explain: 'Gli studenti (loro) arrivano — -are terza pl.' },
           { options: ['prendono', 'prende', 'prendiamo'], answer: 'prendono', explain: 'Loro prendono — -ere terza pl → -ono.' },
-          { options: ['scrive', 'scrivo', 'scriviamo'], answer: 'scrive', explain: 'Zhanna (lei) scrive — -ere terza sg → -e.' },
+          { options: ['scrive', 'scrivo', 'scriviamo'], answer: 'scrive', explain: 'Iris (lei) scrive — -ere terza sg → -e.' },
           { options: ['leggono', 'legge', 'leggiamo'], answer: 'leggono', explain: 'Tutti (loro) leggono — -ere terza pl.' },
-          { options: ['chiede', 'chiedo', 'chiedono'], answer: 'chiede', explain: 'David (lui) chiede — -ere terza sg → -e.' },
+          { options: ['chiede', 'chiedo', 'chiedono'], answer: 'chiede', explain: 'Iván (lui) chiede — -ere terza sg → -e.' },
           { options: ['capisce', 'capisco', 'capiamo'], answer: 'capisce', explain: 'Chi (lui/lei) capisce — gruppo -isc- terza sg.' },
           { options: ['finiamo', 'finisco', 'finiscono'], answer: 'finiamo', explain: 'Noi finiamo — -ire noi → -iamo, sin -isc-.' },
         ],
@@ -266,9 +286,9 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella escribe bien',
-            prompt: 'Escribe: Zhanna escribe muy bien en italiano. → Zhanna ___ molto bene in italiano. (scrivere)',
-            answer: 'Zhanna scrive molto bene in italiano.',
-            accepted: ['zhanna scrive molto bene in italiano', 'zhanna scrive molto bene in italiano.'],
+            prompt: 'Escribe: Iris escribe muy bien en italiano. → Iris ___ molto bene in italiano. (scrivere)',
+            answer: 'Iris scrive molto bene in italiano.',
+            accepted: ['iris scrive molto bene in italiano', 'iris scrive molto bene in italiano.'],
             explain: 'Lei scrive — terza sg de scrivere (-ere → -e).',
           },
         ],

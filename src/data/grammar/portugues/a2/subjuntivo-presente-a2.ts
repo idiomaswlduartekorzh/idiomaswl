@@ -186,7 +186,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: conjuga el verbo entre paréntesis en subjuntivo presente.',
         type: 'freeText',
         scene: 'Deseos y recomendaciones.',
-        text: 'Quero que você ___ (falar) com ele. / É importante que nós ___ (ir). / Espero que eles ___ (chegar) cedo. / Tomara que ela ___ (ter) sucesso. / Para que vocês ___ (entender), preciso explicar melhor.',
+        text: 'Quero que você [[0]] (falar) com ele. / É importante que nós [[1]] (ir). / Espero que eles [[2]] (chegar) cedo. / Tomara que ela [[3]] (ter) sucesso. / Para que vocês [[4]] (entender), preciso explicar melhor.',
         blanks: [
           { answer: 'fale', explain: '"falar" → 1ª sing: falo → fale (subjuntivo, você).' },
           { answer: 'vamos', explain: '"ir" → subjuntivo: nós vamos (informal) ou nós vá (raro) — en la práctica nós + ir en subjuntivo usa "vamos" coloquialmente.' },

@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: transforma el verbo ordinario en su forma honorífica.',
         type: 'freeText',
         scene: '존댓말 형태로 바꿔 쓰세요.',
-        text: '아버지가 밥을 먹어요. → 아버지께서 ___. / 어머니가 자요. → 어머니께서 ___. / 교수님이 있어요. → 교수님께서 ___.',
+        text: '아버지가 밥을 먹어요. → 아버지께서 [[0]]. / 어머니가 자요. → 어머니께서 [[1]]. / 교수님이 있어요. → 교수님께서 [[2]].',
         blanks: [
           { answer: '진지를 드세요/드십니다', explain: '"드세요" = honorífico de 먹어요. 밥 → 진지.' },
           { answer: '주무세요', explain: '"주무세요" = honorífico de 자요 → 주무시다.' },

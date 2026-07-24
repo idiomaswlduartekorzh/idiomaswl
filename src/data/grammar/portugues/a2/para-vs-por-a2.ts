@@ -187,7 +187,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe "para", "por", "pelo" o "pela".',
         type: 'freeText',
         scene: 'Situaciones cotidianas en portugués.',
-        text: 'Comprei café ___ você. / Obrigado ___ tudo. / Saio ___ o trabalho às 8h. / Andei ___ a praia. / Esperei ___ uma hora.',
+        text: 'Comprei café [[0]] você. / Obrigado [[1]] tudo. / Saio [[2]] o trabalho às 8h. / Andei [[3]] a praia. / Esperei [[4]] uma hora.',
         blanks: [
           { answer: 'para', explain: '"para você" = destinatário.' },
           { answer: 'por', explain: '"por tudo" = causa del agradecimiento.' },

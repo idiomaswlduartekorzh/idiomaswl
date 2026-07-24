@@ -127,14 +127,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La preferencia',
-            lines: [['David', 'Eles ___ ficar em casa a ir à festa.']],
+            lines: [['Diego', 'Eles ___ ficar em casa a ir à festa.']],
             options: ['prefeririam', 'preferem', 'preferiram', 'preferirão'],
             answer: 'prefeririam',
             explain: '"Prefeririam" = condicional de preferir. Eles prefeririam = ellos preferirían.',
           },
           {
             scene: 'El viaje',
-            lines: [['Zhanna', '___ incrível poder visitar o Japão.']],
+            lines: [['Marta', '___ incrível poder visitar o Japão.']],
             options: ['Seria', 'É', 'Foi', 'Será'],
             answer: 'Seria',
             explain: '"Seria" = condicional de ser. Sería increíble visitar Japón.',

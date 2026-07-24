@@ -99,8 +99,8 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David responde a una pregunta',
-            lines: [['David', 'Ich habe ___ Auto. (no tengo coche)']],
+            scene: 'Dario responde a una pregunta',
+            lines: [['Dario', 'Ich habe ___ Auto. (no tengo coche)']],
             options: ['kein', 'nicht', 'keine', 'keinen'],
             answer: 'kein',
             explain: '"Auto" es neutro (das Auto) y va sin artículo definido → "kein Auto".',
@@ -134,15 +134,15 @@ const topic: GrammarTopic = {
             explain: '"Geschwister" es plural y va sin artículo → "keine Geschwister".',
           },
           {
-            scene: 'David no tiene hambre',
-            lines: [['David', 'Ich habe ___ Hunger. (no tengo hambre)']],
+            scene: 'Dario no tiene hambre',
+            lines: [['Dario', 'Ich habe ___ Hunger. (no tengo hambre)']],
             options: ['keinen', 'kein', 'keine', 'nicht'],
             answer: 'keinen',
             explain: '"Hunger" es masculino (der Hunger), acusativo tras "haben" → "keinen Hunger".',
           },
           {
-            scene: 'Zhanna comenta sobre Carlos',
-            lines: [['Zhanna', 'Carlos kommt heute ___. (hoy no viene)']],
+            scene: 'Nora comenta sobre Carlos',
+            lines: [['Nora', 'Carlos kommt heute ___. (hoy no viene)']],
             options: ['nicht', 'kein', 'keine', 'keinen'],
             answer: 'nicht',
             explain: 'Negación del verbo "kommen" → "nicht" al final.',

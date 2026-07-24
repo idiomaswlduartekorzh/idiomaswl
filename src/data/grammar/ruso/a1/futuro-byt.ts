@@ -116,11 +116,11 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la forma correcta del futuro con быть.',
         type: 'guidedText',
-        scene: 'Los planes de David para el próximo año',
-        text: 'В следующем году Дэвид [[0]] работать в Сеуле. (David va a trabajar en Seúl.) Он [[1]] учить корейский каждый день. (Va a estudiar coreano cada día.) Его студенты [[2]] готовиться к экзамену TOPIK. (Sus estudiantes van a prepararse.) Мы [[3]] встречаться по пятницам. (Nos vamos a ver los viernes.) Жанна [[4]] помогать онлайн. (Zhanna va a ayudar online.)',
+        scene: 'Los planes de Tomás para el próximo año',
+        text: 'В следующем году Дэвид [[0]] работать в Сеуле. (Tomás va a trabajar en Seúl.) Он [[1]] учить корейский каждый день. (Va a estudiar coreano cada día.) Его студенты [[2]] готовиться к экзамену TOPIK. (Sus estudiantes van a prepararse.) Мы [[3]] встречаться по пятницам. (Nos vamos a ver los viernes.) Жанна [[4]] помогать онлайн. (Iris va a ayudar online.)',
         blanks: [
           { options: ['будет', 'буду', 'будем', 'будут'], answer: 'будет', explain: 'Дэвид (он) → будет. Tercera persona singular.' },
-          { options: ['будет', 'буду', 'будем', 'будут'], answer: 'будет', explain: 'Он (David) → будет. Aprendizaje futuro.' },
+          { options: ['будет', 'буду', 'будем', 'будут'], answer: 'будет', explain: 'Он (Tomás) → будет. Aprendizaje futuro.' },
           { options: ['будет', 'буду', 'будут', 'будем'], answer: 'будут', explain: 'Студенты (они) → будут. Tercera persona plural.' },
           { options: ['будем', 'будут', 'будет', 'буду'], answer: 'будем', explain: 'Мы → будем. Primera persona plural.' },
           { options: ['будет', 'буду', 'будут', 'будем'], answer: 'будет', explain: 'Жанна (она) → будет. Tercera persona singular.' },
@@ -150,7 +150,7 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           { scene: 'Planes para el año que viene', prompt: 'Traduce al ruso: "El próximo año voy a vivir en Corea y voy a estudiar coreano." (в следующем году = el próximo año, жить = vivir, учить = estudiar)', answer: 'В следующем году я буду жить в Корее и буду учить корейский.', accepted: ['буду жить', 'буду учить'], explain: 'Я буду жить + я буду учить. Dos planes futuros con буду + infinitivo.' },
-          { scene: 'Predicción', prompt: 'Traduce al ruso: "David va a ser un famoso profesor de idiomas. Sus estudiantes van a hablar muchos idiomas." (знаменитый = famoso, преподаватель = profesor)', answer: 'Дэвид будет знаменитым преподавателем языков. Его студенты будут говорить на многих языках.', accepted: ['будет', 'будут говорить'], explain: 'Будет + sustantivo (seré). Будут говорить = van a hablar (futuro con inf).' },
+          { scene: 'Predicción', prompt: 'Traduce al ruso: "Tomás va a ser un famoso profesor de idiomas. Sus estudiantes van a hablar muchos idiomas." (знаменитый = famoso, преподаватель = profesor)', answer: 'Дэвид будет знаменитым преподавателем языков. Его студенты будут говорить на многих языках.', accepted: ['будет', 'будут говорить'], explain: 'Будет + sustantivo (seré). Будут говорить = van a hablar (futuro con inf).' },
           { scene: 'Pregunta y respuesta', prompt: 'Escribe en ruso: "¿Qué vas a hacer mañana? — Voy a trabajar por la mañana y por la tarde voy a aprender ruso." (утром = por la mañana, вечером = por la tarde)', answer: 'Что ты будешь делать завтра? — Утром я буду работать, а вечером я буду учить русский.', accepted: ['будешь делать', 'буду работать', 'буду учить'], explain: 'Будешь делать (pregunta). Буду работать + буду учить (respuesta con dos planes).' },
           { scene: 'Promesas', prompt: 'Escribe en ruso 3 "promesas" de aprendizaje de idiomas: "Voy a estudiar cada día. Voy a hablar más. Nunca voy a rendirme." (сдаваться = rendirse)', answer: 'Я буду учиться каждый день. Я буду говорить больше. Я никогда не буду сдаваться.', accepted: ['буду учиться', 'буду говорить', 'не буду сдаваться'], explain: 'Tres formas con буду + inf. Никогда не буду = nunca voy a (doble negación).' },
         ],

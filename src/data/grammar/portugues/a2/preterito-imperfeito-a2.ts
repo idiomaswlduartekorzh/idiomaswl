@@ -113,14 +113,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La abuela',
-            lines: [['David', 'Minha avó sempre ___ bolo de laranja aos domingos.']],
+            lines: [['Leo', 'Minha avó sempre ___ bolo de laranja aos domingos.']],
             options: ['fazia', 'fez', 'faz', 'fará'],
             answer: 'fazia',
             explain: 'Hábito pasado: fazer (-er irregular) → fazia.',
           },
           {
             scene: 'El fondo de la historia',
-            lines: [['Zhanna', 'Eu ___ quando ouvi o barulho na rua.']],
+            lines: [['Alba', 'Eu ___ quando ouvi o barulho na rua.']],
             options: ['dormia', 'dormi', 'durma', 'dorme'],
             answer: 'dormia',
             explain: 'Fondo narrativo: dormir (-ir) → dormia. Yo dormía cuando...',
@@ -180,7 +180,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El fondo del accidente',
-            lines: [['Zhanna', 'Eu [[0]] (trabalhar) no computador quando de repente [[1]] (começar) a chover muito.']],
+            lines: [['Alba', 'Eu [[0]] (trabalhar) no computador quando de repente [[1]] (começar) a chover muito.']],
             blanks: [
               { options: ['trabalhava', 'trabalhei', 'trabalho'], answer: 'trabalhava', explain: 'Trabalhar, fondo narrativo: trabalhava.' },
               { options: ['começou', 'começava', 'começa'], answer: 'começou', explain: 'El evento súbito usa perfeito: começou. (Contraste: fondo=imperfeito, evento=perfeito)' },
@@ -188,7 +188,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El restaurante antiguo',
-            lines: [['David', 'O restaurante [[0]] (ser) muito bom mas [[1]] (ter) preços altos.']],
+            lines: [['Leo', 'O restaurante [[0]] (ser) muito bom mas [[1]] (ter) preços altos.']],
             blanks: [
               { options: ['era', 'foi', 'é'], answer: 'era', explain: 'Ser, descripción pasada: era.' },
               { options: ['tinha', 'teve', 'tem'], answer: 'tinha', explain: 'Ter, descripción pasada: tinha.' },

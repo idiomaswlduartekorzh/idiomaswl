@@ -75,7 +75,7 @@ const topic: GrammarTopic = {
     {
       heading: 'Contextos reales de uso en A1',
       paragraphs: [
-        'En presentaciones personales: My name is Carlos. My teacher is David. My classmates are great. En descripciones de familia: Her mother is a doctor. His father works in Bogotá. Our house is near the school. Their children study English.',
+        'En presentaciones personales: My name is Carlos. My teacher is Nico. My classmates are great. En descripciones de familia: Her mother is a doctor. His father works in Bogotá. Our house is near the school. Their children study English.',
         'En el aula: Open your books. Put your phones away. Is this your notebook? The school has its own library. En conversaciones sobre pertenencias: Is this your pen? No, it\'s her pen. My bag is the red one.',
       ],
     },
@@ -85,9 +85,27 @@ const topic: GrammarTopic = {
         'Error 1: "Her name is Carlos" (confusión de género del dueño) → His name is Carlos. Carlos es hombre: his. Error 2: "My father and his sister" cuando quieres decir "mi padre y su hermana" (la hermana del padre) → My father and his sister. Si el padre es el dueño, es his. Error 3: "It\'s color is red" → Its color is red. Sin apóstrofe para posesión.',
       ],
       examples: [
-        ['Incorrecto', 'Her name is David. (David es hombre.)', 'Correcto', 'His name is David.'],
+        ['Incorrecto', 'Her name is Nico. (Nico es hombre.)', 'Correcto', 'His name is Nico.'],
         ['Incorrecto', 'My sister loves her dog. (el perro de ella)', 'Correcto', 'My sister loves her dog. ✓'],
         ['Incorrecto', 'The cat licked it\'s paw.', 'Correcto', 'The cat licked its paw.'],
+      ],
+    },
+    {
+      heading: '¿Cuáles son los adjetivos posesivos en inglés?',
+      paragraphs: [
+        'Son: my (mi), your (tu/su), his (su, de él), her (su, de ella), its (su, de cosa/animal), our (nuestro), their (su, de ellos). Van antes del sustantivo y no cambian por número: "my book", "my books". A diferencia del español, concuerdan con el POSEEDOR, no con lo poseído.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre his, her e its?',
+      paragraphs: [
+        'Dependen de quién posee: "his" = de él (his car), "her" = de ella (her car), "its" = de una cosa o animal (the dog and its ball). El español usa "su" para los tres; el inglés obliga a distinguir el género del poseedor.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "su" en inglés?',
+      paragraphs: [
+        'Depende del poseedor: de él = his, de ella = her, de una cosa = its, de usted/ustedes = your, de ellos = their. "Su coche" puede ser "his/her/its/your/their car" según quién lo posea. Es la gran trampa del español "su", que en inglés se desdobla.',
       ],
     },
   ],
@@ -139,7 +157,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Describiendo la pareja',
-            lines: [['David', 'Marco and Lina are great. ___ apartment is near the school.']],
+            lines: [['Nico', 'Marco and Lina are great. ___ apartment is near the school.']],
             options: ['His', 'Her', 'Our', 'Their'],
             answer: 'Their',
             explain: 'Marco and Lina son dos personas: their apartment.',
@@ -183,11 +201,11 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Familia de David',
-            lines: [['Teacher', 'David, tell me about your family.'], ['David', '[[0]] mother is a nurse and [[1]] father is an engineer.']],
+            scene: 'Familia de Nico',
+            lines: [['Teacher', 'Nico, tell me about your family.'], ['Nico', '[[0]] mother is a nurse and [[1]] father is an engineer.']],
             blanks: [
-              { options: ['My', 'His', 'Her', 'Their'], answer: 'My', explain: 'David habla de su propia madre: My mother.' },
-              { options: ['my', 'his', 'her', 'their'], answer: 'my', explain: 'David habla de su propio padre: my father.' },
+              { options: ['My', 'His', 'Her', 'Their'], answer: 'My', explain: 'Nico habla de su propia madre: My mother.' },
+              { options: ['my', 'his', 'her', 'their'], answer: 'my', explain: 'Nico habla de su propio padre: my father.' },
             ],
           },
           {
@@ -215,14 +233,14 @@ const topic: GrammarTopic = {
         intro: 'Elige el posesivo correcto para completar la presentación familiar.',
         type: 'guidedText',
         scene: 'Presentación de la familia WeLearn',
-        text: '[[0]] name is Zhanna and [[1]] partner is David. [[2]] academy is WeLearn. David is a polyglot — [[3]] students love [[4]] classes. Zhanna is the academic director — [[5]] method is very effective. Together [[6]] goal is to help every student.',
+        text: '[[0]] name is Lía and [[1]] partner is Nico. [[2]] academy is WeLearn. Nico is a polyglot — [[3]] students love [[4]] classes. Lía is the academic director — [[5]] method is very effective. Together [[6]] goal is to help every student.',
         blanks: [
-          { options: ['My', 'Her', 'His', 'Our'], answer: 'My', explain: 'Zhanna habla de sí misma: My name.' },
-          { options: ['my', 'her', 'his', 'our'], answer: 'her', explain: 'Su socio (de Zhanna, femenina): her partner. Wait — actually Zhanna is speaking so it should be "my partner". Let me reconsider: "My name is Zhanna and my partner is David." → my.' },
+          { options: ['My', 'Her', 'His', 'Our'], answer: 'My', explain: 'Lía habla de sí misma: My name.' },
+          { options: ['my', 'her', 'his', 'our'], answer: 'her', explain: 'Su socio (de Lía, femenina): her partner. Wait — actually Lía is speaking so it should be "my partner". Let me reconsider: "My name is Lía and my partner is Nico." → my.' },
           { options: ['My', 'Her', 'His', 'Our'], answer: 'Our', explain: 'La academia es de los dos: Our academy.' },
-          { options: ['My', 'Her', 'His', 'Our'], answer: 'His', explain: 'Los estudiantes de David (masculino): His students.' },
-          { options: ['my', 'her', 'his', 'our'], answer: 'his', explain: 'Las clases de David (masculino): his classes.' },
-          { options: ['My', 'Her', 'His', 'Our'], answer: 'Her', explain: 'El método de Zhanna (femenina): Her method.' },
+          { options: ['My', 'Her', 'His', 'Our'], answer: 'His', explain: 'Los estudiantes de Nico (masculino): His students.' },
+          { options: ['my', 'her', 'his', 'our'], answer: 'his', explain: 'Las clases de Nico (masculino): his classes.' },
+          { options: ['My', 'Her', 'His', 'Our'], answer: 'Her', explain: 'El método de Lía (femenina): Her method.' },
           { options: ['my', 'her', 'his', 'our'], answer: 'our', explain: 'El objetivo de los dos: our goal.' },
         ],
       },

@@ -86,6 +86,24 @@ function matchAnswer(user: string, answer: string, accepted?: string[]) {
   return u === norm(answer) || (accepted ?? []).some((a) => u === norm(a))
 }
 
+// Índices de hueco [[n]] presentes en un texto, en orden y sin repetir. El motor
+// sólo renderiza un input por cada [[n]] presente, así que scoring y validación
+// deben derivarse de este conjunto (no de la longitud cruda de `blanks`). Así un
+// desajuste de datos —más blanks que huecos, o al revés— nunca bloquea el nivel.
+function gapIndices(text: string): number[] {
+  const seen = new Set<number>()
+  const out: number[] = []
+  for (const m of text.matchAll(/\[\[(\d+)\]\]/g)) {
+    const i = Number(m[1])
+    if (!seen.has(i)) { seen.add(i); out.push(i) }
+  }
+  return out
+}
+
+function dualItemText(item: DualLevel['items'][number]): string {
+  return item.lines.map(([, t]) => t).join(' ')
+}
+
 function scoreLevel(level: Level, answers: Record<string, string>): { score: number; total: number } {
   if (level.type === 'choice') {
     const l = level as ChoiceLevel
@@ -99,7 +117,10 @@ function scoreLevel(level: Level, answers: Record<string, string>): { score: num
     const l = level as DualLevel
     let score = 0, total = 0
     l.items.forEach((item, ii) => {
-      item.blanks.forEach((blank, bi) => {
+      const present = gapIndices(dualItemText(item))
+      present.forEach((bi) => {
+        const blank = item.blanks[bi]
+        if (!blank) return // hueco sin respuesta definida: no puntúa
         total++
         if ((answers[`${ii}-${bi}`] ?? '').toLowerCase() === blank.answer.toLowerCase()) score++
       })
@@ -108,11 +129,14 @@ function scoreLevel(level: Level, answers: Record<string, string>): { score: num
   }
   if (level.type === 'guidedText' || level.type === 'freeText') {
     const l = level as GuidedTextLevel | FreeTextLevel
-    let score = 0
-    l.blanks.forEach((blank, i) => {
+    let score = 0, total = 0
+    gapIndices(l.text).forEach((i) => {
+      const blank = l.blanks[i]
+      if (!blank) return // hueco extra sin respuesta: no puntúa (evita bloqueo)
+      total++
       if (matchAnswer(answers[`${i}`] ?? '', blank.answer, blank.accepted)) score++
     })
-    return { score, total: l.blanks.length }
+    return { score, total }
   }
   if (level.type === 'write') {
     const l = level as WriteLevel
@@ -159,7 +183,7 @@ function TextWithBlanks({
               onChange={(e) => onChange(key, e.target.value)}
             >
               <option value="">—</option>
-              {shuffledOptions[bi]!.map((o) => <option key={o} value={o}>{o}</option>)}
+              {shuffledOptions[bi]!.map((o, oi) => <option key={oi} value={o}>{o}</option>)}
             </select>
           )
         }
@@ -225,9 +249,9 @@ function ChoicePractice({
         ))}
       </div>
       <div className="options">
-        {shuffledOptions.map((opt) => (
+        {shuffledOptions.map((opt, oi) => (
           <button
-            key={opt}
+            key={oi}
             className={`option${answers[`${idx}`] === opt ? ' is-selected' : ''}`}
             onClick={() => dispatch({ type: 'SET', key: `${idx}`, value: opt })}
           >
@@ -261,7 +285,10 @@ function DualPractice({
 }) {
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
-  const canProceed = item.blanks.every((_, bi) => !!(answers[`${idx}-${bi}`]))
+  // Sólo se exige respuesta para los huecos que realmente se renderizan (aquellos
+  // con un blank definido). Un [[n]] sin blank se muestra como texto y no bloquea.
+  const requiredBi = gapIndices(dualItemText(item)).filter((bi) => item.blanks[bi])
+  const canProceed = requiredBi.every((bi) => !!(answers[`${idx}-${bi}`]))
   const shuffledOptions = useMemo(
     () => item.blanks.map((b) => (b.options ? shuffle(b.options) : undefined)),
     [item],
@@ -278,6 +305,8 @@ function DualPractice({
             {parts.map((part, pi) => {
               if (pi % 2 === 0) return <Fragment key={pi}>{part}</Fragment>
               const bi = parseInt(part)
+              const blank = item.blanks[bi]
+              if (!blank) return <span key={pi} className="blank-field">___</span>
               const key = `${idx}-${bi}`
               return (
                 <select
@@ -287,7 +316,7 @@ function DualPractice({
                   onChange={(e) => dispatch({ type: 'SET', key, value: e.target.value })}
                 >
                   <option value="">—</option>
-                  {(shuffledOptions[bi] ?? []).map((o) => <option key={o} value={o}>{o}</option>)}
+                  {(shuffledOptions[bi] ?? []).map((o, oi) => <option key={oi} value={o}>{o}</option>)}
                 </select>
               )
             })}
@@ -342,7 +371,10 @@ function TextPractice({
   dispatch: React.Dispatch<Action>
   onSubmit: (score: number, total: number) => void
 }) {
-  const canSubmit = level.blanks.every((_, i) => !!(answers[`${i}`]))
+  // Sólo se exigen los huecos [[n]] presentes en el texto que tienen blank
+  // definido; huecos extra son opcionales y blanks sin hueco se ignoran.
+  const requiredIdx = gapIndices(level.text).filter((i) => level.blanks[i])
+  const canSubmit = requiredIdx.every((i) => !!(answers[`${i}`]))
 
   function handleChange(key: string, value: string) {
     dispatch({ type: 'SET', key, value })
@@ -459,7 +491,9 @@ function DeferredReview({ level, answers }: { level: Level; answers: Record<stri
   } else if (level.type === 'dual') {
     const l = level as DualLevel
     l.items.forEach((item, ii) => {
-      item.blanks.forEach((blank, bi) => {
+      gapIndices(dualItemText(item)).forEach((bi) => {
+        const blank = item.blanks[bi]
+        if (!blank) return
         const user = answers[`${ii}-${bi}`] ?? ''
         items.push({
           label: `${item.scene} — espacio ${bi + 1}`,
@@ -472,7 +506,9 @@ function DeferredReview({ level, answers }: { level: Level; answers: Record<stri
     })
   } else if (level.type === 'guidedText' || level.type === 'freeText') {
     const l = level as GuidedTextLevel | FreeTextLevel
-    l.blanks.forEach((blank, i) => {
+    gapIndices(l.text).forEach((i) => {
+      const blank = l.blanks[i]
+      if (!blank) return
       const user = answers[`${i}`] ?? ''
       items.push({
         label: `Espacio ${i + 1}`,

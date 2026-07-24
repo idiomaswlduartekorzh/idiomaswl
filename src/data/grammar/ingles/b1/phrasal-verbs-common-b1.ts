@@ -174,7 +174,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Hablar de hábitos',
-            lines: [['Friend:', 'Did you finally ___ [give up/put off] eating fast food?'], ['You:', 'Yes! I also ___ [take up/run out] going to the gym.']],
+            lines: [['Friend:', 'Did you finally [[0]] [give up/put off] eating fast food?'], ['You:', 'Yes! I also [[1]] [take up/run out] going to the gym.']],
             blanks: [
               { options: ['give up', 'put off', 'take up', 'look up'], answer: 'give up', explain: '"Give up" + -ing = dejar un hábito: gave up eating fast food.' },
               { options: ['took up', 'gave up', 'put off', 'looked up'], answer: 'took up', explain: '"Take up" = empezar un nuevo hobby o actividad: took up going to the gym.' },
@@ -182,7 +182,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Investigación',
-            lines: [['', 'I couldn\'t ___ [find out/look for] who sent the email, so I decided to ___ [look up/give up] the sender\'s name online.']],
+            lines: [['', 'I couldn\'t [[0]] [find out/look for] who sent the email, so I decided to [[1]] [look up/give up] the sender\'s name online.']],
             blanks: [
               { options: ['find out', 'look for', 'take up', 'put off'], answer: 'find out', explain: '"Find out" = descubrir información: couldn\'t find out who sent it.' },
               { options: ['look up', 'look for', 'look after', 'look into'], answer: 'look up', explain: '"Look up" = buscar información en un libro o internet: look up the sender\'s name.' },
@@ -190,7 +190,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Problemas con el coche',
-            lines: [['', 'My car ___ [broke down/ran out] on the highway and I ___ [ran out of/gave up] petrol.']],
+            lines: [['', 'My car [[0]] [broke down/ran out] on the highway and I [[1]] [ran out of/gave up] petrol.']],
             blanks: [
               { options: ['broke down', 'ran out', 'gave up', 'took off'], answer: 'broke down', explain: '"Break down" (máquina) = averiarse: my car broke down.' },
               { options: ['ran out of', 'gave up', 'put off', 'looked up'], answer: 'ran out of', explain: '"Run out of" = quedarse sin algo: ran out of petrol.' },
@@ -198,7 +198,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preparación para el examen',
-            lines: [['', 'I know it\'s hard, but don\'t ___ [give up/put off]. You should ___ [carry on/take up] studying every day.']],
+            lines: [['', 'I know it\'s hard, but don\'t [[0]] [give up/put off]. You should [[1]] [carry on/take up] studying every day.']],
             blanks: [
               { options: ['give up', 'put off', 'take off', 'fall out'], answer: 'give up', explain: '"Give up" = rendirse/abandonar. "Don\'t give up" = no te rindas.' },
               { options: ['carry on', 'take up', 'fall out', 'break down'], answer: 'carry on', explain: '"Carry on" = continuar haciendo algo: carry on studying.' },

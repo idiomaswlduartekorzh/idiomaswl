@@ -164,7 +164,7 @@ const topic: GrammarTopic = {
           { scene: 'Sujeto nominativo', prompt: 'Traduce al ruso: "El libro está en la mesa." (лежит = está/yace, на столе = en la mesa)', answer: 'Книга лежит на столе', accepted: ['книга лежит на столе', 'книга лежит на столе.'], explain: 'Книга лежит на столе. Книга está en nominativo como sujeto. на столе = en la mesa (prepositivo).' },
           { scene: 'Sujeto nominativo', prompt: 'Traduce al ruso: "El estudiante habla ruso." (говорит = habla, по-русски = ruso)', answer: 'Студент говорит по-русски', accepted: ['студент говорит по-русски', 'студент говорит по-русски.'], explain: 'Студент говорит по-русски. Студент en nominativo como sujeto.' },
           { scene: 'Sujeto plural', prompt: 'Traduce al ruso: "Los libros están en la mochila." (в рюкзаке = en la mochila, лежат = están)', answer: 'Книги лежат в рюкзаке', accepted: ['книги лежат в рюкзаке', 'книги лежат в рюкзаке.'], explain: 'Книги (plural nominativo) лежат в рюкзаке.' },
-          { scene: 'Predicado nominal', prompt: 'Traduce al ruso: "Zhanna es profesora." (преподаватель = profesor/a — sin verbo ser en presente)', answer: 'Жанна преподаватель', accepted: ['жанна преподаватель', 'жанна — преподаватель', 'жанна преподаватель.'], explain: 'Жанна преподаватель. En ruso no se usa el verbo ser/estar en presente: Жанна преподаватель.' },
+          { scene: 'Predicado nominal', prompt: 'Traduce al ruso: "Emma es profesora." (преподаватель = profesor/a — sin verbo ser en presente)', answer: 'Жанна преподаватель', accepted: ['жанна преподаватель', 'жанна — преподаватель', 'жанна преподаватель.'], explain: 'Жанна преподаватель. En ruso no se usa el verbo ser/estar en presente: Жанна преподаватель.' },
         ],
       },
       {
@@ -174,8 +174,8 @@ const topic: GrammarTopic = {
         intro: 'Describe personas y objetos usando el nominativo en contexto real.',
         type: 'write',
         items: [
-          { scene: 'Descripción', prompt: 'Carlos le dice a David qué hay en su mesa. Escribe 3 oraciones con sujetos en nominativo. (стол = mesa, ручка = bolígrafo, тетрадь = cuaderno, телефон = teléfono)', answer: 'На столе книга. Ручка лежит на столе. Телефон тоже на столе.', accepted: ['книга', 'ручка', 'тетрадь', 'телефон'], explain: 'Modelo: На столе книга. Ручка лежит на столе. Телефон тоже на столе.' },
-          { scene: 'Presentación', prompt: 'David presenta a Zhanna y a los estudiantes. Escribe 2 oraciones con nominativo plural y singular. (преподаватель = profesora, студенты = estudiantes)', answer: 'Жанна — преподаватель. Студенты работают.', accepted: ['жанна', 'студенты', 'преподаватель'], explain: 'Жанна — преподаватель. Студенты работают. Ambos en nominativo como sujetos.' },
+          { scene: 'Descripción', prompt: 'Carlos le dice a Iván qué hay en su mesa. Escribe 3 oraciones con sujetos en nominativo. (стол = mesa, ручка = bolígrafo, тетрадь = cuaderno, телефон = teléfono)', answer: 'На столе книга. Ручка лежит на столе. Телефон тоже на столе.', accepted: ['книга', 'ручка', 'тетрадь', 'телефон'], explain: 'Modelo: На столе книга. Ручка лежит на столе. Телефон тоже на столе.' },
+          { scene: 'Presentación', prompt: 'Iván presenta a Emma y a los estudiantes. Escribe 2 oraciones con nominativo plural y singular. (преподаватель = profesora, студенты = estudiantes)', answer: 'Жанна — преподаватель. Студенты работают.', accepted: ['жанна', 'студенты', 'преподаватель'], explain: 'Жанна — преподаватель. Студенты работают. Ambos en nominativo como sujetos.' },
         ],
       },
     ],

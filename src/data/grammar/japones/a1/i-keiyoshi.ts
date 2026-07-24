@@ -117,14 +117,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Está frío',
-            lines: [['David', 'きょうは ___。(Hoy hace frío.)']],
+            lines: [['Hugo', 'きょうは ___。(Hoy hace frío.)']],
             options: ['さむいです', 'さむかったです', 'さむくないです', 'さむくなかったです'],
             answer: 'さむいです',
             explain: 'Presente afirmativo: さむい + です.',
           },
           {
             scene: 'Ayer no hizo calor',
-            lines: [['Zhanna', 'きのうは ___。(Ayer no hizo calor.)']],
+            lines: [['Nora', 'きのうは ___。(Ayer no hizo calor.)']],
             options: ['あつくなかったです', 'あつくないです', 'あつかったです', 'あついです'],
             answer: 'あつくなかったです',
             explain: 'Pasado negativo: raíz あつ + くなかったです.',
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La irregularidad de いい',
-            lines: [['David', 'きのうの てんきは [[0]]。でも きょうは [[1]]。(El tiempo ayer fue bueno. Pero hoy no es bueno.)']],
+            lines: [['Hugo', 'きのうの てんきは [[0]]。でも きょうは [[1]]。(El tiempo ayer fue bueno. Pero hoy no es bueno.)']],
             blanks: [
               { options: ['よかったです', 'いかったです', 'いいかったです'], answer: 'よかったです', explain: 'いい pasado → よかったです (irregular).' },
               { options: ['よくないです', 'いくないです', 'いいくないです'], answer: 'よくないです', explain: 'いい presente negativo → よくないです (irregular).' },

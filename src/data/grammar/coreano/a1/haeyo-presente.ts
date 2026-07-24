@@ -111,7 +111,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'En clase de coreano',
-            lines: [['David', '가다의 해요체는 뭐예요? (¿Cuál es la forma 해요체 de 가다?)']],
+            lines: [['Diego', '가다의 해요체는 뭐예요? (¿Cuál es la forma 해요체 de 가다?)']],
             options: ['가요', '가어요', '가이요', '갑니다'],
             answer: '가요',
             explain: '가다 → raíz 가 (ㅏ) → 가+아요 → 가요 (fusión de dos ㅏ).',
@@ -125,7 +125,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Verbos irregulares',
-            lines: [['Zhanna', '공부하다의 해요체는? (¿La forma 해요체 de 공부하다?)']],
+            lines: [['Emma', '공부하다의 해요체는? (¿La forma 해요체 de 공부하다?)']],
             options: ['공부해요', '공부하아요', '공부하요', '공부합니다'],
             answer: '공부해요',
             explain: '하다 → 해요 (irregular). 공부하다 → 공부해요.',
@@ -153,7 +153,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '해요체 vs 합니다체',
-            lines: [['David', '해요체는 어떤 상황에서 써요? (¿En qué situación se usa 해요체?)']],
+            lines: [['Diego', '해요체는 어떤 상황에서 써요? (¿En qué situación se usa 해요체?)']],
             options: ['Conversación cotidiana educada', 'Solo en noticias', 'Solo con jefes', 'Solo en cartas formales'],
             answer: 'Conversación cotidiana educada',
             explain: '해요체 es educada y natural — el registro más versátil para principiantes.',
@@ -177,9 +177,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En el café',
             lines: [
-              ['Lina', '뭐 [[0]]? (¿Qué bebes?)'],
-              ['Carlos', '커피를 [[1]]. (Bebo café.)'],
-            ],
+ ['Lina', '뭐 [[0]]? (¿Qué bebes?)'],
+ ['Carlos', '커피를 [[1]]. (Bebo café.)'],
+ ],
             blanks: [
               { options: ['마셔요', '마시요', '마십니다', '마시어요'], answer: '마셔요', explain: '마시다 → 마셔요. Pregunta: 뭐 마셔요?' },
               { options: ['마셔요', '마시어요', '마시요', '마십니다'], answer: '마셔요', explain: '커피를 마셔요 = bebo café. 마시다 → 마셔요.' },
@@ -188,9 +188,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Después de clases',
             lines: [
-              ['Ana', '오늘 어디 [[0]]? (¿Adónde vas hoy?)'],
-              ['Marco', '집에 [[1]]. (Voy a casa.)'],
-            ],
+ ['Ana', '오늘 어디 [[0]]? (¿Adónde vas hoy?)'],
+ ['Marco', '집에 [[1]]. (Voy a casa.)'],
+ ],
             blanks: [
               { options: ['가요', '가어요', '가이요', '갑니다'], answer: '가요', explain: '가다 → 가요. Pregunta de destino con 어디.' },
               { options: ['가요', '가어요', '갑니다', '가이요'], answer: '가요', explain: '집에 가요 = voy a casa. 가다 → 가요.' },
@@ -199,20 +199,20 @@ const topic: GrammarTopic = {
           {
             scene: 'En WeLearn',
             lines: [
-              ['Zhanna', '지금 뭐 [[0]]? (¿Qué haces ahora?)'],
-              ['Sofia', '한국어를 [[1]]. (Estudio coreano.)'],
-            ],
+ ['Emma', '지금 뭐 [[0]]? (¿Qué haces ahora?)'],
+ ['Sofia', '한국어를 [[1]]. (Estudio coreano.)'],
+ ],
             blanks: [
               { options: ['해요', '하아요', '하요', '합니다'], answer: '해요', explain: '하다 → 해요. 뭐 해요? = ¿Qué haces?' },
               { options: ['공부해요', '공부하아요', '공부해', '공부합니다'], answer: '공부해요', explain: '공부하다 → 공부해요. Verbo con 하다.' },
             ],
           },
           {
-            scene: 'Hablando de David',
+            scene: 'Hablando de Diego',
             lines: [
-              ['Carlos', '데이비드 선생님이 어디서 [[0]]? (¿Dónde viene David?)'],
-              ['Lina', '부카라망가에서 [[1]]. (Viene de Bucaramanga.)'],
-            ],
+ ['Carlos', '데이비드 선생님이 어디서 [[0]]? (¿Dónde viene Diego?)'],
+ ['Lina', '부카라망가에서 [[1]]. (Viene de Bucaramanga.)'],
+ ],
             blanks: [
               { options: ['와요', '오아요', '오요', '옵니다'], answer: '와요', explain: '오다 → 와요. 어디서 와요? = ¿De dónde viene?' },
               { options: ['와요', '오아요', '오요', '옵니다'], answer: '와요', explain: '부카라망가에서 와요 = viene de Bucaramanga. 오다 → 와요.' },
@@ -244,7 +244,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma 해요체 correcta de cada verbo.',
         type: 'freeText',
         scene: 'Conjugación en contexto',
-        text: '저는 한국어를 배우___. (배우다) / 친구가 와___. (오다) / 우리는 같이 밥을 먹___. (먹다) / 지금 뭐 하___? (하다) / 저는 매일 운동해___. (운동하다)',
+        text: '저는 한국어를 배우[[0]]. (배우다) / 친구가 와[[1]]. (오다) / 우리는 같이 밥을 먹[[2]]. (먹다) / 지금 뭐 하[[3]]? (하다) / 저는 매일 운동해[[4]]. (운동하다)',
         blanks: [
           { answer: '배워요', accepted: ['배워요'], explain: '배우다 → 배워요. ㅜ+ㅓ=ㅝ.' },
           { answer: '와요', accepted: ['와요'], explain: '오다 → 와요. ㅗ+ㅏ=ㅘ.' },

@@ -94,7 +94,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrucción formal',
-            lines: [['David', '___ votre nom, s\'il vous plaît. (vous, écrire)']],
+            lines: [['Nico', '___ votre nom, s\'il vous plaît. (vous, écrire)']],
             options: ['Écrivez', 'Écris', 'Écrivons', 'Écrire'],
             answer: 'Écrivez',
             explain: '"vous" → écrire → écrivez. Mismo que le présent vous-form.',
@@ -122,7 +122,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Verbo irregular être',
-            lines: [['David', '___ patient! L\'anglais prend du temps. (tu, être)']],
+            lines: [['Nico', '___ patient! L\'anglais prend du temps. (tu, être)']],
             options: ['Sois', 'Soit', 'Soyez', 'Être'],
             answer: 'Sois',
             explain: '"être" imperativo tu → sois (irregular). Sois patient = Sé paciente.',
@@ -176,7 +176,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrucción formal',
-            lines: [['David', '[[0]] [[1]] votre dictionnaire pour cet exercice! (vous, utiliser)']],
+            lines: [['Nico', '[[0]] [[1]] votre dictionnaire pour cet exercice! (vous, utiliser)']],
             blanks: [
               { options: ['Utilisez', 'Utilise', 'Utilisons'], answer: 'Utilisez', explain: '"vous" → utilisez.' },
               { options: ['votre', 'vos', 'leur'], answer: 'votre', explain: '"Votre dictionnaire" — "votre" para vous singular formal.' },
@@ -190,7 +190,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la forma imperativa correcta para completar las instrucciones del profesor.',
         type: 'guidedText',
-        scene: 'Clase de francés con David en WeLearn — instrucciones del profesor',
+        scene: 'Clase de francés con Nico en WeLearn — instrucciones del profesor',
         text: 'Bonjour à tous! [[0]] vos cahiers! [[1]] à la page 15. [[2]] l\'exercice 3 en silence. [[3]] pas de téléphone pendant le cours. [[4]] attention à la prononciation. Et surtout, ne [[5]] pas d\'avoir des questions — je suis là pour vous aider!',
         blanks: [
           { options: ['Ouvrez', 'Ouvre', 'Ouvrons'], answer: 'Ouvrez', explain: 'Toda la clase (vous) → Ouvrez vos cahiers.' },
@@ -208,7 +208,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma imperativa del verbo entre paréntesis.',
         type: 'freeText',
         scene: 'Completar instrucciones y consejos con la forma imperativa correcta',
-        text: '___ (parler-tu) plus lentement, s\'il te plaît! / ___ (finir-vous) l\'exercice avant 15h. / ___ (être-tu) courageux! / Ne ___ (regarder-tu) pas ton téléphone! / ___ (prendre-nous) le métro. / ___ (avoir-vous) confiance en vous!',
+        text: '[[0]] (parler-tu) plus lentement, s\'il te plaît! / [[1]] (finir-vous) l\'exercice avant 15h. / [[2]] (être-tu) courageux! / Ne [[3]] (regarder-tu) pas ton téléphone! / [[4]] (prendre-nous) le métro. / [[5]] (avoir-vous) confiance en vous!',
         blanks: [
           { answer: 'Parle', accepted: ['Parle', 'parle'], explain: '"parler" -er, tu → parle (sans -s).' },
           { answer: 'Finissez', accepted: ['Finissez', 'finissez'], explain: '"finir" -ir, vous → finissez.' },

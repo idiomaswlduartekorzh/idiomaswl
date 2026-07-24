@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
       table: [
         ['Adjetivo', 'Comparativo', 'Ejemplo'],
-        ['tall', 'taller than', 'David is taller than his brother.'],
+        ['tall', 'taller than', 'Gael is taller than his brother.'],
         ['happy', 'happier than', 'She is happier than before.'],
         ['expensive', 'more expensive than', 'Seoul is more expensive than Bucaramanga.'],
         ['interesting', 'more interesting than', 'Korean is more interesting than I expected.'],

@@ -102,14 +102,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Explicacion formal',
-            lines: [['David', '오늘 수업을 쉽니다. 제가 아프___ 때문에. (Hoy no hay clase. Porque estoy enfermo.)']],
+            lines: [['Diego', '오늘 수업을 쉽니다. 제가 아프___ 때문에. (Hoy no hay clase. Porque estoy enfermo.)']],
             options: ['기', '아기', '어기', '이기'],
             answer: '기',
             explain: '아프다 → raiz 아프 + -기 때문에. Sin vocal de armonia en -기.',
           },
           {
             scene: 'Causa de la ausencia',
-            lines: [['Zhanna', '학생이 결석했어요. 일___ 때문이에요. (La estudiante falto. Es por el trabajo.)']],
+            lines: [['Elena', '학생이 결석했어요. 일___ 때문이에요. (La estudiante falto. Es por el trabajo.)']],
             options: ['이', '기', '아기', '어기'],
             answer: '이',
             explain: '일 es sustantivo → 일 + 이에요 → 일 때문이에요. O solo: 일 때문에.',
@@ -130,7 +130,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Con mandato',
-            lines: [['Zhanna', '위험하___ 때문에 조심하세요. (Porque es peligroso, tenga cuidado.)']],
+            lines: [['Elena', '위험하___ 때문에 조심하세요. (Porque es peligroso, tenga cuidado.)']],
             options: ['기', '아기', '어기', '이기'],
             answer: '기',
             explain: '위험하다 → 위험하기 때문에. Con mandato es posible con -기 때문에.',
@@ -168,9 +168,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Reunion de trabajo',
             lines: [
-              ['Carlos', '왜 회의에 안 왔어요? (¿Por que no viniste a la reunion?)'],
-              ['Marco', '아이가 [[0]] (아프다) 때문에 집에 있어야 했어요. 정말 [[1]] (미안하다). (Porque mi hijo estaba enfermo, tuve que quedarme en casa. Lo siento mucho.)'],
-            ],
+ ['Carlos', '왜 회의에 안 왔어요? (¿Por que no viniste a la reunion?)'],
+ ['Marco', '아이가 [[0]] (아프다) 때문에 집에 있어야 했어요. 정말 [[1]] (미안하다). (Porque mi hijo estaba enfermo, tuve que quedarme en casa. Lo siento mucho.)'],
+ ],
             blanks: [
               { options: ['아프기', '아파기', '아프아기', '아프어기'], answer: '아프기', explain: '아프다 → 아프기 때문에. Con -기 la raiz no cambia por armonia vocal.' },
               { options: ['미안해요', '미안기 때문에', '미안합니다', '미안해서요'], answer: '미안해요', explain: 'Expresion de disculpa: 미안하다 → 미안해요.' },
@@ -179,9 +179,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Explicacion al profesor',
             lines: [
-              ['Zhanna', '왜 숙제를 못 했어요? (¿Por que no pudiste hacer la tarea?)'],
-              ['Ana', '일___ 때문에 시간이 없었어요. 오늘은 꼭 [[1]] (하다). (Por el trabajo no tuve tiempo. Hoy seguro la hago.)'],
-            ],
+ ['Elena', '왜 숙제를 못 했어요? (¿Por que no pudiste hacer la tarea?)'],
+ ['Ana', '일[[0]] 때문에 시간이 없었어요. 오늘은 꼭 (하다). (Por el trabajo no tuve tiempo. Hoy seguro la hago.)'],
+ ],
             blanks: [
               { options: ['', '기', '이', '가'], answer: '', explain: '일 es sustantivo → directamente 일 때문에.' },
               { options: ['할게요', '해서요', '하기 때문에', '하아요'], answer: '할게요', explain: 'Promesa: 하다 → 할게요.' },
@@ -190,9 +190,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Aviso de clase',
             lines: [
-              ['David', '이번 주 수요일 수업은 어떻게 돼요? (¿Como queda la clase del miercoles esta semana?)'],
-              ['Zhanna', '선생님이 출장___ 때문에 수업이 [[1]] (없다). (Porque el profesor tiene un viaje de trabajo, no hay clase.)'],
-            ],
+ ['Diego', '이번 주 수요일 수업은 어떻게 돼요? (¿Como queda la clase del miercoles esta semana?)'],
+ ['Elena', '선생님이 출장[[0]] 때문에 수업이 (없다). (Porque el profesor tiene un viaje de trabajo, no hay clase.)'],
+ ],
             blanks: [
               { options: ['이', '기', '가', '을'], answer: '이', explain: '출장 es sustantivo → 출장 때문에. El 이에요 es parte de la oracion: "출장 때문이에요" o "출장 때문에".' },
               { options: ['없을 거예요', '없기 때문에', '없어서', '없이요'], answer: '없을 거예요', explain: '없다 → 없을 거예요 (no habra clase).' },
@@ -201,9 +201,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Consejo de salud',
             lines: [
-              ['Lina', '왜 매일 운동해요? (¿Por que haces ejercicio todos los dias?)'],
-              ['Marco', '건강이 중요하[[0]] 때문에 운동해요. 그리고 스트레스___ [[1]] 에도 도움이 돼요. (Porque la salud es importante, hago ejercicio. Tambien ayuda con el estres.)'],
-            ],
+ ['Lina', '왜 매일 운동해요? (¿Por que haces ejercicio todos los dias?)'],
+ ['Marco', '건강이 중요하 때문에 운동해요. 그리고 스트레스[[0]] 에도 도움이 돼요. (Porque la salud es importante, hago ejercicio. Tambien ayuda con el estres.)'],
+ ],
             blanks: [
               { options: ['기', '아기', '어기', '이기'], answer: '기', explain: '중요하다 → 중요하기 때문에.' },
               { options: ['때문', '기 때문에', '이어서', '가'], answer: '때문', explain: 'Sustantivo 스트레스 + 때문에 → 스트레스 때문에도.' },
@@ -217,7 +217,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el texto con -기 때문에 o sustantivo + 때문에.',
         type: 'guidedText',
-        scene: 'Carta formal de Zhanna a los padres de los estudiantes',
+        scene: 'Carta formal de Elena a los padres de los estudiantes',
         text: '안녕하세요. 이번 주 금요일은 학교 행사[[0]] 때문에 수업이 없습니다. 날씨가 좋[[1]] 때문에 야외 활동을 할 예정입니다. 학생들이 열심히 공부하[[2]] 때문에 선생님들이 기쁩니다. 준비물은 운동화와 물병입니다. 비용[[3]] 때문에 걱정하지 마세요 — 무료입니다. 더 궁금한 점이 있으[[4]] 때문에 연락하지 마시고 이메일을 보내 주세요.',
         blanks: [
           { options: ['', '기', '이', '가'], answer: '', explain: '학교 행사 es sustantivo → 행사 때문에 (sin -기).' },
@@ -234,7 +234,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta para completar las razones.',
         type: 'freeText',
         scene: 'Explicaciones escolares de un estudiante',
-        text: '한국어를 배우___ 때문에 시간이 많이 걸려요. (배우다) / 오늘 날씨가 나쁘___ 때문에 소풍을 안 가요. (나쁘다) / 숙제가 많___ 때문에 놀 수 없어요. (많다) / 선생님___ 때문에 열심히 공부해요. (sustantivo) / 몸이 좋지 않___ 때문에 병원에 갔어요. (좋지 않다)',
+        text: '한국어를 배우[[0]] 때문에 시간이 많이 걸려요. (배우다) / 오늘 날씨가 나쁘[[1]] 때문에 소풍을 안 가요. (나쁘다) / 숙제가 많[[2]] 때문에 놀 수 없어요. (많다) / 선생님[[3]] 때문에 열심히 공부해요. (sustantivo) / 몸이 좋지 않[[4]] 때문에 병원에 갔어요. (좋지 않다)',
         blanks: [
           { answer: '배우기', explain: '배우다 → 배우기 때문에.' },
           { answer: '나쁘기', explain: '나쁘다 → 나쁘기 때문에.' },

@@ -168,7 +168,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la comparación de ciudades con より, ほど y 一番.',
         type: 'guidedText',
         scene: '日本の都市を比較しています。',
-        text: '東京は大阪[[0]]大きいです。でも大阪は東京[[1]]物価が高くないです。京都は東京[[0]]古い街です。日本で[[2]]有名な山は富士山です。大阪と京都と[[3]]行きたいですか？',
+        text: '東京は大阪[[0]]大きいです。でも大阪は東京[[1]]物価が高くないです。京都は東京[[2]]古い街です。日本で[[3]]有名な山は富士山です。大阪と京都と[[4]]行きたいですか？',
         blanks: [
           { options: ['より', 'ほど', 'くらい', 'の方が'], answer: 'より', explain: '"大阪より大きい" = más grande que Osaka. B + より + adj.' },
           { options: ['ほど', 'より', 'くらい', 'の方が'], answer: 'ほど', explain: '"東京ほど高くない" = no tan caro como Tokio. B + ほど + neg.' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma de comparación correcta.',
         type: 'freeText',
         scene: '比較の文を完成させてください。',
-        text: '東京は大阪___ 大きい。(más grande que) / バスは電車___ 速くない。(no tan rápido como) / クラスで___ 背が高い。(el más alto) / コーヒー___ お茶___ 好きですか？(¿cuál prefieres?)',
+        text: '東京は大阪[[0]] 大きい。(más grande que) / バスは電車[[1]] 速くない。(no tan rápido como) / クラスで[[2]] 背が高い。(el más alto) / コーヒー[[3]] お茶[[4]] 好きですか？(¿cuál prefieres?)',
         blanks: [
           { answer: 'より', explain: '"大阪より大きい" = más grande que Osaka.' },
           { answer: 'ほど', explain: '"電車ほど速くない" = no tan rápido como el tren. ほど + neg.' },

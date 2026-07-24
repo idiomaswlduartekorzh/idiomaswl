@@ -206,9 +206,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Revisando el trabajo',
             lines: [
-              ['Boss:', '[[0]] you [[1]] the quarterly report?'],
-              ['Employee:', 'Not yet — I\'ll have it ready by 5pm.'],
-            ],
+ ['Boss:', '[[0]] you [[1]] the quarterly report?'],
+ ['Employee:', 'Not yet — I\'ll have it ready by 5pm.'],
+ ],
             blanks: [
               { options: ['Have', 'Has', 'Did', 'Do'], answer: 'Have', explain: 'Pregunta con "you" → "Have you...?"' },
               { options: ['finished', 'finish', 'finishes', 'finishing'], answer: 'finished', explain: '"Finished" = participio regular de finish.' },

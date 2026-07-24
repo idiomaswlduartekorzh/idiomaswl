@@ -102,7 +102,7 @@ const topic: GrammarTopic = {
           { scene: 'Ahora en metro', lines: [['', '"Voy en metro al centro ahora": Я [[0]] в центр [[1]].']], blanks: [{ options: ['иду', 'еду', 'хожу', 'езжу'], answer: 'еду', explain: 'Еду = voy en vehículo ahora (yo). ехать → еду.' }, { options: ['пешком', 'на метро', 'в метро', 'метро'], answer: 'на метро', explain: 'На метро = en metro. В + acusativo para destino; на + dativo para transporte.' }] },
           { scene: 'Habitual a pie', lines: [['', '"Siempre voy a la escuela a pie": Я всегда [[0]] в школу [[1]].']], blanks: [{ options: ['иду', 'еду', 'хожу', 'езжу'], answer: 'хожу', explain: 'Хожу = voy habitualmente a pie (yo). ходить → хожу.' }, { options: ['на автобусе', 'на метро', 'пешком', 'на машине'], answer: 'пешком', explain: 'Пешком = a pie. Хожу пешком = voy caminando.' }] },
           { scene: 'Pregunta de movimiento', lines: [['', '"¿Adónde vas ahora (en vehículo)?": Куда ты [[0]] [[1]]?']], blanks: [{ options: ['идёшь', 'едешь', 'ходишь', 'ездишь'], answer: 'едешь', explain: 'Едешь = vas en vehículo ahora (тебе/ты). ехать → едешь.' }, { options: ['пешком', 'сейчас', 'вчера', 'часто'], answer: 'сейчас', explain: 'Сейчас = ahora. Куда ты едешь сейчас? = ¿Adónde vas ahora?' }] },
-          { scene: 'Habitual + destino', lines: [['', '"Zhanna va habitualmente a la academia en carro": Жанна [[0]] в академию [[1]].']], blanks: [{ options: ['идёт', 'едет', 'ходит', 'ездит'], answer: 'ездит', explain: 'Ездит = va habitualmente en vehículo (она). ездить → ездит.' }, { options: ['пешком', 'на метро', 'на машине', 'на работу'], answer: 'на машине', explain: 'На машине = en carro. Transporte: на + vehículo.' }] },
+          { scene: 'Habitual + destino', lines: [['', '"Iris va habitualmente a la academia en carro": Жанна [[0]] в академию [[1]].']], blanks: [{ options: ['идёт', 'едет', 'ходит', 'ездит'], answer: 'ездит', explain: 'Ездит = va habitualmente en vehículo (она). ездить → ездит.' }, { options: ['пешком', 'на метро', 'на машине', 'на работу'], answer: 'на машине', explain: 'На машине = en carro. Transporte: на + vehículo.' }] },
         ],
       },
       {
@@ -111,7 +111,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige el verbo de movimiento correcto en cada espacio.',
         type: 'guidedText',
-        scene: 'La rutina de David y su viaje a Moscú',
+        scene: 'La rutina de Diego y su viaje a Moscú',
         text: 'Каждый день Дэвид [[0]] в академию на метро. (Va habitualmente en metro) Сегодня он [[1]] в Москву на самолёте. (Hoy va a Moscú en avión) Его студенты [[2]] в академию пешком каждый день. (Van a pie habitualmente) Сейчас Жанна [[3]] домой на такси. (Ahora va a casa en taxi) Дэвид [[4]] на конференции много. (Va a conferencias habitualmente en vehículo)',
         blanks: [
           { options: ['идёт', 'едет', 'ходит', 'ездит'], answer: 'ездит', explain: 'Ездит = va habitualmente en vehículo (он). Cada día en metro = habitual + vehículo.' },
@@ -147,7 +147,7 @@ const topic: GrammarTopic = {
           { scene: 'Ahora vs habitual', prompt: 'Traduce al ruso: "Normalmente voy al trabajo en metro. Hoy voy en taxi porque llueve." (на работу = al trabajo, сегодня = hoy, потому что = porque, идёт дождь = llueve)', answer: 'Обычно я езжу на работу на метро. Сегодня я еду на такси, потому что идёт дождь.', accepted: ['езжу', 'еду'], explain: 'Обычно (normalmente) + езжу (habitual vehículo). Сегодня + еду (ahora, vehículo). La situación cambia el verbo.' },
           { scene: 'A pie vs vehículo', prompt: 'Traduce al ruso: "Mi madre va al mercado a pie, pero mi padre siempre va en carro." (мать = madre, отец = padre, рынок = mercado, всегда = siempre)', answer: 'Моя мать ходит на рынок пешком, но мой отец всегда ездит на машине.', accepted: ['ходит', 'ездит'], explain: 'Ходит (habitual a pie) vs ездит (habitual en vehículo). Contraste perfecto de los dos pares.' },
           { scene: 'Preguntar y responder', prompt: 'Traduce: "¿Adónde vas ahora? — Voy a la academia a pie. ¿Y tú? — Voy en metro."', answer: 'Куда ты идёшь сейчас? — Я иду в академию пешком. А ты? — Я еду на метро.', accepted: ['идёшь', 'иду', 'еду'], explain: 'Куда + идёшь (ты, a pie, ahora). Иду (yo, a pie, ahora). Еду (yo, metro, ahora).' },
-          { scene: 'Narración habitual', prompt: 'Traduce: "David va a la universidad todos los días en metro. Los estudiantes van a pie porque viven cerca." (университет = universidad, каждый день = cada día, живут = viven, рядом = cerca)', answer: 'Дэвид каждый день ездит в университет на метро. Студенты ходят пешком, потому что живут рядом.', accepted: ['ездит', 'ходят'], explain: 'Ездит (habitual + metro) vs ходят (habitual + a pie). Caída completa de los cuatro verbos.' },
+          { scene: 'Narración habitual', prompt: 'Traduce: "Diego va a la universidad todos los días en metro. Los estudiantes van a pie porque viven cerca." (университет = universidad, каждый день = cada día, живут = viven, рядом = cerca)', answer: 'Дэвид каждый день ездит в университет на метро. Студенты ходят пешком, потому что живут рядом.', accepted: ['ездит', 'ходят'], explain: 'Ездит (habitual + metro) vs ходят (habitual + a pie). Caída completa de los cuatro verbos.' },
         ],
       },
       {

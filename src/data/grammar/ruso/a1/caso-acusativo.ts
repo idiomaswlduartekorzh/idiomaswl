@@ -129,7 +129,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma acusativa correcta para completar cada oración.',
         type: 'guidedText',
         scene: 'Usando el acusativo con verbos transitivos',
-        text: 'Я читаю [[0]]. (Leo un libro.) Давид видит [[1]]. (David ve al estudiante.) Я люблю [[2]]. (Amo la música.) Анна пьёт [[3]]. (Ana bebe agua.) Мы знаем [[4]]. (Conocemos al profesor.)',
+        text: 'Я читаю [[0]]. (Leo un libro.) Давид видит [[1]]. (Dario ve al estudiante.) Я люблю [[2]]. (Amo la música.) Анна пьёт [[3]]. (Ana bebe agua.) Мы знаем [[4]]. (Conocemos al profesor.)',
         blanks: [
           { options: ['книга', 'книгу', 'книге', 'книги'], answer: 'книгу', explain: 'книга → книгу. Femenino -а → -у en acusativo.' },
           { options: ['студент', 'студенту', 'студента', 'студентом'], answer: 'студента', explain: 'студент (animado masc) → студента. Acusativo animado = genitivo.' },

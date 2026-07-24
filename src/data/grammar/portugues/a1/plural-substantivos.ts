@@ -85,7 +85,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Libros',
             lines: [['Carlos', 'Tenho dois ___ de português.']],
-            options: ['livros', 'livres', 'livros', 'livrões'],
+            options: ['livros', 'livres', 'livrões'],
             answer: 'livros',
             explain: 'Livro + s = livros. Regla general.',
           },
@@ -112,14 +112,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Animales',
-            lines: [['David', 'Há muitos ___ no parque.']],
+            lines: [['Enzo', 'Há muitos ___ no parque.']],
             options: ['animais', 'animals', 'animales', 'animaes'],
             answer: 'animais',
             explain: 'Animal → animais. -al → -ais.',
           },
           {
             scene: 'Papeles',
-            lines: [['Zhanna', 'Preciso de vários ___ para o projeto.']],
+            lines: [['Elena', 'Preciso de vários ___ para o projeto.']],
             options: ['papéis', 'papeis', 'papers', 'papeles'],
             answer: 'papéis',
             explain: 'Papel → papéis. -el → -éis (con acento).',

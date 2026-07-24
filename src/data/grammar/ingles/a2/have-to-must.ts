@@ -209,8 +209,8 @@ const topic: GrammarTopic = {
           {
             scene: 'En el hospital',
             lines: [
-              ['Nurse:', 'You [[0]] stay overnight for observation. You [[1]] worry — it\'s just a precaution.'],
-            ],
+ ['Nurse:', 'You [[0]] stay overnight for observation. You [[1]] worry — it\'s just a precaution.'],
+ ],
             blanks: [
               { options: ['have to', 'don\'t have to', 'mustn\'t', 'must to'], answer: 'have to', explain: '"Have to stay" — obligación médica.' },
               { options: ['don\'t have to', 'mustn\'t', 'must', 'have to'], answer: 'don\'t have to', explain: '"Don\'t have to worry" — tranquilizando al paciente, no es necesario preocuparse.' },

@@ -101,7 +101,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando el objeto',
-            lines: [['David', '___ を たべますか？ (¿Qué comes?)']],
+            lines: [['Gael', '___ を たべますか？ (¿Qué comes?)']],
             options: ['なに', 'だれ', 'どれ', 'どう'],
             answer: 'なに',
             explain: 'なに (nani) = qué. Objeto con を → なにを. 何を たべますか？= ¿qué comes?',
@@ -129,7 +129,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando la opinión',
-            lines: [['Zhanna', 'にほんご は ___ おもいますか？ (¿Qué piensas del japonés?)']],
+            lines: [['Vera', 'にほんご は ___ おもいますか？ (¿Qué piensas del japonés?)']],
             options: ['どう', 'なに', 'どこ', 'なぜ'],
             answer: 'どう',
             explain: 'どう (dō) = cómo / qué tal. Opinión → どう おもいますか = ¿qué piensas?',
@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Qué comes',
-            lines: [['David', '[[0]] [[1]] たべますか？ (¿Qué comes?)']],
+            lines: [['Gael', '[[0]] [[1]] たべますか？ (¿Qué comes?)']],
             blanks: [
               { options: ['なに', 'だれ', 'どこ'], answer: 'なに', explain: 'なに (nani) = qué. Elemento desconocido = objeto.' },
               { options: ['を', 'が', 'に'], answer: 'を', explain: 'Objeto de comer → を. 何を たべますか？' },
@@ -190,7 +190,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige el interrogativo correcto para cada espacio.',
         type: 'guidedText',
-        scene: 'David pregunta a Carlos sobre sus estudios de japonés',
+        scene: 'Gael pregunta a Carlos sobre sus estudios de japonés',
         text: 'デービッド: カルロスさん、[[0]]に すんでいますか？カルロス: コロンビアに すんでいます。デービッド: [[1]]から にほんごを べんきょうしていますか？カルロス: 6ヶ月前からです。デービッド: [[2]]を べんきょうしていますか？カルロス: にほんごと コリア語です。デービッド: [[3]] べんきょうしますか？カルロス: まいにち 2じかんです。デービッド: [[4]]で べんきょうしますか？カルロス: ウィーラーンで べんきょうします。デービッド: [[5]] にほんごが すきですか？カルロス: おもしろいから すきです！',
         blanks: [
           { options: ['どこ', 'いつ', 'なに'], answer: 'どこ', explain: 'どこ (doko) = dónde. Preguntando lugar de residencia.' },

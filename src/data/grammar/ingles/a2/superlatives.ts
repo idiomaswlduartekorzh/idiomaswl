@@ -203,7 +203,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablando de una película',
-            lines: [['', 'It was [[0]] film I\'ve ever seen — [[1]] cast, [[1]] story!']],
+            lines: [['', 'It was [[0]] film I\'ve ever seen — [[1]] cast, [[2]] story!']],
             blanks: [
               { options: ['the best', 'the most good', 'the goodest', 'better'], answer: 'the best', explain: '"Good" → the best.' },
               { options: ['the best', 'better', 'good', 'the most good'], answer: 'the best', explain: 'Superlativo de "good": the best.' },

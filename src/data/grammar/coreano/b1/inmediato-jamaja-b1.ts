@@ -117,7 +117,7 @@ const topic: GrammarTopic = {
         intro: 'Completa narrativa con sucesión inmediata.',
         type: 'guidedText',
         scene: 'Recuento de eventos rápidos.',
-        text: '학교에 도착하___ 비가 내리기 시작했어요. 강의가 끝나___ 모두 나갔어요. 핸드폰이 울리___ 받았어요.',
+        text: '학교에 도착하[[0]] 비가 내리기 시작했어요. 강의가 끝나[[1]] 모두 나갔어요. 핸드폰이 울리[[2]] 받았어요.',
         blanks: [
           { options: ['자마자', '고 나서'], answer: '자마자', explain: '-자마자 para inmediato.' },
           { options: ['자마자', '고 나서'], answer: '자마자', explain: '-자마자 para sucesión rápida.' },

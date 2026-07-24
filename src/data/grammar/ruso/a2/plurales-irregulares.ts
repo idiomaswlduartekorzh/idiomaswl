@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el plural correcto.',
         type: 'freeText',
         scene: 'Напиши множественное число.',
-        text: 'ребёнок → ___ (Nom.pl) / время → ___ (Nom.pl) / брат → ___ (Nom.pl) / имя → ___ (Nom.pl)',
+        text: 'ребёнок → [[0]] (Nom.pl) / время → [[1]] (Nom.pl) / брат → [[2]] (Nom.pl) / имя → [[3]] (Nom.pl)',
         blanks: [
           { answer: 'дети', explain: '"дети" — plural supletivo de ребёнок. Memorizar.' },
           { answer: 'времена', explain: '"времена" — neutro -мя → plural -мена.' },

@@ -103,7 +103,7 @@ const topic: GrammarTopic = {
           {
             scene: 'о + pronombre',
             lines: [['', 'Он говорит обо _____. (sobre mí)']],
-            options: ['мне', 'меня', 'мне', 'мной'],
+            options: ['мне', 'меня', 'мной'],
             answer: 'мне',
             explain: 'обо мне = sobre mí (prepositivo de "я").',
           },
@@ -215,7 +215,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma prepositiva correcta con о.',
         type: 'freeText',
         scene: 'Completar con о + prepositivo',
-        text: '1. Я думаю [[0]] тебе. (о/об) 2. Он говорит [[0]] этой книге. (о/об) 3. Мы читали [[0]] России. (о/об) 4. Она спрашивала [[0]] моём брате. (о/об) 5. Ты думаешь [[0]] мне? (о/об)',
+        text: '1. Я думаю [[0]] тебе. (о/об) 2. Он говорит [[1]] этой книге. (о/об) 3. Мы читали [[2]] России. (о/об) 4. Она спрашивала [[3]] моём брате. (о/об) 5. Ты думаешь [[4]] мне? (о/об)',
         blanks: [
           { answer: 'о', accepted: ['о'], explain: 'Перед "тебе" (consonante т) → о тебе.' },
           { answer: 'об', accepted: ['об'], explain: 'Перед "этой" (vocal э) → об этой книге.' },

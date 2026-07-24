@@ -128,14 +128,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La ubicación',
-            lines: [['David', 'O hotel ___ do outro lado da praça central.']],
+            lines: [['Bruno', 'O hotel ___ do outro lado da praça central.']],
             options: ['fica', 'está', 'é', 'vem'],
             answer: 'fica',
             explain: '"Fica" para localización permanente de establecimientos.',
           },
           {
             scene: 'El período',
-            lines: [['Zhanna', 'Ela ___ estudando até a meia-noite para o exame.']],
+            lines: [['Vera', 'Ela ___ estudando até a meia-noite para o exame.']],
             options: ['ficou', 'estava', 'foi', 'tinha'],
             answer: 'ficou',
             explain: '"Ficar + gerúndio" para acción que continúa: "ficou estudando" (se quedó estudiando).',

@@ -77,7 +77,7 @@ const topic: GrammarTopic = {
     {
       heading: 'Contextos reales de uso',
       paragraphs: [
-        'En una clase de inglés A1, los subject pronouns aparecen desde el primer saludo: I am David, you are the teacher, she is my classmate. En una conversación de trabajo aparecen para presentar personas: He is the manager, they are from the sales team. En una descripción de objetos aparecen con it: It is a key, it is on the desk, it is not my phone.',
+        'En una clase de inglés A1, los subject pronouns aparecen desde el primer saludo: I am Bruno, you are the teacher, she is my classmate. En una conversación de trabajo aparecen para presentar personas: He is the manager, they are from the sales team. En una descripción de objetos aparecen con it: It is a key, it is on the desk, it is not my phone.',
         'También son necesarios para no repetir nombres. En lugar de decir Maria is from Peru. Maria is a doctor. Maria is in my class, un hablante natural dice Maria is from Peru. She is a doctor. She is in my class. Ese cambio hace que el inglés suene más fluido desde niveles muy básicos.',
       ],
     },
@@ -91,6 +91,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'Is my teacher.', 'Correcto', 'She is my teacher.'],
         ['Incorrecto', 'My phone is new. He is black.', 'Correcto', 'My phone is new. It is black.'],
         ['Incorrecto', 'Ana and I are friends. They study together.', 'Correcto', 'Ana and I are friends. We study together.'],
+      ],
+    },
+    {
+      heading: '¿Cuáles son los pronombres de sujeto en inglés?',
+      paragraphs: [
+        'Son siete: I (yo), you (tú/usted/vosotros), he (él), she (ella), it (ello/eso), we (nosotros) y they (ellos/ellas). "You" sirve para singular y plural. "It" se usa para cosas, animales y conceptos, algo que el español no marca con un pronombre propio.',
+      ],
+    },
+    {
+      heading: '¿Por qué en inglés no se puede omitir el sujeto?',
+      paragraphs: [
+        'Porque el verbo inglés casi no cambia de forma, así que sin el sujeto no se sabe quién actúa. En español "trabajo" ya implica "yo"; en inglés "work" no lo dice, por eso hay que poner "I work". Omitir el sujeto ("Am tired", "Is my brother") es el error más frecuente del hispanohablante.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "it" y "he/she"?',
+      paragraphs: [
+        '"he" y "she" son para personas (y a veces mascotas): he = hombre, she = mujer. "it" es para cosas, animales en general, el clima y situaciones ("It is a book", "It is raining"). El español no tiene un equivalente directo de "it", por eso cuesta recordarlo.',
       ],
     },
   ],
@@ -142,10 +160,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Plan de estudio',
-            lines: [['Camila', 'Do you want to practise after class?'], ['David', 'Yes. ___ can study at the library.']],
+            lines: [['Camila', 'Do you want to practise after class?'], ['Bruno', 'Yes. ___ can study at the library.']],
             options: ['I', 'You', 'We', 'They'],
             answer: 'We',
-            explain: 'Camila y David forman un grupo que incluye al hablante: we.',
+            explain: 'Camila y Bruno forman un grupo que incluye al hablante: we.',
           },
           {
             scene: 'Foto familiar',

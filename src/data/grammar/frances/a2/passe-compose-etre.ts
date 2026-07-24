@@ -200,7 +200,7 @@ const topic: GrammarTopic = {
         intro: "Escribe las formas correctas de être sin ayuda de opciones.",
         type: 'freeText',
         scene: "Thomas describe su fin de semana a su colega",
-        text: "Ce week-end, je ___ allé chez mes parents. Samedi matin, ma sœur ___ arrivée de Lyon. Nous ___ sortis faire une promenade. Le soir, nous ___ rentrés tard. Dimanche, je ___ resté à la maison.",
+        text: "Ce week-end, je [[0]] allé chez mes parents. Samedi matin, ma sœur [[1]] arrivée de Lyon. Nous [[2]] sortis faire une promenade. Le soir, nous [[3]] rentrés tard. Dimanche, je [[4]] resté à la maison.",
         blanks: [
           { answer: "suis", accepted: ["suis"], explain: "\"Je\" + être → je suis." },
           { answer: "est", accepted: ["est"], explain: "\"Ma sœur\" (elle) → elle est arrivée." },

@@ -138,7 +138,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Espacio vs temporal',
-            lines: [['', "[[0]]: 창문을 열___ 밤을 새웠어요. (espacio) / [[1]]: 침대에 누___ 책을 읽어요. (temporal)"]],
+            lines: [['', " : 창문을 열[[0]] 밤을 새웠어요. (espacio) / : 침대에 누[[1]] 책을 읽어요. (temporal)"]],
             blanks: [
               { options: ['-은 채로', '-고 있는'], answer: '-은 채로', explain: '-은 채로 mantiene el estado de ventana abierta.' },
               { options: ['-은 채로', '-고 있는'], answer: '-은 채로', explain: '-은 채로 mantiene posición acostado.' },
@@ -153,7 +153,7 @@ const topic: GrammarTopic = {
         intro: 'Completa una escena descriptiva con -은 채로.',
         type: 'guidedText',
         scene: 'Descripción de una casa en desorden.',
-        text: '집 안은 창문을 ___ 매우 추웠어요. 불을 ___ 방은 밝았고, 문을 ___ 통풍이 잘 되었어요. 아이들이 신발을 ___ 소파에 앉아 있었어요.',
+        text: '집 안은 창문을 [[0]] 매우 추웠어요. 불을 [[1]] 방은 밝았고, 문을 [[2]] 통풍이 잘 되었어요. 아이들이 신발을 [[3]] 소파에 앉아 있었어요.',
         blanks: [
           { options: ['-은 채로', '-고'], answer: '-은 채로', explain: '상태 유지: 창문이 열려 있는 상태로.' },
           { options: ['-은 채로', '-고'], answer: '-은 채로', explain: '상태 유지: 불이 켜진 상태로.' },

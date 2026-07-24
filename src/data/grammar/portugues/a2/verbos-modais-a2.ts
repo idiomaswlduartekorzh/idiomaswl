@@ -186,7 +186,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el modal correcto (poder, dever, precisar, ter que, saber, conseguir).',
         type: 'freeText',
         scene: 'Situações do dia a dia com verbos modais.',
-        text: 'Estou com dor de cabeça. ___ tomar um remédio. / Ela ___ cinco idiomas fluentemente. / ___ abrir a janela, por favor? / ___ terminar esse projeto até amanhã! / Ele ___ estar doente — não veio trabalhar.',
+        text: 'Estou com dor de cabeça. [[0]] tomar um remédio. / Ela [[1]] cinco idiomas fluentemente. / [[2]] abrir a janela, por favor? / [[3]] terminar esse projeto até amanhã! / Ele [[4]] estar doente — não veio trabalhar.',
         blanks: [
           { answer: 'Preciso', explain: '"Preciso tomar" = necesito tomar (necesidad personal).' },
           { answer: 'sabe/fala', explain: '"ela sabe cinco idiomas" = sabe hablar (habilidad). "fala" también es válido.' },

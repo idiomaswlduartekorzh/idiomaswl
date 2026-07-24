@@ -111,7 +111,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige los imperativos correctos en un contexto de clase.',
         type: 'guidedText',
-        scene: 'Primera clase de ruso con David en WeLearn',
+        scene: 'Primera clase de ruso con Hugo en WeLearn',
         text: 'Дэвид говорит: «[[0]] внимательно!» (¡Escuchen con atención!) Потом: «[[1]] это слово». (Repitan esta palabra.) «[[2]] в тетради». (Escriban en el cuaderno.) Студент спрашивает: «Можно [[3]] вопрос?» (¿Puedo hacer una pregunta?) «Конечно! [[4]] всё, что хочешь». (¡Por supuesto! Pregunta todo lo que quieras.)',
         blanks: [
           { options: ['Слушайте', 'Слушай', 'Слушает', 'Слушайте-ка'], answer: 'Слушайте', explain: 'Al grupo de estudiantes → вам: слушайте.' },

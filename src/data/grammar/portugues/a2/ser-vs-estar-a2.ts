@@ -128,14 +128,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La sopa',
-            lines: [['David', 'Cuidado, a sopa ___ muito quente!']],
+            lines: [['Hugo', 'Cuidado, a sopa ___ muito quente!']],
             options: ['está', 'é', 'foi', 'era'],
             answer: 'está',
             explain: '"Estar" para temperatura actual temporal: "a sopa está quente" (ahora está caliente).',
           },
           {
             scene: 'El carácter',
-            lines: [['Zhanna', 'Meu chefe ___ muito nervoso. Ele sempre reage assim.']],
+            lines: [['Clara', 'Meu chefe ___ muito nervoso. Ele sempre reage assim.']],
             options: ['é', 'está', 'foi', 'era'],
             answer: 'é',
             explain: '"Ser" para rasgo de carácter permanente: "ele é nervoso" (es una persona nerviosa).',

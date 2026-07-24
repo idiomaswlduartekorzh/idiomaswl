@@ -195,7 +195,7 @@ const topic: GrammarTopic = {
         intro: "Escribe las formas correctas del conditionnel présent sin ayuda de opciones.",
         type: 'freeText',
         scene: "Marc hace sugerencias para la reunión de amigos",
-        text: "On ___ se retrouver samedi soir. Ce ___ super de faire une raclette. Tu ___ apporter du fromage? Léa et Pierre ___ pouvoir venir vers 19h. Ça ___ être une super soirée!",
+        text: "On [[0]] se retrouver samedi soir. Ce [[1]] super de faire une raclette. Tu [[2]] apporter du fromage? Léa et Pierre [[3]] pouvoir venir vers 19h. Ça [[4]] être une super soirée!",
         blanks: [
           { answer: "pourrait", accepted: ["pourrait"], explain: "Pouvoir en conditionnel: on pourrait (ir- + -ait)." },
           { answer: "serait", accepted: ["serait"], explain: "Être en conditionnel: ce serait (ser- + -ait)." },

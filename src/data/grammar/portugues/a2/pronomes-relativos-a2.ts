@@ -126,14 +126,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El autor',
-            lines: [['David', 'O escritor ___ livro li no mês passado ganhou um prêmio.']],
+            lines: [['Enzo', 'O escritor ___ livro li no mês passado ganhou um prêmio.']],
             options: ['cujo', 'que', 'quem', 'onde'],
             answer: 'cujo',
             explain: '"Cujo" para posesión: "o escritor cujo livro" = el escritor cuyo libro.',
           },
           {
             scene: 'El restaurante',
-            lines: [['Zhanna', 'O restaurante ___ comemos tem uma vista linda do mar.']],
+            lines: [['Alba', 'O restaurante ___ comemos tem uma vista linda do mar.']],
             options: ['onde', 'que', 'quem', 'cujo'],
             answer: 'onde',
             explain: '"Onde" para lugar: "o restaurante onde comemos" (el restaurante donde comimos).',

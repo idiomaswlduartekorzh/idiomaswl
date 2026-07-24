@@ -97,7 +97,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Leo el libro',
-            lines: [['David', 'ほん___ よみます。(Leo el libro.)']],
+            lines: [['Tomás', 'ほん___ よみます。(Leo el libro.)']],
             options: ['を', 'に', 'は', 'が'],
             answer: 'を',
             explain: 'Objeto directo de よむ: ほんを. Partícula を.',
@@ -148,7 +148,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Voy y como',
-            lines: [['David', 'レストラン[[0]] いって、すし[[1]] たべます。(Voy al restaurante y como sushi.)']],
+            lines: [['Tomás', 'レストラン[[0]] いって、すし[[1]] たべます。(Voy al restaurante y como sushi.)']],
             blanks: [
               { options: ['に', 'を', 'は'], answer: 'に', explain: 'Destino: レストランに いく.' },
               { options: ['を', 'に', 'は'], answer: 'を', explain: 'Objeto: すしを たべる.' },

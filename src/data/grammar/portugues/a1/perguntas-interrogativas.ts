@@ -123,7 +123,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Por qué estudias?',
-            lines: [['David', '___ você estuda português?']],
+            lines: [['Leo', '___ você estuda português?']],
             options: ['Por que', 'Porque', 'Por quê', 'Porquê'],
             answer: 'Por que',
             explain: 'Por que = por qué (pregunta). Dos palabras sin acento. "Porque" es la respuesta.',
@@ -137,7 +137,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Cuánto cuesta?',
-            lines: [['Zhanna', '___ custa o curso?']],
+            lines: [['Elena', '___ custa o curso?']],
             options: ['Quanto', 'Quanta', 'Quantos', 'Qual'],
             answer: 'Quanto',
             explain: 'Quanto custa: cuánto cuesta. Quanto para sustantivos masculinos o neutros.',
@@ -161,9 +161,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Qué haces?',
             lines: [
-              ['Ana', '[[0]] você [[1]] no Brasil?'],
-              ['Carlos', 'Estudo português e trabalho numa escola.'],
-            ],
+ ['Ana', '[[0]] você [[1]] no Brasil?'],
+ ['Carlos', 'Estudo português e trabalho numa escola.'],
+ ],
             blanks: [
               { options: ['O que', 'Que', 'Como'], answer: 'O que', explain: 'O que = qué. Para preguntar por actividad.' },
               { options: ['faz', 'faz você', 'fazer'], answer: 'faz', explain: 'Você faz: tercera sg. No inversión obligatoria en BP.' },
@@ -172,9 +172,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Dónde vives?',
             lines: [
-              ['Marco', '[[0]] você [[1]]?'],
-              ['Sofia', 'Moro em São Paulo, no centro.'],
-            ],
+ ['Marco', '[[0]] você [[1]]?'],
+ ['Sofia', 'Moro em São Paulo, no centro.'],
+ ],
             blanks: [
               { options: ['Onde', 'Cuando', 'Quem'], answer: 'Onde', explain: 'Onde = dónde. Para lugar.' },
               { options: ['mora', 'morar', 'moras'], answer: 'mora', explain: 'Você mora: tercera sg de morar.' },
@@ -183,9 +183,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Cuántos años tienes?',
             lines: [
-              ['Lina', '[[0]] anos você [[1]]?'],
-              ['David', 'Tenho trinta e dois anos.'],
-            ],
+ ['Lina', '[[0]] anos você [[1]]?'],
+ ['Leo', 'Tenho trinta e dois anos.'],
+ ],
             blanks: [
               { options: ['Quantos', 'Quanto', 'Quanta'], answer: 'Quantos', explain: 'Quantos anos: cuántos años. Concuerda con anos (masculino plural).' },
               { options: ['tem', 'tens', 'ter'], answer: 'tem', explain: 'Você tem: tercera sg de ter.' },
@@ -194,9 +194,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Por qué aprendes?',
             lines: [
-              ['Zhanna', '[[0]] você [[1]] coreano?'],
-              ['Carlos', 'Porque adoro a cultura coreana!'],
-            ],
+ ['Elena', '[[0]] você [[1]] coreano?'],
+ ['Carlos', 'Porque adoro a cultura coreana!'],
+ ],
             blanks: [
               { options: ['Por que', 'Porque', 'Como'], answer: 'Por que', explain: 'Por que = por qué (pregunta). Dos palabras.' },
               { options: ['aprende', 'aprendes', 'aprendo'], answer: 'aprende', explain: 'Você aprende: tercera sg de aprender.' },
@@ -210,7 +210,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa el diálogo eligiendo el interrogativo correcto.',
         type: 'guidedText',
-        scene: 'Primeiro dia na WeLearn — Zhanna entrevista a Carlos',
+        scene: 'Primeiro dia na WeLearn — Elena entrevista a Carlos',
         text: '[[0]] é o seu nome completo? [[1]] você mora? [[2]] idiomas você fala? [[3]] você chegou ao Brasil? [[4]] anos você tem? [[5]] você escolheu a WeLearn? [[6]] é o seu objetivo principal?',
         blanks: [
           { options: ['Qual', 'Quem', 'O que'], answer: 'Qual', explain: 'Qual é o seu nome? = ¿Cuál es tu nombre? Elección.' },

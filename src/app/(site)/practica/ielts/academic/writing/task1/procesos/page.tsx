@@ -4,7 +4,7 @@ import Content from './Content'
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 1 Processes: Diagrams and Flows',
-  description: 'Practise describing IELTS Writing Task 1 processes and diagrams with passive voice, sequence vocabulary and process connectors. Band 7 strategies.',
+  description: 'Practise describing IELTS Writing Task 1 processes and diagrams with passive voice, sequence vocabulary and process connectors.',
   keywords: ['IELTS processes', 'IELTS Task 1 process', 'IELTS process diagram', 'IELTS passive voice Task 1'],
   openGraph: {
     title: 'IELTS Task 1 Processes: Diagrams and Flows',

@@ -108,14 +108,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pregunta',
-            lines: [['David', 'にほんごを べんきょうし___.  (¿Estudias japonés?)']],
+            lines: [['Leo', 'にほんごを べんきょうし___.  (¿Estudias japonés?)']],
             options: ['ますか', 'ません', 'です', 'ますね'],
             answer: 'ますか',
             explain: 'Pregunta: ます + か. べんきょうしますか = ¿estudias?',
           },
           {
             scene: 'Adjetivo + desu',
-            lines: [['Zhanna', 'にほんご___ おもしろいです。(El japonés es interesante.)']],
+            lines: [['Emma', 'にほんご___ おもしろいです。(El japonés es interesante.)']],
             options: ['は', 'を', 'に', 'で'],
             answer: 'は',
             explain: 'にほんごは [tema] + おもしろいです [adjetivo + です].',
@@ -146,8 +146,8 @@ const topic: GrammarTopic = {
           {
             scene: 'Presentación',
             lines: [
-              ['Carlos', 'わたしは カルロス[[0]]。がくせい[[1]]。'],
-            ],
+ ['Carlos', 'わたしは カルロス[[0]]。がくせい[[1]]。'],
+ ],
             blanks: [
               { options: ['です', 'ます', 'ません'], answer: 'です', explain: 'Nombre + です. Presentación.' },
               { options: ['です', 'ます', 'ません'], answer: 'です', explain: 'Identidad: がくせいです = soy estudiante.' },
@@ -155,7 +155,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Acciones del día',
-            lines: [['David', 'まいにち コーヒーを の[[0]]。ランチを たべ[[1]]。']],
+            lines: [['Leo', 'まいにち コーヒーを の[[0]]。ランチを たべ[[1]]。']],
             blanks: [
               { options: ['みます', 'みません', 'みです'], answer: 'みます', explain: 'のみます = bebo. Verbo stem の + みます.' },
               { options: ['ます', 'ません', 'です'], answer: 'ます', explain: 'たべます = como. Verbo stem たべ + ます.' },

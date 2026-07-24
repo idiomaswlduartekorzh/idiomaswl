@@ -215,7 +215,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma correcta del modal en Präteritum sin opciones.',
         type: 'freeText',
-        scene: 'David habla de un día complicado.',
+        scene: 'Dario habla de un día complicado.',
         text: 'Gestern [[0]] ich sehr früh aufstehen. Ich [[1]] nicht frühstücken, weil keine Zeit war. Ich [[2]] schnell zur Arbeit fahren. Am Abend [[3]] ich endlich nach Hause. Ich [[4]] schon früher gehen, aber mein Chef sagte nein.',
         blanks: [
           { answer: 'musste', accepted: ['musste'], explain: '"müssen" Präteritum: ich musste.' },

@@ -64,8 +64,36 @@ const topic: GrammarTopic = {
     {
       heading: 'Expresiones idiomáticas con avere',
       paragraphs: [
-        'El italiano usa avere donde el español a veces usa estar o ser: avere fame (tener hambre), avere sete (tener sed), avere freddo (tener frío), avere caldo (tener calor), avere paura (tener miedo), avere sonno (tener sueño), avere fretta (tener prisa), avere ragione (tener razón).',
-        'Todas estas expresiones siguen el patrón avere + sustantivo sin artículo. "Ho fame" no lleva artículo: no "Ho la fame". Memorízalas como bloque porque son muy frecuentes en conversación italiana.',
+        'El italiano usa avere donde el español coincide (tener) pero otras lenguas usan "ser". Todas siguen el patrón avere + sustantivo SIN artículo: "Ho fame", nunca "Ho la fame". Memoriza este bloque, porque aparece en cada conversación:',
+      ],
+      table: [
+        ['Expresión', 'Español', 'Ejemplo'],
+        ['avere fame / sete', 'tener hambre / sed', 'Ho fame!'],
+        ['avere freddo / caldo', 'tener frío / calor', 'Hai freddo?'],
+        ['avere paura', 'tener miedo', 'Ha paura del cane.'],
+        ['avere sonno', 'tener sueño', 'Ho sonno.'],
+        ['avere fretta', 'tener prisa', 'Abbiamo fretta.'],
+        ['avere ragione / torto', 'tener razón / no tenerla', 'Hai ragione.'],
+        ['avere bisogno di', 'necesitar', 'Ho bisogno di aiuto.'],
+        ['avere voglia di', 'tener ganas de', 'Ho voglia di gelato.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga el verbo avere en presente?',
+      paragraphs: [
+        'Avere en presente indicativo: io ho, tu hai, lui/lei ha, noi abbiamo, voi avete, loro hanno. La h de ho, hai, ha y hanno es muda (no se pronuncia) pero es obligatoria por escrito: distingue "ho" (tengo) de "o" (o), y "ha" (tiene) de "a" (a). Noi y voi pierden la h: abbiamo, avete.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice la edad en italiano?',
+      paragraphs: [
+        'Con avere, no con essere. La pregunta es "Quanti anni hai?" (¿Cuántos años tienes?) y la respuesta "Ho [número] anni" — por ejemplo "Ho ventitré anni". Nunca "Sono ventitré anni". Es igual que el español (tener años) y distinto del inglés o el alemán, que usan "ser".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa avere y cuándo essere?',
+      paragraphs: [
+        'Avere expresa posesión (Ho una macchina), edad (Ho 20 anni) y sensaciones físicas con sustantivo (Ho fame). Essere expresa identidad, origen, profesión y estado con adjetivo (Sono stanco). Truco: si en español dices "tener + sustantivo", casi siempre es avere; si dices "ser/estar + adjetivo", es essere.',
       ],
     },
   ],
@@ -114,14 +142,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tenemos clase',
-            lines: [['Zhanna', 'Noi ___ lezione ogni lunedì.']],
+            lines: [['Sara', 'Noi ___ lezione ogni lunedì.']],
             options: ['abbiamo', 'hanno', 'avete', 'ho'],
             answer: 'abbiamo',
             explain: 'Noi abbiamo = nosotros tenemos. Primera persona plural.',
           },
           {
             scene: '¿Tenéis hambre?',
-            lines: [['David', 'Voi ___ fame? Andiamo a mangiare?']],
+            lines: [['Nico', 'Voi ___ fame? Andiamo a mangiare?']],
             options: ['avete', 'abbiamo', 'hanno', 'hai'],
             answer: 'avete',
             explain: 'Voi avete = vosotros tenéis. Segunda persona plural.',
@@ -159,9 +187,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Cuántos años tienes?',
             lines: [
-              ['Sofia', 'Carlo, quanti anni [[0]]?'],
-              ['Carlo', 'Io [[1]] ventotto anni.'],
-            ],
+ ['Sofia', 'Carlo, quanti anni [[0]]?'],
+ ['Carlo', 'Io [[1]] ventotto anni.'],
+ ],
             blanks: [
               { options: ['hai', 'ho', 'ha'], answer: 'hai', explain: 'Tu hai = tú tienes. Pregunta de edad.' },
               { options: ['ho', 'hai', 'ha'], answer: 'ho', explain: 'Io ho = yo tengo. Respuesta de edad.' },
@@ -169,7 +197,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hambre y sed',
-            lines: [['David', 'Voi [[0]] fame o [[1]] solo sete?']],
+            lines: [['Nico', 'Voi [[0]] fame o [[1]] solo sete?']],
             blanks: [
               { options: ['avete', 'abbiamo', 'hanno'], answer: 'avete', explain: 'Voi avete = vosotros tenéis.' },
               { options: ['avete', 'abbiamo', 'hanno'], answer: 'avete', explain: 'Misma forma: avete sete.' },
@@ -178,9 +206,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Mascotas',
             lines: [
-              ['Ana', 'Tu [[0]] animali domestici?'],
-              ['Marco', 'Sì, io [[1]] un gatto e un cane.'],
-            ],
+ ['Ana', 'Tu [[0]] animali domestici?'],
+ ['Marco', 'Sì, io [[1]] un gatto e un cane.'],
+ ],
             blanks: [
               { options: ['hai', 'ho', 'ha'], answer: 'hai', explain: 'Tu hai = tú tienes. Pregunta.' },
               { options: ['ho', 'hai', 'ha'], answer: 'ho', explain: 'Io ho = yo tengo. Respuesta.' },
@@ -188,7 +216,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella y ellos',
-            lines: [['Zhanna', 'Lei [[0]] molta esperienza. I suoi studenti [[1]] molto talento.']],
+            lines: [['Sara', 'Lei [[0]] molta esperienza. I suoi studenti [[1]] molto talento.']],
             blanks: [
               { options: ['ha', 'hanno', 'abbiamo'], answer: 'ha', explain: 'Lei ha = ella tiene. Singular.' },
               { options: ['hanno', 'ha', 'abbiamo'], answer: 'hanno', explain: 'I suoi studenti hanno = ellos tienen. Plural.' },
@@ -203,9 +231,9 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con la forma correcta de avere.',
         type: 'guidedText',
         scene: 'Un día en la academia WeLearn',
-        text: 'David [[0]] trentadue anni e [[1]] una grande passione per le lingue. Noi [[2]] lezione oggi alle tre del pomeriggio. Gli studenti [[3]] molte domande — è normale, [[4]] curiosità! Tu [[5]] fame? Andiamo a prendere un caffè prima della lezione.',
+        text: 'Nico [[0]] trentadue anni e [[1]] una grande passione per le lingue. Noi [[2]] lezione oggi alle tre del pomeriggio. Gli studenti [[3]] molte domande — è normale, [[4]] curiosità! Tu [[5]] fame? Andiamo a prendere un caffè prima della lezione.',
         blanks: [
-          { options: ['ha', 'ho', 'hanno'], answer: 'ha', explain: 'David ha trentadue anni. Avere para la edad.' },
+          { options: ['ha', 'ho', 'hanno'], answer: 'ha', explain: 'Nico ha trentadue anni. Avere para la edad.' },
           { options: ['ha', 'ho', 'hanno'], answer: 'ha', explain: 'Lui ha una grande passione. Posesión.' },
           { options: ['abbiamo', 'hanno', 'avete'], answer: 'abbiamo', explain: 'Noi abbiamo lezione. Primera plural.' },
           { options: ['hanno', 'abbiamo', 'avete'], answer: 'hanno', explain: 'Gli studenti hanno domande. Plural.' },

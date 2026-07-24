@@ -95,7 +95,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Il s\'est blessé en ___ (faire) du sport.',
             lines: [['', 'Il s\'est blessé en ___ du sport.']],
-            options: ['faisant', 'faisant', 'faire', 'fait'],
+            options: ['faisant', 'faire', 'fait'],
             answer: 'faisant',
             explain: '"en faisant" — faire → nous faisons → fais- + -ant = faisant.',
           },
@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con los gérondifs correctos.',
         type: 'guidedText',
         scene: 'Marie décrit comment elle apprend les langues.',
-        text: 'J\'apprends les langues [[0]] (écouter) des podcasts. Je mémorise le vocabulaire [[1]] (répéter) les mots à voix haute. [[0]] (regarder) des films en version originale, j\'améliore ma prononciation. Je progresse aussi [[2]] (avoir) beaucoup de patience. [[2]] (être) régulière dans mon travail, je fais des progrès rapides.',
+        text: 'J\'apprends les langues [[0]] (écouter) des podcasts. Je mémorise le vocabulaire [[1]] (répéter) les mots à voix haute. [[2]] (regarder) des films en version originale, j\'améliore ma prononciation. Je progresse aussi [[3]] (avoir) beaucoup de patience. [[4]] (être) régulière dans mon travail, je fais des progrès rapides.',
         blanks: [
           { options: ['en écoutant', 'en regardant', 'en répétant', 'en parlant'], answer: 'en écoutant', explain: '"en écoutant / en regardant" — écouter → écoutant, regarder → regardant.' },
           { options: ['en répétant', 'en parlant', 'en écoutant', 'en lisant'], answer: 'en répétant', explain: '"en répétant" — répéter → nous répétons → répét- + -ant = répétant.' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el gérondif correcto.',
         type: 'freeText',
         scene: 'Formez le gérondif des verbes entre parenthèses.',
-        text: 'Il économise de l\'argent ___ (ne pas sortir) souvent. / Elle s\'est trompée ___ (calculer) le résultat. / Tu réussiras ___ (être) courageux. / On apprend ___ (faire) des erreurs.',
+        text: 'Il économise de l\'argent [[0]] (ne pas sortir) souvent. / Elle s\'est trompée [[1]] (calculer) le résultat. / Tu réussiras [[2]] (être) courageux. / On apprend [[3]] (faire) des erreurs.',
         blanks: [
           { answer: 'en ne sortant pas', explain: '"en ne sortant pas" — gérondif negativo: en + ne + part. prés. + pas.' },
           { answer: 'en calculant', explain: '"en calculant" — calculer → calculons → calcul- + -ant.' },

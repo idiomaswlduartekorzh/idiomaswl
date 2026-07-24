@@ -148,7 +148,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Para que entiendan',
             lines: [['', "Je parle lentement pour que vous ___."]],
-            options: ['compreniez', 'comprenez', 'comprendrez', 'compreniez'],
+            options: ['compreniez', 'comprenez', 'comprendrez'],
             answer: 'compreniez',
             explain: '"Pour que" + subjonctif: comprendre → que vous compreniez.',
           },

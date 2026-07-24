@@ -141,7 +141,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Una promesa',
-            lines: [['David:', 'Did you promise ___ early?']],
+            lines: [['Diego:', 'Did you promise ___ early?']],
             options: ['to arrive', 'arriving', 'arrive', 'arrived'],
             answer: 'to arrive',
             explain: 'promise siempre va con to + infinitivo: promised to arrive.',
@@ -242,7 +242,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el verbo en su forma correcta (gerundio o infinitivo) según el contexto.',
         type: 'freeText',
         scene: 'Completa el párrafo con la forma verbal correcta.',
-        text: 'My friend David loves [[0]] (travel) and plans [[1]] (visit) eight countries this year. He suggested [[2]] (join) him in Colombia for two weeks. I would love to go, but I can\'t afford [[3]] (take) so many days off work. I\'ll keep [[4]] (save) money until I can.',
+        text: 'My friend Diego loves [[0]] (travel) and plans [[1]] (visit) eight countries this year. He suggested [[2]] (join) him in Colombia for two weeks. I would love to go, but I can\'t afford [[3]] (take) so many days off work. I\'ll keep [[4]] (save) money until I can.',
         blanks: [
           { answer: 'travelling', accepted: ['travelling', 'traveling'], explain: 'love + gerundio: loves travelling.' },
           { answer: 'to visit', accepted: ['to visit'], explain: 'plan + infinitivo: plans to visit.' },

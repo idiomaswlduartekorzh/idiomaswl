@@ -195,7 +195,7 @@ const topic: GrammarTopic = {
         intro: "Escribe las formas correctas del imparfait sin ayuda de opciones.",
         type: 'freeText',
         scene: "Julien compara su vida de antes con la de ahora",
-        text: "Avant, je ___ à Lyon. Tous les jours, je ___ au bureau à pied. Mes collègues et moi, nous ___ souvent au café. Le week-end, il ___ généralement beau. Maintenant, tout ça ___ un beau souvenir.",
+        text: "Avant, je [[0]] à Lyon. Tous les jours, je [[1]] au bureau à pied. Mes collègues et moi, nous [[2]] souvent au café. Le week-end, il [[3]] généralement beau. Maintenant, tout ça [[4]] un beau souvenir.",
         blanks: [
           { answer: "habitais", accepted: ["habitais"], explain: "Habiter en imparfait: je habitais." },
           { answer: "allais", accepted: ["allais"], explain: "Aller en imparfait: j'allais." },

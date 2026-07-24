@@ -100,7 +100,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablar',
-            lines: [['David', '話す → て形は？']],
+            lines: [['Tomás', '話す → て形は？']],
             options: ['話して', '話って', '話いて', '話んで'],
             answer: '話して',
             explain: '話す = grupo 1 (su-verb). す → して. 話 + して = 話して (hanashite).',
@@ -128,7 +128,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Puedo sentarme?',
-            lines: [['Zhanna', 'ここに 座って___ いいですか？']],
+            lines: [['Elena', 'ここに 座って___ いいですか？']],
             options: ['も', 'が', 'を', 'で'],
             answer: 'も',
             explain: '〜てもいいですか = ¿puedo...? La partícula es も. 座ってもいいですか = ¿puedo sentarme?',
@@ -152,9 +152,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la clase',
             lines: [
-              ['Carlos', 'トイレに [[0]] いいですか？(¿Puedo ir al baño?)'],
-              ['David', '[[1]]。どうぞ。(Claro. Adelante.)'],
-            ],
+ ['Carlos', 'トイレに [[0]] いいですか？(¿Puedo ir al baño?)'],
+ ['Tomás', '[[1]]。どうぞ。(Claro. Adelante.)'],
+ ],
             blanks: [
               { options: ['行っても', '行きても', '行くても'], answer: '行っても', explain: '行く → 行って (grupo 1: く→いて... espera, 行く→行って es especial: 行く→行いて pero en japonés 行く→行って). 行って+も = 行っても.' },
               { options: ['いいですよ', 'だめです', 'ちょっと'], answer: 'いいですよ', explain: 'いいですよ = sí, está bien. Conceder permiso positivamente.' },
@@ -163,9 +163,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Usando el celular',
             lines: [
-              ['Ana', 'スマホを [[0]] いいですか？'],
-              ['Zhanna', '[[1]]。今は じゅぎょうちゅうです。(Hmm... Ahora estamos en clase.)'],
-            ],
+ ['Ana', 'スマホを [[0]] いいですか？'],
+ ['Elena', '[[1]]。今は じゅぎょうちゅうです。(Hmm... Ahora estamos en clase.)'],
+ ],
             blanks: [
               { options: ['使っても', '使いても', '使くても'], answer: '使っても', explain: '使う (tsukau=usar) → 使って (grupo 1: う→って). 使っても = también usar → ¿puedo usar?' },
               { options: ['ちょっと...', 'いいですよ', 'どうぞ'], answer: 'ちょっと...', explain: 'ちょっと... = negación cortés indirecta. Literalmente "un poco..." — significa "mejor no".' },
@@ -173,7 +173,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrucciones del profesor',
-            lines: [['David', 'これを [[0]] ください。そして [[1]] ください。(Por favor lee esto. Después escribe.)']],
+            lines: [['Tomás', 'これを [[0]] ください。そして [[1]] ください。(Por favor lee esto. Después escribe.)']],
             blanks: [
               { options: ['読んで', '読いて', '読して'], answer: '読んで', explain: '読む (yomu=leer) → 読んで (grupo 1: む→んで). 読んでください = por favor lee.' },
               { options: ['書いて', '書って', '書して'], answer: '書いて', explain: '書く (kaku=escribir) → 書いて (く→いて). 書いてください = por favor escribe.' },
@@ -182,9 +182,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la biblioteca',
             lines: [
-              ['Sofia', 'ここで 食べ[[0]] いいですか？'],
-              ['Marco', 'すみません、[[1]]。(Lo siento, está prohibido.)'],
-            ],
+ ['Sofia', 'ここで 食べ[[0]] いいですか？'],
+ ['Marco', 'すみません、[[1]]。(Lo siento, está prohibido.)'],
+ ],
             blanks: [
               { options: ['ても', 'ても', 'ては'], answer: 'ても', explain: '食べ + ても = 食べても. 食べてもいいですか = ¿puedo comer aquí?' },
               { options: ['ちょっと...', 'いいですよ', 'どうぞ'], answer: 'ちょっと...', explain: 'En la biblioteca no se puede comer → negación cortés: ちょっと...' },
@@ -198,7 +198,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la te-form o la expresión de permiso correcta.',
         type: 'guidedText',
-        scene: 'Primera clase de japonés con David en WeLearn',
+        scene: 'Primera clase de japonés con Tomás en WeLearn',
         text: 'デービッド: では、はじめましょう。テキストを [[0]] ください。まず 83ページを [[1]] ください。カルロス: すみません、ペンを [[2]] いいですか？デービッド: いいですよ。どうぞ。アナ: この もじを [[3]] いいですか？デービッド: もちろん！[[4]] ください。ソフィア: もう いちど [[5]] いいですか？',
         blanks: [
           { options: ['開いて', '開って', '開して'], answer: '開いて', explain: '開く (hiraku=abrir) → 開いて (く→いて). 開いてください = por favor abre.' },

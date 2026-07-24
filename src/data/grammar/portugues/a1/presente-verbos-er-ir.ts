@@ -105,7 +105,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Nosotros partimos',
-            lines: [['David', 'Nós ___ para o Rio amanhã. (partir)']],
+            lines: [['Enzo', 'Nós ___ para o Rio amanhã. (partir)']],
             options: ['partimos', 'partemos', 'parte', 'partem'],
             answer: 'partimos',
             explain: 'Nós + -imos: partimos. Verbos -ir: nós toma -imos.',
@@ -133,7 +133,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'A gente (BP)',
-            lines: [['Zhanna', 'A gente ___ muito na WeLearn. (aprender)']],
+            lines: [['Iris', 'A gente ___ muito na WeLearn. (aprender)']],
             options: ['aprende', 'aprendemos', 'aprendem', 'aprendo'],
             answer: 'aprende',
             explain: 'A gente + -e (3ª sg): aprende. Alternativa informal a "nós aprendemos".',
@@ -157,9 +157,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Qué bebes?',
             lines: [
-              ['Lina', 'Você [[0]] café ou chá? (beber)'],
-              ['Carlos', 'Eu [[1]] café pela manhã. (beber)'],
-            ],
+ ['Lina', 'Você [[0]] café ou chá? (beber)'],
+ ['Carlos', 'Eu [[1]] café pela manhã. (beber)'],
+ ],
             blanks: [
               { options: ['bebe', 'bebes', 'bebo'], answer: 'bebe', explain: 'Você + -e: bebe.' },
               { options: ['bebo', 'bebe', 'bebem'], answer: 'bebo', explain: 'Eu + -o: bebo.' },
@@ -167,7 +167,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Aprenden y escriben',
-            lines: [['David', 'Os alunos [[0]] português e [[1]] muito bem. (aprender / escrever)']],
+            lines: [['Enzo', 'Os alunos [[0]] português e [[1]] muito bem. (aprender / escrever)']],
             blanks: [
               { options: ['aprendem', 'aprende', 'aprendemos'], answer: 'aprendem', explain: 'Os alunos (eles) + -em: aprendem.' },
               { options: ['escrevem', 'escreve', 'escrevemos'], answer: 'escrevem', explain: 'Eles + -em: escrevem.' },
@@ -198,10 +198,10 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con la forma correcta del verbo.',
         type: 'guidedText',
         scene: 'Um dia típico na WeLearn',
-        text: 'Eu [[0]] (beber) café antes da aula. David [[1]] (escrever) os exercícios no quadro. Os alunos [[2]] (abrir) os cadernos e [[3]] (aprender) muito. Nós [[4]] (comer) juntos no intervalo. A gente [[5]] (discutir) as dúvidas. Você [[6]] (assistir) às aulas on-line?',
+        text: 'Eu [[0]] (beber) café antes da aula. Enzo [[1]] (escrever) os exercícios no quadro. Os alunos [[2]] (abrir) os cadernos e [[3]] (aprender) muito. Nós [[4]] (comer) juntos no intervalo. A gente [[5]] (discutir) as dúvidas. Você [[6]] (assistir) às aulas on-line?',
         blanks: [
           { options: ['bebo', 'bebe', 'bebem'], answer: 'bebo', explain: 'Eu + -o: bebo.' },
-          { options: ['escreve', 'escrevo', 'escrevem'], answer: 'escreve', explain: 'David (ele) + -e: escreve.' },
+          { options: ['escreve', 'escrevo', 'escrevem'], answer: 'escreve', explain: 'Enzo (ele) + -e: escreve.' },
           { options: ['abrem', 'abre', 'abrimos'], answer: 'abrem', explain: 'Os alunos (eles) + -em: abrem.' },
           { options: ['aprendem', 'aprende', 'aprendemos'], answer: 'aprendem', explain: 'Eles + -em: aprendem.' },
           { options: ['comemos', 'comimos', 'come'], answer: 'comemos', explain: 'Nós + -emos: comemos. Verbo -er.' },
@@ -216,7 +216,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta del verbo sin opciones.',
         type: 'freeText',
         scene: 'Conversa sobre rotinas',
-        text: 'Eu [[0]] (comer) muita fruta. A Zhanna [[1]] (beber) chá verde. Nós [[2]] (aprender) juntos. Os alunos [[3]] (escrever) em português. Você [[4]] (decidir) estudar aqui? Eles [[5]] (correr) pela manhã.',
+        text: 'Eu [[0]] (comer) muita fruta. A Iris [[1]] (beber) chá verde. Nós [[2]] (aprender) juntos. Os alunos [[3]] (escrever) em português. Você [[4]] (decidir) estudar aqui? Eles [[5]] (correr) pela manhã.',
         blanks: [
           { answer: 'como', explain: 'Eu + -o: como. Primera singular de comer.' },
           { answer: 'bebe', explain: 'Ela + -e: bebe. Tercera singular.' },

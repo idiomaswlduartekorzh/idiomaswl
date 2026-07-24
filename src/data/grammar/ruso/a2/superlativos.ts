@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto sobre las cosas favoritas.',
         type: 'guidedText',
         scene: 'Лена рассказывает о своих фаворитах.',
-        text: 'Для меня Барселона — [[0]] (самый/самая) красивый город в мире. [[1]] (Лучший/Лучшая) ресторан здесь — небольшое место недалеко от моря. [[0]] (Самый/Самая) вкусное блюдо — паэлья. Но [[2]] (самый/самое) трудное — это найти там столик !',
+        text: 'Для меня Барселона — [[0]] (самый/самая) красивый город в мире. [[1]] (Лучший/Лучшая) ресторан здесь — небольшое место недалеко от моря. [[2]] (Самый/Самая) вкусное блюдо — паэлья. Но [[3]] (самый/самое) трудное — это найти там столик !',
         blanks: [
           { options: ['самый', 'самая', 'самое', 'самые'], answer: 'самый', explain: '"самый" — город es masculino; "самая" para ciudad → ciudad es femenino en esp., pero город es masc. en ruso → самый.' },
           { options: ['Лучший', 'Лучшая', 'Лучшее', 'Лучшие'], answer: 'Лучший', explain: '"Лучший" — ресторан es masculino → лучший (irr. superlativo).' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el superlativo correcto.',
         type: 'freeText',
         scene: 'Образуйте превосходную степень.',
-        text: 'Эверест — ___ гора в мире. (alta, femenino) / Это ___ книга года. (mejor) / Сегодня ___ жаркий день лета. (el más) / Он сделал ___ ошибку. (el peor, la peor)',
+        text: 'Эверест — [[0]] гора в мире. (alta, femenino) / Это [[1]] книга года. (mejor) / Сегодня [[2]] жаркий день лета. (el más) / Он сделал [[3]] ошибку. (el peor, la peor)',
         blanks: [
           { answer: 'самая высокая', explain: '"самая высокая" — гора (fem.) → самая + adj. fem.' },
           { answer: 'лучшая', explain: '"лучшая" — superlativo irr. femenino de хороший.' },

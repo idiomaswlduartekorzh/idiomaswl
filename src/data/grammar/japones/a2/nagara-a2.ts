@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la descripción de actividades simultáneas con ながら.',
         type: 'guidedText',
         scene: '田中さんの忙しい一日です。',
-        text: '田中さんは朝、コーヒーを飲み[[0]]、メールをチェックします。電車の中では、音楽を聴き[[0]]、本を読みます。昼ご飯を食べ[[0]]、友達と話します。帰りは歩き[[0]]、電話で家族と話します。',
+        text: '田中さんは朝、コーヒーを飲み[[0]]、メールをチェックします。電車の中では、音楽を聴き[[1]]、本を読みます。昼ご飯を食べ[[2]]、友達と話します。帰りは歩き[[3]]、電話で家族と話します。',
         blanks: [
           { options: ['ながら', 'てながら', 'るながら', 'たながら'], answer: 'ながら', explain: '"〜ながら" se repite con la raíz verbal en cada caso: 飲みながら, 聴きながら, 食べながら, 歩きながら.' },
         ],
@@ -181,7 +181,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma ながら de cada verbo.',
         type: 'freeText',
         scene: 'ながら形を作ってください。',
-        text: '飲む → ___ (mientras bebe) / 働く → ___ (mientras trabaja) / 話す → ___ (mientras habla) / 考える → ___ (mientras piensa)',
+        text: '飲む → [[0]] (mientras bebe) / 働く → [[1]] (mientras trabaja) / 話す → [[2]] (mientras habla) / 考える → [[3]] (mientras piensa)',
         blanks: [
           { answer: '飲みながら', explain: '"飲みながら" = 飲みます → 飲み + ながら.' },
           { answer: '働きながら', explain: '"働きながら" = 働きます → 働き + ながら.' },

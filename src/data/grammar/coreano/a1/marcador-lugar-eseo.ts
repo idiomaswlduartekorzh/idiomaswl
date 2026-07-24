@@ -107,7 +107,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Estudiando',
-            lines: [['David', '저는 도서관___ 공부해요. (Estudio en la biblioteca.)']],
+            lines: [['Gael', '저는 도서관___ 공부해요. (Estudio en la biblioteca.)']],
             options: ['에서', '에', '를', '이'],
             answer: '에서',
             explain: '공부하다 = acción en lugar → 에서. 도서관에서 공부해요.',
@@ -149,14 +149,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ejercicio',
-            lines: [['Zhanna', '저는 공원___ 운동해요. (Hago ejercicio en el parque.)']],
+            lines: [['Nora', '저는 공원___ 운동해요. (Hago ejercicio en el parque.)']],
             options: ['에서', '에', '를', '은'],
             answer: '에서',
             explain: '운동하다 = hacer ejercicio = acción → 에서. 공원에서 운동해요.',
           },
           {
             scene: 'Preguntando',
-            lines: [['David', '어디___ 공부해요? (¿Dónde estudias?)']],
+            lines: [['Gael', '어디___ 공부해요? (¿Dónde estudias?)']],
             options: ['에서', '에', '를', '이'],
             answer: '에서',
             explain: 'Preguntar lugar de acción: 어디에서 공부해요? = ¿Dónde estudias?',
@@ -197,9 +197,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Contrastando',
             lines: [
-              ['Lina', '어디 [[0]]? (¿Adónde vas?)'],
-              ['Sofia', '카페[[1]] 가요. (Voy al café.)'],
-            ],
+ ['Lina', '어디 [[0]]? (¿Adónde vas?)'],
+ ['Sofia', '카페[[1]] 가요. (Voy al café.)'],
+ ],
             blanks: [
               { options: ['가요', '있어요', '공부해요', '먹어요'], answer: '가요', explain: '가다 = ir. 어디 가요? = ¿Adónde vas?' },
               { options: ['에', '에서', '를', '이'], answer: '에', explain: 'Destino (ir al café) → 에. 카페에 가요.' },

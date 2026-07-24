@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el diálogo con だけ, しか o ばかり.',
         type: 'guidedText',
         scene: '友達と話しています。',
-        text: 'A: 最近、ゲームして[[0]]いるね。B: そうかな？でも、一日1時間[[1]]やっていないよ。A: それ[[1]]？じゃあ、少ないね。B: 昨日日本語を勉強し[[2]]。A: えっ、日本語[[1]]勉強しているの？',
+        text: 'A: 最近、ゲームして[[0]]いるね。B: そうかな？でも、一日1時間[[1]]やっていないよ。A: それ[[2]]？じゃあ、少ないね。B: 昨日日本語を勉強し[[3]]。A: えっ、日本語[[4]]勉強しているの？',
         blanks: [
           { options: ['ばかり', 'だけ', 'しか', 'まで'], answer: 'ばかり', explain: '"ゲームしてばかりいる" = no hace más que jugar videojuegos (exceso percibido).' },
           { options: ['しか', 'だけ', 'ばかり', 'まで'], answer: 'しか', explain: '"1時間しかやっていない" = solo juego una hora (y es poco). しか + negativo.' },
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe だけ, しか o ばかり según el contexto.',
         type: 'freeText',
         scene: '空欄に正しい語を入れてください。',
-        text: '時間が10分___ ありません。(insuficiencia) / コーヒー___ 飲みます。(neutral) / 休んで___ います。(exceso) / 日本に来た___です。(acabo de)',
+        text: '時間が10分[[0]] ありません。(insuficiencia) / コーヒー[[1]] 飲みます。(neutral) / 休んで[[2]] います。(exceso) / 日本に来た[[3]]です。(acabo de)',
         blanks: [
           { answer: 'しか', explain: '"10分しかありません" = solo tengo 10 minutos (es poco). しか + negación.' },
           { answer: 'だけ', explain: '"コーヒーだけ飲みます" = solo bebo café (neutral).' },

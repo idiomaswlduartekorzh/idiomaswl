@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto reemplazando los complementos con pronombres COI.',
         type: 'guidedText',
         scene: 'Marie parle de ses relations avec sa famille.',
-        text: 'J\'ai un bon contact avec ma famille. J\'écris à ma mère tous les dimanches. Je [[0]] envoie des messages. Mon père est loin, mais je [[0]] téléphone souvent. Mes frères et sœurs ? Je [[1]] parle aussi, mais moins souvent. Quand j\'ai un problème, je demande conseil à mes parents. Je [[1]] fais confiance.',
+        text: 'J\'ai un bon contact avec ma famille. J\'écris à ma mère tous les dimanches. Je [[0]] envoie des messages. Mon père est loin, mais je [[1]] téléphone souvent. Mes frères et sœurs ? Je [[2]] parle aussi, mais moins souvent. Quand j\'ai un problème, je demande conseil à mes parents. Je [[3]] fais confiance.',
         blanks: [
           { options: ['lui', 'leur', 'les', 'le'], answer: 'lui', explain: '"Je lui envoie / Je lui téléphone" = à ma mère/mon père (singular → lui).' },
           { options: ['leur', 'lui', 'les', 'le'], answer: 'leur', explain: '"Je leur parle / Je leur fais confiance" = à mes frères et sœurs (plural → leur).' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el pronombre COI correcto.',
         type: 'freeText',
         scene: 'Remplacez le complément indirect par un pronom.',
-        text: 'Il écrit à son amie. → Il ___ écrit. / Nous parlons à nos professeurs. → Nous ___ parlons. / Tu téléphones à moi ? → Tu ___ téléphones ? / Donnez les clés à vos voisins ! → Donnez-___ les clés !',
+        text: 'Il écrit à son amie. → Il [[0]] écrit. / Nous parlons à nos professeurs. → Nous [[1]] parlons. / Tu téléphones à moi ? → Tu [[2]] téléphones ? / Donnez les clés à vos voisins ! → Donnez-[[3]] les clés !',
         blanks: [
           { answer: 'lui', explain: '"lui écrit" = le escribe (à son amie → COI sg → lui).' },
           { answer: 'leur', explain: '"leur parlons" = les hablamos (à nos professeurs → COI pl → leur).' },

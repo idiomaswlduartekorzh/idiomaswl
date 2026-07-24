@@ -143,7 +143,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Llegada futura',
             lines: [['', "Quand vous ___ à Paris, appelez-moi."]],
-            options: ['arriverez', 'arrivez', 'arriviez', 'arriverez'],
+            options: ['arriverez', 'arrivez', 'arriviez'],
             answer: 'arriverez',
             explain: 'Después de "quand" con sentido futuro → futur simple: arriverez.',
           },

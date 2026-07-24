@@ -52,15 +52,32 @@ const topic: GrammarTopic = {
     {
       heading: '¿Qué significa ci vuole / ci vogliono en italiano?',
       paragraphs: [
-        'La expresión "ci vuole" / "ci vogliono" es una forma impersonal de expresar necesidad, equivalente a "hace falta", "se necesita" o "se tarda" en español. La regla es simple: si lo que se necesita es singular, usamos ci vuole; si es plural, usamos ci vogliono.',
-        'Ejemplos cotidianos: Per andare a Roma ci vogliono tre ore (Se tardan tres horas en ir a Roma). Per questa ricetta ci vuole un uovo (Para esta receta hace falta un huevo). Per imparare l\'italiano ci vuole tempo (Para aprender italiano hace falta tiempo).',
+        '"Ci vuole / ci vogliono" es una expresión impersonal de necesidad: "hace falta", "se necesita" o "se tarda". La regla es simple y solo depende del número de lo necesitado: singular → ci vuole; plural → ci vogliono. En pasado usa essere y concuerda. Esta es la tabla:',
+      ],
+      table: [
+        ['Cuándo', 'Forma', 'Ejemplo'],
+        ['Se necesita 1 cosa (sing.)', 'ci vuole', 'Ci vuole tempo.'],
+        ['Se necesitan varias (pl.)', 'ci vogliono', 'Ci vogliono tre ore.'],
+        ['Pasado singular', 'ci è voluto/a', 'Ci è voluta un\'ora.'],
+        ['Pasado plural', 'ci sono voluti/e', 'Ci sono voluti tre giorni.'],
       ],
     },
     {
-      heading: 'Ci vuole / ci vogliono en el pasado',
+      heading: '¿Cuándo se usa ci vuole y cuándo ci vogliono?',
       paragraphs: [
-        'En el passato prossimo, estas expresiones usan essere como auxiliar: ci è voluto (masc. sing.), ci è voluta (fem. sing.), ci sono voluti (masc. plur.), ci sono volute (fem. plur.).',
-        'Por ejemplo: Ci è voluta un\'ora per trovare parcheggio (Se tardó una hora en encontrar aparcamiento). Ci sono voluti tre giorni per completare il lavoro (Tardaron tres días en completar el trabajo).',
+        '"ci vuole" cuando lo necesario es singular: "Ci vuole pazienza", "Ci vuole un\'ora". "ci vogliono" cuando es plural: "Ci vogliono due uova", "Ci vogliono tre giorni". Concuerda con la COSA necesitada, no con la persona.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "se tarda X tiempo" en italiano?',
+      paragraphs: [
+        'De forma impersonal con "ci vuole / ci vogliono": "Per arrivare ci vogliono venti minuti" (se tardan veinte minutos en llegar). En pasado: "Ci è voluta un\'ora". Si el sujeto es una persona concreta, se usa "metterci" (ver abajo).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre volerci y metterci?',
+      paragraphs: [
+        '"Volerci" (ci vuole/vogliono) es impersonal: el tiempo o esfuerzo necesario en general ("Ci vogliono tre ore"). "Metterci" es personal: cuánto tarda alguien concreto ("Io ci metto tre ore", "Quanto ci metti?"). Volerci no lleva sujeto personal; metterci sí.',
       ],
     },
   ],
@@ -111,7 +128,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los ingredientes',
-            lines: [['David', 'Per la pizza margherita ___ mozzarella, pomodoro e basilico.']],
+            lines: [['Leo', 'Per la pizza margherita ___ mozzarella, pomodoro e basilico.']],
             options: ['ci vogliono', 'ci vuole', "c'è", 'ci sono'],
             answer: 'ci vogliono',
             explain: 'Mozzarella, pomodoro e basilico = varios ingredientes → ci vogliono.',
@@ -139,7 +156,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El dinero',
-            lines: [['Zhanna', 'Per comprare un biglietto ___ venti euro.']],
+            lines: [['Elena', 'Per comprare un biglietto ___ venti euro.']],
             options: ['ci vogliono', 'ci vuole', 'bisogna', "c'è"],
             answer: 'ci vogliono',
             explain: 'Venti euro = plural → ci vogliono.',
@@ -209,7 +226,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Completa con ci vuole o ci vogliono.',
         type: 'freeText',
-        scene: 'David explica lo que se necesita para aprender italiano',
+        scene: 'Leo explica lo que se necesita para aprender italiano',
         text: 'Per imparare bene l\'italiano [[0]] tempo e costanza. Per ogni lezione [[1]] circa 30 minuti di studio. Per la pronuncia [[2]] molta pratica ad alta voce. Per capire i film italiani [[3]] almeno due anni di studio. E per tutto questo [[4]] grande motivazione!',
         blanks: [
           { answer: 'ci vogliono', explain: 'Tempo e costanza = plural → ci vogliono.' },

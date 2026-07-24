@@ -98,7 +98,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No es grande',
-            lines: [['David', 'このへやは おおき___。(Esta habitación no es grande.)']],
+            lines: [['Diego', 'このへやは おおき___。(Esta habitación no es grande.)']],
             options: ['くないです', 'じゃないです', 'ません', 'ではありません'],
             answer: 'くないです',
             explain: 'おおきい = adjetivo-い. Negativo adj-い → い → くない + です = くないです.',
@@ -126,7 +126,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No es japonés',
-            lines: [['Zhanna', 'デービッドさんは にほんじん___。(David no es japonés.)']],
+            lines: [['Marta', 'デービッドさんは にほんじん___。(Diego no es japonés.)']],
             options: ['ではありません', 'ません', 'くないです', 'くありません'],
             answer: 'ではありません',
             explain: 'にほんじん + です = cópula. ではありません = forma formal de negación de です.',
@@ -157,7 +157,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El tiempo hoy',
-            lines: [['David', 'きょうは あつ[[0]]。でも、さむ[[1]]。']],
+            lines: [['Diego', 'きょうは あつ[[0]]。でも、さむ[[1]]。']],
             blanks: [
               { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'あつい (caluroso) = adj-い. あつ+くないです = あつくないです.' },
               { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'さむい (frío) = adj-い. さむ+くないです = さむくないです.' },
@@ -205,7 +205,7 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe la forma negativa correcta según el tipo de predicado.',
         type: 'freeText',
-        scene: 'Zhanna corrige afirmaciones incorrectas sobre WeLearn',
+        scene: 'Marta corrige afirmaciones incorrectas sobre WeLearn',
         text: 'ウィーラーンは ちいさい がっこう[[0]]。(No es pequeña.) デービッドは にほんじん[[1]]。(No es japonés.) じゅぎょうは たいくつ[[2]]。(Las clases no son aburridas.) がくせいは にほんご を はな[[3]]。(Los estudiantes no hablan japonés todavía.) にほんごは むずか[[4]]。(El japonés no es difícil.) でも、かんたん[[5]] ですよ！(¡Pero tampoco es fácil!)',
         blanks: [
           { answer: 'じゃありません', accepted: ['じゃないです', 'ではありません'], explain: 'ちいさい がっこうです → cópula negativa: じゃありません.' },

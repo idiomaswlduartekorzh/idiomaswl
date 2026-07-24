@@ -84,56 +84,56 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Trampa clásica',
-            lines: [['David', '¿Cómo se pronuncia la letra Н?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Н?']],
             options: ['n', 'h', 'r', 'v'],
             answer: 'n',
             explain: 'Н = n (como en "noche"). No es "h" aunque se parece al latín H.',
           },
           {
             scene: 'Trampa clásica 2',
-            lines: [['David', '¿Cómo se pronuncia la letra Р?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Р?']],
             options: ['r', 'p', 'b', 'n'],
             answer: 'r',
             explain: 'Р = r vibrante (como en "perro"). No es "p".',
           },
           {
             scene: 'Trampa clásica 3',
-            lines: [['David', '¿Cómo se pronuncia la letra В?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra В?']],
             options: ['v', 'b', 'w', 'f'],
             answer: 'v',
             explain: 'В = v (como en "vino"). No es "b".',
           },
           {
             scene: 'Trampa clásica 4',
-            lines: [['David', '¿Cómo se pronuncia la letra С?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra С?']],
             options: ['s', 'c', 'k', 'z'],
             answer: 's',
             explain: 'С = s (como en "sol"). No es "c" ni "k".',
           },
           {
             scene: 'Vocal compuesta',
-            lines: [['David', '¿Cómo se pronuncia la letra Я?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Я?']],
             options: ['ya', 'a', 'ia', 'je'],
             answer: 'ya',
             explain: 'Я = ya (como "ya" en inglés o "lla" coloquial). Vocal compuesta y+a.',
           },
           {
             scene: 'Sibilante',
-            lines: [['David', '¿Cómo se pronuncia la letra Ш?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Ш?']],
             options: ['sh', 'ch', 's', 'zh'],
             answer: 'sh',
             explain: 'Ш = sh (como "sh" en "shampoo"). Sibilante sorda.',
           },
           {
             scene: 'Sibilante 2',
-            lines: [['David', '¿Cómo se pronuncia la letra Ж?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Ж?']],
             options: ['zh', 'z', 'sh', 'ch'],
             answer: 'zh',
             explain: 'Ж = zh (como la "g" de "garage" en inglés). Sibilante sonora.',
           },
           {
             scene: 'Letra fácil',
-            lines: [['David', '¿Cómo se pronuncia la letra М?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra М?']],
             options: ['m', 'n', 'p', 'b'],
             answer: 'm',
             explain: 'М = m. Idéntica al latín. Sin trampa aquí.',
@@ -149,7 +149,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Нет (no)',
-            lines: [['David', 'НЕТ = [[0]] + [[1]] + т = "nyet" (no)']],
+            lines: [['Diego', 'НЕТ = [[0]] + [[1]] + т = "nyet" (no)']],
             blanks: [
               { options: ['n', 'h', 'r'], answer: 'n', explain: 'Н = n. Primera trampa: Н es n, no h.' },
               { options: ['ye', 'e', 'i'], answer: 'ye', explain: 'Е = ye. Vocal compuesta y+e.' },
@@ -157,7 +157,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Россия (Rusia)',
-            lines: [['David', 'РОССИЯ = [[0]]оссия = primer sonido']],
+            lines: [['Diego', 'РОССИЯ = [[0]]оссия = primer sonido']],
             blanks: [
               { options: ['r', 'p', 'b'], answer: 'r', explain: 'Р = r vibrante. No es "p".' },
               { options: ['ya', 'a', 'ja'], answer: 'ya', explain: 'Я = ya. Final de Россия = Rossiya.' },
@@ -165,7 +165,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Спасибо (gracias)',
-            lines: [['David', 'СПАСИБО = [[0]]пасибо — primer sonido']],
+            lines: [['Diego', 'СПАСИБО = [[0]]пасибо — primer sonido']],
             blanks: [
               { options: ['s', 'c', 'k'], answer: 's', explain: 'С = s. No es "c". Spasibo comienza con s.' },
               { options: ['i', 'y', 'e'], answer: 'i', explain: 'И = i (no "y"). Спасибо = spa-SI-bo.' },
@@ -173,7 +173,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Привет (hola)',
-            lines: [['David', 'ПРИВЕТ = [[0]]ривет — primer y segundo sonido']],
+            lines: [['Diego', 'ПРИВЕТ = [[0]]ривет — primer y segundo sonido']],
             blanks: [
               { options: ['p', 'r', 'b'], answer: 'p', explain: 'П = p. Nueva letra (no trampa). Привет comienza con p.' },
               { options: ['r', 'p', 'n'], answer: 'r', explain: 'Р = r. Trampа: Р es r, no p.' },

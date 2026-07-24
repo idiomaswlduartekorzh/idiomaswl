@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la pregunta correcta con 얼마나.',
         type: 'freeText',
         scene: '얼마나 표현을 완성하세요.',
-        text: '집에서 역까지 얼마나 ___? (cuánto tarda) / 한국어를 배운 지 얼마나 ___? (cuánto tiempo) / 그 가방이 얼마나 ___? (qué tan caro) / 얼마나 ___ 운동해요? (con qué frecuencia)',
+        text: '집에서 역까지 얼마나 [[0]]? (cuánto tarda) / 한국어를 배운 지 얼마나 [[1]]? (cuánto tiempo) / 그 가방이 얼마나 [[2]]? (qué tan caro) / 얼마나 [[3]] 운동해요? (con qué frecuencia)',
         blanks: [
           { answer: '걸려요', explain: '"얼마나 걸려요?" = ¿Cuánto se tarda? (걸리다).' },
           { answer: '됐어요', explain: '"얼마나 됐어요?" = ¿Cuánto tiempo hace? (되다 = llegar a ser).' },

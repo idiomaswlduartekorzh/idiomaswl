@@ -109,7 +109,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Poder hablar espanol',
-            lines: [['David', 'スペイン語が___か？(¿Puedes hablar espanol?)']],
+            lines: [['Tomás', 'スペイン語が___か？(¿Puedes hablar espanol?)']],
             options: ['話せますか', '話しますか', '話されますか', '話れますか'],
             answer: '話せますか',
             explain: '話す (Gr.1): す→せ+る = 話せる → 話せますか？',
@@ -137,14 +137,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No poder ir hoy',
-            lines: [['Jose', '今日は___。(hoy no puedo ir)']],
+            lines: [['Nico', '今日は___。(hoy no puedo ir)']],
             options: ['行けません', '行きられません', '行かれません', '行きません'],
             answer: '行けません',
             explain: '行く (Gr.1): く→け+る = 行ける → negativo: 行けません.',
           },
           {
             scene: 'Poder ver bien — 見る',
-            lines: [['Zhanna', 'ここからよく___か？(¿Se puede ver bien desde aqui?)']],
+            lines: [['Iris', 'ここからよく___か？(¿Se puede ver bien desde aqui?)']],
             options: ['見られますか', '見えますか', '見ますか', '見られませんか'],
             answer: '見られますか',
             explain: '見る (Gr.2): 見 + られる → 見られる → 見られますか？',
@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Habilidades lingüisticas',
-            lines: [['David', '中国語が[[0]]か？'], ['Carlos', 'いいえ、でも韓国語が[[1]]よ。']],
+            lines: [['Tomás', '中国語が[[0]]か？'], ['Carlos', 'いいえ、でも韓国語が[[1]]よ。']],
             blanks: [
               { options: ['話せますか', '話しますか', '話されますか'], answer: '話せますか', explain: '話す→話せる → 話せますか？' },
               { options: ['話せます', '話します', '話されます'], answer: '話せます', explain: '話す→話せる → 話せます. Puede hablar coreano.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Reunion manana',
-            lines: [['Jose', '明日の会議に[[0]]か？'], ['Zhanna', 'いいえ、残念ながら[[1]]。']],
+            lines: [['Nico', '明日の会議に[[0]]か？'], ['Iris', 'いいえ、残念ながら[[1]]。']],
             blanks: [
               { options: ['来られますか', '来ますか', 'きれますか'], answer: '来られますか', explain: 'くる (irregular): こられる → 来られますか？' },
               { options: ['来られません', '来ません', 'きれません'], answer: '来られません', explain: 'くる→こられる → negativo: 来られません.' },

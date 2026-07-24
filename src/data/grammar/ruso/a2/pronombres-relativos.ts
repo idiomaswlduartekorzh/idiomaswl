@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta de который.',
         type: 'freeText',
         scene: 'Напиши форму относительного местоимения.',
-        text: 'Фильм, ___ (Acus. inan. masc.) я видел / Подруга, ___ (Nom. fem.) пела / О городе, в ___ (Prep. masc.) я жил / Друзья, ___ (с + Instr. pl.) я учился',
+        text: 'Фильм, [[0]] (Acus. inan. masc.) я видел / Подруга, [[1]] (Nom. fem.) пела / О городе, в [[2]] (Prep. masc.) я жил / Друзья, [[3]] (с + Instr. pl.) я учился',
         blanks: [
           { answer: 'который', explain: '"который" — фильм (masc. inan.) → Acus. inan. = Nom. masc. = который.' },
           { answer: 'которая', explain: '"которая" — подруга (fem.) → Nominativo fem. = которая.' },

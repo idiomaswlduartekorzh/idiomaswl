@@ -49,7 +49,12 @@ const topic: GrammarTopic = {
       heading: 'Los dos grupos de adjetivos en italiano',
       paragraphs: [
         'Los adjetivos italianos se dividen en dos grupos según sus terminaciones. El grupo 1 tiene cuatro formas: -o (masc. sg.), -a (fem. sg.), -i (masc. pl.), -e (fem. pl.). Ejemplos: bello/bella/belli/belle, brutto/brutta/brutti/brutte, nuovo/nuova/nuovi/nuove, buono/buona/buoni/buone.',
-        'El grupo 2 tiene solo dos formas: -e en singular (para ambos géneros) y -i en plural (para ambos géneros). Ejemplos: grande/grandi, intelligente/intelligenti, interessante/interessanti, importante/importanti, forte/forti. Son muy frecuentes y más fáciles de aprender porque no distinguen género.',
+        'El grupo 2 tiene solo dos formas: -e en singular (para ambos géneros) y -i en plural (para ambos géneros). Ejemplos: grande/grandi, intelligente/intelligenti, importante/importanti, forte/forti. Son más fáciles porque no distinguen género. Compara los dos grupos:',
+      ],
+      table: [
+        ['Grupo', 'Singular (masc. / fem.)', 'Plural (masc. / fem.)', 'Ejemplo'],
+        ['Grupo 1 (4 formas)', '-o / -a', '-i / -e', 'bello, bella, belli, belle'],
+        ['Grupo 2 (2 formas)', '-e (m. y f.)', '-i (m. y f.)', 'grande, grandi'],
       ],
     },
     {
@@ -62,8 +67,33 @@ const topic: GrammarTopic = {
     {
       heading: 'Bello y buono: variantes antes del nombre',
       paragraphs: [
-        'Bello antes del nombre sigue el patrón del artículo determinado: bel libro (il libro), bell\'amico (l\'amico), bello zaino (lo zaino), bella casa (la casa), bei libri (i libri), begli amici (gli amici), belle case (le case). Después del nombre es regular: libro bello, amici belli.',
-        'Buono antes de un sustantivo singular funciona como el artículo indeterminado: un buon vino (un vino), uno buon studente (un estudiante, masc. s+cons.), una buona pizza (una pizza), una buon\'amica (una amiga). En plural es regular: buoni vini, buone pizze.',
+        'Cuando van ANTES del sustantivo, "bello" copia las formas del artículo determinado y "buono" las del indeterminado. Después del nombre son regulares (un libro bello). Esta tabla resume "bello" antepuesto:',
+      ],
+      table: [
+        ['El sustantivo empieza por…', 'Forma de "bello"', 'Ejemplo'],
+        ['Masc. consonante', 'bel / bei', 'bel libro → bei libri'],
+        ['Masc. s+cons, z', 'bello / begli', 'bello zaino → begli zaini'],
+        ['Masc. vocal', 'bell\' / begli', 'bell\'amico → begli amici'],
+        ['Fem. consonante', 'bella / belle', 'bella casa → belle case'],
+        ['Fem. vocal', 'bell\' / belle', 'bell\'amica → belle amiche'],
+      ],
+    },
+    {
+      heading: '¿Cómo concuerdan los adjetivos en italiano?',
+      paragraphs: [
+        'En género y número con el sustantivo. Los del grupo 1 tienen cuatro formas (-o/-a/-i/-e): "un ragazzo alto", "una ragazza alta", "ragazzi alti", "ragazze alte". Los del grupo 2 tienen dos (-e/-i) e ignoran el género: "un libro grande", "una casa grande", "libri grandi", "case grandi".',
+      ],
+    },
+    {
+      heading: '¿El adjetivo va antes o después del sustantivo en italiano?',
+      paragraphs: [
+        'Por defecto, DESPUÉS: "un libro interessante", "una macchina rossa". Algunos adjetivos frecuentes (bello, brutto, buono, grande, piccolo, giovane, vecchio) suelen ir antes. La posición puede cambiar el matiz: "un grande uomo" (un gran hombre, notable) frente a "un uomo grande" (un hombre de gran estatura).',
+      ],
+    },
+    {
+      heading: '¿Cómo cambia "bello" delante del nombre?',
+      paragraphs: [
+        'Copia las terminaciones del artículo determinado: bel libro (como il), bello zaino (como lo), bell\'amico (como l\'), bei libri (como i), begli amici (como gli), bella/belle en femenino. Detrás del nombre vuelve a ser regular: "un vestito bello".',
       ],
     },
   ],
@@ -91,7 +121,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Una profesora inteligente',
-            lines: [['David', 'Zhanna è una professoressa molto ___. (intelligente)']],
+            lines: [['Bruno', 'Sara è una professoressa molto ___. (intelligente)']],
             options: ['intelligente', 'intelligenti', 'intelligenta', 'intelligento'],
             answer: 'intelligente',
             explain: 'Professoressa = femenino singular. Grupo 2: intelligente (sing. masc. y fem.).',
@@ -112,14 +142,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Estudiantes importantes',
-            lines: [['Zhanna', 'I nostri studenti sono ___. (importante)']],
+            lines: [['Sara', 'I nostri studenti sono ___. (importante)']],
             options: ['importanti', 'importante', 'importanta', 'importanto'],
             answer: 'importanti',
             explain: 'Studenti = masculino plural. Grupo 2: importante → importanti.',
           },
           {
             scene: 'Un buen café',
-            lines: [['Marco', 'David fa sempre un ___ caffè. (buono)']],
+            lines: [['Marco', 'Bruno fa sempre un ___ caffè. (buono)']],
             options: ['buon', 'buono', 'buona', 'buoni'],
             answer: 'buon',
             explain: 'Caffè = masc. sg. que empieza por consonante. Antes del nombre: un buon caffè.',
@@ -157,8 +187,8 @@ const topic: GrammarTopic = {
           {
             scene: 'La clase y el profesor',
             lines: [
-              ['Sofia', 'La lezione è [[0]] (interessante) e il professore è [[1]] (bravo).'],
-            ],
+ ['Sofia', 'La lezione è [[0]] (interessante) e il professore è [[1]] (bravo).'],
+ ],
             blanks: [
               { options: ['interessante', 'interessanti', 'interessanta'], answer: 'interessante', explain: 'Lezione = fem. sg. Grupo 2: interessante (sing. invariable en género).' },
               { options: ['bravo', 'brava', 'bravi'], answer: 'bravo', explain: 'Professore = masc. sg. Grupo 1: bravo (masc. sg.).' },
@@ -174,7 +204,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Las estudiantes',
-            lines: [['David', 'Sofia e Lina sono ragazze [[0]] (bravo) e molto [[1]] (intelligente).']],
+            lines: [['Bruno', 'Sofia e Lina sono ragazze [[0]] (bravo) e molto [[1]] (intelligente).']],
             blanks: [
               { options: ['brave', 'bravi', 'brava'], answer: 'brave', explain: 'Ragazze = fem. pl. Grupo 1: bravo → brave.' },
               { options: ['intelligenti', 'intelligente', 'intelligento'], answer: 'intelligenti', explain: 'Ragazze = fem. pl. Grupo 2: intelligente → intelligenti.' },
@@ -182,7 +212,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Un buen estudiante',
-            lines: [['Zhanna', 'Carlo è un [[0]] (buono) studente e un [[1]] (bello) esempio per tutti.']],
+            lines: [['Sara', 'Carlo è un [[0]] (buono) studente e un [[1]] (bello) esempio per tutti.']],
             blanks: [
               { options: ['buono', 'buon', 'buona'], answer: 'buono', explain: 'Studente empieza por s+cons. → uno buono studente / un buono studente.' },
               { options: ['bell\'', 'bel', 'bello'], answer: 'bell\'', explain: 'Esempio empieza por vocal → bell\'esempio.' },
@@ -196,7 +226,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa el texto con la forma correcta de cada adjetivo.',
         type: 'guidedText',
-        scene: 'David describe la academia WeLearn a un nuevo estudiante',
+        scene: 'Bruno describe la academia WeLearn a un nuevo estudiante',
         text: 'WeLearn è una scuola [[0]] (piccolo). Abbiamo professori [[1]] (bravo) e lezioni [[2]] (interessante). L\'ambiente è [[3]] (caldo e accogliente). Gli studenti sono [[4]] (giovane) e [[5]] (motivato). Le classi sono [[6]] (piccolo) — massimo dieci persone. È una [[7]] (bello) esperienza imparare qui!',
         blanks: [
           { options: ['piccola', 'piccolo', 'piccoli'], answer: 'piccola', explain: 'Scuola = fem. sg. Grupo 1: piccolo → piccola.' },

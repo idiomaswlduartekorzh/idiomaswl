@@ -111,14 +111,14 @@ const topic: GrammarTopic = {
             explain: '"Mutter" = femenino → "meine Mutter". Posesivo de ich + género femenino.',
           },
           {
-            scene: 'David habla del trabajo de un colega',
-            lines: [['David', '___ Kollege spricht fünf Sprachen. (su colega, de él)']],
+            scene: 'Hugo habla del trabajo de un colega',
+            lines: [['Hugo', '___ Kollege spricht fünf Sprachen. (su colega, de él)']],
             options: ['Sein', 'Ihre', 'Ihr', 'Seine'],
             answer: 'Sein',
             explain: '"Kollege" = masculino, poseedor = er → "sein Kollege". Sein + masculino = sein (sin -e).',
           },
           {
-            scene: 'Ana habla de la hermana de Zhanna',
+            scene: 'Ana habla de la hermana de Sara',
             lines: [['Ana', '___ Schwester lebt in Kiew. (su hermana, de ella)']],
             options: ['Ihre', 'Seine', 'Sein', 'Ihr'],
             answer: 'Ihre',
@@ -132,9 +132,9 @@ const topic: GrammarTopic = {
             explain: '"Kurs" = masculino, wir → "unser Kurs". Unser + masculino = unser (sin -e).',
           },
           {
-            scene: 'Zhanna le pregunta a dos estudiantes',
-            lines: [['Zhanna', 'Wie ist ___ Klasse? (vuestra clase)']],
-            options: ['eure', 'eure', 'euer', 'unser'],
+            scene: 'Sara le pregunta a dos estudiantes',
+            lines: [['Sara', 'Wie ist ___ Klasse? (vuestra clase)']],
+            options: ['eure', 'euer', 'unser'],
             answer: 'eure',
             explain: '"Klasse" = femenino, ihr (vosotros) → "eure Klasse". Euer + femenino = eure.',
           },
@@ -146,7 +146,7 @@ const topic: GrammarTopic = {
             explain: '"Bruder" = masculino, ich → "mein Bruder". Mein + masculino = mein (sin -e).',
           },
           {
-            scene: 'Sofía pregunta por el apellido de David (formal)',
+            scene: 'Sofía pregunta por el apellido de Hugo (formal)',
             lines: [['Sofía', 'Wie ist ___ Familienname, Herr Duarte? (su apellido, formal)']],
             options: ['Ihr', 'Ihre', 'Sein', 'Dein'],
             answer: 'Ihr',
@@ -169,11 +169,11 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'David y Zhanna hablan de sus familias',
-            lines: [['', 'David: [[0]] Vater ist Arzt. / Zhanna: [[1]] Vater ist Musiker.']],
+            scene: 'Hugo y Sara hablan de sus familias',
+            lines: [['', 'Hugo: [[0]] Vater ist Arzt. / Sara: [[1]] Vater ist Musiker.']],
             blanks: [
-              { options: ['Sein', 'Ihr', 'Ihre', 'Seine'], answer: 'Sein', explain: '"Vater" = masculino, poseedor David (er) → "sein Vater".' },
-              { options: ['Ihr', 'Sein', 'Ihre', 'Seine'], answer: 'Ihr', explain: '"Vater" = masculino, poseedora Zhanna (sie) → "ihr Vater". Ihr + masculino = ihr (sin -e).' },
+              { options: ['Sein', 'Ihr', 'Ihre', 'Seine'], answer: 'Sein', explain: '"Vater" = masculino, poseedor Hugo (er) → "sein Vater".' },
+              { options: ['Ihr', 'Sein', 'Ihre', 'Seine'], answer: 'Ihr', explain: '"Vater" = masculino, poseedora Sara (sie) → "ihr Vater". Ihr + masculino = ihr (sin -e).' },
             ],
           },
           {
@@ -193,8 +193,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna habla con un grupo de estudiantes',
-            lines: [['Zhanna', '[[0]] Hausaufgaben sind sehr gut! Und [[1]] Prüfung ist morgen.']],
+            scene: 'Sara habla con un grupo de estudiantes',
+            lines: [['Sara', '[[0]] Hausaufgaben sind sehr gut! Und [[1]] Prüfung ist morgen.']],
             blanks: [
               { options: ['Eure', 'Euer', 'Unsere', 'Ihre'], answer: 'Eure', explain: '"Hausaufgaben" = plural, ihr (vosotros) → "eure Hausaufgaben".' },
               { options: ['Eure', 'Euer', 'Unsere', 'Ihre'], answer: 'Eure', explain: '"Prüfung" = femenino, ihr (vosotros) → "eure Prüfung".' },
@@ -226,13 +226,13 @@ const topic: GrammarTopic = {
         intro: 'Escribe el posesivo correcto de memoria.',
         type: 'freeText',
         scene: 'Lina describe a su familia y a sus compañeros.',
-        text: 'Ich heiße Lina. [[0]] Bruder heißt Markus. [[1]] Freundin heißt Sofia. Sofias [[2]] Eltern leben in Madrid. Zhanna ist [[3]] Lehrerin. [[4]] Unterricht ist immer interessant.',
+        text: 'Ich heiße Lina. [[0]] Bruder heißt Markus. [[1]] Freundin heißt Sofia. Sofias [[2]] Eltern leben in Madrid. Sara ist [[3]] Lehrerin. [[4]] Unterricht ist immer interessant.',
         blanks: [
           { answer: 'Mein', accepted: ['Mein', 'mein'], explain: '"Bruder" = masculino, ich → "mein Bruder".' },
           { answer: 'Meine', accepted: ['Meine', 'meine'], explain: '"Freundin" = femenino, ich → "meine Freundin".' },
           { answer: 'ihre', accepted: ['ihre', 'Ihre'], explain: '"Eltern" = plural, Sofia (sie) → "ihre Eltern".' },
           { answer: 'unsere', accepted: ['unsere', 'Unsere'], explain: '"Lehrerin" = femenino, wir → "unsere Lehrerin".' },
-          { answer: 'Ihr', accepted: ['Ihr', 'ihr'], explain: '"Unterricht" = masculino, Zhanna (sie) → "ihr Unterricht".' },
+          { answer: 'Ihr', accepted: ['Ihr', 'ihr'], explain: '"Unterricht" = masculino, Sara (sie) → "ihr Unterricht".' },
         ],
       },
       {
@@ -275,7 +275,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Presenta a alguien de tu familia',
             prompt: 'Escribe 3 oraciones sobre un familiar usando su nombre y posesivos correctos.',
-            answer: 'Das ist mein Vater. Sein Name ist José. Seine Arbeit ist sehr interessant.',
+            answer: 'Das ist mein Vater. Sein Name ist Bruno. Seine Arbeit ist sehr interessant.',
             accepted: ['mein ', 'meine ', 'sein ', 'seine ', 'ihr ', 'ihre '],
             explain: 'Primero: "das ist mein/meine..." Luego: sein/seine o ihr/ihre según género del familiar.',
           },
@@ -289,7 +289,7 @@ const topic: GrammarTopic = {
           {
             scene: 'La clase de WeLearn',
             prompt: 'Escribe 2 oraciones sobre la clase usando "unser/unsere" y luego algo sobre lo de otro estudiante.',
-            answer: 'Unser Kurs ist sehr interessant. Unsere Lehrerin ist Zhanna. Sein Deutsch ist schon sehr gut.',
+            answer: 'Unser Kurs ist sehr interessant. Unsere Lehrerin ist Sara. Sein Deutsch ist schon sehr gut.',
             accepted: ['unser ', 'unsere ', 'sein ', 'seine ', 'ihr ', 'ihre '],
             explain: 'Unser/unsere para "nosotros". Luego posesivo de tercera persona para otro estudiante.',
           },

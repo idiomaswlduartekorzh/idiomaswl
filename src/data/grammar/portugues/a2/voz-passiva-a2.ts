@@ -186,7 +186,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta de ser + participio.',
         type: 'freeText',
         scene: 'Transformando orações ativas em passivas.',
-        text: 'Ela escreveu o livro. → O livro ___ (escrever, pretérito). / Eles vão abrir a loja. → A loja ___ (abrir, futuro). / Alguém roubou o carro. → O carro ___ (roubar, pretérito). / O professor vai avaliar os alunos. → Os alunos ___ (avaliar, futuro).',
+        text: 'Ela escreveu o livro. → O livro [[0]] (escrever, pretérito). / Eles vão abrir a loja. → A loja [[1]] (abrir, futuro). / Alguém roubou o carro. → O carro [[2]] (roubar, pretérito). / O professor vai avaliar os alunos. → Os alunos [[3]] (avaliar, futuro).',
         blanks: [
           { answer: 'foi escrito', explain: '"escrever" → escrito. "o livro" = masc. sing. → foi escrito.' },
           { answer: 'será aberta', explain: '"abrir" → aberta. "a loja" = femm. sing. → será aberta.' },

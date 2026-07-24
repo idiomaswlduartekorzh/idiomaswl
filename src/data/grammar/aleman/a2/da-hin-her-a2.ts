@@ -188,7 +188,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el da-Kompositum correcto para cada preposición.',
         type: 'freeText',
         scene: 'Respondiendo preguntas sobre ideas mencionadas.',
-        text: 'Ich denke ___ (an das). / Ich bin ___ (mit dem) einverstanden. / Hast du ___ (von dem) gehört? / Wir warten ___ (auf das). / Er redet ___ (über das) nicht.',
+        text: 'Ich denke [[0]] (an das). / Ich bin [[1]] (mit dem) einverstanden. / Hast du [[2]] (von dem) gehört? / Wir warten [[3]] (auf das). / Er redet [[4]] (über das) nicht.',
         blanks: [
           { answer: 'daran', explain: 'an + vocal → daran.' },
           { answer: 'damit', explain: 'mit → damit.' },

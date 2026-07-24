@@ -23,7 +23,7 @@ const topic: GrammarTopic = {
     model: 'テーブルの うえに ねこが います。(Hay un gato sobre la mesa.) / つくえの うえに ほんが あります。(Hay un libro sobre el escritorio.)',
     formula: '[lugar]に + [sujeto]が + います (animado) / あります (inanimado)',
     decisions: [
-      'います → personas: デービッドさんが います (está David)',
+      'います → personas: デービッドさんが います (está Diego)',
       'います → animales: ねこが います, いぬが います, さかなが います',
       'あります → objetos: ほんが あります, かばんが あります',
       'あります → plantas y árboles: はなが あります, きが あります',
@@ -32,7 +32,7 @@ const topic: GrammarTopic = {
     ],
     table: [
       ['Verbo', 'Para qué', 'Ejemplo'],
-      ['います (imasu)', 'Personas', 'デービッドさんが います (Está David)'],
+      ['います (imasu)', 'Personas', 'デービッドさんが います (Está Diego)'],
       ['います (imasu)', 'Animales', 'ねこが います (Hay un gato)'],
       ['あります (arimasu)', 'Objetos/cosas', 'ほんが あります (Hay un libro)'],
       ['あります (arimasu)', 'Plantas', 'はなが あります (Hay flores)'],
@@ -65,7 +65,7 @@ const topic: GrammarTopic = {
     teacherLens: 'El estudiante aprende います para animados y あります para inanimados con ejemplos visuales.',
     graphicPrompt: 'Dos columnas: います (gato, persona, pez) vs あります (libro, mesa, flor). Estructura [lugar]に + [sujeto]が + verb.',
     scene: [
-      ['います = animados', 'ねこが います / Davidさんが います'],
+      ['います = animados', 'ねこが います / Diegoさんが います'],
       ['あります = inanimados', 'ほんが あります / じゅぎょうが あります'],
       ['Negativo', 'いません / ありません'],
     ],
@@ -96,8 +96,8 @@ const topic: GrammarTopic = {
             explain: 'ほん (libro) = objeto inanimado → あります.',
           },
           {
-            scene: 'Está David',
-            lines: [['Ana', 'きょうしつに デービッドさんが ___。(David está en el aula.)']],
+            scene: 'Está Diego',
+            lines: [['Ana', 'きょうしつに デービッドさんが ___。(Diego está en el aula.)']],
             options: ['います', 'あります', 'いません', 'ありません'],
             answer: 'います',
             explain: 'デービッドさん (persona) = animado → います.',
@@ -118,14 +118,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No hay tarea',
-            lines: [['Zhanna', 'きょうは しゅくだいが ___。(Hoy no hay tarea.)']],
+            lines: [['Alba', 'きょうは しゅくだいが ___。(Hoy no hay tarea.)']],
             options: ['ありません', 'いません', 'あります', 'います'],
             answer: 'ありません',
             explain: 'しゅくだい (tarea) = abstracto/cosa → ありません.',
           },
           {
             scene: 'Hay un perro',
-            lines: [['David', 'こうえんに いぬが ___。(Hay un perro en el parque.)']],
+            lines: [['Diego', 'こうえんに いぬが ___。(Hay un perro en el parque.)']],
             options: ['います', 'あります', 'いません', 'ありません'],
             answer: 'います',
             explain: 'いぬ (perro) = animal → います.',
@@ -148,7 +148,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Describiendo el aula',
-            lines: [['David', 'きょうしつに せんせい[[0]] ___[[1]]。(En el aula hay un profesor.)']],
+            lines: [['Diego', 'きょうしつに せんせい [[0]] 。(En el aula hay un profesor.)']],
             blanks: [
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'Existencia: sujeto + が + います.' },
               { options: ['います', 'あります', 'いません'], answer: 'います', explain: 'せんせい (profesor) = persona → います.' },
@@ -156,7 +156,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En la biblioteca',
-            lines: [['Sofia', 'としょかんに ほん[[0]] ___[[1]]。(En la biblioteca hay libros.)']],
+            lines: [['Sofia', 'としょかんに ほん [[0]] 。(En la biblioteca hay libros.)']],
             blanks: [
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'Existencia: [sujeto]が + あります.' },
               { options: ['あります', 'います', 'ありません'], answer: 'あります', explain: 'ほん (libro) = objeto → あります.' },
@@ -164,7 +164,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El jardín de WeLearn',
-            lines: [['Ana', 'にわに はな[[0]] ___[[1]]。でも、ねこ[[0]] ___[[1]]。']],
+            lines: [['Ana', 'にわに はな [[0]] 。でも、ねこ [[1]] 。']],
             blanks: [
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'Partícula が para sujeto de existencia.' },
               { options: ['あります / います', 'います / あります', 'ありません / いません'], answer: 'あります / います', explain: 'はな → あります (planta). ねこ → います (animal).' },
@@ -172,7 +172,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Negaciones',
-            lines: [['Marco', 'ここに じしょ[[0]] ___[[1]]。デービッドさんも ___[[1]]。']],
+            lines: [['Marco', 'ここに じしょ [[0]] 。デービッドさんも [[1]] 。']],
             blanks: [
               { options: ['が', 'は', 'も'], answer: 'が', explain: 'じしょ (diccionario) = objeto, が para sujeto nuevo.' },
               { options: ['ありません / いません', 'います / あります', 'いません / ありません'], answer: 'ありません / いません', explain: 'じしょ → ありません. デービッドさん → いません.' },

@@ -127,8 +127,8 @@ const topic: GrammarTopic = {
             explain: '"Lecker" después de "ist" = predicativo. Sin terminación extra.',
           },
           {
-            scene: 'David habla de una nueva estudiante',
-            lines: [['David', 'Die neue Studentin ist sehr ___. (inteligente)']],
+            scene: 'Hugo habla de una nueva estudiante',
+            lines: [['Hugo', 'Die neue Studentin ist sehr ___. (inteligente)']],
             options: ['klug', 'kluge', 'kluger', 'kluges'],
             answer: 'klug',
             explain: 'Género femenino pero predicativo: "klug" no cambia. Die Studentin ist klug.',
@@ -164,8 +164,8 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'Zhanna describe la clase de hoy',
-            lines: [['Zhanna', '[[0]] Unterricht heute ist sehr [[1]]. (la clase, interesante)']],
+            scene: 'Nora describe la clase de hoy',
+            lines: [['Nora', '[[0]] Unterricht heute ist sehr [[1]]. (la clase, interesante)']],
             blanks: [
               { options: ['Der', 'Die', 'Das', 'Ein'], answer: 'Der', explain: '"Unterricht" = masculino → "der Unterricht".' },
               { options: ['interessant', 'interessante', 'interessanter', 'interessanten'], answer: 'interessant', explain: 'Predicativo: "interessant" sin terminación, independientemente del género.' },
@@ -204,11 +204,11 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con los adjetivos correctos en forma predicativa.',
         type: 'guidedText',
         scene: 'Carlos escribe un email sobre su primer día en WeLearn.',
-        text: 'Heute war mein erster Tag bei WeLearn. Die Akademie ist sehr [[0]] (schön). Der Unterricht ist [[1]] (interessant). Die Lehrerin Zhanna ist sehr [[2]] (kompetent). Das Gebäude ist [[3]] (groß) und [[4]] (modern). Ich bin sehr [[5]] (glücklich) hier. Die anderen Studenten sind auch sehr [[6]] (nett).',
+        text: 'Heute war mein erster Tag bei WeLearn. Die Akademie ist sehr [[0]] (schön). Der Unterricht ist [[1]] (interessant). Die Lehrerin Nora ist sehr [[2]] (kompetent). Das Gebäude ist [[3]] (groß) und [[4]] (modern). Ich bin sehr [[5]] (glücklich) hier. Die anderen Studenten sind auch sehr [[6]] (nett).',
         blanks: [
           { options: ['schön', 'schöne', 'schöner', 'schönem'], answer: 'schön', explain: 'Predicativo tras "ist": "schön" invariable.' },
           { options: ['interessant', 'interessante', 'interessanter', 'interessanten'], answer: 'interessant', explain: 'Predicativo: "interessant" sin terminación.' },
-          { options: ['kompetent', 'kompetente', 'kompetenter', 'kompetentem'], answer: 'kompetent', explain: 'Predicativo: "kompetent" invariable. Zhanna ist kompetent.' },
+          { options: ['kompetent', 'kompetente', 'kompetenter', 'kompetentem'], answer: 'kompetent', explain: 'Predicativo: "kompetent" invariable. Nora ist kompetent.' },
           { options: ['groß', 'große', 'großer', 'großem'], answer: 'groß', explain: 'Das Gebäude ist groß — neutro pero predicativo, sin cambio.' },
           { options: ['modern', 'moderne', 'moderner', 'modernem'], answer: 'modern', explain: 'Dos adjetivos predicativos coordinados: "groß und modern".' },
           { options: ['glücklich', 'glückliche', 'glücklicher', 'glücklichem'], answer: 'glücklich', explain: 'Predicativo con "bin": "ich bin glücklich".' },

@@ -123,7 +123,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pedir permiso para abrir',
-            lines: [['David', '窓を___か？(¿Puedo abrir la ventana?)']],
+            lines: [['Iván', '窓を___か？(¿Puedo abrir la ventana?)']],
             options: ['開けてもいいですか', '開けてはいけませんか', '開けますか', '開けてもいいです'],
             answer: '開けてもいいですか',
             explain: '開ける (akeru, Gr.2): 開けて + もいいですか？Pedir permiso.',
@@ -168,7 +168,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En el parque',
-            lines: [['Sofia', 'ここで音楽を[[0]]か？'], ['David', 'いいえ、夜10時以降は[[1]]よ。']],
+            lines: [['Sofia', 'ここで音楽を[[0]]か？'], ['Iván', 'いいえ、夜10時以降は[[1]]よ。']],
             blanks: [
               { options: ['聴いてもいいですか', '聴いてはいけませんか', '聴きますか'], answer: '聴いてもいいですか', explain: '聴く→聴いて + もいいですか？' },
               { options: ['してはいけません', 'してもいいです', 'しません'], answer: 'してはいけません', explain: 'する→して + はいけません. Prohibicion despues de las 10.' },
@@ -214,7 +214,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma de permiso o prohibicion del verbo en parentesis.',
         type: 'freeText',
-        scene: 'Jose explica las reglas de su casa',
+        scene: 'Dario explica las reglas de su casa',
         text: '私の家では猫を[[0]] (飼う)。でも、犬は[[1]] (飼う)。友達は[[2]] (来る)。夜12時以降は大きな音楽は[[3]] (聴く)。冷蔵庫の食べ物は自由に[[4]] (食べる)。',
         blanks: [
           { answer: '飼ってもいいです', explain: '飼う (kau, Gr.1): う→って → 飼って + もいいです.' },

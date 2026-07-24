@@ -99,7 +99,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando de lo que hiciste ayer',
             lines: [['', 'Ich habe gestern viel ___ . (machen)']],
-            options: ['gemacht', 'gemacht', 'gemachen', 'gemascht'],
+            options: ['gemacht', 'gemachen', 'gemascht'],
             answer: 'gemacht',
             explain: '"machen" es regular: ge- + mach + t = gemacht.',
           },

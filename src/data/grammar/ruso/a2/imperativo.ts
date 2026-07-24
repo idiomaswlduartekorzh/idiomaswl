@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma imperativa correcta.',
         type: 'freeText',
         scene: 'Образуй повелительное наклонение.',
-        text: 'Смотреть → ___ (ты-форма) / Пить → ___ (вы-форма) / Написать → ___ (ты-форма) / Есть → ___ (ты-форма, irregular)',
+        text: 'Смотреть → [[0]] (ты-форма) / Пить → [[1]] (вы-форма) / Написать → [[2]] (ты-форма) / Есть → [[3]] (ты-форма, irregular)',
         blanks: [
           { answer: 'смотри', explain: '"смотри" — они смотрят → raíz смотр- + и.' },
           { answer: 'пейте', explain: '"пейте" — пей (ты) + те. пить → пей (irregular).' },

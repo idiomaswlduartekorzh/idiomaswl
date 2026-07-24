@@ -52,7 +52,15 @@ const topic: GrammarTopic = {
       heading: 'C\'è y Ci sono: la distinción que el español no tiene',
       paragraphs: [
         'En español, "hay" funciona para singular y plural: "hay un estudiante" y "hay estudiantes". En italiano, esta distinción es obligatoria: c\'è para singular (hay uno) y ci sono para plural (hay varios). C\'è un problema (hay un problema) vs Ci sono problemi (hay problemas).',
-        'C\'è es la unión de ci (pronombre de lugar o existencial) y è (tercera persona singular de essere). Ci sono combina ci con sono (tercera persona plural). La i del ci se elide ante vocal: ci + è → c\'è. Por eso siempre se escribe con apóstrofo.',
+        'C\'è es la unión de ci (existencial) y è (es); ci sono combina ci con sono (son). La i de ci se elide ante vocal: ci + è → c\'è, por eso el apóstrofo. Esta es la tabla con las formas afirmativa, negativa e interrogativa:',
+      ],
+      table: [
+        ['Forma', 'Cuándo', 'Ejemplo'],
+        ['c\'è', 'singular (hay uno / está)', 'C\'è un problema.'],
+        ['ci sono', 'plural (hay varios)', 'Ci sono due problemi.'],
+        ['non c\'è', 'no hay (singular)', 'Non c\'è tempo.'],
+        ['non ci sono', 'no hay (plural)', 'Non ci sono problemi.'],
+        ['c\'è…? / ci sono…?', 'pregunta (¿hay…?)', 'C\'è latte? / Ci sono uova?'],
       ],
     },
     {
@@ -67,6 +75,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'C\'è describe existencia o presencia: C\'è il professore (hay/está el profesor). Ecco presenta o señala algo de forma inmediata: Ecco il professore! (¡Aquí está el profesor! / ¡Mira, el profesor!). Ecco equivale a "voilà" en francés — es deíctico, no describe existencia.',
         'Tampoco hay que confundir c\'è con è: "Il professore è qui" (El profesor está aquí — describe ubicación de algo ya identificado) vs "C\'è un professore" (Hay un profesor — introduce nuevo referente). C\'è siempre introduce información nueva.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "c\'è" y "ci sono"?',
+      paragraphs: [
+        '"c\'è" se usa con un solo elemento (singular): "C\'è una farmacia". "ci sono" se usa con varios (plural): "Ci sono due farmacie". Ambos significan "hay/están", pero el italiano obliga a elegir según el número, algo que el español no hace con "hay".',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "hay" en italiano?',
+      paragraphs: [
+        'Con "c\'è" si lo que sigue es singular (C\'è un problema = hay un problema) y con "ci sono" si es plural (Ci sono problemi = hay problemas). En negativo: "non c\'è" / "non ci sono". Nunca se usa una sola forma para todo como el "hay" español.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "c\'è" y "ecco"?',
+      paragraphs: [
+        '"c\'è" describe la existencia o presencia de algo (C\'è il professore = hay/está el profesor). "ecco" señala o presenta algo de forma inmediata, como "aquí está" o el "voilà" francés (Ecco il professore! = ¡aquí está el profesor!).',
       ],
     },
   ],
@@ -94,7 +120,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'En la clase',
-            lines: [['David', '___ un nuovo studente oggi in classe.']],
+            lines: [['Diego', '___ un nuovo studente oggi in classe.']],
             options: ['C\'è', 'Ci sono', 'È', 'Sono'],
             answer: 'C\'è',
             explain: 'Un nuovo studente = singular → c\'è.',
@@ -108,14 +134,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No hay tiempo',
-            lines: [['Zhanna', 'Non ___ tempo per tutto oggi. Dobbiamo essere veloci.']],
+            lines: [['Emma', 'Non ___ tempo per tutto oggi. Dobbiamo essere veloci.']],
             options: ['c\'è', 'ci sono', 'è', 'hanno'],
             answer: 'c\'è',
             explain: 'Tempo = singular → non c\'è tempo.',
           },
           {
             scene: '¿Hay preguntas?',
-            lines: [['David', '___ domande prima di finire la lezione?']],
+            lines: [['Diego', '___ domande prima di finire la lezione?']],
             options: ['Ci sono', 'C\'è', 'Sono', 'Ha'],
             answer: 'Ci sono',
             explain: 'Domande = plural → ci sono domande?',
@@ -160,17 +186,18 @@ const topic: GrammarTopic = {
           {
             scene: 'En la recepción de WeLearn',
             lines: [
-              ['Carlo', '[[0]] un professore disponibile ora?'],
-              ['Receptionist', 'Sì, [[0]] David — è in aula 3. [[1]] anche altri studenti lì.'],
-            ],
+ ['Carlo', '[[0]] un professore disponibile ora?'],
+ ['Receptionist', 'Sì, [[1]] Diego — è in aula 3. [[2]] anche altri studenti lì.'],
+ ],
             blanks: [
               { options: ['c\'è', 'ci sono'], answer: 'c\'è', explain: 'Un professore = singular → c\'è.' },
+              { options: ['c\'è', 'ci sono'], answer: 'c\'è', explain: 'Diego = singular → c\'è.' },
               { options: ['ci sono', 'c\'è'], answer: 'ci sono', explain: 'Altri studenti = plural → ci sono.' },
             ],
           },
           {
             scene: 'Describiendo la clase',
-            lines: [['David', 'In questa classe [[0]] venti sedie e [[1]] una lavagna grande.']],
+            lines: [['Diego', 'In questa classe [[0]] venti sedie e [[1]] una lavagna grande.']],
             blanks: [
               { options: ['ci sono', 'c\'è'], answer: 'ci sono', explain: 'Venti sedie = plural → ci sono.' },
               { options: ['c\'è', 'ci sono'], answer: 'c\'è', explain: 'Una lavagna = singular → c\'è.' },
@@ -178,7 +205,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Lo que no hay',
-            lines: [['Zhanna', 'In questo corso non [[0]] esami scritti e non [[1]] compiti difficili.']],
+            lines: [['Emma', 'In questo corso non [[0]] esami scritti e non [[1]] compiti difficili.']],
             blanks: [
               { options: ['ci sono', 'c\'è'], answer: 'ci sono', explain: 'Esami = plural → non ci sono.' },
               { options: ['ci sono', 'c\'è'], answer: 'ci sono', explain: 'Compiti = plural → non ci sono.' },
@@ -187,9 +214,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Buscando algo',
             lines: [
-              ['Sofia', '[[0]] una penna in classe?'],
-              ['Marco', 'Sì, [[0]] tre penne sul tavolo.'],
-            ],
+ ['Sofia', '[[0]] una penna in classe?'],
+ ['Marco', 'Sì, [[1]] tre penne sul tavolo.'],
+ ],
             blanks: [
               { options: ['c\'è', 'ci sono'], answer: 'c\'è', explain: 'Una penna = singular → c\'è.' },
               { options: ['ci sono', 'c\'è'], answer: 'ci sono', explain: 'Tre penne = plural → ci sono.' },
@@ -203,7 +230,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa la descripción de WeLearn con c\'è o ci sono.',
         type: 'guidedText',
-        scene: 'David presenta la academia WeLearn a nuevos estudiantes',
+        scene: 'Diego presenta la academia WeLearn a nuevos estudiantes',
         text: 'Benvenuti a WeLearn! [[0]] due aule grandi e una piccola. [[1]] una segreteria dove potete fare domande. [[2]] una cucina per il caffè. [[3]] venti studenti iscritti questo mese. [[4]] una biblioteca con libri in italiano. Non [[5]] parcheggio — siamo in centro. [[6]] un autobus che si ferma qui vicino.',
         blanks: [
           { options: ['Ci sono', 'C\'è'], answer: 'Ci sono', explain: 'Due aule = plural → ci sono.' },

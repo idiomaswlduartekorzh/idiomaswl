@@ -98,7 +98,7 @@ const topic: GrammarTopic = {
         items: [
           { scene: 'Hablando de mascotas', lines: [['', 'Ich ___ einen Hund.']], options: ['habe', 'hast', 'hat', 'habt'], answer: 'habe', explain: '"Ich" → "habe".' },
           { scene: 'Expresando sensaciones', lines: [['', 'Du ___ Hunger ?']], options: ['hast', 'habe', 'hat', 'haben'], answer: 'hast', explain: '"Du" → "hast". La -b desaparece.' },
-          { scene: 'Hablando de posesiones', lines: [['', 'Sie (ella) ___ ein großes Auto.']], options: ['hat', 'hat', 'habe', 'habt'], answer: 'hat', explain: '"Sie" (ella) → "hat". La -b desaparece.' },
+          { scene: 'Hablando de posesiones', lines: [['', 'Sie (ella) ___ ein großes Auto.']], options: ['hat', 'habe', 'habt'], answer: 'hat', explain: '"Sie" (ella) → "hat". La -b desaparece.' },
           { scene: 'Planificando actividades', lines: [['', 'Wir ___ keine Zeit.']], options: ['haben', 'habt', 'habe', 'hat'], answer: 'haben', explain: '"Wir" → "haben".' },
           { scene: 'Felicitando al grupo', lines: [['', 'Ihr ___ Glück heute !']], options: ['habt', 'haben', 'hast', 'hat'], answer: 'habt', explain: '"Ihr" → "habt".' },
           { scene: 'Hablando de familia', lines: [['', 'Sie (ellos) ___ drei Kinder.']], options: ['haben', 'habt', 'hast', 'hat'], answer: 'haben', explain: '"Sie" (plural) → "haben".' },

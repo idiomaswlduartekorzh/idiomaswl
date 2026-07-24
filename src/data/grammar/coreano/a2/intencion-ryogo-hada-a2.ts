@@ -103,7 +103,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Planes de verano',
-            lines: [['David', '이번 여름에 한국에 ___ (가다) 해요. (Planeo ir a Corea este verano.)']],
+            lines: [['Dario', '이번 여름에 한국에 ___ (가다) 해요. (Planeo ir a Corea este verano.)']],
             options: ['가려고', '가으려고', '갔으려고', '가고려고'],
             answer: '가려고',
             explain: '가다 → raiz 가 (vocal) → 가려고. Sin -으.',
@@ -145,14 +145,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Estudio nocturno',
-            lines: [['Zhanna', '시험을 준비하___ 매일 밤 공부해요. (Estudio todas las noches para prepararme para el examen.)']],
+            lines: [['Sara', '시험을 준비하___ 매일 밤 공부해요. (Estudio todas las noches para prepararme para el examen.)']],
             options: ['하려고', '하으려고', '해려고', '하아려고'],
             answer: '하려고',
             explain: '준비하다 → raiz 준비하 (vocal) → 준비하려고.',
           },
           {
             scene: 'Reserva de restaurante',
-            lines: [['David', '생일을 축하하___ 예약을 했어요. (Hice una reserva para celebrar el cumpleanos.)']],
+            lines: [['Dario', '생일을 축하하___ 예약을 했어요. (Hice una reserva para celebrar el cumpleanos.)']],
             options: ['하려고', '하으려고', '해려고', '하이려고'],
             answer: '하려고',
             explain: '축하하다 → 축하하려고 (hada → -려고).',
@@ -169,9 +169,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planes del fin de semana',
             lines: [
-              ['Carlos', '주말에 뭐 하려고 해요? (¿Que planes tienes para el fin de semana?)'],
-              ['Ana', '친구 집에 _[[0]]_ (가다) 해요. 같이 영화를 _[[1]]_ (보다) 거예요. (Pienso ir a casa de un amigo. Vamos a ver una pelicula juntos.)'],
-            ],
+ ['Carlos', '주말에 뭐 하려고 해요? (¿Que planes tienes para el fin de semana?)'],
+ ['Ana', '친구 집에 _[[0]]_ (가다) 해요. 같이 영화를 _[[1]]_ (보다) 거예요. (Pienso ir a casa de un amigo. Vamos a ver una pelicula juntos.)'],
+ ],
             blanks: [
               { options: ['가려고', '가으려고', '갔으려고', '가이려고'], answer: '가려고', explain: '가다 → 가려고 (vocal).' },
               { options: ['볼', '보려고', '보아', '봤으려고'], answer: '볼', explain: 'Futuro declarativo: 보다 → 볼 거예요.' },
@@ -180,9 +180,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Razon de visita a la tienda',
             lines: [
-              ['Zhanna', '어디 가요? (¿A donde vas?)'],
-              ['Lina', '물건을 [[0]] (사다) 마트에 가요. 저녁에 요리를 [[1]] (하다) 재료가 필요해요. (Voy al supermercado a comprar cosas. Necesito ingredientes para cocinar en la tarde.)'],
-            ],
+ ['Sara', '어디 가요? (¿A donde vas?)'],
+ ['Lina', '물건을 [[0]] (사다) 마트에 가요. 저녁에 요리를 [[1]] (하다) 재료가 필요해요. (Voy al supermercado a comprar cosas. Necesito ingredientes para cocinar en la tarde.)'],
+ ],
             blanks: [
               { options: ['사려고', '사으려고', '샀으려고', '사이려고'], answer: '사려고', explain: '사다 → 사려고 (vocal ㅏ).' },
               { options: ['하려고', '하으려고', '해려고', '하아려고'], answer: '하려고', explain: '하다 → 하려고.' },
@@ -191,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Motivation para estudiar',
             lines: [
-              ['Marco', '왜 한국어를 공부해요? (¿Por que estudias coreano?)'],
-              ['Sofia', '한국에 [[0]] (살다) 공부해요. 그리고 한국 회사에 [[1]] (취직하다) 싶어서요. (Estudio para vivir en Corea. Tambien porque quiero trabajar en una empresa coreana.)'],
-            ],
+ ['Marco', '왜 한국어를 공부해요? (¿Por que estudias coreano?)'],
+ ['Sofia', '한국에 [[0]] (살다) 공부해요. 그리고 한국 회사에 [[1]] (취직하다) 싶어서요. (Estudio para vivir en Corea. Tambien porque quiero trabajar en una empresa coreana.)'],
+ ],
             blanks: [
               { options: ['살려고', '살으려고', '사으려고', '살아려고'], answer: '살려고', explain: '살다 → 살려고 (ㄹ = como vocal).' },
               { options: ['취직하려고', '취직하으려고', '취직해려고', '취직하아려고'], answer: '취직하려고', explain: '취직하다 → 취직하려고.' },
@@ -202,9 +202,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preparation para el examen',
             lines: [
-              ['David', '다음 달에 뭐 할 거예요? (¿Que vas a hacer el proximo mes?)'],
-              ['Carlos', 'TOPIK 시험을 [[0]] (보다) 공부를 많이 할 거예요. 시험에 [[1]] (합격하다) 정말 열심히 해야 해요. (Para tomar el examen TOPIK estudiare mucho. Para aprobar el examen tengo que esforzarme mucho.)'],
-            ],
+ ['Dario', '다음 달에 뭐 할 거예요? (¿Que vas a hacer el proximo mes?)'],
+ ['Carlos', 'TOPIK 시험을 [[0]] (보다) 공부를 많이 할 거예요. 시험에 [[1]] (합격하다) 정말 열심히 해야 해요. (Para tomar el examen TOPIK estudiare mucho. Para aprobar el examen tengo que esforzarme mucho.)'],
+ ],
             blanks: [
               { options: ['보려고', '보으려고', '봤으려고', '보아려고'], answer: '보려고', explain: '보다 → 보려고 (vocal ㅗ).' },
               { options: ['합격하려고', '합격하으려고', '합격해려고', '합격하아려고'], answer: '합격하려고', explain: '합격하다 → 합격하려고.' },
@@ -235,7 +235,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de -(으)려고 para cada verbo.',
         type: 'freeText',
         scene: 'Planes de diferentes estudiantes de WeLearn',
-        text: '마르코는 살을 빼___ (빼다) 운동을 시작했어요. / 소피아는 스페인어를 가르치___ (가르치다) 대학에 지원했어요. / 카를로스는 책을 쓰___ (쓰다) 매일 연습해요. / 리나는 한국 음식을 만들___ (만들다) 요리 책을 샀어요. / 다비드는 새 노래를 외우___ (외우다) 계속 들어요.',
+        text: '마르코는 살을 빼[[0]] (빼다) 운동을 시작했어요. / 소피아는 스페인어를 가르치[[1]] (가르치다) 대학에 지원했어요. / 카를로스는 책을 쓰[[2]] (쓰다) 매일 연습해요. / 리나는 한국 음식을 만들[[3]] (만들다) 요리 책을 샀어요. / 다비드는 새 노래를 외우[[4]] (외우다) 계속 들어요.',
         blanks: [
           { answer: '빼려고', explain: '빼다 → raiz 빼 (vocal) → 빼려고.' },
           { answer: '가르치려고', explain: '가르치다 → raiz 가르치 (vocal) → 가르치려고.' },

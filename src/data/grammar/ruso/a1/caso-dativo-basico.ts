@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ['мне нравится', 'Мне нравится рус ский. (Me gusta el ruso.) — Мне нравятся языки. (Me gustan los idiomas.)'],
       ['тебе нравится?', 'Тебе нравится кофе? (¿Te gusta el café?) — Ему нравится музыка. (A él le gusta la música.)'],
       ['мне надо', 'Мне надо учить слова. (Necesito estudiar palabras.) — Тебе надо практиковать. (Necesitas practicar.)'],
-      ['дать/сказать', 'Скажи мне! (¡Dime!) — Дэвид объяснил нам правило. (David nos explicó la regla.)'],
+      ['дать/сказать', 'Скажи мне! (¡Dime!) — Дэвид объяснил нам правило. (Dario nos explicó la regla.)'],
     ],
     learnerModes: ['recognition', 'gap-fill', 'production'],
     practiceVerbs: ['нравиться', 'надо', 'нужно', 'дать', 'сказать', 'объяснить'],
@@ -84,8 +84,8 @@ const topic: GrammarTopic = {
         intro: 'Elige el pronombre dativo correcto.',
         type: 'choice',
         items: [
-          { scene: 'я → мне', lines: [['', '"Me gusta el ruso": ___ нравится русский.']], options: ['мне', 'меня', 'мной', 'мне'], answer: 'мне', explain: 'Я → мне (dativo). Мне нравится = me gusta (literalmente: a mí le place).' },
-          { scene: 'ты → тебе', lines: [['', '"¿Te gusta el café?": ___ нравится кофе?']], options: ['тебя', 'тебе', 'тобой', 'тебе'], answer: 'тебе', explain: 'Ты → тебе (dativo). Тебе нравится = te gusta.' },
+          { scene: 'я → мне', lines: [['', '"Me gusta el ruso": ___ нравится русский.']], options: ['мне', 'меня', 'мной'], answer: 'мне', explain: 'Я → мне (dativo). Мне нравится = me gusta (literalmente: a mí le place).' },
+          { scene: 'ты → тебе', lines: [['', '"¿Te gusta el café?": ___ нравится кофе?']], options: ['тебя', 'тебе', 'тобой'], answer: 'тебе', explain: 'Ты → тебе (dativo). Тебе нравится = te gusta.' },
           { scene: 'он → ему', lines: [['', '"A él le gusta la música": ___ нравится музыка.']], options: ['его', 'ему', 'им', 'он'], answer: 'ему', explain: 'Он → ему (dativo). A él le gusta = ему нравится.' },
           { scene: 'они → им', lines: [['', '"A ellos les gusta estudiar": ___ нравится учиться.']], options: ['их', 'ими', 'им', 'они'], answer: 'им', explain: 'Они → им (dativo plural). Им нравится = a ellos les gusta.' },
           { scene: 'мы → нам', lines: [['', '"Necesitamos estudiar": ___ надо учить.']], options: ['нас', 'нами', 'нам', 'мы'], answer: 'нам', explain: 'Мы → нам (dativo). Нам надо = nosotros necesitamos.' },
@@ -114,7 +114,7 @@ const topic: GrammarTopic = {
         intro: 'Elige el pronombre dativo o la forma de нравиться correcta.',
         type: 'guidedText',
         scene: 'Los estudiantes de WeLearn hablan sobre sus gustos',
-        text: '[[0]] нравится рус ский язык. (A mí me gusta el idioma ruso.) Моей подруге [[1]] корейский. (A mi amiga le gusta el coreano.) [[2]] нравятся все языки! (¡A nosotros nos gustan todos los idiomas!) Студентам [[3]] уроки Дэвида. (A los estudiantes les gustan las clases de David.) [[4]] нравится учиться онлайн. (A ti te gusta estudiar online.)',
+        text: '[[0]] нравится рус ский язык. (A mí me gusta el idioma ruso.) Моей подруге [[1]] корейский. (A mi amiga le gusta el coreano.) [[2]] нравятся все языки! (¡A nosotros nos gustan todos los idiomas!) Студентам [[3]] уроки Дэвида. (A los estudiantes les gustan las clases de Dario.) [[4]] нравится учиться онлайн. (A ti te gusta estudiar online.)',
         blanks: [
           { options: ['Мне', 'Меня', 'Мной', 'Я'], answer: 'Мне', explain: 'Я → мне. Pronombre dativo 1ª persona singular.' },
           { options: ['нравится', 'нравятся', 'нравиться', 'нравился'], answer: 'нравится', explain: 'Корейский (singular) → нравится.' },

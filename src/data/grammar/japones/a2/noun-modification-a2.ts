@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: crea la frase con el modificador correcto.',
         type: 'freeText',
         scene: '修飾語と名詞を組み合わせてください。',
-        text: '大切 + 友達 → ___ 友達 (na-adj) / 昨日会う → ___ 人 (ta-form) / 日本語を話す → ___ 人 (diccionario) / おいしい + 料理 → ___ 料理 (i-adj)',
+        text: '大切 + 友達 → [[0]] 友達 (na-adj) / 昨日会う → [[1]] 人 (ta-form) / 日本語を話す → [[2]] 人 (diccionario) / おいしい + 料理 → [[3]] 料理 (i-adj)',
         blanks: [
           { answer: '大切な', explain: '"大切な友達" = amigo importante. な-adj + な.' },
           { answer: '昨日会った', explain: '"昨日会った人" = persona que conocí ayer. V-た.' },

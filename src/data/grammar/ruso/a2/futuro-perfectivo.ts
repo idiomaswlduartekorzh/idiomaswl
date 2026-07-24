@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'написать — ellos',
-            lines: [['', 'Они [[0]] отчёт к пятнице. (ellos ___ el informe para el viernes)']],
+            lines: [['', 'Они отчёт к пятнице. (ellos [[0]] el informe para el viernes)']],
             blanks: [
               { options: ['напишут', 'напишет', 'напишу'], answer: 'напишут', explain: 'они → напишут.' },
               { options: ['к пятнице', 'в пятницу', 'в пятниц'], answer: 'к пятнице', explain: 'К + dativo = para el viernes.' },

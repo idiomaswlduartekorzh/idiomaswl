@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la historia usando las partículas correctas.',
         type: 'guidedText',
         scene: '민준이가 생일 파티를 준비해요.',
-        text: '어머니[[0]] 생일이에요. 저는 어머니[[1]] 꽃을 드렸어요. 그리고 친구[[2]] 케이크를 부탁했어요. 친구[[3]] 케이크가 왔어요. 어머니[[1]] 카드도 썼어요.',
+        text: '어머니[[0]] 생일이에요. 저는 어머니[[1]] 꽃을 드렸어요. 그리고 친구[[2]] 케이크를 부탁했어요. 친구[[3]] 케이크가 왔어요. 어머니[[4]] 카드도 썼어요.',
         blanks: [
           { options: ['의', '께', '한테', '에서'], answer: '의', explain: '"어머니의 생일" = el cumpleaños de mi madre (partícula posesiva).' },
           { options: ['께', '한테', '에게서', '에서'], answer: '께', explain: '"어머니께 드렸어요" = le di a mi madre (honorífico).' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la partícula correcta (에게/한테/께/에게서/한테서).',
         type: 'freeText',
         scene: '파티클을 골라 써 보세요.',
-        text: '동생___ 선물을 줬어요. / 교수님___ 메일을 보냈어요. / 친구___ 전화가 왔어요. / 부모님___ 감사했어요.',
+        text: '동생[[0]] 선물을 줬어요. / 교수님[[1]] 메일을 보냈어요. / 친구[[2]] 전화가 왔어요. / 부모님[[3]] 감사했어요.',
         blanks: [
           { answer: '한테/에게', explain: '"동생한테/에게" = a mi hermano menor (한테 más coloquial).' },
           { answer: '께', explain: '"교수님께" = al profesor (honorífico obligatorio).' },

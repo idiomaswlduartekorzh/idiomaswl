@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el pronóstico del tiempo usando でしょう.',
         type: 'guidedText',
         scene: '天気予報です。',
-        text: '明日の天気をお伝えします。朝は曇り[[0]]。昼ごろから雨が降る[[1]]。気温は今日より低い[[1]]。風が強い[[0]]ので、傘を持って行った方がいい[[0]]。',
+        text: '明日の天気をお伝えします。朝は曇り[[0]]。昼ごろから雨が降る[[1]]。気温は今日より低い[[2]]。風が強い[[3]]ので、傘を持って行った方がいい[[4]]。',
         blanks: [
           { options: ['でしょう', 'だろう', 'ですね', 'か'], answer: 'でしょう', explain: '"曇りでしょう" = probablemente esté nublado. N + でしょう.' },
           { options: ['でしょう', 'だろう', 'です', 'か'], answer: 'でしょう', explain: '"降るでしょう" / "低いでしょう" = probabilidad. V dic./い-adj + でしょう.' },
@@ -182,7 +182,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: añade でしょう o だろう según el contexto.',
         type: 'freeText',
         scene: '次の文に確率を付けてください。',
-        text: '彼女は来ない___。(probablemente, formal) / この問題は難しい___。(probablemente, informal) / 彼は先生___。(¿verdad? — confirmación) / きっと大丈夫___。(seguramente, formal)',
+        text: '彼女は来ない[[0]]。(probablemente, formal) / この問題は難しい[[1]]。(probablemente, informal) / 彼は先生[[2]]。(¿verdad? — confirmación) / きっと大丈夫[[3]]。(seguramente, formal)',
         blanks: [
           { answer: 'でしょう', explain: '"来ないでしょう" = probablemente no venga (formal).' },
           { answer: 'だろう', explain: '"難しいだろう" = probablemente sea difícil (informal).' },

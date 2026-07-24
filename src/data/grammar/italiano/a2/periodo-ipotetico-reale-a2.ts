@@ -48,14 +48,37 @@ const topic: GrammarTopic = {
     {
       heading: 'El período hipotético real en italiano',
       paragraphs: [
-        'El período hipotético real (o "della realtà") describe situaciones que son posibles o probables. La estructura es: "Se + presente indicativo" en la hipótesis y "futuro semplice" (o presente o imperativo) en el resultado.',
-        'A diferencia del español, en italiano NO se usa el futuro después de "se": "Se STUDI" (no "se studierai") + "passerai l\'esame". El presente en la cláusula "se" es obligatorio en el período hipotético real italiano.',
+        'El período hipotético real (della realtà) expresa condiciones posibles o probables. La regla de oro: en la cláusula con "se" va el PRESENTE (nunca el futuro), y en el resultado va futuro, presente o imperativo. Es el error número uno del hispanohablante meter el futuro tras "se". Estas son las combinaciones:',
+      ],
+      table: [
+        ['Cláusula "se"', 'Resultado', 'Ejemplo'],
+        ['se + presente', 'futuro semplice', 'Se studi, passerai l\'esame.'],
+        ['se + presente', 'presente', 'Se piove, resto a casa.'],
+        ['se + presente', 'imperativo', 'Se hai fame, mangia!'],
       ],
     },
     {
       heading: 'Período real vs irreal',
       paragraphs: [
-        'En el nivel A2, la distinción clave es: el período REAL usa presente en la hipótesis y expresa algo posible. El período IRREAL (B1) usa il congiuntivo imperfetto en la hipótesis para situaciones imposibles o muy improbables.',
+        'En A2 la distinción clave es: el período REAL usa presente en la hipótesis y expresa algo posible ("Se ho tempo, vengo"). El período IRREAL (B1) usa el congiuntivo imperfetto para situaciones improbables o imposibles ("Se avessi tempo, verrei" = si tuviera tiempo, iría).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el período hipotético real en italiano?',
+      paragraphs: [
+        'Con "se" + presente indicativo en la condición, y futuro, presente o imperativo en el resultado: "Se piove, resto a casa", "Se studi, passerai", "Se puoi, chiamami". La condición siempre en presente.',
+      ],
+    },
+    {
+      heading: '¿Se usa el futuro después de "se" en italiano?',
+      paragraphs: [
+        'No en el período real: tras "se" va el presente, no el futuro. Se dice "Se domani fa bello, usciamo" (no "se domani farà bello"). El futuro puede aparecer en la cláusula del resultado ("passerai l\'esame"), pero nunca en la del "se".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre el período hipotético real e irreal?',
+      paragraphs: [
+        'El real (A2) plantea algo posible: "se + presente → futuro/presente" ("Se studio, imparo"). El irreal (B1) plantea algo improbable o imposible: "se + congiuntivo imperfetto → condizionale" ("Se studiassi, imparerei"). Real = puede pasar; irreal = hipótesis.',
       ],
     },
   ],
@@ -185,7 +208,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: conjuga los verbos entre paréntesis en el tiempo correcto.',
         type: 'freeText',
         scene: 'Condiciones para un buen fin de semana.',
-        text: 'Se ___ (fare) bello domani, andiamo al parco. / Se ___ (avere) soldi, comprerò un regalo. / Se ___ (venire) anche tu, sarà più divertente. / Se non ___ (capire), chiedi. / Se ___ (studiare) adesso, domani sarai libero.',
+        text: 'Se [[0]] (fare) bello domani, andiamo al parco. / Se [[1]] (avere) soldi, comprerò un regalo. / Se [[2]] (venire) anche tu, sarà più divertente. / Se non [[3]] (capire), chiedi. / Se [[4]] (studiare) adesso, domani sarai libero.',
         blanks: [
           { answer: 'fa', explain: '"Se fa" → presente indicativo 3ª sing.' },
           { answer: 'ho', explain: '"Se ho" → presente indicativo 1ª sing.' },

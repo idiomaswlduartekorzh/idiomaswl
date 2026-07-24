@@ -87,6 +87,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'We works in the same office.', 'Correcto', 'We work in the same office.'],
       ],
     },
+    {
+      heading: '¿Cómo se forma el present simple afirmativo en inglés?',
+      paragraphs: [
+        'Sujeto + verbo en forma base para I, you, we, they ("I work", "they live"). Con he, she, it se añade -s (o -es): "she works", "he goes". Es la única variación del tiempo. Se usa para hábitos, rutinas y hechos generales: "I get up at seven", "Water boils at 100 degrees".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se añade -s o -es al verbo en inglés?',
+      paragraphs: [
+        'Solo en la tercera persona del singular (he/she/it). La mayoría añade -s (work → works); los verbos en -sh, -ch, -x, -o añaden -es (watch → watches, go → goes); los de consonante + y cambian a -ies (study → studies). Irregulares: have → has, do → does.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre present simple y present continuous?',
+      paragraphs: [
+        'El present simple describe rutinas y hechos generales ("I eat breakfast every day"); el present continuous describe lo que ocurre AHORA ("I am eating breakfast now"). El error típico del hispanohablante es usar el simple para el momento presente: "estoy comiendo" es "I am eating", no "I eat".',
+      ],
+    },
   ],
   visual: {
     mode: 'conjugation-check',
@@ -129,7 +147,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Grupo de estudio',
-            lines: [['David', 'We ___ at the library on Tuesdays.']],
+            lines: [['Bruno', 'We ___ at the library on Tuesdays.']],
             options: ['meet', 'meets', 'meetes', 'meeties'],
             answer: 'meet',
             explain: 'We → forma base: meet.',
@@ -197,7 +215,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Amigos y rutinas',
-            lines: [['David', 'My friends and I [[0]] (go) to the gym on Saturdays. My friend Mateo [[1]] (play) football too.']],
+            lines: [['Bruno', 'My friends and I [[0]] (go) to the gym on Saturdays. My friend Mateo [[1]] (play) football too.']],
             blanks: [
               { options: ['go', 'goes', 'gos'], answer: 'go', explain: 'My friends and I → we → go (forma base).' },
               { options: ['play', 'plays', 'playes'], answer: 'plays', explain: 'Mateo → he → plays (+ s).' },
@@ -211,10 +229,10 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa la descripción eligiendo la forma correcta del present simple.',
         type: 'guidedText',
-        scene: 'La rutina diaria de Zhanna',
-        text: 'Zhanna [[0]] (wake) up at six every morning. She [[1]] (have) coffee and [[2]] (read) the news. Then she [[3]] (go) to the WeLearn office. Her students [[4]] (arrive) at eight. She always [[5]] (prepare) her lessons the night before. After class, she [[6]] (check) her emails and [[7]] (plan) the next day.',
+        scene: 'La rutina diaria de Clara',
+        text: 'Clara [[0]] (wake) up at six every morning. She [[1]] (have) coffee and [[2]] (read) the news. Then she [[3]] (go) to the WeLearn office. Her students [[4]] (arrive) at eight. She always [[5]] (prepare) her lessons the night before. After class, she [[6]] (check) her emails and [[7]] (plan) the next day.',
         blanks: [
-          { options: ['wake', 'wakes', 'wakes up', 'wakes'], answer: 'wakes', explain: 'Zhanna → she → wakes (+ s).' },
+          { options: ['wake', 'wakes', 'wakes up', 'wakes'], answer: 'wakes', explain: 'Clara → she → wakes (+ s).' },
           { options: ['have', 'has', 'haves'], answer: 'has', explain: 'She → has (irregular).' },
           { options: ['read', 'reads', 'reades'], answer: 'reads', explain: 'She → reads (+ s).' },
           { options: ['go', 'goes', 'gos'], answer: 'goes', explain: 'She + go (termina en -o) → goes (+ es).' },

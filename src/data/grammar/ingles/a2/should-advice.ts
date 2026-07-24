@@ -197,9 +197,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando de un amigo enfermo',
             lines: [
-              ['A:', 'My friend has a terrible cold.'],
-              ['B:', 'He [[0]] rest and drink lots of fluids. He [[1]] go out in the rain!'],
-            ],
+ ['A:', 'My friend has a terrible cold.'],
+ ['B:', 'He [[0]] rest and drink lots of fluids. He [[1]] go out in the rain!'],
+ ],
             blanks: [
               { options: ['should', 'shouldn\'t', 'must to', 'should to'], answer: 'should', explain: '"He should rest" — consejo positivo.' },
               { options: ['shouldn\'t', 'should', 'mustn\'t to', 'not should'], answer: 'shouldn\'t', explain: '"He shouldn\'t go out" — desaconsejo.' },
@@ -216,9 +216,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preparándose para una entrevista',
             lines: [
-              ['A:', 'I have a job interview tomorrow. Any tips?'],
-              ['B:', 'You [[0]] research the company beforehand. And you [[1]] be late!'],
-            ],
+ ['A:', 'I have a job interview tomorrow. Any tips?'],
+ ['B:', 'You [[0]] research the company beforehand. And you [[1]] be late!'],
+ ],
             blanks: [
               { options: ['should', 'shouldn\'t', 'must to', 'would'], answer: 'should', explain: '"You should research" — consejo clave.' },
               { options: ['shouldn\'t', 'should', 'won\'t', 'don\'t'], answer: 'shouldn\'t', explain: '"You shouldn\'t be late" — advertencia importante.' },

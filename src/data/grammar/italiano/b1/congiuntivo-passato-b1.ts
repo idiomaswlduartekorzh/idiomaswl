@@ -89,6 +89,24 @@ const topic: GrammarTopic = {
         'Otro error es confundir los auxiliares: recordar que los mismos verbos que llevan essere en el passato prossimo también lo llevan en el congiuntivo passato. Andare, venire, partire, tornare, arrivare, uscire, nascere, morire van siempre con essere.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el congiuntivo passato en italiano?',
+      paragraphs: [
+        'Con el congiuntivo presente del auxiliar (abbia/sia…) + el participio pasado: "che io abbia parlato", "che io sia andato". Se elige avere o essere con las reglas del passato prossimo, y con essere el participio concuerda: "che lei sia partita".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el congiuntivo passato y cuándo el presente?',
+      paragraphs: [
+        'El congiuntivo presente indica simultaneidad o futuro ("Penso che studi molto" = estudia ahora); el congiuntivo passato indica anterioridad ("Penso che abbia studiato molto" = estudió antes). Con verbo principal en presente, se elige según si la acción subordinada es simultánea o anterior.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "que haya hecho" en italiano?',
+      paragraphs: [
+        'Con el congiuntivo passato: "che abbia fatto" (que haya hecho), "che sia andato" (que haya ido). Aparece tras desencadenantes en presente que exigen subjuntivo: "Spero che tu abbia capito", "È strano che non sia venuto".',
+      ],
+    },
   ],
 
   visual: {

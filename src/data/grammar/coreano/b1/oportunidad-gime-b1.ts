@@ -119,7 +119,7 @@ const topic: GrammarTopic = {
         intro: 'Completa expresiones de aprovechamiento.',
         type: 'guidedText',
         scene: 'Sugerencias para aprovechar situaciones.',
-        text: '서울에 가___ 친구도 만날까? 밥 먹___ 영화도 봐. 출장 가___ 쇼핑도 해야겠어.',
+        text: '서울에 가[[0]] 친구도 만날까? 밥 먹[[1]] 영화도 봐. 출장 가[[2]] 쇼핑도 해야겠어.',
         blanks: [
           { options: ['는 김에', '으면서'], answer: '는 김에', explain: '-는 김에 con viaje.' },
           { options: ['는 김에', '으면서'], answer: '는 김에', explain: '-는 김에 con comida.' },

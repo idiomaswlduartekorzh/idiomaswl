@@ -113,7 +113,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Invierno en Corea',
-            lines: [['David', '서울은 겨울에 ___ (춥다). (En Seul en invierno hace ___ .)']],
+            lines: [['Tomás', '서울은 겨울에 ___ (춥다). (En Seul en invierno hace ___ .)']],
             options: ['추워요', '추버요', '춥아요', '춥어요'],
             answer: '추워요',
             explain: '춥다 es irregular ㅂ: 춥 → 추 + 우 + 어요 → 추워요.',
@@ -133,8 +133,8 @@ const topic: GrammarTopic = {
             explain: '다르다 es irregular 르: 다르 → 달 + ㄹ + 아요 → 달라요.',
           },
           {
-            scene: 'Sobre David',
-            lines: [['Sofia', '데이비드 선생님은 부카라망가에 ___ (살다). (El profesor David vive en Bucaramanga.)']],
+            scene: 'Sobre Tomás',
+            lines: [['Sofia', '데이비드 선생님은 부카라망가에 ___ (살다). (El profesor Tomás vive en Bucaramanga.)']],
             options: ['살아요', '살으아요', '사라요', '삽니다'],
             answer: '살아요',
             explain: '살다 es irregular ㄹ: ante vocal 아/어 se conserva la raiz. 살 + 아요 → 살아요.',
@@ -148,7 +148,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Cantando',
-            lines: [['Zhanna', '학생들이 노래를 ___ (부르다). (Los estudiantes cantan una cancion.)']],
+            lines: [['Alba', '학생들이 노래를 ___ (부르다). (Los estudiantes cantan una cancion.)']],
             options: ['불러요', '부르아요', '부라요', '불르요'],
             answer: '불러요',
             explain: '부르다 es irregular 르: 부르 → 불 + ㄹ + 어요 → 불러요.',
@@ -172,9 +172,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conversacion sobre el clima',
             lines: [
-              ['Ana', '오늘 [[0]] (덥다)? (Esta caluroso hoy?)'],
-              ['Carlos', '네, 정말 [[1]] (덥다). (Si, esta muy caluroso.)'],
-            ],
+ ['Ana', '오늘 [[0]] (덥다)? (Esta caluroso hoy?)'],
+ ['Carlos', '네, 정말 [[1]] (덥다). (Si, esta muy caluroso.)'],
+ ],
             blanks: [
               { options: ['더워요', '덥아요', '더버요', '덥습니다'], answer: '더워요', explain: '덥다 → ㅂ irregular: 더워요.' },
               { options: ['더워요', '덥아요', '더버요', '덥습니다'], answer: '더워요', explain: '덥다 → 더워요. Mismo patron en afirmacion.' },
@@ -183,9 +183,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Estudiando en WeLearn',
             lines: [
-              ['Zhanna', '이 문법을 [[0]] (알다)? (Sabes esta gramatica?)'],
-              ['Sofia', '아니요, [[1]] (모르다). (No, no lo se.)'],
-            ],
+ ['Alba', '이 문법을 [[0]] (알다)? (Sabes esta gramatica?)'],
+ ['Sofia', '아니요, [[1]] (모르다). (No, no lo se.)'],
+ ],
             blanks: [
               { options: ['알아요', '아아요', '알으아요', '압니다'], answer: '알아요', explain: '알다 → ㄹ irregular: 알 + 아요 → 알아요.' },
               { options: ['몰라요', '모르아요', '모라요', '몰르요'], answer: '몰라요', explain: '모르다 → 르 irregular: 몰 + ㄹ + 아요 → 몰라요.' },
@@ -194,9 +194,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Comparando ciudades',
             lines: [
-              ['Marco', '서울과 부산이 [[0]] (다르다)? (Son diferentes Seoul y Busan?)'],
-              ['David', '네, 많이 [[1]] (다르다). (Si, son muy diferentes.)'],
-            ],
+ ['Marco', '서울과 부산이 [[0]] (다르다)? (Son diferentes Seoul y Busan?)'],
+ ['Tomás', '네, 많이 [[1]] (다르다). (Si, son muy diferentes.)'],
+ ],
             blanks: [
               { options: ['달라요', '다르아요', '다라요', '달르요'], answer: '달라요', explain: '다르다 → 르 irregular: 달 + ㄹ + 아요 → 달라요.' },
               { options: ['달라요', '다르아요', '다라요', '달르요'], answer: '달라요', explain: '다르다 → 달라요. Mismo patron.' },
@@ -205,9 +205,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Habilidades',
             lines: [
-              ['Lina', '수영을 할 때 [[0]] (어렵다)? (Es dificil cuando nadas?)'],
-              ['Carlos', '처음에는 [[1]] (어렵다). (Al principio es dificil.)'],
-            ],
+ ['Lina', '수영을 할 때 [[0]] (어렵다)? (Es dificil cuando nadas?)'],
+ ['Carlos', '처음에는 [[1]] (어렵다). (Al principio es dificil.)'],
+ ],
             blanks: [
               { options: ['어려워요', '어렵아요', '어려버요', '어렵습니다'], answer: '어려워요', explain: '어렵다 → ㅂ irregular: 어려 + 우 + 어요 → 어려워요.' },
               { options: ['어려워요', '어렵아요', '어려버요', '어렵습니다'], answer: '어려워요', explain: '어렵다 → 어려워요. Contexto afirmativo.' },
@@ -239,7 +239,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma 해요체 correcta de cada verbo irregular.',
         type: 'freeText',
         scene: 'Preguntas sobre el clima y el conocimiento',
-        text: '오늘 날씨가 ___. (춥다) / 저는 그 사람을 잘 ___. (모르다) / 음식 맛이 다 ___. (다르다) / 친구가 서울에 ___. (살다) / 한국어가 ___. (어렵다)',
+        text: '오늘 날씨가 [[0]]. (춥다) / 저는 그 사람을 잘 [[1]]. (모르다) / 음식 맛이 다 [[2]]. (다르다) / 친구가 서울에 [[3]]. (살다) / 한국어가 [[4]]. (어렵다)',
         blanks: [
           { answer: '추워요', explain: '춥다 → ㅂ irregular: 추 + 우 + 어요 → 추워요.' },
           { answer: '몰라요', explain: '모르다 → 르 irregular: 몰 + ㄹ + 아요 → 몰라요.' },

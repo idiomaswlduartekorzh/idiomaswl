@@ -38,3 +38,7 @@ Antes de una consolidación o limpieza se crea una rama `archive/` en el reposit
 ## Coordinación entre agentes
 
 Claude y Codex deben leer este archivo, `AGENTS.md` y `CLAUDE.md` antes de trabajar. Al terminar una tarea, registrar en el commit qué cambió y qué validaciones se ejecutaron. Si el árbol de trabajo ya tiene cambios ajenos, no mezclar ni sobrescribirlos: aislar el cambio en una rama o pedir una decisión.
+
+## Registro automático de sesiones
+
+Un hook `SessionEnd` en `.claude/settings.json` añade automáticamente una entrada a `docs/REGISTRO-DE-SESIONES.md` al terminar cada sesión de Claude Code en este repo (fecha, ID de sesión, `git diff HEAD --stat`). Es automático — ningún agente necesita escribir en ese archivo a mano. Codex no soporta hooks, así que las sesiones de Codex no quedan ahí; para el historial de Codex usar los commits y su propio changelog si lo genera.

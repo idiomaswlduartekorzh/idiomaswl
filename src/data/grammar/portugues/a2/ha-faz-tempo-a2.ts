@@ -127,14 +127,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La existencia',
-            lines: [['David', '___ uma farmácia perto daqui.']],
+            lines: [['Iván', '___ uma farmácia perto daqui.']],
             options: ['Há', 'Faz', 'Tem', 'Está'],
             answer: 'Há',
             explain: '"Há + sustantivo" = hay (existencia). "Há uma farmácia" = hay una farmacia.',
           },
           {
             scene: 'El estudio',
-            lines: [['Zhanna', 'Eu estudo português ___ um ano.']],
+            lines: [['Emma', 'Eu estudo português ___ um ano.']],
             options: ['há', 'faz', 'desde', 'por'],
             answer: 'há',
             explain: 'Inversión: verbo + há + expresión de tiempo. "Estudo português há um ano."',

@@ -187,7 +187,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la expresión correcta con fazer.',
         type: 'freeText',
         scene: 'Completando frases com expressões de fazer.',
-        text: 'O exercício ___ para a saúde mental. / Essa explicação não ___. / Minha família me ___ quando estou viajando. / O Brasil ___ da América do Sul. / Hoje ___ muito calor nesta cidade.',
+        text: 'O exercício [[0]] para a saúde mental. / Essa explicação não [[1]]. / Minha família me [[2]] quando estou viajando. / O Brasil [[3]] da América do Sul. / Hoje [[4]] muito calor nesta cidade.',
         blanks: [
           { answer: 'faz bem', explain: '"fazer bem" = ser bueno para la salud.' },
           { answer: 'faz sentido', explain: '"fazer sentido" = tener sentido.' },

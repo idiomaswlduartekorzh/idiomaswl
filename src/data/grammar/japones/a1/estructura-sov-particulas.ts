@@ -83,7 +83,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Tema: yo',
-            lines: [['David', 'わたし___ がくせいです。(Yo soy estudiante.)']],
+            lines: [['Bruno', 'わたし___ がくせいです。(Yo soy estudiante.)']],
             options: ['は', 'が', 'を', 'に'],
             answer: 'は',
             explain: 'は (wa) marca el tema. わたしは = "en cuanto a mí".',
@@ -148,7 +148,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Sujeto y objeto',
-            lines: [['David', 'わたし[[0]] ほん[[1]] よみます。(Yo leo el libro.)']],
+            lines: [['Bruno', 'わたし[[0]] ほん[[1]] よみます。(Yo leo el libro.)']],
             blanks: [
               { options: ['は', 'が', 'を'], answer: 'は', explain: 'わたしは = yo [tema].' },
               { options: ['を', 'は', 'に'], answer: 'を', explain: 'ほんを = libro [objeto].' },

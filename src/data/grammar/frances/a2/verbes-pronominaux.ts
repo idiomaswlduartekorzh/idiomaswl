@@ -170,7 +170,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con el pronombre reflexivo correcto.',
         type: 'guidedText',
         scene: 'Sophie décrit sa routine matinale.',
-        text: 'Le matin, je [[0]] lève à 6h30. Je [[0]] douche, puis je [[0]] habille. Mon frère, lui, [[1]] réveille très tard. Mes parents [[1]] lèvent ensemble et ils [[1]] préparent un café. Nous [[2]] retrouvons tous à table pour le petit-déjeuner.',
+        text: 'Le matin, je [[0]] lève à 6h30. Je [[1]] douche, puis je [[2]] habille. Mon frère, lui, [[3]] réveille très tard. Mes parents [[4]] lèvent ensemble et ils [[5]] préparent un café. Nous [[6]] retrouvons tous à table pour le petit-déjeuner.',
         blanks: [
           { options: ['me', 'te', 'se', 'nous'], answer: 'me', explain: '"je me lève / je me douche / je me habille → m\'habille" — je → me.' },
           { options: ['se', 'me', 'nous', 'vous'], answer: 'se', explain: '"il se réveille / ils se lèvent / ils se préparent" — il/ils → se.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta del verbo pronominal.',
         type: 'freeText',
         scene: 'Écrivez la bonne forme du verbe pronominal.',
-        text: 'Tu ___ (se lever) à quelle heure ? / Ils ___ (se parler) souvent. / Nous ___ (se voir) demain. / Elle ___ (se tromper) parfois.',
+        text: 'Tu [[0]] (se lever) à quelle heure ? / Ils [[1]] (se parler) souvent. / Nous [[2]] (se voir) demain. / Elle [[3]] (se tromper) parfois.',
         blanks: [
           { answer: 'te lèves', explain: '"tu te lèves" — sujeto tu → te + lever au présent (lèves).' },
           { answer: 'se parlent', explain: '"ils se parlent" — sujeto ils → se + parler (parlent).' },

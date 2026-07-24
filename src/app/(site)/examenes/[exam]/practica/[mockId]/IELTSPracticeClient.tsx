@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
@@ -9,6 +9,10 @@ import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPan
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { isFreeIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
+import {
+  Timer, AudioPlayer, SkillTabs,
+  countWords, norm, isCorrect, blankKey,
+} from '@/components/exam-runner/primitives';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
@@ -36,17 +40,6 @@ function overallBand(bands: number[]): number {
   return Math.round((bands.reduce((a,b)=>a+b,0)/bands.length)*2)/2;
 }
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-
-function formatTime(secs: number) {
-  return `${Math.floor(secs/60).toString().padStart(2,'0')}:${(secs%60).toString().padStart(2,'0')}`;
-}
-function countWords(t: string) { return t.trim().split(/\s+/).filter(Boolean).length; }
-function norm(s: string) { return s.trim().toLowerCase().replace(/[.,!?;:'"]/g,''); }
-function isCorrect(input: string, accepted: string[]) {
-  return accepted.some(a => norm(a) === norm(input));
-}
-
 const SKILL_ORDER = ['listening','reading','writing','speaking'];
 const SKILL_LABEL: Record<string,string> = {
   listening:'Listening', reading:'Reading', writing:'Writing', speaking:'Speaking',
@@ -65,86 +58,6 @@ type MatchMap  = Record<string, string>;    // `${groupId}-${num}` -> letter
 type WriteMap  = Record<string, string>;    // questionId -> text
 type SpeakMap  = Record<string, string>;    // questionId -> notes
 type BandMap   = Record<string, number>;    // questionId -> band
-
-function blankKey(groupId: string, num: number) { return `${groupId}__${num}`; }
-
-// ── Timer ─────────────────────────────────────────────────────────────────────
-
-function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: () => void }) {
-  const [secs, setSecs] = useState(totalSecs);
-  const ref = useRef(onExpire); ref.current = onExpire;
-  useEffect(() => {
-    const id = setInterval(() => setSecs(p => {
-      if (p <= 1) { clearInterval(id); ref.current(); return 0; }
-      return p - 1;
-    }), 1000);
-    return () => clearInterval(id);
-  }, []);
-  const urgent = secs < 300;
-  return (
-    <div className={`prac-timer${urgent?' prac-timer--urgent':''}`}>
-      <span className="prac-timer__label">Tiempo</span>
-      <span className="prac-timer__val">{formatTime(secs)}</span>
-      <div className="prac-timer__bar">
-        <div className="prac-timer__fill" style={{width:`${(secs/totalSecs)*100}%`,background:urgent?'#c8202e':'var(--accent)'}}/>
-      </div>
-    </div>
-  );
-}
-
-// ── Audio player ──────────────────────────────────────────────────────────────
-
-function AudioPlayer({ src }: { src?: string }) {
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const [started, setStarted] = useState(false);
-  const [done, setDone] = useState(false);
-  const [current, setCurrent] = useState(0);
-  const [duration, setDuration] = useState(0);
-
-  function play() {
-    if (!audioRef.current || started) return;
-    audioRef.current.play();
-    setStarted(true);
-  }
-
-  const pct = duration > 0 ? (current / duration) * 100 : 0;
-
-  if (!src) return null;
-
-  return (
-    <div className="ielts-audio">
-      <audio
-        ref={audioRef}
-        src={src}
-        onTimeUpdate={() => setCurrent(audioRef.current?.currentTime ?? 0)}
-        onLoadedMetadata={() => setDuration(audioRef.current?.duration ?? 0)}
-        onEnded={() => setDone(true)}
-      />
-      <div className="ielts-audio__player">
-        <button
-          className={`ielts-audio__btn${started ? ' ielts-audio__btn--done' : ''}`}
-          onClick={play}
-          aria-label="Play"
-          disabled={started}
-        >
-          {done ? '✓' : started ? '▶' : '▶'}
-        </button>
-        <div className="ielts-audio__info">
-          <span className="ielts-audio__label">
-            {done ? 'IELTS Listening — completed' : started ? 'IELTS Listening — playing…' : 'IELTS Listening — press play to begin'}
-          </span>
-          <div className="ielts-audio__progress-wrap">
-            <div
-              className="ielts-audio__progress-bar"
-              style={{ '--pct': `${pct}%` } as React.CSSProperties}
-            />
-            <span className="ielts-audio__time">{formatTime(Math.floor(current))} / {formatTime(Math.floor(duration))}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 // ── Form-group question renderer ──────────────────────────────────────────────
 
@@ -583,34 +496,6 @@ function SectionPanel({
       <p className="ielts-section-panel__instructions">{section.instructions}</p>
       {/* transcript data preserved in section.transcript — hidden in exam UI */}
       {questionsEl}
-    </div>
-  );
-}
-
-// ── Skill tabs ────────────────────────────────────────────────────────────────
-
-function SkillTabs({ skills, active, onSelect, progress, comingSoon }: {
-  skills: string[]; active: string; onSelect: (s:string)=>void;
-  progress: Record<string,{done:number;total:number}>;
-  comingSoon: Set<string>;
-}) {
-  return (
-    <div className="ielts-skill-tabs">
-      {skills.map(skill => {
-        const isCS = comingSoon.has(skill);
-        const p = progress[skill];
-        return (
-          <button key={skill}
-            onClick={()=>{ if (!isCS) onSelect(skill); }}
-            disabled={isCS}
-            className={`ielts-skill-tab${active===skill?' ielts-skill-tab--active':''}${isCS?' ielts-skill-tab--coming-soon':''}`}>
-            <span>{SKILL_LABEL[skill]??skill}</span>
-            {isCS
-              ? <span className="ielts-skill-tab__badge">🔨 Próximamente</span>
-              : p && <span className="ielts-skill-tab__count">{p.done}/{p.total}</span>}
-          </button>
-        );
-      })}
     </div>
   );
 }
@@ -1132,12 +1017,12 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
         </div>
       </header>
 
-      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} />
+      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} labels={SKILL_LABEL} />
 
       <div className="ielts-exam-body">
         {activeSkill === 'listening' && (
           <div className="ielts-audio-sticky">
-            <AudioPlayer src={mock.sections.find(s=>s.skill==='listening')?.audioUrl} />
+            <AudioPlayer src={mock.sections.find(s=>s.skill==='listening')?.audioUrl} label="IELTS Listening" />
           </div>
         )}
         {activeSections.map(sec=>(

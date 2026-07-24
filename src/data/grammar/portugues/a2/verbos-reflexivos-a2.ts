@@ -21,10 +21,10 @@ const topic: GrammarTopic = {
 
   guide: {
     goal: 'Conjugar y usar los verbos reflexivos más comunes del portugués en oraciones cotidianas.',
-    model: 'Eu me chamo David. Ela se levanta às 7h. Nós nos sentamos na frente.',
+    model: 'Eu me chamo Iván. Ela se levanta às 7h. Nós nos sentamos na frente.',
     formula: 'me (eu) | te (tu/você) | se (ele/ela/você) | nos (nós) | se (eles/vocês)',
     decisions: [
-      '"Chamar-se" → uso reflexivo: "Como você se chama?" / "Eu me chamo Zhanna."',
+      '"Chamar-se" → uso reflexivo: "Como você se chama?" / "Eu me chamo Elena."',
       '"Levantar-se" → acción reflexiva: "Eu me levanto às 6h da manhã todos os dias."',
       '"Sentar-se" → acción reflexiva: "Sente-se, por favor." / "Ela se sentou na cadeira."',
       '"Lembrar-se de" → recuerdo: "Você se lembra do meu nome?" / "Eu não me lembro."',
@@ -128,14 +128,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El accidente',
-            lines: [['David', 'Ele ___ ao cair da bicicleta.']],
+            lines: [['Iván', 'Ele ___ ao cair da bicicleta.']],
             options: ['se machucou', 'machucou', 'me machucou', 'nos machucou'],
             answer: 'se machucou',
             explain: '"Machucar-se": ele se machucou (él se lastimó). Pronombre reflexivo de 3ª: se.',
           },
           {
             scene: 'La fiesta',
-            lines: [['Zhanna', 'Nós ___ muito na festa de aniversário.']],
+            lines: [['Elena', 'Nós ___ muito na festa de aniversário.']],
             options: ['nos divertimos', 'divertimos', 'se divertimos', 'me divertimos'],
             answer: 'nos divertimos',
             explain: '"Divertir-se": nós nos divertimos. Pronombre reflexivo de 1ª plural: nos.',

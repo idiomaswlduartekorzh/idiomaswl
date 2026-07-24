@@ -5,6 +5,7 @@ import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
 import { BLOG_POSTS } from '@/data/blog';
 import {
+  MotionProvider,
   FadeUp, StaggerGrid, StaggerItem,
   HeroLeft, HeroItem, HeroCard,
   StatsRow, StatItem, LangCycle,
@@ -363,7 +364,7 @@ function MarkCheck() {
 
 export default function HomePage() {
   return (
-    <>
+    <MotionProvider>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -843,6 +844,6 @@ export default function HomePage() {
           <p>© 2026 Idiomas WeLearn · Bucaramanga, Colombia · <a href="https://wa.me/573005004253" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}>+57 300 500 4253</a></p>
         </div>
       </footer>
-    </>
+    </MotionProvider>
   );
 }

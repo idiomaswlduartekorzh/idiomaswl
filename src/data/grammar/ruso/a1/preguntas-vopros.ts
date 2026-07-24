@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
     {
       heading: 'Las palabras interrogativas del ruso (вопросительные слова)',
       paragraphs: [
-        'En ruso, las preguntas con palabras interrogativas se forman de manera similar al español: el interrogativo va al inicio de la oración seguido del orden normal sujeto-verbo. Кто ты? (¿Quién eres tú?), Что это? (¿Qué es esto?), Где Давид? (¿Dónde está David?).',
+        'En ruso, las preguntas con palabras interrogativas se forman de manera similar al español: el interrogativo va al inicio de la oración seguido del orden normal sujeto-verbo. Кто ты? (¿Quién eres tú?), Что это? (¿Qué es esto?), Где Давид? (¿Dónde está Enzo?).',
         'A diferencia del español, en ruso NO se invierten el sujeto y el verbo en preguntas. La entonación ascendente y el interrogativo al inicio son suficientes para marcar la pregunta.',
       ],
       table: [
@@ -125,10 +125,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ubicación vs movimiento',
-            lines: [['', 'David está en casa y no se mueve. Zhanna pregunta: "___ ты?" (¿Dónde estás?)']],
+            lines: [['', 'Enzo está en casa y no se mueve. Alba pregunta: "___ ты?" (¿Dónde estás?)']],
             options: ['Куда', 'Откуда', 'Где', 'Когда'],
             answer: 'Где',
-            explain: 'Где (gde) = dónde (ubicación estática). David no se mueve — se pregunta por su posición.',
+            explain: 'Где (gde) = dónde (ubicación estática). Enzo no se mueve — se pregunta por su posición.',
           },
           {
             scene: 'Dirección/movimiento',
@@ -176,7 +176,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Persona o cosa',
-            lines: [['', '"___ [[0]] живёт здесь?" Sujeto: una persona. Traducción: [[1]]']],
+            lines: [['', '"[[0]] живёт здесь?" Sujeto: una persona. Traducción: ']],
             blanks: [
               { options: ['Кто', 'Что', 'Где', 'Как'], answer: 'Кто', explain: 'Кто = quién. Preguntamos por una persona.' },
               { options: ['¿Quién vive aquí?', '¿Qué vive aquí?', '¿Dónde vive aquí?', '¿Cómo vive aquí?'], answer: '¿Quién vive aquí?', explain: 'Кто живёт здесь? = ¿Quién vive aquí?' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Где vs Куда',
-            lines: [['', 'Sofia está en casa (sin moverse): "___ [[0]] она?" / Si va al trabajo: "___ она идёт?" Primera respuesta: [[1]]']],
+            lines: [['', 'Sofia está en casa (sin moverse): "[[0]] она?" / Si va al trabajo: "[[1]] она идёт?" Primera respuesta: ']],
             blanks: [
               { options: ['Где', 'Куда', 'Откуда', 'Когда'], answer: 'Где', explain: 'Где = dónde (ubicación). Sofia no se mueve.' },
               { options: ['Куда', 'Где', 'Откуда', 'Почему'], answer: 'Куда', explain: 'Куда = a dónde (movimiento). Para ir al trabajo hay desplazamiento.' },
@@ -192,7 +192,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tiempo y causa',
-            lines: [['', '"___ [[0]] начинается урок?" (¿Cuándo empieza la clase?) / "___ [[1]] ты опоздал?" (¿Por qué llegaste tarde?)']],
+            lines: [['', '"[[0]] начинается урок?" (¿Cuándo empieza la clase?) / "[[1]] ты опоздал?" (¿Por qué llegaste tarde?)']],
             blanks: [
               { options: ['Когда', 'Почему', 'Как', 'Где'], answer: 'Когда', explain: 'Когда = cuándo. Preguntamos por el inicio temporal de la clase.' },
               { options: ['Почему', 'Когда', 'Зачем', 'Как'], answer: 'Почему', explain: 'Почему = por qué (causa). Buscamos la razón del retraso.' },
@@ -200,7 +200,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Cantidad y manera',
-            lines: [['', '"___ [[0]] тебе лет?" (¿Cuántos años tienes?) / "___ [[1]] тебя зовут?" (¿Cómo te llamas?)']],
+            lines: [['', '"[[0]] тебе лет?" (¿Cuántos años tienes?) / "[[1]] тебя зовут?" (¿Cómo te llamas?)']],
             blanks: [
               { options: ['Сколько', 'Как', 'Что', 'Кто'], answer: 'Сколько', explain: 'Сколько = cuántos. Сколько тебе лет? = ¿Cuántos años tienes?' },
               { options: ['Как', 'Сколько', 'Что', 'Кто'], answer: 'Как', explain: 'Как = cómo. Как тебя зовут? = ¿Cómo te llamas? (literal: ¿Cómo te llaman?)' },
@@ -214,7 +214,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa el diálogo eligiendo el interrogativo correcto.',
         type: 'guidedText',
-        scene: 'David y Zhanna hablan en la academia',
+        scene: 'Enzo y Alba hablan en la academia',
         text: '— [[0]] ты? (¿Quién eres?) — Меня зовут Карлос. — [[1]] ты живёшь? (¿Dónde vives?) — В Букараманге. — [[2]] ты идёшь сейчас? (¿A dónde vas ahora?) — В библиотеку. — [[3]] ты учишь русский? (¿Por qué estudias ruso?) — Потому что это интересно. — [[4]] у тебя уроков? (¿Cuántas clases tienes?) — Три в неделю. — [[5]] ты чувствуешь себя? (¿Cómo te sientes?)',
         blanks: [
           { options: ['Кто', 'Что', 'Где', 'Как'], answer: 'Кто', explain: 'Кто ты? = ¿Quién eres? Кто para personas.' },
@@ -287,7 +287,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Entrevista inicial',
-            prompt: 'Eres David y conoces a un nuevo estudiante. Formula 3 preguntas en ruso: nombre, origen (Откуда ты?), y por qué estudia ruso.',
+            prompt: 'Eres Enzo y conoces a un nuevo estudiante. Formula 3 preguntas en ruso: nombre, origen (Откуда ты?), y por qué estudia ruso.',
             answer: 'Как тебя зовут? Откуда ты? Почему ты учишь русский?',
             accepted: ['как тебя зовут', 'откуда ты', 'почему ты учишь'],
             explain: 'Как тебя зовут? (¿Cómo te llamas?) / Откуда ты? (¿De dónde eres?) / Почему ты учишь русский? (¿Por qué estudias ruso?)',

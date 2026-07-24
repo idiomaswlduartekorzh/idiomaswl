@@ -98,7 +98,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Libros',
-            lines: [['David', 'ほんが ___ あります。(Hay un libro.)']],
+            lines: [['Iván', 'ほんが ___ あります。(Hay un libro.)']],
             options: ['いっさつ', 'いちまい', 'いっぽん', 'ひとつ'],
             answer: 'いっさつ',
             explain: 'ほん (libro) = 〜冊 (satsu). 一冊 = いっさつ. Libros y cuadernos → 〜冊.',
@@ -126,7 +126,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Camisetas',
-            lines: [['Zhanna', 'Tシャツを ___ かいました。(Compré cuatro camisetas.)']],
+            lines: [['Elena', 'Tシャツを ___ かいました。(Compré cuatro camisetas.)']],
             options: ['よんまい', 'よんぼん', 'よっつ', 'よんにん'],
             answer: 'よんまい',
             explain: 'Tシャツ (camiseta) = ropa plana → 〜枚 (mai). 四枚 = よんまい.',
@@ -157,7 +157,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En la clase',
-            lines: [['David', 'きょうしつに がくせいが [[0]][[1]] います。(Hay cinco estudiantes.)']],
+            lines: [['Iván', 'きょうしつに がくせいが [[0]][[1]] います。(Hay cinco estudiantes.)']],
             blanks: [
               { options: ['ご', 'ろく', 'に'], answer: 'ご', explain: 'ご (go) = cinco (5).' },
               { options: ['にん', 'まい', 'ほん'], answer: 'にん', explain: '〜人 (nin) para personas. 五人 = ごにん.' },

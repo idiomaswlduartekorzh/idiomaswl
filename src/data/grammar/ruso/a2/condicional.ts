@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta de бы y el pasado.',
         type: 'freeText',
         scene: 'Напиши нереальные условия.',
-        text: 'Если бы я ___ (знать, yo masc.) ответ / Она ___ (хотеть + бы, deseo suave, fem.) кофе / Мы бы ___ (говорить, plural) по-русски / Если бы он ___ (прийти, pasado masc.) вовремя',
+        text: 'Если бы я [[0]] (знать, yo masc.) ответ / Она [[1]] (хотеть + бы, deseo suave, fem.) кофе / Мы бы [[2]] (говорить, plural) по-русски / Если бы он [[3]] (прийти, pasado masc.) вовремя',
         blanks: [
           { answer: 'знал', explain: '"знал" — pasado masc. (я = masc. por defecto). знать → знал.' },
           { answer: 'хотела бы', explain: '"хотела бы" — она (fem.) → хотела (pasado fem.) + бы.' },

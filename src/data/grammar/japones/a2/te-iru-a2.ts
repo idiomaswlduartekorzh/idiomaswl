@@ -101,7 +101,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Estado resultante',
-            lines: [['David', 'ドアが___ (la puerta esta cerrada)']],
+            lines: [['Bruno', 'ドアが___ (la puerta esta cerrada)']],
             options: ['閉まっています', '閉まりました', '閉まります', '閉まっていません'],
             answer: '閉まっています',
             explain: '閉まる (shimaru) Gr.1: る→って → 閉まって + います. Estado: la puerta esta cerrada.',
@@ -136,14 +136,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Llevar puesto',
-            lines: [['Jose', '田中さんは赤いシャツを___ (Tanaka lleva una camisa roja)']],
+            lines: [['Diego', '田中さんは赤いシャツを___ (Tanaka lleva una camisa roja)']],
             options: ['着ています', '着ます', '着ていません', '着ました'],
             answer: '着ています',
             explain: '着る (kiru, Grupo 2): 着て + います = 着ています. Estado: lleva puesto.',
           },
           {
             scene: 'Pregunta progresiva',
-            lines: [['Zhanna', '今、何を___か？ (¿Que estas haciendo ahora?)']],
+            lines: [['Clara', '今、何を___か？ (¿Que estas haciendo ahora?)']],
             options: ['していますか', 'しますか', 'しましたか', 'してはいけません'],
             answer: 'していますか',
             explain: 'する → して + います + か = していますか. Pregunta progresiva.',
@@ -159,7 +159,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Conversacion en el cafe',
-            lines: [['Carlos', '今、何を[[0]]か？'], ['David', 'コーヒーを[[1]]。']],
+            lines: [['Carlos', '今、何を[[0]]か？'], ['Bruno', 'コーヒーを[[1]]。']],
             blanks: [
               { options: ['していますか', 'しますか', 'しましたか'], answer: 'していますか', explain: 'する→して + います + か. Pregunta progresiva.' },
               { options: ['飲んでいます', '飲みます', '飲みました'], answer: '飲んでいます', explain: '飲む (Gr.1): む→んで + います = 飲んでいます.' },

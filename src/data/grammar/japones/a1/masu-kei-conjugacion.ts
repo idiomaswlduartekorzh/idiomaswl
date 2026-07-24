@@ -89,7 +89,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Fuiste?',
-            lines: [['David', 'きのう がっこうに ___？(¿Fuiste a la escuela ayer?)']],
+            lines: [['Hugo', 'きのう がっこうに ___？(¿Fuiste a la escuela ayer?)']],
             options: ['いきましたか', 'いきますか', 'いきませんでしたか', 'いきました'],
             answer: 'いきましたか',
             explain: 'Pasado afirmativo + か: いきましたか.',
@@ -103,7 +103,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No viene',
-            lines: [['Ana', 'デービッドさんは きょう ___。(David no viene hoy.)']],
+            lines: [['Ana', 'デービッドさんは きょう ___。(Hugo no viene hoy.)']],
             options: ['きません', 'きます', 'きました', 'きませんでした'],
             answer: 'きません',
             explain: 'くる → irregular → きます → negativo: きません.',
@@ -124,7 +124,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Bebes café?',
-            lines: [['Zhanna', 'コーヒーを ___？(¿Bebes café?)']],
+            lines: [['Lía', 'コーヒーを ___？(¿Bebes café?)']],
             options: ['のみますか', 'のみます', 'のみませんか', 'のみました'],
             answer: 'のみますか',
             explain: 'のむ (grupo 1) → のみます → pregunta: のみますか.',
@@ -147,7 +147,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Ayer por la tarde',
-            lines: [['David', 'きのう かふぇに [[0]] (ir, pasado) て、コーヒーを [[1]] (beber, pasado)。']],
+            lines: [['Hugo', 'きのう かふぇに [[0]] (ir, pasado) て、コーヒーを [[1]] (beber, pasado)。']],
             blanks: [
               { options: ['いきました', 'いきます', 'いきませんでした'], answer: 'いきました', explain: 'いく → いきます → pasado: いきました.' },
               { options: ['のみました', 'のみます', 'のみませんでした'], answer: 'のみました', explain: 'のむ → のみます → pasado: のみました.' },

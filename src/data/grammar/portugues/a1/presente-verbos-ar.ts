@@ -99,14 +99,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella estudia',
-            lines: [['Sofia', 'A Zhanna ___ português em casa. (estudar)']],
+            lines: [['Sofia', 'A Alba ___ português em casa. (estudar)']],
             options: ['estuda', 'estudo', 'estudas', 'estudam'],
             answer: 'estuda',
             explain: 'Ela + -a: estuda. Tercera persona singular.',
           },
           {
             scene: 'Nosotros trabajamos',
-            lines: [['David', 'Nós ___ juntos na WeLearn. (trabalhar)']],
+            lines: [['Iván', 'Nós ___ juntos na WeLearn. (trabalhar)']],
             options: ['trabalhamos', 'trabalham', 'trabalha', 'trabalho'],
             answer: 'trabalhamos',
             explain: 'Nós + -amos: trabalhamos. Primera persona plural.',
@@ -158,9 +158,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Qué estudias?',
             lines: [
-              ['Ana', 'Você [[0]] português? (estudar)'],
-              ['Carlos', 'Sim! E também [[1]] um pouco de inglês. (estudar)'],
-            ],
+ ['Ana', 'Você [[0]] português? (estudar)'],
+ ['Carlos', 'Sim! E também [[1]] um pouco de inglês. (estudar)'],
+ ],
             blanks: [
               { options: ['estuda', 'estudas', 'estudo'], answer: 'estuda', explain: 'Você + -a: estuda.' },
               { options: ['estudo', 'estuda', 'estudam'], answer: 'estudo', explain: 'Eu + -o: estudo.' },
@@ -168,7 +168,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Habla y trabaja',
-            lines: [['David', 'Eu [[0]] oito línguas e [[1]] como professor. (falar / trabalhar)']],
+            lines: [['Iván', 'Eu [[0]] oito línguas e [[1]] como professor. (falar / trabalhar)']],
             blanks: [
               { options: ['falo', 'fala', 'falam'], answer: 'falo', explain: 'Eu + -o: falo.' },
               { options: ['trabalho', 'trabalha', 'trabalham'], answer: 'trabalho', explain: 'Eu + -o: trabalho.' },
@@ -198,14 +198,14 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Conjuga los verbos para completar la presentación.',
         type: 'guidedText',
-        scene: 'Apresentação de David na WeLearn',
-        text: 'Eu me chamo David e [[0]] (trabalhar) na WeLearn. Eu [[1]] (falar) oito idiomas. Os meus alunos [[2]] (estudar) muito — eles [[3]] (gostar) de aprender línguas. Zhanna e eu [[4]] (trabalhar) juntos. A gente [[5]] (usar) métodos modernos. Você [[6]] (gostar) de aprender português?',
+        scene: 'Apresentação de Iván na WeLearn',
+        text: 'Eu me chamo Iván e [[0]] (trabalhar) na WeLearn. Eu [[1]] (falar) oito idiomas. Os meus alunos [[2]] (estudar) muito — eles [[3]] (gostar) de aprender línguas. Alba e eu [[4]] (trabalhar) juntos. A gente [[5]] (usar) métodos modernos. Você [[6]] (gostar) de aprender português?',
         blanks: [
           { options: ['trabalho', 'trabalha', 'trabalham'], answer: 'trabalho', explain: 'Eu + -o: trabalho.' },
           { options: ['falo', 'fala', 'falam'], answer: 'falo', explain: 'Eu + -o: falo.' },
           { options: ['estudam', 'estuda', 'estudamos'], answer: 'estudam', explain: 'Os alunos (eles) + -am: estudam.' },
           { options: ['gostam', 'gosta', 'gostamos'], answer: 'gostam', explain: 'Eles + -am: gostam.' },
-          { options: ['trabalhamos', 'trabalham', 'trabalha'], answer: 'trabalhamos', explain: 'Nós (Zhanna e eu) + -amos: trabalhamos.' },
+          { options: ['trabalhamos', 'trabalham', 'trabalha'], answer: 'trabalhamos', explain: 'Nós (Alba e eu) + -amos: trabalhamos.' },
           { options: ['usa', 'usamos', 'usam'], answer: 'usa', explain: 'A gente + -a (3ª sg): usa.' },
           { options: ['gosta', 'gostas', 'gostam'], answer: 'gosta', explain: 'Você + -a: gosta.' },
         ],

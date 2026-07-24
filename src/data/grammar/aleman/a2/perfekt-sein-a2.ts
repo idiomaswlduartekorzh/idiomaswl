@@ -127,7 +127,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando del trabajo',
             lines: [['', 'Du ___ lange gearbeitet.']],
-            options: ['hast', 'bist', 'hat', 'hat'],
+            options: ['hast', 'bist', 'hat'],
             answer: 'hast',
             explain: '"arbeiten" no es movimiento ni cambio de estado → haben. Du hast gearbeitet.',
           },

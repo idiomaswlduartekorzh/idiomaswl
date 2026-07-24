@@ -82,7 +82,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Una ciudad tranquila',
-            lines: [['David', 'これは ___ まちです。(Esta es una ciudad tranquila.)']],
+            lines: [['Bruno', 'これは ___ まちです。(Esta es una ciudad tranquila.)']],
             options: ['静かな', '静かの', '静かい', '静か'],
             answer: '静かな',
             explain: 'Modificar sustantivo con adjetivo な: 静か + な + まち.',
@@ -124,7 +124,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No me gusta',
-            lines: [['Zhanna', 'からいたべものが ___。(No me gusta la comida picante.)']],
+            lines: [['Nora', 'からいたべものが ___。(No me gusta la comida picante.)']],
             options: ['嫌いです', '嫌いくないです', '嫌いじゃないです', '嫌い'],
             answer: '嫌いです',
             explain: '嫌い (odiar/no gustar) es adjetivo な: 嫌いです. Objeto + が + 嫌いです.',
@@ -147,7 +147,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Sobre WeLearn',
-            lines: [['David', 'ウィーラーンは [[0]] がっこうです。とても [[1]]。(WeLearn es una escuela famosa. Es muy conveniente.)']],
+            lines: [['Bruno', 'ウィーラーンは [[0]] がっこうです。とても [[1]]。(WeLearn es una escuela famosa. Es muy conveniente.)']],
             blanks: [
               { options: ['有名な', '有名の', '有名い'], answer: '有名な', explain: 'Modificador: 有名 + な + がっこう.' },
               { options: ['べんりです', 'べんりじゃないです', 'べんりな'], answer: 'べんりです', explain: 'Predicado: べんり + です.' },

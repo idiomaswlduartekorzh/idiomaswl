@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con los conectores correctos.',
         type: 'guidedText',
         scene: 'Sophie donne son avis sur le télétravail.',
-        text: 'Le télétravail présente de nombreux avantages. [[0]], on gagne du temps en transport. [[1]], on peut mieux organiser sa journée. [[2]], il y a des inconvénients : on peut se sentir isolé. [[3]], certaines personnes travaillent plus chez elles que au bureau. En [[2]], le télétravail n\'est pas possible pour tous les métiers.',
+        text: 'Le télétravail présente de nombreux avantages. [[0]], on gagne du temps en transport. [[1]], on peut mieux organiser sa journée. [[2]], il y a des inconvénients : on peut se sentir isolé. [[3]], certaines personnes travaillent plus chez elles que au bureau. En [[4]], le télétravail n\'est pas possible pour tous les métiers.',
         blanks: [
           { options: ["D'abord", 'Donc', 'Pourtant', 'Enfin'], answer: "D'abord", explain: '"D\'abord" = en primer lugar. Primer argumento.' },
           { options: ['Ensuite', "D'abord", 'Enfin', 'Pourtant'], answer: 'Ensuite', explain: '"Ensuite" = además/luego. Segundo argumento.' },
@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el conector correcto.',
         type: 'freeText',
         scene: 'Complétez avec le bon connecteur.',
-        text: 'Il a plu toute la journée, ___ le match a été annulé. (consecuencia) / Ce restaurant est bruyant ; ___, la nourriture est délicieuse. (contraste) / ___, prépare les légumes ; ensuite, fais cuire la viande. (secuencia) / Il est timide, ___ il parle beaucoup en public. (concesión)',
+        text: 'Il a plu toute la journée, [[0]] le match a été annulé. (consecuencia) / Ce restaurant est bruyant ; [[1]], la nourriture est délicieuse. (contraste) / [[2]], prépare les légumes ; ensuite, fais cuire la viande. (secuencia) / Il est timide, [[3]] il parle beaucoup en public. (concesión)',
         blanks: [
           { answer: 'donc', explain: '"donc" = consecuencia. Llueve → cancelan el partido.' },
           { answer: 'en revanche', explain: '"en revanche" = contraste equilibrado. Ruidoso ↔ buena comida.' },

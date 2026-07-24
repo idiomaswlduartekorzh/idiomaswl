@@ -161,7 +161,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Deseo expresado con cortesía',
             lines: [['', "J'___ visiter le musée d'Orsay un jour."]],
-            options: ['aimerais', 'aime', 'aimerai', 'aime'],
+            options: ['aimerais', 'aime', 'aimerai'],
             answer: 'aimerais',
             explain: 'Deseo con aimer en conditionnel: j\'aimerais (regular: aim- + -erais).',
           },

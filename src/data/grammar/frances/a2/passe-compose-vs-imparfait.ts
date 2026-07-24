@@ -193,7 +193,7 @@ const topic: GrammarTopic = {
         intro: "Escribe el tiempo verbal correcto sin ayuda de opciones.",
         type: 'freeText',
         scene: "Léa cuenta un recuerdo de sus vacaciones",
-        text: "L'été dernier, nous ___ en Espagne. Il ___ très chaud. Un soir, nous ___ une promenade sur la plage. Soudain, on ___ un concert au loin. C'___ magnifique!",
+        text: "L'été dernier, nous [[0]] en Espagne. Il [[1]] très chaud. Un soir, nous [[2]] une promenade sur la plage. Soudain, on [[3]] un concert au loin. C'[[4]] magnifique!",
         blanks: [
           { answer: "étions", accepted: ["étions"], explain: "Essere en imparfait (descripción dónde estaban): nous étions." },
           { answer: "faisait", accepted: ["faisait"], explain: "Descripción del clima = imparfait: il faisait." },

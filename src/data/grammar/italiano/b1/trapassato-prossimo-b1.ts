@@ -58,8 +58,16 @@ const topic: GrammarTopic = {
     {
       heading: 'Cómo se forma el trapassato prossimo',
       paragraphs: [
-        'Fórmula: imperfetto di avere/essere + participio passato. Usa avere con verbos transitivos: avevo mangiato, avevi letto, aveva scritto, avevamo finito, avevate visto, avevano capito.',
-        'Usa essere con verbos de movimiento, estado y reflexivos: ero andato/a, eri venuto/a, era partito/a, eravamo tornati/e, eravate arrivati/e, erano usciti/e. El participio concuerda en género y número cuando se usa essere.',
+        'Fórmula: imperfetto del auxiliar (avevo / ero) + participio pasado. La elección del auxiliar y la concordancia siguen las reglas del passato prossimo; lo único que cambia es que el auxiliar va en imperfetto. Esta es la tabla:',
+      ],
+      table: [
+        ['Persona', 'con avere (mangiare)', 'con essere (andare)'],
+        ['io', 'avevo mangiato', 'ero andato/a'],
+        ['tu', 'avevi mangiato', 'eri andato/a'],
+        ['lui/lei', 'aveva mangiato', 'era andato/a'],
+        ['noi', 'avevamo mangiato', 'eravamo andati/e'],
+        ['voi', 'avevate mangiato', 'eravate andati/e'],
+        ['loro', 'avevano mangiato', 'erano andati/e'],
       ],
     },
     {
@@ -74,6 +82,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'Los tres tiempos coexisten a menudo en la narración. El imperfetto describe el contexto o acciones habituales. El passato prossimo narra eventos principales. El trapassato prossimo indica qué había ocurrido antes: "Stavo studiando (imperfetto) quando mi ha chiamato (passato prossimo) — avevo già dimenticato che ci eravamo dati appuntamento (trapassato)".',
         'Una buena regla: si en español usarías "había + participio" en el contexto de una narración pasada, en italiano debes usar el trapassato prossimo. Si usarías "ha + participio" en relación con el presente, en italiano es passato prossimo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el trapassato prossimo en italiano?',
+      paragraphs: [
+        'Con el imperfetto del auxiliar (avevo, avevi, aveva… / ero, eri, era…) + el participio pasado: "avevo mangiato", "ero andato". Se elige avere o essere con las reglas del passato prossimo, y con essere el participio concuerda con el sujeto: "era arrivata".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el trapassato prossimo?',
+      paragraphs: [
+        'Para una acción anterior a otra acción pasada, sobre todo con quando, dopo che, prima, già: "Quando sono arrivato, avevano già cenato". Es el "pasado del pasado", equivalente al pluscuamperfecto español ("habían cenado").',
+      ],
+    },
+    {
+      heading: '¿Qué diferencia hay entre trapassato prossimo y passato prossimo?',
+      paragraphs: [
+        'El passato prossimo narra una acción pasada (ho mangiato = comí). El trapassato prossimo narra una acción anterior a esa (avevo mangiato = había comido, antes de otro momento pasado). El passato usa el auxiliar en presente; el trapassato, en imperfetto.',
       ],
     },
   ],

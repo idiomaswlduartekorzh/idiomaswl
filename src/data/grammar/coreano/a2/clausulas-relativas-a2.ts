@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la terminación correcta del verbo en la cláusula relativa.',
         type: 'freeText',
         scene: '관계절 완성하기.',
-        text: '내가 자주 가___ 카페 / 어제 만___ 사람 / 내일 먹___ 음식 / 한국에서 온___ 친구 (이미 옴)',
+        text: '내가 자주 가[[0]] 카페 / 어제 만[[1]] 사람 / 내일 먹[[2]] 음식 / 한국에서 온[[3]] 친구 (이미 옴)',
         blanks: [
           { answer: '는', explain: '"가는 카페" = el café al que voy (presente habitual).' },
           { answer: '난', explain: '"만난 사람" = la persona que conocí (pasado: 만나 + ㄴ = 만난).' },

@@ -126,14 +126,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La llegada',
-            lines: [['David', 'Eles ___ de São Paulo ontem cedo.']],
+            lines: [['Iván', 'Eles ___ de São Paulo ontem cedo.']],
             options: ['vieram', 'viram', 'veniram', 'viemos'],
             answer: 'vieram',
             explain: 'Vir en pretérito perfeito, 3ª pl (eles): vieram. No confundir con "viram" (ver).',
           },
           {
             scene: 'La reunión',
-            lines: [['Zhanna', 'Eu ___ uma reunião importante esta manhã.']],
+            lines: [['Iris', 'Eu ___ uma reunião importante esta manhã.']],
             options: ['tive', 'tinha', 'teve', 'tenho'],
             answer: 'tive',
             explain: 'Ter en pretérito perfeito, 1ª sg (eu): tive.',
@@ -186,9 +186,9 @@ const topic: GrammarTopic = {
           {
             scene: 'La reunión de trabajo',
             lines: [
-              ['Ana', 'Onde você [[0]] ontem? Eu te liguei.'],
-              ['David', 'Eu [[1]] em reunião a tarde toda.'],
-            ],
+ ['Ana', 'Onde você [[0]] ontem? Eu te liguei.'],
+ ['Iván', 'Eu [[1]] em reunião a tarde toda.'],
+ ],
             blanks: [
               { options: ['esteve', 'estava', 'estás'], answer: 'esteve', explain: 'Estar, 3ª sg (você): esteve.' },
               { options: ['estive', 'estava', 'estarei'], answer: 'estive', explain: 'Estar, 1ª sg: estive.' },
@@ -196,7 +196,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La visita',
-            lines: [['Zhanna', 'Minha amiga [[0]] de Recife e nós [[1]] muito tempo juntas.']],
+            lines: [['Iris', 'Minha amiga [[0]] de Recife e nós [[1]] muito tempo juntas.']],
             blanks: [
               { options: ['veio', 'vim', 'vieram'], answer: 'veio', explain: 'Vir, 3ª sg (minha amiga): veio.' },
               { options: ['tivemos', 'tínhamos', 'teremos'], answer: 'tivemos', explain: 'Ter, 1ª pl: tivemos.' },

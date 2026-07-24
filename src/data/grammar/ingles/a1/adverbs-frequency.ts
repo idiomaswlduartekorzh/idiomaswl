@@ -65,6 +65,24 @@ const topic: GrammarTopic = {
         'Puedes usar esto para variar tus frases y sonar más natural: en lugar de decir siempre "I sometimes forget", puedes decir "Sometimes I forget" para mayor énfasis.',
       ],
     },
+    {
+      heading: '¿Cuáles son los adverbios de frecuencia en inglés?',
+      paragraphs: [
+        'De más a menos: always (siempre), usually (normalmente), often (a menudo), sometimes (a veces), rarely/seldom (raramente), never (nunca). Indican con qué frecuencia ocurre una acción: "I always drink coffee", "She never smokes".',
+      ],
+    },
+    {
+      heading: '¿Dónde se colocan los adverbios de frecuencia en inglés?',
+      paragraphs: [
+        'Antes del verbo principal ("I always study at night") pero DESPUÉS del verbo to be ("She is always late"). Con auxiliares van en medio: "I have never been to London". "Sometimes" y "usually" también pueden ir al principio de la frase.',
+      ],
+    },
+    {
+      heading: '¿"Never" lleva "not" en inglés?',
+      paragraphs: [
+        'No. "never" ya es negativo, así que NO se combina con "not": se dice "I never eat meat" (no "I don\'t never"). El verbo va en afirmativo aunque el significado sea negativo. Es el error típico del hispanohablante por la doble negación del español.',
+      ],
+    },
   ],
   visual: {
     mode: 'scale',
@@ -104,7 +122,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Descripción de hábito — ~80%',
-            lines: [['David', 'I ___ drink coffee in the morning. (almost every day)']],
+            lines: [['Enzo', 'I ___ drink coffee in the morning. (almost every day)']],
             options: ['usually', 'never', 'rarely', 'sometimes'],
             answer: 'usually',
             explain: 'usually = ~80% — casi siempre.',
@@ -163,7 +181,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sobre la puntualidad',
-            lines: [['David', 'My students [[0]] [[1]] late.']],
+            lines: [['Enzo', 'My students [[0]] [[1]] late.']],
             blanks: [
               { options: ['are', 'study', 'go'], answer: 'are', explain: 'To be: subject + am/is/are + adverb.' },
               { options: ['never', 'always', 'study'], answer: 'never', explain: 'My students are never late. — after to be.' },
@@ -211,7 +229,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el adverbio de frecuencia correcto según el porcentaje indicado.',
         type: 'freeText',
         scene: 'Cuestionario de hábitos de estudio en WeLearn',
-        text: 'I ___ (100%) do my homework. I ___ (0%) miss class. I ___ (80%) listen to English music. I ___ (40%) watch YouTube in English. The teacher is ___ (100%) helpful. I am ___ (20%) tired after class.',
+        text: 'I [[0]] (100%) do my homework. I [[1]] (0%) miss class. I [[2]] (80%) listen to English music. I [[3]] (40%) watch YouTube in English. The teacher is [[4]] (100%) helpful. I am [[5]] (20%) tired after class.',
         blanks: [
           { answer: 'always', accepted: ['always'], explain: '100% → always.' },
           { answer: 'never', accepted: ['never'], explain: '0% → never.' },

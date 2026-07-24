@@ -185,7 +185,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la conjunción y forma verbal correctas.',
         type: 'freeText',
         scene: 'Соедини предложения с нужными союзами.',
-        text: 'Она думает, ___ (que él llegará = придёт) / Мы хотим, ___ вы ___ (que ustedes vengan = пришли) / Я читаю книги, ___ (para aprender = узнавать) новое / Он устал, ___ (porque trabajó = работал)',
+        text: 'Она думает, [[0]] (que él llegará = придёт) / Мы хотим, [[1]] вы [[2]] (que ustedes vengan = пришли) / Я читаю книги, [[3]] (para aprender = узнавать) новое / Он устал, [[4]] (porque trabajó = работал)',
         blanks: [
           { answer: 'что он придёт', explain: '"что он придёт" — думает + что + declaración futura.' },
           { answer: 'чтобы вы пришли', explain: '"чтобы вы пришли" — deseo con sujeto distinto + pasado (вы пришли).' },

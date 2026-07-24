@@ -111,15 +111,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David termina su clase',
-            lines: [['David', 'Je ___ le cours à 18h. (finir)']],
+            scene: 'Nico termina su clase',
+            lines: [['Nico', 'Je ___ le cours à 18h. (finir)']],
             options: ['finis', 'finit', 'finissons', 'finissent'],
             answer: 'finis',
             explain: '"Je" → terminación -is: "je finis". Sin -iss- en singular.',
           },
           {
-            scene: 'Zhanna elige un método',
-            lines: [['Zhanna', 'Elle ___ la meilleure méthode. (choisir)']],
+            scene: 'Vera elige un método',
+            lines: [['Vera', 'Elle ___ la meilleure méthode. (choisir)']],
             options: ['choisit', 'choisis', 'choisissez', 'choisissent'],
             answer: 'choisit',
             explain: '"Elle" → terminación -it: "elle choisit".',
@@ -153,9 +153,9 @@ const topic: GrammarTopic = {
             explain: '"Vous" → -issez: "vous choisissez". -iss- en plural.',
           },
           {
-            scene: 'David sobre partir (3.° grupo)',
-            lines: [['David', 'Je ___ à Paris demain. (partir — 3.° grupo, irreg.)']],
-            options: ['pars', 'partis', 'partissons', 'partis'],
+            scene: 'Nico sobre partir (3.° grupo)',
+            lines: [['Nico', 'Je ___ à Paris demain. (partir — 3.° grupo, irreg.)']],
+            options: ['pars', 'partis', 'partissons'],
             answer: 'pars',
             explain: '"Partir" es del 3.° grupo irregular: "je pars" (sin -iss-, raíz: par-).',
           },
@@ -184,8 +184,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna y David eligen actividades',
-            lines: [['Zhanna', 'Nous [[0]] les activités et les étudiants [[1]] aussi. (choisir)']],
+            scene: 'Vera y Nico eligen actividades',
+            lines: [['Vera', 'Nous [[0]] les activités et les étudiants [[1]] aussi. (choisir)']],
             blanks: [
               { options: ['choisissons', 'choisissez', 'choisit', 'choisis'], answer: 'choisissons', explain: '"Nous" → "choisissons" (-issons).' },
               { options: ['choisissent', 'choisissons', 'choisit', 'choisis'], answer: 'choisissent', explain: '"Les étudiants" (ils) → "choisissent" (-issent).' },
@@ -216,13 +216,13 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma correcta de cada verbo -IR del 2.° grupo en este texto.',
         type: 'guidedText',
         scene: 'Un día típico en la academia WeLearn. Elige la conjugación correcta de cada verbo -IR.',
-        text: 'Chaque matin, les étudiants [[0]] (choisir) leurs exercices. David [[1]] (réfléchir) toujours à la meilleure méthode. À midi, les cours [[2]] (finir). L\'après-midi, les étudiants [[3]] (réussir) leurs exercices pratiques. Zhanna et David [[4]] (réunir) les étudiants pour une session spéciale. Tu [[5]] (choisir) de venir aussi ?',
+        text: 'Chaque matin, les étudiants [[0]] (choisir) leurs exercices. Nico [[1]] (réfléchir) toujours à la meilleure méthode. À midi, les cours [[2]] (finir). L\'après-midi, les étudiants [[3]] (réussir) leurs exercices pratiques. Vera et Nico [[4]] (réunir) les étudiants pour une session spéciale. Tu [[5]] (choisir) de venir aussi ?',
         blanks: [
           { options: ['choisissent', 'choisissons', 'choisit', 'choisis'], answer: 'choisissent', explain: '"Les étudiants" (ils) → "choisissent".' },
-          { options: ['réfléchit', 'réfléchis', 'réfléchissons', 'réfléchissez'], answer: 'réfléchit', explain: '"David" (il) → "réfléchit".' },
+          { options: ['réfléchit', 'réfléchis', 'réfléchissons', 'réfléchissez'], answer: 'réfléchit', explain: '"Nico" (il) → "réfléchit".' },
           { options: ['finissent', 'finissons', 'finit', 'finis'], answer: 'finissent', explain: '"Les cours" (ils) → "finissent".' },
           { options: ['réussissent', 'réussissons', 'réussit', 'réussis'], answer: 'réussissent', explain: '"Les étudiants" (ils) → "réussissent".' },
-          { options: ['réunissent', 'réunissons', 'réunit', 'réunis'], answer: 'réunissent', explain: '"Zhanna et David" (ils) → "réunissent".' },
+          { options: ['réunissent', 'réunissons', 'réunit', 'réunis'], answer: 'réunissent', explain: '"Vera et Nico" (ils) → "réunissent".' },
           { options: ['choisis', 'choisit', 'choisissons', 'choisissent'], answer: 'choisis', explain: '"Tu" → "choisis" (-is).' },
           { options: ['choisissent', 'choisissons', 'choisit', 'choisis'], answer: 'choisissent', explain: 'Confirmación.' },
         ],
@@ -251,14 +251,14 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'David habla de sus estudiantes',
+            scene: 'Nico habla de sus estudiantes',
             prompt: 'Di que los estudiantes de WeLearn eligen sus cursos y reflexionan mucho (choisir/réfléchir, ils).',
             answer: 'Les étudiants choisissent leurs cours et réfléchissent beaucoup.',
             accepted: ['choisissent', 'réfléchissent'],
             explain: '"Ils" + choisir → "choisissent" (-issent). "Ils" + réfléchir → "réfléchissent".',
           },
           {
-            scene: 'Zhanna habla de sus clases',
+            scene: 'Vera habla de sus clases',
             prompt: 'Di que la clase termina a las 6 y que todos eligen sus ejercicios (finir/choisir).',
             answer: 'Le cours finit à 18h et tous les étudiants choisissent leurs exercices.',
             accepted: ['finit', 'choisissent', 'finissent'],

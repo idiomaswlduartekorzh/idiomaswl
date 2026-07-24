@@ -167,7 +167,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Promesa',
-            lines: [['David:', '"I will help you prepare for the IELTS."'], ['Reported:', 'David promised ___ me prepare for the IELTS.']],
+            lines: [['Dario:', '"I will help you prepare for the IELTS."'], ['Reported:', 'Dario promised ___ me prepare for the IELTS.']],
             options: ['to help', 'helping', 'help', 'helped'],
             answer: 'to help',
             explain: 'promise + to-infinitive: "promised to help" — estructura fija del verbo de reporte.',

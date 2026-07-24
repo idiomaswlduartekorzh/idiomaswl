@@ -188,7 +188,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: completa con há, faz, daqui a, desde, até o durante.',
         type: 'freeText',
         scene: 'Situações temporais cotidianas.',
-        text: '___ uma hora que espero. / Voltarei ___ dois dias. / Moro aqui ___ 2020. / Estudei ___ uma hora. / Vou estudar ___ à meia-noite.',
+        text: '[[0]] uma hora que espero. / Voltarei [[1]] dois dias. / Moro aqui [[2]] 2020. / Estudei [[3]] uma hora. / Vou estudar [[4]] à meia-noite.',
         blanks: [
           { answer: 'Há', explain: '"Há uma hora que espero" = llevo una hora esperando.' },
           { answer: 'daqui a', explain: '"daqui a dois dias" = dentro de dos días.' },

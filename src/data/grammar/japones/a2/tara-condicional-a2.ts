@@ -184,7 +184,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma たら del verbo o adjetivo dado.',
         type: 'freeText',
         scene: 'たら形を作ってください。',
-        text: '寒い → ___ (si hiciera frío) / する → ___ (si hicieras) / 学生だ → ___ (si fueras estudiante) / もっと練習する → ___ (si practicaras más)',
+        text: '寒い → [[0]] (si hiciera frío) / する → [[1]] (si hicieras) / 学生だ → [[2]] (si fueras estudiante) / もっと練習する → [[3]] (si practicaras más)',
         blanks: [
           { answer: '寒かったら', explain: '"寒かったら" = 寒い → 寒かった + ら.' },
           { answer: 'したら', explain: '"したら" = する → した + ら. するは不規則動詞.' },

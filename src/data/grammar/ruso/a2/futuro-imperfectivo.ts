@@ -177,7 +177,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'учиться — futuro',
-            lines: [['', 'Завтра ты [[0]] [[1]] дома. (mañana tú ___ ___ en casa)']],
+            lines: [['', 'Завтра ты дома. (mañana tú [[0]] [[1]] en casa)']],
             blanks: [
               { options: ['будешь', 'буду', 'будет'], answer: 'будешь', explain: 'ты → будешь.' },
               { options: ['учиться', 'учишься', 'учился'], answer: 'учиться', explain: 'El infinitivo permanece: учиться.' },
