@@ -1,24 +1,17 @@
 'use client';
 
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ExamReport } from '@/components/ExamReport';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeToeflMock } from '@/lib/labs/exam-bridge/toefl';
+import { Timer, SkillTabs, countWords } from '@/components/exam-runner/primitives';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
   MCQQuestion, WriteQuestion, SpeakQuestion, MultiSelectQuestion,
 } from '@/data/mocks/types';
-
-// ── Helpers ───────────────────────────────────────────────────────────────────
-
-function formatTime(secs: number) {
-  return `${Math.floor(secs/60).toString().padStart(2,'0')}:${(secs%60).toString().padStart(2,'0')}`;
-}
-function countWords(t: string) { return t.trim().split(/\s+/).filter(Boolean).length; }
-function norm(s: string) { return s.trim().toLowerCase().replace(/[.,!?;:'"]/g,''); }
 
 const SKILL_ORDER = ['reading','listening','speaking','writing'];
 const SKILL_LABEL: Record<string,string> = {
@@ -44,27 +37,6 @@ type SpeakMap = Record<string, string>;
 type BandMap  = Record<string, number>;
 
 interface AllAnswers { mcq: MCQMap; ms: MSMap; write: WriteMap; speak: SpeakMap; }
-
-// ── Timer ─────────────────────────────────────────────────────────────────────
-
-function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: () => void }) {
-  const [secs, setSecs] = useState(totalSecs);
-  const ref = useRef(onExpire); ref.current = onExpire;
-  useEffect(() => {
-    const id = setInterval(() => setSecs(p => {
-      if (p <= 1) { clearInterval(id); ref.current(); return 0; }
-      return p - 1;
-    }), 1000);
-    return () => clearInterval(id);
-  }, []);
-  const urgent = secs < 300;
-  return (
-    <div className={`prac-timer${urgent?' prac-timer--urgent':''}`}>
-      <span className="prac-timer__label">Tiempo</span>
-      <span className="prac-timer__val">{formatTime(secs)}</span>
-    </div>
-  );
-}
 
 // ── MCQ renderer ──────────────────────────────────────────────────────────────
 
@@ -241,28 +213,6 @@ function SectionPanel({ section, ans, handlers }: {
       <p className="ielts-section-panel__title">{section.title}</p>
       <p className="ielts-section-panel__instructions">{section.instructions}</p>
       {questionsEl}
-    </div>
-  );
-}
-
-// ── Skill tabs ────────────────────────────────────────────────────────────────
-
-function SkillTabs({ skills, active, onSelect, progress }: {
-  skills: string[]; active: string; onSelect: (s:string)=>void;
-  progress: Record<string,{done:number;total:number}>;
-}) {
-  return (
-    <div className="ielts-skill-tabs">
-      {skills.map(skill => {
-        const p = progress[skill];
-        return (
-          <button key={skill} onClick={()=>onSelect(skill)}
-            className={`ielts-skill-tab${active===skill?' ielts-skill-tab--active':''}`}>
-            <span>{SKILL_LABEL[skill]??skill}</span>
-            {p && <span className="ielts-skill-tab__count">{p.done}/{p.total}</span>}
-          </button>
-        );
-      })}
     </div>
   );
 }
@@ -542,7 +492,7 @@ export default function TOEFLPracticeClient({ exam, mock }: { exam: Exam; mock: 
         </div>
       </header>
 
-      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} />
+      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={SKILL_LABEL} />
 
       <div className="ielts-exam-body">
         {activeSkill==='listening' && listeningAudioUrl && (

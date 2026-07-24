@@ -7,7 +7,11 @@ export type QuestionType =
   | 'formgroup'
   | 'tablegroup'
   | 'multiselect'
-  | 'matching';
+  | 'matching'
+  // TOEFL iBT 2026 task types
+  | 'wordcomplete'
+  | 'sentencebuild'
+  | 'repeat';
 
 // ── Existing types ────────────────────────────────────────────────────────────
 
@@ -18,6 +22,7 @@ export interface MCQQuestion {
   stimulus?: string;
   stimulusLabel?: string;
   stimulusStyle?: 'notice' | 'sign' | 'dialog-box'; // visual treatment of stimulus
+  audioUrl?: string;   // per-item audio prompt (e.g. TOEFL 2026 "Listen and Choose a Response")
   text: string;
   options: string[];
   answer: number; // 0-indexed
@@ -125,6 +130,49 @@ export interface MatchingGroupQuestion {
   endings: { letter: string; text: string }[];
 }
 
+// ── TOEFL iBT 2026 task types ──────────────────────────────────────────────────
+
+// Complete the Words (Reading). A short text/sentence with word gaps that already
+// show some given letters; the test-taker completes each word. Machine scored.
+export interface WordCompleteBlank {
+  num: number;
+  prefix?: string;   // letters shown before the gap, e.g. "lib" for "library"
+  suffix?: string;   // letters shown after the gap (rare)
+  answer: string;    // the full word (case-insensitive exact match)
+}
+
+export interface WordCompleteQuestion {
+  type: 'wordcomplete';
+  id: string;
+  part: number;
+  qRange?: [number, number];
+  instructions?: string;
+  template: string;  // text with {{n}} markers, use \n for line breaks
+  blanks: WordCompleteBlank[];
+}
+
+// Build a Sentence (Writing). Scrambled word/chunk tiles the test-taker orders
+// into a single grammatical sentence. Machine scored (exact order).
+export interface SentenceBuildQuestion {
+  type: 'sentencebuild';
+  id: string;
+  part: number;
+  prompt?: string;   // optional context/instruction shown above the tiles
+  tiles: string[];   // words/chunks shown in scrambled order
+  answer: string[];  // correct ordering (a permutation of tiles)
+}
+
+// Listen and Repeat (Speaking). An audio-prompt of a sentence the test-taker
+// must repeat aloud. AI scored in the real exam; self-assessed here.
+export interface RepeatQuestion {
+  type: 'repeat';
+  id: string;
+  part: number;
+  itemNumber: number;
+  audioUrl?: string;      // audio of the sentence to repeat (may not exist yet)
+  targetSentence: string; // the sentence to repeat (also the audio script)
+}
+
 export type Question =
   | MCQQuestion
   | FillQuestion
@@ -133,7 +181,10 @@ export type Question =
   | FormGroupQuestion
   | TableGroupQuestion
   | MultiSelectQuestion
-  | MatchingGroupQuestion;
+  | MatchingGroupQuestion
+  | WordCompleteQuestion
+  | SentenceBuildQuestion
+  | RepeatQuestion;
 
 // ── Section & exam ────────────────────────────────────────────────────────────
 
@@ -168,4 +219,7 @@ export interface MockExam {
   subtitle: string;
   timeMinutes: number;
   sections: MockSection[];
+  // Marks a mock that follows a specific official blueprint. 'toefl-2026' selects
+  // the 1–6 section scoring and the new-format task renderers; absent = legacy.
+  format?: 'toefl-2026';
 }

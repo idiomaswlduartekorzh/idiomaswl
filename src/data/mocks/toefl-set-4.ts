@@ -1,79 +1,189 @@
 import type { MockExam } from './types';
 
-// TOEFL iBT Set 4 — Writing completo (Integrated + Academic Discussion).
-// Reading/Listening/Speaking quedan en construcción, igual que otros sets
-// del catálogo (ver ielts-set-5..20). Contenido nuevo, no modifica sets
-// existentes. Ver GOAL: Motor de corrección personalizado por examen.
+// TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
+// Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
+// Migrado del formato antiguo (era stub Writing-only) al formato 2026 completo. Audios bajo /audio/toefl/set-4/.
+
 const mock: MockExam = {
   id: 'set-4',
   examSlug: 'toefl',
-  title: 'TOEFL iBT Set 4',
-  subtitle: 'Writing: Renewable Microgrids · Remote Work Monitoring',
-  timeMinutes: 50,
+  format: 'toefl-2026',
+  title: 'TOEFL iBT Set 4 (Formato 2026)',
+  subtitle: 'Complete the Words · Read in Daily Life · Academic Passage · Listening · Build a Sentence · Email · Academic Discussion · Speaking',
+  timeMinutes: 86,
   sections: [
-
-    // ─── READING — EN CONSTRUCCIÓN ───────────────────────────────────────────
     {
-      part: 1,
-      skill: 'reading',
-      comingSoon: true,
-      title: 'Reading — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente.',
-      questions: [],
-    },
-
-    // ─── LISTENING — EN CONSTRUCCIÓN ─────────────────────────────────────────
-    {
-      part: 2,
-      skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente.',
-      questions: [],
-    },
-
-    // ─── SPEAKING — EN CONSTRUCCIÓN ──────────────────────────────────────────
-    {
-      part: 3,
-      skill: 'speaking',
-      comingSoon: true,
-      title: 'Speaking — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente.',
-      questions: [],
-    },
-
-    // ─── WRITING ─────────────────────────────────────────────────────────────
-    {
-      part: 4,
-      skill: 'writing',
-      title: 'Writing Tasks',
-      instructions: 'Complete both writing tasks.',
+      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
+      instructions: 'Complete each word so the text makes sense. Some letters are given.',
       questions: [
         {
-          type: 'write',
-          id: 't4-w1',
-          part: 4,
-          taskNumber: 1,
-          stimulusLabel: 'Integrated Writing Task',
-          stimulus: `Reading passage: Solar-powered microgrids offer a promising solution for bringing electricity to rural communities that lack access to a national power grid. First, microgrids can be installed much faster than extending traditional transmission lines across long distances of difficult terrain, bringing power to remote villages within months rather than years. Second, because microgrids generate power locally, communities avoid the significant energy losses that occur when electricity travels long distances over conventional power lines. Third, several pilot projects in rural regions have reported that reliable electricity access led to measurable increases in local small business activity within the first two years.
-
-Lecture (listen and take notes): The professor raises concerns about each of these points. On installation speed, she notes that while the physical equipment can be installed quickly, many pilot projects have been delayed for years by the slower process of training local technicians to maintain and repair the systems, a step the reading ignores entirely. On energy loss, she agrees that transmission losses are avoided, but argues that battery storage systems — needed to provide power at night — are expensive and degrade within five to ten years, creating a major replacement cost that is rarely factored into these comparisons. On business growth, she points out that the pilot studies cited did not include a control group of similar villages without microgrids, so the observed growth in business activity cannot be confidently attributed to the electricity access itself.`,
-          text: 'Summarize the points made in the lecture, explaining how they cast doubt on the specific points made in the reading passage. Write approximately 150–225 words.',
-          minWords: 150,
+          type: 'wordcomplete', id: 't4-r-cw1', part: 1, qRange: [1, 6],
+          instructions: 'A student is writing to report a problem in a dormitory.',
+          template: `Dear Warden,\n\nI am writing to report a {{1}} with the heating in Room 204. It has not been {{2}} for two days, and the room is very {{3}}. I have already tried the controls, but {{4}} happens. Could someone please come to {{5}} it as soon as possible? I would be very {{6}} for a quick response, as it is difficult to study in the cold.\n\nThank you,\nMei`,
+          blanks: [
+            { num: 1, prefix: 'prob', answer: 'problem' },
+            { num: 2, prefix: 'wor', answer: 'working' },
+            { num: 3, prefix: 'co', answer: 'cold' },
+            { num: 4, prefix: 'no', answer: 'nothing' },
+            { num: 5, prefix: 'fi', answer: 'fix' },
+            { num: 6, prefix: 'grat', answer: 'grateful' },
+          ],
         },
         {
-          type: 'write',
-          id: 't4-w2',
-          part: 4,
-          taskNumber: 2,
-          stimulusLabel: 'Academic Discussion Task',
-          stimulus: `Professor's prompt: "Your professor is teaching a class on business management. Write a post responding to the following question:\n\nSome companies use software to monitor how productively remote employees are working, tracking things like keystrokes, mouse activity, and time spent on different applications. Do you think this kind of monitoring is a reasonable practice for employers? Why or why not?"\n\nStudent A (Emeka): I understand why companies want some accountability when they can't see employees in person, but this kind of tracking feels excessive to me. It measures activity, not actual output or quality of work, and constantly being watched creates stress that probably hurts performance more than it helps.\n\nStudent B (Hannah): I see it differently. If a company is paying a full salary, I think it's reasonable for them to want some evidence that people are actually working during business hours. The problem isn't monitoring itself, but companies using the data punitively instead of using it to identify employees who might need support or clearer expectations.`,
-          text: 'Write a response of at least 100 words. Contribute your own perspective to the discussion, addressing points raised by your classmates where relevant.',
-          minWords: 100,
+          type: 'wordcomplete', id: 't4-r-cw2', part: 1, qRange: [7, 12],
+          instructions: 'The following is from an article about ants.',
+          template: `Ants are among the most successful {{1}} on Earth, living in almost every part of the world. They are famous for being highly {{2}}, living in large colonies where each ant has a specific {{3}}. Some search for food, others care for the young, and the queen lays all the {{4}}. Ants communicate mainly through chemical {{5}} called pheromones. Despite their small size, ants can carry objects many times their own {{6}}.`,
+          blanks: [
+            { num: 1, prefix: 'ins', answer: 'insects' },
+            { num: 2, prefix: 'soc', answer: 'social' },
+            { num: 3, prefix: 'ro', answer: 'role' },
+            { num: 4, prefix: 'eg', answer: 'eggs' },
+            { num: 5, prefix: 'sig', answer: 'signals' },
+            { num: 6, prefix: 'we', answer: 'weight' },
+          ],
         },
       ],
     },
-
+    {
+      part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Parking notice)',
+      instructions: 'Read the notice and answer the questions.',
+      passage: `CITY CENTER CAR PARK — INFORMATION\n\n• Open 24 hours. Height limit: 2.0 meters.\n• First 30 minutes free; then $2 per hour, up to a daily maximum of $15.\n• Pay at the machines before returning to your car; keep your ticket.\n• Lost tickets are charged the daily maximum.\n• Disabled parking spaces are on Level 1, near the lift. Electric-vehicle charging is on Level 2.`,
+      passageTitle: 'Parking notice',
+      questions: [
+        { type: 'mcq', id: 't4-r-dl1', part: 2, text: 'How long can you park for free?', options: ['One hour', 'The first 30 minutes', 'All day', 'There is no free period.'], answer: 1 },
+        { type: 'mcq', id: 't4-r-dl2', part: 2, text: 'What happens if you lose your ticket?', options: ['You get a warning only.', 'Parking is free.', 'You are charged the daily maximum.', 'You must wait until the next day.'], answer: 2 },
+        { type: 'mcq', id: 't4-r-dl3', part: 2, text: 'Where is electric-vehicle charging located?', options: ['Near the entrance', 'It is not available.', 'Level 1', 'Level 2'], answer: 3 },
+      ],
+    },
+    {
+      part: 3, skill: 'reading', title: 'Reading — Read in Daily Life (Club email)',
+      instructions: 'Read the email and answer the questions.',
+      passage: `From: University Film Club\nTo: Members\nSubject: This week's screening\n\nHi everyone,\n\nThis Thursday we're showing a classic science-fiction film in Lecture Theatre 2, starting at 7:00 p.m. Doors open at 6:45. Entry is free for members; non-members pay $2 at the door, which also lets them join the club.\n\nAfter the film, we'll have a short discussion for anyone who wants to stay — it usually lasts about half an hour. Free popcorn will be available while it lasts. If you'd like to suggest a film for a future screening, reply to this email with your idea. See you Thursday!`,
+      passageTitle: 'Club email',
+      questions: [
+        { type: 'mcq', id: 't4-r-dl4', part: 3, text: 'What do non-members pay at the door?', options: ['$2, which also lets them join the club', '$7', 'A membership fee of $20', 'Nothing'], answer: 0 },
+        { type: 'mcq', id: 't4-r-dl5', part: 3, text: 'What happens after the film?', options: ['Everyone must leave immediately.', 'There is a short optional discussion of about half an hour.', 'A second film is shown.', 'The room is cleaned.'], answer: 1 },
+      ],
+    },
+    {
+      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
+      instructions: 'Read the passage and answer questions.',
+      passage: `The idea of a "biological clock" is more than a metaphor. Nearly every living thing—from bacteria to plants to humans—has an internal timekeeping system that governs the rhythm of its daily life. In humans and other animals, this system is known as the circadian rhythm, from Latin words meaning "about a day." It controls when we feel sleepy or alert, when body temperature rises and falls, and the timing of many hormones, all on a cycle lasting roughly twenty-four hours.\n\nWhat is remarkable is that this clock is internal. Even if a person is placed in a room with no windows, clocks, or any cue about the time of day, their body continues to follow an approximately twenty-four-hour cycle. The rhythm is generated by the body itself, driven by a small cluster of cells in the brain that acts as a master clock, coordinating the timing of organs throughout the body.\n\nYet the internal clock is not perfectly accurate; left to itself, it tends to drift, running slightly longer or shorter than twenty-four hours. This is where the environment comes in. The clock is reset each day, mainly by light. Bright light in the morning, detected by the eyes, signals to the master clock that the day has begun, keeping the body's rhythm aligned with the outside world. This is why light exposure has such a powerful effect on sleep, and why staring at bright screens late at night can disrupt it—the light tricks the clock into thinking it is still daytime.\n\nUnderstanding circadian rhythms has practical importance. Jet lag, for instance, is simply the discomfort of an internal clock that is out of step with a new time zone. Shift workers, whose schedules force them to be awake at night, often suffer health effects linked to a disrupted clock. Researchers have even found that the timing of meals and medicines can affect how the body responds to them. Far from being a vague notion, then, the biological clock is a precise and powerful system—one that we ignore at our own cost.`,
+      passageTitle: 'The Biological Clock',
+      questions: [
+        { type: 'mcq', id: 't4-r-ap1', part: 4, text: 'What is the "circadian rhythm"?', options: ['A yearly cycle of the seasons', 'A type of music', 'An internal timekeeping system that runs on a roughly twenty-four-hour cycle', 'A device people wear'], answer: 2 },
+        { type: 'mcq', id: 't4-r-ap2', part: 4, text: 'What shows that the clock is internal?', options: ['The clock stops when the sun sets.', 'It only works during the day.', 'People need clocks to know the time.', 'Even with no time cues, the body continues to follow an approximately 24-hour cycle.'], answer: 3 },
+        { type: 'mcq', id: 't4-r-ap3', part: 4, text: 'What mainly resets the internal clock each day?', options: ['Light detected by the eyes', 'Exercise', 'Temperature', 'Food'], answer: 0 },
+        { type: 'mcq', id: 't4-r-ap4', part: 4, text: 'Why can bright screens late at night disrupt sleep?', options: ['They are too loud.', 'The light tricks the clock into thinking it is still daytime.', 'They use too much electricity.', 'They make the room cold.'], answer: 1 },
+        { type: 'mcq', id: 't4-r-ap5', part: 4, text: 'What is jet lag, according to the passage?', options: ['A lack of sleep from noise', 'A type of illness caused by flying', 'The discomfort of an internal clock that is out of step with a new time zone', 'A fear of airplanes'], answer: 2 },
+        { type: 'multiselect', id: 't4-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
+          { letter: 'A', text: 'The circadian rhythm is generated by the body itself, driven by a master clock in the brain.' },
+          { letter: 'B', text: 'The internal clock keeps perfect time without any outside cues.' },
+          { letter: 'C', text: 'Shift workers often suffer health effects linked to a disrupted clock.' },
+          { letter: 'D', text: 'The biological clock has no practical importance.' },
+        ], selectCount: 2, answers: ['A', 'C'] },
+      ],
+    },
+    {
+      part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
+      instructions: 'You will hear a short exchange. Choose the best response. Each audio plays once.',
+      questions: [
+        { type: 'mcq', id: 't4-l-cr1', part: 5, audioUrl: '/audio/toefl/set-4/listen-choose-1.mp3', text: 'Choose the best response to what you heard.', options: ['The soup is ready.', 'She left this afternoon.', 'It\'s at the end of the hall, on the left.', 'No, I don\'t like running.'], answer: 2 },
+        { type: 'mcq', id: 't4-l-cr2', part: 5, audioUrl: '/audio/toefl/set-4/listen-choose-2.mp3', text: 'Choose the best response to what you heard.', options: ['Sure, I can give you a ride to the airport.', 'The window is broken.', 'Yes, she is a lawyer.', 'It is seven meters wide.'], answer: 0 },
+        { type: 'mcq', id: 't4-l-cr3', part: 5, audioUrl: '/audio/toefl/set-4/listen-choose-3.mp3', text: 'Choose the best response to what you heard.', options: ['The opening hours are listed on the door.', 'The bread is warm.', 'He arrives on Monday.', 'It costs four dollars.'], answer: 0 },
+        { type: 'mcq', id: 't4-l-cr4', part: 5, audioUrl: '/audio/toefl/set-4/listen-choose-4.mp3', text: 'Choose the best response to what you heard.', options: ['No, I have not tried it.', 'It is made of clay.', 'Of course — I\'ll help you carry it upstairs.', 'The bus was empty.'], answer: 2 },
+        { type: 'mcq', id: 't4-l-cr5', part: 5, audioUrl: '/audio/toefl/set-4/listen-choose-5.mp3', text: 'Choose the best response to what you heard.', options: ['She teaches history.', 'It is quite cheap.', 'Yes, I got a place on the team!', 'The library is far.'], answer: 2 },
+      ],
+    },
+    {
+      part: 6, skill: 'listening', title: 'Listening — Listen to a Conversation',
+      instructions: 'Listen to a conversation between a student and a librarian. Then answer the questions. The audio plays once.',
+      audioUrl: '/audio/toefl/set-4/conversation.mp3',
+      transcript: `STUDENT: Hi, I borrowed a book last month, and I just realized it's overdue. I'm really sorry — I completely lost track of time.\n\nLIBRARIAN: No problem, it happens all the time. Let me check your account. Okay, yes, it's about two weeks overdue. There's a small fine — ten cents a day, so that's one dollar forty.\n\nSTUDENT: Oh, that's not as bad as I feared. Can I pay it now?\n\nLIBRARIAN: You can, but actually, let me mention something. If you're a first-time offender — and I can see this is your first overdue book — we can waive the fine this once. It's a policy we have to encourage students to keep using the library rather than avoiding it out of guilt.\n\nSTUDENT: Really? That's very kind. Thank you.\n\nLIBRARIAN: You're welcome. Just try to return things on time in future. One tip: you can renew a book online up to three times, as long as no one else has requested it. So if you need more time, renew it before the due date rather than letting it go overdue.\n\nSTUDENT: I didn't know I could renew online. That's really useful. Actually, could I renew this same book? I haven't finished it.\n\nLIBRARIAN: Let me check... yes, no one's waiting for it, so I'll renew it for you now. That gives you another three weeks.`,
+      questions: [
+        { type: 'mcq', id: 't4-l-cv1', part: 6, text: 'Why does the student apologize at the start?', options: ['Her borrowed book is overdue.', 'She damaged the book.', 'She was talking loudly.', 'She lost the book.'], answer: 0 },
+        { type: 'mcq', id: 't4-l-cv2', part: 6, text: 'What does the librarian offer to do about the fine?', options: ['Double it', 'Waive it this once, since it is the student\'s first overdue book', 'Report the student', 'Ban the student from the library'], answer: 1 },
+        { type: 'mcq', id: 't4-l-cv3', part: 6, text: 'What tip does the librarian give for the future?', options: ['Return books a day early', 'Never borrow books', 'Renew a book online before the due date if more time is needed', 'Always pay the fine'], answer: 2 },
+        { type: 'mcq', id: 't4-l-cv4', part: 6, text: 'What does the librarian do for the student at the end?', options: ['Orders a new copy', 'Cancels the account', 'Charges the fine', 'Renews the same book, giving another three weeks'], answer: 3 },
+      ],
+    },
+    {
+      part: 7, skill: 'listening', title: 'Listening — Listen to an Announcement',
+      instructions: 'Listen to an announcement. Then answer the questions. The audio plays once.',
+      audioUrl: '/audio/toefl/set-4/announcement.mp3',
+      transcript: `Good morning, everyone. This is an announcement about the university's new bike-repair station, which opens this week near the main entrance. As part of our effort to encourage cycling, the station provides free tools that any student or staff member can use to make basic repairs to their bicycle — things like pumping up tires, adjusting brakes, or tightening a loose seat.\n\nThe tools are attached to the stand with cables, so they stay available for everyone; please don't remove them. There's also a free air pump. If you're not sure how to fix something, we've put up a simple illustrated guide, and there are short video tutorials linked by a code you can scan with your phone. For more serious repairs, the guide lists local bike shops that offer a student discount. We hope this makes cycling to campus easier and cheaper for everyone. Remember to always lock your bike in the designated racks. Thank you.`,
+      questions: [
+        { type: 'mcq', id: 't4-l-an1', part: 7, text: 'What is the announcement about?', options: ['A new free bike-repair station', 'A cycling competition', 'A ban on bicycles', 'A new car park'], answer: 0 },
+        { type: 'mcq', id: 't4-l-an2', part: 7, text: 'Why are the tools attached with cables?', options: ['To make them look nice', 'So they stay available for everyone and are not removed', 'To charge them with electricity', 'To measure how often they are used'], answer: 1 },
+        { type: 'mcq', id: 't4-l-an3', part: 7, text: 'What is provided for more serious repairs?', options: ['Nothing', 'A free mechanic', 'A list of local bike shops that offer a student discount', 'Free replacement bikes'], answer: 2 },
+      ],
+    },
+    {
+      part: 8, skill: 'listening', title: 'Listening — Listen to an Academic Talk',
+      instructions: 'Listen to part of a lecture. Then answer the questions. The audio plays once.',
+      audioUrl: '/audio/toefl/set-4/academic-talk.mp3',
+      transcript: `PROFESSOR: Today I want to discuss a striking idea about how we make decisions. We like to think of ourselves as rational — that we carefully weigh the evidence and choose the best option. But decades of research in psychology suggest that much of our thinking relies on mental shortcuts, which psychologists call "heuristics." These shortcuts are usually helpful, letting us make quick judgments without exhausting effort. But they can also lead us into systematic errors, or "biases."\n\nLet me give you one well-known example: the availability heuristic. This is our tendency to judge how likely something is by how easily examples come to mind. If examples are easy to recall, we assume the thing is common; if they're hard to recall, we assume it's rare. Often this works fine. But it can badly mislead us. For instance, after seeing dramatic news coverage of a plane crash, many people overestimate the danger of flying, even though, statistically, flying is far safer than driving. The vivid, memorable images of the crash are "available" in memory, so the risk feels bigger than it is.\n\nWhy do we have these shortcuts if they can mislead us? The answer is that for most of human history, and in most everyday situations, they serve us well. Quick, "good enough" judgments were often more valuable than slow, perfect calculations — especially when a fast decision could mean survival. The shortcuts are the product of a mind built for efficiency, not for statistical accuracy.\n\nThe practical value of understanding heuristics is this: once you know about a bias, you can sometimes correct for it. If you catch yourself judging a risk based on a scary headline, you can pause and ask, "What do the actual numbers say?" You won't eliminate these biases — they're too deeply built in — but awareness gives you a chance to override them when the stakes are high. In short, knowing how your mind takes shortcuts is the first step toward thinking more clearly.`,
+      questions: [
+        { type: 'mcq', id: 't4-l-at1', part: 8, text: 'What are "heuristics," as the professor describes them?', options: ['A type of memory loss', 'Mathematical formulas', 'Perfectly rational calculations', 'Mental shortcuts that allow quick judgments but can lead to systematic errors'], answer: 3 },
+        { type: 'mcq', id: 't4-l-at2', part: 8, text: 'What is the "availability heuristic"?', options: ['Always choosing the cheapest option', 'Ignoring all evidence', 'Counting exact probabilities', 'Judging how likely something is by how easily examples come to mind'], answer: 3 },
+        { type: 'mcq', id: 't4-l-at3', part: 8, text: 'Why do many people overestimate the danger of flying after a plane crash?', options: ['Flying really is very dangerous.', 'Vivid images of the crash are easily recalled, making the risk feel bigger than it is.', 'Planes are slower than cars.', 'They dislike airports.'], answer: 1 },
+        { type: 'mcq', id: 't4-l-at4', part: 8, text: 'According to the professor, why do we have these mental shortcuts?', options: ['They have no purpose.', 'They are always perfectly accurate.', 'For most situations they serve us well, since quick "good enough" judgments were often more valuable than slow, perfect ones.', 'They were invented recently.'], answer: 2 },
+        { type: 'mcq', id: 't4-l-at5', part: 8, text: 'What practical value does understanding heuristics have?', options: ['It makes decisions slower and worse.', 'It has no practical value.', 'It removes all biases forever.', 'Awareness gives you a chance to pause, check the actual numbers, and override a bias when the stakes are high.'], answer: 3 },
+      ],
+    },
+    {
+      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
+      instructions: 'Put the words in the correct order to make a grammatical sentence.',
+      questions: [
+        { type: 'sentencebuild', id: 't4-w-bs1', part: 9, tiles: ['They', 'are', 'launching', 'a new website', 'next month'], answer: ['They', 'are', 'launching', 'a new website', 'next month'] },
+        { type: 'sentencebuild', id: 't4-w-bs2', part: 9, tiles: ['the form', 'you', 'sign', 'Could', 'at the bottom'], answer: ['Could', 'you', 'sign', 'the form', 'at the bottom'] },
+        { type: 'sentencebuild', id: 't4-w-bs3', part: 9, tiles: ['gave', 'The talk', 'she', 'was', 'inspiring'], answer: ['The talk', 'she', 'gave', 'was', 'inspiring'] },
+        { type: 'sentencebuild', id: 't4-w-bs4', part: 9, tiles: ['arrives,', 'the guest', 'When', 'we\'ll', 'begin'], answer: ['When', 'the guest', 'arrives,', 'we\'ll', 'begin'] },
+        { type: 'sentencebuild', id: 't4-w-bs5', part: 9, tiles: ['is', 'This method', 'the old one', 'than', 'simpler'], answer: ['This method', 'is', 'simpler', 'than', 'the old one'] },
+        { type: 'sentencebuild', id: 't4-w-bs6', part: 9, tiles: ['the meeting,', 'Leaving', 'she', 'a message', 'sent'], answer: ['Leaving', 'the meeting,', 'she', 'sent', 'a message'] },
+      ],
+    },
+    {
+      part: 10, skill: 'writing', title: 'Writing — Write an Email',
+      instructions: 'Read the situation and write an appropriate email.',
+      questions: [
+        { type: 'write', id: 't4-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
+          stimulus: `Situation: You are a member of a sports club. You have injured your ankle and cannot take part for about a month. You want to ask whether your membership can be paused so you do not pay for the weeks you will miss.\n\nWrite an email to the sports club office.`,
+          text: 'In your email: explain your situation, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
+          minWords: 80 },
+      ],
+    },
+    {
+      part: 11, skill: 'writing', title: 'Writing — Write for an Academic Discussion',
+      instructions: 'Read the discussion and contribute your own response.',
+      questions: [
+        { type: 'write', id: 't4-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
+          stimulus: `Your professor is teaching a class on learning. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Grant: Some people believe that making mistakes is one of the best ways to learn, while others think mistakes should be avoided as much as possible. What is your view, and why?\n\nStudent (Priya): I think making mistakes is essential to learning. When we get something wrong and understand why, the lesson sticks with us far better than simply being told the right answer.\n\nStudent (Marco): I partly agree, but too many mistakes can be discouraging and waste time. It is better to learn from clear examples first and make mistakes carefully.`,
+          text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
+          minWords: 100 },
+      ],
+    },
+    {
+      part: 12, skill: 'speaking', title: 'Speaking — Listen and Repeat',
+      instructions: 'Listen to each sentence and repeat it aloud with the same pronunciation, rhythm, and intonation. The sentences grow longer.',
+      questions: [
+        { type: 'repeat', id: 't4-s-rp1', part: 12, itemNumber: 1, audioUrl: '/audio/toefl/set-4/repeat-1.mp3', targetSentence: 'The meeting starts at ten.' },
+        { type: 'repeat', id: 't4-s-rp2', part: 12, itemNumber: 2, audioUrl: '/audio/toefl/set-4/repeat-2.mp3', targetSentence: 'He washed the car and cleaned the windows.' },
+        { type: 'repeat', id: 't4-s-rp3', part: 12, itemNumber: 3, audioUrl: '/audio/toefl/set-4/repeat-3.mp3', targetSentence: 'The nurse reminded the patient to take the medicine twice a day.' },
+        { type: 'repeat', id: 't4-s-rp4', part: 12, itemNumber: 4, audioUrl: '/audio/toefl/set-4/repeat-4.mp3', targetSentence: 'The committee agreed that the festival should be held in the town square this year.' },
+        { type: 'repeat', id: 't4-s-rp5', part: 12, itemNumber: 5, audioUrl: '/audio/toefl/set-4/repeat-5.mp3', targetSentence: 'Once the software update had been installed, the computers ran faster and crashed far less often.' },
+      ],
+    },
+    {
+      part: 13, skill: 'speaking', title: 'Speaking — Take an Interview',
+      instructions: 'Answer each interview question aloud with clear, elaborated responses. You may jot notes first.',
+      questions: [
+        { type: 'speak', id: 't4-s-iv1', part: 13, partNumber: 1, text: 'Interviewer: To begin, describe a journey or trip you enjoyed. Where did you go, and what made it enjoyable?' },
+        { type: 'speak', id: 't4-s-iv2', part: 13, partNumber: 2, text: 'Interviewer: Some people prefer to buy new things, while others prefer to repair or reuse what they have. Which are you, and why? Give reasons and an example.' },
+        { type: 'speak', id: 't4-s-iv3', part: 13, partNumber: 3, text: 'Interviewer: Your university can spend money on either more scholarships for students or better sports facilities. Which would you recommend, and why? Explain how it would benefit students.' },
+        { type: 'speak', id: 't4-s-iv4', part: 13, partNumber: 4, text: 'Interviewer: Finally, make a prediction: how might the way people work and earn a living change over the next twenty years? Explain your reasoning.' },
+      ],
+    },
   ],
 };
 

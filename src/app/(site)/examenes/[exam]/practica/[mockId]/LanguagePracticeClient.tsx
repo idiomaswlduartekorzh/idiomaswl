@@ -3,6 +3,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
+import { Timer, SkillTabs } from '@/components/exam-runner/primitives';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
 import { isFreeGoetheMock } from '@/lib/labs/exam-bridge/goethe';
@@ -54,6 +55,20 @@ function sameLetterSet(a: string[], b: string[]) {
   const left = [...a].map(x => x.toUpperCase()).sort().join('|');
   const right = [...b].map(x => x.toUpperCase()).sort().join('|');
   return left === right;
+}
+
+const SKILL_ORDER = ['listening', 'reading', 'writing', 'speaking', 'general'];
+const SKILL_LABEL: Record<string, string> = {
+  listening: 'Listening', reading: 'Reading', writing: 'Writing',
+  speaking: 'Speaking', general: 'General',
+};
+
+function getSkillSections(mock: MockExam, skill: string) {
+  return mock.sections.filter(s => (s.skill ?? 'general') === skill);
+}
+
+function orderedSkills(mock: MockExam) {
+  return SKILL_ORDER.filter(sk => mock.sections.some(s => (s.skill ?? 'general') === sk));
 }
 
 function getObjectiveWeight(mock: MockExam, section: MockSection) {
@@ -855,17 +870,15 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
 type Phase = 'intro' | 'exam' | 'results';
 
 export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+  const skills = orderedSkills(mock);
   const [phase, setPhase] = useState<Phase>('intro');
-  const [sectionIdx, setSectionIdx] = useState(0);
+  const [activeSkill, setActiveSkill] = useState(skills[0] ?? 'reading');
   const [mcqAnswers, setMcqAnswers] = useState<Record<string, number>>({});
   const [writeAnswers, setWriteAnswers] = useState<Record<string, string>>({});
   const [speakingAnswers, setSpeakingAnswers] = useState<Record<string, string>>({});
   const [formAnswers, setFormAnswers] = useState<Record<string, Record<number, string>>>({});
   const [multiAnswers, setMultiAnswers] = useState<Record<string, string[]>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<string, Record<number, string>>>({});
-
-  const currentSection = mock.sections[sectionIdx];
-  const isLast = sectionIdx === mock.sections.length - 1;
 
   const handleMCQ = useCallback((id: string, i: number) => {
     setMcqAnswers(prev => ({ ...prev, [id]: i }));
@@ -901,9 +914,27 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     setFormAnswers({});
     setMultiAnswers({});
     setMatchAnswers({});
-    setSectionIdx(0);
+    setActiveSkill(skills[0] ?? 'reading');
     setPhase('intro');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const progressMap = Object.fromEntries(skills.map(sk => {
+    let done = 0, total = 0;
+    for (const sec of getSkillSections(mock, sk)) {
+      for (const q of sec.questions) {
+        if (q.type === 'mcq' || q.type === 'dialog') { total++; if (mcqAnswers[q.id] !== undefined) done++; }
+        else if (q.type === 'formgroup') { for (const b of q.blanks) { total++; if ((formAnswers[q.id]?.[b.num] ?? '').trim()) done++; } }
+        else if (q.type === 'multiselect') { total++; if ((multiAnswers[q.id] ?? []).length > 0) done++; }
+        else if (q.type === 'matching') { for (const it of q.items) { total++; if (matchAnswers[q.id]?.[it.num]) done++; } }
+        else if (q.type === 'write') { total++; if ((writeAnswers[q.id] ?? '').trim()) done++; }
+        else if (q.type === 'speak') { total++; if ((speakingAnswers[q.id] ?? '').trim()) done++; }
+      }
+    }
+    return [sk, { done, total }];
+  }));
+  const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
+  const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
 
   // Save to Supabase when entering results phase
   useEffect(() => {
@@ -996,7 +1027,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
               </div>
             ))}
           </div>
-          <button onClick={() => setPhase('exam')} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
+          <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
             Comenzar práctica
           </button>
           <Link href={`/examenes/${exam.slug}`} className="btn btn-ghost btn-sm" style={{ marginTop: '0.5rem' }}>
@@ -1007,75 +1038,65 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     );
   }
 
+  const activeSections = getSkillSections(mock, activeSkill);
+  const unanswered = totalQs - totalAnswered;
+
   return (
-    <div className="prac-shell">
-      {/* Section tabs */}
-      <div className="lang-section-tabs">
-        {mock.sections.map((s, i) => {
-          // Build a compact unique label: abbreviate skill group + part number
-          const base = s.title.split(/\s+[–-]\s+/)[0].trim();
-          const partMatch = s.title.match(/Part\s+(\d+)/i);
-          const partSuffix = partMatch ? ` P${partMatch[1]}` : '';
-          const shortBase = base
-            .replace('Reading & Use of English', 'R&UoE')
-            .replace('Compréhension de l\'oral', 'CO')
-            .replace('Compréhension des écrits', 'CE')
-            .replace('Production écrite', 'PE')
-            .replace('Production orale', 'PO')
-            .replace('Listening', 'Listening')
-            .replace('Writing', 'Writing')
-            .replace('Speaking', 'Speaking');
-          const label = shortBase + (partSuffix && !shortBase.includes('P') ? partSuffix : '');
-          return (
-            <button
-              key={`tab-${i}`}
-              onClick={() => setSectionIdx(i)}
-              className={`lang-section-tab${i === sectionIdx ? ' lang-section-tab--active' : ''}`}
-              style={i === sectionIdx ? { borderColor: exam.color, color: exam.color } : {}}
-            >
-              <span className="lang-section-tab__num">{String(i + 1).padStart(2, '0')}</span>
-              <span className="lang-section-tab__label">{label}</span>
-            </button>
-          );
-        })}
-      </div>
+    <div className="prac-shell prac-shell--exam" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+      <header className="prac-topbar" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+        <div className="prac-topbar__left">
+          <Link href={`/examenes/${exam.slug}`} className="prac-topbar__back">{exam.name}</Link>
+          <span className="prac-topbar__title">{mock.title}</span>
+        </div>
+        <div className="prac-topbar__right">
+          <span className="ielts-topbar__progress">{totalAnswered}/{totalQs}</span>
+          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase('results')} />
+        </div>
+      </header>
 
-      {/* Current section */}
-      <SectionView
-        section={currentSection}
-        mcqAnswers={mcqAnswers}
-        writeAnswers={writeAnswers}
-        speakingAnswers={speakingAnswers}
-        formAnswers={formAnswers}
-        multiAnswers={multiAnswers}
-        matchAnswers={matchAnswers}
-        onMCQ={handleMCQ}
-        onWrite={handleWrite}
-        onSpeak={handleSpeak}
-        onForm={handleForm}
-        onMulti={handleMulti}
-        onMatch={handleMatch}
-        showResults={false}
-      />
+      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={SKILL_LABEL} />
 
-      {/* Navigation */}
-      <div className="lang-nav-bar">
-        <button
-          onClick={() => setSectionIdx(i => Math.max(0, i - 1))}
-          disabled={sectionIdx === 0}
-          className="btn btn-ghost btn-sm"
-        >
-          ← Anterior
-        </button>
-        {isLast ? (
-          <button onClick={() => setPhase('results')} className="btn btn-sm" style={{ background: exam.color, color: '#fff', border: 'none' }}>
-            Finalizar práctica
-          </button>
-        ) : (
-          <button onClick={() => setSectionIdx(i => i + 1)} className="btn btn-sm">
-            Siguiente parte →
-          </button>
-        )}
+      <div className="ielts-exam-body">
+        {activeSections.map((sec, i) => (
+          <SectionView
+            key={`${sec.part}-${i}`}
+            section={sec}
+            mcqAnswers={mcqAnswers}
+            writeAnswers={writeAnswers}
+            speakingAnswers={speakingAnswers}
+            formAnswers={formAnswers}
+            multiAnswers={multiAnswers}
+            matchAnswers={matchAnswers}
+            onMCQ={handleMCQ}
+            onWrite={handleWrite}
+            onSpeak={handleSpeak}
+            onForm={handleForm}
+            onMulti={handleMulti}
+            onMatch={handleMatch}
+            showResults={false}
+          />
+        ))}
+
+        <div className="ielts-exam-footer">
+          <div className="ielts-skill-nav__row">
+            {skills.map((sk, i) => {
+              if (sk !== activeSkill) return null;
+              const prev = skills[i - 1], next = skills[i + 1];
+              return (
+                <span key={sk} style={{ display: 'flex', gap: '0.75rem' }}>
+                  {prev && <button onClick={() => setActiveSkill(prev)} className="btn btn-ghost btn-sm">← {SKILL_LABEL[prev]}</button>}
+                  {next
+                    ? <button onClick={() => setActiveSkill(next)} className="btn btn-sm">{SKILL_LABEL[next]} →</button>
+                    : <button onClick={() => {
+                        if (unanswered > 0 && !confirm(`${unanswered} pregunta(s) sin responder. ¿Finalizar de todas formas?`)) return;
+                        setPhase('results');
+                      }} className="btn">Finalizar práctica</button>
+                  }
+                </span>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
