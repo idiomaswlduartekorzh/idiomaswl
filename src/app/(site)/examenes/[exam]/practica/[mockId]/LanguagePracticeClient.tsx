@@ -461,7 +461,9 @@ function PassageText({ text }: { text: string }) {
 // ── Transcript block (collapsible) ───────────────────────────────────────────
 
 function TranscriptBlock({ transcript }: { transcript: string }) {
-  const [open, setOpen] = useState(true);
+  // Oculto por defecto: mostrar la transcripción de entrada arruina la prueba de
+  // comprensión auditiva. Queda disponible como ayuda opcional (autoestudio / repaso).
+  const [open, setOpen] = useState(false);
   return (
     <div className="lang-section__passage">
       <button
@@ -469,7 +471,7 @@ function TranscriptBlock({ transcript }: { transcript: string }) {
         className="lang-section__passage-label"
         style={{ cursor: 'pointer', background: 'none', border: 'none', textAlign: 'left', width: '100%', display: 'flex', alignItems: 'center', gap: 6, padding: 0 }}
       >
-        <span>📄 Transcript</span>
+        <span>📄 {open ? 'Ocultar transcripción' : 'Ver transcripción (ayuda)'}</span>
         <span style={{ fontSize: '0.75em', opacity: 0.7 }}>{open ? '▲' : '▼'}</span>
       </button>
       {open && (
