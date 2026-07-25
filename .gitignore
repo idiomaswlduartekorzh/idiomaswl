@@ -58,15 +58,11 @@ public/assets/korean/step017/
 public/assets/korean/step018/
 public/assets/korean/step019/
 
-# Audio de simulacros (IELTS, TOEFL, CILS, CELPE, TOPIK, Goethe, DELF) y práctica
-# escucha (it/de) — ~450MB. Se sirven desde el CDN (Supabase Storage) vía
-# NEXT_PUBLIC_EXAM_AUDIO_BASE (ver src/lib/examAudio.ts). Local para dev, NO se commitean.
-public/audio/toefl/
-public/audio/ielts/
-public/audio/cils/
-public/audio/celpe-bras/
-public/audio/topik/
+# Audio de simulacros: TOEFL, IELTS, CILS, CELPE, TOPIK, DELF ahora se COMMITEAN
+# (comprimidos a 64k mono, ~248MB) y se sirven directo desde Vercel como estáticos
+# en /audio/… El resolver src/lib/examAudio.ts los toma del local si no hay CDN.
+# Goethe (aún sin audio) y práctica escucha it/de (aleman/italiano — otra función,
+# no cableada) siguen fuera del repo.
 public/audio/goethe/
-public/audio/delf/
 public/audio/aleman/
 public/audio/italiano/
