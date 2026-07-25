@@ -4,6 +4,7 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { Timer, SkillTabs } from '@/components/exam-runner/primitives';
+import { resolveAudioUrl } from '@/lib/examAudio';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
 import { isFreeGoetheMock } from '@/lib/labs/exam-bridge/goethe';
@@ -160,7 +161,7 @@ function MediaPlayer({ url }: { url: string }) {
     <div className="lang-media lang-media--audio">
       <audio
         ref={audioRef}
-        src={url}
+        src={resolveAudioUrl(url)}
         onTimeUpdate={() => setCurrent(audioRef.current?.currentTime ?? 0)}
         onLoadedMetadata={() => setDuration(audioRef.current?.duration ?? 0)}
         onEnded={() => setPlaying(false)}
@@ -232,7 +233,7 @@ function FormGroupRenderer({
       <p className="lang-q__label">{q.groupLabel}</p>
       {q.title && <p className="lang-q__title">{q.title}</p>}
       {q.example && <p className="lang-q__example">Ejemplo: {q.example}</p>}
-      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" />}
+      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" loading="lazy" decoding="async" />}
       <div className="lang-formgroup">
         {parts.map((part, idx) => {
           const match = part.match(/^\{\{(\d+)\}\}$/);
@@ -343,7 +344,7 @@ function WriteRenderer({
   return (
     <div className="lang-q lang-q--write">
       {q.stimulusLabel && <p className="lang-q__label">{q.stimulusLabel}</p>}
-      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" />}
+      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" loading="lazy" decoding="async" />}
       {q.stimulus && <div className="lang-q__stimulus lang-q__stimulus--block">{q.stimulus}</div>}
       <p className="lang-q__text">{q.text}</p>
       <textarea

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { resolveAudioUrl } from '@/lib/examAudio';
 
 // ── Shared string/answer helpers ───────────────────────────────────────────────
 // Extraídos de IELTSPracticeClient/TOEFLPracticeClient, donde estaban duplicados
@@ -75,7 +76,7 @@ export function AudioPlayer({ src, label = 'Listening' }: { src?: string; label?
     <div className="ielts-audio">
       <audio
         ref={audioRef}
-        src={src}
+        src={resolveAudioUrl(src)}
         onTimeUpdate={() => setCurrent(audioRef.current?.currentTime ?? 0)}
         onLoadedMetadata={() => setDuration(audioRef.current?.duration ?? 0)}
         onEnded={() => setDone(true)}
