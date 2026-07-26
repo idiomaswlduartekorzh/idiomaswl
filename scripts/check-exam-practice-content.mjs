@@ -32,6 +32,10 @@ function assertArray(value, label, min = 1) {
   if (!Array.isArray(value) || value.length < min) fail(`${label} must contain at least ${min} item(s).`);
 }
 
+function includesOneOf(text, alternatives) {
+  return alternatives.some((alternative) => text.includes(alternative));
+}
+
 function loadTsModule(modulePath) {
   const source = fs.readFileSync(modulePath, 'utf8');
   const compiled = ts.transpileModule(source, {
@@ -154,9 +158,11 @@ function validateIeltsCoreHubsStructuredData() {
         'LearningResourceJsonLd',
         'FaqJsonLd',
         'BreadcrumbJsonLd',
-        'IELTS Academic Writing incluye Task 1',
-        'WeLearn separa formato oficial y estrategia',
         '/practica/ielts/academic',
+      ],
+      requiredAlternatives: [
+        ['IELTS Academic Writing incluye Task 1', 'IELTS Academic Writing has two tasks'],
+        ['WeLearn separa formato oficial y estrategia', 'Official format versus WeLearn strategy'],
       ],
     },
   ];
@@ -170,6 +176,11 @@ function validateIeltsCoreHubsStructuredData() {
     for (const requiredText of hub.requiredTexts) {
       if (!combinedText.includes(requiredText)) {
         fail(`${hub.label} must include "${requiredText}".`);
+      }
+    }
+    for (const alternatives of hub.requiredAlternatives ?? []) {
+      if (!includesOneOf(combinedText, alternatives)) {
+        fail(`${hub.label} must include one of: ${alternatives.join(' / ')}.`);
       }
     }
   }
@@ -219,12 +230,19 @@ function validateIeltsTask1Hub() {
     'LearningResourceJsonLd',
     'FaqJsonLd',
     'BreadcrumbJsonLd',
-    'Formato oficial vs estrategia WeLearn',
-    'Respuesta explicada',
     'Writing Task 1',
   ]) {
     if (!pageText.includes(requiredText) && !contentText.includes(requiredText)) {
       fail(`IELTS Writing Task 1 hub must include "${requiredText}".`);
+    }
+  }
+  const combinedText = `${pageText}\n${contentText}`;
+  for (const alternatives of [
+    ['Formato oficial vs estrategia WeLearn', 'Official format versus WeLearn strategy'],
+    ['Respuesta explicada', 'Explained answer', 'Answer review', 'model responses'],
+  ]) {
+    if (!includesOneOf(combinedText, alternatives)) {
+      fail(`IELTS Writing Task 1 hub must include one of: ${alternatives.join(' / ')}.`);
     }
   }
 }
@@ -564,7 +582,7 @@ function validateIeltsGeneralTrainingHub() {
   if (!sitemapText.includes('/practica/ielts/general-training')) {
     fail('IELTS General Training hub must be in sitemap only after complete publication.');
   }
-  if (!ieltsHubText.includes('Academic y General Training')) {
+  if (!includesOneOf(ieltsHubText, ['Academic y General Training', 'Academic and General Training'])) {
     fail('IELTS top hub metadata/schema must represent both Academic and General Training.');
   }
   if (!ieltsHubClientText.includes('/practica/ielts/general-training')) {
@@ -836,9 +854,6 @@ function validateIeltsTask1LegacySkillReviewRoutes() {
   for (const requiredText of [
     'IELTS_ACADEMIC_URL',
     'IELTS_ACADEMIC_SAMPLE_URL',
-    'Formato oficial vs estrategia WeLearn',
-    'Foco revisado:',
-    'Respuesta explicada:',
     '/practica/ielts/academic/writing/rubrica',
     '/practica/ielts/general-training',
   ]) {
@@ -846,39 +861,49 @@ function validateIeltsTask1LegacySkillReviewRoutes() {
       fail(`IELTS Task 1 shared review block must include "${requiredText}".`);
     }
   }
+  for (const alternatives of [
+    ['Formato oficial vs estrategia WeLearn', 'Official format versus WeLearn strategy'],
+    ['Foco revisado:', 'Review focus:'],
+    ['Respuesta explicada:', 'Explained answer:'],
+  ]) {
+    if (!includesOneOf(sharedBlockText, alternatives)) {
+      fail(`IELTS Task 1 shared review block must include one of: ${alternatives.join(' / ')}.`);
+    }
+  }
 
   const routes = [
     {
       path: '/practica/ielts/academic/writing/task1/introduccion',
-      focus: 'Parafrasear el enunciado',
+      focus: ['Parafrasear el enunciado', 'Paraphrase the prompt'],
     },
     {
       path: '/practica/ielts/academic/writing/task1/overview',
-      focus: 'Seleccionar los rasgos principales',
+      focus: ['Seleccionar los rasgos principales', 'Select the main features'],
     },
     {
       path: '/practica/ielts/academic/writing/task1/tendencias',
-      focus: 'Distinguir tendencia global',
+      focus: ['Distinguir tendencia global', 'Distinguish the overall trend'],
     },
     {
       path: '/practica/ielts/academic/writing/task1/comparaciones',
-      focus: 'Comparar cifras relevantes',
+      component: 'ComparisonsEnglish.tsx',
+      focus: ['Comparar cifras relevantes', 'Compare relevant figures', 'compare relevant evidence'],
     },
     {
       path: '/practica/ielts/academic/writing/task1/procesos',
-      focus: 'Describir etapas en orden lógico',
+      focus: ['Describir etapas en orden lógico', 'Describe stages in logical order'],
     },
     {
       path: '/practica/ielts/academic/writing/task1/mapas',
-      focus: 'Ubicar cambios espaciales',
+      focus: ['Ubicar cambios espaciales', 'Locate spatial changes'],
     },
     {
       path: '/practica/ielts/academic/writing/task1/vocabulario',
-      focus: 'Elegir vocabulario de datos',
+      focus: ['Elegir vocabulario de datos', 'Choose precise data vocabulary', 'Choose data vocabulary'],
     },
     {
       path: '/practica/ielts/academic/writing/task1/tarea-completa',
-      focus: 'Integrar introducción',
+      focus: ['Integrar introducción', 'Integrate the introduction', 'Integrate an introduction'],
     },
   ];
 
@@ -886,7 +911,7 @@ function validateIeltsTask1LegacySkillReviewRoutes() {
     const pageDir = path.dirname(routeToPagePath(route.path));
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
-    const contentPath = path.join(pageDir, 'Content.tsx');
+    const contentPath = path.join(pageDir, route.component ?? 'Content.tsx');
     const contentText = fs.existsSync(contentPath) ? fs.readFileSync(contentPath, 'utf8') : '';
     if (pageText.includes('| Idiomas WeLearn')) {
       fail(`${route.path} metadata title must not duplicate the global Idiomas WeLearn template.`);
@@ -897,8 +922,8 @@ function validateIeltsTask1LegacySkillReviewRoutes() {
     if (!contentText.includes('Task1OfficialReviewBlock')) {
       fail(`${route.path} must render Task1OfficialReviewBlock.`);
     }
-    if (!contentText.includes(route.focus)) {
-      fail(`${route.path} must declare route-specific reviewed focus "${route.focus}".`);
+    if (!includesOneOf(contentText, route.focus)) {
+      fail(`${route.path} must declare one reviewed focus: ${route.focus.join(' / ')}.`);
     }
     if (!contentText.includes('officialFormat=')) {
       fail(`${route.path} must pass officialFormat to Task1OfficialReviewBlock.`);
@@ -921,15 +946,21 @@ function validateIeltsTask2LegacySkillReviewRoutes() {
   for (const requiredText of [
     'IELTS_ACADEMIC_URL',
     'IELTS_ACADEMIC_SAMPLE_URL',
-    'Formato oficial vs estrategia WeLearn',
-    'Foco revisado:',
-    'Respuesta explicada:',
     '/practica/ielts/academic/writing/rubrica',
     '/practica/ielts/academic/writing/task2/model-answers',
     '/practica/ielts/general-training',
   ]) {
     if (!sharedBlockText.includes(requiredText)) {
       fail(`IELTS Task 2 shared review block must include "${requiredText}".`);
+    }
+  }
+  for (const alternatives of [
+    ['Formato oficial vs estrategia WeLearn', 'Official format versus WeLearn strategy'],
+    ['Foco revisado:', 'Review focus:'],
+    ['Respuesta explicada:', 'Explained answer:'],
+  ]) {
+    if (!includesOneOf(sharedBlockText, alternatives)) {
+      fail(`IELTS Task 2 shared review block must include one of: ${alternatives.join(' / ')}.`);
     }
   }
 

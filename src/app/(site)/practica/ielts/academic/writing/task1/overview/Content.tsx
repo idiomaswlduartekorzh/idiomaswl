@@ -6,10 +6,10 @@ import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 import OverviewPracticeEngine from './OverviewPracticeEngine';
+import Task1ApprovedMapVisual from '../Task1ApprovedMapVisual';
 import {
   IELTSBarChartVisual,
   IELTSLineGraphVisual,
-  IELTSMapDiagramVisual,
   IELTSPieChartVisual,
   IELTSProcessDiagramVisual,
   IELTSTableVisual,
@@ -38,16 +38,16 @@ const LESSONS: VisualLesson[] = [
   {
     id: 'line',
     label: 'Line graph',
-    Chart: () => <IELTSLineGraphVisual variant={0} />,
+    Chart: IELTSLineGraphVisual,
     examPrompt: 'The line graph below shows the percentage of people with internet access in three regions between 2000 and 2020.',
     question: 'What story changes over time?',
     whatToLookFor: ['overall direction of each line', 'leading line', 'crossover or convergence', 'fastest change'],
     examples: [
       { title: 'Example 1', insight: 'All three regions rise.', overview: 'Overall, internet access increased in all three regions, although Region A remained the most connected throughout the period.', variant: 0 },
-      { title: 'Example 2', insight: 'The gap narrows.', overview: 'Overall, the gap between the regions narrowed considerably as the two lower-ranked regions experienced faster growth.', variant: 1 },
-      { title: 'Example 3', insight: 'One line always leads.', overview: 'Overall, Region A consistently recorded the highest levels of internet access, while Region C remained the lowest despite steady growth.', variant: 2 },
-      { title: 'Example 4', insight: 'Accelerating growth.', overview: 'Overall, the most notable feature was the rapid expansion in internet access outside the leading region.', variant: 3 },
-      { title: 'Example 5', insight: 'There is no decline.', overview: 'Overall, the graph shows a steady upward trend across all categories rather than any major fluctuation.', variant: 4 },
+      { title: 'Example 2', insight: 'Metro and tram rise while bus use falls.', overview: 'Overall, metro and tram trips increased, whereas bus use declined; metro became the most popular mode by the end of the period.', variant: 1 },
+      { title: 'Example 3', insight: 'North overtakes Central.', overview: 'Overall, cycling increased substantially in the North and South districts, while the Central district declined and lost its initial lead.', variant: 2 },
+      { title: 'Example 4', insight: 'Families become the leading group.', overview: 'Overall, family visits rose steadily, whereas visits by students and retirees decreased; families became the largest group in the later years.', variant: 3 },
+      { title: 'Example 5', insight: 'The original leader falls behind.', overview: 'Overall, Region A and Region C increased, while Region B declined; Region A replaced Region B as the leading region by 2025.', variant: 4 },
     ],
     options: [
       { correct: true, text: 'Overall, internet access rose in all three regions, with Region A remaining highest and the gap between regions becoming narrower.', reason: 'Correct: it summarises the global trend, leadership and convergence without figures.' },
@@ -64,10 +64,10 @@ const LESSONS: VisualLesson[] = [
     whatToLookFor: ['highest bar', 'lowest bar', 'similar groups', 'notable differences'],
     examples: [
       { title: 'Example 1', insight: 'Housing dominates.', overview: 'Overall, housing accounted for the largest share of spending, while health represented the smallest category.', variant: 0 },
-      { title: 'Example 2', insight: 'Food, transport and leisure form the middle group.', overview: 'Overall, spending was concentrated most heavily on housing, whereas the remaining categories were noticeably lower.', variant: 1 },
-      { title: 'Example 3', insight: 'There is no time axis.', overview: 'Overall, the chart compares relative spending levels rather than changes over time.', variant: 2 },
-      { title: 'Example 4', insight: 'Leisure exceeds food and transport.', overview: 'Overall, leisure was the second-largest item, behind housing but ahead of food and transport.', variant: 3 },
-      { title: 'Example 5', insight: 'The contrast is hierarchical.', overview: 'Overall, the data show a clear hierarchy, led by housing and ending with health.', variant: 4 },
+      { title: 'Example 2', insight: 'The library leads.', overview: 'Overall, the library was the most popular facility, while clubs were the least selected; the remaining facilities occupied intermediate positions.', variant: 1 },
+      { title: 'Example 3', insight: 'Screen time falls with age.', overview: 'Overall, average screen time declined consistently across successive age groups, with the youngest adults recording the highest figure.', variant: 2 },
+      { title: 'Example 4', insight: 'Museum A is the clear leader.', overview: 'Overall, Museum A received the most visitors by a substantial margin, whereas Museum D attracted the fewest.', variant: 3 },
+      { title: 'Example 5', insight: 'Agriculture dominates water use.', overview: 'Overall, agriculture used by far the most water, while energy and other sectors accounted for comparatively small amounts.', variant: 4 },
     ],
     options: [
       { correct: true, text: 'Overall, housing took up the largest share of household spending, while health was the smallest category.', reason: 'Correct: it selects relevant extremes without listing every bar.' },
@@ -84,10 +84,10 @@ const LESSONS: VisualLesson[] = [
     whatToLookFor: ['largest segment', 'smallest segment', 'groupings', 'overall distribution'],
     examples: [
       { title: 'Example 1', insight: 'Solar leads.', overview: 'Overall, solar energy made up the largest share of production, while other sources contributed the smallest proportion.', variant: 0 },
-      { title: 'Example 2', insight: 'Solar and wind dominate together.', overview: 'Overall, production was mainly concentrated in solar and wind power, with the remaining sources accounting for smaller shares.', variant: 1 },
-      { title: 'Example 3', insight: 'There is no time trend.', overview: 'Overall, the chart shows the distribution of energy production at one point in time rather than a trend.', variant: 2 },
-      { title: 'Example 4', insight: 'Hydro is a middle category.', overview: 'Overall, hydro occupied a middle position, below solar and wind but above other sources.', variant: 3 },
-      { title: 'Example 5', insight: 'The distribution is fairly concentrated.', overview: 'Overall, most energy came from two leading sources rather than being evenly distributed.', variant: 4 },
+      { title: 'Example 2', insight: 'Housing becomes the largest share.', overview: 'Overall, housing increased to become the largest household expense, while food declined and the other categories changed more modestly.', variant: 1 },
+      { title: 'Example 3', insight: 'Flexibility is the main reason.', overview: 'Overall, flexibility was the main reason for choosing online courses, while cost was the second most common factor and other reasons were less significant.', variant: 2 },
+      { title: 'Example 4', insight: 'The four seasons are closely balanced.', overview: 'Overall, visitor numbers were distributed relatively evenly across the seasons, although summer was marginally the most popular.', variant: 3 },
+      { title: 'Example 5', insight: 'The leading source differs by country.', overview: 'Overall, gas was the largest source in Country A, whereas coal dominated electricity generation in Country B.', variant: 4 },
     ],
     options: [
       { correct: true, text: 'Overall, solar and wind accounted for the majority of energy production, while other sources made up the smallest share.', reason: 'Correct: it groups segments and avoids exact percentages.' },
@@ -104,10 +104,10 @@ const LESSONS: VisualLesson[] = [
     whatToLookFor: ['highest group', 'lowest group', 'age pattern', 'leading country'],
     examples: [
       { title: 'Example 1', insight: 'Use falls with age.', overview: 'Overall, daily social media use declined with age in all three countries.', variant: 0 },
-      { title: 'Example 2', insight: 'The USA leads.', overview: 'Overall, the USA recorded the highest figures across every age group, while Australia generally had the lowest.', variant: 1 },
-      { title: 'Example 3', insight: 'Younger adults dominate.', overview: 'Overall, younger adults were far more likely to use social media daily than older adults.', variant: 2 },
-      { title: 'Example 4', insight: 'The pattern is consistent.', overview: 'Overall, the same age-related pattern was visible in each country.', variant: 3 },
-      { title: 'Example 5', insight: 'Do not narrate every cell.', overview: 'Overall, the table is best summarised by age trend and country ranking rather than individual cells.', variant: 4 },
+      { title: 'Example 2', insight: 'Business stays largest; Science grows fastest.', overview: 'Overall, Business attracted the most international students throughout, while Science experienced the fastest growth over the period.', variant: 1 },
+      { title: 'Example 3', insight: 'Car is consistently quickest.', overview: 'Overall, travelling by car took the least time in every city, whereas bus journeys were consistently the longest.', variant: 2 },
+      { title: 'Example 4', insight: 'Guides outperform the other facilities.', overview: 'Overall, guides received the strongest satisfaction ratings, while transport had the weakest results and the largest share of poor ratings.', variant: 3 },
+      { title: 'Example 5', insight: 'All recycling rates rise.', overview: 'Overall, recycling increased for all four materials, with paper remaining the most recycled and plastic the least recycled throughout.', variant: 4 },
     ],
     options: [
       { correct: true, text: 'Overall, daily social media use fell as age increased, and the USA recorded the highest figures in every age group.', reason: 'Correct: it identifies a cross-table pattern across rows and columns.' },
@@ -124,10 +124,10 @@ const LESSONS: VisualLesson[] = [
     whatToLookFor: ['start and end', 'number of stages', 'groupable phases', 'cycle or linear sequence'],
     examples: [
       { title: 'Example 1', insight: 'A linear process.', overview: 'Overall, the process is linear, beginning with the collection of used bottles and ending with the manufacture of new products.', variant: 0 },
-      { title: 'Example 2', insight: 'Three broad phases.', overview: 'Overall, plastic recycling involves three broad phases: collection and sorting, material preparation, and final manufacturing.', variant: 1 },
-      { title: 'Example 3', insight: 'There are no figures.', overview: 'Overall, the diagram focuses on stages in a sequence rather than quantities or trends.', variant: 2 },
-      { title: 'Example 4', insight: 'A physical transformation.', overview: 'Overall, discarded bottles are gradually transformed from waste material into reusable plastic products.', variant: 3 },
-      { title: 'Example 5', insight: 'Do not explain every step yet.', overview: 'Overall, the process moves from waste collection to industrial treatment before new items are produced.', variant: 4 },
+      { title: 'Example 2', insight: 'Coffee follows a linear production sequence.', overview: 'Overall, coffee preparation is a linear process that begins with harvesting cherries and ends with roasted beans being ground and packaged for sale.', variant: 1 },
+      { title: 'Example 3', insight: 'Water is extracted, treated and distributed.', overview: 'Overall, bottled water production starts with extraction and filtration, followed by purification, bottling and delivery to shops.', variant: 2 },
+      { title: 'Example 4', insight: 'Bricks pass through five industrial stages.', overview: 'Overall, brick manufacture is a linear process in which clay is prepared, moulded, dried and fired before delivery.', variant: 3 },
+      { title: 'Example 5', insight: 'The bee diagram is cyclical.', overview: 'Overall, the honey bee life cycle is cyclical, progressing from egg to adult before the adult stage supports the next generation.', variant: 4 },
     ],
     options: [
       { correct: true, text: 'Overall, this is a linear process in which used plastic bottles are collected, processed and finally turned into new products.', reason: 'Correct: it captures the overall structure without narrating every stage.' },
@@ -138,16 +138,16 @@ const LESSONS: VisualLesson[] = [
   {
     id: 'map',
     label: 'Map',
-    Chart: IELTSMapDiagramVisual,
+    Chart: Task1ApprovedMapVisual,
     examPrompt: 'The maps below show changes in a town centre between 1990 and 2020.',
     question: 'What is the dominant spatial transformation?',
     whatToLookFor: ['more urban or rural', 'what disappears', 'what appears', 'infrastructure changes'],
     examples: [
       { title: 'Example 1', insight: 'Urbanisation.', overview: 'Overall, the town centre became more urbanised, with open and industrial areas replaced by residential, educational and commercial facilities.', variant: 0 },
-      { title: 'Example 2', insight: 'Infrastructure expands.', overview: 'Overall, the area was redeveloped substantially, especially through new housing, a school and improved road infrastructure.', variant: 1 },
-      { title: 'Example 3', insight: 'Land use changes.', overview: 'Overall, land use shifted away from factory and parking space towards services and residential development.', variant: 2 },
-      { title: 'Example 4', insight: 'Do not describe every corner.', overview: 'Overall, the most significant change was the replacement of older facilities with more modern public and commercial spaces.', variant: 3 },
-      { title: 'Example 5', insight: 'A global comparison.', overview: 'Overall, the later map shows a denser and more developed town centre than the earlier one.', variant: 4 },
+      { title: 'Example 2', insight: 'The campus gains residential and academic facilities.', overview: 'Overall, the campus was extensively redeveloped, with the garden and lecture hall replaced by student flats and a library, while the southern facilities were modernised.', variant: 1 },
+      { title: 'Example 3', insight: 'The village shifts toward tourism.', overview: 'Overall, the coastal village became more tourist-oriented, with farmland and a fishing harbour replaced by a holiday resort and marina.', variant: 2 },
+      { title: 'Example 4', insight: 'The park adds new leisure facilities.', overview: 'Overall, the park retained much of its green space but gained new recreational facilities, including a playground, cafe and open-air stage.', variant: 3 },
+      { title: 'Example 5', insight: 'Retail functions are modernised.', overview: 'Overall, the shopping centre was modernised through the replacement of small-scale retail and transport facilities with larger commercial and parking infrastructure.', variant: 4 },
     ],
     options: [
       { correct: true, text: 'Overall, the town centre became more developed, with industrial and open areas replaced by housing, education and commercial facilities.', reason: 'Correct: it summarises the spatial transformation and change categories.' },
@@ -180,7 +180,7 @@ export default function OverviewPage() {
   }
 
   return (
-    <section className="wl-section">
+    <section className="wl-section" lang="en">
       <div className="wrap">
         <div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
@@ -200,6 +200,12 @@ export default function OverviewPage() {
             officialFormat="IELTS Academic Writing Task 1 assesses how well you describe the main features of visual information. An overview is a response strategy, not a separate official section."
             welearnStrategy="We train the overview by input type: first identify the visual story, then choose the sentence that summarises it most effectively."
             answerCheck="A strong answer mentions the dominant trend, main contrast, overall distribution, process phases or map transformation without filling the paragraph with figures."
+            relatedLinks={[
+              { href: '/practica/ielts/academic/writing/task1/introduccion', label: 'Introduction' },
+              { href: '/practica/ielts/academic/writing/task1/body-1', label: 'Body 1' },
+              { href: '/practica/ielts/academic/writing/task1/body-2', label: 'Body 2' },
+              { href: '/practica/ielts/academic/writing/task1/tendencias', label: 'Relevant trends' },
+            ]}
           />
 
           <Task1ChartTypeGuide />
@@ -306,7 +312,7 @@ export default function OverviewPage() {
             </div>
             {locked && (
               <button className="btn btn-sm" onClick={() => { setSelected(null); setLocked(false); }} style={{ marginTop: '0.9rem' }}>
-                Practise again
+                Practice again
               </button>
             )}
           </div>

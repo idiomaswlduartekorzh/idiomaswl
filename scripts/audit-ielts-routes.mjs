@@ -99,7 +99,11 @@ async function main() {
     const text = stripHtml(html);
     const normalizedText = text.toLowerCase();
     const inSitemap = sitemapText.includes(expectedCanonical);
-    const hasOfficialVsWeLearn = text.includes('Formato oficial vs estrategia WeLearn');
+    const hasOfficialVsWeLearn =
+      text.includes('Formato oficial vs estrategia WeLearn') ||
+      text.includes('Official format versus WeLearn strategy') ||
+      (normalizedText.includes('official format') &&
+        (normalizedText.includes('welearn strategy') || normalizedText.includes('welearn response strategy')));
     const hasExplainedAnswer =
       normalizedText.includes('respuesta explicada') ||
       normalizedText.includes('respuestas explicadas') ||
@@ -108,8 +112,12 @@ async function main() {
       normalizedText.includes('explicación') ||
       normalizedText.includes('explicacion') ||
       normalizedText.includes('explanation') ||
+      normalizedText.includes('explained answer') ||
+      normalizedText.includes('explained answers') ||
       normalizedText.includes('modelo explicado') ||
-      normalizedText.includes('answers and explanations');
+      normalizedText.includes('answers and explanations') ||
+      normalizedText.includes('model response') ||
+      normalizedText.includes('model answer');
 
     if (response.status !== 200) {
       fail(`${route} returned HTTP ${response.status}.`);
@@ -131,7 +139,7 @@ async function main() {
       warn(`${route} title is missing or may duplicate the global brand template.`);
     }
     if (expectsOfficialVsWeLearn(route) && !hasOfficialVsWeLearn) {
-      warn(`${route} does not expose "Formato oficial vs estrategia WeLearn" in rendered text.`);
+      warn(`${route} does not expose an official-format versus WeLearn-strategy distinction in rendered text.`);
     }
     if (route.includes('/writing') || route.includes('/reading/tipos-de-preguntas') || route.includes('/general-training')) {
       if (!hasExplainedAnswer) {

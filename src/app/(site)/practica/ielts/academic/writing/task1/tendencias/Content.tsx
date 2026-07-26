@@ -103,7 +103,7 @@ const SCENARIOS: Scenario[] = [
       { text: 'All three regions experienced significant growth in internet usage over the period.', relevant: true, explanation: 'Correct. This is the most important overall trend: a pattern shared by all three series and suitable for the overview.' },
       { text: 'North America had the highest internet penetration rate at every data point.', relevant: true, explanation: 'Correct. It highlights a constant and dominant feature that deserves mention.' },
       { text: 'Latin America\'s rate rose from 5% in 2000 to 35% in 2010.', relevant: false, explanation: 'Too specific for an overview. Exact figures belong in the detail paragraphs, not as a key trend.' },
-      { text: 'By 2020, the gap between regions had narrowed significantly compared to 2000.', relevant: true, explanation: 'Correct. Convergence is an analytically important trend that demonstrates Band 7+ thinking.' },
+      { text: 'By 2020, the gap between regions had narrowed significantly compared to 2000.', relevant: true, explanation: 'Correct. Convergence is an analytically important trend because it changes the relationship between the series.' },
       { text: 'Africa saw a slight dip in internet usage around 2007.', relevant: false, explanation: 'The data show growth only. Never describe a trend that is not visible in the chart.' },
     ],
     targetCount: 3,
@@ -184,10 +184,10 @@ const SCENARIOS: Scenario[] = [
     context: 'The line graph below shows the number of people using three forms of transport for daily commuting between 2005 and 2025.',
     observations: [
       { text: 'Car use declined overall, while cycling increased considerably.', relevant: true, explanation: 'Correct. This contrast in direction organises the complete story.' },
-      { text: 'Cycling overtook car use in 2025.', relevant: false, explanation: 'This did not happen: cycling finished above bus but remained below car.' },
+      { text: 'Cycling overtook car use in 2025.', relevant: true, explanation: 'Correct. Cycling reached 62 thousand commuters in 2025, compared with 48 thousand car users, so the crossover is a major final-period change.' },
       { text: 'Bus use changed relatively little over the period.', relevant: true, explanation: 'Correct. Relative stability provides a useful contrast with the other series.' },
       { text: 'Car use was 82,000 in 2010.', relevant: false, explanation: 'This is a single data point, not an overall trend.' },
-      { text: 'The gap between car and cycling narrowed substantially by the end.', relevant: true, explanation: 'Correct. Final convergence shows a meaningful comparative change.' },
+      { text: 'The gap between car and cycling narrowed substantially by the end.', relevant: false, explanation: 'This is true, but it repeats the more decisive crossover above. Select the crossover for the overview instead of using both observations to express the same final relationship.' },
     ],
     targetCount: 3,
   },
@@ -338,13 +338,13 @@ export default function TendenciasContent() {
 
           {/* Header */}
           <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📈 Sub-skill 3 — Trends</p>
-          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Identificar tendencias relevantes</h1>
+          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Identify relevant trends</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 0.75rem', lineHeight: 1.65, maxWidth: 600 }}>
             In IELTS Task 1, you do not describe every figure — you identify the <strong style={{ color: 'var(--ink)' }}>2–3 most important trends</strong>. Practise deciding what deserves space and what does not.
           </p>
 
           <Task1OfficialReviewBlock
-            focus="Distinguir tendencia global, punto extremo, contraste y cambio relevante."
+            focus="Distinguish the overall trend, extremes, contrasts and meaningful change."
             officialFormat="IELTS Academic Writing Task 1 may present line graphs, bar charts, tables, maps or processes. Identifying trends is an analysis skill, not a separate official task type."
             welearnStrategy="We use mini visuals to practise what to include and omit before writing a complete overview paragraph."
             answerCheck="The best selection prioritises sustained patterns and meaningful comparisons; exact figures belong in the detail paragraphs."
@@ -356,7 +356,7 @@ export default function TendenciasContent() {
 
           {/* Strategy note */}
           <div style={{ padding: '0.75rem 1rem', borderRadius: 10, background: 'rgba(15,61,140,0.05)', border: '1px solid rgba(15,61,140,0.18)', marginBottom: '1.5rem', fontSize: '0.84rem', color: 'var(--muted)', lineHeight: 1.55 }}>
-            💡 <strong style={{ color: 'var(--ink)' }}>Band 7+ rule:</strong> mention the overall pattern, the clearest extreme and the most meaningful comparison. Avoid specific figures in the overview and never invent a trend that is not shown.
+            💡 <strong style={{ color: 'var(--ink)' }}>Overview rule:</strong> mention the overall pattern, the clearest extreme and the most meaningful comparison. Avoid specific figures in the overview and never invent a trend that is not shown.
           </div>
 
           <div style={{ marginBottom: '1.5rem' }}>
@@ -456,7 +456,7 @@ export default function TendenciasContent() {
                       {showResult && (
                         <div style={{ marginTop: '0.5rem', padding: '0.5rem 0.75rem', borderRadius: 8, background: isCorrect ? 'rgba(5,150,105,0.08)' : 'rgba(220,38,38,0.06)', borderLeft: `3px solid ${isCorrect ? '#059669' : '#dc2626'}` }}>
                           <span style={{ fontSize: '0.72rem', fontWeight: 800, color: isCorrect ? '#059669' : '#dc2626', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                            {isCorrect ? '✓ Relevante' : '✗ No es prioritaria'}
+                            {isCorrect ? '✓ Relevant' : '✗ Not a priority'}
                           </span>
                           <p style={{ margin: '0.3rem 0 0', fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.55 }}>{obs.explanation}</p>
                         </div>
@@ -521,7 +521,7 @@ const TREND_PRACTICE_LEVELS: { title: string; items: TrendPracticeItem[] }[] = [
     ],
   },
   {
-    title: 'Level 3 · Draft the Band 7+ idea',
+    title: 'Level 3 · Draft the strongest overview idea',
     items: [
       { scenario: 2, question: 'Which sentence best summarises the chart?', options: ['Overall, tourist arrivals increased in all three countries.', 'Overall, arrivals rose until 2018, with Country A overtaking Country B, before all three fell sharply in 2020.', 'Overall, Country C rose from 5 to 8 million.', 'Overall, tourism grew because of better flights.'], correct: 1, explanation: 'It includes the initial trend, change in leadership and final anomaly without inventing causes.' },
       { scenario: 3, question: 'Which overview avoids both a list and interpretation?', options: ['Overall, solar rose from 4 to 100 TWh.', 'Overall, hydro was stable, while solar and wind grew, with solar recording the fastest expansion.', 'Overall, renewable energy policy was successful.', 'Overall, wind was 28 TWh in 2005.'], correct: 1, explanation: 'It summarises stability, growth and relative rate: three visible and comparable features.' },
@@ -547,8 +547,8 @@ function TrendPracticeEngine() {
 
   return (
     <section aria-labelledby="task1-trends-practice" style={{ marginTop: '2.5rem' }}>
-      <p className="eyebrow"><span className="ink-line" />Motor progresivo WeLearn</p>
-      <h2 id="task1-trends-practice" style={{ margin: '0 0 0.4rem', fontSize: '1.45rem' }}>Practica tendencias por niveles</h2>
+      <p className="eyebrow"><span className="ink-line" />WeLearn progressive engine</p>
+      <h2 id="task1-trends-practice" style={{ margin: '0 0 0.4rem', fontSize: '1.45rem' }}>Practise trends by level</h2>
       <p style={{ margin: '0 0 1.1rem', color: 'var(--muted)', lineHeight: 1.65 }}>Move from recognising a trend to combining it in an overview. The exercises use different charts and explain why an observation does or does not deserve space.</p>
       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>{TREND_PRACTICE_LEVELS.map((item, i) => <button key={item.title} type="button" className="btn btn-sm" aria-pressed={level === i} onClick={() => { setLevel(i); setIndex(0); reset(); }} style={{ flex: '1 1 180px', textAlign: 'left', whiteSpace: 'normal', opacity: level === i ? 1 : 0.68 }}><strong>{i + 1}. {item.title.split('·')[1]}</strong><br /><span style={{ fontSize: '0.72rem' }}>{scores[i]}/{item.items.length}</span></button>)}</div>
       <div className="wl-card" style={{ padding: '1.15rem', borderTop: '4px solid #0f3d8c' }}>

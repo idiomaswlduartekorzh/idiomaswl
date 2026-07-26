@@ -163,6 +163,8 @@
         "/practica/ielts/academic/writing/rubrica",
         "/practica/ielts/academic/writing/task1/introduccion",
         "/practica/ielts/academic/writing/task1/overview",
+        "/practica/ielts/academic/writing/task1/body-1",
+        "/practica/ielts/academic/writing/task1/body-2",
         "/practica/ielts/academic/writing/task1/tendencias",
         "/practica/ielts/academic/writing/task1/comparaciones",
         "/practica/ielts/academic/writing/task1/procesos",
@@ -190,7 +192,8 @@
       "plannedRoutes": [],
       "qualityGaps": [
         "route-specific prompt banks beyond the five Task 2 essay-type pilots",
-        "larger timed Writing Task 1 and Task 2 mixed review sets after the current route-level normalization pass"
+        "larger timed Writing Task 1 and Task 2 mixed review sets after the current route-level normalization pass",
+        "final rendered mobile/desktop and global build/type gate for the Task 1 Vocabulary, Cohesion and Complete Task response-architecture pass"
       ]
     },
     {

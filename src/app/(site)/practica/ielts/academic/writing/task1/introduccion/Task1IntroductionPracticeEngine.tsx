@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import type { ComponentType, ReactElement } from 'react';
+import type { ComponentType } from 'react';
 import {
   IELTSBarChartVisual,
   IELTSLineGraphVisual,

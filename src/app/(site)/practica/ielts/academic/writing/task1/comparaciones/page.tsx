@@ -4,7 +4,7 @@ import ComparisonsEnglish from './ComparisonsEnglish'
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 1 Comparisons: Charts, Tables and Data',
-  description: 'Practise IELTS Academic Writing Task 1 comparisons with original charts, tables, comparison vocabulary, guided exercises and explained answers for Band 6–7 writing.',
+  description: 'Practise IELTS Academic Writing Task 1 comparisons with original charts, tables, comparison vocabulary, guided exercises and explained answers.',
   keywords: ['IELTS Writing Task 1 comparisons', 'IELTS comparison exercises', 'IELTS bar chart comparison', 'IELTS table comparison'],
   openGraph: {
     title: 'IELTS Writing Task 1 Comparisons: Charts, Tables and Data',

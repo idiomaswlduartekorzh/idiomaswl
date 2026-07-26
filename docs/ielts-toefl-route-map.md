@@ -74,20 +74,30 @@ Status: canonical planning map
 
 ### Task 1 routes
 
-| Route | Status |
-| --- | --- |
-| `/practica/ielts/academic/writing/task1/introduccion` | live |
-| `/practica/ielts/academic/writing/task1/overview` | live |
-| `/practica/ielts/academic/writing/task1/tendencias` | live |
-| `/practica/ielts/academic/writing/task1/comparaciones` | live |
-| `/practica/ielts/academic/writing/task1/procesos` | live |
-| `/practica/ielts/academic/writing/task1/mapas` | live |
-| `/practica/ielts/academic/writing/task1/vocabulario` | live |
-| `/practica/ielts/academic/writing/task1/tarea-completa` | live |
-| `/practica/ielts/academic/writing/task1/graficos-lineales` | live |
-| `/practica/ielts/academic/writing/task1/graficos-de-barras` | live |
-| `/practica/ielts/academic/writing/task1/pie-charts` | live |
-| `/practica/ielts/academic/writing/task1/tablas` | live |
+Task 1 is organized in three deliberately separate layers. The response architecture is
+`Introduction → Overview → Body 1 → Body 2`; a third body paragraph is a conditional
+choice for unusually dense visuals, not a default IELTS requirement. Transferable
+subskills (trend selection, comparisons, vocabulary and cohesion) help a learner build
+those paragraphs. Visual-type lessons (charts, tables, processes and maps) explain what
+changes according to the input. This is a WeLearn study model; IELTS does not prescribe
+paragraph names or an exact word count per paragraph.
+
+| Route | Status | WeLearn role |
+| --- | --- | --- |
+| `/practica/ielts/academic/writing/task1/introduccion` | live | Response architecture: paraphrased opening |
+| `/practica/ielts/academic/writing/task1/overview` | live | Response architecture: overview paragraph |
+| `/practica/ielts/academic/writing/task1/body-1` | live | Response architecture: first grouped-detail paragraph |
+| `/practica/ielts/academic/writing/task1/body-2` | live | Response architecture: second grouped-detail paragraph |
+| `/practica/ielts/academic/writing/task1/tendencias` | live | Transferable subskill: selecting and describing change |
+| `/practica/ielts/academic/writing/task1/comparaciones` | live | Transferable subskill: selecting and expressing contrasts |
+| `/practica/ielts/academic/writing/task1/vocabulario` | live | Transferable subskill: visual-specific data vocabulary and cohesion engine |
+| `/practica/ielts/academic/writing/task1/procesos` | live | Visual type: process diagrams |
+| `/practica/ielts/academic/writing/task1/mapas` | live | Visual type: maps |
+| `/practica/ielts/academic/writing/task1/graficos-lineales` | live | Visual type: line graphs |
+| `/practica/ielts/academic/writing/task1/graficos-de-barras` | live | Visual type: bar charts |
+| `/practica/ielts/academic/writing/task1/pie-charts` | live | Visual type: pie charts |
+| `/practica/ielts/academic/writing/task1/tablas` | live | Visual type: tables |
+| `/practica/ielts/academic/writing/task1/tarea-completa` | live | Full response: paired timed visual tasks and final review |
 
 ### Task 2 routes
 

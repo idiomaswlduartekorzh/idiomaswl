@@ -18,7 +18,8 @@ type Task1OfficialReviewBlockProps = {
 const DEFAULT_LINKS: RelatedLink[] = [
   { href: '/practica/ielts/academic/writing/rubrica', label: 'Writing rubric' },
   { href: '/practica/ielts/academic/writing/task1', label: 'Task 1 hub' },
-  { href: '/practica/ielts/academic/writing/task2/model-answers', label: 'Model answers Task 2' },
+  { href: '/practica/ielts/academic/writing/task1/body-1', label: 'Build Body 1' },
+  { href: '/practica/ielts/academic/writing/task1/body-2', label: 'Complete Body 2' },
   { href: '/practica/ielts/general-training', label: 'Compare General Training' },
 ];
 

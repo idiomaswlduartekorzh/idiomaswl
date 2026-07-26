@@ -281,7 +281,7 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
           </p>
 
           <div className="wl-card" style={{ padding: '1rem 1.1rem', marginBottom: '1.35rem', borderRadius: 8 }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format vs WeLearn strategy</h2>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
               <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic Writing Task 1 may ask you to describe a table as visual information. A table is one possible format, not a separate official task.
             </p>

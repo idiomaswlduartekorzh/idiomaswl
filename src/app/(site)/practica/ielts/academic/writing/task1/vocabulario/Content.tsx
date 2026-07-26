@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 import { IELTSVocabularyTrendVisual } from '../Task1VisualLab';
+import Task1VocabularyPracticeEngine from '../Task1VocabularyPracticeEngine';
 
 interface Scenario {
   subject: string;
@@ -132,20 +133,43 @@ export default function VocabularioDatosContent() {
             <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>Task 1 / Data vocabulary</span>
           </div>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📚 Sub-skill 7 — Data vocabulary</p>
-          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Data vocabulary</h1>
+          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />📚 Task 1 sub-skill — Data vocabulary and cohesion</p>
+          <h1 style={{ fontSize: '1.75rem', letterSpacing: '-0.03em', margin: '0 0 0.4rem', fontWeight: 700 }}>Data vocabulary and cohesion</h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 1.25rem', lineHeight: 1.65 }}>
-            Choose the correct verb and adverb to describe the numerical change. The sentence is built in real time.
+            Choose language that matches the visual, then connect it into a precise Task 1 sentence. This route supports the overview and both detail paragraphs; it is not a list of impressive words to memorise.
           </p>
 
           <Task1OfficialReviewBlock
-            focus="Choose data vocabulary that is precise, natural and compatible with the trend."
+            focus="Choose data vocabulary and linking language that are precise, natural and compatible with the visual evidence."
             officialFormat="IELTS Academic Writing Task 1 requires clear descriptions of visual data. Vocabulary is not a separate official task; it is a quality criterion within the response."
             welearnStrategy="We train verbs, adverbs and structures to improve precision without memorising inflated phrases."
             answerCheck="The best answer matches direction, intensity and period: for example, rose sharply from A to B, not just increased."
           />
 
           <Task1ChartTypeGuide />
+
+          <div style={{ padding: '1rem', borderRadius: 8, border: '1px solid rgba(15,61,140,0.18)', background: 'rgba(15,61,140,0.045)', margin: '1.35rem 0 1.5rem' }}>
+            <h2 style={{ margin: '0 0 0.45rem', fontSize: '1.05rem' }}>Choose vocabulary by visual and paragraph purpose</h2>
+            <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.6 }}>
+              The same word is not useful in every task. Select language from the evidence and from the job the sentence must do.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: '0.65rem' }}>
+              {[
+                ['Line graph', 'movement, speed, turning points', 'rise steadily · fall sharply · level off'],
+                ['Bar chart and table', 'ranking, quantities and contrast', 'higher than · the lowest figure · roughly twice as high'],
+                ['Pie chart', 'shares and composition', 'accounted for · made up · the largest proportion'],
+                ['Process diagram', 'sequence and passive voice', 'is collected · is then filtered · finally becomes'],
+                ['Map', 'location and physical change', 'was replaced by · to the north of · was converted into'],
+                ['Across paragraphs', 'cohesion, not decoration', 'while · whereas · by contrast · respectively'],
+              ].map(([visual, purpose, language]) => (
+                <article key={visual} style={{ padding: '0.75rem', borderRadius: 8, background: 'var(--bg)', border: '1px solid var(--line-soft)' }}>
+                  <h3 style={{ margin: '0 0 0.25rem', fontSize: '0.88rem' }}>{visual}</h3>
+                  <p style={{ margin: '0 0 0.35rem', color: 'var(--muted)', fontSize: '0.78rem', lineHeight: 1.45 }}>{purpose}</p>
+                  <p style={{ margin: 0, color: '#0f3d8c', fontSize: '0.76rem', lineHeight: 1.5, fontFamily: 'var(--mono)' }}>{language}</p>
+                </article>
+              ))}
+            </div>
+          </div>
 
           <div style={{ padding: '1.1rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg-2)', marginBottom: '1.5rem' }}>
             <p style={{ margin: '0 0 0.25rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Read the visual before choosing vocabulary</p>
@@ -272,7 +296,7 @@ export default function VocabularioDatosContent() {
                 {ADVERBS.map((a, i) => (
                   <button key={i} onClick={() => !revealed && setAdverb(a)}
                     style={{ padding: '0.4rem 0.85rem', borderRadius: 8, fontSize: '0.85rem', fontWeight: 600, border: adverb === a ? '2px solid #7c3aed' : '1.5px solid var(--line-soft)', background: adverb === a ? 'rgba(124,58,237,0.1)' : 'var(--bg-2)', color: adverb === a ? '#7c3aed' : 'var(--ink)', cursor: revealed ? 'default' : 'pointer', fontFamily: 'var(--mono)' }}>
-                    {a === '' ? '(sin adverbio)' : a}
+                    {a === '' ? '(no adverb)' : a}
                   </button>
                 ))}
               </div>
@@ -297,7 +321,7 @@ export default function VocabularioDatosContent() {
                 <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.7, color: 'var(--ink)' }}>{sc.correctSentence}</p>
                 <div style={{ marginTop: '0.5rem', display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
                   <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(5,150,105,0.1)', color: '#059669', fontFamily: 'var(--mono)', fontWeight: 700 }}>Verbo: {sc.correctVerb}</span>
-                  {sc.correctAdverb && <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(124,58,237,0.1)', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 700 }}>Adverbio: {sc.correctAdverb}</span>}
+                  {sc.correctAdverb && <span style={{ fontSize: '0.72rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(124,58,237,0.1)', color: '#7c3aed', fontFamily: 'var(--mono)', fontWeight: 700 }}>Adverb: {sc.correctAdverb}</span>}
                 </div>
               </div>
               <button className="btn btn-sm" onClick={next} style={{ alignSelf: 'flex-start' }}>
@@ -305,6 +329,17 @@ export default function VocabularioDatosContent() {
               </button>
             </div>
           )}
+
+          <Task1VocabularyPracticeEngine />
+
+          <div style={{ marginTop: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.65rem' }}>
+            {[
+              ['/practica/ielts/academic/writing/task1/overview', 'Use vocabulary in an overview'],
+              ['/practica/ielts/academic/writing/task1/body-1', 'Use vocabulary in Body 1'],
+              ['/practica/ielts/academic/writing/task1/body-2', 'Use vocabulary in Body 2'],
+              ['/practica/ielts/academic/writing/task1/tarea-completa', 'Assemble a complete response'],
+            ].map(([href, label]) => <Link key={href} href={href} className="btn btn-ghost btn-sm" style={{ justifyContent: 'flex-start' }}>{label} →</Link>)}
+          </div>
         </div>
       </div>
     </section>
