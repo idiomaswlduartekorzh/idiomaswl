@@ -61,8 +61,10 @@ public/assets/korean/step019/
 # Audio de simulacros: TOEFL, IELTS, CILS, CELPE, TOPIK, DELF ahora se COMMITEAN
 # (comprimidos a 64k mono, ~248MB) y se sirven directo desde Vercel como estáticos
 # en /audio/… El resolver src/lib/examAudio.ts los toma del local si no hay CDN.
-# Goethe (aún sin audio) y práctica escucha it/de (aleman/italiano — otra función,
-# no cableada) siguen fuera del repo.
+# Goethe (aún sin audio) sigue fuera del repo.
 public/audio/goethe/
-public/audio/aleman/
-public/audio/italiano/
+# Práctica escucha alemán/italiano: se COMMITEAN los mp3 finales (listening-NN.mp3
+# y it-a1-*.mp3, comprimidos 64k mono). Los archivos fuente sin comprimir NO.
+public/audio/aleman/**/De-*.mp3
+public/audio/aleman/**/de-prueba.mp3
+public/audio/italiano/**/it-a1-*-src.mp3
