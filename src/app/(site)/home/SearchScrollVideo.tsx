@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 
 type SearchScrollVideoProps = {
   className?: string;
+  scrollRootId?: string;
   sequenceId: string;
 };
 
@@ -20,6 +21,7 @@ function getScrollStep(progress: number) {
 
 export default function SearchScrollVideo({
   className,
+  scrollRootId,
   sequenceId,
 }: SearchScrollVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -27,8 +29,9 @@ export default function SearchScrollVideo({
   useEffect(() => {
     const video = videoRef.current;
     const sequence = document.getElementById(sequenceId);
+    const scrollRoot = document.getElementById(scrollRootId ?? sequenceId);
 
-    if (!video || !sequence) {
+    if (!video || !sequence || !scrollRoot) {
       return;
     }
 
@@ -51,12 +54,27 @@ export default function SearchScrollVideo({
         return;
       }
 
-      const bounds = sequence.getBoundingClientRect();
-      const startLine = window.innerHeight * 0.48;
-      const travel = Math.max(1, bounds.height - window.innerHeight * 0.78);
-      const progress = clamp((startLine - bounds.top) / travel, 0, 1);
-      const nextTime = progress * Math.max(0, duration - 0.04);
-      const nextStep = getScrollStep(progress);
+      const mediaBounds = scrollRoot.getBoundingClientRect();
+      const sequenceBounds = sequence.getBoundingClientRect();
+      const mediaStartLine = window.innerHeight * 0.94;
+      const mediaTravel = Math.max(1, mediaBounds.height - window.innerHeight * 0.32);
+      const sequenceStartLine = window.innerHeight * 0.48;
+      const sequenceTravel = Math.max(
+        1,
+        sequenceBounds.height - window.innerHeight * 0.78,
+      );
+      const mediaProgress = clamp(
+        (mediaStartLine - mediaBounds.top) / mediaTravel,
+        0,
+        1,
+      );
+      const sequenceProgress = clamp(
+        (sequenceStartLine - sequenceBounds.top) / sequenceTravel,
+        0,
+        1,
+      );
+      const nextTime = mediaProgress * Math.max(0, duration - 0.04);
+      const nextStep = getScrollStep(sequenceProgress);
 
       if (nextStep !== lastStep) {
         sequence.dataset.scrollStep = String(nextStep);
@@ -97,7 +115,7 @@ export default function SearchScrollVideo({
       window.removeEventListener('resize', requestFrame);
       delete sequence.dataset.scrollStep;
     };
-  }, [sequenceId]);
+  }, [scrollRootId, sequenceId]);
 
   return (
     <video

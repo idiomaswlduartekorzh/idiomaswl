@@ -215,9 +215,15 @@ export default function HomePage() {
       </section>
 
       <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
+        <div className={styles.openingThread} aria-hidden="true">
+          <i />
+          <span />
+        </div>
+
         <div className={styles.searchFilm} aria-hidden="true">
           <SearchScrollVideo
             className={styles.searchVideo}
+            scrollRootId="historia"
             sequenceId="search-scroll-sequence"
           />
           <div className={styles.searchFilmWash} />
