@@ -11,6 +11,13 @@ function clamp(value: number, minimum: number, maximum: number) {
   return Math.min(maximum, Math.max(minimum, value));
 }
 
+function getScrollStep(progress: number) {
+  if (progress < 0.34) return 0;
+  if (progress < 0.56) return 1;
+  if (progress < 0.78) return 2;
+  return 3;
+}
+
 export default function SearchScrollVideo({
   className,
   sequenceId,
@@ -28,12 +35,14 @@ export default function SearchScrollVideo({
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     if (reducedMotion.matches) {
+      sequence.dataset.scrollStep = '0';
       return;
     }
 
     let animationFrame = 0;
     let duration = 0;
     let lastTime = -1;
+    let lastStep = -1;
 
     const updateFrame = () => {
       animationFrame = 0;
@@ -47,6 +56,12 @@ export default function SearchScrollVideo({
       const travel = Math.max(1, bounds.height - window.innerHeight * 0.78);
       const progress = clamp((startLine - bounds.top) / travel, 0, 1);
       const nextTime = progress * Math.max(0, duration - 0.04);
+      const nextStep = getScrollStep(progress);
+
+      if (nextStep !== lastStep) {
+        sequence.dataset.scrollStep = String(nextStep);
+        lastStep = nextStep;
+      }
 
       if (Math.abs(nextTime - lastTime) < 1 / 60) {
         return;
@@ -80,6 +95,7 @@ export default function SearchScrollVideo({
       video.removeEventListener('loadedmetadata', handleMetadata);
       window.removeEventListener('scroll', requestFrame);
       window.removeEventListener('resize', requestFrame);
+      delete sequence.dataset.scrollStep;
     };
   }, [sequenceId]);
 

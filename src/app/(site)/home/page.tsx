@@ -215,26 +215,24 @@ export default function HomePage() {
       </section>
 
       <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
+        <div className={styles.searchFilm} aria-hidden="true">
+          <SearchScrollVideo
+            className={styles.searchVideo}
+            sequenceId="search-scroll-sequence"
+          />
+          <div className={styles.searchFilmWash} />
+        </div>
+
         <div className={styles.openingInner}>
           <p className={styles.eyebrow}>La historia empieza antes de la primera clase</p>
           <h2 id="opening-title">La gente no busca “un idioma”. Busca que algo cambie.</h2>
 
           <div id="search-scroll-sequence" className={styles.searchSequence}>
             <div className={styles.searchStage} aria-hidden="true">
-              <div className={styles.searchChrome}>
-                <span />
-                <span />
-                <span />
-                <small>Lo que escribes</small>
-              </div>
               <div className={styles.searchScreen}>
-                <SearchScrollVideo
-                  className={styles.searchVideo}
-                  sequenceId="search-scroll-sequence"
-                />
                 <div className={styles.searchQueries}>
-                  <p className={styles.searchQueryOne}>profesor de inglés</p>
-                  <p className={styles.searchQueryTwo}>preparación IELTS 7.5</p>
+                  <p className={styles.searchQueryOne}>preparación IELTS 7.5</p>
+                  <p className={styles.searchQueryTwo}>profesor de inglés</p>
                   <p className={styles.searchQueryThree}>clases de alemán</p>
                   <p className={styles.searchQueryFour}>qué nivel de inglés tengo</p>
                 </div>
