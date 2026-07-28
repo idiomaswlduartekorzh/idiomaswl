@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Home.module.css';
+import SearchScrollVideo from './SearchScrollVideo';
 import {
   ANSWERS,
   EXAMS,
@@ -218,7 +219,7 @@ export default function HomePage() {
           <p className={styles.eyebrow}>La historia empieza antes de la primera clase</p>
           <h2 id="opening-title">La gente no busca “un idioma”. Busca que algo cambie.</h2>
 
-          <div className={styles.searchSequence}>
+          <div id="search-scroll-sequence" className={styles.searchSequence}>
             <div className={styles.searchStage} aria-hidden="true">
               <div className={styles.searchChrome}>
                 <span />
@@ -227,6 +228,10 @@ export default function HomePage() {
                 <small>Lo que escribes</small>
               </div>
               <div className={styles.searchScreen}>
+                <SearchScrollVideo
+                  className={styles.searchVideo}
+                  sequenceId="search-scroll-sequence"
+                />
                 <div className={styles.searchQueries}>
                   <p className={styles.searchQueryOne}>profesor de inglés</p>
                   <p className={styles.searchQueryTwo}>preparación IELTS 7.5</p>
@@ -237,13 +242,8 @@ export default function HomePage() {
                   <span>Lo que realmente buscas</span>
                   <strong>UNA META</strong>
                 </div>
-                <svg viewBox="0 0 620 420">
-                  <path d="M80 75C240 78 208 206 310 208s94-133 228-136" />
-                  <path d="M76 341c150 0 136-133 234-133s103 136 232 136" />
-                  <circle cx="310" cy="208" r="12" />
-                </svg>
               </div>
-              <p className={styles.searchStageLabel}>Secuencia preparada para movimiento por scroll</p>
+              <p className={styles.searchStageLabel}>La historia avanza contigo</p>
             </div>
 
             <div className={styles.searchSteps} aria-label="Metas comunes al aprender un idioma">
