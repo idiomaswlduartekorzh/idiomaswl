@@ -12,7 +12,6 @@ import {
   ORGANIZATION_SCHEMA,
   PRODUCT_AREAS,
   ROUTE_STEPS,
-  SKILLS,
 } from './home-content';
 
 export const metadata: Metadata = {
@@ -35,113 +34,104 @@ export const metadata: Metadata = {
 
 function ArrowIcon() {
   return (
-    <svg viewBox="0 0 20 20" aria-hidden="true">
-      <path d="M3 10h13M11.5 4.5 17 10l-5.5 5.5" />
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 12h15M14 6l6 6-6 6" />
     </svg>
   );
 }
 
-function RouteIcon({ name }: { name: string }) {
-  const paths: Record<string, React.ReactNode> = {
-    lesson: (
-      <>
-        <path d="M5 5.5h14M5 10h10M5 14.5h12" />
-        <circle cx="21" cy="10" r="3" />
-      </>
-    ),
-    practice: (
-      <>
-        <path d="M6 4v16M10 8h10M10 12h7M10 16h9" />
-        <path d="m18 5 2 2 4-4" />
-      </>
-    ),
-    feedback: (
-      <>
-        <path d="M4 5h20v14H11l-5 4v-4H4Z" />
-        <path d="m10 12 3 3 6-7" />
-      </>
-    ),
-    exam: (
-      <>
-        <rect x="6" y="4" width="16" height="20" rx="2" />
-        <path d="M10 9h8M10 13h8M10 17h5" />
-        <path d="m17 20 2 2 4-5" />
-      </>
-    ),
-  };
-
+function RecognitionScene() {
   return (
-    <svg viewBox="0 0 28 28" aria-hidden="true">
-      {paths[name]}
-    </svg>
-  );
-}
-
-function ProductVisual({ type }: { type: string }) {
-  if (type === 'lesson') {
-    return (
-      <div className={styles.lessonMock} aria-hidden="true">
-        <div className={styles.mockTop}>
-          <span>Deutsch · A1</span>
-          <span>Lección 04</span>
-        </div>
-        <strong>Ich möchte einen Kaffee.</strong>
-        <p>Quiero un café.</p>
-        <div className={styles.soundBars}>
-          {[7, 15, 22, 11, 27, 18, 8, 24, 14, 20, 10, 16].map((height, index) => (
-            <i key={index} style={{ height }} />
-          ))}
-        </div>
+    <div className={`${styles.motionScene} ${styles.recognitionScene}`} aria-hidden="true">
+      <span className={styles.sceneIndex}>01</span>
+      <div className={styles.radar}>
+        <i /><i /><i /><i />
+        <b />
+        <span className={styles.radarWordOne}>lectura</span>
+        <span className={styles.radarWordTwo}>escucha</span>
+        <span className={styles.radarWordThree}>vocabulario</span>
+        <span className={styles.radarWordFour}>uso</span>
       </div>
-    );
-  }
-
-  if (type === 'practice') {
-    return (
-      <div className={styles.practiceMock} aria-hidden="true">
-        <span className={styles.mockKicker}>Comprensión lectora</span>
-        <strong>¿Qué quiere conseguir la autora?</strong>
-        <div><i /> Explicar una decisión</div>
-        <div><i /> Comparar dos opciones</div>
-        <div><i /> Pedir más información</div>
-      </div>
-    );
-  }
-
-  if (type === 'feedback') {
-    return (
-      <div className={styles.feedbackMock} aria-hidden="true">
-        <div className={styles.feedbackLine}>
-          <span>Tu tesis</span>
-          <b>Clara</b>
-        </div>
-        <p>
-          The benefits <del>is</del> <ins>are</ins> greater when...
-        </p>
-        <div className={styles.feedbackNote}>
-          <span>Por qué</span>
-          El sujeto es plural; el verbo debe concordar.
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className={styles.examMock} aria-hidden="true">
-      <div className={styles.mockTop}>
-        <span>IELTS · Listening</span>
-        <span>Parte 1</span>
-      </div>
-      <div className={styles.examWave}>
-        {[10, 21, 14, 31, 25, 12, 34, 18, 27, 9, 23, 30, 15, 20, 11, 26].map((height, index) => (
-          <i key={index} style={{ height }} />
-        ))}
-      </div>
-      <div className={styles.examProgress}><i /></div>
-      <span className={styles.mockKicker}>Pregunta 3 de 10</span>
+      <p className={styles.sceneResult}>Un punto de partida visible</p>
     </div>
   );
 }
+
+function ConnectionScene() {
+  return (
+    <div className={`${styles.motionScene} ${styles.connectionScene}`} aria-hidden="true">
+      <span className={styles.sceneIndex}>02</span>
+      <div className={styles.wordField}>
+        <span>palabras</span>
+        <span>estructuras</span>
+        <span>contexto</span>
+        <span>intención</span>
+        <span>comprensión</span>
+        <svg viewBox="0 0 720 430">
+          <path d="M94 103C225 105 225 212 354 212S489 99 631 103" />
+          <path d="M96 333c126 0 130-121 258-121s134 121 270 121" />
+          <path d="M354 212V66M354 212v154" />
+          <circle cx="354" cy="212" r="14" />
+        </svg>
+      </div>
+      <p className={styles.sceneResult}>Una red que empieza a tener sentido</p>
+    </div>
+  );
+}
+
+function PracticeScene() {
+  return (
+    <div className={`${styles.motionScene} ${styles.practiceScene}`} aria-hidden="true">
+      <span className={styles.sceneIndex}>03</span>
+      <div className={styles.practiceFlow}>
+        <div>
+          <small>ENTENDER</small>
+          <strong>Una explicación clara</strong>
+          <span>por qué funciona</span>
+        </div>
+        <i />
+        <div>
+          <small>USAR</small>
+          <strong>Una tarea concreta</strong>
+          <span>lectura · escucha · habla · escritura</span>
+        </div>
+        <i />
+        <div>
+          <small>AJUSTAR</small>
+          <strong>Feedback para el siguiente intento</strong>
+          <span>qué mantener · qué cambiar</span>
+        </div>
+      </div>
+      <p className={styles.sceneResult}>Práctica con una razón para existir</p>
+    </div>
+  );
+}
+
+function EvidenceScene() {
+  return (
+    <div className={`${styles.motionScene} ${styles.evidenceScene}`} aria-hidden="true">
+      <span className={styles.sceneIndex}>04</span>
+      <div className={styles.scoreTarget}>
+        <span>meta</span>
+        <strong>7.5</strong>
+        <i />
+      </div>
+      <div className={styles.evidenceSheets}>
+        <div><span>IELTS</span><i /><i /><i /></div>
+        <div><span>GOETHE</span><i /><i /><i /></div>
+        <div><span>CELPE-BRAS</span><i /><i /><i /></div>
+      </div>
+      <p className={styles.sceneResult}>Progreso que puede demostrarse</p>
+    </div>
+  );
+}
+
+const STORY_SCENES = [
+  RecognitionScene,
+  ConnectionScene,
+  PracticeScene,
+  EvidenceScene,
+] as const;
 
 export default function HomePage() {
   return (
@@ -152,356 +142,291 @@ export default function HomePage() {
       />
 
       <section className={styles.hero} aria-labelledby="home-title">
-        <div className={styles.heroGrid}>
+        <div className={styles.heroWash} aria-hidden="true" />
+        <div className={styles.heroInner}>
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}>Academia de idiomas · Bucaramanga y online</p>
-            <h1 id="home-title" className={styles.heroTitle}>
-              Aprende el idioma que <span>tu meta</span> necesita.
+            <h1 id="home-title">
+              Tu meta no necesita <em>más contenido.</em>
+              <span>Necesita una ruta.</span>
             </h1>
             <p className={styles.heroDescription}>
-              WeLearn reconoce tu punto de partida y conecta clases, práctica,
-              simulacros y retroalimentación con la meta que quieres alcanzar.
+              Clases de idiomas, práctica y preparación de exámenes conectadas
+              con lo que ya sabes, lo que todavía te falta y lo que quieres lograr.
             </p>
-            <div className={styles.heroActions}>
-              <Link href="/nivel-radar" className={styles.primaryButton} data-gtm="click_nivel_radar">
-                Conoce tu nivel <ArrowIcon />
+            <div className={styles.actions}>
+              <Link href="/nivel-radar" className={styles.primaryAction}>
+                Descubre tu punto de partida <ArrowIcon />
               </Link>
-              <Link href="#entrada" className={styles.secondaryButton}>
-                Explora idiomas y exámenes
+              <Link href="#historia" className={styles.secondaryAction}>
+                Mira cómo construimos la ruta
               </Link>
             </div>
-            <p className={styles.microcopy}>
-              Sin registro · entre 4 y 40 ítems · resultado orientativo
+            <p className={styles.heroNote}>
+              Nivel Radar es orientativo y no sustituye una certificación oficial.
             </p>
           </div>
 
-          <div className={styles.heroPortraits}>
-            <div className={styles.heroOrbit} aria-hidden="true">
-              <span>goal</span>
-              <span>목표</span>
-              <span>meta</span>
-              <span>Ziel</span>
-            </div>
-            <div className={`${styles.portraitFrame} ${styles.portraitZhanna}`}>
+          <div className={styles.heroPeople} aria-label="Zhanna y José David, cofundadores de WeLearn">
+            <div className={styles.heroPersonZhanna}>
               <Image
-                src="/images/team-zhanna-korzh.png"
-                alt="Zhanna, cofundadora de Idiomas WeLearn."
+                src="/images/home/zhanna-hero-v2.png"
+                alt="Zhanna, cofundadora y directora académica de Idiomas WeLearn."
                 fill
                 priority
-                sizes="(max-width: 760px) 47vw, 310px"
-                className={styles.portraitImage}
+                sizes="(max-width: 760px) 72vw, 430px"
+                className={styles.heroPersonImage}
               />
-              <span className={styles.nameTag}>Zhanna · pedagogía</span>
             </div>
-            <div className={`${styles.portraitFrame} ${styles.portraitDavid}`}>
+            <div className={styles.heroPersonDavid}>
               <Image
-                src="/images/david-duarte.jpg"
+                src="/images/home/david-hero-v2.png"
                 alt="José David, cofundador de Idiomas WeLearn."
                 fill
                 priority
-                sizes="(max-width: 760px) 51vw, 330px"
-                className={styles.portraitImage}
+                sizes="(max-width: 760px) 72vw, 460px"
+                className={styles.heroPersonImage}
               />
-              <span className={styles.nameTag}>José David · experiencia</span>
             </div>
-            <svg className={styles.heroConnection} viewBox="0 0 560 430" aria-hidden="true">
-              <path d="M18 370C112 322 118 191 220 205c88 12 75 115 158 104 70-10 83-95 164-108" />
-              <circle cx="18" cy="370" r="5" />
-              <circle cx="542" cy="201" r="5" />
-            </svg>
+            <div className={styles.founderCaption}>
+              <span>ZHANNA + JOSÉ DAVID</span>
+              <p>Pedagogía y experiencia multilingüe para construir una ruta que tenga sentido.</p>
+            </div>
           </div>
         </div>
 
-        <div className={styles.heroIntro}>
-          <span className={styles.heroIntroLabel}>Tus guías</span>
-          <p>
-            Somos Zhanna y José David. Creamos WeLearn para que aprender un
-            idioma deje de sentirse como una colección de ejercicios y empiece
-            a tener dirección.
+        <div className={styles.heroThread} aria-hidden="true">
+          <span>Tu meta</span>
+          <i />
+          <small>scroll</small>
+        </div>
+      </section>
+
+      <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
+        <div className={styles.openingInner}>
+          <p className={styles.eyebrow}>La historia empieza antes de la primera clase</p>
+          <h2 id="opening-title">La gente no busca “un idioma”. Busca que algo cambie.</h2>
+          <div className={styles.searchVoices} aria-label="Metas comunes al aprender un idioma">
+            <blockquote>“Necesito IELTS 7.5 para estudiar.”</blockquote>
+            <blockquote>“Entiendo inglés, pero no logro hablar.”</blockquote>
+            <blockquote>“Quiero trabajar en Alemania.”</blockquote>
+            <blockquote>“No sé qué nivel tengo ni por dónde seguir.”</blockquote>
+          </div>
+          <p className={styles.openingAnswer}>
+            Por eso no empezamos mostrándote una lista de cursos. Empezamos
+            entendiendo la distancia entre <strong>dónde estás</strong> y
+            <strong> dónde quieres llegar.</strong>
           </p>
         </div>
       </section>
 
-      <section id="entrada" className={styles.intentSection} aria-labelledby="intent-title">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Empieza por tu intención</p>
-          <h2 id="intent-title">¿Qué quieres que este idioma haga posible?</h2>
+      <section id="recorrido" className={styles.story} aria-labelledby="story-title">
+        <div className={styles.storyIntro}>
+          <p className={styles.eyebrow}>El método convertido en una historia</p>
+          <h2 id="story-title">Del “no sé qué hacer” a un siguiente paso claro.</h2>
           <p>
-            Elige la meta que más se parece a la tuya. Te llevaremos a una ruta
-            que puede responderla.
+            Cada capítulo ocupa una escena completa porque cada decisión importa.
+            Aquí vivirán las piezas de movimiento: no como decoración, sino como
+            la explicación visual de lo que está ocurriendo.
           </p>
         </div>
-        <div className={styles.intentGrid}>
-          {INTENTIONS.map((intent) => (
-            <Link href={intent.href} className={styles.intentCard} key={intent.code}>
-              <span className={styles.intentCode}>{intent.code}</span>
-              <strong>{intent.label}</strong>
-              <p>{intent.description}</p>
-              <span className={styles.textLink}>Ver mi ruta <ArrowIcon /></span>
-            </Link>
-          ))}
+
+        <div className={styles.storyLine} aria-hidden="true"><i /></div>
+
+        <div className={styles.storyChapters}>
+          {ROUTE_STEPS.map((item, index) => {
+            const Scene = STORY_SCENES[index];
+            return (
+              <article
+                id={`capitulo-${item.step.toLowerCase()}`}
+                className={styles.storyChapter}
+                key={item.step}
+              >
+                <div className={styles.storyVisual}>
+                  <div className={styles.motionLabel}>
+                    <span>Escena {String(index + 1).padStart(2, '0')}</span>
+                    <small>Movimiento narrativo</small>
+                  </div>
+                  <Scene />
+                </div>
+                <div className={styles.storyCopy}>
+                  <span className={styles.chapterNumber}>{String(index + 1).padStart(2, '0')}</span>
+                  <p className={styles.chapterVerb}>{item.step}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <strong>{item.result}</strong>
+                  <Link href={item.href} className={styles.textLink}>
+                    {item.linkLabel} <ArrowIcon />
+                  </Link>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
-      <section className={styles.problemSection} aria-labelledby="problem-title">
-        <div className={styles.problemWords} aria-hidden="true">
-          <span>palabras</span>
-          <span>ejercicios</span>
-          <span>reglas</span>
-          <span>audios</span>
-          <span>listas</span>
-        </div>
-        <div className={styles.problemCopy}>
-          <p className={styles.eyebrow}>Cuando estudiar no basta</p>
-          <h2 id="problem-title">Puedes estudiar mucho y seguir sin saber qué corregir.</h2>
-          <p>
-            El problema no siempre es la disciplina. A veces no sabes cuál es
-            tu nivel real, qué habilidad está frenando tu avance o si lo que
-            practicas te acerca a tu examen, trabajo, viaje o estudio.
-          </p>
-          <ul>
-            <li>No sé realmente dónde estoy.</li>
-            <li>No sé qué habilidad necesita más trabajo.</li>
-            <li>Practico, pero no tengo una ruta.</li>
-            <li>No sé si ya estoy listo para mi meta.</li>
-          </ul>
-          <blockquote>
-            Antes de prometerte un resultado, necesitamos reconocer el punto de partida.
-          </blockquote>
-        </div>
-      </section>
-
-      <section id="reconocimiento" className={styles.routeSection} aria-labelledby="route-title">
-        <div className={styles.routeHeader}>
-          <p className={styles.eyebrow}>Del punto de partida al siguiente paso</p>
-          <h2 id="route-title">
-            Aprender no es acumular palabras. <span>Es construir conexiones.</span>
+      <section id="fundadores" className={styles.founderStory} aria-labelledby="founder-story-title">
+        <div className={styles.founderStoryCopy}>
+          <p className={styles.eyebrow}>Quiénes están detrás de la ruta</p>
+          <h2 id="founder-story-title">
+            No enseñamos desde la teoría solamente. También conocemos el camino.
           </h2>
           <p>
-            La ruta convierte una duda amplia en decisiones concretas. Todo el
-            contenido permanece visible y navegable; el movimiento solo ayuda a
-            entender la secuencia.
+            WeLearn nace del encuentro entre la pedagogía de Zhanna y los años
+            de aprendizaje disciplinado de José David. Dos experiencias
+            diferentes con una misma obsesión: que la persona entienda qué está
+            construyendo y por qué.
           </p>
         </div>
 
-        <div className={styles.routeTimeline}>
-          <div className={styles.routeRail} aria-hidden="true"><i /></div>
-          {ROUTE_STEPS.map((item, index) => (
-            <article className={styles.routeStep} key={item.step}>
-              <div className={styles.routeVisual} aria-hidden="true">
-                <span className={styles.routeNumber}>{String(index + 1).padStart(2, '0')}</span>
-                <div className={styles.fragmentCloud}>
-                  {item.fragments.map((fragment) => <i key={fragment}>{fragment}</i>)}
-                </div>
-                <svg viewBox="0 0 320 190">
-                  <path d="M56 55C115 55 112 96 162 96s49-48 104-48" />
-                  <path d="M57 137c52 0 55-41 105-41s50 46 104 46" />
-                  <circle cx="162" cy="96" r="9" />
-                </svg>
-                <strong>{item.result}</strong>
-              </div>
-              <div className={styles.routeCopy}>
-                <p className={styles.routeLabel}>{item.step}</p>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <Link href={item.href} className={styles.textLink}>
-                  {item.linkLabel} <ArrowIcon />
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        <p className={styles.disclaimer}>
-          Nivel Radar entrega un resultado orientativo. La escritura y la
-          expresión oral requieren evaluación humana; no es una certificación oficial.
-        </p>
-      </section>
-
-      <section id="habilidades" className={styles.skillsSection} aria-labelledby="skills-title">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Un mapa vivo</p>
-          <h2 id="skills-title">Un idioma no es una sola habilidad.</h2>
-          <p>
-            Comprender, construir, expresarte, interactuar y corregir forman
-            combinaciones distintas según lo que quieras lograr.
-          </p>
-        </div>
-        <div className={styles.skillMap}>
-          <div className={styles.skillCenter} aria-hidden="true">
-            <span>Tu meta</span>
+        <div id="panorama-fundadores" className={styles.founderPanorama}>
+          <div className={styles.panoramaZhanna}>
+            <Image
+              src="/images/home/zhanna-hero-v2.png"
+              alt="Zhanna Korzh, cofundadora y directora académica de Idiomas WeLearn."
+              fill
+              sizes="(max-width: 760px) 100vw, 52vw"
+              className={styles.panoramaImage}
+            />
           </div>
-          {SKILLS.map((skill, index) => (
-            <article className={styles.skillNode} key={skill.name} style={{ '--skill-index': index } as React.CSSProperties}>
-              <span>{skill.marker}</span>
-              <div>
-                <h3>{skill.name}</h3>
-                <p>{skill.detail}</p>
-              </div>
-            </article>
-          ))}
-          <svg viewBox="0 0 900 430" aria-hidden="true">
-            <path d="M450 215 170 75M450 215 690 75M450 215 785 260M450 215 580 380M450 215 240 360" />
-          </svg>
+          <div className={styles.panoramaDavid}>
+            <Image
+              src="/images/home/david-hero-v2.png"
+              alt="José David Duarte Silva, cofundador de Idiomas WeLearn."
+              fill
+              sizes="(max-width: 760px) 100vw, 52vw"
+              className={styles.panoramaImage}
+            />
+          </div>
+          <div className={styles.founderFacts}>
+            {FOUNDERS.map((founder, index) => (
+              <article key={founder.name}>
+                <span>{index === 0 ? 'PEDAGOGÍA' : 'EXPERIENCIA'}</span>
+                <h3>{founder.name}</h3>
+                <p>{founder.description}</p>
+                <small>{founder.languages.join(' · ')}</small>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section id="producto" className={styles.productSection} aria-labelledby="product-title">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Producto que puedes abrir hoy</p>
-          <h2 id="product-title">La ruta se vuelve práctica concreta.</h2>
+      <section id="plataforma" className={styles.systemSection} aria-labelledby="system-title">
+        <div className={styles.systemHeader}>
+          <p className={styles.eyebrow}>Lo que ya existe dentro de WeLearn</p>
+          <h2 id="system-title">La historia continúa dentro de la plataforma.</h2>
           <p>
-            No necesitas imaginar cómo funciona. Estos accesos llevan a
-            herramientas que ya existen en WeLearn.
+            La ruta no termina en una promesa. Se convierte en explicaciones,
+            ejercicios, práctica por habilidad, correcciones y simulacros.
           </p>
         </div>
-        <div className={styles.productGrid}>
-          {PRODUCT_AREAS.map((area) => (
-            <article className={styles.productCard} key={area.eyebrow}>
-              <div className={styles.productVisual}>
-                <span className={styles.productIcon}><RouteIcon name={area.visual} /></span>
-                <ProductVisual type={area.visual} />
-              </div>
-              <div className={styles.productCopy}>
-                <p className={styles.eyebrow}>{area.eyebrow}</p>
+        <div className={styles.systemFlow}>
+          {PRODUCT_AREAS.map((area, index) => (
+            <article key={area.title}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <div>
+                <p>{area.eyebrow}</p>
                 <h3>{area.title}</h3>
                 <p>{area.description}</p>
-                <Link href={area.href} className={styles.textLink}>
-                  {area.linkLabel} <ArrowIcon />
-                </Link>
               </div>
+              <Link href={area.href} aria-label={area.linkLabel}>
+                <ArrowIcon />
+              </Link>
             </article>
           ))}
         </div>
       </section>
 
-      <section id="idiomas" className={styles.languagesSection} aria-labelledby="languages-title">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Idiomas disponibles</p>
-          <h2 id="languages-title">Encuentra clases y práctica para tu idioma.</h2>
+      <section id="resultados" className={styles.evidenceSection} aria-labelledby="evidence-title">
+        <div className={styles.evidenceCopy}>
+          <p className={styles.eyebrow}>Resultados, no promesas vacías</p>
+          <h2 id="evidence-title">El objetivo no es completar lecciones. Es estar listo.</h2>
           <p>
-            La profundidad cambia según el idioma y el nivel. Cada página
-            muestra exactamente qué puedes hacer hoy.
+            Los certificados y reportes internacionales de nuestros estudiantes
+            serán la evidencia de este capítulo. Se publicarán anonimizados:
+            resultado visible, identidad protegida y contexto suficiente para
+            entender qué se logró.
           </p>
         </div>
-        <div className={styles.languageGrid}>
-          {LANGUAGES.map((language) => (
-            <Link href={language.href} className={styles.languageCard} key={language.name}>
-              <span className={styles.languageSymbol}>{language.symbol}</span>
-              <span className={styles.languageType}>{language.type}</span>
-              <strong>{language.name}</strong>
-              <em lang={language.name === 'Coreano' ? 'ko' : undefined}>{language.native}</em>
-              <span className={styles.textLink}>{language.label} <ArrowIcon /></span>
-            </Link>
-          ))}
+        <div className={styles.evidencePreview} aria-label="Espacio destinado a resultados verificados">
+          <div><span>IELTS</span><strong>Resultado verificado</strong><i /></div>
+          <div><span>TOEFL</span><strong>Resultado verificado</strong><i /></div>
+          <div><span>GOETHE</span><strong>Resultado verificado</strong><i /></div>
+          <p>Próximo recurso: certificados anonimizados</p>
         </div>
       </section>
 
-      <section id="examenes" className={styles.examsSection} aria-labelledby="exams-title">
-        <div className={styles.examsIntro}>
-          <p className={styles.eyebrow}>Preparación de exámenes</p>
-          <h2 id="exams-title">Entrena el examen sin perder de vista el idioma.</h2>
+      <section id="rutas" className={styles.routesSection} aria-labelledby="routes-title">
+        <div className={styles.routesIntro}>
+          <p className={styles.eyebrow}>Ahora sí: elige una puerta de entrada</p>
+          <h2 id="routes-title">¿Qué quieres que este idioma haga posible?</h2>
           <p>
-            Explora simulacros de práctica, tipos de tarea y materiales para
-            reconocer tus brechas y entrenar las habilidades que exige cada examen.
+            La misma metodología cambia de forma según tu meta. Entra por la
+            pregunta que más se parece a la tuya.
           </p>
-          <Link href="/examenes" className={styles.lightButton}>
-            Ver todo el catálogo <ArrowIcon />
-          </Link>
         </div>
-        <div className={styles.examList}>
-          {EXAMS.map((exam) => (
-            <Link href={exam.href} className={styles.examRow} key={exam.code}>
-              <span>{exam.code}</span>
-              <strong>{exam.name}</strong>
-              <em>{exam.language}</em>
+        <div className={styles.routeChoices}>
+          {INTENTIONS.map((intent) => (
+            <Link href={intent.href} key={intent.code}>
+              <span>{intent.code}</span>
+              <div>
+                <h3>{intent.label}</h3>
+                <p>{intent.description}</p>
+              </div>
               <ArrowIcon />
             </Link>
           ))}
         </div>
-        <p className={styles.examDisclaimer}>
+      </section>
+
+      <section className={styles.catalogSection} aria-labelledby="catalog-title">
+        <div className={styles.catalogIntro}>
+          <p className={styles.eyebrow}>Explora lo disponible</p>
+          <h2 id="catalog-title">Idiomas y exámenes que puedes trabajar hoy.</h2>
+          <p>
+            Cada página explica el nivel de profundidad disponible: clases,
+            práctica, tipos de tarea o simulacros.
+          </p>
+        </div>
+
+        <div className={styles.catalogColumns}>
+          <div>
+            <h3>Idiomas</h3>
+            <div className={styles.languageList}>
+              {LANGUAGES.map((language) => (
+                <Link href={language.href} key={language.name}>
+                  <span>{language.symbol}</span>
+                  <strong>{language.name}</strong>
+                  <em>{language.type}</em>
+                  <ArrowIcon />
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3>Preparación de exámenes</h3>
+            <div className={styles.examList}>
+              {EXAMS.map((exam) => (
+                <Link href={exam.href} key={exam.code}>
+                  <span>{exam.code}</span>
+                  <strong>{exam.name}</strong>
+                  <em>{exam.language}</em>
+                  <ArrowIcon />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+        <p className={styles.catalogDisclaimer}>
           WeLearn es una academia independiente. Los nombres de los exámenes
           identifican la preparación disponible y no implican patrocinio o aval.
         </p>
       </section>
 
-      <section id="equipo" className={styles.foundersSection} aria-labelledby="founders-title">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Quién construye la ruta contigo</p>
-          <h2 id="founders-title">Dos formas de conocer el camino: estudiarlo y recorrerlo.</h2>
-          <p>
-            WeLearn reúne la mirada pedagógica de Zhanna y la experiencia de
-            aprendizaje disciplinado de José David. Esa combinación define
-            cómo se reconoce una brecha, cómo se practica y cuándo hace falta una persona.
-          </p>
-        </div>
-        <div className={styles.foundersGrid}>
-          {FOUNDERS.map((founder, index) => (
-            <article className={styles.founderCard} key={founder.name}>
-              <div className={styles.founderImage}>
-                <Image
-                  src={founder.image}
-                  alt={founder.alt}
-                  fill
-                  sizes="(max-width: 760px) 100vw, 50vw"
-                  className={styles.portraitImage}
-                />
-                <span>{index === 0 ? 'Pedagogía' : 'Disciplina'}</span>
-              </div>
-              <div className={styles.founderCopy}>
-                <p className={styles.eyebrow}>{founder.lead}</p>
-                <h3>{founder.name}</h3>
-                <span className={styles.founderRole}>{founder.role}</span>
-                <p>{founder.description}</p>
-                <ul aria-label={`Idiomas de ${founder.name}`}>
-                  {founder.languages.map((language) => <li key={language}>{language}</li>)}
-                </ul>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.startSection} aria-labelledby="start-title">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Modalidad y precio</p>
-          <h2 id="start-title">Elige cómo empezar, con información clara.</h2>
-        </div>
-        <div className={styles.startGrid}>
-          <article>
-            <span className={styles.startMark}>BUC</span>
-            <h3>Presencial en Bucaramanga</h3>
-            <p>Conoce la ubicación, el formato y lo que incluye la opción presencial publicada.</p>
-            <Link href="/clases-de-ingles-bucaramanga" className={styles.textLink}>
-              Ver clases en Bucaramanga <ArrowIcon />
-            </Link>
-          </article>
-          <article>
-            <span className={styles.startMark}>ON</span>
-            <h3>Online desde donde estés</h3>
-            <p>Revisa cómo funcionan las sesiones y qué necesitas para comenzar.</p>
-            <Link href="/clases-de-idiomas" className={styles.textLink}>
-              Explorar clases online <ArrowIcon />
-            </Link>
-          </article>
-          <article>
-            <span className={styles.startMark}>$</span>
-            <h3>Planes y precios</h3>
-            <p>Consulta las opciones vigentes y qué incluye cada una.</p>
-            <Link href="/precios" className={styles.textLink}>
-              Ver planes y precios <ArrowIcon />
-            </Link>
-          </article>
-        </div>
-      </section>
-
-      <section className={styles.answersSection} aria-labelledby="answers-title">
+      <section id="preguntas" className={styles.answersSection} aria-labelledby="answers-title">
         <div className={styles.answersIntro}>
-          <p className={styles.eyebrow}>Respuestas para decidir</p>
-          <h2 id="answers-title">Respuestas claras antes de elegir.</h2>
-          <p>
-            Lo esencial sobre niveles, idiomas, exámenes, práctica, correcciones y modalidades.
-          </p>
+          <p className={styles.eyebrow}>Respuestas antes de elegir</p>
+          <h2 id="answers-title">Lo esencial, sin letra pequeña.</h2>
         </div>
         <div className={styles.answersList}>
           {ANSWERS.map((item, index) => (
@@ -518,30 +443,25 @@ export default function HomePage() {
       </section>
 
       <section className={styles.finalSection} aria-labelledby="final-title">
-        <div className={styles.finalLines} aria-hidden="true">
-          <i /><i /><i /><i />
-        </div>
-        <p className={styles.eyebrow}>Tu primer paso</p>
-        <h2 id="final-title">Empieza por saber dónde estás.</h2>
+        <div className={styles.finalThread} aria-hidden="true"><i /></div>
+        <p className={styles.eyebrow}>Tu historia empieza aquí</p>
+        <h2 id="final-title">No necesitas saber qué curso comprar. Primero necesitas saber dónde estás.</h2>
         <p>
-          Haz el Nivel Radar si quieres reconocer tu punto de partida, o
-          cuéntanos tu meta si necesitas orientación humana.
+          Haz el Nivel Radar o cuéntanos qué quieres lograr. El siguiente paso
+          debe responder a tu meta, no a una lista genérica de contenidos.
         </p>
-        <div className={styles.heroActions}>
-          <Link href="/nivel-radar" className={styles.primaryButton}>
-            Conoce tu nivel <ArrowIcon />
+        <div className={styles.actions}>
+          <Link href="/nivel-radar" className={styles.primaryAction}>
+            Conoce tu punto de partida <ArrowIcon />
           </Link>
           <a
             href="https://wa.me/573005004253?text=Hola%20WeLearn%2C%20quiero%20contarles%20mi%20meta%20con%20un%20idioma."
-            className={styles.secondaryButton}
+            className={styles.secondaryAction}
             data-gtm="click_whatsapp"
           >
-            Habla con una persona
+            Cuéntanos tu meta
           </a>
         </div>
-        <small>
-          El resultado del Radar es orientativo y no constituye una certificación oficial.
-        </small>
       </section>
     </div>
   );
