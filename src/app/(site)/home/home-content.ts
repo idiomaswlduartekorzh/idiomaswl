@@ -1,11 +1,11 @@
 export const HOME_META = {
-  title: 'Academia de idiomas en Bucaramanga y online',
+  title: 'Clases de idiomas en Bucaramanga y online',
   description:
-    'Clases de idiomas, práctica y preparación de exámenes conectadas con tu nivel y tu meta. Conoce Idiomas WeLearn en Bucaramanga y online.',
+    'Clases de inglés y otros idiomas en Bucaramanga y online, con rutas guiadas por educadores multilingües, práctica y preparación de exámenes.',
   canonical: 'https://www.idiomaswl.com/home',
-  ogTitle: 'Aprende el idioma que tu meta necesita | WeLearn',
+  ogTitle: 'Clases de idiomas que conectan tu nivel con tu meta | WeLearn',
   ogDescription:
-    'Reconoce tu punto de partida y encuentra clases, práctica y preparación de exámenes conectadas con tu meta.',
+    'Reconoce tu punto de partida y encuentra clases, práctica y preparación de exámenes guiadas por experiencia pedagógica y multilingüe.',
 } as const;
 
 export const INTENTIONS = [
@@ -301,10 +301,44 @@ export const ORGANIZATION_SCHEMA = {
       logo: 'https://www.idiomaswl.com/images/welearn-logo.png',
       description:
         'Academia de idiomas con clases, práctica y preparación de exámenes en Bucaramanga y online.',
+      founder: [
+        { '@id': 'https://www.idiomaswl.com/#zhanna-korzh' },
+        { '@id': 'https://www.idiomaswl.com/#jose-david-duarte' },
+      ],
       sameAs: [
         'https://www.instagram.com/idiomas_welearn/',
         'https://www.tiktok.com/@idiomas.welearn',
       ],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.idiomaswl.com/#zhanna-korzh',
+      name: 'Zhanna Korzh',
+      jobTitle: 'Cofundadora y directora académica',
+      worksFor: { '@id': 'https://www.idiomaswl.com/#organization' },
+      knowsLanguage: ['inglés', 'español', 'italiano', 'francés', 'ruso', 'japonés'],
+      description:
+        'Educadora multilingüe con estudios doctorales en Pedagogía. Trabaja con seis idiomas.',
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.idiomaswl.com/#jose-david-duarte',
+      name: 'José David Duarte Silva',
+      jobTitle: 'Cofundador y director general',
+      worksFor: { '@id': 'https://www.idiomaswl.com/#organization' },
+      knowsLanguage: [
+        'inglés',
+        'alemán',
+        'italiano',
+        'francés',
+        'portugués',
+        'español',
+        'ruso',
+        'japonés',
+        'coreano',
+      ],
+      description:
+        'Educador multilingüe que ha construido nueve idiomas mediante disciplina y años de práctica.',
     },
   ],
 } as const;

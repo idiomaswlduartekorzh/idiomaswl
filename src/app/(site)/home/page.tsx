@@ -147,13 +147,24 @@ export default function HomePage() {
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}>Academia de idiomas · Bucaramanga y online</p>
             <h1 id="home-title">
-              Tu meta no necesita <em>más contenido.</em>
-              <span>Necesita una ruta.</span>
+              Clases de idiomas
+              <em> que conectan</em>
+              {' '}<span>tu nivel con tu meta.</span>
             </h1>
             <p className={styles.heroDescription}>
               Clases de idiomas, práctica y preparación de exámenes conectadas
               con lo que ya sabes, lo que todavía te falta y lo que quieres lograr.
             </p>
+            <div className={styles.heroExpertise} aria-label="Experiencia multilingüe de los fundadores">
+              <article>
+                <strong>6 idiomas</strong>
+                <span>Zhanna · estudios doctorales en Pedagogía</span>
+              </article>
+              <article>
+                <strong>9 idiomas</strong>
+                <span>José David · aprendizaje disciplinado y experiencia</span>
+              </article>
+            </div>
             <div className={styles.actions}>
               <Link href="/nivel-radar" className={styles.primaryAction}>
                 Descubre tu punto de partida <ArrowIcon />
@@ -170,7 +181,7 @@ export default function HomePage() {
           <div className={styles.heroPeople} aria-label="Zhanna y José David, cofundadores de WeLearn">
             <div className={styles.heroPersonZhanna}>
               <Image
-                src="/images/home/zhanna-hero-v2.png"
+                src="/images/home/zhanna-hero-cutout-v3.png"
                 alt="Zhanna, cofundadora y directora académica de Idiomas WeLearn."
                 fill
                 priority
@@ -180,7 +191,7 @@ export default function HomePage() {
             </div>
             <div className={styles.heroPersonDavid}>
               <Image
-                src="/images/home/david-hero-v2.png"
+                src="/images/home/david-hero-cutout-v4.png"
                 alt="José David, cofundador de Idiomas WeLearn."
                 fill
                 priority
@@ -190,7 +201,7 @@ export default function HomePage() {
             </div>
             <div className={styles.founderCaption}>
               <span>ZHANNA + JOSÉ DAVID</span>
-              <p>Pedagogía y experiencia multilingüe para construir una ruta que tenga sentido.</p>
+              <p>Pedagogía y experiencia multilingüe, sin fórmulas genéricas.</p>
             </div>
           </div>
         </div>
@@ -206,12 +217,59 @@ export default function HomePage() {
         <div className={styles.openingInner}>
           <p className={styles.eyebrow}>La historia empieza antes de la primera clase</p>
           <h2 id="opening-title">La gente no busca “un idioma”. Busca que algo cambie.</h2>
-          <div className={styles.searchVoices} aria-label="Metas comunes al aprender un idioma">
-            <blockquote>“Necesito IELTS 7.5 para estudiar.”</blockquote>
-            <blockquote>“Entiendo inglés, pero no logro hablar.”</blockquote>
-            <blockquote>“Quiero trabajar en Alemania.”</blockquote>
-            <blockquote>“No sé qué nivel tengo ni por dónde seguir.”</blockquote>
+
+          <div className={styles.searchSequence}>
+            <div className={styles.searchStage} aria-hidden="true">
+              <div className={styles.searchChrome}>
+                <span />
+                <span />
+                <span />
+                <small>Lo que escribes</small>
+              </div>
+              <div className={styles.searchScreen}>
+                <div className={styles.searchQueries}>
+                  <p className={styles.searchQueryOne}>profesor de inglés</p>
+                  <p className={styles.searchQueryTwo}>preparación IELTS 7.5</p>
+                  <p className={styles.searchQueryThree}>clases de alemán</p>
+                  <p className={styles.searchQueryFour}>qué nivel de inglés tengo</p>
+                </div>
+                <div className={styles.searchMeaning}>
+                  <span>Lo que realmente buscas</span>
+                  <strong>UNA META</strong>
+                </div>
+                <svg viewBox="0 0 620 420">
+                  <path d="M80 75C240 78 208 206 310 208s94-133 228-136" />
+                  <path d="M76 341c150 0 136-133 234-133s103 136 232 136" />
+                  <circle cx="310" cy="208" r="12" />
+                </svg>
+              </div>
+              <p className={styles.searchStageLabel}>Secuencia preparada para movimiento por scroll</p>
+            </div>
+
+            <div className={styles.searchSteps} aria-label="Metas comunes al aprender un idioma">
+              <article className={styles.searchStepOne}>
+                <span>01 · ESTUDIAR</span>
+                <blockquote>“Necesito IELTS 7.5 para entrar a la universidad.”</blockquote>
+                <p>No buscas ejercicios sueltos. Buscas demostrar un nivel bajo condiciones concretas.</p>
+              </article>
+              <article className={styles.searchStepTwo}>
+                <span>02 · COMUNICARTE</span>
+                <blockquote>“Entiendo inglés, pero cuando hablo me bloqueo.”</blockquote>
+                <p>No necesitas empezar de cero. Necesitas reconocer qué está frenando tu expresión.</p>
+              </article>
+              <article className={styles.searchStepThree}>
+                <span>03 · TRABAJAR</span>
+                <blockquote>“Quiero aprender alemán para trabajar allá.”</blockquote>
+                <p>El idioma es el puente hacia una situación real, no el destino final.</p>
+              </article>
+              <article className={styles.searchStepFour}>
+                <span>04 · ORIENTARTE</span>
+                <blockquote>“No sé qué nivel tengo ni por dónde seguir.”</blockquote>
+                <p>Antes de recomendar una clase, hace falta construir un punto de partida.</p>
+              </article>
+            </div>
           </div>
+
           <p className={styles.openingAnswer}>
             Por eso no empezamos mostrándote una lista de cursos. Empezamos
             entendiendo la distancia entre <strong>dónde estás</strong> y
@@ -282,7 +340,7 @@ export default function HomePage() {
         <div id="panorama-fundadores" className={styles.founderPanorama}>
           <div className={styles.panoramaZhanna}>
             <Image
-              src="/images/home/zhanna-hero-v2.png"
+              src="/images/home/zhanna-hero-cutout-v3.png"
               alt="Zhanna Korzh, cofundadora y directora académica de Idiomas WeLearn."
               fill
               sizes="(max-width: 760px) 100vw, 52vw"
@@ -291,7 +349,7 @@ export default function HomePage() {
           </div>
           <div className={styles.panoramaDavid}>
             <Image
-              src="/images/home/david-hero-v2.png"
+              src="/images/home/david-hero-cutout-v4.png"
               alt="José David Duarte Silva, cofundador de Idiomas WeLearn."
               fill
               sizes="(max-width: 760px) 100vw, 52vw"

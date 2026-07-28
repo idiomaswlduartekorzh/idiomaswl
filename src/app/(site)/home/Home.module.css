@@ -217,8 +217,45 @@
 
 .heroDescription {
   max-width: 650px;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.25rem;
   font-size: clamp(1.06rem, 1.6vw, 1.3rem);
+}
+
+.heroExpertise {
+  display: grid;
+  max-width: 660px;
+  margin-bottom: 1.55rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.heroExpertise article {
+  display: grid;
+  min-height: 82px;
+  padding: 0.9rem 1rem 0.9rem 0;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.heroExpertise article + article {
+  padding-left: 1rem;
+  border-left: 1px solid var(--line);
+}
+
+.heroExpertise strong {
+  color: var(--blue);
+  font-size: 1.15rem;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.heroExpertise span {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 650;
+  line-height: 1.35;
 }
 
 .heroNote {
@@ -240,7 +277,6 @@
   z-index: 2;
   overflow: hidden;
   background: transparent;
-  mask-image: radial-gradient(ellipse 76% 88% at 50% 43%, #000 0 66%, transparent 90%);
 }
 
 .heroPersonZhanna {
@@ -258,12 +294,12 @@
 }
 
 .heroPersonImage {
-  object-fit: cover;
-  object-position: center 22%;
+  object-fit: contain;
+  object-position: center bottom;
 }
 
 .heroPersonDavid .heroPersonImage {
-  object-position: center 27%;
+  object-position: center bottom;
 }
 
 .founderCaption {
@@ -339,7 +375,7 @@
 }
 
 .openingInner {
-  width: min(1040px, calc(100% - 3rem));
+  width: min(var(--width), calc(100% - 3rem));
   margin-inline: auto;
 }
 
@@ -347,27 +383,212 @@
   max-width: 880px;
 }
 
-.searchVoices {
+.searchSequence {
+  position: relative;
   display: grid;
-  margin: clamp(3rem, 7vw, 6rem) 0;
-  border-top: 1px solid var(--line);
-  grid-template-columns: repeat(2, 1fr);
+  margin: clamp(4rem, 8vw, 7rem) 0;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.72fr);
+  gap: clamp(3rem, 7vw, 7rem);
 }
 
-.searchVoices blockquote {
-  min-height: 150px;
-  margin-bottom: 0;
-  padding: 2rem;
-  border-right: 1px solid var(--line);
+.searchStage {
+  position: sticky;
+  top: 12vh;
+  height: min(74vh, 690px);
+  min-height: 540px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background:
+    linear-gradient(rgba(9, 24, 79, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(9, 24, 79, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 52% 44%, rgba(76, 101, 232, 0.17), transparent 52%),
+    var(--surface);
+  background-size: 40px 40px, 40px 40px, auto, auto;
+  box-shadow: var(--shadow);
+}
+
+.searchChrome {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 48px;
+  padding: 0 1.1rem;
   border-bottom: 1px solid var(--line);
-  color: var(--ink);
-  font-size: clamp(1.35rem, 2.5vw, 2.3rem);
-  font-weight: 520;
-  line-height: 1.15;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
 }
 
-.searchVoices blockquote:nth-child(even) {
-  border-right: 0;
+.searchChrome > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.searchChrome > span:first-child {
+  background: var(--red);
+}
+
+.searchChrome small {
+  margin-left: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.searchScreen {
+  position: absolute;
+  inset: 48px 0 0;
+}
+
+.searchQueries {
+  position: absolute;
+  z-index: 3;
+  top: 13%;
+  right: 7%;
+  left: 7%;
+  height: 92px;
+}
+
+.searchQueries p {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  margin: 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  align-items: center;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  box-shadow: 0 15px 42px rgba(16, 31, 91, 0.1);
+  font-size: clamp(1.1rem, 2.2vw, 1.75rem);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.searchQueries p::before {
+  width: 17px;
+  height: 17px;
+  margin-right: 0.85rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  box-shadow: 8px 8px 0 -6px var(--blue);
+  content: '';
+  transform: translateY(-2px);
+}
+
+.searchQueryTwo,
+.searchQueryThree,
+.searchQueryFour {
+  opacity: 0;
+}
+
+.searchMeaning {
+  position: absolute;
+  z-index: 3;
+  top: 48%;
+  left: 50%;
+  display: grid;
+  justify-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.searchMeaning span {
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.searchMeaning strong {
+  color: var(--blue);
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  letter-spacing: -0.08em;
+  line-height: 0.82;
+}
+
+.searchScreen svg {
+  position: absolute;
+  right: 7%;
+  bottom: 10%;
+  left: 7%;
+  width: 86%;
+  height: 45%;
+  overflow: visible;
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 2.2;
+}
+
+.searchScreen svg circle {
+  fill: var(--yellow);
+  stroke: var(--red);
+  stroke-width: 3;
+}
+
+.searchStageLabel {
+  position: absolute;
+  z-index: 5;
+  right: 1.2rem;
+  bottom: 1rem;
+  left: 1.2rem;
+  margin: 0;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.searchSteps {
+  border-top: 1px solid var(--line);
+}
+
+.searchSteps article {
+  display: grid;
+  min-height: 75vh;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--line);
+  align-content: center;
+}
+
+.searchSteps article > span {
+  margin-bottom: 1.25rem;
+  color: var(--blue);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.searchSteps blockquote {
+  margin-bottom: 1.25rem;
+  color: var(--ink);
+  font-size: clamp(2rem, 3.5vw, 3.8rem);
+  font-weight: 560;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+}
+
+.searchSteps article > p {
+  max-width: 440px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .openingAnswer {
@@ -905,26 +1126,23 @@
   top: 0;
   bottom: 0;
   width: 58%;
-  mask-image: linear-gradient(to bottom, #000 0 72%, transparent 92%);
 }
 
 .panoramaZhanna {
   left: -2%;
-  clip-path: polygon(0 0, 91% 0, 76% 100%, 0 100%);
 }
 
 .panoramaDavid {
   right: -1%;
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .panoramaImage {
-  object-fit: cover;
-  object-position: center 23%;
+  object-fit: contain;
+  object-position: center bottom;
 }
 
 .panoramaDavid .panoramaImage {
-  object-position: center 29%;
+  object-position: center bottom;
 }
 
 .founderFacts {
@@ -1409,6 +1627,28 @@
 }
 
 @supports (animation-timeline: view()) {
+  .searchSequence {
+    timeline-scope: --search-one, --search-two, --search-three, --search-four;
+  }
+
+  .searchStepOne { view-timeline: --search-one block; }
+  .searchStepTwo { view-timeline: --search-two block; }
+  .searchStepThree { view-timeline: --search-three block; }
+  .searchStepFour { view-timeline: --search-four block; }
+
+  .searchQueryOne,
+  .searchQueryTwo,
+  .searchQueryThree,
+  .searchQueryFour {
+    animation: searchQueryActive linear both;
+    animation-range: entry 10% exit 90%;
+  }
+
+  .searchQueryOne { animation-timeline: --search-one; }
+  .searchQueryTwo { animation-timeline: --search-two; }
+  .searchQueryThree { animation-timeline: --search-three; }
+  .searchQueryFour { animation-timeline: --search-four; }
+
   .heroPersonZhanna {
     animation: portraitZhanna linear both;
     animation-timeline: view();
@@ -1455,6 +1695,20 @@
 
 @keyframes portraitZhanna {
   to { transform: translate(-5%, -5%); }
+}
+
+@keyframes searchQueryActive {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+
+  22%,
+  78% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes portraitDavid {
@@ -1534,6 +1788,11 @@
     grid-template-columns: 1fr;
   }
 
+  .searchSequence {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.8fr);
+    gap: 2.5rem;
+  }
+
   .evidencePreview {
     min-height: 540px;
   }
@@ -1581,6 +1840,26 @@
     font-size: 1rem;
   }
 
+  .heroExpertise {
+    grid-template-columns: 1fr;
+  }
+
+  .heroExpertise article {
+    min-height: 58px;
+    padding: 0.7rem 0;
+    grid-template-columns: 82px minmax(0, 1fr);
+  }
+
+  .heroExpertise article + article {
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .heroExpertise span {
+    font-size: 0.7rem;
+  }
+
   .heroPeople {
     min-height: 460px;
     margin-top: 2.5rem;
@@ -1613,15 +1892,54 @@
     padding-top: 9rem;
   }
 
-  .searchVoices {
-    grid-template-columns: 1fr;
+  .openingInner {
+    width: min(100% - 1.5rem, 560px);
   }
 
-  .searchVoices blockquote,
-  .searchVoices blockquote:nth-child(even) {
-    min-height: auto;
-    padding: 1.5rem 0;
-    border-right: 0;
+  .searchSequence {
+    display: block;
+    margin-top: 3.5rem;
+  }
+
+  .searchStage {
+    z-index: 2;
+    top: 70px;
+    height: 58vh;
+    min-height: 430px;
+  }
+
+  .searchQueries {
+    top: 9%;
+  }
+
+  .searchMeaning {
+    top: 44%;
+  }
+
+  .searchMeaning strong {
+    font-size: clamp(3.5rem, 18vw, 5rem);
+  }
+
+  .searchStageLabel {
+    text-align: left;
+  }
+
+  .searchSteps {
+    position: relative;
+    z-index: 3;
+    margin-top: 8vh;
+    border-top: 0;
+  }
+
+  .searchSteps article {
+    min-height: 78vh;
+    padding: 4rem 1rem;
+    align-content: end;
+    background: linear-gradient(transparent 0 52%, color-mix(in srgb, var(--paper) 94%, transparent) 68%);
+  }
+
+  .searchSteps blockquote {
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
   .story {
