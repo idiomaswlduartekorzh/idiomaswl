@@ -371,6 +371,7 @@
 
 .openingQuestion {
   --motion-paper: #f7f0e5;
+  --paper: var(--motion-paper);
   position: relative;
   isolation: isolate;
   overflow: clip;
@@ -442,11 +443,11 @@
   filter: saturate(1.04) contrast(1.02);
   transform: translateX(-50%);
   -webkit-mask-image:
-    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(90deg, transparent 0%, transparent 18%, #000 30%, #000 70%, transparent 82%, transparent 100%),
     linear-gradient(180deg, transparent 0%, #000 8%, #000 100%);
   -webkit-mask-composite: source-in;
   mask-image:
-    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(90deg, transparent 0%, transparent 18%, #000 30%, #000 70%, transparent 82%, transparent 100%),
     linear-gradient(180deg, transparent 0%, #000 8%, #000 100%);
   mask-composite: intersect;
 }
@@ -457,17 +458,10 @@
   inset: 0;
   background:
     linear-gradient(
-      90deg,
-      color-mix(in srgb, var(--motion-paper) 4%, transparent) 0%,
-      color-mix(in srgb, var(--motion-paper) 3%, transparent) 54%,
-      color-mix(in srgb, var(--motion-paper) 58%, transparent) 82%,
-      var(--motion-paper) 100%
-    ),
-    linear-gradient(
       180deg,
-      color-mix(in srgb, var(--motion-paper) 72%, transparent) 0%,
-      color-mix(in srgb, var(--motion-paper) 4%, transparent) 13%,
-      color-mix(in srgb, var(--motion-paper) 4%, transparent) 88%,
+      var(--motion-paper) 0%,
+      transparent 12%,
+      transparent 88%,
       var(--motion-paper) 100%
     );
 }
@@ -600,7 +594,7 @@
 }
 
 :global([data-theme='dark']) .openingQuestion {
-  --paper: #f7f8fc;
+  --paper: var(--motion-paper);
   --surface: #ffffff;
   --ink: #09184f;
   --copy: #31406f;
@@ -705,11 +699,11 @@
   filter: saturate(1.04) contrast(1.02);
   transform: translate(-50%, 18%);
   -webkit-mask-image:
-    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(90deg, transparent 0%, transparent 18%, #000 30%, #000 70%, transparent 82%, transparent 100%),
     linear-gradient(180deg, transparent 0%, #000 9%, #000 100%);
   -webkit-mask-composite: source-in;
   mask-image:
-    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(90deg, transparent 0%, transparent 18%, #000 30%, #000 70%, transparent 82%, transparent 100%),
     linear-gradient(180deg, transparent 0%, #000 9%, #000 100%);
   mask-composite: intersect;
 }
@@ -718,44 +712,38 @@
   position: absolute;
   z-index: 1;
   inset: 0;
-  background:
-    linear-gradient(
-      90deg,
-      color-mix(in srgb, var(--method-paper) 8%, transparent) 0%,
-      color-mix(in srgb, var(--method-paper) 3%, transparent) 53%,
-      color-mix(in srgb, var(--method-paper) 72%, transparent) 76%,
-      var(--method-paper) 100%
-    ),
-    linear-gradient(
-      180deg,
-      var(--method-paper) 0%,
-      color-mix(in srgb, var(--method-paper) 4%, transparent) 13%,
-      color-mix(in srgb, var(--method-paper) 4%, transparent) 87%,
-      var(--method-paper) 100%
-    );
 }
 
+.methodFilmWash::before,
 .methodFilmWash::after {
   position: absolute;
   inset: 0;
+  content: '';
+  transition: opacity 500ms ease;
+}
+
+.methodFilmWash::before {
   background:
     linear-gradient(
-      90deg,
-      rgba(21, 40, 76, 0.02) 0%,
-      rgba(21, 40, 76, 0.02) 53%,
-      rgba(8, 19, 62, 0.72) 77%,
-      var(--blue-deep) 100%
-    ),
+      180deg,
+      var(--method-paper) 0%,
+      transparent 12%,
+      transparent 88%,
+      var(--method-paper) 100%
+    );
+  opacity: 1;
+}
+
+.methodFilmWash::after {
+  background:
     linear-gradient(
       180deg,
       var(--method-night) 0%,
-      rgba(21, 40, 76, 0.02) 14%,
-      rgba(21, 40, 76, 0.02) 90%,
+      transparent 12%,
+      transparent 88%,
       var(--method-night) 100%
     );
-  content: '';
   opacity: 0;
-  transition: opacity 500ms ease;
 }
 
 .methodFilmGuide {
@@ -781,7 +769,7 @@
   left: 42%;
   width: 2px;
   height: 48%;
-  background: linear-gradient(180deg, var(--red), var(--yellow) 78%, transparent);
+  background: linear-gradient(180deg, var(--red), var(--yellow) 82%);
   filter: drop-shadow(0 0 8px rgba(242, 199, 72, 0.28));
   opacity: 0.86;
   transform: translateX(-50%);
@@ -825,11 +813,14 @@
   opacity: 1;
 }
 
+.story[data-scroll-step='3'] .methodFilmWash::before {
+  opacity: 0;
+}
+
 .story[data-scroll-step='3'] .methodFilmGuide {
   color: #aeb8df;
 }
 
-.story[data-scroll-step='1'] .methodHandoff,
 .story[data-scroll-step='2'] .methodHandoff,
 .story[data-scroll-step='3'] .methodHandoff {
   opacity: 0;
@@ -1778,13 +1769,13 @@
     height: 100%;
   }
 
-  .methodFilmWash {
+  .methodFilmWash::before {
     background:
       linear-gradient(
         180deg,
-        color-mix(in srgb, var(--method-paper) 60%, transparent) 0%,
-        color-mix(in srgb, var(--method-paper) 4%, transparent) 42%,
-        color-mix(in srgb, var(--method-paper) 88%, transparent) 68%,
+        var(--method-paper) 0%,
+        transparent 42%,
+        color-mix(in srgb, var(--method-paper) 88%, transparent) 72%,
         var(--method-paper) 100%
       );
   }
@@ -1793,10 +1784,10 @@
     background:
       linear-gradient(
         180deg,
-        rgba(21, 40, 76, 0.58) 0%,
-        rgba(21, 40, 76, 0.04) 42%,
-        rgba(8, 19, 62, 0.86) 68%,
-        var(--blue-deep) 100%
+        var(--method-night) 0%,
+        transparent 42%,
+        rgba(21, 40, 76, 0.88) 72%,
+        var(--method-night) 100%
       );
   }
 
