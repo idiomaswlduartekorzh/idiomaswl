@@ -8,7 +8,7 @@ type SearchScrollVideoProps = {
   poster: string;
   scrollRootId?: string;
   sequenceId: string;
-  stepProfile?: 'search' | 'method';
+  stepProfile?: 'search' | 'method' | 'evidence';
   webmSrc: string;
 };
 
@@ -16,10 +16,12 @@ function clamp(value: number, minimum: number, maximum: number) {
   return Math.min(maximum, Math.max(minimum, value));
 }
 
-function getScrollStep(progress: number, profile: 'search' | 'method') {
+function getScrollStep(progress: number, profile: 'search' | 'method' | 'evidence') {
   const thresholds = profile === 'method'
     ? [0.25, 0.5, 0.84]
-    : [0.34, 0.56, 0.78];
+    : profile === 'evidence'
+      ? [0.22, 0.48, 0.66]
+      : [0.34, 0.56, 0.78];
 
   if (progress < thresholds[0]) return 0;
   if (progress < thresholds[1]) return 1;
@@ -65,9 +67,9 @@ export default function SearchScrollVideo({
     const measureTarget = () => {
       const mediaBounds = scrollRoot.getBoundingClientRect();
       const sequenceBounds = sequence.getBoundingClientRect();
-      const isMethodSequence = stepProfile === 'method';
-      const mediaStartLine = window.innerHeight * (isMethodSequence ? 0.5 : 0.94);
-      const mediaTravel = isMethodSequence
+      const isLongFormSequence = stepProfile !== 'search';
+      const mediaStartLine = window.innerHeight * (isLongFormSequence ? 0.5 : 0.94);
+      const mediaTravel = isLongFormSequence
         ? Math.max(1, mediaBounds.height)
         : Math.max(1, mediaBounds.height - window.innerHeight * 0.32);
       const mediaProgress = clamp((mediaStartLine - mediaBounds.top) / mediaTravel, 0, 1);
@@ -76,7 +78,7 @@ export default function SearchScrollVideo({
         1,
         sequenceBounds.height - window.innerHeight * 0.78,
       );
-      const sequenceProgress = isMethodSequence
+      const sequenceProgress = isLongFormSequence
         ? mediaProgress
         : clamp((sequenceStartLine - sequenceBounds.top) / sequenceTravel, 0, 1);
       targetTime = mediaProgress * Math.max(0, duration - 0.04);

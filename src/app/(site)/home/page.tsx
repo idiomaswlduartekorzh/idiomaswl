@@ -5,6 +5,7 @@ import styles from './Home.module.css';
 import SearchScrollVideo from './SearchScrollVideo';
 import {
   ANSWERS,
+  EVIDENCE_STEPS,
   EXAMS,
   FOUNDERS,
   HOME_META,
@@ -244,6 +245,62 @@ export default function HomePage() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section
+        id="evidencia-en-movimiento"
+        className={styles.proofStory}
+        aria-labelledby="proof-story-title"
+      >
+        <div className={styles.proofFilm} aria-hidden="true">
+          <SearchScrollVideo
+            className={styles.proofVideo}
+            webmSrc="/media/home/method-to-evidence-scroll-v1.webm"
+            mp4Src="/media/home/method-to-evidence-scroll-v1.mp4"
+            poster="/media/home/method-to-evidence-poster-v1.jpg"
+            scrollRootId="proof-scroll-track"
+            sequenceId="evidencia-en-movimiento"
+            stepProfile="evidence"
+          />
+          <div className={styles.proofFilmWash} />
+          <div className={styles.proofExitLine} />
+          <div className={styles.proofFilmGuide}>
+            <span>La ruta</span>
+            <i />
+            <small>deja evidencia</small>
+          </div>
+        </div>
+
+        <div className={styles.proofIntro}>
+          <p className={styles.eyebrow}>Después de corregir, debe quedar una señal</p>
+          <h2 id="proof-story-title">La práctica importa cuando permite ver qué cambió.</h2>
+          <p>
+            Los ejercicios no son el resultado final. Sirven para observar una
+            habilidad, comparar intentos y decidir qué necesita el siguiente paso.
+          </p>
+        </div>
+
+        <div id="proof-scroll-track" className={styles.proofChapters}>
+          {EVIDENCE_STEPS.map((item, index) => (
+            <article className={styles.proofChapter} key={item.step}>
+              <div className={styles.proofCopy}>
+                <span className={styles.proofNumber}>{String(index + 1).padStart(2, '0')}</span>
+                <p className={styles.proofVerb}>{item.step}</p>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <strong>{item.result}</strong>
+                <Link href={item.href} className={styles.proofLink}>
+                  {item.linkLabel} <ArrowIcon />
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <p className={styles.proofDisclaimer}>
+          Esta secuencia representa el proceso. Los resultados reales se mostrarán
+          con contexto suficiente e identidad protegida.
+        </p>
       </section>
 
       <section id="fundadores" className={styles.founderStory} aria-labelledby="founder-story-title">

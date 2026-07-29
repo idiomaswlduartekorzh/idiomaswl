@@ -90,6 +90,36 @@ export const ROUTE_STEPS = [
   },
 ] as const;
 
+export const EVIDENCE_STEPS = [
+  {
+    step: 'Observar',
+    title: '¿Qué habilidad se está moviendo?',
+    description:
+      'La práctica separa escucha, lectura y producción para que el avance no dependa de una sensación general.',
+    result: 'Señales que se pueden comparar',
+    href: '/practica',
+    linkLabel: 'Explorar la práctica',
+  },
+  {
+    step: 'Relacionar',
+    title: '¿Qué cambió después de corregir?',
+    description:
+      'Un intento cobra valor cuando puede compararse con un criterio, recibir feedback y orientar la siguiente decisión.',
+    result: 'Progreso que se puede explicar',
+    href: '/metodo',
+    linkLabel: 'Conocer el método',
+  },
+  {
+    step: 'Comprobar',
+    title: '¿La preparación funciona en una condición real?',
+    description:
+      'Los simulacros, reportes y resultados permiten contrastar la ruta con la tarea o el examen que la persona necesita enfrentar.',
+    result: 'Evidencia antes que promesas',
+    href: '#resultados',
+    linkLabel: 'Ver cómo publicaremos resultados',
+  },
+] as const;
+
 export const SKILLS = [
   { name: 'Comprender', detail: 'Escucha y lectura', marker: 'CO' },
   { name: 'Construir', detail: 'Vocabulario y estructuras', marker: 'CT' },
