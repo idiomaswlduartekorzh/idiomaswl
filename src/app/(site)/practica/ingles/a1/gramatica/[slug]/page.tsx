@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getTopicsByLevel, getTopicBySlug } from '@/data/grammar/registry'
+import { getWritingExercisesForGrammar } from '@/data/practica/writing-integrated'
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 
@@ -244,7 +245,7 @@ export default async function GrammarTopicPage({ params }: Props) {
           </article>
 
           {/* Visual brief + practice engine — Client Component */}
-          <GrammarTopicClient topic={topic} idioma={IDIOMA} nivel={NIVEL} />
+          <GrammarTopicClient topic={topic} idioma={IDIOMA} nivel={NIVEL} relatedWritingExercises={getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)} />
 
           {/* Topic navigation */}
           <nav className="topic-nav" aria-label="Navegación de temas">
