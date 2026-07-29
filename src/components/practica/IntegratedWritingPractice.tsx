@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { Suspense, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import type { IntegratedWritingExercise, RequiredWritingTerm } from '@/data/practica/writing-integrated'
@@ -52,7 +52,15 @@ function termIsUsed(text: string, term: string) {
   return normalizedText.includes(normalizedTerm)
 }
 
-export default function IntegratedWritingPractice({ exercises }: { exercises: IntegratedWritingExercise[] }) {
+export default function IntegratedWritingPractice(props: { exercises: IntegratedWritingExercise[] }) {
+  return (
+    <Suspense fallback={null}>
+      <IntegratedWritingPracticeContent {...props} />
+    </Suspense>
+  )
+}
+
+function IntegratedWritingPracticeContent({ exercises }: { exercises: IntegratedWritingExercise[] }) {
   const searchParams = useSearchParams()
   const [stage, setStage] = useState<Stage>('select')
   const [selectedId, setSelectedId] = useState(exercises[0]?.id ?? '')
