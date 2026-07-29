@@ -4,25 +4,37 @@ import { useEffect, useRef } from 'react';
 
 type SearchScrollVideoProps = {
   className?: string;
+  mp4Src: string;
+  poster: string;
   scrollRootId?: string;
   sequenceId: string;
+  stepProfile?: 'search' | 'method';
+  webmSrc: string;
 };
 
 function clamp(value: number, minimum: number, maximum: number) {
   return Math.min(maximum, Math.max(minimum, value));
 }
 
-function getScrollStep(progress: number) {
-  if (progress < 0.34) return 0;
-  if (progress < 0.56) return 1;
-  if (progress < 0.78) return 2;
+function getScrollStep(progress: number, profile: 'search' | 'method') {
+  const thresholds = profile === 'method'
+    ? [0.25, 0.5, 0.84]
+    : [0.34, 0.56, 0.78];
+
+  if (progress < thresholds[0]) return 0;
+  if (progress < thresholds[1]) return 1;
+  if (progress < thresholds[2]) return 2;
   return 3;
 }
 
 export default function SearchScrollVideo({
   className,
+  mp4Src,
+  poster,
   scrollRootId,
   sequenceId,
+  stepProfile = 'search',
+  webmSrc,
 }: SearchScrollVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -51,25 +63,22 @@ export default function SearchScrollVideo({
     const measureTarget = () => {
       const mediaBounds = scrollRoot.getBoundingClientRect();
       const sequenceBounds = sequence.getBoundingClientRect();
-      const mediaStartLine = window.innerHeight * 0.94;
-      const mediaTravel = Math.max(1, mediaBounds.height - window.innerHeight * 0.32);
+      const isMethodSequence = stepProfile === 'method';
+      const mediaStartLine = window.innerHeight * (isMethodSequence ? 0.5 : 0.94);
+      const mediaTravel = isMethodSequence
+        ? Math.max(1, mediaBounds.height)
+        : Math.max(1, mediaBounds.height - window.innerHeight * 0.32);
+      const mediaProgress = clamp((mediaStartLine - mediaBounds.top) / mediaTravel, 0, 1);
       const sequenceStartLine = window.innerHeight * 0.48;
       const sequenceTravel = Math.max(
         1,
         sequenceBounds.height - window.innerHeight * 0.78,
       );
-      const mediaProgress = clamp(
-        (mediaStartLine - mediaBounds.top) / mediaTravel,
-        0,
-        1,
-      );
-      const sequenceProgress = clamp(
-        (sequenceStartLine - sequenceBounds.top) / sequenceTravel,
-        0,
-        1,
-      );
+      const sequenceProgress = isMethodSequence
+        ? mediaProgress
+        : clamp((sequenceStartLine - sequenceBounds.top) / sequenceTravel, 0, 1);
       targetTime = mediaProgress * Math.max(0, duration - 0.04);
-      const nextStep = getScrollStep(sequenceProgress);
+      const nextStep = getScrollStep(sequenceProgress, stepProfile);
 
       if (nextStep !== lastStep) {
         sequence.dataset.scrollStep = String(nextStep);
@@ -142,22 +151,23 @@ export default function SearchScrollVideo({
       window.removeEventListener('resize', requestFrame);
       delete sequence.dataset.scrollStep;
     };
-  }, [scrollRootId, sequenceId]);
+  }, [scrollRootId, sequenceId, stepProfile]);
 
   return (
     <video
       ref={videoRef}
       className={className}
-      data-search-scroll-video
+      data-scroll-scrub-video={sequenceId}
       muted
       playsInline
       preload="auto"
-      poster="/media/home/search-to-goal-poster-v1.jpg"
+      poster={poster}
       tabIndex={-1}
       aria-hidden="true"
     >
-      <source src="/media/home/search-to-goal-scroll-v2.webm" type="video/webm" />
-      <source src="/media/home/search-to-goal-scroll-v2.mp4" type="video/mp4" />
+      <source src={webmSrc} type="video/webm" />
+      <source src={mp4Src} type="video/mp4" />
+      Tu navegador no puede mostrar esta secuencia visual.
     </video>
   );
 }

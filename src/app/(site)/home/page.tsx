@@ -41,99 +41,6 @@ function ArrowIcon() {
   );
 }
 
-function RecognitionScene() {
-  return (
-    <div className={`${styles.motionScene} ${styles.recognitionScene}`} aria-hidden="true">
-      <span className={styles.sceneIndex}>01</span>
-      <div className={styles.radar}>
-        <i /><i /><i /><i />
-        <b />
-        <span className={styles.radarWordOne}>lectura</span>
-        <span className={styles.radarWordTwo}>escucha</span>
-        <span className={styles.radarWordThree}>vocabulario</span>
-        <span className={styles.radarWordFour}>uso</span>
-      </div>
-      <p className={styles.sceneResult}>Un punto de partida visible</p>
-    </div>
-  );
-}
-
-function ConnectionScene() {
-  return (
-    <div className={`${styles.motionScene} ${styles.connectionScene}`} aria-hidden="true">
-      <span className={styles.sceneIndex}>02</span>
-      <div className={styles.wordField}>
-        <span>palabras</span>
-        <span>estructuras</span>
-        <span>contexto</span>
-        <span>intención</span>
-        <span>comprensión</span>
-        <svg viewBox="0 0 720 430">
-          <path d="M94 103C225 105 225 212 354 212S489 99 631 103" />
-          <path d="M96 333c126 0 130-121 258-121s134 121 270 121" />
-          <path d="M354 212V66M354 212v154" />
-          <circle cx="354" cy="212" r="14" />
-        </svg>
-      </div>
-      <p className={styles.sceneResult}>Una red que empieza a tener sentido</p>
-    </div>
-  );
-}
-
-function PracticeScene() {
-  return (
-    <div className={`${styles.motionScene} ${styles.practiceScene}`} aria-hidden="true">
-      <span className={styles.sceneIndex}>03</span>
-      <div className={styles.practiceFlow}>
-        <div>
-          <small>ENTENDER</small>
-          <strong>Una explicación clara</strong>
-          <span>por qué funciona</span>
-        </div>
-        <i />
-        <div>
-          <small>USAR</small>
-          <strong>Una tarea concreta</strong>
-          <span>lectura · escucha · habla · escritura</span>
-        </div>
-        <i />
-        <div>
-          <small>AJUSTAR</small>
-          <strong>Feedback para el siguiente intento</strong>
-          <span>qué mantener · qué cambiar</span>
-        </div>
-      </div>
-      <p className={styles.sceneResult}>Práctica con una razón para existir</p>
-    </div>
-  );
-}
-
-function EvidenceScene() {
-  return (
-    <div className={`${styles.motionScene} ${styles.evidenceScene}`} aria-hidden="true">
-      <span className={styles.sceneIndex}>04</span>
-      <div className={styles.scoreTarget}>
-        <span>meta</span>
-        <strong>7.5</strong>
-        <i />
-      </div>
-      <div className={styles.evidenceSheets}>
-        <div><span>IELTS</span><i /><i /><i /></div>
-        <div><span>GOETHE</span><i /><i /><i /></div>
-        <div><span>CELPE-BRAS</span><i /><i /><i /></div>
-      </div>
-      <p className={styles.sceneResult}>Progreso que puede demostrarse</p>
-    </div>
-  );
-}
-
-const STORY_SCENES = [
-  RecognitionScene,
-  ConnectionScene,
-  PracticeScene,
-  EvidenceScene,
-] as const;
-
 export default function HomePage() {
   return (
     <div className={styles.page}>
@@ -223,6 +130,9 @@ export default function HomePage() {
         <div className={styles.searchFilm} aria-hidden="true">
           <SearchScrollVideo
             className={styles.searchVideo}
+            webmSrc="/media/home/search-to-goal-scroll-v2.webm"
+            mp4Src="/media/home/search-to-goal-scroll-v2.mp4"
+            poster="/media/home/search-to-goal-poster-v1.jpg"
             scrollRootId="historia"
             sequenceId="search-scroll-sequence"
           />
@@ -283,47 +193,55 @@ export default function HomePage() {
       </section>
 
       <section id="recorrido" className={styles.story} aria-labelledby="story-title">
+        <div className={styles.methodFilm} aria-hidden="true">
+          <SearchScrollVideo
+            className={styles.methodVideo}
+            webmSrc="/media/home/goal-to-method-scroll-v1.webm"
+            mp4Src="/media/home/goal-to-method-scroll-v1.mp4"
+            poster="/media/home/goal-to-method-poster-v1.jpg"
+            scrollRootId="method-scroll-track"
+            sequenceId="recorrido"
+            stepProfile="method"
+          />
+          <div className={styles.methodFilmWash} />
+          <div className={styles.methodFilmGuide}>
+            <span>Tu meta</span>
+            <i />
+            <small>un proceso con dirección</small>
+          </div>
+        </div>
+
         <div className={styles.storyIntro}>
-          <p className={styles.eyebrow}>El método convertido en una historia</p>
-          <h2 id="story-title">Del “no sé qué hacer” a un siguiente paso claro.</h2>
+          <p className={styles.eyebrow}>La meta ya está visible. Ahora construimos la ruta.</p>
+          <h2 id="story-title">Un idioma avanza cuando cada práctica responde a una razón.</h2>
           <p>
-            Cada capítulo ocupa una escena completa porque cada decisión importa.
-            Aquí vivirán las piezas de movimiento: no como decoración, sino como
-            la explicación visual de lo que está ocurriendo.
+            La misma señal que reunió tus búsquedas se convierte en un proceso:
+            reconocer, comprender, practicar y corregir. La animación muestra la
+            transformación; estas palabras explican cada decisión.
           </p>
         </div>
 
         <div className={styles.storyLine} aria-hidden="true"><i /></div>
 
-        <div className={styles.storyChapters}>
-          {ROUTE_STEPS.map((item, index) => {
-            const Scene = STORY_SCENES[index];
-            return (
-              <article
-                id={`capitulo-${item.step.toLowerCase()}`}
-                className={styles.storyChapter}
-                key={item.step}
-              >
-                <div className={styles.storyVisual}>
-                  <div className={styles.motionLabel}>
-                    <span>Escena {String(index + 1).padStart(2, '0')}</span>
-                    <small>Movimiento narrativo</small>
-                  </div>
-                  <Scene />
-                </div>
-                <div className={styles.storyCopy}>
-                  <span className={styles.chapterNumber}>{String(index + 1).padStart(2, '0')}</span>
-                  <p className={styles.chapterVerb}>{item.step}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <strong>{item.result}</strong>
-                  <Link href={item.href} className={styles.textLink}>
-                    {item.linkLabel} <ArrowIcon />
-                  </Link>
-                </div>
-              </article>
-            );
-          })}
+        <div id="method-scroll-track" className={styles.storyChapters}>
+          {ROUTE_STEPS.map((item, index) => (
+            <article
+              id={`capitulo-${item.step.toLowerCase()}`}
+              className={styles.storyChapter}
+              key={item.step}
+            >
+              <div className={styles.storyCopy}>
+                <span className={styles.chapterNumber}>{String(index + 1).padStart(2, '0')}</span>
+                <p className={styles.chapterVerb}>{item.step}</p>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <strong>{item.result}</strong>
+                <Link href={item.href} className={styles.textLink}>
+                  {item.linkLabel} <ArrowIcon />
+                </Link>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
