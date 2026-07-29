@@ -130,9 +130,9 @@ export default function HomePage() {
         <div className={styles.searchFilm} aria-hidden="true">
           <SearchScrollVideo
             className={styles.searchVideo}
-            webmSrc="/media/home/search-to-goal-scroll-v2.webm"
-            mp4Src="/media/home/search-to-goal-scroll-v2.mp4"
-            poster="/media/home/search-to-goal-poster-v1.jpg"
+            webmSrc="/media/home/search-to-goal-scroll-v3.webm"
+            mp4Src="/media/home/search-to-goal-scroll-v3.mp4"
+            poster="/media/home/search-to-goal-poster-v2.jpg"
             scrollRootId="historia"
             sequenceId="search-scroll-sequence"
           />
@@ -204,6 +204,7 @@ export default function HomePage() {
             stepProfile="method"
           />
           <div className={styles.methodFilmWash} />
+          <div className={styles.methodHandoff}><i /></div>
           <div className={styles.methodFilmGuide}>
             <span>Tu meta</span>
             <i />

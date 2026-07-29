@@ -370,11 +370,12 @@
 }
 
 .openingQuestion {
+  --motion-paper: #f7f0e5;
   position: relative;
   isolation: isolate;
   overflow: clip;
   color: var(--copy);
-  background: var(--paper);
+  background: var(--motion-paper);
 }
 
 .openingThread {
@@ -412,7 +413,7 @@
   margin-bottom: calc(-100svh + 64px);
   overflow: hidden;
   pointer-events: none;
-  background: var(--paper);
+  background: var(--motion-paper);
 }
 
 .searchFilm::before {
@@ -440,6 +441,14 @@
   pointer-events: none;
   filter: saturate(1.04) contrast(1.02);
   transform: translateX(-50%);
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 8%, #000 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 8%, #000 100%);
+  mask-composite: intersect;
 }
 
 .searchFilmWash {
@@ -449,17 +458,17 @@
   background:
     linear-gradient(
       90deg,
-      color-mix(in srgb, var(--paper) 5%, transparent) 0%,
-      color-mix(in srgb, var(--paper) 4%, transparent) 52%,
-      color-mix(in srgb, var(--paper) 64%, transparent) 80%,
-      var(--paper) 100%
+      color-mix(in srgb, var(--motion-paper) 4%, transparent) 0%,
+      color-mix(in srgb, var(--motion-paper) 3%, transparent) 54%,
+      color-mix(in srgb, var(--motion-paper) 58%, transparent) 82%,
+      var(--motion-paper) 100%
     ),
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--paper) 72%, transparent) 0%,
-      color-mix(in srgb, var(--paper) 4%, transparent) 13%,
-      color-mix(in srgb, var(--paper) 4%, transparent) 84%,
-      var(--paper) 100%
+      color-mix(in srgb, var(--motion-paper) 72%, transparent) 0%,
+      color-mix(in srgb, var(--motion-paper) 4%, transparent) 13%,
+      color-mix(in srgb, var(--motion-paper) 4%, transparent) 88%,
+      var(--motion-paper) 100%
     );
 }
 
@@ -654,7 +663,8 @@
 }
 
 .story {
-  --method-paper: #f4f1e9;
+  --method-paper: #f7f0e5;
+  --method-night: #15284c;
   --method-ink: #09184f;
   --method-muted: #68718f;
   position: relative;
@@ -694,6 +704,14 @@
   opacity: 0.97;
   filter: saturate(1.04) contrast(1.02);
   transform: translate(-50%, 18%);
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 9%, #000 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, #000 11%, #000 89%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 9%, #000 100%);
+  mask-composite: intersect;
 }
 
 .methodFilmWash {
@@ -723,17 +741,17 @@
   background:
     linear-gradient(
       90deg,
-      rgba(7, 17, 58, 0.04) 0%,
-      rgba(7, 17, 58, 0.03) 53%,
-      rgba(7, 17, 58, 0.76) 77%,
+      rgba(21, 40, 76, 0.02) 0%,
+      rgba(21, 40, 76, 0.02) 53%,
+      rgba(8, 19, 62, 0.72) 77%,
       var(--blue-deep) 100%
     ),
     linear-gradient(
       180deg,
-      var(--blue-deep) 0%,
-      rgba(7, 17, 58, 0.04) 14%,
-      rgba(7, 17, 58, 0.04) 86%,
-      var(--blue-deep) 100%
+      var(--method-night) 0%,
+      rgba(21, 40, 76, 0.02) 14%,
+      rgba(21, 40, 76, 0.02) 90%,
+      var(--method-night) 100%
     );
   content: '';
   opacity: 0;
@@ -756,6 +774,33 @@
   transition: color 350ms ease;
 }
 
+.methodHandoff {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 42%;
+  width: 2px;
+  height: 48%;
+  background: linear-gradient(180deg, var(--red), var(--yellow) 78%, transparent);
+  filter: drop-shadow(0 0 8px rgba(242, 199, 72, 0.28));
+  opacity: 0.86;
+  transform: translateX(-50%);
+  transition: opacity 300ms ease;
+}
+
+.methodHandoff i {
+  position: absolute;
+  right: 50%;
+  bottom: -5px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  background: var(--yellow);
+  box-shadow: 0 0 0 7px rgba(242, 199, 72, 0.12);
+  transform: translateX(50%);
+}
+
 .methodFilmGuide span {
   color: var(--red);
 }
@@ -773,7 +818,7 @@
 
 .story[data-scroll-step='3'],
 .story[data-scroll-step='3'] .methodFilm {
-  background: var(--blue-deep);
+  background: var(--method-night);
 }
 
 .story[data-scroll-step='3'] .methodFilmWash::after {
@@ -782,6 +827,12 @@
 
 .story[data-scroll-step='3'] .methodFilmGuide {
   color: #aeb8df;
+}
+
+.story[data-scroll-step='1'] .methodHandoff,
+.story[data-scroll-step='2'] .methodHandoff,
+.story[data-scroll-step='3'] .methodHandoff {
+  opacity: 0;
 }
 
 .storyIntro {
@@ -1651,10 +1702,10 @@
     background:
       linear-gradient(
         180deg,
-        color-mix(in srgb, var(--paper) 62%, transparent) 0%,
-        color-mix(in srgb, var(--paper) 5%, transparent) 14%,
-        color-mix(in srgb, var(--paper) 8%, transparent) 68%,
-        var(--paper) 100%
+        color-mix(in srgb, var(--motion-paper) 62%, transparent) 0%,
+        color-mix(in srgb, var(--motion-paper) 5%, transparent) 14%,
+        color-mix(in srgb, var(--motion-paper) 8%, transparent) 68%,
+        var(--motion-paper) 100%
       );
   }
 
@@ -1742,11 +1793,15 @@
     background:
       linear-gradient(
         180deg,
-        rgba(7, 17, 58, 0.58) 0%,
-        rgba(7, 17, 58, 0.04) 42%,
-        rgba(7, 17, 58, 0.88) 68%,
+        rgba(21, 40, 76, 0.58) 0%,
+        rgba(21, 40, 76, 0.04) 42%,
+        rgba(8, 19, 62, 0.86) 68%,
         var(--blue-deep) 100%
       );
+  }
+
+  .methodHandoff {
+    left: 50%;
   }
 
   .methodFilmGuide {

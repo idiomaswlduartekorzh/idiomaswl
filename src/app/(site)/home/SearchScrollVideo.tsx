@@ -47,6 +47,8 @@ export default function SearchScrollVideo({
       return;
     }
 
+    video.load();
+
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     if (reducedMotion.matches) {
@@ -151,7 +153,7 @@ export default function SearchScrollVideo({
       window.removeEventListener('resize', requestFrame);
       delete sequence.dataset.scrollStep;
     };
-  }, [scrollRootId, sequenceId, stepProfile]);
+  }, [mp4Src, scrollRootId, sequenceId, stepProfile, webmSrc]);
 
   return (
     <video
