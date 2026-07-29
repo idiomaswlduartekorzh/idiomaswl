@@ -44,16 +44,11 @@ export default function SearchScrollVideo({
 
     let animationFrame = 0;
     let duration = 0;
-    let lastTime = -1;
     let lastStep = -1;
+    let needsMeasurement = true;
+    let targetTime = 0;
 
-    const updateFrame = () => {
-      animationFrame = 0;
-
-      if (!duration || video.readyState < HTMLMediaElement.HAVE_METADATA) {
-        return;
-      }
-
+    const measureTarget = () => {
       const mediaBounds = scrollRoot.getBoundingClientRect();
       const sequenceBounds = sequence.getBoundingClientRect();
       const mediaStartLine = window.innerHeight * 0.94;
@@ -73,34 +68,65 @@ export default function SearchScrollVideo({
         0,
         1,
       );
-      const nextTime = mediaProgress * Math.max(0, duration - 0.04);
+      targetTime = mediaProgress * Math.max(0, duration - 0.04);
       const nextStep = getScrollStep(sequenceProgress);
 
       if (nextStep !== lastStep) {
         sequence.dataset.scrollStep = String(nextStep);
         lastStep = nextStep;
       }
+    };
 
-      if (Math.abs(nextTime - lastTime) < 1 / 60) {
+    const renderFrame = () => {
+      animationFrame = 0;
+
+      if (!duration || video.readyState < HTMLMediaElement.HAVE_METADATA) {
         return;
       }
 
-      video.currentTime = nextTime;
-      lastTime = nextTime;
+      if (needsMeasurement) {
+        measureTarget();
+        needsMeasurement = false;
+      }
+
+      if (video.seeking) {
+        return;
+      }
+
+      const distance = targetTime - video.currentTime;
+
+      if (Math.abs(distance) <= 1 / 48) {
+        if (Math.abs(distance) > 1 / 240) {
+          video.currentTime = targetTime;
+        }
+        return;
+      }
+
+      const smoothing = Math.abs(distance) > 1.2 ? 0.34 : 0.24;
+      video.currentTime += distance * smoothing;
+
+      animationFrame = window.requestAnimationFrame(renderFrame);
+    };
+
+    const ensureFrame = () => {
+      if (!animationFrame) {
+        animationFrame = window.requestAnimationFrame(renderFrame);
+      }
     };
 
     const requestFrame = () => {
-      if (!animationFrame) {
-        animationFrame = window.requestAnimationFrame(updateFrame);
-      }
+      needsMeasurement = true;
+      ensureFrame();
     };
 
     const handleMetadata = () => {
       duration = Number.isFinite(video.duration) ? video.duration : 0;
-      updateFrame();
+      targetTime = video.currentTime;
+      requestFrame();
     };
 
     video.addEventListener('loadedmetadata', handleMetadata);
+    video.addEventListener('seeked', ensureFrame);
     window.addEventListener('scroll', requestFrame, { passive: true });
     window.addEventListener('resize', requestFrame);
 
@@ -111,6 +137,7 @@ export default function SearchScrollVideo({
     return () => {
       window.cancelAnimationFrame(animationFrame);
       video.removeEventListener('loadedmetadata', handleMetadata);
+      video.removeEventListener('seeked', ensureFrame);
       window.removeEventListener('scroll', requestFrame);
       window.removeEventListener('resize', requestFrame);
       delete sequence.dataset.scrollStep;
@@ -129,8 +156,8 @@ export default function SearchScrollVideo({
       tabIndex={-1}
       aria-hidden="true"
     >
-      <source src="/media/home/search-to-goal-v1.webm" type="video/webm" />
-      <source src="/media/home/search-to-goal-v1.mp4" type="video/mp4" />
+      <source src="/media/home/search-to-goal-scroll-v2.webm" type="video/webm" />
+      <source src="/media/home/search-to-goal-scroll-v2.mp4" type="video/mp4" />
     </video>
   );
 }
