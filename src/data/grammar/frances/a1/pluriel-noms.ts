@@ -48,14 +48,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El plural en francés: la regla general y las excepciones',
+      heading: '¿Cómo se forma el plural de los sustantivos en francés?',
       paragraphs: [
         'La mayoría de los sustantivos franceses forman el plural añadiendo -s al singular, exactamente igual que en español: "un étudiant → des étudiants", "une ville → des villes", "un professeur → des professeurs". Esta regla abarca la gran mayoría de los sustantivos del idioma.',
         'Sin embargo, hay varios grupos de excepciones importantes que debes conocer desde A1 porque aparecen constantemente: los sustantivos en -al, en -eau y en -eu tienen patrones propios de pluralización.',
       ],
     },
     {
-      heading: '-al → -aux: el cambio más importante',
+      heading: '¿Cómo es el plural de las palabras en -al en francés?',
       paragraphs: [
         'Los sustantivos terminados en -al hacen el plural en -aux: "un journal" → "des journaux" (periódicos), "un animal" → "des animaux" (animales), "un hôpital" → "des hôpitaux" (hospitales), "un cheval" → "des chevaux" (caballos), "un festival" → "des festivals" (excepción: festivales conserva -s).',
         'Esta es la excepción más frecuente y la más importante para el nivel A1. "Journal" y "animal" son palabras de uso diario que aparecerán constantemente.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Sustantivos que no cambian en plural',
+      heading: '¿Qué sustantivos no cambian en plural en francés?',
       paragraphs: [
         'Si un sustantivo ya termina en -s, -x o -z en singular, no cambia en plural: "un bras → des bras" (brazos), "un choix → des choix" (elecciones), "un nez → des nez" (narices). Solo el artículo y el contexto indican que es plural.',
         'Es importante reconocer este patrón al leer y escuchar, ya que la marca del plural (-s en francés) es muda en pronunciación — "les livres" y "le livre" se distinguen solo por el artículo en la lengua oral.',

@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar el pretérito perfeito',
+      heading: '¿Cuándo se usa el pretérito perfeito en portugués?',
       paragraphs: [
         'El pretérito perfeito se usa para narrar acciones que ocurrieron una vez, en un momento específico, o cuyo inicio o fin están claramente delimitados: "Ontem encontrei um amigo." También se usa para una serie de acciones consecutivas que avanzan la narración: "Cheguei, peguei meu saco e me sentei."',
         'Los marcadores temporales que suelen acompañar el pretérito perfeito son: ontem, a semana passada, há dois anos, de repente, de súbito, naquele momento, durante (con duración definida y terminada).',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar el imperfeito',
+      heading: '¿Cuándo se usa el pretérito imperfeito en portugués?',
       paragraphs: [
         'El imperfeito se usa para describir el contexto o escenario de una historia: "Era noite, a rua estava silenciosa e um vento frio soprava." También para hablar de hábitos o rutinas pasadas: "Quando era criança, eu lia muito." Y para estados emocionales o físicos: "Ela era feliz. Ele tinha fome."',
         'Los marcadores del imperfeito incluyen: sempre, frequentemente, às vezes, todos os dias, cada semana, antigamente, naquela época, quando eu era + adjetivo de idade/etapa.',

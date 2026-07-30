@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Próclisis: el pronombre ANTES del verbo',
+      heading: '¿Cuándo va el pronombre antes del verbo (próclise) en portugués?',
       paragraphs: [
         'La próclisis (pronombre antes del verbo) ocurre en estos contextos: 1) Después de negación: "Não me vê", "Nunca te ajudo". 2) Con adverbios: "Sempre me ajuda", "Já me viu". 3) En oraciones subordinadas: "Se me chamares, venho", "Quando me vir, cumprimenta-me".',
         'En portugués brasileño, la próclisis es mucho más común que en portugués europeo, especialmente en inicio de frase: brasileño "Eu te amo" vs europeo "Amo-te".',
@@ -76,7 +76,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Objeto directo vs indirecto: distinción importante',
+      heading: '¿Cómo se distingue el objeto directo del indirecto en portugués?',
       paragraphs: [
         'Objeto directo: la acción recae directamente sobre la persona: "Ele me vê" (me ve a mí). Objeto indirecto: la acción beneficia a la persona: "Ele me dá um livro" (me da un libro a mí, a mí me da).',
         'En portugués, el mismo pronombre (me/te/nos/vos) funciona para ambos. Pero con tercera persona, se distingue: "o/a" para directo (lo/la ve), "lhe" para indirecto (le da).',

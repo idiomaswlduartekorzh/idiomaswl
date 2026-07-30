@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La forma potencial en japones: como decir "puedo hacer algo"',
+      heading: '¿Cómo se forma el potencial para decir "puedo hacer algo"?',
       paragraphs: [
         'La forma potencial es esencial para hablar de tus habilidades en japones. Para verbos del Grupo 1, la regla es cambiar la vocal final de う a え y agregar る: 書く→書ける, 飲む→飲める, 話す→話せる. Para el Grupo 2, agrega られる: 食べる→食べられる, 見る→見られる.',
         'Los dos irregulares son する→できる y くる→こられる. El verbo できる es especialmente util: 日本語ができます = Se japones / Puedo hablar japones.',
       ],
     },
     {
-      heading: 'El potencial con が y la contraccion coloquial',
+      heading: '¿Por qué el potencial usa が y cómo se contrae en coloquial?',
       paragraphs: [
         'Con el potencial, el objeto de la accion frecuentemente va con が en lugar de を: 日本語が話せます (no 日本語を). Esta es una diferencia importante del japones estandar.',
         'En japones coloquial, el Grupo 2 a veces pierde la ら: 食べれる en lugar de 食べられる. Este fenomeno se llama "ら抜き言葉" (ra-nuki kotoba) y aunque es muy comun en el habla, evitalo en escribir formal.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga la forma potencial en cada grupo verbal?',
+      paragraphs: [
+        'La forma potencial se construye según el grupo. Grupo 1 (godan): se cambia la última -u por -eru: 書く→書ける (poder escribir), 話す→話せる, 読む→読める. Grupo 2 (ichidan): se quita る y se añade られる: 食べる→食べられる (poder comer), 見る→見られる. Irregulares: する→できる (poder hacer), 来る→来られる (こられる). Todos los potenciales se conjugan luego como verbos del grupo 2. Un rasgo importante: el objeto pasa de を a が con el potencial: 日本語が話せます (puedo hablar japonés), no 日本語を話せます en registro cuidado. La trampa para el hispanohablante es doble: recordar el cambio を→が y no confundir 食べられる (potencial) con el idéntico pasivo; en habla coloquial se abrevia a 食べれる (ら抜き言葉).',
       ],
     },
   ],

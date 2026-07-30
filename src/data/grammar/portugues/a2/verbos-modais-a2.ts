@@ -59,6 +59,33 @@ const topic: GrammarTopic = {
         '"Ter que" expresa obligación concreta e ineludible: "Tenho que trabalhar amanhã" (tengo que trabajar mañana — no hay opción). "Precisar" expresa necesidad: "Preciso dormir mais" (necesito dormir más).',
       ],
     },
+    {
+      heading: '¿Cuáles son los verbos modales en portugués?',
+      paragraphs: [
+        'Son los que se combinan con un infinitivo para matizar la acción: posibilidad, obligación, necesidad o capacidad. Esta tabla reúne los principales con su matiz y un ejemplo:',
+      ],
+      table: [
+        ['Modal', 'Expresa', 'Ejemplo'],
+        ['poder', 'posibilidad / permiso', 'Posso entrar?'],
+        ['saber', 'habilidad aprendida', 'Sei nadar.'],
+        ['conseguir', 'logro / capacidad', 'Consigo terminar hoje.'],
+        ['dever', 'obligación / probabilidad', 'Você deve descansar.'],
+        ['precisar (de)', 'necesidad', 'Preciso de ajuda.'],
+        ['ter que', 'obligación ineludible', 'Tenho que ir.'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "saber", "poder" y "conseguir" en portugués?',
+      paragraphs: [
+        'Los tres se traducen a veces por "poder/saber" en español, pero en portugués se reparten: "saber" es habilidad aprendida y estable ("Sei dirigir" = sé conducir), "poder" es posibilidad o permiso circunstancial ("Posso dirigir hoje?" = ¿puedo conducir hoy?), y "conseguir" es lograr algo en un momento concreto pese a una dificultad ("Consegui abrir a porta" = logré abrir la puerta). Decir "sei falar inglês" afirma la competencia; "consigo falar inglês na reunião" afirma que lo logras en esa situación.',
+      ],
+    },
+    {
+      heading: '¿Se dice "preciso de estudar" o "preciso estudar"?',
+      paragraphs: [
+        'Se dice "preciso estudar": cuando "precisar" va seguido de un verbo en infinitivo, no lleva "de". La preposición solo aparece cuando le sigue un sustantivo: "preciso de ajuda", "preciso de dinheiro". Así: "Preciso estudar mais" (verbo) pero "Preciso de mais tempo" (sustantivo). Es un error muy común calcar el "de" del sustantivo al infinitivo. Con los demás modales (poder, dever, conseguir, saber) nunca hay preposición: "posso ir", "devo sair", "consigo fazer".',
+      ],
+    },
   ],
 
   visual: {

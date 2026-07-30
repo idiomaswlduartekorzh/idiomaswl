@@ -63,7 +63,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Da, in y su: el resto de contracciones',
+      heading: '¿Cómo se contraen da, in y su con el artículo?',
       paragraphs: [
         'Las otras tres preposiciones que se contraen son da (procedencia/movimiento), in (lugar) y su (encima). Siguen exactamente el mismo patrón:',
       ],

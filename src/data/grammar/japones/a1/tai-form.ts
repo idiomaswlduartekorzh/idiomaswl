@@ -48,17 +48,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: '〜たい: expresar deseos en japonés A1',
+      heading: '¿Cómo se expresan los deseos con 〜たい en japonés?',
       paragraphs: [
         'La forma 〜たい (tai) es esencial desde el nivel A1 porque permite expresar deseos personales de forma natural. La formación es muy predecible: toma la raíz ます del verbo (lo que queda cuando quitas ます) y añade たいです. 食べます → 食べ + たいです = 食べたいです (quiero comer). いきます → いき + たいです = いきたいです (quiero ir).',
         'La singularidad importante es que たい funciona gramaticalmente como un adjetivo い, no como un verbo. Esto significa que su negación no es ません sino たくないです (igual que adj-い: おおきい → おおきくない). Y su forma pasada es たかったです (quería hacer).',
       ],
     },
     {
-      heading: 'たい en primera persona vs tercera persona',
+      heading: '¿Por qué たい cambia entre primera y tercera persona?',
       paragraphs: [
         'En japonés existe una distinción importante: 〜たい se usa libremente para hablar de los propios deseos (primera persona), pero para terceras personas se prefiere 〜たがっています (parece que quiere) o citar sus palabras directamente. Decir "彼は 食べたいです" suena como si leyeras la mente de otra persona, algo que el japonés evita.',
         'En A1, usa たい para hablar de ti mismo: 日本に 行きたいです (quiero ir a Japón), コーヒーを 飲みたいです (quiero beber café). Para preguntar al interlocutor también es natural: 何を 食べたいですか？(¿qué quieres comer?). Es para hablar sobre lo que TÚ quieres hacer.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma 〜たい a partir del verbo?',
+      paragraphs: [
+        'Se toma la raíz ます del verbo (la forma masu sin ます) y se le añade たい: 食べます → 食べたい (quiero comer), 行きます → 行きたい (quiero ir), 飲みます → 飲みたい (quiero beber). Lo importante es que 〜たい se conjuga como un adjetivo い, no como un verbo: el negativo es 食べたくない (no quiero comer) y el pasado 食べたかった (quería comer). El objeto del deseo puede llevar が en lugar de を: 水が飲みたい (quiero beber agua). La trampa para el hispanohablante es tratar たい como un verbo normal y conjugarlo con ません; en realidad sigue las reglas de los adjetivos い (くない / かった).',
       ],
     },
   ],

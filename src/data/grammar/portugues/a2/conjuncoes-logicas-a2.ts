@@ -69,6 +69,31 @@ const topic: GrammarTopic = {
         '"Além disso" introduce información adicional, equivalente a "además/asimismo". Se usa al inicio de una nueva oración o con coma: "O apartamento é amplo. Além disso, tem uma varanda linda." Es muy útil para estructurar argumentos y enumeraciones.',
       ],
     },
+    {
+      heading: '¿Cuáles son las conjunciones lógicas en portugués?',
+      paragraphs: [
+        'Se agrupan por la relación que expresan: consecuencia, contraste o adición. Cada una tiene un registro formal y un equivalente coloquial. Esta tabla las organiza:',
+      ],
+      table: [
+        ['Relación', 'Formal', 'Coloquial', 'Ejemplo'],
+        ['Consecuencia', 'portanto', 'então, por isso', 'Choveu, portanto ficamos.'],
+        ['Contraste', 'porém / contudo', 'mas', 'É bom, porém caro.'],
+        ['Contraste', 'entretanto', 'no entanto', 'Tentei; entretanto, falhei.'],
+        ['Adición', 'além disso', 'e também', 'É bom. Além disso, é barato.'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "porém" y "mas" en portugués?',
+      paragraphs: [
+        'Las dos expresan contraste (pero/sin embargo), pero se distinguen por registro y posición. "Mas" es la conjunción coloquial y va siempre al inicio de la segunda oración: "É caro, mas vale a pena". "Porém" es más formal y puede ir al inicio o intercalada entre comas: "É caro; porém, vale a pena" o "É caro; vale a pena, porém". En la escritura culta y en el examen CELPE-Bras se prefiere "porém/contudo/entretanto"; en la conversación, "mas" domina. Nunca se combinan ("mas porém" es un error).',
+      ],
+    },
+    {
+      heading: '¿Cómo se puntúan las conjunciones lógicas en portugués?',
+      paragraphs: [
+        'Las conjunciones como portanto, porém, contudo, entretanto y além disso van normalmente precedidas de coma o punto y coma y seguidas de coma cuando se intercalan: "Estudei muito; portanto, passei". Al abrir una oración nueva, llevan coma detrás: "Além disso, o preço é justo". Esta puntuación las separa del resto de la frase y marca la pausa lógica. Olvidar la coma es el error de escritura más frecuente en textos de nivel A2; conviene fijarse en que estas palabras "respiran" entre comas.',
+      ],
+    },
   ],
 
   visual: {

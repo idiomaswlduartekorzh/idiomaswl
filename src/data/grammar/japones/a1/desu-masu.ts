@@ -43,17 +43,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Desu y masu: las formas de cortesía del japonés A1',
+      heading: '¿Qué son las formas です y ます en japonés?',
       paragraphs: [
         'El japonés tiene múltiples niveles de formalidad. Para principiantes, la forma estándar y segura es el estilo です/ます (desu-masu style), que es formal sin llegar a ser demasiado ceremonioso. Es el equivalente a hablar de "usted" de forma educada — apropiado para hablar con desconocidos, profesores, o en situaciones formales.',
         'です funciona como el verbo "ser/estar" en identificación: わたしは がくせいです = "Yo soy estudiante". ます termina los verbos de acción: たべます = "como", のみます = "bebo", いきます = "voy". Estos dos terminadores te permiten construir cientos de frases desde A1.',
       ],
     },
     {
-      heading: 'Negaciones y preguntas en desu-masu',
+      heading: '¿Cómo se niega y se pregunta con です/ます?',
       paragraphs: [
         'La negación de です es ではありません (de wa arimasen) en estilo formal, o じゃないです (ja nai desu) en estilo más coloquial. La negación de ます es ません (masen): たべません = "no como", いきません = "no voy".',
         'Las preguntas se forman añadiendo la partícula か (ka) al final de la frase. がくせいですか = ¿Eres estudiante? にほんごを べんきょうしますか = ¿Estudias japonés? En japonés escrito formal se usa el signo de interrogación か sin signo de cierre occidental.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre です y ます en japonés?',
+      paragraphs: [
+        'Las dos marcan el registro cortés (丁寧語, teineigo), pero se usan con palabras distintas. です (desu) acompaña a sustantivos y adjetivos: 学生です (soy estudiante), 高いです (es caro). ます (masu) es la terminación cortés de los VERBOS: 食べます (como), 行きます (voy). Es decir, です cierra frases sin verbo de acción (con "ser/estar" implícito) y ます conjuga los verbos. La trampa para el hispanohablante es no mezclarlos: nunca "食べですます". En negativo, です → じゃありません/ではありません y ます → ません (食べません = no como). El par です/ます es el registro estándar cortés y el que se enseña primero en A1.',
       ],
     },
   ],

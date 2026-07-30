@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El futuro en alemán: Präsens primero',
+      heading: '¿Cómo se expresa el futuro en alemán?',
       paragraphs: [
         'A diferencia del español (donde "voy a + infinitivo" o el futuro simple son las opciones estándar), el alemán cotidiano usa el Präsens con una expresión de tiempo para hablar del futuro: Ich komme morgen (Mañana vengo/voy a venir). Esta construcción es más natural y frecuente que el Futur I en conversaciones del día a día.',
         'Las expresiones temporales más útiles para el futuro son: morgen (mañana), übermorgen (pasado mañana), bald (pronto), später (más tarde), nächste Woche (la semana que viene), nächsten Monat (el mes que viene), nächstes Jahr (el año que viene), in drei Tagen (en tres días), in einem Monat (en un mes).',
       ],
     },
     {
-      heading: 'Werden: conjugación y usos',
+      heading: '¿Cómo se conjuga y usa werden en alemán?',
       paragraphs: [
         '"Werden" es un verbo irregular con cambio vocálico en du y er/sie/es: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden. La estructura del Futur I sigue la misma regla que los modales: werden en posición 2 y el infinitivo al final de la frase.',
         'Beispiele: Ich werde nächstes Jahr in Deutschland wohnen. / Du wirst das Examen bestehen! / Es wird morgen regnen. / Wir werden zusammen arbeiten. El infinitivo siempre cierra la frase.',
       ],
     },
     {
-      heading: 'Cuándo usar Futur I vs. Präsens',
+      heading: '¿Cuándo se usa Futur I y cuándo Präsens en alemán?',
       paragraphs: [
         'El Futur I (werden + Infinitiv) se usa principalmente para: predicciones sobre el futuro ("Es wird morgen kalt sein" — Mañana hará frío), promesas solemnes ("Ich werde dich nie vergessen" — Nunca te olvidaré), predicciones inciertas ("Sie wird wahrscheinlich kommen" — Probablemente vendrá) y el futuro en lenguaje escrito formal.',
         'El Präsens con expresión temporal se usa para: planes concretos ("Morgen gehe ich ins Kino"), compromisos personales ("Ich komme um 8 Uhr"), horarios ("Der Zug fährt um 15 Uhr ab") y el habla cotidiana en general. En A1, es suficiente con dominar el Präsens + tiempo y reconocer werden cuando aparece.',

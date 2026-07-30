@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación del plus-que-parfait',
+      heading: '¿Cómo se forma el plus-que-parfait en francés?',
       paragraphs: [
         'Con avoir: avais, avais, avait, avions, aviez, avaient + participio pasado. Ejemplos: j\'avais compris, tu avais lu, il avait dit, nous avions vu, vous aviez pris, ils avaient fini.',
         'Con être (verbos de movimiento y todos los verbos reflexivos): étais, étais, était, étions, étiez, étaient + participio pasado. El participio concuerda en género y número con el sujeto. Ejemplos: Elle était sortie. Ils s\'étaient réveillés tôt. Nous étions rentrés tard.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Usos principales del plus-que-parfait',
+      heading: '¿Para qué se usa el plus-que-parfait en francés?',
       paragraphs: [
         'El uso principal es expresar anterioridad: algo que ya había ocurrido antes de otra acción pasada. Esta estructura aparece muy frecuentemente con quand/lorsque: "Quand tu es arrivé, j\'avais déjà préparé le dîner." O con des que/une fois que: "Une fois qu\'il avait fini, il est sorti."',
         'También se usa en discurso indirecto pasado, cuando el verbo principal está en pasado y queremos reportar algo que ocurrió aún antes: "Elle a dit qu\'elle avait déjà vu ce film." Y en condicionales de tipo 3 (hipótesis irreales en el pasado): "Si j\'avais étudié, j\'aurais réussi l\'examen."',

@@ -59,6 +59,20 @@ const topic: GrammarTopic = {
         ['они', 'будут', 'Они будут учиться (Van a estudiar)'],
       ],
     },
+    {
+      heading: '¿Cómo se conjuga быть en futuro?',
+      paragraphs: [
+        'El verbo быть (ser/estar/haber) no tiene presente pero sí un futuro propio que se usa muchísimo: я буду, ты будешь, он/она будет, мы будем, вы будете, они будут. Sirve para "estaré/habrá": Завтра я буду дома (mañana estaré en casa), Там будет концерт (allí habrá un concierto).',
+        'Además, буду/будешь... es la pieza clave del futuro imperfectivo: se combina con el infinitivo imperfectivo para expresar acciones futuras en proceso o repetidas: Я буду читать (leeré / estaré leyendo). La trampa para el hispanohablante es que быть no aparece en presente (Я дома = estoy en casa, sin verbo) pero reaparece obligatoriamente en pasado (был) y en futuro (буду).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre el futuro imperfectivo y el perfectivo?',
+      paragraphs: [
+        'El ruso expresa el futuro de dos maneras según el aspecto. El futuro IMPERFECTIVO (acción en proceso, repetida o sin final marcado) se forma con буду/будешь... + infinitivo imperfectivo: Я буду писать письмо (estaré escribiendo la carta). El futuro PERFECTIVO (acción única con resultado completo) NO usa быть: se conjuga el propio verbo perfectivo en presente, pero con sentido futuro: Я напишу письмо (escribiré la carta [y la terminaré]).',
+        'La trampa para el hispanohablante es que una forma que "parece presente" (напишу, de написать) en realidad significa futuro por ser perfectiva. La elección entre буду писать y напишу no es de tiempo, sino de aspecto: proceso vs resultado.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

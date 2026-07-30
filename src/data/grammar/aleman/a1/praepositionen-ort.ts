@@ -48,21 +48,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las Wechselpräpositionen: Dativo o Acusativo según el significado',
+      heading: '¿Qué son las Wechselpräpositionen en alemán?',
       paragraphs: [
         'Las nueve preposiciones de lugar más importantes del alemán (in, an, auf, über, unter, neben, vor, hinter, zwischen) se llaman Wechselpräpositionen porque alternan entre dos casos: Dativo para responder ¿Wo? (¿Dónde?) y Acusativo para responder ¿Wohin? (¿A dónde?). En A1 nos centramos en el Dativo (ubicación estática).',
         'Ejemplos comparativos: Das Buch liegt auf dem Tisch (Wo? → Dativ: auf dem). / Ich lege das Buch auf den Tisch (Wohin? → Akkusativ: auf den). La misma preposición "auf" con dos casos distintos según si hay movimiento o no.',
       ],
     },
     {
-      heading: 'Dativo: dem para masculino y neutro, der para femenino',
+      heading: '¿Cómo se declinan las preposiciones de lugar en dativo?',
       paragraphs: [
         'En Dativo, el artículo definido cambia: masculino (der) → dem, neutro (das) → dem, femenino (die) → der, plural (die) → den (y los sustantivos plurales añaden -n). Esto es diferente del acusativo donde solo cambiaba el masculino — en dativo TODOS los géneros cambian.',
         'Contracciones habituales en A1: in + dem = im (Das Buch ist im Regal). / an + dem = am (Er hängt am Haken). Estas contracciones son obligatorias — no se dice "in dem" cuando hay artículo definido.',
       ],
     },
     {
-      heading: 'Preposiciones siempre con Dativo',
+      heading: '¿Qué preposiciones van siempre con dativo en alemán?',
       paragraphs: [
         'Además de las Wechselpräpositionen, hay preposiciones que SIEMPRE rigen Dativo (se ven en el tema 19): mit, bei, nach, seit, von, zu, aus, gegenüber. En A1 con preposiciones de lugar, es suficiente dominar las Wechselpräpositionen en su uso estático.',
         'Práctica recomendada: describe objetos en una habitación. Empieza con el artículo definido: "Der Tisch steht in der Ecke. Die Lampe hängt über dem Tisch. Das Buch liegt auf dem Tisch."',

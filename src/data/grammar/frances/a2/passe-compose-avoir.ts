@@ -50,14 +50,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El passé composé con avoir: la clave para hablar del pasado en francés',
+      heading: '¿Cómo se forma el passé composé con avoir en francés?',
       paragraphs: [
         'El passé composé es el tiempo pasado más usado en el francés hablado. A diferencia del español, que distingue entre pretérito perfecto (he comido) e indefinido (comí), el francés oral usa casi exclusivamente el passé composé para ambas funciones. J\'ai mangé equivale tanto a "he comido" como a "comí".',
         'La mayoría de verbos franceses forman el passé composé con avoir como auxiliar. La regla es simple: conjugar avoir en presente y añadir el participio pasado del verbo principal. Los verbos -ER son los más regulares: parler → j\'ai parlé, manger → j\'ai mangé, regarder → j\'ai regardé.',
       ],
     },
     {
-      heading: 'Los participios pasados irregulares más importantes',
+      heading: '¿Cuáles son los participios pasados irregulares en francés?',
       paragraphs: [
         'Algunos verbos muy frecuentes tienen participios pasados irregulares que debes memorizar. Los más importantes son: faire → fait (j\'ai fait), prendre → pris (j\'ai pris), voir → vu (j\'ai vu), boire → bu (j\'ai bu), dire → dit (j\'ai dit), écrire → écrit (j\'ai écrit), mettre → mis (j\'ai mis), savoir → su (j\'ai su), pouvoir → pu (j\'ai pu), vouloir → voulu (j\'ai voulu).',
         'La negación en el passé composé sigue la regla general: ne y pas rodean el auxiliar avoir. Je n\'ai pas mangé (no he comido / no comí). Tu n\'as pas fini (no has terminado). Elle n\'a pas vu le film (no vio la película). El participio pasado siempre va después de pas.',
@@ -70,6 +70,12 @@ const topic: GrammarTopic = {
         ['faire', 'fait', 'nous avons fait'],
         ['prendre', 'pris', 'vous avez pris'],
         ['voir', 'vu', 'ils ont vu'],
+      ],
+    },
+    {
+      heading: '¿El passé composé equivale a "he comido" o a "comí"?',
+      paragraphs: [
+        'A las dos. El francés hablado no distingue como el español entre pretérito perfecto ("he comido") e indefinido ("comí"): usa el passé composé para ambos. "J\'ai mangé" puede traducirse por "he comido" o "comí" según el contexto en español; en francés es una sola forma. Por eso es el tiempo pasado más rentable del A2: con avoir/être + participio pasado ya puedes contar todo lo que ocurrió. La distinción fina que sí importa en francés no es perfecto/indefinido, sino passé composé (acción puntual y acabada) frente a imparfait (descripción o costumbre), que se estudia aparte.',
       ],
     },
   ],

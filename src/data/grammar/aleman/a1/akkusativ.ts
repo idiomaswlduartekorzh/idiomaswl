@@ -46,21 +46,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El caso acusativo: primer encuentro con los casos alemanes',
+      heading: '¿Qué es el caso acusativo en alemán?',
       paragraphs: [
         'El alemán tiene cuatro casos (Kasus): Nominativo, Akkusativ, Dativ y Genitiv. En A1 aprendemos los dos primeros. El nominativo es el caso del sujeto (¿Wer macht das? — ¿Quién hace eso?). El acusativo es el caso del objeto directo (¿Was macht er? / ¿Wen sieht sie? — ¿Qué hace él? / ¿A quién ve ella?).',
         'La gran ventaja del acusativo para principiantes: SOLO cambia el artículo masculino singular. Der → den, ein → einen, kein → keinen. Femenino, neutro y plural quedan exactamente igual que en nominativo. Esta asimetría puede parecer arbitraria, pero facilita enormemente el aprendizaje inicial.',
       ],
     },
     {
-      heading: 'Verbos transitivos que piden acusativo',
+      heading: '¿Qué verbos rigen acusativo en alemán?',
       paragraphs: [
         'Los verbos transitivos en alemán piden un objeto directo en acusativo. Los más frecuentes en A1: haben (tener), sehen (ver), kaufen (comprar), essen (comer), trinken (beber), nehmen (tomar), brauchen (necesitar), kennen (conocer a), lieben (amar), hören (escuchar), lesen (leer).',
         'Ejemplo con masculino: Ich kaufe einen Tisch (no "ein Tisch"). Con femenino: Ich kaufe eine Lampe (sin cambio). Con neutro: Ich kaufe ein Buch (sin cambio). El único cambio ocurre cuando el objeto es masculino singular.',
       ],
     },
     {
-      heading: 'Preguntas de comprobación: ¿Was? y ¿Wen?',
+      heading: '¿Cómo se identifica el acusativo en alemán (Was/Wen)?',
       paragraphs: [
         'Para saber si un sustantivo está en acusativo, pregunta: ¿Was? (¿Qué?) para cosas o ¿Wen? (¿A quién?) para personas. Ich kaufe den Tisch → Was kaufe ich? → den Tisch (acusativo). Er sieht die Frau → Wen sieht er? → die Frau (acusativo femenino, sin cambio visible).',
         'Esta prueba de las preguntas es útil para identificar el acusativo incluso cuando el artículo no cambia visiblemente (femenino, neutro, plural). En esos casos, el caso es acusativo aunque la forma del artículo sea idéntica al nominativo.',

@@ -68,6 +68,31 @@ const topic: GrammarTopic = {
         'En el habla coloquial brasileña, es también muy común escuchar "Tem quanto tempo que você mora aqui?" con el verbo "ter" en lugar de "haver". Esta variante es gramaticalmente aceptada en el habla informal, aunque en contextos formales se prefiere "há" o "faz".',
       ],
     },
+    {
+      heading: '¿Cómo se dice "hace X tiempo que…" en portugués?',
+      paragraphs: [
+        'Con "há" o "faz" seguido de la expresión de tiempo, y el verbo en presente si la acción continúa. Las dos formas son equivalentes; "há" es más formal, "faz" más coloquial. Esta tabla muestra las estructuras posibles:',
+      ],
+      table: [
+        ['Estructura', 'Ejemplo', 'Español'],
+        ['Há + tiempo + que', 'Há dois anos que moro aqui.', 'Hace dos años que vivo aquí.'],
+        ['Faz + tiempo + que', 'Faz dois anos que moro aqui.', 'Hace dos años que vivo aquí.'],
+        ['Verbo + há + tiempo', 'Moro aqui há dois anos.', 'Vivo aquí desde hace dos años.'],
+        ['Há quanto tempo…?', 'Há quanto tempo você mora aqui?', '¿Cuánto hace que vives aquí?'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "há" y "faz" para el tiempo?',
+      paragraphs: [
+        'Prácticamente ninguna en el significado: ambas expresan tiempo transcurrido. La diferencia es de registro. "Há" (del verbo haver) es más formal y domina en la escritura y en el examen; "faz" (del verbo fazer) es la forma viva del habla brasileña. En Brasil también se oye "tem dois anos que…" (con ter), pero es coloquial y conviene evitarla al escribir. Regla práctica: para un texto o examen, usa "há"; para conversar, "faz" suena de lo más natural.',
+      ],
+    },
+    {
+      heading: '¿Cómo se distingue "há" de duración del "há" de existencia?',
+      paragraphs: [
+        'Por lo que sigue al verbo. Si a "há" le sigue una expresión de tiempo (dois anos, uma semana, muito tempo), indica duración: "Há dois anos que moro aqui". Si le sigue un sustantivo o un artículo, indica existencia (equivale a "hay"): "Há um banco na esquina". El mismo "há" cubre las dos funciones, así que el contexto decide. Truco: si puedes cambiarlo por "faz", es de tiempo; si puedes cambiarlo por "tem/existe", es de existencia.',
+      ],
+    },
   ],
 
   visual: {

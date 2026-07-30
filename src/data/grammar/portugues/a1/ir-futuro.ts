@@ -64,6 +64,18 @@ const topic: GrammarTopic = {
         'En la práctica oral: "Vou lá" (Voy allá — movimiento) vs "Vou fazer isso" (Voy a hacer eso — futuro). Cuando aparece un infinitivo después de vou/vai/vamos/vão, siempre es futuro.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "vou estudar" y el futuro "estudarei"?',
+      paragraphs: [
+        'Las dos significan "estudiaré", pero "vou estudar" (ir + infinitivo) es la forma viva del habla cotidiana, mientras que "estudarei" (futuro simple) suena formal, escrito o enfático, y en Brasil casi solo aparece en textos y noticias. Para A1 basta con dominar ir + infinitivo; el futuro simple se reconoce al leer, pero no hace falta producirlo. Ventaja para el hispanohablante: "vou estudar" calca exactamente el "voy a estudiar" español, incluso se puede omitir el "a" que el español sí exige.',
+      ],
+    },
+    {
+      heading: '¿Cómo se niega el futuro próximo en portugués?',
+      paragraphs: [
+        'Se pone "não" delante del verbo ir conjugado: "Não vou trabalhar hoje" (no voy a trabajar hoy), "Ela não vai vir" (ella no va a venir), "Nós não vamos sair" (no vamos a salir). El "não" nunca se coloca ante el infinitivo; siempre va antes de vou/vai/vamos/vão. Para preguntar basta la entonación: "Você vai estudar?" (¿vas a estudiar?), sin invertir el orden.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

@@ -91,6 +91,24 @@ const topic: GrammarTopic = {
         'Otro error: usar "will" para planes ya decididos. "I will go to the cinema tomorrow (I already have tickets)" debería ser "I\'m going to the cinema tomorrow" o "I\'m going to go to the cinema tomorrow".',
       ],
     },
+    {
+      heading: '¿Cómo se forma el futuro con "will" en inglés?',
+      paragraphs: [
+        'Con will + verbo en forma base, igual para todas las personas: "I will help", "she will call". No lleva -s ni "to". Contracción: \'ll ("I\'ll", "they\'ll"). Negativo: won\'t (will not). Pregunta: se invierte ("Will you come?").',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "will" para el futuro?',
+      paragraphs: [
+        'Para decisiones del momento ("I\'ll answer the phone"), predicciones sin evidencia ("It will rain tomorrow"), promesas y ofrecimientos ("I\'ll help you"). Para planes ya decididos se prefiere "going to".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "will" y "going to"?',
+      paragraphs: [
+        '"will" para decisiones espontáneas y predicciones ("I think it will be fine"). "going to" para planes ya decididos y predicciones con evidencia ("I\'m going to study tonight", "Look, it\'s going to rain"). En planes concretos, el inglés prefiere "going to".',
+      ],
+    },
   ],
 
   visual: {

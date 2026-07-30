@@ -60,10 +60,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El caso prepositivo: cómo cambian los sustantivos',
+      heading: '¿Cómo cambian los sustantivos en el caso prepositivo?',
       paragraphs: [
         'Con В o НА para ubicación, el sustantivo cambia al caso prepositivo (предложный падеж). Regla básica: sustantivos masculinos y neutros añaden -е (стол → на столе, город → в городе). Sustantivos femeninos en -а cambian -а por -е (школа → в школе, работа → на работе).',
         'Excepción importante: sustantivos en -ия (Россия, станция) o -ий/-ие (здание) forman el prepositivo en -и: в России, на станции, в здании. Esta es la excepción más frecuente del A1.',
+      ],
+    },
+    {
+      heading: '¿Qué palabras exigen на en vez de в para decir "en"?',
+      paragraphs: [
+        'Aunque в es lo habitual para "dentro de" (в доме = en la casa, в городе = en la ciudad), un grupo de sustantivos exige на por convención y hay que memorizarlos. Van con на: eventos y actividades (на работе = en el trabajo, на уроке = en clase, на концерте = en el concierto), superficies abiertas (на столе = en la mesa, на улице = en la calle) y ciertas zonas geográficas (на почте = en correos, на вокзале = en la estación, на юге = en el sur).',
+        'La trampa para el hispanohablante es que no hay una regla lógica perfecta: "en el trabajo" es на работе pero "en la oficina" es в офисе. Conviene aprender de memoria la lista de palabras con на, porque en todos los demás casos "en un lugar" se dice con в + prepositivo.',
       ],
     },
   ],

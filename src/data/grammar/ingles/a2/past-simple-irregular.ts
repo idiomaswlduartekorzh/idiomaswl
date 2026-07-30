@@ -95,6 +95,24 @@ const topic: GrammarTopic = {
         'Cuando no estés seguro, intenta pensar si el pasado con -ed "suena raro": "goed" suena claramente incorrecto; "visited" suena natural. Este instinto mejora con la práctica y la exposición constante al inglés.',
       ],
     },
+    {
+      heading: '¿Cuáles son los verbos irregulares más comunes en past simple?',
+      paragraphs: [
+        'Los más frecuentes: go → went, have → had, do → did, say → said, get → got, make → made, come → came, see → saw, take → took, know → knew, think → thought, give → gave. No siguen la regla del -ed y hay que memorizarlos.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el past simple de los verbos irregulares?',
+      paragraphs: [
+        'Cada verbo tiene su propia forma pasada que hay que aprender: "I went", "she had", "they saw". Es igual para todas las personas (no cambia con el sujeto). En negativo y en preguntas se usa "did" y el verbo vuelve a su forma base: "I didn\'t go", "Did you see?".',
+      ],
+    },
+    {
+      heading: '¿Por qué el verbo vuelve a la forma base después de "did"?',
+      paragraphs: [
+        'Porque la marca de pasado ya está en el auxiliar "did". Se dice "Did you go?" y "I didn\'t go" (no "did you went"). El error típico es duplicar el pasado; el verbo principal solo va en pasado en la frase afirmativa ("I went").',
+      ],
+    },
   ],
 
   visual: {

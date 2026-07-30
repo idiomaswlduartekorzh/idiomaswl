@@ -59,10 +59,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo memorizar la diferencia entre 입니다 y 합니다',
+      heading: '¿Cuál es la diferencia entre 입니다 y 합니다 en coreano?',
       paragraphs: [
         '"입니다" viene de 이다 (ser/estar) y se usa SOLO después de sustantivos. 저는 학생입니다 = Soy estudiante (학생 = sustantivo). "합니다" viene de 하다 y se adhiere a verbos: 공부합니다 = estudio (공부하다 → 합니다).',
         'Para los demás verbos: si la raíz termina en vocal, añade ㅂ니다 como consonante final (가 → 갑니다). Si termina en consonante, añade 습니다 (먹 → 먹습니다). La regla es la misma que en 해요 pero con terminación formal.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma la terminación formal -ㅂ니다/습니다?',
+      paragraphs: [
+        'Se parte de la raíz del verbo (el infinitivo sin 다): si la raíz termina en vocal, se añade -ㅂ니다 (가다 → 갑니다); si termina en consonante, se añade -습니다 (먹다 → 먹습니다). Para preguntar, la terminación pasa a -ㅂ니까?/-습니까? (갑니까? / 먹습니까?). Es el registro más formal (합니다체), propio de presentaciones, discursos, noticias y el trato con clientes; en la conversación cotidiana con conocidos se prefiere el 해요체, igualmente cortés pero más cercano. El verbo 이다 ("ser") en este registro es 입니다: 저는 학생입니다 (soy estudiante).',
       ],
     },
   ],

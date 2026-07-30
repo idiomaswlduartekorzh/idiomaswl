@@ -40,8 +40,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es el instrumental?', paragraphs: ['El instrumental (творительный падеж) expresa tres cosas: 1) con qué (instrumento), 2) quién eres (rol/profesión), 3) después de ciertas preposiciones.', 'Es uno de los seis casos principales del ruso.']},
-    {heading: 'Instrumental para instrumento', paragraphs: ['"Я пишу ручкой" — escribo con bolígrafo (instrumental). "Она режет нож" — corta con cuchillo (instrumental).', 'Estructura: verbo transitivo + instrumento en instrumental (no acusativo).']},
-    {heading: 'Instrumental en predicado nominal', paragraphs: ['"Она учитель" (simple) vs "Она работает учителем" (instrumental en predicado). Después de быть, становиться, работать, считаться, казаться.', '"Он был врачом" — era doctor (instrumental en pasado).']},
+    {heading: '¿Cómo se usa el instrumental para el instrumento o medio?', paragraphs: ['"Я пишу ручкой" — escribo con bolígrafo (instrumental). "Она режет нож" — corta con cuchillo (instrumental).', 'Estructura: verbo transitivo + instrumento en instrumental (no acusativo).']},
+    {heading: '¿Cuándo se usa el instrumental en el predicado nominal?', paragraphs: ['"Она учитель" (simple) vs "Она работает учителем" (instrumental en predicado). Después de быть, становиться, работать, считаться, казаться.', '"Он был врачом" — era doctor (instrumental en pasado).']},
     {heading: 'Instrumental después de preposiciones', paragraphs: ['перед (antes): "перед зданием" (antes del edificio). под (bajo): "под столом" (bajo la mesa). над (sobre): "над морем" (sobre el mar).', 'между (entre): "между нами" (entre nosotros). Todas estas preposiciones rigen instrumental.']},
     {heading: 'Formación por género y número', paragraphs: ['Masculino/Neutro: -ом (hard) / -ем (soft). "столом" (mesa), "полем" (campo).', 'Femenino: -ой (hard) / -ей (soft). "ручкой", "тетрадью". Plural: -ами / -ями. "столами", "книгами".']},
   ],

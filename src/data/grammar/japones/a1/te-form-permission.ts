@@ -49,17 +49,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'La te-form: la forma más versátil del japonés',
+      heading: '¿Por qué la te-form es la más versátil del japonés?',
       paragraphs: [
         'La te-form (て形, te-kei) es posiblemente la forma verbal más importante del japonés después del presente. Se usa para conectar verbos en secuencia (食べて、飲んで、話す), para dar instrucciones corteses (話してください), para pedir permiso (話してもいいですか), para el progresivo (話しています), y como base de docenas de otras construcciones. Dominar la te-form en A1 te abre las puertas de la gramática intermedia.',
         'La buena noticia: los verbos del grupo 2 (ru-verbos) son completamente regulares — solo quitas る y añades て: 食べる→食べて, 見る→見て, 起きる→起きて. Los verbos del grupo 1 (u-verbos) tienen varios patrones según la consonante final, pero cada patrón es sistemático y con práctica se automatizan.',
       ],
     },
     {
-      heading: 'Pedir permiso en japonés: てもいいですか',
+      heading: '¿Cómo se pide permiso en japonés con てもいいですか?',
       paragraphs: [
         'La forma 〜てもいいですか (te mo ii desu ka) es la manera estándar de pedir permiso en japonés formal. Literalmente significa algo como "¿está bien si hago...?". Para conceder el permiso: いいですよ (ii desu yo = sí, está bien) o どうぞ (dōzo = adelante). Para negarlo cortésmente: ちょっと... (chotto... = es un poco... / mejor no) — en japonés la negación directa suena brusca, por lo que se usa esta forma evasiva.',
         'Para instrucciones corteses se usa 〜てください (te kudasai = por favor haz...). Es cortés pero directo: ゆっくり 話してください (por favor habla despacio), もう一度 言ってください (por favor dilo una vez más). Más formal: 〜ていただけますか (te itadakemasu ka = ¿podría usted...?).',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice que algo está prohibido con la te-form?',
+      paragraphs: [
+        'La te-form es la base de varias estructuras clave. Para pedir permiso: 〜てもいいですか (¿puedo...?), 食べてもいいですか (¿puedo comer?). Para conceder permiso: 〜てもいいです (puedes...). Y para prohibir se usa 〜てはいけません (no se debe / está prohibido): ここで写真を撮ってはいけません (aquí no se pueden tomar fotos); en conversación casual se contrae a 〜ちゃだめ. La misma te-form sirve además para peticiones (〜てください, por favor) y para acciones en curso (〜ています). La trampa para el hispanohablante es memorizar bien la te-form de cada verbo (食べて, 飲んで, 行って, 話して), porque de ella dependen permiso, prohibición, petición y presente continuo.',
       ],
     },
   ],

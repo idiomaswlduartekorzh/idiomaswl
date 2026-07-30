@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Lui et leur: los pronombres COI más importantes',
+      heading: '¿Qué son los pronombres COI en francés (lui, leur)?',
       paragraphs: [
         'Los pronombres COI reemplazan un complemento introducido por à cuando se refiere a una persona. "Je parle à Marie" → "Je lui parle". "Je parle à mes amis" → "Je leur parle". Lui (singular) y leur (plural) son las formas de 3ª persona. Son invariables en género: lui puede reemplazar tanto a à lui (a él) como à elle (a ella).',
         'La posición es clave: el COI va siempre ANTES del verbo conjugado (o del auxiliar en los tiempos compuestos): "Je lui ai parlé" (Le hablé), "Il nous a envoyé un message" (Nos envió un mensaje).',
       ],
     },
     {
-      heading: 'Verbos que requieren COI con à + personne',
+      heading: '¿Qué verbos rigen COI con "à" + persona en francés?',
       paragraphs: [
         'Los verbos más frecuentes que usan à + persona son: parler à, téléphoner à, écrire à, donner à, envoyer à, dire à, demander à, répondre à, expliquer à, montrer à, prêter à. Todos ellos toman pronombres COI, no COD.',
         'Cuidado con la diferencia: "Je lui téléphone" (le llamo — COI) vs "Je l\'appelle" (le/la llamo — COD). Téléphoner exige à + personne → lui/leur. Appeler no: COD → le/la/les.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre COD y COI en francés?',
+      paragraphs: [
+        'El COD (complemento de objeto directo) responde a "¿qué? / ¿a quién?" sin preposición y usa me/te/le/la/nous/vous/les: "je le vois" (lo veo). El COI (complemento de objeto indirecto) responde a "¿a quién?" con la preposición à y usa me/te/lui/nous/vous/leur: "je lui parle" (le hablo). La diferencia decisiva está en la 3ª persona: le/la/les para COD, lui/leur para COI. Muchos verbos rigen COI (parler à, téléphoner à, écrire à, répondre à, offrir à, plaire à), y su preposición à no siempre coincide con el español, así que conviene memorizar la construcción con cada verbo para no confundir "je le téléphone" (❌) con "je lui téléphone" (✓).',
       ],
     },
   ],

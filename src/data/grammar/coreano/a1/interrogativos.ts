@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las palabras interrogativas en coreano: una diferencia clave con el español',
+      heading: '¿Cuáles son las palabras interrogativas en coreano?',
       paragraphs: [
         'En español, las palabras interrogativas siempre van al inicio de la pregunta: "¿Qué comes?", "¿Dónde vas?". En coreano, las interrogativas van en la posición donde estaría la respuesta dentro de la oración — y el verbo sigue yendo al final.',
         '예시: 뭐 먹어요? = literalmente "qué comes?" (el interrogativo 뭐 está en posición de objeto, donde iría "arroz", "pizza", etc.). 어디 가요? = "adónde vas?" (어디 ocupa la posición del destino). Esta estructura SOV se mantiene incluso en preguntas.',
       ],
     },
     {
-      heading: '뭐 vs 무엇: qué usar en cada contexto',
+      heading: '¿Cuál es la diferencia entre 뭐 y 무엇 en coreano?',
       paragraphs: [
         '뭐 (mwo) es la forma coloquial y más usada en conversación. 무엇 (mueot) es más formal. En A1 con compañeros o en clase, usa 뭐. Cuando 뭐 va con la partícula de objeto 를, se contrae: 뭐를 → 뭘. 뭘 먹어요? = ¿Qué comes? (más natural que 뭐를 먹어요).',
         'En la vida cotidiana oirás 뭐 constantemente: 뭐야? (¿qué es?), 뭐 해요? (¿qué haces?), 뭐 먹을래요? (¿qué vas a comer?). Es la interrogativa más frecuente del coreano.',
       ],
     },
     {
-      heading: 'Preguntas de lugar: 어디 y 어디서',
+      heading: '¿Cómo se pregunta por el lugar en coreano (어디/어디서)?',
       paragraphs: [
         '어디 (eodi) significa "dónde". Con verbos de movimiento (가다, 오다) se usa sin partícula o con 에: 어디 가요? / 어디에 가요? (¿adónde vas?). Para preguntar dónde ocurre una acción, se usa 어디서: 어디서 공부해요? (¿dónde estudias?), 어디서 먹어요? (¿dónde comes?).',
         'Esta distinción paralela 어디(에) vs 어디서 refleja la misma lógica de 에 (destino/existencia) vs 에서 (lugar de acción) que ya conoces de las partículas.',

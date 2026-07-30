@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Acuerdo con être: siempre con el sujeto',
+      heading: '¿Cómo concuerda el participio pasado con être en francés?',
       paragraphs: [
         'Con el auxiliar être, el participio pasado concuerda siempre en género y número con el sujeto. Los verbos que usan être son: los 17 verbos de movimiento/estado (aller, venir, partir, arriver, entrer, sortir, naître, mourir, tomber, rester, devenir, etc.) y todos los verbos pronominales. "Il est parti" (masc. sg) / "Elle est partie" (fém. sg) / "Ils sont partis" (masc. pl) / "Elles sont parties" (fém. pl).',
         'Para los verbos pronominales: "Elle s\'est levée" (elle = fém. sg → levée), "Ils se sont parlé" (se parler = COI, no acuerdo — excepción avanzada). En A2, la regla general es: pronominal + être → acuerdo con sujeto.',
       ],
     },
     {
-      heading: 'Acuerdo con avoir: solo cuando el COD va antes',
+      heading: '¿Cuándo concuerda el participio pasado con avoir en francés?',
       paragraphs: [
         'Con avoir, el participio NO concuerda en la mayoría de los casos: "J\'ai mangé une pizza" / "Elle a vu ses amis" — sin acuerdo. PERO si el COD (complemento directo) está colocado ANTES del verbo (pronombre COD o relativo que), el participio concuerda con ese COD: "Je les ai vus" (les = masc. pl → vus), "La robe qu\'elle a achetée" (qu\' = la robe, fém. sg → achetée).',
         'Terminaciones del acuerdo: femenino singular → -e (mangée, vue); masculino plural → -s (mangés, vus); femenino plural → -es (mangées, vues). Para participios que ya terminan en -s (pris, mis): el masculino plural no cambia (pris), el femenino añade -e (prise) y el femenino plural añade -es (prises).',
+      ],
+    },
+    {
+      heading: '¿Qué es el accord du participe passé en francés?',
+      paragraphs: [
+        'Es la regla por la que el participio pasado a veces cambia de género y número. Con être concuerda siempre con el sujeto (elle est partie, ils sont venus, elles sont arrivées). Con avoir NO concuerda con el sujeto, pero SÍ con el complemento de objeto directo (COD) cuando este va DELANTE del verbo: "la lettre que j\'ai écrite" (el COD "que" = la lettre, femenino, va delante → écrite). Si el COD va detrás o no hay COD, el participio queda invariable: "j\'ai écrit une lettre". Es una sutileza sobre todo escrita —casi imperceptible en el habla— pero muy valorada en el DELF y en la escritura formal.',
       ],
     },
   ],

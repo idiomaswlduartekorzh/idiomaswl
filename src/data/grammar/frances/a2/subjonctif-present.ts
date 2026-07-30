@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cuándo usar el subjonctif présent en francés',
+      heading: '¿Cuándo se usa el subjonctif présent en francés?',
       paragraphs: [
         'El subjonctif aparece obligatoriamente después de ciertas conjunciones y expresiones: necesidad (il faut que, il est nécessaire que), voluntad (vouloir que, souhaiter que, désirer que), emoción (être heureux/triste/surpris que, avoir peur que) y duda (douter que, ne pas croire que). Siempre hay dos sujetos diferentes: uno en la oración principal y otro en la cláusula con que.',
         'Si los dos verbos tienen el mismo sujeto, se usa el infinitivo en lugar del subjonctif: "Je veux partir" (yo quiero irme yo) vs "Je veux que tu partes" (yo quiero que tú te vayas).',
       ],
     },
     {
-      heading: 'Formación del subjonctif: raíz de ils + terminaciones',
+      heading: '¿Cómo se forma el subjonctif présent en francés?',
       paragraphs: [
         'Para verbos regulares, toma la forma "ils" del présent indicatif, quita -ent, y añade: -e, -es, -e, -ions, -iez, -ent. Ejemplo con parler: ils parlent → parl- → que je parle, que tu parles, qu\'il parle, que nous parlions, que vous parliez, qu\'ils parlent. El truco: "nous" y "vous" son iguales al imparfait indicatif.',
         'Los irregulares más importantes: être → que je sois, que tu sois, qu\'il soit; avoir → que j\'aie, que tu aies, qu\'il ait; aller → que j\'aille, que tu ailles, qu\'il aille; faire → que je fasse; pouvoir → que je puisse; vouloir → que je veuille.',
+      ],
+    },
+    {
+      heading: '¿Qué expresiones exigen subjonctif en francés?',
+      paragraphs: [
+        'El subjonctif aparece tras expresiones de voluntad, emoción, duda, necesidad y ciertas conjunciones, casi siempre con la estructura "… que + sujeto distinto": vouloir que, il faut que, être content que, avoir peur que, bien que, pour que, avant que, à condition que. "Il faut que tu viennes", "Je veux que tu saches", "Bien qu\'il soit tard…". Si el sujeto es el mismo, se usa infinitivo, no subjonctif ("Je veux venir", no "que je vienne"). Es el mismo reparto del español (quiero venir / quiero que vengas), así que la intuición ayuda; lo nuevo son las formas francesas irregulares (que je sois, que j\'aie, que je fasse, que j\'aille, que je puisse).',
       ],
     },
   ],

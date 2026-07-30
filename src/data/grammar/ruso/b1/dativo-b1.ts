@@ -40,9 +40,9 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es el dativo?', paragraphs: ['El dativo (дательный падеж) expresa: a quién (objeto indirecto), hacia dónde (con preposición к), y se usa en expresiones impersonales.', 'Es el cuarto caso principal del ruso.']},
-    {heading: 'Dativo para objeto indirecto', paragraphs: ['"Я даю книгу другу" — doy un libro a un amigo (дatively). "Она пишет письмо матери" — escribe una carta a su madre.', 'Estructura: verbo ditransitivo + acusativo (objeto) + dativo (destinatario).']},
+    {heading: '¿Cómo se usa el dativo para el objeto indirecto?', paragraphs: ['"Я даю книгу другу" — doy un libro a un amigo (дatively). "Она пишет письмо матери" — escribe una carta a su madre.', 'Estructura: verbo ditransitivo + acusativo (objeto) + dativo (destinatario).']},
     {heading: 'Dativo con preposición к (hacia)', paragraphs: ['"Я иду к дому" — voy hacia la casa. "Она подходит к учителю" — se acerca al profesor.', 'к + dativo indica movimiento/aproximación hacia.']},
-    {heading: 'Impersonales con dativo', paragraphs: ['"Мне нужна помощь" — me necesita ayuda (el sujeto real es "помощь"). "Ему нравится музыка" — le gusta música.', 'Estos verbos toman dativo (не nominativo) para el "experimentador".']},
+    {heading: '¿Qué construcciones impersonales piden dativo?', paragraphs: ['"Мне нужна помощь" — me necesita ayuda (el sujeto real es "помощь"). "Ему нравится музыка" — le gusta música.', 'Estos verbos toman dativo (не nominativo) para el "experimentador".']},
     {heading: 'Preposición по: sobre, por (dativo)', paragraphs: ['"гулять по парку" — pasear por el parque. "ходить по комнате" — caminar por la habitación.', 'по + dativo indica movimiento sobre una superficie.']},
   ],
   visual: {mode: 'scene', teacherLens: 'Dativo: objeto indirecto, dirección (к), impersonales', graphicPrompt: 'Tabla: Dativo por función y preposición', scene: [['Я даю книгу другу.', 'Doy libro a amigo (objeto indirecto).'], ['Я иду к дому.', 'Voy hacia la casa (к + dat).'], ['Мне нравится кино.', 'Me gusta cine (impersonal + dat).'], ['Она подходит к учителю.', 'Se acerca al profesor.'], ['Он гуляет по парку.', 'Pasea por el parque (по + dat).']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['дательный', 'адресат', 'направление']},

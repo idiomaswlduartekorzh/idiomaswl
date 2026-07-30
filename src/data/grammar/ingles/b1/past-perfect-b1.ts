@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'A veces "after" o "before" ya aclaran el orden, y el past perfect no es obligatorio: "After I ate, I watched TV." Pero si el orden no es obvio por el contexto, el past perfect es necesario para evitar confusión.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el past perfect en inglés?',
+      paragraphs: [
+        'Con "had" + participio pasado, igual para todas las personas: "I had finished", "she had gone". Contracción: \'d ("I\'d finished"). Negativo: hadn\'t + participio; pregunta: "Had you finished?".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el past perfect?',
+      paragraphs: [
+        'Para una acción anterior a otra acción pasada: "When I arrived, they had already left" (se fueron ANTES de que yo llegara). Equivale al pluscuamperfecto español ("habían salido"). Suele aparecer con "before", "after", "already", "just".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre past perfect y past simple?',
+      paragraphs: [
+        'El past simple narra hechos en orden ("I arrived and they left"); el past perfect marca lo que ya había pasado ANTES ("When I arrived, they had left" = ya se habían ido). El past perfect ordena dos pasados: el "pasado del pasado".',
+      ],
+    },
   ],
 
   visual: {

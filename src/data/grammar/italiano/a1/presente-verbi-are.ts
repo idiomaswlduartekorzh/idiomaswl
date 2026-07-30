@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Verbos en -care y -gare: la h que salva el sonido',
+      heading: '¿Por qué los verbos en -care y -gare añaden una h?',
       paragraphs: [
         'Los verbos en -care (cercare, giocare) y -gare (pagare, spiegare) añaden una h en las formas de tu y noi. ¿Por qué? Porque sin la h, la c y la g sonarían suaves (como "ch" y "ll") delante de la terminación -i. La h mantiene el sonido fuerte /k/ y /g/ del infinitivo:',
       ],

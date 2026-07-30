@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '～かもしれない: expresar posibilidad en japones A2',
+      heading: '¿Cómo se expresa posibilidad con ～かもしれない?',
       paragraphs: [
         '～かもしれません (kamoshiremasen) es la forma de expresar posibilidad o incertidumbre en japones. Se construye con la forma plana del verbo o adjetivo: 雨が降るかもしれません = Quizas llueva. La clave importante: con adjetivos な y sustantivos, NO se agrega だ antes de かもしれない.',
         'La forma informal es かもしれない (sin ます): 遅れるかもしれない = puede que llegue tarde. En habla muy casual, se abrevia a solo かも: 遅れるかも.',
       ],
     },
     {
-      heading: 'Gradacion de certeza en japones',
+      heading: '¿Cómo se gradúa la certeza en japonés (かもしれない, でしょう, にちがいない)?',
       paragraphs: [
         'El japones tiene varias formas de expresar certeza con diferentes grados: かもしれない (quizas, ~50% o menos), でしょう (probablemente, ~70%), と思います (creo que, ~70-80%), に違いない (sin duda, ~90%). Aprende estas expresiones para comunicar exactamente que tan seguro estas.',
         'En conversacion cotidiana, かもしれない es muy frecuente para no afirmar demasiado. Los japoneses tienden a ser indirectos y el uso de かもしれない refleja esa tendencia.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conecta かもしれない con cada tipo de palabra?',
+      paragraphs: [
+        'かもしれない (o su forma cortés かもしれません) se une a la forma PLANA de la palabra. Con verbos y adjetivos い va directo: 雨が降るかもしれない (quizá llueva), 高いかもしれない (quizá sea caro). Con sustantivos y adjetivos な se une sin だ: 学生かもしれない (quizá sea estudiante), 静かかもしれない (quizá esté tranquilo) —nunca 学生だかもしれない—. Expresa una posibilidad baja o insegura, más débil que でしょう. En conversación casual se acorta a かも: 行くかも (a lo mejor voy). La trampa para el hispanohablante es meter だ delante con sustantivos/な-adjetivos: la regla es quitar el だ antes de かもしれない.',
       ],
     },
   ],

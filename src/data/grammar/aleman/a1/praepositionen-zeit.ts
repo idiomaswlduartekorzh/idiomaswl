@@ -50,21 +50,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Um, am, im: el sistema temporal del alemán',
+      heading: '¿Cómo se usan um, am e im en alemán?',
       paragraphs: [
         'El sistema de preposiciones temporales del alemán se basa en tres preposiciones principales que corresponden a tres niveles de tiempo. "Um" se usa siempre con horas exactas: um 8 Uhr (a las 8), um halb drei (a las 2:30), um Mitternacht (a medianoche). "Am" se usa con los días de la semana y las partes del día: am Montag (el lunes), am Morgen (por la mañana), am Abend (por la tarde/noche).',
         '"Im" se usa con los meses del año y las estaciones: im Januar (en enero), im Sommer (en verano), im Herbst (en otoño). La gran excepción del sistema es "in der Nacht" — la noche no usa "am" como las otras partes del día, sino "in der" porque "Nacht" es femenino y la construcción es ligeramente diferente.',
       ],
     },
     {
-      heading: 'Seit: presente con raíces en el pasado',
+      heading: '¿Cómo se usa seit en alemán?',
       paragraphs: [
         '"Seit" es una de las preposiciones más importantes del alemán y expresa una situación que comenzó en el pasado y continúa en el presente: Ich lerne seit 3 Jahren Deutsch (Llevo 3 años aprendiendo alemán / Desde hace 3 años aprendo alemán). En alemán se usa PRESENTE con seit, mientras que el español puede usar presente o pretérito imperfecto.',
         'Esto es lo contrario del inglés (que usa present perfect) y similar al español coloquial. Ejemplos: Ich wohne seit einem Jahr in Köln. / Wir sind seit 2 Monaten in Deutschland. / Nico unterrichtet seit 5 Jahren Sprachen.',
       ],
     },
     {
-      heading: 'Von...bis: rangos y horarios',
+      heading: '¿Cómo se expresan rangos de tiempo con von...bis en alemán?',
       paragraphs: [
         'La expresión "von...bis" (de...a / desde...hasta) se usa para indicar rangos de tiempo: von 9 bis 17 Uhr (de 9 a 17 horas), von Montag bis Freitag (de lunes a viernes), von Januar bis März (de enero a marzo). Es muy útil para describir horarios de trabajo, cursos y eventos.',
         'También se puede usar solo "bis" para indicar el límite final: Bis wann arbeitest du? — Ich arbeite bis 18 Uhr. / Der Kurs geht von 9 bis 11 Uhr.',

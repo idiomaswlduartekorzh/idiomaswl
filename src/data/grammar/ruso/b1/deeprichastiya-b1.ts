@@ -54,14 +54,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Деепричастия imperfectivos: formación y uso',
+      heading: '¿Cómo se forman y usan los деепричастия imperfectivos?',
       paragraphs: [
         'Para formar el деепричастие imperfectivo: se toma la 3ª persona plural del presente (они читают), se quita la terminación (-ют, -ут, -ят, -ат) y se añade -я o -а: читают → читая; говорят → говоря; пишут → пиша (poco común; пишут → пиша, pero muchos verbos con -ш-, -ж- etc. tienen restricciones). Nota: некоторые verbos НСВ no tienen деепричастие: хотеть, бежать, ждать, бить, пить, врать — se evitan o se sustituyen.',
         'El деепричастие imperfectivo expresa una acción SIMULTÁNEA con la principal: "Читая книгу, она пила чай" (Leyendo el libro, tomaba té = hacía las dos cosas a la vez). Pueden ir al principio, al final o en medio de la oración, siempre separados por comas.',
       ],
     },
     {
-      heading: 'Деепричастия perfectivos: formación y uso',
+      heading: '¿Cómo se forman y usan los деепричастия perfectivos?',
       paragraphs: [
         'Para el деепричастие perfectivo: infinitivo СВ − -ть + -в: написать → написав; прочитать → прочитав; позвонить → позвонив; прийти → придя (irregular); принести → принеся. Si la raíz termina en consonante se añade -ши en algunas formas, pero la mayoría de verbos СВ siguen el patrón -в.',
         'El деепричастие perfectivo expresa una acción ANTERIOR a la principal: "Прочитав письмо, она улыбнулась" (Habiendo leído la carta, sonrió = primero leyó la carta y luego sonrió). Este es el деепричастие más frecuente en textos formales y literarios.',

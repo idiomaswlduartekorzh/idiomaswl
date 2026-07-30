@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cómo se forma el Komparativ en alemán',
+      heading: '¿Cómo se forma el Komparativ en alemán?',
       paragraphs: [
         'El comparativo alemán es muy regular: simplemente añade -er al adjetivo. Así "schnell" (rápido) se convierte en "schneller" (más rápido), "klein" (pequeño) en "kleiner" (más pequeño), "schön" (bonito) en "schöner" (más bonito). La estructura de la comparación es: Adj + -er + als + el elemento comparado.',
         'Algunos adjetivos monosílabos muy comunes añaden diéresis en el comparativo: alt → älter (mayor), jung → jünger (más joven), groß → größer (más grande), lang → länger (más largo), warm → wärmer (más cálido), kalt → kälter (más frío), kurz → kürzer (más corto). Estos hay que memorizarlos.',
       ],
     },
     {
-      heading: 'El Superlativ: am + -sten y der/die/das + -ste',
+      heading: '¿Cómo se forma el Superlativ en alemán?',
       paragraphs: [
         'El superlativo tiene dos formas en alemán. El superlativo predicativo se usa cuando no hay artículo y el adjetivo sigue al verbo: "Er ist am schnellsten" (Él es el más rápido). Se forma con "am" + adjetivo + "-sten" (o "-esten" si el adjetivo termina en -d, -t, -s, -ß, -z).',
         'El superlativo atributivo va antes del sustantivo con artículo definido y sigue las reglas de declinación: "Das ist das beste Restaurant." / "Er hat den teuersten Wein bestellt." La raíz del superlativo es siempre adj + -st-, luego se añaden las terminaciones de declinación.',
       ],
     },
     {
-      heading: 'Las formas irregulares más importantes',
+      heading: '¿Cuáles son las formas irregulares del comparativo alemán?',
       paragraphs: [
         'Solo tres grupos de irregulares son realmente esenciales en A2: gut/besser/am besten (bueno), viel/mehr/am meisten (mucho), gern/lieber/am liebsten (con gusto, preferir). También hoch/höher/am höchsten (alto) y nah/näher/am nächsten (cerca).',
         '"Gern" es especialmente útil: "Ich esse gern Pizza" (Me gusta comer pizza), "Ich esse lieber Pasta" (Prefiero comer pasta), "Am liebsten esse ich Sushi" (Lo que más me gusta es comer sushi). Esta estructura aparece constantemente en conversaciones.',

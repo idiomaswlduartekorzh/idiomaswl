@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '것 같다: cómo expresar suposiciones en coreano',
+      heading: '¿Cómo se expresan suposiciones en coreano (것 같다)?',
       paragraphs: [
         '것 같다 (geot gatda) es una de las expresiones más usadas en coreano para expresar suposiciones, impresiones o probabilidades. "피곤한 것 같아요" = "Parece cansado" o "Creo que está cansado". Esta expresión muestra incertidumbre o que la información es inferida, no confirmada.',
         'La forma cambia según el tipo de palabra: con verbos de acción en presente se usa -는 것 같다; con adjetivos en presente se usa -ㄴ/은 것 같다; con verbos de acción en pasado se usa -ㄴ/은 것 같다; y para el futuro o probabilidad se usa -ㄹ/을 것 같다.',
       ],
     },
     {
-      heading: 'Cómo suena más natural en coreano cotidiano',
+      heading: '¿Cómo suena 것 같다 más natural en el coreano cotidiano?',
       paragraphs: [
         'En el habla cotidiana, 것 같아요 se usa muy frecuentemente para dar opiniones de forma modesta o para hacer predicciones: "좀 어려울 것 같아요" (Creo que será un poco difícil), "맛있을 것 같아요" (Parece que estará rico).',
         'También se usa para hacer críticas o comentarios negativos de forma más suave: "조금 늦을 것 같아요" (Parece que llegaré un poco tarde) es más educado que "늦어요" (llego tarde). Es una herramienta clave para el tono de cortesía en coreano.',
+      ],
+    },
+    {
+      heading: '¿Cómo cambia 것 같다 según el tiempo verbal en coreano?',
+      paragraphs: [
+        '것 같다 (geot gatda, "parece que / creo que") cambia la terminación atributiva del verbo según el tiempo de la suposición. Presente: verbo + -는 것 같다 (비가 오는 것 같아요 = parece que llueve); adjetivo + -(으)ㄴ 것 같다 (예쁜 것 같아요 = parece bonita). Pasado: verbo + -(으)ㄴ 것 같다 (간 것 같아요 = parece que fue). Futuro/conjetura: -(으)ㄹ 것 같다 (비가 올 것 같아요 = parece que va a llover). Es la forma más natural y frecuente de suavizar una opinión en coreano —los nativos evitan afirmar tajantemente— así que domina las tres formas según hables de algo presente, pasado o probable. La trampa es elegir bien la terminación atributiva, que es la misma de las cláusulas relativas.',
       ],
     },
   ],

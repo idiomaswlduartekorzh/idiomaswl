@@ -48,21 +48,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El imperativo alemán: tres formas para tres situaciones',
+      heading: '¿Cómo se forma el imperativo en alemán?',
       paragraphs: [
         'El imperativo del alemán tiene tres formas claramente distintas según el contexto social. Para una persona de confianza (amigo, familiar, niño) usamos "du": Komm mal her! / Lern Deutsch! Para un grupo informal usamos "ihr": Kommt alle rein! / Macht die Bücher auf! Para una o varias personas en contexto formal usamos "Sie": Kommen Sie bitte herein! / Nehmen Sie Platz!',
         'La diferencia fundamental entre du e ihr es solo la terminación: "Komm!" (du) vs. "Kommt!" (ihr). La diferencia con Sie es estructural: el pronombre siempre aparece y el verbo va en forma de infinitivo-con-conjugación formal.',
       ],
     },
     {
-      heading: 'La forma du: el imperativo más sencillo',
+      heading: '¿Cómo es el imperativo con du en alemán?',
       paragraphs: [
         'Para formar el imperativo du, se toma el radical (Stamm) del verbo y se elimina la terminación -st de la forma du del presente: wohnst → Wohn! / lernst → Lern! / machst → Mach! La -e final (Lerne!, Mache!) es opcional en el alemán moderno hablado, aunque en registros formales escritos puede aparecer.',
         'Excepción importante: los verbos con cambio e→i mantienen ese cambio en el imperativo du: sprechen (du sprichst) → Sprich! / lesen (du liest) → Lies! / geben (du gibst) → Gib! / essen (du isst) → Iss! Estos verbos NO toman -e al final.',
       ],
     },
     {
-      heading: 'Sein: el imperativo más irregular',
+      heading: '¿Cómo es el imperativo del verbo sein?',
       paragraphs: [
         '"Sein" (ser/estar) tiene formas completamente irregulares en imperativo: du → sei (Sei ehrlich! / Sei bitte ruhig!), ihr → seid (Seid pünktlich! / Seid nicht so laut!), Sie → seien Sie (Seien Sie so nett... / Seien Sie bitte leise!). Estas formas son muy frecuentes en instrucciones cotidianas y hay que memorizarlas.',
         'También hay que memorizar las combinaciones con "bitte" para expresar cortesía: Kommen Sie bitte herein. / Sei bitte ruhig. / Warten Sie bitte einen Moment. El "bitte" puede ir al principio o al final de la oración imperativa.',

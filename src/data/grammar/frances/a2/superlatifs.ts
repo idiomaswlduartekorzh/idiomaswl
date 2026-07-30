@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Superlativos en francés: posición del adjetivo',
+      heading: '¿Cómo se forman los superlativos en francés?',
       paragraphs: [
         'La posición del superlativo depende de dónde va el adjetivo normalmente. Si el adjetivo va después del sustantivo (la mayoría): "le film le plus intéressant" (la película más interesante) — el artículo aparece dos veces. Si el adjetivo va antes del sustantivo (grand, petit, beau, bon...): "la plus belle ville" (la ciudad más bonita) — un solo artículo delante del superlativo.',
         'El complemento del superlativo usa de (de + le = du, de + les = des): "le restaurant le plus cher de Paris", "le meilleur café du quartier", "les meilleures pizzas des États-Unis".',
       ],
     },
     {
-      heading: 'Superlativos irregulares: le meilleur, le mieux, le pire',
+      heading: '¿Cuáles son los superlativos irregulares en francés?',
       paragraphs: [
         'Los tres superlativos irregulares más importantes: le meilleur / la meilleure / les meilleurs / les meilleures (el/la mejor, los/las mejores) — de bon (adjetivo); le mieux (lo mejor) — de bien (adverbio); le pire / la pire / les pires (el/la peor) — de mauvais.',
         '"C\'est le meilleur film de l\'année" (Es la mejor película del año) — meilleur es adjetivo, concuerda. "C\'est lui qui chante le mieux" (Es él quien canta mejor) — mieux es adverbio, no concuerda.',
+      ],
+    },
+    {
+      heading: '¿Dónde se coloca el superlativo en francés?',
+      paragraphs: [
+        'La posición depende del adjetivo. Si el adjetivo va normalmente detrás del sustantivo, el superlativo también, y hay que repetir el artículo: "la ville la plus grande" (la ciudad más grande). Si el adjetivo va antes (los BAGS: bon, beau, grand, petit…), el superlativo va antes: "la plus grande ville". Con adverbios y verbos se usa "le plus / le moins" invariable: "c\'est lui qui court le plus vite". El complemento se introduce con "de": "le meilleur restaurant de la ville". El error típico del hispanohablante es olvidar el segundo artículo en la construcción pospuesta: "la ville plus grande" (❌) → "la ville la plus grande" (✓).',
       ],
     },
   ],

@@ -50,21 +50,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Verbos separables: una característica única del alemán',
+      heading: '¿Qué son los verbos separables en alemán?',
       paragraphs: [
         'Los verbos separables son una de las características más llamativas del alemán para hispanohablantes. Un verbo como "aufmachen" (abrir) se parte en dos partes en la frase: el verbo "macht" va en segunda posición y el prefijo "auf" salta al final: Ich mache die Tür auf.',
         'Los prefijos separables más frecuentes en A1 son: auf- (aufmachen, aufstehen, aufhören), an- (anrufen, anfangen, ankommen), ab- (abfahren, abholen), aus- (ausgehen, aussteigen), ein- (einkaufen, einschlafen), mit- (mitkommen, mitnehmen), zu- (zumachen, zuhören).',
       ],
     },
     {
-      heading: 'La regla del infinitivo con modales',
+      heading: '¿Cómo se usan los verbos separables con modales en alemán?',
       paragraphs: [
         'Cuando un verbo separable se combina con un verbo modal (können, müssen, wollen, etc.), el verbo separable aparece en infinitivo AL FINAL y NO se separa: Ich muss früh aufstehen. / Kannst du mich anrufen? / Wir wollen heute einkaufen.',
         'Esta es la diferencia clave: en una frase simple el prefijo se separa (Ich stehe auf), pero con modal el infinitivo queda completo al final (Ich muss aufstehen). El prefijo solo se separa cuando el verbo está conjugado y en segunda posición.',
       ],
     },
     {
-      heading: 'Cómo reconocer un verbo separable',
+      heading: '¿Cómo se reconoce un verbo separable en alemán?',
       paragraphs: [
         'No todos los prefijos son separables. Los prefijos SIEMPRE separables son: ab-, an-, auf-, aus-, bei-, ein-, los-, mit-, nach-, vor-, weg-, zu-, zurück-. Los prefijos NUNCA separables son: be-, emp-, ent-, er-, ge-, miss-, ver-, zer-. Por eso "besuchen" (visitar) no se separa: Ich besuche dich.',
         'Una pista práctica: si el acento recae en el prefijo al pronunciar el infinitivo, el verbo es separable: AUFmachen, ANrufen, EINkaufen (acento en el prefijo). Si el acento recae en la raíz, no es separable: beSUCHen, verSTEHen.',

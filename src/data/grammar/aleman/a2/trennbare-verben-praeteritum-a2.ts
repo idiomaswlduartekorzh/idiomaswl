@@ -54,9 +54,15 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Verbos inseparables: sin separación nunca',
+      heading: '¿Qué son los verbos inseparables en alemán?',
       paragraphs: [
         'Los verbos inseparables como besuchen, verstehen, erklären, beginnen nunca separan su prefijo — ni en presente ni en pasado. Además, su Partizip II NO lleva "ge-": besucht (no *gebesucht), verstanden (no *geverstanden).',
+      ],
+    },
+    {
+      heading: '¿Cómo se distinguen los verbos separables de los inseparables en alemán?',
+      paragraphs: [
+        'Depende del prefijo. Los prefijos separables (an-, auf-, aus-, ein-, mit-, vor-, zu-, ab-…) llevan el acento y se separan del verbo, yendo al final de la oración: "Ich stehe früh auf" → Präteritum "Ich stand früh auf". Los prefijos inseparables (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-) son átonos y NUNCA se separan: "Ich verstehe" → "Ich verstand", sin desplazar nada. Otra diferencia clave: los inseparables no llevan "ge-" en el Partizip II (verstanden, no *geverstanden), mientras los separables lo intercalan (aufgestanden). Truco: si el acento cae en el prefijo, se separa; si cae en la raíz, no.',
       ],
     },
   ],

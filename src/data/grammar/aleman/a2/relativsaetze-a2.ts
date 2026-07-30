@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cómo funciona el pronombre relativo en alemán',
+      heading: '¿Cómo funciona el pronombre relativo en alemán?',
       paragraphs: [
         'El pronombre relativo en alemán (der, die, das) funciona de manera similar al "que" español, pero con dos diferencias clave: primero, concuerda en género y número con el sustantivo al que se refiere (el antecedente); segundo, el verbo de la oración relativa siempre va al final.',
         'Para elegir el pronombre correcto, debes saber el género del antecedente: "der Mann" → der/den; "die Frau" → die; "das Kind" → das; plural → die. Luego debes determinar si el pronombre es sujeto (Nominativ) u objeto (Akkusativ) dentro de la oración relativa.',
       ],
     },
     {
-      heading: 'Nominativ vs. Akkusativ en la oración relativa',
+      heading: '¿Cómo cambia el relativo entre Nominativ y Akkusativ en alemán?',
       paragraphs: [
         'Si el pronombre relativo es el sujeto de la oración relativa, usa el Nominativ: "Der Mann, der dort steht, ist mein Chef." (der Mann = sujeto de la relativa). Si es el objeto, usa el Akkusativ: "Der Mann, den ich sehe, ist mein Chef." (den Mann = objeto de "sehe").',
         'La distinción más visible es en masculino: el Nominativ es "der" y el Akkusativ es "den". En femenino y neutro, el Nominativ y Akkusativ son iguales: "die" y "das" respectivamente.',
       ],
     },
     {
-      heading: 'El verbo al final de la oración de relativo',
+      heading: '¿Por qué el verbo va al final en la oración de relativo alemana?',
       paragraphs: [
         'Una regla fundamental del alemán es que en las cláusulas subordinadas (incluyendo las de relativo), el verbo conjugado va al final. Esto significa que si hay un Perfekt en la relativa, el verbo auxiliar va al último lugar: "das Buch, das ich gestern gekauft habe" — "habe" va al final, después incluso del Partizip II.',
       ],

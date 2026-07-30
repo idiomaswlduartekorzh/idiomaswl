@@ -86,6 +86,24 @@ const topic: GrammarTopic = {
         'Este uso es fundamental para el Writing en IELTS, Cambridge y exámenes de inglés: la introducción en past continuous crea atmósfera, y los eventos principales van en past simple.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el past continuous en inglés?',
+      paragraphs: [
+        'Con was/were + verbo -ing: "I was working", "they were playing". Se usa "was" con I/he/she/it y "were" con you/we/they. Negativo: wasn\'t/weren\'t + -ing; pregunta: "Were you working?".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el past continuous?',
+      paragraphs: [
+        'Para una acción en curso en un momento del pasado ("At 8 p.m. I was studying") y para la acción de fondo interrumpida por otra ("I was cooking when the phone rang"). Describe el proceso, no el evento puntual.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre past simple y past continuous?',
+      paragraphs: [
+        'El past continuous describe la acción larga o de fondo ("I was watching TV"); el past simple, el evento puntual que la interrumpe ("...when she called"). Se combinan con "when" y "while": "While I was cooking, the phone rang".',
+      ],
+    },
   ],
 
   visual: {

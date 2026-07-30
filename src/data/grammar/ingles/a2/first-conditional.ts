@@ -87,6 +87,24 @@ const topic: GrammarTopic = {
         'El segundo condicional habla de situaciones HIPOTÉTICAS o improbables: "If I got the job, I would be very happy" (me imagino en esa situación, pero no es algo que espere realmente). El segundo condicional se aprende en B1.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el first conditional en inglés?',
+      paragraphs: [
+        'Con "if + present simple, ... will + verbo base": "If it rains, I will stay home". La condición (if) va en presente y el resultado con "will". Se usa para situaciones reales y probables en el futuro. El orden puede invertirse ("I will stay home if it rains"), sin coma.',
+      ],
+    },
+    {
+      heading: '¿Se usa "will" después de "if" en inglés?',
+      paragraphs: [
+        'No. Tras "if" va el present simple, no "will": "If you study, you will pass" (no "if you will study"). El "will" va en la otra cláusula (el resultado). Es el error típico del hispanohablante, que traduce el futuro español "si estudiarás".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre first conditional y zero conditional?',
+      paragraphs: [
+        'El zero conditional expresa verdades y hechos generales con present + present ("If you heat water, it boils"). El first conditional expresa una situación futura probable con present + will ("If you heat the water, I will make tea"). Uno es una regla siempre cierta; el otro, un resultado futuro concreto.',
+      ],
+    },
   ],
 
   visual: {

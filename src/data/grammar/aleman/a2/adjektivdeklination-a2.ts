@@ -50,21 +50,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La declinación débil: después de der/die/das',
+      heading: '¿Cómo es la declinación débil del adjetivo en alemán?',
       paragraphs: [
         'Cuando el adjetivo va precedido de un artículo definido (der, die, das, den, dem...), el artículo ya porta toda la información de género y caso. Por ello, el adjetivo usa terminaciones "débiles": -e en el Nominativ singular (der alte Mann, die alte Frau, das alte Kind) y -en en todos los demás casos y en plural.',
         'Regla simplificada para Nominativ y Akkusativ (los dos casos más frecuentes): si es Nominativ singular → -e; si es Akkusativ masculino o cualquier plural → -en; resto del Akkusativ singular → -e.',
       ],
     },
     {
-      heading: 'La declinación mixta: después de ein/eine/ein',
+      heading: '¿Cómo es la declinación mixta del adjetivo en alemán?',
       paragraphs: [
         'Cuando el artículo indefinido (ein, eine, ein en Nominativ) no porta la información de género (el "ein" neutro y masculino son idénticos), el adjetivo debe compensar aportando esa información mediante terminaciones "fuertes": ein alter Mann (-er), eine alte Frau (-e), ein altes Kind (-es).',
         'En Akkusativ, el Akkusativ masculino indefinido ya se distingue (einen), así que el adjetivo vuelve a -en: einen alten Mann. Para femenino y neutro Akkusativ, el adj. sigue con -e/-es igual que en Nominativ.',
       ],
     },
     {
-      heading: 'Cómo memorizar las terminaciones',
+      heading: '¿Cómo se memorizan las terminaciones del adjetivo en alemán?',
       paragraphs: [
         'La estrategia más eficiente: aprende primero las terminaciones del artículo definido (der/die/das/den/dem/des) y cuando hay artículo definido, el adjetivo siempre es -e o -en. Con artículo indefinido, la terminación del adjetivo "roba" la terminación del artículo definido correspondiente en masculino y neutro Nominativ (-er, -es) y luego para el resto usa -en.',
       ],

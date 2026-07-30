@@ -48,17 +48,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El futur simple: cómo hablar del futuro en francés",
+      heading: '¿Cómo se forma el futur simple en francés?',
       paragraphs: [
         "El futur simple es el tiempo verbal que expresa acciones que ocurrirán en el futuro. Se usa para predicciones (il fera beau demain), promesas (je t'appellerai ce soir) y planes (nous partirons en vacances en juillet). También aparece en las frases con 'quand' para eventos futuros: quand tu arriveras, je serai là.",
         "La formación regular es simple y consistente: infinitivo + terminaciones. Las terminaciones son -ai, -as, -a, -ons, -ez, -ont. Para los verbos -ER: manger → je mangerai. Para los verbos -IR: choisir → je choisirai. Para los verbos -RE: se elimina la -e final: prendre → prendr- → je prendrai.",
       ],
     },
     {
-      heading: "Los futuros irregulares más frecuentes",
+      heading: '¿Cuáles son los verbos irregulares del futur simple?',
       paragraphs: [
         "Unos 20 verbos tienen raíces irregulares en el futur simple, pero todos comparten las mismas terminaciones regulares. Los más importantes son: être → je serai (seré); avoir → j'aurai (tendré); aller → j'irai (iré); faire → je ferai (haré); voir → je verrai (veré); vouloir → je voudrai (querré); pouvoir → je pourrai (podré); savoir → je saurai (sabré); venir → je viendrai (vendré).",
         "Un truco: la raíz del futur simple y del conditionnel présent es siempre la misma. Si sabes decir 'je voudrais' (conditionnel), la raíz de 'je voudrai' (futur) es idéntica: voudr-. Solo cambia la terminación: -ais (conditionnel) vs. -ai (futur).",
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre futur simple y futur proche?',
+      paragraphs: [
+        'Las dos hablan del futuro, pero con matiz distinto. El futur proche (aller + infinitivo: "je vais partir") expresa un futuro cercano, planeado o inminente, y domina en el habla cotidiana. El futur simple ("je partirai") es más formal, sirve para previsiones, promesas, planes lejanos y el lenguaje escrito. En la conversación diaria el francés prefiere el futur proche; en un texto, una predicción o una promesa solemne, el futur simple. Ambos son correctos y a menudo intercambiables; la elección es de registro, no de gramática. El futur simple se forma sobre el infinitivo + las terminaciones -ai/-as/-a/-ons/-ez/-ont (parler → je parlerai).',
       ],
     },
   ],

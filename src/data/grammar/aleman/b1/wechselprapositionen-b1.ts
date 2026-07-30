@@ -61,10 +61,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Las contracciones más frecuentes con Wechselpräpositionen',
+      heading: '¿Cuáles son las contracciones de las Wechselpräpositionen en alemán?',
       paragraphs: [
         'En alemán se usan contracciones cuando la preposición + artículo se combinan: in + dem = im (Dativ), in + das = ins (Akkusativ), an + dem = am (Dativ), an + das = ans (Akkusativ).',
         'Estas contracciones son obligatorias en el habla y muy frecuentes en la escritura. Nunca se dice "in dem Zimmer" en contexto normal, sino siempre "im Zimmer".',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las nueve Wechselpräpositionen del alemán?',
+      paragraphs: [
+        'Son nueve preposiciones que rigen Akkusativ o Dativ según el sentido: an, auf, hinter, in, neben, über, unter, vor, zwischen. Con verbo de movimiento hacia un destino (Wohin?) piden Akkusativ ("Ich gehe in die Küche"); con ubicación estática (Wo?) piden Dativ ("Ich bin in der Küche"). La regla de oro es: dirección → Akkusativ, posición → Dativ. Es una de las dificultades centrales del alemán para el hispanohablante, porque el español usa la misma preposición ("en la cocina") sin marcar la diferencia; en alemán el caso lo cambia todo. Verbos como stellen/stehen, legen/liegen, setzen/sitzen forman pares que ayudan a fijar el contraste movimiento/estado.',
       ],
     },
   ],

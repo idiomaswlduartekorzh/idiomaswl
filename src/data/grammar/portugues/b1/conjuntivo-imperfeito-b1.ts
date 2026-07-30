@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo se forma: el truco de la 3.ª persona plural',
+      heading: '¿Cómo se forma el conjuntivo imperfeito en portugués?',
       paragraphs: [
         'La regla de oro: toma la 3.ª persona del plural del pretérito perfeito del indicativo (ellos/elas), elimina -ram y añade las terminaciones -sse. Este método funciona con TODOS los verbos, incluso los irregulares.',
         'Ejemplos con irregulares: fazer → fizeram → fize- → fizesse; poder → puderam → pude- → pudesse; querer → quiseram → quise- → quisesse; saber → souberam → soube- → soubesse; vir → vieram → vie- → viesse.',
@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Usos principales del conjuntivo imperfeito',
+      heading: '¿Cuándo se usa el conjuntivo imperfeito en portugués?',
       paragraphs: [
         'Condición irreal en el presente o futuro: "Se tivesse tempo, aprenderia japonês." (Si tuviera tiempo, aprendería japonés). La cláusula principal lleva el condicional (-ia) o, en portugués europeo coloquial, el imperfeito do indicativo.',
         'Deseos y peticiones corteses: "Gostaria que me ajudasses." (Me gustaría que me ayudaras). "Queria que fosses ao supermercado." (Quería que fueras al supermercado). Este uso es muy frecuente en portugués europeo para expresar cortesía.',

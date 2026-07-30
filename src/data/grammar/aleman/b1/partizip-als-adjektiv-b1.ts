@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El Partizip I: acción simultánea y activa',
+      heading: '¿Cómo se usa el Partizip I como adjetivo en alemán?',
       paragraphs: [
         'El Partizip I se forma añadiendo -d al infinitivo: laufen → laufend, schreiben → schreibend, singen → singend. Cuando se usa como adjetivo, expresa que la acción ocurre al mismo tiempo que el verbo principal y quien la realiza es el propio sustantivo.',
         '"Das singende Kind" = el niño que está cantando. "Ein weinendes Baby" = un bebé que llora. "Die wartenden Menschen" = las personas que están esperando. El participio lleva las terminaciones de declinación correspondientes al artículo y al caso.',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El Partizip II: estado resultado y significado pasivo',
+      heading: '¿Cómo se usa el Partizip II como adjetivo en alemán?',
       paragraphs: [
         'El Partizip II como adjetivo expresa el resultado de una acción pasada o un estado resultante: "die geöffnete Tür" (la puerta que ha sido abierta = la puerta abierta), "das reparierte Auto" (el coche que ha sido reparado = el coche reparado).',
         'El Partizip II de verbos regulares: ge- + raíz + -t (gekauft, gemacht, geöffnet). De verbos irregulares: ge- + raíz irregular + -en (geschrieben, gelesen, gesprochen). Verbos con prefijo inseparable (be-, er-, ver-) no añaden ge-: bestellt → das bestellte Essen, verkauft → das verkaufte Haus.',

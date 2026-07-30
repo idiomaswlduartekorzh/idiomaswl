@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~たら: el condicional más usado en japonés A2',
+      heading: '¿Por qué ~たら es el condicional más usado en japonés A2?',
       paragraphs: [
         '~たら es el condicional más frecuente en el japonés hablado. Se forma tomando la forma た del verbo y añadiendo ら: 食べた → 食べたら (si/cuando comas). Puede expresar condición futura real ("電話したら教えて" = cuando llames, avísame), condición hipotética ("もし当たったら..." = si ganara...) y secuencia temporal.',
         'La partícula もし al inicio refuerza el sentido hipotético: "もし日本語が話せたら..." (si pudiera hablar japonés...). Sin もし, たら tiende a leerse como condición más probable o real.',
       ],
     },
     {
-      heading: 'たら vs と vs ば: ¿cuándo usar cada uno?',
+      heading: '¿Cuándo usar たら, と o ば para el condicional?',
       paragraphs: [
         '~と expresa condiciones naturales o inevitables (leyes físicas, instrucciones): "右に曲がると、駅があります" (si giras a la derecha, hay una estación). ~ば es más formal y filosófico, frecuente en escritura: "勉強すれば、合格できる" (si estudias, podrás aprobar). ~たら es el más flexible y se usa en más contextos que los otros dos.',
         'La regla práctica: usa たら cuando el resultado es algo que el hablante controla o decide hacer después de la condición. "駅に着いたら、電話して" (cuando llegues a la estación, llama) = típico たら.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma ~たら y por qué sirve también para "cuando"?',
+      paragraphs: [
+        '~たら se forma añadiendo ら a la forma た (pasado plano): 食べた→食べたら, 行った→行ったら, 高い→高かったら, 学生→学生だったら. Cubre dos sentidos que en español separamos: condición ("si") y secuencia temporal futura ("cuando"). 雨が降ったら、行きません (si llueve, no voy) es condición; 家に帰ったら、電話します (cuando llegue a casa, llamo) es secuencia. Lo característico de たら es que la segunda parte suele ocurrir DESPUÉS de la primera, por eso admite peticiones, órdenes e intenciones en la principal: 駅に着いたら、電話してください. La trampa para el hispanohablante es diferenciarlo de と (que no admite órdenes en la principal) y de ば (más hipotético): たら es el más flexible y coloquial, y el único que combina bien "si/cuando" con una petición.',
       ],
     },
   ],

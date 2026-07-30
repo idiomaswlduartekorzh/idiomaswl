@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Limitacion importante: no con mandatos',
+      heading: '¿Por qué -(아/어)서 no se usa con mandatos?',
       paragraphs: [
         'A diferencia de -(으)니까 y -(으)면, la terminacion -(아/어)서 NO puede usarse antes de mandatos (imperativo) ni de propuestas con -(아/어)요. Esta es una regla crucial que confunde a muchos estudiantes.',
         'Correcto: 피곤하니까 쉬세요 (Como estas cansado, descansa). Incorrecto: ✗피곤해서 쉬세요. Sin embargo, si se puede usar con oraciones declarativas: 피곤해서 쉬었어요 (Estaba cansado, asi que descanse).',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Razon vs secuencia: ¿como distinguirlos?',
+      heading: '¿Cómo se distingue razón de secuencia con -(아/어)서?',
       paragraphs: [
         'Con verbos de movimiento (가다, 오다, 나가다) -(아/어)서 casi siempre expresa secuencia: 학교에 가서 공부했어요 (Fui al colegio y estudie). Con adjetivos, expresa casi siempre razon: 날씨가 좋아서 기분이 좋아요 (El clima esta bien, por eso me siento bien).',
         'El contexto y el tipo de verbo te guian: si la primera clausula describe un estado o emocion, es causa. Si describe un desplazamiento o preparacion, es secuencia.',

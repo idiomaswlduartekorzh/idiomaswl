@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las tres formas de preguntar en francés',
+      heading: '¿Cómo se hacen preguntas en francés?',
       paragraphs: [
         'A diferencia del español, donde solo se invierte el orden o se añade una entonación, el francés tiene tres sistemas distintos de pregunta. Conocerlos todos te permitirá entender francés en cualquier contexto: conversación informal, textos formales o documentos escritos.',
         'La más fácil de aprender es la pregunta por entonación: tomas una oración afirmativa normal y solo subes la voz al final. "Tu travailles ici ?" Es la forma más usada en el habla cotidiana.',
       ],
     },
     {
-      heading: 'Est-ce que: la forma más versátil',
+      heading: '¿Cómo se usa "est-ce que" en francés?',
       paragraphs: [
         '"Est-ce que" es literalmente "¿es que...?" y se coloca al principio de la pregunta sin cambiar el orden de la oración. "Est-ce que vous parlez espagnol ?" = "¿Hablan español?" Es la forma más recomendada para principiantes porque nunca falla y es correcta en todos los contextos.',
         'Ante vocal o h muda, "que" pierde la "e": "Est-ce qu\'il habite ici ?" / "Est-ce qu\'elle aime le café ?" Esta elisión es obligatoria en la escritura.',
       ],
     },
     {
-      heading: 'Las palabras interrogativas esenciales',
+      heading: '¿Cuáles son las palabras interrogativas en francés?',
       paragraphs: [
         'Las palabras interrogativas más importantes en A1: qui (quién), que / qu\'est-ce que (qué), où (dónde), quand (cuándo), comment (cómo), pourquoi (por qué), combien (cuánto / cuántos).',
         'Con estas palabras, la estructura más común en A1 es: interrogativa + est-ce que + sujeto + verbo. "Où est-ce que tu habites ?" / "Quand est-ce qu\'elle arrive ?" / "Pourquoi est-ce que vous étudiez le français ?"',

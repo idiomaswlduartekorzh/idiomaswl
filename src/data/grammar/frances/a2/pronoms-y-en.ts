@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Y: el pronombre de lugar y à + chose',
+      heading: '¿Cuándo se usa el pronombre "y" en francés?',
       paragraphs: [
         'Y reemplaza cualquier complemento de lugar: "Je vais au supermarché" → "J\'y vais" (voy allí). También reemplaza un complemento introducido por à cuando se refiere a una cosa (no persona): "Je pense à mon travail" → "J\'y pense" (pienso en ello). Para personas, hay que usar à + pronom tonique: "Je pense à elle" (no ❌ "J\'y pense").',
         'La pregunta "Tu y vas souvent ?" (¿Vas allí a menudo?) y la respuesta "Oui, j\'y vais / Non, je n\'y vais pas" son modelos de este pronombre en la conversación cotidiana.',
       ],
     },
     {
-      heading: 'En: partitivo, cantidad y de + cosa',
+      heading: '¿Cuándo se usa el pronombre "en" en francés?',
       paragraphs: [
         'En reemplaza los artículos partitivos (du/de la/des) + nombre: "Tu veux du pain ?" → "Oui, j\'en veux" (Sí, quiero). También reemplaza de + nombre en complementos verbales: "Je parle de ce film" → "J\'en parle". Y cuando hay una cantidad: "J\'ai trois frères" → "J\'en ai trois" — el número queda al final.',
         'La diferencia clave con COD le/la/les: "Je mange du gâteau" → "J\'en mange" (partitivo → en); "Je mange ce gâteau" → "Je le mange" (determinado → le).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "y" y "en" en francés?',
+      paragraphs: [
+        '"Y" reemplaza a un lugar o a "à + cosa": "Je vais à Paris → j\'y vais" ; "Je pense à mon travail → j\'y pense". "En" reemplaza a "de + cosa", a un partitivo o a una cantidad: "Je viens de Paris → j\'en viens" ; "Je veux du pain → j\'en veux" ; "J\'ai deux frères → j\'en ai deux". Regla mnemotécnica infalible: à → y, de → en. Ninguno de los dos tiene equivalente como palabra suelta en español, por eso el hispanohablante tiende a omitirlos ("voy" en vez de "j\'y vais"); pero en francés son obligatorios para no repetir el complemento y suenan de lo más natural.',
       ],
     },
   ],

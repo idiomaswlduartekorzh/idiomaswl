@@ -50,14 +50,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los tres grupos irregulares del coreano A2',
+      heading: '¿Cuáles son los verbos irregulares del coreano A2?',
       paragraphs: [
         'En coreano la mayoria de verbos siguen reglas regulares, pero un grupo importante cambia la raiz al conjugarse. En A2 los mas urgentes son tres: ㄹ irregulares (raiz termina en ㄹ), ㅂ irregulares (ㅂ final cambia a 우) y 르 irregulares (르 se convierte en ㄹ duplicado). Dominar estos tres grupos te permitira hablar con naturalidad sobre clima, habilidades y emociones.',
         'La buena noticia: estos cambios son sistematicos. Una vez que interiorizas la regla de cada grupo, la aplicas a todos sus miembros. No hace falta memorizar cada verbo por separado.',
       ],
     },
     {
-      heading: 'Grupo ㅂ: los adjetivos de sensacion',
+      heading: '¿Cómo funciona el grupo irregular ㅂ en coreano?',
       paragraphs: [
         'El grupo ㅂ incluye los adjetivos de clima y sensacion mas comunes: 덥다 (caluroso), 춥다 (frio), 가깝다 (cercano), 어렵다 (dificil), 쉽다 (facil), 아름답다 (hermoso). Todos convierten ㅂ en 우 antes de vocal: 덥다 → 더워요, 춥다 → 추워요.',
         'Excepcion importante: 좋다 (bueno/le gusta) NO es irregular — 좋아요 es regular. Tambien 잡다 (agarrar) y 입다 (vestirse) son regulares a pesar de terminar en ㅂ.',
@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Grupo 르: velocidad, diferencia y conocimiento',
+      heading: '¿Cómo funciona el grupo irregular 르 en coreano?',
       paragraphs: [
         '르 irregulares incluyen verbos muy utiles: 모르다 (no saber), 다르다 (ser diferente), 부르다 (llamar/cantar), 빠르다 (rapido), 고르다 (elegir). La regla: quitas 르, duplicas ㄹ en la silaba anterior y anade 아/어: 모르 → 몰+ㄹ+아요 → 몰라요.',
         'En pasado la logica es la misma: 몰랐어요, 달랐어요, 불렀어요. La raiz modificada es la base para todas las conjugaciones siguientes.',

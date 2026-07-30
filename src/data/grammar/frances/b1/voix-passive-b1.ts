@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Transformación de activa a pasiva',
+      heading: '¿Cómo se pasa de la voz activa a la pasiva en francés?',
       paragraphs: [
         'Para transformar una oración activa en pasiva: el objeto directo de la oración activa se convierte en el sujeto de la pasiva; el verbo principal se transforma en être + participio; el sujeto original se convierte en el agente, introducido por "par" (o "de" en algunos casos).',
         'Ejemplo completo: ACTIVA → "Les journalistes ont interviewé le ministre." PASIVA → "Le ministre a été interviewé par les journalistes." Atención: solo los verbos transitivos directos (que tienen objeto directo) pueden formar la voz pasiva en francés.',
       ],
     },
     {
-      heading: 'Concordancia del participio en la voz pasiva',
+      heading: '¿Cómo concuerda el participio en la voz pasiva francesa?',
       paragraphs: [
         'Una regla que los estudiantes a menudo olvidan: en la voz pasiva, el participio pasado siempre concuerda en género y número con el sujeto, porque être es el auxiliar. Esto es diferente del passé composé con avoir, donde el participio no concuerda con el sujeto.',
         'Ejemplos de concordancia: "La décision a été prise." (femenino singular → prise) / "Les documents ont été signés." (masculino plural → signés) / "Les lettres ont été envoyées." (femenino plural → envoyées).',

@@ -62,10 +62,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '괜찮아요: la expresión más versátil del coreano',
+      heading: '¿Qué significa 괜찮아요 en coreano?',
       paragraphs: [
         '"괜찮아요" (gwaenchanayo) es una de las expresiones más frecuentes del coreano porque tiene múltiples usos: "Estoy bien" (cuando te preguntan si estás bien), "De nada" (respuesta a 감사합니다), "No importa" (cuando algo salió mal), "Está bien" (dando permiso o aprobación).',
         'Los hablantes coreanos la usan constantemente en situaciones sociales. Aprenderla en sus distintos contextos te hará sonar natural desde el principio. La clave es el contexto y la entonación.',
+      ],
+    },
+    {
+      heading: '¿Cómo se saluda y se agradece en coreano?',
+      paragraphs: [
+        '안녕하세요 (annyeonghaseyo) es el saludo estándar en registro cortés y sirve para "hola", "buenos días" y "buenas tardes" a cualquier hora. Para agradecer se usa 감사합니다 (gamsahamnida, formal) o 고마워요 (más cercano). Al despedirse hay dos fórmulas según quién se marcha: 안녕히 가세요 (a quien se va) y 안녕히 계세요 (a quien se queda). Para disculparse, 죄송합니다 o 미안해요. La trampa para el hispanohablante es que el coreano elige la fórmula según la relación jerárquica y según quién se mueve, no según la hora del día como en español.',
       ],
     },
   ],

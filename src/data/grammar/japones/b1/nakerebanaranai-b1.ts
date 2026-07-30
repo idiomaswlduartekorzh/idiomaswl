@@ -15,7 +15,11 @@ const topic: GrammarTopic = {
     table: [['Estructura', 'Significado', 'Ejemplo'], ['〜なければならない', 'Obligación', '勉強しなければ (debo estudiar)']],
     mistakes: ['「勉強しなければなりません」 ✓ (formal). 「勉強しなきゃ」 ✓ (casual).'],
   },
-  seo: [{heading: '〜なければならない', paragraphs: ['勉強しなければならない (tengo que estudiar). Expresa obligación fuerte.', 'Muy formal y polite.']}, {heading: '〜なきゃない (casual)', paragraphs: ['勉強しなきゃ (tengo que estudiar — casual). Forma coloquial de なければならない.', 'Mucho más común en conversación informal.']}],
+  seo: [
+    {heading: '¿Cómo se expresa una obligación fuerte con 〜なければならない?', paragraphs: ['勉強しなければならない (tengo que estudiar). Expresa una obligación fuerte, casi imperativa, de origen externo o normativo.', 'Es el registro formal y neutro; en textos y situaciones cuidadas se usa la forma cortés なければなりません.']},
+    {heading: '¿Qué es la forma casual 〜なきゃ (y なくちゃ)?', paragraphs: ['勉強しなきゃ (tengo que estudiar — casual). なきゃ es la contracción coloquial de なければ, y なくちゃ lo es de なくては.', 'En conversación informal se suele omitir incluso el ならない/いけない final: 行かなきゃ (tengo que ir) basta por sí solo, sobreentendiéndose el resto.']},
+    {heading: '¿Cómo se forma 〜なければならない a partir del verbo?', paragraphs: ['Se parte de la forma negativa plana (ない), se quita い y se añade ければならない: 行く→行かない→行かなければならない; 食べる→食べない→食べなければならない; する→しない→しなければならない.', 'La lógica literal es "si no lo hago, no va bien". La trampa para el hispanohablante es el doble negativo de la estructura: conviene memorizar el bloque completo なければならない y reconocer なきゃ/なくちゃ como la misma obligación en tono casual.']},
+  ],
   visual: {mode: 'scene', teacherLens: '〜なければならない: obligación', graphicPrompt: 'Tabla: 〜なければならない vs 〜なきゃ', scene: [['勉強しなければならない。', 'Tengo que estudiar (formal).'], ['行かなきゃ。', 'Tengo que ir (casual).']]
 , learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['義務', '強制', '必須']},
   practice: {levels: [{id: 'level-1', title: '〜なければならない', tag: 'Múltipla escolha', intro: 'Selecciona.', type: 'choice', items: [{scene: 'Obligación', lines: [['', '勉強し___。']], options: ['なければならない', 'なきゃ', 'べき', 'ほう'], answer: 'なければならない', explain: 'なければならない (obligación).'}]}, {id: 'level-2', title: 'Contexto', tag: '義務', intro: 'Completa.', type: 'guidedText', scene: 'Obligaciones.', text: '行かなければ[[0]]。'

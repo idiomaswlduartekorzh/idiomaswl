@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'だけ vs しか: dos formas de decir "solo" en japonés',
+      heading: '¿En qué se diferencian だけ y しか para decir "solo"?',
       paragraphs: [
         '水だけ飲みます y 水しか飲みません significan ambas "solo bebo agua", pero tienen matices distintos. だけ es neutral: "solo agua" sin ningún juicio. しか～ない implica que eso es todo lo que hay y que es insuficiente o restrictivo: "no bebo (nada) más que agua".',
         'La regla de oro de しか: SIEMPRE va seguido de un verbo en negativo. No se puede decir "しか飲みます" — el verbo debe estar en forma negativa: "しか飲みません", "しか食べない", "しかわからない".',
       ],
     },
     {
-      heading: 'ばかり: el exceso y "acabo de"',
+      heading: '¿Qué expresa ばかり (exceso y "acabo de")?',
       paragraphs: [
         'ばかり tiene dos usos principales en A2. El primero es indicar que alguien hace lo mismo constantemente o en exceso: "ゲームばかりしている" (no hace más que jugar videojuegos). El segundo uso es con la forma た del verbo para indicar que algo acaba de ocurrir: "食べたばかりです" (acabo de comer), "着いたばかりです" (acabo de llegar).',
         'Este segundo uso (V-た + ばかり) es muy frecuente en japonés cotidiano y equivale al español "acabar de + infinitivo".',
+      ],
+    },
+    {
+      heading: '¿Por qué しか obliga a usar el verbo en negativo?',
+      paragraphs: [
+        'だけ y しか significan ambos "solo", pero se construyen distinto. だけ va con verbo afirmativo y es neutro: 千円だけあります (tengo solo mil yenes). しか siempre exige verbo en NEGATIVO y añade un matiz de "solo... y nada más / no es suficiente": 千円しかありません (no tengo más que mil yenes, literalmente "solo mil yenes no-hay"). La estructura しか...ない es fija: el negativo no es opcional. La trampa para el hispanohablante es traducir las dos igual y olvidar el negativo con しか: 日本語しか話します es incorrecto; debe ser 日本語しか話しません (solo hablo japonés). Además しか suele reemplazar a を/が (英語しか, no 英語をしか).',
       ],
     },
   ],

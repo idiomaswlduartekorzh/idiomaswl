@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El Präteritum de verbos fuertes: cambios vocálicos",
+      heading: '¿Cómo cambian la vocal los verbos fuertes en Präteritum?',
       paragraphs: [
         "Los verbos fuertes (starke Verben) del alemán forman el Präteritum cambiando la vocal del radical, sin añadir el sufijo -te de los verbos débiles. Los grupos de cambio más frecuentes son: e→a (geben→gab, essen→aß, lesen→las, sehen→sah), ei→ie (schreiben→schrieb, bleiben→blieb, treiben→trieb), ie→o (fliegen→flog, ziehen→zog), i→a (singen→sang, finden→fand, trinken→trank), e→o/u (nehmen→nahm, sprechen→sprach, werfen→warf).",
         "La conjugación sigue un patrón regular: la 1ª y 3ª persona singular son idénticas y sin terminación (ich/er/sie/es kam), la 2ª persona singular añade -(e)st (du kamst), el plural sigue las terminaciones estándar (-en, -est/-t). Los verbos cuya raíz termina en -t o -d pueden añadir -e antes de las terminaciones que empiezan por consonante para facilitar la pronunciación (werden → du wurdest, finden → du fandest).",
       ],
     },
     {
-      heading: "Präteritum vs Perfekt: ¿cuándo usar cada uno?",
+      heading: '¿Cuándo se usa Präteritum y cuándo Perfekt en alemán?',
       paragraphs: [
         "En alemán existe una distinción de registro importante: el Präteritum es el tiempo de la narración escrita (novelas, cuentos, artículos periodísticos, informes), mientras que el Perfekt es el tiempo del alemán oral cotidiano para hablar de eventos pasados. Esta es una diferencia significativa respecto al español, que usa el pretérito indefinido tanto en escritura como en conversación formal.",
         "Sin embargo, hay excepciones importantes: sein (war), haben (hatte) y los verbos modales (konnte, wollte, musste, sollte, durfte, mochte) se usan preferentemente en Präteritum incluso en el alemán oral, porque sus formas de Perfekt suenan pesadas. 'Ich hatte keine Zeit' (oral normal) vs 'Ich habe keine Zeit gehabt' (oral pero muy formal). Para el nivel B1, es esencial dominar las formas de Präteritum para comprender textos escritos.",
       ],
     },
     {
-      heading: "Los 20 verbos fuertes más frecuentes en Präteritum",
+      heading: '¿Cuáles son los verbos fuertes más frecuentes en Präteritum?',
       paragraphs: [
         "Los verbos fuertes más importantes para el nivel B1 son: sein (war), haben (hatte), werden (wurde), gehen (ging), kommen (kam), sehen (sah), geben (gab), nehmen (nahm), sprechen (sprach), stehen (stand), fahren (fuhr), laufen (lief), schreiben (schrieb), lesen (las), finden (fand), bleiben (blieb), essen (aß), trinken (trank), schlafen (schlief), denken (dachte). Estos 20 verbos cubren la gran mayoría del Präteritum en textos B1.",
         "Un truco mnemotécnico: agrupar por cambio vocálico. Grupo -ie→o-: schreiben/schrieb, bleiben/blieb, treiben/trieb, reiben/rieb. Grupo -ei→i-: gehen/ging (irregular especial). Grupo -a→u-: fahren/fuhr, graben/grub, laden/lud. Grupo -e→a-: geben/gab, essen/aß, sehen/sah, lesen/las. Aprender en grupos facilita la memorización y permite predecir formas desconocidas.",

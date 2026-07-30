@@ -69,6 +69,33 @@ const topic: GrammarTopic = {
         'El pronombre "o/a" es el de objeto directo de tercera persona. En Brasil coloquial a veces se reemplaza con "ele/ela" después del verbo: "Eu vi ele." Para el nivel A2 es importante conocer ambas formas.',
       ],
     },
+    {
+      heading: '¿Cuáles son los pronombres oblicuos átonos en portugués?',
+      paragraphs: [
+        'Son los pronombres que sustituyen al objeto del verbo: me, te, o/a, nos, os/as (objeto directo) y lhe/lhes (objeto indirecto). Esta tabla los ordena por persona con un ejemplo:',
+      ],
+      table: [
+        ['Persona', 'Pronombre', 'Ejemplo'],
+        ['1ª singular', 'me', 'Ele me viu.'],
+        ['2ª singular', 'te', 'Eu te ligo.'],
+        ['3ª (OD)', 'o / a', 'Eu o/a conheço.'],
+        ['3ª (OI)', 'lhe', 'Eu lhe disse.'],
+        ['1ª plural', 'nos', 'Ela nos ajudou.'],
+        ['3ª plural (OD)', 'os / as', 'Eu os vi.'],
+      ],
+    },
+    {
+      heading: '¿El pronombre va antes o después del verbo en portugués?',
+      paragraphs: [
+        'En el portugués brasileño lo natural es colocarlo antes del verbo (próclise): "Ele me ligou", "Eu te vi", "Ela nos ajudou". La forma con guion pospuesta (ênclise: "Ligou-me", "Vi-te") es propia del portugués europeo y de la escritura muy formal. En oraciones negativas el pronombre va siempre entre el "não" y el verbo: "Não te entendi", "Ela não me viu". Para A2, la regla práctica en la variante brasileña es: pronombre delante del verbo, y nunca al empezar la frase en registro culto (aunque en el habla se oye "Me liga!").',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "o/a" y "lhe" en portugués?',
+      paragraphs: [
+        '"O/a" (y su plural os/as) sustituye al objeto directo, es decir, lo que recibe la acción sin preposición: "Eu vi o João → Eu o vi". "Lhe" sustituye al objeto indirecto, normalmente introducido por "a" (a quién): "Eu dei o livro ao João → Eu lhe dei o livro". En el habla brasileña, "lhe" está en retroceso y se sustituye por "para ele/ela" ("Eu dei para ele") o por "te" en 2ª persona ("Eu te disse"). Para A2 conviene reconocer "lhe", pero producir la construcción con "para + pronombre", que es la más frecuente en Brasil.',
+      ],
+    },
   ],
 
   visual: {

@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'は vs が: la diferencia que todos preguntan',
+      heading: '¿Cuál es la diferencia entre las partículas は y が?',
       paragraphs: [
         'La distinción entre は (wa) y が (ga) es una de las preguntas más frecuentes en japonés. Ambas pueden traducirse como "el/la/los" o simplemente marcan el sujeto, pero sus funciones son distintas. は marca el TEMA de conversación — algo conocido o presentado como contexto. が marca el SUJETO gramatical — con énfasis en la nueva información o en "quién".',
         'Para el hispanohablante, la mejor aproximación es: は = "hablando de / en cuanto a" y が = "es [precisamente] quien". わたしは がくせいです = "Hablando de mí, soy estudiante" vs わたしが がくせいです = "Soy YO el estudiante (no tú, no él)".',
       ],
     },
     {
-      heading: 'Cuándo usar が en A1: tres casos claros',
+      heading: '¿Cuándo se usa が en A1? Tres casos claros',
       paragraphs: [
         'En el nivel A1 hay tres contextos donde が es la elección correcta. Primero: verbos de existencia います (estar/haber para animados) y あります (estar/haber para inanimados) siempre van con が: ねこが います (hay un gato), ほんが あります (hay un libro).',
         'Segundo: adjetivos de gusto/odio/habilidad toman が: にほんごが すきです (me gusta el japonés), およぐのが とくいです (soy bueno nadando). Tercero: respuesta a preguntas de quién/qué con が: だれが きましたか → たろうが きました (¿Quién vino? → Fue Taro).',
+      ],
+    },
+    {
+      heading: '¿Por qué は y が no se traducen igual aunque ambas marquen el sujeto?',
+      paragraphs: [
+        'は (wa) marca el TEMA: aquello de lo que ya se habla, información conocida, y suele traducirse como "en cuanto a...". が (ga) marca el SUJETO gramatical, presenta información NUEVA o identifica quién exactamente. Comparación clásica: 私は学生です (yo —de mí— soy estudiante, tema) frente a だれが学生ですか → 私が学生です (¿quién es estudiante? — yo lo soy, con が porque es la información nueva que responde). が también es obligatoria con います/あります y con adjetivos de gusto/habilidad: 犬がすきです (me gustan los perros). La trampa para el hispanohablante es que el español no distingue esto: ambas parecen "el sujeto", pero は presenta el marco del que se habla y が señala e identifica lo nuevo.',
       ],
     },
   ],

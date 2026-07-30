@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La forma て en japonés: clave para la fluidez en A2',
+      heading: '¿Por qué la forma て es clave para la fluidez en A2?',
       paragraphs: [
         'La forma て (te-form) es uno de los pilares del japones intermedio. Con ella, puedes encadenar acciones —como en español "me levante, desayune y fui al trabajo"— en una sola frase natural. En japones, este encadenamiento es obligatorio cuando describes secuencias: 起きて、ご飯を食べて、学校に行きます.',
         'Ademas de la secuencia, la forma て sirve para expresar el modo o medio de una accion: 歩いて行く (ir caminando), 走って来る (venir corriendo), 笑って言う (decir riendo). Esta funcion es muy frecuente en el japones cotidiano.',
       ],
     },
     {
-      heading: 'Conjugacion de la forma て: reglas por grupo',
+      heading: '¿Cómo se conjuga la forma て según el grupo verbal?',
       paragraphs: [
         'Los verbos del Grupo 1 (godan) tienen varias sub-reglas segun su terminacion: く→いて (書く→書いて), ぐ→いで (泳ぐ→泳いで), す→して (話す→話して), つ/う/る→って (待つ→待って), む/ぬ/ぶ→んで (飲む→飲んで). Los verbos del Grupo 2 (ichidan) son simples: se elimina る y se agrega て (食べる→食べて).',
         'Los irregulares son solo dos: する→して y くる→きて. Memorizalos desde el principio porque aparecen constantemente. La excepcion adicional es いく→いって (no いいて), que es la unica irregularidad de un verbo del Grupo 1.',
+      ],
+    },
+    {
+      heading: '¿Cómo se encadenan varias acciones en orden con la forma て?',
+      paragraphs: [
+        'La forma て enlaza acciones sucesivas "y luego": 朝起きて、顔を洗って、朝ごはんを食べます (me levanto, me lavo la cara y desayuno). Solo el ÚLTIMO verbo marca el tiempo y la cortesía (食べます / 食べました); los anteriores quedan en forma て, neutros. Las reglas de conjugación por grupo son fijas: grupo 2, quitar る y poner て (食べる→食べて); grupo 1, según la terminación: く→いて (書く→書いて), ぐ→いで, む/ぶ/ぬ→んで (飲む→飲んで), う/つ/る→って (買う→買って), す→して (話す→話して); irregulares する→して, 来る→来て (きて). Ojo con la excepción 行く→行って. La trampa para el hispanohablante es que el tiempo pasado o el negativo NO se reparte por cada verbo: se pone solo en el último de la cadena.',
       ],
     },
   ],

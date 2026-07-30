@@ -54,7 +54,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Los posesivos del singular: mon/ma/mes, ton/ta/tes, son/sa/ses',
+      heading: '¿Cómo son los posesivos del singular en francés (mon/ma/mes)?',
       paragraphs: [
         'Para las tres primeras personas del singular, el posesivo tiene tres formas: masculino singular, femenino singular y plural. Por ejemplo: "mon livre" (mi libro, masc.), "ma sœur" (mi hermana, fem.), "mes amis" (mis amigos, pl.).',
         'La forma plural (mes/tes/ses) se usa tanto para masculino como para femenino plural: "mes frères" y "mes sœurs" usan ambos "mes".',
@@ -74,7 +74,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Notre/nos, votre/vos, leur/leurs',
+      heading: '¿Cómo son los posesivos del plural en francés (notre/votre/leur)?',
       paragraphs: [
         'Para la primera y segunda personas del plural (nosotros, vosotros), el posesivo tiene solo dos formas: singular (notre/votre) y plural (nos/vos). "Notre maison" (nuestra casa), "nos amis" (nuestros amigos), "votre professeur" (su/vuestro profesor), "vos livres" (sus/vuestros libros).',
         '"Leur" (tercera persona plural) también tiene dos formas: "leur" para singular y "leurs" para plural del objeto: "leur chien" (su perro — de ellos), "leurs enfants" (sus hijos — de ellos).',

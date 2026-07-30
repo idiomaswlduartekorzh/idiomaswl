@@ -38,9 +38,9 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es БЫ?', paragraphs: ['БЫ es una partícula que marca condición irreal: "si fuera, habría". Muy usado en hipótesis, deseos y contrafácticos.', 'Estructura: если бы + verbo en pasado НСВ. Siempre pasado, nunca presente.']},
-    {heading: 'Condicional con если бы', paragraphs: ['"Если бы я знал" (si yo supiera). "Если бы была машина" (si hubiera coche). Estructura de if-clause en condicional.', 'Siempre va junto con el verbo de resultado que también lleva БЫ.']},
+    {heading: '¿Cómo se forma el condicional con если бы?', paragraphs: ['"Если бы я знал" (si yo supiera). "Если бы была машина" (si hubiera coche). Estructura de if-clause en condicional.', 'Siempre va junto con el verbo de resultado que también lleva БЫ.']},
     {heading: 'Resultado con БЫ', paragraphs: ['"Я бы пришёл" (yo vendría/habría venido). БЫ marca irrealidad. El verbo siempre está en pasado, independientemente del momento.', '"Если бы я знал, я бы пришёл вчера" (si hubiera sabido, habría venido ayer).']},
-    {heading: 'Deseos irreales: хотел бы, хотела бы', paragraphs: ['"Я хотел бы поехать" (me gustaría ir — deseo irreal). "Он хотел бы знать" (él quisiera saber).', 'БЫ después de хотеть transforma a pasado condicional.']},
+    {heading: '¿Cómo se expresan deseos irreales con хотел бы / хотела бы?', paragraphs: ['"Я хотел бы поехать" (me gustaría ir — deseo irreal). "Он хотел бы знать" (él quisiera saber).', 'БЫ después de хотеть transforma a pasado condicional.']},
     {heading: 'БЫ vs обычное условие (если...то)', paragraphs: ['"Если это правда, это плохо" (si es verdad, es malo — posible). "Если бы это было правдой, это было бы плохо" (si fuera verdad, sería malo — irreal).', 'Diferencia: обычное условие = posible; БЫ = irreal/contrafáctico.']},
   ],
   visual: {mode: 'scene', teacherLens: 'БЫ: condicional irreal vs обычное условие (possible)', graphicPrompt: 'Tabla: БЫ (irreal) vs Indicativo (posible)', scene: [['Если бы я знал, я бы пришёл.', 'Si hubiera sabido, habría venido.'], ['Я бы поехал, если бы была машина.', 'Yo iría si hubiera coche.'], ['Он хотел бы помочь.', 'Él quisiera ayudar.'], ['Если бы я был богат...', 'Si fuera rico...'], ['Я бы остался здесь.', 'Yo me quedaría aquí.']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['условное', 'нереальное', 'БЫ']},

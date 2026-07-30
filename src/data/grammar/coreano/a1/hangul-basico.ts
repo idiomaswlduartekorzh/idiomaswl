@@ -50,7 +50,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Las 10 vocales básicas del hangeúl',
+      heading: '¿Cuáles son las vocales básicas del hangeúl?',
       paragraphs: [
         'Las 10 vocales básicas del hangeúl son: ㅏ (a), ㅓ (eo), ㅗ (o), ㅜ (u), ㅡ (eu), ㅣ (i), ㅐ (ae), ㅔ (e), ㅚ (oe), ㅟ (wi). Están agrupadas en simples y compuestas.',
         'Las más frecuentes son ㅏ, ㅓ, ㅗ, ㅜ, ㅣ. Un truco visual: las vocales con línea vertical (ㅏ ㅓ ㅣ) se escriben a la derecha de la consonante; las de línea horizontal (ㅗ ㅜ ㅡ) van debajo.',
@@ -64,7 +64,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Las 14 consonantes básicas del hangeúl',
+      heading: '¿Cuáles son las consonantes básicas del hangeúl?',
       paragraphs: [
         'Las 14 consonantes básicas son: ㄱ(g/k), ㄴ(n), ㄷ(d/t), ㄹ(r/l), ㅁ(m), ㅂ(b/p), ㅅ(s), ㅇ(ng/mudo), ㅈ(j), ㅊ(ch), ㅋ(k), ㅌ(t), ㅍ(p), ㅎ(h).',
         'La consonante ㅇ (ieung) tiene una función doble: al inicio de sílaba es completamente muda (sirve de marcador de posición cuando la sílaba empieza por vocal: 아=a, 이=i), y al final de sílaba suena como /ng/.',

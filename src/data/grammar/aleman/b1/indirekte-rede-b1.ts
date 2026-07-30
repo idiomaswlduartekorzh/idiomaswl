@@ -57,7 +57,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La estructura con dass: la forma más usada en B1',
+      heading: '¿Cómo se forma el estilo indirecto con dass en alemán?',
       paragraphs: [
         'La forma más frecuente en el alemán hablado de nivel B1 es: verbo introductor (sagt, erzählt, meint) + dass + sujeto + … + verbo al FINAL. La oración con dass es un Nebensatz, por eso el verbo va al final.',
         'Ejemplos: "Er sagt, dass er morgen arbeitet." / "Sie hat erklärt, dass das Projekt fertig ist." / "Ich habe gehört, dass du heiraten willst." En el habla informal también es posible omitir el dass y mantener el orden de la oración principal: "Er sagt, er kommt morgen."',
@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El Konjunktiv I en el estilo indirecto',
+      heading: '¿Cuándo se usa el Konjunktiv I en el estilo indirecto alemán?',
       paragraphs: [
         'En alemán formal (prensa, literatura, noticias) se usa el Konjunktiv I para el estilo indirecto. Se forma a partir del infinitivo añadiendo las terminaciones: -e, -est, -e, -en, -et, -en. Las más importantes son er/sie sei (sein), er/sie habe (haben), er/sie komme (kommen).',
         'Si el Konjunktiv I coincide con el Indikativ (lo que pasa con muchos verbos en 1.ª persona), se usa Konjunktiv II para mantener la distancia: "Sie sagten, sie kämen" (en vez de "sie kommen" que es Indikativ = ambiguo). En B1 lo más importante es reconocer las formas de sein y haben en Konjunktiv I.',

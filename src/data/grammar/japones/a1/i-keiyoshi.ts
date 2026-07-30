@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Los adjetivos い: conjugación sistemática en japonés A1',
+      heading: '¿Cómo se conjugan los adjetivos い en japonés?',
       paragraphs: [
         'Los adjetivos い (i-keiyoshi) tienen una característica especial: se conjugan directamente, como si fueran verbos, sin necesitar una cópula adicional. Para negar, formas el pasado o niegas el pasado, modificas solo la terminación. La raíz es el adjetivo sin la い final: たのしい → raíz たのし; おいしい → raíz おいし.',
         'El sistema es muy regular: negativo = raíz + くない, pasado = raíz + かった, pasado negativo = raíz + くなかった. En estilo formal añades です al final de todas las formas. La única excepción es いい (bueno/buena), que en todas las formas no-presentes cambia a よ: よくない, よかった, よくなかった.',
       ],
     },
     {
-      heading: 'Adjetivos い frecuentes en japonés A1',
+      heading: '¿Cuáles son los adjetivos い más frecuentes en japonés?',
       paragraphs: [
         'Los adjetivos い más usados en A1 incluyen: 大きい (ōkii = grande), 小さい (chiisai = pequeño), 高い (takai = caro/alto), 安い (yasui = barato), おいしい (oishii = delicioso), まずい (mazui = malo de sabor), たのしい (tanoshii = divertido), むずかしい (muzukashii = difícil), やさしい (yasashii = fácil/amable), あつい (atsui = caliente/caluroso), さむい (samui = frío).',
         'Para el hispanohablante, la confusión más frecuente es usar いい con las formas irregulares. Recuerda: いい solo funciona en presente afirmativo. En todas las demás formas, debes cambiar a よ: "La fiesta fue buena" = パーティーは よかったです (no いかったです). Este cambio a よ es idéntico a un cambio de raíz similar al de verbos irregulares españoles.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre adjetivos い y な en japonés?',
+      paragraphs: [
+        'El japonés tiene dos clases de adjetivos que se conjugan distinto. Los い-adjetivos (i-keiyōshi) terminan en い y se conjugan solos, sin verbo: 高い (alto/caro), y para el pasado o el negativo cambian su propia terminación (高かった = era caro, 高くない = no es caro). Los な-adjetivos (na-keiyōshi) se comportan como sustantivos: necesitan だ/です y añaden な cuando van delante de un sustantivo (きれいな花 = una flor bonita, きれいです = es bonita). La trampa para el hispanohablante es que en español todos los adjetivos funcionan igual; en japonés hay que saber a qué grupo pertenece cada uno, porque い y な conjugan de forma diferente. Ojo: きれい y ゆうめい terminan en い pero son な-adjetivos.',
       ],
     },
   ],

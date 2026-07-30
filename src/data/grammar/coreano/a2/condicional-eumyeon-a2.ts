@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Condicional con mandatos y sugerencias',
+      heading: '¿Cómo se usa -(으)면 con mandatos y sugerencias?',
       paragraphs: [
         'Una combinacion muy frecuente es el condicional seguido de un mandato o sugerencia: 피곤하면 쉬세요 (Si estas cansado, descansa). 배고프면 드세요 (Si tienes hambre, come). Esta estructura es muy natural en el coreano hablado.',
         'Atencion: a diferencia de -(아/어)서 (que NO puede preceder a mandatos), -(으)면 si puede ir seguido de comandos. Esta es una diferencia importante que veremos en el tema 04.',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia entre -(으)면 y -때',
+      heading: '¿Cuál es la diferencia entre -(으)면 y -때?',
       paragraphs: [
         '-(으)면 expresa una condicion (si algo ocurre). -때 expresa simplemente el momento (cuando/en el momento de). Compare: 비가 오면 우산을 써요 (Si llueve, usa paraguas — condicion) vs 비가 올 때 우산을 썼어요 (Cuando lluvia, usaba paraguas — descripcion de momento).',
         'Para A2 lo mas importante es dominar -(으)면 como la forma general de condicion. -때 se introduce posteriormente para hablar de momentos especificos.',

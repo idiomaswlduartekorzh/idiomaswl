@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'В vs на con acusativo: la distinción esencial',
+      heading: '¿Cómo se elige entre В y на con acusativo de movimiento?',
       paragraphs: [
         'En ruso, los verbos de movimiento (идти, ехать, лететь, бежать...) exigen un destino en acusativo. La elección entre в (en/a) y на (en/a) depende del sustantivo: в se usa para lugares cerrados o delimitados donde se entra (в магазин, в школу, в город, в Россию), mientras que на se usa para superficies, lugares abiertos, trabajos, eventos y algunas palabras convencionales (на работу, на концерт, на улицу, на море, на Украину).',
         'Regla práctica: si en la pregunta "¿Dónde estás?" se usaría в + prepositivo → la dirección es в + acusativo. Si se usaría на + prepositivo → la dirección es на + acusativo. "Я в школе" (estoy en la escuela) → "Я иду в школу" (voy a la escuela).',
       ],
     },
     {
-      heading: 'Declinación de sustantivos en acusativo singular',
+      heading: '¿Cómo se declinan los sustantivos en acusativo singular?',
       paragraphs: [
         'En acusativo singular, solo los sustantivos femeninos en -а/-я cambian terminación: -а → -у (школа → школу, Москва → Москву) y -я → -ю (Россия → Россию, деревня → деревню). Los sustantivos masculinos inanimados y los neutros mantienen la forma del nominativo: банк → в банк, море → на море. Los masculinos animados cambian como los genitivos (al estudiante — к студенту en dativo, pero en acusativo: студента).',
         'Los adjetivos en acusativo con sustantivos inanimados: masc. adj. = nominativo (в красивый парк), fem. adj.: -ую/-юю (в красивую школу). Con femeninos: el adjetivo también cambia: новую → новую школу.',
+      ],
+    },
+    {
+      heading: '¿Qué preposiciones de movimiento rigen el acusativo?',
+      paragraphs: [
+        'Para indicar destino (¿adónde? — куда?), varias preposiciones rigen acusativo: в (a, dentro de: в город = a la ciudad), на (a, hacia una superficie o evento: на работу = al trabajo), за (detrás de: сесть за стол = sentarse a la mesa), под (debajo de: положить под стол = poner debajo de la mesa) y через (a través de: через мост = por el puente).',
+        'La trampa para el hispanohablante es que estas mismas preposiciones (в, на, за, под) cambian de caso según haya movimiento o reposo: con destino piden acusativo (иду в парк = voy al parque), pero con ubicación estática piden prepositivo o instrumental (я в парке = estoy en el parque). La pregunta clave es куда (acusativo) frente a где (prepositivo).',
       ],
     },
   ],

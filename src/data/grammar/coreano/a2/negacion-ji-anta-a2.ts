@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '못 vs 안: la diferencia clave',
+      heading: '¿Cuál es la diferencia entre 못 y 안 en coreano?',
       paragraphs: [
         '못 indica incapacidad fisica o circunstancial: 오늘 못 가요 significa que algo externo me impide ir (estoy enfermo, hay trafico, etc.). 안 indica eleccion propia: 오늘 안 가요 significa que decido no ir.',
         'Esta distincion puede ser delicada. En contexto de polite refusal, los coreanos a veces usan 못 aunque en realidad podrian ir, por educacion: 내일 못 가요 (suena mas suave que 내일 안 가요).',
@@ -64,6 +64,12 @@ const topic: GrammarTopic = {
         ['Forma', 'Significado', 'Ejemplo'],
         ['안 + verbo', 'No (por voluntad)', '오늘 안 먹어요 (hoy no como — por decision)'],
         ['못 + verbo', 'No puedo (incapacidad)', '오늘 못 먹어요 (hoy no puedo comer — algo me lo impide)'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma la negación larga -지 않다 en coreano?',
+      paragraphs: [
+        'Se toma la raíz del verbo o adjetivo + -지 않다 (-ji anta): 가다 → 가지 않아요 (no voy), 크다 → 크지 않아요 (no es grande). Es la negación "larga" y equivale en significado a la "corta" 안 + verbo (안 가요), pero suena algo más formal o enfática y es obligatoria con ciertos verbos largos. Con verbos 하다 la corta separa el 안: 공부 안 해요 = 공부하지 않아요. Para la imposibilidad ("no poder") la larga equivalente es -지 못하다 (가지 못해요 = 못 가요). Regla práctica para el hispanohablante: 안/못 van DELANTE del verbo (como "no" en español), mientras -지 않다/-지 못하다 van DETRÁS pegadas a la raíz; ambas son correctas.',
       ],
     },
   ],

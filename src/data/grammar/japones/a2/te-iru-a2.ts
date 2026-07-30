@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '〜ている: el presente continuo y los estados en japones',
+      heading: '¿Cómo expresa 〜ている el presente continuo y los estados?',
       paragraphs: [
         '〜ている (te-iru) es una de las construcciones mas utiles del japones A2. En su uso mas basico expresa una accion en progreso: 今、勉強しています = Estoy estudiando ahora. Se forma con la て形 del verbo seguida de います (formal) o いる (informal).',
         'Sin embargo, 〜ている tambien describe estados resultantes: 窓が開いています no significa "la ventana esta abriendose" sino "la ventana esta abierta" — es el resultado de haberse abierto. Esta doble funcion es clave para entender el japones natural.',
       ],
     },
     {
-      heading: 'Verbos de estado tipicos con 〜ている',
+      heading: '¿Qué verbos de estado se usan típicamente con 〜ている?',
       paragraphs: [
         'Algunos verbos del japones se usan casi siempre en 〜ている porque expresan estados: 知っています (se / conozco), 住んでいます (vivo en), 結婚しています (estoy casado), 着ています (llevo puesto), 持っています (tengo / llevo). Aprende estos verbos como frases hechas.',
         'La negacion de 〜ています es 〜ていません: 田中さんは結婚していません = Tanaka-san no esta casado. En japones informal, ている se contrae frecuentemente a てる: 食べてる = estoy comiendo.',
+      ],
+    },
+    {
+      heading: '¿Por qué 結婚している significa "estar casado" y no "casándose"?',
+      paragraphs: [
+        '〜ている tiene dos valores según el tipo de verbo. Con verbos de acción durativa expresa acción en curso, como el gerundio español: 食べています (estoy comiendo), 本を読んでいます (estoy leyendo). Pero con verbos de cambio instantáneo expresa el ESTADO RESULTANTE, no la acción: 結婚している = estar casado (resultado de casarse), 死んでいる = estar muerto, 知っている = saber (estado de conocer). Por eso 窓が開いている es "la ventana está abierta", no "se está abriendo". La trampa para el hispanohablante es traducir siempre ている por "estar -ndo": con verbos como 結婚する, 起きる, 来る, 持つ el sentido es el estado que queda tras el cambio. Además 知っている (sé) tiene un negativo irregular: 知りません (no sé), no 知っていません.',
       ],
     },
   ],

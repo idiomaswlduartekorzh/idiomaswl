@@ -40,21 +40,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los tres géneros del alemán: masculino, femenino y neutro',
+      heading: '¿Cuáles son los géneros del alemán?',
       paragraphs: [
         'El alemán tiene tres géneros gramaticales: masculino (der), femenino (die) y neutro (das). El artículo definido refleja este género directamente. Al contrario del español (solo masculino/femenino), en alemán hay que memorizar un tercer género: das Haus (la casa, neutro), das Auto (el coche, neutro), das Kind (el niño, neutro).',
         'La regla de oro: aprende siempre el sustantivo con su artículo: no "Tisch" sino "der Tisch"; no "Lampe" sino "die Lampe"; no "Buch" sino "das Buch". Esto es esencial porque el artículo cambia en los casos gramaticales (Nominativ, Akkusativ, Dativ).',
       ],
     },
     {
-      heading: 'Artículos definidos: der, die, das, die (plural)',
+      heading: '¿Cómo son los artículos definidos en alemán (der, die, das)?',
       paragraphs: [
         'Der (masculino): der Mann (el hombre), der Tisch (la mesa), der Hund (el perro). Die (femenino): die Frau (la mujer), die Lampe (la lámpara), die Stadt (la ciudad). Das (neutro): das Kind (el niño), das Buch (el libro), das Haus (la casa).',
         'El plural de todos los géneros usa "die": die Männer (los hombres), die Frauen (las mujeres), die Kinder (los niños). Así que "die" puede ser femenino singular O plural de cualquier género — el contexto aclara.',
       ],
     },
     {
-      heading: 'Artículos indefinidos: ein, eine, ein',
+      heading: '¿Cómo son los artículos indefinidos en alemán (ein, eine)?',
       paragraphs: [
         '"Ein" para masculino y neutro: ein Mann (un hombre), ein Kind (un niño). "Eine" solo para femenino: eine Frau (una mujer), eine Stadt (una ciudad). No existe artículo indefinido plural en alemán — se omite o se usa "einige" (algunos).',
         'Para la negación: kein (masculino/neutro) y keine (femenino/plural): kein Mann, keine Frau, kein Kind, keine Kinder. Este kein/keine reemplaza al "no tengo un/una" del español.',

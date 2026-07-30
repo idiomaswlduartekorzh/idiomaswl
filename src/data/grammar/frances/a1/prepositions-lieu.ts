@@ -49,14 +49,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'À, en, au, aux: la clave es el género y número del lugar',
+      heading: '¿Cuándo se usa à, en, au o aux con lugares en francés?',
       paragraphs: [
         'Las preposiciones de lugar en francés son más sistemáticas de lo que parecen. La regla más importante: con ciudades siempre se usa "à" (à Paris, à Bogotá, à Rome). Con países, la preposición depende del género y número: "en" para países femeninos o que empiezan por vocal (en France, en Espagne, en Australie), "au" para países masculinos (au Brésil, au Canada, au Japon) y "aux" para países en plural (aux États-Unis, aux Pays-Bas).',
         'La mayoría de los países que terminan en -e son femeninos (France, Espagne, Italie, Allemagne, Belgique, Suisse, Chine). Los que no terminan en -e suelen ser masculinos (le Mexique excepción: termina en -e pero es masculino; le Brésil, le Canada, le Japon, le Portugal).',
       ],
     },
     {
-      heading: 'Cómo saber el género de los países',
+      heading: '¿Cómo se sabe el género de los países en francés?',
       paragraphs: [
         'La regla general: los países que terminan en -e son femeninos (la France, l\'Espagne, l\'Italie, l\'Allemagne). Las excepciones más importantes son: le Mexique, le Cambodge, le Zimbabwe (terminan en -e pero son masculinos).',
         'Países masculinos frecuentes: le Brésil, le Canada, le Japon, le Portugal, le Maroc, le Pérou, le Chili. Países que empiezan por vocal son siempre "en" independientemente del género: en Australie, en Iran, en Irak, en Ouganda.',
@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia entre à y dans con lugares',
+      heading: '¿Cuál es la diferencia entre à y dans con lugares en francés?',
       paragraphs: [
         '"À" indica una ubicación general o destino: "Je suis à Paris" (estoy en París), "je vais à la bibliothèque" (voy a la biblioteca). "Dans" indica el interior de un espacio: "je suis dans la bibliothèque" (estoy dentro de la biblioteca), "je travaille dans un bureau" (trabajo en una oficina).',
         'Con nombres de villes (ciudades) y pays (países) siempre se usa "à/en/au/aux". Con edificios concretos, "dans" es más específico que "à".',

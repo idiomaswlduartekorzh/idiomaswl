@@ -38,8 +38,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es futuro perfectivo?', paragraphs: ['Futuro perfectivo (СВ будущее) es forma simple del perfectivo: напишу, сделаю, прочитаю. Expresa que la acción será completada en el futuro.', 'Sin auxiliar вспомогательный глагол, a diferencia de НСВ futuro (буду + infinitivo).']},
-    {heading: 'Formación de futuro perfectivo', paragraphs: ['"Я напишу" (escribiré). "Ты напишешь" (escribirás). "Он напишет" (escribirá). Terminaciones: -ю (первое лицо), -ишь/-ешь (второе), -ит/-ет (третье).', 'Es regular para la mayoría de verbos.']},
-    {heading: 'Contraste: СВ futuro vs НСВ futuro', paragraphs: ['"Я напишу письмо" (СВ — escribiré la carta, será completada). "Я буду писать письмо" (НСВ — estaré escribiendo la carta, proceso).', 'Diferencia fundamental: completivo vs proceso en futuro.']},
+    {heading: '¿Cómo se forma el futuro perfectivo?', paragraphs: ['"Я напишу" (escribiré). "Ты напишешь" (escribirás). "Он напишет" (escribirá). Terminaciones: -ю (первое лицо), -ишь/-ешь (второе), -ит/-ет (третье).', 'Es regular para la mayoría de verbos.']},
+    {heading: '¿En qué se diferencian el futuro perfectivo y el imperfectivo?', paragraphs: ['"Я напишу письмо" (СВ — escribiré la carta, será completada). "Я буду писать письмо" (НСВ — estaré escribiendo la carta, proceso).', 'Diferencia fundamental: completivo vs proceso en futuro.']},
     {heading: 'Irregularidad en algunas formas', paragraphs: ['"я возьму" (cogeré, irreg.). "ты возьмешь" (cogerás). "он возьмет" (cogerá). Algunos perfectivos tienen raíces irregulares en futuro.', 'Mayoría es regular, pero aprender irregulares.']},
     {heading: 'Futuro perfectivo en narrativa', paragraphs: ['"Завтра я напишу письмо и отправлю его" (mañana escribiré la carta y la enviaré). Dos acciones completadas en futuro.', 'Muy usado en planes y predicciones de acciones completadas.']},
   ],

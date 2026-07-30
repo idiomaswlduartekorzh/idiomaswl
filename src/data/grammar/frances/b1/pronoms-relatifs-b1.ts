@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "¿Para que sirven los pronombres relativos en frances?",
+      heading: '¿Para qué sirven los pronombres relativos en francés?',
       paragraphs: [
         "Los pronombres relativos en frances permiten combinar dos oraciones en una sola, evitando la repeticion del sustantivo antecedente. En lugar de decir 'J'ai un ami. Cet ami parle cinq langues.', decimos 'J'ai un ami qui parle cinq langues.' La eleccion del pronombre depende exclusivamente de la funcion gramatical que cumple en la oracion subordinada.",
         "Para hispanohablantes, el sistema es similar al espanol: 'que' en espanol puede hacer todo, pero en frances hay pronombres especializados. La mayor dificultad es distinguir entre 'que' (objeto directo) y 'qui' (sujeto), y saber cuando usar 'dont' en lugar de 'que de'.",
       ],
     },
     {
-      heading: "Qui y que: sujeto y objeto directo",
+      heading: '¿Cuál es la diferencia entre qui y que en francés?',
       paragraphs: [
         "Qui es el sujeto del verbo de la oracion subordinada: 'La personne qui m'a appele etait mon chef.' (qui = la personne = sujeto de 'a appele'). Que es el objeto directo: 'Le cadeau que tu m'as offert est magnifique.' (que = le cadeau = objeto de 'as offert', 'tu' es el sujeto). La diferencia es que despues de qui siempre viene un verbo directamente, mientras que despues de que viene un sujeto.",
         "Elision de que: cuando que precede a una vocal o h muda, se convierte en qu': 'L'ami qu'elle a retrouve.' / 'Le sujet qu'il a choisi.' Este cambio es obligatorio en frances escrito y hablado. Qui nunca sufre elision.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Ou y dont: lugar, tiempo y complementos con de",
+      heading: '¿Cuándo se usan où y dont en francés?',
       paragraphs: [
         "Ou se usa para indicar lugar o tiempo: lugar → 'La ville ou je suis ne s'appelle Medellin.' / tiempo → 'Je me souviens du jour ou tu es arrive.' Atencion: ou reemplaza 'a cet endroit' o 'a ce moment-la', no introduce preguntas directas.",
         "Dont reemplaza cualquier complemento introducido por 'de'. Tiene tres usos principales: posesion ('L'homme dont la fille est medecin' = cuya hija), expresiones verbales con de ('parler de → l'ami dont je t'ai parle', 'avoir besoin de → le livre dont j'ai besoin', 'etre fier de → les eleves dont je suis fier'). Dont equivale frecuentemente al 'cuyo/cuya' del espanol o a 'del que/de quien'.",

@@ -40,8 +40,8 @@ const topic: GrammarTopic = {
   seo: [
     {heading: '¿Qué es 〜かもしれない?', paragraphs: ['〜かもしれない expresa posibilidad e incertidumbre sobre algo. No es predicción segura, sino una posibilidad que no se puede descartar.', 'Muy usado en conversación cotidiana.']},
     {heading: '〜かもしれない: posibilidad indeterminada', paragraphs: ['"明日雨が降るかもしれない" (tal vez llueva mañana — el speaker no está seguro). "彼は今寝ているかもしれない" (tal vez esté durmiendo ahora).', 'Expresa que algo ES POSIBLE pero el speaker NO ESTÁ SEGURO.']},
-    {heading: '〜かもしれません: forma formal', paragraphs: ['"来週辞めるかもしれません" (formal: tal vez renuncie la próxima semana). "この計画は失敗するかもしれません" (formal: este plan podría fracasar).', 'Usado en contextos formales, presentaciones, noticias.']},
-    {heading: '〜かも: forma coloquial', paragraphs: ['"彼が来るかも" (informal: tal vez venga él). "そうかも" (puede ser, tal vez). "知らんけど" es aún más coloquial.', 'En conversación casual, especialmente con amigos.']},
+    {heading: '¿Cómo es la forma formal 〜かもしれません?', paragraphs: ['"来週辞めるかもしれません" (formal: tal vez renuncie la próxima semana). "この計画は失敗するかもしれません" (formal: este plan podría fracasar).', 'Usado en contextos formales, presentaciones, noticias.']},
+    {heading: '¿Cuándo se usa la forma coloquial 〜かも?', paragraphs: ['"彼が来るかも" (informal: tal vez venga él). "そうかも" (puede ser, tal vez). "知らんけど" es aún más coloquial.', 'En conversación casual, especialmente con amigos.']},
     {heading: '〜かもしれない vs かもしれない vs かも', paragraphs: ['"来るかもしれない" (formal/neutro) vs "来るかもしれません" (más cortés) vs "来るかも" (coloquial). Todos expresan posibilidad pero con tonos diferentes.', 'Elegir según contexto y relación con oyente.']},
   ],
   visual: {mode: 'scene', teacherLens: '〜かもしれない: posibilidad e incertidumbre', graphicPrompt: 'Tabla: Niveles de certeza (から vs だろう vs かもしれない)', scene: [['雨が降るかもしれない。', 'Tal vez llueva (incierto).'], ['明日は寒いかもしれません。', 'Mañana podría ser frío (formal, incierto).'], ['彼は医者かもしれない。', 'Tal vez sea doctor (especulación).'], ['そうかも。', 'Puede ser, tal vez (coloquial).'], ['辞めるかもしれません。', 'Podría renunciar (posibilidad).']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['可能性', '不確実', 'かも']},

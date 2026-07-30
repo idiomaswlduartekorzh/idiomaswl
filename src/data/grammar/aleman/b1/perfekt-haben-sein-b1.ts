@@ -61,10 +61,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Verbos que usan haben O sein según el contexto',
+      heading: '¿Qué verbos pueden usar haben o sein en el Perfekt?',
       paragraphs: [
         'Algunos verbos alemanes admiten los dos auxiliares según si se usan transitivamente (haben) o intransitivamente con sentido de movimiento (sein): fahren, fliegen, ziehen, schwimmen.',
         'Regla de oro: si el verbo lleva un objeto en acusativo → haben. Si expresa movimiento de A a B sin objeto → sein. Ejemplos: "Er hat das Auto gefahren" (ha conducido el coche, transitivo, haben) vs. "Er ist nach München gefahren" (ha ido a Múnich, movimiento dirigido, sein).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el Perfekt en alemán?',
+      paragraphs: [
+        'Con el auxiliar haben o sein en presente + el Partizip II al final de la oración: "Ich habe gegessen" (he comido), "Ich bin gegangen" (he ido/me he ido). La mayoría de verbos usan haben; usan sein los verbos de movimiento con cambio de lugar (gehen, kommen, fahren, fliegen), los de cambio de estado (aufstehen, einschlafen, sterben, wachsen) y los verbos sein y bleiben. La trampa para el hispanohablante es doble: en español el auxiliar es siempre "haber", mientras que el alemán elige entre haben/sein; y el participio va al FINAL de la frase, no junto al auxiliar. En el sur de Alemania el Perfekt sustituye casi por completo al Präteritum en el habla.',
       ],
     },
   ],

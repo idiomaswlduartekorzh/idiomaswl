@@ -77,6 +77,24 @@ const topic: GrammarTopic = {
         ['past', 'Al lado de un punto', 'past the school, past my house'],
       ],
     },
+    {
+      heading: '¿Cuáles son las preposiciones de movimiento en inglés?',
+      paragraphs: [
+        'to (a, dirección), into (hacia dentro), out of (hacia fuera), through (a través de), across (de un lado a otro), along (a lo largo de), up/down (arriba/abajo), towards (hacia), onto (encima de). Indican la dirección del movimiento: "walk to school", "go into the room".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "to" e "into"?',
+      paragraphs: [
+        '"to" marca el destino de un movimiento ("I go to the office"); "into" enfatiza entrar dentro de un espacio ("I go into the office" = cruzo la puerta). Con "arrive" no se usa "to": "arrive at/in", no "arrive to".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "in" y "into", "on" y "onto"?',
+      paragraphs: [
+        '"in/on" indican posición (dónde está algo): "The cat is in the box". "into/onto" indican movimiento hacia ese lugar: "The cat jumped into the box", "The cat jumped onto the table". Movimiento → into/onto; posición → in/on.',
+      ],
+    },
   ],
 
   visual: {

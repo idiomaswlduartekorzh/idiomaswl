@@ -22,8 +22,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es -어야 하다?', paragraphs: ['-어야 하다 expresa obligación o necesidad: algo que DEBES hacer. "Tengo que", "Debo", "Es necesario que". Muy común en instrucciones, consejos y expresión de deber.', 'Se usa en contextos prácticos (reglas), morales (deber) y académicos (requisitos).']},
-    {heading: '-어야 하다 en contextos cotidianos', paragraphs: ['Trabajo: "업무를 끝내야 해요" (tengo que terminar el trabajo).', 'Salud: "약을 먹어야 해요" (tengo que tomar medicina). Escuela: "숙제를 해야 해요" (tengo que hacer la tarea).']},
-    {heading: '-어야 하다 vs -을/ㄹ 수 있다', paragraphs: ['-어야 하다: obligatorio, necesario. "시간을 지켜야 해요" (tienes que ser puntual — es obligatorio).', '-을/ㄹ 수 있다: opcional, posible. "늦을 수 있어요" (puedes llegar tarde — es posible pero no obligatorio).']},
+    {heading: '¿Cómo se usa -어야 하다 en el día a día?', paragraphs: ['Trabajo: "업무를 끝내야 해요" (tengo que terminar el trabajo).', 'Salud: "약을 먹어야 해요" (tengo que tomar medicina). Escuela: "숙제를 해야 해요" (tengo que hacer la tarea).']},
+    {heading: '¿Cuál es la diferencia entre -어야 하다 y -(으)ㄹ 수 있다?', paragraphs: ['-어야 하다: obligatorio, necesario. "시간을 지켜야 해요" (tienes que ser puntual — es obligatorio).', '-을/ㄹ 수 있다: opcional, posible. "늦을 수 있어요" (puedes llegar tarde — es posible pero no obligatorio).']},
     {heading: 'Negación: 하면 안 되다 (prohibición)', paragraphs: ['"담배를 피우면 안 돼요" (no puedes fumar — prohibido). Opuesto a -어야 하다.', '-어야 하다 + "하지 말아야 해요" (no debes X).']},
     {heading: 'Pasado: 했어야 했어요 (deberías haber)', paragraphs: ['"일찍 가야 했어요" (deberías haber ido temprano — no fuiste pero deberías haberlo hecho).', 'Expresa arrepentimiento o crítica de algo que no se hizo pero era obligatorio.']},
   ],

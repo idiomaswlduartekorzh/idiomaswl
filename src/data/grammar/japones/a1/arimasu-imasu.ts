@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'La distinción animado/inanimado que el español no tiene',
+      heading: '¿Cuál es la diferencia entre います y あります?',
       paragraphs: [
         'En español, "hay un libro" y "hay un gato" usan el mismo verbo "hay". En japonés no: ほんが あります (libro = inanimado) vs ねこが います (gato = animado). Esta distinción animado/inanimado es obligatoria en japonés y es uno de los primeros conceptos que distinguen la gramática japonesa de la española.',
         'La regla práctica: ¿El sujeto puede moverse por su propia voluntad? Si sí (personas, animales) → います. Si no (cosas, objetos, plantas) → あります. La excepción notable son las plantas: aunque estén vivas, usan あります porque no se mueven. Los robots y muñecos también usan あります por ser objetos, a menos que el hablante los trate como seres vivos (ficción, etc.).',
       ],
     },
     {
-      heading: 'Estructura completa: lugar + sujeto + います/あります',
+      heading: '¿Cómo se forma una frase con います/あります en japonés?',
       paragraphs: [
         'La estructura más frecuente es [lugar]に [sujeto]が います/あります. El lugar va primero con la partícula に, luego el sujeto con が (nunca は en existencia), y finalmente el verbo al final. Ejemplos: テーブルの うえに ねこが います (sobre la mesa hay un gato), りょうしんは にほんに います (mis padres están en Japón).',
         'Para preguntar: [lugar]に なにが ありますか / だれが いますか (¿qué hay? / ¿quién está?). La negación es directa: ねこは いません (no hay gato), ほんは ありません (no hay libro). Nota que en la negación se puede usar は en lugar de が para dar un matiz contrastivo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa la existencia en japonés (います/あります)?',
+      paragraphs: [
+        'El japonés tiene dos verbos de existencia según si lo que existe está VIVO o no. います (imasu) se usa para seres animados que se mueven por voluntad propia: personas y animales (犬がいます = hay un perro). あります (arimasu) se usa para cosas inanimadas y también para plantas: 本があります (hay un libro). La estructura típica es "lugar に + sujeto が + います/あります": テーブルの上に本があります (encima de la mesa hay un libro). La trampa para el hispanohablante es que el español usa "hay/estar" sin distinguir; en japonés hay que decidir siempre entre います (vivo) y あります (no vivo). En negativo: いません / ありません.',
       ],
     },
   ],

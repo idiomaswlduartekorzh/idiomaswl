@@ -60,14 +60,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'У меня есть/нет: cómo "tener" en ruso',
+      heading: '¿Cómo se dice "tener" en ruso con У меня есть/нет?',
       paragraphs: [
         'El ruso no tiene un verbo directo equivalente a "tener" (como el español tener o el inglés have). En cambio usa la construcción у + [poseedor en genitivo] + есть + [objeto en nominativo]. У меня есть книга = literalmente "Cerca de mí hay un libro" = Tengo un libro.',
         'Para la negación: у + [poseedor genitivo] + нет + [objeto en GENITIVO]. У меня нет книги = No tengo libro (книга → книги en genitivo). ¡Atención: el objeto cambia de nominativo a genitivo al negar!',
       ],
     },
     {
-      heading: 'Genitivo después de números',
+      heading: '¿Por qué los números cambian el sustantivo al genitivo?',
       paragraphs: [
         'Los números en ruso afectan el caso del sustantivo siguiente. Con 1: nominativo singular (один студент). Con 2, 3, 4: genitivo singular (два студента, три книги, четыре окна). Con 5 en adelante: genitivo plural (пять студентов, десять книг).',
         'En A1 es suficiente saber que después de dos, tres y cuatro, el sustantivo toma una forma especial. El genitivo plural se aprenderá más adelante en A2.',

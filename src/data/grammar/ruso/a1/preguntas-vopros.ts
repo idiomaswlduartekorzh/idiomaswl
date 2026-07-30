@@ -51,7 +51,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Las palabras interrogativas del ruso (вопросительные слова)',
+      heading: '¿Cuáles son las palabras interrogativas del ruso (вопросительные слова)?',
       paragraphs: [
         'En ruso, las preguntas con palabras interrogativas se forman de manera similar al español: el interrogativo va al inicio de la oración seguido del orden normal sujeto-verbo. Кто ты? (¿Quién eres tú?), Что это? (¿Qué es esto?), Где Давид? (¿Dónde está Enzo?).',
         'A diferencia del español, en ruso NO se invierten el sujeto y el verbo en preguntas. La entonación ascendente y el interrogativo al inicio son suficientes para marcar la pregunta.',
@@ -67,14 +67,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Где vs Куда: la distinción que no existe en español',
+      heading: '¿Qué diferencia hay entre Где y Куда?',
       paragraphs: [
         'La mayor singularidad del ruso para hispanohablantes es tener DOS palabras para "dónde". Где pregunta por la UBICACIÓN de algo (estático): Где ты живёшь? (¿Dónde vives?). Куда pregunta por el DESTINO del movimiento: Куда ты идёшь? (¿A dónde vas?).',
         'Esta distinción refleja un principio fundamental del ruso: distinguir el estado (ser/estar en un lugar) del movimiento (ir hacia un lugar). Los verbos de movimiento también siguen este principio, y los casos gramaticales también: ubicación usa caso prepositivo (в школе), dirección usa acusativo (в школу).',
       ],
     },
     {
-      heading: 'Почему vs Зачем: dos "por qués" en ruso',
+      heading: '¿En qué se diferencian Почему y Зачем?',
       paragraphs: [
         'El español tiene un solo "por qué", pero el ruso distingue entre Почему (causa o razón) y Зачем (propósito o finalidad). Почему ты не пришёл? (¿Por qué no viniste? — buscando la causa). Зачем ты это делаешь? (¿Para qué haces eso? — buscando el propósito).',
         'En el nivel A1, Почему es más frecuente. Зачем se puede entender como "¿con qué objetivo?" o "¿para qué sirve?". En muchos contextos cotidianos son intercambiables en sentido amplio, pero la distinción es real.',

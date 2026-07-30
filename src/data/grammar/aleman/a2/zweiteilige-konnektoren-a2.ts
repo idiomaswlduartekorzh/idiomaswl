@@ -53,9 +53,15 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Posición en la oración',
+      heading: '¿Dónde se colocan los zweiteilige Konnektoren en la oración?',
       paragraphs: [
         'Cuando entweder aparece al inicio de oración, provoca inversión del sujeto y verbo: "Entweder kommst du jetzt, oder wir gehen ohne dich." Los demás conectores no suelen provocar inversión cuando están en posición interna.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los zweiteilige Konnektoren más frecuentes en alemán?',
+      paragraphs: [
+        'Son conectores de dos piezas que trabajan en pareja para relacionar dos elementos. Los más útiles del A2 son: "sowohl… als auch" (tanto… como), "entweder… oder" (o… o), "weder… noch" (ni… ni), "nicht nur… sondern auch" (no solo… sino también) y "zwar… aber" (si bien… pero). Ejemplo: "Ich spreche sowohl Spanisch als auch Deutsch". Ojo con "weder… noch": ya es negativo en sí mismo, así que no lleva "nicht" ni "kein" añadidos ("Ich trinke weder Kaffee noch Tee"). Dan mucha soltura y cohesión a la expresión, y por eso se valoran en el examen Goethe.',
       ],
     },
   ],

@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cómo se forma el Partizip II en alemán',
+      heading: '¿Cómo se forma el Partizip II en alemán?',
       paragraphs: [
         'El Partizip II (participio pasado) es la pieza clave del Perfekt. Para verbos regulares, la fórmula es: ge- + raíz verbal + -(e)t. Así machen da gemacht, spielen da gespielt, y arbeiten (con -e- para la pronunciación) da gearbeitet.',
         'Los verbos irregulares tienen formas propias que hay que memorizar: sehen → gesehen, essen → gegessen, trinken → getrunken, schreiben → geschrieben, lesen → gelesen, nehmen → genommen, geben → gegeben. Muchos siguen el patrón ge- + raíz modificada + -en.',
       ],
     },
     {
-      heading: 'Verbos con prefijo separable y el Partizip II',
+      heading: '¿Cómo es el Partizip II de los verbos separables en alemán?',
       paragraphs: [
         'En los verbos separables, el ge- se inserta entre el prefijo y la raíz del verbo: aufmachen → aufgemacht (no geaufmacht), anrufen → angerufen, einkaufen → eingekauft, aufräumen → aufgeräumt.',
         'Esta regla es consistente: siempre el prefijo va primero, luego ge-, luego la raíz. Es una de las diferencias más importantes respecto al inglés, donde no existe esta estructura.',
       ],
     },
     {
-      heading: 'El Perfekt vs el Präteritum en alemán',
+      heading: '¿Cuál es la diferencia entre Perfekt y Präteritum en alemán?',
       paragraphs: [
         'En el alemán hablado, el Perfekt es el tiempo pasado universal. Se usa para hablar de lo que pasó hoy, ayer, hace años, en tu infancia — casi siempre Perfekt en la conversación oral.',
         'El Präteritum (simple past) se reserva principalmente para la narración escrita, cuentos, noticias y periódicos. Las excepciones son sein (war), haben (hatte) y los verbos modales, que prefieren el Präteritum incluso en el habla oral.',

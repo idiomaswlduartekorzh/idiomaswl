@@ -49,14 +49,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El pasado en coreano: una sola forma para todo',
+      heading: '¿Cómo se forma el pasado en coreano (았/었어요)?',
       paragraphs: [
         'Una de las diferencias más cómodas del coreano respecto al español: el coreano tiene un solo tiempo pasado para lo que en español llamamos "comí", "he comido", "había comido" (en la conversación cotidiana). La terminación 았어요/었어요 cubre todos estos significados en contexto coloquial.',
         'La regla de construcción es la misma del presente 해요체: mira la vocal de la raíz. Si es ㅏ o ㅗ → añade 았어요. Si es cualquier otra vocal → añade 었어요. Y 하다 siempre → 했어요. Misma lógica, diferente sufijo.',
       ],
     },
     {
-      heading: 'Contracciones del pasado: las más importantes',
+      heading: '¿Cuáles son las contracciones del pasado en coreano?',
       paragraphs: [
         'Al igual que en el presente, el pasado tiene contracciones frecuentes. Las más importantes: 가(ㅏ)+았어요 = 갔어요 (las dos ㅏ se fusionan); 오(ㅗ)+았어요 = 왔어요 (ㅗ+ㅏ=ㅘ); 마시(ㅣ)+었어요 = 마셨어요 (ㅣ+ㅓ=ㅕ); 배우(ㅜ)+었어요 = 배웠어요 (ㅜ+ㅓ=ㅝ).',
         'Una pista útil: si ya aprendiste las contracciones del presente (가요, 와요, 마셔요, 배워요), las del pasado siguen el mismo patrón de fusión vocálica — solo añade 어요 extra: 갔어요, 왔어요, 마셨어요, 배웠어요.',
@@ -78,7 +78,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preguntas sobre el pasado',
+      heading: '¿Cómo se pregunta en pasado en coreano?',
       paragraphs: [
         'Para preguntar sobre el pasado: sube la entonación al final de la oración. 뭐 했어요?(¿Qué hiciste?), 어디 갔어요?(¿Adónde fuiste?), 뭐 먹었어요?(¿Qué comiste?). Puedes añadir marcadores de tiempo: 어제(ayer), 지난주(la semana pasada), 아까(hace un momento).',
         'El marcador de tiempo más útil para practicar el pasado: 어제(eoje=ayer). 어제 뭐 했어요? es una de las preguntas más naturales para conversar sobre el pasado inmediato.',

@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La caída del "ne" en el francés oral',
+      heading: '¿Por qué desaparece el "ne" en el francés hablado?',
       paragraphs: [
         'En el francés hablado cotidiano, el "ne" casi siempre desaparece: "Je parle pas français", "Il mange pas de pizza", "On a pas le temps". Este fenómeno es tan común que si usas siempre el "ne" en conversación, sonarás muy formal.',
         'Sin embargo, en la escritura — correos, mensajes, exámenes — siempre debes usar la negación completa: je ne parle pas, il ne mange pas, nous n\'avons pas.',
       ],
     },
     {
-      heading: 'Pas de: el artículo cambia en la negación',
+      heading: '¿Por qué el artículo cambia a "de" en la negación francesa?',
       paragraphs: [
         'Cuando el verbo va seguido de un artículo indefinido (un, une, des) o partitivo (du, de la, de l\'), en la negación ese artículo se convierte en "de" (o "d\'" ante vocal): J\'ai un chat → Je n\'ai pas de chat. Je mange de la viande → Je ne mange pas de viande. Il y a des étudiants → Il n\'y a pas d\'étudiants.',
         'Excepción: cuando el verbo es "être", el artículo no cambia: C\'est un professeur → Ce n\'est pas un professeur (✓). Esto se debe a que "être" no expresa posesión ni cantidad.',

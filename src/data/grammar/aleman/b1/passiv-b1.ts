@@ -54,7 +54,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Vorgangspassiv: werden + Partizip II',
+      heading: '¿Cómo se forma el Vorgangspassiv en alemán?',
       paragraphs: [
         'El Vorgangspassiv describe el proceso de una acción. Se forma con werden conjugado + Partizip II al final. En Präsens: wird/werden. En Präteritum: wurde/wurden.',
         'Ejemplos Präsens: "Das Formular wird ausgefüllt" (El formulario está siendo rellenado). "Die Pakete werden geliefert" (Los paquetes son entregados). En Präteritum: "Das Gebäude wurde 1950 errichtet" (El edificio fue construido en 1950).',
@@ -74,7 +74,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Zustandspassiv: sein + Partizip II',
+      heading: '¿Qué es el Zustandspassiv (pasiva de estado) en alemán?',
       paragraphs: [
         'El Zustandspassiv describe un estado resultante (no el proceso). Se forma con sein + Partizip II: "Die Tür ist geöffnet" (La puerta está abierta — en ese estado). En contraste: "Die Tür wird geöffnet" describe el proceso (alguien la está abriendo).',
         'Esta distinción es crucial en B1: Vorgangspassiv (werden) = proceso en curso; Zustandspassiv (sein) = estado resultante. Compara: "Das Auto wird repariert" (lo están reparando ahora) vs. "Das Auto ist repariert" (ya está reparado, listo).',

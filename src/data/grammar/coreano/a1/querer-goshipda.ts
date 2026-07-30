@@ -48,21 +48,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '고 싶어요: cómo expresar deseos en coreano',
+      heading: '¿Cómo se expresa el deseo en coreano (고 싶어요)?',
       paragraphs: [
         '고 싶어요 (go sipeoyo) es una de las estructuras más útiles del coreano A1. Permite expresar lo que quieres hacer — comer, ir, aprender, descansar — de forma natural y cotidiana. En español necesitamos el verbo "querer" + infinitivo. En coreano necesitamos la raíz del verbo + 고 싶어요.',
         'Lo más práctico de esta estructura es su regularidad: no hay excepciones vocálicas como en el presente 해요체. Simplemente: raíz + 고 싶어요. 가다(ir)→가고 싶어요, 먹다(comer)→먹고 싶어요, 하다(hacer)→하고 싶어요.',
       ],
     },
     {
-      heading: 'Una singularidad del coreano: yo vs. él/ella',
+      heading: '¿Por qué 고 싶어요 cambia según la persona en coreano?',
       paragraphs: [
         'En coreano, 고 싶어요 es exclusivo del hablante. Si quieres decir que otra persona quiere algo, usas 고 싶어해요: 친구가 가고 싶어해요(mi amigo quiere ir). Este matiz es único del coreano — el hablante solo puede conocer sus propios deseos directamente; los deseos ajenos se infieren y se expresan de forma distinta.',
         'En A1, lo fundamental es manejar la primera persona. La distinción yo/él-ella la consolidarás en niveles más avanzados.',
       ],
     },
     {
-      heading: 'Preguntas y negaciones con 고 싶어요',
+      heading: '¿Cómo se pregunta y se niega con 고 싶어요?',
       paragraphs: [
         'Para preguntar: sube la entonación al final — 뭐 먹고 싶어요? (¿Qué quieres comer?), 어디 가고 싶어요? (¿A dónde quieres ir?), 뭐 하고 싶어요? (¿Qué quieres hacer?). Son preguntas muy naturales para conversación cotidiana.',
         'Para negar: raíz + 고 싶지 않아요(go sipji anayo). 가고 싶지 않아요(no quiero ir), 먹고 싶지 않아요(no quiero comer). También existe la forma breve 고 싶지 않아(sin 요) que es más informal.',

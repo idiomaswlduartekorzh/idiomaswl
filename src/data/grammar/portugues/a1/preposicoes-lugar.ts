@@ -74,6 +74,34 @@ const topic: GrammarTopic = {
         '"Em" indica ubicación o estado: Moro no Brasil (Vivo en Brasil — dónde estoy). "Para" indica dirección o destino: Vou para o Brasil (Voy a Brasil — hacia dónde voy). Esta distinción es similar al español en/a y al alemán in/nach. En BP coloquial "para" se reduce a "pra": vou pra escola.',
       ],
     },
+    {
+      heading: '¿Cuáles son las preposiciones de lugar en portugués?',
+      paragraphs: [
+        'Las principales son em, de, para, por, entre, sobre y perto de / longe de. Cada una responde a una pregunta distinta (dónde, de dónde, hacia dónde, por dónde). Esta tabla resume su función y un ejemplo:',
+      ],
+      table: [
+        ['Preposición', 'Sentido', 'Ejemplo'],
+        ['em (no/na)', 'ubicación (dónde)', 'Moro no Brasil.'],
+        ['de (do/da)', 'origen (de dónde)', 'Sou da Colômbia.'],
+        ['para', 'dirección (hacia dónde)', 'Vou para o Rio.'],
+        ['por (pelo/pela)', 'a través de', 'Passo pelo parque.'],
+        ['entre', 'entre dos puntos', 'Fica entre o banco e a praça.'],
+        ['sobre', 'encima de', 'O livro está sobre a mesa.'],
+        ['perto de / longe de', 'cerca / lejos', 'Fica perto da escola.'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "em", "para" y "de" en portugués?',
+      paragraphs: [
+        'Responden a tres preguntas distintas: em dice dónde estás (Moro em São Paulo), para dice hacia dónde vas (Vou para São Paulo) y de dice de dónde vienes o eres (Venho de São Paulo, Sou de São Paulo). Es el mismo trío del español en/a/de, así que la lógica se traslada directamente; lo único nuevo son las contracciones obligatorias (no, do, pelo…). En el habla brasileña "para" suele reducirse a "pra" (vou pra escola), pero al escribir conviene la forma plena.',
+      ],
+    },
+    {
+      heading: '¿Por qué se dice "no Brasil" pero "em Portugal"?',
+      paragraphs: [
+        'Porque Brasil lleva artículo (o Brasil) y Portugal no. Cuando el país lleva artículo, la preposición se contrae con él: em + o Brasil = no Brasil, de + o Brasil = do Brasil. Como Portugal no lleva artículo, se queda "em Portugal", "de Portugal", sin contracción. Lo mismo pasa con ciudades, que casi nunca llevan artículo: "em São Paulo", "de Bogotá". Es un detalle de uso, no una regla lógica: hay que memorizar qué topónimos llevan artículo (o Brasil, a Colômbia, os Estados Unidos) y cuáles no (Portugal, Cuba, Moçambique).',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-table',

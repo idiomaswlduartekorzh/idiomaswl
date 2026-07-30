@@ -54,7 +54,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Pretérito perfeito composto: tenho + participio',
+      heading: '¿Cómo se forma el pretérito perfeito composto en portugués?',
       paragraphs: [
         'El pretérito perfeito composto se forma con "tenho" (presente de ter) + participio pasado: "Tenho estudado", "Tenho trabalhado", "Tenho comido". Se usa para expresar una acción que comenzó en el pasado y continúa hasta el presente o que se ha repetido varias veces recientemente.',
         'Ejemplos: "Tenho procurado emprego há três meses" (he estado buscando trabajo durante tres meses y sigo buscando). "Tenho visitado meu avó frequentemente" (he visitado a mi abuelo con frecuencia recientemente).',
@@ -82,7 +82,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia: pretérito perfeito simple vs composto',
+      heading: '¿Cuál es la diferencia entre pretérito perfeito simple y composto?',
       paragraphs: [
         'El pretérito perfeito simple (comei, bebi, partí) expresa una acción puntual completada en el pasado: "Comi uma maçã ontem" (comí una manzana ayer = acción puntual, terminada).',
         'El pretérito perfeito composto (tenho comido, tenho bebido, tenho partido) expresa una acción que se repite o que conecta el pasado con el presente: "Tenho comido maçã todo dia" (he comido manzana todos los días = hábito que continúa). Esta es una distinción crucial que confunde a muchos estudiantes.',

@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Себя: el pronombre reflexivo personal',
+      heading: '¿Cómo funciona el pronombre reflexivo себя?',
       paragraphs: [
         'Себя es el pronombre reflexivo en ruso — equivale a "a sí mismo/misma", "te", "se" según el contexto. No tiene forma de nominativo porque el sujeto reflexivo es siempre el mismo sujeto de la frase. Se declina: себя (Gen./Acus.), себе (Dat./Prep.), собой/собою (Inst.). Frases clave: "о себе" (sobre sí mismo/oneself), "у себя" (en casa/en su lugar), "с собой" (consigo), "для себя" (para sí mismo).',
         'Ejemplos con preposiciones: "Расскажи о себе" (cuéntame sobre ti), "Возьми зонтик с собой" (lleva el paraguas contigo), "Купи себе что-нибудь" (cómprate algo), "Он доволен собой" (está satisfecho consigo mismo). La elección de себя/себе/собой depende de la preposición o la función gramatical.',
       ],
     },
     {
-      heading: 'Свой: posesivo reflexivo vs его/её/их',
+      heading: '¿En qué se diferencia свой de его, её e их?',
       paragraphs: [
         'Свой es un adjetivo posesivo reflexivo que indica que el poseedor es el sujeto de la oración. Concuerda con el sustantivo poseído: свой (masc.), своя (fem.), своё (neut.), свои (pl.). "Он взял свою книгу" = He took his own book (= la suya). Contrasta con "его книгу" = He took his book (= de otra persona).',
         'La regla: cuando el poseedor coincide con el sujeto, usa свой. Cuando el poseedor es diferente del sujeto, usa его/её/их. "Мария любит свою кошку" (María ama a su gata — la suya) vs "Мария любит её кошку" (María ama la gata de ella — de otra persona).',
+      ],
+    },
+    {
+      heading: '¿Cómo se declina себя y por qué no tiene nominativo?',
+      paragraphs: [
+        'себя no tiene forma de nominativo porque nunca es el sujeto: siempre remite al sujeto de la oración. Se declina en el resto de casos con una sola forma para todas las personas y géneros: acusativo/genitivo себя, dativo/prepositivo себе, instrumental собой. Ejemplos: Он купил себе книгу (se compró un libro), Расскажи о себе (habla de ti), Она довольна собой (está satisfecha de sí misma).',
+        'La trampa para el hispanohablante es que себя vale para "me/te/se/nos" según el sujeto: Я вижу себя, Ты видишь себя, Они видят себя usan la misma palabra. No cambia con la persona, solo con el caso que exija el verbo o la preposición.',
       ],
     },
   ],

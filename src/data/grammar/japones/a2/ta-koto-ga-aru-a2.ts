@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '〜たことがある: la experiencia de vida en japones',
+      heading: '¿Cómo se habla de experiencias de vida con 〜たことがある?',
       paragraphs: [
         '〜たことがあります es la forma de expresar experiencias pasadas en japones A2. Si alguna vez has hecho algo —sin importar cuando exactamente— usas esta construccion: 日本に行ったことがあります (He estado en Japon), 富士山に登ったことがあります (He subido al monte Fuji).',
         'Para negar, simplemente reemplaza あります por ありません: 生ものを食べたことがありません = Nunca he comido comida cruda. Para preguntar: 〜たことがありますか？= ¿Has...alguna vez? La respuesta corta es はい、あります o いいえ、ありません.',
       ],
     },
     {
-      heading: 'Diferencia entre 〜たことがある y el pasado simple',
+      heading: '¿Qué diferencia hay entre 〜たことがある y el pasado simple?',
       paragraphs: [
         'En japones, el pasado simple (〜ました) indica que hiciste algo en un momento especifico: 昨日寿司を食べました = Ayer comi sushi. En cambio, 〜たことがあります habla de si la experiencia existe en tu vida o no: 寿司を食べたことがあります = He comido sushi (alguna vez en mi vida).',
         'No mezcles 〜たことがある con referencias temporales especificas como 昨日 o 去年. Esta construccion es para experiencias sin fecha fija.',
+      ],
+    },
+    {
+      heading: '¿Por qué no se puede usar 〜たことがある para "ayer fui"?',
+      paragraphs: [
+        '〜たことがある expresa la experiencia de haber hecho algo alguna vez en la vida, no un hecho concreto y datado. Se forma con el verbo en forma た + ことがある: 日本に行ったことがあります (he estado en Japón alguna vez). Por eso NO sirve para acciones con fecha o frecuencia reciente: "ayer fui a Japón" es 昨日日本に行きました (pasado simple), nunca 昨日日本に行ったことがあります. La regla práctica: si hay una marca temporal concreta (ayer, la semana pasada, a las 3), se usa el pasado simple ました; si se habla de experiencia acumulada ("¿alguna vez has...?"), se usa たことがある. En negativo, 食べたことがありません = nunca he comido (eso). La trampa para el hispanohablante es usarlo como un pasado normal.',
       ],
     },
   ],

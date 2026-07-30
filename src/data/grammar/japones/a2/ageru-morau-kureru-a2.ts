@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'あげる/もらう/くれる: la perspectiva lo cambia todo',
+      heading: '¿En qué se diferencian あげる, もらう y くれる según la perspectiva?',
       paragraphs: [
         'En japonés, el verbo de dar/recibir que se usa depende de la perspectiva del hablante. あげる es para cuando yo (o alguien de mi grupo) da a otro: "友達にプレゼントをあげた" (le di un regalo a mi amigo). もらう es para cuando yo recibo: "友達にプレゼントをもらった" (recibí un regalo de mi amigo). くれる es para cuando alguien da a mí o a mi grupo: "友達がプレゼントをくれた" (mi amigo me dio un regalo).',
         'La diferencia entre もらう y くれる puede parecer sutil, pero el centro de perspectiva cambia: もらう = "yo recibí", くれる = "él/ella me dio". En español ambos se traducen como "me dio/recibí", pero en japonés hay que elegir el verbo correcto.',
       ],
     },
     {
-      heading: 'Favores con て + あげる/もらう/くれる',
+      heading: '¿Cómo se expresan favores con て + あげる/もらう/くれる?',
       paragraphs: [
         'Los mismos tres verbos se usan con la forma て del verbo para expresar favores. "手伝ってあげる" (te ayudo / le hago el favor de ayudar), "手伝ってもらう" (me ayuda / consigo que me ayude), "手伝ってくれる" (me ayuda / me hace el favor de ayudar).',
         '"〜てもらえませんか？" es una de las formas más educadas de hacer peticiones: "教えてもらえませんか？" (¿Podría enseñarme? / ¿Me haría el favor de enseñarme?). Es equivalente a una petición muy cortés.',
+      ],
+    },
+    {
+      heading: '¿Por qué くれる no se puede usar cuando yo doy algo?',
+      paragraphs: [
+        'La clave de estos tres verbos es el punto de vista. あげる (ageru) se usa cuando YO (o alguien de mi grupo) doy a otra persona: 私は友達にプレゼントをあげます (doy un regalo a mi amigo). もらう (morau) se usa cuando YO recibo: 私は友達にプレゼントをもらいます (recibo un regalo de mi amigo). くれる (kureru) se usa cuando otra persona me da a MÍ (o a mi grupo): 友達がプレゼントをくれます (mi amigo me da un regalo). La trampa para el hispanohablante es que en español "dar" es un solo verbo; en japonés くれる es obligatorio cuando el receptor soy yo, y usar あげる en ese caso suena mal. Por eso 友達が私にあげる es incorrecto: debe ser 友達が私にくれる.',
       ],
     },
   ],

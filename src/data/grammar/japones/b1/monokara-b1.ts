@@ -39,9 +39,9 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es 〜ものなら?', paragraphs: ['〜ものなら expresa condición hipotética: si algo fuera verdad (pero probablemente no lo es). Es condición MÁS IMPOSIBLE que 〜たら (que es más posible/real).', 'Muy usado para expresar deseos y lamentos.']},
-    {heading: '〜ものなら + たい: deseo imposible', paragraphs: ['"もっとお金があるものなら、家を買いたい" (si tuviera más dinero, compraría casa). "時間があるものなら、毎日旅したい" (si tuviera tiempo, viajaría diariamente).', 'Expresa deseo que probablemente no se cumplirá.']},
+    {heading: '¿Cómo expresa 〜ものなら + たい un deseo imposible?', paragraphs: ['"もっとお金があるものなら、家を買いたい" (si tuviera más dinero, compraría casa). "時間があるものなら、毎日旅したい" (si tuviera tiempo, viajaría diariamente).', 'Expresa deseo que probablemente no se cumplirá.']},
     {heading: '〜ものなら + のに: lamento', paragraphs: ['"健康であるものなら、スポーツをするのに" (si fuera sano, practicaría deporte). "若いものなら、いろいろ挑戦するのに" (si fuera joven, intentaría muchas cosas).', 'Expresa lo que haría si las circunstancias fueran diferentes.']},
-    {heading: '〜ものなら vs 〜たら', paragraphs: ['"できるものなら、行きたい" (si FUERA posible — improbable) vs "できたら、行く" (si pueda — posible). ものなら es más hipotético; たら es más real.', 'ものなら implica que la condición es muy difícil o imposible.']},
+    {heading: '¿En qué se diferencian 〜ものなら y 〜たら?', paragraphs: ['"できるものなら、行きたい" (si FUERA posible — improbable) vs "できたら、行く" (si pueda — posible). ものなら es más hipotético; たら es más real.', 'ものなら implica que la condición es muy difícil o imposible.']},
     {heading: 'Uso literario y poético', paragraphs: ['"生きかえるものなら" (si pudiera volver a vivir) es muy literario. "言い直すものなら" (si pudiera corregir lo que dije) expresa lamento imposible de cambiar.', 'Common en narrativas y expresiones sentimentales.']},
   ],
   visual: {mode: 'scene', teacherLens: '〜ものなら: condición hipotética imposible', graphicPrompt: 'Tabla: 〜ものなら (imposible) vs 〜たら (posible)', scene: [['できるものなら、行きたい。', 'Quisiera ir si fuera posible.'], ['お金があるものなら、家を買うのに。', 'Compraría casa si tuviera dinero.'], ['若いものなら、何でも挑戦するのに。', 'Haría todo si fuera joven.'], ['時間があるものなら、旅したい。', 'Quisiera viajar si tuviera tiempo.'], ['生き返るものなら。', 'Si pudiera volver a vivir...']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['仮定', '願い', '不可能']},

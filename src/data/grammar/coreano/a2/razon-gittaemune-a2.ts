@@ -54,7 +54,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Sustantivo + 때문에',
+      heading: '¿Cómo se usa 때문에 con sustantivos en coreano?',
       paragraphs: [
         'Cuando la causa es un sustantivo (no un verbo ni adjetivo), se usa 때문에 directamente sin -기: 비 때문에 못 갔어요 (Por la lluvia no pude ir). 일 때문에 바빠요 (Estoy ocupado por el trabajo).',
         'Este uso es muy frecuente y practico. Tambien se puede hacer negativo: 돈이 없기 때문에 (porque no tengo dinero) vs 돈 때문에 (por el dinero).',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Comparacion entre conectores de causa',
+      heading: '¿Cómo se comparan los conectores de causa en coreano?',
       paragraphs: [
         'Coreano tiene tres conectores de causa principales en A2: -(아/어)서 (secuencial/coloquial), -(으)니까 (subjetivo/mandato), -기 때문에 (formal/neutro). Dominar los tres te permitira expresarte en cualquier registro.',
         'Regla practica: si no sabes cual usar, -기 때문에 casi nunca es incorrecto. Es la opcion mas segura y clara.',

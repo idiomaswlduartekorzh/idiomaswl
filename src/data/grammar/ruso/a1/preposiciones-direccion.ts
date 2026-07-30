@@ -46,7 +46,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'В/НА + acusativo para decir adónde vas en ruso',
+      heading: '¿Cómo se usa В/НА + acusativo para decir adónde vas?',
       paragraphs: [
         'Para expresar dirección en ruso — adónde te diriges — se usa В o НА seguido del caso acusativo. La elección entre В y НА sigue la misma lógica que en la ubicación: В para interiores (в школу — a la escuela, в город — a la ciudad) y НА para superficies o eventos de lista fija (на работу — al trabajo, на урок — a clase).',
         'El contraste fundamental es: ubicación usa caso prepositivo (в школе — estoy en la escuela) y dirección usa acusativo (в школу — voy a la escuela). Solo cambia el caso; la preposición es la misma.',
@@ -60,10 +60,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'ИЗ y С: de dónde vengo (punto de origen)',
+      heading: '¿Cómo se usan ИЗ y С para indicar el punto de origen?',
       paragraphs: [
         'Para expresar el origen — de dónde vengo — el ruso usa ИЗ (para lugares interiores, par de В) y С (para superficies o eventos, par de НА). ИЗ/С van siempre con genitivo. Иду из школы (vengo de la escuela) — ИЗ porque В es para la escuela. Иду с работы (vengo del trabajo) — С porque НА es para работа.',
         'Estos pares simétricos son una elegancia del ruso: cada preposición de dirección (В/НА → destino) tiene su inverso de origen (ИЗ/С → punto de partida). Aprender los pares juntos facilita la memorización.',
+      ],
+    },
+    {
+      heading: '¿Cómo se emparejan в/на (destino) con из/с (origen)?',
+      paragraphs: [
+        'El ruso empareja la preposición de destino con la de origen: lo que entra con в sale con из, y lo que entra con на sale con с. Si vas a la escuela con в (в школу), vuelves de la escuela con из (из школы). Si vas a un concierto con на (на концерт), vuelves con с (с концерта). Es un sistema simétrico: в↔из, на↔с.',
+        'La trampa para el hispanohablante es que en español "a" y "de" valen para todo, mientras que en ruso hay que recordar qué sustantivos van con на (eventos, superficies, algunas zonas: на работу→с работы) frente a в (lugares cerrados, países, ciudades: в Россию→из России). Además, el destino pide acusativo (в школу) y el origen pide genitivo (из школы).',
       ],
     },
   ],

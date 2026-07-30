@@ -44,21 +44,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Adjetivos predicativos: la regla más fácil del alemán',
+      heading: '¿Cómo se usan los adjetivos predicativos en alemán?',
       paragraphs: [
         'En alemán, los adjetivos tienen tres usos distintos. En A1 solo estudiamos el uso predicativo: cuando el adjetivo va después de "sein" (ser/estar), "werden" (volverse) o "bleiben" (quedarse). En este uso, el adjetivo es completamente invariable — nunca cambia su forma, independientemente del género o número del sujeto.',
         '"Das Buch ist interessant" → "Die Geschichte ist interessant" → "Der Film ist interessant" — el mismo adjetivo para los tres géneros. Esto contrasta con el español, donde tampoco hay cambio en este contexto (el libro es interesante / la historia es interesante), pero contrasta radicalmente con los adjetivos atributivos del alemán (que se estudian en A2).',
       ],
     },
     {
-      heading: 'Verbos copulativos: sein, werden, bleiben',
+      heading: '¿Qué verbos copulativos usan adjetivo predicativo en alemán?',
       paragraphs: [
         'Los tres verbos que introducen adjetivos predicativos son: sein (ser/estar), werden (volverse/ponerse) y bleiben (quedarse/permanecer). En A1, el más frecuente es sein: Das Wetter ist schön. / Die Aufgabe ist schwer. / Der Kaffee ist heiß.',
         '"Werden" aparece en A1 en contextos de cambio: Es wird kalt. (Se está poniendo frío.) "Bleiben" en: Bleib gesund! (¡Mantente sano!) Ambos son menos frecuentes en A1 que "sein".',
       ],
     },
     {
-      heading: 'Los adjetivos atributivos: una nota para motivar',
+      heading: '¿Cuál es la diferencia entre adjetivo predicativo y atributivo en alemán?',
       paragraphs: [
         'La buena noticia: en A1 solo necesitas los adjetivos predicativos. En A2 aprenderás los adjetivos atributivos — los que van antes del sustantivo y sí se declinan según género y caso: "ein gutes Buch" (neutro), "ein guter Film" (masculino), "eine gute Idee" (femenino). Pero por ahora, ¡todo es invariable!',
         'Para hispanohablantes, la distinción entre uso predicativo (sin declinación) y atributivo (con declinación) es fundamental para entender por qué el alemán tiene una reputación de "difícil". Pero uno a la vez: primero predicativo, después atributivo.',

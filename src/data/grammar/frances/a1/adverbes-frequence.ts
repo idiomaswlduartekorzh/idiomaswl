@@ -44,21 +44,21 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Adverbios de frecuencia en francés: posición y uso',
+      heading: '¿Dónde se colocan los adverbios de frecuencia en francés?',
       paragraphs: [
         'Los adverbios de frecuencia en francés se colocan después del verbo conjugado, a diferencia del español donde pueden ir al principio de la frase. Compare: "Siempre como a las 8" (inicio) vs "Je mange toujours à 8h" (después del verbo). Esta diferencia de posición es uno de los primeros ajustes que deben hacer los hispanohablantes.',
         'Los cinco adverbios de frecuencia más importantes en A1 forman una escala de 100% a 0%: toujours (siempre, 100%), souvent (a menudo, ~70%), parfois/quelquefois (a veces, ~30%), rarement (raramente, ~10%), jamais (nunca, 0%). Dominar estos cinco permite describir cualquier rutina o hábito en francés.',
       ],
     },
     {
-      heading: 'Ne...jamais: la negación de frecuencia absoluta',
+      heading: '¿Cómo se dice "nunca" en francés (ne...jamais)?',
       paragraphs: [
         'Jamais es especial: para expresar "nunca", siempre se combina con ne en el lenguaje estándar. Je ne mange jamais de viande. / Il ne sort jamais le dimanche. / Nous ne voyageons jamais en avion. En el francés hablado informal, el ne puede desaparecer, pero en A1 es importante aprender la forma completa.',
         'No confundir ne...jamais con ne...pas: je ne mange pas (no como, en este momento o en general) vs je ne mange jamais (no como NUNCA). Jamais implica ausencia total y permanente, pas implica simplemente negación.',
       ],
     },
     {
-      heading: 'Posición con verbos compuestos',
+      heading: '¿Dónde va el adverbio de frecuencia con verbos compuestos?',
       paragraphs: [
         'En los tiempos compuestos (passé composé, etc.), los adverbios cortos como toujours, souvent, parfois, rarement, jamais van entre el auxiliar (avoir/être) y el participio pasado. J\'ai toujours aimé le français. / Il a souvent voyagé en Europe. / Elle n\'a jamais mangé de sushi.',
         'En A1 solo se trabaja el présent, pero conviene saber que la posición "entre auxiliar y participio" es un patrón consistente del francés que volverá en A2.',

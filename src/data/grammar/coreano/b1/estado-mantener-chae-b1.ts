@@ -52,14 +52,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Contextos de uso: espacial y temporal',
+      heading: '¿En qué contextos se usa -(으)ㄴ 채로 en coreano?',
       paragraphs: [
         'Espacial (condiciones de lugar/objeto): "문을 열은 채로 나갔어요" (me fui dejando la puerta abierta). "불을 켠 채로 잤어요" (dormí dejando la luz encendida). El estado de la "puerta" y la "luz" se mantiene.',
         'Temporal (estados del cuerpo/mente): "눈을 감은 채로" (con los ojos cerrados), "서 있는 채로" (de pie), "침대에 누운 채로" (acostado en cama). Describe la posición/condición que se mantiene.',
       ],
     },
     {
-      heading: '-은 채로 vs -고 있다 (acción progresiva)',
+      heading: '¿Cuál es la diferencia entre -(으)ㄴ 채로 y -고 있다?',
       paragraphs: [
         '-은 채로 describe un estado MANTENIDO: "문을 열은 채로" (la puerta está abierta y así se mantiene). -고 있다 describe una ACCIÓN EN PROGRESO: "문을 열고 있어요" (estoy en el acto de abrir la puerta, aún en proceso).',
         'Diferencia clave: -은 채로 es situación/condición; -고 있다 es actividad. "누운 채로 책을 읽어요" (leo mientras estoy acostado — estado mantenido) vs "누우면서 책을 읽어요" (me acuesto mientras leo).',

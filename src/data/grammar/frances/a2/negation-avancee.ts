@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Ne...plus, ne...jamais, ne...rien: usos y posición',
+      heading: '¿Cómo se usan ne...plus, ne...jamais y ne...rien en francés?',
       paragraphs: [
         'Las negaciones compuestas siguen la misma estructura: ne delante del verbo, y la segunda parte detrás: ne...plus (ya no), ne...jamais (nunca), ne...rien (nada), ne...personne (nadie), ne...que (solo). En tiempos compuestos: rien y jamais van entre el auxiliar y el participio: "Il n\'a jamais voyagé", "Je n\'ai rien mangé". Personne va después del participio: "Je n\'ai vu personne".',
         'En lenguaje oral informal, el ne se omite frecuentemente: "Je mange plus de viande", "Je connais personne", "T\'as rien dit". En escritura y lenguaje formal, el ne es obligatorio.',
       ],
     },
     {
-      heading: 'Ne...que: restricción, no negación completa',
+      heading: '¿Qué significa "ne...que" en francés?',
       paragraphs: [
         'Ne...que no expresa negación total, sino restricción (= seulement): "Je n\'ai que dix euros" = Solo tengo diez euros. "Il ne parle que le français" = Solo habla francés. Que se coloca directamente delante del elemento restringido, no del verbo: "Je ne bois que de l\'eau" (que + de l\'eau, no que + bois).',
         'Rien y personne en posición de sujeto: "Rien ne va dans ce projet" (Nada funciona en este proyecto), "Personne n\'est venu" (Nadie vino). En este caso van delante del ne, antes del verbo.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las negaciones avanzadas del francés?',
+      paragraphs: [
+        'Más allá de ne...pas, el francés tiene un abanico de negaciones que rodean el verbo igual que "pas": ne...plus (ya no), ne...jamais (nunca), ne...rien (nada), ne...personne (nadie), ne...aucun (ninguno) y ne...ni...ni (ni...ni). Dos trampas importantes: "ne...que" NO es una negación sino una restricción equivalente a "solo" ("je n\'ai que 5 euros" = solo tengo 5 euros); y cuando "personne" o "rien" son el sujeto, el orden se invierte ("Personne ne vient", "Rien ne marche"). En el francés hablado el "ne" suele caer, pero la segunda palabra (plus, jamais, rien, personne) se mantiene siempre y es la que carga la negación.',
       ],
     },
   ],

@@ -52,14 +52,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '에 con verbos de movimiento: destino',
+      heading: '¿Cómo se usa 에 con verbos de movimiento en coreano?',
       paragraphs: [
         'Cuando te mueves a un lugar, ese lugar lleva 에: 학교에 가요 (voy a la escuela), 서울에 와요 (vengo a Seúl), 집에 돌아가요 (regreso a casa). Los verbos de movimiento más comunes con 에: 가다 (ir), 오다 (venir), 돌아가다 (regresar), 들어가다 (entrar).',
         'En conversación, 에 a veces se combina con 서 para formar 에서 con sentido de "desde": 학교에서 왔어요 = vine desde la escuela. Pero el uso básico de 에 con verbos de movimiento es para el DESTINO.',
       ],
     },
     {
-      heading: '에 con 있어요 y 없어요: ubicación estática',
+      heading: '¿Cómo marca 에 la ubicación con 있어요/없어요?',
       paragraphs: [
         'Cuando quieres decir dónde está alguien o algo (sin implicar movimiento), usa 에 + 있어요/없어요: 선생님이 교실에 있어요 (el maestro está en el aula), 책이 책상에 있어요 (el libro está en el escritorio), 저는 집에 없어요 (no estoy en casa).',
         'Este uso de 에 con 있다 es diferente a 에서 + verbo de acción. La diferencia: 에 indica presencia estática (está, se encuentra); 에서 indica dónde se hace algo activamente (estudia, trabaja, come).',

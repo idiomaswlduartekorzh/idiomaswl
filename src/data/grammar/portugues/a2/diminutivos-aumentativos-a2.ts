@@ -59,6 +59,33 @@ const topic: GrammarTopic = {
         'En Brasil, el aumentativo se usa mucho en la lengua coloquial para expresar admiración o exageración positiva: "Que homem lindão!" (¡Qué hombre tan guapo!). Es más informal que el diminutivo.',
       ],
     },
+    {
+      heading: '¿Cómo se forman los diminutivos y aumentativos en portugués?',
+      paragraphs: [
+        'El diminutivo añade -inho/-inha y el aumentativo -ão/-ona, con pequeños ajustes ortográficos según la terminación de la palabra. Esta tabla muestra los casos más frecuentes:',
+      ],
+      table: [
+        ['Palabra', 'Diminutivo', 'Aumentativo', 'Regla'],
+        ['livro', 'livrinho', 'livrão', 'termina en -o/-a → -inho'],
+        ['café', 'cafezinho', '—', 'vocal tónica → +z-'],
+        ['boca', 'boquinha', 'bocarra', '-ca → -qu-'],
+        ['amigo', 'amiguinho', 'amigão', '-go → -gu-'],
+        ['pastel', 'pastelzinho', 'pastelão', 'termina en -l → +z-'],
+        ['homem', 'homenzinho', 'homenzarrão', 'termina en -m → +z-'],
+      ],
+    },
+    {
+      heading: '¿Para qué se usa el diminutivo en portugués además del tamaño?',
+      paragraphs: [
+        'Para expresar afecto, cortesía y atenuación, mucho más que para indicar tamaño pequeño. "Um cafezinho" no es un café pequeño, sino un café pedido con simpatía; "Espera um minutinho" ablanda la petición; "meu filhinho" transmite ternura. Este uso afectivo es una marca central del portugués brasileño: en un bar, pedir "um cafezinho" suena natural y amable, mientras que "um café pequeno" suena literal y frío. También aparece en despedidas ("tchauzinho") y en la cortesía cotidiana.',
+      ],
+    },
+    {
+      heading: '¿Por qué "café" hace "cafezinho" y no "cafinho"?',
+      paragraphs: [
+        'Porque cuando la palabra termina en vocal tónica (café, pé, sofá) se intercala una -z- antes del sufijo: cafezinho, pezinho, sofazinho. Sin esa -z- el resultado ("cafinho") sonaría mal y perdería la vocal acentuada. La misma -z- aparece en palabras terminadas en -l, -m, -r, -s o en diptongo nasal: pastelzinho, homenzinho, amorzinho, mãozinha. En cambio, las palabras acabadas en vocal átona (livro, mesa) toman directamente -inho/-inha (livrinho, mesinha). Reconocer esta regla evita los errores más típicos al formar diminutivos.',
+      ],
+    },
   ],
 
   visual: {

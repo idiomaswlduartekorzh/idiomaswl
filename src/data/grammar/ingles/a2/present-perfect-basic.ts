@@ -92,6 +92,24 @@ const topic: GrammarTopic = {
         'Otro error muy común es añadir una referencia de tiempo específica con el present perfect: "I have visited Paris in 2022." Si sabes cuándo, usa past simple: "I visited Paris in 2022." El present perfect se usa cuando el CUÁNDO no importa o no se menciona.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el present perfect en inglés?',
+      paragraphs: [
+        'Con have/has + participio pasado: "I have worked", "she has gone". Se usa "has" con he/she/it y "have" con el resto. El participio de los regulares es igual que el pasado (-ed); los irregulares tienen su tercera forma (go → gone, see → seen).',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el present perfect?',
+      paragraphs: [
+        'Para experiencias sin decir cuándo ("I have visited Rome"), acciones recientes con resultado presente ("She has just arrived") y situaciones que siguen hasta ahora ("I have lived here for five years"). Conecta el pasado con el presente; por eso NO se usa con un tiempo pasado concreto (yesterday, in 2010).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre present perfect y past simple?',
+      paragraphs: [
+        'El past simple sitúa la acción en un momento pasado terminado ("I saw her yesterday"). El present perfect no da el momento y conecta con el presente ("I have seen her" = en algún momento, relevante ahora). Si dices cuándo pasó, usa past simple.',
+      ],
+    },
   ],
 
   visual: {

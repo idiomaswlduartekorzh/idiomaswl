@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '못 + verbo vs -(으)ㄹ 수 없다',
+      heading: '¿Cuál es la diferencia entre 못 y -(으)ㄹ 수 없다?',
       paragraphs: [
         '못 + verbo es la forma coloquial de expresar incapacidad: 못 가요 (no puedo ir), 못 먹어요 (no puedo comer). -(으)ㄹ 수 없다 es mas formal y explicito: 갈 수 없어요 (no puedo ir). Ambas son completamente correctas.',
         '못 se coloca siempre inmediatamente antes del verbo principal. Con verbos 하다, 못 va antes de 하다: 공부 못 해요 (no puedo estudiar) o 공부하지 못해요.',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preguntas con -(으)ㄹ 수 있어요?',
+      heading: '¿Cómo se pregunta con -(으)ㄹ 수 있어요?',
       paragraphs: [
         'Para preguntar sobre capacidad o posibilidad, añade simplemente ? a la forma positiva: 수영할 수 있어요? (¿Puedes nadar?). La respuesta puede ser: 네, 할 수 있어요 (Si, puedo) o 아니요, 할 수 없어요 / 못 해요 (No, no puedo).',
         'Esta estructura es muy util para pedir favores: 이것 좀 도와줄 수 있어요? (¿Puedes ayudarme con esto?), 다시 말해줄 수 있어요? (¿Puedes repetirlo?).',

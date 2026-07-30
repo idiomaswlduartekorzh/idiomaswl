@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Los ocho prefijos más importantes y su significado',
+      heading: '¿Cuáles son los ocho prefijos de movimiento más importantes?',
       paragraphs: [
         'При- expresa llegada al punto de referencia: Он пришёл домой (On prishyól domóy) — "Él llegó a casa". У- expresa alejamiento o partida: Она ушла (Aná ushla) — "Ella se fue". Вы- indica salida de un espacio cerrado: Выйди из класса (Výjdi iz klássa) — "Sal del aula".',
         'В- expresa entrada en un espacio: Войдите (Vaydíte) — "Entren (usted/ustedes)". Пере- indica cruce de un límite o umbral: Переходить дорогу (Perekhadít darógu) — "Cruzar la calle". Под- indica acercamiento: Подойди сюда (Padaydi syudá) — "Acércate aquí". От- indica alejamiento desde un punto: Отойди от окна (Ataydi at akná) — "Aléjate de la ventana".',
@@ -78,7 +78,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Aspecto y prefijos: НСВ vs СВ en contexto',
+      heading: '¿Cómo se relacionan aspecto y prefijos (НСВ vs СВ)?',
       paragraphs: [
         'Con los verbos de movimiento prefijados, la elección de aspecto sigue las reglas generales: НСВ para acciones habituales, repetidas o en proceso; СВ para eventos únicos, completados o con resultado claro.',
         'Каждое утро он приходит в 9 (каждое — НСВ). Вчера он пришёл в 10 (вчера, evento único — СВ). La combinación prefijo + aspecto da toda la precisión que el ruso necesita para ubicar el movimiento en el espacio y en el tiempo.',

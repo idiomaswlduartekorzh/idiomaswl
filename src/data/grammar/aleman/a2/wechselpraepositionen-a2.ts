@@ -52,20 +52,20 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cómo recordar cuándo usar Akkusativ o Dativ',
+      heading: '¿Cuándo se usa Akkusativ y cuándo Dativ con las Wechselpräpositionen?',
       paragraphs: [
         'La clave es hacerse la pregunta correcta. Si la oración responde a "Wohin?" (¿Adónde va algo?), la preposición lleva Akkusativ. Si responde a "Wo?" (¿Dónde está algo?), lleva Dativ. Por ejemplo: "Ich stelle die Lampe auf den Tisch" (Wohin? → Akk) vs "Die Lampe steht auf dem Tisch" (Wo? → Dat).',
         'Una regla mnemotécnica útil: los verbos que terminan en -en y expresan acción de colocar (legen, stellen, hängen, setzen) van con Akkusativ, mientras los verbos que expresan posición (liegen, stehen, hängen como estado, sitzen) van con Dativ.',
       ],
     },
     {
-      heading: 'Las contracciones más importantes',
+      heading: '¿Cuáles son las contracciones de las Wechselpräpositionen?',
       paragraphs: [
         'En alemán cotidiano es obligatorio contraer ciertos artículos con las preposiciones. Las más frecuentes son: im (in + dem), ins (in + das), am (an + dem), ans (an + das), aufs (auf + das). Decir "in dem Kino" en lugar de "im Kino" suena muy formal o incorrecto en el habla cotidiana.',
       ],
     },
     {
-      heading: 'Verbos pares: movimiento vs. estado',
+      heading: '¿Qué verbos pares distinguen movimiento y estado en alemán?',
       paragraphs: [
         'En alemán existen pares de verbos que se corresponden semánticamente pero que rigen Akkusativ (movimiento) o Dativ (estado). Los pares más importantes son: legen/liegen, stellen/stehen, hängen(transitivo)/hängen(intransitivo), setzen/sitzen, stecken(colocar)/stecken(estar metido).',
       ],

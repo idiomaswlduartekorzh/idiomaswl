@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '～てもいい y ～てはいけない: permiso y prohibicion en japones',
+      heading: '¿Cómo se dan permiso y prohibición con ～てもいい y ～てはいけない?',
       paragraphs: [
         '～てもいいです se construye con la て形 del verbo mas もいいです: 食べてもいいです = puedes comer / esta permitido comer. Para pedir permiso, agrega か al final: 食べてもいいですか？= ¿Puedo comer?',
         'La prohibicion usa la misma base: て形 + はいけません: 食べてはいけません = no puedes comer. Esta construccion es muy comun en anuncios y normas publicas.',
       ],
     },
     {
-      heading: 'Diferencia entre no-necesario y prohibicion',
+      heading: '¿Cuál es la diferencia entre "no es necesario" y "está prohibido"?',
       paragraphs: [
         'Una distincion importante: ～なくてもいいです significa "no es necesario / no tienes que" (sin obligacion), mientras que ～てはいけません significa "no esta permitido / no puedes" (prohibicion). 来なくてもいいです = no tienes que venir (pero puedes si quieres). 来てはいけません = no puedes venir (prohibicion).',
         'En el nivel A2 es esencial entender esta diferencia para comunicarse correctamente en situaciones cotidianas como restaurantes, museos, aulas o transportes publicos.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "no hace falta hacerlo" frente a "no se debe hacer"?',
+      paragraphs: [
+        'Son dos ideas que el hispanohablante confunde. La prohibición ("no se debe") es 〜てはいけない: ここでたばこを吸ってはいけません (aquí no se puede fumar). La ausencia de necesidad ("no hace falta") es 〜なくてもいい: 明日は来なくてもいいです (mañana no hace falta que vengas). La primera parte de una forma て afirmativa (吸って) + はいけない; la segunda parte de la forma negativa sin い (来ない→来なく) + てもいい. El permiso positivo es 〜てもいい (吸ってもいいです = puedes fumar). La trampa para el hispanohablante es mezclar prohibición con no-necesidad: "no tienes que venir" es なくてもいい (opcional), mientras que "no debes venir" es てはいけない (prohibido); confundirlas cambia por completo el mensaje.',
       ],
     },
   ],

@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los verbos -ir del segundo grupo: el -iss- como marca',
+      heading: '¿Qué son los verbos -ir del segundo grupo en francés?',
       paragraphs: [
         'El francés tiene dos tipos principales de verbos -ir. Los del segundo grupo son regulares y se caracterizan por intercalar -iss- antes de las terminaciones del plural. Los más frecuentes son: finir (terminar), choisir (elegir), réussir (tener éxito/aprobar), réfléchir (reflexionar/pensar), grandir (crecer), obéir (obedecer), remplir (rellenar), réunir (reunir).',
         'Esta -iss- hace que las formas del plural sean más largas: "nous finissons", "vous finissez", "ils finissent". Es una marca muy fiable para identificar el segundo grupo.',
       ],
     },
     {
-      heading: 'Conjugación completa: finir como modelo',
+      heading: '¿Cómo se conjugan los verbos -ir como finir en francés?',
       paragraphs: [
         'Je finis / tu finis / il finit / nous finissons / vous finissez / ils finissent. Las formas singulares son todas en -is/-is/-it. Las formas plurales tienen el infijo -iss- más las terminaciones -ons/-ez/-ent.',
         'Otros verbos frecuentes del 2.° grupo que siguen exactamente el mismo patrón: choisir (je choisis), réussir (je réussis), réfléchir (je réfléchis), bâtir (je bâtis), nourrir (je nourris), saisir (je saisis).',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '2.° vs 3.° grupo: la trampa de partir y dormir',
+      heading: '¿Cuál es la diferencia entre finir y partir en francés?',
       paragraphs: [
         'Cuidado con los verbos -ir del tercer grupo, que son irregulares y NO usan -iss-: partir (partir/irse), dormir (dormir), venir (venir), tenir (tener), sortir (salir), sentir (sentir). Estos verbos se conjugan de manera diferente: "je pars, tu pars, il part, nous partons, vous partez, ils partent".',
         'Una pista rápida: si el verbo -ir tiene -iss- en "nous", es del 2.° grupo regular. Si no, es del 3.° grupo y hay que aprenderlo por separado. En A1, basta con conocer los más frecuentes de cada grupo.',

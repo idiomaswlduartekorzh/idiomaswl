@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El comparatif en francés: más que, menos que, tan como",
+      heading: '¿Cómo se forma el comparatif en francés?',
       paragraphs: [
         "El comparatif francés tiene tres formas: superioridad (plus + adjectif + que), inferioridad (moins + adjectif + que) e igualdad (aussi + adjectif + que). Ejemplos: 'Le café est plus fort que le thé' (El café es más fuerte que el té), 'Ce livre est moins cher que l'autre' (Este libro es menos caro que el otro), 'Elle est aussi compétente que son collègue' (Ella es tan competente como su colega).",
         "Al comparar verbos (acciones), el comparatif de adverbios usa la misma estructura: 'Il travaille plus que moi' (Trabaja más que yo), 'Il mange moins vite que son frère' (Come menos rápido que su hermano). Cuando se comparan cantidades con sustantivos: plus de / moins de / autant de + sustantivo: 'J'ai plus de livres que toi' (Tengo más libros que tú).",
       ],
     },
     {
-      heading: "El superlatif relatif: el más, el menos",
+      heading: '¿Cómo se forma el superlatif en francés?',
       paragraphs: [
         "El superlatif relatif se forma con el artículo definido (le/la/les) + plus/moins + adjectif. El artículo debe concordar con el sustantivo: 'C'est le restaurant le plus cher de la ville' (Es el restaurante más caro de la ciudad), 'Ce sont les étudiantes les plus motivées' (Son las estudiantes más motivadas). El grupo de referencia se introduce con 'de': 'de la classe', 'du monde', 'de l'année'.",
         "Cuando el adjetivo precede al sustantivo, el artículo se combina directamente: 'C'est le plus beau jour de ma vie' (Es el día más bello de mi vida). Cuando el adjetivo sigue al sustantivo, se repite el artículo: 'C'est l'acteur le plus célèbre de France' (Es el actor más famoso de Francia). Esta diferencia posicional es importante en francés.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Las formas irregulares: bon/meilleur, bien/mieux, mauvais/pire",
+      heading: '¿Cuáles son las formas irregulares del comparatif en francés?',
       paragraphs: [
         "Los irregulares más importantes son: bon (adjetivo) → meilleur(e)/meilleur(e)s en comparatif; le/la meilleur(e), les meilleur(e)s en superlatif. Bien (adverbio) → mieux en comparatif; le mieux en superlatif. Mauvais (adjetivo) → pire en comparatif; le pire en superlatif. Mal (adverbio) → plus mal o moins bien en comparatif; le plus mal en superlatif.",
         "La distinción clave es entre 'meilleur' (adjetivo, modifica un sustantivo) y 'mieux' (adverbio, modifica un verbo). 'Ce restaurant est meilleur que l'autre' (adjetivo: describe el restaurante). 'Je dors mieux depuis que j'ai changé de matelas' (adverbio: describe la acción de dormir). Un error muy común es usar 'plus bon' o 'plus bien' en lugar de 'meilleur' o 'mieux'.",

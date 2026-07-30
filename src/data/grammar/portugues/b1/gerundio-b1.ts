@@ -64,7 +64,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Gerundios irregulares y cambios vocálicos',
+      heading: '¿Cómo se forma el gerundio en portugués?',
       paragraphs: [
         'Algunos verbos tienen gerundios irregulares o experimentan cambios vocálicos en la raíz. Ejemplos: estar → estando (no estindo), fazer → fazendo (no fazando), ser → sendo (no serando), trazer → trazendo (no trazeando).',
         'Verbos con cambio vocálico o > ó / u: dormir → dormindo, servir → servindo. Verbos con cambio e > i: venir → viniendo (vir → vindo), pedir → pidiendo (pedir → pedindo).',
@@ -87,7 +87,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Gerundio vs infinitivo: cuándo usar cada uno',
+      heading: '¿Cuándo se usa gerundio y cuándo infinitivo en portugués?',
       paragraphs: [
         'Después de preposiciones, se usa el infinitivo, no el gerundio: "Antes de sair..." (antes de salir), "Depois de comer..." (después de comer), "Para estudar melhor..." (para estudiar mejor). No se dice "antes de saindo".',
         'El gerundio en portugués puede usarse como sustantivo: "Nadar é saudável" (nadar es saludable / el nado es saludable), "Gosto de dançar" (me gusta bailar / me gusta el baile). Pero en construcciones de progreso, siempre va gerundio: "Estou dançando" (estoy bailando), nunca "Estou a dançar" (europeo) o "Estou a dança".',

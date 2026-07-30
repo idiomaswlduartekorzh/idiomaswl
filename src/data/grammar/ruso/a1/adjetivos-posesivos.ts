@@ -49,7 +49,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Los posesivos rusos y su concordancia',
+      heading: '¿Cómo concuerdan los posesivos en ruso?',
       paragraphs: [
         'En ruso, los posesivos de primera y segunda persona (мой, твой, наш, ваш) concuerdan en género, número y caso con el sustantivo que acompañan, igual que los adjetivos. Мой брат (mi hermano, masc), моя сестра (mi hermana, fem), моё письмо (mi carta, ntr), мои друзья (mis amigos, pl).',
         'Esta concordancia es familiar para el hispanohablante (mi/mis, nuestro/nuestra). Lo nuevo es tener formas distintas para masculino singular, femenino singular, neutro singular y plural.',
@@ -63,10 +63,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'его/её/их: posesivos invariables',
+      heading: '¿Por qué его, её e их son posesivos invariables?',
       paragraphs: [
         'La gran singularidad de los posesivos rusos de tercera persona: его (su de él), её (su de ella) y их (su de ellos/ellas) son INVARIABLES. No cambian según el género ni el número del sustantivo. Его брат (su hermano de él) y его сестра (su hermana de él) — его es exactamente igual en ambos casos.',
         'Esto ocurre porque его/её/их son en realidad formas del caso genitivo de los pronombres он/она/они, no adjetivos posesivos como мой. Este origen explica por qué no se declinan como adjetivos.',
+      ],
+    },
+    {
+      heading: '¿Cómo cambian мой, твой, наш y ваш según el género?',
+      paragraphs: [
+        'Los posesivos de 1ª y 2ª persona concuerdan en género, número y caso con el objeto poseído, no con el poseedor (al revés que en español, donde "su" no cambia). Para "mi": мой (masculino, мой брат = mi hermano), моя (femenino, моя сестра = mi hermana), моё (neutro, моё окно = mi ventana), мои (plural, мои книги = mis libros). Igual se comportan твой/твоя/твоё/твои (tu), наш/наша/наше/наши (nuestro) y ваш/ваша/ваше/ваши (vuestro/su formal).',
+        'La trampa para el hispanohablante es doble: (1) hay que elegir la forma según el género de la cosa poseída, no de quien posee; (2) esto NO afecta a его, её e их, que son invariables. Así, моя книга cambia a мой стол según el sustantivo, pero его книга y его стол se dicen igual.',
       ],
     },
   ],

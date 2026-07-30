@@ -52,10 +52,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Terminaciones según el tiempo',
+      heading: '¿Cómo cambian las terminaciones relativas según el tiempo en coreano?',
       paragraphs: [
         'Presente/habitual: tallo + -는 para todos los verbos de acción (comer → 먹는, ir → 가는, ver → 보는). Para verbos descriptivos (adjetivos) se usa -ㄴ/은: 크다 → 큰 (grande), 작다 → 작은 (pequeño).',
         'Pasado: tallo + -ㄴ (si termina en vocal) o -은 (si termina en consonante). "먹다" → "먹은", "오다" → "온", "읽다" → "읽은". Futuro: tallo + -ㄹ (si termina en vocal) o -을 (si termina en consonante).',
+      ],
+    },
+    {
+      heading: '¿Por qué la cláusula relativa va antes del sustantivo en coreano?',
+      paragraphs: [
+        'Porque el coreano coloca SIEMPRE el modificador delante de lo modificado, y una oración de relativo no es más que un modificador largo. Donde el español dice "el libro QUE leí", el coreano dice literalmente "leí-que libro": 내가 읽은 책 (naega ilgeun chaek). No existe un pronombre relativo como "que/quien/donde"; en su lugar, el verbo de la cláusula toma una terminación atributiva que además marca el tiempo: presente -는 (읽는 책 = el libro que leo), pasado -(으)ㄴ (읽은 책 = el libro que leí), futuro -(으)ㄹ (읽을 책 = el libro que leeré). Esta inversión total del orden es la mayor dificultad del hispanohablante y conviene practicarla frase a frase.',
       ],
     },
   ],

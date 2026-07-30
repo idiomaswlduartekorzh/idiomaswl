@@ -58,6 +58,46 @@ const topic: GrammarTopic = {
         'El patrón de estou/estás/está es muy regular — solo la primera persona rompe el patrón con -ou en lugar de -o. En contraste, ser es completamente irregular (sou/és/é), como en español (soy/eres/es).',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre ser y estar en portugués?',
+      paragraphs: [
+        'La regla base es la misma que en español: ser marca lo permanente o definitorio (identidad, origen, profesión, características, hora), y estar marca lo temporal o circunstancial (estado, emoción, ubicación). Si en español dirías "soy", en portugués es sou/é; si dirías "estoy", es estou/está. Esa equivalencia acierta en el 90 % de los casos.',
+        'La trampa está en el 10 % restante: el portugués de Brasil admite ser para la ubicación de cosas fijas o permanentes ("A padaria é na esquina", la panadería queda en la esquina), donde el español obliga estar. Para personas y situaciones temporales, en cambio, siempre estar: "Onde você está?", nunca "onde você é". Esta tabla resume qué verbo pide cada función:',
+      ],
+      table: [
+        ['Uso', 'Verbo', 'Exemplo'],
+        ['Identidade / nome', 'ser', 'Eu sou Ana.'],
+        ['Origem', 'ser', 'Sou da Colômbia.'],
+        ['Profissão', 'ser', 'Ela é médica.'],
+        ['Característica permanente', 'ser', 'Ele é alto.'],
+        ['Hora e data', 'ser', 'São três horas.'],
+        ['Estado / condição', 'estar', 'Estou cansado.'],
+        ['Emoção', 'estar', 'Estamos felizes.'],
+        ['Localização (pessoas)', 'estar', 'A chave está aqui.'],
+        ['Local fixo (Brasil)', 'ser', 'A escola é aqui.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan ser y estar en presente?',
+      paragraphs: [
+        'Ser es irregular y hay que memorizarlo; estar es casi regular salvo la primera persona (estou, no "esto"). Conviene aprender las dos columnas en paralelo porque en la conversación se alternan todo el tiempo. Esta es la tabla completa de las dos:',
+      ],
+      table: [
+        ['Persona', 'SER', 'ESTAR'],
+        ['eu', 'sou', 'estou'],
+        ['tu', 'és', 'estás'],
+        ['você / ele / ela', 'é', 'está'],
+        ['nós', 'somos', 'estamos'],
+        ['vocês / eles / elas', 'são', 'estão'],
+      ],
+    },
+    {
+      heading: '¿Se dice "sou professor" o "estou professor"?',
+      paragraphs: [
+        'Se dice "sou professor". La profesión es una identidad, no un estado, así que va con ser en portugués igual que en español ("soy profesor", no "estoy profesor"). El mismo criterio aplica a "sou estudante", "sou médico", "sou de Bogotá". El error de usar estar con la profesión es el más frecuente del hispanohablante que arrastra la duda del inglés, pero en portugués la lógica es idéntica a la del español: identidad → ser.',
+        'El contraste típico en un examen es "Eu ___ engenheiro, mas hoje ___ de férias": la primera es sou (profesión, ser) y la segunda estou (situación temporal, estar). Cuando dudes, pregúntate si la frase describe QUIÉN es alguien (ser) o CÓMO está en este momento (estar).',
+      ],
+    },
   ],
   visual: {
     mode: 'verb-conjugation',

@@ -60,6 +60,20 @@ const topic: GrammarTopic = {
         ['они', 'знают', 'идут'],
       ],
     },
+    {
+      heading: '¿Cómo se conjuga хотеть (querer), un verbo mixto?',
+      paragraphs: [
+        'хотеть es famoso por ser "mixto": el singular sigue la 1ª conjugación y el plural la 2ª. Se conjuga: я хочу, ты хочешь, он/она хочет (singular, con alternancia т→ч y terminaciones -у/-ешь/-ет), pero мы хотим, вы хотите, они хотят (plural, terminaciones -им/-ите/-ят).',
+        'La trampa para el hispanohablante es que dentro de un mismo verbo cambian tanto la consonante de la raíz (хоч- en singular, хот- en plural) como el modelo de terminaciones. Es de altísima frecuencia (Я хочу есть = quiero comer), así que conviene memorizar las seis formas.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan есть (comer) y пить (beber)?',
+      paragraphs: [
+        'есть (comer) es irregular: я ем, ты ешь, он/она ест, мы едим, вы едите, они едят. пить (beber) pierde la и de la raíz y añade ь: я пью, ты пьёшь, он/она пьёт, мы пьём, вы пьёте, они пьют.',
+        'La trampa para el hispanohablante es no confundir есть "comer" con есть "hay/tener" (У меня есть = tengo), que son palabras homónimas pero de uso distinto. Y en пить, recordar el signo blando ь ante las terminaciones (пью, пьёт), que marca la pronunciación "pyu, pyot".',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

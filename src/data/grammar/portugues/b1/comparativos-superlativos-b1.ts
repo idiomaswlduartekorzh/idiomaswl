@@ -57,7 +57,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Comparativos analíticos: más...que, menos...que, tan...como',
+      heading: '¿Cómo se forman los comparativos en portugués?',
       paragraphs: [
         'Estructura: mais + adjetivo + que. Ejemplo: "Maria é mais alta que João" (Maria es más alta que João). Comparativo de inferioridad: "Paulo é menos inteligente que Pedro" (Paulo es menos inteligente que Pedro).',
         'Igualdad: "Você é tão bonito quanto seu irmão" (Eres tan guapo como tu hermano). Nota: "quanto" no "como" en portugués para comparar (aunque "como" también es aceptado en oralidad brasileña).',
@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Superlativos absolutos: -íssimo, -íssima, -íssimas',
+      heading: '¿Qué es el superlativo absoluto en -íssimo en portugués?',
       paragraphs: [
         'El superlativo absoluto expresa grado máximo sin comparación: "Este livro é belíssimo" (Este libro es bellísimo). Se forma añadiendo -íssimo/a/os/as al adjetivo (eliminando vocal final si la hay).',
         'Ejemplos: bonito → belíssimo, inteligente → inteligentíssimo, grande → grandíssimo. Algunos adjetivos tienen formas especiales: bueno → óptimo, malo → pésimo, sagrado → sacratísimo.',

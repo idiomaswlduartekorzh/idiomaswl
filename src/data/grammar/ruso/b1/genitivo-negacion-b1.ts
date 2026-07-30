@@ -37,9 +37,9 @@ const topic: GrammarTopic = {
       '"Нельзя открывать дверь" ✓ (no "нельзя открыв дверь") — infinitivo sin modificador.'],
   },
   seo: [
-    {heading: 'Genitivo con нет (no hay)', paragraphs: ['"Нет молока" — no hay leche (gen). "Нет времени" — no hay tiempo (gen). Estructura fija: нет + genitivo.', 'Con negación existencial, el caso siempre es genitivo.']},
-    {heading: 'Genitivo con negar verbo transitivo', paragraphs: ['"Я не вижу молока" — no veo leche (gen). "Я не люблю кофе" — no amo café (gen). Cuando niegas un verbo transitivo, el objeto va en genitivo.', 'Positivo: "Я вижу молоко" (ac) vs negativo: "Я не вижу молока" (gen).']},
-    {heading: 'Genitivo con нельзя, невозможно', paragraphs: ['"Нельзя открывать дверь" — no se puede abrir la puerta (inf). "Невозможно пойти" — es imposible ir (inf).', 'Prohibiciones y imposibilidades usan infinitivo + genitivo para objetos.']},
+    {heading: '¿Por qué нет (no hay) exige el caso genitivo?', paragraphs: ['"Нет молока" — no hay leche (gen). "Нет времени" — no hay tiempo (gen). Estructura fija: нет + genitivo.', 'Con negación existencial, el caso siempre es genitivo.']},
+    {heading: '¿Cómo cambia el objeto a genitivo al negar un verbo transitivo?', paragraphs: ['"Я не вижу молока" — no veo leche (gen). "Я не люблю кофе" — no amo café (gen). Cuando niegas un verbo transitivo, el objeto va en genitivo.', 'Positivo: "Я вижу молоко" (ac) vs negativo: "Я не вижу молока" (gen).']},
+    {heading: '¿Cómo se usa el genitivo con нельзя y невозможно?', paragraphs: ['"Нельзя открывать дверь" — no se puede abrir la puerta (inf). "Невозможно пойти" — es imposible ir (inf).', 'Prohibiciones y imposibilidades usan infinitivo + genitivo para objetos.']},
     {heading: 'Excepción: algunos verbos toman acusativo en negación', paragraphs: ['"Я не люблю кофе" (gen) vs "Я не брал ключи" (ac — pasado de tomar). Mayoría toma genitivo, algunos toman acusativo (verbs of receiving, taking).', 'En hablantes modernos, el genitivo domina la negación.']},
   ],
   visual: {mode: 'scene', teacherLens: 'Genitivo con negación: нет чего? — Gen vs Ac en positivo', graphicPrompt: 'Tabla: Positivo (Ac) vs Negación (Gen)', scene: [['Нет молока.', 'No hay leche (gen).'], ['Я не вижу молока.', 'No veo leche (gen).'], ['Нельзя открывать дверь.', 'No se puede abrir la puerta.'], ['Я не могу пойти.', 'No puedo ir.'], ['Невозможно найти квартиру.', 'Es imposible encontrar apartamento.']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['род.падеж', 'отрицание', 'контраст']},

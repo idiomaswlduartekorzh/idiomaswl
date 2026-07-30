@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La voz pasiva en japones: 受け身 (ukemi)',
+      heading: '¿Cómo se forma la voz pasiva 受け身 (ukemi) en japonés?',
       paragraphs: [
         'La voz pasiva (受け身) en japones se forma de manera sistematica: Grupo 1 cambia la vocal final de う a あ y agrega れる (書く→書かれる, 飲む→飲まれる), mientras que el Grupo 2 simplemente agrega られる (食べる→食べられる). Los irregulares son する→される y くる→こられる.',
         'El agente de la accion (quien la realiza) se marca con に: 先生に褒められました = Fui elogiado por el profesor. El sujeto que recibe la accion lleva は o が.',
       ],
     },
     {
-      heading: 'El pasivo de molestia (迷惑受け身)',
+      heading: '¿Qué es el pasivo de molestia (迷惑受け身)?',
       paragraphs: [
         'Una caracteristica unica del japones es el "pasivo de molestia": el sujeto sufre una consecuencia negativa por la accion de otro. 雨に降られました = Me cayo encima la lluvia (me molesto). 友達に来られて、困った = Mi amigo vino y me causo inconveniente.',
         'Este uso no tiene traduccion directa al espanol y es esencial para entender el japones natural. La pasiva de molestia implica que la accion afecto negativamente al sujeto.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga el pasivo y qué partícula marca al agente?',
+      paragraphs: [
+        'El pasivo (受け身) se forma según el grupo. Grupo 1 (godan): última -u → -areru: 書く→書かれる, 話す→話される, 読む→読まれる. Grupo 2 (ichidan): quitar る + られる: 食べる→食べられる, 見る→見られる. Irregulares: する→される, 来る→来られる (こられる). En la frase pasiva, el que recibe la acción va con は/が y el agente (quien la hace) se marca con に: 私は先生にほめられました (fui elogiado por el profesor). La trampa para el hispanohablante es doble: (1) el agente lleva に, no "por" con otra partícula; (2) la forma del grupo 2 (食べられる) es idéntica al potencial, y solo el contexto y la partícula に las distinguen. Existe además el 迷惑受け身 (pasivo de molestia), que expresa que algo te afectó negativamente: 雨に降られた (me pilló la lluvia).',
       ],
     },
   ],

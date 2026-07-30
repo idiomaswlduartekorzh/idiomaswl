@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'Remember + gerundio = recordar algo que ya ocurrió: "I remember meeting him at the conference." Remember + infinitivo = no olvidar hacer algo en el futuro: "Remember to send the email." Try + gerundio = experimentar algo como solución: "Try drinking more water if you have headaches." Try + infinitivo = esforzarse para lograr algo: "I tried to open the jar but couldn\'t."',
       ],
     },
+    {
+      heading: '¿Cuándo se usa gerundio (-ing) y cuándo infinitivo (to) en inglés?',
+      paragraphs: [
+        'Depende del verbo anterior. Tras enjoy, finish, avoid, mind, suggest → gerundio ("I enjoy reading"). Tras want, need, decide, hope, learn → infinitivo con to ("I want to read"). Tras preposiciones siempre gerundio ("good at cooking", "interested in learning").',
+      ],
+    },
+    {
+      heading: '¿Qué verbos van seguidos de gerundio en inglés?',
+      paragraphs: [
+        'Enjoy, finish, avoid, mind, suggest, keep, practise, miss, imagine, can\'t stand: "I enjoy swimming", "She finished eating", "Avoid making noise". También todos los verbos tras preposición.',
+      ],
+    },
+    {
+      heading: '¿Qué verbos cambian de significado con gerundio o infinitivo?',
+      paragraphs: [
+        'Algunos como stop, remember, forget, try: "stop smoking" (dejar de fumar) vs "stop to smoke" (parar para fumar); "remember locking" (recordar que cerraste) vs "remember to lock" (acordarte de cerrar). El gerundio mira al pasado; el infinitivo, a la intención.',
+      ],
+    },
   ],
 
   visual: {

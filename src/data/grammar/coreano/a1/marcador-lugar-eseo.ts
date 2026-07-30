@@ -52,7 +52,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El gran contraste: 에 vs. 에서',
+      heading: '¿Cuál es la diferencia entre 에 y 에서 en coreano?',
       paragraphs: [
         'Este es uno de los puntos donde más se equivocan los principiantes. La diferencia: 에 con 있어요 (estar/haber) indica que alguien o algo está en un lugar de forma estática. 에서 con verbos de acción indica que se hace algo en ese lugar activamente.',
         '학교에 있어요 = estoy en la escuela (simplemente estoy ahí). 학교에서 공부해요 = estudio en la escuela (realizo la acción de estudiar ahí). Misma palabra (학교), partícula distinta, significado distinto.',
@@ -72,7 +72,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preguntar por el lugar: 어디에서? / 어디서?',
+      heading: '¿Cómo se pregunta por el lugar con 에서 en coreano?',
       paragraphs: [
         'Para preguntar dónde ocurre una acción se usa 어디에서? o su forma coloquial 어디서?: 어디에서 공부해요? (¿Dónde estudias?), 어디서 먹어요? (¿Dónde comes?). Para preguntar el origen: 어디에서 왔어요? (¿De dónde viniste?).',
         'En conversación coloquial, 에서 puede acortarse a -서: 카페서 공부해요, 집서 먹어요. Esto es informal y no se recomienda en escritura formal, pero lo oirás frecuentemente en k-dramas y conversaciones reales.',

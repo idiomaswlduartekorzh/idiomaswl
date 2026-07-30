@@ -50,14 +50,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Tres usos en uno: existencia, posesión y presencia',
+      heading: '¿Qué usos tienen 있어요 y 없어요 en coreano?',
       paragraphs: [
         'Existencia: 화장실이 있어요? (¿Hay un baño?) es la pregunta perfecta de viajero. Posesión: 펜이 있어요? (¿Tienes un bolígrafo?) es útil en el aula. Presencia: 선생님이 교실에 있어요 (El maestro está en el aula) describe ubicación de personas u objetos.',
         'En los tres casos la estructura es la misma: sujeto + 이/가 + 있어요. El contexto determina si es existencia, posesión o presencia. Para la presencia en un lugar específico, se añade 에 + lugar: 방에 있어요 (está en la habitación).',
       ],
     },
     {
-      heading: 'La partícula de lugar 에 con 있어요',
+      heading: '¿Cómo se usa la partícula 에 con 있어요 en coreano?',
       paragraphs: [
         'Para decir dónde está algo, el lugar lleva la partícula 에 (e): 학교에 (en la escuela), 집에 (en casa), 서울에 (en Seúl). La estructura completa es: [lugar]에 [cosa]이/가 있어요. 도서관에 책이 많이 있어요 (En la biblioteca hay muchos libros).',
         'Un error común es usar 에서 en lugar de 에 con 있어요. 에서 se usa para acciones (공원에서 운동해요 = hago ejercicio en el parque), mientras que 에 se usa para ubicación estática (공원에 있어요 = está en el parque).',

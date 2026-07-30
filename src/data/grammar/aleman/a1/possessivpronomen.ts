@@ -56,21 +56,21 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La trampa de sein e ihr para hispanohablantes',
+      heading: '¿Cuál es la diferencia entre sein e ihr en alemán?',
       paragraphs: [
         '"Sein" significa "su" cuando el poseedor es masculino (él/es): sein Bruder (su hermano, de él), seine Mutter (su madre, de él). "Ihr" significa "su" cuando la poseedora es femenina (ella): ihr Bruder (su hermano, de ella), ihre Mutter (su madre, de ella).',
         'El problema: en español "su" es ambiguo (puede referirse a él, ella, usted, ellos). En alemán hay una palabra distinta para cada caso. Y añade confusión que "ihr" también es el pronombre personal de "vosotros" y que "Ihr" (mayúscula) es la forma de cortesía formal. El contexto y la mayúscula resuelven la ambigüedad.',
       ],
     },
     {
-      heading: 'Unser y euer: los posesivos de plural informal',
+      heading: '¿Cómo son los posesivos unser y euer en alemán?',
       paragraphs: [
         '"Unser" (nuestro) se usa para wir: unser Lehrer (nuestro profesor), unsere Klasse (nuestra clase). "Euer" (vuestro) se usa para ihr: euer Kurs (vuestro curso), eure Wohnung (vuestra piso). Nota: euer pierde la -e- interna cuando añade terminación: euer → eure (no "euere").',
         '"Ihr" (plural, ellos/ellas) e "Ihr" (usted formal) comparten grafía excepto en la mayúscula inicial — en medio de frase, "Ihr" siempre formal y "ihr" siempre de ellos/ellas.',
       ],
     },
     {
-      heading: 'Estrategia práctica: género del poseído, no del poseedor',
+      heading: '¿Con qué concuerda el posesivo alemán, el poseedor o lo poseído?',
       paragraphs: [
         'La terminación del posesivo depende del GÉNERO DEL SUSTANTIVO POSEÍDO, no del poseedor. "Mein Bruder" (mi hermano) → masculino → mein. "Meine Schwester" (mi hermana) → femenino → meine. "Mein Kind" (mi hijo) → neutro → mein. "Meine Kinder" (mis hijos) → plural → meine.',
         'Esta regla aplica igual para sein/seine: "sein Bruder" (su hermano, de él) → masc → sein. "Seine Schwester" (su hermana, de él) → fem → seine. El posesivo siempre concuerda con lo poseído.',

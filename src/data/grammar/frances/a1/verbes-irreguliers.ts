@@ -47,14 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Por qué son imprescindibles estos cinco verbos',
+      heading: '¿Cuáles son los verbos irregulares esenciales del francés A1?',
       paragraphs: [
         'Después de "être" y "avoir", los verbos más usados en francés cotidiano son precisamente aller, faire, vouloir, pouvoir y prendre. Son tan frecuentes que en cualquier conversación básica aparecerán varios de ellos. La mala noticia es que son todos irregulares; la buena, que una vez memorizados te abren la puerta a miles de frases.',
-        'Además, "aller" es la base del futur proche (je vais manger = voy a comer), "faire" aparece en decenas de expresiones (faire du sport, faire la cuisine, faire un voyage), y "pouvoir" + "vouloir" son los verbos modales más usados del francés.',
+        'Además, "aller" es la base del futur proche (je vais manger = voy a comer), "faire" aparece en decenas de expresiones (faire du sport, faire la cuisine, faire un voyage), y "pouvoir" + "vouloir" son los verbos modales más usados del francés. Esta es la conjugación completa de los cinco en presente:',
+      ],
+      table: [
+        ['Pronombre', 'aller', 'faire', 'prendre'],
+        ['je', 'vais', 'fais', 'prends'],
+        ['tu', 'vas', 'fais', 'prends'],
+        ['il / elle / on', 'va', 'fait', 'prend'],
+        ['nous', 'allons', 'faisons', 'prenons'],
+        ['vous', 'allez', 'faites', 'prenez'],
+        ['ils / elles', 'vont', 'font', 'prennent'],
       ],
     },
     {
-      heading: 'Aller: el verbo más irregular',
+      heading: '¿Cómo se conjuga el verbo aller en francés?',
       paragraphs: [
         '"Aller" significa "ir" y es totalmente irregular — sus formas no se parecen al infinitivo: je vais, tu vas, il va, nous allons, vous allez, ils vont. Nota que "nous allons" y "vous allez" sí parecen regulares con raíz all-.',
         'Las expresiones más importantes: aller à + ciudad (je vais à Paris), aller + infinitivo para el futuro próximo (je vais manger = voy a comer), comment allez-vous ? (¿cómo está usted?), ça va ? (¿qué tal?).',
@@ -68,10 +77,24 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Vouloir, pouvoir y prendre',
+      heading: '¿Cómo se conjugan vouloir y pouvoir en francés?',
       paragraphs: [
-        '"Vouloir" (querer): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent. "Pouvoir" (poder): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent. Estos dos verbos tienen el mismo patrón: singular con -eux/-eux/-eut y plural con -oulons/-oulez/-eulent.',
-        '"Prendre" (tomar/coger): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent. La doble "n" en "prennent" es la única forma sorprendente. "Prendre" también sirve de base para apprendre (aprender) y comprendre (comprender).',
+        '"Vouloir" (querer) y "pouvoir" (poder) comparten el mismo patrón: singular en -eux/-eux/-eut y plural en -ons/-ez con la vocal que cambia (voulons/pouvons, veulent/peuvent). Son los dos verbos modales más usados y siempre van seguidos de infinitivo: "je veux apprendre", "tu peux venir". Esta es su conjugación en paralelo:',
+      ],
+      table: [
+        ['Pronombre', 'vouloir', 'pouvoir'],
+        ['je', 'veux', 'peux'],
+        ['tu', 'veux', 'peux'],
+        ['il / elle / on', 'veut', 'peut'],
+        ['nous', 'voulons', 'pouvons'],
+        ['vous', 'voulez', 'pouvez'],
+        ['ils / elles', 'veulent', 'peuvent'],
+      ],
+    },
+    {
+      heading: '¿Por qué "vous faites" y no "vous faisez"?',
+      paragraphs: [
+        'Porque faire es irregular en la 2ª persona del plural: la forma correcta es "vous faites", no "vous faisez". Es una de las tres formas de vous irregulares del francés (junto a "vous êtes" y "vous dites"). También son irregulares "ils font" (no "ils faisent") y "ils vont" (aller). Estas formas hay que memorizarlas porque rompen el patrón regular de -ez/-ent. "Prendre" añade otra trampa: la doble n de "ils prennent" (base de apprendre → ils apprennent, comprendre → ils comprennent).',
       ],
     },
   ],

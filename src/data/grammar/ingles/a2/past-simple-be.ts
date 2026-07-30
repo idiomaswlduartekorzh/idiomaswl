@@ -96,6 +96,24 @@ const topic: GrammarTopic = {
         'Otro error es olvidar la contracción: "I was not there" es correcto pero suena rígido; "I wasn\'t there" es la forma natural. Lo opuesto también ocurre: escribir "wasnt" sin apóstrofo en exámenes — siempre incluye el apóstrofo.',
       ],
     },
+    {
+      heading: '¿Cómo se conjuga el verbo "to be" en pasado?',
+      paragraphs: [
+        'Solo tiene dos formas: "was" para I, he, she, it ("I was", "she was") y "were" para you, we, they ("you were", "they were"). En negativo: wasn\'t / weren\'t. En pregunta se invierte: "Was he…?", "Were you…?".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "was" y cuándo "were"?',
+      paragraphs: [
+        '"was" con sujetos singulares (I, he, she, it y nombres en singular): "The film was good". "were" con plurales y con "you" (you, we, they): "The films were good", "You were late". Es la única variación por sujeto del pasado de to be.',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas y negaciones con "was/were"?',
+      paragraphs: [
+        'Sin do/did: se invierte para preguntar ("Was she at home?", "Were they ready?") y se añade not para negar ("I wasn\'t tired", "They weren\'t here"). El verbo to be nunca usa el auxiliar "did".',
+      ],
+    },
   ],
 
   visual: {

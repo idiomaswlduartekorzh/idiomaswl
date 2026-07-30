@@ -43,8 +43,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es régimen de preposiciones?', paragraphs: ['Régimen es la regla de qué caso rige cada preposición. Cada preposición reclama un caso específico y no otro: в + acusativo (movimiento), в + locativo (posición).', 'Es una regla absoluta en ruso; no hay excepciones.']},
-    {heading: 'В/на: acusativo vs locativo', paragraphs: ['"в город" (в + ac — into the city — moving). "в городе" (в + loc — in the city — staying). Diferencia fundamental: acusativo = movimiento; locativo = lugar.', '"на стол" (onto the table) vs "на столе" (on the table) — mismo contraste.']},
-    {heading: 'Из/с: genitivo para origen', paragraphs: ['"из города" (from the city — из + genitivo). "с полки" (from the shelf — с + genitivo). Ambas preposiciones de origen toman genitivo.', 'Regla: origen siempre = genitivo.']},
+    {heading: '¿Cómo eligen В/на entre acusativo y locativo?', paragraphs: ['"в город" (в + ac — into the city — moving). "в городе" (в + loc — in the city — staying). Diferencia fundamental: acusativo = movimiento; locativo = lugar.', '"на стол" (onto the table) vs "на столе" (on the table) — mismo contraste.']},
+    {heading: '¿Cómo usan Из/с el genitivo para indicar el origen?', paragraphs: ['"из города" (from the city — из + genitivo). "с полки" (from the shelf — с + genitivo). Ambas preposiciones de origen toman genitivo.', 'Regla: origen siempre = genitivo.']},
     {heading: 'К: dativo para destino cercano', paragraphs: ['"к городу" (towards the city — dirección cercana o punto de destino). "к дому" (towards the house). к + dativo es más específico que в.', 'Diferencia sutil con в: в = into/within a space; к = towards/approaching.']},
     {heading: 'Перед/под + instrumental', paragraphs: ['"перед домом" (before/in front of the house — instrumental). "под столом" (under the table — instrumental). Estas preposiciones siempre rigen instrumental.', 'Otras: над (above), между (between), за (behind) — todas instrumental.']},
   ],

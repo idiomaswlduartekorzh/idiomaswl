@@ -22,9 +22,9 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es 피동사 (pasiva)?', paragraphs: ['피동사 es la voz pasiva coreana: enfoca la acción en el objeto en lugar del agente. "El libro es leído" en lugar de "Yo leo el libro".', 'Se usa en narrativa, descripción neutral y escritura académica/periodística.']},
-    {heading: 'Formación con sufijos', paragraphs: ['"-이": 닫다 → 닫혀요 (cerrarse). "-히": 보이다 (verse), 들리다 (oírse). "-리": 말리다 (disuadir), 날리다 (volar).', '"-기": 웃기다 (burlarse), 익히다 (aprender). Algunos verbos tienen múltiples formas.']},
+    {heading: '¿Cómo se forma la pasiva 피동사 en coreano?', paragraphs: ['"-이": 닫다 → 닫혀요 (cerrarse). "-히": 보이다 (verse), 들리다 (oírse). "-리": 말리다 (disuadir), 날리다 (volar).', '"-기": 웃기다 (burlarse), 익히다 (aprender). Algunos verbos tienen múltiples formas.']},
     {heading: '피동사 en narrativa y descripción', paragraphs: ['"책이 출판되었어요" (el libro fue publicado). "학생들이 표를 받았어요" (los estudiantes recibieron premios — más neutral que "nosotros dimos premios").', 'Común en noticias, documentos académicos, descripciones objetivas.']},
-    {heading: 'Expresión del agente: -에게 vs -에 의해', paragraphs: ['-에게: más personal, cercano. "엄마에게 혼났어요" (fui regañado por mamá — directo).', '-에 의해: más formal, abstracto. "법에 의해 처벌받았어요" (fue castigado por la ley — formal, no personal).']},
+    {heading: '¿Cómo se expresa el agente en la pasiva coreana?', paragraphs: ['-에게: más personal, cercano. "엄마에게 혼났어요" (fui regañado por mamá — directo).', '-에 의해: más formal, abstracto. "법에 의해 처벌받았어요" (fue castigado por la ley — formal, no personal).']},
     {heading: 'Verbos que no tienen pasiva común', paragraphs: ['가다 (ir), 오다 (venir), 있다 (haber) raramente usan pasiva.', 'Algunos verbos tienen formas especiales: 듣다 (oír) → 들려요 (sonar, se oye), no "들으려요".']},
   ],
   visual: {mode: 'scene', teacherLens: '피동사 (pasiva): sujeto recibe acción vs 능동사 (activa)', graphicPrompt: 'Tabla: 피동사 (pasiva) vs 능동사 (activa). Ejemplo comparativo.', scene: [['책이 읽혀요.', 'El libro es leído.'], ['학생이 표를 받았어요.', 'El estudiante recibió un premio (pasiva neutral).'], ['엄마에게 혼났어요.', 'Fui regañado por mamá.'], ['밤이 밝혀요.', 'La noche se ilumina.'], ['소문이 퍼졌어요.', 'El rumor se propagó.']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['목적어→주어', '피동 형태', '능동 대비']},

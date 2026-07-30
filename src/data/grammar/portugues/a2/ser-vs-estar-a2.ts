@@ -69,6 +69,33 @@ const topic: GrammarTopic = {
         'Un grupo importante de adjetivos siempre va con estar: aberto/fechado (abierto/cerrado), ocupado/livre (ocupado/libre), pronto (listo), sentado/deitado (sentado/acostado). Estos describen estados o posiciones físicas que son temporales por naturaleza.',
       ],
     },
+    {
+      heading: '¿Cuándo se usa ser y cuándo estar en portugués?',
+      paragraphs: [
+        'Ser marca lo que algo o alguien ES de forma estable; estar marca cómo ESTÁ en un momento o lugar. La lógica es la misma del español, con una excepción notable: la ubicación de eventos usa ser ("A festa é aqui"), no estar. Esta tabla resume los usos por contexto:',
+      ],
+      table: [
+        ['Contexto', 'SER', 'ESTAR'],
+        ['Profesión / identidad', 'Ela é médica.', '—'],
+        ['Origen / nacionalidad', 'Sou do Brasil.', '—'],
+        ['Estado físico / emoción', '—', 'Estou cansado.'],
+        ['Ubicación de persona', '—', 'Ela está em casa.'],
+        ['Ubicación de evento', 'A festa é aqui.', '—'],
+        ['Hora / fecha', 'São três horas.', 'Estamos em março.'],
+      ],
+    },
+    {
+      heading: '¿Por qué cambia el significado entre "é" y "está" con el mismo adjetivo?',
+      paragraphs: [
+        'Porque ser presenta la cualidad como rasgo estable y estar como estado pasajero, y muchos adjetivos admiten las dos lecturas. "Ele é nervoso" describe su carácter (es una persona nerviosa); "Ele está nervoso" describe cómo se siente ahora. Igual con "A sopa é quente" (es un plato caliente por naturaleza) frente a "A sopa está quente" (ahora quema). "Ela é bonita" (es guapa) frente a "Ela está bonita hoje" (hoy está especialmente guapa). Elegir el verbo cambia el mensaje, así que conviene preguntarse si describes esencia o momento.',
+      ],
+    },
+    {
+      heading: '¿Se dice "sou brasileiro" o "estou brasileiro"?',
+      paragraphs: [
+        'Se dice "sou brasileiro", porque la nacionalidad es una identidad permanente y va con ser, nunca con estar. El mismo criterio aplica a la profesión ("sou professor", no "estou professor") y al origen ("sou de Bogotá"). En cambio, la ubicación temporal sí usa estar: "estou no Brasil" (estoy ahora en Brasil). No confundas ser de un país (identidad) con estar en un país (ubicación): "Sou colombiano, mas estou no Brasil".',
+      ],
+    },
   ],
 
   visual: {

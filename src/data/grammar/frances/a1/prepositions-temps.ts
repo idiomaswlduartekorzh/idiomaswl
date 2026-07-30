@@ -50,21 +50,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'À pour les heures: cómo decir la hora en francés',
+      heading: '¿Cómo se dice la hora en francés?',
       paragraphs: [
         '"À" es la preposición para indicar la hora exacta: "Le cours commence à 9 heures" (la clase empieza a las 9), "Je mange à midi" (como a mediodía), "Il arrive à 14h30" (llega a las 14:30).',
         'Palabras especiales del tiempo: midi (mediodía), minuit (medianoche), matin (mañana), après-midi (tarde), soir (noche/tarde-noche), nuit (noche). Con estos: "le matin" / "l\'après-midi" / "le soir" / "la nuit" — sin preposición cuando van solos, pero con "à" cuando hay una hora específica.',
       ],
     },
     {
-      heading: 'Le + día de la semana: habitual vs. específico',
+      heading: '¿Cómo se usan los días de la semana en francés?',
       paragraphs: [
         '"Le" con el día de la semana indica una acción habitual (todos los...): "Le lundi, je travaille" (Los lunes, trabajo). Sin "le", se refiere a un día específico: "Lundi, je travaille" (El lunes [próximo], trabajo).',
         'Los días de la semana en francés: lundi (lunes), mardi (martes), mercredi (miércoles), jeudi (jueves), vendredi (viernes), samedi (sábado), dimanche (domingo). Nunca se escriben con mayúscula.',
       ],
     },
     {
-      heading: 'En pour les mois, les années et les saisons',
+      heading: '¿Cuándo se usa "en" con meses, años y estaciones en francés?',
       paragraphs: [
         '"En" es la preposición multipropósito para el tiempo: meses (en janvier, en août), años (en 2024, en 1990) y tres de las cuatro estaciones: en été (en verano), en automne (en otoño), en hiver (en invierno).',
         'La excepción que todo el mundo debe recordar: "au printemps" (en primavera). "Printemps" es masculino y usa "au" (= à + le). Las otras tres estaciones son femeninas: l\'été, l\'automne, l\'hiver — por eso usan "en".',

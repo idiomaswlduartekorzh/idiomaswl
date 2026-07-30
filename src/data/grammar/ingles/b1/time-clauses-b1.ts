@@ -73,6 +73,24 @@ const topic: GrammarTopic = {
         '"Once" (una vez que) es similar a "when" pero enfatiza la completud de la primera acción: "Once you finish the course, you will receive a certificate." / "Once she had read the report, she called a meeting." En contextos formales, "once" suena más profesional que "when".',
       ],
     },
+    {
+      heading: '¿Se usa el futuro después de "when", "as soon as", "before" en inglés?',
+      paragraphs: [
+        'No. Tras las conjunciones temporales (when, as soon as, before, after, until, while) va el presente, aunque el sentido sea futuro: "When I arrive, I will call you" (no "when I will arrive"). El "will" va solo en la oración principal.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las conjunciones de tiempo más usadas en inglés?',
+      paragraphs: [
+        'when (cuando), while (mientras), before (antes de que), after (después de que), as soon as (en cuanto), until/till (hasta que), since (desde que). Introducen la cláusula temporal, que va en presente cuando el sentido es futuro.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "when" y "while" en inglés?',
+      paragraphs: [
+        '"when" se usa con acciones puntuales o el past simple ("When she arrived, I left"). "while" se usa con acciones largas o el past continuous ("While I was cooking, she called"). While marca simultaneidad de una acción en curso.',
+      ],
+    },
   ],
 
   visual: {

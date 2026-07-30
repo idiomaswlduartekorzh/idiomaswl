@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~と: el condicional de lo natural e inevitable',
+      heading: '¿Por qué ~と es el condicional de lo natural e inevitable?',
       paragraphs: [
         '~と se usa cuando la condición lleva inevitablemente al resultado, sin intervención del hablante. Es ideal para instrucciones de camino ("右に曲がると、公園があります" = si giras a la derecha, hay un parque), leyes de la naturaleza y descubrimientos repentinos.',
         'La restricción más importante: la cláusula principal no puede expresar voluntad, deseo, petición o mandato del hablante. Si necesitas decir "cuando llegues, llámame", usa ~たら, no ~と. Esta regla es lo que distingue ~と de los otros condicionales.',
       ],
     },
     {
-      heading: 'と para descubrimientos: el uso narrativo',
+      heading: '¿Cómo se usa と para descubrimientos en la narración?',
       paragraphs: [
         'En narrativa, ~と expresa que al hacer algo se descubrió o sucedió algo. "玄関を開けると、子供が泣いていた" (cuando abrí la entrada, el niño estaba llorando) — el resultado es inesperado y automático desde la perspectiva narrativa.',
         'Este uso narrativo es muy frecuente en cuentos y descripciones de situaciones: "山を登ると、海が見えた" (cuando subí la montaña, se veía el mar). El tiempo de la cláusula principal suele ser pasado (〜た) cuando se describe un descubrimiento real.',
+      ],
+    },
+    {
+      heading: '¿Por qué ~と no admite órdenes ni peticiones en la segunda parte?',
+      paragraphs: [
+        '~と expresa una consecuencia automática, natural o inevitable: siempre que ocurre A, ocurre B. Se forma con el verbo en forma de diccionario + と: 春になると、桜が咲きます (cuando llega la primavera, florecen los cerezos), このボタンを押すと、ドアが開きます (si pulsas este botón, la puerta se abre). Por su carácter de ley natural o resultado seguro, la segunda parte NO puede ser una orden, petición, invitación ni deseo: 家に帰ると、電話してください es incorrecto (ahí se usa たら). La trampa para el hispanohablante es usar と como un "si" general: と solo vale para relaciones causa-efecto inevitables o repetidas (máquinas, naturaleza, rutas, hábitos). Para condiciones con petición o intención, se usa たら o ば.',
       ],
     },
   ],

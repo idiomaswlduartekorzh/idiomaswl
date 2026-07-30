@@ -48,14 +48,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Que es -(으)ㄹ 거예요 y cuando usarlo',
+      heading: '¿Qué es -(으)ㄹ 거예요 y cuándo se usa?',
       paragraphs: [
         '-(으)ㄹ 거예요 es la forma de futuro mas natural en el coreano conversacional. A diferencia del ingles o el espanol, el coreano no tiene un tiempo verbal futuro propiamente dicho — usa esta construccion para expresar lo que piensas hacer o lo que crees que va a suceder.',
         'La distincion clave es entre intencion (yo decido hacer algo) y prediccion (creo que algo va a pasar). En ambos casos se usa la misma forma: 내년에 한국에 갈 거예요 (el ano que viene voy a ir a Corea / creo que ire a Corea).',
       ],
     },
     {
-      heading: 'La regla de -ㄹ vs -을: segun la raiz',
+      heading: '¿Cuándo se usa -ㄹ y cuándo -을 según la raíz?',
       paragraphs: [
         'La eleccion entre -ㄹ y -을 depende del ultimo elemento de la raiz verbal. Raiz termina en vocal: añades directamente -ㄹ. Raiz termina en ㄹ: el ㄹ ya esta, añades directamente 거예요 (살다 → 살 거예요). Raiz termina en consonante (distinta de ㄹ): añades -을 como vocal de apoyo.',
         'Este patron de vocal de apoyo -으- aparece en muchas otras estructuras del coreano, asi que interiorizarlo ahora te preparara para temas futuros como el condicional y la clausula de relativo.',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preguntas y negaciones en futuro',
+      heading: '¿Cómo se pregunta y se niega en futuro coreano?',
       paragraphs: [
         'Para preguntar sobre planes futuros, añade interrogacion al final: 내일 뭐 할 거예요? (¿Que vas a hacer manana?). Para preguntar de manera directa: 갈 거예요? (¿Vas a ir?).',
         'Para negar intencion la forma mas comun es 안 + verbo base + -(으)ㄹ 거예요: 안 먹을 거예요 (no voy a comer). La forma formal usa -지 않을 거예요: 먹지 않을 거예요.',

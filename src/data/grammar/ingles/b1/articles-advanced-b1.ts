@@ -79,6 +79,24 @@ const topic: GrammarTopic = {
         'Con "the": play + instrumento (she plays the piano, he plays the guitar — a diferencia de sports). The + superlativo: the best, the most interesting, the tallest. The + ordinales: the first chapter, the second floor, the last bus.',
       ],
     },
+    {
+      heading: '¿Cuándo se usa "the" y cuándo no en inglés?',
+      paragraphs: [
+        'Se usa "the" para algo específico o único ("the sun", "the book I bought") y para superlativos ("the best"). NO se usa con sustantivos en sentido general (plurales o incontables): "Cats are independent", "Money isn\'t everything". La trampa: donde el español pone "el/la" con valor general, el inglés lo omite.',
+      ],
+    },
+    {
+      heading: '¿Cuándo NO se usa artículo en inglés?',
+      paragraphs: [
+        'Con sustantivos generales (plurales/incontables): "I like music". Con idiomas, comidas, deportes ("I play tennis"), la mayoría de países y ciudades ("in France"), y expresiones como "go to school/bed/work" (la actividad, no el edificio). También con "breakfast/lunch/dinner".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "the" con nombres geográficos?',
+      paragraphs: [
+        'Se usa "the" con océanos, mares y ríos (the Atlantic, the Nile), cadenas montañosas (the Alps), grupos de islas y países plurales o con "of" (the USA, the UK, the Netherlands). NO se usa con países, ciudades, lagos y montañas individuales (Spain, Madrid, Lake Titicaca, Mount Everest).',
+      ],
+    },
   ],
 
   visual: {

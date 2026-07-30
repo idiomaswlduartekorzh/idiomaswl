@@ -67,6 +67,32 @@ const topic: GrammarTopic = {
         'En el portugués brasileño coloquial, a veces la negación aparece al final: "Falo não" pero en A1 es mejor aprender la forma estándar: não + verbo.',
       ],
     },
+    {
+      heading: '¿Cómo se conjugan los verbos en -ar en presente?',
+      paragraphs: [
+        'Se quita la terminación -ar y se añaden -o/-as/-a/-amos/-am al radical. El patrón es idéntico para todos los verbos regulares de este grupo, que son la mayoría del idioma. Esta tabla muestra cuatro verbos frecuentes conjugados en paralelo:',
+      ],
+      table: [
+        ['Persona', 'falar', 'estudar', 'trabalhar', 'morar'],
+        ['eu', 'falo', 'estudo', 'trabalho', 'moro'],
+        ['tu', 'falas', 'estudas', 'trabalhas', 'moras'],
+        ['você/ele/ela', 'fala', 'estuda', 'trabalha', 'mora'],
+        ['nós', 'falamos', 'estudamos', 'trabalhamos', 'moramos'],
+        ['vocês/eles', 'falam', 'estudam', 'trabalham', 'moram'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre la conjugación -ar del portugués y del español?',
+      paragraphs: [
+        'Casi ninguna, salvo dos detalles ortográficos: la 3ª persona plural termina en -am, no en -an ("eles falam" = ellos hablan), y la vocal de nós es -amos igual que en español (falamos). El resto de terminaciones coinciden. La trampa real no está en el paradigma sino en você: aunque significa "tú", se conjuga en 3ª persona (você fala), así que nunca lleva la -s de segunda persona.',
+      ],
+    },
+    {
+      heading: '¿Cómo se niega un verbo en portugués?',
+      paragraphs: [
+        'Basta con poner "não" delante del verbo conjugado: "Eu não trabalho hoje" (hoy no trabajo), "Ela não fala inglês" (ella no habla inglés). No hay auxiliar como en inglés (no "do not"), es la misma mecánica del español. En el habla brasileña muy informal existe la doble negación o el "não" al final ("Falo não"), pero para escribir y para el examen se usa siempre não + verbo.',
+      ],
+    },
   ],
   visual: {
     mode: 'verb-conjugation',

@@ -64,6 +64,32 @@ const topic: GrammarTopic = {
         'Bom/boa/bons/boas (bueno) y mau/má/maus/más (malo) son los irregulares más importantes. Grande es regular pero no cambia de género: um grande professor, uma grande professora. En plural: grandes professores. Recuerda que "grande" antes del sustantivo tiene sentido de "gran/importante".',
       ],
     },
+    {
+      heading: '¿Cómo concuerdan los adjetivos en portugués?',
+      paragraphs: [
+        'El adjetivo copia el género y el número del sustantivo. Los acabados en -o tienen cuatro formas; los acabados en -e o en consonante suelen ser invariables en género y solo cambian en plural. Esta tabla muestra los tres patrones y sus irregulares clave:',
+      ],
+      table: [
+        ['Tipo', 'Masc. sg', 'Fem. sg', 'Masc. pl', 'Fem. pl'],
+        ['-o / -a', 'bonito', 'bonita', 'bonitos', 'bonitas'],
+        ['-e (invariable)', 'inteligente', 'inteligente', 'inteligentes', 'inteligentes'],
+        ['-or / -ora', 'trabalhador', 'trabalhadora', 'trabalhadores', 'trabalhadoras'],
+        ['bom (irregular)', 'bom', 'boa', 'bons', 'boas'],
+        ['mau (irregular)', 'mau', 'má', 'maus', 'más'],
+      ],
+    },
+    {
+      heading: '¿El adjetivo va antes o después del sustantivo en portugués?',
+      paragraphs: [
+        'La posición normal es después: "uma casa bonita", "um problema difícil", igual que en español. Colocarlo delante añade matiz subjetivo o afectivo: "uma grande cidade" (una gran ciudad, importante) frente a "uma cidade grande" (una ciudad de gran tamaño). En A1 la regla segura es posponerlo; solo bom, grande y algún otro muy frecuente se anteponen con naturalidad ("um bom aluno" = "um aluno bom").',
+      ],
+    },
+    {
+      heading: '¿Se dice "um bom aluno" o "um boa aluno"?',
+      paragraphs: [
+        'Se dice "um bom aluno", porque aluno es masculino y el irregular bom concuerda con él; en femenino sería "uma boa aluna". El error de mezclar bom/boa es de los más comunes porque en español "buen/buena" funciona parecido, pero conviene fijar el paradigma: bom/boa/bons/boas. Lo mismo con su opuesto mau/má/maus/más. El resto de adjetivos siguen los patrones regulares -o/-a o -e invariable.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-table',

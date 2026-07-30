@@ -46,7 +46,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El genitivo con нет en ruso',
+      heading: '¿Por qué нет exige el caso genitivo?',
       paragraphs: [
         'Uno de los usos más frecuentes del genitivo es con нет (no hay / no tengo). La estructura У меня нет + genitivo es equivalente a "yo no tengo". Por ejemplo: У меня нет денег (no tengo dinero), У него нет машины (él no tiene coche).',
         'En el pasado, нет se convierte en не было + genitivo, y en el futuro en не будет + genitivo. Esta regla es constante: después de нет/не было/не будет siempre va genitivo.',
@@ -59,10 +59,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Palabras de cantidad + genitivo',
+      heading: '¿Qué palabras de cantidad piden genitivo?',
       paragraphs: [
         'Las palabras много (mucho), мало (poco), несколько (varios/algunos), сколько (cuánto) siempre rigen genitivo plural. Ejemplos: Много студентов (muchos estudiantes), Мало денег (poco dinero), Несколько книг (varios libros).',
         'Los números también rigen genitivo: 2-4 piden genitivo singular (два студента, три книги), y 5 en adelante piden genitivo plural (пять студентов, шесть книг).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forman las terminaciones del genitivo singular?',
+      paragraphs: [
+        'En singular: los masculinos y neutros toman -а/-я (стол→стола, музей→музея, окно→окна, море→моря); los femeninos en -а/-я toman -ы/-и (мама→мамы, книга→книги por regla ortográfica tras к, неделя→недели); los femeninos en -ь toman -и (тетрадь→тетради). Los pronombres tienen formas propias: меня, тебя, его, её, нас, вас, их.',
+        'La trampa para el hispanohablante es doble: recordar que el genitivo no solo indica posesión ("de"), sino que lo exigen нет (нет времени = no hay tiempo), las palabras de cantidad (много воды = mucha agua) y los números 2-4 (singular) y 5+ (plural). Sin dominar sus terminaciones no se pueden construir estas estructuras tan frecuentes.',
       ],
     },
   ],

@@ -61,14 +61,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Primera conjugación: verbos en -ать/-ять',
+      heading: '¿Cómo se conjuga la primera conjugación (-ать/-ять)?',
       paragraphs: [
         'Los verbos más frecuentes del A1 pertenecen a la primera conjugación: работать (trabajar), читать (leer), знать (saber/conocer), понимать (entender), думать (pensar), слушать (escuchar).',
         'Para conjugarlos, quita la terminación -ть del infinitivo y añade: -ю, -ешь, -ет, -ем, -ете, -ют. Ejemplo: работа- + -ю = работаю (yo trabajo).',
       ],
     },
     {
-      heading: 'Segunda conjugación: verbos en -ить/-еть',
+      heading: '¿Cómo se conjuga la segunda conjugación (-ить/-еть)?',
       paragraphs: [
         'Los verbos más importantes de la segunda conjugación: говорить (hablar), учить (aprender/enseñar), любить (amar/gustar), смотреть (mirar), видеть (ver).',
         'Las terminaciones son: -ю, -ишь, -ит, -им, -ите, -ят. Hay que prestar atención a las alternancias consonánticas en la forma "yo": любить → люблю (б + л), смотреть → смотрю, видеть → вижу.',

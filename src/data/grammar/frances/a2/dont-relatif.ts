@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Qui y que: la diferencia clave',
+      heading: '¿Cuál es la diferencia entre qui y que en francés?',
       paragraphs: [
         'La confusión más frecuente es entre qui y que. La clave es la función del pronombre en la oración relativa: si es el sujeto del verbo relativo (quien hace la acción), se usa qui: "Le garçon qui joue" (el chico que juega — qui es el sujeto de joue). Si es el complemento directo (COD), se usa que/qu\': "Le film que j\'ai vu" (la película que vi — que es el COD de ai vu).',
         'Truco: si después del relativo viene directamente un verbo conjugado con sujeto propio → que. Si viene el verbo sin sujeto expresado → qui. "Le chat que tu vois" (tu = sujeto → que) vs "Le chat qui dort" (qui = sujeto → qui).',
       ],
     },
     {
-      heading: 'Dont: reemplazar de + sustantivo',
+      heading: '¿Cuándo se usa "dont" en francés?',
       paragraphs: [
         'Dont se usa cuando el verbo de la relativa exige la preposición de (avoir besoin de, parler de, se souvenir de, être content de, etc.): "Le livre dont j\'ai besoin" = j\'ai besoin du livre → dont. "L\'ami dont je parle" = je parle de mon ami → dont. También para complementos del nombre con de: "La femme dont j\'admire le travail" (cuyo trabajo admiro).',
         'Où reemplaza un complemento de lugar (la ciudad, la casa, el barrio donde...) o un momento en el tiempo: "La ville où j\'habite" / "L\'année où tu es né" / "Le café où on se retrouve toujours".',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los pronombres relativos en francés?',
+      paragraphs: [
+        'Son las palabras que unen dos frases refiriéndose a un antecedente: qui (sujeto: "l\'homme qui parle"), que (COD: "le film que j\'ai vu"), où (lugar o tiempo: "la ville où je vis", "le jour où…") y dont (reemplaza a "de + algo": "le livre dont je parle" = hablo DE ese libro). La gran novedad para el hispanohablante es "dont", que condensa "de qui / de quoi / duquel" en una sola palabra y no tiene traducción única en español: equivale a "cuyo", "del que" o "de quien" según el caso ("la femme dont le fils…" = la mujer cuyo hijo…). Elegir bien entre qui y que es fácil: qui va seguido del verbo (es sujeto), que va seguido de un sujeto nuevo (es objeto).',
       ],
     },
   ],

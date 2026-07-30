@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-기로 하다 vs -(으)려고 하다 vs -게 되다',
+      heading: '¿Cuál es la diferencia entre -기로 하다, -(으)려고 하다 y -게 되다?',
       paragraphs: [
         '-기로 했어요: decisión firme y consciente, ya tomada. 한국에 가기로 했어요. (Decidí ir a Corea — está decidido.)',
         '-(으)려고 해요: intención que se está considerando o en proceso. 한국에 가려고 해요. (Tengo pensado / Estoy planeando ir a Corea.)',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Negación: -지 않기로 하다 / -지 말기로 하다',
+      heading: '¿Cómo se niega con -기로 하다 en coreano?',
       paragraphs: [
         'Para expresar la decisión de NO hacer algo, se usa -지 않기로 하다: 술을 마시지 않기로 했어요. (Decidí no beber alcohol.) Muy común en resoluciones y compromisos.',
         'También se usa -지 말기로 하다 en propuestas o acuerdos: 앞으로는 늦지 말기로 해요. (De ahora en adelante, acordemos no llegar tarde.) -지 말다 es la forma imperativa negativa nominalizada.',

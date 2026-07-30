@@ -71,6 +71,35 @@ const topic: GrammarTopic = {
         '"O que" pregunta por la definición o naturaleza de algo: O que é isso? (¿Qué es eso?). "Qual" pregunta por la elección entre opciones: Qual é o seu nome? (¿Cuál es tu nombre?). Esta distinción es similar al inglés what/which y es importante dominarla en portugués.',
       ],
     },
+    {
+      heading: '¿Cuáles son las palabras interrogativas en portugués?',
+      paragraphs: [
+        'Son ocho básicas, casi todas transparentes para el hispanohablante salvo "o que" (que se dice completo, no solo "que"). Esta tabla las reúne con su traducción y un ejemplo listo para usar:',
+      ],
+      table: [
+        ['Interrogativo', 'Español', 'Ejemplo'],
+        ['o que', 'qué', 'O que você quer?'],
+        ['quem', 'quién', 'Quem é você?'],
+        ['onde', 'dónde', 'Onde você mora?'],
+        ['quando', 'cuándo', 'Quando começa a aula?'],
+        ['como', 'cómo', 'Como você está?'],
+        ['por que', 'por qué', 'Por que você estuda?'],
+        ['quanto/a/os/as', 'cuánto/a', 'Quantos anos você tem?'],
+        ['qual / quais', 'cuál / cuáles', 'Qual é o seu nome?'],
+      ],
+    },
+    {
+      heading: '¿Cómo se hace una pregunta en portugués?',
+      paragraphs: [
+        'Para una pregunta de sí/no basta subir la entonación al final, sin invertir sujeto y verbo: "Você fala inglês?" (¿hablas inglés?), exactamente como en español. Para preguntas abiertas se antepone la palabra interrogativa: "Onde você mora?", "O que você faz?". El portugués brasileño casi nunca invierte el orden (no dice "Fala você inglês?"), a diferencia del portugués europeo, más formal, donde la inversión sí aparece. Por eso las preguntas son de lo más fácil para el hispanohablante.',
+      ],
+    },
+    {
+      heading: '¿Se escribe "por que", "porque", "por quê" o "porquê"?',
+      paragraphs: [
+        'Las cuatro existen y se distinguen como en español (por qué / porque), más dos variantes con tilde: "Por que" (separado, sin tilde) inicia la pregunta — "Por que você estuda?". "Porque" (junto) da la respuesta — "Estudo porque gosto". "Por quê" (separado, con tilde) va al final de frase — "Você não veio, por quê?". "Porquê" (junto, con tilde) es un sustantivo — "Não sei o porquê disso" (no sé el motivo). En A1 basta dominar las dos primeras; las de tilde se reconocen al leer.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-pattern',

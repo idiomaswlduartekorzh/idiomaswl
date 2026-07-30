@@ -22,9 +22,9 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es 사동사 (causativa)?', paragraphs: ['사동사 es la voz causativa coreana: expresa hacer que alguien haga algo. "El padre hace que el hijo estudie" en lugar de "El hijo estudia".', 'Se usa en narrativa, instrucciones y expresión de acciones causadas.']},
-    {heading: 'Formación con -게 하다', paragraphs: ['-게 하다 es la forma más común: verbo + -게 하다. 먹다 → 먹게 해요 (hacer que coma).', 'Otros ejemplos: 공부하다 → 공부하게 해요, 읽다 → 읽게 해요.']},
+    {heading: '¿Cómo se forma la causativa con -게 하다 en coreano?', paragraphs: ['-게 하다 es la forma más común: verbo + -게 하다. 먹다 → 먹게 해요 (hacer que coma).', 'Otros ejemplos: 공부하다 → 공부하게 해요, 읽다 → 읽게 해요.']},
     {heading: '사동사 en narrativa familiar y académica', paragraphs: ['"엄마가 아이를 먹게 해요" (la mamá hace que el niño coma). "선생님이 학생들을 공부하게 해요" (el profesor hace que los estudiantes estudien).', 'Común en instrucciones, historias, descripción de responsabilidades.']},
-    {heading: 'Complemento directo y agente en causativa', paragraphs: ['El objeto causado es marcado por -을/를: "아이를 먹게 해요" (hacer que el niño coma).', 'El agente de la acción causada puede ir con -에게: "아이에게 먹게 해요" (hacer que el niño coma — más directo).']},
+    {heading: '¿Cómo funcionan el objeto y el agente en la causativa coreana?', paragraphs: ['El objeto causado es marcado por -을/를: "아이를 먹게 해요" (hacer que el niño coma).', 'El agente de la acción causada puede ir con -에게: "아이에게 먹게 해요" (hacer que el niño coma — más directo).']},
     {heading: 'Expresión de permiso: -게 해 주다 (dejar que, permitir)', paragraphs: ['"가게 해 주세요" (déjame ir — permiso). -게 해 주다 combina causativa + "dar" para expresar permiso amable.', '"-게 하지 말다" (no dejes que, impide que) expresa prohibición causada.']},
   ],
   visual: {mode: 'scene', teacherLens: '사동사 (causativa): alguien hace que otro haga vs 능동사 (activa)', graphicPrompt: 'Tabla: 사동사 (causativa) vs 능동사 (activa). Ejemplo comparativo.', scene: [['엄마가 아이를 먹게 해요.', 'La mamá hace que el niño coma.'], ['선생님이 학생들을 읽게 해요.', 'El profesor hace que los estudiantes lean.'], ['아버지가 나를 공부하게 해요.', 'Mi padre me hace estudiar.'], ['언니가 내 친구를 만나게 해 줬어요.', 'Mi hermana permitió que conociera a mi amigo.'], ['아이들을 뛰게 해요.', 'Hago que los niños corran.']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['원인', '피행위자', '사동 형태']},

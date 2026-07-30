@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '～なければならない: la obligacion en japones A2',
+      heading: '¿Cómo se expresa la obligación con ～なければならない?',
       paragraphs: [
         '～なければなりません es la forma de expresar obligacion en japones A2. Se construye a partir de la forma negativa del verbo: 行く→行かない, quitas el い final y agregas ければなりません: 行かなければなりません. Para Grupo 2: 食べる→食べない→食べなければなりません.',
         'La variante ～なくてはいけません es igualmente correcta y comun: 行かなくてはいけません. En habla coloquial se abrevia mucho: ～なきゃ o ～なくちゃ.',
       ],
     },
     {
-      heading: 'Diferencia entre las formas de obligacion',
+      heading: '¿Qué diferencia hay entre なければならない, なくてはいけない y なきゃ?',
       paragraphs: [
         '～なければならない y ～なくてはいけない son practicamente sinonimas en A2. La primera es ligeramente mas formal. En la escritura academica o noticias se usa ～なければならない; en la conversacion cotidiana ambas son igualmente frecuentes.',
         'Para la negacion de la obligacion (no es necesario), usa ～なくてもいいです: 行かなくてもいいです = No tienes que ir (no es necesario). Esta forma es la negacion semantica, no gramatical.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma なければならない a partir del verbo?',
+      paragraphs: [
+        'Se parte de la forma negativa plana del verbo (ない), se le quita い y se añade ければならない: 行く→行かない→行かなければならない (tengo que ir); 食べる→食べない→食べなければならない. La idea literal es "si no lo hago, no va bien", de ahí el sentido de obligación. Hay variantes de registro: なければなりません es la cortés; なくてはいけない es casi sinónima; y en conversación se contrae mucho a なきゃ (行かなきゃ) o なくちゃ (行かなくちゃ). La trampa para el hispanohablante es la longitud y el doble negativo de la construcción: conviene memorizar el bloque ~なければならない completo y reconocer que なきゃ/なくちゃ son la misma obligación en tono casual, no algo distinto.',
       ],
     },
   ],

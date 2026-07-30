@@ -77,6 +77,24 @@ const topic: GrammarTopic = {
         'Break down: (máquina) averiarse ("My car broke down on the highway"), (persona) tener un colapso emocional, descomponerse en partes para analizar. Run out of: quedarse sin algo ("We\'ve run out of milk"). Come up with: idear/proponer ("She came up with a brilliant solution").',
       ],
     },
+    {
+      heading: '¿Qué son los phrasal verbs en inglés?',
+      paragraphs: [
+        'Son combinaciones de verbo + partícula (adverbio o preposición) cuyo significado suele ser distinto del verbo solo: "give up" (rendirse), "look after" (cuidar), "turn on" (encender). Son muy frecuentes en el inglés cotidiano y conviene aprenderlos como una unidad.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre phrasal verbs separables e inseparables?',
+      paragraphs: [
+        'En los separables, el objeto puede ir en medio: "turn the light on" / "turn on the light"; y con pronombre es obligatorio en medio: "turn it on" (no "turn on it"). En los inseparables, verbo y partícula no se separan: "look after the kids", "look after them".',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los phrasal verbs más comunes en inglés?',
+      paragraphs: [
+        'get up (levantarse), turn on/off (encender/apagar), look for (buscar), look after (cuidar), give up (rendirse), find out (averiguar), take off (despegar/quitarse), put on (ponerse), come back (volver), grow up (crecer).',
+      ],
+    },
   ],
 
   visual: {

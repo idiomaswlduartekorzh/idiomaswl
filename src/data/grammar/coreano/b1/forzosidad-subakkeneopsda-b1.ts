@@ -22,8 +22,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es -수밖에 없다?', paragraphs: ['-수밖에 없다 expresa que algo es inevitable: "no hay alternativa", "sin remedio". Es más fuerte que -어야 하다.', 'Se usa cuando las circunstancias dejan sin opción: "mi trabajo es duro, no hay más remedio que continuar".']},
-    {heading: '-수밖에 없다 en situaciones cotidianas', paragraphs: ['Trabajo: "돈이 없으니 일할 수밖에 없어요" (sin dinero, no hay más remedio que trabajar).', 'Familia: "그렇게 할 수밖에 없었어요" (no tuve más opción que hacer eso). Escuela: "시험을 봐야 될 수밖에 없어요" (inevitablemente debo hacer el examen).']},
-    {heading: '-수밖에 없다 vs -어야 하다 (forzosidad vs obligación)', paragraphs: ['-수밖에 없다: "돈이 없어서 일할 수밖에 없어요" (sin dinero = sin alternativa, inevitablemente trabajo).', '-어야 하다: "일해야 해요" (tengo que trabajar — pero puedo elegir no hacerlo). -수밖에 없다 es más fuerte.']},
+    {heading: '¿Cómo se usa -(으)ㄹ 수밖에 없다 en el día a día?', paragraphs: ['Trabajo: "돈이 없으니 일할 수밖에 없어요" (sin dinero, no hay más remedio que trabajar).', 'Familia: "그렇게 할 수밖에 없었어요" (no tuve más opción que hacer eso). Escuela: "시험을 봐야 될 수밖에 없어요" (inevitablemente debo hacer el examen).']},
+    {heading: '¿Cuál es la diferencia entre -수밖에 없다 y -어야 하다?', paragraphs: ['-수밖에 없다: "돈이 없어서 일할 수밖에 없어요" (sin dinero = sin alternativa, inevitablemente trabajo).', '-어야 하다: "일해야 해요" (tengo que trabajar — pero puedo elegir no hacerlo). -수밖에 없다 es más fuerte.']},
     {heading: 'Expresión de resignación y inevitabilidad', paragraphs: ['-수밖에 없다 implica resignación: algo que no querías pero es inevitable. "그럴 수밖에" (no hay más remedio) es muy usado en conversación.', 'Narrativa pasada: "그렇게 할 수밖에 없었어요" (no tuve opción, fue inevitable).']},
     {heading: 'Con negación: -을 수밖에 없다 (inevitabilemente) y 밖에 no (nada más que)', paragraphs: ['"밖에 없다" también puede significar "solo/nada más que": "돈이 10만원밖에 없어요" (solo tengo 100K de dinero).', '-수밖에 없다 enfatiza inevitabilidad en contexto de obligación.']},
   ],

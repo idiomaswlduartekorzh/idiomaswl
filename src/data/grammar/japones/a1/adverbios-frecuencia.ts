@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'あまり y 全然: los adverbios negativos del japonés',
+      heading: '¿Cómo se usan あまり y 全然 en japonés?',
       paragraphs: [
         'La regla más importante de los adverbios de frecuencia en japonés: あまり (amari) y 全然 (zenzen) son adverbios de POLARIDAD NEGATIVA. Esto significa que gramaticalmente requieren que el verbo esté en forma negativa. En español decimos "no como mucho" — en japonés el "no" ya está implícito en あまり: あまり 食べません (literalmente "mucho no-como" = "no como mucho").',
         'Este concepto no existe en español, donde "mucho" puede ir con formas afirmativas o negativas. En japonés, usar あまり con una forma afirmativa (あまり 食べます) es gramaticalmente incorrecto. Aprende esto desde A1 y evitarás un error que cometen incluso estudiantes intermedios.',
       ],
     },
     {
-      heading: 'Posición de los adverbios de frecuencia en la oración japonesa',
+      heading: '¿Dónde se colocan los adverbios de frecuencia en japonés?',
       paragraphs: [
         'Los adverbios de frecuencia en japonés son bastante flexibles en su posición. Pueden ir al inicio de la frase (antes del tema): いつも わたしは べんきょうします. O pueden ir directamente antes del verbo: わたしは いつも べんきょうします. Ambas posiciones son correctas, aunque la segunda es más natural en conversación.',
         'A diferencia del inglés (donde "always" va entre sujeto y verbo) o del español (donde puede ir en muchas posiciones), en japonés el adverbio de frecuencia NUNCA va entre el objeto y la partícula を. La estructura correcta es: [tema]は + [adverbio] + [objeto]を + [verbo] o [adverbio] + [tema]は + [objeto]を + [verbo].',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los adverbios de frecuencia en japonés?',
+      paragraphs: [
+        'Los más usados en A1, de más a menos frecuente: いつも (itsumo, siempre), よく (yoku, a menudo), ときどき (tokidoki, a veces), たまに (tama ni, de vez en cuando), あまり (amari, no mucho) y ぜんぜん (zenzen, para nada). La gran trampa para el hispanohablante es que あまり y ぜんぜん SIEMPRE exigen verbo en negativo: あまり食べません (no como mucho), ぜんぜん分かりません (no entiendo nada). Nunca se usan con verbo afirmativo. Los demás (いつも, よく, ときどき) van con verbo afirmativo. El adverbio se coloca normalmente antes del verbo, tras el sujeto y sus partículas.',
       ],
     },
   ],

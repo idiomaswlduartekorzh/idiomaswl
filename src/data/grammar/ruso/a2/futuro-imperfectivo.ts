@@ -61,10 +61,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar el futuro imperfectivo',
+      heading: '¿Cuándo se usa el futuro imperfectivo?',
       paragraphs: [
         'El futuro imperfectivo con буду + infinitivo es adecuado cuando la acción futura es un proceso ("estaré trabajando"), una rutina futura ("voy a leer todos los días") o cuando no importa si se completa.',
         'En contraste, cuando el resultado futuro es importante ("voy a terminar el libro"), se usa el futuro perfectivo (прочитаю, сделаю). Palabras como завтра (mañana), скоро (pronto), часто (frecuentemente) suelen acompañar al futuro imperfectivo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el futuro imperfectivo con быть?',
+      paragraphs: [
+        'El futuro imperfectivo es analítico (dos palabras): se conjuga быть en futuro (буду, будешь, будет, будем, будете, будут) y se le añade el INFINITIVO imperfectivo. Я буду читать (leeré / estaré leyendo), Мы будем работать (trabajaremos), Они будут отдыхать (descansarán).',
+        'La trampa para el hispanohablante es querer conjugar el verbo principal: no se dice "буду читаю", sino буду + читать (infinitivo). Solo быть se conjuga; el verbo léxico queda en infinitivo. Este futuro expresa acciones en proceso, duraderas o repetidas, no un resultado único.',
       ],
     },
   ],

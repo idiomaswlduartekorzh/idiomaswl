@@ -68,6 +68,32 @@ const topic: GrammarTopic = {
         'El superlativo absoluto de estos irregulares es diferente: ótimo/a (buenísimo), péssimo/a (malísimo), máximo/a (grandísimo/máximo), mínimo/a (pequeñísimo/mínimo). Estas formas también se usan como adjetivos independientes: "A comida está ótima!" (¡La comida está buenísima!)',
       ],
     },
+    {
+      heading: '¿Cómo se forman los comparativos y superlativos en portugués?',
+      paragraphs: [
+        'El comparativo usa mais/menos/tão + adjetivo + do que/quanto; el superlativo relativo antepone el artículo (o/a mais…de) y el absoluto añade el sufijo -íssimo/a o un adverbio de intensidad. Esta tabla resume las estructuras con un ejemplo cada una:',
+      ],
+      table: [
+        ['Grado', 'Estructura', 'Ejemplo'],
+        ['Superioridad', 'mais + adj + do que', 'Ela é mais alta do que eu.'],
+        ['Inferioridad', 'menos + adj + do que', 'É menos caro do que aquele.'],
+        ['Igualdad', 'tão + adj + quanto/como', 'Ele é tão alto quanto ela.'],
+        ['Superlativo relativo', 'o/a mais + adj + de', 'É a mais bonita da turma.'],
+        ['Superlativo absoluto', 'adj + -íssimo/a', 'A praia está limpíssima.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se dicen los comparativos irregulares en portugués?',
+      paragraphs: [
+        'Cuatro adjetivos muy frecuentes tienen comparativo propio y rechazan la forma con "mais": bom → melhor (no "mais bom"), mau/ruim → pior (no "mais ruim"), grande → maior (no "mais grande"), pequeno → menor (no "mais pequeno"). Su superlativo absoluto también es irregular: ótimo, péssimo, máximo, mínimo. El error clásico del hispanohablante es decir "mais melhor" o "mais grande"; basta usar la forma irregular sola: "É melhor", "É maior".',
+      ],
+    },
+    {
+      heading: '¿Qué significa el sufijo -íssimo en portugués?',
+      paragraphs: [
+        'Es el superlativo absoluto: equivale a "muy + adjetivo" y expresa el grado máximo sin comparar con nada. "Caríssimo" = carísimo (muy caro), "gostosíssimo" = riquísimo, "limpíssima" = limpísima. Concuerda en género y número con el sustantivo (caríssima, caríssimos). Algunos cambian la raíz: bom → ótimo (no "boníssimo"), fácil → facílimo, difícil → dificílimo. Es un rasgo muy vivo del portugués brasileño hablado, donde se prefiere "-íssimo" a "muito + adjetivo" para dar énfasis.',
+      ],
+    },
   ],
 
   visual: {

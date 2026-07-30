@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Verbos de raíz fuerte: solo cambian en du y er/sie/es',
+      heading: '¿Qué son los verbos de raíz fuerte en alemán?',
       paragraphs: [
         'En alemán, los verbos de raíz fuerte (starke Verben) modifican la vocal del radical únicamente en 2.ª persona singular (du) y 3.ª persona singular (er/sie/es). Ninguna otra persona sufre el cambio. Este es un punto crucial: "ich spreche" es completamente regular, pero "er spricht" cambia la e por i.',
         'Existen tres patrones principales en A1: e→i (sprechen, essen, nehmen, geben), e→ie (lesen, sehen, empfehlen) y a→ä (fahren, schlafen, tragen). Memorizar el grupo al que pertenece cada verbo facilita la conjugación.',
       ],
     },
     {
-      heading: 'Patrón e→i: sprechen, essen, nehmen, geben',
+      heading: '¿Cómo funciona el cambio vocálico e→i en alemán?',
       paragraphs: [
         'Sprechen (hablar): ich spreche, du sprichst, er/sie spricht, wir sprechen, ihr sprecht, sie sprechen. Essen (comer): ich esse, du isst, er isst, wir essen, ihr esst, sie essen. Nehmen (tomar/coger): ich nehme, du nimmst, er nimmt.',
         'Geben (dar): ich gebe, du gibst, er gibt. Nota: en "essen" la doble -ss en du/er se debe a la vocal breve anterior a la -ss (regla ortográfica alemana). En nehmen ocurre además una consonante geminada: nimm-.',
       ],
     },
     {
-      heading: 'Patrón e→ie y a→ä',
+      heading: '¿Qué verbos cambian e→ie y a→ä en alemán?',
       paragraphs: [
         'E→ie: lesen (leer) → du liest, er liest; sehen (ver) → du siehst, er sieht. La ie es un sonido largo — no confundir con i breve del patrón anterior. Empfehlen (recomendar) → du empfiehlst, er empfiehlt.',
         'A→ä: fahren (conducir/ir en vehículo) → du fährst, er fährt; schlafen (dormir) → du schläfst, er schläft; tragen (llevar/cargar) → du trägst, er trägt. La diéresis (Umlaut) sobre la a indica la vocal modificada.',

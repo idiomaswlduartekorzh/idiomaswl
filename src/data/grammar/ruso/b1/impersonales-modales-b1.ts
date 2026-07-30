@@ -40,9 +40,9 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué son construcciones impersonales?', paragraphs: ['Construcciones impersonales (безличные конструкции) no tienen sujeto nominativo. En lugar de "Я могу идти", en ruso es más natural "Можно (идти)?".', 'Muy comunes, especialmente con modales: можно, нельзя, нужно, надо.']},
-    {heading: 'Можно: posibilidad y permiso', paragraphs: ['"Можно пойти?" (¿Puedo ir? — permiso). "Здесь можно курить" (aquí se puede fumar — posibilidad).' , 'Sin sujeto; el dativo opcional expresa a quién le afecta.']},
+    {heading: '¿Cómo expresa можно posibilidad y permiso?', paragraphs: ['"Можно пойти?" (¿Puedo ir? — permiso). "Здесь можно курить" (aquí se puede fumar — posibilidad).' , 'Sin sujeto; el dativo opcional expresa a quién le afecta.']},
     {heading: 'Нельзя: prohibición', paragraphs: ['"Здесь нельзя курить" (aquí no se puede fumar — prohibición). "Ему нельзя есть мясо" (no puede comer carne — prohibición personal).', 'Opuesto a можно.']},
-    {heading: 'Нужно/надо: necesidad y obligación', paragraphs: ['"Мне нужно работать" (me es necesario trabajar). "Нам надо идти" (nos hace falta ir). Casi intercambiables; надо es más coloquial.', 'Requieren dativo + infinitivo.']},
+    {heading: '¿Cómo expresan нужно y надо la necesidad y la obligación?', paragraphs: ['"Мне нужно работать" (me es necesario trabajar). "Нам надо идти" (nos hace falta ir). Casi intercambiables; надо es más coloquial.', 'Requieren dativo + infinitivo.']},
     {heading: 'Жаль: lástima', paragraphs: ['"Мне жаль" (me da lástima/me da pena). "Мне жаль, что ты уехал" (me da lástima que te hayas ido).', 'Expresión de sentimiento impersonal.']},
   ],
   visual: {mode: 'scene', teacherLens: 'Impersonales modales: sin sujeto nominativo', graphicPrompt: 'Tabla: Modales impersonales y sus significados', scene: [['Можно пойти?', '¿Puedo ir? (permiso)'], ['Здесь нельзя курить.', 'No se puede fumar (prohibición).'], ['Мне нужно работать.', 'Me es necesario trabajar (necesidad).'], ['Нам надо идти.', 'Tenemos que ir (obligación).'], ['Мне жаль, что ты ушла.', 'Me da pena que te hayas ido (lástima).']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['безличный', 'модальность', 'дательный']},

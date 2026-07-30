@@ -66,14 +66,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Ser vs. estar: una sola forma en francés',
+      heading: '¿Être significa "ser" o "estar" en francés?',
       paragraphs: [
         'En español distinguimos "soy médico" (ser, identidad permanente) de "estoy cansado" (estar, estado temporal). En francés, être cubre ambas funciones: Je suis médecin (soy médico) y Je suis fatigué (estoy cansado).',
         'Esto simplifica mucho el aprendizaje: no hay que decidir cuándo usar "ser" o "estar". Être sirve para todo: identidad, profesión, nacionalidad, descripción física, estados de ánimo y ubicación.',
       ],
     },
     {
-      heading: 'Être en negaciones e interrogaciones',
+      heading: '¿Cómo se niega y se pregunta con être en francés?',
       paragraphs: [
         'Para la negación, se envuelve el verbo entre ne... pas: Je ne suis pas français. / Elle n\'est pas à la maison (n\' antes de vocal). En el habla coloquial, el "ne" a menudo se omite: Je suis pas français.',
         'Para preguntas en A1, usa Est-ce que... + orden normal: Est-ce que tu es étudiant? / Est-ce qu\'il est là? También puedes invertir: Es-tu étudiant? / Êtes-vous français? (más formal).',

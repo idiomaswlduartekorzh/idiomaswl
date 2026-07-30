@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El sistema honorífico coreano: por qué y cómo',
+      heading: '¿Qué es el sistema honorífico coreano?',
       paragraphs: [
         'El coreano tiene un sistema honorífico obligatorio. Cuando el sujeto de la oración es una persona mayor o de mayor rango social que el hablante, hay que usar formas especiales. El nivel A2 incluye dos mecanismos principales: (1) el sufijo -(으)시- que transforma el verbo ordinario en honorífico, y (2) verbos completamente diferentes para acciones básicas.',
         '"아버지가 왔어요" (mi padre llegó — habla casual) vs "아버지께서 오셨어요" (mi padre llegó — honorífico). La diferencia no es opcional: usar la forma ordinaria cuando se debe usar la honorífica se percibe como una falta grave de educación.',
       ],
     },
     {
-      heading: 'Verbos especiales y vocabulario honorífico',
+      heading: '¿Cuáles son los verbos honoríficos especiales del coreano?',
       paragraphs: [
         'Los verbos especiales más importantes: 드시다/잡수시다 (comer honorífico, en lugar de 먹다), 주무시다 (dormir, en lugar de 자다), 계시다 (estar, en lugar de 있다), 돌아가시다 (morir, en lugar de 죽다). El vocabulario también cambia: 밥 → 진지 (comida), 집 → 댁 (casa), 나이 → 연세 (edad), 말 → 말씀 (palabras/discurso).',
         '"성함이 어떻게 되세요?" (¿Cómo se llama usted?) usa 성함 (nombre honorífico) en lugar de 이름. Estas formas se usan al hablar CON la persona mayor/superior o SOBRE ella cuando el interlocutor es igual o superior.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el honorífico -(으)시- en coreano?',
+      paragraphs: [
+        'Se inserta el infijo -(으)시- entre la raíz del verbo y la terminación, para HONRAR al sujeto de la frase (nunca a uno mismo): 가다 → 가세요 (usted va, respetuoso), 읽다 → 읽으세요, 오다 → 오세요. En pasado: -(으)셨어요 (가셨어요 = él/ella fue, con respeto). Algunos verbos tienen forma honorífica propia que sustituye a la normal: 있다 → 계시다 (estar), 먹다 → 드시다/잡수시다 (comer), 자다 → 주무시다 (dormir), 말하다 → 말씀하시다. La clave para el hispanohablante: el honorífico marca respeto hacia el SUJETO de la oración, no hacia el oyente (eso lo hace el nivel de formalidad 요/습니다); por eso nunca se usa 시 hablando de uno mismo.',
       ],
     },
   ],

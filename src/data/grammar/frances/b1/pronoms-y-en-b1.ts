@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El pronombre 'y': lugar y complementos con 'à'",
+      heading: '¿Cuándo se usa el pronombre "y" en francés?',
       paragraphs: [
         "El pronombre 'y' tiene dos funciones principales. Primero, reemplaza un complemento de lugar introducido por 'à', 'dans', 'sur', 'en', 'chez': 'Je vais à la bibliothèque' → 'J'y vais' (y = a la biblioteca). 'Nous habitons en France' → 'Nous y habitons' (y = en France). Segundo, reemplaza un complemento introducido por 'à' que se refiere a una cosa, una idea o un concepto (no una persona): 'Il croit à ce projet' → 'Il y croit' (y = à ce projet).",
         "Importante limitación: 'y' no reemplaza a personas cuando el verbo se construye con 'à + personne'. Con verbos como 'penser à', 'tenir à', 's'intéresser à' seguidos de personas, se usa el pronombre tónico: 'Tu penses à tes parents?' → 'Tu penses à eux?' (no 'tu y penses' para personas). Pero 'Tu penses à ce problème?' → 'Tu y penses?' (cosa → y). Esta distinción persona/cosa es crucial.",
       ],
     },
     {
-      heading: "El pronombre 'en': cantidades, partitivos y 'de + lieu'",
+      heading: '¿Cuándo se usa el pronombre "en" en francés?',
       paragraphs: [
         "El pronombre 'en' reemplaza principalmente tres tipos de complementos: los artículos partitivos (du, de la, des) + sustantivo: 'Vous voulez du thé?' → 'Vous en voulez?'; las expresiones de cantidad con 'de': 'Elle a beaucoup de travail' → 'Elle en a beaucoup' (la cantidad queda explícita); y el complemento de lugar introducido por 'de': 'Il revient de Lyon' → 'Il en revient' (en = de Lyon).",
         "Con las expresiones de cantidad, 'en' reemplaza el sustantivo pero la cantidad permanece: 'J'ai deux frères' → 'J'en ai deux' (dos permanece). 'Il y a beaucoup de monde' → 'Il y en a beaucoup'. Si no hay cantidad expresada: 'Tu as des frères?' → 'Oui, j'en ai' (sin especificar cuántos). Con la negación, la cantidad desaparece: 'Je n'en ai pas'.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "La posición de 'y' y 'en': antes del verbo y con l'impératif",
+      heading: '¿Dónde se colocan "y" y "en" en francés?',
       paragraphs: [
         "La regla de posición es simple: 'y' y 'en' se colocan siempre delante del verbe conjugué (o del infinitif si hay dos verbos). 'Il y va' (va conjugué). 'Je veux y aller' (y avant l'infinitif aller). 'J'en voudrais un peu' (en avant voudrais). Con les temps composés: 'J'y suis allé' (y avant l'auxiliaire), 'J'en ai mangé' (en avant l'auxiliaire).",
         "Con el impératif affirmatif, la posición cambia: 'y' y 'en' se colocan después del verbo con un trait d'union: 'Vas-y!' (¡Ve allí!), 'Prends-en!' (¡Toma algo/un poco!), 'Penses-y!' (¡Piénsalo!). Atención: el verbo 'aller' a l'impératif añade una -s ante 'y' para la liaison: 'Vas-y' (no 'Va-y'). Con el impératif négatif: posición normal antes del verbo: 'N'y va pas! N'en prends pas!'",

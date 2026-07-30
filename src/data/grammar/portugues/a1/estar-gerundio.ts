@@ -66,6 +66,18 @@ const topic: GrammarTopic = {
         'Ambas formas son correctas y se entienden en ambos países. Para hispanohablantes que estudian portugués brasileño, el gerúndio es más intuitivo porque se parece al español "estoy estudiando". El portugués europeo es más formal en este aspecto.',
       ],
     },
+    {
+      heading: '¿Cómo se dice "estoy estudiando" en portugués?',
+      paragraphs: [
+        'En portugués brasileño: "Estou estudando" (estar conjugado + gerúndio en -ndo). En portugués europeo: "Estou a estudar" (estar a + infinitivo). Las dos son válidas; solo hay que ser coherente y no mezclarlas en la misma frase. La versión brasileña es prácticamente idéntica al español, así que el hispanohablante la produce sin esfuerzo: cambia "-ando/-iendo" del español por "-ando/-endo/-indo" del portugués. Ojo con el verbo ler, cuyo gerúndio es "lendo" (no "leendo").',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre ser y estar + gerúndio?',
+      paragraphs: [
+        'Ser describe lo que alguien es de forma estable ("Eu sou estudante", soy estudiante), mientras que estar + gerúndio describe lo que ocurre justo ahora ("Eu estou estudando", estoy estudiando en este momento). No se dice "sou estudando": el progresivo siempre se forma con estar, nunca con ser. Es el mismo reparto del español, así que la trampa no está aquí sino en recordar que el gerúndio portugués acaba siempre en -ndo y que existe la alternativa europea estar a + infinitivo.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

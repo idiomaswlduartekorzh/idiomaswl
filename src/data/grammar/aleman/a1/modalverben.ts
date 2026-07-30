@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los verbos modales: la clave de la expresión en alemán',
+      heading: '¿Qué son los verbos modales en alemán?',
       paragraphs: [
         'Los 6 verbos modales del alemán (können, müssen, wollen, mögen/möchten, dürfen, sollen) son fundamentales desde el nivel A1. Con ellos puedes expresar si algo es posible, necesario, deseado o permitido. Dominarlos transforma tu capacidad de comunicación de inmediato.',
         'La regla más importante: en una frase con modal, el verbo principal aparece en infinitivo y va siempre al FINAL. Ich muss heute lernen (no "ich muss lernen heute"). Esta posición final del infinitivo es uno de los rasgos más característicos del alemán.',
       ],
     },
     {
-      heading: 'Conjugación irregular: ich = er/sie/es',
+      heading: '¿Cómo se conjugan los verbos modales en alemán?',
       paragraphs: [
         'Los modales son irregulares de una manera especial: las formas de ich y er/sie/es son idénticas y no llevan terminación. Ich kann = er kann. Ich muss = sie muss. Ich will = es will. Esto los diferencia de los verbos regulares donde er/sie/es lleva -t.',
         'La conjugación completa de können como modelo: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Nota que wir/sie/Sie recuperan el infinitivo (können), igual que los verbos regulares.',
       ],
     },
     {
-      heading: 'Wollen vs. möchten: querer con estilo',
+      heading: '¿Cuál es la diferencia entre wollen y möchten en alemán?',
       paragraphs: [
         '"Wollen" expresa una voluntad firme o intención: Ich will Arzt werden (Quiero ser médico). "Möchten" es la forma subjuntiva de mögen y expresa un deseo más educado o un querer más suave: Ich möchte bitte einen Kaffee (Quisiera un café, por favor).',
         'En contextos cotidianos de A1 — pedir en una tienda, cafetería, restaurante — "möchten" es siempre la opción más apropiada. "Ich will einen Kaffee" suena brusco; "Ich möchte einen Kaffee" es educado y natural.',

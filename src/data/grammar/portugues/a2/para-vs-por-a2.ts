@@ -59,6 +59,25 @@ const topic: GrammarTopic = {
         '"Por" se contrae con artículos: por + o = pelo, por + a = pela, por + os = pelos, por + as = pelas.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "para" y "por" en portugués?',
+      paragraphs: [
+        'En una frase: "para" mira hacia adelante (finalidad, destino, destinatario) y "por" mira hacia la causa, el tiempo o el recorrido. "Estudo para passar" (finalidad) vs "Estudo por obrigação" (causa); "Vou para o Rio" (destino) vs "Passo pelo Rio" (paso a través). Esta tabla resume los usos frente a frente:',
+      ],
+      table: [
+        ['Sentido', 'PARA', 'POR'],
+        ['Finalidad / causa', 'Estudo para aprender.', 'Faço isto por amor.'],
+        ['Destino / recorrido', 'Vou para o Rio.', 'Passei pelo centro.'],
+        ['Destinatario / agente', 'Um presente para você.', 'Escrito por Machado.'],
+        ['Tiempo', 'Termino para segunda. (plazo)', 'Estudei por duas horas. (duración)'],
+      ],
+    },
+    {
+      heading: '¿Se dice "obrigado por" u "obrigado para"?',
+      paragraphs: [
+        'Se dice "obrigado por" (obrigado pela ajuda, obrigado por tudo), porque el agradecimiento expresa la causa o el motivo, y eso es dominio de "por", nunca de "para". "Obrigado para tudo" es un error típico del hispanohablante que traduce mecánicamente. Regla útil: cuando en español dirías "gracias por", en portugués es siempre "por" (o su contracción pelo/pela): "obrigado pela mensagem", "obrigado pelo convite".',
+      ],
+    },
   ],
 
   visual: {

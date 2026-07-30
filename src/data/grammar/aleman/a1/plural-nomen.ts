@@ -44,21 +44,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El plural en alemán: ¿por qué es diferente?',
+      heading: '¿Por qué el plural alemán es diferente del español?',
       paragraphs: [
         'El plural de los sustantivos alemanes es conocido por ser uno de los aspectos más desafiantes del idioma para hablantes de español o inglés. No existe una sola regla universal como "-s" en español o inglés. En cambio, hay varios patrones que deben memorizarse con cada sustantivo.',
         'Sin embargo, hay una simplificación importante: el artículo plural es siempre "die", independientemente del género del singular. Der Tisch (masculino) → die Tische; die Frau (femenino) → die Frauen; das Kind (neutro) → die Kinder. Todos usan "die" en plural.',
       ],
     },
     {
-      heading: 'Los 6 patrones de plural del alemán',
+      heading: '¿Cuáles son los patrones de plural del alemán?',
       paragraphs: [
         'Patrón 1 (-e): añadir -e, a veces con Umlaut. Der Tag → die Tage, die Stadt → die Städte. Patrón 2 (-er): añadir -er, casi siempre con Umlaut si es posible. Das Kind → die Kinder, das Buch → die Bücher.',
         'Patrón 3 (-en/-n): añadir -en o -n. Die Frau → die Frauen, die Lampe → die Lampen. Patrón 4 (-s): solo extranjerismos y acónimos. Das Auto → die Autos, das Foto → die Fotos. Patrón 5 (sin cambio): der Lehrer → die Lehrer. Patrón 6 (Umlaut sin sufijo): der Vater → die Väter.',
       ],
     },
     {
-      heading: 'Los plurales más importantes para el nivel A1',
+      heading: '¿Qué plurales conviene memorizar en alemán A1?',
       paragraphs: [
         'Para comunicarse en A1, estos plurales son los más necesarios: Kinder (niños), Eltern (padres — siempre plural), Bücher (libros), Tische (mesas), Stühle (sillas), Häuser (casas), Städte (ciudades), Länder (países), Freunde (amigos), Sprachen (idiomas).',
         'El diccionario alemán siempre indica el plural junto al género: "der Tag, -e" significa que el plural es "die Tage". Aprende el plural desde el principio.',

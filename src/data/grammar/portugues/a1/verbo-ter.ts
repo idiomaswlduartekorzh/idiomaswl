@@ -60,6 +60,41 @@ const topic: GrammarTopic = {
         'En habla brasileña informal, "a gente" sustituye a "nós" y siempre toma "tem" (no "temos" ni "têm"): "A gente tem aula" = "Tenemos clase". Aprende los dos usos: nós temos (formal) y a gente tem (informal).',
       ],
     },
+    {
+      heading: '¿Cómo se conjuga el verbo ter en presente?',
+      paragraphs: [
+        'Ter es irregular en las cinco personas y conviene aprenderlo de memoria porque aparece en cada conversación. Esta es la conjugación completa del presente de indicativo:',
+      ],
+      table: [
+        ['Persona', 'Ter (presente)'],
+        ['eu', 'tenho'],
+        ['tu', 'tens'],
+        ['você / ele / ela', 'tem'],
+        ['nós', 'temos'],
+        ['vocês / eles / elas', 'têm'],
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa la edad en portugués?',
+      paragraphs: [
+        'Con ter, nunca con ser: "Tenho vinte anos" (tengo veinte años), igual que en español. Decir "Sou vinte anos" es un error grave que delata traducción del inglés ("I am twenty"). La pregunta es "Quantos anos você tem?" (¿cuántos años tienes?) y la respuesta siempre incluye la palabra anos: "Tenho 30 anos".',
+      ],
+    },
+    {
+      heading: '¿Qué expresiones se forman con ter en portugués?',
+      paragraphs: [
+        'Muchas sensaciones físicas y estados se dicen con ter + sustantivo, igual que el español usa "tener": ter fome (hambre), ter sede (sed), ter sono (sueño), ter frio (frío), ter calor (calor), ter medo (miedo), ter pressa (prisa), ter razão (razón), ter sorte (suerte). Se construyen sin artículo: "Tenho fome", no "tenho uma fome". Esta tabla recoge las más frecuentes del A1:',
+      ],
+      table: [
+        ['Expresión', 'Significado', 'Ejemplo'],
+        ['ter fome', 'tener hambre', 'Tenho fome.'],
+        ['ter sede', 'tener sed', 'Você tem sede?'],
+        ['ter sono', 'tener sueño', 'Ela tem sono.'],
+        ['ter medo', 'tener miedo', 'Eles têm medo.'],
+        ['ter pressa', 'tener prisa', 'Temos pressa.'],
+        ['ter razão', 'tener razón', 'Tu tens razão.'],
+      ],
+    },
   ],
   visual: {
     mode: 'verb-conjugation',

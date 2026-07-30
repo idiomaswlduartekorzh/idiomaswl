@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Dire que y demander si: la base del discurso indirecto',
+      heading: '¿Qué es el discurso indirecto en francés?',
       paragraphs: [
         'Para reportar afirmaciones, se usa dire (o un sinónimo: expliquer, raconter, répondre...) + que + la frase en indicativo: "Marie dit qu\'elle part demain" (María dice que se va mañana). Para preguntas de sí/no, se usa demander si: "Il demande si tu es disponible" (Pregunta si estás disponible). Si empieza por vocal: demander s\': "Il demande s\'il peut venir".',
         'Al pasar al discurso indirecto, los pronombres personales y posesivos cambian según el nuevo contexto: "Je" (hablante original) → il/elle, "tu" (interlocutor original) → il/elle o je según quién sea, "mon/ma/mes" → son/sa/ses. Con verbo introductor en présent, los tiempos verbales NO cambian (en nivel A2).',
       ],
     },
     {
-      heading: 'Preguntas informativas en discurso indirecto',
+      heading: '¿Cómo se transforman las preguntas en discurso indirecto en francés?',
       paragraphs: [
         'Las preguntas con pronombre interrogativo (où, quand, comment, pourquoi, combien, qui) se introducen directamente sin inversión ni est-ce que: "Où habites-tu ?" → "Il demande où tu habites" (el verbo va al final, orden afirmativo). "Qu\'est-ce que tu fais ?" → "Il demande ce que tu fais" (qu\'est-ce que → ce que). "Qu\'est-ce qui se passe ?" → "Il demande ce qui se passe".',
         'Los verbos introductores más comunes: dire (decir), demander (preguntar), expliquer (explicar), répondre (responder), raconter (contar), ajouter (añadir), préciser (precisar).',
+      ],
+    },
+    {
+      heading: '¿Cómo cambian los tiempos en el discurso indirecto en francés?',
+      paragraphs: [
+        'Cuando el verbo introductor va en pasado, los tiempos de la frase citada retroceden (concordance des temps): présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel. "Il a dit : je viens" → "Il a dit qu\'il venait" ; "Elle a dit : j\'ai fini" → "Elle a dit qu\'elle avait fini". También cambian los pronombres (je → il/elle) y los marcadores de tiempo y lugar (aujourd\'hui → ce jour-là, ici → là, demain → le lendemain). Es el mismo mecanismo del estilo indirecto español, así que la lógica se traslada; lo nuevo son las formas concretas de cada tiempo francés y el paso obligatorio por "que" (afirmaciones) o "si" (preguntas de sí/no).',
       ],
     },
   ],

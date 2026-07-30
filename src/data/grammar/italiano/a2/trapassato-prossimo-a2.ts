@@ -75,7 +75,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Elección del auxiliar: avere o essere',
+      heading: '¿Cómo se elige el auxiliar avere o essere en el trapassato?',
       paragraphs: [
         'La elección del auxiliar en il trapassato prossimo sigue exactamente las mismas reglas que en il passato prossimo: verbos transitivos usan "avere", verbos de movimiento y estado y reflexivos usan "essere".',
         'Con "essere", el participio concuerda en género y número con el sujeto: "lei era arrivata" (femm. sing.), "loro erano arrivati" (masc. pl.).',

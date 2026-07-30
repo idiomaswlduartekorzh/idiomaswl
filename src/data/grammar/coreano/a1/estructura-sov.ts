@@ -40,21 +40,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La estructura SOV del coreano: el cambio más importante',
+      heading: '¿Qué es la estructura SOV del coreano?',
       paragraphs: [
         'El coreano sigue la estructura Sujeto-Objeto-Verbo (SOV), a diferencia del español que usa Sujeto-Verbo-Objeto (SVO). Esto significa que en coreano el verbo siempre va al final de la oración. "Yo como arroz" se convierte en "나는 밥을 먹어요" — literalmente "Yo arroz como".',
         'Este orden SOV también es el de idiomas como el japonés, turco, mongol y muchas lenguas de Asia Central. Para un hispanohablante, el reto principal es habituarse a que el verbo viene al final y a "construir" la oración antes de revelar la acción.',
       ],
     },
     {
-      heading: 'Las partículas: el sistema que reemplaza al orden',
+      heading: '¿Para qué sirven las partículas en coreano?',
       paragraphs: [
         'En español, el orden de las palabras indica quién hace qué: "El perro muerde al hombre" ≠ "El hombre muerde al perro". En coreano, las partículas (조사) marcan la función gramatical: 은/는 para el tema/sujeto, 이/가 para el sujeto, 을/를 para el objeto directo, 에 para dirección/lugar.',
         'Esto significa que el orden de los elementos antes del verbo puede variar sin cambiar el significado, siempre que las partículas estén bien puestas. El verbo, sin embargo, siempre va al final.',
       ],
     },
     {
-      heading: 'Oraciones básicas con estructura SOV',
+      heading: '¿Cómo se forma una oración básica en coreano?',
       paragraphs: [
         'Estructura básica: [Sujeto + partícula] + [Objeto + partícula] + Verbo. Ejemplo: 나는(yo-tema) 밥을(arroz-objeto) 먹어요(como). En español: "Yo como arroz".',
         'Cuando hay una preposición de lugar, va entre el objeto y el verbo: 나는(yo) 학교에(escuela-a) 가요(voy). En español: "Yo voy a la escuela". Nota que "a la escuela" (학교에) viene antes del verbo.',

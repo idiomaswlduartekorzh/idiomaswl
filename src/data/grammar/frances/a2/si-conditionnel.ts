@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Si + imparfait + conditionnel: la hipótesis irreal',
+      heading: '¿Cómo se forma la hipótesis con "si" + imparfait + conditionnel?',
       paragraphs: [
         'En francés, para expresar una situación hipotética o contraria a la realidad actual, se usa: si + imparfait, + conditionnel présent. "Si j\'étais millionnaire, je ferais le tour du monde" (Si fuera millonario, haría la vuelta al mundo). La cláusula con si lleva imparfait, la consecuencia lleva conditionnel.',
         'El orden puede invertirse sin cambiar el significado: "Je ferais le tour du monde si j\'étais millionnaire." La regla clave: NUNCA conditionnel directamente después de si — siempre imparfait después de si.',
       ],
     },
     {
-      heading: 'Formación del conditionnel présent',
+      heading: '¿Cómo se forma el conditionnel présent en francés?',
       paragraphs: [
         'El conditionnel présent se forma con el infinitivo (como el futur simple) + terminaciones del imparfait: -ais, -ais, -ait, -ions, -iez, -aient. Verbos regulares: parler → je parlerais, manger → je mangerais, finir → je finirais. Para verbos en -re: prendre → je prendrais (se quita la -e final).',
         'Irregulares más importantes (misma raíz que el futuro irregular): être → serais, avoir → aurais, aller → irais, faire → ferais, pouvoir → pourrais, vouloir → voudrais, devoir → devrais, venir → viendrais, savoir → saurais.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los tres tipos de frases con "si" en francés?',
+      paragraphs: [
+        'Hay tres estructuras según el grado de realidad. (1) Hipótesis real o probable: si + présent + futur ("Si j\'ai le temps, je viendrai"). (2) Hipótesis irreal del presente: si + imparfait + conditionnel présent ("Si j\'avais le temps, je viendrais"). (3) Hipótesis irreal del pasado: si + plus-que-parfait + conditionnel passé ("Si j\'avais eu le temps, je serais venu"). Regla de oro que evita el error más común del estudiante: después de "si" NUNCA va el conditionnel ni el futur; esos tiempos van siempre en la OTRA mitad de la frase. Es el mismo esquema del español (si tuviera…, vendría), así que la lógica se traslada directa.',
       ],
     },
   ],

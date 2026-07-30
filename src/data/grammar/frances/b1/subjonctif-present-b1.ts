@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación del subjonctif présent',
+      heading: '¿Cómo se forma el subjonctif présent en francés?',
       paragraphs: [
         'La regla base para verbos regulares: toma la forma de la 3ª persona plural del présent de l\'indicatif, quita -ent, y añade -e, -es, -e, -ions, -iez, -ent. Ejemplo: "parler" → ils parlent → raíz: parl- → que je parle, que tu parles, qu\'il parle, que nous parlions, que vous parliez, qu\'ils parlent.',
         'Los verbos "être" y "avoir" son completamente irregulares y deben memorizarse: être → que je sois, que tu sois, qu\'il soit, que nous soyons, que vous soyez, qu\'ils soient. Avoir → que j\'aie, que tu aies, qu\'il ait, que nous ayons, que vous ayez, qu\'ils aient.',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Expresiones que desencadenan el subjonctif',
+      heading: '¿Qué expresiones exigen el subjonctif en francés?',
       paragraphs: [
         'Verbos de deseo y voluntad: vouloir que, souhaiter que, désirer que, préférer que, demander que, exiger que. Ejemplo: "Je veux que tu viennes." / "Elle souhaite que nous réussissions."',
         'Verbos de emoción: être content(e) / triste / surpris(e) / heureux(se) / fâché(e) / désolé(e) / inquiet(ète) que. Ejemplo: "Je suis heureux qu\'il soit guéri." / "Elle est triste que tu partes."',

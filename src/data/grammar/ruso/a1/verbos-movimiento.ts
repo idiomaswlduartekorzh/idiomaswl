@@ -54,6 +54,20 @@ const topic: GrammarTopic = {
         ['ездить', 'езжу', 'Vehículo, habitual / ida y vuelta', 'Езжу на метро каждый день'],
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre идти y ходить?',
+      paragraphs: [
+        'Ambos significan "ir a pie", pero se distinguen por el tipo de movimiento. идти es unidireccional: un trayecto concreto, en curso y con una dirección: Я иду в школу (voy a la escuela [ahora, hacia allá]). ходить es multidireccional o habitual: ir y volver, o hacerlo repetidamente: Я хожу в школу каждый день (voy a la escuela cada día [ida y vuelta, rutina]).',
+        'La trampa para el hispanohablante es que el español usa "ir" para las dos ideas. En ruso hay que elegir: para "ahora mismo estoy yendo" → идти; para "suelo ir / voy y vuelvo" → ходить. Esta pareja unidireccional/multidireccional es la base de todos los verbos de movimiento.',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan ехать y ездить para ir en transporte?',
+      paragraphs: [
+        'Cuando el desplazamiento es en vehículo (coche, tren, avión) no se usan идти/ходить sino la pareja ехать/ездить, con la misma lógica: ехать es unidireccional y en curso (Я еду в Москву = voy a Moscú [ahora, en tren/coche]); ездить es habitual o de ida y vuelta (Я езжу на работу на метро = voy al trabajo en metro [rutina]).',
+        'La trampa para el hispanohablante es doble: (1) elegir a pie (идти/ходить) o en transporte (ехать/ездить), algo que el español no distingue; (2) dentro de cada pareja, escoger la forma unidireccional o la multidireccional según el movimiento sea concreto o habitual.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

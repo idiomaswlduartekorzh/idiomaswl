@@ -65,6 +65,32 @@ const topic: GrammarTopic = {
         'Con palabras como nada (nada), ninguém (nadie), nunca/jamais (nunca), nem (ni), en português se puede colocar el negativo antes o después del verbo. Si va después, se añade NÃO: "Não como nada" o "Nada como". Ambas son correctas. La más frecuente en BP es NÃO + verbo + palabra negativa.',
       ],
     },
+    {
+      heading: '¿Cómo se niega una frase en portugués?',
+      paragraphs: [
+        'Se coloca "não" justo delante del verbo conjugado, sin auxiliar y sin abreviar nunca. Es la misma mecánica del español, así que apenas hay que adaptarse. Esta tabla muestra la estructura en varios casos:',
+      ],
+      table: [
+        ['Afirmativo', 'Negativo', 'Estructura'],
+        ['Falo inglês.', 'Não falo inglês.', 'não + verbo'],
+        ['Ela tem tempo.', 'Ela não tem tempo.', 'não + verbo'],
+        ['Quero comer.', 'Não quero comer.', 'não + verbo + infinitivo'],
+        ['Vou sair.', 'Não vou sair.', 'não + ir + infinitivo'],
+        ['Sei.', 'Não sei não. (BP)', 'doble negación enfática'],
+      ],
+    },
+    {
+      heading: '¿Por qué los brasileños dicen "não sei não"?',
+      paragraphs: [
+        'Es la doble negación enfática del portugués brasileño coloquial: el segundo "não" al final refuerza la negación, como si dijeras "no sé, de verdad". Se usa mucho en el habla ("Não quero não", "Não tem problema não"), pero no en la escritura formal ni en el portugués europeo. Para A1 basta reconocerla al oírla; en tu propia producción usa la forma estándar não + verbo, que siempre es correcta.',
+      ],
+    },
+    {
+      heading: '¿Se puede abreviar "não" en portugués?',
+      paragraphs: [
+        'No. A diferencia del inglés (don\'t, isn\'t), el portugués nunca contrae el "não": se escribe y se pronuncia entero delante del verbo. En el habla rápida puede sonar reducido ("num" por "não" en algunas regiones), pero eso es coloquialismo oral, no una forma escrita válida. Escribe siempre "não falo", "não tenho", "não vou", con la palabra completa y su tilde nasal.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-pattern',

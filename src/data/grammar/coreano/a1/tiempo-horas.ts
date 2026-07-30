@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La hora en coreano: dos sistemas en una sola expresión',
+      heading: '¿Cómo se dice la hora en coreano?',
       paragraphs: [
         'La peculiaridad más sorprendente de la hora en coreano es que usa dos sistemas numéricos distintos dentro de la misma expresión: los números nativos para las horas y los números sino-coreanos para los minutos. Por eso 2:30 se dice 두 시 삼십 분 — dos (nativo) horas treinta (sino-coreano) minutos.',
         'Este contraste tiene origen histórico: el sino-coreano se adoptó del chino para funciones más abstractas y matemáticas (contar minutos, dinero, fechas), mientras que el nativo persistió para funciones más cotidianas y concretas (decir qué hora es del reloj).',
       ],
     },
     {
-      heading: 'Las 12 horas en números nativos',
+      heading: '¿Por qué las horas usan números nativos en coreano?',
       paragraphs: [
         'Las horas del 1 al 12 en coreano son: 한 시(1h), 두 시(2h), 세 시(3h), 네 시(4h), 다섯 시(5h), 여섯 시(6h), 일곱 시(7h), 여덟 시(8h), 아홉 시(9h), 열 시(10h), 열한 시(11h), 열두 시(12h). Nota que para las 1-4 se usan las formas abreviadas: 한/두/세/네.',
         'El coreano no tiene distinción de 12h vs 24h en el habla cotidiana — usa 오전(AM) y 오후(PM) para clarificar si es necesario. En contextos formales (trenes, cines) pueden aparecer números sino-coreanos en formato 24h escrito, pero en el habla siempre se usa el sistema nativo.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Minutos y expresiones de media hora',
+      heading: '¿Cómo se dicen los minutos en coreano?',
       paragraphs: [
         'Los minutos van con números sino-coreanos: 오 분(5min), 십 분(10min), 십오 분(15min), 이십 분(20min), 이십오 분(25min), 삼십 분(30min), 사십오 분(45min), 오십오 분(55min).',
         'La expresión 반(ban) significa literalmente "mitad" y equivale a "y media": 두 시 반(2:30), 다섯 시 반(5:30). Es más coloquial que decir 삼십 분 y muy frecuente en la conversación cotidiana.',

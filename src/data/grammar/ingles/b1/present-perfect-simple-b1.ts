@@ -85,6 +85,24 @@ const topic: GrammarTopic = {
         'Estas dos frases no son intercambiables. Si tu interlocutor pregunta "When did you go?" (cuándo fuiste), la respuesta es "I went in 2022" (past simple), nunca "I have gone in 2022".',
       ],
     },
+    {
+      heading: '¿Cuándo se usa el present perfect simple en inglés?',
+      paragraphs: [
+        'Para experiencias sin decir cuándo ("I have visited Japan"), acciones recientes con resultado presente ("She has just left") y situaciones que siguen hasta ahora ("We have lived here for years"). Conecta pasado y presente, por eso no admite un tiempo pasado concreto.',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "already", "yet" y "just" con el present perfect?',
+      paragraphs: [
+        '"already" (ya) en afirmativas ("I have already eaten"); "yet" (todavía/ya) en negativas y preguntas, al final ("Have you finished yet?", "I haven\'t finished yet"); "just" (acabar de) entre have y participio ("I have just arrived").',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre present perfect y past simple?',
+      paragraphs: [
+        'El past simple sitúa la acción en un momento pasado concreto ("I saw him yesterday"); el present perfect no da el momento y conecta con el presente ("I have seen him" = tengo esa experiencia). Con marcadores como yesterday o last week, siempre past simple.',
+      ],
+    },
   ],
 
   visual: {

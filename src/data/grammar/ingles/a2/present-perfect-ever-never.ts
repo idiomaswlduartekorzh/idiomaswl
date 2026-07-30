@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'Confundir "already" y "yet": "I haven\'t eaten already" — incorrecto. "Already" va en afirmativo; "yet" en negativo. La forma correcta es: "I haven\'t eaten yet."',
       ],
     },
+    {
+      heading: '¿Cómo se usan "ever" y "never" con el present perfect?',
+      paragraphs: [
+        '"ever" (alguna vez) en preguntas: "Have you ever been to Japan?". "never" (nunca) en frases afirmativas con sentido negativo: "I have never eaten sushi". Ambos van entre have/has y el participio. "never" ya es negativo, así que no se combina con "not".',
+      ],
+    },
+    {
+      heading: '¿Cómo se pregunta si alguien ha hecho algo alguna vez en inglés?',
+      paragraphs: [
+        'Con "Have/Has + sujeto + ever + participio": "Have you ever tried Thai food?", "Has she ever been abroad?". La respuesta suele usar el present perfect ("Yes, I have" / "No, I never have") o pasar al past simple para dar detalles ("Yes, I went last year").',
+      ],
+    },
+    {
+      heading: '¿Dónde se coloca "ever" en la frase?',
+      paragraphs: [
+        'Entre el sujeto y el participio, después de have/has: "Have you ever seen it?". No va al final ni antes del sujeto. "never" ocupa la misma posición en afirmativas: "I have never seen it".',
+      ],
+    },
   ],
 
   visual: {

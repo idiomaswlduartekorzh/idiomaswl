@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Partizip I como adjetivo: acción simultánea',
+      heading: '¿Cómo se usa el Partizip I como adjetivo en alemán?',
       paragraphs: [
         'El Partizip I se forma añadiendo -d al infinitivo: schlafen → schlafend, lachen → lachend, laufen → laufend. Cuando se usa como adjetivo antes de un sustantivo, recibe la terminación normal del adjetivo.',
         '"Das schlafende Kind" significa literalmente "el niño que está durmiendo" — la acción de dormir ocurre al mismo tiempo que el verbo principal. Es equivalente a una cláusula de relativo con presente.',
       ],
     },
     {
-      heading: 'Partizip II como adjetivo: acción completada',
+      heading: '¿Cómo se usa el Partizip II como adjetivo en alemán?',
       paragraphs: [
         'El Partizip II usado como adjetivo describe el resultado de una acción pasada. "Das gelesene Buch" = el libro que ha sido leído / el libro (ya) leído. Funciona como una cláusula de relativo pasiva en pasado.',
         'Los verbos inseparables no llevan ge-: das besuchte Museum (no *das gebesuchte Museum). Los verbos con -ieren tampoco: das reparierte Auto.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre Partizip I y Partizip II como adjetivo?',
+      paragraphs: [
+        'El Partizip I (infinitiv + -d: spielend, lachend) expresa una acción simultánea y activa: "das spielende Kind" (el niño que está jugando). El Partizip II (ge-…-t / ge-…-en: gekocht, gebraten) expresa una acción ya completada o pasiva: "das gekochte Ei" (el huevo cocido, ya hecho). En resumen: Partizip I = algo que ocurre ahora y lo hace el sustantivo (activo); Partizip II = algo que ya se hizo o se le hizo al sustantivo (pasivo/resultado). Como todo adjetivo atributivo en alemán, ambos se declinan según el género, número y caso del sustantivo al que acompañan (das spielende Kind, dem spielenden Kind…).',
       ],
     },
   ],

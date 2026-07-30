@@ -61,6 +61,34 @@ const topic: GrammarTopic = {
         'En Portugal, "a gente" también existe pero "nós" es más frecuente. Para A1 brasileño, aprende ambas formas pero practica más "a gente" para el habla natural.',
       ],
     },
+    {
+      heading: '¿Cuáles son los pronombres personales en portugués?',
+      paragraphs: [
+        'Son ocho pronombres sujeto, muy parecidos al español salvo por "você/vocês" (que reemplazan a tú/vosotros en Brasil) y por la separación de género en plural (eles/elas). Esta tabla los reúne con su equivalente y la persona en que se conjugan:',
+      ],
+      table: [
+        ['Pronombre', 'Español', 'Conjuga como'],
+        ['eu', 'yo', '1ª singular'],
+        ['tu', 'tú (informal)', '2ª singular'],
+        ['você', 'tú / usted', '3ª singular'],
+        ['ele / ela', 'él / ella', '3ª singular'],
+        ['nós / a gente', 'nosotros', '1ª pl / 3ª sg'],
+        ['vocês', 'ustedes / vosotros', '3ª plural'],
+        ['eles / elas', 'ellos / ellas', '3ª plural'],
+      ],
+    },
+    {
+      heading: '¿Por qué "você" se conjuga en tercera persona?',
+      paragraphs: [
+        'Porque históricamente "você" viene de "Vossa Mercê" (Vuestra Merced), una fórmula de tratamiento en 3ª persona, igual que el "usted" español. Por eso decimos "você fala", "você tem", "você é" (nunca "você falas"). Aunque en Brasil "você" funciona como el "tú" cotidiano, gramaticalmente se comporta como ele/ela. Esta es la confusión más frecuente del hispanohablante, que espera la -s de segunda persona.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se puede omitir el pronombre en portugués?',
+      paragraphs: [
+        'Se puede omitir cuando la desinencia del verbo ya deja claro el sujeto, sobre todo en 1ª persona: "Falo português" (hablo portugués) es tan correcto como "Eu falo português". Sin embargo, el portugués omite el sujeto menos que el español, porque varias personas comparten forma verbal (você/ele/ela → fala), y sin el pronombre la frase quedaría ambigua. Regla práctica: en eu y nós puedes omitirlo con soltura; en 3ª persona conviene mantener el pronombre o el nombre para que se entienda de quién hablas.',
+      ],
+    },
   ],
   visual: {
     mode: 'pronoun-chart',

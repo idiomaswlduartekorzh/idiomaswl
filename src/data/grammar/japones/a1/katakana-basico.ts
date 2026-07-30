@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Por qué el katakana es el silabario más accesible para hispanohablantes',
+      heading: '¿Por qué el katakana es el silabario más accesible para hispanohablantes?',
       paragraphs: [
         'El katakana es paradójicamente el silabario más útil para comenzar a leer japonés en contexto real, porque la mayoría de sus palabras provienen del inglés, francés, alemán, portugués y español. Al leer un menú, una revista o una señal en Japón, encontrarás katakana por todas partes: コーヒー (café), ビール (beer/cerveza), レストラン (restaurante), タクシー (taxi), ホテル (hotel).',
         'Para el hispanohablante, la "trampa" es que las palabras se adaptan a la fonología japonesa. El japonés no tiene sílabas cerradas (excepto ん/n) ni ciertos sonidos como la "v" española. Así, "vino" se convierte en ビノ (bino) y "España" en エスパーニャ (Esupānya) o スペイン (Supein). Con práctica, empiezas a "escuchar" las palabras originales detrás de la adaptación.',
       ],
     },
     {
-      heading: 'Palabras del español y el inglés que ya puedes leer en katakana',
+      heading: '¿Qué palabras del español y el inglés ya puedes leer en katakana?',
       paragraphs: [
         'Muchas palabras del vocabulario cotidiano japonés vienen del español, portugués o inglés. Del español: パン (pan = pan), タバコ (tabako = tabaco), テンポ (tenpo = tempo). Del inglés/internacional: テレビ (terebi = TV), コンピューター (konpyūtā = computadora), インターネット (intānetto = internet), スマートフォン (sumātofon = smartphone).',
         'La regla del ー (katakana prolongado) es clave: representa el alargamiento de una vocal. En español lo entiendes intuitivamente: コーヒー = "koo-hii" = café, ビール = "bii-ru" = beer/cerveza. Este marcador de longitud no existe en hiragana de la misma forma.',
+      ],
+    },
+    {
+      heading: '¿Cómo se marca una vocal larga en katakana?',
+      paragraphs: [
+        'En katakana las vocales largas se escriben con una raya horizontal ー (chōonpu), no repitiendo la vocal como en hiragana. Así コーヒー (kōhī, café) alarga la o y la i con ー, y ラーメン (rāmen) alarga la primera a. Esto es clave porque muchísimo katakana son préstamos del inglés y del español cuya pronunciación depende de esas vocales largas: ケーキ (kēki, pastel), スーパー (sūpā, supermercado), テーブル (tēburu, mesa). La trampa para el hispanohablante es olvidar la raya y pronunciar corto: コヒ no es "café". También hay que distinguir sonidos que el español no marca, como la doble consonante con ッ pequeña: カップ (kappu, taza). Dominar ー y ッ permite leer casi cualquier préstamo.',
       ],
     },
   ],

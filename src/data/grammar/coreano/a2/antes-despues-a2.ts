@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '-기 전에: siempre con el infinitivo',
+      heading: '¿Cómo se usa -기 전에 (antes de) en coreano?',
       paragraphs: [
         'En coreano, "antes de hacer algo" se expresa con -기 전에. La clave es que el verbo que va antes de 전에 siempre lleva el sufijo -기 (el nominalizador verbal) sin conjugar por tiempo: "자기 전에" (antes de dormir), "먹기 전에" (antes de comer), "출발하기 전에" (antes de salir). El tiempo real se expresa en el verbo de la cláusula principal.',
         '"작년에 한국에 가기 전에 한국어를 배웠어요" (el año pasado, antes de ir a Corea, aprendí coreano). El tiempo pasado aparece en "배웠어요", no en "가기 전에".',
       ],
     },
     {
-      heading: '-(으)ㄴ 후에 vs 다음에',
+      heading: '¿Cuál es la diferencia entre -(으)ㄴ 후에 y 다음에?',
       paragraphs: [
         '"후에" y "다음에" son casi sinónimos cuando expresan "después de". Ambos se usan con la forma verbal de modificador de pasado (-(으)ㄴ): "먹은 후에" = "먹은 다음에" (después de comer). La diferencia es muy sutil: 다음에 a veces suena ligeramente más coloquial.',
         'Con sustantivos, ambos van directamente sin modificación: "수업 후에" = "수업 다음에" (después de la clase). Es un nivel A2 por su frecuencia en la vida cotidiana: "학교 끝난 후에 뭐 해요?" (¿Qué haces después de que termine la escuela?).',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa "antes" y "después" en coreano?',
+      paragraphs: [
+        '"Antes de hacer algo" se dice con -기 전에 (-gi jeone), que va SIEMPRE con la raíz del verbo + 기: 자기 전에 (antes de dormir), 밥 먹기 전에 (antes de comer). "Después de hacer algo" se dice con -(으)ㄴ 후에 (-(eu)n hue) o -(으)ㄴ 다음에, que van con la forma de pasado atributivo del verbo: 밥을 먹은 후에 (después de comer). La trampa para el hispanohablante es doble: el orden es inverso al español (la subordinada va ANTES del verbo principal, por el patrón SOV), y 전에 usa la base -기 mientras 후에 usa -(으)ㄴ. Con sustantivos, ambas van directas: 수업 전에 (antes de clase), 수업 후에 (después de clase).',
       ],
     },
   ],

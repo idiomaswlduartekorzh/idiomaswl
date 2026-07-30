@@ -40,8 +40,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué son participios adjetivales?', paragraphs: ['Participios (причастия) combinan propiedades de verbo y adjetivo. Funcionan como adjetivos que modifican sustantivos: "hombre que lee" = "hombre leyente" = "человек читающий".', 'Concuerdan en género, número, caso con el sustantivo.']},
-    {heading: 'Participios activos', paragraphs: ['"Человек, читающий книгу" (hombre que lee un libro — participio activo de НСВ). "Человек, прочитавший книгу" (hombre que ha leído el libro — participio activo de СВ).', 'Expresan quién realiza la acción.']},
-    {heading: 'Participios pasivos', paragraphs: ['"Книга, читаемая студентами" (libro que es leído por estudiantes — participio pasivo de НСВ). "Книга, прочитанная вчера" (libro leído ayer — participio pasivo de СВ).', 'Expresan quién/qué recibe la acción.']},
+    {heading: '¿Qué son los participios activos?', paragraphs: ['"Человек, читающий книгу" (hombre que lee un libro — participio activo de НСВ). "Человек, прочитавший книгу" (hombre que ha leído el libro — participio activo de СВ).', 'Expresan quién realiza la acción.']},
+    {heading: '¿Qué son los participios pasivos?', paragraphs: ['"Книга, читаемая студентами" (libro que es leído por estudiantes — participio pasivo de НСВ). "Книга, прочитанная вчера" (libro leído ayer — participio pasivo de СВ).', 'Expresan quién/qué recibe la acción.']},
     {heading: 'Concordancia de participios', paragraphs: ['"Большой читающий человек" (hombre leyente grande — masc). "Большая читающая женщина" (mujer leyente grande — fem).', 'Participios concuerdan exactamente como adjetivos: género, número, caso.']},
     {heading: 'Uso en oraciones relatoras', paragraphs: ['"Книга, которую я читал" (libro que leí) puede expresarse: "Книга, читаемая мной" o "Книга, прочитанная мной" (libro leído por mí).', 'Los participios reemplazan cláusulas relativas en ruso formal/culto.']},
   ],

@@ -77,6 +77,24 @@ const topic: GrammarTopic = {
         '"Although" introduce una concesión (aunque). Puede ir al principio (+ coma) o en el medio: Although it was expensive, it was comfortable. / It was comfortable although it was expensive.',
       ],
     },
+    {
+      heading: '¿Cuáles son los conectores más usados en inglés?',
+      paragraphs: [
+        'De adición: and, also, too. De contraste: but, however, although. De causa: because, since. De consecuencia: so, therefore. De tiempo: when, while, after, before. Unen ideas y hacen el texto fluido en vez de fragmentado.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "because" y "so"?',
+      paragraphs: [
+        '"because" introduce la causa ("I stayed home because it was raining"); "so" introduce la consecuencia ("It was raining, so I stayed home"). Son las dos caras de la misma relación: causa vs resultado.',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "but", "although" y "however"?',
+      paragraphs: [
+        'Los tres marcan contraste. "but" une dos ideas en la misma frase ("It\'s cheap but good"). "although" abre una cláusula ("Although it was late, we continued"). "however" va normalmente al inicio de otra frase, con coma ("It was late. However, we continued").',
+      ],
+    },
   ],
 
   visual: {

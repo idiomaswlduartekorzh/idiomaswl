@@ -66,6 +66,18 @@ const topic: GrammarTopic = {
         'Para hispanohablantes, la forma natural brasileña es: sujeto + nunca + verbo + resto. Eu nunca acordo tarde = Nunca me levanto tarde. Sin "não".',
       ],
     },
+    {
+      heading: '¿Dónde se coloca el adverbio de frecuencia en portugués?',
+      paragraphs: [
+        'La posición más natural en portugués brasileño es entre el sujeto y el verbo: "Eu sempre estudo", "Ela nunca chega tarde", "A gente às vezes sai". Es distinto del español, que suele posponerlo ("estudio siempre"). Los adverbios largos como "geralmente" o "normalmente" también pueden abrir la frase ("Geralmente trabalho de casa"). Las locuciones "às vezes" y "de vez em quando" son las más flexibles: caben al inicio, en medio o al final sin sonar raras. La regla segura para A1: colócalo justo antes del verbo y siempre sonará bien.',
+      ],
+    },
+    {
+      heading: '¿Cómo se pregunta por la frecuencia en portugués?',
+      paragraphs: [
+        'Con "Com que frequência…?" (¿con qué frecuencia…?): "Com que frequência você estuda?". También se pregunta directamente con un adverbio: "Você sempre chega cedo?" (¿siempre llegas temprano?), "Você nunca come carne?". La respuesta usa el adverbio antes del verbo: "Geralmente estudo à noite", "Nunca como carne". Otras expresiones útiles de frecuencia son "todos os dias" (todos los días), "uma vez por semana" (una vez por semana) y "de vez em quando" (de vez en cuando).',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

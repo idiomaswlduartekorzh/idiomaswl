@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'La partícula で: lugar de acción y medio de transporte',
+      heading: '¿Para qué sirve la partícula で (lugar de acción y medio)?',
       paragraphs: [
         'La partícula で (de) tiene dos usos principales en A1. El primero es marcar el lugar donde se realiza una acción: がっこうで べんきょうします = "estudio en la escuela". La clave es que el lugar debe ser donde OCURRE algo — si solo estás ahí sin hacer nada, usas に: うちに います (estoy en casa, sin más).',
         'El segundo uso de で es marcar el medio o instrumento: バスで いきます (voy en bus), でんしゃで かえります (vuelvo en tren), にほんごで はなします (hablo en japonés), はしで たべます (como con palillos). Para el hispanohablante, equivale a "en" o "con" según el contexto — en bus, con palillos, en japonés.',
       ],
     },
     {
-      heading: 'へ vs に: el matiz del trayecto frente al destino',
+      heading: '¿En qué se diferencian へ y に (trayecto frente a destino)?',
       paragraphs: [
         'En japonés A1, へ y に son casi intercambiables para indicar destino de verbos de movimiento como いく (ir), くる (venir), かえる (volver). La diferencia es de énfasis: へ pone el foco en la DIRECCIÓN o el trayecto hacia algo, mientras que に pone el foco en el PUNTO DE LLEGADA concreto.',
         'Prácticamente: とうきょうへ いきます enfatiza "me dirijo hacia Tokio", とうきょうに いきます enfatiza "voy A Tokio (y llego)". En A1, aprende los dos pero usa に para destino concreto — es más frecuente en el habla cotidiana. へ se escribe con el hiragana へ pero se pronuncia "e" (no "he") cuando es partícula.',
+      ],
+    },
+    {
+      heading: '¿Cómo distinguir で de に para hablar de lugares?',
+      paragraphs: [
+        'Ambas se traducen a veces por "en", pero marcan cosas distintas. で señala el lugar donde ocurre una ACCIÓN: レストランで食べます (como en el restaurante — la acción de comer sucede allí). に señala el lugar donde algo EXISTE o está situado, con verbos como います/あります, y también el destino de un movimiento: 部屋にいます (estoy en la habitación), 学校に行きます (voy a la escuela). La regla práctica: si hay una acción activa (comer, trabajar, estudiar), で; si hay existencia, ubicación o destino, に. La trampa para el hispanohablante es usar la misma "en" para todo: 家で (en casa, haciendo algo) vs 家に (en casa, estar/llegar) no son intercambiables.',
       ],
     },
   ],

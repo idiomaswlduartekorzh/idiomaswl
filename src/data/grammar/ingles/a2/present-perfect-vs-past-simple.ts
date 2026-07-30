@@ -89,6 +89,24 @@ const topic: GrammarTopic = {
         'La solución: en inglés, si el momento no está especificado y hablas de experiencias de vida → present perfect. Si estás narrando hechos con referencia temporal concreta → past simple.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre present perfect y past simple?',
+      paragraphs: [
+        'El past simple describe algo terminado en un momento pasado concreto ("I visited Paris in 2019"). El present perfect describe algo sin decir cuándo, conectado con el presente ("I have visited Paris" = tengo esa experiencia). Regla: si hay un tiempo pasado concreto (yesterday, last week), va past simple.',
+      ],
+    },
+    {
+      heading: '¿Por qué no se puede usar el present perfect con "yesterday"?',
+      paragraphs: [
+        'Porque el present perfect no admite un momento pasado terminado. "I have seen her yesterday" es incorrecto → "I saw her yesterday" (past simple). Con marcadores de tiempo pasado (yesterday, last year, in 2020, ago) siempre se usa past simple.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "for" y cuándo "since" con el present perfect?',
+      paragraphs: [
+        '"for" + duración: "I have lived here for five years" (durante cinco años). "since" + punto de inicio: "I have lived here since 2019" (desde 2019). Ambos acompañan al present perfect para acciones que siguen hasta ahora.',
+      ],
+    },
   ],
 
   visual: {

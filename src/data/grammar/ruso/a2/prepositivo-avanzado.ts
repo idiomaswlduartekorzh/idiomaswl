@@ -45,7 +45,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'О + prepositivo: hablar sobre temas en ruso',
+      heading: '¿Cómo se usa О + prepositivo para hablar sobre algo?',
       paragraphs: [
         'La preposición о (об) + prepositivo es la forma de expresar el tema sobre el que se habla, piensa, escribe o pregunta. Verbos frecuentes con esta estructura: думать о (pensar en), говорить о (hablar de), читать о (leer sobre), писать о (escribir sobre), спрашивать о (preguntar sobre).',
         'Ejemplos: Я думаю о тебе (pienso en ti), Мы говорим о политике (hablamos de política), Он написал о своей жизни (escribió sobre su vida). La preposición о se convierte en об antes de palabras que comienzan con vocal.',
@@ -60,10 +60,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'О vs об: cuándo usar cada forma',
+      heading: '¿Cuándo se usa О y cuándo об?',
       paragraphs: [
         'La regla es simple: usa об cuando la palabra siguiente empieza con vocal (а, э, и, о, у, е, ё, ю, я). Usa о en todos los demás casos. Ejemplos: об этом (sobre esto), об Анне (sobre Ana), об уроке (sobre la clase).',
         'Los pronombres personales tienen formas especiales en prepositivo: обо мне (sobre mí), о тебе (sobre ti), о нём (sobre él), о ней (sobre ella), о нас (sobre nosotros), о вас (sobre vosotros), о них (sobre ellos).',
+      ],
+    },
+    {
+      heading: '¿Cómo se declina el prepositivo y qué preposiciones lo rigen?',
+      paragraphs: [
+        'El prepositivo (o preposicional) es el único caso que nunca aparece sin preposición. La terminación más común en singular es -е para casi todos los sustantivos (стол→о столе, книга→о книге, окно→об окне); algunos femeninos en -ь y palabras en -ий/-ие toman -и (тетрадь→о тетради, Россия→о России). Lo rigen в y на para ubicación (в городе = en la ciudad, на столе = sobre la mesa), о/об para el tema (о книге = sobre el libro) y при (junto a, en presencia de).',
+        'La trampa para el hispanohablante es que el mismo в/на cambia de caso: con movimiento pide acusativo (в город = a la ciudad), con ubicación pide prepositivo (в городе = en la ciudad). La pregunta куда→acusativo, где→prepositivo resuelve la elección.',
       ],
     },
   ],

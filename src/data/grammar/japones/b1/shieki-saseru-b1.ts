@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Causativo de mandato vs causativo de permiso',
+      heading: '¿Cuál es la diferencia entre el causativo de mandato y el de permiso?',
       paragraphs: [
         'El mismo させる puede expresar mandato (obligar) o permiso (dejar hacer), según el contexto. Con personas en posición de autoridad o animales, suele ser mandato: 母は私に野菜を食べさせた (mamá me hizo comer verduras). Con amigos o en contextos de afecto, suele ser permiso: 子供に好きな音楽を聴かせた (dejé al niño escuchar la música que quería).',
         'Para dejar claro el permiso, se añaden auxiliares: 〜させてあげた (lo dejé hacer — yo hice el favor), 〜させてもらった (me dejaron hacer — yo recibí el permiso). Estas formas son muy frecuentes en japonés cotidiano.',
       ],
     },
     {
-      heading: '〜させてください: pidiendo permiso',
+      heading: '¿Cómo se pide permiso con 〜させてください?',
       paragraphs: [
         'Una de las expresiones más útiles con el causativo es 〜させてください, que se usa para pedir permiso de forma educada. Es literalmente "por favor, haga que yo haga X", pero se traduce como "permítame hacer X" o "déjeme hacer X".',
         '例: ちょっと考えさせてください (déjeme pensarlo un momento), 私にやらせてください (déjeme hacerlo a mí), 一人で行かせてください (déjeme ir solo/a). Esta expresión es esencial en contextos laborales y formales.',

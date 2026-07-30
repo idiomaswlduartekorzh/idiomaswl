@@ -50,14 +50,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Contextos de uso: viajes, tiempo compartido',
+      heading: '¿En qué contextos se usa -는 김에 en coreano?',
       paragraphs: [
         'Viajes: "출장 가는 김에 친구도 만날 거야" (mientras voy por trabajo, también veo a un amigo). "서울에 가는 김에 박물관도 가자" (ya que vamos a Seúl, visitemos el museo también).',
         'Tiempo compartido: "공부하는 김에 카페에도 가자" (ya que estudiamos, vamos a un café). "일하는 김에 점심도 먹어야지" (ya que trabajamos, deberíamos almorzar).',
       ],
     },
     {
-      heading: '-는 김에 vs -으면서',
+      heading: '¿Cuál es la diferencia entre -는 김에 y -(으)면서?',
       paragraphs: [
         '-으면서 es simple simultaneidad: "걷으면서 음악 들어요" (escucho música mientras camino — dos cosas a la vez). -는 김에 es aprovechamiento: "나가는 김에 물도 사올 거야" (ya que salgo, también compraré agua — aprovechar la salida).',
         'Diferencia: -으면서 es "hacer X e Y juntos"; -는 김에 es "hacer X, y aprovecho para hacer Y también".',

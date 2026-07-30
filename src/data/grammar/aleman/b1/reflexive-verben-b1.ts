@@ -57,7 +57,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Pronombres reflexivos: Akkusativ vs. Dativ',
+      heading: '¿Cuál es la diferencia entre pronombre reflexivo en Akkusativ y Dativ?',
       paragraphs: [
         'La clave es si el verbo tiene otro objeto en Akkusativ. Si NO tiene otro objeto Akkusativ: el reflexivo va en Akkusativ (mich, dich, sich, uns, euch, sich). Ejemplos: sich freuen, sich ärgern, sich beeilen, sich erholen → "Ich freue mich", "Wir beeilen uns".',
         'Si el verbo SÍ tiene otro objeto en Akkusativ (la parte del cuerpo, la ropa, etc.): el reflexivo va en Dativ (mir, dir, sich, uns, euch, sich). Ejemplos: sich die Hände waschen, sich die Haare kämmen, sich etwas vorstellen → "Ich wasche mir die Hände", "Er putzt sich die Zähne".',
@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Los verbos reflexivos más importantes en B1',
+      heading: '¿Cuáles son los verbos reflexivos más importantes del alemán B1?',
       paragraphs: [
         'En B1 debes dominar los verbos reflexivos más frecuentes en contextos cotidianos: emociones (sich freuen, sich ärgern, sich schämen, sich wundern), salud y rutina (sich waschen, sich anziehen, sich ausruhen, sich erholen), y acciones sociales (sich vorstellen, sich entschuldigen, sich bewerben, sich beschäftigen).',
         'Muchos verbos reflexivos de B1 van con preposición fija: sich freuen auf + Akk. (alegrarse de), sich ärgern über + Akk. (enfadarse por), sich interessieren für + Akk. (interesarse por), sich bewerben um + Akk. (solicitar), sich beschäftigen mit + Dat. (ocuparse con).',

@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Con tiempo pasado',
+      heading: '¿Cómo se usa -(으)니까 con el tiempo pasado en coreano?',
       paragraphs: [
         'Una ventaja de -(으)니까 es que puede combinarse con el tiempo pasado en la primera clausula: 이미 먹었으니까 더 안 먹어도 돼요 (Ya comi, asi que no necesitas comer mas). Con -(아/어)서 esto NO es posible en la primera clausula.',
         'Ejemplo comparativo: -(아/어)서 con pasado SOLO en resultado: 먹어서 배가 불러요 (Comi, por eso estoy lleno). -(으)니까 puede tener pasado en causa: 이미 먹었으니까 괜찮아요.',
@@ -65,6 +65,12 @@ const topic: GrammarTopic = {
         ['-(아/어)서', 'No (solo en resultado)', 'No'],
         ['-(으)니까', 'Si (있으니까, 갔으니까)', 'Si'],
         ['-기 때문에', 'Indirectamente', 'Si'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre -(으)니까 y -(아/어)서 para dar razones?',
+      paragraphs: [
+        'Las dos expresan causa ("porque"), pero no son intercambiables. -(아/어)서 da una razón neutra o de causa-efecto natural y NO admite mandatos ni propuestas detrás: 비가 와서 집에 있어요 (me quedo en casa porque llueve). -(으)니까 da una razón más subjetiva o que el hablante presenta como evidente, y SÍ admite mandato/propuesta: 비가 오니까 집에 있어요 (¡como llueve, quédate en casa!). Regla clave para el hispanohablante: si detrás quieres poner una orden, una sugerencia o un imperativo, usa -(으)니까, nunca -(아/어)서. Además, -(으)니까 puede llevar tiempo pasado en la raíz (갔으니까), mientras -(아/어)서 no marca tiempo en la cláusula causal.',
       ],
     },
   ],

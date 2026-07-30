@@ -52,7 +52,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación con verbos y adjetivos',
+      heading: '¿Cómo se forma -(으)ㄹ수록 con verbos y adjetivos?',
       paragraphs: [
         'Verbos: 공부하다 → 공부할수록 (cuanto más estudies), 먹다 → 먹을수록 (cuanto más comas). Adjetivos: 많다 → 많을수록 (cuanto más), 크다 → 클수록 (cuanto más grande).',
         'La raíz + -ㄹ se adjunta a sujetos o complementos de la cláusula principal.',
@@ -66,7 +66,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Con negación: proporción inversa',
+      heading: '¿Cómo se expresa la proporción inversa con -(으)ㄹ수록?',
       paragraphs: [
         '"못 잘수록 피곤해요" = cuanto menos duermes, más cansado estás (proporción inversa). La negación invierte la relación pero -ㄹ수록 sigue expresando proporcionalidad.',
         'También: "덜 먹을수록 건강해요" (cuanto menos comas, más sano estás) — la negación o reducción en una variable produce reducción en el resultado.',

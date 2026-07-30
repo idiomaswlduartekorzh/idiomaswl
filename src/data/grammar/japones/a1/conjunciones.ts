@@ -57,10 +57,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'でも vs が: dos formas de decir "pero" en japonés',
+      heading: '¿En qué se diferencian でも y が para decir "pero"?',
       paragraphs: [
         'El japonés tiene dos formas principales de expresar "pero": でも (demo) y が (ga). La diferencia es sutileza y posición. でも va al inicio de una nueva oración (パンが好きです。でも、ごはんも好きです). が va dentro de la misma oración uniendo dos cláusulas (パンが好きですが、ごはんも好きです).',
         'Para A1, aprender でも es más fácil porque solo necesitas poner un punto y empezar la nueva frase. が es más avanzado. Con でも dominas el contraste básico.',
+      ],
+    },
+    {
+      heading: '¿Cómo se enlazan dos frases dentro de una misma oración en japonés?',
+      paragraphs: [
+        'A nivel A1, las conjunciones tipo でも (demo, pero) y だから (dakara, por eso) van al INICIO de la segunda frase, como conectores independientes: 高いです。でも、買います (Es caro. Pero lo compro). Para unir dos ideas dentro de una sola oración se usa la て-form del verbo o del adjetivo い: 朝起きて、コーヒーを飲みます (me levanto y bebo café). Para enlazar sustantivos con "y" se usa と (to): パンとたまご (pan y huevo), nunca でも ni そして. La trampa para el hispanohablante es traducir todo por "y/pero" con una sola palabra: en japonés cambia según se unan frases (て-form), oraciones (でも, そして) o sustantivos (と).',
       ],
     },
   ],

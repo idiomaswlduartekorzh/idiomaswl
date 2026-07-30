@@ -40,8 +40,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué son diminutivos y aumentativos?', paragraphs: ['Diminutivos (уменьшительные суффиксы) expresan pequeño tamaño o afección: "столик" (mesita, pequeña/querida mesa).', 'Aumentativos (увеличительные суффиксы) expresan gran tamaño o énfasis: "домище" (casarón, casa grande/fea).']},
-    {heading: 'Diminutivos muy comunes', paragraphs: ['"кот" (gato) → "котик" (gatito). "дом" (casa) → "домик" (casita). "книга" (libro) → "книжечка" (librito).', 'Son muy usados en ruso coloquial y afectivo.']},
-    {heading: 'Aumentativos expresivos', paragraphs: ['"дом" (casa) → "домище" (casarón). "ветер" (viento) → "ветрище" (ventarrón). Expresan algo grande, a menudo con connotación negativa.', 'Menos frecuentes que diminutivos pero muy expresivos.']},
+    {heading: '¿Cuáles son los diminutivos más comunes en ruso?', paragraphs: ['"кот" (gato) → "котик" (gatito). "дом" (casa) → "домик" (casita). "книга" (libro) → "книжечка" (librito).', 'Son muy usados en ruso coloquial y afectivo.']},
+    {heading: '¿Cómo funcionan los aumentativos expresivos?', paragraphs: ['"дом" (casa) → "домище" (casarón). "ветер" (viento) → "ветрище" (ventarrón). Expresan algo grande, a menudo con connotación negativa.', 'Menos frecuentes que diminutivos pero muy expresivos.']},
     {heading: 'Cambio de género con sufijos', paragraphs: ['"дом" (masc) → "домик" (masc diminutivo). "кот" (masc) → "кошка" (fem form), "кошечка" (fem diminutivo de koshka). Algunos sufijos cambian género.', 'Importante conjugar correctamente con género nuevo.']},
     {heading: 'Afección vs tamaño real', paragraphs: ['"столик" puede ser pequeño o simplemente querido/íntimo (mesa pequeña de café, mesa del estudio). "мамочка" (mamita) es afectuoso, no necesariamente pequeño.', 'En ruso, diminutivos cargan connotación emocional.']},
   ],

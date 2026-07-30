@@ -47,17 +47,24 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El cirílico ruso: 33 letras y sus grupos',
+      heading: '¿Cómo son las 33 letras del alfabeto cirílico ruso?',
       paragraphs: [
         'El alfabeto cirílico ruso tiene 33 letras. Para el hispanohablante, la estrategia más eficaz es dividirlas en tres grupos: (1) las que parecen latinas y suenan similar (А, О, К, М, Т), (2) las "trampas" — letras que parecen latinas pero suenan diferente (В=V, Н=N, Р=R, С=S) y (3) las letras completamente nuevas.',
         'Las trampas son el mayor obstáculo inicial. Ver "РЕСТОРАН" y leer "PECTOPAH" en vez de "RESTORAN" (restaurante) es el error clásico. Una vez memorizadas las trampas (В, Н, Р, С, Х sobre todo), la lectura mejora rápidamente porque el resto del cirílico sigue siendo fonético — cada letra tiene un sonido fijo, mucho más regular que el inglés o el francés.',
       ],
     },
     {
-      heading: 'Signos blando y duro: Ь y Ъ',
+      heading: '¿Qué función tienen los signos blando Ь y duro Ъ?',
       paragraphs: [
         'Dos letras rusas no tienen sonido propio. Ь (znak myagkiy = signo blando) suaviza la consonante anterior: день (den\') = día, con consonante palatalizada. Ъ (tvyordiy znak = signo duro) separa una consonante de una vocal y crea pausa articulatoria: объявление (ob\'yavleniye). En A1 basta con saber que Ь suaviza.',
         'El acento en ruso (тоническое ударение) no se escribe normalmente en textos cotidianos pero determina la pronunciación de las vocales. La О no acentuada suena como "a": Москва (Moskva) no "Mosk-VA". En A1 aprende palabras con su acento marcado cuando sea posible.',
+      ],
+    },
+    {
+      heading: '¿Qué letras cirílicas son "falsos amigos" del alfabeto latino?',
+      paragraphs: [
+        'Varias letras rusas se parecen a letras latinas pero suenan distinto, y son la mayor fuente de errores al empezar. В se lee "v" (no "b"): вода = agua. Н se lee "n": нос = nariz. Р se lee "r" vibrante: рука = mano. С se lee "s": суп = sopa. У se lee "u": утро = mañana. Х se lee como la "j" española: хорошо = bien. Además Е se lee "ye" (ye) y Ё "yo".',
+        'La trampa para el hispanohablante es leerlas con su valor latino (ver "PECTOPAH" y decir "pectopah" cuando pone РЕСТОРАН = restorán). Conviene memorizar primero este grupo de falsos amigos, porque aparecen en muchísimas palabras cotidianas y confundirlos cambia por completo la pronunciación.',
       ],
     },
   ],

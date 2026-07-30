@@ -57,7 +57,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo construir números compuestos',
+      heading: '¿Cómo se construyen los números compuestos sino-coreanos?',
       paragraphs: [
         'El sistema es completamente regular: 11 = 십일 (sip + il), 22 = 이십이 (isip + i), 35 = 삼십오 (samsip + o), 100 = 백 (baek), 200 = 이백 (i + baek), 1.000 = 천 (cheon), 5.000 = 오천 (o + cheon).',
         'La única excepción notoria es 10월 (octubre) que se pronuncia 시월, no 십월. También en 6월 (junio) se puede escuchar 유월 en lugar de 육월. Estas dos excepciones conviene memorizar directamente.',
@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Meses del año con números sino-coreanos',
+      heading: '¿Cómo se dicen los meses del año en coreano?',
       paragraphs: [
         'Los meses en coreano son simplemente el número + 월(wol): 1월(일월=enero), 2월(이월=febrero), 3월(삼월=marzo), 4월(사월=abril), 5월(오월=mayo), 6월(유월=junio), 7월(칠월=julio), 8월(팔월=agosto), 9월(구월=septiembre), 10월(시월=octubre), 11월(십일월=noviembre), 12월(십이월=diciembre).',
         'Para decir una fecha completa: 삼월 이십오일 = 25 de marzo. El orden es mes + 월 + día + 일: 구월 십오일 = 15 de septiembre.',

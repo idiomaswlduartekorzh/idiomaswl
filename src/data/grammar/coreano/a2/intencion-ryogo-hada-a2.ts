@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-(으)려고 con verbos de movimiento',
+      heading: '¿Cómo se usa -(으)려고 con verbos de movimiento?',
       paragraphs: [
         'Cuando -(으)려고 precede a verbos de movimiento como 가다 (ir), 오다 (venir), 나가다 (salir), se usa sin 하다 para indicar el proposito del desplazamiento: 책을 사려고 서점에 갔어요 (Fui a la libreria a comprar un libro).',
         'Esta es una construccion muy frecuente en coreano cotidiano. Piensa en ella como "fui a [lugar] para [hacer algo]": 수업을 들으려고 학교에 왔어요 (Vine a la escuela para asistir a clase).',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-(으)려고 해요 vs 할 거예요',
+      heading: '¿Cuál es la diferencia entre -(으)려고 해요 y 할 거예요?',
       paragraphs: [
         '-(으)려고 해요 indica una intencion planificada y consciente: 내일 운동하려고 해요 (Planeo hacer ejercicio manana — es mi plan). 할 거예요 puede ser mas espontaneo o predictivo: 내일 운동할 거예요 (Voy a hacer ejercicio manana — prediccion o intencion general).',
         'Cuando quieres enfatizar que algo es un plan firme, usa -(으)려고 해요. En conversacion casual ambas formas son aceptables.',

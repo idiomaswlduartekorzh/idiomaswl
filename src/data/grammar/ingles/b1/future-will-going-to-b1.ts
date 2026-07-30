@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         'Error frecuente: usar will para todo. "Tomorrow I will go to the gym" es correcto pero suena a promesa/predicción. Si ya es tu plan: "I\'m going to go to the gym." Si tienes una clase reservada: "I\'m going to the gym at 7."',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "will" y "going to"?',
+      paragraphs: [
+        '"will" para decisiones del momento y predicciones sin evidencia ("I\'ll get it", "It will be fine"). "going to" para planes ya decididos y predicciones con evidencia presente ("I\'m going to study tonight", "Look, it\'s going to rain"). En planes concretos se prefiere "going to".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el present continuous para hablar del futuro?',
+      paragraphs: [
+        'Para planes ya organizados con hora o fecha (citas, reservas): "I\'m meeting the client at 3", "We\'re flying to Rome on Monday". Es aún más concreto que "going to": el plan ya está fijado.',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen predicciones sobre el futuro en inglés?',
+      paragraphs: [
+        'Con "will" para predicciones basadas en opinión ("I think it will rain") y con "going to" para predicciones con evidencia presente ("The sky is dark — it\'s going to rain"). Se usan mucho con "I think", "probably", "maybe".',
+      ],
+    },
   ],
 
   visual: {

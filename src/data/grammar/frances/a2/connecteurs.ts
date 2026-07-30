@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Donc y alors: consecuencia natural',
+      heading: '¿Cómo se expresa la consecuencia con donc y alors en francés?',
       paragraphs: [
         'Donc y alors expresan una consecuencia lógica: "Il est tard, donc/alors nous partons" (Es tarde, así que nos vamos). La diferencia es matiz: donc es más formal y lógico; alors es más oral y narrativo. C\'est pourquoi y par conséquent se usan en escritura más formal: "Il n\'a pas étudié, c\'est pourquoi il a échoué."',
         'Donc puede también usarse para retomar el hilo de un discurso: "Donc, comme je vous disais..." (Entonces, como les decía...). En oral, alors tiene muchos usos: consecuencia, narración, pregunta ("Alors ?") y relleno conversacional.',
       ],
     },
     {
-      heading: 'Pourtant/cependant vs en revanche: oposición y contraste',
+      heading: '¿Cómo se expresa la oposición en francés (pourtant, cependant, en revanche)?',
       paragraphs: [
         'Pourtant y cependant expresan concesión o sorpresa: el segundo elemento contradice lo esperado del primero. "Il est très intelligent, pourtant il fait des erreurs stupides" (Es muy inteligente, sin embargo comete errores estúpidos — esto sorprende). Cependant es más literario y formal.',
         'En revanche y par contre expresan contraste equilibrado, no sorpresa: se presentan dos aspectos opuestos de la misma realidad. "Ce restaurant est cher, en revanche la qualité est excellente" (Este restaurante es caro; en cambio, la calidad es excelente). Par contre es más oral.',
+      ],
+    },
+    {
+      heading: '¿Qué son los connecteurs logiques en francés?',
+      paragraphs: [
+        'Son las palabras que articulan un texto marcando la relación entre ideas: consecuencia (donc, alors, par conséquent), oposición (mais, pourtant, cependant, en revanche), adición (de plus, en outre), causa (car, parce que) y conclusión (enfin, en conclusion). Dominarlos es lo que separa un francés de frases sueltas de un discurso cohesionado, y es un criterio explícito de evaluación en el DELF. Cada uno tiene su registro: "donc" es neutro, "par conséquent" es formal y escrito, "du coup" es muy coloquial. Colocarlos bien (con su coma correspondiente) da inmediatamente un aire más natural y estructurado al texto.',
       ],
     },
   ],

@@ -56,7 +56,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación del futuro do conjuntivo',
+      heading: '¿Cómo se forma el futuro do conjuntivo en portugués?',
       paragraphs: [
         'Para verbos regulares, el futuro do conjuntivo es fácil: en muchas personas coincide con el infinitivo. La fórmula es: infinitivo + terminaciones. La gran ventaja es que eu y ele/ela son idénticos al infinitivo. Solo tu, nós, vós y eles/elas tienen terminaciones propias.',
         'Para irregulares, usa la raíz del pretérito perfeito (igual que el imperfeito do conjuntivo): tiver (ter), for (ser/ir), estiver (estar), fizer (fazer), vier (vir), puder (poder), quiser (querer), souber (saber), disser (dizer). Estas son las formas más importantes que debes memorizar.',
@@ -85,7 +85,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El error más frecuente de los hispanohablantes',
+      heading: '¿Cuál es el error más frecuente con el futuro do conjuntivo?',
       paragraphs: [
         'El error número uno es usar el presente de indicativo después de "quando" cuando se habla del futuro. En español decimos "cuando llegues" (subjuntivo presente), pero en portugués es "quando chegares" (futuro do conjuntivo). Usar "quando chegas" en contexto futuro suena extraño para un hablante nativo de portugués.',
         'El segundo error es usar el futuro de indicativo: "quando chegarei" es incorrecto. En portugués nunca se usa el futuro de indicativo después de "quando" o "se". Siempre futuro do conjuntivo para acciones futuras eventuales.',

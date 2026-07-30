@@ -44,7 +44,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Cómo se dice "no" en ruso: не vs нет',
+      heading: '¿Cómo se dice "no" en ruso: не o нет?',
       paragraphs: [
         'El ruso tiene dos palabras principales para la negación. не es una partícula que se coloca directamente antes del verbo (o del elemento que se niega): Я не говорю по-китайски (No hablo chino). нет es tanto la respuesta negativa ("no") como la expresión de ausencia ("no hay").',
         'La distinción es simple: si niegas una acción con un verbo conjugado, usas не antes del verbo. Si respondes "no" a una pregunta o dices que algo no existe, usas нет.',
@@ -58,14 +58,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'не: la partícula negativa universal',
+      heading: '¿Cómo se usa не, la partícula negativa universal?',
       paragraphs: [
         'не es el "no" del español que va antes del verbo. La regla es simple: justo antes del verbo conjugado. Я не понимаю (No entiendo), Он не читает (Él no lee), Мы не говорим по-японски (No hablamos japonés).',
         'не también puede negar adjetivos cuando son predicativos: Это не сложно (Eso no es difícil), Он не большой (No es grande). La posición siempre es inmediatamente antes del elemento negado.',
       ],
     },
     {
-      heading: 'нет: ausencia y respuesta negativa',
+      heading: '¿Cómo expresa нет la ausencia y la respuesta negativa?',
       paragraphs: [
         'нет tiene dos funciones. Como respuesta: — Вы говорите по-русски? — Нет (¿Habla usted ruso? — No). Como expresión de ausencia: нет + sustantivo. En este uso, el sustantivo va en genitivo, pero en A1 es suficiente aprender las frases hechas más frecuentes.',
         'Frases con нет que debes conocer desde A1: Нет проблем (No hay problema — literalmente "No de problemas"), Нет времени (No hay tiempo), Нет денег (No hay dinero). El genitivo se aprenderá en profundidad en A2.',

@@ -47,7 +47,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Artículos definidos: le, la, l\', les',
+      heading: '¿Cuándo se usan le, la, l\' y les en francés?',
       paragraphs: [
         '"Le" (el) va con sustantivos masculinos singulares: le livre (el libro), le chat (el gato). "La" (la) con femeninos singulares: la table (la mesa), la rue (la calle). "L\'" reemplaza le y la antes de vocal o h muda: l\'ami (el amigo), l\'école (la escuela), l\'hôtel (el hotel).',
         '"Les" (los/las) es el artículo definido para todos los plurales sin distinción de género: les livres, les tables, les amis, les écoles.',
@@ -66,7 +66,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Contracciones obligatorias: au y du',
+      heading: '¿Cómo se forman las contracciones au y du en francés?',
       paragraphs: [
         'Cuando la preposición "à" (a/en/al) va seguida de "le", la contracción es obligatoria: à + le = au. Je vais au cinéma ✓ (no "à le cinéma"). "À la" y "à l\'" no se contraen.',
         'Cuando la preposición "de" (de/del) va seguida de "le", también hay contracción obligatoria: de + le = du. Je parle du film ✓ (no "de le film"). "De la" y "de l\'" no se contraen.',

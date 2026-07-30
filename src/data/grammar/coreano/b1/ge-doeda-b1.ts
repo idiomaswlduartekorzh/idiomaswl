@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar -게 되다 vs -(으)려고 하다 vs -기로 하다',
+      heading: '¿Cuál es la diferencia entre -게 되다, -(으)려고 하다 y -기로 하다?',
       paragraphs: [
         '-게 되다: el cambio es circunstancial, gradual o externo. 서울에 살게 됐어요. (Acabé viviendo en Seúl — las cosas resultaron así.)',
         '-(으)려고 하다: intención en proceso, decisión activa. 서울에 살려고 해요. (Estoy planeando vivir en Seúl — es mi intención activa.)',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Contextos típicos de -게 되다',
+      heading: '¿En qué contextos se usa -게 되다?',
       paragraphs: [
         'Cambios de vida: trabajo, vivienda, relaciones. "회사를 그만두게 됐어요" (Acabé renunciando al trabajo — las circunstancias me llevaron a ello.)',
         'Hábitos y gustos adquiridos gradualmente: 운동을 좋아하게 됐어요 (Llegué a gustar del ejercicio). Es muy natural para hablar de cambios en preferencias.',

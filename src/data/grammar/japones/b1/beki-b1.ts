@@ -39,8 +39,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es 〜べき?', paragraphs: ['〜べき expresa obligación ética o lógica: lo que DEBERÍA hacer por responsabilidad moral, razón lógica o norma social.', 'Es diferente de 〜なければならない (obligación forzada/urgente) y 〜た ほうがいい (recomendación).']},
-    {heading: '〜べきだ: obligación fuerte', paragraphs: ['"親は子どもを大事にすべきだ" (los padres deberían cuidar a sus hijos — responsabilidad ética). "学生は宿題をやるべきだ" (los estudiantes deberían hacer la tarea).', 'Expresa lo que la lógica o la moral EXIGE.']},
-    {heading: '〜べきではない: prohibición lógica', paragraphs: ['"子どもの前で悪口を言うべきではない" (no deberías hablar mal frente a niños — inapropiado). "秘密を他の人に話すべきではない" (no deberías contar secretos a otros).', 'Expresa lo que moralmente NO deberías hacer.']},
+    {heading: '¿Cómo se usa 〜べきだ para una obligación fuerte?', paragraphs: ['"親は子どもを大事にすべきだ" (los padres deberían cuidar a sus hijos — responsabilidad ética). "学生は宿題をやるべきだ" (los estudiantes deberían hacer la tarea).', 'Expresa lo que la lógica o la moral EXIGE.']},
+    {heading: '¿Cuándo se usa 〜べきではない (prohibición lógica)?', paragraphs: ['"子どもの前で悪口を言うべきではない" (no deberías hablar mal frente a niños — inapropiado). "秘密を他の人に話すべきではない" (no deberías contar secretos a otros).', 'Expresa lo que moralmente NO deberías hacer.']},
     {heading: '〜べきだった: pasado contrafáctico', paragraphs: ['"もっと勉強するべきだった" (debería haber estudiado más). "その時に言うべきだった" (debería haber dicho en ese momento).', 'Lamento de no haber cumplido con la obligación.']},
     {heading: 'べき vs なければならない', paragraphs: ['"正直であるべきだ" (deberías ser honesto — ética) vs "明日までに終わらなければならない" (TIENES QUE terminarlo para mañana — urgencia). べき es ético/lógico; なければならない es forzado/urgente.', 'Contextos diferentes aunque ambos expresan obligación.']},
   ],

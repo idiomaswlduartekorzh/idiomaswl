@@ -52,21 +52,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los pronombres en acusativo: cuándo y cómo cambian',
+      heading: '¿Cómo son los pronombres personales en acusativo en alemán?',
       paragraphs: [
         'En alemán, los pronombres personales tienen formas distintas según su función en la frase. En nominativo (sujeto) son: ich, du, er, sie, es, wir, ihr, sie/Sie. En acusativo (objeto directo, responde a "¿a quién?" o "¿qué?") cambian: ich→mich, du→dich, er→ihn. Las demás formas no cambian o cambian mínimamente: wir→uns, ihr→euch.',
         'Los tres cambios que hay que memorizar a toda costa son: ich→mich, du→dich, er→ihn. Estos son los únicos cambios "no predecibles". El resto: sie (ella)→sie, es→es, sie/Sie→sie/Sie no cambian en acusativo. Y wir→uns / ihr→euch siguen un patrón claro.',
       ],
     },
     {
-      heading: 'Cómo identificar el objeto directo (Akkusativ)',
+      heading: '¿Cómo se identifica el objeto directo en alemán?',
       paragraphs: [
         'El objeto directo (acusativo) responde a la pregunta "¿Qué?" o "¿A quién?" después del verbo. En "Ich liebe dich", "dich" responde a "¿A quién amo?". En "Er sieht uns", "uns" responde a "¿A quién ve?". Los verbos más comunes en A1 que toman objeto acusativo son: sehen (ver), kennen (conocer), lieben (amar), mögen (gustar), suchen (buscar), brauchen (necesitar), haben (tener), verstehen (entender).',
         'Diferencia con dativo: el dativo responde a "¿para quién?" o "¿a quién?" en sentido indirecto. Ich gebe dir das Buch (dativo: te doy el libro). Ich liebe dich (acusativo: te amo). En A1 el foco está en el acusativo; el dativo se trabaja más en A2.',
       ],
     },
     {
-      heading: 'Posición del pronombre en la frase',
+      heading: '¿Dónde va el pronombre acusativo en la frase alemana?',
       paragraphs: [
         'El pronombre acusativo generalmente aparece justo después del verbo conjugado: Ich sehe ihn. / Er liebt mich. / Kennst du uns? Cuando hay también un pronombre dativo en la misma frase, en alemán el acusativo va después del dativo: Ich gebe dir das Buch → Ich gebe es dir (acusativo "es" antes que dativo "dir" solo cuando el acusativo es pronombre). Esta regla de A2 no es necesaria en A1.',
         'Lo más importante en A1 es reconocer y usar los pronombres acusativos en su posición natural después del verbo. "Siehst du ihn?" / "Ich kenne sie nicht." / "Er braucht uns." — el pronombre acusativo forma una unidad compacta con el verbo.',

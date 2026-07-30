@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '前に y 後で: la regla de las formas verbales',
+      heading: '¿Qué forma verbal piden 前に y 後で?',
       paragraphs: [
         'La clave de 前に y 後で es la forma verbal que llevan. 前に siempre va con la FORMA DICCIONARIO: "食べる前に" (antes de comer), sin importar si la oración está en pasado o futuro. 後で siempre va con la FORMA た: "食べた後で" (después de haber comido).',
         'Esto es diferente del español donde ambas expresiones usan el infinitivo ("antes de comer", "después de comer"). En japonés, la forma reflejada la completitud de la acción: 後で usa た porque la acción ya está completada (aunque el contexto global sea futuro).',
       ],
     },
     {
-      heading: 'Con sustantivos: siempre の前に / の後で',
+      heading: '¿Cómo se usan 前に y 後で con sustantivos (の前に / の後で)?',
       paragraphs: [
         'Con sustantivos, tanto 前に como 後で necesitan の entre el sustantivo y la expresión temporal: "授業の前に" (antes de la clase), "仕事の後で" (después del trabajo), "昼ご飯の後で" (después del almuerzo). Sin の es agramatical: "授業前に" ❌.',
         'Las expresiones más frecuentes en japonés cotidiano: 食事の前に (antes de comer), 寝る前に (antes de dormir), 起きた後で (después de levantarse), 仕事の後で (después del trabajo).',
+      ],
+    },
+    {
+      heading: '¿Por qué 前に va siempre con verbo en presente aunque la acción sea pasada?',
+      paragraphs: [
+        'La regla de las formas es la trampa central. 前に (antes de) exige SIEMPRE el verbo en forma de diccionario (presente-plano), sin importar el tiempo de la frase: 寝る前に歯を磨きます (antes de dormir me cepillo los dientes) y también 寝る前に歯を磨きました (antes de dormir me cepillé) —el verbo antes de 前に nunca cambia a pasado—. 後で (después de), en cambio, exige el verbo en forma た (pasado-plano): 食べた後で散歩します (después de comer, paseo). Con sustantivos ambos usan の: 食事の前に (antes de la comida), 授業の後で (después de clase). La trampa para el hispanohablante es querer poner el verbo de 前に en pasado cuando la frase es pasada: en japonés 前に→forma diccionario y 後で→forma た, fijo.',
       ],
     },
   ],

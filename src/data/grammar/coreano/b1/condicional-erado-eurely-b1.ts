@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia entre -면 (si) y -더라도 (aunque)',
+      heading: '¿Cuál es la diferencia entre -(으)면 y -더라도?',
       paragraphs: [
         '-면 es condicional simple: describe relación de causa-efecto lógica. "-면" = "si ocurre A, ocurre B como resultado". 비가 오면 안 가요 (si llueve, no voy). Es lógico: lluvia → no ir.',
         '-더라도 es condicional concesivo: la consecuencia se mantiene A PESAR de la condición. "비가 와도 가요" (aunque llueva, voy). El énfasis está en que la lluvia no te detiene.',
       ],
     },
     {
-      heading: 'Uso con verbos y adjetivos',
+      heading: '¿Cómo se usa -더라도 con verbos y adjetivos?',
       paragraphs: [
         'Con verbos: 가다 → 가더라도 (aunque vaya), 먹다 → 먹더라도 (aunque coma), 연락하다 → 연락하더라도 (aunque contacte).',
         'Con adjetivos: 예쁘다 → 예쁘더라도 (aunque sea bonito), 비싸다 → 비싸더라도 (aunque sea caro), 어렵다 → 어렵더라도 (aunque sea difícil).',

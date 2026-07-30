@@ -60,14 +60,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo reconocer los pares de aspecto',
+      heading: '¿Cómo se reconocen los pares de aspecto?',
       paragraphs: [
         'La mayoría de los verbos perfectivos se forman añadiendo un prefijo al imperfectivo: читать → прочитать, писать → написать, делать → сделать. Algunos pares son irregulares: говорить (НСВ) / сказать (СВ), брать (НСВ) / взять (СВ).',
         'Hay palabras clave que indican qué aspecto usar. Palabras como всегда (siempre), часто (frecuentemente), каждый день (cada día) piden imperfectivo. Palabras como уже (ya), наконец (por fin), вдруг (de repente) piden perfectivo.',
       ],
     },
     {
-      heading: 'El aspecto en el tiempo futuro',
+      heading: '¿Cómo funciona el aspecto en el tiempo futuro?',
       paragraphs: [
         'El aspecto también afecta al futuro. El futuro imperfectivo se forma con буду + infinitivo: Я буду читать (voy a leer / estaré leyendo). El futuro perfectivo se forma conjugando el verbo perfectivo: Я прочитаю (leeré / terminaré de leer).',
         'Esta diferencia es crucial: "Я буду читать эту книгу" implica proceso continuo, mientras que "Я прочитаю эту книгу" implica que la terminarás.',

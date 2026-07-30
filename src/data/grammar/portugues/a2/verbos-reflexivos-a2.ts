@@ -69,6 +69,32 @@ const topic: GrammarTopic = {
         'En preguntas, el orden es el mismo que en afirmativas: "Você se lembra do aniversário?" / "Como você se chama?" En el habla cotidiana brasileña, el orden de palabras es muy flexible.',
       ],
     },
+    {
+      heading: '¿Cuáles son los pronombres reflexivos en portugués?',
+      paragraphs: [
+        'Son cinco formas que concuerdan con el sujeto: me, te, se, nos y se (plural). En Brasil se colocan normalmente delante del verbo. Esta tabla muestra la conjugación de un verbo reflexivo modelo:',
+      ],
+      table: [
+        ['Persona', 'Pronombre', 'levantar-se'],
+        ['eu', 'me', 'eu me levanto'],
+        ['tu', 'te', 'tu te levantas'],
+        ['você/ele/ela', 'se', 'ele se levanta'],
+        ['nós', 'nos', 'nós nos levantamos'],
+        ['vocês/eles/elas', 'se', 'eles se levantam'],
+      ],
+    },
+    {
+      heading: '¿El pronombre reflexivo va antes o después del verbo en portugués?',
+      paragraphs: [
+        'En el portugués brasileño va antes del verbo en casi todos los casos: "Eu me levanto", "Ela se chama", "Nós nos preparamos". La forma con guion pospuesta ("Levanto-me", "Chama-se") es típica del portugués europeo y de la escritura formal. Como aquí enseñamos la variante brasileña, la regla práctica es: pronombre delante del verbo, salvo en el imperativo afirmativo de cortesía, donde sí se pospone ("Sente-se, por favor"). El error de decir "eu se levanto" viene de no concordar el pronombre: debe ser "me" para eu.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "me llamo" en portugués?',
+      paragraphs: [
+        'Se dice "eu me chamo" + nombre: "Eu me chamo Ana". El verbo es reflexivo (chamar-se), así que necesita el pronombre "me"; decir solo "eu chamo Ana" significaría "yo llamo a Ana" (a otra persona). Para preguntar el nombre se usa "Como você se chama?" o, más informal, "Qual é o seu nome?". La respuesta también puede ser "Meu nome é Ana", equivalente y muy común.',
+      ],
+    },
   ],
 
   visual: {

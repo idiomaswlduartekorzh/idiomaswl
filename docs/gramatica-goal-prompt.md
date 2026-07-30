@@ -14,8 +14,10 @@ LEE PRIMERO (fuente de verdad):
 2. `docs/gramatica-content-spec.md` — el molde v2 (qué tabla lleva cada tipo de tema, reglas de prosa, método SEO).
 3. Ejemplar de referencia (calidad objetivo): `src/data/grammar/italiano/a1/verbi-irregolari.ts` y el resto de `italiano/a1/`.
 
-ORDEN DE ATAQUE: termina italiano (A2 → B1) → inglés → portugués → francés → alemán
-(cada uno A1 → A2 → B1) → coreano / japonés / ruso (al final; ver regla Zhanna).
+ORDEN DE ATAQUE: termina italiano (A2 → B1) → inglés → portugués → francés → alemán →
+coreano → japonés → ruso (cada uno A1 → A2 → B1). NINGÚN idioma se detiene a esperar validación:
+autora los 8 hasta el final. Zhanna hace UNA pasada de revisión al terminar, con el contenido ya
+en producción (no es un gate por-archivo).
 
 PROCEDIMIENTO por tema:
 1. Toma el siguiente tema no marcado en el tracker, en el orden de ataque.
@@ -40,8 +42,12 @@ REGLAS DURAS:
 - Al editar `seo[]`, asegúrate de que el array siga cerrando con `],` antes de `visual:`
   (comerse ese `],` rompió 2 archivos en A1). Escapa apóstrofos en strings con comilla simple
   (`l\'italiano`, `c\'è`).
-- Coreano/japonés/ruso: monta las tablas factuales, pero añade en el tema una marca de
-  "⚠️ revisar (Zhanna)" y anótalo en el tracker; NO se dan por cerrados sin su validación.
+- Coreano/japonés/ruso: autora las tablas factuales con el mismo rigor que el resto y da el tema
+  por hecho en el tracker. Añade en cada uno de esos temas la clave `reviewFlag: 'zhanna-pendiente'`
+  (o, si el tipo no la admite, una línea al inicio del `lead` con "· pendiente revisión Zhanna")
+  para poder listarlos después. NO bloquees el avance: Zhanna los revisa en una sola pasada final,
+  ya en producción. Extrema el cuidado con el guion factual (romanización, partículas, casos,
+  aspecto, contadores) porque nadie los valida antes de publicar.
 - NUNCA abras el preview del navegador (PC de 8 GB, crashea). Verifica solo con los comandos de abajo.
 - No hagas commit/push ni deploy salvo que el usuario lo pida.
 
@@ -56,9 +62,10 @@ AL CERRAR cada nivel/idioma:
 - Actualiza `docs/gramatica-enriquecimiento-progreso.md` (marca conteos/estado).
 - Reporta una línea de progreso (temas hechos, tablas, FAQ; qué sigue).
 
-DEFINICIÓN DE TERMINADO: todos los temas marcados en el tracker; validador y harness en verde en
-los 8 idiomas; coreano/japonés/ruso con su marca de revisión Zhanna. Cuando no quede ningún tema
-pendiente, avísalo y detente.
+DEFINICIÓN DE TERMINADO: los 465 temas marcados en el tracker; validador y harness en verde en los
+8 idiomas; coreano/japonés/ruso con su `reviewFlag` puesto. Cuando no quede ningún tema pendiente:
+avisa, detente, y entrega a Zhanna la lista de temas KO/JA/RU marcados para su pasada de revisión
+en producción (esa revisión es de ella, no un bloqueo para publicar).
 
 CADA SESIÓN: no intentes hacer los 465 de golpe. Avanza el máximo con calidad, verifica, deja el
 tracker al día, y termina el turno indicando el siguiente tema pendiente.

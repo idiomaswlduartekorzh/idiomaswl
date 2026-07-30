@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El condicional irreal en ruso: если бы + pasado',
+      heading: '¿Cómo se forma el condicional irreal (если бы + pasado)?',
       paragraphs: [
         'En ruso no existe un tiempo verbal "condicional" como en español o francés. En cambio, la condición irreal se expresa con la partícula бы más el verbo en pasado. La estructura completa es: если бы + verbo en pasado (condición) + бы + verbo en pasado (resultado). Ejemplo: "Если бы у меня было время, я бы поехал в кино" (Si tuviera tiempo, iría al cine).',
         'El verbo en pasado concuerda en género y número con el sujeto: он знал бы (él sabría), она знала бы (ella sabría), они знали бы (ellos sabrían). La partícula бы es invariable y puede colocarse después del sujeto, del verbo, o de otro elemento enfatizado: "Я бы сказал", "Сказал бы я", "Я сказал бы" — todas son gramaticalmente correctas, con ligeros matices de énfasis.',
       ],
     },
     {
-      heading: 'Бы sin если: deseo y suavidad',
+      heading: '¿Cómo se usa бы sin если para deseo y cortesía?',
       paragraphs: [
         'La partícula бы también aparece sin если бы para expresar deseo suave o petición cortés: "Я бы хотел кофе" (Me gustaría un café), "Ты бы позвонил ей" (Podrías llamarla). En este uso, бы suaviza la afirmación o da un tono de sugerencia, similar al condicional de cortesía en español.',
         'La diferencia entre real e irreal es clara: "Если я буду в Москве, я позвоню" (Si estoy en Moscú, llamaré — posible real) vs "Если бы я был в Москве, я бы позвонил" (Si estuviera en Moscú, llamaría — hipotético irreal). En ruso, el modo de las oraciones condicionales reales usa el futuro; las irreales, el pasado + бы.',
+      ],
+    },
+    {
+      heading: '¿Por qué el condicional ruso no distingue entre presente y pasado?',
+      paragraphs: [
+        'El ruso tiene un solo modo condicional, formado con el verbo en PASADO + la partícula бы, y sirve para todas las hipótesis irreales, sean de presente o de pasado. Если бы у меня было время, я бы помог puede significar tanto "si tuviera tiempo, ayudaría" (presente) como "si hubiera tenido tiempo, habría ayudado" (pasado): el contexto decide.',
+        'La trampa para el hispanohablante, acostumbrado a distinguir "ayudaría" de "habría ayudado", es que en ruso ambas usan la misma estructura бы + pasado. La partícula бы puede ir tras если, tras el verbo o incluso desplazada, pero siempre acompaña a una forma de pasado; nunca se combina con presente ni futuro.',
       ],
     },
   ],

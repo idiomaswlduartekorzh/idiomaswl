@@ -39,8 +39,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es 〜ところ?', paragraphs: ['〜ところ expresa precisión temporal: el momento exacto en el que algo sucede, sin ambigüedad sobre si pasó, está pasando o está a punto de pasar.', 'Muy usado en japonés cotidiano para dar contexto temporal específico.']},
-    {heading: '〜ているところ: acción en desarrollo', paragraphs: ['"今映画を見ているところです" (estoy viendo una película AHORA MISMO — en este preciso momento). "会議に出ているところです" (estoy en la reunión JUSTO AHORA).', 'Expresa que la acción ocurre en el momento de habla.']},
-    {heading: '〜たところ: justo completado', paragraphs: ['"朝ごはんを食べたところです" (justo desayuné hace poco). "試験が終わったところです" (el examen justo terminó).', 'Expresa acción recientemente completada.']},
+    {heading: '¿Cómo expresa 〜ているところ una acción en pleno desarrollo?', paragraphs: ['"今映画を見ているところです" (estoy viendo una película AHORA MISMO — en este preciso momento). "会議に出ているところです" (estoy en la reunión JUSTO AHORA).', 'Expresa que la acción ocurre en el momento de habla.']},
+    {heading: '¿Qué expresa 〜たところ (algo justo completado)?', paragraphs: ['"朝ごはんを食べたところです" (justo desayuné hace poco). "試験が終わったところです" (el examen justo terminó).', 'Expresa acción recientemente completada.']},
     {heading: '〜ところだ: punto de ocurrir', paragraphs: ['"寝るところです" (estoy a punto de dormir — inminente). "帰るところだ" (estoy a punto de irme).', 'Expresa acción inminente, a punto de ocurrir.']},
     {heading: 'ところで: transición conversacional', paragraphs: ['"ところで、昨日のパーティー、どうだった？" (por cierto, ¿qué tal la fiesta de ayer?). "そういえば" と同じような意味。', 'Expresión fija para cambiar de tema de manera natural.']},
   ],

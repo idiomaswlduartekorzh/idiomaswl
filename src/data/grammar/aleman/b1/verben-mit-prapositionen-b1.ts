@@ -60,10 +60,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preguntar por el complemento: wo(r)+Präposition vs. Präp.+wen',
+      heading: '¿Cómo se pregunta por el complemento preposicional en alemán?',
       paragraphs: [
         'Para preguntar por el complemento de un verbo con preposición fija, la regla es: si el complemento es una cosa → wo(r)+Präposition; si es una persona → Präposition+wen.',
         'Ejemplos: "Worauf wartest du?" (¿A qué esperas? — una cosa, el bus) vs. "Auf wen wartest du?" (¿A quién esperas? — una persona). Esta distinción es esencial para el B1.',
+      ],
+    },
+    {
+      heading: '¿Qué son los verbos con preposición fija en alemán?',
+      paragraphs: [
+        'Son verbos que exigen siempre una preposición concreta, y esa preposición determina el caso del complemento: warten auf + Akkusativ (esperar a), denken an + Akkusativ (pensar en), sich freuen über/auf (alegrarse de/por), teilnehmen an + Dativ (participar en), sprechen mit/über. El problema para el hispanohablante es que la preposición alemana casi nunca coincide con la española (denken AN, no "en"; warten AUF, no "por"), así que hay que aprender cada verbo con su preposición y su caso como un bloque, igual que en inglés (to depend ON). Además, cuando el complemento es una cosa, la pregunta usa wo(r)+preposición (Worauf wartest du?) y la respuesta un da(r)-compuesto (Ich warte darauf).',
       ],
     },
   ],

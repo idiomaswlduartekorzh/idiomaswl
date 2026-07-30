@@ -57,6 +57,38 @@ const topic: GrammarTopic = {
         'Las tres preposiciones que contraen con artículos son: de (de → do/da/dos/das), em (en → no/na/nos/nas) y a (a → ao/à/aos/às). Aprende estas contracciones como vocabulario desde el principio: "no escritório" (en la oficina), "do Brasil" (de Brasil), "ao mercado" (al mercado).',
       ],
     },
+    {
+      heading: '¿Cuáles son los artículos en portugués?',
+      paragraphs: [
+        'El portugués tiene cuatro artículos definidos (o/a/os/as = el/la/los/las) y cuatro indefinidos (um/uma/uns/umas = un/una/unos/unas), que concuerdan en género y número con el sustantivo. La correspondencia con el español es casi total; lo único nuevo es la forma "o" para el masculino singular. Esta tabla los reúne:',
+      ],
+      table: [
+        ['Género / número', 'Definido', 'Indefinido'],
+        ['Masculino singular', 'o (o livro)', 'um (um livro)'],
+        ['Femenino singular', 'a (a casa)', 'uma (uma casa)'],
+        ['Masculino plural', 'os (os livros)', 'uns (uns livros)'],
+        ['Femenino plural', 'as (as casas)', 'umas (umas casas)'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forman las contracciones de los artículos?',
+      paragraphs: [
+        'Cada artículo definido se fusiona de forma obligatoria con las preposiciones de, em, a y por. La tabla siguiente da la rejilla completa; memorizarla evita el error más típico del hispanohablante ("de o", "em a", "a o"), que en portugués simplemente no existe:',
+      ],
+      table: [
+        ['Prep.', 'o', 'a', 'os', 'as'],
+        ['de', 'do', 'da', 'dos', 'das'],
+        ['em', 'no', 'na', 'nos', 'nas'],
+        ['a', 'ao', 'à', 'aos', 'às'],
+        ['por', 'pelo', 'pela', 'pelos', 'pelas'],
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa artículo definido y cuándo indefinido?',
+      paragraphs: [
+        'La lógica es la misma del español: definido (o/a) para algo ya conocido o único ("o livro que comprei", el libro que compré), indefinido (um/uma) para algo nuevo o inespecífico ("comprei um livro", compré un libro). Una diferencia de uso frente al español: el portugués suele poner artículo delante de nombres de persona en registro coloquial brasileño ("a Ana chegou", llegó Ana) y delante de países ("o Brasil", "a Colômbia"), aunque hay excepciones como Portugal o Angola, que van sin artículo.',
+      ],
+    },
   ],
   visual: {
     mode: 'article-grid',

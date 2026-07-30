@@ -48,14 +48,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '하고 와 과: cómo conectar sustantivos en coreano',
+      heading: '¿Cómo se conectan sustantivos en coreano (하고, 와/과)?',
       paragraphs: [
         'En coreano, la conjunción "y" entre sustantivos se expresa con partículas: 하고(hago), 와(wa) o 과(gwa). A diferencia del español donde "y" es siempre la misma palabra, en coreano la forma depende del nivel de formalidad y de la sílaba final del sustantivo que precede a la partícula.',
         'Para principiantes, la recomendación es clara: aprende 하고 primero. Es coloquial, válida en casi cualquier situación y no tiene ninguna regla de selección — va con todo. Una vez consolidada, puedes añadir 와/과 para registros más formales.',
       ],
     },
     {
-      heading: 'La regla de 와/과: vocal vs. consonante',
+      heading: '¿Cuándo se usa 와 y cuándo 과 en coreano?',
       paragraphs: [
         '와 va después de un sustantivo cuya sílaba final termina en VOCAL: 커피와(café y...), 사과와(manzana y...), 의자와(silla y...). 과 va después de sustantivo cuya final es CONSONANTE: 밥과(arroz y...), 책과(libro y...), 선생님과(maestro y...).',
         'Una pista mnemotécnica: 와(wa) empieza por vocal → va con sustantivos que terminan en vocal. 과(gwa) empieza por consonante → con sustantivos que terminan en consonante.',
@@ -76,7 +76,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '랑/이랑: el nivel más informal',
+      heading: '¿Qué son 랑/이랑 en coreano?',
       paragraphs: [
         '랑(rang) e 이랑(irang) son la versión más coloquial e informal de las partículas de conjunción. Se usan entre amigos cercanos y familiares. La misma regla de vocal/consonante aplica: 랑 después de vocal (친구랑, 커피랑), 이랑 después de consonante (밥이랑, 선생님이랑).',
         'En A1 es suficiente con reconocerlas. Para producción activa, 하고 es la opción más segura y natural en cualquier contexto.',

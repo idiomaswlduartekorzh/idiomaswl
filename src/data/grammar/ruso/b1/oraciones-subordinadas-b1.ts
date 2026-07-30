@@ -40,8 +40,8 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué son oraciones subordinadas?', paragraphs: ['Oraciones subordinadas (придаточные) dependen de una oración principal: "Я знаю" + "что ты придешь" = "Я знаю, что ты придешь".', 'Se unen con conectores: что, который, если, потому что.']},
-    {heading: 'Subordinadas de objeto con ЧТО', paragraphs: ['"Я знаю, что ты придешь" — que (sé que vienes). "Он сказал, что уходит" — que (dice que se va).', 'ЧТО marca la cláusula subordinada como objeto directo de un verbo principal.']},
-    {heading: 'Relativas con КОТОРЫЙ', paragraphs: ['"Это человек, который меня помогал" — que/quien (el hombre que me ayudó). "Книга, которую я читал, очень интересная" — que (el libro que leía es muy interesante).', 'КОТОРЫЙ concuerda con el sustantivo al que modifica (género, número, caso).']},
+    {heading: '¿Cómo se forman las subordinadas de objeto con ЧТО?', paragraphs: ['"Я знаю, что ты придешь" — que (sé que vienes). "Он сказал, что уходит" — que (dice que se va).', 'ЧТО marca la cláusula subordinada como objeto directo de un verbo principal.']},
+    {heading: '¿Cómo funcionan las relativas con КОТОРЫЙ?', paragraphs: ['"Это человек, который меня помогал" — que/quien (el hombre que me ayudó). "Книга, которую я читал, очень интересная" — que (el libro que leía es muy interesante).', 'КОТОРЫЙ concuerda con el sustantivo al que modifica (género, número, caso).']},
     {heading: 'Condicionales con ЕСЛИ', paragraphs: ['"Если ты придешь, мы пойдём в кино" — si (si vienes, iremos al cine). "Если бы ты пришел, мы бы пошли" — si (si vinieras, iríamos — contrafáctico).', 'Estructura: если + presente/pasado + resultado en futuro/presente.']},
     {heading: 'Causales con ПОТОМУ ЧТО', paragraphs: ['"Я не пришел, потому что болел" — porque (no vine porque estaba enfermo). "Она ушла, потому что устала" — porque (se fue porque estaba cansada).', 'ПОТОМУ ЧТО explica la causa de la acción principal.']},
   ],

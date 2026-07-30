@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo construir ことにする y ことになる',
+      heading: '¿Cómo se construyen ことにする y ことになる?',
       paragraphs: [
         'La construcción es: verbo en forma diccionario + ことにする/ことになる. Para decisiones negativas: verbo negativa + ことにする/ことになる.',
         '例文: 毎日日本語を勉強することにした (decidí estudiar japonés todos los días). 来月から在宅勤務することになった (resultó que desde el mes que viene trabajaré desde casa). タバコをやめることにした (decidí dejar de fumar). 会議は来週に延期することになった (se decidió posponer la reunión a la semana que viene).',
       ],
     },
     {
-      heading: 'ことにしている: hábitos y normas personales',
+      heading: '¿Qué expresa ことにしている (hábitos y normas personales)?',
       paragraphs: [
         'La forma ことにしている (presente continuo de ことにする) expresa un hábito deliberado que uno mantiene activamente: "tengo la norma de / acostumbro a hacer X conscientemente".',
         '例: 毎朝ニュースを聞くことにしている (tengo como hábito escuchar las noticias cada mañana). お酒は飲まないことにしている (tengo la norma de no beber alcohol). Esta forma es muy útil para hablar de disciplina personal y rutinas conscientes.',

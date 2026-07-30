@@ -50,14 +50,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El sistema nativo coreano: números propios del idioma',
+      heading: '¿Qué son los números nativos coreanos?',
       paragraphs: [
         'Los números nativos coreanos (순우리말) son palabras del coreano puro, anteriores a la influencia china. Se usan principalmente para contar cosas en el mundo físico: cuántas manzanas hay, cuántas personas, cuántos vasos. También se usan para las horas del reloj y la edad.',
         'La gran diferencia con el sistema sino-coreano es que los números nativos van acompañados de contadores — palabras que indican la categoría del objeto contado. En coreano no se puede decir simplemente "dos manzanas" sin el contador apropiado: 사과 두 개 (lit. "manzana dos [objeto]").',
       ],
     },
     {
-      heading: 'Las formas abreviadas: 한 두 세 네',
+      heading: '¿Por qué 하나/둘/셋/넷 cambian a 한/두/세/네 en coreano?',
       paragraphs: [
         'Cuando los números 1-4 van seguidos de un contador, cambian de forma: 하나→한, 둘→두, 셋→세, 넷→네. Este cambio es consistente — aplica a todos los contadores sin excepción para estos cuatro números.',
         'A partir de 다섯(5), los números no cambian: 다섯 개, 여섯 잔, 일곱 권. Solo los cuatro primeros tienen esta alternancia. Además, 스물(20) cambia a 스무 ante contador: 스무 명.',
@@ -72,7 +72,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Contadores esenciales para A1',
+      heading: '¿Qué son los contadores en coreano?',
       paragraphs: [
         '개(gae) es el contador más versátil — se usa para objetos en general cuando no hay un contador específico. 명(myeong) y 분(bun) cuentan personas (분 es más formal y educado). 시(si) marca las horas del reloj. 잔(jan) cuenta vasos o tazas. 권(gwon) cuenta libros o cuadernos. 살(sal) indica la edad.',
         'El orden en la frase es: [sustantivo] + [número nativo (abreviado si corresponde)] + [contador]. Por ejemplo: 커피 두 잔(dos tazas de café), 책 세 권(tres libros), 선생님 한 분(un maestro — formal).',

@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'También es común añadir "to" después de "must": "You must to go" — incorrecto. Como todos los modales, "must" + verbo BASE sin "to".',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "must" y "have to"?',
+      paragraphs: [
+        'Los dos expresan obligación. "must" es una obligación que siente el hablante o una norma ("I must study"); "have to" es una obligación externa, impuesta desde fuera ("I have to work on Saturdays"). En pasado y futuro solo se usa "have to" (had to, will have to), porque "must" no cambia.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "mustn\'t" y "don\'t have to"?',
+      paragraphs: [
+        'Son opuestos, cuidado. "mustn\'t" = prohibición ("You mustn\'t smoke here" = no puedes). "don\'t have to" = ausencia de obligación ("You don\'t have to come" = no hace falta, pero puedes). El error del hispanohablante es confundirlos.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "tener que" en inglés?',
+      paragraphs: [
+        'Con "have to / has to" + verbo base: "I have to go", "She has to study". En preguntas y negaciones usa do/does ("Do you have to work?", "I don\'t have to"). "must" también expresa obligación, pero es más fuerte y no cambia por persona.',
+      ],
+    },
   ],
 
   visual: {

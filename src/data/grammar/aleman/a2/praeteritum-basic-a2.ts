@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cuándo usar el Präteritum en alemán',
+      heading: '¿Cuándo se usa el Präteritum en alemán?',
       paragraphs: [
         'El Präteritum es el tiempo pasado que encontrarás en novelas, cuentos de hadas, noticias y textos periodísticos. En la conversación oral, la mayoría de alemanes prefieren el Perfekt para verbos ordinarios. Sin embargo, sein (→ war) y haben (→ hatte) se usan habitualmente en el Präteritum incluso en el habla cotidiana.',
         'Los verbos modales (müssen, können, wollen, dürfen, sollen, mögen) también prefieren el Präteritum en la conversación: "Ich musste gestern früh aufstehen" es más natural que "Ich habe früh aufstehen müssen".',
       ],
     },
     {
-      heading: 'Conjugación de sein en Präteritum',
+      heading: '¿Cómo se conjuga sein en Präteritum?',
       paragraphs: [
         'Las formas son irregulares y hay que memorizarlas: ich war, du warst, er/sie/es war, wir waren, ihr wart, sie/Sie waren. Fíjate en que la 1ª y 3ª personas singulares son iguales: war.',
         '"War" aparece constantemente en textos y conversaciones: "Wo warst du gestern?" (¿Dónde estuviste ayer?), "Es war einmal..." (Érase una vez...), "Das war sehr schön" (Eso estuvo muy bien).',
       ],
     },
     {
-      heading: 'Los verbos modales en Präteritum',
+      heading: '¿Cómo son los verbos modales en Präteritum?',
       paragraphs: [
         'Todos los modales siguen el mismo patrón en Präteritum: eliminan la diéresis y añaden las terminaciones débiles (-te, -test, -te, -ten, -tet, -ten). müssen → musste, können → konnte, wollen → wollte, dürfen → durfte, sollen → sollte, mögen → mochte.',
         'El Infinitiv del verbo principal sigue yendo al final de la oración: "Sie konnte gestern nicht kommen." / "Wir mussten das Formular ausfüllen."',

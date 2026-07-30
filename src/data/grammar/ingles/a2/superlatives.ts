@@ -91,6 +91,24 @@ const topic: GrammarTopic = {
         'Con "good" y "bad", muchos intentan añadir -est: "the goodest" o "the baddest" son incorrectos. Las formas correctas son "the best" y "the worst".',
       ],
     },
+    {
+      heading: '¿Cómo se forman los superlativos en inglés?',
+      paragraphs: [
+        'Adjetivos cortos: the + adjetivo + -est ("the tallest", "the fastest"). Adjetivos largos: the most + adjetivo ("the most expensive", "the most beautiful"). Siempre con "the" delante. Irregulares: good → the best, bad → the worst.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "-est" y cuándo "the most"?',
+      paragraphs: [
+        '"-est" con adjetivos de una sílaba y con los de dos en -y (happy → the happiest). "the most" con adjetivos de dos o más sílabas (the most modern, the most difficult). No se combinan: "the most tallest" es incorrecto.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "el más… de" en inglés?',
+      paragraphs: [
+        'Con el superlativo + "in" o "of": "the tallest in the class", "the best of all". Se usa "in" con lugares o grupos y "of" con conjuntos o períodos. "the most interesting book of the year".',
+      ],
+    },
   ],
 
   visual: {

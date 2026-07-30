@@ -41,17 +41,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '-고 나서: Secuencia natural con pauses',
+      heading: '¿Cómo se usa -고 나서 en coreano?',
       paragraphs: [
         '-고 나서 es la forma natural de expresar secuencia en narrativa cotidiana. Permite intervalo temporal natural entre acciones: "después de ir, hice X" (hay tiempo entre ir y hacer X).',
         'Se usa constantemente en coreano para describir procesos, rutinas, historias. Mucho más natural que -자마자 en contextos ordinarios.',
       ],
     },
     {
-      heading: '-고 나서 vs -자마자 (intervalo vs inmediato)',
+      heading: '¿Cuál es la diferencia entre -고 나서 y -자마자?',
       paragraphs: [
         '-고 나서: "밥 먹고 나서 영화를 봤어요" (comí, luego vi película — tiempo entre ambas acciones es natural).',
         '-자마자: "밥 먹자마자 나갔어요" (tan pronto comí, me fui — sin tiempo entre ellas). Diferencia clave: -고 나서 es procedimiento natural; -자마자 es reacción inmediata.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre -고 나서 y -(으)ㄴ 후에?',
+      paragraphs: [
+        'Las dos significan "después de", pero con matiz distinto. -고 나서 (-go naseo) subraya que la primera acción se ha COMPLETADO antes de pasar a la segunda, con el mismo sujeto y cierta idea de "terminar y luego": 밥을 먹고 나서 이를 닦아요 (después de terminar de comer, me lavo los dientes). -(으)ㄴ 후에 es más neutro y solo indica sucesión temporal ("después de que ocurra X"), sin insistir en la finalización: 밥을 먹은 후에 이를 닦아요. En la práctica son casi intercambiables, pero -고 나서 aporta el matiz de "una vez acabado" y suena más natural en la narración de una secuencia de acciones propias.',
       ],
     },
   ],

@@ -66,6 +66,32 @@ const topic: GrammarTopic = {
         'Al igual que con los verbos -ar, "você" toma la forma de tercera persona singular: você bebe (no "você bebes"). Así, ele, ela y você comparten la misma terminación -e para verbos -er/-ir. Este es uno de los aspectos más importantes del portugués brasileño para los hispanohablantes.',
       ],
     },
+    {
+      heading: '¿Cómo se conjugan los verbos en -er e -ir en presente?',
+      paragraphs: [
+        'Los dos grupos comparten casi todas las terminaciones (-o/-es/-e/…/-em); solo se separan en nós: -emos para -er (comemos) y -imos para -ir (partimos). Esta tabla conjuga cuatro verbos en paralelo para ver la coincidencia y la única diferencia:',
+      ],
+      table: [
+        ['Persona', 'comer (-er)', 'beber (-er)', 'partir (-ir)', 'abrir (-ir)'],
+        ['eu', 'como', 'bebo', 'parto', 'abro'],
+        ['tu', 'comes', 'bebes', 'partes', 'abres'],
+        ['você/ele/ela', 'come', 'bebe', 'parte', 'abre'],
+        ['nós', 'comemos', 'bebemos', 'partimos', 'abrimos'],
+        ['vocês/eles', 'comem', 'bebem', 'partem', 'abrem'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre los verbos -er y los -ir en portugués?',
+      paragraphs: [
+        'Solo la forma de nós: -emos en los -er (bebemos, comemos) frente a -imos en los -ir (partimos, abrimos). En todas las demás personas las terminaciones son iguales. Por eso el error clásico es "nós partemos" en vez de "partimos": si el infinitivo acaba en -ir, la nós lleva -imos. En eu, tu, ele y eles no hay que preocuparse: ambos grupos coinciden.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "a gente" en lugar de "nós"?',
+      paragraphs: [
+        'En el portugués de Brasil, "a gente" reemplaza a "nós" en la conversación cotidiana y se conjuga en 3ª persona singular: "a gente come", "a gente bebe", "a gente parte" (no "a gente comemos"). Significa exactamente "nosotros", pero gramaticalmente funciona como "ele/ela". En textos formales y en Portugal se prefiere "nós" con -emos/-imos. Conviene reconocer las dos formas y elegir según el registro.',
+      ],
+    },
   ],
   visual: {
     mode: 'verb-conjugation',

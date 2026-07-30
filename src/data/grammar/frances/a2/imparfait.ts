@@ -48,17 +48,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El imparfait: el tiempo de la descripción y la costumbre",
+      heading: '¿Qué es el imparfait y para qué se usa en francés?',
       paragraphs: [
         "El imparfait es el tiempo del pasado que describe situaciones continuas, hábitos repetidos y el contexto de una narración. Mientras el passé composé expresa acciones puntuales y terminadas, el imparfait pinta el escenario: cómo era algo, qué se hacía regularmente, cuál era el estado de las cosas.",
         "La formación es muy regular: se toma la forma nous del présent, se elimina -ons y se añaden las terminaciones -ais, -ais, -ait, -ions, -iez, -aient. Así, nous mangeons → mang- → je mangeais, tu mangeais, il mangeait. El único verbo realmente irregular es être, con raíz ét-.",
       ],
     },
     {
-      heading: "Cuándo usar el imparfait vs. el passé composé",
+      heading: '¿Cuándo se usa el imparfait y cuándo el passé composé?',
       paragraphs: [
         "El imparfait se usa para: 1) describir el contexto o escenario de una historia (il faisait nuit, il y avait beaucoup de monde); 2) expresar hábitos o acciones repetidas en el pasado (tous les étés, nous allions à la mer); 3) indicar un estado mental o físico continuo (j'étais fatigué, elle avait peur).",
         "Los marcadores temporales te ayudan a identificar qué tiempo usar. El imparfait aparece con: toujours, souvent, d'habitude, tous les jours, chaque matin, quand j'étais enfant, autrefois. El passé composé aparece con: hier, une fois, soudain, tout à coup, ce matin.",
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el imparfait en francés?',
+      paragraphs: [
+        'Se parte de la raíz de la 1ª persona del plural del presente (nous) y se le quitan la terminación -ons, añadiendo -ais/-ais/-ait/-ions/-iez/-aient. Por ejemplo: nous parlons → parl- → je parlais; nous finissons → finiss- → je finissais; nous prenons → pren- → je prenais. Casi no hay irregulares: el único con raíz propia es être (j\'étais, tu étais, il était, nous étions…). Esta regularidad hace del imparfait uno de los tiempos más fáciles de conjugar del francés; la dificultad no está en la forma sino en decidir cuándo usarlo frente al passé composé.',
       ],
     },
   ],

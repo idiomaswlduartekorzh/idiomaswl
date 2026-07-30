@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~でしょう: probabilidad y conjetura en japonés',
+      heading: '¿Cómo se expresan probabilidad y conjetura con ~でしょう?',
       paragraphs: [
         '~でしょう expresa que algo es probable o que el hablante supone que algo es así. Es equivalente al español "probablemente", "creo que" o "debe de ser". "明日は雨でしょう" (Mañana probablemente llueva) es la típica frase del pronóstico del tiempo japonés.',
         'Con entonación ascendente (でしょう↑), se convierte en una pregunta de confirmación, equivalente a "¿verdad?" en español: "知っているでしょう？" (Lo sabes, ¿verdad?). Esta doble función lo convierte en una de las partículas modales más versátiles del japonés A2.',
       ],
     },
     {
-      heading: 'だろう: la versión informal de でしょう',
+      heading: '¿Cuándo se usa だろう, la versión informal de でしょう?',
       paragraphs: [
         'だろう es la forma informal de でしょう. Se usa en conversaciones informales, en el habla masculina o en el monólogo interno. "たぶん来るだろう" (Probablemente vendrá) es equivalente a "来るでしょう" pero más casual.',
         'たぶん (probablemente) y きっと (seguramente) se usan frecuentemente con でしょう/だろう para graduar el nivel de certeza: "たぶん雨でしょう" (probablemente llueva) vs "きっと来るでしょう" (seguramente vendrá).',
+      ],
+    },
+    {
+      heading: '¿Cómo cambia でしょう según la entonación?',
+      paragraphs: [
+        'でしょう tiene dos valores que dependen de la entonación al hablar. Con entonación descendente expresa conjetura del hablante: 明日は雨でしょう (mañana probablemente llueva) —típico del pronóstico del tiempo—. Con entonación ascendente (でしょう？) busca confirmación del oyente, como "¿verdad?": おいしいでしょう？ (está rico, ¿verdad?). Se coloca tras sustantivos, adjetivos y verbos en forma plana: 学生でしょう, 高いでしょう, 行くでしょう. La trampa para el hispanohablante es que でしょう NO es un futuro: 行くでしょう no es "iré" sino "probablemente irá/irás". Para futuro seguro se usa el presente simple 行きます. El grado de certeza de でしょう es medio: menos seguro que una afirmación, más que かもしれない.',
       ],
     },
   ],

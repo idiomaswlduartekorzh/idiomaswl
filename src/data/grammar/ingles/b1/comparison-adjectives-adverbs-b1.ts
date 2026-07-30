@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         'La doble comparativa expresa que dos cosas cambian juntas: the + comparativo, the + comparativo. "The more you practise, the better you get." / "The harder you study, the faster you progress." / "The more time you invest in speaking, the more confident you become." Es una estructura muy valorada en IELTS Writing.',
       ],
     },
+    {
+      heading: '¿Cómo se comparan adjetivos y adverbios en inglés?',
+      paragraphs: [
+        'Comparativo: cortos + -er + than (faster than), largos more + ... + than (more slowly than). Superlativo: the + -est (the fastest) o the most + ... (the most carefully). Irregulares: good/well → better/best; bad/badly → worse/worst.',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "as … as" y "not as … as"?',
+      paragraphs: [
+        '"as + adjetivo/adverbio + as" expresa igualdad ("She is as tall as me", "He runs as fast as you"). "not as … as" expresa inferioridad ("This isn\'t as good as that" = es peor). Es una alternativa muy natural al comparativo con "than".',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "cuanto más… más" en inglés?',
+      paragraphs: [
+        'Con la estructura "the + comparativo…, the + comparativo…": "The more you practise, the better you get" (cuanto más practicas, mejor te va). "The bigger, the better" (cuanto más grande, mejor). Es un patrón fijo del inglés.',
+      ],
+    },
   ],
 
   visual: {

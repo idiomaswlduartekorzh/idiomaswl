@@ -62,10 +62,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'すみません: la expresión más versátil del japonés',
+      heading: '¿Por qué すみません es la expresión más versátil del japonés?',
       paragraphs: [
         'すみません (sumimasen) tiene tres usos principales que sorprenden a los estudiantes hispanohablantes. Primero, para llamar la atención ("Disculpe" — como al camarero). Segundo, para disculparse levemente ("Lo siento" — si pisas a alguien). Tercero, para agradecer agradeciendo la molestia causada ("Gracias por molestarte").',
         'Este tercer uso es el más cultural: cuando alguien te ayuda, a veces decir すみません en lugar de ありがとう refleja que entiendes que la persona se ha molestado. Es una muestra de sensibilidad social japonesa.',
+      ],
+    },
+    {
+      heading: '¿Qué se dice antes y después de comer en japonés?',
+      paragraphs: [
+        'Dos fórmulas fijas acompañan siempre las comidas. Antes de comer se dice いただきます (itadakimasu), literalmente "recibo (con humildad)", equivalente a un "que aproveche" agradecido; al terminar se dice ごちそうさまでした (gochisōsama deshita), "gracias por la comida". Son expresiones sociales obligatorias, no opcionales, y se usan tanto en casa como en un restaurante. Otras fórmulas de supervivencia: おはようございます (buenos días), こんにちは (buenas tardes/hola), ありがとうございます (gracias), お願いします (por favor, al pedir algo). La trampa para el hispanohablante es que いただきます y ごちそうさまでした no tienen traducción literal cómoda; conviene aprenderlas como bloques fijos ligados al momento de comer.',
       ],
     },
   ],

@@ -15,7 +15,11 @@ const topic: GrammarTopic = {
     table: [['Estructura', 'Significado', 'Ejemplo'], ['〜はずだ', 'Expectativa', '来るはず (se supone que viene)']],
     mistakes: ['「来るはずです」 ✓ (se supone). No 「来ているはず」 con ている.'],
   },
-  seo: [{heading: '〜はずだ', paragraphs: ['彼は来るはずだ (se supone que vendría). Expresa expectativa lógica.', 'Muy usado en razonamiento.']}],
+  seo: [
+    {heading: '¿Qué expresa 〜はずだ (expectativa lógica)?', paragraphs: ['彼は来るはずだ (se supone que vendrá). Expresa una expectativa basada en razonamiento: por lo que sé, lo lógico es que ocurra.', 'Se une a la forma plana: 来るはずだ (verbo), 高いはずだ (adjetivo い), 静かなはずだ (adjetivo な, con な), 学生のはずだ (sustantivo, con の). La trampa para el hispanohablante es la conexión con の/な en sustantivos y な-adjetivos.']},
+    {heading: '¿Cuál es la diferencia entre 〜はずだ y 〜に違いない?', paragraphs: ['Ambos son deducciones, pero difieren en la fuerza. 〜はずだ expresa una expectativa lógica razonable ("se supone que...", basada en información): 予約したから、席があるはずだ (reservé, así que debería haber sitio). 〜に違いない expresa una convicción casi total del hablante ("no cabe duda de que..."): 彼が犯人に違いない (seguro que él es el culpable).', 'はずだ apela a la lógica objetiva; に違いない a la certeza subjetiva fuerte.']},
+    {heading: '¿Cómo se usa 〜はずがない para negar una expectativa?', paragraphs: ['はずがない (o はずはない) niega la posibilidad: expresa "no puede ser que...", "es imposible que...". そんなに簡単なはずがない (no puede ser tan fácil), 彼が知らないはずがない (es imposible que él no lo sepa).', 'Ojo: はずがない no es lo mismo que la simple negación 来ないはずだ (se supone que no vendrá). はずがない niega la propia expectativa con fuerza ("no hay manera de que"), mientras que 〜ないはずだ mantiene una expectativa, solo que negativa.']},
+  ],
   visual: {mode: 'scene', teacherLens: '〜はずだ: expectativa', graphicPrompt: 'Tabla: 〜はずだ', scene: [['来るはずです。', 'Se supone que viene.'], ['知っているはず。', 'Debería saber.']]
 , learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['期待', '論理']},
   practice: {levels: [{id: 'level-1', title: '〜はずだ', tag: 'Múltipla escolha', intro: 'Selecciona.', type: 'choice', items: [{scene: 'Expectativa', lines: [['', '来る___。']], options: ['はず', 'はずだ', 'べき', 'ほう'], answer: 'はずだ', explain: 'はずだ (expectativa).'}]}, {id: 'level-2', title: 'Contexto', tag: 'Expectativa', intro: 'Completa.', type: 'guidedText', scene: 'Expectativas.', text: '知っている[[0]]。'

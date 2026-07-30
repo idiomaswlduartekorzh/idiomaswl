@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "Las frases condicionales con si en francés: las tres estructuras",
+      heading: '¿Cuáles son las tres frases condicionales con si en francés?',
       paragraphs: [
         "El francés tiene tres estructuras principales con 'si' hipotético. La primera — Si + présent + futur — expresa una condición real o probable: 'S'il fait beau demain, nous irons à la plage' (Si hace buen tiempo mañana, iremos a la playa). La acción es posible y el hablante la contempla como realizable. Es el equivalente del 'si + presente + futuro' del español.",
         "La segunda — Si + imparfait + conditionnel présent — expresa una condición irreal en el presente: 'Si j'avais plus d'argent, je partirais en voyage' (Si tuviera más dinero, me iría de viaje). El hablante sabe que la condición no se cumple actualmente (no tiene suficiente dinero). En español: 'si + imperfecto de subjuntivo + condicional'. La tercera — Si + plus-que-parfait + conditionnel passé — expresa una condición irreal en el pasado: 'Si j'avais étudié davantage, j'aurais eu mon diplôme' (Si hubiera estudiado más, habría obtenido mi título).",
       ],
     },
     {
-      heading: "La regla de oro: jamás conditionnel ni futur después de si",
+      heading: '¿Por qué nunca se pone conditionnel ni futur después de "si"?',
       paragraphs: [
         "La regla más importante de las frases condicionales en francés es que JAMÁS se usa el conditionnel ni el futur directamente después de 'si' hipotético. El error 'si je pourrais' (condicional tras si) es el más frecuente entre hispanohablantes porque en español se usa 'si pudiera' (subjuntivo) o coloquialmente 'si podría'. En francés, la proposición 'si' requiere siempre un indicatif: présent, imparfait, o plus-que-parfait.",
         "Esta regla no se aplica cuando 'si' significa 'si es que' o se usa en preguntas indirectas: 'Je me demande si tu viendras' (Me pregunto si vendrás) — aquí 'si' no es hipotético sino que introduce una question indirecte, y sí puede ir con futur. La diferencia: 'Si tu viens' (hipótesis: si vienes → condición) vs 'Je ne sais pas si tu viendras' (duda: no sé si vendrás → question indirecte).",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Variantes y usos especiales de si conditionnel",
+      heading: '¿Qué usos especiales tiene "si" en francés?',
       paragraphs: [
         "Además de las tres estructuras principales, hay usos especiales: Para vérités générales (leyes científicas, hechos invariables): si + présent + présent. 'Si tu chauffes le fer, il se dilate' (Si calientas el hierro, se dilata). Para condiciones con resultado inmediato: si + présent + présent/impératif. 'Si tu as faim, mange quelque chose!' (Si tienes hambre, ¡come algo!).",
         "La structure mixte (mixta) combina irreal pasado con resultado presente: si + plus-que-parfait + conditionnel présent. 'Si tu m'avais écouté hier, tu ne serais pas dans cette situation' (Si me hubieras escuchado ayer, no estarías en esta situación). El 'si' se refiere al pasado pero el resultado se aplica al presente. Esta estructura avanzada aparece en el nivel B2, pero es útil reconocerla.",

@@ -57,6 +57,27 @@ const topic: GrammarTopic = {
         'Los verbos con participios irregulares más comunes son: escrever → escrito, fazer → feito, abrir → aberto, ver → visto, dizer → dito, pôr → posto, vir → vindo. Estos participios son los que se usan en la voz pasiva.',
         'Algunos verbos tienen dos participios: uno regular (usado con ter/haver) y uno irregular (usado con ser en la voz pasiva). Por ejemplo: "Ela tinha entregado" (regular) pero "O trabalho foi entregue" (irregular con ser).',
       ],
+      table: [
+        ['Infinitivo', 'Participio', 'Ejemplo pasivo'],
+        ['escrever', 'escrito', 'O livro foi escrito.'],
+        ['fazer', 'feito', 'O bolo foi feito.'],
+        ['abrir', 'aberto', 'A loja foi aberta.'],
+        ['ver', 'visto', 'O filme foi visto.'],
+        ['dizer', 'dito', 'Tudo foi dito.'],
+        ['pôr', 'posto', 'A mesa foi posta.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se pasa de voz activa a voz pasiva en portugués?',
+      paragraphs: [
+        'El objeto directo de la activa pasa a ser sujeto de la pasiva, el verbo se convierte en "ser + participio" en el mismo tiempo, y el sujeto original se introduce con "por". "Machado escreveu o livro" → "O livro foi escrito por Machado". El participio concuerda con el nuevo sujeto en género y número (o livro → escrito; a carta → escrita; as cartas → escritas). Si el agente es desconocido o irrelevante, se omite: "O carro foi roubado". Es la misma lógica del español (fue escrito por…), así que la transformación se traslada casi directa.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "foi feito" y "está feito"?',
+      paragraphs: [
+        '"Foi feito" (ser + participio) es voz pasiva: describe la acción de hacerlo y suele mencionar quién ("O trabalho foi feito pela equipe"). "Está feito" (estar + participio) es voz pasiva de estado o resultado: describe cómo está la cosa ahora, ya terminada ("O trabalho está feito" = el trabajo ya está hecho). La diferencia es la misma de ser/estar: ser marca la acción o el proceso, estar marca el estado resultante. Para narrar quién hizo algo se usa "foi feito por"; para constatar que algo ya está listo, "está feito".',
+      ],
     },
   ],
 

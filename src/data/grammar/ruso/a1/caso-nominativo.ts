@@ -58,14 +58,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El ruso sin artículos: "la mesa" vs "una mesa"',
+      heading: '¿Cómo funciona el ruso sin artículos ("la mesa" vs "una mesa")?',
       paragraphs: [
         'Una ventaja enorme del ruso para hispanohablantes: no hay artículos definidos ni indefinidos. Стол significa tanto "una mesa" como "la mesa" — el contexto lo aclara. Студент = un estudiante / el estudiante.',
         'Esto simplifica mucho el nominativo: donde en español dices "el libro", en ruso dices simplemente книга. Sin artículo que concuerde.',
       ],
     },
     {
-      heading: 'Flexibilidad del orden de palabras',
+      heading: '¿Por qué el orden de palabras es tan flexible en ruso?',
       paragraphs: [
         'Gracias a los casos, el ruso puede cambiar el orden para dar énfasis sin cambiar el significado básico. Марина читает книгу (Marina lee el libro) y Книгу читает Марина expresan la misma acción. Марина está en nominativo en ambas frases — es siempre el sujeto.',
         'En A1 usa el orden estándar Sujeto-Verbo-Objeto. Pero al leer ruso ya sabrás que el nominativo (no la posición) señala al sujeto.',

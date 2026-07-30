@@ -67,6 +67,31 @@ const topic: GrammarTopic = {
         '"Quem" solo puede referirse a personas y siempre va precedido de preposición: "O médico com quem consultei é especialista" / "A amiga de quem te falei chegou ontem." Sin preposición, se usa "que": "O médico que consultei" (objeto directo, sin preposición).',
       ],
     },
+    {
+      heading: '¿Cuáles son los pronombres relativos en portugués?',
+      paragraphs: [
+        'Son cuatro básicos, cada uno para un tipo de antecedente. "Que" es el comodín; los demás se reservan para lugares, personas con preposición y posesión. Esta tabla los resume:',
+      ],
+      table: [
+        ['Relativo', 'Se refiere a', 'Ejemplo'],
+        ['que', 'cosas y personas', 'O livro que li.'],
+        ['quem', 'personas (con preposición)', 'A pessoa com quem falei.'],
+        ['onde', 'lugares', 'A cidade onde moro.'],
+        ['cujo/cuja', 'posesión', 'O autor cujo livro li.'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "que" y "quem" en portugués?',
+      paragraphs: [
+        '"Que" sirve para cosas y personas cuando no hay preposición delante (sujeto u objeto directo): "A mulher que chegou", "O livro que comprei". "Quem" es solo para personas y solo cuando va precedido de preposición: "A pessoa com quem falei", "O amigo de quem gosto". La regla práctica: si delante del relativo hay una preposición (com, de, para, a…) y el antecedente es una persona, usa "quem"; en cualquier otro caso, "que". En el habla brasileña coloquial "que" invade el terreno de "quem" ("a pessoa que falei"), pero la forma culta prefiere "com quem".',
+      ],
+    },
+    {
+      heading: '¿Cómo se usa "cujo" en portugués?',
+      paragraphs: [
+        '"Cujo" expresa posesión y equivale al "cuyo" español: une el poseedor con lo poseído sin artículo intermedio. Concuerda en género y número con la cosa poseída, no con el poseedor: "o autor cujo livro" (masculino: livro), "o autor cuja obra" (femenino: obra), "os alunos cujos trabalhos" (plural). Nunca se dice "o autor que o livro" ni "cujo o livro" (sin artículo tras cujo). Es un relativo culto, más frecuente en la escritura que en la conversación, pero muy valorado en textos formales.',
+      ],
+    },
   ],
 
   visual: {

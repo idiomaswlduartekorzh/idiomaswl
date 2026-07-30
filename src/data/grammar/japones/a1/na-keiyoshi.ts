@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Adjetivos な: los "adjetivos sustantivales" del japonés',
+      heading: '¿Qué son los adjetivos な (los "adjetivos sustantivales")?',
       paragraphs: [
         'Los adjetivos な se llaman na-keiyoshi y se comportan de manera diferente a los adjetivos い. En lugar de conjugarse modificando su terminación, toman la forma del sustantivo: para modificar otro sustantivo añaden な, y para ser predicado usan です y sus variantes (igual que los sustantivos con です). Esto los hace más predecibles en muchos sentidos.',
         'La confusión más frecuente para hispanohablantes es con きれい (bonito/limpio). Termina en い pero es un adjetivo な, no un adjetivo い. Así que su negativo NO es きれいくない sino きれいじゃない. Una regla práctica: los adjetivos な que vienen del chino (有名, 便利, 元気) y los que describen estados (静か, 暇, 大変) son casi siempre な.',
       ],
     },
     {
-      heading: 'Adjetivos な frecuentes en japonés A1',
+      heading: '¿Cuáles son los adjetivos な más frecuentes en japonés A1?',
       paragraphs: [
         'El vocabulario A1 de adjetivos な incluye palabras muy usadas: きれい (bonito/limpio), 静か (shizuka = tranquilo/silencioso), 有名 (yūmei = famoso), 便利 (benri = conveniente), 好き (suki = gustar — "me gusta"), 嫌い (kirai = odiar — "me disgusta"), 上手 (jōzu = hábil), 下手 (heta = torpe), 暇 (hima = libre/sin hacer nada), 元気 (genki = con energía/bien de salud), 大丈夫 (daijōbu = está bien/no hay problema), 大変 (taihen = difícil/terrible).',
         'Nota especial sobre 好き y 嫌い: en japonés "me gusta X" se expresa como "X が 好きです", literalmente "X es de mi agrado". El objeto de gusto toma が, no を. Esto es diferente al español y es un error muy frecuente: "にほんごが 好きです" (me gusta el japonés), no "にほんごを 好きです".',
+      ],
+    },
+    {
+      heading: '¿Cuándo lleva な un adjetivo な y cuándo no?',
+      paragraphs: [
+        'La な solo aparece cuando el adjetivo va DELANTE del sustantivo que describe: きれいな部屋 (una habitación bonita), 有名なレストラン (un restaurante famoso). Si el adjetivo va al final de la frase, como predicado, NO lleva な: se usa です (o だ en registro llano): この部屋はきれいです (esta habitación es bonita), sin な. En pasado y negativo se comporta como un sustantivo: きれいでした (era bonita), きれいじゃありません (no es bonita). La trampa para el hispanohablante es poner な siempre: solo se usa como puente entre el adjetivo y el sustantivo que le sigue; delante de です desaparece.',
       ],
     },
   ],

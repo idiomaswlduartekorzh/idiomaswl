@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Ser vs Estar con adjetivos: cambio de significado',
+      heading: '¿Cómo cambia el significado de un adjetivo con ser o estar?',
       paragraphs: [
         'Algunos adjetivos cambian significado completamente con "ser" vs "estar": "Soy tímido" (es mi naturaleza) vs "Estoy tímido" (ahora, en este momento, por alguna razón temporal).',
         'Otros ejemplos: "Es malo" (es una mala persona, naturaleza) vs "Está malo" (está enfermo, estado). "Es alegre" (característica permanente) vs "Está alegre" (está contento ahora).',
@@ -84,7 +84,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia crucial: ser + participio vs estar + participio',
+      heading: '¿Cuál es la diferencia entre ser + participio y estar + participio?',
       paragraphs: [
         'Ser + participio (en pasiva): "La carta fue escrita" → la acción de escribir (énfasis en la acción). Estar + participio: "La carta está escrita" → el resultado actual (énfasis en el estado).',
         'Diferencia: "Estou ocupado" (estado temporal resultante: he hecho cosas que me ocupan). "Sou ocupado" (es mi naturaleza ser una persona ocupada, siempre estoy ocupado).',

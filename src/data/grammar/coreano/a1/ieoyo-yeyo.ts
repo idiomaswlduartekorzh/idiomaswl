@@ -48,7 +48,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar 이에요 vs. 예요',
+      heading: '¿Cuándo se usa 이에요 y cuándo 예요 en coreano?',
       paragraphs: [
         '이에요 se usa cuando el sustantivo o nombre termina en consonante: 학생이에요 (학생 = estudiante, termina en ㅇ), 선생님이에요 (선생님 = profesor, termina en ㅁ), 한국 사람이에요 (사람 = persona, termina en ㅁ).',
         '예요 se usa cuando termina en vocal: 의사예요 (의사 = médico, termina en ㅏ), 한국어예요 (한국어 = coreano, termina en ㅓ), 커피예요 (커피 = café, termina en ㅣ).',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La negación: 이 아니에요',
+      heading: '¿Cómo se niega con 아니에요 en coreano?',
       paragraphs: [
         'Para negar con el verbo cópula, se usa 이 아니에요: sustantivo + 이 아니에요 (después de consonante) o 가 아니에요 (después de vocal). Ejemplo: 저는 학생이 아니에요 (No soy estudiante). 이것은 피자가 아니에요 (Esto no es pizza — "피자" termina en vocal → 가 아니에요).',
         'En A1 es suficiente aprender la forma principal: 이 아니에요. La distinción 이/가 se profundiza en el tema de partículas de sujeto.',

@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Самый + adjetivo: la forma de superlativo más usada',
+      heading: '¿Cómo se forma el superlativo con самый + adjetivo?',
       paragraphs: [
         'La forma más frecuente del superlativo en ruso es самый/самая/самое/самые + adjetivo en su forma larga. Самый concuerda con el sustantivo al que acompaña: самый (masculino), самая (femenino), самое (neutro), самые (plural). Ejemplo: самый большой город (la ciudad más grande), самая красивая девушка (la chica más bonita), самое интересное место (el lugar más interesante), самые трудные слова (las palabras más difíciles).',
         'Para añadir el complemento del superlativo (en X, de X), se usa в + prepositivo: "самый большой город в России" (la ciudad más grande de Rusia), "лучший ресторан в городе" (el mejor restaurante de la ciudad). El complemento con генитив también es posible: "лучший в мире" (el mejor del mundo).',
       ],
     },
     {
-      heading: 'Superlativos irregulares: лучший, худший',
+      heading: '¿Cuáles son los superlativos irregulares лучший y худший?',
       paragraphs: [
         'Los superlativos irregulares más importantes: хороший (bueno) → лучший (el mejor), плохой (malo) → худший (el peor), большой (grande) → наибольший (formal, el mayor), маленький → наименьший (formal, el menor). En el habla cotidiana, "самый лучший" y "самый плохой" también se usan aunque técnicamente лучший ya es superlativo.',
         'Лучший, лучшая, лучшее, лучшие se declinan como adjetivos normales: лучший фильм, лучшей книги, лучшему другу. "Он лучший ученик в классе" (Él es el mejor alumno de la clase). "Это худший вариант" (Esta es la peor opción).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el superlativo culto con -ейший/-айший?',
+      paragraphs: [
+        'Además del habitual самый + adjetivo (самый красивый = el más hermoso), existe un superlativo sintético con los sufijos -ейший (интересный → интереснейший = interesantísimo/el más interesante) y -айший tras г, к, х con alternancia (близкий → ближайший = el más cercano, высокий → высочайший). Expresa el grado máximo o "muy" con matiz enfático y culto.',
+        'La trampa para el hispanohablante es que estas formas en -ейший/-айший suenan formales o literarias y a veces equivalen a un "-ísimo" más que a un superlativo relativo; en la lengua cotidiana lo normal y seguro sigue siendo самый + adjetivo. También son irregulares лучший (el mejor) y худший (el peor).',
       ],
     },
   ],

@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "La concordancia del participio pasado: la regla de être",
+      heading: '¿Cómo concuerda el participio pasado con être en francés?',
       paragraphs: [
         "Con el auxiliar être, el participio pasado concuerda siempre con el sujeto en género y número. Esta regla se aplica a los 17 verbos de movimiento y cambio de estado que se conjugan con être (aller, venir, partir, arriver, entrer, sortir, naître, mourir, rester, monter, descendre, tomber, passer, retourner, devenir, rentrer y sus compuestos), así como a todos los verbos en voz pasiva y a todos los verbos pronominales.",
         "La regla es simple: si el sujeto es femenino, añadir -e; si es plural, añadir -s; si es femenino plural, añadir -es. 'Il est parti' (m.sg.), 'Elle est partie' (f.sg.), 'Ils sont partis' (m.pl.), 'Elles sont parties' (f.pl.). Los 17 verbos con être se memorizan con el acrónimo DR y MRS VAN DER TRAMP (inglés) o con el recurso de 'la casa de être': entrar, salir, subir, bajar, llegar, partir, nacer, morir, quedarse, volver, retornar y sus compuestos.",
       ],
     },
     {
-      heading: "La concordancia con avoir: el COD que precede",
+      heading: '¿Cuándo concuerda el participio con avoir en francés?',
       paragraphs: [
         "Con el auxiliar avoir, el participio NO concuerda con el sujeto sino con el complemento directo (COD), pero solo si este COD precede al verbo. Hay dos casos frecuentes donde el COD precede: cuando es un pronombre personal (le, la, les, me, te, nous, vous) o cuando es un pronombre relativo (que). 'J'ai vu Marie' (invariable, Marie va después). 'Je l'ai vue' (vue: concordancia con 'l'' que representa Marie, femenino). 'La fille que j'ai vue' (vue: concordancia con 'que' = la fille, femenino).",
         "En la práctica oral, esta concordancia es casi imperceptible en muchos casos (las marcas -e y -es no se pronuncian en participios regulares). Sin embargo, es obligatoria en la escritura. Los participios irregulares donde la diferencia sí se oye: fait/faite, ouvert/ouverte, mis/mise, pris/prise. 'Les clés que j'ai prises' — se oye la diferencia entre 'pris' (m.) y 'prises' (f.pl.).",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Los verbos pronominaux: reglas especiales",
+      heading: '¿Cómo concuerda el participio de los verbos pronominales en francés?',
       paragraphs: [
         "Con los verbos pronominales, la regla general es: el participio concuerda con el sujeto si el pronom réfléchi es el COD (objeto directo). 'Elle s'est habillée' (s' = elle = COD, femenino → habillée). 'Ils se sont levés' (se = ils = COD, masculino plural → levés). Sin embargo, si el verbo pronominal tiene un COD explícito diferente del pronom réfléchi, no hay concordancia con el sujeto: 'Elle s'est lavé les mains' (les mains = COD, s' = COI → pas d'accord).",
         "Los verbos pronominaux réciproques (acciones mutuas) tienen concordancia si el pronom es COD: 'Ils se sont embrassés' (se = COD de embracer l'un l'autre → accord). Pero 'Ils se sont parlé' (parler à quelqu'un → se = COI, pas de COD avant → pas d'accord). Este punto es complejo y es uno de los más difíciles del francés, incluso para hablantes nativos.",

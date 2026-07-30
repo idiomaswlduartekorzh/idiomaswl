@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Formación del gérondif: en + participe présent',
+      heading: '¿Cómo se forma el gérondif en francés?',
       paragraphs: [
         'El participe présent se forma tomando la raíz de la primera persona del plural (nous) del présent de indicatif y añadiendo -ant. Ejemplos: nous parlons → parlant → en parlant; nous finissons → finissant → en finissant; nous prenons → prenant → en prenant; nous faisons → faisant → en faisant. Tres irregulares: être → étant, avoir → ayant, savoir → sachant.',
         'El gérondif siempre lleva el artículo en delante: "en travaillant", "en mangeant", "en étant". Es invariable (no concuerda en género ni número). El sujeto del gérondif es siempre el mismo que el del verbo conjugado de la frase: "Elle écoute la radio en conduisant" (ella = ella). No se puede tener sujetos distintos.',
       ],
     },
     {
-      heading: 'Usos del gérondif: simultaneidad, manera y condición',
+      heading: '¿Para qué se usa el gérondif en francés?',
       paragraphs: [
         'El uso más frecuente es la simultaneidad: "Il chante en cuisinant" (Canta mientras cocina — las dos acciones ocurren al mismo tiempo). También expresa la manera o el medio: "Je maigris en mangeant moins" (Adelgazo comiendo menos — el gérondif indica cómo). Y a veces condición: "En travaillant plus, tu réussiras" (Trabajando más, tendrás éxito = si trabajas más).',
         'A diferencia del español, en francés el equivalente del gerundio español puede ser el présent (yo trabajo = je travaille) o el gérondif en posición adverbial (trabajando = en travaillant). El gérondif en francés siempre lleva en.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre el gérondif francés y el gerundio español?',
+      paragraphs: [
+        'Aunque se parecen, no son intercambiables. El gérondif francés (en + participe présent: "en mangeant") lleva SIEMPRE "en" y expresa simultaneidad, manera o condición, siempre con el MISMO sujeto que el verbo principal: "Il chante en travaillant" (canta mientras trabaja). El español, en cambio, usa el gerundio en más contextos, incluida la perífrasis "estar + gerundio", que en francés NO existe: la acción en curso no es "je suis mangeant" sino "je suis en train de manger". Regla clave para el hispanohablante: no traduzcas "-ndo" automáticamente por el participe présent; el gérondif solo aparece con "en" y para acciones paralelas del mismo sujeto.',
       ],
     },
   ],

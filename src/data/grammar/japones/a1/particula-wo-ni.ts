@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'を: el marcador del objeto directo en japonés',
+      heading: '¿Qué marca la partícula を (el objeto directo)?',
       paragraphs: [
         'La partícula を (romanizada como "wo" pero pronunciada "o") marca el objeto directo de la oración — la cosa sobre la que recae la acción del verbo. Equivalent al objeto directo del español sin preposición: como sushi = すしを たべます (sushi-wo como). Es la partícula que acompaña a verbos transitivos: たべる (comer), のむ (beber), よむ (leer), みる (ver), かう (comprar), きく (escuchar).',
         'Para el hispanohablante el concepto es familiar — el objeto directo en español también sigue al verbo. La diferencia es que en japonés la partícula va después del objeto (no antes) y antes del verbo que siempre cierra la frase.',
       ],
     },
     {
-      heading: 'に: tres usos principales en A1',
+      heading: '¿Cuáles son los tres usos principales de に en A1?',
       paragraphs: [
         'La partícula に (ni) tiene varios usos, pero los tres más importantes en A1 son: (1) Destino de verbos de movimiento: いく (ir), くる (venir), かえる (volver) — がっこうに いきます. (2) Lugar con verbos de existencia います/あります: うちに います = estoy en casa. (3) Tiempo/hora: くじに おきます = me levanto a las 9.',
         'La distinción más importante para el hispanohablante es entre に y で para lugar. に se usa cuando la frase expresa existencia o destino (dónde alguien está o va). で se usa cuando la frase expresa una acción que ocurre en ese lugar (dónde se hace algo). がっこうにいます = estoy en la escuela. がっこうでべんきょうします = estudio en la escuela.',
+      ],
+    },
+    {
+      heading: '¿Cómo saber si un verbo pide を o に?',
+      paragraphs: [
+        'Depende de lo que el verbo necesite. を marca el objeto directo, aquello sobre lo que recae la acción: パンを食べます (como pan), 本を読みます (leo un libro). に marca destino, hora concreta o receptor: 学校に行きます (voy a la escuela — destino), 7時に起きます (me levanto a las 7 — hora), 友達に電話します (llamo a un amigo — receptor). Un mismo verbo de movimiento suele combinar ambas de forma fija; hay que aprender qué partícula rige cada verbo. La trampa para el hispanohablante: verbos como 会います (encontrarse con) o 乗ります (subir a) usan に donde el español pondría un objeto directo — 友達に会います (me encuentro con un amigo), nunca 友達を会います.',
       ],
     },
   ],

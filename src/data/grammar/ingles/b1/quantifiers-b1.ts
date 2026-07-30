@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         'All + plural (todo el grupo): "All students must attend." / "All the information is here." Each + singular (énfasis individual): "Each student has a different learning style." Every + singular (énfasis colectivo): "Every student in the class improved." La diferencia entre each y every es sutil: each enfatiza los individuos por separado; every enfatiza el grupo completo.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "much", "many" y "a lot of"?',
+      paragraphs: [
+        '"much" con incontables ("much money"), "many" con contables plurales ("many people"), sobre todo en preguntas y negaciones. En afirmativas se prefiere "a lot of", que sirve para ambos ("a lot of money", "a lot of friends").',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "too", "too much/many" y "enough"?',
+      paragraphs: [
+        '"too" + adjetivo = demasiado ("too expensive"). "too much" + incontable / "too many" + contable = demasiado/s ("too much sugar", "too many cars"). "enough" = suficiente, va antes del sustantivo ("enough time") pero después del adjetivo ("big enough").',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "few/little" y "a few/a little"?',
+      paragraphs: [
+        '"a few" (contable) y "a little" (incontable) tienen sentido positivo: "algunos, un poco" ("a few friends", "a little time"). Sin "a", "few" y "little" tienen sentido negativo: "casi ninguno, casi nada" ("few people came", "little hope").',
+      ],
+    },
   ],
 
   visual: {

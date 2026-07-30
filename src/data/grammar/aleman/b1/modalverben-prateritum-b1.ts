@@ -48,14 +48,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los verbos modales en Präteritum: por qué no se usa Perfekt',
+      heading: '¿Por qué los verbos modales usan Präteritum y no Perfekt?',
       paragraphs: [
         'En alemán, los verbos modales casi siempre forman el pasado con Präteritum, no con Perfekt. Decir "Ich habe nicht kommen gekonnt" suena muy torpe. Lo natural es: "Ich konnte nicht kommen." Esta es una de las pocas excepciones a la regla de que el Perfekt es el tiempo del pasado preferido en el habla cotidiana.',
         'El Perfekt de modales (hatte gemusst, hatte gekonnt) se reserva para oraciones donde hay otro verbo dependiente en la misma oración subordinada. En prácticamente todos los demás casos, usa el Präteritum simple.',
       ],
     },
     {
-      heading: 'Las 6 formas: conjugación completa',
+      heading: '¿Cómo se conjugan los modales en Präteritum en alemán?',
       paragraphs: [
         'Todos los verbos modales siguen el mismo patrón en Präteritum: base sin Umlaut + terminación -te/-test/-te/-ten/-tet/-ten. müssen → musste/musstest/musste/mussten/musstet/mussten.',
         'El mismo patrón: können → konnte(n/test); dürfen → durfte(n/test); wollen → wollte(n/test); sollen → sollte(n/test); mögen → mochte(n/test). Nota: mögen pierde la -g- y añade -chte: mochte.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Matices de significado en el pasado',
+      heading: '¿Qué matices aportan los verbos modales en pasado?',
       paragraphs: [
         '"musste" expresa obligación o necesidad pasada: "Ich musste heute früh aufstehen." (Tuve que levantarme temprano.) "konnte" expresa habilidad o posibilidad: "Als Kind konnte ich gut schwimmen." (De niño sabía nadar bien.)',
         '"durfte" indica permiso pasado: "Als Kind durfte ich bis 22 Uhr aufbleiben." (De niño podía quedarme hasta las 22h.) "wollte" indica intención: "Ich wollte anrufen, aber ich hatte keine Zeit." "sollte" indica obligación externa: "Ich sollte um 8 Uhr dort sein."',

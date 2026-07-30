@@ -60,14 +60,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación: -을 vs -ㄹ',
+      heading: '¿Cuándo se usa -을 y cuándo -ㄹ en -(으)ㄹ 수 있다?',
       paragraphs: [
         'Con consonante final (no ㄹ): añade -을: 먹다 → 먹을 수 있다, 앉다 → 앉을 수 있다, 걷다 → 걸을 수 있다.',
         'Con consonante final ㄹ o vocal final: añade -ㄹ: 하다 → 할 수 있다, 가다 → 갈 수 있다, 걸다 → 걸 수 있다. Con vocal: 오다 → 올 수 있다.',
       ],
     },
     {
-      heading: '-을/ㄹ 수 없다 vs 못하다',
+      heading: '¿Cuál es la diferencia entre -(으)ㄹ 수 없다 y 못하다?',
       paragraphs: [
         '-을/ㄹ 수 없다 es la forma negativa formal/escrita: "할 수 없어요" (no puedo, formal). 못하다 es la forma coloquial más común en oralidad: "못 해요" (no puedo, casual). Significado idéntico, pero registro diferente.',
         'En TOPIK II, ambas formas son válidas, pero -을/ㄹ 수 없다 es más frecuente en textos escritos y académicos.',

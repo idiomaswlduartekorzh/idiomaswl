@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "Las negaciones avanzadas del francés: más allá de ne...pas",
+      heading: '¿Cuáles son las negaciones avanzadas del francés?',
       paragraphs: [
         "El francés tiene un sistema rico de negaciones. Además de la básica 'ne...pas', encontramos: ne...plus (ya no: antes era así, ahora no), ne...jamais (nunca: ni antes ni ahora), ne...rien (nada: ninguna cosa), ne...personne (nadie: ninguna persona), ne...que (solo, únicamente: restricción), ne...ni...ni (ni...ni: exclusión doble). Cada una aporta un matiz específico que no puede expresarse con ne...pas.",
         "La estructura básica encuadra el verbo entre 'ne' y la segunda parte: 'Je ne comprends rien' (ne...rien alrededor de comprends). En los tiempos compuestos, 'rien' y 'plus' y 'jamais' van entre el auxiliar y el participio: 'Il n'a rien compris', 'Elle n'a jamais voyagé'. Pero 'personne' es la excepción: siempre va después del participio pasado: 'Il n'a vu personne'.",
       ],
     },
     {
-      heading: "El artículo tras la negación: du/de la/des → de",
+      heading: '¿Por qué el artículo cambia a "de" tras la negación en francés?',
       paragraphs: [
         "Después de una negación (ne...pas, ne...plus, ne...jamais, ne...rien), los artículos partitivos y los artículos indefinidos plurales cambian: du → de, de la → de, des → de. Ejemplos: 'Je bois du café' → 'Je ne bois pas de café'; 'Il mange des fruits' → 'Il ne mange plus de fruits'; 'Elle a de la patience' → 'Elle n'a aucune patience'. Esta regla es obligatoria y muy marcada estilísticamente si se omite.",
         "Importante excepción: ne...que no causa este cambio de artículo, porque no es una verdadera negación sino una restricción. 'Je ne mange que du fromage' (Solo como queso) — el artículo partitif 'du' se mantiene. Tampoco cambia el artículo definido (le, la, les): 'Je n'aime pas le fromage' — el artículo definido permanece igual tras la negación.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Ne...que: la restricción que no es negación",
+      heading: '¿Qué significa "ne...que" en francés?',
       paragraphs: [
         "Ne...que significa 'solo/solamente' y expresa restricción, no negación verdadera. Su estructura coloca 'que' directamente antes del elemento restringido, no del verbo: 'Il ne travaille que le soir' (Solo trabaja por la tarde). 'Je n'ai qu'une seule chance' (Solo tengo una oportunidad). 'Elle ne parle qu'à ses amis proches' (Solo habla con sus amigos cercanos).",
         "Ne...que puede substituirse por 'seulement' sin cambiar el sentido: 'Il travaille seulement le soir'. Sin embargo, ne...que es más literario y enfático. En conversación coloquial, se usa mucho 'seulement' o incluso se omite 'ne': 'J'ai qu'une chance!' (lengua oral). En el nivel B1, es importante dominar la forma escrita completa con ne.",

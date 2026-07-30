@@ -46,14 +46,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La negación en coreano: 안 y 못',
+      heading: '¿Cómo se niega en coreano (안 y 못)?',
       paragraphs: [
         'El coreano tiene dos formas básicas de negar una acción en el presente: 안 (an) y 못 (mot), que se colocan inmediatamente antes del verbo. A diferencia del español donde la negación ("no") va antes del verbo sin distinción de significado, el coreano distingue entre no hacer algo por voluntad propia (안) y no poder hacerlo por incapacidad (못).',
         '안 먹어요 = "no como" (por decisión, no tengo hambre, no quiero). 못 먹어요 = "no puedo comer" (soy alérgico, estoy enfermo, no hay tiempo). Esta distinción es fundamental y cambia completamente el significado.',
       ],
     },
     {
-      heading: 'Posición de 안 y 못 con verbos 하다',
+      heading: '¿Dónde se colocan 안 y 못 con los verbos 하다?',
       paragraphs: [
         'Con verbos formados por sustantivo + 하다 (공부하다, 운동하다, 요리하다, etc.), 안 y 못 van entre el sustantivo y 하다, no antes del sustantivo: 공부 안 해요 ✓ (no estudio), 안 공부해요 ✗.',
         'Esta regla tiene lógica: 공부(estudio) es el contenido de lo que no se hace, y 안/못 niegan el acto de hacer (해요). Por eso van antes del hacer: "공부 안 해요" = "estudio no-hago".',
@@ -74,7 +74,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La forma larga: 지 않아요',
+      heading: '¿Qué es la negación larga 지 않아요 en coreano?',
       paragraphs: [
         'Existe una forma más larga y formal para negar: verbo + 지 않아요. Equivale a 안 + verbo en significado pero es más formal y enfática: 먹지 않아요 = 안 먹어요 (no como); 가지 않아요 = 안 가요 (no voy). En A1 es suficiente conocerla como reconocimiento pasivo — en producción activa usa 안/못.',
         'Para 못, la forma larga es: verbo + 지 못해요: 먹지 못해요 = 못 먹어요 (no puedo comer). También existen para enfatizar imposibilidad.',

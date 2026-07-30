@@ -51,7 +51,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar 을 vs. 를',
+      heading: '¿Cuándo se usa 을 y cuándo 를 en coreano?',
       paragraphs: [
         'La regla es sencilla: si la última sílaba de la palabra termina en consonante (tiene batchim), usa 을. Si termina en vocal (no tiene batchim), usa 를. Ejemplos: 물(agua, termina en ㄹ) → 물을; 커피(café, termina en ㅣ) → 커피를.',
         'La misma regla se aplica a nombres propios y palabras prestadas: 마리아를 (a María), 피자를 (pizza), 한국을 (Corea — 국 termina en ㄱ → 을).',
@@ -65,7 +65,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El objeto directo en la estructura SOV',
+      heading: '¿Dónde va el objeto directo en la oración coreana?',
       paragraphs: [
         'Recuerda que en coreano el verbo va al final. El objeto directo con 을/를 va inmediatamente antes del verbo: 저는 + 한국어를 + 공부해요. (SOV). Si hay adverbio de tiempo, va antes del objeto: 저는 + 매일 + 한국어를 + 공부해요.',
         'En conversación coloquial los coreanos frecuentemente omiten las partículas cuando el contexto es claro: 뭐 먹어요? (¿qué comes?) en lugar de 뭐를 먹어요? Pero para aprender correctamente y para la escritura, siempre incluye 을/를.',

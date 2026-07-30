@@ -44,7 +44,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Cómo concuerdan los adjetivos en ruso',
+      heading: '¿Cómo concuerdan los adjetivos en ruso?',
       paragraphs: [
         'En ruso, los adjetivos cambian de terminación según el género y número del sustantivo que modifican. Nuevo se dice новый con sustantivos masculinos, новая con femeninos, новое con neutros y новые en plural. Esta concordancia es similar al español (nuevo/nueva), pero el ruso también añade la distinción neutro.',
         'La buena noticia: las terminaciones adjetivas son más regulares que las de los sustantivos. Una vez aprendes -ый/-ая/-ое/-ые para adjetivos duros (como новый), y -ий/-яя/-ее/-ие para adjetivos blandos (como синий — azul), tienes el 90% del sistema.',
@@ -57,14 +57,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Adjetivos frecuentes del A1 para aprender',
+      heading: '¿Cuáles son los adjetivos más frecuentes del A1 en ruso?',
       paragraphs: [
         'Los adjetivos más útiles del A1: новый (nuevo), старый (viejo), большой (grande), маленький (pequeño), хороший (bueno), плохой (malo), красивый (bonito), интересный (interesante), молодой (joven), русский (ruso), холодный (frío), горячий (caliente).',
         'Un consejo práctico: aprende cada adjetivo con su forma masculina (la del diccionario). Las demás formas se derivan sistemáticamente. Si sabes новый, sabrás automáticamente новая, новое, новые.',
       ],
     },
     {
-      heading: 'Adjetivo atributivo vs predicativo',
+      heading: '¿Qué diferencia hay entre adjetivo atributivo y predicativo?',
       paragraphs: [
         'El adjetivo atributivo va antes del sustantivo y concuerda: новый студент (el nuevo estudiante), интересная книга (libro interesante). El adjetivo predicativo va después del sustantivo (con быть omitido en presente): Студент новый (El estudiante es nuevo), Книга интересная (El libro es interesante).',
         'Ambos tipos concuerdan en género y número. En español esto es automático; en ruso hay que recordar las terminaciones específicas por género.',

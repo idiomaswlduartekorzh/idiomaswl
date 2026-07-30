@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo se forma: würde + Infinitiv',
+      heading: '¿Cómo se forma el Konjunktiv II con würde en alemán?',
       paragraphs: [
         'La forma más sencilla y común del Konjunktiv II es würde + Infinitiv. Se conjuga würde según la persona y el Infinitiv queda al final: ich würde, du würdest, er/sie/es würde, wir würden, ihr würdet, sie/Sie würden.',
         'Esta construcción equivale al condicional en español: ich würde kommen = yo vendría; wir würden reisen = nosotros viajaríamos. Es la forma preferida en el alemán hablado moderno para casi todos los verbos.',
@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Las formas especiales: wäre, hätte y los modales',
+      heading: '¿Cuáles son las formas especiales del Konjunktiv II (wäre, hätte)?',
       paragraphs: [
         'Los verbos sein y haben, y todos los verbos modales, no usan würde sino que forman el Konjunktiv II directamente. Estas formas son las más frecuentes en el habla real y debes memorizarlas.',
         'wäre (sein): ich wäre, du wärst, er wäre, wir wären. Hätte (haben): ich hätte, du hättest, er hätte, wir hätten. Modales: könnte (können), müsste (müssen), sollte (sollen), dürfte (dürfen). Estas formas se parecen al Präteritum más una Umlaut (ä, ö, ü).',

@@ -59,10 +59,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El Dativo: siempre -en en declinación débil y mixta',
+      heading: '¿Cómo se declina el adjetivo en Dativo en alemán?',
       paragraphs: [
         'Una regla que simplifica mucho: en Dativo (después de mit, bei, von, aus, nach, seit, zu, gegenüber, y los artículos dem/der/dem) el adjetivo siempre termina en -en tanto en declinación débil como mixta.',
         'Ejemplos: mit dem alten Mann, mit einem alten Mann, mit der alten Frau, mit einem alten Kind. La única excepción real es la declinación fuerte: mit altem Wein (-em M/N), mit alter Milch (-er F).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre declinación fuerte, débil y mixta en alemán?',
+      paragraphs: [
+        'Las tres se distinguen por lo que va DELANTE del adjetivo. La declinación débil se usa tras artículo definido (der/die/das, dieser, jeder): el artículo ya marca el caso, así que el adjetivo toma terminaciones "cómodas" (-e o -en). La mixta se usa tras artículo indefinido (ein/eine, kein, posesivos): como ein no marca género/caso en algunas formas, el adjetivo lo compensa. La fuerte se usa cuando NO hay artículo (o tras viel, wenig, cantidades): el adjetivo asume solas las terminaciones del artículo definido (guter Kaffee, kaltes Wasser). Regla práctica para el hispanohablante: primero identifica qué determinante precede al adjetivo; ese determinante decide qué tabla de terminaciones aplicar.',
       ],
     },
   ],

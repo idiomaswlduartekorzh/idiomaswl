@@ -46,7 +46,7 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los cuatro conectores dobles más importantes del alemán B1',
+      heading: '¿Cuáles son los conectores dobles más importantes del alemán B1?',
       paragraphs: [
         'Los conectores dobles son pares de palabras que trabajan juntas para conectar dos elementos en paralelo. Son muy útiles en el alemán B1 para enriquecer la expresión, argumentar mejor y evitar repeticiones.',
         'La clave es aprenderlos como una unidad: sowohl SIEMPRE va con "als auch"; weder SIEMPRE va con "noch". No se pueden separar ni mezclar con otros conectores.',
@@ -60,10 +60,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Je...desto y zwar...aber — conectores de proporcionalidad y contraste',
+      heading: '¿Cómo se usan je...desto y zwar...aber en alemán?',
       paragraphs: [
         '"Je...desto/umso" expresa proporcionalidad: je mehr du übst, desto besser wirst du. La cláusula con "je" lleva el verbo al final (como los Nebensätze), y la cláusula con "desto" tiene inversión normal.',
         '"Zwar...aber" expresa concesión parcial: Ich bin zwar müde, aber ich mache weiter (Es cierto que estoy cansado, pero sigo). El "zwar" queda en la primera cláusula y "aber" inicia la segunda con posición verbal normal.',
+      ],
+    },
+    {
+      heading: '¿Qué son los zweiteilige Konnektoren en alemán?',
+      paragraphs: [
+        'Son conectores de dos piezas que relacionan dos elementos en pareja: "sowohl… als auch" (tanto… como), "entweder… oder" (o… o), "weder… noch" (ni… ni), "nicht nur… sondern auch" (no solo… sino también), "zwar… aber" (si bien… pero) y "je… desto/umso" (cuanto más… más). Dan cohesión y precisión al discurso y por eso se valoran en el Goethe B1. Dos trampas para el hispanohablante: "weder… noch" ya es negativo, así que no lleva "nicht" ni "kein" añadidos ("Ich trinke weder Kaffee noch Tee"); y "je… desto" cambia el orden del verbo (la primera parte es subordinada con verbo al final, la segunda invierte: "Je mehr ich lerne, desto besser verstehe ich").',
       ],
     },
   ],

@@ -51,21 +51,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los adverbios de tiempo más esenciales del coreano',
+      heading: '¿Cuáles son los adverbios de tiempo esenciales del coreano?',
       paragraphs: [
         'Los adverbios de tiempo son palabras de alto rendimiento en coreano: pocas palabras que permiten una conversación rica sobre cuándo ocurrieron o ocurrirán las cosas. El trío más esencial es 오늘(hoy)/어제(ayer)/내일(mañana) — tres palabras que cubren el 80% de las necesidades conversacionales iniciales.',
         'Una ventaja del coreano para hispanohablantes: los adverbios de tiempo no se conjugan, no cambian de forma y no requieren preposición. 오늘 va directamente en la frase sin "de" ni "en": 오늘 가요 = hoy voy.',
       ],
     },
     {
-      heading: 'Posición flexible: una ventaja del coreano',
+      heading: '¿Dónde se colocan los adverbios de tiempo en coreano?',
       paragraphs: [
         'En coreano, los adverbios tienen gran flexibilidad posicional. Se pueden colocar al inicio de la frase (posición tópica, enfatiza el tiempo), en el medio o justo antes del verbo. 오늘 학교에 가요 = 학교에 오늘 가요 = 학교에 가요 오늘 (menos natural). La primera posición es la más frecuente.',
         'Esta libertad contrasta con el español donde la posición del adverbio cambia el énfasis pero no la gramaticalidad. En coreano, dado que el verbo siempre va al final, el adverbio de tiempo al inicio crea un "marco temporal" natural para el resto de la oración.',
       ],
     },
     {
-      heading: 'Frecuencia: siempre, a veces, frecuentemente',
+      heading: '¿Cómo se expresa la frecuencia en coreano?',
       paragraphs: [
         '항상(hangsang) y su variante 늘(neul) significan "siempre". 자주(jaju) = frecuentemente. 가끔(gakkeum) = a veces, de vez en cuando. 보통(botong) = normalmente, habitualmente. 별로(byeollo) + negación = no mucho, raramente.',
         'Ejemplos: 저는 항상 커피를 마셔요(siempre bebo café), 가끔 운동해요(a veces hago ejercicio), 자주 한국 음식을 먹어요(frecuentemente como comida coreana).',

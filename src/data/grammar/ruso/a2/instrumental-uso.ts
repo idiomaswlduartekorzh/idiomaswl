@@ -46,7 +46,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El instrumental con trabajar: profesiones en ruso',
+      heading: '¿Cómo se usa el instrumental para las profesiones (работать)?',
       paragraphs: [
         'En ruso, para decir en qué trabaja alguien se usa работать + sustantivo en instrumental. Por ejemplo: Он работает врачом (trabaja de médico), Она работает учительницей (trabaja de profesora). Esto es diferente del español donde se usa "de" + nominativo.',
         'Los verbos быть (ser) y стать (llegar a ser) también rigen instrumental: Он хочет быть врачом (quiere ser médico), Она стала директором (se convirtió en directora).',
@@ -60,10 +60,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'С + instrumental: la compañía',
+      heading: '¿Cómo expresa С + instrumental la compañía?',
       paragraphs: [
         'La preposición с (con) siempre rige instrumental en ruso. Ejemplos: Я иду с другом (voy con mi amigo), Она разговаривала с мамой (hablaba con su madre), Мы с братом (mi hermano y yo — lit. nosotros con el hermano).',
         'Esta estructura también se usa para expresar ingredientes o componentes: суп с курицей (sopa con pollo), чай с лимоном (té con limón), хлеб с маслом (pan con mantequilla).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forman las terminaciones del instrumental?',
+      paragraphs: [
+        'En singular: masculinos y neutros toman -ом/-ем (стол→столом, музей→музеем, окно→окном); femeninos en -а/-я toman -ой/-ей (мама→мамой, неделя→неделей); femeninos en -ь toman -ью (тетрадь→тетрадью). En plural, la terminación general es -ами/-ями (столами, книгами). Los pronombres: мной, тобой, им, ей, нами, вами, ими.',
+        'La trampa para el hispanohablante es reconocer los usos, no solo las terminaciones: el instrumental marca el medio o herramienta (писать ручкой = escribir con un bolígrafo, sin preposición), la compañía con с (с другом = con un amigo), la profesión con работать (работать врачом = trabajar de médico) y va tras preposiciones como с, над, под, перед, между.',
       ],
     },
   ],

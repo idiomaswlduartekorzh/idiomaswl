@@ -63,7 +63,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El imperativo du: reglas y el cambio vocálico e→i',
+      heading: '¿Cómo es el imperativo con du en alemán?',
       paragraphs: [
         'Para el imperativo du se quita la terminación -en del infinitivo y queda la raíz: machen → Mach!, kommen → Komm!, gehen → Geh!. Algunos verbos añaden -e final si la raíz termina en -t, -d o en consonante difícil: arbeiten → Arbeite!, öffnen → Öffne!',
         'Los verbos con cambio vocálico e→i (o e→ie) en la forma du del presente mantienen ese cambio en el imperativo: geben → du gibst → Gib!, nehmen → du nimmst → Nimm!, lesen → du liest → Lies!, sehen → du siehst → Sieh!. En cambio, los verbos con a→ä NO conservan la Umlaut: fahren → Fahr! (no: Fähr!).',
@@ -79,7 +79,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Usos del imperativo: órdenes, ruegos e instrucciones',
+      heading: '¿Para qué se usa el imperativo en alemán?',
       paragraphs: [
         'El imperativo no solo expresa órdenes directas; con palabras como bitte (por favor), doch o mal se suaviza el tono: "Komm bitte!" (¡Ven, por favor!), "Mach mal die Tür zu!" (¡Cierra la puerta, anda!). En recetas, manuales e instrucciones se usa el imperativo Sie o el infinitivo como forma impersonal.',
         'En contextos cotidianos de B1 aparece constantemente: dar direcciones, pedir ayuda, hacer recomendaciones. "Nehmen Sie die erste Straße links" (Tome la primera calle a la izquierda), "Sei nicht so nervös!" (¡No estés tan nervioso!).',

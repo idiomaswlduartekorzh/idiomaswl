@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Usos principales: planes, predicciones y conjeturas',
+      heading: '¿Cuáles son los usos de -(으)ㄹ 것이다 en coreano?',
       paragraphs: [
         'Planes e intenciones: 저는 올해 한국어 시험을 볼 거예요. (Este año voy a hacer el examen de coreano.) La acción es decidida y planificada.',
         'Predicciones: 내일은 날씨가 좋을 거예요. (Mañana va a hacer buen tiempo.) Se hacen sobre el futuro inmediato o lejano.',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-(으)ㄹ 것이다 vs -(으)ㄹ게요: diferencia crucial',
+      heading: '¿Cuál es la diferencia entre -(으)ㄹ 것이다 y -(으)ㄹ게요?',
       paragraphs: [
         '-(으)ㄹ게요 es exclusivo de la primera persona y expresa una promesa o compromiso personal frente al interlocutor: 제가 할게요 (Yo lo haré — te lo prometo). Implica que el oyente está involucrado en la decisión.',
         '-(으)ㄹ 거예요 es neutral y puede usarse para todas las personas: 제가 할 거예요 / 그가 할 거예요. No implica promesa, solo describe un plan o predicción.',

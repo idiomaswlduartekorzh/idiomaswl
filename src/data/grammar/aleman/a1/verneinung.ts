@@ -44,21 +44,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Nicht: la negación de verbos, adjetivos y adverbios',
+      heading: '¿Cómo se usa nicht en alemán?',
       paragraphs: [
         '"Nicht" niega el verbo, un adjetivo predicativo, un adverbio o un elemento específico de la oración. En frases simples, nicht va generalmente al FINAL: Ich komme nicht. / Sie arbeitet heute nicht. / Er schläft noch nicht.',
         'Cuando nicht niega un elemento concreto (adjetivo, adverbio o complemento), se coloca ANTES de ese elemento: Das Essen ist nicht gut. / Ich fahre nicht mit dem Bus (sino en coche). Esta posición "no-final" indica contraste.',
       ],
     },
     {
-      heading: 'Kein/keine: la negación de sustantivos',
+      heading: '¿Cómo se usa kein/keine en alemán?',
       paragraphs: [
         '"Kein" se usa cuando se niega un sustantivo que lleva artículo indefinido (ein/eine) o que no lleva artículo. Se declina exactamente igual que "ein": kein (masc/neut nominativo), keine (fem/plural), keinen (masc acusativo).',
         'Ejemplos: Ich habe ein Buch → Ich habe kein Buch. / Ich habe eine Schwester → Ich habe keine Schwester. / Ich habe Hunger → Ich habe keinen Hunger. / Wir haben Kinder → Wir haben keine Kinder.',
       ],
     },
     {
-      heading: 'La trampa del artículo definido: usar nicht, no kein',
+      heading: '¿Cuándo se usa nicht y cuándo kein en alemán?',
       paragraphs: [
         'Cuando el sustantivo lleva artículo definido (der/die/das), se usa nicht (no kein): Ich nehme nicht den Bus (sino el metro). / Das ist nicht das Buch, das ich meine. Esta situación implica contraste o identificación específica.',
         'Para hispanohablantes, la clave es preguntar: ¿el sustantivo tiene "ein/eine" o va sin artículo? → kein/keine. ¿Tiene "der/die/das" o no hay sustantivo en juego? → nicht.',

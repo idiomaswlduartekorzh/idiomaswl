@@ -56,7 +56,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Komposition: palabras compuestas alemanas',
+      heading: '¿Cómo se forman las palabras compuestas en alemán?',
       paragraphs: [
         'Los compuestos (Komposita) combinan dos o más palabras para crear un concepto nuevo: Haustür, Handtasche, Arbeitsplatz, Sonnenschutz. La regla más importante: el género del compuesto es siempre el del ÚLTIMO elemento. das Haus + die Tür → die Haustür. die Sonne + der Schirm → der Sonnenschirm.',
         'A veces entre los elementos se añade una vocal o consonante de unión (Fugenelement): -s- (Arbeitszeit, Geburtstagsparty), -e- (Hundeleine), -er- (Kinderzimmer). No sigue una regla estricta — hay que aprenderlas por uso.',
@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Sufijos nominales: crea sustantivos desde verbos y adjetivos',
+      heading: '¿Qué sufijos forman sustantivos en alemán?',
       paragraphs: [
         'El sufijo -ung convierte verbos en sustantivos femeninos (siempre die): lösen → die Lösung, erklären → die Erklärung, üben → die Übung, öffnen → die Öffnung. El sufijo -heit crea sustantivos femeninos de adjetivos: frei → die Freiheit, krank → die Krankheit, schön → die Schönheit.',
         'El sufijo -keit se usa especialmente con adjetivos que terminan en -ig o -lich: pünktlich → die Pünktlichkeit, freundlich → die Freundlichkeit, einsam → die Einsamkeit. -schaft crea sustantivos que indican colectivos o relaciones: Freund → die Freundschaft, Gesellschaft, Mannschaft.',

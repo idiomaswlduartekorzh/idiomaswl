@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación del participio activo de presente',
+      heading: '¿Cómo se forma el participio activo de presente?',
       paragraphs: [
         'Para los verbos de 1ª conjugación (como читать, знать, писать): se toma la forma de 3ª persona plural (они читают), se quita la terminación -ют/-ут y se añade -ющий/-ущий: читают → читающий. Para verbos de 2ª conjugación (como говорить, учить, смотреть): они говорят → говорящий.',
         'Las desinencias siguen la declinación de los adjetivos: говорящий (masc. nom.), говорящего (masc. gen.), говорящая (fem.), говорящее (neutro), говорящие (plural). Nota importante: los participios activos de presente solo existen para НСВ — los verbos perfectivos no tienen esta forma.',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación del participio activo de pasado',
+      heading: '¿Cómo se forma el participio activo de pasado?',
       paragraphs: [
         'Para la mayoría de verbos (termina en -ть precedida de vocal): se quita -ть y se añade -вший: написать → написавший (que escribió), читать → читавший (que leía/había leído). Para verbos cuyo infinitivo termina en consonante + ть, или en -чь, -зти, -сти: se añade -ший al tema: нести → нёсший.',
         'Los participios activos de pasado existen para НСВ y СВ: "студент, читавший книгу" (el estudiante que leía/estaba leyendo) vs "студент, прочитавший книгу" (el estudiante que había leído / que leyó). El aspecto del participio mantiene su valor aspectual.',

@@ -50,20 +50,20 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La regla del verbo final en las subordinadas',
+      heading: '¿Por qué el verbo va al final en las subordinadas alemanas?',
       paragraphs: [
         'En alemán, las conjunciones subordinantes como weil, obwohl, als, wenn, bevor y nachdem introducen una cláusula donde el verbo conjugado va obligatoriamente al final. Esto es una de las reglas más importantes del alemán y se aplica sin excepciones: "Ich bin müde, weil ich nicht geschlafen habe" (habe va al último lugar).',
         'Cuando la oración subordinada va primero (antes de la principal), la oración principal invierte su orden: "Weil es regnet, bleibe ich zu Hause." La conjunción + cláusula subordinada + coma, luego el verbo de la principal en posición 1.',
       ],
     },
     {
-      heading: 'Als vs. wenn: la distinción clave',
+      heading: '¿Cuál es la diferencia entre als y wenn en alemán?',
       paragraphs: [
         '"Als" se usa para hablar de un evento o período único en el pasado: "Als ich in Berlin war, habe ich viel gesehen." "Wenn" se usa para el presente, el futuro y para acciones habituales o repetidas en el pasado: "Wenn ich frei habe, gehe ich schwimmen." (presente) / "Wenn ich jung war, spielte ich oft Fußball." (pasado repetido).',
       ],
     },
     {
-      heading: 'Obwohl: el conector concesivo',
+      heading: '¿Cómo se usa obwohl en alemán?',
       paragraphs: [
         '"Obwohl" introduce una idea que contradice o sorprende dado el contexto de la oración principal: "Er ist glücklich, obwohl er kein Geld hat." (Es feliz aunque no tiene dinero.) Esta estructura es equivalente al "aunque" español y permite matizar afirmaciones de manera sofisticada.',
       ],

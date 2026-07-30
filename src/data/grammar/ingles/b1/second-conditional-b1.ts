@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         'También aparece en situaciones de negociación y diplomatismo: "If we received a larger order, we would offer a bigger discount." Usar second conditional en vez de first conditional suaviza la proposición.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el second conditional en inglés?',
+      paragraphs: [
+        'Con "if + past simple, ... would + verbo base": "If I had more money, I would travel". La condición va en pasado (aunque hable del presente/futuro) y el resultado con "would". Con "be" se usa "were" para todas las personas: "If I were you…".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el second conditional?',
+      paragraphs: [
+        'Para situaciones hipotéticas, imaginarias o improbables en el presente o futuro: "If I won the lottery, I would buy a house" (no es probable). También para consejos: "If I were you, I would rest".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre first y second conditional?',
+      paragraphs: [
+        'El first conditional plantea algo real y probable (present + will): "If it rains, I will stay home". El second plantea algo hipotético o improbable (past + would): "If it rained, I would stay home". Uno es posible; el otro, imaginario.',
+      ],
+    },
   ],
 
   visual: {

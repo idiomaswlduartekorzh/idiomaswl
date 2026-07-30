@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Comparativo corto: sufijos -ее y -е',
+      heading: '¿Cómo se forma el comparativo corto con -ее y -е?',
       paragraphs: [
         'La forma más común del comparativo en ruso es la forma corta invariable. Se añade -ее al radical del adjetivo: новый → нов + ее = новее (más nuevo), интересный → интереснее (más interesante), красивый → красивее (más bonito). Esta forma no concuerda en género ni número, es invariable: он красивее / она красивее / они красивее.',
         'Algunos adjetivos usan -е con alternancia consonántica: старый → старше (г/д/з/т/с alternan con ж/ж/ж/ч/ш): дорогой → дороже, молодой → моложе, богатый → богаче, тихий → тише, громкий → громче. Los irregulares principales son: хороший → лучше, плохой → хуже, большой → больше, маленький → меньше.',
       ],
     },
     {
-      heading: 'Construcción comparativa: чем vs genitivo',
+      heading: '¿Cuándo se usa чем y cuándo el genitivo en las comparaciones?',
       paragraphs: [
         'Para decir "más X que Y" en ruso hay dos opciones equivalentes. Con чем + nominativo: "Москва больше, чем Лондон" (Moscú es más grande que Londres). Sin чем + genitivo del segundo término: "Москва больше Лондона". Ambas son correctas; la versión con чем es más explícita, la del genitivo más compacta.',
         'La forma analítica (более + adjetivo) se reserva para estilos formales o escritos: "более интересный фильм" (un film más interesante). En el habla cotidiana se prefiere la forma corta: интереснее.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los comparativos irregulares más frecuentes?',
+      paragraphs: [
+        'Algunos adjetivos/adverbios muy usados forman el comparativo de manera irregular y hay que memorizarlos: хороший/хорошо → лучше (mejor), плохой/плохо → хуже (peor), большой/много → больше (más/mayor), маленький/мало → меньше (menos/menor). También son irregulares высокий → выше (más alto), дешёвый → дешевле (más barato), дорогой → дороже (más caro).',
+        'La trampa para el hispanohablante es intentar aplicar el sufijo regular -ее a estas palabras (хорошее no es "mejor"). лучше y хуже son de altísima frecuencia y no derivan de forma predecible del adjetivo, así que conviene aprenderlos como piezas fijas.',
       ],
     },
   ],

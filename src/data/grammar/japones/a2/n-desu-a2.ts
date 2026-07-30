@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~んです: por qué es tan importante en japonés',
+      heading: '¿Por qué ~んです es tan importante en japonés?',
       paragraphs: [
         '~んです (también ~のです en registros formales) es uno de los patrones más importantes del japonés coloquial. La diferencia entre "頭が痛いです" (me duele la cabeza — declaración simple) y "頭が痛いんです" (ES QUE me duele la cabeza — explicación/contexto) es enorme en japonés.',
         'Cuando alguien te pregunta "どうしたんですか？" (¿Qué te pasa? / ¿Qué pasó?), está usando んです para pedir una explicación de algo que ya observa. Y cuando respondes "疲れているんです" (es que estoy cansado), das el contexto que explica lo que ven. Es el corazón de la conversación natural en japonés.',
       ],
     },
     {
-      heading: '~んですが: la fórmula para pedir cosas educadamente',
+      heading: '¿Cómo se pide algo educadamente con ~んですが?',
       paragraphs: [
         '"~んですが..." es la estructura más educada para hacer peticiones en japonés. La oración queda intencionalmente incompleta para suavizar la petición: "すみません、ちょっと聞きたいんですが..." (Disculpe, es que quería preguntar algo...). El が al final indica que hay algo más, invitando al oyente a responder.',
         'Este patrón se usa constantemente en situaciones cotidianas: en tiendas, oficinas, con vecinos. Dominarlo te hará sonar significativamente más natural en japonés.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conecta ~んです con verbos, adjetivos y sustantivos?',
+      paragraphs: [
+        '~んです (forma cortés de ~のだ) se pega a la forma PLANA. Con verbos y adjetivos い va directo: 行くんです (es que voy), 高いんです (es que es caro). Con sustantivos y adjetivos な se intercala な: 学生なんです (es que soy estudiante), 大変なんです (es que es duro) —nunca 学生だんです—. Sirve para explicar, dar contexto o pedir una explicación: どうしたんですか (¿qué (te) pasa?). Aporta el matiz de "la razón es que...", conectando con la situación. La trampa para el hispanohablante es doble: recordar la な obligatoria con sustantivos/な-adjetivos, y no abusar de ~んです en afirmaciones neutras, donde suena a justificación innecesaria. En casual se reduce a ~んだ / ~の.',
       ],
     },
   ],

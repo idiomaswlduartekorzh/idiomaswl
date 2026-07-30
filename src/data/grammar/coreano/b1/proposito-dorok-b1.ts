@@ -22,9 +22,9 @@ const topic: GrammarTopic = {
   },
   seo: [
     {heading: '¿Qué es -도록?', paragraphs: ['-도록 expresa propósito: "para que X ocurra" o grado de cambio: "hasta el punto de X". Es muy versátil y natural en coreano.', 'Se usa en narrativa de metas, instrucciones de cuidado, expresión de resultados deseados.']},
-    {heading: '-도록 en contextos de propósito', paragraphs: ['"공부하도록 해요" (me esfuerzo para estudiar). "시간을 지키도록 조심해요" (ten cuidado para ser puntual).', 'Muy natural en instrucciones y consejos.']},
+    {heading: '¿Cómo se usa -도록 para expresar propósito en coreano?', paragraphs: ['"공부하도록 해요" (me esfuerzo para estudiar). "시간을 지키도록 조심해요" (ten cuidado para ser puntual).', 'Muy natural en instrucciones y consejos.']},
     {heading: '-도록 con grado de cambio', paragraphs: ['"많이 먹도록" (comer mucho = hasta el punto de comer mucho, de modo que). "피곤하도록 일해요" (trabajo de modo que me canso mucho).', 'Enfatiza el grado o resultado del cambio.']},
-    {heading: '-도록 vs -으려고 (propósito vs intención)', paragraphs: ['-도록: "공부하도록 해요" (esfuerzo para que X ocurra — más objetivo). -으려고: "공부하려고 해요" (intento de estudiar — más personal).', '-도록 enfatiza logro; -으려고 enfatiza intención personal.']},
+    {heading: '¿Cuál es la diferencia entre -도록 y -(으)려고?', paragraphs: ['-도록: "공부하도록 해요" (esfuerzo para que X ocurra — más objetivo). -으려고: "공부하려고 해요" (intento de estudiar — más personal).', '-도록 enfatiza logro; -으려고 enfatiza intención personal.']},
     {heading: '-도록 vs -기 위해 (propósito natural vs formal)', paragraphs: ['-도록: "공부하도록 노력해요" (esfuerzo para estudiar — natural). -기 위해: "공부하기 위해 노력해요" (me esfuerzo para estudiar — formal).', '-도록 es conversacional; -기 위해 es académico/formal.']},
   ],
   visual: {mode: 'scene', teacherLens: '-도록: propósito y grado vs -으려고 (intención)', graphicPrompt: 'Tabla: -도록 (propósito) vs -으려고 (intención). Ejemplos.', scene: [['공부하도록 해요.', 'Me esfuerzo para estudiar.'], ['헷갈리지 않도록 조심해요.', 'Ten cuidado para no confundirte.'], ['성공하도록 노력해요.', 'Me esfuerzo para tener éxito.'], ['건강하도록 운동해요.', 'Hago ejercicio para estar saludable.'], ['늦지 않도록 서둘러요.', 'Me apuro para no llegar tarde.']], learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['목적', '노력', '정도']},

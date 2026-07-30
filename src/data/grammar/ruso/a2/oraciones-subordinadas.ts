@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Что y чтобы: dos conjunciones rusas esenciales',
+      heading: '¿Qué diferencia hay entre что y чтобы?',
       paragraphs: [
         'La conjunción что (pronunciada "što") introduce oraciones completivas declarativas: pensamientos, hechos, declaraciones. Se usa con verbos como думать (pensar), знать (saber), говорить (decir), понимать (entender): "Я знаю, что ты устал" (Sé que estás cansado), "Она говорит, что придёт" (Dice que vendrá). El verbo de la subordinada puede ir en cualquier tiempo gramatical.',
         'La conjunción чтобы introduce oraciones de finalidad y deseo. Cuando los sujetos son diferentes, el verbo va en pasado: "Я прошу, чтобы ты позвонил" (Te pido que llames). Cuando el sujeto es el mismo, se usa чтобы + infinitivo para expresar finalidad: "Я учу русский, чтобы жить в России" (Estudio ruso para vivir en Rusia). Esta distinción es fundamental.',
       ],
     },
     {
-      heading: 'Потому что, поэтому y когда',
+      heading: '¿Cómo se usan потому что, поэтому y когда?',
       paragraphs: [
         'Потому что (porque) introduce la causa de una acción o estado: "Я не пришёл, потому что был занят" (No vine porque estaba ocupado). No confundir con поэтому (por eso/por lo tanto), que introduce la consecuencia: "Я был занят, поэтому не пришёл" (Estaba ocupado, por eso no vine). Потому что responde a ¿por qué?; поэтому encabeza la oración resultado.',
         'La conjunción когда (cuando) introduce temporales: "Я позвоню тебе, когда приеду" (Te llamaré cuando llegue). En ruso, el futuro en la subordinada temporal es normal después de когда — a diferencia del español donde se usa el subjuntivo. "Когда я был маленьким" (Cuando era pequeño) con pasado para acciones habituales del pasado.',
+      ],
+    },
+    {
+      heading: '¿Por qué чтобы exige verbo en pasado o en infinitivo?',
+      paragraphs: [
+        'что introduce un hecho real ("que": Я знаю, что он дома = sé que está en casa). чтобы introduce finalidad o deseo ("para que / que"), y su verbo NUNCA va en presente: si el sujeto de las dos oraciones es el mismo, se usa infinitivo (Я пришёл, чтобы помочь = vine para ayudar); si son sujetos distintos, se usa PASADO (Я хочу, чтобы ты помог = quiero que tú ayudes).',
+        'La trampa para el hispanohablante es doble: (1) no confundir что (hecho) con чтобы (finalidad/deseo); (2) tras чтобы con sujetos distintos hay que poner el verbo en pasado aunque la idea sea presente o futura — Я хочу, чтобы ты пришёл, literalmente "quiero que tú viniste", es lo correcto.',
       ],
     },
   ],

@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~ながら: simultaneidad con el mismo sujeto',
+      heading: '¿Cómo se expresan dos acciones simultáneas con ~ながら?',
       paragraphs: [
         '~ながら es la forma de decir "mientras" cuando el mismo sujeto hace dos cosas a la vez. "テレビを見ながら、ご飯を食べます" (como mientras veo la tele). La diferencia clave con el español es que ~ながら SOLO funciona si el mismo sujeto realiza ambas acciones.',
         'La acción marcada con ながら es generalmente la secundaria o de fondo; la acción principal — la más importante — va en la segunda cláusula. "音楽を聴きながら(secundaria)、勉強します(principal)" = estudio mientras escucho música.',
       ],
     },
     {
-      heading: 'Verbos comunes con ながら',
+      heading: '¿Cuáles son los verbos más comunes con ながら?',
       paragraphs: [
         'Los verbos más frecuentes con ながら en situaciones cotidianas: 歩きながら (mientras caminas), 食べながら (mientras comes), 聴きながら (mientras escuchas), 話しながら (mientras hablas), 見ながら (mientras ves). Combinados crean expresiones muy naturales del japonés cotidiano.',
         'Un uso especial: "〜ながら" también puede expresar contraste leve (aunque / a pesar de que): "知りながら言わなかった" (aunque sabía, no lo dije). Este uso es más avanzado pero vale la pena conocerlo.',
+      ],
+    },
+    {
+      heading: '¿Cuál de las dos acciones con ~ながら es la principal?',
+      paragraphs: [
+        '~ながら une dos acciones simultáneas hechas por la MISMA persona. Se forma con la raíz ます del verbo + ながら: 音楽を聞きながら勉強します (estudio mientras escucho música). La acción principal —la más importante— es SIEMPRE la segunda, la que va tras ながら; la primera es la de fondo. Por eso 音楽を聞きながら勉強する significa "estudiar (principal) escuchando música (fondo)", no al revés. La trampa para el hispanohablante es doble: (1) los dos verbos deben tener el mismo sujeto —para sujetos distintos se usa 間に, no ながら—; (2) el orden importa, porque cambiar cuál va antes de ながら cambia qué acción es la central. Con un solo sujeto y dos acciones a la vez, ながら es la estructura natural.',
       ],
     },
   ],

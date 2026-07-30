@@ -42,21 +42,21 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El imperativo en francés: tres formas y una trampa',
+      heading: '¿Cómo se forma el imperativo en francés?',
       paragraphs: [
         'El imperativo francés tiene tres personas: tu (tú/informal singular), nous (nosotros — equivale a "vamos a...") y vous (vosotros/ustedes o el formal singular). A diferencia del español, en el imperativo francés no se incluye el pronombre sujeto: simplemente "Mange!" (¡Come!), no "Tu mange!".',
         'La principal trampa para hispanohablantes es la forma "tu" de los verbos -er: pierde la -s final. El presente es "tu parles" pero el imperativo es "Parle!" (no "Parles!"). Sin embargo, los verbos -ir y -re mantienen la -s: "Finis!" "Prends!". Esta asimetría es la que más confusiones genera en A1.',
       ],
     },
     {
-      heading: 'Verbos irregulares en imperativo',
+      heading: '¿Cuáles son los imperativos irregulares en francés?',
       paragraphs: [
         'Los tres verbos irregulares más importantes en imperativo son être, avoir y aller. Être: Sois patient! / Soyons calmes! / Soyez prudents! Avoir: Aie confiance! / Ayons du courage! / Ayez patience! Aller: Va chercher le livre! / Allons-y! / Allez tout droit!',
         'Nota: "va" (aller, imperativo tu) no lleva -s, pero si viene seguido de "y": Vas-y! (¡Ve allí! — se añade la -s por eufonía). Este es un caso especial de A1/A2 que conviene conocer.',
       ],
     },
     {
-      heading: 'Negación del imperativo',
+      heading: '¿Cómo se niega el imperativo en francés?',
       paragraphs: [
         'La negación del imperativo sigue la regla general ne...pas rodeando el verbo: Ne mange pas si vite! / Ne finissez pas avant moi! / Ne soyez pas en retard! En la conversación informal, el ne puede desaparecer: Parle pas si fort! / Fais pas ça! — pero en A1 usa siempre ne...pas.',
         'Para consejos negativos (no hagas esto), el imperativo negativo es muy útil: Ne mange pas trop de sucre. / Ne bois pas trop de café. / Ne parle pas la bouche pleine. Son fórmulas que aparecen constantemente en situaciones cotidianas.',

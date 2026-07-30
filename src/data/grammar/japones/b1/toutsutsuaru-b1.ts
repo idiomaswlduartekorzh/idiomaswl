@@ -15,7 +15,11 @@ const topic: GrammarTopic = {
     table: [['Estructura', 'Significado', 'Ejemplo'], ['〜つつある', 'Gradual', '上がりつつある (subiendo gradualmente)']],
     mistakes: ['「気温が上がりつつあります」 ✓ (formal, escrito). Menos común en habla casual.'],
   },
-  seo: [{heading: '〜つつある', paragraphs: ['気温が上がりつつある (la temperatura está subiendo gradualmente). Muy formal/escrito.', 'Expresa cambio lento y continuo.']}, {heading: '〜つつある vs 〜ている', paragraphs: ['〜ている: acción en progreso presente. 〜つつある: cambio gradual continuo (más formal).', 'つつある es más literario y menos coloquial.']}],
+  seo: [
+    {heading: '¿Qué expresa 〜つつある (un cambio gradual)?', paragraphs: ['気温が上がりつつある (la temperatura está subiendo gradualmente). Expresa un proceso de cambio lento y continuo que avanza hacia un estado.', 'Es un registro formal y escrito, típico de noticias, informes y textos académicos.']},
+    {heading: '¿En qué se diferencian 〜つつある y 〜ている?', paragraphs: ['〜ている describe una acción en progreso presente, neutra y coloquial: 上がっている (está subiendo). 〜つつある enfatiza la evolución gradual hacia un punto y es mucho más formal/literario: 上がりつつある (está en proceso de subir).', 'Se forma con la raíz ます + つつある (上がる→上がりつつある). La trampa para el hispanohablante es usar つつある en conversación casual, donde suena excesivamente formal; ahí lo natural es ている.']},
+    {heading: '¿Qué diferencia hay entre 〜つつある y 〜ながら?', paragraphs: ['Aunque つつ solo también puede significar "mientras" (歩きつつ考える = pensar mientras se camina, literario), つつある es una estructura distinta: no expresa simultaneidad sino cambio en curso.', 'ながら une dos acciones simultáneas de un mismo sujeto (音楽を聞きながら勉強する); つつある describe la transición gradual de una sola situación (社会が変わりつつある = la sociedad está cambiando). No son intercambiables.']},
+  ],
   visual: {mode: 'scene', teacherLens: '〜つつある: proceso gradual', graphicPrompt: 'Tabla: 〜つつある', scene: [['気温が上がりつつある。', 'La temperatura está subiendo gradualmente.'], ['社会が変わりつつある。', 'La sociedad está cambiando gradualmente.']]
 , learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['段階', '進行', '文語']},
   practice: {levels: [{id: 'level-1', title: '〜つつある', tag: 'Múltipla escolha', intro: 'Selecciona.', type: 'choice', items: [{scene: 'Cambio gradual', lines: [['', '気温が上がり___。']], options: ['つつある', 'ている', 'つつあります', 'あります'], answer: 'つつある', explain: 'つつある (cambio gradual).'}]}, {id: 'level-2', title: 'Contexto', tag: '段階', intro: 'Completa.', type: 'guidedText', scene: 'Cambios.', text: '社会が変わり[[0]]。'

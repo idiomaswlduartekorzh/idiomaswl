@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Verbos pronominales reflexivos y recíprocos',
+      heading: '¿Qué son los verbos pronominales reflexivos y recíprocos en francés?',
       paragraphs: [
         'Los verbos pronominales reflexivos expresan una acción que el sujeto hace sobre sí mismo: "Je me lave les mains" (Me lavo las manos), "Elle se coiffe" (Ella se peina), "Il se lève tôt" (Él se levanta temprano). Los pronombres cambian según el sujeto: me/m\', te/t\', se/s\', nous, vous, se/s\'.',
         'Los recíprocos indican una acción mutua entre dos o más personas: "Ils se parlent souvent" (Se hablan a menudo), "Nous nous voyons le week-end" (Nos vemos el fin de semana). Solo se usan con sujetos plurales (nous, vous, ils/elles).',
       ],
     },
     {
-      heading: 'Pronominales inherentes: se souvenir, se méfier, se tromper',
+      heading: '¿Qué son los verbos pronominales inherentes en francés?',
       paragraphs: [
         'Algunos verbos son siempre pronominales sin significado reflexivo especial — simplemente requieren el pronombre: "se souvenir de" (recordar), "se méfier de" (desconfiar), "se tromper" (equivocarse), "s\'en aller" (irse), "se moquer de" (burlarse de). No existe la versión sin pronombre.',
         'La negación de pronominales sigue el esquema: ne + pronom réfléchi + verbe + pas. "Je ne me lève pas tôt." / "Il ne s\'en va pas." / "Nous ne nous souvenons pas de cette date."',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan los verbos pronominales en francés?',
+      paragraphs: [
+        'Llevan un pronombre reflexivo que concuerda con el sujeto (me/te/se/nous/vous/se), colocado ANTES del verbo: "je me lève, tu te laves, il se souvient". En el passé composé usan SIEMPRE el auxiliar être, y el participio concuerda con el sujeto: "elle s\'est levée, ils se sont couchés". En negativo, el "ne" va antes del pronombre y "pas" tras el auxiliar: "je ne me lève pas", "il ne s\'est pas rasé". En el imperativo afirmativo el pronombre va detrás con guion y "te" se convierte en "toi": "lève-toi !", "dépêchons-nous !". Es la misma mecánica del español (levantarse → me levanto), con la particularidad francesa del auxiliar être obligatorio en el pasado.',
       ],
     },
   ],

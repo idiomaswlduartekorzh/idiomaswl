@@ -62,7 +62,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Reflexivos recíprocos: acciones mutuas entre dos o más sujetos',
+      heading: '¿Qué son los verbos reflexivos recíprocos en portugués?',
       paragraphs: [
         'En reflexivos recíprocos, dos sujetos realizan la acción el uno sobre el otro mutuamente. Ejemplos: amarse (amar-se), abrazarse (abraçar-se), encontrarse (encontrar-se), besarse (beijar-se), conocerse (conhecer-se).',
         '"Eles se amam" significa que ellos se aman mutuamente (uno al otro). Notar que el mismo pronombre "se" expresa tanto reflexivo puro como recíproco, pero el contexto deja claro cuál es.',
@@ -83,7 +83,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Pasiva refleja: construcciones impersonales con "se"',
+      heading: '¿Qué es la pasiva refleja con "se" en portugués?',
       paragraphs: [
         'El portugués usa "se" para crear oraciones impersonales que funcionan como pasiva: "Aquí se habla portugués" (Aquí se habla portugués = Here Portuguese is spoken). "Abre-se cedo" (Se abre temprano = It opens early).',
         'Diferencia: reflexivo puro ("Ele se abre para novos desafios" = He opens himself) vs pasiva refleja ("A porta se abre" = The door opens itself, impersonal). Son sintácticamente similares pero semánticamente diferentes.',

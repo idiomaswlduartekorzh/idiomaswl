@@ -51,21 +51,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Preguntas W: la regla V2 en acción',
+      heading: '¿Cómo se forman las preguntas con W en alemán?',
       paragraphs: [
         'En las preguntas W alemanas, la palabra interrogativa ocupa siempre la primera posición (posición 1) y el verbo conjugado ocupa inmediatamente la segunda posición (posición 2). El sujeto queda en tercera posición: Wo [pos.1] wohnst [pos.2] du [pos.3]? Esta es exactamente la misma regla V2 de las oraciones declarativas.',
         'En español el orden es más libre: "¿Dónde vives tú?" o "¿Dónde tú vives?" son ambos posibles. En alemán la posición del verbo es obligatoria e inamovible en las preguntas directas.',
       ],
     },
     {
-      heading: 'Wo, Woher, Wohin: el movimiento importa',
+      heading: '¿Cuál es la diferencia entre wo, woher y wohin en alemán?',
       paragraphs: [
         'El alemán distingue tres aspectos de "lugar": Wo (dónde = posición estática), Woher (de dónde = origen) y Wohin (a dónde = destino). Esta triada es esencial para evitar confusiones: Wo wohnst du? (¿Dónde vives?) vs. Wohin fährst du? (¿A dónde vas?) vs. Woher kommst du? (¿De dónde vienes?).',
         'El español solo usa "dónde" y "a dónde" (y raramente "de dónde" en lenguaje formal), mientras que el alemán tiene tres palabras distintas para cada función.',
       ],
     },
     {
-      heading: 'Preguntas Ja/Nein vs. preguntas W',
+      heading: '¿Cuál es la diferencia entre preguntas Ja/Nein y preguntas W?',
       paragraphs: [
         'Las preguntas de sí/no (Ja/Nein-Fragen) empiezan directamente con el verbo: Wohnst du in Berlin? / Arbeitest du heute? El verbo va en primera posición porque no hay palabra W que lo preceda.',
         'Las preguntas W, en cambio, siempre tienen una palabra W en posición 1 y el verbo en posición 2. Esta distinción estructural es fundamental para el alemán A1 y no tiene paralelo exacto en español.',

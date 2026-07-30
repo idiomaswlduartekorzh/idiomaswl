@@ -50,7 +50,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Las terminaciones del presente: -e, -es, -e, -ons, -ez, -ent',
+      heading: '¿Cómo se conjugan los verbos en -er en presente?',
       paragraphs: [
         'Pasos: (1) Toma el infinitivo: parler. (2) Quita -er: parl-. (3) Añade las terminaciones según el pronombre sujeto.',
         'Un dato importante para la pronunciación: las terminaciones -e (je), -es (tu) y -ent (ils) son completamente mudas. Por eso "je parle", "tu parles" e "ils parlent" suenan exactamente igual: /parl/. Solo "nous parlons" y "vous parlez" tienen pronunciación diferente.',
@@ -73,7 +73,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Casos especiales: verbos en -ger y -cer',
+      heading: '¿Cómo se conjugan los verbos en -ger y -cer en francés?',
       paragraphs: [
         'Los verbos en -ger (manger, voyager, nager) añaden una -e antes de la terminación -ons para conservar el sonido suave de la g: nous mangeons, nous voyageons, nous nageons (no "manGons").',
         'Los verbos en -cer (commencer, lancer) cambian la c por ç antes de -ons: nous commençons. Estos son los únicos cambios ortográficos del primer grupo en A1.',

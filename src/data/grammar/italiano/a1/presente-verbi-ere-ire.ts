@@ -49,7 +49,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Verbos -ere e -ire: la segunda y tercera conjugación del italiano',
+      heading: '¿Cuáles son la segunda y tercera conjugación italianas (-ere e -ire)?',
       paragraphs: [
         'Los verbos en -ere (prendere, vedere, leggere, scrivere) y en -ire (dormire, aprire, sentire, partire) comparten casi todas las terminaciones: -o, -i, -e, -iamo, -ono. La ÚNICA diferencia está en voi: -ete para los -ere, -ite para los -ire. Además, muchos -ire insertan -isc- (finire → finisco). Esta tabla muestra los tres patrones de un vistazo:',
       ],

@@ -86,6 +86,24 @@ const topic: GrammarTopic = {
         'Un error muy común es usar el pasado simple en lugar del participio: "It was wrote" en lugar de "It was written." El auxiliar was/were ya indica el tiempo — el participio nunca cambia: siempre written, built, made, no matter the person.',
       ],
     },
+    {
+      heading: '¿Cómo se forma la voz pasiva en inglés?',
+      paragraphs: [
+        'Con el verbo to be (en el tiempo que toque) + participio pasado: "The house is cleaned", "The letter was written", "The work will be done". El objeto de la activa pasa a sujeto. Quien hace la acción se introduce con "by" si se menciona: "The book was written by Leo".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa la voz pasiva en inglés?',
+      paragraphs: [
+        'Cuando el foco está en la acción o el objeto, no en quién la hace, o cuando el agente es desconocido o irrelevante: "English is spoken here", "My car was stolen". Es muy común en textos formales, noticias e instrucciones.',
+      ],
+    },
+    {
+      heading: '¿Cómo se pasa de la voz activa a la pasiva en inglés?',
+      paragraphs: [
+        'El objeto de la activa se convierte en sujeto, el verbo pasa a "to be + participio" en el mismo tiempo, y el sujeto original va con "by" (opcional). "They built the bridge" → "The bridge was built (by them)".',
+      ],
+    },
   ],
 
   visual: {

@@ -64,14 +64,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'вы: formal singular Y plural',
+      heading: '¿Por qué вы sirve para el formal singular y el plural?',
       paragraphs: [
         'вы es el pronombre más versátil del ruso. Como "usted" en español, se usa para personas de mayor edad, desconocidos o en situaciones profesionales. Pero también es el plural de ты — "ustedes".',
         'La conjugación verbal es idéntica en ambos casos, así que solo el contexto distingue si вы = usted o ustedes. Cuando escribes вы formal, algunos libros lo capitalizan (Вы) para marcar el respeto, aunque esto no es obligatorio.',
       ],
     },
     {
-      heading: 'он, она, оно para objetos',
+      heading: '¿Por qué он, она y оно también se usan para objetos?',
       paragraphs: [
         'En ruso, todos los sustantivos tienen género gramatical: masculino, femenino o neutro. Los pronombres он/она/оно siguen ese género, no el sexo biológico del referente.',
         'Стол (mesa) es masculino → он. Книга (libro) es femenino → она. Окно (ventana) es neutro → оно. Esto exige saber el género de los sustantivos para usar el pronombre correcto.',

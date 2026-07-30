@@ -58,6 +58,20 @@ const topic: GrammarTopic = {
         ['скажи/те мне', 'dime / dígame', 'Скажите мне, пожалуйста'],
       ],
     },
+    {
+      heading: '¿Qué verbos y expresiones piden el caso dativo?',
+      paragraphs: [
+        'El dativo marca al destinatario o a quien experimenta algo. Lo piden verbos de "dar/decir a alguien": дать (dar), сказать (decir), помогать (ayudar), звонить (llamar por teléfono): Я помогаю маме (ayudo a mamá), Я звоню другу (llamo a un amigo). También rige las construcciones impersonales de estado y edad: Мне холодно (tengo frío, lit. "a mí frío"), Мне нравится (me gusta), Мне двадцать лет (tengo veinte años).',
+        'La trampa para el hispanohablante es que en ruso "ayudar" o "llamar por teléfono" llevan objeto en dativo (a alguien) y no en acusativo. Además, expresiones que en español usan "tengo" (tengo frío, tengo 20 años) en ruso se construyen con мне + dativo, sin verbo "tener".',
+      ],
+    },
+    {
+      heading: '¿Cómo se forman las terminaciones del dativo?',
+      paragraphs: [
+        'En singular: masculinos y neutros toman -у/-ю (стол→столу, музей→музею, окно→окну); femeninos en -а/-я toman -е (мама→маме, Аня→Ане); femeninos en -ь toman -и. Los pronombres tienen formas propias que conviene memorizar: я→мне, ты→тебе, он→ему, она→ей, мы→нам, вы→вам, они→им.',
+        'La trampa para el hispanohablante es doble: recordar que el dativo cambia la terminación del sustantivo (no basta con anteponer "a"), y aprender de memoria los pronombres en dativo, que son muy frecuentes en frases cotidianas como Мне нравится (me gusta) o Дай мне (dame).',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

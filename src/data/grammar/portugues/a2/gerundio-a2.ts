@@ -58,6 +58,31 @@ const topic: GrammarTopic = {
         '"Continue" + gerúndio = sigue haciendo: "Continue tentando" (sigue intentándolo). "Ir" + gerúndio = acción gradual: "Fui entendendo o português com o tempo" (fui entendiendo el portugués con el tiempo).',
       ],
     },
+    {
+      heading: '¿Cómo se forma el gerúndio en portugués?',
+      paragraphs: [
+        'Se cambia la terminación del infinitivo por -ndo, según la conjugación: -ar → -ando, -er → -endo, -ir → -indo. No hay ningún irregular, ni siquiera fazer (fazendo) o ir (indo). Esta tabla muestra los tres grupos y varios auxiliares con los que se combina:',
+      ],
+      table: [
+        ['Auxiliar', 'Sentido', 'Ejemplo'],
+        ['estar + ger.', 'acción en progreso', 'Estou comendo.'],
+        ['ficar + ger.', 'acción repetida/prolongada', 'Fico pensando nisso.'],
+        ['ir + ger.', 'acción gradual', 'Fui aprendendo aos poucos.'],
+        ['continuar + ger.', 'seguir haciendo', 'Continue tentando!'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "estou comendo" y "estou a comer"?',
+      paragraphs: [
+        'Significan lo mismo (estoy comiendo), pero pertenecen a dos variantes: "estou comendo" (estar + gerúndio) es la forma brasileña, y "estou a comer" (estar a + infinitivo) es la europea. Aquí enseñamos la brasileña, que además es la más intuitiva para el hispanohablante porque calca el "estoy comiendo" del español. Basta cambiar el auxiliar estar y añadir el gerúndio en -ndo. No mezcles las dos ("estou a comendo" es incorrecto).',
+      ],
+    },
+    {
+      heading: '¿Qué significa "ficar" + gerúndio en portugués?',
+      paragraphs: [
+        'Expresa una acción que se repite o se prolonga más de lo normal, con matiz de insistencia: "Ele fica reclamando" (no para de quejarse), "Fico pensando nisso" (sigo pensando en eso), "Você fica chegando atrasado" (siempre llegas tarde). Es un patrón muy brasileño, sin equivalente exacto de una sola palabra en español, que se traduce por "seguir/no parar de/siempre estar + gerundio". Se diferencia de estar + gerúndio en que este describe el momento presente, mientras ficar + gerúndio describe un hábito o una duración prolongada.',
+      ],
+    },
   ],
 
   visual: {

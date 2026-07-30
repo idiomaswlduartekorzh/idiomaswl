@@ -60,14 +60,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El yo y tú en el pasado ruso',
+      heading: '¿Por qué el pasado ruso concuerda con el género y no con la persona?',
       paragraphs: [
         'En ruso, incluso el hablante (я) debe elegir la terminación según su género biológico: un hombre dice я читал, una mujer dice я читала. Lo mismo ocurre con ты: ты читал (si es hombre) o ты читала (si es mujer).',
         'Esta característica es única entre las lenguas romances y germánicas. El contexto o la identidad del hablante determina la forma — no hay ambigüedad en el habla cotidiana.',
       ],
     },
     {
-      heading: 'Verbos irregulares en pasado',
+      heading: '¿Cuáles son los verbos irregulares en pasado?',
       paragraphs: [
         'Algunos verbos frecuentes tienen pasados irregulares. El más importante es идти (ir a pie): он шёл, она шла, они шли. También мочь (poder): он мог, она могла, они могли.',
         'El verbo быть (ser/estar) en pasado: он был, она была, оно было, они были. Este verbo sí aparece en el pasado, a diferencia del presente.',

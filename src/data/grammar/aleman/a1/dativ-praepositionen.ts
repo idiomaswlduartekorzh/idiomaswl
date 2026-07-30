@@ -52,14 +52,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las 8 preposiciones de dativo: siempre las mismas',
+      heading: '¿Cuáles son las preposiciones de dativo en alemán?',
       paragraphs: [
         'Una de las reglas más importantes del alemán es que ciertas preposiciones rigen SIEMPRE dativo. No importa el contexto: con mit, bei, nach, seit, von, zu, aus y gegenüber, el sustantivo que sigue va siempre en dativo. Una manera de memorizarlas es con la frase mnemotécnica en alemán: "mit bei nach seit von zu aus gegenüber" — y aprenderlas de memoria como una lista.',
         'Los artículos en dativo son: der/das → dem, die → der, plural → den (y el sustantivo añade -n si no termina ya en -n): der Bus → mit dem Bus; die U-Bahn → mit der U-Bahn; das Fahrrad → mit dem Fahrrad; die Busse → mit den Bussen.',
       ],
     },
     {
-      heading: 'Contracciones frecuentes con zu y bei',
+      heading: '¿Cómo se contraen las preposiciones de dativo en alemán?',
       paragraphs: [
         'Algunas combinaciones de preposición + artículo definido se contraen en el habla cotidiana: zu + dem = zum (ich gehe zum Supermarkt), zu + der = zur (ich gehe zur Schule), bei + dem = beim (ich bin beim Arzt), von + dem = vom (das Buch ist vom Lehrer). Estas contracciones son prácticamente obligatorias en el alemán hablado y suena raro usarlas sin contraer.',
         'Otras contracciones existen pero son menos frecuentes en A1: an + dem = am (temporal: am Montag), an + das = ans, in + dem = im, in + das = ins. En A1 basta con dominar zum, zur, beim, vom.',
@@ -73,7 +73,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Aus y seit: origen y duración',
+      heading: '¿Cómo se usan aus y seit en alemán?',
       paragraphs: [
         '"Aus" expresa el origen geográfico (Ich komme aus Kolumbien / Ich bin aus Bogotá) y también el material de algo (Das Buch ist aus Papier / Der Tisch ist aus Holz). Con "aus" el origen es geográfico y permanente, a diferencia de "von" que puede indicar punto de partida temporal.',
         '"Seit" con dativo expresa una duración que comenzó en el pasado y continúa: Ich lerne seit einem Jahr Deutsch (dativo singular neutro: einem). Ich wohne seit drei Monaten in Berlin (dativo plural: Monaten). Recuerda siempre: "seit" + dativo.',

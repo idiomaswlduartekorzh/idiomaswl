@@ -65,6 +65,18 @@ const topic: GrammarTopic = {
         'La forma de primera persona "vou" (ir) parece relacionada con "vou" pero viene de una raíz completamente diferente. "Venho" (vir, eu venho) recuerda al español "vengo". Aprovecha esta similitud para memorizar vir.',
       ],
     },
+    {
+      heading: '¿Cómo se conjuga el verbo fazer en portugués?',
+      paragraphs: [
+        'Fazer (hacer) es irregular solo en la primera persona: eu faço (con -ço, como el español "hago"), pero você/ele faz, nós fazemos, vocês/eles fazem siguen un patrón regular de -er. El error típico es escribir "eu faz" o "eu fazo": la eu correcta es faço. Fazer sirve además para el tiempo atmosférico y el tiempo transcurrido: "Faz calor" (hace calor), "Faz dois anos" (hace dos años).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre poder y querer en portugués?',
+      paragraphs: [
+        'Poder expresa capacidad o permiso (eu posso = puedo), querer expresa deseo o voluntad (eu quero = quiero). Ambos van seguidos de infinitivo sin preposición: "Posso ajudar" (puedo ayudar), "Quero aprender" (quiero aprender). Ojo con la eu de cada uno: posso lleva doble s, quero una sola r. En el plural son podemos/podem y queremos/querem.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',

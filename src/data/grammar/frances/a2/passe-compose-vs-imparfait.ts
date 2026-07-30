@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "Passé composé vs. imparfait: la clave para narrar en francés",
+      heading: '¿Cuál es la diferencia entre passé composé e imparfait?',
       paragraphs: [
         "Uno de los mayores retos para los hispanohablantes al aprender francés es elegir entre el passé composé y el imparfait. En español, la distinción entre pretérito perfecto/indefinido e imperfecto existe, pero no siempre coincide con la francesa. En francés, la elección depende del rol que juega cada acción en la narración.",
         "El passé composé es el tiempo de la acción: algo ocurrió, tuvo un inicio y un fin, y avanzó la historia. El imparfait es el tiempo del escenario: describe cómo eran las cosas, qué se hacía habitualmente, cuál era el estado del mundo en ese momento.",
       ],
     },
     {
-      heading: "La regla del fondo y la figura: cómo combinar los dos tiempos",
+      heading: '¿Cómo se combinan passé composé e imparfait al narrar?',
       paragraphs: [
         "Imagina una película: el imparfait es el fondo (la música ambiente, la lluvia, el escenario), y el passé composé es la figura (la acción que ocurre sobre ese fondo). Il pleuvait (imparfait = escenario) quand je suis entré dans le café (passé composé = acción). Cuando dominas esta imagen mental, la elección se vuelve intuitiva.",
         "Los marcadores temporales son tus aliados. 'Toujours', 'souvent', 'd'habitude', 'tous les jours', 'chaque soir' → imparfait. 'Hier', 'ce matin', 'soudain', 'tout à coup', 'd'abord... ensuite... enfin' → passé composé. Aprende estos marcadores y la gramática se vuelve predecible.",
+      ],
+    },
+    {
+      heading: '¿Cómo saber si uso passé composé o imparfait?',
+      paragraphs: [
+        'Pregúntate qué papel cumple la acción. Si es un hecho puntual y acabado que hace avanzar la historia ("qué pasó"), usa passé composé: "J\'ai ouvert la porte". Si describe el decorado, un estado, una costumbre o una acción en curso ("cómo era", "qué solía pasar"), usa imparfait: "Il faisait nuit, je dormais". Pistas léxicas: soudain, hier, une fois, à ce moment-là → passé composé; toujours, souvent, tous les jours, pendant que → imparfait. En una misma frase suelen convivir: el imparfait pone el fondo y el passé composé la acción que irrumpe ("Je dormais quand le téléphone a sonné"). Es el mismo reparto del español imperfecto/indefinido, así que la intuición se traslada casi sin ajuste.',
       ],
     },
   ],

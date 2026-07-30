@@ -67,6 +67,31 @@ const topic: GrammarTopic = {
         '"Tem" puede ser existencial (hay) o posesivo (tiene). El contexto aclara: "Tem um livro na mesa" (hay un libro en la mesa — existencial) vs "Ela tem um livro" (ella tiene un libro — posesivo). En el uso existencial, TEM no tiene sujeto explícito.',
       ],
     },
+    {
+      heading: '¿Cómo se dice "hay" en portugués?',
+      paragraphs: [
+        'Con HÁ (formal, del verbo haver) o con TEM (coloquial brasileño, del verbo ter). Las dos son invariables: la misma palabra sirve para singular y plural, a diferencia del español, que igual mantiene "hay" invariable pero cambia el verbo "haber" en otros tiempos. Esta tabla contrasta las dos formas:',
+      ],
+      table: [
+        ['Español', 'HÁ (formal)', 'TEM (Brasil)'],
+        ['Hay un café', 'Há um café', 'Tem um café'],
+        ['Hay muchos cafés', 'Há muitos cafés', 'Tem muitos cafés'],
+        ['No hay tiempo', 'Não há tempo', 'Não tem tempo'],
+        ['¿Hay agua?', 'Há água?', 'Tem água?'],
+      ],
+    },
+    {
+      heading: '¿Se dice "tem" o "têm" para expresar existencia?',
+      paragraphs: [
+        'Se dice "tem", siempre en singular, aunque lo que sigue sea plural: "Tem muitas pessoas aqui" (hay mucha gente aquí), no "têm muitas pessoas". El TEM existencial es invariable y no concuerda con nada, porque no tiene sujeto. "Têm" (con tilde) solo aparece cuando ter es posesivo con sujeto plural: "Eles têm carro" (ellos tienen coche). Confundirlos es el error más común del hispanohablante que intenta "concordar" el verbo.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre há y tem en portugués?',
+      paragraphs: [
+        'Son intercambiables en el significado "hay"; la diferencia es de registro y región. HÁ es más formal y domina en la escritura, la prensa y el portugués europeo; TEM es coloquial y reina en el habla brasileña cotidiana. En un examen o texto formal conviene HÁ; en una conversación en Brasil, TEM suena mucho más natural. HÁ tiene además un uso temporal ("Moro aqui há dois anos", vivo aquí desde hace dos años) que TEM no cubre.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-pattern',

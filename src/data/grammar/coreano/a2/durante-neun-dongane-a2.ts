@@ -52,10 +52,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia entre 동안에 y otras expresiones de tiempo',
+      heading: '¿Cuál es la diferencia entre 동안 y otras expresiones de duración?',
       paragraphs: [
         '"동안에" (durante/mientras) vs "후에" (después de) vs "전에" (antes de): "수업 동안에 집중해요" (me concentro durante la clase), "수업 후에 쉬어요" (descanso después de la clase), "수업 전에 준비해요" (me preparo antes de la clase).',
         '"동안에" implica simultaneidad o duración. No indica secuencia. Para secuencia ("primero X, luego Y"), use -고 나서 o -후에.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma -는 동안(에) en coreano?',
+      paragraphs: [
+        'Con la raíz del verbo + -는 동안(에) (-neun dongan(e)), que significa "mientras / durante el tiempo en que": 제가 공부하는 동안 (mientras estudio), 자는 동안에 (mientras duermo). Con un sustantivo se usa 동안 directamente: 방학 동안 (durante las vacaciones), 세 시간 동안 (durante tres horas). La partícula 에 es opcional y a menudo se omite en el habla. Ojo: 동안 expresa un periodo con duración; para "mientras" con simultaneidad puntual también existe -(으)면서 (dos acciones a la vez del mismo sujeto: 음악을 들으면서 공부해요 = estudio escuchando música), que no es intercambiable con 동안.',
       ],
     },
   ],

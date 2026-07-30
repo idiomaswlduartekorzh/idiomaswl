@@ -78,6 +78,24 @@ const topic: GrammarTopic = {
         'También existe contracción con artículo indefinido: em+um=num, em+uma=numa. "Trabalho num café" (Trabajo en un café), "Moro numa cidade pequena" (Vivo en una ciudad pequeña). Estas contracciones también son obligatorias aunque los nativos a veces las evitan en el habla muy informal.',
       ],
     },
+    {
+      heading: '¿Por qué se dice "no Brasil" y no "em o Brasil"?',
+      paragraphs: [
+        'Porque en portugués la fusión de preposición + artículo es obligatoria, no un adorno del habla rápida como en inglés. "Em o Brasil" no existe: la forma correcta y única es "no Brasil" (em + o = no). El hispanohablante ya hace esto con "al" y "del" (a+el, de+el), pero el portugués lo extiende a las cuatro preposiciones em/de/a/por y a los cuatro artículos o/a/os/as, de modo que hay que automatizar toda la rejilla, no solo dos casos.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa à con acento (crase) en portugués?',
+      paragraphs: [
+        'Se usa à cuando la preposición "a" se junta con un sustantivo femenino que lleva artículo: "Vou à escola" (a + a escola). Con masculino sería "ao" (Vou ao mercado), y con nombre propio sin artículo, "a" sola (Vou a São Paulo). Truco: cambia el destino por uno masculino; si aparece "ao", el femenino equivalente lleva crase (à). "Vou ao cinema" → "Vou à praia".',
+      ],
+    },
+    {
+      heading: '¿Qué contracciones hay que memorizar en portugués A1?',
+      paragraphs: [
+        'Las cuatro familias con artículo definido cubren casi todo el A1: em → no/na/nos/nas, de → do/da/dos/das, a → ao/à/aos/às, por → pelo/pela/pelos/pelas. Añade las de indefinido (num/numa) y ya manejas el sistema. La tabla del inicio las reúne todas; conviene practicarlas hasta que salgan sin pensar, porque aparecen en cada frase con lugar, origen o destino.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-table',

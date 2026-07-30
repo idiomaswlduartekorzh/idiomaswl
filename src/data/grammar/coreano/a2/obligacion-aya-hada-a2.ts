@@ -48,7 +48,7 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '-(아/어)야 하다 vs -(아/어)야 되다',
+      heading: '¿Cuál es la diferencia entre -야 하다 y -야 되다?',
       paragraphs: [
         'Ambas formas expresan obligacion y son intercambiables en la mayoria de contextos: 가야 해요 = 가야 돼요. En la practica 돼요 es algo mas coloquial y frecuente en el habla cotidiana, mientras que 해요 suena ligeramente mas formal.',
         'Las dos formas tienen las mismas reglas de armonia vocal. Puedes usar cualquiera sin miedo a cometer un error grave.',
@@ -68,10 +68,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Obligacion con distintos sujetos',
+      heading: '¿Cómo se expresa obligación con distintos sujetos en coreano?',
       paragraphs: [
         '-(아/어)야 하다 funciona con cualquier sujeto: 나는 가야 해요 (tengo que ir), 너는 가야 해요 (tienes que ir), 우리는 가야 해요 (tenemos que ir). El sujeto puede estar implicito como en espanol.',
         'Para obligacion impersonal o de norma general, coreano tambien usa el infinitivo nominal + -이에요: 여기서는 조용히 해야 해요 (Aqui hay que estar en silencio).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma la obligación -(아/어)야 하다 en coreano?',
+      paragraphs: [
+        'Se toma la raíz del verbo y se le añade la terminación -아야/-어야 (según la vocal de la raíz: ㅏ/ㅗ → -아야, el resto → -어야) seguida de 하다 o 되다: 가다 → 가야 해요 (tengo que ir), 먹다 → 먹어야 해요 (tengo que comer), 공부하다 → 공부해야 해요. Expresa obligación o necesidad ("tener que / deber"). 하다 y 되다 son intercambiables aquí, aunque 되다 suena algo más coloquial. Para negar la obligación ("no hace falta") se usa -지 않아도 되다 (안 가도 돼요 = no hace falta ir), no la negación directa. Es una de las estructuras más útiles del A2 y aparece constantemente en instrucciones y consejos.',
       ],
     },
   ],

@@ -25,8 +25,9 @@ const topic: GrammarTopic = {
     mistakes: ['「飲んだばかり」 ✓ (reciente). No confundas con 「飲むばかりだ」 que sería "solo va a beber".'],
   },
   seo: [
-    {heading: '〜ばかり para pasado reciente', paragraphs: ['飲んだばかりです (acabo de beber — pasado muy reciente). 帰ったばかり (acabo de llegar).', 'Expresa que la acción sucedió hace poco tiempo.']},
-    {heading: '〜ばかり para énfasis exclusivo', paragraphs: ['彼はゲームばかりやってる (solo juega videojuegos — casi nada más). 毎日仕事ばかりしてる (solo trabajo cada día).', 'Énfasis en que algo sucede casi exclusivamente.']},
+    {heading: '¿Cómo expresa 〜たばかり un pasado muy reciente?', paragraphs: ['飲んだばかりです (acabo de beber — pasado muy reciente). 帰ったばかり (acabo de llegar).', 'Se forma con el verbo en forma た + ばかり y expresa que la acción sucedió hace muy poco, con carga subjetiva: el hablante SIENTE que fue reciente, aunque hayan pasado semanas.']},
+    {heading: '¿Cómo se usa 〜ばかり para el énfasis exclusivo?', paragraphs: ['彼はゲームばかりやってる (solo juega videojuegos — casi nada más). 毎日仕事ばかりしてる (solo trabajo cada día).', 'Tras un sustantivo o la forma て, ばかり subraya que algo ocurre casi en exclusiva, a menudo con matiz de queja o exceso.']},
+    {heading: '¿En qué se diferencian 〜たばかり y 〜たところ?', paragraphs: ['Ambos traducen "acabar de", pero difieren. 〜たばかり es subjetivo y elástico: 日本に来たばかりです puede decirse aunque hayas llegado hace meses, porque expresa la SENSACIÓN de novedad. 〜たところ es objetivo y estricto: 今着いたところです (acabo de llegar justo ahora) solo vale para el instante inmediato.', 'La trampa para el hispanohablante es usarlos como sinónimos: para "hace un momento exacto" se usa ところ; para "hace poco (lo siento reciente)" se usa ばかり.']},
   ],
   visual: {mode: 'scene', teacherLens: '〜ばかり: reciente o exclusivo', graphicPrompt: 'Tabla: 〜ばかり por contexto', scene: [['飲んだばかりです。', 'Acabo de beber.'], ['帰ったばかり。', 'Acabo de llegar.'], ['ゲームばかりやってる。', 'Solo juega videojuegos.'], ['毎日仕事ばかり。', 'Solo trabajo cada día.']]
 , learnerModes: ['reading', 'typing', 'choosing'], reviewFocus: ['最近', '専ら', '強調']},

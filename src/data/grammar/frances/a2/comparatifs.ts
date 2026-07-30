@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Comparativos de adjetivos: plus, moins, aussi',
+      heading: '¿Cómo se forman los comparativos en francés?',
       paragraphs: [
         'En francés, para comparar adjetivos y adverbios se usan tres formas: plus (más), moins (menos) y aussi (tan). Siempre van seguidos de que: "Cette ville est plus propre que l\'autre" (esta ciudad es más limpia que la otra), "Il parle moins vite que toi" (habla menos rápido que tú).',
         'Los adjetivos concuerdan con el sustantivo normalmente: "Elle est plus intelligente que lui". Los adverbios no cambian: "Il travaille aussi sérieusement qu\'elle" (trabaja tan seriamente como ella). Antes de una vocal, que se convierte en qu\'.',
       ],
     },
     {
-      heading: 'Formas irregulares: meilleur, mieux, pire',
+      heading: '¿Cuáles son los comparativos irregulares en francés?',
       paragraphs: [
         'Las formas irregulares son esenciales: bon (bueno) → meilleur(e)(s) que (mejor que); bien (bien) → mieux que (mejor que). La confusión más común es entre meilleur y mieux: meilleur es adjetivo (concuerda con el nombre), mieux es adverbio.',
         '"Ce restaurant est meilleur que l\'autre" (adjetivo, describe el restaurante) vs "Il cuisine mieux que moi" (adverbio, describe la acción de cocinar). Para mauvais: pire que o plus mauvais que (ambos posibles).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "meilleur" y "mieux" en francés?',
+      paragraphs: [
+        'Meilleur es el comparativo de bon (adjetivo): acompaña a un sustantivo y significa "mejor" en el sentido de cualidad — "un meilleur livre", "une meilleure idée". Mieux es el comparativo de bien (adverbio): modifica a un verbo y significa "mejor" en el sentido de manera — "il chante mieux", "ça va mieux". El error típico del hispanohablante es que en español "mejor" cubre ambos; en francés hay que elegir según lo que se califica: cosa o persona → meilleur; acción → mieux. En el lado negativo, el par equivalente es pire (adjetivo, "peor") y plus mal / pis (adverbio).',
       ],
     },
   ],

@@ -55,14 +55,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La regla BAGS: adjetivos que van antes',
+      heading: '¿Qué adjetivos van antes del sustantivo en francés?',
       paragraphs: [
         'Los adjetivos BAGS más frecuentes son: Beauty: beau/belle (hermoso/a), joli/jolie (bonito/a). Age: jeune (joven), vieux/vieille (viejo/a), nouveau/nouvelle (nuevo/a). Goodness: bon/bonne (bueno/a), mauvais/mauvaise (malo/a). Size: grand/grande (grande), petit/petite (pequeño/a), long/longue (largo/a).',
         'Ejemplos: "un grand appartement" (un gran apartamento), "une petite fille" (una niña pequeña), "un bon restaurant" (un buen restaurante), "une belle ville" (una ciudad hermosa), "un jeune professeur" (un joven profesor), "un nouveau livre" (un libro nuevo).',
       ],
     },
     {
-      heading: 'Concordancia: género y número',
+      heading: '¿Cómo concuerdan los adjetivos en género y número en francés?',
       paragraphs: [
         'Los adjetivos en francés concuerdan en género (masc./fem.) y número (sing./pl.) con el sustantivo. La regla general: añadir -e para el femenino y -s para el plural. "Grand" → grande (fem.) → grands (masc. pl.) → grandes (fem. pl.).',
         'Si el adjetivo ya termina en -e en masculino, no cambia en femenino: "facile → facile", "possible → possible", "magnifique → magnifique". Y si ya termina en -s, no cambia en plural: "gris → gris" (pl. masc. = sing.).',

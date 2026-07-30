@@ -49,20 +49,20 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cuándo usar Futur I y cuándo Präsens para el futuro',
+      heading: '¿Cuándo se usa Futur I y cuándo Präsens en alemán?',
       paragraphs: [
         'En alemán, el Präsens con un marcador temporal (morgen, bald, nächste Woche, in einem Jahr) es la forma más natural de expresar planes concretos futuros: "Ich fahre morgen nach Berlin." El Futur I con werden se reserva para predicciones, promesas solemnes, suposiciones y cuando quieres enfatizar el futuro.',
         '"Ich werde morgen nach Berlin fahren" suena más enfático o formal. En el habla cotidiana, "Ich fahre morgen nach Berlin" es más frecuente.',
       ],
     },
     {
-      heading: 'Werden para suposiciones sobre el presente',
+      heading: '¿Cómo se usa werden para suposiciones en alemán?',
       paragraphs: [
         'Una función especial del Futur I es expresar suposiciones o conjeturas sobre lo que está pasando ahora mismo: "Er wird jetzt schlafen" (Supongo que ahora estará durmiendo). Esta estructura equivale al español "debería estar durmiendo" o "estará durmiendo".',
       ],
     },
     {
-      heading: 'La conjugación de werden',
+      heading: '¿Cómo se conjuga werden en alemán?',
       paragraphs: [
         'werden tiene una forma irregular en du (wirst) y er/sie/es (wird). El resto es regular: ich werde, wir werden, ihr werdet, sie/Sie werden. Atención: en Präteritum, werden se convierte en wurde/wurden (forma pasiva pasada).',
       ],

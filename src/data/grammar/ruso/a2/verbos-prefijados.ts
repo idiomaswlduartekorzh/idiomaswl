@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Приходить/прийти y уходить/уйти: los más comunes',
+      heading: '¿Cómo funcionan приходить/прийти y уходить/уйти?',
       paragraphs: [
         'Приходить (imperfectivo) / прийти (perfectivo) significan "venir, llegar": "Он каждый день приходит на работу в 9" (hábito) vs "Он пришёл домой поздно" (acción concluida). Uходить (imperfectivo) / уйти (perfectivo) significan "irse, marcharse": "Она уходит в 6" (hábito) vs "Она уже ушла" (ya se fue). El prefijo при- indica movimiento hacia el hablante o hacia un punto de llegada; у- indica alejamiento.',
         'Los verbos prefijados de movimiento forman pares aspectuales: входить/войти (entrar), выходить/выйти (salir), заходить/зайти (pasar de visita), подходить/подойти (acercarse), доходить/дойти (llegar hasta), переходить/перейти (cruzar). Todos se conjugan con las mismas terminaciones que ходить y -йти/-ти.',
       ],
     },
     {
-      heading: 'Войти, выйти, зайти: entrar, salir y pasar',
+      heading: '¿Qué significan войти, выйти y зайти?',
       paragraphs: [
         'Входить/войти (entrar): "Войдите, пожалуйста" (Entre, por favor — imperativo). "Он вошёл в магазин" (Entró a la tienda). La forma de imperativo войди/войдите es muy usada para invitar a entrar. Выходить/выйти (salir): "Выйди из класса" (Sal de la clase). "Поезд выходит с третьего пути" (El tren sale del andén 3).',
         'Заходить/зайти (pasar a ver de camino, visitar brevemente): "Зайди ко мне после работы" (Pasa por mi casa después del trabajo). "Я зайду в магазин по дороге домой" (Pasaré por la tienda de camino a casa). El prefijo за- indica una acción de paso breve.',
+      ],
+    },
+    {
+      heading: '¿Cómo afecta el prefijo al aspecto de los verbos de movimiento?',
+      paragraphs: [
+        'En los verbos de movimiento prefijados, la raíz multidireccional forma el imperfectivo y la unidireccional el perfectivo: приходить (imperfectivo, "soler llegar / estar llegando") frente a прийти (perfectivo, "llegar [una vez, con resultado]"). Así, Он приходит каждый день (viene cada día, hábito) usa el imperfectivo, y Он пришёл (llegó/ha llegado) usa el perfectivo.',
+        'La trampa para el hispanohablante es que un mismo prefijo (при-, у-, в-, вы-) genera SIEMPRE los dos aspectos, uno con cada raíz: приезжать/приехать, уезжать/уехать. Elegir mal el aspecto cambia el sentido entre acción habitual/en proceso (imperfectivo) y acción única completada (perfectivo).',
       ],
     },
   ],

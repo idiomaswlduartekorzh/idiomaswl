@@ -61,10 +61,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Comparación futuro perfectivo vs imperfectivo',
+      heading: '¿En qué se diferencian el futuro perfectivo y el imperfectivo?',
       paragraphs: [
         'La elección entre futuro perfectivo e imperfectivo depende de si el resultado importa. Я буду читать эту книгу (estaré leyendo — proceso) vs Я прочитаю эту книгу (terminaré de leer el libro — resultado).',
         'Palabras como обязательно (definitivamente), скоро (pronto), за час (en una hora) suelen acompañar al perfectivo. Palabras como весь день (todo el día), долго (mucho tiempo) suelen ir con el imperfectivo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el futuro perfectivo (sin быть)?',
+      paragraphs: [
+        'El futuro perfectivo es sintético (una sola palabra): se conjuga el verbo PERFECTIVO con las mismas terminaciones del presente, pero el significado es futuro. прочитать → я прочитаю (leeré [y terminaré]), написать → я напишу (escribiré), сделать → я сделаю (haré). No interviene быть.',
+        'La trampa para el hispanohablante es que una forma con aspecto y terminaciones "de presente" (напишу) significa en realidad futuro, precisamente por ser perfectiva: el verbo perfectivo no tiene presente, así que esa conjugación solo puede apuntar al futuro. Expresa una acción única con resultado, frente al proceso del futuro imperfectivo буду писать.',
       ],
     },
   ],

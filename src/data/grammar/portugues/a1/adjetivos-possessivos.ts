@@ -67,6 +67,32 @@ const topic: GrammarTopic = {
         'En Portugal, el artículo antes del posesivo es casi obligatorio: o meu livro, a tua casa. En Brasil, el artículo es opcional y se omite con frecuencia: meu livro = o meu livro, minha casa = a minha casa. Ambas formas son correctas en BP. Para los hispanohablantes, omitir el artículo (como en español "mi libro") es lo más natural.',
       ],
     },
+    {
+      heading: '¿Cuáles son los adjetivos posesivos en portugués?',
+      paragraphs: [
+        'Cada persona tiene cuatro formas que concuerdan con el objeto poseído (masculino/femenino × singular/plural). Esta es la tabla completa; fíjate en que la 3ª persona (você/ele/ela y eles/elas) comparte seu/sua, que en Brasil se desambigua con dele/dela:',
+      ],
+      table: [
+        ['Persona', 'Masc. sg', 'Fem. sg', 'Masc. pl', 'Fem. pl'],
+        ['eu', 'meu', 'minha', 'meus', 'minhas'],
+        ['tu', 'teu', 'tua', 'teus', 'tuas'],
+        ['você/ele/ela', 'seu', 'sua', 'seus', 'suas'],
+        ['nós', 'nosso', 'nossa', 'nossos', 'nossas'],
+        ['vocês/eles/elas', 'seu', 'sua', 'seus', 'suas'],
+      ],
+    },
+    {
+      heading: '¿Se dice "meu casa" o "minha casa"?',
+      paragraphs: [
+        'Se dice "minha casa", porque casa es femenino y el posesivo concuerda con la cosa poseída, no con quien posee. Esta es la trampa número uno del hispanohablante, que en español usa "mi" invariable para ambos géneros ("mi casa", "mi libro"). En portugués hay que elegir: meu carro / minha casa, meus filhos / minhas filhas. Regla práctica: mira el artículo del sustantivo (o → meu, a → minha) y el posesivo lo copia.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "su" (de él/de ella) en portugués brasileño?',
+      paragraphs: [
+        'En la práctica brasileña se dice "dele" (de él) y "dela" (de ella), pospuesto al sustantivo: "o carro dele", "a casa dela", "os livros deles/delas". Aunque "seu/sua" es gramaticalmente correcto, resulta ambiguo porque también significa "de você", así que el brasileño lo reserva para el trato formal y prefiere dele/dela para la 3ª persona. Es una diferencia de uso clave frente al español, donde "su" cubre todos esos casos sin problema.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-table',

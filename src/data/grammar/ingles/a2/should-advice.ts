@@ -92,6 +92,24 @@ const topic: GrammarTopic = {
         'En español a veces decimos "deberías de": "Deberías de estudiar más." En inglés no existe esta forma — "You should study more" (sin equivalente a "de").',
       ],
     },
+    {
+      heading: '¿Cómo se usa "should" en inglés?',
+      paragraphs: [
+        'Con "should" + verbo en forma base, para dar consejos y recomendaciones: "You should rest", "You should see a doctor". No lleva "to" ni -s. Negativo: "shouldn\'t" ("You shouldn\'t worry"). Pregunta: "Should I call her?".',
+      ],
+    },
+    {
+      heading: '¿Cómo se dan consejos en inglés?',
+      paragraphs: [
+        'Con "should/shouldn\'t" ("You should study more"), con "had better" para consejos urgentes ("You\'d better hurry") o con "why don\'t you…?" ("Why don\'t you take a break?"). "should" es la forma más común y neutra.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "should" y "must"?',
+      paragraphs: [
+        '"should" es una recomendación (es buena idea): "You should exercise". "must" es una obligación fuerte o una norma: "You must wear a seatbelt". Un consejo se puede ignorar; una obligación con "must" no.',
+      ],
+    },
   ],
 
   visual: {

@@ -56,7 +56,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La regla vocálica: ㅏ/ㅗ → 아요, el resto → 어요',
+      heading: '¿Cómo se forma la forma 해요 según la vocal en coreano?',
       paragraphs: [
         'Identifica la raíz verbal quitando -다 del infinitivo. Luego observa la vocal de su última sílaba. Si es ㅏ (a) o ㅗ (o) → añade 아요. Si es cualquier otra vocal (ㅓ, ㅜ, ㅣ, ㅡ, etc.) → añade 어요.',
         'Las contracciones más importantes: 가 + 아요 = 가요 (las dos ㅏ se fusionan); 오 + 아요 = 와요 (ㅗ+ㅏ=ㅘ); 마시 + 어요 = 마셔요 (ㅣ+ㅓ=ㅕ); 배우 + 어요 = 배워요 (ㅜ+ㅓ=ㅝ). Estas contracciones son sistemáticas y vale la pena memorizarlas como unidad.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '하다 verbos: el grupo más productivo del coreano',
+      heading: '¿Cómo se conjugan los verbos 하다 en 해요체?',
       paragraphs: [
         '하다 (hacer) es un verbo irregular cuya forma presente es siempre 해요, sin excepción. Lo importante es que en coreano miles de verbos se forman con sustantivo + 하다: 공부하다 (estudiar = estudio-hacer), 운동하다 (ejercitarse), 요리하다 (cocinar), 전화하다 (llamar por teléfono). Todos se conjugan igual: 공부해요, 운동해요, 요리해요, 전화해요.',
         'Para un hispanohablante esto es muy práctico: si sabes el sustantivo coreano o incluso el equivalente en inglés prestado (드라이브하다 = drive-hacer = conducir), puedes crear verbos nuevos añadiendo 하다.',

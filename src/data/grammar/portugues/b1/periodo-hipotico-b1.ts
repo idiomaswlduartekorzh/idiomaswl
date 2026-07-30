@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Primer tipo: período condicional de la realidad',
+      heading: '¿Cómo se forma el período hipotético real en portugués?',
       paragraphs: [
         'Expresa hechos probables o hábitos generales. Estructura: si + presente → presente/futuro/imperativo. Ejemplos: "Se chover, não vou sair" (Si llueve, no salgo). "Se você estudar, passará no exame" (Si estudias, pasarás el examen).',
         'El "si" aquí es casi un "cuando" porque es bastante probable. En portugués europeo es muy frecuente; en brasileño también, pero se usa más "if you study" (si + presente).',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Tercer tipo: período condicional de la irrealidad (pasado)',
+      heading: '¿Cómo se expresa una hipótesis irreal del pasado en portugués?',
       paragraphs: [
         'Expresa situaciones contrarias a la realidad en el pasado. Estructura: si + imperfecto subjuntivo → condicional compuesto. Ejemplo: "Se eu tivesse estudado, teria passado no exame" (Si hubiera estudiado, habría pasado el examen).',
         'Aquí SÍ aparece imperfecto subjuntivo (tivesse, estudasse) porque la condición es sobre el pasado. El condicional compuesto (teria passado) expresa la consecuencia contrafáctica.',
