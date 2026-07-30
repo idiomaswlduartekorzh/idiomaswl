@@ -44,7 +44,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Cómo concuerdan los adjetivos en ruso',
+      heading: '¿Cómo concuerdan los adjetivos en ruso?',
       paragraphs: [
         'En ruso, los adjetivos cambian de terminación según el género y número del sustantivo que modifican. Nuevo se dice новый con sustantivos masculinos, новая con femeninos, новое con neutros y новые en plural. Esta concordancia es similar al español (nuevo/nueva), pero el ruso también añade la distinción neutro.',
         'La buena noticia: las terminaciones adjetivas son más regulares que las de los sustantivos. Una vez aprendes -ый/-ая/-ое/-ые para adjetivos duros (como новый), y -ий/-яя/-ее/-ие para adjetivos blandos (como синий — azul), tienes el 90% del sistema.',
@@ -57,14 +57,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Adjetivos frecuentes del A1 para aprender',
+      heading: '¿Cuáles son los adjetivos más frecuentes del A1 en ruso?',
       paragraphs: [
         'Los adjetivos más útiles del A1: новый (nuevo), старый (viejo), большой (grande), маленький (pequeño), хороший (bueno), плохой (malo), красивый (bonito), интересный (interesante), молодой (joven), русский (ruso), холодный (frío), горячий (caliente).',
         'Un consejo práctico: aprende cada adjetivo con su forma masculina (la del diccionario). Las demás formas se derivan sistemáticamente. Si sabes новый, sabrás automáticamente новая, новое, новые.',
       ],
     },
     {
-      heading: 'Adjetivo atributivo vs predicativo',
+      heading: '¿Qué diferencia hay entre adjetivo atributivo y predicativo?',
       paragraphs: [
         'El adjetivo atributivo va antes del sustantivo y concuerda: новый студент (el nuevo estudiante), интересная книга (libro interesante). El adjetivo predicativo va después del sustantivo (con быть omitido en presente): Студент новый (El estudiante es nuevo), Книга интересная (El libro es interesante).',
         'Ambos tipos concuerdan en género y número. En español esto es automático; en ruso hay que recordar las terminaciones específicas por género.',
@@ -115,10 +115,10 @@ const topic: GrammarTopic = {
         intro: 'Completa la forma del adjetivo y su terminación.',
         type: 'dual',
         items: [
-          { scene: 'Concordancia', lines: [['', '"libro interesante": книга + интересн___ → [[0]], terminación: [[1]]']], blanks: [{ options: ['интересная', 'интересный', 'интересное', 'интересные'], answer: 'интересная', explain: 'книга (fem) → интересная. Terminación femenina -ая.' }, { options: ['-ая', '-ый', '-ое', '-ые'], answer: '-ая', explain: 'Femenino: -ая.' }] },
-          { scene: 'Concordancia', lines: [['', '"ciudad grande": город (masc) + больш___ → [[0]], terminación: [[1]]']], blanks: [{ options: ['большой', 'большая', 'большое', 'большие'], answer: 'большой', explain: 'город (masc) → большой. Adjetivo tónico: -ой.' }, { options: ['-ой', '-ый', '-ая', '-ие'], answer: '-ой', explain: 'большой es adjetivo tónico (-ой).' }] },
-          { scene: 'Concordancia', lines: [['', '"ventana nueva": окно (neutro) + нов___ → [[0]], terminación: [[1]]']], blanks: [{ options: ['новое', 'новый', 'новая', 'новые'], answer: 'новое', explain: 'окно (neutro) → новое. Terminación neutra -ое.' }, { options: ['-ое', '-ый', '-ая', '-ые'], answer: '-ое', explain: 'Neutro: -ое.' }] },
-          { scene: 'Concordancia', lines: [['', '"buenos amigos": друзья (masc pl) + хорош___ → [[0]], terminación: [[1]]']], blanks: [{ options: ['хорошие', 'хороший', 'хорошая', 'хорошее'], answer: 'хорошие', explain: 'друзья (plural) → хорошие. Adjetivo blando plural: -ие.' }, { options: ['-ие', '-ый', '-ая', '-ое'], answer: '-ие', explain: 'Adjetivo blando plural: -ие.' }] },
+          { scene: 'Concordancia', lines: [['', '"libro interesante": книга + интересн[[0]] → , terminación: ']], blanks: [{ options: ['интересная', 'интересный', 'интересное', 'интересные'], answer: 'интересная', explain: 'книга (fem) → интересная. Terminación femenina -ая.' }, { options: ['-ая', '-ый', '-ое', '-ые'], answer: '-ая', explain: 'Femenino: -ая.' }] },
+          { scene: 'Concordancia', lines: [['', '"ciudad grande": город (masc) + больш[[0]] → , terminación: ']], blanks: [{ options: ['большой', 'большая', 'большое', 'большие'], answer: 'большой', explain: 'город (masc) → большой. Adjetivo tónico: -ой.' }, { options: ['-ой', '-ый', '-ая', '-ие'], answer: '-ой', explain: 'большой es adjetivo tónico (-ой).' }] },
+          { scene: 'Concordancia', lines: [['', '"ventana nueva": окно (neutro) + нов[[0]] → , terminación: ']], blanks: [{ options: ['новое', 'новый', 'новая', 'новые'], answer: 'новое', explain: 'окно (neutro) → новое. Terminación neutra -ое.' }, { options: ['-ое', '-ый', '-ая', '-ые'], answer: '-ое', explain: 'Neutro: -ое.' }] },
+          { scene: 'Concordancia', lines: [['', '"buenos amigos": друзья (masc pl) + хорош[[0]] → , terminación: ']], blanks: [{ options: ['хорошие', 'хороший', 'хорошая', 'хорошее'], answer: 'хорошие', explain: 'друзья (plural) → хорошие. Adjetivo blando plural: -ие.' }, { options: ['-ие', '-ый', '-ая', '-ое'], answer: '-ие', explain: 'Adjetivo blando plural: -ие.' }] },
         ],
       },
       {
@@ -128,7 +128,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma correcta del adjetivo para cada espacio.',
         type: 'guidedText',
         scene: 'Describiendo con adjetivos',
-        text: 'У нас [[0]] учитель. (Tenemos un buen maestro.) Это [[1]] книга. (Este es un libro interesante.) Москва — [[2]] город. (Moscú es una ciudad grande.) У Давида [[3]] машина. (David tiene un carro nuevo.) Студенты [[4]] и умные. (Los estudiantes son jóvenes e inteligentes.)',
+        text: 'У нас [[0]] учитель. (Tenemos un buen maestro.) Это [[1]] книга. (Este es un libro interesante.) Москва — [[2]] город. (Moscú es una ciudad grande.) У Давида [[3]] машина. (Dario tiene un carro nuevo.) Студенты [[4]] и умные. (Los estudiantes son jóvenes e inteligentes.)',
         blanks: [
           { options: ['хороший', 'хорошая', 'хорошее', 'хорошие'], answer: 'хороший', explain: 'учитель (masc) → хороший. Adjetivo blando masculino: -ий.' },
           { options: ['интересный', 'интересная', 'интересное', 'интересные'], answer: 'интересная', explain: 'книга (fem) → интересная. Terminación femenina -ая.' },
@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe oraciones completas con adjetivos concordados.',
         type: 'write',
         items: [
-          { scene: 'Descripción masculino', prompt: 'Traduce al ruso: "David tiene un carro rojo." (красный — rojo, машина — carro, fem)', answer: 'У Давида красная машина', accepted: ['у давида красная машина', 'у давида есть красная машина'], explain: 'У Давида красная машина. машина (fem) → красная. Concordancia femenina -ая.' },
+          { scene: 'Descripción masculino', prompt: 'Traduce al ruso: "Dario tiene un carro rojo." (красный — rojo, машина — carro, fem)', answer: 'У Давида красная машина', accepted: ['у давида красная машина', 'у давида есть красная машина'], explain: 'У Давида красная машина. машина (fem) → красная. Concordancia femenina -ая.' },
           { scene: 'Descripción femenino', prompt: 'Traduce al ruso: "Es un libro interesante." (интересный — interesante, книга — libro, fem)', answer: 'Это интересная книга', accepted: ['это интересная книга'], explain: 'Это интересная книга. книга (fem) → интересная (-ая).' },
           { scene: 'Predicativo', prompt: 'Traduce al ruso: "La ciudad es grande." (Москва — Moscú / город — ciudad, masc)', answer: 'Город большой', accepted: ['город большой', 'москва большая', 'город большой.'], explain: 'Город большой. Predicativo: sustantivo + adjetivo concordado. город (masc) → большой.' },
           { scene: 'Plural', prompt: 'Traduce al ruso: "Tenemos nuevos estudiantes." (У нас = tenemos, студенты — pl)', answer: 'У нас новые студенты', accepted: ['у нас новые студенты'], explain: 'У нас новые студенты. студенты (plural) → новые (-ые).' },

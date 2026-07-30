@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Condicional con mandatos y sugerencias',
+      heading: '¿Cómo se usa -(으)면 con mandatos y sugerencias?',
       paragraphs: [
         'Una combinacion muy frecuente es el condicional seguido de un mandato o sugerencia: 피곤하면 쉬세요 (Si estas cansado, descansa). 배고프면 드세요 (Si tienes hambre, come). Esta estructura es muy natural en el coreano hablado.',
         'Atencion: a diferencia de -(아/어)서 (que NO puede preceder a mandatos), -(으)면 si puede ir seguido de comandos. Esta es una diferencia importante que veremos en el tema 04.',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia entre -(으)면 y -때',
+      heading: '¿Cuál es la diferencia entre -(으)면 y -때?',
       paragraphs: [
         '-(으)면 expresa una condicion (si algo ocurre). -때 expresa simplemente el momento (cuando/en el momento de). Compare: 비가 오면 우산을 써요 (Si llueve, usa paraguas — condicion) vs 비가 올 때 우산을 썼어요 (Cuando lluvia, usaba paraguas — descripcion de momento).',
         'Para A2 lo mas importante es dominar -(으)면 como la forma general de condicion. -때 se introduce posteriormente para hablar de momentos especificos.',
@@ -103,8 +103,8 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Consejo para el estudio',
-            lines: [['Zhanna', '열심히 공부___ 한국어를 잘 할 수 있어요. (Si estudias duro, podras hablar bien coreano.)']],
-            options: ['하면', '하으면', '해면', '하으면'],
+            lines: [['Iris', '열심히 공부___ 한국어를 잘 할 수 있어요. (Si estudias duro, podras hablar bien coreano.)']],
+            options: ['하면', '하으면', '해면'],
             answer: '하면',
             explain: '하다 → raiz 하 (vocal) → 하면. Vocal final no necesita -으.',
           },
@@ -117,7 +117,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Lluvia',
-            lines: [['David', '비가 ___ (오다) 우산을 가져가세요. (Si llueve, lleva paraguas.)']],
+            lines: [['Diego', '비가 ___ (오다) 우산을 가져가세요. (Si llueve, lleva paraguas.)']],
             options: ['오면', '오으면', '왔으면', '오고면'],
             answer: '오면',
             explain: '오다 → raiz 오 (vocal) → 오면.',
@@ -152,7 +152,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Con el medico',
-            lines: [['Zhanna', '아프___ 병원에 가세요. (Si estas enfermo, ve al hospital.)']],
+            lines: [['Iris', '아프___ 병원에 가세요. (Si estas enfermo, ve al hospital.)']],
             options: ['면', '으면', '아면', '프면'],
             answer: '면',
             explain: '아프다 → raiz 아프 (vocal) → 아프면.',
@@ -167,11 +167,11 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'Consejo de David',
+            scene: 'Consejo de Diego',
             lines: [
-              ['Carlos', '선생님, 한국어 발음이 어려워요. (La pronunciacion coreana es dificil.)'],
-              ['David', '매일 연습[[0]] (하다) 금방 [[1]] (좋아지다 — mejorar). (Si practicas a diario, mejoraras pronto.)'],
-            ],
+ ['Carlos', '선생님, 한국어 발음이 어려워요. (La pronunciacion coreana es dificil.)'],
+ ['Diego', '매일 연습[[0]] (하다) 금방 [[1]] (좋아지다 — mejorar). (Si practicas a diario, mejoraras pronto.)'],
+ ],
             blanks: [
               { options: ['하면', '하으면', '해면', '하이면'], answer: '하면', explain: '하다 → raiz 하 (vocal) → 하면.' },
               { options: ['좋아질 거예요', '좋아지면', '좋아졌어요', '좋아지요'], answer: '좋아질 거예요', explain: 'Resultado con futuro: 좋아지다 → 좋아질 거예요.' },
@@ -180,9 +180,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planes condicionados',
             lines: [
-              ['Ana', '날씨가 좋[[0]] (좋다) 공원에 갈 거예요? (Si el clima esta bueno, ¿iras al parque?)'],
-              ['Lina', '네, 날씨가 좋[[1]] (좋다) 갈 거예요. (Si, si el clima esta bueno, ire.)'],
-            ],
+ ['Ana', '날씨가 좋[[0]] (좋다) 공원에 갈 거예요? (Si el clima esta bueno, ¿iras al parque?)'],
+ ['Lina', '네, 날씨가 좋[[1]] (좋다) 갈 거예요. (Si, si el clima esta bueno, ire.)'],
+ ],
             blanks: [
               { options: ['으면', '이면', '면', '였으면'], answer: '으면', explain: '좋다 → raiz 좋 (consonante ㅎ) → 좋으면.' },
               { options: ['으면', '이면', '면', '았으면'], answer: '으면', explain: '좋다 → 좋으면. Mismo condicional en la respuesta.' },
@@ -191,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntando sobre Corea',
             lines: [
-              ['Marco', '한국에 [[0]] (가다) 뭐 하고 싶어요? (Si vas a Corea, ¿que quieres hacer?)'],
-              ['Sofia', '한국에 [[1]] (가다) 김치를 꼭 먹을 거예요. (Si voy a Corea, seguro comere kimchi.)'],
-            ],
+ ['Marco', '한국에 [[0]] (가다) 뭐 하고 싶어요? (Si vas a Corea, ¿que quieres hacer?)'],
+ ['Sofia', '한국에 [[1]] (가다) 김치를 꼭 먹을 거예요. (Si voy a Corea, seguro comere kimchi.)'],
+ ],
             blanks: [
               { options: ['가면', '가으면', '갔으면', '가이면'], answer: '가면', explain: '가다 → raiz 가 (vocal) → 가면.' },
               { options: ['가면', '가으면', '갔으면', '가이면'], answer: '가면', explain: '가다 → 가면. Mismo patron en la respuesta.' },
@@ -202,9 +202,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Reglas del hogar',
             lines: [
-              ['Zhanna', '집에 들어[[0]] (오다) 손을 씻으세요. (Cuando llegues a casa, lavate las manos.)'],
-              ['Carlos', '알겠어요. 먹___ [[1]] 도 손을 씻을게요. (Entendido. Antes de comer tambien me lavare las manos.)'],
-            ],
+ ['Iris', '집에 들어 (오다) 손을 씻으세요. (Cuando llegues a casa, lavate las manos.)'],
+ ['Carlos', '알겠어요. 먹[[0]] 도 손을 씻을게요. (Entendido. Antes de comer tambien me lavare las manos.)'],
+ ],
             blanks: [
               { options: ['오면', '오으면', '왔으면', '오이면'], answer: '오면', explain: '오다 → raiz 오 (vocal) → 오면.' },
               { options: ['기 전에', '으면서', '으면', '아서'], answer: '기 전에', explain: '먹기 전에 = antes de comer. -기 전에 expresa anterioridad (tema 17).' },
@@ -218,7 +218,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el texto con la forma correcta de -(으)면.',
         type: 'guidedText',
-        scene: 'Consejos de Zhanna para aprender coreano',
+        scene: 'Consejos de Iris para aprender coreano',
         text: '매일 30분 공부[[0]] 한 달 후에 많이 달라질 거예요. 단어를 모르[[1]] 사전을 찾아보세요. 발음이 어렵[[2]] 소리 내어 읽으세요. 한국 드라마를 보[[3]] 자연스럽게 배울 수 있어요. 틀려도 괜찮아요 — 포기하지 않[[4]] 반드시 성공할 거예요.',
         blanks: [
           { options: ['하면', '하으면', '해면', '하이면'], answer: '하면', explain: '공부하다 → 하면 (vocal).' },
@@ -235,7 +235,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de -(으)면 para cada verbo.',
         type: 'freeText',
         scene: 'Consejos para la vida saludable',
-        text: '물을 많이 ___건강해요. (마시다) / 운동을 ___기분이 좋아요. (하다) / 야채를 많이 ___몸에 좋아요. (먹다) / 일찍 ___피곤하지 않아요. (자다) / 스트레스가 ___산책을 하세요. (있다)',
+        text: '물을 많이 [[0]]건강해요. (마시다) / 운동을 [[1]]기분이 좋아요. (하다) / 야채를 많이 [[2]]몸에 좋아요. (먹다) / 일찍 [[3]]피곤하지 않아요. (자다) / 스트레스가 [[4]]산책을 하세요. (있다)',
         blanks: [
           { answer: '마시면', explain: '마시다 → raiz 마시 (vocal) → 마시면.' },
           { answer: '하면', explain: '하다 → raiz 하 (vocal) → 하면.' },

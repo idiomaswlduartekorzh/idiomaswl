@@ -74,6 +74,24 @@ const topic: GrammarTopic = {
         '❌ I didn\'t used to smoke. / ❌ Did you used to smoke? — Estos son errores muy frecuentes, incluso entre angloparlantes.',
       ],
     },
+    {
+      heading: '¿Cómo se usa "used to" en inglés?',
+      paragraphs: [
+        'Con "used to" + verbo en forma base, para hábitos o estados del pasado que ya no ocurren: "I used to smoke" (antes fumaba, ya no), "She used to live in Madrid". Equivale a "solía + infinitivo" o al imperfecto español ("fumaba", "vivía").',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas y negaciones con "used to"?',
+      paragraphs: [
+        'Con el auxiliar "did" y la forma base "use to": "Did you use to play football?", "I didn\'t use to like coffee". En negativo/pregunta se pierde la -d de "used". Otra opción de negación es "never used to".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "used to" y el past simple?',
+      paragraphs: [
+        '"used to" enfatiza un hábito o estado repetido en el pasado que ya no existe ("I used to run every day"). El past simple narra un hecho puntual ("I ran yesterday"). Para acciones únicas se usa past simple, no "used to".',
+      ],
+    },
   ],
 
   visual: {

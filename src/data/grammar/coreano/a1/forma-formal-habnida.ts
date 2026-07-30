@@ -48,21 +48,27 @@ const topic: GrammarTopic = {
       heading: '¿Cuándo se usa la forma formal 합니다 en coreano?',
       paragraphs: [
         'La forma formal 합니다 (hamnida) se usa en situaciones muy específicas: presentaciones profesionales, discursos, noticias de televisión, anuncios en aeropuertos, manuales de instrucciones, y en el servicio al cliente formal. Si estudias coreano para viajes o conversación, la forma 해요 es suficiente para el 95% de las situaciones.',
-        'Sin embargo, si planeas trabajar en Corea, presentarte en eventos o ver noticias, reconocer 합니다체 es esencial. Y además, muchos hablantes usan 합니다 en sus propias presentaciones: "저는 David입니다" (Yo soy David) es más impactante y formal que "저는 David예요".',
+        'Sin embargo, si planeas trabajar en Corea, presentarte en eventos o ver noticias, reconocer 합니다체 es esencial. Y además, muchos hablantes usan 합니다 en sus propias presentaciones: "저는 Enzo입니다" (Yo soy Enzo) es más impactante y formal que "저는 Enzo예요".',
       ],
       table: [
         ['Situación', 'Forma recomendada', 'Ejemplo'],
         ['Conversación amigos', '해요체', '어디 가요? (¿Adónde vas?)'],
-        ['Presentación formal', '합니다체', '저는 David입니다 (Soy David)'],
+        ['Presentación formal', '합니다체', '저는 Enzo입니다 (Soy Enzo)'],
         ['Noticias/TV', '합니다체', '오늘 날씨는 맑겠습니다'],
         ['Servicio al cliente', '합니다체', '도와드리겠습니다 (Le ayudaremos)'],
       ],
     },
     {
-      heading: 'Cómo memorizar la diferencia entre 입니다 y 합니다',
+      heading: '¿Cuál es la diferencia entre 입니다 y 합니다 en coreano?',
       paragraphs: [
         '"입니다" viene de 이다 (ser/estar) y se usa SOLO después de sustantivos. 저는 학생입니다 = Soy estudiante (학생 = sustantivo). "합니다" viene de 하다 y se adhiere a verbos: 공부합니다 = estudio (공부하다 → 합니다).',
         'Para los demás verbos: si la raíz termina en vocal, añade ㅂ니다 como consonante final (가 → 갑니다). Si termina en consonante, añade 습니다 (먹 → 먹습니다). La regla es la misma que en 해요 pero con terminación formal.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma la terminación formal -ㅂ니다/습니다?',
+      paragraphs: [
+        'Se parte de la raíz del verbo (el infinitivo sin 다): si la raíz termina en vocal, se añade -ㅂ니다 (가다 → 갑니다); si termina en consonante, se añade -습니다 (먹다 → 먹습니다). Para preguntar, la terminación pasa a -ㅂ니까?/-습니까? (갑니까? / 먹습니까?). Es el registro más formal (합니다체), propio de presentaciones, discursos, noticias y el trato con clientes; en la conversación cotidiana con conocidos se prefiere el 해요체, igualmente cortés pero más cercano. El verbo 이다 ("ser") en este registro es 입니다: 저는 학생입니다 (soy estudiante).',
       ],
     },
   ],
@@ -123,9 +129,9 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma formal correcta en cada espacio.',
         type: 'guidedText',
         scene: 'Presentación formal de WeLearn en conferencia',
-        text: '안녕하십니까! 저는 David [[0]]. (Soy David — formal) WeLearn은 언어 학원 [[1]]. (WeLearn es una academia de idiomas) 저희는 한국어, 영어, 스페인어를 가르칩[[2]]. (Enseñamos coreano, inglés, español) 수업은 매일 [[3]]. (Las clases son todos los días) 감사합[[4]]! (¡Gracias!)',
+        text: '안녕하십니까! 저는 Enzo [[0]]. (Soy Enzo — formal) WeLearn은 언어 학원 [[1]]. (WeLearn es una academia de idiomas) 저희는 한국어, 영어, 스페인어를 가르칩[[2]]. (Enseñamos coreano, inglés, español) 수업은 매일 [[3]]. (Las clases son todos los días) 감사합[[4]]! (¡Gracias!)',
         blanks: [
-          { options: ['이에요', '예요', '입니다', '해요'], answer: '입니다', explain: 'David + 입니다. Autoidentificación formal con 이다 → 입니다.' },
+          { options: ['이에요', '예요', '입니다', '해요'], answer: '입니다', explain: 'Enzo + 입니다. Autoidentificación formal con 이다 → 입니다.' },
           { options: ['이에요', '입니다', '해요', '있어요'], answer: '입니다', explain: 'WeLearn은 학원 + 입니다. Descripción formal con 이다 → 입니다.' },
           { options: ['니다', '어요', '아요', '해요'], answer: '니다', explain: '가르치다 → raíz 가르치 (vocal final) + ㅂ니다 = 가르칩니다. La ㅂ ya está, añades 니다.' },
           { options: ['있어요', '있습니다', '있합니다', '있ㅂ니다'], answer: '있습니다', explain: '있다 → raíz 있 (consonante ㅅ) + 습니다 = 있습니다.' },
@@ -139,9 +145,9 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma formal correcta sin opciones.',
         type: 'freeText',
         scene: 'Producción de formas formales',
-        text: '1. "Soy David" (formal, 이다): 저는 David [[0]]. 2. "Estudio coreano" (공부하다, formal): 한국어를 [[1]]. 3. "Voy a la academia" (가다, formal): 학원에 [[2]]. 4. "Como arroz" (먹다, formal): 밥을 [[3]]. 5. "¿Habla coreano?" (말하다, pregunta formal): 한국어를 [[4]]?',
+        text: '1. "Soy Enzo" (formal, 이다): 저는 Enzo [[0]]. 2. "Estudio coreano" (공부하다, formal): 한국어를 [[1]]. 3. "Voy a la academia" (가다, formal): 학원에 [[2]]. 4. "Como arroz" (먹다, formal): 밥을 [[3]]. 5. "¿Habla coreano?" (말하다, pregunta formal): 한국어를 [[4]]?',
         blanks: [
-          { answer: '입니다', accepted: ['입니다'], explain: 'David + 입니다 (이다 formal).' },
+          { answer: '입니다', accepted: ['입니다'], explain: 'Enzo + 입니다 (이다 formal).' },
           { answer: '공부합니다', accepted: ['공부합니다'], explain: '공부하다 → 공부합니다 (하다 formal).' },
           { answer: '갑니다', accepted: ['갑니다'], explain: '가다 → 갑니다 (vocal final + ㅂ니다).' },
           { answer: '먹습니다', accepted: ['먹습니다'], explain: '먹다 → 먹습니다 (consonante final + 습니다).' },

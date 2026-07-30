@@ -48,20 +48,20 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cuándo se usa el infinitivo con zu',
+      heading: '¿Cuándo se usa el infinitivo con zu en alemán?',
       paragraphs: [
         'El infinitivo con "zu" aparece cuando el verbo principal requiere un complemento en forma de infinitivo. Los verbos más frecuentes que lo rigen son: versuchen (intentar), vergessen (olvidar), anfangen/beginnen (empezar), aufhören (parar), hoffen (esperar/tener esperanza), planen (planear), vorhaben (tener planeado), empfehlen (recomendar).',
         'También aparece en construcciones impersonales como "Es ist wichtig zu lernen", "Es ist schön, Zeit zu haben", "Es ist schwer, jeden Tag zu üben". En todos los casos, el infinitivo con zu va al final de la cláusula.',
       ],
     },
     {
-      heading: 'Verbos separables y el zu intercalado',
+      heading: '¿Cómo se coloca zu con los verbos separables en alemán?',
       paragraphs: [
         'Con verbos separables, "zu" se inserta entre el prefijo y la raíz del verbo, formando una sola palabra: aufhören → aufzuhören, einschlafen → einzuschlafen, anfangen → anzufangen, vorhaben → vorzuhaben. Nunca se escribe por separado: "zu aufhören" es incorrecto.',
       ],
     },
     {
-      heading: 'Cuándo NO se usa zu',
+      heading: '¿Cuándo NO se usa zu en alemán?',
       paragraphs: [
         'Los verbos modales (müssen, können, dürfen, wollen, sollen, mögen/möchten) nunca llevan "zu" con el infinitivo: "Ich muss gehen", "Er kann schwimmen". Tampoco lo llevan lassen, sehen, hören, helfen en ciertos contextos: "Ich höre ihn singen" (no "zu singen").',
       ],

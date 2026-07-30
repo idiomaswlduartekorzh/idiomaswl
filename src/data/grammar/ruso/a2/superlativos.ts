@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Самый + adjetivo: la forma de superlativo más usada',
+      heading: '¿Cómo se forma el superlativo con самый + adjetivo?',
       paragraphs: [
         'La forma más frecuente del superlativo en ruso es самый/самая/самое/самые + adjetivo en su forma larga. Самый concuerda con el sustantivo al que acompaña: самый (masculino), самая (femenino), самое (neutro), самые (plural). Ejemplo: самый большой город (la ciudad más grande), самая красивая девушка (la chica más bonita), самое интересное место (el lugar más interesante), самые трудные слова (las palabras más difíciles).',
         'Para añadir el complemento del superlativo (en X, de X), se usa в + prepositivo: "самый большой город в России" (la ciudad más grande de Rusia), "лучший ресторан в городе" (el mejor restaurante de la ciudad). El complemento con генитив también es posible: "лучший в мире" (el mejor del mundo).',
       ],
     },
     {
-      heading: 'Superlativos irregulares: лучший, худший',
+      heading: '¿Cuáles son los superlativos irregulares лучший y худший?',
       paragraphs: [
         'Los superlativos irregulares más importantes: хороший (bueno) → лучший (el mejor), плохой (malo) → худший (el peor), большой (grande) → наибольший (formal, el mayor), маленький → наименьший (formal, el menor). En el habla cotidiana, "самый лучший" y "самый плохой" también se usan aunque técnicamente лучший ya es superlativo.',
         'Лучший, лучшая, лучшее, лучшие se declinan como adjetivos normales: лучший фильм, лучшей книги, лучшему другу. "Он лучший ученик в классе" (Él es el mejor alumno de la clase). "Это худший вариант" (Esta es la peor opción).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el superlativo culto con -ейший/-айший?',
+      paragraphs: [
+        'Además del habitual самый + adjetivo (самый красивый = el más hermoso), existe un superlativo sintético con los sufijos -ейший (интересный → интереснейший = interesantísimo/el más interesante) y -айший tras г, к, х con alternancia (близкий → ближайший = el más cercano, высокий → высочайший). Expresa el grado máximo o "muy" con matiz enfático y culto.',
+        'La trampa para el hispanohablante es que estas formas en -ейший/-айший suenan formales o literarias y a veces equivalen a un "-ísimo" más que a un superlativo relativo; en la lengua cotidiana lo normal y seguro sigue siendo самый + adjetivo. También son irregulares лучший (el mejor) y худший (el peor).',
       ],
     },
   ],
@@ -169,7 +176,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto sobre las cosas favoritas.',
         type: 'guidedText',
         scene: 'Лена рассказывает о своих фаворитах.',
-        text: 'Для меня Барселона — [[0]] (самый/самая) красивый город в мире. [[1]] (Лучший/Лучшая) ресторан здесь — небольшое место недалеко от моря. [[0]] (Самый/Самая) вкусное блюдо — паэлья. Но [[2]] (самый/самое) трудное — это найти там столик !',
+        text: 'Для меня Барселона — [[0]] (самый/самая) красивый город в мире. [[1]] (Лучший/Лучшая) ресторан здесь — небольшое место недалеко от моря. [[2]] (Самый/Самая) вкусное блюдо — паэлья. Но [[3]] (самый/самое) трудное — это найти там столик !',
         blanks: [
           { options: ['самый', 'самая', 'самое', 'самые'], answer: 'самый', explain: '"самый" — город es masculino; "самая" para ciudad → ciudad es femenino en esp., pero город es masc. en ruso → самый.' },
           { options: ['Лучший', 'Лучшая', 'Лучшее', 'Лучшие'], answer: 'Лучший', explain: '"Лучший" — ресторан es masculino → лучший (irr. superlativo).' },
@@ -183,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el superlativo correcto.',
         type: 'freeText',
         scene: 'Образуйте превосходную степень.',
-        text: 'Эверест — ___ гора в мире. (alta, femenino) / Это ___ книга года. (mejor) / Сегодня ___ жаркий день лета. (el más) / Он сделал ___ ошибку. (el peor, la peor)',
+        text: 'Эверест — [[0]] гора в мире. (alta, femenino) / Это [[1]] книга года. (mejor) / Сегодня [[2]] жаркий день лета. (el más) / Он сделал [[3]] ошибку. (el peor, la peor)',
         blanks: [
           { answer: 'самая высокая', explain: '"самая высокая" — гора (fem.) → самая + adj. fem.' },
           { answer: 'лучшая', explain: '"лучшая" — superlativo irr. femenino de хороший.' },

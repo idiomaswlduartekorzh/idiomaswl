@@ -73,6 +73,24 @@ const topic: GrammarTopic = {
         'Siempre acompáñalos de una expresión de tiempo: tomorrow, next week, on Friday, this weekend, in two weeks, on the 15th.',
       ],
     },
+    {
+      heading: '¿Se puede usar el present continuous para el futuro en inglés?',
+      paragraphs: [
+        'Sí, para planes futuros ya organizados, con una hora o fecha concreta: "I am meeting Leo tomorrow", "We are flying to Rome on Friday". Es como el "voy a + infinitivo" español cuando el plan ya está fijado (cita, reserva, billete).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre present continuous y "going to" para el futuro?',
+      paragraphs: [
+        'El present continuous se usa para planes ya organizados y concretos ("I\'m seeing the dentist at 5"). "going to" sirve para intenciones y planes en general, aunque no estén cerrados ("I\'m going to study more this year"). Ambos son válidos; el continuous suena más definitivo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se habla de planes futuros ya organizados en inglés?',
+      paragraphs: [
+        'Con el present continuous + un marcador de tiempo futuro: "I\'m playing tennis this evening", "They\'re getting married next month". La clave es que el plan ya está acordado; sin marcador de futuro, la misma frase se entendería como acción en curso.',
+      ],
+    },
   ],
 
   visual: {

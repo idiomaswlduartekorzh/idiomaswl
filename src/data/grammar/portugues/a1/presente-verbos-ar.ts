@@ -67,6 +67,32 @@ const topic: GrammarTopic = {
         'En el portugués brasileño coloquial, a veces la negación aparece al final: "Falo não" pero en A1 es mejor aprender la forma estándar: não + verbo.',
       ],
     },
+    {
+      heading: '¿Cómo se conjugan los verbos en -ar en presente?',
+      paragraphs: [
+        'Se quita la terminación -ar y se añaden -o/-as/-a/-amos/-am al radical. El patrón es idéntico para todos los verbos regulares de este grupo, que son la mayoría del idioma. Esta tabla muestra cuatro verbos frecuentes conjugados en paralelo:',
+      ],
+      table: [
+        ['Persona', 'falar', 'estudar', 'trabalhar', 'morar'],
+        ['eu', 'falo', 'estudo', 'trabalho', 'moro'],
+        ['tu', 'falas', 'estudas', 'trabalhas', 'moras'],
+        ['você/ele/ela', 'fala', 'estuda', 'trabalha', 'mora'],
+        ['nós', 'falamos', 'estudamos', 'trabalhamos', 'moramos'],
+        ['vocês/eles', 'falam', 'estudam', 'trabalham', 'moram'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre la conjugación -ar del portugués y del español?',
+      paragraphs: [
+        'Casi ninguna, salvo dos detalles ortográficos: la 3ª persona plural termina en -am, no en -an ("eles falam" = ellos hablan), y la vocal de nós es -amos igual que en español (falamos). El resto de terminaciones coinciden. La trampa real no está en el paradigma sino en você: aunque significa "tú", se conjuga en 3ª persona (você fala), así que nunca lleva la -s de segunda persona.',
+      ],
+    },
+    {
+      heading: '¿Cómo se niega un verbo en portugués?',
+      paragraphs: [
+        'Basta con poner "não" delante del verbo conjugado: "Eu não trabalho hoje" (hoy no trabajo), "Ela não fala inglês" (ella no habla inglés). No hay auxiliar como en inglés (no "do not"), es la misma mecánica del español. En el habla brasileña muy informal existe la doble negación o el "não" al final ("Falo não"), pero para escribir y para el examen se usa siempre não + verbo.',
+      ],
+    },
   ],
   visual: {
     mode: 'verb-conjugation',
@@ -99,14 +125,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella estudia',
-            lines: [['Sofia', 'A Zhanna ___ português em casa. (estudar)']],
+            lines: [['Sofia', 'A Alba ___ português em casa. (estudar)']],
             options: ['estuda', 'estudo', 'estudas', 'estudam'],
             answer: 'estuda',
             explain: 'Ela + -a: estuda. Tercera persona singular.',
           },
           {
             scene: 'Nosotros trabajamos',
-            lines: [['David', 'Nós ___ juntos na WeLearn. (trabalhar)']],
+            lines: [['Iván', 'Nós ___ juntos na WeLearn. (trabalhar)']],
             options: ['trabalhamos', 'trabalham', 'trabalha', 'trabalho'],
             answer: 'trabalhamos',
             explain: 'Nós + -amos: trabalhamos. Primera persona plural.',
@@ -158,9 +184,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Qué estudias?',
             lines: [
-              ['Ana', 'Você [[0]] português? (estudar)'],
-              ['Carlos', 'Sim! E também [[1]] um pouco de inglês. (estudar)'],
-            ],
+ ['Ana', 'Você [[0]] português? (estudar)'],
+ ['Carlos', 'Sim! E também [[1]] um pouco de inglês. (estudar)'],
+ ],
             blanks: [
               { options: ['estuda', 'estudas', 'estudo'], answer: 'estuda', explain: 'Você + -a: estuda.' },
               { options: ['estudo', 'estuda', 'estudam'], answer: 'estudo', explain: 'Eu + -o: estudo.' },
@@ -168,7 +194,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Habla y trabaja',
-            lines: [['David', 'Eu [[0]] oito línguas e [[1]] como professor. (falar / trabalhar)']],
+            lines: [['Iván', 'Eu [[0]] oito línguas e [[1]] como professor. (falar / trabalhar)']],
             blanks: [
               { options: ['falo', 'fala', 'falam'], answer: 'falo', explain: 'Eu + -o: falo.' },
               { options: ['trabalho', 'trabalha', 'trabalham'], answer: 'trabalho', explain: 'Eu + -o: trabalho.' },
@@ -198,14 +224,14 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Conjuga los verbos para completar la presentación.',
         type: 'guidedText',
-        scene: 'Apresentação de David na WeLearn',
-        text: 'Eu me chamo David e [[0]] (trabalhar) na WeLearn. Eu [[1]] (falar) oito idiomas. Os meus alunos [[2]] (estudar) muito — eles [[3]] (gostar) de aprender línguas. Zhanna e eu [[4]] (trabalhar) juntos. A gente [[5]] (usar) métodos modernos. Você [[6]] (gostar) de aprender português?',
+        scene: 'Apresentação de Iván na WeLearn',
+        text: 'Eu me chamo Iván e [[0]] (trabalhar) na WeLearn. Eu [[1]] (falar) oito idiomas. Os meus alunos [[2]] (estudar) muito — eles [[3]] (gostar) de aprender línguas. Alba e eu [[4]] (trabalhar) juntos. A gente [[5]] (usar) métodos modernos. Você [[6]] (gostar) de aprender português?',
         blanks: [
           { options: ['trabalho', 'trabalha', 'trabalham'], answer: 'trabalho', explain: 'Eu + -o: trabalho.' },
           { options: ['falo', 'fala', 'falam'], answer: 'falo', explain: 'Eu + -o: falo.' },
           { options: ['estudam', 'estuda', 'estudamos'], answer: 'estudam', explain: 'Os alunos (eles) + -am: estudam.' },
           { options: ['gostam', 'gosta', 'gostamos'], answer: 'gostam', explain: 'Eles + -am: gostam.' },
-          { options: ['trabalhamos', 'trabalham', 'trabalha'], answer: 'trabalhamos', explain: 'Nós (Zhanna e eu) + -amos: trabalhamos.' },
+          { options: ['trabalhamos', 'trabalham', 'trabalha'], answer: 'trabalhamos', explain: 'Nós (Alba e eu) + -amos: trabalhamos.' },
           { options: ['usa', 'usamos', 'usam'], answer: 'usa', explain: 'A gente + -a (3ª sg): usa.' },
           { options: ['gosta', 'gostas', 'gostam'], answer: 'gosta', explain: 'Você + -a: gosta.' },
         ],

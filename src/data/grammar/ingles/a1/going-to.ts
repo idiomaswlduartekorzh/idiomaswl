@@ -62,6 +62,24 @@ const topic: GrammarTopic = {
         'También se usa para describir lo que ves que va a pasar: Look! That student is going to answer correctly! / He\'s going to pass the exam — he\'s very prepared. Esta función de predicción con evidencia es muy útil en conversación.',
       ],
     },
+    {
+      heading: '¿Cómo se forma "going to" en inglés?',
+      paragraphs: [
+        'Con to be (am/is/are) + going to + verbo en forma base: "I am going to study", "She is going to travel", "They are going to win". El to be concuerda con el sujeto y el verbo principal queda en infinitivo sin "to".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "going to" para el futuro?',
+      paragraphs: [
+        'Para planes e intenciones ya decididos ("I am going to visit my family next week") y para predicciones con evidencia presente ("Look at those clouds — it is going to rain"). Es el futuro más usado en el inglés hablado A1.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "going to" y "will"?',
+      paragraphs: [
+        '"going to" para planes ya decididos y predicciones con evidencia ("I am going to study tonight"). "will" para decisiones del momento y predicciones sin evidencia ("I\'ll help you", "It will be sunny"). En planes concretos, el inglés prefiere "going to".',
+      ],
+    },
   ],
   visual: {
     mode: 'table',
@@ -94,7 +112,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Plan de la profesora',
-            lines: [['Student', 'Zhanna ___ explain the grammar again.']],
+            lines: [['Student', 'Elena ___ explain the grammar again.']],
             options: ['\'s going to', '\'m going to', 'going to', 'are going to'],
             answer: '\'s going to',
             explain: 'She\'s going to explain — she is (\'s) + going to.',
@@ -108,7 +126,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pregunta sobre planes',
-            lines: [['David', '___ you going to take the IELTS this year?']],
+            lines: [['Leo', '___ you going to take the IELTS this year?']],
             options: ['Are', 'Is', 'Am', 'Do'],
             answer: 'Are',
             explain: 'Are you going to? — pregunta con you.',
@@ -168,7 +186,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pregunta de planes',
-            lines: [['David', '[[0]] you going to [[1]] the IELTS?']],
+            lines: [['Leo', '[[0]] you going to [[1]] the IELTS?']],
             blanks: [
               { options: ['Are', 'Is', 'Am'], answer: 'Are', explain: 'Are you going to? — pregunta con you.' },
               { options: ['take', 'takes', 'taking'], answer: 'take', explain: 'going to + verbo base: take.' },
@@ -208,7 +226,7 @@ const topic: GrammarTopic = {
         intro: 'Completa los planes futuros con la forma correcta de going to.',
         type: 'freeText',
         scene: 'Formulario de metas de estudio en WeLearn',
-        text: 'I ___ study English every day. (afirmativa) She ___ take the IELTS in June. (afirmativa) We ___ miss any class. (negativa) ___ you going to practice speaking? (pregunta) He ___ arrive late tomorrow. (negativa) They ___ join the advanced group. (afirmativa)',
+        text: 'I [[0]] study English every day. (afirmativa) She [[1]] take the IELTS in June. (afirmativa) We [[2]] miss any class. (negativa) [[3]] you going to practice speaking? (pregunta) He [[4]] arrive late tomorrow. (negativa) They [[5]] join the advanced group. (afirmativa)',
         blanks: [
           { answer: '\'m going to', accepted: ["'m going to", "am going to", "I'm going to", "I am going to"], explain: 'I\'m going to study — afirmativa 1.ª persona.' },
           { answer: '\'s going to', accepted: ["'s going to", "is going to", "She's going to", "She is going to"], explain: 'She\'s going to take — 3.ª persona afirmativa.' },

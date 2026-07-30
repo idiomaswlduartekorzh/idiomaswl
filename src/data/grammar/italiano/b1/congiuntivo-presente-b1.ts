@@ -74,8 +74,18 @@ const topic: GrammarTopic = {
     {
       heading: 'Verbos irregulares esenciales en congiuntivo presente',
       paragraphs: [
-        'Algunos verbos tienen formas completamente irregulares. Los más importantes son: essere → sia/sia/sia/siamo/siate/siano; avere → abbia/abbia/abbia/abbiamo/abbiate/abbiano; andare → vada/vada/vada/andiamo/andiate/vadano.',
-        'Otros irregulares clave: fare → faccia/facciano; venire → venga/vengano; potere → possa/possano; volere → voglia/vogliano; sapere → sappia/sappiano; dovere → debba/debbano; dare → dia/diano; stare → stia/stiano.',
+        'Los verbos más frecuentes tienen formas irregulares. Una ventaja: en el singular (che io / che tu / che lui) la forma es idéntica, así que basta memorizar una por verbo. Noi y voi suelen coincidir con el presente de indicativo. Esta es la tabla de los irregulares clave:',
+      ],
+      table: [
+        ['Verbo', 'che io / tu / lui', 'che noi', 'che loro'],
+        ['essere', 'sia', 'siamo', 'siano'],
+        ['avere', 'abbia', 'abbiamo', 'abbiano'],
+        ['andare', 'vada', 'andiamo', 'vadano'],
+        ['fare', 'faccia', 'facciamo', 'facciano'],
+        ['venire', 'venga', 'veniamo', 'vengano'],
+        ['potere', 'possa', 'possiamo', 'possano'],
+        ['volere', 'voglia', 'vogliamo', 'vogliano'],
+        ['sapere', 'sappia', 'sappiamo', 'sappiano'],
       ],
     },
     {
@@ -90,6 +100,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'La regla más importante: si el sujeto de los dos verbos es el MISMO, usa el infinitivo. Si son DIFERENTES, usa che + congiuntivo. Ejemplos: "Voglio studiare" (yo quiero, yo estudio — mismo sujeto → infinitivo) vs. "Voglio che tu studi" (yo quiero, tú estudias — sujetos distintos → congiuntivo).',
         'Esta regla se aplica con todos los verbos desencadenantes: Spero di arrivare presto (mismo sujeto) vs. Spero che lei arrivi presto (sujetos distintos). Los hispanohablantes suelen transferir el patrón del español "quiero que vengas" correctamente.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga el congiuntivo presente en italiano?',
+      paragraphs: [
+        'Verbos -are: -i, -i, -i, -iamo, -iate, -ino (parli, parliamo, parlino). Verbos -ere/-ire: -a, -a, -a, -iamo, -iate, -ano (scriva, scrivano; dorma, dormano). Los -ire con -isc- lo mantienen en el singular y en loro (finisca, finiscano). Las tres personas del singular comparten forma.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el congiuntivo en italiano?',
+      paragraphs: [
+        'Tras verbos de opinión, deseo, emoción o duda + che con sujeto distinto (penso che, spero che, è contento che, dubito che) y tras expresiones impersonales (è necessario/possibile/importante che). Si el sujeto es el mismo, se usa el infinitivo, no el congiuntivo.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre congiuntivo e infinitivo?',
+      paragraphs: [
+        'Si el sujeto de las dos partes es el MISMO, se usa el infinitivo: "Voglio studiare" (yo quiero, yo estudio). Si son DISTINTOS, se usa che + congiuntivo: "Voglio che tu studi" (yo quiero, tú estudias). Es la regla clave del congiuntivo y coincide con el español.',
       ],
     },
   ],

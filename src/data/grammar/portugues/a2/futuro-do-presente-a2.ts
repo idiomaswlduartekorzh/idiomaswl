@@ -68,6 +68,32 @@ const topic: GrammarTopic = {
         'Trazer→trar-: trarei/trarás/trará/traremos/trarão. Vir→vir-: virei/virás/virá/viremos/virão. Ser e Ir→ser-: serei/serás/será/seremos/serão. Pôr→por-: porei/porás/porá/poremos/porão.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el futuro do presente en portugués?',
+      paragraphs: [
+        'Se añaden las terminaciones -ei/-ás/-á/-emos/-ão al infinitivo, iguales para -ar, -er e -ir. Solo tres verbos acortan la raíz (fazer→far-, dizer→dir-, trazer→trar-). Esta tabla muestra un regular y un irregular en paralelo:',
+      ],
+      table: [
+        ['Persona', 'falar (regular)', 'fazer (irreg.)'],
+        ['eu', 'falarei', 'farei'],
+        ['tu', 'falarás', 'farás'],
+        ['você/ele/ela', 'falará', 'fará'],
+        ['nós', 'falaremos', 'faremos'],
+        ['vocês/eles/elas', 'falarão', 'farão'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "vou falar" y "falarei"?',
+      paragraphs: [
+        'Las dos significan "hablaré", pero pertenecen a registros distintos. "Vou falar" (ir + infinitivo) es la forma normal del habla brasileña cotidiana; "falarei" (futuro simple) suena formal, escrito o solemne, y en Brasil aparece sobre todo en contratos, prensa, promesas ("Amarei você para sempre") o preguntas con valor de mandato. Para conversar, usa "vou + infinitivo"; para escribir formalmente o dar solemnidad, el futuro simple. Nunca los mezcles ("vou farei" es incorrecto).',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los verbos irregulares del futuro en portugués?',
+      paragraphs: [
+        'Son muy pocos y todos acortan el infinitivo antes de las terminaciones: fazer → farei, dizer → direi, trazer → trarei. El resto es completamente regular, incluso los que parecen difíciles: ser/ir → serei, ter → terei, vir → virei, pôr → porei, estar → estarei. El error típico es "fazerei" o "dizerei"; basta recordar que estos tres pierden la sílaba central. Como en el condicional usan la misma raíz (faria, diria, traria), aprender un tiempo ayuda con el otro.',
+      ],
+    },
   ],
 
   visual: {
@@ -113,15 +139,15 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Contexto formal',
-            lines: [['Zhanna', 'A empresa ___ os resultados na próxima semana.']],
+            lines: [['Lía', 'A empresa ___ os resultados na próxima semana.']],
             options: ['divulgará', 'vai divulgar', 'divulgou', 'divulgava'],
             answer: 'divulgará',
             explain: 'Futuro simple en contexto formal: divulgar (-ar) → divulgará (ela/a empresa).',
           },
           {
             scene: 'Plan cotidiano',
-            lines: [['David', 'Nós ___ no restaurante perto do escritório amanhã.']],
-            options: ['almoçaremos', 'almoçamos', 'almoçávamos', 'almoçamos'],
+            lines: [['Nico', 'Nós ___ no restaurante perto do escritório amanhã.']],
+            options: ['almoçaremos', 'almoçamos', 'almoçávamos'],
             answer: 'almoçaremos',
             explain: 'Almoçar (-ar) en futuro: almoçaremos (nós).',
           },
@@ -164,7 +190,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Plan de negocios (formal)',
-            lines: [['Zhanna', 'A empresa [[0]] (lançar) o produto em março e [[1]] (contratar) mais funcionários.']],
+            lines: [['Lía', 'A empresa [[0]] (lançar) o produto em março e [[1]] (contratar) mais funcionários.']],
             blanks: [
               { options: ['lançará', 'lançou', 'lança'], answer: 'lançará', explain: 'Lançar (-ar), 3ª sg: lançará.' },
               { options: ['contratará', 'contratou', 'contrata'], answer: 'contratará', explain: 'Contratar (-ar), 3ª sg: contratará.' },
@@ -180,7 +206,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La conferencia',
-            lines: [['David', 'O palestrante [[0]] (falar) sobre tecnologia e os participantes [[1]] (poder) fazer perguntas.']],
+            lines: [['Nico', 'O palestrante [[0]] (falar) sobre tecnologia e os participantes [[1]] (poder) fazer perguntas.']],
             blanks: [
               { options: ['falará', 'falou', 'falava'], answer: 'falará', explain: 'Falar (-ar), 3ª sg: falará.' },
               { options: ['poderão', 'puderam', 'podiam'], answer: 'poderão', explain: 'Poder en futuro: poderão (eles).' },

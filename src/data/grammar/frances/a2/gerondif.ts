@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Formación del gérondif: en + participe présent',
+      heading: '¿Cómo se forma el gérondif en francés?',
       paragraphs: [
         'El participe présent se forma tomando la raíz de la primera persona del plural (nous) del présent de indicatif y añadiendo -ant. Ejemplos: nous parlons → parlant → en parlant; nous finissons → finissant → en finissant; nous prenons → prenant → en prenant; nous faisons → faisant → en faisant. Tres irregulares: être → étant, avoir → ayant, savoir → sachant.',
         'El gérondif siempre lleva el artículo en delante: "en travaillant", "en mangeant", "en étant". Es invariable (no concuerda en género ni número). El sujeto del gérondif es siempre el mismo que el del verbo conjugado de la frase: "Elle écoute la radio en conduisant" (ella = ella). No se puede tener sujetos distintos.',
       ],
     },
     {
-      heading: 'Usos del gérondif: simultaneidad, manera y condición',
+      heading: '¿Para qué se usa el gérondif en francés?',
       paragraphs: [
         'El uso más frecuente es la simultaneidad: "Il chante en cuisinant" (Canta mientras cocina — las dos acciones ocurren al mismo tiempo). También expresa la manera o el medio: "Je maigris en mangeant moins" (Adelgazo comiendo menos — el gérondif indica cómo). Y a veces condición: "En travaillant plus, tu réussiras" (Trabajando más, tendrás éxito = si trabajas más).',
         'A diferencia del español, en francés el equivalente del gerundio español puede ser el présent (yo trabajo = je travaille) o el gérondif en posición adverbial (trabajando = en travaillant). El gérondif en francés siempre lleva en.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre el gérondif francés y el gerundio español?',
+      paragraphs: [
+        'Aunque se parecen, no son intercambiables. El gérondif francés (en + participe présent: "en mangeant") lleva SIEMPRE "en" y expresa simultaneidad, manera o condición, siempre con el MISMO sujeto que el verbo principal: "Il chante en travaillant" (canta mientras trabaja). El español, en cambio, usa el gerundio en más contextos, incluida la perífrasis "estar + gerundio", que en francés NO existe: la acción en curso no es "je suis mangeant" sino "je suis en train de manger". Regla clave para el hispanohablante: no traduzcas "-ndo" automáticamente por el participe présent; el gérondif solo aparece con "en" y para acciones paralelas del mismo sujeto.',
       ],
     },
   ],
@@ -95,7 +101,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Il s\'est blessé en ___ (faire) du sport.',
             lines: [['', 'Il s\'est blessé en ___ du sport.']],
-            options: ['faisant', 'faisant', 'faire', 'fait'],
+            options: ['faisant', 'faire', 'fait'],
             answer: 'faisant',
             explain: '"en faisant" — faire → nous faisons → fais- + -ant = faisant.',
           },
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con los gérondifs correctos.',
         type: 'guidedText',
         scene: 'Marie décrit comment elle apprend les langues.',
-        text: 'J\'apprends les langues [[0]] (écouter) des podcasts. Je mémorise le vocabulaire [[1]] (répéter) les mots à voix haute. [[0]] (regarder) des films en version originale, j\'améliore ma prononciation. Je progresse aussi [[2]] (avoir) beaucoup de patience. [[2]] (être) régulière dans mon travail, je fais des progrès rapides.',
+        text: 'J\'apprends les langues [[0]] (écouter) des podcasts. Je mémorise le vocabulaire [[1]] (répéter) les mots à voix haute. [[2]] (regarder) des films en version originale, j\'améliore ma prononciation. Je progresse aussi [[3]] (avoir) beaucoup de patience. [[4]] (être) régulière dans mon travail, je fais des progrès rapides.',
         blanks: [
           { options: ['en écoutant', 'en regardant', 'en répétant', 'en parlant'], answer: 'en écoutant', explain: '"en écoutant / en regardant" — écouter → écoutant, regarder → regardant.' },
           { options: ['en répétant', 'en parlant', 'en écoutant', 'en lisant'], answer: 'en répétant', explain: '"en répétant" — répéter → nous répétons → répét- + -ant = répétant.' },
@@ -183,7 +189,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el gérondif correcto.',
         type: 'freeText',
         scene: 'Formez le gérondif des verbes entre parenthèses.',
-        text: 'Il économise de l\'argent ___ (ne pas sortir) souvent. / Elle s\'est trompée ___ (calculer) le résultat. / Tu réussiras ___ (être) courageux. / On apprend ___ (faire) des erreurs.',
+        text: 'Il économise de l\'argent [[0]] (ne pas sortir) souvent. / Elle s\'est trompée [[1]] (calculer) le résultat. / Tu réussiras [[2]] (être) courageux. / On apprend [[3]] (faire) des erreurs.',
         blanks: [
           { answer: 'en ne sortant pas', explain: '"en ne sortant pas" — gérondif negativo: en + ne + part. prés. + pas.' },
           { answer: 'en calculant', explain: '"en calculant" — calculer → calculons → calcul- + -ant.' },

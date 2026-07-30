@@ -48,14 +48,34 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '¿Cuándo usar el trapassato prossimo en italiano?',
+      heading: 'El trapassato prossimo: formación con imperfetto + participio',
       paragraphs: [
-        'El trapassato prossimo se usa para narrar una acción pasada que ocurrió ANTES de otra acción también pasada. "Quando sono arrivato, lei era già partita" — las dos acciones están en el pasado, pero "partita" ocurrió ANTES de "arrivato".',
-        'Es el equivalente del pluscuamperfecto español ("había comido", "había llegado"). Se usa frecuentemente con palabras como "già" (ya), "ancora" (todavía), "appena" (acababa de) y conectores como "quando", "dopo che", "perché".',
+        'El trapassato prossimo es el pluscuamperfecto italiano ("había comido"). Se forma con el auxiliar (avere o essere) en IMPERFETTO + el participio pasado. La elección del auxiliar y la concordancia funcionan igual que en el passato prossimo; lo único que cambia es que el auxiliar va en imperfetto (avevo/ero, no ho/sono). Esta es la tabla:',
+      ],
+      table: [
+        ['Persona', 'con avere (mangiare)', 'con essere (andare)'],
+        ['io', 'avevo mangiato', 'ero andato/a'],
+        ['tu', 'avevi mangiato', 'eri andato/a'],
+        ['lui/lei', 'aveva mangiato', 'era andato/a'],
+        ['noi', 'avevamo mangiato', 'eravamo andati/e'],
+        ['voi', 'avevate mangiato', 'eravate andati/e'],
+        ['loro', 'avevano mangiato', 'erano andati/e'],
       ],
     },
     {
-      heading: 'Elección del auxiliar: avere o essere',
+      heading: '¿Cómo se forma el trapassato prossimo en italiano?',
+      paragraphs: [
+        'Con el auxiliar (avere o essere) en imperfetto + el participio pasado: "avevo finito" (había terminado), "ero partito" (había salido). Se elige avere o essere con las mismas reglas del passato prossimo, y con essere el participio concuerda con el sujeto: "lei era arrivata".',
+      ],
+    },
+    {
+      heading: '¿Qué diferencia hay entre passato prossimo y trapassato prossimo?',
+      paragraphs: [
+        'El passato prossimo narra una acción pasada (ho mangiato = comí/he comido). El trapassato prossimo narra una acción anterior a otra acción pasada (avevo già mangiato quando è arrivato = ya había comido cuando llegó). El trapassato marca el "pasado del pasado".',
+      ],
+    },
+    {
+      heading: '¿Cómo se elige el auxiliar avere o essere en el trapassato?',
       paragraphs: [
         'La elección del auxiliar en il trapassato prossimo sigue exactamente las mismas reglas que en il passato prossimo: verbos transitivos usan "avere", verbos de movimiento y estado y reflexivos usan "essere".',
         'Con "essere", el participio concuerda en género y número con el sujeto: "lei era arrivata" (femm. sing.), "loro erano arrivati" (masc. pl.).',
@@ -188,7 +208,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: conjuga el verbo en trapassato prossimo.',
         type: 'freeText',
         scene: 'Quando sono arrivato alla festa...',
-        text: 'Quando sono arrivato alla festa, i miei amici ___ (arrivare) già. / Qualcuno ___ (mangiare) tutta la torta. / La musica ___ (iniziare) un\'ora prima. / I miei amici ___ (dimenticarsi) di invitarmi! / Per fortuna, ___ (portare) del vino.',
+        text: 'Quando sono arrivato alla festa, i miei amici [[0]] (arrivare) già. / Qualcuno [[1]] (mangiare) tutta la torta. / La musica [[2]] (iniziare) un\'ora prima. / I miei amici [[3]] (dimenticarsi) di invitarmi! / Per fortuna, [[4]] (portare) del vino.',
         blanks: [
           { answer: 'erano già arrivati', explain: '"arrivare" → essere. Masc. pl.: erano arrivati.' },
           { answer: 'aveva mangiato', explain: '"mangiare" → avere. 3ª sing.: aveva mangiato.' },

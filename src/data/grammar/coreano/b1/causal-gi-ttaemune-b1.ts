@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-어서/-아서 vs -기 때문에',
+      heading: '¿Cuál es la diferencia entre -아/어서 y -기 때문에?',
       paragraphs: [
         '-어서/-아서 es la forma casual y temporal: expresa que dos acciones/estados están conectados en secuencia temporal. "배고파서 밥을 먹었어요" (tenía hambre, así que comí arroz) — causa y efecto en el mismo momento.',
         '-기 때문에 es la forma formal y analítica: trata la razón como una entidad separada, permitiendo análisis más profundo. "인구 증가 때문에 주택 부족이 생겼어요" (existe escasez de vivienda debido al aumento poblacional) — se analiza la razón como causa raíz.',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Uso con sustantivos: nombre + 때문에',
+      heading: '¿Cómo se usa 때문에 con sustantivos en coreano?',
       paragraphs: [
         'Con sustantivos directo: "코로나 때문에 학교가 문을 닫았어요" (La escuela cerró por COVID). Aquí "때문에" va directo con el sustantivo sin -기 porque ya es sustantivo.',
         'Diferencia: "아프기 때문에" (porque está enfermo — verbo nominalizado) vs "감기 때문에" (por un resfriado — sustantivo directo). Ambos son causales pero con diferente estructura.',
@@ -168,7 +168,7 @@ const topic: GrammarTopic = {
         intro: 'Completa un análisis académico con -기 때문에.',
         type: 'guidedText',
         scene: 'Análisis de un problema social.',
-        text: '인구 증가 때문에 도시가 커지고 있어요. 개발이 빨라___ 환경 문제가 생겨요. 사람들이 자동차를 많이 타___ 오염이 심해졌어요. 정부가 조치를 취하지 않___ 상황이 악화될 거예요.',
+        text: '인구 증가 때문에 도시가 커지고 있어요. 개발이 빨라[[0]] 환경 문제가 생겨요. 사람들이 자동차를 많이 타[[1]] 오염이 심해졌어요. 정부가 조치를 취하지 않[[2]] 상황이 악화될 거예요.',
         blanks: [
           { options: ['어서', '기 때문에', '-니까'], answer: '기 때문에', explain: 'Análisis formal: -기 때문에.' },
           { options: ['어서', '기 때문에', '-도록'], answer: '기 때문에', explain: 'Análisis causal: -기 때문에.' },

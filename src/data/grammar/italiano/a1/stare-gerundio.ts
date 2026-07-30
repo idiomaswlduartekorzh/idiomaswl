@@ -74,6 +74,39 @@ const topic: GrammarTopic = {
         'Sto facendo i compiti = Estoy haciendo los deberes. Sta dicendo la verità = Está diciendo la verdad. Stiamo bevendo caffè = Estamos bebiendo café.',
       ],
     },
+    {
+      heading: 'La conjugación de "stare" (el verbo que forma el progresivo)',
+      paragraphs: [
+        'La forma progresiva es stare (conjugado) + gerundio. Como stare es irregular, conviene tenerlo claro. Se combina con cualquier gerundio: "sto parlando", "stai scrivendo", "stanno dormendo".',
+      ],
+      table: [
+        ['Persona', 'stare', 'Ejemplo con gerundio'],
+        ['io', 'sto', 'sto studiando'],
+        ['tu', 'stai', 'stai mangiando'],
+        ['lui/lei', 'sta', 'sta scrivendo'],
+        ['noi', 'stiamo', 'stiamo lavorando'],
+        ['voi', 'state', 'state dormendo'],
+        ['loro', 'stanno', 'stanno bevendo'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el gerundio en italiano?',
+      paragraphs: [
+        'Los verbos en -are hacen -ando (parlare → parlando); los en -ere e -ire hacen -endo (scrivere → scrivendo, dormire → dormendo). Hay tres irregulares clave: fare → facendo, dire → dicendo, bere → bevendo. El gerundio italiano es invariable (no cambia por género ni número).',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "stare + gerundio" y cuándo el presente simple?',
+      paragraphs: [
+        'Stare + gerundio solo para lo que ocurre AHORA mismo: "Sto studiando" (estoy estudiando en este momento). Para hábitos y rutinas se usa el presente simple: "Studio ogni giorno" (estudio cada día). A diferencia del inglés, el italiano no abusa del progresivo.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre stare y essere en italiano?',
+      paragraphs: [
+        'Stare forma el progresivo (sto studiando) y se usa para salud/estados ("Come stai?"). Para ubicación y estados con adjetivo se usa essere: "Sono a casa" (estoy en casa), "Sono stanco" (estoy cansado), NO "sto a casa". Regla: acción en curso → stare; dónde estás o cómo eres → essere.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',
@@ -102,14 +135,14 @@ const topic: GrammarTopic = {
         intro: 'Identifica la forma correcta de stare + gerundio.',
         type: 'choice',
         items: [
-          { scene: 'Gerundio -are', lines: [['', '¿Cómo se forma el gerundio de "parlare" (hablar)?']], options: ['parlendo', 'parlando', 'parliente', 'parliente'], answer: 'parlando', explain: 'parlare → raíz parl- + -ando = parlando. Verbos -are siempre hacen -ando.' },
+          { scene: 'Gerundio -are', lines: [['', '¿Cómo se forma el gerundio de "parlare" (hablar)?']], options: ['parlendo', 'parlando', 'parliente'], answer: 'parlando', explain: 'parlare → raíz parl- + -ando = parlando. Verbos -are siempre hacen -ando.' },
           { scene: 'Gerundio -ere', lines: [['', '¿Cómo se forma el gerundio de "scrivere" (escribir)?']], options: ['scrivando', 'scriviendo', 'scrivendo', 'scrivente'], answer: 'scrivendo', explain: 'scrivere → raíz scriv- + -endo = scrivendo. Verbos -ere hacen -endo.' },
           { scene: 'Stare conjugado', lines: [['', '"Él está comiendo ahora": lui ___ mangiando.']], options: ['è', 'sta', 'stai', 'stiamo'], answer: 'sta', explain: 'Lui sta mangiando. lui/lei → sta. Tercera persona singular de stare.' },
           { scene: 'Nosotros', lines: [['', '"Estamos trabajando ahora": noi ___ lavorando.']], options: ['"stiamo"', 'state', 'stanno', 'sto'], answer: '"stiamo"', explain: 'Noi stiamo lavorando. noi → stiamo. No confundas state (voi) con stiamo (noi).' },
           { scene: 'Gerundio irregular', lines: [['', '¿Cuál es el gerundio de "fare" (hacer)?']], options: ['farendo', 'facendo', 'fando', 'fazendo'], answer: 'facendo', explain: 'fare → facendo. Irregular: usa la raíz histórica fac-, no far-. Sto facendo = Estoy haciendo.' },
           { scene: 'Stare vs essere', lines: [['', '"Estoy en casa": Io ___ a casa.']], options: ['sto', 'sono', 'stiamo', 'ho'], answer: 'sono', explain: 'Io sono a casa. La ubicación usa ESSERE, no stare. Sto a casa es incorrecto.' },
           { scene: 'Voi', lines: [['', '"Estáis hablando": voi ___ parlando.']], options: ['stanno', 'state', 'stiamo', 'stai'], answer: 'state', explain: 'Voi state parlando. voi → state.' },
-          { scene: 'Gerundio -ire', lines: [['', '¿Cuál es el gerundio de "dormire" (dormir)?']], options: ['dormando', 'dormando', 'dormendo', 'dormiente'], answer: 'dormendo', explain: 'dormire → raíz dorm- + -endo = dormendo. Verbos -ire hacen -endo.' },
+          { scene: 'Gerundio -ire', lines: [['', '¿Cuál es el gerundio de "dormire" (dormir)?']], options: ['dormando', 'dormendo', 'dormiente'], answer: 'dormendo', explain: 'dormire → raíz dorm- + -endo = dormendo. Verbos -ire hacen -endo.' },
         ],
       },
       {
@@ -132,11 +165,11 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma correcta para cada espacio.',
         type: 'guidedText',
         scene: 'Una tarde en la academia WeLearn',
-        text: 'Sono le tre del pomeriggio. Io sto [[0]] italiano. (Estoy estudiando italiano.) David sta [[1]] una lezione. (David está dando una clase.) Zhanna e Lina [[2]] lavorando insieme. (Zhanna y Lina están trabajando juntas.) Tu stai [[3]] un caffè? (¿Tú estás bebiendo un café?) Voi state [[4]] la grammatica? (¿Vosotros estáis practicando la gramática?)',
+        text: 'Sono le tre del pomeriggio. Io sto [[0]] italiano. (Estoy estudiando italiano.) Iván sta [[1]] una lezione. (Iván está dando una clase.) Marta e Lina [[2]] lavorando insieme. (Marta y Lina están trabajando juntas.) Tu stai [[3]] un caffè? (¿Tú estás bebiendo un café?) Voi state [[4]] la grammatica? (¿Vosotros estáis practicando la gramática?)',
         blanks: [
           { options: ['studiare', 'studiando', 'studio', 'studiendo'], answer: 'studiando', explain: 'studiare → studiando. Sto studiando = Estoy estudiando.' },
           { options: ['dare', 'dando', 'dendo', 'diando'], answer: 'dando', explain: 'dare → dando. Verbo -are irregular común: dare → dando.' },
-          { options: ['sono', 'stanno', 'state', 'stiamo'], answer: 'stanno', explain: 'loro (Zhanna e Lina) → stanno. Tercera persona plural de stare.' },
+          { options: ['sono', 'stanno', 'state', 'stiamo'], answer: 'stanno', explain: 'loro (Marta e Lina) → stanno. Tercera persona plural de stare.' },
           { options: ['bere', 'bevendo', 'bibendo', 'bendo'], answer: 'bevendo', explain: 'bere → bevendo. Gerundio irregular: raíz bev-, no ber-. Stai bevendo = Estás bebiendo.' },
           { options: ['praticando', 'praticendo', 'praticando', 'pratichi'], answer: 'praticando', explain: 'praticare → praticando. Verbo -are → gerundio -ando.' },
         ],
@@ -164,7 +197,7 @@ const topic: GrammarTopic = {
         intro: 'Construye frases completas con stare + gerundio.',
         type: 'write',
         items: [
-          { scene: 'Describir acción presente', prompt: 'Traduce al italiano: "Ahora mismo David está explicando la gramática a los estudiantes." (spiegare = explicar, la grammatica = la gramática, agli studenti = a los estudiantes)', answer: 'Adesso David sta spiegando la grammatica agli studenti', accepted: ['sta spiegando'], explain: 'David → sta (terza persona). spiegare → spiegando (-are → -ando). Adesso = ahora mismo.' },
+          { scene: 'Describir acción presente', prompt: 'Traduce al italiano: "Ahora mismo Iván está explicando la gramática a los estudiantes." (spiegare = explicar, la grammatica = la gramática, agli studenti = a los estudiantes)', answer: 'Adesso Iván sta spiegando la grammatica agli studenti', accepted: ['sta spiegando'], explain: 'Iván → sta (terza persona). spiegare → spiegando (-are → -ando). Adesso = ahora mismo.' },
           { scene: 'Forma plural', prompt: 'Traduce al italiano: "Los estudiantes están practicando italiano." (gli studenti = los estudiantes, praticare = practicar)', answer: 'Gli studenti stanno praticando italiano', accepted: ['stanno praticando'], explain: 'Gli studenti → stanno (loro). praticare → praticando (-are → -ando).' },
           { scene: 'Gerundio irregular', prompt: 'Traduce al italiano: "¿Qué estás haciendo ahora?" (cosa = qué, adesso = ahora)', answer: 'Cosa stai facendo adesso?', accepted: ['stai facendo'], explain: 'fare → facendo (irregular). Cosa stai facendo? = ¿Qué estás haciendo?' },
           { scene: 'Noi', prompt: 'Traduce al italiano: "Estamos aprendiendo italiano en WeLearn." (imparare = aprender, WeLearn = WeLearn)', answer: "Stiamo imparando l'italiano a WeLearn", accepted: ['stiamo imparando'], explain: "noi → stiamo. imparare → imparando. L'italiano = el italiano (artículo elide)." },

@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cómo se forma el imperativo en ruso',
+      heading: '¿Cómo se forma el imperativo en ruso?',
       paragraphs: [
         'El imperativo ruso se deriva de la tercera persona plural del presente. Se extrae la raíz (quitando -ут/-ют/-ат/-ят) y se añade -й si la raíz termina en vocal, o -и/-ь si termina en consonante. Ejemplos: они читают → читай (lee); они говорят → говори (habla); они идут → иди (ve); они встанут → встань (levántate). Para la forma formal/plural (вы), simplemente se añade -те: читайте, говорите, идите, встаньте.',
         'El acento importa en algunos verbos: позвони (llama) lleva acento en la última sílaba — este patrón es común en verbos de la segunda conjugación. Los verbos imperfectivos en imperativo dan instrucciones continuas (говори медленнее — habla más despacio), mientras que los perfectivos expresan una acción puntual (скажи мне — dime).',
       ],
     },
     {
-      heading: 'Imperativo negativo y expresiones con давай',
+      heading: '¿Cómo se usan el imperativo negativo y давай?',
       paragraphs: [
         'El imperativo negativo se forma con не + imperativo: не говори (no hables), не идите (no vayan). En carteles y prohibiciones formales, se usa не + infinitivo: "Не курить" (Prohibido fumar), "Не входить" (No entrar). La diferencia: "не кури" es una orden personal a alguien; "не курить" es una prohibición general.',
         'Давай/Давайте tiene un uso especial: davay + infinitivo imperfectivo = "vamos a": "Давай говорить по-русски" (Hablemos ruso). "Давай" solo = de acuerdo / vamos. El imperativo пожалуйста suaviza la petición: "Скажите, пожалуйста" (Diga, por favor).',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "vamos a..." con давай y давайте?',
+      paragraphs: [
+        'Para proponer hacer algo juntos ("vamos a...") el ruso usa давай (informal, a una persona) o давайте (formal o a varias) + verbo. Con verbos imperfectivos se usa el infinitivo: Давай смотреть фильм (vamos a ver una peli); con perfectivos, la forma de futuro en 1ª persona plural: Давайте пойдём (vamos a ir), Давай встретимся (quedemos).',
+        'La trampa para el hispanohablante es que давай/давайте no es un verbo léxico aquí ("dar"), sino un marcador de propuesta colectiva, equivalente a nuestro "vamos a" o al imperativo de primera persona plural. Solo, давай también significa "¡venga!/¡dale!" como despedida o ánimo informal.',
       ],
     },
   ],
@@ -185,7 +192,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma imperativa correcta.',
         type: 'freeText',
         scene: 'Образуй повелительное наклонение.',
-        text: 'Смотреть → ___ (ты-форма) / Пить → ___ (вы-форма) / Написать → ___ (ты-форма) / Есть → ___ (ты-форма, irregular)',
+        text: 'Смотреть → [[0]] (ты-форма) / Пить → [[1]] (вы-форма) / Написать → [[2]] (ты-форма) / Есть → [[3]] (ты-форма, irregular)',
         blanks: [
           { answer: 'смотри', explain: '"смотри" — они смотрят → raíz смотр- + и.' },
           { answer: 'пейте', explain: '"пейте" — пей (ты) + те. пить → пей (irregular).' },

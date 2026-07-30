@@ -48,17 +48,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Hin y her: la dirección del movimiento',
+      heading: '¿Cuál es la diferencia entre hin y her en alemán?',
       paragraphs: [
         '"Hin" indica movimiento que se aleja del hablante: "Geh hin!" (¡Ve allá!), "Ich fahre dahin" (voy hacia allá). "Her" indica movimiento que se acerca al hablante: "Komm her!" (¡Ven aquí!), "Er kommt hierher" (viene hacia aquí).',
         '"Wohin gehst du?" (¿Adónde vas?) se usa para preguntar el destino. "Woher kommst du?" (¿De dónde vienes?) para preguntar el origen.',
       ],
     },
     {
-      heading: 'Da-Komposita: referencia a cosas con preposición',
+      heading: '¿Qué son los Da-Komposita (dafür, damit, davon) en alemán?',
       paragraphs: [
         'Cuando necesitas referirte a una cosa o idea ya mencionada usando una preposición, en alemán no puedes decir "con eso" usando simplemente "mit das". En su lugar, usas el da-Kompositum: damit, dafür, davon, darüber, etc.',
         'La regla de la r: si la preposición comienza por vocal (an, auf, in, über, unter...), se añade una r entre da- y la preposición: daran, darauf, darin, darüber, darunter.',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan hin y her en verbos y preguntas en alemán?',
+      paragraphs: [
+        'Hin marca alejamiento del hablante y her acercamiento hacia él, y ambos se combinan con preposiciones y verbos de movimiento. En las preguntas de dirección aparecen dentro de wohin (¿a dónde?, alejándose) y woher (¿de dónde?, procedencia): "Wohin gehst du?" frente a "Woher kommst du?". También se pegan a verbos separables: herkommen (venir hacia aquí), hingehen (ir hacia allá), hereinkommen (entrar hacia el hablante), hinausgehen (salir alejándose). La trampa para el hispanohablante es que el español no distingue esta orientación con una partícula fija; en alemán conviene preguntarse siempre si el movimiento se acerca (her-) o se aleja (hin-) del que habla.',
       ],
     },
   ],
@@ -188,7 +194,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el da-Kompositum correcto para cada preposición.',
         type: 'freeText',
         scene: 'Respondiendo preguntas sobre ideas mencionadas.',
-        text: 'Ich denke ___ (an das). / Ich bin ___ (mit dem) einverstanden. / Hast du ___ (von dem) gehört? / Wir warten ___ (auf das). / Er redet ___ (über das) nicht.',
+        text: 'Ich denke [[0]] (an das). / Ich bin [[1]] (mit dem) einverstanden. / Hast du [[2]] (von dem) gehört? / Wir warten [[3]] (auf das). / Er redet [[4]] (über das) nicht.',
         blanks: [
           { answer: 'daran', explain: 'an + vocal → daran.' },
           { answer: 'damit', explain: 'mit → damit.' },

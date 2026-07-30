@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Parce que vs car vs puisque: los matices de la causa',
+      heading: '¿Cuál es la diferencia entre parce que, car y puisque en francés?',
       paragraphs: [
         'Los tres principales conectores de causa tienen usos distintos. Parce que responde directamente a la pregunta "pourquoi ?": "Je suis content parce que j\'ai réussi mon examen". Es el más neutro y frecuente. Car introduce una justificación de tono más literario o formal, y nunca puede ir al principio de la oración: "Je pars, car il se fait tard". Comme se usa al principio de la oración para una causa que precede a la consecuencia: "Comme il faisait beau, nous sommes sortis."',
         'Puisque se usa cuando la causa es conocida por los dos interlocutores o evidente: "Puisque tu sais la réponse, dis-la !" (Puesto que sabes la respuesta, dila). Implica que la causa no necesita explicación. En español equivale a "ya que" o "puesto que" cuando la información es compartida.',
       ],
     },
     {
-      heading: 'Donc, c\'est pourquoi, par conséquent: la consecuencia',
+      heading: '¿Cómo se expresa la consecuencia en francés (donc, par conséquent)?',
       paragraphs: [
         'Para la consecuencia, donc es el más frecuente y versátil: "Il est malade, donc il reste à la maison". Alors tiene un matiz más narrativo: "Elle est arrivée en retard, alors elle a tout raté". C\'est pourquoi (o c\'est pour ça que, más oral) presenta la consecuencia de manera más enfática: "Le train était en retard, c\'est pourquoi je suis arrivé tard."',
         'Par conséquent y en conséquence son más formales y se reservan para textos escritos o exposiciones: "Les températures ont chuté, par conséquent les routes sont gelées". Si bien que indica una consecuencia intensa: "Il parlait si vite que je n\'ai rien compris" (Hablaba tan rápido que no entendí nada).',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresan causa y consecuencia en francés?',
+      paragraphs: [
+        'La causa responde a "por qué" y se introduce con parce que (la más neutra y frecuente), car (más escrita, une dos frases), puisque (causa ya conocida por el interlocutor) o con grâce à / à cause de + sustantivo (positivo / negativo). La consecuencia responde a "y por eso" y se marca con donc, alors, c\'est pourquoi o par conséquent. Trampa del hispanohablante: "car" nunca abre una frase (va entre dos oraciones), mientras que "parce que" sí puede iniciar la respuesta a "pourquoi ?". Elegir el conector según su registro y su posición es un criterio explícito de evaluación en el DELF.',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con conectores de causa o consecuencia.',
         type: 'guidedText',
         scene: 'Lucie explique pourquoi elle a changé de travail.',
-        text: 'J\'ai décidé de changer de travail [[0]] je n\'étais plus heureuse. Mon ancien patron était très exigeant, [[1]] j\'avais trop de stress. [[2]] je cherchais quelque chose de différent, j\'ai passé plusieurs entretiens. J\'ai trouvé un nouveau poste, [[3]] j\'ai accepté immédiatement. [[0]] le salaire est meilleur, c\'est encore mieux !',
+        text: 'J\'ai décidé de changer de travail [[0]] je n\'étais plus heureuse. Mon ancien patron était très exigeant, [[1]] j\'avais trop de stress. [[2]] je cherchais quelque chose de différent, j\'ai passé plusieurs entretiens. J\'ai trouvé un nouveau poste, [[3]] j\'ai accepté immédiatement. [[4]] le salaire est meilleur, c\'est encore mieux !',
         blanks: [
           { options: ['parce que', 'donc', "c'est pourquoi", 'car'], answer: 'parce que', explain: '"parce que" = causa directa. ¿Por qué cambió? Porque ya no era feliz.' },
           { options: ['donc', 'parce que', 'puisque', 'comme'], answer: 'donc', explain: '"donc" = consecuencia. Jefe exigente → demasiado estrés.' },
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el conector de causa o consecuencia correcto.',
         type: 'freeText',
         scene: 'Complétez avec le bon connecteur.',
-        text: 'Je ne sors pas ce soir ___ je suis malade. (causa directa) / Le train est en retard, ___ nous allons rater notre correspondance. (consecuencia) / ___ tu connais la ville, tu peux nous guider. (causa conocida) / Il fait froid, ___ prenez votre manteau ! (consecuencia lógica)',
+        text: 'Je ne sors pas ce soir [[0]] je suis malade. (causa directa) / Le train est en retard, [[1]] nous allons rater notre correspondance. (consecuencia) / [[2]] tu connais la ville, tu peux nous guider. (causa conocida) / Il fait froid, [[3]] prenez votre manteau ! (consecuencia lógica)',
         blanks: [
           { answer: 'parce que', explain: '"parce que" = causa directa. Responde à pourquoi.' },
           { answer: 'donc', explain: '"donc" = consecuencia. Tren tarde → perder conexión.' },

@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Alternativa simple vs repetida',
+      heading: '¿Cuál es la diferencia entre -거나 simple y repetido?',
       paragraphs: [
         'Simple: "커피거나 차" (café o té — tienes que elegir uno). Repetida: "커피거나 차거나" (café o té, me da igual cuál elijas — indiferencia). La repetición añade matiz de que "no importa cuál".',
         'Ejemplo con indiferencia: "뭐를 하거나 상관없어요" (no importa qué hagas, me da igual). La repetición suaviza hacia la aceptación de cualquier opción.',
       ],
     },
     {
-      heading: 'Con verbos y adjetivos',
+      heading: '¿Cómo se usa -거나 con verbos y adjetivos?',
       paragraphs: [
         'Verbos: 가다 → 가거나, 오다 → 오거나, 먹다 → 먹거나. Ejemplo: "영화를 보거나 게임을 할 수 있어요" (puedes ver una película o jugar).',
         'Adjetivos: 예쁘다 → 예쁘거나, 비싸다 → 비싸거나. Ejemplo: "예쁘거나 싸야 산다" (compro si es bonito o barato — una u otra condición).',
@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
         intro: 'Completa un diálogo sobre opciones.',
         type: 'guidedText',
         scene: 'Conversación sobre preferencias y decisiones.',
-        text: '뭘 마실거야? 커피___ 차를 마실 수 있어. 뭘 할거야? 영화를 보___ 게임을 할 수 있어. 언제 와? 내일___ 모레에 올 거야.',
+        text: '뭘 마실거야? 커피[[0]] 차를 마실 수 있어. 뭘 할거야? 영화를 보[[1]] 게임을 할 수 있어. 언제 와? 내일[[2]] 모레에 올 거야.',
         blanks: [
           { options: ['거나', '고도'], answer: '거나', explain: '-거나 para alternativa.' },
           { options: ['거나', '고도'], answer: '거나', explain: '-거나 para alternativa.' },

@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cuándo se usa el Konjunktiv II en alemán',
+      heading: '¿Cuándo se usa el Konjunktiv II en alemán?',
       paragraphs: [
         'El Konjunktiv II (subjuntivo II) tiene tres usos principales en A2. Primero, peticiones corteses: "Würden Sie mir bitte helfen?" (¿Me ayudaría usted, por favor?) es mucho más amable que el imperativo. Segundo, deseos y preferencias: "Ich würde gern nach Japan reisen" (Me gustaría ir a Japón). Tercero, situaciones hipotéticas: "Wenn ich Zeit hätte, würde ich mehr lesen" (Si tuviera tiempo, leería más).',
         'En el registro formal alemán, el Konjunktiv II es imprescindible. En hoteles, tiendas, oficinas y situaciones de servicio al cliente, usar "würde" eleva inmediatamente el nivel de cortesía.',
       ],
     },
     {
-      heading: 'Las formas propias sin würde',
+      heading: '¿Qué verbos tienen forma propia de Konjunktiv II sin würde?',
       paragraphs: [
         'Varios verbos muy frecuentes tienen su propia forma en Konjunktiv II y no necesitan würde: sein → wäre, haben → hätte, können → könnte, müssen → müsste, dürfen → dürfte, sollen → sollte, mögen → möchte. La forma "möchte" (quisiera) es especialmente importante en A2 para pedir cosas en una tienda o restaurante.',
         '"Das wäre super!" (¡Eso sería genial!), "Ich hätte gern einen Kaffee" (Quisiera un café), "Könnten Sie langsamer sprechen?" (¿Podría hablar más despacio?) — estas frases son esenciales en la comunicación cotidiana alemana.',
       ],
     },
     {
-      heading: 'Oraciones condicionales con Konjunktiv II',
+      heading: '¿Cómo se forman las oraciones condicionales con Konjunktiv II?',
       paragraphs: [
         'Las oraciones condicionales hipotéticas usan Konjunktiv II en ambas cláusulas: "Wenn ich mehr Zeit hätte, würde ich mehr Sport machen" (Si tuviera más tiempo, haría más deporte). La cláusula con "wenn" tiene el verbo al final.',
         'Este patrón es diferente de las condiciones reales (Indikativ): "Wenn ich Zeit habe, gehe ich spazieren" (Si tengo tiempo, voy a pasear). La diferencia entre Indikativ y Konjunktiv II marca la diferencia entre "una condición posible" y "una hipótesis irreal".',

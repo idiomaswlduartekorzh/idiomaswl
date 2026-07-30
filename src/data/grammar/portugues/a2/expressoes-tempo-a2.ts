@@ -60,6 +60,33 @@ const topic: GrammarTopic = {
         '"Desde" marca el inicio de un período: "Estudo português desde março" (estudio portugués desde marzo). "Até" marca el límite: "Vou ficar até sexta-feira" (voy a quedarme hasta el viernes). Ambas pueden combinarse: "Trabalho das 9h até às 18h" (trabajo de 9 a 18h).',
       ],
     },
+    {
+      heading: '¿Cuáles son las expresiones de tiempo en portugués?',
+      paragraphs: [
+        'Cada una sitúa la acción en una zona temporal distinta: pasado, futuro, inicio, límite o duración. Esta tabla las ordena con un ejemplo:',
+      ],
+      table: [
+        ['Expresión', 'Sitúa en', 'Ejemplo'],
+        ['há / faz + tiempo', 'pasado hasta hoy', 'Há dois anos que moro aqui.'],
+        ['daqui a + tiempo', 'futuro desde ahora', 'Volto daqui a uma hora.'],
+        ['desde + punto', 'inicio de un período', 'Estudo desde janeiro.'],
+        ['até + punto', 'límite final', 'Fico até sexta.'],
+        ['durante + tiempo', 'duración', 'Estudei durante três horas.'],
+        ['enquanto + frase', 'simultaneidad', 'Enquanto você fala, eu escuto.'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "há" y "daqui a" en portugués?',
+      paragraphs: [
+        'Apuntan en direcciones opuestas del tiempo. "Há" (o "faz") mira al pasado: cuenta el tiempo transcurrido desde un momento anterior hasta ahora — "Há dois anos que estudo" (empecé hace dos años y sigo). "Daqui a" mira al futuro: cuenta el tiempo que falta desde ahora hasta un momento posterior — "Volto daqui a dois anos" (aún no ha pasado). El error típico del hispanohablante es usar "há" para el futuro; recuerda: pasado → há/faz, futuro → daqui a. En español ambos serían "hace" y "dentro de".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "desde", "até" y "durante" en portugués?',
+      paragraphs: [
+        '"Desde" marca el punto de inicio de algo que continúa: "Moro aqui desde 2020" (desde 2020 hasta hoy). "Até" marca el punto final o el límite: "Fico até sexta" (hasta el viernes). "Durante" indica el lapso completo de una actividad: "Estudei durante duas horas" (a lo largo de dos horas). A menudo desde y até se combinan para delimitar un intervalo: "Trabalho das 9h até às 18h". Son casi calcos del español (desde/hasta/durante), así que el reparto es intuitivo; la única cautela es no meter artículo con "durante" en sentido genérico ("durante três horas", no "durante as três horas").',
+      ],
+    },
   ],
 
   visual: {
@@ -188,7 +215,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: completa con há, faz, daqui a, desde, até o durante.',
         type: 'freeText',
         scene: 'Situações temporais cotidianas.',
-        text: '___ uma hora que espero. / Voltarei ___ dois dias. / Moro aqui ___ 2020. / Estudei ___ uma hora. / Vou estudar ___ à meia-noite.',
+        text: '[[0]] uma hora que espero. / Voltarei [[1]] dois dias. / Moro aqui [[2]] 2020. / Estudei [[3]] uma hora. / Vou estudar [[4]] à meia-noite.',
         blanks: [
           { answer: 'Há', explain: '"Há uma hora que espero" = llevo una hora esperando.' },
           { answer: 'daqui a', explain: '"daqui a dois dias" = dentro de dos días.' },

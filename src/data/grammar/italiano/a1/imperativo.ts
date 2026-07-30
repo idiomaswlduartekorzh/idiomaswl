@@ -67,8 +67,35 @@ const topic: GrammarTopic = {
     {
       heading: 'Imperativos irregolari esenciales en A1',
       paragraphs: [
-        'Los verbos más comunes tienen imperativos irregulares que conviene memorizar: andare → vai! / andate! (¡ve! / ¡id!), fare → fai! / fate! (¡haz! / ¡haced!), stare → stai! / state! (¡estate! / ¡estad!), essere → sii! / siate!, avere → abbi! / abbiate!.',
-        'Andiamo! es especialmente frecuente: significa "¡Vamos!" y lo escucharás constantemente en italiano coloquial.',
+        'Los verbos más comunes tienen imperativos irregulares que conviene memorizar. Varios tienen dos formas de TU (una corta con apóstrofo y otra igual al presente). "Andiamo!" ("¡Vamos!") lo escucharás constantemente:',
+      ],
+      table: [
+        ['Verbo', 'TU', 'VOI'],
+        ['andare', 'va\' / vai', 'andate'],
+        ['fare', 'fa\' / fai', 'fate'],
+        ['stare', 'sta\' / stai', 'state'],
+        ['dare', 'da\' / dai', 'date'],
+        ['dire', 'di\'', 'dite'],
+        ['essere', 'sii', 'siate'],
+        ['avere', 'abbi', 'abbiate'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el imperativo afirmativo en italiano?',
+      paragraphs: [
+        'Para TU: los verbos -are toman la forma de "él/ella" (parla!), y los -ere/-ire toman la de "tú" (scrivi!, apri!). Para VOI coincide con el presente (parlate!, scrivete!). Para NOI equivale a "vamos a…" (parliamo! = ¡hablemos!). La forma de cortesía (Lei) usa el subjuntivo (parli!).',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice una orden negativa ("no hagas") en italiano?',
+      paragraphs: [
+        'Para TU, la orden negativa es non + infinitivo: "Non parlare!" (¡no hables!), "Non correre!" (¡no corras!). Es la regla que más confunde: NO se dice "non parla". Para VOI y NOI es regular: "Non parlate!", "Non parliamo!".',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los imperativos irregulares más comunes?',
+      paragraphs: [
+        'andare (va\'/vai), fare (fa\'/fai), stare (sta\'/stai), dare (da\'/dai), dire (di\'), essere (sii) y avere (abbi). Con pronombre, las formas cortas duplican la consonante: "Dimmi!" (dime), "Fammi vedere!" (déjame ver), "Vacci!" (ve allí).',
       ],
     },
   ],
@@ -128,8 +155,8 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la forma imperativa correcta en cada contexto.',
         type: 'guidedText',
-        scene: 'David da instrucciones en clase de italiano',
-        text: 'David entra in classe e dice: "[[0]] i libri!" (¡Abrid los libros! — VOI). Poi guarda Marco: "Marco, [[1]] la pagina dieci!" (¡Lee la página diez! — TU). Lina arriva in ritardo. David dice: "Non [[2]] in ritardo!" (¡No llegues tarde! — TU negativo). Tutti insieme: "[[3]] di pronuncia!" (¡Practiquemos pronunciación! — NOI). Alla fine: "[[4]] a casa e [[5]] il vocabolario!" (¡Id a casa y repasd el vocabulario! — VOI)',
+        scene: 'Bruno da instrucciones en clase de italiano',
+        text: 'Bruno entra in classe e dice: "[[0]] i libri!" (¡Abrid los libros! — VOI). Poi guarda Marco: "Marco, [[1]] la pagina dieci!" (¡Lee la página diez! — TU). Lina arriva in ritardo. Bruno dice: "Non [[2]] in ritardo!" (¡No llegues tarde! — TU negativo). Tutti insieme: "[[3]] di pronuncia!" (¡Practiquemos pronunciación! — NOI). Alla fine: "[[4]] a casa e [[5]] il vocabolario!" (¡Id a casa y repasd el vocabulario! — VOI)',
         blanks: [
           { options: ['Aprite', 'Apri', 'Apra', 'Aprire'], answer: 'Aprite', explain: 'Aprite! VOI de aprire (-ire): -ite. ¡Abrid!' },
           { options: ['leggi', 'legga', 'leggete', 'leggere'], answer: 'leggi', explain: 'Leggi! TU de leggere (-ere): scrivi/leggi (seconda persona presente).' },
@@ -175,7 +202,7 @@ const topic: GrammarTopic = {
         intro: 'Usa el imperativo en situaciones reales.',
         type: 'write',
         items: [
-          { scene: 'Sé profesor por un momento', prompt: 'Imagina que eres David y das instrucciones a TU estudiante. Escribe 4 instrucciones: 2 afirmativas y 2 negativas. Usa: ascoltare, scrivere, parlare, guardare (il telefono), mangiare.', answer: 'Ascolta bene! Scrivi le parole. Non parlare in spagnolo! Non guardare il telefono!', accepted: ['ascolta', 'scrivi', 'non', 'are'], explain: 'TU afirmativo: ascolta, scrivi (-are → -a; -ere → -i). TU negativo: non + infinitivo (non parlare, non guardare).' },
+          { scene: 'Sé profesor por un momento', prompt: 'Imagina que eres Bruno y das instrucciones a TU estudiante. Escribe 4 instrucciones: 2 afirmativas y 2 negativas. Usa: ascoltare, scrivere, parlare, guardare (il telefono), mangiare.', answer: 'Ascolta bene! Scrivi le parole. Non parlare in spagnolo! Non guardare il telefono!', accepted: ['ascolta', 'scrivi', 'non', 'are'], explain: 'TU afirmativo: ascolta, scrivi (-are → -a; -ere → -i). TU negativo: non + infinitivo (non parlare, non guardare).' },
           { scene: 'Instrucciones para el grupo', prompt: 'Escribe 3 instrucciones para todo el grupo (VOI) al final de una clase de italiano. Usa: ripassare (repasar), studiare, fare (i compiti = los deberes).', answer: 'Ripassate il vocabolario! Studiate la grammatica! Fate i compiti!', accepted: ['ripassate', 'studiate', 'fate'], explain: 'VOI: -are → -ate (ripassate, studiate); fare irregular → fate. ¡Así habla un profesor en Italia!' },
         ],
       },

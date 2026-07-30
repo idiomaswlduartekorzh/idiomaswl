@@ -59,14 +59,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La distinción animado/inanimado: el gran reto del acusativo',
+      heading: '¿Por qué el acusativo distingue entre animado e inanimado?',
       paragraphs: [
         'En ruso, los sustantivos se clasifican como ANIMADOS (personas, animales) o INANIMADOS (objetos, conceptos). Esta distinción afecta solo a los masculinos en acusativo singular: los animados toman la forma del genitivo (-а/-я), los inanimados se quedan igual que el nominativo.',
         'Я вижу студента (Veo al estudiante — animado: студент → студента). Я вижу стол (Veo la mesa — inanimado: стол → стол sin cambio). Esta distinción no existe en español y es uno de los primeros retos del ruso.',
       ],
     },
     {
-      heading: 'Verbos que piden acusativo en A1',
+      heading: '¿Qué verbos piden caso acusativo en A1?',
       paragraphs: [
         'Los verbos más comunes que toman objeto directo en acusativo: читать (leer), видеть (ver), любить (querer/amar), знать (saber/conocer), пить (beber), есть (comer), слушать (escuchar), смотреть (mirar), понимать (entender), учить (estudiar/aprender).',
         'Regla práctica: si el verbo puede responder a "¿qué?" o "¿a quién?", el objeto va en acusativo. Я читаю что? — книгу. Я вижу кого? — студента.',
@@ -129,7 +129,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma acusativa correcta para completar cada oración.',
         type: 'guidedText',
         scene: 'Usando el acusativo con verbos transitivos',
-        text: 'Я читаю [[0]]. (Leo un libro.) Давид видит [[1]]. (David ve al estudiante.) Я люблю [[2]]. (Amo la música.) Анна пьёт [[3]]. (Ana bebe agua.) Мы знаем [[4]]. (Conocemos al profesor.)',
+        text: 'Я читаю [[0]]. (Leo un libro.) Давид видит [[1]]. (Dario ve al estudiante.) Я люблю [[2]]. (Amo la música.) Анна пьёт [[3]]. (Ana bebe agua.) Мы знаем [[4]]. (Conocemos al profesor.)',
         blanks: [
           { options: ['книга', 'книгу', 'книге', 'книги'], answer: 'книгу', explain: 'книга → книгу. Femenino -а → -у en acusativo.' },
           { options: ['студент', 'студенту', 'студента', 'студентом'], answer: 'студента', explain: 'студент (animado masc) → студента. Acusativo animado = genitivo.' },

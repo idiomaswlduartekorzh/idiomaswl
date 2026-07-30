@@ -85,6 +85,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'They doesn\'t study on weekends.', 'Correcto', 'They don\'t study on weekends.'],
       ],
     },
+    {
+      heading: '¿Cómo se forma la negación en present simple?',
+      paragraphs: [
+        'Con el auxiliar do/does + not + verbo en forma base: "I do not (don\'t) work", "She does not (doesn\'t) work". El verbo principal NO cambia y NO lleva -s en la negación: "He doesn\'t work" (no "doesn\'t works"). Con el verbo to be no se usa do: "I am not", "She isn\'t".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "don\'t" y cuándo "doesn\'t"?',
+      paragraphs: [
+        '"don\'t" con I, you, we, they ("I don\'t like coffee"). "doesn\'t" con he, she, it ("She doesn\'t like coffee"). El -s de la tercera persona pasa al auxiliar (does), por eso el verbo principal queda en forma base.',
+      ],
+    },
+    {
+      heading: '¿Por qué el verbo no lleva -s después de "doesn\'t"?',
+      paragraphs: [
+        'Porque la marca de tercera persona ya está en el auxiliar "does". Se dice "She doesn\'t work" (no "doesn\'t works"): la -s no se duplica. Es el error típico del hispanohablante al negar en tercera persona.',
+      ],
+    },
   ],
   visual: {
     mode: 'auxiliary-split',
@@ -127,7 +145,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Negando un horario',
-            lines: [['David', 'The café ___ open on Sundays.']],
+            lines: [['Leo', 'The café ___ open on Sundays.']],
             options: ['don\'t', 'doesn\'t', 'not', 'isn\'t'],
             answer: 'doesn\'t',
             explain: 'The café → it → doesn\'t open.',

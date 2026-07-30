@@ -44,17 +44,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Adverbios de tiempo básicos en ruso',
+      heading: '¿Cuáles son los adverbios de tiempo básicos en ruso?',
       paragraphs: [
         'Los adverbios temporales rusos son invariables: no cambian por género, número ni caso. Los más básicos son вчера (ayer), сегодня (hoy), завтра (mañana). Para "ahora" hay dos opciones: сейчас (en este momento, acción en curso) y теперь (ahora, en contraste con antes: "раньше я учился, теперь работаю"). Прошлая неделя (la semana pasada) y на следующей неделе (la semana que viene) usan el genitivo o el prepositivo según la construcción.',
         'Los adverbios de secuencia organizan el discurso: сначала (primero/al principio), потом o затем (luego/después), наконец (finalmente/por fin). Ejemplo: "Сначала я позавтракал, потом пошёл на работу, наконец вернулся домой" (Primero desayuné, luego fui al trabajo, finalmente volví a casa).',
       ],
     },
     {
-      heading: 'Уже, ещё, скоро y никогда',
+      heading: '¿Cómo se usan уже, ещё, скоро y никогда?',
       paragraphs: [
         'Уже (ya) indica que algo ya ocurrió o ya es el caso: "Он уже пришёл" (Ya llegó). Ещё (todavía) indica que algo continúa: "Она ещё спит" (Todavía duerme). Ещё не (aún no) indica que algo no ha ocurrido pero se espera: "Он ещё не пришёл" (Aún no ha llegado). Скоро (pronto/en breve) indica futuro cercano: "Скоро будет зима" (Pronto llegará el invierno).',
         'Никогда (nunca) requiere doble negación con не: "Я никогда не был в Японии" (Nunca he estado en Japón). "Никогда" siempre se combina con не antes del verbo. Otros negativos que siguen el mismo patrón: нигде (en ningún lugar) y никуда (a ningún lugar).',
+      ],
+    },
+    {
+      heading: '¿Qué diferencia hay entre сейчас, теперь y тогда?',
+      paragraphs: [
+        'Los tres se traducen a veces por "ahora/entonces" pero no son iguales. сейчас es "ahora mismo, en este instante": Я сейчас занят (ahora estoy ocupado). теперь es "ahora (por contraste con antes), a partir de ahora": Раньше я курил, теперь нет (antes fumaba, ahora no). тогда es "entonces, en aquel momento (pasado)" o "en ese caso": Тогда я жил в Москве (entonces vivía en Moscú).',
+        'La trampa para el hispanohablante es usar сейчас para todo: сейчас marca el momento presente puntual, mientras que теперь subraya un cambio respecto al pasado y тогда remite a otro momento o a una consecuencia lógica ("entonces / en ese caso").',
       ],
     },
   ],
@@ -184,7 +191,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el adverbio ruso correcto.',
         type: 'freeText',
         scene: 'Напиши наречие времени по-русски.',
-        text: 'Ayer (pasado) = ___ / Pronto (futuro cercano) = ___ / A veces (frecuencia media) = ___ / Aún no (negación incompleta) = ___',
+        text: 'Ayer (pasado) = [[0]] / Pronto (futuro cercano) = [[1]] / A veces (frecuencia media) = [[2]] / Aún no (negación incompleta) = [[3]]',
         blanks: [
           { answer: 'вчера', explain: '"вчера" — ayer. Pasado inmediato.' },
           { answer: 'скоро', explain: '"скоро" — pronto/en breve. Futuro cercano.' },

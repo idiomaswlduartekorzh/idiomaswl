@@ -91,6 +91,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'I have two watchs.', 'Correcto', 'I have two watches.'],
       ],
     },
+    {
+      heading: '¿Cómo se forma el plural en inglés?',
+      paragraphs: [
+        'La mayoría añade -s (book → books, car → cars). Los sustantivos en -s, -ss, -sh, -ch, -x añaden -es (box → boxes, watch → watches). Los de consonante + y cambian a -ies (city → cities). Los en -f/-fe suelen hacer -ves (knife → knives).',
+      ],
+    },
+    {
+      heading: '¿Cuándo se añade -es en vez de -s?',
+      paragraphs: [
+        'Cuando el sustantivo termina en -s, -ss, -sh, -ch, -x o -o (después de consonante): bus → buses, glass → glasses, dish → dishes, box → boxes, tomato → tomatoes. En los demás casos basta con -s.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los plurales irregulares en inglés?',
+      paragraphs: [
+        'Algunos no siguen ninguna regla y hay que memorizarlos: man → men, woman → women, child → children, foot → feet, tooth → teeth, person → people, mouse → mice. Otros no cambian: fish → fish, sheep → sheep.',
+      ],
+    },
   ],
   visual: {
     mode: 'rule-sort',
@@ -120,7 +138,7 @@ const topic: GrammarTopic = {
           {
             scene: 'En la cocina',
             lines: [['Chef', 'Please put the ___ on the table.']],
-            options: ['knife', 'knifes', 'knives', 'knifes'],
+            options: ['knife', 'knifes', 'knives'],
             answer: 'knives',
             explain: 'Knife termina en -fe → cambia a -ves: knives.',
           },
@@ -162,7 +180,7 @@ const topic: GrammarTopic = {
           {
             scene: 'En el mercado',
             lines: [['Vendor', 'We have fresh ___ today.']],
-            options: ['tomato', 'tomatos', 'tomatoes', 'tomatoes'],
+            options: ['tomato', 'tomatos', 'tomatoes'],
             answer: 'tomatoes',
             explain: 'Tomato es uno de los sustantivos en -o que añade -es: tomatoes.',
           },

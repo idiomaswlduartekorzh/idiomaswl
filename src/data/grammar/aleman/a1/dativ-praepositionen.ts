@@ -27,7 +27,7 @@ const topic: GrammarTopic = {
       'bei (en casa de / cerca de / mientras): bei meiner Mutter, beim Arzt, beim Essen',
       'nach (después de / hacia — sin artículo con ciudades y países): nach Berlin, nach Deutschland, nach dem Kurs',
       'seit (desde hace — rige dativo siempre): seit einem Jahr, seit drei Monaten',
-      'von (de / por — origen y autoría): von dem Lehrer = vom Lehrer, von Zhanna',
+      'von (de / por — origen y autoría): von dem Lehrer = vom Lehrer, von Vera',
       'zu (a / hacia — destino con personas/lugares): zum Bahnhof, zur Schule, zu Hause',
       'aus (de — origen / material): aus Kolumbien, aus Holz, aus dem Zimmer',
       'gegenüber (frente a): gegenüber dem Bahnhof, gegenüber der Post',
@@ -52,14 +52,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las 8 preposiciones de dativo: siempre las mismas',
+      heading: '¿Cuáles son las preposiciones de dativo en alemán?',
       paragraphs: [
         'Una de las reglas más importantes del alemán es que ciertas preposiciones rigen SIEMPRE dativo. No importa el contexto: con mit, bei, nach, seit, von, zu, aus y gegenüber, el sustantivo que sigue va siempre en dativo. Una manera de memorizarlas es con la frase mnemotécnica en alemán: "mit bei nach seit von zu aus gegenüber" — y aprenderlas de memoria como una lista.',
         'Los artículos en dativo son: der/das → dem, die → der, plural → den (y el sustantivo añade -n si no termina ya en -n): der Bus → mit dem Bus; die U-Bahn → mit der U-Bahn; das Fahrrad → mit dem Fahrrad; die Busse → mit den Bussen.',
       ],
     },
     {
-      heading: 'Contracciones frecuentes con zu y bei',
+      heading: '¿Cómo se contraen las preposiciones de dativo en alemán?',
       paragraphs: [
         'Algunas combinaciones de preposición + artículo definido se contraen en el habla cotidiana: zu + dem = zum (ich gehe zum Supermarkt), zu + der = zur (ich gehe zur Schule), bei + dem = beim (ich bin beim Arzt), von + dem = vom (das Buch ist vom Lehrer). Estas contracciones son prácticamente obligatorias en el alemán hablado y suena raro usarlas sin contraer.',
         'Otras contracciones existen pero son menos frecuentes en A1: an + dem = am (temporal: am Montag), an + das = ans, in + dem = im, in + das = ins. En A1 basta con dominar zum, zur, beim, vom.',
@@ -73,7 +73,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Aus y seit: origen y duración',
+      heading: '¿Cómo se usan aus y seit en alemán?',
       paragraphs: [
         '"Aus" expresa el origen geográfico (Ich komme aus Kolumbien / Ich bin aus Bogotá) y también el material de algo (Das Buch ist aus Papier / Der Tisch ist aus Holz). Con "aus" el origen es geográfico y permanente, a diferencia de "von" que puede indicar punto de partida temporal.',
         '"Seit" con dativo expresa una duración que comenzó en el pasado y continúa: Ich lerne seit einem Jahr Deutsch (dativo singular neutro: einem). Ich wohne seit drei Monaten in Berlin (dativo plural: Monaten). Recuerda siempre: "seit" + dativo.',
@@ -142,11 +142,11 @@ const topic: GrammarTopic = {
             explain: '"Seit" + dativo = desde hace. Seit einem Jahr = desde hace un año.',
           },
           {
-            scene: 'David habla del libro de Zhanna',
-            lines: [['David', 'Das Buch ist ___ Zhanna.']],
+            scene: 'Dario habla del libro de Vera',
+            lines: [['Dario', 'Das Buch ist ___ Vera.']],
             options: ['von', 'aus', 'bei', 'mit'],
             answer: 'von',
-            explain: '"Von" + origen/autoría. Das Buch ist von Zhanna = El libro es de Zhanna.',
+            explain: '"Von" + origen/autoría. Das Buch ist von Vera = El libro es de Vera.',
           },
           {
             scene: 'Carlos está en casa de su amigo',
@@ -172,8 +172,8 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'David va a la escuela en metro',
-            lines: [['David', 'Ich fahre [[0]] [[1]] U-Bahn.']],
+            scene: 'Dario va a la escuela en metro',
+            lines: [['Dario', 'Ich fahre [[0]] [[1]] U-Bahn.']],
             blanks: [
               { options: ['mit', 'bei', 'von', 'zu'], answer: 'mit', explain: '"Mit" para medio de transporte.' },
               { options: ['der', 'dem', 'die', 'den'], answer: 'der', explain: '"Die U-Bahn" es femenino → dativo: der. Mit der U-Bahn.' },
@@ -212,7 +212,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la preposición correcta (y el artículo cuando corresponda).',
         type: 'guidedText',
         scene: 'Carlos describe su día en Berlín.',
-        text: 'Ich lebe [[0]] einem Jahr in Berlin. Jeden Morgen fahre ich [[1]] der U-Bahn zur Arbeit. Ich arbeite [[2]] einer deutschen Firma. [[3]] der Arbeit esse ich oft [[4]] meinem Kollegen Marco. Die Kantine ist [[5]] dem Büro. Abends gehe ich manchmal [[6]] dem Kurs direkt zu David.',
+        text: 'Ich lebe [[0]] einem Jahr in Berlin. Jeden Morgen fahre ich [[1]] der U-Bahn zur Arbeit. Ich arbeite [[2]] einer deutschen Firma. [[3]] der Arbeit esse ich oft [[4]] meinem Kollegen Marco. Die Kantine ist [[5]] dem Büro. Abends gehe ich manchmal [[6]] dem Kurs direkt zu Dario.',
         blanks: [
           { options: ['seit', 'von', 'bei', 'mit'], answer: 'seit', explain: '"Seit einem Jahr" — duración hasta el presente con dativo.' },
           { options: ['mit', 'bei', 'zu', 'nach'], answer: 'mit', explain: '"Mit der U-Bahn" — medio de transporte.' },
@@ -230,12 +230,12 @@ const topic: GrammarTopic = {
         intro: 'Escribe la preposición de dativo correcta de memoria.',
         type: 'freeText',
         scene: 'Sofia habla de su vida en WeLearn.',
-        text: 'Ich komme [[0]] Bucaramanga. Ich studiere [[1]] zwei Jahren hier. Ich fahre [[2]] dem Bus zum Unterricht. Manchmal esse ich [[3]] Zhanna. Die Mensa ist gleich [[4]] der Schule.',
+        text: 'Ich komme [[0]] Bucaramanga. Ich studiere [[1]] zwei Jahren hier. Ich fahre [[2]] dem Bus zum Unterricht. Manchmal esse ich [[3]] Vera. Die Mensa ist gleich [[4]] der Schule.',
         blanks: [
           { answer: 'aus', accepted: ['aus'], explain: '"Aus" para origen geográfico. Ich komme aus Bucaramanga.' },
           { answer: 'seit', accepted: ['seit'], explain: '"Seit zwei Jahren" — desde hace dos años.' },
           { answer: 'mit', accepted: ['mit'], explain: '"Mit dem Bus" — medio de transporte.' },
-          { answer: 'bei', accepted: ['bei'], explain: '"Bei Zhanna" — con/en casa de Zhanna: bei + dativo (nombre sin artículo).' },
+          { answer: 'bei', accepted: ['bei'], explain: '"Bei Vera" — con/en casa de Vera: bei + dativo (nombre sin artículo).' },
           { answer: 'gegenüber', accepted: ['gegenüber'], explain: '"Gegenüber der Schule" — frente a la escuela.' },
         ],
       },
@@ -298,10 +298,10 @@ const topic: GrammarTopic = {
             explain: 'Gegenüber (frente a), mit (transporte), bei (cerca de/junto a). Todos con dativo: dem/der/dem.',
           },
           {
-            scene: 'Contándole a David tu historia con los idiomas',
-            prompt: 'Cuéntale a David desde cuándo aprendes alemán, de dónde eres y con quién estudias.',
-            answer: 'Ich lerne seit sechs Monaten Deutsch. Ich komme aus Kolumbien. Ich lerne bei Zhanna und manchmal mit meinem Freund Carlos.',
-            accepted: ['seit ', 'aus ', 'bei zhanna', 'bei welearn', 'mit meinem', 'mit meiner', 'von '],
+            scene: 'Contándole a Dario tu historia con los idiomas',
+            prompt: 'Cuéntale a Dario desde cuándo aprendes alemán, de dónde eres y con quién estudias.',
+            answer: 'Ich lerne seit sechs Monaten Deutsch. Ich komme aus Kolumbien. Ich lerne bei Vera und manchmal mit meinem Freund Carlos.',
+            accepted: ['seit ', 'aus ', 'bei vera', 'bei welearn', 'mit meinem', 'mit meiner', 'von '],
             explain: 'Seit + dativo (duración). Aus (origen). Bei + persona (con quién/dónde). Mit + persona (compañía).',
           },
         ],

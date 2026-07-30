@@ -86,6 +86,24 @@ const topic: GrammarTopic = {
         'Estos verbos tienen estructuras propias: ask + to-infinitive para órdenes ("She asked me to close the window." = "Could you close the window?"); advise + to-infinitive para consejos ("The doctor advised me to rest more.").',
       ],
     },
+    {
+      heading: '¿Cómo se forma el estilo indirecto (reported speech) en inglés?',
+      paragraphs: [
+        'El verbo introductor (say, tell) suele ir en pasado y el verbo citado "retrocede" un tiempo: present → past, past → past perfect, will → would, can → could. "I am tired" → "She said (that) she was tired". También cambian los pronombres y las expresiones de tiempo.',
+      ],
+    },
+    {
+      heading: '¿Cómo cambian los tiempos verbales en reported speech?',
+      paragraphs: [
+        'Retroceden un paso: am/is/are → was/were; do/does → did; have → had; will → would; can → could; must → had to. "now" → "then", "today" → "that day", "tomorrow" → "the next day". Si lo dicho sigue siendo verdad, el cambio es opcional.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "say" y "tell" en reported speech?',
+      paragraphs: [
+        '"tell" necesita un objeto (a quién): "She told me that…". "say" no lleva objeto directo de persona: "She said that…" (no "she said me"). Error típico del hispanohablante: "she said me" → "she told me".',
+      ],
+    },
   ],
 
   visual: {
@@ -167,7 +185,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Promesa',
-            lines: [['David:', '"I will help you prepare for the IELTS."'], ['Reported:', 'David promised ___ me prepare for the IELTS.']],
+            lines: [['Dario:', '"I will help you prepare for the IELTS."'], ['Reported:', 'Dario promised ___ me prepare for the IELTS.']],
             options: ['to help', 'helping', 'help', 'helped'],
             answer: 'to help',
             explain: 'promise + to-infinitive: "promised to help" — estructura fija del verbo de reporte.',

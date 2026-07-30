@@ -21,10 +21,10 @@ const topic: GrammarTopic = {
 
   guide: {
     goal: 'Conjugar y usar los verbos reflexivos más comunes del portugués en oraciones cotidianas.',
-    model: 'Eu me chamo David. Ela se levanta às 7h. Nós nos sentamos na frente.',
+    model: 'Eu me chamo Iván. Ela se levanta às 7h. Nós nos sentamos na frente.',
     formula: 'me (eu) | te (tu/você) | se (ele/ela/você) | nos (nós) | se (eles/vocês)',
     decisions: [
-      '"Chamar-se" → uso reflexivo: "Como você se chama?" / "Eu me chamo Zhanna."',
+      '"Chamar-se" → uso reflexivo: "Como você se chama?" / "Eu me chamo Elena."',
       '"Levantar-se" → acción reflexiva: "Eu me levanto às 6h da manhã todos os dias."',
       '"Sentar-se" → acción reflexiva: "Sente-se, por favor." / "Ela se sentou na cadeira."',
       '"Lembrar-se de" → recuerdo: "Você se lembra do meu nome?" / "Eu não me lembro."',
@@ -67,6 +67,32 @@ const topic: GrammarTopic = {
       paragraphs: [
         'En las oraciones negativas, la estructura es: não + pronombre reflexivo + verbo: "Eu não me lembro do seu nome." / "Ela não se sentou." La posición del pronombre no cambia en la negación en el portugués brasileño.',
         'En preguntas, el orden es el mismo que en afirmativas: "Você se lembra do aniversário?" / "Como você se chama?" En el habla cotidiana brasileña, el orden de palabras es muy flexible.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los pronombres reflexivos en portugués?',
+      paragraphs: [
+        'Son cinco formas que concuerdan con el sujeto: me, te, se, nos y se (plural). En Brasil se colocan normalmente delante del verbo. Esta tabla muestra la conjugación de un verbo reflexivo modelo:',
+      ],
+      table: [
+        ['Persona', 'Pronombre', 'levantar-se'],
+        ['eu', 'me', 'eu me levanto'],
+        ['tu', 'te', 'tu te levantas'],
+        ['você/ele/ela', 'se', 'ele se levanta'],
+        ['nós', 'nos', 'nós nos levantamos'],
+        ['vocês/eles/elas', 'se', 'eles se levantam'],
+      ],
+    },
+    {
+      heading: '¿El pronombre reflexivo va antes o después del verbo en portugués?',
+      paragraphs: [
+        'En el portugués brasileño va antes del verbo en casi todos los casos: "Eu me levanto", "Ela se chama", "Nós nos preparamos". La forma con guion pospuesta ("Levanto-me", "Chama-se") es típica del portugués europeo y de la escritura formal. Como aquí enseñamos la variante brasileña, la regla práctica es: pronombre delante del verbo, salvo en el imperativo afirmativo de cortesía, donde sí se pospone ("Sente-se, por favor"). El error de decir "eu se levanto" viene de no concordar el pronombre: debe ser "me" para eu.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "me llamo" en portugués?',
+      paragraphs: [
+        'Se dice "eu me chamo" + nombre: "Eu me chamo Ana". El verbo es reflexivo (chamar-se), así que necesita el pronombre "me"; decir solo "eu chamo Ana" significaría "yo llamo a Ana" (a otra persona). Para preguntar el nombre se usa "Como você se chama?" o, más informal, "Qual é o seu nome?". La respuesta también puede ser "Meu nome é Ana", equivalente y muy común.',
       ],
     },
   ],
@@ -128,14 +154,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El accidente',
-            lines: [['David', 'Ele ___ ao cair da bicicleta.']],
+            lines: [['Iván', 'Ele ___ ao cair da bicicleta.']],
             options: ['se machucou', 'machucou', 'me machucou', 'nos machucou'],
             answer: 'se machucou',
             explain: '"Machucar-se": ele se machucou (él se lastimó). Pronombre reflexivo de 3ª: se.',
           },
           {
             scene: 'La fiesta',
-            lines: [['Zhanna', 'Nós ___ muito na festa de aniversário.']],
+            lines: [['Elena', 'Nós ___ muito na festa de aniversário.']],
             options: ['nos divertimos', 'divertimos', 'se divertimos', 'me divertimos'],
             answer: 'nos divertimos',
             explain: '"Divertir-se": nós nos divertimos. Pronombre reflexivo de 1ª plural: nos.',

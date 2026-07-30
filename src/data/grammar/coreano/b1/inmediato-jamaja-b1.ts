@@ -49,14 +49,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-자마자 vs -고 나서 (intervalo)',
+      heading: '¿Cuál es la diferencia entre -자마자 y -고 나서?',
       paragraphs: [
         '-자마자: "tan pronto como X, Y" (inmediato). 학교 와자마자 밥을 먹었어요 (tan pronto llegué a la escuela, comí).',
         '-고 나서: "después de X, Y" (con posible intervalo). 학교 오고 나서 밥을 먹었어요 (después de llegar a la escuela, comí — hay intervalo). Diferencia clara: -자마자 es rapidísimo; -고 나서 permite tiempo.',
       ],
     },
     {
-      heading: 'Con verbos en pasado: -자마자 siempre pasado',
+      heading: '¿Cómo se usa -자마자 con el tiempo pasado?',
       paragraphs: [
         '-자마자 se usa principalmente en narrativa pasada: "왔자마자", "했자마자", "들었자마자". Raramente con presente/futuro porque implica sucesión instantánea que ya ocurrió.',
         'Ejemplo: "도착했자마자 폭우가 내리기 시작했어요" (tan pronto llegué, comenzó una lluvia torrencial). Narrativa de sucesos consecutivos rápidos.',
@@ -117,7 +117,7 @@ const topic: GrammarTopic = {
         intro: 'Completa narrativa con sucesión inmediata.',
         type: 'guidedText',
         scene: 'Recuento de eventos rápidos.',
-        text: '학교에 도착하___ 비가 내리기 시작했어요. 강의가 끝나___ 모두 나갔어요. 핸드폰이 울리___ 받았어요.',
+        text: '학교에 도착하[[0]] 비가 내리기 시작했어요. 강의가 끝나[[1]] 모두 나갔어요. 핸드폰이 울리[[2]] 받았어요.',
         blanks: [
           { options: ['자마자', '고 나서'], answer: '자마자', explain: '-자마자 para inmediato.' },
           { options: ['자마자', '고 나서'], answer: '자마자', explain: '-자마자 para sucesión rápida.' },

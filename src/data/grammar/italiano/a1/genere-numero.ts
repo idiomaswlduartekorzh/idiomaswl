@@ -44,17 +44,49 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Género en italiano: masculino y femenino',
+      heading: 'Género en italiano: cómo reconocerlo por la terminación',
       paragraphs: [
-        'En italiano, todos los sustantivos tienen género gramatical: masculino o femenino. La terminación es la pista principal: los sustantivos en -o son generalmente masculinos (il libro, il ragazzo) y los en -a son generalmente femeninos (la casa, la ragazza). Los en -e pueden ser de cualquier género (il cane = el perro, la notte = la noche) y hay que aprenderlos con su artículo.',
-        'El truco más eficaz para aprender el género es memorizar siempre el sustantivo con su artículo: no "libro" sino "il libro", no "casa" sino "la casa". Si memorizas el artículo desde el principio, el género queda fijado automáticamente.',
+        'Todos los sustantivos italianos tienen género (masculino o femenino) y la terminación es la mejor pista. Los en -o suelen ser masculinos y los en -a femeninos; los en -e pueden ser de cualquiera de los dos y hay que aprenderlos con su artículo. Estas terminaciones te dan el género casi siempre:',
+      ],
+      table: [
+        ['Terminación', 'Género típico', 'Ejemplo'],
+        ['-o', 'masculino', 'il libro, il gatto'],
+        ['-a', 'femenino', 'la casa, la ragazza'],
+        ['-e', 'masc. o fem. (aprender con artículo)', 'il cane / la notte'],
+        ['-zione, -sione', 'femenino', 'la stazione, la decisione'],
+        ['-ore', 'masculino', 'il colore, il dottore'],
       ],
     },
     {
       heading: 'El plural en italiano: tres patrones principales',
       paragraphs: [
-        'El plural sigue tres patrones regulares: sustantivos en -o cambian a -i (libro → libri, gatto → gatti), sustantivos en -a cambian a -e (casa → case, ragazza → ragazze), y sustantivos en -e cambian a -i (cane → cani, notte → notti). Este sistema es más regular que el español, donde hay muchas variantes.',
-        'Las excepciones más frecuentes en A1: sustantivos invariables (il film → i film, la città → le città), palabras de origen griego en -ma que son masculinas (il problema → i problemi, il tema → i temi), y la famosa "mano" que es femenino aunque termina en -o (la mano → le mani).',
+        'El plural italiano es más regular que el español: se cambia la vocal final según tres patrones. Lo importante es que el plural NO se hace con -s (error típico del hispanohablante): "due libri", no "due libros".',
+      ],
+      table: [
+        ['Singular termina en…', 'Plural', 'Ejemplo'],
+        ['-o (masc.)', '-i', 'libro → libri'],
+        ['-a (fem.)', '-e', 'casa → case'],
+        ['-e (masc. o fem.)', '-i', 'cane → cani, notte → notti'],
+        ['-ca / -ga (fem.)', '-che / -ghe', 'amica → amiche'],
+        ['-co / -go (masc.)', '-chi/-ci', 'amico → amici, gioco → giochi'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el plural en italiano?',
+      paragraphs: [
+        'Cambiando la vocal final, no añadiendo -s. Los sustantivos en -o pasan a -i (libro → libri), los en -a pasan a -e (casa → case) y los en -e pasan a -i (cane → cani). El artículo también cambia: il → i, la → le, lo/l\' → gli.',
+      ],
+    },
+    {
+      heading: '¿Cómo saber si un sustantivo italiano es masculino o femenino?',
+      paragraphs: [
+        'Por la terminación en la mayoría de casos: -o → masculino, -a → femenino. Los en -e pueden ser de cualquier género, así que conviene memorizarlos con su artículo (il cane, la notte). Terminaciones como -zione y -sione son femeninas; -ore es masculina. El mejor hábito es aprender cada palabra con su artículo desde el principio.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las excepciones de plural más comunes?',
+      paragraphs: [
+        'Invariables (no cambian): il film → i film, la città → le città, il bar → i bar. De origen griego en -ma, masculinos: il problema → i problemi, il tema → i temi. Y la clásica "la mano" (femenino aunque acabe en -o) → le mani. El uovo es masculino en singular y femenino en plural: l\'uovo → le uova.',
       ],
     },
   ],
@@ -81,7 +113,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Libros',
-            lines: [['David', 'Ho molti ___ di italiano.']],
+            lines: [['Enzo', 'Ho molti ___ di italiano.']],
             options: ['libri', 'libros', 'libre', 'libra'],
             answer: 'libri',
             explain: 'libro (-o masc) → libri (-i). Plural regular.',
@@ -102,7 +134,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Estudiantes',
-            lines: [['Zhanna', 'Gli ___ di italiano sono molto bravi.']],
+            lines: [['Alba', 'Gli ___ di italiano sono molto bravi.']],
             options: ['studenti', 'studentes', 'studenta', 'studentis'],
             answer: 'studenti',
             explain: 'studente (-e masc) → studenti (-i).',
@@ -110,7 +142,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Noches',
             lines: [['Marco', 'Le ___ a Roma sono bellissime.']],
-            options: ['notti', 'notte', 'nottes', 'notti'],
+            options: ['notti', 'notte', 'nottes'],
             answer: 'notti',
             explain: 'notte (-e fem) → notti (-i). Fem en -e también hace -i.',
           },
@@ -130,7 +162,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ciudades',
-            lines: [['David', 'Le ___ italiane sono molto antiche.']],
+            lines: [['Enzo', 'Le ___ italiane sono molto antiche.']],
             options: ['città', 'cità', 'cittàs', 'cittàe'],
             answer: 'città',
             explain: 'Città es invariable: singular y plural son iguales. Le città.',

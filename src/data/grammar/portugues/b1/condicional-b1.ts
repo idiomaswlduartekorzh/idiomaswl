@@ -56,7 +56,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Los tres verbos irregulares del condicional',
+      heading: '¿Cuáles son los verbos irregulares del condicional en portugués?',
       paragraphs: [
         'Solo tres verbos tienen raíz irregular en el condicional, y son los mismos que en español (haría/haré → har-). En portugués: dizer → diria (decir), fazer → faria (hacer), trazer → traria (traer). Estos verbos pierden las últimas sílabas del infinitivo.',
         'Hay un cuarto verbo que merece atención: "poder" en el condicional es "poderia" (regular), y "querer" es "quereria" (también regular). No son irregulares como en español (podría, querría).',
@@ -71,7 +71,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Usos del condicional en portugués',
+      heading: '¿Cuándo se usa el condicional en portugués?',
       paragraphs: [
         'Hipótesis irreal: en combinación con "se + imperfeito do conjuntivo". "Se eu tivesse mais tempo, aprenderia piano." (Si tuviera más tiempo, aprendería piano). Esta es la estructura condicional más importante en B1.',
         'Cortesía: para peticiones y sugerencias educadas. "Poderia falar mais devagar?" (¿Podría hablar más despacio?). "Gostaria de reservar uma mesa para dois." (Me gustaría reservar una mesa para dos). "Queria pedir a conta, por favor." En este último caso, el imperfeito ("queria") suena más natural que el condicional en portugués europeo.',
@@ -174,7 +174,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Preferencia hipotética',
             lines: [['', 'Nós preferia___ ficar em casa esta noite.']],
-            options: ['preferiríamos', 'preferíamos', 'preferimos', 'preferimos'],
+            options: ['preferiríamos', 'preferíamos', 'preferimos'],
             answer: 'preferiríamos',
             explain: '"Preferir" condicional: preferir + -íamos = preferiríamos (nós). Acento en la sílaba tónica.',
           },

@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         'All + plural (todo el grupo): "All students must attend." / "All the information is here." Each + singular (énfasis individual): "Each student has a different learning style." Every + singular (énfasis colectivo): "Every student in the class improved." La diferencia entre each y every es sutil: each enfatiza los individuos por separado; every enfatiza el grupo completo.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "much", "many" y "a lot of"?',
+      paragraphs: [
+        '"much" con incontables ("much money"), "many" con contables plurales ("many people"), sobre todo en preguntas y negaciones. En afirmativas se prefiere "a lot of", que sirve para ambos ("a lot of money", "a lot of friends").',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "too", "too much/many" y "enough"?',
+      paragraphs: [
+        '"too" + adjetivo = demasiado ("too expensive"). "too much" + incontable / "too many" + contable = demasiado/s ("too much sugar", "too many cars"). "enough" = suficiente, va antes del sustantivo ("enough time") pero después del adjetivo ("big enough").',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "few/little" y "a few/a little"?',
+      paragraphs: [
+        '"a few" (contable) y "a little" (incontable) tienen sentido positivo: "algunos, un poco" ("a few friends", "a little time"). Sin "a", "few" y "little" tienen sentido negativo: "casi ninguno, casi nada" ("few people came", "little hope").',
+      ],
+    },
   ],
 
   visual: {
@@ -185,7 +203,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Opciones de transporte',
-            lines: [['', '___ of the buses arrive on time — there isn\'t ___ we can do about it.']],
+            lines: [['', '[[0]] of the buses arrive on time — there isn\'t [[1]] we can do about it.']],
             blanks: [
               { options: ['Few', 'A few', 'Little', 'A little'], answer: 'Few', explain: '"buses" es contable → Few (casi ninguno, negativo): Few buses arrive on time.' },
               { options: ['much', 'many', 'few', 'a few'], answer: 'much', explain: '"There isn\'t much we can do" → much en negación con incontable (thing/action).' },
@@ -193,7 +211,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Planes del fin de semana',
-            lines: [['', 'I have ___ things to do this weekend. There is ___ too much to finish in two days.']],
+            lines: [['', 'I have [[0]] things to do this weekend. There is [[1]] too much to finish in two days.']],
             blanks: [
               { options: ['too many', 'too much', 'many', 'a lot'], answer: 'too many', explain: '"things" es contable → too many things (exceso: demasiadas cosas).' },
               { options: ['just', 'very', 'quite', 'rather'], answer: 'just', explain: '"just too much" = simplemente demasiado. Intensifica la afirmación.' },
@@ -201,7 +219,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Decisión entre dos opciones',
-            lines: [['', '___ the online course and the in-person class are good, but ___ option fits my schedule perfectly.']],
+            lines: [['', '[[0]] the online course and the in-person class are good, but [[1]] option fits my schedule perfectly.']],
             blanks: [
               { options: ['Both', 'Either', 'Neither', 'All'], answer: 'Both', explain: '"Both...are good" = las dos opciones son buenas. Both + plural para dos elementos.' },
               { options: ['neither', 'either', 'both', 'no'], answer: 'neither', explain: '"Neither option fits" = ninguna de las dos. Neither + singular (negativo de both).' },

@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "¿Qué es el gérondif en francés y cómo se forma?",
+      heading: '¿Qué es el gérondif en francés y cómo se forma?',
       paragraphs: [
         "El gérondif es una construcción verbal francesa formada por la preposición 'en' seguida del participe présent (en + -ant). El participe présent se forma tomando el radical de la primera persona del plural del presente (nous) y añadiendo -ant: nous parlons → parlant → en parlant. Esta forma es completamente invariable: no cambia según el género, número ni persona.",
         "Solo hay tres formas irregulares: être → étant, avoir → ayant, savoir → sachant. Todos los demás verbos, incluyendo los verbos en -ir, -re y -oir, siguen la regla regular: nous finissons → finissant, nous prenons → prenant, nous savons → sachant. Aprendidos estos tres irregulares, el resto es completamente predecible.",
       ],
     },
     {
-      heading: "Usos principales del gérondif: simultaneidad, manera y condición",
+      heading: '¿Para qué se usa el gérondif en francés?',
       paragraphs: [
         "El uso más común del gérondif es expresar simultaneidad: dos acciones realizadas al mismo tiempo por el mismo sujeto. 'Il écoute de la musique en travaillant' (Escucha música mientras trabaja). También expresa la manera o modo de realizar una acción: 'Elle est entrée en souriant' (Entró sonriendo). Aquí el gérondif describe cómo se realizó la acción principal.",
         "También puede expresar condición (equivalente a 'si'): 'En arrivant tôt, tu auras une bonne place' (Si llegas temprano, tendrás un buen asiento). Y puede expresar causa: 'Il s'est blessé en tombant' (Se lastimó al caerse). La variante 'tout en + gérondif' añade un matiz de oposición o contraste: 'Tout en comprenant tes raisons, je ne suis pas d'accord' (Aunque entiendo tus razones, no estoy de acuerdo).",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Diferencia entre gérondif y participe présent",
+      heading: '¿Cuál es la diferencia entre gérondif y participe présent?',
       paragraphs: [
         "Una confusión frecuente es entre el gérondif (en + -ant) y el participe présent (solo -ant). El participe présent puede modificar un sustantivo (como un adjetivo): 'une femme souriante' (una mujer sonriente), 'des étudiants travaillant dur' (estudiantes que trabajan duro). El gérondif, en cambio, siempre va precedido de 'en' y modifica el verbo principal.",
         "Otra diferencia clave: el participe présent puede tener un sujeto diferente al del verbo principal en construcciones absolutas, mientras que el gérondif siempre comparte sujeto con el verbo principal. 'Le soleil se couchant, nous sommes rentrés' (Participe présent — el sol se pone, nosotros entramos: sujetos distintos). 'Nous sommes rentrés en voyant le soleil se coucher' (Gérondif — nosotros somos el sujeto de ambas acciones).",

@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cuándo usar el subjonctif présent en francés',
+      heading: '¿Cuándo se usa el subjonctif présent en francés?',
       paragraphs: [
         'El subjonctif aparece obligatoriamente después de ciertas conjunciones y expresiones: necesidad (il faut que, il est nécessaire que), voluntad (vouloir que, souhaiter que, désirer que), emoción (être heureux/triste/surpris que, avoir peur que) y duda (douter que, ne pas croire que). Siempre hay dos sujetos diferentes: uno en la oración principal y otro en la cláusula con que.',
         'Si los dos verbos tienen el mismo sujeto, se usa el infinitivo en lugar del subjonctif: "Je veux partir" (yo quiero irme yo) vs "Je veux que tu partes" (yo quiero que tú te vayas).',
       ],
     },
     {
-      heading: 'Formación del subjonctif: raíz de ils + terminaciones',
+      heading: '¿Cómo se forma el subjonctif présent en francés?',
       paragraphs: [
         'Para verbos regulares, toma la forma "ils" del présent indicatif, quita -ent, y añade: -e, -es, -e, -ions, -iez, -ent. Ejemplo con parler: ils parlent → parl- → que je parle, que tu parles, qu\'il parle, que nous parlions, que vous parliez, qu\'ils parlent. El truco: "nous" y "vous" son iguales al imparfait indicatif.',
         'Los irregulares más importantes: être → que je sois, que tu sois, qu\'il soit; avoir → que j\'aie, que tu aies, qu\'il ait; aller → que j\'aille, que tu ailles, qu\'il aille; faire → que je fasse; pouvoir → que je puisse; vouloir → que je veuille.',
+      ],
+    },
+    {
+      heading: '¿Qué expresiones exigen subjonctif en francés?',
+      paragraphs: [
+        'El subjonctif aparece tras expresiones de voluntad, emoción, duda, necesidad y ciertas conjunciones, casi siempre con la estructura "… que + sujeto distinto": vouloir que, il faut que, être content que, avoir peur que, bien que, pour que, avant que, à condition que. "Il faut que tu viennes", "Je veux que tu saches", "Bien qu\'il soit tard…". Si el sujeto es el mismo, se usa infinitivo, no subjonctif ("Je veux venir", no "que je vienne"). Es el mismo reparto del español (quiero venir / quiero que vengas), así que la intuición ayuda; lo nuevo son las formas francesas irregulares (que je sois, que j\'aie, que je fasse, que j\'aille, que je puisse).',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa lo que dice el profesor usando subjonctif.',
         type: 'guidedText',
         scene: 'Le professeur parle à ses étudiants avant l\'examen.',
-        text: 'Il faut que vous [[0]] attentifs pendant l\'examen. Il est important que chacun [[1]] son propre travail. Je veux que vous [[0]] le temps de relire. Il faut aussi que vous [[2]] vos téléphones. Et je souhaite que tout le monde [[1]] de son mieux.',
+        text: 'Il faut que vous [[0]] attentifs pendant l\'examen. Il est important que chacun [[1]] son propre travail. Je veux que vous [[2]] le temps de relire. Il faut aussi que vous [[3]] vos téléphones. Et je souhaite que tout le monde [[4]] de son mieux.',
         blanks: [
           { options: ['soyez', 'êtes', 'seriez', 'serez'], answer: 'soyez', explain: '"que vous soyez / que vous preniez" — être: soyez. prendre: que vous preniez.' },
           { options: ['fasse', 'fait', 'ferait', 'fera'], answer: 'fasse', explain: '"que chacun fasse / que tout le monde fasse" — faire irregular: fasse (3ª sg).' },
@@ -183,7 +189,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta del subjonctif présent.',
         type: 'freeText',
         scene: 'Complétez avec le subjonctif présent.',
-        text: 'Il faut que je ___ (avoir) le temps. / Je souhaite que tu ___ (être) heureux. / Il est nécessaire qu\'elle ___ (aller) à la réunion. / Il faut que nous ___ (faire) attention.',
+        text: 'Il faut que je [[0]] (avoir) le temps. / Je souhaite que tu [[1]] (être) heureux. / Il est nécessaire qu\'elle [[2]] (aller) à la réunion. / Il faut que nous [[3]] (faire) attention.',
         blanks: [
           { answer: 'aie', explain: '"que j\'aie" — avoir irregular: aie (je).' },
           { answer: 'sois', explain: '"que tu sois" — être irregular: sois (tu).' },

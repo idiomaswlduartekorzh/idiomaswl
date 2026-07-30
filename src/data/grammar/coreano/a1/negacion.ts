@@ -46,14 +46,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La negación en coreano: 안 y 못',
+      heading: '¿Cómo se niega en coreano (안 y 못)?',
       paragraphs: [
         'El coreano tiene dos formas básicas de negar una acción en el presente: 안 (an) y 못 (mot), que se colocan inmediatamente antes del verbo. A diferencia del español donde la negación ("no") va antes del verbo sin distinción de significado, el coreano distingue entre no hacer algo por voluntad propia (안) y no poder hacerlo por incapacidad (못).',
         '안 먹어요 = "no como" (por decisión, no tengo hambre, no quiero). 못 먹어요 = "no puedo comer" (soy alérgico, estoy enfermo, no hay tiempo). Esta distinción es fundamental y cambia completamente el significado.',
       ],
     },
     {
-      heading: 'Posición de 안 y 못 con verbos 하다',
+      heading: '¿Dónde se colocan 안 y 못 con los verbos 하다?',
       paragraphs: [
         'Con verbos formados por sustantivo + 하다 (공부하다, 운동하다, 요리하다, etc.), 안 y 못 van entre el sustantivo y 하다, no antes del sustantivo: 공부 안 해요 ✓ (no estudio), 안 공부해요 ✗.',
         'Esta regla tiene lógica: 공부(estudio) es el contenido de lo que no se hace, y 안/못 niegan el acto de hacer (해요). Por eso van antes del hacer: "공부 안 해요" = "estudio no-hago".',
@@ -74,7 +74,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La forma larga: 지 않아요',
+      heading: '¿Qué es la negación larga 지 않아요 en coreano?',
       paragraphs: [
         'Existe una forma más larga y formal para negar: verbo + 지 않아요. Equivale a 안 + verbo en significado pero es más formal y enfática: 먹지 않아요 = 안 먹어요 (no como); 가지 않아요 = 안 가요 (no voy). En A1 es suficiente conocerla como reconocimiento pasivo — en producción activa usa 안/못.',
         'Para 못, la forma larga es: verbo + 지 못해요: 먹지 못해요 = 못 먹어요 (no puedo comer). También existen para enfatizar imposibilidad.',
@@ -144,14 +144,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Adjetivo',
-            lines: [['David', '오늘 날씨가 ___ 좋아요. (El tiempo hoy no está bien.)']],
+            lines: [['Dario', '오늘 날씨가 ___ 좋아요. (El tiempo hoy no está bien.)']],
             options: ['안', '못', '이', '를'],
             answer: '안',
             explain: 'Con adjetivos → solo 안. 안 좋아요 = no está bien.',
           },
           {
             scene: 'Posición de 안',
-            lines: [['Zhanna', '¿Cómo se dice "No estudio" con 하다?']],
+            lines: [['Sara', '¿Cómo se dice "No estudio" con 하다?']],
             options: ['공부 안 해요', '안 공부해요', '공부해요 안', '공부 안해요'],
             answer: '공부 안 해요',
             explain: 'Con 하다: [sustantivo] + 안 + 해요. 공부 안 해요.',
@@ -175,9 +175,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Rechazando una invitación',
             lines: [
-              ['Lina', '오늘 같이 밥 먹을래요? (¿Quieres comer juntos hoy?)'],
-              ['Marco', '미안해요, 오늘은 [[0]] [[1]]. 약속이 있어요. (Lo siento, hoy no puedo. Tengo un compromiso.)'],
-            ],
+ ['Lina', '오늘 같이 밥 먹을래요? (¿Quieres comer juntos hoy?)'],
+ ['Marco', '미안해요, 오늘은 [[0]] [[1]]. 약속이 있어요. (Lo siento, hoy no puedo. Tengo un compromiso.)'],
+ ],
             blanks: [
               { options: ['못', '안', '이', '에'], answer: '못', explain: 'Imposibilidad por compromiso → 못.' },
               { options: ['가요', '먹어요', '해요', '있어요'], answer: '먹어요', explain: '못 먹어요 = no puedo comer (hoy).' },
@@ -186,9 +186,9 @@ const topic: GrammarTopic = {
           {
             scene: 'No estudiar por decisión',
             lines: [
-              ['Zhanna', '오늘 공부해요? (¿Estudias hoy?)'],
-              ['Carlos', '오늘은 공부 [[0]] [[1]]. 쉬고 싶어요. (Hoy no estudio. Quiero descansar.)'],
-            ],
+ ['Sara', '오늘 공부해요? (¿Estudias hoy?)'],
+ ['Carlos', '오늘은 공부 [[0]] [[1]]. 쉬고 싶어요. (Hoy no estudio. Quiero descansar.)'],
+ ],
             blanks: [
               { options: ['안', '못', '이', '에'], answer: '안', explain: 'Decisión de no estudiar → 안.' },
               { options: ['해요', '가요', '있어요', '마셔요'], answer: '해요', explain: '공부 안 해요. Con 하다: 안 antes de 해요.' },
@@ -197,9 +197,9 @@ const topic: GrammarTopic = {
           {
             scene: 'No hablar coreano todavía',
             lines: [
-              ['Turista', '한국어 해요? (¿Hablas coreano?)'],
-              ['Ana', '아직 한국어를 [[0]] [[1]]. 배우는 중이에요. (Todavía no puedo hablar coreano. Lo estoy aprendiendo.)'],
-            ],
+ ['Turista', '한국어 해요? (¿Hablas coreano?)'],
+ ['Ana', '아직 한국어를 [[0]] [[1]]. 배우는 중이에요. (Todavía no puedo hablar coreano. Lo estoy aprendiendo.)'],
+ ],
             blanks: [
               { options: ['못', '안', '이', '에'], answer: '못', explain: 'Todavía no poder → 못 (incapacidad actual).' },
               { options: ['해요', '가요', '있어요', '먹어요'], answer: '해요', explain: '한국어를 못 해요 = no puedo hablar coreano.' },
@@ -208,9 +208,9 @@ const topic: GrammarTopic = {
           {
             scene: 'No gustarle algo',
             lines: [
-              ['David', '커피 마셔요? (¿Bebes café?)'],
-              ['Sofia', '아니요, 커피를 [[0]] [[1]]. 차를 좋아해요. (No, no bebo café. Me gusta el té.)'],
-            ],
+ ['Dario', '커피 마셔요? (¿Bebes café?)'],
+ ['Sofia', '아니요, 커피를 [[0]] [[1]]. 차를 좋아해요. (No, no bebo café. Me gusta el té.)'],
+ ],
             blanks: [
               { options: ['안', '못', '이', '에'], answer: '안', explain: 'No beber por gusto/preferencia → 안.' },
               { options: ['마셔요', '먹어요', '가요', '해요'], answer: '마셔요', explain: '커피를 안 마셔요. 안 antes del verbo.' },

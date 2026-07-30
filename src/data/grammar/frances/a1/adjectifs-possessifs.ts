@@ -11,7 +11,7 @@ const topic: GrammarTopic = {
   metaTitle: 'Adjetivos posesivos en francés A1 — mon, ma, mes, ton, ta, tes, son, sa, ses',
   description:
     'Los adjetivos posesivos en francés (mon/ma/mes, ton/ta/tes, son/sa/ses…) concuerdan con el objeto poseído, NO con el poseedor. Esto es diferente al español: "son père" puede ser "su padre" tanto de él como de ella.',
-  lead: 'El posesivo en francés no sigue al poseedor — sigue al objeto. "Son frère" puede ser el hermano de David O de Zhanna. El género del objeto decide la forma.',
+  lead: 'El posesivo en francés no sigue al poseedor — sigue al objeto. "Son frère" puede ser el hermano de Tomás O de Elena. El género del objeto decide la forma.',
   outcomes: [
     'Usa los posesivos de las tres personas del singular (mon/ma/mes, ton/ta/tes, son/sa/ses)',
     'Aplica notre/nos, votre/vos, leur/leurs correctamente',
@@ -54,7 +54,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Los posesivos del singular: mon/ma/mes, ton/ta/tes, son/sa/ses',
+      heading: '¿Cómo son los posesivos del singular en francés (mon/ma/mes)?',
       paragraphs: [
         'Para las tres primeras personas del singular, el posesivo tiene tres formas: masculino singular, femenino singular y plural. Por ejemplo: "mon livre" (mi libro, masc.), "ma sœur" (mi hermana, fem.), "mes amis" (mis amigos, pl.).',
         'La forma plural (mes/tes/ses) se usa tanto para masculino como para femenino plural: "mes frères" y "mes sœurs" usan ambos "mes".',
@@ -74,7 +74,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Notre/nos, votre/vos, leur/leurs',
+      heading: '¿Cómo son los posesivos del plural en francés (notre/votre/leur)?',
       paragraphs: [
         'Para la primera y segunda personas del plural (nosotros, vosotros), el posesivo tiene solo dos formas: singular (notre/votre) y plural (nos/vos). "Notre maison" (nuestra casa), "nos amis" (nuestros amigos), "votre professeur" (su/vuestro profesor), "vos livres" (sus/vuestros libros).',
         '"Leur" (tercera persona plural) también tiene dos formas: "leur" para singular y "leurs" para plural del objeto: "leur chien" (su perro — de ellos), "leurs enfants" (sus hijos — de ellos).',
@@ -108,8 +108,8 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David presenta a su familia',
-            lines: [['David', '___ mère s\'appelle Carmen. (yo)']],
+            scene: 'Tomás presenta a su familia',
+            lines: [['Tomás', '___ mère s\'appelle Carmen. (yo)']],
             options: ['Ma', 'Mon', 'Mes', 'Sa'],
             answer: 'Ma',
             explain: '"Mère" es femenino singular. Poseedor = yo → "ma". (No empieza por vocal.)',
@@ -122,8 +122,8 @@ const topic: GrammarTopic = {
             explain: '"Ami" empieza por vocal → aunque es masc., usamos "mon". Además, "ami" ya es masc. → mon.',
           },
           {
-            scene: 'Zhanna habla de Ana',
-            lines: [['Zhanna', 'Ana aime ___ cours de français. (ella)']],
+            scene: 'Elena habla de Ana',
+            lines: [['Elena', 'Ana aime ___ cours de français. (ella)']],
             options: ['ses', 'son', 'sa', 'leur'],
             answer: 'ses',
             explain: '"Cours" es plural → "ses". Poseedor = ella (son/sa/ses).',
@@ -150,8 +150,8 @@ const topic: GrammarTopic = {
             explain: '"Professeur" es singular. Poseedor = nosotras (nous) → "notre".',
           },
           {
-            scene: 'David habla de los estudiantes',
-            lines: [['David', 'Les étudiants ont fini ___ exercices. (ellos)']],
+            scene: 'Tomás habla de los estudiantes',
+            lines: [['Tomás', 'Les étudiants ont fini ___ exercices. (ellos)']],
             options: ['leurs', 'leur', 'ses', 'nos'],
             answer: 'leurs',
             explain: '"Exercices" es plural. Poseedor = ellos (ils) → "leurs".',
@@ -181,8 +181,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna habla de David',
-            lines: [['Zhanna', '[[0]] méthode est unique et [[1]] cours sont excellents.']],
+            scene: 'Elena habla de Tomás',
+            lines: [['Elena', '[[0]] méthode est unique et [[1]] cours sont excellents.']],
             blanks: [
               { options: ['Sa', 'Son', 'Ses', 'Leur'], answer: 'Sa', explain: '"Méthode" es fem. sing., poseedor = él → "sa".' },
               { options: ['ses', 'son', 'sa', 'leurs'], answer: 'ses', explain: '"Cours" es masc. plural, poseedor = él → "ses".' },
@@ -210,10 +210,10 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Presentaciones en familia',
         tag: 'Texto guiado',
-        intro: 'David presenta a su familia. Elige el posesivo correcto para cada objeto poseído.',
+        intro: 'Tomás presenta a su familia. Elige el posesivo correcto para cada objeto poseído.',
         type: 'guidedText',
-        scene: 'David presenta a su familia en WeLearn. Elige el posesivo correcto en cada caso.',
-        text: 'Bonjour, je m\'appelle David. [[0]] famille est grande. [[1]] père s\'appelle Carlos et [[2]] mère s\'appelle Carmen. J\'ai une sœur — [[3]] sœur habite à Medellín. J\'ai aussi un frère — [[4]] frère est étudiant. [[5]] parents sont professeurs aussi. Et vous ? Comment s\'appelle [[6]] famille ?',
+        scene: 'Tomás presenta a su familia en WeLearn. Elige el posesivo correcto en cada caso.',
+        text: 'Bonjour, je m\'appelle Tomás. [[0]] famille est grande. [[1]] père s\'appelle Carlos et [[2]] mère s\'appelle Carmen. J\'ai une sœur — [[3]] sœur habite à Medellín. J\'ai aussi un frère — [[4]] frère est étudiant. [[5]] parents sont professeurs aussi. Et vous ? Comment s\'appelle [[6]] famille ?',
         blanks: [
           { options: ['Ma', 'Mon', 'Mes', 'Sa'], answer: 'Ma', explain: '"Famille" es fem. sing., poseedor = yo → "ma".' },
           { options: ['Mon', 'Ma', 'Mes', 'Son'], answer: 'Mon', explain: '"Père" es masc. sing., poseedor = yo → "mon".' },
@@ -231,7 +231,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el adjetivo posesivo correcto en cada espacio.',
         type: 'freeText',
         scene: 'Ana describe la clase de WeLearn. Escribe el posesivo correcto en cada hueco.',
-        text: 'Dans [[0]] classe (notre), il y a 12 étudiants. [[1]] professeur (notre) s\'appelle David. Chaque étudiant a [[2]] propre méthode (sa/leur — chaque étudiant). Sofia oublie souvent [[3]] cahier (son). Carlos n\'oublie jamais [[4]] devoirs (ses).',
+        text: 'Dans [[0]] classe (notre), il y a 12 étudiants. [[1]] professeur (notre) s\'appelle Tomás. Chaque étudiant a [[2]] propre méthode (sa/leur — chaque étudiant). Sofia oublie souvent [[3]] cahier (son). Carlos n\'oublie jamais [[4]] devoirs (ses).',
         blanks: [
           { answer: 'notre', accepted: ['notre', 'Notre'], explain: '"Classe" es sing., poseedor = nosotros → "notre".' },
           { answer: 'Notre', accepted: ['Notre', 'notre'], explain: '"Professeur" es sing., poseedor = nosotros → "notre".' },
@@ -262,9 +262,9 @@ const topic: GrammarTopic = {
             explain: '"Examen" es sing. → "notre"; "professeurs" es plural → "nos".',
           },
           {
-            scene: 'Sofia describe a Zhanna',
-            prompt: 'Di que Zhanna tiene su método propio y sus estudiantes la adoran.',
-            answer: 'Zhanna a sa propre méthode. Ses étudiants l\'adorent.',
+            scene: 'Sofia describe a Elena',
+            prompt: 'Di que Elena tiene su método propio y sus estudiantes la adoran.',
+            answer: 'Elena a sa propre méthode. Ses étudiants l\'adorent.',
             accepted: ['sa propre méthode', 'sa méthode', 'ses étudiants'],
             explain: '"Méthode" fem. sing. → sa. "Étudiants" plural → ses.',
           },

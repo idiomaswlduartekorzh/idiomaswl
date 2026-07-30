@@ -50,21 +50,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Verbos separables: una característica única del alemán',
+      heading: '¿Qué son los verbos separables en alemán?',
       paragraphs: [
         'Los verbos separables son una de las características más llamativas del alemán para hispanohablantes. Un verbo como "aufmachen" (abrir) se parte en dos partes en la frase: el verbo "macht" va en segunda posición y el prefijo "auf" salta al final: Ich mache die Tür auf.',
         'Los prefijos separables más frecuentes en A1 son: auf- (aufmachen, aufstehen, aufhören), an- (anrufen, anfangen, ankommen), ab- (abfahren, abholen), aus- (ausgehen, aussteigen), ein- (einkaufen, einschlafen), mit- (mitkommen, mitnehmen), zu- (zumachen, zuhören).',
       ],
     },
     {
-      heading: 'La regla del infinitivo con modales',
+      heading: '¿Cómo se usan los verbos separables con modales en alemán?',
       paragraphs: [
         'Cuando un verbo separable se combina con un verbo modal (können, müssen, wollen, etc.), el verbo separable aparece en infinitivo AL FINAL y NO se separa: Ich muss früh aufstehen. / Kannst du mich anrufen? / Wir wollen heute einkaufen.',
         'Esta es la diferencia clave: en una frase simple el prefijo se separa (Ich stehe auf), pero con modal el infinitivo queda completo al final (Ich muss aufstehen). El prefijo solo se separa cuando el verbo está conjugado y en segunda posición.',
       ],
     },
     {
-      heading: 'Cómo reconocer un verbo separable',
+      heading: '¿Cómo se reconoce un verbo separable en alemán?',
       paragraphs: [
         'No todos los prefijos son separables. Los prefijos SIEMPRE separables son: ab-, an-, auf-, aus-, bei-, ein-, los-, mit-, nach-, vor-, weg-, zu-, zurück-. Los prefijos NUNCA separables son: be-, emp-, ent-, er-, ge-, miss-, ver-, zer-. Por eso "besuchen" (visitar) no se separa: Ich besuche dich.',
         'Una pista práctica: si el acento recae en el prefijo al pronunciar el infinitivo, el verbo es separable: AUFmachen, ANrufen, EINkaufen (acento en el prefijo). Si el acento recae en la raíz, no es separable: beSUCHen, verSTEHen.',
@@ -120,7 +120,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La clase empieza puntual',
-            lines: [['Zhanna', 'Der Kurs ___ um 9 Uhr ___.']],
+            lines: [['Elena', 'Der Kurs ___ um 9 Uhr ___.']],
             options: ['fängt … an', 'anfängt … —', 'fangen … an', 'an … fängt'],
             answer: 'fängt … an',
             explain: '"Anfangen": "fängt" (er/sie/es, irregular) en 2ª posición, "an" al final.',
@@ -140,22 +140,22 @@ const topic: GrammarTopic = {
             explain: '"Einkaufen": "kaufe" en 2ª posición (el adverbio "samstags" ocupa posición 1), "ein" al final.',
           },
           {
-            scene: 'Marco invita a David a venir',
-            lines: [['Marco', 'David, ___ du ___?']],
+            scene: 'Marco invita a Enzo a venir',
+            lines: [['Marco', 'Enzo, ___ du ___?']],
             options: ['kommst … mit', 'mitkommst … —', 'kommen … mit', 'mit … kommst'],
             answer: 'kommst … mit',
             explain: '"Mitkommen": "kommst" en 2ª posición (pregunta Ja/Nein: verbo al inicio), "mit" al final.',
           },
           {
-            scene: 'David tiene que levantarse temprano',
-            lines: [['David', 'Ich muss früh ___.']],
+            scene: 'Enzo tiene que levantarse temprano',
+            lines: [['Enzo', 'Ich muss früh ___.']],
             options: ['aufstehen', 'stehe auf', 'stehen auf', 'auf stehen'],
             answer: 'aufstehen',
             explain: 'Con modal (muss), el infinitivo va completo al final SIN separar: "aufstehen".',
           },
           {
-            scene: 'Zhanna quiere llamar a un estudiante',
-            lines: [['Zhanna', 'Ich möchte Carlos ___.']],
+            scene: 'Elena quiere llamar a un estudiante',
+            lines: [['Elena', 'Ich möchte Carlos ___.']],
             options: ['anrufen', 'rufe an', 'an rufen', 'rufen an'],
             answer: 'anrufen',
             explain: 'Con modal (möchte), el infinitivo "anrufen" va completo al final, sin separar.',
@@ -209,7 +209,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige la forma correcta del verbo separable en cada hueco.',
         type: 'guidedText',
-        scene: 'David describe su rutina diaria.',
+        scene: 'Enzo describe su rutina diaria.',
         text: 'Mein Alltag: Ich [[0]] um 6 Uhr auf. (aufstehen) Dann [[1]] ich einen Kaffee. (aufmachen — la nevera) Ich [[2]] die E-Mails. (aufmachen) Um 9 Uhr [[3]] der Unterricht an. (anfangen) Nach der Arbeit [[4]] ich oft im Supermarkt. (einkaufen) Abends [[5]] ich manchmal Freunde. (anrufen) Und um 22 Uhr [[6]] ich ein. (einschlafen)',
         blanks: [
           { options: ['stehe', 'stehst', 'steht', 'stehen'], answer: 'stehe', explain: '"Ich" + aufstehen → "stehe" (posición 2), "auf" ya está al final en el texto.' },

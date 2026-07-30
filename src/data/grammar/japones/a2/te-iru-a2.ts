@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '〜ている: el presente continuo y los estados en japones',
+      heading: '¿Cómo expresa 〜ている el presente continuo y los estados?',
       paragraphs: [
         '〜ている (te-iru) es una de las construcciones mas utiles del japones A2. En su uso mas basico expresa una accion en progreso: 今、勉強しています = Estoy estudiando ahora. Se forma con la て形 del verbo seguida de います (formal) o いる (informal).',
         'Sin embargo, 〜ている tambien describe estados resultantes: 窓が開いています no significa "la ventana esta abriendose" sino "la ventana esta abierta" — es el resultado de haberse abierto. Esta doble funcion es clave para entender el japones natural.',
       ],
     },
     {
-      heading: 'Verbos de estado tipicos con 〜ている',
+      heading: '¿Qué verbos de estado se usan típicamente con 〜ている?',
       paragraphs: [
         'Algunos verbos del japones se usan casi siempre en 〜ている porque expresan estados: 知っています (se / conozco), 住んでいます (vivo en), 結婚しています (estoy casado), 着ています (llevo puesto), 持っています (tengo / llevo). Aprende estos verbos como frases hechas.',
         'La negacion de 〜ています es 〜ていません: 田中さんは結婚していません = Tanaka-san no esta casado. En japones informal, ている se contrae frecuentemente a てる: 食べてる = estoy comiendo.',
+      ],
+    },
+    {
+      heading: '¿Por qué 結婚している significa "estar casado" y no "casándose"?',
+      paragraphs: [
+        '〜ている tiene dos valores según el tipo de verbo. Con verbos de acción durativa expresa acción en curso, como el gerundio español: 食べています (estoy comiendo), 本を読んでいます (estoy leyendo). Pero con verbos de cambio instantáneo expresa el ESTADO RESULTANTE, no la acción: 結婚している = estar casado (resultado de casarse), 死んでいる = estar muerto, 知っている = saber (estado de conocer). Por eso 窓が開いている es "la ventana está abierta", no "se está abriendo". La trampa para el hispanohablante es traducir siempre ている por "estar -ndo": con verbos como 結婚する, 起きる, 来る, 持つ el sentido es el estado que queda tras el cambio. Además 知っている (sé) tiene un negativo irregular: 知りません (no sé), no 知っていません.',
       ],
     },
   ],
@@ -101,7 +107,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Estado resultante',
-            lines: [['David', 'ドアが___ (la puerta esta cerrada)']],
+            lines: [['Bruno', 'ドアが___ (la puerta esta cerrada)']],
             options: ['閉まっています', '閉まりました', '閉まります', '閉まっていません'],
             answer: '閉まっています',
             explain: '閉まる (shimaru) Gr.1: る→って → 閉まって + います. Estado: la puerta esta cerrada.',
@@ -136,14 +142,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Llevar puesto',
-            lines: [['Jose', '田中さんは赤いシャツを___ (Tanaka lleva una camisa roja)']],
+            lines: [['Diego', '田中さんは赤いシャツを___ (Tanaka lleva una camisa roja)']],
             options: ['着ています', '着ます', '着ていません', '着ました'],
             answer: '着ています',
             explain: '着る (kiru, Grupo 2): 着て + います = 着ています. Estado: lleva puesto.',
           },
           {
             scene: 'Pregunta progresiva',
-            lines: [['Zhanna', '今、何を___か？ (¿Que estas haciendo ahora?)']],
+            lines: [['Clara', '今、何を___か？ (¿Que estas haciendo ahora?)']],
             options: ['していますか', 'しますか', 'しましたか', 'してはいけません'],
             answer: 'していますか',
             explain: 'する → して + います + か = していますか. Pregunta progresiva.',
@@ -159,7 +165,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Conversacion en el cafe',
-            lines: [['Carlos', '今、何を[[0]]か？'], ['David', 'コーヒーを[[1]]。']],
+            lines: [['Carlos', '今、何を[[0]]か？'], ['Bruno', 'コーヒーを[[1]]。']],
             blanks: [
               { options: ['していますか', 'しますか', 'しましたか'], answer: 'していますか', explain: 'する→して + います + か. Pregunta progresiva.' },
               { options: ['飲んでいます', '飲みます', '飲みました'], answer: '飲んでいます', explain: '飲む (Gr.1): む→んで + います = 飲んでいます.' },

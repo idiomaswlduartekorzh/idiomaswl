@@ -58,10 +58,53 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Conjugación: terminaciones del condicional',
+      heading: 'Conjugación: terminaciones del condizionale',
       paragraphs: [
-        'Las terminaciones del condizionale son las mismas para todos los verbos: -rei, -resti, -rebbe, -remmo, -reste, -rebbero. La base es la misma que para el futuro simple. Para los regulares en -are se elimina la -e del infinitivo y se añade -ar-: parlare → parlar + ei = parlerei.',
-        'Los irregulares más frecuentes comparten la misma base irregular del futuro: essere→sar-, avere→avr-, volere→vorr-, potere→potr-, dovere→dovr-, andare→andr-. Con estas bases + las terminaciones del condicional se forman todos los irregulares.',
+        'Las terminaciones del condizionale son iguales para todos los verbos: -rei, -resti, -rebbe, -remmo, -reste, -rebbero. La raíz es la MISMA que la del futuro (parler-, sar-, vorr-), así que si sabes el futuro, el condicional es automático. Esta es la tabla con un regular y dos irregulares:',
+      ],
+      table: [
+        ['Persona', 'parlare', 'essere', 'volere'],
+        ['io', 'parlerei', 'sarei', 'vorrei'],
+        ['tu', 'parleresti', 'saresti', 'vorresti'],
+        ['lui/lei', 'parlerebbe', 'sarebbe', 'vorrebbe'],
+        ['noi', 'parleremmo', 'saremmo', 'vorremmo'],
+        ['voi', 'parlereste', 'sareste', 'vorreste'],
+        ['loro', 'parlerebbero', 'sarebbero', 'vorrebbero'],
+      ],
+    },
+    {
+      heading: 'Los irregulares del condizionale (misma raíz que el futuro)',
+      paragraphs: [
+        'Comparten la raíz irregular del futuro y añaden las terminaciones del condicional. Los más frecuentes:',
+      ],
+      table: [
+        ['Infinitivo', 'Raíz', 'io (condizionale)'],
+        ['essere', 'sar-', 'sarei'],
+        ['avere', 'avr-', 'avrei'],
+        ['andare', 'andr-', 'andrei'],
+        ['fare', 'far-', 'farei'],
+        ['venire', 'verr-', 'verrei'],
+        ['volere', 'vorr-', 'vorrei'],
+        ['potere', 'potr-', 'potrei'],
+        ['dovere', 'dovr-', 'dovrei'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el condicional presente en italiano?',
+      paragraphs: [
+        'Con la raíz del futuro + las terminaciones -rei, -resti, -rebbe, -remmo, -reste, -rebbero. Ejemplo con parlare: parlerei, parleresti, parlerebbe, parleremmo, parlereste, parlerebbero. Los -are cambian la a por e (parler-), igual que en el futuro.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el condizionale en italiano?',
+      paragraphs: [
+        'Para deseos ("vorrei un caffè"), peticiones educadas ("potresti aiutarmi?"), consejos ("dovresti riposare") e hipótesis ("sarebbe bello"). Es el tiempo de la cortesía: suaviza lo que en presente sonaría demasiado directo.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "voglio" y "vorrei"?',
+      paragraphs: [
+        '"Voglio" (quiero) es directo y puede sonar brusco al pedir algo; "vorrei" (quisiera / me gustaría) es la forma cortés y estándar en bares, tiendas y restaurantes. "Vorrei un cappuccino" es mucho más natural y educado que "Voglio un cappuccino".',
       ],
     },
   ],
@@ -112,7 +155,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El viaje',
-            lines: [['David', 'Io ___ tanto in Italia se potessi. (andare)']],
+            lines: [['Leo', 'Io ___ tanto in Italia se potessi. (andare)']],
             options: ['andrei', 'andrò', 'sono andato', 'vado'],
             answer: 'andrei',
             explain: 'Condizionale di andare: andrei (prima persona).',
@@ -140,7 +183,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Nosotros',
-            lines: [['Zhanna', 'Noi ___ più spesso insieme. (uscire)']],
+            lines: [['Elena', 'Noi ___ più spesso insieme. (uscire)']],
             options: ['usciremmo', 'usciamo', 'usciremo', 'siamo usciti'],
             answer: 'usciremmo',
             explain: 'Noi + condizionale di uscire: usciremmo.',
@@ -156,7 +199,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'En la tienda',
-            lines: [['Cliente', '[[0]] vorrei provare quella giacca. (io)']],
+            lines: [['Cliente', '[[0]] [[1]] provare quella giacca. (io)']],
             blanks: [
               { options: ['Io', 'Tu', 'Lei'], answer: 'Io', explain: 'Vorrei → primera persona → io.' },
               { options: ['vorrei', 'vorresti', 'vorrebbe'], answer: 'vorrei', explain: 'Io + condizionale di volere → vorrei.' },
@@ -164,7 +207,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El favor',
-            lines: [['Marco', '— [[0]] potresti farmi un favore? (tu)']],
+            lines: [['Marco', '— [[0]] [[1]] farmi un favore? (tu)']],
             blanks: [
               { options: ['Tu', 'Lei', 'Lui'], answer: 'Tu', explain: 'Potresti → segunda persona → tu.' },
               { options: ['potresti', 'potrebbe', 'potrei'], answer: 'potresti', explain: 'Tu + condizionale di potere → potresti.' },
@@ -172,7 +215,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El sueño de Sofia',
-            lines: [['Sofia', '[[0]] piacerebbe vivere a Parigi. (a me)']],
+            lines: [['Sofia', '[[0]] [[1]] vivere a Parigi. (a me)']],
             blanks: [
               { options: ['Mi', 'Ti', 'Gli'], answer: 'Mi', explain: 'A me → mi (pronome indiretto).' },
               { options: ['piacerebbe', 'piacerei', 'piaceremmo'], answer: 'piacerebbe', explain: 'Piacere → condizionale terza persona → piacerebbe.' },
@@ -180,7 +223,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El consejo',
-            lines: [['David', '[[0]] dovresti riposare di più. (tu)']],
+            lines: [['Leo', '[[0]] [[1]] riposare di più. (tu)']],
             blanks: [
               { options: ['Tu', 'Io', 'Voi'], answer: 'Tu', explain: 'Dovresti → segunda persona → tu.' },
               { options: ['dovresti', 'dovrei', 'dovrebbe'], answer: 'dovresti', explain: 'Tu + condizionale di dovere → dovresti.' },

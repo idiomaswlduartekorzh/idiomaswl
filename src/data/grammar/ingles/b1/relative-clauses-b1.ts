@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'En el Speaking, usar relative clauses de forma natural eleva tu Lexical Resource y Grammatical Range. En lugar de "I like the restaurant. The restaurant has good food." di "I like the restaurant that does the best arepas in town." O para añadir detalle: "My hometown, which is a small city in the Andes, is known for its coffee."',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre oraciones de relativo especificativas y explicativas?',
+      paragraphs: [
+        'Las especificativas (defining) identifican al sustantivo y NO llevan comas: "The man who called is my boss". Las explicativas (non-defining) añaden información extra entre comas: "My boss, who is very kind, called me". En las explicativas no se usa "that" ni se omite el relativo.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se puede omitir el pronombre relativo en inglés?',
+      paragraphs: [
+        'Solo en las especificativas y cuando el relativo es el objeto: "the book (that) I read". No se omite si es el sujeto ("the man who called") ni en las explicativas (con comas). Es una diferencia clave frente al español, que nunca omite "que".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "whose", "where" y "when" en las oraciones de relativo?',
+      paragraphs: [
+        '"whose" para posesión ("the woman whose car was stolen"), "where" para lugares ("the city where I was born") y "when" para tiempo ("the day when we met"). Sustituyen a "de quien", "donde" y "cuando".',
+      ],
+    },
   ],
 
   visual: {

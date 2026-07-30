@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "Depuis vs il y a: la distinción fundamental",
+      heading: '¿Cuál es la diferencia entre depuis e il y a en francés?',
       paragraphs: [
         "La confusión más común entre hispanohablantes es entre 'depuis' e 'il y a'. 'Depuis' se usa con el présent (o imparfait) para acciones que comenzaron en el pasado y continúan: 'J'habite à Paris depuis 2018' (Vivo en París desde 2018 — y sigo viviendo allí). 'Il y a' se usa con el passé composé para señalar un punto en el pasado: 'Je suis arrivé à Paris il y a cinq ans' (Llegué a París hace cinco años).",
         "Un truco para no confundirlos: si la acción sigue ocurriendo ahora, usa 'depuis' + présent. Si la acción ya terminó y quieres decir cuándo ocurrió, usa 'il y a' + passé composé. 'Il a commencé à travailler il y a un an' (acción puntual pasada) vs 'Il travaille ici depuis un an' (sigue trabajando, acción continua). En español coloquial usamos 'hace' para ambos, lo que crea la confusión.",
       ],
     },
     {
-      heading: "Pendant, en y pour: matices de duración",
+      heading: '¿Cómo se usan pendant, en y pour en francés?',
       paragraphs: [
         "Pendant (durante) indica la duración de una acción que ya terminó o que ocurre durante un período: 'J'ai travaillé pendant trois heures' (Trabajé durante tres horas). En (en) indica el tiempo necesario para completar algo con éxito: 'Elle a appris les conjugaisons en deux semaines' (Aprendió las conjugaciones en dos semanas — tiempo que tardó). Pour (por/para) indica una duración prevista, especialmente con verbos de movimiento: 'Je pars pour trois jours' (Me voy por tres días — tiempo previsto).",
         "La diferencia entre 'pendant' y 'en' es clave: 'pendant' focaliza en la duración de la actividad; 'en' focaliza en el tiempo que se tarda en completar un resultado. 'J'ai travaillé pendant deux heures' (trabajé dos horas, sin especificar resultado). 'J'ai terminé le projet en deux heures' (tardé dos horas en terminarlo — el resultado está incluido).",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Dans y autres expressions: situar en el futuro",
+      heading: '¿Cómo se sitúa una acción en el futuro en francés (dans)?',
       paragraphs: [
         "Dans indica cuánto tiempo falta para que ocurra algo en el futuro: 'Le train part dans dix minutes' (El tren sale en diez minutos). Se usa siempre con el futuro o el présent con valor de futuro. No confundir con 'en': 'dans deux heures' (dentro de dos horas, en el futuro) vs 'en deux heures' (tardando dos horas en hacer algo).",
         "Otras expresiones temporales importantes: 'il y a... que' (hace X tiempo que): 'Il y a trois ans que je n'ai pas vu ma famille' (Hace tres años que no veo a mi familia). 'Ça fait... que' (coloquial): 'Ça fait longtemps qu'il pleut!' (Hace mucho que llueve). 'Voilà... que' (literario): 'Voilà deux heures que j'attends.' Todas estas variantes se usan con el présent para acciones continuas.",

@@ -8,7 +8,7 @@ const topic: GrammarTopic = {
   level: 'A1',
   title: 'Presente dei verbi -are en italiano A1 — Primera conjugación',
   shortTitle: 'Presente -are',
-  metaTitle: 'Presente verbi -are italiano A1 — parlare mangiare studiare',
+  metaTitle: 'Presente verbi -are italiano A1 — conjugación: parlare, studiare, lavorare (tabla)',
   description:
     'Los verbos en -are son la primera y más numerosa conjugación del italiano. En presente: -o, -i, -a, -iamo, -ate, -ano. Son verbos como parlare (hablar), studiare (estudiar), mangiare (comer), lavorare (trabajar). Con esta conjugación puedes expresar acciones cotidianas en italiano A1.',
   lead: 'Verbos -are: quita -are, añade -o/-i/-a/-iamo/-ate/-ano. Parlare → parlo/parli/parla/parliamo/parlate/parlano. La terminación ya dice "quién" — el pronombre es opcional.',
@@ -51,8 +51,16 @@ const topic: GrammarTopic = {
     {
       heading: 'Los verbos -are: la conjugación más usada del italiano',
       paragraphs: [
-        'Los verbos de la primera conjugación (-are) son los más numerosos en italiano y los más regulares. Verbos esenciales como parlare (hablar), studiare (estudiar), mangiare (comer/comer), lavorare (trabajar), abitare (vivir), ascoltare (escuchar), comprare (comprar) siguen todos el mismo patrón.',
-        'La conjugación en presente sigue el patrón: quita -are del infinitivo para obtener el radical, y añade las terminaciones -o, -i, -a, -iamo, -ate, -ano. Parlare → parl- → parlo, parli, parla, parliamo, parlate, parlano.',
+        'Los verbos de la primera conjugación (-are) son los más numerosos y regulares del italiano. Se conjugan quitando -are del infinitivo y añadiendo las terminaciones -o, -i, -a, -iamo, -ate, -ano. Una vez sabes el patrón, conjugas cientos de verbos: parlare, lavorare, abitare, ascoltare, comprare, guardare… Compara el mismo patrón aplicado a tres verbos frecuentes:',
+      ],
+      table: [
+        ['Persona', 'parlare (hablar)', 'lavorare (trabajar)', 'mangiare (comer)'],
+        ['io', 'parlo', 'lavoro', 'mangio'],
+        ['tu', 'parli', 'lavori', 'mangi'],
+        ['lui/lei', 'parla', 'lavora', 'mangia'],
+        ['noi', 'parliamo', 'lavoriamo', 'mangiamo'],
+        ['voi', 'parlate', 'lavorate', 'mangiate'],
+        ['loro', 'parlano', 'lavorano', 'mangiano'],
       ],
     },
     {
@@ -63,10 +71,34 @@ const topic: GrammarTopic = {
       ],
     },
     {
+      heading: '¿Por qué los verbos en -care y -gare añaden una h?',
+      paragraphs: [
+        'Los verbos en -care (cercare, giocare) y -gare (pagare, spiegare) añaden una h en las formas de tu y noi. ¿Por qué? Porque sin la h, la c y la g sonarían suaves (como "ch" y "ll") delante de la terminación -i. La h mantiene el sonido fuerte /k/ y /g/ del infinitivo:',
+      ],
+      table: [
+        ['Infinitivo', 'tu', 'noi', 'Por qué'],
+        ['cercare', 'cerchi', 'cerchiamo', 'conserva el sonido /k/'],
+        ['giocare', 'giochi', 'giochiamo', 'conserva el sonido /k/'],
+        ['pagare', 'paghi', 'paghiamo', 'conserva el sonido /g/'],
+        ['spiegare', 'spieghi', 'spieghiamo', 'conserva el sonido /g/'],
+      ],
+    },
+    {
       heading: 'El pronombre: opcional pero útil',
       paragraphs: [
-        'Como en todos los verbos italianos, el pronombre sujeto es opcional con los -are porque la terminación ya indica la persona. "Parlo italiano" = "Io parlo italiano". El pronombre se añade para énfasis o contraste: "Io studio lingue, tu studi matematica."',
-        'Esto hace que el italiano sea muy eficiente en conversación: frases cortas como "Mangi?" (¿Comes?), "Studio" (Estudio), "Lavoriamo insieme" (Trabajamos juntos) son perfectamente naturales sin pronombres.',
+        'Como en todos los verbos italianos, el pronombre sujeto es opcional con los -are porque la terminación ya indica la persona. "Parlo italiano" = "Io parlo italiano". El pronombre se añade para énfasis o contraste: "Io studio lingue, tu studi matematica." Por eso frases cortas como "Mangi?" o "Lavoriamo insieme" son perfectamente naturales sin pronombre.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan los verbos en -are en italiano?',
+      paragraphs: [
+        'Quita la terminación -are del infinitivo y añade: -o (io), -i (tu), -a (lui/lei), -iamo (noi), -ate (voi), -ano (loro). Ejemplo con parlare: parlo, parli, parla, parliamo, parlate, parlano. Es la conjugación más regular del italiano.',
+      ],
+    },
+    {
+      heading: '¿Por qué "studi" no lleva doble i?',
+      paragraphs: [
+        'Los verbos en -iare (studiare, mangiare, viaggiare) ya tienen una i en el radical. En las formas de tu y noi no se duplica: "tu studi" (no "studii"), "noi studiamo" (no "studiiamo"). En el resto de personas la conjugación es totalmente regular: studio, studia, studiate, studiano.',
       ],
     },
   ],
@@ -108,21 +140,21 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ella trabaja',
-            lines: [['Marco', 'Zhanna ___ come insegnante. (lavorare)']],
+            lines: [['Marco', 'Clara ___ come insegnante. (lavorare)']],
             options: ['lavora', 'lavoro', 'lavori', 'lavorano'],
             answer: 'lavora',
             explain: 'Lei + -a: lavora. Tercera persona singular.',
           },
           {
             scene: 'Nosotros hablamos',
-            lines: [['David', 'Noi ___ italiano in classe. (parlare)']],
-            options: ['parliamo', 'parlate', 'parlano', 'parliamo'],
+            lines: [['Bruno', 'Noi ___ italiano in classe. (parlare)']],
+            options: ['parliamo', 'parlate', 'parlano'],
             answer: 'parliamo',
             explain: 'Noi + -iamo: parliamo.',
           },
           {
             scene: 'Vosotros trabajáis',
-            lines: [['Zhanna', 'Voi ___ molto. Siete stanchi? (lavorare)']],
+            lines: [['Clara', 'Voi ___ molto. Siete stanchi? (lavorare)']],
             options: ['lavorate', 'lavorano', 'lavoriamo', 'lavora'],
             answer: 'lavorate',
             explain: 'Voi + -ate: lavorate. Segunda persona plural.',
@@ -160,9 +192,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Idiomas que hablas',
             lines: [
-              ['Sofia', 'Tu [[0]] italiano? (parlare)'],
-              ['Carlo', 'Sì, e [[1]] anche lo spagnolo. (studiare)'],
-            ],
+ ['Sofia', 'Tu [[0]] italiano? (parlare)'],
+ ['Carlo', 'Sì, e [[1]] anche lo spagnolo. (studiare)'],
+ ],
             blanks: [
               { options: ['parli', 'parla', 'parlate'], answer: 'parli', explain: 'Tu parli = tú hablas. -are tu → -i.' },
               { options: ['studio', 'studi', 'studia'], answer: 'studio', explain: 'Io studio = yo estudio. -are io → -o.' },
@@ -170,7 +202,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Rutina diaria',
-            lines: [['David', 'La mattina [[0]] e la sera [[1]]. (lavorare / studiare)']],
+            lines: [['Bruno', 'La mattina [[0]] e la sera [[1]]. (lavorare / studiare)']],
             blanks: [
               { options: ['lavoro', 'lavori', 'lavora'], answer: 'lavoro', explain: 'Io lavoro = yo trabajo. Primera sg.' },
               { options: ['studio', 'studi', 'studia'], answer: 'studio', explain: 'Io studio = yo estudio. Primera sg.' },
@@ -178,7 +210,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ellos y nosotros',
-            lines: [['Zhanna', 'Loro [[0]] tutto il giorno e noi [[1]] insieme la sera. (lavorare / mangiare)']],
+            lines: [['Clara', 'Loro [[0]] tutto il giorno e noi [[1]] insieme la sera. (lavorare / mangiare)']],
             blanks: [
               { options: ['lavorano', 'lavoriamo', 'lavorate'], answer: 'lavorano', explain: 'Loro lavorano = ellos trabajan. Tercera pl.' },
               { options: ['mangiamo', 'mangiano', 'mangiate'], answer: 'mangiamo', explain: 'Noi mangiamo = nosotros comemos. Primera pl.' },
@@ -187,9 +219,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Dónde vives',
             lines: [
-              ['Marco', 'Tu dove [[0]]? (abitare)'],
-              ['Sofia', 'Io [[1]] a Milano, in centro. (abitare)'],
-            ],
+ ['Marco', 'Tu dove [[0]]? (abitare)'],
+ ['Sofia', 'Io [[1]] a Milano, in centro. (abitare)'],
+ ],
             blanks: [
               { options: ['abiti', 'abita', 'abito'], answer: 'abiti', explain: 'Tu abiti = tú vives. -are tu → -i.' },
               { options: ['abito', 'abiti', 'abita'], answer: 'abito', explain: 'Io abito = yo vivo. -are io → -o.' },
@@ -203,10 +235,10 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Conjuga los verbos para completar la presentación.',
         type: 'guidedText',
-        scene: 'Un día normal de David en WeLearn',
-        text: 'David [[0]] (lavorare) a WeLearn ogni giorno. La mattina [[1]] (studiare) le nuove lezioni e [[2]] (preparare) i materiali. A pranzo [[3]] (mangiare) con Zhanna. Nel pomeriggio [[4]] (insegnare) le classi. Gli studenti [[5]] (ascoltare) e [[6]] (domandare) molte cose. È una bella vita!',
+        scene: 'Un día normal de Bruno en WeLearn',
+        text: 'Bruno [[0]] (lavorare) a WeLearn ogni giorno. La mattina [[1]] (studiare) le nuove lezioni e [[2]] (preparare) i materiali. A pranzo [[3]] (mangiare) con Clara. Nel pomeriggio [[4]] (insegnare) le classi. Gli studenti [[5]] (ascoltare) e [[6]] (domandare) molte cose. È una bella vita!',
         blanks: [
-          { options: ['lavora', 'lavoro', 'lavorano'], answer: 'lavora', explain: 'David (lui) lavora. Terza sg.' },
+          { options: ['lavora', 'lavoro', 'lavorano'], answer: 'lavora', explain: 'Bruno (lui) lavora. Terza sg.' },
           { options: ['studia', 'studio', 'studiano'], answer: 'studia', explain: 'Lui studia. Stesso soggetto.' },
           { options: ['prepara', 'preparo', 'preparano'], answer: 'prepara', explain: 'Lui prepara. Terza sg.' },
           { options: ['mangia', 'mangio', 'mangiano'], answer: 'mangia', explain: 'Lui mangia. Verbo -iare, terza sg → -a.' },

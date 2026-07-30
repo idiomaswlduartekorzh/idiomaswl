@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Pasiva directa: recibir una acción',
+      heading: '¿Cómo funciona la pasiva directa (recibir una acción)?',
       paragraphs: [
         'La pasiva directa en japonés funciona de manera similar al español: el sujeto recibe la acción. El agente (quien hace la acción) lleva la partícula に.',
         '例: 私は先生にほめられた (fui elogiado por el profesor). この小説は100万人に読まれた (esta novela fue leída por un millón de personas). この映画は多くの人に見られた (esta película fue vista por mucha gente). La pasiva directa es muy útil para hablar de obras, eventos y situaciones donde el protagonista recibe algo positivo o neutro.',
       ],
     },
     {
-      heading: 'Pasiva indirecta: la pasiva de perjuicio',
+      heading: '¿Qué es la pasiva indirecta o pasiva de perjuicio?',
       paragraphs: [
         'La pasiva indirecta es única al japonés (y algunas lenguas asiáticas) y expresa que el sujeto fue perjudicado o afectado por la acción de otro, aunque esa acción no recayó directamente sobre él.',
         '例: 財布を盗まれた (me robaron la cartera — yo soy el perjudicado, aunque la cartera recibió la acción). 雨に降られた (me llovió encima — fui perjudicado por la lluvia). 隣の人に夜中に騒がれた (el vecino me molestó haciendo ruido de noche). Esta construcción expresa afectación negativa muy frecuentemente.',

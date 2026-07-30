@@ -66,6 +66,18 @@ const topic: GrammarTopic = {
         'Ambas formas son correctas y se entienden en ambos países. Para hispanohablantes que estudian portugués brasileño, el gerúndio es más intuitivo porque se parece al español "estoy estudiando". El portugués europeo es más formal en este aspecto.',
       ],
     },
+    {
+      heading: '¿Cómo se dice "estoy estudiando" en portugués?',
+      paragraphs: [
+        'En portugués brasileño: "Estou estudando" (estar conjugado + gerúndio en -ndo). En portugués europeo: "Estou a estudar" (estar a + infinitivo). Las dos son válidas; solo hay que ser coherente y no mezclarlas en la misma frase. La versión brasileña es prácticamente idéntica al español, así que el hispanohablante la produce sin esfuerzo: cambia "-ando/-iendo" del español por "-ando/-endo/-indo" del portugués. Ojo con el verbo ler, cuyo gerúndio es "lendo" (no "leendo").',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre ser y estar + gerúndio?',
+      paragraphs: [
+        'Ser describe lo que alguien es de forma estable ("Eu sou estudante", soy estudiante), mientras que estar + gerúndio describe lo que ocurre justo ahora ("Eu estou estudando", estoy estudiando en este momento). No se dice "sou estudando": el progresivo siempre se forma con estar, nunca con ser. Es el mismo reparto del español, así que la trampa no está aquí sino en recordar que el gerúndio portugués acaba siempre en -ndo y que existe la alternativa europea estar a + infinitivo.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',
@@ -95,7 +107,7 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           { scene: 'Gerúndio -ar', lines: [['', '¿Cuál es el gerúndio de "falar" (hablar)?']], options: ['falendo', 'falndo', 'falando', 'falindo'], answer: 'falando', explain: 'falar → raíz fal- + -ando = falando. Verbos -ar siempre hacen -ando.' },
-          { scene: 'Gerúndio -er', lines: [['', '¿Cuál es el gerúndio de "comer" (comer)?']], options: ['comando', 'comendo', 'comindo', 'comendo'], answer: 'comendo', explain: 'comer → raíz com- + -endo = comendo. Verbos -er hacen -endo.' },
+          { scene: 'Gerúndio -er', lines: [['', '¿Cuál es el gerúndio de "comer" (comer)?']], options: ['comando', 'comendo', 'comindo'], answer: 'comendo', explain: 'comer → raíz com- + -endo = comendo. Verbos -er hacen -endo.' },
           { scene: 'Estar conjugado', lines: [['', '"Ellos están trabajando": eles ___ trabalhando.']], options: ['estou', 'está', 'estamos', 'estão'], answer: 'estão', explain: 'Eles estão trabalhando. estar → estão (eles/vocês). Tercera persona plural.' },
           { scene: 'Gerúndio -ir', lines: [['', '¿Cuál es el gerúndio de "dormir" (dormir)?']], options: ['dormando', 'dormendo', 'dormindo', 'durmindo'], answer: 'dormindo', explain: 'dormir → raíz dorm- + -indo = dormindo. Verbos -ir hacen -indo.' },
           { scene: 'Eu — presente progresivo', lines: [['', '"Estoy estudiando ahora": eu ___ estudando.']], options: ['está', 'estou', 'estamos', 'estão'], answer: 'estou', explain: 'Eu estou estudando. estar → estou (primera persona singular).' },
@@ -124,11 +136,11 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma correcta para cada espacio.',
         type: 'guidedText',
         scene: 'Na Academia WeLearn agora mesmo',
-        text: 'São duas da tarde na WeLearn. David [[0]] uma aula de português. (está dando una clase) Os alunos [[1]] com atenção. (están escuchando) Zhanna [[2]] os materiais da próxima aula. (está preparando) Eu [[3]] este exercício. (estoy haciendo) Você [[4]] português agora? (¿Estás aprendiendo?)',
+        text: 'São duas da tarde na WeLearn. Nico [[0]] uma aula de português. (está dando una clase) Os alunos [[1]] com atenção. (están escuchando) Sara [[2]] os materiais da próxima aula. (está preparando) Eu [[3]] este exercício. (estoy haciendo) Você [[4]] português agora? (¿Estás aprendiendo?)',
         blanks: [
-          { options: ['está dando', 'estou dando', 'estão dando', 'estamos dando'], answer: 'está dando', explain: 'David (ele) → está. dar → dando (verbo -ar). Está dando = está dando.' },
+          { options: ['está dando', 'estou dando', 'estão dando', 'estamos dando'], answer: 'está dando', explain: 'Nico (ele) → está. dar → dando (verbo -ar). Está dando = está dando.' },
           { options: ['está ouvindo', 'estão ouvindo', 'estou ouvindo', 'estamos ouvindo'], answer: 'estão ouvindo', explain: 'Os alunos (eles) → estão. ouvir → ouvindo (verbo -ir → -indo). Estão ouvindo = están escuchando.' },
-          { options: ['está preparando', 'estão preparando', 'estou preparando', 'estamos preparando'], answer: 'está preparando', explain: 'Zhanna (ela) → está. preparar → preparando (-ar → -ando). Está preparando.' },
+          { options: ['está preparando', 'estão preparando', 'estou preparando', 'estamos preparando'], answer: 'está preparando', explain: 'Sara (ela) → está. preparar → preparando (-ar → -ando). Está preparando.' },
           { options: ['está fazendo', 'estão fazendo', 'estou fazendo', 'estamos fazendo'], answer: 'estou fazendo', explain: 'Eu → estou. fazer → fazendo (-er → -endo). Estou fazendo = Estoy haciendo.' },
           { options: ['está aprendendo', 'estou aprendendo', 'estão aprendendo', 'estamos aprendendo'], answer: 'está aprendendo', explain: 'Você → está. aprender → aprendendo (-er → -endo). Está aprendendo? = ¿Estás aprendiendo?' },
         ],
@@ -156,7 +168,7 @@ const topic: GrammarTopic = {
         intro: 'Construye frases completas con estar + gerúndio.',
         type: 'write',
         items: [
-          { scene: 'Descrição em tempo real', prompt: 'Traduce al portugués brasileño: "Ahora mismo David está enseñando portugués y los estudiantes están aprendiendo mucho." (agora mesmo = ahora mismo, ensinar = enseñar, muito = mucho)', answer: 'Agora mesmo David está ensinando português e os alunos estão aprendendo muito', accepted: ['está ensinando', 'estão aprendendo'], explain: 'David (ele) → está + ensinando (-ar). Os alunos (eles) → estão + aprendendo (-er).' },
+          { scene: 'Descrição em tempo real', prompt: 'Traduce al portugués brasileño: "Ahora mismo Nico está enseñando portugués y los estudiantes están aprendiendo mucho." (agora mesmo = ahora mismo, ensinar = enseñar, muito = mucho)', answer: 'Agora mesmo Nico está ensinando português e os alunos estão aprendendo muito', accepted: ['está ensinando', 'estão aprendendo'], explain: 'Nico (ele) → está + ensinando (-ar). Os alunos (eles) → estão + aprendendo (-er).' },
           { scene: 'Pregunta en progresivo', prompt: 'Traduce al portugués: "¿Qué estás haciendo? ¿Estás estudiando o trabajando?" (ou = o)', answer: 'O que você está fazendo? Está estudando ou trabalhando?', accepted: ['está fazendo', 'estudando', 'trabalhando'], explain: 'fazer → fazendo; estudar → estudando; trabalhar → trabalhando. Todos -ndo.' },
           { scene: 'Negativa + progressivo', prompt: 'Traduce al portugués: "No estoy durmiendo, estoy trabajando." (não = no)', answer: 'Não estou dormindo, estou trabalhando', accepted: ['não estou dormindo', 'estou trabalhando'], explain: 'Não + estou + gerúndio. dormir → dormindo (-ir → -indo); trabalhar → trabalhando (-ar → -ando).' },
           { scene: 'Brasil vs Portugal', prompt: 'Escribe la versión brasileña y la europea: "Estoy aprendiendo portugués." (aprender = aprender)', answer: 'Brasil: Estou aprendendo português. Portugal: Estou a aprender português.', accepted: ['estou aprendendo', 'estou a aprender'], explain: 'Brasil: estou + gerúndio (aprendendo). Portugal: estou a + infinitivo (aprender). Ambas correctas.' },

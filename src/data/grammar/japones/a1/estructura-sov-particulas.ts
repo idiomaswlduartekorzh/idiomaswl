@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El japonés es SOV: el verbo siempre al final',
+      heading: '¿Por qué el verbo va al final en japonés (SOV)?',
       paragraphs: [
         'La diferencia estructural más profunda entre el japonés y el español es el orden de palabras. El español es SVO (Sujeto-Verbo-Objeto): "Yo leo el libro". El japonés es SOV (Sujeto-Objeto-Verbo): "Yo el-libro leo" = わたしは ほんを よみます. El verbo SIEMPRE ocupa la última posición de la frase.',
         'Este cambio es el más difícil de asimilar para el hispanohablante. En el habla hay que "guardar" el verbo hasta el final mientras se procesa el resto de la frase. Con práctica se vuelve natural, pero requiere reprogramar el orden mental de construcción de frases.',
       ],
     },
     {
-      heading: 'Las partículas: marcadores gramaticales postpuestos',
+      heading: '¿Qué son las partículas en japonés?',
       paragraphs: [
         'Las partículas japonesas son marcas gramaticales que se colocan DESPUÉS del elemento que modifican. Indican la función de ese elemento en la frase. は (wa) marca el tema de conversación (similar al 은/는 coreano). が (ga) marca el sujeto gramatical. を (wo/o) marca el objeto directo. に (ni) indica dirección, lugar o tiempo. で (de) indica el lugar donde ocurre la acción.',
         'Para el hispanohablante, el concepto de partícula puede resultar extraño porque en español esas funciones las indica el orden de palabras o las preposiciones antes del elemento. En japonés, el orden es más flexible gracias a las partículas: cada elemento "lleva su función consigo".',
+      ],
+    },
+    {
+      heading: '¿Cómo se ordena una frase básica en japonés?',
+      paragraphs: [
+        'El japonés sigue el orden Sujeto–Objeto–Verbo (SOV): el verbo va SIEMPRE al final. Donde el español dice "Yo como pan", el japonés dice literalmente "Yo pan como": 私はパンを食べます (watashi wa pan o tabemasu). Cada elemento lleva detrás una partícula que marca su función (は tema, が sujeto, を objeto, に destino/tiempo, で lugar de acción), y gracias a ellas el orden de los complementos es flexible mientras el verbo permanezca al final. La mayor dificultad para el hispanohablante es doble: acostumbrarse a "guardar" el verbo hasta el final y confiar en las partículas —no en la posición— para saber quién hace qué.',
       ],
     },
   ],
@@ -83,7 +89,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Tema: yo',
-            lines: [['David', 'わたし___ がくせいです。(Yo soy estudiante.)']],
+            lines: [['Bruno', 'わたし___ がくせいです。(Yo soy estudiante.)']],
             options: ['は', 'が', 'を', 'に'],
             answer: 'は',
             explain: 'は (wa) marca el tema. わたしは = "en cuanto a mí".',
@@ -148,7 +154,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Sujeto y objeto',
-            lines: [['David', 'わたし[[0]] ほん[[1]] よみます。(Yo leo el libro.)']],
+            lines: [['Bruno', 'わたし[[0]] ほん[[1]] よみます。(Yo leo el libro.)']],
             blanks: [
               { options: ['は', 'が', 'を'], answer: 'は', explain: 'わたしは = yo [tema].' },
               { options: ['を', 'は', 'に'], answer: 'を', explain: 'ほんを = libro [objeto].' },

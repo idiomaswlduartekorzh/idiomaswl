@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'En Speaking, mostrar que conoces la diferencia entre mustn\'t y don\'t have to en respuestas sobre reglas o situaciones cotidianas eleva tu rango léxico. Practica frases como: "In my country, you have to carry your ID at all times, but you don\'t have to vote if you don\'t want to."',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre "must" y "have to"?',
+      paragraphs: [
+        '"must" expresa una obligación personal o una norma que siente el hablante ("I must call her"); "have to" una obligación externa ("I have to work weekends"). Solo "have to" tiene pasado y futuro (had to, will have to), porque "must" no cambia de forma.',
+      ],
+    },
+    {
+      heading: '¿Cómo se usa "must" para deducción en inglés?',
+      paragraphs: [
+        '"must" también expresa una deducción lógica (algo que estás seguro de que es verdad): "She isn\'t answering — she must be busy". Su opuesto es "can\'t" para la deducción negativa: "That can\'t be true". No se usa "mustn\'t" para deducir.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "mustn\'t" y "don\'t have to"?',
+      paragraphs: [
+        '"mustn\'t" es prohibición ("You mustn\'t park here" = está prohibido); "don\'t have to" es ausencia de obligación ("You don\'t have to come" = no es necesario, pero puedes). Son ideas opuestas y el hispanohablante suele confundirlas.',
+      ],
+    },
   ],
 
   visual: {

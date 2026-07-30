@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Verbos pronominales reflexivos y recíprocos',
+      heading: '¿Qué son los verbos pronominales reflexivos y recíprocos en francés?',
       paragraphs: [
         'Los verbos pronominales reflexivos expresan una acción que el sujeto hace sobre sí mismo: "Je me lave les mains" (Me lavo las manos), "Elle se coiffe" (Ella se peina), "Il se lève tôt" (Él se levanta temprano). Los pronombres cambian según el sujeto: me/m\', te/t\', se/s\', nous, vous, se/s\'.',
         'Los recíprocos indican una acción mutua entre dos o más personas: "Ils se parlent souvent" (Se hablan a menudo), "Nous nous voyons le week-end" (Nos vemos el fin de semana). Solo se usan con sujetos plurales (nous, vous, ils/elles).',
       ],
     },
     {
-      heading: 'Pronominales inherentes: se souvenir, se méfier, se tromper',
+      heading: '¿Qué son los verbos pronominales inherentes en francés?',
       paragraphs: [
         'Algunos verbos son siempre pronominales sin significado reflexivo especial — simplemente requieren el pronombre: "se souvenir de" (recordar), "se méfier de" (desconfiar), "se tromper" (equivocarse), "s\'en aller" (irse), "se moquer de" (burlarse de). No existe la versión sin pronombre.',
         'La negación de pronominales sigue el esquema: ne + pronom réfléchi + verbe + pas. "Je ne me lève pas tôt." / "Il ne s\'en va pas." / "Nous ne nous souvenons pas de cette date."',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan los verbos pronominales en francés?',
+      paragraphs: [
+        'Llevan un pronombre reflexivo que concuerda con el sujeto (me/te/se/nous/vous/se), colocado ANTES del verbo: "je me lève, tu te laves, il se souvient". En el passé composé usan SIEMPRE el auxiliar être, y el participio concuerda con el sujeto: "elle s\'est levée, ils se sont couchés". En negativo, el "ne" va antes del pronombre y "pas" tras el auxiliar: "je ne me lève pas", "il ne s\'est pas rasé". En el imperativo afirmativo el pronombre va detrás con guion y "te" se convierte en "toi": "lève-toi !", "dépêchons-nous !". Es la misma mecánica del español (levantarse → me levanto), con la particularidad francesa del auxiliar être obligatorio en el pasado.',
       ],
     },
   ],
@@ -170,7 +176,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con el pronombre reflexivo correcto.',
         type: 'guidedText',
         scene: 'Sophie décrit sa routine matinale.',
-        text: 'Le matin, je [[0]] lève à 6h30. Je [[0]] douche, puis je [[0]] habille. Mon frère, lui, [[1]] réveille très tard. Mes parents [[1]] lèvent ensemble et ils [[1]] préparent un café. Nous [[2]] retrouvons tous à table pour le petit-déjeuner.',
+        text: 'Le matin, je [[0]] lève à 6h30. Je [[1]] douche, puis je [[2]] habille. Mon frère, lui, [[3]] réveille très tard. Mes parents [[4]] lèvent ensemble et ils [[5]] préparent un café. Nous [[6]] retrouvons tous à table pour le petit-déjeuner.',
         blanks: [
           { options: ['me', 'te', 'se', 'nous'], answer: 'me', explain: '"je me lève / je me douche / je me habille → m\'habille" — je → me.' },
           { options: ['se', 'me', 'nous', 'vous'], answer: 'se', explain: '"il se réveille / ils se lèvent / ils se préparent" — il/ils → se.' },
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta del verbo pronominal.',
         type: 'freeText',
         scene: 'Écrivez la bonne forme du verbe pronominal.',
-        text: 'Tu ___ (se lever) à quelle heure ? / Ils ___ (se parler) souvent. / Nous ___ (se voir) demain. / Elle ___ (se tromper) parfois.',
+        text: 'Tu [[0]] (se lever) à quelle heure ? / Ils [[1]] (se parler) souvent. / Nous [[2]] (se voir) demain. / Elle [[3]] (se tromper) parfois.',
         blanks: [
           { answer: 'te lèves', explain: '"tu te lèves" — sujeto tu → te + lever au présent (lèves).' },
           { answer: 'se parlent', explain: '"ils se parlent" — sujeto ils → se + parler (parlent).' },

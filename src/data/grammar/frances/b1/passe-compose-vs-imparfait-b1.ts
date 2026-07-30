@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar el passé composé',
+      heading: '¿Cuándo se usa el passé composé en francés?',
       paragraphs: [
         'El passé composé se usa para narrar acciones que ocurrieron una vez, en un momento específico, o cuyo inicio o fin están claramente delimitados: "Hier, j\'ai rencontré mon ami." También se usa para una serie de acciones consecutivas que avanzan la narración: "Il est entré, a posé son sac et s\'est assis."',
         'Los marcadores temporales que suelen acompañar el passé composé son: hier, la semaine dernière, il y a deux ans, soudain, tout à coup, à ce moment-là, pendant (con duración definida y terminada).',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo usar el imparfait',
+      heading: '¿Cuándo se usa el imparfait en francés?',
       paragraphs: [
         'El imparfait se usa para describir el contexto o escenario de una historia: "Il faisait nuit, la rue était silencieuse et un vent froid soufflait." También para hablar de hábitos o rutinas pasadas: "Quand j\'étais enfant, je lisais beaucoup." Y para estados emocionales o físicos: "Elle était heureuse. Il avait faim."',
         'Los marcadores del imparfait incluyen: toujours, souvent, parfois, tous les jours, chaque semaine, autrefois, à l\'époque, quand j\'étais + adjectivo de edad/etapa.',

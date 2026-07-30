@@ -57,7 +57,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preposición A: movimiento y destino',
+      heading: '¿Cuándo se usa la preposición "a" en portugués?',
       paragraphs: [
         '"A" se usa para expresar movimiento hacia un destino: "Vou a Portugal" (Voy a Portugal), "Viajo a São Paulo" (Viajo a São Paulo). También para dar la hora: "Às 3 horas" (A las 3 horas, contracción ao).',
         'Diferencia crucial: "A" para destino (Vou a casa = Voy a casa) vs "EM" para ubicación (Estou em casa = Estoy en casa). Movimiento requiere "a"; ubicación requiere "em".',
@@ -92,7 +92,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preposición POR: causa, agente y aproximación',
+      heading: '¿Cuándo se usa la preposición "por" en portugués?',
       paragraphs: [
         '"POR" expresa causa: "Chorrei por alegria" (Lloré de alegría), "Parou por cansaço" (Paró por cansancio). Agente en voz pasiva: "O livro foi escrito por Machado" (El libro fue escrito por Machado). Aproximación: "Custa por 100 reais" (Cuesta alrededor de 100 reales).',
         'También frecuencia: "Viajo por avião" (Viajo en avión, literalmente "por medio de avión"), "Saio por ali" (Salgo por ahí, dirección/camino).',

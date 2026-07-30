@@ -49,7 +49,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Los posesivos rusos y su concordancia',
+      heading: '¿Cómo concuerdan los posesivos en ruso?',
       paragraphs: [
         'En ruso, los posesivos de primera y segunda persona (мой, твой, наш, ваш) concuerdan en género, número y caso con el sustantivo que acompañan, igual que los adjetivos. Мой брат (mi hermano, masc), моя сестра (mi hermana, fem), моё письмо (mi carta, ntr), мои друзья (mis amigos, pl).',
         'Esta concordancia es familiar para el hispanohablante (mi/mis, nuestro/nuestra). Lo nuevo es tener formas distintas para masculino singular, femenino singular, neutro singular y plural.',
@@ -63,10 +63,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'его/её/их: posesivos invariables',
+      heading: '¿Por qué его, её e их son posesivos invariables?',
       paragraphs: [
         'La gran singularidad de los posesivos rusos de tercera persona: его (su de él), её (su de ella) y их (su de ellos/ellas) son INVARIABLES. No cambian según el género ni el número del sustantivo. Его брат (su hermano de él) y его сестра (su hermana de él) — его es exactamente igual en ambos casos.',
         'Esto ocurre porque его/её/их son en realidad formas del caso genitivo de los pronombres он/она/они, no adjetivos posesivos como мой. Este origen explica por qué no se declinan como adjetivos.',
+      ],
+    },
+    {
+      heading: '¿Cómo cambian мой, твой, наш y ваш según el género?',
+      paragraphs: [
+        'Los posesivos de 1ª y 2ª persona concuerdan en género, número y caso con el objeto poseído, no con el poseedor (al revés que en español, donde "su" no cambia). Para "mi": мой (masculino, мой брат = mi hermano), моя (femenino, моя сестра = mi hermana), моё (neutro, моё окно = mi ventana), мои (plural, мои книги = mis libros). Igual se comportan твой/твоя/твоё/твои (tu), наш/наша/наше/наши (nuestro) y ваш/ваша/ваше/ваши (vuestro/su formal).',
+        'La trampa para el hispanohablante es doble: (1) hay que elegir la forma según el género de la cosa poseída, no de quien posee; (2) esto NO afecta a его, её e их, que son invariables. Así, моя книга cambia a мой стол según el sustantivo, pero его книга y его стол se dicen igual.',
       ],
     },
   ],
@@ -100,8 +107,8 @@ const topic: GrammarTopic = {
         items: [
           { scene: 'мой concordancia masc', lines: [['', '"___ брат" — "mi hermano" (брат = masc)']], options: ['моя', 'мой', 'моё', 'мои'], answer: 'мой', explain: 'Мой (moy) = mi, masculino singular. брат es masculino → мой.' },
           { scene: 'моя concordancia fem', lines: [['', '"___ сестра" — "mi hermana" (сестра = fem)']], options: ['мой', 'моё', 'моя', 'мои'], answer: 'моя', explain: 'Моя (moya) = mi, femenino singular. сестра es femenino → моя.' },
-          { scene: 'его invariable', lines: [['', '"___ книга" — "su libro de él" (книга = fem, poseedor = он)']], options: ['его', 'её', 'егоя', 'её'], answer: 'его', explain: 'Его (yevo) = su de él. Es INVARIABLE — no cambia aunque книга sea femenino.' },
-          { scene: 'её invariable', lines: [['', '"___ брат" — "su hermano de ella" (брат = masc, poseedor = она)']], options: ['его', 'её', 'её', 'их'], answer: 'её', explain: 'Её (yeyó) = su de ella. Es INVARIABLE — no cambia aunque брат sea masculino.' },
+          { scene: 'его invariable', lines: [['', '"___ книга" — "su libro de él" (книга = fem, poseedor = он)']], options: ['его', 'её', 'егоя'], answer: 'его', explain: 'Его (yevo) = su de él. Es INVARIABLE — no cambia aunque книга sea femenino.' },
+          { scene: 'её invariable', lines: [['', '"___ брат" — "su hermano de ella" (брат = masc, poseedor = она)']], options: ['его', 'её', 'их'], answer: 'её', explain: 'Её (yeyó) = su de ella. Es INVARIABLE — no cambia aunque брат sea masculino.' },
           { scene: 'наш concordancia fem', lines: [['', '"___ школа" — "nuestra escuela" (школа = fem)']], options: ['наш', 'нашa', 'наше', 'наши'], answer: 'нашa', explain: 'Наша (nasha) = nuestra, femenino. школа es femenino → наша.' },
           { scene: 'ваш formal masc', lines: [['', '"___ учитель" — "su profesor/vuestro profesor" (учитель = masc)']], options: ['ваша', 'ваше', 'ваш', 'ваши'], answer: 'ваш', explain: 'Ваш (vash) = su/vuestro, masculino. учитель es masculino → ваш.' },
           { scene: 'их invariable', lines: [['', '"___ дом" — "su casa de ellos" (дом = masc, poseedores = они)']], options: ['его', 'её', 'их', 'ихний'], answer: 'их', explain: 'Их (ikh) = su de ellos/ellas. Es INVARIABLE.' },
@@ -128,13 +135,13 @@ const topic: GrammarTopic = {
         intro: 'Elige el posesivo correcto para cada sustantivo.',
         type: 'guidedText',
         scene: 'La familia y las cosas de los estudiantes de WeLearn',
-        text: 'Это [[0]] книга. (Es mi libro — libro = masc, yo=Карлос.) [[1]] сестра очень умная. (Su hermana de él es muy inteligente.) [[2]] школа большая. (Nuestra escuela es grande.) Давид любит [[3]] работу. (David ama su trabajo de él.) Жанна и Анна и [[4]] друзья. (Zhanna y Ana y sus amigos de ellas.) [[5]] учитель — Давид. (Tu profesor es David.)',
+        text: 'Это [[0]] книга. (Es mi libro — libro = masc, yo=Карлос.) [[1]] сестра очень умная. (Su hermana de él es muy inteligente.) [[2]] школа большая. (Nuestra escuela es grande.) Давид любит [[3]] работу. (Leo ama su trabajo de él.) Жанна и Анна и [[4]] друзья. (Alba y Ana y sus amigos de ellas.) [[5]] учитель — Давид. (Tu profesor es Leo.)',
         blanks: [
           { options: ['моя', 'мой', 'моё', 'мои'], answer: 'мой', explain: 'Книга здесь es masc: книга es femenino, pero "libro" en la oración implica книга = fem → pero el texto dice "libro" = книга (fem). Espera: книга = fem → моя. Revisión: "Это мой книга" — книга es femenino → debería ser моя. Aquí la respuesta correcta es моя.' },
           { options: ['Его', 'Её', 'Их', 'Наша'], answer: 'Его', explain: 'El poseedor es "él" (Карлос/Марко). Su de él = его. Invariable aunque сестра sea femenino.' },
           { options: ['Наш', 'Наша', 'Наше', 'Наши'], answer: 'Наша', explain: 'Школа es femenino → наша (nuestra). наш/наша/наше/наши concuerdan.' },
           { options: ['его', 'её', 'их', 'свою'], answer: 'его', explain: 'Давид es él → его (su de él). Invariable sin importar el género de работу.' },
-          { options: ['его', 'её', 'их', 'наши'], answer: 'их', explain: 'Poseedor = ellas (Zhanna y Ana) → их. Invariable.' },
+          { options: ['его', 'её', 'их', 'наши'], answer: 'их', explain: 'Poseedor = ellas (Alba y Ana) → их. Invariable.' },
           { options: ['Мой', 'Твой', 'Ваш', 'Наш'], answer: 'Твой', explain: 'Твой (tvoy) = tu, masculino. учитель es masc → твой.' },
         ],
       },
@@ -175,7 +182,7 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           { scene: 'Presentación personal', prompt: 'Preséntate usando posesivos: menciona tu nombre, tu ciudad y un familiar. Escribe 3 oraciones usando мой/моя.', answer: 'Меня зовут Карлос. Мой город — Буcaramanга. Моя сестра живёт в Боготе.', accepted: ['мой', 'моя', 'моё'], explain: 'Мой + masc, моя + fem. Adaptar según el género del sustantivo.' },
-          { scene: 'Hablar de otros', prompt: 'Describe a David: menciona su trabajo (работа — fem) y su escuela (школа — fem). Usa его dos veces.', answer: 'Его работа — академия WeLearn. Его школа в Букараманге.', accepted: ['его работа', 'его школа', 'его академия'], explain: 'Его es invariable: его работа (fem), его школа (fem) — его nunca cambia.' },
+          { scene: 'Hablar de otros', prompt: 'Describe a Leo: menciona su trabajo (работа — fem) y su escuela (школа — fem). Usa его dos veces.', answer: 'Его работа — академия WeLearn. Его школа в Букараманге.', accepted: ['его работа', 'его школа', 'его академия'], explain: 'Его es invariable: его работа (fem), его школа (fem) — его nunca cambia.' },
           { scene: 'Grupo y familia', prompt: 'Describe a tu grupo de estudio: escribe 2 oraciones con наши o наша/наш sobre la academia o los profesores.', answer: 'Наши учителя очень хорошие. Наша академия в Колумбии.', accepted: ['наши учителя', 'наша академия', 'наш класс', 'наши студенты'], explain: 'Наши (pl), наша (fem), наш (masc). Concuerdan con el sustantivo.' },
         ],
       },

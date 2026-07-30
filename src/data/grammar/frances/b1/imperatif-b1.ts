@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "La formación del impératif en francés",
+      heading: '¿Cómo se forma el impératif en francés?',
       paragraphs: [
         "El impératif francés tiene solo tres formas: tu (tú/usted informal), nous (nosotros), vous (ustedes/usted formal). Se forma usando el présent del verbo sin el pronombre sujeto. Para los verbos en -er, la forma 'tu' pierde la -s final: 'tu parles' → 'Parle!' (no 'Parles!'). Para los verbos en -ir y -re, la forma 'tu' conserva la -s: 'tu finis' → 'Finis!', 'tu réponds' → 'Réponds!'.",
         "Sin embargo, la -s reaparece ante 'y' y 'en' en la forma 'tu' para facilitar la liaison: 'Va-y' → incorrecto, debe ser 'Vas-y!' (con -s para la liaison). Igualmente: 'Parles-en!' (aunque normalmente 'parle' sin -s). Este detalle fonético solo afecta la forma 'tu' de verbos -er ante 'y' y 'en'. Los irregulares esenciales a memorizar son: être (sois/soyons/soyez), avoir (aie/ayons/ayez), savoir (sache/sachons/sachez), vouloir (veuille/veuillez — usado principalmente en forma educada 'Veuillez...').",
       ],
     },
     {
-      heading: "El impératif con pronombres: posición afirmativa y negativa",
+      heading: '¿Dónde van los pronombres con el impératif en francés?',
       paragraphs: [
         "Con el impératif affirmatif, los pronombres se colocan DESPUÉS del verbo separados por un trait d'union. El orden es: verbe + COD + COI + y/en. Los pronombres me y te se convierten en moi y toi en posición postverbal: 'Appelle-moi!' (no 'Appelle-me'), 'Lève-toi!' (no 'Lève-te'). Con COD + COI: 'Donne-le-moi!' (dámelo), 'Explique-le-leur!' (explícaselo a ellos).",
         "Con el impératif négatif, los pronombres vuelven a su posición normal: ANTES del verbo, entre 'ne' y el verbo. Me y toi regresan a me y te: 'Ne m'appelle pas!', 'Ne te lève pas!'. El orden sigue siendo COI + COD: 'Ne me le donne pas!'. Esta inversión de posición (después en afirmativo, antes en negativo) es uno de los puntos más importantes del B1.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Usos del impératif: órdenes, consejos y peticiones",
+      heading: '¿Para qué se usa el impératif en francés?',
       paragraphs: [
         "El impératif expresa varios matices según el contexto y la entonación. Las órdenes directas: 'Sortez immédiatement!' (¡Salgan inmediatamente!). Los consejos: 'Mange moins de sucre, c'est meilleur pour la santé' (Come menos azúcar, es mejor para la salud). Las instrucciones: 'Ajoutez deux œufs et mélangez bien' (Añada dos huevos y mezcle bien — en recetas). Las prohibiciones con impératif négatif: 'Ne touchez pas!' (¡No toquen!), 'Ne fumez pas ici' (No fume aquí).",
         "Para dar órdenes de forma educada (registre formel): 'Veuillez patienter un moment' (Tenga la bondad de esperar un momento), 'Veuillez trouver ci-joint...' (Encuentre adjunto...). 'Veuillez' es el impératif de 'vouloir' (2ª persona plural) y se usa en correspondencia formal, atención al cliente y comunicaciones oficiales. Más educado que 'Attendez un moment', que también es impératif pero más directo.",

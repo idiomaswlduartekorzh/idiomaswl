@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~と: el condicional de lo natural e inevitable',
+      heading: '¿Por qué ~と es el condicional de lo natural e inevitable?',
       paragraphs: [
         '~と se usa cuando la condición lleva inevitablemente al resultado, sin intervención del hablante. Es ideal para instrucciones de camino ("右に曲がると、公園があります" = si giras a la derecha, hay un parque), leyes de la naturaleza y descubrimientos repentinos.',
         'La restricción más importante: la cláusula principal no puede expresar voluntad, deseo, petición o mandato del hablante. Si necesitas decir "cuando llegues, llámame", usa ~たら, no ~と. Esta regla es lo que distingue ~と de los otros condicionales.',
       ],
     },
     {
-      heading: 'と para descubrimientos: el uso narrativo',
+      heading: '¿Cómo se usa と para descubrimientos en la narración?',
       paragraphs: [
         'En narrativa, ~と expresa que al hacer algo se descubrió o sucedió algo. "玄関を開けると、子供が泣いていた" (cuando abrí la entrada, el niño estaba llorando) — el resultado es inesperado y automático desde la perspectiva narrativa.',
         'Este uso narrativo es muy frecuente en cuentos y descripciones de situaciones: "山を登ると、海が見えた" (cuando subí la montaña, se veía el mar). El tiempo de la cláusula principal suele ser pasado (〜た) cuando se describe un descubrimiento real.',
+      ],
+    },
+    {
+      heading: '¿Por qué ~と no admite órdenes ni peticiones en la segunda parte?',
+      paragraphs: [
+        '~と expresa una consecuencia automática, natural o inevitable: siempre que ocurre A, ocurre B. Se forma con el verbo en forma de diccionario + と: 春になると、桜が咲きます (cuando llega la primavera, florecen los cerezos), このボタンを押すと、ドアが開きます (si pulsas este botón, la puerta se abre). Por su carácter de ley natural o resultado seguro, la segunda parte NO puede ser una orden, petición, invitación ni deseo: 家に帰ると、電話してください es incorrecto (ahí se usa たら). La trampa para el hispanohablante es usar と como un "si" general: と solo vale para relaciones causa-efecto inevitables o repetidas (máquinas, naturaleza, rutas, hábitos). Para condiciones con petición o intención, se usa たら o ば.',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa las instrucciones de dirección usando ~と.',
         type: 'guidedText',
         scene: '駅から会社までの道を教えています。',
-        text: '駅を出る[[0]]、まっすぐ行きます。信号を[[1]] 右に曲がる[[0]]、大きい橋があります。橋を渡る[[0]]、すぐ左に建物が[[1]]。そこを入る[[0]]、受付があります。',
+        text: '駅を出る[[0]]、まっすぐ行きます。信号を[[1]] 右に曲がる[[2]]、大きい橋があります。橋を渡る[[3]]、すぐ左に建物が[[4]]。そこを入る[[5]]、受付があります。',
         blanks: [
           { options: ['と', 'たら', 'ば', 'なら'], answer: 'と', explain: '"出ると / 曲がると / 渡ると / 入ると" = instrucciones de dirección → ~と para resultados naturales.' },
           { options: ['渡ると', '渡ったら', '渡れば', '渡るなら'], answer: '渡ると', explain: '"信号を渡ると" → la instrucción continúa con ~と.' },
@@ -183,7 +189,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: completa el resultado natural de cada condición.',
         type: 'freeText',
         scene: 'と を使って結果を書いてください。',
-        text: '右に曲がる___ (と), 駅があります。 / たくさん練習する___ (と), 上手になります。 / 春になる___ (と), 暖かくなります。 / このボタンを押す___ (と), 音が出ます。',
+        text: '右に曲がる[[0]] (と), 駅があります。 / たくさん練習する[[1]] (と), 上手になります。 / 春になる[[2]] (と), 暖かくなります。 / このボタンを押す[[3]] (と), 音が出ます。',
         blanks: [
           { answer: 'と', explain: '"右に曲がると" = instrucción de dirección, resultado natural.' },
           { answer: 'と', explain: '"練習すると" = ley de causa-efecto natural.' },

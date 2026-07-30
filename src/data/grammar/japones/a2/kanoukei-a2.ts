@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La forma potencial en japones: como decir "puedo hacer algo"',
+      heading: '¿Cómo se forma el potencial para decir "puedo hacer algo"?',
       paragraphs: [
         'La forma potencial es esencial para hablar de tus habilidades en japones. Para verbos del Grupo 1, la regla es cambiar la vocal final de う a え y agregar る: 書く→書ける, 飲む→飲める, 話す→話せる. Para el Grupo 2, agrega られる: 食べる→食べられる, 見る→見られる.',
         'Los dos irregulares son する→できる y くる→こられる. El verbo できる es especialmente util: 日本語ができます = Se japones / Puedo hablar japones.',
       ],
     },
     {
-      heading: 'El potencial con が y la contraccion coloquial',
+      heading: '¿Por qué el potencial usa が y cómo se contrae en coloquial?',
       paragraphs: [
         'Con el potencial, el objeto de la accion frecuentemente va con が en lugar de を: 日本語が話せます (no 日本語を). Esta es una diferencia importante del japones estandar.',
         'En japones coloquial, el Grupo 2 a veces pierde la ら: 食べれる en lugar de 食べられる. Este fenomeno se llama "ら抜き言葉" (ra-nuki kotoba) y aunque es muy comun en el habla, evitalo en escribir formal.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga la forma potencial en cada grupo verbal?',
+      paragraphs: [
+        'La forma potencial se construye según el grupo. Grupo 1 (godan): se cambia la última -u por -eru: 書く→書ける (poder escribir), 話す→話せる, 読む→読める. Grupo 2 (ichidan): se quita る y se añade られる: 食べる→食べられる (poder comer), 見る→見られる. Irregulares: する→できる (poder hacer), 来る→来られる (こられる). Todos los potenciales se conjugan luego como verbos del grupo 2. Un rasgo importante: el objeto pasa de を a が con el potencial: 日本語が話せます (puedo hablar japonés), no 日本語を話せます en registro cuidado. La trampa para el hispanohablante es doble: recordar el cambio を→が y no confundir 食べられる (potencial) con el idéntico pasivo; en habla coloquial se abrevia a 食べれる (ら抜き言葉).',
       ],
     },
   ],
@@ -109,7 +115,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Poder hablar espanol',
-            lines: [['David', 'スペイン語が___か？(¿Puedes hablar espanol?)']],
+            lines: [['Tomás', 'スペイン語が___か？(¿Puedes hablar espanol?)']],
             options: ['話せますか', '話しますか', '話されますか', '話れますか'],
             answer: '話せますか',
             explain: '話す (Gr.1): す→せ+る = 話せる → 話せますか？',
@@ -137,14 +143,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No poder ir hoy',
-            lines: [['Jose', '今日は___。(hoy no puedo ir)']],
+            lines: [['Nico', '今日は___。(hoy no puedo ir)']],
             options: ['行けません', '行きられません', '行かれません', '行きません'],
             answer: '行けません',
             explain: '行く (Gr.1): く→け+る = 行ける → negativo: 行けません.',
           },
           {
             scene: 'Poder ver bien — 見る',
-            lines: [['Zhanna', 'ここからよく___か？(¿Se puede ver bien desde aqui?)']],
+            lines: [['Iris', 'ここからよく___か？(¿Se puede ver bien desde aqui?)']],
             options: ['見られますか', '見えますか', '見ますか', '見られませんか'],
             answer: '見られますか',
             explain: '見る (Gr.2): 見 + られる → 見られる → 見られますか？',
@@ -160,7 +166,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Habilidades lingüisticas',
-            lines: [['David', '中国語が[[0]]か？'], ['Carlos', 'いいえ、でも韓国語が[[1]]よ。']],
+            lines: [['Tomás', '中国語が[[0]]か？'], ['Carlos', 'いいえ、でも韓国語が[[1]]よ。']],
             blanks: [
               { options: ['話せますか', '話しますか', '話されますか'], answer: '話せますか', explain: '話す→話せる → 話せますか？' },
               { options: ['話せます', '話します', '話されます'], answer: '話せます', explain: '話す→話せる → 話せます. Puede hablar coreano.' },
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Reunion manana',
-            lines: [['Jose', '明日の会議に[[0]]か？'], ['Zhanna', 'いいえ、残念ながら[[1]]。']],
+            lines: [['Nico', '明日の会議に[[0]]か？'], ['Iris', 'いいえ、残念ながら[[1]]。']],
             blanks: [
               { options: ['来られますか', '来ますか', 'きれますか'], answer: '来られますか', explain: 'くる (irregular): こられる → 来られますか？' },
               { options: ['来られません', '来ません', 'きれません'], answer: '来られません', explain: 'くる→こられる → negativo: 来られません.' },

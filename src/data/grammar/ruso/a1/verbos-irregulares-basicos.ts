@@ -60,6 +60,20 @@ const topic: GrammarTopic = {
         ['они', 'знают', 'идут'],
       ],
     },
+    {
+      heading: '¿Cómo se conjuga хотеть (querer), un verbo mixto?',
+      paragraphs: [
+        'хотеть es famoso por ser "mixto": el singular sigue la 1ª conjugación y el plural la 2ª. Se conjuga: я хочу, ты хочешь, он/она хочет (singular, con alternancia т→ч y terminaciones -у/-ешь/-ет), pero мы хотим, вы хотите, они хотят (plural, terminaciones -им/-ите/-ят).',
+        'La trampa para el hispanohablante es que dentro de un mismo verbo cambian tanto la consonante de la raíz (хоч- en singular, хот- en plural) como el modelo de terminaciones. Es de altísima frecuencia (Я хочу есть = quiero comer), así que conviene memorizar las seis formas.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan есть (comer) y пить (beber)?',
+      paragraphs: [
+        'есть (comer) es irregular: я ем, ты ешь, он/она ест, мы едим, вы едите, они едят. пить (beber) pierde la и de la raíz y añade ь: я пью, ты пьёшь, он/она пьёт, мы пьём, вы пьёте, они пьют.',
+        'La trampa para el hispanohablante es no confundir есть "comer" con есть "hay/tener" (У меня есть = tengo), que son palabras homónimas pero de uso distinto. Y en пить, recordar el signo blando ь ante las terminaciones (пью, пьёт), que marca la pronunciación "pyu, pyot".',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',
@@ -70,7 +84,7 @@ const topic: GrammarTopic = {
     scene: [
       ['хотеть', 'Я хочу учить русский в WeLearn. (Quiero estudiar ruso.) — Она хочет кофе. (Ella quiere café.)'],
       ['мочь', 'Я могу помочь. (Puedo ayudar.) — Ты можешь говорить медленнее? (¿Puedes hablar más lento?)'],
-      ['знать', 'Я знаю немного русский. (Sé un poco de ruso.) — Вы знаете Давида? (¿Conocen a David?)'],
+      ['знать', 'Я знаю немного русский. (Sé un poco de ruso.) — Вы знаете Давида? (¿Conocen a Bruno?)'],
       ['идти', 'Я иду на урок. (Voy a clase [ahora].) — Куда ты идёшь? (¿Adónde vas?)'],
     ],
     learnerModes: ['recognition', 'gap-fill', 'production'],
@@ -103,7 +117,7 @@ const topic: GrammarTopic = {
         intro: 'Elige el verbo y la forma correcta.',
         type: 'dual',
         items: [
-          { scene: 'Querer + café', lines: [['', '"David quiere un café": Дэвид [[0]] [[1]].']], blanks: [{ options: ['хочет', 'хочу', 'хотят', 'хотим'], answer: 'хочет', explain: 'Дэвид (он) → хочет. 3ª persona singular.' }, { options: ['кофе', 'кофею', 'кофей', 'кофея'], answer: 'кофе', explain: 'Кофе es indeclinable en ruso — siempre "кофе".' }] },
+          { scene: 'Querer + café', lines: [['', '"Bruno quiere un café": Дэвид [[0]] [[1]].']], blanks: [{ options: ['хочет', 'хочу', 'хотят', 'хотим'], answer: 'хочет', explain: 'Дэвид (он) → хочет. 3ª persona singular.' }, { options: ['кофе', 'кофею', 'кофей', 'кофея'], answer: 'кофе', explain: 'Кофе es indeclinable en ruso — siempre "кофе".' }] },
           { scene: 'Poder + hablar', lines: [['', '"¿Puedes hablar más lento?": Ты [[0]] говорить [[1]]?']], blanks: [{ options: ['можешь', 'могу', 'может', 'можем'], answer: 'можешь', explain: 'Ты → можешь. Мочь, 2ª persona singular.' }, { options: ['быстро', 'медленнее', 'хорошо', 'тихо'], answer: 'медленнее', explain: 'Медленнее = más lento (comparativo de медленно).' }] },
           { scene: 'Saber + ruso', lines: [['', '"¿Saben ruso?": Вы [[0]] [[1]]?']], blanks: [{ options: ['знаете', 'знают', 'знаем', 'знаешь'], answer: 'знаете', explain: 'Вы → знаете. 2ª persona plural (formal).' }, { options: ['русского', 'по-русски', 'русскому', 'русский'], answer: 'по-русски', explain: 'Знать по-русски = saber ruso (el idioma). Literalmente "saber en ruso".' }] },
           { scene: 'Ir a clase', lines: [['', '"Voy a clase ahora": Я [[0]] [[1]] сейчас.']], blanks: [{ options: ['иду', 'идёшь', 'идёт', 'идут'], answer: 'иду', explain: 'Я → иду. Идти, 1ª persona singular.' }, { options: ['на урок', 'в урок', 'к уроку', 'урок'], answer: 'на урок', explain: 'На урок = a clase. Preposición "на" + acusativo para lecciones/eventos.' }] },
@@ -116,7 +130,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con los verbos irregulares correctos.',
         type: 'guidedText',
         scene: 'Primera clase en WeLearn',
-        text: 'Дэвид спрашивает: «Вы [[0]] говорить по-русски?» (¿Saben hablar en ruso?) Студентка отвечает: «Я [[1]] только немного». (Solo sé un poco.) «Отлично! Вы [[2]] учить!» (¡Perfecto! ¡Pueden aprender!) «Я [[3]] учить с вами». (Quiero aprender con ustedes.) Потом Дэвид [[4]] к доске. (Luego David va a la pizarra.)',
+        text: 'Дэвид спрашивает: «Вы [[0]] говорить по-русски?» (¿Saben hablar en ruso?) Студентка отвечает: «Я [[1]] только немного». (Solo sé un poco.) «Отлично! Вы [[2]] учить!» (¡Perfecto! ¡Pueden aprender!) «Я [[3]] учить с вами». (Quiero aprender con ustedes.) Потом Дэвид [[4]] к доске. (Luego Bruno va a la pizarra.)',
         blanks: [
           { options: ['знаете', 'знают', 'знаем', 'знаешь'], answer: 'знаете', explain: 'Вы знаете — 2ª persona plural, знать.' },
           { options: ['знаю', 'знаешь', 'знает', 'знаем'], answer: 'знаю', explain: 'Я знаю — 1ª persona singular, знать.' },
@@ -151,7 +165,7 @@ const topic: GrammarTopic = {
           { scene: 'хотеть en práctica', prompt: '(хотеть) → "Yo quiero aprender ruso en WeLearn."', answer: 'Я хочу учить русский в WeLearn.', accepted: ['Я хочу учить русский в WeLearn.', 'Я хочу учить русский.'], explain: 'Я хочу + infinitivo. Хотеть: хочу (1ª sg).' },
           { scene: 'мочь en práctica', prompt: '(мочь) → "¿Pueden hablar más lento, por favor?"', answer: 'Вы можете говорить медленнее, пожалуйста?', accepted: ['Вы можете говорить медленнее, пожалуйста?', 'Вы можете говорить медленнее?'], explain: 'Вы можете + infinitivo. Мочь: можете (2ª pl).' },
           { scene: 'знать en práctica', prompt: '(знать) → "Nosotros sabemos un poco de japonés."', answer: 'Мы знаем немного японский.', accepted: ['Мы знаем немного японский.', 'Мы знаем немного по-японски.'], explain: 'Мы знаем. Знать: знаем (1ª pl).' },
-          { scene: 'идти en práctica', prompt: '(идти) → "David va a clase ahora."', answer: 'Дэвид идёт на урок сейчас.', accepted: ['Дэвид идёт на урок сейчас.', 'Дэвид идёт на урок.'], explain: 'Дэвид (он) идёт. Идти: идёт (3ª sg).' },
+          { scene: 'идти en práctica', prompt: '(идти) → "Bruno va a clase ahora."', answer: 'Дэвид идёт на урок сейчас.', accepted: ['Дэвид идёт на урок сейчас.', 'Дэвид идёт на урок.'], explain: 'Дэвид (он) идёт. Идти: идёт (3ª sg).' },
         ],
       },
       {

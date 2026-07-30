@@ -45,21 +45,21 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El futur proche: el futuro natural del francés hablado',
+      heading: '¿Qué es el futur proche en francés?',
       paragraphs: [
         'El futur proche (futur immédiat) es con diferencia el tiempo verbal más usado para expresar el futuro en el francés hablado moderno. Mientras el futur simple (je mangerai) es más formal y literario, el futur proche (je vais manger) aparece en más del 80% de las frases sobre planes y predicciones en la conversación cotidiana.',
         'Se forma de manera muy sencilla y lógica: aller conjugado en presente + el verbo principal en infinitivo. Si sabes conjugar aller (vais/vas/va/allons/allez/vont) y conoces el infinitivo del verbo, tienes el futur proche. Ejemplos: Je vais étudier (voy a estudiar), Tu vas voyager (vas a viajar), Nous allons manger ensemble (vamos a comer juntos).',
       ],
     },
     {
-      heading: 'Negación e interrogación en el futur proche',
+      heading: '¿Cómo se niega y se pregunta en el futur proche?',
       paragraphs: [
         'La negación del futur proche sigue la regla general: ne...pas rodea el verbo conjugado, que en este caso es aller. Je ne vais pas travailler demain. / Elle ne va pas venir. / Nous n\'allons pas partir. El infinitivo queda fuera de la negación.',
         'Para preguntas, las tres formas de A1 funcionan: Est-ce que tu vas venir? (más formal) / Tu vas venir? (informal, entonación) / Vas-tu venir? (inversión, más literario). En A1, usa preferentemente Est-ce que o la entonación ascendente.',
       ],
     },
     {
-      heading: 'Futur proche vs présent: ¿cuándo usar cada uno?',
+      heading: '¿Cuándo se usa el futur proche y cuándo el presente en francés?',
       paragraphs: [
         'El présent expresa acciones habituales, repetidas o que ocurren en este momento. El futur proche expresa lo que VA A PASAR — planes, intenciones, predicciones a corto plazo. Je travaille le lundi (habitualmente, présent) vs Je vais travailler lundi prochain (el próximo lunes, plan concreto, futur proche).',
         'En la conversación cotidiana, siempre que quieras hablar de algo que ocurrirá en el futuro, usa el futur proche. Demain je vais... / Ce week-end nous allons... / Ce soir elle va... Son las estructuras más naturales en francés hablado.',
@@ -104,7 +104,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Predicción del tiempo',
-            lines: [['David', 'Il ___ pleuvoir demain.']],
+            lines: [['Diego', 'Il ___ pleuvoir demain.']],
             options: ['va', 'vais', 'vas', 'allons'],
             answer: 'va',
             explain: '"Il" → il va + infinitif. Para predicciones también se usa futur proche.',
@@ -118,7 +118,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pregunta a la clase',
-            lines: [['David', 'Vous ___ faire l\'exercice maintenant?']],
+            lines: [['Diego', 'Vous ___ faire l\'exercice maintenant?']],
             options: ['allez', 'allons', 'vont', 'vas'],
             answer: 'allez',
             explain: '"Vous" → vous allez + infinitif.',
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Negando un plan',
-            lines: [['David', 'Elle ne [[0]] pas [[1]] aujourd\'hui.']],
+            lines: [['Diego', 'Elle ne [[0]] pas [[1]] aujourd\'hui.']],
             blanks: [
               { options: ['va', 'vais', 'allons'], answer: 'va', explain: '"Elle" → va (ne va pas).' },
               { options: ['travailler', 'travaille', 'travaillé'], answer: 'travailler', explain: 'Infinitivo: travailler.' },
@@ -211,7 +211,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de aller para expresar los planes.',
         type: 'freeText',
         scene: 'Completar planes personales y predicciones usando futur proche',
-        text: 'Ce soir, je ___ (vais/vas/va) regarder une série. Demain matin, tu ___ (vais/vas/va) travailler. Le week-end, nous ___ (allons/allez/vont) voyager. Elle ne ___ (vais/vas/va) pas venir à la fête. Ils ___ (allons/allez/vont) apprendre une nouvelle langue. On ___ (vais/vas/va) bien s\'amuser!',
+        text: 'Ce soir, je [[0]] (vais/vas/va) regarder une série. Demain matin, tu [[1]] (vais/vas/va) travailler. Le week-end, nous [[2]] (allons/allez/vont) voyager. Elle ne [[3]] (vais/vas/va) pas venir à la fête. Ils [[4]] (allons/allez/vont) apprendre une nouvelle langue. On [[5]] (vais/vas/va) bien s\'amuser!',
         blanks: [
           { answer: 'vais', accepted: ['vais'], explain: '"Je" → vais.' },
           { answer: 'vas', accepted: ['vas'], explain: '"Tu" → vas.' },

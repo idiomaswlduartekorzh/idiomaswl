@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Usos del conditionnel présent',
+      heading: '¿Cuáles son los usos del conditionnel présent en francés?',
       paragraphs: [
         'El conditionnel présent tiene varios usos esenciales. El más importante para el nivel B1 es la hipótesis irreal o improbable (tipo 2): "Si j\'avais plus de temps, je lirais davantage." Aquí la condición (tener más tiempo) se presenta como contraria a la realidad actual.',
         'También expresa peticiones corteses y deseos: "Je voudrais réserver une table." (Quisiera reservar una mesa.) / "Pourriez-vous m\'aider?" (¿Podría usted ayudarme?) / "J\'aimerais visiter le Japon un jour." Estas formas son mucho más educadas que usar el présent directo.',
       ],
     },
     {
-      heading: 'Conditionnel para dar consejos',
+      heading: '¿Cómo se dan consejos con el conditionnel en francés?',
       paragraphs: [
         'El conditionnel de "devoir" (devrais/devriez/devrait) es la forma más natural para dar consejos en francés: "Tu devrais te reposer." (Deberías descansar.) / "Vous devriez consulter un médecin." / "Il devrait partir plus tôt pour éviter les embouteillages."',
         'También puedes usar el conditionnel de "pouvoir" para sugerencias más suaves: "Tu pourrais essayer cette application." (Podrías probar esta aplicación.) O "avoir intérêt à": "Tu aurais intérêt à arriver en avance."',
@@ -161,7 +161,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Deseo expresado con cortesía',
             lines: [['', "J'___ visiter le musée d'Orsay un jour."]],
-            options: ['aimerais', 'aime', 'aimerai', 'aime'],
+            options: ['aimerais', 'aime', 'aimerai'],
             answer: 'aimerais',
             explain: 'Deseo con aimer en conditionnel: j\'aimerais (regular: aim- + -erais).',
           },

@@ -52,17 +52,41 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '¿Cuál es la diferencia entre pronombre directo e indirecto en italiano?',
+      heading: 'Directo vs indirecto: la tabla comparativa',
       paragraphs: [
-        'El pronombre directo reemplaza el objeto que recibe directamente la acción (sin preposición): vedo Marco → lo vedo. El pronombre indirecto reemplaza el objeto introducido por "a": scrivo a Marco → gli scrivo.',
-        'La pregunta clave: ¿a quién? Para el objeto indirecto. ¿A quién le escribes? → A Marco → Gli scrivo. Si en español dices "le" o "les" (le digo, les mando), en italiano usas gli o le.',
+        'El pronombre directo reemplaza el objeto sin preposición (vedo Marco → lo vedo); el indirecto reemplaza el objeto introducido por "a" (scrivo a Marco → gli scrivo). Solo se diferencian en la tercera persona; en el resto la forma es idéntica. La prueba: pregúntate "¿a quién?" → indirecto. Compara las dos series:',
+      ],
+      table: [
+        ['Persona', 'Directo', 'Indirecto (a…)'],
+        ['me / te', 'mi / ti', 'mi / ti'],
+        ['a él', 'lo', 'gli'],
+        ['a ella / usted', 'la', 'le'],
+        ['nos / os', 'ci / vi', 'ci / vi'],
+        ['a ellos/as', 'li / le', 'gli (o loro)'],
       ],
     },
     {
       heading: 'Gli o le: cómo elegir para la tercera persona',
       paragraphs: [
-        'La tercera persona es la más delicada. Gli va con personas masculinas (a él, a ellos en italiano moderno): gli telefono (= le llamo a él). Le va con personas femeninas y con el usted formal: le scrivo (= le escribo a ella / a usted).',
-        'En italiano contemporáneo gli se usa cada vez más para "a ellos/ellas", sustituyendo a "loro". "Gli mando un messaggio" es correcto y más natural que "Mando loro un messaggio".',
+        'Es el punto más delicado. Gli = "a él" (y, en italiano moderno, también "a ellos/ellas"): "gli telefono". Le = "a ella" y el usted formal: "le scrivo". En italiano contemporáneo gli sustituye cada vez más a "loro": "Gli mando un messaggio" es más natural que "Mando loro un messaggio". Cuidado: "le" indirecto (a ella) no es lo mismo que "la" directo (la veo).',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los pronombres de objeto indirecto en italiano?',
+      paragraphs: [
+        'Son: mi (a mí), ti (a ti), gli (a él), le (a ella / a usted), ci (a nosotros), vi (a vosotros) y gli / loro (a ellos/as). Reemplazan al complemento introducido por "a": "Scrivo a Luca → Gli scrivo".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "gli" y cuándo "le"?',
+      paragraphs: [
+        '"gli" para "a él" (e informalmente "a ellos/as"): "Gli parlo domani". "le" para "a ella" y para el usted formal: "Le telefono stasera". Ambos son pronombres indirectos; no confundas "le" (a ella) con el directo "la" (la ve).',
+      ],
+    },
+    {
+      heading: '¿Cómo distingo el pronombre directo del indirecto en italiano?',
+      paragraphs: [
+        'Depende del verbo. Si el objeto va sin preposición, es directo (vedo Marco → lo vedo). Si va introducido por "a", es indirecto (telefono a Marco → gli telefono). Prueba rápida: si en español dices "le/les" (le escribo), en italiano es indirecto (gli/le).',
       ],
     },
   ],
@@ -99,7 +123,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El mensaje a Ana',
-            lines: [['David', '___ mando un messaggio oggi. (ad Ana)']],
+            lines: [['Bruno', '___ mando un messaggio oggi. (ad Ana)']],
             options: ['Le', 'Gli', 'La', 'Lo'],
             answer: 'Le',
             explain: 'A Ana = persona femenina → le. Le mando un messaggio.',
@@ -173,7 +197,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El email',
-            lines: [['David', '— Hai risposto ai colleghi? — Sì, [[0]] [[1]] ieri.']],
+            lines: [['Bruno', '— Hai risposto ai colleghi? — Sì, [[0]] [[1]] ieri.']],
             blanks: [
               { options: ['gli', 'le', 'li', 'vi'], answer: 'gli', explain: 'Ai colleghi = plural → gli.' },
               { options: ['ho risposto', 'ho risposta', 'sono risposto'], answer: 'ho risposto', explain: 'Rispondere con avere: ho risposto.' },
@@ -211,11 +235,11 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe el pronombre indirecto correcto.',
         type: 'freeText',
-        scene: 'En WeLearn: David habla de su comunicación con estudiantes y colegas',
-        text: 'Agli studenti [[0]] mando sempre i materiali prima della lezione. A Zhanna [[1]] chiedo consiglio quando ho un dubbio. I genitori degli studenti? [[2]] scrivo se c\'è un problema. Ai nuovi iscritti [[3]] do il benvenuto personalmente. E a voi, studenti, [[4]] auguro buono studio!',
+        scene: 'En WeLearn: Bruno habla de su comunicación con estudiantes y colegas',
+        text: 'Agli studenti [[0]] mando sempre i materiali prima della lezione. A Clara [[1]] chiedo consiglio quando ho un dubbio. I genitori degli studenti? [[2]] scrivo se c\'è un problema. Ai nuovi iscritti [[3]] do il benvenuto personalmente. E a voi, studenti, [[4]] auguro buono studio!',
         blanks: [
           { answer: 'gli', explain: 'Agli studenti = plural → gli.' },
-          { answer: 'le', explain: 'A Zhanna (femenino) → le.' },
+          { answer: 'le', explain: 'A Clara (femenino) → le.' },
           { answer: 'Gli', explain: 'Ai genitori = plural → gli.' },
           { answer: 'gli', explain: 'Ai nuovi iscritti = plural → gli.' },
           { answer: 'vi', explain: 'A voi = segunda persona plural → vi.' },

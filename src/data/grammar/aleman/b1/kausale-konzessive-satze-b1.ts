@@ -47,7 +47,7 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La diferencia clave: obwohl vs. trotzdem',
+      heading: '¿Cuál es la diferencia entre obwohl y trotzdem en alemán?',
       paragraphs: [
         '"Obwohl" es una subjunción: introduce una oración subordinada con el verbo al final. "Trotzdem" es un adverbio conjuntivo: va al inicio de una oración independiente con inversión del verbo. Ambos expresan concesión, pero su estructura gramatical es completamente diferente.',
         'Ejemplos paralelos: "Obwohl es kalt ist, gehe ich spazieren." vs. "Es ist kalt. Trotzdem gehe ich spazieren." Ambas significan lo mismo (A pesar del frío salgo a pasear) pero con estructura diferente.',
@@ -61,10 +61,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Weil vs. denn: misma causa, diferente estructura',
+      heading: '¿Cuál es la diferencia entre weil y denn en alemán?',
       paragraphs: [
         '"Weil" introduce un Nebensatz (el verbo va al final): "Ich lerne Deutsch, weil ich es interessant finde." "Denn" es una Konjunktion coordinante que une dos frases independientes sin cambiar el orden del verbo: "Ich lerne Deutsch, denn ich finde es interessant."',
         'En el habla cotidiana "weil" es más común. "Denn" suena más formal o literario. En el alemán escrito ambos son correctos.',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresan causa y concesión en alemán?',
+      paragraphs: [
+        'La causa ("por qué") se marca con weil y da (subordinantes → verbo al final: "Ich bleibe zu Hause, weil ich krank bin") o con denn (coordinante → orden normal: "…, denn ich bin krank"). La concesión ("a pesar de") se marca con obwohl (subordinante → verbo al final: "Obwohl es regnet, gehe ich spazieren") o con trotzdem (adverbio → provoca inversión: "Es regnet, trotzdem gehe ich spazieren"). La trampa clave del hispanohablante es la posición del verbo: weil y obwohl mandan el verbo conjugado al final de su cláusula, mientras que denn y trotzdem no alteran ese orden (aunque trotzdem sí invierte sujeto y verbo). Distinguir subordinante de adverbio conector es lo que decide dónde va el verbo.',
       ],
     },
   ],

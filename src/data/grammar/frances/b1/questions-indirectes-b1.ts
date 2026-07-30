@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "¿Qué es una pregunta indirecta en francés?",
+      heading: '¿Qué es una pregunta indirecta en francés?',
       paragraphs: [
         "Una question indirecte embebe una pregunta dentro de otra oración, usando verbos como 'se demander', 'savoir', 'dire', 'demander', 'expliquer'. Ejemplos: 'Je ne sais pas où il habite' (No sé dónde vive), 'Elle m'a demandé si j'étais libre ce soir' (Me preguntó si estaba libre esta noche). A diferencia de la pregunta directa, la indirecta no lleva inversión del sujeto ni signo de interrogación.",
         "Las preguntas indirectas son fundamentales para comunicarse de forma educada y formal. En lugar de '\"Où est la gare?\"' (directo, algo brusco), podemos decir 'Pourriez-vous me dire où se trouve la gare?' (mucho más cortés). También permiten reportar preguntas que hicimos o que nos hicieron sin citarlas textualmente.",
       ],
     },
     {
-      heading: "Las reglas clave: sin inversión, si, ce qui/ce que",
+      heading: '¿Cuáles son las reglas de las preguntas indirectas en francés?',
       paragraphs: [
         "Tres reglas fundamentales de las questions indirectes: Primera — eliminar la inversión: 'Où va-t-il?' → 'Je me demande où il va' (no 'où va-t-il'). Segunda — preguntas de sí/no: sustituir 'est-ce que' o la inversión por 'si': 'Est-ce qu'il viendra?' → 'Je voudrais savoir s'il viendra'. Tercera — qu'est-ce qui / qu'est-ce que → ce qui / ce que: 'Qu'est-ce qui se passe?' → 'Je veux savoir ce qui se passe'; 'Qu'est-ce que tu veux?' → 'Je veux savoir ce que tu veux'.",
         "Los otros pronombres interrogativos (où, quand, comment, pourquoi, combien, quel) no cambian, solo se elimina la inversión: 'Pourquoi part-il?' → 'Je ne comprends pas pourquoi il part'. El signo de interrogación desaparece, reemplazado por punto: 'Dis-moi quand tu arriveras.' (no '...arriveras?').",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Verbos introductorios y usos de las preguntas indirectas",
+      heading: '¿Qué verbos introducen las preguntas indirectas en francés?',
       paragraphs: [
         "Los verbos más comunes para introducir preguntas indirectas son: se demander (preguntarse), savoir (saber), dire (decir), expliquer (explicar), comprendre (comprender), demander (preguntar), vouloir savoir (querer saber), ignorer (desconocer). Ejemplos: 'Je me demande pourquoi elle est partie' (Me pregunto por qué se fue), 'Il ne sait pas comment faire' (No sabe cómo hacerlo).",
         "En contextos formales y profesionales, las preguntas indirectas son esenciales: 'Pourriez-vous m'indiquer comment accéder au service client?' (¿Podría indicarme cómo acceder al servicio al cliente?). También en formularios y encuestas: 'Veuillez préciser dans quel secteur vous travaillez.' (Por favor, indique en qué sector trabaja). El dominio de las questions indirectes es marca de registro formal y educado en francés.",

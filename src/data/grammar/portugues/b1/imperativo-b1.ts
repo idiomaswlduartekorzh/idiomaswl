@@ -63,7 +63,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Imperativo negativo',
+      heading: '¿Cómo se forma el imperativo negativo en portugués?',
       paragraphs: [
         'El imperativo negativo se forma con "não" + subjuntivo para todas las personas: não fales, não fale, não falemos, não faleis, não falem.',
         'Esta estructura es más regular que el afirmativo y es más fácil de formar, ya que solo necesitas saber el subjuntivo.',
@@ -77,7 +77,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Imperativos irregulares frecuentes',
+      heading: '¿Cuáles son los imperativos irregulares en portugués?',
       paragraphs: [
         'Algunos verbos tienen imperativos irregulares: ser→sê/sejas, estar→está/estejas, ir→vai/vás, ter→tem/tenhas, fazer→faz/faças, dizer→diz/digas, trazer→traz/tragas.',
         'Estos irregulares deben ser memorizados, pero son los verbos más frecuentes.',

@@ -66,14 +66,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo determinar el caso del pronombre relativo',
+      heading: '¿Cómo se determina el caso del pronombre relativo en alemán?',
       paragraphs: [
         'Pregúntate: ¿qué función tiene el pronombre relativo dentro de SU oración? Si es el sujeto (hace la acción) → Nominativ. Si es el objeto directo (lo recibe la acción directamente) → Akkusativ. Si es el objeto indirecto → Dativ.',
         '"Der Mann, der anruft" — der Mann = sujeto de anrufen → Nominativ. "Der Mann, den ich anrufe" — ich = sujeto; den Mann = objeto directo → Akkusativ. "Der Mann, dem ich schreibe" — ich = sujeto; dem Mann = objeto indirecto → Dativ.',
       ],
     },
     {
-      heading: 'Relativsätze con preposición',
+      heading: '¿Cómo se forman los Relativsätze con preposición en alemán?',
       paragraphs: [
         'Cuando el pronombre relativo va precedido de una preposición, la preposición aparece delante del pronombre: "Die Stadt, in der ich wohne, ist schön." (La ciudad en la que vivo es bonita.) "Der Kollege, mit dem ich arbeite, ist sehr nett."',
         'El caso del pronombre lo determina la preposición: "in + Dativ" → in der (fem. Dat.); "mit + Dativ" → mit dem (mask. Dat.); "für + Akkusativ" → für den (mask. Akk.).',

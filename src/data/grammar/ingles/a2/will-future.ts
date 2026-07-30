@@ -91,6 +91,24 @@ const topic: GrammarTopic = {
         'Otro error: usar "will" para planes ya decididos. "I will go to the cinema tomorrow (I already have tickets)" debería ser "I\'m going to the cinema tomorrow" o "I\'m going to go to the cinema tomorrow".',
       ],
     },
+    {
+      heading: '¿Cómo se forma el futuro con "will" en inglés?',
+      paragraphs: [
+        'Con will + verbo en forma base, igual para todas las personas: "I will help", "she will call". No lleva -s ni "to". Contracción: \'ll ("I\'ll", "they\'ll"). Negativo: won\'t (will not). Pregunta: se invierte ("Will you come?").',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "will" para el futuro?',
+      paragraphs: [
+        'Para decisiones del momento ("I\'ll answer the phone"), predicciones sin evidencia ("It will rain tomorrow"), promesas y ofrecimientos ("I\'ll help you"). Para planes ya decididos se prefiere "going to".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "will" y "going to"?',
+      paragraphs: [
+        '"will" para decisiones espontáneas y predicciones ("I think it will be fine"). "going to" para planes ya decididos y predicciones con evidencia ("I\'m going to study tonight", "Look, it\'s going to rain"). En planes concretos, el inglés prefiere "going to".',
+      ],
+    },
   ],
 
   visual: {
@@ -188,9 +206,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planeando la semana',
             lines: [
-              ['Friend:', '[[0]] you be at the office tomorrow?'],
-              ['You:', 'No, [[1]] work from home — I have a call in the morning.'],
-            ],
+ ['Friend:', '[[0]] you be at the office tomorrow?'],
+ ['You:', 'No, [[1]] work from home — I have a call in the morning.'],
+ ],
             blanks: [
               { options: ['Will', 'Are', 'Do', 'Shall'], answer: 'Will', explain: 'Pregunta sobre el futuro → Will + sujeto.' },
               { options: ['I\'ll', 'I\'m going to', 'I was', 'I am'], answer: 'I\'ll', explain: 'Respuesta: "I\'ll work from home" — contracción natural de I will.' },
@@ -199,9 +217,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conversación sobre el tiempo',
             lines: [
-              ['News:', 'Temperatures [[0]] drop significantly this weekend.'],
-              ['Friend:', 'Oh no! I [[1]] go to the beach then.'],
-            ],
+ ['News:', 'Temperatures [[0]] drop significantly this weekend.'],
+ ['Friend:', 'Oh no! I [[1]] go to the beach then.'],
+ ],
             blanks: [
               { options: ['will', 'are', 'go', 'be'], answer: 'will', explain: 'Predicción → will.' },
               { options: ['won\'t', 'will', 'don\'t', 'haven\'t'], answer: 'won\'t', explain: 'Decisión negativa → won\'t.' },
@@ -210,9 +228,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Haciendo promesas',
             lines: [
-              ['Parent:', 'Please call me when you arrive.'],
-              ['Child:', 'I [[0]], I promise. And I [[1]] be late — don\'t worry!'],
-            ],
+ ['Parent:', 'Please call me when you arrive.'],
+ ['Child:', 'I [[0]], I promise. And I [[1]] be late — don\'t worry!'],
+ ],
             blanks: [
               { options: ['will', 'do', 'am', 'shall'], answer: 'will', explain: 'Promesa: "I will" (o "I will call").' },
               { options: ['won\'t', 'will', 'don\'t', 'wasn\'t'], answer: 'won\'t', explain: 'Promesa negativa → won\'t.' },
@@ -221,9 +239,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la tienda',
             lines: [
-              ['Salesperson:', 'Can I help you?'],
-              ['Customer:', 'No, thanks, [[0]] just look. Actually — [[1]] take this one!'],
-            ],
+ ['Salesperson:', 'Can I help you?'],
+ ['Customer:', 'No, thanks, [[0]] just look. Actually — [[1]] take this one!'],
+ ],
             blanks: [
               { options: ['I\'ll', 'I am', 'I go', 'I was'], answer: 'I\'ll', explain: '"I\'ll just look" — decisión espontánea.' },
               { options: ['I\'ll', 'I am going to', 'I was', 'I do'], answer: 'I\'ll', explain: '"I\'ll take this" — decisión tomada en ese momento al ver el producto.' },

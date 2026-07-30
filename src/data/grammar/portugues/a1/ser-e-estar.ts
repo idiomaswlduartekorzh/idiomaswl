@@ -23,7 +23,7 @@ const topic: GrammarTopic = {
     model: 'Eu sou professor. (Soy profesor.) / Eu estou cansado. (Estoy cansado.) / Onde você está? (¿Dónde estás?)',
     formula: 'SER: sou/és/é/somos/são | ESTAR: estou/estás/está/estamos/estão',
     decisions: [
-      'SER: identidade (Eu sou David), origem (Sou de Bogotá), profissão (Sou professor)',
+      'SER: identidade (Eu sou Iván), origem (Sou de Bogotá), profissão (Sou professor)',
       'SER: características permanentes (Ela é alta), hora (São duas horas)',
       'ESTAR: estado/condição (Estou cansado, Estás bem?), emoções (Estou feliz)',
       'ESTAR: localização (A chave está na mesa, Onde você está?)',
@@ -58,6 +58,46 @@ const topic: GrammarTopic = {
         'El patrón de estou/estás/está es muy regular — solo la primera persona rompe el patrón con -ou en lugar de -o. En contraste, ser es completamente irregular (sou/és/é), como en español (soy/eres/es).',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre ser y estar en portugués?',
+      paragraphs: [
+        'La regla base es la misma que en español: ser marca lo permanente o definitorio (identidad, origen, profesión, características, hora), y estar marca lo temporal o circunstancial (estado, emoción, ubicación). Si en español dirías "soy", en portugués es sou/é; si dirías "estoy", es estou/está. Esa equivalencia acierta en el 90 % de los casos.',
+        'La trampa está en el 10 % restante: el portugués de Brasil admite ser para la ubicación de cosas fijas o permanentes ("A padaria é na esquina", la panadería queda en la esquina), donde el español obliga estar. Para personas y situaciones temporales, en cambio, siempre estar: "Onde você está?", nunca "onde você é". Esta tabla resume qué verbo pide cada función:',
+      ],
+      table: [
+        ['Uso', 'Verbo', 'Exemplo'],
+        ['Identidade / nome', 'ser', 'Eu sou Ana.'],
+        ['Origem', 'ser', 'Sou da Colômbia.'],
+        ['Profissão', 'ser', 'Ela é médica.'],
+        ['Característica permanente', 'ser', 'Ele é alto.'],
+        ['Hora e data', 'ser', 'São três horas.'],
+        ['Estado / condição', 'estar', 'Estou cansado.'],
+        ['Emoção', 'estar', 'Estamos felizes.'],
+        ['Localização (pessoas)', 'estar', 'A chave está aqui.'],
+        ['Local fixo (Brasil)', 'ser', 'A escola é aqui.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se conjugan ser y estar en presente?',
+      paragraphs: [
+        'Ser es irregular y hay que memorizarlo; estar es casi regular salvo la primera persona (estou, no "esto"). Conviene aprender las dos columnas en paralelo porque en la conversación se alternan todo el tiempo. Esta es la tabla completa de las dos:',
+      ],
+      table: [
+        ['Persona', 'SER', 'ESTAR'],
+        ['eu', 'sou', 'estou'],
+        ['tu', 'és', 'estás'],
+        ['você / ele / ela', 'é', 'está'],
+        ['nós', 'somos', 'estamos'],
+        ['vocês / eles / elas', 'são', 'estão'],
+      ],
+    },
+    {
+      heading: '¿Se dice "sou professor" o "estou professor"?',
+      paragraphs: [
+        'Se dice "sou professor". La profesión es una identidad, no un estado, así que va con ser en portugués igual que en español ("soy profesor", no "estoy profesor"). El mismo criterio aplica a "sou estudante", "sou médico", "sou de Bogotá". El error de usar estar con la profesión es el más frecuente del hispanohablante que arrastra la duda del inglés, pero en portugués la lógica es idéntica a la del español: identidad → ser.',
+        'El contraste típico en un examen es "Eu ___ engenheiro, mas hoje ___ de férias": la primera es sou (profesión, ser) y la segunda estou (situación temporal, estar). Cuando dudes, pregúntate si la frase describe QUIÉN es alguien (ser) o CÓMO está en este momento (estar).',
+      ],
+    },
   ],
   visual: {
     mode: 'verb-conjugation',
@@ -83,7 +123,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Profesión',
-            lines: [['David', 'Eu ___ professor de línguas.']],
+            lines: [['Iván', 'Eu ___ professor de línguas.']],
             options: ['sou', 'estou', 'é', 'está'],
             answer: 'sou',
             explain: 'Profesión: eu + ser → sou. "Sou professor".',
@@ -111,7 +151,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Descripción permanente',
-            lines: [['Marco', 'A Zhanna ___ muito inteligente.']],
+            lines: [['Marco', 'A Elena ___ muito inteligente.']],
             options: ['é', 'está', 'sou', 'estou'],
             answer: 'é',
             explain: 'Característica permanente: ela + ser → é.',
@@ -149,9 +189,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Presentación y estado',
             lines: [
-              ['Carlos', 'Eu [[0]] Carlos. Como você [[1]]?'],
-              ['Ana', 'Estou bem, obrigada!'],
-            ],
+ ['Carlos', 'Eu [[0]] Carlos. Como você [[1]]?'],
+ ['Ana', 'Estou bem, obrigada!'],
+ ],
             blanks: [
               { options: ['sou', 'estou', 'é'], answer: 'sou', explain: 'Identidad: eu sou + nombre.' },
               { options: ['está', 'é', 'estás'], answer: 'está', explain: 'Estado: como você está? (¿cómo estás?)' },
@@ -159,7 +199,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Profesión y ubicación',
-            lines: [['David', 'Eu [[0]] professor e agora [[1]] na sala de aula.']],
+            lines: [['Iván', 'Eu [[0]] professor e agora [[1]] na sala de aula.']],
             blanks: [
               { options: ['sou', 'estou', 'é'], answer: 'sou', explain: 'Profesión: eu sou professor.' },
               { options: ['estou', 'sou', 'é'], answer: 'estou', explain: 'Ubicación: eu estou + lugar.' },
@@ -167,7 +207,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Origen y emoción',
-            lines: [['Zhanna', 'Ela [[0]] da Ucrânia mas [[1]] muito feliz no Brasil.']],
+            lines: [['Elena', 'Ela [[0]] da Ucrânia mas [[1]] muito feliz no Brasil.']],
             blanks: [
               { options: ['é', 'está', 'sou'], answer: 'é', explain: 'Origen: ela é de Ucrânia. Ser.' },
               { options: ['está', 'é', 'estou'], answer: 'está', explain: 'Emoción: ela está feliz. Estar.' },
@@ -190,13 +230,13 @@ const topic: GrammarTopic = {
         intro: 'Ser o estar: elige la forma correcta.',
         type: 'guidedText',
         scene: 'Un día en la WeLearn Brasil',
-        text: 'David [[0]] (ser) professor na WeLearn. Hoje ele [[1]] (estar) muito animado porque tem uma aula nova. Os alunos [[2]] (estar) em sala esperando. A sala [[3]] (ser) grande e confortável. Zhanna [[4]] (ser) a diretora — ela [[5]] (estar) no escritório agora.',
+        text: 'Iván [[0]] (ser) professor na WeLearn. Hoje ele [[1]] (estar) muito animado porque tem uma aula nova. Os alunos [[2]] (estar) em sala esperando. A sala [[3]] (ser) grande e confortável. Elena [[4]] (ser) a diretora — ela [[5]] (estar) no escritório agora.',
         blanks: [
-          { options: ['é', 'está'], answer: 'é', explain: 'Profesión: David é professor. Ser.' },
+          { options: ['é', 'está'], answer: 'é', explain: 'Profesión: Iván é professor. Ser.' },
           { options: ['está', 'é'], answer: 'está', explain: 'Estado: hoje ele está animado. Estar.' },
           { options: ['estão', 'são'], answer: 'estão', explain: 'Ubicación: os alunos estão em sala. Estar.' },
           { options: ['é', 'está'], answer: 'é', explain: 'Característica permanente: a sala é grande. Ser.' },
-          { options: ['é', 'está'], answer: 'é', explain: 'Función/cargo: Zhanna é diretora. Ser.' },
+          { options: ['é', 'está'], answer: 'é', explain: 'Función/cargo: Elena é diretora. Ser.' },
           { options: ['está', 'é'], answer: 'está', explain: 'Ubicación: ela está no escritório. Estar.' },
         ],
       },

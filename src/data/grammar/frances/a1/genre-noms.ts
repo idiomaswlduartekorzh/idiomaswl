@@ -46,14 +46,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Terminaciones que indican masculino',
+      heading: '¿Qué terminaciones indican género masculino en francés?',
       paragraphs: [
         'Varios sufijos en francés apuntan al género masculino: -ment (le mouvement, le document), -age (le voyage, le fromage), -isme (le tourisme, le réalisme), -eau (le gâteau, le manteau), -er/-é (le marché, le café, le premier).',
         'También son masculinos en general: países no terminados en -e (le Brésil, le Canada, le Maroc), nombres de días (le lundi), meses (janvier, février), y metales/materiales (le bois, le fer).',
       ],
     },
     {
-      heading: 'Terminaciones que indican femenino',
+      heading: '¿Qué terminaciones indican género femenino en francés?',
       paragraphs: [
         'Sufijos frecuentemente femeninos: -tion/-sion (la nation, la télévision, la décision), -ure (la voiture, la culture, la nature), -ette (la baguette, la cassette, la tablette), -ance/-ence (la chance, la science, la patience), -ie (la boulangerie, la librairie).',
         'También son femeninos en general: países terminados en -e (la France, la Belgique, l\'Espagne — excepto le Mexique), muchas frutas (la pomme, la poire, la banane), y la mayoría de países europeos terminados en -e.',

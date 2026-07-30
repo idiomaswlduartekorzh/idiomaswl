@@ -54,14 +54,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Posición de zu con verbos separables',
+      heading: '¿Dónde se coloca zu con los verbos separables en alemán?',
       paragraphs: [
         'Con verbos separables (los que tienen un prefijo que se separa), el "zu" se inserta entre el prefijo y el verbo principal, formando una sola palabra: auf-zu-machen → aufzumachen; an-zu-rufen → anzurufen; auf-zu-hören → aufzuhören.',
         'Otros ejemplos: vor-zu-bereiten (vorbereitEN → vorzubereiten), mit-zu-nehmen (mitnehmen → mitzunehmen), ab-zu-fahren (abfahren → abzufahren). La regla es siempre: prefijo + zu + Verbstamm.',
       ],
     },
     {
-      heading: 'Verbos y expresiones que requieren Infinitiv mit zu',
+      heading: '¿Qué verbos exigen Infinitiv mit zu en alemán?',
       paragraphs: [
         'Algunos verbos siempre van seguidos de Infinitiv mit zu: versuchen, vergessen, beginnen, anfangen, aufhören, planen, empfehlen, bitten (pedir), beschließen, erlauben, verbieten, versprechen (prometer), hoffen.',
         'También muchas expresiones con "es ist...": "Es ist wichtig, pünktlich zu sein." / "Es ist schön, Freunde zu haben." / "Es ist schwer, eine neue Sprache zu lernen." Y estructuras con sustantivos abstractos: "Ich habe keine Lust, aufzuräumen" / "Ich habe keine Zeit, das zu machen."',

@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '～なければならない: la obligacion en japones A2',
+      heading: '¿Cómo se expresa la obligación con ～なければならない?',
       paragraphs: [
         '～なければなりません es la forma de expresar obligacion en japones A2. Se construye a partir de la forma negativa del verbo: 行く→行かない, quitas el い final y agregas ければなりません: 行かなければなりません. Para Grupo 2: 食べる→食べない→食べなければなりません.',
         'La variante ～なくてはいけません es igualmente correcta y comun: 行かなくてはいけません. En habla coloquial se abrevia mucho: ～なきゃ o ～なくちゃ.',
       ],
     },
     {
-      heading: 'Diferencia entre las formas de obligacion',
+      heading: '¿Qué diferencia hay entre なければならない, なくてはいけない y なきゃ?',
       paragraphs: [
         '～なければならない y ～なくてはいけない son practicamente sinonimas en A2. La primera es ligeramente mas formal. En la escritura academica o noticias se usa ～なければならない; en la conversacion cotidiana ambas son igualmente frecuentes.',
         'Para la negacion de la obligacion (no es necesario), usa ～なくてもいいです: 行かなくてもいいです = No tienes que ir (no es necesario). Esta forma es la negacion semantica, no gramatical.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma なければならない a partir del verbo?',
+      paragraphs: [
+        'Se parte de la forma negativa plana del verbo (ない), se le quita い y se añade ければならない: 行く→行かない→行かなければならない (tengo que ir); 食べる→食べない→食べなければならない. La idea literal es "si no lo hago, no va bien", de ahí el sentido de obligación. Hay variantes de registro: なければなりません es la cortés; なくてはいけない es casi sinónima; y en conversación se contrae mucho a なきゃ (行かなきゃ) o なくちゃ (行かなくちゃ). La trampa para el hispanohablante es la longitud y el doble negativo de la construcción: conviene memorizar el bloque ~なければならない completo y reconocer que なきゃ/なくちゃ son la misma obligación en tono casual, no algo distinto.',
       ],
     },
   ],
@@ -110,7 +116,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tengo que comer — 食べる',
-            lines: [['David', '薬を飲む前に___。(tengo que comer antes de tomar la medicina)']],
+            lines: [['Hugo', '薬を飲む前に___。(tengo que comer antes de tomar la medicina)']],
             options: ['食べなければなりません', '食べなくてはなりません', '食べてはいけません', '食べません'],
             answer: '食べなければなりません',
             explain: '食べる (Gr.2): 食べない→食べなければなりません.',
@@ -138,14 +144,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tengo que volver pronto',
-            lines: [['Jose', '早く家に___。(tengo que volver a casa pronto)']],
+            lines: [['Tomás', '早く家に___。(tengo que volver a casa pronto)']],
             options: ['帰らなければなりません', '帰りなければなりません', '帰ってはいけません', '帰りません'],
             answer: '帰らなければなりません',
             explain: '帰る (kaeru, Gr.1): 帰らない→帰らなければなりません.',
           },
           {
             scene: 'Coloquial — tengo que ir',
-            lines: [['Zhanna', 'もう___。(tengo que irme ya — forma coloquial)']],
+            lines: [['Lía', 'もう___。(tengo que irme ya — forma coloquial)']],
             options: ['行かなきゃ', '行かなければなりません', '行かなくてはいけません', '行きません'],
             answer: '行かなきゃ',
             explain: '行かなきゃ es la forma coloquial de 行かなければならない. Muy comun en conversacion.',
@@ -177,7 +183,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Vida sana',
-            lines: [['David', '健康のために野菜を[[0]]し、運動も[[1]]。']],
+            lines: [['Hugo', '健康のために野菜を[[0]]し、運動も[[1]]。']],
             blanks: [
               { options: ['食べなければなりません', '食べます', '食べてはいけません'], answer: '食べなければなりません', explain: '食べる→食べない→食べなければなりません.' },
               { options: ['しなければなりません', 'します', 'してはいけません'], answer: 'しなければなりません', explain: 'する→しない→しなければなりません.' },

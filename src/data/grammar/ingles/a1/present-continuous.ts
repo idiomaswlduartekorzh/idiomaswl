@@ -90,6 +90,24 @@ const topic: GrammarTopic = {
         'También es frecuente usar continuous con verbos de estado: "I am wanting a coffee" es incorrecto. Lo correcto es "I want a coffee". Verbos de estado comunes: want, need, know, like, love, see, hear, think (cuando significa "creer").',
       ],
     },
+    {
+      heading: '¿Cómo se forma el present continuous en inglés?',
+      paragraphs: [
+        'Con el verbo to be (am/is/are) + verbo -ing: "I am working", "She is eating", "They are playing". El to be concuerda con el sujeto y el verbo principal lleva -ing. En negativo: "I am not working"; en pregunta: "Are you working?".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el present continuous?',
+      paragraphs: [
+        'Para acciones que ocurren AHORA mismo ("I am studying now") y para planes futuros concretos ("I am meeting Bruno tomorrow"). Marca lo que está en curso, frente al present simple, que describe rutinas y hechos generales.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre present simple y present continuous?',
+      paragraphs: [
+        'El present simple = rutinas y hechos ("I work every day"); el present continuous = acción en curso ahora ("I am working now"). La trampa del hispanohablante: "estoy trabajando" es "I am working", no "I work". Verbos de estado (like, want, know) no suelen ir en continuous.',
+      ],
+    },
   ],
 
   visual: {

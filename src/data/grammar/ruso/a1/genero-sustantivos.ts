@@ -56,7 +56,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Excepciones clave que debes conocer',
+      heading: '¿Cuáles son las excepciones clave del género en ruso?',
       paragraphs: [
         'El grupo más importante de excepciones son las palabras en -а/-я que son masculinas: папа (papá), дядя (tío), дедушка (abuelo), мужчина (hombre). Aunque terminan como femeninos, se tratan como masculinos porque designan hombres.',
         'La otra excepción frecuente es кофе (café), que termina en -е pero es masculino — un préstamo del alemán que conservó su género. Y las palabras en -ь son impredecibles: hay que aprenderlas de memoria o con diccionario.',

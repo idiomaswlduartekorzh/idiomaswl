@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El discurso indirecto en coreano: cómo reportar lo que alguien dijo',
+      heading: '¿Cómo se reporta lo que alguien dijo en coreano?',
       paragraphs: [
         'En coreano, para reportar lo que alguien dijo, se transforma la oración original. Para afirmaciones: el verbo vuelve a su forma diccionario y se añade -는다고 (verbos de acción) o -다고 (adjetivos y ser/estar): "친구가 피곤하다고 했어요" (Mi amigo dijo que estaba cansado). Para pasado: -었다고: "먹었다고 했어요" (dijo que había comido).',
         'Para preguntas: -냐고 묻다/물어보다: "어디 가냐고 물었어요" (preguntó dónde iba). Para órdenes: -(으)라고 하다: "오라고 했어요" (dijo que viniera). Estas estructuras son esenciales para el coreano intermedio.',
       ],
     },
     {
-      heading: 'La diferencia entre afirmación y adjetivo en discurso indirecto',
+      heading: '¿Cómo cambia el discurso indirecto según verbo o adjetivo en coreano?',
       paragraphs: [
         'La forma del discurso indirecto para verbos de acción y adjetivos es diferente: verbos de acción usan -는다고 (presente): "공부한다고 해요" (dice que estudia). Los adjetivos (verbos descriptivos) usan solo -다고: "크다고 해요" (dice que es grande), "좋다고 해요" (dice que es bueno).',
         'Con el verbo 이다 (ser): "학생이라고 해요" (dice que es estudiante). La forma -라고 se usa también para 이다 en el discurso indirecto de afirmación.',
+      ],
+    },
+    {
+      heading: '¿Qué terminaciones usa el discurso indirecto en coreano?',
+      paragraphs: [
+        'El coreano no cambia los tiempos como el español (no hay "concordancia de tiempos"): añade una terminación de cita según el TIPO de oración. Afirmaciones con verbo → -(ㄴ/는)다고 하다: 간다고 했어요 (dijo que iba). Afirmaciones con adjetivo → -다고 하다: 예쁘다고 했어요 (dijo que era bonita). Preguntas → -냐고 하다: 가냐고 물었어요 (preguntó si iba). Órdenes → -(으)라고 하다: 가라고 했어요 (dijo que fuera). Propuestas → -자고 하다: 가자고 했어요 (dijo de ir juntos). En el habla, 하다 suele contraerse (간대요, 예쁘대요). La dificultad para el hispanohablante es elegir la terminación por el tipo de frase original, no por el tiempo verbal.',
       ],
     },
   ],
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: transforma la oración directa en indirecta.',
         type: 'freeText',
         scene: '직접 화법을 간접 화법으로 바꾸세요.',
-        text: '"피곤해요" → 피곤___ 했어요. / "오세요" → 오___ 했어요. / "어디 가요?" → 어디 가___ 물었어요.',
+        text: '"피곤해요" → 피곤[[0]] 했어요. / "오세요" → 오[[1]] 했어요. / "어디 가요?" → 어디 가[[2]] 물었어요.',
         blanks: [
           { answer: '하다고', explain: '"피곤하다고 했어요" = dijo que estaba cansado.' },
           { answer: '라고', explain: '"오라고 했어요" = dijo que viniera (orden).' },

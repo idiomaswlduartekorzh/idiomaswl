@@ -64,14 +64,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Tu vs. vous: la distinción de cortesía',
+      heading: '¿Cuándo se usa "tu" y cuándo "vous" en francés?',
       paragraphs: [
         '"Tu" se usa con amigos, familia, niños y en situaciones informales. "Vous" se usa para una persona desconocida, mayor o en un contexto profesional (el equivalente de "usted"). También se usa "vous" para hablar con más de una persona.',
         'Esta distinción es importante en la cultura francesa — tutear a alguien sin permiso puede resultar irrespetuoso en ciertos contextos.',
       ],
     },
     {
-      heading: 'El pronombre "on": el secreto del francés hablado',
+      heading: '¿Qué significa el pronombre "on" en francés?',
       paragraphs: [
         '"On" es formalmente el pronombre impersonal (= uno, en español: "on dit que..." = "se dice que..."). Pero en francés conversacional, "on" reemplaza muy frecuentemente a "nous" (nosotros): "On va au cinéma" = "Nous allons au cinéma" = "Vamos al cine".',
         '"On" se conjuga siempre como "il/elle" — tercera persona del singular. Así que "on parle", "on mange", "on est" (y no "on sommes").',

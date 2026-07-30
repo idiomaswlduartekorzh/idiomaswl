@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La hora en coreano: dos sistemas en una sola expresión',
+      heading: '¿Cómo se dice la hora en coreano?',
       paragraphs: [
         'La peculiaridad más sorprendente de la hora en coreano es que usa dos sistemas numéricos distintos dentro de la misma expresión: los números nativos para las horas y los números sino-coreanos para los minutos. Por eso 2:30 se dice 두 시 삼십 분 — dos (nativo) horas treinta (sino-coreano) minutos.',
         'Este contraste tiene origen histórico: el sino-coreano se adoptó del chino para funciones más abstractas y matemáticas (contar minutos, dinero, fechas), mientras que el nativo persistió para funciones más cotidianas y concretas (decir qué hora es del reloj).',
       ],
     },
     {
-      heading: 'Las 12 horas en números nativos',
+      heading: '¿Por qué las horas usan números nativos en coreano?',
       paragraphs: [
         'Las horas del 1 al 12 en coreano son: 한 시(1h), 두 시(2h), 세 시(3h), 네 시(4h), 다섯 시(5h), 여섯 시(6h), 일곱 시(7h), 여덟 시(8h), 아홉 시(9h), 열 시(10h), 열한 시(11h), 열두 시(12h). Nota que para las 1-4 se usan las formas abreviadas: 한/두/세/네.',
         'El coreano no tiene distinción de 12h vs 24h en el habla cotidiana — usa 오전(AM) y 오후(PM) para clarificar si es necesario. En contextos formales (trenes, cines) pueden aparecer números sino-coreanos en formato 24h escrito, pero en el habla siempre se usa el sistema nativo.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Minutos y expresiones de media hora',
+      heading: '¿Cómo se dicen los minutos en coreano?',
       paragraphs: [
         'Los minutos van con números sino-coreanos: 오 분(5min), 십 분(10min), 십오 분(15min), 이십 분(20min), 이십오 분(25min), 삼십 분(30min), 사십오 분(45min), 오십오 분(55min).',
         'La expresión 반(ban) significa literalmente "mitad" y equivale a "y media": 두 시 반(2:30), 다섯 시 반(5:30). Es más coloquial que decir 삼십 분 y muy frecuente en la conversación cotidiana.',
@@ -111,14 +111,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Son las 3 en punto',
-            lines: [['David', '지금 몇 시예요? — ___이에요. (¿Qué hora es? — Son las 3.)']],
+            lines: [['Bruno', '지금 몇 시예요? — ___이에요. (¿Qué hora es? — Son las 3.)']],
             options: ['세 시예요', '삼 시예요', '세이 시예요', '세번이에요'],
             answer: '세 시예요',
             explain: '셋→세 ante 시. 세 시 = las tres. 삼 시 sería incorrecto (sino-coreano).',
           },
           {
             scene: '2:30 de la tarde',
-            lines: [['Zhanna', '오후 ___ 이에요. (Son las 2:30 PM.)']],
+            lines: [['Sara', '오후 ___ 이에요. (Son las 2:30 PM.)']],
             options: ['두 시 삼십 분', '이 시 삼십 분', '두 시 반십', '두시삼십'],
             answer: '두 시 삼십 분',
             explain: 'Horas: 두(nativo), Minutos: 삼십(sino-coreano), 분(sufijo). 두 시 삼십 분.',
@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Las 12 del mediodía',
-            lines: [['David', '점심 시간이에요. 지금 ___ 이에요. (Es la hora del almuerzo. Son las 12.)']],
+            lines: [['Bruno', '점심 시간이에요. 지금 ___ 이에요. (Es la hora del almuerzo. Son las 12.)']],
             options: ['열두 시', '이십사 시', '열이 시', '십이 시'],
             answer: '열두 시',
             explain: '12 = 열두 (nativo). 열두 시 = las doce. 십이 시 sería incorrecto.',
@@ -177,9 +177,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Acordando una cita',
             lines: [
-              ['Carlos', '몇 시에 만날까요? (¿A qué hora nos encontramos?)'],
-              ['Ana', '[[0]] [[1]] 어때요? (¿Qué tal a las 2:00 PM?)'],
-            ],
+ ['Carlos', '몇 시에 만날까요? (¿A qué hora nos encontramos?)'],
+ ['Ana', '[[0]] [[1]] 어때요? (¿Qué tal a las 2:00 PM?)'],
+ ],
             blanks: [
               { options: ['오후', '오전', '오늘', '어제'], answer: '오후', explain: 'Por la tarde = 오후. Va antes de la hora.' },
               { options: ['두 시', '이 시', '두분', '두번'], answer: '두 시', explain: 'Las 2: 두 시 (nativo). 두 시 = 2:00.' },
@@ -188,9 +188,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Clase en WeLearn',
             lines: [
-              ['Zhanna', '수업이 몇 시에 끝나요? (¿A qué hora termina la clase?)'],
-              ['Sofia', '오후 [[0]] 시 [[1]] 분에 끝나요. (Termina a las 4:45 PM.)'],
-            ],
+ ['Sara', '수업이 몇 시에 끝나요? (¿A qué hora termina la clase?)'],
+ ['Sofia', '오후 [[0]] 시 [[1]] 분에 끝나요. (Termina a las 4:45 PM.)'],
+ ],
             blanks: [
               { options: ['네', '넷', '사', '네이'], answer: '네', explain: '넷→네 ante 시. 네 시 = las cuatro.' },
               { options: ['사십오', '사십', '사오', '오십'], answer: '사십오', explain: '45 minutos = 사십오 분 (sino-coreano: 사십=40 + 오=5).' },
@@ -199,9 +199,9 @@ const topic: GrammarTopic = {
           {
             scene: 'El tren',
             lines: [
-              ['Lina', '기차가 몇 시에 출발해요? (¿A qué hora sale el tren?)'],
-              ['Marco', '[[0]] 아홉 시 [[1]] 분에 출발해요. (Sale a las 9:20 AM.)'],
-            ],
+ ['Lina', '기차가 몇 시에 출발해요? (¿A qué hora sale el tren?)'],
+ ['Marco', '[[0]] 아홉 시 [[1]] 분에 출발해요. (Sale a las 9:20 AM.)'],
+ ],
             blanks: [
               { options: ['오전', '오후', '어제', '내일'], answer: '오전', explain: '9 AM = 오전 아홉 시. 오전 = AM.' },
               { options: ['이십', '이십오', '삼십', '십오'], answer: '이십', explain: '20 minutos = 이십 분 (sino-coreano: 이십 = 20).' },
@@ -210,9 +210,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Hora de dormir',
             lines: [
-              ['David', '보통 몇 시에 자요? (¿A qué hora te duermes normalmente?)'],
-              ['Carlos', '밤 [[0]] 시 [[1]] 에 자요. (Me duermo a las 11 y media de la noche.)'],
-            ],
+ ['Bruno', '보통 몇 시에 자요? (¿A qué hora te duermes normalmente?)'],
+ ['Carlos', '밤 [[0]] 시 [[1]] 에 자요. (Me duermo a las 11 y media de la noche.)'],
+ ],
             blanks: [
               { options: ['열한', '열하나', '십일', '열한이'], answer: '열한', explain: '11 = 열하나 → 열한 ante 시. 열한 시 = las once.' },
               { options: ['반', '삼십 분', '이십 분', '반이'], answer: '반', explain: '반 = y media. 열한 시 반 = las once y media.' },
@@ -226,7 +226,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el horario de un día típico en WeLearn.',
         type: 'guidedText',
-        scene: 'El horario de Zhanna en WeLearn',
+        scene: 'El horario de Sara en WeLearn',
         text: '저는 보통 [[0]] 일곱 시에 일어나요. (Me levanto a las 7 AM.) 아침에 [[1]] 시 삼십 분에 커피를 마셔요. (A las 8:30 tomo café.) 오전 수업이 [[2]] 시에 시작해요. (La clase de mañana empieza a las 9.) 점심은 [[3]] 시 [[4]] 분에 먹어요. (Almuerzo a las 12:30.) 저녁 수업은 오후 [[5]] 시에 있어요. (La clase de la tarde es a las 6 PM.)',
         blanks: [
           { options: ['오전', '오후', '오늘', '밤'], answer: '오전', explain: '7 AM = 오전. Va antes de la hora.' },
@@ -244,7 +244,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la hora correcta en coreano para cada situación.',
         type: 'freeText',
         scene: 'Horarios de una semana de examen IELTS',
-        text: '오전 수업은 ___ 시에 시작해요. (La clase de mañana empieza a las 10.) / 점심 시간은 ___ 시 반이에요. (El almuerzo es a las 12:30.) / 오후 수업은 ___ 시 이십 분에 있어요. (La clase de la tarde es a las 2:20.) / 시험이 ___ 시에 끝나요. (El examen termina a las 5.) / 저는 보통 밤 ___ 시에 자요. (Normalmente me duermo a las 11.)',
+        text: '오전 수업은 [[0]] 시에 시작해요. (La clase de mañana empieza a las 10.) / 점심 시간은 [[1]] 시 반이에요. (El almuerzo es a las 12:30.) / 오후 수업은 [[2]] 시 이십 분에 있어요. (La clase de la tarde es a las 2:20.) / 시험이 [[3]] 시에 끝나요. (El examen termina a las 5.) / 저는 보통 밤 [[4]] 시에 자요. (Normalmente me duermo a las 11.)',
         blanks: [
           { answer: '열', accepted: ['열'], explain: '열 시 = las 10. Número nativo.' },
           { answer: '열두', accepted: ['열두'], explain: '열두 시 반 = 12:30. 열두 = nativo para 12.' },

@@ -53,15 +53,45 @@ const topic: GrammarTopic = {
     {
       heading: 'Che vs cui: la distinción clave de los relativos italianos',
       paragraphs: [
-        'La distinción entre che y cui es el punto más importante de los pronombres relativos en italiano. Che se usa cuando el pronombre relativo funciona como sujeto o como objeto directo (sin preposición): la pizza che mangio, lo studente che impara. Cui se usa siempre que hay una preposición antes: la città in cui vivo, l\'amico con cui parlo.',
-        'Una forma práctica de recordarlo: si en español usarías "que" sin preposición, usa che. Si usarías "que" con preposición (en que, con quien, para el que), usa la preposición italiana + cui.',
+        'Los relativos conectan dos frases evitando repetir el sustantivo. El punto clave es che vs cui: "che" cuando el relativo es sujeto u objeto directo (sin preposición); "prep + cui" cuando hay una preposición delante. Truco: si en español dirías "que" a secas, usa che; si dirías "en que / con quien / para el que", usa preposición + cui. Esta es la tabla:',
+      ],
+      table: [
+        ['Función', 'Relativo', 'Ejemplo'],
+        ['Sujeto', 'che', 'Lo studente che studia.'],
+        ['Objeto directo', 'che', 'La pizza che mangio.'],
+        ['Con preposición', 'prep. + cui', 'La città in cui vivo.'],
+        ['Posesión (cuyo/a)', 'il/la cui', 'L\'autore il cui libro amo.'],
       ],
     },
     {
-      heading: 'Il quale, la quale, i quali, le quali',
+      heading: 'Il quale: la alternativa formal (concuerda con el antecedente)',
       paragraphs: [
-        'Il quale y sus formas (la quale, i quali, le quali) son alternativas más formales a che y cui. Se usan especialmente en la lengua escrita o cuando se quiere evitar ambigüedad. Concuerdan en género y número con el antecedente: Il professore il quale... La professoressa la quale...',
-        'Con preposición, il quale también puede usarse: con il quale, in cui. Incluso en contextos formales, in cui suele preferirse a "nel quale" / "nella quale" por ser más natural.',
+        'Il quale y sus formas son una alternativa más formal a che y cui, usada sobre todo por escrito o para evitar ambigüedad. A diferencia de "che" (invariable), concuerda en género y número con el antecedente:',
+      ],
+      table: [
+        ['Antecedente', 'Forma', 'Ejemplo'],
+        ['masc. singular', 'il quale', 'Il collega, il quale…'],
+        ['fem. singular', 'la quale', 'La collega, la quale…'],
+        ['masc. plural', 'i quali', 'I colleghi, i quali…'],
+        ['fem. plural', 'le quali', 'Le colleghe, le quali…'],
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "che" y cuándo "cui" en italiano?',
+      paragraphs: [
+        '"che" cuando el relativo es sujeto u objeto directo, sin preposición: "il libro che leggo", "la persona che parla". "cui" siempre que hay una preposición delante: "la casa in cui abito", "l\'amico con cui esco", "il motivo per cui sono qui". "che" es invariable.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "cuyo" en italiano?',
+      paragraphs: [
+        'Con "cui" precedido del artículo del sustantivo poseído: "il cui", "la cui", "i cui", "le cui". "Lo scrittore il cui libro ho letto" (el escritor cuyo libro he leído), "La città le cui strade amo" (la ciudad cuyas calles amo). El artículo concuerda con lo poseído, no con el poseedor.',
+      ],
+    },
+    {
+      heading: '¿Qué es "il quale" y cuándo se usa?',
+      paragraphs: [
+        'Es un relativo más formal, alternativa a che/cui, que concuerda con el antecedente (il quale, la quale, i quali, le quali). Se usa en registro escrito o para evitar ambigüedad: "Ho parlato con il direttore, il quale mi ha aiutato". Con preposición se prefiere igualmente "in cui" a "nel quale" por naturalidad.',
       ],
     },
   ],
@@ -105,7 +135,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El amigo',
-            lines: [['David', "L'amico ___ esco ogni weekend è molto divertente."]],
+            lines: [['Hugo', "L'amico ___ esco ogni weekend è molto divertente."]],
             options: ['con cui', 'che', 'cui', 'in cui'],
             answer: 'con cui',
             explain: 'Uscire CON qualcuno → con + cui. L\'amico con cui esco.',
@@ -140,7 +170,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La ciudad de nacimiento',
-            lines: [['Zhanna', 'La città ___ sono nata è molto piccola.']],
+            lines: [['Vera', 'La città ___ sono nata è molto piccola.']],
             options: ['in cui', 'che', 'cui', 'di cui'],
             answer: 'in cui',
             explain: 'Essere nato IN una città → in + cui. La città in cui sono nata.',
@@ -180,7 +210,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El motivo',
-            lines: [['David', 'Non ho tempo, [[0]] non posso venire [[1]].']],
+            lines: [['Hugo', 'Non ho tempo, [[0]] non posso venire [[1]].']],
             blanks: [
               { options: ['per cui', 'che', 'in cui', 'di cui'], answer: 'per cui', explain: 'Per cui = por eso (connettore causale).' },
               { options: ['stasera', 'domani', 'oggi'], answer: 'stasera', explain: 'Stasera = esta noche (contexto temporal).' },
@@ -211,7 +241,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el pronombre relativo correcto (che / in cui / con cui / di cui / per cui).',
         type: 'freeText',
         scene: 'Sofia describe su trabajo y colegas en WeLearn',
-        text: 'WeLearn è la scuola [[0]] lavoro ogni giorno. David è il fondatore [[1]] ho conosciuto due anni fa. Gli studenti [[2]] insegno sono molto motivati. L\'italiano è la lingua [[3]] mi sono innamorata. Non ho molto tempo libero, [[4]] il weekend è sacro per me.',
+        text: 'WeLearn è la scuola [[0]] lavoro ogni giorno. Hugo è il fondatore [[1]] ho conosciuto due anni fa. Gli studenti [[2]] insegno sono molto motivati. L\'italiano è la lingua [[3]] mi sono innamorata. Non ho molto tempo libero, [[4]] il weekend è sacro per me.',
         blanks: [
           { answer: 'in cui', explain: 'Lavorare IN una scuola → in + cui.' },
           { answer: 'che', explain: 'Il fondatore che ho conosciuto: oggetto diretto → che.' },

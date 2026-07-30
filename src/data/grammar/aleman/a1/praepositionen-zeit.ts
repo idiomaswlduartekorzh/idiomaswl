@@ -50,21 +50,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Um, am, im: el sistema temporal del alemán',
+      heading: '¿Cómo se usan um, am e im en alemán?',
       paragraphs: [
         'El sistema de preposiciones temporales del alemán se basa en tres preposiciones principales que corresponden a tres niveles de tiempo. "Um" se usa siempre con horas exactas: um 8 Uhr (a las 8), um halb drei (a las 2:30), um Mitternacht (a medianoche). "Am" se usa con los días de la semana y las partes del día: am Montag (el lunes), am Morgen (por la mañana), am Abend (por la tarde/noche).',
         '"Im" se usa con los meses del año y las estaciones: im Januar (en enero), im Sommer (en verano), im Herbst (en otoño). La gran excepción del sistema es "in der Nacht" — la noche no usa "am" como las otras partes del día, sino "in der" porque "Nacht" es femenino y la construcción es ligeramente diferente.',
       ],
     },
     {
-      heading: 'Seit: presente con raíces en el pasado',
+      heading: '¿Cómo se usa seit en alemán?',
       paragraphs: [
         '"Seit" es una de las preposiciones más importantes del alemán y expresa una situación que comenzó en el pasado y continúa en el presente: Ich lerne seit 3 Jahren Deutsch (Llevo 3 años aprendiendo alemán / Desde hace 3 años aprendo alemán). En alemán se usa PRESENTE con seit, mientras que el español puede usar presente o pretérito imperfecto.',
-        'Esto es lo contrario del inglés (que usa present perfect) y similar al español coloquial. Ejemplos: Ich wohne seit einem Jahr in Köln. / Wir sind seit 2 Monaten in Deutschland. / David unterrichtet seit 5 Jahren Sprachen.',
+        'Esto es lo contrario del inglés (que usa present perfect) y similar al español coloquial. Ejemplos: Ich wohne seit einem Jahr in Köln. / Wir sind seit 2 Monaten in Deutschland. / Nico unterrichtet seit 5 Jahren Sprachen.',
       ],
     },
     {
-      heading: 'Von...bis: rangos y horarios',
+      heading: '¿Cómo se expresan rangos de tiempo con von...bis en alemán?',
       paragraphs: [
         'La expresión "von...bis" (de...a / desde...hasta) se usa para indicar rangos de tiempo: von 9 bis 17 Uhr (de 9 a 17 horas), von Montag bis Freitag (de lunes a viernes), von Januar bis März (de enero a marzo). Es muy útil para describir horarios de trabajo, cursos y eventos.',
         'También se puede usar solo "bis" para indicar el límite final: Bis wann arbeitest du? — Ich arbeite bis 18 Uhr. / Der Kurs geht von 9 bis 11 Uhr.',
@@ -105,14 +105,14 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David habla del horario del curso',
-            lines: [['David', 'Der Kurs beginnt ___ 9 Uhr.']],
+            scene: 'Nico habla del horario del curso',
+            lines: [['Nico', 'Der Kurs beginnt ___ 9 Uhr.']],
             options: ['um', 'am', 'im', 'in'],
             answer: 'um',
             explain: '"Um" se usa con horas exactas: um 9 Uhr.',
           },
           {
-            scene: 'Zhanna pregunta cuándo tiene clase Carlos',
+            scene: 'Nora pregunta cuándo tiene clase Carlos',
             lines: [['Carlos', 'Ich habe ___ Montag Deutschkurs.']],
             options: ['am', 'um', 'im', 'seit'],
             answer: 'am',
@@ -154,8 +154,8 @@ const topic: GrammarTopic = {
             explain: '"In" + tiempo expresa el futuro próximo: in 10 Minuten = dentro de 10 minutos.',
           },
           {
-            scene: 'David habla del trabajo por la mañana',
-            lines: [['David', '___ Morgen trinke ich immer Kaffee.']],
+            scene: 'Nico habla del trabajo por la mañana',
+            lines: [['Nico', '___ Morgen trinke ich immer Kaffee.']],
             options: ['Am', 'Im', 'Um', 'In'],
             answer: 'Am',
             explain: '"Am" con partes del día: am Morgen (por la mañana), am Nachmittag, am Abend.',
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Horario del curso de alemán en WeLearn',
-            lines: [['Zhanna', 'Der Kurs ist [[0]] [[1]] bis Freitag.']],
+            lines: [['Nora', 'Der Kurs ist [[0]] [[1]] bis Freitag.']],
             blanks: [
               { options: ['von', 'am', 'um', 'im'], answer: 'von', explain: '"Von...bis" para rango: von Montag bis Freitag.' },
               { options: ['Montag', 'Morgen', 'Januar', '8 Uhr'], answer: 'Montag', explain: 'El rango va de lunes (Montag) a viernes (Freitag).' },
@@ -209,7 +209,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige la preposición temporal correcta para cada hueco.',
         type: 'guidedText',
-        scene: 'Zhanna describe la semana típica de la academia WeLearn.',
+        scene: 'Nora describe la semana típica de la academia WeLearn.',
         text: 'Unsere Kurse beginnen [[0]] 9 Uhr. [[1]] Montag bis Freitag haben wir Unterricht. [[2]] Abend gibt es Konversationskurse. [[3]] Nacht machen wir nichts — das ist wichtig! [[4]] Sommer machen wir eine Intensivwoche. Ich unterrichte [[5]] fünf Jahren hier. In [[6]] Wochen beginnt ein neuer Kurs.',
         blanks: [
           { options: ['um', 'am', 'im', 'seit'], answer: 'um', explain: '"Um 9 Uhr" — horas exactas con "um".' },

@@ -91,6 +91,24 @@ const topic: GrammarTopic = {
         'Otro error es pronunciar -ed siempre como sílaba extra: "worked" se pronuncia /wɔːkt/, no "work-ed" como dos sílabas. Solo /t/ o /d/ finales crean la sílaba extra /ɪd/.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el past simple de los verbos regulares en inglés?',
+      paragraphs: [
+        'Se añade -ed al verbo, igual para todas las personas: "I worked", "she worked", "they worked". No cambia con el sujeto. Verbos en -e solo añaden -d (live → lived); consonante + y cambia a -ied (study → studied); y algunos duplican la consonante final (stop → stopped).',
+      ],
+    },
+    {
+      heading: '¿Cómo se pronuncia la terminación "-ed" en inglés?',
+      paragraphs: [
+        'Tiene tres sonidos: /t/ tras sonido sordo (worked, liked), /d/ tras sonido sonoro o vocal (played, lived) y /ɪd/ solo tras -t o -d (wanted, needed). La -ed NO se pronuncia como sílaba extra salvo en este último caso.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se duplica la consonante antes de "-ed"?',
+      paragraphs: [
+        'En verbos cortos que terminan en una sola vocal + una sola consonante acentuada: stop → stopped, plan → planned, prefer → preferred. No se duplica si termina en dos consonantes (work → worked) ni en -w, -x, -y (play → played).',
+      ],
+    },
   ],
 
   visual: {
@@ -152,7 +170,7 @@ const topic: GrammarTopic = {
           {
             scene: 'La semana pasada',
             lines: [['', 'He ___ in London for three years.']],
-            options: ['lived', 'liveed', 'lived', 'livd'],
+            options: ['lived', 'liveed', 'livd'],
             answer: 'lived',
             explain: '"Live" termina en -e → solo añade -d: lived.',
           },

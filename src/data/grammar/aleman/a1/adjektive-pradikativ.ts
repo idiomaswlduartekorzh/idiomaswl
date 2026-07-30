@@ -44,21 +44,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Adjetivos predicativos: la regla más fácil del alemán',
+      heading: '¿Cómo se usan los adjetivos predicativos en alemán?',
       paragraphs: [
         'En alemán, los adjetivos tienen tres usos distintos. En A1 solo estudiamos el uso predicativo: cuando el adjetivo va después de "sein" (ser/estar), "werden" (volverse) o "bleiben" (quedarse). En este uso, el adjetivo es completamente invariable — nunca cambia su forma, independientemente del género o número del sujeto.',
         '"Das Buch ist interessant" → "Die Geschichte ist interessant" → "Der Film ist interessant" — el mismo adjetivo para los tres géneros. Esto contrasta con el español, donde tampoco hay cambio en este contexto (el libro es interesante / la historia es interesante), pero contrasta radicalmente con los adjetivos atributivos del alemán (que se estudian en A2).',
       ],
     },
     {
-      heading: 'Verbos copulativos: sein, werden, bleiben',
+      heading: '¿Qué verbos copulativos usan adjetivo predicativo en alemán?',
       paragraphs: [
         'Los tres verbos que introducen adjetivos predicativos son: sein (ser/estar), werden (volverse/ponerse) y bleiben (quedarse/permanecer). En A1, el más frecuente es sein: Das Wetter ist schön. / Die Aufgabe ist schwer. / Der Kaffee ist heiß.',
         '"Werden" aparece en A1 en contextos de cambio: Es wird kalt. (Se está poniendo frío.) "Bleiben" en: Bleib gesund! (¡Mantente sano!) Ambos son menos frecuentes en A1 que "sein".',
       ],
     },
     {
-      heading: 'Los adjetivos atributivos: una nota para motivar',
+      heading: '¿Cuál es la diferencia entre adjetivo predicativo y atributivo en alemán?',
       paragraphs: [
         'La buena noticia: en A1 solo necesitas los adjetivos predicativos. En A2 aprenderás los adjetivos atributivos — los que van antes del sustantivo y sí se declinan según género y caso: "ein gutes Buch" (neutro), "ein guter Film" (masculino), "eine gute Idee" (femenino). Pero por ahora, ¡todo es invariable!',
         'Para hispanohablantes, la distinción entre uso predicativo (sin declinación) y atributivo (con declinación) es fundamental para entender por qué el alemán tiene una reputación de "difícil". Pero uno a la vez: primero predicativo, después atributivo.',
@@ -127,8 +127,8 @@ const topic: GrammarTopic = {
             explain: '"Lecker" después de "ist" = predicativo. Sin terminación extra.',
           },
           {
-            scene: 'David habla de una nueva estudiante',
-            lines: [['David', 'Die neue Studentin ist sehr ___. (inteligente)']],
+            scene: 'Hugo habla de una nueva estudiante',
+            lines: [['Hugo', 'Die neue Studentin ist sehr ___. (inteligente)']],
             options: ['klug', 'kluge', 'kluger', 'kluges'],
             answer: 'klug',
             explain: 'Género femenino pero predicativo: "klug" no cambia. Die Studentin ist klug.',
@@ -164,8 +164,8 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'Zhanna describe la clase de hoy',
-            lines: [['Zhanna', '[[0]] Unterricht heute ist sehr [[1]]. (la clase, interesante)']],
+            scene: 'Nora describe la clase de hoy',
+            lines: [['Nora', '[[0]] Unterricht heute ist sehr [[1]]. (la clase, interesante)']],
             blanks: [
               { options: ['Der', 'Die', 'Das', 'Ein'], answer: 'Der', explain: '"Unterricht" = masculino → "der Unterricht".' },
               { options: ['interessant', 'interessante', 'interessanter', 'interessanten'], answer: 'interessant', explain: 'Predicativo: "interessant" sin terminación, independientemente del género.' },
@@ -204,11 +204,11 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con los adjetivos correctos en forma predicativa.',
         type: 'guidedText',
         scene: 'Carlos escribe un email sobre su primer día en WeLearn.',
-        text: 'Heute war mein erster Tag bei WeLearn. Die Akademie ist sehr [[0]] (schön). Der Unterricht ist [[1]] (interessant). Die Lehrerin Zhanna ist sehr [[2]] (kompetent). Das Gebäude ist [[3]] (groß) und [[4]] (modern). Ich bin sehr [[5]] (glücklich) hier. Die anderen Studenten sind auch sehr [[6]] (nett).',
+        text: 'Heute war mein erster Tag bei WeLearn. Die Akademie ist sehr [[0]] (schön). Der Unterricht ist [[1]] (interessant). Die Lehrerin Nora ist sehr [[2]] (kompetent). Das Gebäude ist [[3]] (groß) und [[4]] (modern). Ich bin sehr [[5]] (glücklich) hier. Die anderen Studenten sind auch sehr [[6]] (nett).',
         blanks: [
           { options: ['schön', 'schöne', 'schöner', 'schönem'], answer: 'schön', explain: 'Predicativo tras "ist": "schön" invariable.' },
           { options: ['interessant', 'interessante', 'interessanter', 'interessanten'], answer: 'interessant', explain: 'Predicativo: "interessant" sin terminación.' },
-          { options: ['kompetent', 'kompetente', 'kompetenter', 'kompetentem'], answer: 'kompetent', explain: 'Predicativo: "kompetent" invariable. Zhanna ist kompetent.' },
+          { options: ['kompetent', 'kompetente', 'kompetenter', 'kompetentem'], answer: 'kompetent', explain: 'Predicativo: "kompetent" invariable. Nora ist kompetent.' },
           { options: ['groß', 'große', 'großer', 'großem'], answer: 'groß', explain: 'Das Gebäude ist groß — neutro pero predicativo, sin cambio.' },
           { options: ['modern', 'moderne', 'moderner', 'modernem'], answer: 'modern', explain: 'Dos adjetivos predicativos coordinados: "groß und modern".' },
           { options: ['glücklich', 'glückliche', 'glücklicher', 'glücklichem'], answer: 'glücklich', explain: 'Predicativo con "bin": "ich bin glücklich".' },

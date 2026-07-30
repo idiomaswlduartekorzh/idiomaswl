@@ -64,6 +64,32 @@ const topic: GrammarTopic = {
         'Bom/boa/bons/boas (bueno) y mau/má/maus/más (malo) son los irregulares más importantes. Grande es regular pero no cambia de género: um grande professor, uma grande professora. En plural: grandes professores. Recuerda que "grande" antes del sustantivo tiene sentido de "gran/importante".',
       ],
     },
+    {
+      heading: '¿Cómo concuerdan los adjetivos en portugués?',
+      paragraphs: [
+        'El adjetivo copia el género y el número del sustantivo. Los acabados en -o tienen cuatro formas; los acabados en -e o en consonante suelen ser invariables en género y solo cambian en plural. Esta tabla muestra los tres patrones y sus irregulares clave:',
+      ],
+      table: [
+        ['Tipo', 'Masc. sg', 'Fem. sg', 'Masc. pl', 'Fem. pl'],
+        ['-o / -a', 'bonito', 'bonita', 'bonitos', 'bonitas'],
+        ['-e (invariable)', 'inteligente', 'inteligente', 'inteligentes', 'inteligentes'],
+        ['-or / -ora', 'trabalhador', 'trabalhadora', 'trabalhadores', 'trabalhadoras'],
+        ['bom (irregular)', 'bom', 'boa', 'bons', 'boas'],
+        ['mau (irregular)', 'mau', 'má', 'maus', 'más'],
+      ],
+    },
+    {
+      heading: '¿El adjetivo va antes o después del sustantivo en portugués?',
+      paragraphs: [
+        'La posición normal es después: "uma casa bonita", "um problema difícil", igual que en español. Colocarlo delante añade matiz subjetivo o afectivo: "uma grande cidade" (una gran ciudad, importante) frente a "uma cidade grande" (una ciudad de gran tamaño). En A1 la regla segura es posponerlo; solo bom, grande y algún otro muy frecuente se anteponen con naturalidad ("um bom aluno" = "um aluno bom").',
+      ],
+    },
+    {
+      heading: '¿Se dice "um bom aluno" o "um boa aluno"?',
+      paragraphs: [
+        'Se dice "um bom aluno", porque aluno es masculino y el irregular bom concuerda con él; en femenino sería "uma boa aluna". El error de mezclar bom/boa es de los más comunes porque en español "buen/buena" funciona parecido, pero conviene fijar el paradigma: bom/boa/bons/boas. Lo mismo con su opuesto mau/má/maus/más. El resto de adjetivos siguen los patrones regulares -o/-a o -e invariable.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-table',
@@ -95,14 +121,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Alumnos inteligentes',
-            lines: [['Zhanna', 'Os alunos da WeLearn são muito ___.']],
+            lines: [['Elena', 'Os alunos da WeLearn são muito ___.']],
             options: ['inteligentes', 'inteligente', 'inteligento', 'inteligenta'],
             answer: 'inteligentes',
             explain: 'Adjetivo -e: plural = inteligentes. No cambia de género, solo añade -s.',
           },
           {
             scene: 'Una buena profesora',
-            lines: [['Sofia', 'A Zhanna é uma professora muito ___.']],
+            lines: [['Sofia', 'A Elena é uma professora muito ___.']],
             options: ['boa', 'bom', 'bons', 'boas'],
             answer: 'boa',
             explain: 'Professora es femenino → boa (irregular: bom → boa).',
@@ -123,7 +149,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Malos resultados',
-            lines: [['David', 'Esses resultados são muito ___.']],
+            lines: [['Iván', 'Esses resultados são muito ___.']],
             options: ['maus', 'más', 'mau', 'má'],
             answer: 'maus',
             explain: 'Resultados es masculino plural → maus (irregular: mau → maus en plural).',
@@ -153,7 +179,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'La WeLearn',
-            lines: [['David', 'A WeLearn é uma escola [[0]] e muito [[1]].']],
+            lines: [['Iván', 'A WeLearn é uma escola [[0]] e muito [[1]].']],
             blanks: [
               { options: ['boa', 'bom', 'bons'], answer: 'boa', explain: 'Escola femenino → boa.' },
               { options: ['eficiente', 'eficiento', 'eficientes'], answer: 'eficiente', explain: 'Adjetivo -e: singular → eficiente (sin cambio de género).' },
@@ -161,7 +187,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El alumno',
-            lines: [['Zhanna', 'O Carlos é um aluno [[0]] e muito [[1]].']],
+            lines: [['Elena', 'O Carlos é um aluno [[0]] e muito [[1]].']],
             blanks: [
               { options: ['dedicado', 'dedicada', 'dedicados'], answer: 'dedicado', explain: 'Aluno masculino → dedicado.' },
               { options: ['inteligente', 'inteligento', 'inteligenta'], answer: 'inteligente', explain: 'Adjetivo -e: sin cambio de género → inteligente.' },
@@ -191,7 +217,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa la descripción eligiendo el adjetivo correcto.',
         type: 'guidedText',
-        scene: 'David descreve a WeLearn',
+        scene: 'Iván descreve a WeLearn',
         text: 'A WeLearn é uma escola [[0]] (buena). Temos professores [[1]] (dedicados, masc. pl.). As aulas são [[2]] (interesantes, pl.). O método é [[3]] (original). Os alunos são [[4]] (inteligentes, pl.) e muito [[5]] (trabajadores, masc. pl.). Os resultados são [[6]] (buenos, masc. pl.).',
         blanks: [
           { options: ['boa', 'bom', 'boas'], answer: 'boa', explain: 'Escola femenino → boa.' },
@@ -243,9 +269,9 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Una buena profesora',
-            prompt: 'Escribe: Zhanna es una muy buena profesora. → A Zhanna é uma ___ muito boa.',
-            answer: 'A Zhanna é uma professora muito boa.',
-            accepted: ['a zhanna é uma professora muito boa', 'a zhanna é uma boa professora'],
+            prompt: 'Escribe: Elena es una muy buena profesora. → A Elena é uma ___ muito boa.',
+            answer: 'A Elena é uma professora muito boa.',
+            accepted: ['a elena é uma professora muito boa', 'a elena é uma boa professora'],
             explain: 'Professora femenino → boa. Posición después del sustantivo más natural.',
           },
           {

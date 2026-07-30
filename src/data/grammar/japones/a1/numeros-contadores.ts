@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Los números japoneses: dos sistemas y contadores obligatorios',
+      heading: '¿Cuáles son los dos sistemas de números en japonés?',
       paragraphs: [
         'El japonés tiene dos sistemas numéricos: el chino-japonés (一/いち, 二/に, 三/さん...) que es el más usado, y el japonés nativo (ひとつ, ふたつ, みっつ...) que se usa principalmente con el contador 〜つ para objetos generales del 1 al 9. Para números grandes, siempre usarás el sistema chino-japonés: 十(jū=10), 百(hyaku=100), 千(sen=1000).',
         'La estructura del 11 al 99 es predecible: 十一(jūichi=11), 二十(nijū=20), 三十五(sanjūgo=35). No hay palabras especiales para 11, 12, 20, etc. — todo es multiplicación y suma. Esta regularidad hace que los números sean más fáciles de memorizar que en español (once, doce, trece...).',
       ],
     },
     {
-      heading: 'Por qué los contadores japoneses son obligatorios',
+      heading: '¿Por qué los contadores japoneses son obligatorios?',
       paragraphs: [
         'En japonés, no puedes decir simplemente "tres libros" — necesitas el contador 冊 (satsu): 三冊の本 (sansatsu no hon). El sistema de contadores clasifica los objetos por su forma física: los cilíndricos usan 本 (hon), los planos usan 枚 (mai), los libros usan 冊 (satsu). Esta categorización refleja una forma diferente de conceptualizar los objetos en el mundo.',
         'La buena noticia para principiantes: en situaciones informales, el contador 〜つ funciona para casi cualquier objeto del 1 al 9. Es como un "contador comodín" que los japoneses también usan cuando no están seguros. A medida que avanzas, vas incorporando los contadores específicos de forma natural.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los contadores más usados en japonés A1?',
+      paragraphs: [
+        'Para contar objetos se pega un contador al número, y el que se elige depende de la forma del objeto. Los básicos de A1: 〜つ (hitotsu, futatsu, mittsu... para objetos generales, hasta 10), 〜人 (nin, personas: ひとり, ふたり, さんにん), 〜枚 (mai, cosas planas: hojas, billetes), 〜本 (hon, cosas largas: bolígrafos, botellas), 〜個 (ko, cosas pequeñas y redondas) y 〜歳 (sai, edad). Hay lecturas irregulares que se memorizan: ひとり/ふたり para 1 y 2 personas, 一本 いっぽん, 二十歳 はたち (20 años). La trampa para el hispanohablante es que en español basta el número ("tres libros"), pero en japonés NO se puede contar sin contador: hay que decir 本を三冊 (tres volúmenes de libro), eligiendo el contador correcto según el objeto.',
       ],
     },
   ],
@@ -98,7 +104,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Libros',
-            lines: [['David', 'ほんが ___ あります。(Hay un libro.)']],
+            lines: [['Iván', 'ほんが ___ あります。(Hay un libro.)']],
             options: ['いっさつ', 'いちまい', 'いっぽん', 'ひとつ'],
             answer: 'いっさつ',
             explain: 'ほん (libro) = 〜冊 (satsu). 一冊 = いっさつ. Libros y cuadernos → 〜冊.',
@@ -126,7 +132,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Camisetas',
-            lines: [['Zhanna', 'Tシャツを ___ かいました。(Compré cuatro camisetas.)']],
+            lines: [['Elena', 'Tシャツを ___ かいました。(Compré cuatro camisetas.)']],
             options: ['よんまい', 'よんぼん', 'よっつ', 'よんにん'],
             answer: 'よんまい',
             explain: 'Tシャツ (camiseta) = ropa plana → 〜枚 (mai). 四枚 = よんまい.',
@@ -157,7 +163,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En la clase',
-            lines: [['David', 'きょうしつに がくせいが [[0]][[1]] います。(Hay cinco estudiantes.)']],
+            lines: [['Iván', 'きょうしつに がくせいが [[0]][[1]] います。(Hay cinco estudiantes.)']],
             blanks: [
               { options: ['ご', 'ろく', 'に'], answer: 'ご', explain: 'ご (go) = cinco (5).' },
               { options: ['にん', 'まい', 'ほん'], answer: 'にん', explain: '〜人 (nin) para personas. 五人 = ごにん.' },

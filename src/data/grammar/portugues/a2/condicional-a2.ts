@@ -68,6 +68,32 @@ const topic: GrammarTopic = {
         'Para el nivel A2, es suficiente reconocer esta estructura y practicar las formas más frecuentes. La producción activa puede limitarse a gostaria, poderia, seria y las formas de 1ª persona singular.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el condicional en portugués?',
+      paragraphs: [
+        'Se toma el infinitivo completo y se le añaden las terminaciones -ia/-ias/-ia/-íamos/-iam, iguales para las tres conjugaciones. Casi no hay irregulares (solo fazer→faria, dizer→diria, trazer→traria pierden la sílaba -ze-). Esta tabla muestra el paradigma con tres verbos:',
+      ],
+      table: [
+        ['Persona', 'gostar', 'poder', 'ser'],
+        ['eu', 'gostaria', 'poderia', 'seria'],
+        ['tu', 'gostarias', 'poderias', 'serias'],
+        ['você/ele/ela', 'gostaria', 'poderia', 'seria'],
+        ['nós', 'gostaríamos', 'poderíamos', 'seríamos'],
+        ['vocês/eles/elas', 'gostariam', 'poderiam', 'seriam'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "gostaria" y "gosto" en portugués?',
+      paragraphs: [
+        '"Gosto" (presente) expresa un gusto habitual: "Gosto de café" = me gusta el café. "Gostaria" (condicional) expresa un deseo puntual y cortés: "Gostaria de um café" = querría/me gustaría un café (ahora, pidiéndolo). Es la diferencia entre afirmar una preferencia y pedir algo con educación. Ojo con la preposición: "gostar de" siempre lleva "de" ("gostaria de ir", no "gostaria ir"). En Brasil, el imperfeito "queria" cumple la misma función cortés: "Queria um café" = "Gostaria de um café".',
+      ],
+    },
+    {
+      heading: '¿Cómo se forman las frases hipotéticas en portugués?',
+      paragraphs: [
+        'Con la estructura "Se + imperfeito do subjuntivo, + condicional": "Se eu tivesse tempo, viajaria" (si tuviera tiempo, viajaría). El "se" introduce la condición en subjuntivo imperfecto (tivesse, pudesse, fosse) y la consecuencia va en condicional (viajaria, seria, faria). Es el mismo esquema del español (si tuviera…, viajaría). En el habla brasileña coloquial la consecuencia se relaja a imperfeito de indicativo: "Se eu tivesse tempo, viajava". Para A2 conviene reconocer la forma culta y producir al menos las de 1ª persona.',
+      ],
+    },
   ],
 
   visual: {
@@ -127,14 +153,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La preferencia',
-            lines: [['David', 'Eles ___ ficar em casa a ir à festa.']],
+            lines: [['Diego', 'Eles ___ ficar em casa a ir à festa.']],
             options: ['prefeririam', 'preferem', 'preferiram', 'preferirão'],
             answer: 'prefeririam',
             explain: '"Prefeririam" = condicional de preferir. Eles prefeririam = ellos preferirían.',
           },
           {
             scene: 'El viaje',
-            lines: [['Zhanna', '___ incrível poder visitar o Japão.']],
+            lines: [['Marta', '___ incrível poder visitar o Japão.']],
             options: ['Seria', 'É', 'Foi', 'Será'],
             answer: 'Seria',
             explain: '"Seria" = condicional de ser. Sería increíble visitar Japón.',

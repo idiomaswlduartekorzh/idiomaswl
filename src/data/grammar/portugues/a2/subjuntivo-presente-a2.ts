@@ -59,6 +59,42 @@ const topic: GrammarTopic = {
         '"Tomara que chova!" (¡Ojalá llueva!) y "Espero que você se divirta" (Espero que te diviertas) son ejemplos cotidianos donde el subjuntivo es indispensable en el portugués formal y estándar.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el presente de subjuntivo en portugués?',
+      paragraphs: [
+        'Se parte de la 1ª persona del presente de indicativo, se quita la -o y se añade la terminación "opuesta": los verbos en -ar toman -e, y los en -er/-ir toman -a. Así "falo" → fale, "como" → coma, "parto" → parta. Esta tabla muestra el paradigma completo de los tres grupos:',
+      ],
+      table: [
+        ['Persona', 'falar (-ar)', 'comer (-er)', 'partir (-ir)'],
+        ['eu', 'fale', 'coma', 'parta'],
+        ['você/ele/ela', 'fale', 'coma', 'parta'],
+        ['nós', 'falemos', 'comamos', 'partamos'],
+        ['vocês/eles/elas', 'falem', 'comam', 'partam'],
+      ],
+    },
+    {
+      heading: '¿Cuáles son los verbos irregulares del subjuntivo presente?',
+      paragraphs: [
+        'Los que no forman su subjuntivo a partir de la 1ª persona del indicativo. Son pocos pero muy frecuentes y hay que memorizarlos. Esta tabla reúne los esenciales del A2:',
+      ],
+      table: [
+        ['Infinitivo', 'Subjuntivo (eu/ele)', 'Ejemplo'],
+        ['ser', 'seja', 'Espero que seja fácil.'],
+        ['estar', 'esteja', 'Tomara que esteja bem.'],
+        ['ir', 'vá', 'Quero que ele vá.'],
+        ['ter', 'tenha', 'Espero que tenha sorte.'],
+        ['vir', 'venha', 'Quero que você venha.'],
+        ['dar', 'dê', 'Espero que dê certo.'],
+        ['saber', 'saiba', 'É bom que ele saiba.'],
+        ['querer', 'queira', 'Se você quiser…'],
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa subjuntivo y cuándo infinitivo en portugués?',
+      paragraphs: [
+        'Depende de si hay uno o dos sujetos. Con el mismo sujeto se usa infinitivo: "Quero estudar" (yo quiero, yo estudio). Con sujetos distintos, aparece el "que" y el subjuntivo: "Quero que você estude" (yo quiero, tú estudias). Este contraste es idéntico al español (quiero estudiar / quiero que estudies), así que la lógica se traslada directa. La otra trampa es no omitir el "que": "É importante que você venha" es correcto, "É importante você venha" no.',
+      ],
+    },
   ],
 
   visual: {
@@ -186,7 +222,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: conjuga el verbo entre paréntesis en subjuntivo presente.',
         type: 'freeText',
         scene: 'Deseos y recomendaciones.',
-        text: 'Quero que você ___ (falar) com ele. / É importante que nós ___ (ir). / Espero que eles ___ (chegar) cedo. / Tomara que ela ___ (ter) sucesso. / Para que vocês ___ (entender), preciso explicar melhor.',
+        text: 'Quero que você [[0]] (falar) com ele. / É importante que nós [[1]] (ir). / Espero que eles [[2]] (chegar) cedo. / Tomara que ela [[3]] (ter) sucesso. / Para que vocês [[4]] (entender), preciso explicar melhor.',
         blanks: [
           { answer: 'fale', explain: '"falar" → 1ª sing: falo → fale (subjuntivo, você).' },
           { answer: 'vamos', explain: '"ir" → subjuntivo: nós vamos (informal) ou nós vá (raro) — en la práctica nós + ir en subjuntivo usa "vamos" coloquialmente.' },

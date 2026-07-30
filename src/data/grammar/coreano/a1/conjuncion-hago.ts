@@ -48,14 +48,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '하고 와 과: cómo conectar sustantivos en coreano',
+      heading: '¿Cómo se conectan sustantivos en coreano (하고, 와/과)?',
       paragraphs: [
         'En coreano, la conjunción "y" entre sustantivos se expresa con partículas: 하고(hago), 와(wa) o 과(gwa). A diferencia del español donde "y" es siempre la misma palabra, en coreano la forma depende del nivel de formalidad y de la sílaba final del sustantivo que precede a la partícula.',
         'Para principiantes, la recomendación es clara: aprende 하고 primero. Es coloquial, válida en casi cualquier situación y no tiene ninguna regla de selección — va con todo. Una vez consolidada, puedes añadir 와/과 para registros más formales.',
       ],
     },
     {
-      heading: 'La regla de 와/과: vocal vs. consonante',
+      heading: '¿Cuándo se usa 와 y cuándo 과 en coreano?',
       paragraphs: [
         '와 va después de un sustantivo cuya sílaba final termina en VOCAL: 커피와(café y...), 사과와(manzana y...), 의자와(silla y...). 과 va después de sustantivo cuya final es CONSONANTE: 밥과(arroz y...), 책과(libro y...), 선생님과(maestro y...).',
         'Una pista mnemotécnica: 와(wa) empieza por vocal → va con sustantivos que terminan en vocal. 과(gwa) empieza por consonante → con sustantivos que terminan en consonante.',
@@ -76,7 +76,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '랑/이랑: el nivel más informal',
+      heading: '¿Qué son 랑/이랑 en coreano?',
       paragraphs: [
         '랑(rang) e 이랑(irang) son la versión más coloquial e informal de las partículas de conjunción. Se usan entre amigos cercanos y familiares. La misma regla de vocal/consonante aplica: 랑 después de vocal (친구랑, 커피랑), 이랑 después de consonante (밥이랑, 선생님이랑).',
         'En A1 es suficiente con reconocerlas. Para producción activa, 하고 es la opción más segura y natural en cualquier contexto.',
@@ -125,14 +125,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Formal — manzana',
-            lines: [['Zhanna', '사과 ___ 배는 맛있어요. (La manzana y la pera están ricas. — formal)']],
+            lines: [['Clara', '사과 ___ 배는 맛있어요. (La manzana y la pera están ricas. — formal)']],
             options: ['와', '과', '하고', '랑'],
             answer: '와',
             explain: '사과 termina en vocal ㅏ → 와. 사과와 배 (formal).',
           },
           {
             scene: 'Formal — arroz',
-            lines: [['David', '밥 ___ 김치를 먹어요. (Como arroz y kimchi. — formal)']],
+            lines: [['Gael', '밥 ___ 김치를 먹어요. (Como arroz y kimchi. — formal)']],
             options: ['과', '와', '하고', '랑'],
             answer: '과',
             explain: '밥 termina en consonante ㅂ → 과. 밥과 김치 (formal).',
@@ -160,7 +160,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tres registros',
-            lines: [['David', '친구 ___ 갔어요 (더 격식체). (Fui con un amigo. — más formal)']],
+            lines: [['Gael', '친구 ___ 갔어요 (더 격식체). (Fui con un amigo. — más formal)']],
             options: ['와', '하고', '랑', '이랑'],
             answer: '와',
             explain: '친구 termina en vocal ㅜ → 와 (formal). 친구와 갔어요.',
@@ -177,9 +177,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Lista para el desayuno',
             lines: [
-              ['Carlos', '아침에 뭐 먹어요? (¿Qué comes en el desayuno?)'],
-              ['Ana', '빵 [[0]] 커피 [[1]] 과일을 먹어요. (Como pan, café y fruta.)'],
-            ],
+ ['Carlos', '아침에 뭐 먹어요? (¿Qué comes en el desayuno?)'],
+ ['Ana', '빵 [[0]] 커피 [[1]] 과일을 먹어요. (Como pan, café y fruta.)'],
+ ],
             blanks: [
               { options: ['하고', '와', '과', '가'], answer: '하고', explain: '하고 = y (coloquial). 빵하고 = pan y...' },
               { options: ['하고', '와', '과', '랑'], answer: '하고', explain: 'Segunda lista: 커피하고 과일 = café y fruta.' },
@@ -188,9 +188,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Día de compras',
             lines: [
-              ['Sofia', '오늘 누구 [[0]] 쇼핑했어요? (¿Con quién fuiste de compras hoy?)'],
-              ['Lina', '언니 [[1]] 같이 갔어요. (Fui con mi hermana mayor.)'],
-            ],
+ ['Sofia', '오늘 누구 [[0]] 쇼핑했어요? (¿Con quién fuiste de compras hoy?)'],
+ ['Lina', '언니 [[1]] 같이 갔어요. (Fui con mi hermana mayor.)'],
+ ],
             blanks: [
               { options: ['하고', '에서', '가', '를'], answer: '하고', explain: '누구하고 = ¿con quién? hago = "con".' },
               { options: ['하고', '와', '과', '랑'], answer: '하고', explain: '언니하고 = con la hermana mayor. 하고 = "con".' },
@@ -199,9 +199,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Descripción formal',
             lines: [
-              ['Zhanna', '한국어 수업에서 뭐 배워요? (¿Qué aprenden en la clase de coreano?)'],
-              ['David', '문법 [[0]] 발음 [[1]] 듣기를 배워요. (Aprendemos gramática, pronunciación y escucha — formal)'],
-            ],
+ ['Clara', '한국어 수업에서 뭐 배워요? (¿Qué aprenden en la clase de coreano?)'],
+ ['Gael', '문법 [[0]] 발음 [[1]] 듣기를 배워요. (Aprendemos gramática, pronunciación y escucha — formal)'],
+ ],
             blanks: [
               { options: ['과', '와', '하고', '이랑'], answer: '과', explain: '문법 termina en consonante ㅂ → 과 (formal).' },
               { options: ['과', '와', '하고', '이랑'], answer: '과', explain: '발음 termina en consonante ㅁ → 과 (formal).' },
@@ -210,9 +210,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Fin de semana informal',
             lines: [
-              ['Marco', '주말에 뭐 했어요? (¿Qué hiciste el fin de semana?)'],
-              ['Carlos', '친구 [[0]] 카페 [[1]] 공원에 갔어요. (Fui con un amigo al café y al parque.)'],
-            ],
+ ['Marco', '주말에 뭐 했어요? (¿Qué hiciste el fin de semana?)'],
+ ['Carlos', '친구 [[0]] 카페 [[1]] 공원에 갔어요. (Fui con un amigo al café y al parque.)'],
+ ],
             blanks: [
               { options: ['랑', '와', '과', '이랑'], answer: '랑', explain: '친구랑 = con el amigo (informal). 친구 vocal → 랑.' },
               { options: ['하고', '와', '과', '랑'], answer: '하고', explain: '카페하고 공원 = café y parque (coloquial).' },
@@ -244,7 +244,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la partícula correcta (하고, 와, 과, 랑, 이랑).',
         type: 'freeText',
         scene: 'Descripciones con diferentes niveles de formalidad',
-        text: '책 ___ 공책을 사세요. (Compre un libro y un cuaderno — formal.) / 오빠 ___ 같이 영화를 봤어요. (Vi la peli con mi hermano — informal.) / 커피 ___ 녹차를 마셔요. (Bebo café y té verde — formal.) / 친구 ___ 선생님 ___ 이야기했어요. (Hablé con el amigo y el maestro — coloquial.)',
+        text: '책 [[0]] 공책을 사세요. (Compre un libro y un cuaderno — formal.) / 오빠 [[1]] 같이 영화를 봤어요. (Vi la peli con mi hermano — informal.) / 커피 [[2]] 녹차를 마셔요. (Bebo café y té verde — formal.) / 친구 [[3]] 선생님 [[4]] 이야기했어요. (Hablé con el amigo y el maestro — coloquial.)',
         blanks: [
           { answer: '과', accepted: ['과'], explain: '책(책ㄱ consonante) → 과. 책과 공책 (formal).' },
           { answer: '랑', accepted: ['랑', '하고'], explain: '오빠(vocal ㅏ) + informal → 랑. 오빠랑. (하고 también válido).' },

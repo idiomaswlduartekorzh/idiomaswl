@@ -48,21 +48,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '고 싶어요: cómo expresar deseos en coreano',
+      heading: '¿Cómo se expresa el deseo en coreano (고 싶어요)?',
       paragraphs: [
         '고 싶어요 (go sipeoyo) es una de las estructuras más útiles del coreano A1. Permite expresar lo que quieres hacer — comer, ir, aprender, descansar — de forma natural y cotidiana. En español necesitamos el verbo "querer" + infinitivo. En coreano necesitamos la raíz del verbo + 고 싶어요.',
         'Lo más práctico de esta estructura es su regularidad: no hay excepciones vocálicas como en el presente 해요체. Simplemente: raíz + 고 싶어요. 가다(ir)→가고 싶어요, 먹다(comer)→먹고 싶어요, 하다(hacer)→하고 싶어요.',
       ],
     },
     {
-      heading: 'Una singularidad del coreano: yo vs. él/ella',
+      heading: '¿Por qué 고 싶어요 cambia según la persona en coreano?',
       paragraphs: [
         'En coreano, 고 싶어요 es exclusivo del hablante. Si quieres decir que otra persona quiere algo, usas 고 싶어해요: 친구가 가고 싶어해요(mi amigo quiere ir). Este matiz es único del coreano — el hablante solo puede conocer sus propios deseos directamente; los deseos ajenos se infieren y se expresan de forma distinta.',
         'En A1, lo fundamental es manejar la primera persona. La distinción yo/él-ella la consolidarás en niveles más avanzados.',
       ],
     },
     {
-      heading: 'Preguntas y negaciones con 고 싶어요',
+      heading: '¿Cómo se pregunta y se niega con 고 싶어요?',
       paragraphs: [
         'Para preguntar: sube la entonación al final — 뭐 먹고 싶어요? (¿Qué quieres comer?), 어디 가고 싶어요? (¿A dónde quieres ir?), 뭐 하고 싶어요? (¿Qué quieres hacer?). Son preguntas muy naturales para conversación cotidiana.',
         'Para negar: raíz + 고 싶지 않아요(go sipji anayo). 가고 싶지 않아요(no quiero ir), 먹고 싶지 않아요(no quiero comer). También existe la forma breve 고 싶지 않아(sin 요) que es más informal.',
@@ -125,7 +125,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando',
-            lines: [['David', '뭐 ___? (¿Qué quieres hacer?)']],
+            lines: [['Hugo', '뭐 ___? (¿Qué quieres hacer?)']],
             options: ['하고 싶어요', '해고 싶어요', '하싶어요', '하고싶어'],
             answer: '하고 싶어요',
             explain: '하다 → 하 + 고 싶어요. 뭐 하고 싶어요? = ¿Qué quieres hacer?',
@@ -146,7 +146,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Aprender coreano',
-            lines: [['Zhanna', '저는 한국어를 ___. (Quiero aprender coreano.)']],
+            lines: [['Vera', '저는 한국어를 ___. (Quiero aprender coreano.)']],
             options: ['배우고 싶어요', '배워고 싶어요', '배우싶어요', '배우고싶'],
             answer: '배우고 싶어요',
             explain: '배우다 → 배우 + 고 싶어요. No cambia la raíz.',
@@ -170,9 +170,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planificando el fin de semana',
             lines: [
-              ['David', '주말에 뭐 [[0]] ? (¿Qué quieres hacer el fin de semana?)'],
-              ['Carlos', '한국 드라마를 [[1]] . (Quiero ver un drama coreano.)'],
-            ],
+ ['Hugo', '주말에 뭐 [[0]] ? (¿Qué quieres hacer el fin de semana?)'],
+ ['Carlos', '한국 드라마를 [[1]] . (Quiero ver un drama coreano.)'],
+ ],
             blanks: [
               { options: ['하고 싶어요', '하요고 싶어요', '해싶어요', '하고싶어요'], answer: '하고 싶어요', explain: '하다 → 하+고 싶어요. 뭐 하고 싶어요? = ¿Qué quieres hacer?' },
               { options: ['보고 싶어요', '봐고 싶어요', '보아고 싶어요', '보싶어요'], answer: '보고 싶어요', explain: '보다 → 보+고 싶어요. 드라마를 보고 싶어요 = quiero ver un drama.' },
@@ -181,9 +181,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En el restaurante',
             lines: [
-              ['Ana', '뭐 [[0]] ? (¿Qué quieres comer?)'],
-              ['Sofia', '냉면을 [[1]] . (Quiero comer naengmyeon.)'],
-            ],
+ ['Ana', '뭐 [[0]] ? (¿Qué quieres comer?)'],
+ ['Sofia', '냉면을 [[1]] . (Quiero comer naengmyeon.)'],
+ ],
             blanks: [
               { options: ['먹고 싶어요', '먹어고 싶어요', '먹싶어요', '먹이고 싶어요'], answer: '먹고 싶어요', explain: '먹다 → 먹+고 싶어요. ¿Qué quieres comer?' },
               { options: ['먹고 싶어요', '먹어요', '먹고싶', '먹이고 싶어요'], answer: '먹고 싶어요', explain: '냉면을 먹고 싶어요 = quiero comer naengmyeon.' },
@@ -192,9 +192,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Destino de viaje',
             lines: [
-              ['Lina', '방학에 어디 [[0]] ? (¿Adónde quieres ir de vacaciones?)'],
-              ['Marco', '서울에 [[1]] . (Quiero ir a Seúl.)'],
-            ],
+ ['Lina', '방학에 어디 [[0]] ? (¿Adónde quieres ir de vacaciones?)'],
+ ['Marco', '서울에 [[1]] . (Quiero ir a Seúl.)'],
+ ],
             blanks: [
               { options: ['가고 싶어요', '가요고 싶어요', '가싶어요', '갈 싶어요'], answer: '가고 싶어요', explain: '가다 → 가+고 싶어요. 어디 가고 싶어요? = ¿Adónde quieres ir?' },
               { options: ['가고 싶어요', '가아고 싶어요', '가고싶', '갈싶어요'], answer: '가고 싶어요', explain: '서울에 가고 싶어요 = quiero ir a Seúl.' },
@@ -203,9 +203,9 @@ const topic: GrammarTopic = {
           {
             scene: 'No querer',
             lines: [
-              ['Zhanna', '오늘 수업 있어요? (¿Tienes clase hoy?)'],
-              ['Carlos', '있어요. 그런데 [[0]] 솔직히 쉬고 [[1]] . (Sí. Pero honestamente quiero descansar.)'],
-            ],
+ ['Vera', '오늘 수업 있어요? (¿Tienes clase hoy?)'],
+ ['Carlos', '있어요. 그런데 [[0]] 솔직히 쉬고 [[1]] . (Sí. Pero honestamente quiero descansar.)'],
+ ],
             blanks: [
               { options: ['공부하고 싶지 않아요.', '공부하 싶지 않아요', '공부 싶지 않아요', '공부 안 싶어요'], answer: '공부하고 싶지 않아요.', explain: '공부하다 → 공부하+고 싶지 않아요 = no quiero estudiar.' },
               { options: ['싶어요', '싶해요', '싶아요', '싶여요'], answer: '싶어요', explain: '쉬다(descansar) → 쉬+고 싶어요. 쉬고 싶어요 = quiero descansar.' },
@@ -217,9 +217,9 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Nivel 3 — Texto guiado',
         tag: 'Texto guiado',
-        intro: 'Completa los deseos de David usando 고 싶어요.',
+        intro: 'Completa los deseos de Hugo usando 고 싶어요.',
         type: 'guidedText',
-        scene: 'Los sueños de David sobre Corea',
+        scene: 'Los sueños de Hugo sobre Corea',
         text: '저는 언젠가 한국에 [[0]]. (Quiero ir a Corea algún día.) 서울에서 삼겹살을 [[1]]. (Quiero comer samgyeopsal en Seúl.) 한강에서 자전거를 [[2]]. (Quiero andar en bici en el río Han.) K-드라마를 한국어로 [[3]]. (Quiero ver K-dramas en coreano.) 한국 친구들을 많이 [[4]]. (Quiero hacer muchos amigos coreanos.) 한국에서 살고 [[5]] 도 해요. (A veces también quiero vivir en Corea.)',
         blanks: [
           { options: ['가고 싶어요', '가요고 싶어요', '갈 싶어요', '가싶어요'], answer: '가고 싶어요', explain: '가다 → 가+고 싶어요.' },
@@ -237,7 +237,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de 고 싶어요 para cada verbo.',
         type: 'freeText',
         scene: 'Lista de deseos de fin de año',
-        text: '저는 올해 한국어를 잘 배우___ (배우다). / 매일 운동하___ (운동하다). / 새 친구를 많이 사귀___ (사귀다). / 한국 드라마를 자막 없이 보___ (보다). / 처음으로 한국에 가___ (가다).',
+        text: '저는 올해 한국어를 잘 배우[[0]] (배우다). / 매일 운동하[[1]] (운동하다). / 새 친구를 많이 사귀[[2]] (사귀다). / 한국 드라마를 자막 없이 보[[3]] (보다). / 처음으로 한국에 가[[4]] (가다).',
         blanks: [
           { answer: '배우고 싶어요', accepted: ['배우고 싶어요', '고 싶어요'], explain: '배우다 → 배우+고 싶어요.' },
           { answer: '운동하고 싶어요', accepted: ['운동하고 싶어요', '고 싶어요'], explain: '운동하다 → 운동하+고 싶어요.' },

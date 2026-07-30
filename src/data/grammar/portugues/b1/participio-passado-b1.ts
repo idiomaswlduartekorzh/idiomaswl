@@ -64,7 +64,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Participios irregulares: memorización esencial',
+      heading: '¿Cuáles son los participios irregulares en portugués?',
       paragraphs: [
         'Los verbos más frecuentes tienen participios irregulares que deben ser memorizados: ser→sido, estar→estado, ir→ido, fazer→feito, ver→visto, dar→dado, vir→vindo, pôr→posto, abrir→aberto, escrever→escrito, dizer→dito, morrer→morto, cobrir→coberto.',
         'Estos 13 participios irregulares son suficientes para cubrir la mayoría de conversaciones en B1. Otros participios irregulares menos comunes también existen: ganhar→ganho, pagar→pago, aceitar→aceite, suspender→suspenso.',
@@ -85,7 +85,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Doble participio: regular e irregular',
+      heading: '¿Qué verbos tienen doble participio en portugués?',
       paragraphs: [
         'Algunos verbos tienen dos formas de participio: una regular y otra irregular. Generalmente, el participio regular se usa en tiempos compuestos (aunque el irregular es aceptado) y el irregular en voz pasiva y como adjetivo.',
         'Ejemplo: "ganhar" → ganhado (compuesto: tenho ganhado) / ganho (pasiva: a partida foi ganha, el muchacho ganho = ganador). Este patrón es especialmente común con verbos derivados de formas latinas que tienen raíces irregulares.',

@@ -60,10 +60,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El caso prepositivo: cómo cambian los sustantivos',
+      heading: '¿Cómo cambian los sustantivos en el caso prepositivo?',
       paragraphs: [
         'Con В o НА para ubicación, el sustantivo cambia al caso prepositivo (предложный падеж). Regla básica: sustantivos masculinos y neutros añaden -е (стол → на столе, город → в городе). Sustantivos femeninos en -а cambian -а por -е (школа → в школе, работа → на работе).',
         'Excepción importante: sustantivos en -ия (Россия, станция) o -ий/-ие (здание) forman el prepositivo en -и: в России, на станции, в здании. Esta es la excepción más frecuente del A1.',
+      ],
+    },
+    {
+      heading: '¿Qué palabras exigen на en vez de в para decir "en"?',
+      paragraphs: [
+        'Aunque в es lo habitual para "dentro de" (в доме = en la casa, в городе = en la ciudad), un grupo de sustantivos exige на por convención y hay que memorizarlos. Van con на: eventos y actividades (на работе = en el trabajo, на уроке = en clase, на концерте = en el concierto), superficies abiertas (на столе = en la mesa, на улице = en la calle) y ciertas zonas geográficas (на почте = en correos, на вокзале = en la estación, на юге = en el sur).',
+        'La trampa para el hispanohablante es que no hay una regla lógica perfecta: "en el trabajo" es на работе pero "en la oficina" es в офисе. Conviene aprender de memoria la lista de palabras con на, porque en todos los demás casos "en un lugar" se dice con в + prepositivo.',
       ],
     },
   ],
@@ -96,7 +103,7 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           { scene: 'Interior cerrado', lines: [['', '"___ школе" — Carlos está dentro del colegio.']], options: ['На', 'В', 'Из', 'К'], answer: 'В', explain: 'В школе (v shkólye) — la escuela es un interior cerrado. Usamos В.' },
-          { scene: 'Excepción НА — trabajo', lines: [['', '"___ работе" — David está en el trabajo. (работа = trabajo)']], options: ['В', 'На', 'Из', 'О'], answer: 'На', explain: 'На работе — "trabajo" es excepción fija de НА. No в работе.' },
+          { scene: 'Excepción НА — trabajo', lines: [['', '"___ работе" — Nico está en el trabajo. (работа = trabajo)']], options: ['В', 'На', 'Из', 'О'], answer: 'На', explain: 'На работе — "trabajo" es excepción fija de НА. No в работе.' },
           { scene: 'Superficie', lines: [['', '"Книга ___ столе" — El libro está sobre la mesa.']], options: ['В', 'С', 'На', 'К'], answer: 'На', explain: 'На столе — sobre la mesa (superficie). НА para superficies.' },
           { scene: 'Excepción НА — calle', lines: [['', '"Дети играют ___ улице" — Los niños juegan en la calle.']], options: ['В', 'На', 'Из', 'По'], answer: 'На', explain: 'На улице — "calle" es excepción НА. Aunque estés "en la calle", se usa НА.' },
           { scene: 'Interior — ciudad', lines: [['', '"Я живу ___ Букараманге" — Vivo en Bucaramanga.']], options: ['На', 'В', 'Из', 'До'], answer: 'В', explain: 'В Букараманге — las ciudades usan В (interior). В Колумбии, в Москве, в городе.' },
@@ -112,10 +119,10 @@ const topic: GrammarTopic = {
         intro: 'Elige la preposición y la forma prepositiva correcta del sustantivo.',
         type: 'dual',
         items: [
-          { scene: 'В + prepositivo femenino', lines: [['', 'Zhanna está en la escuela: ___ [[0]], forma correcta de школа: [[1]]']], blanks: [{ options: ['В', 'На', 'Из', 'К'], answer: 'В', explain: 'Escuela = interior → В.' }, { options: ['школе', 'школу', 'школа', 'школы'], answer: 'школе', explain: 'школа (fem -а) → школе en prepositivo. -а → -е.' }] },
-          { scene: 'НА + prepositivo femenino', lines: [['', 'Carlos trabaja: ___ [[0]], forma correcta de работа: [[1]]']], blanks: [{ options: ['На', 'В', 'Из', 'С'], answer: 'На', explain: 'Trabajo = excepción НА.' }, { options: ['работе', 'работу', 'работа', 'работы'], answer: 'работе', explain: 'работа (fem -а) → работе en prepositivo.' }] },
-          { scene: 'В + ciudad', lines: [['', 'Lina vive en Moscú: ___ [[0]], forma de Москва: [[1]]']], blanks: [{ options: ['В', 'На', 'К', 'Из'], answer: 'В', explain: 'Ciudades → В. В Москве.' }, { options: ['Москве', 'Москву', 'Москвы', 'Москва'], answer: 'Москве', explain: 'Москва (fem -а) → Москве en prepositivo.' }] },
-          { scene: 'НА + superficie', lines: [['', 'El libro está sobre la mesa: ___ [[0]], forma de стол: [[1]]']], blanks: [{ options: ['На', 'В', 'С', 'К'], answer: 'На', explain: 'Mesa = superficie → НА.' }, { options: ['столе', 'стол', 'стола', 'столу'], answer: 'столе', explain: 'стол (masc, consonante) → столе. Añadir -е en prepositivo.' }] },
+          { scene: 'В + prepositivo femenino', lines: [['', 'Clara está en la escuela: [[0]] , forma correcta de школа: ']], blanks: [{ options: ['В', 'На', 'Из', 'К'], answer: 'В', explain: 'Escuela = interior → В.' }, { options: ['школе', 'школу', 'школа', 'школы'], answer: 'школе', explain: 'школа (fem -а) → школе en prepositivo. -а → -е.' }] },
+          { scene: 'НА + prepositivo femenino', lines: [['', 'Carlos trabaja: [[0]] , forma correcta de работа: ']], blanks: [{ options: ['На', 'В', 'Из', 'С'], answer: 'На', explain: 'Trabajo = excepción НА.' }, { options: ['работе', 'работу', 'работа', 'работы'], answer: 'работе', explain: 'работа (fem -а) → работе en prepositivo.' }] },
+          { scene: 'В + ciudad', lines: [['', 'Lina vive en Moscú: [[0]] , forma de Москва: ']], blanks: [{ options: ['В', 'На', 'К', 'Из'], answer: 'В', explain: 'Ciudades → В. В Москве.' }, { options: ['Москве', 'Москву', 'Москвы', 'Москва'], answer: 'Москве', explain: 'Москва (fem -а) → Москве en prepositivo.' }] },
+          { scene: 'НА + superficie', lines: [['', 'El libro está sobre la mesa: [[0]] , forma de стол: ']], blanks: [{ options: ['На', 'В', 'С', 'К'], answer: 'На', explain: 'Mesa = superficie → НА.' }, { options: ['столе', 'стол', 'стола', 'столу'], answer: 'столе', explain: 'стол (masc, consonante) → столе. Añadir -е en prepositivo.' }] },
         ],
       },
       {
@@ -125,7 +132,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la expresión correcta (preposición + prepositivo) para cada espacio.',
         type: 'guidedText',
         scene: 'Un día en la vida de los estudiantes de WeLearn',
-        text: 'Давид работает [[0]]. (David trabaja en la academia.) Книга лежит [[1]]. (El libro está sobre la mesa.) Студенты сидят [[2]]. (Los estudiantes están en clase.) Кот спит [[3]]. (El gato duerme en la habitación.) Анна живёт [[4]]. (Ana vive en Bogotá.) Марко играет [[5]]. (Marco juega en el estadio.)',
+        text: 'Давид работает [[0]]. (Nico trabaja en la academia.) Книга лежит [[1]]. (El libro está sobre la mesa.) Студенты сидят [[2]]. (Los estudiantes están en clase.) Кот спит [[3]]. (El gato duerme en la habitación.) Анна живёт [[4]]. (Ana vive en Bogotá.) Марко играет [[5]]. (Marco juega en el estadio.)',
         blanks: [
           { options: ['в академии', 'на академии', 'в академию', 'на академию'], answer: 'в академии', explain: 'В академии — academia es un interior. академия (-ия) → -и en prepositivo: в академии.' },
           { options: ['на столе', 'в столе', 'на стол', 'в стол'], answer: 'на столе', explain: 'На столе — sobre la mesa (superficie). стол → столе (+е).' },
@@ -142,7 +149,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la preposición y la forma prepositiva correctas.',
         type: 'freeText',
         scene: 'Describiendo dónde están las cosas y personas',
-        text: '1. Sofia está en casa (дом — masc): [[0]] 2. Los libros están en la mochila (сумка — fem -а): [[1]] 3. David está en la clase (урок — excepción НА): [[2]] 4. El gato está sobre la silla (стул — masc): [[3]] 5. Lina vive en Colombia (Колумбия — fem -ия): [[4]]',
+        text: '1. Sofia está en casa (дом — masc): [[0]] 2. Los libros están en la mochila (сумка — fem -а): [[1]] 3. Nico está en la clase (урок — excepción НА): [[2]] 4. El gato está sobre la silla (стул — masc): [[3]] 5. Lina vive en Colombia (Колумбия — fem -ия): [[4]]',
         blanks: [
           { answer: 'в доме', accepted: ['в доме', 'В доме'], explain: 'В доме — interior. дом (masc cons) → доме (+е).' },
           { answer: 'в сумке', accepted: ['в сумке', 'В сумке'], explain: 'В сумке — interior de la mochila. сумка (fem -а) → сумке.' },
@@ -160,7 +167,7 @@ const topic: GrammarTopic = {
         items: [
           { scene: 'Ubicación persona', prompt: 'Traduce al ruso: "Carlos está en el trabajo ahora." (сейчас — ahora, работа — trabajo)', answer: 'Карлос сейчас на работе', accepted: ['карлос сейчас на работе', 'карлос на работе сейчас'], explain: 'На работе — trabajo es excepción НА. работа → работе. Сейчас puede ir antes o después del sujeto.' },
           { scene: 'Ubicación objeto', prompt: 'Traduce al ruso: "El teléfono está sobre la mesa." (телефон — teléfono, лежит — está/yace, стол — mesa)', answer: 'Телефон лежит на столе', accepted: ['телефон лежит на столе', 'телефон на столе'], explain: 'На столе — sobre la mesa (superficie). стол (masc) → столе (+е).' },
-          { scene: 'País / ciudad', prompt: 'Traduce al ruso: "Zhanna vive en Rusia." (жить — vivir, Россия — Rusia)', answer: 'Жанна живёт в России', accepted: ['жанна живёт в России', 'жанна живёт в россие', 'жанна в России'], explain: 'В России — Rusia usa В. Россия (-ия) → России (excepción -и). живёт = 3.ª sg de жить.' },
+          { scene: 'País / ciudad', prompt: 'Traduce al ruso: "Clara vive en Rusia." (жить — vivir, Россия — Rusia)', answer: 'Жанна живёт в России', accepted: ['жанна живёт в России', 'жанна живёт в россие', 'жанна в России'], explain: 'В России — Rusia usa В. Россия (-ия) → России (excepción -и). живёт = 3.ª sg de жить.' },
           { scene: 'Dos ubicaciones', prompt: 'Traduce al ruso: "Los niños están en la escuela y los padres están en el trabajo." (дети — niños, родители — padres)', answer: 'Дети в школе, родители на работе', accepted: ['дети в школе', 'родители на работе'], explain: 'В школе (interior) vs на работе (excepción НА). школа → школе, работа → работе.' },
         ],
       },

@@ -47,17 +47,24 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El cirílico ruso: 33 letras y sus grupos',
+      heading: '¿Cómo son las 33 letras del alfabeto cirílico ruso?',
       paragraphs: [
         'El alfabeto cirílico ruso tiene 33 letras. Para el hispanohablante, la estrategia más eficaz es dividirlas en tres grupos: (1) las que parecen latinas y suenan similar (А, О, К, М, Т), (2) las "trampas" — letras que parecen latinas pero suenan diferente (В=V, Н=N, Р=R, С=S) y (3) las letras completamente nuevas.',
         'Las trampas son el mayor obstáculo inicial. Ver "РЕСТОРАН" y leer "PECTOPAH" en vez de "RESTORAN" (restaurante) es el error clásico. Una vez memorizadas las trampas (В, Н, Р, С, Х sobre todo), la lectura mejora rápidamente porque el resto del cirílico sigue siendo fonético — cada letra tiene un sonido fijo, mucho más regular que el inglés o el francés.',
       ],
     },
     {
-      heading: 'Signos blando y duro: Ь y Ъ',
+      heading: '¿Qué función tienen los signos blando Ь y duro Ъ?',
       paragraphs: [
         'Dos letras rusas no tienen sonido propio. Ь (znak myagkiy = signo blando) suaviza la consonante anterior: день (den\') = día, con consonante palatalizada. Ъ (tvyordiy znak = signo duro) separa una consonante de una vocal y crea pausa articulatoria: объявление (ob\'yavleniye). En A1 basta con saber que Ь suaviza.',
         'El acento en ruso (тоническое ударение) no se escribe normalmente en textos cotidianos pero determina la pronunciación de las vocales. La О no acentuada suena como "a": Москва (Moskva) no "Mosk-VA". En A1 aprende palabras con su acento marcado cuando sea posible.',
+      ],
+    },
+    {
+      heading: '¿Qué letras cirílicas son "falsos amigos" del alfabeto latino?',
+      paragraphs: [
+        'Varias letras rusas se parecen a letras latinas pero suenan distinto, y son la mayor fuente de errores al empezar. В se lee "v" (no "b"): вода = agua. Н se lee "n": нос = nariz. Р se lee "r" vibrante: рука = mano. С se lee "s": суп = sopa. У se lee "u": утро = mañana. Х se lee como la "j" española: хорошо = bien. Además Е se lee "ye" (ye) y Ё "yo".',
+        'La trampa para el hispanohablante es leerlas con su valor latino (ver "PECTOPAH" y decir "pectopah" cuando pone РЕСТОРАН = restorán). Conviene memorizar primero este grupo de falsos amigos, porque aparecen en muchísimas palabras cotidianas y confundirlos cambia por completo la pronunciación.',
       ],
     },
   ],
@@ -84,56 +91,56 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Trampa clásica',
-            lines: [['David', '¿Cómo se pronuncia la letra Н?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Н?']],
             options: ['n', 'h', 'r', 'v'],
             answer: 'n',
             explain: 'Н = n (como en "noche"). No es "h" aunque se parece al latín H.',
           },
           {
             scene: 'Trampa clásica 2',
-            lines: [['David', '¿Cómo se pronuncia la letra Р?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Р?']],
             options: ['r', 'p', 'b', 'n'],
             answer: 'r',
             explain: 'Р = r vibrante (como en "perro"). No es "p".',
           },
           {
             scene: 'Trampa clásica 3',
-            lines: [['David', '¿Cómo se pronuncia la letra В?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra В?']],
             options: ['v', 'b', 'w', 'f'],
             answer: 'v',
             explain: 'В = v (como en "vino"). No es "b".',
           },
           {
             scene: 'Trampa clásica 4',
-            lines: [['David', '¿Cómo se pronuncia la letra С?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra С?']],
             options: ['s', 'c', 'k', 'z'],
             answer: 's',
             explain: 'С = s (como en "sol"). No es "c" ni "k".',
           },
           {
             scene: 'Vocal compuesta',
-            lines: [['David', '¿Cómo se pronuncia la letra Я?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Я?']],
             options: ['ya', 'a', 'ia', 'je'],
             answer: 'ya',
             explain: 'Я = ya (como "ya" en inglés o "lla" coloquial). Vocal compuesta y+a.',
           },
           {
             scene: 'Sibilante',
-            lines: [['David', '¿Cómo se pronuncia la letra Ш?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Ш?']],
             options: ['sh', 'ch', 's', 'zh'],
             answer: 'sh',
             explain: 'Ш = sh (como "sh" en "shampoo"). Sibilante sorda.',
           },
           {
             scene: 'Sibilante 2',
-            lines: [['David', '¿Cómo se pronuncia la letra Ж?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra Ж?']],
             options: ['zh', 'z', 'sh', 'ch'],
             answer: 'zh',
             explain: 'Ж = zh (como la "g" de "garage" en inglés). Sibilante sonora.',
           },
           {
             scene: 'Letra fácil',
-            lines: [['David', '¿Cómo se pronuncia la letra М?']],
+            lines: [['Diego', '¿Cómo se pronuncia la letra М?']],
             options: ['m', 'n', 'p', 'b'],
             answer: 'm',
             explain: 'М = m. Idéntica al latín. Sin trampa aquí.',
@@ -149,7 +156,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Нет (no)',
-            lines: [['David', 'НЕТ = [[0]] + [[1]] + т = "nyet" (no)']],
+            lines: [['Diego', 'НЕТ = [[0]] + [[1]] + т = "nyet" (no)']],
             blanks: [
               { options: ['n', 'h', 'r'], answer: 'n', explain: 'Н = n. Primera trampa: Н es n, no h.' },
               { options: ['ye', 'e', 'i'], answer: 'ye', explain: 'Е = ye. Vocal compuesta y+e.' },
@@ -157,7 +164,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Россия (Rusia)',
-            lines: [['David', 'РОССИЯ = [[0]]оссия = primer sonido']],
+            lines: [['Diego', 'РОССИЯ = [[0]]оссия = primer sonido']],
             blanks: [
               { options: ['r', 'p', 'b'], answer: 'r', explain: 'Р = r vibrante. No es "p".' },
               { options: ['ya', 'a', 'ja'], answer: 'ya', explain: 'Я = ya. Final de Россия = Rossiya.' },
@@ -165,7 +172,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Спасибо (gracias)',
-            lines: [['David', 'СПАСИБО = [[0]]пасибо — primer sonido']],
+            lines: [['Diego', 'СПАСИБО = [[0]]пасибо — primer sonido']],
             blanks: [
               { options: ['s', 'c', 'k'], answer: 's', explain: 'С = s. No es "c". Spasibo comienza con s.' },
               { options: ['i', 'y', 'e'], answer: 'i', explain: 'И = i (no "y"). Спасибо = spa-SI-bo.' },
@@ -173,7 +180,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Привет (hola)',
-            lines: [['David', 'ПРИВЕТ = [[0]]ривет — primer y segundo sonido']],
+            lines: [['Diego', 'ПРИВЕТ = [[0]]ривет — primer y segundo sonido']],
             blanks: [
               { options: ['p', 'r', 'b'], answer: 'p', explain: 'П = p. Nueva letra (no trampa). Привет comienza con p.' },
               { options: ['r', 'p', 'n'], answer: 'r', explain: 'Р = r. Trampа: Р es r, no p.' },

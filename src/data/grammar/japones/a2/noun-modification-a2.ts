@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El principio fundamental: todo antes del sustantivo',
+      heading: '¿Por qué en japonés todo lo que describe va antes del sustantivo?',
       paragraphs: [
         'En japonés no existen pronombres relativos como "que", "quien" o "donde". En cambio, toda la información modificadora se coloca ANTES del sustantivo. "El libro que compré ayer" en japonés es "昨日買った本" (literalmente: ayer-compré-libro). La oración modificadora funciona como un gran adjetivo prenominal.',
         'Los verbos en la cláusula modificadora toman su forma de diccionario (presente/futuro), forma た (pasado), o forma ない (negativo). No hay que marcar el sujeto de la relativa con が — sigue siendo が, pero la partícula が a veces se puede sustituir por の dentro de la relativa: "私が読んだ本" = "私の読んだ本" (el libro que yo leí).',
       ],
     },
     {
-      heading: 'Diferencia entre い-adj y な-adj ante sustantivo',
+      heading: '¿Cómo modifican al sustantivo los adjetivos い y な?',
       paragraphs: [
         'Los adjetivos い (formas en -い) van directamente antes del sustantivo: 大きい家 (casa grande), 古い車 (coche viejo). Los adjetivos な (una categoría diferente que incluye 静か、有名、好き、大切) necesitan な entre el adjetivo y el sustantivo: 静かな部屋 (habitación tranquila), 有名な歌手 (cantante famoso).',
         'Un error muy común de estudiantes de español es poner の en lugar de な con adjetivos な: "有名の人" ❌. La regla es simple: si pertenece a la clase な-adj, siempre llevas な antes del sustantivo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se pone una frase entera delante de un sustantivo?',
+      paragraphs: [
+        'En japonés cualquier modificador —una palabra o una frase completa— va SIEMPRE delante del sustantivo, sin pronombre relativo como "que". Donde el español dice "la persona que come pan", el japonés dice literalmente "pan-come persona": パンを食べる人. El verbo de la frase modificadora va en forma PLANA: 私が撮った写真 (la foto que yo tomé), 昨日買った本 (el libro que compré ayer). Un detalle clave: dentro de esa cláusula, el sujeto suele marcarse con が (o の), no con は: 母が作った料理 (la comida que hizo mi madre). La trampa para el hispanohablante es el orden invertido y la ausencia de "que": hay que colocar toda la descripción antes del sustantivo y recordar que el verbo interno va en forma plana.',
       ],
     },
   ],
@@ -185,7 +191,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: crea la frase con el modificador correcto.',
         type: 'freeText',
         scene: '修飾語と名詞を組み合わせてください。',
-        text: '大切 + 友達 → ___ 友達 (na-adj) / 昨日会う → ___ 人 (ta-form) / 日本語を話す → ___ 人 (diccionario) / おいしい + 料理 → ___ 料理 (i-adj)',
+        text: '大切 + 友達 → [[0]] 友達 (na-adj) / 昨日会う → [[1]] 人 (ta-form) / 日本語を話す → [[2]] 人 (diccionario) / おいしい + 料理 → [[3]] 料理 (i-adj)',
         blanks: [
           { answer: '大切な', explain: '"大切な友達" = amigo importante. な-adj + な.' },
           { answer: '昨日会った', explain: '"昨日会った人" = persona que conocí ayer. V-た.' },

@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~でしょう: probabilidad y conjetura en japonés',
+      heading: '¿Cómo se expresan probabilidad y conjetura con ~でしょう?',
       paragraphs: [
         '~でしょう expresa que algo es probable o que el hablante supone que algo es así. Es equivalente al español "probablemente", "creo que" o "debe de ser". "明日は雨でしょう" (Mañana probablemente llueva) es la típica frase del pronóstico del tiempo japonés.',
         'Con entonación ascendente (でしょう↑), se convierte en una pregunta de confirmación, equivalente a "¿verdad?" en español: "知っているでしょう？" (Lo sabes, ¿verdad?). Esta doble función lo convierte en una de las partículas modales más versátiles del japonés A2.',
       ],
     },
     {
-      heading: 'だろう: la versión informal de でしょう',
+      heading: '¿Cuándo se usa だろう, la versión informal de でしょう?',
       paragraphs: [
         'だろう es la forma informal de でしょう. Se usa en conversaciones informales, en el habla masculina o en el monólogo interno. "たぶん来るだろう" (Probablemente vendrá) es equivalente a "来るでしょう" pero más casual.',
         'たぶん (probablemente) y きっと (seguramente) se usan frecuentemente con でしょう/だろう para graduar el nivel de certeza: "たぶん雨でしょう" (probablemente llueva) vs "きっと来るでしょう" (seguramente vendrá).',
+      ],
+    },
+    {
+      heading: '¿Cómo cambia でしょう según la entonación?',
+      paragraphs: [
+        'でしょう tiene dos valores que dependen de la entonación al hablar. Con entonación descendente expresa conjetura del hablante: 明日は雨でしょう (mañana probablemente llueva) —típico del pronóstico del tiempo—. Con entonación ascendente (でしょう？) busca confirmación del oyente, como "¿verdad?": おいしいでしょう？ (está rico, ¿verdad?). Se coloca tras sustantivos, adjetivos y verbos en forma plana: 学生でしょう, 高いでしょう, 行くでしょう. La trampa para el hispanohablante es que でしょう NO es un futuro: 行くでしょう no es "iré" sino "probablemente irá/irás". Para futuro seguro se usa el presente simple 行きます. El grado de certeza de でしょう es medio: menos seguro que una afirmación, más que かもしれない.',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el pronóstico del tiempo usando でしょう.',
         type: 'guidedText',
         scene: '天気予報です。',
-        text: '明日の天気をお伝えします。朝は曇り[[0]]。昼ごろから雨が降る[[1]]。気温は今日より低い[[1]]。風が強い[[0]]ので、傘を持って行った方がいい[[0]]。',
+        text: '明日の天気をお伝えします。朝は曇り[[0]]。昼ごろから雨が降る[[1]]。気温は今日より低い[[2]]。風が強い[[3]]ので、傘を持って行った方がいい[[4]]。',
         blanks: [
           { options: ['でしょう', 'だろう', 'ですね', 'か'], answer: 'でしょう', explain: '"曇りでしょう" = probablemente esté nublado. N + でしょう.' },
           { options: ['でしょう', 'だろう', 'です', 'か'], answer: 'でしょう', explain: '"降るでしょう" / "低いでしょう" = probabilidad. V dic./い-adj + でしょう.' },
@@ -182,7 +188,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: añade でしょう o だろう según el contexto.',
         type: 'freeText',
         scene: '次の文に確率を付けてください。',
-        text: '彼女は来ない___。(probablemente, formal) / この問題は難しい___。(probablemente, informal) / 彼は先生___。(¿verdad? — confirmación) / きっと大丈夫___。(seguramente, formal)',
+        text: '彼女は来ない[[0]]。(probablemente, formal) / この問題は難しい[[1]]。(probablemente, informal) / 彼は先生[[2]]。(¿verdad? — confirmación) / きっと大丈夫[[3]]。(seguramente, formal)',
         blanks: [
           { answer: 'でしょう', explain: '"来ないでしょう" = probablemente no venga (formal).' },
           { answer: 'だろう', explain: '"難しいだろう" = probablemente sea difícil (informal).' },

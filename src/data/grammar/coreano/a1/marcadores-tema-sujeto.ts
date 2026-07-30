@@ -46,14 +46,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cómo elegir: consonante → 은/이; vocal → 는/가',
+      heading: '¿Cómo se eligen 은/는 y 이/가 según la terminación?',
       paragraphs: [
         'La selección es puramente fonética. Si la última sílaba de la palabra tiene batchim (consonante final), se usa 은 (tema) o 이 (sujeto). Si termina en vocal (sin batchim), se usa 는 (tema) o 가 (sujeto).',
         'Ejemplos: 학생은/학생이 (학생 termina en ㅇ = consonante). 의사는/의사가 (의사 termina en ㅏ = vocal). 커피는/커피가 (커피 termina en ㅣ = vocal).',
       ],
     },
     {
-      heading: 'La diferencia entre tema (은/는) y sujeto (이/가)',
+      heading: '¿Cuál es la diferencia entre tema (은/는) y sujeto (이/가)?',
       paragraphs: [
         '은/는 introduce o cambia el tema de conversación, a menudo con un contraste implícito: 저는 학생이에요 (Yo [en cuanto a mí] soy estudiante — puede implicar que otros no lo son). También se usa para enfocar el tema.',
         '이/가 marca simplemente el sujeto gramatical. Se usa especialmente con verbos de existencia (있어요 = hay/existo, 없어요 = no hay) o cuando el sujeto es nuevo o inesperado: 고양이가 있어요 (Hay un gato). No puedes usar 은/는 con estos verbos fácilmente.',

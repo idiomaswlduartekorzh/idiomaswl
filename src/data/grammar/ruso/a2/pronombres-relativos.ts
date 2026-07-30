@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Который: el pronombre relativo ruso y su concordancia',
+      heading: '¿Cómo concuerda el pronombre relativo который?',
       paragraphs: [
         'En ruso el pronombre relativo универсальный es который. Concuerda en género y número con el sustantivo al que se refiere (el antecedente), pero su caso lo determina la función que cumple dentro de la oración subordinada. Si el sustantivo es masculino, который/которого/которому etc.; si es femenino, которая/которую/которой etc.; si es plural, которые/которых/которыми etc.',
         'Ejemplos con diferentes casos: "Книга, которую я читаю" (el libro que leo — которую porque es complemento directo de читаю, femenino acusativo); "Человек, которому я позвонил" (la persona a quien llamé — которому, dativo masculino, porque llamé A alguien); "Город, в котором я живу" (la ciudad en la que vivo — в котором, preposición в + prepositivo masculino).',
       ],
     },
     {
-      heading: 'Который con preposiciones y casos oblicuos',
+      heading: '¿Cómo se usa который con preposiciones y casos oblicuos?',
       paragraphs: [
         'Cuando el pronombre relativo lleva preposición, esta se coloca ANTES de который (no al final como en inglés): "la ciudad en la que vivo" = "город, в котором я живу" (no "город, который я живу в"). La preposición selecciona el caso: в + prepositivo → в котором; с + instrumental → с которым; о + prepositivo → о котором; из + genitivo → из которого.',
         'Para personas, кто y что también pueden introducir relativas informalmente: "тот, кто помог мне" (el que me ayudó). Pero который es el estándar para todo tipo de antecedentes en el registro formal y escrito.',
+      ],
+    },
+    {
+      heading: '¿En qué se diferencia который de что y кто como relativos?',
+      paragraphs: [
+        'который es el relativo por defecto ("que/el cual"), concuerda en género y número con el antecedente y toma el caso que le da su papel en la subordinada: Книга, которую я читаю (el libro que leo). что como relativo se usa sobre todo con antecedentes neutros indefinidos como всё, то: Всё, что я знаю (todo lo que sé). кто se usa con antecedentes de persona indefinidos como тот, все: Тот, кто хочет (el que quiere).',
+        'La trampa para el hispanohablante, que usa "que" para casi todo, es que en ruso который es el relativo general con nombres concretos, mientras что y кто se reservan para antecedentes pronominales neutros (то, всё) o personales indefinidos (тот, все).',
       ],
     },
   ],
@@ -184,7 +191,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta de который.',
         type: 'freeText',
         scene: 'Напиши форму относительного местоимения.',
-        text: 'Фильм, ___ (Acus. inan. masc.) я видел / Подруга, ___ (Nom. fem.) пела / О городе, в ___ (Prep. masc.) я жил / Друзья, ___ (с + Instr. pl.) я учился',
+        text: 'Фильм, [[0]] (Acus. inan. masc.) я видел / Подруга, [[1]] (Nom. fem.) пела / О городе, в [[2]] (Prep. masc.) я жил / Друзья, [[3]] (с + Instr. pl.) я учился',
         blanks: [
           { answer: 'который', explain: '"который" — фильм (masc. inan.) → Acus. inan. = Nom. masc. = который.' },
           { answer: 'которая', explain: '"которая" — подруга (fem.) → Nominativo fem. = которая.' },

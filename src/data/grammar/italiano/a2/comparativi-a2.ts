@@ -51,15 +51,58 @@ const topic: GrammarTopic = {
     {
       heading: 'Cómo comparar en italiano: superioridad, inferioridad e igualdad',
       paragraphs: [
-        'Los comparativos en italiano siguen un patrón claro: più para "más", meno para "menos" y tanto…quanto para "tan…como". La clave está en elegir bien entre di y che después del comparativo.',
-        'La regla básica: usa di antes de un nombre o pronombre (più alto di me), y che cuando comparas dos acciones, dos adjetivos o una preposición está involucrada (è meglio camminare che prendere il taxi).',
+        'Comparar en italiano tiene tres estructuras fijas: più (más), meno (menos) y tanto… quanto / così… come (tan… como). El único punto delicado es elegir entre di y che tras el comparativo. Esta es la tabla de estructuras:',
+      ],
+      table: [
+        ['Tipo', 'Estructura', 'Ejemplo'],
+        ['Superioridad', 'più + adj. + di / che', 'Roma è più grande di Milano.'],
+        ['Inferioridad', 'meno + adj. + di / che', 'Il caffè è meno caro del vino.'],
+        ['Igualdad (adj.)', '(tanto/così) + adj. + quanto/come', 'Luca è alto quanto Marco.'],
+        ['Igualdad (nombres)', 'tanto… quanto', 'Ho tanti libri quanti amici.'],
+      ],
+    },
+    {
+      heading: 'Di o che: la elección clave del comparativo',
+      paragraphs: [
+        'Después de più/meno hay que elegir entre "di" y "che". Es el error más común. Regla: "di" ante un nombre, pronombre o número; "che" cuando se comparan dos elementos del mismo tipo (dos adjetivos, dos verbos, dos nombres) o hay una preposición:',
+      ],
+      table: [
+        ['Usa…', 'Cuándo', 'Ejemplo'],
+        ['di', 'ante nombre, pronombre o número', 'Sono più alto di te.'],
+        ['di', 'con artículo se contrae (di+il=del)', 'più caro del vino'],
+        ['che', 'entre dos adjetivos / verbos', 'È più furbo che intelligente.'],
+        ['che', 'entre dos nombres o con preposición', 'Leggo più libri che riviste.'],
       ],
     },
     {
       heading: 'Formas irregulares: migliore, peggiore, maggiore, minore',
       paragraphs: [
-        'Cuatro adjetivos tienen formas comparativas propias: buono→migliore (mejor), cattivo→peggiore (peor), grande→maggiore (mayor), piccolo→minore (menor). Se usan sin più o meno delante.',
-        'En el lenguaje cotidiano también se oyen "più buono" y "più cattivo", especialmente para sabores: questa torta è più buona di quella. Pero migliore/peggiore son siempre correctas y preferidas en contextos formales.',
+        'Cuatro adjetivos tienen comparativo propio y se usan sin più/meno delante. En el habla coloquial también existen "più buono/cattivo" (sobre todo para sabores), pero las formas irregulares son las preferidas:',
+      ],
+      table: [
+        ['Adjetivo', 'Comparativo', 'Español'],
+        ['buono', 'migliore', 'mejor'],
+        ['cattivo', 'peggiore', 'peor'],
+        ['grande', 'maggiore', 'mayor'],
+        ['piccolo', 'minore', 'menor'],
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen los comparativos en italiano?',
+      paragraphs: [
+        'Con più (más) o meno (menos) delante del adjetivo, seguidos de di o che: "più grande di", "meno caro di". Para la igualdad se usa "tanto… quanto" o "così… come": "alto quanto Marco". El adjetivo concuerda con el sustantivo al que describe.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "di" y cuándo "che" en las comparaciones?',
+      paragraphs: [
+        '"di" ante un nombre, pronombre o número ("più alto di me", "più di dieci"). "che" cuando se comparan dos elementos del mismo tipo —dos adjetivos, dos verbos, dos sustantivos— o cuando hay preposición: "È più stanco che malato", "Leggo più libri che riviste".',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "mejor" y "peor" en italiano?',
+      paragraphs: [
+        'Mejor = migliore; peor = peggiore. Se usan sin più delante: "Questa pizza è migliore di quella", "Il tempo è peggiore di ieri". Como adverbios son meglio (mejor) y peggio (peor): "Sto meglio oggi", "Canta peggio di prima".',
       ],
     },
   ],
@@ -110,7 +153,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los hermanos',
-            lines: [['David', 'Mio fratello è alto ___ me.']],
+            lines: [['Dario', 'Mio fratello è alto ___ me.']],
             options: ['tanto quanto', 'più di', 'meno che', 'tanto di'],
             answer: 'tanto quanto',
             explain: 'Igualdad: tanto + adj + quanto. Mio fratello è alto tanto quanto me.',
@@ -131,7 +174,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El tren y el autobús',
-            lines: [['Zhanna', 'Il treno è ___ comodo ___ l\'autobus.']],
+            lines: [['Sara', 'Il treno è ___ comodo ___ l\'autobus.']],
             options: ['più / di', 'più / che', 'meno / quanto', 'tanto / di'],
             answer: 'più / di',
             explain: 'Superioridad con sustantivo: più comodo di. Il treno è più comodo dell\'autobus.',
@@ -178,7 +221,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los amigos',
-            lines: [['David', 'Luca parla [[0]] velocemente [[1]] Carlo.']],
+            lines: [['Dario', 'Luca parla [[0]] velocemente [[1]] Carlo.']],
             blanks: [
               { options: ['tanto', 'più', 'meno'], answer: 'tanto', explain: 'Igualdad: tanto…quanto. Hablan igual de rápido.' },
               { options: ['quanto', 'di', 'che'], answer: 'quanto', explain: 'Igualdad con avverbio: tanto velocemente quanto.' },

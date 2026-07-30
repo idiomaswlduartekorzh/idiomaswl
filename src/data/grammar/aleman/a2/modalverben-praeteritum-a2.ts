@@ -49,20 +49,20 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Por qué los modales usan Präteritum en lugar de Perfekt',
+      heading: '¿Por qué los modales usan Präteritum en vez de Perfekt?',
       paragraphs: [
         'En alemán, mientras que la mayoría de los verbos prefieren el Perfekt en el habla oral para el pasado, los verbos modales son una excepción: se usan casi siempre en su forma de Präteritum, incluso en conversación. Decir "Ich musste arbeiten" es mucho más natural que "Ich habe arbeiten müssen" (que, aunque correcto, suena muy formal o escrito).',
       ],
     },
     {
-      heading: 'Las formas de Präteritum de los verbos modales',
+      heading: '¿Cómo son las formas de Präteritum de los modales alemanes?',
       paragraphs: [
         'La regla es simple: se añade -te a la raíz sin Umlaut, y la conjugación es igual para todas las personas excepto wir/sie/Sie (que añaden -ten). müssen → musste, dürfen → durfte, können → konnte, mögen → mochte, wollen → wollte (sin Umlaut en infinitivo), sollen → sollte (sin Umlaut en infinitivo).',
         'Atención: "müsste" (con Umlaut) es el Konjunktiv II de müssen (= debería), no el Präteritum. El Präteritum es "musste" (sin Umlaut).',
       ],
     },
     {
-      heading: 'Posición del infinitivo en oraciones con modales en Präteritum',
+      heading: '¿Dónde va el infinitivo con modales en Präteritum?',
       paragraphs: [
         'La estructura es la misma que en presente: el modal conjugado va en posición 2, y el infinitivo del verbo principal va al final. "Ich musste gestern sehr früh aufstehen." En oraciones subordinadas, el modal va al final en forma de Infinitiv + modal: "weil ich früh aufstehen musste".',
       ],
@@ -215,7 +215,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma correcta del modal en Präteritum sin opciones.',
         type: 'freeText',
-        scene: 'David habla de un día complicado.',
+        scene: 'Dario habla de un día complicado.',
         text: 'Gestern [[0]] ich sehr früh aufstehen. Ich [[1]] nicht frühstücken, weil keine Zeit war. Ich [[2]] schnell zur Arbeit fahren. Am Abend [[3]] ich endlich nach Hause. Ich [[4]] schon früher gehen, aber mein Chef sagte nein.',
         blanks: [
           { answer: 'musste', accepted: ['musste'], explain: '"müssen" Präteritum: ich musste.' },

@@ -42,21 +42,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los verbos regulares del alemán: un patrón sistemático',
+      heading: '¿Cómo se conjugan los verbos regulares en presente alemán?',
       paragraphs: [
         'A diferencia del francés donde muchas terminaciones son mudas, en alemán todas las terminaciones verbales se pronuncian claramente. El presente de los verbos regulares se forma: radical + terminación (-e/-st/-t/-en/-t/-en).',
         'El radical se obtiene quitando -en del infinitivo: wohnen → wohn-, spielen → spiel-, hören → hör-, lernen → lern-. Los verbos cuyo radical termina en -t o -d añaden una -e- antes de -st y -t por razones de pronunciación: arbeiten → arbeit- → du arbeitest, er arbeitet.',
       ],
     },
     {
-      heading: 'Las 6 terminaciones del presente regular',
+      heading: '¿Cuáles son las terminaciones del presente regular alemán?',
       paragraphs: [
         'Ich: -e (ich wohne), du: -st (du wohnst), er/sie/es: -t (er wohnt), wir: -en (wir wohnen), ihr: -t (ihr wohnt), sie/Sie: -en (sie wohnen).',
         'Nota: wir y sie/Sie tienen la misma terminación que el infinitivo (-en). Esto facilita la memorización: wir/sie/Sie = igual al infinitivo.',
       ],
     },
     {
-      heading: 'La regla de la segunda posición (V2)',
+      heading: '¿Qué es la regla V2 (verbo en segunda posición) en alemán?',
       paragraphs: [
         'En alemán, el verbo conjugado siempre ocupa la segunda posición en la oración declarativa. "Segunda posición" no significa segunda palabra, sino segundo elemento (chunk): Ich wohne in Berlin. / In Berlin wohne ich. / Morgens lerne ich Deutsch.',
         'Esta regla de V2 (Verb-Zweit) es una de las características más importantes del alemán y diferencia radicalmente su sintaxis del español.',

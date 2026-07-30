@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La pasiva reflexiva con "se": la más frecuente',
+      heading: '¿Qué es la pasiva reflexiva con "se" en portugués?',
       paragraphs: [
         'En el habla cotidiana, el portugués prefiere la pasiva pronominal con "se" cuando no se menciona el agente. "Alugam-se quartos" (Se alquilan habitaciones), "Fala-se espanhol" (Se habla español), "Procuram-se candidatos" (Se buscan candidatos).',
         'En portugués europeo, el pronombre "se" va después del verbo unido con guion cuando es el inicio de frase o después de conjunción, pausa o en frases afirmativas neutras. El verbo concuerda con el sujeto: "Vende-se um apartamento" (singular) vs "Vendem-se apartamentos" (plural).',
@@ -83,7 +83,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Pasiva con "ser" vs "estar" en portugués',
+      heading: '¿Cuál es la diferencia entre pasiva con ser y con estar en portugués?',
       paragraphs: [
         'Una distinción importante: "ser + participio" expresa la acción pasiva (el proceso o evento). "Estar + participio" expresa el resultado o estado. "A janela foi fechada pelo vento" (la ventana fue cerrada por el viento — acción). "A janela está fechada" (la ventana está cerrada — estado resultante).',
         'Este contraste existe también en español (fue cerrada / está cerrada) y funciona de la misma manera. La elección entre "ser" y "estar" cambia el enfoque: acción vs estado. En contextos donde el agente es importante, siempre usa "ser".',

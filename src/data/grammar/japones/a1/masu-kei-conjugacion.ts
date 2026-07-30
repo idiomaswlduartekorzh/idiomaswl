@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Los tres grupos verbales del japonés: ¿cómo saber cuál es cuál?',
+      heading: '¿Cuáles son los tres grupos verbales del japonés y cómo distinguirlos?',
       paragraphs: [
         'Los verbos japoneses se clasifican en tres grupos que determinan cómo forman la raíz ます. Grupo 2 (ichidan/ru-verbos): el infinitivo termina en る precedido de vocal i o e: たべる, みる, おきる, ねる. Para la forma ます, simplemente quitas る y añades ます: たべます, みます. Son los más predecibles.',
         'Grupo 1 (godan/u-verbos): terminan en una consonante + う, aunque pueden terminar también en る (si la vocal anterior no es i/e). Ejemplos: かく→かきます, のむ→のみます, はなす→はなします, かえる→かえります (este termina en る pero es godan). Los irregulares son solo dos: する (hacer)→します y くる (venir)→きます. Estos dos debes memorizar.',
       ],
     },
     {
-      heading: 'El tiempo verbal va al final en japonés',
+      heading: '¿Por qué el tiempo verbal va al final en japonés?',
       paragraphs: [
         'Una característica clave del japonés es que solo el ÚLTIMO verbo de la frase se conjuga para tiempo. Si conectas varias acciones (levantarse, comer, ir), solo el último verbo lleva el tiempo: おきて、たべて、がっこうに いきました = me levanté, comí y fui a la escuela (solo いきました tiene pasado).',
         'Esto es muy diferente al español donde cada verbo en la cadena lleva su tiempo. En japonés la forma て (te-form) conecta verbos sin tiempo — el tiempo de toda la cadena lo determina el verbo final.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forman el negativo y el pasado en la forma ます?',
+      paragraphs: [
+        'La forma cortés ます conjuga los cuatro tiempos básicos cambiando solo la terminación, sin tocar la raíz. Afirmativo presente/futuro: 食べます (como/comeré); negativo: 食べません (no como); pasado afirmativo: 食べました (comí); pasado negativo: 食べませんでした (no comí). El mismo patrón vale para todos los verbos en ます: 行きます → 行きません → 行きました → 行きませんでした. La gran ventaja para el hispanohablante es que el japonés no conjuga por persona: 食べます sirve para yo, tú, él, nosotros y ellos por igual; el contexto o el sujeto con は/が aclara quién. La trampa es el pasado negativo ませんでした, que junta negativo (ません) + marca de pasado (でした) y suele costar al principio.',
       ],
     },
   ],
@@ -89,7 +95,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Fuiste?',
-            lines: [['David', 'きのう がっこうに ___？(¿Fuiste a la escuela ayer?)']],
+            lines: [['Hugo', 'きのう がっこうに ___？(¿Fuiste a la escuela ayer?)']],
             options: ['いきましたか', 'いきますか', 'いきませんでしたか', 'いきました'],
             answer: 'いきましたか',
             explain: 'Pasado afirmativo + か: いきましたか.',
@@ -103,7 +109,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No viene',
-            lines: [['Ana', 'デービッドさんは きょう ___。(David no viene hoy.)']],
+            lines: [['Ana', 'デービッドさんは きょう ___。(Hugo no viene hoy.)']],
             options: ['きません', 'きます', 'きました', 'きませんでした'],
             answer: 'きません',
             explain: 'くる → irregular → きます → negativo: きません.',
@@ -124,7 +130,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Bebes café?',
-            lines: [['Zhanna', 'コーヒーを ___？(¿Bebes café?)']],
+            lines: [['Lía', 'コーヒーを ___？(¿Bebes café?)']],
             options: ['のみますか', 'のみます', 'のみませんか', 'のみました'],
             answer: 'のみますか',
             explain: 'のむ (grupo 1) → のみます → pregunta: のみますか.',
@@ -147,7 +153,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Ayer por la tarde',
-            lines: [['David', 'きのう かふぇに [[0]] (ir, pasado) て、コーヒーを [[1]] (beber, pasado)。']],
+            lines: [['Hugo', 'きのう かふぇに [[0]] (ir, pasado) て、コーヒーを [[1]] (beber, pasado)。']],
             blanks: [
               { options: ['いきました', 'いきます', 'いきませんでした'], answer: 'いきました', explain: 'いく → いきます → pasado: いきました.' },
               { options: ['のみました', 'のみます', 'のみませんでした'], answer: 'のみました', explain: 'のむ → のみます → pasado: のみました.' },

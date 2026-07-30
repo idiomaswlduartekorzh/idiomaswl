@@ -60,10 +60,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Cuándo añadir -s y cuándo -es al sustantivo',
+      heading: '¿Cuándo se añade -s y cuándo -es en el Genitivo alemán?',
       paragraphs: [
         'En masculino y neutro el sustantivo recibe una terminación de Genitivo: -es para palabras cortas o que terminan en sibilante (-s, -sch, -z, -tz, -x), y -s para palabras más largas.',
         'Ejemplos: des Tages (-es, monosílabo), des Hauses (-es, termina en -s), des Lehrers (-s, polisílabo), des Computers (-s, polisílabo). Las palabras femeninas y plurales no cambian.',
+      ],
+    },
+    {
+      heading: '¿Cómo se declinan los artículos en Genitivo en alemán?',
+      paragraphs: [
+        'El Genitivo tiene sus propias formas de artículo: definido des (masc./neutro) y der (fem./plural); indefinido eines (masc./neutro) y einer (fem.). Además, los sustantivos masculinos y neutros añaden -s o -es al final (des Mannes, des Kindes, des Autos). Ejemplos: "das Auto des Vaters" (el coche del padre), "die Farbe der Blume" (el color de la flor), "die Bücher der Studenten" (los libros de los estudiantes). En el alemán hablado, el Genitivo suele sustituirse por "von + Dativo" ("das Auto von meinem Vater"), pero en la lengua escrita y formal el Genitivo sigue siendo la norma, y por eso es clave en el examen Goethe B1.',
       ],
     },
   ],

@@ -65,6 +65,18 @@ const topic: GrammarTopic = {
         'La forma de primera persona "vou" (ir) parece relacionada con "vou" pero viene de una raíz completamente diferente. "Venho" (vir, eu venho) recuerda al español "vengo". Aprovecha esta similitud para memorizar vir.',
       ],
     },
+    {
+      heading: '¿Cómo se conjuga el verbo fazer en portugués?',
+      paragraphs: [
+        'Fazer (hacer) es irregular solo en la primera persona: eu faço (con -ço, como el español "hago"), pero você/ele faz, nós fazemos, vocês/eles fazem siguen un patrón regular de -er. El error típico es escribir "eu faz" o "eu fazo": la eu correcta es faço. Fazer sirve además para el tiempo atmosférico y el tiempo transcurrido: "Faz calor" (hace calor), "Faz dois anos" (hace dos años).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre poder y querer en portugués?',
+      paragraphs: [
+        'Poder expresa capacidad o permiso (eu posso = puedo), querer expresa deseo o voluntad (eu quero = quiero). Ambos van seguidos de infinitivo sin preposición: "Posso ajudar" (puedo ayudar), "Quero aprender" (quiero aprender). Ojo con la eu de cada uno: posso lleva doble s, quero una sola r. En el plural son podemos/podem y queremos/querem.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',
@@ -123,12 +135,12 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma verbal correcta en cada espacio.',
         type: 'guidedText',
         scene: 'Um dia na WeLearn — Bucaramanga',
-        text: 'Hoje David e Zhanna [[0]] à academia WeLearn às oito da manhã. (van a la academia) Eu [[1]] de casa às sete. (vengo de casa) Os alunos [[2]] aprender português rapidamente. (quieren aprender) Zhanna [[3]] as aulas com muita energia. (hace las clases) Você [[4]] me ajudar com esta tarefa? (¿Puedes ayudarme?)',
+        text: 'Hoje Bruno e Nora [[0]] à academia WeLearn às oito da manhã. (van a la academia) Eu [[1]] de casa às sete. (vengo de casa) Os alunos [[2]] aprender português rapidamente. (quieren aprender) Nora [[3]] as aulas com muita energia. (hace las clases) Você [[4]] me ajudar com esta tarefa? (¿Puedes ayudarme?)',
         blanks: [
-          { options: ['vai', 'vão', 'vamos', 'venho'], answer: 'vão', explain: 'David e Zhanna (eles) → vão. ir → vão (tercera persona plural).' },
+          { options: ['vai', 'vão', 'vamos', 'venho'], answer: 'vão', explain: 'Bruno e Nora (eles) → vão. ir → vão (tercera persona plural).' },
           { options: ['vou', 'venho', 'vai', 'vêm'], answer: 'venho', explain: 'Eu venho = Yo vengo. vir → venho (eu primera persona).' },
           { options: ['quer', 'querem', 'quero', 'queremos'], answer: 'querem', explain: 'Os alunos (eles) → querem. querer → querem (tercera persona plural).' },
-          { options: ['faço', 'fazem', 'faz', 'fazer'], answer: 'faz', explain: 'Zhanna (ela) → faz. fazer → faz (tercera persona singular).' },
+          { options: ['faço', 'fazem', 'faz', 'fazer'], answer: 'faz', explain: 'Nora (ela) → faz. fazer → faz (tercera persona singular).' },
           { options: ['posso', 'podem', 'pode', 'podemos'], answer: 'pode', explain: 'Você pode? = ¿Puedes/Puede? poder → pode (você/ele/ela).' },
         ],
       },
@@ -158,7 +170,7 @@ const topic: GrammarTopic = {
           { scene: 'Planes para el fin de semana', prompt: 'Traduce al portugués: "Este fin de semana voy a la playa con mis amigos. ¿Quieres venir?" (este fim de semana = este fin de semana, praia = playa, meus amigos = mis amigos)', answer: 'Este fim de semana vou à praia com meus amigos. Você quer vir?', accepted: ['vou', 'quer vir'], explain: 'Eu vou (ir) + você quer (querer) + vir (infinitivo). à = a + a (contracción femenina).' },
           { scene: 'Capacidades', prompt: 'Traduce al portugués: "Puedo hablar español, inglés y un poco de portugués." (um pouco de = un poco de)', answer: 'Eu posso falar espanhol, inglês e um pouco de português', accepted: ['posso falar'], explain: 'Eu posso falar = Puedo hablar. poder → posso + infinitivo.' },
           { scene: 'Preguntar qué hace alguien', prompt: 'Traduce al portugués: "¿Qué hacen los estudiantes en WeLearn?" (os alunos = los estudiantes)', answer: 'O que os alunos fazem na WeLearn?', accepted: ['fazem'], explain: 'Os alunos (eles) fazem. fazer → fazem (tercera persona plural). O que = ¿Qué?' },
-          { scene: 'Origen + movimiento', prompt: 'Traduce al portugués: "David viene de Bucaramanga y va a São Paulo para una conferencia." (conferência = conferencia)', answer: 'David vem de Bucaramanga e vai a São Paulo para uma conferência', accepted: ['vem', 'vai'], explain: 'David vem (vir, ele = vem) + vai (ir, ele = vai). Vem = viene, vai = va.' },
+          { scene: 'Origen + movimiento', prompt: 'Traduce al portugués: "Bruno viene de Bucaramanga y va a São Paulo para una conferencia." (conferência = conferencia)', answer: 'Bruno vem de Bucaramanga e vai a São Paulo para uma conferência', accepted: ['vem', 'vai'], explain: 'Bruno vem (vir, ele = vem) + vai (ir, ele = vai). Vem = viene, vai = va.' },
         ],
       },
       {

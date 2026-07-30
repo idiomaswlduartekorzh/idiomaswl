@@ -60,6 +60,35 @@ const topic: GrammarTopic = {
         'Un pequeño grupo forma -ães: pão → pães (pan → panes), cão → cães (perro → perros). En A1 no es necesario aprender la regla completa — basta con memorizar los más frecuentes: limões, irmãos, mãos, pães, aviões.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el plural en portugués?',
+      paragraphs: [
+        'La regla general es añadir -s a las palabras acabadas en vocal (livro → livros) y -es a las acabadas en -r, -z o -s tónica (professor → professores, luz → luzes). Las terminaciones especiales (-ão, -al, -el, -em…) tienen su propio patrón. Esta tabla resume todos los casos que necesitas en A1:',
+      ],
+      table: [
+        ['Terminación singular', 'Plural', 'Ejemplo'],
+        ['vocal', '+s', 'casa → casas'],
+        ['-r / -z / -s tónica', '+es', 'flor → flores, luz → luzes'],
+        ['-ão (mayoría)', '-ões', 'limão → limões'],
+        ['-ão (parentesco/cortas)', '-ãos', 'irmão → irmãos, mão → mãos'],
+        ['-ão (irregular)', '-ães', 'pão → pães, cão → cães'],
+        ['-al / -el / -ol / -ul', '-ais / -éis / -óis / -uis', 'animal → animais, papel → papéis'],
+        ['-il tónico', '-is', 'funil → funis'],
+        ['-m', '-ns', 'homem → homens, jardim → jardins'],
+      ],
+    },
+    {
+      heading: '¿Cuál es el plural de las palabras terminadas en -ão?',
+      paragraphs: [
+        'Hay tres plurales posibles y hay que memorizar cada palabra, pero la estadística ayuda: la gran mayoría hace -ões (coração → corações, opinião → opiniões), un grupo de parentescos y palabras cortas hace -ãos (irmão → irmãos, mão → mãos, cidadão → cidadãos), y solo un puñado hace -ães (pão → pães, cão → cães, alemão → alemães). Si dudas, -ões es la apuesta más segura porque cubre más del 70 % de los casos.',
+      ],
+    },
+    {
+      heading: '¿En qué se diferencia el plural portugués del español?',
+      paragraphs: [
+        'El español resuelve casi todo con -s / -es, mientras que el portugués añade la familia nasal -ão/-ães/-ões y transforma la -l final en -is (animal → animais, donde el español solo hace "animales"). También convierte la -m en -ns (homem → homens). La coincidencia es alta en las palabras acabadas en vocal, así que el esfuerzo real se concentra en memorizar los grupos -ão y -al/-el.',
+      ],
+    },
   ],
   visual: {
     mode: 'noun-chart',
@@ -85,7 +114,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Libros',
             lines: [['Carlos', 'Tenho dois ___ de português.']],
-            options: ['livros', 'livres', 'livros', 'livrões'],
+            options: ['livros', 'livres', 'livrões'],
             answer: 'livros',
             explain: 'Livro + s = livros. Regla general.',
           },
@@ -112,14 +141,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Animales',
-            lines: [['David', 'Há muitos ___ no parque.']],
+            lines: [['Enzo', 'Há muitos ___ no parque.']],
             options: ['animais', 'animals', 'animales', 'animaes'],
             answer: 'animais',
             explain: 'Animal → animais. -al → -ais.',
           },
           {
             scene: 'Papeles',
-            lines: [['Zhanna', 'Preciso de vários ___ para o projeto.']],
+            lines: [['Elena', 'Preciso de vários ___ para o projeto.']],
             options: ['papéis', 'papeis', 'papers', 'papeles'],
             answer: 'papéis',
             explain: 'Papel → papéis. -el → -éis (con acento).',

@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Lui et leur: los pronombres COI más importantes',
+      heading: '¿Qué son los pronombres COI en francés (lui, leur)?',
       paragraphs: [
         'Los pronombres COI reemplazan un complemento introducido por à cuando se refiere a una persona. "Je parle à Marie" → "Je lui parle". "Je parle à mes amis" → "Je leur parle". Lui (singular) y leur (plural) son las formas de 3ª persona. Son invariables en género: lui puede reemplazar tanto a à lui (a él) como à elle (a ella).',
         'La posición es clave: el COI va siempre ANTES del verbo conjugado (o del auxiliar en los tiempos compuestos): "Je lui ai parlé" (Le hablé), "Il nous a envoyé un message" (Nos envió un mensaje).',
       ],
     },
     {
-      heading: 'Verbos que requieren COI con à + personne',
+      heading: '¿Qué verbos rigen COI con "à" + persona en francés?',
       paragraphs: [
         'Los verbos más frecuentes que usan à + persona son: parler à, téléphoner à, écrire à, donner à, envoyer à, dire à, demander à, répondre à, expliquer à, montrer à, prêter à. Todos ellos toman pronombres COI, no COD.',
         'Cuidado con la diferencia: "Je lui téléphone" (le llamo — COI) vs "Je l\'appelle" (le/la llamo — COD). Téléphoner exige à + personne → lui/leur. Appeler no: COD → le/la/les.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre COD y COI en francés?',
+      paragraphs: [
+        'El COD (complemento de objeto directo) responde a "¿qué? / ¿a quién?" sin preposición y usa me/te/le/la/nous/vous/les: "je le vois" (lo veo). El COI (complemento de objeto indirecto) responde a "¿a quién?" con la preposición à y usa me/te/lui/nous/vous/leur: "je lui parle" (le hablo). La diferencia decisiva está en la 3ª persona: le/la/les para COD, lui/leur para COI. Muchos verbos rigen COI (parler à, téléphoner à, écrire à, répondre à, offrir à, plaire à), y su preposición à no siempre coincide con el español, así que conviene memorizar la construcción con cada verbo para no confundir "je le téléphone" (❌) con "je lui téléphone" (✓).',
       ],
     },
   ],
@@ -171,7 +177,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto reemplazando los complementos con pronombres COI.',
         type: 'guidedText',
         scene: 'Marie parle de ses relations avec sa famille.',
-        text: 'J\'ai un bon contact avec ma famille. J\'écris à ma mère tous les dimanches. Je [[0]] envoie des messages. Mon père est loin, mais je [[0]] téléphone souvent. Mes frères et sœurs ? Je [[1]] parle aussi, mais moins souvent. Quand j\'ai un problème, je demande conseil à mes parents. Je [[1]] fais confiance.',
+        text: 'J\'ai un bon contact avec ma famille. J\'écris à ma mère tous les dimanches. Je [[0]] envoie des messages. Mon père est loin, mais je [[1]] téléphone souvent. Mes frères et sœurs ? Je [[2]] parle aussi, mais moins souvent. Quand j\'ai un problème, je demande conseil à mes parents. Je [[3]] fais confiance.',
         blanks: [
           { options: ['lui', 'leur', 'les', 'le'], answer: 'lui', explain: '"Je lui envoie / Je lui téléphone" = à ma mère/mon père (singular → lui).' },
           { options: ['leur', 'lui', 'les', 'le'], answer: 'leur', explain: '"Je leur parle / Je leur fais confiance" = à mes frères et sœurs (plural → leur).' },
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el pronombre COI correcto.',
         type: 'freeText',
         scene: 'Remplacez le complément indirect par un pronom.',
-        text: 'Il écrit à son amie. → Il ___ écrit. / Nous parlons à nos professeurs. → Nous ___ parlons. / Tu téléphones à moi ? → Tu ___ téléphones ? / Donnez les clés à vos voisins ! → Donnez-___ les clés !',
+        text: 'Il écrit à son amie. → Il [[0]] écrit. / Nous parlons à nos professeurs. → Nous [[1]] parlons. / Tu téléphones à moi ? → Tu [[2]] téléphones ? / Donnez les clés à vos voisins ! → Donnez-[[3]] les clés !',
         blanks: [
           { answer: 'lui', explain: '"lui écrit" = le escribe (à son amie → COI sg → lui).' },
           { answer: 'leur', explain: '"leur parlons" = les hablamos (à nos professeurs → COI pl → leur).' },

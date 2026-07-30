@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Verbos irregulares del futur simple',
+      heading: '¿Cuáles son los verbos irregulares del futur simple?',
       paragraphs: [
         'Los verbos irregulares más importantes tienen raíces especiales que debes memorizar: être → ser- (je serai), avoir → aur- (j\'aurai), aller → ir- (j\'irai), faire → fer- (je ferai), venir → viendr- (je viendrai), pouvoir → pourr- (je pourrai), vouloir → voudr- (je voudrai), savoir → saur- (je saurai), voir → verr- (je verrai), devoir → devr- (je devrai).',
         'Un recurso útil: las terminaciones son siempre las mismas (-ai, -as, -a, -ons, -ez, -ont), así que solo tienes que aprender las raíces irregulares. En total hay unos 20 verbos con raíz irregular, pero los 10 más frecuentes cubren la mayoría de los contextos.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Futur simple vs futur proche: ¿cuándo usar cada uno?',
+      heading: '¿Cuándo se usa el futur simple y cuándo el futur proche?',
       paragraphs: [
         'El futur proche (aller + infinitivo) se usa para acciones futuras inmediatas o ya planeadas: "Je vais partir dans cinq minutes." Es más común en el habla oral y para eventos que ocurrirán muy pronto. El futur simple es más formal, más común en la escritura, y se usa para predicciones, promesas a largo plazo o para hablar de hechos del futuro lejano.',
         'En la práctica cotidiana: usa futur proche para "esta tarde", "mañana", "la semana que viene" en conversaciones informales. Usa futur simple para predicciones ("Dans 50 ans, le monde sera différent"), promesas solemnes ("Je t\'aiderai toujours"), o en textos formales y escritos.',
@@ -143,7 +143,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Llegada futura',
             lines: [['', "Quand vous ___ à Paris, appelez-moi."]],
-            options: ['arriverez', 'arrivez', 'arriviez', 'arriverez'],
+            options: ['arriverez', 'arrivez', 'arriviez'],
             answer: 'arriverez',
             explain: 'Después de "quand" con sentido futuro → futur simple: arriverez.',
           },

@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'Confundir "already" y "yet": "I haven\'t eaten already" — incorrecto. "Already" va en afirmativo; "yet" en negativo. La forma correcta es: "I haven\'t eaten yet."',
       ],
     },
+    {
+      heading: '¿Cómo se usan "ever" y "never" con el present perfect?',
+      paragraphs: [
+        '"ever" (alguna vez) en preguntas: "Have you ever been to Japan?". "never" (nunca) en frases afirmativas con sentido negativo: "I have never eaten sushi". Ambos van entre have/has y el participio. "never" ya es negativo, así que no se combina con "not".',
+      ],
+    },
+    {
+      heading: '¿Cómo se pregunta si alguien ha hecho algo alguna vez en inglés?',
+      paragraphs: [
+        'Con "Have/Has + sujeto + ever + participio": "Have you ever tried Thai food?", "Has she ever been abroad?". La respuesta suele usar el present perfect ("Yes, I have" / "No, I never have") o pasar al past simple para dar detalles ("Yes, I went last year").',
+      ],
+    },
+    {
+      heading: '¿Dónde se coloca "ever" en la frase?',
+      paragraphs: [
+        'Entre el sujeto y el participio, después de have/has: "Have you ever seen it?". No va al final ni antes del sujeto. "never" ocupa la misma posición en afirmativas: "I have never seen it".',
+      ],
+    },
   ],
 
   visual: {
@@ -185,9 +203,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conversación sobre comida',
             lines: [
-              ['A:', '[[0]] you [[1]] eaten frog legs?'],
-              ['B:', 'Never! That\'s something I\'d rather not try.'],
-            ],
+ ['A:', '[[0]] you [[1]] eaten frog legs?'],
+ ['B:', 'Never! That\'s something I\'d rather not try.'],
+ ],
             blanks: [
               { options: ['Have', 'Has', 'Did', 'Do'], answer: 'Have', explain: 'Pregunta con "you" → "Have you ever...?"' },
               { options: ['ever', 'never', 'already', 'yet'], answer: 'ever', explain: '"Ever" en preguntas, después del sujeto.' },
@@ -196,9 +214,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Terminando tareas',
             lines: [
-              ['A:', 'Have you done the dishes yet?'],
-              ['B:', 'Yes, I\'ve [[0]] done them. I did them right after dinner. I [[1]] do things late.'],
-            ],
+ ['A:', 'Have you done the dishes yet?'],
+ ['B:', 'Yes, I\'ve [[0]] done them. I did them right after dinner. I [[1]] do things late.'],
+ ],
             blanks: [
               { options: ['already', 'yet', 'never', 'ever'], answer: 'already', explain: '"Already" en afirmaciones: ya está hecho.' },
               { options: ['never', 'ever', 'already', 'yet'], answer: 'never', explain: '"I never do things late" — nunca hago las cosas tarde (hábito).' },
@@ -215,9 +233,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Sobre actividades extremas',
             lines: [
-              ['A:', 'Have you [[0]] done a bungee jump?'],
-              ['B:', 'No, I\'ve [[1]] done anything that extreme — and I don\'t plan to!'],
-            ],
+ ['A:', 'Have you [[0]] done a bungee jump?'],
+ ['B:', 'No, I\'ve [[1]] done anything that extreme — and I don\'t plan to!'],
+ ],
             blanks: [
               { options: ['ever', 'yet', 'never', 'already'], answer: 'ever', explain: '"Have you ever done...?" — pregunta por experiencia.' },
               { options: ['never', 'ever', 'already', 'yet'], answer: 'never', explain: '"I\'ve never done anything that extreme" — nunca, auxiliar en afirmativo.' },
@@ -232,7 +250,7 @@ const topic: GrammarTopic = {
         intro: 'Elige ever, never, already o yet para completar esta conversación.',
         type: 'guidedText',
         scene: 'Elige ever, never, already o yet para completar esta conversación.',
-        text: '"Have you [[0]] been on a long-haul flight?" — "Yes, I\'ve [[1]] flown to Australia — it took 24 hours!" — "Wow! I\'ve [[2]] done that. The longest flight I\'ve taken was 6 hours. Have you [[3]] visited South America [[3]]?" — "No, not [[4]]. It\'s on my list though. Have you [[5]] decided where you\'re going next?" — "I\'ve [[6]] booked tickets to Japan!"',
+        text: '"Have you [[0]] been on a long-haul flight?" — "Yes, I\'ve [[1]] flown to Australia — it took 24 hours!" — "Wow! I\'ve [[2]] done that. The longest flight I\'ve taken was 6 hours. Have you [[3]] visited South America [[4]]?" — "No, not [[5]]. It\'s on my list though. Have you [[6]] decided where you\'re going next?" — "I\'ve [[7]] booked tickets to Japan!"',
         blanks: [
           { options: ['ever', 'never', 'already', 'yet'], answer: 'ever', explain: '"Have you ever been...?" — pregunta por experiencia.' },
           { options: ['already', 'yet', 'never', 'ever'], answer: 'already', explain: '"I\'ve already flown to Australia" — experiencia que ya tuvo.' },

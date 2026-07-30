@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La forma て en japonés: clave para la fluidez en A2',
+      heading: '¿Por qué la forma て es clave para la fluidez en A2?',
       paragraphs: [
         'La forma て (te-form) es uno de los pilares del japones intermedio. Con ella, puedes encadenar acciones —como en español "me levante, desayune y fui al trabajo"— en una sola frase natural. En japones, este encadenamiento es obligatorio cuando describes secuencias: 起きて、ご飯を食べて、学校に行きます.',
         'Ademas de la secuencia, la forma て sirve para expresar el modo o medio de una accion: 歩いて行く (ir caminando), 走って来る (venir corriendo), 笑って言う (decir riendo). Esta funcion es muy frecuente en el japones cotidiano.',
       ],
     },
     {
-      heading: 'Conjugacion de la forma て: reglas por grupo',
+      heading: '¿Cómo se conjuga la forma て según el grupo verbal?',
       paragraphs: [
         'Los verbos del Grupo 1 (godan) tienen varias sub-reglas segun su terminacion: く→いて (書く→書いて), ぐ→いで (泳ぐ→泳いで), す→して (話す→話して), つ/う/る→って (待つ→待って), む/ぬ/ぶ→んで (飲む→飲んで). Los verbos del Grupo 2 (ichidan) son simples: se elimina る y se agrega て (食べる→食べて).',
         'Los irregulares son solo dos: する→して y くる→きて. Memorizalos desde el principio porque aparecen constantemente. La excepcion adicional es いく→いって (no いいて), que es la unica irregularidad de un verbo del Grupo 1.',
+      ],
+    },
+    {
+      heading: '¿Cómo se encadenan varias acciones en orden con la forma て?',
+      paragraphs: [
+        'La forma て enlaza acciones sucesivas "y luego": 朝起きて、顔を洗って、朝ごはんを食べます (me levanto, me lavo la cara y desayuno). Solo el ÚLTIMO verbo marca el tiempo y la cortesía (食べます / 食べました); los anteriores quedan en forma て, neutros. Las reglas de conjugación por grupo son fijas: grupo 2, quitar る y poner て (食べる→食べて); grupo 1, según la terminación: く→いて (書く→書いて), ぐ→いで, む/ぶ/ぬ→んで (飲む→飲んで), う/つ/る→って (買う→買って), す→して (話す→話して); irregulares する→して, 来る→来て (きて). Ojo con la excepción 行く→行って. La trampa para el hispanohablante es que el tiempo pasado o el negativo NO se reparte por cada verbo: se pone solo en el último de la cadena.',
       ],
     },
   ],
@@ -103,7 +109,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Escribir — 書く (kaku = escribir)',
-            lines: [['David', '手紙を___、ポストに入れました。']],
+            lines: [['Dario', '手紙を___、ポストに入れました。']],
             options: ['書いて', '書って', '書きて', '書くて'],
             answer: '書いて',
             explain: '書く es Grupo 1: く→いて. 書く→書いて (kaite).',
@@ -138,14 +144,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hacer — する (suru = hacer)',
-            lines: [['Jose', '宿題を___、テレビを見ます。']],
+            lines: [['Leo', '宿題を___、テレビを見ます。']],
             options: ['して', 'すって', 'するて', 'します'],
             answer: 'して',
             explain: 'する es irregular: する→して (shite). Es uno de los dos verbos irregulares.',
           },
           {
             scene: 'Ir caminando — modo',
-            lines: [['Zhanna', '駅まで___行きます。 (voy caminando a la estacion)']],
+            lines: [['Clara', '駅まで___行きます。 (voy caminando a la estacion)']],
             options: ['歩いて', '歩って', '歩きます', '歩くて'],
             answer: '歩いて',
             explain: '歩く es Grupo 1: く→いて. 歩いて行く = ir caminando (te-form de modo).',
@@ -161,7 +167,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Rutina manana',
-            lines: [['David', '毎朝、シャワーを[[0]]、朝ごはんを[[1]]、出かけます。']],
+            lines: [['Dario', '毎朝、シャワーを[[0]]、朝ごはんを[[1]]、出かけます。']],
             blanks: [
               { options: ['浴びて', '浴びって', '浴びます'], answer: '浴びて', explain: '浴びる (abiru) es Grupo 2: 浴び + て = 浴びて.' },
               { options: ['食べて', '食べって', '食べます'], answer: '食べて', explain: '食べる es Grupo 2: 食べ + て = 食べて. Verbo intermedio.' },

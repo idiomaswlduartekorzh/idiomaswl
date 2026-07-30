@@ -63,14 +63,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Irregularidades: cambios en la raíz del futuro',
+      heading: '¿Cuáles son los verbos irregulares del futuro do presente?',
       paragraphs: [
         'Hacer: fazer → farei (no "fazerarei"). Decir: dizer → direi. Traer: trazer → trarei. Venir: vir → virei. Tener: ter → terei. Poder: poder → poderei. Saber: saber → saberei.',
         'Estas irregularidades afectan la raíz pero NO las terminaciones, que siguen siendo -ei, -ás, -á, -emos, -eis, -ão. Es un error común añadir ambas formas (fazer + -arei).',
       ],
     },
     {
-      heading: 'Futuro do presente vs "ir + infinitivo"',
+      heading: '¿Cuál es la diferencia entre el futuro simple e "ir + infinitivo"?',
       paragraphs: [
         'Portugués europeo prefiere futuro: "Farei isso amanhã" (Haré eso mañana). Portugués brasileño prefiere "ir a": "Vou fazer isso amanhã". Ambos son correctos, pero indican registro o variante.',
         'El futuro es más formal y se usa en textos escritos, noticias, predicciones meteorológicas, promesas solemnes. En conversación casual brasileña, "ir a" es mucho más frecuente.',
@@ -129,7 +129,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Futuro regular -er',
             lines: [['', 'Você ___ o livro amanhã. (compreender)']],
-            options: ['compreende', 'compreenderá', 'compreendia', 'compreendia'],
+            options: ['compreende', 'compreenderá', 'compreendia'],
             answer: 'compreenderá',
             explain: 'Futuro regular: compreenderá (compreende + -rá).',
           },

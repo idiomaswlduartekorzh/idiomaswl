@@ -64,6 +64,24 @@ const topic: GrammarTopic = {
         'Las preguntas siguen la estructura del present simple: Do you like studying? / Does she enjoy reading? / What do you love doing in your free time? Esta última es perfecta para conversaciones de presentación en A1.',
       ],
     },
+    {
+      heading: '¿Por qué se usa el verbo con -ing después de "like"?',
+      paragraphs: [
+        'Verbos como like, love, hate, enjoy y prefer suelen ir seguidos de otro verbo en -ing para hablar de actividades en general: "I like swimming", "She loves reading", "They hate waiting". El -ing funciona como el nombre de la actividad.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "me gusta hacer algo" en inglés?',
+      paragraphs: [
+        'Con "like" + verbo -ing: "I like cooking" (me gusta cocinar), "I like playing football". Ojo: en inglés el sujeto es la persona ("I like"), al revés que el español "me gusta", donde lo que gusta es el sujeto.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "like doing" y "would like to do"?',
+      paragraphs: [
+        '"like + -ing" expresa un gusto general ("I like traveling" = me gusta viajar). "would like + to + verbo" expresa un deseo puntual y cortés ("I would like to travel" = me gustaría viajar / quisiera). No confundas el gusto habitual con el deseo del momento.',
+      ],
+    },
   ],
   visual: {
     mode: 'scale',
@@ -117,7 +135,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Odio algo',
-            lines: [['David', 'He hates ___ homework at the last minute.']],
+            lines: [['Diego', 'He hates ___ homework at the last minute.']],
             options: ['doing', 'do', 'to do', 'does'],
             answer: 'doing',
             explain: 'hates + -ing: doing homework — gerundio.',
@@ -210,7 +228,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el gerundio (-ing) correcto de cada verbo.',
         type: 'freeText',
         scene: 'Formulario de gustos y aficiones — clase de inglés WeLearn',
-        text: 'I love ___ (speak) English. She likes ___ (listen) to music. He doesn\'t like ___ (do) homework. We enjoy ___ (practice) speaking. I hate ___ (wake) up at 5 a.m. Do you like ___ (watch) series in English?',
+        text: 'I love [[0]] (speak) English. She likes [[1]] (listen) to music. He doesn\'t like [[2]] (do) homework. We enjoy [[3]] (practice) speaking. I hate [[4]] (wake) up at 5 a.m. Do you like [[5]] (watch) series in English?',
         blanks: [
           { answer: 'speaking', accepted: ['speaking'], explain: 'love + speaking — gerundio de speak.' },
           { answer: 'listening', accepted: ['listening'], explain: 'likes + listening — gerundio de listen.' },

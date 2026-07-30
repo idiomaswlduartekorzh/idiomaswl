@@ -55,14 +55,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Las conjunciones más importantes: weil y dass',
+      heading: '¿Cuáles son las conjunciones subordinantes más importantes en alemán?',
       paragraphs: [
         '"Weil" introduce la causa de algo: "Ich trinke Tee, weil ich erkältet bin." (Bebo té porque estoy resfriado.) El verbo "bin" va al final. Atención: no confundir con "denn", que también significa "porque" pero introduce un Hauptsatz (verbo en posición 2): "Ich trinke Tee, denn ich bin erkältet."',
         '"Dass" introduce contenido: una cita, opinión, sentimiento o hecho: "Ich freue mich, dass du kommst." (Me alegra que vengas.) "Wir denken, dass das eine gute Idee ist." Muchos verbos de opinión (denken, glauben, sagen, wissen, hoffen) se combinan con dass.',
       ],
     },
     {
-      heading: 'Contraste y condición: obwohl y wenn',
+      heading: '¿Cómo se expresan contraste y condición en las subordinadas alemanas?',
       paragraphs: [
         '"Obwohl" expresa un contraste con la realidad: "Obwohl es kalt ist, trägt er kein Jacke." (Aunque hace frío, no lleva chaqueta.) El hecho del Nebensatz y el de la oración principal se contradicen. Similar al español "aunque".',
         '"Wenn" tiene dos usos: condición presente/futura ("Wenn du Zeit hast, besuche mich") y situaciones habituales o repetidas del pasado o presente ("Wenn es regnete, blieb er zuhause"). Es diferente de "als" que solo describe un momento único del pasado.',

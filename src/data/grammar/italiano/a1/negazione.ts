@@ -57,8 +57,16 @@ const topic: GrammarTopic = {
     {
       heading: 'Non...mai, non...niente, non...nessuno: la negación reforzada',
       paragraphs: [
-        'Para decir nunca, nada o nadie en italiano se usa non + verbo + mai/niente/nessuno. La clave para el hispanohablante: en italiano no existe la doble negación del español. "Non mangio mai" = "nunca como" (no "non mai mangio"). "Non capisco niente" = "no entiendo nada".',
-        'Mai, niente y nessuno pueden aparecer solos al inicio de frase para énfasis: "Mai!" (¡Nunca!), "Nessuno sa" (nadie sabe). Pero en oraciones normales van después del verbo precedidos de non.',
+        'Para decir nunca, nada, nadie, ya no, etc., el italiano usa non + verbo + una segunda palabra negativa DESPUÉS del verbo. Al hispanohablante esto le suena a "doble negación", pero en italiano es lo correcto y obligatorio. Esta es la tabla de las negaciones reforzadas:',
+      ],
+      table: [
+        ['Expresión', 'Significado', 'Ejemplo'],
+        ['non… mai', 'nunca', 'Non vado mai al cinema.'],
+        ['non… niente / nulla', 'nada', 'Non capisco niente.'],
+        ['non… nessuno', 'nadie / ninguno', 'Non c\'è nessuno.'],
+        ['non… più', 'ya no', 'Non lavoro più qui.'],
+        ['non… ancora', 'todavía no', 'Non ho ancora finito.'],
+        ['non… né… né', 'ni… ni', 'Non bevo né caffè né tè.'],
       ],
     },
     {
@@ -66,6 +74,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'Con los tiempos compuestos (passato prossimo), non va antes del auxiliar: "Non ho mangiato" (no he comido), "Non sono andato" (no he ido). Con los verbos modales también va antes: "Non posso venire" (no puedo venir), "Non voglio studiare" (no quiero estudiar).',
         'Ancora (todavía) en negativo: "Non ho ancora finito" (todavía no he terminado). Affatto refuerza la negación: "Non mi piace affatto" (no me gusta para nada / no me gusta en absoluto).',
+      ],
+    },
+    {
+      heading: '¿Cómo se niega una frase en italiano?',
+      paragraphs: [
+        'Poniendo "non" justo delante del verbo conjugado: "Non parlo italiano", "Non ho fame", "Non siamo pronti". No hay contracciones ni cambios de orden como en otras lenguas. "non" va antes del verbo, nunca antes del sujeto.',
+      ],
+    },
+    {
+      heading: '¿Existe la doble negación en italiano?',
+      paragraphs: [
+        'Sí, y es obligatoria: cuando se usa mai, niente, nessuno, più, etc. después del verbo, hay que mantener "non" antes. "Non vedo nessuno" (no veo a nadie), "Non faccio mai tardi" (nunca llego tarde). Suena a doble negación para el hispanohablante, pero en italiano es lo correcto.',
+      ],
+    },
+    {
+      heading: '¿Dónde se coloca "non" con los verbos compuestos y modales?',
+      paragraphs: [
+        'Antes del auxiliar o del verbo modal, no del participio ni del infinitivo: "Non ho mangiato" (no he comido), "Non sono andato" (no he ido), "Non posso venire" (no puedo venir), "Non voglio studiare" (no quiero estudiar).',
       ],
     },
   ],
@@ -107,14 +133,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No entiende nada',
-            lines: [['David', 'Carlo ___ quando parlo veloce. (capire / niente)']],
+            lines: [['Gael', 'Carlo ___ quando parlo veloce. (capire / niente)']],
             options: ['non capisce niente', 'non niente capisce', 'capisce non niente', 'non capisce'],
             answer: 'non capisce niente',
             explain: 'non + verbo + niente: non capisce niente = no entiende nada.',
           },
           {
             scene: 'No tenemos tiempo',
-            lines: [['Zhanna', 'Oggi ___ per uscire. (avere / noi)']],
+            lines: [['Sara', 'Oggi ___ per uscire. (avere / noi)']],
             options: ['non abbiamo tempo', 'non hanno tempo', 'abbiamo non tempo', 'non abbiamo mai'],
             answer: 'non abbiamo tempo',
             explain: 'Non abbiamo tempo — non + verbo (avere, prima pl).',
@@ -159,9 +185,9 @@ const topic: GrammarTopic = {
           {
             scene: 'No entiendo nada',
             lines: [
-              ['David', 'Capisci l\'italiano?'],
-              ['Carlo', '[[0]] ancora [[1]]. Sto imparando! (capire / niente)'],
-            ],
+ ['Gael', 'Capisci l\'italiano?'],
+ ['Carlo', '[[0]] ancora [[1]]. Sto imparando! (capire / niente)'],
+ ],
             blanks: [
               { options: ['Non capisco', 'Non capisce', 'Non capiamo'], answer: 'Non capisco', explain: 'Io non capisco — prima sg negativa.' },
               { options: ['niente', 'mai', 'nessuno'], answer: 'niente', explain: 'non...niente = nada. Dopo il verbo.' },
@@ -178,12 +204,13 @@ const topic: GrammarTopic = {
           {
             scene: 'No tienes hambre',
             lines: [
-              ['Zhanna', '[[0]] fame? (avere / tu)'],
-              ['Lina', 'No, [[0]] fame, ma [[1]] sete. (avere / ho)'],
-            ],
+ ['Sara', '[[0]] fame? (avere / tu)'],
+ ['Lina', 'No, [[1]] fame, ma [[2]] sete. (avere / ho)'],
+ ],
             blanks: [
               { options: ['Non hai', 'Non ho', 'Non ha'], answer: 'Non hai', explain: 'Tu non hai — seconda sg negativa di avere.' },
               { options: ['non ho', 'non hai', 'non ha'], answer: 'non ho', explain: 'Io non ho fame — prima sg.' },
+              { options: ['ho', 'hai', 'non ho'], answer: 'ho', explain: 'Ma ho sete — afirmativo: sí tengo sed.' },
             ],
           },
           {
@@ -203,7 +230,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con las formas negativas apropiadas.',
         type: 'guidedText',
         scene: 'Carlo habla de su semana difícil en WeLearn',
-        text: 'Questa settimana è difficile. [[0]] (dormir bien / dormire bene / io). [[1]] (no tengo hambre / avere fame / io). La sera [[2]] (nunca estudio / studiare / mai). [[3]] (no entiendo nada / capire / niente) nelle lezioni avanzate. [[4]] (no conozco a nadie / conoscere / nessuno) nei nuovi gruppi. E [[5]] (todavía no termino / finire / ancora) i compiti. Ma David dice: "[[6]] (no te preocupes / preoccuparsi)!"',
+        text: 'Questa settimana è difficile. [[0]] (dormir bien / dormire bene / io). [[1]] (no tengo hambre / avere fame / io). La sera [[2]] (nunca estudio / studiare / mai). [[3]] (no entiendo nada / capire / niente) nelle lezioni avanzate. [[4]] (no conozco a nadie / conoscere / nessuno) nei nuovi gruppi. E [[5]] (todavía no termino / finire / ancora) i compiti. Ma Gael dice: "[[6]] (no te preocupes / preoccuparsi)!"',
         blanks: [
           { options: ['Non dormo bene', 'Non dorme bene', 'Dormo non bene'], answer: 'Non dormo bene', explain: 'Io non dormo bene — non + verbo prima sg.' },
           { options: ['Non ho fame', 'Non ha fame', 'Fame non ho'], answer: 'Non ho fame', explain: 'Non ho fame — non + avere prima sg.' },

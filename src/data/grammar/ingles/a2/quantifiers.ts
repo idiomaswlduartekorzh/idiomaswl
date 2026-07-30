@@ -92,6 +92,24 @@ const topic: GrammarTopic = {
         'Con estos sustantivos siempre uses "much/little/a lot of" (nunca "many/few"): "I don\'t have much information." / "He gave me a lot of advice." / "We have too much luggage."',
       ],
     },
+    {
+      heading: '¿Cuándo se usa "some" y cuándo "any"?',
+      paragraphs: [
+        '"some" en afirmativas ("I have some questions") y en ofrecimientos/peticiones ("Would you like some tea?"). "any" en negativas e interrogativas ("I don\'t have any money", "Do you have any questions?"). Ambos con incontables y plurales.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "much", "many" y "a lot of"?',
+      paragraphs: [
+        '"much" con incontables ("much time"), "many" con contables plurales ("many people"). Ambos se usan sobre todo en preguntas y negaciones. En afirmativas se prefiere "a lot of", que vale para los dos: "a lot of time", "a lot of friends".',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "a few" y "a little"?',
+      paragraphs: [
+        '"a few" con contables plurales ("a few books" = unos pocos libros); "a little" con incontables ("a little water" = un poco de agua). Sin el artículo "a", "few" y "little" tienen matiz negativo (casi ninguno / casi nada).',
+      ],
+    },
   ],
 
   visual: {

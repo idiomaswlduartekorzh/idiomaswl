@@ -50,21 +50,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las preposiciones de Dativ en alemán',
+      heading: '¿Cuáles son las preposiciones de Dativ en alemán?',
       paragraphs: [
         'Hay siete preposiciones que siempre rigen Dativ en alemán: mit (con), bei (junto a / en casa de), nach (después de / hacia — con países), von (de), zu (a — con personas), aus (de — procedencia), seit (desde hace). Aprenderlas como una lista fija es la estrategia más eficiente.',
         'La regla práctica: si ves una de estas preposiciones, el artículo que le sigue cambia a su forma Dativ. El artículo definido masculino "der" se convierte en "dem"; el neutro "das" también se convierte en "dem"; el femenino "die" se convierte en "der"; el plural "die" se convierte en "den".',
       ],
     },
     {
-      heading: 'Verbos que rigen Dativ',
+      heading: '¿Qué verbos rigen Dativ en alemán?',
       paragraphs: [
         'Algunos verbos en alemán toman su complemento directo en Dativ, no en Akkusativ. Los más frecuentes en A2 son: helfen (ayudar a alguien — Ich helfe meinem Bruder), danken (agradecer a alguien), gefallen (gustar — Das gefällt mir), gehören (pertenecer a — Das Buch gehört meiner Lehrerin), fehlen (faltar a alguien).',
         'La estructura de "gefallen" es la inversa del español: la cosa que gusta va en Nominativ (sujeto) y la persona a quien gusta va en Dativ. "Das Essen gefällt mir" = "La comida me gusta".',
       ],
     },
     {
-      heading: 'Dativ vs Akkusativ: cómo distinguirlos',
+      heading: '¿Cómo se distingue el Dativ del Akkusativ en alemán?',
       paragraphs: [
         'El Akkusativ es el objeto directo (¿a qué o a quién afecta la acción directamente?) y el Dativ es el objeto indirecto (¿en beneficio de quién o a quién se da algo?). En "Ich gebe meinem Vater das Buch", "meinem Vater" está en Dativ (objeto indirecto) y "das Buch" en Akkusativ (objeto directo).',
       ],

@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "¿Qué es la nominalización y para qué sirve?",
+      heading: '¿Qué es la nominalización en francés y para qué sirve?',
       paragraphs: [
         "La nominalización es el proceso de convertir un verbo o un adjetivo en un sustantivo. Es fundamental en el francés escrito formal, periodístico y académico. En lugar de 'Le gouvernement a décidé de réduire les impôts' (con verbo), se puede escribir 'La décision du gouvernement de réduire les impôts...' (con sustantivo). La nominalización permite condensar información, variar el estilo y crear un registro más objetivo y formal.",
         "Para hispanohablantes, la nominalización es muy familiar: en español también transformamos verbos en sustantivos (correr → la carrera, llegar → la llegada). En francés, los mecanismos son similares aunque los sufijos difieren. Dominar la nominalización es esencial para escribir buenos textos de nivel B1-B2 y para leer con comprensión artículos de prensa, informes y textos académicos franceses.",
       ],
     },
     {
-      heading: "Los sufijos de nominalización más productivos",
+      heading: '¿Cuáles son los sufijos de nominalización en francés?',
       paragraphs: [
         "Los sufijos verbales más frecuentes: -tion/-sion (para verbos en -er/-ir/-re: communiquer → la communication, décider → la décision, comprendre → la compréhension), -ment (especialmente para verbos -er: développer → le développement, établir → l'établissement), -age (lavage, chauffage, voyage), -ure (fermeture, ouverture, blessure), y -ée (arrivée, entrée, sortie, journée). Muchos verbos tienen más de un sustantivo posible con significados diferentes: changer → le changement (el proceso de cambio) / la change (poco usado); arriver → l'arrivée (la llegada).",
         "Para los adjetivos: -ité (actif → l'activité; libre → la liberté; possible → la possibilité), -eur (chaleureux → la chaleur; supérieur → la supériorité), -ance/-ence (patient → la patience; différent → la différence), -esse (gentil → la gentillesse; doux → la douceur — -eur), -ise (franc → la franchise; sage → la sagesse). Estas formaciones son productivas y permiten construir vocabulario de forma sistemática a partir de palabras ya conocidas.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Nominalización en textos formales y periodísticos",
+      heading: '¿Dónde se usa la nominalización en francés?',
       paragraphs: [
         "En los periódicos y textos académicos franceses, la nominalización es omnipresente. Los titulares usan constantemente sustantivos en lugar de verbos: 'Hausse des prix alimentaires' (en lugar de 'Les prix alimentaires ont augmenté'), 'Accord entre les deux parties' (en lugar de 'Les deux parties ont trouvé un accord'). Esta condensación nominal hace el texto más informativo y objetivo.",
         "Transformar oraciones verbales en nominales: 'Le président a annoncé qu'il réduirait les dépenses' → 'L'annonce par le président d'une réduction des dépenses'. Esta transformación implica: verbe → nom (annoncé → l'annonce), sujet → complément (le président → par le président), COD/clause → nom (réduirait les dépenses → d'une réduction des dépenses). Practicar esta transformación ayuda a entender y producir textos de nivel superior en francés.",

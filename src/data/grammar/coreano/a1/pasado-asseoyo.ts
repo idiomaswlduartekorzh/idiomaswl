@@ -49,14 +49,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El pasado en coreano: una sola forma para todo',
+      heading: '¿Cómo se forma el pasado en coreano (았/었어요)?',
       paragraphs: [
         'Una de las diferencias más cómodas del coreano respecto al español: el coreano tiene un solo tiempo pasado para lo que en español llamamos "comí", "he comido", "había comido" (en la conversación cotidiana). La terminación 았어요/었어요 cubre todos estos significados en contexto coloquial.',
         'La regla de construcción es la misma del presente 해요체: mira la vocal de la raíz. Si es ㅏ o ㅗ → añade 았어요. Si es cualquier otra vocal → añade 었어요. Y 하다 siempre → 했어요. Misma lógica, diferente sufijo.',
       ],
     },
     {
-      heading: 'Contracciones del pasado: las más importantes',
+      heading: '¿Cuáles son las contracciones del pasado en coreano?',
       paragraphs: [
         'Al igual que en el presente, el pasado tiene contracciones frecuentes. Las más importantes: 가(ㅏ)+았어요 = 갔어요 (las dos ㅏ se fusionan); 오(ㅗ)+았어요 = 왔어요 (ㅗ+ㅏ=ㅘ); 마시(ㅣ)+었어요 = 마셨어요 (ㅣ+ㅓ=ㅕ); 배우(ㅜ)+었어요 = 배웠어요 (ㅜ+ㅓ=ㅝ).',
         'Una pista útil: si ya aprendiste las contracciones del presente (가요, 와요, 마셔요, 배워요), las del pasado siguen el mismo patrón de fusión vocálica — solo añade 어요 extra: 갔어요, 왔어요, 마셨어요, 배웠어요.',
@@ -78,7 +78,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preguntas sobre el pasado',
+      heading: '¿Cómo se pregunta en pasado en coreano?',
       paragraphs: [
         'Para preguntar sobre el pasado: sube la entonación al final de la oración. 뭐 했어요?(¿Qué hiciste?), 어디 갔어요?(¿Adónde fuiste?), 뭐 먹었어요?(¿Qué comiste?). Puedes añadir marcadores de tiempo: 어제(ayer), 지난주(la semana pasada), 아까(hace un momento).',
         'El marcador de tiempo más útil para practicar el pasado: 어제(eoje=ayer). 어제 뭐 했어요? es una de las preguntas más naturales para conversar sobre el pasado inmediato.',
@@ -148,14 +148,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Clases pasadas',
-            lines: [['Zhanna', '지난주에 한국어를 ___. (La semana pasada aprendí coreano.) — 배우다']],
+            lines: [['Vera', '지난주에 한국어를 ___. (La semana pasada aprendí coreano.) — 배우다']],
             options: ['배웠어요', '배우었어요', '배우았어요', '배웁니다'],
             answer: '배웠어요',
             explain: '배우다 → 배우(ㅜ)+었어요 → ㅜ+ㅓ=ㅝ → 배웠어요.',
           },
           {
             scene: 'Pregunta de pasado',
-            lines: [['David', '어제 ___ ? (¿Qué hiciste ayer?)']],
+            lines: [['Hugo', '어제 ___ ? (¿Qué hiciste ayer?)']],
             options: ['뭐 했어요', '뭐 해요', '뭐 할 거예요', '뭐 해야 해요'],
             answer: '뭐 했어요',
             explain: '뭐 했어요? = ¿Qué hiciste? 했어요 = pasado de 하다.',
@@ -179,9 +179,9 @@ const topic: GrammarTopic = {
           {
             scene: 'El fin de semana de Carlos',
             lines: [
-              ['David', '주말에 어디 [[0]] ? (¿Adónde fuiste el fin de semana?)'],
-              ['Carlos', '친구하고 공원에 [[1]]. (Fui al parque con un amigo.)'],
-            ],
+ ['Hugo', '주말에 어디 [[0]] ? (¿Adónde fuiste el fin de semana?)'],
+ ['Carlos', '친구하고 공원에 [[1]]. (Fui al parque con un amigo.)'],
+ ],
             blanks: [
               { options: ['갔어요', '가요', '갈 거예요', '가았어요'], answer: '갔어요', explain: '가다 → 갔어요. Pregunta en pasado: 어디 갔어요?' },
               { options: ['갔어요', '가요', '가았어요', '갑니다'], answer: '갔어요', explain: '공원에 갔어요 = fui al parque. 가다 → 갔어요.' },
@@ -190,9 +190,9 @@ const topic: GrammarTopic = {
           {
             scene: 'El almuerzo de ayer',
             lines: [
-              ['Ana', '어제 점심에 뭐 [[0]] ? (¿Qué comiste ayer al almuerzo?)'],
-              ['Lina', '친구하고 삼겹살을 [[1]]. (Comí samgyeopsal con una amiga.)'],
-            ],
+ ['Ana', '어제 점심에 뭐 [[0]] ? (¿Qué comiste ayer al almuerzo?)'],
+ ['Lina', '친구하고 삼겹살을 [[1]]. (Comí samgyeopsal con una amiga.)'],
+ ],
             blanks: [
               { options: ['먹었어요', '먹어요', '먹았어요', '먹을 거예요'], answer: '먹었어요', explain: '먹다 → 먹었어요. Pregunta en pasado.' },
               { options: ['먹었어요', '먹어요', '먹았어요', '먹습니다'], answer: '먹었어요', explain: '삼겹살을 먹었어요 = comí samgyeopsal. 먹다 → 먹었어요.' },
@@ -201,9 +201,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Llegada de Sofia',
             lines: [
-              ['Marco', 'Sofia, 언제 [[0]] ? (Sofía, ¿cuándo llegaste?)'],
-              ['Sofia', '아까 [[1]]. (Llegué hace un momento.)'],
-            ],
+ ['Marco', 'Sofia, 언제 [[0]] ? (Sofía, ¿cuándo llegaste?)'],
+ ['Sofia', '아까 [[1]]. (Llegué hace un momento.)'],
+ ],
             blanks: [
               { options: ['왔어요', '와요', '올 거예요', '오았어요'], answer: '왔어요', explain: '오다 → 왔어요. 언제 왔어요? = ¿cuándo viniste?' },
               { options: ['왔어요', '와요', '오았어요', '옵니다'], answer: '왔어요', explain: '아까 왔어요 = llegué hace un momento.' },
@@ -212,9 +212,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Estudio del fin de semana',
             lines: [
-              ['Zhanna', '주말에 공부 [[0]] ? (¿Estudiaste el fin de semana?)'],
-              ['Carlos', '네, 열심히 [[1]]. (Sí, estudié mucho.)'],
-            ],
+ ['Vera', '주말에 공부 [[0]] ? (¿Estudiaste el fin de semana?)'],
+ ['Carlos', '네, 열심히 [[1]]. (Sí, estudié mucho.)'],
+ ],
             blanks: [
               { options: ['했어요', '해요', '할 거예요', '하았어요'], answer: '했어요', explain: '공부하다 → 공부했어요. Pregunta en pasado.' },
               { options: ['했어요', '해요', '합니다', '하았어요'], answer: '했어요', explain: '열심히 했어요 = estudié con dedicación. 하다→했어요.' },
@@ -246,7 +246,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el pasado correcto de cada verbo.',
         type: 'freeText',
         scene: 'Diario de aprendizaje de coreano',
-        text: '지난주에 한국어 수업에 ___ (가다). / 선생님이 문법을 ___ (설명하다). / 저는 새 단어를 많이 ___ (배우다). / 집에서 연습문제를 ___ (하다). / 그리고 한국 노래도 ___ (듣다).',
+        text: '지난주에 한국어 수업에 [[0]] (가다). / 선생님이 문법을 [[1]] (설명하다). / 저는 새 단어를 많이 [[2]] (배우다). / 집에서 연습문제를 [[3]] (하다). / 그리고 한국 노래도 [[4]] (듣다).',
         blanks: [
           { answer: '갔어요', accepted: ['갔어요'], explain: '가다 → 갔어요. ㅏ+았어요 → 갔어요.' },
           { answer: '설명했어요', accepted: ['설명했어요'], explain: '설명하다 → 설명했어요. 하다→했어요.' },

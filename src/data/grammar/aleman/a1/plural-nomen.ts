@@ -44,21 +44,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El plural en alemán: ¿por qué es diferente?',
+      heading: '¿Por qué el plural alemán es diferente del español?',
       paragraphs: [
         'El plural de los sustantivos alemanes es conocido por ser uno de los aspectos más desafiantes del idioma para hablantes de español o inglés. No existe una sola regla universal como "-s" en español o inglés. En cambio, hay varios patrones que deben memorizarse con cada sustantivo.',
         'Sin embargo, hay una simplificación importante: el artículo plural es siempre "die", independientemente del género del singular. Der Tisch (masculino) → die Tische; die Frau (femenino) → die Frauen; das Kind (neutro) → die Kinder. Todos usan "die" en plural.',
       ],
     },
     {
-      heading: 'Los 6 patrones de plural del alemán',
+      heading: '¿Cuáles son los patrones de plural del alemán?',
       paragraphs: [
         'Patrón 1 (-e): añadir -e, a veces con Umlaut. Der Tag → die Tage, die Stadt → die Städte. Patrón 2 (-er): añadir -er, casi siempre con Umlaut si es posible. Das Kind → die Kinder, das Buch → die Bücher.',
         'Patrón 3 (-en/-n): añadir -en o -n. Die Frau → die Frauen, die Lampe → die Lampen. Patrón 4 (-s): solo extranjerismos y acónimos. Das Auto → die Autos, das Foto → die Fotos. Patrón 5 (sin cambio): der Lehrer → die Lehrer. Patrón 6 (Umlaut sin sufijo): der Vater → die Väter.',
       ],
     },
     {
-      heading: 'Los plurales más importantes para el nivel A1',
+      heading: '¿Qué plurales conviene memorizar en alemán A1?',
       paragraphs: [
         'Para comunicarse en A1, estos plurales son los más necesarios: Kinder (niños), Eltern (padres — siempre plural), Bücher (libros), Tische (mesas), Stühle (sillas), Häuser (casas), Städte (ciudades), Länder (países), Freunde (amigos), Sprachen (idiomas).',
         'El diccionario alemán siempre indica el plural junto al género: "der Tag, -e" significa que el plural es "die Tage". Aprende el plural desde el principio.',
@@ -102,7 +102,7 @@ const topic: GrammarTopic = {
           { scene: 'Vocabulario general', lines: [['', 'das Buch → ___']], options: ['die Bücher', 'die Buchs', 'die Buche', 'die Büche'], answer: 'die Bücher', explain: '"Buch" → Plural: Bücher (patrón -er + Umlaut: u → ü).' },
           { scene: 'Vocabulario general', lines: [['', 'die Frau → ___']], options: ['die Frauen', 'die Fraus', 'die Fraue', 'die Frauern'], answer: 'die Frauen', explain: '"Frau" → Plural: Frauen (patrón -en).' },
           { scene: 'Vocabulario general', lines: [['', 'das Auto → ___']], options: ['die Autos', 'die Autoen', 'die Autoe', 'die Auteer'], answer: 'die Autos', explain: '"Auto" (extranjerismo) → Plural: Autos (patrón -s).' },
-          { scene: 'Vocabulario general', lines: [['', 'der Tag → ___']], options: ['die Tage', 'die Tags', 'die Tagen', 'die Tage'], answer: 'die Tage', explain: '"Tag" → Plural: Tage (patrón -e, sin Umlaut).' },
+          { scene: 'Vocabulario general', lines: [['', 'der Tag → ___']], options: ['die Tage', 'die Tags', 'die Tagen'], answer: 'die Tage', explain: '"Tag" → Plural: Tage (patrón -e, sin Umlaut).' },
           { scene: 'Vocabulario general', lines: [['', 'die Stadt → ___']], options: ['die Städte', 'die Stadte', 'die Stadts', 'die Städten'], answer: 'die Städte', explain: '"Stadt" → Plural: Städte (patrón -e + Umlaut: a → ä).' },
           { scene: 'Vocabulario general', lines: [['', 'der Lehrer → ___']], options: ['die Lehrer', 'die Lehrers', 'die Lehrern', 'die Lehrere'], answer: 'die Lehrer', explain: '"Lehrer" → Plural: Lehrer (sin cambio — patrón 0).' },
           { scene: 'Vocabulario general', lines: [['', 'die Lampe → ___']], options: ['die Lampen', 'die Lampes', 'die Lampeen', 'die Lampe'], answer: 'die Lampen', explain: '"Lampe" termina en -e → Plural: Lampen (patrón -n).' },

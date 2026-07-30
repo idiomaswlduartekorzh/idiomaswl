@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los verbos modales: la clave de la expresión en alemán',
+      heading: '¿Qué son los verbos modales en alemán?',
       paragraphs: [
         'Los 6 verbos modales del alemán (können, müssen, wollen, mögen/möchten, dürfen, sollen) son fundamentales desde el nivel A1. Con ellos puedes expresar si algo es posible, necesario, deseado o permitido. Dominarlos transforma tu capacidad de comunicación de inmediato.',
         'La regla más importante: en una frase con modal, el verbo principal aparece en infinitivo y va siempre al FINAL. Ich muss heute lernen (no "ich muss lernen heute"). Esta posición final del infinitivo es uno de los rasgos más característicos del alemán.',
       ],
     },
     {
-      heading: 'Conjugación irregular: ich = er/sie/es',
+      heading: '¿Cómo se conjugan los verbos modales en alemán?',
       paragraphs: [
         'Los modales son irregulares de una manera especial: las formas de ich y er/sie/es son idénticas y no llevan terminación. Ich kann = er kann. Ich muss = sie muss. Ich will = es will. Esto los diferencia de los verbos regulares donde er/sie/es lleva -t.',
         'La conjugación completa de können como modelo: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Nota que wir/sie/Sie recuperan el infinitivo (können), igual que los verbos regulares.',
       ],
     },
     {
-      heading: 'Wollen vs. möchten: querer con estilo',
+      heading: '¿Cuál es la diferencia entre wollen y möchten en alemán?',
       paragraphs: [
         '"Wollen" expresa una voluntad firme o intención: Ich will Arzt werden (Quiero ser médico). "Möchten" es la forma subjuntiva de mögen y expresa un deseo más educado o un querer más suave: Ich möchte bitte einen Kaffee (Quisiera un café, por favor).',
         'En contextos cotidianos de A1 — pedir en una tienda, cafetería, restaurante — "möchten" es siempre la opción más apropiada. "Ich will einen Kaffee" suena brusco; "Ich möchte einen Kaffee" es educado y natural.',
@@ -104,11 +104,11 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David habla de sus habilidades lingüísticas',
-            lines: [['David', 'Ich ___ acht Sprachen sprechen.']],
+            scene: 'Hugo habla de sus habilidades lingüísticas',
+            lines: [['Hugo', 'Ich ___ acht Sprachen sprechen.']],
             options: ['kann', 'muss', 'will', 'soll'],
             answer: 'kann',
-            explain: '"Können" expresa habilidad/capacidad. Ich kann = puedo/sé. David puede hablar 8 idiomas.',
+            explain: '"Können" expresa habilidad/capacidad. Ich kann = puedo/sé. Hugo puede hablar 8 idiomas.',
           },
           {
             scene: 'Carlos tiene un examen mañana',
@@ -139,8 +139,8 @@ const topic: GrammarTopic = {
             explain: '"Wollen" expresa intención firme. Ich will = quiero/tengo intención de.',
           },
           {
-            scene: 'La profesora Zhanna da instrucciones a la clase',
-            lines: [['Zhanna', 'Ihr ___ das Buch auf Seite 10 öffnen.']],
+            scene: 'La profesora Sara da instrucciones a la clase',
+            lines: [['Sara', 'Ihr ___ das Buch auf Seite 10 öffnen.']],
             options: ['sollt', 'wollt', 'könnt', 'dürft'],
             answer: 'sollt',
             explain: '"Sollen" expresa instrucción externa. Ihr sollt = se supone que deben (forma ihr: sollt).',
@@ -169,16 +169,16 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'David habla de su plan para hoy',
-            lines: [['David', 'Ich [[0]] heute Grammatik [[1]].']],
+            scene: 'Hugo habla de su plan para hoy',
+            lines: [['Hugo', 'Ich [[0]] heute Grammatik [[1]].']],
             blanks: [
               { options: ['muss', 'musst', 'müssen', 'musste'], answer: 'muss', explain: '"Ich" + müssen → "muss" (sin terminación).' },
               { options: ['lernen', 'lerne', 'lernst', 'lernt'], answer: 'lernen', explain: 'El infinitivo siempre va AL FINAL de la frase.' },
             ],
           },
           {
-            scene: 'Zhanna habla de los alumnos',
-            lines: [['Zhanna', 'Die Studenten [[0]] sehr gut Deutsch [[1]].']],
+            scene: 'Sara habla de los alumnos',
+            lines: [['Sara', 'Die Studenten [[0]] sehr gut Deutsch [[1]].']],
             blanks: [
               { options: ['können', 'kann', 'kannst', 'könnt'], answer: 'können', explain: '"Die Studenten" (sie, plural) → "können".' },
               { options: ['sprechen', 'spricht', 'sprechst', 'spreche'], answer: 'sprechen', explain: 'Infinitivo al final: sprechen.' },
@@ -208,7 +208,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el texto con la forma modal correcta.',
         type: 'guidedText',
-        scene: 'David escribe sobre lo que puede, quiere y debe hacer esta semana.',
+        scene: 'Hugo escribe sobre lo que puede, quiere y debe hacer esta semana.',
         text: 'Diese Woche [[0]] (müssen, ich) viele E-Mails schreiben. Aber ich [[1]] (wollen) auch Spanisch üben. Mein Kollege Marco [[2]] (können) mir helfen — er [[3]] (können) sehr gut Spanisch. Abends [[4]] (möchten, wir) ins Kino gehen. Leider [[5]] (dürfen, wir) das Büro nicht vor 18 Uhr verlassen. Carlos [[6]] (sollen) um 17 Uhr anrufen.',
         blanks: [
           { options: ['muss', 'musst', 'müssen', 'müsst'], answer: 'muss', explain: '"Ich" + müssen → "muss" (sin terminación).' },
@@ -227,7 +227,7 @@ const topic: GrammarTopic = {
         intro: 'Conjuga el modal indicado de memoria.',
         type: 'freeText',
         scene: 'Diálogo en la academia WeLearn.',
-        text: 'Zhanna fragt: "Was [[0]] (können) du auf Deutsch?" Carlos antwortet: "Ich [[1]] (können) lesen und schreiben. Aber ich [[2]] (müssen) noch viel üben. Ich [[3]] (wollen) bald fließend sprechen." Zhanna: "Gut! Du [[4]] (sollen) jeden Tag 30 Minuten hören."',
+        text: 'Sara fragt: "Was [[0]] (können) du auf Deutsch?" Carlos antwortet: "Ich [[1]] (können) lesen und schreiben. Aber ich [[2]] (müssen) noch viel üben. Ich [[3]] (wollen) bald fließend sprechen." Sara: "Gut! Du [[4]] (sollen) jeden Tag 30 Minuten hören."',
         blanks: [
           { answer: 'kannst', accepted: ['kannst'], explain: '"Du" + können → "kannst".' },
           { answer: 'kann', accepted: ['kann'], explain: '"Ich" + können → "kann" (sin terminación).' },
@@ -295,7 +295,7 @@ const topic: GrammarTopic = {
             explain: 'er/sie/es → kann, will, muss, möchte, darf, soll (sin terminación en todos). Infinitivo al final.',
           },
           {
-            scene: 'Escribiendo un email a Zhanna sobre tus metas',
+            scene: 'Escribiendo un email a Sara sobre tus metas',
             prompt: 'Escribe 3 oraciones sobre tus metas de aprendizaje usando modales variados.',
             answer: 'Ich möchte in 6 Monaten fließend Deutsch sprechen. Ich muss jeden Tag eine Stunde üben. Ich will die B1-Prüfung bestehen.',
             accepted: ['ich möchte', 'ich muss', 'ich will', 'ich kann', 'ich soll'],

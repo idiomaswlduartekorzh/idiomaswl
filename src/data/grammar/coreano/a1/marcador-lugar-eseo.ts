@@ -52,7 +52,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'El gran contraste: 에 vs. 에서',
+      heading: '¿Cuál es la diferencia entre 에 y 에서 en coreano?',
       paragraphs: [
         'Este es uno de los puntos donde más se equivocan los principiantes. La diferencia: 에 con 있어요 (estar/haber) indica que alguien o algo está en un lugar de forma estática. 에서 con verbos de acción indica que se hace algo en ese lugar activamente.',
         '학교에 있어요 = estoy en la escuela (simplemente estoy ahí). 학교에서 공부해요 = estudio en la escuela (realizo la acción de estudiar ahí). Misma palabra (학교), partícula distinta, significado distinto.',
@@ -72,7 +72,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Preguntar por el lugar: 어디에서? / 어디서?',
+      heading: '¿Cómo se pregunta por el lugar con 에서 en coreano?',
       paragraphs: [
         'Para preguntar dónde ocurre una acción se usa 어디에서? o su forma coloquial 어디서?: 어디에서 공부해요? (¿Dónde estudias?), 어디서 먹어요? (¿Dónde comes?). Para preguntar el origen: 어디에서 왔어요? (¿De dónde viniste?).',
         'En conversación coloquial, 에서 puede acortarse a -서: 카페서 공부해요, 집서 먹어요. Esto es informal y no se recomienda en escritura formal, pero lo oirás frecuentemente en k-dramas y conversaciones reales.',
@@ -107,7 +107,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Estudiando',
-            lines: [['David', '저는 도서관___ 공부해요. (Estudio en la biblioteca.)']],
+            lines: [['Gael', '저는 도서관___ 공부해요. (Estudio en la biblioteca.)']],
             options: ['에서', '에', '를', '이'],
             answer: '에서',
             explain: '공부하다 = acción en lugar → 에서. 도서관에서 공부해요.',
@@ -149,14 +149,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ejercicio',
-            lines: [['Zhanna', '저는 공원___ 운동해요. (Hago ejercicio en el parque.)']],
+            lines: [['Nora', '저는 공원___ 운동해요. (Hago ejercicio en el parque.)']],
             options: ['에서', '에', '를', '은'],
             answer: '에서',
             explain: '운동하다 = hacer ejercicio = acción → 에서. 공원에서 운동해요.',
           },
           {
             scene: 'Preguntando',
-            lines: [['David', '어디___ 공부해요? (¿Dónde estudias?)']],
+            lines: [['Gael', '어디___ 공부해요? (¿Dónde estudias?)']],
             options: ['에서', '에', '를', '이'],
             answer: '에서',
             explain: 'Preguntar lugar de acción: 어디에서 공부해요? = ¿Dónde estudias?',
@@ -197,9 +197,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Contrastando',
             lines: [
-              ['Lina', '어디 [[0]]? (¿Adónde vas?)'],
-              ['Sofia', '카페[[1]] 가요. (Voy al café.)'],
-            ],
+ ['Lina', '어디 [[0]]? (¿Adónde vas?)'],
+ ['Sofia', '카페[[1]] 가요. (Voy al café.)'],
+ ],
             blanks: [
               { options: ['가요', '있어요', '공부해요', '먹어요'], answer: '가요', explain: '가다 = ir. 어디 가요? = ¿Adónde vas?' },
               { options: ['에', '에서', '를', '이'], answer: '에', explain: 'Destino (ir al café) → 에. 카페에 가요.' },

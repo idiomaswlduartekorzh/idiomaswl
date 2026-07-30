@@ -44,17 +44,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los plurales supletivioss más importantes: дети y люди',
+      heading: '¿Cuáles son los plurales supletivos дети y люди?',
       paragraphs: [
         'En ruso, algunos sustantivos forman el plural a partir de una raíz completamente diferente — fenómeno llamado supletivismo. Los casos más frecuentes son ребёнок (niño) → дети (niños) y человек (persona) → люди (personas). Estos plurales tienen sus propias declinaciones: дети, детей, детям, детей, детьми, о детях; люди, людей, людям, людей, людьми, о людях.',
         'Para expresar cantidades: un niño = один ребёнок; dos niños = двое детей (o два ребёнка en contexto más formal); muchos niños = много детей. Con человек el Gen.plural es especial: пять человек (cinco personas, no "людей" con números). "Много людей" (mucha gente) también es correcto en contexto general.',
       ],
     },
     {
-      heading: 'Plurales en -ья y neutros en -мя',
+      heading: '¿Cómo son los plurales en -ья y los neutros en -мя?',
       paragraphs: [
         'Varios sustantivos masculinos y neutros forman plural en -ья: друг → друзья (amigos), брат → братья (hermanos), стул → стулья (sillas), дерево → деревья (árboles), лист → листья (hojas), муж → мужья (esposos). El genitivo plural de estos: друзей, братьев, стульев, деревьев, листьев, мужей.',
         'Los sustantivos neutros en -мя (grupo limitado) forman plural en -мена: время (tiempo) → времена, имя (nombre) → имена, племя (tribu) → племена, знамя (bandera) → знамёна. Estos neutros tienen una raíz extendida en Gen.sg también: времени (del tiempo), имени (del nombre).',
+      ],
+    },
+    {
+      heading: '¿Cómo cambia el acento en muchos plurales rusos?',
+      paragraphs: [
+        'Muchos sustantivos masculinos forman el plural con -а/-я acentuada en vez de -ы/-и, con desplazamiento del acento: дом → дома́ (casas), город → города́ (ciudades), поезд → поезда́ (trenes), учитель → учителя́ (maestros), профессор → профессора́. Otros cambian el acento sin cambiar la terminación esperada.',
+        'La trampa para el hispanohablante es doble: (1) esperar siempre -ы/-и y no reconocer estos plurales en -а́; (2) confundir дома́ (casas, plural, acento final) con до́ма (en casa, adverbio, acento inicial), que se escriben igual pero se acentúan distinto. El acento es distintivo y conviene aprenderlo con cada palabra.',
       ],
     },
   ],
@@ -183,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el plural correcto.',
         type: 'freeText',
         scene: 'Напиши множественное число.',
-        text: 'ребёнок → ___ (Nom.pl) / время → ___ (Nom.pl) / брат → ___ (Nom.pl) / имя → ___ (Nom.pl)',
+        text: 'ребёнок → [[0]] (Nom.pl) / время → [[1]] (Nom.pl) / брат → [[2]] (Nom.pl) / имя → [[3]] (Nom.pl)',
         blanks: [
           { answer: 'дети', explain: '"дети" — plural supletivo de ребёнок. Memorizar.' },
           { answer: 'времена', explain: '"времена" — neutro -мя → plural -мена.' },

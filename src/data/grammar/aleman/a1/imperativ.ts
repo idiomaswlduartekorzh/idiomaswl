@@ -48,21 +48,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El imperativo alemán: tres formas para tres situaciones',
+      heading: '¿Cómo se forma el imperativo en alemán?',
       paragraphs: [
         'El imperativo del alemán tiene tres formas claramente distintas según el contexto social. Para una persona de confianza (amigo, familiar, niño) usamos "du": Komm mal her! / Lern Deutsch! Para un grupo informal usamos "ihr": Kommt alle rein! / Macht die Bücher auf! Para una o varias personas en contexto formal usamos "Sie": Kommen Sie bitte herein! / Nehmen Sie Platz!',
         'La diferencia fundamental entre du e ihr es solo la terminación: "Komm!" (du) vs. "Kommt!" (ihr). La diferencia con Sie es estructural: el pronombre siempre aparece y el verbo va en forma de infinitivo-con-conjugación formal.',
       ],
     },
     {
-      heading: 'La forma du: el imperativo más sencillo',
+      heading: '¿Cómo es el imperativo con du en alemán?',
       paragraphs: [
         'Para formar el imperativo du, se toma el radical (Stamm) del verbo y se elimina la terminación -st de la forma du del presente: wohnst → Wohn! / lernst → Lern! / machst → Mach! La -e final (Lerne!, Mache!) es opcional en el alemán moderno hablado, aunque en registros formales escritos puede aparecer.',
         'Excepción importante: los verbos con cambio e→i mantienen ese cambio en el imperativo du: sprechen (du sprichst) → Sprich! / lesen (du liest) → Lies! / geben (du gibst) → Gib! / essen (du isst) → Iss! Estos verbos NO toman -e al final.',
       ],
     },
     {
-      heading: 'Sein: el imperativo más irregular',
+      heading: '¿Cómo es el imperativo del verbo sein?',
       paragraphs: [
         '"Sein" (ser/estar) tiene formas completamente irregulares en imperativo: du → sei (Sei ehrlich! / Sei bitte ruhig!), ihr → seid (Seid pünktlich! / Seid nicht so laut!), Sie → seien Sie (Seien Sie so nett... / Seien Sie bitte leise!). Estas formas son muy frecuentes en instrucciones cotidianas y hay que memorizarlas.',
         'También hay que memorizar las combinaciones con "bitte" para expresar cortesía: Kommen Sie bitte herein. / Sei bitte ruhig. / Warten Sie bitte einen Moment. El "bitte" puede ir al principio o al final de la oración imperativa.',
@@ -103,43 +103,43 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'Zhanna le dice a un estudiante (informal, solo) que entre',
-            lines: [['Zhanna', '___ herein, Carlos!']],
+            scene: 'Lía le dice a un estudiante (informal, solo) que entre',
+            lines: [['Lía', '___ herein, Carlos!']],
             options: ['Komm', 'Kommt', 'Kommen Sie', 'Kommst'],
             answer: 'Komm',
             explain: 'A un estudiante de confianza (du): imperativo sin pronombre, radical. Kommen → Komm!',
           },
           {
-            scene: 'Zhanna le dice a toda la clase que abran el libro',
-            lines: [['Zhanna', '___ das Buch auf!']],
+            scene: 'Lía le dice a toda la clase que abran el libro',
+            lines: [['Lía', '___ das Buch auf!']],
             options: ['Öffnet', 'Öffne', 'Öffnen Sie', 'Öffnest'],
             answer: 'Öffnet',
             explain: 'A la clase (ihr, plural informal): imperativo ihr-Form. Öffnen → ihr öffnet → ¡Öffnet!',
           },
           {
-            scene: 'David recibe a un cliente formal por primera vez',
-            lines: [['David', '___ bitte Platz!']],
+            scene: 'Gael recibe a un cliente formal por primera vez',
+            lines: [['Gael', '___ bitte Platz!']],
             options: ['Nehmen Sie', 'Nehmt', 'Nimm', 'Nehmen'],
             answer: 'Nehmen Sie',
             explain: 'A un cliente (Sie, formal): infinitivo + Sie. Nehmen Sie!',
           },
           {
-            scene: 'David le pide a su amigo que no llegue tarde',
-            lines: [['David', '___ nicht zu spät!']],
+            scene: 'Gael le pide a su amigo que no llegue tarde',
+            lines: [['Gael', '___ nicht zu spät!']],
             options: ['Komm', 'Kommt', 'Kommen Sie', 'Kommst'],
             answer: 'Komm',
             explain: 'A un amigo (du informal singular): "Komm!" — solo radical, sin pronombre.',
           },
           {
-            scene: 'Zhanna le pide a Carlos que hable más despacio (sprechen: e→i)',
-            lines: [['Zhanna', '___ bitte langsamer!']],
+            scene: 'Lía le pide a Carlos que hable más despacio (sprechen: e→i)',
+            lines: [['Lía', '___ bitte langsamer!']],
             options: ['Sprich', 'Sprecht', 'Sprechen Sie', 'Sprichst'],
             answer: 'Sprich',
             explain: '"Sprechen" tiene cambio e→i en du: sprichst → Sprich! (no "Sprech!").',
           },
           {
-            scene: 'David le pide a todo el grupo que sea puntual',
-            lines: [['David', '___ bitte pünktlich!']],
+            scene: 'Gael le pide a todo el grupo que sea puntual',
+            lines: [['Gael', '___ bitte pünktlich!']],
             options: ['Seid', 'Sei', 'Seien Sie', 'Seid ihr'],
             answer: 'Seid',
             explain: '"Sein" irregular en ihr: seid. Seid bitte pünktlich! — ¡Por favor, sed puntuales!',
@@ -152,8 +152,8 @@ const topic: GrammarTopic = {
             explain: '"Lesen" tiene cambio e→i en du: liest → Lies! (no "Les!").',
           },
           {
-            scene: 'Un cliente formal llega a la academia, David lo saluda',
-            lines: [['David', '___ bitte ruhig, gleich komme ich.']],
+            scene: 'Un cliente formal llega a la academia, Gael lo saluda',
+            lines: [['Gael', '___ bitte ruhig, gleich komme ich.']],
             options: ['Seien Sie', 'Sei', 'Seid', 'Sein Sie'],
             answer: 'Seien Sie',
             explain: '"Sein" formal (Sie): seien Sie. Seien Sie bitte ruhig. — Por favor, esté tranquilo.',
@@ -168,24 +168,24 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'Zhanna da instrucciones a la clase entera',
-            lines: [['Zhanna', '[[0]] das Buch auf Seite 15 [[1]]! (aufmachen, ihr)']],
+            scene: 'Lía da instrucciones a la clase entera',
+            lines: [['Lía', '[[0]] das Buch auf Seite 15 [[1]]! (aufmachen, ihr)']],
             blanks: [
               { options: ['Macht', 'Mach', 'Machen Sie', 'Macht ihr'], answer: 'Macht', explain: 'Imperativo ihr del verbo "aufmachen": ihr macht → Macht!' },
               { options: ['auf', 'an', 'aus', 'zu'], answer: 'auf', explain: '"Aufmachen" es separable: prefijo "auf" al final.' },
             ],
           },
           {
-            scene: 'David le pide a Carlos (informal) que lo llame',
-            lines: [['David', '[[0]] mich bitte [[1]]! (anrufen, du)']],
+            scene: 'Gael le pide a Carlos (informal) que lo llame',
+            lines: [['Gael', '[[0]] mich bitte [[1]]! (anrufen, du)']],
             blanks: [
               { options: ['Ruf', 'Ruft', 'Rufen Sie', 'Rufst'], answer: 'Ruf', explain: 'Imperativo du de "anrufen": radical "ruf", sin pronombre.' },
               { options: ['an', 'auf', 'aus', 'mit'], answer: 'an', explain: '"Anrufen" separable: prefijo "an" al final.' },
             ],
           },
           {
-            scene: 'Zhanna le dice formalmente a un padre que espere',
-            lines: [['Zhanna', '[[0]] Sie bitte einen [[1]]! (warten)']],
+            scene: 'Lía le dice formalmente a un padre que espere',
+            lines: [['Lía', '[[0]] Sie bitte einen [[1]]! (warten)']],
             blanks: [
               { options: ['Warten', 'Warte', 'Wartet', 'Wartst'], answer: 'Warten', explain: 'Imperativo Sie: infinitivo "Warten" + Sie.' },
               { options: ['Moment', 'Morgen', 'Monat', 'Mittag'], answer: 'Moment', explain: '"Warten Sie einen Moment" = Espere un momento, por favor.' },
@@ -207,7 +207,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige la forma correcta del imperativo según la persona indicada.',
         type: 'guidedText',
-        scene: 'Zhanna da instrucciones durante la primera clase del curso de alemán.',
+        scene: 'Lía da instrucciones durante la primera clase del curso de alemán.',
         text: '[[0]] (setzen, ihr) bitte! [[1]] (nehmen, ihr) eure Hefte heraus. Heute lernen wir Modalverben. Carlos, [[2]] (lesen, du/e→i) bitte Satz 1. Gut! [[3]] (sprechen, ihr) alle zusammen! Und [[4]] (sein, ihr) bitte ruhig, wenn ein Kollege liest. Frau García, [[5]] (wiederholen, Sie) die Frage bitte. [[6]] (schreiben, alle/ihr) die Antwort in euer Heft.',
         blanks: [
           { options: ['Setzt', 'Setz', 'Setzen Sie', 'Setzt euch'], answer: 'Setzt', explain: 'Imperativo ihr: "ihr setzt" → Setzt! (setzt euch = sentaos).' },
@@ -225,7 +225,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma correcta del imperativo de memoria.',
         type: 'freeText',
-        scene: 'David le da instrucciones a Marco (amigo, informal).',
+        scene: 'Gael le da instrucciones a Marco (amigo, informal).',
         text: '[[0]] (kommen) heute um 18 Uhr! [[1]] (mitbringen) dein Wörterbuch. [[2]] (sein) pünktlich — du weißt, ich hasse Verspätungen. [[3]] (lesen) noch mal Kapitel 3, und [[4]] (schreiben) die neuen Vokabeln auf.',
         blanks: [
           { answer: 'Komm', accepted: ['Komm', 'Kommen'], explain: 'Imperativo du de "kommen": Komm! (sin pronombre).' },
@@ -257,7 +257,7 @@ const topic: GrammarTopic = {
             explain: 'Du imperativo: radical sin pronombre. Lesen e→i: Lies! Sprechen e→i: Sprich!',
           },
           {
-            scene: 'Un padre formal viene a hablar con Zhanna. Ella lo atiende',
+            scene: 'Un padre formal viene a hablar con Lía. Ella lo atiende',
             prompt: 'Escribe 3 frases en imperativo Sie: que entre, que tome asiento, que espere un momento.',
             answer: 'Kommen Sie bitte herein! Nehmen Sie Platz! Warten Sie bitte einen Moment!',
             accepted: ['kommen sie', 'nehmen sie', 'warten sie', 'setzen sie', 'sprechen sie', 'seien sie'],
@@ -280,7 +280,7 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'Eres profesor/a sustituto/a de Zhanna por un día',
+            scene: 'Eres profesor/a sustituto/a de Lía por un día',
             prompt: 'Escribe 5 instrucciones para la clase usando imperativo ihr. Usa verbos variados.',
             answer: 'Öffnet das Buch auf Seite 5! Lest den Dialog! Schreibt die Antworten! Sprecht mit eurem Partner! Seid bitte ruhig!',
             accepted: ['öffnet', 'lest', 'schreibt', 'sprecht', 'seid', 'hört', 'macht', 'wiederholt', 'nehmt'],

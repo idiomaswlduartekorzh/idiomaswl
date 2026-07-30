@@ -49,14 +49,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'À, en, au, aux: la clave es el género y número del lugar',
+      heading: '¿Cuándo se usa à, en, au o aux con lugares en francés?',
       paragraphs: [
         'Las preposiciones de lugar en francés son más sistemáticas de lo que parecen. La regla más importante: con ciudades siempre se usa "à" (à Paris, à Bogotá, à Rome). Con países, la preposición depende del género y número: "en" para países femeninos o que empiezan por vocal (en France, en Espagne, en Australie), "au" para países masculinos (au Brésil, au Canada, au Japon) y "aux" para países en plural (aux États-Unis, aux Pays-Bas).',
         'La mayoría de los países que terminan en -e son femeninos (France, Espagne, Italie, Allemagne, Belgique, Suisse, Chine). Los que no terminan en -e suelen ser masculinos (le Mexique excepción: termina en -e pero es masculino; le Brésil, le Canada, le Japon, le Portugal).',
       ],
     },
     {
-      heading: 'Cómo saber el género de los países',
+      heading: '¿Cómo se sabe el género de los países en francés?',
       paragraphs: [
         'La regla general: los países que terminan en -e son femeninos (la France, l\'Espagne, l\'Italie, l\'Allemagne). Las excepciones más importantes son: le Mexique, le Cambodge, le Zimbabwe (terminan en -e pero son masculinos).',
         'Países masculinos frecuentes: le Brésil, le Canada, le Japon, le Portugal, le Maroc, le Pérou, le Chili. Países que empiezan por vocal son siempre "en" independientemente del género: en Australie, en Iran, en Irak, en Ouganda.',
@@ -70,7 +70,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia entre à y dans con lugares',
+      heading: '¿Cuál es la diferencia entre à y dans con lugares en francés?',
       paragraphs: [
         '"À" indica una ubicación general o destino: "Je suis à Paris" (estoy en París), "je vais à la bibliothèque" (voy a la biblioteca). "Dans" indica el interior de un espacio: "je suis dans la bibliothèque" (estoy dentro de la biblioteca), "je travaille dans un bureau" (trabajo en una oficina).',
         'Con nombres de villes (ciudades) y pays (países) siempre se usa "à/en/au/aux". Con edificios concretos, "dans" es más específico que "à".',
@@ -104,15 +104,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David anuncia un viaje',
-            lines: [['David', 'Je vais ___ Paris la semaine prochaine.']],
+            scene: 'Gael anuncia un viaje',
+            lines: [['Gael', 'Je vais ___ Paris la semaine prochaine.']],
             options: ['à', 'en', 'au', 'aux'],
             answer: 'à',
             explain: 'Ciudad → siempre "à": "je vais à Paris".',
           },
           {
-            scene: 'Zhanna habla de su origen',
-            lines: [['Zhanna', 'Je viens ___ Ukraine. (Ukraine, femenino)']],
+            scene: 'Vera habla de su origen',
+            lines: [['Vera', 'Je viens ___ Ukraine. (Ukraine, femenino)']],
             options: ['d\'', 'du', 'des', 'de'],
             answer: "d'",
             explain: 'Origen de país fem./vocal: "de + pays" → "d\'Ukraine" (en francés, la preposición d\'origine es de/d\').',
@@ -153,8 +153,8 @@ const topic: GrammarTopic = {
             explain: '"Sur" = encima/sobre. Los libros están sobre la mesa.',
           },
           {
-            scene: 'David describe la escuela',
-            lines: [['David', 'Il y a un jardin ___ l\'école.']],
+            scene: 'Gael describe la escuela',
+            lines: [['Gael', 'Il y a un jardin ___ l\'école.']],
             options: ['devant', 'sur', 'dans', 'sous'],
             answer: 'devant',
             explain: '"Devant" = delante. El jardín está delante de la escuela.',
@@ -177,16 +177,16 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna busca objetos',
-            lines: [['Zhanna', 'Mon livre est [[0]] la table et mon stylo est [[1]] la chaise.']],
+            scene: 'Vera busca objetos',
+            lines: [['Vera', 'Mon livre est [[0]] la table et mon stylo est [[1]] la chaise.']],
             blanks: [
               { options: ['sur', 'sous', 'dans', 'devant'], answer: 'sur', explain: '"Sur" = encima de la mesa.' },
               { options: ['sous', 'sur', 'dans', 'devant'], answer: 'sous', explain: '"Sous" = debajo de la silla.' },
             ],
           },
           {
-            scene: 'David y Ana viajan',
-            lines: [['David', 'David habite [[0]] Bogotá et il va [[1]] Brésil cet été.']],
+            scene: 'Gael y Ana viajan',
+            lines: [['Gael', 'Gael habite [[0]] Bogotá et il va [[1]] Brésil cet été.']],
             blanks: [
               { options: ['à', 'en', 'au', 'aux'], answer: 'à', explain: '"Bogotá" es una ciudad → "à Bogotá".' },
               { options: ['au', 'en', 'à', 'aux'], answer: 'au', explain: '"Brésil" es masc. → "au Brésil".' },
@@ -206,10 +206,10 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Viaje con WeLearn',
         tag: 'Texto guiado',
-        intro: 'David describe un viaje cultural de WeLearn. Elige la preposición correcta en cada caso.',
+        intro: 'Gael describe un viaje cultural de WeLearn. Elige la preposición correcta en cada caso.',
         type: 'guidedText',
-        scene: 'David describe el viaje de estudiantes de WeLearn por el mundo.',
-        text: 'Les étudiants de WeLearn voyagent ! Ana habite [[0]] Madrid — elle est [[1]] Espagne. Carlos est allé [[2]] Brésil l\'an dernier. Zhanna est originaire [[3]] Ukraine mais elle habite maintenant [[0a]] Bucaramanga. Marco vit [[4]] États-Unis. Et Lina va partir [[5]] Japon la semaine prochaine. Tout le monde se retrouve [[6]] la salle de classe virtuelle de WeLearn.',
+        scene: 'Gael describe el viaje de estudiantes de WeLearn por el mundo.',
+        text: 'Les étudiants de WeLearn voyagent ! Ana habite [[0]] Madrid — elle est [[1]] Espagne. Carlos est allé [[2]] Brésil l\'an dernier. Vera est originaire [[3]] Ukraine mais elle habite maintenant [[0a]] Bucaramanga. Marco vit [[4]] États-Unis. Et Lina va partir [[5]] Japon la semaine prochaine. Tout le monde se retrouve [[6]] la salle de classe virtuelle de WeLearn.',
         blanks: [
           { options: ['à', 'en', 'au', 'aux'], answer: 'à', explain: '"Madrid" es ciudad → "à Madrid".' },
           { options: ['en', 'au', 'à', 'aux'], answer: 'en', explain: '"Espagne" termina en -e → fem. → "en Espagne".' },
@@ -245,14 +245,14 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'David habla de sus viajes de trabajo',
-            prompt: 'Di que David va a Seúl (ciudad en Corea del Sur) y a Japón este año.',
-            answer: 'David va à Séoul et au Japon cette année.',
+            scene: 'Gael habla de sus viajes de trabajo',
+            prompt: 'Di que Gael va a Seúl (ciudad en Corea del Sur) y a Japón este año.',
+            answer: 'Gael va à Séoul et au Japon cette année.',
             accepted: ['à Séoul', 'au Japon', 'en Corée'],
             explain: '"Séoul" = ciudad → à. "Japon" = masc. → au.',
           },
           {
-            scene: 'Zhanna describe la oficina',
+            scene: 'Vera describe la oficina',
             prompt: 'Di que los libros están sobre la mesa y que la bolsa está debajo de la silla.',
             answer: 'Les livres sont sur la table et le sac est sous la chaise.',
             accepted: ['sur la table', 'sous la chaise'],

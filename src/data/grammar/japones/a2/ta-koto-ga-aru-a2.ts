@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '〜たことがある: la experiencia de vida en japones',
+      heading: '¿Cómo se habla de experiencias de vida con 〜たことがある?',
       paragraphs: [
         '〜たことがあります es la forma de expresar experiencias pasadas en japones A2. Si alguna vez has hecho algo —sin importar cuando exactamente— usas esta construccion: 日本に行ったことがあります (He estado en Japon), 富士山に登ったことがあります (He subido al monte Fuji).',
         'Para negar, simplemente reemplaza あります por ありません: 生ものを食べたことがありません = Nunca he comido comida cruda. Para preguntar: 〜たことがありますか？= ¿Has...alguna vez? La respuesta corta es はい、あります o いいえ、ありません.',
       ],
     },
     {
-      heading: 'Diferencia entre 〜たことがある y el pasado simple',
+      heading: '¿Qué diferencia hay entre 〜たことがある y el pasado simple?',
       paragraphs: [
         'En japones, el pasado simple (〜ました) indica que hiciste algo en un momento especifico: 昨日寿司を食べました = Ayer comi sushi. En cambio, 〜たことがあります habla de si la experiencia existe en tu vida o no: 寿司を食べたことがあります = He comido sushi (alguna vez en mi vida).',
         'No mezcles 〜たことがある con referencias temporales especificas como 昨日 o 去年. Esta construccion es para experiencias sin fecha fija.',
+      ],
+    },
+    {
+      heading: '¿Por qué no se puede usar 〜たことがある para "ayer fui"?',
+      paragraphs: [
+        '〜たことがある expresa la experiencia de haber hecho algo alguna vez en la vida, no un hecho concreto y datado. Se forma con el verbo en forma た + ことがある: 日本に行ったことがあります (he estado en Japón alguna vez). Por eso NO sirve para acciones con fecha o frecuencia reciente: "ayer fui a Japón" es 昨日日本に行きました (pasado simple), nunca 昨日日本に行ったことがあります. La regla práctica: si hay una marca temporal concreta (ayer, la semana pasada, a las 3), se usa el pasado simple ました; si se habla de experiencia acumulada ("¿alguna vez has...?"), se usa たことがある. En negativo, 食べたことがありません = nunca he comido (eso). La trampa para el hispanohablante es usarlo como un pasado normal.',
       ],
     },
   ],
@@ -110,7 +116,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pregunta de experiencia',
-            lines: [['David', '日本に___か？(¿Has estado en Japon?)']],
+            lines: [['Iván', '日本に___か？(¿Has estado en Japon?)']],
             options: ['行ったことがありますか', '行くことがありますか', '行きましたか', '行ったことがありませんか'],
             answer: '行ったことがありますか',
             explain: '行く (Gr.1, irregular て): 行った → 行ったことがありますか？Pregunta de experiencia.',
@@ -138,14 +144,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Respuesta negativa',
-            lines: [['Jose', '富士山に登ったことがありますか？— いいえ、___。']],
+            lines: [['Dario', '富士山に登ったことがありますか？— いいえ、___。']],
             options: ['ありません', 'あります', 'ありませんでした', 'ないです'],
             answer: 'ありません',
             explain: 'Respuesta corta negativa: いいえ、ありません = No, nunca lo he hecho.',
           },
           {
             scene: 'Experiencia con idiomas',
-            lines: [['Zhanna', '韓国語を___か？(¿Has estudiado coreano?)']],
+            lines: [['Alba', '韓国語を___か？(¿Has estudiado coreano?)']],
             options: ['勉強したことがありますか', '勉強することがありますか', '勉強しましたか', '勉強したことがありませんか'],
             answer: '勉強したことがありますか',
             explain: 'する→した → 勉強したことがありますか？Pregunta de experiencia de estudio.',
@@ -161,7 +167,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Conversacion sobre viajes',
-            lines: [['David', 'タイに[[0]]か？'], ['Carlos', 'はい、去年[[1]]。とても楽しかったです。']],
+            lines: [['Iván', 'タイに[[0]]か？'], ['Carlos', 'はい、去年[[1]]。とても楽しかったです。']],
             blanks: [
               { options: ['行ったことがありますか', '行きますか', '行ったことがありませんか'], answer: '行ったことがありますか', explain: '行く→行った → 行ったことがありますか？Pregunta de experiencia de viaje.' },
               { options: ['行ったことがあります', '行きました', '行ったことがありません'], answer: '行ったことがあります', explain: '行った + ことがあります. Afirma la experiencia de haber ido.' },
@@ -185,7 +191,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sobre el idioma japones',
-            lines: [['Zhanna', '日本語の試験を[[0]]か？'], ['Jose', 'いいえ、一度も[[1]]。']],
+            lines: [['Alba', '日本語の試験を[[0]]か？'], ['Dario', 'いいえ、一度も[[1]]。']],
             blanks: [
               { options: ['受けたことがありますか', '受けますか', '受けましたか'], answer: '受けたことがありますか', explain: '受ける (ukeru, Gr.2): 受けた → 受けたことがありますか？' },
               { options: ['受けたことがありません', '受けません', '受けませんでした'], answer: '受けたことがありません', explain: '受けた + ことがありません. 一度も = ni una sola vez.' },

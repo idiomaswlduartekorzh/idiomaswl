@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Por qué el japonés tiene cuatro tipos de negación',
+      heading: '¿Por qué el japonés tiene cuatro tipos de negación?',
       paragraphs: [
         'En español, "no" funciona para todo: "no como", "no soy estudiante", "no es grande", "no es bonito". En japonés, la forma de negación depende de la categoría gramatical del predicado. Esto refleja que el japonés trata los verbos, la cópula y los adjetivos de manera fundamentalmente diferente — los adjetivos se conjugan como verbos, y hay dos clases de adjetivos con comportamientos distintos.',
         'La buena noticia: cada tipo sigue un patrón claro. Los verbos quitan ます y añaden ません. La cópula です cambia a じゃありません. Los adjetivos い quitan la い final y añaden くないです. Los adjetivos な añaden じゃありません directamente después del stem. Una vez que identificas el tipo de predicado, la negación es mecánica.',
       ],
     },
     {
-      heading: 'じゃありません vs ではありません vs じゃないです',
+      heading: '¿Cuál es la diferencia entre じゃありません, ではありません y じゃないです?',
       paragraphs: [
         'Para negar la cópula (です) existen tres formas principales. ではありません (de wa arimasen) es la más formal y correcta en escritura. じゃありません (ja arimasen) es la contracción hablada de ではありません — más natural en conversación. じゃないです (ja nai desu) es la forma más coloquial y moderna, muy usada en el japonés cotidiano.',
         'En nivel A1 puedes usar cualquiera de las tres, pero te recomendamos aprender じゃありません primero (equilibrio entre formalidad y naturalidad) y じゃないです como variante coloquial. La forma ではありません la verás mucho en textos escritos, exámenes JLPT y japonés formal.',
+      ],
+    },
+    {
+      heading: '¿Cómo se niega cada tipo de palabra en japonés?',
+      paragraphs: [
+        'Cada clase de palabra tiene su propia forma negativa y no son intercambiables. Verbos en ます → ません: 食べません (no como). Sustantivos y adjetivos な con です → じゃありません / ではありません: 学生じゃありません (no soy estudiante). Adjetivos い → cambian い por くない: 高い → 高くない (no es caro), y en cortés se añade です: 高くないです. El verbo あります (haber, cosas) tiene un negativo propio: ありません (no hay). La trampa para el hispanohablante es que el español niega todo con un solo "no" antepuesto; en japonés hay que elegir la terminación negativa según sea verbo (ません), sustantivo/adjetivo な (じゃありません) o adjetivo い (くない).',
       ],
     },
   ],
@@ -98,7 +104,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No es grande',
-            lines: [['David', 'このへやは おおき___。(Esta habitación no es grande.)']],
+            lines: [['Diego', 'このへやは おおき___。(Esta habitación no es grande.)']],
             options: ['くないです', 'じゃないです', 'ません', 'ではありません'],
             answer: 'くないです',
             explain: 'おおきい = adjetivo-い. Negativo adj-い → い → くない + です = くないです.',
@@ -126,7 +132,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No es japonés',
-            lines: [['Zhanna', 'デービッドさんは にほんじん___。(David no es japonés.)']],
+            lines: [['Marta', 'デービッドさんは にほんじん___。(Diego no es japonés.)']],
             options: ['ではありません', 'ません', 'くないです', 'くありません'],
             answer: 'ではありません',
             explain: 'にほんじん + です = cópula. ではありません = forma formal de negación de です.',
@@ -157,7 +163,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El tiempo hoy',
-            lines: [['David', 'きょうは あつ[[0]]。でも、さむ[[1]]。']],
+            lines: [['Diego', 'きょうは あつ[[0]]。でも、さむ[[1]]。']],
             blanks: [
               { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'あつい (caluroso) = adj-い. あつ+くないです = あつくないです.' },
               { options: ['くないです', 'じゃないです', 'ません'], answer: 'くないです', explain: 'さむい (frío) = adj-い. さむ+くないです = さむくないです.' },
@@ -205,7 +211,7 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe la forma negativa correcta según el tipo de predicado.',
         type: 'freeText',
-        scene: 'Zhanna corrige afirmaciones incorrectas sobre WeLearn',
+        scene: 'Marta corrige afirmaciones incorrectas sobre WeLearn',
         text: 'ウィーラーンは ちいさい がっこう[[0]]。(No es pequeña.) デービッドは にほんじん[[1]]。(No es japonés.) じゅぎょうは たいくつ[[2]]。(Las clases no son aburridas.) がくせいは にほんご を はな[[3]]。(Los estudiantes no hablan japonés todavía.) にほんごは むずか[[4]]。(El japonés no es difícil.) でも、かんたん[[5]] ですよ！(¡Pero tampoco es fácil!)',
         blanks: [
           { answer: 'じゃありません', accepted: ['じゃないです', 'ではありません'], explain: 'ちいさい がっこうです → cópula negativa: じゃありません.' },

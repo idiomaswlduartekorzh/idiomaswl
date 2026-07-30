@@ -52,7 +52,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Aktiv vs Passiv: cómo transformar oraciones',
+      heading: '¿Cómo se transforma una oración activa en pasiva en alemán?',
       paragraphs: [
         'Para convertir una oración activa en pasiva: el objeto directo (Akkusativ) pasa a ser el sujeto (Nominativ), el verbo se convierte en werden + Partizip II, y el sujeto original puede mencionarse con "von + Dativ" o simplemente omitirse.',
       ],
@@ -60,6 +60,12 @@ const topic: GrammarTopic = {
         ['Aktiv', 'Passiv', 'Bedeutung'],
         ['Man trinkt Kaffee', 'Kaffee wird getrunken', 'El café es bebido'],
         ['Die Studenten lesen den Text', 'Der Text wird gelesen', 'El texto es leído'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el Passiv Präsens en alemán?',
+      paragraphs: [
+        'Con el auxiliar werden en presente + el Partizip II del verbo principal al final de la oración: "Das Haus wird gebaut" (la casa es/está siendo construida). Es una trampa clásica para el hispanohablante, que espera "sein" (ser) como en español: en alemán la voz pasiva de proceso usa werden, no sein. El agente, si aparece, se introduce con "von" + dativo: "Das Buch wird von der Lehrerin gelesen" (el libro es leído por la profesora). Recuerda que werden es también el verbo del futuro y significa "volverse" por sí solo; aquí funciona solo como auxiliar de la pasiva, y el sentido lo da el Partizip II final.',
       ],
     },
   ],

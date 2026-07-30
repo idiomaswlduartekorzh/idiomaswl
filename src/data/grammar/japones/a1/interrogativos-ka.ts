@@ -50,17 +50,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Los interrogativos japoneses no van al inicio de la frase',
+      heading: '¿Dónde van las palabras interrogativas en japonés?',
       paragraphs: [
         'Esta es la diferencia más sorprendente para el hispanohablante: en japonés, el interrogativo NO se mueve al inicio de la pregunta. En español preguntamos "¿Qué comes?" poniendo "qué" al inicio. En japonés, el interrogativo simplemente reemplaza al elemento desconocido en su posición natural: 何を たべますか？= "[tú] qué [objeto] comes [pregunta]". El orden SOV se mantiene intacto.',
         'Esto hace que las preguntas japonesas sean muy predecibles una vez que conoces la estructura base. Si la frase afirmativa es "にくを たべます" (como carne), la pregunta es "何を たべますか？" (¿qué comes?), donde solo reemplazas にく por 何 y añades か al final. No hay inversión verbal ni cambio de orden.',
       ],
     },
     {
-      heading: 'なに vs なん: cuándo usar cada forma',
+      heading: '¿Cuándo se usa なに y cuándo なん en japonés?',
       paragraphs: [
         'なに (nani) y なん (nan) son la misma palabra con dos pronunciaciones. La regla práctica: usa なん antes de sonidos d/t/n y antes de contadores. なんじ (nanji = qué hora), なんにん (nannin = cuántas personas), なんですか (nan desu ka = ¿qué es esto?). Usa なに antes de partículas: 何を (nani wo), 何が (nani ga), 何に (nani ni).',
         'En la práctica cotidiana, なん es más frecuente en conversación hablada y なに más frecuente en japonés escrito y formal. En A1, la distinción más importante es なんじですか (¿qué hora es?) — siempre なん porque va antes del contador じ (hora).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma una pregunta con か en japonés?',
+      paragraphs: [
+        'Basta con añadir la partícula か (ka) al final de una frase afirmativa, sin cambiar el orden de las palabras ni invertir nada: 学生です → 学生ですか (¿eres estudiante?), 食べます → 食べますか (¿comes?). No hace falta signo de interrogación ni entonación especial en el registro cortés. Para las preguntas con palabra interrogativa (何 nani/qué, どこ doko/dónde, いつ itsu/cuándo, だれ dare/quién), esta va en el lugar del elemento por el que se pregunta —no al inicio como en español— y la frase sigue terminando en か: 何を食べますか (¿qué comes?), どこに行きますか (¿a dónde vas?). La trampa para el hispanohablante es no anteponer la palabra interrogativa: en japonés se queda en su posición dentro de la frase.',
       ],
     },
   ],
@@ -101,7 +107,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando el objeto',
-            lines: [['David', '___ を たべますか？ (¿Qué comes?)']],
+            lines: [['Gael', '___ を たべますか？ (¿Qué comes?)']],
             options: ['なに', 'だれ', 'どれ', 'どう'],
             answer: 'なに',
             explain: 'なに (nani) = qué. Objeto con を → なにを. 何を たべますか？= ¿qué comes?',
@@ -129,7 +135,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando la opinión',
-            lines: [['Zhanna', 'にほんご は ___ おもいますか？ (¿Qué piensas del japonés?)']],
+            lines: [['Vera', 'にほんご は ___ おもいますか？ (¿Qué piensas del japonés?)']],
             options: ['どう', 'なに', 'どこ', 'なぜ'],
             answer: 'どう',
             explain: 'どう (dō) = cómo / qué tal. Opinión → どう おもいますか = ¿qué piensas?',
@@ -160,7 +166,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Qué comes',
-            lines: [['David', '[[0]] [[1]] たべますか？ (¿Qué comes?)']],
+            lines: [['Gael', '[[0]] [[1]] たべますか？ (¿Qué comes?)']],
             blanks: [
               { options: ['なに', 'だれ', 'どこ'], answer: 'なに', explain: 'なに (nani) = qué. Elemento desconocido = objeto.' },
               { options: ['を', 'が', 'に'], answer: 'を', explain: 'Objeto de comer → を. 何を たべますか？' },
@@ -190,7 +196,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige el interrogativo correcto para cada espacio.',
         type: 'guidedText',
-        scene: 'David pregunta a Carlos sobre sus estudios de japonés',
+        scene: 'Gael pregunta a Carlos sobre sus estudios de japonés',
         text: 'デービッド: カルロスさん、[[0]]に すんでいますか？カルロス: コロンビアに すんでいます。デービッド: [[1]]から にほんごを べんきょうしていますか？カルロス: 6ヶ月前からです。デービッド: [[2]]を べんきょうしていますか？カルロス: にほんごと コリア語です。デービッド: [[3]] べんきょうしますか？カルロス: まいにち 2じかんです。デービッド: [[4]]で べんきょうしますか？カルロス: ウィーラーンで べんきょうします。デービッド: [[5]] にほんごが すきですか？カルロス: おもしろいから すきです！',
         blanks: [
           { options: ['どこ', 'いつ', 'なに'], answer: 'どこ', explain: 'どこ (doko) = dónde. Preguntando lugar de residencia.' },

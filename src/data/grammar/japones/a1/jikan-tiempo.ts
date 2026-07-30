@@ -51,17 +51,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Cómo decir la hora en japonés: 時 y 分',
+      heading: '¿Cómo se dice la hora en japonés (時 y 分)?',
       paragraphs: [
         'En japonés, la hora se dice con dos contadores: 時 (ji) para las horas y 分 (fun/pun) para los minutos. El orden es siempre [horas]時[minutos]分: 三時十分 (sanji juppun = 3:10). AM y PM se expresan con 午前 (gozen = mañana/AM) y 午後 (gogo = tarde/PM), que van ANTES de la hora: 午後三時 (gogo sanji = 3 PM).',
         'La expresión más útil para preguntar es 今何時ですか？(ima nanji desu ka = ¿qué hora es ahora?). Para decir la hora se usa el verbo です: 三時です (sanji desu = son las tres). Si quieres indicar a qué hora ocurre algo, añades に: 三時に いきます (sanji ni ikimasu = voy a las tres).',
       ],
     },
     {
-      heading: 'Los cambios de pronunciación en los minutos: el punto difícil',
+      heading: '¿Por qué cambian de pronunciación los minutos en japonés?',
       paragraphs: [
         'La parte más complicada de la hora en japonés son los cambios de pronunciación en los minutos. La regla general: 分 se pronuncia "fun" (ふん), pero cuando el número termina en sonido oclusivo (k, t, ch → ikusoku = consonante doble), cambia a "pun" (ぷん) y el número se contrae: 一(ichi)→いっ, 六(roku)→ろっ, 八(hachi)→はっ, 十(jū)→じゅっ.',
         'Los minutos que cambian a pun: 1分=いっぷん, 3分=さんぷん, 4分=よんぷん, 6分=ろっぷん, 8分=はっぷん, 10分=じゅっぷん. Los que son regulares con fun: 2分=にふん, 5分=ごふん, 7分=ななふん, 9分=きゅうふん. Con práctica, los patrones se vuelven instintivos.',
+      ],
+    },
+    {
+      heading: '¿Cómo se leen los números del reloj en japonés?',
+      paragraphs: [
+        'La hora se forma con número + 時 (ji, "horas") y los minutos con número + 分 (fun/pun): 3時15分 (san-ji jū-go-fun, las 3 y 15). Hay lecturas irregulares que hay que memorizar: 4時 es よじ (yo-ji, no "yon-ji"), 7時 es しちじ (shichi-ji), 9時 es くじ (ku-ji). En los minutos, 分 se pronuncia ふん (fun) o ぷん (pun) según el número que le precede: 1分 いっぷん, 3分 さんぷん, 4分 よんぷん, 6分 ろっぷん, 8分 はっぷん, 10分 じゅっぷん. Para "y media" se usa 半 (han): 3時半 (las 3 y media). La trampa para el hispanohablante son precisamente esas lecturas irregulares de 時 y los cambios fun/pun de los minutos, que no siguen una regla única y conviene aprender de memoria.',
       ],
     },
   ],
@@ -102,7 +108,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Son las 2:30',
-            lines: [['David', '二時 半 です。= ___']],
+            lines: [['Tomás', '二時 半 です。= ___']],
             options: ['にじ はん', 'にじ さんじゅっぷん', 'ふたじ はん', 'にし はん'],
             answer: 'にじ はん',
             explain: '二時半 = にじ はん (niji han) = las dos y media. 半 (han) = 30 minutos.',
@@ -130,7 +136,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Minutos irregulares',
-            lines: [['Zhanna', '六分 を よんでください。']],
+            lines: [['Emma', '六分 を よんでください。']],
             options: ['ろっぷん', 'ろくふん', 'ろっふん', 'ろくぷん'],
             answer: 'ろっぷん',
             explain: '六分 = ろっぷん (roppun). 六(roku) → ろっ + ぷん. Cambio fun→pun.',
@@ -154,9 +160,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntando la hora',
             lines: [
-              ['Ana', 'すみません、いま [[0]] ですか？'],
-              ['David', '[[1]] です。'],
-            ],
+ ['Ana', 'すみません、いま [[0]] ですか？'],
+ ['Tomás', '[[1]] です。'],
+ ],
             blanks: [
               { options: ['なんじ', 'なにじ', 'どこじ'], answer: 'なんじ', explain: '何時 = なんじ (nanji) = ¿qué hora? なん antes de contador じ.' },
               { options: ['ごじはん', 'ごじさんじゅっぷん', 'ごしはん'], answer: 'ごじはん', explain: '五時半 = ごじはん (goji han = 5:30). 半 (han) = y media.' },
@@ -171,8 +177,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'El horario de David',
-            lines: [['David', 'ごご [[0]] から [[1]] まで おしえます。(Enseño de 2 PM a 6 PM.)']],
+            scene: 'El horario de Tomás',
+            lines: [['Tomás', 'ごご [[0]] から [[1]] まで おしえます。(Enseño de 2 PM a 6 PM.)']],
             blanks: [
               { options: ['にじ', 'ふたじ', 'にし'], answer: 'にじ', explain: '二時 = にじ (niji = 2). ごご にじ = 2 PM.' },
               { options: ['ろくじ', 'むじ', 'ろくし'], answer: 'ろくじ', explain: '六時 = ろくじ (rokují = 6). から〜まで = desde〜hasta.' },
@@ -211,7 +217,7 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe la hora o expresión de tiempo correcta.',
         type: 'freeText',
-        scene: 'Zhanna explica el horario de WeLearn',
+        scene: 'Emma explica el horario de WeLearn',
         text: 'じゅぎょうは [[0]](9 AM)に はじまります。[[1]](12:00)に ひるやすみです。[[2]](3:30 PM)から また じゅぎょうです。[[3]](5:00 PM)に おわります。[[4]](何時) ですか？と きかれたら、[[5]](10 minutos) と こたえます。',
         blanks: [
           { answer: 'ごぜん くじ', accepted: ['午前九時', '午前くじ'], explain: '午前九時 (gozen kuji) = 9 AM.' },

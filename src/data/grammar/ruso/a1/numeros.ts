@@ -58,6 +58,20 @@ const topic: GrammarTopic = {
         ['100', 'сто', 'sto'],
       ],
     },
+    {
+      heading: '¿Por qué los números cambian la terminación del sustantivo?',
+      paragraphs: [
+        'En ruso el sustantivo que sigue a un número cambia de caso según la cifra, algo que el español no hace. Con 1 (один) va en nominativo singular: один стол (una mesa). Con 2, 3, 4 va en genitivo SINGULAR: два стола, три стола, четыре стола. Con 5 en adelante (y 11–20) va en genitivo PLURAL: пять столов, десять столов.',
+        'Además, один concuerda en género con el sustantivo (один стол, одна книга, одно окно) y два tiene forma femenina две (две книги). La trampa para el hispanohablante es enorme: no basta con poner el número delante; hay que ajustar la terminación del sustantivo según el patrón 1 / 2-4 / 5+.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dicen las decenas y centenas en ruso?',
+      paragraphs: [
+        'Las decenas: 10 десять, 20 двадцать, 30 тридцать, 40 сорок (irregular), 50 пятьдесят, 60 шестьдесят, 70 семьдесят, 80 восемьдесят, 90 девяносто (irregular), 100 сто. Los números compuestos se forman por yuxtaposición, como en español: 21 = двадцать один, 45 = сорок пять, 99 = девяносто девять.',
+        'Las centenas: 200 двести, 300 триста, 400 четыреста, 500 пятьсот. La trampa para el hispanohablante son las formas irregulares сорок (40) y девяносто (90), que no siguen el patrón de las demás decenas y conviene memorizar aparte.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',
@@ -116,7 +130,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma correcta del sustantivo con cada número.',
         type: 'guidedText',
         scene: 'Un día en WeLearn con números',
-        text: 'В академии WeLearn есть двадцать [[0]] студентов. (Hay 20 estudiantes.) Каждый день приходят три [[1]]. (Cada día llegan 3 profesores.) У Дэвида пять [[2]]. (David tiene 5 libros.) Один [[3]] говорит по-корейски. (Un estudiante habla coreano.) Цена за урок — восемьдесят [[4]] рублей. (El precio de la lección es 80 rublos.)',
+        text: 'В академии WeLearn есть двадцать [[0]] студентов. (Hay 20 estudiantes.) Каждый день приходят три [[1]]. (Cada día llegan 3 profesores.) У Дэвида пять [[2]]. (Tomás tiene 5 libros.) Один [[3]] говорит по-корейски. (Un estudiante habla coreano.) Цена за урок — восемьдесят [[4]] рублей. (El precio de la lección es 80 rublos.)',
         blanks: [
           { options: ['студент', 'студента', 'студентов', 'студенты'], answer: 'студентов', explain: 'Двадцать (20) + genitivo plural. студентов.' },
           { options: ['учитель', 'учителя', 'учителей', 'учители'], answer: 'учителя', explain: 'Три (3) = 2-4 + genitivo singular. учитель → учителя (-ель → -еля).' },

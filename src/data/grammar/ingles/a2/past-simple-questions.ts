@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'Manera de recordarlo: "did" es el jefe del pasado. Cuando "did" está en la oración, el verbo principal pierde su forma pasada y vuelve a ser un infinitivo simple. "Did she GO?" — "go", no "went".',
       ],
     },
+    {
+      heading: '¿Cómo se hacen preguntas en past simple en inglés?',
+      paragraphs: [
+        'Con el auxiliar "did" + sujeto + verbo en forma base: "Did you work yesterday?", "Did she call?". El verbo principal NO va en pasado en la pregunta ("Did you go?", no "did you went"), porque "did" ya marca el pasado. Con to be no se usa did ("Were you there?").',
+      ],
+    },
+    {
+      heading: '¿Por qué no se pone el verbo en pasado después de "did"?',
+      paragraphs: [
+        'Porque "did" ya lleva la marca de pasado. Se dice "Did he arrive?" y "He didn\'t arrive", con el verbo en forma base. Poner el verbo también en pasado ("did he arrived") es el error más frecuente del hispanohablante.',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas wh- en past simple?',
+      paragraphs: [
+        'Palabra wh- + did + sujeto + verbo base: "Where did you go?", "What did she say?", "When did they leave?". Igual que la pregunta yes/no, pero con la palabra interrogativa al principio.',
+      ],
+    },
   ],
 
   visual: {
@@ -188,9 +206,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Diálogo entre amigos',
             lines: [
-              ['A:', '[[0]] you see the game last night?'],
-              ['B:', 'No, I [[1]] have time. I was working.'],
-            ],
+ ['A:', '[[0]] you see the game last night?'],
+ ['B:', 'No, I [[1]] have time. I was working.'],
+ ],
             blanks: [
               { options: ['Did', 'Were', 'Do', 'Have'], answer: 'Did', explain: 'Pregunta: "Did you see…?" — auxiliar past simple.' },
               { options: ['didn\'t', 'don\'t', 'wasn\'t', 'haven\'t'], answer: 'didn\'t', explain: '"Didn\'t have time" — negativo + verbo base.' },
@@ -199,9 +217,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la oficina',
             lines: [
-              ['Manager:', '[[0]] everyone attend the meeting?'],
-              ['Employee:', 'No, Carlos [[1]] come — he was on a call.'],
-            ],
+ ['Manager:', '[[0]] everyone attend the meeting?'],
+ ['Employee:', 'No, Carlos [[1]] come — he was on a call.'],
+ ],
             blanks: [
               { options: ['Did', 'Were', 'Do', 'Was'], answer: 'Did', explain: '"Did everyone attend?" — Did + sujeto + base verb.' },
               { options: ['didn\'t', 'don\'t', 'wasn\'t', 'not'], answer: 'didn\'t', explain: '"Carlos didn\'t come" — didn\'t + verbo base.' },
@@ -210,9 +228,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Recordando las vacaciones',
             lines: [
-              ['A:', 'Where [[0]] you go on holiday this year?'],
-              ['B:', 'We [[1]] go anywhere — we stayed home.'],
-            ],
+ ['A:', 'Where [[0]] you go on holiday this year?'],
+ ['B:', 'We [[1]] go anywhere — we stayed home.'],
+ ],
             blanks: [
               { options: ['did', 'were', 'do', 'have'], answer: 'did', explain: '"Where did you go?" — Wh- + did + sujeto + base.' },
               { options: ['didn\'t', 'don\'t', 'weren\'t', 'haven\'t'], answer: 'didn\'t', explain: '"We didn\'t go anywhere" — negativo + base.' },
@@ -221,9 +239,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conversación sobre el restaurante',
             lines: [
-              ['A:', '[[0]] you like the food?'],
-              ['B:', 'Yes, I [[1]]! It was delicious.'],
-            ],
+ ['A:', '[[0]] you like the food?'],
+ ['B:', 'Yes, I [[1]]! It was delicious.'],
+ ],
             blanks: [
               { options: ['Did', 'Do', 'Were', 'Have'], answer: 'Did', explain: '"Did you like…?" — past simple question.' },
               { options: ['did', 'do', 'liked', 'was'], answer: 'did', explain: 'Respuesta corta: "Yes, I did." — no se repite "like".' },

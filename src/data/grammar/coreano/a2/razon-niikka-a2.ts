@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Con tiempo pasado',
+      heading: '¿Cómo se usa -(으)니까 con el tiempo pasado en coreano?',
       paragraphs: [
         'Una ventaja de -(으)니까 es que puede combinarse con el tiempo pasado en la primera clausula: 이미 먹었으니까 더 안 먹어도 돼요 (Ya comi, asi que no necesitas comer mas). Con -(아/어)서 esto NO es posible en la primera clausula.',
         'Ejemplo comparativo: -(아/어)서 con pasado SOLO en resultado: 먹어서 배가 불러요 (Comi, por eso estoy lleno). -(으)니까 puede tener pasado en causa: 이미 먹었으니까 괜찮아요.',
@@ -65,6 +65,12 @@ const topic: GrammarTopic = {
         ['-(아/어)서', 'No (solo en resultado)', 'No'],
         ['-(으)니까', 'Si (있으니까, 갔으니까)', 'Si'],
         ['-기 때문에', 'Indirectamente', 'Si'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre -(으)니까 y -(아/어)서 para dar razones?',
+      paragraphs: [
+        'Las dos expresan causa ("porque"), pero no son intercambiables. -(아/어)서 da una razón neutra o de causa-efecto natural y NO admite mandatos ni propuestas detrás: 비가 와서 집에 있어요 (me quedo en casa porque llueve). -(으)니까 da una razón más subjetiva o que el hablante presenta como evidente, y SÍ admite mandato/propuesta: 비가 오니까 집에 있어요 (¡como llueve, quédate en casa!). Regla clave para el hispanohablante: si detrás quieres poner una orden, una sugerencia o un imperativo, usa -(으)니까, nunca -(아/어)서. Además, -(으)니까 puede llevar tiempo pasado en la raíz (갔으니까), mientras -(아/어)서 no marca tiempo en la cláusula causal.',
       ],
     },
   ],
@@ -96,14 +102,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Hace calor',
-            lines: [['David', '날씨가 더우___ 에어컨을 켜세요. (Hace calor, encienda el aire acondicionado.)']],
+            lines: [['Iván', '날씨가 더우___ 에어컨을 켜세요. (Hace calor, encienda el aire acondicionado.)']],
             options: ['니까', '으니까', '아니까', '어니까'],
             answer: '니까',
             explain: '덥다 → irregular ㅂ: 더우 + -니까 = 더우니까. Raiz 더우 termina en vocal.',
           },
           {
             scene: 'Sin tiempo',
-            lines: [['Zhanna', '시간이 없___ 서두르세요. (No hay tiempo, dese prisa.)']],
+            lines: [['Elena', '시간이 없___ 서두르세요. (No hay tiempo, dese prisa.)']],
             options: ['으니까', '니까', '아니까', '어니까'],
             answer: '으니까',
             explain: '없다 → raiz 없 (consonante) → 없으니까.',
@@ -137,7 +143,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Peligroso',
-            lines: [['David', '위험하___ 들어가지 마세요. (Es peligroso, no entre.)']],
+            lines: [['Iván', '위험하___ 들어가지 마세요. (Es peligroso, no entre.)']],
             options: ['니까', '으니까', '아니까', '어니까'],
             answer: '니까',
             explain: '위험하다 → raiz 위험하 (vocal) → 위험하니까.',
@@ -161,9 +167,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Consejo de salud',
             lines: [
-              ['Zhanna', '학생들한테 건강 조언을 해주세요. (Da consejos de salud a los estudiantes.)'],
-              ['David', '피곤[[0]] 일찍 [[1]] 세요. 피곤하면 몸이 아플 수 있어요. (Como estan cansados, duerman temprano. Si estan cansados, pueden enfermarse.)'],
-            ],
+ ['Elena', '학생들한테 건강 조언을 해주세요. (Da consejos de salud a los estudiantes.)'],
+ ['Iván', '피곤[[0]] 일찍 [[1]] 세요. 피곤하면 몸이 아플 수 있어요. (Como estan cansados, duerman temprano. Si estan cansados, pueden enfermarse.)'],
+ ],
             blanks: [
               { options: ['하니까', '하으니까', '해니까', '하아니까'], answer: '하니까', explain: '피곤하다 → 피곤하니까 (vocal).' },
               { options: ['자', '자야', '주무시', '자아'], answer: '주무시', explain: 'Mandato honorífico: 주무세요 (dormir — honorífico). 자세요 tambien es valido.' },
@@ -172,9 +178,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Lluvia repentina',
             lines: [
-              ['Ana', '밖에 비가 많이 와요. (Afuera llueve mucho.)'],
-              ['Marco', '비가 많이 [[0]] 우산을 [[1]] 세요. (Como llueve mucho, lleve un paraguas.)'],
-            ],
+ ['Ana', '밖에 비가 많이 와요. (Afuera llueve mucho.)'],
+ ['Marco', '비가 많이 [[0]] 우산을 [[1]] 세요. (Como llueve mucho, lleve un paraguas.)'],
+ ],
             blanks: [
               { options: ['오니까', '오으니까', '와니까', '오이니까'], answer: '오니까', explain: '오다 → raiz 오 (vocal) → 오니까.' },
               { options: ['챙기', '챙기아', '챙겨', '챙기어'], answer: '챙기', explain: 'Mandato: 챙기세요 (lleve/prepare).' },
@@ -183,9 +189,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Examen proximo',
             lines: [
-              ['Lina', '다음 주에 시험이 있어요. (La semana que viene hay examen.)'],
-              ['David', '시험이 [[0]] (있다) 열심히 [[1]] 세요. (Como hay examen, estudie duro.)'],
-            ],
+ ['Lina', '다음 주에 시험이 있어요. (La semana que viene hay examen.)'],
+ ['Iván', '시험이 [[0]] (있다) 열심히 [[1]] 세요. (Como hay examen, estudie duro.)'],
+ ],
             blanks: [
               { options: ['있으니까', '있니까', '있아니까', '있어니까'], answer: '있으니까', explain: '있다 → raiz 있 (consonante) → 있으니까.' },
               { options: ['공부하', '공부하아', '공부해', '공부하이'], answer: '공부하', explain: 'Mandato: 공부하세요.' },
@@ -194,9 +200,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Ya es tarde',
             lines: [
-              ['Sofia', '지금 몇 시예요? (¿Que hora es ahora?)'],
-              ['Carlos', '밤 11시예요. 늦었[[0]] 빨리 [[1]] 세요. (Son las 11 de la noche. Como ya es tarde, vayase a casa rapido.)'],
-            ],
+ ['Sofia', '지금 몇 시예요? (¿Que hora es ahora?)'],
+ ['Carlos', '밤 11시예요. 늦었[[0]] 빨리 [[1]] 세요. (Son las 11 de la noche. Como ya es tarde, vayase a casa rapido.)'],
+ ],
             blanks: [
               { options: ['으니까', '니까', '아니까', '어니까'], answer: '으니까', explain: '늦었 + 으니까 = 늦었으니까 (consonante ㅆ).' },
               { options: ['들어가', '들어가아', '들어가이', '들어가어'], answer: '들어가', explain: '들어가세요 (entre/vayase a casa).' },
@@ -210,7 +216,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el texto con -(으)니까 en la forma correcta.',
         type: 'guidedText',
-        scene: 'Consejos de David para sus estudiantes al inicio del semestre',
+        scene: 'Consejos de Iván para sus estudiantes al inicio del semestre',
         text: '수업이 어렵[[0]] 매일 복습하세요. 단어를 모르[[1]] 사전을 찾아보세요. 질문이 있[[2]] 언제든지 물어보세요. 이미 A1을 마쳤[[3]] A2가 어렵지 않을 거예요. 한국어가 재미있[[4]] 계속 공부하고 싶어질 거예요.',
         blanks: [
           { options: ['으니까', '니까', '아니까', '어니까'], answer: '으니까', explain: '어렵다 → ㅂ irregular: 어려우 + -니까 = 어려우니까. Wait — 어렵다 raiz 어렵 (consonante) → 어려우니까. The answer given should be "으니까" or more precisely the full form.' },
@@ -226,8 +232,8 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma correcta de -(으)니까 para cada verbo.',
         type: 'freeText',
-        scene: 'Instrucciones de Zhanna para el examen',
-        text: '시험지를 다 ___ (받다) 이름을 쓰세요. / 문제가 어렵___ (어렵다) 당황하지 마세요. / 시간이 부족하___ (부족하다) 빨리 읽으세요. / 모르는 문제가 있___ (있다) 다음 문제로 넘어가세요. / 다 풀었___ (풀었다) 다시 검토하세요.',
+        scene: 'Instrucciones de Elena para el examen',
+        text: '시험지를 다 [[0]] (받다) 이름을 쓰세요. / 문제가 어렵[[1]] (어렵다) 당황하지 마세요. / 시간이 부족하[[2]] (부족하다) 빨리 읽으세요. / 모르는 문제가 있[[3]] (있다) 다음 문제로 넘어가세요. / 다 풀었[[4]] (풀었다) 다시 검토하세요.',
         blanks: [
           { answer: '받으니까', explain: '받다 → raiz 받 (consonante) → 받으니까.' },
           { answer: '어려우니까', explain: '어렵다 → ㅂ irregular → 어려우니까.' },

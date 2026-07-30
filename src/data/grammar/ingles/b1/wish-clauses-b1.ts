@@ -72,6 +72,24 @@ const topic: GrammarTopic = {
         '"Wish" se usa cuando la situación es contraria a la realidad o muy poco probable. "I wish I could fly." (No puedo volar — imposible). "I wish I lived in Paris." (No vivo en París — contrario a la realidad actual). "If only" intensifica el deseo o lamento con más emoción: "If only I had more time!" / "If only she had told me the truth!"',
       ],
     },
+    {
+      heading: '¿Cómo se usa "wish" en inglés?',
+      paragraphs: [
+        'Para expresar deseos sobre cosas que nos gustaría que fueran distintas. Para el presente: wish + past simple ("I wish I had more time" = ojalá tuviera más tiempo). Para el pasado: wish + past perfect ("I wish I had studied" = ojalá hubiera estudiado).',
+      ],
+    },
+    {
+      heading: '¿Qué tiempo verbal va después de "wish"?',
+      paragraphs: [
+        'Retrocede un tiempo respecto a lo que se desea: deseo sobre el presente → past simple ("I wish I knew"); deseo sobre el pasado → past perfect ("I wish I had known"); queja sobre un hábito molesto → wish + would ("I wish you would listen"). Con "be" se usa "were".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "I wish" y "I hope"?',
+      paragraphs: [
+        '"I hope" expresa un deseo posible sobre el futuro, con present o will ("I hope you pass the exam"). "I wish" expresa un deseo irreal o improbable, contrario a la realidad ("I wish I could fly"). Hope = posible; wish = imaginario.',
+      ],
+    },
   ],
 
   visual: {

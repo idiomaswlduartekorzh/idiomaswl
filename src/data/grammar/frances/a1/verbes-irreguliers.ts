@@ -47,14 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Por qué son imprescindibles estos cinco verbos',
+      heading: '¿Cuáles son los verbos irregulares esenciales del francés A1?',
       paragraphs: [
         'Después de "être" y "avoir", los verbos más usados en francés cotidiano son precisamente aller, faire, vouloir, pouvoir y prendre. Son tan frecuentes que en cualquier conversación básica aparecerán varios de ellos. La mala noticia es que son todos irregulares; la buena, que una vez memorizados te abren la puerta a miles de frases.',
-        'Además, "aller" es la base del futur proche (je vais manger = voy a comer), "faire" aparece en decenas de expresiones (faire du sport, faire la cuisine, faire un voyage), y "pouvoir" + "vouloir" son los verbos modales más usados del francés.',
+        'Además, "aller" es la base del futur proche (je vais manger = voy a comer), "faire" aparece en decenas de expresiones (faire du sport, faire la cuisine, faire un voyage), y "pouvoir" + "vouloir" son los verbos modales más usados del francés. Esta es la conjugación completa de los cinco en presente:',
+      ],
+      table: [
+        ['Pronombre', 'aller', 'faire', 'prendre'],
+        ['je', 'vais', 'fais', 'prends'],
+        ['tu', 'vas', 'fais', 'prends'],
+        ['il / elle / on', 'va', 'fait', 'prend'],
+        ['nous', 'allons', 'faisons', 'prenons'],
+        ['vous', 'allez', 'faites', 'prenez'],
+        ['ils / elles', 'vont', 'font', 'prennent'],
       ],
     },
     {
-      heading: 'Aller: el verbo más irregular',
+      heading: '¿Cómo se conjuga el verbo aller en francés?',
       paragraphs: [
         '"Aller" significa "ir" y es totalmente irregular — sus formas no se parecen al infinitivo: je vais, tu vas, il va, nous allons, vous allez, ils vont. Nota que "nous allons" y "vous allez" sí parecen regulares con raíz all-.',
         'Las expresiones más importantes: aller à + ciudad (je vais à Paris), aller + infinitivo para el futuro próximo (je vais manger = voy a comer), comment allez-vous ? (¿cómo está usted?), ça va ? (¿qué tal?).',
@@ -68,10 +77,24 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Vouloir, pouvoir y prendre',
+      heading: '¿Cómo se conjugan vouloir y pouvoir en francés?',
       paragraphs: [
-        '"Vouloir" (querer): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent. "Pouvoir" (poder): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent. Estos dos verbos tienen el mismo patrón: singular con -eux/-eux/-eut y plural con -oulons/-oulez/-eulent.',
-        '"Prendre" (tomar/coger): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent. La doble "n" en "prennent" es la única forma sorprendente. "Prendre" también sirve de base para apprendre (aprender) y comprendre (comprender).',
+        '"Vouloir" (querer) y "pouvoir" (poder) comparten el mismo patrón: singular en -eux/-eux/-eut y plural en -ons/-ez con la vocal que cambia (voulons/pouvons, veulent/peuvent). Son los dos verbos modales más usados y siempre van seguidos de infinitivo: "je veux apprendre", "tu peux venir". Esta es su conjugación en paralelo:',
+      ],
+      table: [
+        ['Pronombre', 'vouloir', 'pouvoir'],
+        ['je', 'veux', 'peux'],
+        ['tu', 'veux', 'peux'],
+        ['il / elle / on', 'veut', 'peut'],
+        ['nous', 'voulons', 'pouvons'],
+        ['vous', 'voulez', 'pouvez'],
+        ['ils / elles', 'veulent', 'peuvent'],
+      ],
+    },
+    {
+      heading: '¿Por qué "vous faites" y no "vous faisez"?',
+      paragraphs: [
+        'Porque faire es irregular en la 2ª persona del plural: la forma correcta es "vous faites", no "vous faisez". Es una de las tres formas de vous irregulares del francés (junto a "vous êtes" y "vous dites"). También son irregulares "ils font" (no "ils faisent") y "ils vont" (aller). Estas formas hay que memorizarlas porque rompen el patrón regular de -ez/-ent. "Prendre" añade otra trampa: la doble n de "ils prennent" (base de apprendre → ils apprennent, comprendre → ils comprennent).',
       ],
     },
   ],
@@ -101,15 +124,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David planifica la semana',
-            lines: [['David', 'Je ___ à Bogotá lundi. (aller)']],
+            scene: 'Bruno planifica la semana',
+            lines: [['Bruno', 'Je ___ à Bogotá lundi. (aller)']],
             options: ['vais', 'vas', 'va', 'allons'],
             answer: 'vais',
             explain: '"Je" + aller → "vais". Forma totalmente irregular.',
           },
           {
-            scene: 'Zhanna pregunta a los estudiantes',
-            lines: [['Zhanna', 'Qu\'est-ce que vous ___ ce week-end ? (faire)']],
+            scene: 'Sara pregunta a los estudiantes',
+            lines: [['Sara', 'Qu\'est-ce que vous ___ ce week-end ? (faire)']],
             options: ['faites', 'faisez', 'font', 'faisons'],
             answer: 'faites',
             explain: '"Vous" + faire → "faites" (no "faisez" — es irregular).',
@@ -150,8 +173,8 @@ const topic: GrammarTopic = {
             explain: '"Vous" + pouvoir → "pouvez".',
           },
           {
-            scene: 'David y Zhanna organizan clases',
-            lines: [['David', 'Nous ___ une réunion demain. (faire)']],
+            scene: 'Bruno y Sara organizan clases',
+            lines: [['Bruno', 'Nous ___ une réunion demain. (faire)']],
             options: ['faisons', 'faites', 'font', 'fais'],
             answer: 'faisons',
             explain: '"Nous" + faire → "faisons".',
@@ -174,8 +197,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna organiza actividades',
-            lines: [['Zhanna', 'Les étudiants [[0]] des exercices et ils [[1]] du sport. (faire / faire)']],
+            scene: 'Sara organiza actividades',
+            lines: [['Sara', 'Les étudiants [[0]] des exercices et ils [[1]] du sport. (faire / faire)']],
             blanks: [
               { options: ['font', 'faites', 'faisons', 'fais'], answer: 'font', explain: '"Les étudiants" (ils) + faire → "font".' },
               { options: ['font', 'faites', 'faisons', 'fais'], answer: 'font', explain: '"Ils" + faire → "font".' },
@@ -190,8 +213,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'David y Lina pueden o quieren',
-            lines: [['David', 'Nous [[0]] vous aider si vous [[1]] apprendre. (pouvoir / vouloir)']],
+            scene: 'Bruno y Lina pueden o quieren',
+            lines: [['Bruno', 'Nous [[0]] vous aider si vous [[1]] apprendre. (pouvoir / vouloir)']],
             blanks: [
               { options: ['pouvons', 'peuvent', 'peux', 'pouvez'], answer: 'pouvons', explain: '"Nous" + pouvoir → "pouvons".' },
               { options: ['voulez', 'veulent', 'veux', 'voulons'], answer: 'voulez', explain: '"Vous" + vouloir → "voulez".' },
@@ -205,14 +228,14 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige la forma correcta de cada verbo irregular en este texto sobre un día de clase.',
         type: 'guidedText',
-        scene: 'Un día típico con David y sus estudiantes en WeLearn. Elige el verbo correcto.',
-        text: 'Le matin, David [[0]] (aller) à l\'académie. Les étudiants [[1]] (vouloir) commencer les cours tôt. Carlos [[2]] (prendre) le bus et Ana [[3]] (faire) du vélo. Zhanna leur [[4]] (demander, irrégulier — demande) : « Qu\'est-ce que vous [[5]] (vouloir) apprendre aujourd\'hui ? » Tout le monde [[6]] (pouvoir) poser des questions. À midi, ils [[7]] (faire) une pause.',
+        scene: 'Un día típico con Bruno y sus estudiantes en WeLearn. Elige el verbo correcto.',
+        text: 'Le matin, Bruno [[0]] (aller) à l\'académie. Les étudiants [[1]] (vouloir) commencer les cours tôt. Carlos [[2]] (prendre) le bus et Ana [[3]] (faire) du vélo. Sara leur [[4]] (demander, irrégulier — demande) : « Qu\'est-ce que vous [[5]] (vouloir) apprendre aujourd\'hui ? » Tout le monde [[6]] (pouvoir) poser des questions. À midi, ils [[7]] (faire) une pause.',
         blanks: [
-          { options: ['va', 'vais', 'vas', 'vont'], answer: 'va', explain: '"David" (il) + aller → "va".' },
+          { options: ['va', 'vais', 'vas', 'vont'], answer: 'va', explain: '"Bruno" (il) + aller → "va".' },
           { options: ['veulent', 'veut', 'veux', 'voulez'], answer: 'veulent', explain: '"Les étudiants" (ils) + vouloir → "veulent".' },
           { options: ['prend', 'prends', 'prennent', 'prenons'], answer: 'prend', explain: '"Carlos" (il) + prendre → "prend".' },
           { options: ['fait', 'fais', 'font', 'faites'], answer: 'fait', explain: '"Ana" (elle) + faire → "fait".' },
-          { options: ['demande', 'demandes', 'demandons', 'demandez'], answer: 'demande', explain: '"Zhanna" (elle) + demander → "demande" (verbe -er régulier).' },
+          { options: ['demande', 'demandes', 'demandons', 'demandez'], answer: 'demande', explain: '"Sara" (elle) + demander → "demande" (verbe -er régulier).' },
           { options: ['voulez', 'veulent', 'veux', 'voulons'], answer: 'voulez', explain: '"Vous" + vouloir → "voulez".' },
           { options: ['peut', 'peux', 'peuvent', 'pouvons'], answer: 'peut', explain: '"Tout le monde" = il → "peut".' },
           { options: ['font', 'faites', 'faisons', 'fais'], answer: 'font', explain: '"Ils" + faire → "font".' },
@@ -242,14 +265,14 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'David habla de sus planes de viaje',
-            prompt: 'Di que David va a Corea el mes que viene y que quiere practicar coreano (aller + vouloir).',
-            answer: 'David va en Corée le mois prochain. Il veut pratiquer le coréen.',
+            scene: 'Bruno habla de sus planes de viaje',
+            prompt: 'Di que Bruno va a Corea el mes que viene y que quiere practicar coreano (aller + vouloir).',
+            answer: 'Bruno va en Corée le mois prochain. Il veut pratiquer le coréen.',
             accepted: ['va en Corée', 'veut pratiquer', 'va à Séoul', 'veut apprendre'],
-            explain: '"David" (il) → "va" (aller) + "veut" (vouloir).',
+            explain: '"Bruno" (il) → "va" (aller) + "veut" (vouloir).',
           },
           {
-            scene: 'Zhanna organiza actividades de clase',
+            scene: 'Sara organiza actividades de clase',
             prompt: 'Di que los estudiantes hacen ejercicios y toman notas (faire + prendre, ils).',
             answer: 'Les étudiants font des exercices et prennent des notes.',
             accepted: ['font des exercices', 'prennent des notes', 'font du sport', 'prennent le bus'],

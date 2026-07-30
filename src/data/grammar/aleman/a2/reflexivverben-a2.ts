@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Qué son los verbos reflexivos en alemán',
+      heading: '¿Qué son los verbos reflexivos en alemán?',
       paragraphs: [
         'Un verbo reflexivo es aquel en que el sujeto y el objeto son la misma persona o cosa. En alemán, esto se marca con un pronombre reflexivo: mich, dich, sich, uns, euch, sich. Muchos verbos de la rutina diaria son reflexivos: sich waschen (lavarse), sich anziehen (vestirse), sich setzen (sentarse), sich vorstellen (presentarse o imaginarse).',
         'Algunos verbos son siempre reflexivos (no pueden usarse sin el pronombre): sich freuen (alegrarse), sich irren (equivocarse), sich beeilen (apresurarse), sich weigern (negarse). Otros son reflexivos opcionales: "Ich wasche mich" (me lavo) o "Ich wasche das Auto" (lavo el coche).',
       ],
     },
     {
-      heading: 'Verbos reflexivos con preposición',
+      heading: '¿Cómo son los verbos reflexivos con preposición en alemán?',
       paragraphs: [
         'Muchos verbos reflexivos llevan una preposición fija: sich interessieren für + Akk. (interesarse por), sich freuen auf + Akk. (alegrarse de/anticipar), sich freuen über + Akk. (alegrarse de), sich ärgern über + Akk. (enfadarse por), sich kümmern um + Akk. (ocuparse de), sich erinnern an + Akk. (recordar).',
         'Estas combinaciones verbo+preposición son fijas — hay que aprenderlas como unidad. "Ich freue mich auf den Urlaub" (Me alegra / tengo ganas de las vacaciones — mirando al futuro). "Ich freue mich über das Geschenk" (Me alegra el regalo — reacción ante algo ya ocurrido).',
       ],
     },
     {
-      heading: 'Posición del pronombre reflexivo en la oración',
+      heading: '¿Dónde va el pronombre reflexivo en la oración alemana?',
       paragraphs: [
         'En una oración principal, el pronombre reflexivo va inmediatamente después del verbo conjugado: "Ich ziehe mich schnell an." Si hay un pronombre de sujeto, el reflexivo lo sigue. Si el sujeto es un sustantivo, el reflexivo va después del verbo: "Maria freut sich sehr."',
         'En oraciones subordinadas (con "weil", "dass", "wenn"), el pronombre reflexivo va después del sujeto: "Ich weiß, dass er sich oft irrt." / "Weil sie sich immer beeilt, kommt sie nie zu spät."',

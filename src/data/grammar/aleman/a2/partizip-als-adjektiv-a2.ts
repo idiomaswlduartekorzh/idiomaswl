@@ -47,17 +47,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Partizip I como adjetivo: acción simultánea',
+      heading: '¿Cómo se usa el Partizip I como adjetivo en alemán?',
       paragraphs: [
         'El Partizip I se forma añadiendo -d al infinitivo: schlafen → schlafend, lachen → lachend, laufen → laufend. Cuando se usa como adjetivo antes de un sustantivo, recibe la terminación normal del adjetivo.',
         '"Das schlafende Kind" significa literalmente "el niño que está durmiendo" — la acción de dormir ocurre al mismo tiempo que el verbo principal. Es equivalente a una cláusula de relativo con presente.',
       ],
     },
     {
-      heading: 'Partizip II como adjetivo: acción completada',
+      heading: '¿Cómo se usa el Partizip II como adjetivo en alemán?',
       paragraphs: [
         'El Partizip II usado como adjetivo describe el resultado de una acción pasada. "Das gelesene Buch" = el libro que ha sido leído / el libro (ya) leído. Funciona como una cláusula de relativo pasiva en pasado.',
         'Los verbos inseparables no llevan ge-: das besuchte Museum (no *das gebesuchte Museum). Los verbos con -ieren tampoco: das reparierte Auto.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre Partizip I y Partizip II como adjetivo?',
+      paragraphs: [
+        'El Partizip I (infinitiv + -d: spielend, lachend) expresa una acción simultánea y activa: "das spielende Kind" (el niño que está jugando). El Partizip II (ge-…-t / ge-…-en: gekocht, gebraten) expresa una acción ya completada o pasiva: "das gekochte Ei" (el huevo cocido, ya hecho). En resumen: Partizip I = algo que ocurre ahora y lo hace el sustantivo (activo); Partizip II = algo que ya se hizo o se le hizo al sustantivo (pasivo/resultado). Como todo adjetivo atributivo en alemán, ambos se declinan según el género, número y caso del sustantivo al que acompañan (das spielende Kind, dem spielenden Kind…).',
       ],
     },
   ],
@@ -187,7 +193,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el participio correcto con su terminación.',
         type: 'freeText',
         scene: 'Describiendo objetos y personas en casa.',
-        text: 'Ich suche das ___ Buch. (kaufen, P.II) / Siehst du das ___ Baby? (schlafen, P.I) / Der ___ Brief liegt hier. (schreiben, P.II) / Die ___ Kinder spielen draußen. (lachen, P.I) / Das ___ Auto steht in der Garage. (reparieren, P.II)',
+        text: 'Ich suche das [[0]] Buch. (kaufen, P.II) / Siehst du das [[1]] Baby? (schlafen, P.I) / Der [[2]] Brief liegt hier. (schreiben, P.II) / Die [[3]] Kinder spielen draußen. (lachen, P.I) / Das [[4]] Auto steht in der Garage. (reparieren, P.II)',
         blanks: [
           { answer: 'gekaufte', explain: 'kaufen → gekauft + -e (neutro Nom.).' },
           { answer: 'schlafende', explain: 'schlafen → schlafend + -e (neutro Nom.).' },

@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '-고 있다: la forma progresiva del coreano',
+      heading: '¿Cómo se forma el progresivo -고 있다 en coreano?',
       paragraphs: [
         'La forma -고 있다 en coreano indica que una acción está en curso. Se forma añadiendo -고 al tallo verbal, seguido de 있다 conjugado: "먹고 있어요" (estoy comiendo), "공부하고 있어요" (estoy estudiando), "자고 있어요" (estoy durmiendo).',
         'Es equivalente al español "estar + gerundio" y al inglés "present continuous". La pregunta más común es "뭐 하고 있어요?" (¿Qué estás haciendo?) y su respuesta: "지금 [acción]-고 있어요" (Ahora estoy [haciendo X]).',
       ],
     },
     {
-      heading: 'La progresiva de estado: un uso especial',
+      heading: '¿Qué es la progresiva de estado en coreano?',
       paragraphs: [
         'En coreano, -고 있다 también puede expresar el resultado persistente de una acción completada. "안경을 쓰고 있어요" no significa "estoy poniéndome las gafas" sino "llevo las gafas puestas" (resultado del acto de ponérselas). Del mismo modo, "반지를 끼고 있어요" = "llevo el anillo puesto".',
         'Esta doble función (proceso en curso / estado resultado) es una característica especial del coreano que no tiene equivalente directo en español.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre -고 있다 y el presente simple en coreano?',
+      paragraphs: [
+        '-고 있다 (-go itda) marca una acción EN CURSO ahora mismo, como el "estar + gerundio" español: 밥을 먹고 있어요 (estoy comiendo). El presente simple 해요, en cambio, sirve tanto para hábitos como para el presente general: 밥을 먹어요 puede ser "como" (habitual) o "voy a comer". Por eso, para dejar claro que la acción ocurre en este momento, el coreano usa -고 있다. Su honorífico es -고 계시다 (선생님이 오고 계세요 = el profesor está viniendo). La trampa para el hispanohablante: no todo "estoy -ndo" del español pide -고 있다; con verbos de estado o percepción el coreano prefiere el presente simple, y -고 있다 se reserva para acciones dinámicas realmente en desarrollo.',
       ],
     },
   ],
@@ -185,7 +191,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma progresiva correcta.',
         type: 'freeText',
         scene: '지금 무엇을 하고 있어요?',
-        text: '지금 한국어를 ___ (공부하다). / 그때 친구를 ___ (기다리다). / 음악을 ___ (듣다). / 옷을 ___ (입다 — estado resultado).',
+        text: '지금 한국어를 [[0]] (공부하다). / 그때 친구를 [[1]] (기다리다). / 음악을 [[2]] (듣다). / 옷을 [[3]] (입다 — estado resultado).',
         blanks: [
           { answer: '공부하고 있어요', explain: '"공부하고 있어요" = estoy estudiando.' },
           { answer: '기다리고 있었어요', explain: '"기다리고 있었어요" = estaba esperando (pasado progresivo).' },

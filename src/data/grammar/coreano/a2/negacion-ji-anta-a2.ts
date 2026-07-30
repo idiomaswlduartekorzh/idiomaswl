@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '못 vs 안: la diferencia clave',
+      heading: '¿Cuál es la diferencia entre 못 y 안 en coreano?',
       paragraphs: [
         '못 indica incapacidad fisica o circunstancial: 오늘 못 가요 significa que algo externo me impide ir (estoy enfermo, hay trafico, etc.). 안 indica eleccion propia: 오늘 안 가요 significa que decido no ir.',
         'Esta distincion puede ser delicada. En contexto de polite refusal, los coreanos a veces usan 못 aunque en realidad podrian ir, por educacion: 내일 못 가요 (suena mas suave que 내일 안 가요).',
@@ -64,6 +64,12 @@ const topic: GrammarTopic = {
         ['Forma', 'Significado', 'Ejemplo'],
         ['안 + verbo', 'No (por voluntad)', '오늘 안 먹어요 (hoy no como — por decision)'],
         ['못 + verbo', 'No puedo (incapacidad)', '오늘 못 먹어요 (hoy no puedo comer — algo me lo impide)'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma la negación larga -지 않다 en coreano?',
+      paragraphs: [
+        'Se toma la raíz del verbo o adjetivo + -지 않다 (-ji anta): 가다 → 가지 않아요 (no voy), 크다 → 크지 않아요 (no es grande). Es la negación "larga" y equivale en significado a la "corta" 안 + verbo (안 가요), pero suena algo más formal o enfática y es obligatoria con ciertos verbos largos. Con verbos 하다 la corta separa el 안: 공부 안 해요 = 공부하지 않아요. Para la imposibilidad ("no poder") la larga equivalente es -지 못하다 (가지 못해요 = 못 가요). Regla práctica para el hispanohablante: 안/못 van DELANTE del verbo (como "no" en español), mientras -지 않다/-지 못하다 van DETRÁS pegadas a la raíz; ambas son correctas.',
       ],
     },
   ],
@@ -109,14 +115,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Negacion formal',
-            lines: [['Zhanna', '그 영화는 재미가 없어서 보___ 않았어요. (Esa pelicula no era interesante, asi que no la vi.)']],
+            lines: [['Lía', '그 영화는 재미가 없어서 보___ 않았어요. (Esa pelicula no era interesante, asi que no la vi.)']],
             options: ['지', '아', '이', '어'],
             answer: '지',
             explain: '-지 않았어요: forma formal de negacion en pasado.',
           },
           {
             scene: 'Imposibilidad',
-            lines: [['David', '시간이 없어서 숙제를 ___ 했어요. (No tenia tiempo, asi que no pude hacer la tarea.)']],
+            lines: [['Dario', '시간이 없어서 숙제를 ___ 했어요. (No tenia tiempo, asi que no pude hacer la tarea.)']],
             options: ['못', '안', '지', '않'],
             answer: '못',
             explain: '시간이 없어서 = causa externa → 못 했어요 (incapacidad).',
@@ -144,7 +150,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Negacion pasada formal',
-            lines: [['Zhanna', '어제 약속을 지키___ 못했어요. (Ayer no pude cumplir la promesa.)']],
+            lines: [['Lía', '어제 약속을 지키___ 못했어요. (Ayer no pude cumplir la promesa.)']],
             options: ['지', '아', '이', '어'],
             answer: '지',
             explain: '지키지 못했어요 = forma formal de incapacidad en pasado.',
@@ -161,9 +167,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Invitacion rechazada',
             lines: [
-              ['Carlos', '파티에 올 수 있어요? (¿Puedes venir a la fiesta?)'],
-              ['Ana', '죄송해요, 오늘 [[0]] 가요. 다음에 꼭 [[1]] 갈게요. (Lo siento, hoy no puedo ir. La proxima vez seguro ire.)'],
-            ],
+ ['Carlos', '파티에 올 수 있어요? (¿Puedes venir a la fiesta?)'],
+ ['Ana', '죄송해요, 오늘 [[0]] 가요. 다음에 꼭 [[1]] 갈게요. (Lo siento, hoy no puedo ir. La proxima vez seguro ire.)'],
+ ],
             blanks: [
               { options: ['못', '안', '지', '않'], answer: '못', explain: '못 가요 = incapacidad/imposibilidad. Rechazo educado.' },
               { options: ['꼭', '안', '못', '지'], answer: '꼭', explain: '꼭 = seguro/definitivamente. 꼭 갈게요 = definitivamente ire.' },
@@ -172,9 +178,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preferencias alimentarias',
             lines: [
-              ['Zhanna', '고수를 좋아해요? (¿Te gusta el cilantro?)'],
-              ['David', '아니요, 고수는 [[0]] 먹어요. 맛이 너무 강해서 [[1]] 먹어요. (No, no como cilantro. El sabor es demasiado fuerte, no puedo comerlo.)'],
-            ],
+ ['Lía', '고수를 좋아해요? (¿Te gusta el cilantro?)'],
+ ['Dario', '아니요, 고수는 [[0]] 먹어요. 맛이 너무 강해서 [[1]] 먹어요. (No, no como cilantro. El sabor es demasiado fuerte, no puedo comerlo.)'],
+ ],
             blanks: [
               { options: ['안', '못', '지', '않'], answer: '안', explain: '안 먹어요 = decision personal.' },
               { options: ['못', '안', '지', '않'], answer: '못', explain: '못 먹어요 = incapacidad por el sabor fuerte.' },
@@ -183,9 +189,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Situacion de salud',
             lines: [
-              ['Marco', '왜 수업에 [[0]] 왔어요? (¿Por que no viniste a clase?)'],
-              ['Sofia', '열이 많이 나서 [[1]] 왔어요. (Tenia mucha fiebre, asi que no pude venir.)'],
-            ],
+ ['Marco', '왜 수업에 [[0]] 왔어요? (¿Por que no viniste a clase?)'],
+ ['Sofia', '열이 많이 나서 [[1]] 왔어요. (Tenia mucha fiebre, asi que no pude venir.)'],
+ ],
             blanks: [
               { options: ['안', '못', '지', '않'], answer: '안', explain: '안 왔어요 — la pregunta pregunta por la razon de no venir (puede ser voluntad o incapacidad).' },
               { options: ['못', '안', '지', '않'], answer: '못', explain: '못 왔어요 = incapacidad por fiebre (causa externa).' },
@@ -194,9 +200,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Negar un rumor',
             lines: [
-              ['Lina', '마르코가 학교를 그만뒀다고 들었어요. (Escuche que Marco dejo la escuela.)'],
-              ['Carlos', '아니요, 그 얘기는 사실이 [[0]] 않아요. 마르코는 다음 주에 [[1]] (돌아오다, negacion posible). (No, esa historia no es cierta. Marco volvera la proxima semana.)'],
-            ],
+ ['Lina', '마르코가 학교를 그만뒀다고 들었어요. (Escuche que Marco dejo la escuela.)'],
+ ['Carlos', '아니요, 그 얘기는 사실이 [[0]] 않아요. 마르코는 다음 주에 [[1]] (돌아오다, negacion posible). (No, esa historia no es cierta. Marco volvera la proxima semana.)'],
+ ],
             blanks: [
               { options: ['아니지', '이지', '이지', '하지'], answer: '아니지', explain: 'Negacion de sustantivo/adjetivo: 사실이 아니에요 → formal: 아니지 않다 → simplificado: 아니에요.' },
               { options: ['돌아와요', '돌아오지 않아요', '못 돌아와요', '안 돌아와요'], answer: '돌아와요', explain: '돌아오다 → 돌아와요 (volvera — futuro con presente).' },
@@ -227,7 +233,7 @@ const topic: GrammarTopic = {
         intro: 'Completa las oraciones con la negacion apropiada.',
         type: 'freeText',
         scene: 'Respuestas de una encuesta sobre habitos',
-        text: '술을 ___ 마셔요. (No bebo alcohol — decision) / 수영을 ___ 해요. (No se nadar — incapacidad) / 아침을 ___ 먹어요. (No desayuno — habito) / 어제 너무 피곤해서 공부를 ___ 했어요. (Estaba tan cansado que no pude estudiar) / 고기를 ___ 먹어요. (No como carne — soy vegetariano)',
+        text: '술을 [[0]] 마셔요. (No bebo alcohol — decision) / 수영을 [[1]] 해요. (No se nadar — incapacidad) / 아침을 [[2]] 먹어요. (No desayuno — habito) / 어제 너무 피곤해서 공부를 [[3]] 했어요. (Estaba tan cansado que no pude estudiar) / 고기를 [[4]] 먹어요. (No como carne — soy vegetariano)',
         blanks: [
           { answer: '안', explain: 'Decision personal: 안 마셔요.' },
           { answer: '못', explain: 'Incapacidad: 못 해요 / 수영할 수 없어요.' },

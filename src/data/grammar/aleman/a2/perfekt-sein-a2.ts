@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Qué verbos usan sein en el Perfekt',
+      heading: '¿Qué verbos usan sein en el Perfekt alemán?',
       paragraphs: [
         'La regla principal: los verbos que expresan movimiento de un lugar a otro usan sein como auxiliar. Los más comunes son: gehen (ir a pie), kommen (venir), fahren (ir en vehículo), fliegen (volar), laufen (correr/ir a pie), rennen (correr), reisen (viajar), schwimmen (nadar).',
         'También usan sein los verbos de cambio de estado: werden (volverse/llegar a ser), aufwachen (despertar), einschlafen (quedarse dormido), sterben (morir), wachsen (crecer). Y dos verbos especiales: bleiben (quedarse) y sein (estar/haber estado → gewesen).',
       ],
     },
     {
-      heading: 'Cómo distinguir haben de sein',
+      heading: '¿Cómo se distingue haben de sein en el Perfekt?',
       paragraphs: [
         'La prueba del movimiento: ¿El verbo lleva al sujeto de un lugar A a un lugar B? Si sí → sein. "Ich bin nach Berlin gefahren" (fui en coche a Berlín). Si el verbo tiene un objeto directo → casi siempre haben: "Ich habe das Auto gefahren" (conduje el coche).',
         'Algunos verbos pueden usarse con ambos auxiliares con significado diferente: "Ich habe geschwommen" (practiqué natación) vs "Ich bin durch den Fluss geschwommen" (atravesé el río nadando). Lo importante es aprender los verbos de sein de memoria desde el principio.',
       ],
     },
     {
-      heading: 'Los Partizip II de los verbos con sein',
+      heading: '¿Cómo son los Partizip II de los verbos con sein?',
       paragraphs: [
         'La mayoría de los verbos con sein son irregulares: gehen → gegangen, kommen → gekommen, fahren → gefahren, fliegen → geflogen, laufen → gelaufen, bleiben → geblieben, werden → geworden, sein → gewesen.',
         'Algunos son regulares: reisen → gereist, passieren → passiert (no lleva ge- porque el acento está en la raíz). Aprende estos participios de memoria — son los más frecuentes en el alemán cotidiano.',
@@ -127,7 +127,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando del trabajo',
             lines: [['', 'Du ___ lange gearbeitet.']],
-            options: ['hast', 'bist', 'hat', 'hat'],
+            options: ['hast', 'bist', 'hat'],
             answer: 'hast',
             explain: '"arbeiten" no es movimiento ni cambio de estado → haben. Du hast gearbeitet.',
           },

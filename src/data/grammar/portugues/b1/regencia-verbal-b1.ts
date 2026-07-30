@@ -59,10 +59,24 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Verbos de movimiento: regencias con "a"',
+      heading: '¿Qué preposición rige cada verbo en portugués?',
       paragraphs: [
-        'Verbos como ir, venir, llegar, dirigirse, etc., se rigen con preposición "a": "Vou a Portugal" (Voy a Portugal), "Cheguei a casa" (Llegué a casa), "Dirijo-me a você" (Me dirijo a usted).',
-        'Diferencia importante: en español a veces usamos "en" ("en Brasil") pero en portugués siempre es "a" ("a Brasil") cuando hay movimiento o destino. "En" (em) se usa para estar en un lugar, no para ir a un lugar.',
+        'La preposición depende del verbo y hay que aprenderla con él, porque no siempre coincide con el español. Esta tabla reúne las regencias más frecuentes del B1:',
+      ],
+      table: [
+        ['Verbo (PT)', 'Preposición', 'Ejemplo'],
+        ['ir / chegar', 'a', 'Vou a Portugal.'],
+        ['pensar / acreditar / confiar', 'em', 'Penso em você.'],
+        ['lembrar-se / esquecer-se / gostar', 'de', 'Lembro-me de você.'],
+        ['contar / sonhar / preocupar-se', 'com', 'Conto com você.'],
+        ['consistir / insistir', 'em', 'Consiste em ajudar.'],
+        ['depender / precisar / necessitar', 'de', 'Preciso de ajuda.'],
+      ],
+    },
+    {
+      heading: '¿Qué verbos de movimiento rigen la preposición "a"?',
+      paragraphs: [
+        'Verbos como ir, chegar, dirigir-se, regressar se rigen con "a" para marcar destino: "Vou a Portugal", "Cheguei a casa", "Dirijo-me a você". La trampa está en que el español a veces usa "en" con verbos de movimiento coloquiales ("me voy en el coche"), pero el portugués reserva "em" solo para la ubicación, no para el destino: "Vou a Brasil" (destino) frente a "Estou no Brasil" (ubicación). Con medios de transporte se usa "de": "Vou de carro/de avião".',
       ],
     },
     {
@@ -87,7 +101,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Regencias problemáticas para hispanohablantes',
+      heading: '¿Qué regencias verbales cambian entre portugués y español?',
       paragraphs: [
         'Diferencias críticas: Ansiar por (pt: ansiar por) vs esperar por algo (pt: esperar por, aunque "esperar a" es también común). Enterarse de (pt: saber de, inteirar-se de). Tratar de/sobre (pt: tratar de, falar de).',
         'Otros errores comunes: "Necessito de ajuda" (Necesito ayuda, portugués usa "necessitar de"); "Aspiro a" (Aspiro a, portugués usa "aspirar a" o "aspirar por"). La inmersión en textos auténticos es la mejor forma de internalizar regencias.',

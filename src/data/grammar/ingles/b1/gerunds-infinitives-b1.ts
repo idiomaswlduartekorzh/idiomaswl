@@ -88,6 +88,24 @@ const topic: GrammarTopic = {
         'Remember + gerundio = recordar algo que ya ocurrió: "I remember meeting him at the conference." Remember + infinitivo = no olvidar hacer algo en el futuro: "Remember to send the email." Try + gerundio = experimentar algo como solución: "Try drinking more water if you have headaches." Try + infinitivo = esforzarse para lograr algo: "I tried to open the jar but couldn\'t."',
       ],
     },
+    {
+      heading: '¿Cuándo se usa gerundio (-ing) y cuándo infinitivo (to) en inglés?',
+      paragraphs: [
+        'Depende del verbo anterior. Tras enjoy, finish, avoid, mind, suggest → gerundio ("I enjoy reading"). Tras want, need, decide, hope, learn → infinitivo con to ("I want to read"). Tras preposiciones siempre gerundio ("good at cooking", "interested in learning").',
+      ],
+    },
+    {
+      heading: '¿Qué verbos van seguidos de gerundio en inglés?',
+      paragraphs: [
+        'Enjoy, finish, avoid, mind, suggest, keep, practise, miss, imagine, can\'t stand: "I enjoy swimming", "She finished eating", "Avoid making noise". También todos los verbos tras preposición.',
+      ],
+    },
+    {
+      heading: '¿Qué verbos cambian de significado con gerundio o infinitivo?',
+      paragraphs: [
+        'Algunos como stop, remember, forget, try: "stop smoking" (dejar de fumar) vs "stop to smoke" (parar para fumar); "remember locking" (recordar que cerraste) vs "remember to lock" (acordarte de cerrar). El gerundio mira al pasado; el infinitivo, a la intención.',
+      ],
+    },
   ],
 
   visual: {
@@ -141,7 +159,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Una promesa',
-            lines: [['David:', 'Did you promise ___ early?']],
+            lines: [['Diego:', 'Did you promise ___ early?']],
             options: ['to arrive', 'arriving', 'arrive', 'arrived'],
             answer: 'to arrive',
             explain: 'promise siempre va con to + infinitivo: promised to arrive.',
@@ -242,7 +260,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el verbo en su forma correcta (gerundio o infinitivo) según el contexto.',
         type: 'freeText',
         scene: 'Completa el párrafo con la forma verbal correcta.',
-        text: 'My friend David loves [[0]] (travel) and plans [[1]] (visit) eight countries this year. He suggested [[2]] (join) him in Colombia for two weeks. I would love to go, but I can\'t afford [[3]] (take) so many days off work. I\'ll keep [[4]] (save) money until I can.',
+        text: 'My friend Diego loves [[0]] (travel) and plans [[1]] (visit) eight countries this year. He suggested [[2]] (join) him in Colombia for two weeks. I would love to go, but I can\'t afford [[3]] (take) so many days off work. I\'ll keep [[4]] (save) money until I can.',
         blanks: [
           { answer: 'travelling', accepted: ['travelling', 'traveling'], explain: 'love + gerundio: loves travelling.' },
           { answer: 'to visit', accepted: ['to visit'], explain: 'plan + infinitivo: plans to visit.' },

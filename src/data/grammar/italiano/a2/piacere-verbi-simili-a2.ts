@@ -49,14 +49,49 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cómo funciona "piacere" en italiano?',
       paragraphs: [
-        'En italiano, "piacere" funciona al contrario que "gustar" en español formal. La cosa que gusta es el sujeto del verbo, y la persona que experimenta el gusto lleva el pronombre de objeto indirecto. "Mi piace il caffè" = literalmente "el café me place a mí".',
-        '"Piace" se usa con sustantivos singulares o infinitivos: mi piace la pasta, mi piace leggere. "Piacciono" se usa con sustantivos plurales: mi piacciono i libri, mi piacciono le vacanze.',
+        'Piacere funciona igual que "gustar" en español: lo que gusta es el SUJETO del verbo, y la persona que siente el gusto va con pronombre indirecto. "Mi piace il caffè" = literalmente "el café me place a mí". Por eso el verbo concuerda con la cosa, no con la persona: "piace" con singular/infinitivo, "piacciono" con plural. Esta es la construcción por persona:',
+      ],
+      table: [
+        ['A quién', 'Pronombre', 'Ejemplo (piace / piacciono)'],
+        ['a mí', 'mi', 'Mi piace la pasta / Mi piacciono i libri'],
+        ['a ti', 'ti', 'Ti piace / Ti piacciono'],
+        ['a él / ella', 'gli / le', 'Gli piace / Le piacciono'],
+        ['a nosotros', 'ci', 'Ci piace / Ci piacciono'],
+        ['a vosotros', 'vi', 'Vi piace / Vi piacciono'],
+        ['a ellos/as', 'gli', 'Gli piace / Gli piacciono'],
       ],
     },
     {
       heading: 'Verbos que funcionan como piacere',
       paragraphs: [
-        'Varios verbos italianos funcionan con la misma estructura invertida: dispiacere (lamentar), mancare (echar de menos/faltar), interessare (interesar), servire (necesitar), bastare (bastar), sembrare (parecer). Todos siguen la misma lógica: la cosa es el sujeto.',
+        'Varios verbos usan la misma estructura invertida (la cosa es el sujeto, la persona va en pronombre indirecto). Los más frecuentes en A2:',
+      ],
+      table: [
+        ['Verbo', 'Significado', 'Ejemplo'],
+        ['mancare', 'echar de menos / faltar', 'Mi manca casa.'],
+        ['servire', 'necesitar / hacer falta', 'Mi serve aiuto.'],
+        ['interessare', 'interesar', 'Mi interessa l\'arte.'],
+        ['sembrare', 'parecer', 'Mi sembra giusto.'],
+        ['bastare', 'bastar', 'Mi basta poco.'],
+        ['dispiacere', 'lamentar / sentir', 'Mi dispiace molto.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se usa el verbo piacere en italiano?',
+      paragraphs: [
+        'Con un pronombre indirecto (mi, ti, gli, le, ci, vi) + piace/piacciono + la cosa que gusta: "Mi piace la musica", "Ti piacciono i gatti". La cosa es el sujeto, así que el verbo concuerda con ella. Para nombrar a la persona explícitamente se usa "a": "A Marco piace il calcio".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se dice "piace" y cuándo "piacciono"?',
+      paragraphs: [
+        '"piace" con un sujeto singular o con un infinitivo: "Mi piace il caffè", "Mi piace leggere". "piacciono" con un sujeto plural: "Mi piacciono i dolci", "Ti piacciono le lingue". Concuerda siempre con la cosa que gusta, nunca con la persona.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el passato prossimo de piacere?',
+      paragraphs: [
+        'Con essere, así que el participio concuerda con la cosa que gustó: "Mi è piaciuto il film" (masc. sing.), "Mi è piaciuta la festa" (fem. sing.), "Mi sono piaciuti i libri" (masc. pl.), "Mi sono piaciute le foto" (fem. pl.).',
       ],
     },
   ],
@@ -124,7 +159,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntando a un grupo.',
             lines: [['', 'Vi ___ la musica classica?']],
-            options: ['piace', 'piacciono', 'piacete', 'piacete'],
+            options: ['piace', 'piacciono', 'piacete'],
             answer: 'piace',
             explain: '"La musica classica" = singular → piace.',
           },
@@ -186,7 +221,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe el verbo correcto (piace, piacciono, manca, mancano, serve, interessa).',
         type: 'freeText',
         scene: 'Un estudiante describe sus gustos e intereses.',
-        text: 'Mi ___ studiare le lingue. / Mi ___ i libri di avventura. / Mi ___ un dizionario. / Mi ___ la pizza napoletana. / Non mi ___ le matematiche.',
+        text: 'Mi [[0]] studiare le lingue. / Mi [[1]] i libri di avventura. / Mi [[2]] un dizionario. / Mi [[3]] la pizza napoletana. / Non mi [[4]] le matematiche.',
         blanks: [
           { answer: 'piace', explain: '"studiare" = infinitivo singular → piace.' },
           { answer: 'piacciono', explain: '"i libri" = plural → piacciono.' },

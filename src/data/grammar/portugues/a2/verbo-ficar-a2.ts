@@ -68,6 +68,32 @@ const topic: GrammarTopic = {
         'En el pretérito imperfeito, "ficar" es regular: ficava, ficava, ficávamos, ficavam. Útil para expresar: "Quando era criança, ficava em casa da vovó aos fins de semana."',
       ],
     },
+    {
+      heading: '¿Qué significa el verbo "ficar" en portugués?',
+      paragraphs: [
+        'No tiene una sola traducción: según el contexto equivale a "quedar(se)", "estar situado", "ponerse/volverse" o "permanecer". Esta tabla resume sus usos principales con un ejemplo cada uno:',
+      ],
+      table: [
+        ['Uso', 'Traducción', 'Ejemplo'],
+        ['ubicación de un lugar', 'quedar / estar situado', 'O banco fica no centro.'],
+        ['cambio de estado', 'ponerse / quedarse', 'Fiquei feliz.'],
+        ['sensación (ficar com)', 'quedarse con', 'Fiquei com fome.'],
+        ['permanencia', 'quedarse', 'Vou ficar em casa.'],
+        ['continuidad (ficar + ger.)', 'seguir / quedarse …ndo', 'Ficou estudando.'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "ficar" y "estar" para ubicación en portugués?',
+      paragraphs: [
+        'Para lugares fijos y permanentes (edificios, ciudades, calles) el portugués prefiere "ficar": "O museu fica no centro", "Onde fica a farmácia?". "Estar" se reserva para la ubicación temporal de personas o cosas movibles: "A chave está na mesa", "Ela está no trabalho". Decir "o museu está no centro" no es agramatical, pero suena menos natural que "fica". Regla práctica: si el sitio no se mueve, usa "ficar"; si es la posición pasajera de alguien o algo, usa "estar".',
+      ],
+    },
+    {
+      heading: '¿Qué significa "ficar com" en portugués?',
+      paragraphs: [
+        '"Ficar com + sustantivo" expresa una sensación o estado que sobreviene: "ficar com fome" (entrar hambre), "ficar com sede", "ficar com medo", "ficar com raiva", "ficar com saudade" (entrar la nostalgia). Es un giro muy brasileño que en español se traduce por "quedarse con", "entrarle a uno" o simplemente "tener": "Fiquei com fome" = me entró hambre / me quedé con hambre. También significa "quedarse con algo" en sentido material ("Fica com o troco", quédate con el cambio) e, informalmente, "liarse con alguien" ("Ela ficou com ele na festa").',
+      ],
+    },
   ],
 
   visual: {
@@ -128,14 +154,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La ubicación',
-            lines: [['David', 'O hotel ___ do outro lado da praça central.']],
+            lines: [['Bruno', 'O hotel ___ do outro lado da praça central.']],
             options: ['fica', 'está', 'é', 'vem'],
             answer: 'fica',
             explain: '"Fica" para localización permanente de establecimientos.',
           },
           {
             scene: 'El período',
-            lines: [['Zhanna', 'Ela ___ estudando até a meia-noite para o exame.']],
+            lines: [['Vera', 'Ela ___ estudando até a meia-noite para o exame.']],
             options: ['ficou', 'estava', 'foi', 'tinha'],
             answer: 'ficou',
             explain: '"Ficar + gerúndio" para acción que continúa: "ficou estudando" (se quedó estudiando).',

@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '만 y 도: las partículas enfáticas del coreano',
+      heading: '¿Qué significan las partículas 만 y 도 en coreano?',
       paragraphs: [
         '만 (man) y 도 (do) son partículas que añaden matiz a los sustantivos. 만 marca exclusividad ("solo X"), 도 marca inclusión ("también X"). La clave es que reemplazan las partículas básicas de sujeto y objeto: "저만 왔어요" (solo yo vine) = 저 + 만 (reemplaza 이/가); "저도 왔어요" (yo también vine) = 저 + 도 (reemplaza 이/가).',
         'Cuando el sustantivo lleva otras partículas como 에, 에서, 에게, las partículas enfáticas van DESPUÉS: "학교에서만" (solo en la escuela), "친구한테도" (también a mi amigo). El orden es siempre: N + partícula locativa + 만/도.',
       ],
     },
     {
-      heading: 'Negación con 만 y 도',
+      heading: '¿Cómo se combinan 만 y 도 con la negación en coreano?',
       paragraphs: [
         'Con negación, 만 y 도 producen significados distintos: "저만 안 왔어요" = solo yo no vine (todos los demás sí); "저도 안 왔어요" = yo tampoco vine. En español sería la diferencia entre "solo yo no fui" y "yo tampoco fui".',
         '도 con negación crea "tampoco": "그 영화도 안 봤어요" = tampoco vi esa película. Es un patrón muy frecuente en coreano: "나도 몰라요" (yo tampoco sé).',
+      ],
+    },
+    {
+      heading: '¿Las partículas 만 y 도 reemplazan a 은/는/이/가 en coreano?',
+      paragraphs: [
+        'Sí, 만 (man, "solo") y 도 (do, "también/tampoco") sustituyen a las partículas de tema/sujeto 은/는/이/가 y también a la de objeto 을/를 cuando aparecen: 저도 가요 (yo también voy, no "저는도"), 물만 마셔요 (solo bebo agua, no "물을만"). En cambio, con partículas de lugar o instrumento sí conviven: 학교에서만 (solo en la escuela), 집에도 (también en casa). 도 con verbo negativo significa "tampoco/ni siquiera": 물도 안 마셔요 (ni siquiera bebo agua). La trampa para el hispanohablante es no duplicar partículas: cuando uses 만 o 도, quita la 은/는/이/가/을/를 que pondrías normalmente.',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con 만 o 도 según el contexto.',
         type: 'guidedText',
         scene: '유나가 자기소개를 해요.',
-        text: '저는 한국어[[0]] 공부해요. 영어[[1]] 조금 해요. 한국 드라마[[2]] 봐요. 요리[[1]] 좋아해요. 주말에[[0]] 시간이 있어요.',
+        text: '저는 한국어[[0]] 공부해요. 영어[[1]] 조금 해요. 한국 드라마[[2]] 봐요. 요리[[3]] 좋아해요. 주말에[[4]] 시간이 있어요.',
         blanks: [
           { options: ['만', '도', '을', '는'], answer: '만', explain: '"한국어만" = solo coreano (en exclusivo).' },
           { options: ['도', '만', '를', '이'], answer: '도', explain: '"영어도" = también inglés (inclusión).' },
@@ -185,7 +191,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe 만 o 도 en el espacio correcto.',
         type: 'freeText',
         scene: '상황에 맞게 만 또는 도를 써 보세요.',
-        text: '저___ 한국어를 배워요. (también) / 한 개___ 샀어요. (solo) / 서울에___ 가 봤어요. (también) / 오늘___ 쉬어요. (solo hoy) / 친구한테___ 말했어요. (solo a él)',
+        text: '저[[0]] 한국어를 배워요. (también) / 한 개[[1]] 샀어요. (solo) / 서울에[[2]] 가 봤어요. (también) / 오늘[[3]] 쉬어요. (solo hoy) / 친구한테[[4]] 말했어요. (solo a él)',
         blanks: [
           { answer: '도', explain: '"저도" = yo también.' },
           { answer: '만', explain: '"한 개만" = solo uno.' },

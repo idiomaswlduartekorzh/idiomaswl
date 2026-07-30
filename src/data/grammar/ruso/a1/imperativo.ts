@@ -56,6 +56,20 @@ const topic: GrammarTopic = {
         ['иди', 'идите', '¡Ve! / ¡Vayan!'],
       ],
     },
+    {
+      heading: '¿Cómo se forma el imperativo formal e informal?',
+      paragraphs: [
+        'El imperativo tiene dos formas según a quién te dirijas. La informal (a ты) parte de la raíz del presente: si termina en vocal, se añade -й (читать→читай = lee, читают→читай); si termina en consonante, se añade -и (говорить→говори = habla, писать→пиши). La formal o plural (a вы) añade -те a la forma informal: читайте, говорите, пишите.',
+        'La trampa para el hispanohablante es recordar que -те marca el respeto o el plural, igual que la diferencia tú/usted: Читай (a un amigo) frente a Читайте (a un desconocido o a varias personas). El acento suele recaer en la terminación en muchos verbos (говорИ, пишИ).',
+      ],
+    },
+    {
+      heading: '¿Cómo se hace el imperativo negativo y qué aspecto se usa?',
+      paragraphs: [
+        'El imperativo negativo se forma anteponiendo не: Не кури (no fumes), Не опаздывайте (no lleguen tarde). Un punto clave del ruso es el aspecto: para una orden POSITIVA puntual se prefiere el perfectivo (Прочитай текст = lee el texto [entero]), pero para una PROHIBICIÓN se usa casi siempre el imperfectivo (Не читай это = no leas eso).',
+        'La trampa para el hispanohablante es que el mismo verbo cambia de aspecto según sea orden o prohibición: Закрой дверь (cierra la puerta, perfectivo) pero Не закрывай дверь (no cierres la puerta, imperfectivo). En A1 basta reconocer el patrón; con не, el imperfectivo es lo natural.',
+      ],
+    },
   ],
   visual: {
     mode: 'paradigm',
@@ -111,7 +125,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige los imperativos correctos en un contexto de clase.',
         type: 'guidedText',
-        scene: 'Primera clase de ruso con David en WeLearn',
+        scene: 'Primera clase de ruso con Hugo en WeLearn',
         text: 'Дэвид говорит: «[[0]] внимательно!» (¡Escuchen con atención!) Потом: «[[1]] это слово». (Repitan esta palabra.) «[[2]] в тетради». (Escriban en el cuaderno.) Студент спрашивает: «Можно [[3]] вопрос?» (¿Puedo hacer una pregunta?) «Конечно! [[4]] всё, что хочешь». (¡Por supuesto! Pregunta todo lo que quieras.)',
         blanks: [
           { options: ['Слушайте', 'Слушай', 'Слушает', 'Слушайте-ка'], answer: 'Слушайте', explain: 'Al grupo de estudiantes → вам: слушайте.' },

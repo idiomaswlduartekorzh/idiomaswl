@@ -59,6 +59,20 @@ const topic: GrammarTopic = {
         ['они', 'будут', 'Они будут учиться (Van a estudiar)'],
       ],
     },
+    {
+      heading: '¿Cómo se conjuga быть en futuro?',
+      paragraphs: [
+        'El verbo быть (ser/estar/haber) no tiene presente pero sí un futuro propio que se usa muchísimo: я буду, ты будешь, он/она будет, мы будем, вы будете, они будут. Sirve para "estaré/habrá": Завтра я буду дома (mañana estaré en casa), Там будет концерт (allí habrá un concierto).',
+        'Además, буду/будешь... es la pieza clave del futuro imperfectivo: se combina con el infinitivo imperfectivo para expresar acciones futuras en proceso o repetidas: Я буду читать (leeré / estaré leyendo). La trampa para el hispanohablante es que быть no aparece en presente (Я дома = estoy en casa, sin verbo) pero reaparece obligatoriamente en pasado (был) y en futuro (буду).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre el futuro imperfectivo y el perfectivo?',
+      paragraphs: [
+        'El ruso expresa el futuro de dos maneras según el aspecto. El futuro IMPERFECTIVO (acción en proceso, repetida o sin final marcado) se forma con буду/будешь... + infinitivo imperfectivo: Я буду писать письмо (estaré escribiendo la carta). El futuro PERFECTIVO (acción única con resultado completo) NO usa быть: se conjuga el propio verbo perfectivo en presente, pero con sentido futuro: Я напишу письмо (escribiré la carta [y la terminaré]).',
+        'La trampa para el hispanohablante es que una forma que "parece presente" (напишу, de написать) en realidad significa futuro por ser perfectiva. La elección entre буду писать y напишу no es de tiempo, sino de aspecto: proceso vs resultado.',
+      ],
+    },
   ],
   visual: {
     mode: 'table-drill',
@@ -116,11 +130,11 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la forma correcta del futuro con быть.',
         type: 'guidedText',
-        scene: 'Los planes de David para el próximo año',
-        text: 'В следующем году Дэвид [[0]] работать в Сеуле. (David va a trabajar en Seúl.) Он [[1]] учить корейский каждый день. (Va a estudiar coreano cada día.) Его студенты [[2]] готовиться к экзамену TOPIK. (Sus estudiantes van a prepararse.) Мы [[3]] встречаться по пятницам. (Nos vamos a ver los viernes.) Жанна [[4]] помогать онлайн. (Zhanna va a ayudar online.)',
+        scene: 'Los planes de Tomás para el próximo año',
+        text: 'В следующем году Дэвид [[0]] работать в Сеуле. (Tomás va a trabajar en Seúl.) Он [[1]] учить корейский каждый день. (Va a estudiar coreano cada día.) Его студенты [[2]] готовиться к экзамену TOPIK. (Sus estudiantes van a prepararse.) Мы [[3]] встречаться по пятницам. (Nos vamos a ver los viernes.) Жанна [[4]] помогать онлайн. (Iris va a ayudar online.)',
         blanks: [
           { options: ['будет', 'буду', 'будем', 'будут'], answer: 'будет', explain: 'Дэвид (он) → будет. Tercera persona singular.' },
-          { options: ['будет', 'буду', 'будем', 'будут'], answer: 'будет', explain: 'Он (David) → будет. Aprendizaje futuro.' },
+          { options: ['будет', 'буду', 'будем', 'будут'], answer: 'будет', explain: 'Он (Tomás) → будет. Aprendizaje futuro.' },
           { options: ['будет', 'буду', 'будут', 'будем'], answer: 'будут', explain: 'Студенты (они) → будут. Tercera persona plural.' },
           { options: ['будем', 'будут', 'будет', 'буду'], answer: 'будем', explain: 'Мы → будем. Primera persona plural.' },
           { options: ['будет', 'буду', 'будут', 'будем'], answer: 'будет', explain: 'Жанна (она) → будет. Tercera persona singular.' },
@@ -150,7 +164,7 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           { scene: 'Planes para el año que viene', prompt: 'Traduce al ruso: "El próximo año voy a vivir en Corea y voy a estudiar coreano." (в следующем году = el próximo año, жить = vivir, учить = estudiar)', answer: 'В следующем году я буду жить в Корее и буду учить корейский.', accepted: ['буду жить', 'буду учить'], explain: 'Я буду жить + я буду учить. Dos planes futuros con буду + infinitivo.' },
-          { scene: 'Predicción', prompt: 'Traduce al ruso: "David va a ser un famoso profesor de idiomas. Sus estudiantes van a hablar muchos idiomas." (знаменитый = famoso, преподаватель = profesor)', answer: 'Дэвид будет знаменитым преподавателем языков. Его студенты будут говорить на многих языках.', accepted: ['будет', 'будут говорить'], explain: 'Будет + sustantivo (seré). Будут говорить = van a hablar (futuro con inf).' },
+          { scene: 'Predicción', prompt: 'Traduce al ruso: "Tomás va a ser un famoso profesor de idiomas. Sus estudiantes van a hablar muchos idiomas." (знаменитый = famoso, преподаватель = profesor)', answer: 'Дэвид будет знаменитым преподавателем языков. Его студенты будут говорить на многих языках.', accepted: ['будет', 'будут говорить'], explain: 'Будет + sustantivo (seré). Будут говорить = van a hablar (futuro con inf).' },
           { scene: 'Pregunta y respuesta', prompt: 'Escribe en ruso: "¿Qué vas a hacer mañana? — Voy a trabajar por la mañana y por la tarde voy a aprender ruso." (утром = por la mañana, вечером = por la tarde)', answer: 'Что ты будешь делать завтра? — Утром я буду работать, а вечером я буду учить русский.', accepted: ['будешь делать', 'буду работать', 'буду учить'], explain: 'Будешь делать (pregunta). Буду работать + буду учить (respuesta con dos planes).' },
           { scene: 'Promesas', prompt: 'Escribe en ruso 3 "promesas" de aprendizaje de idiomas: "Voy a estudiar cada día. Voy a hablar más. Nunca voy a rendirme." (сдаваться = rendirse)', answer: 'Я буду учиться каждый день. Я буду говорить больше. Я никогда не буду сдаваться.', accepted: ['буду учиться', 'буду говорить', 'не буду сдаваться'], explain: 'Tres formas con буду + inf. Никогда не буду = nunca voy a (doble negación).' },
         ],

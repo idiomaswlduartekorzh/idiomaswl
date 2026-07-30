@@ -64,6 +64,24 @@ const topic: GrammarTopic = {
         'En A1 la más importante es How old are you? porque la edad en inglés NO usa have (error frecuente: "How many years do you have?"). Siempre: How old are you? I am 25 years old.',
       ],
     },
+    {
+      heading: '¿Cuáles son las palabras interrogativas (wh-) en inglés?',
+      paragraphs: [
+        'What (qué), who (quién), where (dónde), when (cuándo), why (por qué), which (cuál), whose (de quién), how (cómo) y sus combinaciones (how much, how many, how old). Abren preguntas de información, a diferencia de las preguntas yes/no.',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas con wh- en inglés?',
+      paragraphs: [
+        'Palabra wh- + auxiliar + sujeto + verbo: "Where do you live?", "What is she doing?", "When did they arrive?". El auxiliar (do/does/did, is/are, can…) depende del tiempo y del verbo. La palabra wh- va siempre al principio.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "what" y "which"?',
+      paragraphs: [
+        '"what" pregunta de forma abierta, sin opciones limitadas ("What do you want?"). "which" pregunta eligiendo entre un grupo conocido ("Which one do you want, the red or the blue?"). Si hay opciones concretas a la vista, se usa "which".',
+      ],
+    },
   ],
   visual: {
     mode: 'question-map',
@@ -89,7 +107,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Conociendo a alguien',
-            lines: [['David', '___ is your name?']],
+            lines: [['Hugo', '___ is your name?']],
             options: ['What', 'Where', 'Who', 'When'],
             answer: 'What',
             explain: '"What is your name?" — What pregunta por información/cosas.',
@@ -170,10 +188,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sobre la profesión',
-            lines: [['Carlos', '[[0]] [[1]] David do for work?']],
+            lines: [['Carlos', '[[0]] [[1]] Hugo do for work?']],
             blanks: [
               { options: ['What', 'Where', 'How'], answer: 'What', explain: 'What do you do = profesión.' },
-              { options: ['does', 'do', 'is'], answer: 'does', explain: 'David = he → does (3.ª persona).' },
+              { options: ['does', 'do', 'is'], answer: 'does', explain: 'Hugo = he → does (3.ª persona).' },
             ],
           },
           {
@@ -193,7 +211,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la palabra WH correcta para completar el diálogo de presentación.',
         type: 'guidedText',
         scene: 'Primera clase en WeLearn — diálogo de presentación',
-        text: '— [[0]] is your name? — My name is Carlos. — [[1]] are you from? — I\'m from Medellín. — [[2]] do you do? — I\'m a student. — [[3]] old are you? — I\'m 22. — [[4]] does your English class start? — At 7 p.m. — [[5]] is your teacher? — Her name is Zhanna.',
+        text: '— [[0]] is your name? — My name is Carlos. — [[1]] are you from? — I\'m from Medellín. — [[2]] do you do? — I\'m a student. — [[3]] old are you? — I\'m 22. — [[4]] does your English class start? — At 7 p.m. — [[5]] is your teacher? — Her name is Vera.',
         blanks: [
           { options: ['What', 'Where', 'Who'], answer: 'What', explain: 'What is your name? — nombre.' },
           { options: ['Where', 'What', 'When'], answer: 'Where', explain: 'Where are you from? — procedencia.' },
@@ -243,10 +261,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando la profesión',
-            prompt: 'Forma una pregunta: What / David / does / do?',
-            answer: 'What does David do?',
-            accepted: ['what does david do', 'what does david do?'],
-            explain: 'What does David do? — present simple, 3.ª persona.',
+            prompt: 'Forma una pregunta: What / Hugo / does / do?',
+            answer: 'What does Hugo do?',
+            accepted: ['what does hugo do', 'what does hugo do?'],
+            explain: 'What does Hugo do? — present simple, 3.ª persona.',
           },
           {
             scene: 'Preguntando la edad',

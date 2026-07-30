@@ -93,6 +93,24 @@ const topic: GrammarTopic = {
         'También es común colocar el adverbio entre el verbo y el objeto: "She reads quickly the book" — incorrecto. El adverbio va después del objeto: "She reads the book quickly."',
       ],
     },
+    {
+      heading: '¿Cómo se forman los adverbios de modo en inglés?',
+      paragraphs: [
+        'Se añade -ly al adjetivo: quick → quickly, slow → slowly, careful → carefully. Los adjetivos en -y cambian a -ily (happy → happily); los en -le pierden la e (simple → simply). Describen CÓMO se hace algo: "She sings beautifully".',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los adverbios de modo irregulares en inglés?',
+      paragraphs: [
+        'Algunos no añaden -ly: good → well (bien), fast → fast (igual), hard → hard (igual). Cuidado: "hardly" no es el adverbio de "hard", significa "apenas". "He works hard" (mucho) vs "He hardly works" (apenas).',
+      ],
+    },
+    {
+      heading: '¿Dónde se colocan los adverbios de modo en inglés?',
+      paragraphs: [
+        'Normalmente después del verbo o del objeto: "She speaks English fluently", "He drives carefully". No van entre el verbo y el objeto directo ("She speaks fluently English" es incorrecto).',
+      ],
+    },
   ],
 
   visual: {
@@ -160,7 +178,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando de alguien tímido',
             lines: [['', 'She answered the question ___ — she wasn\'t sure if she was right.']],
-            options: ['nervously', 'nervous', 'nervously', 'nerveously'],
+            options: ['nervously', 'nervous', 'nerveously'],
             answer: 'nervously',
             explain: '"Nervous" (adj) + -ly → "nervously".',
           },

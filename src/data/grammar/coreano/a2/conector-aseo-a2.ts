@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Limitacion importante: no con mandatos',
+      heading: '¿Por qué -(아/어)서 no se usa con mandatos?',
       paragraphs: [
         'A diferencia de -(으)니까 y -(으)면, la terminacion -(아/어)서 NO puede usarse antes de mandatos (imperativo) ni de propuestas con -(아/어)요. Esta es una regla crucial que confunde a muchos estudiantes.',
         'Correcto: 피곤하니까 쉬세요 (Como estas cansado, descansa). Incorrecto: ✗피곤해서 쉬세요. Sin embargo, si se puede usar con oraciones declarativas: 피곤해서 쉬었어요 (Estaba cansado, asi que descanse).',
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Razon vs secuencia: ¿como distinguirlos?',
+      heading: '¿Cómo se distingue razón de secuencia con -(아/어)서?',
       paragraphs: [
         'Con verbos de movimiento (가다, 오다, 나가다) -(아/어)서 casi siempre expresa secuencia: 학교에 가서 공부했어요 (Fui al colegio y estudie). Con adjetivos, expresa casi siempre razon: 날씨가 좋아서 기분이 좋아요 (El clima esta bien, por eso me siento bien).',
         'El contexto y el tipo de verbo te guian: si la primera clausula describe un estado o emocion, es causa. Si describe un desplazamiento o preparacion, es secuencia.',
@@ -103,7 +103,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Cansancio despues del trabajo',
-            lines: [['David', '일이 많___ 집에 일찍 왔어요. (Habia mucho trabajo, asi que vine a casa temprano.)']],
+            lines: [['Iván', '일이 많___ 집에 일찍 왔어요. (Habia mucho trabajo, asi que vine a casa temprano.)']],
             options: ['아서', '어서', '해서', '이서'],
             answer: '아서',
             explain: '많다 → raiz 많, ultima vocal ㅏ → 많아서.',
@@ -138,7 +138,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preparando clase',
-            lines: [['Zhanna', '공부를 ___ (하다) 시험을 잘 봤어요. (Estudie y sali bien en el examen.)']],
+            lines: [['Emma', '공부를 ___ (하다) 시험을 잘 봤어요. (Estudie y sali bien en el examen.)']],
             options: ['해서', '하아서', '하어서', '하서'],
             answer: '해서',
             explain: '하다 → forma especial: 해서 (no 하아서). Siempre 해서.',
@@ -169,9 +169,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planes del fin de semana',
             lines: [
-              ['Carlos', '이번 주말에 뭐 해요? (¿Que haces este fin de semana?)'],
-              ['David', '시장에 [[0]] (가다) 야채를 [[1]] (사다). (Voy al mercado y compro verduras.)'],
-            ],
+ ['Carlos', '이번 주말에 뭐 해요? (¿Que haces este fin de semana?)'],
+ ['Iván', '시장에 [[0]] (가다) 야채를 [[1]] (사다). (Voy al mercado y compro verduras.)'],
+ ],
             blanks: [
               { options: ['가서', '가아서', '갔어서', '가이서'], answer: '가서', explain: '가다 → 가서. Secuencia: ir → comprar.' },
               { options: ['살 거예요', '샀어요', '사서', '사아요'], answer: '살 거예요', explain: 'Resultado en futuro: 사다 → 살 거예요.' },
@@ -180,9 +180,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Explicando el retraso',
             lines: [
-              ['Zhanna', '왜 늦었어요? (¿Por que llegaste tarde?)'],
-              ['Ana', '길이 [[0]] (막히다) 택시를 못 [[1]] (타다). (El trafico estaba congestionado, asi que no pude tomar un taxi.)'],
-            ],
+ ['Emma', '왜 늦었어요? (¿Por que llegaste tarde?)'],
+ ['Ana', '길이 [[0]] (막히다) 택시를 못 [[1]] (타다). (El trafico estaba congestionado, asi que no pude tomar un taxi.)'],
+ ],
             blanks: [
               { options: ['막혀서', '막히서', '막혔어서', '막히아서'], answer: '막혀서', explain: '막히다 → 막혀서 (ㅣ → 어서 → 막혀서).' },
               { options: ['탔어요', '탔습니다', '탈 수 없었어요', '타서'], answer: '탈 수 없었어요', explain: '타다 → 못 탈 수 없었어요 (no pude tomar). O simplemente: 못 탔어요.' },
@@ -191,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preparacion para la fiesta',
             lines: [
-              ['Lina', '파티 준비는 어떻게 됐어요? (¿Como va la preparacion de la fiesta?)'],
-              ['Marco', '마트에 [[0]] (가다) 음식을 [[1]] (준비하다). (Fui al supermercado y prepare la comida.)'],
-            ],
+ ['Lina', '파티 준비는 어떻게 됐어요? (¿Como va la preparacion de la fiesta?)'],
+ ['Marco', '마트에 [[0]] (가다) 음식을 [[1]] (준비하다). (Fui al supermercado y prepare la comida.)'],
+ ],
             blanks: [
               { options: ['가서', '가아서', '갔어서', '가해서'], answer: '가서', explain: '가다 → 가서. Secuencia de acciones.' },
               { options: ['준비했어요', '준비해서', '준비하아서', '준비하이서'], answer: '준비했어요', explain: 'Resultado final: 준비하다 → 준비했어요.' },
@@ -202,9 +202,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Motivo del descanso',
             lines: [
-              ['David', '오늘 왜 수업을 안 들었어요? (¿Por que no asististe a clase hoy?)'],
-              ['Sofia', '몸이 [[0]] (아프다) 쉬었어요. 내일은 [[1]] (오다) 꼭 들을게요. (Estaba enfermo, asi que descanse. Manana vendré seguro.)'],
-            ],
+ ['Iván', '오늘 왜 수업을 안 들었어요? (¿Por que no asististe a clase hoy?)'],
+ ['Sofia', '몸이 [[0]] (아프다) 쉬었어요. 내일은 [[1]] (오다) 꼭 들을게요. (Estaba enfermo, asi que descanse. Manana vendré seguro.)'],
+ ],
             blanks: [
               { options: ['아파서', '아프어서', '아프해서', '아파아서'], answer: '아파서', explain: '아프다 → ㅡ irregular: 아파서 (vocal ㅏ).' },
               { options: ['와서', '오아서', '왔어서', '오서'], answer: '와서', explain: '오다 → 와서 (ㅗ + 아서 = 와서, contraccion).' },
@@ -218,7 +218,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el texto con la forma correcta de -(아/어)서.',
         type: 'guidedText',
-        scene: 'El dia de David en Bucaramanga',
+        scene: 'El dia de Iván en Bucaramanga',
         text: '오늘 아침에 일찍 일어나[[0]] 조깅을 했어요. 그다음에 집에 돌아[[1]] 샤워를 했어요. 날씨가 맑[[2]] 기분이 정말 좋았어요. 카페에 [[3]] (가다) 커피를 마시면서 수업을 준비했어요. 학생들이 열심히 공부[[4]] 뿌듯했어요.',
         blanks: [
           { options: ['서', '아서', '어서', '해서'], answer: '서', explain: '일어나다 → 일어나 + 아서 → 일어나서 (contraccion).' },
@@ -235,7 +235,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma -(아/어)서 correcta para cada verbo indicado.',
         type: 'freeText',
         scene: 'Rutina diaria de una estudiante coreana',
-        text: '학교에 ___ (가다) 친구들을 만났어요. / 점심을 ___ (먹다) 도서관에 갔어요. / 피곤___ (피곤하다) 커피를 마셨어요. / 숙제를 ___ (하다) 음악을 들었어요. / 집에 ___ (오다) 바로 잤어요.',
+        text: '학교에 [[0]] (가다) 친구들을 만났어요. / 점심을 [[1]] (먹다) 도서관에 갔어요. / 피곤[[2]] (피곤하다) 커피를 마셨어요. / 숙제를 [[3]] (하다) 음악을 들었어요. / 집에 [[4]] (오다) 바로 잤어요.',
         blanks: [
           { answer: '가서', explain: '가다 → 가 + 아서 → 가서.' },
           { answer: '먹어서', explain: '먹다 → 먹 + 어서 → 먹어서.' },

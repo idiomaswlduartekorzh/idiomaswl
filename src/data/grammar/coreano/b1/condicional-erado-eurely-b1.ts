@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia entre -면 (si) y -더라도 (aunque)',
+      heading: '¿Cuál es la diferencia entre -(으)면 y -더라도?',
       paragraphs: [
         '-면 es condicional simple: describe relación de causa-efecto lógica. "-면" = "si ocurre A, ocurre B como resultado". 비가 오면 안 가요 (si llueve, no voy). Es lógico: lluvia → no ir.',
         '-더라도 es condicional concesivo: la consecuencia se mantiene A PESAR de la condición. "비가 와도 가요" (aunque llueva, voy). El énfasis está en que la lluvia no te detiene.',
       ],
     },
     {
-      heading: 'Uso con verbos y adjetivos',
+      heading: '¿Cómo se usa -더라도 con verbos y adjetivos?',
       paragraphs: [
         'Con verbos: 가다 → 가더라도 (aunque vaya), 먹다 → 먹더라도 (aunque coma), 연락하다 → 연락하더라도 (aunque contacte).',
         'Con adjetivos: 예쁘다 → 예쁘더라도 (aunque sea bonito), 비싸다 → 비싸더라도 (aunque sea caro), 어렵다 → 어렵더라도 (aunque sea difícil).',
@@ -153,14 +153,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Simple causal vs concesivo',
-            lines: [['', "[[0]]: 비가 오___ 안 가요. (Lógico: lluvia → no voy)"]],
+            lines: [['', " : 비가 오[[0]] 안 가요. (Lógico: lluvia → no voy)"]],
             blanks: [
               { options: ['-면', '-더라도'], answer: '-면', explain: '-면 para relación causal simple.' },
             ],
           },
           {
             scene: 'Concesión vs causal',
-            lines: [['', "[[0]]: 비가 와___ 가겠어요. (Concesión: aunque llueva, voy)"]],
+            lines: [['', " : 비가 와[[0]] 가겠어요. (Concesión: aunque llueva, voy)"]],
             blanks: [
               { options: ['-면', '-더라도'], answer: '-더라도', explain: '-더라도 para concesión.' },
             ],
@@ -174,7 +174,7 @@ const topic: GrammarTopic = {
         intro: 'Completa un párrafo con condicionales concesivos.',
         type: 'guidedText',
         scene: 'Expresión de determinación a pesar de obstáculos.',
-        text: '아무리 바쁘___ 약속은 지킬 거예요. 돈이 없___ 꿈을 포기 안 할 거예요. 남들이 반대___ 내 길을 갈 거예요. 얼마나 어렵___ 절대 포기 안 해요.',
+        text: '아무리 바쁘[[0]] 약속은 지킬 거예요. 돈이 없[[1]] 꿈을 포기 안 할 거예요. 남들이 반대[[2]] 내 길을 갈 거예요. 얼마나 어렵[[3]] 절대 포기 안 해요.',
         blanks: [
           { options: ['-더라도', '-면', '-고도'], answer: '-더라도', explain: 'Concesión: aunque esté ocupado, mantendré la cita.' },
           { options: ['-더라도', '-면', '-더니'], answer: '-더라도', explain: 'Concesión: aunque no tenga dinero, no abandonaré el sueño.' },

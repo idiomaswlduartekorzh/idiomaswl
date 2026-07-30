@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '얼마나: el adverbio de grado más versátil del coreano',
+      heading: '¿Qué significa 얼마나 en coreano?',
       paragraphs: [
         '얼마나 es el equivalente coreano de "¿cuánto?", "¿qué tan...?" y "¿cuánto tiempo?". Es uno de los adverbios interrogativos más frecuentes en el coreano cotidiano. "얼마나 걸려요?" (¿Cuánto se tarda?) es una de las preguntas más útiles que aprenderás en nivel A2.',
         'Con adjetivos: "얼마나 멀어요?" (¿Qué tan lejos está?), "얼마나 어려워요?" (¿Qué tan difícil es?), "얼마나 좋아요?" (¿Qué tan bueno es?). La estructura es directa: 얼마나 + adjetivo conjugado + ?',
       ],
     },
     {
-      heading: '얼마나 걸려요 y otras expresiones de tiempo',
+      heading: '¿Cómo se pregunta cuánto tarda algo en coreano (얼마나 걸려요)?',
       paragraphs: [
         '"얼마나 걸려요?" se usa para preguntar el tiempo necesario para hacer algo o llegar a algún lugar. Respuesta típica: "한 시간쯤 걸려요" (tarda aproximadamente una hora). "얼마나 됐어요?" pregunta cuánto tiempo ha pasado desde que algo ocurrió: "한국에 온 지 얼마나 됐어요?" (¿Cuánto tiempo llevas en Corea?).',
         'En oraciones subordinadas, 얼마나 se combina con -는지 / -(으)ㄴ지 / -(으)ㄹ지 para expresar "cuánto... (indirecto)": "얼마나 비싼지 몰라요" (No sé cuánto cuesta), "얼마나 걸리는지 알아요?" (¿Sabes cuánto se tarda?).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre 얼마나 y 얼마예요 en coreano?',
+      paragraphs: [
+        '얼마나 (eolmana) pregunta por el GRADO o la cantidad de una acción o cualidad ("cuánto de..."): 얼마나 자주? (¿con qué frecuencia?), 얼마나 걸려요? (¿cuánto tarda?), 얼마나 멀어요? (¿qué tan lejos está?). 얼마 (eolma), en cambio, pregunta por el PRECIO: 얼마예요? (¿cuánto cuesta?), 이거 얼마예요? (¿cuánto vale esto?). La trampa para el hispanohablante es que en español "cuánto" cubre ambos; en coreano hay que distinguir: para dinero, 얼마; para grado/duración/frecuencia, 얼마나. Y 얼마나 suele acompañar a un adjetivo o adverbio (얼마나 비싸요? = ¿qué tan caro es?), mientras 얼마 va solo con el verbo 이다.',
       ],
     },
   ],
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la pregunta correcta con 얼마나.',
         type: 'freeText',
         scene: '얼마나 표현을 완성하세요.',
-        text: '집에서 역까지 얼마나 ___? (cuánto tarda) / 한국어를 배운 지 얼마나 ___? (cuánto tiempo) / 그 가방이 얼마나 ___? (qué tan caro) / 얼마나 ___ 운동해요? (con qué frecuencia)',
+        text: '집에서 역까지 얼마나 [[0]]? (cuánto tarda) / 한국어를 배운 지 얼마나 [[1]]? (cuánto tiempo) / 그 가방이 얼마나 [[2]]? (qué tan caro) / 얼마나 [[3]] 운동해요? (con qué frecuencia)',
         blanks: [
           { answer: '걸려요', explain: '"얼마나 걸려요?" = ¿Cuánto se tarda? (걸리다).' },
           { answer: '됐어요', explain: '"얼마나 됐어요?" = ¿Cuánto tiempo hace? (되다 = llegar a ser).' },

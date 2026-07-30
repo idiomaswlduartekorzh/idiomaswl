@@ -52,7 +52,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación con verbos y adjetivos',
+      heading: '¿Cómo se forma -(으)ㄹ수록 con verbos y adjetivos?',
       paragraphs: [
         'Verbos: 공부하다 → 공부할수록 (cuanto más estudies), 먹다 → 먹을수록 (cuanto más comas). Adjetivos: 많다 → 많을수록 (cuanto más), 크다 → 클수록 (cuanto más grande).',
         'La raíz + -ㄹ se adjunta a sujetos o complementos de la cláusula principal.',
@@ -66,7 +66,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Con negación: proporción inversa',
+      heading: '¿Cómo se expresa la proporción inversa con -(으)ㄹ수록?',
       paragraphs: [
         '"못 잘수록 피곤해요" = cuanto menos duermes, más cansado estás (proporción inversa). La negación invierte la relación pero -ㄹ수록 sigue expresando proporcionalidad.',
         'También: "덜 먹을수록 건강해요" (cuanto menos comas, más sano estás) — la negación o reducción en una variable produce reducción en el resultado.',
@@ -129,7 +129,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con -ㄹ수록 manteniendo lógica proporcional.',
         type: 'guidedText',
         scene: 'Descripción de relaciones causa-efecto proporcionales.',
-        text: '공부할___ 더 많이 알 수 있어요. 나이가 들___ 더 지혜로워져요. 돈이 많___ 행복할까요?',
+        text: '공부할[[0]] 더 많이 알 수 있어요. 나이가 들[[1]] 더 지혜로워져요. 돈이 많[[2]] 행복할까요?',
         blanks: [
           { options: ['수록', '면'], answer: '수록', explain: '-ㄹ수록 para proporcionalidad.' },
           { options: ['수록', '면'], answer: '수록', explain: '-ㄹ수록 con edad.' },

@@ -85,6 +85,24 @@ const topic: GrammarTopic = {
         'En español no existe una forma equivalente exacta; según el contexto se puede traducir como "llevo [tiempo] + gerundio" o "he estado + gerundio". Ej: "I\'ve been waiting for 20 minutes" = "Llevo 20 minutos esperando."',
       ],
     },
+    {
+      heading: '¿Cómo se forma el present perfect continuous en inglés?',
+      paragraphs: [
+        'Con have/has + been + verbo -ing: "I have been working", "she has been studying". Usa "has been" con he/she/it. Se combina con "for" (duración) y "since" (punto de inicio): "I have been waiting for an hour".',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el present perfect continuous?',
+      paragraphs: [
+        'Para acciones que empezaron en el pasado y continúan ahora, con énfasis en la DURACIÓN o el proceso: "I have been learning English for three years". También para explicar un resultado visible: "I\'m tired because I have been running".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre present perfect simple y continuous?',
+      paragraphs: [
+        'El simple pone el foco en el RESULTADO o la cantidad ("I have written three emails"); el continuous, en la DURACIÓN o la actividad ("I have been writing emails all morning"). Los verbos de estado (know, like, be) no van en continuous.',
+      ],
+    },
   ],
 
   visual: {
@@ -189,7 +207,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Un colega curioso',
-            lines: [['Colleague:', 'What [[0]] (you/do) with all those spreadsheets?'], ['You:', 'I [[0]] (analyze) our sales data [[1]] last week.']],
+            lines: [['Colleague:', 'What [[0]] (you/do) with all those spreadsheets?'], ['You:', 'I [[1]] (analyze) our sales data [[2]] last week.']],
             blanks: [
               { options: ['have you been doing', 'have you done', 'are you doing', 'did you do'], answer: 'have you been doing', explain: 'Have you been doing: pregunta por actividad en progreso reciente → present perfect continuous.' },
               { options: ['\'ve been analyzing', '\'ve analyzed', '\'m analyzing', 'analyzed'], answer: '\'ve been analyzing', explain: '\'ve been analyzing: actividad en progreso desde la semana pasada → present perfect continuous.' },

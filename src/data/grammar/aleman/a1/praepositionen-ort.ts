@@ -48,21 +48,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las Wechselpräpositionen: Dativo o Acusativo según el significado',
+      heading: '¿Qué son las Wechselpräpositionen en alemán?',
       paragraphs: [
         'Las nueve preposiciones de lugar más importantes del alemán (in, an, auf, über, unter, neben, vor, hinter, zwischen) se llaman Wechselpräpositionen porque alternan entre dos casos: Dativo para responder ¿Wo? (¿Dónde?) y Acusativo para responder ¿Wohin? (¿A dónde?). En A1 nos centramos en el Dativo (ubicación estática).',
         'Ejemplos comparativos: Das Buch liegt auf dem Tisch (Wo? → Dativ: auf dem). / Ich lege das Buch auf den Tisch (Wohin? → Akkusativ: auf den). La misma preposición "auf" con dos casos distintos según si hay movimiento o no.',
       ],
     },
     {
-      heading: 'Dativo: dem para masculino y neutro, der para femenino',
+      heading: '¿Cómo se declinan las preposiciones de lugar en dativo?',
       paragraphs: [
         'En Dativo, el artículo definido cambia: masculino (der) → dem, neutro (das) → dem, femenino (die) → der, plural (die) → den (y los sustantivos plurales añaden -n). Esto es diferente del acusativo donde solo cambiaba el masculino — en dativo TODOS los géneros cambian.',
         'Contracciones habituales en A1: in + dem = im (Das Buch ist im Regal). / an + dem = am (Er hängt am Haken). Estas contracciones son obligatorias — no se dice "in dem" cuando hay artículo definido.',
       ],
     },
     {
-      heading: 'Preposiciones siempre con Dativo',
+      heading: '¿Qué preposiciones van siempre con dativo en alemán?',
       paragraphs: [
         'Además de las Wechselpräpositionen, hay preposiciones que SIEMPRE rigen Dativo (se ven en el tema 19): mit, bei, nach, seit, von, zu, aus, gegenüber. En A1 con preposiciones de lugar, es suficiente dominar las Wechselpräpositionen en su uso estático.',
         'Práctica recomendada: describe objetos en una habitación. Empieza con el artículo definido: "Der Tisch steht in der Ecke. Die Lampe hängt über dem Tisch. Das Buch liegt auf dem Tisch."',
@@ -117,8 +117,8 @@ const topic: GrammarTopic = {
             explain: '"Tasche" = femenino, Dativo → "der Tasche". Die → der en Dativo.',
           },
           {
-            scene: 'Zhanna describe el aula',
-            lines: [['Zhanna', 'Die Lampe hängt über ___ Tisch. (der Tisch, masc.)']],
+            scene: 'Iris describe el aula',
+            lines: [['Iris', 'Die Lampe hängt über ___ Tisch. (der Tisch, masc.)']],
             options: ['dem', 'der', 'den', 'das'],
             answer: 'dem',
             explain: '"Tisch" = masculino, Dativo → "dem Tisch". Der → dem en Dativo.',
@@ -131,8 +131,8 @@ const topic: GrammarTopic = {
             explain: '"Tür" = femenino, Dativo → "der Tür".',
           },
           {
-            scene: 'David trabaja en su oficina',
-            lines: [['', 'David sitzt ___ Büro. (das Büro, neut.)']],
+            scene: 'Tomás trabaja en su oficina',
+            lines: [['', 'Tomás sitzt ___ Büro. (das Büro, neut.)']],
             options: ['im', 'in der', 'in den', 'auf dem'],
             answer: 'im',
             explain: '"im" = in + dem. "Büro" = neutro, Dativo → "dem Büro", contracción: "im Büro".',
@@ -184,8 +184,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna describe el aula de WeLearn',
-            lines: [['Zhanna', 'Das Whiteboard hängt [[0]] [[1]] Wand. (en/pegado a, die Wand, fem.)']],
+            scene: 'Iris describe el aula de WeLearn',
+            lines: [['Iris', 'Das Whiteboard hängt [[0]] [[1]] Wand. (en/pegado a, die Wand, fem.)']],
             blanks: [
               { options: ['an', 'auf', 'über', 'neben'], answer: 'an', explain: '"Pegado a la pared" = "an der Wand".' },
               { options: ['der', 'dem', 'die', 'den'], answer: 'der', explain: '"Wand" = femenino, Dativo → "der Wand".' },
@@ -226,7 +226,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma dativa correcta.',
         type: 'freeText',
         scene: 'Marco describe el aula de WeLearn.',
-        text: 'Die Klasse ist klein. Das Whiteboard ist an ___ Wand (die Wand). [[0]] Die Tische stehen in ___ Mitte (die Mitte, fem.). [[1]] Neben ___ Tür (die Tür) steht ein Regal. [[2]] Über ___ Tischen (die Tische, plural) hängen Lampen. [[3]] Die Bücher liegen auf ___ Tischen (plural). [[4]]',
+        text: 'Die Klasse ist klein. Das Whiteboard ist an [[0]] Wand (die Wand). Die Tische stehen in [[1]] Mitte (die Mitte, fem.). Neben [[2]] Tür (die Tür) steht ein Regal. Über [[3]] Tischen (die Tische, plural) hängen Lampen. Die Bücher liegen auf [[4]] Tischen (plural). ',
         blanks: [
           { answer: 'der', accepted: ['der'], explain: '"Wand" = femenino → Dativo: "der Wand".' },
           { answer: 'der', accepted: ['der'], explain: '"Mitte" = femenino → Dativo: "der Mitte".' },

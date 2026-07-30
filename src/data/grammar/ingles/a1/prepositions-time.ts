@@ -45,7 +45,13 @@ const topic: GrammarTopic = {
       heading: 'In, on, at: las preposiciones de tiempo en inglés A1',
       paragraphs: [
         'Las preposiciones in, on y at son esenciales para hablar de tiempo en inglés. Cada una tiene un contexto específico: at se usa para horas exactas y momentos puntuales, on para días de la semana y fechas, e in para períodos más amplios como meses, años o estaciones.',
-        'El error más frecuente del hispanohablante es mezclarlas, especialmente confundir on con at para días. En español usamos "el lunes" o "a las 7", pero en inglés la preposición es fija: on Monday, at 7 p.m.',
+        'El error más frecuente del hispanohablante es mezclarlas, especialmente confundir on con at para días. En español usamos "el lunes" o "a las 7", pero en inglés la preposición es fija. Esta tabla lo resume:',
+      ],
+      table: [
+        ['Preposición', 'Cuándo se usa', 'Ejemplo'],
+        ['at', 'horas y momentos puntuales', 'at 7 o\'clock, at night, at the weekend'],
+        ['on', 'días y fechas', 'on Monday, on July 5th, on my birthday'],
+        ['in', 'meses, años, estaciones, partes del día', 'in July, in 2026, in summer, in the morning'],
       ],
     },
     {
@@ -60,6 +66,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'La lógica es de especificidad: cuanto más específico el tiempo, más "pequeña" la preposición. At para el momento más preciso (la hora), on para el día, in para el período más amplio (mes, año, estación).',
         'Esta regla te ayuda a decidir: ¿Es una hora exacta? → at. ¿Es un día? → on. ¿Es un mes, año o estación? → in. Con esta lógica evitas el 90% de los errores.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa in, on y at para el tiempo en inglés?',
+      paragraphs: [
+        '"at" para horas y momentos puntuales (at 7, at night, at the weekend); "on" para días y fechas (on Monday, on my birthday); "in" para períodos amplios: meses, años, estaciones y partes del día (in July, in 2026, in the morning). En español todo esto se dice con "a/en/el", por eso hay que memorizar la fija.',
+      ],
+    },
+    {
+      heading: '¿Se dice "on Monday" o "at Monday"?',
+      paragraphs: [
+        '"on Monday". Los días de la semana siempre van con "on", nunca con "at" ni "in": on Monday, on Friday, on weekends. "at" se reserva para las horas (at 3 p.m.) y "in" para períodos largos.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice la hora con preposición en inglés?',
+      paragraphs: [
+        'Con "at": at 7 o\'clock, at half past six, at noon, at midnight. También "at night" (excepción). Las demás partes del día usan "in": in the morning, in the afternoon, in the evening.',
       ],
     },
   ],
@@ -87,7 +111,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Hablando del horario de clase',
-            lines: [['David', 'The class starts ___ 7 p.m.']],
+            lines: [['Gael', 'The class starts ___ 7 p.m.']],
             options: ['at', 'on', 'in'],
             answer: 'at',
             explain: 'at 7 p.m. — hora exacta, siempre at.',
@@ -136,7 +160,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablando del mediodía',
-            lines: [['David', 'Let\'s meet ___ noon.']],
+            lines: [['Gael', 'Let\'s meet ___ noon.']],
             options: ['at', 'in', 'on'],
             answer: 'at',
             explain: 'at noon — momento puntual del día, at.',
@@ -152,7 +176,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Horario de WeLearn',
-            lines: [['David', 'My class is [[0]] [[1]].']],
+            lines: [['Gael', 'My class is [[0]] [[1]].']],
             blanks: [
               { options: ['at', 'on', 'in'], answer: 'at', explain: 'Hora exacta → at.' },
               { options: ['7 p.m.', 'Monday', 'July'], answer: '7 p.m.', explain: 'at 7 p.m. — hora con at.' },
@@ -208,7 +232,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la preposición de tiempo correcta.',
         type: 'freeText',
         scene: 'Agenda personal de un estudiante de WeLearn',
-        text: 'I study English ___ Monday and Thursday. My class is ___ 6 p.m. I was born ___ 1999. I like studying ___ the afternoon. I don\'t study ___ night. My exam is ___ March.',
+        text: 'I study English [[0]] Monday and Thursday. My class is [[1]] 6 p.m. I was born [[2]] 1999. I like studying [[3]] the afternoon. I don\'t study [[4]] night. My exam is [[5]] March.',
         blanks: [
           { answer: 'on', accepted: ['on'], explain: 'on Monday — día de la semana.' },
           { answer: 'at', accepted: ['at'], explain: 'at 6 p.m. — hora exacta.' },

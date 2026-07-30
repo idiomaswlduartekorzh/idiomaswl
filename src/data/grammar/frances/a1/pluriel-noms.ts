@@ -48,14 +48,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El plural en francés: la regla general y las excepciones',
+      heading: '¿Cómo se forma el plural de los sustantivos en francés?',
       paragraphs: [
         'La mayoría de los sustantivos franceses forman el plural añadiendo -s al singular, exactamente igual que en español: "un étudiant → des étudiants", "une ville → des villes", "un professeur → des professeurs". Esta regla abarca la gran mayoría de los sustantivos del idioma.',
         'Sin embargo, hay varios grupos de excepciones importantes que debes conocer desde A1 porque aparecen constantemente: los sustantivos en -al, en -eau y en -eu tienen patrones propios de pluralización.',
       ],
     },
     {
-      heading: '-al → -aux: el cambio más importante',
+      heading: '¿Cómo es el plural de las palabras en -al en francés?',
       paragraphs: [
         'Los sustantivos terminados en -al hacen el plural en -aux: "un journal" → "des journaux" (periódicos), "un animal" → "des animaux" (animales), "un hôpital" → "des hôpitaux" (hospitales), "un cheval" → "des chevaux" (caballos), "un festival" → "des festivals" (excepción: festivales conserva -s).',
         'Esta es la excepción más frecuente y la más importante para el nivel A1. "Journal" y "animal" son palabras de uso diario que aparecerán constantemente.',
@@ -69,7 +69,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Sustantivos que no cambian en plural',
+      heading: '¿Qué sustantivos no cambian en plural en francés?',
       paragraphs: [
         'Si un sustantivo ya termina en -s, -x o -z en singular, no cambia en plural: "un bras → des bras" (brazos), "un choix → des choix" (elecciones), "un nez → des nez" (narices). Solo el artículo y el contexto indican que es plural.',
         'Es importante reconocer este patrón al leer y escuchar, ya que la marca del plural (-s en francés) es muda en pronunciación — "les livres" y "le livre" se distinguen solo por el artículo en la lengua oral.',
@@ -103,8 +103,8 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'Zhanna lista materiales de clase',
-            lines: [['Zhanna', 'Apportez vos ___ demain. (journal)']],
+            scene: 'Vera lista materiales de clase',
+            lines: [['Vera', 'Apportez vos ___ demain. (journal)']],
             options: ['journaux', 'journals', 'journales', 'journeaux'],
             answer: 'journaux',
             explain: '"Journal" termina en -al → plural: "journaux". (-al → -aux)',
@@ -112,13 +112,13 @@ const topic: GrammarTopic = {
           {
             scene: 'Carlos compra en la panadería',
             lines: [['Carlos', 'Je voudrais deux ___. (gâteau)']],
-            options: ['gâteaux', 'gâteaus', 'gâteaux', 'gâtaux'],
+            options: ['gâteaux', 'gâteaus', 'gâtaux'],
             answer: 'gâteaux',
             explain: '"Gâteau" termina en -eau → plural: "gâteaux". (-eau → -eaux)',
           },
           {
-            scene: 'David habla de sus estudiantes',
-            lines: [['David', 'Les ___ de WeLearn sont excellents. (étudiant)']],
+            scene: 'Dario habla de sus estudiantes',
+            lines: [['Dario', 'Les ___ de WeLearn sont excellents. (étudiant)']],
             options: ['étudiants', 'étudianx', 'étudians', 'étudiant'],
             answer: 'étudiants',
             explain: '"Étudiant" → regla general +s: "étudiants".',
@@ -133,7 +133,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Marco organiza la oficina',
             lines: [['Marco', 'Il y a trois ___ dans la salle. (bureau)']],
-            options: ['bureaux', 'bureaus', 'bureaux', 'bureaux'],
+            options: ['bureaux', 'bureaus'],
             answer: 'bureaux',
             explain: '"Bureau" termina en -eau → "bureaux". (-eau → -eaux)',
           },
@@ -152,8 +152,8 @@ const topic: GrammarTopic = {
             explain: '"Cheveu" termina en -eu → "cheveux". (-eu → -eux)',
           },
           {
-            scene: 'David sin artículo',
-            lines: [['David', 'J\'ai des ___ dans mon sac. (bras — ya termina en -s)']],
+            scene: 'Dario sin artículo',
+            lines: [['Dario', 'J\'ai des ___ dans mon sac. (bras — ya termina en -s)']],
             options: ['bras', 'brass', 'brases', 'brasx'],
             answer: 'bras',
             explain: '"Bras" ya termina en -s → no cambia en plural. "Des bras".',
@@ -176,8 +176,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna en la pastelería',
-            lines: [['Zhanna', 'Nous voulons [[0]] [[1]]. (gâteau)']],
+            scene: 'Vera en la pastelería',
+            lines: [['Vera', 'Nous voulons [[0]] [[1]]. (gâteau)']],
             blanks: [
               { options: ['des', 'les', 'un', 'de'], answer: 'des', explain: '"Des gâteaux" — artículo indefinido plural.' },
               { options: ['gâteaux', 'gâteaus', 'gâtaux', 'gâteauxs'], answer: 'gâteaux', explain: '-eau → -eaux: "gâteaux".' },
@@ -205,9 +205,9 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Lista de compras',
         tag: 'Texto guiado',
-        intro: 'David hace una lista de compras. Elige la forma plural correcta de cada sustantivo.',
+        intro: 'Dario hace una lista de compras. Elige la forma plural correcta de cada sustantivo.',
         type: 'guidedText',
-        scene: 'David prepara una lista de la compra para la fiesta de WeLearn. Elige el plural correcto.',
+        scene: 'Dario prepara una lista de la compra para la fiesta de WeLearn. Elige el plural correcto.',
         text: 'Pour la fête de WeLearn, j\'achète : des [[0]] (gâteau), des [[1]] (fruit), des [[2]] (boisson), des [[3]] (journal) pour la décoration, des [[4]] (chapeau) pour les invités, et des [[5]] (jeu) de société. Les [[6]] (animal) de compagnie ne sont pas invités !',
         blanks: [
           { options: ['gâteaux', 'gâteaus', 'gâtaux', 'gâteauxs'], answer: 'gâteaux', explain: '"Gâteau" → -eau → -eaux: "gâteaux".' },
@@ -226,7 +226,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma plural correcta del sustantivo entre paréntesis.',
         type: 'freeText',
-        scene: 'Zhanna describe la sala de WeLearn. Escribe el plural correcto de cada sustantivo.',
+        scene: 'Vera describe la sala de WeLearn. Escribe el plural correcto de cada sustantivo.',
         text: 'Dans notre salle de classe, il y a plusieurs [[0]] (bureau), de nombreux [[1]] (livre) et des [[2]] (journal) en plusieurs langues. Les murs sont décorés avec des [[3]] (tableau). Nos [[4]] (animal) préférés sont les [[5]] (chat) — mais ils ne sont pas dans la salle !',
         blanks: [
           { answer: 'bureaux', accepted: ['bureaux'], explain: '"Bureau" → -eau → -eaux: "bureaux".' },

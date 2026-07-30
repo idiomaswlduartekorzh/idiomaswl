@@ -73,6 +73,24 @@ const topic: GrammarTopic = {
         '"Once" (una vez que) es similar a "when" pero enfatiza la completud de la primera acción: "Once you finish the course, you will receive a certificate." / "Once she had read the report, she called a meeting." En contextos formales, "once" suena más profesional que "when".',
       ],
     },
+    {
+      heading: '¿Se usa el futuro después de "when", "as soon as", "before" en inglés?',
+      paragraphs: [
+        'No. Tras las conjunciones temporales (when, as soon as, before, after, until, while) va el presente, aunque el sentido sea futuro: "When I arrive, I will call you" (no "when I will arrive"). El "will" va solo en la oración principal.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las conjunciones de tiempo más usadas en inglés?',
+      paragraphs: [
+        'when (cuando), while (mientras), before (antes de que), after (después de que), as soon as (en cuanto), until/till (hasta que), since (desde que). Introducen la cláusula temporal, que va en presente cuando el sentido es futuro.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "when" y "while" en inglés?',
+      paragraphs: [
+        '"when" se usa con acciones puntuales o el past simple ("When she arrived, I left"). "while" se usa con acciones largas o el past continuous ("While I was cooking, she called"). While marca simultaneidad de una acción en curso.',
+      ],
+    },
   ],
 
   visual: {
@@ -169,7 +187,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Plan para el examen',
-            lines: [['', '___ I finish studying tonight, I will review my notes. I will keep studying ___ I feel ready.']],
+            lines: [['', '[[0]] I finish studying tonight, I will review my notes. I will keep studying [[1]] I feel ready.']],
             blanks: [
               { options: ['When', 'While', 'Until', 'By the time'], answer: 'When', explain: '"When" para un momento puntual futuro: "When I finish studying tonight".' },
               { options: ['until', 'while', 'when', 'as soon as'], answer: 'until', explain: '"Until" = hasta que: "keep studying until I feel ready". Límite de tiempo.' },
@@ -177,7 +195,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En el aeropuerto',
-            lines: [['', '___ the plane takes off, you must switch off your phone. ___ landing, switch it back on.']],
+            lines: [['', '[[0]] the plane takes off, you must switch off your phone. [[1]] landing, switch it back on.']],
             blanks: [
               { options: ['Before', 'While', 'Until', 'As soon as'], answer: 'Before', explain: '"Before" = antes de que. "Before the plane takes off" → secuencia: primero apagas, luego despega.' },
               { options: ['After', 'While', 'Until', 'Before'], answer: 'After', explain: '"After" + gerundio = después de aterrizar. "After landing" = después de aterrizar.' },
@@ -185,7 +203,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Buenas noticias',
-            lines: [['', 'I will celebrate ___ I find out the results. I am not going to rest ___ I know I passed.']],
+            lines: [['', 'I will celebrate [[0]] I find out the results. I am not going to rest [[1]] I know I passed.']],
             blanks: [
               { options: ['when', 'while', 'until', 'before'], answer: 'when', explain: '"When I find out" = en el momento en que lo sepa (futuro → presente simple después de when).' },
               { options: ['until', 'while', 'when', 'after'], answer: 'until', explain: '"Not going to rest until I know" = continúa la acción hasta que llegue ese momento.' },
@@ -193,7 +211,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Historia del pasado',
-            lines: [['', '___ I was presenting my project, someone asked a really difficult question. ___ I finished, everyone applauded.']],
+            lines: [['', '[[0]] I was presenting my project, someone asked a really difficult question. [[1]] I finished, everyone applauded.']],
             blanks: [
               { options: ['While', 'When', 'Before', 'After'], answer: 'While', explain: '"While" + past continuous: acción en progreso. "While I was presenting" → alguien interrumpió.' },
               { options: ['When', 'While', 'Until', 'By the time'], answer: 'When', explain: '"When" para un momento puntual en el pasado: "When I finished, they applauded." Evento puntual.' },

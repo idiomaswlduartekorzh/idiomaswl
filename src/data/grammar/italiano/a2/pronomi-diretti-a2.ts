@@ -56,15 +56,47 @@ const topic: GrammarTopic = {
     {
       heading: '¿Qué son los pronombres de objeto directo en italiano?',
       paragraphs: [
-        'Los pronombres de objeto directo (pronomi diretti) reemplazan el sustantivo que recibe directamente la acción del verbo, sin preposición. Por ejemplo, en "Compro la pizza", el objeto directo es "la pizza". Para no repetirlo, decimos "La compro".',
-        'La posición es fija: siempre van antes del verbo conjugado. Ho visto Marco → L\'ho visto. Mangio le mele → Le mangio. En infinitivo se unen al final: voglio vederlo, devo comprarlo.',
+        'Los pronombres de objeto directo (pronomi diretti) reemplazan el sustantivo que recibe la acción del verbo SIN preposición: en "Compro la pizza", el objeto directo es "la pizza", y para no repetirlo decimos "La compro". Van siempre antes del verbo conjugado. Esta es la serie completa:',
+      ],
+      table: [
+        ['Reemplaza a', 'Pronombre', 'Ejemplo'],
+        ['me', 'mi', 'Marco mi vede.'],
+        ['te', 'ti', 'Ti chiamo dopo.'],
+        ['lo / la / usted', 'lo, la', 'La compro io.'],
+        ['nos', 'ci', 'Ci invitano a cena.'],
+        ['os', 'vi', 'Vi aspetto fuori.'],
+        ['los / las', 'li, le', 'Li mangio subito.'],
       ],
     },
     {
-      heading: 'Lo, la, li, le: concordancia de género y número',
+      heading: 'Lo, la, li, le y la concordancia del participio',
       paragraphs: [
-        'La elección del pronombre depende del género y número del sustantivo que reemplaza: lo (masc. sing.), la (fem. sing.), li (masc. plur.), le (fem. plur.). Si el objeto es un grupo mixto, se usa li.',
-        'Ante verbo auxiliar (ho, hai, ha…) lo y la se apocopan: l\'. Lo ho mangiato → L\'ho mangiato. La ho vista → L\'ho vista. Con li y le no hay apócope: Li ho visti. Le ho lette.',
+        'Los de tercera persona (lo, la, li, le) concuerdan en género y número con el sustantivo: lo (masc. sing.), la (fem. sing.), li (masc. plur.), le (fem. plur.). En el passato prossimo, el participio concuerda OBLIGATORIAMENTE con estos pronombres. Además, lo y la se eliden en l\' ante el auxiliar:',
+      ],
+      table: [
+        ['Pronombre', 'Participio', 'Ejemplo (passato prossimo)'],
+        ['lo', '-o', 'L\'ho visto (il film)'],
+        ['la', '-a', 'L\'ho vista (la casa)'],
+        ['li', '-i', 'Li ho visti (i ragazzi)'],
+        ['le', '-e', 'Le ho viste (le ragazze)'],
+      ],
+    },
+    {
+      heading: '¿Cuáles son los pronombres de objeto directo en italiano?',
+      paragraphs: [
+        'Son: mi (me), ti (te), lo/la (lo/la/usted), ci (nos), vi (os) y li/le (los/las). Reemplazan al objeto directo (sin preposición) y evitan repetir el sustantivo: "Conosci Marco? Sì, lo conosco".',
+      ],
+    },
+    {
+      heading: '¿Dónde se colocan los pronombres directos en italiano?',
+      paragraphs: [
+        'Antes del verbo conjugado: "La vedo", "Ti chiamo". Con infinitivo, gerundio o imperativo se pegan al final del verbo: "voglio vederlo", "comprandola", "guardalo!". Con verbos modales pueden ir antes del modal o pegados al infinitivo: "lo voglio vedere" = "voglio vederlo".',
+      ],
+    },
+    {
+      heading: '¿El participio concuerda con el pronombre directo en el passato prossimo?',
+      paragraphs: [
+        'Sí, con lo, la, li, le el participio concuerda obligatoriamente: "L\'ho vista" (la casa), "Li ho comprati" (i libri), "Le ho lette" (le lettere). Con mi, ti, ci, vi la concordancia es opcional. Recuerda que lo/la se eliden en l\' ante ho/hai/ha.',
       ],
     },
   ],
@@ -108,7 +140,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'I compiti',
-            lines: [['David', '___ faccio sempre a casa. (i compiti)']],
+            lines: [['Iván', '___ faccio sempre a casa. (i compiti)']],
             options: ['Li', 'Le', 'Lo', 'La'],
             answer: 'Li',
             explain: 'I compiti = masculino plural → li. Li faccio sempre a casa.',
@@ -143,7 +175,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Le email',
-            lines: [['Zhanna', '___ controllo ogni mattina. (le email)']],
+            lines: [['Elena', '___ controllo ogni mattina. (le email)']],
             options: ['Le', 'Li', 'Lo', 'La'],
             answer: 'Le',
             explain: 'Le email = femenino plural → le. Le controllo ogni mattina.',
@@ -183,7 +215,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El número de teléfono',
-            lines: [['David', '— Hai il numero di Luca? — Sì, [[0]] [[1]] qui.']],
+            lines: [['Iván', '— Hai il numero di Luca? — Sì, [[0]] [[1]] qui.']],
             blanks: [
               { options: ['lo', 'la', 'li', 'le'], answer: 'lo', explain: 'Il numero = masculino singular → lo.' },
               { options: ['ho', 'sono', 'avevo'], answer: 'ho', explain: 'Tener algo: avere → ho (primera persona).' },

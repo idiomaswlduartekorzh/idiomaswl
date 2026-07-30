@@ -62,10 +62,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '괜찮아요: la expresión más versátil del coreano',
+      heading: '¿Qué significa 괜찮아요 en coreano?',
       paragraphs: [
         '"괜찮아요" (gwaenchanayo) es una de las expresiones más frecuentes del coreano porque tiene múltiples usos: "Estoy bien" (cuando te preguntan si estás bien), "De nada" (respuesta a 감사합니다), "No importa" (cuando algo salió mal), "Está bien" (dando permiso o aprobación).',
         'Los hablantes coreanos la usan constantemente en situaciones sociales. Aprenderla en sus distintos contextos te hará sonar natural desde el principio. La clave es el contexto y la entonación.',
+      ],
+    },
+    {
+      heading: '¿Cómo se saluda y se agradece en coreano?',
+      paragraphs: [
+        '안녕하세요 (annyeonghaseyo) es el saludo estándar en registro cortés y sirve para "hola", "buenos días" y "buenas tardes" a cualquier hora. Para agradecer se usa 감사합니다 (gamsahamnida, formal) o 고마워요 (más cercano). Al despedirse hay dos fórmulas según quién se marcha: 안녕히 가세요 (a quien se va) y 안녕히 계세요 (a quien se queda). Para disculparse, 죄송합니다 o 미안해요. La trampa para el hispanohablante es que el coreano elige la fórmula según la relación jerárquica y según quién se mueve, no según la hora del día como en español.',
       ],
     },
   ],
@@ -114,7 +120,7 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           { scene: 'En un restaurante', lines: [['', 'El camarero te trae la comida. Tú: [[0]]. Él: [[1]].']], blanks: [{ options: ['감사합니다', '모르겠어요', '잠깐만요', '괜찮아요'], answer: '감사합니다', explain: '감사합니다 = Gracias al recibir la comida.' }, { options: ['감사합니다', '괜찮아요', '모르겠어요', '잠깐만요'], answer: '괜찮아요', explain: 'El camarero responde 괜찮아요 = De nada / No hay problema.' }] },
-          { scene: 'En clase de coreano', lines: [['', 'David pregunta algo difícil. Tú: [[0]]. Pides: [[1]].']], blanks: [{ options: ['잠깐만요', '괜찮아요', '모르겠어요', '감사합니다'], answer: '모르겠어요', explain: '모르겠어요 = No sé / No estoy seguro.' }, { options: ['다시 한 번 해 주세요', '감사합니다', '잠깐만요', '괜찮아요'], answer: '다시 한 번 해 주세요', explain: '다시 한 번 해 주세요 = Por favor, una vez más.' }] },
+          { scene: 'En clase de coreano', lines: [['', 'Enzo pregunta algo difícil. Tú: [[0]]. Pides: [[1]].']], blanks: [{ options: ['잠깐만요', '괜찮아요', '모르겠어요', '감사합니다'], answer: '모르겠어요', explain: '모르겠어요 = No sé / No estoy seguro.' }, { options: ['다시 한 번 해 주세요', '감사합니다', '잠깐만요', '괜찮아요'], answer: '다시 한 번 해 주세요', explain: '다시 한 번 해 주세요 = Por favor, una vez más.' }] },
           { scene: 'Conversación con amigo', lines: [['', 'Tu amigo te ayuda. Tú: [[0]]. Él: [[1]].']], blanks: [{ options: ['감사합니다', '고마워요', '잠깐만요', '모르겠어요'], answer: '고마워요', explain: 'Con amigos: 고마워요 (más informal que 감사합니다).' }, { options: ['괜찮아요', '감사합니다', '모르겠어요', '잠깐만요'], answer: '괜찮아요', explain: '괜찮아요 = De nada entre amigos.' }] },
           { scene: 'Necesitas tiempo', lines: [['', 'Te hacen una pregunta y necesitas pensar: [[0]]. Después: [[1]].']], blanks: [{ options: ['감사합니다', '괜찮아요', '잠깐만요', '모르겠어요'], answer: '잠깐만요', explain: '잠깐만요 = Un momento mientras pienso.' }, { options: ['모르겠어요', '감사합니다', '잠깐만요', '고마워요'], answer: '모르겠어요', explain: 'Si finalmente no sabes: 모르겠어요 = No sé.' }] },
         ],
@@ -126,9 +132,9 @@ const topic: GrammarTopic = {
         intro: 'Elige la expresión correcta en cada situación del diálogo.',
         type: 'guidedText',
         scene: 'En la recepción de WeLearn — primera clase',
-        text: 'Zhanna: 안녕하세요! (¡Hola!) Carlos: 안녕하세요! [[0]]! (¡Hola! — gracias por recibirme, formal) Zhanna: 한국어를 공부해요? (¿Estudias coreano?) Carlos: 네, 그런데... [[1]]. (Sí, pero no sé bien explicar) Zhanna: 천천히 말해요. (Habla despacio.) Carlos: [[2]]! (¡Un momento!) ... 저는 한국어가 좋아요. (Me gusta el coreano.) Zhanna: 잘 했어요! Carlos: [[3]]! (¡Gracias!) Zhanna: [[4]]. (De nada / Está bien.)',
+        text: 'Marta: 안녕하세요! (¡Hola!) Carlos: 안녕하세요! [[0]]! (¡Hola! — gracias por recibirme, formal) Marta: 한국어를 공부해요? (¿Estudias coreano?) Carlos: 네, 그런데... [[1]]. (Sí, pero no sé bien explicar) Marta: 천천히 말해요. (Habla despacio.) Carlos: [[2]]! (¡Un momento!) ... 저는 한국어가 좋아요. (Me gusta el coreano.) Marta: 잘 했어요! Carlos: [[3]]! (¡Gracias!) Marta: [[4]]. (De nada / Está bien.)',
         blanks: [
-          { options: ['감사합니다', '고마워요', '모르겠어요', '잠깐만요'], answer: '감사합니다', explain: '감사합니다 — agradecimiento formal al llegar. Con Zhanna (profesora/superior): 감사합니다.' },
+          { options: ['감사합니다', '고마워요', '모르겠어요', '잠깐만요'], answer: '감사합니다', explain: '감사합니다 — agradecimiento formal al llegar. Con Marta (profesora/superior): 감사합니다.' },
           { options: ['감사합니다', '잠깐만요', '모르겠어요', '괜찮아요'], answer: '모르겠어요', explain: '모르겠어요 = No sé (cómo explicarlo). Expresión honesta de incertidumbre.' },
           { options: ['감사합니다', '잠깐만요', '괜찮아요', '모르겠어요'], answer: '잠깐만요', explain: '잠깐만요 = Un momento. Pide tiempo para preparar la respuesta.' },
           { options: ['모르겠어요', '잠깐만요', '괜찮아요', '감사합니다'], answer: '감사합니다', explain: '감사합니다 = Gracias al recibir el elogio. Con profesora: forma formal.' },
@@ -159,7 +165,7 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           { scene: 'En un café en Seúl', prompt: 'Escribe un mini-diálogo (3-4 turnos) en un café. Usa al menos: 감사합니다, 잠깐만요, 괜찮아요. El camarero te atiende y te trae el pedido.', answer: '카페직원: 어서 오세요! Carlos: 잠깐만요... 아이스 아메리카노 주세요. (직원이 가져옵니다) Carlos: 감사합니다! 직원: 괜찮아요!', accepted: ['감사합니다', '잠깐만요', '괜찮아요'], explain: '잠깐만요 (para pedir tiempo al elegir), 감사합니다 (al recibir), 괜찮아요 (de nada del camarero).' },
-          { scene: 'Primera lección de coreano', prompt: 'David explica algo difícil y rápido. Escribe cómo pedirías más tiempo, dirías que no entiendes y pedirías que repita. Usa: 잠깐만요, 모르겠어요, 다시 한 번 해 주세요.', answer: '잠깐만요! 조금 모르겠어요... 다시 한 번 해 주세요. 감사합니다!', accepted: ['잠깐만요', '모르겠어요', '다시 한 번 해 주세요'], explain: 'Las tres expresiones de supervivencia en clase: pedir tiempo, admitir confusión y pedir repetición.' },
+          { scene: 'Primera lección de coreano', prompt: 'Enzo explica algo difícil y rápido. Escribe cómo pedirías más tiempo, dirías que no entiendes y pedirías que repita. Usa: 잠깐만요, 모르겠어요, 다시 한 번 해 주세요.', answer: '잠깐만요! 조금 모르겠어요... 다시 한 번 해 주세요. 감사합니다!', accepted: ['잠깐만요', '모르겠어요', '다시 한 번 해 주세요'], explain: 'Las tres expresiones de supervivencia en clase: pedir tiempo, admitir confusión y pedir repetición.' },
         ],
       },
       {
@@ -170,7 +176,7 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           { scene: '한국에서 첫날 — primer día en Corea', prompt: 'Imagina tu primer día en Corea. Escribe 5 situaciones donde usarías estas expresiones: al llegar al hotel, al pedir algo, al no entender, al recibir ayuda, al despedirte. Usa: 감사합니다, 고마워요, 괜찮아요, 잠깐만요, 모르겠어요, 다시 한 번 해 주세요.', answer: '호텔 도착: 감사합니다! 식당에서: 잠깐만요... 메뉴를 봐요. 길을 물어볼 때: 모르겠어요... 지도를 보여 주세요. 도움을 받을 때: 감사합니다! 괜찮아요! 너무 빠르면: 다시 한 번 해 주세요. 천천히!', accepted: ['감사합니다', '잠깐만요', '모르겠어요', '괜찮아요', '다시 한 번'], explain: '일상 생존 표현 완성! These expressions will get you through real Korean situations from day one.' },
-          { scene: '웰러닝에서 첫 수업', prompt: 'Es tu primera clase en WeLearn con David. Escribe un párrafo sobre cómo usarías las expresiones cotidianas durante la clase: para agradecer, pedir tiempo, admitir que no sabes, pedir que repita.', answer: '첫 수업에서: "선생님, 감사합니다! 잠깐만요... 조금 어려워요. 모르겠어요. 다시 한 번 해 주세요. 감사합니다! 괜찮아요!" — 이 표현들로 수업을 잘 따라갈 수 있어요.', accepted: ['감사합니다', '잠깐만요', '모르겠어요', '다시 한 번'], explain: '수업에서 꼭 필요한 표현들. These classroom survival expressions make learning much smoother.' },
+          { scene: '웰러닝에서 첫 수업', prompt: 'Es tu primera clase en WeLearn con Enzo. Escribe un párrafo sobre cómo usarías las expresiones cotidianas durante la clase: para agradecer, pedir tiempo, admitir que no sabes, pedir que repita.', answer: '첫 수업에서: "선생님, 감사합니다! 잠깐만요... 조금 어려워요. 모르겠어요. 다시 한 번 해 주세요. 감사합니다! 괜찮아요!" — 이 표현들로 수업을 잘 따라갈 수 있어요.', accepted: ['감사합니다', '잠깐만요', '모르겠어요', '다시 한 번'], explain: '수업에서 꼭 필요한 표현들. These classroom survival expressions make learning much smoother.' },
         ],
       },
     ],

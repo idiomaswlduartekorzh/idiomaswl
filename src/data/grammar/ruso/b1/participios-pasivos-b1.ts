@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Formación de participios pasivos de pasado',
+      heading: '¿Cómo se forman los participios pasivos de pasado?',
       paragraphs: [
         'Para verbos en -ать/-ять (principalmente): се quita -ть y se añade -нный. Например: написать → написанный, прочитать → прочитанный, сделать → сделанный, потерять → потерянный.',
         'Para verbos en -ить/-еть: se quita -ить/-еть y se añade -енный/-ённый (con cambios de consonante en algunos casos): построить → построенный, решить → решённый, приготовить → приготовленный. Para verbos con raíz corta (monosilábicos) se usa -тый: открыть → открытый, взять → взятый, забыть → забытый.',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Forma larga vs forma corta: cuándo usar cada una',
+      heading: '¿Cuándo se usa la forma larga y cuándo la corta?',
       paragraphs: [
         'La forma LARGA funciona como adjetivo atributivo y concuerda con su sustantivo en todos los casos: "написанное письмо" (carta escrita, nom. neutro), "в написанном письме" (en la carta escrita, prep. neutro). Se usa cuando el participio modifica directamente al sustantivo.',
         'La forma CORTA solo funciona como predicado (el verbo "ser" está implícito o explícito): "Письмо написано" (La carta está/fue escrita). "Дверь открыта" (La puerta está abierta). Es obligatoria en esta función predicativa — no puedes usar la forma larga como predicado.',
@@ -183,7 +183,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'En la oficina de correos',
-            lines: [['', 'Посылка, [[0]] другом, уже ___. (El paquete enviado por el amigo ya llegó / ya está enviado.)']],
+            lines: [['', 'Посылка, другом, уже [[0]]. (El paquete enviado por el amigo ya llegó / ya está enviado.)']],
             blanks: [
               { options: ['отправленная', 'отправленный', 'отправлен', 'отправленное'], answer: 'отправленная', explain: 'Посылка (femenino), forma larga atributiva (modifica al sustantivo) → отправленная.' },
               { options: ['получена', 'получено', 'полученная', 'полученный'], answer: 'получена', explain: 'Predicado con sujeto femenino (посылка) → forma corta: получена.' },

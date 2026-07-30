@@ -60,6 +60,33 @@ const topic: GrammarTopic = {
         'Otras expresiones esenciales: "fazer questão de" (insistir en, dar importancia a): "Faço questão de agradecer pessoalmente"; "fazer uma viagem" (hacer un viaje); "fazer silêncio" (guardar silencio); "fazer sucesso" (tener éxito).',
       ],
     },
+    {
+      heading: '¿Cuáles son las expresiones con "fazer" más comunes en portugués?',
+      paragraphs: [
+        'Fazer forma decenas de locuciones fijas cuyo sentido no es literal. Estas son las más frecuentes del A2, con su significado y un ejemplo:',
+      ],
+      table: [
+        ['Expresión', 'Significado', 'Ejemplo'],
+        ['fazer falta', 'echar de menos / hacer falta', 'Você me faz falta.'],
+        ['fazer sentido', 'tener sentido', 'Isso faz sentido.'],
+        ['fazer bem / mal', 'ser bueno / malo', 'Fumar faz mal.'],
+        ['fazer parte de', 'formar parte de', 'Faço parte da equipe.'],
+        ['fazer questão de', 'insistir en / dar importancia', 'Faço questão de ir.'],
+        ['fazer calor / frio', 'hacer calor / frío', 'Hoje faz calor.'],
+      ],
+    },
+    {
+      heading: '¿Por qué se dice "faz sentido" y no "tem sentido" en portugués?',
+      paragraphs: [
+        'Porque el portugués usa el verbo "fazer" donde el español usa "tener": "Isso faz sentido" = eso tiene sentido. Es una expresión fija que hay que aprender como bloque, no traducir palabra por palabra. Calcar el español ("isso tem sentido") suena raro para un brasileño. Lo mismo pasa con "fazer falta" (echar de menos), donde el español diría "hacer falta" pero con otro sentido. La regla es memorizar estas locuciones enteras: fazer sentido, fazer falta, fazer questão.',
+      ],
+    },
+    {
+      heading: '¿Cómo se habla del clima con "fazer" en portugués?',
+      paragraphs: [
+        'El tiempo atmosférico se expresa con "fazer" en 3ª persona impersonal: "Faz calor" (hace calor), "Faz frio", "Faz sol", "Faz um dia lindo". Nunca se conjuga con sujeto personal: "eu faço calor" es un error grave (significaría que tú produces calor). Ojo con la diferencia frente al español "tener": una persona "está com calor / está com frio" (tiene calor/frío), pero el ambiente "faz calor / faz frio". Así: "Faz calor e eu estou com calor" = hace calor y yo tengo calor.',
+      ],
+    },
   ],
 
   visual: {
@@ -187,7 +214,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la expresión correcta con fazer.',
         type: 'freeText',
         scene: 'Completando frases com expressões de fazer.',
-        text: 'O exercício ___ para a saúde mental. / Essa explicação não ___. / Minha família me ___ quando estou viajando. / O Brasil ___ da América do Sul. / Hoje ___ muito calor nesta cidade.',
+        text: 'O exercício [[0]] para a saúde mental. / Essa explicação não [[1]]. / Minha família me [[2]] quando estou viajando. / O Brasil [[3]] da América do Sul. / Hoje [[4]] muito calor nesta cidade.',
         blanks: [
           { answer: 'faz bem', explain: '"fazer bem" = ser bueno para la salud.' },
           { answer: 'faz sentido', explain: '"fazer sentido" = tener sentido.' },

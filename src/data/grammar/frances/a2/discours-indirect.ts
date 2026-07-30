@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Dire que y demander si: la base del discurso indirecto',
+      heading: '¿Qué es el discurso indirecto en francés?',
       paragraphs: [
         'Para reportar afirmaciones, se usa dire (o un sinónimo: expliquer, raconter, répondre...) + que + la frase en indicativo: "Marie dit qu\'elle part demain" (María dice que se va mañana). Para preguntas de sí/no, se usa demander si: "Il demande si tu es disponible" (Pregunta si estás disponible). Si empieza por vocal: demander s\': "Il demande s\'il peut venir".',
         'Al pasar al discurso indirecto, los pronombres personales y posesivos cambian según el nuevo contexto: "Je" (hablante original) → il/elle, "tu" (interlocutor original) → il/elle o je según quién sea, "mon/ma/mes" → son/sa/ses. Con verbo introductor en présent, los tiempos verbales NO cambian (en nivel A2).',
       ],
     },
     {
-      heading: 'Preguntas informativas en discurso indirecto',
+      heading: '¿Cómo se transforman las preguntas en discurso indirecto en francés?',
       paragraphs: [
         'Las preguntas con pronombre interrogativo (où, quand, comment, pourquoi, combien, qui) se introducen directamente sin inversión ni est-ce que: "Où habites-tu ?" → "Il demande où tu habites" (el verbo va al final, orden afirmativo). "Qu\'est-ce que tu fais ?" → "Il demande ce que tu fais" (qu\'est-ce que → ce que). "Qu\'est-ce qui se passe ?" → "Il demande ce qui se passe".',
         'Los verbos introductores más comunes: dire (decir), demander (preguntar), expliquer (explicar), répondre (responder), raconter (contar), ajouter (añadir), préciser (precisar).',
+      ],
+    },
+    {
+      heading: '¿Cómo cambian los tiempos en el discurso indirecto en francés?',
+      paragraphs: [
+        'Cuando el verbo introductor va en pasado, los tiempos de la frase citada retroceden (concordance des temps): présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel. "Il a dit : je viens" → "Il a dit qu\'il venait" ; "Elle a dit : j\'ai fini" → "Elle a dit qu\'elle avait fini". También cambian los pronombres (je → il/elle) y los marcadores de tiempo y lugar (aujourd\'hui → ce jour-là, ici → là, demain → le lendemain). Es el mismo mecanismo del estilo indirecto español, así que la lógica se traslada; lo nuevo son las formas concretas de cada tiempo francés y el paso obligatorio por "que" (afirmaciones) o "si" (preguntas de sí/no).',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el resumen en discurso indirecto.',
         type: 'guidedText',
         scene: 'Pierre résume le message qu\'il a reçu de Marie.',
-        text: 'Marie m\'a envoyé un message. Elle dit [[0]] elle arrivera demain matin. Elle demande [[1]] je peux aller la chercher à la gare. Elle veut savoir [[2]] le train arrive. Elle précise aussi [[0]] elle a deux valises. Elle demande [[1]] j\'ai une voiture assez grande.',
+        text: 'Marie m\'a envoyé un message. Elle dit [[0]] elle arrivera demain matin. Elle demande [[1]] je peux aller la chercher à la gare. Elle veut savoir [[2]] le train arrive. Elle précise aussi [[3]] elle a deux valises. Elle demande [[4]] j\'ai une voiture assez grande.',
         blanks: [
           { options: ["qu'", 'si', 'où', 'ce que'], answer: "qu'", explain: '"Elle dit qu\' / Elle précise qu\'" — afirmaciones → que/qu\'.' },
           { options: ['si', "qu'", 'où', 'quand'], answer: 'si', explain: '"Elle demande si..." — preguntas sí/no → si.' },
@@ -183,7 +189,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: transforma las frases directas a discurso indirecto.',
         type: 'freeText',
         scene: 'Écrivez au discours indirect.',
-        text: '"Je suis en retard." → Il dit ___. / "Tu as mangé ?" → Elle demande ___. / "Pourquoi tu pleures ?" → Il demande ___. / "Qu\'est-ce que vous cherchez ?" → Elle demande ___.',
+        text: '"Je suis en retard." → Il dit [[0]]. / "Tu as mangé ?" → Elle demande [[1]]. / "Pourquoi tu pleures ?" → Il demande [[2]]. / "Qu\'est-ce que vous cherchez ?" → Elle demande [[3]].',
         blanks: [
           { answer: "qu'il est en retard", explain: '"il dit qu\'il est en retard" — je → il.' },
           { answer: 'si tu as mangé', explain: '"elle demande si tu as mangé" — pregunta sí/no → si.' },

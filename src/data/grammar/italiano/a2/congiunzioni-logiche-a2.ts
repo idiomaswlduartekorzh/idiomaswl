@@ -51,10 +51,18 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Conectores lógicos en italiano: cohesión del discurso',
+      heading: 'Conectores lógicos en italiano: la tabla por función',
       paragraphs: [
-        'Los conectores lógicos (connettivi logici) son esenciales para expresarse con naturalidad en italiano. Sin ellos, las oraciones quedan sueltas y el discurso parece mecánico. Con ellos, puedes expresar relaciones causa-efecto, contraste, adición y corrección.',
-        'En A2 los más importantes son quindi (consecuencia), però (contraste), invece (cambio de perspectiva) y anzi (rectificación o énfasis). Dominarlos te permite pasar de un italiano fragmentado a un italiano fluido y natural.',
+        'Los conectores (connettivi) unen ideas y hacen el discurso fluido en vez de fragmentado. Lo práctico es elegirlos por la relación que expresan —consecuencia, causa, contraste, adición— y esta tabla los agrupa así:',
+      ],
+      table: [
+        ['Relación', 'Conectores', 'Ejemplo'],
+        ['Consecuencia (por eso)', 'quindi, perciò, allora', 'Piove, quindi resto a casa.'],
+        ['Causa (porque)', 'perché, siccome, poiché', 'Resto a casa perché piove.'],
+        ['Contraste (pero)', 'però, ma', 'È buono, però caro.'],
+        ['Cambio de perspectiva', 'invece', 'Io lavoro, tu invece dormi.'],
+        ['Rectificación (es más)', 'anzi', 'Non è buono, anzi ottimo.'],
+        ['Adición (además)', 'inoltre, e', 'È tardi, inoltre piove.'],
       ],
     },
     {
@@ -62,6 +70,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'Però introduce una limitación o contraste: mi piace la pizza, però non posso mangiarla ogni giorno (me gusta la pizza, pero no puedo comerla todos los días). Invece introduce un contraste entre dos sujetos o dos acciones opuestas: io lavoro, invece tu dormi (yo trabajo, tú en cambio duermes).',
         'Anzi es más especial: introduce una corrección o un énfasis mayor, a menudo para decir "al contrario" o "es más": Non è buono, anzi è ottimo (No es bueno, es más, es excelente). O para corregir: Non voglio caffè, anzi, un tè (No quiero café, mejor dicho, un té).',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los conectores lógicos más usados en italiano?',
+      paragraphs: [
+        'Por consecuencia: quindi, perciò, allora (por eso). Por causa: perché, siccome, poiché (porque). Por contraste: però, ma (pero), invece (en cambio). Por rectificación: anzi (es más / al contrario). Por adición: inoltre, e (además, y).',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre però, invece y anzi?',
+      paragraphs: [
+        '"però" = pero (limitación): "Mi piace, però costa troppo". "invece" = en cambio (contraste entre dos sujetos/acciones): "Io studio, tu invece giochi". "anzi" = es más / al contrario (rectifica al alza o corrige): "Non è caro, anzi è economico".',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa la consecuencia ("por eso") en italiano?',
+      paragraphs: [
+        'Con quindi, perciò o allora, colocados entre las dos ideas: "Era tardi, quindi sono andato a casa". No se ponen al inicio absoluto sin contexto previo ("Quindi non ho soldi" suelto es incorrecto); necesitan la causa antes.',
       ],
     },
   ],
@@ -105,7 +131,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El contraste de sujetos',
-            lines: [['David', 'Io mangio la pasta, ___ Marco preferisce la pizza.']],
+            lines: [['Enzo', 'Io mangio la pasta, ___ Marco preferisce la pizza.']],
             options: ['invece', 'però', 'quindi', 'anzi'],
             answer: 'invece',
             explain: 'Contraste entre dos sujetos con preferencias diferentes: invece = en cambio.',
@@ -180,7 +206,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los planes',
-            lines: [['David', '[[0]] non posso venire stasera, [[1]] ci vediamo domani!']],
+            lines: [['Enzo', '[[0]] non posso venire stasera, [[1]] ci vediamo domani!']],
             blanks: [
               { options: ['Purtroppo', 'Però', 'Invece', 'Quindi'], answer: 'Purtroppo', explain: 'Purtroppo = desgraciadamente (introduce la mala noticia).' },
               { options: ['comunque', 'quindi', 'invece', 'anzi'], answer: 'comunque', explain: 'De todas formas nos vemos mañana: comunque.' },
@@ -210,7 +236,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe el conector lógico más adecuado (quindi, però, invece, anzi, comunque, tuttavia).',
         type: 'freeText',
-        scene: 'Zhanna explica sus planes de la semana',
+        scene: 'Iris explica sus planes de la semana',
         text: 'Domani ho una riunione importante, [[0]] devo prepararmi bene. L\'italiano mi piace molto, [[1]] a volte trovo la grammatica complicata. Marco studia sempre, [[2]] io preferisco guardare i video in italiano. Il corso è intensivo, [[3]] efficacissimo. Pioverà tutta la settimana, [[4]] non cambio i miei piani.',
         blanks: [
           { answer: 'quindi', explain: 'Consecuencia de la reunión importante: devo prepararmi. Quindi.' },

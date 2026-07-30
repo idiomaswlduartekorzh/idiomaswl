@@ -60,6 +60,41 @@ const topic: GrammarTopic = {
         'En habla brasileña informal, "a gente" sustituye a "nós" y siempre toma "tem" (no "temos" ni "têm"): "A gente tem aula" = "Tenemos clase". Aprende los dos usos: nós temos (formal) y a gente tem (informal).',
       ],
     },
+    {
+      heading: '¿Cómo se conjuga el verbo ter en presente?',
+      paragraphs: [
+        'Ter es irregular en las cinco personas y conviene aprenderlo de memoria porque aparece en cada conversación. Esta es la conjugación completa del presente de indicativo:',
+      ],
+      table: [
+        ['Persona', 'Ter (presente)'],
+        ['eu', 'tenho'],
+        ['tu', 'tens'],
+        ['você / ele / ela', 'tem'],
+        ['nós', 'temos'],
+        ['vocês / eles / elas', 'têm'],
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa la edad en portugués?',
+      paragraphs: [
+        'Con ter, nunca con ser: "Tenho vinte anos" (tengo veinte años), igual que en español. Decir "Sou vinte anos" es un error grave que delata traducción del inglés ("I am twenty"). La pregunta es "Quantos anos você tem?" (¿cuántos años tienes?) y la respuesta siempre incluye la palabra anos: "Tenho 30 anos".',
+      ],
+    },
+    {
+      heading: '¿Qué expresiones se forman con ter en portugués?',
+      paragraphs: [
+        'Muchas sensaciones físicas y estados se dicen con ter + sustantivo, igual que el español usa "tener": ter fome (hambre), ter sede (sed), ter sono (sueño), ter frio (frío), ter calor (calor), ter medo (miedo), ter pressa (prisa), ter razão (razón), ter sorte (suerte). Se construyen sin artículo: "Tenho fome", no "tenho uma fome". Esta tabla recoge las más frecuentes del A1:',
+      ],
+      table: [
+        ['Expresión', 'Significado', 'Ejemplo'],
+        ['ter fome', 'tener hambre', 'Tenho fome.'],
+        ['ter sede', 'tener sed', 'Você tem sede?'],
+        ['ter sono', 'tener sueño', 'Ela tem sono.'],
+        ['ter medo', 'tener miedo', 'Eles têm medo.'],
+        ['ter pressa', 'tener prisa', 'Temos pressa.'],
+        ['ter razão', 'tener razón', 'Tu tens razão.'],
+      ],
+    },
   ],
   visual: {
     mode: 'verb-conjugation',
@@ -99,7 +134,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tenemos clase',
-            lines: [['David', 'Nós ___ aula às três da tarde.']],
+            lines: [['Iván', 'Nós ___ aula às três da tarde.']],
             options: ['temos', 'têm', 'tem', 'tenho'],
             answer: 'temos',
             explain: 'Nós temos = nosotros tenemos. Primera persona plural.',
@@ -151,9 +186,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Cuántos años tienes?',
             lines: [
-              ['Ana', 'Quantos anos você [[0]]?'],
-              ['Carlos', 'Eu [[1]] vinte e três anos.'],
-            ],
+ ['Ana', 'Quantos anos você [[0]]?'],
+ ['Carlos', 'Eu [[1]] vinte e três anos.'],
+ ],
             blanks: [
               { options: ['tem', 'têm', 'tenho'], answer: 'tem', explain: 'Você tem = usted tiene. 3ª sg.' },
               { options: ['tenho', 'tem', 'temos'], answer: 'tenho', explain: 'Eu tenho = yo tengo. 1ª sg.' },
@@ -161,7 +196,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hambre y sed',
-            lines: [['David', 'Eu [[0]] fome e eles também [[1]] sede.']],
+            lines: [['Iván', 'Eu [[0]] fome e eles também [[1]] sede.']],
             blanks: [
               { options: ['tenho', 'tem', 'têm'], answer: 'tenho', explain: 'Eu tenho fome. 1ª sg.' },
               { options: ['têm', 'tem', 'temos'], answer: 'têm', explain: 'Eles têm sede. 3ª pl con til.' },
@@ -169,7 +204,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Nosotros y ellos',
-            lines: [['Zhanna', 'Nós [[0]] muitos alunos e eles [[1]] muito talento.']],
+            lines: [['Marta', 'Nós [[0]] muitos alunos e eles [[1]] muito talento.']],
             blanks: [
               { options: ['temos', 'têm', 'tem'], answer: 'temos', explain: 'Nós temos. 1ª pl.' },
               { options: ['têm', 'temos', 'tem'], answer: 'têm', explain: 'Eles têm. 3ª pl con til.' },
@@ -178,9 +213,9 @@ const topic: GrammarTopic = {
           {
             scene: '¿Tienes mascota?',
             lines: [
-              ['Sofia', 'Você [[0]] animais de estimação?'],
-              ['Marco', 'Sim, eu [[1]] um gato.'],
-            ],
+ ['Sofia', 'Você [[0]] animais de estimação?'],
+ ['Marco', 'Sim, eu [[1]] um gato.'],
+ ],
             blanks: [
               { options: ['tem', 'tens', 'tenho'], answer: 'tem', explain: 'Você tem = usted/tú tienes. 3ª sg.' },
               { options: ['tenho', 'tem', 'tens'], answer: 'tenho', explain: 'Eu tenho = yo tengo. 1ª sg.' },
@@ -195,9 +230,9 @@ const topic: GrammarTopic = {
         intro: 'Completa con la forma correcta de ter.',
         type: 'guidedText',
         scene: 'Uma tarde na WeLearn',
-        text: 'David [[0]] uma nova aula de português hoje. Os alunos [[1]] muito interesse no tema. Eu [[2]] o meu dicionário e o meu caderno. A gente [[3]] uma hora de aula. Você [[4]] alguma pergunta? Nós [[5]] tempo para conversar depois.',
+        text: 'Iván [[0]] uma nova aula de português hoje. Os alunos [[1]] muito interesse no tema. Eu [[2]] o meu dicionário e o meu caderno. A gente [[3]] uma hora de aula. Você [[4]] alguma pergunta? Nós [[5]] tempo para conversar depois.',
         blanks: [
-          { options: ['tem', 'têm', 'tenho'], answer: 'tem', explain: 'David (ele) tem. 3ª sg.' },
+          { options: ['tem', 'têm', 'tenho'], answer: 'tem', explain: 'Iván (ele) tem. 3ª sg.' },
           { options: ['têm', 'tem', 'temos'], answer: 'têm', explain: 'Os alunos (eles) têm. 3ª pl.' },
           { options: ['tenho', 'tem', 'têm'], answer: 'tenho', explain: 'Eu tenho. 1ª sg.' },
           { options: ['tem', 'temos', 'têm'], answer: 'tem', explain: 'A gente tem (3ª sg). Brasil informal.' },

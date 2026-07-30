@@ -49,17 +49,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'La te-form: la forma más versátil del japonés',
+      heading: '¿Por qué la te-form es la más versátil del japonés?',
       paragraphs: [
         'La te-form (て形, te-kei) es posiblemente la forma verbal más importante del japonés después del presente. Se usa para conectar verbos en secuencia (食べて、飲んで、話す), para dar instrucciones corteses (話してください), para pedir permiso (話してもいいですか), para el progresivo (話しています), y como base de docenas de otras construcciones. Dominar la te-form en A1 te abre las puertas de la gramática intermedia.',
         'La buena noticia: los verbos del grupo 2 (ru-verbos) son completamente regulares — solo quitas る y añades て: 食べる→食べて, 見る→見て, 起きる→起きて. Los verbos del grupo 1 (u-verbos) tienen varios patrones según la consonante final, pero cada patrón es sistemático y con práctica se automatizan.',
       ],
     },
     {
-      heading: 'Pedir permiso en japonés: てもいいですか',
+      heading: '¿Cómo se pide permiso en japonés con てもいいですか?',
       paragraphs: [
         'La forma 〜てもいいですか (te mo ii desu ka) es la manera estándar de pedir permiso en japonés formal. Literalmente significa algo como "¿está bien si hago...?". Para conceder el permiso: いいですよ (ii desu yo = sí, está bien) o どうぞ (dōzo = adelante). Para negarlo cortésmente: ちょっと... (chotto... = es un poco... / mejor no) — en japonés la negación directa suena brusca, por lo que se usa esta forma evasiva.',
         'Para instrucciones corteses se usa 〜てください (te kudasai = por favor haz...). Es cortés pero directo: ゆっくり 話してください (por favor habla despacio), もう一度 言ってください (por favor dilo una vez más). Más formal: 〜ていただけますか (te itadakemasu ka = ¿podría usted...?).',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice que algo está prohibido con la te-form?',
+      paragraphs: [
+        'La te-form es la base de varias estructuras clave. Para pedir permiso: 〜てもいいですか (¿puedo...?), 食べてもいいですか (¿puedo comer?). Para conceder permiso: 〜てもいいです (puedes...). Y para prohibir se usa 〜てはいけません (no se debe / está prohibido): ここで写真を撮ってはいけません (aquí no se pueden tomar fotos); en conversación casual se contrae a 〜ちゃだめ. La misma te-form sirve además para peticiones (〜てください, por favor) y para acciones en curso (〜ています). La trampa para el hispanohablante es memorizar bien la te-form de cada verbo (食べて, 飲んで, 行って, 話して), porque de ella dependen permiso, prohibición, petición y presente continuo.',
       ],
     },
   ],
@@ -100,7 +106,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hablar',
-            lines: [['David', '話す → て形は？']],
+            lines: [['Tomás', '話す → て形は？']],
             options: ['話して', '話って', '話いて', '話んで'],
             answer: '話して',
             explain: '話す = grupo 1 (su-verb). す → して. 話 + して = 話して (hanashite).',
@@ -128,7 +134,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: '¿Puedo sentarme?',
-            lines: [['Zhanna', 'ここに 座って___ いいですか？']],
+            lines: [['Elena', 'ここに 座って___ いいですか？']],
             options: ['も', 'が', 'を', 'で'],
             answer: 'も',
             explain: '〜てもいいですか = ¿puedo...? La partícula es も. 座ってもいいですか = ¿puedo sentarme?',
@@ -152,9 +158,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la clase',
             lines: [
-              ['Carlos', 'トイレに [[0]] いいですか？(¿Puedo ir al baño?)'],
-              ['David', '[[1]]。どうぞ。(Claro. Adelante.)'],
-            ],
+ ['Carlos', 'トイレに [[0]] いいですか？(¿Puedo ir al baño?)'],
+ ['Tomás', '[[1]]。どうぞ。(Claro. Adelante.)'],
+ ],
             blanks: [
               { options: ['行っても', '行きても', '行くても'], answer: '行っても', explain: '行く → 行って (grupo 1: く→いて... espera, 行く→行って es especial: 行く→行いて pero en japonés 行く→行って). 行って+も = 行っても.' },
               { options: ['いいですよ', 'だめです', 'ちょっと'], answer: 'いいですよ', explain: 'いいですよ = sí, está bien. Conceder permiso positivamente.' },
@@ -163,9 +169,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Usando el celular',
             lines: [
-              ['Ana', 'スマホを [[0]] いいですか？'],
-              ['Zhanna', '[[1]]。今は じゅぎょうちゅうです。(Hmm... Ahora estamos en clase.)'],
-            ],
+ ['Ana', 'スマホを [[0]] いいですか？'],
+ ['Elena', '[[1]]。今は じゅぎょうちゅうです。(Hmm... Ahora estamos en clase.)'],
+ ],
             blanks: [
               { options: ['使っても', '使いても', '使くても'], answer: '使っても', explain: '使う (tsukau=usar) → 使って (grupo 1: う→って). 使っても = también usar → ¿puedo usar?' },
               { options: ['ちょっと...', 'いいですよ', 'どうぞ'], answer: 'ちょっと...', explain: 'ちょっと... = negación cortés indirecta. Literalmente "un poco..." — significa "mejor no".' },
@@ -173,7 +179,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrucciones del profesor',
-            lines: [['David', 'これを [[0]] ください。そして [[1]] ください。(Por favor lee esto. Después escribe.)']],
+            lines: [['Tomás', 'これを [[0]] ください。そして [[1]] ください。(Por favor lee esto. Después escribe.)']],
             blanks: [
               { options: ['読んで', '読いて', '読して'], answer: '読んで', explain: '読む (yomu=leer) → 読んで (grupo 1: む→んで). 読んでください = por favor lee.' },
               { options: ['書いて', '書って', '書して'], answer: '書いて', explain: '書く (kaku=escribir) → 書いて (く→いて). 書いてください = por favor escribe.' },
@@ -182,9 +188,9 @@ const topic: GrammarTopic = {
           {
             scene: 'En la biblioteca',
             lines: [
-              ['Sofia', 'ここで 食べ[[0]] いいですか？'],
-              ['Marco', 'すみません、[[1]]。(Lo siento, está prohibido.)'],
-            ],
+ ['Sofia', 'ここで 食べ[[0]] いいですか？'],
+ ['Marco', 'すみません、[[1]]。(Lo siento, está prohibido.)'],
+ ],
             blanks: [
               { options: ['ても', 'ても', 'ては'], answer: 'ても', explain: '食べ + ても = 食べても. 食べてもいいですか = ¿puedo comer aquí?' },
               { options: ['ちょっと...', 'いいですよ', 'どうぞ'], answer: 'ちょっと...', explain: 'En la biblioteca no se puede comer → negación cortés: ちょっと...' },
@@ -198,7 +204,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la te-form o la expresión de permiso correcta.',
         type: 'guidedText',
-        scene: 'Primera clase de japonés con David en WeLearn',
+        scene: 'Primera clase de japonés con Tomás en WeLearn',
         text: 'デービッド: では、はじめましょう。テキストを [[0]] ください。まず 83ページを [[1]] ください。カルロス: すみません、ペンを [[2]] いいですか？デービッド: いいですよ。どうぞ。アナ: この もじを [[3]] いいですか？デービッド: もちろん！[[4]] ください。ソフィア: もう いちど [[5]] いいですか？',
         blanks: [
           { options: ['開いて', '開って', '開して'], answer: '開いて', explain: '開く (hiraku=abrir) → 開いて (く→いて). 開いてください = por favor abre.' },

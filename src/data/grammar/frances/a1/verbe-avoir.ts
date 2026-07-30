@@ -65,14 +65,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La edad en francés: avoir + número + ans',
+      heading: '¿Cómo se dice la edad en francés?',
       paragraphs: [
         'En español decimos "tengo 25 años" y también "soy joven". En francés, la edad siempre usa avoir: J\'ai 25 ans. / Il a 40 ans. / Quel âge as-tu? (¿Cuántos años tienes?). Nunca se dice "je suis 25 ans".',
         '"Ans" (años) es siempre obligatorio: J\'ai 20 ans ✓, no "J\'ai 20" ❌. Excepto para bebés: "Il a 6 mois" (tiene 6 meses).',
       ],
     },
     {
-      heading: 'Expresiones idiomáticas con avoir',
+      heading: '¿Qué expresiones se forman con avoir en francés?',
       paragraphs: [
         'Muchas sensaciones físicas y estados usan avoir en francés, aunque en español usaríamos ser o estar: avoir faim (tener hambre), avoir soif (tener sed), avoir froid (tener frío), avoir chaud (tener calor), avoir peur (tener miedo), avoir sommeil (tener sueño).',
         'También: avoir raison (tener razón), avoir tort (estar equivocado), avoir envie de (tener ganas de), avoir besoin de (tener necesidad de / necesitar).',

@@ -53,14 +53,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La caída del "ne" en el francés oral',
+      heading: '¿Por qué desaparece el "ne" en el francés hablado?',
       paragraphs: [
         'En el francés hablado cotidiano, el "ne" casi siempre desaparece: "Je parle pas français", "Il mange pas de pizza", "On a pas le temps". Este fenómeno es tan común que si usas siempre el "ne" en conversación, sonarás muy formal.',
         'Sin embargo, en la escritura — correos, mensajes, exámenes — siempre debes usar la negación completa: je ne parle pas, il ne mange pas, nous n\'avons pas.',
       ],
     },
     {
-      heading: 'Pas de: el artículo cambia en la negación',
+      heading: '¿Por qué el artículo cambia a "de" en la negación francesa?',
       paragraphs: [
         'Cuando el verbo va seguido de un artículo indefinido (un, une, des) o partitivo (du, de la, de l\'), en la negación ese artículo se convierte en "de" (o "d\'" ante vocal): J\'ai un chat → Je n\'ai pas de chat. Je mange de la viande → Je ne mange pas de viande. Il y a des étudiants → Il n\'y a pas d\'étudiants.',
         'Excepción: cuando el verbo es "être", el artículo no cambia: C\'est un professeur → Ce n\'est pas un professeur (✓). Esto se debe a que "être" no expresa posesión ni cantidad.',
@@ -85,7 +85,7 @@ const topic: GrammarTopic = {
       ['Il a une voiture.', 'Il n\'a pas de voiture.'],
       ['Nous mangeons de la viande.', 'Nous ne mangeons pas de viande.'],
       ['Tu aimes le sport.', 'Tu n\'aimes pas le sport.'],
-      ['David est étudiant.', 'David n\'est pas étudiant.'],
+      ['Diego est étudiant.', 'Diego n\'est pas étudiant.'],
     ],
     learnerModes: ['reading', 'choosing', 'typing'],
     reviewFocus: ['ne...pas envuelve el verbo', 'pas de con sustantivos', 'élision n\''],
@@ -101,15 +101,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'Diálogo entre David y Carlos',
+            scene: 'Diálogo entre Diego y Carlos',
             lines: [['Carlos', '___-tu français ? (Tu parles... → negativa)']],
             options: ['Tu ne parles pas', 'Tu ne pas parles', 'Tu parles ne pas', 'Ne tu parles pas'],
             answer: 'Tu ne parles pas',
             explain: 'La pinza ne...pas rodea al verbo: "Tu ne parles pas français."',
           },
           {
-            scene: 'Zhanna habla de sus hábitos',
-            lines: [['Zhanna', 'Je ___ de café. (boire → present: bois)']],
+            scene: 'Elena habla de sus hábitos',
+            lines: [['Elena', 'Je ___ de café. (boire → present: bois)']],
             options: ['ne bois pas', 'bois ne pas', 'ne pas bois', 'pas ne bois'],
             answer: 'ne bois pas',
             explain: 'ne + verbo + pas: "Je ne bois pas de café."',
@@ -129,8 +129,8 @@ const topic: GrammarTopic = {
             explain: 'En negativa, el artículo "de la" → "de": elle ne mange pas de viande.',
           },
           {
-            scene: 'David explica su rutina',
-            lines: [['David', 'Je ___ fatigué. (être → suis)']],
+            scene: 'Diego explica su rutina',
+            lines: [['Diego', 'Je ___ fatigué. (être → suis)']],
             options: ['ne suis pas', 'ne pas suis', 'suis ne pas', 'pas ne suis'],
             answer: 'ne suis pas',
             explain: 'Con être: "Je ne suis pas fatigué." El artículo no cambia con être.',
@@ -150,7 +150,7 @@ const topic: GrammarTopic = {
             explain: 'Ante vocal: n\'. Un → pas de: "mon frère n\'a pas de voiture."',
           },
           {
-            scene: 'Zhanna y Marco hablan de música',
+            scene: 'Elena y Marco hablan de música',
             lines: [['Marco', 'Ils ___ de musique classique. (écouter → écoutent)']],
             options: ["n'écoutent pas", 'ne écoutent pas', "n'écoutent pas de", 'pas écoutent ne'],
             answer: "n'écoutent pas",
@@ -166,7 +166,7 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'Carlos escribe un email a David',
+            scene: 'Carlos escribe un email a Diego',
             lines: [['Carlos', 'Je [[0]] parle [[1]] anglais, seulement espagnol.']],
             blanks: [
               { options: ['ne', "n'", 'pas', 'non'], answer: 'ne', explain: '"Ne" antes de un verbo que empieza por consonante.' },
@@ -174,7 +174,7 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Ana explica a Zhanna',
+            scene: 'Ana explica a Elena',
             lines: [['Ana', 'Elle [[0]] aime [[1]] les légumes.']],
             blanks: [
               { options: ["n'", 'ne', 'pas', 'non'], answer: "n'", explain: '"N\'" ante vocal (aimer empieza por vocal).' },
@@ -182,8 +182,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'David y Marco en clase',
-            lines: [['David', 'Nous [[0]] avons [[1]] de temps ce soir.']],
+            scene: 'Diego y Marco en clase',
+            lines: [['Diego', 'Nous [[0]] avons [[1]] de temps ce soir.']],
             blanks: [
               { options: ["n'", 'ne', 'pas', 'non'], answer: "n'", explain: '"N\'" ante vocal (avons empieza por vocal).' },
               { options: ['pas', 'ne', 'non', 'de'], answer: 'pas', explain: '"Pas de" porque "du temps" → "pas de temps" en negativa.' },
@@ -240,15 +240,15 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'Zhanna habla de sus preferencias',
-            prompt: 'Di dos cosas que Zhanna no hace: no habla alemán y no come carne.',
+            scene: 'Elena habla de sus preferencias',
+            prompt: 'Di dos cosas que Elena no hace: no habla alemán y no come carne.',
             answer: 'Elle ne parle pas allemand. Elle ne mange pas de viande.',
             accepted: ['ne parle pas', 'ne mange pas de'],
             explain: 'Ejemplo: Elle ne parle pas allemand. / Elle ne mange pas de viande.',
           },
           {
-            scene: 'David describe su apartamento',
-            prompt: 'Di que David no tiene coche y no vive en París.',
+            scene: 'Diego describe su apartamento',
+            prompt: 'Di que Diego no tiene coche y no vive en París.',
             answer: "Il n'a pas de voiture. Il n'habite pas à Paris.",
             accepted: ["n'a pas de", "n'habite pas"],
             explain: 'Vocal → n\'. "Une voiture" → "pas de voiture" en negativa.',

@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "Los conectores lógicos en francés: organizar el discurso",
+      heading: '¿Qué son los conectores lógicos en francés?',
       paragraphs: [
         "Los conectores lógicos (mots de liaison o articulateurs) son palabras o expresiones que establecen relaciones lógicas entre ideas: causa, consecuencia, oposición, concesión, adición, ilustración. Sin ellos, el discurso parece una lista de afirmaciones sin relación. Con ellos, el texto fluye de forma argumentativa y persuasiva.",
         "Para hispanohablantes, muchos conectores tienen equivalentes directos: 'donc' = por tanto/entonces, 'cependant' = sin embargo, 'car' = pues/ya que, 'de plus' = además. Sin embargo, el registro varía: 'mais' (pero, oral/informal), 'cependant' (sin embargo, formal), 'néanmoins' (no obstante, muy formal). Conocer estos matices de registro es clave para el nivel B1.",
       ],
     },
     {
-      heading: "Causa y consecuencia: car, puisque, donc, par conséquent",
+      heading: '¿Cómo se expresan causa y consecuencia en francés?',
       paragraphs: [
         "Para expresar causa: 'parce que' (porque, oral) y 'car' (pues/ya que, escrito/formal) introducen la causa desconocida por el interlocutor. 'Puisque' (puesto que, ya que) introduce una causa conocida por ambos o una evidencia: 'Puisque tout le monde est d'accord, on commence!' 'Étant donné que' y 'vu que' son más formales y se usan en textos académicos y profesionales.",
         "Para expresar consecuencia: 'donc' y 'alors' son los más comunes en la lengua oral. En escrito formal: 'ainsi', 'par conséquent', 'c'est pourquoi', 'de ce fait'. 'Ainsi' puede colocarse al inicio de oración con inversión del sujeto: 'Ainsi peut-on conclure que...' — solo en francés muy formal. 'C'est pourquoi' es el más neutro y frecuente en composiciones escritas de nivel B1.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Oposición y concesión: cependant, bien que, pourtant, en revanche",
+      heading: '¿Cómo se expresan la oposición y la concesión en francés?',
       paragraphs: [
         "Los conectores de oposición señalan un contraste entre dos ideas sin que una anule a la otra: 'cependant' (sin embargo), 'pourtant' (sin embargo, a pesar de todo), 'néanmoins' (no obstante), 'toutefois' (sin embargo). 'En revanche' (en cambio) señala un contraste neutro, más descriptivo. 'Or' introduce una información inesperada que modifica el razonamiento anterior.",
         "Los conectores de concesión admiten una idea contraria pero no la refutan completamente: 'bien que + subjonctif' (aunque), 'quoique + subjonctif' (aunque), 'même si + indicatif' (incluso si), 'malgré + nom' (a pesar de). Ejemplo: 'Bien qu'il soit épuisé, il continue à travailler' (Aunque está agotado, sigue trabajando). La clave de 'bien que' y 'quoique' es que requieren subjuntivo.",

@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Ne...plus, ne...jamais, ne...rien: usos y posición',
+      heading: '¿Cómo se usan ne...plus, ne...jamais y ne...rien en francés?',
       paragraphs: [
         'Las negaciones compuestas siguen la misma estructura: ne delante del verbo, y la segunda parte detrás: ne...plus (ya no), ne...jamais (nunca), ne...rien (nada), ne...personne (nadie), ne...que (solo). En tiempos compuestos: rien y jamais van entre el auxiliar y el participio: "Il n\'a jamais voyagé", "Je n\'ai rien mangé". Personne va después del participio: "Je n\'ai vu personne".',
         'En lenguaje oral informal, el ne se omite frecuentemente: "Je mange plus de viande", "Je connais personne", "T\'as rien dit". En escritura y lenguaje formal, el ne es obligatorio.',
       ],
     },
     {
-      heading: 'Ne...que: restricción, no negación completa',
+      heading: '¿Qué significa "ne...que" en francés?',
       paragraphs: [
         'Ne...que no expresa negación total, sino restricción (= seulement): "Je n\'ai que dix euros" = Solo tengo diez euros. "Il ne parle que le français" = Solo habla francés. Que se coloca directamente delante del elemento restringido, no del verbo: "Je ne bois que de l\'eau" (que + de l\'eau, no que + bois).',
         'Rien y personne en posición de sujeto: "Rien ne va dans ce projet" (Nada funciona en este proyecto), "Personne n\'est venu" (Nadie vino). En este caso van delante del ne, antes del verbo.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las negaciones avanzadas del francés?',
+      paragraphs: [
+        'Más allá de ne...pas, el francés tiene un abanico de negaciones que rodean el verbo igual que "pas": ne...plus (ya no), ne...jamais (nunca), ne...rien (nada), ne...personne (nadie), ne...aucun (ninguno) y ne...ni...ni (ni...ni). Dos trampas importantes: "ne...que" NO es una negación sino una restricción equivalente a "solo" ("je n\'ai que 5 euros" = solo tengo 5 euros); y cuando "personne" o "rien" son el sujeto, el orden se invierte ("Personne ne vient", "Rien ne marche"). En el francés hablado el "ne" suele caer, pero la segunda palabra (plus, jamais, rien, personne) se mantiene siempre y es la que carga la negación.',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con las negaciones correctas.',
         type: 'guidedText',
         scene: 'Lucie décrit son ancien appartement.',
-        text: 'Dans mon ancien appartement, je ne dormais [[0]] bien. Il n\'y avait [[1]] de chauffage. Mes voisins ne faisaient [[1]] de bruit, mais le quartier était dangereux. Je ne sortais [[0]] seule le soir. Il n\'y avait [[2]] qui voulait habiter là-bas. Je n\'ai [[3]] regretté d\'être partie.',
+        text: 'Dans mon ancien appartement, je ne dormais [[0]] bien. Il n\'y avait [[1]] de chauffage. Mes voisins ne faisaient [[2]] de bruit, mais le quartier était dangereux. Je ne sortais [[3]] seule le soir. Il n\'y avait [[4]] qui voulait habiter là-bas. Je n\'ai [[5]] regretté d\'être partie.',
         blanks: [
           { options: ['plus', 'jamais', 'rien', 'personne'], answer: 'jamais', explain: '"ne dormais jamais bien / ne sortais jamais" — nunca/jamás.' },
           { options: ['pas', 'jamais', 'plus', 'rien'], answer: 'pas', explain: '"n\'y avait pas de chauffage / ne faisaient pas de bruit" — negación simple ne...pas.' },
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la negación correcta.',
         type: 'freeText',
         scene: 'Complétez avec la bonne négation.',
-        text: 'Je ne veux ___ manger ce soir. (nada) / Il ne travaille ___ ici — il a changé de poste. (ya no) / Elle n\'a vu ___ pendant la fête. (a nadie) / Je n\'ai ___ cinq minutes. (solo)',
+        text: 'Je ne veux [[0]] manger ce soir. (nada) / Il ne travaille [[1]] ici — il a changé de poste. (ya no) / Elle n\'a vu [[2]] pendant la fête. (a nadie) / Je n\'ai [[3]] cinq minutes. (solo)',
         blanks: [
           { answer: 'rien', explain: '"ne veux rien manger" = no quiero comer nada.' },
           { answer: 'plus', explain: '"ne travaille plus" = ya no trabaja.' },

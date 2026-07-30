@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '-기 전에: siempre con el infinitivo',
+      heading: '¿Cómo se usa -기 전에 (antes de) en coreano?',
       paragraphs: [
         'En coreano, "antes de hacer algo" se expresa con -기 전에. La clave es que el verbo que va antes de 전에 siempre lleva el sufijo -기 (el nominalizador verbal) sin conjugar por tiempo: "자기 전에" (antes de dormir), "먹기 전에" (antes de comer), "출발하기 전에" (antes de salir). El tiempo real se expresa en el verbo de la cláusula principal.',
         '"작년에 한국에 가기 전에 한국어를 배웠어요" (el año pasado, antes de ir a Corea, aprendí coreano). El tiempo pasado aparece en "배웠어요", no en "가기 전에".',
       ],
     },
     {
-      heading: '-(으)ㄴ 후에 vs 다음에',
+      heading: '¿Cuál es la diferencia entre -(으)ㄴ 후에 y 다음에?',
       paragraphs: [
         '"후에" y "다음에" son casi sinónimos cuando expresan "después de". Ambos se usan con la forma verbal de modificador de pasado (-(으)ㄴ): "먹은 후에" = "먹은 다음에" (después de comer). La diferencia es muy sutil: 다음에 a veces suena ligeramente más coloquial.',
         'Con sustantivos, ambos van directamente sin modificación: "수업 후에" = "수업 다음에" (después de la clase). Es un nivel A2 por su frecuencia en la vida cotidiana: "학교 끝난 후에 뭐 해요?" (¿Qué haces después de que termine la escuela?).',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa "antes" y "después" en coreano?',
+      paragraphs: [
+        '"Antes de hacer algo" se dice con -기 전에 (-gi jeone), que va SIEMPRE con la raíz del verbo + 기: 자기 전에 (antes de dormir), 밥 먹기 전에 (antes de comer). "Después de hacer algo" se dice con -(으)ㄴ 후에 (-(eu)n hue) o -(으)ㄴ 다음에, que van con la forma de pasado atributivo del verbo: 밥을 먹은 후에 (después de comer). La trampa para el hispanohablante es doble: el orden es inverso al español (la subordinada va ANTES del verbo principal, por el patrón SOV), y 전에 usa la base -기 mientras 후에 usa -(으)ㄴ. Con sustantivos, ambas van directas: 수업 전에 (antes de clase), 수업 후에 (después de clase).',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la descripción de una rutina con 전에/후에.',
         type: 'guidedText',
         scene: '준호가 하루 일과를 설명해요.',
-        text: '아침에 일어난 [[0]] 운동을 해요. 운동하[[1]] 전에 스트레칭을 해요. 샤워한 [[2]] 아침을 먹어요. 학교 [[3]] 친구를 만나요. 수업이 끝난 [[0]] 도서관에서 공부해요.',
+        text: '아침에 일어난 [[0]] 운동을 해요. 운동하[[1]] 전에 스트레칭을 해요. 샤워한 [[2]] 아침을 먹어요. 학교 [[3]] 친구를 만나요. 수업이 끝난 [[4]] 도서관에서 공부해요.',
         blanks: [
           { options: ['후에', '전에', '기에', '다음'], answer: '후에', explain: '"일어난 후에" = después de levantarse.' },
           { options: ['기', '는', 'ㄴ', '고'], answer: '기', explain: '"운동하기 전에" = antes de hacer ejercicio.' },
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta para 전에 o 후에.',
         type: 'freeText',
         scene: '시간 순서 표현을 완성하세요.',
-        text: '자___ 전에 책을 읽어요. / 밥을 먹___ 다음에 커피를 마셔요. / 한국에 오___ 전에 한국어를 배웠어요. / 졸업___ 후에 취직할 거예요.',
+        text: '자[[0]] 전에 책을 읽어요. / 밥을 먹[[1]] 다음에 커피를 마셔요. / 한국에 오[[2]] 전에 한국어를 배웠어요. / 졸업[[3]] 후에 취직할 거예요.',
         blanks: [
           { answer: '기', explain: '"자기 전에" = antes de dormir. -기 + 전에.' },
           { answer: '은', explain: '"먹은 다음에" = después de comer. -은 (consonante final).' },

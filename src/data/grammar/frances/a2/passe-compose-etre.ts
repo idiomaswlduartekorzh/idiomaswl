@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El passé composé con être: movimiento y concordancia",
+      heading: '¿Qué verbos forman el passé composé con être en francés?',
       paragraphs: [
         "Aunque la mayoría de verbos franceses usa avoir en el passé composé, un grupo especial requiere être como auxiliar. Son los verbos de movimiento y cambio de estado: aller, venir, partir, arriver, naître, mourir, sortir, entrer, rester, monter, descendre, retourner, tomber y passer.",
         "Con être, el participio pasado funciona como un adjetivo: concuerda en género y número con el sujeto. Je suis allé (hombre) y je suis allée (mujer) son formas diferentes del mismo verbo. Dominar esta concordancia es esencial para escribir correctamente en francés.",
       ],
     },
     {
-      heading: "Los verbos pronominales y être en el passé composé",
+      heading: '¿Cómo concuerda el participio con être en el passé composé?',
       paragraphs: [
         "Todos los verbos pronominales también usan être en el passé composé. Se lever → je me suis levé(e). Se coucher → tu t'es couché(e). Se retrouver → ils se sont retrouvés. La concordancia sigue las mismas reglas: el participio concuerda con el sujeto.",
         "El truco mnemotécnico DR MRS VANDERTRAMP o la MAISON DE MRS VANDERTRAMP ayuda a memorizar los 14 verbos de movimiento. Cada letra representa uno de los verbos clave. Una vez memorizados estos 14 verbos, sabrás cuándo usar être en lugar de avoir.",
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa être y cuándo avoir en el passé composé?',
+      paragraphs: [
+        'La mayoría de los verbos forman el passé composé con avoir. Solo lo hacen con être un grupo cerrado de verbos de movimiento o cambio de estado (aller, venir, entrer, sortir, monter, descendre, arriver, partir, naître, mourir, rester, tomber, devenir, retourner…), que la tradición memoriza con la sigla "DR & MRS VANDERTRAMP", y TODOS los verbos pronominales (se lever, se laver, se souvenir). La diferencia práctica es la concordancia: con être el participio concuerda con el sujeto en género y número (elle est allée, ils sont partis, elles sont venues), mientras que con avoir no concuerda con el sujeto. Es la trampa número uno del hispanohablante, cuyo "haber" nunca cambia.',
       ],
     },
   ],
@@ -200,7 +206,7 @@ const topic: GrammarTopic = {
         intro: "Escribe las formas correctas de être sin ayuda de opciones.",
         type: 'freeText',
         scene: "Thomas describe su fin de semana a su colega",
-        text: "Ce week-end, je ___ allé chez mes parents. Samedi matin, ma sœur ___ arrivée de Lyon. Nous ___ sortis faire une promenade. Le soir, nous ___ rentrés tard. Dimanche, je ___ resté à la maison.",
+        text: "Ce week-end, je [[0]] allé chez mes parents. Samedi matin, ma sœur [[1]] arrivée de Lyon. Nous [[2]] sortis faire une promenade. Le soir, nous [[3]] rentrés tard. Dimanche, je [[4]] resté à la maison.",
         blanks: [
           { answer: "suis", accepted: ["suis"], explain: "\"Je\" + être → je suis." },
           { answer: "est", accepted: ["est"], explain: "\"Ma sœur\" (elle) → elle est arrivée." },

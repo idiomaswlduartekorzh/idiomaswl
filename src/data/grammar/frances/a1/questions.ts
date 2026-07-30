@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Las tres formas de preguntar en francés',
+      heading: '¿Cómo se hacen preguntas en francés?',
       paragraphs: [
         'A diferencia del español, donde solo se invierte el orden o se añade una entonación, el francés tiene tres sistemas distintos de pregunta. Conocerlos todos te permitirá entender francés en cualquier contexto: conversación informal, textos formales o documentos escritos.',
         'La más fácil de aprender es la pregunta por entonación: tomas una oración afirmativa normal y solo subes la voz al final. "Tu travailles ici ?" Es la forma más usada en el habla cotidiana.',
       ],
     },
     {
-      heading: 'Est-ce que: la forma más versátil',
+      heading: '¿Cómo se usa "est-ce que" en francés?',
       paragraphs: [
         '"Est-ce que" es literalmente "¿es que...?" y se coloca al principio de la pregunta sin cambiar el orden de la oración. "Est-ce que vous parlez espagnol ?" = "¿Hablan español?" Es la forma más recomendada para principiantes porque nunca falla y es correcta en todos los contextos.',
         'Ante vocal o h muda, "que" pierde la "e": "Est-ce qu\'il habite ici ?" / "Est-ce qu\'elle aime le café ?" Esta elisión es obligatoria en la escritura.',
       ],
     },
     {
-      heading: 'Las palabras interrogativas esenciales',
+      heading: '¿Cuáles son las palabras interrogativas en francés?',
       paragraphs: [
         'Las palabras interrogativas más importantes en A1: qui (quién), que / qu\'est-ce que (qué), où (dónde), quand (cuándo), comment (cómo), pourquoi (por qué), combien (cuánto / cuántos).',
         'Con estas palabras, la estructura más común en A1 es: interrogativa + est-ce que + sujeto + verbo. "Où est-ce que tu habites ?" / "Quand est-ce qu\'elle arrive ?" / "Pourquoi est-ce que vous étudiez le français ?"',
@@ -102,15 +102,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David quiere saber si Carlos habla inglés',
-            lines: [['David', '___-tu anglais ?']],
+            scene: 'Gael quiere saber si Carlos habla inglés',
+            lines: [['Gael', '___-tu anglais ?']],
             options: ['Parles', 'Parle', 'Parlons', 'Parlent'],
             answer: 'Parles',
             explain: 'Inversión con "tu": "Parles-tu anglais ?" Recuerda el guion.',
           },
           {
-            scene: 'Zhanna pregunta dónde vive Ana',
-            lines: [['Zhanna', '___ est-ce que tu habites ?']],
+            scene: 'Nora pregunta dónde vive Ana',
+            lines: [['Nora', '___ est-ce que tu habites ?']],
             options: ['Où', 'Quand', 'Comment', 'Pourquoi'],
             answer: 'Où',
             explain: '"Où" = dónde. "Où est-ce que tu habites ?" pregunta la ubicación.',
@@ -130,8 +130,8 @@ const topic: GrammarTopic = {
             explain: 'Pregunta por entonación: orden normal + sube el tono. "Tu parles le français ?"',
           },
           {
-            scene: 'David pregunta cómo se llama alguien',
-            lines: [['David', '___ est-ce que vous vous appelez ?']],
+            scene: 'Gael pregunta cómo se llama alguien',
+            lines: [['Gael', '___ est-ce que vous vous appelez ?']],
             options: ['Comment', 'Où', 'Quand', 'Combien'],
             answer: 'Comment',
             explain: '"Comment" = cómo. "Comment est-ce que vous vous appelez ?"',
@@ -168,15 +168,15 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Carlos pregunta la ubicación',
-            lines: [['Carlos', '[[0]] est-ce que vous [[1]] ?  (habiter)']],
+            lines: [['Carlos', '[[0]] est-ce que vous [[1]] ? (habiter)']],
             blanks: [
               { options: ['Où', 'Quand', 'Comment', 'Pourquoi'], answer: 'Où', explain: '"Où" pregunta por el lugar.' },
               { options: ['habitez', 'habites', 'habitons', 'habite'], answer: 'habitez', explain: '"Vous" → "habitez" (terminación -ez).' },
             ],
           },
           {
-            scene: 'David quiere saber el nombre',
-            lines: [['David', '[[0]] est-ce qu\'il [[1]] ?  (s\'appeler → s\'appelle)']],
+            scene: 'Gael quiere saber el nombre',
+            lines: [['Gael', '[[0]] est-ce qu\'il [[1]] ? (s\'appeler → s\'appelle)']],
             blanks: [
               { options: ['Comment', 'Où', 'Quand', 'Qui'], answer: 'Comment', explain: '"Comment" pregunta el nombre o la manera.' },
               { options: ["s'appelle", "s'appelles", "s'appellent", "s'appellez"], answer: "s'appelle", explain: '"Il" → "s\'appelle".' },
@@ -184,15 +184,15 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sofia pregunta informalmente',
-            lines: [['Sofia', 'Tu [[0]] le café ? (aimer → aimes)  [[1]] ?']],
+            lines: [['Sofia', 'Tu [[0]] le café ? (aimer → aimes) [[1]] ?']],
             blanks: [
               { options: ['aimes', 'aime', 'aimez', 'aimons'], answer: 'aimes', explain: '"Tu" → "aimes" (terminación -es).' },
               { options: ['Non ?', 'Oui ?', '?', '!'], answer: 'Non ?', explain: 'Pregunta por entonación: la frase afirmativa con signo de interrogación.' },
             ],
           },
           {
-            scene: 'Zhanna pregunta cuándo estudia Marco',
-            lines: [['Zhanna', '[[0]] est-ce que Marco [[1]] ? (étudier → étudie)']],
+            scene: 'Nora pregunta cuándo estudia Marco',
+            lines: [['Nora', '[[0]] est-ce que Marco [[1]] ? (étudier → étudie)']],
             blanks: [
               { options: ['Quand', 'Où', 'Comment', 'Combien'], answer: 'Quand', explain: '"Quand" = cuándo.' },
               { options: ['étudie', 'étudies', 'étudiez', 'étudient'], answer: 'étudie', explain: '"Marco" (il) → "étudie".' },
@@ -204,10 +204,10 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Entrevista en contexto',
         tag: 'Texto guiado',
-        intro: 'Lina entrevista a David para un artículo del blog WeLearn. Elige la forma correcta de cada pregunta.',
+        intro: 'Lina entrevista a Gael para un artículo del blog WeLearn. Elige la forma correcta de cada pregunta.',
         type: 'guidedText',
-        scene: 'Lina entrevista a David para el blog de WeLearn. Completa las preguntas con la forma correcta.',
-        text: 'Lina : [[0]] habitez-vous, David ? — David : J\'habite à Bucaramanga. Lina : [[1]] langues est-ce que vous parlez ? — David : Huit langues. Lina : [[2]] est-ce que vous avez commencé à étudier les langues ? — David : À l\'âge de 12 ans. Lina : [[3]] est-ce que vous aimez le plus ? — David : La connexion humaine. Lina : Et [[4]] êtes-vous professeur ? — David : Parce que j\'adore partager.',
+        scene: 'Lina entrevista a Gael para el blog de WeLearn. Completa las preguntas con la forma correcta.',
+        text: 'Lina : [[0]] habitez-vous, Gael ? — Gael : J\'habite à Bucaramanga. Lina : [[1]] langues est-ce que vous parlez ? — Gael : Huit langues. Lina : [[2]] est-ce que vous avez commencé à étudier les langues ? — Gael : À l\'âge de 12 ans. Lina : [[3]] est-ce que vous aimez le plus ? — Gael : La connexion humaine. Lina : Et [[4]] êtes-vous professeur ? — Gael : Parce que j\'adore partager.',
         blanks: [
           { options: ['Où', 'Quand', 'Comment', 'Pourquoi'], answer: 'Où', explain: '"Où habitez-vous ?" — inversión formal para preguntar el lugar.' },
           { options: ['Combien de', 'Qui', 'Où', 'Quand'], answer: 'Combien de', explain: '"Combien de langues ?" — cuántos/cuántas.' },
@@ -241,14 +241,14 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'David conoce a un nuevo estudiante',
+            scene: 'Gael conoce a un nuevo estudiante',
             prompt: 'Escribe la pregunta: "¿Dónde vives?" usando est-ce que (tú informal).',
             answer: 'Où est-ce que tu habites ?',
             accepted: ['où est-ce que tu habites', "où est-ce qu'il habite", 'où habites-tu'],
             explain: 'Ejemplo: Où est-ce que tu habites ? / Où est-ce qu\'il habite ?',
           },
           {
-            scene: 'Zhanna entrevista a Carlos',
+            scene: 'Nora entrevista a Carlos',
             prompt: 'Escribe: "¿Cuántas lenguas hablas?" con est-ce que.',
             answer: 'Combien de langues est-ce que tu parles ?',
             accepted: ['combien de langues est-ce que', 'combien de langues parles-tu'],

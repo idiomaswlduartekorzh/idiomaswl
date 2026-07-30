@@ -46,21 +46,21 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Hiragana: el primer sistema de escritura del japonés',
+      heading: '¿Qué es el hiragana y por qué aprenderlo primero?',
       paragraphs: [
         'El hiragana (ひらがな) es un sistema de escritura silábica que representa 46 sílabas básicas del japonés. A diferencia de un alfabeto donde cada letra es un sonido (consonante o vocal), en el hiragana cada carácter representa una mora completa: ka, ki, ku, ke, ko (か、き、く、け、こ).',
         'Aprender el hiragana es el primer paso absoluto para el japonés. Sin él no puedes leer partículas gramaticales, conjugaciones verbales ni la mayoría de palabras nativas. Para el hispanohablante hay buenas noticias: los sonidos del japonés son muy similares a los del español. Las vocales a/i/u/e/o se pronuncian casi igual que en español.',
       ],
     },
     {
-      heading: 'Las irregularidades de las filas さ y た',
+      heading: '¿Cuáles son las irregularidades de las filas さ y た?',
       paragraphs: [
         'El patrón general del hiragana es [consonante] + [vocal]. Pero hay excepciones importantes en dos filas. En la fila さ (s): し no es "si" sino "shi" — el japonés tiene este sonido palatal. En la fila た (t): ち no es "ti" sino "chi" y つ no es "tu" sino "tsu".',
         'Estas irregularidades son históricas y fonéticas. Para los hispanohablantes son fáciles porque usamos "sh" como en "shampoo" para "shi", y "ch" como en "chocolate" para "chi". El sonido "tsu" es nuevo para el hispanohablante pero se practica con palabras como "tsuki" (luna) o "tsunami" (ola gigante).',
       ],
     },
     {
-      heading: 'Vocales largas y ん: los dos casos especiales',
+      heading: '¿Cómo funcionan las vocales largas y ん en hiragana?',
       paragraphs: [
         'El hiragana tiene dos particularidades. La primera: las vocales largas (おかあさん = okaasan = madre) se escriben repitiendo la vocal. La segunda: ん es el único carácter que no tiene vocal — representa solo la consonante n al final de sílaba o antes de otra consonante: にほん = nihon (Japón).',
         'Para A1, lo más importante es dominar las 46 formas básicas y reconocerlas en lectura. La escritura a mano es secundaria en un primer nivel pero ayuda mucho a la memorización. Se recomienda practicar trazando cada carácter en orden.',
@@ -90,56 +90,56 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Vocal',
-            lines: [['David', '¿Cómo se lee? → あ']],
+            lines: [['Hugo', '¿Cómo se lee? → あ']],
             options: ['a', 'i', 'u', 'e'],
             answer: 'a',
             explain: 'あ = a. Primera vocal del hiragana.',
           },
           {
             scene: 'Vocal',
-            lines: [['David', '¿Cómo se lee? → い']],
+            lines: [['Hugo', '¿Cómo se lee? → い']],
             options: ['i', 'a', 'u', 'e'],
             answer: 'i',
             explain: 'い = i. Segunda vocal del hiragana.',
           },
           {
             scene: 'Fila か',
-            lines: [['David', '¿Cómo se lee? → か']],
+            lines: [['Hugo', '¿Cómo se lee? → か']],
             options: ['ka', 'ki', 'sa', 'ta'],
             answer: 'ka',
             explain: 'か = ka. Consonante k + vocal a.',
           },
           {
             scene: 'Fila さ (irregular)',
-            lines: [['David', '¿Cómo se lee? → し']],
+            lines: [['Hugo', '¿Cómo se lee? → し']],
             options: ['shi', 'si', 'chi', 'su'],
             answer: 'shi',
             explain: 'し = shi (no "si"). Irregular en la fila さ.',
           },
           {
             scene: 'Fila た (irregular)',
-            lines: [['David', '¿Cómo se lee? → ち']],
+            lines: [['Hugo', '¿Cómo se lee? → ち']],
             options: ['chi', 'ti', 'tsu', 'ki'],
             answer: 'chi',
             explain: 'ち = chi (no "ti"). Irregular en la fila た.',
           },
           {
             scene: 'Fila た (irregular)',
-            lines: [['David', '¿Cómo se lee? → つ']],
+            lines: [['Hugo', '¿Cómo se lee? → つ']],
             options: ['tsu', 'tu', 'su', 'ku'],
             answer: 'tsu',
             explain: 'つ = tsu (no "tu"). Irregular, como en "tsunami".',
           },
           {
             scene: 'Fila な',
-            lines: [['David', '¿Cómo se lee? → の']],
+            lines: [['Hugo', '¿Cómo se lee? → の']],
             options: ['no', 'na', 'ne', 'ni'],
             answer: 'no',
             explain: 'の = no. También es la partícula posesiva del japonés.',
           },
           {
             scene: 'Consonante especial',
-            lines: [['David', '¿Cómo se lee? → ん']],
+            lines: [['Hugo', '¿Cómo se lee? → ん']],
             options: ['n', 'na', 'nu', 'ni'],
             answer: 'n',
             explain: 'ん = n. La única consonante sin vocal del hiragana.',
@@ -155,7 +155,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Palabra: いぬ',
-            lines: [['David', 'いぬ = [[0]] + [[1]] = ¿qué significa?']],
+            lines: [['Hugo', 'いぬ = [[0]] + [[1]] = ¿qué significa?']],
             blanks: [
               { options: ['i', 'a', 'u'], answer: 'i', explain: 'い = i.' },
               { options: ['nu', 'na', 'ni'], answer: 'nu', explain: 'ぬ = nu. いぬ = inu = perro.' },
@@ -163,7 +163,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Palabra: ねこ',
-            lines: [['David', 'ねこ = [[0]] + [[1]] = gato']],
+            lines: [['Hugo', 'ねこ = [[0]] + [[1]] = gato']],
             blanks: [
               { options: ['ne', 'na', 'ni'], answer: 'ne', explain: 'ね = ne.' },
               { options: ['ko', 'ka', 'ku'], answer: 'ko', explain: 'こ = ko. ねこ = neko = gato.' },
@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Palabra: さけ',
-            lines: [['David', 'さけ = [[0]] + [[1]] = sake (alcohol de arroz)']],
+            lines: [['Hugo', 'さけ = [[0]] + [[1]] = sake (alcohol de arroz)']],
             blanks: [
               { options: ['sa', 'si', 'su'], answer: 'sa', explain: 'さ = sa.' },
               { options: ['ke', 'ki', 'ku'], answer: 'ke', explain: 'け = ke. さけ = sake.' },
@@ -179,7 +179,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Palabra: にほん',
-            lines: [['David', 'にほん = [[0]] + ho + [[1]] = Japón (nihon)']],
+            lines: [['Hugo', 'にほん = [[0]] + ho + [[1]] = Japón (nihon)']],
             blanks: [
               { options: ['ni', 'na', 'nu'], answer: 'ni', explain: 'に = ni.' },
               { options: ['n', 'na', 'no'], answer: 'n', explain: 'ん = n final. にほん = nihon = Japón.' },

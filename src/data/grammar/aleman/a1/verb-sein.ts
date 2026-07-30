@@ -49,7 +49,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Conjugación completa de sein',
+      heading: '¿Cómo se conjuga el verbo sein en alemán?',
       paragraphs: [
         'Ich bin (yo soy/estoy), du bist (tú eres/estás), er/sie/es ist (él/ella/ello es/está), wir sind (nosotros somos/estamos), ihr seid (vosotros sois/estáis), sie/Sie sind (ellos son / usted es).',
       ],
@@ -64,7 +64,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Sein para profesión y nacionalidad',
+      heading: '¿Cómo se usa sein para profesión y nacionalidad en alemán?',
       paragraphs: [
         'Con sein para expresar profesión o nacionalidad en alemán, NO se usa artículo: Ich bin Lehrer (soy profesor), Er ist Arzt (es médico), Sie ist Studentin (es/ella es estudiante). Esta es una de las diferencias más importantes con el español.',
         'Para nacionalidades: Ich bin Spanier (soy español), Sie ist Kolumbianerin (es colombiana). El femenino de las nacionalidades añade generalmente -in.',

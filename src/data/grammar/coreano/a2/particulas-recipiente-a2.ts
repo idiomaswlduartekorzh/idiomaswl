@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '에게 vs 한테: mismo significado, diferente registro',
+      heading: '¿Cuál es la diferencia entre 에게 y 한테 en coreano?',
       paragraphs: [
         'En coreano, las partículas 에게 (ege) y 한테 (hante) tienen exactamente el mismo significado — ambas marcan el destinatario de una acción dirigida a una persona. La diferencia es el registro: 에게 es más formal y se usa en escritura; 한테 es más informal y coloquial.',
         '"친구에게 전화했어요" (formal/escrito) = "친구한테 전화했어요" (coloquial) = Llamé a mi amigo por teléfono. En el habla cotidiana, los coreanos usan 한테 con mucha más frecuencia que 에게.',
       ],
     },
     {
-      heading: '께: la forma honorífica imprescindible',
+      heading: '¿Cuándo se usa la partícula honorífica 께 en coreano?',
       paragraphs: [
         '께 (kke) es la forma honorífica de 에게 y se usa cuando el destinatario es una persona de mayor edad o rango social: padres, profesores, jefes, abuelos. "어머니께 드렸어요" (se lo di a mi madre), "교수님께 이메일을 보냈어요" (le mandé un email al profesor).',
         'Es un error grave de cortesía usar 한테 con superiores en contextos formales. "선생님한테 선물을 줬어요" suena muy informal e inapropiado. La forma correcta es "선생님께 드렸어요" (se lo di al profesor) — nótese también que con 께 se usa 드리다 en lugar de 주다.',
+      ],
+    },
+    {
+      heading: '¿Qué partículas marcan el destinatario en coreano (에게/한테/께)?',
+      paragraphs: [
+        'Las tres marcan "a alguien" (el destinatario de dar, decir, enviar, etc.) y se diferencian por registro. 에게 (ege) es la forma escrita y algo más formal: 친구에게 편지를 썼어요 (escribí una carta a un amigo). 한테 (hante) es la coloquial, idéntica en significado: 친구한테 말했어요 (le dije a un amigo). 께 (kke) es la honorífica, para personas a las que se respeta: 선생님께 드렸어요 (se lo di al profesor). Ojo: estas partículas son para PERSONAS o seres animados; con lugares o cosas se usa 에 (학교에 갔어요 = fui a la escuela). Para el origen ("de alguien") se añade 서: 친구한테서 받았어요 (lo recibí de un amigo).',
       ],
     },
   ],
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la historia usando las partículas correctas.',
         type: 'guidedText',
         scene: '민준이가 생일 파티를 준비해요.',
-        text: '어머니[[0]] 생일이에요. 저는 어머니[[1]] 꽃을 드렸어요. 그리고 친구[[2]] 케이크를 부탁했어요. 친구[[3]] 케이크가 왔어요. 어머니[[1]] 카드도 썼어요.',
+        text: '어머니[[0]] 생일이에요. 저는 어머니[[1]] 꽃을 드렸어요. 그리고 친구[[2]] 케이크를 부탁했어요. 친구[[3]] 케이크가 왔어요. 어머니[[4]] 카드도 썼어요.',
         blanks: [
           { options: ['의', '께', '한테', '에서'], answer: '의', explain: '"어머니의 생일" = el cumpleaños de mi madre (partícula posesiva).' },
           { options: ['께', '한테', '에게서', '에서'], answer: '께', explain: '"어머니께 드렸어요" = le di a mi madre (honorífico).' },
@@ -184,7 +190,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la partícula correcta (에게/한테/께/에게서/한테서).',
         type: 'freeText',
         scene: '파티클을 골라 써 보세요.',
-        text: '동생___ 선물을 줬어요. / 교수님___ 메일을 보냈어요. / 친구___ 전화가 왔어요. / 부모님___ 감사했어요.',
+        text: '동생[[0]] 선물을 줬어요. / 교수님[[1]] 메일을 보냈어요. / 친구[[2]] 전화가 왔어요. / 부모님[[3]] 감사했어요.',
         blanks: [
           { answer: '한테/에게', explain: '"동생한테/에게" = a mi hermano menor (한테 más coloquial).' },
           { answer: '께', explain: '"교수님께" = al profesor (honorífico obligatorio).' },

@@ -48,10 +48,16 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Da + presente en italiano: la diferencia con el español',
+      heading: 'Da + presente en italiano: la estructura y sus usos',
       paragraphs: [
-        'En español decimos "llevo tres años viviendo en Roma" o "hace tres años que vivo en Roma" usando perífrasis verbales. En italiano el equivalente es mucho más sencillo: simplemente se usa el presente + da. Vivo a Roma da tre anni.',
-        'El error más común para hispanohablantes es usar el passato prossimo (equivalente al pretérito perfecto compuesto): "Ho vissuto qui da tre anni" ✗. En italiano esta construcción es incorrecta. Siempre se usa el presente indicativo cuando la acción sigue en curso.',
+        'Donde el español dice "llevo tres años viviendo aquí" o "hace tres años que vivo aquí", el italiano usa simplemente presente + da: "Vivo qui da tre anni". La clave: la acción empezó en el pasado y SIGUE ahora, por eso va en presente (no en passato prossimo). Esta tabla resume las estructuras con "da" y su contraste con "fa":',
+      ],
+      table: [
+        ['Estructura', 'Uso', 'Ejemplo'],
+        ['presente + da + duración', 'acción que sigue en curso', 'Studio italiano da due anni.'],
+        ['presente + da + momento', 'desde cuándo', 'Lavoro qui da gennaio.'],
+        ['[tiempo] + fa + passato prossimo', 'cuándo ocurrió (terminada)', 'Sono arrivato due anni fa.'],
+        ['Da quanto tempo + presente?', 'preguntar la duración', 'Da quanto tempo studi?'],
       ],
     },
     {
@@ -59,6 +65,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         '"Da" indica el inicio de una acción que continúa en el presente: studio italiano da sei mesi (llevo seis meses y sigo estudiando). "Fa" se usa para indicar cuánto tiempo atrás ocurrió una acción puntual ya terminada: sei mesi fa ho iniziato a studiare (hace seis meses empecé a estudiar).',
         'La regla de oro: si la acción continúa ahora → presente + da. Si la acción ya terminó y sólo indicamos cuándo fue → [tiempo] + fa + passato prossimo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "llevo X tiempo haciendo algo" en italiano?',
+      paragraphs: [
+        'Con presente + da + tiempo: "Studio italiano da sei mesi" (llevo seis meses estudiando italiano), "Vivo qui da tre anni" (llevo tres años viviendo aquí). No se usa el passato prossimo porque la acción continúa en el presente.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "da" y "fa" en italiano?',
+      paragraphs: [
+        '"da" + presente marca una acción que empezó antes y sigue ahora: "Aspetto da un\'ora" (llevo una hora esperando). "fa" + passato prossimo marca cuándo ocurrió algo ya terminado: "Sono arrivato un\'ora fa" (llegué hace una hora). Da = continúa; fa = terminó.',
+      ],
+    },
+    {
+      heading: '¿Por qué se usa el presente y no el passato prossimo con "da"?',
+      paragraphs: [
+        'Porque la acción sigue ocurriendo. "Studio da due anni" = empecé hace dos años y todavía estudio, así que va en presente. "Ho studiato da due anni" es incorrecto. Es una diferencia importante frente al español, que usa perífrasis ("llevo… ", "hace… que").',
       ],
     },
   ],
@@ -102,7 +126,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El trabajo',
-            lines: [['David', '___ in questa scuola da settembre.']],
+            lines: [['Tomás', '___ in questa scuola da settembre.']],
             options: ['Lavoro', 'Ho lavorato', 'Lavoravo', 'Lavorerò'],
             answer: 'Lavoro',
             explain: 'Sigue trabajando ahora → presente. Lavoro qui da settembre.',
@@ -137,7 +161,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La espera',
-            lines: [['Zhanna', 'Aspetto l\'autobus ___ venti minuti!']],
+            lines: [['Iris', 'Aspetto l\'autobus ___ venti minuti!']],
             options: ['da', 'fa', 'per', 'di'],
             answer: 'da',
             explain: 'Sigo esperando ahora → presente + da. Aspetto da venti minuti.',
@@ -177,10 +201,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La espera',
-            lines: [['David', '[[0]] da mezz\'ora! Dov\'è Marco?']],
+            lines: [['Tomás', '[[0]] [[1]] mezz\'ora! Dov\'è Marco?']],
             blanks: [
               { options: ['Aspetto', 'Ho aspettato', 'Aspettavo'], answer: 'Aspetto', explain: 'Sigo esperando → presente.' },
-              { options: ['da', 'fa', 'per'], answer: 'da', explain: 'Este blank ya está en el texto: "da mezz\'ora".' },
+              { options: ['da', 'fa', 'per'], answer: 'da', explain: 'Aspetto da mezz\'ora — da + duración con presente.' },
             ],
           },
         ],
@@ -207,8 +231,8 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Completa con el verbo correcto en presente o el tiempo indicado.',
         type: 'freeText',
-        scene: 'David habla de su experiencia como profesor en WeLearn',
-        text: 'Insegno lingue [[0]] cinque anni. [[1]] questa scuola da gennaio. Due anni [[2]] ho fondato WeLearn con Zhanna. [[3]] l\'italiano e il coreano [[4]] più di tre anni.',
+        scene: 'Tomás habla de su experiencia como profesor en WeLearn',
+        text: 'Insegno lingue [[0]] cinque anni. [[1]] questa scuola da gennaio. Due anni [[2]] ho fondato WeLearn con Iris. [[3]] l\'italiano e il coreano [[4]] più di tre anni.',
         blanks: [
           { answer: 'da', explain: 'Sigo enseñando → presente + da.' },
           { answer: 'Gestisco', explain: 'Gestire: sigo gestionando → presente: gestisco.' },

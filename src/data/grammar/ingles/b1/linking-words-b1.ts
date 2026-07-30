@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         'Para ejemplos: "for example" y "for instance" van al inicio de oración o entre comas: "There are many ways to learn English. For instance, you can watch series, listen to podcasts or take a class." "Such as" va inmediatamente antes de los ejemplos sin coma: "Some languages, such as Chinese and Arabic, use different writing systems." Para secuencia: first/firstly, secondly, then, next, finally, lastly.',
       ],
     },
+    {
+      heading: '¿Cuáles son los conectores (linking words) más usados en inglés B1?',
+      paragraphs: [
+        'De contraste: however, although, despite/in spite of, whereas. De causa: because, since, as, due to. De consecuencia: so, therefore, as a result. De adición: moreover, in addition, furthermore. De propósito: so that, in order to. Dan cohesión y madurez al texto.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "although" y "despite"?',
+      paragraphs: [
+        '"although" va seguido de una frase completa (sujeto + verbo): "Although it was raining, we went out". "despite/in spite of" va seguido de un sustantivo o -ing: "Despite the rain, we went out". Mismo significado, distinta construcción.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "because" y "because of"?',
+      paragraphs: [
+        '"because" + frase completa ("because it was late"); "because of" + sustantivo ("because of the delay"). El error típico del hispanohablante es usar "because of" con una frase con verbo.',
+      ],
+    },
   ],
 
   visual: {

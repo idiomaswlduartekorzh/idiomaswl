@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'La voz pasiva en japones: 受け身 (ukemi)',
+      heading: '¿Cómo se forma la voz pasiva 受け身 (ukemi) en japonés?',
       paragraphs: [
         'La voz pasiva (受け身) en japones se forma de manera sistematica: Grupo 1 cambia la vocal final de う a あ y agrega れる (書く→書かれる, 飲む→飲まれる), mientras que el Grupo 2 simplemente agrega られる (食べる→食べられる). Los irregulares son する→される y くる→こられる.',
         'El agente de la accion (quien la realiza) se marca con に: 先生に褒められました = Fui elogiado por el profesor. El sujeto que recibe la accion lleva は o が.',
       ],
     },
     {
-      heading: 'El pasivo de molestia (迷惑受け身)',
+      heading: '¿Qué es el pasivo de molestia (迷惑受け身)?',
       paragraphs: [
         'Una caracteristica unica del japones es el "pasivo de molestia": el sujeto sufre una consecuencia negativa por la accion de otro. 雨に降られました = Me cayo encima la lluvia (me molesto). 友達に来られて、困った = Mi amigo vino y me causo inconveniente.',
         'Este uso no tiene traduccion directa al espanol y es esencial para entender el japones natural. La pasiva de molestia implica que la accion afecto negativamente al sujeto.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga el pasivo y qué partícula marca al agente?',
+      paragraphs: [
+        'El pasivo (受け身) se forma según el grupo. Grupo 1 (godan): última -u → -areru: 書く→書かれる, 話す→話される, 読む→読まれる. Grupo 2 (ichidan): quitar る + られる: 食べる→食べられる, 見る→見られる. Irregulares: する→される, 来る→来られる (こられる). En la frase pasiva, el que recibe la acción va con は/が y el agente (quien la hace) se marca con に: 私は先生にほめられました (fui elogiado por el profesor). La trampa para el hispanohablante es doble: (1) el agente lleva に, no "por" con otra partícula; (2) la forma del grupo 2 (食べられる) es idéntica al potencial, y solo el contexto y la partícula に las distinguen. Existe además el 迷惑受け身 (pasivo de molestia), que expresa que algo te afectó negativamente: 雨に降られた (me pilló la lluvia).',
       ],
     },
   ],
@@ -96,7 +102,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Ser elogiado — 褒める (homeru)',
             lines: [['Carlos', '先生に___。(fui elogiado por el profesor)']],
-            options: ['褒められました', '褒められました', '褒まれました', '褒もれました'],
+            options: ['褒められました', '褒まれました', '褒もれました'],
             answer: '褒められました',
             explain: '褒める (Gr.2): 褒め + られる → 褒められる → pasado: 褒められました.',
           },
@@ -109,7 +115,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ser robado — 盗む (nusumu)',
-            lines: [['David', '財布を___。(me robaron la cartera)']],
+            lines: [['Diego', '財布を___。(me robaron la cartera)']],
             options: ['盗まれました', '盗みれました', '盗もれました', '盗れました'],
             answer: '盗まれました',
             explain: '盗む (Gr.1): む→ま+れる = 盗まれる → 盗まれました.',
@@ -137,14 +143,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Pasivo de molestia — lluvia',
-            lines: [['Jose', '帰り道に___。(me pillo la lluvia de camino a casa)']],
+            lines: [['Hugo', '帰り道に___。(me pillo la lluvia de camino a casa)']],
             options: ['雨に降られました', '雨が降りました', '雨で濡れました', '雨に降りました'],
             answer: '雨に降られました',
             explain: '降る (furu, Gr.1): る→ら+れる → 降られる. Pasivo de molestia: la lluvia me pillo.',
           },
           {
             scene: 'Libro escrito — 書く (kaku)',
-            lines: [['Zhanna', 'このレポートは夏目漱石に___。(este libro fue escrito por Natsume Soseki)']],
+            lines: [['Marta', 'このレポートは夏目漱石に___。(este libro fue escrito por Natsume Soseki)']],
             options: ['書かれました', '書きれました', '書けました', '書いられました'],
             answer: '書かれました',
             explain: '書く (Gr.1): く→か+れる = 書かれる → 書かれました.',
@@ -176,7 +182,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Sobre el libro',
-            lines: [['David', 'この小説は誰に[[0]]か？'], ['Ana', '村上春樹に[[1]]。']],
+            lines: [['Diego', 'この小説は誰に[[0]]か？'], ['Ana', '村上春樹に[[1]]。']],
             blanks: [
               { options: ['書かれましたか', '書きましたか', '書れましたか'], answer: '書かれましたか', explain: '書く→書かれる → 書かれましたか？' },
               { options: ['書かれました', '書きました', '書れました'], answer: '書かれました', explain: '書く→書かれる → 書かれました.' },
@@ -214,7 +220,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma pasiva del verbo en parentesis.',
         type: 'freeText',
-        scene: 'Zhanna describe lo que le paso en la oficina',
+        scene: 'Marta describe lo que le paso en la oficina',
         text: '今日、会議で発表が先生に[[0]] (直す)。作ったプレゼンも[[1]] (批判する)。名前も間違えて[[2]] (呼ぶ)。でも、最後に部長に[[3]] (褒める)。来週はもっとがんばって、誰にも[[4]] (怒る)ないようにしたい。',
         blanks: [
           { answer: '直されました', explain: '直す (naosu, Gr.1): す→さ+れる = 直される → 直されました.' },

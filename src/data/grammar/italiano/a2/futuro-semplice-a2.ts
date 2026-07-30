@@ -50,17 +50,53 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El futuro semplice en italiano: usos principales',
+      heading: 'La conjugación del futuro semplice: -are, -ere, -ire',
       paragraphs: [
-        'El futuro semplice italiano se usa para hablar de planes futuros (Domani andrò a Roma), predicciones (L\'anno prossimo farà molto caldo) y promesas (Ti chiamerò appena arrivo). En el italiano informal, a menudo se prefiere el presente indicativo para planes inmediatos, igual que en español.',
-        'El italiano también usa el futuro para expresar suposiciones sobre el presente, lo que en español expresaríamos con "deber de" o "a lo mejor". Por ejemplo: "Dov\'è Marco?" — "Sarà a casa." (¿Dónde está Marco? — Estará en casa, o sea debe estar en casa).',
+        'Las terminaciones del futuro son iguales para las tres conjugaciones: -ò, -ai, -à, -emo, -ete, -anno. La única particularidad es que los verbos -are cambian la -a- en -e- (parlare → parler-ò). Esta es la tabla completa:',
+      ],
+      table: [
+        ['Persona', 'parlare (-are)', 'vedere (-ere)', 'dormire (-ire)'],
+        ['io', 'parlerò', 'vedrò', 'dormirò'],
+        ['tu', 'parlerai', 'vedrai', 'dormirai'],
+        ['lui/lei', 'parlerà', 'vedrà', 'dormirà'],
+        ['noi', 'parleremo', 'vedremo', 'dormiremo'],
+        ['voi', 'parlerete', 'vedrete', 'dormirete'],
+        ['loro', 'parleranno', 'vedranno', 'dormiranno'],
       ],
     },
     {
-      heading: 'Irregulares del futuro semplice',
+      heading: 'Los irregulares del futuro: raíz irregular, terminaciones normales',
       paragraphs: [
-        'Los verbos irregulares en futuro cambian la raíz pero usan las mismas terminaciones que los regulares. Los más frecuentes: essere→sarò, avere→avrò, andare→andrò, fare→farò, dare→darò, stare→starò, venire→verrò, volere→vorrò, potere→potrò, dovere→dovrò.',
-        'Los verbos en -care/-gare conservan el sonido duro: cercare→cercherò, pagare→pagherò. Los en -ciare/-giare pierden la i antes de las terminaciones: mangiare→mangerò, cominciare→comincerò.',
+        'Los irregulares cambian la raíz pero usan las MISMAS terminaciones. Buena noticia: la raíz irregular del futuro es idéntica a la del condicional, así que aprender una sirve para las dos. Estas son las más frecuentes:',
+      ],
+      table: [
+        ['Infinitivo', 'Raíz futura', 'io (futuro)'],
+        ['essere', 'sar-', 'sarò'],
+        ['avere', 'avr-', 'avrò'],
+        ['andare', 'andr-', 'andrò'],
+        ['fare', 'far-', 'farò'],
+        ['venire', 'verr-', 'verrò'],
+        ['volere', 'vorr-', 'vorrò'],
+        ['potere', 'potr-', 'potrò'],
+        ['dovere', 'dovr-', 'dovrò'],
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el futuro semplice en italiano?',
+      paragraphs: [
+        'Se toma el infinitivo (sin la -e final) y se añaden -ò, -ai, -à, -emo, -ete, -anno. Los -are cambian la a por e: parlare → parlerò. Ejemplo: partirò, partirai, partirà, partiremo, partirete, partiranno. Los verbos en -care/-gare añaden h (cercherò, pagherò).',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los verbos irregulares del futuro en italiano?',
+      paragraphs: [
+        'essere (sarò), avere (avrò), andare (andrò), fare (farò), dare (darò), stare (starò), venire (verrò), volere (vorrò), potere (potrò), dovere (dovrò), tenere (terrò). Cambian la raíz pero conservan las terminaciones regulares. La misma raíz se usa en el condizionale.',
+      ],
+    },
+    {
+      heading: '¿Se usa el futuro después de "se" (si) en italiano?',
+      paragraphs: [
+        'No en la cláusula de condición real: se dice "Se viene, ti chiamo" o "Se verrà, ti chiamerò" (el futuro va en la principal, no tras "se" con presente). El error típico es "Se verrà..." en lugar de "Se viene...". En la oración principal sí puede ir el futuro.',
       ],
     },
   ],
@@ -104,14 +140,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los amigos llegan',
-            lines: [['David', 'I miei amici ___ venerdì sera. (arrivare / loro)']],
+            lines: [['Iván', 'I miei amici ___ venerdì sera. (arrivare / loro)']],
             options: ['arriveranno', 'arriverono', 'arrivano', 'arrivavano'],
             answer: 'arriveranno',
             explain: 'Arrivare: raíz arriver- + -anno → arriveranno.',
           },
           {
             scene: 'El tiempo que hará',
-            lines: [['Zhanna', 'Domani ___ bel tempo al nord. (fare / impersonale)']],
+            lines: [['Alba', 'Domani ___ bel tempo al nord. (fare / impersonale)']],
             options: ['farà', 'fa', 'farebbe', 'fece'],
             answer: 'farà',
             explain: 'Fare → far- (irregular) + -à → farà. Impersonale: farà bel tempo.',
@@ -163,7 +199,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Predicción del tiempo',
-            lines: [['David', 'Domani [[0]] caldo e [[1]] molto sole al sud. (fare / esserci)']],
+            lines: [['Iván', 'Domani [[0]] caldo e [[1]] molto sole al sud. (fare / esserci)']],
             blanks: [
               { options: ['farà', 'fa', 'faceva'], answer: 'farà', explain: 'Fare → farà (impersonale).' },
               { options: ["ci sarà", "c'è", "c'era"], answer: "ci sarà", explain: 'Essere → sarà. Ci sarà molto sole.' },
@@ -179,7 +215,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El viaje de la empresa',
-            lines: [['Zhanna', 'Noi [[0]] a Milano e [[1]] in un bel albergo. (andare / stare)']],
+            lines: [['Alba', 'Noi [[0]] a Milano e [[1]] in un bel albergo. (andare / stare)']],
             blanks: [
               { options: ['andremo', 'andiamo', 'andavamo'], answer: 'andremo', explain: 'Andare → andr- + -emo → andremo.' },
               { options: ['staremo', 'stiamo', 'stavamo'], answer: 'staremo', explain: 'Stare → star- + -emo → staremo.' },
@@ -194,14 +230,15 @@ const topic: GrammarTopic = {
         intro: 'Completa el mensaje de Marco sobre sus planes con el futuro correcto.',
         type: 'guidedText',
         scene: 'Marco escribe a sus amigos sobre los planes de fin de año',
-        text: "Quest'anno a Capodanno [[0]] tutti insieme a casa mia. (venire / voi) Io [[1]] la cena — farò qualcosa di speciale! (preparare) Ci [[2]] anche Sofia con il suo ragazzo. (essere) Dopo cena [[3]] i fuochi d'artificio dalla finestra. (guardare / noi) Il primo dell'anno [[0]] in montagna per qualche giorno. (andare / noi) [[4]] una bella vacanza! (essere) Ci [[5]] tantissima neve. (essere-impersonale)",
+        text: "Quest'anno a Capodanno [[0]] tutti insieme a casa mia. (venire / voi) Io [[1]] la cena — farò qualcosa di speciale! (preparare) Ci [[2]] anche Sofia con il suo ragazzo. (essere) Dopo cena [[3]] i fuochi d'artificio dalla finestra. (guardare / noi) Il primo dell'anno [[4]] in montagna per qualche giorno. (andare / noi) [[5]] una bella vacanza! (essere) Ci [[6]] tantissima neve. (essere-impersonale)",
         blanks: [
           { options: ['verrete', 'venite', 'venivate'], answer: 'verrete', explain: 'Venire → verr- + -ete → verrete. Voi.' },
           { options: ['preparerò', 'preparo', 'preparavo'], answer: 'preparerò', explain: 'Preparare: io preparerò.' },
-          { options: ["ci sarà", "c'è", "c'era"], answer: "ci sarà", explain: 'Esserci → ci sarà. Singolare.' },
+          { options: ['sarà', 'è', 'era'], answer: 'sarà', explain: 'Ci sarà anche Sofia — esserci, singolare (el texto ya trae "Ci").' },
           { options: ['guarderemo', 'guardiamo', 'guardavamo'], answer: 'guarderemo', explain: 'Guardare: noi guarderemo.' },
-          { options: ['Sarà', 'È', 'Era'], answer: 'Sarà', explain: 'Essere → sarà. Predizione.' },
-          { options: ["ci sarà", "c'è", "ci sarà"], answer: "ci sarà", explain: "Esserci (neve, sing) → ci sarà." },
+          { options: ['andremo', 'andiamo', 'andavamo'], answer: 'andremo', explain: 'Andare → andr- → andremo. Noi.' },
+          { options: ['Sarà', 'È', 'Era'], answer: 'Sarà', explain: 'Sarà una bella vacanza — essere, predicción.' },
+          { options: ['sarà', 'è', 'era'], answer: 'sarà', explain: 'Ci sarà tantissima neve — esserci impersonal (el texto ya trae "Ci").' },
         ],
       },
       {
@@ -210,7 +247,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la forma del futuro semplice sin opciones.',
         type: 'freeText',
-        scene: 'Zhanna explica los planes de WeLearn para el próximo año',
+        scene: 'Alba explica los planes de WeLearn para el próximo año',
         text: "L'anno prossimo WeLearn [[0]] nuovi corsi di italiano. (aprire) Noi [[1]] gli studenti in gruppi piccoli. (dividere) Ogni studente [[2]] un programma personalizzato. (avere) I professori [[3]] lezioni ogni giorno. (tenere) [[4]] sicuramente un anno fantastico per tutti! (essere)",
         blanks: [
           { answer: 'aprirà', explain: 'Aprire: raíz aprir- + -à → aprirà.' },

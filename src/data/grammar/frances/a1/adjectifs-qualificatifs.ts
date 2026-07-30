@@ -55,14 +55,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'La regla BAGS: adjetivos que van antes',
+      heading: '¿Qué adjetivos van antes del sustantivo en francés?',
       paragraphs: [
         'Los adjetivos BAGS más frecuentes son: Beauty: beau/belle (hermoso/a), joli/jolie (bonito/a). Age: jeune (joven), vieux/vieille (viejo/a), nouveau/nouvelle (nuevo/a). Goodness: bon/bonne (bueno/a), mauvais/mauvaise (malo/a). Size: grand/grande (grande), petit/petite (pequeño/a), long/longue (largo/a).',
         'Ejemplos: "un grand appartement" (un gran apartamento), "une petite fille" (una niña pequeña), "un bon restaurant" (un buen restaurante), "une belle ville" (una ciudad hermosa), "un jeune professeur" (un joven profesor), "un nouveau livre" (un libro nuevo).',
       ],
     },
     {
-      heading: 'Concordancia: género y número',
+      heading: '¿Cómo concuerdan los adjetivos en género y número en francés?',
       paragraphs: [
         'Los adjetivos en francés concuerdan en género (masc./fem.) y número (sing./pl.) con el sustantivo. La regla general: añadir -e para el femenino y -s para el plural. "Grand" → grande (fem.) → grands (masc. pl.) → grandes (fem. pl.).',
         'Si el adjetivo ya termina en -e en masculino, no cambia en femenino: "facile → facile", "possible → possible", "magnifique → magnifique". Y si ya termina en -s, no cambia en plural: "gris → gris" (pl. masc. = sing.).',
@@ -103,15 +103,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David describe su libro favorito',
-            lines: [['David', 'C\'est un livre très ___ . (intéressant/intéressante)']],
+            scene: 'Gael describe su libro favorito',
+            lines: [['Gael', 'C\'est un livre très ___ . (intéressant/intéressante)']],
             options: ['intéressant', 'intéressante', 'intéressants', 'intéressantes'],
             answer: 'intéressant',
             explain: '"Livre" es masc. sing. → "intéressant" (sin -e).',
           },
           {
-            scene: 'Zhanna describe la ciudad',
-            lines: [['Zhanna', 'C\'est une ___ ville. (BAGS-Beauty: joli)']],
+            scene: 'Sara describe la ciudad',
+            lines: [['Sara', 'C\'est une ___ ville. (BAGS-Beauty: joli)']],
             options: ['jolie', 'joli', 'jolis', 'jolies'],
             answer: 'jolie',
             explain: '"Ville" es fem. → "jolie" (joli + e). BAGS Beauty va antes del sustantivo.',
@@ -125,7 +125,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ana describe a su profesora',
-            lines: [['Ana', 'Zhanna est une professeure ___. (intelligent → intelligente)']],
+            lines: [['Ana', 'Sara est une professeure ___. (intelligent → intelligente)']],
             options: ['intelligente', 'intelligent', 'intelligents', 'intelligentes'],
             answer: 'intelligente',
             explain: '"Professeure" es fem. → "intelligente" (adj. posterior, + -e).',
@@ -152,8 +152,8 @@ const topic: GrammarTopic = {
             explain: '"Homme" empieza por vocal y es masc. → forma especial "vieil" (no "vieux").',
           },
           {
-            scene: 'David abre un libro nuevo',
-            lines: [['David', 'C\'est un ___ livre. (BAGS-Age: nouveau)']],
+            scene: 'Gael abre un libro nuevo',
+            lines: [['Gael', 'C\'est un ___ livre. (BAGS-Age: nouveau)']],
             options: ['nouveau', 'nouvelle', 'nouveaux', 'nouvel'],
             answer: 'nouveau',
             explain: '"Livre" es masc. sing. y empieza por consonante → "nouveau".',
@@ -176,8 +176,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Zhanna describe su nueva clase',
-            lines: [['Zhanna', 'J\'ai une [[0]] classe avec des étudiants [[1]].']],
+            scene: 'Sara describe su nueva clase',
+            lines: [['Sara', 'J\'ai une [[0]] classe avec des étudiants [[1]].']],
             blanks: [
               { options: ['nouvelle', 'nouveau', 'nouveaux', 'nouvelles'], answer: 'nouvelle', explain: '"Nouvelle" — BAGS-Age, fem. → "nouvelle" (irregulaire).' },
               { options: ['motivés', 'motivé', 'motivées', 'motivant'], answer: 'motivés', explain: '"Étudiants" es masc. plural → "motivés" (motivé + s). Va después.' },
@@ -205,9 +205,9 @@ const topic: GrammarTopic = {
         id: 'l3',
         title: 'Descripción de la ciudad',
         tag: 'Texto guiado',
-        intro: 'David describe Bucaramanga. Elige la forma correcta del adjetivo en cada espacio.',
+        intro: 'Gael describe Bucaramanga. Elige la forma correcta del adjetivo en cada espacio.',
         type: 'guidedText',
-        scene: 'David describe Bucaramanga, su ciudad natal, para el blog de WeLearn.',
+        scene: 'Gael describe Bucaramanga, su ciudad natal, para el blog de WeLearn.',
         text: 'Bucaramanga est une [[0]] ville en Colombie. C\'est une ville [[1]] avec des parcs [[2]]. Les habitants sont très [[3]] — ils ont des maisons [[4]] et des rues [[5]]. Il y a aussi de [[6]] restaurants avec une cuisine [[7]].',
         blanks: [
           { options: ['belle', 'beau', 'belles', 'beaux'], answer: 'belle', explain: '"Ville" es fem. sing. "Belle" es BAGS-Beauty, va antes → correcto.' },
@@ -244,8 +244,8 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'Marco describe a Zhanna',
-            prompt: 'Describe a Zhanna: una profesora joven (BAGS) e inteligente (posterior).',
+            scene: 'Marco describe a Sara',
+            prompt: 'Describe a Sara: una profesora joven (BAGS) e inteligente (posterior).',
             answer: 'C\'est une jeune professeure intelligente.',
             accepted: ['jeune professeure', 'jeune professeur', 'intelligente'],
             explain: '"Jeune" = BAGS-Age, va antes. "Intelligente" = no BAGS, va después. Fem. → "intelligente".',
@@ -258,7 +258,7 @@ const topic: GrammarTopic = {
             explain: '"Petit" = BAGS-Size, antes. "Agréable" = posterior. "Appartement" masc. sing.',
           },
           {
-            scene: 'David recomienda un restaurante',
+            scene: 'Gael recomienda un restaurante',
             prompt: 'Recomienda un buen restaurante (BAGS) con comida deliciosa (posterior).',
             answer: "C'est un bon restaurant avec une cuisine délicieuse.",
             accepted: ['bon restaurant', 'cuisine délicieuse', 'bonne cuisine'],

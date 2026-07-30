@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'El futuro en alemán: Präsens primero',
+      heading: '¿Cómo se expresa el futuro en alemán?',
       paragraphs: [
         'A diferencia del español (donde "voy a + infinitivo" o el futuro simple son las opciones estándar), el alemán cotidiano usa el Präsens con una expresión de tiempo para hablar del futuro: Ich komme morgen (Mañana vengo/voy a venir). Esta construcción es más natural y frecuente que el Futur I en conversaciones del día a día.',
         'Las expresiones temporales más útiles para el futuro son: morgen (mañana), übermorgen (pasado mañana), bald (pronto), später (más tarde), nächste Woche (la semana que viene), nächsten Monat (el mes que viene), nächstes Jahr (el año que viene), in drei Tagen (en tres días), in einem Monat (en un mes).',
       ],
     },
     {
-      heading: 'Werden: conjugación y usos',
+      heading: '¿Cómo se conjuga y usa werden en alemán?',
       paragraphs: [
         '"Werden" es un verbo irregular con cambio vocálico en du y er/sie/es: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden. La estructura del Futur I sigue la misma regla que los modales: werden en posición 2 y el infinitivo al final de la frase.',
         'Beispiele: Ich werde nächstes Jahr in Deutschland wohnen. / Du wirst das Examen bestehen! / Es wird morgen regnen. / Wir werden zusammen arbeiten. El infinitivo siempre cierra la frase.',
       ],
     },
     {
-      heading: 'Cuándo usar Futur I vs. Präsens',
+      heading: '¿Cuándo se usa Futur I y cuándo Präsens en alemán?',
       paragraphs: [
         'El Futur I (werden + Infinitiv) se usa principalmente para: predicciones sobre el futuro ("Es wird morgen kalt sein" — Mañana hará frío), promesas solemnes ("Ich werde dich nie vergessen" — Nunca te olvidaré), predicciones inciertas ("Sie wird wahrscheinlich kommen" — Probablemente vendrá) y el futuro en lenguaje escrito formal.',
         'El Präsens con expresión temporal se usa para: planes concretos ("Morgen gehe ich ins Kino"), compromisos personales ("Ich komme um 8 Uhr"), horarios ("Der Zug fährt um 15 Uhr ab") y el habla cotidiana en general. En A1, es suficiente con dominar el Präsens + tiempo y reconocer werden cuando aparece.',
@@ -109,15 +109,15 @@ const topic: GrammarTopic = {
             explain: 'Con "morgen" (mañana), el Präsens expresa futuro cotidiano de forma natural: Morgen lerne ich.',
           },
           {
-            scene: 'David hace una promesa solemne',
-            lines: [['David', 'Ich ___ dich immer unterstützen.']],
+            scene: 'Tomás hace una promesa solemne',
+            lines: [['Tomás', 'Ich ___ dich immer unterstützen.']],
             options: ['werde', 'wirst', 'wird', 'werden'],
             answer: 'werde',
             explain: 'Ich + werden → "werde". Promesa solemne: Ich werde dich immer unterstützen + infinitivo al final.',
           },
           {
-            scene: 'Zhanna predice el tiempo de mañana',
-            lines: [['Zhanna', 'Morgen ___ es kalt sein.']],
+            scene: 'Iris predice el tiempo de mañana',
+            lines: [['Iris', 'Morgen ___ es kalt sein.']],
             options: ['wird', 'werde', 'wirst', 'werden'],
             answer: 'wird',
             explain: '"Es" + werden → "wird". Predicción: Es wird morgen kalt sein.',
@@ -167,16 +167,16 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'David promete llamar mañana',
-            lines: [['David', 'Ich [[0]] dich morgen [[1]].']],
+            scene: 'Tomás promete llamar mañana',
+            lines: [['Tomás', 'Ich [[0]] dich morgen [[1]].']],
             blanks: [
               { options: ['werde', 'wirst', 'wird', 'werden'], answer: 'werde', explain: '"Ich" + werden → "werde".' },
               { options: ['anrufen', 'rufe an', 'anrufst', 'angerufen'], answer: 'anrufen', explain: 'Infinitivo al final (y sin separar con werden): anrufen.' },
             ],
           },
           {
-            scene: 'Zhanna predice que Carlos aprobará',
-            lines: [['Zhanna', 'Du [[0]] das Examen bestehen, Carlos. Ich bin sicher!']],
+            scene: 'Iris predice que Carlos aprobará',
+            lines: [['Iris', 'Du [[0]] das Examen bestehen, Carlos. Ich bin sicher!']],
             blanks: [
               { options: ['wirst', 'werde', 'wird', 'werden'], answer: 'wirst', explain: '"Du" + werden → "wirst".' },
               { options: ['—', 'wirst', 'werden', 'wird'], answer: '—', explain: '"Bestehen" ya está en el texto como infinitivo al final.' },
@@ -184,15 +184,15 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los estudiantes tendrán que trabajar mucho',
-            lines: [['Zhanna', 'Ihr [[0]] viel üben [[1]].']],
+            lines: [['Iris', 'Ihr [[0]] viel üben [[1]].']],
             blanks: [
               { options: ['werdet', 'werde', 'wirst', 'werden'], answer: 'werdet', explain: '"Ihr" + werden → "werdet".' },
               { options: ['müssen', 'muss', 'musst', 'müsst'], answer: 'müssen', explain: 'Dos verbos auxiliares en Futur I: werden + modal infinitivo al final: werdet üben müssen.' },
             ],
           },
           {
-            scene: 'David habla de los planes de toda la academia',
-            lines: [['David', 'WeLearn [[0]] wachsen. Wir [[1]] viele neue Kurse anbieten.']],
+            scene: 'Tomás habla de los planes de toda la academia',
+            lines: [['Tomás', 'WeLearn [[0]] wachsen. Wir [[1]] viele neue Kurse anbieten.']],
             blanks: [
               { options: ['wird', 'werde', 'wirst', 'werden'], answer: 'wird', explain: '"WeLearn" (es) + werden → "wird".' },
               { options: ['werden', 'werde', 'wirst', 'wird'], answer: 'werden', explain: '"Wir" + werden → "werden".' },
@@ -206,7 +206,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige entre Präsens + tiempo o la forma de werden según el contexto.',
         type: 'guidedText',
-        scene: 'David comparte sus planes y predicciones para el próximo año.',
+        scene: 'Tomás comparte sus planes y predicciones para el próximo año.',
         text: 'Ich habe viele Pläne für die Zukunft. Nächsten Monat [[0]] ich einen neuen Kurs anfangen. (Präsens - cotidiano) In einem Jahr [[1]] ich (werden) sicher fließend Koreanisch sprechen. Mein Kollege Marco [[2]] (werden) auch nach Deutschland ziehen. Morgen [[3]] (treffen, wir) uns für Kaffee — das ist fix. Und irgendwann [[4]] WeLearn die beste Sprachakademie Kolumbiens [[5]]. (werden + sein)',
         blanks: [
           { options: ['werde', 'wirst', 'wird', 'werden'], answer: 'werde', explain: 'Präsens cotidiano con "nächsten Monat": ich + anfangen → "werde" NO, aquí es Präsens simple: corrección — opciones reflejan werden para contraste. Con nächsten Monat lo más natural es Präsens: "fange ich … an". Pero con "werde" también es posible para énfasis.' },
@@ -223,8 +223,8 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Completa con Präsens o con la forma de werden según el contexto.',
         type: 'freeText',
-        scene: 'Carlos escribe sobre sus planes en un email a Zhanna.',
-        text: 'Liebe Zhanna, ich habe tolle Pläne! Nächste Woche [[0]] (fahren, ich) nach Medellín. In einem Jahr [[1]] ich fließend Deutsch sprechen. (werden) Morgen [[2]] (lernen, ich) 50 neue Vokabeln — das verspreche ich! Mein Freund Juan [[3]] (werden, kommen) auch bald nach Deutschland. Bald [[4]] wir alle Deutsch zusammen sprechen! (werden)',
+        scene: 'Carlos escribe sobre sus planes en un email a Iris.',
+        text: 'Liebe Iris, ich habe tolle Pläne! Nächste Woche [[0]] (fahren, ich) nach Medellín. In einem Jahr [[1]] ich fließend Deutsch sprechen. (werden) Morgen [[2]] (lernen, ich) 50 neue Vokabeln — das verspreche ich! Mein Freund Juan [[3]] (werden, kommen) auch bald nach Deutschland. Bald [[4]] wir alle Deutsch zusammen sprechen! (werden)',
         blanks: [
           { answer: 'fahre', accepted: ['fahre', 'werde fahren'], explain: 'Plan cotidiano con "nächste Woche": Präsens preferido: "fahre". (También posible: werde fahren).' },
           { answer: 'werde', accepted: ['werde'], explain: '"Ich" + werden → "werde". Futur I formal con predicción personal.' },

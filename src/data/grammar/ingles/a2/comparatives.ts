@@ -92,6 +92,24 @@ const topic: GrammarTopic = {
         'Otro error: "She is more intelligent that her brother" — la conjunción correcta es "than", no "that".',
       ],
     },
+    {
+      heading: '¿Cómo se forman los comparativos en inglés?',
+      paragraphs: [
+        'Los adjetivos cortos (1 sílaba) añaden -er + than: "taller than", "faster than". Los largos (2+ sílabas) usan more + adjetivo + than: "more expensive than", "more beautiful than". Irregulares clave: good → better, bad → worse, far → further.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "-er" y cuándo "more"?',
+      paragraphs: [
+        '"-er" con adjetivos de una sílaba (cheap → cheaper) y con los de dos que acaban en -y (happy → happier). "more" con adjetivos de dos o más sílabas (modern → more modern, difficult → more difficult). Nunca se combinan: "more taller" es incorrecto.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "más… que" en inglés?',
+      paragraphs: [
+        'Con comparativo + "than": "She is taller than me", "This is more interesting than that". "than" equivale al "que" comparativo español. Para "tan… como" se usa "as… as": "as tall as", "as fast as".',
+      ],
+    },
   ],
 
   visual: {

@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Conjugación del subjuntivo presente: verbos regulares',
+      heading: '¿Cómo se conjuga el subjuntivo presente en portugués?',
       paragraphs: [
         'Para los verbos en -AR: elimina la terminación y añade -e, -es, -e, -emos, -eis, -em. Ejemplo: falar → (que eu) fale, (que você/ele) fale, (que nós) falemos, (que vocês/eles) falem.',
         'Para los verbos en -ER: elimina la terminación y añade -a, -as, -a, -amos, -ais, -am. Ejemplo: comer → (que eu) coma, (que você) coma, (que nós) comamos.',
@@ -72,7 +72,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Subjuntivo vs Indicativo: cuándo usar cada uno',
+      heading: '¿Cuándo se usa subjuntivo y cuándo indicativo en portugués?',
       paragraphs: [
         'Con verbos de opinión (achar, parecer, pensar), se puede usar indicativo si la opinión es presentada como un hecho cierto: "Acho que você tem razão" (indicativo = seguridad). Pero si es presentada como duda: "Não acho que você tenha razão" (subjuntivo = duda).',
         'Con "porque" (porque, pois) siempre va indicativo: "Não vou porque estou cansado." Con "para que" (para que, a fim de que) y otras conjunciones de propósito, va subjuntivo: "Estou estudando para que você fique orgulhoso."',

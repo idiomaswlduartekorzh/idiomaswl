@@ -42,21 +42,21 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'El imperativo en francés: tres formas y una trampa',
+      heading: '¿Cómo se forma el imperativo en francés?',
       paragraphs: [
         'El imperativo francés tiene tres personas: tu (tú/informal singular), nous (nosotros — equivale a "vamos a...") y vous (vosotros/ustedes o el formal singular). A diferencia del español, en el imperativo francés no se incluye el pronombre sujeto: simplemente "Mange!" (¡Come!), no "Tu mange!".',
         'La principal trampa para hispanohablantes es la forma "tu" de los verbos -er: pierde la -s final. El presente es "tu parles" pero el imperativo es "Parle!" (no "Parles!"). Sin embargo, los verbos -ir y -re mantienen la -s: "Finis!" "Prends!". Esta asimetría es la que más confusiones genera en A1.',
       ],
     },
     {
-      heading: 'Verbos irregulares en imperativo',
+      heading: '¿Cuáles son los imperativos irregulares en francés?',
       paragraphs: [
         'Los tres verbos irregulares más importantes en imperativo son être, avoir y aller. Être: Sois patient! / Soyons calmes! / Soyez prudents! Avoir: Aie confiance! / Ayons du courage! / Ayez patience! Aller: Va chercher le livre! / Allons-y! / Allez tout droit!',
         'Nota: "va" (aller, imperativo tu) no lleva -s, pero si viene seguido de "y": Vas-y! (¡Ve allí! — se añade la -s por eufonía). Este es un caso especial de A1/A2 que conviene conocer.',
       ],
     },
     {
-      heading: 'Negación del imperativo',
+      heading: '¿Cómo se niega el imperativo en francés?',
       paragraphs: [
         'La negación del imperativo sigue la regla general ne...pas rodeando el verbo: Ne mange pas si vite! / Ne finissez pas avant moi! / Ne soyez pas en retard! En la conversación informal, el ne puede desaparecer: Parle pas si fort! / Fais pas ça! — pero en A1 usa siempre ne...pas.',
         'Para consejos negativos (no hagas esto), el imperativo negativo es muy útil: Ne mange pas trop de sucre. / Ne bois pas trop de café. / Ne parle pas la bouche pleine. Son fórmulas que aparecen constantemente en situaciones cotidianas.',
@@ -94,7 +94,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrucción formal',
-            lines: [['David', '___ votre nom, s\'il vous plaît. (vous, écrire)']],
+            lines: [['Nico', '___ votre nom, s\'il vous plaît. (vous, écrire)']],
             options: ['Écrivez', 'Écris', 'Écrivons', 'Écrire'],
             answer: 'Écrivez',
             explain: '"vous" → écrire → écrivez. Mismo que le présent vous-form.',
@@ -122,7 +122,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Verbo irregular être',
-            lines: [['David', '___ patient! L\'anglais prend du temps. (tu, être)']],
+            lines: [['Nico', '___ patient! L\'anglais prend du temps. (tu, être)']],
             options: ['Sois', 'Soit', 'Soyez', 'Être'],
             answer: 'Sois',
             explain: '"être" imperativo tu → sois (irregular). Sois patient = Sé paciente.',
@@ -176,7 +176,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrucción formal',
-            lines: [['David', '[[0]] [[1]] votre dictionnaire pour cet exercice! (vous, utiliser)']],
+            lines: [['Nico', '[[0]] [[1]] votre dictionnaire pour cet exercice! (vous, utiliser)']],
             blanks: [
               { options: ['Utilisez', 'Utilise', 'Utilisons'], answer: 'Utilisez', explain: '"vous" → utilisez.' },
               { options: ['votre', 'vos', 'leur'], answer: 'votre', explain: '"Votre dictionnaire" — "votre" para vous singular formal.' },
@@ -190,7 +190,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige la forma imperativa correcta para completar las instrucciones del profesor.',
         type: 'guidedText',
-        scene: 'Clase de francés con David en WeLearn — instrucciones del profesor',
+        scene: 'Clase de francés con Nico en WeLearn — instrucciones del profesor',
         text: 'Bonjour à tous! [[0]] vos cahiers! [[1]] à la page 15. [[2]] l\'exercice 3 en silence. [[3]] pas de téléphone pendant le cours. [[4]] attention à la prononciation. Et surtout, ne [[5]] pas d\'avoir des questions — je suis là pour vous aider!',
         blanks: [
           { options: ['Ouvrez', 'Ouvre', 'Ouvrons'], answer: 'Ouvrez', explain: 'Toda la clase (vous) → Ouvrez vos cahiers.' },
@@ -208,7 +208,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma imperativa del verbo entre paréntesis.',
         type: 'freeText',
         scene: 'Completar instrucciones y consejos con la forma imperativa correcta',
-        text: '___ (parler-tu) plus lentement, s\'il te plaît! / ___ (finir-vous) l\'exercice avant 15h. / ___ (être-tu) courageux! / Ne ___ (regarder-tu) pas ton téléphone! / ___ (prendre-nous) le métro. / ___ (avoir-vous) confiance en vous!',
+        text: '[[0]] (parler-tu) plus lentement, s\'il te plaît! / [[1]] (finir-vous) l\'exercice avant 15h. / [[2]] (être-tu) courageux! / Ne [[3]] (regarder-tu) pas ton téléphone! / [[4]] (prendre-nous) le métro. / [[5]] (avoir-vous) confiance en vous!',
         blanks: [
           { answer: 'Parle', accepted: ['Parle', 'parle'], explain: '"parler" -er, tu → parle (sans -s).' },
           { answer: 'Finissez', accepted: ['Finissez', 'finissez'], explain: '"finir" -ir, vous → finissez.' },

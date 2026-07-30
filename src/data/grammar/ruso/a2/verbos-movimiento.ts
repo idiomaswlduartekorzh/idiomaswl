@@ -45,17 +45,24 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Идти vs ходить: la diferencia clave',
+      heading: '¿Cuál es la diferencia entre идти y ходить?',
       paragraphs: [
         'Идти se usa para un movimiento a pie en curso en el momento presente, con una dirección específica: "Куда ты идёшь?" (¿Adónde vas?) — "Я иду домой" (Voy a casa — ahora mismo). En pasado, шёл/шла describe el trayecto: "Я шёл по улице" (Iba caminando por la calle).',
         'Ходить expresa movimiento habitual, frecuente o sin dirección específica: "Я хожу в спортзал три раза в неделю" (Voy al gimnasio tres veces a la semana). También indica una ida y vuelta completada: "Вчера я ходил в магазин" (Ayer fui a la tienda — y volví). Esta distinción es clave en ruso.',
       ],
     },
     {
-      heading: 'Ехать vs ездить: transporte',
+      heading: '¿Cómo se usan ехать y ездить para el transporte?',
       paragraphs: [
         'Ехать indica un viaje en transporte (coche, metro, tren, autobús) que está ocurriendo ahora o en un momento específico: "Мы едем в Санкт-Петербург" (Viajamos a San Petersburgo — ahora). La conjugación de ехать: я еду, ты едешь, он/она едет, мы едем, вы едете, они едут.',
         'Ездить expresa el hábito de ir en transporte: "Он ездит на работу на метро каждый день" (Él va al trabajo en metro todos los días). También: "Прошлым летом мы ездили в Испанию" (El verano pasado fuimos a España — viaje completo de ida y vuelta).',
+      ],
+    },
+    {
+      heading: '¿Cómo cambian de sentido los verbos de movimiento con prefijos?',
+      paragraphs: [
+        'Al añadir un prefijo, los verbos de movimiento dejan de ser pares uni/multidireccionales y pasan a ser pares de ASPECTO. La base multidireccional (ходить, ездить) da el imperfectivo prefijado, y la unidireccional (идти, ехать) da el perfectivo: приходить/прийти (llegar a pie), уходить/уйти (irse), приезжать/приехать (llegar en transporte). El prefijo aporta la dirección: при- (llegada), у- (alejamiento), в-/во- (entrar), вы- (salir), под- (acercarse).',
+        'La trampa para el hispanohablante es doble: (1) con prefijo desaparece la oposición ir/ir-y-volver y aparece la de aspecto imperfectivo/perfectivo; (2) hay que reconocer que ехать→приехать sigue siendo "en transporte", mientras идти→прийти es "a pie".',
       ],
     },
   ],
@@ -169,7 +176,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el texto con el verbo de movimiento correcto.',
         type: 'guidedText',
         scene: 'Катя рассказывает о своих поездках.',
-        text: 'Сейчас я [[0]] домой пешком. Обычно я [[1]] домой на автобусе. Вчера я [[2]] в библиотеку и вернулась. Каждую пятницу мы [[3]] с друзьями в кино. Летом мы [[3]] на море на машине.',
+        text: 'Сейчас я [[0]] домой пешком. Обычно я [[1]] домой на автобусе. Вчера я [[2]] в библиотеку и вернулась. Каждую пятницу мы [[3]] с друзьями в кино. Летом мы [[4]] на море на машине.',
         blanks: [
           { options: ['иду', 'хожу', 'еду', 'езжу'], answer: 'иду', explain: '"иду" — сейчас, a pie → идти (я иду).' },
           { options: ['езжу', 'еду', 'иду', 'хожу'], answer: 'езжу', explain: '"езжу" — habitualmente, transporte → ездить (я езжу).' },
@@ -184,7 +191,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma correcta del verbo de movimiento.',
         type: 'freeText',
         scene: 'Напишите правильную форму глагола движения.',
-        text: 'Куда ты ___ ? (идти, tú) / Каждый день он ___ в офис на машине. (ездить) / Вчера мы ___ в ресторан. (ходить, pasado pl) / Сейчас поезд ___ в Москву. (ехать)',
+        text: 'Куда ты [[0]] ? (идти, tú) / Каждый день он [[1]] в офис на машине. (ездить) / Вчера мы [[2]] в ресторан. (ходить, pasado pl) / Сейчас поезд [[3]] в Москву. (ехать)',
         blanks: [
           { answer: 'идёшь', explain: '"идёшь" — идти, 2ª sg presente: я иду, ты идёшь.' },
           { answer: 'ездит', explain: '"ездит" — ездить, 3ª sg presente: он ездит.' },

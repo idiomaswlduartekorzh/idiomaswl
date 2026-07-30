@@ -74,6 +74,24 @@ const topic: GrammarTopic = {
         'Cuando el pronombre relativo ES el sujeto, NO se puede omitir: The woman who called me (no se puede quitar "who").',
       ],
     },
+    {
+      heading: '¿Cómo se usan "who", "which" y "that" en inglés?',
+      paragraphs: [
+        '"who" para personas ("the man who called"), "which" para cosas ("the book which I read") y "that" para ambos en oraciones especificativas ("the man that called", "the book that I read"). "where" para lugares y "whose" para posesión.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se puede omitir el pronombre relativo en inglés?',
+      paragraphs: [
+        'Cuando el relativo es el OBJETO de la oración: "the book (that) I read" → se puede quitar "that". Pero si es el SUJETO no se omite: "the man who called" (no "the man called"). Es una diferencia importante frente al español, que nunca omite "que".',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "who" y "which"?',
+      paragraphs: [
+        '"who" se refiere a personas ("the girl who won"); "which" se refiere a cosas y animales ("the car which broke down"). "that" puede sustituir a ambos en oraciones especificativas, pero no tras coma (oraciones explicativas).',
+      ],
+    },
   ],
 
   visual: {

@@ -48,17 +48,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El conditionnel présent: educación y cortesía en francés",
+      heading: '¿Qué es el conditionnel présent y para qué se usa?',
       paragraphs: [
         "El conditionnel présent es esencial para comunicarse de manera cortés en francés. Cuando pides algo en una tienda, en un restaurante o a un colega, el conditionnel présent transforma una petición directa en una solicitud educada: 'Je veux un café' (quiero un café) vs. 'Je voudrais un café' (quisiera un café). Esta diferencia es crucial en la cultura francesa.",
         "La formación es muy lógica: se toma exactamente la misma raíz que el futur simple y se añaden las terminaciones del imparfait. Si sabes el futur, ya tienes la mitad del trabajo hecho. Por ejemplo: je parlerai (futur) → je parlerais (conditionnel). Je serai (futur) → je serais (conditionnel).",
       ],
     },
     {
-      heading: "Usos del conditionnel: más allá de la cortesía",
+      heading: '¿Cuáles son los usos del conditionnel en francés?',
       paragraphs: [
         "Además de la cortesía, el conditionnel présent tiene otros usos importantes. Para expresar deseos: J'aimerais visiter le Japon (me gustaría visitar Japón). Para dar consejos: Tu devrais étudier davantage (deberías estudiar más). Para hacer sugerencias: On pourrait aller au cinéma? (¿Podríamos ir al cine?).",
         "El uso más avanzado es la hipótesis con 'si': Si j'avais plus d'argent, je voyagerais partout. La regla es clara: si + imparfait → conditionnel. Nunca uses el conditionnel después de 'si' hipotético. Este uso se estudia en detalle en el tema 'Si + conditionnel'.",
+      ],
+    },
+    {
+      heading: '¿Cómo se forma el conditionnel présent en francés?',
+      paragraphs: [
+        'Se forma sobre el mismo radical que el futur simple (normalmente el infinitivo) más las terminaciones del imparfait: -ais/-ais/-ait/-ions/-iez/-aient. Así: parler → je parlerais, finir → je finirais, prendre → je prendrais. Los verbos irregulares en futuro lo son también aquí, con la misma raíz: être → je serais, avoir → j\'aurais, aller → j\'irais, faire → je ferais, pouvoir → je pourrais, vouloir → je voudrais. La regla mnemotécnica es clara: raíz de futur + terminación de imparfait = conditionnel. Por eso "je voudrais" (querría) y "je pourrais" (podría) son las fórmulas de cortesía más útiles del francés.',
       ],
     },
   ],
@@ -195,7 +201,7 @@ const topic: GrammarTopic = {
         intro: "Escribe las formas correctas del conditionnel présent sin ayuda de opciones.",
         type: 'freeText',
         scene: "Marc hace sugerencias para la reunión de amigos",
-        text: "On ___ se retrouver samedi soir. Ce ___ super de faire une raclette. Tu ___ apporter du fromage? Léa et Pierre ___ pouvoir venir vers 19h. Ça ___ être une super soirée!",
+        text: "On [[0]] se retrouver samedi soir. Ce [[1]] super de faire une raclette. Tu [[2]] apporter du fromage? Léa et Pierre [[3]] pouvoir venir vers 19h. Ça [[4]] être une super soirée!",
         blanks: [
           { answer: "pourrait", accepted: ["pourrait"], explain: "Pouvoir en conditionnel: on pourrait (ir- + -ait)." },
           { answer: "serait", accepted: ["serait"], explain: "Être en conditionnel: ce serait (ser- + -ait)." },

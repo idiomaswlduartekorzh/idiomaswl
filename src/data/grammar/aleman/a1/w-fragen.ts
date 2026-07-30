@@ -51,21 +51,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Preguntas W: la regla V2 en acción',
+      heading: '¿Cómo se forman las preguntas con W en alemán?',
       paragraphs: [
         'En las preguntas W alemanas, la palabra interrogativa ocupa siempre la primera posición (posición 1) y el verbo conjugado ocupa inmediatamente la segunda posición (posición 2). El sujeto queda en tercera posición: Wo [pos.1] wohnst [pos.2] du [pos.3]? Esta es exactamente la misma regla V2 de las oraciones declarativas.',
         'En español el orden es más libre: "¿Dónde vives tú?" o "¿Dónde tú vives?" son ambos posibles. En alemán la posición del verbo es obligatoria e inamovible en las preguntas directas.',
       ],
     },
     {
-      heading: 'Wo, Woher, Wohin: el movimiento importa',
+      heading: '¿Cuál es la diferencia entre wo, woher y wohin en alemán?',
       paragraphs: [
         'El alemán distingue tres aspectos de "lugar": Wo (dónde = posición estática), Woher (de dónde = origen) y Wohin (a dónde = destino). Esta triada es esencial para evitar confusiones: Wo wohnst du? (¿Dónde vives?) vs. Wohin fährst du? (¿A dónde vas?) vs. Woher kommst du? (¿De dónde vienes?).',
         'El español solo usa "dónde" y "a dónde" (y raramente "de dónde" en lenguaje formal), mientras que el alemán tiene tres palabras distintas para cada función.',
       ],
     },
     {
-      heading: 'Preguntas Ja/Nein vs. preguntas W',
+      heading: '¿Cuál es la diferencia entre preguntas Ja/Nein y preguntas W?',
       paragraphs: [
         'Las preguntas de sí/no (Ja/Nein-Fragen) empiezan directamente con el verbo: Wohnst du in Berlin? / Arbeitest du heute? El verbo va en primera posición porque no hay palabra W que lo preceda.',
         'Las preguntas W, en cambio, siempre tienen una palabra W en posición 1 y el verbo en posición 2. Esta distinción estructural es fundamental para el alemán A1 y no tiene paralelo exacto en español.',
@@ -106,15 +106,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David quiere saber de dónde es un estudiante',
-            lines: [['David', '___ kommst du?']],
+            scene: 'Gael quiere saber de dónde es un estudiante',
+            lines: [['Gael', '___ kommst du?']],
             options: ['Woher', 'Wohin', 'Wo', 'Wann'],
             answer: 'Woher',
             explain: '"Woher" pregunta por el origen: Woher kommst du? = ¿De dónde vienes?',
           },
           {
-            scene: 'Zhanna pregunta el nombre de un estudiante nuevo',
-            lines: [['Zhanna', '___ heißt du?']],
+            scene: 'Nora pregunta el nombre de un estudiante nuevo',
+            lines: [['Nora', '___ heißt du?']],
             options: ['Wie', 'Was', 'Wer', 'Wo'],
             answer: 'Wie',
             explain: '"Wie heißt du?" = ¿Cómo te llamas? Es una fórmula fija con "wie".',
@@ -148,14 +148,14 @@ const topic: GrammarTopic = {
             explain: '"Wohin" pregunta por el destino: Wohin gehst du? = ¿A dónde vas?',
           },
           {
-            scene: 'Zhanna pregunta la razón a Carlos',
-            lines: [['Zhanna', '___ lernst du Deutsch?']],
+            scene: 'Nora pregunta la razón a Carlos',
+            lines: [['Nora', '___ lernst du Deutsch?']],
             options: ['Warum', 'Wie', 'Was', 'Wo'],
             answer: 'Warum',
             explain: '"Warum" pregunta por la causa: Warum lernst du Deutsch? = ¿Por qué aprendes alemán?',
           },
           {
-            scene: 'Lina pregunta qué estudia David',
+            scene: 'Lina pregunta qué estudia Gael',
             lines: [['Lina', '___ studierst du?']],
             options: ['Was', 'Wie', 'Wer', 'Wann'],
             answer: 'Was',
@@ -210,7 +210,7 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Completa el diálogo con la palabra W o el verbo correcto.',
         type: 'guidedText',
-        scene: 'Primera conversación entre David y un estudiante nuevo.',
+        scene: 'Primera conversación entre Gael y un estudiante nuevo.',
         text: '[[0]] heißt du? — Ich heiße Carlos. [[1]] kommst du? — Aus Kolumbien. [[2]] wohnst du jetzt? — In Berlin. [[3]] lernst du Deutsch? — Für meinen Job. [[4]] alt bist du? — Ich bin 25. [[5]] [[6]] du Deutsch schon? (wie lange/sprechen)',
         blanks: [
           { options: ['Wie', 'Was', 'Wer', 'Wann'], answer: 'Wie', explain: '"Wie heißt du?" = ¿Cómo te llamas? Fórmula fija.' },
@@ -228,7 +228,7 @@ const topic: GrammarTopic = {
         tag: 'Texto libre',
         intro: 'Escribe la palabra W correcta de memoria.',
         type: 'freeText',
-        scene: 'Zhanna prepara una ficha de presentación de un nuevo estudiante.',
+        scene: 'Nora prepara una ficha de presentación de un nuevo estudiante.',
         text: '[[0]] heißt der Student? [[1]] kommt er? [[2]] wohnt er in Deutschland? [[3]] alt ist er? [[4]] spricht er schon Deutsch?',
         blanks: [
           { answer: 'Wie', accepted: ['Wie', 'wie'], explain: '"Wie heißt...?" = ¿Cómo se llama? Pregunta por nombre.' },
@@ -290,11 +290,11 @@ const topic: GrammarTopic = {
             explain: 'Las 4 preguntas organizativas: Was, Wann, Wo, Wie viel. Siempre V2.',
           },
           {
-            scene: 'Entrevistando a David sobre su vida políglota',
-            prompt: 'Escribe 3 preguntas interesantes para David sobre sus idiomas y experiencias.',
+            scene: 'Entrevistando a Gael sobre su vida políglota',
+            prompt: 'Escribe 3 preguntas interesantes para Gael sobre sus idiomas y experiencias.',
             answer: 'Wie viele Sprachen sprechen Sie? Warum lernen Sie so viele Sprachen? Wo haben Sie Arabisch gelernt?',
             accepted: ['wie viele', 'warum', 'wo ', 'wann ', 'wie ', 'was '],
-            explain: 'Con David: usa "Sie" (formal). Estructura sigue igual: W + Verb + Sie.',
+            explain: 'Con Gael: usa "Sie" (formal). Estructura sigue igual: W + Verb + Sie.',
           },
         ],
       },

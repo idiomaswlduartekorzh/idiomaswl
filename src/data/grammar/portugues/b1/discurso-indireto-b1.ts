@@ -55,7 +55,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Los cambios de tiempo verbal más importantes',
+      heading: '¿Cómo cambian los tiempos verbales en el discurso indirecto?',
       paragraphs: [
         'Cuando el verbo introductor está en pasado (disse, perguntou, afirmou...), los tiempos se retroceden: presente de indicativo → imperfeito de indicativo; futuro de indicativo → condicional; pretérito perfeito → mais-que-perfeito composto (tinha + participio); imperfeito → imperfeito (sin cambio); imperativo → conjuntivo imperfeito o infinitivo.',
         'Si el verbo introductor está en presente (diz, afirma, pergunta...), los tiempos no cambian. "Ele diz que está cansado." (presente → presente). El cambio solo ocurre cuando reportamos algo que alguien dijo en el pasado.',
@@ -84,7 +84,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Verbos introductores más usados en portugués',
+      heading: '¿Qué verbos introducen el discurso indirecto en portugués?',
       paragraphs: [
         'Los verbos introductores más frecuentes son: dizer (decir), afirmar (afirmar), explicar (explicar), perguntar (preguntar), responder (responder), pedir (pedir), prometer (prometer), confessar (confesar), garantir (garantizar), sugerir (sugerir), propor (proponer), avisar (avisar), reclamar (quejarse), acrescentar (añadir).',
         'Cada verbo introductor implica una estructura diferente: "dizer que", "perguntar se/o que", "pedir que + conjuntivo", "pedir para + infinitivo", "prometer que + condicional". Conocer estas combinaciones es esencial para el dominio del discurso indirecto.',

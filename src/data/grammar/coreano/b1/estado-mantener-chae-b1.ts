@@ -52,14 +52,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Contextos de uso: espacial y temporal',
+      heading: '¿En qué contextos se usa -(으)ㄴ 채로 en coreano?',
       paragraphs: [
         'Espacial (condiciones de lugar/objeto): "문을 열은 채로 나갔어요" (me fui dejando la puerta abierta). "불을 켠 채로 잤어요" (dormí dejando la luz encendida). El estado de la "puerta" y la "luz" se mantiene.',
         'Temporal (estados del cuerpo/mente): "눈을 감은 채로" (con los ojos cerrados), "서 있는 채로" (de pie), "침대에 누운 채로" (acostado en cama). Describe la posición/condición que se mantiene.',
       ],
     },
     {
-      heading: '-은 채로 vs -고 있다 (acción progresiva)',
+      heading: '¿Cuál es la diferencia entre -(으)ㄴ 채로 y -고 있다?',
       paragraphs: [
         '-은 채로 describe un estado MANTENIDO: "문을 열은 채로" (la puerta está abierta y así se mantiene). -고 있다 describe una ACCIÓN EN PROGRESO: "문을 열고 있어요" (estoy en el acto de abrir la puerta, aún en proceso).',
         'Diferencia clave: -은 채로 es situación/condición; -고 있다 es actividad. "누운 채로 책을 읽어요" (leo mientras estoy acostado — estado mantenido) vs "누우면서 책을 읽어요" (me acuesto mientras leo).',
@@ -138,7 +138,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Espacio vs temporal',
-            lines: [['', "[[0]]: 창문을 열___ 밤을 새웠어요. (espacio) / [[1]]: 침대에 누___ 책을 읽어요. (temporal)"]],
+            lines: [['', " : 창문을 열[[0]] 밤을 새웠어요. (espacio) / : 침대에 누[[1]] 책을 읽어요. (temporal)"]],
             blanks: [
               { options: ['-은 채로', '-고 있는'], answer: '-은 채로', explain: '-은 채로 mantiene el estado de ventana abierta.' },
               { options: ['-은 채로', '-고 있는'], answer: '-은 채로', explain: '-은 채로 mantiene posición acostado.' },
@@ -153,7 +153,7 @@ const topic: GrammarTopic = {
         intro: 'Completa una escena descriptiva con -은 채로.',
         type: 'guidedText',
         scene: 'Descripción de una casa en desorden.',
-        text: '집 안은 창문을 ___ 매우 추웠어요. 불을 ___ 방은 밝았고, 문을 ___ 통풍이 잘 되었어요. 아이들이 신발을 ___ 소파에 앉아 있었어요.',
+        text: '집 안은 창문을 [[0]] 매우 추웠어요. 불을 [[1]] 방은 밝았고, 문을 [[2]] 통풍이 잘 되었어요. 아이들이 신발을 [[3]] 소파에 앉아 있었어요.',
         blanks: [
           { options: ['-은 채로', '-고'], answer: '-은 채로', explain: '상태 유지: 창문이 열려 있는 상태로.' },
           { options: ['-은 채로', '-고'], answer: '-은 채로', explain: '상태 유지: 불이 켜진 상태로.' },

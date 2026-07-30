@@ -58,10 +58,43 @@ const topic: GrammarTopic = {
       ],
     },
     {
+      heading: 'La escala de frecuencia: de "sempre" a "mai"',
+      paragraphs: [
+        'Estos son los adverbios de frecuencia ordenados de más a menos, con su equivalente español. Fíjate en que "non… mai" (0%) exige "non" antes del verbo:',
+      ],
+      table: [
+        ['Adverbio', 'Frecuencia', 'Español'],
+        ['sempre', '~100 %', 'siempre'],
+        ['di solito / normalmente', '~80 %', 'normalmente'],
+        ['spesso', '~70 %', 'a menudo'],
+        ['a volte / qualche volta', '~40 %', 'a veces'],
+        ['raramente', '~10 %', 'raramente'],
+        ['non… mai', '0 %', 'nunca'],
+      ],
+    },
+    {
       heading: 'Mai: "nunca" y "alguna vez" en italiano',
       paragraphs: [
         '"Mai" tiene dos usos distintos que confunden a los hispanohablantes. Con negación (non... mai) significa "nunca": Non bevo mai vino = Nunca bebo vino. Pero en preguntas y frases afirmativas, "mai" significa "alguna vez": Hai mai visitato Roma? = ¿Has visitado Roma alguna vez?',
         'Esta dualidad hace que "mai" sea un adverbio clave en italiano: cambia completamente de significado según el contexto. En A1 enfócate en non... mai para "nunca" y mai? en preguntas directas.',
+      ],
+    },
+    {
+      heading: '¿Dónde se colocan los adverbios de frecuencia en italiano?',
+      paragraphs: [
+        'Normalmente DESPUÉS del verbo conjugado: "Mangio sempre la pasta", "Guardo spesso film". En los tiempos compuestos (passato prossimo) van entre el auxiliar y el participio: "Ho sempre studiato", "Non sono mai andato". "Di solito" y "a volte" pueden ir también al principio de la frase.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son los adverbios de frecuencia en italiano?',
+      paragraphs: [
+        'De mayor a menor frecuencia: sempre (siempre), di solito / normalmente (normalmente), spesso (a menudo), a volte / qualche volta (a veces), raramente (raramente) y non… mai (nunca).',
+      ],
+    },
+    {
+      heading: '¿"Mai" significa "nunca" o "alguna vez"?',
+      paragraphs: [
+        'Depende del contexto. Con "non" antes del verbo significa "nunca": "Non bevo mai alcol". En preguntas significa "alguna vez": "Sei mai stato a Roma?" (¿has estado alguna vez en Roma?). La presencia o ausencia de "non" es la clave.',
       ],
     },
   ],
@@ -138,7 +171,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el adverbio o expresión correcta sin opciones.',
         type: 'freeText',
         scene: 'Describiendo hábitos personales',
-        text: '1. "Siempre desayuno en casa": [[0]] faccio colazione a casa. 2. "Nunca bebo alcohol": Non bevo [[1]] alcol. 3. "A veces estudio por la noche": [[2]] studio la sera. 4. "Como carne raramente": Mangio carne [[3]]. 5. "A menudo hablo italiano con David": Parlo [[4]] italiano con David.',
+        text: '1. "Siempre desayuno en casa": [[0]] faccio colazione a casa. 2. "Nunca bebo alcohol": Non bevo [[1]] alcol. 3. "A veces estudio por la noche": [[2]] studio la sera. 4. "Como carne raramente": Mangio carne [[3]]. 5. "A menudo hablo italiano con Tomás": Parlo [[4]] italiano con Tomás.',
         blanks: [
           { answer: 'Faccio sempre', accepted: ['faccio sempre', 'Sempre faccio'], explain: 'Faccio sempre colazione (verbo + adverbio) o Sempre faccio (inicial). Lo más natural: Faccio sempre.' },
           { answer: 'mai', accepted: ['mai'], explain: 'Non bevo mai alcol = Nunca bebo alcohol. Non...mai indispensable.' },
@@ -155,9 +188,9 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           { scene: 'Rutina personal', prompt: 'Traduce al italiano: "Siempre tomo café por la mañana pero nunca como dulces antes de las diez." (caffè = café, mattina = mañana, dolci = dulces, prima delle dieci = antes de las diez)', answer: 'Bevo sempre caffè la mattina ma non mangio mai dolci prima delle dieci', accepted: ['sempre', 'non...mai', 'mai'], explain: 'bevo sempre + non mangio mai. La estructura non...mai es indispensable para "nunca".' },
-          { scene: 'Pregunta de frecuencia', prompt: 'Traduce al italiano: "¿Vas a menudo al restaurante italiano? A veces voy con David." (ristorante = restaurante, andare = ir)', answer: 'Vai spesso al ristorante italiano? A volte ci vado con David.', accepted: ['spesso', 'volte', 'a volte'], explain: 'Vai spesso? = ¿Vas a menudo? A volte = a veces. (ci = allí, pronombre de lugar).' },
+          { scene: 'Pregunta de frecuencia', prompt: 'Traduce al italiano: "¿Vas a menudo al restaurante italiano? A veces voy con Tomás." (ristorante = restaurante, andare = ir)', answer: 'Vai spesso al ristorante italiano? A volte ci vado con Tomás.', accepted: ['spesso', 'volte', 'a volte'], explain: 'Vai spesso? = ¿Vas a menudo? A volte = a veces. (ci = allí, pronombre de lugar).' },
           { scene: 'Hai mai...?', prompt: 'Escribe la pregunta: "¿Has visitado Roma alguna vez?" y una respuesta negativa: "No, nunca he estado en Roma." (visitare = visitar, essere = haber estado)', answer: 'Hai mai visitato Roma? No, non sono mai stato a Roma.', accepted: ['hai mai', 'non sono mai'], explain: 'Hai mai + participio = ¿Has... alguna vez? Non sono mai stato = Nunca he estado. Mai en ambos contextos.' },
-          { scene: 'Describir a otra persona', prompt: 'Traduce al italiano: "Zhanna siempre llega puntual y raramente cancela las clases." (arrivare puntuale = llegar puntual, cancellare = cancelar, lezioni = clases)', answer: 'Zhanna arriva sempre puntuale e raramente cancella le lezioni', accepted: ['sempre', 'raramente'], explain: 'arriva sempre (verbo + adverbio) + raramente cancella. Orden natural italiano.' },
+          { scene: 'Describir a otra persona', prompt: 'Traduce al italiano: "Marta siempre llega puntual y raramente cancela las clases." (arrivare puntuale = llegar puntual, cancellare = cancelar, lezioni = clases)', answer: 'Marta arriva sempre puntuale e raramente cancella le lezioni', accepted: ['sempre', 'raramente'], explain: 'arriva sempre (verbo + adverbio) + raramente cancella. Orden natural italiano.' },
         ],
       },
       {

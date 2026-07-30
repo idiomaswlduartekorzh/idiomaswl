@@ -52,21 +52,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los pronombres en acusativo: cuándo y cómo cambian',
+      heading: '¿Cómo son los pronombres personales en acusativo en alemán?',
       paragraphs: [
         'En alemán, los pronombres personales tienen formas distintas según su función en la frase. En nominativo (sujeto) son: ich, du, er, sie, es, wir, ihr, sie/Sie. En acusativo (objeto directo, responde a "¿a quién?" o "¿qué?") cambian: ich→mich, du→dich, er→ihn. Las demás formas no cambian o cambian mínimamente: wir→uns, ihr→euch.',
         'Los tres cambios que hay que memorizar a toda costa son: ich→mich, du→dich, er→ihn. Estos son los únicos cambios "no predecibles". El resto: sie (ella)→sie, es→es, sie/Sie→sie/Sie no cambian en acusativo. Y wir→uns / ihr→euch siguen un patrón claro.',
       ],
     },
     {
-      heading: 'Cómo identificar el objeto directo (Akkusativ)',
+      heading: '¿Cómo se identifica el objeto directo en alemán?',
       paragraphs: [
         'El objeto directo (acusativo) responde a la pregunta "¿Qué?" o "¿A quién?" después del verbo. En "Ich liebe dich", "dich" responde a "¿A quién amo?". En "Er sieht uns", "uns" responde a "¿A quién ve?". Los verbos más comunes en A1 que toman objeto acusativo son: sehen (ver), kennen (conocer), lieben (amar), mögen (gustar), suchen (buscar), brauchen (necesitar), haben (tener), verstehen (entender).',
         'Diferencia con dativo: el dativo responde a "¿para quién?" o "¿a quién?" en sentido indirecto. Ich gebe dir das Buch (dativo: te doy el libro). Ich liebe dich (acusativo: te amo). En A1 el foco está en el acusativo; el dativo se trabaja más en A2.',
       ],
     },
     {
-      heading: 'Posición del pronombre en la frase',
+      heading: '¿Dónde va el pronombre acusativo en la frase alemana?',
       paragraphs: [
         'El pronombre acusativo generalmente aparece justo después del verbo conjugado: Ich sehe ihn. / Er liebt mich. / Kennst du uns? Cuando hay también un pronombre dativo en la misma frase, en alemán el acusativo va después del dativo: Ich gebe dir das Buch → Ich gebe es dir (acusativo "es" antes que dativo "dir" solo cuando el acusativo es pronombre). Esta regla de A2 no es necesaria en A1.',
         'Lo más importante en A1 es reconocer y usar los pronombres acusativos en su posición natural después del verbo. "Siehst du ihn?" / "Ich kenne sie nicht." / "Er braucht uns." — el pronombre acusativo forma una unidad compacta con el verbo.',
@@ -107,14 +107,14 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David le dice algo tierno a su alumna favorita',
-            lines: [['David', 'Ich vermisse ___ (tú), wenn du nicht in der Klasse bist.']],
+            scene: 'Leo le dice algo tierno a su alumna favorita',
+            lines: [['Leo', 'Ich vermisse ___ (tú), wenn du nicht in der Klasse bist.']],
             options: ['dich', 'du', 'dir', 'dein'],
             answer: 'dich',
             explain: '"Du" en acusativo (objeto directo) → "dich". Ich vermisse dich = Te extraño.',
           },
           {
-            scene: 'Carlos pregunta si Zhanna conoce a Marco',
+            scene: 'Carlos pregunta si Alba conoce a Marco',
             lines: [['Carlos', 'Kennst du ___ (él)?']],
             options: ['ihn', 'er', 'ihm', 'sein'],
             answer: 'ihn',
@@ -128,7 +128,7 @@ const topic: GrammarTopic = {
             explain: '"Ich" en acusativo → "mich". Sie rufen mich an = Ellos me llaman.',
           },
           {
-            scene: 'Lina pregunta si David ha visto a Sofia',
+            scene: 'Lina pregunta si Leo ha visto a Sofia',
             lines: [['Lina', 'Hast du ___ (ella) gesehen?']],
             options: ['sie', 'ihr', 'ihn', 'er'],
             answer: 'sie',
@@ -142,18 +142,18 @@ const topic: GrammarTopic = {
             explain: '"Wir" en acusativo → "uns". Die Gruppe braucht uns = El grupo nos necesita.',
           },
           {
-            scene: 'Zhanna le dice a la clase que los quiere',
-            lines: [['Zhanna', 'Ich mag ___ (vosotros/ustedes) sehr gern!']],
+            scene: 'Alba le dice a la clase que los quiere',
+            lines: [['Alba', 'Ich mag ___ (vosotros/ustedes) sehr gern!']],
             options: ['euch', 'ihr', 'euer', 'uns'],
             answer: 'euch',
             explain: '"Ihr" en acusativo → "euch". Ich mag euch = Los quiero mucho (a todos).',
           },
           {
-            scene: 'Carlos pregunta si David lo conoce',
-            lines: [['Carlos', 'Kennt David ___ (me)?']],
+            scene: 'Carlos pregunta si Leo lo conoce',
+            lines: [['Carlos', 'Kennt Leo ___ (me)?']],
             options: ['mich', 'mir', 'ich', 'mein'],
             answer: 'mich',
-            explain: '"Ich" en acusativo → "mich". Kennt David mich? = ¿Me conoce David?',
+            explain: '"Ich" en acusativo → "mich". Kennt Leo mich? = ¿Me conoce Leo?',
           },
           {
             scene: 'Sofia describe el libro — es muy bueno',
@@ -172,11 +172,11 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'Zhanna pregunta a Carlos si reconoce a David (en una foto)',
-            lines: [['Zhanna', '[[0]] du [[1]]? Das ist David auf dem Foto.']],
+            scene: 'Alba pregunta a Carlos si reconoce a Leo (en una foto)',
+            lines: [['Alba', '[[0]] du [[1]]? Das ist Leo auf dem Foto.']],
             blanks: [
               { options: ['Kennst', 'Kenne', 'Kennt', 'Kennen'], answer: 'Kennst', explain: '"Du" + kennen → "kennst". Pregunta Ja/Nein: verbo al inicio.' },
-              { options: ['ihn', 'er', 'ihm', 'sein'], answer: 'ihn', explain: '"Er" (David, masculino) → acusativo: "ihn".' },
+              { options: ['ihn', 'er', 'ihm', 'sein'], answer: 'ihn', explain: '"Er" (Leo, masculino) → acusativo: "ihn".' },
             ],
           },
           {
@@ -188,8 +188,8 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'David le dice a su clase que los aprecia',
-            lines: [['David', 'Ich [[0]] [[1]] alle sehr!']],
+            scene: 'Leo le dice a su clase que los aprecia',
+            lines: [['Leo', 'Ich [[0]] [[1]] alle sehr!']],
             blanks: [
               { options: ['mag', 'magst', 'mögen', 'mögt'], answer: 'mag', explain: '"Ich" + mögen → "mag" (irregular).' },
               { options: ['euch', 'ihr', 'euer', 'uns'], answer: 'euch', explain: '"Ihr" → acusativo: "euch". Ich mag euch alle = Los aprecio a todos.' },
@@ -211,13 +211,13 @@ const topic: GrammarTopic = {
         tag: 'Texto guiado',
         intro: 'Elige el pronombre en acusativo correcto para cada hueco.',
         type: 'guidedText',
-        scene: 'David escribe una carta a sus estudiantes de WeLearn.',
-        text: 'Liebe Studenten, ich kenne [[0]] (vosotros) noch nicht alle persönlich, aber ich mag [[1]] (vosotros) schon sehr. Wenn ihr Fragen habt, ruft [[2]] (me) einfach an! Meine Kollegin Zhanna — kennt ihr [[3]] (ella)? — sie unterrichtet [[4]] (vosotros) nächste Woche. Carlos, ich habe [[5]] (you, du) bei der Prüfung gesehen — gut gemacht! Und Marco, ich suche [[6]] (you, du) — wo bist du?',
+        scene: 'Leo escribe una carta a sus estudiantes de WeLearn.',
+        text: 'Liebe Studenten, ich kenne [[0]] (vosotros) noch nicht alle persönlich, aber ich mag [[1]] (vosotros) schon sehr. Wenn ihr Fragen habt, ruft [[2]] (me) einfach an! Meine Kollegin Alba — kennt ihr [[3]] (ella)? — sie unterrichtet [[4]] (vosotros) nächste Woche. Carlos, ich habe [[5]] (you, du) bei der Prüfung gesehen — gut gemacht! Und Marco, ich suche [[6]] (you, du) — wo bist du?',
         blanks: [
           { options: ['euch', 'ihr', 'uns', 'sie'], answer: 'euch', explain: '"Ihr" (vosotros) → acusativo: "euch". Ich kenne euch.' },
           { options: ['euch', 'ihr', 'uns', 'sie'], answer: 'euch', explain: '"Ihr" → acusativo: "euch". Ich mag euch sehr.' },
           { options: ['mich', 'mir', 'ich', 'mein'], answer: 'mich', explain: '"Ich" → acusativo: "mich". Ruft mich an = llamadme.' },
-          { options: ['sie', 'ihr', 'ihn', 'es'], answer: 'sie', explain: '"Sie" (ella, Zhanna) → acusativo: "sie" (sin cambio). Kennt ihr sie?' },
+          { options: ['sie', 'ihr', 'ihn', 'es'], answer: 'sie', explain: '"Sie" (ella, Alba) → acusativo: "sie" (sin cambio). Kennt ihr sie?' },
           { options: ['euch', 'ihr', 'uns', 'mich'], answer: 'euch', explain: '"Ihr" (la clase) → acusativo: "euch". Sie unterrichtet euch.' },
           { options: ['dich', 'du', 'dir', 'dein'], answer: 'dich', explain: '"Du" (Carlos) → acusativo: "dich". Ich habe dich gesehen.' },
           { options: ['dich', 'du', 'dir', 'dein'], answer: 'dich', explain: '"Du" (Marco) → acusativo: "dich". Ich suche dich.' },
@@ -230,7 +230,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el pronombre en acusativo correcto de memoria.',
         type: 'freeText',
         scene: 'Diálogo en la academia WeLearn.',
-        text: 'Zhanna: "Carlos, ich sehe [[0]] (tú) jeden Tag in der Klasse. Kennst du Sofia?" Carlos: "Ja, ich kenne [[1]] (ella) gut!" Zhanna: "Und kennt sie [[2]] (ti)?" Carlos: "Natürlich! Wir kennen [[3]] (a cada uno, us) sehr gut." Zhanna: "Gut! Ich brauche [[4]] (a vosotros dos, euch) für ein Projekt."',
+        text: 'Alba: "Carlos, ich sehe [[0]] (tú) jeden Tag in der Klasse. Kennst du Sofia?" Carlos: "Ja, ich kenne [[1]] (ella) gut!" Alba: "Und kennt sie [[2]] (ti)?" Carlos: "Natürlich! Wir kennen [[3]] (a cada uno, us) sehr gut." Alba: "Gut! Ich brauche [[4]] (a vosotros dos, euch) für ein Projekt."',
         blanks: [
           { answer: 'dich', accepted: ['dich'], explain: '"Du" (Carlos) → acusativo: "dich". Ich sehe dich.' },
           { answer: 'sie', accepted: ['sie'], explain: '"Sie" (Sofia, ella) → acusativo: "sie" (sin cambio).' },
@@ -254,7 +254,7 @@ const topic: GrammarTopic = {
             explain: 'Los 3 cambios clave: ich→mich, du→dich, er→ihn. Verifica que el pronombre sea objeto directo del verbo.',
           },
           {
-            scene: 'Contándole a Zhanna sobre tu grupo de amigos',
+            scene: 'Contándole a Alba sobre tu grupo de amigos',
             prompt: 'Di que conoces a tu grupo (uns), que los llamas (euch) y que una amiga te busca (mich).',
             answer: 'Wir kennen uns gut. Ich rufe euch morgen an. Meine Freundin sucht mich.',
             accepted: ['uns', 'euch', 'mich', 'dich', 'sie'],
@@ -285,8 +285,8 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Primer día en WeLearn: conociéndose',
-            prompt: 'Escribe un diálogo de 4 intercambios donde David y Carlos se conocen, usando mich, dich, ihn, sie, uns.',
-            answer: 'David: "Kennst du mich?" Carlos: "Ja, ich kenne dich! Du bist David." David: "Und kennst du Zhanna?" Carlos: "Ich sehe sie jeden Tag. Sie unterrichtet uns."',
+            prompt: 'Escribe un diálogo de 4 intercambios donde Leo y Carlos se conocen, usando mich, dich, ihn, sie, uns.',
+            answer: 'Leo: "Kennst du mich?" Carlos: "Ja, ich kenne dich! Du bist Leo." Leo: "Und kennst du Alba?" Carlos: "Ich sehe sie jeden Tag. Sie unterrichtet uns."',
             accepted: ['mich', 'dich', 'ihn', 'sie', 'uns', 'euch'],
             explain: 'Usa al menos 5 pronombres acusativos distintos. Ich→mich, du→dich, er→ihn, sie (ella)→sie, wir→uns.',
           },
@@ -299,10 +299,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Recomendación de la academia',
-            prompt: 'Escribe un texto de 3 frases recomendando WeLearn usando ihn (David), sie (Zhanna) y uns.',
-            answer: 'Kennt ihr David? Ich kenne ihn seit einem Jahr — er ist fantastisch! Und Zhanna? Ich sehe sie jeden Tag. Kommt zu uns bei WeLearn!',
+            prompt: 'Escribe un texto de 3 frases recomendando WeLearn usando ihn (Leo), sie (Alba) y uns.',
+            answer: 'Kennt ihr Leo? Ich kenne ihn seit einem Jahr — er ist fantastisch! Und Alba? Ich sehe sie jeden Tag. Kommt zu uns bei WeLearn!',
             accepted: ['ihn', 'sie', 'uns', 'mich', 'dich', 'euch'],
-            explain: 'Er (David) → ihn en acusativo. Sie (Zhanna) → sie (sin cambio). Wir → uns. Kommt zu uns = venid a vernos.',
+            explain: 'Er (Leo) → ihn en acusativo. Sie (Alba) → sie (sin cambio). Wir → uns. Kommt zu uns = venid a vernos.',
           },
         ],
       },

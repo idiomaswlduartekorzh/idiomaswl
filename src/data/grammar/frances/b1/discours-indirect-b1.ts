@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "¿Que es el discours indirect en frances?",
+      heading: '¿Qué es el discours indirect en francés?',
       paragraphs: [
         "El discours indirect (discurso indirecto) permite reportar las palabras de otra persona sin citarlas directamente. En lugar de decir 'Paul a dit: Je suis fatigue', usamos 'Paul a dit qu'il etait fatigue'. Esta transformacion requiere varios cambios: los tiempos verbales se modifican (concordance des temps), los pronombres cambian segun el nuevo contexto, y las expresiones de tiempo se adaptan.",
         "Para hispanohablantes, la logica es similar al espanol. Cuando alguien dijo 'Vendre manana' y lo reportamos como 'Dijo que vendria al dia siguiente', aplicamos exactamente los mismos principios que en frances. La principal diferencia es que en frances la concordance des temps es obligatoria y mas sistematica que en espanol coloquial.",
       ],
     },
     {
-      heading: "La concordance des temps: cambios de tiempo verbal",
+      heading: '¿Cómo cambian los tiempos en el discurso indirecto en francés?',
       paragraphs: [
         "Cuando el verbo introductor (dire, affirmer, annoncer, raconter) esta en pasado, los tiempos del discurso original sufren un retroceso: el present se convierte en imparfait ('je suis pret' → 'il a dit qu'il etait pret'), el passe compose se convierte en plus-que-parfait ('j'ai vu' → 'il a dit qu'il avait vu'), y el futur simple se convierte en conditionnel present ('je partirai' → 'il a dit qu'il partirait').",
         "Si el verbo introductor esta en present (il dit que...), no hay cambio de tiempos: 'Il dit qu'il est fatigue.' En el nivel B1, el relato en pasado es el mas importante, ya que exige la concordance des temps. El imparfait no cambia: 'Je voulais partir' → 'il a dit qu'il voulait partir'.",
@@ -68,7 +68,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "Reportar preguntas y ordenes en estilo indirecto",
+      heading: '¿Cómo se reportan preguntas y órdenes en estilo indirecto?',
       paragraphs: [
         "Para reportar preguntas de si/no se usa 'demander si': '\"Viens-tu?\"' → 'Il a demande si je venais.' Para preguntas con pronombre interrogativo se conserva el pronombre: '\"Ou vas-tu?\"' → 'Il a demande ou j'allais.' Nota clave: no hay inversion verbo-sujeto en el estilo indirecto.",
         "Para reportar ordenes e instrucciones se usa 'demander de + infinitivo': '\"Fermez la porte!\"' → 'Le professeur nous a demande de fermer la porte.' Para sugerencias: 'proposer de + infinitivo'. Para peticiones formales: 'prier de + infinitivo'. El infinitivo no cambia en estas estructuras.",

@@ -47,20 +47,20 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Cómo se forma el Genitiv en alemán',
+      heading: '¿Cómo se forma el Genitiv en alemán?',
       paragraphs: [
         'El Genitiv tiene dos cambios principales: el artículo y (en masculinos y neutros) el sustantivo. El artículo definido "der" pasa a "des" en masculino y neutro, y a "der" en femenino y plural. El artículo indefinido "ein" pasa a "eines" en masculino/neutro y a "einer" en femenino.',
         'El sustantivo masculino o neutro añade -(e)s al final: "der Mann" → "des Mannes", "das Kind" → "des Kindes", "das Auto" → "des Autos". Los sustantivos femeninos y los plurales no reciben sufijo.',
       ],
     },
     {
-      heading: 'El Genitiv con nombres propios',
+      heading: '¿Cómo se usa el Genitiv con nombres propios en alemán?',
       paragraphs: [
         'Los nombres propios forman el Genitiv simplemente añadiendo -s: Peters Hund, Annas Buch, Berlins Mitte. En alemán, a diferencia del español, este -s genitivo nunca va entre comillas ni apostrofes — simplemente se añade al nombre.',
       ],
     },
     {
-      heading: 'Preposiciones con Genitiv',
+      heading: '¿Qué preposiciones rigen Genitiv en alemán?',
       paragraphs: [
         'Las preposiciones más frecuentes que rigen Genitiv en A2 son: wegen (a causa de, wegen des Wetters — a causa del tiempo), trotz (a pesar de, trotz des Regens — a pesar de la lluvia), während (durante, während der Ferien — durante las vacaciones). En el habla informal, wegen y trotz a veces se usan con Dativ.',
       ],

@@ -23,7 +23,7 @@ const topic: GrammarTopic = {
     model: 'テーブルの うえに ねこが います。(Hay un gato sobre la mesa.) / つくえの うえに ほんが あります。(Hay un libro sobre el escritorio.)',
     formula: '[lugar]に + [sujeto]が + います (animado) / あります (inanimado)',
     decisions: [
-      'います → personas: デービッドさんが います (está David)',
+      'います → personas: デービッドさんが います (está Diego)',
       'います → animales: ねこが います, いぬが います, さかなが います',
       'あります → objetos: ほんが あります, かばんが あります',
       'あります → plantas y árboles: はなが あります, きが あります',
@@ -32,7 +32,7 @@ const topic: GrammarTopic = {
     ],
     table: [
       ['Verbo', 'Para qué', 'Ejemplo'],
-      ['います (imasu)', 'Personas', 'デービッドさんが います (Está David)'],
+      ['います (imasu)', 'Personas', 'デービッドさんが います (Está Diego)'],
       ['います (imasu)', 'Animales', 'ねこが います (Hay un gato)'],
       ['あります (arimasu)', 'Objetos/cosas', 'ほんが あります (Hay un libro)'],
       ['あります (arimasu)', 'Plantas', 'はなが あります (Hay flores)'],
@@ -46,17 +46,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'La distinción animado/inanimado que el español no tiene',
+      heading: '¿Cuál es la diferencia entre います y あります?',
       paragraphs: [
         'En español, "hay un libro" y "hay un gato" usan el mismo verbo "hay". En japonés no: ほんが あります (libro = inanimado) vs ねこが います (gato = animado). Esta distinción animado/inanimado es obligatoria en japonés y es uno de los primeros conceptos que distinguen la gramática japonesa de la española.',
         'La regla práctica: ¿El sujeto puede moverse por su propia voluntad? Si sí (personas, animales) → います. Si no (cosas, objetos, plantas) → あります. La excepción notable son las plantas: aunque estén vivas, usan あります porque no se mueven. Los robots y muñecos también usan あります por ser objetos, a menos que el hablante los trate como seres vivos (ficción, etc.).',
       ],
     },
     {
-      heading: 'Estructura completa: lugar + sujeto + います/あります',
+      heading: '¿Cómo se forma una frase con います/あります en japonés?',
       paragraphs: [
         'La estructura más frecuente es [lugar]に [sujeto]が います/あります. El lugar va primero con la partícula に, luego el sujeto con が (nunca は en existencia), y finalmente el verbo al final. Ejemplos: テーブルの うえに ねこが います (sobre la mesa hay un gato), りょうしんは にほんに います (mis padres están en Japón).',
         'Para preguntar: [lugar]に なにが ありますか / だれが いますか (¿qué hay? / ¿quién está?). La negación es directa: ねこは いません (no hay gato), ほんは ありません (no hay libro). Nota que en la negación se puede usar は en lugar de が para dar un matiz contrastivo.',
+      ],
+    },
+    {
+      heading: '¿Cómo se expresa la existencia en japonés (います/あります)?',
+      paragraphs: [
+        'El japonés tiene dos verbos de existencia según si lo que existe está VIVO o no. います (imasu) se usa para seres animados que se mueven por voluntad propia: personas y animales (犬がいます = hay un perro). あります (arimasu) se usa para cosas inanimadas y también para plantas: 本があります (hay un libro). La estructura típica es "lugar に + sujeto が + います/あります": テーブルの上に本があります (encima de la mesa hay un libro). La trampa para el hispanohablante es que el español usa "hay/estar" sin distinguir; en japonés hay que decidir siempre entre います (vivo) y あります (no vivo). En negativo: いません / ありません.',
       ],
     },
   ],
@@ -65,7 +71,7 @@ const topic: GrammarTopic = {
     teacherLens: 'El estudiante aprende います para animados y あります para inanimados con ejemplos visuales.',
     graphicPrompt: 'Dos columnas: います (gato, persona, pez) vs あります (libro, mesa, flor). Estructura [lugar]に + [sujeto]が + verb.',
     scene: [
-      ['います = animados', 'ねこが います / Davidさんが います'],
+      ['います = animados', 'ねこが います / Diegoさんが います'],
       ['あります = inanimados', 'ほんが あります / じゅぎょうが あります'],
       ['Negativo', 'いません / ありません'],
     ],
@@ -96,8 +102,8 @@ const topic: GrammarTopic = {
             explain: 'ほん (libro) = objeto inanimado → あります.',
           },
           {
-            scene: 'Está David',
-            lines: [['Ana', 'きょうしつに デービッドさんが ___。(David está en el aula.)']],
+            scene: 'Está Diego',
+            lines: [['Ana', 'きょうしつに デービッドさんが ___。(Diego está en el aula.)']],
             options: ['います', 'あります', 'いません', 'ありません'],
             answer: 'います',
             explain: 'デービッドさん (persona) = animado → います.',
@@ -118,14 +124,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No hay tarea',
-            lines: [['Zhanna', 'きょうは しゅくだいが ___。(Hoy no hay tarea.)']],
+            lines: [['Alba', 'きょうは しゅくだいが ___。(Hoy no hay tarea.)']],
             options: ['ありません', 'いません', 'あります', 'います'],
             answer: 'ありません',
             explain: 'しゅくだい (tarea) = abstracto/cosa → ありません.',
           },
           {
             scene: 'Hay un perro',
-            lines: [['David', 'こうえんに いぬが ___。(Hay un perro en el parque.)']],
+            lines: [['Diego', 'こうえんに いぬが ___。(Hay un perro en el parque.)']],
             options: ['います', 'あります', 'いません', 'ありません'],
             answer: 'います',
             explain: 'いぬ (perro) = animal → います.',
@@ -148,7 +154,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Describiendo el aula',
-            lines: [['David', 'きょうしつに せんせい[[0]] ___[[1]]。(En el aula hay un profesor.)']],
+            lines: [['Diego', 'きょうしつに せんせい [[0]] 。(En el aula hay un profesor.)']],
             blanks: [
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'Existencia: sujeto + が + います.' },
               { options: ['います', 'あります', 'いません'], answer: 'います', explain: 'せんせい (profesor) = persona → います.' },
@@ -156,7 +162,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En la biblioteca',
-            lines: [['Sofia', 'としょかんに ほん[[0]] ___[[1]]。(En la biblioteca hay libros.)']],
+            lines: [['Sofia', 'としょかんに ほん [[0]] 。(En la biblioteca hay libros.)']],
             blanks: [
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'Existencia: [sujeto]が + あります.' },
               { options: ['あります', 'います', 'ありません'], answer: 'あります', explain: 'ほん (libro) = objeto → あります.' },
@@ -164,7 +170,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El jardín de WeLearn',
-            lines: [['Ana', 'にわに はな[[0]] ___[[1]]。でも、ねこ[[0]] ___[[1]]。']],
+            lines: [['Ana', 'にわに はな [[0]] 。でも、ねこ [[1]] 。']],
             blanks: [
               { options: ['が', 'は', 'を'], answer: 'が', explain: 'Partícula が para sujeto de existencia.' },
               { options: ['あります / います', 'います / あります', 'ありません / いません'], answer: 'あります / います', explain: 'はな → あります (planta). ねこ → います (animal).' },
@@ -172,7 +178,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Negaciones',
-            lines: [['Marco', 'ここに じしょ[[0]] ___[[1]]。デービッドさんも ___[[1]]。']],
+            lines: [['Marco', 'ここに じしょ [[0]] 。デービッドさんも [[1]] 。']],
             blanks: [
               { options: ['が', 'は', 'も'], answer: 'が', explain: 'じしょ (diccionario) = objeto, が para sujeto nuevo.' },
               { options: ['ありません / いません', 'います / あります', 'いません / ありません'], answer: 'ありません / いません', explain: 'じしょ → ありません. デービッドさん → いません.' },

@@ -9,16 +9,10 @@ import type {
   GuidedTextLevel,
   FreeTextLevel,
   WriteLevel,
+  WriteItem,
   Blank,
 } from '@/data/grammar/types'
 import { useGrammarProgress } from '@/components/grammar/useGrammarProgress'
-
-type RelatedWritingExercise = {
-  id: string
-  sequence: number
-  title: string
-  genre: string
-}
 
 // ── State machine ────────────────────────────────────────────────────────────
 
@@ -93,6 +87,68 @@ function matchAnswer(user: string, answer: string, accepted?: string[]) {
   return u === norm(answer) || (accepted ?? []).some((a) => u === norm(a))
 }
 
+// Pistas objetivo en alfabeto latino nombradas en el enunciado tras un disparador
+// de uso ("usa/usando/using/use/utilise/verwende"). Solo cuenta como pista si esa
+// palabra también aparece en la respuesta-modelo: así se descartan palabras de
+// instrucción ("verbos", "forma", "oración") y se conserva la estructura objetivo
+// real (p.ej. "who", "that", "weil", "porque").
+function writeCues(item: WriteItem): string[] {
+  const src = `${item.scene ?? ''} ${item.prompt ?? ''}`
+  const model = norm(`${item.answer ?? ''} ${(item.accepted ?? []).join(' ')}`)
+  const cues: string[] = []
+  const re = /\b(?:usando|usa|using|use|utilisez|utilise|verwende)\s+["'«“‘]?([a-zA-Zàâäéèêëïîôöùûüçñáíóúü'-]{3,20})["'»”’]?/gi
+  for (const m of src.matchAll(re)) {
+    const c = m[1].toLowerCase().replace(/^['-]+|['-]+$/g, '')
+    if (c.length >= 3 && model.includes(c)) cues.push(c)
+  }
+  return cues
+}
+
+// Evaluación del nivel de producción libre (write). No se puede calificar por
+// coincidencia exacta, porque el estudiante escribe una frase propia y el
+// `answer`/`accepted` son solo ejemplos-modelo, no un conjunto cerrado. Capas:
+//   1) Coincidencia exacta/aceptada → correcto (protege los niveles controlados
+//      de "combina las frases", donde sí hay una transformación determinada).
+//   2) Se rechaza respuesta vacía o copia literal del enunciado.
+//   3) Se exige un intento sustancial: ≥3 palabras, o ≥6 caracteres (CJK/Hangul,
+//      que no separan por espacios de forma fiable).
+//   4) Si el enunciado nombra una estructura objetivo latina presente en el
+//      modelo, se exige que la respuesta la contenga (p.ej. "who"). Para objetivos
+//      no-latinos (coreano/japonés/ruso), que van como sufijo flexionado y no se
+//      pueden verificar por texto, se acredita el intento sustancial.
+// Cambio monótono: nada que hoy se marque correcto pasa a incorrecto; solo se
+// recupera producción libre válida que antes se marcaba en rojo indebidamente.
+function evaluateWrite(item: WriteItem, user: string): boolean {
+  if (matchAnswer(user, item.answer, item.accepted)) return true
+  const u = norm(user)
+  if (!u) return false
+  if (u === norm(item.prompt ?? '') || u === norm(item.scene ?? '')) return false
+  const words = u.split(' ').filter(Boolean).length
+  const chars = u.replace(/\s/g, '').length
+  if (words < 3 && chars < 6) return false
+  const cues = writeCues(item)
+  if (cues.length) return cues.some((c) => u.includes(c))
+  return true
+}
+
+// Índices de hueco [[n]] presentes en un texto, en orden y sin repetir. El motor
+// sólo renderiza un input por cada [[n]] presente, así que scoring y validación
+// deben derivarse de este conjunto (no de la longitud cruda de `blanks`). Así un
+// desajuste de datos —más blanks que huecos, o al revés— nunca bloquea el nivel.
+function gapIndices(text: string): number[] {
+  const seen = new Set<number>()
+  const out: number[] = []
+  for (const m of text.matchAll(/\[\[(\d+)\]\]/g)) {
+    const i = Number(m[1])
+    if (!seen.has(i)) { seen.add(i); out.push(i) }
+  }
+  return out
+}
+
+function dualItemText(item: DualLevel['items'][number]): string {
+  return item.lines.map(([, t]) => t).join(' ')
+}
+
 function scoreLevel(level: Level, answers: Record<string, string>): { score: number; total: number } {
   if (level.type === 'choice') {
     const l = level as ChoiceLevel
@@ -106,7 +162,10 @@ function scoreLevel(level: Level, answers: Record<string, string>): { score: num
     const l = level as DualLevel
     let score = 0, total = 0
     l.items.forEach((item, ii) => {
-      item.blanks.forEach((blank, bi) => {
+      const present = gapIndices(dualItemText(item))
+      present.forEach((bi) => {
+        const blank = item.blanks[bi]
+        if (!blank) return // hueco sin respuesta definida: no puntúa
         total++
         if ((answers[`${ii}-${bi}`] ?? '').toLowerCase() === blank.answer.toLowerCase()) score++
       })
@@ -115,17 +174,20 @@ function scoreLevel(level: Level, answers: Record<string, string>): { score: num
   }
   if (level.type === 'guidedText' || level.type === 'freeText') {
     const l = level as GuidedTextLevel | FreeTextLevel
-    let score = 0
-    l.blanks.forEach((blank, i) => {
+    let score = 0, total = 0
+    gapIndices(l.text).forEach((i) => {
+      const blank = l.blanks[i]
+      if (!blank) return // hueco extra sin respuesta: no puntúa (evita bloqueo)
+      total++
       if (matchAnswer(answers[`${i}`] ?? '', blank.answer, blank.accepted)) score++
     })
-    return { score, total: l.blanks.length }
+    return { score, total }
   }
   if (level.type === 'write') {
     const l = level as WriteLevel
     let score = 0
     l.items.forEach((item, i) => {
-      if (matchAnswer(answers[`${i}`] ?? '', item.answer, item.accepted)) score++
+      if (evaluateWrite(item, answers[`${i}`] ?? '')) score++
     })
     return { score, total: l.items.length }
   }
@@ -166,7 +228,7 @@ function TextWithBlanks({
               onChange={(e) => onChange(key, e.target.value)}
             >
               <option value="">—</option>
-              {shuffledOptions[bi]!.map((o) => <option key={o} value={o}>{o}</option>)}
+              {shuffledOptions[bi]!.map((o, oi) => <option key={oi} value={o}>{o}</option>)}
             </select>
           )
         }
@@ -232,9 +294,9 @@ function ChoicePractice({
         ))}
       </div>
       <div className="options">
-        {shuffledOptions.map((opt) => (
+        {shuffledOptions.map((opt, oi) => (
           <button
-            key={opt}
+            key={oi}
             className={`option${answers[`${idx}`] === opt ? ' is-selected' : ''}`}
             onClick={() => dispatch({ type: 'SET', key: `${idx}`, value: opt })}
           >
@@ -268,7 +330,10 @@ function DualPractice({
 }) {
   const item = level.items[idx]
   const isLast = idx === level.items.length - 1
-  const canProceed = item.blanks.every((_, bi) => !!(answers[`${idx}-${bi}`]))
+  // Sólo se exige respuesta para los huecos que realmente se renderizan (aquellos
+  // con un blank definido). Un [[n]] sin blank se muestra como texto y no bloquea.
+  const requiredBi = gapIndices(dualItemText(item)).filter((bi) => item.blanks[bi])
+  const canProceed = requiredBi.every((bi) => !!(answers[`${idx}-${bi}`]))
   const shuffledOptions = useMemo(
     () => item.blanks.map((b) => (b.options ? shuffle(b.options) : undefined)),
     [item],
@@ -285,6 +350,8 @@ function DualPractice({
             {parts.map((part, pi) => {
               if (pi % 2 === 0) return <Fragment key={pi}>{part}</Fragment>
               const bi = parseInt(part)
+              const blank = item.blanks[bi]
+              if (!blank) return <span key={pi} className="blank-field">___</span>
               const key = `${idx}-${bi}`
               return (
                 <select
@@ -294,7 +361,7 @@ function DualPractice({
                   onChange={(e) => dispatch({ type: 'SET', key, value: e.target.value })}
                 >
                   <option value="">—</option>
-                  {(shuffledOptions[bi] ?? []).map((o) => <option key={o} value={o}>{o}</option>)}
+                  {(shuffledOptions[bi] ?? []).map((o, oi) => <option key={oi} value={o}>{o}</option>)}
                 </select>
               )
             })}
@@ -349,7 +416,10 @@ function TextPractice({
   dispatch: React.Dispatch<Action>
   onSubmit: (score: number, total: number) => void
 }) {
-  const canSubmit = level.blanks.every((_, i) => !!(answers[`${i}`]))
+  // Sólo se exigen los huecos [[n]] presentes en el texto que tienen blank
+  // definido; huecos extra son opcionales y blanks sin hueco se ignoran.
+  const requiredIdx = gapIndices(level.text).filter((i) => level.blanks[i])
+  const canSubmit = requiredIdx.every((i) => !!(answers[`${i}`]))
 
   function handleChange(key: string, value: string) {
     dispatch({ type: 'SET', key, value })
@@ -466,7 +536,9 @@ function DeferredReview({ level, answers }: { level: Level; answers: Record<stri
   } else if (level.type === 'dual') {
     const l = level as DualLevel
     l.items.forEach((item, ii) => {
-      item.blanks.forEach((blank, bi) => {
+      gapIndices(dualItemText(item)).forEach((bi) => {
+        const blank = item.blanks[bi]
+        if (!blank) return
         const user = answers[`${ii}-${bi}`] ?? ''
         items.push({
           label: `${item.scene} — espacio ${bi + 1}`,
@@ -479,7 +551,9 @@ function DeferredReview({ level, answers }: { level: Level; answers: Record<stri
     })
   } else if (level.type === 'guidedText' || level.type === 'freeText') {
     const l = level as GuidedTextLevel | FreeTextLevel
-    l.blanks.forEach((blank, i) => {
+    gapIndices(l.text).forEach((i) => {
+      const blank = l.blanks[i]
+      if (!blank) return
       const user = answers[`${i}`] ?? ''
       items.push({
         label: `Espacio ${i + 1}`,
@@ -498,7 +572,7 @@ function DeferredReview({ level, answers }: { level: Level; answers: Record<stri
         user: user || '(sin respuesta)',
         correct: item.answer,
         explain: item.explain,
-        isGood: matchAnswer(user, item.answer, item.accepted),
+        isGood: evaluateWrite(item, user),
       })
     })
   }
@@ -546,12 +620,10 @@ export default function GrammarTopicClient({
   topic,
   idioma,
   nivel,
-  relatedWritingExercises = [],
 }: {
   topic: GrammarTopic
   idioma: string
   nivel: string
-  relatedWritingExercises?: RelatedWritingExercise[]
 }) {
   const { progress, mounted, recordLevel } = useGrammarProgress(idioma, nivel, topic.slug)
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -652,25 +724,6 @@ export default function GrammarTopicClient({
           </div>
         )}
       </div>
-
-      {relatedWritingExercises.length > 0 && (
-        <section className="grammar-writing-bridge" aria-labelledby="grammar-writing-bridge-title">
-          <div>
-            <span className="section-label">— Transferencia a escritura</span>
-            <h2 id="grammar-writing-bridge-title" className="gram-h2">Usa {topic.shortTitle} en un texto</h2>
-            <p>La práctica guiada te pide usar esta estructura para resolver una situación comunicativa del mismo nivel.</p>
-          </div>
-          <div className="grammar-writing-bridge__links">
-            {relatedWritingExercises.map(exercise => (
-              <a key={exercise.id} href={`/practica/${idioma}/${nivel}/escritura?ejercicio=${exercise.id}`}>
-                <span>{String(exercise.sequence).padStart(2, '0')}</span>
-                <b>{exercise.title}</b>
-                <small>{exercise.genre}</small>
-              </a>
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* ── Practice Journey overview ───────────────────────────────────────── */}
       <div id="practica" className="practice-journey">

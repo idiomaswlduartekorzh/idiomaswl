@@ -47,7 +47,7 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Seit vs. vor: la confusión más común con las preposiciones temporales',
+      heading: '¿Cuál es la diferencia entre seit y vor en alemán?',
       paragraphs: [
         '"Seit" y "vor" son las dos preposiciones de tiempo que más confunden a los estudiantes de alemán. La diferencia es clara: "seit" mira desde el pasado hacia el presente (la acción CONTINÚA), mientras que "vor" solo señala un punto en el pasado (la acción YA TERMINÓ).',
         'Ejemplos: "Ich wohne seit einem Jahr in Berlin" (Vivo en Berlín desde hace un año — y sigo viviendo). "Vor einem Jahr bin ich nach Berlin gezogen" (Hace un año me mudé a Berlín — acción puntual en el pasado).',
@@ -61,10 +61,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Mientras vs. durante: während + Genitivo',
+      heading: '¿Cómo se usa während + Genitivo en alemán?',
       paragraphs: [
         '"Während" rige siempre Genitivo en alemán formal, tanto masculino/neutro (während des Essens, während des Unterrichts) como femenino (während der Pause). En el habla coloquial a veces se usa con Dativo, pero la forma estándar en B1 es con Genitivo.',
         '"Bis" es especial: con horas y días va sin artículo (bis morgen, bis 8 Uhr). Con sustantivos necesita "bis zu + Dativ": bis zum Ende, bis zur Haltestelle.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las preposiciones temporales del alemán?',
+      paragraphs: [
+        'Las más importantes del B1, con su caso: an + Dativ (días y partes del día: am Montag, am Morgen), in + Dativ (meses, estaciones, años con "im": im Juli, im Sommer), um + Akkusativ (horas exactas: um 8 Uhr), seit + Dativ (desde un momento pasado hasta ahora: seit 2020), vor + Dativ (hace un tiempo: vor drei Tagen), nach + Dativ (después de), bis (hasta), während + Genitiv (durante), zwischen + Dativ (entre dos momentos). La trampa central es seit vs. vor: seit marca una acción que empezó en el pasado y CONTINÚA (con presente en alemán: "Ich wohne seit 2020 hier"), mientras vor marca un punto puntual del pasado ya cerrado ("vor drei Jahren" = hace tres años). El español usa "desde hace" y "hace" para distinguirlos.',
       ],
     },
   ],

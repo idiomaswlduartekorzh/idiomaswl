@@ -53,7 +53,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Diferencia clave entre -던 y -았던/-었던',
+      heading: '¿Cuál es la diferencia entre -던 y -았던/-었던?',
       paragraphs: [
         '-던 pone énfasis en la continuidad o habitualidad del pasado — la acción se repetía o el estado se mantenía, y ahora ya no es así. Es nostálgico: 어릴 때 먹던 과자 (las galletas que comía de niño).',
         '-았던/-었던 añade la idea de que la acción se completó definitivamente. Con verbos de movimiento, la diferencia es clara: 가던 길 (el camino por el que iba, en proceso) vs 갔던 길 (el camino por el que fui y regresé, completado).',
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: '-던 con verbos de estado (adjetivos)',
+      heading: '¿Cómo se usa -던 con adjetivos en coreano?',
       paragraphs: [
         'Cuando -던 modifica adjetivos (형용사), expresa que algo tenía esa cualidad en el pasado pero ya no la tiene: 작던 마을 (el pueblo que era pequeño — ya creció), 바쁘던 시절 (la época en que estaba ocupado).',
         '-았던 con adjetivos es menos común pero posible: 예뻤던 사람 (la persona que era hermosa). La diferencia es matiz: -던 sugiere continuidad del estado, -았던 que ese estado ya terminó completamente.',

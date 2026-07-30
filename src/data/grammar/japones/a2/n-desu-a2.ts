@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '~んです: por qué es tan importante en japonés',
+      heading: '¿Por qué ~んです es tan importante en japonés?',
       paragraphs: [
         '~んです (también ~のです en registros formales) es uno de los patrones más importantes del japonés coloquial. La diferencia entre "頭が痛いです" (me duele la cabeza — declaración simple) y "頭が痛いんです" (ES QUE me duele la cabeza — explicación/contexto) es enorme en japonés.',
         'Cuando alguien te pregunta "どうしたんですか？" (¿Qué te pasa? / ¿Qué pasó?), está usando んです para pedir una explicación de algo que ya observa. Y cuando respondes "疲れているんです" (es que estoy cansado), das el contexto que explica lo que ven. Es el corazón de la conversación natural en japonés.',
       ],
     },
     {
-      heading: '~んですが: la fórmula para pedir cosas educadamente',
+      heading: '¿Cómo se pide algo educadamente con ~んですが?',
       paragraphs: [
         '"~んですが..." es la estructura más educada para hacer peticiones en japonés. La oración queda intencionalmente incompleta para suavizar la petición: "すみません、ちょっと聞きたいんですが..." (Disculpe, es que quería preguntar algo...). El が al final indica que hay algo más, invitando al oyente a responder.',
         'Este patrón se usa constantemente en situaciones cotidianas: en tiendas, oficinas, con vecinos. Dominarlo te hará sonar significativamente más natural en japonés.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conecta ~んです con verbos, adjetivos y sustantivos?',
+      paragraphs: [
+        '~んです (forma cortés de ~のだ) se pega a la forma PLANA. Con verbos y adjetivos い va directo: 行くんです (es que voy), 高いんです (es que es caro). Con sustantivos y adjetivos な se intercala な: 学生なんです (es que soy estudiante), 大変なんです (es que es duro) —nunca 学生だんです—. Sirve para explicar, dar contexto o pedir una explicación: どうしたんですか (¿qué (te) pasa?). Aporta el matiz de "la razón es que...", conectando con la situación. La trampa para el hispanohablante es doble: recordar la な obligatoria con sustantivos/な-adjetivos, y no abusar de ~んです en afirmaciones neutras, donde suena a justificación innecesaria. En casual se reduce a ~んだ / ~の.',
       ],
     },
   ],
@@ -146,7 +152,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Quieres preguntar algo y hacer una petición suave.',
-            lines: [['', '聞きたいこと[[0]]...  少し時間[[1]]？']],
+            lines: [['', '聞きたいこと[[0]]... 少し時間[[1]]？']],
             blanks: [
               { options: ['があるんですが', 'があります', 'があるですが', 'があるのか'], answer: 'があるんですが', explain: '"聞きたいことがあるんですが" = es que tengo algo que preguntarle... (suave).' },
               { options: ['がありますか', 'があるんですか', 'があるか', 'はあるか'], answer: 'がありますか', explain: '"少し時間がありますか？" = ¿Tiene un momento? (petición directa educada).' },
@@ -169,7 +175,7 @@ const topic: GrammarTopic = {
         intro: 'Completa el diálogo usando んです correctamente.',
         type: 'guidedText',
         scene: '田中さんが遅れて来ました。',
-        text: 'A: どうし[[0]]？B: すみません。電車が遅れ[[1]]。A: そう[[2]]か。大丈夫ですか？B: 実は、ちょっと具合が悪い[[1]]。A: えっ、早く帰った方がいい[[2]]ね。',
+        text: 'A: どうし[[0]]？B: すみません。電車が遅れ[[1]]。A: そう[[2]]か。大丈夫ですか？B: 実は、ちょっと具合が悪い[[3]]。A: えっ、早く帰った方がいい[[4]]ね。',
         blanks: [
           { options: ['たんですか', 'ましたか', 'たのか', 'たか'], answer: 'たんですか', explain: '"どうしたんですか？" = ¿Qué pasó? Pide explicación de algo observable.' },
           { options: ['たんです', 'ました', 'たです', 'たのか'], answer: 'たんです', explain: '"遅れたんです" / "悪いんです" = es que se atrasó / es que me siento mal.' },
@@ -183,7 +189,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: transforma las oraciones simples en explicaciones con んです.',
         type: 'freeText',
         scene: '普通の文をんです文に変えてください。',
-        text: '疲れています → 疲れてい___。 / 学生です → 学生___。 / 難しいです → 難しい___。 / 行きたいです → 行きたい___が、お金がないです。',
+        text: '疲れています → 疲れてい[[0]]。 / 学生です → 学生[[1]]。 / 難しいです → 難しい[[2]]。 / 行きたいです → 行きたい[[3]]が、お金がないです。',
         blanks: [
           { answer: 'るんです', explain: '"疲れているんです" = es que estoy cansado.' },
           { answer: 'なんです', explain: '"学生なんです" = es que soy estudiante. N + なんです.' },

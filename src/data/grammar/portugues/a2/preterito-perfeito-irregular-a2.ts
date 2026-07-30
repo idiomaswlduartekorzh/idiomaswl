@@ -81,6 +81,32 @@ const topic: GrammarTopic = {
         'Poder→pude, querer→quis y saber→soube son irregulares en toda su conjugación. "Pôde" (3ª sg de poder) lleva acento circunflejo para diferenciarse de "pode" (presente). "Soube" (saber) no tiene equivalente claro en español pero su patrón soube/soubeste/soube/soubemos/souberam es regular dentro de su propia irregularidad.',
       ],
     },
+    {
+      heading: '¿Cómo se conjuga el pretérito perfeito de los verbos irregulares?',
+      paragraphs: [
+        'Cada verbo tiene su propia raíz de pasado, pero comparten las mismas terminaciones (-e/-este/-…/-emos/-eram). Esta tabla da el paradigma completo de los cuatro más frecuentes; conviene aprenderlos enteros porque aparecen en cualquier relato:',
+      ],
+      table: [
+        ['Persona', 'ser/ir', 'ter', 'fazer', 'estar'],
+        ['eu', 'fui', 'tive', 'fiz', 'estive'],
+        ['tu', 'foste', 'tiveste', 'fizeste', 'estiveste'],
+        ['você/ele/ela', 'foi', 'teve', 'fez', 'esteve'],
+        ['nós', 'fomos', 'tivemos', 'fizemos', 'estivemos'],
+        ['vocês/eles/elas', 'foram', 'tiveram', 'fizeram', 'estiveram'],
+      ],
+    },
+    {
+      heading: '¿Por qué "fui" significa a la vez "fui" y "fue"?',
+      paragraphs: [
+        'Porque en portugués ser e ir comparten toda la conjugación del pretérito perfeito (fui/foste/foi/fomos/foram), exactamente igual que en español ("fui" sirve para "yo fui a" y "yo fui alguien"). El contexto decide: "Fui ao Rio" es ir (fui a Río), "Fui professor" es ser (fui profesor). No hay forma de distinguirlos por la conjugación, solo por lo que sigue al verbo: un lugar/destino → ir; un atributo → ser.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "fiz" y "fez" en portugués?',
+      paragraphs: [
+        '"Fiz" es la primera persona (eu fiz = yo hice) y "fez" la tercera del singular (ele/ela/você fez = él/ella hizo). El error típico es regularizar el verbo y decir "fazi" o "fazeu", que no existen: fazer es irregular y hay que memorizar fiz/fez. Lo mismo ocurre con otros pares del pasado como pude/pôde (yo pude / él pudo, este con acento circunflejo para no confundirlo con el presente "pode").',
+      ],
+    },
   ],
 
   visual: {
@@ -126,14 +152,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La llegada',
-            lines: [['David', 'Eles ___ de São Paulo ontem cedo.']],
+            lines: [['Iván', 'Eles ___ de São Paulo ontem cedo.']],
             options: ['vieram', 'viram', 'veniram', 'viemos'],
             answer: 'vieram',
             explain: 'Vir en pretérito perfeito, 3ª pl (eles): vieram. No confundir con "viram" (ver).',
           },
           {
             scene: 'La reunión',
-            lines: [['Zhanna', 'Eu ___ uma reunião importante esta manhã.']],
+            lines: [['Iris', 'Eu ___ uma reunião importante esta manhã.']],
             options: ['tive', 'tinha', 'teve', 'tenho'],
             answer: 'tive',
             explain: 'Ter en pretérito perfeito, 1ª sg (eu): tive.',
@@ -186,9 +212,9 @@ const topic: GrammarTopic = {
           {
             scene: 'La reunión de trabajo',
             lines: [
-              ['Ana', 'Onde você [[0]] ontem? Eu te liguei.'],
-              ['David', 'Eu [[1]] em reunião a tarde toda.'],
-            ],
+ ['Ana', 'Onde você [[0]] ontem? Eu te liguei.'],
+ ['Iván', 'Eu [[1]] em reunião a tarde toda.'],
+ ],
             blanks: [
               { options: ['esteve', 'estava', 'estás'], answer: 'esteve', explain: 'Estar, 3ª sg (você): esteve.' },
               { options: ['estive', 'estava', 'estarei'], answer: 'estive', explain: 'Estar, 1ª sg: estive.' },
@@ -196,7 +222,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La visita',
-            lines: [['Zhanna', 'Minha amiga [[0]] de Recife e nós [[1]] muito tempo juntas.']],
+            lines: [['Iris', 'Minha amiga [[0]] de Recife e nós [[1]] muito tempo juntas.']],
             blanks: [
               { options: ['veio', 'vim', 'vieram'], answer: 'veio', explain: 'Vir, 3ª sg (minha amiga): veio.' },
               { options: ['tivemos', 'tínhamos', 'teremos'], answer: 'tivemos', explain: 'Ter, 1ª pl: tivemos.' },

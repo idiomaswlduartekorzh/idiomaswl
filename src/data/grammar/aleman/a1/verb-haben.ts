@@ -49,21 +49,21 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Conjugación y las formas irregulares hast/hat',
+      heading: '¿Cómo se conjuga el verbo haben en alemán?',
       paragraphs: [
         'La conjugación de haben es casi regular. El patrón de "du" y "er/sie/es" pierde la -b del infinitivo: habe → hast (no "habst"), hat (no "habt" para er). Las otras formas son perfectamente regulares: haben (wir/sie/Sie), habt (ihr).',
         'Ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.',
       ],
     },
     {
-      heading: 'Expresiones con haben',
+      heading: '¿Qué expresiones se forman con haben en alemán?',
       paragraphs: [
         'En alemán, muchas sensaciones usan haben: Hunger haben (tener hambre), Durst haben (tener sed), Angst haben (tener miedo), Schmerzen haben (tener dolor), Glück haben (tener suerte), Zeit haben (tener tiempo), Recht haben (tener razón).',
         'Ich habe Hunger — tengo hambre. Er hat Angst — tiene miedo. Wir haben Zeit — tenemos tiempo.',
       ],
     },
     {
-      heading: 'La negación con kein/keine',
+      heading: '¿Cómo se niega con kein/keine en alemán?',
       paragraphs: [
         'Para negar posesión de sustantivos indefinidos, se usa "kein" (masculino/neutro) o "keine" (femenino/plural): Ich habe kein Auto (no tengo coche), Sie hat keine Zeit (no tiene tiempo), Wir haben keine Kinder (no tenemos hijos).',
         '"Kein" sigue el mismo patrón de declinación que "ein": kein/keine/kein en nominativo, einen/eine/ein en acusativo → keinen/keine/kein.',
@@ -98,7 +98,7 @@ const topic: GrammarTopic = {
         items: [
           { scene: 'Hablando de mascotas', lines: [['', 'Ich ___ einen Hund.']], options: ['habe', 'hast', 'hat', 'habt'], answer: 'habe', explain: '"Ich" → "habe".' },
           { scene: 'Expresando sensaciones', lines: [['', 'Du ___ Hunger ?']], options: ['hast', 'habe', 'hat', 'haben'], answer: 'hast', explain: '"Du" → "hast". La -b desaparece.' },
-          { scene: 'Hablando de posesiones', lines: [['', 'Sie (ella) ___ ein großes Auto.']], options: ['hat', 'hat', 'habe', 'habt'], answer: 'hat', explain: '"Sie" (ella) → "hat". La -b desaparece.' },
+          { scene: 'Hablando de posesiones', lines: [['', 'Sie (ella) ___ ein großes Auto.']], options: ['hat', 'habe', 'habt'], answer: 'hat', explain: '"Sie" (ella) → "hat". La -b desaparece.' },
           { scene: 'Planificando actividades', lines: [['', 'Wir ___ keine Zeit.']], options: ['haben', 'habt', 'habe', 'hat'], answer: 'haben', explain: '"Wir" → "haben".' },
           { scene: 'Felicitando al grupo', lines: [['', 'Ihr ___ Glück heute !']], options: ['habt', 'haben', 'hast', 'hat'], answer: 'habt', explain: '"Ihr" → "habt".' },
           { scene: 'Hablando de familia', lines: [['', 'Sie (ellos) ___ drei Kinder.']], options: ['haben', 'habt', 'hast', 'hat'], answer: 'haben', explain: '"Sie" (plural) → "haben".' },

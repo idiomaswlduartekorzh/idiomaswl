@@ -51,14 +51,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Du vs. Sie: la diferencia de cortesía',
+      heading: '¿Cuándo se usa du y cuándo Sie en alemán?',
       paragraphs: [
         '"Du" es el tuteo — se usa con amigos, familia, niños, compañeros de la misma edad y en contextos informales. "Sie" con mayúscula es el tratamiento formal, equivalente al "usted" español, y se usa con personas mayores, desconocidos, superiores jerárquicos y en contextos profesionales.',
         '"Sie" (formal) usa la misma conjugación verbal que "sie" (ellos/ellas) — la tercera persona plural. Esto puede parecer confuso al principio, pero el contexto siempre aclara el significado.',
       ],
     },
     {
-      heading: 'Er, sie, es: el género gramatical',
+      heading: '¿Cómo funciona el género de er/sie/es en alemán?',
       paragraphs: [
         '"Er" reemplaza a sustantivos masculinos (der Mann, der Tisch → er), "sie" reemplaza a femeninos (die Frau, die Tür → sie), y "es" reemplaza a neutros (das Kind, das Haus, das Buch → es).',
         'El género gramatical del alemán no siempre coincide con el sexo biológico: das Mädchen (la chica) es neutro, así que se reemplaza por "es" — algo que sorprende a los hispanohablantes.',

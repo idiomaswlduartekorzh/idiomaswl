@@ -48,17 +48,23 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: '〜たい: expresar deseos en japonés A1',
+      heading: '¿Cómo se expresan los deseos con 〜たい en japonés?',
       paragraphs: [
         'La forma 〜たい (tai) es esencial desde el nivel A1 porque permite expresar deseos personales de forma natural. La formación es muy predecible: toma la raíz ます del verbo (lo que queda cuando quitas ます) y añade たいです. 食べます → 食べ + たいです = 食べたいです (quiero comer). いきます → いき + たいです = いきたいです (quiero ir).',
         'La singularidad importante es que たい funciona gramaticalmente como un adjetivo い, no como un verbo. Esto significa que su negación no es ません sino たくないです (igual que adj-い: おおきい → おおきくない). Y su forma pasada es たかったです (quería hacer).',
       ],
     },
     {
-      heading: 'たい en primera persona vs tercera persona',
+      heading: '¿Por qué たい cambia entre primera y tercera persona?',
       paragraphs: [
         'En japonés existe una distinción importante: 〜たい se usa libremente para hablar de los propios deseos (primera persona), pero para terceras personas se prefiere 〜たがっています (parece que quiere) o citar sus palabras directamente. Decir "彼は 食べたいです" suena como si leyeras la mente de otra persona, algo que el japonés evita.',
         'En A1, usa たい para hablar de ti mismo: 日本に 行きたいです (quiero ir a Japón), コーヒーを 飲みたいです (quiero beber café). Para preguntar al interlocutor también es natural: 何を 食べたいですか？(¿qué quieres comer?). Es para hablar sobre lo que TÚ quieres hacer.',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma 〜たい a partir del verbo?',
+      paragraphs: [
+        'Se toma la raíz ます del verbo (la forma masu sin ます) y se le añade たい: 食べます → 食べたい (quiero comer), 行きます → 行きたい (quiero ir), 飲みます → 飲みたい (quiero beber). Lo importante es que 〜たい se conjuga como un adjetivo い, no como un verbo: el negativo es 食べたくない (no quiero comer) y el pasado 食べたかった (quería comer). El objeto del deseo puede llevar が en lugar de を: 水が飲みたい (quiero beber agua). La trampa para el hispanohablante es tratar たい como un verbo normal y conjugarlo con ません; en realidad sigue las reglas de los adjetivos い (くない / かった).',
       ],
     },
   ],
@@ -99,7 +105,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'No quiero estudiar hoy',
-            lines: [['David', 'きょうは べんきょう ___ です。(Hoy no quiero estudiar.)']],
+            lines: [['Nico', 'きょうは べんきょう ___ です。(Hoy no quiero estudiar.)']],
             options: ['したくない', 'したい', 'しません', 'したかった'],
             answer: 'したくない',
             explain: 'します (する) → raíz し + たくない = したくないです. Negación de たい → たくない (adj-い).',
@@ -127,7 +133,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Quiero aprender japonés',
-            lines: [['Zhanna', 'にほんごを ___ です。(Quiero aprender japonés.)']],
+            lines: [['Nora', 'にほんごを ___ です。(Quiero aprender japonés.)']],
             options: ['学びたい', 'まなびます', 'まなびません', 'まなんだ'],
             answer: '学びたい',
             explain: '学びます → raíz 学び + たい = 学びたいです (manabitai desu). Quiero aprender.',
@@ -158,7 +164,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Planes de viaje',
-            lines: [['David', 'にほんに [[0]] が、まだ おかねが [[1]]。']],
+            lines: [['Nico', 'にほんに [[0]] が、まだ おかねが [[1]]。']],
             blanks: [
               { options: ['行きたい', 'いきます', 'いきたくない'], answer: '行きたい', explain: '行き + たいです = 行きたいです (quiero ir).' },
               { options: ['ありません', 'あります', 'ありたい'], answer: 'ありません', explain: 'おかねが ありません = no tengo dinero. あります → negativo ありません.' },
@@ -167,9 +173,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Pregunta y respuesta',
             lines: [
-              ['Carlos', '何を [[0]] ですか？(¿Qué quieres comer?)'],
-              ['Sofia', 'ピザを [[1]] です。(Quiero comer pizza.)'],
-            ],
+ ['Carlos', '何を [[0]] ですか？(¿Qué quieres comer?)'],
+ ['Sofia', 'ピザを [[1]] です。(Quiero comer pizza.)'],
+ ],
             blanks: [
               { options: ['食べたい', 'たべたくない', 'たべます'], answer: '食べたい', explain: '何を 食べたいですか？= ¿qué quieres comer?' },
               { options: ['食べたい', 'たべません', 'たべたくない'], answer: '食べたい', explain: 'ピザを 食べたいです = quiero comer pizza.' },
@@ -192,7 +198,7 @@ const topic: GrammarTopic = {
         intro: 'Elige la forma たい o たくない correcta.',
         type: 'guidedText',
         scene: 'Carlos habla de sus deseos como estudiante de japonés en WeLearn',
-        text: 'わたしは にほんに [[0]]。にほんごを もっと [[1]]。アニメを [[2]] し、まんがを [[3]] と おもっています。でも、むずかしい かんじは あまり [[0]]... うそです！かんじも [[4]]！ウィーラーンで デービッドと べんきょう[[5]]。',
+        text: 'わたしは にほんに [[0]]。にほんごを もっと [[1]]。アニメを [[2]] し、まんがを [[3]] と おもっています。でも、むずかしい かんじは あまり [[4]]... うそです！かんじも [[5]]！ウィーラーンで デービッドと べんきょう[[6]]。',
         blanks: [
           { options: ['行きたいです', '行きます', '行きたくないです'], answer: '行きたいです', explain: '行き + たいです = 行きたいです (quiero ir). Deseo personal.' },
           { options: ['学びたいです', 'まなびます', 'まなびたくないです'], answer: '学びたいです', explain: '学び + たいです = 学びたいです (quiero aprender más).' },
@@ -208,7 +214,7 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe la forma たい o たくない correcta.',
         type: 'freeText',
-        scene: 'Zhanna habla de sus planes y lo que no quiere hacer',
+        scene: 'Nora habla de sus planes y lo que no quiere hacer',
         text: 'あした えいがを [[0]] (quiero ver)。でも そうじは [[1]] (no quiero hacer)。にほんごを [[2]] (quiero aprender)。サッカーは [[3]] (no quiero ver)。コーヒーを [[4]] (quiero beber)。はやく [[5]] (quiero dormir)。',
         blanks: [
           { answer: '見たいです', accepted: ['みたいです', '見たい'], explain: '見 + たいです = 見たいです (quiero ver).' },

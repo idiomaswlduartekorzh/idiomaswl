@@ -46,7 +46,7 @@ const topic: GrammarTopic = {
   },
   seo: [
     {
-      heading: 'Мне нравится: cómo expresar gustos en ruso',
+      heading: '¿Cómo se expresan los gustos con Мне нравится?',
       paragraphs: [
         'En ruso, "me gusta" se expresa con la estructura мне нравится + lo que gusta (en nominativo). El verbo нравиться concuerda con lo que gusta: мне нравится фильм (me gusta la película — singular), мне нравятся фильмы (me gustan las películas — plural).',
         'El dativo indica quién siente el gusto: мне (a mí), тебе (a ti), ему (a él), ей (a ella), нам (a nosotros), вам (a vosotros), им (a ellos). Esta inversión del sujeto es la diferencia clave con el español.',
@@ -59,10 +59,17 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Expresar la edad y estados en dativo',
+      heading: '¿Cómo se expresan la edad y los estados con el dativo?',
       paragraphs: [
         'Para decir la edad en ruso se usa el dativo: Мне двадцать лет (tengo veinte años). Los años cambian de forma: 1 = год, 2-4 = года, 5+ = лет. Ejemplos: Ей тридцать один год. Ему двадцать два года. Им пятнадцать лет.',
         'Los estados físicos también usan dativo: мне холодно (tengo frío), мне жарко (tengo calor), мне скучно (me aburro), мне интересно (me parece interesante), мне трудно (me resulta difícil).',
+      ],
+    },
+    {
+      heading: '¿Qué construcciones impersonales de necesidad piden dativo?',
+      paragraphs: [
+        'Muchas expresiones impersonales de obligación, posibilidad o prohibición usan la persona en dativo + una palabra invariable: Мне нужно работать (tengo que trabajar), Мне надо идти (debo irme), Вам можно войти (usted puede entrar), Здесь нельзя курить (aquí no se puede fumar). El "sujeto lógico" (quien debe o puede) va en dativo, no en nominativo.',
+        'La trampa para el hispanohablante es que donde el español dice "yo tengo que", el ruso dice literalmente "a mí es necesario": мне (dativo) + нужно/надо/можно/нельзя + infinitivo. No hay un verbo "tener que" conjugado con "yo"; la persona aparece siempre en dativo.',
       ],
     },
   ],

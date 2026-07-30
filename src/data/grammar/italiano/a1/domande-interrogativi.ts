@@ -59,8 +59,18 @@ const topic: GrammarTopic = {
     {
       heading: 'Las palabras interrogativas del italiano A1',
       paragraphs: [
-        'Los interrogativos básicos son: chi (quién), cosa/che cosa (qué), dove (dónde), quando (cuándo), come (cómo), perché (por qué) y quanto/quanta/quanti/quante (cuánto/s). En italiano se usa "cosa" o "che cosa" de manera intercambiable, aunque "che cosa" es más formal.',
-        'Perché merece atención especial: sirve tanto para preguntar (¿por qué?) como para responder (porque). "Perché studi italiano?" — "Perché è una lingua bellissima." Es una sola palabra que cumple las dos funciones.',
+        'Estos son los interrogativos que necesitas para preguntar cualquier cosa en A1. "Cosa" y "che cosa" son intercambiables (che cosa es algo más formal); "perché" sirve para preguntar y para responder; y "quanto" y "quale" concuerdan con el sustantivo:',
+      ],
+      table: [
+        ['Interrogativo', 'Significado', 'Ejemplo'],
+        ['chi', 'quién', 'Chi è?'],
+        ['(che) cosa', 'qué', 'Cosa fai?'],
+        ['dove', 'dónde', 'Dove abiti?'],
+        ['quando', 'cuándo', 'Quando parti?'],
+        ['come', 'cómo', 'Come stai?'],
+        ['perché', 'por qué / porque', 'Perché studi?'],
+        ['quanto/-a/-i/-e', 'cuánto/-a/-os/-as', 'Quanti anni hai?'],
+        ['quale / quali', 'cuál / cuáles', 'Quale preferisci?'],
       ],
     },
     {
@@ -68,6 +78,24 @@ const topic: GrammarTopic = {
       paragraphs: [
         'Quanto concuerda con el sustantivo al que acompaña: quanto (masc. sg.), quanta (fem. sg.), quanti (masc. pl.), quante (fem. pl.). Quanto costa? (¿Cuánto cuesta?), Quante ore studi? (¿Cuántas horas estudias?), Quanti studenti ci sono? (¿Cuántos estudiantes hay?).',
         'Come se usa en muchas expresiones fijas de A1: Come stai? (¿Cómo estás?), Come si chiama? (¿Cómo se llama?), Come si scrive? (¿Cómo se escribe?). Estas fórmulas son esenciales para la conversación cotidiana.',
+      ],
+    },
+    {
+      heading: '¿Cuáles son las palabras interrogativas en italiano?',
+      paragraphs: [
+        'chi (quién), cosa / che cosa (qué), dove (dónde), quando (cuándo), come (cómo), perché (por qué), quanto/-a/-i/-e (cuánto) y quale/quali (cuál). Con ellas se abre cualquier pregunta: "Dove vai?", "Chi viene?", "Quanto costa?".',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas de sí/no en italiano?',
+      paragraphs: [
+        'Solo con entonación ascendente, sin inversión ni verbos auxiliares: "Parli italiano?", "Hai fame?", "Abiti a Roma?". La frase es idéntica a la afirmativa; solo cambia la entonación (y el signo de interrogación por escrito).',
+      ],
+    },
+    {
+      heading: '¿"Perché" significa "por qué" o "porque"?',
+      paragraphs: [
+        'Las dos cosas: es una sola palabra que pregunta y responde. "Perché studi italiano?" (¿por qué estudias italiano?) — "Perché mi piace" (porque me gusta). El contexto (pregunta o respuesta) indica cuál de los dos sentidos es.',
       ],
     },
   ],
@@ -97,14 +125,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Preguntando el nombre',
-            lines: [['David', '___ si chiama la tua insegnante?']],
+            lines: [['Bruno', '___ si chiama la tua insegnante?']],
             options: ['Come', 'Dove', 'Chi', 'Quando'],
             answer: 'Come',
             explain: 'Come si chiama = ¿cómo se llama? Fórmula fija.',
           },
           {
             scene: 'Preguntando quién es',
-            lines: [['Zhanna', '___ è quella ragazza con David?']],
+            lines: [['Nora', '___ è quella ragazza con Bruno?']],
             options: ['Chi', 'Cosa', 'Come', 'Quanto'],
             answer: 'Chi',
             explain: 'Chi = quién. Chi è? ¿Quién es?',
@@ -125,7 +153,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando cuándo llega',
-            lines: [['Lina', '___ arriva David a Bucaramanga?']],
+            lines: [['Lina', '___ arriva Bruno a Bucaramanga?']],
             options: ['Quando', 'Come', 'Dove', 'Chi'],
             answer: 'Quando',
             explain: 'Quando = cuándo. Quando arriva? ¿Cuándo llega?',
@@ -146,7 +174,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Preguntando cómo está',
-            lines: [['David', 'Ciao Sofia! ___ stai?']],
+            lines: [['Bruno', 'Ciao Sofia! ___ stai?']],
             options: ['Come', 'Chi', 'Dove', 'Quanto'],
             answer: 'Come',
             explain: 'Come stai? = ¿Cómo estás? Saludo básico del italiano.',
@@ -163,9 +191,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Conociendo a alguien nuevo',
             lines: [
-              ['David', '[[0]] ti chiami e [[1]] sei?'],
-              ['Carlo', 'Mi chiamo Carlo e sono colombiano.'],
-            ],
+ ['Bruno', '[[0]] ti chiami e [[1]] sei?'],
+ ['Carlo', 'Mi chiamo Carlo e sono colombiano.'],
+ ],
             blanks: [
               { options: ['Come', 'Dove', 'Chi'], answer: 'Come', explain: 'Come ti chiami? = ¿Cómo te llamas? Fórmula esencial.' },
               { options: ['di dove', 'dove', 'quando'], answer: 'di dove', explain: 'Di dove sei? = ¿De dónde eres? Dove + preposición di.' },
@@ -173,7 +201,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'En WeLearn',
-            lines: [['Zhanna', '[[0]] studi qui e [[1]] ore studi ogni giorno?']],
+            lines: [['Nora', '[[0]] studi qui e [[1]] ore studi ogni giorno?']],
             blanks: [
               { options: ['Cosa', 'Chi', 'Dove'], answer: 'Cosa', explain: 'Cosa studi? = ¿Qué estudias? Interrogativo de cosa.' },
               { options: ['Quante', 'Quanto', 'Quanti'], answer: 'Quante', explain: 'Quante ore — ore es femenino plural, por eso quante.' },
@@ -182,9 +210,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntando por el horario',
             lines: [
-              ['Ana', '[[0]] inizia la lezione?'],
-              ['Lina', 'Alle nove. E [[1]] finisce? Alle undici.'],
-            ],
+ ['Ana', '[[0]] inizia la lezione?'],
+ ['Lina', 'Alle nove. E [[1]] finisce? Alle undici.'],
+ ],
             blanks: [
               { options: ['Quando', 'Come', 'Dove'], answer: 'Quando', explain: 'Quando inizia? = ¿Cuándo empieza?' },
               { options: ['quando', 'come', 'dove'], answer: 'quando', explain: 'Quando finisce? = ¿Cuándo termina?' },
@@ -193,9 +221,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preguntando el por qué',
             lines: [
-              ['Marco', '[[0]] non parli in classe?'],
-              ['Sofia', 'Non parlo [[0]] sono timida.'],
-            ],
+ ['Marco', '[[0]] non parli in classe?'],
+ ['Sofia', 'Non parlo [[1]] sono timida.'],
+ ],
             blanks: [
               { options: ['Perché', 'Come', 'Chi'], answer: 'Perché', explain: 'Perché non parli? = ¿Por qué no hablas?' },
               { options: ['perché', 'quando', 'dove'], answer: 'perché', explain: 'Perché sono timida = porque soy tímida. Mismo perché para la respuesta.' },
@@ -209,14 +237,15 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Completa la conversación de presentación con los interrogativos correctos.',
         type: 'guidedText',
-        scene: 'David entrevista a un nuevo estudiante en WeLearn',
-        text: '[[0]] ti chiami? — Mi chiamo Carlo. [[1]] sei? — Sono colombiano, di Cali. [[2]] abiti adesso? — Abito a Bogotá. [[3]] studi all\'università? — Studio ingegneria. [[4]] studi l\'italiano? — [[4]] voglio lavorare in Italia. [[5]] anni hai? — Ho ventitré anni. [[6]] livello di italiano hai? — Sono principiante assoluto!',
+        scene: 'Bruno entrevista a un nuevo estudiante en WeLearn',
+        text: '[[0]] ti chiami? — Mi chiamo Carlo. [[1]] sei? — Sono colombiano, di Cali. [[2]] abiti adesso? — Abito a Bogotá. [[3]] studi all\'università? — Studio ingegneria. [[4]] studi l\'italiano? — [[5]] voglio lavorare in Italia. [[6]] anni hai? — Ho ventitré anni. [[7]] livello di italiano hai? — Sono principiante assoluto!',
         blanks: [
           { options: ['Come', 'Dove', 'Chi'], answer: 'Come', explain: 'Come ti chiami? — fórmula fija de presentación.' },
           { options: ['Di dove', 'Dove', 'Chi'], answer: 'Di dove', explain: 'Di dove sei? = ¿De dónde eres?' },
           { options: ['Dove', 'Quando', 'Come'], answer: 'Dove', explain: 'Dove abiti? = ¿Dónde vives?' },
           { options: ['Cosa', 'Chi', 'Come'], answer: 'Cosa', explain: 'Cosa studi? = ¿Qué estudias?' },
-          { options: ['Perché', 'Quando', 'Come'], answer: 'Perché', explain: 'Perché studi? — y la respuesta también usa perché: porque.' },
+          { options: ['Perché', 'Quando', 'Come'], answer: 'Perché', explain: 'Perché studi l\'italiano? = ¿Por qué estudias italiano?' },
+          { options: ['Perché', 'Come', 'Quando'], answer: 'Perché', explain: 'Perché voglio lavorare in Italia — la respuesta también usa perché: porque.' },
           { options: ['Quanti', 'Quanto', 'Quante'], answer: 'Quanti', explain: 'Quanti anni hai? = ¿Cuántos años tienes? Anni = masc. pl.' },
           { options: ['Che', 'Chi', 'Dove'], answer: 'Che', explain: 'Che livello hai? = ¿Qué nivel tienes? Che como adjetivo interrogativo.' },
         ],
@@ -228,13 +257,13 @@ const topic: GrammarTopic = {
         intro: 'Escribe el interrogativo correcto para cada pregunta.',
         type: 'freeText',
         scene: 'Sofia hace preguntas a sus compañeros de clase en WeLearn',
-        text: '[[0]] costa questo libro? — Costa venti euro. [[1]] si chiama la professoressa? — Si chiama Zhanna. [[2]] non vieni alla festa? — Perché sono stanco. [[3]] studenti ci sono in classe? — Ci sono quindici studenti. [[4]] abita David? — Abita a Bucaramanga. [[5]] inizia il corso? — Inizia il tre settembre.',
+        text: '[[0]] costa questo libro? — Costa venti euro. [[1]] si chiama la professoressa? — Si chiama Nora. [[2]] non vieni alla festa? — Perché sono stanco. [[3]] studenti ci sono in classe? — Ci sono quindici studenti. [[4]] abita Bruno? — Abita a Bucaramanga. [[5]] inizia il corso? — Inizia il tre settembre.',
         blanks: [
           { answer: 'Quanto', explain: 'Quanto costa? — cuánto (sing. masc.): quanto.' },
           { answer: 'Come', explain: 'Come si chiama? — fórmula de nombre con come.' },
           { answer: 'Perché', explain: 'Perché non vieni? — por qué.' },
           { answer: 'Quanti', explain: 'Quanti studenti? — masc. pl.: quanti.' },
-          { answer: 'Dove', explain: 'Dove abita David? — dónde.' },
+          { answer: 'Dove', explain: 'Dove abita Bruno? — dónde.' },
           { answer: 'Quando', explain: 'Quando inizia? — cuándo.' },
         ],
       },

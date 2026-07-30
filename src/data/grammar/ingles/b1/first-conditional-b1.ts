@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         'En el IELTS Speaking y Writing es importante variar entre unless, as long as y provided that para demostrar complejidad gramatical. Un buen uso del first conditional puede subir tu puntuación de gramática.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el first conditional en inglés?',
+      paragraphs: [
+        'Con "if + present simple, ... will + verbo base": "If it rains, we will cancel the trip". La condición va en presente y el resultado con "will" (o can/may/imperativo). Se usa para situaciones reales y probables en el futuro.',
+      ],
+    },
+    {
+      heading: '¿Se usa "will" después de "if"?',
+      paragraphs: [
+        'No. Tras "if" va el present simple, nunca "will": "If you help me, I will finish sooner" (no "if you will help me"). El "will" va en la cláusula de resultado. Es el error clásico del hispanohablante.',
+      ],
+    },
+    {
+      heading: '¿Cómo se usan "unless", "as long as", "in case" en el first conditional?',
+      paragraphs: [
+        '"unless" = "if not" (a menos que): "I won\'t go unless you come". "as long as / provided that" = siempre que ("You can stay as long as you\'re quiet"). "in case" = por si acaso ("Take an umbrella in case it rains"). Todas van con present, no con will.',
+      ],
+    },
   ],
 
   visual: {

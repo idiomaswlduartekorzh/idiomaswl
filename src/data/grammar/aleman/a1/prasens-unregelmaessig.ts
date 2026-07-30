@@ -47,21 +47,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Verbos de raíz fuerte: solo cambian en du y er/sie/es',
+      heading: '¿Qué son los verbos de raíz fuerte en alemán?',
       paragraphs: [
         'En alemán, los verbos de raíz fuerte (starke Verben) modifican la vocal del radical únicamente en 2.ª persona singular (du) y 3.ª persona singular (er/sie/es). Ninguna otra persona sufre el cambio. Este es un punto crucial: "ich spreche" es completamente regular, pero "er spricht" cambia la e por i.',
         'Existen tres patrones principales en A1: e→i (sprechen, essen, nehmen, geben), e→ie (lesen, sehen, empfehlen) y a→ä (fahren, schlafen, tragen). Memorizar el grupo al que pertenece cada verbo facilita la conjugación.',
       ],
     },
     {
-      heading: 'Patrón e→i: sprechen, essen, nehmen, geben',
+      heading: '¿Cómo funciona el cambio vocálico e→i en alemán?',
       paragraphs: [
         'Sprechen (hablar): ich spreche, du sprichst, er/sie spricht, wir sprechen, ihr sprecht, sie sprechen. Essen (comer): ich esse, du isst, er isst, wir essen, ihr esst, sie essen. Nehmen (tomar/coger): ich nehme, du nimmst, er nimmt.',
         'Geben (dar): ich gebe, du gibst, er gibt. Nota: en "essen" la doble -ss en du/er se debe a la vocal breve anterior a la -ss (regla ortográfica alemana). En nehmen ocurre además una consonante geminada: nimm-.',
       ],
     },
     {
-      heading: 'Patrón e→ie y a→ä',
+      heading: '¿Qué verbos cambian e→ie y a→ä en alemán?',
       paragraphs: [
         'E→ie: lesen (leer) → du liest, er liest; sehen (ver) → du siehst, er sieht. La ie es un sonido largo — no confundir con i breve del patrón anterior. Empfehlen (recomendar) → du empfiehlst, er empfiehlt.',
         'A→ä: fahren (conducir/ir en vehículo) → du fährst, er fährt; schlafen (dormir) → du schläfst, er schläft; tragen (llevar/cargar) → du trägst, er trägt. La diéresis (Umlaut) sobre la a indica la vocal modificada.',
@@ -103,15 +103,15 @@ const topic: GrammarTopic = {
         type: 'choice',
         items: [
           {
-            scene: 'David habla con un estudiante sobre idiomas',
-            lines: [['David', 'Welche Sprachen ___ du? (sprechen)']],
+            scene: 'Tomás habla con un estudiante sobre idiomas',
+            lines: [['Tomás', 'Welche Sprachen ___ du? (sprechen)']],
             options: ['sprichst', 'sprechst', 'spricht', 'spreche'],
             answer: 'sprichst',
             explain: '"Du" + sprechen (e→i): "du sprichst". La e del radical cambia a i.',
           },
           {
-            scene: 'Zhanna habla de los hábitos de Carlos',
-            lines: [['Zhanna', 'Carlos ___ jeden Tag Zeitung. (lesen)']],
+            scene: 'Elena habla de los hábitos de Carlos',
+            lines: [['Elena', 'Carlos ___ jeden Tag Zeitung. (lesen)']],
             options: ['liest', 'lest', 'lesst', 'lese'],
             answer: 'liest',
             explain: '"Carlos" = er, lesen (e→ie): "er liest". La e larga cambia a ie.',
@@ -131,15 +131,15 @@ const topic: GrammarTopic = {
             explain: '"Du" + essen (e→i): "du isst". La e cambia a i y se escribe con doble ss.',
           },
           {
-            scene: 'Zhanna describe a una estudiante',
-            lines: [['Zhanna', 'Sofia ___ immer die Hausaufgaben. (nehmen)']],
+            scene: 'Elena describe a una estudiante',
+            lines: [['Elena', 'Sofia ___ immer die Hausaufgaben. (nehmen)']],
             options: ['nimmt', 'nehmt', 'nimmst', 'nehmen'],
             answer: 'nimmt',
             explain: '"Sofia" = sie, nehmen (e→i): "sie nimmt". Cambio e→i y doble m.',
           },
           {
-            scene: 'David habla en clase sobre un libro',
-            lines: [['David', '___ ihr das Buch? (sehen)']],
+            scene: 'Tomás habla en clase sobre un libro',
+            lines: [['Tomás', '___ ihr das Buch? (sehen)']],
             options: ['Seht', 'Sieht', 'Siehst', 'Sehen'],
             answer: 'Seht',
             explain: '"Ihr" NO cambia la vocal: "ihr seht". Solo du/er/sie/es cambian.',
@@ -168,8 +168,8 @@ const topic: GrammarTopic = {
         type: 'dual',
         items: [
           {
-            scene: 'David habla de un compañero políglota',
-            lines: [['David', '[[0]] [[1]] fünf Sprachen. (er, sprechen)']],
+            scene: 'Tomás habla de un compañero políglota',
+            lines: [['Tomás', '[[0]] [[1]] fünf Sprachen. (er, sprechen)']],
             blanks: [
               { options: ['Er', 'Sie', 'Ihr', 'Du'], answer: 'Er', explain: '"El compañero" = er.' },
               { options: ['spricht', 'sprechst', 'spreche', 'sprechen'], answer: 'spricht', explain: 'er + sprechen (e→i) → "er spricht".' },
@@ -184,10 +184,10 @@ const topic: GrammarTopic = {
             ],
           },
           {
-            scene: 'Lina habla de los hábitos de Zhanna',
+            scene: 'Lina habla de los hábitos de Elena',
             lines: [['Lina', '[[0]] [[1]] mit dem Zug zur Arbeit. (sie, fahren)']],
             blanks: [
-              { options: ['Sie', 'Er', 'Du', 'Wir'], answer: 'Sie', explain: '"Zhanna" = sie (singular).' },
+              { options: ['Sie', 'Er', 'Du', 'Wir'], answer: 'Sie', explain: '"Elena" = sie (singular).' },
               { options: ['fährt', 'fahrt', 'fähren', 'fahre'], answer: 'fährt', explain: 'sie + fahren (a→ä) → "sie fährt".' },
             ],
           },
@@ -208,11 +208,11 @@ const topic: GrammarTopic = {
         intro: 'Conjuga los verbos irregulares en la persona indicada.',
         type: 'guidedText',
         scene: 'Un día en la academia WeLearn.',
-        text: 'Morgens [[0]] David Nachrichten (lesen). Er [[1]] dabei Kaffee (trinken — regular). Zhanna [[2]] immer früh an. Sie [[3]] die Hausaufgaben der Studenten (nehmen). Carlos [[4]] gern schnell (fahren). Ana [[5]] ein Buch in der Pause (lesen). Wir alle [[6]] zusammen Deutsch (sprechen).',
+        text: 'Morgens [[0]] Tomás Nachrichten (lesen). Er [[1]] dabei Kaffee (trinken — regular). Elena [[2]] immer früh an. Sie [[3]] die Hausaufgaben der Studenten (nehmen). Carlos [[4]] gern schnell (fahren). Ana [[5]] ein Buch in der Pause (lesen). Wir alle [[6]] zusammen Deutsch (sprechen).',
         blanks: [
-          { options: ['liest', 'lese', 'lest', 'lesen'], answer: 'liest', explain: '"David" = er, lesen (e→ie): "er liest".' },
+          { options: ['liest', 'lese', 'lest', 'lesen'], answer: 'liest', explain: '"Tomás" = er, lesen (e→ie): "er liest".' },
           { options: ['trinkt', 'trinkst', 'trinke', 'trinken'], answer: 'trinkt', explain: '"Er" + trinken (regular): "er trinkt".' },
-          { options: ['fährt', 'fahrt', 'fähren', 'fahre'], answer: 'fährt', explain: '"Zhanna" = sie, fahren (a→ä): "sie fährt".' },
+          { options: ['fährt', 'fahrt', 'fähren', 'fahre'], answer: 'fährt', explain: '"Elena" = sie, fahren (a→ä): "sie fährt".' },
           { options: ['nimmt', 'nehmt', 'nimmst', 'nehmen'], answer: 'nimmt', explain: '"Sie" (ella) + nehmen (e→i): "sie nimmt".' },
           { options: ['fährt', 'fahrt', 'fahren', 'fähren'], answer: 'fährt', explain: '"Carlos" = er, fahren (a→ä): "er fährt".' },
           { options: ['liest', 'lese', 'lest', 'lesen'], answer: 'liest', explain: '"Ana" = sie, lesen (e→ie): "sie liest".' },
@@ -257,9 +257,9 @@ const topic: GrammarTopic = {
             explain: 'Recuerda: "ich" no cambia la vocal. Ich spreche, ich lese, ich esse, ich fahre.',
           },
           {
-            scene: 'Preguntando a David',
-            prompt: 'Hazle dos preguntas a David: una sobre qué idiomas habla y otra sobre qué come en el descanso.',
-            answer: 'Welche Sprachen sprichst du, David? Und was isst du in der Pause?',
+            scene: 'Preguntando a Tomás',
+            prompt: 'Hazle dos preguntas a Tomás: una sobre qué idiomas habla y otra sobre qué come en el descanso.',
+            answer: 'Welche Sprachen sprichst du, Tomás? Und was isst du in der Pause?',
             accepted: ['sprichst du', 'isst du', 'liest du', 'fährst du'],
             explain: 'Du-Formen: sprichst, isst, liest, fährst, nimmst, gibst, siehst, schläfst.',
           },
@@ -273,9 +273,9 @@ const topic: GrammarTopic = {
         type: 'write',
         items: [
           {
-            scene: 'Describe el día de Zhanna',
-            prompt: 'Describe qué hace Zhanna durante el día con er/sie-Formen irregulares.',
-            answer: 'Zhanna liest morgens E-Mails. Sie fährt mit dem Fahrrad zur Akademie. Sie gibt den Studenten Aufgaben.',
+            scene: 'Describe el día de Elena',
+            prompt: 'Describe qué hace Elena durante el día con er/sie-Formen irregulares.',
+            answer: 'Elena liest morgens E-Mails. Sie fährt mit dem Fahrrad zur Akademie. Sie gibt den Studenten Aufgaben.',
             accepted: ['liest', 'fährt', 'gibt', 'nimmt', 'isst', 'sieht', 'spricht', 'schläft'],
             explain: 'Formas sie: liest, fährt, gibt, nimmt, isst, sieht, spricht, schläft.',
           },

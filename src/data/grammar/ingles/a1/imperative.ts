@@ -62,6 +62,24 @@ const topic: GrammarTopic = {
         'En clase, el profesor típicamente da órdenes sin please porque tiene autoridad: Listen! / Repeat! / Write! Pero en situaciones cotidianas, un "please" marca la diferencia entre una petición educada y una orden.',
       ],
     },
+    {
+      heading: '¿Cómo se forma el imperativo en inglés?',
+      paragraphs: [
+        'Con el verbo en forma base, SIN sujeto: "Open the door", "Sit down", "Listen". Es la forma más simple del inglés: no cambia por persona. Se usa para instrucciones, órdenes, indicaciones e invitaciones ("Have a seat").',
+      ],
+    },
+    {
+      heading: '¿Cómo se hace el imperativo negativo en inglés?',
+      paragraphs: [
+        'Con "don\'t" + verbo en forma base: "Don\'t run", "Don\'t be late", "Don\'t worry". Sirve para todas las personas y es igual de simple que el afirmativo. Para suavizar una orden se añade "please": "Please don\'t smoke here".',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "vamos a…" con "let\'s" en inglés?',
+      paragraphs: [
+        'Con "let\'s" (let us) + verbo en forma base, para una propuesta que incluye al hablante: "Let\'s go", "Let\'s eat", "Let\'s start". En negativo: "Let\'s not waste time". Equivale al "vamos a + infinitivo" español con valor de sugerencia.',
+      ],
+    },
   ],
   visual: {
     mode: 'table',
@@ -115,7 +133,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Ejercicio oral',
-            lines: [['David', '___ the sentence: "I am a student."']],
+            lines: [['Enzo', '___ the sentence: "I am a student."']],
             options: ['Repeat', 'Repeats', 'To repeat', 'Repeating'],
             answer: 'Repeat',
             explain: 'Imperativo: Repeat! — verbo base.',
@@ -160,7 +178,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Regla de clase',
-            lines: [['David', '[[0]] late and [[1]] your homework.']],
+            lines: [['Enzo', '[[0]] late and [[1]] your homework.']],
             blanks: [
               { options: ['Don\'t be', 'Be not', 'Not be'], answer: 'Don\'t be', explain: 'Don\'t be late — negativa de to be.' },
               { options: ['do', 'does', 'doing'], answer: 'do', explain: 'do your homework — imperativo afirmativo.' },
@@ -176,7 +194,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Instrucción de examen',
-            lines: [['Zhanna', '[[0]] your phone and [[1]] your name.']],
+            lines: [['Marta', '[[0]] your phone and [[1]] your name.']],
             blanks: [
               { options: ['Turn off', 'Turning off', 'Turn on'], answer: 'Turn off', explain: 'Turn off your phone — imperativo.' },
               { options: ['write', 'writes', 'writing'], answer: 'write', explain: 'write your name — imperativo.' },
@@ -208,7 +226,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el imperativo correcto: afirmativo o negativo.',
         type: 'freeText',
         scene: 'Señales y reglas en WeLearn',
-        text: '___ here (sit — afirmativo). ___ in class (eat — negativo). ___ your hand if you have a question (raise — afirmativo). ___ late to the exam (be — negativo). ___ the dialogue (listen — afirmativo). ___ — this is an exam (talk — negativo).',
+        text: '[[0]] here (sit — afirmativo). [[1]] in class (eat — negativo). [[2]] your hand if you have a question (raise — afirmativo). [[3]] late to the exam (be — negativo). [[4]] the dialogue (listen — afirmativo). [[5]] — this is an exam (talk — negativo).',
         blanks: [
           { answer: 'Sit', accepted: ['Sit', 'sit'], explain: 'Sit here — imperativo afirmativo.' },
           { answer: 'Don\'t eat', accepted: ["Don't eat", "don't eat", "Do not eat"], explain: 'Don\'t eat in class — negativa.' },

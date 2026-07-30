@@ -67,6 +67,32 @@ const topic: GrammarTopic = {
         'En Portugal, el artículo antes del posesivo es casi obligatorio: o meu livro, a tua casa. En Brasil, el artículo es opcional y se omite con frecuencia: meu livro = o meu livro, minha casa = a minha casa. Ambas formas son correctas en BP. Para los hispanohablantes, omitir el artículo (como en español "mi libro") es lo más natural.',
       ],
     },
+    {
+      heading: '¿Cuáles son los adjetivos posesivos en portugués?',
+      paragraphs: [
+        'Cada persona tiene cuatro formas que concuerdan con el objeto poseído (masculino/femenino × singular/plural). Esta es la tabla completa; fíjate en que la 3ª persona (você/ele/ela y eles/elas) comparte seu/sua, que en Brasil se desambigua con dele/dela:',
+      ],
+      table: [
+        ['Persona', 'Masc. sg', 'Fem. sg', 'Masc. pl', 'Fem. pl'],
+        ['eu', 'meu', 'minha', 'meus', 'minhas'],
+        ['tu', 'teu', 'tua', 'teus', 'tuas'],
+        ['você/ele/ela', 'seu', 'sua', 'seus', 'suas'],
+        ['nós', 'nosso', 'nossa', 'nossos', 'nossas'],
+        ['vocês/eles/elas', 'seu', 'sua', 'seus', 'suas'],
+      ],
+    },
+    {
+      heading: '¿Se dice "meu casa" o "minha casa"?',
+      paragraphs: [
+        'Se dice "minha casa", porque casa es femenino y el posesivo concuerda con la cosa poseída, no con quien posee. Esta es la trampa número uno del hispanohablante, que en español usa "mi" invariable para ambos géneros ("mi casa", "mi libro"). En portugués hay que elegir: meu carro / minha casa, meus filhos / minhas filhas. Regla práctica: mira el artículo del sustantivo (o → meu, a → minha) y el posesivo lo copia.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice "su" (de él/de ella) en portugués brasileño?',
+      paragraphs: [
+        'En la práctica brasileña se dice "dele" (de él) y "dela" (de ella), pospuesto al sustantivo: "o carro dele", "a casa dela", "os livros deles/delas". Aunque "seu/sua" es gramaticalmente correcto, resulta ambiguo porque también significa "de você", así que el brasileño lo reserva para el trato formal y prefiere dele/dela para la 3ª persona. Es una diferencia de uso clave frente al español, donde "su" cubre todos esos casos sin problema.',
+      ],
+    },
   ],
   visual: {
     mode: 'grammar-table',
@@ -105,14 +131,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Nuestro profesor',
-            lines: [['Ana', '___ professor é o David.']],
+            lines: [['Ana', '___ professor é o Hugo.']],
             options: ['Nosso', 'Nossa', 'Nossos', 'Nossas'],
             answer: 'Nosso',
             explain: 'Professor es masculino → nosso. Nuestro professor.',
           },
           {
             scene: 'Ella y su libro (ambiguo)',
-            lines: [['Marco', 'A Zhanna perdeu ___ livro. (de ella)']],
+            lines: [['Marco', 'A Clara perdeu ___ livro. (de ella)']],
             options: ['o livro dela', 'seu livro', 'sua livro', 'o livro dele'],
             answer: 'o livro dela',
             explain: 'BP: o livro dela (de ella) es la forma clara. "Seu livro" es ambiguo (puede ser de você/ele/ela).',
@@ -126,14 +152,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Tu libro (Portugal)',
-            lines: [['David', 'Esqueceste ___ livro em casa, amigo!']],
+            lines: [['Hugo', 'Esqueceste ___ livro em casa, amigo!']],
             options: ['teu', 'tua', 'teus', 'seu'],
             answer: 'teu',
             explain: 'Livro es masculino → teu (de tu, Portugal/BP formal). "Seu livro" también vale en BP.',
           },
           {
             scene: 'Nuestras clases',
-            lines: [['Zhanna', '___ aulas são sempre interativas.']],
+            lines: [['Clara', '___ aulas são sempre interativas.']],
             options: ['Nossas', 'Nosso', 'Nossa', 'Nossos'],
             answer: 'Nossas',
             explain: 'Aulas es femenino plural → nossas. Nuestras clases.',
@@ -172,7 +198,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Él y su laptop',
-            lines: [['David', 'O Marco esqueceu [[0]] e agora não tem [[1]].']],
+            lines: [['Hugo', 'O Marco esqueceu [[0]] e agora não tem [[1]].']],
             blanks: [
               { options: ['o computador dele', 'seu computador', 'o computador seu'], answer: 'o computador dele', explain: 'BP: o computador dele (de él), claro y sin ambigüedad.' },
               { options: ['senha dele', 'a senha dele', 'sua senha'], answer: 'a senha dele', explain: 'A senha dele: la contraseña de él. Femenino + dele.' },
@@ -195,7 +221,7 @@ const topic: GrammarTopic = {
         intro: 'Completa con el posesivo correcto.',
         type: 'guidedText',
         scene: 'Apresentação de família — Carlos fala da família dele',
-        text: '[[0]] família é de Bucaramanga. [[1]] pai chama-se Jorge e [[2]] mãe chama-se María. Tenho dois irmãos — [[3]] nomes são Lucas e Felipe. [[4]] escola preferida é a WeLearn. O David é [[5]] professor favorito — os alunos adoram as aulas [[6]]. (dele)',
+        text: '[[0]] família é de Bucaramanga. [[1]] pai chama-se Jorge e [[2]] mãe chama-se María. Tenho dois irmãos — [[3]] nomes são Lucas e Felipe. [[4]] escola preferida é a WeLearn. O Hugo é [[5]] professor favorito — os alunos adoram as aulas [[6]]. (dele)',
         blanks: [
           { options: ['Minha', 'Meu', 'Minhas'], answer: 'Minha', explain: 'Família es femenino → minha.' },
           { options: ['Meu', 'Minha', 'Meus'], answer: 'Meu', explain: 'Pai es masculino → meu.' },
@@ -203,7 +229,7 @@ const topic: GrammarTopic = {
           { options: ['seus', 'seus deles', 'os nomes deles'], answer: 'seus', explain: 'Seus nomes: de ellos (mis hermanos). Masculino plural.' },
           { options: ['Minha', 'Meu', 'Nosso'], answer: 'Minha', explain: 'Escola es femenino → minha escola.' },
           { options: ['meu', 'minha', 'nosso'], answer: 'meu', explain: 'Professor es masculino → meu professor.' },
-          { options: ['dele', 'sua', 'delas'], answer: 'dele', explain: 'As aulas dele: las clases de él (David). BP evita ambigüedad con dele.' },
+          { options: ['dele', 'sua', 'delas'], answer: 'dele', explain: 'As aulas dele: las clases de él (Hugo). BP evita ambigüedad con dele.' },
         ],
       },
       {
@@ -212,8 +238,8 @@ const topic: GrammarTopic = {
         tag: 'Sin opciones',
         intro: 'Escribe el posesivo correcto sin opciones.',
         type: 'freeText',
-        scene: 'Zhanna fala dos recursos da WeLearn',
-        text: '[[0]] (mi) escola chama-se WeLearn. [[1]] (nuestros) alunos são muito dedicados. O David é [[2]] (mi, masc.) sócio e [[3]] (nuestro) método tem 17 passos. Os alunos trazem [[4]] (sus = deles) materiais. A Sofia é [[5]] (nuestra) melhor aluna.',
+        scene: 'Clara fala dos recursos da WeLearn',
+        text: '[[0]] (mi) escola chama-se WeLearn. [[1]] (nuestros) alunos são muito dedicados. O Hugo é [[2]] (mi, masc.) sócio e [[3]] (nuestro) método tem 17 passos. Os alunos trazem [[4]] (sus = deles) materiais. A Sofia é [[5]] (nuestra) melhor aluna.',
         blanks: [
           { answer: 'Minha', explain: 'Escola femenino → minha.' },
           { answer: 'Nossos', explain: 'Alunos masculino plural → nossos.' },
@@ -284,8 +310,8 @@ const topic: GrammarTopic = {
           {
             scene: 'Tu clase',
             prompt: 'Nossa ___ é ___. Nosso ___ se chama ___. Os alunos trazem ___.',
-            answer: 'Nossa escola é a WeLearn. Nosso professor se chama David. Os alunos trazem os materiais deles.',
-            accepted: ['nossa escola é a welearn nosso professor se chama david os alunos trazem os materiais deles'],
+            answer: 'Nossa escola é a WeLearn. Nosso professor se chama Hugo. Os alunos trazem os materiais deles.',
+            accepted: ['nossa escola é a welearn nosso professor se chama hugo os alunos trazem os materiais deles'],
             explain: 'Nossa (fem.), nosso (masc.), os materiais deles (de ellos, BP claro).',
           },
         ],

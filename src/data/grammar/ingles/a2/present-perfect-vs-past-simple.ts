@@ -89,6 +89,24 @@ const topic: GrammarTopic = {
         'La solución: en inglés, si el momento no está especificado y hablas de experiencias de vida → present perfect. Si estás narrando hechos con referencia temporal concreta → past simple.',
       ],
     },
+    {
+      heading: '¿Cuál es la diferencia entre present perfect y past simple?',
+      paragraphs: [
+        'El past simple describe algo terminado en un momento pasado concreto ("I visited Paris in 2019"). El present perfect describe algo sin decir cuándo, conectado con el presente ("I have visited Paris" = tengo esa experiencia). Regla: si hay un tiempo pasado concreto (yesterday, last week), va past simple.',
+      ],
+    },
+    {
+      heading: '¿Por qué no se puede usar el present perfect con "yesterday"?',
+      paragraphs: [
+        'Porque el present perfect no admite un momento pasado terminado. "I have seen her yesterday" es incorrecto → "I saw her yesterday" (past simple). Con marcadores de tiempo pasado (yesterday, last year, in 2020, ago) siempre se usa past simple.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa "for" y cuándo "since" con el present perfect?',
+      paragraphs: [
+        '"for" + duración: "I have lived here for five years" (durante cinco años). "since" + punto de inicio: "I have lived here since 2019" (desde 2019). Ambos acompañan al present perfect para acciones que siguen hasta ahora.',
+      ],
+    },
   ],
 
   visual: {
@@ -186,9 +204,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Patrón conversacional',
             lines: [
-              ['A:', '[[0]] you ever been to Japan?'],
-              ['B:', 'Yes! I [[1]] there in 2019. It was incredible.'],
-            ],
+ ['A:', '[[0]] you ever been to Japan?'],
+ ['B:', 'Yes! I [[1]] there in 2019. It was incredible.'],
+ ],
             blanks: [
               { options: ['Have', 'Did', 'Do', 'Were'], answer: 'Have', explain: '"Have you ever been?" — present perfect para preguntar por experiencia.' },
               { options: ['went', 'have gone', 'was', 'go'], answer: 'went', explain: '"In 2019" → past simple "went".' },
@@ -205,9 +223,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Hablando de trabajo',
             lines: [
-              ['A:', 'How long [[0]] you worked here?'],
-              ['B:', 'I [[1]] here in January 2021, so about three years.'],
-            ],
+ ['A:', 'How long [[0]] you worked here?'],
+ ['B:', 'I [[1]] here in January 2021, so about three years.'],
+ ],
             blanks: [
               { options: ['have', 'did', 'do', 'were'], answer: 'have', explain: '"How long have you worked here?" — PP para situaciones que continúan hasta ahora.' },
               { options: ['started', 'have started', 'start', 'was starting'], answer: 'started', explain: '"In January 2021" → past simple para el momento específico de inicio.' },
@@ -215,7 +233,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Noticia reciente',
-            lines: [['', 'They [[0]] just [[0]] that the government [[1]] a new environmental law last week.']],
+            lines: [['', 'They [[0]] just [[1]] that the government [[2]] a new environmental law last week.']],
             blanks: [
               { options: ['\'ve announced', 'announced', 'announce', 'announcing'], answer: '\'ve announced', explain: '"Just" → present perfect "They\'ve just announced".' },
               { options: ['passed', 'have passed', 'pass', 'passing'], answer: 'passed', explain: '"Last week" → past simple "passed".' },
@@ -230,7 +248,7 @@ const topic: GrammarTopic = {
         intro: 'Elige entre present perfect y past simple para completar esta entrevista.',
         type: 'guidedText',
         scene: 'Elige entre present perfect y past simple para completar esta entrevista.',
-        text: '"Tell me about yourself." — "I [[0]] as a marketing professional for six years. I [[1]] my career in a small startup in 2018. Since then, I [[2]] with companies of different sizes. I [[3]] a major campaign for a tech company last year that [[4]] a 40% increase in sales. I [[5]] also recently [[5]] a digital marketing certification. I\'m passionate about data-driven strategies and I [[6]] always excited by new challenges."',
+        text: '"Tell me about yourself." — "I [[0]] as a marketing professional for six years. I [[1]] my career in a small startup in 2018. Since then, I [[2]] with companies of different sizes. I [[3]] a major campaign for a tech company last year that [[4]] a 40% increase in sales. I [[5]] also recently [[6]] a digital marketing certification. I\'m passionate about data-driven strategies and I [[7]] always excited by new challenges."',
         blanks: [
           { options: ['\'ve worked', 'worked', 'work', 'was working'], answer: '\'ve worked', explain: '"For six years" + situación que continúa hasta ahora → present perfect.' },
           { options: ['started', '\'ve started', 'start', 'was starting'], answer: 'started', explain: '"In 2018" = momento específico → past simple.' },

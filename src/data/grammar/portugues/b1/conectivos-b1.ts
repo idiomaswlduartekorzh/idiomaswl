@@ -63,14 +63,14 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Conectivos de contraste y concesión',
+      heading: '¿Qué conectivos de contraste hay en portugués?',
       paragraphs: [
         'Expresan oposición entre ideas: "porém" (pero), "contudo" (sin embargo), "entretanto" (mientras tanto), "no entanto" (no obstante), "todavia" (aún así, muy formal).',
         'Diferencia de "mas" (pero conjunción simple) vs "porém" (conectivo formal). "Porém" es más formal y se usa en textos escritos: "Estudei muito, porém não passei" (pero/sin embargo, no pasé).',
       ],
     },
     {
-      heading: 'Conectivos de causa, consecuencia y propósito',
+      heading: '¿Cómo se expresan causa y consecuencia en portugués?',
       paragraphs: [
         'Para expresar relaciones lógicas: "porque" (porque), "pois" (pues, porque), "portanto" (por lo tanto), "logo" (luego, por lo tanto), "assim" (así, de este modo), "para que" (para que), "a fim de que" (a fin de que).',
         'Ejemplo de causa-efecto: "Choveu, portanto não fomos à praia" (Llovió, por lo tanto no fuimos a la playa). "Portanto" enlaza la causa con la consecuencia de manera clara.',

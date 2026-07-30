@@ -48,7 +48,7 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: '-(아/어)야 하다 vs -(아/어)야 되다',
+      heading: '¿Cuál es la diferencia entre -야 하다 y -야 되다?',
       paragraphs: [
         'Ambas formas expresan obligacion y son intercambiables en la mayoria de contextos: 가야 해요 = 가야 돼요. En la practica 돼요 es algo mas coloquial y frecuente en el habla cotidiana, mientras que 해요 suena ligeramente mas formal.',
         'Las dos formas tienen las mismas reglas de armonia vocal. Puedes usar cualquiera sin miedo a cometer un error grave.',
@@ -68,10 +68,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'Obligacion con distintos sujetos',
+      heading: '¿Cómo se expresa obligación con distintos sujetos en coreano?',
       paragraphs: [
         '-(아/어)야 하다 funciona con cualquier sujeto: 나는 가야 해요 (tengo que ir), 너는 가야 해요 (tienes que ir), 우리는 가야 해요 (tenemos que ir). El sujeto puede estar implicito como en espanol.',
         'Para obligacion impersonal o de norma general, coreano tambien usa el infinitivo nominal + -이에요: 여기서는 조용히 해야 해요 (Aqui hay que estar en silencio).',
+      ],
+    },
+    {
+      heading: '¿Cómo se forma la obligación -(아/어)야 하다 en coreano?',
+      paragraphs: [
+        'Se toma la raíz del verbo y se le añade la terminación -아야/-어야 (según la vocal de la raíz: ㅏ/ㅗ → -아야, el resto → -어야) seguida de 하다 o 되다: 가다 → 가야 해요 (tengo que ir), 먹다 → 먹어야 해요 (tengo que comer), 공부하다 → 공부해야 해요. Expresa obligación o necesidad ("tener que / deber"). 하다 y 되다 son intercambiables aquí, aunque 되다 suena algo más coloquial. Para negar la obligación ("no hace falta") se usa -지 않아도 되다 (안 가도 돼요 = no hace falta ir), no la negación directa. Es una de las estructuras más útiles del A2 y aparece constantemente en instrucciones y consejos.',
       ],
     },
   ],
@@ -103,14 +109,14 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Tarea escolar',
-            lines: [['Zhanna', '오늘 숙제를 ___ (하다). (Hoy tienes que hacer la tarea.)']],
+            lines: [['Elena', '오늘 숙제를 ___ (하다). (Hoy tienes que hacer la tarea.)']],
             options: ['해야 해요', '하아야 해요', '하어야 해요', '하야 해요'],
             answer: '해야 해요',
             explain: '하다 → forma especial: 해야 해요.',
           },
           {
             scene: 'Hora de dormir',
-            lines: [['David', '내일 시험이 있어서 일찍 ___ (자다). (Hay examen manana, asi que tengo que dormir temprano.)']],
+            lines: [['Enzo', '내일 시험이 있어서 일찍 ___ (자다). (Hay examen manana, asi que tengo que dormir temprano.)']],
             options: ['자야 해요', '자어야 해요', '자아야 해요', '자이야 해요'],
             answer: '자야 해요',
             explain: '자다 → raiz 자 (vocal ㅏ) → 자야 해요.',
@@ -145,14 +151,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Permiso (no obligacion)',
-            lines: [['Zhanna', '오늘은 안 ___ (오다). 내일 오세요. (Hoy no tienes que venir. Ven manana.)']],
+            lines: [['Elena', '오늘은 안 ___ (오다). 내일 오세요. (Hoy no tienes que venir. Ven manana.)']],
             options: ['와도 돼요', '와야 해요', '오면 안 돼요', '오아도 돼요'],
             answer: '와도 돼요',
             explain: '오도 돼요 → con vocal ㅗ: 와도 돼요. Significa "no tienes que venir".',
           },
           {
             scene: 'Prohibicion',
-            lines: [['David', '도서관에서 큰 소리로 말하___ 안 돼요. (En la biblioteca no se puede hablar en voz alta.)']],
+            lines: [['Enzo', '도서관에서 큰 소리로 말하___ 안 돼요. (En la biblioteca no se puede hablar en voz alta.)']],
             options: ['하면', '하야', '해야', '하어야'],
             answer: '하면',
             explain: 'Prohibicion: -면 안 돼요 → 말하면 안 돼요.',
@@ -169,9 +175,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Preparacion para el examen',
             lines: [
-              ['Zhanna', '시험 준비가 어때요? (¿Como va la preparacion para el examen?)'],
-              ['Ana', '단어를 더 [[0]] (외우다). 문법도 [[1]] (복습하다). (Tengo que memorizar mas vocabulario. Tambien tengo que repasar la gramatica.)'],
-            ],
+ ['Elena', '시험 준비가 어때요? (¿Como va la preparacion para el examen?)'],
+ ['Ana', '단어를 더 [[0]] (외우다). 문법도 [[1]] (복습하다). (Tengo que memorizar mas vocabulario. Tambien tengo que repasar la gramatica.)'],
+ ],
             blanks: [
               { options: ['외워야 해요', '외우아야 해요', '외우어야 해요', '외우야 해요'], answer: '외워야 해요', explain: '외우다 → raiz 외우 (ㅜ → -어야) → 외워야 해요.' },
               { options: ['복습해야 해요', '복습하아야 해요', '복습하어야 해요', '복습하야 해요'], answer: '복습해야 해요', explain: '복습하다 → 복습해야 해요.' },
@@ -180,9 +186,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Normas del apartamento',
             lines: [
-              ['Marco', '아파트에서 지켜야 할 규칙이 있어요? (¿Hay reglas que cumplir en el apartamento?)'],
-              ['David', '네, 밤 10시 이후에는 큰 소리를 내면 [[0]] 돼요. 음식물 쓰레기는 따로 [[1]] (버리다). (Si, despues de las 10 de la noche no se puede hacer ruido. La basura organica hay que tirarla por separado.)'],
-            ],
+ ['Marco', '아파트에서 지켜야 할 규칙이 있어요? (¿Hay reglas que cumplir en el apartamento?)'],
+ ['Enzo', '네, 밤 10시 이후에는 큰 소리를 내면 [[0]] 돼요. 음식물 쓰레기는 따로 [[1]] (버리다). (Si, despues de las 10 de la noche no se puede hacer ruido. La basura organica hay que tirarla por separado.)'],
+ ],
             blanks: [
               { options: ['안', '야', '어야', '아야'], answer: '안', explain: 'Prohibicion: 내면 안 돼요 (no se puede hacer ruido).' },
               { options: ['버려야 해요', '버리아야 해요', '버리어야 해요', '버리야 해요'], answer: '버려야 해요', explain: '버리다 → raiz 버리 (ㅣ → -어야) → 버려야 해요.' },
@@ -191,9 +197,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Visita al medico',
             lines: [
-              ['Doctor', '3일 동안 이 약을 [[0]] (먹다). 커피는 안 [[1]] 돼요. (Durante 3 dias debe tomar esta medicina. No debe tomar cafe.)'],
-              ['Carlos', '알겠습니다. (Entendido.)'],
-            ],
+ ['Doctor', '3일 동안 이 약을 [[0]] (먹다). 커피는 안 [[1]] 돼요. (Durante 3 dias debe tomar esta medicina. No debe tomar cafe.)'],
+ ['Carlos', '알겠습니다. (Entendido.)'],
+ ],
             blanks: [
               { options: ['먹어야 해요', '먹아야 해요', '먹이야 해요', '먹으야 해요'], answer: '먹어야 해요', explain: '먹다 → 먹어야 해요.' },
               { options: ['마시면', '마셔야', '마시아야', '마시어야'], answer: '마시면', explain: '커피는 마시면 안 돼요 (prohibicion).' },
@@ -202,9 +208,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Libertad de asistencia',
             lines: [
-              ['Sofia', '내일 수업에 꼭 [[0]] (오다)? (¿Es obligatorio venir a clase manana?)'],
-              ['Zhanna', '아니요, [[1]] (오다, no es necesario). 온라인으로도 들을 수 있어요. (No, no tienes que venir. Tambien puedes asistir en linea.)'],
-            ],
+ ['Sofia', '내일 수업에 꼭 [[0]] (오다)? (¿Es obligatorio venir a clase manana?)'],
+ ['Elena', '아니요, [[1]] (오다, no es necesario). 온라인으로도 들을 수 있어요. (No, no tienes que venir. Tambien puedes asistir en linea.)'],
+ ],
             blanks: [
               { options: ['와야 해요', '오아야 해요', '오어야 해요', '오이야 해요'], answer: '와야 해요', explain: '오다 → 와야 해요 (ㅗ + 아야 → 와야).' },
               { options: ['안 와도 돼요', '와야 해요', '오면 안 돼요', '안 오아도 돼요'], answer: '안 와도 돼요', explain: 'No es obligatorio: 안 와도 돼요.' },
@@ -235,7 +241,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe la forma correcta de obligacion para cada situacion.',
         type: 'freeText',
         scene: 'Consejos de un medico a su paciente',
-        text: '매일 약을 ___ (먹다). / 물을 하루에 두 리터 ___ (마시다). / 담배를 피우면 ___ 돼요. / 스트레스를 ___ (줄이다). / 충분히 ___ (자다).',
+        text: '매일 약을 [[0]] (먹다). / 물을 하루에 두 리터 [[1]] (마시다). / 담배를 피우면 [[2]] 돼요. / 스트레스를 [[3]] (줄이다). / 충분히 [[4]] (자다).',
         blanks: [
           { answer: '먹어야 해요', explain: '먹다 → 먹어야 해요.' },
           { answer: '마셔야 해요', explain: '마시다 → raiz 마시 (ㅣ → -어야) → 마셔야 해요.' },

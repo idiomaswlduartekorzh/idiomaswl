@@ -68,6 +68,32 @@ const topic: GrammarTopic = {
         'Ter (tener) en imperfeito: tinha/tinhas/tinha/tínhamos/tinham. Note la raíz "tinh-" que cambia completamente. Vir (venir) en imperfeito: vinha/vinhas/vinha/vínhamos/vinham. También con raíz "vinh-". Estas dos formas sorprenden a los hispanohablantes pero se memorizan fácilmente.',
       ],
     },
+    {
+      heading: '¿Cómo se conjuga el pretérito imperfeito en portugués?',
+      paragraphs: [
+        'Los verbos en -ar toman -ava; los en -er e -ir toman -ia. Solo hay tres irregulares (ser, ter, vir). Esta tabla reúne el paradigma regular de los dos grupos más un irregular clave:',
+      ],
+      table: [
+        ['Persona', 'falar (-ar)', 'comer (-er)', 'ser (irreg.)'],
+        ['eu', 'falava', 'comia', 'era'],
+        ['tu', 'falavas', 'comias', 'eras'],
+        ['você/ele/ela', 'falava', 'comia', 'era'],
+        ['nós', 'falávamos', 'comíamos', 'éramos'],
+        ['vocês/eles/elas', 'falavam', 'comiam', 'eram'],
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre pretérito perfeito e imperfeito?',
+      paragraphs: [
+        'El perfeito (fui, comi, falei) presenta la acción como un hecho puntual y terminado; el imperfeito (ia, comia, falava) la presenta como habitual, en curso o descriptiva. "Ontem estudei duas horas" (acción concreta, perfeito) frente a "Quando era criança, estudava pouco" (hábito, imperfeito). En una narración se combinan: el imperfeito pinta el fondo ("Chovia e eu dormia") y el perfeito marca el evento que irrumpe ("…quando o telefone tocou"). Es el mismo reparto del español, así que la intuición se traslada casi sin ajuste.',
+      ],
+    },
+    {
+      heading: '¿Por qué se dice "queria um café" en vez de "quero um café"?',
+      paragraphs: [
+        'Porque el imperfeito suaviza la petición y suena más educado, igual que el español "quería/quisiera un café" frente al directo "quiero". Es un uso de cortesía muy común en portugués: "Queria um café", "Podia me ajudar?", "Gostava de ver o cardápio". No indica pasado real, sino distancia y amabilidad. Para el hispanohablante es intuitivo, porque el español hace exactamente lo mismo con el imperfecto de cortesía.',
+      ],
+    },
   ],
 
   visual: {
@@ -113,14 +139,14 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'La abuela',
-            lines: [['David', 'Minha avó sempre ___ bolo de laranja aos domingos.']],
+            lines: [['Leo', 'Minha avó sempre ___ bolo de laranja aos domingos.']],
             options: ['fazia', 'fez', 'faz', 'fará'],
             answer: 'fazia',
             explain: 'Hábito pasado: fazer (-er irregular) → fazia.',
           },
           {
             scene: 'El fondo de la historia',
-            lines: [['Zhanna', 'Eu ___ quando ouvi o barulho na rua.']],
+            lines: [['Alba', 'Eu ___ quando ouvi o barulho na rua.']],
             options: ['dormia', 'dormi', 'durma', 'dorme'],
             answer: 'dormia',
             explain: 'Fondo narrativo: dormir (-ir) → dormia. Yo dormía cuando...',
@@ -180,7 +206,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El fondo del accidente',
-            lines: [['Zhanna', 'Eu [[0]] (trabalhar) no computador quando de repente [[1]] (começar) a chover muito.']],
+            lines: [['Alba', 'Eu [[0]] (trabalhar) no computador quando de repente [[1]] (começar) a chover muito.']],
             blanks: [
               { options: ['trabalhava', 'trabalhei', 'trabalho'], answer: 'trabalhava', explain: 'Trabalhar, fondo narrativo: trabalhava.' },
               { options: ['começou', 'começava', 'começa'], answer: 'começou', explain: 'El evento súbito usa perfeito: começou. (Contraste: fondo=imperfeito, evento=perfeito)' },
@@ -188,7 +214,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El restaurante antiguo',
-            lines: [['David', 'O restaurante [[0]] (ser) muito bom mas [[1]] (ter) preços altos.']],
+            lines: [['Leo', 'O restaurante [[0]] (ser) muito bom mas [[1]] (ter) preços altos.']],
             blanks: [
               { options: ['era', 'foi', 'é'], answer: 'era', explain: 'Ser, descripción pasada: era.' },
               { options: ['tinha', 'teve', 'tem'], answer: 'tinha', explain: 'Ter, descripción pasada: tinha.' },

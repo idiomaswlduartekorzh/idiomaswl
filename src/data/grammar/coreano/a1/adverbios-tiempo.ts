@@ -51,21 +51,21 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Los adverbios de tiempo más esenciales del coreano',
+      heading: '¿Cuáles son los adverbios de tiempo esenciales del coreano?',
       paragraphs: [
         'Los adverbios de tiempo son palabras de alto rendimiento en coreano: pocas palabras que permiten una conversación rica sobre cuándo ocurrieron o ocurrirán las cosas. El trío más esencial es 오늘(hoy)/어제(ayer)/내일(mañana) — tres palabras que cubren el 80% de las necesidades conversacionales iniciales.',
         'Una ventaja del coreano para hispanohablantes: los adverbios de tiempo no se conjugan, no cambian de forma y no requieren preposición. 오늘 va directamente en la frase sin "de" ni "en": 오늘 가요 = hoy voy.',
       ],
     },
     {
-      heading: 'Posición flexible: una ventaja del coreano',
+      heading: '¿Dónde se colocan los adverbios de tiempo en coreano?',
       paragraphs: [
         'En coreano, los adverbios tienen gran flexibilidad posicional. Se pueden colocar al inicio de la frase (posición tópica, enfatiza el tiempo), en el medio o justo antes del verbo. 오늘 학교에 가요 = 학교에 오늘 가요 = 학교에 가요 오늘 (menos natural). La primera posición es la más frecuente.',
         'Esta libertad contrasta con el español donde la posición del adverbio cambia el énfasis pero no la gramaticalidad. En coreano, dado que el verbo siempre va al final, el adverbio de tiempo al inicio crea un "marco temporal" natural para el resto de la oración.',
       ],
     },
     {
-      heading: 'Frecuencia: siempre, a veces, frecuentemente',
+      heading: '¿Cómo se expresa la frecuencia en coreano?',
       paragraphs: [
         '항상(hangsang) y su variante 늘(neul) significan "siempre". 자주(jaju) = frecuentemente. 가끔(gakkeum) = a veces, de vez en cuando. 보통(botong) = normalmente, habitualmente. 별로(byeollo) + negación = no mucho, raramente.',
         'Ejemplos: 저는 항상 커피를 마셔요(siempre bebo café), 가끔 운동해요(a veces hago ejercicio), 자주 한국 음식을 먹어요(frecuentemente como comida coreana).',
@@ -107,7 +107,7 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'Planes para mañana',
-            lines: [['David', '___ 서울에 가요. (Mañana voy a Seúl.)']],
+            lines: [['Dario', '___ 서울에 가요. (Mañana voy a Seúl.)']],
             options: ['내일', '어제', '지금', '아까'],
             answer: '내일',
             explain: '내일(naeil) = mañana. Con presente/futuro para planes.',
@@ -135,7 +135,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Siempre',
-            lines: [['Zhanna', '저는 ___ 아침을 먹어요. (Siempre desayuno.)']],
+            lines: [['Vera', '저는 ___ 아침을 먹어요. (Siempre desayuno.)']],
             options: ['항상', '가끔', '빨리', '아까'],
             answer: '항상',
             explain: '항상(hangsang) = siempre. Frecuencia máxima.',
@@ -173,9 +173,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Planes del fin de semana',
             lines: [
-              ['David', '이번 주말에 뭐 할 거예요? (¿Qué harás este fin de semana?)'],
-              ['Ana', '[[0]] 친구를 만날 거예요. [[1]] 부터 계획을 짰어요. (Mañana veo a una amiga. Llevo un rato planeándolo.)'],
-            ],
+ ['Dario', '이번 주말에 뭐 할 거예요? (¿Qué harás este fin de semana?)'],
+ ['Ana', '[[0]] 친구를 만날 거예요. [[1]] 부터 계획을 짰어요. (Mañana veo a una amiga. Llevo un rato planeándolo.)'],
+ ],
             blanks: [
               { options: ['내일', '어제', '지금', '아까'], answer: '내일', explain: '내일 = mañana. Plan futuro.' },
               { options: ['아까', '이따가', '내일', '자주'], answer: '아까', explain: '아까 = hace un rato (pasado reciente).' },
@@ -184,9 +184,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Hábitos de estudio',
             lines: [
-              ['Zhanna', '한국어 공부를 얼마나 자주 해요? (¿Con qué frecuencia estudias coreano?)'],
-              ['Sofia', '저는 [[0]] 해요. 그런데 [[1]] 피곤해서 쉬어요. (Siempre lo hago. Pero a veces descanso porque estoy cansada.)'],
-            ],
+ ['Vera', '한국어 공부를 얼마나 자주 해요? (¿Con qué frecuencia estudias coreano?)'],
+ ['Sofia', '저는 [[0]] 해요. 그런데 [[1]] 피곤해서 쉬어요. (Siempre lo hago. Pero a veces descanso porque estoy cansada.)'],
+ ],
             blanks: [
               { options: ['항상', '가끔', '빨리', '내일'], answer: '항상', explain: '항상 = siempre. Frecuencia máxima.' },
               { options: ['가끔', '항상', '자주', '지금'], answer: '가끔', explain: '가끔 = a veces. Frecuencia baja.' },
@@ -195,9 +195,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Cita aplazada',
             lines: [
-              ['Lina', '지금 바빠요? (¿Estás ocupada ahora?)'],
-              ['Marco', '네, 조금요. [[0]] 괜찮아요. [[1]] 이야기해요. (Sí, un poco. Ahora estoy bien. Hablemos más tarde hoy.)'],
-            ],
+ ['Lina', '지금 바빠요? (¿Estás ocupada ahora?)'],
+ ['Marco', '네, 조금요. [[0]] 괜찮아요. [[1]] 이야기해요. (Sí, un poco. Ahora estoy bien. Hablemos más tarde hoy.)'],
+ ],
             blanks: [
               { options: ['지금', '내일', '어제', '자주'], answer: '지금', explain: '지금 = ahora (inmediato). 지금 괜찮아요 = ahora estoy bien.' },
               { options: ['이따가', '나중에', '아까', '내일'], answer: '이따가', explain: '이따가 = más tarde (hoy). 이따가 이야기해요 = hablamos después (hoy).' },
@@ -206,9 +206,9 @@ const topic: GrammarTopic = {
           {
             scene: 'Últimamente',
             lines: [
-              ['Carlos', '요즘 어때요? (¿Cómo estás últimamente?)'],
-              ['David', '[[0]] 많이 바빠요. [[1]] 쉬지 못해요. (Últimamente estoy muy ocupado. Frecuentemente no puedo descansar.)'],
-            ],
+ ['Carlos', '요즘 어때요? (¿Cómo estás últimamente?)'],
+ ['Dario', '[[0]] 많이 바빠요. [[1]] 쉬지 못해요. (Últimamente estoy muy ocupado. Frecuentemente no puedo descansar.)'],
+ ],
             blanks: [
               { options: ['요즘', '지금', '아까', '내일'], answer: '요즘', explain: '요즘(yojeum) = últimamente, estos días.' },
               { options: ['자주', '항상', '가끔', '빨리'], answer: '자주', explain: '자주 = frecuentemente. 자주 못 쉬어요 = frecuentemente no puedo descansar.' },
@@ -240,7 +240,7 @@ const topic: GrammarTopic = {
         intro: 'Escribe el adverbio de tiempo correcto para cada oración.',
         type: 'freeText',
         scene: 'Preguntas sobre tiempo y frecuencia',
-        text: '저는 ___ 카페에서 공부해요. (A veces estudio en la cafetería.) / 선생님이 ___ 숙제를 내요. (El maestro frecuentemente pone tarea.) / ___ 한국어 수업이 있어요. (Hoy hay clase de coreano.) / 저는 ___ 음악을 들어요. (Siempre escucho música.) / ___ 뭐 먹었어요? (¿Qué comiste hace un rato?)',
+        text: '저는 [[0]] 카페에서 공부해요. (A veces estudio en la cafetería.) / 선생님이 [[1]] 숙제를 내요. (El maestro frecuentemente pone tarea.) / [[2]] 한국어 수업이 있어요. (Hoy hay clase de coreano.) / 저는 [[3]] 음악을 들어요. (Siempre escucho música.) / [[4]] 뭐 먹었어요? (¿Qué comiste hace un rato?)',
         blanks: [
           { answer: '가끔', accepted: ['가끔'], explain: '가끔(gakkeum) = a veces.' },
           { answer: '자주', accepted: ['자주'], explain: '자주(jaju) = frecuentemente.' },

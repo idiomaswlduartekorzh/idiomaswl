@@ -81,6 +81,24 @@ const topic: GrammarTopic = {
         'En el IELTS Speaking y Cambridge, los examinadores valoran el uso de question tags con la entonación correcta como señal de control del registro informal. También muestran que el hablante puede mantener una conversación natural y no solo responder preguntas.',
       ],
     },
+    {
+      heading: '¿Cómo se forman las question tags en inglés?',
+      paragraphs: [
+        'Se repite el auxiliar de la frase + el pronombre, invirtiendo la polaridad: frase afirmativa → tag negativa ("You are tired, aren\'t you?"); frase negativa → tag afirmativa ("You aren\'t tired, are you?"). Si no hay auxiliar, se usa do/does/did ("You like tea, don\'t you?").',
+      ],
+    },
+    {
+      heading: '¿Para qué se usan las question tags en inglés?',
+      paragraphs: [
+        'Para confirmar información o buscar acuerdo, como el "¿verdad?" o "¿no?" español: "It\'s cold today, isn\'t it?". Con entonación descendente esperas confirmación; con entonación ascendente es una pregunta real.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la regla de la polaridad en las question tags?',
+      paragraphs: [
+        'Afirmativo lleva tag negativa y viceversa: "She can swim, can\'t she?" / "She can\'t swim, can she?". El tiempo y el auxiliar deben coincidir con la frase. Con "I am" la tag es "aren\'t I?".',
+      ],
+    },
   ],
 
   visual: {

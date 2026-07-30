@@ -47,14 +47,14 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: "El participe présent: formación y usos principales",
+      heading: '¿Cómo se forma y se usa el participe présent en francés?',
       paragraphs: [
         "El participe présent se forma de la misma manera que el gérondif: se toma el radical de la primera persona del plural del présent de l'indicatif y se añade -ant. Nous parlons → parlant; nous finissons → finissant; nous prenons → prenant. Los mismos tres irregulares que en el gérondif: être → étant, avoir → ayant, savoir → sachant. Como forma verbal, el participe présent es invariable (no concuerda en género ni número).",
         "El participe présent tiene varios usos: como forma verbal equivalente a una proposición de relatif ('des étudiants travaillant la nuit' = 'des étudiants qui travaillent la nuit'), para expresar causa o simultaneidad con posibilidad de cambio de sujeto ('Entendant le bruit, il s'est réveillé'), y como adjectif verbal cuando modifica directamente un sustantivo (en este caso sí concuerda: 'une eau courante', 'des résultats satisfaisants').",
       ],
     },
     {
-      heading: "Participe présent vs adjectif verbal: concordancia y ortografía",
+      heading: '¿Cuál es la diferencia entre participe présent y adjectif verbal?',
       paragraphs: [
         "Cuando el participe présent funciona como adjetivo verbal (avant ou après un nom, avec être), debe concordar en género y número: 'Il est souriant' (m.sg.), 'Elle est souriante' (f.sg.), 'Ils sont souriants' (m.pl.), 'Elles sont souriantes' (f.pl.). Algunos adjectifs verbaux tienen una ortografía diferente a la del participe présent: communicant (participe) vs communicant (adj.) — a veces igual; fatigant (adj.) vs fatiguant (participe); négligent (adj.) vs négligeant (participe).",
         "La regla práctica: si funciona como verbo (tiene un COD, un adverbe, une prop. subordonnée), usa la forma invariable; si funciona como adjetivo (se puede sustituir por otro adjetivo), usa la forma concordada. 'C'est un résultat satisfaisant' (adjectif → satisfaisante/satisfaisants). 'C'est un travail satisfaisant toutes nos exigences' (verbe avec COD → invariable). En la práctica, muchos adjectifs verbaux han evolucionado desde el participe présent y se escriben y se conjugan como adjetivos regulares.",
@@ -67,7 +67,7 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: "La proposición participial: cambio de sujeto",
+      heading: '¿Qué es la proposición participial en francés?',
       paragraphs: [
         "La gran diferencia entre el participe présent y el gérondif es que el participe présent puede tener un sujeto diferente al del verbo principal, mientras que el gérondif siempre comparte el sujeto. 'Le soleil se couchant, nous sommes rentrés à la maison' (El sol se ponía/poniente, volvimos a casa) — el sol es el sujeto del participio, nosotros somos el sujeto del verbo principal. Esta construcción de proposition participiale absolue es más literaria y formal.",
         "Las proposiciones participiales con causa: 'Sachant qu'il était en retard, il a pris un taxi' (Sabiendo que llegaba tarde, tomó un taxi — puede interpretarse como causal: ya que sabía...). 'N'ayant pas d'argent, il ne pouvait pas payer' (No teniendo dinero / Como no tenía dinero, no podía pagar). Este uso con participe présent compuesto (ayant + participe passé) expresa anterioridad: la acción del participio ocurrió antes que la del verbo principal.",

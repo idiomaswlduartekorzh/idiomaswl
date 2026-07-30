@@ -50,17 +50,50 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'Imperfetto vs passato prossimo: la clave del italiano',
+      heading: 'La conjugación del imperfetto: -are, -ere, -ire',
       paragraphs: [
-        'La distinción entre imperfetto y passato prossimo es uno de los puntos más importantes del italiano A2. El imperfetto describe el fondo, las circunstancias, los hábitos y las situaciones en curso del pasado. El passato prossimo narra eventos puntuales y acciones completadas.',
-        'Una analogía útil: el imperfetto es como el telón de fondo de una obra de teatro (descripción, ambiente, hábito), mientras que el passato prossimo son los eventos que suceden en escena (acciones concretas). "Mentre studiavo (imperfetto: acción de fondo), Marco è arrivato (passato prossimo: evento puntual)."',
+        'El imperfetto es de los tiempos más regulares del italiano: se quita -re del infinitivo y se añaden las mismas terminaciones (-vo, -vi, -va, -vamo, -vate, -vano) a las tres conjugaciones. Solo cambia la vocal temática (a/e/i). Esta es la tabla completa:',
+      ],
+      table: [
+        ['Persona', 'parlare (-are)', 'leggere (-ere)', 'dormire (-ire)'],
+        ['io', 'parlavo', 'leggevo', 'dormivo'],
+        ['tu', 'parlavi', 'leggevi', 'dormivi'],
+        ['lui/lei', 'parlava', 'leggeva', 'dormiva'],
+        ['noi', 'parlavamo', 'leggevamo', 'dormivamo'],
+        ['voi', 'parlavate', 'leggevate', 'dormivate'],
+        ['loro', 'parlavano', 'leggevano', 'dormivano'],
       ],
     },
     {
-      heading: 'Usos del imperfetto',
+      heading: 'Imperfetto vs passato prossimo: cuándo usar cada uno',
       paragraphs: [
-        'Hábitos y acciones repetidas en el pasado: "Da bambino giocavo ogni giorno nel parco." (De pequeño jugaba todos los días en el parque.) Esta función equivale al "solía + infinitivo" o "jugaba" en español con valor habitual.',
-        'Descripción del pasado: "Era una bella giornata. Il cielo era azzurro e c\'era molto vento." Para describir cómo eran las cosas se usa imperfetto, no passato prossimo.',
+        'Es el punto más importante del A2. El imperfetto describe el fondo (hábitos, descripciones, situaciones en curso); el passato prossimo narra los eventos puntuales que ocurren sobre ese fondo. Analogía: el imperfetto es el decorado, el passato prossimo son las acciones en escena. "Mentre studiavo (fondo), Marco è arrivato (evento)". Esta tabla resume qué tiempo pide cada situación:',
+      ],
+      table: [
+        ['Situación', 'Tiempo', 'Ejemplo'],
+        ['Hábito repetido en el pasado', 'imperfetto', 'Da bambino giocavo ogni giorno.'],
+        ['Descripción / fondo', 'imperfetto', 'Era una bella giornata.'],
+        ['Acción en curso interrumpida', 'imperfetto', 'Mentre dormivo, ha squillato il telefono.'],
+        ['Evento puntual completado', 'passato prossimo', 'Ieri ho visto Marco.'],
+        ['Serie de acciones sucesivas', 'passato prossimo', 'Sono entrato e ho salutato.'],
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga el imperfetto en italiano?',
+      paragraphs: [
+        'Se quita -re del infinitivo y se añade -vo, -vi, -va, -vamo, -vate, -vano. Ejemplo con parlare: parlavo, parlavi, parlava, parlavamo, parlavate, parlavano. Vale igual para -ere e -ire cambiando solo la vocal (leggevo, dormivo). Es un tiempo muy regular.',
+      ],
+    },
+    {
+      heading: '¿Cuándo se usa el imperfetto y cuándo el passato prossimo?',
+      paragraphs: [
+        'Imperfetto para lo habitual, lo descriptivo y las acciones de fondo ("da bambino andavo al mare", "era tardi"). Passato prossimo para eventos puntuales y completados ("ieri sono andato al mare", "ho finito i compiti"). Suelen combinarse: el imperfetto pone el escenario y el passato prossimo la acción que ocurre.',
+      ],
+    },
+    {
+      heading: '¿Cómo se conjuga essere en imperfetto?',
+      paragraphs: [
+        'Essere es irregular en imperfetto: ero, eri, era, eravamo, eravate, erano. También tienen raíz irregular fare (facevo), dire (dicevo) y bere (bevevo), pero mantienen las terminaciones normales del imperfetto.',
       ],
     },
   ],
@@ -90,8 +123,8 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'La infancia en Roma',
-            lines: [['David', 'Da bambino ___ a Roma con la mia famiglia. (abitare / io)']],
-            options: ['abitavo', 'abitavo', 'abitava', 'abitavano'],
+            lines: [['Gael', 'Da bambino ___ a Roma con la mia famiglia. (abitare / io)']],
+            options: ['abitavo', 'abitava', 'abitavano'],
             answer: 'abitavo',
             explain: 'Io + abitare: raíz abita- + -vo → abitavo.',
           },
@@ -125,7 +158,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El tiempo meteorológico',
-            lines: [['Zhanna', '___ bel tempo ieri, vero? (fare / lui-impersonale)']],
+            lines: [['Lía', '___ bel tempo ieri, vero? (fare / lui-impersonale)']],
             options: ['Faceva', 'Facevo', 'Facevate', 'Facceva'],
             answer: 'Faceva',
             explain: 'Fare impersonal (il tempo): faceva bel tempo. Fare → facevo/facevi/faceva...',
@@ -133,7 +166,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Los abuelos',
             lines: [['Lina', 'I miei nonni ___ sempre il caffè dopo pranzo. (bere / loro)']],
-            options: ['bevevano', 'bevono', 'bevevano', 'bevevate'],
+            options: ['bevevano', 'bevono', 'bevevate'],
             answer: 'bevevano',
             explain: 'Bere → radice beve- + -vano → bevevano. Loro bevevano.',
           },
@@ -171,7 +204,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Mientras tanto',
-            lines: [['David', 'Mentre noi [[0]], loro [[1]] la TV. (mangiare / guardare)']],
+            lines: [['Gael', 'Mentre noi [[0]], loro [[1]] la TV. (mangiare / guardare)']],
             blanks: [
               { options: ['mangiavamo', 'mangiavate', 'mangiavano'], answer: 'mangiavamo', explain: 'Noi + mangiare → mangiavamo.' },
               { options: ['guardavano', 'guardavate', 'guardavamo'], answer: 'guardavano', explain: 'Loro + guardare → guardavano.' },
@@ -179,7 +212,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'El estado del tiempo',
-            lines: [['Zhanna', '[[0]] caldo e [[1]] bel tempo quando siamo arrivati. (fare / essere)']],
+            lines: [['Lía', '[[0]] caldo e [[1]] bel tempo quando siamo arrivati. (fare / essere)']],
             blanks: [
               { options: ['Faceva', 'Facevo', 'Facevate'], answer: 'Faceva', explain: 'Impersonale: faceva caldo. Fare → faceva.' },
               { options: ["C'era", "C'ero", "C'eravamo"], answer: "C'era", explain: "Esserci impersonale: c'era bel tempo → era (sing)." },

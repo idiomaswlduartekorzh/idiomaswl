@@ -80,6 +80,24 @@ const topic: GrammarTopic = {
         ['Incorrecto', 'Do they can come tomorrow?', 'Correcto', 'Can they come tomorrow?'],
       ],
     },
+    {
+      heading: '¿Cómo se usa "can" en inglés?',
+      paragraphs: [
+        '"can" + verbo en forma base, sin "to" y sin -s en tercera persona: "I can swim", "She can drive" (no "cans" ni "to swim"). Expresa habilidad ("I can cook"), posibilidad y permiso ("Can I go?"). Es un verbo modal: no cambia de forma con el sujeto.',
+      ],
+    },
+    {
+      heading: '¿Cómo se hacen preguntas y negaciones con "can"?',
+      paragraphs: [
+        'Pregunta: se invierte can + sujeto + verbo ("Can you help me?"), sin do/does. Negación: "cannot" o la contracción "can\'t" ("I can\'t swim"). No se usa "don\'t" con can: "I don\'t can" es incorrecto.',
+      ],
+    },
+    {
+      heading: '¿Cuál es la diferencia entre "can" y "can\'t"?',
+      paragraphs: [
+        '"can" afirma la habilidad o el permiso ("I can drive"); "can\'t" (cannot) lo niega ("I can\'t drive"). Ambos van con el verbo en forma base. En el habla, "can" y "can\'t" se distinguen por la entonación y la vocal más marcada de "can\'t".',
+      ],
+    },
   ],
   visual: {
     mode: 'modal-rule',
@@ -129,7 +147,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Habilidad del grupo',
-            lines: [['David', 'My students ___ understand English at A1 level.']],
+            lines: [['Dario', 'My students ___ understand English at A1 level.']],
             options: ['can', 'cans', 'can to', 'are can'],
             answer: 'can',
             explain: 'They can. Can es invariable para todos los sujetos.',
@@ -182,7 +200,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Describiendo habilidades',
-            lines: [['Teacher', 'David [[0]] speak eight languages. He [[1]] understand basic Korean too.']],
+            lines: [['Teacher', 'Dario [[0]] speak eight languages. He [[1]] understand basic Korean too.']],
             blanks: [
               { options: ['can', 'can\'t', 'cans'], answer: 'can', explain: 'He can (invariable) speak.' },
               { options: ['can', 'can\'t', 'cans'], answer: 'can', explain: 'He can understand. Sin "to" después de can.' },
@@ -223,12 +241,12 @@ const topic: GrammarTopic = {
         intro: 'Escribe can, can\'t o Can + subject sin ayuda.',
         type: 'freeText',
         scene: 'Habilidades del equipo WeLearn',
-        text: 'David [[0]] speak eight languages fluently. He [[1]] play the piano but he [[2]] cook very well. Zhanna [[3]] teach English and other languages. Together they [[4]] help students from many different countries. [[5]] they understand A1 students? Absolutely yes!',
+        text: 'Dario [[0]] speak eight languages fluently. He [[1]] play the piano but he [[2]] cook very well. Nora [[3]] teach English and other languages. Together they [[4]] help students from many different countries. [[5]] they understand A1 students? Absolutely yes!',
         blanks: [
-          { answer: 'can', explain: 'David can speak.' },
+          { answer: 'can', explain: 'Dario can speak.' },
           { answer: 'can\'t', accepted: ['cannot', 'can not', 'cant'], explain: 'He can\'t play the piano.' },
           { answer: 'can', explain: 'He can cook.' },
-          { answer: 'can', explain: 'Zhanna can teach.' },
+          { answer: 'can', explain: 'Nora can teach.' },
           { answer: 'can', explain: 'Together they can help.' },
           { answer: 'Can', explain: 'Pregunta con modal: Can they...?' },
         ],

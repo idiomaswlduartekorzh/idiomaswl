@@ -45,17 +45,23 @@ const topic: GrammarTopic = {
 
   seo: [
     {
-      heading: 'より: el marcador de comparación en japonés',
+      heading: '¿Cómo se comparan dos cosas con より en japonés?',
       paragraphs: [
         'En japonés no hay formas comparativas de adjetivos (no existe "más grande/mayor" como forma especial). En cambio, el estándar se marca con より: "東京は大阪より大きいです" (Tokio es más grande que Osaka). Literalmente: "Tokio, comparado con Osaka, es grande".',
         'より siempre va DESPUÉS del elemento de comparación (B): "B より [adj]". Para preguntar cuál de dos opciones, se usa "A と B とどちらの方が + adj ですか？": "東京と大阪とどちらの方が大きいですか？" (¿Cuál es más grande, Tokio u Osaka?).',
       ],
     },
     {
-      heading: 'ほど～ない: "no tan... como"',
+      heading: '¿Cómo se dice "no tan... como" con ほど～ない?',
       paragraphs: [
         'ほど～ない expresa que A no alcanza el nivel de B: "A は B ほど + adj neg". "この映画はあの映画ほど面白くない" (esta película no es tan interesante como aquella). La regla clave: ほど SIEMPRE lleva negación en el predicado.',
         '"一番 + adj" (el más / el superlativo): "日本で一番高い山は富士山です" (la montaña más alta de Japón es el Fuji). Con grupos: "クラスの中で一番 + adj" = el más/la más de la clase.',
+      ],
+    },
+    {
+      heading: '¿Cómo se dice cuál es el mejor con 一番 y どちら?',
+      paragraphs: [
+        'Para comparar dos cosas se usa AはBより + adjetivo: 東京は大阪より大きいです (Tokio es más grande que Osaka). Para preguntar entre dos opciones se usa どちらのほうが: コーヒーとお茶と、どちらのほうが好きですか (entre café y té, ¿cuál te gusta más?). Para el superlativo (entre tres o más) se usa 一番 (ichiban, "el número uno"): クラスで一番背が高い (el más alto de la clase), 何が一番好きですか (¿qué es lo que más te gusta?). La trampa para el hispanohablante es que el japonés no cambia la forma del adjetivo para el comparativo ni el superlativo (no hay "-er/-est"): 大きい es igual en los tres casos; lo que cambia es la estructura con より, ほうが o 一番.',
       ],
     },
   ],
@@ -168,7 +174,7 @@ const topic: GrammarTopic = {
         intro: 'Completa la comparación de ciudades con より, ほど y 一番.',
         type: 'guidedText',
         scene: '日本の都市を比較しています。',
-        text: '東京は大阪[[0]]大きいです。でも大阪は東京[[1]]物価が高くないです。京都は東京[[0]]古い街です。日本で[[2]]有名な山は富士山です。大阪と京都と[[3]]行きたいですか？',
+        text: '東京は大阪[[0]]大きいです。でも大阪は東京[[1]]物価が高くないです。京都は東京[[2]]古い街です。日本で[[3]]有名な山は富士山です。大阪と京都と[[4]]行きたいですか？',
         blanks: [
           { options: ['より', 'ほど', 'くらい', 'の方が'], answer: 'より', explain: '"大阪より大きい" = más grande que Osaka. B + より + adj.' },
           { options: ['ほど', 'より', 'くらい', 'の方が'], answer: 'ほど', explain: '"東京ほど高くない" = no tan caro como Tokio. B + ほど + neg.' },
@@ -183,7 +189,7 @@ const topic: GrammarTopic = {
         intro: 'Sin opciones: escribe la forma de comparación correcta.',
         type: 'freeText',
         scene: '比較の文を完成させてください。',
-        text: '東京は大阪___ 大きい。(más grande que) / バスは電車___ 速くない。(no tan rápido como) / クラスで___ 背が高い。(el más alto) / コーヒー___ お茶___ 好きですか？(¿cuál prefieres?)',
+        text: '東京は大阪[[0]] 大きい。(más grande que) / バスは電車[[1]] 速くない。(no tan rápido como) / クラスで[[2]] 背が高い。(el más alto) / コーヒー[[3]] お茶[[4]] 好きですか？(¿cuál prefieres?)',
         blanks: [
           { answer: 'より', explain: '"大阪より大きい" = más grande que Osaka.' },
           { answer: 'ほど', explain: '"電車ほど速くない" = no tan rápido como el tren. ほど + neg.' },

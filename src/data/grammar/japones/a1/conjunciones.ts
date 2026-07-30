@@ -57,10 +57,16 @@ const topic: GrammarTopic = {
       ],
     },
     {
-      heading: 'でも vs が: dos formas de decir "pero" en japonés',
+      heading: '¿En qué se diferencian でも y が para decir "pero"?',
       paragraphs: [
         'El japonés tiene dos formas principales de expresar "pero": でも (demo) y が (ga). La diferencia es sutileza y posición. でも va al inicio de una nueva oración (パンが好きです。でも、ごはんも好きです). が va dentro de la misma oración uniendo dos cláusulas (パンが好きですが、ごはんも好きです).',
         'Para A1, aprender でも es más fácil porque solo necesitas poner un punto y empezar la nueva frase. が es más avanzado. Con でも dominas el contraste básico.',
+      ],
+    },
+    {
+      heading: '¿Cómo se enlazan dos frases dentro de una misma oración en japonés?',
+      paragraphs: [
+        'A nivel A1, las conjunciones tipo でも (demo, pero) y だから (dakara, por eso) van al INICIO de la segunda frase, como conectores independientes: 高いです。でも、買います (Es caro. Pero lo compro). Para unir dos ideas dentro de una sola oración se usa la て-form del verbo o del adjetivo い: 朝起きて、コーヒーを飲みます (me levanto y bebo café). Para enlazar sustantivos con "y" se usa と (to): パンとたまご (pan y huevo), nunca でも ni そして. La trampa para el hispanohablante es traducir todo por "y/pero" con una sola palabra: en japonés cambia según se unan frases (て-form), oraciones (でも, そして) o sustantivos (と).',
       ],
     },
   ],
@@ -72,7 +78,7 @@ const topic: GrammarTopic = {
       'Four connector bubbles: でも (contrast arrow), そして (plus sign), それから (clock/time arrow), だから (cause→effect arrow). Japanese red/white theme with hiragana for each connector.',
     scene: [
       ['でも', '日本語は難しいです。でも、おもしろいです。 — Es difícil. Pero es interesante.'],
-      ['そして', 'Davidはやさしいです。そして、じょうずです。 — David es amable. Y además es hábil.'],
+      ['そして', 'Ivánはやさしいです。そして、じょうずです。 — Iván es amable. Y además es hábil.'],
       ['それから', '朝ごはんを食べます。それから、学校に行きます。 — Como desayuno. Y después voy a la escuela.'],
       ['だから', '日本語が好きです。だから、毎日勉強します。 — Me gusta japonés. Por eso estudio cada día.'],
       ['でも (neg)', 'ねこが好きです。でも、いぬはちょっと... — Me gustan los gatos. Pero los perros...'],
@@ -94,7 +100,7 @@ const topic: GrammarTopic = {
           { scene: 'でも — contraste', lines: [['', '"El japonés es difícil. ____ es interesante." ¿Qué conector?']], options: ['そして', 'だから', 'でも', 'それから'], answer: 'でも', explain: 'でも = pero. Contraste entre difícil e interesante. 難しいです。でも、おもしろいです。' },
           { scene: 'だから — causa', lines: [['', '"Me gusta el japonés. ____ lo estudio cada día." ¿Qué conector?']], options: ['でも', 'それから', 'そして', 'だから'], answer: 'だから', explain: 'だから = por eso / entonces. Causa (me gusta) → consecuencia (lo estudio). 好きです。だから、勉強します。' },
           { scene: 'それから — secuencia', lines: [['', '"Como desayuno. ____ voy a la escuela." ¿Qué conector?']], options: ['でも', 'だから', 'そして', 'それから'], answer: 'それから', explain: 'それから = y después / y luego. Secuencia temporal: primero come, después va. 食べます。それから、行きます。' },
-          { scene: 'そして — adición', lines: [['', '"David es amable. ____ es muy hábil." ¿Qué conector?']], options: ['でも', 'だから', 'それから', 'そして'], answer: 'そして', explain: 'そして = y / y además. Adición de cualidades positivas similares. やさしいです。そして、じょうずです。' },
+          { scene: 'そして — adición', lines: [['', '"Iván es amable. ____ es muy hábil." ¿Qué conector?']], options: ['でも', 'だから', 'それから', 'そして'], answer: 'そして', explain: 'そして = y / y además. Adición de cualidades positivas similares. やさしいです。そして、じょうずです。' },
           { scene: 'Posición del conector', lines: [['', '¿Cuál es el orden correcto en japonés?']], options: ['日本語はでもむずかしいです', '日本語はむずかしいです。でも、おもしろいです。', 'でも日本語むずかしいです', 'むずかしいでもです'], answer: '日本語はむずかしいです。でも、おもしろいです。', explain: 'Conector al INICIO de la segunda oración. Primero frase 1 completa con 。, luego でも、 y frase 2.' },
           { scene: 'だから vs でも', lines: [['', '"Tengo hambre. ____ como ramen." (hambre → como: causa-efecto)']], options: ['でも', 'それから', 'そして', 'だから'], answer: 'だから', explain: 'だから = por eso (causa → efecto). お腹がすいています。だから、ラーメンを食べます。' },
           { scene: 'そして vs それから', lines: [['', '¿Cuál implica SECUENCIA TEMPORAL?']], options: ['そして', 'でも', 'それから', 'だから'], answer: 'それから', explain: 'それから implica secuencia temporal (primero X, DESPUÉS Y). そして puede ser adición sin orden temporal.' },
@@ -120,7 +126,7 @@ const topic: GrammarTopic = {
         tag: 'Opciones',
         intro: 'Elige el conector correcto en cada espacio.',
         type: 'guidedText',
-        scene: 'David habla sobre WeLearn y el aprendizaje de japonés',
+        scene: 'Iván habla sobre WeLearn y el aprendizaje de japonés',
         text: 'WeLearnはとてもいい学校です。[[0]]、はたらく先生がやさしいです。(Y además los profesores son amables.) 日本語はむずかしいです。[[1]]、おもしろいです。(Pero es interesante.) まいにちべんきょうします。[[2]]、じょうずになります。(Por eso me vuelvo mejor.) あさ、ひらがなをおぼえます。[[3]]、カタカナもべんきょうします。(Y después también estudio katakana.)',
         blanks: [
           { options: ['でも', 'だから', 'そして', 'それから'], answer: 'そして', explain: 'そして = y/además. Adición: escuela buena + profesores amables (mismo tono positivo).' },
