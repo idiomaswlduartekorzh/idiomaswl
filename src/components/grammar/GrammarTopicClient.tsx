@@ -9,6 +9,7 @@ import type {
   GuidedTextLevel,
   FreeTextLevel,
   WriteLevel,
+  WriteItem,
   Blank,
 } from '@/data/grammar/types'
 import { useGrammarProgress } from '@/components/grammar/useGrammarProgress'
@@ -86,6 +87,50 @@ function matchAnswer(user: string, answer: string, accepted?: string[]) {
   return u === norm(answer) || (accepted ?? []).some((a) => u === norm(a))
 }
 
+// Pistas objetivo en alfabeto latino nombradas en el enunciado tras un disparador
+// de uso ("usa/usando/using/use/utilise/verwende"). Solo cuenta como pista si esa
+// palabra también aparece en la respuesta-modelo: así se descartan palabras de
+// instrucción ("verbos", "forma", "oración") y se conserva la estructura objetivo
+// real (p.ej. "who", "that", "weil", "porque").
+function writeCues(item: WriteItem): string[] {
+  const src = `${item.scene ?? ''} ${item.prompt ?? ''}`
+  const model = norm(`${item.answer ?? ''} ${(item.accepted ?? []).join(' ')}`)
+  const cues: string[] = []
+  const re = /\b(?:usando|usa|using|use|utilisez|utilise|verwende)\s+["'«“‘]?([a-zA-Zàâäéèêëïîôöùûüçñáíóúü'-]{3,20})["'»”’]?/gi
+  for (const m of src.matchAll(re)) {
+    const c = m[1].toLowerCase().replace(/^['-]+|['-]+$/g, '')
+    if (c.length >= 3 && model.includes(c)) cues.push(c)
+  }
+  return cues
+}
+
+// Evaluación del nivel de producción libre (write). No se puede calificar por
+// coincidencia exacta, porque el estudiante escribe una frase propia y el
+// `answer`/`accepted` son solo ejemplos-modelo, no un conjunto cerrado. Capas:
+//   1) Coincidencia exacta/aceptada → correcto (protege los niveles controlados
+//      de "combina las frases", donde sí hay una transformación determinada).
+//   2) Se rechaza respuesta vacía o copia literal del enunciado.
+//   3) Se exige un intento sustancial: ≥3 palabras, o ≥6 caracteres (CJK/Hangul,
+//      que no separan por espacios de forma fiable).
+//   4) Si el enunciado nombra una estructura objetivo latina presente en el
+//      modelo, se exige que la respuesta la contenga (p.ej. "who"). Para objetivos
+//      no-latinos (coreano/japonés/ruso), que van como sufijo flexionado y no se
+//      pueden verificar por texto, se acredita el intento sustancial.
+// Cambio monótono: nada que hoy se marque correcto pasa a incorrecto; solo se
+// recupera producción libre válida que antes se marcaba en rojo indebidamente.
+function evaluateWrite(item: WriteItem, user: string): boolean {
+  if (matchAnswer(user, item.answer, item.accepted)) return true
+  const u = norm(user)
+  if (!u) return false
+  if (u === norm(item.prompt ?? '') || u === norm(item.scene ?? '')) return false
+  const words = u.split(' ').filter(Boolean).length
+  const chars = u.replace(/\s/g, '').length
+  if (words < 3 && chars < 6) return false
+  const cues = writeCues(item)
+  if (cues.length) return cues.some((c) => u.includes(c))
+  return true
+}
+
 // Índices de hueco [[n]] presentes en un texto, en orden y sin repetir. El motor
 // sólo renderiza un input por cada [[n]] presente, así que scoring y validación
 // deben derivarse de este conjunto (no de la longitud cruda de `blanks`). Así un
@@ -142,7 +187,7 @@ function scoreLevel(level: Level, answers: Record<string, string>): { score: num
     const l = level as WriteLevel
     let score = 0
     l.items.forEach((item, i) => {
-      if (matchAnswer(answers[`${i}`] ?? '', item.answer, item.accepted)) score++
+      if (evaluateWrite(item, answers[`${i}`] ?? '')) score++
     })
     return { score, total: l.items.length }
   }
@@ -527,7 +572,7 @@ function DeferredReview({ level, answers }: { level: Level; answers: Record<stri
         user: user || '(sin respuesta)',
         correct: item.answer,
         explain: item.explain,
-        isGood: matchAnswer(user, item.answer, item.accepted),
+        isGood: evaluateWrite(item, user),
       })
     })
   }
