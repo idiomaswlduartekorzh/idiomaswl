@@ -14,6 +14,13 @@ import type {
 } from '@/data/grammar/types'
 import { useGrammarProgress } from '@/components/grammar/useGrammarProgress'
 
+type RelatedWritingExercise = {
+  id: string
+  sequence: number
+  title: string
+  genre: string
+}
+
 // ── State machine ────────────────────────────────────────────────────────────
 
 type Phase = 'idle' | 'practicing' | 'reviewing'
@@ -620,10 +627,12 @@ export default function GrammarTopicClient({
   topic,
   idioma,
   nivel,
+  relatedWritingExercises = [],
 }: {
   topic: GrammarTopic
   idioma: string
   nivel: string
+  relatedWritingExercises?: RelatedWritingExercise[]
 }) {
   const { progress, mounted, recordLevel } = useGrammarProgress(idioma, nivel, topic.slug)
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -724,6 +733,25 @@ export default function GrammarTopicClient({
           </div>
         )}
       </div>
+
+      {relatedWritingExercises.length > 0 && (
+        <section className="grammar-writing-bridge" aria-labelledby="grammar-writing-bridge-title">
+          <div>
+            <span className="section-label">— Transferencia a escritura</span>
+            <h2 id="grammar-writing-bridge-title" className="gram-h2">Usa {topic.shortTitle} en un texto</h2>
+            <p>La práctica guiada te pide usar esta estructura para resolver una situación comunicativa del mismo nivel.</p>
+          </div>
+          <div className="grammar-writing-bridge__links">
+            {relatedWritingExercises.map(exercise => (
+              <a key={exercise.id} href={`/practica/${idioma}/${nivel}/escritura?ejercicio=${exercise.id}`}>
+                <span>{String(exercise.sequence).padStart(2, '0')}</span>
+                <b>{exercise.title}</b>
+                <small>{exercise.genre}</small>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ── Practice Journey overview ───────────────────────────────────────── */}
       <div id="practica" className="practice-journey">
