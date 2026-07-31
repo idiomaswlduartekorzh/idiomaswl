@@ -5,16 +5,365 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 18',
   subtitle: 'Genetic Engineering · Smart Cities · Language Acquisition',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-18.mp3',
+      title: 'Listening — Section 1: Joining a Book Club',
+      instructions: 'You will hear a telephone conversation between a woman and the organiser of a book club. Listen and answer Questions 1–10.',
+      transcript: `ORGANISER: Hello, Riverside Book Club, this is Peter speaking.
+
+CUSTOMER: Hi there. I'd like to join the book club, if there are still places available.
+
+ORGANISER: There certainly are. Let me take a few details from you. What's your name?
+
+CUSTOMER: It's Laura Hammond.
+
+ORGANISER: Could you spell your surname for me?
+
+CUSTOMER: Of course — it's H-A-M-M-O-N-D.
+
+ORGANISER: Thank you, Laura. And where do you live?
+
+CUSTOMER: I'm at 8 Chestnut Close.
+
+ORGANISER: Chestnut Close, lovely. And a contact number?
+
+CUSTOMER: My mobile is 077 2358 4190.
+
+ORGANISER: Great. Can I ask how you heard about us?
+
+CUSTOMER: I saw a poster in the local library, actually.
+
+ORGANISER: Wonderful. Now, what kind of books do you most enjoy reading?
+
+CUSTOMER: I mainly read historical fiction, though I do enjoy the occasional biography.
+
+ORGANISER: We read a real mix — the members vote on the book each month. Now, which evenings tend to suit you? We meet fortnightly.
+
+CUSTOMER: I was going to say Thursdays — actually, no, Wednesdays are better for me. I have a class on Thursdays.
+
+ORGANISER: Wednesdays it is, then. And just so you know, we ask every new member to bring their favourite novel to their first meeting, so they can introduce themselves.
+
+CUSTOMER: That's a lovely idea. And where do you actually meet?
+
+ORGANISER: At the moment we meet in a room above the bookshop on the high street. There's plenty of parking nearby.
+
+CUSTOMER: Perfect.
+
+ORGANISER: Now let me explain the two membership options. Standard membership costs £25 a year. That includes two free books a year and a monthly newsletter with reviews and recommendations.
+
+CUSTOMER: And the premium one?
+
+ORGANISER: Premium membership is £45 a year. You get six free books a year instead of two, and premium members can also attend our free writing workshops.
+
+CUSTOMER: The premium sounds well worth it. I'll take that one.
+
+ORGANISER: Excellent. Welcome to the club, Laura.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Book Club Membership',
+          example: 'Name:  Laura Hammond',
+          template: `Address: 8 {{1}} Close
+Phone: (mobile) 077 2358 4190
+
+Member details
+• Heard about the club from a poster in the local {{2}}
+• Mainly enjoys reading {{3}} fiction
+• Prefers meetings to be held on {{4}}, not Thursdays
+• New members bring their favourite {{5}} to the first meeting
+• The club meets in a room above the {{6}} on the high street`,
+          blanks: [
+            { num: 1, answers: ['Chestnut', 'chestnut'], maxWords: 1 },
+            { num: 2, answers: ['library'], maxWords: 1 },
+            { num: 3, answers: ['historical'], maxWords: 1 },
+            { num: 4, answers: ['Wednesdays', 'Wednesday'], maxWords: 1 },
+            { num: 5, answers: ['novel'], maxWords: 1 },
+            { num: 6, answers: ['bookshop'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Membership', 'Annual fee', 'Free books per year', 'Extra benefit'],
+          rows: [
+            [
+              'Standard',
+              { num: 7, answers: ['25', '£25'], maxWords: 1 },
+              '2 books',
+              { num: 8, answers: ['newsletter'], maxWords: 1 },
+            ],
+            [
+              'Premium',
+              '£45',
+              { num: 9, answers: ['six', '6'], maxWords: 1 },
+              { num: 10, answers: ['workshops', 'workshop'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-18.mp3',
+      title: 'Listening — Section 2: Nature Reserve Welcome Talk',
+      instructions: 'You will hear a ranger giving a welcome talk to visitors at a nature reserve. Listen and answer Questions 11–20.',
+      transcript: `Hello everyone, and welcome to Blackwater Nature Reserve. My name's Sam, and I'm one of the rangers here. I'll just spend a few minutes explaining how the reserve works and what you can see today.
+
+First, a few important rules. We want everyone to enjoy the reserve, but there are a couple of things we don't allow. I'm afraid dogs are not permitted anywhere on the reserve, even on a lead, because they disturb the ground-nesting birds. And although the lake looks inviting, swimming is strictly forbidden — the water is much deeper and colder than it appears. You are very welcome to cycle, but only on the marked trails, not on the narrow footpaths. Photography is positively encouraged, and picnicking is fine in the designated area near the car park.
+
+Now, let me tell you about the reserve itself. Blackwater covers around 200 hectares of wetland and forest. It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird. The most popular attraction is our bird hide, which overlooks the main lake. From there, in winter, you can often see large flocks of geese that migrate here from Scandinavia.
+
+If you follow the blue trail, it takes you through the ancient woodland, where some of the oak trees are over four hundred years old. The red trail is longer and leads to the observation tower, which gives you a spectacular view across the whole reserve. Do allow about two hours if you want to complete it.
+
+Our visitor centre, just behind me, has a small café and a shop selling maps and guidebooks. There's also an exhibition explaining how the wetland is managed. Entry to the reserve is free, but we rely on donations, so please give generously if you can. Finally, the reserve closes at dusk, so please make sure you've returned to the car park before the gates are locked. Enjoy your visit, and do come and find me if you have any questions.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO activities does the ranger say are not permitted in the reserve?',
+          options: [
+            { letter: 'A', text: 'cycling on the marked trails' },
+            { letter: 'B', text: 'bringing dogs' },
+            { letter: 'C', text: 'taking photographs' },
+            { letter: 'D', text: 'picnicking near the car park' },
+            { letter: 'E', text: 'swimming in the lake' },
+          ],
+          selectCount: 2,
+          answers: ['B', 'E'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Blackwater Nature Reserve',
+          template: `About the reserve
+
+• The reserve covers around {{13}} hectares of wetland and forest.
+• It was established in {{14}}.
+• It was originally created to protect a rare species of {{15}}.
+
+Things to see
+
+• The most popular attraction is the bird {{16}}, overlooking the main lake.
+• In winter, visitors can see flocks of {{17}} from Scandinavia.
+• The blue trail passes through ancient {{18}}.
+• The red trail leads to an observation {{19}}.
+
+Practical information
+
+• Entry is free, but the reserve relies on {{20}} from visitors.`,
+          blanks: [
+            { num: 13, answers: ['200'], maxWords: 2 },
+            { num: 14, answers: ['1987'], maxWords: 2 },
+            { num: 15, answers: ['dragonfly'], maxWords: 2 },
+            { num: 16, answers: ['hide'], maxWords: 2 },
+            { num: 17, answers: ['geese'], maxWords: 2 },
+            { num: 18, answers: ['woodland'], maxWords: 2 },
+            { num: 19, answers: ['tower'], maxWords: 2 },
+            { num: 20, answers: ['donations', 'donation'], maxWords: 2 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-18.mp3',
+      title: 'Listening — Section 3: Linguistics Presentation Discussion',
+      instructions: 'You will hear a tutor talking to two students about a linguistics presentation. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Right, Maya and Tom, let's talk about your linguistics presentation. Remind me what topic you've chosen.
+
+MAYA: We're looking at why some languages become endangered, and what can be done to keep them alive. We were originally going to compare two languages, but we decided to focus on just one — a language called Manx, from the Isle of Man.
+
+TUTOR: Interesting choice. Why Manx in particular?
+
+TOM: Well, it's a fascinating case because the last native speaker died in the 1970s, but the language has since been revived. There are now children being brought up speaking it again, which is quite unusual.
+
+TUTOR: It certainly is. So how have you organised your research?
+
+MAYA: We started by reading academic articles, but honestly, the most useful material came from interviews with people involved in the revival. Talking to actual speakers gave us insights we couldn't get from books.
+
+TUTOR: I agree — primary sources are invaluable. Now, what's your main argument going to be?
+
+TOM: Our central point is that reviving a language depends less on money than on community enthusiasm. Funding helps, of course, but without a committed community, it simply doesn't work.
+
+TUTOR: That's a strong, clear thesis. Is there anything you're finding difficult?
+
+MAYA: The hardest part is keeping the presentation short enough. We've got so much material that we keep going over the time limit.
+
+TUTOR: That's a common problem. Be ruthless — cut anything that doesn't support your main argument. Now, a few suggestions for improvement. First, I think you should include some audio, so the audience can actually hear what Manx sounds like. That will be far more powerful than just describing it.
+
+TOM: Good idea.
+
+TUTOR: Second, add a map showing where the language is spoken — people find geography helps them remember. And do check your pronunciation of the place names; get a native speaker to record them if you can. Finally, remember to rehearse the timing at least twice before the actual presentation.
+
+MAYA: Thank you, that's really useful.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'What change did the students make to their topic?',
+          options: [
+            'to compare three languages instead of two',
+            'to focus on a single language rather than two',
+            'to choose a language that is still widely spoken',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'Why did the students choose Manx as their example?',
+          options: [
+            'It has more speakers than any other Celtic language.',
+            'Its last native speaker is still alive today.',
+            'It has been revived after its last native speaker died.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'Which source of information did the students find most useful?',
+          options: [
+            'academic articles',
+            'interviews with people involved in the revival',
+            'historical documents',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'What is the main argument the students will make?',
+          options: [
+            'Language revival depends mainly on government funding.',
+            'Language revival depends more on community enthusiasm than on money.',
+            'Language revival is impossible once native speakers have died.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'What problem are the students currently having?',
+          options: [
+            'keeping the presentation within the time limit',
+            'finding enough research material',
+            'disagreeing about the main argument',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `Suggestions from the tutor
+
+• Include some {{26}} so the audience can hear the language.
+• Add a {{27}} showing where the language is spoken.
+• Check the {{28}} of the place names.
+• Ask a native speaker to {{29}} the place names.
+• {{30}} the timing at least twice before presenting.`,
+          blanks: [
+            { num: 26, answers: ['audio'], maxWords: 1 },
+            { num: 27, answers: ['map'], maxWords: 1 },
+            { num: 28, answers: ['pronunciation'], maxWords: 1 },
+            { num: 29, answers: ['record'], maxWords: 1 },
+            { num: 30, answers: ['rehearse', 'practise', 'practice'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-18.mp3',
+      title: 'Listening — Section 4: Desert Ecosystems',
+      instructions: 'You will hear a lecture about desert ecosystems. Listen and answer Questions 31–40.',
+      transcript: `Good morning. Today's lecture is about desert ecosystems — environments that many people imagine to be lifeless, but which are in fact home to a remarkable variety of specially adapted organisms.
+
+First, let's define what we mean by a desert. A desert is usually defined as any region that receives less than 250 millimetres of rainfall a year. By this definition, deserts cover roughly one third of the Earth's land surface. And, surprisingly, not all deserts are hot — the largest desert in the world is actually Antarctica, which is classified as a desert because it is extremely dry.
+
+The central challenge for any desert organism is a shortage of water. Plants have evolved several strategies to cope. Many, such as the cactus, store water in their thick stems and have leaves reduced to spines to limit evaporation. Others have extremely long roots that reach deep underground to find moisture. A third group survives underground and grows rapidly after the rare rains.
+
+Animals face the same challenge and have their own adaptations. Many desert animals are nocturnal, meaning they are active only at night, when temperatures are cooler. The kangaroo rat is a striking example — it can survive its entire life without ever drinking, obtaining all the water it needs from the seeds it eats. Larger animals, such as the camel, can tolerate a significant loss of body water and can go for long periods without drinking at all.
+
+Deserts are also fragile. Because plants grow so slowly, any damage takes a very long time to repair. One of the greatest threats is desertification — the process by which fertile land gradually turns into desert, usually as a result of human activities such as overgrazing by livestock. Climate change is expected to make many existing deserts even drier in the coming decades.
+
+Yet deserts also offer opportunities. They receive intense sunshine, which makes them ideal locations for generating solar energy. And scientists study desert organisms in the hope of discovering compounds that could be used in medicine. Far from being empty wastelands, deserts are dynamic systems that deserve our protection.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'DESERT ECOSYSTEMS',
+          template: `Defining a desert
+
+• A desert receives less than 250 millimetres of {{31}} per year.
+• Deserts cover roughly one {{32}} of the Earth's land surface.
+• The largest desert in the world is {{33}}, because it is extremely dry.
+
+Adaptations of desert plants
+
+• A cactus stores water in its thick {{34}}.
+• Some plants have very long {{35}} that reach moisture deep underground.
+
+Adaptations of desert animals
+
+• Many desert animals are {{36}} and are active only at night.
+• The kangaroo rat gets all its water from the {{37}} that it eats.
+
+Threats and opportunities
+
+• Fertile land turning into desert is a process called {{38}}.
+• This is often caused by overgrazing by {{39}}.
+• Deserts are good places to generate {{40}} energy.`,
+          blanks: [
+            { num: 31, answers: ['rainfall', 'rain'], maxWords: 1 },
+            { num: 32, answers: ['third'], maxWords: 1 },
+            { num: 33, answers: ['Antarctica'], maxWords: 1 },
+            { num: 34, answers: ['stems', 'stem'], maxWords: 1 },
+            { num: 35, answers: ['roots', 'root'], maxWords: 1 },
+            { num: 36, answers: ['nocturnal'], maxWords: 1 },
+            { num: 37, answers: ['seeds', 'seed'], maxWords: 1 },
+            { num: 38, answers: ['desertification'], maxWords: 1 },
+            { num: 39, answers: ['livestock'], maxWords: 1 },
+            { num: 40, answers: ['solar'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {

@@ -5,16 +5,364 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 20',
   subtitle: 'Antibiotic Resistance · Urban Gardening · The Future of Transport',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-20.mp3',
+      title: 'Listening — Section 1: Reserving a Study Room',
+      instructions: 'You will hear a conversation between a library assistant and a student booking a study room. Listen and answer Questions 1–10.',
+      transcript: `LIBRARIAN: Good morning, Central Library help desk. How can I help?
+
+STUDENT: Hi, I'd like to reserve a group study room for my project team.
+
+LIBRARIAN: Certainly. Can I take your name?
+
+STUDENT: Yes, it's Daniel Okoro.
+
+LIBRARIAN: Could you spell your surname for me?
+
+STUDENT: Of course — O-K-O-R-O.
+
+LIBRARIAN: Thank you, Daniel. And a phone number in case we need to reach you?
+
+STUDENT: It's 07811 402596.
+
+LIBRARIAN: Great. What are you studying, so I can note it on the booking?
+
+STUDENT: I'm doing a degree in economics.
+
+LIBRARIAN: How interesting. Is this your first time booking a room with us?
+
+STUDENT: It is, actually. A classmate told me the rooms here are really useful for group work, so I thought I'd give it a try.
+
+LIBRARIAN: They certainly are, especially at this time of year. Now, which floor would you like? We have rooms on the second and third floors.
+
+STUDENT: I thought the second floor at first, but I'll take the third floor — it's much quieter up there.
+
+LIBRARIAN: The third floor it is. And how many people is the room for?
+
+STUDENT: There'll be six of us altogether.
+
+LIBRARIAN: Fine. Do you need any particular equipment? Most rooms have a whiteboard, and some also have a projector.
+
+STUDENT: A projector would be ideal, as we're rehearsing a presentation.
+
+LIBRARIAN: Noted. And which day do you need it?
+
+STUDENT: Thursday, if that's free.
+
+LIBRARIAN: Thursday's fine. Just remember to bring your student card, as you'll need it to collect the key.
+
+STUDENT: Will do. Could you tell me about the rooms and the charges?
+
+LIBRARIAN: Certainly. Room A is on the third floor, holds six people, and costs three pounds an hour. It comes with a whiteboard.
+
+STUDENT: And something bigger?
+
+LIBRARIAN: Room B is on the fourth floor. It seats ten, costs five pounds an hour, and includes a projector, which is perfect for your presentation.
+
+STUDENT: Then I'll take Room B for Thursday.
+
+LIBRARIAN: Excellent. I'll book that in for you now.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Study Room Booking',
+          example: 'Name:  Daniel Okoro',
+          template: `Phone: 07811 402596
+
+• Studying for a degree in {{1}}
+• Prefers a room on the {{2}} floor (not the second)
+• The room is for {{3}} people
+• Wants a room with a {{4}}
+• Booking is for {{5}}
+• Must bring student {{6}} to collect the key`,
+          blanks: [
+            { num: 1, answers: ['economics'], maxWords: 1 },
+            { num: 2, answers: ['third', '3rd'], maxWords: 1 },
+            { num: 3, answers: ['6', 'six'], maxWords: 1 },
+            { num: 4, answers: ['projector'], maxWords: 1 },
+            { num: 5, answers: ['Thursday'], maxWords: 1 },
+            { num: 6, answers: ['card'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Room', 'Floor', 'Capacity', 'Cost per hour', 'Includes'],
+          rows: [
+            [
+              'Room A',
+              'third',
+              { num: 7, answers: ['6', 'six'], maxWords: 1 },
+              '£3',
+              { num: 8, answers: ['whiteboard'], maxWords: 1 },
+            ],
+            [
+              'Room B',
+              { num: 9, answers: ['fourth', '4th', '4'], maxWords: 1 },
+              '10',
+              '£5',
+              { num: 10, answers: ['projector'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-20.mp3',
+      title: 'Listening — Section 2: Transport Museum Guide',
+      instructions: 'You will hear a guide giving a talk to visitors at a transport museum. Listen and answer Questions 11–20.',
+      transcript: `Welcome to the National Transport Museum. I'm your guide for this morning, and I'll give you a quick overview before you go off to explore on your own.
+
+Let me start with our recent improvements. Over the winter we completely renovated two of our galleries. The tram gallery has been redesigned with interactive displays, and the aircraft gallery now has a full-size cockpit that you can actually sit in. The steam-train hall, the bicycle collection and the motorcycle gallery are unchanged this year, though they're all still well worth a visit.
+
+Now some practical information. The museum stays open until five o'clock, but last entry to the exhibits is at four thirty, so please plan your time. Photography is allowed everywhere except in the model railway room, where the flash disturbs the delicate mechanisms. If you'd like something to eat, the café is on the ground floor, right next to the gift shop.
+
+For families, we run a treasure hunt every afternoon; just pick up a worksheet from the information desk. Children particularly enjoy the driving simulator, though I should mention there's a small extra charge of two pounds for that.
+
+A few quick reminders. Large bags must be left in the cloakroom near the main entrance. Our guided tours leave every hour from the central hall, and each one lasts about forty minutes. And if you happen to get lost, look for a member of staff in a red jacket — they'll be glad to point you in the right direction.
+
+Finally, before you leave, do go up to the viewing platform on the top floor, which gives a wonderful view over the old railway yard. And on your way out, we'd be really grateful if you could fill in a short questionnaire about your visit, because your comments genuinely help us improve. Right — enjoy the museum.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO galleries have recently been renovated?',
+          options: [
+            { letter: 'A', text: 'the steam-train hall' },
+            { letter: 'B', text: 'the tram gallery' },
+            { letter: 'C', text: 'the bicycle collection' },
+            { letter: 'D', text: 'the aircraft gallery' },
+            { letter: 'E', text: 'the motorcycle gallery' },
+          ],
+          selectCount: 2,
+          answers: ['B', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Visitor information',
+          template: `• Last entry to the exhibits is at {{13}}.
+• Photography is not allowed in the {{14}} room.
+• The café is next to the {{15}}.
+• Pick up a treasure-hunt {{16}} from the information desk.
+• There is a £2 charge for the driving {{17}}.
+• Large bags must be left in the {{18}}.
+• Guided tours last about {{19}}.
+• Visitors are asked to complete a {{20}}.`,
+          blanks: [
+            { num: 13, answers: ['four thirty', '4.30', '4:30', 'half past four'], maxWords: 2 },
+            { num: 14, answers: ['model railway'], maxWords: 2 },
+            { num: 15, answers: ['gift shop', 'shop'], maxWords: 2 },
+            { num: 16, answers: ['worksheet'], maxWords: 1 },
+            { num: 17, answers: ['simulator'], maxWords: 1 },
+            { num: 18, answers: ['cloakroom'], maxWords: 1 },
+            { num: 19, answers: ['forty minutes', '40 minutes'], maxWords: 2 },
+            { num: 20, answers: ['questionnaire'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-20.mp3',
+      title: 'Listening — Section 3: Public Health Campaign Plan',
+      instructions: 'You will hear a tutor and two students planning a public health campaign. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: So, Priya and Sam, let's plan your public-health campaign. You'd chosen to look at students' diets. Where did you finally land?
+
+PRIYA: We decided to concentrate on sugary drinks specifically, rather than diet in general — it felt far more manageable.
+
+TUTOR: I think that's wise. Last year a group tried to cover every aspect of healthy eating, and their message ended up completely diluted.
+
+TUTOR: Good — a narrow focus usually works better. And who's your target audience?
+
+SAM: We were going to aim at the whole campus, but in the end we've decided to target first-year students, since their habits are still forming.
+
+TUTOR: Sensible. Now, what's your main message going to be?
+
+PRIYA: At first we thought we'd emphasise the health risks, but the research suggests that frightening people rarely changes behaviour. So we'll stress the money students could save instead.
+
+TUTOR: Yes, the cost angle is often more persuasive. How will you actually reach students?
+
+SAM: We considered posters, but honestly almost nobody looks at them now. We think social media will have far more impact.
+
+TUTOR: That matches what the studies show — students spend hours scrolling on their phones but walk straight past a poster on the wall.
+
+TUTOR: I agree. Now, one real challenge with campaigns like this is measuring success. How will you know if it has worked?
+
+PRIYA: We'll run a survey before and after the campaign, and then compare the results.
+
+TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost.
+
+SAM: That's really helpful — thanks. We'll divide up the tasks and send you a full plan by the end of the week.
+
+TUTOR: Perfect. I look forward to seeing it.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'The students decided to focus their campaign on',
+          options: [
+            'sugary drinks',
+            'diet in general',
+            'fast food',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'Their target audience will be',
+          options: [
+            'the whole campus',
+            'first-year students',
+            'postgraduate students',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'Their main message will emphasise',
+          options: [
+            'the health risks',
+            'the money students can save',
+            'the environmental impact',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'They will mainly reach students through',
+          options: [
+            'posters',
+            'email',
+            'social media',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'They will measure the campaign\'s success using',
+          options: [
+            'social media shares',
+            'staff interviews',
+            'a before-and-after survey',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `• Do not start filming until a clear {{26}} has been written.
+• Approval is needed from the {{27}} committee before collecting data.
+• Book the recording {{28}} early.
+• Keep a copy of everything in a shared {{29}}.
+• Success will be judged by comparing the survey {{30}}.`,
+          blanks: [
+            { num: 26, answers: ['script'], maxWords: 1 },
+            { num: 27, answers: ['ethics'], maxWords: 1 },
+            { num: 28, answers: ['equipment'], maxWords: 1 },
+            { num: 29, answers: ['folder'], maxWords: 1 },
+            { num: 30, answers: ['results'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-20.mp3',
+      title: 'Listening — Section 4: The History of Chocolate',
+      instructions: 'You will hear a lecture about the history of chocolate. Listen and answer Questions 31–40.',
+      transcript: `Today I'm going to talk about the history of chocolate, which stretches back over three thousand years.
+
+Chocolate comes from the seeds of the cacao tree, which grows in the tropical regions of Central and South America. The first people to use it were the ancient Olmec, but it was the Maya and later the Aztecs who truly valued it. They ground the roasted seeds and mixed them with water to make a bitter drink. Interestingly, the seeds were also used as a form of currency — you could actually buy everyday goods with cacao beans.
+
+When Spanish explorers reached the Americas in the sixteenth century, they carried chocolate back to Europe. There, people added sugar to the drink to make it sweeter, and it quickly became a fashionable luxury among the wealthy. For a long time chocolate stayed expensive, because processing the beans by hand was extremely slow.
+
+Everything changed during the Industrial Revolution. New machinery made it possible to produce chocolate on a large scale, and prices began to fall. A major breakthrough came in 1828, when a Dutch chemist invented a press that removed much of the fat, leaving a smooth powder that was far easier to use.
+
+The solid chocolate bar we know today appeared a few decades later. Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth. Soon afterwards, the addition of milk created milk chocolate, which became hugely popular, especially with children.
+
+Today chocolate is a global industry worth billions. However, it faces serious challenges. Most cacao is now grown in West Africa, where farmers often receive very low prices for their crop. There are also environmental concerns, since expanding plantations can lead to deforestation. For that reason, many companies now promote products certified as sustainable. So next time you eat a chocolate bar, remember its remarkable journey through history.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE HISTORY OF CHOCOLATE',
+          template: `Origins
+
+• Chocolate comes from the seeds of the {{31}} tree.
+• The seeds were also used as a form of {{32}}.
+
+Arrival in Europe
+
+• Spanish explorers carried chocolate back to {{33}}.
+• People added {{34}} to make the drink sweeter.
+
+Industrial change
+
+• In 1828 a Dutch {{35}} invented a press.
+• The press removed much of the {{36}}.
+• Adding extra cocoa {{37}} produced a bar that melts in the mouth.
+• The addition of {{38}} created milk chocolate.
+
+Today
+
+• Most cacao is now grown in West {{39}}.
+• Expanding plantations can lead to {{40}}.`,
+          blanks: [
+            { num: 31, answers: ['cacao', 'cocoa'], maxWords: 1 },
+            { num: 32, answers: ['currency'], maxWords: 1 },
+            { num: 33, answers: ['Europe'], maxWords: 1 },
+            { num: 34, answers: ['sugar'], maxWords: 1 },
+            { num: 35, answers: ['chemist'], maxWords: 1 },
+            { num: 36, answers: ['fat'], maxWords: 1 },
+            { num: 37, answers: ['butter'], maxWords: 1 },
+            { num: 38, answers: ['milk'], maxWords: 1 },
+            { num: 39, answers: ['Africa'], maxWords: 1 },
+            { num: 40, answers: ['deforestation'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {

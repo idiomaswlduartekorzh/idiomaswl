@@ -5,18 +5,366 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 11',
   subtitle: 'Rome\'s Water System · Urban Heat Islands · Cognitive Biases',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
 
-    // ─── LISTENING — EN CONSTRUCCIÓN ─────────────────────────────────────────
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-11.mp3',
+      title: 'Listening — Section 1: Booking a Photography Workshop',
+      instructions: 'You will hear a conversation between a customer and a photography studio booking agent. Listen and answer Questions 1–10.',
+      transcript: `AGENT: Good afternoon, Lakeside Photography. How can I help you?
+
+CUSTOMER: Hi. I'd like to book a place on one of your photography workshops, please.
+
+AGENT: Of course. Can I take your name first?
+
+CUSTOMER: Yes, it's Helen Whitby.
+
+AGENT: Could you spell your surname for me?
+
+CUSTOMER: Certainly — it's W-H-I-T-B-Y.
+
+AGENT: Thank you, Ms Whitby. And your address?
+
+CUSTOMER: It's 42 Redhill Road — that's R-E-D-H-I-L-L.
+
+AGENT: Redhill Road. And the postcode?
+
+CUSTOMER: It's LS9 4RT.
+
+AGENT: And a contact number?
+
+CUSTOMER: My mobile is 078 4421 9075.
+
+AGENT: Lovely. Can I ask how you heard about us?
+
+CUSTOMER: I saw an advert in the newspaper — oh, no, sorry, it was actually a magazine.
+
+AGENT: A magazine, great. Now, we run two workshops at the moment. Would you like to hear about them?
+
+CUSTOMER: Yes, please.
+
+AGENT: The first is our Beginners' Workshop. You'll learn how to control the light — how much of it reaches the camera — and how to compose a good shot. The sessions are held on Saturday morning.
+
+CUSTOMER: That suits me well. I'm always free on Saturdays.
+
+AGENT: The second is the Landscape Workshop. For that one, the group travels out to a nearby lake and spends the whole day there. One thing to note — each student must bring their own tripod, as the light there can be quite low.
+
+CUSTOMER: I've got one of those, so that's fine.
+
+AGENT: Let me give you the prices. The Beginners' Workshop is four sessions of three hours each. It costs £120, and that price includes lunch.
+
+CUSTOMER: And the Landscape one?
+
+AGENT: The Landscape Workshop runs over two sessions of five hours each. That one is £150, and the price includes transport to the lake.
+
+CUSTOMER: Great, I'll think about which to choose and call you back.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Photography Workshop Booking',
+          example: 'Name:  Helen Whitby',
+          template: `Personal details
+Address: 42 {{1}} Road
+Postcode: LS9 4RT
+Phone: (mobile) 078 4421 9075
+
+Heard about the studio from: a {{2}}
+
+Beginners' Workshop
+• learn how to control the {{3}} on a camera
+• sessions are held on Saturday {{4}}
+
+Landscape Workshop
+• the group travels to a nearby {{5}}
+• each student must bring their own {{6}}`,
+          blanks: [
+            { num: 1, answers: ['Redhill', 'redhill'], maxWords: 1 },
+            { num: 2, answers: ['magazine'], maxWords: 1 },
+            { num: 3, answers: ['light'], maxWords: 1 },
+            { num: 4, answers: ['morning'], maxWords: 1 },
+            { num: 5, answers: ['lake'], maxWords: 1 },
+            { num: 6, answers: ['tripod'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Workshop', 'Number of sessions', 'Length of each session', 'Price', 'Includes'],
+          rows: [
+            [
+              'Beginners\' Workshop',
+              '4',
+              '3 hours',
+              { num: 7, answers: ['120', '£120'], maxWords: 1 },
+              { num: 8, answers: ['lunch'], maxWords: 1 },
+            ],
+            [
+              'Landscape Workshop',
+              { num: 9, answers: ['2', 'two'], maxWords: 1 },
+              '5 hours',
+              '£150',
+              { num: 10, answers: ['transport'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-11.mp3',
+      title: 'Listening — Section 2: Theatre Backstage Tour',
+      instructions: 'You will hear a guide giving a backstage tour of a theatre. Listen and answer Questions 11–20.',
+      transcript: `Good morning everyone, and welcome to the backstage tour of the Regent Theatre. Before we set off, let me mention the improvements we've made this year. We've installed a completely new lighting system above the stage, which is now fully computer-controlled. We've also refurbished the dressing rooms downstairs, which the actors are delighted with. Now, some of you asked about the main auditorium — I'm afraid we can't alter that, as the building is protected, and the little café by the entrance is exactly as it has always been. The box office hasn't changed either, though we do hope to modernise it next year.
+
+Right, let's begin. The Regent is a medium-sized venue and can seat 900 people. As we walk onto the stage, notice the floor — it's made of pine, a soft wood that has a gentle spring to it, which is kinder to the dancers' feet.
+
+Now look up. That tall space above us is the fly tower. Using a system of ropes and pulleys, the crew can raise and lower the scenery quickly between scenes, so the audience never sees it happening.
+
+Just through this door is the green room. Despite the name, it isn't green — it's simply the comfortable space where the actors relax while they wait to go on.
+
+Next door is the wardrobe department. This is where a small team of skilled staff design and make all the costumes for each production, often by hand.
+
+One important safety feature: in the event of a fire, a heavy safety curtain can be lowered to seal the stage off from the audience. It is tested before every performance.
+
+The large room at the back is the workshop, where the carpenters build the set — everything from walls to furniture.
+
+And finally, our tour ends at the theatre shop, where you can buy posters and other souvenirs from our current show. Do have a look before you leave. Thank you.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO parts of the theatre have recently been improved?',
+          options: [
+            { letter: 'A', text: 'the lighting system' },
+            { letter: 'B', text: 'the main auditorium' },
+            { letter: 'C', text: 'the café' },
+            { letter: 'D', text: 'the dressing rooms' },
+            { letter: 'E', text: 'the box office' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Backstage Tour of the Regent Theatre',
+          template: `• The theatre can seat {{13}} people.
+• The stage floor is made of {{14}}.
+• The fly tower is used to raise and lower the {{15}}.
+• The green room is where the actors {{16}}.
+• The wardrobe department makes all the {{17}}.
+• A heavy {{18}} can be lowered in case of fire.
+• The set is built in the {{19}}.
+• The shop sells {{20}} from the current show.`,
+          blanks: [
+            { num: 13, answers: ['900'], maxWords: 1 },
+            { num: 14, answers: ['pine'], maxWords: 1 },
+            { num: 15, answers: ['scenery'], maxWords: 1 },
+            { num: 16, answers: ['relax', 'wait'], maxWords: 1 },
+            { num: 17, answers: ['costumes', 'costume'], maxWords: 1 },
+            { num: 18, answers: ['safety curtain', 'curtain', 'iron curtain'], maxWords: 2 },
+            { num: 19, answers: ['workshop'], maxWords: 1 },
+            { num: 20, answers: ['posters', 'poster', 'souvenirs'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-11.mp3',
+      title: 'Listening — Section 3: Environmental Essay Review',
+      instructions: 'You will hear a tutor and a student discussing the student\'s environmental essay. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Come in, Maria. I've read your essay on reducing plastic waste. Let's talk it through.
+
+STUDENT: Thanks. I was a bit unsure whether my argument came across clearly.
+
+TUTOR: Well, your central claim is that individual action alone isn't enough — that governments and manufacturers have to take the lead. That came through very strongly.
+
+STUDENT: Good, because that was the point I most wanted to make.
+
+TUTOR: And the writing itself is clear and well organised. What impressed me most, though, was your use of real examples — the case study of the deposit-return scheme in Germany was excellent.
+
+STUDENT: I found that really interesting to research.
+
+TUTOR: Now, there is one weakness. Some of your statistics are quite old — a few of your sources date back to 2009. For a topic that moves this fast, you really need more recent data.
+
+STUDENT: I did wonder about that. I found the older studies easier to access.
+
+TUTOR: I understand, but do update them. Also, I'd suggest reorganising the middle section. At the moment you present all the problems and then all the solutions. It would be stronger to pair each problem with its solution as you go.
+
+STUDENT: That makes sense. It would flow better.
+
+TUTOR: Exactly. One more thing — your conclusion is a little short. You introduce an interesting idea about consumer behaviour right at the end, but you don't develop it. I'd move that into the main body.
+
+STUDENT: I'll do that. What about the length overall?
+
+TUTOR: The length is fine. Now, in terms of what to do next. First, you need to strengthen the evidence, so find some newer figures. Second, I'd like you to add a diagram showing how much plastic is recycled — a visual really helps the reader. Then check your referencing, because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences. And finally, send me the revised draft by email so I can look at it again before you submit.
+
+STUDENT: Thank you, that's really helpful.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'What is the main argument of Maria\'s essay?',
+          options: [
+            'Individual action alone is not enough to solve plastic waste.',
+            'Recycling schemes are too expensive for most governments.',
+            'Consumers are mainly to blame for plastic pollution.',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'What does the tutor say impressed him most about the essay?',
+          options: [
+            'the clarity of the writing',
+            'the use of real examples',
+            'the length of the essay',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'What weakness does the tutor identify?',
+          options: [
+            'Some of the statistics are out of date.',
+            'The main argument is hard to follow.',
+            'There are too few examples.',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'What does the tutor suggest about the middle section?',
+          options: [
+            'It should be made considerably shorter.',
+            'Each problem should be paired with its solution.',
+            'It should contain more statistics.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'What does the tutor say about the conclusion?',
+          options: [
+            'It simply repeats points from the introduction.',
+            'It contains an idea that belongs in the main body.',
+            'It is the strongest part of the essay.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `Maria's revised essay — things to do
+• Find some more recent {{26}} to strengthen the evidence.
+• Add a {{27}} showing how much plastic is recycled.
+• Check the {{28}}, as a few entries are missing dates.
+• Read the whole essay {{29}} to catch awkward sentences.
+• Send the revised draft to the tutor by {{30}}.`,
+          blanks: [
+            { num: 26, answers: ['figures', 'data'], maxWords: 1 },
+            { num: 27, answers: ['diagram'], maxWords: 1 },
+            { num: 28, answers: ['referencing', 'citations'], maxWords: 1 },
+            { num: 29, answers: ['aloud'], maxWords: 1 },
+            { num: 30, answers: ['email'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-11.mp3',
+      title: 'Listening — Section 4: The Roman Aqueducts',
+      instructions: 'You will hear a lecture about Roman aqueducts. Listen and answer Questions 31–40.',
+      transcript: `Today I'd like to look at one of the great engineering achievements of the ancient world: the Roman aqueduct. Contrary to popular belief, most of an aqueduct's length ran not on those famous arches but underground, hidden beneath the ground. The tall arches we admire today were used only where the water had to cross a valley.
+
+The whole system depended on a single, simple force: gravity. Because there were no pumps, the channel had to slope gently downhill for its entire length, sometimes for many kilometres. If the slope was too steep, the water moved too fast and damaged the channel; if it was too shallow, the water stopped moving and turned stagnant.
+
+To measure these tiny gradients, surveyors used a long wooden instrument, filled with water, that acted as a level. Getting the measurement wrong by even a fraction could ruin the whole project.
+
+The water channel itself was usually lined with a special waterproof cement to prevent leaks and to keep the supply clean. When the water finally reached the city, it was collected in a large tank and shared out. The most important users, receiving water first, were the public fountains and baths, where ordinary people came to wash and to collect drinking water.
+
+Maintaining the aqueducts was a constant task. A serious problem was the build-up of lime, a hard mineral deposit left by the water, which gradually narrowed the channel and had to be chipped away by hand.
+
+The official placed in overall charge of the entire water supply held the important title of curator, a highly respected public office.
+
+Eventually the system declined. In times of war, an enemy could force a city to surrender simply by cutting off its supply. And once the central government grew too weak to pay for repairs, the aqueducts slowly fell into ruin. It was not until the Renaissance that engineers in Rome began to restore them, more than a thousand years later.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE ROMAN AQUEDUCTS',
+          template: `How the aqueducts worked
+
+• Most of an aqueduct ran underground, beneath the {{31}}.
+• The system relied entirely on the force of {{32}}.
+• If the channel's slope was too shallow, the water turned {{33}}.
+• Surveyors measured the gradient using an instrument that acted as a {{34}}.
+
+Construction and use
+
+• The channel was lined with waterproof {{35}} to prevent leaks.
+• When water reached the city, it went first to the public {{36}} and baths.
+• Channels became blocked by deposits of {{37}} and had to be cleaned.
+
+People and decline
+
+• The official in charge of the water supply was called the {{38}}.
+• In wartime, an enemy could cut off a city's {{39}} to force surrender.
+• The aqueducts were not repaired until the {{40}}.`,
+          blanks: [
+            { num: 31, answers: ['ground'], maxWords: 1 },
+            { num: 32, answers: ['gravity'], maxWords: 1 },
+            { num: 33, answers: ['stagnant'], maxWords: 1 },
+            { num: 34, answers: ['level'], maxWords: 1 },
+            { num: 35, answers: ['cement'], maxWords: 1 },
+            { num: 36, answers: ['fountains', 'fountain'], maxWords: 1 },
+            { num: 37, answers: ['lime', 'limescale'], maxWords: 1 },
+            { num: 38, answers: ['curator'], maxWords: 1 },
+            { num: 39, answers: ['supply'], maxWords: 1 },
+            { num: 40, answers: ['Renaissance'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     // ─── READING ──────────────────────────────────────────────────────────────

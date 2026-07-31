@@ -5,9 +5,350 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 10',
   subtitle: 'Microplastics · The Sharing Economy · Memory and Identity',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
-    { part: 1, skill: 'listening', comingSoon: true, title: 'Listening — En Construcción', instructions: 'Esta sección estará disponible próximamente.', questions: [] },
+    // ─── LISTENING ────────────────────────────────────────────────────────────
+
+    {
+      part: 1,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-10.mp3',
+      title: 'Listening — Section 1: Job-Agency Registration',
+      instructions: 'You will hear a conversation between a recruitment consultant and a job seeker. Listen and answer Questions 1–10.',
+      transcript: `CONSULTANT: Good morning, Citywide Recruitment. How can I help?
+
+JOBSEEKER: Hi, I'd like to register with your agency to look for work.
+
+CONSULTANT: Certainly, I can take your details now. Can I start with your name?
+
+JOBSEEKER: Yes, my first name is Daniel, and my surname is Farrelly.
+
+CONSULTANT: Could you spell the surname?
+
+JOBSEEKER: Of course — F-A-R-R-E-L-L-Y.
+
+CONSULTANT: Thank you. And the best number to reach you on?
+
+JOBSEEKER: It's my mobile — 07816 445230.
+
+CONSULTANT: Let me just check — 07816 445230. Great. Now, what kind of work are you looking for?
+
+JOBSEEKER: I was thinking warehouse work — actually, no, I'd really prefer office administration. That's where my strengths are.
+
+CONSULTANT: Administration, good. And when would you be available to start?
+
+JOBSEEKER: I'm free immediately — I finished my last contract a fortnight ago.
+
+CONSULTANT: Excellent, employers love that. Do you have relevant experience?
+
+JOBSEEKER: Most of my background is in retail — I managed a small shop for three years, so I'm used to dealing with customers and paperwork.
+
+CONSULTANT: That's useful. And your highest qualification?
+
+JOBSEEKER: I have a diploma in business studies.
+
+CONSULTANT: Noted. One more thing — do you speak any other languages? Some of our clients value that.
+
+JOBSEEKER: Yes, I speak French fairly fluently.
+
+CONSULTANT: Wonderful. Now, let me tell you about a few vacancies we have. First, there's a Receptionist role in the city centre, full-time, paying £11.50 an hour. Then we have an Office Assistant position — that one's out at Riverside, it's part-time, and it pays £12 an hour. And finally, a Data Clerk job, also in the city centre, but the hours are evenings only, at £13 an hour.
+
+JOBSEEKER: The Office Assistant one sounds ideal, actually.
+
+CONSULTANT: Great — I'll put you forward for it. I'll email you the full description this afternoon, and we'll arrange an interview.
+
+JOBSEEKER: Thank you so much for your help.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Job-Agency Registration',
+          example: 'First name:  Daniel',
+          template: `Surname: {{1}}
+Contact number: 07816 445230
+Type of work wanted: {{2}}
+Available to start: {{3}}
+Previous experience in: {{4}}
+Highest qualification: {{5}}
+Other languages: {{6}}`,
+          blanks: [
+            { num: 1, answers: ['Farrelly'], maxWords: 1 },
+            { num: 2, answers: ['administration', 'admin'], maxWords: 1 },
+            { num: 3, answers: ['immediately'], maxWords: 1 },
+            { num: 4, answers: ['retail'], maxWords: 1 },
+            { num: 5, answers: ['diploma'], maxWords: 1 },
+            { num: 6, answers: ['French'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Job', 'Location', 'Hours', 'Pay per hour'],
+          rows: [
+            [
+              'Receptionist',
+              'city centre',
+              'full-time',
+              { num: 7, answers: ['11.50', '£11.50'], maxWords: 1 },
+            ],
+            [
+              'Office Assistant',
+              { num: 8, answers: ['Riverside'], maxWords: 1 },
+              'part-time',
+              '£12',
+            ],
+            [
+              'Data Clerk',
+              'city centre',
+              { num: 9, answers: ['evenings', 'evening'], maxWords: 1 },
+              { num: 10, answers: ['13', '£13'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-10.mp3',
+      title: 'Listening — Section 2: Library Services',
+      instructions: 'You will hear a talk about the services offered by a local library. Listen and answer Questions 11–20.',
+      transcript: `Hello everyone, and thank you for coming to this short talk about your local library and the services we offer. I'm the head librarian here, and I'd like to run through what's available, including some exciting additions.
+
+Let me start with what's new this year. We've just launched an e-book lending service, so you can now borrow digital titles and read them on your phone or tablet at home. We've also opened a set of bookable study rooms on the upper floor, which have been in great demand from students. Now, some of you will ask about the café and the free wifi — those aren't new, they've been with us for several years. And our children's area is currently being renovated, so please bear with us there.
+
+Now, on to membership and borrowing. Joining the library is completely free for local residents. Once you're a member, you can borrow up to twelve items at any one time — books, audiobooks, or DVDs. The standard loan period is three weeks, and you can renew online if no one else has reserved the item. If you do return something late, there's a small fine for each day it's overdue, so do keep an eye on your due dates.
+
+We also provide some services you might not know about. Members get free access to a wide range of online newspapers, which is perfect if you like to keep up with the news from around the world. For families, we run a story session for young children every Saturday morning — it's very popular, so arrive early. And if you need to use a computer, our computer suite is on the first floor, with printing and scanning available.
+
+Finally, if you'd like to join today, it couldn't be simpler. Just come to the main desk and bring proof of your address — a utility bill or a bank statement is fine — and we'll issue your card on the spot.
+
+Thank you for listening, and please do explore everything the library has to offer.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO services does the speaker say are new this year?',
+          options: [
+            { letter: 'A', text: 'an e-book lending service' },
+            { letter: 'B', text: 'the café' },
+            { letter: 'C', text: 'bookable study rooms' },
+            { letter: 'D', text: 'the children\'s area' },
+            { letter: 'E', text: 'the free wifi' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'C'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Library Services',
+          template: `Membership and borrowing
+• Membership is free for local {{13}}.
+• Members can borrow up to {{14}} items at once.
+• The standard loan period is {{15}}.
+• Late returns are charged a small {{16}} per day.
+
+Other services
+• Free access to a range of online {{17}}.
+• A {{18}} for young children every Saturday morning.
+• The computer suite is on the {{19}} floor.
+
+Joining today
+• Bring proof of your {{20}} to the main desk.`,
+          blanks: [
+            { num: 13, answers: ['residents', 'resident'], maxWords: 2 },
+            { num: 14, answers: ['12', 'twelve'], maxWords: 2 },
+            { num: 15, answers: ['three weeks', '3 weeks'], maxWords: 2 },
+            { num: 16, answers: ['fine'], maxWords: 2 },
+            { num: 17, answers: ['newspapers', 'newspaper'], maxWords: 2 },
+            { num: 18, answers: ['story session', 'storytime'], maxWords: 2 },
+            { num: 19, answers: ['first', 'first floor'], maxWords: 2 },
+            { num: 20, answers: ['address'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-10.mp3',
+      title: 'Listening — Section 3: Architecture Project',
+      instructions: 'You will hear two architecture students discussing a project with their tutor. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Right, Maya, Josh — let's review your architecture project before your presentation. Tell me about the building you designed.
+
+MAYA: We designed a community library. We wanted a public space that would bring people of all ages together, not just a place to borrow books.
+
+TUTOR: A lovely idea. Where did the inspiration come from? I remember you mentioned a historic building at one point.
+
+JOSH: We did look at an old town hall for ideas, but in the end the main inspiration was the natural landscape around the site — the way the hills curve. The roofline actually echoes those hills.
+
+TUTOR: That's a strong concept. And what did you build the main structure from?
+
+MAYA: We debated using concrete, because it's cheap and durable, but we finally chose timber. It's far more sustainable, and it gives the interior a really warm feel.
+
+TUTOR: Good choice. Was there a particular difficulty you had to overcome?
+
+JOSH: Definitely. The hardest thing wasn't the budget or accessibility — it was the limited size of the site. It's quite a narrow plot, so fitting everything in without it feeling cramped took a lot of reworking.
+
+TUTOR: You've handled that well. Now, I looked at your scale model. It's beautifully made, but I have to say the scale isn't obvious — someone looking at it can't easily tell how big the building actually is. You might add a small human figure for reference.
+
+MAYA: That's a good point. We'll fix that.
+
+TUTOR: Now, for the presentation itself. Start with a clear introduction that sets out your aims — don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project. I'd also add a diagram showing the internal layout, so the audience can follow the flow of the spaces. And do rehearse beforehand to get your timing right; you've only got ten minutes. Practise once in front of me, and I'll give you some feedback afterwards.
+
+JOSH: That's really helpful — thank you.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'What type of building did the students design?',
+          options: [
+            'a community library',
+            'a sports centre',
+            'a railway station',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'What was the main inspiration for their design?',
+          options: [
+            'a historic town hall',
+            'the natural landscape',
+            'a building they had seen abroad',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'Which material did they choose for the main structure?',
+          options: [
+            'steel',
+            'concrete',
+            'timber',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'What was the biggest challenge they faced?',
+          options: [
+            'staying within budget',
+            'meeting accessibility rules',
+            'the limited size of the site',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'What did the tutor say about their scale model?',
+          options: [
+            'It contained too much detail.',
+            'The scale was not clear.',
+            'It needed brighter colours.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `• The presentation should begin with a clear {{26}}.
+• They should explain their choice of {{27}}.
+• The tutor suggests adding a {{28}} of the internal layout.
+• They should rehearse to get their {{29}} right.
+• The tutor will give them {{30}} after the practice run.`,
+          blanks: [
+            { num: 26, answers: ['introduction'], maxWords: 1 },
+            { num: 27, answers: ['materials', 'material'], maxWords: 1 },
+            { num: 28, answers: ['diagram'], maxWords: 1 },
+            { num: 29, answers: ['timing'], maxWords: 1 },
+            { num: 30, answers: ['feedback'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-10.mp3',
+      title: 'Listening — Section 4: The Migration of Whales',
+      instructions: 'You will hear part of a lecture about the migration of whales. Listen and answer Questions 31–40.',
+      transcript: `Good afternoon. Today's lecture is about one of the great spectacles of the natural world — the migration of whales, some of which travel thousands of kilometres every year.
+
+Let's begin with why they migrate at all. Most large whales divide their year between two very different regions. In the cooler months they head towards the tropics, and the main reason is reproduction: they travel to warm breeding grounds, where their young have a better chance of surviving. In summer, by contrast, they return to the poles to feed, where the cold, nutrient-rich water is full of the tiny shrimp-like creatures called krill that form the bulk of their diet. During this feeding season a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead.
+
+Now, the distances involved are extraordinary. Grey whales, for example, make some of the longest journeys of any mammal on Earth, swimming from the Arctic all the way to the coast of Mexico. There, the females give birth in warm, shallow lagoons near the shore, which offer their calves protection from predators.
+
+How do whales find their way across such vast stretches of open ocean? Scientists believe they may be able to detect the Earth's magnetic field, using it rather like a compass. They also rely heavily on sound, and some species produce long, complex songs that carry for many kilometres underwater and help them stay in contact.
+
+Sadly, whales today face a number of serious threats. One of the most immediate is collision with ships along busy coastal routes, which kills or injures many animals every year. In addition, the growing noise from shipping and industry interferes with their communication, making it harder for them to find one another and to navigate. And in the longer term, rising sea temperatures are altering ocean currents and shifting the location of their food, forcing whales to change patterns of migration that have remained stable for thousands of years.
+
+Protecting these remarkable animals will require international cooperation — but understanding their journeys is the essential first step.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE MIGRATION OF WHALES',
+          template: `Why whales migrate
+• They travel to warm {{31}} grounds so their young can survive.
+• At the poles they feed on tiny creatures called {{32}}.
+• They store energy as a thick layer of {{33}}.
+
+Routes and navigation
+• Grey whales make some of the longest {{34}} of any mammal.
+• Females give birth in warm, shallow {{35}} near the shore.
+• Whales may detect the Earth's magnetic {{36}} to navigate.
+• They also communicate using long, complex {{37}}.
+
+Threats
+• Many are killed by collisions with {{38}}.
+• Underwater noise interferes with their {{39}}.
+• Rising sea temperatures are shifting the location of their {{40}}.`,
+          blanks: [
+            { num: 31, answers: ['breeding'], maxWords: 1 },
+            { num: 32, answers: ['krill'], maxWords: 1 },
+            { num: 33, answers: ['blubber', 'fat'], maxWords: 1 },
+            { num: 34, answers: ['journeys', 'journey', 'migrations'], maxWords: 1 },
+            { num: 35, answers: ['lagoons', 'lagoon'], maxWords: 1 },
+            { num: 36, answers: ['field'], maxWords: 1 },
+            { num: 37, answers: ['songs', 'song'], maxWords: 1 },
+            { num: 38, answers: ['ships', 'ship'], maxWords: 1 },
+            { num: 39, answers: ['communication'], maxWords: 1 },
+            { num: 40, answers: ['food'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
 
     {
       part: 5, skill: 'reading',

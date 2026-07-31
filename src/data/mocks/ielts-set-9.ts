@@ -5,9 +5,372 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 9',
   subtitle: 'Vaccination · Deep-Sea Exploration · The Future of Work',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
-    { part: 1, skill: 'listening', comingSoon: true, title: 'Listening — En Construcción', instructions: 'Esta sección estará disponible próximamente.', questions: [] },
+    // ─── LISTENING ────────────────────────────────────────────────────────────
+
+    {
+      part: 1,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-9.mp3',
+      title: 'Listening — Section 1: Hotel Reservation',
+      instructions: 'You will hear a conversation between a hotel receptionist and a customer. Listen and answer Questions 1–10.',
+      transcript: `RECEPTIONIST: Good afternoon, Seaview Hotel. How may I help you?
+
+CUSTOMER: Hello, I'd like to book a room for next month, please.
+
+RECEPTIONIST: Of course. Can I take your name?
+
+CUSTOMER: Yes, my first name's Rebecca, and my surname is Whitcombe.
+
+RECEPTIONIST: Could you spell the surname for me?
+
+CUSTOMER: Certainly — W-H-I-T-C-O-M-B-E.
+
+RECEPTIONIST: Thank you, Ms Whitcombe. And a contact number in case we need to reach you?
+
+CUSTOMER: My mobile is 07734 209865.
+
+RECEPTIONIST: Let me read that back — 07734 209865. Perfect. And how many nights will you be staying?
+
+CUSTOMER: We'll be there for four nights, arriving on the Thursday.
+
+RECEPTIONIST: Four nights, noted. And what type of room would you like?
+
+CUSTOMER: I'll take a twin room — oh, sorry, no, a double, please. My husband is coming with me.
+
+RECEPTIONIST: A double, of course. May I ask the reason for your visit?
+
+CUSTOMER: It's for business — there's a conference in the city that week.
+
+RECEPTIONIST: Noted. Is there anything else you need for your stay?
+
+CUSTOMER: Two things, actually. We'll be driving down, so we'd like parking. And we're bringing our baby, so could you put a cot in the room?
+
+RECEPTIONIST: No problem at all — parking is free for guests, and I'll arrange a cot. Now, let me describe our rooms so you can choose. Our Standard room has one double bed and looks out over the garden; that's £95 a night.
+
+CUSTOMER: And something a little larger?
+
+RECEPTIONIST: The Family room sleeps more — it has three beds, though it overlooks the car park, I'm afraid. That one is £120 per night.
+
+CUSTOMER: And your very best room?
+
+RECEPTIONIST: That would be the Suite, with one double bed and a wonderful sea view. The Suite is £180 a night.
+
+CUSTOMER: The Standard sounds perfect for us.
+
+RECEPTIONIST: Excellent choice. Breakfast is included in every rate, served until half past nine.
+
+CUSTOMER: Wonderful — thank you very much.
+
+RECEPTIONIST: You're very welcome. We look forward to seeing you, Ms Whitcombe.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Hotel Reservation',
+          example: 'First name:  Rebecca',
+          template: `Surname: {{1}}
+Contact number: 07734 209865
+Number of nights: {{2}}
+Room type: {{3}}
+Reason for visit: {{4}}
+Also needs {{5}} for the car
+Also needs a {{6}} in the room for a baby`,
+          blanks: [
+            { num: 1, answers: ['Whitcombe'], maxWords: 1 },
+            { num: 2, answers: ['4', 'four'], maxWords: 1 },
+            { num: 3, answers: ['double'], maxWords: 1 },
+            { num: 4, answers: ['business'], maxWords: 1 },
+            { num: 5, answers: ['parking'], maxWords: 1 },
+            { num: 6, answers: ['cot'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Room', 'Beds', 'View', 'Price per night'],
+          rows: [
+            [
+              'Standard',
+              'one double',
+              { num: 7, answers: ['garden'], maxWords: 1 },
+              '£95',
+            ],
+            [
+              'Family',
+              { num: 8, answers: ['3', 'three'], maxWords: 1 },
+              'car park',
+              { num: 9, answers: ['120', '£120'], maxWords: 1 },
+            ],
+            [
+              'Suite',
+              'one double',
+              'sea',
+              { num: 10, answers: ['180', '£180'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-9.mp3',
+      title: 'Listening — Section 2: Company Induction',
+      instructions: 'You will hear a talk given to new employees on their first day at a company. Listen and answer Questions 11–20.',
+      transcript: `Good morning everyone, and a warm welcome to Brightwater Solutions. My name's Diane, and I'm part of the HR team. This short induction will help you settle in during your first week with us.
+
+Let me start with the building itself, because we've made some changes recently. Over the summer we added a brand-new gym on the ground floor, which all employees can use free of charge. We've also installed secure bike storage by the rear entrance, which has proved very popular with cyclists. The canteen and the car park, of course, have been here for years, so those aren't new — but the gym and the bike storage are, and I'd encourage you to make the most of them.
+
+Now, a few practical matters. On your first morning, please collect your security pass from the reception desk — you'll need it to enter the building and to use the lifts. Our working day starts at 8.30, though many people arrive a little earlier for a coffee.
+
+Let me tell you about the facilities. The canteen is on the second floor, and it serves hot meals from midday. In every kitchen area you'll find free hot drinks available throughout the day, so please help yourself.
+
+In terms of your first few weeks, each new employee is assigned a mentor — an experienced colleague who'll answer your questions and show you how things work. Your early training will focus mainly on the company software, which can take a little getting used to. And I should mention that the probation period lasts three months, after which we'll have a review to discuss how you're getting on.
+
+Finally, staying informed. There's a team meeting every Friday, where we share updates and celebrate successes. We also send out a newsletter once a month by email.
+
+If you have any questions at all, my door is always open, and you can find me in the HR office on the third floor. Once again, welcome aboard — we're delighted to have you with us.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO facilities have recently been added to the building?',
+          options: [
+            { letter: 'A', text: 'the gym' },
+            { letter: 'B', text: 'the canteen' },
+            { letter: 'C', text: 'the car park' },
+            { letter: 'D', text: 'the bike storage' },
+            { letter: 'E', text: 'the reception desk' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'New Employee Induction',
+          template: `Getting started
+• Collect your {{13}} from the reception desk.
+• The working day starts at {{14}}.
+
+Facilities
+• The canteen is located on the {{15}} floor.
+• All staff get free {{16}} in the kitchen area.
+
+Your first weeks
+• Each new employee is assigned a {{17}}.
+• Early training focuses on the company {{18}}.
+• The probation period lasts {{19}} months.
+
+Staying informed
+• There is a team meeting every {{20}}.`,
+          blanks: [
+            { num: 13, answers: ['security pass', 'pass'], maxWords: 2 },
+            { num: 14, answers: ['8.30', '8:30'], maxWords: 2 },
+            { num: 15, answers: ['second', 'second floor'], maxWords: 2 },
+            { num: 16, answers: ['hot drinks', 'drinks'], maxWords: 2 },
+            { num: 17, answers: ['mentor'], maxWords: 1 },
+            { num: 18, answers: ['software'], maxWords: 1 },
+            { num: 19, answers: ['3', 'three'], maxWords: 1 },
+            { num: 20, answers: ['Friday'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-9.mp3',
+      title: 'Listening — Section 3: Nutrition Study Project',
+      instructions: 'You will hear two students discussing a nutrition study project with their tutor. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: So, Kirsty, Tom — let's talk about your nutrition project. Remind me what your main aim was.
+
+KIRSTY: Well, we set out to investigate students' breakfast habits — whether they eat breakfast, and what they typically have.
+
+TUTOR: And why breakfast in particular?
+
+TOM: Mainly because it's the meal students skip most often. We thought that made it worth studying — there's a lot of advice telling people not to skip it, but not much on what students actually do.
+
+TUTOR: Good reasoning. How did you gather your data?
+
+KIRSTY: We considered doing face-to-face interviews at first, but in the end we used an online questionnaire. It let us reach far more people quickly.
+
+TUTOR: Sensible. And what did you find?
+
+TOM: The most surprising result was that most students who skipped breakfast did so simply to save time in the mornings — not because they weren't hungry or were dieting, as we'd assumed.
+
+TUTOR: Interesting. Were there any weaknesses in your study?
+
+KIRSTY: Yes — our biggest problem was the sample. We had far too few male participants; nearly eighty per cent of respondents were women, so the results are a bit skewed.
+
+TUTOR: That's an honest assessment. Now, thinking about the write-up: your data is strong, but the report itself needs more graphs — at the moment it's very text-heavy, and readers will find visuals easier to follow.
+
+TOM: That's fair. We'll add some.
+
+TUTOR: And for any future work, do make your sample larger — a few hundred would be ideal. I'd also advise you to check the reliability of your sources; a couple of the websites you cited aren't peer-reviewed.
+
+KIRSTY: Understood. When do you need the final version?
+
+TUTOR: The final report must be handed in by Friday, so you've got a few days. Oh — and Tom, I'll lend you a book that covers survey design really well; come by my office and collect it.
+
+TOM: Brilliant, thank you very much.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'What was the main aim of the nutrition project?',
+          options: [
+            'to compare diets in different countries',
+            'to investigate students\' breakfast habits',
+            'to test a new dietary supplement',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'Why did the students decide to focus on breakfast?',
+          options: [
+            'It is the meal students most often skip.',
+            'It is the cheapest meal to study.',
+            'Earlier research on it was unreliable.',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'How did they collect most of their data?',
+          options: [
+            'through laboratory experiments',
+            'through an online questionnaire',
+            'through face-to-face interviews',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'What did they find most surprising?',
+          options: [
+            'Students who ate breakfast concentrated better.',
+            'Most students skipped breakfast to save time.',
+            'Breakfast made no difference to performance.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'What was the main weakness of their study?',
+          options: [
+            'There were too few male participants.',
+            'The participants were all the same age.',
+            'The overall sample was too small.',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `• The tutor thinks the report needs more {{26}}.
+• In future they should make their {{27}} larger.
+• The tutor advises checking the {{28}} of their sources.
+• The final report must be handed in by {{29}}.
+• The tutor will lend Tom a useful {{30}}.`,
+          blanks: [
+            { num: 26, answers: ['graphs', 'graph'], maxWords: 1 },
+            { num: 27, answers: ['sample'], maxWords: 1 },
+            { num: 28, answers: ['reliability'], maxWords: 1 },
+            { num: 29, answers: ['Friday'], maxWords: 1 },
+            { num: 30, answers: ['book'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-9.mp3',
+      title: 'Listening — Section 4: Volcanoes',
+      instructions: 'You will hear part of a lecture about volcanoes. Listen and answer Questions 31–40.',
+      transcript: `Today I'm going to talk about volcanoes — how they form, the different types, the dangers they pose, and, perhaps surprisingly, the benefits they bring.
+
+Let's begin with formation. The Earth's outer shell is broken into enormous sections, and most volcanoes form at the boundaries of these tectonic plates, where they pull apart or push together. Deep underground, rock melts to form magma. When this molten rock finally reaches the surface, we no longer call it magma — it's known as lava.
+
+Now, volcanoes are not all the same. Broadly, there are two main types. Shield volcanoes, like those in Hawaii, are built up from very runny lava that flows a long way before it cools. As a result, they are broad and low, with gentle slopes. Composite volcanoes, by contrast, are formed from thicker, stickier lava. They are tall and steep, and they tend to produce far more violent eruptions.
+
+That brings me to hazards. When a large volcano erupts, it can throw enormous clouds of ash high into the atmosphere. This ash can travel great distances on the wind, and it's a serious problem for aviation, since it can ground aircraft across whole continents. But the deadliest hazard of all is what's called a pyroclastic flow — a fast-moving avalanche of superheated gas and rock that races down the slopes, destroying everything in its path.
+
+Despite these dangers, people continue to live near volcanoes, and there are good reasons why. For one thing, volcanic regions often have extremely fertile soil, which is excellent for growing crops. For another, the heat below the surface can be tapped to generate geothermal energy, providing clean electricity for nearby communities.
+
+Finally, a word on monitoring. Because eruptions are so dangerous, scientists watch active volcanoes closely. Sensitive instruments record tiny earthquakes beneath the ground, which often increase in the days before an eruption. By studying these signals, together with changes in the shape of the volcano, scientists can increasingly predict eruptions — and that early warning can save thousands of lives.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'VOLCANOES',
+          template: `Formation
+• Most volcanoes form at the boundaries of tectonic {{31}}.
+• Molten rock that reaches the surface is known as {{32}}.
+
+Types
+• Shield volcanoes are broad and low, with gentle {{33}}.
+• Composite volcanoes produce far more violent {{34}}.
+
+Hazards
+• Clouds of {{35}} can travel great distances and ground aircraft.
+• The deadliest hazard is a pyroclastic {{36}} of hot gas and rock.
+
+Benefits
+• Volcanic regions often have very {{37}} soil for crops.
+• The heat below the surface provides geothermal {{38}}.
+
+Monitoring
+• Instruments record tiny {{39}} before an eruption.
+• Good monitoring allows scientists to {{40}} eruptions.`,
+          blanks: [
+            { num: 31, answers: ['plates', 'plate'], maxWords: 1 },
+            { num: 32, answers: ['lava'], maxWords: 1 },
+            { num: 33, answers: ['slopes', 'slope'], maxWords: 1 },
+            { num: 34, answers: ['eruptions', 'eruption'], maxWords: 1 },
+            { num: 35, answers: ['ash'], maxWords: 1 },
+            { num: 36, answers: ['flow'], maxWords: 1 },
+            { num: 37, answers: ['fertile'], maxWords: 1 },
+            { num: 38, answers: ['energy'], maxWords: 1 },
+            { num: 39, answers: ['earthquakes', 'earthquake'], maxWords: 1 },
+            { num: 40, answers: ['predict'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
 
     {
       part: 5, skill: 'reading',

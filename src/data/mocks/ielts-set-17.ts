@@ -5,16 +5,362 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 17',
   subtitle: 'Ocean Acidification · History of Cinema · Behavioural Economics',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-17.mp3',
+      title: 'Listening — Section 1: Booking a Home Repair',
+      instructions: 'You will hear a telephone conversation between a customer and a home-repair booking agent. Listen and answer Questions 1–10.',
+      transcript: `AGENT: Good afternoon, Hartley Home Repairs. How can I help you today?
+
+CUSTOMER: Hello. I'd like to arrange for someone to come and fix a few things at my house.
+
+AGENT: Of course, I can help with that. Can I take your name, please?
+
+CUSTOMER: Yes, it's David Whitfield.
+
+AGENT: And could you spell your surname for me?
+
+CUSTOMER: Certainly. It's W-H-I-T-F-I-E-L-D.
+
+AGENT: Thank you, Mr Whitfield. And what's your address?
+
+CUSTOMER: It's 15 Maple Avenue.
+
+AGENT: Maple Avenue, got it. And the postcode?
+
+CUSTOMER: It's LS9 4RT.
+
+AGENT: Lovely. And what's the best number to reach you on?
+
+CUSTOMER: My mobile is 078 4419 2036.
+
+AGENT: And when's the best time for us to call you, if we need to?
+
+CUSTOMER: In the evenings, please. I'm at work all day.
+
+AGENT: Noted — evenings. Now, could you describe the problems for me?
+
+CUSTOMER: Well, the main thing is a leak. There's water coming in from the roof whenever it rains heavily.
+
+AGENT: A leak from the roof — I'll make a note of that. Anything else?
+
+CUSTOMER: Yes, there's also a broken fence in the back garden that needs repairing.
+
+AGENT: A broken fence. And when would suit you for our visit?
+
+CUSTOMER: I'd prefer the morning — oh, actually, no. Make it the afternoon. I have to take the children to school first.
+
+AGENT: The afternoon it is. And how will our technician get in if you're not at home?
+
+CUSTOMER: I'll leave a spare key with a neighbour. They're always in.
+
+AGENT: Perfect. Now let me tell you about our two maintenance plans. The basic plan includes two visits a year, with a call-out fee of £45 each time, but it does include free parts.
+
+CUSTOMER: And the other one?
+
+AGENT: The premium plan gives you four visits a year. With that plan the call-out fee drops to £30, and it also includes free labour.
+
+CUSTOMER: The premium sounds better. I'll go with that one.
+
+AGENT: Excellent choice, Mr Whitfield. I'll get that booked in for you.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Home Repair Booking',
+          example: 'Name:  David Whitfield',
+          template: `Address: 15 {{1}} Avenue
+Postcode: LS9 4RT
+Phone: (mobile) 078 4419 2036
+Best time to call: {{2}}
+
+Problem details
+• Main problem: a leak coming from the {{3}}
+• Also needs to repair a broken {{4}} in the back garden
+• Prefers an appointment in the {{5}}, not the morning
+• Will leave a spare key with a {{6}}`,
+          blanks: [
+            { num: 1, answers: ['Maple', 'maple'], maxWords: 1 },
+            { num: 2, answers: ['evenings', 'evening'], maxWords: 1 },
+            { num: 3, answers: ['roof'], maxWords: 1 },
+            { num: 4, answers: ['fence'], maxWords: 1 },
+            { num: 5, answers: ['afternoon'], maxWords: 1 },
+            { num: 6, answers: ['neighbour', 'neighbor'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Plan', 'Visits per year', 'Call-out fee', 'Includes'],
+          rows: [
+            [
+              'Basic plan',
+              { num: 7, answers: ['two', '2'], maxWords: 1 },
+              '£45',
+              { num: 8, answers: ['parts', 'part'], maxWords: 1 },
+            ],
+            [
+              'Premium plan',
+              '4',
+              { num: 9, answers: ['30', '£30'], maxWords: 1 },
+              { num: 10, answers: ['labour', 'labor'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-17.mp3',
+      title: 'Listening — Section 2: Art Gallery Guided Tour',
+      instructions: 'You will hear a guide talking to visitors at the start of an art gallery tour. Listen and answer Questions 11–20.',
+      transcript: `Good morning everyone, and welcome to the Riverside Art Gallery. My name's Karen, and I'll be your guide this morning. Before we begin, let me tell you about a few improvements we've made recently. The most exciting addition is our new rooftop café, which opened last month and has wonderful views over the river. We've also created a brand-new workshop room for children on the second floor, where families can take part in hands-on activities. Now, some of you have asked about the gift shop and the members' lounge — those have been here for years — and our audio guide app, I'm afraid, is still being developed and isn't available yet.
+
+Right, let me explain how the tour works. The tour lasts about 90 minutes, and we'll finish back here at the main entrance. Please note that photography is allowed, but only without flash, as bright light can damage the older paintings. If you'd like to leave your bags, there are free lockers next to the cloakroom.
+
+We'll start in the East Wing, which houses the gallery's collection of landscape paintings. The highlight there is a work called 'The Harvest', which the gallery bought at auction in 2019 for a record price. From there, we move to the sculpture garden, where I'd ask you to please stay on the path, as the grass has just been reseeded.
+
+After the sculpture garden, we visit the portrait gallery on the first floor. Many of these portraits were donated by a local collector whose family owned the building in the nineteenth century. The final room on the tour is the print room, which is kept quite dark to protect the delicate drawings.
+
+At the end of the tour, you're welcome to relax in the café, and don't forget that gallery members receive a ten percent discount in the shop. If you have any questions along the way, please feel free to ask me at any time. Now, if you'd all like to follow me, we'll make our way to the East Wing.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO new features have recently been added to the gallery?',
+          options: [
+            { letter: 'A', text: 'a rooftop café' },
+            { letter: 'B', text: 'a gift shop' },
+            { letter: 'C', text: 'an audio guide app' },
+            { letter: 'D', text: 'a workshop room for children' },
+            { letter: 'E', text: 'a members lounge' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Art Gallery Guided Tour',
+          template: `Tour information
+
+• The tour lasts about {{13}} minutes and ends at the main entrance.
+• Photography is allowed, but only without a {{14}}.
+• Free {{15}} are available next to the cloakroom for bags.
+
+On the tour
+
+• The East Wing holds the collection of {{16}} paintings.
+• The painting 'The Harvest' was bought at {{17}} in 2019.
+• In the sculpture garden, visitors must stay on the {{18}}.
+• The portraits were {{19}} by a local collector.
+• Gallery members receive a ten percent {{20}} in the shop.`,
+          blanks: [
+            { num: 13, answers: ['90', 'ninety'], maxWords: 2 },
+            { num: 14, answers: ['flash'], maxWords: 2 },
+            { num: 15, answers: ['lockers', 'locker'], maxWords: 2 },
+            { num: 16, answers: ['landscape'], maxWords: 2 },
+            { num: 17, answers: ['auction'], maxWords: 2 },
+            { num: 18, answers: ['path'], maxWords: 2 },
+            { num: 19, answers: ['donated'], maxWords: 2 },
+            { num: 20, answers: ['discount'], maxWords: 2 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-17.mp3',
+      title: 'Listening — Section 3: Sports-Science Study Discussion',
+      instructions: 'You will hear a tutor talking to two students about a sports-science study. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: So, Amy and Josh, thanks for coming in. I've read your draft proposal for the sports-science study. Perhaps you could start by reminding me what you're actually trying to find out.
+
+AMY: Well, originally we wanted to look at how diet affects sprinting speed, but we decided that was too broad. So now we're focusing specifically on how the amount of sleep athletes get affects their reaction times.
+
+TUTOR: Good — that's a much sharper focus. And who are your participants?
+
+JOSH: We're recruiting university students, but only ones who already play sport competitively. We thought about using complete beginners, but their results would be too inconsistent.
+
+TUTOR: Sensible. Now, how exactly are you measuring reaction time?
+
+AMY: We're using a light-based test. A light flashes and the participant presses a button as quickly as they can. The software records the delay in milliseconds.
+
+TUTOR: And have you run into any difficulties yet?
+
+JOSH: The main problem has been getting participants to attend at the same time each day. Reaction times vary depending on the time of day, so if people come at different hours, that adds noise to the data.
+
+TUTOR: That's a really important point. Consistency of timing matters enormously. So what have your early results shown?
+
+AMY: This is the surprising bit. We expected that less sleep would always mean slower reactions, but actually, for the fittest participants, one bad night didn't seem to affect them much at all. It seems fitness might protect against short-term sleep loss.
+
+TUTOR: Fascinating. That's genuinely worth exploring. Now, in terms of next steps, I'd strongly recommend increasing your sample size — twenty participants really isn't enough to draw firm conclusions.
+
+JOSH: We were worried about that.
+
+TUTOR: Also, you should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing — the committee meets next Tuesday.
+
+AMY: Thank you, that's really helpful.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'What are the students now trying to find out?',
+          options: [
+            'how diet affects sprinting speed',
+            'how sleep affects reaction times',
+            'how exercise affects sleep quality',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'Who takes part in the study as participants?',
+          options: [
+            'complete beginners at sport',
+            'university students who compete in sport',
+            'professional athletes',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'What has been the main problem so far?',
+          options: [
+            'getting participants to attend at the same time each day',
+            'faulty software recording the wrong times',
+            'finding enough volunteers',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'What did the early results surprisingly suggest?',
+          options: [
+            'less sleep always slows reaction times',
+            'fitness may protect against short-term sleep loss',
+            'beginners react faster than expected',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'What does the tutor say must be done before testing begins?',
+          options: [
+            'increasing the sample size',
+            'buying new equipment',
+            'getting ethical approval',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `The tutor's suggestions
+
+• The students should increase the {{26}} size.
+• They should keep a log of each participant's {{27}} intake.
+• They should add a short {{28}} about sleep patterns.
+• They must obtain {{29}} approval before testing.
+• The relevant committee meets next {{30}}.`,
+          blanks: [
+            { num: 26, answers: ['sample'], maxWords: 1 },
+            { num: 27, answers: ['caffeine'], maxWords: 1 },
+            { num: 28, answers: ['questionnaire'], maxWords: 1 },
+            { num: 29, answers: ['ethical'], maxWords: 1 },
+            { num: 30, answers: ['Tuesday'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-17.mp3',
+      title: 'Listening — Section 4: The Printing Press',
+      instructions: 'You will hear a lecture about the history of the printing press. Listen and answer Questions 31–40.',
+      transcript: `Today I'm going to talk about one of the most influential inventions in human history: the printing press. Although we often credit Johannes Gutenberg with inventing printing in the fifteenth century, forms of printing existed long before him. In China, printers were using carved wooden blocks to reproduce texts as early as the seventh century. The Chinese also experimented with movable type made from clay, but because the Chinese writing system uses thousands of different characters, the method never became widely practical there.
+
+Gutenberg's crucial innovation, developed in the German city of Mainz around 1440, was movable type made from metal. He created a special alloy that was durable enough to be reused thousands of times, and he designed a mould that allowed individual letters to be produced quickly and in large quantities. He also adapted the design of the wine press, which was already common in the region, to apply even pressure to the paper.
+
+Another essential element was ink. Gutenberg developed a new oil-based ink that stuck properly to the metal type — earlier water-based inks simply slid off. His most famous product was a printed Bible, completed around 1455, which is admired even today for the beauty of its printing.
+
+The consequences of the printing press were enormous. Before printing, books were copied by hand, usually by monks, which made them extremely expensive and rare. After Gutenberg, the price of books fell dramatically, and literacy began to spread among ordinary people. Ideas could now travel faster than ever before. Historians often argue that the printing press made the religious movement known as the Reformation possible, because pamphlets could be produced and distributed on a massive scale.
+
+The press also had a profound effect on science. Accurate diagrams could be reproduced identically in every copy of a book, which helped scholars across Europe share knowledge reliably. Some historians claim that without the printing press, the Scientific Revolution could not have happened. By the year 1500, presses across Europe had already produced millions of books, transforming society permanently.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE PRINTING PRESS',
+          template: `Printing before Gutenberg
+
+• In China, wooden blocks were used to print texts as early as the {{31}} century.
+• The Chinese also made movable type from {{32}}.
+• Their method was impractical because the writing system has thousands of {{33}}.
+
+Gutenberg's innovations
+
+• Gutenberg worked in the German city of {{34}} around 1440.
+• He produced movable type made from {{35}}.
+• He created a special {{36}} that could be reused thousands of times.
+• He developed a new oil-based {{37}} that stuck to the metal type.
+
+The impact of printing
+
+• Before printing, books were copied by hand, usually by {{38}}.
+• The press is said to have made the religious movement called the {{39}} possible.
+• In science, accurate {{40}} could be reproduced identically in every copy.`,
+          blanks: [
+            { num: 31, answers: ['seventh', '7th'], maxWords: 1 },
+            { num: 32, answers: ['clay'], maxWords: 1 },
+            { num: 33, answers: ['characters', 'character'], maxWords: 1 },
+            { num: 34, answers: ['Mainz'], maxWords: 1 },
+            { num: 35, answers: ['metal'], maxWords: 1 },
+            { num: 36, answers: ['alloy'], maxWords: 1 },
+            { num: 37, answers: ['ink'], maxWords: 1 },
+            { num: 38, answers: ['monks', 'monk'], maxWords: 1 },
+            { num: 39, answers: ['Reformation'], maxWords: 1 },
+            { num: 40, answers: ['diagrams', 'diagram'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {

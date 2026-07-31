@@ -5,16 +5,353 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 14',
   subtitle: 'AI Ethics · Rainforest Biodiversity · The History of Money',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-14.mp3',
+      title: 'Listening — Section 1: Booking a wedding venue',
+      instructions: 'You will hear a conversation between a wedding venue coordinator and a customer. Listen and answer Questions 1–10.',
+      transcript: `COORDINATOR: Good morning, Oakwood Manor events team, Sophie speaking. How can I help?
+
+CUSTOMER: Hi. I'm hoping to book your venue for my wedding next year.
+
+COORDINATOR: Congratulations! Let me take a few details. Could I have your name?
+
+CUSTOMER: Yes, it's Helen Brightwell.
+
+COORDINATOR: Could you spell the surname for me?
+
+CUSTOMER: Sure — it's B-R-I-G-H-T-W-E-L-L.
+
+COORDINATOR: Thank you. And the best number to reach you on?
+
+CUSTOMER: My mobile is 078 2245 3390.
+
+COORDINATOR: Lovely. And do you have a date in mind?
+
+CUSTOMER: We were set on a Saturday. We originally wanted May, but in the end we've chosen June.
+
+COORDINATOR: June is very popular, so it's good you're booking early. How many guests are you expecting?
+
+CUSTOMER: Around 140.
+
+COORDINATOR: That's fine — our main hall holds up to two hundred. Now, which part of the manor would you like for the ceremony itself?
+
+CUSTOMER: I think the garden, as long as the weather's kind.
+
+COORDINATOR: A garden ceremony is beautiful, and we provide a marquee as a backup. Is there anything special you'd like for the meal?
+
+CUSTOMER: One thing that really matters is that we'll need a vegetarian option for a lot of our guests.
+
+COORDINATOR: No problem at all — our chef offers several. And will you need accommodation?
+
+CUSTOMER: Mainly for the couple, so just the bridal suite for the first night.
+
+COORDINATOR: I'll pencil that in. Now let me run through our two packages. The Classic package is £75 per guest and includes a three-course meal and all the table decorations. The Deluxe package is £95 per guest; on top of the meal, it also includes a professional photographer and an evening buffet.
+
+CUSTOMER: And what about a deposit?
+
+COORDINATOR: For either package we ask for £500 to secure the date, with the balance due one month before the wedding.
+
+CUSTOMER: That all sounds perfect. Thank you.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Oakwood Manor — Wedding Booking',
+          example: 'Event:  wedding reception',
+          template: `Name: Helen {{1}}
+Telephone (mobile): 078 2245 3390
+
+Preferred month: {{2}}
+Number of guests: about {{3}}
+Ceremony to be held in the {{4}}
+Special meal request: {{5}} option needed
+Accommodation: book the bridal {{6}}`,
+          blanks: [
+            { num: 1, answers: ['Brightwell', 'brightwell'], maxWords: 1 },
+            { num: 2, answers: ['June', 'june'], maxWords: 1 },
+            { num: 3, answers: ['140'], maxWords: 1 },
+            { num: 4, answers: ['garden'], maxWords: 1 },
+            { num: 5, answers: ['vegetarian'], maxWords: 1 },
+            { num: 6, answers: ['suite'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Package', 'Price per guest', 'Main extra included', 'Evening food'],
+          rows: [
+            [
+              'Classic',
+              { num: 7, answers: ['75', '£75'], maxWords: 1 },
+              { num: 8, answers: ['decorations', 'decoration'], maxWords: 1 },
+              'none',
+            ],
+            [
+              'Deluxe',
+              '£95',
+              { num: 9, answers: ['photographer'], maxWords: 1 },
+              { num: 10, answers: ['buffet'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-14.mp3',
+      title: 'Listening — Section 2: Charity fun-run briefing',
+      instructions: 'You will hear an organiser briefing participants before a charity fun run. Listen and answer Questions 11–20.',
+      transcript: `Right, everyone, thank you for coming to this briefing for Saturday's Riverside Charity Fun Run. I'm Tom, the event organiser, and I'll run through the key details so the day goes smoothly.
+
+First, what you'll receive. Every participant who registers will be given a bright orange race T-shirt — please do wear it on the day, as it helps our marshals identify runners. Everyone who crosses the finish line will also receive a finisher's medal. Now, a few things that are not automatically provided: the route map is on our website for you to download, energy bars will only be handed out to those doing the longer ten-kilometre route, and a timing chip is issued only to runners in the competitive race, not the fun run.
+
+Now, the practical details. The run starts at nine thirty in the morning, so please arrive in good time to collect your number. The starting point is the main gate of Victoria Park — not the car park, as some older leaflets wrongly stated. The route follows the river for most of the way and is completely flat, which makes it ideal for beginners. There is one water station, roughly halfway round, where you can also leave any spare clothing.
+
+A word on safety. The whole route is clearly marked with yellow arrows, and first-aid volunteers are stationed every kilometre. If you feel unwell, stop and wait for a marshal — please don't try to carry on. Dogs, unfortunately, are not allowed this year, for insurance reasons.
+
+On fundraising: all the money we raise this year will go towards a new children's playground in the town. The easiest way to collect donations is through your online sponsorship page. And finally, parking. The park's own car park will be closed for the event, so please use the free parking at the nearby shopping centre and walk across. Thanks again, and let's hope for some sunshine.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO items will every participant in the fun run receive?',
+          options: [
+            { letter: 'A', text: 'a race T-shirt' },
+            { letter: 'B', text: 'a finisher\'s medal' },
+            { letter: 'C', text: 'energy bars' },
+            { letter: 'D', text: 'a printed route map' },
+            { letter: 'E', text: 'a timing chip' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'B'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Riverside Charity Fun Run — key details',
+          template: `Before and during the run
+
+• The run starts at {{13}} in the morning.
+• The starting point is the main {{14}} of Victoria Park.
+• The route follows the {{15}} for most of the way.
+• The route is completely {{16}}, so it is ideal for beginners.
+• There is one {{17}} roughly halfway round.
+
+Safety and other information
+
+• The route is marked with yellow {{18}}.
+• The money raised will pay for a new children's {{19}}.
+• Participants should park at the nearby {{20}}.`,
+          blanks: [
+            { num: 13, answers: ['nine thirty', '9.30', '9:30'], maxWords: 2 },
+            { num: 14, answers: ['gate'], maxWords: 1 },
+            { num: 15, answers: ['river'], maxWords: 1 },
+            { num: 16, answers: ['flat'], maxWords: 1 },
+            { num: 17, answers: ['water station'], maxWords: 2 },
+            { num: 18, answers: ['arrows', 'arrow'], maxWords: 1 },
+            { num: 19, answers: ['playground'], maxWords: 1 },
+            { num: 20, answers: ['shopping centre', 'shopping center'], maxWords: 2 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-14.mp3',
+      title: 'Listening — Section 3: Geology fieldwork plan',
+      instructions: 'You will hear a tutor and two students planning a geology fieldwork trip. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: So, let's finalise the plan for next month's geology fieldwork. Ben, remind us where we're going.
+
+BEN: We're heading to the coast at Kilve, where the cliffs have exposed clear layers of sedimentary rock.
+
+TUTOR: Good. And what's the main aim of the trip, Priya?
+
+PRIYA: Originally we said collecting fossils, but actually our main goal is to measure and record the different rock layers — the sequence, basically.
+
+TUTOR: Exactly — recording the sequence is the priority. Now, how are we getting there?
+
+BEN: We looked at taking the train, but in the end the department minibus works out cheaper for the whole group.
+
+TUTOR: Sensible. It also means we can carry all the equipment. Speaking of which, Priya, what's the situation there?
+
+PRIYA: Most of it's ready, but we're short of hand lenses — there are only four for twelve students, so people will have to share.
+
+TUTOR: I'll ask the store to lend us a few more. Now, safety. This is a coastal site, so what's the main risk?
+
+BEN: The tide, definitely. If we're not careful we could get cut off, so we must check the tide times before we go down onto the beach.
+
+TUTOR: Absolutely — the tide is our number-one hazard. Right, a few things for everyone to prepare. First, each of you must bring sturdy boots, because the rocks are very slippery. Second, don't forget a waterproof, as the weather there changes fast. Third, everyone needs to complete the risk form and hand it in to me by Friday. I'll bring the first-aid kit and a spare hammer. Oh, and please label every rock sample you collect with its exact location — an unlabelled sample is useless for the report.
+
+PRIYA: Should we bring cameras as well?
+
+TUTOR: Your phones are fine for photographs — just make sure they're fully charged.
+
+BEN: Great, thanks.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'The fieldwork will take place at',
+          options: [
+            'a river valley',
+            'a coastal cliff site',
+            'a disused quarry',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'The main aim of the trip is to',
+          options: [
+            'collect fossils',
+            'record the rock layers',
+            'take water samples',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'The group will travel to the site by',
+          options: [
+            'train',
+            'minibus',
+            'coach',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'There are not enough',
+          options: [
+            'hand lenses',
+            'safety helmets',
+            'notebooks',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'At the site, the main safety risk is',
+          options: [
+            'falling rocks',
+            'the incoming tide',
+            'slippery paths',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `Each student must:
+• bring sturdy {{26}}, because the rocks are slippery
+• bring a {{27}} in case the weather changes
+• complete the risk {{28}} and hand it in by Friday
+• label every rock {{29}} with its exact location
+• make sure their {{30}} are charged for taking photographs`,
+          blanks: [
+            { num: 26, answers: ['boots', 'boot'], maxWords: 1 },
+            { num: 27, answers: ['waterproof'], maxWords: 1 },
+            { num: 28, answers: ['form'], maxWords: 1 },
+            { num: 29, answers: ['sample'], maxWords: 1 },
+            { num: 30, answers: ['phones', 'phone'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-14.mp3',
+      title: 'Listening — Section 4: The history of paper money',
+      instructions: 'You will hear a lecture about the history of paper money. Listen and answer Questions 31–40.',
+      transcript: `Good afternoon. In today's lecture I'll trace the history of paper money, from its origins in China right through to the plastic notes of the present day.
+
+The story begins in China, more than a thousand years ago. Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty they began leaving their coins with trusted agents, who issued them a paper receipt in exchange. This early paper money was nicknamed "flying money", because a strong wind could easily blow it out of your hands.
+
+By the following dynasty, the government itself had taken over the printing of the notes, and paper money became official currency. The idea took a very long time to reach Europe. When the traveller Marco Polo returned home and described it, many readers simply did not believe him.
+
+Europe's first proper banknotes were issued in Sweden in the seventeenth century. Unfortunately, the bank printed far too many, and the notes quickly lost their value — an early lesson in the danger of inflation. For the next two centuries, most banknotes were backed by gold: in theory, a note could always be exchanged at the bank for a fixed weight of the metal.
+
+That link to gold was finally broken in the twentieth century. Since then, paper money has been what economists call "fiat" currency, meaning that its value rests entirely on public trust rather than on any precious metal.
+
+Producing notes that are hard to copy has always been a challenge. Modern notes use a range of security features, such as a watermark, a metallic thread running through the paper, and ink that changes colour when the note is tilted.
+
+Most recently, several countries have replaced paper with a thin, flexible plastic, usually a material called polymer. These notes last far longer, survive being washed, and are much harder to forge. Some economists predict that, as digital payments spread, physical cash may one day disappear altogether — but for now, the banknote in your pocket remains a remarkable piece of technology.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE HISTORY OF PAPER MONEY',
+          template: `Origins in China
+
+• Paper money first appeared in {{31}}, over a thousand years ago.
+• Merchants were tired of carrying heavy strings of {{32}} coins.
+• Agents issued a paper {{33}} in exchange for the coins.
+• The early notes were nicknamed "{{34}} money".
+
+Spread to Europe
+
+• When Marco Polo described it, many readers did not {{35}} him.
+• Europe's first banknotes were issued in {{36}}.
+• Printing too many notes led to the danger of {{37}}.
+• For two centuries, notes were backed by {{38}}.
+
+The modern note
+
+• Today paper money is called {{39}} currency.
+• Modern plastic notes are made from a material called {{40}}.`,
+          blanks: [
+            { num: 31, answers: ['China', 'china'], maxWords: 1 },
+            { num: 32, answers: ['copper'], maxWords: 1 },
+            { num: 33, answers: ['receipt'], maxWords: 1 },
+            { num: 34, answers: ['flying'], maxWords: 1 },
+            { num: 35, answers: ['believe'], maxWords: 1 },
+            { num: 36, answers: ['Sweden', 'sweden'], maxWords: 1 },
+            { num: 37, answers: ['inflation'], maxWords: 1 },
+            { num: 38, answers: ['gold'], maxWords: 1 },
+            { num: 39, answers: ['fiat'], maxWords: 1 },
+            { num: 40, answers: ['polymer'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {

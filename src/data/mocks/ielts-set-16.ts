@@ -5,16 +5,369 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 16',
   subtitle: 'Renewable Energy · Child Cognitive Development · Globalisation',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-16.mp3',
+      title: 'Listening — Section 1: Registering Children for a Summer Camp',
+      instructions: 'You will hear a telephone conversation between a parent and an officer at a summer camp. Listen and answer Questions 1–10.',
+      transcript: `OFFICER: Good morning, Sunnyside Summer Camp. How can I help?
+
+PARENT: Hi there. I'd like to register my children for one of your summer camps.
+
+OFFICER: Wonderful. Let me take a few details. Could I have your name?
+
+PARENT: Yes, my first name's Michael.
+
+OFFICER: And your surname?
+
+PARENT: It's Fletcher — shall I spell that? F-L-E-T-C-H-E-R.
+
+OFFICER: Perfect, thank you. And the best number to reach you on?
+
+PARENT: My mobile is 07700 900642.
+
+OFFICER: Let me just repeat that — 07700 900642.
+
+PARENT: That's the one.
+
+OFFICER: Great. And how many children are you registering today?
+
+PARENT: I was going to bring three, but my eldest has other plans now, so just 2.
+
+OFFICER: No problem, 2 children. Now, we run several kinds of camp. Were you interested in the sports camp?
+
+PARENT: I looked at that, but I think they'd both prefer the adventure camp — they love being outdoors.
+
+OFFICER: A popular choice. The camp runs every weekday, starting at 9 am and finishing at 4 pm.
+
+PARENT: That works well for us.
+
+OFFICER: Now, a few things to remember. Children should bring a packed lunch each day, as we don't provide meals. And because they'll be outside a lot, please make sure they've applied sunscreen before they arrive.
+
+PARENT: Understood. And what does it cost?
+
+OFFICER: It depends on their ages. Our Juniors programme is for children aged 6 and over, and that's £90 per week. Juniors also each receive a free cap to wear on trips.
+
+PARENT: And for older children?
+
+OFFICER: That would be our Explorers programme. The minimum age for that is 9, and it's a little more — £120 a week, because it includes more excursions. Explorers are given a free backpack instead of a cap.
+
+PARENT: Right. My two are 8 and 11, so I suppose that's one in each.
+
+OFFICER: Exactly. I'll set that up for you now.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Summer camp registration',
+          example: 'First name:  Michael',
+          template: `Surname: {{1}}
+Contact number: 07700 900642
+Number of children: {{2}}
+Type of camp: {{3}} camp
+Each day finishes at: {{4}} pm
+Children must bring a packed {{5}}
+Children must apply {{6}} before arriving`,
+          blanks: [
+            { num: 1, answers: ['Fletcher'], maxWords: 1 },
+            { num: 2, answers: ['2', 'two'], maxWords: 1 },
+            { num: 3, answers: ['adventure'], maxWords: 1 },
+            { num: 4, answers: ['4', '4pm'], maxWords: 1 },
+            { num: 5, answers: ['lunch'], maxWords: 1 },
+            { num: 6, answers: ['sunscreen'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Programme', 'Minimum age', 'Weekly price', 'Free item'],
+          rows: [
+            [
+              'Juniors',
+              '6',
+              { num: 7, answers: ['90', '£90'], maxWords: 1 },
+              { num: 8, answers: ['cap'], maxWords: 1 },
+            ],
+            [
+              'Explorers',
+              { num: 9, answers: ['9'], maxWords: 1 },
+              { num: 10, answers: ['120', '£120'], maxWords: 1 },
+              'a backpack',
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-16.mp3',
+      title: 'Listening — Section 2: Recycling Scheme Launch',
+      instructions: 'You will hear a talk launching a new local recycling scheme. Listen and answer Questions 11–20.',
+      transcript: `Good evening, everyone, and thank you for coming to the launch of our town's new recycling scheme. I'm Sarah, from the council's environment team, and I'm here to explain how the scheme will work and what it means for you.
+
+Let me start with the most important change. From next month, every household will receive a brand-new recycling bin. To make it easy to identify, these bins are green, quite different from the black bins we use for general rubbish.
+
+Now, what can go in them? You'll be pleased to hear the list is generous. Glass bottles and jars are fine, as are cardboard and newspapers. However, there are two things we cannot accept. Please do not put plastic bags in the recycling bin — they jam our sorting machines. And, secondly, any container that is still covered in food cannot be recycled either; food-contaminated packaging has to go in the general waste.
+
+As for collections: your green bin will be emptied on a Wednesday. Note that this won't be every week — collections are fortnightly, so once every two weeks. We'll post a calendar through your door showing the exact dates.
+
+The new bins will be delivered to all homes by 30 June, so please look out for yours. If your household is large and you feel you need a bigger bin, you can request one by calling our recycling helpline; the number is on our leaflet.
+
+To encourage everyone to take part, we're running a little competition. Each month, one household that recycles particularly well will win a shopping voucher worth fifty pounds.
+
+Why are we doing all this? Our goal is ambitious but achievable: we aim to reduce the amount of waste sent to landfill by 40 percent within two years.
+
+Finally, for those of you who'd like to recycle food scraps as well, a free kitchen caddy is available from the town hall — just ask at the front desk.
+
+Thank you, and let's make this a success.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO items are NOT allowed in the new recycling bins?',
+          options: [
+            { letter: 'A', text: 'glass bottles' },
+            { letter: 'B', text: 'plastic bags' },
+            { letter: 'C', text: 'cardboard' },
+            { letter: 'D', text: 'containers covered in food' },
+            { letter: 'E', text: 'newspapers' },
+          ],
+          selectCount: 2,
+          answers: ['B', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'New recycling scheme',
+          template: `The new bins
+• Each household receives a new recycling bin, coloured {{13}}.
+
+Collections
+• Bins are emptied on a {{14}}.
+• Collections are {{15}}, not weekly.
+• Bins will be delivered to all homes by {{16}}.
+
+Extra services
+• To request a larger bin, call the recycling {{17}}.
+• Each month a household that recycles well can win a shopping {{18}}.
+
+Goals
+• The scheme aims to cut waste sent to landfill by {{19}} percent.
+• A free kitchen {{20}} is available from the town hall.`,
+          blanks: [
+            { num: 13, answers: ['green'], maxWords: 2 },
+            { num: 14, answers: ['Wednesday'], maxWords: 2 },
+            { num: 15, answers: ['fortnightly', 'every two weeks', 'two weeks'], maxWords: 2 },
+            { num: 16, answers: ['30 June', 'June'], maxWords: 2 },
+            { num: 17, answers: ['helpline', 'recycling helpline'], maxWords: 2 },
+            { num: 18, answers: ['voucher', 'shopping voucher'], maxWords: 2 },
+            { num: 19, answers: ['40', '40%'], maxWords: 2 },
+            { num: 20, answers: ['caddy', 'kitchen caddy'], maxWords: 2 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-16.mp3',
+      title: 'Listening — Section 3: Engineering Prototype Review',
+      instructions: 'You will hear a tutor and two engineering students reviewing a prototype. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Right, Liam, Sophie — let's review your prototype. Talk me through it.
+
+SOPHIE: Of course. Our brief was to design a low-cost water filter for use in rural areas without mains electricity. The main aim was to make it as affordable as possible, so anyone could build one.
+
+TUTOR: That's a genuinely worthwhile goal — millions of people still lack access to clean drinking water, so a cheap, simple solution really does matter.
+
+TUTOR: And what have you built it from?
+
+LIAM: The outer casing is a simple plastic bottle. We did consider using metal, which is more durable, but plastic is far cheaper and lighter, and that fitted our budget better.
+
+TUTOR: Sensible. And the filtering material itself?
+
+SOPHIE: We used layers of sand and charcoal. The charcoal is the key part — it removes impurities and improves the taste of the water.
+
+TUTOR: Good. Now, how did testing go?
+
+LIAM: Mostly well, but we did hit one problem. When we ran dirty water through it quickly, the filter clogged up, and the flow almost stopped. We had to pour the water in much more slowly.
+
+TUTOR: That's useful to know. My main concern, though, isn't the flow rate — it's safety. Your filter removes dirt and improves taste, but it won't kill bacteria. For drinking water, that's a serious gap.
+
+SOPHIE: You're right. We hadn't fully addressed the bacteria issue.
+
+TUTOR: So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water — perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your report so the design is easy to follow.
+
+LIAM: That all makes sense. The disinfection stage is the priority, clearly.
+
+TUTOR: Absolutely. Get that right and it's a strong project.
+
+SOPHIE: Thanks. We'll start work on the next version straight away.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'The main aim of the students\' water filter was to make it',
+          options: [
+            'as affordable as possible',
+            'as durable as possible',
+            'as fast as possible',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'They chose plastic rather than metal for the casing mainly because it is',
+          options: [
+            'more durable',
+            'cheaper and lighter',
+            'easier to find',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'During testing, the main problem was that the filter',
+          options: [
+            'leaked at the joints',
+            'clogged when water was poured quickly',
+            'broke under pressure',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: "The tutor's main concern about the prototype is that it",
+          options: [
+            'does not kill bacteria',
+            'is too expensive',
+            'is too heavy',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'The tutor says the top priority for the next version is to',
+          options: [
+            'reduce the weight',
+            'lower the cost',
+            'add a disinfection stage',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `Suggested improvements for the next version
+• Reduce the {{26}} to make it easier to carry.
+• Lower the {{27}} even further.
+• Add a stage that {{28}} the water.
+• Carry out more {{29}} with different water samples.
+• Include a clear {{30}} in the report.`,
+          blanks: [
+            { num: 26, answers: ['weight'], maxWords: 1 },
+            { num: 27, answers: ['cost'], maxWords: 1 },
+            { num: 28, answers: ['disinfects', 'disinfect'], maxWords: 1 },
+            { num: 29, answers: ['testing', 'tests'], maxWords: 1 },
+            { num: 30, answers: ['diagram'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-16.mp3',
+      title: 'Listening — Section 4: Bird Navigation',
+      instructions: 'You will hear a lecture about how migrating birds navigate. Listen and answer Questions 31–40.',
+      transcript: `Good afternoon. Today we're going to explore one of the great mysteries of the natural world: how migrating birds find their way. Every year, billions of birds travel enormous distances between their breeding and wintering grounds — some species cover more than ten thousand kilometres in a single journey — and yet they arrive with astonishing accuracy. How do they do it?
+
+The answer is that birds rely not on one method but on several, combining them like tools in a navigator's kit.
+
+The first tool is the sky. During the day, many birds orient themselves using the position of the sun, adjusting for the fact that it moves across the sky as the hours pass. At night, other species switch to the stars, using the fixed point around which the night sky appears to rotate to work out which way is north.
+
+Perhaps the most remarkable tool is a kind of internal compass. Birds can sense the Earth's magnetic field, and use it to determine direction even when the sky is hidden by cloud. Exactly how they detect it is still debated, but many researchers now believe the sense is linked to special molecules in the birds' eyes, which may allow them, in effect, to "see" magnetic lines.
+
+Some species add yet another sense to the mix. Seabirds in particular appear to use their sense of smell, building up a kind of odour map of the ocean that helps them relocate distant islands.
+
+Navigation is also partly inherited. Young birds making their very first migration alone are guided by instinct, following a direction and distance encoded in their biology. Older, experienced birds supplement this with memory, recognising landmarks such as coastlines, mountain ranges and large rivers.
+
+Sadly, human activity is making navigation harder. Artificial light at night — what we call light pollution — draws birds off course and causes fatal collisions with buildings.
+
+To understand all this, scientists now fit migrating birds with tiny electronic tags, which record their position and reveal, for the first time, the astonishing routes these travellers take.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'HOW BIRDS NAVIGATE',
+          template: `Introduction
+• Some birds migrate more than ten thousand {{31}} in a single journey.
+
+Using the sky
+• By day, birds use the position of the {{32}}.
+• By night, they use the {{33}} to find north.
+
+An internal compass
+• Birds can sense the Earth's magnetic {{34}}.
+• This sense may be linked to molecules in the birds' {{35}}.
+
+Other methods
+• Some seabirds use their sense of {{36}} to make an odour map.
+• On their first migration, young birds are guided by {{37}}.
+• Experienced birds also recognise {{38}} such as coastlines and rivers.
+
+Threats and research
+• Light {{39}} from cities draws birds off course.
+• Scientists fit birds with tiny electronic {{40}} to track their routes.`,
+          blanks: [
+            { num: 31, answers: ['kilometres', 'kilometers', 'km'], maxWords: 1 },
+            { num: 32, answers: ['sun'], maxWords: 1 },
+            { num: 33, answers: ['stars', 'star'], maxWords: 1 },
+            { num: 34, answers: ['field'], maxWords: 1 },
+            { num: 35, answers: ['eyes', 'eye'], maxWords: 1 },
+            { num: 36, answers: ['smell'], maxWords: 1 },
+            { num: 37, answers: ['instinct'], maxWords: 1 },
+            { num: 38, answers: ['landmarks', 'landmark'], maxWords: 1 },
+            { num: 39, answers: ['pollution'], maxWords: 1 },
+            { num: 40, answers: ['tags', 'tag'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {

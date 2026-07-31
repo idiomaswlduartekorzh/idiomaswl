@@ -5,9 +5,388 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 7',
   subtitle: 'Biomimicry · Blue Zones · Linguistic Relativity',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
-    { part: 1, skill: 'listening', comingSoon: true, title: 'Listening — En Construcción', instructions: 'Esta sección estará disponible próximamente.', questions: [] },
+    // ─── LISTENING ────────────────────────────────────────────────────────────
+
+    {
+      part: 1,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-7.mp3',
+      title: 'Listening — Section 1: Enrolling in an Evening Course',
+      instructions: 'You will hear a conversation between a student and a college registrar. Listen and answer Questions 1–10.',
+      transcript: `REGISTRAR: Good evening, Riverside Adult Education Centre. How can I help you?
+
+STUDENT: Hello. I'd like to enrol in one of your evening courses for the autumn term.
+
+REGISTRAR: Of course. Let me take a few details. Could I start with your name?
+
+STUDENT: Yes, my first name's Helen.
+
+REGISTRAR: Thank you, Helen. And your surname?
+
+STUDENT: It's Whitcombe.
+
+REGISTRAR: Could you spell that for me?
+
+STUDENT: Certainly — it's W-H-I-T-C-O-M-B-E.
+
+REGISTRAR: Whitcombe, got it. And a contact number, in case a class is ever cancelled?
+
+STUDENT: My mobile is 07700 900318.
+
+REGISTRAR: Let me read that back — 07700 900318. And may I ask how you heard about the centre?
+
+STUDENT: Well, a friend recommended it to me — though actually, I first saw a poster in the library.
+
+REGISTRAR: The library, lovely — we advertise there each term. Now, which course were you interested in?
+
+STUDENT: I was originally thinking of the cookery class, but I've made up my mind — I'd like to do photography.
+
+REGISTRAR: Photography, an excellent choice. Is there a particular reason you've chosen it?
+
+STUDENT: Mainly I'm hoping it'll help with my career — I work in marketing and I need to take better images myself.
+
+REGISTRAR: Very sensible. One important thing: for this course, students have to bring their own camera, as the centre doesn't lend them out.
+
+STUDENT: That's no problem — I've already got one.
+
+REGISTRAR: Perfect. Let me give you the practical details, then. The beginners' photography course runs on Tuesday evenings, and it lasts for 10 weeks. The fee for the term is £120, and the classes are held in Room B4.
+
+STUDENT: And is there anything more advanced afterwards?
+
+REGISTRAR: Yes — the follow-up course runs on Thursday evenings. It's a little shorter, only eight weeks, and the fee is slightly lower at £95. That one's in Room B7.
+
+STUDENT: That sounds ideal. I'll sign up for the beginners' course to start with.
+
+REGISTRAR: Wonderful. I'll just print out the enrolment form for you now.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Evening Course Enrolment',
+          example: 'First name:  Helen',
+          template: `Surname: {{1}}
+Contact number: {{2}}
+Heard about the centre from: {{3}}
+Course chosen: {{4}}
+Reason for taking the course: to help with her {{5}}
+Note: students must bring their own {{6}}`,
+          blanks: [
+            { num: 1, answers: ['Whitcombe', 'whitcombe'], maxWords: 1 },
+            { num: 2, answers: ['07700900318', '07700 900318'], maxWords: 1 },
+            { num: 3, answers: ['library'], maxWords: 1 },
+            { num: 4, answers: ['photography'], maxWords: 1 },
+            { num: 5, answers: ['career'], maxWords: 1 },
+            { num: 6, answers: ['camera'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Course', 'Evening', 'Number of weeks', 'Fee', 'Room'],
+          rows: [
+            [
+              'Photography (beginners)',
+              'Tuesday',
+              { num: 7, answers: ['10', 'ten'], maxWords: 1 },
+              { num: 8, answers: ['120', '£120'], maxWords: 1 },
+              'B4',
+            ],
+            [
+              'Photography (advanced)',
+              { num: 9, answers: ['Thursday', 'thursday'], maxWords: 1 },
+              '8 weeks',
+              { num: 10, answers: ['95', '£95'], maxWords: 1 },
+              'B7',
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-7.mp3',
+      title: 'Listening — Section 2: Museum Audio Guide',
+      instructions: 'You will hear part of an audio guide at a maritime museum. Listen and answer Questions 11–20.',
+      transcript: `Welcome to the Harborough Maritime Museum. I'll be your audio guide today, showing you around our collection.
+
+Before we begin, a few practical points. Admission to our main galleries is completely free, so you can explore them at your own pace. Our popular children's activity trail is also free of charge, and I'd recommend it if you're visiting with a family. Do be aware, though, that our guided harbour tour, the temporary exhibition on the top floor, and hire of this audio guide all carry a small charge.
+
+Now, a little about the building itself. The museum is housed in a nineteenth-century warehouse that once stored goods arriving by sea. It's one of the oldest buildings on the waterfront.
+
+Let's start in the entrance hall. The oldest object in our whole collection is displayed here — a ship's bell dating back four hundred years, recovered from a wreck just off the coast.
+
+Moving into the first gallery on your left, you'll find a wonderful collection of detailed models of fishing boats, each one built by local craftsmen over the past century.
+
+The second gallery is devoted to maps. Here you can trace how the coastline around the town has changed over the centuries, as the sea has advanced and retreated.
+
+Upstairs, our most popular exhibit awaits: a complete Victorian diving suit, still in remarkable condition, together with its heavy brass helmet.
+
+In the same room, a short film about the history of the port is shown every hour, and it's well worth twenty minutes of your time.
+
+When you're ready for a break, our café is located just beside the garden at the rear of the building, where you can sit outside in fine weather.
+
+One final reminder: for the safety of the exhibits, please leave any large bags in the cloakroom near the entrance before you go upstairs.
+
+Enjoy your visit, and press the green button whenever you'd like me to continue.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO things at the museum are free of charge for all visitors?',
+          options: [
+            { letter: 'A', text: 'the guided harbour tour' },
+            { letter: 'B', text: 'entry to the main galleries' },
+            { letter: 'C', text: 'the temporary exhibition' },
+            { letter: 'D', text: 'the children\'s activity trail' },
+            { letter: 'E', text: 'hire of the audio guide' },
+          ],
+          selectCount: 2,
+          answers: ['B', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Harborough Maritime Museum',
+          template: `• The museum is housed in a former {{13}}.
+• Entrance hall: a ship's {{14}}, four hundred years old — the oldest object.
+• First gallery: models of {{15}} built by local craftsmen.
+• Map gallery: shows how the {{16}} has changed over the centuries.
+• Most popular exhibit (upstairs): a Victorian {{17}}.
+• A short {{18}} about the port is shown every hour.
+• The café is located beside the {{19}}.
+• Leave large bags in the {{20}} near the entrance.`,
+          blanks: [
+            { num: 13, answers: ['warehouse'], maxWords: 1 },
+            { num: 14, answers: ['bell'], maxWords: 1 },
+            { num: 15, answers: ['fishing boats', 'boats'], maxWords: 2 },
+            { num: 16, answers: ['coastline'], maxWords: 1 },
+            { num: 17, answers: ['diving suit'], maxWords: 2 },
+            { num: 18, answers: ['film'], maxWords: 1 },
+            { num: 19, answers: ['garden'], maxWords: 1 },
+            { num: 20, answers: ['cloakroom'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-7.mp3',
+      title: 'Listening — Section 3: Designing a Psychology Experiment',
+      instructions: 'You will hear two psychology students discussing an experiment with their tutor. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: So, Megan, Ryan — you've settled on a topic for your psychology experiment. Talk me through it.
+
+MEGAN: We want to test whether background music affects how well students concentrate on a reading task.
+
+TUTOR: What made you choose that?
+
+RYAN: We both revise with music on, and we kept arguing about whether it actually helps. We thought we'd find out properly.
+
+TUTOR: A good motivation. So what will you change between your groups — your independent variable?
+
+MEGAN: The type of music. One group reads in silence, one with instrumental music, and one with music that has lyrics.
+
+TUTOR: And how will you measure concentration?
+
+RYAN: We'll give a short comprehension test straight afterwards and count the correct answers.
+
+TUTOR: Fine. Now, your participants — how are you recruiting them?
+
+MEGAN: We were going to test our friends, but you warned us that would bias things, so we'll put up a notice and take whoever volunteers.
+
+TUTOR: Much better. One thing I'd watch — if each person does all three conditions, they'll be more practised by the third one, and that practice effect could distort your data.
+
+RYAN: Good point. Maybe we should use different people for each condition.
+
+TUTOR: Cleaner. And your immediate next step?
+
+MEGAN: We need to write the comprehension questions and get them checked before we start.
+
+TUTOR: Right. A few final details. Where will you run the tests?
+
+RYAN: In a quiet room in the library, away from any noise.
+
+TUTOR: Good. Make sure every passage is the same length, or that becomes another variable. And don't improvise the instructions — read them from a fixed script every time, so each group hears the same thing.
+
+MEGAN: And for the report, we'll show the scores in a bar graph comparing the three groups.
+
+TUTOR: Perfect. One absolute rule: before anyone takes part, you must obtain their written consent. Ethics approval depends on it.
+
+RYAN: The forms are ready.
+
+TUTOR: Then you're in good shape. Send me the questions by Friday.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'Megan and Ryan chose their topic mainly because',
+          options: [
+            'they had read a study that surprised them',
+            'they disagreed about a personal habit',
+            'their tutor suggested it to them',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'The independent variable in their experiment will be',
+          options: [
+            'the type of music played',
+            'the volume of the music',
+            'the length of the reading task',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'To recruit participants, they have finally decided to',
+          options: [
+            'test their own friends',
+            'select students at random from a class list',
+            'invite volunteers through a notice',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'The tutor is mainly concerned that',
+          options: [
+            'the groups will be too small',
+            'participants may improve through practice',
+            'the music may be played too loudly',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'What do the students agree to do next?',
+          options: [
+            'prepare and check their test questions',
+            'run a small pilot study',
+            'book a quiet room',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `• The tests will take place in a quiet {{26}} in the library.
+• Every reading passage will be the same {{27}}.
+• Instructions will be read aloud from a fixed {{28}}.
+• The scores will be presented in a bar {{29}}.
+• Written {{30}} must be obtained from every participant.`,
+          blanks: [
+            { num: 26, answers: ['room'], maxWords: 1 },
+            { num: 27, answers: ['length'], maxWords: 1 },
+            { num: 28, answers: ['script'], maxWords: 1 },
+            { num: 29, answers: ['graph'], maxWords: 1 },
+            { num: 30, answers: ['consent'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-7.mp3',
+      title: 'Listening — Section 4: The Science of Sleep',
+      instructions: 'You will hear a lecture about the science of sleep. Listen and answer Questions 31–40.',
+      transcript: `Good afternoon. Today's lecture is about sleep — something we all do, yet still don't fully understand. We spend roughly a third of our lives asleep, and yet its exact purpose remains one of biology's great puzzles.
+
+Let's begin with what controls sleep. As night falls, the brain releases a hormone called melatonin, which makes us feel drowsy and prepares the body for rest.
+
+Melatonin is governed by our internal body clock, which follows a roughly twenty-four-hour cycle known as the circadian rhythm. This rhythm is reset each day mainly by our exposure to daylight.
+
+Once we're asleep, we pass through two main types of sleep. The first is REM sleep, when the eyes move rapidly and most dreaming occurs; the second is deep sleep, the slow, restorative stage in which the brain waves are at their slowest.
+
+These stages do different jobs. During deep sleep, the body carries out physical repair — this is when it rebuilds muscle and releases growth hormone.
+
+REM sleep, by contrast, seems to be essential for the brain rather than the body. Research shows that it plays a key role in consolidating memory, helping us to retain what we learned during the day.
+
+The consequences of not sleeping enough are serious. Even a few nights of poor sleep can weaken the immune system, leaving us more likely to catch infections.
+
+Sleep loss also has a powerful effect on mood, making people irritable and more prone to anxiety.
+
+Different age groups have different needs. Teenagers, for example, require more sleep than adults, partly because their bodies are still undergoing rapid growth during these years.
+
+Some people struggle to sleep at all. The most common sleep disorder is insomnia, the persistent inability to fall or stay asleep.
+
+Finally, some practical advice. To sleep well, experts recommend keeping a regular bedtime and avoiding caffeine in the evening, as it can stay in the body for many hours.
+
+That concludes our overview; next week we'll look at sleep in the animal kingdom.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE SCIENCE OF SLEEP',
+          template: `What controls sleep
+
+• At night, the brain releases a hormone called {{31}}.
+• The body clock follows a 24-hour cycle called the circadian {{32}}.
+
+Types of sleep
+
+• There are two main types: REM sleep and {{33}} sleep.
+• During deep sleep, the body rebuilds {{34}} and releases growth hormone.
+• REM sleep is important for consolidating {{35}}.
+
+Effects of poor sleep
+
+• A lack of sleep can weaken the immune {{36}}.
+• Sleep loss also has a strong effect on {{37}}.
+• Teenagers need extra sleep partly because of rapid {{38}}.
+
+Advice
+
+• The most common sleep disorder is {{39}}.
+• Experts advise avoiding {{40}} in the evening.`,
+          blanks: [
+            { num: 31, answers: ['melatonin'], maxWords: 1 },
+            { num: 32, answers: ['rhythm'], maxWords: 1 },
+            { num: 33, answers: ['deep'], maxWords: 1 },
+            { num: 34, answers: ['muscle', 'muscles'], maxWords: 1 },
+            { num: 35, answers: ['memory', 'memories'], maxWords: 1 },
+            { num: 36, answers: ['system'], maxWords: 1 },
+            { num: 37, answers: ['mood'], maxWords: 1 },
+            { num: 38, answers: ['growth'], maxWords: 1 },
+            { num: 39, answers: ['insomnia'], maxWords: 1 },
+            { num: 40, answers: ['caffeine'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
 
     {
       part: 5, skill: 'reading',

@@ -5,16 +5,355 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 15',
   subtitle: 'The Science of Sleep · Urbanisation in Asia · Global Food Security',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-15.mp3',
+      title: 'Listening — Section 1: Ordering from a Catering Firm',
+      instructions: 'You will hear a telephone conversation between a customer and an agent at a catering firm. Listen and answer Questions 1–10.',
+      transcript: `AGENT: Good afternoon, Greenfield Catering. How can I help you?
+
+CUSTOMER: Hello. I'd like to arrange catering for an event I'm organising. My first name's Rebecca.
+
+AGENT: Of course. Could I take your surname as well?
+
+CUSTOMER: Yes, it's Hartley — that's H-A-R-T-L-E-Y.
+
+AGENT: Thank you, Ms Hartley. And a contact number in case we need to reach you on the day?
+
+CUSTOMER: It's 07946 218530.
+
+AGENT: Let me read that back to you — 07946 218530.
+
+CUSTOMER: That's exactly right.
+
+AGENT: Now, what sort of event is it? A wedding, perhaps?
+
+CUSTOMER: No, nothing like that. It's a retirement party for my father — he's finishing work after forty years.
+
+AGENT: How lovely. And when is the event taking place?
+
+CUSTOMER: It's on Saturday the fourteenth of September.
+
+AGENT: September — got it. And roughly how many guests are you expecting?
+
+CUSTOMER: Well, I first thought around 50, but a few people can't come now, so let's say 45.
+
+AGENT: 45 it is. And do you have a venue booked already?
+
+CUSTOMER: Yes, we've hired the Maple Hall on the high street.
+
+AGENT: I know it well. Are there any special dietary requirements?
+
+CUSTOMER: Yes — several of the guests don't eat meat, so we'll need some vegetarian options.
+
+AGENT: No problem; we cater for that regularly. Now, let me describe our menus. Our Classic menu offers 3 dishes per person and costs £22 a head, and it includes freshly brewed coffee at the end of the meal.
+
+CUSTOMER: That sounds reasonable. What's the other option?
+
+AGENT: The Deluxe menu has 5 dishes and works out at £35 per person. With that one, we also provide a celebration cake, which would suit a retirement party nicely.
+
+CUSTOMER: Oh, the cake would be perfect. I think we'll choose the Deluxe.
+
+AGENT: Excellent choice. I'll email a written confirmation to you shortly.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Catering order',
+          example: 'First name:  Rebecca',
+          template: `Surname: {{1}}
+Contact number: 07946 218530
+Type of event: {{2}} party
+Date: Saturday 14 {{3}}
+Number of guests: {{4}}
+Venue: the {{5}} Hall
+Dietary requirement: some {{6}} options needed`,
+          blanks: [
+            { num: 1, answers: ['Hartley'], maxWords: 1 },
+            { num: 2, answers: ['retirement'], maxWords: 1 },
+            { num: 3, answers: ['September'], maxWords: 1 },
+            { num: 4, answers: ['45'], maxWords: 1 },
+            { num: 5, answers: ['Maple'], maxWords: 1 },
+            { num: 6, answers: ['vegetarian'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Menu', 'Dishes per person', 'Price per person', 'Also includes'],
+          rows: [
+            [
+              'Classic',
+              { num: 7, answers: ['3'], maxWords: 1 },
+              '£22',
+              { num: 8, answers: ['coffee'], maxWords: 1 },
+            ],
+            [
+              'Deluxe',
+              '5 dishes',
+              { num: 9, answers: ['35', '£35'], maxWords: 1 },
+              { num: 10, answers: ['cake'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-15.mp3',
+      title: 'Listening — Section 2: University Clubs Fair',
+      instructions: 'You will hear a talk given at a university clubs fair. Listen and answer Questions 11–20.',
+      transcript: `Good morning, everyone, and a warm welcome to this year's university clubs fair. My name's Daniel, and I'm the student union's activities officer. Over the next hour I'll take you through what's on offer and how to get involved.
+
+We currently run more than sixty clubs, and I'll highlight a few of the most popular. The debating society is one of our largest, and I'm pleased to say it still has plenty of places available, so you can sign up today. The photography club, sadly, filled up within a week, so it's closed for now. If mountaineering appeals to you, do put your name down, but be aware there's a waiting list at the moment. The chess club, on the other hand, has spaces free and would love more beginners. And the drama society is thriving, though you'll need to attend an audition before you can join.
+
+Now, how do you actually join? For most clubs, you simply add your name to the sheet at the registration desk, which is just behind me near the entrance. Membership isn't expensive — the annual fee used to be £20, but this year we've reduced it to £15. Once you've paid, every new member receives a free welcome pack containing a diary, a badge, and some vouchers.
+
+If you're not sure which club suits you, don't worry. Taster sessions are completely free for the first two weeks of term, so you can try several before committing.
+
+I should also mention our biggest social event. Each year we hold a quiz night, which is enormous fun and open to all members. This year it takes place in the main hall, and tickets go quickly, so book early.
+
+Finally, a couple of practical points. For a full and up-to-date list of every club, please check the noticeboard outside the union office rather than relying on last year's leaflet. And do remember to bring your student card to every session, as you'll need it to sign in.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO clubs currently have places available to join immediately?',
+          options: [
+            { letter: 'A', text: 'the debating society' },
+            { letter: 'B', text: 'the photography club' },
+            { letter: 'C', text: 'the mountaineering club' },
+            { letter: 'D', text: 'the chess club' },
+            { letter: 'E', text: 'the drama society' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'University clubs fair',
+          template: `Joining a club
+• Add your name to the sheet at the {{13}} desk.
+• The annual membership fee is now £{{14}}.
+• Every new member is given a free {{15}}.
+
+Trying clubs out
+• Taster sessions are free for the first {{16}}.
+
+Social events
+• The main social event of the year is the {{17}}.
+• This year it is held in the {{18}}.
+
+Practical points
+• Check the {{19}} for a full list of clubs.
+• Bring your {{20}} to every session.`,
+          blanks: [
+            { num: 13, answers: ['registration'], maxWords: 2 },
+            { num: 14, answers: ['15', '£15'], maxWords: 2 },
+            { num: 15, answers: ['welcome pack', 'pack'], maxWords: 2 },
+            { num: 16, answers: ['two weeks', '2 weeks'], maxWords: 2 },
+            { num: 17, answers: ['quiz night'], maxWords: 2 },
+            { num: 18, answers: ['main hall', 'hall'], maxWords: 2 },
+            { num: 19, answers: ['noticeboard', 'notice board'], maxWords: 2 },
+            { num: 20, answers: ['student card', 'card'], maxWords: 2 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-15.mp3',
+      title: 'Listening — Section 3: Education Survey Design',
+      instructions: 'You will hear a tutor and two students discussing the design of an education survey. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: So, James, Priya — let's talk about the education survey you're designing. Remind me what you're hoping to find out.
+
+PRIYA: Well, originally we wanted to compare different teaching methods, but that felt too broad. So we've narrowed it down to finding out how much time students spend on homework each week.
+
+TUTOR: That's a much more manageable focus. And who are you planning to survey?
+
+JAMES: We considered surveying the whole school, but that's over a thousand students. So we've decided to concentrate on Year 9 only — that's a single year group of about a hundred and twenty.
+
+TUTOR: Sensible. A focused sample is easier to analyse. Now, how will you actually collect the data? Paper questionnaires?
+
+PRIYA: We debated that. Paper is simple, but entering all the responses by hand would take ages. So we're going to use an online form instead — the results come in already digitised.
+
+TUTOR: Good thinking. What worries you most about the design?
+
+JAMES: Honestly, our biggest concern is that students might exaggerate. When you ask people about homework, they tend to overstate how much they do, so the figures may not be reliable.
+
+TUTOR: That's a very real risk with self-reported data. One way to reduce it is to keep the questionnaire anonymous, so students feel no pressure to impress. I'd strongly recommend that.
+
+PRIYA: We hadn't thought of making it anonymous. That's a great idea.
+
+TUTOR: Now, let me suggest a clear process. First, before you send it to everyone, run a small pilot with just a few students to check the questions make sense. Second, once you've collected the responses, you'll need to code the data so it can be analysed statistically. Then look for patterns — for instance, whether older students report more homework. After that, write up your findings, and finally, present your conclusions to the class.
+
+JAMES: That's really helpful. We'll start with the pilot next week.
+
+TUTOR: Excellent. Send me the draft questions first.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'The students have decided that the aim of their survey is to find out',
+          options: [
+            'how different teaching methods compare',
+            'how much time students spend on homework',
+            'which subjects students find most difficult',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'They have decided to survey',
+          options: [
+            'the whole school',
+            'Year 9 only',
+            'a mixture of year groups',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'They will collect the data using',
+          options: [
+            'paper questionnaires',
+            'face-to-face interviews',
+            'an online form',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: "James's main concern about the design is that students may",
+          options: [
+            'exaggerate how much homework they do',
+            'refuse to take part',
+            'misunderstand the questions',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'The tutor recommends that the questionnaire should be',
+          options: [
+            'short',
+            'anonymous',
+            'completed in class',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `Steps in the survey process
+• First, run a small {{26}} with a few students.
+• Then {{27}} the data so it can be analysed statistically.
+• Look for {{28}} in the responses.
+• Write up the {{29}}.
+• Finally, {{30}} the conclusions to the class.`,
+          blanks: [
+            { num: 26, answers: ['pilot'], maxWords: 1 },
+            { num: 27, answers: ['code'], maxWords: 1 },
+            { num: 28, answers: ['patterns', 'pattern'], maxWords: 1 },
+            { num: 29, answers: ['findings'], maxWords: 1 },
+            { num: 30, answers: ['present'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-15.mp3',
+      title: 'Listening — Section 4: Coral Bleaching',
+      instructions: 'You will hear a lecture about coral bleaching. Listen and answer Questions 31–40.',
+      transcript: `Today I'd like to talk about one of the most striking phenomena in marine biology: coral bleaching. To understand it, we first need to understand what coral actually is.
+
+Although a coral reef looks like rock, it is in fact built by colonies of tiny animals called polyps. Each polyp secretes a hard skeleton of calcium carbonate, and over thousands of years these skeletons accumulate to form the vast structures we call reefs.
+
+What makes coral so remarkable is a partnership. Living inside the tissues of each polyp are microscopic algae. Through photosynthesis, these algae provide the coral with food — in fact, up to ninety percent of the coral's energy comes from them. In return, the coral offers the algae shelter. The algae also give the coral its brilliant colour; the reds, greens and browns we associate with healthy reefs come almost entirely from them.
+
+So what is bleaching? Bleaching occurs when the coral becomes stressed and expels the algae living within it. The most common trigger is a rise in sea temperature. Corals are surprisingly sensitive: an increase of just one or two degrees, if it persists for several weeks, is enough to break down the partnership. When the algae are gone, the coral loses its colour and turns a ghostly white — hence the term "bleaching".
+
+It's important to understand that a bleached coral is not yet dead. It is simply under severe stress, and if conditions improve quickly, the algae can return and the coral may recover. But if the stress continues, the coral will starve and die.
+
+Warming water is not the only threat. Pollution from the land, and the rising acidity of the ocean as it absorbs carbon dioxide, both weaken corals further. This matters because reefs support a quarter of all marine species and protect vulnerable coastlines from storms and erosion.
+
+There is, however, hope. Around the world, scientists are now growing young corals in underwater nurseries and replanting them on damaged reefs.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'CORAL BLEACHING',
+          template: `What coral is
+• A reef is built by colonies of tiny animals called {{31}}.
+• Microscopic algae inside each polyp provide the coral with {{32}}.
+• The algae also give the coral its bright {{33}}.
+
+What bleaching is
+• Bleaching is usually triggered by a rise in sea {{34}}.
+• An increase of one or two degrees lasting several {{35}} can cause it.
+• Without the algae, the coral turns {{36}}.
+• A bleached coral is not dead but is under severe {{37}}.
+
+Other threats and importance
+• Pollution and the rising {{38}} of the ocean also harm corals.
+• Reefs protect vulnerable {{39}} from storms and erosion.
+
+Solutions
+• Scientists grow young corals in underwater {{40}} and replant them.`,
+          blanks: [
+            { num: 31, answers: ['polyps', 'polyp'], maxWords: 1 },
+            { num: 32, answers: ['food'], maxWords: 1 },
+            { num: 33, answers: ['colour', 'color'], maxWords: 1 },
+            { num: 34, answers: ['temperature'], maxWords: 1 },
+            { num: 35, answers: ['weeks', 'week'], maxWords: 1 },
+            { num: 36, answers: ['white'], maxWords: 1 },
+            { num: 37, answers: ['stress'], maxWords: 1 },
+            { num: 38, answers: ['acidity'], maxWords: 1 },
+            { num: 39, answers: ['coastlines', 'coastline'], maxWords: 1 },
+            { num: 40, answers: ['nurseries', 'nursery'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {

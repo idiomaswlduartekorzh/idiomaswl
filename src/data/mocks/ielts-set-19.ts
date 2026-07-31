@@ -5,16 +5,360 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 19',
   subtitle: 'Dark Matter · E-commerce Growth · Cultural Heritage',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-19.mp3',
+      title: 'Listening — Section 1: Booking a language exchange',
+      instructions: 'You will hear a conversation between a woman and a language-exchange coordinator. Listen and answer Questions 1–10.',
+      transcript: `COORDINATOR: Good afternoon, City Language Exchange. How can I help you?
+
+CALLER: Hello. I saw your advert online and I'd like to register for a conversation partner.
+
+COORDINATOR: Wonderful, I can set that up for you. First, could I take your name?
+
+CALLER: Yes, it's Helena Fisher.
+
+COORDINATOR: And how do you spell your surname?
+
+CALLER: It's F-I-S-H-E-R.
+
+COORDINATOR: Thank you, Helena. And could I have a phone number for you?
+
+CALLER: My mobile is 07944 218 305.
+
+COORDINATOR: Got it. Now, can I ask what you do for a living? Are you a student?
+
+CALLER: No, I'm a nurse, actually. I work at the city hospital.
+
+COORDINATOR: Lovely. And which language would you like to practise with us?
+
+CALLER: Spanish, please. In return I can help someone with English, which is my first language.
+
+COORDINATOR: Perfect. And how would you describe your current level of Spanish?
+
+CALLER: I'd say intermediate. I studied it at school, but I've forgotten quite a lot.
+
+COORDINATOR: That's no problem at all. Where would you prefer to meet your partner?
+
+CALLER: I was thinking a café would be nice and relaxed. Actually, no — a café gets too noisy. The library would be far better, because it's quiet.
+
+COORDINATOR: The library is a very popular choice. And which day of the week suits you best?
+
+CALLER: Could we make it Thursday? That's my day off.
+
+COORDINATOR: Thursday works well. And is there any particular skill you'd like to concentrate on?
+
+CALLER: Mostly conversation, but I'd really like to improve my pronunciation — that's my weakest area.
+
+COORDINATOR: Noted. Now, let me explain our three membership levels before you decide. The Basic level is completely free, and you simply receive a welcome handbook full of tips. The Standard level costs fifteen pounds a year, and it adds a group meet-up once a month. And our Premium level, at forty pounds a year, gives you a weekly meeting instead, plus access to our online lessons.
+
+CALLER: That's really helpful. I think I'll start with the Standard level.
+
+COORDINATOR: An excellent choice. I'll email you the details today.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Language Exchange Registration',
+          example: 'Name:  Helena Fisher',
+          template: `Phone: (mobile) 07944 218 305
+
+Registration details
+• Occupation: {{1}}
+• Language she wants to practise: {{2}}
+• Current level: {{3}}
+• Preferred place to meet: the {{4}}
+• Preferred day: {{5}}
+• Skill she most wants to improve: {{6}}`,
+          blanks: [
+            { num: 1, answers: ['nurse'], maxWords: 1 },
+            { num: 2, answers: ['Spanish', 'spanish'], maxWords: 1 },
+            { num: 3, answers: ['intermediate'], maxWords: 1 },
+            { num: 4, answers: ['library'], maxWords: 1 },
+            { num: 5, answers: ['Thursday', 'thursday'], maxWords: 1 },
+            { num: 6, answers: ['pronunciation'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Membership', 'Price per year', 'Meetings included', 'Also includes'],
+          rows: [
+            [
+              'Basic',
+              'free',
+              'none',
+              { num: 7, answers: ['handbook'], maxWords: 1 },
+            ],
+            [
+              'Standard',
+              { num: 8, answers: ['15', '£15', 'fifteen'], maxWords: 1 },
+              'monthly',
+              '—',
+            ],
+            [
+              'Premium',
+              '£40',
+              { num: 9, answers: ['weekly'], maxWords: 1 },
+              { num: 10, answers: ['lessons'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-19.mp3',
+      title: 'Listening — Section 2: Science-museum tour',
+      instructions: 'You will hear a guide introducing visitors to a science museum. Listen and answer Questions 11–20.',
+      transcript: `Good morning everyone, and welcome to the Riverside Science Museum. My name's Oliver, and I'll be giving you a quick introduction before you explore on your own.
+
+Let me start with what's changed since your last visit. This year we've opened two brand-new attractions that I'd encourage you all to see. The first is a planetarium on the top floor, where you can lie back and watch the night sky. The second is our outdoor energy garden, where science comes to life in the open air. We've also refurbished the café and updated the gift shop, and of course the ever-popular flight gallery is still here, exactly where it always was.
+
+Now for some practical information. Guided tours of the main galleries leave every forty minutes from the information desk in the entrance hall. Each guided tour lasts about an hour, so do allow enough time. If you're carrying bags, please leave them in the cloakroom on the ground floor, as large rucksacks aren't permitted in the galleries. Lockers are also available, and they cost two pounds.
+
+Photography is welcome throughout the building, but we do ask you to switch off your flash, because it can damage some of the more delicate exhibits.
+
+Let me point out a few highlights. On the ground floor, our star attraction is a giant model heart, which is so big that you can actually walk right through it. Upstairs, in the space gallery, you'll be able to see a genuine piece of moon rock, brought back by astronauts. And outside in the energy garden, you can try generating electricity yourself by pedalling a bicycle.
+
+Finally, don't leave without visiting our temporary exhibition, which this season is all about robots. It runs until the end of August. Members receive a twenty per cent discount in the shop, and children under five come in free. Enjoy your visit, and please ask any of our staff if you need help.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO attractions have been newly opened at the museum this year?',
+          options: [
+            { letter: 'A', text: 'the planetarium' },
+            { letter: 'B', text: 'the café' },
+            { letter: 'C', text: 'the gift shop' },
+            { letter: 'D', text: 'the energy garden' },
+            { letter: 'E', text: 'the flight gallery' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'The Museum Visit',
+          template: `Tours and facilities
+• Guided tours leave every {{13}} from the information desk.
+• Each guided tour lasts about {{14}}.
+• Bags must be left in the {{15}} on the ground floor.
+• Lockers are available and cost {{16}}.
+• When taking photos, visitors must switch off the {{17}}.
+
+Highlights
+• On the ground floor, you can walk through a giant model {{18}}.
+• In the space gallery there is a real piece of {{19}}.
+• The temporary exhibition is about {{20}}.`,
+          blanks: [
+            { num: 13, answers: ['forty minutes', '40 minutes'], maxWords: 2 },
+            { num: 14, answers: ['an hour', 'one hour', 'hour'], maxWords: 2 },
+            { num: 15, answers: ['cloakroom'], maxWords: 1 },
+            { num: 16, answers: ['two pounds', '£2', '2 pounds'], maxWords: 2 },
+            { num: 17, answers: ['flash'], maxWords: 1 },
+            { num: 18, answers: ['heart'], maxWords: 1 },
+            { num: 19, answers: ['moon rock'], maxWords: 2 },
+            { num: 20, answers: ['robots', 'robot'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-19.mp3',
+      title: 'Listening — Section 3: Film-studies project',
+      instructions: 'You will hear a tutor discussing a film-studies project with two students, Maya and Tom. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Come in, Maya and Tom. I've watched the first cut of your film-studies documentary, so let's talk it through.
+
+MAYA: Thanks. As you know, we chose to film the street musicians who perform around the old town.
+
+TUTOR: Yes — remind me why you settled on that particular subject?
+
+MAYA: Well, at first we wanted to interview professional film directors, but we soon realised that would be almost impossible to arrange. Street musicians were far easier to approach, and honestly the topic felt much fresher.
+
+TUTOR: A sensible decision. Now, what was the biggest challenge you faced during filming?
+
+TOM: The lighting actually turned out fine, and the performers were very happy to take part. The real headache was the sound — traffic noise in the background spoiled several of our best takes.
+
+TUTOR: Sound is always difficult outdoors. And what do you feel worked especially well?
+
+MAYA: I'm proudest of the interviews. We let each musician tell their own story, and those personal moments give the film its emotional heart. The camerawork is a little shaky in places, but the interviews really carry it.
+
+TUTOR: I agree — the interviews are your strongest element. Now, my main criticism concerns the length. At twenty-five minutes, it's simply too long for this assignment; you need to bring it down to about fifteen.
+
+TOM: We were worried you'd say that. We'll cut the opening section, which does drag a little.
+
+TUTOR: Good plan. And when you hand it in, remember the film must be uploaded to the department server, not brought in on a memory stick — the files are far too large for that.
+
+MAYA: Understood. What else should we do before we submit?
+
+TUTOR: Let's agree the next steps. First, re-edit the film to reduce its length. Then add subtitles, because a few of the musicians are quite hard to follow. After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public. Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline.
+
+TOM: Great. Thank you so much.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'Why did the students choose street musicians as their subject?',
+          options: [
+            'They had a strong personal interest in music.',
+            'The subject was more accessible than their first idea.',
+            'Their tutor recommended the topic to them.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'What was the main difficulty the students had when filming?',
+          options: [
+            'The lighting was poor.',
+            'Background traffic noise affected the sound.',
+            'The musicians were unwilling to take part.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'Which part of the documentary is Maya most pleased with?',
+          options: [
+            'the camerawork',
+            'the interviews',
+            'the background music',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'What is the tutor\'s main criticism of the documentary?',
+          options: [
+            'It is too long.',
+            'It is poorly organised.',
+            'The sound quality is weak.',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'How must the students submit the finished film?',
+          options: [
+            'on a memory stick',
+            'by email',
+            'by uploading it to the department server',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'Next steps for the project',
+          template: `• Re-edit the film in order to reduce its length.
+• Add {{26}} so that the musicians are easier to follow.
+• Record a short {{27}} to introduce each performer.
+• Obtain written {{28}} from every musician.
+• Send the tutor a rough {{29}} of the film by next Friday.
+• The tutor will provide {{30}} before the final deadline.`,
+          blanks: [
+            { num: 26, answers: ['subtitles', 'subtitle'], maxWords: 1 },
+            { num: 27, answers: ['narration'], maxWords: 1 },
+            { num: 28, answers: ['permission'], maxWords: 1 },
+            { num: 29, answers: ['version'], maxWords: 1 },
+            { num: 30, answers: ['feedback'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-19.mp3',
+      title: 'Listening — Section 4: Renewable energy storage',
+      instructions: 'You will hear a lecture about the storage of renewable energy. Listen and answer Questions 31–40.',
+      transcript: `Good morning. In today's lecture I want to look at one of the greatest challenges in the shift to clean power: how we store energy from renewable sources.
+
+The problem starts with the nature of renewables themselves. Sources such as solar panels and wind farms are intermittent, which means they only generate electricity when the sun is shining or the wind is blowing, and not at other times. Because supply and use rarely match, we need to capture surplus power and release it later, during periods of high demand — for instance, on a cold winter evening when everyone switches on the heating.
+
+So what are the options? The most widespread storage technology today relies on lithium-ion batteries, like those found in phones and electric cars, only on a much larger scale. A much older method is pumped hydro. When there is spare electricity, it is used to pump water uphill into a reservoir. Later, when power is needed, that water is released and flows back down through a turbine, which spins to generate electricity all over again.
+
+There are other clever approaches too. In compressed-air storage, surplus electricity squeezes air into sealed underground caves; when demand rises, the air is let out to drive a generator. And in some solar power plants, mirrors focus the sun's heat to melt salt. The molten salt stays hot for many hours and can later boil water into steam.
+
+Of course, every method has its drawbacks. Batteries, although efficient, remain expensive, and their lifespan is limited, because after a certain number of charges they must be replaced. Worse still, the metals inside them, such as lithium and cobalt, are difficult and sometimes environmentally damaging to mine.
+
+Looking to the future, researchers are pursuing fresh ideas. One is to store spare renewable electricity in the form of hydrogen gas, which can be burned or fed into fuel cells whenever it is needed. Others are designing cheaper batteries that avoid rare metals altogether. With better storage, renewable energy could one day power our homes and cities around the clock.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'RENEWABLE ENERGY STORAGE',
+          template: `Why storage is needed
+• Solar and wind power are {{31}}: they do not produce electricity all the time.
+• Storage saves surplus power for periods of high {{32}}.
+
+Methods of storage
+• The most common technology today uses lithium-ion {{33}}.
+• Pumped hydro uses spare electricity to pump {{34}} up into a reservoir.
+• The stored water later flows down through a {{35}} to generate electricity.
+• Compressed-air storage forces air into sealed underground {{36}}.
+• Some solar plants store heat by melting {{37}}.
+
+Drawbacks
+• Batteries are costly and have a limited {{38}}.
+• Mining the metals they contain, such as lithium and {{39}}, causes environmental harm.
+
+The future
+• Surplus electricity may be stored as {{40}} gas for later use.`,
+          blanks: [
+            { num: 31, answers: ['intermittent'], maxWords: 1 },
+            { num: 32, answers: ['demand'], maxWords: 1 },
+            { num: 33, answers: ['batteries', 'battery'], maxWords: 1 },
+            { num: 34, answers: ['water'], maxWords: 1 },
+            { num: 35, answers: ['turbine'], maxWords: 1 },
+            { num: 36, answers: ['caves', 'cave'], maxWords: 1 },
+            { num: 37, answers: ['salt'], maxWords: 1 },
+            { num: 38, answers: ['lifespan', 'life'], maxWords: 1 },
+            { num: 39, answers: ['cobalt'], maxWords: 1 },
+            { num: 40, answers: ['hydrogen'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {
