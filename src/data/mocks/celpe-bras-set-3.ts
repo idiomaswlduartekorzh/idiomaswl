@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 
-// CELPE-Bras — formato oficial INEP/MEC. Conteúdo ORIGINAL WeLearn no formato oficial.
+// CELPE-Bras — formato oficial INEP/MEC. Tarefa 1 usa vídeo OFICIAL do acervo público
+// da UFRGS (ufrgs.br/acervocelpebras); as perguntas foram reescritas, não copiadas do
+// caderno oficial. Tarefas 2-4 e Parte Oral são conteúdo ORIGINAL WeLearn.
 // Áudio/vídeo/imagens sob /audio/celpe-bras/set-3/ e /images/celpe-bras/set-3/ — ver checklist de mídia.
 
 const mock: MockExam = {
@@ -12,13 +14,14 @@ const mock: MockExam = {
   sections: [
     {
       part: 1, skill: 'writing', title: 'Tarefa 1 – Produção a partir de vídeo',
-      instructions: 'Assista ao vídeo (reportagem). Depois, redija o texto solicitado em português, adequado ao gênero, ao interlocutor e ao propósito indicados.',
+      instructions: 'Assista ao vídeo oficial do CELPE-BRAS (edição 1999/1). Preste atenção ao tema e às informações apresentadas. Depois, redija o texto solicitado em português.',
+      audioUrl: '/api/celpe-bras-video?src=https%3A%2F%2Fwww.ufrgs.br%2Facervocelpebras%2Fwp-content%2Fuploads%2F2021%2F12%2F1999_1-Video-Entrevista-com-Boris-Casoy.mp4',
       questions: [
         {
           type: 'write', id: 'celpe-bras-s3-q1', part: 1, taskNumber: 1,
-          stimulusLabel: 'Reportagem em vídeo',
-          stimulus: '[Vídeo — reportagem, ~3 min] Uma reportagem mostra o avanço da energia solar em residências brasileiras. A repórter visita famílias que instalaram painéis solares no telhado, entrevista um técnico que explica como funciona a geração de energia e mostra a redução na conta de luz. Um especialista comenta que, com incentivos e queda nos preços, o número de residências com energia solar cresceu rapidamente nos últimos anos, embora o custo inicial ainda seja um obstáculo para muitas famílias.',
-          text: 'Com base no vídeo, escreva um texto informativo para o boletim de um condomínio, explicando aos moradores o que é a energia solar residencial, quais são suas vantagens e desvantagens, e o que considerar antes de instalar painéis. (Mínimo: 200 palavras)',
+          stimulusLabel: 'Vídeo oficial CELPE-BRAS — Entrevista com Boris Casoy',
+          stimulus: '[Vídeo oficial CELPE-BRAS, edição 1999/1] Tema: "Entrevista com Boris Casoy". Assista com atenção para compreender as informações apresentadas antes de escrever seu texto.',
+          text: 'Com base no que você assistiu, escreva um texto sobre o tema do vídeo, no gênero e para o interlocutor que fizerem mais sentido para o assunto (por exemplo, uma carta, um e-mail, um texto informativo ou uma postagem). Explique o tema, comente as informações apresentadas e inclua sua própria opinião quando pertinente. (Mínimo: 200 palavras)',
           minWords: 200,
         },
       ],

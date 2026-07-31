@@ -2,8 +2,9 @@ import type { MockExam } from './types';
 
 // CELPE-Bras — formato oficial INEP/MEC (Parte Escrita: 4 tarefas de produção a partir
 // de vídeo/áudio/texto + Parte Oral: interação com elementos provocadores).
-// Conteúdo ORIGINAL WeLearn no formato oficial (não é reprodução do acervo).
-// Áudio/vídeo/imagens sob /audio/celpe-bras/set-2/ e /images/celpe-bras/set-2/ — ver checklist de mídia.
+// Tarefa 1 usa vídeo OFICIAL do acervo público da UFRGS (ufrgs.br/acervocelpebras); as
+// perguntas foram reescritas, não copiadas do caderno oficial. Tarefas 2-4 e Parte Oral
+// são conteúdo ORIGINAL WeLearn. Áudio sob /audio/celpe-bras/set-2/ — ver checklist de mídia.
 
 const mock: MockExam = {
   id: 'set-2',
@@ -14,13 +15,14 @@ const mock: MockExam = {
   sections: [
     {
       part: 1, skill: 'writing', title: 'Tarefa 1 – Produção a partir de vídeo',
-      instructions: 'Assista ao vídeo (reportagem). Depois, redija o texto solicitado em português, adequado ao gênero, ao interlocutor e ao propósito indicados.',
+      instructions: 'Assista ao vídeo oficial do CELPE-BRAS (edição 1998). Preste atenção ao tema e às informações apresentadas. Depois, redija o texto solicitado em português.',
+      audioUrl: '/api/celpe-bras-video?src=https%3A%2F%2Fwww.ufrgs.br%2Facervocelpebras%2Fwp-content%2Fuploads%2F2021%2F12%2F1998-Video-Os-Jacares-do-Pantanal_comprimido.mp4',
       questions: [
         {
           type: 'write', id: 'celpe-bras-s2b-q1', part: 1, taskNumber: 1,
-          stimulusLabel: 'Reportagem em vídeo',
-          stimulus: '[Vídeo — reportagem, ~3 min] Uma reportagem mostra o crescimento das bibliotecas comunitárias nas periferias das grandes cidades brasileiras. A repórter visita uma biblioteca criada por moradores em um bairro de Fortaleza, entrevista voluntários e crianças que frequentam o espaço, e mostra atividades de contação de histórias e reforço escolar. Uma educadora afirma que, onde o poder público não chega, a comunidade se organiza para garantir o acesso à leitura.',
-          text: 'Com base no vídeo, escreva um texto para o mural de uma escola convidando os alunos a se tornarem voluntários em uma biblioteca comunitária do bairro. Explique o que são essas bibliotecas, qual é a sua importância e como os jovens podem contribuir. (Mínimo: 200 palavras)',
+          stimulusLabel: 'Vídeo oficial CELPE-BRAS — Os Jacarés do Pantanal',
+          stimulus: '[Vídeo oficial CELPE-BRAS, edição 1998] Tema: "Os Jacarés do Pantanal". Assista com atenção para compreender as informações apresentadas antes de escrever seu texto.',
+          text: 'Com base no que você assistiu, escreva um texto sobre o tema do vídeo, no gênero e para o interlocutor que fizerem mais sentido para o assunto (por exemplo, uma carta, um e-mail, um texto informativo ou uma postagem). Explique o tema, comente as informações apresentadas e inclua sua própria opinião quando pertinente. (Mínimo: 200 palavras)',
           minWords: 200,
         },
       ],
