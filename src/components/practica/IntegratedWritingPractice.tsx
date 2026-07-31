@@ -52,6 +52,55 @@ function termIsUsed(text: string, term: string) {
   return normalizedText.includes(normalizedTerm)
 }
 
+// Componente de nivel superior (no anidado en el render del padre): si se
+// redefine en cada render, React lo trata como un tipo nuevo y desmonta el
+// <textarea> en cada tecla, tirando el foco: el bug de "no se puede escribir".
+function NotesNotebook({
+  location,
+  planningQuestions,
+  notes,
+  onNoteChange,
+  completedNotes,
+  plannedTerms,
+}: {
+  location: 'read' | 'prepare' | 'write'
+  planningQuestions: string[]
+  notes: Record<number, string>
+  onNoteChange: (index: number, value: string) => void
+  completedNotes: number
+  plannedTerms: string[]
+}) {
+  const isRead = location === 'read'
+  const title = isRead ? 'Apuntes de lectura' : location === 'prepare' ? 'Tus apuntes de lectura' : 'Tus apuntes'
+
+  return (
+    <aside className={`writing-integrated__notebook writing-integrated__notebook--${location}`} aria-label={title}>
+      <div className="writing-integrated__notebook-header">
+        <div>
+          <p className="writing-integrated__kicker">{isRead ? 'Lee y registra' : 'Referencia personal'}</p>
+          <h3>{title}</h3>
+        </div>
+        <span aria-label={`${completedNotes} de ${planningQuestions.length} apuntes listos`}>{completedNotes}/{planningQuestions.length}</span>
+      </div>
+      {isRead && <p className="writing-integrated__notebook-intro">Anota lo que entiendes mientras lees. No necesitas escribir frases perfectas.</p>}
+      <div className="writing-integrated__note-fields">
+        {planningQuestions.map((question, index) => (
+          <label key={question}>
+            <span>{question}</span>
+            <textarea
+              value={notes[index] ?? ''}
+              onChange={event => onNoteChange(index, event.target.value)}
+              rows={2}
+              placeholder="Escribe una idea..."
+            />
+          </label>
+        ))}
+      </div>
+      {location === 'write' && plannedTerms.length > 0 && <p className="writing-integrated__planned-terms">Para recordar: {plannedTerms.join(' · ')}</p>}
+    </aside>
+  )
+}
+
 export default function IntegratedWritingPractice(props: { exercises: IntegratedWritingExercise[] }) {
   return (
     <Suspense fallback={null}>
@@ -104,38 +153,6 @@ function IntegratedWritingPracticeContent({ exercises }: { exercises: Integrated
     setNotes({})
     setPlannedTerms([])
     go('read')
-  }
-
-  function NotesNotebook({ location }: { location: 'read' | 'prepare' | 'write' }) {
-    const isRead = location === 'read'
-    const title = isRead ? 'Apuntes de lectura' : location === 'prepare' ? 'Tus apuntes de lectura' : 'Tus apuntes'
-
-    return (
-      <aside className={`writing-integrated__notebook writing-integrated__notebook--${location}`} aria-label={title}>
-        <div className="writing-integrated__notebook-header">
-          <div>
-            <p className="writing-integrated__kicker">{isRead ? 'Lee y registra' : 'Referencia personal'}</p>
-            <h3>{title}</h3>
-          </div>
-          <span aria-label={`${completedNotes} de ${exercise.planningQuestions.length} apuntes listos`}>{completedNotes}/{exercise.planningQuestions.length}</span>
-        </div>
-        {isRead && <p className="writing-integrated__notebook-intro">Anota lo que entiendes mientras lees. No necesitas escribir frases perfectas.</p>}
-        <div className="writing-integrated__note-fields">
-          {exercise.planningQuestions.map((question, index) => (
-            <label key={question}>
-              <span>{question}</span>
-              <textarea
-                value={notes[index] ?? ''}
-                onChange={event => setNotes(current => ({ ...current, [index]: event.target.value }))}
-                rows={2}
-                placeholder="Escribe una idea..."
-              />
-            </label>
-          ))}
-        </div>
-        {location === 'write' && plannedTerms.length > 0 && <p className="writing-integrated__planned-terms">Para recordar: {plannedTerms.join(' · ')}</p>}
-      </aside>
-    )
   }
 
   return (
@@ -201,7 +218,7 @@ function IntegratedWritingPracticeContent({ exercises }: { exercises: Integrated
                   {exercise.readingFocus.map(item => <span key={item}>{item}</span>)}
                 </div>
               </div>
-              <NotesNotebook location="read" />
+              <NotesNotebook location="read" planningQuestions={exercise.planningQuestions} notes={notes} onNoteChange={(index, value) => setNotes(current => ({ ...current, [index]: value }))} completedNotes={completedNotes} plannedTerms={plannedTerms} />
             </div>
             <div className="writing-integrated__grammar-links" aria-label="Gramática relacionada">
               <span>Gramática para esta práctica</span>
@@ -234,7 +251,7 @@ function IntegratedWritingPracticeContent({ exercises }: { exercises: Integrated
                 )
               })}
             </div>
-            <NotesNotebook location="prepare" />
+            <NotesNotebook location="prepare" planningQuestions={exercise.planningQuestions} notes={notes} onNoteChange={(index, value) => setNotes(current => ({ ...current, [index]: value }))} completedNotes={completedNotes} plannedTerms={plannedTerms} />
             {!readyToWrite && <p className="writing-integrated__warning">Completa los {exercise.planningQuestions.length} apuntes para continuar.</p>}
             <button className="btn btn-sm" disabled={!readyToWrite} style={{ background: exercise.color, borderColor: exercise.color, opacity: readyToWrite ? 1 : 0.45 }} onClick={() => go('write')}>Escribir respuesta</button>
           </section>
@@ -248,7 +265,7 @@ function IntegratedWritingPracticeContent({ exercises }: { exercises: Integrated
               {exercise.successCriteria.map(item => <span key={item}>{item}</span>)}
             </div>
             <div className="writing-integrated__writing-layout">
-              <NotesNotebook location="write" />
+              <NotesNotebook location="write" planningQuestions={exercise.planningQuestions} notes={notes} onNoteChange={(index, value) => setNotes(current => ({ ...current, [index]: value }))} completedNotes={completedNotes} plannedTerms={plannedTerms} />
               <textarea
                 value={text}
                 onChange={event => setText(event.target.value)}
