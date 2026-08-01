@@ -151,6 +151,14 @@ function MediaPlayer({ url }: { url: string }) {
     return (
       <div className="lang-media lang-media--video">
         <video src={resolveAudioUrl(url)} controls className="lang-media__iframe" />
+        {url.startsWith('/videos/celpe-bras/') && (
+          <p className="lang-media__credit">
+            Vídeo oficial do CELPE-BRAS, cortesia do{' '}
+            <a href="https://www.ufrgs.br/acervocelpebras/acervo/" target="_blank" rel="noopener noreferrer">
+              acervo público da UFRGS
+            </a>.
+          </p>
+        )}
       </div>
     );
   }

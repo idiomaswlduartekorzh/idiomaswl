@@ -4906,6 +4906,18 @@ button {
   border: none;
   border-radius: 10px;
 }
+.lang-media__credit {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.lang-media__credit a {
+  color: var(--muted);
+  text-decoration: underline;
+}
+.lang-media__credit a:hover {
+  color: var(--ink);
+}
 .lang-media--audio {
   display: flex;
   align-items: center;
