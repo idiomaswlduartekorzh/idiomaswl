@@ -5,7 +5,7 @@ import { BLOG_POSTS } from '@/data/blog';
 export const metadata: Metadata = {
   title: 'Clases de idiomas online en Colombia | Inglés, Coreano, Francés, Alemán — WeLearn',
   description:
-    'Clases de idiomas online 1:1 en Colombia: inglés, coreano, francés, alemán, italiano y portugués con tutores especializados. Preparamos para IELTS, TOEFL, Goethe, DELF, CILS y Celpe-Bras. Primera clase gratis.',
+    'Clases de idiomas online 1:1 en Colombia: inglés, coreano, francés, alemán, italiano y portugués con tutores especializados. Preparamos para IELTS, TOEFL, Goethe, DELF, CILS y Celpe-Bras. Diagnóstico gratis.',
   keywords: [
     'clases de idiomas online Colombia',
     'academia de idiomas online Colombia',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Clases de idiomas online en Colombia | WeLearn',
-    description: 'Inglés, coreano, francés, alemán, italiano y portugués con tutores especializados. Primera clase gratis.',
+    description: 'Inglés, coreano, francés, alemán, italiano y portugués con tutores especializados. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',
   },
@@ -196,7 +196,7 @@ export default function ClasesDeIdiomasPage() {
             { n: '6', label: 'Idiomas disponibles' },
             { n: '1:1', label: 'Clases personalizadas' },
             { n: '12+', label: 'Certificaciones preparadas' },
-            { n: 'Gratis', label: 'Primera clase de diagnóstico' },
+            { n: 'Gratis', label: 'Diagnóstico inicial' },
           ].map(s => (
             <div key={s.label} style={{ textAlign: 'center' }}>
               <p style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--ink)', lineHeight: 1 }}>{s.n}</p>
@@ -286,7 +286,7 @@ export default function ClasesDeIdiomasPage() {
               { icon: '🎯', title: 'Tutores especializados por idioma', desc: 'Cada tutor conoce el examen al que te preparas, el nivel que tienes y el objetivo que persigues. No son instructores genéricos.' },
               { icon: '📋', title: 'Plan personalizado desde el día 1', desc: 'El diagnóstico inicial define exactamente qué necesitas. El plan cambia si tu ritmo o tu objetivo cambia.' },
               { icon: '🗣️', title: 'Clases 1:1, no grupos', desc: 'Cada minuto de clase es para ti. Sin esperar turno, sin ritmo de grupo que no se adapta, sin sílabo rígido.' },
-              { icon: '✅', title: 'Primera clase gratis', desc: 'Tu primera sesión de diagnóstico no tiene costo. Conoces el tutor, el método y el plan antes de comprometerte.' },
+              { icon: '✅', title: 'Diagnóstico gratis', desc: 'Tu primera sesión de diagnóstico no tiene costo. Conoces el tutor, el método y el plan antes de comprometerte.' },
             ].map(f => (
               <div key={f.title} style={{ background: 'var(--bg)', border: '1px solid var(--line-soft)', borderRadius: 12, padding: '1.4rem' }}>
                 <span style={{ fontSize: '1.75rem', display: 'block', marginBottom: '0.75rem' }}>{f.icon}</span>
@@ -366,7 +366,7 @@ export default function ClasesDeIdiomasPage() {
               rel="noopener noreferrer"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#25d366', color: '#fff', fontWeight: 700, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem' }}
             >
-              Agendar clase gratis →
+              Agendar diagnóstico gratis →
             </a>
             <Link href="/precios" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem', border: '1px solid rgba(255,255,255,0.15)' }}>
               Ver precios

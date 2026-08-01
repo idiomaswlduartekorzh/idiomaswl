@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import FoundersBand from '@/components/hub/FoundersBand';
 import s from './page.module.css';
 
 // ── WhatsApp ─────────────────────────────────────────────────────────────────
@@ -364,6 +365,16 @@ export default function ClasesDeInglesPage() {
         </div>
       </div>
 
+      {/* ── FUNDADORES ───────────────────────────────────────────────────── */}
+      <FoundersBand
+        accent="#1a4fcc"
+        title="Dos políglotas te enseñan inglés. No un curso grabado."
+        intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad — y una de ellas estudió en Inglaterra."
+        davidLine="Habla ocho idiomas. El inglés fue el primero, y prepararlo hasta nivel de examen es lo que dio origen al método de 11 pasos que usamos hoy."
+        zhannaLine="Estudió en Inglaterra y en Francia. Esa formación dentro del sistema académico británico respalda nuestra preparación de IELTS, TOEFL y Cambridge."
+        zhannaTags={['Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}
+      />
+
       {/* ── INTENT SECTION ───────────────────────────────────────────────── */}
       <section className="wlh-section wlh-section--alt">
         <div className="wrap">
@@ -387,7 +398,7 @@ export default function ClasesDeInglesPage() {
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.25rem' }}>
                   <a href={intent.waUrl} target="_blank" rel="noopener noreferrer" className={s.waBtnSm}>
-                    Agendar clase gratis →
+                    Agendar diagnóstico gratis →
                   </a>
                   {intent.simulacro && (
                     <Link

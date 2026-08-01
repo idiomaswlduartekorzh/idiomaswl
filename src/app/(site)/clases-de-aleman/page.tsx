@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FoundersBand from '@/components/hub/FoundersBand';
+import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
@@ -289,6 +291,16 @@ export default function ClasesDeAlemanPage() {
           <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
         </div>
 
+        {/* ══════════════ FUNDADORES ══════════════ */}
+        <FoundersBand
+          accent="#1a2ecc"
+          title="Dos políglotas te enseñan alemán. No un curso grabado."
+          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          davidLine="Habla ocho idiomas. El alemán es de los que más le costó, y por eso es el que mejor sabe explicar: casos, orden de la frase y verbos separables, paso a paso desde el español."
+          zhannaLine="Directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Goethe corresponda a lo que el examen realmente evalúa."
+          zhannaTags={['Directora académica', 'Preparación Goethe', 'Diseño curricular']}
+        />
+
         {/* ══════════════ WHY ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
@@ -360,6 +372,19 @@ export default function ClasesDeAlemanPage() {
           </div>
         </section>
 
+        {/* ══════════════ PRACTICA GRATIS ══════════════ */}
+        <PracticeBand
+          accent="#1a2ecc"
+          title="Ejercítate con material real antes de empezar"
+          sub="Gramática, vocabulario, escucha y escritura con feedback inmediato. Sin registro."
+          cards={[
+            { href: '/practica/aleman/a1/gramatica', title: 'Gramática A1', desc: 'Artículos, casos y orden de la frase explicados desde el español — lo que hace que el alemán parezca difícil.' },
+            { href: '/practica/aleman/a1/vocabulario', title: 'Vocabulario A1', desc: 'Palabras de alta frecuencia con audio nativo y el género de cada sustantivo desde el primer día.' },
+            { href: '/practica/aleman/b1/escucha', title: 'Escucha B1', desc: 'Audio a velocidad natural: el nivel que piden la mayoría de visas y procesos de trabajo en Alemania.' },
+            { href: '/practica/aleman/b1', title: 'Nivel B1 completo', desc: 'Gramática, escucha, lectura y escritura del nivel que exige el Goethe-Zertifikat B1.' },
+          ]}
+        />
+
         {/* ══════════════ FAQ ══════════════ */}
         <section className={s.sectionDark}>
           <div className={s.wrap}>
@@ -397,7 +422,7 @@ export default function ClasesDeAlemanPage() {
           <div className={s.ctaBox}>
             <p className={s.ctaPhrase}>Viel Erfolg!</p>
             <h2 className={s.ctaTitle}>
-              Tu primera clase de alemán<br />
+              Tu diagnóstico de alemán<br />
               <span className={s.accent}>es gratis.</span>
             </h2>
             <p className={s.ctaSub}>

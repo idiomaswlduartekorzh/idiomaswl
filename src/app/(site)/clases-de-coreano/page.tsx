@@ -796,7 +796,7 @@ export default function ClasesDeCoreanoPage() {
               <div className={s.ctaKorean}>시작하세요</div>
               <h2 className={s.ctaTitle}>¿Listo para empezar?</h2>
               <p className={s.ctaSub}>
-                Primera clase de diagnóstico gratis. Sin compromisos.
+                Diagnóstico inicial gratis. Sin compromisos.
                 En 50 minutos sabes exactamente en qué nivel estás y qué necesitas para llegar a donde quieres.
               </p>
               <div className={s.ctaBtns}>
@@ -805,7 +805,7 @@ export default function ClasesDeCoreanoPage() {
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtn}
                 >
-                  Agendar clase gratis por WhatsApp
+                  Agendar diagnóstico gratis por WhatsApp
                 </a>
                 <a href="#miembro-fundador" className={s.ghostBtn}>
                   Ver Miembro Fundador

@@ -1,0 +1,117 @@
+/* Banda de fundadores — se usa justo debajo del hero en cada landing de idioma.
+   Autoportante: no depende del page.module.css de la página que la usa. */
+
+.band {
+  padding: 3.25rem 0 3.5rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border, rgba(127, 127, 127, 0.18));
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.5rem, 3vw, 2.05rem);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.75rem;
+  text-align: center;
+  color: var(--fg);
+}
+
+.intro {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 1.15rem;
+  align-items: start;
+  padding: 1.25rem;
+  border: 1px solid var(--border, rgba(127, 127, 127, 0.18));
+  border-radius: 16px;
+  background: var(--card, rgba(127, 127, 127, 0.05));
+  text-align: left;
+}
+
+.photoWrap {
+  position: relative;
+  width: 92px;
+  height: 110px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 0.15rem;
+  color: var(--fg);
+  letter-spacing: -0.01em;
+}
+
+.role {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 0.6rem;
+}
+
+.line {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border, rgba(127, 127, 127, 0.25));
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 780px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 420px) {
+  .card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .tags { justify-content: center; }
+}

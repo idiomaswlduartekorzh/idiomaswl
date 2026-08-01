@@ -81,7 +81,7 @@ const jsonLd = {
           name: 'Clase de diagnóstico gratis',
           price: '0',
           priceCurrency: 'COP',
-          description: 'Clase gratuita de diagnóstico de 45 minutos por videollamada.',
+          description: 'Diagnóstico gratuito de 45 minutos por videollamada.',
         },
         {
           '@type': 'Offer',
@@ -327,7 +327,7 @@ export default function ClasesInglessBucaramangaPage() {
                 </div>
                 <p style={{ fontSize: '0.875rem', color: 'var(--muted)', lineHeight: 1.6, flexGrow: 1 }}>{item.desc}</p>
                 <a href={item.waUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', background: '#25D366', color: '#fff', fontWeight: 700, fontSize: '0.85rem', padding: '0.6rem 1rem', borderRadius: 10, textDecoration: 'none' }}>
-                  Agendar clase gratis →
+                  Agendar diagnóstico gratis →
                 </a>
               </div>
             ))}

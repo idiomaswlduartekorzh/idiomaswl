@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FoundersBand from '@/components/hub/FoundersBand';
+import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
@@ -57,6 +59,31 @@ const faqJsonLd = {
       '@type': 'Question',
       name: '¿Las clases son presenciales o virtuales?',
       acceptedAnswer: { '@type': 'Answer', text: '100% virtuales, por videollamada. Puedes estar en cualquier ciudad de Colombia o del mundo.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Dónde se presenta el Celpe-Bras en Colombia?',
+      acceptedAnswer: { '@type': 'Answer', text: 'El Celpe-Bras se aplica en Colombia en centros autorizados por el gobierno brasileño, entre ellos Bogotá, Medellín, Cali, Leticia y Bucaramanga. Las inscripciones abren por edición y tienen fecha de cierre, así que conviene llegar con el nivel listo a la convocatoria.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cómo es el examen Celpe-Bras y por qué no tiene opción múltiple?',
+      acceptedAnswer: { '@type': 'Answer', text: 'El Celpe-Bras evalúa uso real del idioma, no memorización. Consta de tareas escritas a partir de videos y textos auténticos, más una interacción oral con evaluadores. El candidato debe lograr algo concreto con el portugués: responder, argumentar, resumir o persuadir.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué niveles tiene el Celpe-Bras y puedo elegir cuál presentar?',
+      acceptedAnswer: { '@type': 'Answer', text: 'No se elige nivel. Se presenta un único examen y el resultado asigna el nivel obtenido: Intermediário, Intermediário Superior, Avançado o Avançado Superior. Si el desempeño no alcanza el mínimo, no se otorga certificado.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Necesito el Celpe-Bras para revalidar mi título profesional en Brasil?',
+      acceptedAnswer: { '@type': 'Answer', text: 'El Celpe-Bras es el certificado de proficiencia en portugués que aparece habitualmente en los procesos de revalidación de títulos y en las admisiones de posgrado de universidades públicas brasileñas. Los requisitos exactos dependen de la universidad y de la profesión, por lo que deben confirmarse con la institución donde se hace el trámite.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Debo aprender portugués de Brasil o de Portugal?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Depende del objetivo. Para estudiar, trabajar o revalidar un título en Brasil, portugués brasileño, que es el que evalúa el Celpe-Bras. Para nacionalidad o residencia en Portugal, portugués europeo, con exámenes del sistema CAPLE. Idiomas WeLearn enseña portugués brasileño.' },
     },
   ],
 };
@@ -130,6 +157,11 @@ const FAQS = [
   { q: '¿Cuánto tiempo toma llegar al Celpe-Bras Intermediário?', a: 'Para hispanohablantes, entre 10 y 16 meses con práctica constante. La comprensión es rápida; la producción oral con acento natural toma más tiempo.' },
   { q: '¿Qué diferencia hay entre el portugués de Brasil y el de Portugal?', a: 'Pronunciación, vocabulario y algo de gramática. El portugués brasileño es más fonético y generalmente más fácil para hispanohablantes. El Celpe-Bras evalúa exclusivamente el portugués brasileño.' },
   { q: '¿Las clases son presenciales o virtuales?', a: '100% virtuales, por videollamada. Puedes estar en cualquier ciudad de Colombia o del mundo.' },
+  { q: '¿Dónde se presenta el Celpe-Bras en Colombia?', a: 'En centros autorizados por el gobierno brasileño. En Colombia se aplica en Bogotá, Medellín, Cali, Leticia y Bucaramanga. Las inscripciones abren por edición y tienen fecha de cierre, así que conviene llegar con el nivel listo a la convocatoria.' },
+  { q: '¿Cómo es el examen Celpe-Bras y por qué no tiene opción múltiple?', a: 'Porque evalúa uso real del idioma, no memorización. Consta de tareas escritas a partir de videos y textos auténticos, más una interacción oral con evaluadores. Debes lograr algo concreto con el portugués: responder, argumentar, resumir o persuadir.' },
+  { q: '¿Qué niveles tiene el Celpe-Bras y puedo elegir cuál presentar?', a: 'No se elige. Presentas un único examen y el resultado te asigna el nivel: Intermediário, Intermediário Superior, Avançado o Avançado Superior. Si el desempeño no alcanza el mínimo, no se otorga certificado.' },
+  { q: '¿Necesito el Celpe-Bras para revalidar mi título profesional en Brasil?', a: 'Es el certificado de proficiencia que aparece habitualmente en los procesos de revalidación y en las admisiones de posgrado de universidades públicas brasileñas. Los requisitos exactos dependen de la universidad y de la profesión, así que confírmalos con la institución donde vas a hacer el trámite.' },
+  { q: '¿Debo aprender portugués de Brasil o de Portugal?', a: 'Depende de tu objetivo. Si vas a estudiar, trabajar o revalidar título en Brasil, el brasileño — y es el que evalúa el Celpe-Bras. Si buscas nacionalidad o residencia en Portugal, el europeo, con exámenes del sistema CAPLE. WeLearn enseña portugués brasileño.' },
 ];
 
 const BLOG_POSTS = [
@@ -210,6 +242,16 @@ export default function ClasesDePortuguesPage() {
           <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
         </div>
 
+        {/* ══════════════ FUNDADORES ══════════════ */}
+        <FoundersBand
+          accent="#166534"
+          title="Dos políglotas te enseñan portugués. No un curso grabado."
+          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          davidLine="Habla ocho idiomas. El portugués fue el tercero que aprendió, después del inglés y el italiano, y es el que más rápido avanza cuando ya hablas español."
+          zhannaLine="Directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Celpe-Bras corresponda a lo que el examen realmente evalúa."
+          zhannaTags={['Directora académica', 'Preparación Celpe-Bras', 'Diseño curricular']}
+        />
+
         {/* WHY */}
         <section className={s.section}>
           <div className={s.wrap}>
@@ -273,6 +315,62 @@ export default function ClasesDePortuguesPage() {
           </div>
         </section>
 
+        {/* ══════════════ DÓNDE Y PARA QUÉ (SEO/AEO) ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Dónde y para qué</p>
+            <h2 className={s.h2}>Dónde se presenta el Celpe-Bras en Colombia</h2>
+            <p className={s.sectionSub}>
+              El Celpe-Bras se aplica en Colombia en centros autorizados por el gobierno brasileño,
+              entre ellos Bogotá, Medellín, Cali, Leticia y <strong>Bucaramanga</strong> — la ciudad
+              donde está nuestra sede. Las inscripciones abren por edición y se cierran rápido:
+              conviene tener el nivel listo antes de la convocatoria, no después.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Formato</span>
+                <p className={s.levelTitle}>No es de opción múltiple</p>
+                <p className={s.levelDesc}>
+                  El Celpe-Bras no tiene preguntas de selección. Son tareas escritas a partir de
+                  videos y textos reales, más una interacción oral con evaluadores. Se evalúa que
+                  uses el portugués para hacer algo concreto, no que recites gramática.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Nivel</span>
+                <p className={s.levelTitle}>El nivel no se elige: se obtiene</p>
+                <p className={s.levelDesc}>
+                  A diferencia del DELF o el CILS, aquí presentas un único examen y el resultado
+                  te asigna el nivel: Intermediário, Intermediário Superior, Avançado o Avançado
+                  Superior. Por eso la preparación apunta al desempeño, no a &ldquo;pasar un nivel&rdquo;.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Para qué</span>
+                <p className={s.levelTitle}>Universidad, título y trabajo en Brasil</p>
+                <p className={s.levelDesc}>
+                  Es el certificado que piden las universidades públicas brasileñas para posgrados
+                  y el que aparece en los procesos de revalidación de títulos profesionales y en
+                  trámites de visa de trabajo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════ PRACTICA GRATIS ══════════════ */}
+        <PracticeBand
+          accent="#166534"
+          title="Ejercítate con material real antes de empezar"
+          sub="Gramática, vocabulario, escucha y escritura con feedback inmediato. Sin registro."
+          cards={[
+            { href: '/practica/portugues/a1/gramatica', title: 'Gramática A1', desc: 'Los cimientos del portugués brasileño: artículos, presente, preposiciones y las trampas del portuñol.' },
+            { href: '/practica/portugues/a1/vocabulario', title: 'Vocabulario A1', desc: 'Palabras de alta frecuencia con audio brasileño — el portugués que de verdad se habla.' },
+            { href: '/practica/portugues/b1/escucha', title: 'Escucha B1', desc: 'Audio real a velocidad natural, que es exactamente lo que más cuesta al pasar del español.' },
+            { href: '/examenes/celpe-bras', title: 'Simulacro Celpe-Bras', desc: 'Practica con el formato real del examen: videos, tareas escritas y parte oral.' },
+          ]}
+        />
+
         {/* FAQ */}
         <section className={s.sectionDark}>
           <div className={s.wrap}>
@@ -309,7 +407,7 @@ export default function ClasesDePortuguesPage() {
         <section className={s.ctaSection}>
           <div className={s.ctaBox}>
             <p className={s.ctaPhrase}>Vamos lá!</p>
-            <h2 className={s.ctaTitle}>Tu primera clase de portugués<br /><span className={s.accent}>es gratis.</span></h2>
+            <h2 className={s.ctaTitle}>Tu diagnóstico de portugués<br /><span className={s.accent}>es gratis.</span></h2>
             <p className={s.ctaSub}>Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al Celpe-Bras que necesitas.</p>
             <div className={s.ctaBtns}>
               <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>

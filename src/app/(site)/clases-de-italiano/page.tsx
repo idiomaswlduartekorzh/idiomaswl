@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FoundersBand from '@/components/hub/FoundersBand';
+import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
@@ -73,6 +75,38 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'El CILS es de la Universidad para Extranjeros de Siena; el CELI es de la Universidad para Extranjeros de Perugia. Ambos son reconocidos oficialmente por el gobierno italiano. WeLearn prepara para los dos.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿El examen B1 de italiano para la ciudadanía se puede hacer online?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Ni el CILS ni el CELI tienen versión online: son exámenes presenciales que se presentan en un centro autorizado, con documento de identidad. Lo que sí puedes hacer online es toda la preparación, incluidos los simulacros.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Dónde puedo presentar el examen CILS o CELI en Colombia?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'En centros autorizados por el gobierno italiano. La referencia principal es el Istituto Italiano di Cultura de Bogotá, y también hay sedes vinculadas a universidades y a la Sociedad Dante Alighieri en Bogotá, Medellín y Cartagena. El calendario de sesiones cambia cada año, así que conviene confirmar fecha y sede antes de inscribirse.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto se demora el resultado del CILS B1?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El resultado del CILS suele salir alrededor de mes y medio después del examen, y el del CELI puede tomar cerca de tres meses. El certificado físico llega después del resultado. Si tienes una cita consular con fecha fija, planea hacia atrás desde esa fecha.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo toma llegar a B1 en italiano si ya hablo español?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Un hispanohablante puede alcanzar el B1 de italiano en 6 a 12 meses estudiando de 3 a 5 horas por semana. Es bastante más rápido que la referencia general del MCER porque compartes gramática y una gran parte del vocabulario.',
       },
     },
   ],
@@ -162,6 +196,10 @@ const FAQS = [
   { q: '¿Qué nivel necesito para la ciudadanía italiana?', a: 'El gobierno italiano exige demostrar nivel B1 para la ciudadanía por naturalización. El CILS B1 o el CELI 2 son certificados aceptados.' },
   { q: '¿Cuánto tiempo toma llegar al CILS B2?', a: 'Para hispanohablantes, alcanzar B2 toma entre 12 y 18 meses con práctica constante. El italiano es el más fácil para hispanohablantes entre las lenguas no hispanas.' },
   { q: '¿Cuál es la diferencia entre CILS y CELI?', a: 'El CILS es de Siena; el CELI es de Perugia. Ambos son reconocidos por el gobierno italiano. WeLearn prepara para los dos.' },
+  { q: '¿El examen B1 de italiano para la ciudadanía se puede hacer online?', a: 'No. Ni el CILS ni el CELI tienen versión online: son presenciales, en un centro autorizado y con documento de identidad. Lo que sí es online es toda la preparación, incluidos los simulacros.' },
+  { q: '¿Dónde puedo presentar el CILS o el CELI en Colombia?', a: 'En centros autorizados por el gobierno italiano. La referencia principal es el Istituto Italiano di Cultura de Bogotá, y también hay sedes vinculadas a universidades y a la Sociedad Dante Alighieri en Bogotá, Medellín y Cartagena. El calendario cambia cada año: confirma sede y fecha antes de inscribirte.' },
+  { q: '¿Cuánto se demora el resultado del CILS B1?', a: 'El CILS suele entregar resultados alrededor de mes y medio después del examen; el CELI puede tomar cerca de tres meses, y el certificado físico llega después. Si tienes cita consular con fecha, planea hacia atrás desde ahí.' },
+  { q: '¿Cuánto tiempo toma llegar a B1 en italiano si ya hablo español?', a: 'Entre 6 y 12 meses estudiando de 3 a 5 horas por semana. Es más rápido que la referencia general del MCER porque compartes gramática y buena parte del vocabulario con el italiano.' },
 ];
 
 const BLOG_POSTS = [
@@ -242,6 +280,16 @@ export default function ClasesDeItalianoPage() {
           <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
         </div>
 
+        {/* ══════════════ FUNDADORES ══════════════ */}
+        <FoundersBand
+          accent="#009246"
+          title="Dos políglotas te enseñan italiano. No un curso grabado."
+          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          davidLine="Habla ocho idiomas. El italiano fue el segundo que aprendió, justo después del inglés — y es el que mejor demuestra cuánta ventaja te da ya hablar español."
+          zhannaLine="Directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación CILS y CELI corresponda a lo que el examen realmente evalúa."
+          zhannaTags={['Directora académica', 'Preparación CILS / CELI', 'Diseño curricular']}
+        />
+
         {/* WHY */}
         <section className={s.section}>
           <div className={s.wrap}>
@@ -303,6 +351,63 @@ export default function ClasesDeItalianoPage() {
           </div>
         </section>
 
+        {/* ══════════════ DÓNDE Y CUÁNDO (SEO/AEO) ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Dónde y cuándo</p>
+            <h2 className={s.h2}>Dónde presentar el examen de italiano en Colombia</h2>
+            <p className={s.sectionSub}>
+              El CILS y el CELI son presenciales — no existe versión online. En Colombia se presentan
+              en centros autorizados por el gobierno italiano. Esto es lo que necesitas saber para
+              planear tu cronograma antes de la cita consular.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Sedes</span>
+                <p className={s.levelTitle}>Centros autorizados en Colombia</p>
+                <p className={s.levelDesc}>
+                  El Istituto Italiano di Cultura de Bogotá es la referencia principal, y también
+                  hay centros vinculados a universidades y a la Sociedad Dante Alighieri en Bogotá,
+                  Medellín y Cartagena. Confirma sede y fecha de sesión antes de inscribirte: el
+                  calendario cambia cada año.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Duración</span>
+                <p className={s.levelTitle}>Cuánto dura el examen</p>
+                <p className={s.levelDesc}>
+                  El CILS B1 toma alrededor de 2 horas y el CELI algo más de 2 horas y media.
+                  Ambos se dividen en cuatro pruebas — escucha, lectura, escritura y oral — que
+                  pesan lo mismo. Se aprueba con el mínimo en cada una, no con el promedio.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Resultados</span>
+                <p className={s.levelTitle}>Cuánto tarda el certificado</p>
+                <p className={s.levelDesc}>
+                  El resultado del CILS suele salir en torno a mes y medio; el del CELI puede tomar
+                  cerca de tres meses. El certificado físico llega después. Si tienes cita
+                  consular con fecha, cuenta hacia atrás desde ahí — es el error de planeación
+                  más común.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════ PRACTICA GRATIS ══════════════ */}
+        <PracticeBand
+          accent="#009246"
+          title="Ejercítate con material real antes de empezar"
+          sub="Gramática, vocabulario, escucha y escritura con feedback inmediato. Sin registro."
+          cards={[
+            { href: '/practica/italiano/a1/gramatica', title: 'Gramática A1', desc: 'Artículos, género, presente y los verbos que más se usan. Ejercicios interactivos con corrección al instante.' },
+            { href: '/practica/italiano/a1/vocabulario', title: 'Vocabulario A1', desc: 'Palabras de alta frecuencia con audio nativo — el italiano que de verdad se habla en Italia.' },
+            { href: '/practica/italiano/b1', title: 'Nivel B1 — el de la ciudadanía', desc: 'Gramática, escucha, lectura y escritura de nivel B1, el que exige el Estado italiano para la ciudadanía.' },
+            { href: '/practica/italiano/tiempos-verbales', title: 'Tiempos verbales', desc: 'Passato prossimo, imperfetto, congiuntivo y condizionale explicados desde el español, con práctica.' },
+          ]}
+        />
+
         {/* FAQ */}
         <section className={s.sectionDark}>
           <div className={s.wrap}>
@@ -339,7 +444,7 @@ export default function ClasesDeItalianoPage() {
         <section className={s.ctaSection}>
           <div className={s.ctaBox}>
             <p className={s.ctaPhrase}>Iniziamo!</p>
-            <h2 className={s.ctaTitle}>Tu primera clase de italiano<br /><span className={s.accent}>es gratis.</span></h2>
+            <h2 className={s.ctaTitle}>Tu diagnóstico de italiano<br /><span className={s.accent}>es gratis.</span></h2>
             <p className={s.ctaSub}>Diagnosticamos tu nivel, definimos tu objetivo y te mostramos exactamente cómo llegar al CILS que necesitas.</p>
             <div className={s.ctaBtns}>
               <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>

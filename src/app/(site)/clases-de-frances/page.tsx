@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import FoundersBand from '@/components/hub/FoundersBand';
 import s from './page.module.css';
 
 const WA = '573005004253';
@@ -76,6 +77,38 @@ const faqJsonLd = {
         text: 'Son 100% virtuales, por videollamada. Puedes estar en Bogotá, Medellín, Cali, Bucaramanga o cualquier ciudad. Solo necesitas conexión a internet.',
       },
     },
+    {
+      '@type': 'Question',
+      name: '¿El DELF sirve para migrar a Canadá?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Para los trámites migratorios canadienses se aceptan el TEF Canada y el TCF Canada, no el DELF. El DELF y el DALF son diplomas académicos que no caducan y sirven para universidades y para acreditar nivel, pero no reemplazan el examen que exige el proceso migratorio.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuál es la diferencia entre DELF, DALF, TCF y TEF?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'DELF y DALF son diplomas del Ministerio de Educación de Francia: se presentan por nivel, de A1 a C2, y no caducan. TCF y TEF son pruebas de nivel con vigencia limitada, normalmente de dos años, y sus versiones Canada son las que reconocen los procesos migratorios canadienses. El francés que se estudia es el mismo; lo que cambia es el formato de la prueba.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Dónde puedo presentar el DELF o el TCF en Colombia?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'En los centros autorizados de la Alianza Francesa, presentes en Bogotá, Medellín, Cali y otras ciudades del país. Cada examen tiene su propio calendario de sesiones e inscripción, por lo que conviene confirmar fecha y sede con anticipación.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué nivel de francés necesito para estudiar en Francia?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'La mayoría de programas universitarios dictados en francés piden nivel B2. Algunos posgrados y programas selectivos piden C1. Si el programa se dicta en inglés, suele bastar un nivel básico de francés para la vida diaria, pero conviene verificarlo con la universidad.',
+      },
+    },
   ],
 };
 
@@ -98,7 +131,10 @@ const jsonLd = {
           courseMode: 'online',
           inLanguage: 'fr',
           courseWorkload: 'PT1H',
-          instructor: { '@type': 'Person', name: 'José David Duarte Silva' },
+          instructor: [
+            { '@id': 'https://www.idiomaswl.com/#david' },
+            { '@id': 'https://www.idiomaswl.com/#zhanna' },
+          ],
         },
       ],
       offers: {
@@ -122,6 +158,28 @@ const jsonLd = {
         addressRegion: 'Santander',
         addressCountry: 'CO',
       },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.idiomaswl.com/#david',
+      name: 'José David Duarte Silva',
+      jobTitle: 'Políglota y co-fundador de Idiomas WeLearn',
+      description:
+        'Políglota activo en ocho idiomas. Aprendió francés después del inglés, el italiano y el portugués, y de ese recorrido nació el método WeLearn de francés para hispanohablantes.',
+      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
+      knowsLanguage: ['es', 'en', 'fr', 'it', 'pt', 'de', 'ko', 'ru'],
+      worksFor: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.idiomaswl.com/#zhanna',
+      name: 'Zhanna Korzh',
+      jobTitle: 'Directora académica de Idiomas WeLearn',
+      description:
+        'Directora académica de WeLearn. Estudió en Francia y en Inglaterra, y lidera el diseño curricular y la preparación de exámenes DELF y DALF.',
+      image: 'https://www.idiomaswl.com/images/team-zhanna-korzh.png',
+      knowsLanguage: ['es', 'en', 'fr'],
+      worksFor: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
     },
     {
       '@type': 'BreadcrumbList',
@@ -196,6 +254,22 @@ const FAQS = [
   {
     q: '¿Las clases son presenciales o virtuales?',
     a: 'Son 100% virtuales, por videollamada. Puedes estar en Bogotá, Medellín, Cali, Bucaramanga o cualquier ciudad. Solo necesitas conexión a internet.',
+  },
+  {
+    q: '¿El DELF sirve para migrar a Canadá?',
+    a: 'No. Para los trámites migratorios canadienses se aceptan el TEF Canada y el TCF Canada, no el DELF. El DELF y el DALF son diplomas académicos que no caducan y sirven para universidades y para acreditar tu nivel, pero no reemplazan el examen que exige el proceso migratorio.',
+  },
+  {
+    q: '¿Cuál es la diferencia entre DELF, DALF, TCF y TEF?',
+    a: 'DELF y DALF son diplomas del Ministerio de Educación de Francia: se presentan por nivel (A1 a C2) y no caducan. TCF y TEF son pruebas de nivel con vigencia limitada, normalmente de dos años, y sus versiones "Canada" son las que reconocen los procesos migratorios canadienses. El francés que estudias es el mismo; cambia el formato de la prueba.',
+  },
+  {
+    q: '¿Dónde puedo presentar el DELF o el TCF en Colombia?',
+    a: 'En los centros autorizados de la Alianza Francesa, presentes en Bogotá, Medellín, Cali y otras ciudades del país. Cada examen tiene su propio calendario de sesiones y su inscripción, así que conviene confirmar fecha y sede con anticipación.',
+  },
+  {
+    q: '¿Qué nivel de francés necesito para estudiar en Francia?',
+    a: 'La mayoría de programas universitarios en francés piden B2. Algunos posgrados y programas selectivos piden C1. Si el programa se dicta en inglés, suele bastar un nivel básico de francés para la vida diaria, pero conviene verificarlo con la universidad.',
   },
 ];
 
@@ -289,6 +363,16 @@ export default function ClasesDeFrancesPage() {
           <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
         </div>
 
+        {/* ══════════════ FUNDADORES ══════════════ */}
+        <FoundersBand
+          accent="#1a2ecc"
+          title="Dos políglotas te enseñan francés. No un curso grabado."
+          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad — y una de ellas estudió en Francia."
+          davidLine="Habla ocho idiomas. Llegó al francés después del inglés, el italiano y el portugués — y ese recorrido es exactamente el método que hoy usamos con hispanohablantes."
+          zhannaLine="Estudió en Francia y en Inglaterra. Esa experiencia académica dentro del sistema francés es la que respalda nuestra preparación DELF y DALF."
+          zhannaTags={['Estudió en Francia', 'Preparación DELF / DALF', 'Diseño curricular']}
+        />
+
         {/* ══════════════ WHY ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
@@ -347,12 +431,13 @@ export default function ClasesDeFrancesPage() {
               </div>
               <div className={s.instructorText}>
                 <p className={s.sectionEyebrow}>Tu instructor</p>
-                <h2 className={s.h2}>David habla 8 idiomas. El francés fue el segundo.</h2>
+                <h2 className={s.h2}>David habla 8 idiomas. El francés fue el cuarto.</h2>
                 <p className={s.instructorP}>
-                  Después del inglés, el francés fue el idioma que le enseñó a David que
-                  aprender un idioma &ldquo;difícil&rdquo; es cuestión de método, no de talento.
-                  Compartimos raíces con el español, pero la pronunciación y la lógica
-                  gramatical exigen un camino estructurado.
+                  David llegó al francés después del inglés, el italiano y el portugués. Para
+                  entonces ya sabía algo que casi nadie te dice: aprender un idioma
+                  &ldquo;difícil&rdquo; es cuestión de método, no de talento. El francés comparte
+                  raíces con el español, pero su pronunciación y su lógica gramatical exigen un
+                  camino estructurado.
                 </p>
                 <p className={s.instructorP}>
                   Esa experiencia personal es la base del método WeLearn para francés:
@@ -401,6 +486,53 @@ export default function ClasesDeFrancesPage() {
                 Preparar mi DELF ahora →
               </a>
             </div>
+          </div>
+        </section>
+
+        {/* ══════════════ CANADÁ (SEO/AEO) ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Francés para migrar</p>
+            <h2 className={s.h2}>¿El DELF sirve para migrar a Canadá?</h2>
+            <p className={s.sectionSub}>
+              No. Es el error más caro y más común: mucha gente estudia y presenta el DELF pensando
+              que le sirve para su proceso migratorio, y no es el examen que aceptan las
+              autoridades canadienses. Para inmigración necesitas <strong>TEF Canada</strong> o
+              <strong> TCF Canada</strong>; para Quebec, la variante que exija el programa.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>DELF / DALF</span>
+                <p className={s.levelTitle}>Para estudiar y certificar</p>
+                <p className={s.levelDesc}>
+                  Diploma oficial del Ministerio de Educación de Francia. No caduca. Es el que
+                  piden universidades francesas y el que sirve para acreditar tu nivel ante
+                  empleadores. No es el examen de los trámites migratorios canadienses.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>TEF / TCF</span>
+                <p className={s.levelTitle}>Para inmigración a Canadá</p>
+                <p className={s.levelDesc}>
+                  Son pruebas de nivel con vigencia limitada — típicamente dos años — y son las
+                  versiones &ldquo;Canada&rdquo; las que reconocen los procesos migratorios. Tu resultado se
+                  traduce a niveles NCLC, que es lo que suma puntos.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Qué hacemos</span>
+                <p className={s.levelTitle}>Un solo camino, dos salidas</p>
+                <p className={s.levelDesc}>
+                  El francés que necesitas es el mismo; lo que cambia es el formato de la prueba.
+                  Te llevamos al nivel y después entrenamos el examen concreto que tu trámite
+                  exige, sin que estudies dos veces.
+                </p>
+              </div>
+            </div>
+            <p className={s.sectionSub} style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
+              Los requisitos migratorios cambian con frecuencia. Confirma siempre el examen y el
+              nivel exacto en la fuente oficial del programa al que apliques antes de inscribirte.
+            </p>
           </div>
         </section>
 
@@ -474,7 +606,7 @@ export default function ClasesDeFrancesPage() {
           <div className={s.ctaBox}>
             <p className={s.ctaPhrase}>C'est parti !</p>
             <h2 className={s.ctaTitle}>
-              Tu primera clase de francés<br />
+              Tu diagnóstico de francés<br />
               <span className={s.accent}>es gratis.</span>
             </h2>
             <p className={s.ctaSub}>
