@@ -40,54 +40,12 @@ export const metadata: Metadata = {
 };
 
 // ── JSON-LD ───────────────────────────────────────────────────────────────────
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: '¿Qué exámenes de inglés preparan en WeLearn?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso. Se consulta por WhatsApp al 300 500 4253.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Tienen paquetes de horas de inglés con descuento?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Hay paquetes prepago de clases en vivo, y a mayor número de horas menor es el valor por hora. Las opciones vigentes se consultan por WhatsApp al 300 500 4253.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Hay clases de inglés presenciales en Bucaramanga?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Las dos modalidades están disponibles. WeLearn tiene sede en la Calle 47 # 29-33, barrio Sotomayor, donde las clases pueden ser presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta; desde cualquier otra ciudad son por videollamada, con el mismo tutor y el mismo plan. También se puede alternar entre ambos formatos.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto tiempo necesito para prepararme para el IELTS?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cómo funciona la clase de diagnóstico gratis?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo (examen, trabajo, migración) y diseñamos el plan de preparación más eficiente para ti. Sin costo y sin compromiso.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Las clases son individuales o grupales?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Ofrecemos clases 1:1 (individuales) con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes. El plan es personal desde el primer día.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Puedo tomar clases si vivo fuera de Bucaramanga?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí. WeLearn tiene sede en Bucaramanga, donde las clases pueden ser presenciales, y atiende online por videollamada al resto del país. Hay estudiantes en Bogotá, Medellín, Cali, Barranquilla, otras ciudades de Colombia y en el exterior.' },
-    },
-  ],
-};
 
 const FAQS = [
+  { q: '¿Dónde puedo presentar el examen IELTS en Bucaramanga?', a: 'En la UNAB, que es la sede avalada por el British Council en Santander. La inscripción y el pago se hacen directamente con el British Council, no en la universidad. Es el examen internacional de inglés más cómodo de presentar desde Bucaramanga, porque no obliga a viajar.' },
+  { q: '¿Puedo presentar el TOEFL iBT en Bucaramanga?', a: 'No nos consta que exista sede de TOEFL iBT en la ciudad, así que cuenta con viajar. Cuidado con una confusión muy común: el TOEFL ITP que se ofrece localmente es un examen diferente, con otros usos, y no reemplaza al iBT que piden las universidades del exterior. Confirma siempre en la fuente oficial antes de pagar.' },
+  { q: '¿Qué nivel de inglés necesito para graduarme de la universidad en Bucaramanga?', a: 'Depende de la universidad y varía bastante: va desde A1 en pregrado en la UIS hasta B2 en la UNAB, pasando por B1 en la UPB, la USTA y la UDES. Las UTS piden B1 en tecnología y B2 en el ciclo profesional. Muchas permiten homologar el requisito con un examen internacional. Confirma tu caso con tu facultad, porque los reglamentos cambian.' },
+  { q: '¿Qué nivel de inglés piden los call centers bilingües en Bucaramanga?', a: 'Hoy el estándar es B2, que en muchas convocatorias se expresa como un 80% de dominio. Es un salto real frente al B1 que se pedía hace unos años. En el área metropolitana operan compañías como TP, Concentrix, Lean Solutions, Accedo, Atento y Solvo, y los cargos bilingües pagan por encima de los monolingües.' },
   { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
   { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos al 300 500 4253.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
@@ -97,6 +55,18 @@ const FAQS = [
   { q: '¿Las clases son individuales o grupales?', a: 'Ofrecemos clases 1:1 con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes.' },
   { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. En Bucaramanga y su área metropolitana puedes venir presencialmente; desde cualquier otra ciudad la clase es online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
 ];
+
+// El FAQPage se deriva de FAQS para que el marcado y el texto visible no puedan
+// divergir: si divergen, Google puede tratarlo como contenido engañoso.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -550,6 +520,86 @@ export default function ClasesDeInglesPage() {
 
       {/* ── SIMULACRO HOOK ───────────────────────────────────────────────── */}
       {/* ── BUCARAMANGA (SEO LOCAL) ─────────────────────────────────────── */}
+      {/* ══════════════ EXÁMENES EN BUCARAMANGA (SEO local + AEO) ══════════════ */}
+      <section className="wlh-section">
+        <div className="wrap">
+          <p className="wlh-section-eyebrow">Dónde se presenta cada examen</p>
+          <h2 className="wlh-section-h2">El IELTS sí se presenta en Bucaramanga. El TOEFL iBT no.</h2>
+          <p className="wlh-section-desc">
+            Es una diferencia que cambia el plan y el presupuesto, y casi nadie la explica antes de
+            que la gente pague la inscripción.
+          </p>
+          <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
+            <div className={s.intentCard}>
+              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>IELTS · en la ciudad</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+                Se aplica en Bucaramanga, en la UNAB, que es la sede avalada por el British Council
+                en Santander. La inscripción y el pago se hacen con el British Council, no en la
+                universidad. Es el examen más cómodo de presentar desde aquí.
+              </p>
+            </div>
+            <div className={s.intentCard}>
+              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>TOEFL iBT · toca viajar</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+                No confirmamos ninguna sede de TOEFL iBT en Bucaramanga. Ojo con una confusión
+                frecuente: el TOEFL ITP que se ofrece localmente es un examen distinto, con otros
+                usos, y no reemplaza al iBT que piden las universidades del exterior.
+              </p>
+            </div>
+            <div className={s.intentCard}>
+              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>Cambridge e ICFES</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+                El Cambridge B2 First entrega un certificado que no caduca. El ICFES es otra cosa:
+                mide solo comprensión lectora y su nivel más alto es B1, así que no sirve como
+                certificación internacional.
+              </p>
+            </div>
+          </div>
+          <p className="wlh-section-desc" style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
+            Las sedes, las fechas y los valores cambian cada año. Confirma siempre en la fuente
+            oficial del examen antes de inscribirte.
+          </p>
+        </div>
+      </section>
+
+      {/* ══════════════ REQUISITO DE GRADO (SEO local) ══════════════ */}
+      <section className="wlh-section wlh-section--alt">
+        <div className="wrap">
+          <p className="wlh-section-eyebrow">Universidades de Bucaramanga</p>
+          <h2 className="wlh-section-h2">¿Qué nivel de inglés te exigen para graduarte?</h2>
+          <p className="wlh-section-desc">
+            No es el mismo en todas, y la diferencia es grande: hay universidades de la ciudad que
+            piden A1 y otras que piden B2. Saber cuál te aplica define cuántos meses necesitas.
+          </p>
+          <div className={s.grid3} style={{ marginTop: '2.5rem' }}>
+            <div className={s.intentCard}>
+              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>El rango va de A1 a B2</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+                La UIS pide A1 en pregrado —y sube a A2 en maestría y B1 en doctorado—, mientras
+                que la UNAB exige B2. La UPB, la USTA y la UDES se mueven alrededor de B1, y las
+                UTS piden B1 en tecnología y B2 en el ciclo profesional.
+              </p>
+            </div>
+            <div className={s.intentCard}>
+              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>Casi todas aceptan certificados externos</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+                Varias homologan el requisito con un examen internacional en lugar de obligarte a
+                cursar todos los niveles. Si ya ibas a presentar el IELTS o el TOEFL, puedes
+                resolver dos cosas con un solo examen.
+              </p>
+            </div>
+            <div className={s.intentCard}>
+              <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--ink)' }}>Verifica tu caso antes de pagar</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+                Los reglamentos cambian y cada programa tiene sus excepciones. Confirma con tu
+                facultad qué nivel te aplica y qué certificados acepta; nosotros armamos el plan
+                para llegar ahí en el tiempo que tengas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <LocalBand
         accent="#1a4fcc"
         idioma="inglés"

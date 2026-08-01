@@ -132,12 +132,14 @@ const TIPS = [
   },
 ];
 
+// Escala oficial del ICFES para la prueba de inglés del Saber 11.
+// Son cuatro niveles y B1 es el techo: el examen NO reporta B2, C1 ni C2, y ya no
+// existen las etiquetas "A−" ni "B+" que circulan en mucho contenido desactualizado.
 const SCORES = [
-  { level: 'A-', label: 'Nivel A−', pts: '0–37',  color: '#dc2626', desc: 'No alcanza nivel A. Necesita preparación intensiva.' },
-  { level: 'A1', label: 'Nivel A1',  pts: '38–49', color: '#ea580c', desc: 'Básico. Comprende frases muy simples.' },
-  { level: 'A2', label: 'Nivel A2',  pts: '50–65', color: '#d97706', desc: 'Pre-intermedio. La mayoría de los estudiantes.' },
-  { level: 'B1', label: 'Nivel B1',  pts: '66–80', color: '#2563eb', desc: 'Intermedio. Por encima del promedio nacional.' },
-  { level: 'B2', label: 'Nivel B2',  pts: '81–100', color: '#16a34a', desc: 'Intermedio-alto. Puntaje excelente. Top 10%.' },
+  { level: 'PreA1', label: 'Pre A1', pts: '0–36',   color: '#dc2626', desc: 'Por debajo del primer nivel del MCER. Necesita preparación desde la base.' },
+  { level: 'A1',    label: 'Nivel A1', pts: '37–57', color: '#ea580c', desc: 'Básico. Comprende frases y avisos muy simples.' },
+  { level: 'A2',    label: 'Nivel A2', pts: '58–70', color: '#d97706', desc: 'Pre-intermedio. Donde se ubica buena parte de los estudiantes.' },
+  { level: 'B1',    label: 'Nivel B1', pts: '71–100', color: '#16a34a', desc: 'Intermedio. Es el nivel más alto que reporta el examen.' },
 ];
 
 const FAQS = [

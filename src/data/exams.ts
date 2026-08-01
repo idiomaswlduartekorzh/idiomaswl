@@ -152,7 +152,7 @@ export const EXAMS: Record<string, Exam> = {
     scoreName: 'Puntaje',
     passing: 'Variable por universidad (generalmente 50+ para acceso)',
     recognized: ['Universidades colombianas públicas y privadas', 'Becas Ser Pilo Paga / Generación E', 'Admisión especial ICETEX'],
-    levels: ['A–', 'A1', 'A2', 'B1', 'B+'],
+    levels: ['Pre A1', 'A1', 'A2', 'B1'],
     sections: [
       { name: 'Parte 1', icon: '🪧', time: '~6 min',  questions: 5,  color: '#14215c', types: ['Avisos e instrucciones: identificar dónde se ve el aviso (3 opciones)'] },
       { name: 'Parte 2', icon: '🔤', time: '~7 min',  questions: 5,  color: '#1e3270', types: ['Vocabulario: relacionar descripción con palabra del banco (A–G)'] },
