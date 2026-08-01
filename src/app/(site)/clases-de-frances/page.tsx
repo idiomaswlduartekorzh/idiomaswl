@@ -2,12 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
+import LocalBand from '@/components/hub/LocalBand';
+import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import s from './page.module.css';
 
 const WA = '573005004253';
 const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
 const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DELF con WeLearn. ¿Cuándo puedo empezar?');
-const WA_BUCARAMANGA = encodeURIComponent('Hola, estoy en Bucaramanga y quiero saber sobre las clases de francés presenciales. ¿Cómo funcionan?');
 
 export const metadata: Metadata = {
   title: 'Clases de Francés en Bucaramanga y Online — Preparación DELF/DALF | WeLearn',
@@ -144,31 +145,7 @@ const jsonLd = {
         name: 'Idiomas WeLearn',
         url: 'https://www.idiomaswl.com',
       },
-      hasCourseInstance: [
-        {
-          '@type': 'CourseInstance',
-          name: 'Francés online',
-          courseMode: 'online',
-          inLanguage: 'fr',
-          courseWorkload: 'PT1H',
-          instructor: [
-            { '@id': 'https://www.idiomaswl.com/#david' },
-            { '@id': 'https://www.idiomaswl.com/#zhanna' },
-          ],
-        },
-        {
-          '@type': 'CourseInstance',
-          name: 'Francés presencial en Bucaramanga',
-          courseMode: 'onsite',
-          inLanguage: 'fr',
-          courseWorkload: 'PT1H',
-          location: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
-          instructor: [
-            { '@id': 'https://www.idiomaswl.com/#david' },
-            { '@id': 'https://www.idiomaswl.com/#zhanna' },
-          ],
-        },
-      ],
+      hasCourseInstance: courseInstances('Francés', 'fr'),
       offers: {
         '@type': 'Offer',
         price: '0',
@@ -177,72 +154,15 @@ const jsonLd = {
         availability: 'https://schema.org/InStock',
       },
     },
-    {
-      '@type': ['LocalBusiness', 'LanguageSchool'],
-      '@id': 'https://www.idiomaswl.com/#localbusiness',
-      name: 'Idiomas WeLearn',
-      alternateName: 'WeLearn Academia de Idiomas',
-      description:
-        'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Francés con preparación DELF, DALF y TCF/TEF, además de inglés, coreano, alemán, italiano y portugués.',
-      url: 'https://www.idiomaswl.com',
-      telephone: '+573005004253',
-      email: 'info@idiomaswl.com',
-      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
-      priceRange: '$$',
-      currenciesAccepted: 'COP',
-      paymentAccepted: 'Cash, Credit Card, Transfer',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Calle 47 # 29-33, Sotomayor',
-        addressLocality: 'Bucaramanga',
-        addressRegion: 'Santander',
-        postalCode: '680001',
-        addressCountry: 'CO',
-      },
-      geo: { '@type': 'GeoCoordinates', latitude: 7.1193, longitude: -73.1227 },
-      areaServed: [
-        { '@type': 'City', name: 'Bucaramanga' },
-        { '@type': 'City', name: 'Floridablanca' },
-        { '@type': 'City', name: 'Girón' },
-        { '@type': 'City', name: 'Piedecuesta' },
-        { '@type': 'Country', name: 'Colombia' },
-      ],
-      hasMap: 'https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn',
-      openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
-      founder: [
-        { '@id': 'https://www.idiomaswl.com/#david' },
-        { '@id': 'https://www.idiomaswl.com/#zhanna' },
-      ],
-      knowsLanguage: ['fr', 'en', 'es', 'de', 'it', 'pt', 'ko'],
-      sameAs: [
-        'https://wa.me/573005004253',
-        'https://www.facebook.com/welearnc/',
-        'https://www.instagram.com/idiomas_welearn/',
-        'https://www.tiktok.com/@idiomas.welearn',
-      ],
-    },
-    {
-      '@type': 'Person',
-      '@id': 'https://www.idiomaswl.com/#david',
-      name: 'José David Duarte Silva',
-      jobTitle: 'Políglota y co-fundador de Idiomas WeLearn',
-      description:
-        'Políglota activo en ocho idiomas. Aprendió francés después del inglés, el italiano y el portugués, y de ese recorrido nació el método WeLearn de francés para hispanohablantes.',
-      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
-      knowsLanguage: ['es', 'en', 'fr', 'it', 'pt', 'de', 'ko', 'ru'],
-      worksFor: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
-    },
-    {
-      '@type': 'Person',
-      '@id': 'https://www.idiomaswl.com/#zhanna',
-      name: 'Zhanna Korzh',
-      jobTitle: 'Co-fundadora y directora académica de Idiomas WeLearn',
-      description:
-        'Co-fundadora y directora académica de WeLearn. Estudió en Francia y en Inglaterra, y lidera el diseño curricular y la preparación de exámenes DELF y DALF.',
-      image: 'https://www.idiomaswl.com/images/team-zhanna-korzh.png',
-      knowsLanguage: ['es', 'en', 'fr'],
-      worksFor: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
-    },
+    localBusinessNode(
+      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Francés con preparación DELF, DALF y TCF/TEF, además de inglés, coreano, alemán, italiano y portugués.'
+    ),
+    davidNode(
+      'Políglota activo en ocho idiomas. Aprendió francés después del inglés, el italiano y el portugués, y de ese recorrido nació el método WeLearn de francés para hispanohablantes.'
+    ),
+    zhannaNode(
+      'Co-fundadora y directora académica de WeLearn. Estudió en Francia y en Inglaterra, y lidera el diseño curricular y la preparación de exámenes DELF y DALF.'
+    ),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -561,57 +481,13 @@ export default function ClasesDeFrancesPage() {
         </section>
 
         {/* ══════════════ BUCARAMANGA (SEO LOCAL) ══════════════ */}
-        <section className={s.section}>
-          <div className={s.wrap}>
-            <p className={s.sectionEyebrow}>Bucaramanga y área metropolitana</p>
-            <h2 className={s.h2}>Clases de francés en Bucaramanga: presencial u online</h2>
-            <p className={s.sectionSub}>
-              WeLearn es una academia de idiomas con base en Bucaramanga. Si estás en la ciudad o
-              en el área metropolitana, puedes estudiar francés presencialmente con nosotros; si
-              prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo
-              profesor y el mismo plan, se hace por videollamada.
-            </p>
-            <div className={s.levelsGrid}>
-              <div className={s.levelCard}>
-                <span className={s.levelTag}>Presencial</span>
-                <p className={s.levelTitle}>Bucaramanga, Floridablanca, Girón y Piedecuesta</p>
-                <p className={s.levelDesc}>
-                  Clases cara a cara para quienes rinden más con el profesor al lado. Ideal si
-                  vas a presentar el DELF y quieres entrenar la expresión oral sin la barrera de
-                  la pantalla.
-                </p>
-              </div>
-              <div className={s.levelCard}>
-                <span className={s.levelTag}>Online</span>
-                <p className={s.levelTitle}>Desde cualquier ciudad de Colombia</p>
-                <p className={s.levelDesc}>
-                  Bogotá, Medellín, Cali, Barranquilla o el exterior. Videollamada con tutor
-                  asignado, plan personalizado y todo el material de práctica de la plataforma
-                  incluido.
-                </p>
-              </div>
-              <div className={s.levelCard}>
-                <span className={s.levelTag}>Mixto</span>
-                <p className={s.levelTitle}>Cambia de formato cuando lo necesites</p>
-                <p className={s.levelDesc}>
-                  No tienes que elegir de por vida. Muchos estudiantes de Bucaramanga alternan:
-                  presencial cuando pueden, online cuando la semana se complica. El plan y el
-                  progreso son los mismos.
-                </p>
-              </div>
-            </div>
-            <div style={{ marginTop: '2.5rem' }}>
-              <a
-                href={`https://wa.me/${WA}?text=${WA_BUCARAMANGA}`}
-                target="_blank" rel="noopener noreferrer"
-                className={s.waBtn}
-              >
-                <WaIcon />
-                Preguntar por clases en Bucaramanga
-              </a>
-            </div>
-          </div>
-        </section>
+        <LocalBand
+          accent="#1a2ecc"
+          idioma="francés"
+          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar francés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          presencial="Clases cara a cara para quienes rinden más con el profesor al lado. Ideal si vas a presentar el DELF y quieres entrenar la expresión oral sin la barrera de la pantalla."
+          waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de francés presenciales. ¿Cómo funcionan?"
+        />
 
         {/* ══════════════ CANADÁ (SEO/AEO) ══════════════ */}
         <section className={s.section}>

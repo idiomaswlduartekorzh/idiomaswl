@@ -1,0 +1,110 @@
+/* Banda de presencia local en Bucaramanga. Autoportante: el color entra por --lb-accent. */
+
+.band {
+  padding: 5rem 0;
+  text-align: center;
+  background: var(--bg);
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lb-accent);
+  margin: 0 0 0.5rem;
+}
+
+.title {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 1rem;
+  color: var(--fg);
+}
+
+.sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.card {
+  padding: 1.4rem;
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--lb-accent) 28%, transparent);
+  background: color-mix(in srgb, var(--lb-accent) 5%, transparent);
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--lb-accent);
+  background: color-mix(in srgb, var(--lb-accent) 12%, transparent);
+  padding: 3px 9px;
+  border-radius: 100px;
+  margin-bottom: 0.7rem;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.45rem;
+  color: var(--fg);
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Ficha NAP — la dirección visible refuerza la señal local del marcado. */
+.nap {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
+  border: 1px dashed var(--border, rgba(127, 127, 127, 0.3));
+  display: inline-block;
+  text-align: left;
+}
+
+.napLine {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.napStrong { color: var(--fg); font-weight: 700; }
+
+.napLink {
+  color: var(--lb-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.napLink:hover { text-decoration: underline; }
+
+.cta { margin-top: 2rem; }
