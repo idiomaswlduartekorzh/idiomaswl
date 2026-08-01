@@ -208,3 +208,36 @@ El usuario pidió explícitamente: **francés al 100% primero, y ahí sí escala
 **Italiano completado (commit `d2e6e96`).** Hallazgo diferencial: la sede de Bogotá dejó de aplicar el examen corto de "B1 Ciudadanía" y ahora exige el CILS B1 completo. Ángulo local: el consulado honorario de Italia en Bucaramanga cubre tres departamentos y no hay ninguna sede de examen ni academia especializada en su territorio. De paso se corrigieron tres datos que yo mismo había publicado mal (sedes de PLIDA sin Medellín, tiempos de resultado del examen corto, y la exigencia de B1 por descendencia).
 
 Inglés merece tratamiento aparte: no se pelea el head term nacional, se pelea `clases de inglés Bucaramanga` y el clúster de exámenes. Ya existe `/clases-de-ingles-bucaramanga`, que es el activo local más defendible del sitio y hoy está infrautilizado.
+
+
+---
+
+## 10. Cierre del plan (2026-08-01)
+
+**Los 8 hubs están en producción, más "Quiénes somos" y el nav reorganizado.**
+
+| Idioma | Commit | Hallazgo diferencial |
+|---|---|---|
+| Francés | `099a0ab` | El DELF **no sirve** para migrar a Canadá; se usan TEF/TCF Canada. |
+| Italiano | `d2e6e96` | En Bogotá **ya no existe** el examen corto de "B1 Ciudadanía": ahora es el CILS B1 completo. Consulado honorario en Bucaramanga con jurisdicción sobre 3 departamentos, y cero sedes de examen. |
+| Portugués | `cad60ae` | **El Celpe-Bras sí se aplica en Bucaramanga** (IBRACO, sede UNAB). Es el único examen de idiomas que no obliga a viajar. Y "curso de portugués bucaramanga" es la 2ª sugerencia de autocompletado en Colombia. |
+| Ruso | `5788f91` | Página nueva. Cero competencia local: ni UIS ni UNAB lo enseñan. En Colombia **no hay centro examinador permanente** de ТРКИ. |
+| Alemán | `ee71073` | El nivel depende del trámite, no del "curso": A1 visa familiar, B1 Ausbildung (B2 de facto en salud), B1→B2 enfermería, A1/B1/B2 Chancenkarte, ~C1 universidad. Goethe **no se aplica** en Santander. |
+| Japonés | `5e0d4c0` | Página nueva. En Colombia el JLPT se aplica **una sola vez al año** (julio, solo Bogotá), frente a dos en el resto del mundo. Y las 5 vocales del japonés son las del español. |
+| Coreano | `5e0d4c0` | Puesto al patrón: Zhanna no aparecía, y su sección de práctica enlazaba 2 destinos de los 8 disponibles. |
+| Inglés | `415a41b` | Las dos landings tenían **cero** enlaces a `/practica`, siendo el idioma con más contenido del sitio (32 rutas + 3 simulacros). |
+
+**Nav final (`59dc06c`):** `Home · Idiomas ▾ · Exámenes · Práctica · Quiénes somos · Blog · Precios`. Se retiraron Inglés, Coreano y Nivel Radar como ítems sueltos, según lo acordado. **Blog y Precios se conservaron** porque no estaban en la lista de retirados y quitarlos dejaría esas páginas sin entrada — si se quieren fuera, es una línea.
+
+### 10.1 Infraestructura compartida creada
+
+`src/components/hub/`: `FoundersBand`, `PracticeBand`, `LocalBand` y `localBusiness.ts` (fuente única del NAP y constructores de `localBusinessNode`, `davidNode`, `zhannaNode`, `courseInstances`). Añadir un idioma nuevo es enchufar tres componentes, no copiar 40 líneas de JSON-LD.
+
+`robots.ts` declara explícitamente GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot, Google-Extended y Applebot-Extended. El comodín ya los permitía; queda explícito para que nadie los bloquee por error.
+
+### 10.2 Lo que sigue pendiente
+
+1. **Fotos y reseñas en el Perfil de Empresa de Google.** Es el factor de mayor peso del pack local y no se puede tocar desde el código. Sin eso, el marcado ayuda pero no basta.
+2. **Fase 4f — clúster de blog long-tail por idioma.** Es lo que falta para pasar de "bien enlazado" a competir de verdad por volumen.
+3. **Verificar anualmente** los datos de examen y migración de cada hub. Están redactados evitando cifras que caduquen rápido, pero calendarios y requisitos cambian.
+4. Decidir si Blog y Precios salen del nav.
