@@ -8,17 +8,83 @@ import type { User } from '@supabase/supabase-js';
 import Image from 'next/image';
 import { useTheme } from '@/components/ThemeProvider';
 
+// ⚠️ NUNCA borrar "Práctica": se ha perdido varias veces en force-pushes.
 const NAV_LINKS = [
-  { label: 'Home',      href: '/home' },
-  { label: 'Nivel Radar', href: '/nivel-radar' },
-  { label: 'Inglés',    href: '/clases-de-ingles' },
-  { label: 'Coreano',   href: '/clases-de-coreano' },
-  { label: 'Idiomas',   href: '/clases-de-idiomas' },
-  { label: 'Exámenes',  href: '/examenes' },
-  { label: 'Práctica',  href: '/practica' },
-  { label: 'Blog',      href: '/blog' },
-  { label: 'Precios',   href: '/precios' },
+  { label: 'Home',           href: '/home' },
+  { label: 'Exámenes',       href: '/examenes' },
+  { label: 'Práctica',       href: '/practica' },
+  { label: 'Quiénes somos',  href: '/quienes-somos' },
+  { label: 'Blog',           href: '/blog' },
+  { label: 'Precios',        href: '/precios' },
 ];
+
+// Los ocho idiomas viven dentro del desplegable "Idiomas", que se inserta
+// después de "Home". Inglés, Coreano y Nivel Radar dejaron de ser ítems sueltos.
+const IDIOMAS = [
+  { label: 'Inglés',    native: 'English',  href: '/clases-de-ingles' },
+  { label: 'Italiano',  native: 'Italiano', href: '/clases-de-italiano' },
+  { label: 'Portugués', native: 'Português', href: '/clases-de-portugues' },
+  { label: 'Francés',   native: 'Français', href: '/clases-de-frances' },
+  { label: 'Ruso',      native: 'Русский',  href: '/clases-de-ruso' },
+  { label: 'Alemán',    native: 'Deutsch',  href: '/clases-de-aleman' },
+  { label: 'Japonés',   native: '日本語',    href: '/clases-de-japones' },
+  { label: 'Coreano',   native: '한국어',    href: '/clases-de-coreano' },
+];
+
+/** Verdadero cuando la ruta actual es una landing de idioma o el hub. */
+function isIdiomasPath(pathname: string) {
+  return pathname.startsWith('/clases-de-');
+}
+
+function IdiomasDropdown({ pathname }: { pathname: string }) {
+  const [open, setOpen] = useState(false);
+  const active = isIdiomasPath(pathname);
+
+  // Cierra al navegar a otra ruta.
+  useEffect(() => { setOpen(false); }, [pathname]);
+
+  return (
+    <div
+      className="wl-site-nav__dd"
+      data-open={open}
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+      onBlur={e => { if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(false); }}
+    >
+      <button
+        type="button"
+        className={`wl-site-nav__dd-btn${active ? ' is-active' : ''}`}
+        aria-expanded={open}
+        aria-haspopup="true"
+        onClick={() => setOpen(o => !o)}
+      >
+        Idiomas
+        <svg className="wl-site-nav__dd-caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+          <path d="M1 3.5 5 7l4-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="wl-site-nav__dd-menu" role="menu">
+          {IDIOMAS.map(({ label, native, href }) => (
+            <Link
+              key={href}
+              href={href}
+              role="menuitem"
+              className={`wl-site-nav__dd-item${pathname.startsWith(href) ? ' is-active' : ''}`}
+            >
+              {label}
+              <span className="wl-site-nav__dd-native">{native}</span>
+            </Link>
+          ))}
+          <Link href="/clases-de-idiomas" role="menuitem" className="wl-site-nav__dd-item wl-site-nav__dd-all">
+            Ver todos los idiomas →
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+}
 
 
 function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
@@ -163,25 +229,10 @@ export default function SiteNav() {
         {/* Desktop links */}
         <nav className="wl-site-nav__links" aria-label="Navegación principal">
           {NAV_LINKS.map(({ label, href }) => {
-            const active = href.startsWith('/examenes')
-              ? pathname.startsWith('/examenes')
-              : href === '/nivel-radar'
-              ? pathname.startsWith('/nivel-radar')
-              : href === '/practica'
-              ? pathname.startsWith('/practica') || pathname.startsWith('/aprende-coreano')
-              : href === '/clases-de-ingles'
-              ? pathname.startsWith('/clases-de-ingles')
-              : href === '/clases-de-coreano'
-              ? pathname.startsWith('/clases-de-coreano')
-              : href === '/clases-de-idiomas'
-              ? pathname.startsWith('/clases-de-') && !pathname.startsWith('/clases-de-ingles') && !pathname.startsWith('/clases-de-coreano')
-              : href === '/practica'
-              ? pathname.startsWith('/practica')
-              : href === '/blog'
-              ? pathname.startsWith('/blog')
-              : href === '/precios'
-              ? pathname === '/precios'
-              : pathname === '/home';
+            const active =
+              href === '/home' ? pathname === '/home'
+              : href === '/practica' ? pathname.startsWith('/practica') || pathname.startsWith('/aprende-coreano')
+              : pathname.startsWith(href);
 
             return (
               <Link
@@ -192,7 +243,10 @@ export default function SiteNav() {
                 {label}
               </Link>
             );
-          })}
+          }).flatMap((el, i) =>
+            // El desplegable de Idiomas va justo después de "Home".
+            i === 0 ? [el, <IdiomasDropdown key="idiomas" pathname={pathname} />] : [el]
+          )}
         </nav>
 
         {/* CTA / User */}
@@ -225,10 +279,32 @@ export default function SiteNav() {
       {/* Mobile menu */}
       {menuOpen && (
         <nav className="wl-site-nav__mobile">
-          {NAV_LINKS.map(({ label, href }) => (
-            <Link key={href} href={href} className="wl-site-nav__mobile-link" onClick={() => setMenuOpen(false)}>
-              {label}
-            </Link>
+          {NAV_LINKS.map(({ label, href }, i) => (
+            <div key={href}>
+              <Link href={href} className="wl-site-nav__mobile-link" onClick={() => setMenuOpen(false)}>
+                {label}
+              </Link>
+              {i === 0 && (
+                <>
+                  <span className="wl-site-nav__mobile-link" aria-hidden="true">Idiomas</span>
+                  <div className="wl-site-nav__mobile-sub">
+                    {IDIOMAS.map(idioma => (
+                      <Link
+                        key={idioma.href}
+                        href={idioma.href}
+                        className={`wl-site-nav__mobile-sublink${pathname.startsWith(idioma.href) ? ' is-active' : ''}`}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {idioma.label}
+                      </Link>
+                    ))}
+                    <Link href="/clases-de-idiomas" className="wl-site-nav__mobile-sublink" onClick={() => setMenuOpen(false)}>
+                      Ver todos →
+                    </Link>
+                  </div>
+                </>
+              )}
+            </div>
           ))}
           <SocialLinks className="wl-site-nav__social wl-site-nav__social--mobile" />
           <div style={{ display: 'flex', gap: 8, padding: '1rem 0 0' }}>
