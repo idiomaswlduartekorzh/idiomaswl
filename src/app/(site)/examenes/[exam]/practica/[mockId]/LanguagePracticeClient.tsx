@@ -31,6 +31,10 @@ function isYouTube(url?: string) {
   return !!url && (url.includes('youtube.com') || url.includes('youtu.be'));
 }
 
+function isVideoFile(url?: string) {
+  return !!url && /\.(mp4|webm|mov)(\?|$)/i.test(url);
+}
+
 function formatTime(s: number) {
   const m = Math.floor(s / 60).toString().padStart(2, '0');
   const sec = Math.floor(s % 60).toString().padStart(2, '0');
@@ -139,6 +143,14 @@ function MediaPlayer({ url }: { url: string }) {
           className="lang-media__iframe"
           title="Estímulo de audio/video"
         />
+      </div>
+    );
+  }
+
+  if (isVideoFile(url)) {
+    return (
+      <div className="lang-media lang-media--video">
+        <video src={resolveAudioUrl(url)} controls className="lang-media__iframe" />
       </div>
     );
   }

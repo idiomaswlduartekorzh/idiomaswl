@@ -50,11 +50,11 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com data:",
       // Supabase project URL for storage, auth and realtime + GA4 + Meta Pixel
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://www.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net",
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net",
       // Images: own domain + Supabase storage + data URIs + blob (canvas) + GA4 + Meta Pixel
       "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com",
       // GTM noscript iframe
-      "frame-src 'self' https://www.googletagmanager.com",
+      "frame-src 'self' https://www.googletagmanager.com https://www.youtube.com",
       // Audio/video from own server + Supabase storage + blob (MediaRecorder)
       "media-src 'self' blob: https://*.supabase.co",
       // Worker scripts (Next.js service worker / audio worklets)
@@ -74,6 +74,17 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
+  },
+
+  // Tree-shaking de barrels: importa solo lo usado de estas librerías pesadas
+  // en lugar del paquete completo. Reduce el JS sin usar en el bundle inicial.
+  experimental: {
+    optimizePackageImports: [
+      'framer-motion',
+      'lucide-react',
+      'recharts',
+      '@wavesurfer/react',
+    ],
   },
 
   // Remove the X-Powered-By: Next.js response header (minor security improvement)
@@ -112,18 +123,6 @@ const nextConfig: NextConfig = {
         source: '/(.*)',
         headers: securityHeaders,
       },
-    ];
-  },
-
-  async redirects() {
-    // El motor de lectura de inglés se unificó en las URLs canónicas /practica/ingles/{nivel}/lectura.
-    // Las rutas localizadas viejas (/es/ y /en/) se redirigen permanentemente para no fragmentar
-    // el direccionamiento en Google ni dejar contenido duplicado.
-    return [
-      { source: '/es/practica/ingles/:level/lectura', destination: '/practica/ingles/:level/lectura', permanent: true },
-      { source: '/es/practica/ingles/:level/lectura/:slug', destination: '/practica/ingles/:level/lectura/:slug', permanent: true },
-      { source: '/en/practice/english/:level/reading', destination: '/practica/ingles/:level/lectura', permanent: true },
-      { source: '/en/practice/english/:level/reading/:slug', destination: '/practica/ingles/:level/lectura/:slug', permanent: true },
     ];
   },
 };

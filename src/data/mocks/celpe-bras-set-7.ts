@@ -15,7 +15,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'writing', title: 'Tarefa 1 – Produção a partir de vídeo',
       instructions: 'Assista ao vídeo oficial do CELPE-BRAS (edição 2003/2). Preste atenção ao tema e às informações apresentadas. Depois, redija o texto solicitado em português.',
-      audioUrl: '/api/celpe-bras-video?src=https%3A%2F%2Fwww.ufrgs.br%2Facervocelpebras%2Fwp-content%2Fuploads%2F2021%2F12%2F2003_2-Video-Cidades-mineiras.mp4',
+      audioUrl: '/videos/celpe-bras/set-7.mp4',
       questions: [
         {
           type: 'write', id: 'celpe-bras-s7-q1', part: 1, taskNumber: 1,
