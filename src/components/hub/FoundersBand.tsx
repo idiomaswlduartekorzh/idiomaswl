@@ -18,7 +18,7 @@ export type FoundersBandProps = {
 };
 
 const DEFAULT_DAVID_TAGS = ['Políglota · 8 idiomas', 'Co-fundador de WeLearn'];
-const DEFAULT_ZHANNA_TAGS = ['Directora académica', 'Formada en Francia e Inglaterra'];
+const DEFAULT_ZHANNA_TAGS = ['Co-fundadora · Directora académica', 'Formada en Francia e Inglaterra'];
 
 export default function FoundersBand({
   accent,
@@ -70,7 +70,7 @@ export default function FoundersBand({
             </div>
             <div>
               <p className={s.name}>Zhanna Korzh</p>
-              <p className={s.role} style={{ color: accent }}>Directora académica</p>
+              <p className={s.role} style={{ color: accent }}>Co-fundadora · Directora académica</p>
               <p className={s.line}>{zhannaLine}</p>
               <div className={s.tags}>
                 {zhannaTags.map(t => <span key={t} className={s.tag}>{t}</span>)}

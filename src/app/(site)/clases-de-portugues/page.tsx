@@ -11,7 +11,7 @@ const WA_CELPE   = encodeURIComponent('Hola, quiero prepararme para el examen Ce
 export const metadata: Metadata = {
   title: 'Clases de Portugués Online en Colombia — Preparación Celpe-Bras | WeLearn',
   description:
-    'Aprende portugués online con tutor especializado. Preparación Celpe-Bras para estudiar en Brasil, trabajo internacional o fluidez real. Clase diagnóstico gratis. Portugués brasileño con método WeLearn.',
+    'Aprende portugués online con tutor especializado. Preparación Celpe-Bras para estudiar en Brasil, trabajo internacional o fluidez real. Diagnóstico gratis. Portugués brasileño con método WeLearn.',
   keywords: [
     'clases de portugués online Colombia',
     'aprender portugués Bucaramanga',
@@ -124,7 +124,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Clase diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (Celpe-Bras, estudios en Brasil, fluidez) y diseñamos tu plan personalizado.' },
+  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (Celpe-Bras, estudios en Brasil, fluidez) y diseñamos tu plan personalizado.' },
   { icon: '🇧🇷', title: 'Portugués brasileño real', desc: 'No el portugués de los libros. El portugués que se habla en São Paulo, Río y las universidades brasileñas.' },
   { icon: '🗣️', title: 'Producción oral desde el inicio', desc: 'El Celpe-Bras evalúa principalmente producción oral. Practicamos hablar desde la primera semana.' },
   { icon: '✅', title: 'Preparación Celpe-Bras', desc: 'Tarefas escritas y orales al estilo exacto del Celpe-Bras. Retroalimentación detallada por tarea.' },
@@ -235,11 +235,11 @@ export default function ClasesDePortuguesPage() {
         <div className={s.proofStrip}>
           <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Clase diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Celpe-Bras Intermediário a Superior</strong></span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · online en toda Colombia</span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
@@ -248,8 +248,8 @@ export default function ClasesDePortuguesPage() {
           title="Dos políglotas te enseñan portugués. No un curso grabado."
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
           davidLine="Habla ocho idiomas. El portugués fue el tercero que aprendió, después del inglés y el italiano, y es el que más rápido avanza cuando ya hablas español."
-          zhannaLine="Directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Celpe-Bras corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Directora académica', 'Preparación Celpe-Bras', 'Diseño curricular']}
+          zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Celpe-Bras corresponda a lo que el examen realmente evalúa."
+          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación Celpe-Bras', 'Diseño curricular']}
         />
 
         {/* WHY */}

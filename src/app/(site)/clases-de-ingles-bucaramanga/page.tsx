@@ -103,7 +103,7 @@ const jsonLd = {
         {
           '@type': 'Question',
           name: '¿Hay clases de inglés presenciales en Bucaramanga con WeLearn?',
-          acceptedAnswer: { '@type': 'Answer', text: 'WeLearn opera principalmente online (videollamada), lo que permite atender a estudiantes en todo Bucaramanga, Floridablanca, Girón, Piedecuesta y el resto de Colombia sin limitaciones de desplazamiento. Las clases online tienen exactamente la misma calidad pedagógica que la presencial, con tutor asignado, plan personalizado y evaluación continua.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'WeLearn tiene sede en Bucaramanga y ofrece clases de inglés presenciales para estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, además de clases online por videollamada para el resto de Colombia y del mundo. Ambas modalidades tienen la misma rigurosidad: tutor asignado, plan personalizado y evaluación continua, y se puede alternar entre ellas.' },
         },
         {
           '@type': 'Question',

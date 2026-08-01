@@ -79,7 +79,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Puedo tomar clases si vivo fuera de Bucaramanga?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Todas las clases son 100% online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla, otras ciudades de Colombia y en el exterior.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. WeLearn tiene sede en Bucaramanga, donde las clases pueden ser presenciales, y atiende online por videollamada al resto del país. Hay estudiantes en Bogotá, Medellín, Cali, Barranquilla, otras ciudades de Colombia y en el exterior.' },
     },
   ],
 };
@@ -89,10 +89,10 @@ const FAQS = [
   { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'El Plan Preparación empieza en $180.000 COP/mes. El Plan Intensivo va de $280.000 a $480.000/mes según la frecuencia de clases. También vendemos paquetes de horas prepago (4, 10 y 20 horas) con mejor precio por hora — ideales si no quieres un plan mensual fijo. La clase de diagnóstico siempre es gratis.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Vendemos paquetes prepago de 4, 10 y 20 horas de clases en vivo. Entre más horas compras, menor es el precio por hora. Escríbenos por WhatsApp para conocer las opciones actuales y precios exactos.' },
   { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
-  { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'WeLearn opera principalmente online por videollamada, lo que nos permite atender con la misma calidad a estudiantes en Bucaramanga, Floridablanca, Girón, Piedecuesta y toda Colombia. Las clases online tienen exactamente la misma rigurosidad que la presencial: tutor asignado, plan personalizado y evaluación continua.' },
+  { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'Sí. WeLearn tiene sede en Bucaramanga y da clases presenciales a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace online por videollamada, con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.' },
   { q: '¿Cómo funciona la clase de diagnóstico gratis?', a: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo y diseñamos el plan. Sin costo y sin compromiso.' },
   { q: '¿Las clases son individuales o grupales?', a: 'Ofrecemos clases 1:1 con tutor asignado. No hacemos grupos masivos porque cada estudiante tiene objetivos y debilidades diferentes.' },
-  { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. Todas las clases son 100% online. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
+  { q: '¿Puedo tomar clases si vivo fuera de Bucaramanga?', a: 'Sí. En Bucaramanga y su área metropolitana puedes venir presencialmente; desde cualquier otra ciudad la clase es online por videollamada. Tenemos estudiantes en Bogotá, Medellín, Cali, Barranquilla y en el exterior.' },
 ];
 
 const jsonLd = {
@@ -372,7 +372,7 @@ export default function ClasesDeInglesPage() {
         intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad — y una de ellas estudió en Inglaterra."
         davidLine="Habla ocho idiomas. El inglés fue el primero, y prepararlo hasta nivel de examen es lo que dio origen al método de 11 pasos que usamos hoy."
         zhannaLine="Estudió en Inglaterra y en Francia. Esa formación dentro del sistema académico británico respalda nuestra preparación de IELTS, TOEFL y Cambridge."
-        zhannaTags={['Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}
+        zhannaTags={['Co-fundadora · Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}
       />
 
       {/* ── INTENT SECTION ───────────────────────────────────────────────── */}

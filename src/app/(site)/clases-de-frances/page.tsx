@@ -7,27 +7,30 @@ import s from './page.module.css';
 const WA = '573005004253';
 const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés en WeLearn y quiero agendar mi clase de diagnóstico gratis.');
 const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DELF con WeLearn. ¿Cuándo puedo empezar?');
+const WA_BUCARAMANGA = encodeURIComponent('Hola, estoy en Bucaramanga y quiero saber sobre las clases de francés presenciales. ¿Cómo funcionan?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Francés Online en Colombia — Preparación DELF/DALF | WeLearn',
+  title: 'Clases de Francés en Bucaramanga y Online — Preparación DELF/DALF | WeLearn',
   description:
-    'Aprende francés online con tutor especializado. Preparación DELF A1–B2 y DALF C1–C2. Desde cero hasta C2. Clase diagnóstico gratis. Academia WeLearn — para colombianos que van en serio.',
+    'Academia de francés en Bucaramanga con clases presenciales y online para toda Colombia. Preparación DELF A1–B2 y DALF C1–C2, y TCF/TEF para Canadá. Desde cero hasta C2. Diagnóstico gratis.',
   keywords: [
+    'clases de francés Bucaramanga',
+    'academia de francés Bucaramanga',
+    'curso de francés Bucaramanga',
+    'profesor de francés Bucaramanga',
     'clases de francés online Colombia',
-    'aprender francés Bucaramanga',
     'preparación DELF Colombia',
+    'preparación DALF Colombia',
+    'TCF Canadá Colombia',
+    'francés para migrar a Canadá',
     'curso de francés para adultos',
-    'DELF Colombia',
-    'DALF preparación',
-    'francés online Colombia',
-    'clases francés baratas',
     'aprender francés desde cero',
     'WeLearn francés',
   ],
   openGraph: {
-    title: 'Clases de Francés Online — Preparación DELF/DALF | WeLearn',
+    title: 'Clases de Francés en Bucaramanga y Online — DELF/DALF | WeLearn',
     description:
-      'Tutor especializado, método estructurado, preparación DELF/DALF. Clase diagnóstico gratis. Para colombianos que van en serio.',
+      'Presencial en Bucaramanga y online en toda Colombia. Preparación DELF, DALF y TCF/TEF Canadá. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-frances',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-frances' },
@@ -71,10 +74,26 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: '¿Las clases son presenciales o virtuales?',
+      name: '¿Dónde puedo tomar clases de francés en Bucaramanga?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Son 100% virtuales, por videollamada. Puedes estar en Bogotá, Medellín, Cali, Bucaramanga o cualquier ciudad. Solo necesitas conexión a internet.',
+        text: 'En Idiomas WeLearn, academia de idiomas con base en Bucaramanga. Atiende presencialmente a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto de Colombia y del mundo. El contacto es por WhatsApp al 300 500 4253 y la primera sesión de diagnóstico es gratuita.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Las clases de francés son presenciales o virtuales?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Las dos modalidades están disponibles. En Bucaramanga y su área metropolitana las clases pueden ser presenciales; desde cualquier otra ciudad son por videollamada, con el mismo profesor y el mismo plan de estudio. También es posible alternar entre ambos formatos según la semana.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuestan las clases de francés en Bucaramanga?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El precio depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso.',
       },
     },
     {
@@ -128,9 +147,22 @@ const jsonLd = {
       hasCourseInstance: [
         {
           '@type': 'CourseInstance',
+          name: 'Francés online',
           courseMode: 'online',
           inLanguage: 'fr',
           courseWorkload: 'PT1H',
+          instructor: [
+            { '@id': 'https://www.idiomaswl.com/#david' },
+            { '@id': 'https://www.idiomaswl.com/#zhanna' },
+          ],
+        },
+        {
+          '@type': 'CourseInstance',
+          name: 'Francés presencial en Bucaramanga',
+          courseMode: 'onsite',
+          inLanguage: 'fr',
+          courseWorkload: 'PT1H',
+          location: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
           instructor: [
             { '@id': 'https://www.idiomaswl.com/#david' },
             { '@id': 'https://www.idiomaswl.com/#zhanna' },
@@ -146,18 +178,48 @@ const jsonLd = {
       },
     },
     {
-      '@type': 'LocalBusiness',
+      '@type': ['LocalBusiness', 'LanguageSchool'],
       '@id': 'https://www.idiomaswl.com/#localbusiness',
       name: 'Idiomas WeLearn',
-      description: 'Academia de idiomas online. Clases de francés, coreano, inglés, alemán, italiano y portugués.',
+      alternateName: 'WeLearn Academia de Idiomas',
+      description:
+        'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Francés con preparación DELF, DALF y TCF/TEF, además de inglés, coreano, alemán, italiano y portugués.',
       url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
+      email: 'info@idiomaswl.com',
+      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
+      priceRange: '$$',
+      currenciesAccepted: 'COP',
+      paymentAccepted: 'Cash, Credit Card, Transfer',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Bucaramanga',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
+        postalCode: '680001',
         addressCountry: 'CO',
       },
+      geo: { '@type': 'GeoCoordinates', latitude: 7.1193, longitude: -73.1227 },
+      areaServed: [
+        { '@type': 'City', name: 'Bucaramanga' },
+        { '@type': 'City', name: 'Floridablanca' },
+        { '@type': 'City', name: 'Girón' },
+        { '@type': 'City', name: 'Piedecuesta' },
+        { '@type': 'Country', name: 'Colombia' },
+      ],
+      hasMap: 'https://maps.google.com/?q=Idiomas+WeLearn+Bucaramanga',
+      openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
+      founder: [
+        { '@id': 'https://www.idiomaswl.com/#david' },
+        { '@id': 'https://www.idiomaswl.com/#zhanna' },
+      ],
+      knowsLanguage: ['fr', 'en', 'es', 'de', 'it', 'pt', 'ko'],
+      sameAs: [
+        'https://wa.me/573005004253',
+        'https://www.facebook.com/welearnc/',
+        'https://www.instagram.com/idiomas_welearn/',
+        'https://www.tiktok.com/@idiomas.welearn',
+      ],
     },
     {
       '@type': 'Person',
@@ -174,9 +236,9 @@ const jsonLd = {
       '@type': 'Person',
       '@id': 'https://www.idiomaswl.com/#zhanna',
       name: 'Zhanna Korzh',
-      jobTitle: 'Directora académica de Idiomas WeLearn',
+      jobTitle: 'Co-fundadora y directora académica de Idiomas WeLearn',
       description:
-        'Directora académica de WeLearn. Estudió en Francia y en Inglaterra, y lidera el diseño curricular y la preparación de exámenes DELF y DALF.',
+        'Co-fundadora y directora académica de WeLearn. Estudió en Francia y en Inglaterra, y lidera el diseño curricular y la preparación de exámenes DELF y DALF.',
       image: 'https://www.idiomaswl.com/images/team-zhanna-korzh.png',
       knowsLanguage: ['es', 'en', 'fr'],
       worksFor: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
@@ -192,7 +254,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Clase diagnóstico gratis', desc: 'Identificamos tu nivel real, tu objetivo y te diseñamos un plan personalizado desde la primera sesión.' },
+  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Identificamos tu nivel real, tu objetivo y te diseñamos un plan personalizado desde la primera sesión.' },
   { icon: '🇫🇷', title: 'Tutor especializado', desc: 'Docentes con experiencia en DELF/DALF y en enseñanza de francés a hispanohablantes.' },
   { icon: '📚', title: 'Método estructurado', desc: 'Pronunciación → gramática → vocabulario → producción oral y escrita. Sin saltos, sin relleno.' },
   { icon: '✅', title: 'Preparación DELF/DALF', desc: 'Simulacros, comprensión auditiva, producción escrita y expresión oral. Exactamente lo que evalúa el examen.' },
@@ -252,8 +314,16 @@ const FAQS = [
     a: 'Partiendo de cero, entre 18 y 24 meses con práctica constante de 3–4 horas semanales. Si ya tienes base (A2), puedes alcanzar B2 en 10–14 meses.',
   },
   {
+    q: '¿Dónde puedo tomar clases de francés en Bucaramanga?',
+    a: 'En Idiomas WeLearn, academia con base en Bucaramanga. Atendemos presencialmente a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto de Colombia y del mundo. Escríbenos por WhatsApp al 300 500 4253 y agendamos tu diagnóstico gratis.',
+  },
+  {
     q: '¿Las clases son presenciales o virtuales?',
-    a: 'Son 100% virtuales, por videollamada. Puedes estar en Bogotá, Medellín, Cali, Bucaramanga o cualquier ciudad. Solo necesitas conexión a internet.',
+    a: 'Las dos. Si estás en Bucaramanga o el área metropolitana puedes estudiar presencialmente; si estás en Bogotá, Medellín, Cali o cualquier otra ciudad, la clase es por videollamada con el mismo profesor y el mismo plan. También puedes alternar entre los dos formatos.',
+  },
+  {
+    q: '¿Cuánto cuestan las clases de francés en Bucaramanga?',
+    a: 'Depende de la intensidad y de si tomas clases sueltas o un paquete de horas: el valor por hora baja a mayor volumen. La forma más rápida de tener el precio exacto de tu caso es el diagnóstico gratis, donde definimos objetivo, nivel y frecuencia. Puedes ver los planes vigentes en la página de precios.',
   },
   {
     q: '¿El DELF sirve para migrar a Canadá?',
@@ -304,7 +374,7 @@ export default function ClasesDeFrancesPage() {
           <div className={s.heroInner}>
             <div className={s.heroText}>
               <div className={s.heroPhrase}>Bonjour !</div>
-              <p className={s.eyebrow}>Francés online · WeLearn</p>
+              <p className={s.eyebrow}>Francés en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
                 Aprende francés<br />
                 <span className={s.accent}>de verdad.</span>
@@ -312,6 +382,7 @@ export default function ClasesDeFrancesPage() {
               <p className={s.heroSub}>
                 El francés no es solo pronunciación difícil — es estructura, ritmo y contexto.
                 Con el método WeLearn llegas al DELF B2 con una base sólida que no se te olvida.
+                <strong> Presencial en Bucaramanga u online desde cualquier ciudad de Colombia.</strong>
               </p>
               <div className={s.heroCtas}>
                 <a
@@ -354,13 +425,13 @@ export default function ClasesDeFrancesPage() {
 
         {/* ── Proof strip ────────────────────────────────────── */}
         <div className={s.proofStrip}>
-          <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong></span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Clase diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>DELF A1 hasta C2</strong></span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
+          <span className={s.proofItem}><strong>DELF A1 hasta DALF C2</strong></span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
@@ -370,7 +441,7 @@ export default function ClasesDeFrancesPage() {
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad — y una de ellas estudió en Francia."
           davidLine="Habla ocho idiomas. Llegó al francés después del inglés, el italiano y el portugués — y ese recorrido es exactamente el método que hoy usamos con hispanohablantes."
           zhannaLine="Estudió en Francia y en Inglaterra. Esa experiencia académica dentro del sistema francés es la que respalda nuestra preparación DELF y DALF."
-          zhannaTags={['Estudió en Francia', 'Preparación DELF / DALF', 'Diseño curricular']}
+          zhannaTags={['Co-fundadora · Estudió en Francia', 'Preparación DELF / DALF', 'Diseño curricular']}
         />
 
         {/* ══════════════ WHY ══════════════ */}
@@ -489,6 +560,59 @@ export default function ClasesDeFrancesPage() {
           </div>
         </section>
 
+        {/* ══════════════ BUCARAMANGA (SEO LOCAL) ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Bucaramanga y área metropolitana</p>
+            <h2 className={s.h2}>Clases de francés en Bucaramanga: presencial u online</h2>
+            <p className={s.sectionSub}>
+              WeLearn es una academia de idiomas con base en Bucaramanga. Si estás en la ciudad o
+              en el área metropolitana, puedes estudiar francés presencialmente con nosotros; si
+              prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo
+              profesor y el mismo plan, se hace por videollamada.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Presencial</span>
+                <p className={s.levelTitle}>Bucaramanga, Floridablanca, Girón y Piedecuesta</p>
+                <p className={s.levelDesc}>
+                  Clases cara a cara para quienes rinden más con el profesor al lado. Ideal si
+                  vas a presentar el DELF y quieres entrenar la expresión oral sin la barrera de
+                  la pantalla.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Online</span>
+                <p className={s.levelTitle}>Desde cualquier ciudad de Colombia</p>
+                <p className={s.levelDesc}>
+                  Bogotá, Medellín, Cali, Barranquilla o el exterior. Videollamada con tutor
+                  asignado, plan personalizado y todo el material de práctica de la plataforma
+                  incluido.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Mixto</span>
+                <p className={s.levelTitle}>Cambia de formato cuando lo necesites</p>
+                <p className={s.levelDesc}>
+                  No tienes que elegir de por vida. Muchos estudiantes de Bucaramanga alternan:
+                  presencial cuando pueden, online cuando la semana se complica. El plan y el
+                  progreso son los mismos.
+                </p>
+              </div>
+            </div>
+            <div style={{ marginTop: '2.5rem' }}>
+              <a
+                href={`https://wa.me/${WA}?text=${WA_BUCARAMANGA}`}
+                target="_blank" rel="noopener noreferrer"
+                className={s.waBtn}
+              >
+                <WaIcon />
+                Preguntar por clases en Bucaramanga
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ══════════════ CANADÁ (SEO/AEO) ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
@@ -540,30 +664,52 @@ export default function ClasesDeFrancesPage() {
         <section className={s.section}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Práctica gratuita</p>
-            <h2 className={s.h2}>Ejercítate con material real antes de empezar</h2>
+            <h2 className={s.h2}>Todo lo que puedes practicar gratis desde hoy</h2>
             <p className={s.sectionSub}>
-              Gramática, vocabulario y escritura con feedback inmediato. Sin registro.
+              No tienes que esperar a matricularte. Las cinco habilidades, los simulacros del
+              DELF y el diagnóstico de nivel están abiertos, con corrección inmediata y sin
+              registro.
             </p>
             <div className={s.practicaGrid}>
               <Link href="/practica/frances/a1/gramatica" className={s.practicaCard}>
                 <span className={s.practicaBadge}>Gratis</span>
-                <p className={s.practicaTitle}>Gramática A1</p>
-                <p className={s.practicaDesc}>Ejercicios interactivos de los temas base del francés: artículos, género, verbos esenciales.</p>
+                <p className={s.practicaTitle}>Gramática A1 · A2 · B1</p>
+                <p className={s.practicaDesc}>Artículos, género, verbos, tiempos y subjuntivo. Ejercicios interactivos con corrección al instante en los tres niveles.</p>
               </Link>
               <Link href="/practica/frances/a1/vocabulario" className={s.practicaCard}>
                 <span className={s.practicaBadge}>Gratis</span>
-                <p className={s.practicaTitle}>Vocabulario A1</p>
-                <p className={s.practicaDesc}>Palabras de alta frecuencia con audio nativo. Aprende el francés que realmente se usa.</p>
+                <p className={s.practicaTitle}>Vocabulario con audio</p>
+                <p className={s.practicaDesc}>Palabras de alta frecuencia con audio nativo. El francés que realmente se usa, no el de los libros.</p>
+              </Link>
+              <Link href="/practica/frances/a1/escucha" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Comprensión auditiva</p>
+                <p className={s.practicaDesc}>Audio a velocidad real con preguntas de comprensión — lo que más cuesta al pasar del español al francés.</p>
+              </Link>
+              <Link href="/practica/frances/a1/lectura" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Comprensión lectora</p>
+                <p className={s.practicaDesc}>Textos auténticos con preguntas al estilo del DELF, para entrenar lectura rápida y detalle.</p>
               </Link>
               <Link href="/practica/frances/a1/escritura" className={s.practicaCard}>
                 <span className={s.practicaBadge}>Gratis</span>
-                <p className={s.practicaTitle}>Escritura integrada A1</p>
-                <p className={s.practicaDesc}>Lee, prepara vocabulario y escribe una respuesta real — con modelo de nivel para comparar.</p>
+                <p className={s.practicaTitle}>Escritura integrada</p>
+                <p className={s.practicaDesc}>Lee, prepara vocabulario y escribe una respuesta real — con modelo de nivel para comparar la tuya.</p>
               </Link>
-              <Link href="/practica/frances/b1" className={s.practicaCard}>
+              <Link href="/practica/frances/a1/habla" className={s.practicaCard}>
                 <span className={s.practicaBadge}>Gratis</span>
-                <p className={s.practicaTitle}>Nivel B1 — rumbo al DELF</p>
-                <p className={s.practicaDesc}>Gramática, escucha, lectura y escritura de nivel B1, el que más piden universidades y empleadores.</p>
+                <p className={s.practicaTitle}>Expresión oral</p>
+                <p className={s.practicaDesc}>Frases y estructuras para hablar desde el primer día, con pronunciación modelo para imitar.</p>
+              </Link>
+              <Link href="/examenes/delf-dalf" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Simulacros DELF / DALF</p>
+                <p className={s.practicaDesc}>Practica con el formato real del examen y recibe un informe con tu desempeño por sección.</p>
+              </Link>
+              <Link href="/nivel-radar" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Descubre tu nivel real</p>
+                <p className={s.practicaDesc}>Si no sabes por dónde empezar, el diagnóstico de nivel te ubica en el MCER antes de la primera clase.</p>
               </Link>
             </div>
           </div>

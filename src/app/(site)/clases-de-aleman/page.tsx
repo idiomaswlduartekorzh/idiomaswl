@@ -11,7 +11,7 @@ const WA_GOETHE  = encodeURIComponent('Hola, quiero prepararme para el examen Go
 export const metadata: Metadata = {
   title: 'Clases de Alemán Online en Colombia — Preparación Goethe-Zertifikat | WeLearn',
   description:
-    'Aprende alemán online con tutor especializado. Preparación Goethe A1 hasta C1. Desde cero hasta nivel avanzado. Clase diagnóstico gratis. Para colombianos con visas de trabajo, estudios o visa de oportunidad.',
+    'Aprende alemán online con tutor especializado. Preparación Goethe A1 hasta C1. Desde cero hasta nivel avanzado. Diagnóstico gratis. Para colombianos con visas de trabajo, estudios o visa de oportunidad.',
   keywords: [
     'clases de alemán online Colombia',
     'aprender alemán Bucaramanga',
@@ -135,7 +135,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Clase diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (visa, estudios o trabajo) y diseñamos tu plan personalizado.' },
+  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (visa, estudios o trabajo) y diseñamos tu plan personalizado.' },
   { icon: '🇩🇪', title: 'Tutor especializado', desc: 'Docentes con experiencia en Goethe-Zertifikat y en enseñanza del alemán a hispanohablantes.' },
   { icon: '📐', title: 'Gramática sin miedo', desc: 'Los 4 casos del alemán (Nominativ, Akkusativ, Dativ, Genitiv) explicados con lógica, no con memorización.' },
   { icon: '✅', title: 'Preparación Goethe', desc: 'Leseverstehen, Hörverstehen, Schreiben y Sprechen. Simulacros reales y feedback detallado.' },
@@ -284,11 +284,11 @@ export default function ClasesDeAlemanPage() {
         <div className={s.proofStrip}>
           <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Clase diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Goethe A1 hasta C1</strong></span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · online en toda Colombia</span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
@@ -297,8 +297,8 @@ export default function ClasesDeAlemanPage() {
           title="Dos políglotas te enseñan alemán. No un curso grabado."
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
           davidLine="Habla ocho idiomas. El alemán es de los que más le costó, y por eso es el que mejor sabe explicar: casos, orden de la frase y verbos separables, paso a paso desde el español."
-          zhannaLine="Directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Goethe corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Directora académica', 'Preparación Goethe', 'Diseño curricular']}
+          zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Goethe corresponda a lo que el examen realmente evalúa."
+          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación Goethe', 'Diseño curricular']}
         />
 
         {/* ══════════════ WHY ══════════════ */}

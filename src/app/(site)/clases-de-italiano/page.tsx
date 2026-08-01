@@ -11,7 +11,7 @@ const WA_CILS    = encodeURIComponent('Hola, quiero prepararme para el examen CI
 export const metadata: Metadata = {
   title: 'Clases de Italiano Online en Colombia — Preparación CILS y CELI | WeLearn',
   description:
-    'Aprende italiano online con tutor especializado. Preparación CILS y CELI de A2 hasta C2. Ciudadanía italiana, estudios en Italia, trabajo internacional. Clase diagnóstico gratis.',
+    'Aprende italiano online con tutor especializado. Preparación CILS y CELI de A2 hasta C2. Ciudadanía italiana, estudios en Italia, trabajo internacional. Diagnóstico gratis.',
   keywords: [
     'clases de italiano online Colombia',
     'aprender italiano Bucaramanga',
@@ -148,7 +148,7 @@ const jsonLd = {
 };
 
 const WHY_CARDS = [
-  { icon: '🎯', title: 'Clase diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (ciudadanía, CILS, viaje o trabajo) y diseñamos tu plan personalizado.' },
+  { icon: '🎯', title: 'Diagnóstico gratis', desc: 'Evaluamos tu nivel real, entendemos tu objetivo (ciudadanía, CILS, viaje o trabajo) y diseñamos tu plan personalizado.' },
   { icon: '🇮🇹', title: 'Tutor especializado', desc: 'Docentes con experiencia en CILS/CELI y en enseñanza del italiano a hispanohablantes.' },
   { icon: '🗣️', title: 'Énfasis en la fluidez', desc: 'Pronunciación, entonación y confianza para hablar desde la primera semana. El italiano se aprende hablando.' },
   { icon: '✅', title: 'Preparación CILS y CELI', desc: 'Comprensione orale, comprensione scritta, produzione scritta e produzione orale. Los cuatro componentes del examen.' },
@@ -273,11 +273,11 @@ export default function ClasesDeItalianoPage() {
         <div className={s.proofStrip}>
           <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Clase diagnóstico</strong> gratis</span>
+          <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>CILS · CELI A2 hasta C2</strong></span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>100% online</strong> · Colombia y mundo</span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · online en toda Colombia</span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
@@ -286,8 +286,8 @@ export default function ClasesDeItalianoPage() {
           title="Dos políglotas te enseñan italiano. No un curso grabado."
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
           davidLine="Habla ocho idiomas. El italiano fue el segundo que aprendió, justo después del inglés — y es el que mejor demuestra cuánta ventaja te da ya hablar español."
-          zhannaLine="Directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación CILS y CELI corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Directora académica', 'Preparación CILS / CELI', 'Diseño curricular']}
+          zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación CILS y CELI corresponda a lo que el examen realmente evalúa."
+          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación CILS / CELI', 'Diseño curricular']}
         />
 
         {/* WHY */}
