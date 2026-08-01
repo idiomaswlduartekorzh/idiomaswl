@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FoundersBand from '@/components/hub/FoundersBand';
+import LocalBand from '@/components/hub/LocalBand';
+import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
@@ -9,25 +11,27 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de italiano
 const WA_CILS    = encodeURIComponent('Hola, quiero prepararme para el examen CILS o CELI con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Italiano Online en Colombia — Preparación CILS y CELI | WeLearn',
+  title: 'Clases de Italiano en Bucaramanga y Online — B1 de Ciudadanía, CILS y CELI | WeLearn',
   description:
-    'Aprende italiano online con tutor especializado. Preparación CILS y CELI de A2 hasta C2. Ciudadanía italiana, estudios en Italia, trabajo internacional. Diagnóstico gratis.',
+    'Academia de italiano en Bucaramanga con clases presenciales y online para toda Colombia. Preparación del B1 para la ciudadanía italiana, CILS y CELI de A2 hasta C2. Diagnóstico gratis.',
   keywords: [
-    'clases de italiano online Colombia',
-    'aprender italiano Bucaramanga',
+    'clases de italiano Bucaramanga',
+    'academia de italiano Bucaramanga',
+    'curso de italiano Bucaramanga',
+    'profesor de italiano Bucaramanga',
+    'italiano para ciudadanía italiana',
+    'examen B1 italiano ciudadanía',
     'preparación CILS Colombia',
     'preparación CELI Colombia',
-    'curso de italiano para adultos',
-    'italiano para ciudadanía italiana',
-    'CILS Colombia',
-    'italiano online Colombia',
+    'clases de italiano online Colombia',
     'aprender italiano desde cero',
+    'consulado de Italia Bucaramanga',
     'WeLearn italiano',
   ],
   openGraph: {
-    title: 'Clases de Italiano Online — Preparación CILS y CELI | WeLearn',
+    title: 'Clases de Italiano en Bucaramanga y Online — B1 de Ciudadanía | WeLearn',
     description:
-      'Tutor especializado, preparación CILS/CELI, ciudadanía italiana y estudios en Italia. Clase diagnóstico gratis para colombianos.',
+      'Presencial en Bucaramanga y online en toda Colombia. Preparación del B1 para la ciudadanía italiana, CILS y CELI. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-italiano',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-italiano' },
@@ -90,7 +94,7 @@ const faqJsonLd = {
       name: '¿Dónde puedo presentar el examen CILS o CELI en Colombia?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'En centros autorizados por el gobierno italiano. La referencia principal es el Istituto Italiano di Cultura de Bogotá, y también hay sedes vinculadas a universidades y a la Sociedad Dante Alighieri en Bogotá, Medellín y Cartagena. El calendario de sesiones cambia cada año, así que conviene confirmar fecha y sede antes de inscribirse.',
+        text: 'El CILS se presenta en el Istituto Italiano di Cultura de Bogotá, su sede en Colombia. El PLIDA lo administra la Sociedad Dante Alighieri, con comités en Bogotá y Cartagena, y se presenta también en Medellín a través de la Universidad EAFIT. No hay sede de examen en Bucaramanga ni en Santander, por lo que desde allí es necesario viajar. El calendario de sesiones cambia cada año, así que conviene confirmar fecha y sede antes de inscribirse.',
       },
     },
     {
@@ -98,7 +102,7 @@ const faqJsonLd = {
       name: '¿Cuánto se demora el resultado del CILS B1?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'El resultado del CILS suele salir alrededor de mes y medio después del examen, y el del CELI puede tomar cerca de tres meses. El certificado físico llega después del resultado. Si tienes una cita consular con fecha fija, planea hacia atrás desde esa fecha.',
+        text: 'Cuenta con meses, no con semanas. La corrección del CILS toma alrededor de tres meses y el certificado físico puede llegar medio año después del examen. El CELI publica resultados en torno a los tres meses. Si hay una cita consular con fecha fija, conviene planear hacia atrás desde esa fecha.',
       },
     },
     {
@@ -107,6 +111,54 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Un hispanohablante puede alcanzar el B1 de italiano en 6 a 12 meses estudiando de 3 a 5 horas por semana. Es bastante más rápido que la referencia general del MCER porque compartes gramática y una gran parte del vocabulario.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Dónde puedo estudiar italiano en Bucaramanga?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor, Bucaramanga. Hay clases presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta, y online para el resto del país. Varias universidades de la ciudad ofrecen italiano, pero normalmente en niveles iniciales y dirigido a su propia comunidad. El diagnóstico inicial es gratuito y el contacto es por WhatsApp al 300 500 4253.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Hay consulado de Italia en Bucaramanga?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí. Italia tiene un consulado honorario en Bucaramanga cuya jurisdicción cubre Santander, Norte de Santander y Arauca, y que atiende con cita previa. El consulado gestiona el trámite, pero el examen de italiano no se presenta allí ni en la ciudad: para eso hay que viajar, normalmente a Bogotá.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo presentar el examen B1 de italiano en Bucaramanga?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. No hay sede de CILS, CELI ni PLIDA en Bucaramanga ni en Santander. El CILS se presenta en Bogotá y el PLIDA en Bogotá, Cartagena o Medellín. La preparación completa sí puede hacerse desde Bucaramanga, presencial u online, viajando únicamente el día del examen.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Todavía existe el examen corto de B1 Ciudadanía en Bogotá?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. La sede de Bogotá administra únicamente los exámenes de los seis niveles del Marco Común Europeo y dejó de ofrecer las versiones hechas a la medida de un trámite, como el B1 de ciudadanía. Quien lo presente allí debe rendir el CILS B1 completo: cinco habilidades, cerca de cuatro horas de prueba escrita más el oral, y un puntaje mínimo exigido en cada habilidad por separado. Buena parte de las guías en español todavía describe el examen anterior.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Necesito certificar italiano si voy por ciudadanía por descendencia?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Circula información contradictoria. El requisito de certificar nivel B1 aplica con claridad a las vías por matrimonio y por residencia. Para la vía por descendencia, la Embajada de Italia en Bogotá no lista un requisito de idioma en su información oficial, aunque varios medios lo han dado por hecho. Dado que las reglas cambiaron en 2025 y siguen en discusión, conviene confirmar el caso concreto con el consulado antes de pagar cualquier examen.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuestan las clases de italiano en Bucaramanga?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El precio depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso.',
       },
     },
   ],
@@ -120,23 +172,19 @@ const jsonLd = {
       name: 'Italiano con el método WeLearn',
       description: 'Aprende italiano desde cero hasta CILS/CELI C2. Preparación para ciudadanía italiana, estudios y trabajo en Italia.',
       provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
-      hasCourseInstance: [{
-        '@type': 'CourseInstance',
-        courseMode: 'online',
-        inLanguage: 'it',
-        courseWorkload: 'PT1H',
-        instructor: { '@type': 'Person', name: 'José David Duarte Silva' },
-      }],
+      hasCourseInstance: courseInstances('Italiano', 'it'),
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'COP', description: 'Clase de diagnóstico gratis', availability: 'https://schema.org/InStock' },
     },
-    {
-      '@type': 'LocalBusiness',
-      '@id': 'https://www.idiomaswl.com/#localbusiness',
-      name: 'Idiomas WeLearn',
-      url: 'https://www.idiomaswl.com',
-      telephone: '+573005004253',
-      address: { '@type': 'PostalAddress', streetAddress: 'Calle 47 # 29-33, Sotomayor', addressLocality: 'Bucaramanga', addressRegion: 'Santander', addressCountry: 'CO' },
-    },
+    localBusinessNode(
+      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Italiano con preparación CILS y CELI, incluida la ruta B1 para la ciudadanía italiana, además de inglés, francés, coreano, alemán y portugués.'
+    ),
+    davidNode(
+      'Políglota activo en ocho idiomas. El italiano fue el segundo que aprendió, justo después del inglés, y es el que mejor demuestra cuánta ventaja da partir del español.'
+    ),
+    zhannaNode(
+      'Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Lidera el diseño curricular y la preparación de certificaciones oficiales de italiano.',
+      ['es', 'en', 'fr']
+    ),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -197,9 +245,15 @@ const FAQS = [
   { q: '¿Cuánto tiempo toma llegar al CILS B2?', a: 'Para hispanohablantes, alcanzar B2 toma entre 12 y 18 meses con práctica constante. El italiano es el más fácil para hispanohablantes entre las lenguas no hispanas.' },
   { q: '¿Cuál es la diferencia entre CILS y CELI?', a: 'El CILS es de Siena; el CELI es de Perugia. Ambos son reconocidos por el gobierno italiano. WeLearn prepara para los dos.' },
   { q: '¿El examen B1 de italiano para la ciudadanía se puede hacer online?', a: 'No. Ni el CILS ni el CELI tienen versión online: son presenciales, en un centro autorizado y con documento de identidad. Lo que sí es online es toda la preparación, incluidos los simulacros.' },
-  { q: '¿Dónde puedo presentar el CILS o el CELI en Colombia?', a: 'En centros autorizados por el gobierno italiano. La referencia principal es el Istituto Italiano di Cultura de Bogotá, y también hay sedes vinculadas a universidades y a la Sociedad Dante Alighieri en Bogotá, Medellín y Cartagena. El calendario cambia cada año: confirma sede y fecha antes de inscribirte.' },
-  { q: '¿Cuánto se demora el resultado del CILS B1?', a: 'El CILS suele entregar resultados alrededor de mes y medio después del examen; el CELI puede tomar cerca de tres meses, y el certificado físico llega después. Si tienes cita consular con fecha, planea hacia atrás desde ahí.' },
+  { q: '¿Dónde puedo presentar el CILS o el CELI en Colombia?', a: 'El CILS se presenta en el Istituto Italiano di Cultura de Bogotá, su sede en el país. El PLIDA lo administra la Sociedad Dante Alighieri, con comités en Bogotá y Cartagena, y también se presenta en Medellín a través de la Universidad EAFIT. No hay sede en Bucaramanga ni en Santander, así que desde aquí toca viajar. El calendario cambia cada año: confirma sede y fecha antes de inscribirte.' },
+  { q: '¿Cuánto se demora el resultado del CILS B1?', a: 'Cuenta con meses, no con semanas. La corrección del CILS toma alrededor de tres meses y el certificado físico puede llegar medio año después del examen. El CELI publica resultados en torno a los tres meses. Si tienes cita consular con fecha fija, planea hacia atrás desde ahí: es el error de cálculo más común.' },
   { q: '¿Cuánto tiempo toma llegar a B1 en italiano si ya hablo español?', a: 'Entre 6 y 12 meses estudiando de 3 a 5 horas por semana. Es más rápido que la referencia general del MCER porque compartes gramática y buena parte del vocabulario con el italiano.' },
+  { q: '¿Dónde puedo estudiar italiano en Bucaramanga?', a: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Varias universidades de la ciudad tienen cursos de italiano, pero suelen quedarse en niveles iniciales y estar dirigidos a su propia comunidad; nosotros llevamos hasta el B1 de ciudadanía y más allá. El diagnóstico inicial es gratis: escríbenos al 300 500 4253.' },
+  { q: '¿Hay consulado de Italia en Bucaramanga?', a: 'Sí. Italia tiene un consulado honorario en Bucaramanga cuya jurisdicción cubre Santander, Norte de Santander y Arauca, y atiende con cita previa. Ojo con la confusión más común: el consulado gestiona el trámite, pero el examen de italiano no se presenta ahí ni en la ciudad — para eso hay que viajar, normalmente a Bogotá.' },
+  { q: '¿Puedo presentar el examen B1 de italiano en Bucaramanga?', a: 'No. No hay sede de CILS, CELI ni PLIDA en Bucaramanga ni en Santander. El CILS se presenta en Bogotá y el PLIDA en Bogotá, Cartagena o Medellín. Lo que sí puedes hacer desde Bucaramanga es toda la preparación, presencial u online, y viajar solo el día del examen.' },
+  { q: '¿Todavía existe el examen corto de "B1 Ciudadanía" en Bogotá?', a: 'No. La sede de Bogotá pasó a administrar únicamente los exámenes de los seis niveles del Marco Común Europeo y dejó de ofrecer las versiones hechas a la medida de un trámite, como el B1 de ciudadanía. Quien lo presente allí debe rendir el CILS B1 completo: cinco habilidades, cerca de cuatro horas de escrito más el oral, y un mínimo exigido en cada habilidad por separado. Casi todas las guías en español siguen describiendo el examen viejo.' },
+  { q: '¿Necesito certificar italiano si voy por ciudadanía por descendencia?', a: 'Ojo, aquí hay mucha información contradictoria circulando. El requisito de certificar B1 aplica claramente a las vías por matrimonio y por residencia. Para la vía por descendencia, la Embajada de Italia en Bogotá no lista un requisito de idioma en su información oficial, pese a que varios medios lo han dado por hecho. Como las reglas cambiaron en 2025 y siguen discutiéndose, confirma tu caso concreto con el consulado antes de pagar cualquier examen.' },
+  { q: '¿Cuánto cuestan las clases de italiano en Bucaramanga?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.' },
 ];
 
 const BLOG_POSTS = [
@@ -231,7 +285,7 @@ export default function ClasesDeItalianoPage() {
           <div className={s.heroInner}>
             <div className={s.heroText}>
               <div className={s.heroPhrase}>Ciao!</div>
-              <p className={s.eyebrow}>Italiano online · WeLearn</p>
+              <p className={s.eyebrow}>Italiano en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
                 Aprende italiano<br />
                 <span className={s.accent}>de verdad.</span>
@@ -271,13 +325,13 @@ export default function ClasesDeItalianoPage() {
         </section>
 
         <div className={s.proofStrip}>
-          <span className={s.proofItem}><strong>6 idiomas</strong> disponibles</span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · Sotomayor</span>
+          <span className={s.proofDivider} />
+          <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Diagnóstico</strong> gratis</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>CILS · CELI A2 hasta C2</strong></span>
-          <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · online en toda Colombia</span>
+          <span className={s.proofItem}><strong>B1 de ciudadanía · CILS y CELI</strong></span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
@@ -351,60 +405,172 @@ export default function ClasesDeItalianoPage() {
           </div>
         </section>
 
+        {/* ══════════════ BUCARAMANGA (SEO LOCAL) ══════════════ */}
+        <LocalBand
+          accent="#009246"
+          idioma="italiano"
+          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar italiano presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          presencial="Clases cara a cara para quienes rinden más con el profesor al lado. Especialmente útil si vas por el B1 de ciudadanía: la prueba oral es la que más se falla y la que menos se puede improvisar."
+          waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de italiano presenciales. ¿Cómo funcionan?"
+        />
+
+        {/* ══════════════ CIUDADANÍA DESDE SANTANDER (SEO LOCAL + AEO) ══════════════ */}
+        <section className={s.sectionDark}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Santander y el trámite italiano</p>
+            <h2 className={s.h2}>Vas por la ciudadanía italiana desde Bucaramanga: esto es lo que nadie te cuenta</h2>
+            <p className={s.sectionSub}>
+              Bucaramanga tiene consulado honorario de Italia, pero no tiene dónde presentar el
+              examen de italiano. Esa distancia entre el trámite y la certificación es el problema
+              real de quien vive en Santander — y planearlo mal cuesta meses.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>El trámite</span>
+                <p className={s.levelTitle}>El consulado sí está aquí</p>
+                <p className={s.levelDesc}>
+                  Italia tiene un consulado honorario en Bucaramanga cuya jurisdicción cubre
+                  Santander, Norte de Santander y Arauca. Atiende con cita previa, así que el
+                  calendario del trámite no lo pones tú.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>El examen</span>
+                <p className={s.levelTitle}>Pero el examen no</p>
+                <p className={s.levelDesc}>
+                  No hay sede de CILS, CELI ni PLIDA en Bucaramanga ni en Santander. Toca viajar,
+                  normalmente a Bogotá. Súmale el viaje al cronograma: no es solo el día del
+                  examen, es la inscripción con fecha límite y la espera del resultado.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>La preparación</span>
+                <p className={s.levelTitle}>Eso sí lo resolvemos acá</p>
+                <p className={s.levelDesc}>
+                  Las universidades de la ciudad llegan a niveles iniciales y suelen ser para su
+                  propia comunidad. Nosotros te llevamos hasta el B1 completo, con las cuatro
+                  pruebas entrenadas, sin que tengas que salir de Bucaramanga hasta el día del
+                  examen.
+                </p>
+              </div>
+            </div>
+            <p className={s.sectionSub} style={{ marginTop: '2.5rem' }}>
+              <strong>Ojo con esto si vas por descendencia:</strong> en 2025 Italia endureció las
+              reglas de reconocimiento para descendientes nacidos en el exterior, y la aplicación
+              de esa reforma todavía tiene discusiones abiertas en los tribunales italianos. Si tu
+              vía deja de ser la de descendencia directa, es muy probable que sí termines
+              necesitando certificar tu italiano. Confirma tu caso concreto con el consulado antes
+              de inscribirte a cualquier examen — nosotros no asesoramos el trámite, preparamos el
+              idioma.
+            </p>
+          </div>
+        </section>
+
         {/* ══════════════ DÓNDE Y CUÁNDO (SEO/AEO) ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Dónde y cuándo</p>
-            <h2 className={s.h2}>Dónde presentar el examen de italiano en Colombia</h2>
+            <h2 className={s.h2}>Dónde se presenta el examen de italiano en Colombia</h2>
             <p className={s.sectionSub}>
-              El CILS y el CELI son presenciales — no existe versión online. En Colombia se presentan
-              en centros autorizados por el gobierno italiano. Esto es lo que necesitas saber para
-              planear tu cronograma antes de la cita consular.
+              Ningún examen oficial de italiano se hace online: CILS, CELI y PLIDA son presenciales,
+              en sede autorizada y con documento de identidad. Si alguien te ofrece &ldquo;el examen
+              oficial por internet&rdquo;, no es un certificado válido ante el Estado italiano.
             </p>
             <div className={s.levelsGrid}>
               <div className={s.levelCard}>
-                <span className={s.levelTag}>Sedes</span>
-                <p className={s.levelTitle}>Centros autorizados en Colombia</p>
+                <span className={s.levelTag}>CILS</span>
+                <p className={s.levelTitle}>Solo en Bogotá</p>
                 <p className={s.levelDesc}>
-                  El Istituto Italiano di Cultura de Bogotá es la referencia principal, y también
-                  hay centros vinculados a universidades y a la Sociedad Dante Alighieri en Bogotá,
-                  Medellín y Cartagena. Confirma sede y fecha de sesión antes de inscribirte: el
-                  calendario cambia cada año.
+                  El Istituto Italiano di Cultura de Bogotá es la sede del CILS en el país. Los
+                  cupos por sesión son limitados y la inscripción cierra con bastante antelación
+                  a la fecha del examen, así que no se puede dejar para última hora.
                 </p>
               </div>
               <div className={s.levelCard}>
-                <span className={s.levelTag}>Duración</span>
-                <p className={s.levelTitle}>Cuánto dura el examen</p>
+                <span className={s.levelTag}>PLIDA</span>
+                <p className={s.levelTitle}>Bogotá, Medellín y Cartagena</p>
                 <p className={s.levelDesc}>
-                  El CILS B1 toma alrededor de 2 horas y el CELI algo más de 2 horas y media.
-                  Ambos se dividen en cuatro pruebas — escucha, lectura, escritura y oral — que
-                  pesan lo mismo. Se aprueba con el mínimo en cada una, no con el promedio.
+                  El PLIDA lo administra la Società Dante Alighieri, con comités en Bogotá y
+                  Cartagena, y se presenta también en Medellín a través del centro de exámenes de
+                  la Universidad EAFIT. Es la alternativa si no te sirve el calendario del CILS.
                 </p>
               </div>
               <div className={s.levelCard}>
-                <span className={s.levelTag}>Resultados</span>
-                <p className={s.levelTitle}>Cuánto tarda el certificado</p>
+                <span className={s.levelTag}>Santander</span>
+                <p className={s.levelTitle}>Aquí no hay sede: toca viajar</p>
                 <p className={s.levelDesc}>
-                  El resultado del CILS suele salir en torno a mes y medio; el del CELI puede tomar
-                  cerca de tres meses. El certificado físico llega después. Si tienes cita
-                  consular con fecha, cuenta hacia atrás desde ahí — es el error de planeación
-                  más común.
+                  No existe sede de CILS, CELI ni PLIDA en Bucaramanga ni en ningún municipio de
+                  Santander. Suma el viaje al cronograma: no es solo el día del examen, es también
+                  la inscripción con fecha límite y la espera del resultado.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
+        {/* ══════════════ EL B1 CIUDADANÍA YA NO EXISTE EN BOGOTÁ (AEO diferencial) ══════════════ */}
+        <section className={s.sectionDark}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>El dato que casi nadie te dice</p>
+            <h2 className={s.h2}>En Bogotá ya no existe el examen corto de &ldquo;B1 Ciudadanía&rdquo;</h2>
+            <p className={s.sectionSub}>
+              Desde 2025, el Istituto Italiano di Cultura de Bogotá administra únicamente los
+              exámenes de los seis niveles del Marco Común Europeo. Dejó de ofrecer las versiones
+              hechas a la medida de un trámite, entre ellas el B1 de ciudadanía. Casi todas las
+              guías en español siguen describiendo el examen corto — y quien llega con esa idea
+              se lleva la sorpresa el día de la inscripción.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Antes</span>
+                <p className={s.levelTitle}>El examen corto de ciudadanía</p>
+                <p className={s.levelDesc}>
+                  Cuatro secciones, alrededor de dos horas y un oral breve. Estaba diseñado
+                  específicamente para cumplir el requisito de idioma del trámite, y nada más.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Ahora</span>
+                <p className={s.levelTitle}>El CILS B1 completo</p>
+                <p className={s.levelDesc}>
+                  Cinco habilidades y cerca de cuatro horas de prueba escrita más el oral. No basta
+                  con el puntaje global: hay que alcanzar un mínimo en cada habilidad por separado,
+                  así que una sola debilidad tumba el examen entero.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Qué significa</span>
+                <p className={s.levelTitle}>Necesitas prepararte más, no menos</p>
+                <p className={s.levelDesc}>
+                  El listón subió de verdad. Por eso el plan no puede ser un repaso de tres
+                  semanas: hay que entrenar las cinco habilidades, y la que más se descuida
+                  —producción oral y escrita— es justo la que decide.
+                </p>
+              </div>
+            </div>
+            <p className={s.sectionSub} style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
+              Los calendarios y las condiciones de inscripción cambian cada año. Confirma siempre
+              con la sede antes de pagar: nosotros preparamos el idioma, no gestionamos el trámite.
+            </p>
+          </div>
+        </section>
+
         {/* ══════════════ PRACTICA GRATIS ══════════════ */}
         <PracticeBand
           accent="#009246"
-          title="Ejercítate con material real antes de empezar"
-          sub="Gramática, vocabulario, escucha y escritura con feedback inmediato. Sin registro."
+          title="Todo lo que puedes practicar gratis desde hoy"
+          sub="No tienes que esperar a matricularte. Las cinco habilidades, los simulacros del CILS y el diagnóstico de nivel están abiertos, con corrección inmediata y sin registro."
           cards={[
-            { href: '/practica/italiano/a1/gramatica', title: 'Gramática A1', desc: 'Artículos, género, presente y los verbos que más se usan. Ejercicios interactivos con corrección al instante.' },
-            { href: '/practica/italiano/a1/vocabulario', title: 'Vocabulario A1', desc: 'Palabras de alta frecuencia con audio nativo — el italiano que de verdad se habla en Italia.' },
-            { href: '/practica/italiano/b1', title: 'Nivel B1 — el de la ciudadanía', desc: 'Gramática, escucha, lectura y escritura de nivel B1, el que exige el Estado italiano para la ciudadanía.' },
+            { href: '/practica/italiano/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Artículos, género, presente, passato prossimo y congiuntivo. Ejercicios interactivos con corrección al instante.' },
+            { href: '/practica/italiano/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo — el italiano que de verdad se habla en Italia.' },
+            { href: '/practica/italiano/a1/escucha', title: 'Comprensión auditiva', desc: 'Audio a velocidad real con preguntas de comprensión, la prueba que más sorprende a quien viene del español.' },
+            { href: '/practica/italiano/a1/lectura', title: 'Comprensión lectora', desc: 'Textos auténticos con preguntas al estilo del examen, para entrenar lectura rápida y detalle.' },
+            { href: '/practica/italiano/a1/escritura', title: 'Escritura integrada', desc: 'Lee, prepara vocabulario y escribe una respuesta real — con modelo de nivel para comparar la tuya.' },
+            { href: '/practica/italiano/a1/habla', title: 'Expresión oral', desc: 'Frases y estructuras para hablar desde el primer día. Clave para la prueba oral del B1 de ciudadanía.' },
             { href: '/practica/italiano/tiempos-verbales', title: 'Tiempos verbales', desc: 'Passato prossimo, imperfetto, congiuntivo y condizionale explicados desde el español, con práctica.' },
+            { href: '/practica/italiano/b1', title: 'Nivel B1 completo', desc: 'El nivel exacto que exige el Estado italiano para la ciudadanía: gramática, escucha, lectura y escritura.' },
+            { href: '/examenes/cils-celi', title: 'Simulacros CILS y CELI', desc: 'Practica con el formato real del examen y recibe un informe con tu desempeño por sección.' },
+            { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'Si no sabes por dónde empezar, el diagnóstico de nivel te ubica en el MCER antes de la primera clase.' },
           ]}
         />
 
