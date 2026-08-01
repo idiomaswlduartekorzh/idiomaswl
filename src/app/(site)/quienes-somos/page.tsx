@@ -10,39 +10,60 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de Quiénes somos en 
 export const metadata: Metadata = {
   title: 'Quiénes somos — Academia de idiomas en Bucaramanga | Idiomas WeLearn',
   description:
-    'Idiomas WeLearn es una academia con sede presencial en Bucaramanga y clases online en toda Colombia. Fundada por José David Duarte, políglota en ocho idiomas, y Zhanna Korzh, directora académica. Más de 1000 estudiantes preparados.',
+    'Idiomas WeLearn es una academia con sede presencial en Bucaramanga (Sotomayor) y clases online en toda Colombia. Fundada en 2015 por José David Duarte, políglota en ocho idiomas, y Zhanna Korzh, lingüista titulada en Rusia en enseñanza de idiomas extranjeros. Más de 1000 estudiantes preparados.',
   keywords: [
     'academia de idiomas Bucaramanga',
     'Idiomas WeLearn',
     'quiénes somos WeLearn',
     'José David Duarte Silva políglota',
     'Zhanna Korzh',
+    'profesores de idiomas Bucaramanga',
     'escuela de idiomas Sotomayor Bucaramanga',
     'academia de idiomas Santander',
   ],
   openGraph: {
     title: 'Quiénes somos — Idiomas WeLearn, academia en Bucaramanga',
     description:
-      'Una academia con sede real en Bucaramanga, fundada por un políglota en ocho idiomas y una directora académica formada en Europa. Más de 1000 estudiantes.',
+      'Una academia con sede real en Bucaramanga desde 2015, fundada por un políglota en ocho idiomas y una lingüista titulada en Rusia en enseñanza de idiomas. Más de 1000 estudiantes.',
     url: 'https://www.idiomaswl.com/quienes-somos',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/quienes-somos' },
 };
 
+/**
+ * Biografías y niveles tomados de las hojas de vida de los dos fundadores.
+ *
+ * Reglas que NO se rompen al editar esta página:
+ *  1. Los niveles MCER son los que figuran en sus hojas de vida. No se suben ni se
+ *     añaden idiomas «de relleno»: es la parte de la página que un estudiante puede
+ *     contrastar en treinta segundos hablando con ellos.
+ *  2. Zhanna cursó el doctorado pero dejó la disertación pendiente. Se escribe
+ *     «estudios de doctorado». Nunca «doctora», «PhD» ni «doctorada».
+ */
 const DAVID_BIO =
-  'Aprendió sus ocho idiomas en este orden: inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano. Ese recorrido —hecho desde el español, siendo adulto y sin vivir en cada país— es exactamente lo que se convirtió en el método de WeLearn. Sabe dónde se atasca un hispanohablante porque se atascó ahí primero.';
+  'Ingeniero industrial de la UDES que terminó dedicándose a los idiomas. Empezó por el inglés, se formó seis meses en el LTC de Eastbourne (Inglaterra) en 2013 y siguió con italiano, portugués, francés, ruso, alemán y coreano. Todo lo aprendió desde el español, siendo adulto y sin vivir en cada país: por eso sabe dónde se atasca un hispanohablante, porque se atascó ahí primero. Ese recorrido es literalmente el método de WeLearn.';
 
 const ZHANNA_BIO =
-  'Estudió en Francia y en Inglaterra, y es rusoparlante. Dirige el diseño curricular de la academia y la preparación de exámenes internacionales: define qué se enseña en cada nivel, en qué orden y cómo se evalúa, para que el avance de un estudiante sea medible y no una sensación.';
+  'Lingüista y profesora universitaria titulada por la Universidad Estatal de Oremburgo, en Rusia, donde se especializó en teorías y métodos de enseñanza de idiomas extranjeros. Cursó luego estudios de doctorado en idiomas germánicos en la Universidad Estatal Pedagógica de Oremburgo. Se formó en francés en la Universidad de Le Mans (Francia) y en inglés en el LTC de Eastbourne (Inglaterra). Enseña desde 2011. Es rusa y el ruso es su lengua materna.';
 
 const TEAM = [
   {
     img: '/images/david-duarte.jpg',
     alt: 'José David Duarte Silva, políglota y co-fundador de Idiomas WeLearn',
     name: 'José David Duarte Silva',
-    role: 'Co-fundador · Políglota en 8 idiomas',
+    role: 'Co-fundador · Políglota',
     bio: DAVID_BIO,
-    tags: ['Políglota · 8 idiomas', 'Método WeLearn', 'Preparación de exámenes'],
+    tags: ['Ingeniero industrial · UDES', 'Formado en Inglaterra', 'Ocho idiomas'],
+    langs: [
+      { name: 'Español', lvl: 'Nativo' },
+      { name: 'Inglés', lvl: 'C2' },
+      { name: 'Italiano', lvl: 'C1' },
+      { name: 'Portugués', lvl: 'C1' },
+      { name: 'Francés', lvl: 'B2' },
+      { name: 'Alemán', lvl: 'B2' },
+      { name: 'Ruso', lvl: 'B1' },
+      { name: 'Coreano', lvl: 'B1' },
+    ],
   },
   {
     img: '/images/team-zhanna-korzh.png',
@@ -50,7 +71,40 @@ const TEAM = [
     name: 'Zhanna Korzh',
     role: 'Co-fundadora · Directora académica',
     bio: ZHANNA_BIO,
-    tags: ['Formada en Francia e Inglaterra', 'Rusoparlante', 'Diseño curricular'],
+    tags: ['Lingüista titulada · Rusia', 'Estudios de doctorado', 'Enseña desde 2011'],
+    langs: [
+      { name: 'Ruso', lvl: 'Nativo' },
+      { name: 'Inglés', lvl: 'C1' },
+      { name: 'Español', lvl: 'C1' },
+      { name: 'Francés', lvl: 'B2' },
+      { name: 'Italiano', lvl: 'A2' },
+    ],
+  },
+];
+
+/**
+ * Formación verificable. Cada línea corresponde a un título, un programa o un
+ * certificado que existe en papel. Si algo no se puede respaldar, no entra aquí.
+ */
+const FORMACION = [
+  {
+    who: 'Zhanna Korzh',
+    items: [
+      { year: '2005 – 2010', what: 'Universidad Estatal de Oremburgo (Rusia)', detail: 'Filología románica y métodos de enseñanza. Titulada como lingüista y profesora universitaria.' },
+      { year: '2011 – 2015', what: 'Universidad Estatal Pedagógica de Oremburgo (Rusia)', detail: 'Estudios de doctorado en el departamento de idiomas extranjeros, especialidad idiomas germánicos. Disertación pendiente.' },
+      { year: '2012', what: 'Universidad de Le Mans (Francia)', detail: 'Programa de francés y cultura local: 51 horas de clase y 9 de seminario.' },
+      { year: '2013', what: 'LTC Eastbourne (Inglaterra)', detail: 'Inglés general, 15 horas semanales. Dos estancias certificadas.' },
+      { year: 'desde 2011', what: 'Quince años enseñando', detail: 'Profesora de inglés y francés. Hoy también prepara IELTS e IGCSE en un colegio de Bucaramanga.' },
+    ],
+  },
+  {
+    who: 'José David Duarte Silva',
+    items: [
+      { year: '2010 – 2014', what: 'Universidad de Santander, UDES', detail: 'Ingeniería industrial. Graduado.' },
+      { year: '2013', what: 'LTC Eastbourne (Inglaterra)', detail: 'Programa certificado de inglés general, de enero a junio.' },
+      { year: 'desde 2015', what: 'Fundador de Idiomas WeLearn', detail: 'Dirige la operación, el método y la plataforma: diagnóstico, contenidos, evaluación y seguimiento del progreso.' },
+      { year: 'hoy', what: 'Ocho idiomas activos', detail: 'Inglés C2, italiano y portugués C1, francés y alemán B2, ruso y coreano B1, además del español.' },
+    ],
   },
 ];
 
@@ -106,11 +160,11 @@ const jsonLd = {
       'Academia de idiomas con sede presencial en Bucaramanga y clases online para toda Colombia y el mundo. Enseña ocho idiomas y prepara exámenes internacionales, con más de 1000 estudiantes.'
     ),
     davidNode(
-      'Co-fundador de Idiomas WeLearn y políglota activo en ocho idiomas: inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano. Diseñó el método con el que la academia enseña a hispanohablantes adultos.'
+      'Co-fundador de Idiomas WeLearn e ingeniero industrial de la UDES. Políglota activo en ocho idiomas: español nativo, inglés C2, italiano y portugués C1, francés y alemán B2, ruso y coreano B1. Se formó en inglés en el LTC de Eastbourne, Inglaterra, y diseñó el método con el que la academia enseña a hispanohablantes adultos.'
     ),
     zhannaNode(
-      'Co-fundadora y directora académica de Idiomas WeLearn. Estudió en Francia y en Inglaterra, es rusoparlante y lidera el diseño curricular y la preparación de exámenes internacionales de la academia.',
-      ['ru', 'es', 'en', 'fr']
+      'Co-fundadora y directora académica de Idiomas WeLearn. Lingüista y profesora universitaria titulada por la Universidad Estatal de Oremburgo (Rusia), especializada en teorías y métodos de enseñanza de idiomas extranjeros, con estudios de doctorado en idiomas germánicos en la Universidad Estatal Pedagógica de Oremburgo. Se formó en francés en la Universidad de Le Mans (Francia) y en inglés en el LTC de Eastbourne (Inglaterra). Enseña desde 2011. Ruso nativo, inglés y español C1, francés B2, italiano A2.',
+      ['ru', 'es', 'en', 'fr', 'it']
     ),
     {
       '@type': 'BreadcrumbList',
@@ -145,10 +199,11 @@ export default function QuienesSomosPage() {
                 <span className={s.accent}>dirección física.</span>
               </h1>
               <p className={s.heroSub}>
-                Idiomas WeLearn nació en Bucaramanga y sigue aquí, en el barrio Sotomayor. Enseñamos
-                ocho idiomas y preparamos exámenes internacionales, presencialmente en el área
-                metropolitana y online en el resto del mundo. Más de 1000 estudiantes han pasado
-                por aquí.
+                Idiomas WeLearn nació en Bucaramanga en 2015 y sigue aquí, en el barrio Sotomayor.
+                La fundaron una lingüista rusa titulada en enseñanza de idiomas extranjeros y un
+                políglota que habla ocho. Enseñamos ocho idiomas y preparamos exámenes
+                internacionales, presencialmente en el área metropolitana y online en el resto del
+                mundo. Más de 1000 estudiantes han pasado por aquí.
               </p>
               <div className={s.heroCtas}>
                 <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
@@ -194,19 +249,21 @@ export default function QuienesSomosPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>8 idiomas</strong></span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Sede en Bucaramanga</strong> · Sotomayor</span>
+          <span className={s.proofItem}><strong>Desde 2015</strong> en Bucaramanga</span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
+          <span className={s.proofItem}><strong>Sede en Sotomayor</strong> · y online</span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Los fundadores</p>
-            <h2 className={s.h2}>Dos personas que aprendieron idiomas de verdad</h2>
+            <h2 className={s.h2}>Una lingüista y un políglota</h2>
             <p className={s.sectionSub}>
               WeLearn no es una franquicia ni un marketplace de tutores. La fundaron dos personas
-              que siguen dando clases y diseñando el contenido que ves en la plataforma.
+              que siguen dando clases y diseñando el contenido que ves en la plataforma: una que
+              estudió cómo se enseña un idioma y otro que aprendió ocho, en esta ciudad y siendo
+              adulto.
             </p>
             <div className={s.teamGrid}>
               {TEAM.map(m => (
@@ -227,15 +284,51 @@ export default function QuienesSomosPage() {
                     <div className={s.teamTags}>
                       {m.tags.map(t => <span key={t} className={s.teamTag}>{t}</span>)}
                     </div>
+                    <div className={s.levelBadges}>
+                      {m.langs.map(l => (
+                        <span key={l.name} className={s.levelBadge}>{l.name} {l.lvl}</span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
+            <p className={s.sectionSub} style={{ marginTop: '1.5rem', fontSize: '0.85rem', opacity: 0.7 }}>
+              Los niveles están expresados según el Marco Común Europeo de Referencia (MCER)
+              y son los que figuran en sus hojas de vida.
+            </p>
+          </div>
+        </section>
+
+        {/* ══════════════ FORMACIÓN ══════════════ */}
+        <section className={s.sectionDark}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Formación</p>
+            <h2 className={s.h2}>De dónde viene lo que enseñamos</h2>
+            <p className={s.sectionSub}>
+              Enseñar idiomas no está regulado en Colombia: cualquiera puede abrir una academia.
+              Por eso publicamos la formación completa de los dos, con años y con nombre de
+              institución, para que se pueda contrastar.
+            </p>
+            {FORMACION.map(persona => (
+              <div key={persona.who} style={{ marginTop: '2.5rem' }}>
+                <p className={s.teamName}>{persona.who}</p>
+                <div className={s.levelsGrid} style={{ marginTop: '1rem' }}>
+                  {persona.items.map(it => (
+                    <div key={it.year + it.what} className={s.levelCard}>
+                      <span className={s.levelTag}>{it.year}</span>
+                      <p className={s.levelTitle}>{it.what}</p>
+                      <p className={s.levelDesc}>{it.detail}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
         {/* ══════════════ PRINCIPIOS ══════════════ */}
-        <section className={s.sectionDark}>
+        <section className={s.section}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Cómo trabajamos</p>
             <h2 className={s.h2}>Tres cosas que no negociamos</h2>

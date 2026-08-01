@@ -278,7 +278,7 @@ export default function ClasesDeAlemanPage() {
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
           davidLine="Habla ocho idiomas. El alemán es de los que más le costó, y por eso es el que mejor sabe explicar: casos, orden de la frase y verbos separables, paso a paso desde el español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Goethe corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación Goethe', 'Diseño curricular']}
+          zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación Goethe', 'Diseño curricular']}
         />
 
         {/* ══════════════ WHY ══════════════ */}

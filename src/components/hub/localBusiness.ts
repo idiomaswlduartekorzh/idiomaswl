@@ -73,7 +73,13 @@ export function localBusinessNode(description: string) {
   };
 }
 
-/** Persona: David. `description` se adapta al idioma de la landing. */
+/**
+ * Persona: David. `description` se adapta al idioma de la landing.
+ *
+ * Los niveles de `knowsLanguage` salen de su hoja de vida y son los únicos que se
+ * publican. No añadir idiomas aquí sin respaldo: este nodo es lo que leen los
+ * motores de respuesta cuando se les pregunta quién enseña en WeLearn.
+ */
 export function davidNode(description: string) {
   return {
     '@type': 'Person',
@@ -82,13 +88,30 @@ export function davidNode(description: string) {
     jobTitle: 'Políglota y co-fundador de Idiomas WeLearn',
     description,
     image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
-    knowsLanguage: ['es', 'en', 'it', 'pt', 'fr', 'ru', 'de', 'ja', 'ko'],
+    knowsLanguage: ['es', 'en', 'it', 'pt', 'fr', 'de', 'ru', 'ko'],
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Universidad de Santander (UDES)' },
+      { '@type': 'EducationalOrganization', name: 'LTC Eastbourne Language Teaching Centre, Inglaterra' },
+    ],
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'degree',
+      name: 'Ingeniero Industrial',
+    },
     worksFor: { '@id': BUSINESS_ID },
   };
 }
 
-/** Persona: Zhanna. Es CO-FUNDADORA, no solo directora académica. */
-export function zhannaNode(description: string, knowsLanguage: string[] = ['es', 'en', 'fr']) {
+/**
+ * Persona: Zhanna. Es CO-FUNDADORA, no solo directora académica.
+ *
+ * Ojo: su doctorado en la OSPU quedó con la disertación pendiente. Se dice
+ * «estudios de doctorado», nunca «doctora» ni «PhD».
+ */
+export function zhannaNode(
+  description: string,
+  knowsLanguage: string[] = ['ru', 'es', 'en', 'fr']
+) {
   return {
     '@type': 'Person',
     '@id': ZHANNA_ID,
@@ -97,6 +120,18 @@ export function zhannaNode(description: string, knowsLanguage: string[] = ['es',
     description,
     image: 'https://www.idiomaswl.com/images/team-zhanna-korzh.png',
     knowsLanguage,
+    nationality: { '@type': 'Country', name: 'Rusia' },
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Universidad Estatal de Oremburgo (OSU), Rusia' },
+      { '@type': 'CollegeOrUniversity', name: 'Universidad Estatal Pedagógica de Oremburgo (OSPU), Rusia' },
+      { '@type': 'CollegeOrUniversity', name: 'Université du Maine, Le Mans, Francia' },
+      { '@type': 'EducationalOrganization', name: 'LTC Eastbourne Language Teaching Centre, Inglaterra' },
+    ],
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'degree',
+      name: 'Lingüista y profesora universitaria — Filología románica y métodos de enseñanza de idiomas extranjeros',
+    },
     worksFor: { '@id': BUSINESS_ID },
   };
 }

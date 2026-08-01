@@ -18,7 +18,9 @@ export type FoundersBandProps = {
 };
 
 const DEFAULT_DAVID_TAGS = ['Políglota · 8 idiomas', 'Co-fundador de WeLearn'];
-const DEFAULT_ZHANNA_TAGS = ['Co-fundadora · Directora académica', 'Formada en Francia e Inglaterra'];
+/** Zhanna es lingüista TITULADA en enseñanza de idiomas. No decir «doctora»: su
+ *  disertación quedó pendiente. Ver /quienes-somos para la trayectoria completa. */
+const DEFAULT_ZHANNA_TAGS = ['Lingüista titulada · Rusia', 'Enseña desde 2011'];
 
 export default function FoundersBand({
   accent,

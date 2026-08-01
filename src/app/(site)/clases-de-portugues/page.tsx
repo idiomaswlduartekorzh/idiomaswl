@@ -274,7 +274,7 @@ export default function ClasesDePortuguesPage() {
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
           davidLine="Habla ocho idiomas. El portugués fue el tercero que aprendió, después del inglés y el italiano, y es el que más rápido avanza cuando ya hablas español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación Celpe-Bras corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación Celpe-Bras', 'Diseño curricular']}
+          zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación Celpe-Bras', 'Diseño curricular']}
         />
 
         {/* WHY */}

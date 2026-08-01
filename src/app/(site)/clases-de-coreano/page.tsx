@@ -232,7 +232,7 @@ export default function ClasesDeCoreanoPage() {
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
           davidLine="Habla ocho idiomas y el coreano fue el último que aprendió. Justamente por eso llegó a él con todo el método ya afinado, y sabe qué atajos funcionan y cuáles no."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de nivel y controla que la preparación del TOPIK corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación TOPIK', 'Diseño curricular']}
+          zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación TOPIK', 'Diseño curricular']}
         />
 
         <section className={s.section}>

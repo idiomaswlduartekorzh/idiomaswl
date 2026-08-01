@@ -244,9 +244,9 @@ export default function ClasesDeIdiomasPage() {
                 <p style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: 2 }}>José David Duarte Silva</p>
                 <p style={{ fontSize: '0.76rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#60a5fa', marginBottom: '0.6rem' }}>Co-fundador · Políglota</p>
                 <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.55 }}>
-                  Habla ocho idiomas: los aprendió en este orden —inglés, italiano, portugués,
-                  francés, ruso, alemán, japonés y coreano— y de ese recorrido salió el método
-                  que usamos.
+                  Habla ocho idiomas: inglés C2, italiano y portugués C1, francés y alemán B2,
+                  ruso y coreano B1, además del español. Los aprendió en ese mismo orden, ya
+                  adulto, y de ese recorrido salió el método que usamos.
                 </p>
               </div>
             </div>
@@ -259,8 +259,9 @@ export default function ClasesDeIdiomasPage() {
                 <p style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: 2 }}>Zhanna Korzh</p>
                 <p style={{ fontSize: '0.76rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#60a5fa', marginBottom: '0.6rem' }}>Co-fundadora · Directora académica</p>
                 <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.55 }}>
-                  Rusoparlante y formada en Francia e Inglaterra. Dirige el diseño curricular y la
-                  preparación de exámenes, y enseña el ruso de la academia.
+                  Lingüista y profesora universitaria titulada en Rusia en enseñanza de idiomas
+                  extranjeros, formada además en Francia e Inglaterra. Enseña desde 2011. Dirige
+                  el diseño curricular y la preparación de exámenes.
                 </p>
               </div>
             </div>

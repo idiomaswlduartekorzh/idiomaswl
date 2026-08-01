@@ -235,7 +235,7 @@ export default function ClasesDeJaponesPage() {
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, incluidos los que se consideran difíciles."
           davidLine="Habla ocho idiomas. Llegó al japonés casi al final del recorrido, con el método ya probado en lenguas lejanas al español, y por eso sabe qué atajos sirven y cuáles hacen perder meses."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de nivel y controla que la preparación del JLPT corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Co-fundadora · Dir. académica', 'Rutas de certificación', 'Diseño curricular']}
+          zhannaTags={['Lingüista titulada · Co-fundadora', 'Rutas de certificación', 'Diseño curricular']}
         />
 
         {/* ══════════════ DIFICULTAD (AEO estrella) ══════════════ */}

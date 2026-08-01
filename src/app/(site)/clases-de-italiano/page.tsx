@@ -341,7 +341,7 @@ export default function ClasesDeItalianoPage() {
           intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
           davidLine="Habla ocho idiomas. El italiano fue el segundo que aprendió, justo después del inglés — y es el que mejor demuestra cuánta ventaja te da ya hablar español."
           zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de certificación y controla que la preparación CILS y CELI corresponda a lo que el examen realmente evalúa."
-          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación CILS / CELI', 'Diseño curricular']}
+          zhannaTags={['Lingüista titulada · Co-fundadora', 'Preparación CILS / CELI', 'Diseño curricular']}
         />
 
         {/* WHY */}
