@@ -135,7 +135,7 @@ const jsonLd = {
       name: 'Idiomas WeLearn',
       url: 'https://www.idiomaswl.com',
       telephone: '+573005004253',
-      address: { '@type': 'PostalAddress', addressLocality: 'Bucaramanga', addressRegion: 'Santander', addressCountry: 'CO' },
+      address: { '@type': 'PostalAddress', streetAddress: 'Calle 47 # 29-33, Sotomayor', addressLocality: 'Bucaramanga', addressRegion: 'Santander', addressCountry: 'CO' },
     },
     {
       '@type': 'BreadcrumbList',

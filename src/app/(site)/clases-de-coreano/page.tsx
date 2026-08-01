@@ -107,7 +107,7 @@ const jsonLd = {
       priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Bucaramanga',
+        streetAddress: 'Calle 47 # 29-33, Sotomayor',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
         postalCode: '680001',

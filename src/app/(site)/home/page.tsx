@@ -77,6 +77,7 @@ const jsonLd = {
       image: 'https://www.idiomaswl.com/images/welearn-logo.png',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Calle 47 # 29-33, Sotomayor',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
         addressCountry: 'CO',

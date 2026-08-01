@@ -193,7 +193,7 @@ const jsonLd = {
       paymentAccepted: 'Cash, Credit Card, Transfer',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Bucaramanga',
+        streetAddress: 'Calle 47 # 29-33, Sotomayor',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
         postalCode: '680001',
@@ -207,7 +207,7 @@ const jsonLd = {
         { '@type': 'City', name: 'Piedecuesta' },
         { '@type': 'Country', name: 'Colombia' },
       ],
-      hasMap: 'https://maps.google.com/?q=Idiomas+WeLearn+Bucaramanga',
+      hasMap: 'https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn',
       openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
       founder: [
         { '@id': 'https://www.idiomaswl.com/#david' },
@@ -425,7 +425,7 @@ export default function ClasesDeFrancesPage() {
 
         {/* ── Proof strip ────────────────────────────────────── */}
         <div className={s.proofStrip}>
-          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong></span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · Sotomayor</span>
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Online</strong> · toda Colombia y el mundo</span>
           <span className={s.proofDivider} />

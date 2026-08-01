@@ -49,7 +49,7 @@ const jsonLd = {
       description: 'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL, ICFES, TOPIK, Goethe, DELF, CILS y Celpe-Bras. Método WeLearn de 17 pasos.',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Bucaramanga',
+        streetAddress: 'Calle 47 # 29-33, Sotomayor',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
         postalCode: '680001',
@@ -68,7 +68,7 @@ const jsonLd = {
         { '@type': 'City', name: 'Bogotá' },
         { '@type': 'Country', name: 'Colombia' },
       ],
-      hasMap: 'https://maps.google.com/?q=Idiomas+WeLearn+Bucaramanga',
+      hasMap: 'https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn',
       openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
       sameAs: [
         'https://wa.me/573005004253',

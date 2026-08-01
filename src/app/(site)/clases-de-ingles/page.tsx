@@ -128,7 +128,7 @@ const jsonLd = {
       description: 'Academia de idiomas en Bucaramanga con clases online para toda Colombia. Especialistas en inglés, coreano, francés, alemán, italiano y portugués. Preparación IELTS, TOEFL, ICFES, TOPIK, Goethe, DELF, CILS y Celpe-Bras.',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Bucaramanga',
+        streetAddress: 'Calle 47 # 29-33, Sotomayor',
         addressLocality: 'Bucaramanga',
         addressRegion: 'Santander',
         postalCode: '680001',
@@ -145,7 +145,7 @@ const jsonLd = {
         { '@type': 'City', name: 'Medellín' },
         { '@type': 'Country', name: 'Colombia' },
       ],
-      hasMap: 'https://maps.google.com/?q=Idiomas+WeLearn+Bucaramanga',
+      hasMap: 'https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn',
       openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
       sameAs: [
         'https://wa.me/573005004253',
