@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FoundersBand from '@/components/hub/FoundersBand';
+import LocalBand from '@/components/hub/LocalBand';
+import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
@@ -9,75 +11,30 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de alemán 
 const WA_GOETHE  = encodeURIComponent('Hola, quiero prepararme para el examen Goethe con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Alemán Online en Colombia — Preparación Goethe-Zertifikat | WeLearn',
+  title: 'Clases de Alemán en Bucaramanga y Online — Goethe, Ausbildung y Enfermería | WeLearn',
   description:
-    'Aprende alemán online con tutor especializado. Preparación Goethe A1 hasta C1. Desde cero hasta nivel avanzado. Diagnóstico gratis. Para colombianos con visas de trabajo, estudios o visa de oportunidad.',
+    'Academia de alemán en Bucaramanga con clases presenciales y online para toda Colombia. Preparación Goethe A1–C1 y las rutas reales: Ausbildung, enfermería, Chancenkarte y visa familiar. Diagnóstico gratis.',
   keywords: [
+    'clases de alemán Bucaramanga',
+    'curso de alemán Bucaramanga',
+    'academia de alemán Bucaramanga',
+    'nivel de alemán para Ausbildung',
+    'curso de alemán para enfermeras',
+    'Chancenkarte Colombia',
+    'examen Goethe Colombia',
+    'preparación Goethe-Zertifikat',
     'clases de alemán online Colombia',
-    'aprender alemán Bucaramanga',
-    'preparación Goethe-Zertifikat Colombia',
-    'curso de alemán para adultos',
-    'Goethe Colombia',
-    'alemán online Colombia',
-    'visa trabajo Alemania inglés',
     'aprender alemán desde cero',
+    'alemán para trabajar en Alemania',
     'WeLearn alemán',
-    'Goethe B1 Colombia',
   ],
   openGraph: {
-    title: 'Clases de Alemán Online — Preparación Goethe-Zertifikat | WeLearn',
+    title: 'Clases de Alemán en Bucaramanga y Online — Goethe y Ausbildung | WeLearn',
     description:
-      'Tutor especializado, método estructurado, preparación Goethe. Desde A1 hasta C1. Clase diagnóstico gratis para colombianos.',
+      'Presencial en Bucaramanga y online en toda Colombia. Las rutas reales: Ausbildung, enfermería, Chancenkarte y visa familiar. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-aleman',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-aleman' },
-};
-
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: '¿Necesito saber alemán para empezar?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. Empezamos desde A1 absoluto. La primera sesión cubre el alfabeto alemán, pronunciación básica y las primeras frases de presentación.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Qué tan difícil es el alemán para colombianos?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Es más accesible de lo que parece. La pronunciación es consistente (se escribe como se lee) y hay vocabulario similar al inglés. Los 4 casos gramaticales son el mayor reto, pero con el método correcto se interiorizan gradualmente.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Para qué sirve el Goethe-Zertifikat?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El Goethe-Zertifikat es la certificación oficial del Instituto Goethe. Es requerida para visas de trabajo en Alemania (B1), estudios universitarios (B2–C1), residencia permanente y el pasaporte alemán (B1). También es valorada por empleadores alemanes y austriacos.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto tiempo toma llegar al Goethe B1?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Partiendo de cero, entre 14 y 20 meses con práctica constante de 3–4 horas semanales. Si ya tienes base (A2), puedes alcanzar B1 en 8–12 meses.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Las clases son presenciales o virtuales?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Son 100% virtuales, por videollamada. Puedes estar en Bogotá, Medellín, Cali, Bucaramanga o cualquier ciudad de Colombia o el mundo.',
-      },
-    },
-  ],
 };
 
 const jsonLd = {
@@ -93,15 +50,7 @@ const jsonLd = {
         name: 'Idiomas WeLearn',
         url: 'https://www.idiomaswl.com',
       },
-      hasCourseInstance: [
-        {
-          '@type': 'CourseInstance',
-          courseMode: 'online',
-          inLanguage: 'de',
-          courseWorkload: 'PT1H',
-          instructor: { '@type': 'Person', name: 'José David Duarte Silva' },
-        },
-      ],
+      hasCourseInstance: courseInstances('Alemán', 'de'),
       offers: {
         '@type': 'Offer',
         price: '0',
@@ -110,21 +59,16 @@ const jsonLd = {
         availability: 'https://schema.org/InStock',
       },
     },
-    {
-      '@type': 'LocalBusiness',
-      '@id': 'https://www.idiomaswl.com/#localbusiness',
-      name: 'Idiomas WeLearn',
-      description: 'Academia de idiomas online. Clases de alemán, inglés, coreano, francés, italiano y portugués.',
-      url: 'https://www.idiomaswl.com',
-      telephone: '+573005004253',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Calle 47 # 29-33, Sotomayor',
-        addressLocality: 'Bucaramanga',
-        addressRegion: 'Santander',
-        addressCountry: 'CO',
-      },
-    },
+    localBusinessNode(
+      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Alemán con preparación del Goethe-Zertifikat, además de inglés, francés, italiano, portugués, coreano y ruso.'
+    ),
+    davidNode(
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El alemán es de los que más le costó, y por eso es el que mejor sabe desarmar para un hispanohablante.'
+    ),
+    zhannaNode(
+      'Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Lidera el diseño curricular y la preparación de certificaciones oficiales de alemán.',
+      ['es', 'en', 'fr']
+    ),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -200,9 +144,44 @@ const FAQS = [
   },
   {
     q: '¿Las clases son presenciales o virtuales?',
-    a: 'Son 100% virtuales, por videollamada. Puedes estar en Bogotá, Medellín, Cali, Bucaramanga o cualquier ciudad de Colombia o el mundo.',
+    a: 'Las dos. En Bucaramanga y su área metropolitana —Floridablanca, Girón y Piedecuesta— puedes venir a nuestra sede de Sotomayor; desde cualquier otra ciudad de Colombia o del mundo la clase es por videollamada, con el mismo profesor y el mismo plan. También puedes alternar entre los dos formatos.',
+  },
+  {
+    q: '¿Dónde puedo estudiar alemán en Bucaramanga?',
+    a: 'En Idiomas WeLearn, Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Algunas universidades de la ciudad ofrecen alemán, normalmente en niveles iniciales y para su propia comunidad. El diagnóstico inicial es gratis: escríbenos al 300 500 4253.',
+  },
+  {
+    q: '¿Dónde puedo presentar el examen Goethe en Bucaramanga?',
+    a: 'No se puede: no hay centro examinador de alemán en Bucaramanga ni en Santander. Los exámenes se presentan en la sede del Goethe-Institut en Bogotá, o en los centros asociados de Medellín, Cali y Cartagena. Desde Bucaramanga lo más práctico suele ser Bogotá. Inscríbete con semanas de anticipación, porque los cupos son limitados.',
+  },
+  {
+    q: '¿Existe un colegio alemán en Bucaramanga?',
+    a: 'No. No hay ninguna escuela alemana en Bucaramanga; el colegio alemán más antiguo del país está en Barranquilla. En Bucaramanga el alemán se estudia en algunas universidades y en academias de idiomas como la nuestra.',
+  },
+  {
+    q: '¿Qué nivel de alemán necesito para una Ausbildung?',
+    a: 'Por norma B1 para una formación profesional cualificada, y A2 cuando no lo es. En la práctica, las empresas del sector salud suelen pedir B2 antes de dar la plaza. Se aceptan certificados de Goethe, telc y ÖSD, entre otros, y normalmente se exigen con menos de un año de antigüedad.',
+  },
+  {
+    q: '¿Qué nivel piden para trabajar como enfermera en Alemania, B1 o B2?',
+    a: 'Los dos, en momentos distintos. Para el permiso con el que llegas a completar el reconocimiento de tu título suele bastar B1. Para obtener el reconocimiento y ejercer, la mayoría de los estados alemanes exige B2 y además un examen de lenguaje especializado de enfermería. El requisito exacto cambia según el estado federado, así que confírmalo para el tuyo.',
+  },
+  {
+    q: '¿Cuánto cuestan las clases de alemán en Bucaramanga?',
+    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.',
   },
 ];
+
+// El FAQPage se deriva de FAQS para que el marcado y el texto visible nunca se separen.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
 
 const BLOG_POSTS = [
   { cat: 'Alemán', color: '#1a2ecc', title: 'Alemán para enfermería en Alemania: nivel B2 y la Fachsprachprüfung', slug: 'aleman-para-enfermeria-en-alemania' },
@@ -233,7 +212,7 @@ export default function ClasesDeAlemanPage() {
           <div className={s.heroInner}>
             <div className={s.heroText}>
               <div className={s.heroPhrase}>Hallo!</div>
-              <p className={s.eyebrow}>Alemán online · WeLearn</p>
+              <p className={s.eyebrow}>Alemán en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
                 Aprende alemán<br />
                 <span className={s.accent}>de verdad.</span>
@@ -289,7 +268,7 @@ export default function ClasesDeAlemanPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Goethe A1 hasta C1</strong></span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · online en toda Colombia</span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · Sotomayor</span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
@@ -372,6 +351,179 @@ export default function ClasesDeAlemanPage() {
             </div>
           </div>
         </section>
+
+        {/* ══════════════ QUÉ NIVEL PIDE CADA TRÁMITE (AEO) ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Antes de elegir curso</p>
+            <h2 className={s.h2}>¿Qué nivel de alemán te piden según tu trámite?</h2>
+            <p className={s.sectionSub}>
+              Casi nadie necesita &ldquo;aprender alemán&rdquo; en abstracto: necesita un nivel concreto
+              para un trámite concreto. Estudiar sin saber cuál es tu meta es la forma más común de
+              perder un año.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Visa familiar</span>
+                <p className={s.levelTitle}>A1 — reagrupación con tu pareja</p>
+                <p className={s.levelDesc}>
+                  Se pide un A1 acreditado antes de viajar. Colombia no está entre los países
+                  exentos de este requisito, así que cuenta con presentarlo. Es el objetivo más
+                  corto de todos y el que más rápido se alcanza.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Ausbildung</span>
+                <p className={s.levelTitle}>B1 por norma, B2 en la práctica</p>
+                <p className={s.levelDesc}>
+                  La norma pide B1 para una formación profesional cualificada, y A2 cuando no lo
+                  es. Pero las empresas del sector salud suelen exigir B2 para dar la plaza. Dicho
+                  claro: el B1 te abre el visado, el B2 te abre las buenas vacantes.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Enfermería</span>
+                <p className={s.levelTitle}>B1 para entrar, B2 para ejercer</p>
+                <p className={s.levelDesc}>
+                  Son dos momentos distintos y confundirlos cuesta meses. Para el permiso mientras
+                  completas el reconocimiento del título suele bastar B1. Para ejercer, la mayoría
+                  de estados alemanes exige B2 y además un examen de lenguaje especializado de
+                  enfermería. El requisito exacto varía según el estado federado.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Chancenkarte</span>
+                <p className={s.levelTitle}>A1 abre la puerta, B1 y B2 dan puntos</p>
+                <p className={s.levelDesc}>
+                  La tarjeta de oportunidades pide como mínimo A1 de alemán o B2 de inglés — y ese
+                  mínimo no suma puntos. El alemán sí puntúa por encima: B1 suma dos puntos y B2 o
+                  más suma tres, sobre los seis que hay que alcanzar. Si te faltan puntos, subir de
+                  nivel suele ser la vía más rápida.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Universidad</span>
+                <p className={s.levelTitle}>Alrededor de C1</p>
+                <p className={s.levelDesc}>
+                  Para carreras dictadas en alemán se pide TestDaF con nivel 4 en las cuatro partes
+                  o DSH-2, ambos en torno a C1. El B2 normalmente no alcanza. El TestDaF sí se
+                  presenta en Colombia; el DSH solo en Alemania, en la propia universidad.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Al llegar</span>
+                <p className={s.levelTitle}>B1 para la nacionalización</p>
+                <p className={s.levelDesc}>
+                  El examen que se rinde al final del curso de integración se presenta ya dentro de
+                  Alemania, no desde Colombia, y acredita B1. Conviene saberlo desde el principio
+                  para no pagar dos veces por el mismo nivel.
+                </p>
+              </div>
+            </div>
+            <p className={s.sectionSub} style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
+              Los requisitos migratorios cambian con frecuencia y varían entre estados alemanes.
+              Confirma siempre tu caso en la fuente oficial antes de inscribirte a un examen —
+              nosotros preparamos el idioma, no gestionamos el trámite.
+            </p>
+          </div>
+        </section>
+
+        {/* ══════════════ DÓNDE SE PRESENTA (SEO LOCAL + AEO diferencial) ══════════════ */}
+        <section className={s.sectionDark}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Dónde se presenta</p>
+            <h2 className={s.h2}>El Goethe-Zertifikat no se aplica en Bucaramanga</h2>
+            <p className={s.sectionSub}>
+              Conviene saberlo antes de organizar nada: no hay centro examinador de alemán en
+              Bucaramanga ni en ningún municipio de Santander. Prepararte, sí puedes hacerlo aquí.
+              Presentarlo, no.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Bogotá</span>
+                <p className={s.levelTitle}>La sede principal</p>
+                <p className={s.levelDesc}>
+                  El Goethe-Institut tiene su sede propia en Bogotá y allí se aplican los exámenes
+                  de A1 a C2, además del TestDaF para universidad. Desde Bucaramanga es el destino
+                  más práctico por frecuencia de convocatorias.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Otras sedes</span>
+                <p className={s.levelTitle}>Medellín, Cali y Cartagena</p>
+                <p className={s.levelDesc}>
+                  Hay centros asociados en esas tres ciudades, donde la inscripción se hace
+                  directamente con cada centro y no con la sede de Bogotá. Sus calendarios son
+                  independientes, así que vale la pena compararlos.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Ojo</span>
+                <p className={s.levelTitle}>Inscríbete con antelación</p>
+                <p className={s.levelDesc}>
+                  La inscripción cierra con semanas de anticipación y los cupos son limitados. Suma
+                  el viaje al cálculo: no es solo el día del examen. Y ten presente que el
+                  certificado suele exigirse con menos de un año de antigüedad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════ DIFICULTAD (AEO) ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>La pregunta de siempre</p>
+            <h2 className={s.h2}>¿Es tan difícil el alemán como dicen?</h2>
+            <p className={s.sectionSub}>
+              Menos de lo que su fama sugiere. El Foreign Service Institute lo sitúa en categoría
+              II, con unas 750 horas de aula para competencia profesional. Eso es{' '}
+              <strong>una sola categoría por encima</strong> del francés o el italiano, y muy lejos
+              del chino o el árabe, que están en la categoría más alta con unas 2.200 horas.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Lo que cuesta</span>
+                <p className={s.levelTitle}>Casos, géneros y el verbo al final</p>
+                <p className={s.levelDesc}>
+                  Cuatro casos que cambian artículos y adjetivos; tres géneros con poca lógica
+                  aparente; y el verbo que se va al final en las subordinadas, lo que te obliga a
+                  planear la frase entera antes de abrir la boca. A eso súmale los verbos
+                  separables, donde el sentido se cierra en la última sílaba.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>A tu favor</span>
+                <p className={s.levelTitle}>Se lee como se escribe</p>
+                <p className={s.levelDesc}>
+                  La ortografía alemana es muy regular: puedes leer en voz alta desde la primera
+                  semana, algo impensable en inglés o francés. Las vocales le vienen bien al oído
+                  hispano y el alfabeto es el mismo — cero curva de escritura, a diferencia del
+                  ruso o el japonés.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Cuánto toma</span>
+                <p className={s.levelTitle}>Los niveles altos cuestan el doble</p>
+                <p className={s.levelDesc}>
+                  Según las referencias del propio Goethe-Institut, el A1 ronda las 60 a 150 horas
+                  y el B1 acumulado va de 260 a 490. Pero el B2 y el C1 requieren el doble de curso
+                  que los niveles iniciales. Por eso &ldquo;llegar a B2 para enfermería&rdquo; no es
+                  cuestión de un trimestre.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════ BUCARAMANGA (SEO LOCAL) ══════════════ */}
+        <LocalBand
+          accent="#1a2ecc"
+          idioma="alemán"
+          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar alemán presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          presencial="Clases cara a cara para el idioma que más se beneficia de tener al profesor al lado: los casos, el género y el orden de la frase se corrigen mucho más rápido en persona que por chat."
+          waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de alemán presenciales. ¿Cómo funcionan?"
+        />
 
         {/* ══════════════ PRACTICA GRATIS ══════════════ */}
         <PracticeBand
