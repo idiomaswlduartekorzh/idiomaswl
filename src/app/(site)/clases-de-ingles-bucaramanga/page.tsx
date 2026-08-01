@@ -59,7 +59,7 @@ const jsonLd = {
         {
           '@type': 'Question',
           name: '¿Cuánto cuestan las clases de inglés en Bucaramanga con WeLearn?',
-          acceptedAnswer: { '@type': 'Answer', text: 'El Plan Preparación (con simulacros + feedback de tutor) empieza en $180.000 COP/mes. El Plan Intensivo (sesiones en vivo + tutor asignado) va desde $280.000/mes (2 sesiones/semana) hasta $480.000/mes (4 sesiones/semana). También vendemos paquetes de horas prepago con mejor precio por hora. La clase de diagnóstico inicial es gratis y sin compromiso.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso. Se consulta por WhatsApp al 300 500 4253.' },
         },
         {
           '@type': 'Question',
@@ -125,11 +125,11 @@ const RESULTADOS = [
 const FAQS_LOCAL = [
   {
     q: '¿Hay clases presenciales de inglés en Bucaramanga con WeLearn?',
-    a: 'WeLearn opera online (videollamada), lo que permite atender a estudiantes en todo Bucaramanga, Floridablanca, Girón y Piedecuesta sin limitaciones de desplazamiento. Misma calidad pedagógica que la presencial, con tutor asignado y plan personalizado.',
+    a: 'Las dos. Tenemos sede en la Calle 47 # 29-33, barrio Sotomayor, donde las clases pueden ser presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace por videollamada con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.',
   },
   {
     q: '¿Cuánto cuestan las clases de inglés en Bucaramanga?',
-    a: 'El Plan Preparación empieza en $180.000 COP/mes. El Intensivo va de $280.000 a $480.000/mes según la frecuencia. También vendemos paquetes de horas prepago (4, 10 y 20 horas) con mejor precio por hora. La clase de diagnóstico es siempre gratis.',
+    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos al 300 500 4253.',
   },
   {
     q: '¿WeLearn prepara para IELTS y TOEFL desde Bucaramanga?',
@@ -338,7 +338,7 @@ export default function ClasesInglessBucaramangaPage() {
               },
               {
                 name: 'Plan Preparación',
-                price: 'desde $180.000',
+                price: 'Consultar',
                 cadence: '/ mes',
                 desc: 'Simulacros ilimitados + feedback escrito por sección + chat con tutor. Sin sesiones en vivo.',
                 cta: 'Consultar por WhatsApp',
@@ -347,7 +347,7 @@ export default function ClasesInglessBucaramangaPage() {
               },
               {
                 name: 'Plan Intensivo',
-                price: 'desde $280.000',
+                price: 'Consultar',
                 cadence: '/ mes',
                 desc: '2 a 4 sesiones en vivo por semana + tutor asignado + plan personalizado + evaluación mensual.',
                 cta: 'Reservar cupo',
@@ -405,11 +405,6 @@ export default function ClasesInglessBucaramangaPage() {
           <p style={{ textAlign: 'center', marginTop: '1.75rem', color: 'rgba(255,255,255,0.35)', fontSize: '0.8rem' }}>
             Todos los planes incluyen clase de diagnóstico gratis · Sin permanencia mínima · Cancela cuando quieras
           </p>
-          <div style={{ textAlign: 'center', marginTop: '0.5rem' }}>
-            <Link href="/precios" style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.82rem', textDecoration: 'underline', textUnderlineOffset: 3 }}>
-              Ver comparación completa de planes →
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -527,10 +522,6 @@ export default function ClasesInglessBucaramangaPage() {
             <Link href="/clases-de-ingles" style={{ color: 'var(--accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}>
               Clases de inglés
             </Link>
-            {' '}·{' '}
-            <Link href="/precios" style={{ color: 'var(--accent)', textDecoration: 'underline', textUnderlineOffset: 3 }}>
-              Ver todos los precios
-            </Link>
           </p>
         </div>
       </section>
@@ -543,7 +534,6 @@ export default function ClasesInglessBucaramangaPage() {
           <Link href="/clases-de-ingles" style={{ color: 'rgba(255,255,255,0.55)' }}>Clases de Inglés</Link> ·{' '}
           <Link href="/examenes/ielts" style={{ color: 'rgba(255,255,255,0.55)' }}>IELTS</Link> ·{' '}
           <Link href="/examenes/toefl" style={{ color: 'rgba(255,255,255,0.55)' }}>TOEFL</Link> ·{' '}
-          <Link href="/precios" style={{ color: 'rgba(255,255,255,0.55)' }}>Precios</Link>
         </p>
       </div>
     </>

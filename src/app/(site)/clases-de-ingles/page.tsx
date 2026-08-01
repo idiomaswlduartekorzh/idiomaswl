@@ -52,17 +52,17 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?',
-      acceptedAnswer: { '@type': 'Answer', text: 'El Plan Preparación empieza en $180.000 COP/mes. El Plan Intensivo va de $280.000 a $480.000/mes según la frecuencia. También vendemos paquetes de horas prepago (4, 10 y 20 horas) con mejor precio por hora. La clase de diagnóstico inicial es gratis y sin compromiso.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso. Se consulta por WhatsApp al 300 500 4253.' },
     },
     {
       '@type': 'Question',
       name: '¿Tienen paquetes de horas de inglés con descuento?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Vendemos paquetes prepago de 4, 10 y 20 horas de clases en vivo. Entre más horas compras, menor es el precio por hora. Escríbenos por WhatsApp para conocer las opciones actuales.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Hay paquetes prepago de clases en vivo, y a mayor número de horas menor es el valor por hora. Las opciones vigentes se consultan por WhatsApp al 300 500 4253.' },
     },
     {
       '@type': 'Question',
       name: '¿Hay clases de inglés presenciales en Bucaramanga?',
-      acceptedAnswer: { '@type': 'Answer', text: 'WeLearn opera online por videollamada, atendiendo con la misma calidad a estudiantes en Bucaramanga, Floridablanca, Girón, Piedecuesta y toda Colombia. Tutor asignado, plan personalizado y evaluación continua.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Las dos modalidades están disponibles. WeLearn tiene sede en la Calle 47 # 29-33, barrio Sotomayor, donde las clases pueden ser presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta; desde cualquier otra ciudad son por videollamada, con el mismo tutor y el mismo plan. También se puede alternar entre ambos formatos.' },
     },
     {
       '@type': 'Question',
@@ -89,8 +89,8 @@ const faqJsonLd = {
 
 const FAQS = [
   { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
-  { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'El Plan Preparación empieza en $180.000 COP/mes. El Plan Intensivo va de $280.000 a $480.000/mes según la frecuencia de clases. También vendemos paquetes de horas prepago (4, 10 y 20 horas) con mejor precio por hora — ideales si no quieres un plan mensual fijo. La clase de diagnóstico siempre es gratis.' },
-  { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Vendemos paquetes prepago de 4, 10 y 20 horas de clases en vivo. Entre más horas compras, menor es el precio por hora. Escríbenos por WhatsApp para conocer las opciones actuales y precios exactos.' },
+  { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos al 300 500 4253.' },
+  { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
   { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
   { q: '¿Hay clases de inglés presenciales en Bucaramanga?', a: 'Sí. WeLearn tiene sede en Bucaramanga y da clases presenciales a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta. Si prefieres no desplazarte, o vives en otra ciudad, la misma clase se hace online por videollamada, con el mismo tutor y el mismo plan. También puedes alternar entre los dos formatos.' },
   { q: '¿Cómo funciona la clase de diagnóstico gratis?', a: 'Es una sesión de 45 minutos por videollamada donde evaluamos tu nivel de inglés, identificamos tu objetivo y diseñamos el plan. Sin costo y sin compromiso.' },
@@ -212,8 +212,8 @@ const PRECIOS = [
   },
   {
     name: 'Plan Preparación',
-    price: 'desde $180.000',
-    cadence: '/ mes',
+    price: 'Consultar',
+    cadence: '',
     desc: 'Simulacros ilimitados, material de preparación, feedback escrito por sección y chat con tutor en menos de 24 horas.',
     cta: 'Consultar por WhatsApp',
     waUrl: WA_GENERAL,
@@ -221,8 +221,8 @@ const PRECIOS = [
   },
   {
     name: 'Plan Intensivo',
-    price: 'desde $280.000',
-    cadence: '/ mes',
+    price: 'Consultar',
+    cadence: '',
     desc: 'Sesiones en vivo 2 a 4 veces por semana, tutor asignado, plan de estudio personalizado y evaluación mensual de progreso.',
     cta: 'Consultar por WhatsApp',
     waUrl: WA_GENERAL,
@@ -510,11 +510,6 @@ export default function ClasesDeInglesPage() {
           }}>
             Todos los planes incluyen clase de diagnóstico gratis · Sin permanencia mínima
           </p>
-          <div style={{ textAlign: 'center', marginTop: '0.75rem' }}>
-            <Link href="/precios" style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.82rem', textDecoration: 'underline', textUnderlineOffset: 3 }}>
-              Ver comparación completa de planes →
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -688,7 +683,6 @@ export default function ClasesDeInglesPage() {
           <Link href="/examenes/ielts">IELTS</Link> ·{' '}
           <Link href="/examenes/toefl">TOEFL</Link> ·{' '}
           <Link href="/examenes/icfes">ICFES</Link> ·{' '}
-          <Link href="/precios">Precios</Link>
         </p>
       </div>
     </>

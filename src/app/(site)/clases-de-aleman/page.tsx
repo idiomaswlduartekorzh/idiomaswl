@@ -590,9 +590,6 @@ export default function ClasesDeAlemanPage() {
                 <WaIcon />
                 Agendar diagnóstico gratis
               </a>
-              <Link href="/precios" className={s.ghostBtnLight}>
-                Ver planes y precios →
-              </Link>
             </div>
           </div>
         </section>

@@ -498,7 +498,6 @@ export default function ClasesDePortuguesPage() {
               <a href={`https://wa.me/${WA}?text=${WA_GENERAL}`} target="_blank" rel="noopener noreferrer" className={s.waBtn}>
                 <WaIcon /> Agendar diagnóstico gratis
               </a>
-              <Link href="/precios" className={s.ghostBtnLight}>Ver planes y precios →</Link>
             </div>
           </div>
         </section>

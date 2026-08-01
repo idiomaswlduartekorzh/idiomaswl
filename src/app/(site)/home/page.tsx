@@ -722,20 +722,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 09 — PRECIOS — teaser, sin duplicar la página /precios */}
-      <section id="precios" className="wlh-section wlh-section--alt">
-        <div className="wrap" style={{ textAlign: 'center' }}>
-          <FadeUp>
-            <p className="wlh-section-eyebrow">10 — Precios</p>
-            <h2 className="wlh-section-h2">Un precio claro. Sin sorpresas.</h2>
-            <p className="wlh-section-desc" style={{ maxWidth: 520, margin: '0 auto 2rem' }}>
-              Simulacros, retroalimentación y tutorías en vivo. Un precio transparente para todos los idiomas y exámenes. Sin letra pequeña.
-            </p>
-            <Link href="/precios" className="btn">Ver planes y precios →</Link>
-          </FadeUp>
-        </div>
-      </section>
-
       {/* 10 — FAQ */}
       <section className="wlh-section">
         <div className="wrap wlh-faq-wrap">
@@ -835,7 +821,6 @@ export default function HomePage() {
           <div className="wlh-footer__col">
             <p className="wlh-footer__col-title">Compañía</p>
             <Link href="/metodo">Método</Link>
-            <Link href="/precios">Precios</Link>
             <Link href="/blog">Blog</Link>
             <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20contactar%20a%20WeLearn." target="_blank" rel="noopener noreferrer">Contacto</a>
           </div>

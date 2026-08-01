@@ -1,21 +1,25 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BLOG_POSTS } from '@/data/blog';
 
 export const metadata: Metadata = {
-  title: 'Clases de idiomas online en Colombia | Inglés, Coreano, Francés, Alemán — WeLearn',
+  title: 'Academia de Idiomas en Bucaramanga y Online — 8 Idiomas y 9 Certificaciones | WeLearn',
   description:
-    'Clases de idiomas online 1:1 en Colombia: inglés, coreano, francés, alemán, italiano y portugués con tutores especializados. Preparamos para IELTS, TOEFL, Goethe, DELF, CILS y Celpe-Bras. Diagnóstico gratis.',
+    'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Ocho idiomas —inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano— y nueve certificaciones oficiales: IELTS, TOEFL, Cambridge, ICFES, Goethe, DELF, CILS, Celpe-Bras y TOPIK. Diagnóstico gratis.',
   keywords: [
+    'academia de idiomas Bucaramanga',
+    'clases de idiomas Bucaramanga',
+    'instituto de idiomas Bucaramanga',
+    'academia de idiomas Sotomayor',
     'clases de idiomas online Colombia',
-    'academia de idiomas online Colombia',
+    'certificaciones de idiomas Colombia',
+    'preparación IELTS TOEFL Bucaramanga',
     'aprender idiomas con tutor Colombia',
-    'inglés coreano francés alemán italiano portugués online Colombia',
-    'clases de idiomas 1 a 1 Colombia',
   ],
   openGraph: {
-    title: 'Clases de idiomas online en Colombia | WeLearn',
-    description: 'Inglés, coreano, francés, alemán, italiano y portugués con tutores especializados. Diagnóstico gratis.',
+    title: 'Academia de Idiomas en Bucaramanga y Online | WeLearn',
+    description: 'Inglés, italiano, portugués, francés, ruso, alemán, japonés y coreano. Presencial en Bucaramanga y online en toda Colombia. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-idiomas',
     type: 'website',
   },
@@ -133,6 +137,34 @@ const LANGUAGES = [
   },
 ];
 
+/**
+ * Los nueve certificados oficiales para los que la academia prepara, con su simulacro.
+ * Las rutas corresponden a los slugs reales de `src/data/exams.ts`.
+ */
+const CERTIFICADOS = [
+  { idioma: 'Inglés',    flag: '🇬🇧', color: '#1a4fcc', items: [
+    { name: 'IELTS',              desc: 'Academic y General. Migración, universidad y trabajo.', href: '/examenes/ielts' },
+    { name: 'TOEFL iBT',          desc: 'El más pedido por universidades de Estados Unidos.',    href: '/examenes/toefl' },
+    { name: 'Cambridge B2 First', desc: 'Certificado que no caduca, reconocido en toda Europa.', href: '/examenes/cambridge-b2' },
+    { name: 'ICFES Saber 11',     desc: 'La sección de inglés de la prueba de Estado.',          href: '/examenes/icfes' },
+  ]},
+  { idioma: 'Francés',   flag: '🇫🇷', color: '#1a2ecc', items: [
+    { name: 'DELF / DALF', desc: 'Diplomas del Ministerio de Educación de Francia. No caducan.', href: '/examenes/delf-dalf' },
+  ]},
+  { idioma: 'Italiano',  flag: '🇮🇹', color: '#009246', items: [
+    { name: 'CILS / CELI', desc: 'Los certificados válidos para la ciudadanía italiana.', href: '/examenes/cils-celi' },
+  ]},
+  { idioma: 'Portugués', flag: '🇧🇷', color: '#166534', items: [
+    { name: 'Celpe-Bras', desc: 'La única certificación oficial de Brasil — y se presenta en Bucaramanga.', href: '/examenes/celpe-bras' },
+  ]},
+  { idioma: 'Alemán',    flag: '🇩🇪', color: '#1a2ecc', items: [
+    { name: 'Goethe-Zertifikat', desc: 'El estándar para visas, estudios y trabajo en Alemania.', href: '/examenes/goethe' },
+  ]},
+  { idioma: 'Coreano',   flag: '🇰🇷', color: '#c8202e', items: [
+    { name: 'TOPIK', desc: 'Requisito para universidades y visas de Corea del Sur.', href: '/examenes/topik' },
+  ]},
+];
+
 const RECENT_BLOG = [
   ...BLOG_POSTS
     .filter(p => ['Alemán','Francés','Italiano','Portugués','Coreano','Inglés'].includes(p.category))
@@ -185,20 +217,55 @@ export default function ClasesDeIdiomasPage() {
         background: 'linear-gradient(135deg, #050a14 0%, #0b1230 50%, #050a14 100%)',
         color: '#fff',
         padding: '5rem 1.25rem 4rem',
-        textAlign: 'center',
       }}>
-        <div style={{ maxWidth: 720, margin: '0 auto' }}>
-          <p style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.5)', marginBottom: '0.75rem' }}>
-            Idiomas WeLearn
-          </p>
-          <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.25rem', letterSpacing: '-0.02em' }}>
-            Clases de idiomas online<br />
-            <span style={{ color: '#60a5fa' }}>con tutor especializado.</span>
-          </h1>
-          <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.75)', maxWidth: 560, margin: '0 auto 2rem', lineHeight: 1.6 }}>
-            Seis idiomas. Un método. Tutores reales que conocen tu examen y tu objetivo.
-            Clases 1:1 online, desde Colombia, con resultados verificables.
-          </p>
+        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 3rem' }}>
+            <p style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.5)', marginBottom: '0.75rem' }}>
+              Idiomas WeLearn · Bucaramanga
+            </p>
+            <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.1, marginBottom: '1.25rem', letterSpacing: '-0.02em' }}>
+              Ocho idiomas.<br />
+              <span style={{ color: '#60a5fa' }}>Dos políglotas que los enseñan.</span>
+            </h1>
+            <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', color: 'rgba(255,255,255,0.75)', maxWidth: 620, margin: '0 auto', lineHeight: 1.6 }}>
+              No somos una plataforma con lecciones grabadas. Somos dos personas que aprendieron
+              idiomas de verdad y montaron una academia en Bucaramanga para enseñarlos, presencial
+              y online.
+            </p>
+          </div>
+
+          {/* Los dos fundadores, en el hero */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.25rem', marginBottom: '2.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '96px 1fr', gap: '1.15rem', alignItems: 'start', padding: '1.35rem', borderRadius: 16, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
+              <div style={{ position: 'relative', width: 96, height: 116, borderRadius: 12, overflow: 'hidden' }}>
+                <Image src="/images/david-duarte.jpg" alt="José David Duarte Silva, políglota y co-fundador de Idiomas WeLearn" fill style={{ objectFit: 'cover', objectPosition: 'center top' }} sizes="96px" />
+              </div>
+              <div>
+                <p style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: 2 }}>José David Duarte Silva</p>
+                <p style={{ fontSize: '0.76rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#60a5fa', marginBottom: '0.6rem' }}>Co-fundador · Políglota</p>
+                <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.55 }}>
+                  Habla ocho idiomas: los aprendió en este orden —inglés, italiano, portugués,
+                  francés, ruso, alemán, japonés y coreano— y de ese recorrido salió el método
+                  que usamos.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '96px 1fr', gap: '1.15rem', alignItems: 'start', padding: '1.35rem', borderRadius: 16, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
+              <div style={{ position: 'relative', width: 96, height: 116, borderRadius: 12, overflow: 'hidden' }}>
+                <Image src="/images/team-zhanna-korzh.png" alt="Zhanna Korzh, co-fundadora y directora académica de Idiomas WeLearn" fill style={{ objectFit: 'cover', objectPosition: 'center top' }} sizes="96px" />
+              </div>
+              <div>
+                <p style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: 2 }}>Zhanna Korzh</p>
+                <p style={{ fontSize: '0.76rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#60a5fa', marginBottom: '0.6rem' }}>Co-fundadora · Directora académica</p>
+                <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.55 }}>
+                  Rusoparlante y formada en Francia e Inglaterra. Dirige el diseño curricular y la
+                  preparación de exámenes, y enseña el ruso de la academia.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
               href={`https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero saber qué idioma me recomienda WeLearn según mi objetivo.')}`}
@@ -206,10 +273,10 @@ export default function ClasesDeIdiomasPage() {
               rel="noopener noreferrer"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#25d366', color: '#fff', fontWeight: 700, padding: '0.85rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '0.97rem' }}
             >
-              Hablar con un tutor →
+              Diagnóstico gratis por WhatsApp →
             </a>
-            <Link href="/precios" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.85rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '0.97rem', border: '1px solid rgba(255,255,255,0.15)' }}>
-              Ver precios
+            <Link href="/quienes-somos" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.85rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '0.97rem', border: '1px solid rgba(255,255,255,0.15)' }}>
+              Conócenos
             </Link>
           </div>
         </div>
@@ -219,9 +286,9 @@ export default function ClasesDeIdiomasPage() {
       <section style={{ background: 'var(--bg-2)', borderTop: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)', padding: '1.25rem 1.25rem' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '1.5rem 3rem', justifyContent: 'center', alignItems: 'center' }}>
           {[
-            { n: '6', label: 'Idiomas disponibles' },
-            { n: '1:1', label: 'Clases personalizadas' },
-            { n: '12+', label: 'Certificaciones preparadas' },
+            { n: '8', label: 'Idiomas disponibles' },
+            { n: '9', label: 'Certificaciones oficiales' },
+            { n: 'Sotomayor', label: 'Sede en Bucaramanga' },
             { n: 'Gratis', label: 'Diagnóstico inicial' },
           ].map(s => (
             <div key={s.label} style={{ textAlign: 'center' }}>
@@ -302,6 +369,52 @@ export default function ClasesDeIdiomasPage() {
       </section>
 
       {/* ══════════════ WHY WELEARN ══════════════ */}
+      {/* ══════════════ CERTIFICADOS ══════════════ */}
+      <section style={{ background: 'var(--bg-2)', padding: '4rem 1.25rem', borderTop: '1px solid var(--line-soft)' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+          <p style={{ fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)', textAlign: 'center', marginBottom: '0.5rem' }}>
+            Certificaciones oficiales
+          </p>
+          <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, textAlign: 'center', marginBottom: '0.75rem', lineHeight: 1.2 }}>
+            Los exámenes para los que te preparamos.
+          </h2>
+          <p style={{ color: 'var(--muted)', textAlign: 'center', maxWidth: 620, margin: '0 auto 2.5rem', fontSize: '0.97rem' }}>
+            Nueve certificaciones oficiales, cada una con su simulacro gratuito para que veas el
+            formato real antes de inscribirte a nada.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
+            {CERTIFICADOS.map(grupo => (
+              <div key={grupo.idioma} style={{ border: '1px solid var(--line-soft)', borderRadius: 14, padding: '1.4rem', background: 'var(--bg)' }}>
+                <p style={{ fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', color: grupo.color, marginBottom: '1rem' }}>
+                  <span style={{ marginRight: 6 }}>{grupo.flag}</span>{grupo.idioma}
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+                  {grupo.items.map(ex => (
+                    <Link
+                      key={ex.href}
+                      href={ex.href}
+                      style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+                    >
+                      <p style={{ fontSize: '0.97rem', fontWeight: 700, color: 'var(--ink)', marginBottom: 2 }}>
+                        {ex.name} <span style={{ color: grupo.color }}>→</span>
+                      </p>
+                      <p style={{ fontSize: '0.83rem', color: 'var(--muted)', lineHeight: 1.5 }}>{ex.desc}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p style={{ textAlign: 'center', marginTop: '2rem', fontSize: '0.88rem', color: 'var(--muted)' }}>
+            Ojo con un detalle que casi nadie menciona: el <strong>Celpe-Bras se presenta en
+            Bucaramanga</strong>, mientras que el CILS, el Goethe y el TOPIK obligan a viajar a
+            Bogotá. Lo tenemos explicado en la página de cada idioma.
+          </p>
+        </div>
+      </section>
+
       <section style={{ background: 'var(--bg-2)', padding: '4rem 1.25rem', borderTop: '1px solid var(--line-soft)' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.1rem)', fontWeight: 900, textAlign: 'center', marginBottom: '2.5rem' }}>
@@ -379,7 +492,7 @@ export default function ClasesDeIdiomasPage() {
       <section style={{ padding: '4.5rem 1.25rem', textAlign: 'center', background: 'linear-gradient(135deg, #050a14 0%, #0b1230 100%)' }}>
         <div style={{ maxWidth: 580, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, color: '#fff', marginBottom: '0.75rem', lineHeight: 1.2 }}>
-            Tu primer día de clases es gratis.
+            Tu diagnóstico es gratis.
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
             Agenda tu clase de diagnóstico gratuita. En 60 minutos sabrás tu nivel real,
@@ -394,8 +507,8 @@ export default function ClasesDeIdiomasPage() {
             >
               Agendar diagnóstico gratis →
             </a>
-            <Link href="/precios" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem', border: '1px solid rgba(255,255,255,0.15)' }}>
-              Ver precios
+            <Link href="/practica" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', color: '#fff', fontWeight: 600, padding: '0.9rem 1.75rem', borderRadius: 8, textDecoration: 'none', fontSize: '1rem', border: '1px solid rgba(255,255,255,0.15)' }}>
+              Practicar gratis
             </Link>
           </div>
         </div>
