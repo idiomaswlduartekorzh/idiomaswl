@@ -728,7 +728,7 @@ export default function ClasesDeInglesPage() {
       <div className={s.footerMini}>
         <p>
           © 2026 Idiomas WeLearn ·{' '}
-          <Link href="/home">Inicio</Link> ·{' '}
+          <Link href="/">Inicio</Link> ·{' '}
           <Link href="/metodo">Método</Link> ·{' '}
           <Link href="/examenes/ielts">IELTS</Link> ·{' '}
           <Link href="/examenes/toefl">TOEFL</Link> ·{' '}

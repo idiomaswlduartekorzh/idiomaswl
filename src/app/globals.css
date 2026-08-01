@@ -5250,22 +5250,23 @@ button {
 }
 
 /* ── SiteNav logo & user menu ────────────────────────────────────────────── */
-/* Logo: white-background pill that zooms into the actual logo content area */
+/* Wordmark transparente: sin caja ni texto de marca duplicado. */
 .wl-site-nav__logo-wrap {
   position: relative;
-  width: 68px;
-  height: 26px;
-  border-radius: 5px;
-  background: #fff;
-  overflow: hidden;
+  width: 124px;
+  height: 46px;
   flex-shrink: 0;
-  box-shadow: 0 0 0 1.5px rgba(26,46,204,0.13);
 }
-.wl-site-nav__brand-name {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--fg);
-  white-space: nowrap;
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .wl-site-nav__logo-wrap img {
+    filter: brightness(0) invert(1);
+  }
+}
+[data-theme="dark"] .wl-site-nav__logo-wrap img {
+  filter: brightness(0) invert(1);
+}
+[data-theme="light"] .wl-site-nav__logo-wrap img {
+  filter: none;
 }
 .wl-site-nav__loading {
   width: 28px;

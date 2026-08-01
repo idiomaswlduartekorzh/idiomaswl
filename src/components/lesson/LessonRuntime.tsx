@@ -59,7 +59,7 @@ export default function LessonRuntime({ langName, langFlag, langSlug, dayNumber,
       <nav className="wl-nav" style={{ borderBottom: '1px solid var(--line-soft)' }}>
         <div className="wl-container">
           <div className="wl-nav-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: 64, gap: '1rem' }}>
-            <Link href="/home" className="wl-site-nav__brand" style={{ textDecoration: 'none' }}>
+            <Link href="/" className="wl-site-nav__brand" style={{ textDecoration: 'none' }}>
               <div className="wl-site-nav__logo-wrap">
                 <Image
                   src="/images/welearn-logo.png"

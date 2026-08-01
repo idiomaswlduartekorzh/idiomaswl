@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Idiomas WeLearn',
     short_name: 'WeLearn',
     description: 'Aprende coreano, inglés, francés y más con once pasos diarios. Simulacros de TOEFL, IELTS e ICFES.',
-    start_url: '/home',
+    start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
     theme_color: '#14215c',

@@ -1,5 +1,5 @@
-import { redirect } from 'next/navigation';
+import HomePage, { homeMetadata } from './home/HomePage';
 
-export default function RootPage() {
-  redirect('/home');
-}
+export const metadata = homeMetadata;
+
+export default HomePage;

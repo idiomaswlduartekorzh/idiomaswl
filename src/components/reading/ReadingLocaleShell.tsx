@@ -23,7 +23,7 @@ export function ReadingLocaleShell({
     <div className={styles.shell} lang={locale}>
       <header className={styles.siteHeader}>
         <div className={styles.headerInner}>
-          <Link href="/home" className={styles.brand} aria-label="Idiomas WeLearn">
+          <Link href="/" className={styles.brand} aria-label="Idiomas WeLearn">
             <span className={styles.brandMark}>W</span>
             <span>Idiomas WeLearn</span>
           </Link>
@@ -46,4 +46,3 @@ export function ReadingLocaleShell({
     </div>
   )
 }
-

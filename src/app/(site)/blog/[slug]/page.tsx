@@ -177,7 +177,7 @@ export default async function BlogArticlePage(
         author: {
           '@type': 'Person',
           name: 'José David Duarte Silva',
-          url: 'https://www.idiomaswl.com/home',
+          url: 'https://www.idiomaswl.com/',
         },
         publisher: {
           '@type': 'Organization',
@@ -236,7 +236,7 @@ export default async function BlogArticlePage(
           {/* Header */}
           <header className={s.header}>
             <nav className={s.breadcrumb} aria-label="Breadcrumb">
-              <Link href="/home">Inicio</Link>
+              <Link href="/">Inicio</Link>
               <span>›</span>
               <Link href="/blog">Blog</Link>
               <span>›</span>

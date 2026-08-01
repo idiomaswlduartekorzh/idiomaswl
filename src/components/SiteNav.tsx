@@ -10,7 +10,7 @@ import { useTheme } from '@/components/ThemeProvider';
 
 // ⚠️ NUNCA borrar "Práctica": se ha perdido varias veces en force-pushes.
 const NAV_LINKS = [
-  { label: 'Home',           href: '/home' },
+  { label: 'Home',           href: '/' },
   { label: 'Idiomas',        href: '/clases-de-idiomas' },
   { label: 'Exámenes',       href: '/examenes' },
   { label: 'Práctica',       href: '/practica' },
@@ -134,11 +134,11 @@ export default function SiteNav() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => Boolean(createClient()));
 
   useEffect(() => {
     const supabase = createClient();
-    if (!supabase) { setLoading(false); return; }
+    if (!supabase) return;
     supabase.auth.getUser().then(({ data }) => {
       setUser(data.user);
       setLoading(false);
@@ -153,7 +153,7 @@ export default function SiteNav() {
     const supabase = createClient();
     if (!supabase) return;
     await supabase.auth.signOut();
-    router.push('/home');
+    router.push('/');
     router.refresh();
   };
 
@@ -161,25 +161,24 @@ export default function SiteNav() {
     <header className="wl-site-nav">
       <div className="wl-site-nav__inner wrap">
         {/* Brand with logo */}
-        <Link href="/home" className="wl-site-nav__brand">
+        <Link href="/" className="wl-site-nav__brand" aria-label="Idiomas WeLearn — inicio">
           <div className="wl-site-nav__logo-wrap">
             <Image
-              src="/images/welearn-logo.png"
-              alt="WeLearn"
+              src="/images/welearn-wordmark-transparent-v2.png"
+              alt="Idiomas WeLearn"
               fill
-              sizes="96px"
+              sizes="124px"
               priority
-              style={{ objectFit: 'cover', objectPosition: 'center 42%' }}
+              style={{ objectFit: 'contain' }}
             />
           </div>
-          <span className="wl-site-nav__brand-name">Idiomas WeLearn</span>
         </Link>
 
         {/* Desktop links */}
         <nav className="wl-site-nav__links" aria-label="Navegación principal">
           {NAV_LINKS.map(({ label, href }) => {
             const active =
-              href === '/home' ? pathname === '/home'
+              href === '/' ? pathname === '/' || pathname === '/home'
               : href === '/practica' ? pathname.startsWith('/practica') || pathname.startsWith('/aprende-coreano')
               : href === '/clases-de-idiomas' ? isIdiomasPath(pathname)
               : pathname.startsWith(href);
@@ -207,7 +206,7 @@ export default function SiteNav() {
           ) : (
             <>
               <Link href="/login" className="btn btn-ghost btn-sm">Iniciar sesión</Link>
-              <Link href="/clases-de-ingles" className="btn btn-sm">Empezar →</Link>
+              <Link href="/nivel-radar" className="btn btn-sm">Nivel Radar →</Link>
             </>
           )}
         </div>
@@ -259,7 +258,7 @@ export default function SiteNav() {
             ) : (
               <>
                 <Link href="/login" className="btn btn-ghost btn-sm" onClick={() => setMenuOpen(false)}>Iniciar sesión</Link>
-                <Link href="/clases-de-ingles" className="btn btn-sm" onClick={() => setMenuOpen(false)}>Empezar →</Link>
+                <Link href="/nivel-radar" className="btn btn-sm" onClick={() => setMenuOpen(false)}>Nivel Radar →</Link>
               </>
             )}
           </div>

@@ -32,7 +32,7 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Inicio',          item: 'https://www.idiomaswl.com/home' },
+        { '@type': 'ListItem', position: 1, name: 'Inicio',          item: 'https://www.idiomaswl.com/' },
         { '@type': 'ListItem', position: 2, name: 'Coreano',         item: 'https://www.idiomaswl.com/clases-de-coreano' },
         { '@type': 'ListItem', position: 3, name: 'Palabras compuestas', item: 'https://www.idiomaswl.com/aprende-coreano/palabras-compuestas' },
       ],
@@ -46,7 +46,7 @@ const jsonLd = {
       author: {
         '@type': 'Person',
         name: 'José David Duarte Silva',
-        url: 'https://www.idiomaswl.com/home',
+        url: 'https://www.idiomaswl.com/',
       },
       publisher: {
         '@type': 'Organization',
@@ -165,7 +165,7 @@ export default function PalabrasCompuestasPage() {
 
             {/* Breadcrumb */}
             <nav style={{ display:'flex', gap:'0.4rem', alignItems:'center', marginBottom:'1.5rem', fontSize:'0.78rem', color:'rgba(255,255,255,0.45)', fontFamily:'var(--mono)' }}>
-              <Link href="/home" style={{ color:'rgba(255,255,255,0.45)', textDecoration:'none' }}>Inicio</Link>
+              <Link href="/" style={{ color:'rgba(255,255,255,0.45)', textDecoration:'none' }}>Inicio</Link>
               <span>/</span>
               <Link href="/clases-de-coreano" style={{ color:'rgba(255,255,255,0.45)', textDecoration:'none' }}>Coreano</Link>
               <span>/</span>

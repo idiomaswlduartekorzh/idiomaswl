@@ -530,7 +530,7 @@ export default function ClasesInglessBucaramangaPage() {
       <div style={{ background: 'var(--ink-bg)', color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', textAlign: 'center', padding: '1.25rem' }}>
         <p>
           © 2026 Idiomas WeLearn ·{' '}
-          <Link href="/home" style={{ color: 'rgba(255,255,255,0.55)' }}>Inicio</Link> ·{' '}
+          <Link href="/" style={{ color: 'rgba(255,255,255,0.55)' }}>Inicio</Link> ·{' '}
           <Link href="/clases-de-ingles" style={{ color: 'rgba(255,255,255,0.55)' }}>Clases de Inglés</Link> ·{' '}
           <Link href="/examenes/ielts" style={{ color: 'rgba(255,255,255,0.55)' }}>IELTS</Link> ·{' '}
           <Link href="/examenes/toefl" style={{ color: 'rgba(255,255,255,0.55)' }}>TOEFL</Link> ·{' '}

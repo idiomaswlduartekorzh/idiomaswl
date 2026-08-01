@@ -59,7 +59,7 @@ export default function NotFound() {
       {/* Actions */}
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '0.5rem' }}>
         <Link
-          href="/home"
+          href="/"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
