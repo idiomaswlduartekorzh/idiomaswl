@@ -369,6 +369,62 @@
   margin: 0;
 }
 
+/* ─── Practica gratis section ──────────────────────────────────────────────── */
+.practicaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.practicaCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  border-radius: 14px;
+  border: 1.5px solid rgba(26,46,204,0.3);
+  background: rgba(26,46,204,0.06);
+  text-decoration: none;
+  color: var(--fg);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.practicaCard:hover { border-color: rgba(26,46,204,0.55); box-shadow: 0 6px 24px rgba(26,46,204,0.1); }
+.practicaBadge {
+  align-self: flex-start;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a2ecc;
+  background: rgba(26,46,204,0.12);
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+.practicaTitle { font-size: 0.95rem; font-weight: 700; margin: 0; }
+.practicaDesc { font-size: 0.82rem; color: var(--muted); line-height: 1.45; margin: 0; }
+
+/* ─── Instructor section ────────────────────────────────────────────────────── */
+.instructorRow {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.instructorPhoto { display: flex; justify-content: center; }
+.photoWrap {
+  position: relative;
+  width: 220px;
+  height: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.instructorText {}
+.instructorP { color: rgba(255,255,255,0.7); line-height: 1.65; margin: 0 0 1rem; }
+@media (max-width: 680px) {
+  .instructorRow { grid-template-columns: 1fr; text-align: center; }
+  .instructorPhoto { justify-content: center; }
+}
+
 /* ─── Blog section ──────────────────────────────────────────────────────────── */
 .blogGrid {
   display: grid;

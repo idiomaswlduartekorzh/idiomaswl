@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import s from './page.module.css';
 
 const WA = '573005004253';
@@ -329,6 +330,47 @@ export default function ClasesDeFrancesPage() {
           </div>
         </section>
 
+        {/* ══════════════ INSTRUCTOR ══════════════ */}
+        <section className={s.sectionDark}>
+          <div className={s.wrap}>
+            <div className={s.instructorRow}>
+              <div className={s.instructorPhoto}>
+                <div className={s.photoWrap}>
+                  <Image
+                    src="/images/david-duarte.jpg"
+                    alt="José David Duarte Silva — políglota y fundador de WeLearn"
+                    fill
+                    style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                    sizes="(max-width: 680px) 100vw, 220px"
+                  />
+                </div>
+              </div>
+              <div className={s.instructorText}>
+                <p className={s.sectionEyebrow}>Tu instructor</p>
+                <h2 className={s.h2}>David habla 8 idiomas. El francés fue el segundo.</h2>
+                <p className={s.instructorP}>
+                  Después del inglés, el francés fue el idioma que le enseñó a David que
+                  aprender un idioma &ldquo;difícil&rdquo; es cuestión de método, no de talento.
+                  Compartimos raíces con el español, pero la pronunciación y la lógica
+                  gramatical exigen un camino estructurado.
+                </p>
+                <p className={s.instructorP}>
+                  Esa experiencia personal es la base del método WeLearn para francés:
+                  pronunciación desde el día uno, gramática funcional y preparación DELF/DALF
+                  diseñada específicamente para hispanohablantes.
+                </p>
+                <a
+                  href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                  target="_blank" rel="noopener noreferrer"
+                  className={s.waBtnLight}
+                >
+                  Hablar con David por WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ══════════════ DELF/DALF ══════════════ */}
         <section className={s.sectionDark}>
           <div className={s.wrap}>
@@ -358,6 +400,39 @@ export default function ClasesDeFrancesPage() {
                 <WaIcon />
                 Preparar mi DELF ahora →
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════ PRACTICA GRATIS ══════════════ */}
+        <section className={s.section}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>Práctica gratuita</p>
+            <h2 className={s.h2}>Ejercítate con material real antes de empezar</h2>
+            <p className={s.sectionSub}>
+              Gramática, vocabulario y escritura con feedback inmediato. Sin registro.
+            </p>
+            <div className={s.practicaGrid}>
+              <Link href="/practica/frances/a1/gramatica" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Gramática A1</p>
+                <p className={s.practicaDesc}>Ejercicios interactivos de los temas base del francés: artículos, género, verbos esenciales.</p>
+              </Link>
+              <Link href="/practica/frances/a1/vocabulario" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Vocabulario A1</p>
+                <p className={s.practicaDesc}>Palabras de alta frecuencia con audio nativo. Aprende el francés que realmente se usa.</p>
+              </Link>
+              <Link href="/practica/frances/a1/escritura" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Escritura integrada A1</p>
+                <p className={s.practicaDesc}>Lee, prepara vocabulario y escribe una respuesta real — con modelo de nivel para comparar.</p>
+              </Link>
+              <Link href="/practica/frances/b1" className={s.practicaCard}>
+                <span className={s.practicaBadge}>Gratis</span>
+                <p className={s.practicaTitle}>Nivel B1 — rumbo al DELF</p>
+                <p className={s.practicaDesc}>Gramática, escucha, lectura y escritura de nivel B1, el que más piden universidades y empleadores.</p>
+              </Link>
             </div>
           </div>
         </section>
