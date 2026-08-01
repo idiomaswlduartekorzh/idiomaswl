@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/clases-de-portugues`,  lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/clases-de-ruso`,       lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
     { url: `${BASE}/quienes-somos`,       lastModified: now, changeFrequency: 'monthly', priority: 0.80 },
+    { url: `${BASE}/clases-de-japones`,   lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
     { url: `${BASE}/preparacion-icfes`,              lastModified: now, changeFrequency: 'monthly', priority: 0.9  },
     { url: `${BASE}/miembro-fundador`,               lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/clases-de-ingles-bucaramanga`,              lastModified: now, changeFrequency: 'monthly', priority: 0.95 },

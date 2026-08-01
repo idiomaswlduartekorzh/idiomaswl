@@ -118,6 +118,19 @@ const LANGUAGES = [
     waMsg: 'Hola, estoy interesado en clases de ruso con WeLearn. ¿Cómo funciona?',
     levels: 'A1 → C2',
   },
+  {
+    slug: 'japones',
+    flag: '🇯🇵',
+    name: 'Japonés',
+    native: '日本語',
+    color: '#BC002D',
+    bgColor: 'rgba(188,0,45,0.08)',
+    description: 'Comparte las cinco vocales del español, así que la pronunciación se te va a dar. Ruta JLPT y acceso a las becas del gobierno japonés.',
+    exams: ['JLPT N5 → N1'],
+    href: '/clases-de-japones',
+    waMsg: 'Hola, estoy interesado en clases de japonés con WeLearn. ¿Cómo funciona?',
+    levels: 'N5 → N1',
+  },
 ];
 
 const RECENT_BLOG = [

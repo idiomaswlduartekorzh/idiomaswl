@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import FoundersBand from '@/components/hub/FoundersBand';
+import LocalBand from '@/components/hub/LocalBand';
+import PracticeBand from '@/components/hub/PracticeBand';
+import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import s from './page.module.css';
 import { KOREAN_STEPS } from '@/data/stepsMeta';
 
@@ -78,15 +82,7 @@ const jsonLd = {
         name: 'Idiomas WeLearn',
         url: 'https://www.idiomaswl.com',
       },
-      hasCourseInstance: [
-        {
-          '@type': 'CourseInstance',
-          courseMode: 'online',
-          inLanguage: 'ko',
-          courseWorkload: 'PT1H',
-          instructor: { '@type': 'Person', name: 'José David Duarte Silva' },
-        },
-      ],
+      hasCourseInstance: courseInstances('Coreano', 'ko'),
       offers: {
         '@type': 'Offer',
         price: '0',
@@ -95,36 +91,16 @@ const jsonLd = {
         availability: 'https://schema.org/LimitedAvailability',
       },
     },
-    {
-      '@type': ['LocalBusiness', 'LanguageSchool'],
-      '@id': 'https://www.idiomaswl.com/#localbusiness',
-      name: 'Idiomas WeLearn',
-      alternateName: 'WeLearn Academia de Idiomas',
-      description: 'Academia de idiomas en Bucaramanga con clases online para toda Colombia. Coreano, inglés, francés, alemán, italiano y portugués. Preparación TOPIK, IELTS, TOEFL, Goethe, DELF, CILS y Celpe-Bras.',
-      url: 'https://www.idiomaswl.com',
-      telephone: '+573005004253',
-      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
-      priceRange: '$$',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Calle 47 # 29-33, Sotomayor',
-        addressLocality: 'Bucaramanga',
-        addressRegion: 'Santander',
-        postalCode: '680001',
-        addressCountry: 'CO',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 7.1193,
-        longitude: -73.1227,
-      },
-      areaServed: [
-        { '@type': 'City', name: 'Bucaramanga' },
-        { '@type': 'City', name: 'Bogotá' },
-        { '@type': 'Country', name: 'Colombia' },
-      ],
-      openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
-    },
+    localBusinessNode(
+      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Coreano con preparación TOPIK, además de inglés, francés, alemán, italiano, portugués y ruso.'
+    ),
+    davidNode(
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El coreano fue el último que aprendió, y con él terminó de afinar el método que la academia usa para lenguas lejanas al español.'
+    ),
+    zhannaNode(
+      'Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Lidera el diseño curricular y la preparación de certificaciones internacionales.',
+      ['es', 'en', 'fr', 'ru']
+    ),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -249,6 +225,16 @@ export default function ClasesDeCoreanoPage() {
         </div>
 
         {/* ══════════════ WHY KOREAN ══════════════ */}
+        {/* ══════════════ FUNDADORES ══════════════ */}
+        <FoundersBand
+          accent="#c8202e"
+          title="Dos políglotas te enseñan coreano. No un curso grabado."
+          intro="Detrás de cada clase hay dos personas que aprendieron idiomas de verdad, no una app con lecciones automáticas."
+          davidLine="Habla ocho idiomas y el coreano fue el último que aprendió. Justamente por eso llegó a él con todo el método ya afinado, y sabe qué atajos funcionan y cuáles no."
+          zhannaLine="Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Diseña las rutas de nivel y controla que la preparación del TOPIK corresponda a lo que el examen realmente evalúa."
+          zhannaTags={['Co-fundadora · Dir. académica', 'Preparación TOPIK', 'Diseño curricular']}
+        />
+
         <section className={s.section}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>¿Por qué coreano?</p>
@@ -523,130 +509,33 @@ export default function ClasesDeCoreanoPage() {
         </section>
 
         {/* ══════════════ SECCIONES DE PRÁCTICA ══════════════ */}
-        <section className={s.sectionDark} id="practica">
-          <div className={s.wrap}>
-            <p className={s.sectionEyebrow}>Práctica gratuita</p>
-            <h2 className={s.h2}>Ejercítate con material real</h2>
-            <p className={s.sectionSub}>
-              Las primeras secciones son completamente gratis. Practica vocabulario y lectura
-              antes de comprometerte con un plan.
-            </p>
+        {/* ══════════════ BUCARAMANGA (SEO LOCAL) ══════════════ */}
+        <LocalBand
+          accent="#c8202e"
+          idioma="coreano"
+          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar coreano presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          presencial="Clases cara a cara para un idioma que casi nadie enseña en Santander. El TOPIK solo se aplica en Bogotá, así que aquí lo que resolvemos es la preparación completa."
+          waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de coreano presenciales. ¿Cómo funcionan?"
+        />
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem', marginTop: '1.75rem' }}>
-              {/* Vocabulario 1 — FREE */}
-              <Link
-                href="/practica/vocabulario-coreano"
-                style={{
-                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
-                  padding: '1.25rem', borderRadius: 14,
-                  border: '1.5px solid rgba(200,32,46,0.4)',
-                  background: 'rgba(200,32,46,0.07)',
-                  textDecoration: 'none', transition: 'border-color .2s',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span style={{ fontSize: '1.5rem' }}>🖼️</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#c8202e', background: 'rgba(200,32,46,0.12)', padding: '2px 8px', borderRadius: 100 }}>Gratis</span>
-                </div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Vocabulario 1 — Imágenes</div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>12 palabras clave del día 1 y 2. Ve la imagen, escucha el audio, elige la palabra. Descubre tu nivel A1.</div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>🎯 12 preguntas · Sin registro</div>
-              </Link>
-
-              {/* Lectura TOPIK — FREE */}
-              <Link
-                href="/examenes/topik/practica/set-1"
-                style={{
-                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
-                  padding: '1.25rem', borderRadius: 14,
-                  border: '1.5px solid rgba(0,52,120,0.4)',
-                  background: 'rgba(0,52,120,0.07)',
-                  textDecoration: 'none', transition: 'border-color .2s',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span style={{ fontSize: '1.5rem' }}>📖</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#003478', background: 'rgba(0,52,120,0.12)', padding: '2px 8px', borderRadius: 100 }}>Gratis</span>
-                </div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Lectura TOPIK I — Diagnóstico</div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>30 preguntas de lectura al estilo TOPIK I. Descubre si estás en Nivel 1, Nivel 2 o eres principiante.</div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>📝 30 preguntas · Sin tiempo límite</div>
-              </Link>
-
-              {/* Vocabulario 2 — LOCKED */}
-              <div style={{
-                display: 'flex', flexDirection: 'column', gap: '0.6rem',
-                padding: '1.25rem', borderRadius: 14,
-                border: '1px solid var(--line-soft)',
-                background: 'var(--bg-2)',
-                opacity: 0.6,
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span style={{ fontSize: '1.5rem' }}>🔒</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--muted)', background: 'rgba(255,255,255,0.07)', padding: '2px 8px', borderRadius: 100 }}>Suscripción</span>
-                </div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--muted)' }}>Vocabulario 2 — Frases</div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Frases completas con vocabulario de los días 3–5. Construye oraciones básicas en coreano.</div>
-              </div>
-
-              {/* Pronunciación — LOCKED */}
-              <div style={{
-                display: 'flex', flexDirection: 'column', gap: '0.6rem',
-                padding: '1.25rem', borderRadius: 14,
-                border: '1px solid var(--line-soft)',
-                background: 'var(--bg-2)',
-                opacity: 0.6,
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span style={{ fontSize: '1.5rem' }}>🔒</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--muted)', background: 'rgba(255,255,255,0.07)', padding: '2px 8px', borderRadius: 100 }}>Suscripción</span>
-                </div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--muted)' }}>Pronunciación — Audio</div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Escucha y repite. Ejercicios de pronunciación con audio nativo para entrenar el oído.</div>
-              </div>
-
-              {/* Bloques de vocabulario — FREE */}
-              <Link
-                href="/aprende-coreano/palabras-compuestas"
-                style={{
-                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
-                  padding: '1.25rem', borderRadius: 14,
-                  border: '1.5px solid rgba(5,150,105,0.45)',
-                  background: 'rgba(5,150,105,0.08)',
-                  textDecoration: 'none', transition: 'border-color .2s',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span style={{ fontSize: '1.5rem' }}>🧩</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#059669', background: 'rgba(5,150,105,0.15)', padding: '2px 8px', borderRadius: 100 }}>Nuevo</span>
-                </div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Bloques de vocabulario — 합성어</div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Combina raíces coreanas para descubrir palabras compuestas. 23 raíces, 20 compuestos, 3 modos de práctica.</div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>🧩 Combinar · Familias · Quiz — Sin registro</div>
-              </Link>
-
-              {/* Live Quiz — FREE */}
-              <Link
-                href="/practica/live/coreano-1"
-                style={{
-                  display: 'flex', flexDirection: 'column', gap: '0.6rem',
-                  padding: '1.25rem', borderRadius: 14,
-                  border: '1.5px solid rgba(99,60,180,0.5)',
-                  background: 'rgba(99,60,180,0.08)',
-                  textDecoration: 'none', transition: 'border-color .2s',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span style={{ fontSize: '1.5rem' }}>🎬</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#7c3aed', background: 'rgba(99,60,180,0.15)', padding: '2px 8px', borderRadius: 100 }}>Live Quiz</span>
-                </div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--ink)' }}>Quiz en vivo — Set 1</div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.4 }}>Partículas, formalidad y vocabulario al estilo TOPIK. 8 preguntas con timer y votación en vivo. ¿Le atinas?</div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>⚡ 8 preguntas · Sin registro · Timer 30s</div>
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* ══════════════ PRACTICA GRATIS ══════════════ */}
+        <div id="practica">
+          <PracticeBand
+            accent="#c8202e"
+            title="Todo lo que puedes practicar gratis desde hoy"
+            sub="Las cinco habilidades, el diagnóstico TOPIK y el vocabulario con imágenes. Corrección inmediata y sin registro."
+            cards={[
+              { href: '/practica/coreano/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Partículas, orden de la frase y niveles de formalidad, explicados desde el español en los tres niveles.' },
+              { href: '/practica/coreano/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, para fijar pronunciación desde el primer día.' },
+              { href: '/practica/coreano/a1/lectura', title: 'Comprensión lectora', desc: 'El mejor ejercicio para automatizar el Hangul: leer de verdad, no memorizar sílabas sueltas.' },
+              { href: '/practica/coreano/a1/escucha', title: 'Comprensión auditiva', desc: 'Audio a velocidad real con preguntas de comprensión, desde nivel principiante.' },
+              { href: '/practica/coreano/a1/escritura', title: 'Escritura', desc: 'Escribe en Hangul con modelo de nivel para comparar tu respuesta.' },
+              { href: '/practica/coreano/a1/habla', title: 'Expresión oral', desc: 'Frases y estructuras para hablar desde el principio, con pronunciación modelo.' },
+              { href: '/practica/vocabulario-coreano', title: 'Vocabulario con imágenes', desc: 'Ve la imagen, escucha el audio y elige la palabra. Doce palabras clave para descubrir tu nivel A1.' },
+              { href: '/examenes/topik/practica/set-1', title: 'Diagnóstico TOPIK', desc: 'Treinta preguntas al estilo del examen oficial, con tu nivel estimado al final.' },
+            ]}
+          />
+        </div>
 
         {/* ══════════════ DIAGNÓSTICO TOPIK ══════════════ */}
         <section className={s.sectionDark}>
