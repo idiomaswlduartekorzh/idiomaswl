@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { SEDE, HAS_MAP, WA_NUMBER } from './localBusiness';
 import s from './LocalBand.module.css';
 
@@ -12,9 +13,18 @@ export type LocalBandProps = {
   presencial: string;
   /** Texto del mensaje de WhatsApp para la consulta local. */
   waText: string;
+  /**
+   * Enlace a una página local más específica, si existe (p. ej. /clases-de-ingles-bucaramanga).
+   * Sin esto esa página queda huérfana: nada del sitio la enlaza y Google no la considera
+   * la respuesta a la búsqueda local, por muy bien escrita que esté.
+   */
+  moreHref?: string;
+  moreLabel?: string;
 };
 
-export default function LocalBand({ accent, idioma, intro, presencial, waText }: LocalBandProps) {
+export default function LocalBand({
+  accent, idioma, intro, presencial, waText, moreHref, moreLabel,
+}: LocalBandProps) {
   return (
     <section className={s.band} style={{ ['--lb-accent' as string]: accent }}>
       <div className={s.wrap}>
@@ -62,6 +72,11 @@ export default function LocalBand({ accent, idioma, intro, presencial, waText }:
         </div>
 
         <div className={s.cta}>
+          {moreHref && moreLabel && (
+            <p style={{ marginBottom: '0.9rem' }}>
+              <Link href={moreHref} className={s.napLink}>{moreLabel} →</Link>
+            </p>
+          )}
           <a
             href={`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waText)}`}
             target="_blank" rel="noopener noreferrer"

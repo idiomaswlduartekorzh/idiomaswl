@@ -3570,7 +3570,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ul>
 
 <h2>WeLearn y las clases de alemán</h2>
-<p>En WeLearn ofrecemos clases de alemán 1:1 desde $180.000 COP/mes (plan Preparación: 4 clases de 1 hora), diseñadas según tu nivel y tu objetivo. Si tu meta es el Goethe B1, preparamos específicamente los 4 módulos del examen. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20alem%C3%A1n%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
+<p>En WeLearn ofrecemos clases de alemán 1:1 diseñadas según tu nivel y tu objetivo. Si tu meta es el Goethe B1, preparamos específicamente los 4 módulos del examen. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20alem%C3%A1n%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-aleman">página de clases de alemán</a>.</p>
 <p>Lee también: <a href="/blog/goethe-zertifikat-guia-completa-colombia">Goethe-Zertifikat: guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
     `,
   },
@@ -3618,7 +3618,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para estudiantes sin objetivo de examen que solo quieren conversación básica, la Alianza Francesa o grupos son válidos. Para todo objetivo con fecha límite o nivel B1+, un tutor especializado es la opción más efectiva.</p>
 
 <h2>WeLearn y las clases de francés</h2>
-<p>En WeLearn ofrecemos clases de francés 1:1 desde $180.000 COP/mes (plan Preparación: 4 clases de 1 hora), con preparación DELF incluida si ese es tu objetivo. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20franc%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a>.</p>
+<p>En WeLearn ofrecemos clases de francés 1:1 con preparación DELF incluida si ese es tu objetivo. La primera sesión de diagnóstico es gratis. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20franc%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-frances">página de clases de francés</a>.</p>
 <p>Lee también: <a href="/blog/delf-dalf-guia-preparacion-colombianos">DELF y DALF: la guía completa para colombianos</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-colombia-2026">¿Cuánto cuesta aprender inglés en Colombia en 2026?</a>.</p>
     `,
   },
@@ -9137,10 +9137,13 @@ And explain whether you would recommend it to others.</em>
 <p>Para el ICFES Saber 11 necesitas un enfoque específico en comprensión de lectura, gramática funcional y vocabulario académico. La preparación ICFES de WeLearn tiene ruta propia con simulacros al estilo del examen. Muchas academias tradicionales ofrecen esto también, pero con grupos más grandes.</p>
 
 <h3>Si tienes presupuesto ajustado</h3>
-<p>Los cursos gratuitos de la Alcaldía de Bucaramanga en alianza con el SENA son una opción para inglés básico. Para niveles intermedios o avanzados, el Plan Preparación de WeLearn ($180.000/mes) ofrece una relación calidad-precio muy alta comparada con la oferta tradicional.</p>
+<p>Los cursos gratuitos de la Alcaldía de Bucaramanga en alianza con el SENA son una opción para inglés básico. Para niveles intermedios o avanzados, pide varias cotizaciones y compara qué incluye cada una: número de estudiantes por grupo, si hay tutor asignado, si el material está incluido y si hay evaluación de progreso. El precio por hora aislado dice poco.</p>
+
+<h3>Si quieres clases presenciales, no online</h3>
+<p>Es una preferencia legítima y más común de lo que parece: estar en un salón obliga a hablar y elimina la tentación de dejar la clase a medias. En Bucaramanga hay varias opciones presenciales, entre ellas Celai y Praxis English con grupos y horarios fijos. WeLearn también es presencial —tenemos sede en el barrio Sotomayor, Calle 47 # 29-33— con la diferencia de que puedes alternar presencial y online la misma semana si tu horario cambia. El detalle está en <a href="/clases-de-ingles-bucaramanga">clases de inglés en Bucaramanga</a>.</p>
 
 <h2>Conclusión: la academia correcta depende de tu objetivo</h2>
-<p>No existe "la mejor academia de inglés en Bucaramanga" sin contexto. Si tu objetivo es una certificación internacional con puntaje específico, WeLearn es la opción más especializada. Si buscas clases presenciales en grupo con horarios fijos, Celai o Praxis English son opciones sólidas. Lo más importante: define primero qué necesitas lograr y en cuánto tiempo.</p>
+<p>No existe "la mejor academia de inglés en Bucaramanga" sin contexto. Si tu objetivo es una certificación internacional con puntaje específico, WeLearn es la opción más especializada. Si buscas grupos grandes y horarios fijos de mañana a noche, las academias tradicionales tienen más cobertura. Lo más importante: define primero qué necesitas lograr y en cuánto tiempo.</p>
 <p>¿Quieres saber qué academia y qué plan se adapta mejor a tu objetivo? <a href="https://wa.me/573005004253?text=Hola%2C%20vi%20el%20art%C3%ADculo%20sobre%20academias%20de%20ingl%C3%A9s%20en%20Bucaramanga%20y%20quiero%20saber%20cu%C3%A1l%20me%20conviene%20m%C3%A1s." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> — te damos una recomendación honesta en menos de 2 horas.</p>
 <p>Lee también: <a href="/blog/cuanto-cuesta-aprender-ingles-en-bucaramanga-2026">¿Cuánto cuesta aprender inglés en Bucaramanga en 2026?</a> y <a href="/blog/clases-de-ingles-presenciales-vs-online-bucaramanga">Clases de inglés presenciales vs online en Bucaramanga</a>.</p>
     `,
@@ -9219,7 +9222,6 @@ And explain whether you would recommend it to others.</em>
 <p>El examen TOEFL iBT cuesta aproximadamente USD 235 (~$1.000.000 COP al tipo de cambio de 2026). La preparación:</p>
 <ul>
   <li>Cursos grupales en academia: $500.000–$1.200.000 (variable en meses)</li>
-  <li>WeLearn Plan Intensivo (2 meses): $560.000</li>
   <li>Paquete de horas WeLearn: consultar por WhatsApp</li>
 </ul>
 
@@ -9230,6 +9232,7 @@ And explain whether you would recommend it to others.</em>
 <h2>Conclusión: cómo optimizar tu inversión en inglés</h2>
 <p>Si tu objetivo es conseguir un puntaje certificado (IELTS, TOEFL, ICFES), las clases individuales con tutor especializado tienen mejor relación inversión/resultado que los cursos grupales. Si tu objetivo es inglés conversacional general, las academias tradicionales o las plataformas online funcionan bien a menor costo.</p>
 <p>¿Quieres saber exactamente cuánto te costaría prepararte para tu objetivo específico? <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20me%20costar%C3%ADa%20preparar%20mi%20ingl%C3%A9s%20con%20WeLearn%20en%20Bucaramanga." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> y te damos una cotización personalizada.</p>
+<p>Si prefieres prepararte presencialmente, WeLearn tiene sede en el barrio Sotomayor: los horarios, cómo llegar y cómo funciona cada modalidad están en <a href="/clases-de-ingles-bucaramanga">clases de inglés en Bucaramanga</a>.</p>
 <p>Lee también: <a href="/blog/academias-de-ingles-en-bucaramanga-comparativa-2026">Academias de inglés en Bucaramanga: comparativa 2026</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a>.</p>
     `,
   },
@@ -9265,7 +9268,7 @@ And explain whether you would recommend it to others.</em>
 
 <h2>Ventajas reales de las clases online desde Bucaramanga</h2>
 <ul>
-  <li><strong>1:1 accesible:</strong> las plataformas online permiten clases individuales a precios comparables con los grupos presenciales. En WeLearn, el Plan Intensivo individual cuesta $280.000/mes por 2 sesiones semanales en vivo.</li>
+  <li><strong>1:1 accesible:</strong> las clases individuales han dejado de ser un lujo: hoy cuestan bastante menos de lo que la gente supone, y a veces se acercan al precio de un grupo presencial. Pide la cotización y compara antes de descartarlas.</li>
   <li><strong>Sin desplazamiento:</strong> aprendes desde tu casa en Bucaramanga, Floridablanca, Girón o Piedecuesta. 0 minutos perdidos en tráfico.</li>
   <li><strong>Horarios flexibles:</strong> sesiones disponibles en la mañana, tarde y noche. Se adaptan al trabajo y al estudio.</li>
   <li><strong>Tutores especializados:</strong> online puedes acceder a tutores especializados en IELTS o TOEFL que quizás no están disponibles en academias presenciales locales.</li>
@@ -9299,10 +9302,11 @@ And explain whether you would recommend it to others.</em>
 <h2>¿Qué pasa con el speaking en clases online?</h2>
 <p>El mito más común es que el speaking no puede desarrollarse bien en clases online. Es falso. La producción oral en videollamada tiene las mismas condiciones que el IELTS Speaking — que también es por videollamada o teléfono desde 2020. En WeLearn, el speaking es el componente central de cada sesión: grabamos las respuestas, las analizamos y las corregimos con criterios del British Council.</p>
 
-<h2>WeLearn: academia online en Bucaramanga con resultados verificables</h2>
-<p>WeLearn ofrece clases de inglés online para estudiantes en todo Bucaramanga y el área metropolitana (Floridablanca, Girón, Piedecuesta). El Plan Intensivo incluye sesiones en vivo 2 o 4 veces por semana con tutor asignado, plan de estudio personalizado y evaluación mensual de progreso.</p>
-<p>También ofrecemos paquetes de horas prepago (4, 10 y 20 horas) con precio por hora decreciente — ideal si quieres probar sin compromiso mensual.</p>
-<p><a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20comparar%20las%20opciones%20de%20clases%20de%20ingl%C3%A9s%20online%20en%20Bucaramanga%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para tu clase de diagnóstico gratis o visita nuestra página de <a href="/clases-de-ingles">clases de inglés</a>.</p>
+<h2>WeLearn: presencial en Bucaramanga y también online</h2>
+<p>WeLearn no te obliga a elegir. Tenemos <strong>sede física en el barrio Sotomayor, Calle 47 # 29-33</strong>, donde damos clases presenciales, y también damos clases online para quien vive lejos, viaja o tiene horarios imposibles. Muchos estudiantes combinan las dos: presencial cuando pueden venir, online cuando no.</p>
+<p>Atendemos presencialmente a todo el área metropolitana: Bucaramanga, Floridablanca, Girón y Piedecuesta. Cada estudiante tiene un tutor asignado, plan de estudio personalizado y evaluación mensual de progreso, sin importar la modalidad.</p>
+<p>Si estás decidiendo entre las dos, la página de <a href="/clases-de-ingles-bucaramanga">clases de inglés en Bucaramanga</a> tiene el detalle de horarios, cómo llegar a la sede y cómo funciona cada modalidad.</p>
+<p><a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20comparar%20las%20clases%20de%20ingl%C3%A9s%20presenciales%20y%20online%20en%20Bucaramanga%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para tu diagnóstico gratis.</p>
 <p>Lee también: <a href="/blog/academias-de-ingles-en-bucaramanga-comparativa-2026">Academias de inglés en Bucaramanga: comparativa 2026</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-en-bucaramanga-2026">¿Cuánto cuesta aprender inglés en Bucaramanga?</a>.</p>
     `,
   },

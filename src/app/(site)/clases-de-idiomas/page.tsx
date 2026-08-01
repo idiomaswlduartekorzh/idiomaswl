@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BLOG_POSTS } from '@/data/blog';
+import LocalBand from '@/components/hub/LocalBand';
 
 export const metadata: Metadata = {
   title: 'Academia de Idiomas en Bucaramanga y Online — 8 Idiomas y 9 Certificaciones | WeLearn',
@@ -369,7 +370,17 @@ export default function ClasesDeIdiomasPage() {
         </div>
       </section>
 
-      {/* ══════════════ WHY WELEARN ══════════════ */}
+      {/* ══════════════ BUCARAMANGA ══════════════ */}
+      <LocalBand
+        accent="#60a5fa"
+        idioma="idiomas"
+        intro="WeLearn no es una plataforma sin dirección: tenemos sede en el barrio Sotomayor de Bucaramanga y damos clases presenciales de los ocho idiomas. Si vives lejos o tu horario cambia, la misma clase con el mismo tutor se hace por videollamada."
+        presencial="Salón, tutor asignado y horario fijo. Es la modalidad que más funciona cuando cuesta mantener la constancia: venir a una hora concreta obliga de una forma que la pantalla no logra."
+        waText="Hola, estoy en Bucaramanga y quiero saber qué idiomas puedo estudiar presencialmente en la sede."
+        moreHref="/clases-de-ingles-bucaramanga"
+        moreLabel="Si buscas inglés presencial en Bucaramanga, aquí está el detalle completo"
+      />
+
       {/* ══════════════ CERTIFICADOS ══════════════ */}
       <section style={{ background: 'var(--bg-2)', padding: '4rem 1.25rem', borderTop: '1px solid var(--line-soft)' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
