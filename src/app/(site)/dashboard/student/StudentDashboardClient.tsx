@@ -369,10 +369,10 @@ const WEEKLY_CHALLENGES: Challenge[] = [
   },
   {
     week: 11, tag: 'ICFES',
-    question: '¿Qué puntaje de inglés en el ICFES corresponde al nivel B+ (nivel 4)?',
-    options: ['Menos de 50 puntos', '50–69 puntos', '70–84 puntos', '85–100 puntos'],
-    correct: 2,
-    explanation: 'En el ICFES, el nivel B+ (nivel 4) corresponde a puntajes entre 70 y 84. Nivel A- (1) es 0–30, A (2) es 31–49, A+ (3) es 50–69, B+ (4) es 70–84, B+ alto (5) es 85–100.',
+    question: '¿Cuál es el nivel más alto que reporta la prueba de inglés del ICFES?',
+    options: ['A2', 'B1', 'B2', 'C1'],
+    correct: 1,
+    explanation: 'B1 es el techo. La prueba de inglés del Saber 11 clasifica en cuatro niveles —Pre A1 (0–36), A1 (37–57), A2 (58–70) y B1 (71–100)— y no reporta B2, C1 ni C2. Ojo con el contenido desactualizado que todavía menciona niveles "A−" o "B+": esa escala ya no se usa.',
   },
   {
     week: 12, tag: 'DELF',

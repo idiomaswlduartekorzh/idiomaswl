@@ -99,46 +99,42 @@ const STEPS = [
   },
 ];
 
+// Testimonios REALES de estudiantes de WeLearn, los mismos que están en la home.
+// Aquí había cinco testimonios inventados (Laura Martínez, Santiago Gómez, Valentina
+// Torres, Daniel Restrepo, María José Acosta); el usuario confirmó que no eran reales
+// y se retiraron. Nunca reponer testimonios que no se puedan respaldar.
 const TESTIMONIALS = [
   {
-    name: 'Laura Martínez',
+    name: 'Daniel Zuluaga',
     city: 'Bogotá',
-    cert: 'IELTS 7.5',
-    quote: 'Después de años intentando aprender inglés con métodos tradicionales, en 3 meses con WeLearn aprobé el IELTS con 7.5. La forma en que Zhanna estructura cada clase hace que todo tenga sentido.',
-    avatar: 'LM',
-    color: '#c8202e',
-  },
-  {
-    name: 'Santiago Gómez',
-    city: 'Medellín',
-    cert: 'TOEFL 105/120',
-    quote: 'Pasé el TOEFL con 105 puntos. El método no te deja memorizar — te obliga a pensar en el idioma, y eso marca la diferencia en el examen real.',
-    avatar: 'SG',
-    color: '#14215c',
-  },
-  {
-    name: 'Valentina Torres',
-    city: 'Cali',
-    cert: 'ICFES nivel B+',
-    quote: 'Mi ICFES quedó en B+. Los simulacros de WeLearn son idénticos al examen real. Entré a la sala sintiéndome lista.',
-    avatar: 'VT',
+    cert: 'Celpe-Bras · Maestría en la USP',
+    quote: 'Hola David, fui aceptado en la facultad de odontología de Ribeirão Preto - USP y voy a comenzar la maestría el próximo mes. Muchas gracias por hacer parte del proceso, eternamente agradecido.',
+    avatar: 'DZ',
     color: '#2c6e49',
   },
   {
-    name: 'Daniel Restrepo',
-    city: 'Barranquilla',
-    cert: 'Coreano A2',
-    quote: 'Empecé el coreano desde cero. A los 6 meses ya podía presentarme y mantener conversaciones básicas. Nunca creí que lo conseguiría.',
-    avatar: 'DR',
-    color: '#7b2d8b',
+    name: 'Carlos Torres',
+    city: 'Bucaramanga',
+    cert: 'TOEFL · Inglés para maestría',
+    quote: 'Realmente les agradezco a ustedes dos por toda la ayuda, el master dura 2 años pero mi profesor quiere que haga otro curso cuando me gradúe.',
+    avatar: 'CT',
+    color: '#14215c',
   },
   {
-    name: 'María José Acosta',
+    name: 'Karen Ayala',
     city: 'Bucaramanga',
-    cert: 'IELTS 6.5 + trabajo internacional',
-    quote: 'Conseguí trabajo en una empresa multinacional gracias al certificado y, sobre todo, a la confianza que el método me dio para hablar sin miedo.',
-    avatar: 'MA',
+    cert: 'Goethe · Alemán',
+    quote: 'David te he recomendado como con 15 personas sin decir mentiras, espero que les salga todo suuuper biennn.',
+    avatar: 'KA',
     color: '#c8202e',
+  },
+  {
+    name: 'Leonardo Pinto',
+    city: 'Bucaramanga',
+    cert: 'Inglés · Work & Travel USA',
+    quote: 'Estudié inglés en WeLearn para prepararme e ir a trabajar en USA durante el verano y me fue de maravilla. Volveré para presentar el examen TOEFL.',
+    avatar: 'LP',
+    color: '#7b2d8b',
   },
 ];
 
