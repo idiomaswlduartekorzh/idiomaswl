@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
+import LocalBand from '@/components/hub/LocalBand';
+import PracticeBand from '@/components/hub/PracticeBand';
+import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import s from './page.module.css';
 
 // ── WhatsApp ─────────────────────────────────────────────────────────────────
@@ -107,51 +110,24 @@ const jsonLd = {
         name: 'Idiomas WeLearn',
         url: 'https://www.idiomaswl.com',
       },
+      hasCourseInstance: courseInstances('Inglés', 'en'),
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'COP',
-        description: 'Clase de diagnóstico gratis',
+        description: 'Diagnóstico gratis',
       },
     },
-    {
-      '@type': ['LocalBusiness', 'LanguageSchool'],
-      name: 'Idiomas WeLearn',
-      alternateName: 'WeLearn Academia de Idiomas',
-      url: 'https://www.idiomaswl.com',
-      telephone: '+573005004253',
-      email: 'info@idiomaswl.com',
-      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
-      priceRange: '$$',
-      currenciesAccepted: 'COP',
-      paymentAccepted: 'Cash, Credit Card, Transfer',
-      description: 'Academia de idiomas en Bucaramanga con clases online para toda Colombia. Especialistas en inglés, coreano, francés, alemán, italiano y portugués. Preparación IELTS, TOEFL, ICFES, TOPIK, Goethe, DELF, CILS y Celpe-Bras.',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Calle 47 # 29-33, Sotomayor',
-        addressLocality: 'Bucaramanga',
-        addressRegion: 'Santander',
-        postalCode: '680001',
-        addressCountry: 'CO',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 7.1193,
-        longitude: -73.1227,
-      },
-      areaServed: [
-        { '@type': 'City', name: 'Bucaramanga' },
-        { '@type': 'City', name: 'Bogotá' },
-        { '@type': 'City', name: 'Medellín' },
-        { '@type': 'Country', name: 'Colombia' },
-      ],
-      hasMap: 'https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn',
-      openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
-      sameAs: [
-        'https://wa.me/573005004253',
-        'https://www.idiomaswl.com',
-      ],
-    },
+    localBusinessNode(
+      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Inglés con preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
+    ),
+    davidNode(
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen es lo que dio origen al método de la academia.'
+    ),
+    zhannaNode(
+      'Co-fundadora y directora académica de WeLearn. Estudió en Inglaterra y en Francia, y lidera el diseño curricular y la preparación de IELTS, TOEFL y Cambridge.',
+      ['en', 'es', 'fr', 'ru']
+    ),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -578,21 +554,33 @@ export default function ClasesDeInglesPage() {
       </section>
 
       {/* ── SIMULACRO HOOK ───────────────────────────────────────────────── */}
-      <section className="wlh-section wlh-section--alt">
-        <div className="wrap" style={{ textAlign: 'center' }}>
-          <p className="wlh-section-eyebrow">05 — Practica ahora</p>
-          <h2 className="wlh-section-h2">¿Quieres saber cómo estás antes de empezar?</h2>
-          <p className="wlh-section-desc" style={{ maxWidth: 500, margin: '0 auto 2.5rem' }}>
-            Haz un simulacro gratis de IELTS, TOEFL o ICFES. Sin registro ni costo.
-            Mide tu nivel real ahora mismo.
-          </p>
-          <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/examenes/ielts" className="btn">Simulacro IELTS →</Link>
-            <Link href="/examenes/toefl" className="btn btn-ghost">Simulacro TOEFL →</Link>
-            <Link href="/examenes/icfes" className="btn btn-ghost">Simulacro ICFES →</Link>
-          </div>
-        </div>
-      </section>
+      {/* ── BUCARAMANGA (SEO LOCAL) ─────────────────────────────────────── */}
+      <LocalBand
+        accent="#1a4fcc"
+        idioma="inglés"
+        intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar inglés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo tutor y el mismo plan, se hace por videollamada."
+        presencial="Clases cara a cara con tutor asignado. Y una ventaja concreta si vas por certificación: el IELTS y el TOEFL sí se aplican en Bucaramanga, así que puedes prepararte y presentarte sin salir de la ciudad."
+        waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de inglés presenciales. ¿Cómo funcionan?"
+      />
+
+      {/* ── PRACTICA GRATIS ─────────────────────────────────────────────── */}
+      <PracticeBand
+        accent="#1a4fcc"
+        title="Todo lo que puedes practicar gratis desde hoy"
+        sub="Las cinco habilidades de A1 a B2, los simulacros completos de IELTS, TOEFL e ICFES, y el diagnóstico de nivel. Corrección inmediata y sin registro."
+        cards={[
+          { href: '/practica/ingles/a1/gramatica', title: 'Gramática A1 · A2 · B1 · B2', desc: 'Desde los cimientos hasta estructuras avanzadas, con corrección al instante en los cuatro niveles.' },
+          { href: '/practica/ingles/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, organizadas por nivel del Marco Europeo.' },
+          { href: '/practica/ingles/b1/escucha', title: 'Comprensión auditiva', desc: 'Audio a velocidad real con preguntas, el formato que evalúan IELTS y TOEFL.' },
+          { href: '/practica/ingles/b1/lectura', title: 'Comprensión lectora', desc: 'Textos auténticos con preguntas al estilo del examen, para entrenar lectura rápida y detalle.' },
+          { href: '/practica/ingles/b1/escritura', title: 'Escritura integrada', desc: 'Lee, prepara vocabulario y escribe una respuesta real, con modelo de nivel para comparar.' },
+          { href: '/practica/ingles/b1/habla', title: 'Expresión oral', desc: 'La sección que más pesa y la que menos se practica sola. Estructuras y pronunciación modelo.' },
+          { href: '/examenes/ielts', title: 'Simulacros IELTS', desc: 'Listening, Reading y Writing con formato real e informe de desempeño por sección.' },
+          { href: '/examenes/toefl', title: 'Simulacros TOEFL', desc: 'Reading, Listening, Speaking y Writing al estilo del iBT, con retroalimentación.' },
+          { href: '/examenes/icfes', title: 'Simulacro ICFES', desc: 'La sección de inglés del Saber 11, con el nivel estimado según la escala del examen.' },
+          { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'Si no sabes por dónde empezar, el diagnóstico te ubica en el MCER antes de la primera clase.' },
+        ]}
+      />
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section className="wlh-section">

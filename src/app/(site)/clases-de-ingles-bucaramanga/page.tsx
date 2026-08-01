@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import FoundersBand from '@/components/hub/FoundersBand';
+import PracticeBand from '@/components/hub/PracticeBand';
+import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 
 // ── WhatsApp ─────────────────────────────────────────────────────────────────
 const WA = '573005004253';
@@ -35,68 +38,16 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
-    {
-      '@type': ['LocalBusiness', 'LanguageSchool'],
-      name: 'Idiomas WeLearn',
-      alternateName: 'WeLearn Academia de Idiomas',
-      url: 'https://www.idiomaswl.com',
-      telephone: '+573005004253',
-      email: 'info@idiomaswl.com',
-      image: 'https://www.idiomaswl.com/images/david-duarte.jpg',
-      priceRange: '$$',
-      currenciesAccepted: 'COP',
-      paymentAccepted: 'Cash, Credit Card, Transfer',
-      description: 'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL, ICFES, TOPIK, Goethe, DELF, CILS y Celpe-Bras. Método WeLearn de 17 pasos.',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Calle 47 # 29-33, Sotomayor',
-        addressLocality: 'Bucaramanga',
-        addressRegion: 'Santander',
-        postalCode: '680001',
-        addressCountry: 'CO',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 7.1193,
-        longitude: -73.1227,
-      },
-      areaServed: [
-        { '@type': 'City', name: 'Bucaramanga' },
-        { '@type': 'City', name: 'Floridablanca' },
-        { '@type': 'City', name: 'Girón' },
-        { '@type': 'City', name: 'Piedecuesta' },
-        { '@type': 'City', name: 'Bogotá' },
-        { '@type': 'Country', name: 'Colombia' },
-      ],
-      hasMap: 'https://maps.google.com/?q=Calle+47+%2329-33+Sotomayor+Bucaramanga+Idiomas+WeLearn',
-      openingHours: ['Mo-Fr 07:00-21:00', 'Sa 08:00-18:00'],
-      sameAs: [
-        'https://wa.me/573005004253',
-        'https://www.facebook.com/welearnc/',
-        'https://www.instagram.com/idiomas_welearn/',
-      ],
-      offers: [
-        {
-          '@type': 'Offer',
-          name: 'Clase de diagnóstico gratis',
-          price: '0',
-          priceCurrency: 'COP',
-          description: 'Diagnóstico gratuito de 45 minutos por videollamada.',
-        },
-        {
-          '@type': 'Offer',
-          name: 'Plan Preparación',
-          price: '180000',
-          priceCurrency: 'COP',
-          description: 'Plan mensual con simulacros, feedback y chat con tutor.',
-        },
-        {
-          '@type': 'Offer',
-          name: 'Paquete 10 horas',
-          description: 'Paquete prepago de 10 clases en vivo con descuento por volumen.',
-        },
-      ],
-    },
+    localBusinessNode(
+      'Academia de inglés en Bucaramanga con clases presenciales en la sede de Sotomayor y online para toda Colombia. Preparación de IELTS, TOEFL, Cambridge e ICFES, además de otros siete idiomas.'
+    ),
+    davidNode(
+      'Políglota activo en ocho idiomas y co-fundador de WeLearn. El inglés fue el primero que aprendió, y prepararlo hasta nivel de examen dio origen al método de la academia.'
+    ),
+    zhannaNode(
+      'Co-fundadora y directora académica de WeLearn. Estudió en Inglaterra y en Francia, y lidera el diseño curricular y la preparación de IELTS, TOEFL y Cambridge.',
+      ['en', 'es', 'fr', 'ru']
+    ),
     {
       '@type': 'FAQPage',
       mainEntity: [
@@ -281,6 +232,33 @@ export default function ClasesInglessBucaramangaPage() {
       </div>
 
       {/* ── POR QUÉ WELEARN ──────────────────────────────────────────────── */}
+      {/* ── FUNDADORES ──────────────────────────────────────────────────── */}
+      <FoundersBand
+        accent="#1a4fcc"
+        title="Dos políglotas te enseñan inglés, aquí en Bucaramanga."
+        intro="No es una franquicia ni un marketplace de tutores: los fundadores siguen dando clase y diseñando el contenido."
+        davidLine="Habla ocho idiomas. El inglés fue el primero, y llevarlo hasta nivel de examen es lo que dio origen al método de once pasos que usamos hoy."
+        zhannaLine="Estudió en Inglaterra y en Francia. Esa formación dentro del sistema académico británico respalda nuestra preparación de IELTS, TOEFL y Cambridge."
+        zhannaTags={['Co-fundadora · Estudió en Inglaterra', 'Preparación IELTS / TOEFL', 'Diseño curricular']}
+      />
+
+      {/* ── PRACTICA GRATIS ─────────────────────────────────────────────── */}
+      <PracticeBand
+        accent="#1a4fcc"
+        title="Practica gratis antes de venir a la primera clase"
+        sub="Las cinco habilidades de A1 a B2, los simulacros completos de IELTS, TOEFL e ICFES y el diagnóstico de nivel. Sin registro."
+        cards={[
+          { href: '/practica/ingles/a1/gramatica', title: 'Gramática A1 a B2', desc: 'Desde los cimientos hasta estructuras avanzadas, con corrección al instante en los cuatro niveles.' },
+          { href: '/practica/ingles/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, organizadas por nivel del Marco Europeo.' },
+          { href: '/practica/ingles/b1/escucha', title: 'Comprensión auditiva', desc: 'Audio a velocidad real con preguntas, el formato que evalúan IELTS y TOEFL.' },
+          { href: '/practica/ingles/b1/habla', title: 'Expresión oral', desc: 'La sección que más pesa y la que menos se practica sola. Estructuras y pronunciación modelo.' },
+          { href: '/examenes/ielts', title: 'Simulacros IELTS', desc: 'Listening, Reading y Writing con formato real e informe por sección.' },
+          { href: '/examenes/toefl', title: 'Simulacros TOEFL', desc: 'Reading, Listening, Speaking y Writing al estilo del iBT.' },
+          { href: '/examenes/icfes', title: 'Simulacro ICFES', desc: 'La sección de inglés del Saber 11, con tu nivel estimado según la escala del examen.' },
+          { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'El diagnóstico te ubica en el MCER antes de que agendes la primera clase.' },
+        ]}
+      />
+
       <section className="wlh-section wlh-section--alt">
         <div className="wrap">
           <p className="wlh-section-eyebrow">01 — Por qué WeLearn en Bucaramanga</p>
