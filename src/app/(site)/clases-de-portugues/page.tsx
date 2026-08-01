@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FoundersBand from '@/components/hub/FoundersBand';
+import LocalBand from '@/components/hub/LocalBand';
+import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import PracticeBand from '@/components/hub/PracticeBand';
 import s from './page.module.css';
 
@@ -9,23 +11,26 @@ const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de portugu�
 const WA_CELPE   = encodeURIComponent('Hola, quiero prepararme para el examen Celpe-Bras con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
-  title: 'Clases de Portugués Online en Colombia — Preparación Celpe-Bras | WeLearn',
+  title: 'Clases de Portugués en Bucaramanga y Online — Preparación Celpe-Bras | WeLearn',
   description:
-    'Aprende portugués online con tutor especializado. Preparación Celpe-Bras para estudiar en Brasil, trabajo internacional o fluidez real. Diagnóstico gratis. Portugués brasileño con método WeLearn.',
+    'Academia de portugués en Bucaramanga con clases presenciales y online para toda Colombia. Preparación del Celpe-Bras, que se presenta en la propia ciudad. Portugués brasileño con método WeLearn. Diagnóstico gratis.',
   keywords: [
-    'clases de portugués online Colombia',
-    'aprender portugués Bucaramanga',
+    'clases de portugués Bucaramanga',
+    'curso de portugués Bucaramanga',
+    'aprender portugués en Bucaramanga',
+    'academia de portugués Bucaramanga',
+    'Celpe-Bras Bucaramanga',
     'preparación Celpe-Bras Colombia',
-    'curso de portugués para adultos',
     'Celpe-Bras Colombia',
+    'clases de portugués online Colombia',
     'portugués brasileño online',
     'aprender portugués desde cero',
-    'WeLearn portugués',
     'portugués para estudiar en Brasil',
+    'WeLearn portugués',
   ],
   openGraph: {
-    title: 'Clases de Portugués Online — Preparación Celpe-Bras | WeLearn',
-    description: 'Tutor especializado, preparación Celpe-Bras, portugués brasileño real. Clase diagnóstico gratis para colombianos.',
+    title: 'Clases de Portugués en Bucaramanga y Online — Celpe-Bras | WeLearn',
+    description: 'Presencial en Bucaramanga y online en toda Colombia. Preparación del Celpe-Bras, que se presenta aquí mismo en la ciudad. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-portugues',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-portugues' },
@@ -58,12 +63,32 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Las clases son presenciales o virtuales?',
-      acceptedAnswer: { '@type': 'Answer', text: '100% virtuales, por videollamada. Puedes estar en cualquier ciudad de Colombia o del mundo.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Las dos modalidades están disponibles. En Bucaramanga y su área metropolitana las clases pueden ser presenciales, en la sede de Sotomayor; desde cualquier otra ciudad de Colombia o del mundo son por videollamada, con el mismo profesor y el mismo plan. También es posible alternar entre ambos formatos.' },
     },
     {
       '@type': 'Question',
-      name: '¿Dónde se presenta el Celpe-Bras en Colombia?',
-      acceptedAnswer: { '@type': 'Answer', text: 'El Celpe-Bras se aplica en Colombia en centros autorizados por el gobierno brasileño, entre ellos Bogotá, Medellín, Cali, Leticia y Bucaramanga. Las inscripciones abren por edición y tienen fecha de cierre, así que conviene llegar con el nivel listo a la convocatoria.' },
+      name: '¿Dónde se presenta el Celpe-Bras en Bucaramanga?',
+      acceptedAnswer: { '@type': 'Answer', text: 'En la sede de la UNAB, en Bucaramanga. El puesto aplicador oficial del examen en Colombia es IBRACO, el Instituto de Cultura Brasil-Colombia, y la UNAB es el centro autorizado donde se aplica. El portugués es de los pocos idiomas que se pueden certificar sin salir de la ciudad.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿En qué ciudades de Colombia se aplica el Celpe-Bras?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Según IBRACO, puesto aplicador oficial, en su convocatoria más reciente el examen se aplica en Bogotá, Bucaramanga, Cali, Medellín, Leticia, Armenia, Montería, Yopal y Manizales. Las ciudades y los cupos pueden variar entre ediciones, por lo que conviene confirmarlo con IBRACO antes de inscribirse.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cómo y cuándo me inscribo al Celpe-Bras?',
+      acceptedAnswer: { '@type': 'Answer', text: 'La inscripción se realiza únicamente en el sitio oficial del INEP, el instituto del gobierno brasileño, y luego se homologa en el puesto aplicador; no se hace en la sede. El examen es semestral, la ventana de inscripción dura pocos días y abre meses antes de las pruebas, y los resultados se publican alrededor de dos meses después.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Dónde puedo estudiar portugués en Bucaramanga?',
+      acceptedAnswer: { '@type': 'Answer', text: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor, Bucaramanga. Hay clases presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta, y online para el resto del país. La preparación apunta al Celpe-Bras, que se presenta en la propia ciudad. El diagnóstico inicial es gratuito y el contacto es por WhatsApp al 300 500 4253.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuestan las clases de portugués en Bucaramanga?',
+      acceptedAnswer: { '@type': 'Answer', text: 'El precio depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso.' },
     },
     {
       '@type': 'Question',
@@ -73,7 +98,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Qué niveles tiene el Celpe-Bras y puedo elegir cuál presentar?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No se elige nivel. Se presenta un único examen y el resultado asigna el nivel obtenido: Intermediário, Intermediário Superior, Avançado o Avançado Superior. Si el desempeño no alcanza el mínimo, no se otorga certificado.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'No se elige nivel. Se presenta un único examen y el resultado asigna el nivel obtenido: Intermediário, Intermediário Superior, Avançado o Avançado Superior. Hay una regla decisiva: cuando el desempeño de la parte escrita y el de la oral no coinciden, prevalece el menor de los dos. Si no se alcanza el mínimo, no se otorga certificado.' },
     },
     {
       '@type': 'Question',
@@ -96,23 +121,19 @@ const jsonLd = {
       name: 'Portugués con el método WeLearn',
       description: 'Aprende portugués brasileño desde cero hasta Celpe-Bras con tutor especializado.',
       provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
-      hasCourseInstance: [{
-        '@type': 'CourseInstance',
-        courseMode: 'online',
-        inLanguage: 'pt-BR',
-        courseWorkload: 'PT1H',
-        instructor: { '@type': 'Person', name: 'José David Duarte Silva' },
-      }],
+      hasCourseInstance: courseInstances('Portugués', 'pt-BR'),
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'COP', description: 'Clase de diagnóstico gratis', availability: 'https://schema.org/InStock' },
     },
-    {
-      '@type': 'LocalBusiness',
-      '@id': 'https://www.idiomaswl.com/#localbusiness',
-      name: 'Idiomas WeLearn',
-      url: 'https://www.idiomaswl.com',
-      telephone: '+573005004253',
-      address: { '@type': 'PostalAddress', streetAddress: 'Calle 47 # 29-33, Sotomayor', addressLocality: 'Bucaramanga', addressRegion: 'Santander', addressCountry: 'CO' },
-    },
+    localBusinessNode(
+      'Academia de idiomas en Bucaramanga con clases presenciales y online para toda Colombia. Portugués brasileño con preparación del Celpe-Bras, además de inglés, francés, italiano, coreano y alemán.'
+    ),
+    davidNode(
+      'Políglota activo en ocho idiomas. El portugués fue el tercero que aprendió, después del inglés y el italiano, y es el que más rápido avanza partiendo del español.'
+    ),
+    zhannaNode(
+      'Co-fundadora y directora académica de WeLearn, formada en Francia e Inglaterra. Lidera el diseño curricular y la preparación de certificaciones oficiales de portugués.',
+      ['es', 'en', 'fr']
+    ),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -156,11 +177,15 @@ const FAQS = [
   { q: '¿Para qué sirve el Celpe-Bras?', a: 'El Celpe-Bras es la única certificación oficial del gobierno brasileño. Es requerida para ingresar a universidades públicas brasileñas, ejercer profesiones reguladas en Brasil y obtener visas de trabajo.' },
   { q: '¿Cuánto tiempo toma llegar al Celpe-Bras Intermediário?', a: 'Para hispanohablantes, entre 10 y 16 meses con práctica constante. La comprensión es rápida; la producción oral con acento natural toma más tiempo.' },
   { q: '¿Qué diferencia hay entre el portugués de Brasil y el de Portugal?', a: 'Pronunciación, vocabulario y algo de gramática. El portugués brasileño es más fonético y generalmente más fácil para hispanohablantes. El Celpe-Bras evalúa exclusivamente el portugués brasileño.' },
-  { q: '¿Las clases son presenciales o virtuales?', a: '100% virtuales, por videollamada. Puedes estar en cualquier ciudad de Colombia o del mundo.' },
-  { q: '¿Dónde se presenta el Celpe-Bras en Colombia?', a: 'En centros autorizados por el gobierno brasileño. En Colombia se aplica en Bogotá, Medellín, Cali, Leticia y Bucaramanga. Las inscripciones abren por edición y tienen fecha de cierre, así que conviene llegar con el nivel listo a la convocatoria.' },
+  { q: '¿Las clases son presenciales o virtuales?', a: 'Las dos. Si estás en Bucaramanga o el área metropolitana puedes venir a la sede de Sotomayor; desde cualquier otra ciudad la clase es por videollamada, con el mismo profesor y el mismo plan. También puedes alternar entre los dos formatos.' },
+  { q: '¿Dónde se presenta el Celpe-Bras en Bucaramanga?', a: 'En la sede de la UNAB. El puesto aplicador oficial en Colombia es IBRACO, el Instituto de Cultura Brasil-Colombia, y la UNAB es el centro autorizado donde se aplica el examen en la ciudad. Es una ventaja poco conocida: el portugués es de los pocos idiomas que puedes certificar sin salir de Bucaramanga.' },
+  { q: '¿En qué ciudades de Colombia se aplica el Celpe-Bras?', a: 'Según IBRACO, el puesto aplicador oficial, en su convocatoria más reciente se aplica en Bogotá, Bucaramanga, Cali, Medellín, Leticia, Armenia, Montería, Yopal y Manizales. Las ciudades y los cupos pueden cambiar de una edición a otra, así que confirma con IBRACO antes de inscribirte.' },
+  { q: '¿Cómo y cuándo me inscribo al Celpe-Bras?', a: 'La inscripción se hace únicamente en el sitio oficial del INEP, el instituto del gobierno brasileño, y después se homologa en el puesto aplicador. No se hace en la sede ni con nosotros. El examen es semestral y la ventana de inscripción dura pocos días, meses antes de las pruebas; los resultados salen alrededor de dos meses después.' },
   { q: '¿Cómo es el examen Celpe-Bras y por qué no tiene opción múltiple?', a: 'Porque evalúa uso real del idioma, no memorización. Consta de tareas escritas a partir de videos y textos auténticos, más una interacción oral con evaluadores. Debes lograr algo concreto con el portugués: responder, argumentar, resumir o persuadir.' },
-  { q: '¿Qué niveles tiene el Celpe-Bras y puedo elegir cuál presentar?', a: 'No se elige. Presentas un único examen y el resultado te asigna el nivel: Intermediário, Intermediário Superior, Avançado o Avançado Superior. Si el desempeño no alcanza el mínimo, no se otorga certificado.' },
+  { q: '¿Qué niveles tiene el Celpe-Bras y puedo elegir cuál presentar?', a: 'No se elige. Presentas un único examen y el resultado te asigna el nivel: Intermediário, Intermediário Superior, Avançado o Avançado Superior. Y ojo con esto: cuando el desempeño escrito y el oral no coinciden, prevalece el menor de los dos. Si no alcanzas el mínimo, no hay certificado.' },
   { q: '¿Necesito el Celpe-Bras para revalidar mi título profesional en Brasil?', a: 'Es el certificado de proficiencia que aparece habitualmente en los procesos de revalidación y en las admisiones de posgrado de universidades públicas brasileñas. Los requisitos exactos dependen de la universidad y de la profesión, así que confírmalos con la institución donde vas a hacer el trámite.' },
+  { q: '¿Dónde puedo estudiar portugués en Bucaramanga?', a: 'En Idiomas WeLearn, Calle 47 # 29-33, barrio Sotomayor. Damos clases presenciales en Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto del país. Y como el Celpe-Bras se presenta aquí mismo, puedes prepararte y certificarte sin viajar. El diagnóstico es gratis: escríbenos al 300 500 4253.' },
+  { q: '¿Cuánto cuestan las clases de portugués en Bucaramanga?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso.' },
   { q: '¿Debo aprender portugués de Brasil o de Portugal?', a: 'Depende de tu objetivo. Si vas a estudiar, trabajar o revalidar título en Brasil, el brasileño — y es el que evalúa el Celpe-Bras. Si buscas nacionalidad o residencia en Portugal, el europeo, con exámenes del sistema CAPLE. WeLearn enseña portugués brasileño.' },
 ];
 
@@ -192,7 +217,7 @@ export default function ClasesDePortuguesPage() {
           <div className={s.heroInner}>
             <div className={s.heroText}>
               <div className={s.heroPhrase}>Olá!</div>
-              <p className={s.eyebrow}>Portugués online · WeLearn</p>
+              <p className={s.eyebrow}>Portugués en Bucaramanga y online · WeLearn</p>
               <h1 className={s.h1}>
                 Aprende portugués<br />
                 <span className={s.accent}>de verdad.</span>
@@ -239,7 +264,7 @@ export default function ClasesDePortuguesPage() {
           <span className={s.proofDivider} />
           <span className={s.proofItem}><strong>Celpe-Bras Intermediário a Superior</strong></span>
           <span className={s.proofDivider} />
-          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · online en toda Colombia</span>
+          <span className={s.proofItem}><strong>Presencial en Bucaramanga</strong> · Sotomayor</span>
         </div>
 
         {/* ══════════════ FUNDADORES ══════════════ */}
@@ -315,34 +340,90 @@ export default function ClasesDePortuguesPage() {
           </div>
         </section>
 
-        {/* ══════════════ DÓNDE Y PARA QUÉ (SEO/AEO) ══════════════ */}
+        {/* ══════════════ BUCARAMANGA (SEO LOCAL) ══════════════ */}
+        <LocalBand
+          accent="#166534"
+          idioma="portugués"
+          intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar portugués presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
+          presencial="Clases cara a cara con una ventaja que casi ningún idioma tiene aquí: el Celpe-Bras se presenta en la propia Bucaramanga, así que puedes prepararte y certificarte sin salir de la ciudad."
+          waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de portugués presenciales y la preparación del Celpe-Bras. ¿Cómo funcionan?"
+        />
+
+        {/* ══════════════ CELPE-BRAS EN BUCARAMANGA (activo local diferencial) ══════════════ */}
+        <section className={s.sectionDark}>
+          <div className={s.wrap}>
+            <p className={s.sectionEyebrow}>La ventaja de estudiar aquí</p>
+            <h2 className={s.h2}>El Celpe-Bras se presenta en Bucaramanga</h2>
+            <p className={s.sectionSub}>
+              Es la excepción entre los exámenes de idiomas en Santander. Para certificar italiano,
+              alemán o coreano toca viajar a Bogotá; el portugués no. El Celpe-Bras se aplica en la
+              ciudad, en la sede de la UNAB, a través de IBRACO, que es el puesto aplicador oficial
+              en Colombia. Puedes prepararte y certificarte sin salir de Bucaramanga.
+            </p>
+            <div className={s.levelsGrid}>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Dónde</span>
+                <p className={s.levelTitle}>En la UNAB, con IBRACO</p>
+                <p className={s.levelDesc}>
+                  El puesto aplicador oficial es IBRACO, el Instituto de Cultura Brasil-Colombia,
+                  y la UNAB es el centro autorizado donde se aplica el examen en la ciudad. Además
+                  de Bucaramanga, IBRACO lo administra en Bogotá, Medellín, Cali, Leticia, Armenia,
+                  Montería, Yopal y Manizales.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Cuándo</span>
+                <p className={s.levelTitle}>Dos convocatorias al año</p>
+                <p className={s.levelDesc}>
+                  El examen es semestral y la inscripción abre meses antes, por una ventana corta
+                  de pocos días. Los resultados salen alrededor de dos meses después de las
+                  pruebas. Si tienes una fecha límite —una admisión, un trámite— cuenta hacia
+                  atrás desde ahí.
+                </p>
+              </div>
+              <div className={s.levelCard}>
+                <span className={s.levelTag}>Cómo</span>
+                <p className={s.levelTitle}>La inscripción no se hace en la sede</p>
+                <p className={s.levelDesc}>
+                  Es el error más común. El registro se hace únicamente en el sitio oficial del
+                  INEP, el instituto del gobierno brasileño, y solo después se homologa en el
+                  puesto aplicador. Consulta fechas y valor vigentes con IBRACO antes de pagar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════ CÓMO ES EL EXAMEN (SEO/AEO) ══════════════ */}
         <section className={s.section}>
           <div className={s.wrap}>
-            <p className={s.sectionEyebrow}>Dónde y para qué</p>
-            <h2 className={s.h2}>Dónde se presenta el Celpe-Bras en Colombia</h2>
+            <p className={s.sectionEyebrow}>Cómo es el examen</p>
+            <h2 className={s.h2}>El Celpe-Bras no se parece a ningún otro examen de idiomas</h2>
             <p className={s.sectionSub}>
-              El Celpe-Bras se aplica en Colombia en centros autorizados por el gobierno brasileño,
-              entre ellos Bogotá, Medellín, Cali, Leticia y <strong>Bucaramanga</strong> — la ciudad
-              donde está nuestra sede. Las inscripciones abren por edición y se cierran rápido:
-              conviene tener el nivel listo antes de la convocatoria, no después.
+              Quien llega esperando un examen de opción múltiple se estrella. El Celpe-Bras evalúa
+              qué eres capaz de hacer con el portugués, no cuánta gramática recuerdas — y eso
+              cambia por completo la forma de prepararse.
             </p>
             <div className={s.levelsGrid}>
               <div className={s.levelCard}>
                 <span className={s.levelTag}>Formato</span>
-                <p className={s.levelTitle}>No es de opción múltiple</p>
+                <p className={s.levelTitle}>No hay opción múltiple</p>
                 <p className={s.levelDesc}>
-                  El Celpe-Bras no tiene preguntas de selección. Son tareas escritas a partir de
-                  videos y textos reales, más una interacción oral con evaluadores. Se evalúa que
-                  uses el portugués para hacer algo concreto, no que recites gramática.
+                  Tres horas de parte escrita con cuatro tareas de producción a partir de video,
+                  audio y textos reales, más unos veinte minutos de interacción oral cara a cara
+                  con evaluadores, que se graba. Tienes que lograr algo concreto: responder,
+                  argumentar, resumir o persuadir.
                 </p>
               </div>
               <div className={s.levelCard}>
                 <span className={s.levelTag}>Nivel</span>
                 <p className={s.levelTitle}>El nivel no se elige: se obtiene</p>
                 <p className={s.levelDesc}>
-                  A diferencia del DELF o el CILS, aquí presentas un único examen y el resultado
-                  te asigna el nivel: Intermediário, Intermediário Superior, Avançado o Avançado
-                  Superior. Por eso la preparación apunta al desempeño, no a &ldquo;pasar un nivel&rdquo;.
+                  Presentas un único examen y el resultado te asigna el nivel: Intermediário,
+                  Intermediário Superior, Avançado o Avançado Superior. Y hay una regla que casi
+                  nadie menciona: cuando el desempeño escrito y el oral no coinciden,
+                  <strong> vale el menor de los dos</strong>. Descuidar el oral te baja el
+                  certificado entero.
                 </p>
               </div>
               <div className={s.levelCard}>
@@ -361,13 +442,17 @@ export default function ClasesDePortuguesPage() {
         {/* ══════════════ PRACTICA GRATIS ══════════════ */}
         <PracticeBand
           accent="#166534"
-          title="Ejercítate con material real antes de empezar"
-          sub="Gramática, vocabulario, escucha y escritura con feedback inmediato. Sin registro."
+          title="Todo lo que puedes practicar gratis desde hoy"
+          sub="No tienes que esperar a matricularte. Las cinco habilidades, los simulacros del Celpe-Bras y el diagnóstico de nivel están abiertos, con corrección inmediata y sin registro."
           cards={[
-            { href: '/practica/portugues/a1/gramatica', title: 'Gramática A1', desc: 'Los cimientos del portugués brasileño: artículos, presente, preposiciones y las trampas del portuñol.' },
-            { href: '/practica/portugues/a1/vocabulario', title: 'Vocabulario A1', desc: 'Palabras de alta frecuencia con audio brasileño — el portugués que de verdad se habla.' },
-            { href: '/practica/portugues/b1/escucha', title: 'Escucha B1', desc: 'Audio real a velocidad natural, que es exactamente lo que más cuesta al pasar del español.' },
-            { href: '/examenes/celpe-bras', title: 'Simulacro Celpe-Bras', desc: 'Practica con el formato real del examen: videos, tareas escritas y parte oral.' },
+            { href: '/practica/portugues/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Los cimientos del portugués brasileño: artículos, presente, preposiciones y las trampas del portuñol.' },
+            { href: '/practica/portugues/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio brasileño — el portugués que de verdad se habla.' },
+            { href: '/practica/portugues/b1/escucha', title: 'Comprensión auditiva', desc: 'Audio real a velocidad natural, que es exactamente lo que más cuesta al pasar del español.' },
+            { href: '/practica/portugues/b1/lectura', title: 'Comprensión lectora', desc: 'Textos auténticos con preguntas de comprensión, la base de las tareas escritas del examen.' },
+            { href: '/practica/portugues/b1/escritura', title: 'Escritura integrada', desc: 'Lee, prepara vocabulario y escribe una respuesta real — justo el tipo de tarea que evalúa el Celpe-Bras.' },
+            { href: '/practica/portugues/b1/habla', title: 'Expresión oral', desc: 'Clave aquí: en el Celpe-Bras, si el oral queda por debajo del escrito, vale el resultado menor.' },
+            { href: '/examenes/celpe-bras', title: 'Simulacros Celpe-Bras', desc: 'Practica con el formato real: videos, tareas escritas y parte oral, con informe de desempeño.' },
+            { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'Si no sabes por dónde empezar, el diagnóstico de nivel te ubica antes de la primera clase.' },
           ]}
         />
 
