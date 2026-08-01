@@ -94,7 +94,7 @@ const FORMACION = [
       { year: '2011 – 2015', what: 'Universidad Estatal Pedagógica de Oremburgo (Rusia)', detail: 'Estudios de doctorado en el departamento de idiomas extranjeros, especialidad idiomas germánicos. Disertación pendiente.' },
       { year: '2012', what: 'Universidad de Le Mans (Francia)', detail: 'Programa de francés y cultura local: 51 horas de clase y 9 de seminario.' },
       { year: '2013', what: 'LTC Eastbourne (Inglaterra)', detail: 'Inglés general, 15 horas semanales. Dos estancias certificadas.' },
-      { year: 'desde 2011', what: 'Quince años enseñando', detail: 'Profesora de inglés y francés. Hoy también prepara IELTS e IGCSE en un colegio de Bucaramanga.' },
+      { year: 'desde 2011', what: 'Quince años enseñando', detail: 'Profesora de inglés y francés, y preparadora de exámenes internacionales. Dirige el diseño curricular de WeLearn desde 2015.' },
     ],
   },
   {
