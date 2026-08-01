@@ -105,6 +105,19 @@ const LANGUAGES = [
     waMsg: 'Hola, estoy interesado en clases de portugués con WeLearn. ¿Cómo funciona?',
     levels: 'A1 → C2',
   },
+  {
+    slug: 'ruso',
+    flag: '🇷🇺',
+    name: 'Ruso',
+    native: 'Русский',
+    color: '#0039A6',
+    bgColor: 'rgba(0,57,166,0.08)',
+    description: 'El alfabeto se lee en horas, no en meses. Puerta de entrada a las becas del gobierno ruso y a un idioma que casi nadie enseña en Santander.',
+    exams: ['ТРКИ-1 (B1)', 'ТРКИ-2 (B2)'],
+    href: '/clases-de-ruso',
+    waMsg: 'Hola, estoy interesado en clases de ruso con WeLearn. ¿Cómo funciona?',
+    levels: 'A1 → C2',
+  },
 ];
 
 const RECENT_BLOG = [

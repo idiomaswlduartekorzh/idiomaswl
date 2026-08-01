@@ -1,0 +1,119 @@
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+.page { background: var(--bg); color: var(--fg); overflow-x: hidden; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ─── Typography ────────────────────────────────────────────────────────────── */
+.h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 1.25rem; }
+.h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 1rem; }
+.accent { color: #0039A6; }
+.eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #5b8cff; margin: 0 0 0.75rem; }
+.sectionEyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #5b8cff; margin: 0 0 0.5rem; text-align: center; }
+.sectionSub { font-size: 1.05rem; color: var(--muted); line-height: 1.7; max-width: 680px; margin: 0 auto 3rem; text-align: center; }
+
+/* ─── Sections ──────────────────────────────────────────────────────────────── */
+.section { padding: 5rem 0; text-align: center; }
+.sectionDark { padding: 5rem 0; background: #060b16; text-align: center; }
+.sectionDark .h2 { color: #fff; }
+.sectionDark .sectionEyebrow { color: #7aa5ff; }
+.sectionDark .sectionSub { color: rgba(255,255,255,0.6); }
+
+/* ─── Hero ──────────────────────────────────────────────────────────────────── */
+.hero { background: linear-gradient(135deg, #04070f 0%, #0b1428 60%, #04070f 100%); padding: 5rem 1.5rem 4rem; overflow: hidden; }
+.heroInner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.heroPhrase { font-size: 1rem; letter-spacing: 0.15em; color: rgba(255,255,255,0.3); margin-bottom: 0.75rem; font-weight: 500; }
+.hero .eyebrow { color: #7aa5ff; }
+.hero .h1 { color: #fff; }
+.heroSub { font-size: 1.1rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0 0 2rem; max-width: 520px; }
+
+/* ─── Hero visual ────────────────────────────────────────────────────────────── */
+.heroVisual { display: flex; flex-direction: column; gap: 1rem; }
+.heroCard { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem 2rem; }
+.heroCardFlag { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
+.heroCardTitle { font-size: 1rem; font-weight: 700; color: #fff; margin: 0 0 0.25rem; }
+.heroCardSub { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
+.levelBadges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.levelBadge { font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 20px; background: rgba(0,57,166,0.15); color: #7aa5ff; border: 1px solid rgba(0,57,166,0.25); }
+
+/* ─── CTAs ──────────────────────────────────────────────────────────────────── */
+.heroCtas { display: flex; flex-wrap: wrap; gap: 0.875rem; }
+.waBtn { display: inline-flex; align-items: center; gap: 0.5rem; background: #25D366; color: #fff; padding: 0.8rem 1.5rem; border-radius: 40px; font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: background 0.15s, transform 0.1s; white-space: nowrap; }
+.waBtn:hover { background: #1da851; transform: translateY(-1px); }
+.ghostBtn { display: inline-flex; align-items: center; padding: 0.8rem 1.5rem; border-radius: 40px; border: 1.5px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.8); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: border-color 0.15s, color 0.15s; white-space: nowrap; }
+.ghostBtn:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+.waBtnLight { display: inline-flex; align-items: center; gap: 0.5rem; background: #25D366; color: #fff; padding: 0.8rem 1.5rem; border-radius: 40px; font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: background 0.15s; margin-top: 1.5rem; }
+.waBtnLight:hover { background: #1da851; }
+.ghostBtnLight { display: inline-flex; align-items: center; padding: 0.8rem 1.75rem; border-radius: 40px; border: 1.5px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.75); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: border-color 0.15s, color 0.15s; }
+.ghostBtnLight:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+
+/* ─── Proof strip ───────────────────────────────────────────────────────────── */
+.proofStrip { background: #060b16; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0; padding: 1rem 1.5rem; }
+.proofItem { font-size: 0.88rem; color: rgba(255,255,255,0.65); padding: 0.4rem 2rem; white-space: nowrap; }
+.proofItem strong { color: #fff; }
+.proofDivider { width: 1px; height: 20px; background: rgba(255,255,255,0.12); }
+
+/* ─── Why grid ──────────────────────────────────────────────────────────────── */
+.whyGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 2.5rem; text-align: left; }
+.whyCard { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem 1.5rem; transition: box-shadow 0.2s; }
+.whyCard:hover { box-shadow: 0 8px 32px rgba(0,57,166,0.1); }
+.whyIcon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+.whyTitle { font-size: 1rem; font-weight: 700; margin: 0 0 0.5rem; color: var(--fg); }
+.whyDesc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin: 0; }
+
+/* ─── Levels ─────────────────────────────────────────────────────────────── */
+.levelsGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; text-align: left; }
+.levelCard { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem 1.5rem; transition: box-shadow 0.2s, border-color 0.2s; }
+.levelCard:hover { border-color: rgba(0,57,166,0.3); box-shadow: 0 8px 32px rgba(0,57,166,0.08); }
+.levelTag { display: inline-block; background: rgba(0,57,166,0.1); color: #5b8cff; border: 1px solid rgba(0,57,166,0.2); font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 20px; letter-spacing: 0.04em; margin-bottom: 1rem; }
+.levelTitle { font-size: 1.1rem; font-weight: 800; margin: 0 0 0.5rem; color: var(--fg); }
+.levelDesc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; margin: 0 0 1rem; }
+.levelTime { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+
+/* ─── Exam grid ─────────────────────────────────────────────────────────── */
+.examGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 780px; margin: 2.5rem auto 0; text-align: left; }
+.examCard { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 2rem; }
+.examName { font-size: 1.5rem; font-weight: 900; color: #7aa5ff; margin-bottom: 0.25rem; }
+.examRange { font-size: 0.8rem; font-weight: 700; color: rgba(255,255,255,0.4); margin-bottom: 0.875rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.examDesc { font-size: 0.9rem; color: rgba(255,255,255,0.6); line-height: 1.65; margin: 0 0 1rem; }
+.examSkills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.examSkills span { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.65rem; border-radius: 20px; background: rgba(0,57,166,0.12); color: #7aa5ff; border: 1px solid rgba(0,57,166,0.2); }
+
+/* ─── FAQ ───────────────────────────────────────────────────────────────────── */
+.faqList { max-width: 720px; margin: 2.5rem auto 0; text-align: left; display: flex; flex-direction: column; gap: 0.75rem; }
+.faqItem { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 0 1.5rem; overflow: hidden; }
+.faqItem[open] { border-color: rgba(0,57,166,0.35); }
+.faqQ { font-size: 0.95rem; font-weight: 700; color: #fff; padding: 1.25rem 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faqQ::-webkit-details-marker { display: none; }
+.faqQ::after { content: '+'; color: #5b8cff; font-size: 1.25rem; font-weight: 400; flex-shrink: 0; margin-left: 1rem; }
+.faqItem[open] .faqQ::after { content: '−'; }
+.faqA { font-size: 0.9rem; color: rgba(255,255,255,0.6); line-height: 1.7; padding-bottom: 1.25rem; margin: 0; }
+
+/* ─── Blog section ──────────────────────────────────────────────────────────── */
+.blogGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.5rem; text-align: left; }
+.blogCard { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; text-decoration: none; color: var(--fg); transition: box-shadow 0.2s, border-color 0.2s; display: block; }
+.blogCard:hover { border-color: rgba(0,57,166,0.3); box-shadow: 0 6px 24px rgba(0,57,166,0.08); }
+.blogCat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #5b8cff; margin: 0 0 0.5rem; }
+.blogTitle { font-size: 0.95rem; font-weight: 700; margin: 0; line-height: 1.45; }
+
+/* ─── Final CTA ─────────────────────────────────────────────────────────────── */
+.ctaSection { padding: 5rem 1.5rem; background: #060b16; }
+.ctaBox { max-width: 600px; margin: 0 auto; text-align: center; }
+.ctaPhrase { font-size: 1rem; letter-spacing: 0.15em; color: rgba(255,255,255,0.2); margin-bottom: 1rem; }
+.ctaTitle { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #fff; line-height: 1.15; margin: 0 0 1rem; }
+.ctaSub { font-size: 1.05rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0 0 2rem; }
+.ctaBtns { display: flex; flex-wrap: wrap; gap: 0.875rem; justify-content: center; }
+
+/* ─── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .heroInner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .heroVisual { order: -1; }
+  .whyGrid { grid-template-columns: repeat(2, 1fr); }
+  .levelsGrid { grid-template-columns: 1fr; }
+  .examGrid { grid-template-columns: 1fr; }
+  .blogGrid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .hero { padding: 3.5rem 1.25rem 3rem; }
+  .whyGrid { grid-template-columns: 1fr; }
+  .heroCtas { flex-direction: column; align-items: flex-start; }
+  .ctaBtns { flex-direction: column; align-items: center; }
+}
