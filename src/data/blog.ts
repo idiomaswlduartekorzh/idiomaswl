@@ -2544,7 +2544,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p><strong>Limitación crítica:</strong> los tutores no son necesariamente profesores certificados. La calidad varía enormemente. Sin un currículo estructurado, el progreso es irregular. No hay preparación específica para exámenes.</p>
 
 <h2>Opción 4: Clases 1:1 con tutor especializado</h2>
-<p><strong>Costo:</strong> $60.000 – $180.000 COP/hora (tutores particulares) | $45.000 – $90.000 COP/hora (plataformas como WeLearn con descuento por volumen)</p>
+<p><strong>Costo:</strong> $60.000 – $180.000 COP/hora (tutores particulares) | $45.000 – $90.000 COP/hora (academias y plataformas, normalmente con descuento por volumen)</p>
 <p><strong>Para quién:</strong> quienes tienen un objetivo específico (IELTS, trabajo, migración) y quieren progreso medible.</p>
 <p><strong>Ventaja real:</strong> tiempo de práctica 100 % sobre el estudiante. Un tutor especializado puede llevar a alguien de B1 a B2 en 3-4 meses con 3 horas semanales. La inversión total suele ser menor que una academia masiva con mejores resultados.</p>
 
@@ -3544,7 +3544,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Academia grupal en Colombia</td><td>$200.000–$400.000</td><td>Estructura, comunidad</td><td>Ritmo lento (A1 puede tomar 1–2 años), grupos grandes</td></tr>
     <tr><td>Instituto Goethe (presencial)</td><td>$400.000–$800.000</td><td>Calidad reconocida, certificación propia</td><td>Caro, no siempre disponible en todas las ciudades</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$300.000–$700.000</td><td>Ritmo personalizado, feedback inmediato</td><td>Calidad varía según tutor</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep Goethe, diagnóstico gratis</td><td>Requiere compromiso mínimo de estudio autónomo</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep Goethe, diagnóstico gratis</td><td>Requiere compromiso mínimo de estudio autónomo</td></tr>
   </tbody>
 </table>
 
@@ -3597,7 +3597,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Alianza Francesa (presencial)</td><td>$350.000–$600.000</td><td>Calidad reconocida, certificación DELF in-house</td><td>Caro, grupos grandes, ritmo lento</td></tr>
     <tr><td>Academia grupal online</td><td>$150.000–$350.000</td><td>Más flexible que presencial</td><td>Grupos de hasta 15 personas, poco tiempo de speaking</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$250.000–$600.000</td><td>Ritmo personalizado</td><td>Calidad varía; no todos conocen el DELF</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep DELF, diagnóstico gratis</td><td>Requiere práctica autónoma diaria</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep DELF, diagnóstico gratis</td><td>Requiere práctica autónoma diaria</td></tr>
   </tbody>
 </table>
 
@@ -3645,7 +3645,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Dante Alighieri (presencial)</td><td>$250.000–$500.000</td><td>Reconocimiento institucional, materiales oficiales</td><td>Grupos grandes, ritmo fijo, no siempre en tu ciudad</td></tr>
     <tr><td>Academia grupal online</td><td>$120.000–$300.000</td><td>Asequible</td><td>Poco tiempo de speaking, ritmo no adaptable</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$200.000–$500.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep CILS, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep CILS, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
   </tbody>
 </table>
 
@@ -3662,7 +3662,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>El examen CILS cuesta entre $200.000 y $450.000 COP según el nivel. Se puede presentar en algunos centros universitarios aliados en Colombia y también viajando a Ecuador o directamente a Italia (donde los precios son similares). El CILI es permanente: no vence.</p>
 
 <h2>WeLearn y las clases de italiano</h2>
-<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. El proceso empieza con una sesión de diagnóstico gratuita. Desde $180.000 COP/mes para el plan Preparación (4 clases de 1 hora). <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20italiano%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>.</p>
+<p>En WeLearn preparamos para el CILS y el CELI con tutores especializados. El proceso empieza con una sesión de diagnóstico gratuita, donde definimos tu nivel real, tu objetivo y la intensidad que necesitas. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20italiano%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-italiano">página de clases de italiano</a>.</p>
 <p>Lee también: <a href="/blog/cils-celi-certificacion-italiano-colombia">CILS y CELI: la guía completa para certificar tu italiano</a> y <a href="/blog/cuanto-cuesta-aprender-coreano-colombia-2026">¿Cuánto cuesta aprender coreano en Colombia en 2026?</a>.</p>
     `,
   },
@@ -3689,7 +3689,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Academia grupal presencial</td><td>$150.000–$350.000</td><td>Ambiente social</td><td>Poco tiempo de speaking, ritmo fijo, no especializado en Celpe-Bras</td></tr>
     <tr><td>Academia grupal online</td><td>$100.000–$250.000</td><td>Asequible</td><td>Sin personalización, grupos grandes</td></tr>
     <tr><td>Tutor particular online (1:1)</td><td>$180.000–$450.000</td><td>Ritmo personalizado</td><td>Calidad varía mucho</td></tr>
-    <tr><td>WeLearn (1:1 especializado)</td><td>$180.000–$480.000</td><td>Plan personalizado, prep Celpe-Bras, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
+    <tr><td>WeLearn (1:1 especializado)</td><td>Según intensidad · diagnóstico gratis</td><td>Plan personalizado, prep Celpe-Bras, diagnóstico gratis</td><td>Requiere práctica diaria autónoma</td></tr>
   </tbody>
 </table>
 
@@ -3709,7 +3709,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p>Para colombianos, el portugués tiene una curva de aprendizaje mucho más amable que el alemán, el coreano o el inglés. La gramática es similar, la pronunciación es asequible y el vocabulario compartido elimina la mayor barrera del aprendizaje de idiomas. Esto significa que la inversión total en tiempo y dinero para alcanzar el nivel Intermediário del Celpe-Bras es considerablemente menor que para certificaciones equivalentes en otros idiomas.</p>
 
 <h2>WeLearn y las clases de portugués</h2>
-<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. El proceso empieza con una sesión de diagnóstico gratuita para ubicar tu nivel real. Desde $180.000 COP/mes para el plan Preparación (4 clases de 1 hora). <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20portugu%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
+<p>En WeLearn preparamos para el Celpe-Bras con tutores especializados en portugués brasileño. El proceso empieza con una sesión de diagnóstico gratuita para ubicar tu nivel real y definir la intensidad que te conviene. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20el%20precio%20de%20las%20clases%20de%20portugu%C3%A9s%20en%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> o visita nuestra <a href="/clases-de-portugues">página de clases de portugués</a>.</p>
 <p>Lee también: <a href="/blog/celpe-bras-que-es-como-prepararse">Celpe-Bras: qué es, requisitos y cómo prepararse desde Colombia</a> y <a href="/blog/cuanto-cuesta-aprender-frances-colombia-2026">¿Cuánto cuesta aprender francés en Colombia en 2026?</a>.</p>
     `,
   },
@@ -9120,7 +9120,7 @@ And explain whether you would recommend it to others.</em>
   <li><strong>Academias tradicionales presenciales:</strong> $300.000 a $900.000 por nivel (1–2 meses de clases grupales)</li>
   <li><strong>Centros de idiomas con prestigio:</strong> $400.000 a $1.500.000 por nivel</li>
   <li><strong>Clases individuales con tutor particular:</strong> $40.000 a $90.000 por hora</li>
-  <li><strong>WeLearn (plan mensual):</strong> desde $180.000/mes (preparación) a $480.000/mes (intensivo 4x/semana)</li>
+  <li><strong>WeLearn:</strong> depende de la intensidad semanal; el diagnóstico inicial es gratis y ahí se define el valor exacto</li>
   <li><strong>WeLearn (paquetes de horas):</strong> paquetes de 4, 10 y 20 horas con precio decreciente por hora</li>
 </ul>
 <p>Para preparación de IELTS o TOEFL, los paquetes de horas individuales con tutor especializado suelen ser más eficientes que los cursos grupales — aunque el costo por hora sea similar, la velocidad de progreso es mucho mayor.</p>
@@ -9213,7 +9213,7 @@ And explain whether you would recommend it to others.</em>
 <ul>
   <li><strong>Costo del examen IELTS</strong> (British Council / IDP): aproximadamente $1.100.000–$1.200.000 COP</li>
   <li><strong>Preparación en academia tradicional (grupal, 3 meses):</strong> $600.000–$1.800.000</li>
-  <li><strong>Preparación con WeLearn (Plan Intensivo 2x, 3 meses):</strong> $840.000 total</li>
+  <li><strong>Preparación con WeLearn:</strong> consultar según intensidad y meses de preparación</li>
   <li><strong>Preparación con paquete de horas WeLearn (20h):</strong> consultar por WhatsApp</li>
 </ul>
 <p>La eficiencia del aprendizaje individual hace que el costo total de alcanzar Band 7 pueda ser menor con WeLearn que con cursos grupales, aunque el precio por hora parezca mayor — porque se llega al objetivo más rápido y con menos intentos de examen.</p>

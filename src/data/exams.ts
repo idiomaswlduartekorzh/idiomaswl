@@ -483,7 +483,9 @@ export const EXAMS: Record<string, Exam> = {
     recognized: [
       'Más de 25,000 universidades, empleadores y gobiernos en 130 países',
       'Universidades del Reino Unido, Irlanda, Australia y Canadá',
-      'Programas de migración y visas de trabajo en países angloparlantes',
+      // Ojo: para visados suele exigirse un examen de una lista oficial cerrada, y el
+      // B2 First no siempre figura en ella. No prometer que sirve para migrar.
+      'Algunos procesos de trabajo y estudio en el exterior — verificar la lista de exámenes aceptados en cada caso',
       'Acceso a postgrados y programas de foundation en Europa',
     ],
     levels: ['B1', 'B2', 'C1'],

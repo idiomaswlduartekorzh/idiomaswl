@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { EXAMS } from '@/data/exams';
 import ExamInfoGraphic from './ExamInfoGraphic';
 import MockGrid from './MockGrid';
+import ExamGuideBlock from './ExamGuide';
+import { EXAM_GUIDES } from '@/data/examGuides';
 
 export async function generateStaticParams() {
   return Object.keys(EXAMS).map(slug => ({ exam: slug }));
@@ -12,8 +14,13 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   const { exam: slug } = await params;
   const exam = EXAMS[slug];
   if (!exam) return {};
+  const guide = EXAM_GUIDES[slug];
+  // Cuando el examen tiene guía, el título encabeza con el examen y no con
+  // "simulacros": la gente busca "examen first" o "cambridge b2", no simulacros.
   return {
-    title: `Simulacros de ${exam.fullName ?? exam.name}`,
+    title: guide
+      ? `${exam.fullName ?? exam.name}: qué es, puntajes y simulacros gratis`
+      : `Simulacros de ${exam.fullName ?? exam.name}`,
     description: `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con feedback de IA.`,
     openGraph: {
       title: `${exam.name} — Simulacros y preparación`,
@@ -30,6 +37,7 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   const { exam: slug } = await params;
   const exam = EXAMS[slug];
   if (!exam) notFound();
+  const guide = EXAM_GUIDES[slug];
 
   return (
     <>
@@ -47,6 +55,9 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
       {/* ── Practice mocks ── */}
       <MockGrid exam={exam} />
+
+      {/* ── Guía de contenido (solo los exámenes que ya la tienen escrita) ── */}
+      {guide && <ExamGuideBlock guide={guide} examName={exam.name} accent={exam.color} />}
     </>
   );
 }
