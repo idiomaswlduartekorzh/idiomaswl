@@ -50,6 +50,204 @@ export type ExamGuide = {
 
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
+  'celpe-bras': {
+    title: 'Celpe-Bras en Bucaramanga: el único examen oficial que se aplica aquí',
+    description: 'El Celpe-Bras es la única certificación oficial de portugués de Brasil, y se aplica en Bucaramanga. Cómo funciona, qué niveles otorga y por qué no se aprueba ni se reprueba.',
+    lead:
+      'Si estás en Bucaramanga, esto es una ventaja poco conocida: <strong>el Celpe-Bras se aplica aquí</strong>. Es el único examen oficial de portugués reconocido por el Gobierno de Brasil, y a diferencia del IELTS o el Goethe, no tienes que viajar a Bogotá para presentarlo.',
+    sections: [
+      {
+        h: 'Dónde se presenta',
+        body: [
+          'En Bucaramanga, el puesto aplicador oficial es el <strong>IBRACO</strong> (Instituto Brasil-Colombia), y la <strong>UNAB</strong> figura como centro autorizado.',
+          'Conviene tener clara la diferencia: el puesto aplicador es donde se rinde el examen. Confirma el calendario y el procedimiento de inscripción directamente con ellos, porque las fechas son limitadas y se agotan.',
+          'El Celpe-Bras se aplica en convocatorias con fechas fijas al año, no cuando uno quiere. Planificar con antelación no es opcional.',
+        ],
+      },
+      {
+        h: 'No se aprueba ni se reprueba: se obtiene un nivel',
+        body: [
+          'Es la particularidad que más desconcierta. El Celpe-Bras <strong>no tiene nota de corte</strong>: según tu desempeño obtienes <strong>Intermediário, Intermediário Superior, Avançado o Avançado Superior</strong>.',
+          'Si tu desempeño queda por debajo del Intermediário, no obtienes certificado — pero no existe la categoría «reprobado» como tal.',
+          'Eso cambia la estrategia de preparación: no se trata de superar un umbral concreto, sino de subir de banda. Y la banda depende mucho de la producción, no del reconocimiento.',
+        ],
+      },
+      {
+        h: 'Por qué es distinto de los demás exámenes',
+        body: [
+          'El Celpe-Bras no evalúa gramática de forma aislada. Es un examen <strong>de uso</strong>: te dan tareas comunicativas reales —escribir un texto con un propósito concreto, responder en una entrevista— y se evalúa si lograste el objetivo comunicativo.',
+          'Para un hispanohablante eso tiene una consecuencia práctica: el «portuñol» se detecta rápido. Entender portugués es fácil desde el español; <strong>producirlo sin interferencias del español es lo que separa una banda de otra</strong>.',
+          'Por eso la preparación efectiva se centra en producción escrita y oral, no en ejercicios de opción múltiple.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿Dónde se presenta el Celpe-Bras en Bucaramanga?', a: 'El puesto aplicador oficial es el IBRACO, Instituto Brasil-Colombia, y la UNAB figura como centro autorizado. Es de los pocos exámenes internacionales que se aplican en la ciudad sin necesidad de viajar.' },
+      { q: '¿Se puede reprobar el Celpe-Bras?', a: 'No hay nota de corte como tal. Según tu desempeño obtienes Intermediário, Intermediário Superior, Avançado o Avançado Superior. Si quedas por debajo del Intermediário no obtienes certificado, pero no existe la categoría de reprobado.' },
+      { q: '¿Qué niveles otorga el Celpe-Bras?', a: 'Cuatro: Intermediário, Intermediário Superior, Avançado y Avançado Superior. No certifica niveles básicos.' },
+      { q: '¿Qué evalúa exactamente?', a: 'El uso real del idioma, no la gramática aislada. Se dan tareas comunicativas con un propósito concreto y se evalúa si lograste comunicar lo que había que comunicar.' },
+      { q: '¿Es fácil para un hispanohablante?', a: 'Entender portugués es fácil desde el español; producirlo sin interferencias no lo es. El portuñol se detecta rápido y es justo lo que separa una banda de otra, así que la preparación efectiva se centra en producción escrita y oral.' },
+      { q: '¿Cuándo se puede presentar?', a: 'Se aplica en convocatorias con fechas fijas al año, no cuando uno quiere, y los cupos se agotan. Confirma el calendario con el puesto aplicador y planifica con antelación.' },
+    ],
+    sources: [
+      { label: 'Celpe-Bras — Gobierno de Brasil', url: 'https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/celpe-bras' },
+    ],
+    related: [
+      { href: '/practica/portugues/a1/gramatica', label: 'Gramática portuguesa gratis', note: 'Desde A1, con foco en lo que el español interfiere.' },
+      { href: '/practica/portugues/b1/escritura', label: 'Escritura guiada', note: 'La destreza que más pesa en el Celpe-Bras.' },
+      { href: '/clases-de-portugues', label: 'Preparación con profesor', note: 'Cómo preparamos el Celpe-Bras en WeLearn, presencial en Bucaramanga u online.' },
+    ],
+    checked: 'agosto de 2026',
+  },
+  'delf-dalf': {
+    title: 'DELF y DALF: qué certifican y por qué no sirven para migrar a Canadá',
+    description: 'El DELF y el DALF son las certificaciones oficiales de francés del Ministerio de Educación francés, y no caducan. Pero para inmigrar a Canadá se exige TEF o TCF: el error más caro y más común.',
+    lead:
+      'Antes de pagar nada: <strong>si tu objetivo es migrar a Canadá, el DELF no te sirve</strong>. Es el error más caro y más frecuente con el francés. Para inmigración canadiense se exigen <strong>TEF Canada o TCF Canada</strong>, no el DELF ni el DALF.',
+    sections: [
+      {
+        h: 'Qué son y para qué sí sirven',
+        body: [
+          'El <strong>DELF</strong> cubre los niveles A1 a B2 y el <strong>DALF</strong> los niveles C1 y C2. Los emite el Ministerio de Educación francés y son la referencia para estudios y para acreditar nivel de forma permanente.',
+          'Su gran ventaja: <strong>no caducan</strong>. A diferencia del TEF y el TCF, que tienen vigencia limitada, un DELF B2 sigue valiendo dentro de diez años.',
+          'Por eso la elección no es «cuál es mejor» sino «para qué lo necesito»: para estudiar en Francia o acreditar nivel de por vida, DELF o DALF. Para un proceso migratorio canadiense, TEF o TCF, y hay que repetirlo si vence.',
+        ],
+      },
+      {
+        h: 'Dónde se presenta en Colombia',
+        body: [
+          'El DELF y el DALF se aplican en la <strong>Alianza Francesa</strong>, que tiene sede en Bucaramanga. Es una ventaja frente a otros exámenes que obligan a viajar a Bogotá.',
+          'Los TEF y TCF, que son los de la ruta canadiense, se gestionan también a través de la red de la Alianza Francesa, pero con calendarios y procedimientos propios. Confirma con ellos cuál necesitas antes de inscribirte.',
+        ],
+      },
+      {
+        h: 'Qué nivel te van a pedir',
+        body: [
+          '<strong>B2</strong> es el nivel más solicitado: es el corte habitual para cursar estudios universitarios en francés y el que abre la mayoría de puertas profesionales.',
+          '<strong>B1</strong> aparece en trámites de nacionalidad francesa y en algunos programas de intercambio.',
+          'Para procesos migratorios canadienses el nivel se mide en <strong>NCLC</strong>, una escala propia, no directamente en niveles del Marco Europeo. Es otra razón para no asumir equivalencias y verificar el requisito exacto.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿El DELF sirve para migrar a Canadá?', a: 'No. Para inmigración canadiense se exigen TEF Canada o TCF Canada. Es el error más caro y más común con el francés: mucha gente estudia y presenta el DELF pensando que le sirve para su proceso migratorio.' },
+      { q: '¿Cuál es la diferencia entre DELF y DALF?', a: 'El DELF cubre los niveles A1 a B2 y el DALF los niveles C1 y C2. Ambos los emite el Ministerio de Educación francés.' },
+      { q: '¿El DELF caduca?', a: 'No. Es su gran ventaja frente al TEF y el TCF, que tienen vigencia limitada. Un DELF B2 sigue siendo válido años después.' },
+      { q: '¿Dónde se presenta el DELF en Bucaramanga?', a: 'En la Alianza Francesa, que tiene sede en la ciudad. Es de los exámenes internacionales que sí se aplican aquí sin necesidad de viajar.' },
+      { q: '¿Qué nivel de francés necesito para estudiar en Francia?', a: 'B2 es el corte habitual para estudios universitarios en francés. Confirma el requisito de tu universidad, porque algunos programas piden C1.' },
+      { q: '¿Qué nivel piden para la nacionalidad francesa?', a: 'B1 es el nivel que suele figurar en el trámite. Verifica el requisito vigente con el consulado, porque las condiciones cambian.' },
+    ],
+    sources: [
+      { label: 'France Éducation international — DELF y DALF', url: 'https://www.france-education-international.fr/diplomes-et-tests/delf-dalf' },
+    ],
+    related: [
+      { href: '/blog/tcf-canada-frances-para-inmigrar-a-quebec', label: 'TCF Canada para Quebec', note: 'El examen que sí sirve para el proceso migratorio.' },
+      { href: '/practica/frances/a1/gramatica', label: 'Gramática francesa gratis', note: 'Desde A1, explicada desde el español.' },
+      { href: '/practica/frances/b1/escritura', label: 'Escritura guiada', note: 'Produce textos y compáralos con un modelo del nivel.' },
+      { href: '/clases-de-frances', label: 'Preparación con profesor', note: 'Cómo preparamos el DELF en WeLearn, presencial en Bucaramanga u online.' },
+    ],
+    checked: 'agosto de 2026',
+  },
+
+  'cils-celi': {
+    title: 'CILS B1 ciudadanía italiana: qué examen presentar y dónde',
+    description: 'Para la ciudadanía italiana necesitas acreditar B1. Aquí está la diferencia entre CILS y CELI, qué examen sirve hoy para el trámite y dónde se presenta en Colombia.',
+    lead:
+      'Si vas por la ciudadanía italiana, esto te ahorra un viaje: <strong>el examen corto de «B1 Ciudadanía» ya no se aplica en Bogotá</strong>. Hoy hay que presentar el <strong>CILS B1 completo</strong>, que es más largo y evalúa las cuatro destrezas. Mucho contenido que sigue circulando no está actualizado en esto.',
+    sections: [
+      {
+        h: 'CILS o CELI: no es lo mismo, y no da igual',
+        body: [
+          'Son dos certificaciones oficiales italianas distintas, emitidas por universidades distintas: el <strong>CILS</strong> por la Universidad para Extranjeros de Siena y el <strong>CELI</strong> por la de Perugia. Las dos acreditan nivel según el Marco Común Europeo.',
+          'Para trámites de ciudadanía, lo que importa no es cuál te parece mejor sino <strong>cuál acepta el consulado que lleva tu expediente</strong> y cuál puedes presentar sin salir del país. Verifica ambas cosas antes de inscribirte en nada.',
+          'Para estudiar en Italia, la mayoría de universidades aceptan las dos, pero de nuevo: revisa la convocatoria concreta.',
+        ],
+      },
+      {
+        h: 'Dónde se presenta en Colombia',
+        body: [
+          'El <strong>CILS</strong> se aplica en <strong>Bogotá</strong>, en el Instituto Italiano de Cultura. No hay sede en Bucaramanga.',
+          'El <strong>PLIDA</strong>, otra certificación italiana, tiene más cobertura: Bogotá, Cartagena y Medellín (EAFIT).',
+          'Las sedes y los calendarios cambian de un año a otro. Confirma en el instituto antes de comprar pasajes: es un error caro y frecuente.',
+        ],
+      },
+      {
+        h: 'Qué implica el B1 completo',
+        body: [
+          'A diferencia del examen corto que se usaba antes, el CILS B1 evalúa <strong>comprensión auditiva, comprensión lectora, producción escrita y producción oral</strong>.',
+          'Eso cambia la preparación por completo. Quien venía preparándose solo para reconocer frases va a encontrarse teniendo que escribir y hablar, que es donde más gente se queda corta.',
+          'La buena noticia: el B1 sigue siendo un nivel alcanzable para un hispanohablante en menos tiempo que en casi cualquier otro idioma, porque el italiano comparte estructura y vocabulario con el español.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿Sirve el examen corto de B1 ciudadanía?', a: 'En Bogotá ya no se aplica. Hoy hay que presentar el CILS B1 completo, que evalúa las cuatro destrezas. Mucho contenido publicado sigue mencionando el examen corto y está desactualizado.' },
+      { q: '¿Cuál es la diferencia entre CILS y CELI?', a: 'Son dos certificaciones oficiales italianas emitidas por universidades distintas: el CILS por la Universidad para Extranjeros de Siena y el CELI por la de Perugia. Ambas acreditan nivel según el Marco Común Europeo.' },
+      { q: '¿Qué nivel necesito para la ciudadanía italiana?', a: 'B1. Confirma con el consulado que lleva tu expediente cuál de las certificaciones acepta, porque el requisito lo define el trámite y no el instituto donde estudias.' },
+      { q: '¿Dónde se presenta el CILS en Colombia?', a: 'En Bogotá, en el Instituto Italiano de Cultura. No hay sede en Bucaramanga. El PLIDA, otra certificación italiana, se aplica en Bogotá, Cartagena y Medellín.' },
+      { q: '¿Qué evalúa el CILS B1?', a: 'Las cuatro destrezas: comprensión auditiva, comprensión lectora, producción escrita y producción oral. Es más exigente que el examen corto que se usaba antes para ciudadanía.' },
+      { q: '¿Cuánto tarda un hispanohablante en llegar a B1 de italiano?', a: 'Menos que en casi cualquier otro idioma, porque el italiano comparte estructura y vocabulario con el español. El tiempo exacto depende de tu punto de partida y de cuántas horas semanales le dediques, así que desconfía de quien te dé una cifra sin conocerte.' },
+    ],
+    sources: [
+      { label: 'Universidad para Extranjeros de Siena — CILS', url: 'https://cils.unistrasi.it/' },
+    ],
+    related: [
+      { href: '/blog/cils-celi-certificacion-italiano-colombia', label: 'CILS y CELI en Colombia', note: 'La comparación completa y el estado actual de las sedes.' },
+      { href: '/practica/italiano/a1/gramatica', label: 'Gramática italiana gratis', note: 'Desde A1 hasta B1, explicada desde el español.' },
+      { href: '/clases-de-italiano', label: 'Preparación con profesor', note: 'Cómo preparamos el CILS en WeLearn, presencial u online.' },
+    ],
+    checked: 'agosto de 2026',
+  },
+  goethe: {
+    title: 'Goethe-Zertifikat: qué nivel necesitas y dónde presentarlo en Colombia',
+    description: 'El Goethe-Zertifikat es la certificación oficial de alemán. Qué nivel piden para estudiar, trabajar o reagrupación familiar en Alemania, y en qué ciudades de Colombia se presenta.',
+    lead:
+      'El <strong>Goethe-Zertifikat</strong> es la certificación oficial de alemán del Goethe-Institut, y va de A1 a C2. Lo primero que conviene saber si estás en Bucaramanga: <strong>aquí no hay sede</strong>. En Colombia se presenta en Bogotá, Cali, Medellín y Cartagena.',
+    sections: [
+      {
+        h: 'Qué nivel te van a pedir',
+        body: [
+          'El requisito lo fija cada proceso, pero el patrón es bastante estable:',
+          '<strong>A1</strong> aparece en reagrupación familiar: el nivel para acompañar a un cónyuge. <strong>B1</strong> es lo habitual en formación profesional (Ausbildung) y en muchos procesos de residencia. <strong>B2</strong> es el corte frecuente para trabajar en el sector salud y para varias carreras. <strong>C1</strong> lo piden universidades para cursar en alemán.',
+          'Verifica siempre el requisito exacto de tu convocatoria. Preparar un nivel de más cuesta meses; preparar uno de menos cuesta el trámite entero.',
+        ],
+      },
+      {
+        h: 'Cómo está construido el examen',
+        body: [
+          'Cada nivel evalúa las cuatro destrezas por separado: leer, escuchar, escribir y hablar. Los módulos se aprueban de forma independiente, lo que en la práctica significa que <strong>puedes repetir solo el que no pasaste</strong> en lugar de todo el examen.',
+          'Es una diferencia importante frente a otros exámenes y conviene tenerla en cuenta al planificar: si vas justo de tiempo, presentarte y repetir un módulo puede salir mejor que esperar a sentirte listo en las cuatro.',
+          'Confirma las condiciones de repetición con la sede, porque pueden variar.',
+        ],
+      },
+      {
+        h: 'La parte que más cuesta a un hispanohablante',
+        body: [
+          'No es el vocabulario ni la pronunciación: es el <strong>sistema de casos</strong> y el orden de la frase. El alemán coloca el verbo en posiciones que al principio parecen arbitrarias, y los artículos cambian según la función de la palabra en la oración.',
+          'Por eso conviene empezar por la estructura antes que por acumular palabras. Un vocabulario amplio con casos mal puestos no aprueba un B1.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿Dónde se presenta el Goethe-Zertifikat en Colombia?', a: 'En Bogotá, Cali, Medellín y Cartagena. No hay sede en Bucaramanga, así que hay que contar con el desplazamiento al planificar la fecha.' },
+      { q: '¿Qué nivel de alemán necesito para trabajar en Alemania?', a: 'Depende del sector. B1 es lo habitual para formación profesional y muchos procesos de residencia; B2 es el corte frecuente en el sector salud. Confirma el requisito exacto de tu proceso antes de elegir nivel.' },
+      { q: '¿Qué nivel piden para reagrupación familiar?', a: 'Normalmente A1. Es el nivel para acompañar a un cónyuge, y es el examen más accesible de la familia Goethe.' },
+      { q: '¿Puedo repetir solo una parte del examen?', a: 'Los módulos se aprueban de forma independiente, así que en general se puede repetir solo el que no pasaste en lugar del examen completo. Confirma las condiciones con la sede, porque pueden variar.' },
+      { q: '¿Qué es lo más difícil del alemán para un hispanohablante?', a: 'El sistema de casos y el orden de la frase, no el vocabulario. Los artículos cambian según la función de la palabra en la oración y el verbo ocupa posiciones que al principio parecen arbitrarias. Conviene empezar por la estructura antes que por acumular palabras.' },
+      { q: '¿El Goethe-Zertifikat caduca?', a: 'El certificado no tiene fecha de vencimiento en sí mismo, pero muchas instituciones y procesos migratorios solo aceptan certificados recientes, normalmente de los últimos dos años. Verifica el requisito de tu trámite.' },
+    ],
+    sources: [
+      { label: 'Goethe-Institut — Exámenes de alemán', url: 'https://www.goethe.de/en/spr/kup/prf.html' },
+    ],
+    related: [
+      { href: '/blog/goethe-zertifikat-guia-completa-colombia', label: 'Goethe en Colombia', note: 'Sedes, niveles y cómo inscribirse.' },
+      { href: '/blog/trabajar-en-alemania-nivel-aleman-requerido', label: 'Qué nivel pide cada trabajo', note: 'Por sector, con lo que de verdad exigen los empleadores.' },
+      { href: '/practica/aleman/a1/gramatica', label: 'Gramática alemana gratis', note: 'Casos y orden de la frase, que es donde está la dificultad real.' },
+      { href: '/clases-de-aleman', label: 'Preparación con profesor', note: 'Cómo preparamos el Goethe en WeLearn, presencial u online.' },
+    ],
+    checked: 'agosto de 2026',
+  },
+
   ielts: {
     title: 'IELTS Academic o General: cuál necesitas, y simulacros gratis',
     description: 'La diferencia real entre IELTS Academic y General Training: Listening y Speaking son idénticos, solo cambian Reading y Writing. Simulacros gratis, banda 0-9 explicada y dónde se presenta en Bucaramanga.',
