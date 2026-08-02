@@ -38,37 +38,22 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-coreano' },
 };
 
-const faqJsonLd = {
+/**
+ * FAQPage derivado del MISMO arreglo que se pinta en pantalla.
+ *
+ * Antes estaba escrito a mano y había divergido: 7 preguntas en el marcado contra
+ * 5 visibles. Esa diferencia entre lo que ve Google y lo que ve la persona es justo
+ * lo que se penaliza. Ahora una pregunta se escribe una sola vez, en FAQS.
+ */
+const faqPageNode = () => ({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: '¿Necesito saber algo de coreano para empezar?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No. Empezamos desde cero: la primera sesión cubre el alfabeto Hangul y los primeros sonidos. En 2–3 días ya puedes leer coreano básico.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Qué tan diferente es el coreano del español?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Es muy diferente en estructura (SOV en lugar de SVO), pero la pronunciación es más sencilla de lo que parece. Con el método correcto, progresas rápido.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Se puede aprender coreano para ver K-dramas sin subtítulos?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí, y ese es un objetivo válido. Con 12–18 meses de práctica constante puedes seguir series sin subtítulos. Usamos K-dramas como material didáctico.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Para qué sirve el TOPIK?',
-      acceptedAnswer: { '@type': 'Answer', text: 'TOPIK (Test of Proficiency in Korean) es la certificación oficial coreana. Es requerida para trabajar, estudiar o migrar a Corea. Preparamos desde nivel 1 hasta 6.' },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Las clases son en vivo o grabadas?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Las clases 1:1 son en vivo por videollamada. También tienes acceso al método de 17 pasos con videos, ejercicios y podcasts para practicar entre sesiones.' },
-    },
-  ],
-};
+  mainEntity: FAQS.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -143,6 +128,28 @@ const FAQS = [
     q: '¿Para qué sirve el TOPIK?',
     a: 'TOPIK (Test of Proficiency in Korean) es la certificación oficial coreana. Es requerida para trabajar, estudiar o migrar a Corea. Preparamos desde nivel 1 hasta 6.',
   },
+  // Añadidas desde consultas reales de Search Console: cuánto se tarda, si el
+  // hangul es difícil, las becas de Corea y qué nivel piden para trabajar allí.
+  {
+    q: '¿Cuánto se tarda en aprender coreano desde cero?',
+    a: 'Leer el hangul se consigue en unas semanas y ahí mucha gente se sorprende. Lo que toma tiempo es la estructura: el coreano pone el verbo al final y marca la función de cada palabra con partículas, así que hay que reordenar la cabeza. Con constancia semanal, un TOPIK 1 o 2 es un objetivo razonable para el primer año; el salto a TOPIK 3 es bastante más largo. Desconfía de quien te dé una cifra exacta sin conocer tu punto de partida.',
+  },
+  {
+    q: '¿El hangul es tan difícil como parece?',
+    a: 'No, y es la mejor noticia del coreano. No es un sistema de miles de caracteres como el chino: son 24 letras que se combinan en sílabas, y se diseñó a propósito para que fuera fácil de aprender. La mayoría de estudiantes lo leen en dos o tres semanas. Lo difícil viene después, con la gramática y los niveles de formalidad.',
+  },
+  {
+    q: '¿Necesito TOPIK para la beca del Gobierno coreano?',
+    a: 'No. A la beca GKS puedes postularte sin ningún nivel de coreano, porque incluye un año de estudio del idioma. Tener TOPIK suma puntos en la evaluación, pero no es requisito de entrada. Es un malentendido que frena a mucha gente que sí podría aplicar.',
+  },
+  {
+    q: '¿Qué nivel de coreano piden para trabajar en Corea?',
+    a: 'Depende del puesto y del tipo de visa. Como orientación, donde el coreano es la lengua de trabajo suele pedirse TOPIK 4 o superior; en empresas internacionales con inglés como lengua franca el requisito puede ser mucho menor. Verifica siempre la oferta concreta.',
+  },
+  {
+    q: '¿Dan clases de coreano presenciales en Bucaramanga?',
+    a: 'Sí. Tenemos sede en el barrio Sotomayor, Calle 47 # 29-33, y también damos las clases online para quien vive lejos o tiene horarios difíciles. Puedes alternar entre las dos modalidades según te cuadre la semana.',
+  },
   {
     q: '¿Las clases son en vivo o grabadas?',
     a: 'Las clases 1:1 son en vivo por videollamada. También tienes acceso al método de 17 pasos con videos, ejercicios y podcasts para practicar entre sesiones.',
@@ -158,7 +165,7 @@ export default function ClasesDeCoreanoPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageNode()) }}
       />
       <main className={s.page}>
 
