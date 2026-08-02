@@ -9146,7 +9146,7 @@ And explain whether you would recommend it to others.</em>
 <p>Los cursos gratuitos de la Alcaldía de Bucaramanga en alianza con el SENA son una opción para inglés básico. Para niveles intermedios o avanzados, pide varias cotizaciones y compara qué incluye cada una: número de estudiantes por grupo, si hay tutor asignado, si el material está incluido y si hay evaluación de progreso. El precio por hora aislado dice poco.</p>
 
 <h3>Si quieres clases presenciales, no online</h3>
-<p>Es una preferencia legítima y más común de lo que parece: estar en un salón obliga a hablar y elimina la tentación de dejar la clase a medias. En Bucaramanga hay varias opciones presenciales, entre ellas Celai y Praxis English con grupos y horarios fijos. WeLearn también es presencial —tenemos sede en el barrio Sotomayor, Calle 47 # 29-33— con la diferencia de que puedes alternar presencial y online la misma semana si tu horario cambia. El detalle está en <a href="/clases-de-ingles-bucaramanga">clases de inglés en Bucaramanga</a>.</p>
+<p>Es una preferencia legítima y más común de lo que parece: estar en un salón obliga a hablar y elimina la tentación de dejar la clase a medias. En Bucaramanga hay varias opciones presenciales, entre ellas Celai y Praxis English con grupos y horarios fijos. WeLearn también es presencial —tenemos sede en el barrio Sotomayor, Calle 47 # 29-33— con la diferencia de que puedes alternar presencial y online la misma semana si tu horario cambia. El detalle está en <a href="/clases-de-ingles-bucaramanga">academia de inglés en Bucaramanga con sede física</a>.</p>
 
 <h2>Conclusión: la academia correcta depende de tu objetivo</h2>
 <p>No existe "la mejor academia de inglés en Bucaramanga" sin contexto. Si tu objetivo es una certificación internacional con puntaje específico, WeLearn es la opción más especializada. Si buscas grupos grandes y horarios fijos de mañana a noche, las academias tradicionales tienen más cobertura. Lo más importante: define primero qué necesitas lograr y en cuánto tiempo.</p>
@@ -9238,7 +9238,7 @@ And explain whether you would recommend it to others.</em>
 <h2>Conclusión: cómo optimizar tu inversión en inglés</h2>
 <p>Si tu objetivo es conseguir un puntaje certificado (IELTS, TOEFL, ICFES), las clases individuales con tutor especializado tienen mejor relación inversión/resultado que los cursos grupales. Si tu objetivo es inglés conversacional general, las academias tradicionales o las plataformas online funcionan bien a menor costo.</p>
 <p>¿Quieres saber exactamente cuánto te costaría prepararte para tu objetivo específico? <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20me%20costar%C3%ADa%20preparar%20mi%20ingl%C3%A9s%20con%20WeLearn%20en%20Bucaramanga." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> y te damos una cotización personalizada.</p>
-<p>Si prefieres prepararte presencialmente, WeLearn tiene sede en el barrio Sotomayor: los horarios, cómo llegar y cómo funciona cada modalidad están en <a href="/clases-de-ingles-bucaramanga">clases de inglés en Bucaramanga</a>.</p>
+<p>Si prefieres prepararte presencialmente, WeLearn tiene sede en el barrio Sotomayor: los horarios, cómo llegar y cómo funciona cada modalidad están en <a href="/clases-de-ingles-bucaramanga">clases de inglés en Bucaramanga, presenciales u online</a>.</p>
 <p>Lee también: <a href="/blog/academias-de-ingles-en-bucaramanga-comparativa-2026">Academias de inglés en Bucaramanga: comparativa 2026</a> y <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS</a>.</p>
     `,
   },
@@ -9311,7 +9311,7 @@ And explain whether you would recommend it to others.</em>
 <h2>WeLearn: presencial en Bucaramanga y también online</h2>
 <p>WeLearn no te obliga a elegir. Tenemos <strong>sede física en el barrio Sotomayor, Calle 47 # 29-33</strong>, donde damos clases presenciales, y también damos clases online para quien vive lejos, viaja o tiene horarios imposibles. Muchos estudiantes combinan las dos: presencial cuando pueden venir, online cuando no.</p>
 <p>Atendemos presencialmente a todo el área metropolitana: Bucaramanga, Floridablanca, Girón y Piedecuesta. Cada estudiante tiene un tutor asignado, plan de estudio personalizado y evaluación mensual de progreso, sin importar la modalidad.</p>
-<p>Si estás decidiendo entre las dos, la página de <a href="/clases-de-ingles-bucaramanga">clases de inglés en Bucaramanga</a> tiene el detalle de horarios, cómo llegar a la sede y cómo funciona cada modalidad.</p>
+<p>Si estás decidiendo entre las dos, la página de <a href="/clases-de-ingles-bucaramanga">cursos de inglés presenciales en Bucaramanga</a> tiene el detalle de horarios, cómo llegar a la sede y cómo funciona cada modalidad.</p>
 <p><a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20comparar%20las%20clases%20de%20ingl%C3%A9s%20presenciales%20y%20online%20en%20Bucaramanga%20con%20WeLearn." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a> para tu diagnóstico gratis.</p>
 <p>Lee también: <a href="/blog/academias-de-ingles-en-bucaramanga-comparativa-2026">Academias de inglés en Bucaramanga: comparativa 2026</a> y <a href="/blog/cuanto-cuesta-aprender-ingles-en-bucaramanga-2026">¿Cuánto cuesta aprender inglés en Bucaramanga?</a>.</p>
     `,

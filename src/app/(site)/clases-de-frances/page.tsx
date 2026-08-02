@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import FoundersBand from '@/components/hub/FoundersBand';
 import LocalBand from '@/components/hub/LocalBand';
+import PracticeBand from '@/components/hub/PracticeBand';
 import { localBusinessNode, davidNode, zhannaNode, courseInstances } from '@/components/hub/localBusiness';
 import s from './page.module.css';
 
@@ -487,6 +488,21 @@ export default function ClasesDeFrancesPage() {
           intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar francés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo profesor y el mismo plan, se hace por videollamada."
           presencial="Clases cara a cara para quienes rinden más con el profesor al lado. Ideal si vas a presentar el DELF y quieres entrenar la expresión oral sin la barrera de la pantalla."
           waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de francés presenciales. ¿Cómo funcionan?"
+        />
+
+        {/* ══════════════ PRÁCTICA GRATIS ══════════════ */}
+        <PracticeBand
+          accent="#1a2ecc"
+          title="Practica francés gratis, sin registrarte"
+          sub="Todo esto está abierto y no hay que dar ningún dato. Si luego quieres clases con profesor, hablamos; si no, el material es tuyo igual."
+          cards={[
+            { href: '/practica/frances/a1/gramatica', title: 'Gramática A1 · A2 · B1', desc: 'Los artículos, la negación y los verbos irregulares explicados desde el español, que es donde se atasca todo hispanohablante.' },
+            { href: '/practica/frances/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, para fijar la pronunciación antes de que se vuelva un vicio.' },
+            { href: '/practica/frances/a1/escucha', title: 'Comprensión auditiva', desc: 'El francés hablado une las palabras y se come sonidos: por eso se entiende leyendo y no escuchando. Aquí se entrena eso.' },
+            { href: '/practica/frances/b1/lectura', title: 'Comprensión lectora', desc: 'Textos con preguntas al estilo del examen, para leer rápido sin traducir mentalmente.' },
+            { href: '/practica/frances/b1/escritura', title: 'Escritura guiada', desc: 'Escribe una respuesta real y compárala con un modelo del nivel.' },
+            { href: '/practica/frances/a1/habla', title: 'Expresión oral', desc: 'Estructuras y pronunciación modelo, la parte que más pesa en el DELF y la que menos se practica solo.' },
+          ]}
         />
 
         {/* ══════════════ CANADÁ (SEO/AEO) ══════════════ */}
