@@ -1,6 +1,6 @@
 # Inventario seguro de resultados para el home
 
-Estado: propuesta de Fase 1. Este documento no publica datos personales y no modifica el home aprobado.
+Estado: Fase 1 aprobada e integrada en la rama `codex/home-seo-hub-v2`. No se ha desplegado ni integrado a `main`.
 
 ## Resultado del inventario
 
@@ -68,12 +68,12 @@ La animación debe usar `transform` y `opacity`, detenerse fuera del viewport y 
 - No afirmar que cada fotografía representa una persona diferente.
 - No usar logotipos de las entidades como si existiera afiliación o aval.
 - No afirmar que una puntuación está garantizada.
-- No integrar todavía esta propuesta en el home hasta recibir aprobación visual.
+- No desplegar ni integrar a `main` sin autorización explícita.
 
 ## Preparación de la integración
 
-La integración debe sustituir únicamente la sección actual `#resultados` de
-`src/app/(site)/home/HomePage.tsx`. No debe reescribir el hero, los directorios,
+La integración sustituyó únicamente la sección anterior `#resultados` de
+`src/app/(site)/home/HomePage.tsx`. No reescribió el hero, los directorios,
 las escenas narrativas ni la sección de exámenes ya aprobadas.
 
 Arquitectura prevista:
@@ -89,20 +89,31 @@ Arquitectura prevista:
   foco visible y una región de estado accesible.
 - Preservar un `h2` para la sección; el único `h1` permanece en el hero.
 
-### Guardarraíl de repositorio detectado el 2 de agosto de 2026
+### Reconciliación del repositorio — 2 de agosto de 2026
 
-La rama `codex/home-seo-hub-v2` está trece commits detrás de `origin/main`.
-Esos commits recientes modifican la raíz, `/home`, el sitemap, `next.config.ts`
-y varios hubs; además, en `main` no existen todavía los componentes del rediseño
-que sí viven en esta rama.
+La rama estaba trece commits detrás de `origin/main`. Esos commits modificaban
+la raíz, `/home`, el sitemap, `next.config.ts` y varios hubs; además, en `main`
+no existían todavía los componentes del rediseño que sí viven en esta rama.
 
-Antes de integrar la propuesta visual se debe:
+La reconciliación se ejecutó así:
 
-1. guardar el trabajo aprobado en un commit verificable de esta rama;
-2. actualizar la rama desde el `main` canónico sin publicar ni desplegar;
-3. resolver explícitamente los conflictos de `/`, `/home`, sitemap y archivos
-   del home, conservando la homepage aprobada;
-4. ejecutar las validaciones obligatorias antes de continuar.
+1. se guardó el trabajo aprobado en el commit `17dd9eb`;
+2. se actualizó la rama desde el `main` canónico sin publicar ni desplegar;
+3. el merge se completó sin conflictos y conservó `/` como home real, `/home`
+   como redirección permanente y la raíz única en el sitemap;
+4. después se integró `HomeResultsArchive` y se ejecutaron las validaciones.
 
-No se debe hacer un merge o rebase automático sobre el árbol de trabajo actual,
-porque contiene cambios aprobados todavía sin commit.
+El árbol quedó protegido antes del merge; no se perdió ninguna sección aprobada.
+
+## Evidencia de validación de la integración
+
+- TypeScript: `npx tsc --noEmit --incremental false` sin errores.
+- ESLint: componentes y datos del home sin errores.
+- Catálogo protegido: 465 temas de gramática verificados.
+- Prebuild: lectura y currículo de escritura verificados.
+- Build de producción: generado con Webpack por la incompatibilidad de
+  Turbopack con el symlink de `node_modules` del worktree.
+- HTML servido: un H1, 37 imágenes del archivo y 37 figuras de resultado.
+- Interacción: filtros por familia, estado accesible y expansión de 8 a 37.
+- Responsive: comprobado a 390 px y escritorio; sin overflow horizontal.
+- Canonical local: `/` responde 200 y `/home` responde 308 hacia `/`.

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Home.module.css';
 import SearchScrollVideo from './SearchScrollVideo';
+import HomeResultsArchive from './HomeResultsArchive';
 import {
   ANSWERS,
   EVIDENCE_STEPS,
@@ -451,47 +452,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="resultados" className={styles.evidenceSection} aria-labelledby="evidence-title">
-        <div className={styles.evidenceCopy}>
-          <p className={styles.eyebrow}>Resultados oficiales con identidad protegida</p>
-          <h2 id="evidence-title">Resultados de estudiantes preparados para IELTS y TOEFL.</h2>
-          <p>
-            Estos recortes pertenecen a reportes oficiales de estudiantes de WeLearn.
-            Publicamos únicamente la zona del puntaje: sin nombres, documentos ni números
-            de candidato. Son resultados históricos verificables, no una promesa de nota.
-          </p>
-          <div className={styles.evidenceActions}>
-            <Link href="/examenes/ielts" className={styles.textLink}>Preparación IELTS <ArrowIcon /></Link>
-            <Link href="/examenes/toefl" className={styles.textLink}>Preparación TOEFL <ArrowIcon /></Link>
-          </div>
-        </div>
-        <div className={styles.resultGrid} aria-label="Resultados oficiales anonimizados de estudiantes">
-          <figure className={styles.resultCard}>
-            <div className={styles.resultImage}>
-              <Image src="/images/resultados/puntaje/ielts-80.webp" alt="Recorte anonimizado de reporte IELTS con band score 8.0" fill sizes="(max-width: 760px) 86vw, 300px" />
-            </div>
-            <figcaption><strong>IELTS 8.0</strong><span>Reporte oficial · identidad protegida</span></figcaption>
-          </figure>
-          <figure className={styles.resultCard}>
-            <div className={styles.resultImage}>
-              <Image src="/images/resultados/puntaje/ielts-75.webp" alt="Recorte anonimizado de reporte IELTS con band score 7.5" fill sizes="(max-width: 760px) 86vw, 300px" />
-            </div>
-            <figcaption><strong>IELTS 7.5</strong><span>Reporte oficial · identidad protegida</span></figcaption>
-          </figure>
-          <figure className={styles.resultCard}>
-            <div className={styles.resultImage}>
-              <Image src="/images/resultados/puntaje/toefl-95.webp" alt="Recorte anonimizado de reporte TOEFL iBT con puntaje total 95" fill sizes="(max-width: 760px) 86vw, 300px" />
-            </div>
-            <figcaption><strong>TOEFL iBT 95</strong><span>Reporte oficial · identidad protegida</span></figcaption>
-          </figure>
-          <figure className={styles.resultCard}>
-            <div className={styles.resultImage}>
-              <Image src="/images/resultados/puntaje/german-toefl-92.webp" alt="Recorte anonimizado de reporte TOEFL iBT con puntaje total 92" fill sizes="(max-width: 760px) 86vw, 300px" />
-            </div>
-            <figcaption><strong>TOEFL iBT 92</strong><span>Reporte oficial · identidad protegida</span></figcaption>
-          </figure>
-        </div>
-      </section>
+      <HomeResultsArchive />
 
       <section id="rutas" className={styles.routesSection} aria-labelledby="routes-title">
         <div className={styles.routesIntro}>
