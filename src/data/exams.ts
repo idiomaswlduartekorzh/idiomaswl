@@ -101,9 +101,13 @@ export const EXAMS: Record<string, Exam> = {
     description: 'El TOEFL iBT evalúa las 4 habilidades del inglés académico. Es el examen estándar para admisión en más de 11,000 universidades en 160 países, especialmente en Norteamérica.',
     totalTime: '~2h',
     totalQuestions: '54–72',
-    scoreRange: '0 – 120',
-    scoreName: 'Total Score',
-    passing: 'Depende de la institución (generalmente 80 – 100)',
+    // ETS cambió la escala el 21 de enero de 2026: el puntaje principal pasó a ser
+    // una banda de 1 a 6 con medios puntos. El clásico 0-120 se sigue reportando
+    // como equivalente durante una transición de dos años, hasta enero de 2028, y
+    // es el que siguen usando las universidades en sus requisitos.
+    scoreRange: '1 – 6 (equivalente 0 – 120)',
+    scoreName: 'Banda TOEFL',
+    passing: 'Lo fija cada institución. Los requisitos siguen publicados en la escala 0 – 120, donde lo habitual es 80 – 100',
     recognized: ['Más de 11,000 universidades en 160 países', 'Programas de postgrado en EE.UU. y Canadá', 'Visas estudiantiles F-1 (EE.UU.)'],
     sections: [
       { name: 'Reading', icon: '📖', time: '35–72 min', questions: 20, color: '#2563eb', types: ['Multiple choice', 'Prose summary', 'Fill in a table', 'Referente questions'] },

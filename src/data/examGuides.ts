@@ -50,6 +50,147 @@ export type ExamGuide = {
 
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
+  toefl: {
+    title: 'Simulacro TOEFL gratis y la nueva escala 1–6: guía 2026',
+    description: 'Simulacros del TOEFL iBT gratis con formato real. Desde enero de 2026 el examen se puntúa en bandas de 1 a 6, no sobre 120: aquí está qué cambió, qué significa tu banda y qué siguen pidiendo las universidades.',
+    lead:
+      'Antes de nada, lo que casi nadie te ha dicho: <strong>desde el 21 de enero de 2026 el TOEFL iBT ya no se puntúa sobre 120</strong>. El puntaje principal es ahora una <strong>banda de 1 a 6</strong>, con medios puntos, igual que el IELTS. El 0–120 se sigue reportando como equivalente, pero solo durante una transición de dos años.',
+    sections: [
+      {
+        h: 'Qué cambió exactamente y qué significa para ti',
+        body: [
+          'Si presentaste el examen antes de esa fecha, tu certificado sigue valiendo y tus puntos se convierten a la escala nueva en el informe.',
+          'Si lo vas a presentar ahora, tu resultado principal será algo como <strong>4,5</strong> en vez de <strong>95</strong>. Junto a él seguirá apareciendo el equivalente sobre 120 hasta enero de 2028.',
+          'Eso importa por una razón muy práctica: <strong>las universidades siguen publicando sus requisitos en la escala vieja</strong>. Si una maestría pide «TOEFL 100», sigue refiriéndose a los 100 sobre 120, y tú tendrás que mirar la equivalencia de tu informe. No asumas que pide banda 100 de nada.',
+          'Cada sección se puntúa también de 1 a 6, y la banda global es el promedio de las cuatro, redondeado al medio punto más cercano.',
+        ],
+      },
+      {
+        h: 'Cómo es el examen hoy',
+        body: [
+          'El TOEFL iBT dura <strong>unas dos horas</strong> y evalúa las cuatro destrezas en este orden: lectura, comprensión auditiva, escritura y expresión oral.',
+          'Es <strong>adaptativo</strong>: el número exacto de preguntas y el tiempo varían según cómo respondas. Por eso no tiene sentido memorizar «son X preguntas»: prepárate para el tipo de tarea, no para un conteo.',
+          'La sección de expresión oral es la más corta —unos ocho minutos— y la que más ansiedad genera, porque se graba y hay que responder con muy poco tiempo de preparación. Es también donde más rinde practicar en voz alta antes del examen.',
+        ],
+      },
+      {
+        h: 'Dónde se presenta si estás en Bucaramanga',
+        body: [
+          'Aquí hay una confusión que sale cara. <strong>El TOEFL iBT no se aplica en Bucaramanga</strong>, así que hay que contar con desplazarse.',
+          'Y ojo con esto: el <strong>TOEFL ITP</strong> que se ofrece localmente <strong>es un examen distinto</strong>. Mide otra cosa, se usa para clasificación interna de instituciones y <strong>no sirve donde te piden el iBT</strong>. Confirma cuál te están pidiendo antes de inscribirte en nada.',
+          'Si lo que necesitas es un examen internacional que sí se aplique en Bucaramanga, el <strong>IELTS</strong> se presenta aquí, en la UNAB, como sede avalada por el British Council.',
+        ],
+      },
+      {
+        h: 'Cuánto valen tus resultados',
+        body: [
+          'Los puntajes del TOEFL son válidos <strong>dos años</strong> desde la fecha del examen. Pasado ese plazo, ETS no los envía ni los reporta.',
+          'Es la diferencia grande frente a un certificado de Cambridge, que no caduca. Si tu proceso de admisión es dentro de tres años, presentarlo ahora no te sirve de nada.',
+          'Planifica la fecha hacia atrás desde el plazo de tu convocatoria, no hacia adelante desde cuando te sientas listo.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿El TOEFL ya no es sobre 120?', a: 'Correcto. Desde el 21 de enero de 2026 el puntaje principal del TOEFL iBT es una banda de 1 a 6 con medios puntos. El equivalente sobre 120 se sigue reportando durante una transición de dos años, hasta enero de 2028.' },
+      { q: '¿Sirve todavía mi TOEFL con puntaje sobre 120?', a: 'Sí. Los exámenes presentados antes del cambio siguen siendo válidos durante sus dos años de vigencia, y el informe convierte esos puntos a la escala nueva.' },
+      { q: 'Mi universidad pide TOEFL 100. ¿Qué banda es esa?', a: 'Las universidades siguen publicando requisitos en la escala 0 a 120, y tu informe seguirá mostrando ese equivalente hasta enero de 2028. Si te piden 100, se refieren a 100 sobre 120. Confirma siempre el requisito con la institución, porque cada una decide cómo lo aplica durante la transición.' },
+      { q: '¿Cuánto dura el TOEFL iBT?', a: 'Aproximadamente dos horas. El examen es adaptativo, así que el número exacto de preguntas y el tiempo por sección varían según cómo vayas respondiendo.' },
+      { q: '¿Cuánto tiempo son válidos los resultados del TOEFL?', a: 'Dos años desde la fecha del examen. Pasado ese plazo ETS no reporta ni envía los puntajes.' },
+      { q: '¿Se puede presentar el TOEFL iBT en Bucaramanga?', a: 'No. El TOEFL iBT no se aplica en Bucaramanga, hay que desplazarse a otra ciudad. Si necesitas un examen internacional que sí se aplique aquí, el IELTS se presenta en la UNAB como sede avalada por el British Council.' },
+      { q: '¿El TOEFL ITP sirve igual que el iBT?', a: 'No, son exámenes distintos. El ITP se usa para clasificación interna de instituciones y no reemplaza al iBT donde te piden el iBT. Es un error frecuente y caro: confirma cuál te están exigiendo antes de inscribirte.' },
+      { q: '¿Los simulacros de esta página son gratis?', a: 'Sí. Reproducen el formato de las cuatro secciones y te dan un informe por sección para que veas dónde estás perdiendo puntos, que es para lo que sirve de verdad un simulacro.' },
+      { q: '¿Qué sección del TOEFL es la más difícil?', a: 'Depende de tu perfil, pero la expresión oral es la que más se atraganta a los hispanohablantes: se graba, hay muy poco tiempo de preparación y no se puede corregir sobre la marcha. Es la que más mejora con práctica en voz alta.' },
+      { q: '¿TOEFL o IELTS?', a: 'Si tu institución acepta los dos, pesa lo práctico: el IELTS se aplica en Bucaramanga y el TOEFL iBT no. Si te piden uno por nombre, no hay decisión que tomar. Y verifica siempre el requisito exacto antes de pagar.' },
+    ],
+    sources: [
+      { label: 'ETS — Comprender los puntajes del TOEFL iBT', url: 'https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html' },
+      { label: 'ETS — Contenido y secciones del TOEFL iBT', url: 'https://www.ets.org/toefl/test-takers/ibt/about/content.html' },
+    ],
+    related: [
+      { href: '/examenes/ielts', label: 'Simulacros de IELTS', note: 'El examen que sí se aplica en Bucaramanga, por si te sirven los dos.' },
+      { href: '/blog/ielts-vs-toefl-cual-tomar-en-colombia', label: 'IELTS o TOEFL en Colombia', note: 'La comparación completa, con lo que pesa de verdad al elegir.' },
+      { href: '/practica/ingles/b1/escritura', label: 'Escritura guiada', note: 'Produce textos y compáralos con un modelo del nivel.' },
+      { href: '/practica/ingles/b1/habla', label: 'Expresión oral', note: 'La sección que más se atraganta, y la que más mejora practicando en voz alta.' },
+      { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Cómo preparamos el TOEFL en WeLearn, presencial u online.' },
+    ],
+    checked: 'agosto de 2026',
+  },
+
+  topik: {
+    title: 'TOPIK I y TOPIK II: diferencias, puntajes y simulacro gratis',
+    description: 'TOPIK I y TOPIK II no son dos niveles del mismo examen: son dos exámenes distintos. Aquí está la diferencia, los puntajes que necesitas para cada nivel del 1 al 6, y un simulacro gratis para saber por cuál empezar.',
+    lead:
+      'La confusión más común, y la que hace perder dinero: <strong>TOPIK I y TOPIK II no son dos niveles del mismo examen</strong>. Son dos exámenes distintos, con formato distinto y precio distinto, y te inscribes en uno o en otro. TOPIK I certifica los niveles 1 y 2; TOPIK II certifica del 3 al 6.',
+    sections: [
+      {
+        h: 'La diferencia en una tabla',
+        body: [
+          '<strong>TOPIK I</strong> — certifica niveles 1 y 2. Dos secciones: comprensión auditiva y lectura. Puntaje sobre 200. Dura unos 100 minutos. <strong>No hay que escribir nada</strong>: es todo de opción múltiple.',
+          '<strong>TOPIK II</strong> — certifica niveles 3, 4, 5 y 6. Tres secciones: auditiva, lectura y <strong>escritura</strong>. Puntaje sobre 300. Es bastante más largo y la escritura incluye redacción, no solo completar.',
+          'Esa sección de escritura es la diferencia real de dificultad, no el vocabulario. Mucha gente con buen nivel de comprensión se estrella ahí porque nunca practicó producción escrita.',
+        ],
+      },
+      {
+        h: 'Cuántos puntos necesitas para cada nivel',
+        body: [
+          'No apruebas o repruebas: sacas el nivel que te dé tu puntaje. Si te presentas al TOPIK II y sacas 130, obtienes nivel 3.',
+          '<strong>TOPIK I (sobre 200):</strong> nivel 1 desde 80 puntos · nivel 2 desde 140.',
+          '<strong>TOPIK II (sobre 300):</strong> nivel 3 desde 120 · nivel 4 desde 150 · nivel 5 desde 190 · nivel 6 desde 230.',
+          'Hay un detalle que conviene calcular antes de inscribirse: en el TOPIK I, pasar de nivel 1 a nivel 2 exige <strong>60 puntos más</strong>; en el TOPIK II los saltos entre niveles son de 30 a 40. El primer salto es el más caro.',
+          'Y si te presentas al TOPIK II sin llegar a 120 puntos, no obtienes nivel 2 de consolación: te quedas sin certificado. Por eso elegir mal el examen sale caro.',
+        ],
+      },
+      {
+        h: 'Cuál te toca a ti',
+        body: [
+          'Si llevas menos de un año estudiando o todavía lees el hangul con esfuerzo, <strong>TOPIK I</strong>. Es donde está tu nivel y además te da un certificado real.',
+          'Si ya manejas estructuras de pasado y futuro, entiendes conversación cotidiana y puedes escribir un párrafo con sentido, <strong>TOPIK II</strong> — aunque apuntes solo a nivel 3.',
+          'Si dudas, haz el simulacro de esta página antes de pagar la inscripción. Media hora ahí te ahorra elegir mal.',
+        ],
+      },
+      {
+        h: 'Para qué te piden cada nivel',
+        body: [
+          'Los requisitos los fija cada universidad, empresa o programa, así que verifica siempre el tuyo. Pero el patrón general ayuda a orientarse:',
+          '<strong>Nivel 3-4</strong> es lo que suelen pedir los programas de intercambio y muchas becas para entrar a un curso de idioma en Corea. <strong>Nivel 4</strong> es el corte habitual para cursar una carrera en coreano. <strong>Nivel 5-6</strong> aparece en posgrados y en puestos de trabajo donde el coreano es la lengua de trabajo.',
+          'Para las <strong>becas GKS</strong> del Gobierno coreano hay algo que casi nadie sabe y que cambia el cálculo: <strong>no necesitas TOPIK para postularte</strong>. Muchos aplican con nivel cero y hacen el año de idioma que la beca incluye. Tener TOPIK suma puntos, pero no es un requisito de entrada.',
+        ],
+      },
+      {
+        h: 'Dónde se presenta y cuánto vale el certificado',
+        body: [
+          'En Colombia el TOPIK se aplica en <strong>Bogotá</strong>, en el Instituto Rey Sejong. No hay sede en Bucaramanga, así que hay que contar con el viaje al planificar la fecha.',
+          'Las sedes y el calendario cambian cada año, así que confirma en la página oficial del TOPIK antes de organizar nada.',
+          'El certificado <strong>tiene vigencia de dos años</strong> desde la publicación de resultados. Es distinto del Cambridge, que no caduca: aquí conviene presentarlo cuando ya tengas cerca el proceso para el que lo necesitas, no con años de antelación.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿Cuál es la diferencia entre TOPIK I y TOPIK II?', a: 'Son dos exámenes distintos, no dos niveles del mismo. TOPIK I certifica los niveles 1 y 2, tiene comprensión auditiva y lectura, y se puntúa sobre 200. TOPIK II certifica los niveles 3 a 6, añade una sección de escritura y se puntúa sobre 300. Te inscribes en uno o en otro.' },
+      { q: '¿Qué es el TOPIK?', a: 'Es el Test of Proficiency in Korean, el examen oficial de coreano del Gobierno de Corea del Sur. Es el estándar que piden universidades, becas y empleadores coreanos para acreditar tu nivel.' },
+      { q: '¿Cuántos puntos necesito para cada nivel del TOPIK?', a: 'En TOPIK I (sobre 200): nivel 1 desde 80 puntos y nivel 2 desde 140. En TOPIK II (sobre 300): nivel 3 desde 120, nivel 4 desde 150, nivel 5 desde 190 y nivel 6 desde 230.' },
+      { q: '¿Qué pasa si me presento al TOPIK II y saco poco puntaje?', a: 'Si no llegas a 120 puntos no obtienes ningún nivel: no hay nivel 2 de consolación por presentarte al examen avanzado. Es el motivo por el que conviene medir tu nivel antes de elegir en cuál inscribirte.' },
+      { q: '¿Cuál presento si estoy empezando?', a: 'TOPIK I. Si llevas menos de un año estudiando o todavía lees el hangul con esfuerzo, es donde está tu nivel y te da un certificado real. Presentarte al II para "probar" suele terminar sin certificado.' },
+      { q: '¿El certificado del TOPIK caduca?', a: 'Sí, tiene una vigencia de dos años desde la publicación de resultados. A diferencia de los certificados de Cambridge, que no expiran, aquí conviene presentarlo cuando ya tengas cerca el proceso para el que lo necesitas.' },
+      { q: '¿Dónde se presenta el TOPIK en Colombia?', a: 'En Bogotá, en el Instituto Rey Sejong. No hay sede en Bucaramanga. Las sedes y el calendario cambian cada año, así que confirma en la página oficial del TOPIK antes de organizar el viaje.' },
+      { q: '¿Necesito TOPIK para la beca GKS de Corea del Sur?', a: 'No. Puedes postularte sin TOPIK: la beca incluye un año de estudio del idioma. Tener TOPIK suma puntos en la evaluación, pero no es un requisito de entrada. Es uno de los malentendidos más comunes y frena a mucha gente que sí podría aplicar.' },
+      { q: '¿Qué nivel de TOPIK necesito para estudiar en Corea?', a: 'Depende del programa, y el requisito lo fija cada universidad. Como orientación, el nivel 3 o 4 es lo habitual para intercambios y programas de idioma, y el nivel 4 suele ser el corte para cursar una carrera en coreano. Verifica siempre la convocatoria concreta.' },
+      { q: '¿Qué es más difícil del TOPIK II?', a: 'La sección de escritura, que no existe en TOPIK I. Incluye redacción, no solo completar frases. Mucha gente con buena comprensión se queda corta ahí porque nunca practicó producción escrita en coreano.' },
+    ],
+    sources: [
+      { label: 'TOPIK — página oficial del Gobierno de Corea del Sur', url: 'https://www.topik.go.kr' },
+    ],
+    related: [
+      { href: '/blog/topik-i-vs-topik-ii-diferencias', label: 'TOPIK I vs TOPIK II en detalle', note: 'La comparación completa, sección por sección, si aún dudas cuál presentar.' },
+      { href: '/blog/topik-1-preparacion-guia-para-principiantes', label: 'Cómo preparar el TOPIK I', note: 'Ruta desde cero para el examen básico.' },
+      { href: '/blog/coreano-nivel-topik-3-4-como-alcanzarlo', label: 'Llegar a TOPIK 3 o 4', note: 'El salto que piden la mayoría de universidades y becas.' },
+      { href: '/blog/beca-gks-corea-del-sur-para-colombianos', label: 'Beca GKS para colombianos', note: 'Cómo postularse, y por qué no necesitas TOPIK para hacerlo.' },
+      { href: '/practica/coreano/a1/gramatica', label: 'Gramática coreana gratis', note: 'Partículas, orden de la frase y niveles de formalidad, desde el español.' },
+      { href: '/clases-de-coreano', label: 'Preparación con profesor', note: 'Cómo enseñamos coreano en WeLearn, presencial en Bucaramanga u online.' },
+    ],
+    checked: 'agosto de 2026',
+  },
+
   icfes: {
     title: 'Simulacro ICFES Inglés gratis: cuadernillos oficiales y puntajes',
     description: 'Simulacros del ICFES de inglés gratis y sin registro, con cuadernillos oficiales de años anteriores y clave de respuestas. Escala real: Pre A1, A1, A2 y B1. Al terminar ves tu puntaje y tu nivel.',
