@@ -5490,6 +5490,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>WeLearn y el IELTS Writing Task 1</h2>
 <p>Preparamos la sección de Writing del IELTS con simulacros, corrección detallada y estrategias probadas. Si tu objetivo es banda 7 en Writing, <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20IELTS%20Writing%20Task%201%20para%20llegar%20a%20banda%207.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">cuéntanos tu nivel actual y tu fecha de examen</a>.</p>
 <p>Lee también: <a href="/blog/ielts-writing-task-2-guia-completa-para-principiantes">IELTS Writing Task 2: guía completa para principiantes</a> y <a href="/blog/ielts-reading-estrategias-para-band-7">IELTS Reading: estrategias para alcanzar banda 7</a>.</p>
+<p>Descarga gratis la <a href="/recursos/ielts-writing-task-1-introduccion-pdf">guía en PDF para escribir la introducción del Task 1</a>: cómo parafrasear el enunciado sin repetirlo, que es justo donde se pierden puntos en la primera frase.</p>
     `,
   },
 
