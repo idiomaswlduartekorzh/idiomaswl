@@ -9,13 +9,24 @@ function clamp(value: number, min: number, max: number) {
   return Math.min(Math.max(value, min), max);
 }
 
-function buildPath(points: Array<{ x: number; y: number }>) {
+type NarrativePoint = {
+  x: number;
+  y: number;
+  breakBefore: boolean;
+  join: 'straight' | 'orthogonal';
+  node: boolean;
+};
+
+function buildPath(points: NarrativePoint[]) {
   if (points.length < 2) return '';
 
   return points.slice(1).reduce((path, point, index) => {
     const previous = points[index];
-    const middleY = previous.y + (point.y - previous.y) * 0.5;
-    return `${path} C ${previous.x} ${middleY}, ${point.x} ${middleY}, ${point.x} ${point.y}`;
+    if (point.breakBefore) return `${path} M ${point.x} ${point.y}`;
+    if (point.join === 'orthogonal' && previous.x !== point.x) {
+      return `${path} L ${previous.x} ${point.y} L ${point.x} ${point.y}`;
+    }
+    return `${path} L ${point.x} ${point.y}`;
   }, `M ${points[0].x} ${points[0].y}`);
 }
 
@@ -35,22 +46,25 @@ export default function HomeNarrativeRail() {
   const svgRef = useRef<SVGSVGElement>(null);
   const basePathRef = useRef<SVGPathElement>(null);
   const progressPathRef = useRef<SVGPathElement>(null);
+  const nodesRef = useRef<SVGGElement>(null);
   const pulseRef = useRef<HTMLSpanElement>(null);
 
   useLayoutEffect(() => {
     const svg = svgRef.current;
     const basePath = basePathRef.current;
     const progressPath = progressPathRef.current;
+    const nodes = nodesRef.current;
     const pulse = pulseRef.current;
     const root = svg?.closest<HTMLElement>('[data-home-narrative-root]');
 
-    if (!svg || !basePath || !progressPath || !pulse || !root) return;
+    if (!svg || !basePath || !progressPath || !nodes || !pulse || !root) return;
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let pathLength = 0;
     let startDocumentY = 0;
     let endDocumentY = 1;
     let frame = 0;
+    let nodeEntries: Array<{ element: SVGCircleElement; documentY: number }> = [];
 
     const renderProgress = () => {
       frame = 0;
@@ -66,6 +80,9 @@ export default function HomeNarrativeRail() {
       progressPath.style.strokeDashoffset = String(pathLength - travelled);
       pulse.style.transform = `translate3d(${point.x - 5}px, ${point.y - 5}px, 0)`;
       pulse.style.opacity = progress > 0 && progress < 1 && !prefersReducedMotion.matches ? '1' : '0';
+      nodeEntries.forEach(({ element, documentY }) => {
+        element.dataset.active = String(viewportMarker >= documentY);
+      });
     };
 
     const queueProgress = () => {
@@ -78,9 +95,9 @@ export default function HomeNarrativeRail() {
       const centerTrack = root.clientWidth / 2;
       const editorialGutter = root.clientWidth < 760
         ? 8
-        : Math.max(18, (root.clientWidth - 1240) / 2 - 22);
+        : Math.max(10, (root.clientWidth - 1240) / 2 - 22);
       const mediaTrack = root.clientWidth < 760 ? centerTrack : root.clientWidth * 0.42;
-      const points = anchors.map((anchor) => {
+      const points: NarrativePoint[] = anchors.map((anchor) => {
         const rect = anchor.getBoundingClientRect();
         const naturalX = rect.left - rootRect.left + rect.width / 2;
         const track = anchor.dataset.homeNarrativeTrack;
@@ -96,6 +113,9 @@ export default function HomeNarrativeRail() {
           // Sticky film layers move inside the viewport. offsetTop preserves each
           // anchor's place in the document even when the page opens on a hash.
           y: getStableOffsetTop(anchor, root),
+          breakBefore: anchor.dataset.homeNarrativeBreak === 'true',
+          join: anchor.dataset.homeNarrativeJoin === 'orthogonal' ? 'orthogonal' : 'straight',
+          node: anchor.hasAttribute('data-home-narrative-node'),
         };
       });
 
@@ -115,6 +135,16 @@ export default function HomeNarrativeRail() {
       progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
 
       const rootDocumentY = window.scrollY + rootRect.top;
+      nodes.replaceChildren();
+      nodeEntries = points.filter((point) => point.node).map((point) => {
+        const element = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        element.setAttribute('cx', String(point.x));
+        element.setAttribute('cy', String(point.y));
+        element.setAttribute('r', '5');
+        element.setAttribute('class', styles.narrativeRailNode);
+        nodes.append(element);
+        return { element, documentY: rootDocumentY + point.y };
+      });
       startDocumentY = rootDocumentY + points[0].y;
       endDocumentY = rootDocumentY + points.at(-1)!.y;
       svg.dataset.ready = 'true';
@@ -151,6 +181,7 @@ export default function HomeNarrativeRail() {
       >
         <path ref={basePathRef} className={styles.narrativeRailBase} />
         <path ref={progressPathRef} className={styles.narrativeRailProgress} />
+        <g ref={nodesRef} />
       </svg>
       <span ref={pulseRef} className={styles.narrativeRailPulse} aria-hidden="true" />
     </>

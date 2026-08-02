@@ -141,7 +141,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className={styles.heroThread} data-home-narrative-anchor data-home-narrative-track="center" aria-hidden="true">
+        <div className={styles.heroThread} aria-hidden="true">
           <span>Tu meta</span>
           <i />
           <small>scroll</small>
@@ -193,12 +193,10 @@ export default function HomePage() {
       </nav>
 
       <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
-        <div className={styles.openingThread} data-home-narrative-anchor data-home-narrative-track="center" aria-hidden="true">
+        <div className={styles.openingThread} aria-hidden="true">
           <i />
           <span />
         </div>
-        <i className={styles.openingBypassEntry} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
-        <i className={styles.openingBypassExit} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
 
         <div className={styles.searchFilm} aria-hidden="true">
           <SearchScrollVideo
@@ -281,7 +279,7 @@ export default function HomePage() {
             stepProfile="method"
           />
           <div className={styles.methodFilmWash} />
-          <div className={styles.methodHandoff} data-home-narrative-anchor data-home-narrative-track="media"><i /></div>
+          <div className={styles.methodHandoff}><i /></div>
           <div className={styles.methodFilmGuide}>
             <span>Tu meta</span>
             <i />
@@ -377,7 +375,7 @@ export default function HomePage() {
           Esta secuencia representa el proceso. Los resultados reales se mostrarán
           con contexto suficiente e identidad protegida.
         </p>
-        <i className={styles.proofNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="media" aria-hidden="true" />
+        <i className={styles.proofNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="media" data-home-narrative-node data-home-narrative-break="true" aria-hidden="true" />
       </section>
 
       <section
@@ -400,7 +398,7 @@ export default function HomePage() {
 
           <div className={styles.examNetwork} aria-label="Exámenes disponibles en WeLearn">
             <div className={styles.examNetworkSource} aria-hidden="true">
-              <i className={styles.examNarrativeAnchor} data-home-narrative-anchor />
+              <i className={styles.examNarrativeAnchor} data-home-narrative-anchor data-home-narrative-node />
               <span>Tu meta</span>
               <strong>una prueba concreta</strong>
             </div>
@@ -422,13 +420,13 @@ export default function HomePage() {
           WeLearn es una academia independiente. Los nombres de los exámenes identifican
           la preparación disponible y no implican patrocinio ni aval de sus organizaciones.
         </p>
-        <i className={styles.examNarrativeExit} data-home-narrative-anchor data-home-narrative-track="media" aria-hidden="true" />
+        <i className={styles.examNarrativeExit} data-home-narrative-anchor data-home-narrative-track="media" data-home-narrative-node aria-hidden="true" />
       </section>
 
       <section id="plataforma" className={styles.systemSection} aria-labelledby="system-title">
         <i className={styles.systemNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="media" aria-hidden="true" />
-        <i className={styles.systemNarrativeBypass} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
-        <i className={styles.systemNarrativeExit} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
+        <i className={styles.systemNarrativeBypass} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-join="orthogonal" data-home-narrative-node aria-hidden="true" />
+        <i className={styles.systemNarrativeExit} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-node aria-hidden="true" />
         <div className={styles.systemHeader}>
           <p className={styles.eyebrow}>La ruta se convierte en herramientas reales</p>
           <h2 id="system-title">Cursos, práctica y simulacros conectados con lo que necesitas lograr.</h2>
@@ -447,6 +445,7 @@ export default function HomePage() {
         <div id="habilidades" className={styles.systemFlow}>
           {PRODUCT_AREAS.map((area, index) => (
             <article key={area.title}>
+              <i className={styles.systemFlowNarrativeNode} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-node aria-hidden="true" />
               <span>{String(index + 1).padStart(2, '0')}</span>
               <div>
                 <p>{area.eyebrow}</p>
@@ -464,6 +463,7 @@ export default function HomePage() {
       <HomeResultsArchive />
 
       <section id="rutas" className={styles.routesSection} aria-labelledby="routes-title">
+        <i className={styles.routesNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-node aria-hidden="true" />
         <div className={styles.routesIntro}>
           <p className={styles.eyebrow}>Elige según tu objetivo</p>
           <h2 id="routes-title">¿Qué necesitas lograr con el idioma?</h2>
@@ -473,8 +473,9 @@ export default function HomePage() {
           </p>
         </div>
         <div className={styles.routeChoices}>
-          {INTENTIONS.map((intent) => (
+          {INTENTIONS.map((intent, index) => (
             <Link href={intent.href} key={intent.code}>
+              {index === 0 ? <i className={styles.routeChoiceNarrativeNode} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-node aria-hidden="true" /> : null}
               <span>{intent.code}</span>
               <div>
                 <h3>{intent.label}</h3>
