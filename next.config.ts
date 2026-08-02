@@ -125,6 +125,131 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  async redirects() {
+    // ── Migración de slugs de gramática ─────────────────────────────────────
+    // Las lecciones se renombraron del español al idioma que se enseña
+    // (`verbo-to-be` -> `verb-to-be`, `la-negacion` -> `negazione`, ...) sin dejar
+    // redirecciones. Google seguía indexando las URLs viejas, así que 75 páginas
+    // que ya tenían posición devolvían 404.
+    //
+    // El caso más caro: `verbo-to-be` recibía 125 impresiones en posición 9,03 con
+    // CERO clics — quien entraba se estrellaba contra un 404. Su reemplazo,
+    // `verb-to-be`, con el mismo contenido, apenas tenía 13 impresiones.
+    //
+    // Medido en Search Console del 18 al 29 de julio de 2026. Los 69 destinos se
+    // comprobaron devolviendo 200 el 2026-08-01.
+    //
+    // AL RENOMBRAR EL SLUG DE UNA LECCIÓN, AÑADIR AQUÍ SU REDIRECCIÓN.
+    const g = (lang: string, lvl: string, from: string, to: string) => ({
+      source: `/practica/${lang}/${lvl}/gramatica/${from}`,
+      destination: `/practica/${lang}/${lvl}/gramatica/${to}`,
+      permanent: true,
+    });
+    const idx = (lang: string, lvl: string, from: string) => ({
+      source: `/practica/${lang}/${lvl}/gramatica/${from}`,
+      destination: `/practica/${lang}/${lvl}/gramatica`,
+      permanent: true,
+    });
+
+    return [
+      // Alemán A1
+      g('aleman', 'a1', 'acusativo', 'akkusativ'),
+      g('aleman', 'a1', 'articulos-der-die-das', 'artikel'),
+      g('aleman', 'a1', 'posesivos', 'possessivpronomen'),
+      g('aleman', 'a1', 'pronombres-personales', 'personalpronomen'),
+      g('aleman', 'a1', 'sein-haben', 'verb-sein'),
+      g('aleman', 'a1', 'verbos-modales', 'modalverben'),
+      g('aleman', 'a1', 'verbos-regulares-presente', 'prasens-regelmaessig'),
+
+      // Coreano A1
+      g('coreano', 'a1', 'haber-tener-isseoyo-eopseoyo', 'isseoyo-eopsoyo'),
+      g('coreano', 'a1', 'hangeul-alfabeto-coreano', 'hangul-basico'),
+      g('coreano', 'a1', 'negacion-an-ji-anhayo', 'negacion'),
+      g('coreano', 'a1', 'numeros-coreanos-sino-nativos', 'numeros-sino-coreanos'),
+      g('coreano', 'a1', 'particula-objeto-eul-reul', 'marcador-objeto'),
+      g('coreano', 'a1', 'pasado-asseoyo-eosseoyo', 'pasado-asseoyo'),
+      g('coreano', 'a1', 'querer-go-sipeoyo', 'querer-goshipda'),
+      g('coreano', 'a1', 'ser-copula-ieyo-yeyo', 'ieoyo-yeyo'),
+
+      // Francés A1
+      g('frances', 'a1', 'adjetivos-posesivos', 'adjectifs-possessifs'),
+      g('frances', 'a1', 'articulos-definidos-indefinidos', 'articles'),
+      g('frances', 'a1', 'articulos-partitivos', 'articles'),
+      g('frances', 'a1', 'la-negacion', 'negation-ne-pas'),
+      g('frances', 'a1', 'preguntas', 'questions'),
+      g('frances', 'a1', 'preposiciones-lugar-pais', 'prepositions-lieu'),
+      g('frances', 'a1', 'pronombres-sujeto', 'pronoms-sujet'),
+      g('frances', 'a1', 'verbo-etre', 'verbe-etre'),
+      g('frances', 'a1', 'verbos-er-presente', 'present-verbes-er'),
+      g('frances', 'a1', 'verbos-irregulares-aller-faire-venir', 'verbes-irreguliers'),
+
+      // Inglés A1
+      g('ingles', 'a1', 'adjetivos-posesivos', 'possessive-adjectives'),
+      g('ingles', 'a1', 'adverbios-de-frecuencia', 'adverbs-frequency'),
+      g('ingles', 'a1', 'can-cant', 'can-ability'),
+      g('ingles', 'a1', 'demostrativos-this-that', 'demonstratives'),
+      g('ingles', 'a1', 'preposiciones-de-lugar', 'prepositions-place'),
+      g('ingles', 'a1', 'preposiciones-de-tiempo', 'prepositions-time'),
+      g('ingles', 'a1', 'present-simple-afirmativo-negativo', 'present-simple-affirmative'),
+      g('ingles', 'a1', 'present-simple-preguntas', 'present-simple-questions'),
+      g('ingles', 'a1', 'verbo-to-be', 'verb-to-be'),
+
+      // Inglés A2
+      g('ingles', 'a2', 'superlativos', 'superlatives'),
+
+      // Italiano A1
+      g('italiano', 'a1', 'adjetivos-posesivos', 'aggettivi-possessivi'),
+      g('italiano', 'a1', 'concordancia-adjetivos', 'aggettivi-qualificativi'),
+      g('italiano', 'a1', 'genero-numero-nombres', 'genere-numero'),
+      g('italiano', 'a1', 'la-negacion', 'negazione'),
+      g('italiano', 'a1', 'preguntas', 'domande-interrogativi'),
+      g('italiano', 'a1', 'preposiciones-articuladas', 'preposizioni-articolate'),
+      g('italiano', 'a1', 'pronombres-sujeto', 'pronomi-soggetto'),
+      g('italiano', 'a1', 'verbos-are', 'presente-verbi-are'),
+      g('italiano', 'a1', 'verbos-irregulares-andare-fare-venire', 'verbi-irregolari'),
+
+      // Japonés A1
+      g('japones', 'a1', 'adjetivos-i', 'i-keiyoshi'),
+      g('japones', 'a1', 'adjetivos-na', 'na-keiyoshi'),
+      g('japones', 'a1', 'arimasu-imasu-existencia', 'arimasu-imasu'),
+      g('japones', 'a1', 'hiragana-katakana', 'hiragana-basico'),
+      g('japones', 'a1', 'negacion-masen-kunai-janai', 'negacion-completa'),
+      g('japones', 'a1', 'palabras-interrogativas', 'interrogativos-ka'),
+      g('japones', 'a1', 'particula-o-objeto', 'particula-wo-ni'),
+      g('japones', 'a1', 'particulas-ni-e-de', 'particula-de-e'),
+      g('japones', 'a1', 'querer-tai-y-pedir-tekudasai', 'tai-form'),
+      g('japones', 'a1', 'verbos-masu-presente', 'masu-kei-conjugacion'),
+      g('japones', 'a1', 'wa-desu-copula', 'desu-masu'),
+
+      // Portugués A1
+      g('portugues', 'a1', 'ha-tem', 'ha-tem-existe'),
+      g('portugues', 'a1', 'perguntas', 'perguntas-interrogativas'),
+      g('portugues', 'a1', 'verbo-estar', 'ser-e-estar'),
+      g('portugues', 'a1', 'verbo-ser', 'ser-e-estar'),
+      g('portugues', 'a1', 'verbos-ar', 'presente-verbos-ar'),
+      g('portugues', 'a1', 'verbos-er-ir', 'presente-verbos-er-ir'),
+
+      // Ruso A1
+      g('ruso', 'a1', 'futuro-y-verbos-de-movimiento', 'futuro-byt'),
+      g('ruso', 'a1', 'genero-de-los-sustantivos', 'genero-sustantivos'),
+      g('ruso', 'a1', 'negacion-ne-net', 'negacion-ne'),
+      g('ruso', 'a1', 'numeros-y-edad', 'numeros'),
+      g('ruso', 'a1', 'palabras-interrogativas', 'preguntas-vopros'),
+      g('ruso', 'a1', 'posesivos-moy-moya-moyo', 'adjetivos-posesivos'),
+      g('ruso', 'a1', 'presente-primera-conjugacion', 'presente-verbos'),
+      g('ruso', 'a1', 'pronombres-y-omision-de-ser', 'pronombres-personales'),
+
+      // Sin equivalente actual: el tema se retiró, no se renombró. Van al índice de
+      // su nivel, que es lo más cercano — la persona ve la lista y elige.
+      idx('aleman', 'a1', 'orden-de-palabras'),
+      idx('coreano', 'a1', 'demostrativos-i-geu-jeo'),
+      idx('coreano', 'a1', 'imperativo-cortes-euseyo'),
+      idx('frances', 'a1', 'il-y-a-c-est'),
+      idx('japones', 'a1', 'demostrativos-kore-sore-are'),
+      idx('japones', 'a1', 'pasado-mashita-deshita'),
+    ];
+  },
 };
 
 export default nextConfig;
