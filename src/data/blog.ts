@@ -1373,6 +1373,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 </ul>
 <p>Si migrar a Canadá es tu objetivo y necesitas prepararte para el IELTS General Training, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a>. La clase de diagnóstico gratis identifica en cuánto tiempo puedes alcanzar el puntaje que necesitas según tu nivel actual.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/ielts-academic-vs-general-training">IELTS Academic vs General Training: ¿cuál necesitas tomar?</a>.</p>
+<p>El puntaje de inglés es solo una parte del proceso. Si además estás resolviendo el trámite en sí —qué visa te corresponde, qué documentos pide y cómo se presenta—, nuestro equipo de <a href="https://www.asesoriaenvisas.com/visas/canada" target="_blank" rel="noopener">Asesoría en Visas cubre el proceso migratorio a Canadá</a>. Aquí nos ocupamos del idioma; allí, del expediente.</p>
     `,
   },
   {
@@ -1685,6 +1686,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 </ol>
 <p>Si trabajar en EE.UU. o en una empresa americana desde Colombia es tu meta, puedes <a href="/clases-de-ingles">conocer cómo preparamos en WeLearn</a> — el programa incluye inglés profesional y preparación para certificaciones IELTS y TOEFL según tu objetivo específico.</p>
 <p>Lee también: <a href="/blog/ingles-para-trabajar-en-empresas-multinacionales">Inglés para trabajar en empresas multinacionales en Colombia</a> y <a href="/blog/ingles-para-enfermeras-colombianas">Inglés para enfermeras colombianas que quieren trabajar en el exterior</a>.</p>
+<p>Si además del inglés estás resolviendo la visa, la parte del trámite —el DS-160, la cita y la entrevista consular— está cubierta en <a href="https://www.asesoriaenvisas.com/visas/estados-unidos" target="_blank" rel="noopener">la sección de visas de Estados Unidos de Asesoría en Visas</a>.</p>
     `,
   },
   {
@@ -5150,6 +5152,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>WeLearn y Express Entry</h2>
 <p>Preparamos candidatos para IELTS General Training con foco específico en los puntajes que maximizan el CRS. Si tu objetivo es CLB 9 (IELTS 7.0–8.0 por módulo), contáctanos: diseñamos un plan de preparación con fecha objetivo de examen. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20General%20para%20Express%20Entry%20de%20Canad%C3%A1.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/ingles-para-migrar-a-nueva-zelanda-ielts">Inglés para migrar a Nueva Zelanda con IELTS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
+<p>El puntaje de idioma es el componente que más CRS aporta, pero no es el único paso. El resto del proceso —perfil, documentos y presentación— está explicado en <a href="https://www.asesoriaenvisas.com/visas/canada" target="_blank" rel="noopener">la guía de Canadá de Asesoría en Visas</a>.</p>
     `,
   },
 
@@ -5648,6 +5651,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>WeLearn y la preparación IELTS para Australia</h2>
 <p>Preparamos IELTS General Training con foco en los módulos que más impactan el puntaje SkillSelect. Si tu objetivo es IELTS 8.0, el plan de preparación es diferente al de alguien que busca 6.5 para una maestría. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20migrar%20a%20Australia%20y%20necesito%20llegar%20a%208.0.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">Cuéntanos tu situación por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/ingles-para-canada-express-entry-requisitos-2026">Inglés para Canada Express Entry: CLB, IELTS y CRS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
+<p>Los puntos de inglés se suman a los del sistema general de la visa. Para la parte del trámite —elegir la subclase correcta, reunir documentos y presentar la solicitud— puedes ver la <a href="https://www.asesoriaenvisas.com/visas/australia" target="_blank" rel="noopener">guía de visas para Australia de Asesoría en Visas</a>.</p>
     `,
   },
 
