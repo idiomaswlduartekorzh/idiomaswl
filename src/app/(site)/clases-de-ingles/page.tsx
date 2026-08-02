@@ -606,6 +606,8 @@ export default function ClasesDeInglesPage() {
         intro="WeLearn es una academia de idiomas con sede en Bucaramanga. Si estás en la ciudad o en el área metropolitana puedes estudiar inglés presencialmente con nosotros; si prefieres no desplazarte —o vives en otra ciudad— la misma clase, con el mismo tutor y el mismo plan, se hace por videollamada."
         presencial="Clases cara a cara con tutor asignado. Y una ventaja concreta si vas por certificación: el IELTS y el TOEFL sí se aplican en Bucaramanga, así que puedes prepararte y presentarte sin salir de la ciudad."
         waText="Hola, estoy en Bucaramanga y quiero saber sobre las clases de inglés presenciales. ¿Cómo funcionan?"
+        moreHref="/clases-de-ingles-bucaramanga"
+        moreLabel="Ver todo sobre las clases de inglés en Bucaramanga: horarios, sede y modalidades"
       />
 
       {/* ── PRACTICA GRATIS ─────────────────────────────────────────────── */}

@@ -531,6 +531,7 @@ export default function ClasesDeCoreanoPage() {
               { href: '/practica/coreano/a1/escucha', title: 'Comprensión auditiva', desc: 'Audio a velocidad real con preguntas de comprensión, desde nivel principiante.' },
               { href: '/practica/coreano/a1/escritura', title: 'Escritura', desc: 'Escribe en Hangul con modelo de nivel para comparar tu respuesta.' },
               { href: '/practica/coreano/a1/habla', title: 'Expresión oral', desc: 'Frases y estructuras para hablar desde el principio, con pronunciación modelo.' },
+              { href: '/aprende-coreano/palabras-compuestas', title: 'Palabras compuestas (합성어)', desc: 'Cómo el coreano fabrica palabras nuevas juntando dos: entiendes decenas de términos sin memorizarlos uno a uno.' },
               { href: '/practica/vocabulario-coreano', title: 'Vocabulario con imágenes', desc: 'Ve la imagen, escucha el audio y elige la palabra. Doce palabras clave para descubrir tu nivel A1.' },
               { href: '/examenes/topik/practica/set-1', title: 'Diagnóstico TOPIK', desc: 'Treinta preguntas al estilo del examen oficial, con tu nivel estimado al final.' },
             ]}

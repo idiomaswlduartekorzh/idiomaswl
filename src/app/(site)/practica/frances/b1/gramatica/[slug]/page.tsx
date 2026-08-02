@@ -5,6 +5,7 @@ import { getTopicsByLevel, getTopicBySlug } from '@/data/grammar/registry'
 import { getWritingExercisesForGrammar } from '@/data/practica/writing-integrated'
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import TopicNav from '@/components/grammar/TopicNav'
 
 const IDIOMA = 'frances'
 const NIVEL = 'b1'
@@ -148,16 +149,7 @@ export default async function GrammarTopicPage({ params }: Props) {
 
           <GrammarTopicClient topic={topic} idioma={IDIOMA} nivel={NIVEL} relatedWritingExercises={getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)} />
 
-          <nav className="topic-nav" aria-label="Navegación de temas">
-            <Link href={`/practica/${IDIOMA}/${NIVEL}/gramatica`} className="topic-nav__link">
-              <span>← Todos los temas</span>
-              <strong>Gramática B1</strong>
-            </Link>
-            <div className="topic-nav__link next" style={{ border: '1.5px solid var(--line-soft)', borderRadius: 8, background: 'var(--surface)', padding: '1rem', textAlign: 'right' }}>
-              <span>Próximamente</span>
-              <strong>Siguiente tema</strong>
-            </div>
-          </nav>
+          <TopicNav idioma={IDIOMA} nivel={NIVEL} slug={topic.slug} indexLabel="Gramática B1" />
         </div>
       </div>
     </>

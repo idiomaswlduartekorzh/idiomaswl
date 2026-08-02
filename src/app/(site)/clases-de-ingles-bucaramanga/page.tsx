@@ -17,10 +17,14 @@ const WA_PAQUETE  = wa('Hola, me interesa un paquete de horas de inglés con WeL
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Clases de Inglés en Bucaramanga — Academia WeLearn | IELTS, TOEFL, ICFES',
+  // Search Console (18-29 jul 2026): lo que la gente teclea es «cursos de ingles en
+  // bucaramanga presenciales» y «cursos de ingles bucaramanga presencial». El title
+  // anterior no contenía ni «cursos» ni «presenciales».
+  title: 'Cursos de inglés en Bucaramanga presenciales y online — Academia WeLearn',
   description:
-    'Academia de inglés en Bucaramanga con clases presenciales y online. Preparación certificada para IELTS, TOEFL e ICFES Saber 11. Clase de diagnóstico gratis. Paquetes de horas con descuento.',
+    'Academia de inglés con sede física en Bucaramanga, barrio Sotomayor: cursos presenciales y también online. Preparación para IELTS, TOEFL e ICFES con tutor asignado. Diagnóstico de nivel gratis.',
   keywords: [
+    'cursos de inglés en Bucaramanga presenciales', 'clases de inglés presenciales Bucaramanga',
     'clases de inglés en Bucaramanga', 'academia de inglés Bucaramanga',
     'inglés Bucaramanga', 'curso de inglés Bucaramanga', 'IELTS Bucaramanga',
     'TOEFL Bucaramanga', 'preparación IELTS Bucaramanga', 'inglés online Bucaramanga',
@@ -28,14 +32,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga' },
   openGraph: {
-    title: 'Clases de Inglés en Bucaramanga — Academia WeLearn',
-    description: 'Academia de inglés en Bucaramanga con clases online para toda Colombia. Preparación IELTS, TOEFL e ICFES. Diagnóstico gratis. Paquetes con descuento.',
+    title: 'Cursos de inglés en Bucaramanga, presenciales y online — WeLearn',
+    description: 'Sede física en el barrio Sotomayor. Cursos presenciales en Bucaramanga y también online. Preparación IELTS, TOEFL e ICFES. Diagnóstico gratis.',
     url: 'https://www.idiomaswl.com/clases-de-ingles-bucaramanga',
   },
 };
 
 // ── JSON-LD ───────────────────────────────────────────────────────────────────
-const jsonLd = {
+const buildJsonLd = () => ({
   '@context': 'https://schema.org',
   '@graph': [
     localBusinessNode(
@@ -48,41 +52,7 @@ const jsonLd = {
       'Co-fundadora y directora académica de WeLearn. Estudió en Inglaterra y en Francia, y lidera el diseño curricular y la preparación de IELTS, TOEFL y Cambridge.',
       ['en', 'es', 'fr', 'ru']
     ),
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: '¿Hay clases de inglés presenciales en Bucaramanga con WeLearn?',
-          acceptedAnswer: { '@type': 'Answer', text: 'WeLearn tiene sede en Bucaramanga y ofrece clases de inglés presenciales para estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, además de clases online por videollamada para el resto de Colombia y del mundo. Ambas modalidades tienen la misma rigurosidad: tutor asignado, plan personalizado y evaluación continua, y se puede alternar entre ellas.' },
-        },
-        {
-          '@type': 'Question',
-          name: '¿Cuánto cuestan las clases de inglés en Bucaramanga con WeLearn?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso. Se consulta por WhatsApp al 300 500 4253.' },
-        },
-        {
-          '@type': 'Question',
-          name: '¿WeLearn prepara para el IELTS y TOEFL desde Bucaramanga?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Sí. Tenemos una ruta de preparación específica para IELTS Academic, IELTS General Training y TOEFL iBT. Incluye simulacros completos, retroalimentación por sección, material de estudio y sesiones en vivo con tutor. Nuestros estudiantes en Bucaramanga han alcanzado Band 7.0+ en IELTS y 90+ puntos en TOEFL.' },
-        },
-        {
-          '@type': 'Question',
-          name: '¿Venden paquetes de horas de inglés con descuento?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Sí. Además de los planes mensuales, ofrecemos paquetes de clases prepago (4, 10 y 20 horas) con un precio por hora más bajo mientras más horas compras. Es ideal para quienes no quieren un plan mensual fijo. Escríbenos por WhatsApp para ver las opciones actuales.' },
-        },
-        {
-          '@type': 'Question',
-          name: '¿Qué diferencia a WeLearn de otras academias de inglés en Bucaramanga?',
-          acceptedAnswer: { '@type': 'Answer', text: 'WeLearn es la única academia en Bucaramanga con directora académica con doctorado, profesor políglota en 8 idiomas y método propio de 17 pasos diseñado específicamente para hispanohablantes. No hacemos grupos masivos — cada estudiante tiene plan individual y tutor asignado. Además somos especialistas en preparación de exámenes internacionales (IELTS, TOEFL, ICFES).' },
-        },
-        {
-          '@type': 'Question',
-          name: '¿Puedo tomar clases de inglés si vivo en Floridablanca, Girón o Piedecuesta?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Sí, perfectamente. Todas las clases son online por videollamada, así que atendemos a estudiantes en todo el área metropolitana de Bucaramanga: Floridablanca, Girón, Piedecuesta y Lebrija. Sin necesidad de desplazarte.' },
-        },
-      ],
-    },
+    faqPageNode(),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -92,7 +62,7 @@ const jsonLd = {
       ],
     },
   ],
-};
+});
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 const PAQUETES = [
@@ -149,13 +119,32 @@ const FAQS_LOCAL = [
   },
 ];
 
+/**
+ * FAQPage derivado del MISMO arreglo que se pinta en pantalla.
+ *
+ * Antes estaba escrito a mano, aparte, y ya había divergido: el marcado decía
+ * «¿Hay clases de inglés presenciales...» y lo visible «¿Hay clases presenciales
+ * de inglés...». Esa diferencia entre lo que ve Google y lo que ve la persona es
+ * justo lo que se penaliza. Ahora una pregunta se escribe una sola vez.
+ */
+function faqPageNode() {
+  return {
+    '@type': 'FAQPage',
+    mainEntity: FAQS_LOCAL.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+}
+
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default function ClasesInglessBucaramangaPage() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd()) }}
       />
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
@@ -169,16 +158,17 @@ export default function ClasesInglessBucaramangaPage() {
                 Academia de inglés · Bucaramanga y Área Metropolitana
               </p>
               <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 3rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.02em', color: 'var(--ink)', marginBottom: '1.25rem' }}>
-                Clases de inglés<br />
-                en Bucaramanga<br />
-                <span style={{ color: 'var(--accent)' }}>que sí funcionan.</span>
+                Cursos de inglés<br />
+                en Bucaramanga,<br />
+                <span style={{ color: 'var(--accent)' }}>presenciales u online.</span>
               </h1>
               <p style={{ fontSize: '1.05rem', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '0.75rem', maxWidth: 440 }}>
-                Preparación para IELTS, TOEFL e ICFES con tutor asignado. Método propio de 17 pasos.
-                Clases online para todo Bucaramanga, Floridablanca, Girón y Piedecuesta.
+                Tenemos <strong style={{ color: 'var(--ink)' }}>sede física en el barrio Sotomayor</strong>, Calle 47 # 29-33.
+                Ven presencialmente, toma las clases online, o combina las dos según te cuadre la semana.
+                Atendemos Bucaramanga, Floridablanca, Girón y Piedecuesta.
               </p>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6, marginBottom: '2rem', maxWidth: 440 }}>
-                También vendemos <strong style={{ color: 'var(--ink)' }}>paquetes de horas</strong> prepago con mejor precio por hora.
+                Preparación para IELTS, TOEFL e ICFES con tutor asignado y método propio de 17 pasos.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
                 <a
