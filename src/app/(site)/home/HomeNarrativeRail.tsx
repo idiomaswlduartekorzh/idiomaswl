@@ -97,7 +97,7 @@ export default function HomeNarrativeRail() {
         ? 8
         : Math.max(10, (root.clientWidth - 1240) / 2 - 22);
       const mediaTrack = root.clientWidth < 760 ? centerTrack : root.clientWidth * 0.42;
-      const points: NarrativePoint[] = anchors.map((anchor) => {
+      const points = anchors.map<NarrativePoint>((anchor) => {
         const rect = anchor.getBoundingClientRect();
         const naturalX = rect.left - rootRect.left + rect.width / 2;
         const track = anchor.dataset.homeNarrativeTrack;
@@ -117,7 +117,7 @@ export default function HomeNarrativeRail() {
           join: anchor.dataset.homeNarrativeJoin === 'orthogonal' ? 'orthogonal' : 'straight',
           node: anchor.hasAttribute('data-home-narrative-node'),
         };
-      });
+      }).sort((a, b) => a.y - b.y);
 
       if (points.length < 2) return;
 
