@@ -7,7 +7,6 @@ import {
   ANSWERS,
   EVIDENCE_STEPS,
   EXAMS,
-  FOUNDERS,
   HOME_META,
   INTENTIONS,
   LANGUAGES,
@@ -54,33 +53,33 @@ export default function HomePage() {
         <div className={styles.heroWash} aria-hidden="true" />
         <div className={styles.heroInner}>
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>Academia de idiomas · Bucaramanga y online</p>
+              <p className={styles.eyebrow}>Clases de inglés y otros idiomas · Bucaramanga y online</p>
             <h1 id="home-title">
-              Clases de idiomas
-              <em> con una ruta</em>
-              {' '}<span>para tu meta.</span>
+              Aprende inglés
+              <em> y otros idiomas</em>
+              {' '}<span>con una ruta creada por políglotas.</span>
             </h1>
             <p className={styles.heroDescription}>
-              Aprende inglés y otros idiomas presencialmente en Bucaramanga u online,
-              con diagnóstico, práctica y preparación de exámenes conectados con lo
-              que ya sabes y lo que quieres lograr.
+              Clases en Bucaramanga y online, guiadas por dos trayectorias poco comunes:
+              Zhanna es lingüista, enseña desde 2011 y habla seis idiomas; José David
+              aprendió ocho desde el español.
             </p>
             <div className={styles.heroExpertise} aria-label="Experiencia multilingüe de los fundadores">
               <article>
-                <strong>Lingüista</strong>
-                <span>Zhanna · cinco idiomas y estudios de doctorado</span>
+                <strong>Zhanna Korzh</strong>
+                <span>6 idiomas · lingüista · estudios doctorales</span>
               </article>
               <article>
-                <strong>8 idiomas</strong>
-                <span>José David · el método vivido desde el español</span>
+                <strong>José David Duarte</strong>
+                <span>8 idiomas · aprendidos desde el español</span>
               </article>
             </div>
             <div className={styles.actions}>
               <Link href="/nivel-radar" className={styles.primaryAction}>
-                Descubre tu punto de partida <ArrowIcon />
+                Conoce tu nivel <ArrowIcon />
               </Link>
-              <Link href="#historia" className={styles.secondaryAction}>
-                Mira cómo construimos la ruta
+              <Link href="#explora-welearn" className={styles.secondaryAction}>
+                Explora WeLearn
               </Link>
             </div>
             <p className={styles.heroNote}>
@@ -89,29 +88,53 @@ export default function HomePage() {
           </div>
 
           <div className={styles.heroPeople} aria-label="Zhanna y José David, cofundadores de WeLearn">
+            <div className={styles.heroConstellation} aria-hidden="true">
+              <svg viewBox="0 0 640 640" role="presentation">
+                <path className={styles.constellationOrbit} d="M109 332c0-151 95-244 230-244 130 0 216 91 216 218 0 137-99 245-244 245-119 0-202-80-202-219Z" />
+                <path className={styles.constellationRoute} d="M84 392C183 202 342 151 575 246M95 457c151-68 298-62 452 38M187 94c95 123 164 283 181 479" />
+                <g>
+                  <circle cx="111" cy="388" r="8" />
+                  <circle cx="188" cy="194" r="6" />
+                  <circle cx="332" cy="108" r="9" />
+                  <circle cx="494" cy="174" r="6" />
+                  <circle cx="560" cy="318" r="8" />
+                  <circle cx="493" cy="489" r="7" />
+                  <circle cx="303" cy="551" r="9" />
+                  <circle cx="152" cy="491" r="6" />
+                </g>
+                <g className={styles.constellationCodes}>
+                  <text x="76" y="373">ES</text>
+                  <text x="161" y="176">EN</text>
+                  <text x="309" y="82">DE</text>
+                  <text x="505" y="160">FR</text>
+                  <text x="576" y="323">IT</text>
+                  <text x="506" y="518">PT</text>
+                  <text x="279" y="590">KO</text>
+                  <text x="108" y="523">JA</text>
+                </g>
+              </svg>
+            </div>
             <div className={styles.heroPersonZhanna}>
               <Image
-                src="/images/home/zhanna-hero-cutout-v3.png"
+                src="/images/home/zhanna-hero-cutout-hq-v1.webp"
                 alt="Zhanna, cofundadora y directora académica de Idiomas WeLearn."
                 fill
                 priority
-                sizes="(max-width: 760px) 72vw, 430px"
+                unoptimized
+                sizes="(max-width: 760px) 72vw, (max-width: 1100px) 38vw, 540px"
                 className={styles.heroPersonImage}
               />
             </div>
             <div className={styles.heroPersonDavid}>
               <Image
-                src="/images/home/david-hero-cutout-v4.png"
+                src="/images/home/david-hero-cutout-hq-v1.webp"
                 alt="José David, cofundador de Idiomas WeLearn."
                 fill
                 priority
-                sizes="(max-width: 760px) 72vw, 460px"
+                unoptimized
+                sizes="(max-width: 760px) 76vw, (max-width: 1100px) 42vw, 580px"
                 className={styles.heroPersonImage}
               />
-            </div>
-            <div className={styles.founderCaption}>
-              <span>ZHANNA + JOSÉ DAVID</span>
-              <p>Formación pedagógica y experiencia multilingüe, sin fórmulas genéricas.</p>
             </div>
           </div>
         </div>
@@ -122,6 +145,50 @@ export default function HomePage() {
           <small>scroll</small>
         </div>
       </section>
+
+      <nav id="explora-welearn" className={styles.discoveryDock} aria-label="Explorar idiomas y exámenes de WeLearn">
+        <div className={styles.discoveryInner}>
+          <div className={styles.discoveryIntro}>
+            <p className={styles.eyebrow}>Todo WeLearn se conecta</p>
+            <h2>Ocho idiomas. Nueve rutas de certificación.</h2>
+            <p>Entra por lo que quieres aprender o por el resultado que necesitas demostrar.</p>
+          </div>
+
+          <section className={styles.discoveryGroup} aria-labelledby="language-directory-title">
+            <header>
+              <span>8 idiomas</span>
+              <h3 id="language-directory-title">Aprender y practicar</h3>
+            </header>
+            <div className={styles.discoveryLinks}>
+              {LANGUAGES.map((language) => (
+                <Link href={language.href} key={language.name}>
+                  <span><b>{language.name}</b><small>{language.type}</small></span>
+                  <ArrowIcon />
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          <section className={`${styles.discoveryGroup} ${styles.discoveryExams}`} aria-labelledby="exam-directory-title">
+            <header>
+              <span>9 familias</span>
+              <h3 id="exam-directory-title">Preparar una certificación</h3>
+            </header>
+            <div className={styles.discoveryLinks}>
+              {EXAMS.map((exam) => (
+                <Link href={exam.href} key={exam.name}>
+                  <span><b>{exam.name}</b><small>{exam.language}</small></span>
+                  <ArrowIcon />
+                </Link>
+              ))}
+            </div>
+          </section>
+          <p className={styles.discoveryDisclaimer}>
+            WeLearn es una academia independiente. Los nombres de los exámenes identifican
+            la preparación disponible y no implican patrocinio ni aval de sus organizaciones.
+          </p>
+        </div>
+      </nav>
 
       <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
         <div className={styles.openingThread} aria-hidden="true">
@@ -142,14 +209,14 @@ export default function HomePage() {
         </div>
 
         <div className={styles.openingInner}>
-          <p className={styles.eyebrow}>La historia empieza antes de la primera clase</p>
-          <h2 id="opening-title">La gente no busca “un idioma”. Busca que algo cambie.</h2>
+          <p className={styles.eyebrow}>Cada búsqueda empieza con una necesidad real</p>
+          <h2 id="opening-title">Buscas clases de inglés, alemán o un examen porque necesitas resolver algo concreto.</h2>
 
           <div id="search-scroll-sequence" className={styles.searchSequence}>
             <div className={styles.searchStage} aria-hidden="true">
               <div className={styles.searchScreen}>
                 <div className={styles.searchQueries}>
-                  <p className={styles.searchQueryOne}>vocabulario inglés ICFES</p>
+                  <p className={styles.searchQueryOne}>preparación IELTS Bucaramanga</p>
                   <p className={styles.searchQueryTwo}>profesor de inglés</p>
                   <p className={styles.searchQueryThree}>clases de alemán</p>
                   <p className={styles.searchQueryFour}>qué nivel de inglés tengo</p>
@@ -164,36 +231,36 @@ export default function HomePage() {
 
             <div className={styles.searchSteps} aria-label="Metas comunes al aprender un idioma">
               <article className={styles.searchStepOne}>
-                <span>01 · ESTUDIAR</span>
+                <span>01 · CERTIFICARTE</span>
                 <blockquote>“Necesito IELTS 7.5 para entrar a la universidad.”</blockquote>
-                <p>No buscas ejercicios sueltos. Buscas demostrar un nivel bajo condiciones concretas.</p>
+                <p>Necesitas demostrar un nivel bajo condiciones concretas, no acumular ejercicios sueltos.</p>
               </article>
               <article className={styles.searchStepTwo}>
                 <span>02 · COMUNICARTE</span>
-                <blockquote>“Entiendo inglés, pero cuando hablo me bloqueo.”</blockquote>
-                <p>No necesitas empezar de cero. Necesitas reconocer qué está frenando tu expresión.</p>
+                <blockquote>“Entiendo inglés, pero necesito hablar con seguridad.”</blockquote>
+                <p>No necesitas empezar de cero. Necesitas reconocer qué está frenando tu expresión y trabajarlo.</p>
               </article>
               <article className={styles.searchStepThree}>
                 <span>03 · TRABAJAR</span>
-                <blockquote>“Quiero aprender alemán para trabajar allá.”</blockquote>
-                <p>El idioma es el puente hacia una situación real, no el destino final.</p>
+                <blockquote>“Necesito alemán para trabajar o vivir allá.”</blockquote>
+                <p>El idioma es el puente hacia una situación real: entrevistas, documentos y conversaciones cotidianas.</p>
               </article>
               <article className={styles.searchStepFour}>
                 <span>04 · ORIENTARTE</span>
-                <blockquote>“No sé qué nivel tengo ni por dónde seguir.”</blockquote>
-                <p>Antes de recomendar una clase, hace falta construir un punto de partida.</p>
+                <blockquote>“No sé qué nivel tengo ni qué estudiar primero.”</blockquote>
+                <p>Antes de recomendarte una clase, necesitamos organizar un punto de partida.</p>
               </article>
             </div>
           </div>
 
           <p className={styles.openingAnswer}>
-            Por eso no empezamos mostrándote una lista de cursos. Empezamos
-            entendiendo la distancia entre <strong>dónde estás</strong> y
-            <strong> dónde quieres llegar.</strong>
+            WeLearn convierte esa necesidad en una ruta: primero entendemos
+            <strong> dónde estás</strong>, luego definimos
+            <strong> qué necesitas trabajar para llegar.</strong>
           </p>
           <p className={styles.dataNote}>
-            Cuatro búsquedas distintas. Una misma pregunta: ¿cómo convierto lo que sé hoy
-            en lo que necesito lograr?
+            Preparar IELTS, hablar con seguridad, aprender alemán o reconocer tu nivel
+            requieren recorridos distintos. La ruta empieza por la meta, no por una lista genérica de cursos.
           </p>
         </div>
       </section>
@@ -219,12 +286,12 @@ export default function HomePage() {
         </div>
 
         <div className={styles.storyIntro}>
-          <p className={styles.eyebrow}>La meta ya está visible. Ahora construimos la ruta.</p>
-          <h2 id="story-title">Un idioma avanza cuando cada práctica responde a una razón.</h2>
+          <p className={styles.eyebrow}>De una meta amplia a un siguiente paso concreto</p>
+          <h2 id="story-title">Primero sabemos dónde estás. Después trabajamos lo que te acerca a tu meta.</h2>
           <p>
-            La misma señal que reunió tus búsquedas se convierte en un proceso:
-            reconocer, comprender, practicar y corregir. La animación muestra la
-            transformación; estas palabras explican cada decisión.
+            No asignamos contenido al azar. Organizamos el proceso en cuatro decisiones:
+            reconocer el punto de partida, comprender la prioridad, practicar con un
+            propósito y corregir antes del siguiente intento.
           </p>
         </div>
 
@@ -277,11 +344,11 @@ export default function HomePage() {
         </div>
 
         <div className={styles.proofIntro}>
-          <p className={styles.eyebrow}>Después de corregir, debe quedar una señal</p>
-          <h2 id="proof-story-title">La práctica importa cuando permite ver qué cambió.</h2>
+          <p className={styles.eyebrow}>La ruta debe producir evidencia</p>
+          <h2 id="proof-story-title">El progreso se demuestra con intentos, feedback y resultados.</h2>
           <p>
-            Los ejercicios no son el resultado final. Sirven para observar una
-            habilidad, comparar intentos y decidir qué necesita el siguiente paso.
+            Un ejercicio aislado no demuestra avance. Lo útil es observar una habilidad,
+            comparar lo que cambió y acercar la práctica a la situación o al examen real.
           </p>
         </div>
 
@@ -308,63 +375,64 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section id="fundadores" className={styles.founderStory} aria-labelledby="founder-story-title">
-        <div className={styles.founderStoryCopy}>
-          <p className={styles.eyebrow}>Quiénes están detrás de la ruta</p>
-          <h2 id="founder-story-title">
-            No enseñamos desde la teoría solamente. También conocemos el camino.
-          </h2>
-          <p>
-            WeLearn nace del encuentro entre la formación lingüística de Zhanna y los años
-            de aprendizaje disciplinado de José David. Dos experiencias
-            diferentes con una misma obsesión: que la persona entienda qué está
-            construyendo y por qué.
-          </p>
-          <Link href="/quienes-somos" className={styles.textLink}>
-            Conoce nuestra formación y trayectoria <ArrowIcon />
-          </Link>
-        </div>
+      <section
+        id="examenes-disponibles"
+        className={styles.examReveal}
+        aria-labelledby="exam-reveal-title"
+      >
+        <div className={styles.examRevealInner}>
+          <div className={styles.examRevealHeader}>
+            <p className={styles.eyebrow}>La ruta se contrasta con una prueba concreta</p>
+            <h2 id="exam-reveal-title">La preparación cambia según el examen que necesitas presentar.</h2>
+            <p>
+              Cada certificación evalúa habilidades, tareas y criterios distintos.
+              Elige una familia para conocer la preparación y los simulacros publicados.
+            </p>
+            <Link href="/examenes" className={styles.textLink}>
+              Explorar todo el centro de exámenes <ArrowIcon />
+            </Link>
+          </div>
 
-        <div id="panorama-fundadores" className={styles.founderPanorama}>
-          <div className={styles.panoramaZhanna}>
-            <Image
-              src="/images/home/zhanna-hero-cutout-v3.png"
-              alt="Zhanna Korzh, cofundadora y directora académica de Idiomas WeLearn."
-              fill
-              sizes="(max-width: 760px) 100vw, 52vw"
-              className={styles.panoramaImage}
-            />
-          </div>
-          <div className={styles.panoramaDavid}>
-            <Image
-              src="/images/home/david-hero-cutout-v4.png"
-              alt="José David Duarte Silva, cofundador de Idiomas WeLearn."
-              fill
-              sizes="(max-width: 760px) 100vw, 52vw"
-              className={styles.panoramaImage}
-            />
-          </div>
-          <div className={styles.founderFacts}>
-            {FOUNDERS.map((founder, index) => (
-              <article key={founder.name}>
-                <span>{index === 0 ? 'PEDAGOGÍA' : 'EXPERIENCIA'}</span>
-                <h3>{founder.name}</h3>
-                <p>{founder.description}</p>
-                <small>{founder.languages.join(' · ')}</small>
-              </article>
-            ))}
+          <div className={styles.examNetwork} aria-label="Exámenes disponibles en WeLearn">
+            <div className={styles.examNetworkSource} aria-hidden="true">
+              <span>Tu meta</span>
+              <strong>una prueba concreta</strong>
+            </div>
+            <div className={styles.examRevealLinks}>
+              {EXAMS.map((exam) => (
+                <Link href={exam.href} key={exam.code}>
+                  <span>{exam.code}</span>
+                  <div>
+                    <strong>{exam.name}</strong>
+                    <small>{exam.language}</small>
+                  </div>
+                  <ArrowIcon />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
+        <p className={styles.examRevealDisclaimer}>
+          WeLearn es una academia independiente. Los nombres de los exámenes identifican
+          la preparación disponible y no implican patrocinio ni aval de sus organizaciones.
+        </p>
       </section>
 
       <section id="plataforma" className={styles.systemSection} aria-labelledby="system-title">
         <div className={styles.systemHeader}>
-          <p className={styles.eyebrow}>Lo que ya existe dentro de WeLearn</p>
-          <h2 id="system-title">La historia continúa dentro de la plataforma.</h2>
+          <p className={styles.eyebrow}>La ruta se convierte en herramientas reales</p>
+          <h2 id="system-title">Cursos, práctica y simulacros conectados con lo que necesitas lograr.</h2>
           <p>
-            La ruta no termina en una promesa. Se convierte en explicaciones,
-            ejercicios, práctica por habilidad, correcciones y simulacros.
+            WeLearn reúne explicaciones, ejercicios por habilidad, correcciones y
+            preparación de exámenes. El contenido publicado se organiza para que puedas
+            entrar por un idioma, una habilidad o una certificación.
           </p>
+        </div>
+        <div className={styles.systemFacts} aria-label="Inventario publicado de WeLearn">
+          <article><strong>8</strong><span>idiomas publicados</span></article>
+          <article><strong>465</strong><span>temas de práctica gramatical</span></article>
+          <article><strong>168</strong><span>prácticas y simulaciones registradas</span></article>
+          <article><strong>10</strong><span>cuadernillos oficiales ICFES</span></article>
         </div>
         <div className={styles.systemFlow}>
           {PRODUCT_AREAS.map((area, index) => (
@@ -385,13 +453,17 @@ export default function HomePage() {
 
       <section id="resultados" className={styles.evidenceSection} aria-labelledby="evidence-title">
         <div className={styles.evidenceCopy}>
-          <p className={styles.eyebrow}>Resultados, no promesas vacías</p>
-          <h2 id="evidence-title">El objetivo no es completar lecciones. Es estar listo.</h2>
+          <p className={styles.eyebrow}>Resultados oficiales con identidad protegida</p>
+          <h2 id="evidence-title">Resultados de estudiantes preparados para IELTS y TOEFL.</h2>
           <p>
             Estos recortes pertenecen a reportes oficiales de estudiantes de WeLearn.
             Publicamos únicamente la zona del puntaje: sin nombres, documentos ni números
             de candidato. Son resultados históricos verificables, no una promesa de nota.
           </p>
+          <div className={styles.evidenceActions}>
+            <Link href="/examenes/ielts" className={styles.textLink}>Preparación IELTS <ArrowIcon /></Link>
+            <Link href="/examenes/toefl" className={styles.textLink}>Preparación TOEFL <ArrowIcon /></Link>
+          </div>
         </div>
         <div className={styles.resultGrid} aria-label="Resultados oficiales anonimizados de estudiantes">
           <figure className={styles.resultCard}>
@@ -423,8 +495,8 @@ export default function HomePage() {
 
       <section id="rutas" className={styles.routesSection} aria-labelledby="routes-title">
         <div className={styles.routesIntro}>
-          <p className={styles.eyebrow}>Ahora sí: elige una puerta de entrada</p>
-          <h2 id="routes-title">¿Qué quieres que este idioma haga posible?</h2>
+          <p className={styles.eyebrow}>Elige según tu objetivo</p>
+          <h2 id="routes-title">¿Qué necesitas lograr con el idioma?</h2>
           <p>
             La misma metodología cambia de forma según tu meta. Entra por la
             pregunta que más se parece a la tuya.
@@ -442,50 +514,6 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-      </section>
-
-      <section className={styles.catalogSection} aria-labelledby="catalog-title">
-        <div className={styles.catalogIntro}>
-          <p className={styles.eyebrow}>Explora lo disponible</p>
-          <h2 id="catalog-title">Idiomas y exámenes que puedes trabajar hoy.</h2>
-          <p>
-            Cada página explica el nivel de profundidad disponible: clases,
-            práctica, tipos de tarea o simulacros.
-          </p>
-        </div>
-
-        <div className={styles.catalogColumns}>
-          <div>
-            <h3>Idiomas</h3>
-            <div className={styles.languageList}>
-              {LANGUAGES.map((language) => (
-                <Link href={language.href} key={language.name}>
-                  <span>{language.symbol}</span>
-                  <strong>{language.name}</strong>
-                  <em>{language.type}</em>
-                  <ArrowIcon />
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3>Preparación de exámenes</h3>
-            <div className={styles.examList}>
-              {EXAMS.map((exam) => (
-                <Link href={exam.href} key={exam.code}>
-                  <span>{exam.code}</span>
-                  <strong>{exam.name}</strong>
-                  <em>{exam.language}</em>
-                  <ArrowIcon />
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-        <p className={styles.catalogDisclaimer}>
-          WeLearn es una academia independiente. Los nombres de los exámenes
-          identifican la preparación disponible y no implican patrocinio o aval.
-        </p>
       </section>
 
       <section id="preguntas" className={styles.answersSection} aria-labelledby="answers-title">
@@ -509,24 +537,30 @@ export default function HomePage() {
 
       <section className={styles.finalSection} aria-labelledby="final-title">
         <div className={styles.finalThread} aria-hidden="true"><i /></div>
-        <p className={styles.eyebrow}>Tu historia empieza aquí</p>
-        <h2 id="final-title">No necesitas saber qué curso comprar. Primero necesitas saber dónde estás.</h2>
+        <p className={styles.eyebrow}>Elige el siguiente paso, no una promesa</p>
+        <h2 id="final-title">¿Ya sabes qué necesitas? Entra por tu meta. ¿Todavía no? Empieza por tu nivel.</h2>
         <p>
-          Haz el Nivel Radar o cuéntanos qué quieres lograr. El siguiente paso
-          debe responder a tu meta, no a una lista genérica de contenidos.
+          Puedes reconocer tu punto de partida, elegir un idioma o preparar una
+          certificación. Si necesitas orientación humana, cuéntanos tu caso.
         </p>
-        <div className={styles.actions}>
+        <div className={styles.finalChoices}>
           <Link href="/nivel-radar" className={styles.primaryAction}>
-            Conoce tu punto de partida <ArrowIcon />
+            Conocer mi nivel <ArrowIcon />
           </Link>
-          <a
-            href="https://wa.me/573005004253?text=Hola%20WeLearn%2C%20quiero%20contarles%20mi%20meta%20con%20un%20idioma."
-            className={styles.secondaryAction}
-            data-gtm="click_whatsapp"
-          >
-            Cuéntanos tu meta
-          </a>
+          <Link href="/clases-de-idiomas" className={styles.secondaryAction}>
+            Elegir un idioma <ArrowIcon />
+          </Link>
+          <Link href="/examenes" className={styles.secondaryAction}>
+            Preparar un examen <ArrowIcon />
+          </Link>
         </div>
+        <a
+          href="https://wa.me/573005004253?text=Hola%20WeLearn%2C%20quiero%20contarles%20mi%20meta%20con%20un%20idioma."
+          className={styles.finalHelp}
+          data-gtm="click_whatsapp"
+        >
+          ¿No sabes cuál elegir? Cuéntanos tu meta por WhatsApp <ArrowIcon />
+        </a>
       </section>
     </div>
   );

@@ -840,7 +840,7 @@ button {
   color: var(--ink);
 }
 .wl-site-nav__mobile-link:hover { background: var(--bg-2); }
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .wl-site-nav__links, .wl-site-nav__cta { display: none; }
   .wl-site-nav__toggle { display: flex; }
 }

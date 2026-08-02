@@ -1,11 +1,11 @@
 export const HOME_META = {
-  title: 'Academia de idiomas en Bucaramanga y online | WeLearn',
+  title: 'Clases de inglés e idiomas en Bucaramanga y online | WeLearn',
   description:
-    'Clases de inglés y otros idiomas en Bucaramanga y online, con rutas guiadas por educadores multilingües, práctica y preparación de exámenes.',
+    'Clases de inglés y otros idiomas en Bucaramanga y online, guiadas por una lingüista que habla seis idiomas y un políglota que aprendió ocho desde el español.',
   canonical: 'https://www.idiomaswl.com/',
-  ogTitle: 'Clases de idiomas que conectan tu nivel con tu meta | WeLearn',
+  ogTitle: 'Clases de inglés y otros idiomas con profesores políglotas | WeLearn',
   ogDescription:
-    'Reconoce tu punto de partida y encuentra clases, práctica y preparación de exámenes guiadas por experiencia pedagógica y multilingüe.',
+    'Conoce tu punto de partida y conecta clases, práctica y preparación de exámenes con una meta concreta.',
 } as const;
 
 export const INTENTIONS = [
@@ -50,9 +50,9 @@ export const INTENTIONS = [
 export const ROUTE_STEPS = [
   {
     step: 'Reconocer',
-    title: '¿Dónde estoy realmente?',
+    title: 'Tu punto de partida, antes de recomendarte una ruta.',
     description:
-      'Nivel Radar explora vocabulario, uso de la lengua, lectura y escucha para ofrecerte un punto de partida orientativo.',
+      'Nivel Radar explora vocabulario, uso de la lengua, lectura y escucha. No entrega una certificación: organiza lo que ya sabes y lo que conviene revisar primero.',
     fragments: ['nivel', 'lectura', 'escucha'],
     result: 'Un mapa inicial',
     href: '/nivel-radar',
@@ -60,9 +60,9 @@ export const ROUTE_STEPS = [
   },
   {
     step: 'Comprender',
-    title: '¿Qué está frenando mi avance?',
+    title: 'Convertimos bloqueos y errores en prioridades concretas.',
     description:
-      'Separamos el idioma en capacidades concretas para identificar qué necesitas construir, comprender o expresar.',
+      'Separamos el idioma en capacidades observables: comprender, construir, expresarte e interactuar. Así evitamos empezar de cero cuando no hace falta.',
     fragments: ['vocabulario', 'estructuras', 'comprensión'],
     result: 'Una prioridad clara',
     href: '#habilidades',
@@ -70,9 +70,9 @@ export const ROUTE_STEPS = [
   },
   {
     step: 'Practicar',
-    title: '¿Qué tarea me acerca a mi meta?',
+    title: 'Cada ejercicio entrena algo que vas a necesitar.',
     description:
-      'Conectas la explicación con lectura, escucha, gramática, vocabulario, habla, escritura o simulacros de práctica.',
+      'La ruta conecta explicaciones y ejemplos con lectura, escucha, gramática, vocabulario, habla, escritura o simulacros, según la meta.',
     fragments: ['explicación', 'ejemplo', 'tarea'],
     result: 'Práctica con propósito',
     href: '/practica',
@@ -80,9 +80,9 @@ export const ROUTE_STEPS = [
   },
   {
     step: 'Corregir',
-    title: '¿Qué cambio en el siguiente intento?',
+    title: 'El siguiente intento debe ser mejor que el anterior.',
     description:
-      'Algunos ejercicios ofrecen feedback inmediato. La corrección docente y su alcance dependen de la modalidad elegida.',
+      'Algunos ejercicios ofrecen feedback inmediato. En las modalidades acompañadas, la corrección docente ayuda a entender el criterio y decidir qué ajustar.',
     fragments: ['respuesta', 'criterio', 'ajuste'],
     result: 'Un siguiente paso',
     href: '/metodo',
@@ -93,7 +93,7 @@ export const ROUTE_STEPS = [
 export const EVIDENCE_STEPS = [
   {
     step: 'Observar',
-    title: '¿Qué habilidad se está moviendo?',
+    title: 'Separamos el progreso por habilidad.',
     description:
       'La práctica separa escucha, lectura y producción para que el avance no dependa de una sensación general.',
     result: 'Señales que se pueden comparar',
@@ -102,7 +102,7 @@ export const EVIDENCE_STEPS = [
   },
   {
     step: 'Relacionar',
-    title: '¿Qué cambió después de corregir?',
+    title: 'Comparamos el intento antes y después del feedback.',
     description:
       'Un intento cobra valor cuando puede compararse con un criterio, recibir feedback y orientar la siguiente decisión.',
     result: 'Progreso que se puede explicar',
@@ -111,7 +111,7 @@ export const EVIDENCE_STEPS = [
   },
   {
     step: 'Comprobar',
-    title: '¿La preparación funciona en una condición real?',
+    title: 'Contrastamos la preparación con la tarea real.',
     description:
       'Los simulacros, reportes y resultados permiten contrastar la ruta con la tarea o el examen que la persona necesita enfrentar.',
     result: 'Evidencia antes que promesas',
@@ -131,25 +131,25 @@ export const SKILLS = [
 export const PRODUCT_AREAS = [
   {
     eyebrow: 'Aprender',
-    title: 'Entender antes de repetir.',
+    title: 'Cursos y explicaciones por idioma y nivel.',
     description:
-      'Cursos, explicaciones, ejemplos y práctica por nivel para construir vocabulario, estructuras y comprensión.',
+      'Construye vocabulario, estructuras y comprensión con ejemplos que conectan el contenido nuevo con lo que ya sabes.',
     href: '/clases-de-idiomas',
     linkLabel: 'Explorar clases e idiomas',
     visual: 'lesson',
   },
   {
     eyebrow: 'Practicar',
-    title: 'Entrenar una habilidad con una tarea real.',
+    title: '465 temas y tareas para trabajar habilidades concretas.',
     description:
-      'Lectura, escucha, vocabulario, gramática, habla y escritura, según lo disponible en cada idioma y nivel.',
+      'Entrena lectura, escucha, vocabulario, gramática, habla y escritura según lo publicado en cada idioma y nivel.',
     href: '/practica',
     linkLabel: 'Explorar toda la práctica',
     visual: 'practice',
   },
   {
     eyebrow: 'Corregir',
-    title: 'Entender por qué una respuesta funciona.',
+    title: 'Feedback que explica el criterio, no solo la respuesta.',
     description:
       'Los ejercicios guiados pueden mostrar feedback inmediato, criterios de respuesta y ejemplos explicados.',
     href: '/practica/ielts/academic/writing/task2/opinion',
@@ -158,7 +158,7 @@ export const PRODUCT_AREAS = [
   },
   {
     eyebrow: 'Preparar',
-    title: 'Practicar para la condición que enfrentarás.',
+    title: 'Simulacros y práctica por sección de examen.',
     description:
       'Simulacros de práctica, tipos de tarea y entrenamiento por sección para los exámenes disponibles.',
     href: '/examenes',
@@ -254,8 +254,8 @@ export const FOUNDERS = [
     alt: 'Retrato de Zhanna, cofundadora de Idiomas WeLearn.',
     lead: 'La mirada pedagógica',
     description:
-      'Zhanna es lingüista y profesora universitaria titulada en Rusia, con estudios de doctorado en idiomas germánicos. Enseña desde 2011 y dirige el criterio académico con el que WeLearn convierte una meta en aprendizaje.',
-    languages: ['Ruso nativo', 'Inglés C1', 'Español C1', 'Francés B2', 'Italiano A2'],
+      'Zhanna es lingüista y profesora universitaria titulada en Rusia, con estudios doctorales en idiomas germánicos. Enseña desde 2011 y dirige el criterio académico con el que WeLearn convierte una meta en aprendizaje.',
+    languages: ['Ruso nativo', 'Inglés C1', 'Español C1', 'Francés B2', 'Italiano A2', 'Japonés'],
   },
   {
     name: 'José David Duarte Silva',
@@ -276,9 +276,9 @@ export const ANSWERS = [
       'Idiomas WeLearn es una academia de idiomas con sede en Bucaramanga y atención online. Reúne clases, práctica y preparación de exámenes para ayudar a cada persona a avanzar según su punto de partida y su meta.',
   },
   {
-    question: '¿Cómo puedo saber qué nivel tengo?',
+    question: '¿Dónde ofrece WeLearn clases de idiomas en Bucaramanga?',
     answer:
-      'Puedes comenzar con Nivel Radar, un diagnóstico adaptativo de inglés que explora vocabulario, uso de la lengua, lectura y escucha. Entrega un resultado orientativo y no sustituye una certificación oficial.',
+      'Idiomas WeLearn atiende presencialmente en la Calle 47 # 29-33, Sotomayor, Bucaramanga. También ofrece clases online; la modalidad, el horario y lo incluido dependen del plan elegido.',
   },
   {
     question: '¿Qué idiomas puedo estudiar o practicar?',
@@ -291,24 +291,29 @@ export const ANSWERS = [
       'El catálogo publicado incluye IELTS, TOEFL iBT, ICFES Saber 11, Goethe-Zertifikat, CILS/CELI, DELF/DALF, TOPIK I, CELPE-Bras y Cambridge B2 First.',
   },
   {
-    question: '¿Qué puedo practicar?',
+    question: '¿Nivel Radar certifica mi nivel de inglés?',
     answer:
-      'Según el idioma o examen puedes encontrar lectura, escucha, vocabulario, gramática, habla, escritura, ejemplos explicados y simulacros de práctica.',
+      'No. Nivel Radar es un diagnóstico orientativo de inglés que explora vocabulario, uso de la lengua, lectura y escucha. Sirve para organizar un punto de partida, pero no sustituye IELTS, TOEFL u otra certificación oficial.',
   },
   {
-    question: '¿Recibo correcciones?',
+    question: '¿Qué puedo practicar dentro de WeLearn?',
     answer:
-      'Algunos ejercicios guiados ofrecen feedback inmediato. La corrección docente y su alcance dependen de la modalidad o servicio contratado.',
+      'La plataforma reúne 465 temas de práctica gramatical en ocho idiomas, además de lectura, escucha, vocabulario, habla, escritura y recursos de examen según la ruta publicada. La disponibilidad exacta aparece en cada página.',
   },
   {
-    question: '¿Las clases son online o presenciales?',
+    question: '¿Cómo funciona la ruta de aprendizaje?',
     answer:
-      'WeLearn publica atención presencial en Bucaramanga y clases online. Antes de matricularte, revisa la modalidad, el horario y lo que incluye el plan elegido.',
+      'La ruta comienza reconociendo el punto de partida y la meta. Después prioriza una habilidad, conecta explicación y práctica, incorpora feedback cuando está disponible y orienta el siguiente intento.',
   },
   {
-    question: '¿Cómo comienzo?',
+    question: '¿Los ejercicios incluyen correcciones?',
     answer:
-      'Puedes conocer tu nivel, explorar un idioma, practicar una habilidad o revisar la preparación para tu examen. Si todavía no sabes qué ruta elegir, puedes hablar con una persona.',
+      'Algunos ejercicios guiados ofrecen feedback inmediato, criterios y ejemplos explicados. La corrección docente y su alcance dependen de la modalidad o servicio contratado.',
+  },
+  {
+    question: '¿Cómo puedo comenzar en WeLearn?',
+    answer:
+      'Si todavía no sabes qué estudiar, comienza con Nivel Radar o habla con el equipo. Si ya tienes una meta, puedes entrar directamente por tu idioma, una habilidad o la preparación para tu examen.',
   },
 ] as const;
 
@@ -347,7 +352,7 @@ export const ORGANIZATION_SCHEMA = {
       jobTitle: 'Cofundadora y directora académica de Idiomas WeLearn',
       worksFor: { '@id': 'https://www.idiomaswl.com/#localbusiness' },
       image: 'https://www.idiomaswl.com/images/team-zhanna-korzh.png',
-      knowsLanguage: ['ru', 'en', 'es', 'fr', 'it'],
+      knowsLanguage: ['ru', 'en', 'es', 'fr', 'it', 'ja'],
       description:
         'Lingüista y profesora universitaria titulada por la Universidad Estatal de Oremburgo, con estudios de doctorado en idiomas germánicos. Enseña desde 2011.',
     },
