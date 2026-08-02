@@ -19,7 +19,7 @@ export async function generateMetadata(
   if (!post) return {};
 
   return {
-    title: `${post.title} | Blog WeLearn`,
+    title: post.title,
     description: post.description,
     keywords: post.tags,
     openGraph: {

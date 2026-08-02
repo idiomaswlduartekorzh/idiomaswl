@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'puntaje-icfes-ingles-niveles-y-como-mejorar',
-    title: 'Puntaje ICFES inglés: niveles, puntaje mínimo y cómo mejorarlo en 3 meses',
+    title: 'Cuántos puntos necesitas en inglés del ICFES y cómo subirlos',
     description:
       'Qué mide el componente de inglés del ICFES Saber 11, cuál es el puntaje que piden las universidades colombianas y el plan de estudio más eficiente para subir de nivel.',
     date: '2026-05-08',
@@ -1029,7 +1029,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'ielts-academic-vs-general-training',
-    title: 'IELTS Academic vs General Training: cuál debes tomar según tu objetivo',
+    title: 'IELTS Academic vs General Training: la comparación completa sección por sección',
     description:
       'La diferencia entre IELTS Academic y General Training es más importante de lo que parece. Elegir el módulo equivocado puede invalidar tu resultado. Aquí la guía definitiva para colombianos.',
     date: '2026-05-29',
@@ -1199,7 +1199,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'icfes-saber-11-niveles-ingles-guia-completa',
-    title: 'Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje',
+    title: 'Niveles de inglés del ICFES: qué significa Pre A1, A1, A2 y B1',
     description:
       'Guía completa sobre el componente de inglés del ICFES: cómo se califica, qué evalúa, qué significa cada nivel A1-B2 y el plan de preparación para subir 10-20 puntos en 3 meses.',
     date: '2026-05-30',
@@ -2655,7 +2655,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── Article 34 ─────────────────────────────────────────────────────────────
   {
     slug: 'ingles-para-trabajo-remoto-empleadores-globales',
-    title: 'Inglés para trabajo remoto: cómo convencer a empleadores globales',
+    title: 'Entrevistas de trabajo remoto en inglés: cómo responder y qué evitar',
     description: 'El inglés para trabajo remoto es diferente al inglés para un examen. Aquí las habilidades concretas que buscan los empleadores globales y cómo desarrollarlas.',
     date: '2026-05-30',
     readTime: 8,
@@ -2706,7 +2706,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── Article 35 ─────────────────────────────────────────────────────────────
   {
     slug: 'migrar-a-espana-requisitos-de-ingles',
-    title: 'Migrar a España desde Colombia: ¿qué nivel de inglés necesitas realmente?',
+    title: 'Migrar a España: ¿de verdad te piden inglés?',
     description: 'España es el destino migratorio más popular entre colombianos. Aquí los requisitos reales de inglés para visas, trabajo y convalidaciones en España.',
     date: '2026-05-30',
     readTime: 7,
@@ -4362,7 +4362,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── Article 59 ─────────────────────────────────────────────────────────────
   {
     slug: 'aprender-coreano-con-kpop-y-dramas-funciona',
-    title: 'Aprender coreano con K-pop y K-dramas: qué funciona y qué no',
+    title: '¿Se puede aprender coreano con K-pop y K-dramas? Lo que dice la evidencia',
     description:
       'Guía honesta sobre aprender coreano con K-pop y K-dramas: qué sí puedes aprender de forma natural, qué no puedes aprender solo con contenido, y cómo combinar ambos para avanzar de verdad.',
     date: '2026-05-30',
@@ -4419,7 +4419,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── Article 60 ─────────────────────────────────────────────────────────────
   {
     slug: 'ingles-b2-c1-para-trabajo-remoto-global',
-    title: 'Inglés B2–C1 para trabajo remoto: lo que necesitas para empleadores globales',
+    title: 'Qué nivel de inglés piden de verdad en el trabajo remoto internacional',
     description:
       'Guía para colombianos que buscan trabajo remoto en empresas internacionales: qué nivel de inglés necesitas, por qué B2 no siempre es suficiente, cómo practicar el inglés profesional y cómo certificarlo.',
     date: '2026-05-30',
@@ -4840,7 +4840,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── ARTICLE 67 ──────────────────────────────────────────────────────────
   {
     slug: 'ielts-academic-vs-general-training-cual-elegir',
-    title: 'IELTS Academic vs IELTS General Training: cuál debes tomar y por qué',
+    title: 'Cómo saber cuál IELTS te piden antes de pagar la inscripción',
     description: 'Diferencia entre IELTS Academic y General Training: qué evalúa cada uno, cuándo usarlo, puntajes requeridos y cuál te conviene según tu objetivo.',
     category: 'IELTS',
     tags: ['IELTS Academic', 'IELTS General Training', 'examen IELTS', 'inglés certificación'],
@@ -6644,7 +6644,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── Article 92 ───────────────────────────────────────────────────────────────
   {
     slug: 'coreano-k-dramas-para-aprender-series-recomendadas',
-    title: 'Aprender coreano con K-dramas: qué funciona y qué no',
+    title: 'K-dramas para aprender coreano: series por nivel y cómo verlas',
     description: 'Ver K-dramas puede acelerar tu aprendizaje de coreano, pero solo si lo haces correctamente. Guía práctica con series recomendadas según tu nivel.',
     date: '2026-05-31',
     readTime: 9,
@@ -7606,7 +7606,7 @@ And explain whether you would recommend it to others.</em>
   // ── Article 103 ──────────────────────────────────────────────────────────────
   {
     slug: 'migrar-a-espana-nivel-ingles-y-espanol-que-necesitas',
-    title: 'Migrar a España desde Colombia: ¿qué nivel de inglés necesitas realmente?',
+    title: 'Español e inglés para vivir en España: qué nivel necesitas de cada uno',
     description: 'España es el segundo destino migratorio de colombianos. Analizamos si necesitas inglés, cuánto importa, y qué idiomas abren más puertas en el mercado laboral español.',
     date: '2026-05-31',
     readTime: 9,
@@ -8628,7 +8628,7 @@ And explain whether you would recommend it to others.</em>
   // ── Article 116 ──────────────────────────────────────────────────────────────
   {
     slug: 'coreano-canciones-kpop-para-aprender-idioma',
-    title: 'Aprender coreano con K-pop: qué funciona y cómo hacerlo correctamente',
+    title: 'Canciones de K-pop para aprender coreano: cuáles sirven y por qué',
     description: 'El K-pop puede ser una herramienta de aprendizaje de coreano, pero solo si lo usas bien. Guía práctica con canciones recomendadas y método de estudio con música.',
     date: '2026-05-31',
     readTime: 8,
