@@ -340,6 +340,16 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
         ],
       },
       {
+        h: 'Tabla de equivalencias: tu banda en la escala de siempre',
+        body: [
+          'Como las universidades siguen publicando sus requisitos sobre 120, esta es la conversión oficial de ETS. Guárdala: es lo que necesitas para saber si tu banda alcanza lo que te piden.',
+          '<strong>Banda 6</strong> equivale a 114 puntos o más. <strong>5,5</strong> → desde 107. <strong>5</strong> → desde 95. <strong>4,5</strong> → desde 86. <strong>4</strong> → desde 72.',
+          '<strong>3,5</strong> → desde 58. <strong>3</strong> → desde 44. <strong>2,5</strong> → desde 34. <strong>2</strong> → desde 24. <strong>1,5</strong> → desde 12. <strong>1</strong> → desde 0.',
+          'Un ejemplo de por qué esto importa: si tu maestría pide <strong>TOEFL 100</strong>, necesitas al menos <strong>banda 5</strong>, porque el 5 empieza en 95 y el 5,5 en 107. Y si pide 90, con banda 4,5 (que empieza en 86) podrías quedarte corto: conviene apuntar al 5.',
+          'Ojo con leer la tabla al revés. Una banda 5 puede corresponder a cualquier puntaje entre 95 y 106, así que si tu requisito está en ese rango, mira el equivalente exacto que aparece en tu informe y no la banda a secas.',
+        ],
+      },
+      {
         h: 'Cómo es el examen hoy',
         body: [
           'El TOEFL iBT dura <strong>unas dos horas</strong> y evalúa las cuatro destrezas en este orden: lectura, comprensión auditiva, escritura y expresión oral.',
@@ -368,6 +378,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { q: '¿El TOEFL ya no es sobre 120?', a: 'Correcto. Desde el 21 de enero de 2026 el puntaje principal del TOEFL iBT es una banda de 1 a 6 con medios puntos. El equivalente sobre 120 se sigue reportando durante una transición de dos años, hasta enero de 2028.' },
       { q: '¿Sirve todavía mi TOEFL con puntaje sobre 120?', a: 'Sí. Los exámenes presentados antes del cambio siguen siendo válidos durante sus dos años de vigencia, y el informe convierte esos puntos a la escala nueva.' },
       { q: 'Mi universidad pide TOEFL 100. ¿Qué banda es esa?', a: 'Las universidades siguen publicando requisitos en la escala 0 a 120, y tu informe seguirá mostrando ese equivalente hasta enero de 2028. Si te piden 100, se refieren a 100 sobre 120. Confirma siempre el requisito con la institución, porque cada una decide cómo lo aplica durante la transición.' },
+      { q: '¿Cómo convierto mi banda del TOEFL a la escala de 120?', a: 'Según la tabla oficial de ETS: banda 6 equivale a 114 o más, 5,5 desde 107, 5 desde 95, 4,5 desde 86, 4 desde 72, 3,5 desde 58, 3 desde 44, 2,5 desde 34, 2 desde 24, 1,5 desde 12 y 1 desde 0. Si tu universidad pide TOEFL 100, necesitas al menos banda 5.' },
       { q: '¿Cuánto dura el TOEFL iBT?', a: 'Aproximadamente dos horas. El examen es adaptativo, así que el número exacto de preguntas y el tiempo por sección varían según cómo vayas respondiendo.' },
       { q: '¿Cuánto tiempo son válidos los resultados del TOEFL?', a: 'Dos años desde la fecha del examen. Pasado ese plazo ETS no reporta ni envía los puntajes.' },
       { q: '¿Se puede presentar el TOEFL iBT en Bucaramanga?', a: 'No. El TOEFL iBT no se aplica en Bucaramanga, hay que desplazarse a otra ciudad. Si necesitas un examen internacional que sí se aplique aquí, el IELTS se presenta en la UNAB como sede avalada por el British Council.' },

@@ -309,6 +309,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'TOEFL',
     tags: ['TOEFL iBT', 'inglés', 'exámenes internacionales', 'Estados Unidos', 'universidad', 'preparación'],
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <h2>¿Qué es el TOEFL iBT y para qué sirve?</h2>
 <p>El TOEFL iBT (Test of English as a Foreign Language, Internet-Based Test) es el examen de inglés más reconocido para admisión a universidades de Estados Unidos y Canadá. A diferencia del IELTS, que nació en el Reino Unido con foco académico y migratorio, el TOEFL fue diseñado específicamente para entornos universitarios norteamericanos.</p>
 <p>Las principales razones para tomar el TOEFL:</p>
@@ -505,6 +506,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'IELTS',
     tags: ['IELTS', 'TOEFL', 'inglés', 'exámenes internacionales', 'migración', 'Colombia', 'comparación'],
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <h2>La pregunta que todos hacen primero</h2>
 <p>Cada semana, decenas de colombianos buscan la misma respuesta: "¿IELTS o TOEFL?". Ambos exámenes certifican competencia en inglés para contextos académicos y profesionales. Pero no son intercambiables: su formato, su costo, su reconocimiento y sus exigencias técnicas son significativamente diferentes.</p>
 <p>Esta guía te da la respuesta directa según tu objetivo específico.</p>
@@ -1371,6 +1373,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 </ul>
 <p>Si migrar a Canadá es tu objetivo y necesitas prepararte para el IELTS General Training, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a>. La clase de diagnóstico gratis identifica en cuánto tiempo puedes alcanzar el puntaje que necesitas según tu nivel actual.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/ielts-academic-vs-general-training">IELTS Academic vs General Training: ¿cuál necesitas tomar?</a>.</p>
+<p>El puntaje de inglés es solo una parte del proceso. Si además estás resolviendo el trámite en sí —qué visa te corresponde, qué documentos pide y cómo se presenta—, nuestro equipo de <a href="https://www.asesoriaenvisas.com/visas/canada" target="_blank" rel="noopener">Asesoría en Visas cubre el proceso migratorio a Canadá</a>. Aquí nos ocupamos del idioma; allí, del expediente.</p>
     `,
   },
   {
@@ -1452,6 +1455,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     category: 'TOEFL',
     tags: ['TOEFL iBT', 'estrategias TOEFL', 'TOEFL 100', 'TOEFL Colombia', 'TOEFL Speaking', 'TOEFL Writing'],
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <h2>Por qué el TOEFL tiene fama de ser "diferente" al IELTS</h2>
 <p>Muchos colombianos que preparan el IELTS y el TOEFL al mismo tiempo describen el TOEFL como "más difícil de ganar estrategias" y "más mecánico". Tienen razón en ambas cosas.</p>
 <p>El TOEFL es un examen diseñado, administrado y calificado de forma completamente computarizada (excepto Speaking y Writing que evalúa inteligencia artificial + revisores humanos). El formato es rígido, los tipos de pregunta son predecibles y, como consecuencia, las estrategias son muy específicas — y muy efectivas si se conocen bien.</p>
@@ -1682,6 +1686,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 </ol>
 <p>Si trabajar en EE.UU. o en una empresa americana desde Colombia es tu meta, puedes <a href="/clases-de-ingles">conocer cómo preparamos en WeLearn</a> — el programa incluye inglés profesional y preparación para certificaciones IELTS y TOEFL según tu objetivo específico.</p>
 <p>Lee también: <a href="/blog/ingles-para-trabajar-en-empresas-multinacionales">Inglés para trabajar en empresas multinacionales en Colombia</a> y <a href="/blog/ingles-para-enfermeras-colombianas">Inglés para enfermeras colombianas que quieren trabajar en el exterior</a>.</p>
+<p>Si además del inglés estás resolviendo la visa, la parte del trámite —el DS-160, la cita y la entrevista consular— está cubierta en <a href="https://www.asesoriaenvisas.com/visas/estados-unidos" target="_blank" rel="noopener">la sección de visas de Estados Unidos de Asesoría en Visas</a>.</p>
     `,
   },
   {
@@ -2001,6 +2006,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     category: 'TOEFL',
     tags: ['costo TOEFL Colombia', 'precio TOEFL 2026', 'TOEFL Bogotá', 'TOEFL Medellín', 'TOEFL Bucaramanga', 'ETS Colombia'],
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <h2>El precio del TOEFL iBT en Colombia 2026</h2>
 <p>El TOEFL iBT (Internet-Based Test) es administrado en Colombia por ETS (Educational Testing Service) a través de centros de examinación Prometric y en algunas instituciones académicas autorizadas. El precio en 2026 es:</p>
 <table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
@@ -4243,6 +4249,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     category: 'TOEFL',
     tags: ['TOEFL iBT vs TOEFL Essentials diferencias', 'TOEFL Essentials Colombia 2026', 'cuál TOEFL tomar Colombia', 'TOEFL para visa USA', 'TOEFL para universidad EE.UU. Colombia'],
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <h2>¿Por qué hay dos TOEFL ahora?</h2>
 <p>ETS (Educational Testing Service), la organización que administra el TOEFL, lanzó el <strong>TOEFL Essentials</strong> en 2021 como una alternativa más accesible y flexible al TOEFL iBT. El objetivo fue ampliar el acceso al mercado de pruebas de inglés, especialmente en países donde el TOEFL iBT era difícil de tomar (centros limitados, costos altos, esperas largas). Para los colombianos, esto ha creado una pregunta legítima: ¿cuál tomo?</p>
 
@@ -5145,6 +5152,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>WeLearn y Express Entry</h2>
 <p>Preparamos candidatos para IELTS General Training con foco específico en los puntajes que maximizan el CRS. Si tu objetivo es CLB 9 (IELTS 7.0–8.0 por módulo), contáctanos: diseñamos un plan de preparación con fecha objetivo de examen. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20General%20para%20Express%20Entry%20de%20Canad%C3%A1.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/ingles-para-migrar-a-nueva-zelanda-ielts">Inglés para migrar a Nueva Zelanda con IELTS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
+<p>El puntaje de idioma es el componente que más CRS aporta, pero no es el único paso. El resto del proceso —perfil, documentos y presentación— está explicado en <a href="https://www.asesoriaenvisas.com/visas/canada" target="_blank" rel="noopener">la guía de Canadá de Asesoría en Visas</a>.</p>
     `,
   },
 
@@ -5643,6 +5651,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <h2>WeLearn y la preparación IELTS para Australia</h2>
 <p>Preparamos IELTS General Training con foco en los módulos que más impactan el puntaje SkillSelect. Si tu objetivo es IELTS 8.0, el plan de preparación es diferente al de alguien que busca 6.5 para una maestría. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20IELTS%20para%20migrar%20a%20Australia%20y%20necesito%20llegar%20a%208.0.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">Cuéntanos tu situación por WhatsApp</a>.</p>
 <p>Lee también: <a href="/blog/ingles-para-canada-express-entry-requisitos-2026">Inglés para Canada Express Entry: CLB, IELTS y CRS</a> y <a href="/blog/ielts-academic-vs-general-training-cual-elegir">IELTS Academic vs General Training: cuál debes tomar</a>.</p>
+<p>Los puntos de inglés se suman a los del sistema general de la visa. Para la parte del trámite —elegir la subclase correcta, reunir documentos y presentar la solicitud— puedes ver la <a href="https://www.asesoriaenvisas.com/visas/australia" target="_blank" rel="noopener">guía de visas para Australia de Asesoría en Visas</a>.</p>
     `,
   },
 
@@ -5725,6 +5734,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     date: '2026-05-29',
     readTime: 8,
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <p>El TOEFL Speaking tiene 4 preguntas (desde la nueva versión iBT de 2019) — 1 independiente y 3 integradas. Las tareas integradas (Integrated Tasks) son las que más diferencian al TOEFL del IELTS, y también las que más confunden a los estudiantes colombianos. Esta guía te enseña exactamente cómo manejarlas.</p>
 
 <h2>Estructura del TOEFL Speaking (versión actual)</h2>
@@ -6422,6 +6432,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     date: '2026-05-31',
     readTime: 8,
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <p>El TOEFL Reading tiene 10 tipos diferentes de preguntas. Algunas son directas (Factual Information: ¿qué dice el texto exactamente?). Otras son más complejas — inferencia, propósito del autor, vocabulario en contexto, referencia de pronombres. Esta guía te enseña a resolver cada tipo difícil con estrategia.</p>
 
 <h2>Estructura del TOEFL Reading</h2>
@@ -7235,6 +7246,7 @@ Esta diferencia puede generar malentendidos culturales.</p>
     category: 'TOEFL',
     tags: ['TOEFL', 'iBT', 'estructura', 'estrategia', 'puntaje', '2026'],
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <h2>El TOEFL iBT en 2026 — qué cambió</h2>
 <p>ETS rediseñó el TOEFL iBT en agosto de 2023 con el objetivo de reducir la duración y hacer el examen más eficiente. El formato vigente en 2026:</p>
 <ul>
@@ -7990,6 +8002,7 @@ And explain whether you would recommend it to others.</em>
     category: 'TOEFL',
     tags: ['TOEFL', 'Canadá', 'universidades', 'puntaje', 'admisión', 'estudiantes'],
     body: `
+<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
 <h2>TOEFL en Canadá: lo que debes saber primero</h2>
 <p>Canadá acepta tanto IELTS como TOEFL para admisión universitaria y para la visa de estudiante (Study Permit). A diferencia del Reino Unido (donde el IELTS domina) o Estados Unidos (donde el TOEFL es más tradicional), en Canadá ambos exámenes tienen igual reconocimiento. La elección depende de tus fortalezas y de los requisitos específicos de tu programa.</p>
 <p>Sin embargo, para la visa de estudiante canadiense (IRCC), el inglés mínimo requerido también puede demostrarse con IELTS o TOEFL — pero IELTS tiende a ser más usado en las embajadas canadienses.</p>
