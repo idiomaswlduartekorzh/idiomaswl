@@ -50,6 +50,82 @@ export type ExamGuide = {
 
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
+  ielts: {
+    title: 'IELTS Academic o General: cuál necesitas, y simulacros gratis',
+    description: 'La diferencia real entre IELTS Academic y General Training: Listening y Speaking son idénticos, solo cambian Reading y Writing. Simulacros gratis, banda 0-9 explicada y dónde se presenta en Bucaramanga.',
+    lead:
+      'La duda más frecuente tiene una respuesta corta: <strong>Listening y Speaking son exactamente iguales en los dos exámenes</strong>. Lo único que cambia es <strong>Reading y Writing</strong>. Y no eliges por cuál te parece más fácil: eliges el que te exige la institución o el proceso migratorio al que aplicas.',
+    sections: [
+      {
+        h: 'Academic o General Training: cuál te toca',
+        body: [
+          '<strong>Academic</strong> si vas a estudiar una carrera o un posgrado en inglés. Su Reading usa textos de libros, revistas y publicaciones académicas, y el Writing Task 1 te pide describir un gráfico o un diagrama.',
+          '<strong>General Training</strong> si migras a Reino Unido, Canadá, Australia o Nueva Zelanda, o si vas a formarte por debajo de nivel universitario. Su Reading usa material cotidiano —avisos, anuncios, documentos de trabajo— y el Writing Task 1 es una carta.',
+          'Un aviso importante: <strong>que los textos del General parezcan más fáciles no significa que la banda salga más alta</strong>. La conversión de aciertos a banda es distinta en cada examen, precisamente para compensar esa diferencia de dificultad. Elegir el General «porque es más fácil» es un error de cálculo.',
+          'Y si te equivocas de examen, no hay recurso: presentar el Academic cuando te pedían el General significa volver a pagar y volver a presentarte.',
+        ],
+      },
+      {
+        h: 'Qué significa tu banda',
+        body: [
+          'El IELTS se puntúa de <strong>0 a 9</strong>, con medios puntos. Recibes una banda por cada destreza y una banda global que es el promedio de las cuatro.',
+          'No se aprueba ni se reprueba: se obtiene una banda. Lo que decide si te sirve es el requisito de tu institución, y muchas exigen además <strong>una banda mínima por sección</strong>, no solo la global. Es un detalle que arruina candidaturas: sacar 7 global con un 5,5 en writing puede no servir aunque el promedio dé.',
+          'Revisa siempre las dos cifras en la convocatoria: la global y el mínimo por destreza.',
+        ],
+      },
+      {
+        h: 'Dónde se presenta si estás en Bucaramanga',
+        body: [
+          'Aquí hay una ventaja concreta frente a otros exámenes: <strong>el IELTS sí se aplica en Bucaramanga</strong>, en la UNAB, sede avalada por el British Council en Santander.',
+          'La inscripción y el pago se hacen con el British Council, no con la universidad. La UNAB es la sede donde se presenta el examen.',
+          'Es una diferencia práctica que pesa al decidir: el TOEFL iBT no se aplica en Bucaramanga y obliga a desplazarse.',
+        ],
+      },
+      {
+        h: 'Cuánto cuesta y cuánto dura el resultado',
+        body: [
+          'El precio lo fija el British Council y <strong>cambia cada año</strong>, así que cualquier cifra publicada envejece mal. Consúltalo en su web antes de presupuestar; no te fíes de un número que leas en un blog, incluido este.',
+          'Lo que sí conviene tener en cuenta al hacer cuentas es que el examen no es el único gasto: hay que sumar el desplazamiento si tu sede está en otra ciudad, y el reenvío de resultados si aplicas a varias instituciones.',
+          'Los resultados son válidos <strong>dos años</strong>. Planifica la fecha hacia atrás desde el plazo de tu convocatoria: presentarlo demasiado pronto es tirar el dinero.',
+        ],
+      },
+      {
+        h: 'IELTS o el examen de Duolingo',
+        body: [
+          'Es una pregunta cada vez más frecuente y la respuesta honesta es: <strong>depende exclusivamente de quién lo va a recibir</strong>.',
+          'El examen de Duolingo es más barato, se hace desde casa y da resultados en días. Pero la lista de instituciones que lo aceptan es más corta, y para procesos migratorios suele exigirse un examen de una lista oficial cerrada donde el IELTS sí figura.',
+          'La regla práctica: si tu universidad o tu proceso acepta los dos y solo buscas acreditar nivel, el de Duolingo puede salirte mejor. Si hay cualquier componente migratorio de por medio, o si la convocatoria nombra el IELTS, no experimentes.',
+          '<strong>Verifica en la web de tu institución, no en un foro.</strong> Las listas de exámenes aceptados cambian y una respuesta desactualizada cuesta una convocatoria entera.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿Cuál es la diferencia entre IELTS Academic y General Training?', a: 'Listening y Speaking son idénticos en los dos. Solo cambian Reading y Writing: el Academic usa textos académicos y pide describir un gráfico, mientras que el General Training usa material cotidiano y pide escribir una carta.' },
+      { q: '¿Cuál es más fácil, el Academic o el General?', a: 'Los textos del General suelen parecer más sencillos, pero la conversión de aciertos a banda es distinta en cada examen precisamente para compensarlo. Elegir el General pensando que dará una banda más alta es un error de cálculo. Elige el que te piden, no el que parece más fácil.' },
+      { q: '¿Cuál necesito para migrar a Canadá o Reino Unido?', a: 'Por regla general, el General Training. El Academic es para estudios de nivel universitario. Confirma siempre el requisito exacto de tu proceso, porque algunas rutas migratorias piden versiones específicas del examen.' },
+      { q: '¿Qué pasa si presento el examen equivocado?', a: 'No hay recurso: hay que volver a pagar y volver a presentarse. Es el motivo por el que conviene confirmar por escrito cuál te piden antes de inscribirte.' },
+      { q: '¿Cómo se puntúa el IELTS?', a: 'De 0 a 9 con medios puntos. Recibes una banda por cada destreza y una banda global que es el promedio de las cuatro. No se aprueba ni se reprueba: se obtiene una banda.' },
+      { q: '¿Me sirve una banda global alta si fallo una sección?', a: 'Depende de la institución, y es un detalle que arruina candidaturas. Muchas exigen una banda mínima por sección además de la global. Sacar 7 global con 5,5 en writing puede no servir aunque el promedio dé. Revisa las dos cifras en la convocatoria.' },
+      { q: '¿Dónde se presenta el IELTS en Bucaramanga?', a: 'En la UNAB, sede avalada por el British Council en Santander. La inscripción y el pago se hacen con el British Council, no con la universidad.' },
+      { q: '¿Cuánto cuesta el IELTS en Colombia?', a: 'El precio lo fija el British Council y cambia cada año, así que conviene consultarlo en su web antes de presupuestar en lugar de fiarse de una cifra publicada en un blog. Al hacer cuentas, suma también el desplazamiento si tu sede está en otra ciudad y el reenvío de resultados si aplicas a varias instituciones.' },
+      { q: '¿Cuánto tiempo son válidos los resultados del IELTS?', a: 'Dos años desde la fecha del examen. Planifica hacia atrás desde el plazo de tu convocatoria: presentarlo demasiado pronto significa tener que repetirlo.' },
+      { q: '¿El examen de Duolingo reemplaza al IELTS?', a: 'Solo si quien lo recibe lo acepta. Es más barato y más rápido, pero la lista de instituciones que lo admiten es más corta, y en procesos migratorios suele exigirse un examen de una lista oficial cerrada donde el IELTS sí figura. Verifica en la web de tu institución, no en un foro.' },
+    ],
+    sources: [
+      { label: 'IELTS — Tipos de examen: Academic y General Training', url: 'https://ielts.org/take-a-test/test-types' },
+      { label: 'British Council — Qué IELTS necesitas', url: 'https://takeielts.britishcouncil.org/take-ielts/which-ielts-test' },
+    ],
+    related: [
+      { href: '/blog/ielts-bucaramanga-centros-de-examen-y-registro', label: 'IELTS en Bucaramanga', note: 'La sede, cómo inscribirse y qué llevar el día del examen.' },
+      { href: '/blog/ielts-academic-vs-general-training', label: 'Academic vs General en detalle', note: 'La comparación completa, sección por sección.' },
+      { href: '/blog/como-sacar-band-7-en-ielts', label: 'Cómo llegar a Band 7', note: 'Lo que separa un 6,5 de un 7 en cada destreza.' },
+      { href: '/practica/ingles/b1/escritura', label: 'Escritura guiada', note: 'La destreza donde más gente se queda corta del mínimo por sección.' },
+      { href: '/practica/ingles/b1/habla', label: 'Expresión oral', note: 'Estructuras y pronunciación modelo para el Speaking.' },
+      { href: '/clases-de-ingles-bucaramanga', label: 'Preparación en Bucaramanga', note: 'Presencial en el barrio Sotomayor u online, con diagnóstico gratis.' },
+    ],
+    checked: 'agosto de 2026',
+  },
+
   toefl: {
     title: 'Simulacro TOEFL gratis y la nueva escala 1–6: guía 2026',
     description: 'Simulacros del TOEFL iBT gratis con formato real. Desde enero de 2026 el examen se puntúa en bandas de 1 a 6, no sobre 120: aquí está qué cambió, qué significa tu banda y qué siguen pidiendo las universidades.',
