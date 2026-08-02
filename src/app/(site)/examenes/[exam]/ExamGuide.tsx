@@ -51,6 +51,35 @@ export default function ExamGuideBlock({
             </div>
           ))}
 
+          {guide.related && guide.related.length > 0 && (
+            <div style={{ marginTop: '3rem' }}>
+              <h2 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.6rem)', fontWeight: 800, marginBottom: '0.5rem' }}>
+                Sigue por aquí
+              </h2>
+              <p style={{ fontSize: '0.95rem', color: 'var(--muted)', marginBottom: '1.1rem', lineHeight: 1.6 }}>
+                El simulacro te dice dónde estás. Esto es lo que te mueve de sitio.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '0.7rem' }}>
+                {guide.related.map(r => (
+                  <Link
+                    key={r.href}
+                    href={r.href}
+                    style={{
+                      display: 'block', padding: '0.9rem 1.05rem', borderRadius: 10,
+                      border: '1px solid var(--line-soft)', background: 'var(--bg-2)',
+                      textDecoration: 'none', borderLeft: `3px solid ${accent}`,
+                    }}
+                  >
+                    <strong style={{ display: 'block', fontSize: '0.93rem', color: 'var(--ink)', marginBottom: 2 }}>
+                      {r.label}
+                    </strong>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.45 }}>{r.note}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
           <h2 style={{ fontSize: 'clamp(1.35rem, 3.2vw, 1.75rem)', fontWeight: 900, marginTop: '3rem', marginBottom: '1.25rem' }}>
             Preguntas frecuentes sobre el {examName}
           </h2>

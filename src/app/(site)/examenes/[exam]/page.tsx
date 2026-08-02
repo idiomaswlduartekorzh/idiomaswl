@@ -18,10 +18,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   // Cuando el examen tiene guía, el título encabeza con el examen y no con
   // "simulacros": la gente busca "examen first" o "cambridge b2", no simulacros.
   return {
-    title: guide
-      ? `${exam.fullName ?? exam.name}: qué es, puntajes y simulacros gratis`
-      : `Simulacros de ${exam.fullName ?? exam.name}`,
-    description: `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con feedback de IA.`,
+    title:
+      guide?.title ??
+      (guide
+        ? `${exam.fullName ?? exam.name}: qué es, puntajes y simulacros gratis`
+        : `Simulacros de ${exam.fullName ?? exam.name}`),
+    description:
+      guide?.description ??
+      `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con feedback de IA.`,
     openGraph: {
       title: `${exam.name} — Simulacros y preparación`,
       description: exam.tagline,

@@ -6006,8 +6006,13 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   <li><strong>Simulacros cronometrados</strong>: practica preguntas de vocabulario en contexto bajo tiempo. El ICFES tiene 45 preguntas en 50 minutos — la velocidad importa.</li>
 </ol>
 
+<h2>Ya sabes las palabras. Ahora comprueba si te sirven</h2>
+<p>Memorizar una lista y reconocer esas mismas palabras dentro de un texto, a contrarreloj, son dos cosas distintas. La segunda es la que evalúa el examen.</p>
+<p>Tenemos <a href="/examenes/icfes"><strong>simulacros gratuitos del ICFES de inglés</strong></a> armados con cuadernillos oficiales de años anteriores y su clave de respuestas. Son gratis y no hay que registrarse. Al terminar ves tu puntaje y el nivel que te correspondería en la escala real.</p>
+<p>Si al hacerlo descubres que el problema no es el vocabulario sino la velocidad de lectura o los conectores, tenemos práctica específica para eso: <a href="/practica/icfes-saber-11/sinonimos-inferencia">sinónimos e inferencia</a> y <a href="/practica/icfes-saber-11/gramatica-conjunciones">conectores y conjunciones</a>, que son los dos tipos de pregunta que más se fallan en la segunda mitad de la prueba.</p>
+
 <h2>WeLearn y la preparación ICFES inglés</h2>
-<p>En WeLearn preparamos el inglés del ICFES con vocabulario, comprensión lectora y estrategias de examen. Si tienes el Saber 11 próximo, el simulacro gratuito en nuestra plataforma te dice exactamente cuál es tu nivel y en qué enfocarte. <a href="https://wa.me/573005004253?text=Hola%2C%20me%20preparo%20para%20el%20ICFES%20y%20quiero%20mejorar%20mi%20puntaje%20en%20ingl%C3%A9s.%20%C2%BFC%C3%B3mo%20pueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>En WeLearn preparamos el inglés del ICFES con vocabulario, comprensión lectora y estrategias de examen, presencialmente en Bucaramanga u online. Puedes ver cómo lo trabajamos en la página de <a href="/preparacion-icfes">preparación ICFES</a>, o <a href="https://wa.me/573005004253?text=Hola%2C%20me%20preparo%20para%20el%20ICFES%20y%20quiero%20mejorar%20mi%20puntaje%20en%20ingl%C3%A9s.%20%C2%BFC%C3%B3mo%20pueden%20ayudarme%3F" target="_blank" rel="noopener noreferrer">escribirnos por WhatsApp</a> para un diagnóstico gratis.</p>
 <p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">Puntaje inglés ICFES: qué significan los niveles</a> y <a href="/blog/icfes-ingles-plan-estudio-3-meses">Plan de estudio inglés ICFES en 3 meses</a>.</p>
     `,
   },

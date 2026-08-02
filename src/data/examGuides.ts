@@ -26,17 +26,96 @@ export type GuideSection = {
 export type GuideFaq = { q: string; a: string };
 
 export type ExamGuide = {
+  /**
+   * Title y description propios. Se usan cuando el nombre oficial del examen no
+   * coincide con lo que la gente teclea: el ICFES se llama oficialmente «Saber 11
+   * · Componente de Inglés», pero nadie busca eso — buscan «simulacro icfes ingles».
+   */
+  title?: string;
+  description?: string;
   /** Respuesta directa a la duda más buscada. Va primero y va sola. */
   lead: string;
   sections: GuideSection[];
   faqs: GuideFaq[];
   /** Fuentes oficiales consultadas, visibles para el lector. */
   sources: { label: string; url: string }[];
+  /**
+   * El resto del clúster de este examen. Es lo que convierte páginas sueltas en
+   * una red: la guía manda a la práctica y al contenido, no solo al simulacro.
+   */
+  related?: { href: string; label: string; note: string }[];
   /** Fecha de última verificación, en texto. */
   checked: string;
 };
 
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
+
+  icfes: {
+    title: 'Simulacro ICFES Inglés gratis: cuadernillos oficiales y puntajes',
+    description: 'Simulacros del ICFES de inglés gratis y sin registro, con cuadernillos oficiales de años anteriores y clave de respuestas. Escala real: Pre A1, A1, A2 y B1. Al terminar ves tu puntaje y tu nivel.',
+    lead:
+      'Sí, aquí puedes hacer <strong>simulacros del ICFES de inglés gratis y sin registro</strong>, armados con cuadernillos oficiales de años anteriores y su clave de respuestas. Al terminar cada uno ves tu puntaje y el nivel que te correspondería en la escala real del examen.',
+    sections: [
+      {
+        h: 'Qué mide de verdad la prueba de inglés del Saber 11',
+        body: [
+          'Esto sorprende a casi todo el mundo: el componente de inglés del ICFES <strong>solo evalúa comprensión de lectura</strong>. No hay escucha, no hay escritura y no hay que hablar. Son 45 preguntas de opción múltiple en una hora.',
+          'Eso cambia por completo cómo conviene prepararse. Practicar conversación no te sube el puntaje. Lo que lo sube es leer más rápido, reconocer vocabulario frecuente y no perder tiempo en las preguntas fáciles del principio.',
+          'La prueba avanza de menos a más: empieza con avisos e instrucciones cortas, sigue con vocabulario y diálogos, y termina con textos largos. Muchos estudiantes se quedan sin tiempo al final porque gastaron de más al comienzo.',
+        ],
+      },
+      {
+        h: 'Cuánto es un buen puntaje y qué significa',
+        body: [
+          'El puntaje va de 0 a 100 y se traduce a <strong>cuatro niveles, no más</strong>:',
+          '<strong>Pre A1 — 0 a 36 puntos.</strong> <strong>A1 — 37 a 57.</strong> <strong>A2 — 58 a 70.</strong> <strong>B1 — 71 a 100.</strong>',
+          'Hay un detalle que casi todo el contenido que circula tiene mal: <strong>B1 es el techo</strong>. El examen no reporta B2, ni C1, ni C2. Si alguien te dice que sacó B2 en el ICFES, no es posible. Tampoco existen las etiquetas «A−» ni «B+» que aparecen en muchas guías desactualizadas.',
+          'Por eso «sacar 100 en inglés en el ICFES» no significa tener inglés perfecto: significa haber llegado al tope de lo que la prueba mide, que es un B1 de comprensión lectora.',
+        ],
+      },
+      {
+        h: 'Cómo aprovechar un simulacro (y cómo desperdiciarlo)',
+        body: [
+          'Un simulacro no sirve para saber tu puntaje. Sirve para <strong>descubrir dónde se te va el tiempo y qué tipo de pregunta fallas</strong>. Si lo haces y solo miras el número final, desperdiciaste una hora.',
+          'Hazlo cronometrado y de una sentada, aunque sea incómodo: la presión de tiempo es la mitad de la dificultad real del examen.',
+          'Después revisa cada error y clasifícalo: ¿no sabías la palabra, entendiste mal la pregunta, o te quedaste sin tiempo? Son tres problemas distintos y se arreglan de tres maneras distintas.',
+          'Si el problema es vocabulario —lo más común—, empieza por las palabras que más se repiten en el examen antes que por listas genéricas.',
+        ],
+      },
+      {
+        h: 'Cuánto puedes subir y en cuánto tiempo',
+        body: [
+          'Depende de dónde partas, y conviene ser honesto: pasar de A1 a A2 suele ser más rápido que pasar de A2 a B1, porque el salto a B1 exige leer textos largos con soltura y no solo reconocer palabras sueltas.',
+          'Lo que sí es predecible es que la parte de vocabulario da resultados antes que ninguna otra, porque es la más mecánica y la que más peso tiene en las primeras secciones.',
+          'No te fíes de quien te prometa un número exacto de puntos en un número exacto de semanas sin haber visto un diagnóstico tuyo.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: '¿Los simulacros del ICFES de esta página son gratis?', a: 'Sí. Están construidos a partir de cuadernillos oficiales de años anteriores publicados por el ICFES, con su clave de respuestas. No hay que registrarse para hacerlos.' },
+      { q: '¿Cuántas preguntas de inglés tiene el ICFES y cuánto dura?', a: 'Son 45 preguntas de opción múltiple y el tiempo asignado es de 60 minutos.' },
+      { q: '¿El ICFES de inglés evalúa listening o speaking?', a: 'No. El componente de inglés del Saber 11 evalúa únicamente comprensión de lectura y vocabulario. No hay comprensión auditiva, ni producción escrita, ni prueba oral.' },
+      { q: '¿Cuál es el puntaje máximo y qué nivel equivale?', a: 'El máximo es 100 puntos, que corresponde al nivel B1. B1 es el techo de la prueba: el ICFES no reporta B2, C1 ni C2.' },
+      { q: '¿Cuáles son los niveles de inglés del ICFES?', a: 'Son cuatro: Pre A1 (0 a 36 puntos), A1 (37 a 57), A2 (58 a 70) y B1 (71 a 100). Las etiquetas «A−» y «B+» que circulan en muchas guías ya no existen.' },
+      { q: '¿Qué es un buen puntaje de inglés en el ICFES?', a: 'Depende de a qué aspires. Para llegar a B1, el nivel más alto que reporta la prueba, necesitas 71 puntos o más. Cada universidad y cada beca fija su propio corte, así que revisa el requisito concreto de la que te interesa.' },
+      { q: '¿Cómo sacar 100 en inglés en el ICFES?', a: 'Sacar 100 significa llegar al tope de lo que mide la prueba, que es comprensión lectora de nivel B1. En la práctica exige dos cosas: dominar el vocabulario de alta frecuencia que se repite año tras año, y leer lo bastante rápido para no quedarte sin tiempo en los textos largos del final.' },
+      { q: '¿Sirve de algo practicar con cuadernillos de años anteriores?', a: 'Sí, es lo más parecido al examen real que existe. La estructura del componente de inglés se ha mantenido estable, así que los tipos de pregunta y el nivel de dificultad son representativos.' },
+      { q: '¿Cuánto tiempo necesito para prepararme?', a: 'Depende de tu nivel de partida. El vocabulario es lo que más rápido rinde; el salto de A2 a B1 es el más lento porque exige leer textos largos con soltura. Desconfía de quien te prometa un número exacto de puntos en un plazo exacto sin haberte hecho un diagnóstico.' },
+      { q: '¿El puntaje de inglés afecta mi puntaje global del Saber 11?', a: 'El componente de inglés se reporta con su propio puntaje y su propio nivel. Cómo pesa en cada proceso de admisión o de beca lo define cada institución, así que consulta la convocatoria específica a la que vas a aplicar.' },
+    ],
+    sources: [
+      { label: 'ICFES — Guías de orientación Saber 11', url: 'https://www.icfes.gov.co/' },
+    ],
+    related: [
+      { href: '/blog/icfes-vocabulario-ingles-palabras-mas-frecuentes', label: 'Vocabulario que más se repite', note: 'Las palabras de alta frecuencia del examen. Es por donde más rápido se sube.' },
+      { href: '/blog/icfes-saber-11-niveles-ingles-guia-completa', label: 'Los cuatro niveles, explicados', note: 'Qué significa cada rango de puntaje y qué sabe hacer alguien en cada uno.' },
+      { href: '/practica/icfes-saber-11/sinonimos-inferencia', label: 'Sinónimos e inferencia', note: 'El tipo de pregunta que más se falla en la segunda mitad del examen.' },
+      { href: '/practica/icfes-saber-11/gramatica-conjunciones', label: 'Conectores y conjunciones', note: 'Para no perder puntos en los textos largos del final.' },
+      { href: '/blog/icfes-ingles-plan-estudio-3-meses', label: 'Plan de estudio de tres meses', note: 'Qué hacer cada semana si tienes un trimestre por delante.' },
+      { href: '/preparacion-icfes', label: 'Preparación con profesor', note: 'Cómo lo trabajamos en WeLearn, presencial en Bucaramanga u online.' },
+    ],
+    checked: 'agosto de 2026',
+  },
   'cambridge-b2': {
     lead:
       'Sí: el <strong>B2 First</strong>, el <strong>FCE</strong> y lo que casi todo el mundo llama simplemente <strong>«el First»</strong> son exactamente el mismo examen. No son tres certificados distintos ni tres niveles distintos. Cambridge le cambió el nombre para que el propio título dijera qué nivel acredita.',
@@ -134,6 +213,12 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     sources: [
       { label: 'Cambridge English — B2 First, resultados y escala', url: 'https://www.cambridgeenglish.org/exams-and-tests/first/results/' },
       { label: 'Cambridge English — B2 First', url: 'https://www.cambridgeenglish.org/exams-and-tests/first/' },
+    ],
+    related: [
+      { href: '/practica/ingles/b1/gramatica', label: 'Gramática B1', note: 'La base que hay que tener firme antes de entrar en material de B2.' },
+      { href: '/practica/ingles/b1/escritura', label: 'Escritura guiada', note: 'Produce textos y compáralos con un modelo del nivel.' },
+      { href: '/examenes/ielts', label: 'Simulacros de IELTS', note: 'Si dudas entre los dos exámenes, prueba también este formato.' },
+      { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Cómo enseñamos inglés en WeLearn, presencial u online.' },
     ],
     checked: 'agosto de 2026',
   },
