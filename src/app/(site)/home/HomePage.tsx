@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './Home.module.css';
 import SearchScrollVideo from './SearchScrollVideo';
 import HomeResultsArchive from './HomeResultsArchive';
+import HomeNarrativeRail from './HomeNarrativeRail';
 import {
   ANSWERS,
   EVIDENCE_STEPS,
@@ -44,11 +45,12 @@ function ArrowIcon() {
 
 export default function HomePage() {
   return (
-    <div className={styles.page}>
+    <div className={styles.page} data-home-narrative-root>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }}
       />
+      <HomeNarrativeRail />
 
       <section className={styles.hero} aria-labelledby="home-title">
         <div className={styles.heroWash} aria-hidden="true" />
@@ -140,7 +142,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className={styles.heroThread} aria-hidden="true">
+        <div className={styles.heroThread} data-home-narrative-anchor aria-hidden="true">
           <span>Tu meta</span>
           <i />
           <small>scroll</small>
@@ -192,7 +194,7 @@ export default function HomePage() {
       </nav>
 
       <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
-        <div className={styles.openingThread} aria-hidden="true">
+        <div className={styles.openingThread} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true">
           <i />
           <span />
         </div>
@@ -278,7 +280,7 @@ export default function HomePage() {
             stepProfile="method"
           />
           <div className={styles.methodFilmWash} />
-          <div className={styles.methodHandoff}><i /></div>
+          <div className={styles.methodHandoff} data-home-narrative-anchor data-home-narrative-track="gutter"><i /></div>
           <div className={styles.methodFilmGuide}>
             <span>Tu meta</span>
             <i />
@@ -374,6 +376,7 @@ export default function HomePage() {
           Esta secuencia representa el proceso. Los resultados reales se mostrarán
           con contexto suficiente e identidad protegida.
         </p>
+        <i className={styles.proofNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
       </section>
 
       <section
@@ -396,6 +399,7 @@ export default function HomePage() {
 
           <div className={styles.examNetwork} aria-label="Exámenes disponibles en WeLearn">
             <div className={styles.examNetworkSource} aria-hidden="true">
+              <i className={styles.examNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" />
               <span>Tu meta</span>
               <strong>una prueba concreta</strong>
             </div>
@@ -420,6 +424,7 @@ export default function HomePage() {
       </section>
 
       <section id="plataforma" className={styles.systemSection} aria-labelledby="system-title">
+        <i className={styles.systemNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
         <div className={styles.systemHeader}>
           <p className={styles.eyebrow}>La ruta se convierte en herramientas reales</p>
           <h2 id="system-title">Cursos, práctica y simulacros conectados con lo que necesitas lograr.</h2>

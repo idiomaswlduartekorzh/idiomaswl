@@ -13,7 +13,60 @@
   --width: 1240px;
   color: var(--copy);
   background: var(--paper);
+  position: relative;
+  isolation: isolate;
   overflow: clip;
+}
+
+.narrativeRail {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: visible;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.narrativeRail[data-ready='true'] {
+  opacity: 1;
+}
+
+.narrativeRailBase,
+.narrativeRailProgress {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.narrativeRailBase {
+  stroke: color-mix(in srgb, var(--red) 19%, transparent);
+  stroke-width: 1.25;
+}
+
+.narrativeRailProgress {
+  filter: drop-shadow(0 0 5px color-mix(in srgb, var(--yellow) 32%, transparent));
+  stroke: var(--red);
+  stroke-width: 2;
+}
+
+.narrativeRailPulse {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  background: var(--yellow);
+  box-shadow: 0 0 0 9px color-mix(in srgb, var(--yellow) 22%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform;
 }
 
 :global([data-theme='dark']) .page {
@@ -407,7 +460,7 @@
 .heroThread i {
   width: 2px;
   height: 76px;
-  background: var(--red);
+  background: transparent;
 }
 
 .heroThread small {
@@ -578,17 +631,17 @@
 .openingThread i {
   width: 2px;
   height: clamp(5.5rem, 10vw, 8rem);
-  background: var(--red);
+  background: transparent;
   transform-origin: top;
 }
 
 .openingThread span {
   width: 11px;
   height: 11px;
-  border: 2px solid var(--red);
+  border: 0;
   border-radius: 50%;
-  background: var(--yellow);
-  box-shadow: 0 0 0 7px color-mix(in srgb, var(--yellow) 18%, transparent);
+  background: transparent;
+  box-shadow: none;
 }
 
 .searchFilm {
@@ -963,9 +1016,9 @@
   left: 42%;
   width: 2px;
   height: 48%;
-  background: linear-gradient(180deg, var(--red), var(--yellow) 82%);
-  filter: drop-shadow(0 0 8px rgba(242, 199, 72, 0.28));
-  opacity: 0.86;
+  background: transparent;
+  filter: none;
+  opacity: 1;
   transform: translateX(-50%);
   transition: opacity 300ms ease;
 }
@@ -976,10 +1029,10 @@
   bottom: -5px;
   width: 11px;
   height: 11px;
-  border: 2px solid var(--red);
+  border: 0;
   border-radius: 50%;
-  background: var(--yellow);
-  box-shadow: 0 0 0 7px rgba(242, 199, 72, 0.12);
+  background: transparent;
+  box-shadow: none;
   transform: translateX(50%);
 }
 
@@ -988,13 +1041,11 @@
 }
 
 .methodFilmGuide i {
-  width: 2px;
-  height: 70px;
-  margin: 0.65rem 0;
-  background: linear-gradient(var(--red), var(--yellow));
+  display: none;
 }
 
 .methodFilmGuide small {
+  margin-top: 0.65rem;
   writing-mode: vertical-rl;
 }
 
@@ -1253,9 +1304,19 @@
   left: 42%;
   width: 2px;
   height: 17%;
-  background: var(--red);
-  box-shadow: 0 0 10px rgba(227, 41, 61, 0.24);
-  opacity: 0.92;
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.proofNarrativeAnchor {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 42%;
+  width: 2px;
+  height: 2px;
   transform: translateX(-50%);
 }
 
@@ -1280,13 +1341,11 @@
 }
 
 .proofFilmGuide i {
-  width: 2px;
-  height: 70px;
-  margin: 0.65rem 0;
-  background: linear-gradient(var(--red), var(--yellow));
+  display: none;
 }
 
 .proofFilmGuide small {
+  margin-top: 0.65rem;
   writing-mode: vertical-rl;
 }
 
@@ -1541,7 +1600,7 @@
   bottom: 0;
   left: 22px;
   width: 1px;
-  background: linear-gradient(#e3293d, rgba(34, 56, 213, 0.2));
+  background: rgba(34, 56, 213, 0.16);
   content: '';
 }
 
@@ -1561,9 +1620,28 @@
   height: 13px;
   border: 3px solid #f7f0e5;
   border-radius: 50%;
-  background: #e3293d;
-  box-shadow: 0 0 0 1px #e3293d;
+  background: transparent;
+  box-shadow: none;
   content: '';
+}
+
+.examNarrativeAnchor {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  width: 2px;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+
+.systemNarrativeAnchor {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  transform: translateX(-50%);
 }
 
 .examNetworkSource span {
@@ -1755,6 +1833,7 @@
 .catalogSection,
 .answersSection,
 .evidenceSection {
+  position: relative;
   width: min(var(--width), calc(100% - 3rem));
   margin-inline: auto;
   padding-block: clamp(7rem, 12vw, 12rem);
@@ -2071,7 +2150,7 @@
   left: 50%;
   width: 2px;
   height: 7rem;
-  background: linear-gradient(var(--red), rgba(255, 86, 104, 0.18));
+  background: transparent;
   transform: translateX(-50%);
 }
 
@@ -2081,10 +2160,10 @@
   left: 50%;
   width: 16px;
   height: 16px;
-  border: 3px solid var(--red);
+  border: 0;
   border-radius: 50%;
-  background: #ffd45d;
-  box-shadow: 0 0 0 12px rgba(255, 212, 93, 0.12);
+  background: transparent;
+  box-shadow: none;
   transform: translate(-50%, 50%);
 }
 
@@ -3338,6 +3417,10 @@
   }
 
   .proofExitLine {
+    left: 50%;
+  }
+
+  .proofNarrativeAnchor {
     left: 50%;
   }
 
