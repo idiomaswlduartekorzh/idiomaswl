@@ -122,8 +122,7 @@ export default function HomePage() {
                 src="/images/home/zhanna-hero-cutout-hq-v1.webp"
                 alt="Zhanna, cofundadora y directora académica de Idiomas WeLearn."
                 fill
-                priority
-                unoptimized
+                loading="eager"
                 sizes="(max-width: 760px) 72vw, (max-width: 1100px) 38vw, 540px"
                 className={styles.heroPersonImage}
               />
@@ -133,8 +132,8 @@ export default function HomePage() {
                 src="/images/home/david-hero-cutout-hq-v1.webp"
                 alt="José David, cofundador de Idiomas WeLearn."
                 fill
-                priority
-                unoptimized
+                loading="eager"
+                fetchPriority="high"
                 sizes="(max-width: 760px) 76vw, (max-width: 1100px) 42vw, 580px"
                 className={styles.heroPersonImage}
               />
@@ -142,7 +141,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className={styles.heroThread} data-home-narrative-anchor aria-hidden="true">
+        <div className={styles.heroThread} data-home-narrative-anchor data-home-narrative-track="center" aria-hidden="true">
           <span>Tu meta</span>
           <i />
           <small>scroll</small>
@@ -194,10 +193,12 @@ export default function HomePage() {
       </nav>
 
       <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
-        <div className={styles.openingThread} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true">
+        <div className={styles.openingThread} data-home-narrative-anchor data-home-narrative-track="center" aria-hidden="true">
           <i />
           <span />
         </div>
+        <i className={styles.openingBypassEntry} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
+        <i className={styles.openingBypassExit} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
 
         <div className={styles.searchFilm} aria-hidden="true">
           <SearchScrollVideo
@@ -280,7 +281,7 @@ export default function HomePage() {
             stepProfile="method"
           />
           <div className={styles.methodFilmWash} />
-          <div className={styles.methodHandoff} data-home-narrative-anchor data-home-narrative-track="gutter"><i /></div>
+          <div className={styles.methodHandoff} data-home-narrative-anchor data-home-narrative-track="media"><i /></div>
           <div className={styles.methodFilmGuide}>
             <span>Tu meta</span>
             <i />
@@ -376,7 +377,7 @@ export default function HomePage() {
           Esta secuencia representa el proceso. Los resultados reales se mostrarán
           con contexto suficiente e identidad protegida.
         </p>
-        <i className={styles.proofNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
+        <i className={styles.proofNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="media" aria-hidden="true" />
       </section>
 
       <section
@@ -399,7 +400,7 @@ export default function HomePage() {
 
           <div className={styles.examNetwork} aria-label="Exámenes disponibles en WeLearn">
             <div className={styles.examNetworkSource} aria-hidden="true">
-              <i className={styles.examNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" />
+              <i className={styles.examNarrativeAnchor} data-home-narrative-anchor />
               <span>Tu meta</span>
               <strong>una prueba concreta</strong>
             </div>
@@ -421,10 +422,13 @@ export default function HomePage() {
           WeLearn es una academia independiente. Los nombres de los exámenes identifican
           la preparación disponible y no implican patrocinio ni aval de sus organizaciones.
         </p>
+        <i className={styles.examNarrativeExit} data-home-narrative-anchor data-home-narrative-track="media" aria-hidden="true" />
       </section>
 
       <section id="plataforma" className={styles.systemSection} aria-labelledby="system-title">
-        <i className={styles.systemNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
+        <i className={styles.systemNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="media" aria-hidden="true" />
+        <i className={styles.systemNarrativeBypass} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
+        <i className={styles.systemNarrativeExit} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
         <div className={styles.systemHeader}>
           <p className={styles.eyebrow}>La ruta se convierte en herramientas reales</p>
           <h2 id="system-title">Cursos, práctica y simulacros conectados con lo que necesitas lograr.</h2>
@@ -440,7 +444,7 @@ export default function HomePage() {
           <article><strong>168</strong><span>prácticas y simulaciones registradas</span></article>
           <article><strong>10</strong><span>cuadernillos oficiales ICFES</span></article>
         </div>
-        <div className={styles.systemFlow}>
+        <div id="habilidades" className={styles.systemFlow}>
           {PRODUCT_AREAS.map((area, index) => (
             <article key={area.title}>
               <span>{String(index + 1).padStart(2, '0')}</span>

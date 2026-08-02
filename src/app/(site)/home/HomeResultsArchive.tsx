@@ -31,7 +31,7 @@ export default function HomeResultsArchive() {
       className={styles.resultsArchiveSection}
       aria-labelledby="results-archive-title"
     >
-      <div className={styles.resultsEntryLine} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true"><span /></div>
+      <div className={styles.resultsEntryLine} data-home-narrative-anchor data-home-narrative-track="center" aria-hidden="true"><span /></div>
 
       <div className={styles.resultsArchiveIntro}>
         <div>

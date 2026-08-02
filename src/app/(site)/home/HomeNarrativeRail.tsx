@@ -75,15 +75,24 @@ export default function HomeNarrativeRail() {
     const measure = () => {
       const rootRect = root.getBoundingClientRect();
       const anchors = Array.from(root.querySelectorAll<HTMLElement>(ANCHOR_SELECTOR));
+      const centerTrack = root.clientWidth / 2;
       const editorialGutter = root.clientWidth < 760
         ? 8
         : Math.max(18, (root.clientWidth - 1240) / 2 - 22);
+      const mediaTrack = root.clientWidth < 760 ? centerTrack : root.clientWidth * 0.42;
       const points = anchors.map((anchor) => {
         const rect = anchor.getBoundingClientRect();
+        const naturalX = rect.left - rootRect.left + rect.width / 2;
+        const track = anchor.dataset.homeNarrativeTrack;
+
         return {
-          x: anchor.dataset.homeNarrativeTrack === 'gutter'
+          x: track === 'gutter'
             ? editorialGutter
-            : rect.left - rootRect.left + rect.width / 2,
+            : track === 'center'
+              ? centerTrack
+              : track === 'media'
+                ? mediaTrack
+                : naturalX,
           // Sticky film layers move inside the viewport. offsetTop preserves each
           // anchor's place in the document even when the page opens on a hash.
           y: getStableOffsetTop(anchor, root),

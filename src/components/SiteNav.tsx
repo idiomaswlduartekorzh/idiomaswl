@@ -39,6 +39,7 @@ function isIdiomasPath(pathname: string) {
 function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
   const [open, setOpen] = useState(false);
   const initial = (user.email ?? 'U')[0].toUpperCase();
+  const menuId = 'wl-user-menu';
 
   return (
     <div className="wl-user-menu" onBlur={() => setTimeout(() => setOpen(false), 150)}>
@@ -46,13 +47,15 @@ function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
         className="wl-user-menu__trigger"
         onClick={() => setOpen(o => !o)}
         aria-label="Menú de usuario"
+        aria-expanded={open}
+        aria-controls={menuId}
       >
         <span className="wl-user-menu__avatar">{initial}</span>
         <span className="wl-user-menu__email">{user.email?.split('@')[0]}</span>
         <span className="wl-user-menu__chevron">{open ? '▲' : '▼'}</span>
       </button>
       {open && (
-        <div className="wl-user-menu__dropdown">
+        <div className="wl-user-menu__dropdown" id={menuId}>
           <div className="wl-user-menu__info">
             <span className="wl-user-menu__name">{user.email}</span>
           </div>
@@ -135,6 +138,7 @@ export default function SiteNav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(() => Boolean(createClient()));
+  const mobileMenuId = 'wl-site-nav-mobile';
 
   useEffect(() => {
     const supabase = createClient();
@@ -148,6 +152,17 @@ export default function SiteNav() {
     });
     return () => subscription.unsubscribe();
   }, []);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
+
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [menuOpen]);
 
   const handleSignOut = async () => {
     const supabase = createClient();
@@ -215,7 +230,9 @@ export default function SiteNav() {
         <button
           type="button"
           className="wl-site-nav__toggle"
-          aria-label="Abrir menú"
+          aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          aria-expanded={menuOpen}
+          aria-controls={mobileMenuId}
           onClick={() => setMenuOpen(o => !o)}
         >
           <span /><span /><span />
@@ -224,7 +241,7 @@ export default function SiteNav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <nav className="wl-site-nav__mobile">
+        <nav id={mobileMenuId} className="wl-site-nav__mobile" aria-label="Navegación móvil">
           {NAV_LINKS.map(({ label, href }) => (
             <div key={href}>
               <Link href={href} className="wl-site-nav__mobile-link" onClick={() => setMenuOpen(false)}>

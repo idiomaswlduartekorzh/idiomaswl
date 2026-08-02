@@ -12,6 +12,43 @@ type SearchScrollVideoProps = {
   webmSrc: string;
 };
 
+type ViewportSubscriber = () => void;
+
+const viewportSubscribers = new Set<ViewportSubscriber>();
+let sharedViewportFrame = 0;
+
+function notifyViewportSubscribers() {
+  sharedViewportFrame = 0;
+  viewportSubscribers.forEach((subscriber) => subscriber());
+}
+
+function requestViewportUpdate() {
+  if (!sharedViewportFrame) {
+    sharedViewportFrame = window.requestAnimationFrame(notifyViewportSubscribers);
+  }
+}
+
+function subscribeToViewport(subscriber: ViewportSubscriber) {
+  const shouldAttachListeners = viewportSubscribers.size === 0;
+  viewportSubscribers.add(subscriber);
+
+  if (shouldAttachListeners) {
+    window.addEventListener('scroll', requestViewportUpdate, { passive: true });
+    window.addEventListener('resize', requestViewportUpdate);
+  }
+
+  return () => {
+    viewportSubscribers.delete(subscriber);
+
+    if (viewportSubscribers.size === 0) {
+      window.cancelAnimationFrame(sharedViewportFrame);
+      sharedViewportFrame = 0;
+      window.removeEventListener('scroll', requestViewportUpdate);
+      window.removeEventListener('resize', requestViewportUpdate);
+    }
+  };
+}
+
 function clamp(value: number, minimum: number, maximum: number) {
   return Math.min(maximum, Math.max(minimum, value));
 }
@@ -49,8 +86,6 @@ export default function SearchScrollVideo({
       return;
     }
 
-    video.load();
-
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     if (reducedMotion.matches) {
@@ -58,11 +93,14 @@ export default function SearchScrollVideo({
       return;
     }
 
+    video.load();
+
     let animationFrame = 0;
     let duration = 0;
     let lastStep = -1;
     let needsMeasurement = true;
     let targetTime = 0;
+    let isNearViewport = typeof IntersectionObserver === 'undefined';
 
     const measureTarget = () => {
       const mediaBounds = scrollRoot.getBoundingClientRect();
@@ -136,6 +174,7 @@ export default function SearchScrollVideo({
     };
 
     const requestFrame = () => {
+      if (!isNearViewport) return;
       needsMeasurement = true;
       ensureFrame();
     };
@@ -148,8 +187,15 @@ export default function SearchScrollVideo({
 
     video.addEventListener('loadedmetadata', handleMetadata);
     video.addEventListener('seeked', ensureFrame);
-    window.addEventListener('scroll', requestFrame, { passive: true });
-    window.addEventListener('resize', requestFrame);
+    const unsubscribeFromViewport = subscribeToViewport(requestFrame);
+    const visibilityObserver = typeof IntersectionObserver === 'undefined'
+      ? null
+      : new IntersectionObserver(([entry]) => {
+          isNearViewport = entry.isIntersecting;
+          if (isNearViewport) requestFrame();
+        }, { rootMargin: '120% 0px' });
+
+    visibilityObserver?.observe(scrollRoot);
 
     if (video.readyState >= HTMLMediaElement.HAVE_METADATA) {
       handleMetadata();
@@ -157,10 +203,10 @@ export default function SearchScrollVideo({
 
     return () => {
       window.cancelAnimationFrame(animationFrame);
+      visibilityObserver?.disconnect();
+      unsubscribeFromViewport();
       video.removeEventListener('loadedmetadata', handleMetadata);
       video.removeEventListener('seeked', ensureFrame);
-      window.removeEventListener('scroll', requestFrame);
-      window.removeEventListener('resize', requestFrame);
       delete sequence.dataset.scrollStep;
     };
   }, [mp4Src, scrollRootId, sequenceId, stepProfile, webmSrc]);

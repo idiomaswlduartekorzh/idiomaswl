@@ -86,7 +86,6 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} h-full antialiased`}
     >
-      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       <head>
         {/* Theme: must run synchronously before paint — keep as inline script */}
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />

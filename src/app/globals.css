@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 :root {
+  color-scheme: light;
   --bg: #ffffff;
   --bg-2: #f4f4f6;
   --ink: #14215c;
   --ink-2: #2c3870;
-  --muted: #6f7691;
+  --muted: #5f6784;
   --line: #14215c;
   --line-soft: rgba(20, 33, 92, 0.12);
   --accent: #c8202e;
@@ -32,6 +33,7 @@
 ────────────────────────────────────────────────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --bg:         #0d0f1a;
     --bg-2:       #151929;
     --ink:        #e8ecf4;
@@ -46,6 +48,7 @@
 }
 /* Explicit toggle override */
 [data-theme="dark"] {
+  color-scheme: dark;
   --bg:         #0d0f1a;
   --bg-2:       #151929;
   --ink:        #e8ecf4;
@@ -90,6 +93,31 @@ a {
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+.wl-skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 0.65rem;
+  color: var(--ink);
+  background: var(--bg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  font-weight: 750;
+  transform: translateY(calc(-100% - 1rem));
+  transition: transform 160ms ease;
+}
+
+.wl-skip-link:focus {
+  transform: translateY(0);
+}
+
+.wl-site-nav :where(a, button):focus-visible {
+  outline: 3px solid #f2c748;
+  outline-offset: 3px;
 }
 
 /* Containers */
@@ -6300,6 +6328,20 @@ body {
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
 }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .wl-site-nav__link:hover,
+  :root:not([data-theme="light"]) .wl-site-nav__link.is-active {
+    color: #f4f6ff !important;
+    background: rgba(255,255,255,0.12) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.16) !important;
+  }
+}
+[data-theme="dark"] .wl-site-nav__link:hover,
+[data-theme="dark"] .wl-site-nav__link.is-active {
+  color: #f4f6ff !important;
+  background: rgba(255,255,255,0.12) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.16) !important;
+}
 .wl-site-nav__mobile {
   background: var(--glass-bg) !important;
   backdrop-filter: var(--glass-blur) !important;
@@ -6327,6 +6369,24 @@ body {
 .btn-ghost:hover {
   background: rgba(255,255,255,0.75) !important;
   color: var(--ink) !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .btn-ghost {
+    color: #f4f6ff !important;
+    background: rgba(255,255,255,0.08) !important;
+    border-color: rgba(255,255,255,0.2) !important;
+  }
+  :root:not([data-theme="light"]) .btn-ghost:hover {
+    background: rgba(255,255,255,0.15) !important;
+  }
+}
+[data-theme="dark"] .btn-ghost {
+  color: #f4f6ff !important;
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.2) !important;
+}
+[data-theme="dark"] .btn-ghost:hover {
+  background: rgba(255,255,255,0.15) !important;
 }
 
 /* ── wl-card (lesson runtime, stage panels) ──────────────────────────────── */
