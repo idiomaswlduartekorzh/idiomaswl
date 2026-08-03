@@ -1,6 +1,6 @@
 # Blueprint — Nav simplificado + Hub de Idiomas SEO/AEO/GEO
 
-**Estado:** propuesta para aprobación. No se ha tocado código.
+**Estado:** ✅ implementado y en producción. Nació como propuesta, pero se ejecutó — el §10 lleva el registro de commits por idioma, y `/clases-de-ruso`, `/clases-de-japones` y `/quienes-somos` ya existen, igual que los componentes compartidos de `src/components/hub/`. Lo único que sigue abierto está en §10.2. *(cabecera corregida el 2026-08-02: decía "no se ha tocado código" mientras el propio documento registraba los commits)*
 **Objetivo del usuario:** nav más corto (`HOME · Idiomas · Exámenes · Práctica · Quiénes somos`) + que cada idioma se convierta en un imán de búsqueda que aterrice gente y ahí encuentre TODO: práctica, ejercicios, clases, y a David/Zhanna como autoridad.
 
 ---
