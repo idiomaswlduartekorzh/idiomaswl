@@ -39,7 +39,7 @@ assert.equal((partOneLesson.match(/id: 'p1-/g) ?? []).length, 8, 'La Parte 1 deb
 for (const stage of ['category', 'clue', 'distractors']) {
   assert.match(partOneLesson, new RegExp(`id: '${stage}'`), `Falta el nivel progresivo ${stage} de la Parte 1`);
 }
-for (const part of [2, 3, 4, 5]) {
+for (const part of [2, 3, 4, 5, 6, 7]) {
   assert.equal((structuredLessons.match(new RegExp(`\\['p${part}-`, 'g')) ?? []).length, 15, `La Parte ${part} debe conservar 15 demostraciones guiadas`);
   assert.match(structuredLessons, new RegExp(`part: ${part},`), `Falta la configuración pedagógica de la Parte ${part}`);
 }
@@ -53,4 +53,4 @@ assert.doesNotMatch(publicTruth, /La prueba de Inglés del ICFES Saber 11 tiene 
 assert.doesNotMatch(publicTruth, /ICFES Nivel C1/i);
 assert.doesNotMatch(publicTruth, /solo evalúa comprensión de lectura/i);
 
-console.log('Superhub ICFES íntegro: 7 partes, Parte 1 progresiva, 25 revisiones guiadas, rangos explícitos, SEO y RLS verificados.');
+console.log('Superhub ICFES íntegro: 7 partes progresivas, 110 demostraciones, 25 revisiones guiadas, rangos explícitos, SEO y RLS verificados.');
