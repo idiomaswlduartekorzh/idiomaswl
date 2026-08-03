@@ -7,6 +7,7 @@ import { SkillsHeatmap } from './SkillsHeatmap'
 import { MockResultCard } from './MockResultCard'
 import { DailyChallengeCard } from './DailyChallengeCard'
 import { SkillMeter } from './SkillMeter'
+import type { IcfesBand } from '@/lib/types/icfes'
 
 interface DailyQuestion {
   id: string
@@ -18,7 +19,7 @@ interface DailyQuestion {
 
 interface IcfesDashboardClientProps {
   studentName: string
-  estimatedBand: 'A-' | 'A' | 'A+' | 'B' | 'B+'
+  estimatedBand: IcfesBand
   overallAccuracy: number
   mocksTaken: number
   consistencyDays: number
@@ -28,7 +29,7 @@ interface IcfesDashboardClientProps {
     subtitle?: string
     score: number
     maxScore: number
-    band: 'A-' | 'A' | 'A+' | 'B' | 'B+'
+    band: IcfesBand
     timeSpent: number
     completedAt: Date
   }>
@@ -80,11 +81,10 @@ export function IcfesDashboardClient({
   const [selectedWeakness, setSelectedWeakness] = useState<string | null>(null)
 
   const bandGradients: Record<string, string> = {
-    'A+': 'from-emerald-500 to-green-500',
-    'A': 'from-green-500 to-lime-500',
-    'A-': 'from-lime-500 to-yellow-500',
-    'B': 'from-yellow-500 to-orange-500',
-    'B+': 'from-orange-500 to-red-500',
+    'B1': 'from-emerald-500 to-green-500',
+    'A2': 'from-green-500 to-lime-500',
+    'A1': 'from-yellow-500 to-orange-500',
+    'Pre A1': 'from-orange-500 to-red-500',
   }
 
   const container = {
@@ -171,7 +171,7 @@ export function IcfesDashboardClient({
               >
                 <motion.div variants={item}>
                   <ProgressCard
-                    title="Banda estimada"
+                    title="Nivel de práctica"
                     value={estimatedBand}
                     subtitle={`Basada en ${mocksTaken} simulacros`}
                     icon="📈"
@@ -234,21 +234,15 @@ export function IcfesDashboardClient({
                       Tu predicción
                     </p>
                     <p className="text-5xl font-bold mt-2">
-                      Banda {estimatedBand}
+                      Nivel {estimatedBand}
                     </p>
                   </div>
 
                   <p className="text-white/80 max-w-md">
-                    {estimatedBand === 'A+' &&
-                      'Excelente desempeño. Mantén tu ritmo y estarás listo.'}
-                    {estimatedBand === 'A' &&
-                      'Muy buen progreso. Refuerza paráfrasis para alcanzar A+.'}
-                    {estimatedBand === 'A-' &&
-                      'Buen inicio. Practica más simulacros completos.'}
-                    {estimatedBand === 'B' &&
-                      'Necesitas intensificar. Haz retos diarios sin falta.'}
-                    {estimatedBand === 'B+' &&
-                      'Hay mucho potencial. Empieza con lo fundamental.'}
+                    {estimatedBand === 'B1' && 'Excelente desempeño dentro de la escala reportada. Conserva precisión y estrategia.'}
+                    {estimatedBand === 'A2' && 'Buena base. Refuerza paráfrasis, gramática en contexto e inferencia.'}
+                    {estimatedBand === 'A1' && 'Buen inicio. Prioriza vocabulario, avisos y conversaciones breves.'}
+                    {estimatedBand === 'Pre A1' && 'Empieza con vocabulario esencial y reconocimiento de instrucciones cortas.'}
                   </p>
 
                   <div className="pt-4 border-t border-white/20">

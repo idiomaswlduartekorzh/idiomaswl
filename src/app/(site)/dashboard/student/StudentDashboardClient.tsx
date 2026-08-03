@@ -324,8 +324,8 @@ const WEEKLY_CHALLENGES: Challenge[] = [
     week: 5, tag: 'ICFES',
     question: '¿Cuántas preguntas de inglés tiene el ICFES Saber 11?',
     options: ['30 preguntas', '45 preguntas', '55 preguntas', '60 preguntas'],
-    correct: 1,
-    explanation: 'La prueba de Inglés del ICFES Saber 11 tiene 45 preguntas. Evalúa habilidades de Reading y escucha con 90 minutos.',
+    correct: 2,
+    explanation: 'El cuadernillo estándar Saber 11 2026-2 incluye 55 preguntas de inglés en la segunda sesión. Evalúa lectura y uso de la lengua; no incluye listening.',
   },
   {
     week: 6, tag: 'Vocabulario',

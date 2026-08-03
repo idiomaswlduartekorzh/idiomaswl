@@ -60,7 +60,10 @@ export default function ExamenesClient() {
                     {sim.title}
                   </h2>
                   <p style={{ fontSize: '0.82rem', color: 'var(--muted)', margin: 0, lineHeight: 1.5 }}>
-                    {sim.totalQuestions} preguntas · {sim.timeMinutes} min · Nivel {LEVEL_LABEL[sim.year] ?? 'A1–B1'}
+                    {sim.totalQuestions} preguntas · práctica sugerida: {sim.timeMinutes} min · Nivel {LEVEL_LABEL[sim.year] ?? 'A1–B1'}
+                  </p>
+                  <p style={{ fontSize: '0.74rem', color: sim.id === 'icfes-2023-g11' ? '#047857' : 'var(--muted)', margin: '0.4rem 0 0', fontWeight: 700 }}>
+                    {sim.id === 'icfes-2023-g11' ? '✓ 25 explicaciones guiadas revisadas' : 'Clave y corrección final · explicación guiada aún no publicada'}
                   </p>
                 </div>
                 <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
@@ -81,7 +84,7 @@ export default function ExamenesClient() {
         {/* Info section */}
         <div style={{ maxWidth: 780, margin: '2.5rem auto 0', padding: '1.25rem 1.5rem', borderRadius: 12, background: 'rgba(15,61,140,0.04)', border: '1px solid rgba(15,61,140,0.12)' }}>
           <p style={{ fontSize: '0.82rem', color: 'var(--muted)', margin: 0, lineHeight: 1.65 }}>
-            <strong style={{ color: 'var(--ink)' }}>Dos formas de practicar:</strong> en modo examen navegas libremente y recibes corrección al final. El piloto guiado del cuadernillo 2023 muestra una pregunta a la vez y explica respuesta, evidencia y distractores. Cada tarjeta identifica con honestidad qué bloque tiene revisión editorial completa.
+            <strong style={{ color: 'var(--ink)' }}>Dos formas de practicar:</strong> en modo examen navegas libremente y recibes corrección al final. El modo guiado completo del cuadernillo 2023 muestra sus 25 preguntas una por una y explica respuesta, evidencia y distractores. Los demás cuadernillos no prometen explicaciones que aún no tienen.
           </p>
         </div>
       </div>

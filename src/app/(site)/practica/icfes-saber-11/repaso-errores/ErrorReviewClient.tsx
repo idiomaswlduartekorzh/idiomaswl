@@ -14,6 +14,10 @@ const RESOLVED_KEY = 'wl:icfes:error-review:resolved:v1';
 function readResolved(): Record<string, string> {
   try { return JSON.parse(window.localStorage.getItem(RESOLVED_KEY) ?? '{}') as Record<string, string>; } catch { return {}; }
 }
+function trackReview(questionId: string) {
+  window.dataLayer = window.dataLayer ?? [];
+  window.dataLayer.push({ event: 'icfes_error_review_complete', question_id: questionId });
+}
 export default function ErrorReviewClient({ questions }: { questions: IcfesPracticeQuestion[] }) {
   const [queue, setQueue] = useState<QueueItem[]>([]);
   const [ready, setReady] = useState(false);
@@ -36,20 +40,45 @@ export default function ErrorReviewClient({ questions }: { questions: IcfesPract
     } catch {
       // Una clave dañada no bloquea el resto del repaso.
     }
-    setQueue([...latestWrong.values()].flatMap((attempt) => {
+    const setLocalQueue = () => setQueue([...latestWrong.values()].flatMap((attempt) => {
       const question = byId.get(attempt.questionId);
       return question ? [{ question, attempt }] : [];
     }).sort((a, b) => a.attempt.answeredAt.localeCompare(b.attempt.answeredAt)));
-    setReady(true);
+    setLocalQueue();
+
+    void fetch('/api/icfes/practice-progress').then(async (response) => {
+      if (!response.ok) return;
+      const remote = await response.json() as {
+        errors?: { question_key: string; last_wrong_at: string }[];
+        attempts?: { question_key: string; selected_index: number; elapsed_seconds: number; answered_at: string }[];
+      };
+      const latestRemote = new Map((remote.attempts ?? []).map((attempt) => [attempt.question_key, attempt]));
+      for (const error of remote.errors ?? []) {
+        if (resolved[error.question_key]) continue;
+        const attempt = latestRemote.get(error.question_key);
+        if (!attempt) continue;
+        const previous = latestWrong.get(error.question_key);
+        if (!previous || previous.answeredAt < attempt.answered_at) latestWrong.set(error.question_key, {
+          questionId: error.question_key,
+          selectedIndex: attempt.selected_index,
+          isCorrect: false,
+          elapsedSeconds: attempt.elapsed_seconds,
+          answeredAt: attempt.answered_at,
+        });
+      }
+      setLocalQueue();
+    }).catch(() => { /* la cola local sigue disponible */ }).finally(() => setReady(true));
+    const fallback = window.setTimeout(() => setReady(true), 900);
+    return () => window.clearTimeout(fallback);
   }, [questions]);
 
   function resolve(questionId: string) {
     const resolved = readResolved();
     resolved[questionId] = new Date().toISOString();
     try { window.localStorage.setItem(RESOLVED_KEY, JSON.stringify(resolved)); } catch { /* funciona sin persistencia */ }
+    void fetch('/api/icfes/practice-progress', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ resolveQuestionId: questionId }), keepalive: true }).catch(() => {});
     setQueue((items) => items.filter((item) => item.question.id !== questionId));
-    window.dataLayer = window.dataLayer ?? [];
-    window.dataLayer.push({ event: 'icfes_error_review_complete', question_id: questionId });
+    trackReview(questionId);
   }
 
   if (!ready) return <div className={styles.reviewEmpty}>Preparando tu cola de repaso…</div>;

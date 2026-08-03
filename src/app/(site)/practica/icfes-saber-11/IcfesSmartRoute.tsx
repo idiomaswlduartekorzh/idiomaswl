@@ -807,7 +807,7 @@ export default function IcfesSmartRoute({ onBack }: IcfesSmartRouteProps) {
               {progress.diagnosticCompleted ? current.label : 'Diagnóstico inicial'}
             </h3>
             <p style={{ margin: '0 0 0.8rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.88rem' }}>
-              {progress.diagnosticCompleted ? current.description : '15 preguntas para ubicarte entre Base / Pre-A1 y B+ estratégico.'}
+              {progress.diagnosticCompleted ? current.description : '15 preguntas para ubicarte entre Base / Pre A1 y B1 avanzado. El nivel 5 es una ruta interna de estrategia, no un nivel adicional reportado por el ICFES.'}
             </p>
             {lastSavedReport && (
               <div style={{ borderTop: '1px solid var(--line-soft)', paddingTop: '0.75rem', color: 'var(--muted)', fontSize: '0.8rem', lineHeight: 1.55 }}>

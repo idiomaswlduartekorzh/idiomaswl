@@ -56,7 +56,7 @@ export default function Page() {
             <h1>Entiende las 7 partes. Practica con feedback. Llega con estrategia.</h1>
             <p>El componente de Inglés evalúa lectura y uso del idioma mediante siete tipos de tarea. Aquí puedes aprender el método, practicar sin registro y pasar después a cuadernillos o una ruta enfocada en tus errores.</p>
             <div className={styles.hubActions}>
-              <Link href="/practica/icfes-saber-11/parte-1" className={styles.primaryButton}>Empezar por la Parte 1</Link>
+              <Link href="/practica/icfes-saber-11/diagnostico" className={styles.primaryButton}>Hacer diagnóstico</Link>
               <Link href="/practica/icfes-saber-11/examenes" className={styles.secondaryButton}>Ver cuadernillos</Link>
             </div>
             <div className={styles.truthStrip}>
@@ -84,9 +84,10 @@ export default function Page() {
         <section className={styles.startModes} aria-labelledby="start-title">
           <div><p className={styles.hubKicker}>Elige el punto de entrada</p><h2 id="start-title">No todos necesitan comenzar en el mismo lugar</h2></div>
           <div className={styles.modeGrid}>
-            <Link href="/practica/icfes-saber-11/parte-1"><span>01</span><div><strong>Quiero aprender</strong><p>Ve parte por parte con estrategia y feedback.</p></div></Link>
+            <Link href="/practica/icfes-saber-11/diagnostico"><span>01</span><div><strong>No sé por dónde empezar</strong><p>Haz 15 preguntas y recibe una ruta inicial.</p></div></Link>
             <Link href="/practica/icfes-saber-11/examenes"><span>02</span><div><strong>Quiero medirme</strong><p>Responde un cuadernillo y revisa tu resultado.</p></div></Link>
             <Link href="/practica/icfes-saber-11/repaso-errores"><span>03</span><div><strong>Quiero corregir errores</strong><p>Vuelve a la evidencia y aplica la microlección.</p></div></Link>
+            <Link href="/practica/icfes-saber-11/progreso"><span>04</span><div><strong>Quiero ver mi avance</strong><p>Consulta dominio, sesiones y errores sincronizados.</p></div></Link>
           </div>
         </section>
 
@@ -121,10 +122,11 @@ export default function Page() {
         </section>
 
         <section className={styles.hubSource}>
-          <div><strong>Fuente oficial de estructura</strong><p>Guía de orientación Saber 11 2026-2, Instituto Colombiano para la Evaluación de la Educación (ICFES).</p></div>
+          <div><strong>Fuente oficial de estructura</strong><p><a href="https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf" target="_blank" rel="noreferrer">Guía de orientación Saber 11 2026-2</a>, Instituto Colombiano para la Evaluación de la Educación (ICFES).</p></div>
           <div><strong>Criterio editorial</strong><p>Las preguntas propias se identifican como práctica. Los cuadernillos divulgados conservan su fuente y no se confunden con la aplicación estándar completa.</p></div>
           <div><strong>Última revisión</strong><p>3 de agosto de 2026</p></div>
         </section>
+        <div className={styles.hubPlanCta}><div><span>¿Ya sabes cuándo presentas?</span><strong>Convierte el tiempo disponible en una ruta semanal.</strong></div><div className={styles.hubActions}><Link href="/practica/icfes-saber-11/pregunta-del-dia" className={styles.secondaryButton}>Pregunta del día</Link><Link href="/practica/icfes-saber-11/plan-de-estudio" className={styles.primaryButton}>Crear plan</Link></div></div>
       </div>
     </main>
   );

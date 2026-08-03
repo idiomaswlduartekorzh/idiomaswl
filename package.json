@@ -15,6 +15,8 @@
     "audit:writing-curriculum": "node scripts/audit-writing-curriculum.mjs",
     "check:reading-content": "node scripts/check-reading-content.mjs",
     "test:reading": "node --test tests/reading-content.test.mjs",
+    "test:icfes": "node --test tests/icfes-scoring.test.mjs",
+    "check:icfes-superhub": "node scripts/check-icfes-superhub.mjs",
     "check:exam-practice-content": "node scripts/check-exam-practice-content.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",
     "clean": "rm -rf .next .turbo node_modules/.cache && echo '✓ Cache limpiado'"

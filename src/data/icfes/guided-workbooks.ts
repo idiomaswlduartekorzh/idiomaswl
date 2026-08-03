@@ -1,5 +1,5 @@
 import type { IcfesPracticeQuestion, IcfesQuestionOption } from './questions';
-import { getSimulacro } from '@/data/mocks/icfes-simulacros';
+import { getSimulacro, getSimulacroQuestionPart } from '@/data/mocks/icfes-simulacros';
 
 const DEFINITIONS: Record<string, string> = {
   cold: 'A cold is a common illness; it is not an action, person, place or treatment.',
@@ -11,12 +11,42 @@ const DEFINITIONS: Record<string, string> = {
   'stomach-ache': 'A stomach-ache is pain felt in the stomach area.',
 };
 
-const REVIEW: Record<number, { explanation: string; evidence: string; evidenceReason: string; lesson: string; lessonBody: string }> = {
+interface GuidedReview {
+  explanation: string;
+  evidence: string;
+  evidenceReason: string;
+  lesson: string;
+  lessonBody: string;
+  optionRationales?: string[];
+  strategy?: string;
+}
+
+const REVIEW: Record<number, GuidedReview> = {
   1: { explanation: 'Cry es la única opción que describe una acción que una persona puede hacer por tristeza o enfermedad.', evidence: 'do this when they feel really sad', evidenceReason: '“Do this” exige una acción y “sad” conecta directamente con cry.', lesson: 'Busca la categoría gramatical', lessonBody: 'La frase “do this” anticipa un verbo. Esa pista descarta enfermedades, personas, lugares y objetos antes de traducir.' },
   2: { explanation: 'Medicine es algo que una persona puede tomar para aliviar un dolor de cabeza.', evidence: 'take this ... headache', evidenceReason: 'La combinación take + problema de salud selecciona un tratamiento.', lesson: 'Aprende colocaciones', lessonBody: 'En inglés se dice take medicine. Las colocaciones son pares de palabras que suelen aparecer juntas.' },
   3: { explanation: 'Doctor es la persona a quien consultas cuando estás enfermo o herido.', evidence: 'see this person', evidenceReason: 'Person limita las opciones a una profesión y see a doctor es la expresión natural.', lesson: 'La pista puede estar en el pronombre', lessonBody: 'This person pide una persona; this place pediría un lugar. Usa esas palabras funcionales para descartar.' },
   4: { explanation: 'Hospital es el lugar al que puedes ir cuando necesitas atención para tu cuerpo.', evidence: 'go to this place', evidenceReason: 'Place exige un lugar y el contexto de enfermedad identifica hospital.', lesson: 'Distingue persona y lugar', lessonBody: 'Doctor es una persona; hospital es un lugar. En bancos temáticos, reconocer la clase de respuesta ahorra tiempo.' },
   5: { explanation: 'Stomach-ache es el dolor que puede aparecer después de comer demasiado.', evidence: 'have this when you eat too much', evidenceReason: 'La consecuencia descrita es un malestar del estómago, no una persona, lugar o medicamento.', lesson: 'Usa causa y consecuencia', lessonBody: 'La causa “eat too much” permite predecir un problema digestivo antes de mirar el banco de palabras.' },
+  6: { explanation: 'What a pity! expresa decepción o pesar ante la decisión de no participar.', evidence: "I don't think I'm going to enter", evidenceReason: 'La persona anuncia que probablemente no participará; la respuesta natural reconoce esa mala noticia.', lesson: 'Responde a la intención', lessonBody: 'Certainly confirma una solicitud y Good luck desea éxito. What a pity reacciona a una oportunidad que se pierde.', optionRationales: ['Certainly! confirma algo, pero aquí no hay una pregunta ni solicitud.', 'Good luck! sería natural si la persona sí fuera a competir.', 'What a pity! reconoce de forma coherente que no participar es una lástima.'], strategy: 'Clasifica primero la noticia como positiva, negativa, pregunta o propuesta.' },
+  7: { explanation: "It's too big es una opinión directa sobre el sombrero y responde exactamente a What do you think...?", evidence: 'What do you think of my hat?', evidenceReason: 'La estructura pide una valoración del objeto mencionado.', lesson: 'What do you think of…?', lessonBody: 'Esta pregunta pide una opinión. La respuesta debe describir o valorar el objeto: nice, unusual, too big, etc.', optionRationales: ["Don't come es una orden sin relación con el sombrero.", 'Very well describe cómo se hace una acción; no funciona como opinión completa sobre un objeto.', "It's too big ofrece una valoración clara y gramatical del sombrero."], strategy: 'Predice la función de la respuesta antes de leer las opciones: aquí debe ser una opinión.' },
+  8: { explanation: "Let's do it now propone discutir los planes de inmediato y mantiene la coherencia del diálogo.", evidence: "We haven't discussed our tour plans yet", evidenceReason: 'Yet señala una tarea pendiente; una propuesta para hacerla ahora responde directamente.', lesson: 'Let’s + verbo', lessonBody: 'Let’s introduce una propuesta compartida: Let’s discuss it, Let’s start, Let’s go.', optionRationales: ['You poor thing expresa compasión por un problema personal, no propone planear.', "Let's do it now retoma discuss our plans y ofrece una acción conjunta.", 'As late as possible responde a una pregunta de tiempo que nadie formuló.'], strategy: 'Busca qué opción retoma la acción pendiente, no solo una palabra relacionada con tiempo.' },
+  9: { explanation: 'Venezuela ocupa el segundo lugar después de Italia en consumo de pasta.', evidence: 'Italy is followed by Venezuela, then Tunisia.', evidenceReason: 'Followed by marca el orden: Italia primero, Venezuela segundo y Túnez tercero.', lesson: 'Convierte conectores en orden', lessonBody: 'A is followed by B significa que B viene después de A. Dibuja 1→2→3 si la pregunta pide una posición.', optionRationales: ['The Philippines aparece como un lugar donde gusta la pasta, pero no ocupa el segundo puesto.', 'Mexico también aparece como ejemplo de popularidad, no en el ranking de consumo.', 'Venezuela aparece inmediatamente después de Italia en la secuencia explícita.'], strategy: 'Localiza la frase de ranking y no confundas ejemplos geográficos con posiciones.' },
+  10: { explanation: 'El texto afirma que la pasta se popularizó porque es una comida de bajo costo.', evidence: 'Pasta has become popular because it is a low-cost meal', evidenceReason: 'Low-cost es una paráfrasis directa de cheap.', lesson: 'Reconoce paráfrasis', lessonBody: 'cheap = low-cost; difficult = complicated. La opción correcta suele cambiar las palabras sin cambiar la idea.', optionRationales: ['El tomate se menciona como acompañamiento, no como la causa principal de popularidad.', 'Cheap parafrasea low-cost exactamente.', 'El texto dice not difficult, lo contrario de complicated.'], strategy: 'Busca sinónimos y verifica que la relación causal because se conserve.' },
+  11: { explanation: 'Los atletas comen pasta porque produce energía, es decir, mejora su capacidad para la actividad.', evidence: 'It also produces energy, which is why athletes eat pasta.', evidenceReason: 'La oración conecta explícitamente energía con la elección de los deportistas.', lesson: 'Une causa y paráfrasis', lessonBody: 'Produces energy no aparece idéntico en la opción: se expresa como improves activity levels.', optionRationales: ['Improves activity levels resume el efecto de producir energía.', 'Fills your stomach no significa vaciarlo y no es la razón dada para atletas.', 'La preparación sencilla es una ventaja general, no la razón específica de los deportistas.'], strategy: 'Cuando la pregunta dice because, identifica la causa exacta y luego su paráfrasis.' },
+  12: { explanation: 'La pasta se hizo conocida en Estados Unidos cuando inmigrantes italianos llegaron y llevaron sus hábitos alimentarios.', evidence: 'When many Italians immigrated to America ... they took their eating habits with them', evidenceReason: 'Immigrated to America equivale a arrived there y explica la difusión.', lesson: 'Pronombres de lugar', lessonBody: 'There reemplaza United States/America. Comprueba siempre qué sustantivo retoma un pronombre.', optionRationales: ['Arrived there parafrasea immigrated to America.', 'Que les gustara la pizza no explica cómo la pasta llegó al país.', 'El texto no dice que fueran famosos.'], strategy: 'Reconstruye la cadena: personas emigran → llevan hábitos → la comida se populariza.' },
+  13: { explanation: 'El texto corrige el mito de Marco Polo y atribuye a los árabes la llegada de una pasta similar a los fideos.', evidence: 'Arabs brought a noodle-like pasta to Sicily ... in the 8th century.', evidenceReason: 'Esta es la afirmación histórica explícita que responde quién la llevó.', lesson: 'Cuidado con el mito mencionado', lessonBody: 'Los textos suelen presentar una creencia para negarla. La frase but this is not true invalida Marco Polo.', optionRationales: ['Marco Polo aparece en una versión que el texto niega.', 'Sicilians identifica habitantes del lugar, pero el agente mencionado son Arabs.', 'Arabs es el sujeto de brought y por eso responde Who.'], strategy: 'Después de but, however o not true, actualiza la información; no conserves la primera versión.' },
+  14: { explanation: 'Tanto la pizza como la pasta llegaron a América con la inmigración italiana.', evidence: 'they took their eating habits with them, so pasta and pizza became popular', evidenceReason: 'El antecedente son los italianos que emigraron a América; ambas comidas forman parte de esos hábitos.', lesson: 'Encuentra el rasgo compartido', lessonBody: 'Both exige una afirmación válida para los dos elementos, no una característica indicada solo para uno.', optionRationales: ['El texto solo relaciona la conservación prolongada con ingredientes simples de la pasta.', 'Ambas comidas llegaron desde la cultura italiana y se popularizaron en América.', 'El texto dice que hay más de 600 tipos de pasta cocinados de distintas maneras.'], strategy: 'Prueba cada opción dos veces: una con pizza y otra con pasta.' },
+  15: { explanation: 'El propósito global es animar al lector a sonreír con mayor frecuencia explicando sus beneficios.', evidence: "It's a good idea to smile more often ... Here are some reasons", evidenceReason: 'La recomendación aparece al inicio y se sostiene con razones durante todo el texto.', lesson: 'Propósito = verbo + tema', lessonBody: 'Para formular propósito usa verbos como encourage, explain, warn o describe y comprueba todo el texto, no un párrafo.', optionRationales: ['La cortesía hacia otros no es la tesis central.', 'El texto se enfoca en beneficios de sonreír, no en consecuencias de no hacerlo.', 'Las situaciones difíciles no organizan el texto completo.', 'Encouraging ... to smile more frequently coincide con la recomendación y sus razones.'], strategy: 'Lee introducción y cierre; si repiten una recomendación, probablemente revelan el propósito.' },
+  16: { explanation: 'El segundo párrafo explica cómo sonreír puede hacer que una persona parezca más joven, saludable y atractiva.', evidence: 'give you a more youthful look ... seem healthier and more attractive', evidenceReason: 'Todas esas expresiones describen una mejora en la apariencia.', lesson: 'Resume varios ejemplos', lessonBody: 'Una respuesta global puede condensar youthful, healthier y attractive como appear better.', optionRationales: ['Appear better resume las mejoras visuales enumeradas.', 'Mostrar interés en otros no aparece en el párrafo 2.', 'La popularidad social se trata después, no en este párrafo.', 'Transmitir felicidad aparece en el párrafo social, no en el segundo.'], strategy: 'Respeta el párrafo indicado: una idea verdadera en otra sección sigue siendo distractor.' },
+  17: { explanation: 'El tercer párrafo afirma que sonreír puede producir felicidad casi de inmediato.', evidence: 'It makes you happy almost immediately.', evidenceReason: 'La opción correcta conserva tanto el efecto como la rapidez.', lesson: 'Conserva los modificadores', lessonBody: 'Almost immediately se convierte en very quickly. Los detalles de tiempo ayudan a distinguir opciones cercanas.', optionRationales: ['No dice que reaccionen con frecuencia a situaciones graciosas.', 'No explica cuándo necesitan sentirse bien.', 'Ayudar a otros es una recomendación, pero no el efecto principal preguntado.', 'Feel happy very quickly parafrasea makes you happy almost immediately.'], strategy: 'Busca en la opción equivalencias exactas de efecto y tiempo.' },
+  18: { explanation: 'En situaciones sociales, una sonrisa muestra felicidad y puede transmitirla a otras personas.', evidence: 'shows you are a happy person, and you can transmit the feeling to them', evidenceReason: 'La opción correcta reúne la señal social y su efecto en los demás.', lesson: 'Evita invertir la relación', lessonBody: 'El texto dice que tú transmites felicidad; no que necesitas la atención ajena para sentir confianza.', optionRationales: ['Invierte la idea: el texto no dice que necesites atención para sentirte seguro.', 'No afirma que una sonrisa controle lo que otros hacen.', 'Resume mostrar felicidad y contagiarla a los demás.', 'Mezcla atractivo con necesidad de aceptación, una motivación no indicada.'], strategy: 'Comprueba quién causa qué: sujeto, acción y receptor deben coincidir.' },
+  19: { explanation: 'El mejor anuncio reúne la promesa central: sonreír es fácil y rápido y beneficia salud, felicidad y atractivo.', evidence: 'a fast way to feel happy ... healthier and more attractive', evidenceReason: 'La tercera opción integra ideas repetidas en la conclusión y en los párrafos de beneficios.', lesson: 'Síntesis sin inventar', lessonBody: 'Una buena síntesis cubre varias ideas centrales y evita agregar resultados que el texto nunca promete.', optionRationales: ['El texto dice youthful, no older, así que contradice un beneficio central.', 'No afirma que sonreír mejore los dientes ni la figura rápidamente.', 'Combina rapidez, facilidad y los tres grupos principales de beneficios.', 'Professional no es una conclusión del texto y reduce el mensaje a una imagen laboral.'], strategy: 'Selecciona la opción con mayor cobertura de ideas centrales y cero contradicciones.' },
+  20: { explanation: 'La estructura correcta es it is a fruit, not a vegetable: afirma una categoría y niega la otra.', evidence: 'it is a fruit, [20] a vegetable', evidenceReason: 'Después de la coma falta el marcador de negación que contrasta ambos sustantivos.', lesson: 'Not frente a neither/nor', lessonBody: 'Not niega directamente un elemento. Neither ... nor requiere una estructura doble: neither a fruit nor a vegetable.', optionRationales: ['Neither necesitaría coordinarse con nor y además negaría que sea fruta.', 'Nor no puede aparecer solo en esta estructura afirmativa.', 'Not crea el contraste correcto: fruta, no verdura.', 'No funciona como determinante antes de vegetable, pero aquí se necesita negar la clasificación.'], strategy: 'Lee ambos lados del contraste y reconstruye la oración completa.' },
+  21: { explanation: 'Second es el ordinal necesario para indicar que la banana ocupa el puesto número dos.', evidence: 'the banana, the [21] one in popularity', evidenceReason: 'The ___ one pide un adjetivo ordinal que exprese posición en un ranking.', lesson: 'Cardinales y ordinales', lessonBody: 'Two cuenta; second ordena. Después de the y antes de one, un ranking exige second.', optionRationales: ['Two es cardinal y no funciona en the two one.', 'Both se refiere a dos elementos juntos, no a una posición.', 'Twice expresa doble cantidad o frecuencia.', 'Second es el ordinal correcto para el segundo puesto.'], strategy: 'Si hay ranking, busca first, second, third; no números cardinales.' },
+  22: { explanation: 'Were grown es una pasiva correcta: los aztecas e incas cultivaron tomates.', evidence: 'Tomatoes were first [22] by Aztecs and Incas', evidenceReason: 'Were + participio + by señala voz pasiva; grown es el participio semánticamente adecuado.', lesson: 'Detecta la voz pasiva', lessonBody: 'La fórmula be + past participle + by indica quién realizó la acción: were grown by.', optionRationales: ['Achieved significa lograr y no se usa para cultivar tomates.', 'Done es gramaticalmente participio, pero no tiene el significado necesario.', 'Grown completa la pasiva y significa cultivados.', 'Invented se usa para algo creado, no para una planta cultivada.'], strategy: 'Valida dos filtros: forma de participio y significado en contexto.' },
+  23: { explanation: 'Introduce something into a place expresa llevar algo al interior de un nuevo territorio o sistema.', evidence: 'introduced the tomato [23] Europe', evidenceReason: 'La colocación introduce X into Y es la única combinación natural entre las opciones.', lesson: 'Preposición como colocación', lessonBody: 'No todas las preposiciones se traducen literalmente. Aprende la unidad introduce into.', optionRationales: ['Introduce out no forma esta construcción.', 'Introduce on no señala destino.', 'Introduce at no funciona con el continente como destino.', 'Introduce into expresa entrada a Europa.'], strategy: 'Lee verbo + objeto + destino como una sola colocación.' },
+  24: { explanation: 'Rich in es la colocación estándar para indicar que un alimento contiene muchos nutrientes.', evidence: 'Tomatoes are [24] in vitamins A and C', evidenceReason: 'La preposición in ya está escrita y selecciona rich.', lesson: 'Mira la palabra después del espacio', lessonBody: 'Rich in y full of son correctas, pero usan preposiciones distintas. La oración ya fija in.', optionRationales: ['Charged in no describe contenido nutricional.', 'Rich in es la colocación exacta.', 'Loaded suele construirse loaded with, no loaded in.', 'Full exige of: full of vitamins.'], strategy: 'La preposición visible puede decidir entre sinónimos aparentes.' },
+  25: { explanation: 'Medical research es el sustantivo colectivo que puede sugerir una conclusión científica.', evidence: 'new medical [25] suggests', evidenceReason: 'Research concuerda con medical y con el verbo singular suggests.', lesson: 'Colocación y concordancia', lessonBody: 'Research es incontable en este uso: new research suggests, no researches suggest.', optionRationales: ['Una operación no es evidencia general que sugiera esta conclusión.', 'Prescription es una orden de tratamiento para un paciente.', 'Drug nombra un medicamento, no el proceso de estudio.', 'Medical research es la colocación lógica y concuerda con suggests.'], strategy: 'Comprueba significado, colocación y concordancia antes de elegir.' },
 };
 
 export const GUIDED_WORKBOOK_IDS = ['icfes-2023-g11'] as const;
@@ -26,37 +56,48 @@ export function getGuidedWorkbookQuestions(examId: string): IcfesPracticeQuestio
   const exam = getSimulacro(examId);
   if (!exam) return [];
 
-  return exam.questions.slice(0, 5).map((question) => {
+  return exam.questions.map((question) => {
     const review = REVIEW[question.n];
     if (!review) throw new Error(`Falta revisión guiada para ${examId}-q${question.n}`);
+    const officialPart = getSimulacroQuestionPart(exam, question.n);
+    const passage = question.passageId ? exam.passages.find((item) => item.id === question.passageId) : undefined;
     const options: IcfesQuestionOption[] = question.options.map((option, index) => ({
       text: option,
-      rationale: index === question.answer
+      rationale: review.optionRationales?.[index] ?? (index === question.answer
         ? `${DEFINITIONS[option]} Esta definición sí cumple todas las pistas.`
-        : `${DEFINITIONS[option]} Por eso no cumple la descripción completa.`,
+        : `${DEFINITIONS[option]} Por eso no cumple la descripción completa.`),
       ...(index === question.answer ? {} : { trap: index % 2 === 0 ? 'categoría incorrecta' as const : 'pista parcial' as const }),
     }));
 
+    const partProfile = ({
+      1: { skill: 'vocabulary_basic', subskill: 'health', type: 'word-match' as const, reinforcement: '/practica/icfes-saber-11/vocabulario' },
+      3: { skill: 'dialogue_completion', subskill: 'functional-response', type: 'dialogue' as const, reinforcement: '/practica/icfes-saber-11/parte-3' },
+      5: { skill: 'literal_reading', subskill: 'explicit-information', type: 'reading' as const, reinforcement: '/practica/icfes-saber-11/parte-5' },
+      6: { skill: 'inference_reading', subskill: 'purpose-and-inference', type: 'reading' as const, reinforcement: '/practica/icfes-saber-11/parte-6' },
+      7: { skill: 'lexical_grammar_cloze', subskill: 'collocation-and-form', type: 'lexical-cloze' as const, reinforcement: '/practica/icfes-saber-11/parte-7' },
+    } as Partial<Record<number, { skill: string; subskill: string; type: IcfesPracticeQuestion['type']; reinforcement: string }>>)[officialPart];
+    if (!partProfile) throw new Error(`Parte ${officialPart} sin perfil guiado en ${examId}`);
+
     return {
       id: `${exam.id}-guided-q${question.n}`,
-      officialPart: 1,
-      skill: 'vocabulary_basic',
-      subskill: 'health',
-      type: 'word-match',
-      difficulty: question.n <= 2 ? 'base' : 'estandar',
-      stimulus: 'Health',
-      stimulusLabel: 'Banco temático del cuadernillo',
+      officialPart,
+      skill: partProfile.skill,
+      subskill: partProfile.subskill,
+      type: partProfile.type,
+      difficulty: question.n <= 8 ? 'base' : question.n <= 19 ? 'estandar' : 'reto',
+      stimulus: passage?.text ?? question.stem,
+      stimulusLabel: passage?.title ?? (question.type === 'dialog' ? 'Conversación' : 'Banco temático del cuadernillo'),
       wordBank: question.vocabWords,
-      prompt: question.stem,
+      prompt: passage ? question.stem : question.type === 'dialog' ? 'What is the best response?' : question.stem,
       options,
       answerIndex: question.answer,
       explanation: review.explanation,
       evidence: { quote: review.evidence, reason: review.evidenceReason },
-      strategy: 'Clasifica primero la respuesta como acción, persona, lugar, problema o tratamiento; después comprueba la pista semántica.',
+      strategy: review.strategy ?? 'Clasifica primero la respuesta como acción, persona, lugar, problema o tratamiento; después comprueba la pista semántica.',
       microLesson: { title: review.lesson, body: review.lessonBody },
       targetSeconds: 30,
-      tags: ['official-workbook', 'health', 'guided-pilot'],
-      reinforcement: { label: 'Practicar vocabulario relacionado', href: '/practica/icfes-saber-11/vocabulario' },
+      tags: ['official-workbook', `part-${officialPart}`, 'guided-complete'],
+      reinforcement: { label: `Reforzar Parte ${officialPart}`, href: partProfile.reinforcement },
       source: { type: 'official-workbook', reference: exam.source },
       reviewedAt: '2026-08-03',
       editorialStatus: 'published',

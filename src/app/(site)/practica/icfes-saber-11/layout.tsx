@@ -31,7 +31,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             Todo para el inglés del ICFES
           </h2>
           <p style={{ fontSize: '0.9rem', color: 'var(--muted)', marginBottom: '1.1rem', lineHeight: 1.6 }}>
-            Recuerda que la prueba solo evalúa comprensión de lectura, y que B1 es el techo:
+            La prueba evalúa lectura y uso de la lengua, y B1 es el nivel máximo reportado:
             el examen no reporta B2 ni nada por encima.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: '0.7rem' }}>

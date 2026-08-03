@@ -111,7 +111,7 @@ export default async function IcfesPartPage({ params }: Props) {
         </section>
 
         <section className={styles.sourceSection}>
-          <div><span>Fuente y revisión</span><p>Estructura contrastada con la Guía de orientación Saber 11 2026-2 del ICFES. Ejercicios propios de práctica; no se presentan como preguntas oficiales.</p></div>
+          <div><span>Fuente y revisión</span><p>Estructura contrastada con la <a href="https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf" target="_blank" rel="noreferrer">Guía de orientación Saber 11 2026-2 del ICFES</a>. Ejercicios propios de práctica; no se presentan como preguntas oficiales.</p></div>
           <div><span>Última revisión editorial</span><p>{REVIEWED_AT}</p></div>
         </section>
 

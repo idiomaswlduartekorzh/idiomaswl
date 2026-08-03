@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { IcfesPracticeQuestion } from '@/data/icfes/questions';
-import type { IcfesPartConfig } from '@/data/icfes/parts';
+import { ICFES_PARTS, type IcfesPartConfig } from '@/data/icfes/parts';
+import { calculatePracticeResult } from '@/lib/icfes/scoring.mjs';
 import styles from '../icfes-learning.module.css';
 
 declare global {
@@ -29,6 +30,23 @@ interface LocalProgress {
 }
 
 const STORAGE_PREFIX = 'wl:icfes:part-progress:v1';
+type PracticeContext = 'part-practice' | 'guided-simulator' | 'daily-question' | 'error-review';
+let authenticatedSyncAvailable: boolean | null = null;
+
+async function sendAuthenticatedProgress(body: Record<string, unknown>) {
+  if (authenticatedSyncAvailable === false) return;
+  try {
+    const response = await fetch('/api/icfes/practice-progress', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(body),
+      keepalive: true,
+    });
+    authenticatedSyncAvailable = response.status === 202 ? false : response.ok;
+  } catch {
+    // Offline and anonymous practice remain fully functional in localStorage.
+  }
+}
 
 function track(event: string, fields: Record<string, unknown>) {
   window.dataLayer = window.dataLayer ?? [];
@@ -61,6 +79,10 @@ function formatSeconds(seconds: number) {
   return `${Math.floor(seconds / 60)} min ${seconds % 60} s`;
 }
 
+function currentTimeMs() {
+  return Date.now();
+}
+
 export default function IcfesPartPracticeEngine({
   part,
   questions,
@@ -69,7 +91,7 @@ export default function IcfesPartPracticeEngine({
 }: {
   part: IcfesPartConfig;
   questions: IcfesPracticeQuestion[];
-  context?: 'part-practice' | 'guided-simulator';
+  context?: PracticeContext;
   progressScope?: string;
 }) {
   const [started, setStarted] = useState(false);
@@ -79,28 +101,55 @@ export default function IcfesPartPracticeEngine({
   const [answers, setAnswers] = useState<AttemptAnswer[]>([]);
   const [finished, setFinished] = useState(false);
   const [savedAttempts, setSavedAttempts] = useState(0);
-  const questionStartedAt = useRef(Date.now());
+  const questionStartedAt = useRef(0);
   const feedbackRef = useRef<HTMLDivElement>(null);
+  const sessionRef = useRef<{ id: string; startedAt: string } | null>(null);
+
+  const syncAttempts = useCallback((attemptsToSync: AttemptAnswer[], sessionId?: string) => {
+    if (!attemptsToSync.length) return;
+    const questionById = new Map(questions.map((item) => [item.id, item]));
+    const payload = attemptsToSync.flatMap((attempt) => {
+      const source = questionById.get(attempt.questionId);
+      if (!source) return [];
+      return [{
+        clientAttemptId: `${progressScope}:${attempt.questionId}:${attempt.answeredAt}`,
+        clientSessionId: sessionId,
+        questionId: attempt.questionId,
+        officialPart: source.officialPart,
+        skill: source.skill,
+        subskill: source.subskill,
+        context,
+        selectedIndex: attempt.selectedIndex,
+        correctIndex: source.answerIndex,
+        isCorrect: attempt.isCorrect,
+        elapsedSeconds: attempt.elapsedSeconds,
+        answeredAt: attempt.answeredAt,
+      }];
+    });
+    if (payload.length) void sendAuthenticatedProgress({ attempts: payload });
+  }, [context, progressScope, questions]);
 
   useEffect(() => {
-    setSavedAttempts(readProgress(part.part, progressScope).attempts.length);
-  }, [part.part, progressScope]);
+    const progress = readProgress(part.part, progressScope);
+    setSavedAttempts(progress.attempts.length);
+    syncAttempts(progress.attempts);
+  }, [part.part, progressScope, syncAttempts]);
 
   useEffect(() => {
     if (confirmed) feedbackRef.current?.focus();
   }, [confirmed]);
 
   const question = questions[currentIndex];
-  const correctCount = answers.filter((answer) => answer.isCorrect).length;
-  const totalSeconds = answers.reduce((sum, answer) => sum + answer.elapsedSeconds, 0);
-  const accuracy = answers.length ? Math.round((correctCount / answers.length) * 100) : 0;
-  const averageSeconds = answers.length ? Math.round(totalSeconds / answers.length) : 0;
+  const activePart = ICFES_PARTS.find((item) => item.part === question?.officialPart) ?? part;
+  const targetSecondsByQuestion = Object.fromEntries(questions.map((item) => [item.id, item.targetSeconds]));
+  const { correctCount, totalSeconds, accuracy, averageSeconds, overTargetCount } = calculatePracticeResult(answers, targetSecondsByQuestion);
 
   const recommendation = useMemo(() => {
+    if (context === 'guided-simulator') return { label: 'Repasar mis errores', href: '/practica/icfes-saber-11/repaso-errores' };
     if (accuracy >= 80 && averageSeconds <= 35) return { label: `Continuar con la Parte ${Math.min(7, part.part + 1)}`, href: `/practica/icfes-saber-11/parte-${Math.min(7, part.part + 1)}` };
     if (part.part === 1) return { label: 'Reforzar vocabulario', href: '/practica/icfes-saber-11/vocabulario' };
     return { label: 'Repetir esta práctica', href: `/practica/icfes-saber-11/${part.slug}` };
-  }, [accuracy, averageSeconds, part.part, part.slug]);
+  }, [accuracy, averageSeconds, context, part.part, part.slug]);
 
   if (!questions.length) {
     return (
@@ -114,14 +163,29 @@ export default function IcfesPartPracticeEngine({
   }
 
   function start() {
+    const startedAt = new Date().toISOString();
+    const sessionId = typeof crypto.randomUUID === 'function'
+      ? crypto.randomUUID()
+      : `${progressScope}-${currentTimeMs()}`;
+    sessionRef.current = { id: sessionId, startedAt };
     setStarted(true);
-    questionStartedAt.current = Date.now();
+    questionStartedAt.current = currentTimeMs();
+    void sendAuthenticatedProgress({
+      session: {
+        clientSessionId: sessionId,
+        context,
+        officialPart: part.part,
+        progressScope,
+        questionCount: questions.length,
+        startedAt,
+      },
+    });
     track(context === 'guided-simulator' ? 'icfes_guided_simulator_start' : 'icfes_practice_start', { part: part.part, question_count: questions.length, progress_scope: progressScope });
   }
 
   function confirm() {
     if (selectedIndex === null || confirmed) return;
-    const elapsedSeconds = Math.max(1, Math.round((Date.now() - questionStartedAt.current) / 1000));
+    const elapsedSeconds = Math.max(1, Math.round((currentTimeMs() - questionStartedAt.current) / 1000));
     const nextAnswer: AttemptAnswer = {
       questionId: question.id,
       selectedIndex,
@@ -140,6 +204,7 @@ export default function IcfesPartPracticeEngine({
     };
     writeProgress(updated, progressScope);
     setSavedAttempts(updated.attempts.length);
+    syncAttempts([nextAnswer], sessionRef.current?.id);
     track('icfes_question_answered', { part: part.part, question_id: question.id, correct: nextAnswer.isCorrect, elapsed_seconds: elapsedSeconds });
   }
 
@@ -148,23 +213,38 @@ export default function IcfesPartPracticeEngine({
       const progress = readProgress(part.part, progressScope);
       writeProgress({ ...progress, updatedAt: new Date().toISOString(), completedSessions: progress.completedSessions + 1 }, progressScope);
       setFinished(true);
+      if (sessionRef.current) {
+        void sendAuthenticatedProgress({
+          session: {
+            clientSessionId: sessionRef.current.id,
+            context,
+            officialPart: part.part,
+            progressScope,
+            questionCount: questions.length,
+            correctCount,
+            elapsedSeconds: totalSeconds,
+            startedAt: sessionRef.current.startedAt,
+            completedAt: new Date().toISOString(),
+          },
+        });
+      }
       track(context === 'guided-simulator' ? 'icfes_guided_simulator_complete' : 'icfes_practice_complete', { part: part.part, question_count: questions.length, correct_count: correctCount, accuracy, progress_scope: progressScope });
       return;
     }
     setCurrentIndex((index) => index + 1);
     setSelectedIndex(null);
     setConfirmed(false);
-    questionStartedAt.current = Date.now();
+    questionStartedAt.current = currentTimeMs();
   }
 
   function restart() {
-    setStarted(true);
+    start();
     setCurrentIndex(0);
     setSelectedIndex(null);
     setConfirmed(false);
     setAnswers([]);
     setFinished(false);
-    questionStartedAt.current = Date.now();
+    questionStartedAt.current = currentTimeMs();
     track('icfes_practice_restart', { part: part.part });
   }
 
@@ -188,7 +268,6 @@ export default function IcfesPartPracticeEngine({
   }
 
   if (finished) {
-    const belowTarget = answers.filter((answer) => answer.elapsedSeconds > (questions.find((item) => item.id === answer.questionId)?.targetSeconds ?? 30)).length;
     return (
       <div className={styles.resultCard} aria-live="polite">
         <p className={styles.kicker}>Sesión completada</p>
@@ -200,7 +279,7 @@ export default function IcfesPartPracticeEngine({
           <div><strong>{correctCount}/{answers.length}</strong><span>correctas</span></div>
           <div><strong>{formatSeconds(totalSeconds)}</strong><span>tiempo total</span></div>
           <div><strong>{formatSeconds(averageSeconds)}</strong><span>promedio</span></div>
-          <div><strong>{belowTarget}</strong><span>sobre el tiempo meta</span></div>
+          <div><strong>{overTargetCount}</strong><span>sobre el tiempo meta</span></div>
         </div>
         <div className={styles.resultAdvice}>
           <strong>Recomendación:</strong>{' '}
@@ -218,9 +297,9 @@ export default function IcfesPartPracticeEngine({
   const isCorrect = selectedIndex === question.answerIndex;
 
   return (
-    <div className={styles.practiceShell} style={{ '--part-color': part.color, '--part-soft': part.softColor } as React.CSSProperties}>
+    <div className={styles.practiceShell} style={{ '--part-color': activePart.color, '--part-soft': activePart.softColor } as React.CSSProperties}>
       <div className={styles.progressHeader}>
-        <div><span>Parte {part.part}</span><strong>Pregunta {currentIndex + 1} de {questions.length}</strong></div>
+        <div><span>Parte {activePart.part} · {activePart.shortTitle}</span><strong>Pregunta {currentIndex + 1} de {questions.length}</strong></div>
         <span>{Math.round((currentIndex / questions.length) * 100)}% completado</span>
       </div>
       <div className={styles.progressTrack} aria-label={`Progreso: pregunta ${currentIndex + 1} de ${questions.length}`}>
@@ -228,7 +307,7 @@ export default function IcfesPartPracticeEngine({
       </div>
 
       <div className={styles.questionGrid}>
-        <section className={styles.stimulusPanel} aria-label={question.stimulusLabel ?? 'Estímulo'}>
+        <section className={styles.stimulusPanel} data-type={question.type} aria-label={question.stimulusLabel ?? 'Estímulo'}>
           <span>{question.stimulusLabel ?? 'Texto'}</span>
           {question.type === 'notice' ? <div className={styles.noticeCard}>{question.stimulus}</div> : <h3>{question.stimulus}</h3>}
           {question.wordBank && <div className={styles.wordBank}>{question.wordBank.map((word) => <span key={word}>{word}</span>)}</div>}

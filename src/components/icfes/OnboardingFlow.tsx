@@ -31,8 +31,8 @@ const TIME_OPTIONS = [
 
 const GOAL_OPTIONS = [
   { value: 'pass', label: 'Solo aprobar (50%)', icon: '✓' },
-  { value: 'bandA', label: 'Banda A (75%)', icon: '★' },
-  { value: 'bandAPlus', label: 'Banda A+ (90%+)', icon: '⭐' },
+  { value: 'bandA', label: 'Llegar a A2 (58+)', icon: '★' },
+  { value: 'bandAPlus', label: 'Llegar a B1 (71+)', icon: '⭐' },
 ] as const
 
 const TIMELINE_OPTIONS = [
@@ -333,7 +333,7 @@ export function OnboardingFlow({ userId, onComplete }: OnboardingFlowProps) {
                       <div className="flex justify-between">
                         <span className="text-gray-700 dark:text-gray-300">Objetivo:</span>
                         <span className="font-semibold text-gray-900 dark:text-white">
-                          {goal === 'pass' ? 'Aprobar' : goal === 'bandA' ? 'Banda A' : 'Banda A+'}
+                          {goal === 'pass' ? 'Fortalecer la base' : goal === 'bandA' ? 'Llegar a A2' : 'Llegar a B1'}
                         </span>
                       </div>
                       <div className="flex justify-between">

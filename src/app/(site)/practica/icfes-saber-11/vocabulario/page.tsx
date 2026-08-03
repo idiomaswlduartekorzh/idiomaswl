@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ICFES_VOCABULARY } from '@/data/icfes-vocabulary';
 import VocabularyPracticeClient from './VocabularyPracticeClient';
+import IcfesJsonLd from '../_components/IcfesJsonLd';
 import styles from '../icfes-learning.module.css';
 
 const CANONICAL = 'https://www.idiomaswl.com/practica/icfes-saber-11/vocabulario';
@@ -22,6 +23,7 @@ export default function IcfesVocabularyPage() {
   const connectors = ICFES_VOCABULARY.filter((word) => word.skill === 'connectors').length;
   return (
     <main className={styles.learningPage} style={{ '--part-color': '#4F46E5', '--part-soft': '#EEF2FF' } as React.CSSProperties}>
+      <IcfesJsonLd name="Vocabulario para ICFES Inglés" description={metadata.description as string} url={CANONICAL} currentLabel="Vocabulario" />
       <div className={styles.pageWrap}>
         <nav className={styles.breadcrumbs} aria-label="Migas de pan"><Link href="/practica">Práctica</Link><span>/</span><Link href="/practica/icfes-saber-11">ICFES</Link><span>/</span><span aria-current="page">Vocabulario</span></nav>
         <header className={styles.vocabHero}>

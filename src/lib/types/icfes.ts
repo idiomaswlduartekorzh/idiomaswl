@@ -1,4 +1,4 @@
-export type IcfesBand = 'A-' | 'A' | 'A+' | 'B' | 'B+'
+export type IcfesBand = 'Pre A1' | 'A1' | 'A2' | 'B1'
 
 // ── Vocabulary + spaced repetition ──────────────────────────────────────────
 
