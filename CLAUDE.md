@@ -6,9 +6,27 @@
 
 # Idiomas WeLearn — Memoria Técnica del Proyecto
 
+> Última verificación contra el código: **2026-08-02**, sobre `main`. Si algo de
+> aquí contradice al código, gana el código — y corrige este archivo.
+
 ## Quién es WeLearn
 
-Academia de idiomas online con sede en Bucaramanga, Colombia. Fundadores: **José David Duarte Silva** (políglota 8 idiomas, cara visible) y **Zhanna Korzh** (directora académica). Producto: clases de idiomas (inglés, coreano, francés, alemán, italiano, portugués) + preparación de exámenes (IELTS, TOEFL, ICFES, Goethe, DELF, CILS, CELPE-Bras) + plataforma con método propio de 17 pasos. Sitio: **idiomaswl.com**.
+Academia de idiomas **con sede en Bucaramanga, Colombia**, que además enseña en línea. La sede física no es un detalle: el posicionamiento de SEO local depende de ella, y por eso **no se escribe "100% online"** en el sitio.
+
+Fundadores: **José David Duarte Silva** (políglota, 8 idiomas, cara visible) y **Zhanna Korzh** (directora académica, políglota — estudió en Francia e Inglaterra).
+
+Producto: clases de **8 idiomas** (inglés, coreano, francés, alemán, italiano, portugués, japonés, ruso) + preparación de exámenes (IELTS, TOEFL, ICFES, Goethe, DELF, CILS, CELPE-Bras, TOPIK, Cambridge B2) + plataforma con método propio de 17 pasos. Sitio: **idiomaswl.com**.
+
+---
+
+## ⚠️ Datos personales de estudiantes
+
+Los certificados de examen **sin tachar** llevan nombre, foto de la cara, correo, dirección, fecha de nacimiento y número de pasaporte de personas reales.
+
+- Los originales viven **fuera del repo**, en `~/Documents/welearn-certificados-originales/`.
+- Al repo solo entran los recortes **ya tachados**, en `public/images/resultados/`.
+- **Nunca los pongas en `public/`.** Next.js sirve todo `public/` en la raíz de la URL, y el CLI de Vercel sube el árbol local, no lo que hay en git. En agosto de 2026 había 39 HEIC originales en `public/reports tests/` justo por eso.
+- Protegido en dos capas: `.gitignore` (que no entren al historial) y `.vercelignore` (que no salgan en un despliegue por CLI).
 
 ---
 
@@ -16,130 +34,138 @@ Academia de idiomas online con sede en Bucaramanga, Colombia. Fundadores: **Jos�
 
 | Capa | Tecnología |
 |------|-----------|
-| Framework | Next.js 16.2.6 (App Router, `src/` layout) |
+| Framework | Next.js 16.2.6 (App Router, layout `src/`) |
 | Runtime | React 19.2.4 + TypeScript 5 |
-| CSS | Tailwind CSS v4 (PostCSS plugin) |
+| CSS | Tailwind CSS v4 (plugin de PostCSS) |
 | Animaciones | Framer Motion 12 + Lenis (scroll suave) |
 | Audio | WaveSurfer.js 7 + @wavesurfer/react |
 | Auth + DB | Supabase (`@supabase/ssr` + `@supabase/supabase-js`) |
-| UI icons | Lucide React |
-| Charts | Recharts |
+| Iconos | Lucide React |
+| Gráficas | Recharts |
 | Hangul | hangul-js (romanización coreana) |
-| Build | Next.js built-in (webpack/turbopack) |
 | Deploy | Vercel |
 
-## Estructura de carpetas clave
+**Memoria:** la máquina de desarrollo tiene 8 GB. Usa `npm run dev:safe`, nunca `npm run dev`. **No abras el preview del navegador** — la tumba. Verifica con `npm run build` y los validadores. Si algo se cuelga: `npm run panic`. Detalle en `docs/SAFE_DEVELOPMENT_GUIDE.md`.
+
+## Estructura
 
 ```
 src/
   app/
-    (site)/           ← páginas públicas: home, examenes, precios, metodo, practica, dashboard
-    (auth)/           ← login, registro
-    courses/[lang]/step/[stepId]  ← lecciones del método
-    api/practica/submit-audio     ← API route para evaluación de pronunciación
-    auth/callback/    ← callback OAuth de Supabase
+    (site)/       páginas públicas: home, exámenes, práctica, blog, landings, dashboard
+    (auth)/       login, registro
+    (labs)/       experimentos de IA (evaluación de writing y speaking)
+    courses/[lang]/step/[stepId]   lecciones del método
+    api/          rutas de API (evaluación de pronunciación, etc.)
   components/
-    lesson/           ← motor de lecciones (stages step001–step007, engine, grammar)
-  data/               ← exams.ts, stepsMeta.ts, korean-cycle-texts.ts
-  lib/                ← clientes Supabase (admin/client/server), actions, storage.ts
-  middleware.ts       ← protege /dashboard/ (requiere sesión Supabase)
+    lesson/       motor de lecciones (stages step001–step007, engine, grammar)
+    hub/          FoundersBand, PracticeBand, LocalBand — bloques de landing de idioma
+    icfes/        OnboardingFlow, DiagnosticTest, IcfesStudentFlow, IcfesDashboardClient
+  data/           exams.ts, blog.ts, mocks/, grammar/, practica/, stepsMeta.ts
+  lib/            clientes de Supabase (admin/client/server), actions/, utils/
+  middleware.ts   protege /dashboard/ (requiere sesión de Supabase)
 public/
-  assets/korean/      ← assets de audio/imagen por step (step001–step019+)
-  audio/              ← audios generales
-  ielts/              ← material IELTS
-  images/             ← logos, avatares
-  google83bce1714af81f14.html  ← Search Console
+  assets/korean/  assets por step. Los steps 008–019 (552 MB) NO se commitean
+  audio/          audio de simulacros y práctica, comprimido a 64k mono
+  images/         logos, avatares, resultados (recortes tachados)
+docs/             documentación viva. docs/_archivo/ es histórico, no es referencia
 ```
+
+**`/` renderiza el home directamente** (`src/app/(site)/page.tsx` reexporta `home/HomePage`). No hay redirección a `/home`.
 
 ## Medición instalada (NO TOCAR)
 
-| Herramienta | ID / Archivo | Estado |
-|-------------|-------------|--------|
-| Google Tag Manager | GTM-57NXLPZV | En `src/app/layout.tsx` — noscript + afterInteractive script |
-| Google Search Console | google83bce1714af81f14.html | En `/public/` |
-| Meta Pixel | 1295707616059871 | Vía GTM |
-| Google Analytics 4 | — | Vía GTM |
+| Herramienta | ID / Archivo |
+|---|---|
+| Google Tag Manager | GTM-57NXLPZV — en `src/app/layout.tsx` (noscript + script `afterInteractive`) |
+| Google Search Console | `google83bce1714af81f14.html` en `/public/` |
+| Meta Pixel | 1295707616059871 — vía GTM |
+| Google Analytics 4 | vía GTM |
+
+Eventos publicados: `click_whatsapp` y `lead_simulacro`, cada uno con tag de GA4 y de Meta Pixel.
 
 ## Auth / Backend
 
-- Supabase ya integrado: `src/lib/supabase/` tiene admin.ts (service role), client.ts (browser), server.ts (SSR)
-- Middleware protege `/dashboard/:path*` → redirige a `/login`
-- Variables de entorno: en Vercel y `.env.local` local (no commitear)
+- `src/lib/supabase/`: `admin.ts` (service role), `client.ts` (navegador), `server.ts` (SSR).
+- El middleware protege `/dashboard/:path*` → redirige a `/login`.
+- Tablas activas: `leads`, `user_progress`, `profiles` (con columna `plan`), `exam_submissions`, `daily_activity`, `game_sessions`. Todas con RLS.
+- Migraciones en `supabase/migrations/`, hasta `20260706b_icfes_v2_vocabulary_static.sql`. Que un archivo exista **no garantiza** que se haya ejecutado en el SQL Editor: verifícalo contra la base antes de asumirlo.
+- Server actions en `src/lib/actions/`: `assignPlan`, `assignSubject`, `gameSessions`, `icfes`, `inviteStudent`, `saveExamResult`, `saveLead`, `saveProgress`, `scoreSubmission`, `signOut`, `trackActivity`, `updateProfile`, `vocabulary`.
+- `src/lib/utils/streak.ts` → `calculateStreak(dates: string[]): number`.
 
 ---
 
 ## Decisiones de producto bloqueadas
 
-1. **WhatsApp es el CRM y canal de cierre.** Todo CTA → WhatsApp con mensaje pre-escrito.
-2. **Simulacros = imán de leads.** Pedir contacto (email + WhatsApp + idioma) antes/después del simulacro.
-3. **Dos motores**: David (políglota, cercano) + WeLearn/Zhanna (autoridad, rigor pedagógico).
-4. **Posicionamiento**: "Aprender un idioma, en serio." Academia humana especializada en exámenes. No Duolingo, no Open English.
-5. **Pre-venta Miembro Fundador**: 50 cupos coreano, precio especial vitalicio.
-6. **Pricing**: Debe corregir incoherencia (si se implementan paquetes de horas). Precio por hora debe ser decreciente con volumen.
-7. **SEO de intención**: Landings capturables por Google Ads con quality score alto.
+1. **WhatsApp es el CRM y el canal de cierre.** Todo CTA va a WhatsApp con mensaje pre-escrito. Número definitivo: **573005004253**.
+2. **Los simulacros son el imán de leads.** Se pide contacto (email + WhatsApp + nombre + idioma) alrededor del simulacro.
+3. **Dos voces**: David (políglota, cercano) y WeLearn/Zhanna (autoridad, rigor pedagógico). En las landings de francés e inglés, Zhanna debe aparecer en el hero o muy cerca — son los idiomas que ella estudió.
+4. **Posicionamiento**: "Aprender un idioma, en serio." Academia humana especializada en exámenes, con sede real. No Duolingo, no Open English.
+5. **Miembro Fundador**: preventa de coreano, 50 cupos, precio especial vitalicio.
+6. **SEO de intención**: landings capturables por Google Ads con quality score alto.
+7. **Zona protegida**: `/examenes`, `src/data/exams.ts`, `src/data/mocks/` y su CSS. David aprobó ese diseño (fondo azul marino, texto blanco, acento rojo). No rediseñar sin pedirlo.
 
 ---
 
-## Misiones priorizadas
+## Navegación
 
-### NIVEL 1 — CAJA URGENTE
+```js
+// src/components/SiteNav.tsx
+Home (/) · Idiomas (/clases-de-idiomas) · Exámenes (/examenes) · Práctica (/practica) · Quiénes somos (/quienes-somos)
+```
 
-| ID | Misión | Estado |
-|----|--------|--------|
-| M1.1 | Landing inglés/IELTS alta conversión — `/clases-de-ingles` | **HECHO** — `public/images/david-duarte.jpg` en producción + 3 testimonios reales (Leonardo, Carlos, Karen) |
-| M1.2 | Botón WhatsApp flotante en todas las páginas | **HECHO** — `src/components/WhatsAppFloat.tsx`, mensaje por URL, evento GTM `click_whatsapp` |
-| M1.3 | Captura de leads en simulacros (email + WA + nombre + idioma) | **HECHO** — tabla `leads` en Supabase (ya existe) + `saveLead` action + `LeadCaptureModal` en ExamReport |
-| M1.4 | Eventos de conversión GA4 + Meta Pixel (click_whatsapp, lead_simulacro, etc.) | **HECHO** — GTM-57NXLPZV configurado: 4 tags, 2 triggers, 5 variables, Versión 4 publicada |
-| M1.5 | Página de precios reescrita (corregir incoherencias, CTA a WhatsApp) | **HECHO** — `src/app/(site)/precios/PreciosClient.tsx` usa `waLink()` para todos los CTAs. Precios: Prep $180K, Intensivo 2x $280K, 4x $480K |
+Cinco entradas. Blog, Precios, Nivel Radar y las landings sueltas de inglés y coreano **se retiraron del nav a propósito**: el peso de enlazado interno va al superhub `/clases-de-idiomas`.
 
-### NIVEL 2 — REPLICAR EL MOTOR
+⚠️ **Nunca borres "Práctica" del nav.** Desaparece con frecuencia en force-pushes. Se activa con `pathname.startsWith('/practica')`.
 
-| ID | Misión | Estado |
-|----|--------|--------|
-| M2.1 | Landing de coreano | **HECHO** — `src/app/(site)/clases-de-coreano/` con JSON-LD, sección Miembro Fundador, TOPIK comparador, FAQ, sección Diagnóstico TOPIK |
-| M2.2 | Landing de ICFES inglés | **HECHO** — `src/app/(site)/preparacion-icfes/` con escala de puntajes, estructura del examen, plan de prep |
-| M2.3 | SEO técnico base (meta tags, schema.org, sitemap, robots) | **HECHO** — sitemap.ts, robots.ts, JSON-LD @graph en todas las landing pages (Course + LocalBusiness + BreadcrumbList + Person + FAQPage), Blog + BlogPosting en /blog, Article en /blog/[slug], OG images en todas las rutas públicas |
+## Contenido publicado
 
-### NIVEL 3 — PRODUCTO SUSCRIPCIÓN
+- **8 landings de idioma** (`/clases-de-<idioma>`) más el superhub `/clases-de-idiomas` y la landing local `/clases-de-ingles-bucaramanga`.
+- **124 artículos de blog** en `src/data/blog.ts`, con filtro interactivo, OG por artículo y JSON-LD `Article` + `BreadcrumbList`. *(El número "35" que arrastraba este archivo llevaba meses desactualizado.)*
+- **Enlazado bidireccional**: las landings enlazan al blog ("Del blog WeLearn") y los artículos enlazan de vuelta a las landings.
+- **JSON-LD** en todas las landings: `Course` + `LocalBusiness` + `BreadcrumbList` + `Person` + `FAQPage`. `Blog`/`BlogPosting` en `/blog`.
+- **OG images** con renderizado edge en todas las rutas públicas.
+- **Componentes de hub compartidos** (`src/components/hub/`): añadir un idioma nuevo es enchufar `FoundersBand` + `PracticeBand` + `LocalBand`, no copiar CSS.
 
-| ID | Misión | Estado |
-|----|--------|--------|
-| M3.1 | Panel de estudiante MVP (solo coreano) | **HECHO** — dashboard conectado a Supabase: exam stats reales, racha real (`daily_activity`), progreso coreano (`user_progress`), planes (autodidacta/preparacion/intensivo), logout, panel admin con listado de estudiantes y asignación de planes |
-| M3.2 | Pasos 18, 19, 20 del método | **PENDIENTE** — necesita contenido de David |
-| M3.3 | Página de pre-venta Miembro Fundador | **HECHO** — `src/app/(site)/miembro-fundador/` con 50 cupos, 6 beneficios, timeline, comparador, Course JSON-LD |
+## Plataforma
 
-### NIVEL 4 — CRECIMIENTO ORGÁNICO
+Rutas de dashboard: `/dashboard`, `/dashboard/student` (+ `/progreso`, `/perfil`, `/icfes`), `/dashboard/admin` (+ `/audios`, `/live/create`, `/live/[setId]`, `/live/session/[code]`), `/dashboard/welearn`.
 
-| ID | Misión | Estado |
-|----|--------|--------|
-| M4.1 | Blog / artículos SEO | **HECHO** — `/blog` con **35 artículos** (IELTS×15, TOEFL×4, ICFES×3, Coreano×7, Migración×4, Alemán×1, Portugués×1, Método×2, Francés×1, Inglés×1) + filtro interactivo + OG per-article + Article+BreadcrumbList JSON-LD + CTAs hacia landings |
-| M4.2 | Sistema de testimonios en video | **PENDIENTE** — necesita videos de David |
-| M4.3 | Optimización de performance (Lighthouse mobile > 90) | **PARCIAL** — OG images edge en todas las rutas públicas, BreadcrumbList en todas las páginas, poweredByHeader: false, next/font/google para Geist. Pendiente: medir Lighthouse mobile en producción |
+- El dashboard de estudiante lee datos reales de Supabase: estadísticas de simulacros, racha (`daily_activity`), progreso (`user_progress`), plan.
+- `markStepComplete` ya se llama desde `LessonRuntime.tsx` al terminar una lección.
+- El admin tiene listado de estudiantes con búsqueda, filtro por plan y asignación en línea.
+- `/dashboard/welearn` sigue con datos de relleno.
 
 ---
 
-## Notas técnicas activas
+## Lo que sigue abierto
 
-- **Korean assets (steps 008-019)**: 552MB en disco local, excluidos de git (`.gitignore`) y de Vercel (`.vercelignore`). NO commitear.
-- **`public/images/david-duarte.jpg`**: ✅ En producción (commitida y desplegada).
-- **Testimonios reales**: Leonardo Pinto (Inglés/USA), Daniel Zuluaga (Celpe-Bras/USP), Karen Ayala (Goethe/Alemán), Carlos Torres (TOEFL/Maestría). En home y clases-de-ingles.
-- **Supabase tablas activas**: `leads`, `user_progress`, `profiles` (con columna `plan`), `exam_submissions`, `daily_activity`. Todas existen y tienen RLS.
-- **Supabase migración pendiente**: `supabase/migrations/20260529200000_plan_and_activity.sql` — David debe ejecutar en SQL Editor. Añade columna `plan` a `profiles` y tabla `daily_activity`.
-- **`saveProgress.ts`**: acción de servidor para marcar pasos como completados. Pendiente: llamar a `markStepComplete('korean', stepId)` al final de cada lección coreana.
-- **GTM**: ✅ Configurado y publicado. Version 4: tags click_whatsapp (GA4+Meta Pixel), lead_simulacro (GA4+Meta Pixel). Triggers: Click WhatsApp, Lead Simulacro. Variables: dataLayer.
-- **Nav links**: Home, Inglés, Coreano, Idiomas, Exámenes, **Práctica**, Blog, Precios (en `SiteNav.tsx`). ⚠️ NUNCA borrar Práctica — se borra frecuentemente en force-pushes. Práctica → `/practica`, se activa en `pathname.startsWith('/practica')`.
-- **BreadcrumbList**: añadido a todos los pages: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion, blog, blog/[slug].
-- **Blog bidireccional**: landing pages → blog (secciones "Del blog WeLearn"); blog → landing pages (CTAs + links en cierre de artículo); home → blog (sección "09 — Blog" con 4 artículos recientes). Blog sections en: clases-de-ingles, clases-de-coreano, preparacion-icfes, miembro-fundador, precios, metodo, leccion.
-- **35 artículos blog**: 1-25 (IELTS×12, TOEFL×3, ICFES×2, Coreano×5, Migración×3) + 26-Goethe, 27-Celpe-Bras, 28-Método aprendizaje, 29-IELTS Writing Task 1, 30-DELF/DALF, 31-IELTS Listening errores, 32-Costo inglés Colombia, 33-TOPIK II subir nivel, 34-Inglés trabajo remoto, 35-Migrar España inglés. ⚠️ Artículo 14 slug: `icfes-saber-11-niveles-ingles-guia-completa` (se corrigió slug duplicado que tenía `puntaje-icfes-ingles-niveles-y-como-mejorar`).
-- **TOPIK Diagnóstico**: `src/data/mocks/topik-set-1.ts` (30 preguntas MCQ al estilo TOPIK I, 3 partes: 빈칸/안내문/지문), `TOPIKPracticeClient.tsx` (quiz → LeadCaptureModal → results con nivel). Ruta: `/examenes/topik/practica/set-1`. Sección en `/clases-de-coreano`. Scoring: 70%+ = Nivel 2, 40-69% = Nivel 1, <40% = Iniciante.
-- **OG images**: todas las rutas públicas tienen `opengraph-image.tsx` con edge rendering: /home, /leccion, /metodo, /blog, /blog/[slug], /clases-de-ingles, /clases-de-coreano, /preparacion-icfes, /miembro-fundador, /precios, /examenes, /practica. Root `/` redirige a /home.
-- **WA number**: `573005004253` — definitivo. Está en `WhatsAppFloat.tsx` y `PreciosClient.tsx`.
-- **Platform actions**: `src/lib/actions/` tiene: `assignPlan.ts`, `signOut.ts`, `trackActivity.ts`, `saveProgress.ts`, `saveLead.ts`, `scoreSubmission.ts`, `saveExamResult.ts`, `updateProfile.ts` (actualiza `full_name` en `profiles`).
-- **Platform utils**: `src/lib/utils/streak.ts` — `calculateStreak(dates: string[]): number`.
-- **Dashboard routes**: `/dashboard/student` (StudentDashboardClient), `/dashboard/student/progreso` (ProgresoClient — grid actividad + historial simulacros + progreso coreano), `/dashboard/student/perfil` (PerfilClient — editar nombre, ver plan/email/fecha), `/dashboard/admin` (JoseDashboard via JoseDashboardServer / ZhannaDashboard via ZhannaDashboardServer — ambos con datos reales), `/dashboard/welearn` (WelearnDashboardClient — datos aún placeholder).
-- **Engagement features (student dashboard)**: Tip del día (14 tips rotando daily), Reto semanal (8 MCQ rotando weekly con feedback inmediato). Implementados en StudentDashboardClient como arrays estáticos con rotación por fecha.
-- **Admin StudentList**: `src/app/(site)/dashboard/admin/StudentList.tsx` — tabla de estudiantes con búsqueda, filtro por plan, asignación inline de plan con server action.
-- **markStepComplete**: ya está llamado en `LessonRuntime.tsx` al completar lecciones coreanas. No es pendiente.
-- **Blog colores categorías**: home page y blog/[slug] page tienen CTAs y colores para IELTS (#0f3d8c), Alemán (#1a2ecc), Francés (#1a2ecc), Portugués (#166534), Método (#7c3aed), Migración (#0369a1), Inglés (#1a4fcc).
-- **ZhannaDashboard**: ahora recibe `realData` (totalStudents + weekSimulacros) desde `ZhannaDashboardServer`. "Clases hoy" se computa dinámicamente desde `weekSchedule` según el día actual.
-- **`PracticaClient.tsx`, `IcfesStressPractice.tsx`, `korean-speaking-1/`**: trabajo en progreso sin commitear en ramas de funcionalidad.
+| Qué | Estado |
+|---|---|
+| **Pasos 18, 19 y 20 del método** | Necesita contenido de David |
+| **Testimonios en vídeo** | Necesita los vídeos de David |
+| **Gramática: 465 temas enriquecidos** | Commiteado en `8fd6396` y `47a19b1`, pero **en `feature/icfes-mock-21-23`, no en `main`**. Esa rama se separó el 18 de julio y va 76 commits por detrás. El trabajo existe y no está en producción |
+| **Revisión de Zhanna** | Directorios `grammar/coreano/`, `japones/` y `ruso/` enteros |
+| **Audio pendiente** | Goethe (58), DELF (30), IELTS sets 13–20. Guiones listos en `docs/GUIONES-PENDIENTES-MASTER.md` |
+| **Lighthouse mobile > 90** | Sin medir en producción |
+| **`practica/speaking`** | El trabajo más en crudo del proyecto. Ver `korean-speaking-1/` y `(labs)/labs/speaking` |
+
+---
+
+## Validadores
+
+Corren solos en el `prebuild`, pero conviene lanzarlos antes de commitear:
+
+```bash
+npm run check:practica-catalog     # catálogo de práctica
+npm run check:grammar-exercises    # formato de ejercicios de gramática
+npm run audit:ielts                # rutas IELTS contra docs/ielts-toefl-route-map.md
+```
+
+**Formato de huecos en gramática:** los huecos son `[[n]]` contiguos y su número debe coincidir con `blanks`. Nunca `___` en `freeText`, `guidedText` ni `dual`. David y Zhanna no aparecen dentro de los ejercicios, solo en testimonios.
+
+## Convenciones de contenido
+
+- **Redundancia pedagógica**: TEMA → EXPLICACIÓN → EJEMPLOS → EJERCICIOS. Interiorizar exige práctica abundante: mínimo 15–17 ejercicios por tema.
+- **Gramática**: el molde v2 está en `docs/gramatica-content-spec.md`. Tablas de máximo 4 columnas (legibilidad móvil); los paradigmas verbales llevan las 6 personas.
+- **Audio**: los mp3 de simulacros se commitean comprimidos a 64k mono y se sirven como estáticos desde Vercel. `src/lib/examAudio.ts` los resuelve desde el CDN si `NEXT_PUBLIC_EXAM_AUDIO_BASE` está definida, y cae al archivo local si no.
