@@ -48,8 +48,8 @@
 }
 
 .narrativeRailProgress {
-  filter: drop-shadow(0 0 5px color-mix(in srgb, var(--yellow) 32%, transparent));
-  stroke: var(--red);
+  filter: drop-shadow(0 0 5px rgba(242, 199, 72, 0.32));
+  stroke: #c91f34;
   stroke-width: 2;
 }
 
@@ -64,8 +64,8 @@
 }
 
 .narrativeRailNode[data-active='true'] {
-  fill: var(--yellow);
-  stroke: var(--red);
+  fill: #f2c748;
+  stroke: #c91f34;
   opacity: 1;
   transform: scale(1.18);
 }
@@ -77,13 +77,21 @@
   left: 0;
   width: 10px;
   height: 10px;
-  border: 3px solid var(--red);
+  border: 3px solid #c91f34;
   border-radius: 50%;
-  background: var(--yellow);
-  box-shadow: 0 0 0 9px color-mix(in srgb, var(--yellow) 22%, transparent);
+  background: #f2c748;
+  box-shadow: 0 0 0 9px rgba(242, 199, 72, 0.22);
   opacity: 0;
   pointer-events: none;
   will-change: transform;
+}
+
+.narrativeRailPulse[data-state='waiting'] {
+  animation: narrativeWaiting 1.35s ease-in-out infinite;
+}
+
+.narrativeRailPulse[data-state='travelling'] {
+  animation: narrativeTravelling 900ms ease-in-out infinite;
 }
 
 :global([data-theme='dark']) .page {
@@ -204,7 +212,7 @@
 
 .hero {
   position: relative;
-  min-height: max(760px, calc(100svh - 64px));
+  min-height: max(660px, calc(100svh - 64px));
   isolation: isolate;
   background: var(--paper);
 }
@@ -258,9 +266,9 @@
   z-index: 2;
   display: grid;
   width: min(var(--width), calc(100% - 3rem));
-  min-height: max(720px, calc(100svh - 64px));
+  min-height: max(660px, calc(100svh - 64px));
   margin-inline: auto;
-  padding: clamp(3.5rem, 7vh, 6rem) 0 5rem;
+  padding: clamp(2.7rem, 5.5vh, 4.5rem) 0 2.7rem;
   grid-template-columns: minmax(0, 1.04fr) minmax(450px, 0.96fr);
   gap: clamp(1rem, 2vw, 2.25rem);
   align-items: center;
@@ -360,8 +368,9 @@
 .heroPeople {
   position: relative;
   min-width: 0;
-  min-height: 610px;
-  align-self: center;
+  min-height: 570px;
+  align-self: stretch;
+  margin-bottom: -2.7rem;
 }
 
 .heroConstellation {
@@ -424,10 +433,11 @@
 }
 
 .heroPersonZhanna {
-  top: -1%;
+  top: auto;
+  bottom: 0;
   left: -10%;
   width: 70%;
-  height: 94%;
+  height: 99%;
 }
 
 .heroPersonDavid {
@@ -451,7 +461,7 @@
 .heroThread {
   position: absolute;
   z-index: 6;
-  bottom: -3.4rem;
+  bottom: 0.8rem;
   left: 50%;
   display: grid;
   width: 120px;
@@ -464,7 +474,8 @@
   padding: 0.42rem 0.65rem;
   border: 1px solid var(--red);
   border-radius: 999px;
-  background: var(--paper);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  box-shadow: 0 0 28px color-mix(in srgb, var(--yellow) 22%, transparent);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.66rem;
   font-weight: 900;
@@ -474,17 +485,9 @@
 
 .heroThread i {
   width: 2px;
-  height: 76px;
-  background: transparent;
-}
-
-.heroThread small {
-  margin-top: 0.45rem;
-  color: var(--muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.58rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  height: 54px;
+  background: linear-gradient(var(--red), color-mix(in srgb, var(--red) 26%, transparent));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--yellow) 32%, transparent);
 }
 
 .discoveryDock {
@@ -497,7 +500,35 @@
     color-mix(in srgb, var(--surface) 92%, var(--paper));
 }
 
+.discoveryDock::after {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: color-mix(in srgb, var(--red) 14%, transparent);
+  content: '';
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.discoveryNarrativeEntry,
+.discoveryNarrativeExit {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.discoveryNarrativeEntry { top: 0; }
+.discoveryNarrativeExit { bottom: 0; }
+
 .discoveryInner {
+  position: relative;
+  z-index: 2;
   display: grid;
   width: min(var(--width), calc(100% - 3rem));
   margin-inline: auto;
@@ -646,17 +677,19 @@
 .openingThread i {
   width: 2px;
   height: clamp(5.5rem, 10vw, 8rem);
-  background: transparent;
+  background: linear-gradient(var(--red), var(--red) 72%, color-mix(in srgb, var(--yellow) 82%, var(--red)));
+  box-shadow: 0 0 11px color-mix(in srgb, var(--yellow) 36%, transparent);
   transform-origin: top;
 }
 
 .openingThread span {
   width: 11px;
   height: 11px;
-  border: 0;
+  border: 2px solid var(--red);
   border-radius: 50%;
-  background: transparent;
-  box-shadow: none;
+  background: var(--yellow);
+  box-shadow: 0 0 0 10px color-mix(in srgb, var(--yellow) 18%, transparent), 0 0 22px color-mix(in srgb, var(--yellow) 42%, transparent);
+  animation: narrativeWaiting 1.35s ease-in-out infinite;
 }
 
 .openingBypassEntry,
@@ -669,6 +702,7 @@
 
 .openingBypassEntry {
   top: clamp(5.5rem, 10vw, 8rem);
+  left: 42%;
 }
 
 .openingBypassExit {
@@ -949,6 +983,19 @@
   transition: background-color 500ms ease;
 }
 
+.methodNarrativeEntry,
+.proofNarrativeEntry,
+.examNarrativeEntry {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 42%;
+  width: 2px;
+  height: 2px;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
 .story .eyebrow {
   color: var(--blue);
 }
@@ -975,8 +1022,8 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
-  opacity: 0.97;
-  filter: saturate(1.04) contrast(1.02);
+  opacity: 1;
+  filter: none;
   transform: translate(-50%, 18%);
   -webkit-mask-image:
     linear-gradient(90deg, transparent 0%, transparent 18%, #000 30%, #000 70%, transparent 82%, transparent 100%),
@@ -1048,25 +1095,12 @@
   top: 0;
   left: 42%;
   width: 2px;
-  height: 48%;
-  background: transparent;
-  filter: none;
+  height: 100%;
+  background: linear-gradient(var(--red), var(--red) 72%, color-mix(in srgb, var(--yellow) 82%, var(--red)));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--yellow) 36%, transparent);
   opacity: 1;
   transform: translateX(-50%);
   transition: opacity 300ms ease;
-}
-
-.methodHandoff i {
-  position: absolute;
-  right: 50%;
-  bottom: -5px;
-  width: 11px;
-  height: 11px;
-  border: 0;
-  border-radius: 50%;
-  background: transparent;
-  box-shadow: none;
-  transform: translateX(50%);
 }
 
 .methodFilmGuide span {
@@ -1084,7 +1118,10 @@
 
 .story[data-scroll-step='3'],
 .story[data-scroll-step='3'] .methodFilm {
-  background: var(--method-night);
+  background-color: var(--method-night);
+  background-image: url('/media/home/method-night-texture-v1.webp');
+  background-position: center;
+  background-size: cover;
 }
 
 .story[data-scroll-step='3'] .methodFilmWash::after {
@@ -1097,11 +1134,6 @@
 
 .story[data-scroll-step='3'] .methodFilmGuide {
   color: #aeb8df;
-}
-
-.story[data-scroll-step='2'] .methodHandoff,
-.story[data-scroll-step='3'] .methodHandoff {
-  opacity: 0;
 }
 
 .storyIntro {
@@ -1246,7 +1278,7 @@
 .proofStory {
   --blue: #2238d5;
   --red: #c91f34;
-  --proof-paper: #f7f0e5;
+  --proof-paper: #d9a76e;
   --proof-night: #15284c;
   --proof-ink: #09184f;
   --proof-muted: #3f4964;
@@ -1267,13 +1299,29 @@
   margin-bottom: calc(-100svh + 64px);
   overflow: hidden;
   pointer-events: none;
-  background: var(--proof-night);
+  background-color: var(--proof-night);
+  background-image: url('/media/home/proof-film-background-v2.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: background-color 500ms ease;
+}
+
+.proofEntryLine {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 42%;
+  width: 2px;
+  height: 48%;
+  background: linear-gradient(var(--red), var(--red) 76%, color-mix(in srgb, var(--yellow) 82%, var(--red)));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--yellow) 30%, transparent);
+  transform: translateX(-50%);
 }
 
 .proofVideo {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   top: 0;
   bottom: 0;
   left: 42%;
@@ -1281,8 +1329,8 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
-  opacity: 0.98;
-  filter: saturate(1.02) contrast(1.01);
+  opacity: 1;
+  filter: none;
   transform: translate(-50%, 18%);
   -webkit-mask-image:
     linear-gradient(90deg, transparent 0%, transparent 18%, #000 30%, #000 70%, transparent 82%, transparent 100%),
@@ -1339,8 +1387,8 @@
   left: 42%;
   width: 2px;
   height: 17%;
-  background: transparent;
-  box-shadow: none;
+  background: linear-gradient(color-mix(in srgb, var(--yellow) 85%, var(--red)), var(--red));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--yellow) 34%, transparent);
   opacity: 1;
   transform: translateX(-50%);
 }
@@ -1503,55 +1551,53 @@
 }
 
 .proofDisclaimer {
-  position: relative;
-  z-index: 3;
-  width: min(720px, calc(100% - 3rem));
-  margin: 0 auto;
-  padding: 4rem 0 2rem;
-  color: var(--proof-muted);
-  font-size: 0.75rem;
-  line-height: 1.6;
-  text-align: center;
+  display: none;
 }
 
-.proofStory[data-scroll-step='3'],
-.proofStory[data-scroll-step='3'] .proofFilm {
+.proofStory[data-scroll-palette='paper'],
+.proofStory[data-scroll-palette='paper'] .proofFilm {
   color: var(--proof-ink);
-  background: var(--proof-paper);
+  background-color: var(--proof-paper);
+  background-image: url('/media/home/proof-paper-texture-v2.webp');
+  background-position: center;
+  background-size: cover;
 }
 
-.proofStory[data-scroll-step='3'] .proofFilmWash::before {
+.proofStory[data-scroll-palette='paper'] .proofFilmWash::before {
   opacity: 0;
 }
 
-.proofStory[data-scroll-step='3'] .proofFilmWash::after {
+.proofStory[data-scroll-palette='paper'] .proofFilmWash::after {
   opacity: 1;
 }
 
-.proofStory[data-scroll-step='3'] .proofFilmGuide {
+.proofStory[data-scroll-palette='paper'] .proofFilmGuide {
   color: var(--proof-muted);
 }
 
-.proofStory[data-scroll-step='3'] .proofFilmGuide span,
-.proofStory[data-scroll-step='3'] .proofVerb,
-.proofStory[data-scroll-step='3'] .proofLink {
+.proofStory[data-scroll-palette='paper'] .proofFilmGuide span,
+.proofStory[data-scroll-palette='paper'] .proofVerb,
+.proofStory[data-scroll-palette='paper'] .proofLink {
   color: var(--blue);
 }
 
-.proofStory[data-scroll-step='3'] .proofNumber {
+.proofStory[data-scroll-palette='paper'] .proofNumber {
   border-color: rgba(9, 24, 79, 0.2);
 }
 
-.proofStory[data-scroll-step='3'] .proofCopy h3,
-.proofStory[data-scroll-step='3'] .proofCopy > strong {
+.proofStory[data-scroll-palette='paper'] .proofCopy h3,
+.proofStory[data-scroll-palette='paper'] .proofCopy > strong {
   color: var(--proof-ink);
 }
 
-.proofStory[data-scroll-step='3'] .proofCopy > p:not(.proofVerb) {
+.proofStory[data-scroll-palette='paper'] .proofCopy > p:not(.proofVerb) {
   color: var(--proof-muted);
 }
 
 .examReveal {
+  --blue: #2238d5;
+  --red: #c91f34;
+  --yellow: #f2c748;
   position: relative;
   overflow: clip;
   padding: clamp(11rem, 16vw, 15rem) 0 clamp(7rem, 10vw, 10rem);
@@ -1559,8 +1605,9 @@
   background:
     linear-gradient(rgba(9, 24, 79, 0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(9, 24, 79, 0.025) 1px, transparent 1px),
-    #f7f0e5;
-  background-size: 52px 52px;
+    url('/media/home/proof-paper-texture-v2.webp') center / cover,
+    #d9a76e;
+  background-size: 52px 52px, 52px 52px, cover, auto;
 }
 
 .examRevealInner {
@@ -1628,7 +1675,7 @@
   left: 16px;
   width: 13px;
   height: 13px;
-  border: 3px solid #f7f0e5;
+  border: 3px solid #d9a76e;
   border-radius: 50%;
   background: transparent;
   box-shadow: none;
@@ -1647,6 +1694,15 @@
 .examNarrativeExit {
   position: absolute;
   bottom: 0;
+  width: 2px;
+  height: 2px;
+  pointer-events: none;
+}
+
+.examNarrativeTurn {
+  position: absolute;
+  z-index: 3;
+  top: clamp(5rem, 8vw, 7rem);
   width: 2px;
   height: 2px;
   pointer-events: none;
@@ -2892,24 +2948,28 @@
   background: var(--red);
 }
 
+@keyframes narrativeWaiting {
+  0%, 100% {
+    box-shadow: 0 0 0 7px color-mix(in srgb, var(--yellow) 14%, transparent), 0 0 12px color-mix(in srgb, var(--yellow) 28%, transparent);
+    opacity: 0.72;
+  }
+
+  50% {
+    box-shadow: 0 0 0 15px color-mix(in srgb, var(--yellow) 5%, transparent), 0 0 26px color-mix(in srgb, var(--yellow) 58%, transparent);
+    opacity: 1;
+  }
+}
+
+@keyframes narrativeTravelling {
+  0%, 100% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--yellow) 14%, transparent), 0 0 12px color-mix(in srgb, var(--yellow) 32%, transparent); }
+  50% { box-shadow: 0 0 0 11px color-mix(in srgb, var(--yellow) 7%, transparent), 0 0 24px color-mix(in srgb, var(--yellow) 64%, transparent); }
+}
+
 @supports (animation-timeline: view()) {
-  .openingThread i,
-  .openingThread span {
+  .openingThread i {
     animation: openingThreadIn linear both;
     animation-timeline: view(block);
     animation-range: entry 0% entry 100%;
-  }
-
-  .heroPersonZhanna {
-    animation: portraitZhanna linear both;
-    animation-timeline: view();
-    animation-range: exit 0% exit 90%;
-  }
-
-  .heroPersonDavid {
-    animation: portraitDavid linear both;
-    animation-timeline: view();
-    animation-range: exit 0% exit 90%;
   }
 
   .examRevealLinks a {
@@ -2943,14 +3003,6 @@
   }
 }
 
-@keyframes portraitZhanna {
-  to { transform: translate(-5%, -5%); }
-}
-
-@keyframes portraitDavid {
-  to { transform: translate(5%, -2%); }
-}
-
 @media (max-width: 980px) {
   .heroInner {
     width: calc(100% - 2rem);
@@ -2972,11 +3024,12 @@
 
   .heroPeople {
     min-height: 560px;
-    margin-left: 0;
+    margin: 0 0 -4.5rem;
   }
 
   .heroPersonZhanna {
-    top: -3%;
+    top: auto;
+    bottom: 0;
     left: -4%;
     width: 78%;
     height: 96%;
@@ -3234,7 +3287,8 @@
   }
 
   .heroPersonZhanna {
-    top: -3%;
+    top: auto;
+    bottom: 0;
     left: -13%;
     width: 70%;
     height: 94%;
@@ -3256,7 +3310,7 @@
   }
 
   .heroThread {
-    bottom: -3rem;
+    bottom: 0.8rem;
   }
 
   .openingQuestion {
@@ -3470,6 +3524,10 @@
   }
 
   .proofExitLine {
+    left: 50%;
+  }
+
+  .proofEntryLine {
     left: 50%;
   }
 

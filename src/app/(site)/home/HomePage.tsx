@@ -143,12 +143,13 @@ export default function HomePage() {
 
         <div className={styles.heroThread} aria-hidden="true">
           <span>Tu meta</span>
-          <i />
-          <small>scroll</small>
+          <i data-home-narrative-anchor data-home-narrative-track="center" data-home-narrative-node />
         </div>
       </section>
 
       <nav id="explora-welearn" className={styles.discoveryDock} aria-label="Explorar idiomas y exámenes de WeLearn">
+        <i className={styles.discoveryNarrativeEntry} data-home-narrative-anchor data-home-narrative-track="center" aria-hidden="true" />
+        <i className={styles.discoveryNarrativeExit} data-home-narrative-anchor data-home-narrative-track="center" aria-hidden="true" />
         <div className={styles.discoveryInner}>
           <div className={styles.discoveryIntro}>
             <p className={styles.eyebrow}>Todo WeLearn se conecta</p>
@@ -194,8 +195,7 @@ export default function HomePage() {
 
       <section id="historia" className={styles.openingQuestion} aria-labelledby="opening-title">
         <div className={styles.openingThread} aria-hidden="true">
-          <i />
-          <span />
+          <i data-home-narrative-anchor data-home-narrative-track="center" />
         </div>
 
         <div className={styles.searchFilm} aria-hidden="true">
@@ -268,6 +268,7 @@ export default function HomePage() {
       </section>
 
       <section id="recorrido" className={styles.story} aria-labelledby="story-title">
+        <i className={styles.methodNarrativeEntry} data-home-narrative-anchor data-home-narrative-track="media" data-home-narrative-break="true" data-home-narrative-node aria-hidden="true" />
         <div className={styles.methodFilm} aria-hidden="true">
           <SearchScrollVideo
             className={styles.methodVideo}
@@ -279,7 +280,7 @@ export default function HomePage() {
             stepProfile="method"
           />
           <div className={styles.methodFilmWash} />
-          <div className={styles.methodHandoff}><i /></div>
+          <div className={styles.methodHandoff} />
           <div className={styles.methodFilmGuide}>
             <span>Tu meta</span>
             <i />
@@ -326,12 +327,14 @@ export default function HomePage() {
         className={styles.proofStory}
         aria-labelledby="proof-story-title"
       >
+        <i className={styles.proofNarrativeEntry} data-home-narrative-anchor data-home-narrative-track="media" data-home-narrative-break="true" data-home-narrative-node aria-hidden="true" />
         <div className={styles.proofFilm} aria-hidden="true">
+          <div className={styles.proofEntryLine} />
           <SearchScrollVideo
             className={styles.proofVideo}
-            webmSrc="/media/home/method-to-evidence-scroll-v1.webm"
-            mp4Src="/media/home/method-to-evidence-scroll-v1.mp4"
-            poster="/media/home/method-to-evidence-poster-v1.jpg"
+            webmSrc="/media/home/method-to-evidence-scroll-v2.webm"
+            mp4Src="/media/home/method-to-evidence-scroll-v2.mp4"
+            poster="/media/home/method-to-evidence-poster-v2.jpg"
             scrollRootId="proof-scroll-track"
             sequenceId="evidencia-en-movimiento"
             stepProfile="evidence"
@@ -372,8 +375,7 @@ export default function HomePage() {
         </div>
 
         <p className={styles.proofDisclaimer}>
-          Esta secuencia representa el proceso. Los resultados reales se mostrarán
-          con contexto suficiente e identidad protegida.
+          El siguiente paso es contrastar la ruta con una prueba real.
         </p>
         <i className={styles.proofNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="media" data-home-narrative-node data-home-narrative-break="true" aria-hidden="true" />
       </section>
@@ -383,6 +385,8 @@ export default function HomePage() {
         className={styles.examReveal}
         aria-labelledby="exam-reveal-title"
       >
+        <i className={styles.examNarrativeEntry} data-home-narrative-anchor data-home-narrative-track="media" data-home-narrative-node aria-hidden="true" />
+        <i className={styles.examNarrativeTurn} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-join="orthogonal" data-home-narrative-node aria-hidden="true" />
         <div className={styles.examRevealInner}>
           <div className={styles.examRevealHeader}>
             <p className={styles.eyebrow}>La ruta se contrasta con una prueba concreta</p>
@@ -398,7 +402,7 @@ export default function HomePage() {
 
           <div className={styles.examNetwork} aria-label="Exámenes disponibles en WeLearn">
             <div className={styles.examNetworkSource} aria-hidden="true">
-              <i className={styles.examNarrativeAnchor} data-home-narrative-anchor data-home-narrative-node />
+              <i className={styles.examNarrativeAnchor} />
               <span>Tu meta</span>
               <strong>una prueba concreta</strong>
             </div>
@@ -420,11 +424,11 @@ export default function HomePage() {
           WeLearn es una academia independiente. Los nombres de los exámenes identifican
           la preparación disponible y no implican patrocinio ni aval de sus organizaciones.
         </p>
-        <i className={styles.examNarrativeExit} data-home-narrative-anchor data-home-narrative-track="media" data-home-narrative-node aria-hidden="true" />
+        <i className={styles.examNarrativeExit} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-node aria-hidden="true" />
       </section>
 
       <section id="plataforma" className={styles.systemSection} aria-labelledby="system-title">
-        <i className={styles.systemNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="media" aria-hidden="true" />
+        <i className={styles.systemNarrativeAnchor} data-home-narrative-anchor data-home-narrative-track="gutter" aria-hidden="true" />
         <i className={styles.systemNarrativeBypass} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-join="orthogonal" data-home-narrative-node aria-hidden="true" />
         <i className={styles.systemNarrativeExit} data-home-narrative-anchor data-home-narrative-track="gutter" data-home-narrative-node aria-hidden="true" />
         <div className={styles.systemHeader}>

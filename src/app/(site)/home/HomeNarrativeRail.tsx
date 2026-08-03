@@ -79,7 +79,8 @@ export default function HomeNarrativeRail() {
 
       progressPath.style.strokeDashoffset = String(pathLength - travelled);
       pulse.style.transform = `translate3d(${point.x - 5}px, ${point.y - 5}px, 0)`;
-      pulse.style.opacity = progress > 0 && progress < 1 && !prefersReducedMotion.matches ? '1' : '0';
+      pulse.style.opacity = progress < 1 && !prefersReducedMotion.matches ? '1' : '0';
+      pulse.dataset.state = progress === 0 ? 'waiting' : 'travelling';
       nodeEntries.forEach(({ element, documentY }) => {
         element.dataset.active = String(viewportMarker >= documentY);
       });

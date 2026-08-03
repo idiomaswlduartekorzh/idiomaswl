@@ -97,6 +97,7 @@ export default function SearchScrollVideo({
 
     let animationFrame = 0;
     let duration = 0;
+    let lastPalette = '';
     let lastStep = -1;
     let needsMeasurement = true;
     let targetTime = 0;
@@ -121,10 +122,18 @@ export default function SearchScrollVideo({
         : clamp((sequenceStartLine - sequenceBounds.top) / sequenceTravel, 0, 1);
       targetTime = mediaProgress * Math.max(0, duration - 0.04);
       const nextStep = getScrollStep(sequenceProgress, stepProfile);
+      const nextPalette = stepProfile === 'evidence' && mediaProgress >= 0.84
+        ? 'paper'
+        : 'night';
 
       if (nextStep !== lastStep) {
         sequence.dataset.scrollStep = String(nextStep);
         lastStep = nextStep;
+      }
+
+      if (stepProfile === 'evidence' && nextPalette !== lastPalette) {
+        sequence.dataset.scrollPalette = nextPalette;
+        lastPalette = nextPalette;
       }
     };
 
@@ -208,6 +217,7 @@ export default function SearchScrollVideo({
       video.removeEventListener('loadedmetadata', handleMetadata);
       video.removeEventListener('seeked', ensureFrame);
       delete sequence.dataset.scrollStep;
+      delete sequence.dataset.scrollPalette;
     };
   }, [mp4Src, scrollRootId, sequenceId, stepProfile, webmSrc]);
 
