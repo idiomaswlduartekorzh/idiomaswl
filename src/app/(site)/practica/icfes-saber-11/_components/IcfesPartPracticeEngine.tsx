@@ -88,11 +88,15 @@ export default function IcfesPartPracticeEngine({
   questions,
   context = 'part-practice',
   progressScope = 'part',
+  onComplete,
+  resultAction,
 }: {
   part: IcfesPartConfig;
   questions: IcfesPracticeQuestion[];
   context?: PracticeContext;
   progressScope?: string;
+  onComplete?: (result: { accuracy: number; correctCount: number; questionCount: number }) => void;
+  resultAction?: { label: string; onClick: () => void };
 }) {
   const [started, setStarted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -229,6 +233,7 @@ export default function IcfesPartPracticeEngine({
         });
       }
       track(context === 'guided-simulator' ? 'icfes_guided_simulator_complete' : 'icfes_practice_complete', { part: part.part, question_count: questions.length, correct_count: correctCount, accuracy, progress_scope: progressScope });
+      onComplete?.({ accuracy, correctCount, questionCount: questions.length });
       return;
     }
     setCurrentIndex((index) => index + 1);
@@ -286,7 +291,9 @@ export default function IcfesPartPracticeEngine({
           {accuracy >= 80 ? 'Avanza y conserva esta parte en repaso periódico.' : 'Repite los errores y vuelve a intentarlo después de la microlección recomendada.'}
         </div>
         <div className={styles.actionRow}>
-          <Link href={recommendation.href} className={styles.primaryButton}>{recommendation.label}</Link>
+          {resultAction
+            ? <button type="button" className={styles.primaryButton} onClick={resultAction.onClick}>{resultAction.label}</button>
+            : <Link href={recommendation.href} className={styles.primaryButton}>{recommendation.label}</Link>}
           <button type="button" className={styles.secondaryButton} onClick={restart}>Repetir sesión</button>
           <Link href="/practica/icfes-saber-11" className={styles.textLink}>Volver al hub</Link>
         </div>

@@ -12,6 +12,26 @@ El clúster separa tres intenciones:
 
 El superhub enlaza siete páginas de parte, diagnóstico, vocabulario, plan de 30/60/90 días (más una opción urgente), pregunta diaria, repaso de errores, progreso y cuadernillos. Las páginas educativas indexables renderizan explicación sustancial en servidor; solo los motores interactivos son Client Components.
 
+## Patrón pedagógico de las páginas de parte
+
+La Parte 1 es el piloto editorial del patrón inspirado en las lecciones de IELTS Writing Task 1. Ya no se organiza como una introducción breve seguida inmediatamente por preguntas, sino como una experiencia vertical:
+
+1. **Entiende:** formato oficial, habilidad evaluada, anatomía del estímulo y contrato de respuesta.
+2. **Aprende:** método WeLearn repetible, pistas lingüísticas y familias de vocabulario.
+3. **Observa:** ejemplos propios guiados que hacen visible la pista, el descarte y la respuesta razonada.
+4. **Practica:** WeLearn Engine progresivo con niveles de reconocimiento, discriminación y transferencia.
+5. **Corrige:** evidencia, explicación de opciones, microlección, estrategia transferible y siguiente nivel.
+
+Archivos del piloto:
+
+- `src/data/icfes/part-one-lesson.ts`: contenido editorial, 12 demostraciones y ejercicios por nivel.
+- `IcfesPartOneLesson.tsx`: contenido estático y jerarquía pedagógica renderizada en servidor.
+- `IcfesPartOneExamples.tsx`: demostraciones por categorías.
+- `IcfesProgressivePractice.tsx`: navegación reutilizable por niveles.
+- `IcfesPartPracticeEngine.tsx`: motor común, persistencia y feedback.
+
+Para extender el patrón a Partes 2–7, crear primero un esquema de contenido específico para la tarea —no copiar ejemplos de Parte 1— y conservar la misma secuencia. Cada parte debe tener al menos: formato exacto, qué observar, qué responder, errores frecuentes, 9–12 demostraciones distribuidas por subtipos y tres niveles de práctica. La extensión se realiza después de aprobar visual y pedagógicamente el piloto para evitar multiplicar una arquitectura sin validar.
+
 ## Verdad editorial
 
 Fuente principal: [Guía de orientación Saber 11 2026-2 del ICFES](https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf).

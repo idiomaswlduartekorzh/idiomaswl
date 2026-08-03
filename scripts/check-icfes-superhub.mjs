@@ -7,6 +7,7 @@ const guided = read('src/data/icfes/guided-workbooks.ts');
 const mocks = read('src/data/mocks/icfes-simulacros.ts');
 const sitemap = read('src/app/sitemap.ts');
 const migration = read('supabase/migrations/20260803_icfes_practice_engine.sql');
+const partOneLesson = read('src/data/icfes/part-one-lesson.ts');
 
 for (let part = 1; part <= 7; part += 1) {
   const count = (questions.match(new RegExp(`officialPart: ${part}`, 'g')) ?? []).length;
@@ -32,6 +33,12 @@ for (const table of ['icfes_practice_sessions', 'icfes_practice_attempts', 'icfe
 }
 assert.match(migration, /REVOKE ALL ON FUNCTION record_icfes_practice_attempt[\s\S]+FROM PUBLIC/, 'La función RPC no debe quedar ejecutable por anon/public');
 
+assert.equal((partOneLesson.match(/decisiveClue:/g) ?? []).length - 1, 12, 'La Parte 1 debe conservar 12 ejemplos guiados');
+assert.equal((partOneLesson.match(/id: 'p1-/g) ?? []).length, 8, 'La Parte 1 debe conservar 8 ejercicios adicionales para progresión');
+for (const stage of ['category', 'clue', 'distractors']) {
+  assert.match(partOneLesson, new RegExp(`id: '${stage}'`), `Falta el nivel progresivo ${stage} de la Parte 1`);
+}
+
 const publicTruth = [
   read('src/data/examGuides.ts'),
   read('src/app/(site)/dashboard/student/StudentDashboardClient.tsx'),
@@ -41,4 +48,4 @@ assert.doesNotMatch(publicTruth, /La prueba de Inglés del ICFES Saber 11 tiene 
 assert.doesNotMatch(publicTruth, /ICFES Nivel C1/i);
 assert.doesNotMatch(publicTruth, /solo evalúa comprensión de lectura/i);
 
-console.log('Superhub ICFES íntegro: 7 partes, 25 revisiones guiadas, rangos explícitos, SEO y RLS verificados.');
+console.log('Superhub ICFES íntegro: 7 partes, Parte 1 progresiva, 25 revisiones guiadas, rangos explícitos, SEO y RLS verificados.');

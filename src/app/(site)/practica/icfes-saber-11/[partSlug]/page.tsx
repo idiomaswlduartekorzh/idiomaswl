@@ -3,7 +3,10 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getIcfesQuestionsByPart } from '@/data/icfes/questions';
 import { getIcfesPart, ICFES_PARTS, ICFES_PART_SLUGS } from '@/data/icfes/parts';
+import { buildPartOneStages } from '@/data/icfes/part-one-lesson';
 import IcfesPartPracticeEngine from '../_components/IcfesPartPracticeEngine';
+import IcfesPartOneLesson from '../_components/IcfesPartOneLesson';
+import IcfesProgressivePractice from '../_components/IcfesProgressivePractice';
 import styles from '../icfes-learning.module.css';
 
 const BASE = 'https://www.idiomaswl.com';
@@ -37,6 +40,7 @@ export default async function IcfesPartPage({ params }: Props) {
   const part = getIcfesPart(partSlug);
   if (!part) notFound();
   const questions = getIcfesQuestionsByPart(part.part);
+  const partOneStages = part.part === 1 ? buildPartOneStages(questions) : [];
   const nextPart = ICFES_PARTS.find((item) => item.part === part.part + 1);
   const url = `${BASE}/practica/icfes-saber-11/${part.slug}`;
   const jsonLd = {
@@ -90,24 +94,30 @@ export default async function IcfesPartPage({ params }: Props) {
           </div>
         </header>
 
-        <section className={styles.strategySection} aria-labelledby="strategy-title">
-          <div>
-            <p className={styles.kicker}>Método de resolución</p>
-            <h2 id="strategy-title">Una estrategia de cuatro movimientos</h2>
-            <p>No memorices una letra. Entrena un proceso que puedas repetir cuando cambien el tema, el vocabulario o los distractores.</p>
-          </div>
-          <ol className={styles.strategySteps}>
-            {part.strategy.map((step, index) => <li key={step}><span>{index + 1}</span><p>{step}</p></li>)}
-          </ol>
-        </section>
+        {part.part === 1 ? (
+          <IcfesPartOneLesson />
+        ) : (
+          <section className={styles.strategySection} aria-labelledby="strategy-title">
+            <div>
+              <p className={styles.kicker}>Método de resolución</p>
+              <h2 id="strategy-title">Una estrategia de cuatro movimientos</h2>
+              <p>No memorices una letra. Entrena un proceso que puedas repetir cuando cambien el tema, el vocabulario o los distractores.</p>
+            </div>
+            <ol className={styles.strategySteps}>
+              {part.strategy.map((step, index) => <li key={step}><span>{index + 1}</span><p>{step}</p></li>)}
+            </ol>
+          </section>
+        )}
 
         <section id="practica-guiada" className={styles.practiceSection} aria-labelledby="practice-title">
           <div className={styles.sectionHeading}>
-            <p className={styles.kicker}>Ahora hazlo tú</p>
-            <h2 id="practice-title">Práctica guiada de la Parte {part.part}</h2>
-            <p>Primero decides; después ves evidencia, distractores y una microlección. Tu primera práctica no requiere registro.</p>
+            <p className={styles.kicker}>{part.part === 1 ? 'Ahora transfiere el método' : 'Ahora hazlo tú'}</p>
+            <h2 id="practice-title">{part.part === 1 ? 'Del ejemplo al WeLearn Engine' : `Práctica guiada de la Parte ${part.part}`}</h2>
+            <p>{part.part === 1 ? 'Avanza por tres niveles. Cada respuesta muestra evidencia, distractores y una microlección antes de aumentar la dificultad.' : 'Primero decides; después ves evidencia, distractores y una microlección. Tu primera práctica no requiere registro.'}</p>
           </div>
-          <IcfesPartPracticeEngine part={part} questions={questions} />
+          {part.part === 1
+            ? <IcfesProgressivePractice part={part} stages={partOneStages} />
+            : <IcfesPartPracticeEngine part={part} questions={questions} />}
         </section>
 
         <section className={styles.sourceSection}>
