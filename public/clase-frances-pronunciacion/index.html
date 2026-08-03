@@ -1,0 +1,2300 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le français n'est pas ce qu'il paraît</title>
+  <style>
+    :root {
+      --cream: #f7f0e2;
+      --paper: #fffaf0;
+      --ink: #10233f;
+      --muted: #69758a;
+      --blue: #173f7a;
+      --blue-soft: #dce8f8;
+      --red: #b33a3a;
+      --gold: #c79a35;
+      --green: #28795f;
+      --violet: #7353a6;
+      --sky: #3d7f9f;
+      --rose: #c45b75;
+      --line: rgba(16, 35, 63, .16);
+      --shadow: 0 22px 60px rgba(16, 35, 63, .12);
+      --radius: 8px;
+      --font-display: Georgia, "Times New Roman", serif;
+      --font-body: Avenir, "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-ui: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --text-scale: 1;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(23,63,122,.045) 1px, transparent 1px),
+        linear-gradient(rgba(23,63,122,.035) 1px, transparent 1px),
+        var(--cream);
+      background-size: 42px 42px;
+      font-family: var(--font-body);
+    }
+
+    button, input, select, textarea { font: inherit; }
+    button {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+      min-height: 42px;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+    button:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(16,35,63,.1); }
+    button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 3px solid rgba(199,154,53,.45);
+      outline-offset: 2px;
+    }
+    button[disabled] { opacity: .45; cursor: not-allowed; transform: none; box-shadow: none; }
+    .app { min-height: 100vh; display: grid; grid-template-rows: auto 1fr; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 10px clamp(14px, 3vw, 34px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(247,240,226,.92);
+      backdrop-filter: blur(10px);
+    }
+    .brand { display: flex; gap: 12px; align-items: center; min-width: 0; }
+    .seal {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--ink);
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      font-family: var(--font-display);
+      color: var(--red);
+      flex: 0 0 auto;
+    }
+    .brand strong { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .brand span { display: block; color: var(--muted); font-size: 13px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .icon-btn { width: 42px; padding: 0; display: inline-grid; place-items: center; }
+    .primary { background: var(--blue); color: white; border-color: var(--blue); padding: 0 18px; }
+    .danger { color: var(--red); border-color: rgba(179,58,58,.35); }
+    .ghost { background: transparent; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,250,240,.72);
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      min-height: calc(100vh - 60px);
+    }
+    .rail {
+      border-right: 1px solid var(--line);
+      padding: 18px 14px;
+      background: rgba(255,250,240,.48);
+    }
+    .steps { display: grid; gap: 7px; }
+    .step {
+      width: 100%;
+      text-align: left;
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 9px;
+      background: transparent;
+    }
+    .step .num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      font-family: var(--font-ui);
+      font-size: 12px;
+    }
+    .step.active { background: var(--blue); color: white; border-color: var(--blue); }
+    .step.active .num { border-color: rgba(255,255,255,.38); color: white; }
+    .step.done .num { background: var(--green); color: white; border-color: var(--green); }
+    .stage {
+      min-width: 0;
+      padding: clamp(18px, 4vw, 46px);
+    }
+    .screen {
+      display: none;
+      max-width: 1180px;
+      margin: 0 auto;
+      animation: enter .24s ease;
+    }
+    .screen.active { display: block; }
+    @keyframes enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+
+    .hero {
+      min-height: calc(100vh - 150px);
+      display: grid;
+      align-content: center;
+      gap: 28px;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.05; letter-spacing: 0; }
+    h1 {
+      max-width: 980px;
+      font-family: var(--font-display);
+      font-size: clamp(46px, 9vw, 108px);
+      font-weight: 700;
+    }
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(34px, 5vw, 64px);
+      margin-bottom: 12px;
+    }
+    h3 { font-size: 22px; margin-bottom: 8px; }
+    p { line-height: 1.55; }
+    .lead { max-width: 680px; font-size: clamp(19px, 2vw, 25px); color: #33445f; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 34px;
+      align-items: end;
+    }
+    .decoder {
+      min-height: 260px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      display: grid;
+      gap: 14px;
+      align-content: center;
+    }
+    .code-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      font-family: var(--font-display);
+      font-size: 26px;
+    }
+    .code-line:last-child { border-bottom: 0; }
+    .code-line span:last-child {
+      font-family: var(--font-ui);
+      color: var(--red);
+      font-size: 16px;
+    }
+    .code-line b { animation: decode 4s ease-in-out infinite; }
+    .code-line:nth-child(2) b { animation-delay: .5s; }
+    .code-line:nth-child(3) b { animation-delay: 1s; }
+    .code-video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      object-fit: cover;
+      background: var(--cream);
+    }
+    @keyframes decode {
+      0%, 100% { color: var(--ink); letter-spacing: 0; }
+      48%, 58% { color: var(--red); letter-spacing: 1px; }
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255,250,240,.82);
+      border-radius: var(--radius);
+      box-shadow: 0 14px 36px rgba(16,35,63,.08);
+      padding: clamp(16px, 2.4vw, 26px);
+    }
+    .grid { display: grid; gap: 16px; }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0; }
+    .small { color: var(--muted); font-size: 14px; }
+    .teacher-note {
+      display: none;
+      margin: 12px 0;
+      padding: 12px 14px;
+      border-left: 4px solid var(--gold);
+      background: rgba(199,154,53,.12);
+      color: #604716;
+    }
+    body.show-spanish .teacher-note { display: block; }
+
+    .central-text {
+      font-family: var(--font-display);
+      font-size: calc(clamp(24px, 3vw, 42px) * var(--text-scale));
+      line-height: 1.55;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: clamp(18px, 3vw, 34px);
+      box-shadow: var(--shadow);
+    }
+    .central-text.hidden-text { filter: blur(9px); user-select: none; }
+    .word {
+      border-radius: 5px;
+      padding: 0 2px;
+      cursor: pointer;
+      transition: background .15s ease, color .15s ease, opacity .15s ease;
+    }
+    .word.recognized { background: rgba(40,121,95,.18); box-shadow: inset 0 -2px 0 var(--green); }
+    .word.active-sentence { background: rgba(199,154,53,.22); }
+    .word.mark-silent { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--red); }
+    .hl-ou { background: rgba(61,127,159,.22); }
+    .hl-u { background: rgba(115,83,166,.2); }
+    .hl-oi { background: rgba(179,58,58,.16); }
+    .hl-au { background: rgba(199,154,53,.25); }
+    .hl-ch { background: rgba(40,121,95,.18); }
+    .hl-on { background: rgba(196,91,117,.18); }
+    .hl-liaison { box-shadow: inset 0 -3px 0 var(--blue); }
+    .rhythm { border-bottom: 2px dotted var(--gold); }
+
+    .participant {
+      display: grid;
+      gap: 12px;
+      border-left: 4px solid var(--blue);
+    }
+    .participant[data-person="Mère"] { border-left-color: var(--red); }
+    .participant[data-person="Enfant"] { border-left-color: var(--green); }
+    .rec-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    canvas.wave {
+      width: 100%;
+      height: 46px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(23,63,122,.08), rgba(255,250,240,.6));
+    }
+    .recording { color: var(--red); font-weight: 700; }
+
+    .question {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding: 14px 0;
+    }
+    .answers { display: flex; gap: 8px; flex-wrap: wrap; }
+    .answer.correct { background: rgba(40,121,95,.15); border-color: var(--green); }
+    .answer.wrong { background: rgba(179,58,58,.12); border-color: var(--red); }
+    .visual-choice {
+      min-width: 72px;
+      padding: 8px 10px;
+      display: inline-grid;
+      place-items: center;
+      gap: 4px;
+    }
+    .mini-visual {
+      width: 38px;
+      height: 26px;
+      border-radius: 50%;
+      border: 2px solid currentColor;
+      position: relative;
+    }
+    .mini-visual::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: currentColor;
+      right: 7px;
+      top: 6px;
+    }
+    .asset-tile {
+      min-height: 150px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(23,63,122,.08), rgba(179,58,58,.07)),
+        var(--paper);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: var(--muted);
+      text-align: center;
+      padding: 14px;
+    }
+    .asset-tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .asset-tile img.missing { display: none; }
+
+    .sentence-line {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .sentence-line.active { background: rgba(199,154,53,.12); }
+    .sentence-actions { display: flex; flex-wrap: wrap; gap: 7px; justify-content: flex-end; }
+    .sentence-actions button { min-height: 36px; padding: 0 10px; }
+
+    .secret-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 12px; }
+    .secret-tabs button { flex: 0 0 auto; padding: 0 12px; }
+    .secret-tabs button.active { background: var(--blue); color: white; border-color: var(--blue); }
+    .cluster-map {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 14px 0 18px;
+    }
+    .cluster-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,250,240,.86);
+      padding: 14px;
+    }
+    .cluster-card.active { border-color: var(--blue); box-shadow: inset 0 0 0 2px rgba(23,63,122,.16); }
+    .cluster-card h3 { font-size: 18px; margin-bottom: 6px; }
+    .cluster-card .sound-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 10px 0;
+    }
+    .sound-badge {
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-family: var(--font-ui);
+      font-size: 12px;
+    }
+    .cluster-rule-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .cluster-rule-list button {
+      min-height: 32px;
+      padding: 4px 8px;
+      font-size: 13px;
+      text-align: left;
+    }
+    .cluster-rule-list button.active { background: var(--blue); color: white; border-color: var(--blue); }
+    .rule-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .phase {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,250,240,.78);
+    }
+    .phase-label {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      color: var(--blue);
+      letter-spacing: .08em;
+    }
+    .pattern-word {
+      font-family: var(--font-display);
+      font-size: 32px;
+      display: inline-block;
+      margin: 5px 7px 5px 0;
+    }
+    .silent-end { opacity: .42; text-decoration: line-through; text-decoration-color: var(--red); }
+    .lip {
+      width: 120px;
+      height: 72px;
+      border: 3px solid var(--red);
+      border-radius: 48% 52% 50% 50%;
+      display: grid;
+      place-items: center;
+      margin: 12px 0;
+      color: var(--red);
+      animation: lips 2.8s ease-in-out infinite;
+    }
+    @keyframes lips {
+      0%, 100% { transform: scaleX(1); }
+      50% { transform: scaleX(.72); }
+    }
+    .nasal {
+      width: 150px;
+      height: 86px;
+      border: 2px solid var(--rose);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      position: relative;
+      margin: 12px 0;
+    }
+    .nasal::before, .nasal::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 62px;
+      background: var(--rose);
+      right: -50px;
+    }
+    .nasal::before { top: 26px; transform: rotate(-12deg); }
+    .nasal::after { bottom: 26px; transform: rotate(12deg); }
+    .cards { display: flex; gap: 8px; flex-wrap: wrap; }
+    .word-chip { padding: 9px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); }
+    .word-chip.selected { background: var(--blue-soft); border-color: var(--blue); }
+
+    .dropzones { display: grid; grid-template-columns: repeat(5, minmax(110px, 1fr)); gap: 10px; margin-top: 12px; }
+    .dropzone {
+      min-height: 98px;
+      padding: 10px;
+      border: 1px dashed rgba(16,35,63,.35);
+      border-radius: var(--radius);
+      background: rgba(255,250,240,.55);
+    }
+    .dropzone strong { display: block; margin-bottom: 8px; }
+    .dragging { opacity: .55; }
+    .feedback { min-height: 28px; color: var(--green); font-weight: 700; margin-top: 8px; }
+
+    .layer-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .layer-list label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+    }
+
+    .group-line {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 22px;
+    }
+    .countdown {
+      font-family: var(--font-display);
+      font-size: 58px;
+      color: var(--red);
+      min-height: 70px;
+    }
+
+    .checklist label {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .template input {
+      width: 100%;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: white;
+    }
+    .presentation {
+      white-space: pre-line;
+      font-family: var(--font-display);
+      font-size: 30px;
+      line-height: 1.55;
+    }
+    .progress-person {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+    .bar {
+      height: 9px;
+      border-radius: 999px;
+      background: rgba(16,35,63,.12);
+      overflow: hidden;
+    }
+    .bar span { display: block; height: 100%; background: var(--green); width: 0; }
+
+    .teacher-panel {
+      position: fixed;
+      inset: 0 0 0 auto;
+      width: min(430px, 100vw);
+      z-index: 50;
+      transform: translateX(105%);
+      transition: transform .2s ease;
+      background: #11233e;
+      color: white;
+      box-shadow: -28px 0 70px rgba(0,0,0,.24);
+      padding: 18px;
+      overflow-y: auto;
+    }
+    .teacher-panel.open { transform: translateX(0); }
+    .teacher-panel button, .teacher-panel input, .teacher-panel select {
+      background: rgba(255,255,255,.08);
+      color: white;
+      border-color: rgba(255,255,255,.22);
+    }
+    .teacher-panel input, .teacher-panel select { padding: 9px; border-radius: var(--radius); width: 100%; }
+    .teacher-panel option { color: var(--ink); }
+    .teacher-panel .panel { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.16); box-shadow: none; }
+
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translateX(-50%);
+      z-index: 60;
+      background: var(--ink);
+      color: white;
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .18s ease;
+    }
+    .toast.show { opacity: 1; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .rail { position: sticky; top: 59px; z-index: 12; border-right: 0; border-bottom: 1px solid var(--line); overflow-x: auto; padding: 10px; }
+      .steps { display: flex; width: max-content; }
+      .step { width: 190px; }
+      .hero-grid, .two, .three, .four, .rule-grid { grid-template-columns: 1fr; }
+      .dropzones { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cluster-map { grid-template-columns: 1fr; }
+      .sentence-line, .question, .group-line { grid-template-columns: 1fr; }
+      .sentence-actions { justify-content: flex-start; }
+    }
+    @media (max-width: 560px) {
+      .topbar { grid-template-columns: 1fr; }
+      .controls { justify-content: flex-start; }
+      .stage { padding: 14px; }
+      h1 { font-size: 42px; }
+      .central-text { font-size: calc(23px * var(--text-scale)); }
+      .dropzones { grid-template-columns: 1fr; }
+      .footer-nav { position: sticky; bottom: 0; background: rgba(247,240,226,.94); padding: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar" aria-label="Navigation principale">
+      <div class="brand">
+        <div class="seal" aria-hidden="true">fr</div>
+        <div>
+          <strong>Le français n'est pas ce qu'il paraît</strong>
+          <span id="stageLabel">Bienvenue</span>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="icon-btn ghost" id="prevTop" aria-label="Écran précédent">‹</button>
+        <button class="icon-btn ghost" id="nextTop" aria-label="Écran suivant">›</button>
+        <button class="icon-btn" id="teacherToggle" aria-label="Mode professeur">P</button>
+        <button class="icon-btn danger" id="resetAll" aria-label="Réinitialiser la session">↺</button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="rail" aria-label="Étapes de la classe">
+        <nav class="steps" id="stepNav"></nav>
+      </aside>
+      <main class="stage" id="main" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <aside class="teacher-panel" id="teacherPanel" aria-label="Modo profesor" aria-hidden="true">
+    <div class="toolbar" style="justify-content:space-between">
+      <h3>Modo profesor</h3>
+      <button id="closeTeacher" class="icon-btn" aria-label="Cerrar">×</button>
+    </div>
+    <p class="small" style="color:#cdd8ea">Pulsa P para abrir o cerrar este panel.</p>
+    <div class="grid">
+      <section class="panel">
+        <label>Ir a pantalla
+          <select id="teacherScreen"></select>
+        </label>
+        <div class="toolbar">
+          <button id="toggleSpanish">Explicaciones en español</button>
+          <button id="toggleMarks">Marcas</button>
+        </div>
+      </section>
+      <section class="panel">
+        <h3>Tiempo</h3>
+        <p>Clase: <strong id="classTimer">00:00</strong></p>
+        <p>Actividad: <strong id="activityTimer">00:00</strong></p>
+        <div class="toolbar">
+          <button id="startActivity">Iniciar cronómetro</button>
+          <button id="stopActivity">Detener</button>
+          <button id="resetActivity">Reiniciar</button>
+        </div>
+      </section>
+      <section class="panel">
+        <h3>Participantes</h3>
+        <div id="teacherParticipants" class="grid"></div>
+      </section>
+      <section class="panel">
+        <h3>Grabaciones</h3>
+        <div id="recordingStatus" class="small" style="color:#cdd8ea"></div>
+        <div class="toolbar">
+          <button id="resetCurrentActivity">Reiniciar actividad actual</button>
+          <button class="danger" id="clearRecordings">Borrar grabaciones</button>
+        </div>
+      </section>
+      <section class="panel">
+        <h3>Respuestas</h3>
+        <div id="answerKey" class="small" style="color:#cdd8ea"></div>
+      </section>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const CONFIG = {
+      title: "Le français n'est pas ce qu'il paraît",
+      subtitle: "Découvrez les secrets de la prononciation française.",
+      centralText: "Bonjour, je m’appelle Lucas. J’ai neuf ans et j’habite à Paris avec ma famille. Mon père s’appelle Paul et ma mère s’appelle Sophie. Nous avons un petit chien qui s’appelle Oscar. Le matin, nous mangeons ensemble. Ensuite, je vais à l’école. J’aime le français, la musique et les histoires. À bientôt !",
+      extraPhrase: "Mes parents parlent français.",
+      participants: ["Père", "Mère", "Enfant"],
+      audio: {
+        natural: "assets/audio/texte-natural.m4a",
+        slow: "assets/audio/texte-lent.m4a",
+        segmented: "assets/audio/texte-segmente.m4a",
+        pauseAfterPractice: "assets/audio/pause-apres-pratique.m4a"
+      },
+      images: {
+        family: "assets/images/scene-famille.png",
+        u: "assets/images/bouche-u.webp",
+        ou: "assets/images/bouche-ou.webp",
+        nasal: "assets/images/nasal-on.png",
+        liaison: "assets/images/liaison.png",
+        codeLetters: "assets/images/regles/code-lettres.mp4",
+        codeLettersPoster: "assets/images/regles/code-lettres.png",
+        eFinal: "assets/images/regles/e-final.webp",
+        accents: "assets/images/regles/accents-e.webp",
+        nasalAn: "assets/images/regles/nasal-an-en.png",
+        nasalIn: "assets/images/regles/nasal-in-ain-ein.png",
+        eu: "assets/images/regles/eu-oeu.webp",
+        ch: "assets/images/regles/ch.png",
+        gn: "assets/images/regles/gn.webp",
+        ill: "assets/images/regles/ill.webp",
+        qu: "assets/images/regles/qu.webp",
+        cSoft: "assets/images/regles/c-cedille.webp",
+        gSoft: "assets/images/regles/g-doux.webp",
+        hMuet: "assets/images/regles/h-muet.webp",
+        ien: "assets/images/regles/ien.webp"
+      },
+      stages: [
+        ["Bienvenue", 8],
+        ["Observez le texte", 10],
+        ["Première lecture", 18],
+        ["Première écoute", 12],
+        ["Écoutez et lisez", 16],
+        ["Familles de sons", 30],
+        ["Laboratoire", 15],
+        ["Le texte décodé", 10],
+        ["Lecture par groupes", 12],
+        ["Deuxième lecture", 15],
+        ["À vous", 12],
+        ["Bilan", 6]
+      ],
+      sentences: [
+        "Bonjour, je m’appelle Lucas.",
+        "J’ai neuf ans et j’habite à Paris avec ma famille.",
+        "Mon père s’appelle Paul et ma mère s’appelle Sophie.",
+        "Nous avons un petit chien qui s’appelle Oscar.",
+        "Le matin, nous mangeons ensemble.",
+        "Ensuite, je vais à l’école.",
+        "J’aime le français, la musique et les histoires.",
+        "À bientôt !"
+      ],
+      rhythmGroups: [
+        "Bonjour, / je m’appelle Lucas.",
+        "J’ai neuf ans / et j’habite à Paris / avec ma famille.",
+        "Mon père s’appelle Paul / et ma mère s’appelle Sophie.",
+        "Nous avons un petit chien / qui s’appelle Oscar.",
+        "Le matin, / nous mangeons ensemble.",
+        "Ensuite, / je vais à l’école.",
+        "J’aime le français, / la musique / et les histoires.",
+        "À bientôt !"
+      ],
+      questions: [
+        { q: "Qui parle ?", options: ["Lucas", "Sophie", "Oscar"], correct: "Lucas" },
+        { q: "Quel âge a Lucas ?", options: ["9 ans", "6 ans", "12 ans"], correct: "9 ans" },
+        { q: "Où habite Lucas ?", options: ["Paris", "Bogotá", "Lyon"], correct: "Paris" },
+        { q: "Lucas a un chien ou un chat ?", options: ["un chien", "un chat"], correct: "un chien" },
+        { q: "Lucas aime la musique ?", options: ["oui", "non"], correct: "oui" }
+      ],
+      soundClusters: [
+        {
+          id: "u-rounded",
+          title: "Voyelles rondes",
+          sounds: ["OU /u/", "U française", "EU / ŒU"],
+          guide: "On commence par les lèvres: rondes, puis plus tendues. C'est la famille la plus visible pour un hispanophone."
+        },
+        {
+          id: "a-o-family",
+          title: "Famille A et O",
+          sounds: ["A / Â", "O ouvert", "O fermé", "AU / EAU"],
+          guide: "On sépare les voyelles orales simples des graphies qui changent le son."
+        },
+        {
+          id: "e-family",
+          title: "Famille E",
+          sounds: ["E final", "É / È / Ê", "AI / EI", "ER / EZ", "-ENT"],
+          guide: "On distingue les E qui sonnent, les E qui disparaissent et les terminaisons écrites."
+        },
+        {
+          id: "i-glides",
+          title: "Famille I et glissements",
+          sounds: ["I / Y", "OI", "IEN", "ILL"],
+          guide: "On observe les glissements: i peut aider à créer y, wa ou un groupe nasal."
+        },
+        {
+          id: "nasal-family",
+          title: "Voyelles nasales",
+          sounds: ["ON", "AN / EN", "IN / AIN / EIN", "UN", "AM / EM / OM / IM"],
+          guide: "On écoute l'air: la voyelle ne se ferme pas avec une N forte comme en espagnol."
+        },
+        {
+          id: "consonant-code",
+          title: "Consonnes-código",
+          sounds: ["CH", "J / G doux", "GN", "QU", "C / Ç", "S/Z", "B/V", "R française", "PH / TH / X"],
+          guide: "Ici, une lettre écrite ne correspond pas toujours au son attendu en espagnol."
+        },
+        {
+          id: "silent-flow",
+          title: "Lettres muettes et rythme",
+          sounds: ["finales muettes", "H muet", "liaison", "enchaînement", "élision", "groupes de sens"],
+          guide: "On finit par lire en groupes: les mots se connectent et la phrase respire mieux."
+        }
+      ],
+      rules: [
+        {
+          id: "silent",
+          title: "Secret 1 · Consonnes finales",
+          cluster: "silent-flow",
+          teacher: "Muchas consonantes finales no se pronuncian, pero no todas. Trabaja por patrones frecuentes y escucha siempre el modelo.",
+          words: ["petit", "Paris", "français", "bientôt"],
+          contrast: ["petit", "petite"],
+          explanation: "À la fin, certaines lettres deviennent silencieuses.",
+          pattern: "finale",
+          find: ["petit", "Paris", "français", "mère", "chien", "bientôt"],
+          textMatches: ["petit", "Paris", "français", "bientôt"]
+        },
+        {
+          id: "ent",
+          title: "Secret 2 · Terminaison -ent",
+          cluster: "e-family",
+          teacher: "La terminación -ent de la tercera persona plural normalmente no se pronuncia: parlent suena como parle.",
+          words: ["parle", "parlent", "Mes parents parlent français."],
+          contrast: ["parle", "parlent"],
+          explanation: "Dans parlent, -ent est une terminaison écrite.",
+          pattern: "ent",
+          find: ["parle", "parlent", "parents", "français"],
+          textMatches: []
+        },
+        {
+          id: "ou",
+          title: "Secret 3 · OU",
+          cluster: "u-rounded",
+          teacher: "OU produce el sonido /u/, como una u española clara, con labios redondeados.",
+          words: ["bonjour", "nous", "toujours"],
+          contrast: ["nous", "nu"],
+          explanation: "OU forme un seul son: /u/.",
+          pattern: "ou",
+          find: ["bonjour", "nous", "musique", "toujours"],
+          textMatches: ["Bonjour", "Nous", "nous"]
+        },
+        {
+          id: "u",
+          title: "Secret 4 · U et OU",
+          cluster: "u-rounded",
+          teacher: "Para producir la U francesa, coloca la lengua como para decir i y redondea los labios como para decir u.",
+          words: ["tu", "tout", "musique", "bonjour"],
+          contrast: ["tu", "tout"],
+          explanation: "U et OU ne sont pas le même son.",
+          pattern: "u",
+          find: ["tu", "tout", "musique", "bonjour"],
+          textMatches: ["musique"]
+        },
+        {
+          id: "oi",
+          title: "Secret 5 · OI",
+          cluster: "i-glides",
+          teacher: "OI suele sonar aproximadamente como “wa”. Usa moi/toi para hacerlo corporal y social.",
+          words: ["moi", "toi", "trois", "au revoir", "moi et toi"],
+          contrast: ["moi", "mi"],
+          explanation: "OI se lit souvent comme wa.",
+          pattern: "oi",
+          find: ["moi", "toi", "trois", "chien"],
+          textMatches: ["histoires"]
+        },
+        {
+          id: "au",
+          title: "Secret 6 · AU et EAU",
+          cluster: "a-o-family",
+          teacher: "AU y EAU funcionan normalmente como una sola unidad sonora /o/.",
+          words: ["au", "eau", "beau", "bientôt"],
+          contrast: ["au", "a"],
+          explanation: "AU et EAU font souvent /o/.",
+          pattern: "au",
+          find: ["au", "eau", "beau", "Lucas", "bientôt"],
+          textMatches: ["bientôt"]
+        },
+        {
+          id: "ch",
+          title: "Secret 7 · CH",
+          cluster: "consonant-code",
+          teacher: "CH se pronuncia normalmente parecido a “sh”, no como la ch española.",
+          words: ["chien", "chercher", "chocolat"],
+          contrast: ["chien", "tien"],
+          explanation: "CH fait un son doux, comme sh.",
+          pattern: "ch",
+          image: "ch",
+          find: ["chien", "chercher", "chocolat", "Paris"],
+          textMatches: ["chien"]
+        },
+        {
+          id: "on",
+          title: "Découverte · ON",
+          cluster: "nasal-family",
+          teacher: "ON es nasal. Evita pronunciar una N final fuerte en bonjour, mon, nom.",
+          words: ["bonjour", "mon", "nom"],
+          contrast: ["bon", "bonne"],
+          explanation: "ON passe par le nez et la bouche.",
+          pattern: "on",
+          find: ["bonjour", "mon", "nom", "mère"],
+          textMatches: ["Bonjour", "Mon"]
+        },
+        {
+          id: "liaison",
+          title: "Découverte · Liaison",
+          cluster: "silent-flow",
+          teacher: "En nous avons, la S se conecta y suena como Z: nous‿avons.",
+          words: ["nous avons", "nous‿avons"],
+          contrast: ["nous avons", "nous mangeons"],
+          explanation: "Deux mots peuvent se connecter.",
+          pattern: "liaison",
+          find: ["nous avons", "nous mangeons", "je vais"],
+          textMatches: ["Nous avons"]
+        },
+        {
+          id: "e-final",
+          title: "Découverte · E final",
+          cluster: "e-family",
+          teacher: "La E final sin acento suele ser muda: Sophie, appelle, musique. Ayuda a no añadir una vocal española al final.",
+          words: ["Sophie", "appelle", "musique", "famille"],
+          contrast: ["petit", "petite"],
+          explanation: "À la fin, E est souvent silencieux.",
+          pattern: "eFinal",
+          image: "eFinal",
+          find: ["Sophie", "appelle", "musique", "bonjour"],
+          textMatches: ["appelle", "famille", "mère", "Sophie", "musique"]
+        },
+        {
+          id: "e-accents",
+          title: "Découverte · É, È, Ê",
+          cluster: "e-family",
+          teacher: "Los acentos cambian la lectura de la E: é tiende a /e/ cerrado; è y ê tienden a /ɛ/ abierto. No es decoración.",
+          words: ["école", "père", "mère", "bientôt"],
+          contrast: ["école", "mère"],
+          explanation: "Les accents donnent une piste de son.",
+          pattern: "accents",
+          image: "accents",
+          find: ["école", "père", "mère", "Oscar"],
+          textMatches: ["père", "mère", "école"]
+        },
+        {
+          id: "ai-ei",
+          title: "Découverte · AI et EI",
+          cluster: "e-family",
+          teacher: "AI y EI suelen sonar como una E abierta o cerrada según la palabra. En esta clase escucha J’ai, français, vais.",
+          words: ["j’ai", "français", "vais", "seize"],
+          contrast: ["j’ai", "je"],
+          explanation: "AI et EI forment souvent un son de E.",
+          pattern: "ai",
+          image: "accents",
+          find: ["j’ai", "français", "vais", "chien"],
+          textMatches: ["J’ai", "français", "vais"]
+        },
+        {
+          id: "an-en",
+          title: "Découverte · AN et EN",
+          cluster: "nasal-family",
+          teacher: "AN y EN suelen ser nasales. Evita separar a+n o e+n como en español.",
+          words: ["ans", "français", "mangeons", "ensemble", "ensuite"],
+          contrast: ["an", "Anne"],
+          explanation: "AN et EN font souvent un son nasal.",
+          pattern: "an",
+          image: "nasalAn",
+          find: ["ans", "ensemble", "ensuite", "Lucas"],
+          textMatches: ["ans", "français", "mangeons", "ensemble", "Ensuite"]
+        },
+        {
+          id: "in-ain-ein",
+          title: "Découverte · IN, AIN, EIN",
+          cluster: "nasal-family",
+          teacher: "IN, AIN y EIN suelen formar otro sonido nasal. En bientôt aparece bien, y conviene no pronunciar una N fuerte.",
+          words: ["matin", "bien", "bientôt", "pain", "plein"],
+          contrast: ["bien", "bienne"],
+          explanation: "IN, AIN et EIN peuvent être nasaux.",
+          pattern: "in",
+          image: "nasalIn",
+          find: ["matin", "bientôt", "pain", "Paris"],
+          textMatches: ["matin", "bientôt"]
+        },
+        {
+          id: "eu-oeu",
+          title: "Découverte · EU et ŒU",
+          cluster: "u-rounded",
+          teacher: "EU y ŒU no se pronuncian como eu en español. En neuf aparece un sonido central/redondeado.",
+          words: ["neuf", "deux", "peu", "sœur"],
+          contrast: ["deux", "du"],
+          explanation: "EU demande des lèvres arrondies.",
+          pattern: "eu",
+          image: "eu",
+          find: ["neuf", "deux", "peu", "nous"],
+          textMatches: ["neuf"]
+        },
+        {
+          id: "gn",
+          title: "Découverte · GN",
+          cluster: "consonant-code",
+          teacher: "GN suele sonar parecido a ñ. No aparece en el texto central, pero es muy frecuente en francés básico.",
+          words: ["montagne", "Espagne", "ligne", "magnifique"],
+          contrast: ["ligne", "lime"],
+          explanation: "GN se lit souvent comme un son proche de ñ.",
+          pattern: "gn",
+          image: "gn",
+          find: ["ligne", "montagne", "musique", "chien"],
+          textMatches: []
+        },
+        {
+          id: "ill",
+          title: "Découverte · ILL",
+          cluster: "i-glides",
+          teacher: "ILL a menudo produce un sonido tipo y, como famille. Hay excepciones, así que se presenta como patrón frecuente.",
+          words: ["famille", "fille", "travail", "ville"],
+          contrast: ["fille", "file"],
+          explanation: "ILL peut glisser vers un son de y.",
+          pattern: "ill",
+          image: "ill",
+          find: ["famille", "fille", "ville", "Oscar"],
+          textMatches: ["famille"]
+        },
+        {
+          id: "qu",
+          title: "Découverte · QU",
+          cluster: "consonant-code",
+          teacher: "QU normalmente suena /k/, no /ku/. En qui se escucha una k simple.",
+          words: ["qui", "quatre", "question", "musique"],
+          contrast: ["qui", "coui"],
+          explanation: "QU se lit souvent comme K.",
+          pattern: "qu",
+          image: "qu",
+          find: ["qui", "question", "quatre", "nous"],
+          textMatches: ["qui", "musique"]
+        },
+        {
+          id: "c-doux",
+          title: "Découverte · C doux et Ç",
+          cluster: "consonant-code",
+          teacher: "C ante e/i/y y Ç suelen sonar /s/. Français usa ç para conservar ese sonido ante a.",
+          words: ["français", "ça", "merci", "cinq"],
+          contrast: ["ça", "cas"],
+          explanation: "C peut sonner comme S.",
+          pattern: "cSoft",
+          image: "cSoft",
+          find: ["français", "merci", "Lucas", "Oscar"],
+          textMatches: ["français"]
+        },
+        {
+          id: "g-doux",
+          title: "Découverte · G doux",
+          cluster: "consonant-code",
+          teacher: "G ante e/i/y suele sonar suave, parecido a la j francesa. En mangeons se conserva ese sonido con ge.",
+          words: ["mangeons", "génial", "girafe", "gare"],
+          contrast: ["gare", "girafe"],
+          explanation: "G change selon la lettre suivante.",
+          pattern: "gSoft",
+          image: "gSoft",
+          find: ["mangeons", "génial", "gare", "Paris"],
+          textMatches: ["mangeons"]
+        },
+        {
+          id: "h-muet",
+          title: "Découverte · H muet",
+          cluster: "silent-flow",
+          teacher: "La H normalmente no se pronuncia. En j’habite, lo importante es escuchar la vocal inicial de habite.",
+          words: ["habite", "histoire", "homme", "hôtel"],
+          contrast: ["habite", "abite"],
+          explanation: "H est souvent une lettre silencieuse.",
+          pattern: "hMuet",
+          image: "hMuet",
+          find: ["habite", "histoires", "homme", "chien"],
+          textMatches: ["habite", "histoires"]
+        },
+        {
+          id: "ien",
+          title: "Découverte · IEN",
+          cluster: "i-glides",
+          teacher: "IEN suele combinar un deslizamiento inicial con nasalidad. En chien conviene evitar chi-en separado.",
+          words: ["chien", "bien", "bientôt", "rien"],
+          contrast: ["chien", "chine"],
+          explanation: "IEN se lit comme un petit groupe.",
+          pattern: "ien",
+          image: "ien",
+          find: ["chien", "bien", "bientôt", "Paris"],
+          textMatches: ["chien", "bientôt"]
+        },
+        {
+          id: "a-open",
+          title: "Carte prof · A et Â",
+          cluster: "a-o-family",
+          teacher: "Para hispanohablantes, A es cercana, pero hay que evitar abrir todas las vocales igual. Â puede sonar más posterior en ciertos acentos.",
+          words: ["Paris", "famille", "pâte", "chat"],
+          contrast: ["patte", "pâte"],
+          explanation: "A est simple, mais il reste français par le rythme et la bouche.",
+          pattern: "aOpen",
+          find: ["Paris", "famille", "pâte", "chien"],
+          textMatches: ["Paris", "famille"]
+        },
+        {
+          id: "o-open-closed",
+          title: "Carte prof · O ouvert / O fermé",
+          cluster: "a-o-family",
+          teacher: "El francés distingue a menudo O abierta y O cerrada. AU/EAU suelen ser cerradas; O puede variar según la palabra.",
+          words: ["Oscar", "mot", "rose", "porte"],
+          contrast: ["mot", "porte"],
+          explanation: "O peut être plus ouvert ou plus fermé.",
+          pattern: "oFamily",
+          find: ["Oscar", "mot", "porte", "mère"],
+          textMatches: ["Oscar"]
+        },
+        {
+          id: "er-ez",
+          title: "Carte prof · ER et EZ",
+          cluster: "e-family",
+          teacher: "Finales -er y -ez suelen sonar como é /e/: parler, allez. Es clave porque el español tiende a pronunciar la R final.",
+          words: ["parler", "allez", "répéter", "écoutez"],
+          contrast: ["parler", "parle"],
+          explanation: "ER et EZ à la fin sonnent souvent comme É.",
+          pattern: "erEz",
+          find: ["parler", "allez", "répéter", "petit"],
+          textMatches: []
+        },
+        {
+          id: "et-es-est",
+          title: "Carte prof · ET, ES, EST",
+          cluster: "e-family",
+          teacher: "ET suele sonar /e/ y no se pronuncia la T; es/est suelen sonar /ɛ/ o /e/ según contexto y no se pronuncian S/T finales.",
+          words: ["et", "est", "les", "des"],
+          contrast: ["et", "été"],
+          explanation: "Plusieurs petits mots ont une fin écrite silencieuse.",
+          pattern: "etEsEst",
+          find: ["et", "est", "les", "des"],
+          textMatches: ["et", "les"]
+        },
+        {
+          id: "i-y",
+          title: "Carte prof · I et Y",
+          cluster: "i-glides",
+          teacher: "I e Y suelen sonar /i/. La dificultad no es el sonido aislado, sino cuando se combina: qui, musique, histoire.",
+          words: ["musique", "Paris", "stylo", "ici"],
+          contrast: ["si", "su"],
+          explanation: "I et Y peuvent donner le son /i/.",
+          pattern: "iY",
+          find: ["musique", "Paris", "stylo", "bonjour"],
+          textMatches: ["Paris", "musique", "histoires"]
+        },
+        {
+          id: "un-um",
+          title: "Carte prof · UN et UM",
+          cluster: "nasal-family",
+          teacher: "UN/UM forman una nasal que en muchas zonas se aproxima a IN, pero conviene presentarla como familia para lectura.",
+          words: ["un", "lundi", "parfum", "brun"],
+          contrast: ["un", "une"],
+          explanation: "UN et UM peuvent être nasaux.",
+          pattern: "unUm",
+          find: ["un", "lundi", "parfum", "nous"],
+          textMatches: ["un"]
+        },
+        {
+          id: "nasal-before-vowel",
+          title: "Carte prof · Nasal ou N prononcée",
+          cluster: "nasal-family",
+          teacher: "Si N/M va seguida de vocal, normalmente deja de nasalizar y la consonante se pronuncia: bon / bonne, un / une.",
+          words: ["bon", "bonne", "un", "une"],
+          contrast: ["bon", "bonne"],
+          explanation: "Devant une voyelle, N ou M peut redevenir audible.",
+          pattern: "nasalVowel",
+          find: ["bon", "bonne", "un", "une"],
+          textMatches: []
+        },
+        {
+          id: "nasal-m",
+          title: "Carte prof · M nasal devant P/B/M",
+          cluster: "nasal-family",
+          teacher: "Antes de P, B o M, las nasales suelen escribirse con M: chambre, temps, impossible. La nasalidad se mantiene; cambia la letra.",
+          words: ["chambre", "temps", "impossible", "tomber"],
+          contrast: ["temps", "tenez"],
+          explanation: "Devant P, B ou M, on écrit souvent M.",
+          pattern: "nasalM",
+          find: ["chambre", "temps", "impossible", "ensemble"],
+          textMatches: []
+        },
+        {
+          id: "r-francaise",
+          title: "Carte prof · R française",
+          cluster: "consonant-code",
+          teacher: "La R francesa no es la r/rr española. Se produce atrás, en la garganta, sin vibrar como en español.",
+          words: ["Paris", "père", "mère", "français"],
+          contrast: ["Paris", "pari"],
+          explanation: "R se fait au fond de la bouche.",
+          pattern: "rFrench",
+          find: ["Paris", "père", "mère", "Lucas"],
+          textMatches: ["Paris", "père", "mère", "français"]
+        },
+        {
+          id: "s-z",
+          title: "Carte prof · S entre voyelles",
+          cluster: "consonant-code",
+          teacher: "Una S entre vocales suele sonar /z/: maison, musique. SS mantiene /s/.",
+          words: ["musique", "maison", "poison", "poisson"],
+          contrast: ["poison", "poisson"],
+          explanation: "S peut devenir Z entre deux voyelles.",
+          pattern: "sZ",
+          find: ["musique", "maison", "poisson", "Paris"],
+          textMatches: ["musique"]
+        },
+        {
+          id: "c-k",
+          title: "Carte prof · C dur",
+          cluster: "consonant-code",
+          teacher: "C ante a/o/u suele sonar /k/. Con e/i/y cambia a sonido /s/; por eso se separa de C doux.",
+          words: ["Lucas", "Oscar", "café", "cou"],
+          contrast: ["café", "merci"],
+          explanation: "C peut sonner K devant A, O, U.",
+          pattern: "cHard",
+          find: ["Lucas", "Oscar", "café", "merci"],
+          textMatches: ["Lucas", "Oscar"]
+        },
+        {
+          id: "g-hard-gu-ge",
+          title: "Carte prof · G dur, GU et GE",
+          cluster: "consonant-code",
+          teacher: "G ante a/o/u suele ser fuerte. GU conserva /g/ ante e/i; GE conserva el sonido suave ante a/o/u: mangeons.",
+          words: ["gare", "guitare", "guerre", "mangeons"],
+          contrast: ["gare", "girafe"],
+          explanation: "G change, et U/E peuvent protéger le son.",
+          pattern: "gHard",
+          find: ["gare", "guitare", "mangeons", "Paris"],
+          textMatches: ["mangeons"]
+        },
+        {
+          id: "j-francaise",
+          title: "Carte prof · J française",
+          cluster: "consonant-code",
+          teacher: "J francesa y G suave comparten un sonido parecido a /ʒ/, distinto de la j española fuerte.",
+          words: ["je", "bonjour", "j’habite", "jour"],
+          contrast: ["jour", "chou"],
+          explanation: "J est douce, comme G devant E ou I.",
+          pattern: "jFrench",
+          find: ["je", "bonjour", "jour", "chien"],
+          textMatches: ["Bonjour", "je", "j’habite", "J’aime"]
+        },
+        {
+          id: "b-v",
+          title: "Carte prof · B et V",
+          cluster: "consonant-code",
+          teacher: "En francés B y V no son iguales. V usa contacto suave de labio inferior con dientes superiores, no una b española.",
+          words: ["vais", "vous", "beau", "bon"],
+          contrast: ["vous", "bout"],
+          explanation: "B et V doivent rester différents.",
+          pattern: "bV",
+          find: ["vais", "vous", "beau", "bonjour"],
+          textMatches: ["vais"]
+        },
+        {
+          id: "ph-th-x",
+          title: "Carte prof · PH, TH et X",
+          cluster: "consonant-code",
+          teacher: "PH suena /f/, TH suele sonar /t/, X puede sonar /ks/, /gz/, /s/ o /z/ según palabra. Es mapa de alerta, no una regla única.",
+          words: ["photo", "théâtre", "taxi", "examen", "six"],
+          contrast: ["taxi", "examen"],
+          explanation: "Certaines lettres doubles ont un son simple ou variable.",
+          pattern: "phThX",
+          find: ["photo", "théâtre", "taxi", "examen"],
+          textMatches: []
+        },
+        {
+          id: "elision",
+          title: "Carte prof · Élision",
+          cluster: "silent-flow",
+          teacher: "Antes de vocal o H muda, je/la/le se reducen: j’habite. Es clave para que la frase fluya.",
+          words: ["je habite", "j’habite", "le ami", "l’ami"],
+          contrast: ["je habite", "j’habite"],
+          explanation: "Une voyelle peut disparaître devant une autre voyelle.",
+          pattern: "elision",
+          find: ["j’habite", "l’école", "le matin", "Oscar"],
+          textMatches: ["j’habite", "l’école"]
+        },
+        {
+          id: "enchainement",
+          title: "Carte prof · Enchaînement",
+          cluster: "silent-flow",
+          teacher: "Cuando una consonante pronunciada queda antes de vocal, se encadena con la palabra siguiente. No es lo mismo que liaison, porque la consonante ya se pronuncia.",
+          words: ["avec elle", "petit ami", "il arrive"],
+          contrast: ["avec elle", "avec Paul"],
+          explanation: "Les sons se lient naturellement entre les mots.",
+          pattern: "enchainement",
+          find: ["avec ma famille", "nous avons", "le matin"],
+          textMatches: ["avec ma famille"]
+        },
+        {
+          id: "accent-rythme",
+          title: "Carte prof · Accent final et rythme",
+          cluster: "silent-flow",
+          teacher: "El francés no acentúa cada palabra como el español. El peso cae al final del grupo de sentido.",
+          words: ["Bonjour, je m’appelle Lucas.", "Le matin, nous mangeons ensemble.", "À bientôt !"],
+          contrast: ["mot par mot", "par groupe"],
+          explanation: "On lit par groupes, avec une énergie vers la fin.",
+          pattern: "rhythmAccent",
+          find: ["Bonjour / je m’appelle Lucas", "Le matin / nous mangeons ensemble"],
+          textMatches: ["Bonjour", "ensemble", "bientôt"]
+        }
+      ],
+      labWords: ["bonjour", "nous", "musique", "moi", "chien", "mon", "bientôt", "Paris", "parlent", "beau", "mangeons", "famille", "école", "j’ai", "neuf", "qui"],
+      support: {
+        "Mère": "Texte complet, couleurs visibles, audio lent, phrases courtes.",
+        "Père": "Marques optionnelles, audio naturel, contrastes, moins d'aide.",
+        "Enfant": "Défis visuels, détection, animations brèves, rôle de professeur."
+      }
+    };
+
+    const state = {
+      screen: 0,
+      textVisible: true,
+      markedMode: "normal",
+      activeRule: 0,
+      volume: .95,
+      rate: 1,
+      teacherOpen: false,
+      showMarks: true,
+      progress: JSON.parse(localStorage.getItem("frPronProgress") || "{}"),
+      names: JSON.parse(localStorage.getItem("frPronNames") || "{}"),
+      recordings: {},
+      media: {},
+      activityStarted: null,
+      activityElapsed: 0,
+      classStarted: Number(localStorage.getItem("frPronClassStarted") || Date.now())
+    };
+    localStorage.setItem("frPronClassStarted", String(state.classStarted));
+
+    const $ = (sel, root = document) => root.querySelector(sel);
+    const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+    const main = $("#main");
+    const toast = $("#toast");
+
+    function saveProgress() {
+      localStorage.setItem("frPronProgress", JSON.stringify(state.progress));
+      localStorage.setItem("frPronNames", JSON.stringify(state.names));
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+      window.clearTimeout(showToast.timer);
+      showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 1800);
+    }
+
+    function icon(name) {
+      const paths = {
+        play: "M8 5v14l11-7z",
+        stop: "M7 7h10v10H7z",
+        mic: "M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z M5 11a7 7 0 0 0 14 0 M12 18v3",
+        eye: "M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z",
+        text: "M4 6h16 M8 6v12 M16 6v12 M6 18h4 M14 18h4",
+        expand: "M8 3H3v5 M16 3h5v5 M3 16v5h5 M21 16v5h-5",
+        volume: "M4 10v4h4l5 4V6l-5 4H4z M17 9a4 4 0 0 1 0 6"
+      };
+      return `<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="${paths[name] || paths.play}"/></svg>`;
+    }
+
+    function speak(text, rate = state.rate) {
+      if (!("speechSynthesis" in window)) {
+        showToast("Audio local non disponible.");
+        return;
+      }
+      speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "fr-FR";
+      utterance.rate = rate;
+      utterance.volume = state.volume;
+      speechSynthesis.speak(utterance);
+    }
+
+    function playAudio(path, fallbackText, rate = state.rate) {
+      const audio = new Audio(path);
+      audio.volume = state.volume;
+      audio.playbackRate = rate;
+      audio.addEventListener("error", () => {
+        showToast("Audio introuvable. J'utilise la voix du navigateur.");
+        speak(fallbackText, rate);
+      }, { once: true });
+      audio.play().catch(() => {
+        showToast("Cliquez encore une fois pour autoriser l'audio.");
+        speak(fallbackText, rate);
+      });
+    }
+
+    function assetTile(src, label) {
+      return `
+        <div class="asset-tile" role="img" aria-label="${label}">
+          <img src="${src}" alt="${label}" onerror="this.classList.add('missing'); this.nextElementSibling.hidden=false">
+          <span hidden>${label}<br><small>Placeholder élégant: ajoutez le fichier local quand il est prêt.</small></span>
+        </div>
+      `;
+    }
+
+    function splitWords(text) {
+      return text.match(/[\p{L}À-ÿ’'-]+|[.,!?;:]/gu) || [];
+    }
+
+    function renderCentralText(options = {}) {
+      const { hidden = false, marked = false, activeSentence = -1, layers = [] } = options;
+      let html = "";
+      CONFIG.sentences.forEach((sentence, si) => {
+        splitWords(sentence).forEach(token => {
+          if (/^[.,!?;:]$/.test(token)) {
+            html += token + " ";
+            return;
+          }
+          const classes = ["word"];
+          if (activeSentence === si) classes.push("active-sentence");
+          if (marked || layers.includes("silent")) {
+            if (/^(petit|Paris|français|bientôt)$/i.test(token)) classes.push("mark-silent");
+          }
+          const lower = token.toLowerCase();
+          if (layers.includes("ou") && lower.includes("ou")) classes.push("hl-ou");
+          if (layers.includes("u") && lower.includes("u") && !lower.includes("ou")) classes.push("hl-u");
+          if (layers.includes("oi") && lower.includes("oi")) classes.push("hl-oi");
+          if (layers.includes("au") && (lower.includes("au") || lower.includes("eau"))) classes.push("hl-au");
+          if (layers.includes("aOpen") && /a|â/i.test(lower)) classes.push("hl-au");
+          if (layers.includes("oFamily") && /o|ô|au|eau/i.test(lower)) classes.push("hl-ou");
+          if (layers.includes("ch") && lower.includes("ch")) classes.push("hl-ch");
+          if (layers.includes("on") && lower.includes("on")) classes.push("hl-on");
+          if (layers.includes("eFinal") && /e$/i.test(lower)) classes.push("hl-au");
+          if (layers.includes("accents") && /[éèê]/i.test(lower)) classes.push("hl-u");
+          if (layers.includes("ai") && /ai|ei/i.test(lower)) classes.push("hl-oi");
+          if (layers.includes("erEz") && /er$|ez$/i.test(lower)) classes.push("hl-u");
+          if (layers.includes("etEsEst") && /^(et|est|es|les|des)$/i.test(lower)) classes.push("hl-au");
+          if (layers.includes("an") && /an|en/i.test(lower)) classes.push("hl-on");
+          if (layers.includes("in") && /in|ain|ein|ien/i.test(lower)) classes.push("hl-on");
+          if (layers.includes("unUm") && /un|um/i.test(lower)) classes.push("hl-on");
+          if (layers.includes("nasalM") && /(am|em|im|om)[pbm]?/i.test(lower)) classes.push("hl-on");
+          if (layers.includes("eu") && /eu|œu/i.test(lower)) classes.push("hl-ou");
+          if (layers.includes("iY") && /i|y/i.test(lower)) classes.push("hl-u");
+          if (layers.includes("ill") && /ill/i.test(lower)) classes.push("hl-ch");
+          if (layers.includes("qu") && /qu/i.test(lower)) classes.push("hl-au");
+          if (layers.includes("cSoft") && /ç|ce|ci|cy/i.test(lower)) classes.push("hl-oi");
+          if (layers.includes("cHard") && /c[aoûu]|^c/i.test(lower)) classes.push("hl-au");
+          if (layers.includes("gSoft") && /ge|gi|gy/i.test(lower)) classes.push("hl-u");
+          if (layers.includes("gHard") && /ga|go|gu|gue|gui/i.test(lower)) classes.push("hl-au");
+          if (layers.includes("jFrench") && /j|ge|gi/i.test(lower)) classes.push("hl-u");
+          if (layers.includes("bV") && /b|v/i.test(lower)) classes.push("hl-oi");
+          if (layers.includes("rFrench") && /r/i.test(lower)) classes.push("hl-oi");
+          if (layers.includes("sZ") && /s/i.test(lower)) classes.push("hl-ch");
+          if (layers.includes("phThX") && /ph|th|x/i.test(lower)) classes.push("hl-u");
+          if (layers.includes("hMuet") && /^h/i.test(lower)) classes.push("hl-liaison");
+          if (layers.includes("ien") && /ien/i.test(lower)) classes.push("hl-on");
+          if (layers.includes("elision") && /[jl]’|[jl]'/i.test(lower)) classes.push("hl-liaison");
+          if (layers.includes("enchainement") && /avec|petit|nous/i.test(lower)) classes.push("hl-liaison");
+          if (layers.includes("liaison") && (lower === "nous" || lower === "avons")) classes.push("hl-liaison");
+          if (layers.includes("rhythm")) classes.push("rhythm");
+          html += `<span class="${classes.join(" ")}" data-word="${token}">${token}</span> `;
+        });
+      });
+      return `<div class="central-text ${hidden ? "hidden-text" : ""}" id="centralText" aria-label="Texte central">${html.trim()}</div>`;
+    }
+
+    function setScreen(index) {
+      state.progress[state.screen] = true;
+      state.screen = Math.max(0, Math.min(CONFIG.stages.length - 1, index));
+      saveProgress();
+      render();
+      $("#main").focus({ preventScroll: true });
+    }
+
+    function renderShell() {
+      $("#stepNav").innerHTML = CONFIG.stages.map((stage, i) => `
+        <button class="step ${i === state.screen ? "active" : ""} ${state.progress[i] ? "done" : ""}" data-screen="${i}">
+          <span class="num">${String(i + 1).padStart(2, "0")}</span>
+          <span>${stage[0]}<br><small>${stage[1]} min</small></span>
+        </button>
+      `).join("");
+      $$("#stepNav .step").forEach(btn => btn.addEventListener("click", () => setScreen(Number(btn.dataset.screen))));
+      $("#stageLabel").textContent = `${String(state.screen + 1).padStart(2, "0")} · ${CONFIG.stages[state.screen][0]}`;
+      $("#prevTop").disabled = state.screen === 0;
+      $("#nextTop").disabled = state.screen === CONFIG.stages.length - 1;
+      updateTeacherPanel();
+    }
+
+    function screenWrap(title, intro, body) {
+      return `
+        <section class="screen active" aria-labelledby="screenTitle">
+          <h2 id="screenTitle">${title}</h2>
+          ${intro ? `<p class="lead">${intro}</p>` : ""}
+          ${body}
+          <nav class="footer-nav" aria-label="Navigation des écrans">
+            <button id="prevScreen" ${state.screen === 0 ? "disabled" : ""}>Écran précédent</button>
+            <span class="pill">${String(state.screen + 1).padStart(2, "0")} / ${CONFIG.stages.length}</span>
+            <button class="primary" id="nextScreen" ${state.screen === CONFIG.stages.length - 1 ? "disabled" : ""}>Écran suivant</button>
+          </nav>
+        </section>
+      `;
+    }
+
+    function renderWelcome() {
+      return `
+        <section class="screen active hero">
+          <div class="hero-grid">
+            <div>
+              <h1>${CONFIG.title}</h1>
+              <p class="lead">${CONFIG.subtitle}</p>
+              <button class="primary" id="startLesson">Commencer</button>
+            </div>
+            <div class="decoder" aria-label="Animation de décodage">
+              <video class="code-video" autoplay muted loop playsinline poster="${CONFIG.images.codeLettersPoster}">
+                <source src="${CONFIG.images.codeLetters}" type="video/mp4">
+              </video>
+              <div class="code-line"><b>eau</b><span>/o/</span></div>
+              <div class="code-line"><b>ou</b><span>/u/</span></div>
+              <div class="code-line"><b>nous avons</b><span>nous‿avons</span></div>
+              <p class="small">Les lettres cachent des sons. On va apprendre à les lire.</p>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    function renderObserve() {
+      return screenWrap("Observez le texte", "Observez le texte. Quels mots reconnaissez-vous ?", `
+        <div class="teacher-note">En esta etapa no traduzcas todavía. Pide hipótesis: nombres, cognados, palabras transparentes y signos de puntuación.</div>
+        <div class="toolbar">
+          <button id="toggleText">${icon("eye")} ${state.textVisible ? "Cacher le texte" : "Montrer le texte"}</button>
+          <button id="fontDown">A−</button>
+          <button id="fontUp">A+</button>
+          <button id="fullScreen">${icon("expand")} Plein écran</button>
+          <select id="sentenceSelect" aria-label="Sélectionner une phrase">
+            ${CONFIG.sentences.map((s, i) => `<option value="${i}">Phrase ${i + 1}</option>`).join("")}
+          </select>
+        </div>
+        ${renderCentralText({ hidden: !state.textVisible })}
+        <p class="small">Cliquez sur les mots reconnus pour les marquer.</p>
+      `);
+    }
+
+    function participantCard(person, reading) {
+      const name = state.names[person] || person;
+      const key = `${person}-${reading}`;
+      const has = Boolean(state.recordings[key]);
+      return `
+        <article class="panel participant" data-person="${person}">
+          <h3>${name}</h3>
+          <p class="small">${CONFIG.support[person]}</p>
+          <canvas class="wave" data-wave="${key}" aria-hidden="true"></canvas>
+          <div class="rec-row">
+            <button data-record="${key}">${icon("mic")} Enregistrer</button>
+            <button data-stop="${key}" disabled>${icon("stop")} Arrêter</button>
+            <button data-play-recording="${key}" ${has ? "" : "disabled"}>${icon("play")} Écouter</button>
+            <span class="small" data-rec-status="${key}">${has ? "Voix disponible" : "Pas encore enregistré"}</span>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderFirstReading() {
+      return screenWrap("Première lecture", "Lisez le texte. À votre rythme.", `
+        <div class="teacher-note">No muestres reglas todavía. Esta lectura crea el antes para comparar al final.</div>
+        ${renderCentralText()}
+        <div class="grid three" style="margin-top:18px">
+          ${CONFIG.participants.map(p => participantCard(p, "first")).join("")}
+        </div>
+      `);
+    }
+
+    function renderListen() {
+      return screenWrap("Première écoute", "Écoutez d'abord sans le texte. Ensuite, répondez avec des indices simples.", `
+        <div class="panel">
+          ${assetTile(CONFIG.images.family, "Scène de famille")}
+          <div class="toolbar">
+            <button data-model="natural">${icon("play")} Version naturelle</button>
+            <button data-model="slow">${icon("play")} Version lente</button>
+            <button data-model="segmented">${icon("play")} Version segmentée</button>
+            <label class="pill">${icon("volume")} Volume <input id="volume" type="range" min="0" max="1" step=".05" value="${state.volume}"></label>
+            <label class="pill">Vitesse <input id="rate" type="range" min=".65" max="1.15" step=".05" value="${state.rate}"></label>
+          </div>
+          <div class="central-text hidden-text">Le texte est caché pour la première écoute.</div>
+        </div>
+        <div class="panel" style="margin-top:18px">
+          ${CONFIG.questions.map((q, qi) => `
+            <div class="question" data-question="${qi}">
+              <strong>${q.q}</strong>
+              <div class="answers">
+                ${q.options.map(option => `<button class="visual-choice answer" data-answer="${option}"><span class="mini-visual" aria-hidden="true"></span>${option}</button>`).join("")}
+              </div>
+            </div>
+          `).join("")}
+          <div class="feedback" id="listenFeedback"></div>
+        </div>
+      `);
+    }
+
+    function renderReadAlong() {
+      return screenWrap("Écoutez et lisez", "Suivez chaque phrase. La phrase active s'illumine pendant l'écoute.", `
+        <div class="toolbar">
+          <button data-mode="normal">Texte normal</button>
+          <button data-mode="marked">Texte marqué</button>
+          <button data-mode="hidden">Texte sans aide</button>
+        </div>
+        <div class="panel">
+          ${CONFIG.sentences.map((s, i) => `
+            <div class="sentence-line" data-sentence-row="${i}">
+              <span>${s}</span>
+              <div class="sentence-actions">
+                <button data-sentence-audio="${i}" data-kind="natural">${icon("play")} Naturel</button>
+                <button data-sentence-audio="${i}" data-kind="slow">${icon("play")} Lent</button>
+                <button data-repeat="${i}">Répéter</button>
+                <button data-record="phrase-${i}">${icon("mic")} Voix</button>
+                <button data-stop="phrase-${i}" disabled>${icon("stop")}</button>
+                <button data-play-recording="phrase-${i}" disabled>${icon("play")}</button>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      `);
+    }
+
+    function highlightPattern(word, rule) {
+      if (rule.pattern === "finale") return word.replace(/([tsç])$/i, '<span class="silent-end">$1</span>');
+      if (rule.pattern === "ent") return word.replace(/(ent)$/i, '<mark>$1</mark>');
+      if (rule.pattern === "liaison") return word.replace(" ", "‿");
+      const map = {
+        ou: /(ou)/ig,
+        u: /(u)/ig,
+        oi: /(oi)/ig,
+        au: /(eau|au)/ig,
+        ch: /(ch)/ig,
+        on: /(on)/ig,
+        eFinal: /(e)$/ig,
+        accents: /([éèê])/ig,
+        ai: /(ai|ei)/ig,
+        an: /(an|en)/ig,
+        in: /(ain|ein|ien|in)/ig,
+        eu: /(eu|œu)/ig,
+        gn: /(gn)/ig,
+        ill: /(ill|il)$/ig,
+        qu: /(qu)/ig,
+        cSoft: /(ç|ce|ci|cy)/ig,
+        gSoft: /(ge|gi|gy)/ig,
+        hMuet: /^(h)/ig,
+        ien: /(ien)/ig,
+        aOpen: /([aâ])/ig,
+        oFamily: /(au|eau|o|ô)/ig,
+        erEz: /(er|ez)$/ig,
+        etEsEst: /^(et|es|est|les|des)$/ig,
+        iY: /([iy])/ig,
+        unUm: /(un|um)/ig,
+        nasalM: /(am|em|im|om)/ig,
+        nasalVowel: /(on|onne|un|une)/ig,
+        rFrench: /(r)/ig,
+        sZ: /(ss|s)/ig,
+        cHard: /(c)/ig,
+        gHard: /(gu|ge|g)/ig,
+        jFrench: /(j|ge|gi)/ig,
+        bV: /(b|v)/ig,
+        phThX: /(ph|th|x)/ig,
+        elision: /([jl]’|[jl]')/ig,
+        enchainement: /(\bavec\b|\bil\b|\bpetit\b)/ig,
+        rhythmAccent: /(.+)$/ig
+      };
+      return word.replace(map[rule.pattern] || /$a/, "<mark>$1</mark>");
+    }
+
+    function ruleDiscoveryVisual(rule) {
+      const extras = [];
+      if (rule.pattern === "ou") extras.push(assetTile(CONFIG.images.ou, "Position des lèvres pour OU"), '<div class="lip">lèvres</div>');
+      if (rule.pattern === "u") extras.push(assetTile(CONFIG.images.u, "Position des lèvres pour U"), '<div class="lip">lèvres</div>');
+      if (rule.pattern === "ch") extras.push('<div class="lip">chut</div>');
+      if (rule.pattern === "on") extras.push(assetTile(CONFIG.images.nasal, "Son nasal ON"), '<div class="nasal">ON</div>');
+      if (rule.pattern === "liaison") extras.push(assetTile(CONFIG.images.liaison, "Liaison nous avons"), '<p class="pattern-word">nous‿avons</p>');
+      if (rule.image && CONFIG.images[rule.image]) extras.push(assetTile(CONFIG.images[rule.image], rule.title));
+      return extras.join("");
+    }
+
+    function escapeRegExp(value) {
+      return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+
+    function highlightRuleInText(text, rule) {
+      const matches = rule.textMatches.concat(rule.words).filter(Boolean);
+      if (!matches.length) return text;
+      const pattern = matches.map(escapeRegExp).join("|");
+      return text.replace(new RegExp(`(${pattern})`, "gi"), "<mark>$1</mark>");
+    }
+
+    function activeCluster() {
+      const rule = CONFIG.rules[state.activeRule];
+      return CONFIG.soundClusters.find(cluster => cluster.id === rule.cluster) || CONFIG.soundClusters[0];
+    }
+
+    function shortRuleTitle(title) {
+      return title.replace(/^Secret \d+ · /, "").replace(/^Découverte · /, "").replace(/^Carte prof · /, "");
+    }
+
+    function renderClusterMap() {
+      const current = activeCluster();
+      const knownClusters = CONFIG.soundClusters.map(cluster => cluster.id);
+      const orphanRules = CONFIG.rules.filter(rule => !knownClusters.includes(rule.cluster));
+      return `
+        <div class="panel" style="margin-bottom:14px">
+          <span class="phase-label">COUVERTURE PROFESSEUR</span>
+          <p><strong>${CONFIG.rules.length} règles</strong> organisées en <strong>${CONFIG.soundClusters.length} familles</strong>. ${orphanRules.length ? `${orphanRules.length} règle(s) sans famille: ${orphanRules.map(rule => rule.title).join(", ")}` : "Aucune règle hors famille."}</p>
+          <p class="small">Le mapa cubre las dificultades principales de los hispanohablantes: vocales redondeadas, vocales nasales, E variable, deslizamientos con I, consonantes que cambian, letras mudas, liaison, enchaînement y ritmo.</p>
+        </div>
+        <div class="cluster-map" aria-label="Familles phonétiques">
+          ${CONFIG.soundClusters.map(cluster => {
+            const rules = CONFIG.rules
+              .map((rule, index) => ({ rule, index }))
+              .filter(item => item.rule.cluster === cluster.id);
+            return `
+              <article class="cluster-card ${cluster.id === current.id ? "active" : ""}">
+                <h3>${cluster.title}</h3>
+                <p class="small">${cluster.guide}</p>
+                <div class="sound-row">${cluster.sounds.map(sound => `<span class="sound-badge">${sound}</span>`).join("")}</div>
+                <div class="cluster-rule-list">
+                  ${rules.map(({ rule, index }) => `<button class="${index === state.activeRule ? "active" : ""}" data-rule-tab="${index}">${shortRuleTitle(rule.title)}</button>`).join("")}
+                </div>
+              </article>
+            `;
+          }).join("")}
+        </div>
+      `;
+    }
+
+    function renderRule() {
+      const rule = CONFIG.rules[state.activeRule];
+      const cluster = activeCluster();
+      const ruleText = CONFIG.centralText + " " + CONFIG.extraPhrase;
+      return screenWrap("Les familles de sons", "On organise les règles par clusters phonétiques: lèvres, voyelles, nasales, lettres-pièges et rythme.", `
+        <div class="teacher-note">Ruta sugerida: 1) Voyelles rondes, 2) A/O orales, 3) familia E, 4) familia I, 5) nasales, 6) consonantes-código, 7) letras mudas, liaison y ritmo.</div>
+        ${renderClusterMap()}
+        <div class="panel" style="margin-bottom:16px">
+          <span class="phase-label">CLUSTER ACTUEL</span>
+          <h3>${cluster.title}</h3>
+          <p>${cluster.guide}</p>
+        </div>
+        <div class="teacher-note">${rule.teacher}</div>
+        <div class="rule-grid">
+          <div class="grid">
+            <div class="phase"><span class="phase-label">A. ÉCOUTEZ</span><br><button data-say="${rule.words[0]}">${icon("play")} ${rule.words[0]}</button></div>
+            <div class="phase"><span class="phase-label">B. OBSERVEZ</span><br>${rule.words.map(w => `<span class="pattern-word">${highlightPattern(w, rule)}</span>`).join("")}</div>
+            <div class="phase"><span class="phase-label">C. DÉCOUVREZ</span><p>${rule.explanation}</p>${ruleDiscoveryVisual(rule)}</div>
+            <div class="phase"><span class="phase-label">D. COMPAREZ</span><div class="toolbar">${rule.contrast.map(w => `<button data-say="${w}">${icon("play")} ${w}</button>`).join("")}</div></div>
+            <div class="phase"><span class="phase-label">E. RÉPÉTEZ</span><div class="rec-row"><button data-record="rule-${rule.id}">${icon("mic")} Enregistrer</button><button data-stop="rule-${rule.id}" disabled>${icon("stop")} Arrêter</button><button data-play-recording="rule-${rule.id}" disabled>${icon("play")} Écouter</button></div></div>
+          </div>
+          <div class="grid">
+            <div class="phase">
+              <span class="phase-label">F. TROUVEZ</span>
+              <p class="small">Touchez les mots qui contiennent le motif.</p>
+              <div class="cards">${rule.find.map(w => `<button class="word-chip" data-find-word="${w}">${w}</button>`).join("")}</div>
+              <div class="feedback" id="ruleFeedback"></div>
+            </div>
+            <div class="phase">
+              <span class="phase-label">G. RETOUR AU TEXTE</span>
+              <div class="central-text" style="font-size:24px">${highlightRuleInText(ruleText, rule)}</div>
+            </div>
+          </div>
+        </div>
+      `);
+    }
+
+    function renderLab() {
+      return screenWrap("Laboratoire des sons", "Des exercices courts. Écoutez bien. Essayez de nouveau.", `
+        <div class="grid two">
+          <section class="panel">
+            <h3>1. Écoutez et choisissez</h3>
+            <button data-say="bonjour">${icon("play")} Écouter</button>
+            <div class="toolbar"><button data-lab-answer="bonjour">bonjour</button><button data-lab-answer="bouchour">bouchour</button></div>
+            <div class="feedback" id="labFeedback1"></div>
+          </section>
+          <section class="panel">
+            <h3>2. Classez les mots</h3>
+            <p class="small">Glissez les mots dans une catégorie.</p>
+            <div class="cards" id="dragWords">${CONFIG.labWords.map(w => `<button draggable="true" class="word-chip" data-drag-word="${w}">${w}</button>`).join("")}</div>
+            <div class="dropzones">
+              ${["OU", "U", "OI", "CH", "NASAL", "E", "GN / ILL", "QU / C / G"].map(c => `<div class="dropzone" data-zone="${c}"><strong>${c}</strong></div>`).join("")}
+            </div>
+          </section>
+          <section class="panel">
+            <h3>3. Lettres silencieuses</h3>
+            <div class="cards">${["petit", "Paris", "français", "musique"].map(w => `<button data-silent-choice="${w}" class="word-chip">${w}</button>`).join("")}</div>
+            <div class="feedback" id="silentFeedback"></div>
+          </section>
+          <section class="panel">
+            <h3>4. Corrigez la lecture</h3>
+            <p>Mes parents parlent français.</p>
+            <div class="toolbar"><button data-correct-reading="ok">parle français</button><button data-correct-reading="bad">parlent-e français</button></div>
+            <div class="feedback" id="correctFeedback"></div>
+          </section>
+          <section class="panel">
+            <h3>5. Ordre du texte</h3>
+            <p class="small">Choisissez le premier fragment.</p>
+            <div class="toolbar"><button data-order="0">Bonjour...</button><button data-order="1">À bientôt !</button><button data-order="2">Ensuite...</button></div>
+            <div class="feedback" id="orderFeedback"></div>
+          </section>
+          <section class="panel">
+            <h3>6. Défi professeur</h3>
+            <p>Un élève peut expliquer une règle avec ses mots.</p>
+            <button data-progress="child-prof">Marquer comme fait</button>
+          </section>
+          <section class="panel">
+            <h3>Pause après pratique</h3>
+            <p class="small">Audio de transition. À utiliser après le laboratoire, pas comme modèle de prononciation.</p>
+            <audio controls preload="metadata" src="${CONFIG.audio.pauseAfterPractice}" style="width:100%"></audio>
+          </section>
+        </div>
+      `);
+    }
+
+    function renderDecoded() {
+      const layers = JSON.parse(localStorage.getItem("frPronLayers") || '["silent"]');
+      const all = [
+        ["silent", "Consonnes silencieuses"],
+        ["ou", "OU"],
+        ["u", "U"],
+        ["oi", "OI"],
+        ["au", "AU / EAU"],
+        ["aOpen", "A / Â"],
+        ["oFamily", "O ouvert / fermé"],
+        ["ch", "CH"],
+        ["on", "ON"],
+        ["eFinal", "E final"],
+        ["accents", "É / È / Ê"],
+        ["ai", "AI / EI"],
+        ["erEz", "ER / EZ"],
+        ["etEsEst", "ET / ES / EST"],
+        ["an", "AN / EN"],
+        ["in", "IN / AIN / EIN"],
+        ["unUm", "UN / UM"],
+        ["nasalM", "AM / EM / IM / OM"],
+        ["eu", "EU / ŒU"],
+        ["iY", "I / Y"],
+        ["ill", "ILL"],
+        ["qu", "QU"],
+        ["cSoft", "C doux / Ç"],
+        ["cHard", "C dur"],
+        ["gSoft", "G doux"],
+        ["gHard", "G dur / GU / GE"],
+        ["jFrench", "J française"],
+        ["bV", "B / V"],
+        ["rFrench", "R française"],
+        ["sZ", "S / Z"],
+        ["phThX", "PH / TH / X"],
+        ["hMuet", "H muet"],
+        ["ien", "IEN"],
+        ["liaison", "Liaison"],
+        ["elision", "Élision"],
+        ["enchainement", "Enchaînement"],
+        ["rhythm", "Groupes de rythme"]
+      ];
+      return screenWrap("Le texte décodé", "Activez une couche ou combinez plusieurs indices.", `
+        <div class="layer-list">
+          ${all.map(([id, label]) => `<label><input type="checkbox" data-layer="${id}" ${layers.includes(id) ? "checked" : ""}> ${label}</label>`).join("")}
+        </div>
+        ${renderCentralText({ layers })}
+      `);
+    }
+
+    function renderGroups() {
+      return screenWrap("Lecture par groupes", "Écoutez le modèle, comptez, puis répétez.", `
+        <div class="panel">
+          <div class="countdown" id="countdown" aria-live="polite"></div>
+          ${CONFIG.rhythmGroups.map((g, i) => `
+            <div class="group-line">
+              <span>${g}</span>
+              <div class="toolbar">
+                <button data-group-play="${i}">${icon("play")} Modèle</button>
+                <button data-echo="${i}">Mode écho</button>
+                <button data-record="group-${i}">${icon("mic")}</button>
+                <button data-stop="group-${i}" disabled>${icon("stop")}</button>
+                <button data-play-recording="group-${i}" disabled>${icon("play")}</button>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      `);
+    }
+
+    function renderSecondReading() {
+      return screenWrap("Deuxième lecture", "Comparez la première et la deuxième lecture. Pas de note automatique.", `
+        ${renderCentralText({ marked: state.showMarks })}
+        <div class="grid three" style="margin-top:18px">
+          ${CONFIG.participants.map(p => `
+            <article class="panel participant" data-person="${p}">
+              <h3>${state.names[p] || p}</h3>
+              <div class="rec-row">
+                <button data-record="${p}-second">${icon("mic")} Deuxième lecture</button>
+                <button data-stop="${p}-second" disabled>${icon("stop")} Arrêter</button>
+                <button data-play-recording="${p}-first" ${state.recordings[`${p}-first`] ? "" : "disabled"}>Première lecture</button>
+                <button data-play-recording="${p}-second" ${state.recordings[`${p}-second`] ? "" : "disabled"}>Deuxième lecture</button>
+                <button data-compare="${p}">Comparer</button>
+              </div>
+              <div class="checklist">
+                ${["Je prononce mieux les sons.", "Je reconnais les lettres silencieuses.", "Je lis avec plus de confiance.", "Je peux lire par groupes de sens."].map((item, i) => `<label><input type="checkbox" data-self="${p}-${i}"> ${item}</label>`).join("")}
+              </div>
+            </article>
+          `).join("")}
+        </div>
+      `);
+    }
+
+    function renderYou() {
+      return screenWrap("À vous", "Créez une petite présentation, puis pratiquez par fragments.", `
+        <div class="grid two">
+          <section class="panel template">
+            <label>Je m'appelle <input id="presName" placeholder="votre prénom"></label>
+            <label>J'habite à <input id="presCity" placeholder="votre ville"></label>
+            <label>J'aime <input id="presLike" placeholder="une chose que vous aimez"></label>
+            <div class="toolbar">
+              <button id="generatePresentation">Générer</button>
+              <button id="hidePresentation">Cacher le texte</button>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="presentation" id="presentationText">Bonjour.
+Je m'appelle ________.
+J'habite à ________.
+J'aime ________.
+À bientôt.</div>
+            <div class="toolbar">
+              <button data-line-speak="0">Ligne 1</button>
+              <button data-line-speak="1">Ligne 2</button>
+              <button data-line-speak="2">Ligne 3</button>
+              <button data-line-speak="3">Ligne 4</button>
+              <button data-line-speak="4">Ligne 5</button>
+            </div>
+            <div class="rec-row">
+              <button data-record="presentation-full">${icon("mic")} Présentation complète</button>
+              <button data-stop="presentation-full" disabled>${icon("stop")}</button>
+              <button data-play-recording="presentation-full" disabled>${icon("play")}</button>
+            </div>
+          </section>
+        </div>
+      `);
+    }
+
+    function renderBilan() {
+      const items = [
+        "J’ai lu un texte en français.",
+        "J’ai découvert des règles de prononciation.",
+        "J’ai écouté une voix française.",
+        "J’ai enregistré ma voix.",
+        "J’ai relu le texte.",
+        "J’ai créé ma présentation."
+      ];
+      return screenWrap("Bilan", "Voilà le chemin parcouru pendant la classe.", `
+        <div class="grid three">
+          ${CONFIG.participants.map(p => {
+            const done = items.filter((_, i) => state.progress[`bilan-${p}-${i}`]).length;
+            return `<article class="panel progress-person">
+              <h3>${state.names[p] || p}</h3>
+              <div class="bar"><span style="width:${Math.round(done / items.length * 100)}%"></span></div>
+              <div class="checklist">${items.map((item, i) => `<label><input type="checkbox" data-bilan="${p}-${i}" ${state.progress[`bilan-${p}-${i}`] ? "checked" : ""}> ${item}</label>`).join("")}</div>
+            </article>`;
+          }).join("")}
+        </div>
+      `);
+    }
+
+    function render() {
+      renderShell();
+      const screens = [
+        renderWelcome,
+        renderObserve,
+        renderFirstReading,
+        renderListen,
+        renderReadAlong,
+        renderRule,
+        renderLab,
+        renderDecoded,
+        renderGroups,
+        renderSecondReading,
+        renderYou,
+        renderBilan
+      ];
+      main.innerHTML = screens[state.screen]();
+      bindScreen();
+      updateRecordingButtons();
+    }
+
+    function bindScreen() {
+      $("#prevScreen")?.addEventListener("click", () => setScreen(state.screen - 1));
+      $("#nextScreen")?.addEventListener("click", () => setScreen(state.screen + 1));
+      $("#startLesson")?.addEventListener("click", () => setScreen(1));
+      $("#toggleText")?.addEventListener("click", () => { state.textVisible = !state.textVisible; render(); });
+      $("#fontUp")?.addEventListener("click", () => { document.documentElement.style.setProperty("--text-scale", "1.18"); });
+      $("#fontDown")?.addEventListener("click", () => { document.documentElement.style.setProperty("--text-scale", ".92"); });
+      $("#fullScreen")?.addEventListener("click", () => document.documentElement.requestFullscreen?.());
+      $("#sentenceSelect")?.addEventListener("change", e => {
+        const words = $$(".word");
+        words.forEach(w => w.classList.remove("active-sentence"));
+        const sentence = CONFIG.sentences[Number(e.target.value)];
+        words.filter(w => sentence.includes(w.dataset.word)).forEach(w => w.classList.add("active-sentence"));
+      });
+      $$(".word").forEach(w => w.addEventListener("click", () => w.classList.toggle("recognized")));
+
+      $$("[data-model]").forEach(btn => btn.addEventListener("click", () => {
+        const kind = btn.dataset.model;
+        const rate = kind === "slow" ? .72 : kind === "segmented" ? .62 : 1;
+        playAudio(CONFIG.audio[kind], CONFIG.centralText, rate);
+      }));
+      $("#volume")?.addEventListener("input", e => state.volume = Number(e.target.value));
+      $("#rate")?.addEventListener("input", e => state.rate = Number(e.target.value));
+      $$(".answer").forEach(btn => btn.addEventListener("click", () => {
+        const q = CONFIG.questions[Number(btn.closest("[data-question]").dataset.question)];
+        const ok = btn.dataset.answer === q.correct;
+        btn.classList.add(ok ? "correct" : "wrong");
+        $("#listenFeedback").textContent = ok ? "Très bien." : "Écoutez encore une fois.";
+        state.progress[`question-${q.q}`] = ok;
+        saveProgress();
+      }));
+
+      $$("[data-mode]").forEach(btn => btn.addEventListener("click", () => {
+        const mode = btn.dataset.mode;
+        const panel = btn.closest(".screen");
+        const existing = $(".read-preview", panel);
+        existing?.remove();
+        panel.insertAdjacentHTML("afterbegin", `<div class="read-preview">${renderCentralText({ hidden: mode === "hidden", marked: mode === "marked" })}</div>`);
+      }));
+      $$("[data-sentence-audio]").forEach(btn => btn.addEventListener("click", () => {
+        const i = Number(btn.dataset.sentenceAudio);
+        const row = btn.closest(".sentence-line");
+        row.classList.add("active");
+        speak(CONFIG.sentences[i], btn.dataset.kind === "slow" ? .72 : 1);
+        window.setTimeout(() => row.classList.remove("active"), Math.max(1200, CONFIG.sentences[i].length * 85));
+      }));
+      $$("[data-repeat]").forEach(btn => btn.addEventListener("click", () => speak(CONFIG.sentences[Number(btn.dataset.repeat)], .78)));
+      $$("[data-say]").forEach(btn => btn.addEventListener("click", () => speak(btn.dataset.say, .82)));
+      $$("[data-rule-tab]").forEach(btn => btn.addEventListener("click", () => { state.activeRule = Number(btn.dataset.ruleTab); render(); }));
+      $$("[data-find-word]").forEach(btn => btn.addEventListener("click", () => {
+        btn.classList.toggle("selected");
+        $("#ruleFeedback").textContent = "Bravo. Retournez au texte pour vérifier.";
+      }));
+
+      $$("[data-lab-answer]").forEach(btn => btn.addEventListener("click", () => $("#labFeedback1").textContent = btn.dataset.labAnswer === "bonjour" ? "Bravo." : "Encore une fois."));
+      $$("[data-silent-choice]").forEach(btn => btn.addEventListener("click", () => $("#silentFeedback").textContent = /petit|Paris|français/.test(btn.dataset.silentChoice) ? "Très bien." : "Écoutez bien."));
+      $$("[data-correct-reading]").forEach(btn => btn.addEventListener("click", () => $("#correctFeedback").textContent = btn.dataset.correctReading === "ok" ? "Bravo." : "Essayez de nouveau."));
+      $$("[data-order]").forEach(btn => btn.addEventListener("click", () => $("#orderFeedback").textContent = btn.dataset.order === "0" ? "Très bien." : "Essayez de nouveau."));
+      $$("[data-progress]").forEach(btn => btn.addEventListener("click", () => { state.progress[btn.dataset.progress] = true; saveProgress(); showToast("Activité marquée."); }));
+      bindDrag();
+
+      $$("[data-layer]").forEach(input => input.addEventListener("change", () => {
+        const layers = $$("[data-layer]").filter(i => i.checked).map(i => i.dataset.layer);
+        localStorage.setItem("frPronLayers", JSON.stringify(layers));
+        render();
+      }));
+      $$("[data-group-play]").forEach(btn => btn.addEventListener("click", () => speak(CONFIG.rhythmGroups[Number(btn.dataset.groupPlay)].replaceAll("/", ""), .82)));
+      $$("[data-echo]").forEach(btn => btn.addEventListener("click", () => runEcho(Number(btn.dataset.echo))));
+      $$("[data-compare]").forEach(btn => btn.addEventListener("click", () => compareReadings(btn.dataset.compare)));
+      $$("[data-self]").forEach(input => input.addEventListener("change", () => { state.progress[`self-${input.dataset.self}`] = input.checked; saveProgress(); }));
+      $$("[data-bilan]").forEach(input => input.addEventListener("change", () => { state.progress[`bilan-${input.dataset.bilan}`] = input.checked; saveProgress(); render(); }));
+      $("#generatePresentation")?.addEventListener("click", generatePresentation);
+      $("#hidePresentation")?.addEventListener("click", () => $("#presentationText").classList.toggle("hidden-text"));
+      $$("[data-line-speak]").forEach(btn => btn.addEventListener("click", () => {
+        const lines = $("#presentationText").textContent.trim().split("\n").filter(Boolean);
+        speak(lines[Number(btn.dataset.lineSpeak)] || "", .82);
+      }));
+
+      $$("[data-record]").forEach(btn => btn.addEventListener("click", () => startRecording(btn.dataset.record)));
+      $$("[data-stop]").forEach(btn => btn.addEventListener("click", () => stopRecording(btn.dataset.stop)));
+      $$("[data-play-recording]").forEach(btn => btn.addEventListener("click", () => playRecording(btn.dataset.playRecording)));
+    }
+
+    function bindDrag() {
+      let dragged = null;
+      $$("[data-drag-word]").forEach(el => {
+        el.addEventListener("dragstart", () => { dragged = el; el.classList.add("dragging"); });
+        el.addEventListener("dragend", () => el.classList.remove("dragging"));
+      });
+      $$(".dropzone").forEach(zone => {
+        zone.addEventListener("dragover", e => e.preventDefault());
+        zone.addEventListener("drop", e => {
+          e.preventDefault();
+          if (dragged) zone.appendChild(dragged);
+          showToast("Mot classé.");
+        });
+      });
+    }
+
+    function generatePresentation() {
+      const name = $("#presName").value || "________";
+      const city = $("#presCity").value || "________";
+      const like = $("#presLike").value || "________";
+      $("#presentationText").textContent = `Bonjour.\nJe m'appelle ${name}.\nJ'habite à ${city}.\nJ'aime ${like}.\nÀ bientôt.`;
+      state.progress.presentation = true;
+      saveProgress();
+    }
+
+    async function startRecording(key) {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const recorder = new MediaRecorder(stream);
+        const chunks = [];
+        recorder.ondataavailable = event => chunks.push(event.data);
+        recorder.onstop = () => {
+          const blob = new Blob(chunks, { type: recorder.mimeType || "audio/webm" });
+          state.recordings[key] = URL.createObjectURL(blob);
+          stream.getTracks().forEach(track => track.stop());
+          state.progress[`rec-${key}`] = true;
+          saveProgress();
+          updateRecordingButtons();
+          updateTeacherPanel();
+          showToast("Voix enregistrée.");
+        };
+        state.media[key] = recorder;
+        recorder.start();
+        markRecordingState(key, true);
+        animateWave(key);
+      } catch (error) {
+        showToast("Micro non disponible. Vérifiez les permissions.");
+      }
+    }
+
+    function stopRecording(key) {
+      const recorder = state.media[key];
+      if (recorder && recorder.state !== "inactive") recorder.stop();
+      markRecordingState(key, false);
+    }
+
+    function playRecording(key) {
+      const url = state.recordings[key];
+      if (!url) return showToast("Pas encore enregistré.");
+      const audio = new Audio(url);
+      audio.volume = state.volume;
+      audio.play();
+    }
+
+    function markRecordingState(key, isRecording) {
+      $$(`[data-record="${CSS.escape(key)}"]`).forEach(btn => btn.disabled = isRecording);
+      $$(`[data-stop="${CSS.escape(key)}"]`).forEach(btn => btn.disabled = !isRecording);
+      $$(`[data-rec-status="${CSS.escape(key)}"]`).forEach(el => {
+        el.textContent = isRecording ? "Enregistrement..." : (state.recordings[key] ? "Voix disponible" : "Pas encore enregistré");
+        el.classList.toggle("recording", isRecording);
+      });
+    }
+
+    function updateRecordingButtons() {
+      $$("[data-play-recording]").forEach(btn => btn.disabled = !state.recordings[btn.dataset.playRecording]);
+      Object.keys(state.recordings).forEach(key => markRecordingState(key, false));
+    }
+
+    function animateWave(key) {
+      const canvas = $(`[data-wave="${CSS.escape(key)}"]`);
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(260, rect.width);
+      canvas.height = 46;
+      let frame = 0;
+      function draw() {
+        if (!state.media[key] || state.media[key].state !== "recording") return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = "#173f7a";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        for (let x = 0; x < canvas.width; x += 8) {
+          const y = 23 + Math.sin((x + frame) * .06) * (8 + Math.sin(frame * .05) * 8);
+          if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+        frame += 7;
+        requestAnimationFrame(draw);
+      }
+      draw();
+    }
+
+    function runEcho(i) {
+      const count = $("#countdown");
+      speak(CONFIG.rhythmGroups[i].replaceAll("/", ""), .78);
+      let n = 3;
+      const timer = setInterval(() => {
+        count.textContent = n ? String(n) : "Répétez";
+        n -= 1;
+        if (n < -1) {
+          clearInterval(timer);
+          count.textContent = "";
+          showToast("À vous de répéter.");
+        }
+      }, 850);
+    }
+
+    function compareReadings(person) {
+      const first = `${person}-first`;
+      const second = `${person}-second`;
+      if (!state.recordings[first] || !state.recordings[second]) return showToast("Il faut deux lectures.");
+      const firstAudio = new Audio(state.recordings[first]);
+      firstAudio.onended = () => new Audio(state.recordings[second]).play();
+      firstAudio.play();
+    }
+
+    function updateTeacherPanel() {
+      const select = $("#teacherScreen");
+      if (!select) return;
+      select.innerHTML = CONFIG.stages.map((s, i) => `<option value="${i}" ${i === state.screen ? "selected" : ""}>${i + 1}. ${s[0]}</option>`).join("");
+      $("#teacherParticipants").innerHTML = CONFIG.participants.map(p => `
+        <label>${p}
+          <input data-name="${p}" value="${state.names[p] || p}">
+        </label>
+        <label>Difficulté
+          <select data-difficulty="${p}">
+            <option>support visible</option>
+            <option>standard</option>
+            <option>défi</option>
+          </select>
+        </label>
+      `).join("");
+      $("#recordingStatus").innerHTML = CONFIG.participants.map(p => `${state.names[p] || p}: première ${state.recordings[`${p}-first`] ? "oui" : "non"}, deuxième ${state.recordings[`${p}-second`] ? "oui" : "non"}`).join("<br>");
+      $("#answerKey").innerHTML = CONFIG.questions.map(q => `${q.q} → ${q.correct}`).join("<br>");
+      $$("[data-name]").forEach(input => input.addEventListener("change", () => {
+        state.names[input.dataset.name] = input.value.trim() || input.dataset.name;
+        saveProgress();
+        render();
+      }));
+    }
+
+    function toggleTeacher(force) {
+      state.teacherOpen = typeof force === "boolean" ? force : !state.teacherOpen;
+      $("#teacherPanel").classList.toggle("open", state.teacherOpen);
+      $("#teacherPanel").setAttribute("aria-hidden", String(!state.teacherOpen));
+    }
+
+    function resetAll() {
+      if (!confirm("Réinitialiser toute la session ?")) return;
+      localStorage.removeItem("frPronProgress");
+      localStorage.removeItem("frPronNames");
+      localStorage.removeItem("frPronLayers");
+      localStorage.removeItem("frPronClassStarted");
+      Object.values(state.recordings).forEach(URL.revokeObjectURL);
+      state.progress = {};
+      state.names = {};
+      state.recordings = {};
+      state.screen = 0;
+      state.classStarted = Date.now();
+      localStorage.setItem("frPronClassStarted", String(state.classStarted));
+      render();
+      showToast("Session réinitialisée.");
+    }
+
+    function resetCurrentActivity() {
+      Object.keys(state.progress).forEach(key => {
+        if (String(key).includes(`screen-${state.screen}`)) delete state.progress[key];
+      });
+      if (state.screen === 3) CONFIG.questions.forEach(q => delete state.progress[`question-${q.q}`]);
+      if (state.screen === 10) delete state.progress.presentation;
+      saveProgress();
+      render();
+      showToast("Activité actuelle réinitialisée.");
+    }
+
+    function formatTime(ms) {
+      const total = Math.floor(ms / 1000);
+      const m = String(Math.floor(total / 60)).padStart(2, "0");
+      const s = String(total % 60).padStart(2, "0");
+      return `${m}:${s}`;
+    }
+
+    function tickTimers() {
+      $("#classTimer").textContent = formatTime(Date.now() - state.classStarted);
+      const activity = state.activityElapsed + (state.activityStarted ? Date.now() - state.activityStarted : 0);
+      $("#activityTimer").textContent = formatTime(activity);
+    }
+
+    $("#prevTop").addEventListener("click", () => setScreen(state.screen - 1));
+    $("#nextTop").addEventListener("click", () => setScreen(state.screen + 1));
+    $("#teacherToggle").addEventListener("click", () => toggleTeacher());
+    $("#closeTeacher").addEventListener("click", () => toggleTeacher(false));
+    $("#teacherScreen").addEventListener("change", e => setScreen(Number(e.target.value)));
+    $("#toggleSpanish").addEventListener("click", () => document.body.classList.toggle("show-spanish"));
+    $("#toggleMarks").addEventListener("click", () => { state.showMarks = !state.showMarks; render(); });
+    $("#clearRecordings").addEventListener("click", () => { state.recordings = {}; updateRecordingButtons(); updateTeacherPanel(); showToast("Grabaciones borradas."); });
+    $("#resetCurrentActivity").addEventListener("click", resetCurrentActivity);
+    $("#resetAll").addEventListener("click", resetAll);
+    $("#startActivity").addEventListener("click", () => { if (!state.activityStarted) state.activityStarted = Date.now(); });
+    $("#stopActivity").addEventListener("click", () => {
+      if (state.activityStarted) state.activityElapsed += Date.now() - state.activityStarted;
+      state.activityStarted = null;
+    });
+    $("#resetActivity").addEventListener("click", () => { state.activityStarted = null; state.activityElapsed = 0; tickTimers(); });
+
+    document.addEventListener("keydown", event => {
+      if (event.target.matches("input, textarea, select")) return;
+      if (event.key.toLowerCase() === "p") toggleTeacher();
+      if (event.key === "ArrowRight") setScreen(state.screen + 1);
+      if (event.key === "ArrowLeft") setScreen(state.screen - 1);
+      if (event.key === "Escape") toggleTeacher(false);
+    });
+
+    render();
+    tickTimers();
+    setInterval(tickTimers, 1000);
+  </script>
+</body>
+</html>
