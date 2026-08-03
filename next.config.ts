@@ -54,7 +54,7 @@ const securityHeaders = [
       // Images: own domain + Supabase storage + data URIs + blob (canvas) + GA4 + Meta Pixel
       "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com",
       // GTM noscript iframe
-      "frame-src 'self' https://www.googletagmanager.com",
+      "frame-src 'self' https://www.googletagmanager.com https://www.youtube.com",
       // Audio/video from own server + Supabase storage + blob (MediaRecorder)
       "media-src 'self' blob: https://*.supabase.co",
       // Worker scripts (Next.js service worker / audio worklets)

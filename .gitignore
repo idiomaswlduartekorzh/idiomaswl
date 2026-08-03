@@ -57,3 +57,47 @@ public/assets/korean/step016/
 public/assets/korean/step017/
 public/assets/korean/step018/
 public/assets/korean/step019/
+
+# Audio de simulacros (IELTS, TOEFL, CILS, CELPE, TOPIK, Goethe, DELF) y práctica
+# escucha (it/de) — ~450MB en total. Se sirven desde el CDN (Supabase Storage) vía
+# NEXT_PUBLIC_EXAM_AUDIO_BASE (ver src/lib/examAudio.ts). Se guardan local para dev,
+# NO se commitean. (cambridge-b2 e ingles/diagnostic son legacy y sí van en el repo.)
+public/audio/toefl/
+public/audio/ielts/
+public/audio/cils/
+public/audio/celpe-bras/
+public/audio/topik/
+public/audio/goethe/
+public/audio/delf/
+public/audio/aleman/
+public/audio/italiano/
+
+# Certificados originales de estudiantes (TOEFL/IELTS sin tachar).
+# Contienen nombre, foto de la cara, correo, dirección, fecha de nacimiento y
+# pasaporte de personas reales. NUNCA se commitean, ni siquiera por accidente.
+# Al repo solo entran los recortes ya tachados en public/images/resultados/.
+# El directorio entero se ignora: los originales viven fuera del repo, en
+# ~/Documents/welearn-certificados-originales/. Esta regla es la segunda barrera
+# por si /work se vuelve a crear.
+/work/
+.venv-cert/
+
+# ⚠️ NUNCA poner originales de estudiantes dentro de public/: Next.js sirve todo
+# public/ en la raíz de la URL, y el CLI de Vercel sube el árbol local completo.
+# "public/reports tests/" contenía los 39 HEIC originales; se movieron fuera del
+# repo el 2026-08-02. Esta regla evita que vuelvan a entrar por accidente.
+/public/reports tests/
+/public/**/*.HEIC
+/public/**/*.heic
+
+# Scratch de sesión — herramientas de agentes, capturas y salidas temporales.
+# Nada de esto es fuente de verdad; se regenera solo.
+/.codex/
+/.playwright-mcp/
+/output/
+/prototype/
+
+# Capturas sueltas en la raíz (revisiones visuales de sesión).
+# Las imágenes de producción viven en public/ y no las toca esta regla.
+/*.png
+/*.mov
