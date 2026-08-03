@@ -24,13 +24,13 @@ La Parte 1 es el piloto editorial del patrón inspirado en las lecciones de IELT
 
 Archivos del piloto:
 
-- `src/data/icfes/part-one-lesson.ts`: contenido editorial, 12 demostraciones y ejercicios por nivel.
+- `src/data/icfes/part-one-lesson.ts`: contenido editorial, 20 demostraciones y ejercicios por nivel.
 - `IcfesPartOneLesson.tsx`: contenido estático y jerarquía pedagógica renderizada en servidor.
 - `IcfesPartOneExamples.tsx`: demostraciones por categorías.
 - `IcfesProgressivePractice.tsx`: navegación reutilizable por niveles.
 - `IcfesPartPracticeEngine.tsx`: motor común, persistencia y feedback.
 
-Para extender el patrón a Partes 2–7, crear primero un esquema de contenido específico para la tarea —no copiar ejemplos de Parte 1— y conservar la misma secuencia. Cada parte debe tener al menos: formato exacto, qué observar, qué responder, errores frecuentes, 9–12 demostraciones distribuidas por subtipos y tres niveles de práctica. La extensión se realiza después de aprobar visual y pedagógicamente el piloto para evitar multiplicar una arquitectura sin validar.
+Para extender el patrón a Partes 2–7, crear primero un esquema de contenido específico para la tarea —no copiar ejemplos de Parte 1— y conservar la misma secuencia. Cada parte debe tener al menos: formato exacto, qué observar, qué responder, errores frecuentes, 15–20 demostraciones distribuidas por subtipos y tres niveles de práctica. El piloto visual y pedagógico fue aprobado el 3 de agosto de 2026; la sección de demostraciones de Parte 1 se amplió de 12 a 20 referencias antes de iniciar la réplica.
 
 ## Verdad editorial
 

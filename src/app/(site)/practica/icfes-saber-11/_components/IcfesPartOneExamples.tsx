@@ -35,7 +35,7 @@ export default function IcfesPartOneExamples() {
           >
             <span aria-hidden="true">{item.icon}</span>
             <strong>{item.label}</strong>
-            <small>3 ejemplos</small>
+            <small>{item.examples.length} ejemplos</small>
           </button>
         ))}
       </div>

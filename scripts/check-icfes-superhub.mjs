@@ -33,7 +33,7 @@ for (const table of ['icfes_practice_sessions', 'icfes_practice_attempts', 'icfe
 }
 assert.match(migration, /REVOKE ALL ON FUNCTION record_icfes_practice_attempt[\s\S]+FROM PUBLIC/, 'La función RPC no debe quedar ejecutable por anon/public');
 
-assert.equal((partOneLesson.match(/decisiveClue:/g) ?? []).length - 1, 12, 'La Parte 1 debe conservar 12 ejemplos guiados');
+assert.equal((partOneLesson.match(/decisiveClue:/g) ?? []).length - 1, 20, 'La Parte 1 debe conservar 20 ejemplos guiados');
 assert.equal((partOneLesson.match(/id: 'p1-/g) ?? []).length, 8, 'La Parte 1 debe conservar 8 ejercicios adicionales para progresión');
 for (const stage of ['category', 'clue', 'distractors']) {
   assert.match(partOneLesson, new RegExp(`id: '${stage}'`), `Falta el nivel progresivo ${stage} de la Parte 1`);

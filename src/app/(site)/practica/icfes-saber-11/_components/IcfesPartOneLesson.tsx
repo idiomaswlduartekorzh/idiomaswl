@@ -16,7 +16,7 @@ export default function IcfesPartOneLesson() {
       <nav className={styles.lessonRoadmap} aria-label="Recorrido de la lección">
         <a href="#entiende"><span>01</span><strong>Entiende</strong><small>formato oficial</small></a>
         <a href="#metodo"><span>02</span><strong>Aprende</strong><small>método WeLearn</small></a>
-        <a href="#ejemplos"><span>03</span><strong>Observa</strong><small>12 ejemplos</small></a>
+        <a href="#ejemplos"><span>03</span><strong>Observa</strong><small>20 ejemplos</small></a>
         <a href="#practica-guiada"><span>04</span><strong>Practica</strong><small>3 niveles</small></a>
       </nav>
 
