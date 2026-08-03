@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const MAPS = [
   {
     src: '/images/ielts/task1/visual-bank/user-batch-02/06-map-town-centre.png',
@@ -31,8 +33,8 @@ export default function Task1ApprovedMapVisual({ variant = 0 }: { variant?: numb
       width={1600}
       height={1000}
       sizes="(max-width: 768px) 100vw, 1080px"
+      loading="eager"
       style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 6 }}
     />
   );
 }
-import Image from 'next/image';

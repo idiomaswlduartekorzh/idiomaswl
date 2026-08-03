@@ -21,6 +21,7 @@ export default function Task1ApprovedProcessVisual({ variant = 0 }: { variant?: 
         width={2094}
         height={1074}
         sizes="(max-width: 768px) 100vw, 1080px"
+        loading="eager"
         style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 6 }}
       />
     );

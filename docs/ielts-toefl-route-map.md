@@ -97,7 +97,13 @@ paragraph names or an exact word count per paragraph.
 | `/practica/ielts/academic/writing/task1/graficos-de-barras` | live | Visual type: bar charts |
 | `/practica/ielts/academic/writing/task1/pie-charts` | live | Visual type: pie charts |
 | `/practica/ielts/academic/writing/task1/tablas` | live | Visual type: tables |
-| `/practica/ielts/academic/writing/task1/tarea-completa` | live | Full response: paired timed visual tasks and final review |
+| `/practica/ielts/academic/writing/task1/tarea-completa` | live | Canonical full-response library: six paired timed visual tasks and final review |
+
+### Task 1 non-indexed functional route
+
+| Route | Indexing | Purpose |
+| --- | --- | --- |
+| `/practica/ielts/academic/writing/task1/tarea-completa/sesion?task=<id>` | `noindex, nofollow` | Individual timed writing session launched from the canonical Task 1 practice library. It deliberately stays out of the sitemap and search results to avoid duplicate practice pages. |
 
 ### Task 2 routes
 

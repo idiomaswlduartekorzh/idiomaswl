@@ -191,7 +191,9 @@ function getDocumentedRoutes(markdownText, exam) {
     ...new Set(
       [...markdownText.matchAll(/`(\/practica\/[^`]+)`/g)]
         .map((match) => match[1])
-        .filter((routePath) => routePath.startsWith(`/practica/${exam}`))
+        // Query-driven practice sessions are documented operational routes, not
+        // canonical content pages. They have their own noindex guardrail.
+        .filter((routePath) => routePath.startsWith(`/practica/${exam}`) && !routePath.includes('?'))
     ),
   ].sort();
 }
@@ -934,6 +936,42 @@ function validateIeltsTask1LegacySkillReviewRoutes() {
     if (!contentText.includes('answerCheck=')) {
       fail(`${route.path} must pass answerCheck to Task1OfficialReviewBlock.`);
     }
+  }
+}
+
+function validateIeltsTask1DiscoveryRules() {
+  const sitemapPath = path.join(root, 'src/app/sitemap.ts');
+  const sitemapText = fs.existsSync(sitemapPath) ? fs.readFileSync(sitemapPath, 'utf8') : '';
+  const indexedTask1Routes = [
+    'introduccion',
+    'overview',
+    'body-1',
+    'body-2',
+    'tendencias',
+    'comparaciones',
+    'procesos',
+    'mapas',
+    'vocabulario',
+    'tarea-completa',
+  ];
+
+  for (const route of indexedTask1Routes) {
+    if (!sitemapText.includes(`'${route}'`)) {
+      fail(`IELTS Task 1 sitemap must retain the complete canonical lesson route "${route}".`);
+    }
+  }
+
+  if (sitemapText.includes("'sesion'")) {
+    fail('IELTS Task 1 individual writing sessions must stay out of the sitemap.');
+  }
+
+  const sessionPagePath = path.join(
+    root,
+    'src/app/(site)/practica/ielts/academic/writing/task1/tarea-completa/sesion/page.tsx'
+  );
+  const sessionPageText = fs.existsSync(sessionPagePath) ? fs.readFileSync(sessionPagePath, 'utf8') : '';
+  if (!sessionPageText.includes('robots: { index: false, follow: false }')) {
+    fail('IELTS Task 1 individual writing sessions must remain noindex, nofollow.');
   }
 }
 
@@ -2541,6 +2579,7 @@ function main() {
   validateIeltsGeneralTrainingReadingRoute();
   validateIeltsGeneralTrainingWritingTask2Route();
   validateIeltsTask1LegacySkillReviewRoutes();
+  validateIeltsTask1DiscoveryRules();
   validateIeltsTask2LegacySkillReviewRoutes();
 
   const routes = catalog.EXAM_PRACTICE_ROUTES ?? [];

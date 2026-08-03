@@ -16,6 +16,11 @@ import {
 type VisualType = 'line' | 'bar' | 'pie' | 'table' | 'process' | 'map';
 type Phase = 'intro' | 'writing' | 'review';
 
+type ContentProps = {
+  initialPhase?: Phase;
+  initialTaskId?: string;
+};
+
 type FullTask = {
   id: string;
   label: string;
@@ -31,15 +36,15 @@ const SUPPORTED_FULL_TASKS: FullTask[] = [
   {
     id: 'internet-access', label: 'Line graph: internet access', type: 'line', variant: 0,
     prompt: 'The line graph below shows the percentage of the population with internet access in three regions between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
-    dataNotes: 'Region North: 30%, 48%, 62%, 77%, 89%. Region Central: 14%, 27%, 45%, 64%, 79%. Region South: 7%, 10%, 22%, 39%, 57%.',
-    overview: 'Overall, access rose in all three regions. Region North remained the highest throughout, while Region South stayed lowest despite a substantial increase.',
+    dataNotes: 'Region A: 30%, 48%, 61%, 77%, 88%. Region B: 12%, 26%, 45%, 63%, 79%. Region C: 6%, 10%, 22%, 38%, 57%.',
+    overview: 'Overall, access rose in all three regions. Region A remained the highest throughout, while Region C stayed lowest despite a substantial increase.',
     model: `The line graph illustrates the proportion of people with internet access in three regions from 2000 to 2020.
 
-Overall, internet use increased markedly in every region. North consistently recorded the highest figures, whereas South remained the least connected area throughout the period.
+Overall, internet use increased markedly in every region. Region A consistently recorded the highest figures, whereas Region C remained the least connected area throughout the period.
 
-In North, access rose from 30% in 2000 to 48% five years later and then continued to climb, reaching 89% in 2020. Central followed a similar upward pattern, although its figures were lower at every point. Its rate grew from 14% to 45% during the first decade before reaching 79% at the end.
+In Region A, access rose from 30% in 2000 to 48% five years later and then continued to climb, reaching 88% in 2020. Region B followed a similar upward pattern, although its figures were lower at every point. Its rate grew from 12% to 45% during the first decade before reaching 79% at the end.
 
-South started from only 7%, and growth was initially modest, with the figure standing at 10% in 2005. However, access then increased more rapidly, rising to 22% in 2010 and 57% by 2020. Despite this considerable progress, South finished 32 percentage points below North.`
+Region C started from only 6%, and growth was initially modest, with the figure standing at 10% in 2005. However, access then increased more rapidly, rising to 22% in 2010 and 57% by 2020. Despite this considerable progress, Region C finished 31 percentage points below Region A.`
   },
   {
     id: 'household-expenditure', label: 'Bar chart: household expenditure', type: 'bar', variant: 0,
@@ -136,12 +141,13 @@ function formatTime(seconds: number) {
   return `${Math.floor(seconds / 60)}:${(seconds % 60).toString().padStart(2, '0')}`;
 }
 
-export default function TareaCompletaPage() {
-  const [phase, setPhase] = useState<Phase>('intro');
-  const [taskIndex, setTaskIndex] = useState(0);
+export default function TareaCompletaPage({ initialPhase = 'intro', initialTaskId }: ContentProps) {
+  const initialTaskIndex = Math.max(0, SUPPORTED_FULL_TASKS.findIndex((item) => item.id === initialTaskId));
+  const [phase, setPhase] = useState<Phase>(initialPhase);
+  const [taskIndex, setTaskIndex] = useState(initialTaskIndex);
   const [text, setText] = useState('');
   const [timeLeft, setTimeLeft] = useState(20 * 60);
-  const [timerActive, setTimerActive] = useState(false);
+  const [timerActive, setTimerActive] = useState(initialPhase === 'writing');
   const [checks, setChecks] = useState<Record<string, boolean>>({});
   const [showModel, setShowModel] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -204,8 +210,21 @@ export default function TareaCompletaPage() {
       <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: '1.25rem' }}>Choose one fully paired visual task. Every prompt, visual, data reminder, overview and model response belongs to the same task.</p>
       <Task1OfficialReviewBlock focus="Integrate an introduction, overview, selected data, comparisons and a final review under time pressure." officialFormat="IELTS Academic Writing Task 1 requires at least 150 words in about 20 minutes. IELTS does not prescribe paragraph labels or fixed paragraph lengths." welearnStrategy="Use a four-paragraph WeLearn plan: a concise introduction, an overview, and two grouped detail paragraphs. Add a third detail paragraph only when the visual genuinely needs it." answerCheck="This teaching experience does not produce an official IELTS score; use its checklist and model response for learning." />
       <Task1ChartTypeGuide />
+      <section aria-labelledby="timed-task-bank" style={{ margin: '1.5rem 0' }}>
+        <p className="eyebrow" style={{ marginBottom: '0.35rem' }}>Practice bank</p>
+        <h2 id="timed-task-bank" style={{ fontSize: '1.2rem', margin: '0 0 0.8rem' }}>Choose a complete timed task</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(225px, 1fr))', gap: '0.7rem' }}>
+          {SUPPORTED_FULL_TASKS.map((item, index) => (
+            <article key={item.id} style={{ padding: '0.9rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg-2)', display: 'grid', gap: '0.55rem' }}>
+              <span style={{ fontFamily: 'var(--mono)', fontWeight: 800, color: '#0f3d8c', fontSize: '0.76rem' }}>TASK {String(index + 1).padStart(2, '0')} · {item.type.toUpperCase()}</span>
+              <strong style={{ lineHeight: 1.35 }}>{item.label.replace(/^.*?: /, '')}</strong>
+              <Link href={`/practica/ielts/academic/writing/task1/tarea-completa/sesion?task=${item.id}`} className="btn btn-sm" style={{ justifySelf: 'start' }}>Choose task →</Link>
+            </article>
+          ))}
+        </div>
+      </section>
       <div style={{ padding: '1.1rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg-2)', marginBottom: '1.25rem' }}>
-        <label htmlFor="full-task-select" style={{ display: 'block', fontFamily: 'var(--mono)', fontSize: '0.75rem', fontWeight: 800, color: '#0f3d8c', marginBottom: '0.5rem' }}>CHOOSE A SUPPORTED VISUAL TASK</label>
+        <label htmlFor="full-task-select" style={{ display: 'block', fontFamily: 'var(--mono)', fontSize: '0.75rem', fontWeight: 800, color: '#0f3d8c', marginBottom: '0.5rem' }}>PREVIEW A SUPPORTED VISUAL TASK</label>
         <select id="full-task-select" value={taskIndex} onChange={(event) => chooseTask(Number(event.target.value))} style={{ width: '100%', padding: '0.7rem', borderRadius: 8, border: '1px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)' }}>
           {SUPPORTED_FULL_TASKS.map((item, index) => <option key={item.id} value={index}>{index + 1}. {item.label}</option>)}
         </select>
@@ -215,17 +234,18 @@ export default function TareaCompletaPage() {
       <div style={{ padding: '0.9rem 1rem', borderRadius: 8, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.24)', marginBottom: '1rem' }}><strong style={{ color: '#b45309' }}>Data check:</strong> <span style={{ lineHeight: 1.6 }}>{task.dataNotes}</span></div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(165px, 1fr))', gap: '0.65rem', marginBottom: '1.25rem' }}>{LEGO_STEPS.map(([part, action]) => <article key={part} style={{ padding: '0.8rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg-2)' }}><strong style={{ display: 'block', fontSize: '0.86rem' }}>{part}</strong><span style={{ display: 'block', color: 'var(--muted)', fontSize: '0.8rem', marginTop: '0.3rem', lineHeight: 1.45 }}>{action}</span></article>)}</div>
       <div style={{ padding: '0.9rem 1rem', borderRadius: 8, background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.22)', marginBottom: '1.35rem' }}><strong style={{ color: '#047857' }}>Model overview:</strong> <span style={{ lineHeight: 1.6 }}>{task.overview}</span></div>
-      <button className="btn" style={{ width: '100%', fontSize: '1rem', padding: '0.9rem' }} onClick={start}>Start 20-minute practice →</button>
+      <Link className="btn" style={{ width: '100%', fontSize: '1rem', padding: '0.9rem', textAlign: 'center' }} href={`/practica/ielts/academic/writing/task1/tarea-completa/sesion?task=${task.id}`}>Open this writing task →</Link>
     </div></div></section>;
   }
 
   if (phase === 'writing') {
     return <section className="wl-section"><div className="wrap"><div className="ielts-task1-shell" style={{ maxWidth: 1080, margin: '0 auto' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', padding: '0.75rem 1rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', position: 'sticky', top: 8, zIndex: 10 }}><strong style={{ fontFamily: 'var(--mono)', fontSize: '1.2rem', color: timerColor }}>⏱ {formatTime(timeLeft)}</strong><span style={{ fontFamily: 'var(--mono)', color: wordCount >= 150 ? '#047857' : '#b45309' }}>{wordCount} / 150+ words</span><button className="btn btn-sm" onClick={submit}>Review response →</button></div>
+      <Link href="/practica/ielts/academic/writing/task1/tarea-completa" className="btn btn-ghost btn-sm" style={{ marginBottom: '0.75rem' }}>← Practice bank</Link>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', padding: '0.75rem 1rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)', position: 'sticky', top: '4.5rem', zIndex: 10 }}><strong style={{ fontFamily: 'var(--mono)', fontSize: '1.2rem', color: timerColor }}>⏱ {formatTime(timeLeft)}</strong><span style={{ fontFamily: 'var(--mono)', color: wordCount >= 150 ? '#047857' : '#b45309' }}>{wordCount} / 150+ words</span><button className="btn btn-sm" onClick={submit}>Review response →</button></div>
       <div style={{ padding: '0.65rem', border: '1px solid var(--line-soft)', borderRadius: 8, background: 'var(--bg)', marginBottom: '0.75rem' }}><TaskVisual task={task} /></div>
       <div className="wl-card" style={{ padding: '1rem', borderLeft: '3px solid #0f3d8c', marginBottom: '0.75rem', lineHeight: 1.65 }}>{task.prompt}</div>
       <div style={{ padding: '0.7rem 0.9rem', borderRadius: 8, background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.24)', marginBottom: '0.75rem', fontSize: '0.83rem', lineHeight: 1.55 }}><strong>Data reminder:</strong> {task.dataNotes}</div>
-      <textarea value={text} onChange={(event) => setText(event.target.value)} placeholder={'Introduction: paraphrase the task.\n\nOverview: state the big picture.\n\nBody 1 and Body 2: group the most meaningful details.'} rows={20} style={{ width: '100%', boxSizing: 'border-box', padding: '1rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', font: 'inherit', lineHeight: 1.75, resize: 'vertical' }} autoFocus />
+      <textarea value={text} onChange={(event) => setText(event.target.value)} placeholder={'Introduction: paraphrase the task.\n\nOverview: state the big picture.\n\nBody 1 and Body 2: group the most meaningful details.'} rows={20} style={{ width: '100%', boxSizing: 'border-box', padding: '1rem', borderRadius: 8, border: '1.5px solid var(--line-soft)', background: 'var(--bg)', color: 'var(--ink)', font: 'inherit', lineHeight: 1.75, resize: 'vertical' }} />
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.6rem', alignItems: 'center' }}><span style={{ color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.8rem' }}>{wordCount < 150 ? `${150 - wordCount} words to the official minimum` : 'Official minimum reached'}</span><button className="btn btn-sm" onClick={submit}>Submit for review →</button></div>
     </div></div></section>;
   }
