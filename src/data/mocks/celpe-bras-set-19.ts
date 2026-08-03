@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 
-// CELPE-Bras — formato oficial INEP/MEC. Conteúdo ORIGINAL WeLearn no formato oficial.
+// CELPE-Bras — formato oficial INEP/MEC. Tarefa 1 usa vídeo OFICIAL do acervo público
+// da UFRGS (ufrgs.br/acervocelpebras); as perguntas foram reescritas, não copiadas do
+// caderno oficial. Tarefas 2-4 e Parte Oral são conteúdo ORIGINAL WeLearn.
 // Áudio/vídeo/imagens sob /audio/celpe-bras/set-19/ e /images/celpe-bras/set-19/ — ver checklist de mídia.
 
 const mock: MockExam = {
@@ -12,13 +14,14 @@ const mock: MockExam = {
   sections: [
     {
       part: 1, skill: 'writing', title: 'Tarefa 1 – Produção a partir de vídeo',
-      instructions: 'Assista ao vídeo (reportagem). Depois, redija o texto solicitado em português, adequado ao gênero, ao interlocutor e ao propósito indicados.',
+      instructions: 'Assista ao vídeo oficial do CELPE-BRAS (edição 2013/1). Preste atenção ao tema e às informações apresentadas. Depois, redija o texto solicitado em português.',
+      audioUrl: '/videos/celpe-bras/set-19.mp4',
       questions: [
         {
           type: 'write', id: 'celpe-bras-s19-q1', part: 1, taskNumber: 1,
-          stimulusLabel: 'Reportagem em vídeo',
-          stimulus: '[Vídeo — reportagem, ~3 min] Uma reportagem mostra o trabalho de mulheres artesãs de uma cooperativa que transformam retalhos de tecido descartados por fábricas em bolsas, roupas e objetos de decoração. A repórter entrevista as artesãs, que conquistaram independência financeira, e uma designer que ajuda a valorizar e vender os produtos. Uma delas conta que, além de renda, o trabalho lhe devolveu a autoestima e um senso de comunidade.',
-          text: 'Com base no vídeo, escreva um texto para uma feira de economia solidária apresentando o trabalho da cooperativa de artesãs. Explique como o projeto une sustentabilidade, geração de renda e empoderamento feminino, e convide o público a apoiar. (Mínimo: 200 palavras)',
+          stimulusLabel: 'Vídeo oficial CELPE-BRAS — Projeto Horta Ecológica',
+          stimulus: '[Vídeo oficial CELPE-BRAS, edição 2013/1] Tema: "Projeto Horta Ecológica". Assista com atenção para compreender as informações apresentadas antes de escrever seu texto.',
+          text: 'Com base no que você assistiu, escreva um texto sobre o tema do vídeo, no gênero e para o interlocutor que fizerem mais sentido para o assunto (por exemplo, uma carta, um e-mail, um texto informativo ou uma postagem). Explique o tema, comente as informações apresentadas e inclua sua própria opinião quando pertinente. (Mínimo: 200 palavras)',
           minWords: 200,
         },
       ],

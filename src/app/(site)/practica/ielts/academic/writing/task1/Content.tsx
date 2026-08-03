@@ -201,6 +201,7 @@ export default function Task1HubPage() {
               marginBottom: '2rem',
             }}
           >
+            <h2 style={{ gridColumn: '1 / -1', margin: '0', fontSize: '1.2rem' }}>Official format versus WeLearn strategy</h2>
             <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
               <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Official format</h2>
               <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>

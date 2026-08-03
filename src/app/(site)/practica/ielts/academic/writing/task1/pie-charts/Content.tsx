@@ -135,8 +135,6 @@ const INTERNAL_LINKS = [
 function PieChart() {
   const radius = 74;
   const circumference = 2 * Math.PI * radius;
-  let offset = 25;
-
   return (
     <div className="wl-card" style={{ padding: '1rem', margin: '1rem 0 1.25rem' }}>
       <p style={{ margin: '0 0 0.35rem', fontSize: '0.72rem', fontWeight: 800, color: '#0f3d8c', fontFamily: 'var(--mono)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
@@ -151,11 +149,11 @@ function PieChart() {
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center' }}>
         <svg viewBox="0 0 220 220" role="img" aria-label="Pie chart showing monthly spending categories among young professionals in Northbridge" style={{ width: 'min(100%, 270px)', flex: '1 1 190px', display: 'block' }}>
           <circle cx="110" cy="110" r={radius} fill="none" stroke="var(--line-soft)" strokeWidth="42" />
-          {SEGMENTS.map((segment) => {
+          {SEGMENTS.map((segment, index) => {
             const dash = (segment.value / 100) * circumference;
             const gap = circumference - dash;
-            const currentOffset = offset;
-            offset -= (segment.value / 100) * 100;
+            const priorShare = SEGMENTS.slice(0, index).reduce((total, item) => total + item.value, 0);
+            const currentOffset = 25 - (priorShare / 100) * circumference;
             return (
               <circle
                 key={segment.label}
@@ -316,7 +314,7 @@ export default function PieChartsContent({ faqs }: { faqs: Faq[] }) {
                 ['1', 'Read the total', 'Confirm that the segments add up to 100% and identify the population or budget represented.'],
                 ['2', 'Locate the extremes', 'Identify the largest and smallest portions before writing.'],
                 ['3', 'Group segments', 'Combine small or similar categories to avoid a mechanical list.'],
-                ['4', 'Compara proporciones', 'Usa fracciones aproximadas: nearly half, over a third, about twice as much.'],
+                ['4', 'Compare proportions', 'Use approximate fractions: nearly half, over a third, about twice as much.'],
               ].map(([step, title, copy]) => (
                 <article key={step} className="wl-card" style={{ padding: '0.95rem', borderRadius: 8 }}>
                   <span style={{ display: 'inline-flex', width: 28, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 6, background: 'rgba(15,61,140,0.09)', color: '#0f3d8c', fontWeight: 800, fontFamily: 'var(--mono)', marginBottom: '0.55rem' }}>

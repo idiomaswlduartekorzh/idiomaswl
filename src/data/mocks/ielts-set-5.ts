@@ -5,18 +5,361 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 5',
   subtitle: 'Coffee · Light Pollution · The Paradox of Choice',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
 
-    // ─── LISTENING — EN CONSTRUCCIÓN ─────────────────────────────────────────
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-5.mp3',
+      title: 'Listening — Section 1: Booking a Guided City Walk',
+      instructions: 'You will hear a conversation between a tour company agent and a customer. Listen and answer Questions 1–10.',
+      transcript: `AGENT: Good afternoon, Heritage City Walks. How can I help you?
+
+CUSTOMER: Hello, I'd like to book a guided walking tour of the old town for this weekend.
+
+AGENT: Of course. Could I take your name?
+
+CUSTOMER: Yes, it's Rachel Hastings.
+
+AGENT: Could you spell your surname for me?
+
+CUSTOMER: Certainly — it's H-A-S-T-I-N-G-S.
+
+AGENT: Thank you, Ms Hastings. And a phone number in case we need to reach you?
+
+CUSTOMER: It's 07924 665130.
+
+AGENT: Lovely. Can I ask how you heard about our tours?
+
+CUSTOMER: A friend recommended you, actually. She did the tour last month.
+
+AGENT: That's great to hear. Now, we run two walks. Would you prefer the evening tour or the morning one?
+
+CUSTOMER: I was thinking about the evening walk at first, but I'll go for the morning tour — I'd rather see everything in daylight.
+
+AGENT: Perfect, the morning tour it is. It begins outside the cathedral, on the main square.
+
+CUSTOMER: Outside the cathedral. Got it. Is there anything I should bring?
+
+AGENT: Mainly just make sure you wear comfortable shoes, as there's a fair amount of walking on cobbled streets.
+
+CUSTOMER: No problem. What will we actually see?
+
+AGENT: The guide takes you through the medieval quarter and points out the old market, which dates back six hundred years. Around midday, the group stops for lunch at a café by the river.
+
+CUSTOMER: That sounds wonderful. Could you tell me a bit more about the options and prices?
+
+AGENT: Certainly. The morning tour lasts three hours and covers about four kilometres. It costs twenty-five pounds per person, and that includes a printed guidebook to take home.
+
+CUSTOMER: And if I wanted something longer?
+
+AGENT: There's also a full-day tour. That one runs for six hours and covers nine kilometres, priced at forty pounds. Best of all, a two-course lunch is included in that package.
+
+CUSTOMER: Excellent. I'll take the morning tour for now.
+
+AGENT: Wonderful. I'll book you straight in.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'City Walking Tours',
+          example: 'Name:  Rachel Hastings',
+          template: `Phone: 07924 665130
+
+• Heard about the tours from a {{1}}
+• Customer chooses the {{2}} tour (not the evening one)
+• The walk starts outside the {{3}}
+• Advised to wear comfortable {{4}}
+• The guide points out the old {{5}}
+• The group stops for lunch at a {{6}}`,
+          blanks: [
+            { num: 1, answers: ['friend'], maxWords: 1 },
+            { num: 2, answers: ['morning'], maxWords: 1 },
+            { num: 3, answers: ['cathedral'], maxWords: 1 },
+            { num: 4, answers: ['shoes'], maxWords: 1 },
+            { num: 5, answers: ['market'], maxWords: 1 },
+            { num: 6, answers: ['café', 'cafe'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Tour', 'Duration', 'Distance', 'Price', 'Includes'],
+          rows: [
+            [
+              'Morning tour',
+              '3 hours',
+              { num: 7, answers: ['4', 'four'], maxWords: 1 },
+              '£25',
+              { num: 8, answers: ['guidebook'], maxWords: 1 },
+            ],
+            [
+              'Full-day tour',
+              { num: 9, answers: ['6', 'six'], maxWords: 1 },
+              '9 km',
+              '£40',
+              { num: 10, answers: ['lunch'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-5.mp3',
+      title: 'Listening — Section 2: Volunteer Induction Talk',
+      instructions: 'You will hear a coordinator giving an induction talk to new volunteers. Listen and answer Questions 11–20.',
+      transcript: `Good morning everyone, and thank you for coming to the induction day at Rivermead Nature Reserve. I'm Tom, the volunteer coordinator, and I'll explain what volunteering here involves.
+
+Let me start with the work itself. Over the summer, there's a great deal to do. Now, some of you imagine you'll spend your time guiding visitors around the site, but that's actually handled by our trained staff. What volunteers will really help with is planting trees along the new woodland trail, and counting birds for our annual wildlife survey. The fences are repaired by outside contractors, and the café is run by paid staff, so those aren't jobs for volunteers.
+
+Now for some practical points. To join the main programme, you must be at least eighteen years old — there's a separate scheme for younger helpers. Today's induction is quite relaxed, and it lasts about two hours, including a short tour of the grounds.
+
+For outdoor work, please wear sturdy boots. Trainers aren't suitable, because the paths get very muddy after rain. When you arrive, you can leave your things safely, as lockers are provided for your personal belongings — there's no need to carry a bag around the site. You'll also be pleased to hear that free hot drinks are available in the staff room all day.
+
+Safety comes first here. If you have an accident of any kind, however minor, you must report any injuries to the supervisor on duty immediately — please don't wait until you get home.
+
+To keep everyone informed, you'll receive a monthly newsletter by email, listing upcoming events and work parties. Do read it, because that's how we announce any last-minute changes.
+
+Finally, we like to say thank you properly. The end-of-year celebration is held in December, with food and music for all our volunteers and their families. It's always a wonderful evening, and I very much hope you'll come along. Right — let's start that tour of the reserve.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO tasks will the volunteers help with over the summer?',
+          options: [
+            { letter: 'A', text: 'guiding visitors' },
+            { letter: 'B', text: 'planting trees' },
+            { letter: 'C', text: 'counting birds' },
+            { letter: 'D', text: 'repairing fences' },
+            { letter: 'E', text: 'running the café' },
+          ],
+          selectCount: 2,
+          answers: ['B', 'C'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Volunteer induction',
+          template: `• Volunteers must be at least {{13}} years old.
+• The induction session lasts about {{14}}.
+• Wear sturdy {{15}} for the outdoor work.
+• Lockers are provided for personal {{16}}.
+• Free {{17}} are available in the staff room.
+• Report any injuries to the {{18}} on duty.
+• Volunteers receive a monthly {{19}} by email.
+• The end-of-year {{20}} is held in December.`,
+          blanks: [
+            { num: 13, answers: ['18', 'eighteen'], maxWords: 1 },
+            { num: 14, answers: ['two hours', '2 hours'], maxWords: 2 },
+            { num: 15, answers: ['boots', 'boot'], maxWords: 1 },
+            { num: 16, answers: ['belongings'], maxWords: 1 },
+            { num: 17, answers: ['hot drinks', 'drinks'], maxWords: 2 },
+            { num: 18, answers: ['supervisor'], maxWords: 1 },
+            { num: 19, answers: ['newsletter'], maxWords: 1 },
+            { num: 20, answers: ['celebration'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-5.mp3',
+      title: 'Listening — Section 3: Field-trip Planning Discussion',
+      instructions: 'You will hear a tutor and two students planning an ecology field trip. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Right, Meg and Ryan, let's plan your ecology field trip. I've suggested the Fenwick Estuary. Any thoughts on why it's a good choice?
+
+MEG: Well, it's quite close to the university, which is convenient.
+
+TUTOR: That's true, though honestly that wasn't my main reason. What really makes it ideal is the sheer variety of habitats — mudflats, salt marsh and woodland, all in one place.
+
+RYAN: That does make it perfect for our module. And I read that a group went there two years ago.
+
+TUTOR: They did, but you'll be doing something quite different. Now, what will you focus your data collection on?
+
+MEG: I thought we might survey the bird populations, since the estuary is famous for them.
+
+TUTOR: You could, but for this assignment I'd like you to concentrate on water quality — testing salinity and oxygen levels at different points.
+
+RYAN: Okay, water quality it is. How do we actually get out there?
+
+TUTOR: Good question. A coach would be far too expensive for a group your size, and the nearest train station is miles from the shore. So I've arranged a minibus, which the department will drive.
+
+MEG: Great. The one thing I'm nervous about is the tides — I don't want us getting cut off on the mudflats.
+
+TUTOR: Very sensible. The weather should be fine that week, and the deadline isn't for a month, so those aren't concerns. But the tides are serious, so we'll check the timetable carefully.
+
+RYAN: So what should we do first?
+
+TUTOR: Before anything else, please read the safety guidelines I've uploaded. Don't book the equipment or divide into teams until you've done that.
+
+MEG: Understood. Anything to bring?
+
+TUTOR: Yes — a few essentials. Each of you must bring a waterproof jacket, as the shore is exposed. Remember to charge the camera the night before, so you can photograph your sites. Collect your water samples in labelled bottles, and record all your measurements in a notebook rather than on loose paper. And finally, submit the risk assessment to me by Friday.
+
+RYAN: Will do. Thanks.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'The tutor says the Fenwick Estuary is a good choice because of',
+          options: [
+            'its closeness to the university',
+            'its variety of habitats',
+            'an earlier group\'s research there',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'For the assignment, the students will collect data on',
+          options: [
+            'water quality',
+            'bird populations',
+            'plant species',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'The group will travel to the site',
+          options: [
+            'by coach',
+            'by train',
+            'by minibus',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'Meg is most worried about',
+          options: [
+            'the weather',
+            'the tides',
+            'the deadline',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'The tutor tells the students that they must first',
+          options: [
+            'divide into teams',
+            'read the safety guidelines',
+            'book the equipment',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `• Each student must bring a waterproof {{26}}.
+• Remember to charge the {{27}} beforehand.
+• Collect water samples in labelled {{28}}.
+• Record all measurements in a {{29}}.
+• Submit the risk {{30}} to the tutor by Friday.`,
+          blanks: [
+            { num: 26, answers: ['jacket'], maxWords: 1 },
+            { num: 27, answers: ['camera'], maxWords: 1 },
+            { num: 28, answers: ['bottles', 'bottle'], maxWords: 1 },
+            { num: 29, answers: ['notebook'], maxWords: 1 },
+            { num: 30, answers: ['assessment'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-5.mp3',
+      title: 'Listening — Section 4: Urban Beekeeping',
+      instructions: 'You will hear a lecture about urban beekeeping. Listen and answer Questions 31–40.',
+      transcript: `Today I'd like to look at urban beekeeping — the practice of keeping honeybees within towns and cities, which has grown remarkably popular over the last decade.
+
+Let me start with some background. Contrary to what you might expect, cities can be surprisingly good places for bees. Because space at ground level is limited, hives are often placed on the rooftops of buildings — offices, schools and even hotels now host colonies high above the streets. Another advantage is temperature. Built-up areas tend to be a few degrees warmer than the surrounding countryside, and this extra warmth protects bees from frost during the colder months.
+
+So what are the benefits? The most obvious one is pollination. As the bees forage, they dramatically improve the pollination of nearby gardens and parks, which means more flowers and better fruit crops. There's a culinary benefit too: because urban bees visit such a wide range of plants, city honey often has a distinctive flavour that many people prize. And beyond the practical gains, keeping bees in visible places helps raise public awareness of wildlife and the threats it faces.
+
+Of course, there are challenges. In some neighbourhoods, a lack of flowers means there simply isn't enough food to sustain large numbers of bees, and colonies can struggle. The bees may also be affected by pollution from traffic, which can settle on the plants they feed on. And a more human problem is that new keepers often lack proper training, which can lead to poorly managed hives and unhappy neighbours.
+
+So what would I advise anyone thinking of starting? First, always register each hive with the local council, so that its location is on record. This is a legal requirement in many places. Second — and this is often forgotten — provide a nearby source of water. Bees need to drink, and without it they will visit your neighbours' swimming pools instead.
+
+In the next lecture, we will look at how researchers track the health of these urban colonies. But for now, that is a good overview of the subject.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'URBAN BEEKEEPING',
+          template: `Background
+
+• Beekeeping in cities has become popular.
+• Hives are often placed on the {{31}} of buildings.
+• Cities can be warmer, which protects bees from {{32}}.
+
+Benefits
+
+• Bees improve the {{33}} of nearby gardens and parks.
+• City honey often has a distinctive {{34}}.
+• Beekeeping helps raise public {{35}} of wildlife.
+
+Challenges
+
+• A lack of {{36}} in some areas limits food for the bees.
+• Bees may be affected by {{37}} from traffic.
+• New keepers often lack proper {{38}}.
+
+Advice
+
+• Register each hive with the local {{39}}.
+• Provide a nearby source of {{40}}.`,
+          blanks: [
+            { num: 31, answers: ['rooftops', 'rooftop', 'roofs'], maxWords: 1 },
+            { num: 32, answers: ['frost'], maxWords: 1 },
+            { num: 33, answers: ['pollination'], maxWords: 1 },
+            { num: 34, answers: ['flavour', 'flavor'], maxWords: 1 },
+            { num: 35, answers: ['awareness'], maxWords: 1 },
+            { num: 36, answers: ['flowers', 'flower'], maxWords: 1 },
+            { num: 37, answers: ['pollution'], maxWords: 1 },
+            { num: 38, answers: ['training'], maxWords: 1 },
+            { num: 39, answers: ['council', 'authority'], maxWords: 1 },
+            { num: 40, answers: ['water'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     // ─── READING ──────────────────────────────────────────────────────────────

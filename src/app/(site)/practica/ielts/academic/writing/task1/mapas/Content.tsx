@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Task1OfficialReviewBlock from '../Task1OfficialReviewBlock';
 import Task1ChartTypeGuide from '../Task1ChartTypeGuide';
 import MapPracticeEngine from './MapPracticeEngine';
@@ -171,12 +172,13 @@ export default function MapasPage() {
           {/* Original WeLearn map visual */}
           <div id="map-example-panel" role="tabpanel" className="wl-card" style={{ padding: '1.25rem', marginBottom: '1.25rem', overflowX: 'auto' }}>
             <p style={{ margin: '0 0 0.65rem', color: '#0f3d8c', fontFamily: 'var(--mono)', fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase' }}>IELTS-style visual reference</p>
-            <img
+            <Image
               src={ex.image}
               alt={`${ex.title}. Original WeLearn IELTS Task 1 map reference showing the before and after layout.`}
               width={1600}
               height={1000}
-              loading={exIdx === 0 ? 'eager' : 'lazy'}
+              priority={exIdx === 0}
+              sizes="(max-width: 768px) 100vw, 1080px"
               style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 6 }}
             />
           </div>

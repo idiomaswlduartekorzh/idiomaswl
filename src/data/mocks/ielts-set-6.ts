@@ -5,15 +5,368 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 6',
   subtitle: 'Paper · Rewilding Europe · The Gig Economy',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+    // ─── LISTENING ────────────────────────────────────────────────────────────
+
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-6.mp3',
+      title: 'Listening — Section 1: Renting a Bicycle',
+      instructions: 'You will hear a conversation between a bicycle-hire assistant and a customer. Listen and answer Questions 1–10.',
+      transcript: `AGENT: Hello, Riverside Cycle Hire. What can I do for you?
+
+CUSTOMER: Hi, I'd like to rent a bicycle for a few days while I'm visiting.
+
+AGENT: No problem at all. Can I start with your name?
+
+CUSTOMER: Sure, it's Daniel Fletcher.
+
+AGENT: Could you spell the surname?
+
+CUSTOMER: Yes, it's F-L-E-T-C-H-E-R.
+
+AGENT: Thanks, Mr Fletcher. And the best number to reach you on?
+
+CUSTOMER: It's 07531 480926.
+
+AGENT: Got it. How long will you need the bike for?
+
+CUSTOMER: For three days, please — I'm here until Thursday.
+
+AGENT: Fine. And what sort of bike were you after? We do road bikes and mountain bikes.
+
+CUSTOMER: I was going to go for a road bike, but actually I'll take a mountain bike — some of the trails here are quite rough.
+
+AGENT: Good choice for the trails. Now, we do ask for a deposit. Will you be paying by cash or card?
+
+CUSTOMER: By card, if that's alright.
+
+AGENT: Of course. Would you like any extras? A lot of people hire a helmet.
+
+CUSTOMER: Yes, I'll definitely take a helmet — safety first.
+
+AGENT: Sensible. And don't worry about breakdowns: a repair kit is included free with every rental.
+
+CUSTOMER: That's reassuring. Where do I bring the bike back?
+
+AGENT: We have two branches, but hired bikes must be returned to the central branch, near the market square.
+
+CUSTOMER: Central branch, noted. Could you run through the prices?
+
+AGENT: Certainly. A mountain bike is five pounds an hour, or eighteen pounds for a full day. The deposit on that one is thirty pounds, and it comes with lights fitted.
+
+CUSTOMER: And the electric bikes?
+
+AGENT: An electric bike is nine pounds an hour, or thirty-five pounds a day, with a fifty-pound deposit. Each electric bike also comes with its own charger.
+
+CUSTOMER: Perfect. I'll take the mountain bike for three days.
+
+AGENT: Wonderful, let me sort that out for you.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Riverside Cycle Hire',
+          example: 'Name:  Daniel Fletcher',
+          template: `Phone: 07531 480926
+
+• Customer needs the bike for {{1}} days
+• Customer chooses a {{2}} bike (not a road bike)
+• The deposit will be paid by {{3}}
+• Customer decides to hire a {{4}}
+• A repair {{5}} is included free
+• Bikes must be returned to the {{6}} branch`,
+          blanks: [
+            { num: 1, answers: ['3', 'three'], maxWords: 1 },
+            { num: 2, answers: ['mountain'], maxWords: 1 },
+            { num: 3, answers: ['card'], maxWords: 1 },
+            { num: 4, answers: ['helmet'], maxWords: 1 },
+            { num: 5, answers: ['kit'], maxWords: 1 },
+            { num: 6, answers: ['central'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Bike type', 'Hourly rate', 'Daily rate', 'Deposit', 'Includes'],
+          rows: [
+            [
+              'Mountain bike',
+              { num: 7, answers: ['5', '£5', 'five'], maxWords: 1 },
+              '£18',
+              { num: 8, answers: ['30', '£30', 'thirty'], maxWords: 1 },
+              'lights',
+            ],
+            [
+              'Electric bike',
+              '£9',
+              { num: 9, answers: ['35', '£35', 'thirty-five'], maxWords: 1 },
+              '£50',
+              { num: 10, answers: ['charger'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-6.mp3',
+      title: 'Listening — Section 2: New Leisure-Centre Tour',
+      instructions: 'You will hear a guide talking to visitors at a new leisure centre. Listen and answer Questions 11–20.',
+      transcript: `Good afternoon, everybody, and welcome to the grand opening of the Oakhill Leisure Centre. My name's Priya, and I'll be showing you round our new building this afternoon. It has taken nearly two years to build, and I think you'll agree it's been well worth the wait.
+
+Let me begin with what's actually new here, because there's been some confusion. The swimming pool, although it looks brand new, was in fact refurbished from the old centre, and the café has simply been expanded. The sports hall is the same one many of you will remember. What is genuinely new are two things we're very proud of: a full climbing wall, the tallest in the region, and a Finnish-style sauna next to the changing rooms. Those two are completely new additions.
+
+Now, some useful information. On weekdays the centre opens at seven in the morning, which is early enough for a swim before work. Do note that it closes early on Sundays, at four rather than the usual ten, so plan your weekend visits accordingly.
+
+Let's talk membership. A standard membership costs forty pounds per month, which gives you unlimited access to all the facilities. As a welcome offer, every new member also gets a free session with a personal trainer to set up a fitness plan.
+
+A few notes on the facilities themselves. The pool has a special shallow area for toddlers, so it's ideal for families with young children. One small practical point: the lockers require a pound coin, which you get back at the end, so do keep one handy.
+
+Finally, our timetable of classes is packed. We offer everything from spinning to boxing, but by far the most popular class is yoga — the morning sessions fill up within minutes, so do get here early if you'd like a space on the floor. To secure a place, all booking is done through the centre's website, so please create an account before you leave today.
+
+Right, if you'd like to follow me, we'll start with the climbing wall. Please stay together as we go.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO facilities at the centre are completely new?',
+          options: [
+            { letter: 'A', text: 'the climbing wall' },
+            { letter: 'B', text: 'the swimming pool' },
+            { letter: 'C', text: 'the café' },
+            { letter: 'D', text: 'the sports hall' },
+            { letter: 'E', text: 'the sauna' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'E'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Oakhill Leisure Centre',
+          template: `Opening times
+
+• On weekdays the centre opens at {{13}}.
+• It closes early on {{14}}.
+
+Membership
+
+• A standard membership costs {{15}} per month.
+• Every new member gets a free {{16}} with a trainer.
+
+Facilities
+
+• The pool has a special shallow area for {{17}}.
+• The lockers require a {{18}} coin.
+
+Classes
+
+• The most popular class is {{19}}.
+• All booking is done through the centre's {{20}}.`,
+          blanks: [
+            { num: 13, answers: ['seven', '7'], maxWords: 1 },
+            { num: 14, answers: ['Sundays', 'Sunday'], maxWords: 1 },
+            { num: 15, answers: ['40', '£40', 'forty'], maxWords: 1 },
+            { num: 16, answers: ['session'], maxWords: 1 },
+            { num: 17, answers: ['toddlers', 'children'], maxWords: 1 },
+            { num: 18, answers: ['pound', '£1', '1'], maxWords: 1 },
+            { num: 19, answers: ['yoga'], maxWords: 1 },
+            { num: 20, answers: ['website', 'app'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-6.mp3',
+      title: 'Listening — Section 3: Marketing Coursework Discussion',
+      instructions: 'You will hear a tutor and two students discussing a marketing coursework assignment. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Come in, Sophie, Mark. Let's go over your marketing coursework. Remind me what the main focus is.
+
+SOPHIE: Well, at first we thought about comparing two rival brands, and we also considered designing a brand-new product. But in the end we decided to analyse a real marketing campaign — the "Go Green" campaign from last year.
+
+TUTOR: A sensible choice, and there's plenty to say about it. Sophie, why did you pick that clothing company in particular?
+
+SOPHIE: Honestly, it's not because they're especially famous, though they are. The real reason is that they've published a lot of their sales data, so I actually have the figures to work with.
+
+TUTOR: That's exactly the right thinking — data makes all the difference. Real figures are always far more convincing to an examiner than personal opinions. Now, I've read your draft. The introduction is strong, and your word count is fine. What really needs work is your survey questions — several of them are quite leading.
+
+MARK: We wondered about that. We also weren't happy with the survey itself.
+
+TUTOR: In what way?
+
+MARK: The main issue was that we simply didn't get enough responses — only about thirty people replied, so it's hard to draw firm conclusions.
+
+TUTOR: Yes, thirty is too few. Try sharing it more widely this time. And how are you planning to present your findings?
+
+SOPHIE: We thought about making a short video, but we've settled on a set of slides — it feels more professional for this kind of report.
+
+TUTOR: Slides work well. Right, a few final reminders before you submit. Add a clear label to each chart, otherwise the reader gets lost. Make sure you reference all sources correctly, including websites. Keep the tone formal throughout — no slang. Proofread carefully for spelling, because errors cost marks. And when you're done, upload the file as a PDF, not a Word document. Do all of that, and you'll be in a strong position for a good mark.
+
+MARK: Got it. Thanks very much.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'The main focus of the coursework is',
+          options: [
+            'comparing two brands',
+            'designing a new product',
+            'analysing a marketing campaign',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'Sophie chose the clothing company because',
+          options: [
+            'it is very well known',
+            'she has data on it',
+            'it is a local firm',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'The tutor thinks the students should improve',
+          options: [
+            'the introduction',
+            'the survey questions',
+            'the word count',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'The problem with the survey was that there were',
+          options: [
+            'too few responses',
+            'unclear results',
+            'a biased sample',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'The students will present their findings using',
+          options: [
+            'a poster',
+            'slides',
+            'a video',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `• Add a clear {{26}} to each chart.
+• Reference all {{27}} correctly.
+• Keep the tone {{28}} throughout.
+• Proofread carefully for {{29}}.
+• Upload the file as a {{30}}.`,
+          blanks: [
+            { num: 26, answers: ['label', 'title'], maxWords: 1 },
+            { num: 27, answers: ['sources', 'source'], maxWords: 1 },
+            { num: 28, answers: ['formal'], maxWords: 1 },
+            { num: 29, answers: ['spelling'], maxWords: 1 },
+            { num: 30, answers: ['PDF'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-6.mp3',
+      title: 'Listening — Section 4: The History of Tea',
+      instructions: 'You will hear a lecture about the history of tea. Listen and answer Questions 31–40.',
+      transcript: `Good morning. Today's lecture traces the long and fascinating history of tea, a drink now enjoyed by billions of people every day.
+
+Let's begin at the very start. Tea was first drunk in China thousands of years ago, and Chinese legend credits its discovery to an emperor whose boiling water was flavoured by falling leaves. Interestingly, tea was not originally a social drink at all — it was taken as a medicine, valued for keeping people alert and aiding digestion. In those early days, the drink was made simply from dried leaves steeped in hot water, much as it is today.
+
+From China, tea gradually spread across Asia. It was carried to Japan by monks, who had studied in Chinese monasteries and brought the custom home with them. There, tea became far more than a beverage: an elaborate and highly formal tea ceremony developed, with strict rules governing every movement.
+
+Now, how did tea reach the West? It was first shipped to Europe by Portuguese traders in the sixteenth century, though the Dutch and later the British soon dominated the trade. Tea quickly became fashionable, but it was expensive, and for many years Europeans paid for their tea with silver, which drained their treasuries and caused serious tension with China.
+
+This brings us to mass production. To reduce their dependence on China, the British set up enormous plantations in India, particularly in the region of Assam. This made tea far cheaper and turned it into an everyday drink. However, we should not romanticise this period — conditions were often extremely hard for the workers, who laboured long hours for very little pay.
+
+Finally, a word about convenience. For centuries tea was brewed loose in a pot, but in the early nineteen-hundreds the tea bag was invented, apparently by accident, when a merchant sent out samples in small silk pouches. This simple innovation made tea quicker and cleaner to prepare, and it transformed how the world drinks tea.
+
+Next week, we'll look at the science of how tea affects the body. Thank you.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE HISTORY OF TEA',
+          template: `Origins
+
+• Tea was first drunk in {{31}} thousands of years ago.
+• It was originally taken as a {{32}}.
+• Early tea was made from dried {{33}}.
+
+Spread across Asia
+
+• Tea was carried to Japan by {{34}}.
+• In Japan a formal tea {{35}} developed.
+
+Arrival in Europe
+
+• Tea was first shipped to Europe by {{36}} traders.
+• Europeans paid for their tea with {{37}}.
+
+Mass production
+
+• The British set up large {{38}} in India.
+• Conditions were often hard for the {{39}}.
+• In the early 1900s the tea {{40}} was invented.`,
+          blanks: [
+            { num: 31, answers: ['China'], maxWords: 1 },
+            { num: 32, answers: ['medicine'], maxWords: 1 },
+            { num: 33, answers: ['leaves', 'leaf'], maxWords: 1 },
+            { num: 34, answers: ['monks', 'monk'], maxWords: 1 },
+            { num: 35, answers: ['ceremony'], maxWords: 1 },
+            { num: 36, answers: ['Portuguese'], maxWords: 1 },
+            { num: 37, answers: ['silver'], maxWords: 1 },
+            { num: 38, answers: ['plantations', 'plantation'], maxWords: 1 },
+            { num: 39, answers: ['workers', 'worker'], maxWords: 1 },
+            { num: 40, answers: ['bag', 'bags'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     // ─── READING ──────────────────────────────────────────────────────────────

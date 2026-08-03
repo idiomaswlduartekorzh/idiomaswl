@@ -96,8 +96,6 @@ export default function ProcesosPage() {
     setRevealed(false);
   }
 
-  const done = Object.keys(answers).length === ex.steps.length;
-
   return (
     <section className="wl-section" lang="en">
       <div className="wrap">
@@ -184,8 +182,6 @@ export default function ProcesosPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '1.25rem' }}>
             {ex.steps.map(step => {
               const ans = answers[step.n];
-              const correct = revealed && ans === step.sequencer;
-              const wrong = revealed && ans && ans !== step.sequencer;
               return (
                 <div key={step.n} className="wl-card" style={{ padding: '1.1rem' }}>
                   <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>

@@ -23,7 +23,7 @@ const VISUALS = [
       { title: 'Start versus end', variant: 0, focus: 'Region A starts and finishes ahead, while all three regions rise.', model: 'Region A remained the leading region throughout, increasing from 30% to almost 90%, whereas Region C rose from only 6% to 57%.' },
       { title: 'Crossover', variant: 1, focus: 'Metro overtakes bus in the final period.', model: 'Although bus trips were initially the most common, metro use rose steadily and surpassed bus travel by 2025.' },
       { title: 'Opposing directions', variant: 2, focus: 'Cycling grows in the North and South but declines in Central.', model: 'Cycling levels increased markedly in the North and South districts, whereas the Central figure fell gradually over the period.' },
-      { title: 'Convergence', variant: 3, focus: 'Family visits rise while the two older series fall closer together.', model: 'Family visits climbed to become the highest figure, while visits by students and retirees declined and ended at relatively similar levels.' },
+      { title: 'Narrowing gap', variant: 3, focus: 'Family visits rise while the gap with students becomes much smaller.', model: 'Family visits increased steadily, whereas visits by students declined slightly. As a result, the gap between the two groups narrowed considerably by 2022.' },
       { title: 'Reversed ranking', variant: 4, focus: 'Region A rises above Region B after starting below it.', model: 'Region A overtook Region B during the period, as the former increased consistently while the latter declined.' },
     ] satisfies GuidedExample[],
   },
@@ -58,7 +58,7 @@ const VISUALS = [
     examples: [
       { title: 'Leading country', variant: 0, focus: 'The USA records the highest use in every age group.', model: 'The USA had the highest daily social-media use across all age groups, whereas Australia consistently recorded the lowest figures.' },
       { title: 'Largest subject and fastest growth', variant: 1, focus: 'Business remains largest, but Science grows fastest.', model: 'Business attracted the most international students in every year, while Science showed the sharpest rise, more than doubling from 180 to 380 students.' },
-      { title: 'Consistent transport ranking', variant: 2, focus: 'Car travel is shortest and bus travel is longest in each city.', model: 'Travelling by car took the least time in all three cities, whereas bus journeys were consistently the longest.' },
+      { title: 'Consistent transport ranking', variant: 2, focus: 'Car travel is shortest and bus travel is longest in each city.', model: 'Travelling by car took the least time in all four cities, whereas bus journeys were consistently the longest.' },
       { title: 'A meaningful exception', variant: 3, focus: 'Guides receive the strongest ratings while transport performs worst.', model: 'Guides achieved the highest satisfaction scores, in contrast to transport, which had both the weakest positive rating and the largest poor-rating share.' },
       { title: 'Shared upward direction', variant: 4, focus: 'All four materials are recycled more over time.', model: 'Recycling rates rose for every material, although paper remained the most recycled and plastic the least recycled throughout.' },
     ] satisfies GuidedExample[],

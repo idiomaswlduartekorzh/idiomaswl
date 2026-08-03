@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 
-// CELPE-Bras — formato oficial INEP/MEC. Conteúdo ORIGINAL WeLearn no formato oficial.
+// CELPE-Bras — formato oficial INEP/MEC. Tarefa 1 usa vídeo OFICIAL do acervo público
+// da UFRGS (ufrgs.br/acervocelpebras); as perguntas foram reescritas, não copiadas do
+// caderno oficial. Tarefas 2-4 e Parte Oral são conteúdo ORIGINAL WeLearn.
 // Áudio/vídeo/imagens sob /audio/celpe-bras/set-15/ e /images/celpe-bras/set-15/ — ver checklist de mídia.
 
 const mock: MockExam = {
@@ -12,13 +14,14 @@ const mock: MockExam = {
   sections: [
     {
       part: 1, skill: 'writing', title: 'Tarefa 1 – Produção a partir de vídeo',
-      instructions: 'Assista ao vídeo (reportagem). Depois, redija o texto solicitado em português, adequado ao gênero, ao interlocutor e ao propósito indicados.',
+      instructions: 'Assista ao vídeo oficial do CELPE-BRAS (edição 2009/2). Preste atenção ao tema e às informações apresentadas. Depois, redija o texto solicitado em português.',
+      audioUrl: '/videos/celpe-bras/set-15.mp4',
       questions: [
         {
           type: 'write', id: 'celpe-bras-s15-q1', part: 1, taskNumber: 1,
-          stimulusLabel: 'Reportagem em vídeo',
-          stimulus: '[Vídeo — reportagem, ~3 min] Uma reportagem mostra o trabalho de bibliotecas móveis — ônibus e bicicletas equipados com livros — que levam a leitura a bairros distantes e zonas rurais. A repórter acompanha uma "bicicloteca" em uma comunidade, entrevista o idealizador do projeto e crianças que esperam ansiosas pela chegada dos livros, e uma professora que diz que o projeto despertou o gosto pela leitura entre alunos que antes não liam nada.',
-          text: 'Com base no vídeo, escreva um texto para o site de uma fundação cultural apresentando o projeto de bibliotecas móveis e pedindo apoio para expandi-lo. Explique como funciona, seu impacto na comunidade e por que merece ser financiado. (Mínimo: 200 palavras)',
+          stimulusLabel: 'Vídeo oficial CELPE-BRAS — Automedicação',
+          stimulus: '[Vídeo oficial CELPE-BRAS, edição 2009/2] Tema: "Automedicação". Assista com atenção para compreender as informações apresentadas antes de escrever seu texto.',
+          text: 'Com base no que você assistiu, escreva um texto sobre o tema do vídeo, no gênero e para o interlocutor que fizerem mais sentido para o assunto (por exemplo, uma carta, um e-mail, um texto informativo ou uma postagem). Explique o tema, comente as informações apresentadas e inclua sua própria opinião quando pertinente. (Mínimo: 200 palavras)',
           minWords: 200,
         },
       ],

@@ -53,6 +53,48 @@ function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
   );
 }
 
+const SOCIAL_LINKS = [
+  {
+    label: 'TikTok',
+    href: 'https://www.tiktok.com/@idiomas.welearn',
+    icon: (
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+        <path d="M16.6 5.82a4.28 4.28 0 0 1-.28-1.55h-3.16v13.3a2.6 2.6 0 1 1-1.84-2.49v-3.28a5.86 5.86 0 1 0 5 5.79V9.3a7.4 7.4 0 0 0 4.32 1.38V7.53a4.29 4.29 0 0 1-4.04-1.71Z" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/idiomas_welearn/',
+    icon: (
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+  },
+];
+
+function SocialLinks({ className }: { className?: string }) {
+  return (
+    <div className={className}>
+      {SOCIAL_LINKS.map(({ label, href, icon }) => (
+        <a
+          key={label}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`WeLearn en ${label}`}
+          className="wl-site-nav__social-link"
+        >
+          {icon}
+        </a>
+      ))}
+    </div>
+  );
+}
+
 function ThemeToggle() {
   const { resolvedTheme, toggle } = useTheme();
   const isDark = resolvedTheme === 'dark';
@@ -155,6 +197,7 @@ export default function SiteNav() {
 
         {/* CTA / User */}
         <div className="wl-site-nav__cta">
+          <SocialLinks className="wl-site-nav__social" />
           <ThemeToggle />
           {loading ? (
             <span className="wl-site-nav__loading" />
@@ -187,6 +230,7 @@ export default function SiteNav() {
               {label}
             </Link>
           ))}
+          <SocialLinks className="wl-site-nav__social wl-site-nav__social--mobile" />
           <div style={{ display: 'flex', gap: 8, padding: '1rem 0 0' }}>
             {user ? (
               <>

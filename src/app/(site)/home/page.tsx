@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import LessonTabs from './LessonTabs';
 import FAQ from './FAQ';
+import HeroAtmos from './HeroAtmos';
+import HeroPills from './HeroPills';
 import { BLOG_POSTS } from '@/data/blog';
 import {
   MotionProvider,
@@ -375,7 +377,7 @@ export default function HomePage() {
       />
       {/* HERO */}
       <section className="wlh-hero wlh-hero--v2">
-        <div className="wlh-hero__aurora" aria-hidden="true" />
+        <HeroAtmos />
         <HeroLeft>
           <HeroItem><p className="wlh-eyebrow">Academia de idiomas · Bucaramanga y online · +1000 estudiantes</p></HeroItem>
           <HeroItem>
@@ -426,17 +428,13 @@ export default function HomePage() {
         </HeroCard>
       </section>
 
-      {/* TRUST BAR — sellos de exámenes (marquee) */}
-      <section className="wlh-trustbar" aria-label="Exámenes para los que preparamos">
+      {/* IDIOMAS + EXÁMENES — navegación cinética, rastreable desde SSR */}
+      <section className="wlp-section" aria-labelledby="wlp-section-title">
         <div className="wrap">
-          <p className="wlh-trustbar__label">Preparación para los exámenes oficiales</p>
-        </div>
-        <div className="wlh-trustbar__track">
-          <div className="wlh-trustbar__row">
-            {['IELTS', 'TOEFL', 'ICFES', 'TOPIK', 'Goethe', 'DELF / DALF', 'CILS', 'CELPE-Bras', 'Cambridge B2', 'IELTS', 'TOEFL', 'ICFES', 'TOPIK', 'Goethe', 'DELF / DALF', 'CILS', 'CELPE-Bras', 'Cambridge B2'].map((e, i) => (
-              <span key={i} className="wlh-trustbar__item">{e}</span>
-            ))}
-          </div>
+          <p id="wlp-section-title" className="wlp-section__label">
+            Ocho idiomas. Preparación para exámenes oficiales.
+          </p>
+          <HeroPills />
         </div>
       </section>
 

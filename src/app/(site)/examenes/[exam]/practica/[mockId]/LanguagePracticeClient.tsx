@@ -4,6 +4,7 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { Timer, SkillTabs } from '@/components/exam-runner/primitives';
+import { resolveAudioUrl } from '@/lib/examAudio';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
 import { isFreeGoetheMock } from '@/lib/labs/exam-bridge/goethe';
@@ -28,6 +29,10 @@ import type {
 
 function isYouTube(url?: string) {
   return !!url && (url.includes('youtube.com') || url.includes('youtu.be'));
+}
+
+function isVideoFile(url?: string) {
+  return !!url && /\.(mp4|webm|mov)(\?|$)/i.test(url);
 }
 
 function formatTime(s: number) {
@@ -142,6 +147,22 @@ function MediaPlayer({ url }: { url: string }) {
     );
   }
 
+  if (isVideoFile(url)) {
+    return (
+      <div className="lang-media lang-media--video">
+        <video src={resolveAudioUrl(url)} controls className="lang-media__iframe" />
+        {url.startsWith('/videos/celpe-bras/') && (
+          <p className="lang-media__credit">
+            Vídeo oficial do CELPE-BRAS, cortesia do{' '}
+            <a href="https://www.ufrgs.br/acervocelpebras/acervo/" target="_blank" rel="noopener noreferrer">
+              acervo público da UFRGS
+            </a>.
+          </p>
+        )}
+      </div>
+    );
+  }
+
   const toggle = () => {
     const a = audioRef.current;
     if (!a) return;
@@ -160,7 +181,7 @@ function MediaPlayer({ url }: { url: string }) {
     <div className="lang-media lang-media--audio">
       <audio
         ref={audioRef}
-        src={url}
+        src={resolveAudioUrl(url)}
         onTimeUpdate={() => setCurrent(audioRef.current?.currentTime ?? 0)}
         onLoadedMetadata={() => setDuration(audioRef.current?.duration ?? 0)}
         onEnded={() => setPlaying(false)}

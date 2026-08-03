@@ -25,13 +25,14 @@ export default function Task1ApprovedMapVisual({ variant = 0 }: { variant?: numb
   const map = MAPS[variant % MAPS.length];
 
   return (
-    <img
+    <Image
       src={map.src}
       alt={map.alt}
       width={1600}
       height={1000}
-      loading="lazy"
+      sizes="(max-width: 768px) 100vw, 1080px"
       style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 6 }}
     />
   );
 }
+import Image from 'next/image';

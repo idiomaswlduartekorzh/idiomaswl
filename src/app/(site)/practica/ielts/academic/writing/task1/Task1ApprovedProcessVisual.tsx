@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { IELTSProcessDiagramVisual } from './Task1VisualLab';
 
 const PROCESS_VISUALS = [
@@ -14,11 +15,12 @@ export default function Task1ApprovedProcessVisual({ variant = 0 }: { variant?: 
 
   if (visual) {
     return (
-      <img
+      <Image
         src={visual.src}
         alt={visual.alt}
         width={2094}
         height={1074}
+        sizes="(max-width: 768px) 100vw, 1080px"
         style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 6 }}
       />
     );

@@ -184,10 +184,10 @@ const SCENARIOS: Scenario[] = [
     context: 'The line graph below shows the number of people using three forms of transport for daily commuting between 2005 and 2025.',
     observations: [
       { text: 'Car use declined overall, while cycling increased considerably.', relevant: true, explanation: 'Correct. This contrast in direction organises the complete story.' },
-      { text: 'Cycling overtook car use in 2025.', relevant: false, explanation: 'This did not happen: cycling finished above bus but remained below car.' },
+      { text: 'Cycling overtook car use in 2025.', relevant: true, explanation: 'Correct. Cycling reached 62 thousand commuters in 2025, compared with 48 thousand car users, so the crossover is a major final-period change.' },
       { text: 'Bus use changed relatively little over the period.', relevant: true, explanation: 'Correct. Relative stability provides a useful contrast with the other series.' },
       { text: 'Car use was 82,000 in 2010.', relevant: false, explanation: 'This is a single data point, not an overall trend.' },
-      { text: 'The gap between car and cycling narrowed substantially by the end.', relevant: true, explanation: 'Correct. Final convergence shows a meaningful comparative change.' },
+      { text: 'The gap between car and cycling narrowed substantially by the end.', relevant: false, explanation: 'This is true, but it repeats the more decisive crossover above. Select the crossover for the overview instead of using both observations to express the same final relationship.' },
     ],
     targetCount: 3,
   },

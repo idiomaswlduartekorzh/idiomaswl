@@ -285,14 +285,14 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
   const data = datasets[variant % datasets.length];
   const cellsBefore = data.before.map((label, i) => [label, ['#dcfce7', '#fee2e2', '#e5e7eb', '#dbeafe'][i]]);
   const cellsAfter = data.after.map((label, i) => [label, ['#fef3c7', '#dbeafe', '#e5e7eb', '#ede9fe'][i]]);
-  const Feature = ({ label, x, y, after }: { label: string; x: number; y: number; after: boolean }) => {
+  const renderFeature = (label: string, x: number, y: number, after: boolean) => {
     const lower = label.toLowerCase();
     const lines = label.match(/.{1,17}(?:\s|$)/g)?.map(line => line.trim()).slice(0, 2) ?? [label];
     const tone = after ? '#0f3d8c' : '#64748b';
     const isGreen = /park|garden|woodland|fields|pond/.test(lower);
     const isRoad = /road|path|carriageway/.test(lower);
     const isWater = /harbour|marina/.test(lower);
-    return <g>
+    return <g key={`${label}-${x}-${y}`}>
       <rect x={x} y={y} width="144" height="92" rx="12" fill={after ? '#f8fbff' : '#fff'} stroke={after ? 'rgba(15,61,140,0.35)' : 'var(--line-soft)'} />
       {isGreen ? <path d={`M${x + 17} ${y + 25} C${x + 35} ${y + 8}, ${x + 55} ${y + 15}, ${x + 68} ${y + 30} C${x + 56} ${y + 52}, ${x + 31} ${y + 55}, ${x + 17} ${y + 25}`} fill="#bbf7d0" stroke="#16a34a" strokeWidth="1.5" /> : isRoad ? <g><path d={`M${x + 15} ${y + 30} H${x + 75}`} stroke="#94a3b8" strokeWidth="14" /><path d={`M${x + 15} ${y + 30} H${x + 75}`} stroke="#fff" strokeWidth="2" strokeDasharray="7 5" /></g> : isWater ? <path d={`M${x + 14} ${y + 34} C${x + 28} ${y + 22}, ${x + 42} ${y + 46}, ${x + 56} ${y + 34} S${x + 84} ${y + 22}, ${x + 104} ${y + 34}`} fill="none" stroke="#0284c7" strokeWidth="10" /> : <g><rect x={x + 18} y={y + 18} width="58" height="37" rx="4" fill={after ? '#bfdbfe' : '#e2e8f0'} stroke={tone} strokeWidth="1.5" /><path d={`M${x + 14} ${y + 18} L${x + 47} ${y + 5} L${x + 80} ${y + 18}`} fill={after ? '#93c5fd' : '#cbd5e1'} stroke={tone} strokeWidth="1.5" /><rect x={x + 42} y={y + 39} width="10" height="16" fill="#fff" stroke={tone} /></g>}
       <SvgLines x={x + 82} y={y + 28} lines={lines} size={10} color="var(--ink-2)" weight={800} lineHeight={12} />
@@ -310,7 +310,7 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
     'south-west': [10, yOffset + 124],
     'south-east': [164, yOffset + 124],
   }[position]);
-  const MapGrid = ({ title, cells, side }: { title: string; cells: string[][]; side: 'left' | 'right' }) => {
+  const renderMapGrid = (title: string, cells: string[][], side: 'left' | 'right') => {
     const baseX = side === 'left' ? 34 : 514;
     return <g>
       <text x={baseX + 12} y="84" fontSize="16" fontWeight="900" fill="var(--ink)">{title}</text>
@@ -319,7 +319,7 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <path d={`M${baseX + 12} 260 H${baseX + 420} M${baseX + 216} 110 V412`} stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
       <path d={`M${baseX + 48} 120 V400 M${baseX + 384} 120 V400`} stroke="#e2e8f0" strokeWidth="2" strokeDasharray="3 7" />
       {variant % datasets.length === 2 && <path d={`M${baseX + 382} 110 C${baseX + 398} 140, ${baseX + 374} 170, ${baseX + 392} 205 S${baseX + 374} 270, ${baseX + 392} 305 S${baseX + 374} 370, ${baseX + 392} 412 H${baseX + 432} V110 Z`} fill="#e0f2fe" stroke="#0284c7" strokeWidth="2" />}
-      {cells.map((cell, i) => { const [x, y] = positionToDesktop(data.positions[i]); return <Feature key={cell[0]} label={cell[0]} x={baseX + x} y={98 + y} after={side === 'right'} />; })}
+      {cells.map((cell, i) => { const [x, y] = positionToDesktop(data.positions[i]); return renderFeature(cell[0], baseX + x, 98 + y, side === 'right'); })}
       <g transform={`translate(${baseX + 376} 112)`}><text x="0" y="0" fontSize="11" fontWeight="900" fill="#0f3d8c">N</text><path d="M5 7 V34" stroke="#0f3d8c" strokeWidth="2" markerEnd={`url(#arrow-task1-map-${variant})`} /></g>
     </g>;
   };
@@ -337,8 +337,8 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <rect x="16" y="16" width="948" height="58" rx="18" fill="rgba(15,61,140,0.07)" />
       <text x="40" y="48" fontSize="17" fontWeight="900" fill="var(--ink)">{data.title}</text>
       <text x="40" y="66" fontSize="10" fontWeight="800" letterSpacing="1.2" fill="var(--muted)">BEFORE / AFTER MAP · LOCATION, CHANGE AND COMPARISON</text>
-      <MapGrid title={data.beforeLabel} side="left" cells={cellsBefore} />
-      <MapGrid title={data.afterLabel} side="right" cells={cellsAfter} />
+      {renderMapGrid(data.beforeLabel, cellsBefore, 'left')}
+      {renderMapGrid(data.afterLabel, cellsAfter, 'right')}
       <path d="M 470 260 L 505 260" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-${variant})`} />
       <g transform="translate(42 454)"><rect x="0" y="0" width="14" height="14" rx="3" fill="#e2e8f0" stroke="#64748b" /><text x="22" y="11" fontSize="10" fill="var(--muted)">earlier feature</text><rect x="154" y="0" width="14" height="14" rx="3" fill="#dbeafe" stroke="#0f3d8c" /><text x="176" y="11" fontSize="10" fill="var(--muted)">later feature</text><rect x="304" y="0" width="14" height="14" rx="3" fill="#cbd5e1" stroke="#64748b" /><text x="326" y="11" fontSize="10" fill="var(--muted)">road or context</text>{variant % datasets.length === 2 && <><rect x="454" y="0" width="14" height="14" rx="3" fill="#e0f2fe" stroke="#0284c7" /><text x="476" y="11" fontSize="10" fill="var(--muted)">coastal water</text></>}</g>
       <text x="42" y="492" fontSize="10" fill="var(--muted)">Use location, direction and change language; report only features supported by the maps.</text>
@@ -353,13 +353,13 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
       <text x="32" y="108" fontSize="15" fontWeight="900" fill="var(--ink)">{data.beforeLabel}</text>
       <path d="M28 242 H332 M180 92 V392" stroke="#cbd5e1" strokeWidth="22" /><path d="M28 242 H332 M180 92 V392" stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
       {variant % datasets.length === 2 && <path d="M318 92 C330 130, 310 165, 324 205 S310 280, 324 320 S310 360, 324 392 H340 V92 Z" fill="#e0f2fe" stroke="#0284c7" strokeWidth="2" />}
-      {cellsBefore.map((cell, i) => { const [x, y] = positionToMobile(data.positions[i], 132); return <Feature key={cell[0]} label={cell[0]} x={30 + x} y={y} after={false} />; })}
+      {cellsBefore.map((cell, i) => { const [x, y] = positionToMobile(data.positions[i], 132); return renderFeature(cell[0], 30 + x, y, false); })}
       <path d="M180 416 V478" stroke="#0f3d8c" strokeWidth="3" markerEnd={`url(#arrow-task1-map-mobile-${variant})`} />
       <rect x="20" y="500" width="320" height="320" rx="15" fill="rgba(15,61,140,0.035)" stroke="var(--line-soft)" />
       <text x="32" y="526" fontSize="15" fontWeight="900" fill="var(--ink)">{data.afterLabel}</text>
       <path d="M28 660 H332 M180 510 V810" stroke="#cbd5e1" strokeWidth="22" /><path d="M28 660 H332 M180 510 V810" stroke="var(--bg)" strokeWidth="2" strokeDasharray="9 7" />
       {variant % datasets.length === 2 && <path d="M318 510 C330 548, 310 583, 324 623 S310 698, 324 738 S310 778, 324 810 H340 V510 Z" fill="#e0f2fe" stroke="#0284c7" strokeWidth="2" />}
-      {cellsAfter.map((cell, i) => { const [x, y] = positionToMobile(data.positions[i], 550); return <Feature key={cell[0]} label={cell[0]} x={30 + x} y={y} after />; })}
+      {cellsAfter.map((cell, i) => { const [x, y] = positionToMobile(data.positions[i], 550); return renderFeature(cell[0], 30 + x, y, true); })}
       <text x="24" y="852" fontSize="9" fill="var(--muted)">Compare location, direction and change. Report only supported features.</text>
     </svg>
     </div>
@@ -431,7 +431,7 @@ export function IELTSVocabularyTrendVisual({
   );
 }
 
-export const TASK1_VISUALS: Record<ChartKind, { label: string; component: (props?: any) => ReactElement }> = {
+export const TASK1_VISUALS: Record<ChartKind, { label: string; component: (props: { variant?: number }) => ReactElement }> = {
   line: { label: 'Line graph', component: IELTSLineGraphVisual },
   bar: { label: 'Bar chart', component: IELTSBarChartVisual },
   pie: { label: 'Pie charts', component: IELTSPieChartVisual },

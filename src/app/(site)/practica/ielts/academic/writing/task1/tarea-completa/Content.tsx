@@ -150,17 +150,19 @@ export default function TareaCompletaPage() {
   const completeReview = RUBRIC.every(([criterion]) => checks[criterion]);
 
   useEffect(() => {
-    if (!timerActive || timeLeft === 0) return;
-    timerRef.current = setInterval(() => setTimeLeft((value) => value - 1), 1000);
+    if (!timerActive) return;
+    timerRef.current = setInterval(() => {
+      setTimeLeft((value) => {
+        if (value <= 1) {
+          setTimerActive(false);
+          setPhase('review');
+          return 0;
+        }
+        return value - 1;
+      });
+    }, 1000);
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [timerActive, timeLeft]);
-
-  useEffect(() => {
-    if (timeLeft === 0 && timerActive) {
-      setTimerActive(false);
-      setPhase('review');
-    }
-  }, [timeLeft, timerActive]);
+  }, [timerActive]);
 
   function chooseTask(index: number) {
     setTaskIndex(index);

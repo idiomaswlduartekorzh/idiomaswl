@@ -5,9 +5,387 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 8',
   subtitle: 'The Domestication of Dogs · Vertical Farming · Psychology of Money',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
-    { part: 1, skill: 'listening', comingSoon: true, title: 'Listening — En Construcción', instructions: 'Esta sección estará disponible próximamente.', questions: [] },
+    // ─── LISTENING ────────────────────────────────────────────────────────────
+
+    {
+      part: 1,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-8.mp3',
+      title: 'Listening — Section 1: Reporting a Lost Item',
+      instructions: 'You will hear a conversation between a passenger and a lost property officer. Listen and answer Questions 1–10.',
+      transcript: `OFFICER: Good afternoon, lost property office. How can I help?
+
+PASSENGER: Hi, I think I left a bag on a train earlier today, and I'm hoping someone's handed it in.
+
+OFFICER: I'll do my best to help. Let me take some details and fill in a report. Can I start with your name?
+
+PASSENGER: Yes, it's Daniel Ashworth.
+
+OFFICER: Could you spell the surname for me?
+
+PASSENGER: Of course — A-S-H-W-O-R-T-H.
+
+OFFICER: Ashworth, thank you. And a phone number we can reach you on?
+
+PASSENGER: Yes, it's 0161 496 0175.
+
+OFFICER: Let me just repeat that — 0161 496 0175. Now, what exactly did you lose?
+
+PASSENGER: It was a suitcase — sorry, no, I mean a rucksack. I've been travelling all day and I'm a bit muddled.
+
+OFFICER: No problem at all. And what colour is the rucksack?
+
+PASSENGER: It's green — a dark green, with grey straps.
+
+OFFICER: Right. And where do you think you left it?
+
+PASSENGER: I'm fairly sure I left it on the train, up on the luggage rack, rather than down on the platform.
+
+OFFICER: That's helpful. Was there anything valuable inside?
+
+PASSENGER: Yes, unfortunately — my laptop was in the main compartment, along with some books.
+
+OFFICER: I'll note that down. Now, a few details about your journey so we can trace it. Where were you travelling from?
+
+PASSENGER: From Manchester, on the two o'clock service.
+
+OFFICER: And which day was that — today?
+
+PASSENGER: Yes, today, Friday.
+
+OFFICER: Do you remember your seat number?
+
+PASSENGER: It was seat 43, in the quiet coach.
+
+OFFICER: And roughly what would you say the contents are worth, for the report?
+
+PASSENGER: All together, probably around £400.
+
+OFFICER: Thank you. I'll circulate this description straight away, and we'll call you the moment anything matching turns up.
+
+PASSENGER: That's very kind. Is it worth me checking back tomorrow as well?
+
+OFFICER: By all means — most items are handed in within a day or two, so there's every chance we'll trace it.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Lost Property Report',
+          example: 'First name:  Daniel',
+          template: `Surname: {{1}}
+Contact number: {{2}}
+Item lost: {{3}}
+Colour: {{4}}
+Item was left on the {{5}}
+Most valuable contents: a {{6}}`,
+          blanks: [
+            { num: 1, answers: ['Ashworth', 'ashworth'], maxWords: 1 },
+            { num: 2, answers: ['0161 496 0175', '01614960175'], maxWords: 1 },
+            { num: 3, answers: ['rucksack', 'backpack'], maxWords: 1 },
+            { num: 4, answers: ['green'], maxWords: 1 },
+            { num: 5, answers: ['train'], maxWords: 1 },
+            { num: 6, answers: ['laptop'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Journey detail', 'Information'],
+          rows: [
+            ['Travelling from', { num: 7, answers: ['Manchester', 'manchester'], maxWords: 1 }],
+            ['Day of travel', { num: 8, answers: ['Friday', 'friday'], maxWords: 1 }],
+            ['Seat number', { num: 9, answers: ['43'], maxWords: 1 }],
+            ['Estimated value of contents', { num: 10, answers: ['400', '£400'], maxWords: 1 }],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-8.mp3',
+      title: 'Listening — Section 2: Community Festival Briefing',
+      instructions: 'You will hear a briefing given to volunteers at a community festival. Listen and answer Questions 11–20.',
+      transcript: `Good morning, everyone, and thank you for volunteering at this year's Riverside Community Festival. Before we open the gates, let me run through the key information.
+
+First, what's new this year. We've kept all our old favourites — the food market, the evening concert, and the popular fireworks display are all returning. But we've added two brand-new attractions: a children's parade through the grounds at midday, and a series of craft workshops in the main tent.
+
+Now, some practical details you'll need in order to answer visitors' questions. As always, the festival is being held in Victoria Park, right in the centre of town.
+
+This year the event runs for three days, from Friday afternoon through to Sunday evening, so we've got a long weekend ahead of us. It's shaping up to be our biggest festival yet, with well over two hundred stalls already booked.
+
+For those of you volunteering, please collect your festival T-shirt from the desk behind me before you start your shift — it helps visitors to identify you.
+
+Let me remind you of the layout. The main stage is set up beside the lake, where there's plenty of room for a crowd.
+
+Parking is always a common question. Visitors can leave their cars at the sports centre just across the road, as there's no parking inside the park itself.
+
+Now, we are expecting some rain on Saturday. If the weather turns bad, the outdoor performances will be moved into the marquee near the west gate.
+
+A very important point: if you come across a child who has become separated from their family, please bring them straight to the information tent, where our trained staff will look after them.
+
+And finally, a reminder of why we're all here. This year, all the money we raise will go to the local hospital, to fund new equipment for the children's ward.
+
+Right — let's have a wonderful festival. The gates open in ten minutes.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO attractions are new at this year\'s festival?',
+          options: [
+            { letter: 'A', text: 'the food market' },
+            { letter: 'B', text: 'the evening concert' },
+            { letter: 'C', text: 'the children\'s parade' },
+            { letter: 'D', text: 'the craft workshops' },
+            { letter: 'E', text: 'the fireworks display' },
+          ],
+          selectCount: 2,
+          answers: ['C', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Riverside Community Festival',
+          template: `• Location: {{13}}, in the town centre.
+• The festival runs for {{14}}.
+• Volunteers should collect their {{15}} before their shift.
+• The main stage is beside the {{16}}.
+• Visitors can park at the {{17}} across the road.
+• If it rains, performances move to the {{18}}.
+• Lost children should be taken to the {{19}}.
+• Money raised goes to the local {{20}}.`,
+          blanks: [
+            { num: 13, answers: ['Victoria Park', 'park'], maxWords: 2 },
+            { num: 14, answers: ['three days', '3 days'], maxWords: 2 },
+            { num: 15, answers: ['T-shirt', 't-shirt', 'tshirt'], maxWords: 1 },
+            { num: 16, answers: ['lake'], maxWords: 1 },
+            { num: 17, answers: ['sports centre', 'sports center'], maxWords: 2 },
+            { num: 18, answers: ['marquee'], maxWords: 1 },
+            { num: 19, answers: ['information tent', 'tent'], maxWords: 2 },
+            { num: 20, answers: ['hospital'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-8.mp3',
+      title: 'Listening — Section 3: Business Plan Tutorial',
+      instructions: 'You will hear a student discussing a business plan with his tutor. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Come in, Sam. I've read the draft of your business plan — a mobile bicycle-repair service. Let's talk it through.
+
+SAM: Thanks. I'm quite excited about it.
+
+TUTOR: So why this idea in particular?
+
+SAM: I've repaired bikes as a hobby for years, but really it came from a gap I noticed — there are lots of cyclists here but hardly any repair shops, and nobody wants to carry a broken bike across town.
+
+TUTOR: A sensible start. Now, your market research. You surveyed thirty people, but they were all from your cycling club. What's the problem there?
+
+SAM: I suppose they're already keen cyclists, so they're not really typical customers.
+
+TUTOR: Exactly — your sample is biased. Next, pricing. You planned to charge less than the existing shops. Is that wise?
+
+SAM: I thought a low price would attract customers, but it might not cover my costs. Maybe I should charge the same as competitors and compete on convenience instead.
+
+TUTOR: I agree — convenience is your real selling point. And don't ignore the online retailers selling cheap spare parts. How could you compete?
+
+SAM: I could offer something they can't — visiting the customer at home.
+
+TUTOR: Good. Last thing — the biggest risk. What worries you most?
+
+SAM: Honestly, cash flow. Early on I'll have spent money on tools and a van, but I won't have many customers yet.
+
+TUTOR: A realistic fear. Now, the document itself. It opens too slowly — add a short summary at the very start that captures the whole idea.
+
+SAM: An executive summary, yes.
+
+TUTOR: Second, your finances are thin. I want a monthly cash-flow forecast for the first year.
+
+SAM: I'll build one.
+
+TUTOR: Third, you describe the product but not the buyers. Add a clear description of your target customers.
+
+SAM: Cyclists who commute, mostly.
+
+TUTOR: Put that in. And there's nothing on how people will hear about you, so include a section on marketing. One more practical thing you've forgotten — you must arrange insurance before taking on any paying work.
+
+SAM: I hadn't thought of that. I'll sort it out.
+
+TUTOR: Do all that and resubmit next week.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'Sam chose the business idea mainly because',
+          options: [
+            'he has always wanted to run a business',
+            'he noticed a gap in the local market',
+            'a friend suggested it to him',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'The tutor thinks Sam\'s market research is weak because',
+          options: [
+            'too few people were surveyed',
+            'the questions were badly written',
+            'the people he surveyed were not typical customers',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'Regarding pricing, Sam finally decides to',
+          options: [
+            'charge less than his competitors',
+            'charge the same as his competitors',
+            'offer a free first repair',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'The tutor advises Sam to respond to online competitors by',
+          options: [
+            'offering a service they cannot — visiting customers at home',
+            'selling spare parts more cheaply than them',
+            'opening a physical shop',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'Sam says the biggest risk to the business is',
+          options: [
+            'competition from established repair shops',
+            'his own lack of technical skill',
+            'poor cash flow in the early months',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `The business plan still needs:
+• a short {{26}} at the very beginning.
+• a monthly cash-flow {{27}} for the first year.
+• a description of the target {{28}}.
+• a section on {{29}}.
+• Sam must also arrange {{30}} before starting.`,
+          blanks: [
+            { num: 26, answers: ['summary'], maxWords: 1 },
+            { num: 27, answers: ['forecast'], maxWords: 1 },
+            { num: 28, answers: ['customers', 'customer'], maxWords: 1 },
+            { num: 29, answers: ['marketing'], maxWords: 1 },
+            { num: 30, answers: ['insurance'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-8.mp3',
+      title: 'Listening — Section 4: The History of Clocks',
+      instructions: 'You will hear a lecture about the history of clocks. Listen and answer Questions 31–40.',
+      transcript: `Good afternoon. Today we'll trace the history of clocks — humanity's long effort to measure the passing of time. It's a story that stretches from simple shadows cast on the ground all the way to the steady vibrations of atoms.
+
+The earliest timekeeping device was the sundial, used by ancient civilisations thousands of years ago.
+
+A sundial works by casting a shadow that moves as the day progresses. Its obvious weakness, however, was that it depended entirely on the position of the sun, so it was useless at night or in cloudy weather.
+
+To overcome this, other cultures developed the water clock, which measured time by the steady dripping of liquid from one container to another. Water clocks were used by the ancient Egyptians, among others, and worked in darkness as well as in daylight.
+
+The next great step came in medieval Europe. The first mechanical clocks appeared in the great monasteries, where monks needed to know the correct hours for prayer.
+
+These early machines were very different from clocks today. Remarkably, many had no hands at all; instead, they simply struck a bell to mark the hours.
+
+A revolution in accuracy arrived in the seventeenth century. In 1656 the Dutch scientist Huygens built the first pendulum clock.
+
+The swinging pendulum kept far steadier time than anything before it, making clocks vastly more accurate — losing only seconds a day rather than minutes.
+
+The next challenge was to make clocks portable. This became possible with the invention of the coiled spring, which could power a clock without heavy weights, leading eventually to the pocket watch.
+
+Accurate timekeeping also transformed navigation. Once reliable clocks could be carried on ships, sailors could finally calculate their longitude — their east–west position — something that had defeated navigators for centuries.
+
+Finally, the modern age. Most clocks and watches today keep time using tiny vibrating crystals of quartz, which are astonishingly precise and cheap to produce.
+
+Next week, we'll look at how atomic clocks now define the very second itself.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'THE HISTORY OF CLOCKS',
+          template: `Early timekeeping
+
+• The earliest device was the {{31}}.
+• It relied on the position of the {{32}} and failed at night.
+• The water clock was used by the ancient {{33}}.
+
+Mechanical clocks
+
+• The first mechanical clocks appeared in European {{34}}.
+• Many early clocks had no {{35}} and only struck a bell.
+
+Greater accuracy
+
+• In 1656 {{36}} built the first pendulum clock.
+• The pendulum made clocks far more {{37}}.
+• The coiled {{38}} allowed clocks to become portable.
+
+Wider effects
+
+• Reliable clocks let sailors calculate their {{39}} at sea.
+• Modern clocks keep time using crystals of {{40}}.`,
+          blanks: [
+            { num: 31, answers: ['sundial'], maxWords: 1 },
+            { num: 32, answers: ['sun'], maxWords: 1 },
+            { num: 33, answers: ['Egyptians', 'egyptians', 'Egyptian'], maxWords: 1 },
+            { num: 34, answers: ['monasteries', 'monastery'], maxWords: 1 },
+            { num: 35, answers: ['hands', 'hand'], maxWords: 1 },
+            { num: 36, answers: ['Huygens', 'huygens'], maxWords: 1 },
+            { num: 37, answers: ['accurate'], maxWords: 1 },
+            { num: 38, answers: ['spring'], maxWords: 1 },
+            { num: 39, answers: ['longitude'], maxWords: 1 },
+            { num: 40, answers: ['quartz'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
 
     {
       part: 5, skill: 'reading',

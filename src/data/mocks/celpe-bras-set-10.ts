@@ -1,6 +1,8 @@
 import type { MockExam } from './types';
 
-// CELPE-Bras — formato oficial INEP/MEC. Conteúdo ORIGINAL WeLearn no formato oficial.
+// CELPE-Bras — formato oficial INEP/MEC. Tarefa 1 usa vídeo OFICIAL do acervo público
+// da UFRGS (ufrgs.br/acervocelpebras); as perguntas foram reescritas, não copiadas do
+// caderno oficial. Tarefas 2-4 e Parte Oral são conteúdo ORIGINAL WeLearn.
 // Áudio/vídeo/imagens sob /audio/celpe-bras/set-10/ e /images/celpe-bras/set-10/ — ver checklist de mídia.
 
 const mock: MockExam = {
@@ -12,13 +14,14 @@ const mock: MockExam = {
   sections: [
     {
       part: 1, skill: 'writing', title: 'Tarefa 1 – Produção a partir de vídeo',
-      instructions: 'Assista ao vídeo (reportagem). Depois, redija o texto solicitado em português, adequado ao gênero, ao interlocutor e ao propósito indicados.',
+      instructions: 'Assista ao vídeo oficial do CELPE-BRAS (edição 2006/2). Preste atenção ao tema e às informações apresentadas. Depois, redija o texto solicitado em português.',
+      audioUrl: '/videos/celpe-bras/set-10.mp4',
       questions: [
         {
           type: 'write', id: 'celpe-bras-s10-q1', part: 1, taskNumber: 1,
-          stimulusLabel: 'Reportagem em vídeo',
-          stimulus: '[Vídeo — reportagem, ~3 min] Uma reportagem mostra iniciativas de inclusão de pessoas com deficiência no mercado de trabalho. A repórter visita empresas que adaptaram seus espaços e processos, entrevista funcionários com deficiência que falam sobre autonomia e realização profissional, e uma consultora que explica que a inclusão traz benefícios para todos e não é apenas uma obrigação legal. Um dos entrevistados afirma que o maior obstáculo não é a deficiência, mas o preconceito.',
-          text: 'Com base no vídeo, escreva um texto para o mural interno de uma empresa incentivando a inclusão de pessoas com deficiência no ambiente de trabalho. Explique a importância dessa inclusão, derrube preconceitos e sugira atitudes que os colegas podem adotar. (Mínimo: 200 palavras)',
+          stimulusLabel: 'Vídeo oficial CELPE-BRAS — Rio São Francisco',
+          stimulus: '[Vídeo oficial CELPE-BRAS, edição 2006/2] Tema: "Rio São Francisco". Assista com atenção para compreender as informações apresentadas antes de escrever seu texto.',
+          text: 'Com base no que você assistiu, escreva um texto sobre o tema do vídeo, no gênero e para o interlocutor que fizerem mais sentido para o assunto (por exemplo, uma carta, um e-mail, um texto informativo ou uma postagem). Explique o tema, comente as informações apresentadas e inclua sua própria opinião quando pertinente. (Mínimo: 200 palavras)',
           minWords: 200,
         },
       ],

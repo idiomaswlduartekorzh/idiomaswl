@@ -311,12 +311,16 @@ export default function LeccionClient() {
         {/* Video de fondo */}
         <video
           className="lec-hero__video"
-          src="/images/video-preview.mov"
           autoPlay
           muted
           loop
           playsInline
-        />
+          preload="none"
+          poster="/images/leccion-hero-poster.webp"
+        >
+          <source src="/images/leccion-hero.webm" type="video/webm" />
+          <source src="/images/leccion-hero.mp4" type="video/mp4" />
+        </video>
         {/* Overlay oscuro sobre el video */}
         <div className="lec-hero__overlay" />
 

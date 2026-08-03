@@ -5,16 +5,357 @@ const mock: MockExam = {
   examSlug: 'ielts',
   title: 'IELTS Academic Set 13',
   subtitle: 'Human Migration · Quantum Computing · The Placebo Effect',
-  timeMinutes: 120,
+  timeMinutes: 164,
   sections: [
+
+    // ─── LISTENING ────────────────────────────────────────────────────────────
 
     {
       part: 1,
       skill: 'listening',
-      comingSoon: true,
-      title: 'Listening — En Construcción',
-      instructions: 'Esta sección estará disponible próximamente con audio real.',
-      questions: [],
+      audioUrl: '/audio/ielts/ielts-listening-set-13.mp3',
+      title: 'Listening — Section 1: Signing up for a gym',
+      instructions: 'You will hear a conversation between a gym receptionist and a new customer. Listen and answer Questions 1–10.',
+      transcript: `STAFF: Good afternoon, and welcome to Riverside Gym. How can I help you today?
+
+CUSTOMER: Hello. I'd like to sign up for a membership, please.
+
+STAFF: Wonderful. Let me take a few details. Can I start with your name?
+
+CUSTOMER: Yes, it's Diana Dalton.
+
+STAFF: Could you spell your surname for me?
+
+CUSTOMER: Of course — it's D-A-L-T-O-N.
+
+STAFF: Thank you, Diana. And the best contact number for you?
+
+CUSTOMER: My mobile is 077 3352 9041.
+
+STAFF: Let me read that back to be sure — 077 3352 9041. Lovely. And your home address?
+
+CUSTOMER: I live at 14 Hazelwood Street.
+
+STAFF: Great. Now, it helps us if we know your main fitness goal. What are you hoping to achieve?
+
+CUSTOMER: Well, at first I thought about weight loss, but what I really want is to improve my stamina.
+
+STAFF: Perfect — we can build a programme around that. And how did you hear about us?
+
+CUSTOMER: A friend recommended you, actually.
+
+STAFF: That's always nice to hear. Is there anything our trainers should know — any injuries, for example?
+
+CUSTOMER: Just my knee. I hurt it last year, so nothing too high-impact.
+
+STAFF: Noted — we'll keep your sessions gentle on the knee. And when would you like to begin?
+
+CUSTOMER: Could I start on Monday?
+
+STAFF: Monday's fine. Now let me tell you about our two membership plans. The Standard plan runs on a 12-month contract at £29 a month, and it includes free use of the sauna.
+
+CUSTOMER: And the other one?
+
+STAFF: The Premium plan is more flexible — it's a shorter, 6-month contract, but it costs £45 a month. With Premium you also get a free towel service and two guest passes every month.
+
+CUSTOMER: I think the Premium plan sounds better for me.
+
+STAFF: A great choice. I'll get the paperwork ready for you now.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l1-form',
+          part: 1,
+          qRange: [1, 6],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          title: 'Riverside Gym — Membership Application',
+          example: 'Enquiry:  gym membership',
+          template: `Name: Diana {{1}}
+Telephone (mobile): 077 3352 9041
+Home address: 14 {{2}} Street
+
+Main fitness goal: to improve {{3}}
+Heard about gym from: a {{4}}
+Existing injury: problem with one {{5}}
+Preferred start day: {{6}}`,
+          blanks: [
+            { num: 1, answers: ['Dalton', 'dalton'], maxWords: 1 },
+            { num: 2, answers: ['Hazelwood', 'hazelwood'], maxWords: 1 },
+            { num: 3, answers: ['stamina'], maxWords: 1 },
+            { num: 4, answers: ['friend'], maxWords: 1 },
+            { num: 5, answers: ['knee'], maxWords: 1 },
+            { num: 6, answers: ['Monday', 'monday'], maxWords: 1 },
+          ],
+        },
+        {
+          type: 'tablegroup',
+          id: 'l1-table',
+          part: 1,
+          qRange: [7, 10],
+          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          headers: ['Plan', 'Contract length (months)', 'Monthly fee', 'Extra included'],
+          rows: [
+            [
+              'Standard',
+              { num: 7, answers: ['12'], maxWords: 1 },
+              '£29',
+              { num: 8, answers: ['sauna'], maxWords: 1 },
+            ],
+            [
+              'Premium',
+              '6',
+              { num: 9, answers: ['45', '£45'], maxWords: 1 },
+              { num: 10, answers: ['towel'], maxWords: 1 },
+            ],
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 2,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-13.mp3',
+      title: 'Listening — Section 2: Airport orientation announcement',
+      instructions: 'You will hear an orientation announcement for passengers at an airport. Listen and answer Questions 11–20.',
+      transcript: `Good morning, passengers, and welcome to Kingsford International Airport. My name is Rachel, and I'm one of the terminal's passenger-service officers. Before you continue to the departure gates, I'd like to take a few minutes to explain the facilities and procedures here in the new Terminal Three.
+
+Let me start with what is available free of charge. Throughout the terminal you'll find high-speed wireless internet, which is completely free and needs no password. We also run a free shuttle bus between the terminal and the long-stay car park, leaving every ten minutes from Exit B. Please note that our luggage trolleys now require a two-pound refundable deposit, the shower rooms in the lounge cost eight pounds, and left-luggage storage is charged by the hour — so those three are not free.
+
+Now, some important information about check-in. The check-in desks for international flights are on level two, and they open exactly three hours before departure. If you're travelling with hand luggage only, you can skip the desks entirely and go straight to security. At security, remember to take any liquids out of your bag — each container must hold no more than 100 millilitres, and all of them must fit inside a single clear plastic bag.
+
+Once you're through, you'll enter the departure lounge. Boarding information is shown on the large screens, but please don't rely on hearing your name, as we no longer call passengers individually. Your gate number appears roughly 40 minutes before boarding. If you have time, the duty-free shops are on your left, and a quiet rest area with reclining seats is on the upper floor, right next to the pharmacy.
+
+Finally, a word about connections. If you're transferring to another flight, follow the purple signs to the transfer desk, where staff will reprint your boarding pass. Passengers with less than one hour between flights should speak to a member of staff at once. Thank you, and enjoy your journey.`,
+      questions: [
+        {
+          type: 'multiselect',
+          id: 'l2-multi',
+          part: 2,
+          qRange: [11, 12],
+          text: 'Which TWO services does the announcement say are free of charge?',
+          options: [
+            { letter: 'A', text: 'the wireless internet' },
+            { letter: 'B', text: 'the luggage trolleys' },
+            { letter: 'C', text: 'the shower rooms' },
+            { letter: 'D', text: 'the shuttle bus' },
+            { letter: 'E', text: 'the left-luggage storage' },
+          ],
+          selectCount: 2,
+          answers: ['A', 'D'],
+        },
+        {
+          type: 'formgroup',
+          id: 'l2-form',
+          part: 2,
+          qRange: [13, 20],
+          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Terminal Three — passenger information',
+          template: `Check-in and security
+
+• Check-in desks for international flights are on level {{13}}.
+• The desks open {{14}} before departure.
+• Passengers with hand luggage only can go straight to {{15}}.
+• Each liquid container must hold no more than {{16}}.
+• All liquids must fit inside a single clear {{17}} bag.
+
+In the departure lounge
+
+• Your gate number appears about {{18}} before boarding.
+• A quiet rest area is on the upper floor, next to the {{19}}.
+• Transferring passengers should follow the {{20}} signs to the transfer desk.`,
+          blanks: [
+            { num: 13, answers: ['two', '2'], maxWords: 1 },
+            { num: 14, answers: ['three hours', '3 hours'], maxWords: 2 },
+            { num: 15, answers: ['security'], maxWords: 1 },
+            { num: 16, answers: ['100 millilitres', '100 ml', '100ml'], maxWords: 2 },
+            { num: 17, answers: ['plastic'], maxWords: 1 },
+            { num: 18, answers: ['40 minutes', 'forty minutes'], maxWords: 2 },
+            { num: 19, answers: ['pharmacy'], maxWords: 1 },
+            { num: 20, answers: ['purple'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 3,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-13.mp3',
+      title: 'Listening — Section 3: Tourism dissertation discussion',
+      instructions: 'You will hear a tutor and a student discussing the student\'s tourism dissertation. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Hi Maya, come in. So, let's talk about your tourism dissertation. Remind me of your main focus.
+
+MAYA: Well, originally I wanted to look at the economic impact of tourism, but after doing the reading I decided to focus on how local residents feel about tourism in their town — their attitudes, really.
+
+TUTOR: Good — residents' attitudes is a rich area. And why did you choose Whitby as your case study?
+
+MAYA: Partly because it's beautiful, but mainly because visitor numbers there have grown so fast in the last five years. That rapid growth makes the tensions much easier to see.
+
+TUTOR: That makes sense. So how are you collecting your data?
+
+MAYA: I did think about interviews, but in the end I'm mainly using a questionnaire, because I wanted responses from a large number of people.
+
+TUTOR: A survey is sensible for that. Did you run into any difficulties?
+
+MAYA: The biggest problem was the response rate — a lot of people simply didn't return the form. In the end I only got about a hundred and twenty completed questionnaires.
+
+TUTOR: That's still a workable sample. What did the results show?
+
+MAYA: The clearest finding was that attitudes depend a lot on age. Younger residents were far more positive, while older ones worried about noise and crowding.
+
+TUTOR: Interesting. Now, one suggestion — have you thought about comparing your town with a second location?
+
+MAYA: I hadn't, but that's a good idea.
+
+TUTOR: A comparison would really strengthen the analysis. I'd also make sure your literature review covers the idea of 'carrying capacity' — it's central to this debate. And when you write up, keep your methodology chapter detailed, so the whole study could be repeated by someone else.
+
+MAYA: Right. And should I include the raw data?
+
+TUTOR: Put the full questionnaire in an appendix, and just summarise the key figures in the main text. Oh, and do get the whole thing proofread before you submit — small errors cost marks.
+
+MAYA: Great, that's really helpful. Thank you.`,
+      questions: [
+        {
+          type: 'mcq',
+          id: 'l3q21',
+          part: 3,
+          text: 'The main focus of Maya\'s dissertation is',
+          options: [
+            'the economic impact of tourism',
+            'the environmental impact of tourism',
+            'residents\' attitudes to tourism',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q22',
+          part: 3,
+          text: 'Maya chose Whitby as her case study mainly because',
+          options: [
+            'it is a very beautiful place',
+            'its visitor numbers have grown rapidly',
+            'it is easy for her to travel to',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'To collect her data, Maya is mainly using',
+          options: [
+            'face-to-face interviews',
+            'a questionnaire',
+            'official statistics',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'The main difficulty Maya had was',
+          options: [
+            'the low response rate',
+            'the cost of the survey',
+            'finding a suitable case study',
+          ],
+          answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q25',
+          part: 3,
+          text: 'The tutor suggests that Maya should',
+          options: [
+            'reduce the size of her sample',
+            'compare her town with a second location',
+            'change her research topic',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'formgroup',
+          id: 'l3-form',
+          part: 3,
+          qRange: [26, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          template: `• The literature review should cover the idea of {{26}} capacity.
+• The methodology chapter must be detailed enough for the study to be {{27}}.
+• The full questionnaire should be placed in an {{28}}.
+• Only the key {{29}} should be summarised in the main text.
+• Maya should get the dissertation {{30}} before submitting it.`,
+          blanks: [
+            { num: 26, answers: ['carrying'], maxWords: 1 },
+            { num: 27, answers: ['repeated'], maxWords: 1 },
+            { num: 28, answers: ['appendix'], maxWords: 1 },
+            { num: 29, answers: ['figures', 'figure'], maxWords: 1 },
+            { num: 30, answers: ['proofread'], maxWords: 1 },
+          ],
+        },
+      ],
+    },
+
+    {
+      part: 4,
+      skill: 'listening',
+      audioUrl: '/audio/ielts/ielts-listening-set-13.mp3',
+      title: 'Listening — Section 4: Antarctic research',
+      instructions: 'You will hear a lecture about scientific research in Antarctica. Listen and answer Questions 31–40.',
+      transcript: `Good morning. Today's lecture is about scientific research in Antarctica, the coldest, windiest and driest continent on Earth. Although it has no permanent human population, at any one time during the summer season around 5,000 scientists and support staff live and work there.
+
+Let me begin with why Antarctica matters to science. First, it is the finest place on the planet to study the history of our climate. Deep in the ice sheet, layers of compressed snow have trapped tiny bubbles of ancient air. By drilling out long cylinders of ice, called cores, researchers can measure the make-up of the atmosphere going back almost a million years. This makes the ice a unique climate archive.
+
+Antarctica is also central to studying the oceans. The cold, dense water that forms around the continent sinks and drives the global system of ocean currents, a process that helps to regulate temperatures worldwide. And the surrounding Southern Ocean is extraordinarily rich in a small, shrimp-like creature called krill, which sits at the very base of the food chain.
+
+The continent is important for space science too. The thin, dry, stable air makes it an excellent site for telescopes, and the deep ice is even used to detect particles arriving from distant galaxies. Meteorites are also far easier to find here, because dark rocks stand out so clearly against the white surface.
+
+Of course, working in Antarctica is difficult. The extreme cold is an obvious hazard, but the biggest practical problem for researchers is often the isolation, especially through the long, dark winter. Supplies must arrive before the sea freezes, and once winter begins, no aircraft can land.
+
+Finally, a word about protection. Since 1959, the continent has been governed by an international treaty that sets the whole area aside for peaceful, scientific use. Scientists today are particularly worried about the stability of the ice, because its melting would raise global sea levels dramatically. Continued monitoring, therefore, remains absolutely essential.`,
+      questions: [
+        {
+          type: 'formgroup',
+          id: 'l4-form',
+          part: 4,
+          qRange: [31, 40],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'SCIENTIFIC RESEARCH IN ANTARCTICA',
+          template: `General facts
+
+• Antarctica has no permanent population.
+• In summer, about 5,000 {{31}} and support staff work there.
+
+Studying the climate and oceans
+
+• Ancient bubbles of {{32}} are trapped in the ice.
+• Cylinders of ice drilled out by researchers are called {{33}}.
+• The ice works as a unique climate {{34}}.
+• Cold, dense water drives the global system of ocean {{35}}.
+• The Southern Ocean is rich in {{36}}, at the base of the food chain.
+
+Space science and challenges
+
+• The stable air makes Antarctica a good site for {{37}}.
+• {{38}} are easy to find because they stand out against the ice.
+• The biggest practical problem for researchers is the {{39}}.
+• Melting ice would raise global sea {{40}}.`,
+          blanks: [
+            { num: 31, answers: ['scientists', 'scientist'], maxWords: 1 },
+            { num: 32, answers: ['air'], maxWords: 1 },
+            { num: 33, answers: ['cores', 'core'], maxWords: 1 },
+            { num: 34, answers: ['archive'], maxWords: 1 },
+            { num: 35, answers: ['currents', 'current'], maxWords: 1 },
+            { num: 36, answers: ['krill'], maxWords: 1 },
+            { num: 37, answers: ['telescopes', 'telescope'], maxWords: 1 },
+            { num: 38, answers: ['meteorites', 'meteorite'], maxWords: 1 },
+            { num: 39, answers: ['isolation'], maxWords: 1 },
+            { num: 40, answers: ['levels', 'level'], maxWords: 1 },
+          ],
+        },
+      ],
     },
 
     {
