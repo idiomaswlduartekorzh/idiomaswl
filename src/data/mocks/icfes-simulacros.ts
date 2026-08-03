@@ -30,6 +30,8 @@ export interface Simulacro {
   source: string;
   timeMinutes: number;
   totalQuestions: number;
+  /** Current seven-part taxonomy, explicit because published samples can omit parts. */
+  partRanges: { part: 1 | 2 | 3 | 4 | 5 | 6 | 7; from: number; to: number }[];
   passages: SimulacroPassage[];
   questions: SimulacroQuestion[];
 }
@@ -45,6 +47,11 @@ const exam2023: Simulacro = {
   source: 'ICFES, 2023. Cuadernillo 1, Grado 11.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 3, from: 6, to: 8 },
+    { part: 5, from: 9, to: 14 }, { part: 6, from: 15, to: 19 },
+    { part: 7, from: 20, to: 25 },
+  ],
 
   passages: [
     {
@@ -194,6 +201,11 @@ const exam2022: Simulacro = {
   source: 'ICFES, 2022. Cuadernillo 1, Grado 11.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 3, from: 6, to: 8 },
+    { part: 5, from: 9, to: 14 }, { part: 6, from: 15, to: 19 },
+    { part: 7, from: 20, to: 25 },
+  ],
 
   passages: [
     {
@@ -335,6 +347,11 @@ const exam2019ex1: Simulacro = {
   source: 'ICFES, 2018–2019. Cuadernillo de preguntas Saber 11°. Examen 1.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 6 },
+    { part: 3, from: 7, to: 8 }, { part: 4, from: 9, to: 16 },
+    { part: 5, from: 17, to: 23 }, { part: 6, from: 24, to: 25 },
+  ],
 
   passages: [
     {
@@ -484,6 +501,11 @@ const exam2021ex1: Simulacro = {
   source: 'ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 1.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 6 },
+    { part: 3, from: 7, to: 8 }, { part: 4, from: 9, to: 16 },
+    { part: 5, from: 17, to: 23 }, { part: 6, from: 24, to: 25 },
+  ],
 
   passages: [
     {
@@ -629,6 +651,12 @@ const exam2021ex2: Simulacro = {
   source: 'ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 2.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 3 }, { part: 2, from: 4, to: 6 },
+    { part: 3, from: 7, to: 9 }, { part: 4, from: 10, to: 14 },
+    { part: 5, from: 15, to: 19 }, { part: 6, from: 20, to: 21 },
+    { part: 7, from: 22, to: 25 },
+  ],
 
   passages: [
     {
@@ -772,6 +800,12 @@ const exam2016: Simulacro = {
   source: 'ICFES, 2016. Cuadernillo de prueba Saber 11°, publicación de preguntas Inglés.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 2, from: 1, to: 3 }, { part: 1, from: 4, to: 6 },
+    { part: 3, from: 7, to: 9 }, { part: 4, from: 10, to: 14 },
+    { part: 5, from: 15, to: 19 }, { part: 6, from: 20, to: 21 },
+    { part: 7, from: 22, to: 25 },
+  ],
 
   passages: [
     {
@@ -915,6 +949,12 @@ const exam2012: Simulacro = {
   source: 'ICFES, 2012. Cuadernillo de pruebas Saber 11°, prueba de Inglés.',
   timeMinutes: 75,
   totalQuestions: 45,
+  partRanges: [
+    { part: 2, from: 1, to: 5 }, { part: 1, from: 6, to: 10 },
+    { part: 3, from: 11, to: 15 }, { part: 4, from: 16, to: 23 },
+    { part: 5, from: 24, to: 30 }, { part: 6, from: 31, to: 35 },
+    { part: 7, from: 36, to: 45 },
+  ],
 
   passages: [
     { id: 'p12-n1', title: 'Aviso 1', text: 'All students must show their ID card to enter the building.' },
@@ -1126,6 +1166,10 @@ const exam2022g10: Simulacro = {
   source: 'ICFES, 2022. Cuadernillo 1 Inglés, Saber 10.°',
   timeMinutes: 60,
   totalQuestions: 22,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 3, from: 6, to: 10 },
+    { part: 4, from: 11, to: 16 }, { part: 5, from: 17, to: 22 },
+  ],
 
   passages: [
     {
@@ -1248,6 +1292,10 @@ const exam2022g9: Simulacro = {
   source: 'ICFES, 2022. Cuadernillo 1 Inglés, Saber 9.°',
   timeMinutes: 60,
   totalQuestions: 22,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 10 },
+    { part: 3, from: 11, to: 15 }, { part: 4, from: 16, to: 22 },
+  ],
 
   passages: [
     { id: 'p22g9-n6', title: 'Aviso', text: 'Children under 8 must be accompanied by an adult at all times.' },
@@ -1362,6 +1410,10 @@ const examTyT: Simulacro = {
   source: 'ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 10 },
+    { part: 5, from: 11, to: 16 }, { part: 7, from: 17, to: 25 },
+  ],
 
   passages: [
     {
@@ -1487,4 +1539,10 @@ export const SIMULACROS: Simulacro[] = [
 
 export function getSimulacro(id: string): Simulacro | undefined {
   return SIMULACROS.find(s => s.id === id);
+}
+
+export function getSimulacroQuestionPart(simulacro: Simulacro, questionNumber: number): 1 | 2 | 3 | 4 | 5 | 6 | 7 {
+  const range = simulacro.partRanges.find(({ from, to }) => questionNumber >= from && questionNumber <= to);
+  if (!range) throw new Error(`Pregunta ${questionNumber} sin parte oficial explícita en ${simulacro.id}`);
+  return range.part;
 }

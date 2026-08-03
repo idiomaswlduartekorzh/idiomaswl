@@ -129,7 +129,7 @@ function ToolCard({
   );
 }
 
-export default function IcfesHubClient() {
+export default function IcfesHubClient({ embedded = false }: { embedded?: boolean }) {
   const [activeTool, setActiveTool] = useState<ActiveTool>('hub');
 
   if (activeTool === 'quick') {
@@ -165,27 +165,35 @@ export default function IcfesHubClient() {
   return (
     <section className="wl-section">
       <div className="wrap" style={{ maxWidth: 980 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
-          <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
-          <span>/</span>
-          <span style={{ color: 'var(--ink)' }}>ICFES Saber 11</span>
-        </div>
+        {!embedded && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
+            <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
+            <span>/</span>
+            <span style={{ color: 'var(--ink)' }}>ICFES Saber 11</span>
+          </div>
+        )}
 
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
           <div style={{ maxWidth: 680 }}>
             <p className="eyebrow" style={{ marginBottom: '0.45rem' }}>
               <span className="ink-line" />Saber 11 — Componente de Inglés
             </p>
-            <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.55rem)', letterSpacing: '-0.03em', margin: '0 0 0.65rem', color: 'var(--ink)' }}>
-              Elige cómo entrenar para el ICFES
-            </h1>
+            {embedded ? (
+              <h2 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.55rem)', letterSpacing: '-0.03em', margin: '0 0 0.65rem', color: 'var(--ink)' }}>
+                Refuerzos y rutas adaptativas
+              </h2>
+            ) : (
+              <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.55rem)', letterSpacing: '-0.03em', margin: '0 0 0.65rem', color: 'var(--ink)' }}>
+                Elige cómo entrenar para el ICFES
+              </h1>
+            )}
             <p style={{ color: 'var(--muted)', fontSize: '1rem', lineHeight: 1.65, margin: 0 }}>
               Practica con una sesión rápida, una ruta inteligente o módulos enfocados en sinónimos, inferencia, gramática, conectores y cloze.
             </p>
           </div>
           <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', padding: '0.42rem 0.72rem', borderRadius: 999, background: 'rgba(220,38,38,0.08)', color: ICFES_COLOR, border: '1px solid rgba(220,38,38,0.22)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.72rem' }}>
-              <Target size={14} /> A1-B+
+              <Target size={14} /> Pre A1-B1
             </span>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', padding: '0.42rem 0.72rem', borderRadius: 999, background: 'rgba(15,61,140,0.08)', color: SMART_COLOR, border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 800, fontSize: '0.72rem' }}>
               <BookOpenCheck size={14} /> {ICFES_SMART_BANK_SUMMARY.total} preguntas

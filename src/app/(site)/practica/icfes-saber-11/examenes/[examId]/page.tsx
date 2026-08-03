@@ -11,9 +11,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { examId } = await params;
   const sim = getSimulacro(examId);
   if (!sim) return {};
+  const canonical = `https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${sim.id}`;
   return {
-    title: `${sim.title} — Simulacro ICFES Inglés | Idiomas WeLearn`,
+    title: `${sim.title} — Simulacro ICFES Inglés`,
     description: `Practica con el cuadernillo oficial ICFES ${sim.year} Grado ${sim.grade}. ${sim.totalQuestions} preguntas, ${sim.timeMinutes} minutos. Corrección automática y revisión detallada.`,
+    alternates: { canonical },
+    openGraph: {
+      title: `${sim.title} — Simulacro ICFES Inglés`,
+      description: `${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES, con corrección automática.`,
+      url: canonical,
+      type: 'website',
+    },
   };
 }
 

@@ -131,7 +131,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Practice — ICFES Saber 11 ────────────────────────────────────────────
     { url: `${BASE}/practica/icfes-saber-11`,                                  lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
+    ...(['parte-1', 'parte-2', 'parte-3', 'parte-4', 'parte-5', 'parte-6', 'parte-7'] as const).map((part) => ({
+      url: `${BASE}/practica/icfes-saber-11/${part}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    })),
     { url: `${BASE}/practica/icfes-saber-11/examenes`,                         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/icfes-saber-11/vocabulario`,                      lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/gramatica-conjunciones`,           lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/sinonimos-inferencia`,             lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
 

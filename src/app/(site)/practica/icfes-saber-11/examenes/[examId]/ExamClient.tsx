@@ -2,7 +2,7 @@
 
 import PracticeClient from '@/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient';
 import { EXAMS } from '@/data/exams';
-import type { Simulacro } from '@/data/mocks/icfes-simulacros';
+import { getSimulacroQuestionPart, type Simulacro } from '@/data/mocks/icfes-simulacros';
 import type { MCQQuestion, MockExam, MockSection } from '@/data/mocks/types';
 
 // ── Simulacro → MockExam converter ───────────────────────────────────────────
@@ -35,8 +35,10 @@ function simulacroToMockExam(sim: Simulacro): MockExam {
   }
 
   // --- 2. Build MockSection[] ---
-  const sections: MockSection[] = groups.map((g, i) => {
-    const part = i + 1;
+  const sections: MockSection[] = groups.map((g) => {
+    const firstQuestion = g.qs[0];
+    if (!firstQuestion) throw new Error(`Sección vacía en ${sim.id}`);
+    const part = getSimulacroQuestionPart(sim, firstQuestion.n);
     const passage = g.passageId
       ? sim.passages.find(p => p.id === g.passageId)
       : undefined;

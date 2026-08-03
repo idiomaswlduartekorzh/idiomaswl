@@ -37,7 +37,7 @@ export default function ExamenesClient() {
             Simulacros Saber 11° — Inglés
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.97rem', margin: 0, maxWidth: 600, lineHeight: 1.65 }}>
-            Preguntas tomadas directamente de los cuadernillos oficiales publicados por ICFES. Mismo formato del examen real: 25 preguntas, 60 minutos, corrección automática.
+            Preguntas de cuadernillos divulgados por el ICFES. Las muestras conservan su extensión publicada —que puede ser menor que las 55 preguntas de la aplicación estándar 2026-2— y tienen corrección automática.
           </p>
         </div>
 
@@ -63,13 +63,16 @@ export default function ExamenesClient() {
                     {sim.totalQuestions} preguntas · {sim.timeMinutes} min · Nivel {LEVEL_LABEL[sim.year] ?? 'A1–B1'}
                   </p>
                 </div>
-                <Link
-                  href={`/practica/icfes-saber-11/examenes/${sim.id}`}
-                  className="btn"
-                  style={{ whiteSpace: 'nowrap', background: gradeColor, borderColor: gradeColor, color: '#fff' }}
-                >
-                  Empezar →
-                </Link>
+                <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
+                  {sim.id === 'icfes-2023-g11' && <Link href={`/practica/icfes-saber-11/examenes/${sim.id}/guiado`} className="btn btn-ghost" style={{ whiteSpace: 'nowrap' }}>Modo guiado</Link>}
+                  <Link
+                    href={`/practica/icfes-saber-11/examenes/${sim.id}`}
+                    className="btn"
+                    style={{ whiteSpace: 'nowrap', background: gradeColor, borderColor: gradeColor, color: '#fff' }}
+                  >
+                    Modo examen →
+                  </Link>
+                </div>
               </div>
             );
           })}
@@ -78,7 +81,7 @@ export default function ExamenesClient() {
         {/* Info section */}
         <div style={{ maxWidth: 780, margin: '2.5rem auto 0', padding: '1.25rem 1.5rem', borderRadius: 12, background: 'rgba(15,61,140,0.04)', border: '1px solid rgba(15,61,140,0.12)' }}>
           <p style={{ fontSize: '0.82rem', color: 'var(--muted)', margin: 0, lineHeight: 1.65 }}>
-            <strong style={{ color: 'var(--ink)' }}>¿Cómo funciona?</strong> Al iniciar el simulacro verás las preguntas en el mismo orden y formato del cuadernillo oficial. Puedes navegar entre preguntas, cambiar respuestas y ver el resultado detallado al finalizar. Los textos y preguntas son exactamente los publicados por el ICFES para práctica académica.
+            <strong style={{ color: 'var(--ink)' }}>Dos formas de practicar:</strong> en modo examen navegas libremente y recibes corrección al final. El piloto guiado del cuadernillo 2023 muestra una pregunta a la vez y explica respuesta, evidencia y distractores. Cada tarjeta identifica con honestidad qué bloque tiene revisión editorial completa.
           </p>
         </div>
       </div>
