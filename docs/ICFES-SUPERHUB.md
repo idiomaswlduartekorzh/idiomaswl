@@ -32,6 +32,8 @@ Archivos del piloto:
 
 Para extender el patrón a Partes 2–7, crear primero un esquema de contenido específico para la tarea —no copiar ejemplos de Parte 1— y conservar la misma secuencia. Cada parte debe tener al menos: formato exacto, qué observar, qué responder, errores frecuentes, 15–20 demostraciones distribuidas por subtipos y tres niveles de práctica. El piloto visual y pedagógico fue aprobado el 3 de agosto de 2026; la sección de demostraciones de Parte 1 se amplió de 12 a 20 referencias antes de iniciar la réplica.
 
+Las Partes 2 y 3 usan el esquema reusable `src/data/icfes/part-lessons.ts`. Cada una incorpora 15 demostraciones en tres subtipos y genera dos niveles adicionales del motor desde el mismo contenido editorial. Parte 2 conserva una identidad de señalética y Parte 3 usa turnos de conversación: comparten jerarquía pedagógica, no una representación visual genérica.
+
 ## Verdad editorial
 
 Fuente principal: [Guía de orientación Saber 11 2026-2 del ICFES](https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf).

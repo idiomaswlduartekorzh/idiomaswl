@@ -8,6 +8,7 @@ const mocks = read('src/data/mocks/icfes-simulacros.ts');
 const sitemap = read('src/app/sitemap.ts');
 const migration = read('supabase/migrations/20260803_icfes_practice_engine.sql');
 const partOneLesson = read('src/data/icfes/part-one-lesson.ts');
+const structuredLessons = read('src/data/icfes/part-lessons.ts');
 
 for (let part = 1; part <= 7; part += 1) {
   const count = (questions.match(new RegExp(`officialPart: ${part}`, 'g')) ?? []).length;
@@ -37,6 +38,10 @@ assert.equal((partOneLesson.match(/decisiveClue:/g) ?? []).length - 1, 20, 'La P
 assert.equal((partOneLesson.match(/id: 'p1-/g) ?? []).length, 8, 'La Parte 1 debe conservar 8 ejercicios adicionales para progresión');
 for (const stage of ['category', 'clue', 'distractors']) {
   assert.match(partOneLesson, new RegExp(`id: '${stage}'`), `Falta el nivel progresivo ${stage} de la Parte 1`);
+}
+for (const part of [2, 3]) {
+  assert.equal((structuredLessons.match(new RegExp(`\\['p${part}-`, 'g')) ?? []).length, 15, `La Parte ${part} debe conservar 15 demostraciones guiadas`);
+  assert.match(structuredLessons, new RegExp(`part: ${part},`), `Falta la configuración pedagógica de la Parte ${part}`);
 }
 
 const publicTruth = [

@@ -4,9 +4,11 @@ import { notFound } from 'next/navigation';
 import { getIcfesQuestionsByPart } from '@/data/icfes/questions';
 import { getIcfesPart, ICFES_PARTS, ICFES_PART_SLUGS } from '@/data/icfes/parts';
 import { buildPartOneStages } from '@/data/icfes/part-one-lesson';
+import { buildLessonStages, ICFES_PART_LESSONS } from '@/data/icfes/part-lessons';
 import IcfesPartPracticeEngine from '../_components/IcfesPartPracticeEngine';
 import IcfesPartOneLesson from '../_components/IcfesPartOneLesson';
 import IcfesProgressivePractice from '../_components/IcfesProgressivePractice';
+import IcfesStructuredLesson from '../_components/IcfesStructuredLesson';
 import styles from '../icfes-learning.module.css';
 
 const BASE = 'https://www.idiomaswl.com';
@@ -40,7 +42,10 @@ export default async function IcfesPartPage({ params }: Props) {
   const part = getIcfesPart(partSlug);
   if (!part) notFound();
   const questions = getIcfesQuestionsByPart(part.part);
-  const partOneStages = part.part === 1 ? buildPartOneStages(questions) : [];
+  const structuredLesson = ICFES_PART_LESSONS[part.part];
+  const progressiveStages = part.part === 1
+    ? buildPartOneStages(questions)
+    : structuredLesson ? buildLessonStages(structuredLesson, questions) : [];
   const nextPart = ICFES_PARTS.find((item) => item.part === part.part + 1);
   const url = `${BASE}/practica/icfes-saber-11/${part.slug}`;
   const jsonLd = {
@@ -96,6 +101,8 @@ export default async function IcfesPartPage({ params }: Props) {
 
         {part.part === 1 ? (
           <IcfesPartOneLesson />
+        ) : structuredLesson ? (
+          <IcfesStructuredLesson lesson={structuredLesson} />
         ) : (
           <section className={styles.strategySection} aria-labelledby="strategy-title">
             <div>
@@ -111,12 +118,12 @@ export default async function IcfesPartPage({ params }: Props) {
 
         <section id="practica-guiada" className={styles.practiceSection} aria-labelledby="practice-title">
           <div className={styles.sectionHeading}>
-            <p className={styles.kicker}>{part.part === 1 ? 'Ahora transfiere el método' : 'Ahora hazlo tú'}</p>
-            <h2 id="practice-title">{part.part === 1 ? 'Del ejemplo al WeLearn Engine' : `Práctica guiada de la Parte ${part.part}`}</h2>
-            <p>{part.part === 1 ? 'Avanza por tres niveles. Cada respuesta muestra evidencia, distractores y una microlección antes de aumentar la dificultad.' : 'Primero decides; después ves evidencia, distractores y una microlección. Tu primera práctica no requiere registro.'}</p>
+            <p className={styles.kicker}>{progressiveStages.length ? 'Ahora transfiere el método' : 'Ahora hazlo tú'}</p>
+            <h2 id="practice-title">{progressiveStages.length ? 'Del ejemplo al WeLearn Engine' : `Práctica guiada de la Parte ${part.part}`}</h2>
+            <p>{progressiveStages.length ? 'Avanza por tres niveles. Cada respuesta muestra evidencia, distractores y una microlección antes de aumentar la dificultad.' : 'Primero decides; después ves evidencia, distractores y una microlección. Tu primera práctica no requiere registro.'}</p>
           </div>
-          {part.part === 1
-            ? <IcfesProgressivePractice part={part} stages={partOneStages} />
+          {progressiveStages.length
+            ? <IcfesProgressivePractice part={part} stages={progressiveStages} />
             : <IcfesPartPracticeEngine part={part} questions={questions} />}
         </section>
 

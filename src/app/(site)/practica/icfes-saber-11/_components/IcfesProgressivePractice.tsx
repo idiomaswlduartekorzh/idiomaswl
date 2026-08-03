@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import type { IcfesPartConfig } from '@/data/icfes/parts';
-import type { PartOnePracticeStage } from '@/data/icfes/part-one-lesson';
+import type { IcfesPracticeStage } from '@/data/icfes/part-one-lesson';
 import IcfesPartPracticeEngine from './IcfesPartPracticeEngine';
 import styles from '../icfes-learning.module.css';
 
@@ -11,7 +11,7 @@ export default function IcfesProgressivePractice({
   stages,
 }: {
   part: IcfesPartConfig;
-  stages: PartOnePracticeStage[];
+  stages: IcfesPracticeStage[];
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [completed, setCompleted] = useState<Record<string, number>>({});
@@ -23,7 +23,7 @@ export default function IcfesProgressivePractice({
       <div className={styles.engineIdentity}>
         <div aria-hidden="true"><span>W</span><strong>WeLearn</strong></div>
         <div>
-          <p className={styles.kicker}>WeLearn Engine · Parte 1</p>
+          <p className={styles.kicker}>WeLearn Engine · Parte {part.part}</p>
           <h3>Practica por nivel de decisión</h3>
           <p>Primero reconoces vocabulario directo, después separas palabras cercanas y al final resuelves distractores de examen.</p>
         </div>
@@ -54,7 +54,7 @@ export default function IcfesProgressivePractice({
           key={activeStage.id}
           part={part}
           questions={activeStage.questions}
-          progressScope={`part-one-${activeStage.id}`}
+          progressScope={`part-${part.part}-${activeStage.id}`}
           onComplete={({ accuracy }) => setCompleted((current) => ({ ...current, [activeStage.id]: accuracy }))}
           resultAction={nextStage ? { label: `Continuar: ${nextStage.shortLabel}`, onClick: () => setActiveIndex((index) => index + 1) } : undefined}
         />

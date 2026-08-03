@@ -18,7 +18,7 @@ export interface PartOneExampleGroup {
   examples: PartOneGuidedExample[];
 }
 
-export interface PartOnePracticeStage {
+export interface IcfesPracticeStage {
   id: string;
   label: string;
   shortLabel: string;
@@ -404,7 +404,7 @@ const EXTRA_PART_ONE_QUESTIONS: IcfesPracticeQuestion[] = [
   },
 ];
 
-export function buildPartOneStages(baseQuestions: IcfesPracticeQuestion[]): PartOnePracticeStage[] {
+export function buildPartOneStages(baseQuestions: IcfesPracticeQuestion[]): IcfesPracticeStage[] {
   return [
     {
       id: 'category',
