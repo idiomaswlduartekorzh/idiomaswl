@@ -39,7 +39,7 @@ assert.equal((partOneLesson.match(/id: 'p1-/g) ?? []).length, 8, 'La Parte 1 deb
 for (const stage of ['category', 'clue', 'distractors']) {
   assert.match(partOneLesson, new RegExp(`id: '${stage}'`), `Falta el nivel progresivo ${stage} de la Parte 1`);
 }
-for (const part of [2, 3]) {
+for (const part of [2, 3, 4, 5]) {
   assert.equal((structuredLessons.match(new RegExp(`\\['p${part}-`, 'g')) ?? []).length, 15, `La Parte ${part} debe conservar 15 demostraciones guiadas`);
   assert.match(structuredLessons, new RegExp(`part: ${part},`), `Falta la configuración pedagógica de la Parte ${part}`);
 }
