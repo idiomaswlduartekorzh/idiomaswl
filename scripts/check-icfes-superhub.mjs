@@ -9,6 +9,8 @@ const sitemap = read('src/app/sitemap.ts');
 const migration = read('supabase/migrations/20260803_icfes_practice_engine.sql');
 const partOneLesson = read('src/data/icfes/part-one-lesson.ts');
 const structuredLessons = read('src/data/icfes/part-lessons.ts');
+const guidedExamplesComponent = read('src/app/(site)/practica/icfes-saber-11/_components/IcfesGuidedExamples.tsx');
+const progressivePracticeComponent = read('src/app/(site)/practica/icfes-saber-11/_components/IcfesProgressivePractice.tsx');
 
 for (let part = 1; part <= 7; part += 1) {
   const count = (questions.match(new RegExp(`officialPart: ${part}`, 'g')) ?? []).length;
@@ -42,6 +44,11 @@ for (const stage of ['category', 'clue', 'distractors']) {
 for (const part of [2, 3, 4, 5, 6, 7]) {
   assert.equal((structuredLessons.match(new RegExp(`\\['p${part}-`, 'g')) ?? []).length, 15, `La Parte ${part} debe conservar 15 demostraciones guiadas`);
   assert.match(structuredLessons, new RegExp(`part: ${part},`), `Falta la configuración pedagógica de la Parte ${part}`);
+}
+for (const [name, component] of [['demostraciones', guidedExamplesComponent], ['niveles', progressivePracticeComponent]]) {
+  assert.match(component, /onKeyDown=/, `Las pestañas de ${name} deben responder al teclado`);
+  assert.match(component, /tabIndex=/, `Las pestañas de ${name} deben usar roving tabindex`);
+  assert.match(component, /aria-labelledby=/, `El panel de ${name} debe identificar su pestaña activa`);
 }
 
 const publicTruth = [

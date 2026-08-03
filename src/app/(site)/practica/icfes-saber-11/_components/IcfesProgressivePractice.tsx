@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type KeyboardEvent } from 'react';
 import type { IcfesPartConfig } from '@/data/icfes/parts';
 import type { IcfesPracticeStage } from '@/data/icfes/part-one-lesson';
 import IcfesPartPracticeEngine from './IcfesPartPracticeEngine';
@@ -18,6 +18,22 @@ export default function IcfesProgressivePractice({
   const activeStage = stages[activeIndex];
   const nextStage = stages[activeIndex + 1];
 
+  function moveStage(event: KeyboardEvent<HTMLButtonElement>, index: number) {
+    const lastIndex = stages.length - 1;
+    let nextIndex = index;
+    if (event.key === 'ArrowRight') nextIndex = index === lastIndex ? 0 : index + 1;
+    else if (event.key === 'ArrowLeft') nextIndex = index === 0 ? lastIndex : index - 1;
+    else if (event.key === 'Home') nextIndex = 0;
+    else if (event.key === 'End') nextIndex = lastIndex;
+    else return;
+
+    event.preventDefault();
+    setActiveIndex(nextIndex);
+    event.currentTarget.parentElement
+      ?.querySelectorAll<HTMLButtonElement>('[role="tab"]')[nextIndex]
+      ?.focus();
+  }
+
   return (
     <div className={styles.progressiveEngine}>
       <div className={styles.engineIdentity}>
@@ -33,11 +49,14 @@ export default function IcfesProgressivePractice({
         {stages.map((stage, index) => (
           <button
             key={stage.id}
+            id={`part-${part.part}-stage-${stage.id}-tab`}
             type="button"
             role="tab"
+            tabIndex={index === activeIndex ? 0 : -1}
             aria-selected={index === activeIndex}
-            aria-controls="progressive-practice-panel"
+            aria-controls={`part-${part.part}-progressive-practice-panel`}
             onClick={() => setActiveIndex(index)}
+            onKeyDown={(event) => moveStage(event, index)}
           >
             <span>{completed[stage.id] !== undefined ? '✓' : index + 1}</span>
             <div><strong>{stage.shortLabel}</strong><small>{stage.questions.length} ejercicios{completed[stage.id] !== undefined ? ` · ${completed[stage.id]}%` : ''}</small></div>
@@ -45,7 +64,12 @@ export default function IcfesProgressivePractice({
         ))}
       </div>
 
-      <div id="progressive-practice-panel" role="tabpanel" className={styles.stagePanel}>
+      <div
+        id={`part-${part.part}-progressive-practice-panel`}
+        role="tabpanel"
+        aria-labelledby={`part-${part.part}-stage-${activeStage.id}-tab`}
+        className={styles.stagePanel}
+      >
         <div className={styles.stageIntroduction}>
           <div><span>Nivel {activeIndex + 1} de {stages.length}</span><strong>{activeStage.label}</strong></div>
           <p>{activeStage.focus}</p>

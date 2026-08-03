@@ -41,7 +41,7 @@ Las Partes 2–7 usan el esquema reusable `src/data/icfes/part-lessons.ts`. Cada
 - Parte 6: lectura inferencial, propósito, tono e idea principal.
 - Parte 7: texto intervenido para vocabulario contextual, colocación y cohesión discursiva.
 
-El motor transforma ocho preguntas editoriales por parte en tres niveles de progresión, mantiene retroalimentación inmediata y conserva el mismo contrato de persistencia de intentos. La auditoría `npm run check:icfes-superhub` bloquea regresiones en el número de demostraciones, cobertura de partes, revisiones guiadas, sitemap, rangos de simulacros y políticas RLS.
+El motor transforma ocho preguntas editoriales por parte en tres niveles de progresión, mantiene retroalimentación inmediata y conserva el mismo contrato de persistencia de intentos. Los selectores de subtipos y niveles implementan el patrón ARIA de pestañas con flechas, `Home`, `End`, foco único y panel etiquetado. La auditoría `npm run check:icfes-superhub` bloquea regresiones en el número de demostraciones, cobertura de partes, navegación por teclado, revisiones guiadas, sitemap, rangos de simulacros y políticas RLS.
 
 ## Verdad editorial
 

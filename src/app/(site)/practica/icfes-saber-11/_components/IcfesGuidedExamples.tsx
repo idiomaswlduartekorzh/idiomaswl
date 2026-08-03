@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type KeyboardEvent } from 'react';
 import type { IcfesPartLessonConfig } from '@/data/icfes/part-lessons';
 import styles from '../icfes-learning.module.css';
 
@@ -15,6 +15,22 @@ export default function IcfesGuidedExamples({ lesson }: { lesson: IcfesPartLesso
     setExampleIndex(0);
   }
 
+  function moveGroup(event: KeyboardEvent<HTMLButtonElement>, index: number) {
+    const lastIndex = lesson.groups.length - 1;
+    let nextIndex = index;
+    if (event.key === 'ArrowRight') nextIndex = index === lastIndex ? 0 : index + 1;
+    else if (event.key === 'ArrowLeft') nextIndex = index === 0 ? lastIndex : index - 1;
+    else if (event.key === 'Home') nextIndex = 0;
+    else if (event.key === 'End') nextIndex = lastIndex;
+    else return;
+
+    event.preventDefault();
+    chooseGroup(lesson.groups[nextIndex].id);
+    event.currentTarget.parentElement
+      ?.querySelectorAll<HTMLButtonElement>('[role="tab"]')[nextIndex]
+      ?.focus();
+  }
+
   return (
     <section className={styles.partOneExamples} aria-labelledby={`part-${lesson.part}-examples-title`}>
       <div className={styles.lessonSectionHeading}>
@@ -24,14 +40,24 @@ export default function IcfesGuidedExamples({ lesson }: { lesson: IcfesPartLesso
       </div>
 
       <div className={styles.exampleTabs} role="tablist" aria-label={`Subtipos de la Parte ${lesson.part}`}>
-        {lesson.groups.map((item) => (
-          <button key={item.id} type="button" role="tab" aria-selected={item.id === group.id} aria-controls={`part-${lesson.part}-example-panel`} onClick={() => chooseGroup(item.id)}>
+        {lesson.groups.map((item, index) => (
+          <button
+            key={item.id}
+            id={`part-${lesson.part}-${item.id}-tab`}
+            type="button"
+            role="tab"
+            tabIndex={item.id === group.id ? 0 : -1}
+            aria-selected={item.id === group.id}
+            aria-controls={`part-${lesson.part}-example-panel`}
+            onClick={() => chooseGroup(item.id)}
+            onKeyDown={(event) => moveGroup(event, index)}
+          >
             <span aria-hidden="true">{item.icon}</span><strong>{item.label}</strong><small>{item.examples.length} ejemplos</small>
           </button>
         ))}
       </div>
 
-      <div id={`part-${lesson.part}-example-panel`} role="tabpanel" className={styles.examplePanel}>
+      <div id={`part-${lesson.part}-example-panel`} role="tabpanel" aria-labelledby={`part-${lesson.part}-${group.id}-tab`} className={styles.examplePanel}>
         <div className={styles.examplePicker} aria-label={`Ejemplos de ${group.label}`}>
           <div><p className={styles.kicker}>{group.label}</p><strong>{group.subtitle}</strong></div>
           {group.examples.map((item, index) => (
