@@ -1,6 +1,16 @@
 node_modules
 .next
 .git
+
+# Datos personales de estudiantes: certificados sin tachar (cara, pasaporte,
+# dirección, fecha de nacimiento). El CLI de Vercel sube el árbol LOCAL, no lo
+# que hay en git — así que .gitignore por sí solo no protege de un `vercel --prod`.
+# Esta lista es la que cuenta para el despliegue.
+work
+public/reports tests
+*.HEIC
+*.heic
+
 public/assets/korean/step008
 public/assets/korean/step009
 public/assets/korean/step010

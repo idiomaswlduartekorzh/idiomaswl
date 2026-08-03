@@ -68,3 +68,33 @@ public/audio/goethe/
 public/audio/aleman/**/De-*.mp3
 public/audio/aleman/**/de-prueba.mp3
 public/audio/italiano/**/it-a1-*-src.mp3
+
+# ─── Datos personales de estudiantes ────────────────────────────────────────
+# Los certificados SIN tachar (TOEFL/IELTS) llevan nombre, foto de la cara,
+# correo, dirección, fecha de nacimiento y número de pasaporte de personas
+# reales. Los originales viven FUERA del repo, en
+# ~/Documents/welearn-certificados-originales/. Al repo solo entran los recortes
+# ya tachados de public/images/resultados/.
+#
+# Dos sitios donde estuvieron y no deben volver a estar (2026-08-02):
+#   work/certificados-*/     → 39 JPEG, 182 MB
+#   "public/reports tests/"  → 39 HEIC, 109 MB. Este era el peligroso: Next.js
+#                              sirve todo public/ en la raíz de la URL, y el CLI
+#                              de Vercel sube el árbol local completo.
+/work/
+.venv-cert/
+/public/reports tests/
+/public/**/*.HEIC
+/public/**/*.heic
+
+# ─── Scratch de herramientas y sesión ───────────────────────────────────────
+# Nada de esto es fuente de verdad; se regenera solo.
+/.codex/
+/.playwright-mcp/
+/output/
+/prototype/
+
+# Capturas sueltas en la raíz (revisiones visuales de sesión).
+# No afecta a public/, donde viven las imágenes de producción.
+/*.png
+/*.mov
