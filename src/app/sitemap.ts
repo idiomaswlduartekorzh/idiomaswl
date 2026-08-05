@@ -129,6 +129,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ];
     }),
 
+    // ── Practice — historias de comprensión integrada (inglés B1–B2) ─────────
+    { url: `${BASE}/practica/the-locked-phone`,                                lastModified: now, changeFrequency: 'monthly' as const, priority: 0.74 },
+    { url: `${BASE}/practica/the-grandmothers-ledger`,                         lastModified: now, changeFrequency: 'monthly' as const, priority: 0.74 },
+
     // ── Practice — ICFES Saber 11 ────────────────────────────────────────────
     { url: `${BASE}/practica/icfes-saber-11`,                                  lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
     { url: `${BASE}/practica/icfes-saber-11/examenes`,                         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
