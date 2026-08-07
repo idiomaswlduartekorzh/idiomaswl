@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
   title: 'Inglés B1 — Elige una habilidad | Idiomas WeLearn',
@@ -39,8 +40,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: 'The Corner Project: 20 episodios B1 con una historia continua (drama) y audio narrado.',
-    count: '20 episodios · con audio', href: '/practica/ingles/b1/escucha', available: true,
+    ...listeningCard('ingles', 'b1', '«The Door Stays Open»: el edificio del café sale a la venta y Maya tiene una semana para reunir una oferta imposible.'),
+    href: '/practica/ingles/b1/escucha', available: true,
   },
   {
     id: 'conjunciones', emoji: '🎯', name: 'Quest: Conjunciones', eng: 'Conjunctions Quest',

@@ -1,15 +1,39 @@
 import type { Metadata } from 'next'
 import ListeningJourney from '@/components/practica/ListeningJourney'
+import { QuizSchema } from '@/components/practica/EducationSchema'
 import { LISTENING_B1_ALL } from '@/data/practica/ingles-b1-listening'
+import { listeningCopy } from '@/data/practica/series/page-copy'
 
-export const metadata: Metadata = {
-  title: 'Escucha Inglés B1: The Corner Project | Idiomas WeLearn',
-  description: '20 episodios B1 que continúan la historia de The Corner Project: Maya y la comunidad luchan por salvar el café de una venta y de un rival. Vocabulario, comprensión y gramática B1 en contexto.',
-  alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/b1/escucha' },
-  // Pendiente de aprobación lingüística/pedagógica y de grabación de audio: sin indexar por ahora.
-  robots: { index: false, follow: false },
-}
+const copy = listeningCopy({
+  language: 'ingles',
+  level: 'b1',
+  languageLabel: 'Inglés',
+  skillLabel: 'Listening',
+  seriesTitle: 'The Door Stays Open',
+  seriesTitleEs: 'La puerta sigue abierta',
+  premise:
+    'Un viernes de lluvia aparece un sobre en la puerta del café: el edificio entero está en venta, y Maya tiene una semana para presentar una oferta que no puede pagar, con cuatrocientas firmas, un bote de monedas y una biblioteca de aliada',
+})
+
+export const metadata: Metadata = copy.metadata
 
 export default function EscuchaInglesB1() {
-  return <section className="wl-section"><div className="wrap" style={{ maxWidth: 1180 }}><ListeningJourney exercises={LISTENING_B1_ALL} level="B1" audioBasePath="/audio/ingles/b1" backHref="/practica/ingles/b1" progressKey="wl-listening-b1-progress" seriesTitle="The Corner Project" seriesDescription="Temporada B1 · 20 episodios: Maya y la comunidad luchan por salvar The Corner Project de una venta y de un rival, mientras Maya aprende a manejar el negocio." /></div></section>
+  return (
+    <>
+      <QuizSchema {...copy.schema} />
+      <section className="wl-section">
+        <div className="wrap" style={{ maxWidth: 1180 }}>
+          <ListeningJourney
+            exercises={LISTENING_B1_ALL}
+            level="B1"
+            languageLabel="Inglés"
+            skillLabel="Listening"
+            speechLang="en-US"
+            audioMode={copy.ready ? 'mp3' : 'navegador'}
+            {...copy.journal}
+          />
+        </div>
+      </section>
+    </>
+  )
 }

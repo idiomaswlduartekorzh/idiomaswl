@@ -3434,19 +3434,19 @@
     {
       "idioma": "ingles",
       "episodio": 1,
-      "id": "en-a2-01-the-empty-shop",
+      "id": "en-b1-01-the-letter-on-the-door",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-01.mp3",
-      "caracteres": 499,
-      "duracion_real": 35.75,
-      "caracteres_por_segundo": 13.96,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-01.mp3",
+      "caracteres": 635,
+      "duracion_real": 42.68,
+      "caracteres_por_segundo": 14.88,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
+        "Ana": "iVwieylcLv7bwfinSNdw"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3458,19 +3458,19 @@
     {
       "idioma": "ingles",
       "episodio": 2,
-      "id": "en-a2-02-my-grandfathers-key",
+      "id": "en-b1-02-what-the-owner-had-decided",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-02.mp3",
-      "caracteres": 445,
-      "duracion_real": 35.92,
-      "caracteres_por_segundo": 12.39,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-02.mp3",
+      "caracteres": 613,
+      "duracion_real": 38.53,
+      "caracteres_por_segundo": 15.91,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Ana": "iVwieylcLv7bwfinSNdw"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3482,18 +3482,20 @@
     {
       "idioma": "ingles",
       "episodio": 3,
-      "id": "en-a2-03-the-first-problem",
+      "id": "en-b1-03-everything-we-have-built",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-03.mp3",
-      "caracteres": 431,
-      "duracion_real": 27.34,
-      "caracteres_por_segundo": 15.76,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-03.mp3",
+      "caracteres": 620,
+      "duracion_real": 40.01,
+      "caracteres_por_segundo": 15.49,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Ana": "iVwieylcLv7bwfinSNdw",
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3505,17 +3507,17 @@
     {
       "idioma": "ingles",
       "episodio": 4,
-      "id": "en-a2-04-rainy-saturday",
+      "id": "en-b1-04-if-we-raise-enough",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-04.mp3",
-      "caracteres": 481,
-      "duracion_real": 29.26,
-      "caracteres_por_segundo": 16.44,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-04.mp3",
+      "caracteres": 649,
+      "duracion_real": 37.98,
+      "caracteres_por_segundo": 17.09,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Ana": "iVwieylcLv7bwfinSNdw",
+        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Leo": "mWRBtRP92mUXZzi4RZ0Y"
       },
@@ -3529,19 +3531,19 @@
     {
       "idioma": "ingles",
       "episodio": 5,
-      "id": "en-a2-05-a-better-name",
+      "id": "en-b1-05-counting-every-coin",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-05.mp3",
-      "caracteres": 543,
-      "duracion_real": 35.17,
-      "caracteres_por_segundo": 15.44,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-05.mp3",
+      "caracteres": 657,
+      "duracion_real": 41.75,
+      "caracteres_por_segundo": 15.74,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Ana": "iVwieylcLv7bwfinSNdw",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Ana": "iVwieylcLv7bwfinSNdw"
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3553,19 +3555,19 @@
     {
       "idioma": "ingles",
       "episodio": 6,
-      "id": "en-a2-06-the-best-table",
+      "id": "en-b1-06-what-we-must-do-by-friday",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-06.mp3",
-      "caracteres": 457,
-      "duracion_real": 31.83,
-      "caracteres_por_segundo": 14.36,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-06.mp3",
+      "caracteres": 583,
+      "duracion_real": 37.29,
+      "caracteres_por_segundo": 15.63,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7",
         "Ana": "iVwieylcLv7bwfinSNdw"
       },
       "ajustes": {
@@ -3578,20 +3580,19 @@
     {
       "idioma": "ingles",
       "episodio": 7,
-      "id": "en-a2-07-opening-weekend",
+      "id": "en-b1-07-if-i-were-the-owner",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-07.mp3",
-      "caracteres": 465,
-      "duracion_real": 30.84,
-      "caracteres_por_segundo": 15.08,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-07.mp3",
+      "caracteres": 580,
+      "duracion_real": 37.51,
+      "caracteres_por_segundo": 15.46,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
-        "Ana": "iVwieylcLv7bwfinSNdw"
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3603,18 +3604,20 @@
     {
       "idioma": "ingles",
       "episodio": 8,
-      "id": "en-a2-08-a-promise-to-the-library",
+      "id": "en-b1-08-the-people-who-help",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-08.mp3",
-      "caracteres": 524,
-      "duracion_real": 31.98,
-      "caracteres_por_segundo": 16.39,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-08.mp3",
+      "caracteres": 600,
+      "duracion_real": 35.72,
+      "caracteres_por_segundo": 16.8,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7",
-        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+        "Ana": "iVwieylcLv7bwfinSNdw",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3626,19 +3629,18 @@
     {
       "idioma": "ingles",
       "episodio": 9,
-      "id": "en-a2-09-what-we-have-already-done",
+      "id": "en-b1-09-the-corner-that-was-loved",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-09.mp3",
-      "caracteres": 492,
-      "duracion_real": 30.52,
-      "caracteres_por_segundo": 16.12,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-09.mp3",
+      "caracteres": 627,
+      "duracion_real": 43.97,
+      "caracteres_por_segundo": 14.26,
+      "duracion_declarada_previa": 50,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
+        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Ana": "iVwieylcLv7bwfinSNdw",
         "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
       },
       "ajustes": {
@@ -3651,19 +3653,20 @@
     {
       "idioma": "ingles",
       "episodio": 10,
-      "id": "en-a2-10-the-menu-test",
+      "id": "en-b1-10-what-the-bank-said",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-10.mp3",
-      "caracteres": 484,
-      "duracion_real": 30.71,
-      "caracteres_por_segundo": 15.76,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-10.mp3",
+      "caracteres": 576,
+      "duracion_real": 34.53,
+      "caracteres_por_segundo": 16.68,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Ana": "iVwieylcLv7bwfinSNdw"
+        "Ana": "iVwieylcLv7bwfinSNdw",
+        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3675,88 +3678,13 @@
     {
       "idioma": "ingles",
       "episodio": 11,
-      "id": "en-a2-11-the-budget-jar",
+      "id": "en-b1-11-why-i-keep-going",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-11.mp3",
-      "caracteres": 490,
-      "duracion_real": 32.22,
-      "caracteres_por_segundo": 15.21,
-      "duracion_declarada_previa": 38,
-      "modelo": "eleven_flash_v2_5",
-      "velocidad": 0.92,
-      "voces": {
-        "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Ana": "iVwieylcLv7bwfinSNdw",
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
-      },
-      "ajustes": {
-        "stability": 0.55,
-        "similarity_boost": 0.75,
-        "style": 0.15,
-        "use_speaker_boost": true
-      }
-    },
-    {
-      "idioma": "ingles",
-      "episodio": 12,
-      "id": "en-a2-12-rules-for-opening-day",
-      "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-12.mp3",
-      "caracteres": 507,
-      "duracion_real": 36.27,
-      "caracteres_por_segundo": 13.98,
-      "duracion_declarada_previa": 38,
-      "modelo": "eleven_flash_v2_5",
-      "velocidad": 0.92,
-      "voces": {
-        "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Ana": "iVwieylcLv7bwfinSNdw",
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
-      },
-      "ajustes": {
-        "stability": 0.55,
-        "similarity_boost": 0.75,
-        "style": 0.15,
-        "use_speaker_boost": true
-      }
-    },
-    {
-      "idioma": "ingles",
-      "episodio": 13,
-      "id": "en-a2-13-if-it-rains-again",
-      "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-13.mp3",
-      "caracteres": 496,
-      "duracion_real": 34.67,
-      "caracteres_por_segundo": 14.31,
-      "duracion_declarada_previa": 38,
-      "modelo": "eleven_flash_v2_5",
-      "velocidad": 0.92,
-      "voces": {
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Ana": "iVwieylcLv7bwfinSNdw",
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
-      },
-      "ajustes": {
-        "stability": 0.55,
-        "similarity_boost": 0.75,
-        "style": 0.15,
-        "use_speaker_boost": true
-      }
-    },
-    {
-      "idioma": "ingles",
-      "episodio": 14,
-      "id": "en-a2-14-why-i-started",
-      "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-14.mp3",
-      "caracteres": 494,
-      "duracion_real": 32.82,
-      "caracteres_por_segundo": 15.05,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-11.mp3",
+      "caracteres": 578,
+      "duracion_real": 36.72,
+      "caracteres_por_segundo": 15.74,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
@@ -3772,21 +3700,93 @@
     },
     {
       "idioma": "ingles",
-      "episodio": 15,
-      "id": "en-a2-15-the-first-real-morning",
+      "episodio": 12,
+      "id": "en-b1-12-the-better-offer",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-15.mp3",
-      "caracteres": 526,
-      "duracion_real": 36.33,
-      "caracteres_por_segundo": 14.48,
-      "duracion_declarada_previa": 38,
+      "archivo": "public/audio/ingles/b1/listening-12.mp3",
+      "caracteres": 538,
+      "duracion_real": 31.97,
+      "caracteres_por_segundo": 16.83,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Ana": "iVwieylcLv7bwfinSNdw"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 13,
+      "id": "en-b1-13-the-corner-a-home-the-idea",
+      "piloto": false,
+      "archivo": "public/audio/ingles/b1/listening-13.mp3",
+      "caracteres": 600,
+      "duracion_real": 36.72,
+      "caracteres_por_segundo": 16.34,
+      "duracion_declarada_previa": 48,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
         "Ana": "iVwieylcLv7bwfinSNdw",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 14,
+      "id": "en-b1-14-every-coin-in-the-jar",
+      "piloto": false,
+      "archivo": "public/audio/ingles/b1/listening-14.mp3",
+      "caracteres": 532,
+      "duracion_real": 31.24,
+      "caracteres_por_segundo": 17.03,
+      "duracion_declarada_previa": 48,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Ana": "iVwieylcLv7bwfinSNdw",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 15,
+      "id": "en-b1-15-the-meeting-at-the-library",
+      "piloto": false,
+      "archivo": "public/audio/ingles/b1/listening-15.mp3",
+      "caracteres": 538,
+      "duracion_real": 32.02,
+      "caracteres_por_segundo": 16.8,
+      "duracion_declarada_previa": 48,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Ana": "iVwieylcLv7bwfinSNdw",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3798,20 +3798,19 @@
     {
       "idioma": "ingles",
       "episodio": 16,
-      "id": "en-a2-16-the-first-review",
+      "id": "en-b1-16-working-it-out",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-16.mp3",
-      "caracteres": 534,
-      "duracion_real": 35.18,
-      "caracteres_por_segundo": 15.18,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-16.mp3",
+      "caracteres": 532,
+      "duracion_real": 31.09,
+      "caracteres_por_segundo": 17.11,
+      "duracion_declarada_previa": 50,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Ana": "iVwieylcLv7bwfinSNdw",
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui"
+        "Ana": "iVwieylcLv7bwfinSNdw"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3823,16 +3822,42 @@
     {
       "idioma": "ingles",
       "episodio": 17,
-      "id": "en-a2-17-the-missing-key",
+      "id": "en-b1-17-as-soon-as-the-bank-opens",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-17.mp3",
-      "caracteres": 507,
-      "duracion_real": 31.05,
-      "caracteres_por_segundo": 16.33,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-17.mp3",
+      "caracteres": 551,
+      "duracion_real": 33.48,
+      "caracteres_por_segundo": 16.46,
+      "duracion_declarada_previa": 48,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Ana": "iVwieylcLv7bwfinSNdw",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 18,
+      "id": "en-b1-18-youre-not-giving-up-are-you",
+      "piloto": false,
+      "archivo": "public/audio/ingles/b1/listening-18.mp3",
+      "caracteres": 535,
+      "duracion_real": 39.92,
+      "caracteres_por_segundo": 13.4,
+      "duracion_declarada_previa": 48,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
         "Ana": "iVwieylcLv7bwfinSNdw"
@@ -3846,46 +3871,20 @@
     },
     {
       "idioma": "ingles",
-      "episodio": 18,
-      "id": "en-a2-18-the-community-map",
-      "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-18.mp3",
-      "caracteres": 526,
-      "duracion_real": 31.42,
-      "caracteres_por_segundo": 16.74,
-      "duracion_declarada_previa": 38,
-      "modelo": "eleven_flash_v2_5",
-      "velocidad": 0.92,
-      "voces": {
-        "Ana": "iVwieylcLv7bwfinSNdw",
-        "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7"
-      },
-      "ajustes": {
-        "stability": 0.55,
-        "similarity_boost": 0.75,
-        "style": 0.15,
-        "use_speaker_boost": true
-      }
-    },
-    {
-      "idioma": "ingles",
       "episodio": 19,
-      "id": "en-a2-19-a-new-saturday-plan",
+      "id": "en-b1-19-i-wish-she-could-see-this",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-19.mp3",
-      "caracteres": 532,
-      "duracion_real": 33.61,
-      "caracteres_por_segundo": 15.83,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-19.mp3",
+      "caracteres": 566,
+      "duracion_real": 39.5,
+      "caracteres_por_segundo": 14.33,
+      "duracion_declarada_previa": 50,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
-        "Ana": "iVwieylcLv7bwfinSNdw",
-        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7"
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
+        "Ana": "iVwieylcLv7bwfinSNdw"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3897,21 +3896,21 @@
     {
       "idioma": "ingles",
       "episodio": 20,
-      "id": "en-a2-20-the-door-stays-open",
+      "id": "en-b1-20-the-door-stays-open-after-all",
       "piloto": false,
-      "archivo": "public/audio/ingles/a2/listening-20.mp3",
-      "caracteres": 520,
-      "duracion_real": 35.78,
-      "caracteres_por_segundo": 14.53,
-      "duracion_declarada_previa": 40,
+      "archivo": "public/audio/ingles/b1/listening-20.mp3",
+      "caracteres": 577,
+      "duracion_real": 38.3,
+      "caracteres_por_segundo": 15.07,
+      "duracion_declarada_previa": 50,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
         "Maya": "PBjLN8WJmwHEGB1u1UzI",
         "Leo": "mWRBtRP92mUXZzi4RZ0Y",
-        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7",
         "Ana": "iVwieylcLv7bwfinSNdw",
+        "Mrs. Ruiz": "GZ4PpFJV8ikEGUtBrjK7",
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
         "Everyone": "7PbNGDB5sJCFnOZuMPNL"
       },
       "ajustes": {
