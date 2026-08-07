@@ -37,6 +37,36 @@
     }
   },
   "languages": {
+    "ingles": {
+      "locale": "en-US",
+      "speed": 0.92,
+      "cast": {
+        "Maya": {
+          "voice_id": "PBjLN8WJmwHEGB1u1UzI",
+          "papel": "Veinte años, estudiante y camarera; protagonista de las tres temporadas",
+          "perfil_de_voz": "Mujer joven, inglés americano claro, tono cálido y conversacional",
+          "voz": "Rachel — «Calm & Emotionally Engaging», articulación clara. Papel más largo del inglés"
+        },
+        "Leo": {
+          "voice_id": "mWRBtRP92mUXZzi4RZ0Y",
+          "papel": "Vecino y mejor amigo de Maya; práctico y de opiniones rápidas",
+          "perfil_de_voz": "Hombre joven, acento americano neutro, ritmo tranquilo",
+          "voz": "Blake — narrador de veintitantos con acento americano neutro"
+        },
+        "Grandpa Sam": {
+          "voice_id": "y2Y5MeVPm6ZQXK64WUui",
+          "papel": "Abuelo de Maya; tuvo la panadería de la esquina hasta hace veinte años",
+          "perfil_de_voz": "Hombre mayor, voz cálida y cercana, ritmo pausado",
+          "voz": "The Pharaoh — descrito literalmente como abuelo cálido y cercano"
+        },
+        "Everyone": {
+          "voice_id": "7PbNGDB5sJCFnOZuMPNL",
+          "papel": "Coro del barrio",
+          "perfil_de_voz": "Una sola voz: mezclar varias impide entender la línea",
+          "voz": "Mark Dou — nítido y distinto de Blake; solo dice las líneas de coro"
+        }
+      }
+    },
     "aleman": {
       "locale": "de-DE",
       "speed": 0.92,

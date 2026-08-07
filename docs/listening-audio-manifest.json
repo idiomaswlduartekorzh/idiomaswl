@@ -3430,6 +3430,468 @@
         "style": 0.15,
         "use_speaker_boost": true
       }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 1,
+      "id": "en-a1-01-hello-im-maya",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-01.mp3",
+      "caracteres": 306,
+      "duracion_real": 20.31,
+      "caracteres_por_segundo": 15.07,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 2,
+      "id": "en-a1-02-my-family",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-02.mp3",
+      "caracteres": 281,
+      "duracion_real": 20.29,
+      "caracteres_por_segundo": 13.85,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 3,
+      "id": "en-a1-03-my-bedroom",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-03.mp3",
+      "caracteres": 264,
+      "duracion_real": 15.48,
+      "caracteres_por_segundo": 17.06,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 4,
+      "id": "en-a1-04-our-house",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-04.mp3",
+      "caracteres": 283,
+      "duracion_real": 16.66,
+      "caracteres_por_segundo": 16.99,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 5,
+      "id": "en-a1-05-my-town",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-05.mp3",
+      "caracteres": 284,
+      "duracion_real": 18.31,
+      "caracteres_por_segundo": 15.51,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 6,
+      "id": "en-a1-06-my-morning-routine",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-06.mp3",
+      "caracteres": 250,
+      "duracion_real": 16.08,
+      "caracteres_por_segundo": 15.55,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 7,
+      "id": "en-a1-07-a-day-at-work",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-07.mp3",
+      "caracteres": 311,
+      "duracion_real": 19.85,
+      "caracteres_por_segundo": 15.66,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 8,
+      "id": "en-a1-08-my-week",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-08.mp3",
+      "caracteres": 291,
+      "duracion_real": 18.52,
+      "caracteres_por_segundo": 15.71,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 9,
+      "id": "en-a1-09-saturday-morning",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-09.mp3",
+      "caracteres": 280,
+      "duracion_real": 25,
+      "caracteres_por_segundo": 11.2,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 10,
+      "id": "en-a1-10-my-class-schedule",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-10.mp3",
+      "caracteres": 257,
+      "duracion_real": 15.78,
+      "caracteres_por_segundo": 16.29,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 11,
+      "id": "en-a1-11-my-shopping-list",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-11.mp3",
+      "caracteres": 300,
+      "duracion_real": 19.84,
+      "caracteres_por_segundo": 15.12,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 12,
+      "id": "en-a1-12-my-favorite-lunch",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-12.mp3",
+      "caracteres": 273,
+      "duracion_real": 20.84,
+      "caracteres_por_segundo": 13.1,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 13,
+      "id": "en-a1-13-what-i-wear-to-work",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-13.mp3",
+      "caracteres": 269,
+      "duracion_real": 16.14,
+      "caracteres_por_segundo": 16.67,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 14,
+      "id": "en-a1-14-the-weather-today",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-14.mp3",
+      "caracteres": 275,
+      "duracion_real": 19.49,
+      "caracteres_por_segundo": 14.11,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 15,
+      "id": "en-a1-15-my-dog-max",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-15.mp3",
+      "caracteres": 265,
+      "duracion_real": 16.83,
+      "caracteres_por_segundo": 15.74,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 16,
+      "id": "en-a1-16-what-is-happening-in-the-park",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-16.mp3",
+      "caracteres": 319,
+      "duracion_real": 20.3,
+      "caracteres_por_segundo": 15.72,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 17,
+      "id": "en-a1-17-things-i-can-do",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-17.mp3",
+      "caracteres": 255,
+      "duracion_real": 19.71,
+      "caracteres_por_segundo": 12.94,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 18,
+      "id": "en-a1-18-my-plan-for-saturday",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-18.mp3",
+      "caracteres": 313,
+      "duracion_real": 19.07,
+      "caracteres_por_segundo": 16.42,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 19,
+      "id": "en-a1-19-how-to-get-to-the-library",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-19.mp3",
+      "caracteres": 274,
+      "duracion_real": 18.62,
+      "caracteres_por_segundo": 14.71,
+      "duracion_declarada_previa": 30,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Maya": "PBjLN8WJmwHEGB1u1UzI"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ingles",
+      "episodio": 20,
+      "id": "en-a1-20-the-shop-on-the-corner",
+      "piloto": false,
+      "archivo": "public/audio/ingles/a1/listening-20.mp3",
+      "caracteres": 334,
+      "duracion_real": 24.79,
+      "caracteres_por_segundo": 13.47,
+      "duracion_declarada_previa": 32,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Maya": "PBjLN8WJmwHEGB1u1UzI",
+        "Leo": "mWRBtRP92mUXZzi4RZ0Y",
+        "Grandpa Sam": "y2Y5MeVPm6ZQXK64WUui",
+        "Everyone": "7PbNGDB5sJCFnOZuMPNL"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
     }
   ]
 }

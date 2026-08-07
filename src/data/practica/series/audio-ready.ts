@@ -14,6 +14,7 @@
  * seguir siendo un literal plano de cinco líneas `idioma: true|false,`.
  */
 export const A1_AUDIO_READY = {
+  ingles: true,
   aleman: true,
   frances: true,
   portugues: true,

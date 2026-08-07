@@ -20,7 +20,7 @@ const seriesDir = path.join(repoRoot, 'src', 'data', 'practica', 'series')
 // Suben cuando el contenido aterriza, nunca bajan. Miden regresión —que no desaparezca lo
 // publicado—, no deuda: poner aquí un número mayor que lo escrito deja el build en rojo.
 // A2 pasa a 6 en cuanto las seis series estén escritas y validadas.
-const EXPECTED_SERIES = { a1: 6, a2: 7, b1: 7 }
+const EXPECTED_SERIES = { a1: 7, a2: 6, b1: 7 }
 const EXPECTED_EPISODES = 20
 const VERBOSE = process.argv.includes('--verbose')
 

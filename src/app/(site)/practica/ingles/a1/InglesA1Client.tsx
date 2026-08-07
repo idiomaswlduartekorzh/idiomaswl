@@ -6,6 +6,7 @@ import ProgressBar from '@/components/practica/ProgressBar'
 import SkillCompletionBadge from '@/components/practica/SkillCompletionBadge'
 import XPStreak from '@/components/practica/XPStreak'
 import { getSkillProgress } from '@/lib/progress'
+import { listeningCard } from '@/data/practica/series/page-copy'
 
 const COLOR = '#0066cc'
 
@@ -37,8 +38,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: '3 ejercicios de comprensión auditiva A1. Audios de voz nativa en preparación — estructura y preguntas listas.',
-    count: '3 audios próximamente', href: '/practica/ingles/a1/escucha',
+    ...listeningCard('ingles', 'a1', '«The Corner Shop»: Maya, su abuelo y el local vacío de la esquina, en veinte diálogos con voz nativa.'),
+    href: '/practica/ingles/a1/escucha',
   },
 ]
 
