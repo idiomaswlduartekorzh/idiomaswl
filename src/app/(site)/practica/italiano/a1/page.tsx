@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
   title: 'Italiano A1 — Elige una habilidad | Idiomas WeLearn',
@@ -17,7 +18,7 @@ const HABILIDADES = [
   { id: 'escritura', emoji: '✍️', name: 'Scrittura', eng: 'Escritura', desc: '5 tareas guiadas con modelo: presentarsi, descrivere la famiglia, la casa, le attività e i gusti.', count: '5 prompts guiados', href: '/practica/italiano/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Espressione orale', eng: 'Expresión oral', desc: '12 frases de supervivencia en italiano con pronunciación detallada para hispanohablantes.', count: '12 frases esenciales', href: '/practica/italiano/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabolario', eng: 'Vocabulario', desc: '6 sets temáticos: la famiglia, i colori, il cibo, i giorni, il corpo, i numeri.', count: '6 sets · 60+ palabras', href: '/practica/italiano/a1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Ascolto', eng: 'Escucha', desc: '3 ejercicios de comprensión auditiva A1. Audios de voz nativa italiana en preparación.', count: '3 audios próximamente', href: '/practica/italiano/a1/escucha' },
+  { id: 'escucha', emoji: '🎧', name: 'Ascolto', eng: 'Escucha', ...listeningCard('italiano', 'a1', '«Il primo mese a Bologna»: Valeria llega a estudiar y recorre el barrio a pie, de la panadería a la sastrería.'), href: '/practica/italiano/a1/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#009246', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };
