@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
   title: 'Inglés A2 — Elige una habilidad | Idiomas WeLearn',
@@ -39,8 +40,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Listening',
-    desc: 'The Corner Project: 20 monólogos A2 que siguen una historia. Vocabulario previo, comprensión, transcripción y práctica progresiva.',
-    count: '20 audios · una historia A2 completa', href: '/practica/ingles/a2/escucha', available: true,
+    ...listeningCard('ingles', 'a2', '«Sam’s Corner»: Maya alquila el local de su abuelo y monta un café con veinte libros prestados de la biblioteca.'),
+    href: '/practica/ingles/a2/escucha', available: true,
   },
 ];
 

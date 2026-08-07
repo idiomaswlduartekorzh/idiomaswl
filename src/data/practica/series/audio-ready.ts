@@ -25,6 +25,7 @@ export const A1_AUDIO_READY = {
 
 /** Mismo contrato para A2. El validador lo lee como texto: literal plano, una línea por idioma. */
 export const A2_AUDIO_READY = {
+  ingles: true,
   aleman: true,
   italiano: true,
   frances: true,

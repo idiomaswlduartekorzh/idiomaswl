@@ -59,6 +59,18 @@
           "perfil_de_voz": "Hombre mayor, voz cálida y cercana, ritmo pausado",
           "voz": "The Pharaoh — descrito literalmente como abuelo cálido y cercano"
         },
+        "Ana": {
+          "voice_id": "iVwieylcLv7bwfinSNdw",
+          "papel": "Hermana menor de Maya; lleva el menú y las cuentas del café",
+          "perfil_de_voz": "Mujer joven, voz alta y clara, tono reflexivo",
+          "voz": "Louise — «clear, calm, thoughtful». Más joven que Rachel, que es Maya"
+        },
+        "Mrs. Ruiz": {
+          "voice_id": "GZ4PpFJV8ikEGUtBrjK7",
+          "papel": "Bibliotecaria del barrio; presta los libros que acaban en cada mesa",
+          "perfil_de_voz": "Mujer adulta, dicción profesional y registro cordial",
+          "voz": "Laura — narradora adulta, registro profesional"
+        },
         "Everyone": {
           "voice_id": "7PbNGDB5sJCFnOZuMPNL",
           "papel": "Coro del barrio",
