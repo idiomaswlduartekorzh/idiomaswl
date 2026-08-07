@@ -746,6 +746,11 @@
 .feedback p { line-height: 1.55; margin: 0.3rem 0 0; }
 .feedbackCorrect { background: #effaf4; color: #245e44; }
 .feedbackIncorrect { background: #fff2f2; color: #8a2230; }
+/* Ni verde ni rojo: un texto libre no se ha corregido, se ha puesto al lado del modelo.
+   Pintarlo de verde afirmaba un acierto que nadie había comprobado. */
+.feedbackNeutral { background: #f2f6ff; color: #23325e; }
+.compareList { margin: .55rem 0; padding-left: 1.1rem; display: grid; gap: .3rem; font-size: .92rem; }
+.modelReveal { margin: .55rem 0 .35rem; padding: .6rem .75rem; border-radius: 8px; background: rgba(255, 255, 255, .6); font-size: .92rem; }
 
 .exerciseActions {
   align-items: center;

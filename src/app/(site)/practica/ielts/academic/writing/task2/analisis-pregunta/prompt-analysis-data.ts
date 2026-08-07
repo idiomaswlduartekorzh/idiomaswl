@@ -1,4 +1,4 @@
-import { ESSAY_TYPES, type EssayTypeId } from '../introduccion/introduction-data';
+import { ESSAY_TYPES } from '../introduccion/introduction-data';
 
 export type PromptMap = {
   topic: string;
@@ -9,13 +9,26 @@ export type PromptMap = {
   checklist: string[];
 };
 
-const TOPICS: Record<EssayTypeId, string[]> = {
-  opinion: ['academic pressure', 'free public transport', 'university access', 'remote work', 'advertising to children'],
-  discussion: ['children and smartphones', 'city investment', 'online learning', 'prison policy', 'international tourism'],
-  'problem-solution': ['urban congestion', 'food waste', 'graduate unemployment', 'water scarcity', 'declining physical activity'],
-  'advantages-disadvantages': ['cashless payments', 'international study', 'automation', 'tourism growth', 'online shopping'],
-  'direct-questions': ['longer life expectancy', 'career changes', 'news avoidance', 'urban migration', 'language loss'],
-};
+/**
+ * El tema sale del propio ejemplo, no de una tabla aparte.
+ *
+ * Antes había un `TOPICS: Record<EssayTypeId, string[]>` y el tema se buscaba por POSICIÓN:
+ * `TOPICS[lesson.id][index]`. Dos listas separadas que hay que mantener en el mismo orden a
+ * mano, y que se habían desincronizado: 10 de los 25 ejercicios mostraban el tema de otro.
+ * El de «prison sentences» anunciaba international tourism, el de «museums» anunciaba prison
+ * policy y el de «team sports» anunciaba online learning. El estudiante leía un enunciado
+ * sobre cárceles y arriba le decía que el tema era turismo.
+ *
+ * El dato correcto ya estaba en el ejemplo desde el principio —`title` dice «Prison or
+ * rehabilitation», «Museums», «Team or individual sport»—, así que la corrección no es
+ * volver a alinear las dos listas: es que no haya dos listas. Con el tema colgando del
+ * ejemplo, no existe orden que se pueda romper.
+ */
+const toTopic = (title: string) => title.charAt(0).toLowerCase() + title.slice(1);
+
+/** Identificador estable e irrepetible: de él cuelgan enunciado, modelo y feedback. */
+const toId = (essayType: string, title: string) =>
+  `${essayType}--${title.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/gu, '').replace(/[^a-z0-9]+/gu, '-').replace(/^-|-$/gu, '')}`;
 
 function getBodyRoute(plan: string, fallback: [string, string]): [string, string] {
   const bodyOnePrefix = 'Body 1: ';
@@ -32,10 +45,12 @@ function getBodyRoute(plan: string, fallback: [string, string]): [string, string
 
 export const PROMPT_ANALYSIS_LESSONS = ESSAY_TYPES.map((lesson) => ({
   ...lesson,
-  examples: lesson.examples.map((example, index) => ({
+  examples: lesson.examples.map((example) => ({
     ...example,
+    id: toId(lesson.id, example.title),
+    essayType: lesson.id,
     map: {
-      topic: TOPICS[lesson.id][index],
+      topic: toTopic(example.title),
       instruction: lesson.signal,
       scope: example.instruction,
       position: example.blocks.find((block) => block.label === 'Position')?.text ?? lesson.position,

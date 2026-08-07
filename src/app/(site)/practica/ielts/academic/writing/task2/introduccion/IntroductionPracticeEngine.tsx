@@ -164,14 +164,19 @@ function ProductionLevel({ kind, essayType, onNext }: { kind: 'sentence' | 'intr
   const [value, setValue] = useState('');
   const [reviewed, setReviewed] = useState(false);
   const words = countWords(value);
+  // Cada línea de esta lista tiene que comprobar lo que dice. Dos no lo hacían: «answers
+  // the instruction» y «establishes topic and thesis» se marcaban en verde con un simple
+  // recuento de palabras, que de eso no sabe nada. Se sustituyen por lo que el recuento sí
+  // puede afirmar —que la frase tiene cuerpo suficiente— y el juicio sobre el contenido
+  // pasa a la comparación con el modelo, que es donde vive.
   const checks = kind === 'sentence'
     ? [
-        { label: 'The sentence answers the instruction rather than announcing the essay.', pass: words >= 12 },
+        { label: 'The sentence is developed enough to carry a claim (12+ words).', pass: words >= 12 },
         { label: 'It avoids memorised openings such as “Nowadays” and “In today’s world”.', pass: !/^\s*(nowadays|in today'?s world)/i.test(value) },
         { label: 'It contains a controlling verb or stance marker.', pass: /\b(agree|disagree|believe|argue|results?|causes?|requires?|outweigh|driven|should|can)\b/i.test(value) },
       ]
     : [
-        { label: 'The introduction has enough substance to establish topic and thesis.', pass: words >= 28 },
+        { label: 'The introduction is long enough to hold a paraphrase and a thesis (28+ words).', pass: words >= 28 },
         { label: 'It stays within the WeLearn practice target of about 40–70 words.', pass: words >= 40 && words <= 70 },
         { label: 'It avoids a memorised opening.', pass: !/^\s*(nowadays|in today'?s world|it is a fact)/i.test(value) },
         { label: 'It does not merely say “this essay will discuss”.', pass: !/this essay will discuss/i.test(value) },

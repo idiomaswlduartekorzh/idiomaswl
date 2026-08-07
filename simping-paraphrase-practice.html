@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio di parafrasi A2-B1</title>
+    <style>
+      :root {
+        --bg: radial-gradient(120% 120% at 15% 0%, #f4f1ff 0%, #f2f9ff 45%, #dcf6ec 100%);
+        --linea: #d6dcff;
+        --testo: #1f2540;
+        --primario: #5b49ff;
+        --ok: #1aa77e;
+        --avviso: #ef8f1a;
+        --carta: rgba(255, 255, 255, 0.85);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 1rem;
+        background: var(--bg);
+        color: var(--testo);
+        font-family: "Trebuchet MS", "Segoe UI", "Verdana", sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+
+      section,
+      header {
+        background: linear-gradient(130deg, #ffffffcc, #f3eeffcc);
+        border: 1px solid var(--linea);
+        border-radius: 14px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 10px 30px #00000014;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+        background: #2d2d4617;
+        font-size: 0.82rem;
+        margin-bottom: 0.6rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0.7rem;
+      }
+
+      .card {
+        background: var(--carta);
+        border: 1px solid var(--linea);
+        border-radius: 12px;
+        padding: 0.8rem;
+      }
+
+      .source {
+        border-left: 4px solid var(--primario);
+        padding: 0.8rem;
+        border-radius: 10px;
+        background: #edf0ff;
+      }
+
+      .source p {
+        margin: 0.4rem 0;
+      }
+
+      label {
+        font-weight: 700;
+        margin-top: 0.4rem;
+        display: block;
+      }
+
+      textarea,
+      select,
+      button {
+        font-family: inherit;
+        font-size: 1rem;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 160px;
+        margin-top: 0.55rem;
+        padding: 0.75rem;
+        border-radius: 12px;
+        border: 1px solid #c8cde8;
+        resize: vertical;
+      }
+
+      .input-wrap {
+        margin-top: 0.5rem;
+      }
+
+      .actions {
+        margin-top: 0.8rem;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      button {
+        border-radius: 999px;
+        border: 0;
+        padding: 0.45rem 1rem;
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      .primary {
+        background: var(--primario);
+        color: white;
+      }
+
+      .secondary {
+        background: white;
+        border: 1px solid #d4d7ee;
+      }
+
+      .result {
+        margin-top: 0.7rem;
+        min-height: 1rem;
+      }
+
+      .ok {
+        color: var(--ok);
+      }
+
+      .warn {
+        color: var(--avviso);
+      }
+
+      .models {
+        margin-top: 0.8rem;
+        display: none;
+      }
+
+      .model {
+        border: 1px dashed #b5b9ec;
+        border-radius: 10px;
+        padding: 0.65rem;
+        background: #fff7e9;
+        margin-bottom: 0.5rem;
+      }
+
+      .rubrica {
+        margin-top: 0.8rem;
+      }
+
+      .rubrica ul,
+      .domande ul {
+        padding-left: 1.1rem;
+      }
+
+      .question {
+        margin-top: 0.5rem;
+        border-left: 3px solid var(--primario);
+        padding-left: 0.6rem;
+      }
+
+      .meta {
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      select {
+        padding: 0.45rem;
+        border: 1px solid #ccd2ed;
+        border-radius: 10px;
+      }
+
+      .small {
+        font-size: 0.92rem;
+        color: #4a4f6c;
+      }
+
+      .tags {
+        margin-top: 0.4rem;
+      }
+
+      .tag {
+        display: inline-flex;
+        margin: 0.15rem;
+        padding: 0.2rem 0.55rem;
+        border-radius: 999px;
+        background: #ececff;
+        font-size: 0.82rem;
+      }
+
+      .progress {
+        margin-top: 0.8rem;
+      }
+
+      .barra {
+        height: 10px;
+        background: #e5e8fb;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .barra > span {
+        height: 100%;
+        width: 0;
+        display: block;
+        background: linear-gradient(90deg, #9eacff, #53ccb3);
+        transition: width 220ms ease;
+      }
+
+      .goal-box {
+        width: 100%;
+        min-height: 140px;
+        white-space: pre-wrap;
+      }
+
+      @media (max-width: 700px) {
+        body {
+          padding: 0.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="badge">Laboratorio di parafrasi per L2 (A2-B1)</span>
+        <h1>Parafrasi guidata su comportamenti sociali</h1>
+        <p>
+          Obiettivo: riformulare testi realistici mantenendo lo stesso significato e migliorando il lessico.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Metodo</h3>
+            <p class="small">
+              Prima individua il messaggio principale, poi riscrivi con parole diverse, senza cambiare idea e tono.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Valutazione</h3>
+            <p class="small">
+              Il controllo valuta coerenza semantica (stessa idea) e qualità lessicale (parole più ricche, meno copia).
+            </p>
+          </article>
+          <article class="card">
+            <h3>Motivazione</h3>
+            <p class="small">
+              I temi sono sociali e vicini alla vita quotidiana per favorire conversazione e riflessione.
+            </p>
+          </article>
+        </div>
+
+        <p class="small"><strong>Nota:</strong> la casella di risposta usa <code>spellcheck="false"</code>, quindi non ci sono sottolineature rosse.</p>
+      </header>
+
+      <section>
+        <h2>Seleziona il tema</h2>
+        <div class="meta">
+          <label for="tema" style="margin:0">Tema:</label>
+          <select id="tema" onchange="renderExercise()"></select>
+          <button class="secondary" onclick="renderExercise()">Carica</button>
+        </div>
+
+        <div class="progress">
+          <strong>Progresso</strong>
+          <div class="barra"><span id="progresso"></span></div>
+          <p id="progressoTesto" class="small">Scegli un tema e scrivi una tua parafrasi.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="titoloEsercizio">Esercizio</h2>
+        <p id="introEsercizio" class="small"></p>
+
+        <div class="source">
+          <h3>Testo (2-4 frasi)</h3>
+          <div id="testo"></div>
+        </div>
+
+        <div class="input-wrap">
+          <label for="risposta">La tua parafrasi:</label>
+          <textarea
+            id="risposta"
+            rows="8"
+            spellcheck="false"
+            autocorrect="off"
+            autocapitalize="off"
+            autocomplete="off"
+            placeholder="Scrivi qui la tua versione del testo..."
+          ></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="primary" onclick="valuta()">Verifica la parafrasi</button>
+          <button class="secondary" onclick="pulisci()">Ripeti</button>
+          <button class="secondary" onclick="copiaTestoOriginale()">Copia testo originale</button>
+        </div>
+
+        <div id="valutazione" class="result"></div>
+
+        <div class="rubrica">
+          <h3>Mini-rubrica di auto-valutazione</h3>
+          <ul>
+            <li>Ho conservato lo stesso significato generale del testo.</li>
+            <li>Ho usato almeno 3 parole o espressioni diverse da quelle del testo.</li>
+            <li>Il mio testo è chiaro, coerente e grammaticalmente leggibile.</li>
+          </ul>
+        </div>
+
+        <div class="tags" id="tagArea"></div>
+      </section>
+
+      <section>
+        <h2 id="titoloVarianti">3 versioni alternative del testo</h2>
+        <div id="modelli" class="models"></div>
+      </section>
+
+      <section>
+        <h2>Domande di discussione (per parlare del tema)</h2>
+        <div id="domande" class="domande"></div>
+      </section>
+
+      <section>
+        <h2>Prompt goal pronto da riutilizzare</h2>
+        <textarea id="goalPrompt" class="goal-box" spellcheck="false" readonly>
+Sei un tutor di italiano per studenti L2. Crea un esercizio di parafrasi completamente in italiano.
+Ogni esercizio deve includere:
+1) un testo di 2-4 frasi su un comportamento sociale realistico,
+2) una casella per la risposta dello studente senza correzione automatica in tempo reale (niente sottolineature rosse),
+3) una valutazione che verifichi coerenza semantica e qualità lessicale,
+4) 3 versioni alternative del testo sorgente con lo stesso significato ma parole diverse,
+5) una mini-rubrica di auto-valutazione,
+6) 2-3 domande di discussione che rendano il tema motivante.
+Il tono deve essere chiaro, educativo, inclusivo e adatto a livello A2-B1.
+        </textarea>
+        <div class="actions">
+          <button class="secondary" onclick="copiaPrompt()">Copia prompt</button>
+        </div>
+        <p id="copiedPrompt" class="small"></p>
+      </section>
+    </main>
+
+    <script>
+      const esercizi = {
+        simping: {
+          titolo: "Simping e riconoscimento sociale",
+          introduzione:
+            "Riflette sul rapporto tra autostima e bisogno di approvazione nelle relazioni.",
+          testo: [
+            "Il simping è un comportamento in cui una persona mostra un interesse eccessivo verso un’altra, spesso per attrazione, eccessivamente coinvolgendo tutto il proprio tempo emotivo.",
+            "In molti casi questa persona tende a mettere i bisogni dell’altro al primo posto e a dimenticare le proprie necessità.",
+            "Quando l’altra persona non risponde con lo stesso interesse, chi simpa può sentirsi ansioso, dipendente e confuso."
+          ],
+          paroleChiave: ["simpatia", "interesse", "bisogni", "approvazione", "ansia", "dipendenza"],
+          paroleGuida: ["interesse eccessivo", "riconoscimento", "autostima", "dipendenza emotiva", "attesa di conferme"],
+          varianti: [
+            "Il simping indica un coinvolgimento eccessivo verso qualcuno che porta a dare priorità quasi totale agli altri bisogni, anche quando la relazione non è ricambiata.",
+            "Quando una persona cerca continuamente conferme da un’altra, può trascurare i propri limiti e accettare attenzioni sbagliate pur di non essere ignorata.",
+            "Questa condotta appare quando il desiderio di approvazione supera la cura di sé e la gestione equilibrata dei sentimenti."
+          ],
+          domande: [
+            "Come distinguere un interesse sano da un interesse eccessivo?",
+            "Quali segnali indicano che una persona sta perdendo i propri confini?",
+            "Che cosa può aiutare a recuperare fiducia in sé stessi?"
+          ]
+        },
+        gelosia: {
+          titolo: "Gelosia e fiducia",
+          introduzione:
+            "Tema utile per parlare di relazioni, privacy e comunicazione rispettosa.",
+          testo: [
+            "La gelosia nasce spesso da insicurezza e paura di perdere un legame importante.",
+            "A volte una persona controlla in modo eccessivo messaggi, abitudini e orari dell’altro, anche senza prove concrete.",
+            "Questa dinamica indebolisce la fiducia, crea tensione e rende la relazione più fragile."
+          ],
+          paroleChiave: ["gelosia", "insicurezza", "controllo", "fiducia", "relazione", "privacy"],
+          paroleGuida: ["paura di abbandono", "comunicazione", "regole comuni", "spazio personale", "rispetto"],
+          varianti: [
+            "Quando prevale la gelosia, il bisogno di rassicurazione può trasformarsi in controllo continuo delle azioni altrui.",
+            "Il sospetto costante, anche senza fatti, mina la fiducia reciproca e rende difficile costruire dialogo.",
+            "Una relazione sana richiede limiti personali chiari: senza fiducia, la vicinanza si trasforma in tensione." 
+          ],
+          domande: [
+            "In quali situazioni è utile parlare apertamente dei propri timori?",
+            "Quali sono i limiti tra attenzione e controllo?",
+            "Che regole può rispettare una coppia per sentirsi al sicuro e liberi?"
+          ]
+        },
+        pressione: {
+          titolo: "Pressione sociale e confronto",
+          introduzione:
+            "Tema sul ruolo dei social media e sul confronto con gli altri nella vita quotidiana.",
+          testo: [
+            "La pressione sociale spinge molte persone a confrontarsi continuamente con gli altri, soprattutto online.",
+            "Si tende a mostrare solo i successi e a nascondere dubbi o insicurezze per paura del giudizio.",
+            "Questo confronto continuo può diminuire l’autostima e rendere difficile vivere in modo autentico."
+          ],
+          paroleChiave: ["pressione", "confronto", "social media", "giudizio", "autenticità", "autostima"],
+          paroleGuida: ["confronto sociale", "immagine pubblica", "benessere digitale", "standard esterni", "equilibrio"],
+          varianti: [
+            "Il confronto continuo con standard irrealistici crea tensione e sensazione di inadeguatezza, anche quando la realtà personale è positiva.",
+            "Mostrare solo la parte luminosa di sé può dare approvazione immediata, ma spesso aumenta solitudine e ansia.",
+            "Quando la misura del valore personale diventa esterna, la persona perde contatto con i propri reali bisogni." 
+          ],
+          domande: [
+            "Perché il confronto continuo può diventare faticoso?",
+            "Come proteggere la propria autostima nel mondo digitale?",
+            "Quali abitudini aiutano a restare autentici online?"
+          ]
+        }
+      };
+
+      const temaSelect = document.getElementById('tema');
+      const titoloEsercizio = document.getElementById('titoloEsercizio');
+      const introEsercizio = document.getElementById('introEsercizio');
+      const testoArea = document.getElementById('testo');
+      const risposta = document.getElementById('risposta');
+      const valutazione = document.getElementById('valutazione');
+      const tagArea = document.getElementById('tagArea');
+      const modelli = document.getElementById('modelli');
+      const titoloVarianti = document.getElementById('titoloVarianti');
+      const domande = document.getElementById('domande');
+      const progresso = document.getElementById('progresso');
+      const progressoTesto = document.getElementById('progressoTesto');
+
+      let temaCorrente = 'simping';
+      const stato = {
+        tentativi: 0,
+        buoni: 0,
+      };
+
+      function normalizza(testo) {
+        return testo
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^a-zà-ù0-9\s']/gi, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      function parole(testo) {
+        return normalizza(testo).split(' ').filter(Boolean);
+      }
+
+      function overlapCoerenza(rispostaUtente, fonte) {
+        const a = new Set(parole(rispostaUtente));
+        const b = new Set(parole(fonte));
+        if (!a.size || !b.size) return 0;
+        let condivise = 0;
+        a.forEach((w) => {
+          if (b.has(w)) condivise += 1;
+        });
+        return condivise / Math.max(a.size, b.size);
+      }
+
+      function punteggioLessicale(rispostaUtente, terminiBase) {
+        const a = new Set(parole(rispostaUtente));
+        const base = new Set(terminiBase.map((w) => normalizza(w)));
+        if (!a.size) return 0;
+        let nuovi = 0;
+        a.forEach((w) => {
+          if (!base.has(w) && w.length > 3) nuovi += 1;
+        });
+        return Math.min(1, nuovi / 8);
+      }
+
+      function costruisciOpzioniTemi() {
+        temaSelect.innerHTML = Object.keys(esercizi)
+          .map((key) => `<option value="${key}">${esercizi[key].titolo}</option>`)
+          .join('');
+      }
+
+      function renderExercise() {
+        temaCorrente = temaSelect.value || 'simping';
+        const e = esercizi[temaCorrente];
+
+        titoloEsercizio.textContent = `Esercizio: ${e.titolo}`;
+        introEsercizio.textContent = e.introduzione;
+        titoloVarianti.textContent = '3 versioni alternative dello stesso testo';
+
+        testoArea.innerHTML = e.testo.map((riga) => `<p>${riga}</p>`).join('');
+
+        tagArea.innerHTML = e.paroleGuida
+          .map((w) => `<span class="tag">${w}</span>`)
+          .join('');
+
+        const domandeMarkup = e.domande
+          .map((q) => `<div class="question"><p>${q}</p></div>`)
+          .join('');
+        domande.innerHTML = domandeMarkup;
+
+        modelli.style.display = 'none';
+        modelli.innerHTML = '';
+        valutazione.textContent = '';
+        risposta.value = '';
+      }
+
+      function valuta() {
+        const e = esercizi[temaCorrente];
+        const testoOriginale = e.testo.join(' ');
+        const prova = risposta.value.trim();
+
+        if (!prova) {
+          valutazione.className = 'result warn';
+          valutazione.textContent = 'Scrivi prima una parafrasi completa, almeno 2-3 frasi.';
+          return;
+        }
+
+        stato.tentativi += 1;
+
+        const paroleTot = parole(prova).length;
+        const coerenza = overlapCoerenza(prova, testoOriginale);
+        const lessico = punteggioLessicale(prova, e.paroleChiave);
+
+        let punteggio = 0;
+        const checkSemantica = coerenza >= 0.38 && coerenza <= 0.85;
+        const checkLessico = lessico >= 0.4;
+        const checkLunghezza = paroleTot >= 22;
+
+        if (checkSemantica) punteggio += 1;
+        if (checkLessico) punteggio += 1;
+        if (checkLunghezza) punteggio += 1;
+
+        if (checkSemantica && checkLunghezza) {
+          stato.buoni += 1;
+        }
+
+        if (checkSemantica) {
+          valutazione.innerHTML += '';
+        }
+
+        if (punteggio >= 2) {
+          valutazione.className = 'result ok';
+          valutazione.textContent =
+            `Buon lavoro! Coerenza semantica: ${checkSemantica ? 'presente' : 'da rinforzare'}; ` +
+            `qualità lessicale: ${checkLessico ? 'buona' : 'da migliorare'}; ` +
+            `punteggio ${punteggio}/3.`;
+        } else {
+          valutazione.className = 'result warn';
+          valutazione.textContent =
+            `Bene l'avvio, ma va perfezionato. Coerenza semantica: ${checkSemantica ? 'ok' : 'troppo distante'}, ` +
+            `lessico: ${checkLessico ? 'accettabile' : 'può crescere'}, punteggio ${punteggio}/3.`;
+        }
+
+        modelli.innerHTML = e.varianti
+          .map((m, i) => `<div class="model"><strong>Versione ${i + 1}:</strong> ${m}</div>`)
+          .join('');
+        modelli.style.display = 'block';
+
+        aggiornaProgresso();
+      }
+
+      function pulisci() {
+        risposta.value = '';
+        valutazione.textContent = '';
+        valutazione.className = 'result';
+        modelli.innerHTML = '';
+        modelli.style.display = 'none';
+      }
+
+      function copiaTestoOriginale() {
+        const e = esercizi[temaCorrente];
+        const testo = e.testo.join(' ');
+        navigator.clipboard.writeText(testo).then(() => {
+          valutazione.className = 'result ok';
+          valutazione.textContent = 'Testo originale copiato negli appunti.';
+        });
+      }
+
+      function copiaPrompt() {
+        const prompt = document.getElementById('goalPrompt');
+        prompt.select();
+        document.execCommand('copy');
+        const copied = document.getElementById('copiedPrompt');
+        copied.textContent = 'Prompt copiato negli appunti.';
+      }
+
+      function aggiornaProgresso() {
+        const p = Math.min(Math.round((stato.buoni / 3) * 100), 100);
+        progresso.style.width = p + '%';
+
+        if (stato.buoni === 0) {
+          progressoTesto.textContent = 'Completa almeno una prova ben riuscita per iniziare il progresso.';
+        } else if (stato.buoni === 1) {
+          progressoTesto.textContent = 'Hai completato 1 prova buona. Continua con un secondo testo.';
+        } else if (stato.buoni === 2) {
+          progressoTesto.textContent = 'Ottimo: 2 prove buone. Sei vicino all’obiettivo.';
+        } else {
+          progressoTesto.textContent = 'Obiettivo raggiunto: hai completato con successo 3 prove.';
+        }
+      }
+
+      costruisciOpzioniTemi();
+      renderExercise();
+    </script>
+  </body>
+</html>

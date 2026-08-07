@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, RotateCcw } from 'lucide-react';
 import type { EssayTypeId } from '../introduccion/introduction-data';
 import { BODY_TWO_LESSONS, bodyTwoParagraph } from './body-two-data';
+import { placeFirstAsCorrect } from '@/lib/practica/shuffle-options';
 import styles from '../introduccion/page.module.css';
 
 const LEVELS = [
@@ -18,7 +19,17 @@ const LEVELS = [
   { title: 'Transfer to complete essay practice', mode: 'transfer' },
 ] as const;
 
-function rotateOptions<T>(items: T[], amount: number) { const shift = amount % items.length; return [...items.slice(shift), ...items.slice(0, shift)]; }
+/**
+ * Reparte las opciones; la correcta se escribe siempre primera en el array.
+ *
+ * Era una rotación cíclica sembrada con el número de nivel, igual para los cinco tipos de
+ * ensayo: la secuencia de letras correctas era idéntica en todos y bastaba memorizarla para
+ * aprobar el motor sin leer. Ahora la semilla incluye el tipo y el reparto es un barajado
+ * real, con las posiciones equilibradas por bloques.
+ */
+function rotateOptions<T>(items: T[], seed: string, index: number) {
+  return placeFirstAsCorrect(items, seed, index).options;
+}
 function wordCount(value: string) { return value.trim() ? value.trim().split(/\s+/).length : 0; }
 
 export default function BodyTwoPracticeEngine({ essayType }: { essayType: EssayTypeId }) {
@@ -37,13 +48,13 @@ export default function BodyTwoPracticeEngine({ essayType }: { essayType: EssayT
   useEffect(() => { setParagraphFields(exercise.blocks.map(() => '')); }, [exercise]);
 
   const mcq = useMemo(() => {
-    if (level === 0) return { question: `What is the function of the ${exercise.blocks[2].label.toLowerCase()} block?`, context: exercise.blocks[2].text, correct: exercise.blocks[2].purpose, options: rotateOptions([exercise.blocks[2].purpose, 'Repeat Body 1 with different vocabulary.', 'Introduce several unrelated ideas.', 'Replace the conclusion with a new argument.'], level + lesson.examples.indexOf(exercise)), feedback: `For this ${lesson.shortLabel} task, the ${exercise.blocks[2].label.toLowerCase()} performs a specific job: ${exercise.blocks[2].purpose}` };
-    if (level === 1) return { question: 'Which sentence gives Body 2 one distinct and aligned job?', context: exercise.prompt, correct: exercise.blocks[0].text, options: rotateOptions([exercise.blocks[0].text, exercise.commonMistake, 'This topic is important and has many different aspects.', 'As stated in Body 1, the first idea is very significant.'], level + lesson.examples.indexOf(exercise)), feedback: 'The correct sentence adds the second reason, view, response or direct answer without losing alignment.' };
-    if (level === 2) return { question: 'Which diagnosis identifies the most serious Body 2 error?', context: `Body 2 job: ${exercise.paragraphJob} Draft: “The first idea is important. This shows that the first idea has many benefits. For this reason, the first idea should be considered.”`, correct: 'The draft repeats Body 1 instead of completing the second paragraph job.', options: rotateOptions(['The draft repeats Body 1 instead of completing the second paragraph job.', 'The draft needs an invented statistic.', 'The draft should add a proverb.', 'The draft must remove all links to Body 1.'], level + lesson.examples.indexOf(exercise)), feedback: 'Progression means adding the next required idea, not merely restating earlier reasoning.' };
-    return { question: `Which sentence best completes the ${exercise.blocks[2].label} block?`, context: `${exercise.blocks[0].text} ${exercise.blocks[1].text} [${exercise.blocks[2].label.toUpperCase()} MISSING] ${exercise.blocks[3].text} ${exercise.blocks[4].text}`, correct: exercise.blocks[2].text, options: rotateOptions([exercise.blocks[2].text, 'This is a very important issue in the modern world.', 'A famous study proves this beyond any doubt.', 'There are many advantages and disadvantages to everything.'], level + lesson.examples.indexOf(exercise)), feedback: `The model ${exercise.blocks[2].label.toLowerCase()} performs the relationship required by this question type.` };
+    if (level === 0) return { question: `What is the function of the ${exercise.blocks[2].label.toLowerCase()} block?`, context: exercise.blocks[2].text, correct: exercise.blocks[2].purpose, options: rotateOptions([exercise.blocks[2].purpose, 'Repeat Body 1 with different vocabulary.', 'Introduce several unrelated ideas.', 'Replace the conclusion with a new argument.'], `body2|${lesson.id}`, level), feedback: `For this ${lesson.shortLabel} task, the ${exercise.blocks[2].label.toLowerCase()} performs a specific job: ${exercise.blocks[2].purpose}` };
+    if (level === 1) return { question: 'Which sentence gives Body 2 one distinct and aligned job?', context: exercise.prompt, correct: exercise.blocks[0].text, options: rotateOptions([exercise.blocks[0].text, exercise.commonMistake, 'This topic is important and has many different aspects.', 'As stated in Body 1, the first idea is very significant.'], `body2|${lesson.id}`, level), feedback: 'The correct sentence adds the second reason, view, response or direct answer without losing alignment.' };
+    if (level === 2) return { question: 'Which diagnosis identifies the most serious Body 2 error?', context: `Body 2 job: ${exercise.paragraphJob} Draft: “The first idea is important. This shows that the first idea has many benefits. For this reason, the first idea should be considered.”`, correct: 'The draft repeats Body 1 instead of completing the second paragraph job.', options: rotateOptions(['The draft repeats Body 1 instead of completing the second paragraph job.', 'The draft needs an invented statistic.', 'The draft should add a proverb.', 'The draft must remove all links to Body 1.'], `body2|${lesson.id}`, level), feedback: 'Progression means adding the next required idea, not merely restating earlier reasoning.' };
+    return { question: `Which sentence best completes the ${exercise.blocks[2].label} block?`, context: `${exercise.blocks[0].text} ${exercise.blocks[1].text} [${exercise.blocks[2].label.toUpperCase()} MISSING] ${exercise.blocks[3].text} ${exercise.blocks[4].text}`, correct: exercise.blocks[2].text, options: rotateOptions([exercise.blocks[2].text, 'This is a very important issue in the modern world.', 'A famous study proves this beyond any doubt.', 'There are many advantages and disadvantages to everything.'], `body2|${lesson.id}`, level), feedback: `The model ${exercise.blocks[2].label.toLowerCase()} performs the relationship required by this question type.` };
   }, [exercise, lesson, level]);
 
-  const assemblyChoices = useMemo(() => rotateOptions(exercise.blocks.map((item) => item.label), level + lesson.examples.indexOf(exercise)), [exercise, lesson.examples, level]);
+  const assemblyChoices = useMemo(() => rotateOptions(exercise.blocks.map((item) => item.label), `body2|${lesson.id}`, level), [exercise, lesson.examples, level]);
   const assemblyCorrect = assembled.join('|') === exercise.blocks.map((item) => item.label).join('|');
   const mcqCorrect = selected === mcq.correct;
   const paragraphWords = paragraphFields.reduce((total, value) => total + wordCount(value), 0);

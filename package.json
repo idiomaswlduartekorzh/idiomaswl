@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series",
+    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task2",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -28,6 +28,7 @@
     "audit:icfes-final": "node scripts/audit-icfes-final.mjs",
     "audit:icfes-inventory": "node --experimental-strip-types scripts/audit-icfes-inventory.mjs",
     "check:exam-practice-content": "node scripts/check-exam-practice-content.mjs",
+    "check:ielts-task2": "node scripts/check-ielts-task2-alignment.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",
     "clean": "rm -rf .next .turbo node_modules/.cache && echo '✓ Cache limpiado'",
     "audit:listening-audio": "node scripts/audit-listening-audio.mjs"

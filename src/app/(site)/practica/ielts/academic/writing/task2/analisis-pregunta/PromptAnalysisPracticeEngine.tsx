@@ -41,10 +41,26 @@ export default function PromptAnalysisPracticeEngine({ essayType }: { essayType:
   const requiredWords = level === 3 ? 20 : level === 5 ? 18 : level === 6 ? 45 : level === 7 ? 250 : 0;
 
   function reset(next = level) { setLevel(next); setSelected(''); setChecked(false); setWriting(''); }
-  const isCorrect = writingLevel ? wordCount >= requiredWords : selected === correct;
+
+  /**
+   * Solo hay respuesta correcta que comprobar cuando el ejercicio es de opción.
+   *
+   * Antes esto era `writingLevel ? wordCount >= requiredWords : selected === correct`, y
+   * el panel verde decía «Aligned with the prompt · The plan keeps the instruction, scope
+   * and paragraph route visible». Nada de eso se miraba: veinte palabras cualesquiera lo
+   * disparaban, y en el nivel 8, doscientas cincuenta. Además la rama de fallo era
+   * inalcanzable, porque el botón está bloqueado por debajo del umbral y pulsarlo es la
+   * única forma de evaluar: al pintarse el panel, la condición ya era cierta por
+   * construcción.
+   *
+   * Un texto libre no se puede calificar aquí, así que no se califica: se recuerda el
+   * mínimo, se revela el modelo y se compara. El recuento sigue existiendo, pero dice lo
+   * único que sabe —que hubo intento—, no que el intento sea bueno.
+   */
+  const isCorrect = writingLevel ? null : selected === correct;
 
   return <section className={styles.practiceSection} aria-labelledby="analysis-engine-heading">
-    <div className={styles.sectionHeading}><p className={styles.kicker}>WeLearn progressive engine</p><h2 id="analysis-engine-heading">Practise prompt analysis by level</h2><p>Move from recognition to a complete plan. Feedback checks alignment and completion, not an automated IELTS band.</p></div>
+    <div className={styles.sectionHeading}><p className={styles.kicker}>WeLearn progressive engine</p><h2 id="analysis-engine-heading">Practise prompt analysis by level</h2><p>Move from recognition to a complete plan. Multiple-choice levels are marked; writing levels are not graded — you compare your plan against an expert model.</p></div>
     <div className={styles.levelTabs} aria-label="Practice levels">{LEVELS.map((item, index) => <button key={item.title} type="button" className={index === level ? styles.levelActive : ''} onClick={() => reset(index)}>{index + 1} · {item.title}</button>)}</div>
     <div className={styles.enginePanel}>
       <div className={styles.engineHeader}><div><h3>{LEVELS[level].title}</h3><p>{lesson.shortLabel} · Level {level + 1} of 8</p></div><span>{level + 1}/8</span></div>
@@ -52,8 +68,10 @@ export default function PromptAnalysisPracticeEngine({ essayType }: { essayType:
         <span className={styles.typeTag}>{lesson.shortLabel}</span>
         <p className={styles.exercisePrompt}>{example.prompt}</p>
         <p className={styles.exerciseInstruction}>{LEVELS[level].instruction}</p>
-        {writingLevel ? <><textarea className={level === 7 ? styles.essayWriter : styles.writer} value={writing} onChange={(event) => setWriting(event.target.value)} placeholder={level === 3 ? 'Topic → Instruction → Scope → Position → Body route' : level === 7 ? 'Start with a five-minute plan, then write your complete essay here…' : 'Write your plan here…'} /><div className={styles.writerMeta}><span>{wordCount} words</span><span>{requiredWords}+ words required at this level</span></div></> : <div className={styles.optionGrid}>{options.map((option, index) => <button key={option} type="button" onClick={() => !checked && setSelected(option)} className={`${styles.option} ${selected === option ? styles.selected : ''} ${checked && option === correct ? styles.correct : ''} ${checked && selected === option && option !== correct ? styles.incorrect : ''}`}><span>{String.fromCharCode(65 + index)}</span>{option}</button>)}</div>}
-        {checked && <div className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackIncorrect}`}><Check size={20} /><div><strong>{isCorrect ? 'Aligned with the prompt' : 'Revise the missing block'}</strong><p>{isCorrect ? `The plan keeps the ${lesson.shortLabel.toLowerCase()} instruction, scope and paragraph route visible.` : `Check this requirement: ${example.map.checklist[0]}`}</p></div></div>}
+        {writingLevel ? <><textarea className={level === 7 ? styles.essayWriter : styles.writer} value={writing} onChange={(event) => setWriting(event.target.value)} placeholder={level === 3 ? 'Topic → Instruction → Scope → Position → Body route' : level === 7 ? 'Start with a five-minute plan, then write your complete essay here…' : 'Write your plan here…'} /><div className={styles.writerMeta}><span>{wordCount} words</span><span>{wordCount >= requiredWords ? `Minimum ${requiredWords} words reached` : `Minimum ${requiredWords} words · ${requiredWords - wordCount} to go`}</span></div></> : <div className={styles.optionGrid}>{options.map((option, index) => <button key={option} type="button" onClick={() => !checked && setSelected(option)} className={`${styles.option} ${selected === option ? styles.selected : ''} ${checked && option === correct ? styles.correct : ''} ${checked && selected === option && option !== correct ? styles.incorrect : ''}`}><span>{String.fromCharCode(65 + index)}</span>{option}</button>)}</div>}
+        {checked && (isCorrect === null
+          ? <div className={`${styles.feedback} ${styles.feedbackNeutral}`}><div><strong>Your response is ready to compare</strong><p>Nothing here has been marked right or wrong: a plan written in your own words cannot be graded automatically. Read the model below and check your own against it.</p><ul className={styles.compareList}>{example.map.checklist.map((item) => <li key={item}>{item}</li>)}</ul><p className={styles.modelReveal}><strong>Model plan:</strong> Body 1: {example.map.bodyRoute[0]} · Body 2: {example.map.bodyRoute[1]}</p><p>Does your plan cover every line above, even if you worded it differently?</p></div></div>
+          : <div className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackIncorrect}`}><Check size={20} /><div><strong>{isCorrect ? 'Correct' : 'Revise the missing block'}</strong><p>{isCorrect ? `That is the ${lesson.shortLabel.toLowerCase()} requirement this prompt sets.` : `Check this requirement: ${example.map.checklist[0]}`}</p></div></div>)}
         <div className={styles.exerciseActions}><button type="button" className="btn btn-ghost" onClick={() => reset()}><RotateCcw size={16} /> Reset</button><button type="button" className="btn btn-primary" disabled={writingLevel ? wordCount < requiredWords : !selected} onClick={() => checked ? reset(Math.min(7, level + 1)) : setChecked(true)}>{checked ? <>Next level <ArrowRight size={16} /></> : 'Check analysis'}</button></div>
       </div>
     </div>

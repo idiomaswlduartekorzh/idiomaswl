@@ -1,7 +1,8 @@
 'use client';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
+import { placeOption } from '@/lib/practica/shuffle-options';
 
 const BANK = [
   { cat: 'Adición', color: '#0f3d8c', bg: 'rgba(15,61,140,0.08)', items: ['Furthermore', 'Moreover', 'In addition', 'Additionally', 'What is more', 'Not only... but also'] },
@@ -110,6 +111,18 @@ export default function LinkingLanguageClient() {
   const [finished, setFinished] = useState(false);
 
   const q = EXERCISES[qIdx];
+  /**
+   * Los ocho ejercicios declaraban el conector correcto en primera posición y no se
+   * barajaba nada: la respuesta era la A en los ocho. Se aprobaba el bloque entero
+   * pulsando arriba a la izquierda ocho veces seguidas.
+   *
+   * La comparación es por valor (`selected === q.correct`), así que repartir el orden no
+   * toca ninguna otra lógica.
+   */
+  const shuffledOptions = useMemo(
+    () => placeOption(q.options, q.options.indexOf(q.correct), `linking|${q.category}|${q.correct}`, qIdx).options,
+    [q, qIdx],
+  );
   const isCorrect = selected === q.correct;
   const showHint = attempt > 0 && !locked && selected !== null && !isCorrect;
   const canRetry = showHint;
@@ -247,7 +260,7 @@ export default function LinkingLanguageClient() {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.65rem', marginBottom: '1rem' }}>
-            {q.options.map(opt => {
+            {shuffledOptions.map(opt => {
               const isSel = selected === opt;
               const isRight = opt === q.correct;
               let border = '1.5px solid var(--line-soft)', bg = 'var(--bg-2)', color = 'var(--ink)';

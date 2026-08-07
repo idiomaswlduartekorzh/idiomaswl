@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, RotateCcw } from 'lucide-react';
 import type { EssayTypeId } from '../introduccion/introduction-data';
 import { BODY_ONE_LESSONS, bodyParagraph } from './body-one-data';
+import { placeFirstAsCorrect } from '@/lib/practica/shuffle-options';
 import styles from '../introduccion/page.module.css';
 
 const LEVELS = [
@@ -18,9 +19,17 @@ const LEVELS = [
   { title: 'Transfer to complete essay practice', mode: 'transfer' },
 ] as const;
 
-function rotateOptions<T>(items: T[], amount: number) {
-  const shift = amount % items.length;
-  return [...items.slice(shift), ...items.slice(0, shift)];
+/**
+ * Reparte las opciones. La correcta siempre se escribe primera en el array.
+ *
+ * Antes esto era una rotación cíclica sembrada con `level + índice del ejemplo`. Como esa
+ * semilla no distinguía un tipo de ensayo de otro, los cinco compartían la misma secuencia
+ * de letras correctas —D, B, D, A— y bastaba memorizar cuatro para aprobar el motor entero
+ * sin leer los enunciados. Ahora la semilla lleva el tipo de ensayo y el reparto es un
+ * barajado real con posiciones equilibradas por bloques.
+ */
+function rotateOptions<T>(items: T[], seed: string, index: number) {
+  return placeFirstAsCorrect(items, seed, index).options;
 }
 
 function wordCount(value: string) {
@@ -51,33 +60,33 @@ export default function BodyOnePracticeEngine({ essayType }: { essayType: EssayT
       question: `What is the function of this ${exercise.blocks[2].label.toLowerCase()} block?`,
       context: exercise.blocks[2].text,
       correct: exercise.blocks[2].purpose,
-      options: rotateOptions([exercise.blocks[2].purpose, 'Introduce a new essay topic.', 'Repeat the prompt without development.', 'Give the final essay conclusion.'], level + lesson.examples.indexOf(exercise)),
+      options: rotateOptions([exercise.blocks[2].purpose, 'Introduce a new essay topic.', 'Repeat the prompt without development.', 'Give the final essay conclusion.'], `body1|${lesson.id}`, level),
       feedback: `In this ${lesson.shortLabel} paragraph, the ${exercise.blocks[2].label.toLowerCase()} has a specific job: ${exercise.blocks[2].purpose}`,
     };
     if (level === 1) return {
       question: 'Which topic sentence gives this Body 1 paragraph one aligned job?',
       context: exercise.prompt,
       correct: exercise.blocks[0].text,
-      options: rotateOptions([exercise.blocks[0].text, 'This essay will discuss all aspects of this controversial topic.', 'There are several advantages, disadvantages, causes and solutions to consider.', 'People have different opinions, and both of them are equally important.'], level + lesson.examples.indexOf(exercise)),
+      options: rotateOptions([exercise.blocks[0].text, 'This essay will discuss all aspects of this controversial topic.', 'There are several advantages, disadvantages, causes and solutions to consider.', 'People have different opinions, and both of them are equally important.'], `body1|${lesson.id}`, level),
       feedback: 'The aligned option answers the paragraph job directly and creates one claim that later sentences can prove.',
     };
     if (level === 2) return {
       question: 'Which diagnosis identifies the most serious paragraph error?',
       context: `Paragraph job: ${exercise.paragraphJob} Draft: "${exercise.blocks[0].text} This is a very important issue for everyone. Many people have different opinions. It has advantages and disadvantages."`,
       correct: 'The draft states a claim but does not develop its logic.',
-      options: rotateOptions(['The draft states a claim but does not develop its logic.', 'The paragraph needs a memorised proverb.', 'The paragraph must include an exact statistic.', 'The topic sentence should be removed.'], level + lesson.examples.indexOf(exercise)),
+      options: rotateOptions(['The draft states a claim but does not develop its logic.', 'The paragraph needs a memorised proverb.', 'The paragraph must include an exact statistic.', 'The topic sentence should be removed.'], `body1|${lesson.id}`, level),
       feedback: 'Task Response depends on relevant development. Generic importance and “different opinions” do not explain the controlling claim.',
     };
     return {
       question: `Which sentence best completes the missing ${exercise.blocks[3].label} block?`,
       context: `${exercise.blocks[0].text} ${exercise.blocks[1].text} ${exercise.blocks[2].text} [${exercise.blocks[3].label.toUpperCase()} MISSING] ${exercise.blocks[4].text}`,
       correct: exercise.blocks[3].text,
-      options: rotateOptions([exercise.blocks[3].text, 'A famous university study proves this beyond any doubt.', 'This is a very important issue in today\'s modern world.', 'However, there are many advantages and disadvantages.'], level + lesson.examples.indexOf(exercise)),
+      options: rotateOptions([exercise.blocks[3].text, 'A famous university study proves this beyond any doubt.', 'This is a very important issue in today\'s modern world.', 'However, there are many advantages and disadvantages.'], `body1|${lesson.id}`, level),
       feedback: 'The model illustration makes the preceding mechanism concrete without fabricating a named study or changing the paragraph topic.',
     };
   }, [exercise, lesson.examples, level]);
 
-  const assemblyChoices = useMemo(() => rotateOptions(exercise.blocks.map((item) => item.label), level + lesson.examples.indexOf(exercise)), [exercise, lesson.examples, level]);
+  const assemblyChoices = useMemo(() => rotateOptions(exercise.blocks.map((item) => item.label), `body1-assemble|${lesson.id}`, level), [exercise, lesson.examples, level]);
   const assemblyCorrect = assembled.join('|') === exercise.blocks.map((item) => item.label).join('|');
   const mcqCorrect = selected === mcq.correct;
   const paragraphWords = paragraphFields.reduce((total, value) => total + wordCount(value), 0);
