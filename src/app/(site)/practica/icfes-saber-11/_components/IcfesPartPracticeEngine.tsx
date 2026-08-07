@@ -74,6 +74,48 @@ function writeProgress(progress: LocalProgress, scope = 'part') {
   }
 }
 
+/**
+ * Sesión a medias: por dónde ibas y qué llevabas contestado.
+ *
+ * `LocalProgress` guarda el historial de intentos —lo que alimenta el repaso de errores y
+ * las estadísticas—, pero no la POSICIÓN. El índice de la pregunta vivía en un `useState(0)`
+ * y nada lo restauraba, así que cerrar la pestaña y volver a entrar empezaba en la pregunta
+ * uno aunque llevaras dieciocho hechas. Los intentos seguían ahí; lo que se perdía era el
+ * sitio, que es justo lo que hace abandonar.
+ *
+ * Se guarda aparte del historial porque tiene otra vida: el historial se acumula, la sesión
+ * se borra al terminar.
+ */
+const SESSION_PREFIX = 'wl:icfes:live-session:v1';
+
+type LiveSession = { version: 1; part: number; index: number; answers: AttemptAnswer[]; updatedAt: string };
+
+function readSession(part: number, scope: string, questionCount: number): LiveSession | null {
+  try {
+    const raw = window.localStorage.getItem(`${SESSION_PREFIX}:${scope}:${part}`);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as Partial<LiveSession>;
+    if (parsed.version !== 1 || parsed.part !== part || !Array.isArray(parsed.answers)) return null;
+    // Si el banco cambió de tamaño, el índice guardado ya no señala la misma pregunta.
+    if (typeof parsed.index !== 'number' || parsed.index <= 0 || parsed.index >= questionCount) return null;
+    return { version: 1, part, index: parsed.index, answers: parsed.answers, updatedAt: parsed.updatedAt ?? '' };
+  } catch {
+    return null;
+  }
+}
+
+function writeSession(session: LiveSession, scope: string) {
+  try {
+    window.localStorage.setItem(`${SESSION_PREFIX}:${scope}:${session.part}`, JSON.stringify(session));
+  } catch { /* Sin almacenamiento, la práctica sigue: solo no se recuerda el sitio. */ }
+}
+
+function clearSession(part: number, scope: string) {
+  try {
+    window.localStorage.removeItem(`${SESSION_PREFIX}:${scope}:${part}`);
+  } catch { /* Nada que limpiar. */ }
+}
+
 function formatSeconds(seconds: number) {
   if (seconds < 60) return `${seconds} s`;
   return `${Math.floor(seconds / 60)} min ${seconds % 60} s`;
@@ -105,8 +147,10 @@ export default function IcfesPartPracticeEngine({
   const [answers, setAnswers] = useState<AttemptAnswer[]>([]);
   const [finished, setFinished] = useState(false);
   const [savedAttempts, setSavedAttempts] = useState(0);
+  const [resumedFrom, setResumedFrom] = useState(0);
   const questionStartedAt = useRef(0);
   const feedbackRef = useRef<HTMLDivElement>(null);
+  const questionRef = useRef<HTMLDivElement>(null);
   const sessionRef = useRef<{ id: string; startedAt: string } | null>(null);
 
   const syncAttempts = useCallback((attemptsToSync: AttemptAnswer[], sessionId?: string) => {
@@ -139,9 +183,23 @@ export default function IcfesPartPracticeEngine({
     syncAttempts(progress.attempts);
   }, [part.part, progressScope, syncAttempts]);
 
+  // Al confirmar, el foco baja a la justificación: es donde está lo que hay que leer.
   useEffect(() => {
     if (confirmed) feedbackRef.current?.focus();
   }, [confirmed]);
+
+  /**
+   * Al AVANZAR, en cambio, hay que volver arriba.
+   *
+   * Solo existía el foco de la justificación, que deja la página abajo. Al pulsar
+   * «Siguiente pregunta» el contenido cambiaba pero el scroll se quedaba donde estaba, así
+   * que la pregunta nueva aparecía empezada por la mitad y había que subir a mano en cada
+   * una de las treinta.
+   */
+  useEffect(() => {
+    if (!started || confirmed) return;
+    questionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [currentIndex, started, confirmed]);
 
   const question = questions[currentIndex];
   const activePart = ICFES_PARTS.find((item) => item.part === question?.officialPart) ?? part;
@@ -182,6 +240,15 @@ export default function IcfesPartPracticeEngine({
       ? crypto.randomUUID()
       : `${progressScope}-${currentTimeMs()}`;
     sessionRef.current = { id: sessionId, startedAt };
+
+    // Si quedó una sesión a medias, se retoma donde se dejó en lugar de volver a la uno.
+    const pending = readSession(part.part, progressScope, questions.length);
+    if (pending) {
+      setCurrentIndex(pending.index);
+      setAnswers(pending.answers);
+      setResumedFrom(pending.index);
+    }
+
     setStarted(true);
     questionStartedAt.current = currentTimeMs();
     void sendAuthenticatedProgress({
@@ -226,6 +293,9 @@ export default function IcfesPartPracticeEngine({
     if (currentIndex === questions.length - 1) {
       const progress = readProgress(part.part, progressScope);
       writeProgress({ ...progress, updatedAt: new Date().toISOString(), completedSessions: progress.completedSessions + 1 }, progressScope);
+      // La sesión terminó: ya no hay sitio que recordar. Si no se borra, volver a entrar
+      // aterrizaría en la última pregunta de una tanda ya cerrada.
+      clearSession(part.part, progressScope);
       setFinished(true);
       if (sessionRef.current) {
         void sendAuthenticatedProgress({
@@ -246,13 +316,19 @@ export default function IcfesPartPracticeEngine({
       onComplete?.({ accuracy, correctCount, questionCount: questions.length });
       return;
     }
-    setCurrentIndex((index) => index + 1);
+    const nextIndex = currentIndex + 1;
+    // El sitio se guarda AQUÍ, al avanzar, no al terminar: quien cierra la pestaña en la
+    // pregunta dieciocho vuelve a la dieciocho.
+    writeSession({ version: 1, part: part.part, index: nextIndex, answers, updatedAt: new Date().toISOString() }, progressScope);
+    setCurrentIndex(nextIndex);
     setSelectedIndex(null);
     setConfirmed(false);
     questionStartedAt.current = currentTimeMs();
   }
 
   function restart() {
+    clearSession(part.part, progressScope);
+    setResumedFrom(0);
     start();
     setCurrentIndex(0);
     setSelectedIndex(null);
@@ -315,10 +391,16 @@ export default function IcfesPartPracticeEngine({
 
   return (
     <div className={styles.practiceShell} style={{ '--part-color': activePart.color, '--part-soft': activePart.softColor } as React.CSSProperties}>
-      <div className={styles.progressHeader}>
+      <div className={styles.progressHeader} ref={questionRef}>
         <div><span>Parte {activePart.part} · {activePart.shortTitle}</span><strong>Pregunta {currentIndex + 1} de {questions.length}</strong></div>
         <span>{Math.round(((currentIndex + (confirmed ? 1 : 0)) / questions.length) * 100)}% completado</span>
       </div>
+      {resumedFrom > 0 && currentIndex === resumedFrom && (
+        <p className={styles.resumeNotice} role="status">
+          Retomamos donde lo dejaste, en la pregunta {resumedFrom + 1}.{' '}
+          <button type="button" onClick={restart}>Empezar de cero</button>
+        </p>
+      )}
       <div className={styles.progressTrack} aria-label={`Progreso: pregunta ${currentIndex + 1} de ${questions.length}`}>
         <span style={{ width: `${((currentIndex + (confirmed ? 1 : 0)) / questions.length) * 100}%` }} />
       </div>

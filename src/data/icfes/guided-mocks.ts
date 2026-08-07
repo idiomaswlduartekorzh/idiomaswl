@@ -246,6 +246,24 @@ function explanationFor(part: IcfesOfficialPart, correct: string, prompt: string
   return `La evidencia “${evidence}” respalda la conclusión “${correct}” sin exigir información externa.`;
 }
 
+/**
+ * Qué enseña la parte, que no es lo mismo que cómo se resuelve.
+ *
+ * La microlección se estaba rellenando con `strategyFor(part)`, la misma función que
+ * alimenta «Estrategia transferible» justo debajo: el estudiante leía la frase dos veces
+ * seguidas. Aquí va el concepto —qué está midiendo el examen— y en la estrategia, el
+ * movimiento que se lleva a la siguiente pregunta.
+ */
+function conceptFor(part: IcfesOfficialPart) {
+  if (part === 1) return 'Esta parte mide vocabulario preciso: varias palabras del mismo campo semántico compiten, y solo una cumple todos los rasgos de la definición.';
+  if (part === 2) return 'Un aviso no describe su sitio: lo da por sabido. Quien lo escribió sabía dónde iba a colgarlo, así que la pista está en a quién se dirige y qué le pide hacer.';
+  if (part === 3) return 'En un intercambio breve, la respuesta correcta no es la más educada ni la más larga: es la que cumple la función que abre la primera intervención.';
+  if (part === 4) return 'Aquí se cruzan dos exigencias: la palabra tiene que significar lo que el contexto pide y encajar gramaticalmente. Fallar una de las dos basta para descartarla.';
+  if (part === 5) return 'Localizar información es distinto de recordar el texto: la respuesta está escrita, aunque con otras palabras, y hay que poder señalarla.';
+  if (part === 6) return 'Inferir es deducir de lo que está escrito, no completar con lo que sabes del mundo. Si la conclusión necesita un dato que el texto no da, no es la respuesta.';
+  return 'El cierre de texto mide cohesión: cada hueco depende de las frases de alrededor, no solo de la suya.';
+}
+
 function strategyFor(part: IcfesOfficialPart) {
   if (part === 1) return 'Identifica la categoría y exige que la palabra elegida cumpla cada detalle de la definición.';
   if (part === 2) return 'Separa tres preguntas: dónde aparece, a quién se dirige y qué acción busca provocar.';
@@ -256,6 +274,60 @@ function strategyFor(part: IcfesOfficialPart) {
   return 'Valida la opción en tres capas: significado, colocación y forma gramatical.';
 }
 
+/**
+ * Vocabulario que uno espera encontrar en el aviso de cada tipo de sitio.
+ *
+ * Por qué existe: el feedback de los avisos era una plantilla —«“X” introduce un lugar,
+ * propósito o instrucción diferente de lo que esas palabras comunican»— con el nombre de la
+ * opción metido en el hueco. Los dos distractores recibían la MISMA frase y no explicaban
+ * nada: el estudiante que se equivoca sigue sin saber por qué.
+ *
+ * Un diccionario literal no sirve, porque hay 334 opciones distintas en el banco y casi
+ * todas aparecen una sola vez. Pero los sitios sí caen en pocas familias, y cada familia
+ * tiene su léxico. Con eso el feedback puede decir qué habría tenido que poner el aviso
+ * para que esa opción fuera la buena.
+ *
+ * Cuando la opción no es un lugar sino un propósito o una acción —«To advertise a discount»,
+ * «Use the stairs»— no hay familia que aplique y se usa el cierre general, que al menos
+ * devuelve al estudiante a la frase decisiva.
+ */
+const SETTING_SIGNALS: Array<{ match: RegExp; expects: string }> = [
+  { match: /\b(swimming )?pool|piscina\b/i, expects: 'nadar, profundidad, socorrista o vestuarios' },
+  { match: /\b(bus|train|railway|platform|station|metro|underground)\b/i, expects: 'horarios, andenes, billetes o retrasos' },
+  { match: /\b(airport|departure gate|boarding|terminal)\b/i, expects: 'vuelos, embarque, equipaje o pasaportes' },
+  { match: /\b(supermarket|shop|store|checkout|shopping)\b/i, expects: 'precios, cajas, ofertas o productos' },
+  { match: /\b(librar|study room|reading room)/i, expects: 'silencio, préstamo de libros o devoluciones' },
+  { match: /\b(hospital|clinic|surgery|ward|pharmac|dental|doctor)/i, expects: 'pacientes, consultas, citas o medicamentos' },
+  { match: /\b(museum|gallery|historic|exhibition)/i, expects: 'obras expuestas, fotografías o no tocar las piezas' },
+  { match: /\b(hotel|lobby|guest room|reception)/i, expects: 'habitaciones, huéspedes, llaves o la hora de salida' },
+  { match: /\b(school|classroom|cafeteria|pupil|student)/i, expects: 'clases, alumnos, horarios o material escolar' },
+  { match: /\b(restaurant|café|cafe|canteen|kitchen)/i, expects: 'mesas, comida, reservas o carta' },
+  { match: /\b(stadium|football|match|sports centre|gym)/i, expects: 'partidos, entradas, gradas o equipamiento deportivo' },
+  { match: /\b(park|garden|playground)/i, expects: 'césped, perros, papeleras o juegos infantiles' },
+  { match: /\b(office|meeting room|reception desk)/i, expects: 'reuniones, trabajo o atención al público' },
+  { match: /\b(road|street|traffic|drivers?|motorway)/i, expects: 'circulación, desvíos, obras o límites de velocidad' },
+  { match: /\b(lift|elevator|stairs|building|emergency exit)/i, expects: 'evacuación, plantas, escaleras o salidas' },
+  { match: /\b(taxi|car|vehicle|parking)/i, expects: 'aparcamiento, trayectos o tarifas' },
+  { match: /\b(bank|post office|counter)/i, expects: 'trámites, turnos, envíos o pagos' },
+  { match: /\b(cinema|theatre|concert)/i, expects: 'sesiones, butacas, entradas o silencio durante la función' },
+];
+
+/** Las tres o cuatro palabras con carga del aviso, para citarlo sin repetirlo entero. */
+function noticeKeyPhrase(evidence: string) {
+  const cleaned = evidence.replace(/\s+/gu, ' ').trim();
+  return cleaned.length <= 60 ? cleaned : `${cleaned.slice(0, 57)}…`;
+}
+
+function noticeDistractorRationale(distractor: string, correct: string, evidence: string) {
+  const family = SETTING_SIGNALS.find((item) => item.match.test(distractor));
+  const quote = noticeKeyPhrase(evidence);
+
+  if (family) {
+    return `Para que la respuesta fuera “${distractor}”, el aviso tendría que hablar de ${family.expects}. Lo que dice es “${quote}”, que apunta a “${correct}”.`;
+  }
+  return `“${distractor}” no se sostiene con lo que el aviso dice literalmente: “${quote}”. Esa frase es la que lleva a “${correct}”, sin añadir nada por tu cuenta.`;
+}
+
 function distractorRationale(part: IcfesOfficialPart, distractor: string, correct: string, prompt: string, evidence: string) {
   if (part === 1) {
     const meaning = VOCABULARY_GLOSSES[distractor.toLowerCase()];
@@ -263,7 +335,7 @@ function distractorRationale(part: IcfesOfficialPart, distractor: string, correc
       ? `“${distractor}” significa ${meaning}. No corresponde a “${prompt}”.`
       : `“${distractor}” tiene otro significado y no corresponde a la definición “${prompt}”.`;
   }
-  if (part === 2) return `El aviso dice “${evidence}”. “${distractor}” introduce un lugar, propósito o instrucción diferente de lo que esas palabras comunican.`;
+  if (part === 2) return noticeDistractorRationale(distractor, correct, evidence);
   if (part === 3) return `La intervención es “${evidence}”. Responder “${distractor}” cambia el tema o no cumple la función conversacional que sí cumple “${correct}”.`;
   if (part === 4 || part === 7) return `Prueba de sustitución: “${substituteChoice(evidence, prompt, distractor)}”. “${distractor}” funciona como ${wordRole(distractor)}, pero aquí no produce la combinación de significado y estructura que sí produce “${correct}”.`;
   if (part === 5) return `La opción afirma “${distractor}”, pero la evidencia localizable es “${evidence}”. Esa idea no aparece allí ni es una paráfrasis precisa.`;
@@ -302,7 +374,7 @@ function adaptQuestion(mock: MockExam, section: MockSection, question: MCQQuesti
         : `Esta evidencia permite justificar “${correct}” sin depender de una suposición externa.`,
     },
     strategy: strategyFor(part),
-    microLesson: { title: `Cómo decidir en la Parte ${part}`, body: strategyFor(part) },
+    microLesson: { title: `Qué mide la Parte ${part}`, body: conceptFor(part) },
     targetSeconds: profile.targetSeconds,
     tags: [mock.id, `part-${part}`, profile.skill, 'guided-adapter-v1'],
     reinforcement: profile.reinforcement,

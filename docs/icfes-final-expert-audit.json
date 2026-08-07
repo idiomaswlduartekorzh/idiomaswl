@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T17:27:45.669Z",
+  "generatedAt": "2026-08-07T23:45:05.572Z",
   "verdict": "approved",
   "releaseDecision": "ready-for-human-integration-review",
   "deployment": "not-deployed-not-pushed-not-merged",
@@ -203,7 +203,7 @@
       "requirement": "El build Webpack produjo manifiestos finales",
       "pass": true,
       "severity": "critical",
-      "evidence": "Manifiestos presentes · 2026-08-04T04:07:37.163Z",
+      "evidence": "Manifiestos presentes · 2026-08-07T18:45:14.553Z",
       "remediation": "Ejecutar next build --webpack en el worktree aislado."
     }
   ],

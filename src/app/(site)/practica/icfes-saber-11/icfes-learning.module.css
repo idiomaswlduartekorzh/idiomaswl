@@ -197,6 +197,9 @@
 .primaryButton:focus-visible, .secondaryButton:focus-visible, .optionButton:focus-visible, .textLink:focus-visible { outline: 3px solid #38bdf8; outline-offset: 3px; }
 
 .practiceShell { background: white; border: 1px solid #dbe3ee; border-radius: 24px; overflow: hidden; box-shadow: 0 25px 60px rgba(20,33,92,.08); }
+/* Aviso de que la tanda se retomó donde se dejó, con salida a empezar de cero. */
+.resumeNotice { margin: 0 1.4rem .6rem; padding: .6rem .8rem; border-radius: 10px; background: var(--part-soft, #eef2ff); color: #1e293b; font-size: .82rem; }
+.resumeNotice button { margin-left: .4rem; border: 0; background: none; padding: 0; color: var(--part-color, #1d4ed8); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
 .progressHeader { display: flex; justify-content: space-between; gap: 1rem; padding: 1.15rem 1.4rem .8rem; color: #64748b; font-size: .75rem; }
 .progressHeader > div { display: flex; gap: .7rem; align-items: center; }
 .progressHeader strong { color: var(--navy); }
