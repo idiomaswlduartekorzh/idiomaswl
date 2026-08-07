@@ -6,6 +6,7 @@ import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { saveLead } from '@/lib/actions/saveLead';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection } from '@/data/mocks/types';
+import { hasGuidedMock } from '@/data/icfes/guided-registry';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
 function NoticesGridSection({
@@ -549,7 +550,10 @@ function calcResults(mock: MockExam, answers: Record<string, number>) {
 function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: () => void }) {
   const [secs, setSecs] = useState(totalSecs);
   const onExpireRef = useRef(onExpire);
-  onExpireRef.current = onExpire;
+
+  useEffect(() => {
+    onExpireRef.current = onExpire;
+  }, [onExpire]);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -779,14 +783,24 @@ function ResultsView({
 }) {
   const results = calcResults(mock, answers);
   const allQuestions = getAllQuestions(mock) as MCQQuestion[];
+  const weakestSection = results.sections.reduce((weakest, section) => {
+    const sectionRate = section.total ? section.correct / section.total : 0;
+    const weakestRate = weakest.total ? weakest.correct / weakest.total : 0;
+    return sectionRate < weakestRate ? section : weakest;
+  }, results.sections[0]);
 
   return (
     <div className="prac-results">
       <div className="prac-results__hero" style={{ '--exam-color': exam.color } as React.CSSProperties}>
-        <p className="prac-results__label">Resultado final</p>
+        <p className="prac-results__label">{exam.slug === 'icfes' ? 'Porcentaje de aciertos' : 'Resultado final'}</p>
         <div className="prac-results__score">{results.score}</div>
-        <p className="prac-results__score-sub">sobre 100 puntos</p>
+        <p className="prac-results__score-sub">{exam.slug === 'icfes' ? '% de esta práctica' : 'sobre 100 puntos'}</p>
         <p className="prac-results__fraction">{results.totalCorrect} / {results.totalQuestions} correctas</p>
+        {exam.slug === 'icfes' && (
+          <p style={{ maxWidth: 560, margin: '0.8rem auto 0', lineHeight: 1.55, opacity: 0.82 }}>
+            Esta práctica propia abreviada no reproduce la extensión estándar 2026-2 ni predice tu puntaje oficial ICFES.
+          </p>
+        )}
       </div>
 
       <div className="prac-results__sections">
@@ -813,7 +827,7 @@ function ResultsView({
           return (
             <div key={sec.part} className="prac-results__section-block">
               <h3 className="prac-results__section-name">{sec.title}</h3>
-              {qs.map((q, i) => {
+              {qs.map((q) => {
                 const userAns = answers[q.id];
                 const correct = userAns === q.answer;
                 const qIdx = allQuestions.findIndex(a => a.id === q.id);
@@ -847,6 +861,17 @@ function ResultsView({
           );
         })}
       </div>
+
+      {exam.slug === 'icfes' && weakestSection && (
+        <div className="prac-results__actions" aria-label="Siguiente paso recomendado">
+          <Link href={`/practica/icfes-saber-11/parte-${weakestSection.part}`} className="btn">
+            Reforzar Parte {weakestSection.part} →
+          </Link>
+          <Link href="/practica/icfes-saber-11/examenes" className="btn btn-ghost">
+            Practicar un cuadernillo divulgado
+          </Link>
+        </div>
+      )}
 
       <div className="prac-results__actions">
         <button onClick={onRetry} className="btn btn-ghost">Intentar de nuevo</button>
@@ -943,6 +968,7 @@ function LeadGateView({
 }
 
 export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+  const hasGuidedMode = exam.slug === 'icfes' && hasGuidedMock(mock.id);
   const [phase, setPhase] = useState<Phase>('intro');
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
@@ -965,13 +991,21 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     setAnswers(prev => ({ ...prev, [qId]: idx }));
   }, []);
 
+  const handleSubmit = useCallback(() => {
+    // Compute score and go to lead gate — actual save happens after lead form
+    const qs = allQuestions as MCQQuestion[];
+    const correct = qs.filter(q => answers[q.id] === q.answer).length;
+    const score = Math.round((correct / qs.length) * 100);
+    pendingResultRef.current = { correct, total: qs.length, score };
+    setPhase('lead');
+  }, [allQuestions, answers]);
+
   // Jump to first question of the section after current
   const handleNextSection = useCallback(() => {
     const nextIdx = allQuestions.findIndex(q => q.part > currentPart);
     if (nextIdx !== -1) setCurrentIdx(nextIdx);
     else handleSubmit();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [allQuestions, currentPart]);
+  }, [allQuestions, currentPart, handleSubmit]);
 
   // Jump to last question of the section before current
   const handlePrevSection = useCallback(() => {
@@ -996,15 +1030,6 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     const idx = allQuestions.findIndex(q => q.part === part);
     if (idx !== -1) setCurrentIdx(idx);
   }, [allQuestions]);
-
-  const handleSubmit = useCallback(() => {
-    // Compute score and go to lead gate — actual save happens after lead form
-    const qs = allQuestions as MCQQuestion[];
-    const correct = qs.filter(q => answers[q.id] === q.answer).length;
-    const score = Math.round((correct / qs.length) * 100);
-    pendingResultRef.current = { correct, total: qs.length, score };
-    setPhase('lead');
-  }, [allQuestions, answers]);
 
   const handleLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string }) => {
     const qs = allQuestions as MCQQuestion[];
@@ -1103,9 +1128,10 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
             </ul>
           </div>
 
-          <button onClick={() => setPhase('exam')} className="btn" style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem' }}>
-            Empezar examen →
-          </button>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '.7rem', flexWrap: 'wrap' }}>
+            <button onClick={() => setPhase('exam')} className="btn" style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem' }}>{exam.slug === 'icfes' ? 'Empezar modo examen →' : 'Empezar examen →'}</button>
+            {hasGuidedMode && <Link href={`/examenes/icfes/practica/${mock.id}/guiado`} className="btn btn-ghost" style={{ fontSize: '1rem', padding: '0.9rem 1.5rem' }}>Aprender en modo guiado</Link>}
+          </div>
 
           <Link href={`/examenes/${exam.slug}`} style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '1rem', display: 'block' }}>
             ← Volver a {exam.name}

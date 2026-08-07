@@ -117,10 +117,10 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Qué mide el componente de inglés del ICFES Saber 11, cuál es el puntaje que piden las universidades colombianas y el plan de estudio más eficiente para subir de nivel.',
     date: '2026-05-08',
-    updatedDate: '2026-05-30',
+    updatedDate: '2026-08-03',
     readTime: 7,
     category: 'ICFES',
-    tags: ['ICFES', 'Saber 11', 'inglés', 'Colombia', 'universidades', 'B2'],
+    tags: ['ICFES', 'Saber 11', 'inglés', 'Colombia', 'universidades', 'B1'],
     body: `
 <h2>El inglés en el ICFES Saber 11: lo que evalúa realmente</h2>
 <p>El componente de inglés del ICFES Saber 11 evalúa comprensión lectora y uso del idioma en contextos comunicativos reales. No mide gramática aislada ni traducción: mide si puedes leer un texto en inglés y entenderlo, y si conoces las estructuras lingüísticas en contexto.</p>
@@ -129,25 +129,24 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Comprensión lectora (aprox. 60%)</strong> — Textos informativos, argumentativos y narrativos. Preguntas de idea principal, vocabulario en contexto, inferencia y propósito del autor.</li>
   <li><strong>Uso del idioma (aprox. 40%)</strong> — Gramática funcional, conectores lógicos, coherencia textual y léxico en contexto.</li>
 </ul>
-<p>Son en total <strong>45 preguntas</strong> distribuidas en el componente de inglés, con un tiempo integrado dentro del bloque de comunicación del examen.</p>
+<p>La aplicación estándar Saber 11 2026-2 incluye <strong>55 preguntas de inglés</strong> en la segunda sesión. El ICFES asigna 4 horas y 30 minutos a la sesión completa, no un tiempo independiente para este componente.</p>
 
 <h2>La escala de puntajes y lo que significa cada nivel</h2>
 <p>El ICFES usa una escala del 0 al 100 para el componente de inglés, alineada con el MCER (Marco Común Europeo de Referencia):</p>
 <ul>
-  <li><strong>0 – 37 → Nivel A-</strong>: No alcanza el nivel mínimo A1. Comprensión muy limitada del inglés.</li>
-  <li><strong>38 – 49 → Nivel A1</strong>: Comprende palabras aisladas y frases muy básicas.</li>
-  <li><strong>50 – 65 → Nivel A2</strong>: Comprende información directa en textos breves y sencillos. <em>Nivel más frecuente en Colombia.</em></li>
-  <li><strong>66 – 80 → Nivel B1</strong>: Comprende textos de cierta complejidad sobre temas cotidianos y académicos.</li>
-  <li><strong>81 – 100 → Nivel B2</strong>: Comprende textos complejos en inglés con vocabulario académico y abstracto.</li>
+  <li><strong>0 – 36 → Pre A1</strong>: Todavía no alcanza el desempeño descrito para A1.</li>
+  <li><strong>37 – 57 → Nivel A1</strong>: Comprende palabras y expresiones muy frecuentes en contextos sencillos.</li>
+  <li><strong>58 – 70 → Nivel A2</strong>: Comprende información directa en textos breves y cotidianos.</li>
+  <li><strong>71 – 100 → Nivel B1</strong>: Comprende textos sobre temas conocidos y reconoce información explícita e implícita.</li>
 </ul>
-<p>El promedio nacional ronda el nivel A2 (50-60 puntos). Llegar a B1 o B2 te pone en el decil superior.</p>
+<p><strong>B1 es el nivel más alto que reporta actualmente Saber 11.</strong> El examen no asigna B2, C1 ni C2, incluso cuando el puntaje se acerca a 100.</p>
 
 <h2>¿Qué puntaje piden las universidades colombianas?</h2>
-<p>Cada universidad tiene sus propios requisitos, pero estos son los rangos más comunes:</p>
+<p>No existe un puntaje de inglés que garantice admisión en todas las universidades. Cada institución, programa y convocatoria decide si usa el puntaje global, el resultado por prueba o un requisito adicional.</p>
 <ul>
-  <li><strong>Universidades públicas (UdeA, UIS, UN)</strong>: El ICFES entra como parte del puntaje global. Un buen puntaje en inglés puede compensar debilidades en otras áreas.</li>
-  <li><strong>Universidades de alta exigencia (Los Andes, Javeriana, EAFIT)</strong>: Para programas de ingeniería, economía y ciencias sociales, un nivel B1 (66+) es el mínimo competitivo; para becas y programas de honor, B2 (81+).</li>
-  <li><strong>Programas con becas internacionales</strong>: B2 es prácticamente obligatorio para ser elegible.</li>
+  <li><strong>Para una admisión:</strong> revisa la tabla y la ponderación del programa exacto al que vas a aplicar.</li>
+  <li><strong>Para una beca:</strong> confirma si exige puntaje global, resultado de inglés o una certificación distinta.</li>
+  <li><strong>Para medir tu avance:</strong> usa los rangos Pre A1–B1 como referencia descriptiva, no como una promesa de ingreso.</li>
 </ul>
 
 <h2>Los errores más frecuentes de los estudiantes colombianos</h2>
@@ -160,7 +159,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h3>Error 3: estudiar solo en las semanas previas al examen</h3>
 <p>El inglés es una habilidad acumulativa. Tres meses de trabajo constante producen mucho más que tres semanas intensivas.</p>
 
-<h2>Plan de 12 semanas para subir un nivel completo (A2 → B1 o B1 → B2)</h2>
+<h2>Plan de 12 semanas para avanzar hacia el siguiente nivel reportado</h2>
 
 <h3>Semanas 1–4: construcción de base</h3>
 <ul>
@@ -191,7 +190,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>¿Vale la pena tomar clases de preparación ICFES inglés?</h2>
-<p>Depende de dónde estás. Si estás en nivel A2 y quieres llegar a B1, el estudio autónomo con buenos recursos es suficiente si tienes disciplina. Si quieres llegar a B2 o tienes menos de 8 semanas para el examen, un tutor que analice tus simulacros y te dé retroalimentación real ahorra tiempo —y puede ser la diferencia entre quedar admitido o repetir el año. Conoce cómo funciona nuestra <a href="/preparacion-icfes">preparación para el inglés del ICFES</a> con simulacros incluidos.</p>
+<p>Depende de dónde estás. Si estás en A2 y quieres acercarte al rango B1, el estudio autónomo con buenos recursos puede funcionar si tienes disciplina. Si tienes menos de 8 semanas o no entiendes por qué repites los mismos errores, un tutor que analice tu proceso puede ahorrarte tiempo. Conoce cómo funciona nuestra <a href="/preparacion-icfes">preparación para el inglés del ICFES</a> con prácticas y retroalimentación.</p>
 <p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">Puntaje inglés ICFES Saber 11: qué significan los niveles y cómo subir tu puntaje</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
   },
@@ -898,11 +897,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h3>B1 — Intermedio</h3>
 <p>Puede entender los puntos principales de textos en inglés estándar sobre temas conocidos (trabajo, escuela, tiempo libre). Puede describir experiencias, sueños y ambiciones, dar razones y explicaciones brevemente. Puede manejarse en la mayoría de situaciones de viaje.</p>
-<p><strong>Para qué sirve</strong>: comunicación funcional en inglés. Mínimo para algunas posiciones laborales de entrada en empresas internacionales. Nivel de entrada para preparar el ICFES inglés hacia B2.</p>
+<p><strong>Para qué sirve</strong>: comunicación funcional en inglés. Es una base útil para preparar el componente de inglés del ICFES, cuya escala reportada llega hasta B1.</p>
 
 <h3>B2 — Intermedio alto</h3>
 <p>Puede entender textos complejos sobre temas concretos y abstractos. Se comunica con fluidez y espontaneidad en interacciones con hablantes nativos. Puede producir textos claros y detallados sobre muchos temas y explicar un punto de vista.</p>
-<p><strong>Para qué sirve</strong>: el nivel de trabajo real en empresas multinacionales, el mínimo competitivo en procesos de selección corporativos. Equivale aproximadamente a IELTS Band 5.5–6.5 o TOEFL 72–94. Puntaje B2 en el ICFES (81–100) te pone en el top 10% en Colombia.</p>
+<p><strong>Para qué sirve</strong>: permite desenvolverse con mayor independencia en contextos académicos y laborales. B2 puede certificarse mediante instrumentos aceptados por cada institución; el ICFES Saber 11 no reporta B2 y su escala termina en B1.</p>
 
 <h3>C1 — Avanzado</h3>
 <p>Puede entender textos largos y exigentes, y reconocer su sentido implícito. Se expresa de forma espontánea, fluida y precisa, distinguiendo matices de significado incluso en situaciones complejas. Produce textos claros, bien estructurados y detallados sobre temas complejos.</p>
@@ -1203,23 +1202,23 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'icfes-saber-11-niveles-ingles-guia-completa',
     title: 'Niveles de inglés del ICFES: qué significa Pre A1, A1, A2 y B1',
     description:
-      'Guía completa sobre el componente de inglés del ICFES: cómo se califica, qué evalúa, qué significa cada nivel A1-B2 y el plan de preparación para subir 10-20 puntos en 3 meses.',
+      'Guía actualizada del componente de inglés del ICFES: qué evalúa, cómo se organiza y qué significan los niveles Pre A1, A1, A2 y B1.',
     date: '2026-05-30',
     readTime: 8,
     category: 'ICFES',
-    tags: ['ICFES inglés', 'Saber 11', 'puntaje inglés', 'B2 ICFES', 'preparación ICFES', 'Colombia'],
+    tags: ['ICFES inglés', 'Saber 11', 'puntaje inglés', 'B1 ICFES', 'preparación ICFES', 'Colombia'],
     body: `
 <h2>El inglés del ICFES: lo que muchos estudiantes no saben hasta el día del examen</h2>
-<p>El componente de inglés del ICFES Saber 11 es el único que se califica con una escala diferente al resto de las pruebas. Mientras Matemáticas, Lectura crítica y Ciencias naturales puntúan de 0 a 100 sin niveles de referencia, el inglés da un puntaje de 0 a 100 <em>y</em> lo traduce a un nivel del Marco Común Europeo de Referencia (MCER): A−, A1, A2, B1 o B2.</p>
+<p>El componente de inglés del ICFES Saber 11 entrega un puntaje de 0 a 100 y clasifica el desempeño en cuatro niveles alineados con el Marco Común Europeo de Referencia (MCER): Pre A1, A1, A2 y B1. La prueba no reporta B2.</p>
 <p>Entender cómo funciona esta doble medición es el primer paso para prepararse bien.</p>
 
 <h2>Estructura del componente de inglés</h2>
-<p>El inglés del ICFES tiene <strong>45 preguntas</strong> de selección múltiple distribuidas en dos bloques:</p>
+<p>El cuadernillo estándar Saber 11 2026-2 tiene <strong>55 preguntas de inglés</strong> en la segunda sesión, organizadas en siete partes:</p>
 <ul>
-  <li><strong>Comprensión lectora (~60%)</strong>: textos de 200–400 palabras (conversaciones, artículos, instrucciones, cartas) seguidos de preguntas sobre significado de palabras en contexto, inferencia, idea principal y detalles específicos.</li>
-  <li><strong>Uso del idioma (~40%)</strong>: diálogos cortos incompletos donde debes elegir la opción gramaticalmente correcta y contextualmente apropiada, y preguntas sobre vocabulario y expresiones frecuentes.</li>
+  <li><strong>Partes 1–3</strong>: vocabulario, avisos y conversaciones breves.</li>
+  <li><strong>Partes 4–7</strong>: gramática en contexto, lectura literal, lectura inferencial y cloze léxico-gramatical.</li>
 </ul>
-<p>El examen dura aproximadamente 50 minutos para el componente de inglés (dentro de la sesión de pruebas de competencias genéricas). No hay sección de Speaking ni de Writing — todo es lectura y uso.</p>
+<p>La segunda sesión completa dura 4 horas y 30 minutos e incluye otras pruebas; el ICFES no asigna en la guía un tiempo independiente para inglés. No hay Speaking, Writing ni Listening: se evalúan lectura y uso de la lengua.</p>
 
 <h2>Los niveles ICFES inglés y qué significa cada uno</h2>
 <p>Los resultados se publican con nivel MCER y puntaje numérico:</p>
@@ -1229,25 +1228,24 @@ export const BLOG_POSTS: BlogPost[] = [
       <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Nivel MCER</th>
       <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Puntaje</th>
       <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Qué significa</th>
-      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">% de estudiantes</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Lectura orientativa del resultado</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #dc2626; font-weight: 700;">A−</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">0–37</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Por debajo del nivel básico</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~18%</td></tr>
-    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #ea580c; font-weight: 700;">A1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">38–49</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Básico — comprende frases simples</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~27%</td></tr>
-    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #d97706; font-weight: 700;">A2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">50–65</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Pre-intermedio — promedio nacional</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~38%</td></tr>
-    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #2563eb; font-weight: 700;">B1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">66–80</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Intermedio — por encima del promedio</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~14%</td></tr>
-    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #16a34a; font-weight: 700;">B2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">81–100</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Intermedio-alto — top 10% Colombia</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~3%</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #dc2626; font-weight: 700;">Pre A1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">0–36</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Reconoce algunas palabras y expresiones fijas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Conviene fortalecer vocabulario básico</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #ea580c; font-weight: 700;">A1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">37–57</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Comprende expresiones cotidianas sencillas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Trabaja avisos, diálogos y vocabulario</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #d97706; font-weight: 700;">A2</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">58–70</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Comprende textos breves sobre temas familiares</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Prioriza paráfrasis y gramática en contexto</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem; color: #2563eb; font-weight: 700;">B1</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">71–100</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Comprende ideas principales y detalles en textos claros</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Es el nivel más alto reportado por la prueba</td></tr>
   </tbody>
 </table>
-<p>El promedio nacional se ubica consistentemente en A2 (50–65 puntos). Llegar a B1 ya te pone en el 17% superior del país; llegar a B2 te ubica en el top 3% — una diferencia enorme para admisiones universitarias.</p>
+<p>La escala termina en B1. Un puntaje alto demuestra un buen desempeño dentro de lo que mide esta prueba, pero no equivale a una certificación internacional de nivel B2.</p>
 
 <h2>¿Por qué importa el puntaje de inglés para la universidad?</h2>
 <p>Depende de la universidad, pero hay tres razones concretas:</p>
 <ol>
-  <li><strong>Requisito de admisión</strong>: algunas universidades privadas top en Colombia (Los Andes, EAFIT, Javeriana, del Norte) exigen nivel mínimo B1 o B2 en inglés para admisión.</li>
-  <li><strong>Exención de cursos de inglés</strong>: la mayoría de universidades colombianas exige que los estudiantes tomen y aprueben inglés I, II, III o más. Con B2 en el ICFES o su equivalente, muchas universidades eximen estos cursos — te ahorras tiempo y dinero.</li>
-  <li><strong>Puntaje global y becas</strong>: el inglés representa alrededor del 10% del puntaje global. Subir de A2 a B1 puede significar 5–8 puntos adicionales en el puntaje total — suficiente para cruzar el umbral de una beca o un cupo en una carrera competitiva.</li>
+  <li><strong>Admisión</strong>: algunas instituciones consideran el resultado de Saber 11 dentro de sus criterios. Debes verificar la convocatoria vigente de cada programa.</li>
+  <li><strong>Clasificación interna</strong>: una universidad puede usar el resultado como referencia para cursos, pero sus reglas de homologación son propias y pueden exigir otra prueba.</li>
+  <li><strong>Becas</strong>: algunas convocatorias consideran puntajes de Saber 11; revisa el corte y la fórmula directamente en la entidad que ofrece la beca.</li>
 </ol>
 
 <h2>Qué evalúa el examen en detalle y dónde se pierden más puntos</h2>
@@ -1260,8 +1258,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <h3>Completar diálogos</h3>
 <p>Te dan un diálogo corto con un espacio en blanco y debes elegir la respuesta más apropiada para el contexto. Error frecuente: elegir la opción gramaticalmente correcta sin considerar si es pragmáticamente apropiada. La estrategia: lee todo el diálogo, no solo la línea del espacio.</p>
 
-<h2>Plan de preparación para subir 10–20 puntos en 3 meses</h2>
-<p>Este plan asume que partes de A2 (50–65 puntos) y quieres llegar a B1 (66–80) o B2 (81+):</p>
+<h2>Plan de preparación de 3 meses</h2>
+<p>Este plan propone avanzar desde tu diagnóstico hacia la siguiente banda de desempeño, sin prometer un número fijo de puntos:</p>
 
 <h3>Mes 1: Diagnóstico y vocabulario de base</h3>
 <ul>
@@ -1279,14 +1277,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h3>Mes 3: Simulacros completos y ajuste</h3>
 <ul>
-  <li>1 simulacro completo (45 preguntas) por semana, en el tiempo asignado.</li>
+  <li>1 bloque o simulacro por semana, respetando el tamaño del cuadernillo publicado que estés usando.</li>
   <li>Analiza los errores de cada simulacro y compara con los errores del mes anterior. El progreso debe ser visible.</li>
   <li>2 semanas antes del examen: practica en condiciones reales (mismo horario, sin pausas, sin ayudas).</li>
 </ul>
 
 <h2>Cuánto sube el puntaje con preparación estructurada</h2>
-<p>Con el plan descrito — simulacros semanales, análisis de errores y vocabulario activo — la mayoría de estudiantes con punto de partida A2 sube entre 10 y 20 puntos en 3 meses. Eso es suficiente para pasar de A2 a B1 en la mayoría de los casos.</p>
-<p>Para llegar a B2 (81–100) desde A2 generalmente se necesita entre 6 y 12 meses, dependiendo del punto de partida exacto y la consistencia de la preparación. B2 requiere un nivel real de inglés, no solo estrategia de examen.</p>
+<p>El avance depende del punto de partida, la frecuencia de práctica y la calidad del análisis de errores. Mide el progreso con bloques comparables y ajusta el plan según la habilidad, no según una promesa comercial.</p>
+<p>Si necesitas certificar B2, debes usar un examen internacional o el instrumento que acepte la institución correspondiente; Saber 11 reporta hasta B1.</p>
 <p>Si quieres prepararte con acompañamiento de un tutor, hacer simulacros en la plataforma de WeLearn y tener un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a> o hacer primero el <a href="/examenes/icfes">simulacro de diagnóstico gratis</a>.</p>
 <p>Lee también: <a href="/blog/puntaje-icfes-ingles-niveles-y-como-mejorar">Puntaje ICFES inglés: niveles, puntaje mínimo y cómo mejorarlo en 3 meses</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
@@ -1946,7 +1944,7 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <h2>La pregunta que importa primero: ¿cuál es tu objetivo?</h2>
 <p>Antes de comparar opciones, define con precisión qué quieres lograr:</p>
 <ul>
-  <li>Necesito <strong>puntaje específico en un examen</strong> (IELTS Band 7, TOEFL 90, ICFES B2).</li>
+  <li>Necesito <strong>puntaje específico en un examen</strong> (IELTS Band 7, TOEFL 90 o B1 como nivel máximo reportado en ICFES).</li>
   <li>Quiero <strong>hablar inglés con fluidez</strong> para mi trabajo actual o próximo.</li>
   <li>Quiero <strong>leer y entender</strong> documentos en inglés sin traductores.</li>
   <li>Necesito inglés para <strong>estudiar en el exterior</strong> (visa de estudiante, admisión a universidad).</li>
@@ -4674,39 +4672,41 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     description:
       'Plan de estudio semana a semana para mejorar tu puntaje de inglés en el ICFES Saber 11 en 3 meses. Incluye recursos gratuitos, simulacros y las áreas específicas donde los estudiantes pierden más puntos.',
     date: '2026-05-30',
+    updatedDate: '2026-08-03',
     readTime: 7,
     category: 'ICFES',
     tags: ['ICFES inglés en 3 meses plan de estudio', 'subir puntaje inglés ICFES Colombia', 'preparación ICFES inglés semana a semana', 'ICFES inglés recursos gratuitos', 'mejorar inglés para ICFES rápido'],
     body: `
 <h2>¿Cuánto vale el inglés en el ICFES Saber 11?</h2>
-<p>La prueba de inglés del ICFES Saber 11 no hace parte del puntaje global de 500 puntos que la mayoría de universidades miran para admisiones. Sin embargo, el nivel de inglés sí importa de dos formas:</p>
+<p>El componente de inglés se reporta en una escala de 0 a 100 y con uno de cuatro niveles: Pre A1, A1, A2 o B1. No existe un corte universal de admisión: cada universidad, programa o convocatoria decide cómo utiliza los resultados de Saber 11.</p>
 <ol>
-  <li><strong>Puntaje individual reportado por niveles</strong> (A1, A2, B1, B2+): varias universidades, especialmente para carreras internacionales, piden que hayas alcanzado al menos B1 en inglés ICFES.</li>
-  <li><strong>Becas y fondos</strong>: algunos programas de becas (Ser Pilo Paga, Generación E, etc.) tienen requisitos mínimos de nivel de inglés en el ICFES.</li>
+  <li><strong>Resultado individual:</strong> permite reconocer si estás en Pre A1, A1, A2 o B1.</li>
+  <li><strong>Procesos externos:</strong> una institución puede considerar el resultado, pero debes consultar la convocatoria vigente y no asumir un requisito general.</li>
 </ol>
-<p>Para la mayoría de estudiantes, el objetivo es pasar del nivel A2 al B1+ en el ICFES, ya que ese salto abre muchas puertas universitarias.</p>
+<p>Si estás en A2, el siguiente rango reportado es B1. B1 es el techo de Saber 11: el examen no reporta B2 ni niveles superiores.</p>
 
 <h2>Qué evalúa el ICFES en inglés</h2>
-<p>La prueba de inglés del ICFES Saber 11 tiene únicamente sección de <strong>lectura (Reading)</strong>: textos cortos y medianos con preguntas de comprensión, vocabulario en contexto e inferencia. No evalúa Writing, Speaking ni Listening. Esto tiene una implicación importante: <strong>el plan de estudio debe enfocarse casi exclusivamente en comprensión lectora en inglés</strong>.</p>
+<p>La prueba evalúa <strong>lectura y uso de la lengua</strong>: vocabulario, lenguaje funcional, gramática en contexto y comprensión literal e inferencial. No evalúa Writing, Speaking ni Listening. Por eso la preparación debe combinar lectura con decisiones lingüísticas en contexto.</p>
 <table>
-  <thead><tr><th>Área</th><th>Peso</th><th>Estrategia</th></tr></thead>
+  <thead><tr><th>Parte</th><th>Peso aproximado</th><th>Habilidad</th></tr></thead>
   <tbody>
-    <tr><td>Vocabulario en contexto</td><td>~30%</td><td>Leer textos variados en inglés, contextos de palabras desconocidas</td></tr>
-    <tr><td>Comprensión de ideas principales</td><td>~30%</td><td>Practicar identificar el main idea y los topic sentences</td></tr>
-    <tr><td>Inferencia y cohesión</td><td>~20%</td><td>Ejercicios de deducción lógica del significado</td></tr>
-    <tr><td>Gramática implícita</td><td>~20%</td><td>Conectores, tiempos verbales, estructura de oraciones</td></tr>
+    <tr><td>Partes 1, 2, 3 y 6</td><td>11% cada una</td><td>Vocabulario, avisos, conversaciones e inferencia</td></tr>
+    <tr><td>Parte 4</td><td>18%</td><td>Gramática dentro de un texto</td></tr>
+    <tr><td>Parte 5</td><td>16%</td><td>Información explícita y paráfrasis</td></tr>
+    <tr><td>Parte 7</td><td>22%</td><td>Vocabulario y gramática en textos para completar</td></tr>
   </tbody>
 </table>
+<p>Consulta la <a href="/practica/icfes-saber-11">ruta completa de las siete partes</a> para ver ejemplos y practicar cada habilidad.</p>
 
 <h2>Plan de estudio: 12 semanas para subir un nivel en inglés ICFES</h2>
 <table>
   <thead><tr><th>Semanas</th><th>Objetivo</th><th>Actividades</th></tr></thead>
   <tbody>
-    <tr><td>1–2</td><td>Diagnóstico y vocabulario básico</td><td>Hacer un simulacro ICFES oficial. Identificar vocabulario desconocido. Listas A1–A2.</td></tr>
+    <tr><td>1–2</td><td>Diagnóstico y vocabulario básico</td><td>Hacer un diagnóstico y un cuadernillo divulgado. Identificar vocabulario desconocido. Listas A1–A2.</td></tr>
     <tr><td>3–4</td><td>Gramática funcional para Reading</td><td>Tiempos verbales (presente, pasado, presente perfecto). Conectores y coherencia.</td></tr>
     <tr><td>5–6</td><td>Vocabulario A2–B1</td><td>Estudio de listas de vocabulario frecuente (Longman 3000, Word frequency lists). Lectura de textos A2.</td></tr>
     <tr><td>7–8</td><td>Estrategias de lectura</td><td>Skimming y scanning. Identificar ideas principales sin leer todo el texto. Textos B1.</td></tr>
-    <tr><td>9–10</td><td>Simulacros ICFES</td><td>2 simulacros completos (pruebas oficiales anteriores). Revisión de errores.</td></tr>
+    <tr><td>9–10</td><td>Cuadernillos ICFES</td><td>Resolver dos cuadernillos divulgados con su extensión original y revisar los errores.</td></tr>
     <tr><td>11</td><td>Vocabulario específico en contextos académicos</td><td>Textos sobre ciencia, historia, tecnología (los más frecuentes en ICFES).</td></tr>
     <tr><td>12</td><td>Simulacro final + ajuste</td><td>Prueba oficial anterior. Revisar solo los tipos de preguntas donde más fallas.</td></tr>
   </tbody>
@@ -4714,7 +4714,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Recursos gratuitos para preparar el inglés ICFES</h2>
 <ul>
-  <li><strong>ICFES Interactivo</strong> (icfesinteractivo.gov.co): simulacros oficiales de pruebas anteriores</li>
+  <li><strong>Caja de herramientas del ICFES</strong>: cuadernillos, preguntas explicadas y materiales publicados por la entidad.</li>
   <li><strong>British Council Learn English</strong> (learnenglish.britishcouncil.org): materiales gratuitos de lectura por nivel</li>
   <li><strong>Duolingo</strong> (solo para vocabulario básico A1–A2 — no es suficiente solo con esto)</li>
   <li><strong>Newsela</strong> (newsela.com): artículos de noticias adaptados por nivel de lectura</li>
@@ -6014,7 +6014,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   <li><strong>Flashcards con contexto</strong>: no estudies "however = sin embargo." Estudia la oración: "The project was expensive; however, it was completed on time." El contexto fija el significado.</li>
   <li><strong>Agrupa por función</strong>: aprende los conectores de contraste todos juntos, luego los de causa, etc. El cerebro retiene mejor en grupos semánticos.</li>
   <li><strong>Aplica en lecturas reales</strong>: toma un texto en inglés de nivel B1–B2 y subraya cada conector. Identifica qué tipo de relación establece entre las ideas.</li>
-  <li><strong>Simulacros cronometrados</strong>: practica preguntas de vocabulario en contexto bajo tiempo. El ICFES tiene 45 preguntas en 50 minutos — la velocidad importa.</li>
+  <li><strong>Simulacros cronometrados</strong>: practica preguntas de vocabulario en contexto y registra el tiempo por pregunta; la velocidad importa, pero no inventes un límite separado que la guía oficial no asigna a inglés.</li>
 </ol>
 
 <h2>Ya sabes las palabras. Ahora comprueba si te sirven</h2>

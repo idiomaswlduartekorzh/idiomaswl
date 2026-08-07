@@ -116,8 +116,8 @@ export const ICFES_LEVELS: Record<IcfesSmartLevel, IcfesLevelConfig> = {
   },
   5: {
     level: 5,
-    label: 'Nivel 5 — B+ estratégico',
-    shortLabel: 'B+ estratégico',
+    label: 'Nivel 5 — B1 avanzado (ruta interna)',
+    shortLabel: 'B1 avanzado · interno',
     focus: ['velocidad', 'precisión', 'bloques tipo examen', 'lectura cronometrada', 'preguntas mixtas'],
     color: '#0f3d8c',
     targetTimeSeconds: 42,

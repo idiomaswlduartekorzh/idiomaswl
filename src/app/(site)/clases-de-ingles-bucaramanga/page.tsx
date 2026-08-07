@@ -284,7 +284,7 @@ export default function ClasesInglessBucaramangaPage() {
             {[
               { icon: '🎓', title: 'Preparación IELTS', sub: 'Band 6.5 – 8.0', desc: 'Para estudiar en el exterior, migrar a Canadá, Australia, Reino Unido o trabajar en empresas internacionales. Academic y General Training.', waUrl: WA_IELTS },
               { icon: '🏛️', title: 'Preparación TOEFL', sub: '90 – 110 puntos', desc: 'Para universidades en EE.UU., Canadá y Europa. Estrategias para las cuatro secciones del iBT con práctica real de escritura y speaking.', waUrl: WA_TOEFL },
-              { icon: '📚', title: 'ICFES Saber 11', sub: 'Nivel B2 – C1', desc: 'Para subir el puntaje de inglés en las pruebas de Estado. Plan específico para el componente de inglés del ICFES.', waUrl: WA_GENERAL },
+              { icon: '📚', title: 'ICFES Saber 11', sub: 'Pre A1 – B1', desc: 'Para mejorar lectura y uso de la lengua en el componente de inglés. B1 es el nivel más alto reportado por la prueba.', waUrl: WA_GENERAL },
               { icon: '💼', title: 'Inglés laboral y conversacional', sub: 'Fluidez real', desc: 'Para comunicarte en el trabajo, entrevistas en multinacionales, trabajo remoto o mudarte al exterior. Corrección real de errores.', waUrl: WA_GENERAL },
             ].map(item => (
               <div key={item.title} style={{ background: 'var(--surface)', border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

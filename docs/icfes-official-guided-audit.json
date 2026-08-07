@@ -1,0 +1,293 @@
+{
+  "generatedAt": "2026-08-04T04:24:26.375Z",
+  "scope": {
+    "officialSaber11Samples": [
+      {
+        "id": "icfes-2023-g11",
+        "year": 2023,
+        "totalQuestions": 25,
+        "parts": [
+          1,
+          3,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "icfes-2022-g11",
+        "year": 2022,
+        "totalQuestions": 25,
+        "parts": [
+          1,
+          3,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "icfes-2019-ex1",
+        "year": 2019,
+        "totalQuestions": 25,
+        "parts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "icfes-2021-ex1",
+        "year": 2021,
+        "totalQuestions": 25,
+        "parts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "icfes-2021-ex2",
+        "year": 2021,
+        "totalQuestions": 25,
+        "parts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "icfes-2016",
+        "year": 2016,
+        "totalQuestions": 25,
+        "parts": [
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "icfes-2012",
+        "year": 2012,
+        "totalQuestions": 45,
+        "parts": [
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "guided": [
+      "icfes-2023-g11",
+      "icfes-2022-g11",
+      "icfes-2019-ex1",
+      "icfes-2021-ex1",
+      "icfes-2012"
+    ],
+    "excluded": {
+      "icfes-2021-ex2": "Faltan los estímulos de los avisos 4–6 en el banco digital; no se infieren desde la clave.",
+      "icfes-2016": "Faltan los estímulos de los avisos 1–3 en el banco digital; no se infieren desde la clave."
+    },
+    "guidedQuestions": 145,
+    "provenanceRule": "Enunciados/opciones/claves: material divulgado por ICFES. Explicaciones: elaboración IdiomasWL."
+  },
+  "verdict": "approved",
+  "summary": {
+    "checks": 17,
+    "passed": 17,
+    "failed": 0,
+    "critical": 0,
+    "high": 0,
+    "medium": 0
+  },
+  "answerPositions": [
+    {
+      "position": "A",
+      "count": 34
+    },
+    {
+      "position": "B",
+      "count": 36
+    },
+    {
+      "position": "C",
+      "count": 43
+    },
+    {
+      "position": "D",
+      "count": 22
+    },
+    {
+      "position": "E",
+      "count": 4
+    },
+    {
+      "position": "F",
+      "count": 3
+    },
+    {
+      "position": "G",
+      "count": 2
+    },
+    {
+      "position": "H",
+      "count": 1
+    }
+  ],
+  "checks": [
+    {
+      "id": "official-count",
+      "label": "Siete muestras Saber 11 clasificadas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7",
+      "remediation": ""
+    },
+    {
+      "id": "guided-eligibility",
+      "label": "Cinco muestras completas habilitadas y dos exclusiones documentadas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5 guiadas · 2 excluidas",
+      "remediation": ""
+    },
+    {
+      "id": "guided-question-count",
+      "label": "La extensión histórica se conserva",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "145/145 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "official-option-parity",
+      "label": "Opciones y claves idénticas al banco fuente",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 diferencias",
+      "remediation": ""
+    },
+    {
+      "id": "official-part-parity",
+      "label": "Parte histórica preservada por pregunta",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 diferencias",
+      "remediation": ""
+    },
+    {
+      "id": "source-provenance",
+      "label": "Cada pregunta conserva la referencia oficial",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 referencias inválidas",
+      "remediation": ""
+    },
+    {
+      "id": "unique-guided-ids",
+      "label": "Identificadores guiados únicos",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "145/145",
+      "remediation": ""
+    },
+    {
+      "id": "rationale-coverage",
+      "label": "Cada alternativa tiene una razón visible",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "581 alternativas cubiertas",
+      "remediation": ""
+    },
+    {
+      "id": "no-banned-feedback",
+      "label": "Sin las plantillas generalistas rechazadas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 coincidencias",
+      "remediation": ""
+    },
+    {
+      "id": "evidence-coverage",
+      "label": "Toda respuesta tiene evidencia y razón",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "145/145",
+      "remediation": ""
+    },
+    {
+      "id": "reading-evidence-localized",
+      "label": "La evidencia de lectura existe en el pasaje",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 citas externas",
+      "remediation": ""
+    },
+    {
+      "id": "gap-substitution",
+      "label": "Cada opción cloze se analiza de forma explícita",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 preguntas incompletas",
+      "remediation": ""
+    },
+    {
+      "id": "documented-missing-stimuli",
+      "label": "Seis avisos incompletos quedan fuera del guiado",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "icfes-2021-ex2-q4 · icfes-2021-ex2-q5 · icfes-2021-ex2-q6 · icfes-2016-q1 · icfes-2016-q2 · icfes-2016-q3",
+      "remediation": ""
+    },
+    {
+      "id": "dynamic-guided-page",
+      "label": "La ruta usa extensión y partes de cada muestra",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Extensión dinámica",
+      "remediation": ""
+    },
+    {
+      "id": "historical-disclaimer",
+      "label": "La ruta explica el alcance histórico",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Descargo visible",
+      "remediation": ""
+    },
+    {
+      "id": "catalog-eligibility",
+      "label": "El catálogo muestra guiado solo cuando es elegible",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Elegibilidad explícita",
+      "remediation": ""
+    },
+    {
+      "id": "error-review-integration",
+      "label": "Los cinco cuadernillos entran a la cola de errores",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Integración por registro",
+      "remediation": ""
+    }
+  ]
+}

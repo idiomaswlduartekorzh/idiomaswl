@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import type { IcfesBand } from '@/lib/types/icfes'
 
 interface MockResultCardProps {
   id: string
@@ -9,7 +10,7 @@ interface MockResultCardProps {
   subtitle?: string
   score: number
   maxScore: number
-  band: 'A-' | 'A' | 'A+' | 'B' | 'B+'
+  band: IcfesBand
   timeSpent: number // segundos
   completedAt: Date
   isPerfect?: boolean
@@ -18,27 +19,22 @@ interface MockResultCardProps {
 }
 
 const BAND_COLORS: Record<string, { bg: string; text: string; icon: string }> = {
-  'A+': {
+  'B1': {
     bg: 'from-emerald-500 to-green-500',
     text: 'text-emerald-600 dark:text-emerald-400',
     icon: '⭐',
   },
-  'A': {
+  'A2': {
     bg: 'from-green-500 to-lime-500',
     text: 'text-green-600 dark:text-green-400',
     icon: '✨',
   },
-  'A-': {
+  'A1': {
     bg: 'from-lime-500 to-yellow-500',
     text: 'text-yellow-600 dark:text-yellow-400',
     icon: '⚡',
   },
-  'B': {
-    bg: 'from-yellow-500 to-orange-500',
-    text: 'text-orange-600 dark:text-orange-400',
-    icon: '🔥',
-  },
-  'B+': {
+  'Pre A1': {
     bg: 'from-orange-500 to-red-500',
     text: 'text-red-600 dark:text-red-400',
     icon: '⚠️',
@@ -136,7 +132,7 @@ export function MockResultCard({
               {band}
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-              {bandInfo.icon} Banda predicha
+              {bandInfo.icon} Nivel estimado
             </p>
           </motion.div>
         </div>

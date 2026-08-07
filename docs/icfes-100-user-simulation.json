@@ -1,0 +1,2211 @@
+{
+  "generatedAt": "2026-08-04T04:22:46.259Z",
+  "methodology": {
+    "kind": "deterministic-synthetic-cohort",
+    "runtime": true,
+    "statement": "Se simulan tareas, rutas y exposición pedagógica; no se simulan emociones, memoria ni aprendizaje humano como si fueran mediciones reales.",
+    "browserEvidence": "Playwright manual dirigido valida teclado, respuesta incorrecta, feedback específico, persistencia y repaso; sus resultados se consolidan en la auditoría final."
+  },
+  "verdict": "approved",
+  "totals": {
+    "users": 100,
+    "cohorts": 7,
+    "uniqueRoutes": 33,
+    "checks": 15,
+    "criticalOrHighOpen": 0
+  },
+  "perCohort": [
+    {
+      "cohort": "organic-structure",
+      "users": 20,
+      "source": "google-organic",
+      "outcomeProxy": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
+    },
+    {
+      "cohort": "organic-vocabulary",
+      "users": 15,
+      "source": "google-organic",
+      "outcomeProxy": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
+    },
+    {
+      "cohort": "organic-guided-simulator",
+      "users": 15,
+      "source": "google-organic",
+      "outcomeProxy": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
+    },
+    {
+      "cohort": "organic-workbooks",
+      "users": 15,
+      "source": "google-organic",
+      "outcomeProxy": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
+    },
+    {
+      "cohort": "recommended-mock",
+      "users": 15,
+      "source": "recommendation",
+      "outcomeProxy": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
+    },
+    {
+      "cohort": "error-recovery",
+      "users": 10,
+      "source": "returning",
+      "outcomeProxy": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
+    },
+    {
+      "cohort": "accessible-novice",
+      "users": 10,
+      "source": "recommendation",
+      "outcomeProxy": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "caveat": "Oportunidad pedagógica inferida por contenido y flujo; no equivale a aprendizaje observado en personas reales."
+    }
+  ],
+  "runtimeResults": [
+    {
+      "route": "/practica/icfes-saber-11",
+      "status": 200,
+      "title": "ICFES Inglés Saber 11: guía, 7 partes, práctica y simulacros · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-1",
+      "status": 200,
+      "title": "Parte 1 ICFES Inglés: vocabulario, estrategia y práctica · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-2",
+      "status": 200,
+      "title": "Parte 2 ICFES Inglés: avisos y señales con ejercicios · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-3",
+      "status": 200,
+      "title": "Parte 3 ICFES Inglés: conversaciones y respuestas correctas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-4",
+      "status": 200,
+      "title": "Parte 4 ICFES Inglés: gramática y cloze explicado · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-5",
+      "status": 200,
+      "title": "Parte 5 ICFES Inglés: comprensión de lectura literal · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-6",
+      "status": 200,
+      "title": "Parte 6 ICFES Inglés: inferencia, propósito e intención · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-7",
+      "status": 200,
+      "title": "Parte 7 ICFES Inglés: cloze, vocabulario y gramática · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/vocabulario",
+      "status": 200,
+      "title": "Vocabulario para ICFES Inglés: palabras, conectores y práctica · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/sinonimos-inferencia",
+      "status": 200,
+      "title": "Ejercicios ICFES Inglés: Sinónimos e Inferencia | Saber 11 · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/simulacro-guiado",
+      "status": 200,
+      "title": "Simulacro guiado ICFES Inglés: 55 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes",
+      "status": 200,
+      "title": "Cuadernillos ICFES Inglés: práctica oficial explicada · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado",
+      "status": 200,
+      "title": "Cuadernillo Oficial 2023 — Grado 11: práctica guiada con explicaciones · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado",
+      "status": 200,
+      "title": "Cuadernillo Oficial 2022 — Grado 11: práctica guiada con explicaciones · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado",
+      "status": 200,
+      "title": "Cuadernillo Oficial 2019 — Examen 1: práctica guiada con explicaciones · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado",
+      "status": 200,
+      "title": "Cuadernillo Oficial 2021 — Grado 11 · Examen 1: práctica guiada con explicaciones · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2012/guiado",
+      "status": 200,
+      "title": "Cuadernillo Oficial 2012 — Grado 11 · 45 preguntas: práctica guiada con explicaciones · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-01/guiado",
+      "status": 200,
+      "title": "Mock 1 · Lugares, personas y comunidad guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-02/guiado",
+      "status": 200,
+      "title": "Mock 2 · Viajes y transporte guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-03/guiado",
+      "status": 200,
+      "title": "Mock 3 · Salud y cuerpo guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-04/guiado",
+      "status": 200,
+      "title": "Mock 4 · Escuela y educación guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-05/guiado",
+      "status": 200,
+      "title": "Mock 5 · Comida y nutrición guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-06/guiado",
+      "status": 200,
+      "title": "Mock 6 · Medio ambiente guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-07/guiado",
+      "status": 200,
+      "title": "Mock 7 · Tecnología e internet guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-08/guiado",
+      "status": 200,
+      "title": "Mock 8 · Familia y hogar guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-09/guiado",
+      "status": 200,
+      "title": "Mock 9 · Trabajo y carrera guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-10/guiado",
+      "status": 200,
+      "title": "Mock 10 · Compras y dinero guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-11/guiado",
+      "status": 200,
+      "title": "Mock 11 · Deportes y ejercicio guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-12/guiado",
+      "status": 200,
+      "title": "Mock 12 · Animales y naturaleza guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-13/guiado",
+      "status": 200,
+      "title": "Mock 13 · Arte y cultura guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-14/guiado",
+      "status": 200,
+      "title": "Mock 14 · Clima y estaciones guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-15/guiado",
+      "status": 200,
+      "title": "Mock 15 · Redes sociales y comunicación guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    },
+    {
+      "route": "/practica/icfes-saber-11/repaso-errores",
+      "status": 200,
+      "title": "Repaso de errores ICFES Inglés: evidencia y refuerzo · Idiomas WeLearn",
+      "hasMain": true,
+      "hasDescription": true
+    }
+  ],
+  "findings": [],
+  "checks": [
+    {
+      "id": "cohort-size",
+      "title": "La cohorte contiene exactamente 100 estudiantes sintéticos",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "100/100",
+      "remediation": "Corregir la distribución de cohortes."
+    },
+    {
+      "id": "source-mix",
+      "title": "Incluye llegada orgánica, recomendada y recurrente",
+      "pass": true,
+      "severity": "high",
+      "evidence": "google-organic, recommendation, returning",
+      "remediation": "Añadir el origen de llegada faltante."
+    },
+    {
+      "id": "novice-coverage",
+      "title": "La mayoría incluye conocimiento nulo o bajo",
+      "pass": true,
+      "severity": "high",
+      "evidence": "75/100",
+      "remediation": "Aumentar recorridos de principiantes."
+    },
+    {
+      "id": "mobile-keyboard-coverage",
+      "title": "La simulación cubre móvil y teclado",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Móvil y teclado presentes",
+      "remediation": "Añadir recorridos no basados en mouse."
+    },
+    {
+      "id": "hub-choice-architecture",
+      "title": "El hub ofrece diagnóstico, partes, cuadernillos y errores",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Cuatro entradas verificadas",
+      "remediation": "Restaurar el punto de entrada faltante."
+    },
+    {
+      "id": "vocabulary-transfer",
+      "title": "Vocabulario enlaza a aplicación real",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Tres destinos de transferencia",
+      "remediation": "Evitar un banco de tarjetas sin aplicación."
+    },
+    {
+      "id": "feedback-contract",
+      "title": "El motor muestra evidencia, distractores y microlección",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Contrato pedagógico completo",
+      "remediation": "No reducir feedback a correcta/incorrecta."
+    },
+    {
+      "id": "attempt-persistence",
+      "title": "El intento se persiste para continuidad",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Persistencia y reconstrucción de cola",
+      "remediation": "Conectar motor y repaso de errores."
+    },
+    {
+      "id": "error-review-contract",
+      "title": "El repaso reconstruye error, evidencia y refuerzo",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Cuatro elementos de corrección",
+      "remediation": "Mostrar la decisión anterior y la transferencia."
+    },
+    {
+      "id": "keyboard-contract",
+      "title": "La Parte 1 implementa patrón de pestañas accesible",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Flechas, Home/End y roving tabindex",
+      "remediation": "Restaurar navegación de teclado."
+    },
+    {
+      "id": "own-practice-truth",
+      "title": "Los mocks propios declaran extensión y límites",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "45 preguntas, práctica propia y sin predicción",
+      "remediation": "No presentar un mock propio como cuadernillo oficial."
+    },
+    {
+      "id": "official-practice-truth",
+      "title": "Las muestras oficiales preservan procedencia y alcance histórico",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Fuente, autoría de explicación y límite visibles",
+      "remediation": "Separar material divulgado y explicación propia."
+    },
+    {
+      "id": "guided-inventory-reach",
+      "title": "La cohorte cubre mocks representativos y las cinco muestras guiadas",
+      "pass": true,
+      "severity": "medium",
+      "evidence": "15/23 mocks muestreados por cohortes · 5/5 muestras históricas; el smoke independiente cubre 23/23",
+      "remediation": "Rotar la cohorte y mantener el smoke exhaustivo de rutas."
+    },
+    {
+      "id": "runtime-route-health",
+      "title": "Todas las rutas de los 100 recorridos renderizan",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "33/33 rutas únicas sanas",
+      "remediation": "Corregir: "
+    },
+    {
+      "id": "runtime-search-snippets",
+      "title": "Las entradas indexables tienen descripción",
+      "pass": true,
+      "severity": "high",
+      "evidence": "33/33 con descripción o noindex",
+      "remediation": "Añadir metadata: "
+    }
+  ],
+  "users": [
+    {
+      "id": "student-001",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-002",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-2"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-003",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-3"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-004",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-4"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-005",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-5"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-006",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-6"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-007",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-7"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-008",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-009",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-2"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-010",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-3"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-011",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-4"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-012",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-5"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-013",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-6"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-014",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-7"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-015",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-016",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-2"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-017",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-3"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-018",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-4"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-019",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-5"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-020",
+      "cohort": "organic-structure",
+      "source": "google-organic",
+      "priorKnowledge": "none",
+      "viewport": "desktop",
+      "intent": "qué evalúa inglés ICFES y cómo son sus partes",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-6"
+      ],
+      "expectedOutcome": "Comprende el tipo de tarea, observa un método y llega a práctica guiada.",
+      "learningOpportunity": [
+        "task-definition",
+        "worked-examples",
+        "guided-practice"
+      ]
+    },
+    {
+      "id": "student-021",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-022",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-7"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-023",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/sinonimos-inferencia"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-024",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-025",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-7"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-026",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/sinonimos-inferencia"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-027",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-028",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-7"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-029",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/sinonimos-inferencia"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-030",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-031",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-7"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-032",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/sinonimos-inferencia"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-033",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-034",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/parte-7"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-035",
+      "cohort": "organic-vocabulary",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "mobile",
+      "intent": "vocabulario y palabras para ICFES inglés",
+      "journey": [
+        "/practica/icfes-saber-11/vocabulario",
+        "/practica/icfes-saber-11/sinonimos-inferencia"
+      ],
+      "expectedOutcome": "Pasa de vocabulario por familias a una tarea donde debe aplicarlo.",
+      "learningOpportunity": [
+        "semantic-groups",
+        "transfer-link",
+        "contextual-practice"
+      ]
+    },
+    {
+      "id": "student-036",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-037",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-038",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-039",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-040",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-041",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-042",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-043",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-044",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-045",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-046",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-047",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-048",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-049",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-050",
+      "cohort": "organic-guided-simulator",
+      "source": "google-organic",
+      "priorKnowledge": "low",
+      "viewport": "desktop",
+      "intent": "simulacro ICFES inglés gratis con respuestas",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/simulacro-guiado"
+      ],
+      "expectedOutcome": "Distingue práctica propia de prueba oficial y recibe feedback por alternativa.",
+      "learningOpportunity": [
+        "scope-disclaimer",
+        "seven-parts",
+        "immediate-feedback"
+      ]
+    },
+    {
+      "id": "student-051",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-052",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-053",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-054",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-055",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2012/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-056",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-057",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-058",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-059",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-060",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2012/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-061",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-062",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-063",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-064",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-065",
+      "cohort": "organic-workbooks",
+      "source": "google-organic",
+      "priorKnowledge": "medium",
+      "viewport": "desktop",
+      "intent": "cuadernillos ICFES inglés con respuestas explicadas",
+      "journey": [
+        "/practica/icfes-saber-11/examenes",
+        "/practica/icfes-saber-11/examenes/icfes-2012/guiado"
+      ],
+      "expectedOutcome": "Elige una muestra histórica elegible y entiende sus límites antes de practicar.",
+      "learningOpportunity": [
+        "source-provenance",
+        "historical-scope",
+        "guided-review"
+      ]
+    },
+    {
+      "id": "student-066",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-01/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-067",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-02/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-068",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-03/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-069",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-04/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-070",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-05/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-071",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-06/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-072",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-07/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-073",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-08/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-074",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-09/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-075",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-10/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-076",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-11/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-077",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-12/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-078",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-13/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-079",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-14/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-080",
+      "cohort": "recommended-mock",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "mobile",
+      "intent": "me recomendaron esta práctica y quiero empezar de inmediato",
+      "journey": [
+        "/examenes/icfes/practica/mock-15/guiado"
+      ],
+      "expectedOutcome": "Puede empezar sin registro, reconoce que es práctica abreviada y recibe una explicación accionable.",
+      "learningOpportunity": [
+        "no-registration",
+        "scope-disclaimer",
+        "error-explanation"
+      ]
+    },
+    {
+      "id": "student-081",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-082",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-083",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-084",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-085",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-086",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-087",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-088",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-089",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-090",
+      "cohort": "error-recovery",
+      "source": "returning",
+      "priorKnowledge": "mixed",
+      "viewport": "desktop",
+      "intent": "quiero entender y corregir lo que fallé",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/repaso-errores"
+      ],
+      "expectedOutcome": "Reencuentra selección, respuesta correcta, evidencia y refuerzo específico.",
+      "learningOpportunity": [
+        "stored-attempt",
+        "localized-evidence",
+        "reinforcement"
+      ]
+    },
+    {
+      "id": "student-091",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-092",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-093",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-094",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-095",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-096",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-097",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-098",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-099",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "student-100",
+      "cohort": "accessible-novice",
+      "source": "recommendation",
+      "priorKnowledge": "none",
+      "viewport": "keyboard-mobile",
+      "intent": "necesito una explicación navegable sin depender de hover",
+      "journey": [
+        "/practica/icfes-saber-11",
+        "/practica/icfes-saber-11/parte-1"
+      ],
+      "expectedOutcome": "Navega enlaces y pestañas con teclado, foco visible y movimiento reducido.",
+      "learningOpportunity": [
+        "keyboard-tabs",
+        "focus-visible",
+        "reduced-motion"
+      ]
+    }
+  ]
+}

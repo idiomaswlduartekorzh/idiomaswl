@@ -1,0 +1,900 @@
+{
+  "generatedAt": "2026-08-04T04:24:26.446Z",
+  "verdict": "approved",
+  "totals": {
+    "catalogResources": 33,
+    "ownMocks": 23,
+    "officialSaber11": 7,
+    "relatedIcfes": 3,
+    "standaloneGuided": 1,
+    "saber11Experiences": 31,
+    "allInventoryResources": 34,
+    "guidedApprovedOrPilot": 29
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "id": "guided-55-generic-feedback",
+      "status": "resolved",
+      "detail": "El banco de 55 ya tiene retroalimentación específica por alternativa y una compuerta editorial propia."
+    },
+    {
+      "severity": "medium",
+      "id": "tyt-grade-model",
+      "status": "resolved",
+      "detail": "El modelo distingue Saber 11, Saber 10, Saber 9 y Saber TyT; TyT ya no se representa como grado 11."
+    },
+    {
+      "severity": "info",
+      "id": "historical-formats",
+      "status": "documented",
+      "detail": "Los siete cuadernillos Saber 11 son muestras históricas de extensiones y distribuciones distintas; no deben normalizarse como si fueran la aplicación estándar 2026-2."
+    }
+  ],
+  "batchQueue": [
+    [
+      "mock-04",
+      "mock-05",
+      "mock-06"
+    ],
+    [
+      "mock-07",
+      "mock-08",
+      "mock-09"
+    ],
+    [
+      "mock-10",
+      "mock-11",
+      "mock-12"
+    ],
+    [
+      "mock-13",
+      "mock-14",
+      "mock-15"
+    ],
+    [
+      "mock-16",
+      "mock-17",
+      "mock-18"
+    ],
+    [
+      "mock-19",
+      "mock-20",
+      "mock-21"
+    ],
+    [
+      "mock-22",
+      "mock-23"
+    ],
+    [
+      "guided-simulacro-2026-55"
+    ],
+    [
+      "icfes-2023-g11",
+      "icfes-2022-g11"
+    ],
+    [
+      "icfes-2021-ex1",
+      "icfes-2021-ex2"
+    ],
+    [
+      "icfes-2019-ex1",
+      "icfes-2016"
+    ],
+    [
+      "icfes-2012"
+    ],
+    [
+      "icfes-2022-g10",
+      "icfes-2022-g9",
+      "icfes-tyt"
+    ],
+    [
+      "mock-01",
+      "mock-02",
+      "mock-03",
+      "final-reaudit"
+    ]
+  ],
+  "checks": [
+    {
+      "id": "own-files",
+      "pass": true,
+      "evidence": "23/23 módulos propios"
+    },
+    {
+      "id": "own-registry",
+      "pass": true,
+      "evidence": "23/23 registrados; faltan: ninguno"
+    },
+    {
+      "id": "catalog-resources",
+      "pass": true,
+      "evidence": "33/33 recursos en catálogo"
+    },
+    {
+      "id": "catalog-parity",
+      "pass": true,
+      "evidence": "Faltantes: ninguno"
+    },
+    {
+      "id": "official-export",
+      "pass": true,
+      "evidence": "10/10 cuadernillos exportados"
+    },
+    {
+      "id": "official-question-counts",
+      "pass": true,
+      "evidence": "Desajustes: ninguno"
+    },
+    {
+      "id": "unique-inventory-ids",
+      "pass": true,
+      "evidence": "Duplicados: ninguno"
+    },
+    {
+      "id": "guided-55-route",
+      "pass": true,
+      "evidence": "Ruta adicional de 55 preguntas en sitemap"
+    },
+    {
+      "id": "assessment-classification",
+      "pass": true,
+      "evidence": "TyT tiene assessment propio y grade nulo"
+    }
+  ],
+  "resources": [
+    {
+      "id": "mock-01",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-01",
+      "guidedRoute": "/examenes/icfes/practica/mock-01/guiado"
+    },
+    {
+      "id": "mock-02",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-02",
+      "guidedRoute": "/examenes/icfes/practica/mock-02/guiado"
+    },
+    {
+      "id": "mock-03",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-03",
+      "guidedRoute": "/examenes/icfes/practica/mock-03/guiado"
+    },
+    {
+      "id": "mock-04",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-04",
+      "guidedRoute": "/examenes/icfes/practica/mock-04/guiado"
+    },
+    {
+      "id": "mock-05",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-05",
+      "guidedRoute": "/examenes/icfes/practica/mock-05/guiado"
+    },
+    {
+      "id": "mock-06",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-06",
+      "guidedRoute": "/examenes/icfes/practica/mock-06/guiado"
+    },
+    {
+      "id": "mock-07",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-07",
+      "guidedRoute": "/examenes/icfes/practica/mock-07/guiado"
+    },
+    {
+      "id": "mock-08",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-08",
+      "guidedRoute": "/examenes/icfes/practica/mock-08/guiado"
+    },
+    {
+      "id": "mock-09",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-09",
+      "guidedRoute": "/examenes/icfes/practica/mock-09/guiado"
+    },
+    {
+      "id": "mock-10",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-10",
+      "guidedRoute": "/examenes/icfes/practica/mock-10/guiado"
+    },
+    {
+      "id": "mock-11",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-11",
+      "guidedRoute": "/examenes/icfes/practica/mock-11/guiado"
+    },
+    {
+      "id": "mock-12",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-12",
+      "guidedRoute": "/examenes/icfes/practica/mock-12/guiado"
+    },
+    {
+      "id": "mock-13",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-13",
+      "guidedRoute": "/examenes/icfes/practica/mock-13/guiado"
+    },
+    {
+      "id": "mock-14",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-14",
+      "guidedRoute": "/examenes/icfes/practica/mock-14/guiado"
+    },
+    {
+      "id": "mock-15",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-15",
+      "guidedRoute": "/examenes/icfes/practica/mock-15/guiado"
+    },
+    {
+      "id": "mock-16",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-16",
+      "guidedRoute": "/examenes/icfes/practica/mock-16/guiado"
+    },
+    {
+      "id": "mock-17",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-17",
+      "guidedRoute": "/examenes/icfes/practica/mock-17/guiado"
+    },
+    {
+      "id": "mock-18",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-18",
+      "guidedRoute": "/examenes/icfes/practica/mock-18/guiado"
+    },
+    {
+      "id": "mock-19",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-19",
+      "guidedRoute": "/examenes/icfes/practica/mock-19/guiado"
+    },
+    {
+      "id": "mock-20",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-20",
+      "guidedRoute": "/examenes/icfes/practica/mock-20/guiado"
+    },
+    {
+      "id": "mock-21",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-21",
+      "guidedRoute": "/examenes/icfes/practica/mock-21/guiado"
+    },
+    {
+      "id": "mock-22",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-22",
+      "guidedRoute": "/examenes/icfes/practica/mock-22/guiado"
+    },
+    {
+      "id": "mock-23",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": null,
+      "grade": 11,
+      "format": "practice-abbreviated-45",
+      "questions": 45,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "pilot-approved",
+      "route": "/examenes/icfes/practica/mock-23",
+      "guidedRoute": "/examenes/icfes/practica/mock-23/guiado"
+    },
+    {
+      "id": "icfes-2023-g11",
+      "family": "saber-11",
+      "provenance": "icfes-published",
+      "year": 2023,
+      "grade": 11,
+      "format": "historical-published-sample",
+      "questions": 25,
+      "declaredQuestions": 25,
+      "parts": [
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "approved",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2023-g11",
+      "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado",
+      "source": "ICFES, 2023. Cuadernillo 1, Grado 11."
+    },
+    {
+      "id": "icfes-2022-g11",
+      "family": "saber-11",
+      "provenance": "icfes-published",
+      "year": 2022,
+      "grade": 11,
+      "format": "historical-published-sample",
+      "questions": 25,
+      "declaredQuestions": 25,
+      "parts": [
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "approved",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2022-g11",
+      "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado",
+      "source": "ICFES, 2022. Cuadernillo 1, Grado 11."
+    },
+    {
+      "id": "icfes-2019-ex1",
+      "family": "saber-11",
+      "provenance": "icfes-published",
+      "year": 2019,
+      "grade": 11,
+      "format": "historical-published-sample",
+      "questions": 25,
+      "declaredQuestions": 25,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "approved",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2019-ex1",
+      "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado",
+      "source": "ICFES, 2018–2019. Cuadernillo de preguntas Saber 11°. Examen 1."
+    },
+    {
+      "id": "icfes-2021-ex1",
+      "family": "saber-11",
+      "provenance": "icfes-published",
+      "year": 2021,
+      "grade": 11,
+      "format": "historical-published-sample",
+      "questions": 25,
+      "declaredQuestions": 25,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "approved",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex1",
+      "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado",
+      "source": "ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 1."
+    },
+    {
+      "id": "icfes-2021-ex2",
+      "family": "saber-11",
+      "provenance": "icfes-published",
+      "year": 2021,
+      "grade": 11,
+      "format": "historical-published-sample",
+      "questions": 25,
+      "declaredQuestions": 25,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": false,
+      "guidedStatus": "excluded-missing-stimulus",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex2",
+      "guidedRoute": null,
+      "source": "ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 2."
+    },
+    {
+      "id": "icfes-2016",
+      "family": "saber-11",
+      "provenance": "icfes-published",
+      "year": 2016,
+      "grade": 11,
+      "format": "historical-published-sample",
+      "questions": 25,
+      "declaredQuestions": 25,
+      "parts": [
+        2,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": false,
+      "guidedStatus": "excluded-missing-stimulus",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2016",
+      "guidedRoute": null,
+      "source": "ICFES, 2016. Cuadernillo de prueba Saber 11°, publicación de preguntas Inglés."
+    },
+    {
+      "id": "icfes-2012",
+      "family": "saber-11",
+      "provenance": "icfes-published",
+      "year": 2012,
+      "grade": 11,
+      "format": "historical-published-sample",
+      "questions": 45,
+      "declaredQuestions": 45,
+      "parts": [
+        2,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "approved",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2012",
+      "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2012/guiado",
+      "source": "ICFES, 2012. Cuadernillo de pruebas Saber 11°, prueba de Inglés."
+    },
+    {
+      "id": "icfes-2022-g10",
+      "family": "saber-10",
+      "provenance": "icfes-published",
+      "year": 2022,
+      "grade": 10,
+      "format": "related-icfes-assessment",
+      "questions": 22,
+      "declaredQuestions": 22,
+      "parts": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "guidedEligible": false,
+      "guidedStatus": "not-saber-11",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2022-g10",
+      "guidedRoute": null,
+      "source": "ICFES, 2022. Cuadernillo 1 Inglés, Saber 10.°"
+    },
+    {
+      "id": "icfes-2022-g9",
+      "family": "saber-9",
+      "provenance": "icfes-published",
+      "year": 2022,
+      "grade": 9,
+      "format": "related-icfes-assessment",
+      "questions": 22,
+      "declaredQuestions": 22,
+      "parts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "guidedEligible": false,
+      "guidedStatus": "not-saber-11",
+      "route": "/practica/icfes-saber-11/examenes/icfes-2022-g9",
+      "guidedRoute": null,
+      "source": "ICFES, 2022. Cuadernillo 1 Inglés, Saber 9.°"
+    },
+    {
+      "id": "icfes-tyt",
+      "family": "saber-tyt",
+      "provenance": "icfes-published",
+      "year": 2018,
+      "grade": null,
+      "format": "related-icfes-assessment",
+      "questions": 25,
+      "declaredQuestions": 25,
+      "parts": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "guidedEligible": false,
+      "guidedStatus": "not-saber-11",
+      "route": "/practica/icfes-saber-11/examenes/icfes-tyt",
+      "guidedRoute": null,
+      "source": "ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés."
+    },
+    {
+      "id": "guided-simulacro-2026-55",
+      "family": "saber-11",
+      "provenance": "welearn-original",
+      "year": 2026,
+      "grade": 11,
+      "format": "guided-current-blueprint-55",
+      "questions": 55,
+      "parts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "guidedEligible": true,
+      "guidedStatus": "approved",
+      "route": "/practica/icfes-saber-11/simulacro-guiado"
+    }
+  ]
+}

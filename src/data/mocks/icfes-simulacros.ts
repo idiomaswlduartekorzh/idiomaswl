@@ -1,9 +1,10 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// ICFES Saber 11 — Simulacros oficiales (exámenes reales ICFES)
+// ICFES Saber 11 — Cuadernillos divulgados por el ICFES
 // Fuente: Cuadernillos de preguntas publicados por ICFES Colombia
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type QType = 'vocab' | 'notice' | 'dialog' | 'gap' | 'reading';
+export type IcfesAssessment = 'saber-11' | 'saber-10' | 'saber-9' | 'saber-tyt';
 
 export interface SimulacroQuestion {
   n: number;
@@ -24,12 +25,15 @@ export interface SimulacroPassage {
 
 export interface Simulacro {
   id: string;
+  assessment: IcfesAssessment;
   year: number;
-  grade: 9 | 10 | 11;
+  grade: 9 | 10 | 11 | null;
   title: string;
   source: string;
   timeMinutes: number;
   totalQuestions: number;
+  /** Current seven-part taxonomy, explicit because published samples can omit parts. */
+  partRanges: { part: 1 | 2 | 3 | 4 | 5 | 6 | 7; from: number; to: number }[];
   passages: SimulacroPassage[];
   questions: SimulacroQuestion[];
 }
@@ -39,12 +43,18 @@ export interface Simulacro {
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2023: Simulacro = {
   id: 'icfes-2023-g11',
+  assessment: 'saber-11',
   year: 2023,
   grade: 11,
   title: 'Cuadernillo Oficial 2023 — Grado 11',
   source: 'ICFES, 2023. Cuadernillo 1, Grado 11.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 3, from: 6, to: 8 },
+    { part: 5, from: 9, to: 14 }, { part: 6, from: 15, to: 19 },
+    { part: 7, from: 20, to: 25 },
+  ],
 
   passages: [
     {
@@ -188,12 +198,18 @@ Tomatoes are used in many food products as pasta and pizza. According to a surve
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2022: Simulacro = {
   id: 'icfes-2022-g11',
+  assessment: 'saber-11',
   year: 2022,
   grade: 11,
   title: 'Cuadernillo Oficial 2022 — Grado 11',
   source: 'ICFES, 2022. Cuadernillo 1, Grado 11.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 3, from: 6, to: 8 },
+    { part: 5, from: 9, to: 14 }, { part: 6, from: 15, to: 19 },
+    { part: 7, from: 20, to: 25 },
+  ],
 
   passages: [
     {
@@ -329,12 +345,18 @@ Tomatoes are used in many food products as pasta and pizza. According to a surve
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2019ex1: Simulacro = {
   id: 'icfes-2019-ex1',
+  assessment: 'saber-11',
   year: 2019,
   grade: 11,
   title: 'Cuadernillo Oficial 2019 — Examen 1',
   source: 'ICFES, 2018–2019. Cuadernillo de preguntas Saber 11°. Examen 1.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 6 },
+    { part: 3, from: 7, to: 8 }, { part: 4, from: 9, to: 16 },
+    { part: 5, from: 17, to: 23 }, { part: 6, from: 24, to: 25 },
+  ],
 
   passages: [
     {
@@ -478,12 +500,18 @@ It certainly feels great to find new excellent food delivery companies for whene
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2021ex1: Simulacro = {
   id: 'icfes-2021-ex1',
+  assessment: 'saber-11',
   year: 2021,
   grade: 11,
   title: 'Cuadernillo Oficial 2021 — Grado 11 · Examen 1',
   source: 'ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 1.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 6 },
+    { part: 3, from: 7, to: 8 }, { part: 4, from: 9, to: 16 },
+    { part: 5, from: 17, to: 23 }, { part: 6, from: 24, to: 25 },
+  ],
 
   passages: [
     {
@@ -623,12 +651,19 @@ I decided to post an excellent review about this restaurant on all the major tra
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2021ex2: Simulacro = {
   id: 'icfes-2021-ex2',
+  assessment: 'saber-11',
   year: 2021,
   grade: 11,
   title: 'Cuadernillo Oficial 2021 — Grado 11 · Examen 2',
   source: 'ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 2.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 3 }, { part: 2, from: 4, to: 6 },
+    { part: 3, from: 7, to: 9 }, { part: 4, from: 10, to: 14 },
+    { part: 5, from: 15, to: 19 }, { part: 6, from: 20, to: 21 },
+    { part: 7, from: 22, to: 25 },
+  ],
 
   passages: [
     {
@@ -766,12 +801,19 @@ Come and discover why Colombia is one of the most exciting travel destinations i
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2016: Simulacro = {
   id: 'icfes-2016',
+  assessment: 'saber-11',
   year: 2016,
   grade: 11,
   title: 'Cuadernillo Oficial 2016 — Grado 11',
   source: 'ICFES, 2016. Cuadernillo de prueba Saber 11°, publicación de preguntas Inglés.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 2, from: 1, to: 3 }, { part: 1, from: 4, to: 6 },
+    { part: 3, from: 7, to: 9 }, { part: 4, from: 10, to: 14 },
+    { part: 5, from: 15, to: 19 }, { part: 6, from: 20, to: 21 },
+    { part: 7, from: 22, to: 25 },
+  ],
 
   passages: [
     {
@@ -909,12 +951,19 @@ Come and discover why Colombia is one of the most exciting travel destinations i
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2012: Simulacro = {
   id: 'icfes-2012',
+  assessment: 'saber-11',
   year: 2012,
   grade: 11,
   title: 'Cuadernillo Oficial 2012 — Grado 11 · 45 preguntas',
   source: 'ICFES, 2012. Cuadernillo de pruebas Saber 11°, prueba de Inglés.',
   timeMinutes: 75,
   totalQuestions: 45,
+  partRanges: [
+    { part: 2, from: 1, to: 5 }, { part: 1, from: 6, to: 10 },
+    { part: 3, from: 11, to: 15 }, { part: 4, from: 16, to: 23 },
+    { part: 5, from: 24, to: 30 }, { part: 6, from: 31, to: 35 },
+    { part: 7, from: 36, to: 45 },
+  ],
 
   passages: [
     { id: 'p12-n1', title: 'Aviso 1', text: 'All students must show their ID card to enter the building.' },
@@ -1120,12 +1169,17 @@ I am very grateful for the amazing experience my company gave me. I will tell ev
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2022g10: Simulacro = {
   id: 'icfes-2022-g10',
+  assessment: 'saber-10',
   year: 2022,
   grade: 10,
   title: 'Cuadernillo Oficial 2022 — Grado 10 · 22 preguntas',
   source: 'ICFES, 2022. Cuadernillo 1 Inglés, Saber 10.°',
   timeMinutes: 60,
   totalQuestions: 22,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 3, from: 6, to: 10 },
+    { part: 4, from: 11, to: 16 }, { part: 5, from: 17, to: 22 },
+  ],
 
   passages: [
     {
@@ -1242,12 +1296,17 @@ There are several places where you can spend a few days, a week, or longer givin
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2022g9: Simulacro = {
   id: 'icfes-2022-g9',
+  assessment: 'saber-9',
   year: 2022,
   grade: 9,
   title: 'Cuadernillo Oficial 2022 — Grado 9 · 22 preguntas',
   source: 'ICFES, 2022. Cuadernillo 1 Inglés, Saber 9.°',
   timeMinutes: 60,
   totalQuestions: 22,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 10 },
+    { part: 3, from: 11, to: 15 }, { part: 4, from: 16, to: 22 },
+  ],
 
   passages: [
     { id: 'p22g9-n6', title: 'Aviso', text: 'Children under 8 must be accompanied by an adult at all times.' },
@@ -1356,12 +1415,17 @@ Almost eight centuries later, Europeans began to make [21] own paper. At that ti
 // ─────────────────────────────────────────────────────────────────────────────
 const examTyT: Simulacro = {
   id: 'icfes-tyt',
+  assessment: 'saber-tyt',
   year: 2018,
-  grade: 11,
+  grade: null,
   title: 'Cuadernillo Oficial Saber TyT · Módulo Inglés',
   source: 'ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés.',
   timeMinutes: 60,
   totalQuestions: 25,
+  partRanges: [
+    { part: 1, from: 1, to: 5 }, { part: 2, from: 6, to: 10 },
+    { part: 5, from: 11, to: 16 }, { part: 7, from: 17, to: 25 },
+  ],
 
   passages: [
     {
@@ -1487,4 +1551,10 @@ export const SIMULACROS: Simulacro[] = [
 
 export function getSimulacro(id: string): Simulacro | undefined {
   return SIMULACROS.find(s => s.id === id);
+}
+
+export function getSimulacroQuestionPart(simulacro: Simulacro, questionNumber: number): 1 | 2 | 3 | 4 | 5 | 6 | 7 {
+  const range = simulacro.partRanges.find(({ from, to }) => questionNumber >= from && questionNumber <= to);
+  if (!range) throw new Error(`Pregunta ${questionNumber} sin parte oficial explícita en ${simulacro.id}`);
+  return range.part;
 }

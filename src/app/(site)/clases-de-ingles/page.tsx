@@ -305,7 +305,7 @@ export default function ClasesDeInglesPage() {
             <li>✓ 500+ estudiantes preparados</li>
             <li>✓ IELTS Band 7.0+</li>
             <li>✓ TOEFL 100+ puntos</li>
-            <li>✓ ICFES Nivel C1</li>
+            <li>✓ Preparación ICFES Inglés</li>
             <li>✓ Bucaramanga · Todo Colombia</li>
           </ul>
         </div>

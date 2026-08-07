@@ -220,10 +220,10 @@ export default function UsoDelIdioma() {
         </div>
 
         {/* Header */}
-        <p className="eyebrow" style={{ marginBottom: '0.3rem' }}><span className="ink-line" />Inglés B2 — FCE / ICFES</p>
+        <p className="eyebrow" style={{ marginBottom: '0.3rem' }}><span className="ink-line" />Inglés B2 — FCE / uso del idioma</p>
         <h1 style={{ fontSize: '2rem', fontWeight: 800, letterSpacing: '-0.03em', margin: '0 0 0.3rem' }}>Use of English</h1>
         <p style={{ color: 'var(--muted)', fontSize: '0.93rem', margin: '0 0 1.75rem', lineHeight: 1.6, maxWidth: 580 }}>
-          Dos tipos de ejercicio del FCE B2 e ICFES Saber 11: cloze de opción múltiple y formación de palabras.
+          Dos tipos de ejercicio del FCE B2: cloze de opción múltiple y formación de palabras.
         </p>
 
         {/* Tab switcher */}

@@ -6,6 +6,7 @@ import { OnboardingFlow } from './OnboardingFlow'
 import { DiagnosticTest } from './DiagnosticTest'
 import { IcfesDashboardClient } from './IcfesDashboardClient'
 import type { OnboardingProfile } from '@/lib/types/icfes'
+import type { IcfesBand } from '@/lib/types/icfes'
 import { ICFES_DIAGNOSTIC_QUESTIONS } from '@/data/icfes-diagnostic-questions'
 
 interface IcfesStudentFlowProps {
@@ -29,6 +30,13 @@ function rowToProfile(row: any): OnboardingProfile {
     weeksAvailable: row.weeks_available,
     recommendedPace: row.recommended_pace,
   }
+}
+
+function levelFromScore(score: number): IcfesBand {
+  if (score >= 71) return 'B1'
+  if (score >= 58) return 'A2'
+  if (score >= 37) return 'A1'
+  return 'Pre A1'
 }
 
 /**
@@ -128,7 +136,7 @@ export function IcfesStudentFlow({ userId, userName }: IcfesStudentFlowProps) {
     return (
       <IcfesDashboardClient
         studentName={userName}
-        estimatedBand="A"
+        estimatedBand={levelFromScore(state.diagnosticResults.overall_level)}
         overallAccuracy={state.diagnosticResults.overall_level / 100}
         mocksTaken={0}
         consistencyDays={0}

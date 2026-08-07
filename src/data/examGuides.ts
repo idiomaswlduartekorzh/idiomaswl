@@ -477,17 +477,17 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
   },
 
   icfes: {
-    title: 'Simulacro ICFES Inglés gratis: cuadernillos oficiales y puntajes',
-    description: 'Simulacros del ICFES de inglés gratis y sin registro, con cuadernillos oficiales de años anteriores y clave de respuestas. Escala real: Pre A1, A1, A2 y B1. Al terminar ves tu puntaje y tu nivel.',
+    title: 'Simulacro ICFES Inglés gratis: prácticas y cuadernillos',
+    description: 'Prácticas propias abreviadas y cuadernillos divulgados por el ICFES, gratis y sin registro. Escala reportada: Pre A1, A1, A2 y B1.',
     lead:
-      'Sí, aquí puedes hacer <strong>simulacros del ICFES de inglés gratis y sin registro</strong>, armados con cuadernillos oficiales de años anteriores y su clave de respuestas. Al terminar cada uno ves tu puntaje y el nivel que te correspondería en la escala real del examen.',
+      'Sí, aquí puedes practicar inglés para el ICFES gratis y sin registro. Encontrarás dos recursos distintos: <strong>prácticas propias abreviadas de 45 preguntas</strong> y <strong>cuadernillos divulgados por el ICFES</strong> que conservan su extensión publicada. Ninguno promete predecir tu puntaje oficial.',
     sections: [
       {
         h: 'Qué mide de verdad la prueba de inglés del Saber 11',
         body: [
-          'Esto sorprende a casi todo el mundo: el componente de inglés del ICFES <strong>solo evalúa comprensión de lectura</strong>. No hay escucha, no hay escritura y no hay que hablar. Son 45 preguntas de opción múltiple en una hora.',
+          'Esto sorprende a casi todo el mundo: el componente de inglés del ICFES <strong>evalúa lectura y uso de la lengua</strong>. No hay escucha, escritura ni prueba oral. El cuadernillo estándar 2026-2 incluye 55 preguntas de inglés en la segunda sesión.',
           'Eso cambia por completo cómo conviene prepararse. Practicar conversación no te sube el puntaje. Lo que lo sube es leer más rápido, reconocer vocabulario frecuente y no perder tiempo en las preguntas fáciles del principio.',
-          'La prueba avanza de menos a más: empieza con avisos e instrucciones cortas, sigue con vocabulario y diálogos, y termina con textos largos. Muchos estudiantes se quedan sin tiempo al final porque gastaron de más al comienzo.',
+          'La prueba avanza de menos a más: empieza con descripciones y un banco de palabras, continúa con avisos y conversaciones, y termina con lectura y textos para completar. Muchos estudiantes se quedan sin tiempo al final porque gastaron de más al comienzo.',
         ],
       },
       {
@@ -518,9 +518,9 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       },
     ],
     faqs: [
-      { q: '¿Los simulacros del ICFES de esta página son gratis?', a: 'Sí. Están construidos a partir de cuadernillos oficiales de años anteriores publicados por el ICFES, con su clave de respuestas. No hay que registrarse para hacerlos.' },
-      { q: '¿Cuántas preguntas de inglés tiene el ICFES y cuánto dura?', a: 'Son 45 preguntas de opción múltiple y el tiempo asignado es de 60 minutos.' },
-      { q: '¿El ICFES de inglés evalúa listening o speaking?', a: 'No. El componente de inglés del Saber 11 evalúa únicamente comprensión de lectura y vocabulario. No hay comprensión auditiva, ni producción escrita, ni prueba oral.' },
+      { q: '¿Los simulacros del ICFES de esta página son gratis?', a: 'Sí y no requieren registro. La página diferencia las prácticas propias abreviadas de WeLearn de los cuadernillos divulgados por el ICFES; solo estos últimos conservan preguntas y claves de las publicaciones oficiales.' },
+      { q: '¿Cuántas preguntas de inglés tiene el ICFES y cuánto dura?', a: 'El cuadernillo estándar 2026-2 incluye 55 preguntas de inglés en la segunda sesión. El ICFES fija 4 horas y 30 minutos para la sesión completa, no un tiempo oficial independiente para inglés.' },
+      { q: '¿El ICFES de inglés evalúa listening o speaking?', a: 'No. El componente de inglés del Saber 11 evalúa lectura y uso de la lengua: vocabulario, pragmática, gramática y comprensión literal e inferencial. No hay comprensión auditiva, producción escrita ni prueba oral.' },
       { q: '¿Cuál es el puntaje máximo y qué nivel equivale?', a: 'El máximo es 100 puntos, que corresponde al nivel B1. B1 es el techo de la prueba: el ICFES no reporta B2, C1 ni C2.' },
       { q: '¿Cuáles son los niveles de inglés del ICFES?', a: 'Son cuatro: Pre A1 (0 a 36 puntos), A1 (37 a 57), A2 (58 a 70) y B1 (71 a 100). Las etiquetas «A−» y «B+» que circulan en muchas guías ya no existen.' },
       { q: '¿Qué es un buen puntaje de inglés en el ICFES?', a: 'Depende de a qué aspires. Para llegar a B1, el nivel más alto que reporta la prueba, necesitas 71 puntos o más. Cada universidad y cada beca fija su propio corte, así que revisa el requisito concreto de la que te interesa.' },

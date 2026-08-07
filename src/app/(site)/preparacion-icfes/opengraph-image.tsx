@@ -27,7 +27,7 @@ export default function Image() {
 
         {/* Badges */}
         <div style={{ display: 'flex', gap: 10, marginBottom: 32 }}>
-          {['ICFES', 'Módulo de inglés', 'A2 → B2'].map(tag => (
+          {['ICFES', 'Módulo de inglés', 'Pre A1 → B1'].map(tag => (
             <div key={tag} style={{ background: 'rgba(34,197,94,0.12)', border: '1px solid rgba(34,197,94,0.3)', color: '#4ade80', fontSize: 14, fontWeight: 700, padding: '5px 14px', borderRadius: 999 }}>
               {tag}
             </div>
@@ -47,7 +47,7 @@ export default function Image() {
         {/* Stats row */}
         <div style={{ display: 'flex', gap: 32, marginBottom: 28 }}>
           {[
-            { n: '+40', label: 'puntos más en promedio' },
+            { n: '55', label: 'preguntas en 2026-2' },
             { n: '8 sem', label: 'plan intensivo' },
             { n: '100%', label: 'online Colombia' },
           ].map(stat => (

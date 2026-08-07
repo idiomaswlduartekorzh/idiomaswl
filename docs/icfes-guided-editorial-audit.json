@@ -1,0 +1,3158 @@
+{
+  "generatedAt": "2026-08-04T04:24:26.429Z",
+  "scope": {
+    "mocks": [
+      "mock-01",
+      "mock-02",
+      "mock-03",
+      "mock-04",
+      "mock-05",
+      "mock-06",
+      "mock-07",
+      "mock-08",
+      "mock-09",
+      "mock-10",
+      "mock-11",
+      "mock-12",
+      "mock-13",
+      "mock-14",
+      "mock-15",
+      "mock-16",
+      "mock-17",
+      "mock-18",
+      "mock-19",
+      "mock-20",
+      "mock-21",
+      "mock-22",
+      "mock-23"
+    ],
+    "questionGrain": 1035,
+    "expectedQuestionGrain": 1035,
+    "standard": "ICFES Saber 11 Inglés 2026-2 · práctica propia abreviada"
+  },
+  "verdict": "approved",
+  "summary": {
+    "checks": 380,
+    "passed": 380,
+    "failed": 0,
+    "critical": 0,
+    "high": 0,
+    "medium": 0
+  },
+  "answerPositions": [
+    {
+      "position": "A",
+      "count": 210
+    },
+    {
+      "position": "B",
+      "count": 385
+    },
+    {
+      "position": "C",
+      "count": 298
+    },
+    {
+      "position": "D",
+      "count": 93
+    },
+    {
+      "position": "E",
+      "count": 20
+    },
+    {
+      "position": "F",
+      "count": 14
+    },
+    {
+      "position": "G",
+      "count": 15
+    }
+  ],
+  "partSummary": [
+    {
+      "part": "Parte 1",
+      "questions": 115,
+      "expected": 115,
+      "status": "Aprobada"
+    },
+    {
+      "part": "Parte 2",
+      "questions": 115,
+      "expected": 115,
+      "status": "Aprobada"
+    },
+    {
+      "part": "Parte 3",
+      "questions": 115,
+      "expected": 115,
+      "status": "Aprobada"
+    },
+    {
+      "part": "Parte 4",
+      "questions": 184,
+      "expected": 184,
+      "status": "Aprobada"
+    },
+    {
+      "part": "Parte 5",
+      "questions": 161,
+      "expected": 161,
+      "status": "Aprobada"
+    },
+    {
+      "part": "Parte 6",
+      "questions": 115,
+      "expected": 115,
+      "status": "Aprobada"
+    },
+    {
+      "part": "Parte 7",
+      "questions": 230,
+      "expected": 230,
+      "status": "Aprobada"
+    }
+  ],
+  "checks": [
+    {
+      "id": "mock-01-count",
+      "label": "mock-01: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-parts",
+      "label": "mock-01: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p1-count",
+      "label": "mock-01 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p1-style",
+      "label": "mock-01 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p2-count",
+      "label": "mock-01 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p2-style",
+      "label": "mock-01 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p3-count",
+      "label": "mock-01 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p3-style",
+      "label": "mock-01 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p4-count",
+      "label": "mock-01 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p4-style",
+      "label": "mock-01 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p5-count",
+      "label": "mock-01 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p5-style",
+      "label": "mock-01 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p6-count",
+      "label": "mock-01 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p6-style",
+      "label": "mock-01 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p7-count",
+      "label": "mock-01 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-01-p7-style",
+      "label": "mock-01 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-count",
+      "label": "mock-02: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-parts",
+      "label": "mock-02: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p1-count",
+      "label": "mock-02 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p1-style",
+      "label": "mock-02 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p2-count",
+      "label": "mock-02 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p2-style",
+      "label": "mock-02 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p3-count",
+      "label": "mock-02 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p3-style",
+      "label": "mock-02 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p4-count",
+      "label": "mock-02 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p4-style",
+      "label": "mock-02 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p5-count",
+      "label": "mock-02 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p5-style",
+      "label": "mock-02 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p6-count",
+      "label": "mock-02 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p6-style",
+      "label": "mock-02 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p7-count",
+      "label": "mock-02 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-02-p7-style",
+      "label": "mock-02 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-count",
+      "label": "mock-03: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-parts",
+      "label": "mock-03: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p1-count",
+      "label": "mock-03 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p1-style",
+      "label": "mock-03 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p2-count",
+      "label": "mock-03 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p2-style",
+      "label": "mock-03 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p3-count",
+      "label": "mock-03 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p3-style",
+      "label": "mock-03 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p4-count",
+      "label": "mock-03 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p4-style",
+      "label": "mock-03 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p5-count",
+      "label": "mock-03 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p5-style",
+      "label": "mock-03 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p6-count",
+      "label": "mock-03 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p6-style",
+      "label": "mock-03 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p7-count",
+      "label": "mock-03 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-03-p7-style",
+      "label": "mock-03 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-count",
+      "label": "mock-04: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-parts",
+      "label": "mock-04: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p1-count",
+      "label": "mock-04 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p1-style",
+      "label": "mock-04 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p2-count",
+      "label": "mock-04 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p2-style",
+      "label": "mock-04 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p3-count",
+      "label": "mock-04 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p3-style",
+      "label": "mock-04 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p4-count",
+      "label": "mock-04 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p4-style",
+      "label": "mock-04 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p5-count",
+      "label": "mock-04 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p5-style",
+      "label": "mock-04 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p6-count",
+      "label": "mock-04 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p6-style",
+      "label": "mock-04 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p7-count",
+      "label": "mock-04 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-04-p7-style",
+      "label": "mock-04 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-count",
+      "label": "mock-05: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-parts",
+      "label": "mock-05: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p1-count",
+      "label": "mock-05 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p1-style",
+      "label": "mock-05 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p2-count",
+      "label": "mock-05 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p2-style",
+      "label": "mock-05 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p3-count",
+      "label": "mock-05 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p3-style",
+      "label": "mock-05 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p4-count",
+      "label": "mock-05 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p4-style",
+      "label": "mock-05 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p5-count",
+      "label": "mock-05 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p5-style",
+      "label": "mock-05 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p6-count",
+      "label": "mock-05 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p6-style",
+      "label": "mock-05 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p7-count",
+      "label": "mock-05 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-05-p7-style",
+      "label": "mock-05 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-count",
+      "label": "mock-06: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-parts",
+      "label": "mock-06: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p1-count",
+      "label": "mock-06 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p1-style",
+      "label": "mock-06 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p2-count",
+      "label": "mock-06 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p2-style",
+      "label": "mock-06 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p3-count",
+      "label": "mock-06 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p3-style",
+      "label": "mock-06 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p4-count",
+      "label": "mock-06 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p4-style",
+      "label": "mock-06 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p5-count",
+      "label": "mock-06 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p5-style",
+      "label": "mock-06 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p6-count",
+      "label": "mock-06 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p6-style",
+      "label": "mock-06 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p7-count",
+      "label": "mock-06 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-06-p7-style",
+      "label": "mock-06 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-count",
+      "label": "mock-07: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-parts",
+      "label": "mock-07: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p1-count",
+      "label": "mock-07 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p1-style",
+      "label": "mock-07 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p2-count",
+      "label": "mock-07 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p2-style",
+      "label": "mock-07 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p3-count",
+      "label": "mock-07 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p3-style",
+      "label": "mock-07 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p4-count",
+      "label": "mock-07 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p4-style",
+      "label": "mock-07 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p5-count",
+      "label": "mock-07 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p5-style",
+      "label": "mock-07 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p6-count",
+      "label": "mock-07 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p6-style",
+      "label": "mock-07 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p7-count",
+      "label": "mock-07 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-07-p7-style",
+      "label": "mock-07 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-count",
+      "label": "mock-08: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-parts",
+      "label": "mock-08: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p1-count",
+      "label": "mock-08 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p1-style",
+      "label": "mock-08 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p2-count",
+      "label": "mock-08 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p2-style",
+      "label": "mock-08 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p3-count",
+      "label": "mock-08 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p3-style",
+      "label": "mock-08 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p4-count",
+      "label": "mock-08 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p4-style",
+      "label": "mock-08 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p5-count",
+      "label": "mock-08 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p5-style",
+      "label": "mock-08 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p6-count",
+      "label": "mock-08 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p6-style",
+      "label": "mock-08 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p7-count",
+      "label": "mock-08 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-08-p7-style",
+      "label": "mock-08 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-count",
+      "label": "mock-09: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-parts",
+      "label": "mock-09: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p1-count",
+      "label": "mock-09 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p1-style",
+      "label": "mock-09 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p2-count",
+      "label": "mock-09 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p2-style",
+      "label": "mock-09 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p3-count",
+      "label": "mock-09 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p3-style",
+      "label": "mock-09 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p4-count",
+      "label": "mock-09 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p4-style",
+      "label": "mock-09 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p5-count",
+      "label": "mock-09 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p5-style",
+      "label": "mock-09 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p6-count",
+      "label": "mock-09 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p6-style",
+      "label": "mock-09 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p7-count",
+      "label": "mock-09 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-09-p7-style",
+      "label": "mock-09 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-count",
+      "label": "mock-10: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-parts",
+      "label": "mock-10: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p1-count",
+      "label": "mock-10 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p1-style",
+      "label": "mock-10 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p2-count",
+      "label": "mock-10 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p2-style",
+      "label": "mock-10 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p3-count",
+      "label": "mock-10 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p3-style",
+      "label": "mock-10 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p4-count",
+      "label": "mock-10 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p4-style",
+      "label": "mock-10 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p5-count",
+      "label": "mock-10 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p5-style",
+      "label": "mock-10 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p6-count",
+      "label": "mock-10 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p6-style",
+      "label": "mock-10 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p7-count",
+      "label": "mock-10 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-10-p7-style",
+      "label": "mock-10 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-count",
+      "label": "mock-11: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-parts",
+      "label": "mock-11: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p1-count",
+      "label": "mock-11 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p1-style",
+      "label": "mock-11 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p2-count",
+      "label": "mock-11 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p2-style",
+      "label": "mock-11 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p3-count",
+      "label": "mock-11 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p3-style",
+      "label": "mock-11 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p4-count",
+      "label": "mock-11 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p4-style",
+      "label": "mock-11 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p5-count",
+      "label": "mock-11 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p5-style",
+      "label": "mock-11 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p6-count",
+      "label": "mock-11 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p6-style",
+      "label": "mock-11 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p7-count",
+      "label": "mock-11 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-11-p7-style",
+      "label": "mock-11 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-count",
+      "label": "mock-12: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-parts",
+      "label": "mock-12: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p1-count",
+      "label": "mock-12 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p1-style",
+      "label": "mock-12 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p2-count",
+      "label": "mock-12 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p2-style",
+      "label": "mock-12 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p3-count",
+      "label": "mock-12 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p3-style",
+      "label": "mock-12 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p4-count",
+      "label": "mock-12 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p4-style",
+      "label": "mock-12 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p5-count",
+      "label": "mock-12 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p5-style",
+      "label": "mock-12 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p6-count",
+      "label": "mock-12 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p6-style",
+      "label": "mock-12 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p7-count",
+      "label": "mock-12 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-12-p7-style",
+      "label": "mock-12 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-count",
+      "label": "mock-13: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-parts",
+      "label": "mock-13: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p1-count",
+      "label": "mock-13 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p1-style",
+      "label": "mock-13 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p2-count",
+      "label": "mock-13 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p2-style",
+      "label": "mock-13 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p3-count",
+      "label": "mock-13 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p3-style",
+      "label": "mock-13 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p4-count",
+      "label": "mock-13 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p4-style",
+      "label": "mock-13 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p5-count",
+      "label": "mock-13 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p5-style",
+      "label": "mock-13 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p6-count",
+      "label": "mock-13 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p6-style",
+      "label": "mock-13 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p7-count",
+      "label": "mock-13 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-13-p7-style",
+      "label": "mock-13 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-count",
+      "label": "mock-14: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-parts",
+      "label": "mock-14: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p1-count",
+      "label": "mock-14 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p1-style",
+      "label": "mock-14 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p2-count",
+      "label": "mock-14 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p2-style",
+      "label": "mock-14 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p3-count",
+      "label": "mock-14 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p3-style",
+      "label": "mock-14 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p4-count",
+      "label": "mock-14 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p4-style",
+      "label": "mock-14 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p5-count",
+      "label": "mock-14 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p5-style",
+      "label": "mock-14 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p6-count",
+      "label": "mock-14 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p6-style",
+      "label": "mock-14 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p7-count",
+      "label": "mock-14 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-14-p7-style",
+      "label": "mock-14 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-count",
+      "label": "mock-15: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-parts",
+      "label": "mock-15: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p1-count",
+      "label": "mock-15 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p1-style",
+      "label": "mock-15 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p2-count",
+      "label": "mock-15 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p2-style",
+      "label": "mock-15 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p3-count",
+      "label": "mock-15 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p3-style",
+      "label": "mock-15 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p4-count",
+      "label": "mock-15 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p4-style",
+      "label": "mock-15 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p5-count",
+      "label": "mock-15 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p5-style",
+      "label": "mock-15 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p6-count",
+      "label": "mock-15 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p6-style",
+      "label": "mock-15 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p7-count",
+      "label": "mock-15 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-15-p7-style",
+      "label": "mock-15 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-count",
+      "label": "mock-16: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-parts",
+      "label": "mock-16: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p1-count",
+      "label": "mock-16 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p1-style",
+      "label": "mock-16 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p2-count",
+      "label": "mock-16 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p2-style",
+      "label": "mock-16 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p3-count",
+      "label": "mock-16 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p3-style",
+      "label": "mock-16 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p4-count",
+      "label": "mock-16 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p4-style",
+      "label": "mock-16 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p5-count",
+      "label": "mock-16 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p5-style",
+      "label": "mock-16 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p6-count",
+      "label": "mock-16 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p6-style",
+      "label": "mock-16 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p7-count",
+      "label": "mock-16 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-16-p7-style",
+      "label": "mock-16 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-count",
+      "label": "mock-17: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-parts",
+      "label": "mock-17: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p1-count",
+      "label": "mock-17 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p1-style",
+      "label": "mock-17 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p2-count",
+      "label": "mock-17 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p2-style",
+      "label": "mock-17 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p3-count",
+      "label": "mock-17 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p3-style",
+      "label": "mock-17 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p4-count",
+      "label": "mock-17 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p4-style",
+      "label": "mock-17 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p5-count",
+      "label": "mock-17 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p5-style",
+      "label": "mock-17 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p6-count",
+      "label": "mock-17 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p6-style",
+      "label": "mock-17 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p7-count",
+      "label": "mock-17 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-17-p7-style",
+      "label": "mock-17 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-count",
+      "label": "mock-18: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-parts",
+      "label": "mock-18: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p1-count",
+      "label": "mock-18 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p1-style",
+      "label": "mock-18 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p2-count",
+      "label": "mock-18 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p2-style",
+      "label": "mock-18 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p3-count",
+      "label": "mock-18 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p3-style",
+      "label": "mock-18 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p4-count",
+      "label": "mock-18 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p4-style",
+      "label": "mock-18 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p5-count",
+      "label": "mock-18 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p5-style",
+      "label": "mock-18 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p6-count",
+      "label": "mock-18 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p6-style",
+      "label": "mock-18 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p7-count",
+      "label": "mock-18 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-18-p7-style",
+      "label": "mock-18 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-count",
+      "label": "mock-19: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-parts",
+      "label": "mock-19: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p1-count",
+      "label": "mock-19 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p1-style",
+      "label": "mock-19 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p2-count",
+      "label": "mock-19 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p2-style",
+      "label": "mock-19 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p3-count",
+      "label": "mock-19 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p3-style",
+      "label": "mock-19 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p4-count",
+      "label": "mock-19 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p4-style",
+      "label": "mock-19 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p5-count",
+      "label": "mock-19 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p5-style",
+      "label": "mock-19 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p6-count",
+      "label": "mock-19 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p6-style",
+      "label": "mock-19 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p7-count",
+      "label": "mock-19 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-19-p7-style",
+      "label": "mock-19 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-count",
+      "label": "mock-20: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-parts",
+      "label": "mock-20: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p1-count",
+      "label": "mock-20 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p1-style",
+      "label": "mock-20 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p2-count",
+      "label": "mock-20 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p2-style",
+      "label": "mock-20 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p3-count",
+      "label": "mock-20 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p3-style",
+      "label": "mock-20 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p4-count",
+      "label": "mock-20 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p4-style",
+      "label": "mock-20 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p5-count",
+      "label": "mock-20 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p5-style",
+      "label": "mock-20 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p6-count",
+      "label": "mock-20 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p6-style",
+      "label": "mock-20 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p7-count",
+      "label": "mock-20 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-20-p7-style",
+      "label": "mock-20 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-count",
+      "label": "mock-21: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-parts",
+      "label": "mock-21: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p1-count",
+      "label": "mock-21 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p1-style",
+      "label": "mock-21 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p2-count",
+      "label": "mock-21 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p2-style",
+      "label": "mock-21 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p3-count",
+      "label": "mock-21 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p3-style",
+      "label": "mock-21 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p4-count",
+      "label": "mock-21 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p4-style",
+      "label": "mock-21 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p5-count",
+      "label": "mock-21 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p5-style",
+      "label": "mock-21 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p6-count",
+      "label": "mock-21 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p6-style",
+      "label": "mock-21 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p7-count",
+      "label": "mock-21 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-p7-style",
+      "label": "mock-21 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-count",
+      "label": "mock-22: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-parts",
+      "label": "mock-22: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p1-count",
+      "label": "mock-22 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p1-style",
+      "label": "mock-22 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p2-count",
+      "label": "mock-22 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p2-style",
+      "label": "mock-22 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p3-count",
+      "label": "mock-22 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p3-style",
+      "label": "mock-22 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p4-count",
+      "label": "mock-22 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p4-style",
+      "label": "mock-22 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p5-count",
+      "label": "mock-22 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p5-style",
+      "label": "mock-22 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p6-count",
+      "label": "mock-22 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p6-style",
+      "label": "mock-22 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p7-count",
+      "label": "mock-22 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-22-p7-style",
+      "label": "mock-22 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-count",
+      "label": "mock-23: 45 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "45/45 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-parts",
+      "label": "mock-23: siete partes en orden",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Partes 1, 2, 3, 4, 5, 6, 7",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p1-count",
+      "label": "mock-23 Parte 1: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p1-style",
+      "label": "mock-23 Parte 1: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "matching-grid vs matching-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p2-count",
+      "label": "mock-23 Parte 2: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p2-style",
+      "label": "mock-23 Parte 2: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "notices-grid vs notices-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p3-count",
+      "label": "mock-23 Parte 3: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p3-style",
+      "label": "mock-23 Parte 3: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "dialogs-grid vs dialogs-grid",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p4-count",
+      "label": "mock-23 Parte 4: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "8/8 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p4-style",
+      "label": "mock-23 Parte 4: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p5-count",
+      "label": "mock-23 Parte 5: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "7/7 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p5-style",
+      "label": "mock-23 Parte 5: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p6-count",
+      "label": "mock-23 Parte 6: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p6-style",
+      "label": "mock-23 Parte 6: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "reading vs reading",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p7-count",
+      "label": "mock-23 Parte 7: extensión esperada",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "mock-23-p7-style",
+      "label": "mock-23 Parte 7: tipo de tarea",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "cloze-text vs cloze-text",
+      "remediation": ""
+    },
+    {
+      "id": "total-grain",
+      "label": "Grano total: una fila por pregunta",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "1035/1035 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "unique-ids",
+      "label": "Identificadores únicos entre mocks",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "1035/1035 identificadores únicos",
+      "remediation": ""
+    },
+    {
+      "id": "valid-answers",
+      "label": "Claves dentro del rango de opciones",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 claves inválidas",
+      "remediation": ""
+    },
+    {
+      "id": "unique-options",
+      "label": "Opciones distintas dentro de cada pregunta",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 preguntas con opciones duplicadas",
+      "remediation": ""
+    },
+    {
+      "id": "complete-prompts",
+      "label": "Enunciados o estímulos completos",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 preguntas sin contenido evaluable",
+      "remediation": ""
+    },
+    {
+      "id": "part7-markers",
+      "label": "Parte 7: cada pregunta apunta a un espacio real",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "230/230 espacios vinculados",
+      "remediation": ""
+    },
+    {
+      "id": "answer-balance",
+      "label": "Distribución de claves sin patrón dominante",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "A:210 · B:385 · C:298 · D:93 · E:20 · F:14 · G:15",
+      "remediation": ""
+    },
+    {
+      "id": "vocabulary-glosses",
+      "label": "Vocabulario: significado específico para cada alternativa",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "156/156 términos cubiertos",
+      "remediation": ""
+    },
+    {
+      "id": "no-generic-feedback",
+      "label": "Sin plantillas generalistas prohibidas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 patrones prohibidos",
+      "remediation": ""
+    },
+    {
+      "id": "cloze-substitution",
+      "label": "Cloze: prueba de sustitución visible",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Motor de sustitución contextual",
+      "remediation": ""
+    },
+    {
+      "id": "reading-evidence",
+      "label": "Lectura: evidencia localizada a nivel de oración",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Selección de oración por coincidencia de términos",
+      "remediation": ""
+    },
+    {
+      "id": "mode-parity",
+      "label": "Modo examen y guiado comparten la Parte 7 corregida",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Sustitución en la frontera común del registro",
+      "remediation": ""
+    }
+  ]
+}

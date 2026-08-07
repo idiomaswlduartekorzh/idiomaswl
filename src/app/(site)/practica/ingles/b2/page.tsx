@@ -61,7 +61,7 @@ export default function InglesB2Page() {
           </div>
         </div>
         <p style={{ color: 'var(--muted)', fontSize: '1rem', maxWidth: 580, margin: '0.5rem 0 2rem' }}>
-          Preparación para FCE Cambridge (B2) e ICFES Saber 11. Ejercicios enfocados en las secciones donde más se necesita práctica.
+          Preparación para FCE Cambridge (B2) y refuerzo avanzado de inglés. Ejercicios enfocados en las habilidades donde más se necesita práctica.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>

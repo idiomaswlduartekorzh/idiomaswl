@@ -53,7 +53,7 @@ export async function saveOnboarding(
           user_id: userId,
           onboarding_completed: true,
           current_level: profile.level,
-          target_band: profile.goal === 'bandAPlus' ? 'A+' : profile.goal === 'bandA' ? 'A' : 'Pass',
+          target_band: profile.goal === 'bandAPlus' ? 'B1' : profile.goal === 'bandA' ? 'A2' : 'Base',
           weeks_to_exam: profile.weeksAvailable,
           updated_at: new Date().toISOString(),
         },

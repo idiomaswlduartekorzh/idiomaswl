@@ -1,0 +1,261 @@
+{
+  "generatedAt": "2026-08-07T17:27:45.669Z",
+  "verdict": "approved",
+  "releaseDecision": "ready-for-human-integration-review",
+  "deployment": "not-deployed-not-pushed-not-merged",
+  "scope": {
+    "inventoryResources": 34,
+    "ownMocks": 23,
+    "officialSaber11": 7,
+    "relatedAssessments": 3,
+    "guidedQuestionExperiences": 1235,
+    "guidedOfficialEligible": 5,
+    "guidedOfficialExcluded": 2,
+    "syntheticStudents": 100,
+    "renderedRoutes200": 48,
+    "deliberateRoutes404": 2
+  },
+  "browserEvidence": [
+    {
+      "check": "keyboard-tabs",
+      "result": "passed",
+      "evidence": "ArrowRight movió foco y selección de Lugares a Personas y oficios; tabpanel actualizó aria-labelledby."
+    },
+    {
+      "check": "specific-error-feedback",
+      "result": "passed",
+      "evidence": "Al elegir ankle, explicó tobillo, contrastó la definición y justificó throat como garganta."
+    },
+    {
+      "check": "persistence-and-review",
+      "result": "passed",
+      "evidence": "El intento mock-03:p1q1 quedó en localStorage y apareció en repaso con selección, correcta, evidencia y microlección."
+    },
+    {
+      "check": "historical-sample-scaling",
+      "result": "passed",
+      "evidence": "icfes-2022-g11 renderizó 25 preguntas, partes históricas, fuente y explicación editorial separadas."
+    },
+    {
+      "check": "mobile-layout",
+      "result": "passed",
+      "evidence": "Viewport 390×844: documentWidth 390, sin desbordamiento horizontal y CTA principales presentes."
+    }
+  ],
+  "informationalObservations": [
+    {
+      "id": "gtm-third-party-csp",
+      "severity": "info",
+      "detail": "GTM intentó cargar un script de unpkg bloqueado por la CSP global. No afectó navegación, práctica, persistencia ni feedback ICFES; revisar aparte con el responsable de analítica."
+    },
+    {
+      "id": "turbopack-symlink",
+      "severity": "info",
+      "detail": "Turbopack no admite el symlink de node_modules del worktree /tmp. La validación se ejecutó con Webpack, soportado por Next.js 16.2.6, y produjo manifiestos finales."
+    }
+  ],
+  "limitations": [
+    "La cohorte de 100 es sintética: valida rutas, contenido expuesto y oportunidad pedagógica, no memoria, motivación ni aprendizaje observado en estudiantes reales.",
+    "La indexabilidad técnica no garantiza posiciones en Google. Rendimiento orgánico requiere publicación autorizada, rastreo y datos posteriores de Search Console.",
+    "Las dos muestras con avisos faltantes permanecen deliberadamente sin guiado; incorporar la fuente completa exige una nueva revisión editorial.",
+    "No se predice puntaje oficial ni se presenta una muestra histórica o práctica propia como equivalente a la aplicación estándar 2026-2."
+  ],
+  "findings": [],
+  "checks": [
+    {
+      "id": "report-inventory",
+      "requirement": "Inventario maestro: auditoría aprobada",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "approved",
+      "remediation": "Resolver hallazgos en docs/icfes-inventory-audit.json."
+    },
+    {
+      "id": "report-ownMocks",
+      "requirement": "23 mocks propios: auditoría aprobada",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "approved",
+      "remediation": "Resolver hallazgos en docs/icfes-guided-editorial-audit.json."
+    },
+    {
+      "id": "report-guided55",
+      "requirement": "Entrenamiento guiado de 55: auditoría aprobada",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "approved",
+      "remediation": "Resolver hallazgos en docs/icfes-guided-55-audit.json."
+    },
+    {
+      "id": "report-official",
+      "requirement": "Muestras históricas guiadas: auditoría aprobada",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "approved",
+      "remediation": "Resolver hallazgos en docs/icfes-official-guided-audit.json."
+    },
+    {
+      "id": "report-seo",
+      "requirement": "Producto, SEO y accesibilidad: auditoría aprobada",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "approved",
+      "remediation": "Resolver hallazgos en docs/icfes-seo-product-audit.json."
+    },
+    {
+      "id": "report-users",
+      "requirement": "Cohorte sintética de 100 estudiantes: auditoría aprobada",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "approved",
+      "remediation": "Resolver hallazgos en docs/icfes-100-user-simulation.json."
+    },
+    {
+      "id": "report-runtime",
+      "requirement": "Smoke de rutas renderizadas: auditoría aprobada",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "approved",
+      "remediation": "Resolver hallazgos en docs/icfes-runtime-smoke-audit.json."
+    },
+    {
+      "id": "inventory-scope",
+      "requirement": "Inventario cubre el alcance completo",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "23 propios · 7 Saber 11 · 3 relacionados · 1 guiado autónomo · 34 total",
+      "remediation": "Reconciliar catálogo, archivos y rutas."
+    },
+    {
+      "id": "own-question-grain",
+      "requirement": "Los 23 mocks conservan 1.035 preguntas guiadas",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "1035/1035 · 380 controles",
+      "remediation": "Corregir formato o feedback del banco propio."
+    },
+    {
+      "id": "guided-55-grain",
+      "requirement": "El entrenamiento vigente conserva 55 preguntas",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "55 preguntas · 14 controles",
+      "remediation": "Restaurar preguntas, razones o distribución."
+    },
+    {
+      "id": "official-guided-grain",
+      "requirement": "Cinco muestras elegibles suman 145 preguntas explicadas",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "145 guiadas · 5 muestras · 2 exclusiones documentadas",
+      "remediation": "No habilitar material sin estímulo completo."
+    },
+    {
+      "id": "guided-total",
+      "requirement": "Las experiencias guiadas exponen 1.235 preguntas",
+      "pass": true,
+      "severity": "high",
+      "evidence": "1.035 + 55 + 145 = 1.235",
+      "remediation": "Reconciliar los tres bancos guiados."
+    },
+    {
+      "id": "seo-gate",
+      "requirement": "SEO/producto no tiene hallazgos abiertos",
+      "pass": true,
+      "severity": "high",
+      "evidence": "21/21 controles",
+      "remediation": "Corregir canonical, sitemap, metadata o accesibilidad."
+    },
+    {
+      "id": "synthetic-cohort-honesty",
+      "requirement": "La simulación distingue proxies de aprendizaje real",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "100 estudiantes sintéticos · runtime activo · metodología explícita",
+      "remediation": "No presentar simulaciones como observación humana."
+    },
+    {
+      "id": "runtime-route-gate",
+      "requirement": "Rutas y exclusiones responden como se espera",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "48 rutas 200 · 2 exclusiones 404 · 0 bloqueos",
+      "remediation": "Corregir rutas o clasificación editorial."
+    },
+    {
+      "id": "regression-gate",
+      "requirement": "La compuerta principal encadena todas las auditorías sin servidor",
+      "pass": true,
+      "severity": "high",
+      "evidence": "SEO y cohorte fuente incluidas",
+      "remediation": "Restaurar auditorías en check:icfes-superhub."
+    },
+    {
+      "id": "documentation-current",
+      "requirement": "Documentación refleja cinco muestras y 145 explicaciones",
+      "pass": true,
+      "severity": "medium",
+      "evidence": "Alcance y fecha actualizados",
+      "remediation": "Actualizar el handoff editorial."
+    },
+    {
+      "id": "webpack-build-artifacts",
+      "requirement": "El build Webpack produjo manifiestos finales",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Manifiestos presentes · 2026-08-04T04:07:37.163Z",
+      "remediation": "Ejecutar next build --webpack en el worktree aislado."
+    }
+  ],
+  "componentReports": [
+    {
+      "id": "inventory",
+      "label": "Inventario maestro",
+      "path": "docs/icfes-inventory-audit.json",
+      "verdict": "approved",
+      "generatedAt": "2026-08-04T04:24:26.446Z"
+    },
+    {
+      "id": "ownMocks",
+      "label": "23 mocks propios",
+      "path": "docs/icfes-guided-editorial-audit.json",
+      "verdict": "approved",
+      "generatedAt": "2026-08-04T04:24:26.429Z"
+    },
+    {
+      "id": "guided55",
+      "label": "Entrenamiento guiado de 55",
+      "path": "docs/icfes-guided-55-audit.json",
+      "verdict": "approved",
+      "generatedAt": "2026-08-04T04:24:26.351Z"
+    },
+    {
+      "id": "official",
+      "label": "Muestras históricas guiadas",
+      "path": "docs/icfes-official-guided-audit.json",
+      "verdict": "approved",
+      "generatedAt": "2026-08-04T04:24:26.375Z"
+    },
+    {
+      "id": "seo",
+      "label": "Producto, SEO y accesibilidad",
+      "path": "docs/icfes-seo-product-audit.json",
+      "verdict": "approved",
+      "generatedAt": "2026-08-04T04:24:26.327Z"
+    },
+    {
+      "id": "users",
+      "label": "Cohorte sintética de 100 estudiantes",
+      "path": "docs/icfes-100-user-simulation.json",
+      "verdict": "approved",
+      "generatedAt": "2026-08-04T04:22:46.259Z"
+    },
+    {
+      "id": "runtime",
+      "label": "Smoke de rutas renderizadas",
+      "path": "docs/icfes-runtime-smoke-audit.json",
+      "verdict": "approved",
+      "generatedAt": "2026-08-04T04:25:41.099Z"
+    }
+  ]
+}

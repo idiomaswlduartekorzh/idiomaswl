@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'Saber 11 inglés',
     'mejorar puntaje ICFES inglés',
     'clases inglés ICFES Colombia',
-    'ICFES inglés nivel B2',
+    'ICFES inglés nivel B1',
     'preparación Saber 11 inglés',
     'WeLearn ICFES',
     'inglés ICFES Bucaramanga',
@@ -39,7 +39,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Cuántas preguntas tiene la sección de inglés del ICFES?',
-      acceptedAnswer: { '@type': 'Answer', text: '45 preguntas distribuidas en comprensión lectora y uso del idioma. El puntaje va de 0 a 100 y representa alrededor del 10% del puntaje global.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'La aplicación estándar Saber 11 2026-2 incluye 55 preguntas de Inglés en la segunda sesión. El puntaje de la prueba va de 0 a 100 y se reporta en los niveles Pre A1, A1, A2 y B1.' },
     },
     {
       '@type': 'Question',
@@ -49,7 +49,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Los simulacros de WeLearn son como el ICFES real?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Sí. Tienen el mismo formato, nivel de dificultad y distribución de preguntas que el ICFES oficial. Después de cada simulacro recibes análisis por sección y retroalimentación.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'La plataforma usa preguntas de cuadernillos divulgados por el ICFES y conserva sus tipos de tarea. Algunos cuadernillos publicados son muestras más cortas que la aplicación estándar actual; al terminar recibes corrección y revisión.' },
     },
     {
       '@type': 'Question',
@@ -145,7 +145,7 @@ const SCORES = [
 const FAQS = [
   {
     q: '¿Cuántas preguntas tiene la sección de inglés del ICFES?',
-    a: '45 preguntas distribuidas en comprensión lectora y uso del idioma. El puntaje va de 0 a 100 y representa alrededor del 10% del puntaje global.',
+    a: 'La aplicación estándar Saber 11 2026-2 incluye 55 preguntas de Inglés en la segunda sesión. El puntaje de la prueba va de 0 a 100 y se reporta en los niveles Pre A1, A1, A2 y B1.',
   },
   {
     q: '¿En cuánto tiempo puedo mejorar mi puntaje de inglés?',
@@ -153,7 +153,7 @@ const FAQS = [
   },
   {
     q: '¿Los simulacros de WeLearn son como el ICFES real?',
-    a: 'Sí. Tienen el mismo formato, nivel de dificultad y distribución de preguntas que el ICFES oficial. Después de cada simulacro recibes análisis por sección y retroalimentación.',
+    a: 'La plataforma usa preguntas de cuadernillos divulgados por el ICFES y conserva sus tipos de tarea. Algunos cuadernillos publicados son muestras más cortas que la aplicación estándar actual; al terminar recibes corrección y revisión.',
   },
   {
     q: '¿Necesito saber inglés para empezar la preparación?',
@@ -211,12 +211,12 @@ export default function PreparacionICFESPage() {
             </div>
             <div className={s.heroStats}>
               <div className={s.statCard}>
-                <div className={s.statNum}>45</div>
+                <div className={s.statNum}>55</div>
                 <div className={s.statLabel}>preguntas en el examen</div>
               </div>
               <div className={s.statCard}>
-                <div className={s.statNum}>B2</div>
-                <div className={s.statLabel}>nivel objetivo (top 10%)</div>
+                <div className={s.statNum}>B1</div>
+                <div className={s.statLabel}>nivel máximo reportado</div>
               </div>
               <div className={s.statCard}>
                 <div className={s.statNum}>10%</div>
@@ -248,7 +248,7 @@ export default function PreparacionICFESPage() {
             <h2 className={s.h2}>¿En qué nivel estás?</h2>
             <p className={s.sectionSub}>
               El ICFES mide el inglés en una escala de 0 a 100 equivalente al Marco Común Europeo.
-              El promedio nacional es A2. La meta es llegar a B1 o B2.
+              La meta más alta reportada por esta prueba es B1; el ICFES no asigna B2 en este componente.
             </p>
             <div className={s.scoresGrid}>
               {SCORES.map(sc => (
@@ -340,7 +340,7 @@ export default function PreparacionICFESPage() {
                   Haz el simulacro ICFES ahora mismo
                 </h3>
                 <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: 460 }}>
-                  45 preguntas · mismo formato del examen real · resultado por sección al instante. El primer paso para saber exactamente dónde estás.
+                  Preguntas de cuadernillos divulgados por el ICFES · resultado por sección al instante. La aplicación estándar actual tiene 55 preguntas de Inglés.
                 </p>
               </div>
               <Link

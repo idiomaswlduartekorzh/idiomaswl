@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getSimulacro } from '@/data/mocks/icfes-simulacros';
 import ExamClient from './ExamClient';
+import IcfesJsonLd from '../../_components/IcfesJsonLd';
 
 interface Props {
   params: Promise<{ examId: string }>;
@@ -11,9 +12,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { examId } = await params;
   const sim = getSimulacro(examId);
   if (!sim) return {};
+  const canonical = `https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${sim.id}`;
+  const audience = sim.assessment === 'saber-tyt' ? 'Saber TyT' : `Grado ${sim.grade}`;
   return {
-    title: `${sim.title} — Simulacro ICFES Inglés | Idiomas WeLearn`,
-    description: `Practica con el cuadernillo oficial ICFES ${sim.year} Grado ${sim.grade}. ${sim.totalQuestions} preguntas, ${sim.timeMinutes} minutos. Corrección automática y revisión detallada.`,
+    title: `${sim.title} — Simulacro ICFES Inglés`,
+    description: `Practica con el cuadernillo divulgado por el ICFES ${sim.year} para ${audience}. ${sim.totalQuestions} preguntas, tiempo sugerido y corrección automática.`,
+    alternates: { canonical },
+    robots: sim.assessment === 'saber-11' ? undefined : { index: false, follow: true },
+    openGraph: {
+      title: `${sim.title} — Simulacro ICFES Inglés`,
+      description: `${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES, con corrección automática.`,
+      url: canonical,
+      type: 'website',
+    },
   };
 }
 
@@ -26,5 +37,6 @@ export default async function Page({ params }: Props) {
   const { examId } = await params;
   const sim = getSimulacro(examId);
   if (!sim) notFound();
-  return <ExamClient exam={sim} />;
+  const canonical = `https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${sim.id}`;
+  return <><IcfesJsonLd name={`${sim.title}: modo examen`} description={`${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES con corrección automática.`} url={canonical} type="Quiz" questionCount={sim.totalQuestions} currentLabel={sim.title} /><ExamClient exam={sim} /></>;
 }

@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-08-04T04:25:41.099Z",
+  "verdict": "approved",
+  "base": "http://localhost:4192",
+  "totals": {
+    "expected200": 48,
+    "expected404": 2,
+    "checks": 9,
+    "criticalOrHighOpen": 0
+  },
+  "findings": [],
+  "checks": [
+    {
+      "id": "public-routes",
+      "title": "Todas las rutas públicas esperadas responden 200",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "48/48",
+      "remediation": ""
+    },
+    {
+      "id": "excluded-guided-routes",
+      "title": "Los guiados con estímulos incompletos responden 404",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "2/2",
+      "remediation": ""
+    },
+    {
+      "id": "sitemap-guided-mocks",
+      "title": "Sitemap contiene los 23 mocks guiados",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "23/23",
+      "remediation": "Regenerar desde GUIDED_MOCK_IDS."
+    },
+    {
+      "id": "sitemap-guided-workbooks",
+      "title": "Sitemap contiene las cinco muestras guiadas",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "5/5",
+      "remediation": "Regenerar desde GUIDED_WORKBOOK_IDS."
+    },
+    {
+      "id": "sitemap-assessment-boundary",
+      "title": "Sitemap no mezcla otras evaluaciones con Saber 11",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Ninguna",
+      "remediation": "Retirar Saber 9, Saber 10 y TyT del sitemap de esta arquitectura."
+    },
+    {
+      "id": "related-noindex",
+      "title": "Las evaluaciones complementarias publican noindex,follow",
+      "pass": true,
+      "severity": "high",
+      "evidence": "3/3",
+      "remediation": ""
+    },
+    {
+      "id": "hub-canonical",
+      "title": "El hub renderiza canonical absoluto",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Canonical final www",
+      "remediation": "Corregir metadata del hub."
+    },
+    {
+      "id": "hub-structured-data",
+      "title": "El hub renderiza CollectionPage y BreadcrumbList",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Dos esquemas presentes",
+      "remediation": "Restaurar datos estructurados visibles en HTML."
+    },
+    {
+      "id": "part-one-accessibility-html",
+      "title": "Parte 1 renderiza tablist y panel etiquetado",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Patrón ARIA presente en SSR",
+      "remediation": "Restaurar semántica de pestañas."
+    }
+  ],
+  "routes": [
+    {
+      "route": "/practica/icfes-saber-11",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/diagnostico",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/plan-de-estudio",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/pregunta-del-dia",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/vocabulario",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/simulacro-guiado",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/repaso-errores",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/progreso",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-1",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-2",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-3",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-4",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-5",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-6",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/parte-7",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-01/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-02/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-03/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-04/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-05/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-06/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-07/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-08/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-09/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-10/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-11/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-12/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-13/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-14/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-15/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-16/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-17/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-18/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-19/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-20/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-21/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-22/guiado",
+      "status": 200
+    },
+    {
+      "route": "/examenes/icfes/practica/mock-23/guiado",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2012/guiado",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2022-g9",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2022-g10",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-tyt",
+      "status": 200
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex2/guiado",
+      "status": 404
+    },
+    {
+      "route": "/practica/icfes-saber-11/examenes/icfes-2016/guiado",
+      "status": 404
+    }
+  ]
+}
