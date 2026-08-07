@@ -1,0 +1,582 @@
+{
+  "_lee_esto": [
+    "Reparto de voces de las series de listening A1, A2 y B1 (17 series, 24 personajes con voz propia).",
+    "Cada personaje necesita un voice_id de tu cuenta de ElevenLabs.",
+    "Consíguelos con: node scripts/generate-listening-audio.mjs --voices",
+    "El script se niega a generar mientras quede un voice_id vacío del idioma que se esté generando.",
+    "",
+    "GENERACIÓN POR TANDAS — un idioma cada vez. El filtro --lang ya acota también la comprobación",
+    "del reparto, así que se puede generar coreano con el italiano todavía a medias:",
+    "  node scripts/generate-listening-audio.mjs --lang coreano            (factura previa, no gasta)",
+    "  node scripts/generate-listening-audio.mjs --lang coreano --generate (gasta)",
+    "",
+    "ORDEN RECOMENDADO. Se empieza por lo barato y de más riesgo prosódico, y se termina por lo caro:",
+    "  1. coreano   +2 voces   12.778 caracteres   (el más denso: mide de verdad si el modelo aguanta)",
+    "  2. japonés   +2 voces    9.577 caracteres",
+    "  3. italiano  +6 voces   21.624 caracteres   (Valeria habla 133 turnos: el papel más largo)",
+    "  4. ruso      +2 voces   23.878 caracteres",
+    "  5. portugués +1 voz     27.442 caracteres",
+    "  6. francés   +3 voces   28.199 caracteres",
+    "",
+    "BORRAR VOCES ENTRE TANDAS es seguro. Las 31 voces del reparto vienen de la biblioteca compartida",
+    "y en las 31 el identificador de la cuenta coincide con el de la biblioteca, así que volver a",
+    "añadirlas devuelve el MISMO voice_id y este fichero sigue siendo válido. El campo `biblioteca`",
+    "de cada personaje guarda el public_owner_id necesario para recuperarla.",
+    "La cuenta declara voice_limit=30 y can_extend_voice_limit=false, pero ya tiene 35 voces",
+    "profesionales guardadas: el tope no se está aplicando a las voces de biblioteca. Aun así,",
+    "ir por tandas evita depender de eso."
+  ],
+  "defaults": {
+    "model_id": "eleven_multilingual_v2",
+    "output_format": "mp3_44100_128",
+    "voice_settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.75,
+      "style": 0.15,
+      "use_speaker_boost": true
+    }
+  },
+  "languages": {
+    "coreano": {
+      "locale": "ko-KR",
+      "speed": 0.9,
+      "cast": {
+        "소피아": {
+          "voice_id": "1BZBO072RKJTzZcDjRox",
+          "turnos": 45,
+          "papel": "서울에 온 콜롬비아 학생",
+          "perfil_de_voz": "젊은 여성, 또렷하고 따뜻한 표준 한국어",
+          "voz": "Sora — femenina joven de Seúl, cálida: encaja con «또렷하고 따뜻한»",
+          "biblioteca": {
+            "public_owner_id": "71d851f99f1e51740b1ddb26afc32f4576a6cfe414818b4946bff49e31b7f641",
+            "voice_id": "1BZBO072RKJTzZcDjRox"
+          }
+        },
+        "지호": {
+          "voice_id": "LKOcTG4J4tYTPR9DnLeM",
+          "turnos": 44,
+          "papel": "한국어 학원 친구",
+          "perfil_de_voz": "젊은 남성, 밝고 장난스러운 표준 한국어",
+          "voz": "Mr. K — masculina joven de Seúl, natural: encaja con «밝고 장난스러운»",
+          "biblioteca": {
+            "public_owner_id": "2ecc694669e6ada84bfa2dd779f250e19c3195d96cb9dd203575883c8c1f2359",
+            "voice_id": "LKOcTG4J4tYTPR9DnLeM"
+          }
+        },
+        "별": {
+          "voice_id": "dfGdOKe4Py3B2cmOtW1k",
+          "turnos": 21,
+          "papel": "노란 우산의 주인",
+          "perfil_de_voz": "젊은 남성, 차분하고 또렷한 표준 한국어",
+          "voz": "Leeho — masculina joven, grave y pausada: encaja con «차분하고 또렷한» y contrasta con 지호",
+          "biblioteca": {
+            "public_owner_id": "78201058c6b36b80660f825fce469d4694eeccc8fc7d23f15215f8a811b8d2a7",
+            "voice_id": "dfGdOKe4Py3B2cmOtW1k"
+          }
+        },
+        "김 선생님": {
+          "voice_id": "0oqpliV6dVSr9XomngOW",
+          "turnos": 11,
+          "papel": "한국어 선생님",
+          "perfil_de_voz": "성인 여성, 느리고 정확한 교실 발음",
+          "voz": "Jini — femenina adulta, clara: encaja con «느리고 정확한 교실 발음»",
+          "biblioteca": {
+            "public_owner_id": "97504c820ad9b5b352d4b9a781d7837f0d7e2cb21587982c8fc33c6f0d75cb8c",
+            "voice_id": "0oqpliV6dVSr9XomngOW"
+          }
+        },
+        "미나": {
+          "voice_id": "qWofGdsKN4woEPGCzrdX",
+          "turnos": 8,
+          "papel": "별의 이모, 강아지 콩이의 주인",
+          "perfil_de_voz": "성인 여성, 따뜻하고 조금 빠른 말투",
+          "voz": "Nara - Warm Korean Narration",
+          "biblioteca": {
+            "public_owner_id": "a7e27c35740b2f5f89dd3dc81511ddec843961c81615e6d59d80d974671ec057",
+            "voice_id": "qWofGdsKN4woEPGCzrdX"
+          }
+        },
+        "유나": {
+          "voice_id": "1gYuTfEwELcoEo96wnGj",
+          "turnos": 6,
+          "papel": "카페 직원이자 지호의 친구",
+          "perfil_de_voz": "젊은 여성, 친절하고 활기찬 목소리",
+          "voz": "Gyeorina - Warm Storyteller",
+          "biblioteca": {
+            "public_owner_id": "72dd9f767af510dce0214e2aa4bf1747b6304326cde34c6622a17dd94c155bb0",
+            "voice_id": "1gYuTfEwELcoEo96wnGj"
+          }
+        },
+        "직원": {
+          "voice_id": "Mx48CWClvl522or3Frvp",
+          "turnos": 3,
+          "papel": "카페 직원",
+          "perfil_de_voz": "성인 남성, 정중하고 사무적인 서비스 목소리",
+          "voz": "SEGU — masculina adulta de Seúl, tono sereno de servicio",
+          "biblioteca": {
+            "public_owner_id": "7daed84941003cd3b52c77065f606f88a401b3154e33b752c3dec7ccb680c537",
+            "voice_id": "Mx48CWClvl522or3Frvp"
+          }
+        },
+        "안내 방송": {
+          "voice_id": "Mx48CWClvl522or3Frvp",
+          "turnos": 2,
+          "papel": "학원 안내 방송",
+          "perfil_de_voz": "중성적인 안내 방송 목소리, 느리고 평탄한 억양",
+          "voz": "SEGU otra vez: es una megafonía, no un personaje; se distingue por contexto y por el ritmo plano",
+          "biblioteca": {
+            "public_owner_id": "7daed84941003cd3b52c77065f606f88a401b3154e33b752c3dec7ccb680c537",
+            "voice_id": "Mx48CWClvl522or3Frvp"
+          }
+        },
+        "문구점 주인": {
+          "voice_id": "7oLyBHyhxAjrctX6ZQlw",
+          "turnos": 22,
+          "papel": "학원 근처 문구점 주인 (A2 + B1)",
+          "perfil_de_voz": "중년 여성, 느긋하고 정이 많은 말투",
+          "buscar": "voz femenina coreana de mediana edad, cálida y sin prisa; NO reutilizar 미나 ni 유나: comparten escena",
+          "biblioteca": {
+            "public_owner_id": "e6928ca247ba925939830de022715a0263b22de6be5c7244ecd47bab07968e23",
+            "voice_id": "7oLyBHyhxAjrctX6ZQlw"
+          },
+          "voz": "Bomisori — femenina adulta de Seúl, cálida y clara: encaja con «느긋하고 정이 많은 말투»"
+        },
+        "편집장": {
+          "voice_id": "Mx48CWClvl522or3Frvp",
+          "turnos": 6,
+          "papel": "동네 신문사의 편집장, 지호의 상사 (B1)",
+          "perfil_de_voz": "성인 남성, 빠르고 사무적인 말투",
+          "buscar": "voz masculina coreana adulta, seca y ejecutiva; comparte escena con 지호",
+          "biblioteca": {
+            "public_owner_id": "7daed84941003cd3b52c77065f606f88a401b3154e33b752c3dec7ccb680c537",
+            "voice_id": "Mx48CWClvl522or3Frvp"
+          },
+          "voz": "SEGU, la misma de 직원: adulto de Seúl, sereno y sobrio. No coincide con 직원 ni 안내 방송 en ningún episodio"
+        }
+      }
+    },
+    "frances": {
+      "locale": "fr-FR",
+      "speed": 0.92,
+      "cast": {
+        "Léa": {
+          "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+          "turnos": 65,
+          "papel": "Nueva estudiante y protagonista",
+          "perfil_de_voz": "Mujer joven, francés estándar, tono curioso y cálido",
+          "voz": "Julia - Warm French Narrator",
+          "biblioteca": {
+            "public_owner_id": "29953a0c704089a7251918e3bac7696c96c21e47bb5986e11993f670629cad45",
+            "voice_id": "mNu8EQcIlFZdOJs7yfhe"
+          }
+        },
+        "Hugo": {
+          "voice_id": "yG4Uc56cLYQyZFnWaYv2",
+          "turnos": 39,
+          "papel": "Vecino y empleado de una panadería",
+          "perfil_de_voz": "Hombre joven, acento francés estándar, tono amable y ligeramente cómico",
+          "voz": "Kael - Professional Narrator",
+          "biblioteca": {
+            "public_owner_id": "1d0fc0a5dde1dae0864c6ca869acc4e686f61a178c8c3c8560e3d752df40bb9e",
+            "voice_id": "yG4Uc56cLYQyZFnWaYv2"
+          }
+        },
+        "Inès": {
+          "voice_id": "MORRgNRPjASocDhPs2IB",
+          "turnos": 26,
+          "papel": "Compañera de clase de Léa",
+          "perfil_de_voz": "Mujer joven, voz clara, activa y alegre",
+          "voz": "Cassandra Warm Narrator",
+          "biblioteca": {
+            "public_owner_id": "cbd52626a147f2f5122e7dee501f0fdafe17b899d11ef7c9e585dc4760eada09",
+            "voice_id": "MORRgNRPjASocDhPs2IB"
+          }
+        },
+        "Madame Martin": {
+          "voice_id": "9UK7PgAsdvmlErBPenNb",
+          "turnos": 22,
+          "papel": "Portera del edificio",
+          "perfil_de_voz": "Mujer adulta, voz tranquila y articulación muy clara",
+          "voz": "Johanna - Warm & Welcoming",
+          "biblioteca": {
+            "public_owner_id": "04b25b643fbdfe70ec2d7155d86efcfcc0293dc24bf538de6a3a776305553570",
+            "voice_id": "9UK7PgAsdvmlErBPenNb"
+          }
+        },
+        "Tous": {
+          "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+          "turnos": 1,
+          "papel": "Coro de vecinos en el cumpleaños (episodio 20)",
+          "perfil_de_voz": "Coro: la misma línea generada con tres voces distintas y mezclada en un solo turno",
+          "mezclar_con": [
+            "yG4Uc56cLYQyZFnWaYv2",
+            "MORRgNRPjASocDhPs2IB"
+          ],
+          "voz": "Coro: se genera con 3 voces del reparto y se mezclan",
+          "biblioteca": {
+            "public_owner_id": "29953a0c704089a7251918e3bac7696c96c21e47bb5986e11993f670629cad45",
+            "voice_id": "mNu8EQcIlFZdOJs7yfhe"
+          }
+        },
+        "Monsieur Bertin": {
+          "voice_id": "",
+          "turnos": 36,
+          "papel": "Panadero mayor, dueño de la panadería del barrio (A2 + B1)",
+          "perfil_de_voz": "Hombre mayor, voz grave y seca, frases cortas, afable sin sonreír",
+          "buscar": "voz masculina francesa mayor, grave, parisina o neutra; es el segundo papel más largo del francés"
+        },
+        "Claire": {
+          "voice_id": "",
+          "turnos": 20,
+          "papel": "Voz al teléfono desde Marsella (A2 + B1)",
+          "perfil_de_voz": "Mujer mayor, voz cálida y pausada, acento del sur de Francia muy leve",
+          "buscar": "voz femenina francesa madura, cálida; el acento del sur es preferible pero no imprescindible"
+        },
+        "Madame Delcourt": {
+          "voice_id": "",
+          "turnos": 12,
+          "papel": "Responsable de desarrollo de un grupo de panaderías (B1)",
+          "perfil_de_voz": "Mujer adulta, francés muy neutro y profesional, ritmo medido, cortesía constante",
+          "buscar": "voz femenina francesa adulta, neutra y corporativa; debe sonar distinta de Madame Martin"
+        }
+      }
+    },
+    "japones": {
+      "locale": "ja-JP",
+      "speed": 0.9,
+      "cast": {
+        "アナ": {
+          "voice_id": "nBV906YvEOdwWKK9J8Hx",
+          "turnos": 50,
+          "papel": "東京に来た留学生",
+          "perfil_de_voz": "若い女性、明るく丁寧で聞き取りやすい標準語",
+          "voz": "Mio - Warm Japanese Narrator",
+          "biblioteca": {
+            "public_owner_id": "50dade802a91f775fc0a154b882b4e0184c90a9f488c1d2dceaa3a76779dbbe5",
+            "voice_id": "nBV906YvEOdwWKK9J8Hx"
+          }
+        },
+        "春": {
+          "voice_id": "CtZRdCe4DGWkjR4gX6qK",
+          "turnos": 46,
+          "papel": "アナのクラスメート",
+          "perfil_de_voz": "若い男性、親切で少しおもしろい標準語",
+          "voz": "Yuki - Natural Japanese Male",
+          "biblioteca": {
+            "public_owner_id": "6546a88eca7a03bb044f07a0c42bc030b72638dbb07e5f63721af55f770fcb78",
+            "voice_id": "CtZRdCe4DGWkjR4gX6qK"
+          }
+        },
+        "田中ゆき": {
+          "voice_id": "t3iNwCjYhE9IEQPVBlys",
+          "turnos": 14,
+          "papel": "青い手帳の持ち主",
+          "perfil_de_voz": "成人女性、落ち着いた丁寧な標準語",
+          "voz": "Kinako - Warm Japanese Narrator",
+          "biblioteca": {
+            "public_owner_id": "cef4f34d1ac633887ad5e2d6b366846b7862bc4c629aea9aa66af5eda6e72081",
+            "voice_id": "t3iNwCjYhE9IEQPVBlys"
+          }
+        },
+        "恵美": {
+          "voice_id": "6l0ObIy4mHn0XfeKlCgW",
+          "turnos": 13,
+          "papel": "駅員",
+          "perfil_de_voz": "若い女性、落ち着いた明瞭な案内の声",
+          "voz": "Maya - Clear, Warm, Japanese Narrator",
+          "biblioteca": {
+            "public_owner_id": "d67e383e4930f587d165f2edf64a3262e7ecdfa08e206cbaee87acc727652e40",
+            "voice_id": "6l0ObIy4mHn0XfeKlCgW"
+          }
+        },
+        "店員": {
+          "voice_id": "Uu5ba6tYWCTGoXQKknFz",
+          "turnos": 7,
+          "papel": "店の店員",
+          "perfil_de_voz": "成人男性、はきはきした接客の声",
+          "voz": "Sabi - Calm Japanese Business",
+          "biblioteca": {
+            "public_owner_id": "7d3186a97691605f1382f9dc156e45b13e422478d3d6cae1ec96d1cbe0d314d7",
+            "voice_id": "Uu5ba6tYWCTGoXQKknFz"
+          }
+        },
+        "ホテル係": {
+          "voice_id": "51WoBv13cwDXZGNZ3TLb",
+          "turnos": 5,
+          "papel": "ホテルのフロント係",
+          "perfil_de_voz": "成人女性、丁寧で事務的な案内の声",
+          "voz": "Miki.T - Calm, narration, podcast",
+          "biblioteca": {
+            "public_owner_id": "d1b7c10a18447ec8c8d1cea89bfd1617f03986696b79751ea080b7959641f3cb",
+            "voice_id": "51WoBv13cwDXZGNZ3TLb"
+          }
+        },
+        "図書館員": {
+          "voice_id": "BTUNhQfNpOekzVjlvRHS",
+          "turnos": 3,
+          "papel": "図書館の職員",
+          "perfil_de_voz": "成人男性、静かでゆっくりした声",
+          "voz": "Nagi - Deep, Calm Japanese Male ",
+          "biblioteca": {
+            "public_owner_id": "ad3873392159693c2e78be19e1e1adc968fbabc5c1d25ae325caf53bc8a24b0b",
+            "voice_id": "BTUNhQfNpOekzVjlvRHS"
+          }
+        },
+        "佐藤先生": {
+          "voice_id": "vJzOwGHlpdmor8nyTsCT",
+          "turnos": 2,
+          "papel": "日本語の先生",
+          "perfil_de_voz": "成人女性、ゆっくり正確な教室の発音",
+          "voz": "Ram - Warm Japanese Narrator",
+          "biblioteca": {
+            "public_owner_id": "00bf5c759ec3f36e817586c3baef27223443851c3ebc428bd30e3bd35cf32c13",
+            "voice_id": "vJzOwGHlpdmor8nyTsCT"
+          }
+        },
+        "高橋": {
+          "voice_id": "",
+          "turnos": 15,
+          "papel": "町役場観光課の職員 (B1)",
+          "perfil_de_voz": "成人男性、丁寧で事務的な話し方",
+          "buscar": "voz masculina japonesa adulta, formal y administrativa; distinta de 店員 y 図書館員"
+        },
+        "課長": {
+          "voice_id": "",
+          "turnos": 6,
+          "papel": "町役場観光課の課長 (B1)",
+          "perfil_de_voz": "年上の男性、ゆっくりした重い敬語",
+          "buscar": "voz masculina japonesa mayor, lenta y grave; es el superior de 高橋 y hablan en la misma escena"
+        }
+      }
+    },
+    "portugues": {
+      "locale": "pt-BR",
+      "speed": 0.92,
+      "cast": {
+        "Sofía": {
+          "voice_id": "GNbTZ3mnlvxUSlnd35iL",
+          "turnos": 54,
+          "papel": "Nueva estudiante colombiana",
+          "perfil_de_voz": "Mujer joven, portugués brasileño claro, curiosa y cálida",
+          "voz": "Tatiana - Warm & Articulate",
+          "biblioteca": {
+            "public_owner_id": "ab7791b7a999ef6451606e57faaa97798406504821af58ce532dfc502db6541c",
+            "voice_id": "GNbTZ3mnlvxUSlnd35iL"
+          }
+        },
+        "Tiago": {
+          "voice_id": "nuqSYpkCikIPhZElRSCJ",
+          "turnos": 41,
+          "papel": "Vecino y barista",
+          "perfil_de_voz": "Hombre joven, portugués de São Paulo, amable y cómico",
+          "voz": "Rafi - Friendly Professor",
+          "biblioteca": {
+            "public_owner_id": "d3d19f3649e7c07b51619d55af44cde22b581f500d4767244d0b1be3a20efcc5",
+            "voice_id": "nuqSYpkCikIPhZElRSCJ"
+          }
+        },
+        "Dona Célia": {
+          "voice_id": "8EY2gK6oUxZCDZAlvUpZ",
+          "turnos": 25,
+          "papel": "Administradora del edificio",
+          "perfil_de_voz": "Mujer adulta, voz serena y articulación marcada",
+          "voz": "Pri - Warm & Natural Brazilian Portuguese",
+          "biblioteca": {
+            "public_owner_id": "913499969a4fdf83a1542b6f7204bf23d0f288ee84000405e02a3086b09b98e5",
+            "voice_id": "8EY2gK6oUxZCDZAlvUpZ"
+          }
+        },
+        "Nina": {
+          "voice_id": "3eGB8TCZcvWDO8AHnwlp",
+          "turnos": 19,
+          "papel": "Compañera de curso",
+          "perfil_de_voz": "Mujer joven, ritmo claro y energía alegre",
+          "voz": "Luna - Calm & Friendly",
+          "biblioteca": {
+            "public_owner_id": "dbc5f9b57a0c5107c820ac2161b63c109d3190cdec9159e308348b91c7ff08e5",
+            "voice_id": "3eGB8TCZcvWDO8AHnwlp"
+          }
+        },
+        "Todos": {
+          "voice_id": "GNbTZ3mnlvxUSlnd35iL",
+          "turnos": 1,
+          "papel": "Coro de vecinos en la fiesta (episodio 20)",
+          "perfil_de_voz": "Coro: la misma línea generada con tres voces distintas y mezclada en un solo turno",
+          "mezclar_con": [
+            "nuqSYpkCikIPhZElRSCJ",
+            "8EY2gK6oUxZCDZAlvUpZ"
+          ],
+          "voz": "Coro: se genera con 3 voces del reparto y se mezclan",
+          "biblioteca": {
+            "public_owner_id": "ab7791b7a999ef6451606e57faaa97798406504821af58ce532dfc502db6541c",
+            "voice_id": "GNbTZ3mnlvxUSlnd35iL"
+          }
+        },
+        "Seu Antônio": {
+          "voice_id": "",
+          "turnos": 39,
+          "papel": "Hermano de Dona Célia, vecino jubilado y dueño de Pingo (A2 + B1)",
+          "perfil_de_voz": "Hombre mayor, voz grave y pausada, tono nostálgico y afectuoso",
+          "buscar": "voz masculina brasileña mayor, grave y pausada; comparte escena con Tiago, así que no vale reutilizarla"
+        }
+      }
+    },
+    "ruso": {
+      "locale": "ru-RU",
+      "speed": 0.92,
+      "cast": {
+        "София": {
+          "voice_id": "oik5x6jBI6Xj6MPIciZU",
+          "turnos": 44,
+          "papel": "Колумбийская студентка в Москве",
+          "perfil_de_voz": "Молодой женский голос, тёплый и очень чёткий русский",
+          "voz": "Yasna",
+          "biblioteca": {
+            "public_owner_id": "d1445ca95f7df70f7577aae4d20277325f0a475f7218caf560c0b4c1ef1e5483",
+            "voice_id": "oik5x6jBI6Xj6MPIciZU"
+          }
+        },
+        "Миша": {
+          "voice_id": "76rT6drChOHgGsscaHMJ",
+          "turnos": 42,
+          "papel": "Однокурсник Софии",
+          "perfil_de_voz": "Молодой мужской голос, дружелюбный и немного комичный",
+          "voz": "Denis - Narrator",
+          "biblioteca": {
+            "public_owner_id": "cc4c059f814f23a530600f5245c2bd8e0d58533575d42719d6dc20e7d3628af6",
+            "voice_id": "76rT6drChOHgGsscaHMJ"
+          }
+        },
+        "Елена": {
+          "voice_id": "WrVR5Abi1fguTI7Fqe5w",
+          "turnos": 15,
+          "papel": "Хозяйка красного шарфа",
+          "perfil_de_voz": "Взрослый женский голос, тёплый и неторопливый",
+          "voz": "Irina Golovatova",
+          "biblioteca": {
+            "public_owner_id": "3aeba32602bd4746e9905afa496a21da0071eff467eac0ab25918340172ab242",
+            "voice_id": "WrVR5Abi1fguTI7Fqe5w"
+          }
+        },
+        "Анна": {
+          "voice_id": "ScaQ3utur72x93jqMMeU",
+          "turnos": 14,
+          "papel": "Бариста рядом с метро",
+          "perfil_de_voz": "Молодой женский голос, спокойный московский стандарт",
+          "voz": "Elena - Warm, Calm & Clear",
+          "biblioteca": {
+            "public_owner_id": "90ac27eedc9df6b55ff3ddce279a6cb426cce17c38747a1c8caf2071369778ef",
+            "voice_id": "ScaQ3utur72x93jqMMeU"
+          }
+        },
+        "Кассир": {
+          "voice_id": "DqxytKNFqOw7mkrURtr9",
+          "turnos": 11,
+          "papel": "Кассир театральной кассы",
+          "perfil_de_voz": "Взрослый женский голос, деловой и чёткий",
+          "voz": "Angelina - Clear & Friendly",
+          "biblioteca": {
+            "public_owner_id": "9670d1425e376bd2e03c939230131d3e1bc1f643bd2e34ce9e16cb3d19687d53",
+            "voice_id": "DqxytKNFqOw7mkrURtr9"
+          }
+        },
+        "Сотрудник": {
+          "voice_id": "G0eauMdqavoxWpmHZhN3",
+          "turnos": 6,
+          "papel": "Сотрудник бюро находок",
+          "perfil_de_voz": "Взрослый мужской голос, вежливый и официальный",
+          "voz": "Dmarshall - Calm, Podcast Host",
+          "biblioteca": {
+            "public_owner_id": "6f75f4dd23c220ff24cf8f2213dc69861f5ee5f12592fbba4c749e9717ef09b5",
+            "voice_id": "G0eauMdqavoxWpmHZhN3"
+          }
+        },
+        "Продавец": {
+          "voice_id": "gkJXl45tiGyrYwKV4B1n",
+          "turnos": 6,
+          "papel": "Продавец в магазине",
+          "perfil_de_voz": "Взрослый мужской голос, приветливый и живой",
+          "voz": "Oleg",
+          "biblioteca": {
+            "public_owner_id": "ebd0d561a2b68dda19910ef7e65f847bed57d9b658b60b7c2daf3798a4dbc03e",
+            "voice_id": "gkJXl45tiGyrYwKV4B1n"
+          }
+        },
+        "Виктор Петрович": {
+          "voice_id": "0igyFIChAVV6GGARy9qg",
+          "turnos": 2,
+          "papel": "Преподаватель русского языка",
+          "perfil_de_voz": "Взрослый мужской голос, медленный и отчётливый",
+          "voz": "Marsianin - Audiobooks & Video",
+          "biblioteca": {
+            "public_owner_id": "c77bd6d3ff69e8e0ac88414c6f9b301c8a2b0126051db49aebe24d3370f26d01",
+            "voice_id": "0igyFIChAVV6GGARy9qg"
+          }
+        },
+        "Ирина": {
+          "voice_id": "",
+          "turnos": 11,
+          "papel": "Композитор из Иркутска, бывшая студентка студии «Луна» (B1)",
+          "perfil_de_voz": "Взрослый женский голос, низкий, спокойный и прямой",
+          "buscar": "voz femenina rusa adulta, grave y serena; es la contraparte de Виктор Петрович en el conflicto de la temporada"
+        },
+        "Архивариус": {
+          "voice_id": "",
+          "turnos": 3,
+          "papel": "Сотрудница университетского архива (B1)",
+          "perfil_de_voz": "Взрослый женский голос, тихий и очень размеренный",
+          "buscar": "voz femenina rusa adulta, muy pausada; solo sale en un episodio"
+        }
+      }
+    },
+    "italiano": {
+      "locale": "it-IT",
+      "speed": 0.92,
+      "cast": {
+        "Valeria": {
+          "voice_id": "",
+          "turnos": 133,
+          "papel": "Estudiante colombiana de arquitectura en Bolonia; protagonista (A2 + B1)",
+          "perfil_de_voz": "Mujer joven, italiano claro y ligeramente hispanizado, tono curioso y directo",
+          "buscar": "voz femenina italiana joven y muy clara. El papel más largo del proyecto entero: conviene probarlo en el piloto antes de generar nada más"
+        },
+        "Giulia": {
+          "voice_id": "",
+          "turnos": 60,
+          "papel": "Compañera de curso boloñesa; organizada, práctica y escéptica (A2 + B1)",
+          "perfil_de_voz": "Mujer joven, ritmo rápido, entonación viva, tono práctico",
+          "buscar": "voz femenina italiana joven, rápida y expresiva; tiene que distinguirse de Valeria en una frase"
+        },
+        "Matteo": {
+          "voice_id": "",
+          "turnos": 57,
+          "papel": "Mecánico de bicicletas; los domingos vende en el mercadillo (A2 + B1)",
+          "perfil_de_voz": "Hombre joven, italiano estándar, hablador y bromista",
+          "buscar": "voz masculina italiana joven, cercana y con chispa"
+        },
+        "Signora Lucia": {
+          "voice_id": "",
+          "turnos": 39,
+          "papel": "Sastra del barrio; trata de usted a todo el mundo (A2 + B1)",
+          "perfil_de_voz": "Mujer mayor, articulación muy clara y pausada, registro formal y cordial",
+          "buscar": "voz femenina italiana mayor, articulación nítida; es la que mejor se entiende a nivel A2, así que la claridad manda sobre el color"
+        },
+        "Bruno": {
+          "voice_id": "",
+          "turnos": 25,
+          "papel": "Panadero del barrio (A2 + B1)",
+          "perfil_de_voz": "Hombre mayor, voz grave, ritmo lento, humor seco",
+          "buscar": "voz masculina italiana mayor y grave; debe contrastar con Matteo"
+        },
+        "Tutti": {
+          "voice_id": "",
+          "turnos": 6,
+          "papel": "Coro de vecinos del barrio (A2 ep20, B1 ep10 y ep20)",
+          "perfil_de_voz": "Coro: la misma línea generada con tres voces distintas y mezclada en un solo turno",
+          "mezclar_con": [],
+          "buscar": "No necesita voz propia: se rellena con los voice_id de Valeria, Matteo y Signora Lucia una vez asignados"
+        }
+      }
+    }
+  }
+}

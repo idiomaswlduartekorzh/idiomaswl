@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'coreano',
+  'b1',
+  '20 episodios narrativos B1: «별 카페의 마지막 여름», temporada 3. Guion dialogado en hangul con romanización, vocabulario, preguntas y transcripción bilingüe.',
+);
 
 export const metadata: Metadata = {
   title: 'Coreano B1 — Elige una habilidad | Idiomas WeLearn',
@@ -39,8 +46,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: '듣기 (Deutgi)', eng: 'Escucha',
-    desc: '3 diálogos B1 con scripts en Hangul + romaja. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/coreano/b1/escucha', available: true,
+    desc: ESCUCHA.desc,
+    count: ESCUCHA.count, href: '/practica/coreano/b1/escucha', available: true,
   },
 ];
 

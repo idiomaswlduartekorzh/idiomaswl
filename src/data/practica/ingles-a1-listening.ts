@@ -5,6 +5,23 @@ export type ListeningQuestion = {
   options: ListeningOption[]
 }
 
+/**
+ * Una línea de la transcripción. `en` es el idioma meta (el campo conserva su nombre
+ * histórico: las series de alemán, italiano, etc. lo reutilizan tal cual).
+ *
+ * `speaker` y `romanization` son opcionales y solo los traen las series dialogadas
+ * (francés, portugués, coreano, japonés y ruso A1). Las series de monólogo previas
+ * los omiten y se renderizan exactamente igual que antes.
+ */
+export type ListeningLine = {
+  en: string
+  es: string
+  /** Nombre del personaje que habla. Solo en series dialogadas. */
+  speaker?: string
+  /** Transliteración latina de `en`. Solo donde la escritura no es latina (ko, ja, ru). */
+  romanization?: string
+}
+
 export type ListeningExercise = {
   id: string
   order: number
@@ -14,7 +31,7 @@ export type ListeningExercise = {
   duration: number
   grammar: string[]
   keywords: Array<{ en: string; es: string }>
-  transcript: Array<{ en: string; es: string }>
+  transcript: ListeningLine[]
   gist: ListeningQuestion
   details: ListeningQuestion[]
   consolidation: ListeningQuestion

@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'portugues',
+  'b1',
+  '20 episódios narrativos B1: «Uma proposta para o muro», temporada 3. Roteiro dialogado, vocabulário, perguntas e transcrição bilíngue.',
+);
 
 export const metadata: Metadata = {
   title: 'Portugués B1 — Elige una habilidad | Idiomas WeLearn',
@@ -17,7 +24,7 @@ const HABILIDADES = [
   { id: 'escritura', emoji: '✍️', name: 'Escrita', eng: 'Escritura', desc: '5 tarefas B1: emails formais, textos de opinião, descrições comparativas.', count: '5 tarefas guiadas', href: '/practica/portugues/b1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expressão oral', eng: 'Expresión oral', desc: '20 expressões B1 para debates, opiniões e conversas formais.', count: '20 expressões essenciais', href: '/practica/portugues/b1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulário', eng: 'Vocabulario', desc: '8 conjuntos temáticos × 10 palavras. Flashcard, MCQ e escrita.', count: '8 sets · 80+ palavras', href: '/practica/portugues/b1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compreensão auditiva', eng: 'Escucha', desc: '3 diálogos B1 com roteiros. Áudios em preparação.', count: '3 diálogos em breve', href: '/practica/portugues/b1/escucha' },
+  { id: 'escucha', emoji: '🎧', name: 'Compreensão auditiva', eng: 'Escucha', ...ESCUCHA, href: '/practica/portugues/b1/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#009c3b', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum",
+    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -14,6 +14,7 @@
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "audit:writing-curriculum": "node scripts/audit-writing-curriculum.mjs",
     "check:reading-content": "node scripts/check-reading-content.mjs",
+    "check:listening-series": "node scripts/validate-listening-series.mjs",
     "test:reading": "node --test tests/reading-content.test.mjs",
     "check:exam-practice-content": "node scripts/check-exam-practice-content.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",

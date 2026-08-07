@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { ListeningExercise, ListeningQuestion } from '@/data/practica/ingles-a1-listening'
+import { balanceOptions } from '@/data/practica/listening-shuffle'
 
 type Stage = 0 | 1 | 2 | 3 | 4 | 5 | 6
 
@@ -31,6 +32,7 @@ export default function ListeningJourney({
   languageLabel = 'Inglés',
   skillLabel = 'Listening',
   speechLang = 'en-US',
+  audioMode = 'mp3',
 }: {
   exercises: ListeningExercise[]
   level?: string
@@ -45,6 +47,14 @@ export default function ListeningJourney({
   skillLabel?: string
   /** BCP-47 para speechSynthesis; sin esto las palabras se leen con acento inglés. */
   speechLang?: string
+  /**
+   * De dónde sale el audio del ejercicio.
+   * - `mp3`: archivo en `audioBasePath` (audio definitivo con voces nativas).
+   * - `navegador`: la voz sintética del sistema lee la transcripción turno a turno.
+   *   Provisional, para poder revisar el recorrido completo antes de grabar.
+   * - `ninguno`: no hay audio; se muestra el aviso y el recorrido queda bloqueado.
+   */
+  audioMode?: 'mp3' | 'navegador' | 'ninguno'
 }) {
   const [selectedId, setSelectedId] = useState(exercises[0]?.id ?? '')
   const [stage, setStage] = useState<Stage>(0)
@@ -56,14 +66,24 @@ export default function ListeningJourney({
   const [showTranslation, setShowTranslation] = useState(false)
   const [completed, setCompleted] = useState<string[]>([])
   const audioRef = useRef<HTMLAudioElement>(null)
+  // Modo navegador: la línea que se está leyendo ahora, y si el sistema tiene voz del idioma.
+  const [ttsLine, setTtsLine] = useState(-1)
+  const [voiceMissing, setVoiceMissing] = useState(false)
   const storageKey = progressKey ?? `wl-listening-${level.toLowerCase()}-progress`
 
-  const exercise = useMemo(() => exercises.find(item => item.id === selectedId) ?? exercises[0], [exercises, selectedId])
+  // Las opciones se reparten aquí para que la respuesta correcta no caiga siempre en la
+  // misma letra. Se hace sobre la serie entera, no sobre el ejercicio suelto, porque el
+  // equilibrio solo se puede garantizar viendo todas las preguntas a la vez.
+  // Ver src/data/practica/listening-shuffle.ts.
+  const balanced = useMemo(() => balanceOptions(exercises), [exercises])
+  const exercise = useMemo(() => balanced.find(item => item.id === selectedId) ?? balanced[0], [balanced, selectedId])
   const detailScore = exercise.details.filter((question, index) => answer(question, detailChoices[index])).length
   const totalQuestions = 1 + exercise.details.length + 1
   const score = (answer(exercise.gist, gistChoice) ? 1 : 0) + detailScore + (answer(exercise.consolidation, consolidationChoice) ? 1 : 0)
   const readyForNext = stage === 0 || played
   const audioAvailable = exercise.audioAvailable !== false
+  // Si hay algo que escuchar —mp3 o voz del sistema— el recorrido puede avanzar.
+  const canListen = audioMode === 'navegador' ? !voiceMissing : audioAvailable
   const hasTranslations = exercise.transcript.some(line => Boolean(line.es.trim()))
 
   useEffect(() => {
@@ -72,6 +92,39 @@ export default function ListeningJourney({
       if (Array.isArray(saved)) setCompleted(saved)
     } catch { /* Empty progress is safe. */ }
   }, [storageKey])
+
+  // Si el sistema no tiene voz del idioma, speechSynthesis lee el texto con la voz por
+  // defecto: el hangul o el cirílico salen como ruido. Más vale avisar que reproducir eso.
+  useEffect(() => {
+    if (audioMode !== 'navegador' || typeof window === 'undefined' || !window.speechSynthesis) return
+    const check = () => {
+      const prefix = speechLang.split('-')[0]
+      setVoiceMissing(!window.speechSynthesis.getVoices().some(voice => voice.lang.startsWith(prefix)))
+    }
+    check()
+    window.speechSynthesis.onvoiceschanged = check
+    return () => { window.speechSynthesis.cancel(); window.speechSynthesis.onvoiceschanged = null }
+  }, [audioMode, speechLang])
+
+  /** Lee la transcripción turno a turno y va marcando la línea activa. */
+  function speakTranscript() {
+    if (!window.speechSynthesis) return
+    window.speechSynthesis.cancel()
+    setPlayed(true)
+    const prefix = speechLang.split('-')[0]
+    const voice = window.speechSynthesis.getVoices().find(item => item.lang.startsWith(prefix)) ?? null
+
+    exercise.transcript.forEach((line, index) => {
+      const utterance = new SpeechSynthesisUtterance(line.en)
+      utterance.lang = speechLang
+      // Más lento que el habla normal: es comprensión auditiva de nivel inicial.
+      utterance.rate = 0.85
+      if (voice) utterance.voice = voice
+      utterance.onstart = () => setTtsLine(index)
+      if (index === exercise.transcript.length - 1) utterance.onend = () => setTtsLine(-1)
+      window.speechSynthesis.speak(utterance)
+    })
+  }
 
   function selectExercise(id: string) {
     audioRef.current?.pause()
@@ -91,9 +144,13 @@ export default function ListeningJourney({
     }
   }
 
-  const activeSentence = exercise.transcript.length
-    ? Math.min(exercise.transcript.length - 1, Math.floor((currentTime / Math.max(exercise.duration, 1)) * exercise.transcript.length))
-    : -1
+  // Con mp3 la línea activa se deduce del tiempo; con voz del navegador la sabemos exacta,
+  // porque cada turno es una locución propia y avisa al empezar.
+  const activeSentence = audioMode === 'navegador'
+    ? ttsLine
+    : exercise.transcript.length
+      ? Math.min(exercise.transcript.length - 1, Math.floor((currentTime / Math.max(exercise.duration, 1)) * exercise.transcript.length))
+      : -1
 
   return (
     <div className="listen-shell">
@@ -117,12 +174,25 @@ export default function ListeningJourney({
 
         {stage === 0 && <section className="listen-panel"><p className="listen-kicker">1. Preparar el oído</p><h2>Palabras que te ayudarán a escuchar</h2><p>Escúchalas y relaciónalas con su significado. No necesitas memorizar todas.</p><div className="listen-keywords">{exercise.keywords.map(item => <button type="button" key={item.en} onClick={() => speak(item.en, speechLang)}><b>🔊 {item.en}</b><span>{item.es}</span></button>)}</div><button className="listen-primary" onClick={nextStage}>Ya estoy listo para escuchar</button></section>}
 
-        {stage >= 1 && stage <= 5 && (audioAvailable ? <div className="listen-player"><audio ref={audioRef} src={`${audioBasePath}/${exercise.audioFile ?? `listening-${String(exercise.order).padStart(2, '0')}`}.mp3`} onPlay={() => setPlayed(true)} onTimeUpdate={event => setCurrentTime(event.currentTarget.currentTime)} /><button className="listen-play" type="button" onClick={() => { const audio = audioRef.current; if (!audio) return; audio.paused ? audio.play() : audio.pause() }}>▶ Escuchar {played ? 'de nuevo' : ''}</button><button className="listen-rewind" type="button" onClick={() => { if (audioRef.current) audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5) }}>↺ 5 s</button><div className="listen-timeline"><span style={{ width: `${Math.min(100, (currentTime / exercise.duration) * 100)}%` }} /></div><small>{Math.floor(currentTime)} s / ~{exercise.duration} s</small></div> : <div className="listen-empty">🎙️ Este guion ya está preparado. El audio se activará cuando esté grabado.</div>)}
+        {stage >= 1 && stage <= 5 && (
+          audioMode === 'navegador' ? (
+            voiceMissing
+              ? <div className="listen-empty">🔇 Tu dispositivo no tiene instalada una voz de {languageLabel.toLowerCase()}, así que la lectura provisional sonaría como ruido. El audio con voces nativas llega en la siguiente fase; mientras tanto puedes seguir el guion y las preguntas.</div>
+              : <div className="listen-player">
+                  <button className="listen-play" type="button" onClick={speakTranscript}>▶ Escuchar {played ? 'de nuevo' : ''}</button>
+                  <button className="listen-rewind" type="button" onClick={() => { window.speechSynthesis?.cancel(); setTtsLine(-1) }}>■ Parar</button>
+                  <div className="listen-timeline"><span style={{ width: `${ttsLine < 0 ? 0 : Math.min(100, ((ttsLine + 1) / Math.max(exercise.transcript.length, 1)) * 100)}%` }} /></div>
+                  <small>Voz provisional del navegador · turno {ttsLine < 0 ? '—' : ttsLine + 1} de {exercise.transcript.length}</small>
+                </div>
+          ) : audioAvailable ? (
+            <div className="listen-player"><audio ref={audioRef} src={`${audioBasePath}/${exercise.audioFile ?? `listening-${String(exercise.order).padStart(2, '0')}`}.mp3`} onPlay={() => setPlayed(true)} onTimeUpdate={event => setCurrentTime(event.currentTarget.currentTime)} /><button className="listen-play" type="button" onClick={() => { const audio = audioRef.current; if (!audio) return; audio.paused ? audio.play() : audio.pause() }}>▶ Escuchar {played ? 'de nuevo' : ''}</button><button className="listen-rewind" type="button" onClick={() => { if (audioRef.current) audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5) }}>↺ 5 s</button><div className="listen-timeline"><span style={{ width: `${Math.min(100, (currentTime / exercise.duration) * 100)}%` }} /></div><small>{Math.floor(currentTime)} s / ~{exercise.duration} s</small></div>
+          ) : <div className="listen-empty">🎙️ Este guion ya está preparado. El audio se activará cuando esté grabado.</div>
+        )}
 
-        {stage === 1 && <QuestionCard question={exercise.gist} choice={gistChoice} onChoose={setGistChoice} title="2. Primera escucha · idea general" help="Escucha sin leer. Busca el tema, no cada palabra." onContinue={nextStage} disabled={!audioAvailable || !played || gistChoice === undefined} />}
+        {stage === 1 && <QuestionCard question={exercise.gist} choice={gistChoice} onChoose={setGistChoice} title="2. Primera escucha · idea general" help="Escucha sin leer. Busca el tema, no cada palabra." onContinue={nextStage} disabled={!canListen || !played || gistChoice === undefined} />}
         {stage === 2 && <section className="listen-panel"><p className="listen-kicker">3. Segunda escucha · detalles</p><h2>Ahora busca datos concretos</h2>{exercise.details.length ? exercise.details.map((question, index) => <QuestionCard key={question.prompt} question={question} choice={detailChoices[index]} onChoose={choice => setDetailChoices(current => ({ ...current, [index]: choice }))} compact />) : <p>Las preguntas de detalle para este audio se activarán al cargar su guion alineado.</p>}<button className="listen-primary" onClick={nextStage} disabled={!played || (exercise.details.length > 0 && Object.keys(detailChoices).length < exercise.details.length)}>Revisar lo que escuché</button></section>}
-        {stage === 3 && <section className="listen-panel"><p className="listen-kicker">4. Descubrir el texto</p><h2>Conecta el sonido con la escritura</h2>{exercise.transcript.length ? <>{hasTranslations && <button type="button" className="listen-text-toggle" onClick={() => setShowTranslation(value => !value)}>{showTranslation ? 'Ocultar traducción' : 'Ver traducción de apoyo'}</button>}<div className="listen-transcript">{exercise.transcript.map((line, index) => <p key={line.en} className={index === activeSentence ? 'is-speaking' : ''}><b>{line.en}</b>{showTranslation && line.es && <span>{line.es}</span>}</p>)}</div></> : <p>Este audio ya tiene vocabulario y reproductor. El texto sincronizado se añade en la siguiente pasada editorial.</p>}<button className="listen-primary" onClick={nextStage}>Escuchar con guía</button></section>}
-        {stage === 4 && <section className="listen-panel"><p className="listen-kicker">5. Escucha guiada</p><h2>Sigue los fragmentos mientras escuchas</h2><p>El resaltado actual usa bloques por oración. La versión final añadirá tiempos de palabra extraídos del audio.</p>{exercise.transcript.length ? <div className="listen-transcript listen-transcript--guided">{exercise.transcript.map((line, index) => <p key={line.en} className={index === activeSentence ? 'is-speaking' : ''}>{line.en}</p>)}</div> : <div className="listen-empty">Repite el audio y concéntrate en las cinco palabras preparadas.</div>}<button className="listen-primary" onClick={nextStage}>Comprobar lo aprendido</button></section>}
+        {stage === 3 && <section className="listen-panel"><p className="listen-kicker">4. Descubrir el texto</p><h2>Conecta el sonido con la escritura</h2>{exercise.transcript.length ? <>{hasTranslations && <button type="button" className="listen-text-toggle" onClick={() => setShowTranslation(value => !value)}>{showTranslation ? 'Ocultar traducción' : 'Ver traducción de apoyo'}</button>}<div className="listen-transcript">{exercise.transcript.map((line, index) => <p key={index} className={index === activeSentence ? 'is-speaking' : ''}>{line.speaker && <em className="listen-speaker">{line.speaker}</em>}<b>{line.en}</b>{line.romanization && <span className="listen-roman">{line.romanization}</span>}{showTranslation && line.es && <span>{line.es}</span>}</p>)}</div></> : <p>Este audio ya tiene vocabulario y reproductor. El texto sincronizado se añade en la siguiente pasada editorial.</p>}<button className="listen-primary" onClick={nextStage}>Escuchar con guía</button></section>}
+        {stage === 4 && <section className="listen-panel"><p className="listen-kicker">5. Escucha guiada</p><h2>Sigue los fragmentos mientras escuchas</h2><p>El resaltado actual usa bloques por oración. La versión final añadirá tiempos de palabra extraídos del audio.</p>{exercise.transcript.length ? <div className="listen-transcript listen-transcript--guided">{exercise.transcript.map((line, index) => <p key={index} className={index === activeSentence ? 'is-speaking' : ''}>{line.speaker && <em className="listen-speaker">{line.speaker}</em>}{line.en}{line.romanization && <span className="listen-roman">{line.romanization}</span>}</p>)}</div> : <div className="listen-empty">Repite el audio y concéntrate en las cinco palabras preparadas.</div>}<button className="listen-primary" onClick={nextStage}>Comprobar lo aprendido</button></section>}
         {stage === 5 && <QuestionCard question={exercise.consolidation} choice={consolidationChoice} onChoose={setConsolidationChoice} title="6. Consolidar" help="Responde sin mirar la transcripción." onContinue={nextStage} disabled={consolidationChoice === undefined} />}
         {stage === 6 && <section className="listen-panel listen-close"><p className="listen-kicker">7. Cierre</p><h2>{score / totalQuestions >= 0.7 ? 'Listo para avanzar' : 'Repasa una vez más'}</h2><p>Entendiste <b>{score} de {totalQuestions}</b> comprobaciones. {score / totalQuestions >= 0.7 ? 'La idea general y los datos clave ya están en marcha.' : 'Vuelve al audio, busca una palabra clave y escucha otra vez sin presión.'}</p><div className="listen-review"><b>Para recordar</b>{exercise.keywords.slice(0, 3).map(item => <span key={item.en}>{item.en} · {item.es}</span>)}</div><button className="listen-primary" onClick={finish}>Marcar ejercicio como completado</button>{exercise.order < exercises.length && <button className="listen-secondary" onClick={() => selectExercise(exercises[exercise.order].id)}>Siguiente audio →</button>}</section>}
       </section>

@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'frances',
+  'a2',
+  "20 épisodes narratifs A2 : « La moitié de la recette », saison 2. Dialogues transcrits, vocabulaire, questions et traduction en espagnol.",
+);
 
 export const metadata: Metadata = {
   title: 'Francés A2 — Elige una habilidad | Idiomas WeLearn',
@@ -17,7 +24,7 @@ const HABILIDADES = [
   { id: 'escritura', emoji: '✍️', name: 'Écriture', eng: 'Escritura', desc: "5 tâches d'écriture A2 avec grammaire intégrée, modèle et liste de vérification.", count: '5 rédactions guidées', href: '/practica/frances/a2/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expression orale', eng: 'Habla', desc: '20 expressions A2 avec contexte situationnel, prononciation et variantes formelles/informelles.', count: '20 expressions essentielles', href: '/practica/frances/a2/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulaire', eng: 'Vocabulario', desc: '8 thèmes × 10 mots. 3 modes de pratique : flashcards, QCM et écriture.', count: '8 thèmes · 80+ mots', href: '/practica/frances/a2/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compréhension orale', eng: 'Escucha', desc: '3 dialogues A2 complets avec scripts. Audios en préparation.', count: '3 dialogues bientôt', href: '/practica/frances/a2/escucha' },
+  { id: 'escucha', emoji: '🎧', name: 'Compréhension orale', eng: 'Escucha', ...ESCUCHA, href: '/practica/frances/a2/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#003189', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };

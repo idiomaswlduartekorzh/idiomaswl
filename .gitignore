@@ -68,3 +68,14 @@ public/audio/goethe/
 public/audio/aleman/**/De-*.mp3
 public/audio/aleman/**/de-prueba.mp3
 public/audio/italiano/**/it-a1-*-src.mp3
+
+# Listening A1 (francés, portugués, coreano, japonés, ruso): audio PROVISIONAL de
+# scripts/make-placeholder-audio.mjs — pitidos, no voces. Ocupa las rutas y los nombres
+# definitivos a propósito, para poder revisar el recorrido antes de gastar créditos.
+# Al llegar el audio real: node scripts/make-placeholder-audio.mjs --clean, y entonces
+# QUITAR estas cinco líneas para que los mp3 buenos sí se commiteen.
+public/audio/frances/a1/
+public/audio/portugues/a1/
+public/audio/coreano/a1/
+public/audio/japones/a1/
+public/audio/ruso/a1/

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { audioReady } from '@/data/practica/series/audio-ready';
 
 export const metadata: Metadata = {
   title: 'Coreano A1 — Elige una habilidad | Idiomas WeLearn',
@@ -11,13 +12,15 @@ export const metadata: Metadata = {
 
 const COLOR = '#534AB7';
 
+const AUDIO_LISTO = audioReady('coreano');
+
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: '읽기 (Ilgi)', eng: 'Lectura', desc: '5 textos A1 en Hangul con romanización y vocabulario interactivo. 안녕하세요! Familia, casa, comida.', count: '5 textos · 25 preguntas', href: '/practica/coreano/a1/lectura' },
   { id: 'gramatica', emoji: '📐', name: '문법 (Munbeop)', eng: 'Gramática', desc: 'Hangul, 이에요/예요, partículas (은/는 이/가 을/를 에/에서), presente, números, negación, pasado, -고 싶어요 y más. Con romanización.', count: '15 temas · 190+ ejercicios', href: '/practica/coreano/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: '쓰기 (Sseugi)', eng: 'Escritura', desc: '5 tareas guiadas: presentarse en coreano, familia, gustos. Acepta Hangul o romanización.', count: '5 prompts guiados', href: '/practica/coreano/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: '말하기 (Malhagi)', eng: 'Expresión oral', desc: '12 frases esenciales en coreano: Hangul + romanización + guía de pronunciación para hispanohablantes.', count: '12 frases esenciales', href: '/practica/coreano/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: '어휘 (Eohwi)', eng: 'Vocabulario', desc: '6 sets temáticos: 가족, 색깔, 음식, 요일, 신체, 숫자. Hangul + romanización + español.', count: '6 sets · 60+ palabras', href: '/practica/coreano/a1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: '듣기 (Deutgi)', eng: 'Escucha', desc: '3 ejercicios de comprensión auditiva A1. Audios de voz nativa coreana en preparación.', count: '3 audios próximamente', href: '/practica/coreano/a1/escucha' },
+  { id: 'escucha', emoji: '🎧', name: '듣기 (Deutgi)', eng: 'Escucha', desc: `20 episodios narrativos A1: «노란 우산의 주인». Guion dialogado con romanización, vocabulario, preguntas y transcripción bilingüe.${AUDIO_LISTO ? '' : ' Audio en producción.'}`, count: AUDIO_LISTO ? '20 episodios · 100 preguntas' : '20 episodios · audio en producción', href: '/practica/coreano/a1/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#534AB7', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };

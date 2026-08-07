@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'italiano',
+  'a2',
+  "20 episodi narrativi A2: «La bicicletta gialla», stagione 2. Copione dialogato, vocabolario, domande e trascrizione bilingue.",
+);
 
 export const metadata: Metadata = {
   title: 'Italiano A2 — Elige una habilidad | Idiomas WeLearn',
@@ -39,8 +46,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Escucha', eng: 'Ascolto',
-    desc: '3 dialoghi A2 completi con script. Audio in preparazione.',
-    count: '3 dialoghi prossimamente', href: '/practica/italiano/a2/escucha', available: true,
+    desc: ESCUCHA.desc,
+    count: ESCUCHA.count, href: '/practica/italiano/a2/escucha', available: true,
   },
 ];
 

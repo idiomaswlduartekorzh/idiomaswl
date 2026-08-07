@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'ruso',
+  'a2',
+  "20 episodios narrativos A2: «Тетрадь студии «Луна»», temporada 2. Guion dialogado en cirílico con transliteración, vocabulario, preguntas y transcripción bilingüe.",
+);
 
 export const metadata: Metadata = {
   title: 'Ruso A2 — Elige una habilidad | Idiomas WeLearn',
@@ -39,8 +46,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Аудирование (Audirovaniye)', eng: 'Escucha',
-    desc: '3 diálogos A2 completos con scripts en cirílico y transliteración. Audios en preparación.',
-    count: '3 аудио próximamente', href: '/practica/ruso/a2/escucha', available: true,
+    desc: ESCUCHA.desc,
+    count: ESCUCHA.count, href: '/practica/ruso/a2/escucha', available: true,
   },
 ];
 

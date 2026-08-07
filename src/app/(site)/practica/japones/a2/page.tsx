@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'japones',
+  'a2',
+  "20 episodios narrativos A2: «二十年目のスタンプ», temporada 2. Guion dialogado con romaji, vocabulario, preguntas y transcripción bilingüe.",
+);
 
 export const metadata: Metadata = {
   title: 'Japonés A2 — Elige una habilidad | Idiomas WeLearn',
@@ -39,8 +46,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: '聞く (Kiku)', eng: 'Escucha',
-    desc: '3 diálogos A2 completos con scripts en japonés y romaji. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/japones/a2/escucha', available: true,
+    desc: ESCUCHA.desc,
+    count: ESCUCHA.count, href: '/practica/japones/a2/escucha', available: true,
   },
 ];
 

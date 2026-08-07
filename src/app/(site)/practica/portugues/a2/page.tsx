@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'portugues',
+  'a2',
+  "20 episódios narrativos A2: «O muro que perdeu as cores», temporada 2. Roteiro dialogado, vocabulário, perguntas e transcrição bilíngue.",
+);
 
 export const metadata: Metadata = {
   title: 'Portugués A2 — Elige una habilidad | Idiomas WeLearn',
@@ -17,7 +24,7 @@ const HABILIDADES = [
   { id: 'escritura', emoji: '✍️', name: 'Escrita', eng: 'Escritura', desc: '5 tarefas de escrita A2 com gramática integrada, modelo e lista de verificação.', count: '5 redações guiadas', href: '/practica/portugues/a2/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expressão oral', eng: 'Expresión oral', desc: '20 expressões A2 com contexto situacional, pronúncia e variantes formais/informais.', count: '20 expressões essenciais', href: '/practica/portugues/a2/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulário', eng: 'Vocabulario', desc: '8 temas × 10 palavras. 3 modos de prática: flashcard, QCM e escrita.', count: '8 temas · 80+ palavras', href: '/practica/portugues/a2/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compreensão auditiva', eng: 'Escucha', desc: '3 diálogos A2 completos com scripts. Áudios em preparação.', count: '3 diálogos em breve', href: '/practica/portugues/a2/escucha' },
+  { id: 'escucha', emoji: '🎧', name: 'Compreensão auditiva', eng: 'Escucha', ...ESCUCHA, href: '/practica/portugues/a2/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#009c3b', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };

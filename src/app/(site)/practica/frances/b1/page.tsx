@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'frances',
+  'b1',
+  '20 épisodes narratifs B1 : « La relève », saison 3. Dialogues transcrits, vocabulaire, questions et traduction en espagnol.',
+);
 
 export const metadata: Metadata = {
   title: 'Francés B1 — Elige una habilidad | Idiomas WeLearn',
@@ -17,7 +24,7 @@ const HABILIDADES = [
   { id: 'escritura', emoji: '✍️', name: 'Écriture', eng: 'Escritura', desc: "5 tareas B1: emails formales, essais d'opinion, descriptions.", count: '5 prompts guidés', href: '/practica/frances/b1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expression orale', eng: 'Habla', desc: '20 phrases B1 pour débats, opinions et conversations formelles.', count: '20 phrases essentielles', href: '/practica/frances/b1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulaire', eng: 'Vocabulario', desc: '8 sets thématiques × 10 mots. Flashcard, QCM et écriture.', count: '8 sets · 80+ mots', href: '/practica/frances/b1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Compréhension orale', eng: 'Escucha', desc: '3 dialogues B1 avec scripts. Audios en préparation.', count: '3 dialogues bientôt', href: '/practica/frances/b1/escucha' },
+  { id: 'escucha', emoji: '🎧', name: 'Compréhension orale', eng: 'Escucha', ...ESCUCHA, href: '/practica/frances/b1/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#003189', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };

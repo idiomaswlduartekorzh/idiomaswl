@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
+
+const ESCUCHA = listeningCard(
+  'ruso',
+  'b1',
+  '20 episodios narrativos B1: «Второй голос», temporada 3. Guion dialogado en cirílico con transliteración, vocabulario, preguntas y transcripción bilingüe.',
+);
 
 export const metadata: Metadata = {
   title: 'Ruso B1 — Elige una habilidad | Idiomas WeLearn',
@@ -39,8 +46,8 @@ const HABILIDADES = [
   },
   {
     id: 'escucha', emoji: '🎧', name: 'Аудирование (Audirovaniye)', eng: 'Escucha',
-    desc: '3 diálogos B1 con scripts en cirílico + transliteración. Audios en preparación.',
-    count: '3 diálogos próximamente', href: '/practica/ruso/b1/escucha', available: true,
+    desc: ESCUCHA.desc,
+    count: ESCUCHA.count, href: '/practica/ruso/b1/escucha', available: true,
   },
 ];
 
