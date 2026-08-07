@@ -1,0 +1,76 @@
+{
+  "episodios": [
+    {
+      "idioma": "coreano",
+      "episodio": 10,
+      "id": "ko-a1-10-usan-se-gae",
+      "piloto": true,
+      "archivo": "public/audio/coreano/a1/piloto-coreano-ep10.mp3",
+      "caracteres": 167,
+      "duracion_real": 28.82,
+      "caracteres_por_segundo": 5.79,
+      "duracion_declarada_previa": 43,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "별": "dfGdOKe4Py3B2cmOtW1k",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "지호": "LKOcTG4J4tYTPR9DnLeM"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 1,
+      "id": "ko-b1-01-i-nyeon-hu",
+      "piloto": true,
+      "archivo": "public/audio/coreano/b1/piloto-coreano-ep01.mp3",
+      "caracteres": 278,
+      "duracion_real": 48.45,
+      "caracteres_por_segundo": 5.74,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 2,
+      "id": "ko-b1-02-wolsega-du-bae",
+      "piloto": true,
+      "archivo": "public/audio/coreano/b1/piloto-coreano-ep02.mp3",
+      "caracteres": 299,
+      "duracion_real": 60.48,
+      "caracteres_por_segundo": 4.94,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "지호": "LKOcTG4J4tYTPR9DnLeM"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    }
+  ]
+}

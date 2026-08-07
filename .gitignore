@@ -79,3 +79,7 @@ public/audio/portugues/a1/
 public/audio/coreano/a1/
 public/audio/japones/a1/
 public/audio/ruso/a1/
+
+# Comparativas de modelo del piloto de voces (piloto-<idioma>-epNN-<modelo>.mp3).
+# Sirven para decidir por oído y se tiran después; el audio bueno se llama listening-NN.mp3.
+public/audio/**/piloto-*.mp3

@@ -61,9 +61,37 @@ const CPS_ESTIMADO = {
   frances: 14.5,
   portugues: 14.5,
   ruso: 14.0,
-  // ko/ja: cada sílaba/carácter carga mucha más información que una letra latina.
-  coreano: 5.5,
+  // Coreano: 5,1 MEDIDO sobre los seis mp3 del piloto (2026-08-06), con los dos modelos.
+  // La estimación de partida era 5,5.
+  coreano: 5.1,
   japones: 5.0,
+}
+
+/**
+ * Créditos por carácter, MEDIDOS contra el saldo de la cuenta antes y después del piloto
+ * de coreano del 6 de agosto de 2026 (1.334 caracteres con cada modelo):
+ *
+ *   multilingual_v2  731 créditos → 0,548 por carácter
+ *   flash_v2_5       367 créditos → 0,275 por carácter
+ *
+ * Dos cosas que la documentación no dice y que el piloto sí:
+ *
+ * 1. El hangul NO se cobra a 1 crédito por carácter, sino a ~0,55. Las generaciones en
+ *    inglés de este mismo repo salen a 0,965, así que el descuento es de la escritura,
+ *    no del plan. Japonés se asume igual —misma densidad por carácter— hasta medirlo.
+ *    Cirílico y latino se presuponen a tarifa plena mientras no haya medida propia.
+ * 2. El contador de la cuenta VA CON RETRASO. Leído justo después de la tanda daba 470
+ *    créditos; minutos más tarde, 731. Cualquier medición inmediata subestima un tercio.
+ */
+const CREDITOS_POR_CARACTER = {
+  eleven_multilingual_v2: { cjk: 0.548, default: 1.0 },
+  eleven_flash_v2_5: { cjk: 0.275, default: 0.5 },
+}
+const ESCRITURA_CJK = new Set(['coreano', 'japones'])
+
+function creditosDe(lang, chars, model) {
+  const tabla = CREDITOS_POR_CARACTER[model] ?? CREDITOS_POR_CARACTER.eleven_multilingual_v2
+  return Math.ceil(chars * (ESCRITURA_CJK.has(lang) ? tabla.cjk : tabla.default))
 }
 
 const args = process.argv.slice(2)
@@ -235,6 +263,7 @@ function dryRun(casting) {
 
   let grandChars = 0
   let grandTurns = 0
+  const charsPorIdioma = new Map()
   const outOfBand = []
 
   console.log(`FACTURA PREVIA${pilotOnly ? ' — PILOTO' : ''} — no se llama a la API, no se gasta ningún crédito.\n`)
@@ -256,6 +285,7 @@ function dryRun(casting) {
       turns = picked.length
       grandChars += chars
       grandTurns += turns
+      charsPorIdioma.set(lang, (charsPorIdioma.get(lang) ?? 0) + chars)
       console.log(`${(lang + '/' + level).padEnd(14)} ${String(turns).padStart(4)} turnos  ${String(chars).padStart(6)} caracteres   voces: ${picked.map((item) => item.turn.speaker).join(', ')}`)
       continue
     }
@@ -274,14 +304,20 @@ function dryRun(casting) {
 
     grandChars += chars
     grandTurns += turns
+    charsPorIdioma.set(lang, (charsPorIdioma.get(lang) ?? 0) + chars)
     console.log(`${(lang + '/' + level).padEnd(14)} ${String(turns).padStart(4)} turnos  ${String(chars).padStart(6)} caracteres   (${cps} car/s estimados)`)
   }
 
   console.log('\n' + '─'.repeat(64))
   console.log(`TOTAL: ${grandTurns} turnos, ${grandChars.toLocaleString('es')} caracteres.`)
-  console.log(`  eleven_multilingual_v2  (1 créd/car)    → ${grandChars.toLocaleString('es')} créditos`)
-  console.log(`  eleven_flash_v2_5       (0,5 créd/car)  → ${Math.ceil(grandChars / 2).toLocaleString('es')} créditos`)
-  console.log('  La tarifa de Flash la documenta ElevenLabs como «entre 0,5 y 1»; el piloto la mide de verdad.')
+  // Tarifas medidas en el piloto: el hangul se cobra a ~0,55, no a 1. Sumar caracteres y
+  // multiplicar por uno sobrestimaba el coreano y el japonés casi al doble.
+  for (const model of ['eleven_multilingual_v2', 'eleven_flash_v2_5']) {
+    let total = 0
+    for (const [lang, chars] of charsPorIdioma) total += creditosDe(lang, chars, model)
+    console.log(`  ${model.padEnd(23)} → ${total.toLocaleString('es')} créditos`)
+  }
+  console.log('  Tarifas medidas contra el saldo el 2026-08-06; latino y cirílico aún sin medir.')
 
   const bands = Object.entries(DURATION_BANDS).map(([level, [min, max]]) => `${level.toUpperCase()} ${min}–${max}s`).join(' · ')
   if (outOfBand.length) {
@@ -333,6 +369,32 @@ async function speak({ key, text, voiceId, modelId, settings, locale, previous, 
   return Buffer.from(await response.arrayBuffer())
 }
 
+/**
+ * Sonoridad objetivo, en LUFS (norma EBU R128). Se normaliza TURNO A TURNO, no el episodio
+ * entero: el problema no es que un audio suene bajo, es que dentro del mismo diálogo unas
+ * voces suenan más que otras y el estudiante tiene que tocar el volumen a media escucha.
+ *
+ * Medido en el piloto de coreano: entre la voz más alta (Mr. K, −19,6) y la más baja
+ * (Leeho, −25,5) había 5,9 LUFS. No es cosa del sexo de la voz —la media femenina y la
+ * masculina se diferencian en 0,2— sino de que cada voz de la biblioteca viene masterizada
+ * a su aire. En el episodio 1 de B1 coincidían la protagonista, de las más bajas, con su
+ * interlocutor, el más alto, y por eso se notaba tanto.
+ *
+ * El audio ya publicado tampoco era homogéneo: inglés A1 iba de −19,5 a −22,5 y alemán A1
+ * estaba en −17. Ver scripts/normalize-listening-audio.mjs para alinear esos.
+ */
+const LUFS_OBJETIVO = -16
+const TRUE_PEAK_MAX = -1.5
+
+/** Normaliza un turno a la sonoridad objetivo. Devuelve la ruta del archivo normalizado. */
+function normalizeSegment(segment) {
+  const normalized = segment.replace(/\.mp3$/u, '-norm.mp3')
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', segment,
+    '-af', `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11`,
+    '-ar', '44100', '-c:a', 'libmp3lame', '-b:a', BITRATE, normalized])
+  return normalized
+}
+
 function concatWithSilence(segments, outputPath) {
   const listFile = path.join(path.dirname(segments[0]), 'lista.txt')
   const silence = path.join(path.dirname(segments[0]), 'silencio.mp3')
@@ -340,8 +402,10 @@ function concatWithSilence(segments, outputPath) {
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-t', String(SILENCE_SECONDS),
     '-i', 'anullsrc=r=44100:cl=mono', '-c:a', 'libmp3lame', '-b:a', BITRATE, silence])
 
+  const leveled = segments.map(normalizeSegment)
+
   const lines = []
-  segments.forEach((segment, index) => {
+  leveled.forEach((segment, index) => {
     if (index > 0) lines.push(`file '${silence}'`)
     lines.push(`file '${segment}'`)
   })
