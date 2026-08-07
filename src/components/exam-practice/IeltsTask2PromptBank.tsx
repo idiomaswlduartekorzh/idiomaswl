@@ -11,8 +11,8 @@ const typeAccent: Record<IeltsTask2Prompt['essayType'], string> = {
 
 export default function IeltsTask2PromptBank({
   prompts,
-  eyebrow = 'Banco de prompts Task 2',
-  title = '10 prompts originales para planear ensayos IELTS Task 2',
+  eyebrow = 'Task 2 prompt bank',
+  title = '10 original prompts for planning IELTS Task 2 essays',
   intro,
 }: {
   prompts: IeltsTask2Prompt[];
@@ -22,7 +22,7 @@ export default function IeltsTask2PromptBank({
 }) {
   const introText =
     intro ??
-    'este banco separa tipos de práctica para que entrenes identificación del prompt, tesis, plan, lenguaje útil y autocheck antes de escribir.';
+    'this bank separates question families so you can practise prompt recognition, thesis decisions, paragraph planning, useful language and self-review before writing.';
 
   return (
     <section style={{ marginTop: '2rem' }}>
@@ -32,7 +32,7 @@ export default function IeltsTask2PromptBank({
           {title}
         </h2>
         <p style={{ margin: 0, color: 'var(--ink-2)', lineHeight: 1.68 }}>
-          <strong>Formato oficial:</strong> IELTS Academic Writing Task 2 pide escribir un ensayo de al menos 250 palabras en respuesta a una pregunta. <strong>Estrategia WeLearn:</strong> {introText}
+          <strong>Official format:</strong> IELTS Academic Writing Task 2 requires a response of at least 250 words to the given prompt. <strong>WeLearn strategy:</strong> {introText}
         </p>
       </div>
 
@@ -51,7 +51,7 @@ export default function IeltsTask2PromptBank({
                   </h3>
                 </div>
                 <Link href={prompt.route} className="btn btn-ghost btn-sm" style={{ fontSize: '0.76rem' }}>
-                  Practicar tipo
+                  Practise this type
                 </Link>
               </div>
 
@@ -61,13 +61,13 @@ export default function IeltsTask2PromptBank({
 
               <div style={{ display: 'grid', gap: '0.65rem' }}>
                 <div style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.8rem', background: 'var(--bg-2)' }}>
-                  <strong style={{ color: 'var(--ink)', fontSize: '0.86rem' }}>Objetivo de práctica</strong>
+                  <strong style={{ color: 'var(--ink)', fontSize: '0.86rem' }}>Practice objective</strong>
                   <p style={{ margin: '0.25rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.84rem' }}>
                     {prompt.target}
                   </p>
                 </div>
                 <div style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '0.8rem', background: 'var(--bg-2)' }}>
-                  <strong style={{ color: 'var(--ink)', fontSize: '0.86rem' }}>Tesis o movimiento clave</strong>
+                  <strong style={{ color: 'var(--ink)', fontSize: '0.86rem' }}>Thesis or key move</strong>
                   <p style={{ margin: '0.25rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.84rem' }}>
                     {prompt.thesisMove}
                   </p>
@@ -75,7 +75,7 @@ export default function IeltsTask2PromptBank({
               </div>
 
               <div>
-                <strong style={{ display: 'block', color: 'var(--ink)', fontSize: '0.86rem', marginBottom: '0.35rem' }}>Plan de 4 pasos</strong>
+                <strong style={{ display: 'block', color: 'var(--ink)', fontSize: '0.86rem', marginBottom: '0.35rem' }}>Four-step plan</strong>
                 <ol style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.84rem' }}>
                   {prompt.plan.map((step) => (
                     <li key={step}>{step}</li>
@@ -84,7 +84,7 @@ export default function IeltsTask2PromptBank({
               </div>
 
               <div>
-                <strong style={{ display: 'block', color: 'var(--ink)', fontSize: '0.86rem', marginBottom: '0.35rem' }}>Lenguaje útil</strong>
+                <strong style={{ display: 'block', color: 'var(--ink)', fontSize: '0.86rem', marginBottom: '0.35rem' }}>Useful language</strong>
                 <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
                   {prompt.usefulLanguage.map((phrase) => (
                     <span key={phrase} style={{ border: `1px solid ${accent}33`, background: `${accent}10`, color: accent, borderRadius: 999, padding: '0.22rem 0.55rem', fontSize: '0.74rem', fontWeight: 800 }}>
@@ -95,7 +95,7 @@ export default function IeltsTask2PromptBank({
               </div>
 
               <div style={{ border: `1px solid ${accent}33`, background: `${accent}0d`, borderRadius: 12, padding: '0.8rem' }}>
-                <strong style={{ color: 'var(--ink)', fontSize: '0.86rem' }}>Trampa común</strong>
+                <strong style={{ color: 'var(--ink)', fontSize: '0.86rem' }}>Common trap</strong>
                 <p style={{ margin: '0.25rem 0 0', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.84rem' }}>
                   {prompt.commonTrap}
                 </p>
@@ -103,7 +103,7 @@ export default function IeltsTask2PromptBank({
 
               <details>
                 <summary style={{ cursor: 'pointer', color: accent, fontWeight: 900, fontSize: '0.86rem' }}>
-                  Checklist de revisión
+                  Review checklist
                 </summary>
                 <ul style={{ margin: '0.55rem 0 0', paddingLeft: '1.1rem', color: 'var(--muted)', lineHeight: 1.55, fontSize: '0.84rem' }}>
                   {prompt.selfCheck.map((item) => (

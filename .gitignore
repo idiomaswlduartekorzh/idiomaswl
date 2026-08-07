@@ -78,3 +78,6 @@ public/audio/italiano/**/it-a1-*-src.mp3
 # Comparativas de modelo del piloto de voces (piloto-<idioma>-epNN-<modelo>.mp3).
 # Sirven para decidir por oído y se tiran después; el audio bueno se llama listening-NN.mp3.
 public/audio/**/piloto-*.mp3
+# Artefactos de Playwright: cachés y trazas de las sesiones de prueba, no producto.
+/.playwright-cli/
+/.playwright-mcp/

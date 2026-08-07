@@ -165,7 +165,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.65,
     })),
     { url: `${BASE}/recursos/ielts-writing-task-1-introduccion-pdf`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.78 },
-    ...(['tipo-ensayo', 'introduccion', 'parrafos-cuerpo', 'linking-language', 'conclusion', 'tarea-completa', 'opinion', 'discussion', 'advantages-disadvantages', 'problem-solution', 'direct-question', 'model-answers'] as const).map((s) => ({
+    ...(['analisis-pregunta', 'tipo-ensayo', 'introduccion', 'body-1', 'body-2', 'parrafos-cuerpo', 'linking-language', 'conclusion', 'revision-final', 'tarea-completa', 'opinion', 'discussion', 'advantages-disadvantages', 'problem-solution', 'direct-question', 'model-answers'] as const).map((s) => ({
       url: `${BASE}/practica/ielts/academic/writing/task2/${s}`,
       lastModified: now,
       changeFrequency: 'monthly' as const,

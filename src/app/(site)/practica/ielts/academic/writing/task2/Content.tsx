@@ -1,235 +1,85 @@
 'use client';
 
 import Link from 'next/link';
-import Task2EssayTypeGuide from './Task2EssayTypeGuide';
-import Task2LegoGuide from './Task2LegoGuide';
+import { ArrowRight, BookOpen, Braces, CheckCircle2, FilePenLine, Layers3, Route, Search, Wrench } from 'lucide-react';
+import styles from './introduccion/page.module.css';
 
-const SKILLS = [
-  {
-    id: 'tipo-ensayo',
-    n: 1,
-    label: 'Tipo de Ensayo',
-    icon: '🔍',
-    desc: 'Identifica si el enunciado pide opinión, discusión, problema-solución, ventajas/desventajas o dos preguntas. El error más costoso del Task 2.',
-    href: '/practica/ielts/academic/writing/task2/tipo-ensayo',
-    tag: '5 tipos · práctica guiada',
-  },
-  {
-    id: 'introduccion',
-    n: 2,
-    label: 'Introducción',
-    icon: '✍️',
-    desc: 'Parafrasea el tema sin copiar + escribe tu tesis en menos de 60 palabras. El examinador evalúa esto primero.',
-    href: '/practica/ielts/academic/writing/task2/introduccion',
-    tag: 'Paraphrase + Thesis',
-  },
-  {
-    id: 'paraphrasing',
-    n: 3,
-    label: 'Paraphrasing',
-    icon: '🔁',
-    desc: 'Reescribe el tema con precisión: cambia vocabulario, estructura y enfoque sin alterar el significado.',
-    href: '/practica/ielts/academic/writing/task2/introduccion',
-    tag: 'Prompt → Topic',
-  },
-  {
-    id: 'position',
-    n: 4,
-    label: 'Tomar posición',
-    icon: '🎯',
-    desc: 'Aprende a decidir postura, balance u hoja de ruta según el tipo de pregunta.',
-    href: '/practica/ielts/academic/writing/task2/introduccion',
-    tag: 'Stance · Thesis',
-  },
-  {
-    id: 'parrafos-cuerpo',
-    n: 5,
-    label: 'Párrafos de Cuerpo',
-    icon: '🧱',
-    desc: 'Estructura TEEL: Topic sentence → Explanation → Example → Link back. Sin esto tu ensayo carece de cohesión.',
-    href: '/practica/ielts/academic/writing/task2/parrafos-cuerpo',
-    tag: 'TEEL · 3 ejercicios',
-  },
-  {
-    id: 'linking-language',
-    n: 6,
-    label: 'Linking Language',
-    icon: '🔗',
-    desc: 'Conectores por función: adición, contraste, causa-efecto, ejemplo y conclusión. Lo que sube de Band 5 a Band 7.',
-    href: '/practica/ielts/academic/writing/task2/linking-language',
-    tag: '5 categorías · Gap fill',
-  },
-  {
-    id: 'syllogism',
-    n: 7,
-    label: 'Lógica y syllogism',
-    icon: '🧠',
-    desc: 'Convierte ideas en argumentos: premisa general, caso específico y conclusión lógica.',
-    href: '/practica/ielts/academic/writing/task2/parrafos-cuerpo',
-    tag: 'Premise · Therefore',
-  },
-  {
-    id: 'conclusion',
-    n: 8,
-    label: 'Conclusión',
-    icon: '🏁',
-    desc: 'Retoma la tesis con otras palabras y resume los puntos principales. Nunca introduzcas información nueva.',
-    href: '/practica/ielts/academic/writing/task2/conclusion',
-    tag: 'Restate + Summarize',
-  },
-  {
-    id: 'critical-review',
-    n: 9,
-    label: 'Lectura crítica final',
-    icon: '🔎',
-    desc: 'Lee tu ensayo como examinador: instrucción respondida, posición consistente, conectores funcionales y errores visibles.',
-    href: '/practica/ielts/academic/writing/task2/tarea-completa',
-    tag: 'Final read',
-  },
-  {
-    id: 'tarea-completa',
-    n: 10,
-    label: 'Tarea Completa',
-    icon: '⏱️',
-    desc: 'Práctica real: 40 minutos, 250+ palabras, auto-evaluación con rúbrica Band 1–9 y respuesta modelo.',
-    href: '/practica/ielts/academic/writing/task2/tarea-completa',
-    tag: 'Full Task · 40 min',
-  },
+const BUILD_PATH = [
+  { title: 'Prompt Analysis', detail: 'Decode every instruction before planning.', href: '/practica/ielts/academic/writing/task2/analisis-pregunta', status: 'Complete lesson', icon: Search },
+  { title: 'Introduction', detail: 'Paraphrase + thesis + position or roadmap when needed.', href: '/practica/ielts/academic/writing/task2/introduccion', status: 'Complete lesson', icon: FilePenLine },
+  { title: 'Body Paragraph 1', detail: 'First controlling idea: topic sentence, development and evidence.', href: '/practica/ielts/academic/writing/task2/body-1', status: 'Complete lesson', icon: Layers3 },
+  { title: 'Body Paragraph 2', detail: 'Continue, contrast, evaluate or answer the second question.', href: '/practica/ielts/academic/writing/task2/body-2', status: 'Complete lesson', icon: Layers3 },
+  { title: 'Conclusion', detail: 'Restate the position and synthesise without adding a new idea.', href: '/practica/ielts/academic/writing/task2/conclusion', status: 'Complete lesson', icon: CheckCircle2 },
+  { title: 'Final Review', detail: 'Check the instruction, position, paragraph logic and language.', href: '/practica/ielts/academic/writing/task2/revision-final', status: 'Complete lesson', icon: Wrench },
+  { title: 'Complete Essay Practice', detail: 'Transfer every block to a timed 250+ word response.', href: '/practica/ielts/academic/writing/task2/tarea-completa', status: 'Live practice', icon: BookOpen },
 ];
 
-const ESSAY_TYPES = [
-  {
-    href: '/practica/ielts/academic/writing/task2/opinion',
-    label: 'Opinion essay',
-    desc: 'Practica agree/disagree y to what extent con tesis clara, argumentos y contraargumento controlado.',
-  },
-  {
-    href: '/practica/ielts/academic/writing/task2/discussion',
-    label: 'Discussion essay',
-    desc: 'Practica discuss both views and give your own opinion con balance, desarrollo de ambas posturas y cierre evaluativo.',
-  },
-  {
-    href: '/practica/ielts/academic/writing/task2/advantages-disadvantages',
-    label: 'Advantages and disadvantages',
-    desc: 'Practica ventajas, desventajas y preguntas outweigh con evaluación clara de qué lado pesa más.',
-  },
-  {
-    href: '/practica/ielts/academic/writing/task2/problem-solution',
-    label: 'Problem-solution essay',
-    desc: 'Practica problemas, causas y soluciones con desarrollo específico y conexión clara entre diagnóstico y medida.',
-  },
-  {
-    href: '/practica/ielts/academic/writing/task2/direct-question',
-    label: 'Direct-question essay',
-    desc: 'Practica two-part questions con respuestas visibles para cada pregunta y una estructura que no deja mitades sin contestar.',
-  },
-  {
-    href: '/practica/ielts/academic/writing/task2/model-answers',
-    label: 'Model answers explicados',
-    desc: 'Estudia modelos originales con anotaciones, comparación débil/fuerte y checklist de revisión.',
-  },
-];
+const QUESTION_TYPES = [
+  ['Opinion', 'opinion', 'Agree, disagree or evaluate an extent.'],
+  ['Discussion', 'discussion', 'Discuss both views and give your own opinion.'],
+  ['Problem–Solution', 'problem-solution', 'Analyse causes or problems and propose solutions.'],
+  ['Advantages–Disadvantages', 'advantages-disadvantages', 'Compare benefits and drawbacks, sometimes deciding which outweighs the other.'],
+  ['Direct Questions', 'direct-question', 'Answer two explicit questions completely and separately.'],
+] as const;
+
+const TOOLS = [
+  ['Paraphrasing', 'introduccion', 'Restate the prompt accurately without changing its meaning.'],
+  ['Thesis and position', 'introduccion', 'Make the controlling answer visible and consistent from the opening.'],
+  ['Topic sentences', 'body-1', 'Give each body paragraph one clear, question-aligned job.'],
+  ['Explanation and development', 'parrafos-cuerpo', 'Turn a controlling idea into a logical chain instead of a list of claims.'],
+  ['Examples and evidence', 'parrafos-cuerpo', 'Use relevant examples to clarify reasoning without inventing sources.'],
+  ['Cohesion and linking', 'linking-language', 'Connect ideas by function without mechanical connector lists.'],
+  ['Contrast and concession', 'body-2', 'Acknowledge, contrast or rebut ideas when the instruction requires it.'],
+  ['Sentence types', 'introduccion', 'Use simple, compound and complex sentences for a clear purpose.'],
+  ['Academic vocabulary', 'linking-language', 'Choose precise functional language without forcing memorised phrases.'],
+  ['Critical final review', 'revision-final', 'Check Task Response, logic, cohesion, vocabulary and grammar before finishing.'],
+] as const;
 
 export default function Task2HubPage() {
   return (
-    <section className="wl-section">
-      <div className="wrap">
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem', flexWrap: 'wrap' }}>
-            <Link href="/practica/ielts/academic/writing" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← Writing</Link>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>IELTS / Academic / Writing / Task 2</span>
+    <div lang="en" className={styles.page}>
+      <div className={styles.shell}>
+        <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica/ielts/academic/writing">Academic Writing</Link><span>/</span><span>Task 2</span></nav>
+        <header className={styles.hero}>
+          <p className={styles.eyebrow}>IELTS Academic Writing Task 2</p>
+          <h1>Build the essay. Adapt every paragraph to the question.</h1>
+          <p className={styles.heroLead}>This cluster separates the architecture of a complete essay from the skills that make each paragraph work. Follow the essay in order, study a specific question type, or strengthen one transferable writing tool.</p>
+          <div className={styles.factGrid} aria-label="Official Task 2 facts">
+            <div className={styles.fact}><strong>250+</strong><span>minimum words in the complete response</span></div>
+            <div className={styles.fact}><strong>≈40 min</strong><span>recommended time for Task 2</span></div>
+            <div className={styles.fact}><strong>2×</strong><span>the weighting of Task 2 compared with Task 1</span></div>
+            <div className={styles.fact}><strong>4 criteria</strong><span>used to assess the complete response</span></div>
           </div>
+        </header>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />IELTS Academic Writing Task 2</p>
-          <h1 style={{ fontSize: '2rem', letterSpacing: 0, margin: '0 0 0.5rem', fontWeight: 700 }}>
-            Writing Task 2
-          </h1>
-          <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 0.5rem', lineHeight: 1.6 }}>
-            Ensayo argumentativo de 250+ palabras en 40 minutos. Vale el doble que el Task 1.
-            Domina las sub-habilidades que separan Band 5 de Band 7+: leer el prompt, construir tesis,
-            desarrollar argumentos y revisar el ensayo como examinador.
-          </p>
-
-          <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            {['Opinion', 'Discussion', 'Problem-Solution', 'Advantages', 'Two-part question'].map(t => (
-              <span key={t} style={{ fontSize: '0.72rem', padding: '0.2rem 0.65rem', borderRadius: 20, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.2)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{t}</span>
-            ))}
+        <section className={styles.section} aria-labelledby="official-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Official format and WeLearn strategy</p><h2 id="official-heading">One official essay task, three practical ways to study it</h2><p>IELTS asks for a connected response to the exact prompt. The five question families and the four-paragraph default below are WeLearn study tools, not separate official tasks or a fixed paragraph rule.</p></div>
+          <div className={styles.pathGrid}>
+            <article className={styles.pathCard}><Route aria-hidden="true" /><h3>Build the essay</h3><p>Move through the response in writing order.</p><a href="#build-the-essay">Start with the architecture <ArrowRight size={16} /></a></article>
+            <article className={styles.pathCard}><Braces aria-hidden="true" /><h3>Study by question type</h3><p>See how each paragraph changes with the instruction.</p><a href="#question-types">Choose a question type <ArrowRight size={16} /></a></article>
+            <article className={styles.pathCard}><Wrench aria-hidden="true" /><h3>Strengthen transferable skills</h3><p>Practise the tools that operate inside several paragraphs.</p><a href="#transferable-skills">Choose a writing tool <ArrowRight size={16} /></a></article>
           </div>
+        </section>
 
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-              gap: '1rem',
-              marginBottom: '2rem',
-            }}
-          >
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#fff' }}>
-              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Formato oficial vs estrategia WeLearn</h2>
-              <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
-                IELTS Academic Writing Task 2 pide un ensayo de al menos 250 palabras. WeLearn separa el entrenamiento
-                en tipo de prompt, tesis, párrafos de cuerpo, linking language, conclusión y práctica completa para que
-                el formato oficial no se confunda con categorías pedagógicas.
-              </p>
-            </article>
-            <article style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: '#f8fafc' }}>
-              <h2 style={{ marginTop: 0, fontSize: '1.05rem' }}>Respuesta explicada</h2>
-              <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
-                Las rutas y el banco de prompts explican por qué una tesis responde la instrucción, cómo progresa un
-                párrafo y qué trampas aparecen cuando se ignora una parte del prompt.
-              </p>
-            </article>
+        <section id="build-the-essay" className={styles.section} aria-labelledby="build-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path A · Build the essay</p><h2 id="build-heading">The response architecture</h2><p>A strong default is four paragraphs: introduction, two developed body paragraphs and conclusion. A third body paragraph is optional only when it adds a genuinely distinct, well-developed idea.</p></div>
+          <div className={styles.sequenceGrid}>
+            {BUILD_PATH.map(({ title, detail, href, status, icon: Icon }, index) => <Link key={title} href={href} className={styles.sequenceCard}><span className={styles.sequenceNumber}>{String(index + 1).padStart(2, '0')}</span><Icon size={22} aria-hidden="true" /><h3>{title}</h3><p>{detail}</p><small>{status}</small></Link>)}
           </div>
+        </section>
 
-          <Task2EssayTypeGuide />
-          <Task2LegoGuide />
+        <section id="question-types" className={styles.section} aria-labelledby="types-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path B · Study by question type</p><h2 id="types-heading">The blocks stay stable; their jobs change</h2><p>Each lesson shows how the thesis, Body 1, Body 2 and conclusion respond to a different instruction.</p></div>
+          <div className={styles.studyGrid}>{QUESTION_TYPES.map(([title, slug, detail]) => <Link key={slug} href={`/practica/ielts/academic/writing/task2/${slug}`} className={styles.studyCard}><span>Question type</span><h3>{title}</h3><p>{detail}</p><strong>Study this structure <ArrowRight size={15} /></strong></Link>)}</div>
+        </section>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
-            {SKILLS.map(sk => (
-              <Link key={sk.id} href={sk.href} style={{ textDecoration: 'none' }}>
-                <div className="wl-card" style={{ padding: '1.25rem', height: '100%', borderTop: '3px solid #0f3d8c', cursor: 'pointer', transition: 'transform 0.15s, box-shadow 0.15s', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                    <span style={{ fontSize: '1.5rem' }}>{sk.icon}</span>
-                    <span style={{ fontSize: '0.68rem', fontFamily: 'var(--mono)', fontWeight: 800, color: '#0f3d8c', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                      Sub-habilidad {sk.n}
-                    </span>
-                  </div>
-                  <h3 style={{ margin: 0, fontWeight: 700, fontSize: '1.05rem', color: 'var(--ink)' }}>{sk.label}</h3>
-                  <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--ink-2)', lineHeight: 1.6, flex: 1 }}>{sk.desc}</p>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.25rem' }}>
-                    <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: 10, background: 'rgba(15,61,140,0.07)', color: '#0f3d8c', border: '1px solid rgba(15,61,140,0.15)', fontFamily: 'var(--mono)', fontWeight: 600 }}>{sk.tag}</span>
-                    <span style={{ fontSize: '0.82rem', color: '#0f3d8c', fontWeight: 700 }}>Practicar →</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <section id="transferable-skills" className={styles.section} aria-labelledby="tools-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path C · Strengthen transferable skills</p><h2 id="tools-heading">The tools that make the paragraphs work</h2><p>These are not extra essay paragraphs. They are reusable skills applied inside the architecture.</p></div>
+          <div className={styles.studyGrid}>{TOOLS.map(([title, slug, detail]) => <Link key={title} href={`/practica/ielts/academic/writing/task2/${slug}`} className={styles.studyCard}><span>Transferable skill</span><h3>{title}</h3><p>{detail}</p><strong>Open the lesson <ArrowRight size={15} /></strong></Link>)}</div>
+        </section>
 
-          <div style={{ marginTop: '2rem' }}>
-            <h2 style={{ fontSize: '1.2rem', letterSpacing: 0, margin: '0 0 0.75rem' }}>
-              Práctica por tipo de ensayo
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
-              {ESSAY_TYPES.map(type => (
-                <Link key={type.href} href={type.href} style={{ textDecoration: 'none' }}>
-                  <div className="wl-card" style={{ padding: '1.1rem', height: '100%', borderTop: '3px solid #0f3d8c' }}>
-                    <p style={{ margin: '0 0 0.35rem', fontSize: '0.68rem', fontFamily: 'var(--mono)', fontWeight: 800, color: '#0f3d8c', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                      Essay type
-                    </p>
-                    <h3 style={{ margin: '0 0 0.4rem', fontWeight: 700, fontSize: '1.02rem', color: 'var(--ink)' }}>
-                      {type.label}
-                    </h3>
-                    <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--ink-2)', lineHeight: 1.6 }}>
-                      {type.desc}
-                    </p>
-                    <span style={{ display: 'inline-block', marginTop: '0.75rem', fontSize: '0.82rem', color: '#0f3d8c', fontWeight: 700 }}>Practicar →</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
+        <section className={styles.section} aria-labelledby="faq-heading"><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2 id="faq-heading">Structure without a rigid formula</h2></div><div className={styles.faqGrid}><article><h3>How many paragraphs should IELTS Writing Task 2 have?</h3><p>IELTS does not prescribe a fixed paragraph count. WeLearn teaches a four-paragraph default while adapting each paragraph to the exact prompt.</p></article><article><h3>Is Body 3 required?</h3><p>No. Add it only when a distinct third idea can be developed fully without weakening the other paragraphs or time control.</p></article><article><h3>Are the five essay types official IELTS task names?</h3><p>No. They are WeLearn teaching categories for recurring instructions within the same official Task 2 essay response.</p></article><article><h3>Where should I start?</h3><p>Start with Prompt Analysis, then build the introduction. The prompt determines the job of every later paragraph.</p></article></div></section>
       </div>
-    </section>
+    </div>
   );
 }

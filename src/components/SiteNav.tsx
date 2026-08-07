@@ -17,6 +17,14 @@ const NAV_LINKS = [
   { label: 'Quiénes somos',  href: '/quienes-somos' },
 ];
 
+const IELTS_NAV_LINKS = [
+  { label: 'Home',       href: '/' },
+  { label: 'Languages',  href: '/clases-de-idiomas' },
+  { label: 'Exams',      href: '/examenes' },
+  { label: 'Practice',   href: '/practica' },
+  { label: 'About us',   href: '/quienes-somos' },
+];
+
 // En escritorio, "Idiomas" es un enlace directo al superhub: un menú que se abre al
 // pasar el cursor no existe en móvil y reparte el enlazado interno en vez de concentrarlo.
 // Este listado alimenta únicamente el acordeón del menú móvil, donde sí es el patrón correcto.
@@ -31,12 +39,23 @@ const IDIOMAS = [
   { label: 'Coreano',   native: '한국어',    href: '/clases-de-coreano' },
 ];
 
+const IELTS_IDIOMAS = [
+  { label: 'English',    native: 'English',   href: '/clases-de-ingles' },
+  { label: 'Italian',    native: 'Italiano',  href: '/clases-de-italiano' },
+  { label: 'Portuguese', native: 'Português', href: '/clases-de-portugues' },
+  { label: 'French',     native: 'Français',  href: '/clases-de-frances' },
+  { label: 'Russian',    native: 'Русский',   href: '/clases-de-ruso' },
+  { label: 'German',     native: 'Deutsch',   href: '/clases-de-aleman' },
+  { label: 'Japanese',   native: '日本語',      href: '/clases-de-japones' },
+  { label: 'Korean',     native: '한국어',       href: '/clases-de-coreano' },
+];
+
 /** Verdadero cuando la ruta actual es una landing de idioma o el hub. */
 function isIdiomasPath(pathname: string) {
   return pathname.startsWith('/clases-de-');
 }
 
-function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
+function UserMenu({ user, onSignOut, english = false }: { user: User; onSignOut: () => void; english?: boolean }) {
   const [open, setOpen] = useState(false);
   const initial = (user.email ?? 'U')[0].toUpperCase();
   const menuId = 'wl-user-menu';
@@ -46,7 +65,7 @@ function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
       <button
         className="wl-user-menu__trigger"
         onClick={() => setOpen(o => !o)}
-        aria-label="Menú de usuario"
+        aria-label={english ? 'User menu' : 'Menú de usuario'}
         aria-expanded={open}
         aria-controls={menuId}
       >
@@ -60,10 +79,10 @@ function UserMenu({ user, onSignOut }: { user: User; onSignOut: () => void }) {
             <span className="wl-user-menu__name">{user.email}</span>
           </div>
           <Link href="/dashboard" className="wl-user-menu__item" onClick={() => setOpen(false)}>
-            📊 Mi panel
+            📊 {english ? 'My dashboard' : 'Mi panel'}
           </Link>
           <button className="wl-user-menu__item wl-user-menu__item--danger" onClick={onSignOut}>
-            🚪 Cerrar sesión
+            🚪 {english ? 'Sign out' : 'Cerrar sesión'}
           </button>
         </div>
       )}
@@ -94,7 +113,7 @@ const SOCIAL_LINKS = [
   },
 ];
 
-function SocialLinks({ className }: { className?: string }) {
+function SocialLinks({ className, english = false }: { className?: string; english?: boolean }) {
   return (
     <div className={className}>
       {SOCIAL_LINKS.map(({ label, href, icon }) => (
@@ -103,7 +122,7 @@ function SocialLinks({ className }: { className?: string }) {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`WeLearn en ${label}`}
+          aria-label={`WeLearn ${english ? 'on' : 'en'} ${label}`}
           className="wl-site-nav__social-link"
         >
           {icon}
@@ -113,15 +132,17 @@ function SocialLinks({ className }: { className?: string }) {
   );
 }
 
-function ThemeToggle() {
+function ThemeToggle({ english = false }: { english?: boolean }) {
   const { resolvedTheme, toggle } = useTheme();
   const isDark = resolvedTheme === 'dark';
   return (
     <button
       onClick={toggle}
-      aria-label={isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+      aria-label={isDark
+        ? (english ? 'Switch to light mode' : 'Cambiar a modo claro')
+        : (english ? 'Switch to dark mode' : 'Cambiar a modo oscuro')}
       className="wl-theme-toggle"
-      title={isDark ? 'Modo claro' : 'Modo oscuro'}
+      title={isDark ? (english ? 'Light mode' : 'Modo claro') : (english ? 'Dark mode' : 'Modo oscuro')}
     >
       <span className="wl-theme-toggle__track">
         <span className="wl-theme-toggle__thumb" data-dark={isDark ? 'true' : 'false'}>
@@ -134,6 +155,9 @@ function ThemeToggle() {
 
 export default function SiteNav() {
   const pathname = usePathname();
+  const isIelts = pathname.startsWith('/practica/ielts');
+  const navLinks = isIelts ? IELTS_NAV_LINKS : NAV_LINKS;
+  const languageLinks = isIelts ? IELTS_IDIOMAS : IDIOMAS;
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
@@ -176,7 +200,7 @@ export default function SiteNav() {
     <header className="wl-site-nav">
       <div className="wl-site-nav__inner wrap">
         {/* Brand with logo */}
-        <Link href="/" className="wl-site-nav__brand" aria-label="Idiomas WeLearn — inicio">
+        <Link href="/" className="wl-site-nav__brand" aria-label={isIelts ? 'Idiomas WeLearn — home' : 'Idiomas WeLearn — inicio'}>
           <div className="wl-site-nav__logo-wrap">
             <Image
               src="/images/welearn-wordmark-transparent-v2.png"
@@ -190,8 +214,8 @@ export default function SiteNav() {
         </Link>
 
         {/* Desktop links */}
-        <nav className="wl-site-nav__links" aria-label="Navegación principal">
-          {NAV_LINKS.map(({ label, href }) => {
+        <nav className="wl-site-nav__links" aria-label={isIelts ? 'Main navigation' : 'Navegación principal'}>
+          {navLinks.map(({ label, href }) => {
             const active =
               href === '/' ? pathname === '/' || pathname === '/home'
               : href === '/practica' ? pathname.startsWith('/practica') || pathname.startsWith('/aprende-coreano')
@@ -212,16 +236,16 @@ export default function SiteNav() {
 
         {/* CTA / User */}
         <div className="wl-site-nav__cta">
-          <SocialLinks className="wl-site-nav__social" />
-          <ThemeToggle />
+          <SocialLinks className="wl-site-nav__social" english={isIelts} />
+          <ThemeToggle english={isIelts} />
           {loading ? (
             <span className="wl-site-nav__loading" />
           ) : user ? (
-            <UserMenu user={user} onSignOut={handleSignOut} />
+            <UserMenu user={user} onSignOut={handleSignOut} english={isIelts} />
           ) : (
             <>
-              <Link href="/login" className="btn btn-ghost btn-sm">Iniciar sesión</Link>
-              <Link href="/nivel-radar" className="btn btn-sm">Nivel Radar →</Link>
+              <Link href="/login" className="btn btn-ghost btn-sm">{isIelts ? 'Sign in' : 'Iniciar sesión'}</Link>
+              <Link href="/nivel-radar" className="btn btn-sm">{isIelts ? 'Level Radar' : 'Nivel Radar'} →</Link>
             </>
           )}
         </div>
@@ -230,7 +254,9 @@ export default function SiteNav() {
         <button
           type="button"
           className="wl-site-nav__toggle"
-          aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          aria-label={menuOpen
+            ? (isIelts ? 'Close menu' : 'Cerrar menú')
+            : (isIelts ? 'Open menu' : 'Abrir menú')}
           aria-expanded={menuOpen}
           aria-controls={mobileMenuId}
           onClick={() => setMenuOpen(o => !o)}
@@ -241,8 +267,8 @@ export default function SiteNav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <nav id={mobileMenuId} className="wl-site-nav__mobile" aria-label="Navegación móvil">
-          {NAV_LINKS.map(({ label, href }) => (
+        <nav id={mobileMenuId} className="wl-site-nav__mobile" aria-label={isIelts ? 'Mobile navigation' : 'Navegación móvil'}>
+          {navLinks.map(({ label, href }) => (
             <div key={href}>
               <Link href={href} className="wl-site-nav__mobile-link" onClick={() => setMenuOpen(false)}>
                 {label}
@@ -250,7 +276,7 @@ export default function SiteNav() {
               {href === '/clases-de-idiomas' && (
                 <>
                   <div className="wl-site-nav__mobile-sub">
-                    {IDIOMAS.map(idioma => (
+                    {languageLinks.map(idioma => (
                       <Link
                         key={idioma.href}
                         href={idioma.href}
@@ -265,17 +291,17 @@ export default function SiteNav() {
               )}
             </div>
           ))}
-          <SocialLinks className="wl-site-nav__social wl-site-nav__social--mobile" />
+          <SocialLinks className="wl-site-nav__social wl-site-nav__social--mobile" english={isIelts} />
           <div style={{ display: 'flex', gap: 8, padding: '1rem 0 0' }}>
             {user ? (
               <>
-                <Link href="/dashboard" className="btn btn-sm" onClick={() => setMenuOpen(false)}>Mi panel</Link>
-                <button className="btn btn-ghost btn-sm" onClick={handleSignOut}>Salir</button>
+                <Link href="/dashboard" className="btn btn-sm" onClick={() => setMenuOpen(false)}>{isIelts ? 'My dashboard' : 'Mi panel'}</Link>
+                <button className="btn btn-ghost btn-sm" onClick={handleSignOut}>{isIelts ? 'Sign out' : 'Salir'}</button>
               </>
             ) : (
               <>
-                <Link href="/login" className="btn btn-ghost btn-sm" onClick={() => setMenuOpen(false)}>Iniciar sesión</Link>
-                <Link href="/nivel-radar" className="btn btn-sm" onClick={() => setMenuOpen(false)}>Nivel Radar →</Link>
+                <Link href="/login" className="btn btn-ghost btn-sm" onClick={() => setMenuOpen(false)}>{isIelts ? 'Sign in' : 'Iniciar sesión'}</Link>
+                <Link href="/nivel-radar" className="btn btn-sm" onClick={() => setMenuOpen(false)}>{isIelts ? 'Level Radar' : 'Nivel Radar'} →</Link>
               </>
             )}
           </div>

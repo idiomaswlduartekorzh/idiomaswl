@@ -8,25 +8,24 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2'
 
 const FAQS = [
   {
-    question: '¿Qué pide IELTS Academic Writing Task 2?',
-    answer:
-      'Pide escribir un ensayo de al menos 250 palabras en respuesta a un punto de vista, argumento o problema. La respuesta debe desarrollar una posición clara con ideas organizadas.',
+    question: 'How many paragraphs should IELTS Writing Task 2 have?',
+    answer: 'IELTS does not prescribe a fixed paragraph count. WeLearn teaches a four-paragraph default while adapting each paragraph to the exact prompt.',
   },
   {
-    question: '¿Los tipos de ensayo son categorías oficiales?',
-    answer:
-      'No son nombres oficiales de tareas separadas. WeLearn los usa como categorías pedagógicas para practicar instrucciones frecuentes como opinion, discussion, advantages/disadvantages, problem-solution y direct question.',
+    question: 'Are the five essay types official IELTS task names?',
+    answer: 'No. They are WeLearn teaching categories for recurring instructions within the same official Task 2 essay response.',
   },
 ]
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic Writing Task 2 — Ensayo argumentativo Band 7',
-  description: 'Practica el IELTS Writing Task 2: tipos de ensayo, introducción, párrafos cuerpo, linking language, conclusión y tarea completa. Estrategias pedagógicas Band 7+.',
-  keywords: ['IELTS writing task 2', 'IELTS task 2 ejercicios', 'IELTS ensayo argumentativo', 'IELTS task 2 band 7', 'IELTS opinion essay', 'IELTS linking words'],
+  title: 'IELTS Writing Task 2: Structure, Question Types and Practice',
+  description: 'Build IELTS Writing Task 2 step by step: prompt analysis, introduction, body paragraphs, conclusion, final review, question types and timed practice.',
+  keywords: ['IELTS Writing Task 2', 'IELTS Task 2 structure', 'IELTS Task 2 question types', 'IELTS essay practice', 'IELTS Task 2 body paragraphs'],
+  robots: { index: true, follow: true },
   openGraph: {
     title: 'IELTS Writing Task 2',
-    description: 'Ejercicios progresivos de IELTS Writing Task 2: ensayo argumentativo paso a paso.',
-    type: 'website', locale: 'es_CO',
+    description: 'Build the complete IELTS Writing Task 2 essay through question-aware lessons and progressive practice.',
+    type: 'website', locale: 'en_US',
   },
   alternates: { canonical: URL },
 }
@@ -37,7 +36,7 @@ export default function Page() {
       <LearningResourceJsonLd
         name="IELTS Academic Writing Task 2"
         url={URL}
-        description="Hub de práctica para IELTS Academic Writing Task 2 con habilidades de ensayo, tipos de prompt y banco original."
+        description="English-first IELTS Academic Writing Task 2 hub with response architecture, question types, transferable skills and original practice."
         teaches={[
           'IELTS Academic Writing Task 2',
           'essay planning',
@@ -54,7 +53,7 @@ export default function Page() {
       <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 2', url: URL },
