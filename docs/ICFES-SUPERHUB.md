@@ -1,6 +1,6 @@
 # Superhub de Inglés ICFES Saber 11
 
-Última revisión editorial y técnica: 3 de agosto de 2026.
+Última revisión editorial y técnica: 4 de agosto de 2026.
 
 ## Alcance construido
 
@@ -57,10 +57,12 @@ Los cuadernillos históricos del banco conservan el número de preguntas de la m
 ## Banco y estados editoriales
 
 - `src/data/icfes/questions.ts`: preguntas propias tipo ICFES, con habilidad, subhabilidad, fuente, estado, fecha de revisión, evidencia, explicación y distractores.
-- `src/data/icfes/guided-workbooks.ts`: adaptación pedagógica del cuadernillo 2023. Sus 25 preguntas tienen explicación editorial completa.
+- `src/data/icfes/guided-registry.ts`: fuente única y ligera para los 23 mocks y las cinco muestras históricas habilitadas en modo guiado.
+- `src/data/icfes/guided-workbooks.ts`: adaptación pedagógica de cinco muestras históricas Saber 11. Sus 145 preguntas tienen explicación, evidencia y razones por alternativa.
+- `src/data/icfes/guided-mocks.ts`: adaptación de los 23 mocks propios abreviados; comparte las mismas 1.035 preguntas con el modo examen.
 - `src/data/mocks/icfes-simulacros.ts`: preguntas de cuadernillos divulgados y rangos explícitos por parte; nunca se infiere la parte solo por posición.
 
-El cuadernillo `icfes-2023-g11` tiene modo guiado completo. Los demás conservan modo examen, clave y corrección final, y muestran honestamente que su explicación guiada aún no está publicada.
+Tienen modo guiado completo `icfes-2023-g11`, `icfes-2022-g11`, `icfes-2019-ex1`, `icfes-2021-ex1` e `icfes-2012`. `icfes-2021-ex2` e `icfes-2016` conservan modo examen, pero no ofrecen guiado porque al banco digital le faltan seis estímulos de avisos en total; el sistema no los inventa desde la clave.
 
 Para ampliar un cuadernillo guiado:
 
@@ -69,7 +71,7 @@ Para ampliar un cuadernillo guiado:
 3. Crear para cada pregunta evidencia, explicación, estrategia, microlección y una justificación específica por opción.
 4. Marcar `reviewedAt` y `editorialStatus` solo después de revisión humana.
 5. Incorporar el id a `GUIDED_WORKBOOK_IDS` únicamente cuando todas las preguntas estén completas.
-6. Añadir la URL canónica al sitemap y verificarla en navegador.
+6. Verificar que el registro la incorpore automáticamente al sitemap y comprobar canonical y ruta en navegador.
 
 ## Progreso y persistencia
 
@@ -119,6 +121,9 @@ El sistema visual usa colores de parte dentro del azul WeLearn, estados de foco,
 npx tsc --noEmit
 npm run lint -- <archivos modificados>
 npm run test:icfes
+npm run audit:icfes-inventory
+npm run audit:icfes-seo-product
+npm run audit:icfes-100-users:runtime
 npm run check:practica-catalog
 npm run check:reading-content
 npm run audit:writing-curriculum

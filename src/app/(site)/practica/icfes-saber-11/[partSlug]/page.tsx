@@ -12,7 +12,7 @@ import IcfesStructuredLesson from '../_components/IcfesStructuredLesson';
 import styles from '../icfes-learning.module.css';
 
 const BASE = 'https://www.idiomaswl.com';
-const REVIEWED_AT = '3 de agosto de 2026';
+const REVIEWED_AT = '4 de agosto de 2026';
 
 interface Props {
   params: Promise<{ partSlug: string }>;

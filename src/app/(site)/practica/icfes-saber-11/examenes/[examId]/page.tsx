@@ -13,10 +13,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const sim = getSimulacro(examId);
   if (!sim) return {};
   const canonical = `https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${sim.id}`;
+  const audience = sim.assessment === 'saber-tyt' ? 'Saber TyT' : `Grado ${sim.grade}`;
   return {
     title: `${sim.title} — Simulacro ICFES Inglés`,
-    description: `Practica con el cuadernillo divulgado por el ICFES ${sim.year} Grado ${sim.grade}. ${sim.totalQuestions} preguntas, tiempo sugerido y corrección automática.`,
+    description: `Practica con el cuadernillo divulgado por el ICFES ${sim.year} para ${audience}. ${sim.totalQuestions} preguntas, tiempo sugerido y corrección automática.`,
     alternates: { canonical },
+    robots: sim.assessment === 'saber-11' ? undefined : { index: false, follow: true },
     openGraph: {
       title: `${sim.title} — Simulacro ICFES Inglés`,
       description: `${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES, con corrección automática.`,

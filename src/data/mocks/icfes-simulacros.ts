@@ -1,9 +1,10 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// ICFES Saber 11 — Simulacros oficiales (exámenes reales ICFES)
+// ICFES Saber 11 — Cuadernillos divulgados por el ICFES
 // Fuente: Cuadernillos de preguntas publicados por ICFES Colombia
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type QType = 'vocab' | 'notice' | 'dialog' | 'gap' | 'reading';
+export type IcfesAssessment = 'saber-11' | 'saber-10' | 'saber-9' | 'saber-tyt';
 
 export interface SimulacroQuestion {
   n: number;
@@ -24,8 +25,9 @@ export interface SimulacroPassage {
 
 export interface Simulacro {
   id: string;
+  assessment: IcfesAssessment;
   year: number;
-  grade: 9 | 10 | 11;
+  grade: 9 | 10 | 11 | null;
   title: string;
   source: string;
   timeMinutes: number;
@@ -41,6 +43,7 @@ export interface Simulacro {
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2023: Simulacro = {
   id: 'icfes-2023-g11',
+  assessment: 'saber-11',
   year: 2023,
   grade: 11,
   title: 'Cuadernillo Oficial 2023 — Grado 11',
@@ -195,6 +198,7 @@ Tomatoes are used in many food products as pasta and pizza. According to a surve
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2022: Simulacro = {
   id: 'icfes-2022-g11',
+  assessment: 'saber-11',
   year: 2022,
   grade: 11,
   title: 'Cuadernillo Oficial 2022 — Grado 11',
@@ -341,6 +345,7 @@ Tomatoes are used in many food products as pasta and pizza. According to a surve
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2019ex1: Simulacro = {
   id: 'icfes-2019-ex1',
+  assessment: 'saber-11',
   year: 2019,
   grade: 11,
   title: 'Cuadernillo Oficial 2019 — Examen 1',
@@ -495,6 +500,7 @@ It certainly feels great to find new excellent food delivery companies for whene
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2021ex1: Simulacro = {
   id: 'icfes-2021-ex1',
+  assessment: 'saber-11',
   year: 2021,
   grade: 11,
   title: 'Cuadernillo Oficial 2021 — Grado 11 · Examen 1',
@@ -645,6 +651,7 @@ I decided to post an excellent review about this restaurant on all the major tra
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2021ex2: Simulacro = {
   id: 'icfes-2021-ex2',
+  assessment: 'saber-11',
   year: 2021,
   grade: 11,
   title: 'Cuadernillo Oficial 2021 — Grado 11 · Examen 2',
@@ -794,6 +801,7 @@ Come and discover why Colombia is one of the most exciting travel destinations i
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2016: Simulacro = {
   id: 'icfes-2016',
+  assessment: 'saber-11',
   year: 2016,
   grade: 11,
   title: 'Cuadernillo Oficial 2016 — Grado 11',
@@ -943,6 +951,7 @@ Come and discover why Colombia is one of the most exciting travel destinations i
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2012: Simulacro = {
   id: 'icfes-2012',
+  assessment: 'saber-11',
   year: 2012,
   grade: 11,
   title: 'Cuadernillo Oficial 2012 — Grado 11 · 45 preguntas',
@@ -1160,6 +1169,7 @@ I am very grateful for the amazing experience my company gave me. I will tell ev
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2022g10: Simulacro = {
   id: 'icfes-2022-g10',
+  assessment: 'saber-10',
   year: 2022,
   grade: 10,
   title: 'Cuadernillo Oficial 2022 — Grado 10 · 22 preguntas',
@@ -1286,6 +1296,7 @@ There are several places where you can spend a few days, a week, or longer givin
 // ─────────────────────────────────────────────────────────────────────────────
 const exam2022g9: Simulacro = {
   id: 'icfes-2022-g9',
+  assessment: 'saber-9',
   year: 2022,
   grade: 9,
   title: 'Cuadernillo Oficial 2022 — Grado 9 · 22 preguntas',
@@ -1404,8 +1415,9 @@ Almost eight centuries later, Europeans began to make [21] own paper. At that ti
 // ─────────────────────────────────────────────────────────────────────────────
 const examTyT: Simulacro = {
   id: 'icfes-tyt',
+  assessment: 'saber-tyt',
   year: 2018,
-  grade: 11,
+  grade: null,
   title: 'Cuadernillo Oficial Saber TyT · Módulo Inglés',
   source: 'ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés.',
   timeMinutes: 60,

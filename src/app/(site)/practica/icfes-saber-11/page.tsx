@@ -28,7 +28,7 @@ const jsonLd = {
       description: 'Guías y práctica interactiva para las siete partes del componente de Inglés Saber 11.',
       url: CANONICAL,
       inLanguage: 'es',
-      dateModified: '2026-08-03',
+      dateModified: '2026-08-04',
       hasPart: ICFES_PARTS.map((part) => ({ '@type': 'LearningResource', name: part.title, url: `${CANONICAL}/${part.slug}` })),
     },
     {
@@ -124,7 +124,7 @@ export default function Page() {
         <section className={styles.hubSource}>
           <div><strong>Fuente oficial de estructura</strong><p><a href="https://www.icfes.gov.co/wp-content/uploads/2026/03/17-marzo-guia-de-orientacion-saber-11-2026-2.pdf" target="_blank" rel="noreferrer">Guía de orientación Saber 11 2026-2</a>, Instituto Colombiano para la Evaluación de la Educación (ICFES).</p></div>
           <div><strong>Criterio editorial</strong><p>Las preguntas propias se identifican como práctica. Los cuadernillos divulgados conservan su fuente y no se confunden con la aplicación estándar completa.</p></div>
-          <div><strong>Última revisión</strong><p>3 de agosto de 2026</p></div>
+          <div><strong>Última revisión</strong><p>4 de agosto de 2026</p></div>
         </section>
         <div className={styles.hubPlanCta}><div><span>¿Ya sabes cuándo presentas?</span><strong>Convierte el tiempo disponible en una ruta semanal.</strong></div><div className={styles.hubActions}><Link href="/practica/icfes-saber-11/pregunta-del-dia" className={styles.secondaryButton}>Pregunta del día</Link><Link href="/practica/icfes-saber-11/plan-de-estudio" className={styles.primaryButton}>Crear plan</Link></div></div>
       </div>

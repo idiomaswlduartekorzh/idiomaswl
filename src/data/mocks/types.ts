@@ -202,11 +202,11 @@ export interface MockSection {
   // ── Section layout variants ──────────────────────────────────────────────
   sectionStyle?: 'matching-grid' | 'notices-grid' | 'dialogs-grid' | 'cloze-text' | 'reading';
   passageTitle?: string;  // shown as heading above the reading passage
-  // matching-grid (ICFES Part 2)
+  // matching-grid (ICFES Part 1)
   topic?: string;          // category title shown bold-centered, e.g. "Health"
   exampleText?: string;    // example question text
   exampleAnswer?: string;  // matching-grid: H word; notices-grid: answer letter ('A'/'B'/'C')
-  // notices-grid (ICFES Part 1)
+  // notices-grid (ICFES Part 2)
   exampleStimulus?: string;  // notice/sign text shown in the example row
   // dialogs-grid (ICFES Part 3)
   exampleOptions?: string[]; // A/B/C options shown in the example scene

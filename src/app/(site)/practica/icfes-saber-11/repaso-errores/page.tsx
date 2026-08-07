@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getGuidedWorkbookQuestions } from '@/data/icfes/guided-workbooks';
-import { ICFES_PRACTICE_QUESTIONS } from '@/data/icfes/questions';
+import { getGuidedWorkbookQuestions, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-workbooks';
+import { GUIDED_SIMULACRO_2026_QUESTIONS } from '@/data/icfes/guided-simulacro-2026';
+import { getGuidedMockQuestions, GUIDED_MOCK_IDS } from '@/data/icfes/guided-mocks';
 import ErrorReviewClient from './ErrorReviewClient';
 import styles from '../icfes-learning.module.css';
 
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function ErrorReviewPage() {
-  const questions = [...ICFES_PRACTICE_QUESTIONS, ...getGuidedWorkbookQuestions('icfes-2023-g11')];
+  const questions = [...GUIDED_SIMULACRO_2026_QUESTIONS, ...GUIDED_MOCK_IDS.flatMap(getGuidedMockQuestions), ...GUIDED_WORKBOOK_IDS.flatMap(getGuidedWorkbookQuestions)];
   return (
     <main className={styles.learningPage} style={{ '--part-color': '#DC2626', '--part-soft': '#FEF2F2' } as React.CSSProperties}>
       <div className={styles.pageWrap}>

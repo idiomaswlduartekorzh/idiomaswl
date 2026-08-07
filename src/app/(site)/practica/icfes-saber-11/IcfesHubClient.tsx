@@ -141,7 +141,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
               <ArrowLeft size={16} /> Volver a herramientas
             </button>
             <Link href="/practica/icfes-saber-11/examenes" className="btn btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: ICFES_COLOR, borderColor: ICFES_COLOR, color: '#fff' }}>
-              <ClipboardList size={16} /> Simulacros oficiales
+              <ClipboardList size={16} /> Cuadernillos divulgados
             </Link>
           </div>
           <div className="wl-card" style={{ padding: 0, overflow: 'hidden', borderRadius: 20 }}>
@@ -203,11 +203,14 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
 
         <div style={{ padding: '0.75rem 1rem', borderRadius: 12, background: 'rgba(220,38,38,0.06)', border: '1px solid rgba(220,38,38,0.16)', marginBottom: '1.4rem', display: 'flex', justifyContent: 'space-between', gap: '0.8rem', alignItems: 'center', flexWrap: 'wrap' }}>
           <span style={{ color: 'var(--muted)', fontSize: '0.86rem' }}>
-            También puedes practicar con cuadernillos oficiales ICFES disponibles en la plataforma.
+            ¿Quieres el recorrido completo? Entrena las 7 partes con 55 preguntas y explicación inmediata.
           </span>
-          <Link href="/practica/icfes-saber-11/examenes" style={{ color: ICFES_COLOR, fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 800, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
-            Ver simulacros <ArrowRight size={14} />
-          </Link>
+          <div style={{ display: 'flex', gap: '.8rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <Link href="/practica/icfes-saber-11/simulacro-guiado" style={{ color: ICFES_COLOR, fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 800, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+              Abrir simulacro guiado <ArrowRight size={14} />
+            </Link>
+            <Link href="/practica/icfes-saber-11/examenes" style={{ color: SMART_COLOR, fontSize: '0.78rem', fontFamily: 'var(--mono)', fontWeight: 750, textDecoration: 'none' }}>Ver cuadernillos divulgados</Link>
+          </div>
         </div>
 
         <div className="wl-exams-catalog" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))' }}>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type KeyboardEvent } from 'react';
 import { PART_ONE_EXAMPLE_GROUPS } from '@/data/icfes/part-one-lesson';
 import styles from '../icfes-learning.module.css';
 
@@ -15,6 +15,24 @@ export default function IcfesPartOneExamples() {
     setExampleIndex(0);
   }
 
+  function moveGroup(event: KeyboardEvent<HTMLButtonElement>, currentIndex: number) {
+    const direction = event.key === 'ArrowRight' || event.key === 'ArrowDown'
+      ? 1
+      : event.key === 'ArrowLeft' || event.key === 'ArrowUp'
+        ? -1
+        : 0;
+    if (!direction && event.key !== 'Home' && event.key !== 'End') return;
+    event.preventDefault();
+    const nextIndex = event.key === 'Home'
+      ? 0
+      : event.key === 'End'
+        ? PART_ONE_EXAMPLE_GROUPS.length - 1
+        : (currentIndex + direction + PART_ONE_EXAMPLE_GROUPS.length) % PART_ONE_EXAMPLE_GROUPS.length;
+    const nextGroup = PART_ONE_EXAMPLE_GROUPS[nextIndex];
+    chooseGroup(nextGroup.id);
+    document.getElementById(`part-one-tab-${nextGroup.id}`)?.focus();
+  }
+
   return (
     <section className={styles.partOneExamples} aria-labelledby="part-one-examples-title">
       <div className={styles.lessonSectionHeading}>
@@ -24,14 +42,17 @@ export default function IcfesPartOneExamples() {
       </div>
 
       <div className={styles.exampleTabs} role="tablist" aria-label="Categorías de vocabulario">
-        {PART_ONE_EXAMPLE_GROUPS.map((item) => (
+        {PART_ONE_EXAMPLE_GROUPS.map((item, index) => (
           <button
             key={item.id}
             type="button"
             role="tab"
+            id={`part-one-tab-${item.id}`}
             aria-selected={item.id === group.id}
             aria-controls="part-one-example-panel"
+            tabIndex={item.id === group.id ? 0 : -1}
             onClick={() => chooseGroup(item.id)}
+            onKeyDown={(event) => moveGroup(event, index)}
           >
             <span aria-hidden="true">{item.icon}</span>
             <strong>{item.label}</strong>
@@ -40,7 +61,7 @@ export default function IcfesPartOneExamples() {
         ))}
       </div>
 
-      <div id="part-one-example-panel" role="tabpanel" className={styles.examplePanel}>
+      <div id="part-one-example-panel" role="tabpanel" aria-labelledby={`part-one-tab-${group.id}`} className={styles.examplePanel}>
         <div className={styles.examplePicker} aria-label={`Ejemplos de ${group.label}`}>
           <div>
             <p className={styles.kicker}>{group.label}</p>

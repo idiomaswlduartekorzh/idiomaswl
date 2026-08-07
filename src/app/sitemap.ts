@@ -5,6 +5,7 @@ import { EXAM_PRACTICE_ROUTES } from '@/data/practica-exams/seo-catalog';
 import { publishedReadingExercises } from '@/lib/reading/catalog';
 import { readingExercisePath } from '@/lib/reading/routes';
 import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
+import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -134,6 +135,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/practica/icfes-saber-11`,                                  lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
     { url: `${BASE}/practica/icfes-saber-11/diagnostico`,                      lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/plan-de-estudio`,                  lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8  },
+    { url: `${BASE}/practica/icfes-saber-11/simulacro-guiado`,                 lastModified: now, changeFrequency: 'monthly' as const, priority: 0.84 },
+    ...GUIDED_MOCK_IDS.map((mockId) => ({ url: `${BASE}/examenes/icfes/practica/${mockId}/guiado`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.76 })),
     { url: `${BASE}/practica/icfes-saber-11/pregunta-del-dia`,                 lastModified: now, changeFrequency: 'daily'   as const, priority: 0.78 },
     ...(['parte-1', 'parte-2', 'parte-3', 'parte-4', 'parte-5', 'parte-6', 'parte-7'] as const).map((part) => ({
       url: `${BASE}/practica/icfes-saber-11/${part}`,
@@ -142,8 +145,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
     { url: `${BASE}/practica/icfes-saber-11/examenes`,                         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    ...SIMULACROS.map((exam) => ({ url: `${BASE}/practica/icfes-saber-11/examenes/${exam.id}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.72 })),
-    { url: `${BASE}/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado`,    lastModified: now, changeFrequency: 'monthly' as const, priority: 0.78 },
+    ...SIMULACROS.filter((exam) => exam.assessment === 'saber-11').map((exam) => ({ url: `${BASE}/practica/icfes-saber-11/examenes/${exam.id}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.72 })),
+    ...GUIDED_WORKBOOK_IDS.map((examId) => ({ url: `${BASE}/practica/icfes-saber-11/examenes/${examId}/guiado`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.78 })),
     { url: `${BASE}/practica/icfes-saber-11/vocabulario`,                      lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/gramatica-conjunciones`,           lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/sinonimos-inferencia`,             lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },

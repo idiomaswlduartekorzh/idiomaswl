@@ -1,0 +1,181 @@
+{
+  "generatedAt": "2026-08-04T04:24:26.327Z",
+  "verdict": "approved",
+  "scope": {
+    "guidedMocks": 23,
+    "guidedWorkbooks": 5,
+    "excludedWorkbooks": 2,
+    "checks": 21
+  },
+  "findings": [],
+  "checks": [
+    {
+      "id": "guided-mock-registry",
+      "title": "Los 23 mocks guiados tienen una fuente única",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "23/23 IDs únicos",
+      "remediation": "Corregir guided-registry.ts antes de exponer rutas."
+    },
+    {
+      "id": "guided-workbook-registry",
+      "title": "Cinco muestras guiadas y dos exclusiones documentadas",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "5 guiadas · 2 exclusiones",
+      "remediation": "No publicar guiado sin estímulo completo."
+    },
+    {
+      "id": "sitemap-guided-mocks",
+      "title": "El sitemap deriva todos los mocks del registro",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Mapeo dinámico desde GUIDED_MOCK_IDS",
+      "remediation": "Eliminar listas manuales parciales."
+    },
+    {
+      "id": "sitemap-guided-workbooks",
+      "title": "El sitemap deriva las cinco muestras guiadas",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Mapeo dinámico desde GUIDED_WORKBOOK_IDS",
+      "remediation": "Añadir las rutas guiadas aprobadas."
+    },
+    {
+      "id": "sitemap-saber11-boundary",
+      "title": "El sitemap Saber 11 excluye otras evaluaciones",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Filtro explícito assessment=saber-11",
+      "remediation": "No mezclar Saber 9, Saber 10 o TyT en esta arquitectura."
+    },
+    {
+      "id": "related-noindex",
+      "title": "Los materiales complementarios no compiten como páginas Saber 11",
+      "pass": true,
+      "severity": "high",
+      "evidence": "noindex,follow condicional",
+      "remediation": "Mantener acceso y enlaces sin indexación engañosa."
+    },
+    {
+      "id": "canonical-hub-parts",
+      "title": "Hub y partes declaran URL canónica",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Canonicals propios en hub y siete páginas dinámicas",
+      "remediation": "Añadir canonical absoluto."
+    },
+    {
+      "id": "canonical-guided",
+      "title": "Ambas familias guiadas declaran canonical propio",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Canonical en mocks y muestras guiadas",
+      "remediation": "Evitar que el modo guiado compita con modo examen."
+    },
+    {
+      "id": "private-tools-noindex",
+      "title": "Progreso y repaso personal no se indexan",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Dos herramientas personales con noindex,follow",
+      "remediation": "Excluir páginas dependientes de estado personal."
+    },
+    {
+      "id": "legacy-redirect",
+      "title": "La antigua ruta /practica/icfes consolida autoridad",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Redirección permanente al hub",
+      "remediation": "Evitar una landing duplicada."
+    },
+    {
+      "id": "structured-data",
+      "title": "Hub y experiencias publican datos estructurados pertinentes",
+      "pass": true,
+      "severity": "medium",
+      "evidence": "CollectionPage + BreadcrumbList + Quiz",
+      "remediation": "Mantener schema alineado con contenido visible."
+    },
+    {
+      "id": "metadata-truth",
+      "title": "La portada de cuadernillos comunica alcance real",
+      "pass": true,
+      "severity": "high",
+      "evidence": "145 explicaciones en cinco muestras",
+      "remediation": "Actualizar snippets cuando cambie el inventario."
+    },
+    {
+      "id": "catalogue-cta-parity",
+      "title": "Catálogos y modo examen consultan el registro único",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Tres consumidores usan el registro ligero",
+      "remediation": "No volver a listas locales de tres IDs."
+    },
+    {
+      "id": "client-payload-boundary",
+      "title": "Los catálogos no importan bancos editoriales pesados",
+      "pass": true,
+      "severity": "medium",
+      "evidence": "Decisiones CTA sin cargar bancos completos",
+      "remediation": "Importar solo guided-registry.ts."
+    },
+    {
+      "id": "part-one-keyboard",
+      "title": "La demostración de Parte 1 funciona con teclado",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Flechas/Home/End, roving tabindex y panel etiquetado",
+      "remediation": "Implementar el patrón ARIA tabs completo."
+    },
+    {
+      "id": "focus-visible",
+      "title": "Los controles muestran foco visible",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Anillo de foco en motor y hub",
+      "remediation": "No depender solo de hover."
+    },
+    {
+      "id": "reduced-motion",
+      "title": "Las animaciones respetan movimiento reducido",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Reglas para páginas didácticas y hub",
+      "remediation": "Desactivar animaciones no esenciales."
+    },
+    {
+      "id": "safe-animation",
+      "title": "La órbita anima solo transform",
+      "pass": true,
+      "severity": "medium",
+      "evidence": "Animación compositor-friendly",
+      "remediation": "No animar bordes o layout."
+    },
+    {
+      "id": "touch-actions",
+      "title": "Controles táctiles evitan demora de interacción",
+      "pass": true,
+      "severity": "medium",
+      "evidence": "Aplicado a botones y enlaces ICFES",
+      "remediation": "Añadir touch-action a controles interactivos."
+    },
+    {
+      "id": "seven-parts-linked",
+      "title": "El hub enlaza las siete partes desde datos",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Mapa y tarjetas derivados de ICFES_PARTS",
+      "remediation": "No mantener una lista manual incompleta."
+    },
+    {
+      "id": "review-date",
+      "title": "La revisión pública está fechada",
+      "pass": true,
+      "severity": "medium",
+      "evidence": "4 de agosto de 2026",
+      "remediation": "Actualizar solo al completar una revisión real."
+    }
+  ]
+}

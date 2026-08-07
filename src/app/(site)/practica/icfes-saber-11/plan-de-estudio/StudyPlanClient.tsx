@@ -23,6 +23,15 @@ export default function StudyPlanClient() {
       secondary,
       days: minutes === 20 ? 4 : minutes === 40 ? 5 : 6,
       mission: reviewWeek ? 'Repaso de errores + bloque de cuadernillo' : `${primary.shortTitle} + ${secondary.shortTitle}`,
+      actions: reviewWeek
+        ? [
+            { href: '/practica/icfes-saber-11/repaso-errores', label: 'Repasar errores' },
+            { href: '/practica/icfes-saber-11/examenes', label: 'Abrir cuadernillo' },
+          ]
+        : [
+            { href: `/practica/icfes-saber-11/${primary.slug}`, label: `Parte ${primary.part}` },
+            { href: `/practica/icfes-saber-11/${secondary.slug}`, label: `Parte ${secondary.part}` },
+          ],
     };
   }), [minutes, weeks]);
 
@@ -54,7 +63,7 @@ export default function StudyPlanClient() {
             {schedule.map((item) => (
               <article key={item.week} style={{ '--plan-color': item.primary.color } as React.CSSProperties}>
                 <span>Semana {item.week}</span><strong>{item.mission}</strong><p>{item.days} días: estrategia, práctica guiada, vocabulario y una sesión de repaso.</p>
-                <div><Link href={`/practica/icfes-saber-11/${item.primary.slug}`}>Parte {item.primary.part}</Link><Link href={`/practica/icfes-saber-11/${item.secondary.slug}`}>Parte {item.secondary.part}</Link></div>
+                <div>{item.actions.map(action => <Link key={action.href} href={action.href}>{action.label}</Link>)}</div>
               </article>
             ))}
           </div>

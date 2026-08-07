@@ -149,11 +149,21 @@ export default function IcfesPartPracticeEngine({
   const { correctCount, totalSeconds, accuracy, averageSeconds, overTargetCount } = calculatePracticeResult(answers, targetSecondsByQuestion);
 
   const recommendation = useMemo(() => {
-    if (context === 'guided-simulator') return { label: 'Repasar mis errores', href: '/practica/icfes-saber-11/repaso-errores' };
+    if (context === 'guided-simulator') {
+      const performance = ICFES_PARTS.map((candidate) => {
+        const ids = new Set(questions.filter((item) => item.officialPart === candidate.part).map((item) => item.id));
+        const attempts = answers.filter((answer) => ids.has(answer.questionId));
+        return { candidate, accuracy: attempts.length ? attempts.filter((answer) => answer.isCorrect).length / attempts.length : 1 };
+      }).filter((item) => questions.some((question) => question.officialPart === item.candidate.part));
+      const weakest = performance.sort((a, b) => a.accuracy - b.accuracy)[0]?.candidate;
+      return weakest
+        ? { label: `Reforzar Parte ${weakest.part}`, href: `/practica/icfes-saber-11/${weakest.slug}` }
+        : { label: 'Repasar mis errores', href: '/practica/icfes-saber-11/repaso-errores' };
+    }
     if (accuracy >= 80 && averageSeconds <= 35) return { label: `Continuar con la Parte ${Math.min(7, part.part + 1)}`, href: `/practica/icfes-saber-11/parte-${Math.min(7, part.part + 1)}` };
     if (part.part === 1) return { label: 'Reforzar vocabulario', href: '/practica/icfes-saber-11/vocabulario' };
     return { label: 'Repetir esta práctica', href: `/practica/icfes-saber-11/${part.slug}` };
-  }, [accuracy, averageSeconds, context, part.part, part.slug]);
+  }, [accuracy, answers, averageSeconds, context, part.part, part.slug, questions]);
 
   if (!questions.length) {
     return (
@@ -209,7 +219,7 @@ export default function IcfesPartPracticeEngine({
     writeProgress(updated, progressScope);
     setSavedAttempts(updated.attempts.length);
     syncAttempts([nextAnswer], sessionRef.current?.id);
-    track('icfes_question_answered', { part: part.part, question_id: question.id, correct: nextAnswer.isCorrect, elapsed_seconds: elapsedSeconds });
+    track('icfes_question_answered', { part: question.officialPart, question_id: question.id, correct: nextAnswer.isCorrect, elapsed_seconds: elapsedSeconds, progress_scope: progressScope });
   }
 
   function next() {
@@ -276,7 +286,7 @@ export default function IcfesPartPracticeEngine({
     return (
       <div className={styles.resultCard} aria-live="polite">
         <p className={styles.kicker}>Sesión completada</p>
-        <h2>{accuracy >= 80 ? 'Buen dominio de esta parte' : 'Ya sabemos qué reforzar'}</h2>
+        <h2>{accuracy >= 80 ? 'Buen dominio de este recorrido' : 'Ya sabemos qué reforzar'}</h2>
         <div className={styles.resultScore} style={{ '--score': `${accuracy}%`, '--part-color': part.color } as React.CSSProperties}>
           <strong>{accuracy}%</strong><span>precisión</span>
         </div>
@@ -288,7 +298,7 @@ export default function IcfesPartPracticeEngine({
         </div>
         <div className={styles.resultAdvice}>
           <strong>Recomendación:</strong>{' '}
-          {accuracy >= 80 ? 'Avanza y conserva esta parte en repaso periódico.' : 'Repite los errores y vuelve a intentarlo después de la microlección recomendada.'}
+          {accuracy >= 80 ? 'Conserva estas habilidades en repaso periódico.' : 'Empieza por tu parte más débil y después vuelve a medirla con preguntas equivalentes.'}
         </div>
         <div className={styles.actionRow}>
           {resultAction
@@ -307,10 +317,10 @@ export default function IcfesPartPracticeEngine({
     <div className={styles.practiceShell} style={{ '--part-color': activePart.color, '--part-soft': activePart.softColor } as React.CSSProperties}>
       <div className={styles.progressHeader}>
         <div><span>Parte {activePart.part} · {activePart.shortTitle}</span><strong>Pregunta {currentIndex + 1} de {questions.length}</strong></div>
-        <span>{Math.round((currentIndex / questions.length) * 100)}% completado</span>
+        <span>{Math.round(((currentIndex + (confirmed ? 1 : 0)) / questions.length) * 100)}% completado</span>
       </div>
       <div className={styles.progressTrack} aria-label={`Progreso: pregunta ${currentIndex + 1} de ${questions.length}`}>
-        <span style={{ width: `${(currentIndex / questions.length) * 100}%` }} />
+        <span style={{ width: `${((currentIndex + (confirmed ? 1 : 0)) / questions.length) * 100}%` }} />
       </div>
 
       <div className={styles.questionGrid}>

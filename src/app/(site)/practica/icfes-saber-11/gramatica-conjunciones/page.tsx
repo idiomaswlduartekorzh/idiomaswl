@@ -449,7 +449,7 @@ export default function Page() {
                 icon: <Target size={18} />,
               },
               {
-                title: 'Simulacros oficiales ICFES',
+                title: 'Cuadernillos divulgados por el ICFES',
                 text: 'Practica con cuadernillos publicados por ICFES y revisión automática.',
                 href: '/practica/icfes-saber-11/examenes',
                 icon: <CheckCircle2 size={18} />,

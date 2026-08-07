@@ -1,7 +1,7 @@
 # Blueprint de producto: superhub ICFES Saber 11 — Inglés
 
-Estado editorial: en implementación
-Última revisión: 2026-08-03
+Estado editorial: implementado y auditado en el worktree ICFES; pendiente de revisión para integración, sin despliegue
+Última revisión: 2026-08-04
 Fuente normativa principal: Guía de orientación Saber 11 2026-2, ICFES.
 
 ## 1. Decisión de arquitectura

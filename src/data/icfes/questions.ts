@@ -50,10 +50,10 @@ export interface IcfesPracticeQuestion {
 export const ICFES_PRACTICE_QUESTIONS: readonly IcfesPracticeQuestion[] = [
   {
     id: 'p1-places-001', officialPart: 1, skill: 'vocabulary_basic', subskill: 'places', type: 'word-match', difficulty: 'base',
-    stimulus: 'Places in town', stimulusLabel: 'Categoría', wordBank: ['bakery', 'library', 'pharmacy', 'stadium', 'station'],
+    stimulus: 'Places in town', stimulusLabel: 'Categoría', wordBank: ['bookstore', 'library', 'pharmacy', 'stadium', 'station'],
     prompt: 'You go to this place when you need to borrow a book.',
     options: [
-      { text: 'bakery', rationale: 'A bakery sells bread; it does not lend books.', trap: 'categoría incorrecta' },
+      { text: 'bookstore', rationale: 'A bookstore sells books; you buy them there instead of borrowing them.', trap: 'lugar plausible' },
       { text: 'library', rationale: 'A library lends books for reading or study.' },
       { text: 'pharmacy', rationale: 'A pharmacy sells medicine, not books.', trap: 'categoría incorrecta' },
       { text: 'stadium', rationale: 'A stadium hosts sports or events.', trap: 'lugar plausible' },
@@ -63,7 +63,7 @@ export const ICFES_PRACTICE_QUESTIONS: readonly IcfesPracticeQuestion[] = [
     explanation: '“Borrow a book” identifica una biblioteca: borrow significa recibir algo temporalmente para devolverlo después.',
     evidence: { quote: 'borrow a book', reason: 'Es la acción característica que diferencia library de los otros lugares.' },
     strategy: 'Busca el verbo que define la función del lugar, no una palabra temática general.',
-    microLesson: { title: 'Borrow no es buy', body: 'Borrow = tomar prestado; lend = prestar a otra persona; buy = comprar. En un banco de lugares, esa diferencia decide la respuesta.' },
+    microLesson: { title: 'Library o bookstore', body: 'You borrow a book from a library, but you buy a book at a bookstore. La acción decide entre dos lugares realmente plausibles.' },
     targetSeconds: 25, tags: ['places', 'borrow-lend', 'word-bank'],
     reinforcement: { label: 'Repasar vocabulario ICFES', href: '/practica/icfes-saber-11/vocabulario' },
     source: { type: 'original-practice', reference: 'Pregunta propia basada en la habilidad oficial de la Parte 1.' },
@@ -74,8 +74,8 @@ export const ICFES_PRACTICE_QUESTIONS: readonly IcfesPracticeQuestion[] = [
     stimulus: 'Jobs', stimulusLabel: 'Categoría', wordBank: ['chef', 'dentist', 'farmer', 'mechanic', 'photographer'],
     prompt: 'This person repairs cars and checks their engines.',
     options: [
-      { text: 'chef', rationale: 'A chef prepares food.', trap: 'categoría incorrecta' },
-      { text: 'dentist', rationale: 'A dentist treats teeth.', trap: 'categoría incorrecta' },
+      { text: 'chef', rationale: 'A chef prepares food in a kitchen; this role does not repair vehicles or engines.', trap: 'categoría incorrecta' },
+      { text: 'dentist', rationale: 'A dentist treats teeth and gums; this profession does not repair machines.', trap: 'categoría incorrecta' },
       { text: 'farmer', rationale: 'A farmer grows crops or raises animals.', trap: 'categoría incorrecta' },
       { text: 'mechanic', rationale: 'A mechanic repairs vehicles and engines.' },
       { text: 'photographer', rationale: 'A photographer takes pictures.', trap: 'categoría incorrecta' },
@@ -96,7 +96,7 @@ export const ICFES_PRACTICE_QUESTIONS: readonly IcfesPracticeQuestion[] = [
     prompt: 'A shop gives you this after you pay, and it shows what you bought.',
     options: [
       { text: 'blanket', rationale: 'A blanket keeps a person warm.', trap: 'categoría incorrecta' },
-      { text: 'key', rationale: 'A key opens a lock.', trap: 'categoría incorrecta' },
+      { text: 'key', rationale: 'A key opens a lock; a shop does not normally give one as proof that a customer paid.', trap: 'categoría incorrecta' },
       { text: 'mirror', rationale: 'A mirror reflects an image.', trap: 'categoría incorrecta' },
       { text: 'receipt', rationale: 'A receipt records the products and payment.' },
       { text: 'wallet', rationale: 'A wallet can hold money and receipts, but the shop does not give it after payment.', trap: 'pista parcial' },

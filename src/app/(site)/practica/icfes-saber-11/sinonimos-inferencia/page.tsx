@@ -63,7 +63,7 @@ const faq = [
   {
     question: '¿La práctica es gratis?',
     answer:
-      'Sí. Puedes practicar sinónimos, paráfrasis e inferencia de forma gratuita y luego continuar con simulacros oficiales de inglés ICFES dentro de Idiomas WeLearn.',
+      'Sí. Puedes practicar sinónimos, paráfrasis e inferencia de forma gratuita y luego continuar con cuadernillos divulgados por el ICFES dentro de Idiomas WeLearn.',
   },
 ];
 
@@ -223,7 +223,7 @@ export default function Page() {
                 icon: <Target size={18} />,
               },
               {
-                title: 'Simulacros oficiales ICFES',
+                title: 'Cuadernillos divulgados por el ICFES',
                 text: 'Practica con cuadernillos publicados por ICFES y revisión automática.',
                 href: '/practica/icfes-saber-11/examenes',
                 icon: <CheckCircle2 size={18} />,

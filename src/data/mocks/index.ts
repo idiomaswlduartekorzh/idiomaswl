@@ -1,4 +1,5 @@
 import type { MockExam } from './types';
+import { normalizeIcfesMock } from './normalize-icfes-mock';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -347,7 +348,12 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
 };
 
 export function getMock(examSlug: string, mockId: string): MockExam | null {
-  return MOCK_REGISTRY[`${examSlug}:${mockId}`] ?? null;
+  const mock = MOCK_REGISTRY[`${examSlug}:${mockId}`] ?? null;
+  if (!mock) return null;
+
+  return examSlug === 'icfes' && mockId.startsWith('mock-')
+    ? normalizeIcfesMock(mock)
+    : mock;
 }
 
 export type { MockExam } from './types';

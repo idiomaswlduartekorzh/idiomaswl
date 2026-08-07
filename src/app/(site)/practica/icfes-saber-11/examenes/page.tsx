@@ -5,11 +5,11 @@ import IcfesJsonLd from '../_components/IcfesJsonLd';
 const CANONICAL = 'https://www.idiomaswl.com/practica/icfes-saber-11/examenes';
 
 export const metadata: Metadata = {
-  title: 'Simulacros ICFES Inglés — Exámenes oficiales | Idiomas WeLearn',
+  title: 'Cuadernillos ICFES Inglés: práctica oficial explicada',
   description:
-    'Practica con cuadernillos oficiales ICFES Saber 11 de inglés (2019, 2022, 2023). Mismo formato del examen real, corrección inmediata y análisis de errores.',
+    'Practica con muestras históricas de inglés divulgadas por el ICFES. Conservamos su extensión y ofrecemos corrección inmediata; cinco muestras tienen 145 explicaciones guiadas.',
   alternates: { canonical: CANONICAL },
-  openGraph: { title: 'Simulacros ICFES Inglés y cuadernillo guiado', description: 'Cuadernillos divulgados, modo examen y un recorrido de 25 preguntas completamente explicado.', url: CANONICAL, type: 'website' },
+  openGraph: { title: 'Cuadernillos ICFES Inglés y práctica guiada', description: 'Muestras divulgadas, modo examen y 145 preguntas explicadas en cinco recorridos guiados.', url: CANONICAL, type: 'website' },
 };
 
 export default function Page() {

@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-08-04T04:24:26.351Z",
+  "scope": {
+    "resource": "simulacro-guiado-55",
+    "questions": 55,
+    "alternatives": 214,
+    "provenance": "Práctica original de WeLearn; no es cuadernillo oficial."
+  },
+  "verdict": "approved",
+  "summary": {
+    "checks": 14,
+    "passed": 14,
+    "failed": 0,
+    "critical": 0,
+    "high": 0,
+    "medium": 0
+  },
+  "partCounts": {
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 10,
+    "5": 9,
+    "6": 6,
+    "7": 12
+  },
+  "answerPositions": [
+    {
+      "position": "A",
+      "count": 20
+    },
+    {
+      "position": "B",
+      "count": 13
+    },
+    {
+      "position": "C",
+      "count": 10
+    },
+    {
+      "position": "D",
+      "count": 12
+    },
+    {
+      "position": "E",
+      "count": 0
+    }
+  ],
+  "checks": [
+    {
+      "id": "question-count",
+      "label": "El entrenamiento conserva 55 preguntas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "55/55",
+      "remediation": ""
+    },
+    {
+      "id": "part-counts",
+      "label": "Distribución completa por las siete partes",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "P1:6 · P2:6 · P3:6 · P4:10 · P5:9 · P6:6 · P7:12",
+      "remediation": ""
+    },
+    {
+      "id": "unique-ids",
+      "label": "Identificadores únicos",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "55/55",
+      "remediation": ""
+    },
+    {
+      "id": "valid-answers",
+      "label": "Claves dentro del rango de opciones",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 inválidas",
+      "remediation": ""
+    },
+    {
+      "id": "unique-options",
+      "label": "Opciones distintas por pregunta",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 preguntas con duplicados",
+      "remediation": ""
+    },
+    {
+      "id": "rationale-coverage",
+      "label": "Cada alternativa tiene retroalimentación sustantiva",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "214 alternativas cubiertas",
+      "remediation": ""
+    },
+    {
+      "id": "distinct-rationales",
+      "label": "Las razones no se repiten dentro de una pregunta",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 preguntas repetitivas",
+      "remediation": ""
+    },
+    {
+      "id": "no-generic-feedback",
+      "label": "Sin plantillas generalistas prohibidas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "0 coincidencias",
+      "remediation": ""
+    },
+    {
+      "id": "evidence-coverage",
+      "label": "Cada pregunta explica su evidencia",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "55/55",
+      "remediation": ""
+    },
+    {
+      "id": "pedagogical-next-step",
+      "label": "Cada pregunta ofrece estrategia y refuerzo conectado",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "55/55",
+      "remediation": ""
+    },
+    {
+      "id": "source-label",
+      "label": "El banco se identifica como práctica propia",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "55/55",
+      "remediation": ""
+    },
+    {
+      "id": "route-disclaimer",
+      "label": "La ruta visible declara autoría y límites",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Descargo de autoría y no predicción",
+      "remediation": ""
+    },
+    {
+      "id": "error-queue-no-duplicates",
+      "label": "La cola de errores no duplica las 21 preguntas base",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Una sola fuente para las 55 preguntas",
+      "remediation": ""
+    },
+    {
+      "id": "answer-balance",
+      "label": "Ninguna posición domina el banco",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "A:20 · B:13 · C:10 · D:12 · E:0",
+      "remediation": ""
+    }
+  ]
+}
