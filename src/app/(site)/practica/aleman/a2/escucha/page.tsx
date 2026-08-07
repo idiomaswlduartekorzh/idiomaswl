@@ -1,28 +1,39 @@
 import type { Metadata } from 'next'
 import ListeningJourney from '@/components/practica/ListeningJourney'
+import { QuizSchema } from '@/components/practica/EducationSchema'
 import { LISTENING_ALEMAN_A2 } from '@/data/practica/aleman-a2-listening'
+import { listeningCopy } from '@/data/practica/series/page-copy'
 
-export const metadata: Metadata = {
-  title: 'Escucha Alemán A2: Emma in Berlin | Idiomas WeLearn',
-  description: '20 monólogos A2 en alemán con audio real, vocabulario, transcripción bilingüe y preguntas de comprensión. Sigue la historia de Emma en Berlín.',
-  alternates: { canonical: 'https://www.idiomaswl.com/practica/aleman/a2/escucha' },
-}
+const copy = listeningCopy({
+  language: 'aleman',
+  level: 'a2',
+  languageLabel: 'Alemán',
+  skillLabel: 'Hörverstehen',
+  seriesTitle: 'Der Schlüssel zum Café',
+  seriesTitleEs: 'La llave del café',
+  premise:
+    'Segundo año de Emma en Berlín: un mercadillo, una abuela que llegó a la ciudad en 1961 y un café del barrio en el que entra primero como clienta y acaba con un turno fijo',
+})
+
+export const metadata: Metadata = copy.metadata
 
 export default function EscuchaAlemanA2() {
   return (
-    <section className="wl-section">
-      <div className="wrap" style={{ maxWidth: 1180 }}>
-        <ListeningJourney
-          exercises={LISTENING_ALEMAN_A2}
-          level="A2"
-          audioBasePath="/audio/aleman/a2"
-          backHref="/practica/aleman/a2"
-          progressKey="wl-listening-aleman-a2-progress"
-          seriesTitle="Emma in Berlin"
-          seriesDescription="Temporada A2 · 20 episodios de Emma mientras se adapta a la vida en Berlín, entre la escuela, el café y la visita de su abuela."
-          speechLang="de-DE"
-        />
-      </div>
-    </section>
+    <>
+      <QuizSchema {...copy.schema} />
+      <section className="wl-section">
+        <div className="wrap" style={{ maxWidth: 1180 }}>
+          <ListeningJourney
+            exercises={LISTENING_ALEMAN_A2}
+            level="A2"
+            languageLabel="Alemán"
+            skillLabel="Hörverstehen"
+            speechLang="de-DE"
+            audioMode={copy.ready ? 'mp3' : 'navegador'}
+            {...copy.journal}
+          />
+        </div>
+      </section>
+    </>
   )
 }

@@ -71,9 +71,21 @@
           "perfil_de_voz": "Mujer mayor, voz serena y algo cansada",
           "voz": "Hilde — mujer mayor alemana de verdad, timbre nostálgico. Las voces «old» inglesas hablando alemán se descartaron"
         },
+        "Lukas": {
+          "voice_id": "SR5PqrZCNyNgSyTEWnLu",
+          "papel": "Compañero de clase y primer amigo de Emma en Berlín (A1 y A2)",
+          "perfil_de_voz": "Hombre joven, voz clara y neutra, ritmo tranquilo",
+          "voz": "Niklas — «Eine neutrale männliche Erzählerstimme im jungen Alter». Distinto de Markus, que es Jonas dos años después"
+        },
+        "Oma Anna": {
+          "voice_id": "p2Wol3C7j3rHbfOrbL18",
+          "papel": "Abuela de Lukas; llegó a Berlín en 1961 y trabajó en el café de Herr Becker",
+          "perfil_de_voz": "Mujer mayor, voz cálida y con mucho carácter, ritmo pausado",
+          "voz": "Lisa — «warm, lively, full of character and life experience». No se reutiliza Hilde: esa ya es Klara en B1"
+        },
         "Alle": {
           "voice_id": "mk8kciAPymSDlinAde1e",
-          "papel": "Coro de vecinos en la fiesta del barrio",
+          "papel": "Coro de vecinos en la fiesta del barrio y coro de la clase en A2",
           "perfil_de_voz": "Una sola voz: mezclar tres impide entender la línea, y eso es lo único que importa aquí",
           "voz": "Nils — neutro y distinto de Markus. Solo dice el brindis final del episodio 20"
         }

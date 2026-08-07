@@ -2970,66 +2970,17 @@
     {
       "idioma": "aleman",
       "episodio": 1,
-      "id": "de-b1-01-der-brief-auf-dem-tisch",
+      "id": "de-a2-01-ein-wochenende-ohne-plan",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-01.mp3",
-      "caracteres": 595,
-      "duracion_real": 38.46,
-      "caracteres_por_segundo": 15.47,
-      "duracion_declarada_previa": 47,
+      "archivo": "public/audio/aleman/a2/listening-01.mp3",
+      "caracteres": 518,
+      "duracion_real": 33.11,
+      "caracteres_por_segundo": 15.64,
+      "duracion_declarada_previa": 42,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ",
-        "Jonas": "IeQubAjK1ujbppIdhJw4"
-      },
-      "ajustes": {
-        "stability": 0.55,
-        "similarity_boost": 0.75,
-        "style": 0.15,
-        "use_speaker_boost": true
-      }
-    },
-    {
-      "idioma": "aleman",
-      "episodio": 2,
-      "id": "de-b1-02-wie-kaffee-gemacht-wird",
-      "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-02.mp3",
-      "caracteres": 652,
-      "duracion_real": 43.88,
-      "caracteres_por_segundo": 14.86,
-      "duracion_declarada_previa": 50,
-      "modelo": "eleven_flash_v2_5",
-      "velocidad": 0.92,
-      "voces": {
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ"
-      },
-      "ajustes": {
-        "stability": 0.55,
-        "similarity_boost": 0.75,
-        "style": 0.15,
-        "use_speaker_boost": true
-      }
-    },
-    {
-      "idioma": "aleman",
-      "episodio": 3,
-      "id": "de-b1-03-die-alte-ausstellung",
-      "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-03.mp3",
-      "caracteres": 711,
-      "duracion_real": 46.61,
-      "caracteres_por_segundo": 15.26,
-      "duracion_declarada_previa": 54,
-      "modelo": "eleven_flash_v2_5",
-      "velocidad": 0.92,
-      "voces": {
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
         "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
@@ -3041,18 +2992,65 @@
     },
     {
       "idioma": "aleman",
-      "episodio": 4,
-      "id": "de-b1-04-der-mann-den-niemand-erwaehnt",
+      "episodio": 2,
+      "id": "de-a2-02-die-falsche-u-bahn",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-04.mp3",
-      "caracteres": 671,
-      "duracion_real": 40.29,
-      "caracteres_por_segundo": 16.65,
-      "duracion_declarada_previa": 52,
+      "archivo": "public/audio/aleman/a2/listening-02.mp3",
+      "caracteres": 461,
+      "duracion_real": 27.19,
+      "caracteres_por_segundo": 16.96,
+      "duracion_declarada_previa": 40,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap",
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "aleman",
+      "episodio": 3,
+      "id": "de-a2-03-chaos-im-cafe",
+      "piloto": false,
+      "archivo": "public/audio/aleman/a2/listening-03.mp3",
+      "caracteres": 476,
+      "duracion_real": 28.25,
+      "caracteres_por_segundo": 16.85,
+      "duracion_declarada_previa": 40,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap",
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "aleman",
+      "episodio": 4,
+      "id": "de-a2-04-mein-erster-tag-damals",
+      "piloto": false,
+      "archivo": "public/audio/aleman/a2/listening-04.mp3",
+      "caracteres": 428,
+      "duracion_real": 28.32,
+      "caracteres_por_segundo": 15.11,
+      "duracion_declarada_previa": 40,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Oma Anna": "p2Wol3C7j3rHbfOrbL18",
         "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
@@ -3065,18 +3063,19 @@
     {
       "idioma": "aleman",
       "episodio": 5,
-      "id": "de-b1-05-was-wuerdest-du-tun",
+      "id": "de-a2-05-die-fast-verpasste-ausstellung",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-05.mp3",
-      "caracteres": 559,
-      "duracion_real": 33.51,
-      "caracteres_por_segundo": 16.68,
-      "duracion_declarada_previa": 45,
+      "archivo": "public/audio/aleman/a2/listening-05.mp3",
+      "caracteres": 426,
+      "duracion_real": 24.75,
+      "caracteres_por_segundo": 17.22,
+      "duracion_declarada_previa": 42,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
+        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
         "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Jonas": "IeQubAjK1ujbppIdhJw4"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3088,17 +3087,17 @@
     {
       "idioma": "aleman",
       "episodio": 6,
-      "id": "de-b1-06-wenn-alles-anders-gewesen-waere",
+      "id": "de-a2-06-ein-geschenk-fuer-oma-anna",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-06.mp3",
-      "caracteres": 646,
-      "duracion_real": 37.29,
-      "caracteres_por_segundo": 17.32,
-      "duracion_declarada_previa": 47,
+      "archivo": "public/audio/aleman/a2/listening-06.mp3",
+      "caracteres": 499,
+      "duracion_real": 30.15,
+      "caracteres_por_segundo": 16.55,
+      "duracion_declarada_previa": 40,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
         "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
@@ -3111,19 +3110,19 @@
     {
       "idioma": "aleman",
       "episodio": 7,
-      "id": "de-b1-07-ein-schwieriger-samstag",
+      "id": "de-a2-07-wem-gehoert-der-rucksack",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-07.mp3",
-      "caracteres": 620,
-      "duracion_real": 41.28,
-      "caracteres_por_segundo": 15.02,
-      "duracion_declarada_previa": 48,
+      "archivo": "public/audio/aleman/a2/listening-07.mp3",
+      "caracteres": 421,
+      "duracion_real": 27.1,
+      "caracteres_por_segundo": 15.54,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
+        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
         "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ",
-        "Jonas": "IeQubAjK1ujbppIdhJw4"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3135,19 +3134,19 @@
     {
       "idioma": "aleman",
       "episodio": 8,
-      "id": "de-b1-08-nicht-alles-allein-loesen",
+      "id": "de-a2-08-alles-an-einen-neuen-platz",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-08.mp3",
-      "caracteres": 618,
-      "duracion_real": 39.22,
-      "caracteres_por_segundo": 15.76,
-      "duracion_declarada_previa": 49,
+      "archivo": "public/audio/aleman/a2/listening-08.mp3",
+      "caracteres": 428,
+      "duracion_real": 26.19,
+      "caracteres_por_segundo": 16.34,
+      "duracion_declarada_previa": 40,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6"
+        "Oma Anna": "p2Wol3C7j3rHbfOrbL18",
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3159,20 +3158,18 @@
     {
       "idioma": "aleman",
       "episodio": 9,
-      "id": "de-b1-09-ein-fest-fuer-das-viertel",
+      "id": "de-a2-09-welcher-park-passt-besser",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-09.mp3",
-      "caracteres": 587,
-      "duracion_real": 37.08,
-      "caracteres_por_segundo": 15.83,
-      "duracion_declarada_previa": 47,
+      "archivo": "public/audio/aleman/a2/listening-09.mp3",
+      "caracteres": 436,
+      "duracion_real": 28.94,
+      "caracteres_por_segundo": 15.07,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3184,19 +3181,20 @@
     {
       "idioma": "aleman",
       "episodio": 10,
-      "id": "de-b1-10-klara-meldet-sich",
+      "id": "de-a2-10-der-beste-ort-in-berlin",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-10.mp3",
-      "caracteres": 672,
-      "duracion_real": 41.17,
-      "caracteres_por_segundo": 16.32,
-      "duracion_declarada_previa": 54,
+      "archivo": "public/audio/aleman/a2/listening-10.mp3",
+      "caracteres": 413,
+      "duracion_real": 27.37,
+      "caracteres_por_segundo": 15.09,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
+        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
         "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Alle": "mk8kciAPymSDlinAde1e"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3208,19 +3206,18 @@
     {
       "idioma": "aleman",
       "episodio": 11,
-      "id": "de-b1-11-das-foto-des-wagens",
+      "id": "de-a2-11-warum-ich-nicht-zur-party-komme",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-11.mp3",
-      "caracteres": 601,
-      "duracion_real": 37.21,
-      "caracteres_por_segundo": 16.15,
-      "duracion_declarada_previa": 47,
+      "archivo": "public/audio/aleman/a2/listening-11.mp3",
+      "caracteres": 443,
+      "duracion_real": 24.24,
+      "caracteres_por_segundo": 18.28,
+      "duracion_declarada_previa": 42,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Jonas": "IeQubAjK1ujbppIdhJw4"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3232,19 +3229,19 @@
     {
       "idioma": "aleman",
       "episodio": 12,
-      "id": "de-b1-12-die-alte-holzkiste",
+      "id": "de-a2-12-oma-anna-hat-eine-ueberraschung",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-12.mp3",
-      "caracteres": 604,
-      "duracion_real": 38.49,
-      "caracteres_por_segundo": 15.69,
-      "duracion_declarada_previa": 47,
+      "archivo": "public/audio/aleman/a2/listening-12.mp3",
+      "caracteres": 399,
+      "duracion_real": 24.35,
+      "caracteres_por_segundo": 16.39,
+      "duracion_declarada_previa": 40,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Oma Anna": "p2Wol3C7j3rHbfOrbL18",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3256,19 +3253,18 @@
     {
       "idioma": "aleman",
       "episodio": 13,
-      "id": "de-b1-13-auf-dem-bahnsteig",
+      "id": "de-a2-13-wenn-oma-bei-uns-ist",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-13.mp3",
-      "caracteres": 580,
-      "duracion_real": 34.43,
-      "caracteres_por_segundo": 16.85,
-      "duracion_declarada_previa": 50,
+      "archivo": "public/audio/aleman/a2/listening-13.mp3",
+      "caracteres": 447,
+      "duracion_real": 25.4,
+      "caracteres_por_segundo": 17.6,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Klara": "VNHNa6nN6yJdVF3YRyuF"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3280,19 +3276,19 @@
     {
       "idioma": "aleman",
       "episodio": 14,
-      "id": "de-b1-14-worauf-hat-er-gewartet",
+      "id": "de-a2-14-vor-der-praesentation",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-14.mp3",
-      "caracteres": 581,
-      "duracion_real": 38.92,
-      "caracteres_por_segundo": 14.93,
-      "duracion_declarada_previa": 47,
+      "archivo": "public/audio/aleman/a2/listening-14.mp3",
+      "caracteres": 429,
+      "duracion_real": 27.92,
+      "caracteres_por_segundo": 15.36,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
         "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3304,18 +3300,17 @@
     {
       "idioma": "aleman",
       "episodio": 15,
-      "id": "de-b1-15-der-streit-von-damals",
+      "id": "de-a2-15-ein-kleid-fuer-den-abend",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-15.mp3",
-      "caracteres": 590,
-      "duracion_real": 36.99,
-      "caracteres_por_segundo": 15.95,
-      "duracion_declarada_previa": 47,
+      "archivo": "public/audio/aleman/a2/listening-15.mp3",
+      "caracteres": 426,
+      "duracion_real": 27.45,
+      "caracteres_por_segundo": 15.52,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Klara": "VNHNa6nN6yJdVF3YRyuF",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ",
+        "Oma Anna": "p2Wol3C7j3rHbfOrbL18",
         "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
@@ -3328,19 +3323,19 @@
     {
       "idioma": "aleman",
       "episodio": 16,
-      "id": "de-b1-16-eine-hoefliche-frage",
+      "id": "de-a2-16-unsere-plaene-fuer-die-ferien",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-16.mp3",
-      "caracteres": 556,
-      "duracion_real": 32.62,
-      "caracteres_por_segundo": 17.05,
-      "duracion_declarada_previa": 45,
+      "archivo": "public/audio/aleman/a2/listening-16.mp3",
+      "caracteres": 404,
+      "duracion_real": 23.72,
+      "caracteres_por_segundo": 17.04,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
         "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
-        "Klara": "VNHNa6nN6yJdVF3YRyuF"
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3352,19 +3347,18 @@
     {
       "idioma": "aleman",
       "episodio": 17,
-      "id": "de-b1-17-was-wird-aus-dem-cafe",
+      "id": "de-a2-17-zu-viele-dinge-zu-wenig-zeit",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-17.mp3",
-      "caracteres": 642,
-      "duracion_real": 39.39,
-      "caracteres_por_segundo": 16.3,
-      "duracion_declarada_previa": 41,
+      "archivo": "public/audio/aleman/a2/listening-17.mp3",
+      "caracteres": 409,
+      "duracion_real": 26.68,
+      "caracteres_por_segundo": 15.33,
+      "duracion_declarada_previa": 38,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
         "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ",
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Jonas": "IeQubAjK1ujbppIdhJw4"
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
       },
       "ajustes": {
         "stability": 0.55,
@@ -3376,18 +3370,40 @@
     {
       "idioma": "aleman",
       "episodio": 18,
-      "id": "de-b1-18-der-platz-an-den-sich-alle-erinnern",
+      "id": "de-a2-18-menschen-die-mir-helfen",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-18.mp3",
-      "caracteres": 607,
-      "duracion_real": 37.85,
-      "caracteres_por_segundo": 16.04,
-      "duracion_declarada_previa": 43,
+      "archivo": "public/audio/aleman/a2/listening-18.mp3",
+      "caracteres": 427,
+      "duracion_real": 24.19,
+      "caracteres_por_segundo": 17.65,
+      "duracion_declarada_previa": 40,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Klara": "VNHNa6nN6yJdVF3YRyuF",
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
+        "Oma Anna": "p2Wol3C7j3rHbfOrbL18",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "aleman",
+      "episodio": 19,
+      "id": "de-a2-19-ein-ausflug-nach-potsdam",
+      "piloto": false,
+      "archivo": "public/audio/aleman/a2/listening-19.mp3",
+      "caracteres": 413,
+      "duracion_real": 22.29,
+      "caracteres_por_segundo": 18.53,
+      "duracion_declarada_previa": 38,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
         "Emma": "AnvlJBAqSLDzEevYr9Ap",
         "Frau Schneider": "uvysWDLbKpA4XvpD3GI6"
       },
@@ -3400,46 +3416,20 @@
     },
     {
       "idioma": "aleman",
-      "episodio": 19,
-      "id": "de-b1-19-was-gemacht-werden-muss",
-      "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-19.mp3",
-      "caracteres": 629,
-      "duracion_real": 37,
-      "caracteres_por_segundo": 17,
-      "duracion_declarada_previa": 44,
-      "modelo": "eleven_flash_v2_5",
-      "velocidad": 0.92,
-      "voces": {
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Frau Schneider": "uvysWDLbKpA4XvpD3GI6",
-        "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ"
-      },
-      "ajustes": {
-        "stability": 0.55,
-        "similarity_boost": 0.75,
-        "style": 0.15,
-        "use_speaker_boost": true
-      }
-    },
-    {
-      "idioma": "aleman",
       "episodio": 20,
-      "id": "de-b1-20-das-fest",
+      "id": "de-a2-20-ein-neuer-plan-beginnt",
       "piloto": false,
-      "archivo": "public/audio/aleman/b1/listening-20.mp3",
-      "caracteres": 552,
-      "duracion_real": 36.99,
-      "caracteres_por_segundo": 14.92,
-      "duracion_declarada_previa": 41,
+      "archivo": "public/audio/aleman/a2/listening-20.mp3",
+      "caracteres": 433,
+      "duracion_real": 31.8,
+      "caracteres_por_segundo": 13.61,
+      "duracion_declarada_previa": 40,
       "modelo": "eleven_flash_v2_5",
       "velocidad": 0.92,
       "voces": {
-        "Jonas": "IeQubAjK1ujbppIdhJw4",
-        "Emma": "AnvlJBAqSLDzEevYr9Ap",
-        "Klara": "VNHNa6nN6yJdVF3YRyuF",
         "Herr Becker": "NlRO8ABjJNJNYaRaLiPJ",
+        "Emma": "AnvlJBAqSLDzEevYr9Ap",
+        "Lukas": "SR5PqrZCNyNgSyTEWnLu",
         "Alle": "mk8kciAPymSDlinAde1e"
       },
       "ajustes": {

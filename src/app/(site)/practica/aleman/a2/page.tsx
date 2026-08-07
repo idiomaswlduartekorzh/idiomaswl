@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
   title: 'Alemán A2 — Grundkenntnisse | Idiomas WeLearn',
@@ -17,7 +18,7 @@ const HABILIDADES = [
   { id: 'escritura', emoji: '✍️', name: 'Schreiben', eng: 'Escritura', desc: '5 Schreibaufgaben A2 mit integrierter Grammatik, Mustertext und Checkliste.', count: '5 geführte Texte', href: '/practica/aleman/a2/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Sprechen', eng: 'Expresión oral', desc: '20 Redemittel A2 mit situativem Kontext, Aussprache und formellen/informellen Varianten.', count: '20 wichtige Ausdrücke', href: '/practica/aleman/a2/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vokabular', eng: 'Vocabulario', desc: '8 Themenbereiche × 10 Wörter. 3 Übungsmodi: Karteikarten, MCQ, Schreiben.', count: '8 Themen · 80+ Wörter', href: '/practica/aleman/a2/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Hören', eng: 'Escucha', desc: '3 vollständige A2-Dialoge mit Skripten. Audios in Vorbereitung.', count: '3 Dialoge demnächst', href: '/practica/aleman/a2/escucha' },
+  { id: 'escucha', emoji: '🎧', name: 'Hören', eng: 'Escucha', ...listeningCard('aleman', 'a2', '«Der Schlüssel zum Café»: Emmas zweites Jahr in Berlin, vom Flohmarkt bis zur ersten festen Schicht im Café.'), href: '/practica/aleman/a2/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#dd0000', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };
