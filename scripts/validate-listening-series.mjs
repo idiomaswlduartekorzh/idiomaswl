@@ -103,7 +103,10 @@ const DE_PREFIXES = ['zurück', 'heraus', 'herein', 'hinaus', 'wieder', 'durch',
  * que se oye y el infinitivo va en la glosa.
  */
 function isAudibleGerman(keyword, tokens) {
-  const words = keyword.toLowerCase().normalize('NFC').split(/\s+/u)
+  // El guion separa palabras dentro del compuesto —U-Bahn, T-Shirt—, y los tokens del
+  // episodio ya vienen partidos por él: sin partir también la clave, «die U-Bahn» no se
+  // encuentra en un texto que dice exactamente «U-Bahn».
+  const words = keyword.toLowerCase().normalize('NFC').split(/[\s-]+/u)
     .filter((word) => word.length > 1 && !ARTICLES.has(word) && !DE_REFLEXIVE.has(word))
   if (!words.length) return false
 
@@ -444,6 +447,21 @@ const PUBLISHED = [
 for (const name of PUBLISHED) {
   const file = path.join(repoRoot, 'src', 'data', 'practica', name)
   if (!fs.existsSync(file)) continue
+
+  /**
+   * Un fichero de esta lista que ya deriva de una serie se salta: su reparto se mide
+   * arriba, sobre la serie, y aquí no se puede ni cargar.
+   *
+   * `loadModule` transpila el .ts y lo evalúa con Function(), donde no existe `require`.
+   * Mientras estos ficheros eran listas literales daba igual; en cuanto alemán B1 pasó a
+   * importar su serie, el validador entero reventó con «require is not defined» DESPUÉS
+   * de haber impreso todos los ✓. Se coló hasta main porque la comprobación previa fue
+   * `grep '^✗'`, y un fallo que no imprime ✗ pasa ese filtro sin despeinarse.
+   */
+  if (/^import\s*\{[^}]*\}\s*from\s*'\.\/series\//mu.test(fs.readFileSync(file, 'utf8'))) {
+    console.log(`· ${name} — deriva de su serie; el reparto ya se midió ahí`)
+    continue
+  }
 
   // Varios de estos ficheros exportan más de una lista; la serie es la más larga.
   const lists = Object.values(loadModule(file)).filter((value) => Array.isArray(value) && value.length && value[0]?.gist)
