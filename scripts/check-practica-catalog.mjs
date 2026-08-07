@@ -55,6 +55,35 @@ expectText('src/app/sitemap.ts', 'GRAMMAR_ENTRIES');
 // detener la publicación aunque el catálogo gramatical siga íntegro.
 expectText('src/data/practica/ingles-a1-listening.ts', 'LISTENING_A1');
 expectText('src/app/(site)/practica/ingles/a1/escucha/page.tsx', 'LISTENING_A1');
+
+/**
+ * Escucha: las 480 lecciones de audio, sus 24 rutas y el reproductor.
+ *
+ * Antes aquí solo estaba inglés A1. Las otras 23 series podían desaparecer de un merge mal
+ * resuelto y el build seguía en verde, que es justo la manera en que el trabajo se cae de
+ * producción sin que nadie se entere: no lo borra nadie a propósito, se pierde al integrar.
+ *
+ * Cada serie tiene que existir y traer sus 20 episodios; cada ruta tiene que seguir pintando
+ * ListeningJourney; y los mp3 declarados listos en audio-ready.ts tienen que estar en disco.
+ */
+const escucha = ['ingles', 'aleman', 'frances', 'italiano', 'portugues', 'ruso', 'coreano', 'japones'];
+for (const language of escucha) {
+  for (const level of ['a1', 'a2', 'b1']) {
+    const seriesPath = `src/data/practica/series/${language}-${level}-series.ts`;
+    const source = read(seriesPath);
+    // Sin anclar la indentación: unas series declaran el episodio en varias líneas y otras
+    // en una sola, y contar espacios daba cero en las ocho de coreano y japonés.
+    const episodes = (source.match(/\border: \d+,/g) ?? []).length;
+    if (source && episodes < 20) {
+      failures.push(`${seriesPath} declara ${episodes} episodios; la serie publicada tiene 20.`);
+    }
+    expectText(`src/app/(site)/practica/${language}/${level}/escucha/page.tsx`, 'ListeningJourney');
+  }
+}
+expectText('src/components/practica/ListeningPlayer.tsx', 'ListeningPlayer');
+expectText('src/components/practica/ListeningJourney.tsx', 'ListeningPlayer');
+expectText('src/data/practica/listening-shuffle.ts', 'balanceOptions');
+
 expectText('src/app/(site)/nivel-radar/page.tsx', 'NivelRadarClient');
 expectText('src/app/(site)/practica/ielts/IELTSHubClient.tsx', 'IELTS Academic');
 expectText('src/app/(site)/practica/ielts/academic/writing/task1/page.tsx', 'Task 1');
