@@ -14,7 +14,7 @@
  * seguir siendo un literal plano de cinco líneas `idioma: true|false,`.
  */
 export const A1_AUDIO_READY = {
-  frances: false,
+  frances: true,
   portugues: true,
   coreano: true,
   japones: true,
@@ -24,7 +24,7 @@ export const A1_AUDIO_READY = {
 /** Mismo contrato para A2. El validador lo lee como texto: literal plano, una línea por idioma. */
 export const A2_AUDIO_READY = {
   italiano: false,
-  frances: false,
+  frances: true,
   portugues: true,
   coreano: true,
   japones: true,
@@ -34,7 +34,7 @@ export const A2_AUDIO_READY = {
 /** Mismo contrato para B1. */
 export const B1_AUDIO_READY = {
   italiano: false,
-  frances: false,
+  frances: true,
   portugues: true,
   coreano: true,
   japones: true,

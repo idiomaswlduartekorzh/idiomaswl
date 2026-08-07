@@ -23,7 +23,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     {
-      id: 'fr-a1-01-la-nouvelle-voisine', order: 1, title: 'La nouvelle voisine', titleEs: 'La nueva vecina', duration: 32,
+      id: 'fr-a1-01-la-nouvelle-voisine', order: 1, title: 'La nouvelle voisine', titleEs: 'La nueva vecina', duration: 19,
       characters: ['Léa', 'Hugo'], location: 'Entrada del edificio',
       objective: 'Identificar nombres, nacionalidad y condición de estudiante.',
       grammar: ['pronoms sujets', 'verbe être', 's’appeler'],
@@ -50,7 +50,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['je suis', 'tu es', 's’appeler'], newVocabulary: ['nouvelle', 'voisine', 'bienvenue'], possibleDifficulties: ['liaison en “vous êtes” no aparece todavía'], estimatedDuration: 32, continuity: 'Inicio de la serie; no requiere contexto previo.', pronunciationRisks: ['Léa', 'immeuble'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-02-deux-valises', order: 2, title: 'Deux valises', titleEs: 'Dos maletas', duration: 34,
+      id: 'fr-a1-02-deux-valises', order: 2, title: 'Deux valises', titleEs: 'Dos maletas', duration: 18,
       characters: ['Léa', 'Hugo'], location: 'Escalera del edificio',
       objective: 'Reconocer posesión, cantidades y objetos personales.',
       grammar: ['verbe avoir', 'articles indéfinis', 'nombres'],
@@ -77,7 +77,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['j’ai', 'tu as', 'il y a', 'articles un/deux'], newVocabulary: ['bagages', 'valise', 'lourde'], possibleDifficulties: ['enchaînement en “j’ai”'], estimatedDuration: 34, continuity: 'Continúa inmediatamente después de la presentación.', pronunciationRisks: ['bagages', 'lourde'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-03-ou-est-la-cle', order: 3, title: 'Où est la clé ?', titleEs: '¿Dónde está la llave?', duration: 35,
+      id: 'fr-a1-03-ou-est-la-cle', order: 3, title: 'Où est la clé ?', titleEs: '¿Dónde está la llave?', duration: 20,
       characters: ['Léa', 'Hugo', 'Madame Martin'], location: 'Pasillo del segundo piso',
       objective: 'Localizar un objeto con preposiciones sencillas.',
       grammar: ['il y a', 'prépositions de lieu', 'articles définis'],
@@ -104,7 +104,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['il y a', 'dans', 'sous', 'ne…pas'], newVocabulary: ['poche', 'carnet', 'seulement'], possibleDifficulties: ['contraste dans/sous'], estimatedDuration: 35, continuity: 'Recupera el bolso y presenta el cuaderno rojo central.', pronunciationRisks: ['poche', 'carnet'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-04-a-la-boulangerie', order: 4, title: 'À la boulangerie', titleEs: 'En la panadería', duration: 36,
+      id: 'fr-a1-04-a-la-boulangerie', order: 4, title: 'À la boulangerie', titleEs: 'En la panadería', duration: 17,
       characters: ['Léa', 'Hugo'], location: 'Panadería del barrio',
       objective: 'Comprender un pedido básico y un precio.',
       grammar: ['articles partitifs lexicalisés', 'je voudrais', 'nombres/prix'],
@@ -131,7 +131,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['je voudrais', 'vous désirez', 'nombres'], newVocabulary: ['baguette', 'croissant', 'gratuit'], possibleDifficulties: ['cambio tu/vous usado como broma de servicio'], estimatedDuration: 36, continuity: 'Hugo pasa de vecino a personaje recurrente de la panadería.', pronunciationRisks: ['croissants', 'gratuit'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-05-la-chambre-bleue', order: 5, title: 'La chambre bleue', titleEs: 'La habitación azul', duration: 34,
+      id: 'fr-a1-05-la-chambre-bleue', order: 5, title: 'La chambre bleue', titleEs: 'La habitación azul', duration: 16,
       characters: ['Léa', 'Inès'], location: 'Apartamento de Léa',
       objective: 'Comprender una descripción básica de una habitación.',
       grammar: ['adjectifs qualificatifs', 'genre et accord', 'c’est / il y a'],
@@ -157,7 +157,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['adjectifs', 'il y a', 'sur'], newVocabulary: ['claire', 'mur', 'fenêtre'], possibleDifficulties: ['acuerdo bleu/bleue'], estimatedDuration: 34, continuity: 'Introduce a Inès y mantiene visible el cuaderno.', pronunciationRisks: ['jolie', 'fenêtre'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-06-biscotte', order: 6, title: 'Biscotte', titleEs: 'Biscotte', duration: 33,
+      id: 'fr-a1-06-biscotte', order: 6, title: 'Biscotte', titleEs: 'Biscotte', duration: 23,
       characters: ['Léa', 'Madame Martin'], location: 'Pasillo del edificio',
       objective: 'Identificar un animal y describir sus características.',
       grammar: ['verbe avoir', 'adjectifs possessifs', 'adjectifs'],
@@ -184,7 +184,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['elle est', 'elle a', 'ma/mon'], newVocabulary: ['chatte', 'yeux', 'curieuse'], possibleDifficulties: ['chatte frente a chat'], estimatedDuration: 33, continuity: 'La gata observa el bolso, anticipando el conflicto.', pronunciationRisks: ['Biscotte', 'yeux'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-07-le-lundi-de-lea', order: 7, title: 'Le lundi de Léa', titleEs: 'El lunes de Léa', duration: 37,
+      id: 'fr-a1-07-le-lundi-de-lea', order: 7, title: 'Le lundi de Léa', titleEs: 'El lunes de Léa', duration: 16,
       characters: ['Léa', 'Inès'], location: 'Parada de tranvía',
       objective: 'Comprender una rutina y horas básicas.',
       grammar: ['présent des verbes en -ER', 'prépositions de temps', 'heures'],
@@ -211,7 +211,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['présent -ER', 'à + heure'], newVocabulary: ['déjeuner', 'terminer', 'rentrer'], possibleDifficulties: ['question avec “quelle heure”'], estimatedDuration: 37, continuity: 'Expande la vida universitaria presentada en el episodio 1.', pronunciationRisks: ['déjeunes', 'heures'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-08-le-carnet-nest-pas-la', order: 8, title: 'Le carnet n’est pas là', titleEs: 'El cuaderno no está', duration: 35,
+      id: 'fr-a1-08-le-carnet-nest-pas-la', order: 8, title: 'Le carnet n’est pas là', titleEs: 'El cuaderno no está', duration: 17,
       characters: ['Léa', 'Inès'], location: 'Habitación de Léa',
       objective: 'Comprender negaciones simples durante una búsqueda.',
       grammar: ['négation ne…pas', 'articles', 'prépositions de lieu'],
@@ -238,7 +238,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['ne…pas', 'dans/sur'], newVocabulary: ['chercher', 'bureau', 'rien'], possibleDifficulties: ['“rien” aparece como bloque frecuente'], estimatedDuration: 35, continuity: 'Activa la pista de Biscotte del episodio 6.', pronunciationRisks: ['n’est', 'rien'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-09-qui-a-le-carnet', order: 9, title: 'Qui a le carnet ?', titleEs: '¿Quién tiene el cuaderno?', duration: 38,
+      id: 'fr-a1-09-qui-a-le-carnet', order: 9, title: 'Qui a le carnet ?', titleEs: '¿Quién tiene el cuaderno?', duration: 22,
       characters: ['Léa', 'Hugo', 'Madame Martin'], location: 'Vestíbulo del edificio',
       objective: 'Comprender preguntas básicas sobre personas, lugares y posesión.',
       grammar: ['questions avec qui/où/est-ce que', 'verbe avoir'],
@@ -265,7 +265,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['où', 'qui', 'est-ce que', 'aller + infinitif'], newVocabulary: ['cour', 'possible', 'le soir'], possibleDifficulties: ['distinguir qui y où en preguntas breves'], estimatedDuration: 38, continuity: 'Convierte la desaparición en una investigación simple.', pronunciationRisks: ['est-ce qu’elle', 'cour'], recommendedChanges: ['En producción, mantener una pausa clara antes de cada pregunta.'] },
     },
     {
-      id: 'fr-a1-10-le-sac-de-hugo', order: 10, title: 'Le sac de Hugo', titleEs: 'El bolso de Hugo', duration: 35,
+      id: 'fr-a1-10-le-sac-de-hugo', order: 10, title: 'Le sac de Hugo', titleEs: 'El bolso de Hugo', duration: 17,
       characters: ['Léa', 'Hugo'], location: 'Panadería',
       objective: 'Distinguir posesivos y objetos pertenecientes a cada personaje.',
       grammar: ['adjectifs possessifs', 'c’est / ce sont'],
@@ -292,7 +292,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['mon/ton', 'c’est', 'ne…pas'], newVocabulary: ['tablier', 'dedans', 'feuille'], possibleDifficulties: ['mon se usa aunque Léa también diga mon desde su perspectiva'], estimatedDuration: 35, continuity: 'Añade una pista física ligada al cuaderno.', pronunciationRisks: ['tablier', 'feuille'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-11-une-liste-etrange', order: 11, title: 'Une liste étrange', titleEs: 'Una lista extraña', duration: 36,
+      id: 'fr-a1-11-une-liste-etrange', order: 11, title: 'Une liste étrange', titleEs: 'Una lista extraña', duration: 15,
       characters: ['Léa', 'Inès', 'Hugo'], location: 'Mesa de la panadería',
       objective: 'Reconocer plurales y una lista de objetos cotidianos.',
       grammar: ['pluriel des noms', 'articles indéfinis pluriels', 'il y a'],
@@ -318,7 +318,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['des + pluriel', 'il y a', 'nombres'], newVocabulary: ['bougie', 'assiette', 'mystère'], possibleDifficulties: ['marcas de plural no se oyen siempre'], estimatedDuration: 36, continuity: 'La hoja encontrada en el episodio 10 alimenta el misterio.', pronunciationRisks: ['bougies', 'assiettes'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-12-toujours-a-dix-huit-heures', order: 12, title: 'Toujours à dix-huit heures', titleEs: 'Siempre a las seis', duration: 37,
+      id: 'fr-a1-12-toujours-a-dix-huit-heures', order: 12, title: 'Toujours à dix-huit heures', titleEs: 'Siempre a las seis', duration: 19,
       characters: ['Léa', 'Inès'], location: 'Patio del edificio',
       objective: 'Comprender hábitos y frecuencia.',
       grammar: ['adverbes de fréquence', 'présent'],
@@ -345,7 +345,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['toujours/souvent/parfois/jamais', 'présent'], newVocabulary: ['panier', 'détective', 'porter'], possibleDifficulties: ['ne…jamais aparece como bloque'], estimatedDuration: 37, continuity: 'Relaciona la lista con la conducta de la portera sin resolverla.', pronunciationRisks: ['toujours', 'souvent'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-13-biscotte-au-balcon', order: 13, title: 'Biscotte au balcon', titleEs: 'Biscotte en el balcón', duration: 34,
+      id: 'fr-a1-13-biscotte-au-balcon', order: 13, title: 'Biscotte au balcon', titleEs: 'Biscotte en el balcón', duration: 17,
       characters: ['Léa', 'Hugo'], location: 'Patio interior',
       objective: 'Comprender acciones y capacidades básicas.',
       grammar: ['pouvoir + infinitif', 'présent', 'prépositions de lieu'],
@@ -371,7 +371,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['pouvoir + infinitif', 'sur/dans'], newVocabulary: ['balcon', 'échelle', 'ruban'], possibleDifficulties: ['peux/peut suenan igual'], estimatedDuration: 34, continuity: 'La cinta conecta directamente a Biscotte con el cuaderno.', pronunciationRisks: ['échelle', 'ruban'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-14-suivez-la-chatte', order: 14, title: 'Suivez Biscotte !', titleEs: '¡Sigan a Biscotte!', duration: 36,
+      id: 'fr-a1-14-suivez-la-chatte', order: 14, title: 'Suivez Biscotte !', titleEs: '¡Sigan a Biscotte!', duration: 25,
       characters: ['Madame Martin', 'Léa', 'Hugo'], location: 'Escaleras y sótano',
       objective: 'Seguir instrucciones y direcciones sencillas.',
       grammar: ['impératif', 'prépositions de lieu'],
@@ -398,7 +398,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['impératif', 'vers/à gauche'], newVocabulary: ['cave', 'étage', 'doucement'], possibleDifficulties: ['formas de vous en imperativo'], estimatedDuration: 36, continuity: 'Sigue físicamente la pista del episodio 13.', pronunciationRisks: ['suivez', 'descendez'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-15-la-boite-jaune', order: 15, title: 'La boîte jaune', titleEs: 'La caja amarilla', duration: 35,
+      id: 'fr-a1-15-la-boite-jaune', order: 15, title: 'La boîte jaune', titleEs: 'La caja amarilla', duration: 21,
       characters: ['Léa', 'Hugo', 'Madame Martin'], location: 'Sótano',
       objective: 'Describir objetos y elegir entre varias posibilidades.',
       grammar: ['adjectifs démonstratifs', 'couleurs', 'il y a'],
@@ -425,7 +425,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['cette', 'il y a', 'adjectifs'], newVocabulary: ['boîte', 'vieille', 'ruban'], possibleDifficulties: ['cette/ sept diferenciación auditiva por contexto'], estimatedDuration: 35, continuity: 'Relaciona la lista del episodio 11 con una celebración real.', pronunciationRisks: ['boîte', 'vieille'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-16-une-fete-secrete', order: 16, title: 'Une fête secrète', titleEs: 'Una fiesta secreta', duration: 38,
+      id: 'fr-a1-16-une-fete-secrete', order: 16, title: 'Une fête secrète', titleEs: 'Una fiesta secreta', duration: 22,
       characters: ['Madame Martin', 'Léa', 'Hugo'], location: 'Sótano',
       objective: 'Comprender planes inmediatos.',
       grammar: ['futur proche', 'aller + infinitif'],
@@ -452,7 +452,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['aller + infinitif', 'impératif gardez'], newVocabulary: ['anniversaire', 'décorer', 'secret'], possibleDifficulties: ['soixante requiere QA de pronunciación'], estimatedDuration: 38, continuity: 'Resuelve la falsa pista de la lista sin resolver aún el cuaderno.', pronunciationRisks: ['soixante', 'gâteau'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-17-il-pleut', order: 17, title: 'Il pleut !', titleEs: '¡Está lloviendo!', duration: 35,
+      id: 'fr-a1-17-il-pleut', order: 17, title: 'Il pleut !', titleEs: '¡Está lloviendo!', duration: 17,
       characters: ['Léa', 'Inès', 'Hugo'], location: 'Patio del edificio',
       objective: 'Comprender el clima y cambiar un plan sencillo.',
       grammar: ['expressions météorologiques', 'futur proche', 'mais'],
@@ -478,7 +478,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['il pleut', 'aller + infinitif', 'ne…pas'], newVocabulary: ['vent', 'parapluie', 'salle commune'], possibleDifficulties: ['du vent se aprende como bloque'], estimatedDuration: 35, continuity: 'Complica el plan de fiesta revelado en el episodio 16.', pronunciationRisks: ['pleut', 'parapluie'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-18-le-message-de-biscotte', order: 18, title: 'Le message de Biscotte', titleEs: 'El mensaje de Biscotte', duration: 36,
+      id: 'fr-a1-18-le-message-de-biscotte', order: 18, title: 'Le message de Biscotte', titleEs: 'El mensaje de Biscotte', duration: 16,
       characters: ['Léa', 'Hugo', 'Inès'], location: 'Sala del edificio',
       objective: 'Comprender una secuencia breve de acciones cotidianas.',
       grammar: ['présent', 'connecteurs puis/après', 'verbes irréguliers fréquents'],
@@ -504,7 +504,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['présent', 'puis', 'prendre/venir lexicalizados'], newVocabulary: ['page', 'dessin', 'papier'], possibleDifficulties: ['prend y prends suenan igual'], estimatedDuration: 36, continuity: 'Retoma el cuaderno tras varios episodios de la fiesta.', pronunciationRisks: ['dessin', 'prend'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-19-le-carnet-retrouve', order: 19, title: 'Le carnet retrouvé', titleEs: 'El cuaderno recuperado', duration: 38,
+      id: 'fr-a1-19-le-carnet-retrouve', order: 19, title: 'Le carnet retrouvé', titleEs: 'El cuaderno recuperado', duration: 20,
       characters: ['Léa', 'Hugo', 'Madame Martin'], location: 'Sótano, debajo de una mesa',
       objective: 'Integrar localización, posesión y descripciones.',
       grammar: ['révision être/avoir', 'prépositions de lieu', 'adjectifs possessifs'],
@@ -530,7 +530,7 @@ export const FRENCH_A1_SERIES: A1ListeningSeries = {
       audit: { level: 'A1', grammarUsed: ['sous/derrière', 'mon/ses', 'il manque'], newVocabulary: ['poussière', 'trésor', 'presque'], possibleDifficulties: ['retrouvé solo aparece en el título español y metadata'], estimatedDuration: 38, continuity: 'Resuelve el objeto central y deja un último gag.', pronunciationRisks: ['poussière', 'trésors'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a1-20-bon-anniversaire', order: 20, title: 'Bon anniversaire !', titleEs: '¡Feliz cumpleaños!', duration: 40,
+      id: 'fr-a1-20-bon-anniversaire', order: 20, title: 'Bon anniversaire !', titleEs: '¡Feliz cumpleaños!', duration: 23,
       characters: ['Léa', 'Hugo', 'Inès', 'Madame Martin'], location: 'Sala común del edificio',
       objective: 'Integrar presentaciones, gustos, planes y expresiones de celebración.',
       grammar: ['révision A1', 'futur proche', 'présent'],

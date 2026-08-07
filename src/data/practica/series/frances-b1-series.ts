@@ -49,7 +49,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     {
-      id: 'fr-b1-01-le-mot-sur-la-vitrine', order: 1, title: 'Le mot sur la vitrine', titleEs: 'El papel del escaparate', duration: 66,
+      id: 'fr-b1-01-le-mot-sur-la-vitrine', order: 1, title: 'Le mot sur la vitrine', titleEs: 'El papel del escaparate', duration: 35,
       characters: ['Léa', 'Hugo'], location: 'Acera, delante de la panadería',
       objective: 'Situar un hecho anterior a otro dentro de un relato en pasado.',
       grammar: ['plus-que-parfait', 'passé composé / imparfait (reprise)'],
@@ -76,7 +76,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['plus-que-parfait', 'futur simple', 'passé composé pronominal (il s’est tu)'], newVocabulary: ['vitrine', 'avoir honte', 'coller'], possibleDifficulties: ['distinguir «il avait pris» de «il a pris» sin apoyo escrito'], estimatedDuration: 66, continuity: 'Arranca dos años después del final de la temporada 2: la fiesta del barrio a la que se refieren es la misma cita anual de junio en la que Claire llegó con la mitad que faltaba de la receta.', pronunciationRisks: ['il s’est tu', 'avait honte'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-02-ce-dont-il-navait-jamais-parle', order: 2, title: 'Ce dont il n’avait jamais parlé', titleEs: 'Aquello de lo que nunca había hablado', duration: 68,
+      id: 'fr-b1-02-ce-dont-il-navait-jamais-parle', order: 2, title: 'Ce dont il n’avait jamais parlé', titleEs: 'Aquello de lo que nunca había hablado', duration: 39,
       characters: ['Léa', 'Hugo', 'Monsieur Bertin'], location: 'Obrador de la panadería',
       objective: 'Reconocer a qué se refiere el relativo dont dentro de una frase larga.',
       grammar: ['pronom relatif dont', 'plus-que-parfait (reprise)'],
@@ -103,7 +103,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['dont (complément de nom, de verbe et de ce)', 'plus-que-parfait', 'faire + infinitif'], newVocabulary: ['fournil', 'siège', 'se servir de'], possibleDifficulties: ['«dont» átono se apoya en la palabra anterior y casi desaparece'], estimatedDuration: 68, continuity: 'Da la razón de la decisión anunciada en el episodio 1 y nombra por primera vez al grupo cuya oferta Hugo había mencionado.', pronunciationRisks: ['dont je suis', 'congelée'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-03-lannee-ou-claire-est-revenue', order: 3, title: 'L’année où Claire est revenue', titleEs: 'El año en que volvió Claire', duration: 68,
+      id: 'fr-b1-03-lannee-ou-claire-est-revenue', order: 3, title: 'L’année où Claire est revenue', titleEs: 'El año en que volvió Claire', duration: 49,
       characters: ['Léa', 'Madame Martin'], location: 'Portería del edificio',
       objective: 'Entender el relativo où aplicado a tiempo y a lugar.',
       grammar: ['pronom relatif où', 'dont (reprise)'],
@@ -130,7 +130,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['où temporel et locatif', 'dont', 'ne explétif (plus dure que je ne pensais)'], newVocabulary: ['endroit', 'réaliste', 'se retrouver'], possibleDifficulties: ['«où» y «ou» suenan igual: solo el contexto los separa'], estimatedDuration: 68, continuity: 'Recoge la noticia del episodio 1 desde la portería y fecha el regreso de Claire dos años atrás, es decir, al final de la temporada 2.', pronunciationRisks: ['l’année où', 'je ne pensais'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-04-ce-que-dit-le-groupe', order: 4, title: 'Ce que dit le groupe', titleEs: 'Lo que dice el grupo', duration: 64,
+      id: 'fr-b1-04-ce-que-dit-le-groupe', order: 4, title: 'Ce que dit le groupe', titleEs: 'Lo que dice el grupo', duration: 48,
       characters: ['Madame Delcourt', 'Monsieur Bertin', 'Hugo'], location: 'Tienda de la panadería',
       objective: 'Seguir en estilo indirecto lo que una persona afirma o pide.',
       grammar: ['discours indirect au présent', 'relatifs (reprise)'],
@@ -157,7 +157,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['discours indirect avec que et si', 'demander à quelqu’un de / que', 'impératif + pronom (dites-lui)'], newVocabulary: ['enseigne', 'comptant', 'usine'], possibleDifficulties: ['«si» de estilo indirecto se confunde con «si» de condición'], estimatedDuration: 64, continuity: 'Pone rostro y cifra al grupo que Bertin había nombrado en el episodio 2; la sede en París se mantiene, aquí se añade el precio y la fábrica.', pronunciationRisks: ['cent quatre-vingt mille', 'enseigne'], recommendedChanges: ['Comprobar en la primera muestra «cent quatre-vingt mille euros»: es respuesta de una pregunta de detalle y debe oírse entero.'] },
     },
     {
-      id: 'fr-b1-05-ce-quines-a-repete', order: 5, title: 'Ce qu’Inès a répété', titleEs: 'Lo que repitió Inès', duration: 62,
+      id: 'fr-b1-05-ce-quines-a-repete', order: 5, title: 'Ce qu’Inès a répété', titleEs: 'Lo que repitió Inès', duration: 36,
       characters: ['Inès', 'Hugo'], location: 'Cafetería del barrio',
       objective: 'Notar cómo cambian los tiempos cuando se cuenta algo dicho antes.',
       grammar: ['discours indirect au passé (concordance)', 'plus-que-parfait (reprise)'],
@@ -184,7 +184,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['concordance des temps au discours indirect', 'plus-que-parfait', 'conditionnel comme futur du passé'], newVocabulary: ['poste', 'raconter que', 'faire une tête'], possibleDifficulties: ['«qu’elle partirait» suena casi igual que «qu’elle partira»'], estimatedDuration: 62, continuity: 'Es la primera vez que se nombra la oferta de Claire a Léa; Hugo la recibe deformada, y ese malentendido no se aclarará hasta el episodio 14.', pronunciationRisks: ['réfléchissait', 'partirait'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-06-il-faut-que-vous-choisissiez', order: 6, title: 'Il faut que vous choisissiez', titleEs: 'Hace falta que elijan', duration: 64,
+      id: 'fr-b1-06-il-faut-que-vous-choisissiez', order: 6, title: 'Il faut que vous choisissiez', titleEs: 'Hace falta que elijan', duration: 40,
       characters: ['Monsieur Bertin', 'Hugo', 'Léa'], location: 'Obrador de la panadería',
       objective: 'Reconocer el subjuntivo detrás de il faut que.',
       grammar: ['subjonctif présent après il faut que', 'discours indirect (reprise)'],
@@ -211,7 +211,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['il faut que + subjonctif', 'subjonctifs irréguliers (soyez, dises)', 'discours indirect au passé'], newVocabulary: ['dossier', 'complet', 'vérité'], possibleDifficulties: ['«apportez» y «apportiez» se distinguen por una semivocal muy breve'], estimatedDuration: 64, continuity: 'Convierte la candidatura que Hugo anunció ante Madame Delcourt en el episodio 4 en un plazo con fecha, y deja la tensión de Marsella sin resolver.', pronunciationRisks: ['apportiez', 'soyez'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-07-je-ne-veux-pas-que-tu-tendettes', order: 7, title: 'Je ne veux pas que tu t’endettes', titleEs: 'No quiero que te endeudes', duration: 62,
+      id: 'fr-b1-07-je-ne-veux-pas-que-tu-tendettes', order: 7, title: 'Je ne veux pas que tu t’endettes', titleEs: 'No quiero que te endeudes', duration: 38,
       characters: ['Hugo', 'Monsieur Bertin'], location: 'Trastienda de la panadería',
       objective: 'Distinguir lo que alguien quiere para sí y lo que quiere de otra persona.',
       grammar: ['subjonctif après vouloir que / souhaiter que', 'il faut que (reprise)'],
@@ -238,7 +238,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['vouloir / souhaiter / espérer que + subjonctif', 'il faut que', 'depuis + durée'], newVocabulary: ['s’endetter', 'suivre (accompagner)', 'chance'], possibleDifficulties: ['«aies» y «as» se distinguen apenas por el timbre de la vocal'], estimatedDuration: 62, continuity: 'Hugo lleva ahora cinco años en la panadería (eran tres en la temporada 2) y consigue de Bertin el permiso condicional que necesita para el plazo del episodio 6.', pronunciationRisks: ['t’endettes', 'que tu aies'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-08-bien-que-hugo-soit-serieux', order: 8, title: 'Bien que Hugo soit sérieux', titleEs: 'Aunque Hugo sea serio', duration: 64,
+      id: 'fr-b1-08-bien-que-hugo-soit-serieux', order: 8, title: 'Bien que Hugo soit sérieux', titleEs: 'Aunque Hugo sea serio', duration: 48,
       characters: ['Léa', 'Inès', 'Madame Martin'], location: 'Patio del edificio',
       objective: 'Entender una objeción introducida por bien que y un contraste con alors que.',
       grammar: ['bien que + subjonctif', 'alors que (opposition)'],
@@ -265,7 +265,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['bien que + subjonctif', 'alors que d’opposition', 'pronom en avec quantité'], newVocabulary: ['apport', 'économiser', 'chiffres'], possibleDifficulties: ['«quarante» y «quatorze» se confunden con ruido de fondo'], estimatedDuration: 64, continuity: 'Es la visita al banco que Hugo mencionaba en el episodio 6; Madame Martin mantiene la postura de venta que ya defendía en el episodio 3, pero por un motivo distinto.', pronunciationRisks: ['bien que Hugo soit', 'quarante mille'], recommendedChanges: ['Verificar «quarante mille» y «douze mille» en la primera muestra: los dos son respuesta de una pregunta de detalle.'] },
     },
     {
-      id: 'fr-b1-09-largument-de-madame-delcourt', order: 9, title: 'L’argument de Madame Delcourt', titleEs: 'El argumento de Madame Delcourt', duration: 62,
+      id: 'fr-b1-09-largument-de-madame-delcourt', order: 9, title: 'L’argument de Madame Delcourt', titleEs: 'El argumento de Madame Delcourt', duration: 53,
       characters: ['Madame Delcourt', 'Hugo', 'Léa'], location: 'Tienda de la panadería',
       objective: 'Seguir un desacuerdo cortés marcado por conectores de oposición.',
       grammar: ['cependant / pourtant / en revanche', 'bien que (reprise)'],
@@ -292,7 +292,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['cependant / pourtant / en revanche', 'bien que + subjonctif', 'mise en relief c’est… qui'], newVocabulary: ['solide', 'clientèle', 'murs (fonds de commerce)'], possibleDifficulties: ['«pourtant» al final de frase se pronuncia átono y casi se pierde'], estimatedDuration: 62, continuity: 'Retoma las seis semanas del plazo del episodio 6 y las cifras que el grupo había puesto sobre la mesa en el episodio 4.', pronunciationRisks: ['cependant', 'en revanche'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-10-si-jacceptais', order: 10, title: 'Si j’acceptais', titleEs: 'Si aceptara', duration: 62,
+      id: 'fr-b1-10-si-jacceptais', order: 10, title: 'Si j’acceptais', titleEs: 'Si aceptara', duration: 52,
       characters: ['Léa', 'Claire'], location: 'Teléfono: Lyon y Marsella',
       objective: 'Entender una hipótesis poco probable con si + imparfait.',
       grammar: ['si + imparfait, conditionnel présent', 'conditionnel présent'],
@@ -319,7 +319,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['si + imparfait → conditionnel présent', 'conditionnel de suggestion', 'depuis + durée'], newVocabulary: ['abandonner', 'racheter', 'investir'], possibleDifficulties: ['«je partais» y «je partirais» se separan por una sola sílaba'], estimatedDuration: 62, continuity: 'Es la oferta real de Claire, la misma que Inès había contado deformada en el episodio 5. Léa lleva tres años en Lyon: uno en la temporada 2 y dos desde entonces.', pronunciationRisks: ['rachèterais', 'investiriez'], recommendedChanges: ['Grabar a Claire con un filtro telefónico ligero, como en la temporada 2.'] },
     },
     {
-      id: 'fr-b1-11-lassociee-a-laquelle-personne-navait-pense', order: 11, title: 'L’associée à laquelle personne n’avait pensé', titleEs: 'La socia en la que nadie había pensado', duration: 70,
+      id: 'fr-b1-11-lassociee-a-laquelle-personne-navait-pense', order: 11, title: 'L’associée à laquelle personne n’avait pensé', titleEs: 'La socia en la que nadie había pensado', duration: 44,
       characters: ['Claire', 'Hugo', 'Léa'], location: 'Patio del edificio',
       objective: 'Identificar el antecedente de un relativo compuesto.',
       grammar: ['pronoms relatifs composés (lequel, laquelle, auquel)', 'conditionnel (reprise)'],
@@ -346,7 +346,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['lequel / laquelle / à laquelle / pour laquelle', 'dont', 'futur simple'], newVocabulary: ['associée', 'céder', 'oser'], possibleDifficulties: ['distinguir «à laquelle» de «laquelle» cuando la preposición se pega'], estimatedDuration: 70, continuity: 'Nace de la frase que Claire soltó al final del episodio 10 y cierra el agujero de treinta mil euros que el episodio 8 había abierto: doce mil de Hugo más treinta mil de Claire.', pronunciationRisks: ['à laquelle', 'quarante-deux mille'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-12-pour-que-le-fournil-reste-ouvert', order: 12, title: 'Pour que le fournil reste ouvert', titleEs: 'Para que el obrador siga abierto', duration: 66,
+      id: 'fr-b1-12-pour-que-le-fournil-reste-ouvert', order: 12, title: 'Pour que le fournil reste ouvert', titleEs: 'Para que el obrador siga abierto', duration: 42,
       characters: ['Léa', 'Monsieur Bertin', 'Hugo'], location: 'Obrador de la panadería',
       objective: 'Reconocer la finalidad y la anterioridad con pour que y avant que.',
       grammar: ['subjonctif après pour que / avant que', 'relatifs composés (reprise)'],
@@ -373,7 +373,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['pour que / avant que + subjonctif', 'sur laquelle', 'bien que + subjonctif'], newVocabulary: ['comme convenu', 'changer d’avis', 'là-dessus'], possibleDifficulties: ['«réponds» y «réponde» solo se separan por la consonante final'], estimatedDuration: 66, continuity: 'Cumple el plazo del 31 de octubre que Bertin había fijado en el episodio 6, con el aporte de cuarenta y dos mil euros cerrado en el episodio 11.', pronunciationRisks: ['que je réponde', 'quarante-deux mille'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-13-ce-que-jaurais-du-faire', order: 13, title: 'Ce que j’aurais dû faire', titleEs: 'Lo que debería haber hecho', duration: 62,
+      id: 'fr-b1-13-ce-que-jaurais-du-faire', order: 13, title: 'Ce que j’aurais dû faire', titleEs: 'Lo que debería haber hecho', duration: 58,
       characters: ['Claire', 'Madame Martin'], location: 'Portería del edificio',
       objective: 'Reconocer el reproche y el arrepentimiento sobre el pasado.',
       grammar: ['conditionnel passé', 'plus-que-parfait (reprise)'],
@@ -400,7 +400,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['conditionnel passé (j’aurais dû, j’aurais pu, j’aurais aimé)', 'plus-que-parfait', 'ne explétif'], newVocabulary: ['courageuse', 'soutenir', 'à l’époque'], possibleDifficulties: ['«j’aurais dû» se contrae mucho y suena casi como una sola sílaba'], estimatedDuration: 62, continuity: 'Los doce años sin verse y la carta guardada vienen de la temporada 2; aquí Solange abandona por fin la postura de venta que defendía en los episodios 3 y 8.', pronunciationRisks: ['j’aurais dû', 'courageuse'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-14-si-tu-mavais-parle', order: 14, title: 'Si tu m’avais parlé', titleEs: 'Si me hubieras hablado', duration: 68,
+      id: 'fr-b1-14-si-tu-mavais-parle', order: 14, title: 'Si tu m’avais parlé', titleEs: 'Si me hubieras hablado', duration: 39,
       characters: ['Léa', 'Hugo'], location: 'Obrador de la panadería, de noche',
       objective: 'Entender una hipótesis sobre un pasado que ya no puede cambiar.',
       grammar: ['si + plus-que-parfait, conditionnel passé', 'conditionnel passé (reprise)'],
@@ -427,7 +427,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['si + plus-que-parfait → conditionnel passé', 'plus-que-parfait', 'accord du participe (appelée, partie, restée, venue)'], newVocabulary: ['fâchée', 'imaginer', 'le soir même'], possibleDifficulties: ['tres formas compuestas seguidas en la misma frase'], estimatedDuration: 68, continuity: 'Deshace el malentendido que Inès sembró en el episodio 5 y confirma la respuesta real de Léa a la oferta que Claire le hizo en el episodio 10.', pronunciationRisks: ['je n’aurais rien', 'fâchée'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-15-ce-que-la-banque-a-repondu', order: 15, title: 'Ce que la banque a répondu', titleEs: 'Lo que respondió el banco', duration: 64,
+      id: 'fr-b1-15-ce-que-la-banque-a-repondu', order: 15, title: 'Ce que la banque a répondu', titleEs: 'Lo que respondió el banco', duration: 39,
       characters: ['Léa', 'Hugo', 'Inès'], location: 'Cafetería del barrio',
       objective: 'Distinguir tres hipótesis distintas dentro de una misma conversación.',
       grammar: ['les trois types de si (reprise)', 'discours indirect (reprise)'],
@@ -454,7 +454,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['si + présent / imparfait / plus-que-parfait', 'discours indirect au passé', 'pronom en'], newVocabulary: ['prêter', 'atteindre', 'signature'], possibleDifficulties: ['tres estructuras con si seguidas exigen oír bien el tiempo verbal'], estimatedDuration: 64, continuity: 'Convierte en respuesta oficial el aporte de cuarenta y dos mil euros cerrado en el episodio 11 y entregado en el episodio 12; el enfado del episodio 14 ya está resuelto.', pronunciationRisks: ['prêterait', 'je m’étais tue'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-16-je-ne-crois-pas-quelle-mente', order: 16, title: 'Je ne crois pas qu’elle mente', titleEs: 'No creo que esté mintiendo', duration: 64,
+      id: 'fr-b1-16-je-ne-crois-pas-quelle-mente', order: 16, title: 'Je ne crois pas qu’elle mente', titleEs: 'No creo que esté mintiendo', duration: 39,
       characters: ['Inès', 'Léa', 'Hugo'], location: 'Patio del edificio',
       objective: 'Reconocer el subjuntivo tras la duda y la emoción.',
       grammar: ['subjonctif après le doute et l’émotion', 'subjonctif (reprise)'],
@@ -481,7 +481,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['subjonctif après doute et émotion', 'subjonctif passé (ait changé, ayez perdu)', 'il est possible que'], newVocabulary: ['se méfier', 'mentir', 'convaincre'], possibleDifficulties: ['«mente» y «ment» se distinguen solo por la consonante final audible'], estimatedDuration: 64, continuity: 'El cambio de opinión de Madame Martin viene del episodio 13, y los dos meses que Inès lamenta son los que van del episodio 5 al 14.', pronunciationRisks: ['qu’elle mente', 'qu’elle sache'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-17-la-decision-de-monsieur-bertin', order: 17, title: 'La décision de Monsieur Bertin', titleEs: 'La decisión de Monsieur Bertin', duration: 66,
+      id: 'fr-b1-17-la-decision-de-monsieur-bertin', order: 17, title: 'La décision de Monsieur Bertin', titleEs: 'La decisión de Monsieur Bertin', duration: 49,
       characters: ['Monsieur Bertin', 'Madame Martin', 'Hugo', 'Léa'], location: 'Tienda de la panadería, antes de abrir',
       objective: 'Seguir una decisión justificada con conectores de oposición.',
       grammar: ['connecteurs (reprise)', 'subjonctif (reprise)'],
@@ -508,7 +508,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['bien que / alors que / cependant', 'il faut que + subjonctif', 'futur simple'], newVocabulary: ['notaire', 'pièces (documents)', 'fermer l’œil'], possibleDifficulties: ['«il faut que» e «il faudra que» se parecen mucho seguidos'], estimatedDuration: 66, continuity: 'Responde al plazo del viernes que Madame Delcourt había puesto en el episodio 16 y al expediente entregado en el episodio 12; los tres meses de espera cuentan desde el papel del escaparate del episodio 1.', pronunciationRisks: ['bien que son offre soit', 'quinze décembre'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-18-la-carte-de-visite', order: 18, title: 'La carte de visite', titleEs: 'La tarjeta de visita', duration: 66,
+      id: 'fr-b1-18-la-carte-de-visite', order: 18, title: 'La carte de visite', titleEs: 'La tarjeta de visita', duration: 49,
       characters: ['Madame Delcourt', 'Hugo', 'Léa'], location: 'Acera, delante de la panadería',
       objective: 'Reconstruir una conversación anterior contada en estilo indirecto.',
       grammar: ['discours indirect (reprise)', 'relatifs composés (reprise)'],
@@ -535,7 +535,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['discours indirect au passé', 'dans laquelle', 'où temporel', 'conditionnel passé (vous auriez pu)'], newVocabulary: ['apprenti', 'concurrent', 'insister'], possibleDifficulties: ['«si vous teniez» es interrogativa indirecta, no una condición'], estimatedDuration: 66, continuity: 'Sucede al no de Bertin del episodio 17 y recoge literalmente la frase que Madame Delcourt había dicho en el episodio 9 sobre su oficio.', pronunciationRisks: ['dans laquelle', 'apprenti'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-19-la-veille-de-la-signature', order: 19, title: 'La veille de la signature', titleEs: 'La víspera de la firma', duration: 68,
+      id: 'fr-b1-19-la-veille-de-la-signature', order: 19, title: 'La veille de la signature', titleEs: 'La víspera de la firma', duration: 39,
       characters: ['Inès', 'Hugo', 'Léa'], location: 'Cocina de Léa',
       objective: 'Integrar subjuntivo e hipótesis en una escena rápida.',
       grammar: ['subjonctif (reprise)', 'hypothèses avec si (reprise)'],
@@ -562,7 +562,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       audit: { level: 'B1', grammarUsed: ['il faut que + subjonctif', 'bien que + subjonctif', 'si + présent → futur', 'si + plus-que-parfait → conditionnel passé'], newVocabulary: ['déplacer', 'réveiller', 'pardonner'], possibleDifficulties: ['dos tipos de si distintos en menos de treinta segundos'], estimatedDuration: 68, continuity: 'Es la noche anterior al quince de diciembre fijado en el episodio 17; la travesura de Biscotte con los papeles y el sótano vienen de las temporadas 1 y 2, y la estancia en Marsella nace de la oferta del episodio 10.', pronunciationRisks: ['si tu étais partie', 'pardonné'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-20-les-cles-du-fournil', order: 20, title: 'Les clés du fournil', titleEs: 'Las llaves del obrador', duration: 64,
+      id: 'fr-b1-20-les-cles-du-fournil', order: 20, title: 'Les clés du fournil', titleEs: 'Las llaves del obrador', duration: 43,
       characters: ['Tous', 'Monsieur Bertin', 'Hugo', 'Claire', 'Madame Martin', 'Léa'], location: 'Acera, delante de la panadería, el 15 de diciembre',
       objective: 'Integrar subjuntivo, hipótesis y relativos en una escena de cierre.',
       grammar: ['révision B1', 'si + plus-que-parfait', 'subjonctif'],

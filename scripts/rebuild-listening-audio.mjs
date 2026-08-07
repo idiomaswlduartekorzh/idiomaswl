@@ -201,7 +201,7 @@ for (const { file, lang, level } of files) {
     fs.writeFileSync(listFile, leveled.map((s, i) => (i ? `file '${silence}'\nfile '${s}'` : `file '${s}'`)).join('\n'))
     const out = path.join(outDir, `listening-${String(episode.order).padStart(2, '0')}.mp3`)
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', listFile,
-      '-af', 'alimiter=level_in=1:level_out=1:limit=0.7:attack=5:release=50:level=false',
+      '-af', `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11,alimiter=level_in=1:level_out=1:limit=0.7:attack=5:release=50:level=false`,
       '-c:a', 'libmp3lame', '-b:a', BITRATE, '-ar', '44100', '-ac', '1', out])
     fs.rmSync(temp, { recursive: true, force: true })
     rehechos += 1

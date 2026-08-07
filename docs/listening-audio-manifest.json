@@ -2016,6 +2016,483 @@
         "style": 0.15,
         "use_speaker_boost": true
       }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 1,
+      "id": "fr-b1-01-le-mot-sur-la-vitrine",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-01.mp3",
+      "caracteres": 571,
+      "duracion_real": 34.75,
+      "caracteres_por_segundo": 16.43,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 2,
+      "id": "fr-b1-02-ce-dont-il-navait-jamais-parle",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-02.mp3",
+      "caracteres": 591,
+      "duracion_real": 38.84,
+      "caracteres_por_segundo": 15.22,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Monsieur Bertin": "t2969wgUwHbBoVCZNHRU",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 3,
+      "id": "fr-b1-03-lannee-ou-claire-est-revenue",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-03.mp3",
+      "caracteres": 598,
+      "duracion_real": 48.65,
+      "caracteres_por_segundo": 12.29,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Madame Martin": "9UK7PgAsdvmlErBPenNb"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 4,
+      "id": "fr-b1-04-ce-que-dit-le-groupe",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-04.mp3",
+      "caracteres": 642,
+      "duracion_real": 48.38,
+      "caracteres_por_segundo": 13.27,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Madame Delcourt": "9UK7PgAsdvmlErBPenNb",
+        "Monsieur Bertin": "t2969wgUwHbBoVCZNHRU",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 5,
+      "id": "fr-b1-05-ce-quines-a-repete",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-05.mp3",
+      "caracteres": 628,
+      "duracion_real": 35.51,
+      "caracteres_por_segundo": 17.68,
+      "duracion_declarada_previa": 62,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Inès": "MORRgNRPjASocDhPs2IB",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 6,
+      "id": "fr-b1-06-il-faut-que-vous-choisissiez",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-06.mp3",
+      "caracteres": 620,
+      "duracion_real": 40.14,
+      "caracteres_por_segundo": 15.45,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Monsieur Bertin": "t2969wgUwHbBoVCZNHRU",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 7,
+      "id": "fr-b1-07-je-ne-veux-pas-que-tu-tendettes",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-07.mp3",
+      "caracteres": 631,
+      "duracion_real": 38.08,
+      "caracteres_por_segundo": 16.57,
+      "duracion_declarada_previa": 62,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Monsieur Bertin": "t2969wgUwHbBoVCZNHRU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 8,
+      "id": "fr-b1-08-bien-que-hugo-soit-serieux",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-08.mp3",
+      "caracteres": 677,
+      "duracion_real": 47.66,
+      "caracteres_por_segundo": 14.21,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Inès": "MORRgNRPjASocDhPs2IB",
+        "Madame Martin": "9UK7PgAsdvmlErBPenNb"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 9,
+      "id": "fr-b1-09-largument-de-madame-delcourt",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-09.mp3",
+      "caracteres": 681,
+      "duracion_real": 53.26,
+      "caracteres_por_segundo": 12.79,
+      "duracion_declarada_previa": 62,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Madame Delcourt": "9UK7PgAsdvmlErBPenNb",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 10,
+      "id": "fr-b1-10-si-jacceptais",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-10.mp3",
+      "caracteres": 732,
+      "duracion_real": 51.94,
+      "caracteres_por_segundo": 14.09,
+      "duracion_declarada_previa": 62,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Claire": "EMuO6fFLrXKOryHzij6K",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 11,
+      "id": "fr-b1-11-lassociee-a-laquelle-personne-navait-pense",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-11.mp3",
+      "caracteres": 657,
+      "duracion_real": 44.26,
+      "caracteres_por_segundo": 14.84,
+      "duracion_declarada_previa": 70,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Claire": "EMuO6fFLrXKOryHzij6K",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 12,
+      "id": "fr-b1-12-pour-que-le-fournil-reste-ouvert",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-12.mp3",
+      "caracteres": 659,
+      "duracion_real": 42.13,
+      "caracteres_por_segundo": 15.64,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Monsieur Bertin": "t2969wgUwHbBoVCZNHRU",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 13,
+      "id": "fr-b1-13-ce-que-jaurais-du-faire",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-13.mp3",
+      "caracteres": 680,
+      "duracion_real": 57.66,
+      "caracteres_por_segundo": 11.79,
+      "duracion_declarada_previa": 62,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Claire": "EMuO6fFLrXKOryHzij6K",
+        "Madame Martin": "9UK7PgAsdvmlErBPenNb"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 14,
+      "id": "fr-b1-14-si-tu-mavais-parle",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-14.mp3",
+      "caracteres": 626,
+      "duracion_real": 38.76,
+      "caracteres_por_segundo": 16.15,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 15,
+      "id": "fr-b1-15-ce-que-la-banque-a-repondu",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-15.mp3",
+      "caracteres": 661,
+      "duracion_real": 38.7,
+      "caracteres_por_segundo": 17.08,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Inès": "MORRgNRPjASocDhPs2IB"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 16,
+      "id": "fr-b1-16-je-ne-crois-pas-quelle-mente",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-16.mp3",
+      "caracteres": 668,
+      "duracion_real": 38.59,
+      "caracteres_por_segundo": 17.31,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Inès": "MORRgNRPjASocDhPs2IB",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 17,
+      "id": "fr-b1-17-la-decision-de-monsieur-bertin",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-17.mp3",
+      "caracteres": 641,
+      "duracion_real": 48.96,
+      "caracteres_por_segundo": 13.09,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Monsieur Bertin": "t2969wgUwHbBoVCZNHRU",
+        "Madame Martin": "9UK7PgAsdvmlErBPenNb",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 18,
+      "id": "fr-b1-18-la-carte-de-visite",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-18.mp3",
+      "caracteres": 698,
+      "duracion_real": 48.71,
+      "caracteres_por_segundo": 14.33,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Madame Delcourt": "9UK7PgAsdvmlErBPenNb",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 19,
+      "id": "fr-b1-19-la-veille-de-la-signature",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-19.mp3",
+      "caracteres": 650,
+      "duracion_real": 39,
+      "caracteres_por_segundo": 16.67,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Inès": "MORRgNRPjASocDhPs2IB",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "frances",
+      "episodio": 20,
+      "id": "fr-b1-20-les-cles-du-fournil",
+      "piloto": false,
+      "archivo": "public/audio/frances/b1/listening-20.mp3",
+      "caracteres": 623,
+      "duracion_real": 43.45,
+      "caracteres_por_segundo": 14.34,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Tous": "mNu8EQcIlFZdOJs7yfhe",
+        "Monsieur Bertin": "t2969wgUwHbBoVCZNHRU",
+        "Hugo": "yG4Uc56cLYQyZFnWaYv2",
+        "Claire": "EMuO6fFLrXKOryHzij6K",
+        "Madame Martin": "9UK7PgAsdvmlErBPenNb",
+        "Léa": "mNu8EQcIlFZdOJs7yfhe"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
     }
   ]
 }

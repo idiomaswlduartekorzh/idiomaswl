@@ -75,6 +75,7 @@ const CPS_ESTIMADO = {
  *   tanda coreano   12.778 car · flash_v2_5      → 3.566 créditos → 0,279
  *   tanda japonés    9.577 car · flash_v2_5      → 2.653 créditos → 0,277
  *   tanda ruso      23.878 car · flash_v2_5      → 6.581 créditos → 0,276
+ *   tanda portugués 27.442 car · flash_v2_5      → 7.696 créditos → 0,280
  *
  * La primera hipótesis fue que el descuento venía de la escritura: el hangul a 0,55
  * frente al inglés de este repo, que sale a 0,965. El ruso la desmintió — cirílico, y
@@ -83,9 +84,11 @@ const CPS_ESTIMADO = {
  * como con flash (0,276 sobre 0,5).
  *
  * De dónde sale ese 0,55 no está documentado y no se sabe. Lo que sí está medido, sobre
- * 46.233 caracteres en tres alfabetos, es que se cumple. El latino sigue sin medir: si se
- * comportara como el inglés viejo del repo, las tres tandas que faltan costarían el doble.
- * Ambos escenarios caben en el saldo, así que no bloquea nada.
+ * 73.675 caracteres en CUATRO alfabetos —hangul, kana/kanji, cirílico y latino—, es que se
+ * cumple igual en todos. El portugués lo cerró: 0,280, la misma tarifa que el coreano. Así
+ * que la hipótesis de que el descuento venía de la escritura queda descartada del todo, y
+ * las generaciones antiguas en inglés a 0,965 tendrán otra explicación —otro plan, u otra
+ * vía de generación— que no afecta a este proyecto.
  *
  * Y una trampa que ya costó un susto: el contador de la cuenta VA CON RETRASO. Leído justo
  * al terminar el piloto daba 470 créditos donde se habían gastado 731. Medir en caliente
@@ -96,7 +99,7 @@ const CREDITOS_POR_CARACTER = {
   eleven_flash_v2_5: { medido: 0.277, nominal: 0.5 },
 }
 /** Idiomas con tarifa medida de verdad en una tanda completa. */
-const TARIFA_MEDIDA = new Set(['coreano', 'japones', 'ruso'])
+const TARIFA_MEDIDA = new Set(['coreano', 'japones', 'ruso', 'portugues'])
 
 function creditosDe(lang, chars, model) {
   const tabla = CREDITOS_POR_CARACTER[model] ?? CREDITOS_POR_CARACTER.eleven_multilingual_v2
@@ -337,7 +340,7 @@ function dryRun(casting) {
     const rango = techo > total ? ` (hasta ${techo.toLocaleString('es')} si el latino paga tarifa nominal)` : ''
     console.log(`  ${model.padEnd(23)} → ${total.toLocaleString('es')} créditos${rango}`)
   }
-  console.log('  Tarifa medida sobre 46.233 caracteres en coreano, japonés y ruso. El latino aún sin medir.')
+  console.log('  Tarifa medida sobre 73.675 caracteres en hangul, kana, cirílico y latino: 0,277-0,280 en los cuatro.')
 
   const bands = Object.entries(DURATION_BANDS).map(([level, [min, max]]) => `${level.toUpperCase()} ${min}–${max}s`).join(' · ')
   if (outOfBand.length) {
@@ -494,6 +497,18 @@ function concatWithSilence(segments, outputPath) {
 
   // Una única codificación a mp3, sobre el PCM ya pegado.
   /**
+   * Nivelado final del episodio entero, además del que se hace turno a turno.
+   *
+   * Los dos hacen cosas distintas y hacen falta los dos. El de cada turno iguala las voces
+   * ENTRE SÍ, que es lo que arregla que una hable más bajo que otra. Este fija el nivel
+   * ABSOLUTO del episodio, que el otro no puede garantizar: `loudnorm` mide mal en
+   * fragmentos de dos o tres segundos, y ese error se acumula. Se vio en el francés, cuyos
+   * turnos son más cortos: nueve episodios salieron entre −18,6 y −19,2 LUFS cuando el
+   * objetivo es −16.
+   *
+   * Después va el limitador, sobre la señal ya nivelada.
+   */
+  /**
    * Limitador antes de codificar. `loudnorm` en una pasada apunta al objetivo de sonoridad
    * pero no garantiza el techo de pico: la auditoría encontró episodios a +2,3 dBFS, que es
    * saturación audible. Se aplica sobre el PCM ya pegado, una sola vez, para no comprimir
@@ -509,7 +524,7 @@ function concatWithSilence(segments, outputPath) {
    * error y no hizo nada, y los picos siguieron a 0 dBFS en 85 episodios.
    */
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', listFile,
-    '-af', 'alimiter=level_in=1:level_out=1:limit=0.7:attack=5:release=50:level=false',
+    '-af', `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11,alimiter=level_in=1:level_out=1:limit=0.7:attack=5:release=50:level=false`,
     '-c:a', 'libmp3lame', '-b:a', BITRATE, '-ar', '44100', '-ac', '1', outputPath])
 }
 
@@ -591,7 +606,7 @@ async function generate(casting) {
          * Antônio!». Dos voces encima de otra lo hacen imposible por bien mezcladas que
          * estén. El grupo se entiende por el guion, que dice quién habla, no por el audio.
          */
-        const audio = await speak(common)
+        const audio = await speak({ ...common, voiceId: voice.voice_id })
         spent += turn.target.length
         fs.writeFileSync(segment, audio)
         segments.push(segment)

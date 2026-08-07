@@ -37,7 +37,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     {
-      id: 'fr-a2-01-une-carte-dans-le-carnet', order: 1, title: 'Une carte dans le carnet', titleEs: 'Una tarjeta en el cuaderno', duration: 48,
+      id: 'fr-a2-01-une-carte-dans-le-carnet', order: 1, title: 'Une carte dans le carnet', titleEs: 'Una tarjeta en el cuaderno', duration: 31,
       characters: ['Léa', 'Inès'], location: 'Habitación de Léa',
       objective: 'Entender un relato breve de acciones terminadas en pasado.',
       grammar: ['passé composé avec avoir', 'participes passés fréquents'],
@@ -64,7 +64,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['passé composé avec avoir', 'il manque / il reste', 'questions avec quoi'], newVocabulary: ['déchirer', 'moitié', 'ingrédient'], possibleDifficulties: ['distinguir «j’ai écrit» de «j’écris» sin apoyo escrito'], estimatedDuration: 48, continuity: 'Arranca donde terminó la temporada 1: el cuaderno rojo regalado en el cumpleaños de Madame Martin.', pronunciationRisks: ['j’ai écrit', 'déchiré'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-02-le-papier-de-la-boulangerie', order: 2, title: 'Le papier de la boulangerie', titleEs: 'El papel de la panadería', duration: 50,
+      id: 'fr-a2-02-le-papier-de-la-boulangerie', order: 2, title: 'Le papier de la boulangerie', titleEs: 'El papel de la panadería', duration: 32,
       characters: ['Léa', 'Hugo'], location: 'Panadería del barrio',
       objective: 'Distinguir los verbos que forman el pasado con être.',
       grammar: ['passé composé avec être', 'accord du participe passé'],
@@ -91,7 +91,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['passé composé avec être', 'accord venue/sortie', 'négation ne…jamais'], newVocabulary: ['identique', 'silencieux', 'utiliser'], possibleDifficulties: ['elegir entre avoir y être según el verbo'], estimatedDuration: 50, continuity: 'La tarjeta del episodio 1 se lleva a la panadería, el lugar de trabajo de Hugo desde la temporada 1.', pronunciationRisks: ['descendu', 'silencieux'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-03-les-deux-soeurs', order: 3, title: 'Les deux sœurs', titleEs: 'Las dos hermanas', duration: 48,
+      id: 'fr-a2-03-les-deux-soeurs', order: 3, title: 'Les deux sœurs', titleEs: 'Las dos hermanas', duration: 39,
       characters: ['Léa', 'Madame Martin'], location: 'Portería del edificio',
       objective: 'Comprender descripciones del pasado con imparfait.',
       grammar: ['imparfait', 'description au passé'],
@@ -118,7 +118,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['imparfait', 'il y avait', 'questions avec vous'], newVocabulary: ['arbre', 'sentir', 'préféré'], possibleDifficulties: ['terminaciones -ait / -aient suenan igual'], estimatedDuration: 48, continuity: 'Retoma la foto de la caja amarilla que aparecía en el episodio 15 de la temporada 1.', pronunciationRisks: ['étions', 'habitiez'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-04-le-jour-du-depart', order: 4, title: 'Le jour du départ', titleEs: 'El día de la partida', duration: 50,
+      id: 'fr-a2-04-le-jour-du-depart', order: 4, title: 'Le jour du départ', titleEs: 'El día de la partida', duration: 38,
       characters: ['Léa', 'Madame Martin'], location: 'Portería del edificio',
       objective: 'Distinguir el decorado del pasado y los hechos puntuales.',
       grammar: ['imparfait / passé composé', 'connecteurs au début, après'],
@@ -145,7 +145,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['imparfait de fond', 'passé composé d’action', 'au début / après'], newVocabulary: ['départ', 'port', 'continuer'], possibleDifficulties: ['alternancia rápida entre los dos pasados en la misma frase'], estimatedDuration: 50, continuity: 'Completa el retrato de Claire iniciado en el episodio anterior con la foto de las dos hermanas.', pronunciationRisks: ['pleuvait', 'pâtisserie'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-05-une-recette-a-moitie', order: 5, title: 'Une recette incomplète', titleEs: 'Una receta incompleta', duration: 52,
+      id: 'fr-a2-05-une-recette-a-moitie', order: 5, title: 'Une recette incomplète', titleEs: 'Una receta incompleta', duration: 31,
       characters: ['Léa', 'Hugo', 'Inès'], location: 'Cocina de Léa',
       objective: 'Reconocer a qué sustantivo sustituye un pronombre de objeto directo.',
       grammar: ['pronoms COD le/la/les', 'passé composé (reprise)'],
@@ -172,7 +172,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['COD le/la/les', 'on + présent', 'négation ne…rien'], newVocabulary: ['farine', 'four', 'brûler'], possibleDifficulties: ['«le» pronombre frente a «le» artículo'], estimatedDuration: 52, continuity: 'La receta a medias del episodio 1 pasa de misterio a proyecto de cocina.', pronunciationRisks: ['œufs', 'brûler'], recommendedChanges: ['Validar en la primera muestra «quatre œufs»: el plural es /ø/, no /œf/, y es la respuesta de una pregunta de detalle.'] },
     },
     {
-      id: 'fr-a2-06-ecris-lui', order: 6, title: 'Écris-lui !', titleEs: '¡Escríbele!', duration: 52,
+      id: 'fr-a2-06-ecris-lui', order: 6, title: 'Écris-lui !', titleEs: '¡Escríbele!', duration: 30,
       characters: ['Léa', 'Inès'], location: 'Cafetería de la universidad',
       objective: 'Identificar a quién se dirige la acción con los pronombres lui y leur.',
       grammar: ['pronoms COI lui/leur', 'impératif avec pronom'],
@@ -199,7 +199,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['COI lui', 'impératif + pronom', 'si + présent'], newVocabulary: ['gentiment', 'courage', 'courte'], possibleDifficulties: ['«lui» vale para él y para ella'], estimatedDuration: 52, continuity: 'Después de conocer la historia de Claire, Léa da el primer paso para contactarla y descubre que Madame Martin esquiva el tema de la dirección: por eso hará falta buscarla en la cave.', pronunciationRisks: ['Écris-lui', 'gentiment'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-07-on-y-va', order: 7, title: 'On y va ?', titleEs: '¿Vamos?', duration: 50,
+      id: 'fr-a2-07-on-y-va', order: 7, title: 'On y va ?', titleEs: '¿Vamos?', duration: 33,
       characters: ['Léa', 'Hugo', 'Monsieur Bertin'], location: 'Sótano de la panadería',
       objective: 'Entender el pronombre y como sustituto de un lugar.',
       grammar: ['pronom y', 'imparfait (reprise)'],
@@ -226,7 +226,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['pronom y', 'imparfait', 'impératif Attendez/Cherchons'], newVocabulary: ['ranger', 'génération', 'lampe'], possibleDifficulties: ['«y» es muy breve y se apoya en el verbo siguiente'], estimatedDuration: 50, continuity: 'Sigue la pista del papel de panadería que Hugo identificó en el episodio 2.', pronunciationRisks: ['j’y range', 'générations'], recommendedChanges: ['Comprobar la liaison de «quarante ans» /kaʁɑ̃t‿ɑ̃/: el número es la respuesta de una pregunta de detalle.'] },
     },
     {
-      id: 'fr-a2-08-jen-ai-des-centaines', order: 8, title: 'J’en ai des centaines', titleEs: 'Tengo cientos', duration: 50,
+      id: 'fr-a2-08-jen-ai-des-centaines', order: 8, title: 'J’en ai des centaines', titleEs: 'Tengo cientos', duration: 31,
       characters: ['Léa', 'Hugo', 'Monsieur Bertin'], location: 'Sótano de la panadería',
       objective: 'Entender el pronombre en con cantidades.',
       grammar: ['pronom en', 'quantités'],
@@ -253,7 +253,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['pronom en', 'quantités avec des/du', 'passé composé'], newVocabulary: ['centaine', 'caramel', 'emporter'], possibleDifficulties: ['«en» delante del verbo se pega a la sílaba siguiente'], estimatedDuration: 50, continuity: 'Continúa la búsqueda en la cave abierta en el episodio anterior.', pronunciationRisks: ['j’en ai', 'automne'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-09-plus-sucre-moins-facile', order: 9, title: 'Plus sucré, moins facile', titleEs: 'Más dulce, menos fácil', duration: 50,
+      id: 'fr-a2-09-plus-sucre-moins-facile', order: 9, title: 'Plus sucré, moins facile', titleEs: 'Más dulce, menos fácil', duration: 30,
       characters: ['Léa', 'Hugo', 'Inès'], location: 'Cocina de Léa',
       objective: 'Comparar cualidades entre dos cosas.',
       grammar: ['comparatif plus/moins/aussi… que', 'meilleur / moins bon'],
@@ -280,7 +280,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['plus/moins/aussi… que', 'meilleur', 'moins bon'], newVocabulary: ['margarine', 'dessert', 'franchement'], possibleDifficulties: ['«plus» final se pronuncia o no según la frase'], estimatedDuration: 50, continuity: 'Es el sábado de cocina que planearon en el episodio 5; el fracaso los empuja a pedir ayuda a Madame Martin, que es lo que abre el episodio 10. No se nombra el limón: ese descubrimiento pertenece al episodio 10.', pronunciationRisks: ['meilleur', 'sucrée'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-10-dur-comme-une-pierre', order: 10, title: 'Dur comme une pierre', titleEs: 'Duro como una piedra', duration: 50,
+      id: 'fr-a2-10-dur-comme-une-pierre', order: 10, title: 'Dur comme une pierre', titleEs: 'Duro como una piedra', duration: 37,
       characters: ['Léa', 'Hugo', 'Madame Martin'], location: 'Cocina de Léa',
       objective: 'Seguir una descripción comparativa para identificar un objeto.',
       grammar: ['comparatif (reprise)', 'imparfait d’habitude'],
@@ -307,7 +307,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['aussi… que', 'plus petit que', 'imparfait ajoutait'], newVocabulary: ['pierre', 'odeur', 'acide'], possibleDifficulties: ['elisión qu’une en habla rápida'], estimatedDuration: 50, continuity: 'Retoma el pastel fallido del episodio 9 y añade la pieza que falta.', pronunciationRisks: ['qu’une pierre', 'acide'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-11-la-fete-du-quartier', order: 11, title: 'La fête du quartier', titleEs: 'La fiesta del barrio', duration: 52,
+      id: 'fr-a2-11-la-fete-du-quartier', order: 11, title: 'La fête du quartier', titleEs: 'La fiesta del barrio', duration: 30,
       characters: ['Léa', 'Hugo', 'Inès'], location: 'Patio del edificio',
       objective: 'Comprender planes con futuro simple.',
       grammar: ['futur simple', 'avoir lieu'],
@@ -334,7 +334,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['futur simple régulier et irrégulier', 'avoir lieu', 'quand + futur'], newVocabulary: ['avoir lieu', 'progrès', 'part'], possibleDifficulties: ['futuro y condicional se parecen mucho al oído'], estimatedDuration: 52, continuity: 'Convierte la receta reconstruida en un objetivo con fecha. Todo ocurre en la cour, el patio donde ya se preparó la fiesta de la temporada 1 y donde transcurre el episodio 20.', pronunciationRisks: ['aura lieu', 'décorerai'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-12-une-adresse-a-marseille', order: 12, title: 'Une adresse à Marseille', titleEs: 'Una dirección en Marsella', duration: 52,
+      id: 'fr-a2-12-une-adresse-a-marseille', order: 12, title: 'Une adresse à Marseille', titleEs: 'Una dirección en Marsella', duration: 34,
       characters: ['Léa', 'Hugo', 'Monsieur Bertin'], location: 'Trastienda de la panadería',
       objective: 'Comprender condiciones reales con si + presente y futuro.',
       grammar: ['si + présent, futur simple', 'futur simple (reprise)'],
@@ -361,7 +361,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['si + présent + futur', 'futur simple', 'COI lui'], newVocabulary: ['inventer', 'boulanger', 'rue'], possibleDifficulties: ['no trasladar el futuro detrás de «si»'], estimatedDuration: 52, continuity: 'Cierra la búsqueda en la cave de los episodios 7 y 8 con un dato útil. Bertin habla de SUS cuadernos, no de los de Claire: en el episodio 8 dijo que ella se llevó los suyos a Marsella.', pronunciationRisks: ['appellerai', 'Oliviers'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-13-un-coup-de-telephone', order: 13, title: 'Un coup de téléphone', titleEs: 'Una llamada de teléfono', duration: 50,
+      id: 'fr-a2-13-un-coup-de-telephone', order: 13, title: 'Un coup de téléphone', titleEs: 'Una llamada de teléfono', duration: 29,
       characters: ['Léa', 'Inès'], location: 'Habitación de Léa',
       objective: 'Reconocer las fórmulas de cortesía en condicional.',
       grammar: ['conditionnel de politesse', 'questions polies'],
@@ -388,7 +388,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['conditionnel de politesse', 'questions avec inversion', 'comparatif mieux que'], newVocabulary: ['polie', 'ajouter', 'se présenter'], possibleDifficulties: ['distinguir «je voudrais» de «je voulais» al oído'], estimatedDuration: 50, continuity: 'Prepara la llamada que la dirección del episodio 12 hizo posible.', pronunciationRisks: ['Pourriez-vous', 'j’aurais'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-14-allo-marseille', order: 14, title: 'Allô, Marseille', titleEs: 'Aló, Marsella', duration: 54,
+      id: 'fr-a2-14-allo-marseille', order: 14, title: 'Allô, Marseille', titleEs: 'Aló, Marsella', duration: 38,
       characters: ['Léa', 'Claire'], location: 'Teléfono: Lyon y Marsella',
       objective: 'Seguir una conversación telefónica formal.',
       grammar: ['conditionnel de politesse (reprise)', 'passé composé'],
@@ -415,7 +415,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['conditionnel', 'passé composé', 'vouvoiement'], newVocabulary: ['allô', 'spéciale', 'd’habitude'], possibleDifficulties: ['-rez y -riez se distinguen por una vocal muy breve'], estimatedDuration: 54, continuity: 'Usa la llamada ensayada en el episodio 13 y añade el nombre de pila de Madame Martin.', pronunciationRisks: ['viendriez', 'préférerais'], recommendedChanges: ['Grabar a Claire con un filtro telefónico ligero para separar las dos ciudades.'] },
     },
     {
-      id: 'fr-a2-15-la-femme-qui-ecrivait', order: 15, title: 'La femme qui écrivait les recettes', titleEs: 'La mujer que escribía las recetas', duration: 54,
+      id: 'fr-a2-15-la-femme-qui-ecrivait', order: 15, title: 'La femme qui écrivait les recettes', titleEs: 'La mujer que escribía las recetas', duration: 39,
       characters: ['Léa', 'Madame Martin'], location: 'Portería del edificio',
       objective: 'Unir dos informaciones sobre la misma persona con qui.',
       grammar: ['pronom relatif qui', 'imparfait (reprise)'],
@@ -442,7 +442,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['relatif qui', 'c’est… qui', 'imparfait'], newVocabulary: ['voix', 'ressembler', 'marcher (fonctionner)'], possibleDifficulties: ['«qui» átono se pega al sustantivo anterior'], estimatedDuration: 54, continuity: 'Es la consecuencia directa de la llamada del episodio 14.', pronunciationRisks: ['qui a écrit', 'ressemble'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-16-la-lettre-que-jai-gardee', order: 16, title: 'La lettre que j’ai gardée', titleEs: 'La carta que guardé', duration: 52,
+      id: 'fr-a2-16-la-lettre-que-jai-gardee', order: 16, title: 'La lettre que j’ai gardée', titleEs: 'La carta que guardé', duration: 34,
       characters: ['Léa', 'Inès', 'Madame Martin'], location: 'Portería del edificio',
       objective: 'Distinguir qui y que dentro de una descripción.',
       grammar: ['pronom relatif que', 'accord du participe passé avec COD antéposé'],
@@ -469,7 +469,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['relatif que', 'accord du participe (envoyée, gardée, trouvée)', 'il y a + durée'], newVocabulary: ['écriture', 'tenir', 'seule'], possibleDifficulties: ['el acuerdo del participio no se oye en estos verbos'], estimatedDuration: 52, continuity: 'Une la carta antigua de Madame Martin con la tarjeta hallada en el episodio 1.', pronunciationRisks: ['envoyée', 'écriture'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-17-depuis-douze-ans', order: 17, title: 'Depuis douze ans', titleEs: 'Desde hace doce años', duration: 54,
+      id: 'fr-a2-17-depuis-douze-ans', order: 17, title: 'Depuis douze ans', titleEs: 'Desde hace doce años', duration: 38,
       characters: ['Léa', 'Madame Martin'], location: 'Patio del edificio',
       objective: 'Diferenciar una duración que continúa y una duración terminada.',
       grammar: ['depuis', 'pendant'],
@@ -496,7 +496,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['depuis + durée', 'pendant + durée', 'passé composé'], newVocabulary: ['attention', 'conversation', 'court'], possibleDifficulties: ['«depuis» se traduce por «desde hace», no por «durante»'], estimatedDuration: 54, continuity: 'Da el motivo emocional que faltaba tras confirmar en el episodio 16 que la pista lleva a Marsella.', pronunciationRisks: ['depuis', 'pendant'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-18-deux-heures-de-cuisine', order: 18, title: 'Les mains n’oublient rien', titleEs: 'Las manos no olvidan nada', duration: 52,
+      id: 'fr-a2-18-deux-heures-de-cuisine', order: 18, title: 'Les mains n’oublient rien', titleEs: 'Las manos no olvidan nada', duration: 37,
       characters: ['Léa', 'Hugo', 'Monsieur Bertin'], location: 'Obrador de la panadería',
       objective: 'Entender instrucciones con duraciones precisas.',
       grammar: ['depuis / pendant (reprise)', 'imparfait d’habitude'],
@@ -523,7 +523,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['depuis / pendant', 'impératif', 'imparfait faisait'], newVocabulary: ['mélanger', 'impressionnant', 'tête'], possibleDifficulties: ['«pendant combien de temps» es un bloque largo'], estimatedDuration: 52, continuity: 'Aplica el ingrediente descubierto en el episodio 10 con el método del panadero.', pronunciationRisks: ['mélange', 'impressionnant'], recommendedChanges: ['Validar «Pendant dix minutes» (dix ante consonante es /di/, no /dis/) y la liaison de «quarante ans»: ambos son respuesta de quiz.'] },
     },
     {
-      id: 'fr-a2-19-biscotte-recommence', order: 19, title: 'Biscotte recommence', titleEs: 'Biscotte otra vez', duration: 54,
+      id: 'fr-a2-19-biscotte-recommence', order: 19, title: 'Biscotte recommence', titleEs: 'Biscotte otra vez', duration: 29,
       characters: ['Léa', 'Hugo', 'Inès'], location: 'Sala común del edificio',
       objective: 'Integrar pronombres, relativos y comparativos en una escena rápida.',
       grammar: ['révision: qui/que, COD/COI', 'comparatif et superlatif'],
@@ -550,7 +550,7 @@ export const FRENCH_A2_SERIES: A1ListeningSeries = {
       audit: { level: 'A2', grammarUsed: ['qui/que', 'te la rendra', 'meilleur / le plus petit'], newVocabulary: ['patte', 'morceau', 'chaise'], possibleDifficulties: ['dos pronombres seguidos en «te la rendra»'], estimatedDuration: 54, continuity: 'Recupera el gag de la gata de la temporada 1 justo antes de la fiesta del episodio 20. La tarjeta en juego es la de Claire, la misma del episodio 1: nadie la ha prestado.', pronunciationRisks: ['chaise', 'rendra'], recommendedChanges: [] },
     },
     {
-      id: 'fr-a2-20-le-gateau-de-claire', order: 20, title: 'Le gâteau de Claire', titleEs: 'El pastel de Claire', duration: 52,
+      id: 'fr-a2-20-le-gateau-de-claire', order: 20, title: 'Le gâteau de Claire', titleEs: 'El pastel de Claire', duration: 40,
       characters: ['Tous', 'Claire', 'Madame Martin', 'Léa', 'Hugo'], location: 'Patio del edificio, fiesta del barrio',
       objective: 'Integrar pasado, futuro y duraciones en una escena de cierre.',
       grammar: ['révision A2', 'depuis', 'futur simple'],
