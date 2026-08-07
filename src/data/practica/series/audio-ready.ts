@@ -18,7 +18,7 @@ export const A1_AUDIO_READY = {
   portugues: false,
   coreano: true,
   japones: true,
-  ruso: false,
+  ruso: true,
 } as const
 
 /** Mismo contrato para A2. El validador lo lee como texto: literal plano, una línea por idioma. */
@@ -28,7 +28,7 @@ export const A2_AUDIO_READY = {
   portugues: false,
   coreano: true,
   japones: true,
-  ruso: false,
+  ruso: true,
 } as const
 
 /** Mismo contrato para B1. */
@@ -38,7 +38,7 @@ export const B1_AUDIO_READY = {
   portugues: false,
   coreano: true,
   japones: true,
-  ruso: false,
+  ruso: true,
 } as const
 
 export type A1AudioLanguage = keyof typeof A1_AUDIO_READY

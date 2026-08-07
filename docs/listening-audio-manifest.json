@@ -1042,6 +1042,493 @@
         "style": 0.15,
         "use_speaker_boost": true
       }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 1,
+      "id": "ru-b1-01-dva-goda-spustya",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-01.mp3",
+      "caracteres": 546,
+      "duracion_real": 49.8,
+      "caracteres_por_segundo": 10.96,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Анна": "ScaQ3utur72x93jqMMeU",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 2,
+      "id": "ru-b1-02-pismo-iz-irkutska",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-02.mp3",
+      "caracteres": 577,
+      "duracion_real": 64.66,
+      "caracteres_por_segundo": 8.92,
+      "duracion_declarada_previa": 72,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 3,
+      "id": "ru-b1-03-ya-ne-pomnyu-chtoby",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-03.mp3",
+      "caracteres": 551,
+      "duracion_real": 44.74,
+      "caracteres_por_segundo": 12.32,
+      "duracion_declarada_previa": 72,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 4,
+      "id": "ru-b1-04-glava-v-chuzhoy-knige",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-04.mp3",
+      "caracteres": 575,
+      "duracion_real": 44.04,
+      "caracteres_por_segundo": 13.06,
+      "duracion_declarada_previa": 70,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Продавец": "gkJXl45tiGyrYwKV4B1n",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 5,
+      "id": "ru-b1-05-zapis-podkasta",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-05.mp3",
+      "caracteres": 554,
+      "duracion_real": 46.6,
+      "caracteres_por_segundo": 11.89,
+      "duracion_declarada_previa": 70,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Миша": "76rT6drChOHgGsscaHMJ",
+        "София": "oik5x6jBI6Xj6MPIciZU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 6,
+      "id": "ru-b1-06-devushka-s-gitaroy",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-06.mp3",
+      "caracteres": 542,
+      "duracion_real": 44.69,
+      "caracteres_por_segundo": 12.13,
+      "duracion_declarada_previa": 71,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Анна": "ScaQ3utur72x93jqMMeU",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 7,
+      "id": "ru-b1-07-vypusk-vyshel",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-07.mp3",
+      "caracteres": 526,
+      "duracion_real": 55.33,
+      "caracteres_por_segundo": 9.51,
+      "duracion_declarada_previa": 71,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 8,
+      "id": "ru-b1-08-razgovor-bez-krika",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-08.mp3",
+      "caracteres": 509,
+      "duracion_real": 44.09,
+      "caracteres_por_segundo": 11.54,
+      "duracion_declarada_previa": 74,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "София": "oik5x6jBI6Xj6MPIciZU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 9,
+      "id": "ru-b1-09-oshibka-v-tri-minuty",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-09.mp3",
+      "caracteres": 480,
+      "duracion_real": 41.3,
+      "caracteres_por_segundo": 11.62,
+      "duracion_declarada_previa": 70,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Миша": "76rT6drChOHgGsscaHMJ",
+        "Анна": "ScaQ3utur72x93jqMMeU",
+        "София": "oik5x6jBI6Xj6MPIciZU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 10,
+      "id": "ru-b1-10-vopros-v-pisme",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-10.mp3",
+      "caracteres": 510,
+      "duracion_real": 58.39,
+      "caracteres_por_segundo": 8.73,
+      "duracion_declarada_previa": 71,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 11,
+      "id": "ru-b1-11-otvet-iz-irkutska",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-11.mp3",
+      "caracteres": 579,
+      "duracion_real": 58.16,
+      "caracteres_por_segundo": 9.96,
+      "duracion_declarada_previa": 73,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 12,
+      "id": "ru-b1-12-papka-v-arkhive",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-12.mp3",
+      "caracteres": 573,
+      "duracion_real": 49.2,
+      "caracteres_por_segundo": 11.65,
+      "duracion_declarada_previa": 73,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Архивариус": "ScaQ3utur72x93jqMMeU",
+        "Миша": "76rT6drChOHgGsscaHMJ",
+        "София": "oik5x6jBI6Xj6MPIciZU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 13,
+      "id": "ru-b1-13-spor-o-finale",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-13.mp3",
+      "caracteres": 495,
+      "duracion_real": 42.42,
+      "caracteres_por_segundo": 11.67,
+      "duracion_declarada_previa": 74,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 14,
+      "id": "ru-b1-14-priglashat-ili-net",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-14.mp3",
+      "caracteres": 511,
+      "duracion_real": 50.59,
+      "caracteres_por_segundo": 10.1,
+      "duracion_declarada_previa": 72,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "Кассир": "DqxytKNFqOw7mkrURtr9",
+        "София": "oik5x6jBI6Xj6MPIciZU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 15,
+      "id": "ru-b1-15-priglashenie-podpisano",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-15.mp3",
+      "caracteres": 506,
+      "duracion_real": 49.15,
+      "caracteres_por_segundo": 10.29,
+      "duracion_declarada_previa": 74,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Елена": "WrVR5Abi1fguTI7Fqe5w"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 16,
+      "id": "ru-b1-16-uslovie-iriny",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-16.mp3",
+      "caracteres": 512,
+      "duracion_real": 62.66,
+      "caracteres_por_segundo": 8.17,
+      "duracion_declarada_previa": 72,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "Миша": "76rT6drChOHgGsscaHMJ",
+        "София": "oik5x6jBI6Xj6MPIciZU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 17,
+      "id": "ru-b1-17-irina-priezzhaet",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-17.mp3",
+      "caracteres": 483,
+      "duracion_real": 45.06,
+      "caracteres_por_segundo": 10.72,
+      "duracion_declarada_previa": 71,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "Ирина": "ELWVgJ5Mo9lF5Tha9ahW",
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "София": "oik5x6jBI6Xj6MPIciZU"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 18,
+      "id": "ru-b1-18-vtoroy-final",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-18.mp3",
+      "caracteres": 503,
+      "duracion_real": 42.7,
+      "caracteres_por_segundo": 11.78,
+      "duracion_declarada_previa": 73,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Ирина": "ELWVgJ5Mo9lF5Tha9ahW",
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Елена": "WrVR5Abi1fguTI7Fqe5w"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 19,
+      "id": "ru-b1-19-repetitsiya-s-muzykoy",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-19.mp3",
+      "caracteres": 530,
+      "duracion_real": 52.63,
+      "caracteres_por_segundo": 10.07,
+      "duracion_declarada_previa": 72,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "Ирина": "ELWVgJ5Mo9lF5Tha9ahW",
+        "Миша": "76rT6drChOHgGsscaHMJ",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Анна": "ScaQ3utur72x93jqMMeU",
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "ruso",
+      "episodio": 20,
+      "id": "ru-b1-20-vtoroy-golos",
+      "piloto": false,
+      "archivo": "public/audio/ruso/b1/listening-20.mp3",
+      "caracteres": 483,
+      "duracion_real": 45.67,
+      "caracteres_por_segundo": 10.58,
+      "duracion_declarada_previa": 74,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Кассир": "DqxytKNFqOw7mkrURtr9",
+        "Елена": "WrVR5Abi1fguTI7Fqe5w",
+        "Ирина": "ELWVgJ5Mo9lF5Tha9ahW",
+        "Виктор Петрович": "0igyFIChAVV6GGARy9qg",
+        "София": "oik5x6jBI6Xj6MPIciZU",
+        "Миша": "76rT6drChOHgGsscaHMJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
     }
   ]
 }

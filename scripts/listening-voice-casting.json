@@ -524,18 +524,28 @@
           }
         },
         "Ирина": {
-          "voice_id": "",
+          "voice_id": "ELWVgJ5Mo9lF5Tha9ahW",
           "turnos": 11,
           "papel": "Композитор из Иркутска, бывшая студентка студии «Луна» (B1)",
           "perfil_de_voz": "Взрослый женский голос, низкий, спокойный и прямой",
-          "buscar": "voz femenina rusa adulta, grave y serena; es la contraparte de Виктор Петрович en el conflicto de la temporada"
+          "buscar": "voz femenina rusa adulta, grave y serena; es la contraparte de Виктор Петрович en el conflicto de la temporada",
+          "biblioteca": {
+            "public_owner_id": "f09ed4f3f991b77a86a2b3942aa666aedddaa7097b97f0426a13296bd91136bf",
+            "voice_id": "ELWVgJ5Mo9lF5Tha9ahW"
+          },
+          "voz": "Arina — femenina adulta rusa, serena. Apuesta: el papel pide voz grave y la ficha no lo dice. Si no convence, solo hay que rehacer sus 11 turnos"
         },
         "Архивариус": {
-          "voice_id": "",
+          "voice_id": "ScaQ3utur72x93jqMMeU",
           "turnos": 3,
           "papel": "Сотрудница университетского архива (B1)",
           "perfil_de_voz": "Взрослый женский голос, тихий и очень размеренный",
-          "buscar": "voz femenina rusa adulta, muy pausada; solo sale en un episodio"
+          "buscar": "voz femenina rusa adulta, muy pausada; solo sale en un episodio",
+          "biblioteca": {
+            "public_owner_id": "90ac27eedc9df6b55ff3ddce279a6cb426cce17c38747a1c8caf2071369778ef",
+            "voice_id": "ScaQ3utur72x93jqMMeU"
+          },
+          "voz": "Elena (la misma de Анна) — «Warm, Calm & Clear» para «тихий и очень размеренный». Libre en b1-12"
         }
       }
     },

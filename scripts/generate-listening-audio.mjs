@@ -68,30 +68,45 @@ const CPS_ESTIMADO = {
 }
 
 /**
- * Créditos por carácter, MEDIDOS contra el saldo de la cuenta antes y después del piloto
- * de coreano del 6 de agosto de 2026 (1.334 caracteres con cada modelo):
+ * Créditos por carácter, MEDIDOS contra el saldo de la cuenta.
  *
- *   multilingual_v2  731 créditos → 0,548 por carácter
- *   flash_v2_5       367 créditos → 0,275 por carácter
+ *   piloto coreano   1.334 car · multilingual_v2 →   731 créditos → 0,548
+ *   piloto coreano   1.334 car · flash_v2_5      →   367 créditos → 0,275
+ *   tanda coreano   12.778 car · flash_v2_5      → 3.566 créditos → 0,279
+ *   tanda japonés    9.577 car · flash_v2_5      → 2.653 créditos → 0,277
+ *   tanda ruso      23.878 car · flash_v2_5      → 6.581 créditos → 0,276
  *
- * Dos cosas que la documentación no dice y que el piloto sí:
+ * La primera hipótesis fue que el descuento venía de la escritura: el hangul a 0,55
+ * frente al inglés de este repo, que sale a 0,965. El ruso la desmintió — cirílico, y
+ * paga exactamente lo mismo que el coreano y el japonés. Lo que se repite es un factor
+ * ~0,55 sobre la tarifa nominal, independiente del alfabeto, tanto con v2 (0,548 sobre 1)
+ * como con flash (0,276 sobre 0,5).
  *
- * 1. El hangul NO se cobra a 1 crédito por carácter, sino a ~0,55. Las generaciones en
- *    inglés de este mismo repo salen a 0,965, así que el descuento es de la escritura,
- *    no del plan. Japonés se asume igual —misma densidad por carácter— hasta medirlo.
- *    Cirílico y latino se presuponen a tarifa plena mientras no haya medida propia.
- * 2. El contador de la cuenta VA CON RETRASO. Leído justo después de la tanda daba 470
- *    créditos; minutos más tarde, 731. Cualquier medición inmediata subestima un tercio.
+ * De dónde sale ese 0,55 no está documentado y no se sabe. Lo que sí está medido, sobre
+ * 46.233 caracteres en tres alfabetos, es que se cumple. El latino sigue sin medir: si se
+ * comportara como el inglés viejo del repo, las tres tandas que faltan costarían el doble.
+ * Ambos escenarios caben en el saldo, así que no bloquea nada.
+ *
+ * Y una trampa que ya costó un susto: el contador de la cuenta VA CON RETRASO. Leído justo
+ * al terminar el piloto daba 470 créditos donde se habían gastado 731. Medir en caliente
+ * subestima hasta un tercio; hay que esperar unos minutos y volver a leer.
  */
 const CREDITOS_POR_CARACTER = {
-  eleven_multilingual_v2: { cjk: 0.548, default: 1.0 },
-  eleven_flash_v2_5: { cjk: 0.275, default: 0.5 },
+  eleven_multilingual_v2: { medido: 0.548, nominal: 1.0 },
+  eleven_flash_v2_5: { medido: 0.277, nominal: 0.5 },
 }
-const ESCRITURA_CJK = new Set(['coreano', 'japones'])
+/** Idiomas con tarifa medida de verdad en una tanda completa. */
+const TARIFA_MEDIDA = new Set(['coreano', 'japones', 'ruso'])
 
 function creditosDe(lang, chars, model) {
   const tabla = CREDITOS_POR_CARACTER[model] ?? CREDITOS_POR_CARACTER.eleven_multilingual_v2
-  return Math.ceil(chars * (ESCRITURA_CJK.has(lang) ? tabla.cjk : tabla.default))
+  return Math.ceil(chars * tabla.medido)
+}
+
+/** Techo pesimista para los idiomas aún sin medir: la tarifa nominal de ElevenLabs. */
+function creditosPeorCaso(lang, chars, model) {
+  const tabla = CREDITOS_POR_CARACTER[model] ?? CREDITOS_POR_CARACTER.eleven_multilingual_v2
+  return Math.ceil(chars * (TARIFA_MEDIDA.has(lang) ? tabla.medido : tabla.nominal))
 }
 
 const args = process.argv.slice(2)
@@ -314,10 +329,15 @@ function dryRun(casting) {
   // multiplicar por uno sobrestimaba el coreano y el japonés casi al doble.
   for (const model of ['eleven_multilingual_v2', 'eleven_flash_v2_5']) {
     let total = 0
-    for (const [lang, chars] of charsPorIdioma) total += creditosDe(lang, chars, model)
-    console.log(`  ${model.padEnd(23)} → ${total.toLocaleString('es')} créditos`)
+    let techo = 0
+    for (const [lang, chars] of charsPorIdioma) {
+      total += creditosDe(lang, chars, model)
+      techo += creditosPeorCaso(lang, chars, model)
+    }
+    const rango = techo > total ? ` (hasta ${techo.toLocaleString('es')} si el latino paga tarifa nominal)` : ''
+    console.log(`  ${model.padEnd(23)} → ${total.toLocaleString('es')} créditos${rango}`)
   }
-  console.log('  Tarifas medidas contra el saldo el 2026-08-06; latino y cirílico aún sin medir.')
+  console.log('  Tarifa medida sobre 46.233 caracteres en coreano, japonés y ruso. El latino aún sin medir.')
 
   const bands = Object.entries(DURATION_BANDS).map(([level, [min, max]]) => `${level.toUpperCase()} ${min}–${max}s`).join(' · ')
   if (outOfBand.length) {
