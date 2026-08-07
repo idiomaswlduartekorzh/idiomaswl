@@ -49,7 +49,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     ep({
-      id: 'ko-a1-01-cheoeum-boepgesseumnida', order: 1, title: '처음 뵙겠습니다', titleEs: 'Mucho gusto', duration: 31,
+      id: 'ko-a1-01-cheoeum-boepgesseumnida', order: 1, title: '처음 뵙겠습니다', titleEs: 'Mucho gusto', duration: 28,
       characters: ['소피아', '지호', '김 선생님'], location: '한국어 교실', objective: '이름, 국적, 신분을 알아듣는다.',
       grammar: ['이에요/예요', '기본 인사'], keywords: [{ target: '학생', es: 'estudiante' }, { target: '친구', es: 'amigo' }, { target: '사람', es: 'persona' }, { target: '첫날', es: 'primer día' }, { target: '창문', es: 'ventana' }],
       storyFunction: '소피아와 지호를 소개하고 서울의 교실을 배경으로 설정한다.',
@@ -68,7 +68,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['diferencia 이에요/예요'], continuity: 'Inicio independiente.', pronunciationRisks: ['콜롬비아', '처음'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-02-noran-usan', order: 2, title: '노란 우산', titleEs: 'El paraguas amarillo', duration: 27,
+      id: 'ko-a1-02-noran-usan', order: 2, title: '노란 우산', titleEs: 'El paraguas amarillo', duration: 25,
       characters: ['소피아', '지호'], location: '교실 문 앞', objective: '화제와 주어를 구별하며 물건을 묘사한다.',
       grammar: ['은/는', '이/가', '이에요/예요'], keywords: [{ target: '우산', es: 'paraguas' }, { target: '노란색', es: 'amarillo' }, { target: '주인', es: 'dueño' }, { target: '별', es: 'estrella' }, { target: '검은색', es: 'negro' }],
       storyFunction: '주인 없는 노란 우산과 별 스티커를 처음 보여 준다.',
@@ -87,7 +87,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['contraste 은/는 e 이/가'], continuity: 'El episodio empieza después de la primera clase.', pronunciationRisks: ['노란', '스티커'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-03-sajin-i-isseoyo', order: 3, title: '사진이 있어요', titleEs: 'Hay una foto', duration: 26,
+      id: 'ko-a1-03-sajin-i-isseoyo', order: 3, title: '사진이 있어요', titleEs: 'Hay una foto', duration: 25,
       characters: ['소피아', '지호'], location: '교실', objective: '물건의 존재와 부재를 알아듣는다.',
       grammar: ['있어요/없어요', '이/가'], keywords: [{ target: '사진', es: 'foto' }, { target: '가방', es: 'bolso' }, { target: '이름', es: 'nombre' }, { target: '안쪽', es: 'interior' }, { target: '강아지', es: 'perro' }],
       storyFunction: '우산 안쪽에서 이름 없는 사진을 발견한다.',
@@ -106,7 +106,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['clasificadores 한 장/한 명'], continuity: 'La estrella del episodio 2 coincide con la foto.', pronunciationRisks: ['주머니', '강아지'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-04-mueoseul-haeyo', order: 4, title: '무엇을 해요?', titleEs: '¿Qué hace?', duration: 30,
+      id: 'ko-a1-04-mueoseul-haeyo', order: 4, title: '무엇을 해요?', titleEs: '¿Qué hace?', duration: 25,
       characters: ['소피아', '지호', '김 선생님'], location: '교실', objective: '현재의 일상 행동을 알아듣는다.',
       grammar: ['해요체 현재', '목적격 을/를'], keywords: [{ target: '공부해요', es: 'estudia' }, { target: '일해요', es: 'trabaja' }, { target: '산책해요', es: 'pasea' }, { target: '찾아요', es: 'busca' }, { target: '숙제', es: 'tarea' }],
       storyFunction: '사진 속 인물의 일상을 추측하며 주인을 찾을 계획을 세운다.',
@@ -125,7 +125,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['varios verbos 해요 de alta frecuencia'], continuity: 'Usa la foto encontrada para formular una hipótesis.', pronunciationRisks: ['산책해요', '숙제'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-05-kape-e-gayo', order: 5, title: '카페에 가요', titleEs: 'Vamos al café', duration: 25,
+      id: 'ko-a1-05-kape-e-gayo', order: 5, title: '카페에 가요', titleEs: 'Vamos al café', duration: 23,
       characters: ['소피아', '지호'], location: '학원 앞', objective: '목적지와 이동을 알아듣는다.',
       grammar: ['장소 에', '해요체 현재'], keywords: [{ target: '카페', es: 'café' }, { target: '공원', es: 'parque' }, { target: '지하철역', es: 'estación de metro' }, { target: '가요', es: 'va' }, { target: '입구', es: 'entrada' }],
       storyFunction: '사진의 커피를 단서로 근처 카페에 간다.',
@@ -144,7 +144,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['diferenciar 에 de 에서'], continuity: 'La bebida de la foto conduce al Café Estrella.', pronunciationRisks: ['지하철역', '입구'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-06-kape-eseo-ilhaeyo', order: 6, title: '카페에서 일해요', titleEs: 'Trabaja en el café', duration: 32,
+      id: 'ko-a1-06-kape-eseo-ilhaeyo', order: 6, title: '카페에서 일해요', titleEs: 'Trabaja en el café', duration: 27,
       characters: ['소피아', '지호', '유나'], location: '별 카페', objective: '행동이 일어나는 장소를 알아듣는다.',
       grammar: ['장소 에서', '해요체 현재'], keywords: [{ target: '주문해요', es: 'pide' }, { target: '마셔요', es: 'bebe' }, { target: '기다려요', es: 'espera' }, { target: '영수증', es: 'recibo' }, { target: '차', es: 'té' }],
       storyFunction: '유나를 소개하고 우산과 연결된 영수증을 발견한다.',
@@ -163,7 +163,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['에/에서 en contextos cercanos'], continuity: 'Llegan al café elegido en el episodio 5.', pronunciationRisks: ['영수증', '주문하고'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-07-je-geos-i-anieyo', order: 7, title: '제 것이 아니에요', titleEs: 'No es mío', duration: 32,
+      id: 'ko-a1-07-je-geos-i-anieyo', order: 7, title: '제 것이 아니에요', titleEs: 'No es mío', duration: 28,
       characters: ['소피아', '지호', '유나'], location: '별 카페', objective: '간단한 부정과 소유를 알아듣는다.',
       grammar: ['안/지 않아요', '아니에요', '목적격 을/를'], keywords: [{ target: '아니에요', es: 'no es' }, { target: '몰라요', es: 'no sabe' }, { target: '잃어버려요', es: 'pierde' }, { target: '전화번호', es: 'teléfono' }, { target: '마지막', es: 'final' }],
       storyFunction: '유나는 우산 주인이 아니지만 영수증에서 전화번호 일부를 읽는다.',
@@ -182,7 +182,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['dos patrones negativos en un mismo episodio'], continuity: 'Descarta a Yuna y obtiene una pista numérica.', pronunciationRisks: ['잃어버려요', '전화번호'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-08-nugu-ui-beonhoyeyo', order: 8, title: '누구 번호예요?', titleEs: '¿De quién es el número?', duration: 32,
+      id: 'ko-a1-08-nugu-ui-beonhoyeyo', order: 8, title: '누구 번호예요?', titleEs: '¿De quién es el número?', duration: 28,
       characters: ['소피아', '지호', '김 선생님'], location: '한국어 교실', objective: '의문사로 사람과 장소, 사물을 묻는다.',
       grammar: ['의문사 누구/어디/뭐', '이에요/예요'], keywords: [{ target: '누구', es: 'quién' }, { target: '어디', es: 'dónde' }, { target: '뭐', es: 'qué' }, { target: '번호', es: 'número' }, { target: '선생님', es: 'profesora' }],
       storyFunction: '교실에서 전화번호 주인을 찾지만 재미있는 오해가 생긴다.',
@@ -201,7 +201,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['tres interrogativos cercanos'], continuity: 'Investiga el número hallado en el recibo.', pronunciationRisks: ['사칠', '영수증'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-09-sasipchil-beon', order: 9, title: '47번', titleEs: 'El número 47', duration: 35,
+      id: 'ko-a1-09-sasipchil-beon', order: 9, title: '47번', titleEs: 'El número 47', duration: 31,
       characters: ['소피아', '지호', '김 선생님'], location: '교실 게시판', objective: '한자어 수와 번호를 알아듣는다.',
       grammar: ['한자어 수', '있어요/없어요'], keywords: [{ target: '사칠', es: 'cuatro-siete (47)' }, { target: '층', es: 'piso' }, { target: '호', es: 'apartamento' }, { target: '게시판', es: 'cartelera' }, { target: '살아요', es: 'vive' }],
       storyFunction: '47이 전화번호가 아니라 아파트 번호일 수도 있다는 새 가설이 나온다.',
@@ -220,7 +220,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['diferencia entre 47 y 407'], continuity: 'Reinterpreta la pista numérica del episodio 7.', pronunciationRisks: ['사십칠', '사백칠'], recommendedChanges: ['Separar claramente las cifras con pausas breves.'] },
     }),
     ep({
-      id: 'ko-a1-10-usan-se-gae', order: 10, title: '우산 세 개', titleEs: 'Tres paraguas', duration: 33,
+      id: 'ko-a1-10-usan-se-gae', order: 10, title: '우산 세 개', titleEs: 'Tres paraguas', duration: 29,
       characters: ['소피아', '지호', '별'], location: '아파트 407호 앞', objective: '고유어 수와 물건 개수를 알아듣는다.',
       grammar: ['고유어 수와 단위 명사', '있어요/없어요'], keywords: [{ target: '한 개', es: 'uno' }, { target: '두 개', es: 'dos' }, { target: '세 개', es: 'tres' }, { target: '현관', es: 'entrada de casa' }, { target: '스티커', es: 'calcomanía' }],
       storyFunction: '별을 만나지만 노란 우산의 주인은 아니라는 사실을 알게 된다.',
@@ -239,7 +239,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['formas 한/두/세 ante contadores'], continuity: 'Comprueba la hipótesis del apartamento 407.', pronunciationRisks: ['현관', '파란'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-11-yeoseot-si', order: 11, title: '여섯 시', titleEs: 'Las seis', duration: 26,
+      id: 'ko-a1-11-yeoseot-si', order: 11, title: '여섯 시', titleEs: 'Las seis', duration: 23,
       characters: ['소피아', '지호', '별'], location: '아파트 407호', objective: '시간과 시각을 알아듣는다.',
       grammar: ['시간과 시각', '고유어 수'], keywords: [{ target: '여섯 시', es: 'seis en punto' }, { target: '반', es: 'media' }, { target: '월요일', es: 'lunes' }, { target: '오후', es: 'tarde p. m.' }, { target: '이모', es: 'tía' }],
       storyFunction: '별이 사진 속 여자의 공원 시간을 알려 준다.',
@@ -258,7 +258,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['horas nativas y minutos sino-coreanos'], continuity: 'Byeol conecta la foto con su tía y da una hora.', pronunciationRisks: ['여섯 시', '삼십 분'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-12-gachi-gago-sipeoyo', order: 12, title: '같이 가고 싶어요', titleEs: 'Quiero ir con ustedes', duration: 27,
+      id: 'ko-a1-12-gachi-gago-sipeoyo', order: 12, title: '같이 가고 싶어요', titleEs: 'Quiero ir con ustedes', duration: 24,
       characters: ['소피아', '지호', '별'], location: '아파트 복도', objective: '원하는 행동을 알아듣는다.',
       grammar: ['-고 싶어요', '장소 에'], keywords: [{ target: '가고 싶어요', es: 'quiero ir' }, { target: '만나고 싶어요', es: 'quiero conocer' }, { target: '먹고 싶어요', es: 'quiero comer' }, { target: '같이', es: 'juntos' }, { target: '케이크', es: 'pastel' }],
       storyFunction: '별이 탐정 팀에 합류하고 각자의 엉뚱한 목적을 말한다.',
@@ -277,7 +277,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['encadenar infinitivo verbal con 고 싶어요'], continuity: 'Byeol se une al grupo antes de ir al parque.', pronunciationRisks: ['싶어요', '데리고'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-13-ppang-hago-uyu', order: 13, title: '빵하고 우유', titleEs: 'Pan y leche', duration: 28,
+      id: 'ko-a1-13-ppang-hago-uyu', order: 13, title: '빵하고 우유', titleEs: 'Pan y leche', duration: 26,
       characters: ['소피아', '지호', '별'], location: '편의점', objective: '명사와 행동을 연결해 알아듣는다.',
       grammar: ['하고', '목적격 을/를', '해요체 현재'], keywords: [{ target: '빵', es: 'pan' }, { target: '우유', es: 'leche' }, { target: '편의점', es: 'tienda de conveniencia' }, { target: '목줄', es: 'correa' }, { target: '직원', es: 'empleado' }],
       storyFunction: '공원 가는 길에 사진 속 강아지와 같은 목줄을 발견한다.',
@@ -296,7 +296,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['하고 como y y como con'], continuity: 'La ruta al parque aporta otra coincidencia visual.', pronunciationRisks: ['편의점', '목줄'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-14-eoje-wasseoyo', order: 14, title: '어제 왔어요', titleEs: 'Vino ayer', duration: 24,
+      id: 'ko-a1-14-eoje-wasseoyo', order: 14, title: '어제 왔어요', titleEs: 'Vino ayer', duration: 23,
       characters: ['소피아', '지호', '직원'], location: '편의점', objective: '과거의 간단한 행동을 알아듣는다.',
       grammar: ['과거 -았/었어요', '시간 부사'], keywords: [{ target: '어제', es: 'ayer' }, { target: '왔어요', es: 'vino' }, { target: '샀어요', es: 'compró' }, { target: '두고 갔어요', es: 'lo dejó olvidado' }, { target: '간식', es: 'golosina' }],
       storyFunction: '직원이 미나의 어제 행동과 우산 이동을 설명한다.',
@@ -315,7 +315,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['tres raíces irregulares frecuentes en pasado'], continuity: 'El empleado confirma la ruta de Mina.', pronunciationRisks: ['샀어요', '간식'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-15-oneul-gongwon-eseo', order: 15, title: '오늘 공원에서', titleEs: 'Hoy en el parque', duration: 25,
+      id: 'ko-a1-15-oneul-gongwon-eseo', order: 15, title: '오늘 공원에서', titleEs: 'Hoy en el parque', duration: 22,
       characters: ['소피아', '지호', '별'], location: '공원', objective: '시간 부사와 현재 행동을 알아듣는다.',
       grammar: ['시간 부사', '해요체 현재', '장소 에서'], keywords: [{ target: '오늘', es: 'hoy' }, { target: '지금', es: 'ahora' }, { target: '나중에', es: 'más tarde' }, { target: '매일', es: 'cada día' }, { target: '하늘', es: 'cielo' }],
       storyFunction: '공원에서 미나를 기다리지만 비와 강아지만 먼저 온다.',
@@ -334,7 +334,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['varios adverbios temporales juntos'], continuity: 'Siguen la ruta que explicó el empleado.', pronunciationRisks: ['어두워요', '어른들은'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-16-gangajineun-mal-mothaeyo', order: 16, title: '강아지는 말 못 해요', titleEs: 'El perro no puede hablar', duration: 27,
+      id: 'ko-a1-16-gangajineun-mal-mothaeyo', order: 16, title: '강아지는 말 못 해요', titleEs: 'El perro no puede hablar', duration: 25,
       characters: ['소피아', '지호', '별'], location: '공원 벤치', objective: '일상 표현과 간단한 부정을 알아듣는다.',
       grammar: ['일상 표현', '못 + 동사', '있어요'], keywords: [{ target: '괜찮아요', es: 'está bien' }, { target: '잠깐만요', es: 'un momento' }, { target: '목걸이', es: 'collar' }, { target: '주소', es: 'dirección' }, { target: '아파트', es: 'apartamento' }],
       storyFunction: '강아지 목걸이에서 주소를 찾지만 이름은 없다.',
@@ -353,7 +353,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['registro informal breve al hablar al perro'], continuity: 'El perro del episodio 15 proporciona la dirección.', pronunciationRisks: ['괜찮아요', '목걸이'], recommendedChanges: ['La primera línea debe sonar dirigida con cariño a un animal.'] },
     }),
     ep({
-      id: 'ko-a1-17-announcement', order: 17, title: '안내 방송', titleEs: 'El anuncio', duration: 28,
+      id: 'ko-a1-17-announcement', order: 17, title: '안내 방송', titleEs: 'El anuncio', duration: 26,
       characters: ['안내 방송', '소피아', '지호', '별'], location: '한빛 아파트 로비', objective: '격식체 안내를 알아듣는다.',
       grammar: ['격식체 -ㅂ니다/습니다', '장소 에'], keywords: [{ target: '안내', es: 'aviso' }, { target: '보관합니다', es: 'guarda' }, { target: '연락해요', es: 'contacta' }, { target: '관리실', es: 'administración' }, { target: '물건', es: 'objeto' }],
       storyFunction: '공식 방송이 우산을 관리실에 맡기라고 알려 준다.',
@@ -372,7 +372,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['alternancia 해요체/합니다체'], continuity: 'Llegan al edificio indicado por el collar.', pronunciationRisks: ['말씀드립니다', '관리실'], recommendedChanges: ['Usar una voz de megafonía clara solo para las dos primeras líneas.'] },
     }),
     ep({
-      id: 'ko-a1-18-mina-ssiga-wasseoyo', order: 18, title: '미나 씨가 왔어요', titleEs: 'Llegó Mina', duration: 31,
+      id: 'ko-a1-18-mina-ssiga-wasseoyo', order: 18, title: '미나 씨가 왔어요', titleEs: 'Llegó Mina', duration: 27,
       characters: ['소피아', '지호', '미나'], location: '관리실 앞', objective: '현재와 과거의 핵심 정보를 통합한다.',
       grammar: ['과거 -았/었어요', '이/가', '일상 표현'], keywords: [{ target: '다행이에요', es: 'qué alivio' }, { target: '미안해요', es: 'lo siento' }, { target: '고마워요', es: 'gracias' }, { target: '찾았어요', es: 'encontró' }, { target: '학원', es: 'academia' }],
       storyFunction: '미나가 나타나 우산과 강아지를 모두 찾는다.',
@@ -391,7 +391,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['pasados 두고 왔어요/잃어버렸어요'], continuity: 'Resuelve la identidad de la mujer, el perro y el paraguas.', pronunciationRisks: ['없어졌어요', '콩이야'], recommendedChanges: ['La primera línea es un vocativo cariñoso al perro: pausa tras 콩이야 y cambio de tono al dirigirse al grupo.'] },
     }),
     ep({
-      id: 'ko-a1-19-byeol-kape-kupong', order: 19, title: '별 카페 쿠폰', titleEs: 'El cupón del Café Estrella', duration: 30,
+      id: 'ko-a1-19-byeol-kape-kupong', order: 19, title: '별 카페 쿠폰', titleEs: 'El cupón del Café Estrella', duration: 27,
       characters: ['소피아', '지호', '미나', '별'], location: '별 카페', objective: '숫자, 개수, 소유를 복습한다.',
       grammar: ['수와 단위 명사', '있어요', '하고'], keywords: [{ target: '쿠폰', es: 'cupón' }, { target: '딸기', es: 'fresa' }, { target: '무료', es: 'gratis' }, { target: '음료', es: 'bebida' }, { target: '다섯 개', es: 'cinco' }],
       storyFunction: '별 스티커의 진짜 기능을 밝히고 작은 보상을 준다.',
@@ -410,7 +410,7 @@ export const KOREAN_A1_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['formas de conteo aisladas y ante 개'], continuity: 'Explica definitivamente la estrella recurrente.', pronunciationRisks: ['음료', '딸기'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a1-20-bi-oneun-nal-ui-chingu', order: 20, title: '비 오는 날의 친구', titleEs: 'Amigos en un día de lluvia', duration: 38,
+      id: 'ko-a1-20-bi-oneun-nal-ui-chingu', order: 20, title: '비 오는 날의 친구', titleEs: 'Amigos en un día de lluvia', duration: 35,
       characters: ['소피아', '지호', '미나', '별'], location: '별 카페', objective: 'A1의 소개, 장소, 과거, 희망 표현을 통합한다.',
       grammar: ['A1 종합 복습', '-고 싶어요', '과거 -았/었어요'], keywords: [{ target: '여기 있어요', es: 'aquí está' }, { target: '함께', es: 'juntos' }, { target: '다음', es: 'siguiente' }, { target: '만나요', es: 'se ven' }, { target: '비', es: 'lluvia' }],
       storyFunction: '우산을 돌려주고 새 친구들과 다음 이야기를 약속한다.',

@@ -481,10 +481,13 @@ function findSpeechEnd(segment) {
 function prepareSegment(segment) {
   const prepared = segment.replace(/\.mp3$/u, '-prep.wav')
   const corte = findSpeechEnd(segment)
+  // −45 dB y no −50: es el mismo umbral con el que la auditoría busca silencios. Cuando
+  // eran distintos, el ruido de sala entre ambos valores sobrevivía al recorte y luego se
+  // contaba como pausa. Ver SILENCIO_DB en rebuild-listening-audio.mjs.
   const filtros = [
-    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-50dB',
+    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-45dB',
     'areverse',
-    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-50dB',
+    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-45dB',
     'areverse',
     `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11`,
   ]

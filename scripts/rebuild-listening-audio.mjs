@@ -38,11 +38,40 @@ const BITRATE = '64k'
 const LUFS_OBJETIVO = -16
 const TRUE_PEAK_MAX = -1.5
 
+/**
+ * Umbral por debajo del cual una muestra cuenta como silencio al recortar los extremos.
+ *
+ * Estaba en −50 dB mientras la auditoría busca silencios a −45 dB, y esos cinco decibelios
+ * de diferencia son un hueco por el que se cuela el ruido de sala: lo que suena entre −50 y
+ * −45 sobrevive al recorte y luego la auditoría lo cuenta como pausa. Así apareció el único
+ * defecto de los 480 episodios —italiano A2 ep. 10, 1,97 s después de «Matteo!»—: la toma
+ * es corta y su cola de sala quedaba entera, más el separador de 0,5 s.
+ *
+ * Los dos números tienen que ser el mismo, o el recorte no puede satisfacer a la auditoría.
+ */
+const SILENCIO_DB = -45
+
+/**
+ * Techo del limitador antes de codificar a mp3, en amplitud lineal.
+ *
+ * Estaba en 0,7 (≈ −3,1 dBFS de pico de muestra) y aun así ruso B1 ep. 8 salía con un pico
+ * real de +0,2 dBFS. No es un fallo del limitador: entre muestras, la señal reconstruida al
+ * decodificar el mp3 sube por encima de lo que marcaban las muestras, y a 64 kbps ese
+ * sobrepico llega a 3 dB en material denso. El limitador controla las muestras; el pico
+ * real hay que dejarlo con margen.
+ *
+ * Bajarlo no cambia el volumen percibido: la sonoridad la fija `loudnorm I=-16`, y el
+ * limitador solo interviene en los picos aislados.
+ */
+const TECHO_LIMITADOR = 0.62
+
 const args = process.argv.slice(2)
 const write = args.includes('--write')
 const val = (flag) => (args.includes(flag) ? args[args.indexOf(flag) + 1] : null)
 const onlyLang = val('--lang')
 const onlyLevel = val('--level')
+/** Lista de órdenes separada por comas, p. ej. `--ep 10`. Sin ella se rehace la serie entera. */
+const onlyEpisodes = val('--ep')?.split(',').map((item) => Number(item.trim()))
 
 function readEnv() {
   const file = path.join(repoRoot, '.env.local')
@@ -122,9 +151,9 @@ function prepareSegment(segment) {
     ...(corte === null ? [] : ['-t', String(corte)]),
     '-i', segment,
     '-af', [
-      'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-50dB',
+      `silenceremove=start_periods=1:start_silence=0.05:start_threshold=${SILENCIO_DB}dB`,
       'areverse',
-      'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-50dB',
+      `silenceremove=start_periods=1:start_silence=0.05:start_threshold=${SILENCIO_DB}dB`,
       'areverse',
       `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11`,
     ].join(','),
@@ -192,6 +221,7 @@ for (const { file, lang, level } of files) {
   const faltantes = []
 
   for (const episode of [...series.episodes].sort((a, b) => a.order - b.order)) {
+    if (onlyEpisodes && !onlyEpisodes.includes(episode.order)) continue
     const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'wl-rebuild-'))
     const segments = []
     let completo = true
@@ -222,7 +252,7 @@ for (const { file, lang, level } of files) {
     fs.writeFileSync(listFile, leveled.map((s, i) => (i ? `file '${silence}'\nfile '${s}'` : `file '${s}'`)).join('\n'))
     const out = path.join(outDir, `listening-${String(episode.order).padStart(2, '0')}.mp3`)
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', listFile,
-      '-af', `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11,alimiter=level_in=1:level_out=1:limit=0.7:attack=5:release=50:level=false`,
+      '-af', `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11,alimiter=level_in=1:level_out=1:limit=${TECHO_LIMITADOR}:attack=5:release=50:level=false`,
       '-c:a', 'libmp3lame', '-b:a', BITRATE, '-ar', '44100', '-ac', '1', out])
     fs.rmSync(temp, { recursive: true, force: true })
     rehechos += 1

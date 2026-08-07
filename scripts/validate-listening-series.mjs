@@ -537,6 +537,43 @@ if (placeholderLangs.length) {
 const pending = audioReady.filter((entry) => !entry.ready).map((entry) => entry.lang + '/' + entry.level)
 if (pending.length) console.log(`Audio pendiente (páginas en modo «en preparación»): ${pending.join(', ')}`)
 
+/**
+ * Techo de preguntas donde la respuesta correcta se delata por su silueta.
+ *
+ * Cuando una opción es tres o más palabras más larga que la siguiente, se distingue sin
+ * leerla. Medido sobre las 24 series: eso pasa en 362 de las 2400 preguntas, y en el 96,7 %
+ * de esos casos la opción que destaca es la correcta —o sea, ahí la longitud es la
+ * respuesta—. Las causas son dos: la buena es la única específica («Emma se presenta a una
+ * vecina el día que llega») mientras los distractores son telegráficos («Emma busca un
+ * piso»), y en las de detalle el redactor solo desarrolló la que sabía cierta.
+ *
+ * Es primo del sesgo de posición que ya corrige listening-shuffle.ts, pero por el eje de la
+ * longitud, y ese no se puede arreglar barajando: hay que reescribir los distractores.
+ * Mientras se hace, este número solo puede bajar. Si sube, el build se para.
+ */
+const TECHO_SILUETA = 362
+const DESTAQUE = 3
+
+let silueta = 0
+for (const entry of files) {
+  const series = loadSeries(entry.file)
+  if (!series) continue
+  for (const episode of series.episodes) {
+    for (const question of [episode.gist, ...episode.details, episode.consolidation]) {
+      const largos = question.options.map((option) => normalize(option).split(' ').filter(Boolean).length)
+      const ordenados = [...largos].sort((a, b) => b - a)
+      if (ordenados[0] - ordenados[1] >= DESTAQUE) silueta += 1
+    }
+  }
+}
+
+if (silueta > TECHO_SILUETA) {
+  hasErrors = true
+  console.error(`✗ silueta: ${silueta} preguntas con una opción ${DESTAQUE}+ palabras más larga que las demás (techo ${TECHO_SILUETA})`)
+} else {
+  console.log(`✓ silueta: ${silueta} preguntas delatadas por longitud (techo ${TECHO_SILUETA}; baja al reescribir distractores)`)
+}
+
 if (!hasErrors) {
   console.log(`Listening A1: ${files.length} series, ${totalTurns} turnos, ${totalChars} caracteres de TTS.`)
 }

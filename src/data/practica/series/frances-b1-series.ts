@@ -49,7 +49,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     {
-      id: 'fr-b1-01-le-mot-sur-la-vitrine', order: 1, title: 'Le mot sur la vitrine', titleEs: 'El papel del escaparate', duration: 35,
+      id: 'fr-b1-01-le-mot-sur-la-vitrine', order: 1, title: 'Le mot sur la vitrine', titleEs: 'El papel del escaparate', duration: 34,
       characters: ['Léa', 'Hugo'], location: 'Acera, delante de la panadería',
       objective: 'Situar un hecho anterior a otro dentro de un relato en pasado.',
       grammar: ['plus-que-parfait', 'passé composé / imparfait (reprise)'],
@@ -73,7 +73,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Por qué cree Hugo que Bertin calló?', ['Porque tenía vergüenza', 'Porque no le importaba', 'Porque estaba de viaje'], 0, 'Dice «Parce qu’il avait honte, je crois».'),
       ],
       consolidation: q('¿Cuál de estas frases dijo Hugo?', ['Il a pris sa décision ce matin.', 'Il avait pris sa décision avant l’été.', 'Il prendra sa décision en décembre.'], 1, 'Dijo «Il avait pris sa décision avant l’été»: el plus-que-parfait coloca esa decisión antes del momento del que hablan.'),
-      audit: { level: 'B1', grammarUsed: ['plus-que-parfait', 'futur simple', 'passé composé pronominal (il s’est tu)'], newVocabulary: ['vitrine', 'avoir honte', 'coller'], possibleDifficulties: ['distinguir «il avait pris» de «il a pris» sin apoyo escrito'], estimatedDuration: 66, continuity: 'Arranca dos años después del final de la temporada 2: la fiesta del barrio a la que se refieren es la misma cita anual de junio en la que Claire llegó con la mitad que faltaba de la receta.', pronunciationRisks: ['il s’est tu', 'avait honte'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['plus-que-parfait', 'futur simple', 'passé composé pronominal (il s’est tu)'], newVocabulary: ['vitrine', 'avoir honte', 'coller'], possibleDifficulties: ['distinguir «il avait pris» de «il a pris» sin apoyo escrito'], estimatedDuration: 34, continuity: 'Arranca dos años después del final de la temporada 2: la fiesta del barrio a la que se refieren es la misma cita anual de junio en la que Claire llegó con la mitad que faltaba de la receta.', pronunciationRisks: ['il s’est tu', 'avait honte'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-02-ce-dont-il-navait-jamais-parle', order: 2, title: 'Ce dont il n’avait jamais parlé', titleEs: 'Aquello de lo que nunca había hablado', duration: 39,
@@ -100,7 +100,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Qué es lo que más miedo le da a Bertin?', ['Quedarse sin dinero', 'La masa congelada', 'Mudarse de barrio'], 1, 'Hugo menciona la masa congelada y Bertin responde «c’est justement ce dont j’ai le plus peur».'),
       ],
       consolidation: q('Completa la frase que dijo Monsieur Bertin: «Mes mains, ___ je suis si fier, ne suivent plus.»', ['que', 'dont', 'où'], 1, 'Se oye «Mes mains, dont je suis si fier»: être fier DE quelque chose pide dont.'),
-      audit: { level: 'B1', grammarUsed: ['dont (complément de nom, de verbe et de ce)', 'plus-que-parfait', 'faire + infinitif'], newVocabulary: ['fournil', 'siège', 'se servir de'], possibleDifficulties: ['«dont» átono se apoya en la palabra anterior y casi desaparece'], estimatedDuration: 68, continuity: 'Da la razón de la decisión anunciada en el episodio 1 y nombra por primera vez al grupo cuya oferta Hugo había mencionado.', pronunciationRisks: ['dont je suis', 'congelée'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['dont (complément de nom, de verbe et de ce)', 'plus-que-parfait', 'faire + infinitif'], newVocabulary: ['fournil', 'siège', 'se servir de'], possibleDifficulties: ['«dont» átono se apoya en la palabra anterior y casi desaparece'], estimatedDuration: 39, continuity: 'Da la razón de la decisión anunciada en el episodio 1 y nombra por primera vez al grupo cuya oferta Hugo había mencionado.', pronunciationRisks: ['dont je suis', 'congelée'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-03-lannee-ou-claire-est-revenue', order: 3, title: 'L’année où Claire est revenue', titleEs: 'El año en que volvió Claire', duration: 49,
@@ -127,7 +127,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Qué teme Madame Martin para Hugo?', ['Que se aburra', 'Que se mude a París', 'Que lo pierda todo y nadie lo ayude'], 2, 'Dice «Le jour où Hugo perdra tout, personne ne l’aidera».'),
       ],
       consolidation: q('¿Cuál de estas frases dijo Madame Martin?', ['Le jour dont Hugo perdra tout, personne ne l’aidera.', 'Le jour que Hugo perdra tout, personne ne l’aidera.', 'Le jour où Hugo perdra tout, personne ne l’aidera.'], 2, 'Dijo «Le jour où Hugo perdra tout»: con expresiones de tiempo el relativo es où, no que.'),
-      audit: { level: 'B1', grammarUsed: ['où temporel et locatif', 'dont', 'ne explétif (plus dure que je ne pensais)'], newVocabulary: ['endroit', 'réaliste', 'se retrouver'], possibleDifficulties: ['«où» y «ou» suenan igual: solo el contexto los separa'], estimatedDuration: 68, continuity: 'Recoge la noticia del episodio 1 desde la portería y fecha el regreso de Claire dos años atrás, es decir, al final de la temporada 2.', pronunciationRisks: ['l’année où', 'je ne pensais'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['où temporel et locatif', 'dont', 'ne explétif (plus dure que je ne pensais)'], newVocabulary: ['endroit', 'réaliste', 'se retrouver'], possibleDifficulties: ['«où» y «ou» suenan igual: solo el contexto los separa'], estimatedDuration: 49, continuity: 'Recoge la noticia del episodio 1 desde la portería y fecha el regreso de Claire dos años atrás, es decir, al final de la temporada 2.', pronunciationRisks: ['l’année où', 'je ne pensais'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-04-ce-que-dit-le-groupe', order: 4, title: 'Ce que dit le groupe', titleEs: 'Lo que dice el grupo', duration: 48,
@@ -147,17 +147,17 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         { speaker: 'Hugo', target: 'Alors dites-lui que quelqu’un d’autre veut cette boulangerie, et que ce quelqu’un travaille ici depuis des années. Moi.', es: 'Entonces dígale que otra persona quiere esta panadería, y que esa persona trabaja aquí desde hace años. Yo.' },
       ],
       ttsScript: 'Monsieur Bertin, je vous répète notre proposition : cent quatre-vingt mille euros, payés comptant. Et vous dites que vous gardez le nom de la maison sur la vitrine ? Je dis que nous gardons l’enseigne et que nous rouvrons en février. Elle ne dit pas d’où vient la pâte. C’est ça, la vraie question, et elle le sait très bien. Notre pâte vient d’une usine près de Lyon. Je ne le cache pas. Hugo me demande toujours si je peux attendre encore un peu. Mon directeur me demande une réponse. Il dit qu’il ne peut pas attendre l’hiver. Alors dites-lui que quelqu’un d’autre veut cette boulangerie, et que ce quelqu’un travaille ici depuis des années. Moi.',
-      gist: q('¿Qué ocurre en este episodio?', ['El grupo hace su oferta y Hugo se presenta como comprador', 'Bertin firma la venta', 'La panadería cierra ese mismo día'], 0, 'Madame Delcourt repite la propuesta y Hugo dice «quelqu’un d’autre veut cette boulangerie. Moi».'),
+      gist: q('¿Qué ocurre en este episodio?', ['El grupo hace su oferta y Hugo se presenta como comprador', 'Bertin firma la venta', 'La panadería cierra ese mismo día'], 0, 'Madame Delcourt repite la propuesta y Hugo dice «quelqu’un d’autre veut cette boulangerie, et que ce quelqu’un travaille ici depuis des années. Moi».'),
       details: [
         q('¿Cuánto ofrece el grupo?', ['Ciento ochenta mil euros', 'Ochenta mil euros', 'Cuarenta mil euros'], 0, 'Dice «cent quatre-vingt mille euros, payés comptant».'),
         q('¿De dónde viene la masa del grupo?', ['De la propia panadería', 'De una fábrica cerca de Lyon', 'De París'], 1, 'Madame Delcourt dice «Notre pâte vient d’une usine près de Lyon».'),
         q('¿Cuándo reabrirían?', ['En diciembre', 'En junio', 'En febrero'], 2, 'Dice «nous rouvrons en février».'),
       ],
       consolidation: q('Madame Delcourt afirma «Nous gardons l’enseigne». ¿Cómo lo dijo ella misma en estilo indirecto?', ['Je dis que nous gardons l’enseigne.', 'Je dis de garder l’enseigne.', 'Je dis nous gardons l’enseigne.'], 0, 'Se oye «Je dis que nous gardons l’enseigne et que nous rouvrons en février»: cada afirmación va introducida por que.'),
-      audit: { level: 'B1', grammarUsed: ['discours indirect avec que et si', 'demander à quelqu’un de / que', 'impératif + pronom (dites-lui)'], newVocabulary: ['enseigne', 'comptant', 'usine'], possibleDifficulties: ['«si» de estilo indirecto se confunde con «si» de condición'], estimatedDuration: 64, continuity: 'Pone rostro y cifra al grupo que Bertin había nombrado en el episodio 2; la sede en París se mantiene, aquí se añade el precio y la fábrica.', pronunciationRisks: ['cent quatre-vingt mille', 'enseigne'], recommendedChanges: ['Comprobar en la primera muestra «cent quatre-vingt mille euros»: es respuesta de una pregunta de detalle y debe oírse entero.'] },
+      audit: { level: 'B1', grammarUsed: ['discours indirect avec que et si', 'demander à quelqu’un de / que', 'impératif + pronom (dites-lui)'], newVocabulary: ['enseigne', 'comptant', 'usine'], possibleDifficulties: ['«si» de estilo indirecto se confunde con «si» de condición'], estimatedDuration: 48, continuity: 'Pone rostro y cifra al grupo que Bertin había nombrado en el episodio 2; la sede en París se mantiene, aquí se añade el precio y la fábrica.', pronunciationRisks: ['cent quatre-vingt mille', 'enseigne'], recommendedChanges: ['Comprobar en la primera muestra «cent quatre-vingt mille euros»: es respuesta de una pregunta de detalle y debe oírse entero.'] },
     },
     {
-      id: 'fr-b1-05-ce-quines-a-repete', order: 5, title: 'Ce qu’Inès a répété', titleEs: 'Lo que repitió Inès', duration: 36,
+      id: 'fr-b1-05-ce-quines-a-repete', order: 5, title: 'Ce qu’Inès a répété', titleEs: 'Lo que repitió Inès', duration: 35,
       characters: ['Inès', 'Hugo'], location: 'Cafetería del barrio',
       objective: 'Notar cómo cambian los tiempos cuando se cuenta algo dicho antes.',
       grammar: ['discours indirect au passé (concordance)', 'plus-que-parfait (reprise)'],
@@ -181,7 +181,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Qué había prometido Léa?', ['Cocinar el pastel', 'Hablar con el banco', 'Ayudar con el expediente'], 2, 'Hugo dice «Elle avait promis de m’aider avec le dossier».'),
       ],
       consolidation: q('Léa dijo: «Je réfléchis». ¿Cómo lo contó Inès?', ['Elle m’a expliqué qu’elle réfléchit.', 'Elle m’a expliqué qu’elle réfléchissait.', 'Elle m’a expliqué qu’elle a réfléchi.'], 1, 'Se oye «Elle m’a expliqué qu’elle réfléchissait»: al contar en pasado, el presente pasa a imparfait.'),
-      audit: { level: 'B1', grammarUsed: ['concordance des temps au discours indirect', 'plus-que-parfait', 'conditionnel comme futur du passé'], newVocabulary: ['poste', 'raconter que', 'faire une tête'], possibleDifficulties: ['«qu’elle partirait» suena casi igual que «qu’elle partira»'], estimatedDuration: 62, continuity: 'Es la primera vez que se nombra la oferta de Claire a Léa; Hugo la recibe deformada, y ese malentendido no se aclarará hasta el episodio 14.', pronunciationRisks: ['réfléchissait', 'partirait'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['concordance des temps au discours indirect', 'plus-que-parfait', 'conditionnel comme futur du passé'], newVocabulary: ['poste', 'raconter que', 'faire une tête'], possibleDifficulties: ['«qu’elle partirait» suena casi igual que «qu’elle partira»'], estimatedDuration: 35, continuity: 'Es la primera vez que se nombra la oferta de Claire a Léa; Hugo la recibe deformada, y ese malentendido no se aclarará hasta el episodio 14.', pronunciationRisks: ['réfléchissait', 'partirait'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-06-il-faut-que-vous-choisissiez', order: 6, title: 'Il faut que vous choisissiez', titleEs: 'Hace falta que elijan', duration: 40,
@@ -208,7 +208,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Qué le pide Hugo a Léa?', ['Que hable con el banco', 'Que prepare el pastel', 'Que le diga la verdad sobre Marsella'], 2, 'Dice «il faut que tu me dises la vérité sur Marseille».'),
       ],
       consolidation: q('Completa la frase que dijo Monsieur Bertin: «Il faut que vous m’___ un dossier complet.»', ['apportez', 'apporterez', 'apportiez'], 2, 'Se oye «Il faut que vous m’apportiez»: después de il faut que el verbo va en subjuntivo.'),
-      audit: { level: 'B1', grammarUsed: ['il faut que + subjonctif', 'subjonctifs irréguliers (soyez, dises)', 'discours indirect au passé'], newVocabulary: ['dossier', 'complet', 'vérité'], possibleDifficulties: ['«apportez» y «apportiez» se distinguen por una semivocal muy breve'], estimatedDuration: 64, continuity: 'Convierte la candidatura que Hugo anunció ante Madame Delcourt en el episodio 4 en un plazo con fecha, y deja la tensión de Marsella sin resolver.', pronunciationRisks: ['apportiez', 'soyez'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['il faut que + subjonctif', 'subjonctifs irréguliers (soyez, dises)', 'discours indirect au passé'], newVocabulary: ['dossier', 'complet', 'vérité'], possibleDifficulties: ['«apportez» y «apportiez» se distinguen por una semivocal muy breve'], estimatedDuration: 40, continuity: 'Convierte la candidatura que Hugo anunció ante Madame Delcourt en el episodio 4 en un plazo con fecha, y deja la tensión de Marsella sin resolver.', pronunciationRisks: ['apportiez', 'soyez'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-07-je-ne-veux-pas-que-tu-tendettes', order: 7, title: 'Je ne veux pas que tu t’endettes', titleEs: 'No quiero que te endeudes', duration: 38,
@@ -228,17 +228,17 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         { speaker: 'Monsieur Bertin', target: 'Je n’ai rien accepté du tout. Je veux seulement que tu aies ta chance, une fois.', es: 'No he aceptado nada en absoluto. Solo quiero que tengas tu oportunidad, una vez.' },
       ],
       ttsScript: 'Je travaille ici depuis cinq ans, nuit après nuit. Je veux que ce fournil reste vivant. Et moi, je ne veux pas que tu t’endettes pour moi pendant vingt ans. Ce n’est pas seulement pour vous. Je souhaite que le quartier garde son pain et son odeur. Ta mère voudrait que tu fasses un métier plus tranquille, j’imagine. Ma mère veut surtout que je sois heureux quelque part. Elle me l’a dit hier au téléphone. Bon. Je veux bien qu’on essaie, mais il faut que la banque suive. Vous acceptez ? Vraiment ? Depuis septembre, je n’espérais plus que vous disiez oui. Je n’ai rien accepté du tout. Je veux seulement que tu aies ta chance, une fois.',
-      gist: q('¿Qué concede Monsieur Bertin al final?', ['Que Hugo lo intente, sin prometer nada', 'Que Hugo firme mañana', 'Que el grupo compre'], 0, 'Dice «Je n’ai rien accepté. Je veux seulement que tu aies ta chance».'),
+      gist: q('¿Qué concede Monsieur Bertin al final?', ['Que Hugo lo intente, sin prometer nada', 'Que Hugo firme mañana', 'Que el grupo compre'], 0, 'Dice «Je n’ai rien accepté du tout. Je veux seulement que tu aies ta chance, une fois».'),
       details: [
         q('¿Desde hace cuánto trabaja Hugo allí?', ['Desde hace dos años', 'Desde hace cinco años', 'Desde hace veinte años'], 1, 'Dice «Je travaille ici depuis cinq ans».'),
         q('¿Qué teme Monsieur Bertin?', ['Que Hugo se endeude veinte años', 'Que Hugo se mude', 'Que Hugo cambie la receta'], 0, 'Dice «je ne veux pas que tu t’endettes pour moi pendant vingt ans».'),
         q('¿Qué quiere la madre de Hugo, según él?', ['Que gane más dinero', 'Que trabaje en París', 'Que sea feliz'], 2, 'Hugo dice «Ma mère veut surtout que je sois heureux».'),
       ],
       consolidation: q('Completa la frase que dijo Monsieur Bertin: «Je veux seulement que tu ___ ta chance.»', ['as', 'aies', 'auras'], 1, 'Se oye «que tu aies ta chance»: vouloir que exige subjuntivo, y el de avoir es aies.'),
-      audit: { level: 'B1', grammarUsed: ['vouloir / souhaiter / espérer que + subjonctif', 'il faut que', 'depuis + durée'], newVocabulary: ['s’endetter', 'suivre (accompagner)', 'chance'], possibleDifficulties: ['«aies» y «as» se distinguen apenas por el timbre de la vocal'], estimatedDuration: 62, continuity: 'Hugo lleva ahora cinco años en la panadería (eran tres en la temporada 2) y consigue de Bertin el permiso condicional que necesita para el plazo del episodio 6.', pronunciationRisks: ['t’endettes', 'que tu aies'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['vouloir / souhaiter / espérer que + subjonctif', 'il faut que', 'depuis + durée'], newVocabulary: ['s’endetter', 'suivre (accompagner)', 'chance'], possibleDifficulties: ['«aies» y «as» se distinguen apenas por el timbre de la vocal'], estimatedDuration: 38, continuity: 'Hugo lleva ahora cinco años en la panadería (eran tres en la temporada 2) y consigue de Bertin el permiso condicional que necesita para el plazo del episodio 6.', pronunciationRisks: ['t’endettes', 'que tu aies'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-08-bien-que-hugo-soit-serieux', order: 8, title: 'Bien que Hugo soit sérieux', titleEs: 'Aunque Hugo sea serio', duration: 48,
+      id: 'fr-b1-08-bien-que-hugo-soit-serieux', order: 8, title: 'Bien que Hugo soit sérieux', titleEs: 'Aunque Hugo sea serio', duration: 47,
       characters: ['Léa', 'Inès', 'Madame Martin'], location: 'Patio del edificio',
       objective: 'Entender una objeción introducida por bien que y un contraste con alors que.',
       grammar: ['bien que + subjonctif', 'alors que (opposition)'],
@@ -262,7 +262,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Por qué se opone Madame Martin?', ['Porque no soporta a Hugo', 'Porque quiere vender su piso', 'Porque teme que Hugo pierda sus ahorros'], 2, 'Dice «Je ne veux pas qu’on lui prenne ses douze mille euros».'),
       ],
       consolidation: q('Completa la frase que dijo Madame Martin: «Bien que Hugo ___ sérieux et travailleur, il n’aura jamais cette somme.»', ['est', 'soit', 'sera'], 1, 'Se oye «Bien que Hugo soit sérieux et travailleur»: bien que exige subjuntivo, aunque el hecho sea cierto.'),
-      audit: { level: 'B1', grammarUsed: ['bien que + subjonctif', 'alors que d’opposition', 'pronom en avec quantité'], newVocabulary: ['apport', 'économiser', 'chiffres'], possibleDifficulties: ['«quarante» y «quatorze» se confunden con ruido de fondo'], estimatedDuration: 64, continuity: 'Es la visita al banco que Hugo mencionaba en el episodio 6; Madame Martin mantiene la postura de venta que ya defendía en el episodio 3, pero por un motivo distinto.', pronunciationRisks: ['bien que Hugo soit', 'quarante mille'], recommendedChanges: ['Verificar «quarante mille» y «douze mille» en la primera muestra: los dos son respuesta de una pregunta de detalle.'] },
+      audit: { level: 'B1', grammarUsed: ['bien que + subjonctif', 'alors que d’opposition', 'pronom en avec quantité'], newVocabulary: ['apport', 'économiser', 'chiffres'], possibleDifficulties: ['«quarante» y «quatorze» se confunden con ruido de fondo'], estimatedDuration: 47, continuity: 'Es la visita al banco que Hugo mencionaba en el episodio 6; Madame Martin mantiene la postura de venta que ya defendía en el episodio 3, pero por un motivo distinto.', pronunciationRisks: ['bien que Hugo soit', 'quarante mille'], recommendedChanges: ['Verificar «quarante mille» y «douze mille» en la primera muestra: los dos son respuesta de una pregunta de detalle.'] },
     },
     {
       id: 'fr-b1-09-largument-de-madame-delcourt', order: 9, title: 'L’argument de Madame Delcourt', titleEs: 'El argumento de Madame Delcourt', duration: 53,
@@ -282,14 +282,14 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         { speaker: 'Léa', target: 'Alors laissez-nous nos six semaines jusqu’au bout. Vous ne perdez rien du tout.', es: 'Entonces déjenos nuestras seis semanas hasta el final. Ustedes no pierden nada.' },
       ],
       ttsScript: 'J’ai lu vos chiffres hier soir. Votre projet est solide, vraiment. Cependant, il arrive trop tard. Trop tard ? Monsieur Bertin nous a donné jusqu’à la fin du mois, pourtant. Vous avez six semaines. Nous, en revanche, nous signons en trois jours. Bien que vous soyez plus rapides que nous, vous n’achetez pas du tout la même chose. Nous achetons des murs et une clientèle qui existe déjà. Vous, vous achetez une histoire. C’est vrai, madame. Pourtant, c’est cette histoire-là qui fait vivre le magasin chaque matin. Je le pense aussi, franchement. Cependant, mon métier n’est pas de penser, c’est de conclure. Alors laissez-nous nos six semaines jusqu’au bout. Vous ne perdez rien du tout.',
-      gist: q('¿Qué opina Madame Delcourt del proyecto de Hugo?', ['Que es sólido pero llega tarde', 'Que es una mala idea', 'Que no lo ha leído'], 0, 'Dice «Votre projet est solide. Cependant, il arrive trop tard».'),
+      gist: q('¿Qué opina Madame Delcourt del proyecto de Hugo?', ['Que es sólido pero llega tarde', 'Que es una mala idea', 'Que no lo ha leído'], 0, 'Dice «Votre projet est solide, vraiment. Cependant, il arrive trop tard».'),
       details: [
         q('¿En cuánto tiempo firma el grupo?', ['En tres días', 'En seis semanas', 'En febrero'], 0, 'Dice «nous signons en trois jours».'),
         q('¿Qué compra el grupo, según ella?', ['Un obrador y una receta', 'Unas paredes y una clientela', 'Una casa y un jardín'], 1, 'Dice «Nous achetons des murs et une clientèle».'),
         q('¿Qué compran Hugo y Léa, según ella?', ['Un local vacío', 'Una máquina', 'Una historia'], 2, 'Dice «Vous, vous achetez une histoire».'),
       ],
       consolidation: q('Completa la frase que dijo Madame Delcourt: «Vous avez six semaines. Nous, ___, nous signons en trois jours.»', ['bien que', 'en revanche', 'pour que'], 1, 'Se oye «Nous, en revanche, nous signons en trois jours»: en revanche opone dos situaciones paralelas.'),
-      audit: { level: 'B1', grammarUsed: ['cependant / pourtant / en revanche', 'bien que + subjonctif', 'mise en relief c’est… qui'], newVocabulary: ['solide', 'clientèle', 'murs (fonds de commerce)'], possibleDifficulties: ['«pourtant» al final de frase se pronuncia átono y casi se pierde'], estimatedDuration: 62, continuity: 'Retoma las seis semanas del plazo del episodio 6 y las cifras que el grupo había puesto sobre la mesa en el episodio 4.', pronunciationRisks: ['cependant', 'en revanche'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['cependant / pourtant / en revanche', 'bien que + subjonctif', 'mise en relief c’est… qui'], newVocabulary: ['solide', 'clientèle', 'murs (fonds de commerce)'], possibleDifficulties: ['«pourtant» al final de frase se pronuncia átono y casi se pierde'], estimatedDuration: 53, continuity: 'Retoma las seis semanas del plazo del episodio 6 y las cifras que el grupo había puesto sobre la mesa en el episodio 4.', pronunciationRisks: ['cependant', 'en revanche'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-10-si-jacceptais', order: 10, title: 'Si j’acceptais', titleEs: 'Si aceptara', duration: 52,
@@ -313,10 +313,10 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       details: [
         q('¿Cuándo empezaría Léa en Marsella?', ['En enero', 'En febrero', 'En junio'], 0, 'Claire dice «tu commencerais en janvier».'),
         q('¿Desde hace cuánto vive Léa en Lyon?', ['Desde hace un año', 'Desde hace tres años', 'Desde hace doce años'], 1, 'Léa dice «Je vis à Lyon depuis trois ans».'),
-        q('¿Qué haría Claire si fuera más joven?', ['Volvería a Lyon a vivir', 'Cerraría su pastelería', 'Compraría esa panadería'], 2, 'Dice «Si j’étais plus jeune, je rachèterais cette boulangerie moi-même».'),
+        q('¿Qué haría Claire si fuera más joven?', ['Volvería a Lyon a vivir', 'Cerraría su pastelería', 'Compraría esa panadería'], 2, 'Dice «Si j’étais plus jeune de vingt ans, je rachèterais cette boulangerie moi-même».'),
       ],
       consolidation: q('Completa la frase que dijo Léa: «Si je ___, ce quartier me manquerait.»', ['pars', 'partais', 'partirais'], 1, 'Se oye «Si je partais, ce quartier me manquerait»: tras si va el imparfait y el condicional queda en la otra mitad.'),
-      audit: { level: 'B1', grammarUsed: ['si + imparfait → conditionnel présent', 'conditionnel de suggestion', 'depuis + durée'], newVocabulary: ['abandonner', 'racheter', 'investir'], possibleDifficulties: ['«je partais» y «je partirais» se separan por una sola sílaba'], estimatedDuration: 62, continuity: 'Es la oferta real de Claire, la misma que Inès había contado deformada en el episodio 5. Léa lleva tres años en Lyon: uno en la temporada 2 y dos desde entonces.', pronunciationRisks: ['rachèterais', 'investiriez'], recommendedChanges: ['Grabar a Claire con un filtro telefónico ligero, como en la temporada 2.'] },
+      audit: { level: 'B1', grammarUsed: ['si + imparfait → conditionnel présent', 'conditionnel de suggestion', 'depuis + durée'], newVocabulary: ['abandonner', 'racheter', 'investir'], possibleDifficulties: ['«je partais» y «je partirais» se separan por una sola sílaba'], estimatedDuration: 52, continuity: 'Es la oferta real de Claire, la misma que Inès había contado deformada en el episodio 5. Léa lleva tres años en Lyon: uno en la temporada 2 y dos desde entonces.', pronunciationRisks: ['rachèterais', 'investiriez'], recommendedChanges: ['Grabar a Claire con un filtro telefónico ligero, como en la temporada 2.'] },
     },
     {
       id: 'fr-b1-11-lassociee-a-laquelle-personne-navait-pense', order: 11, title: 'L’associée à laquelle personne n’avait pensé', titleEs: 'La socia en la que nadie había pensado', duration: 44,
@@ -343,7 +343,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Cuál es su condición?', ['Que se venda en febrero', 'Que Hugo trabaje de día', 'Que siga siendo un obrador de verdad'], 2, 'Dice «doit rester un vrai fournil».'),
       ],
       consolidation: q('Completa la frase que dijo Claire: «Le fournil pour ___ je me bats doit rester un vrai fournil.»', ['lequel', 'laquelle', 'duquel'], 0, 'Se oye «Le fournil pour lequel je me bats»: fournil es masculino singular, así que el relativo compuesto es lequel.'),
-      audit: { level: 'B1', grammarUsed: ['lequel / laquelle / à laquelle / pour laquelle', 'dont', 'futur simple'], newVocabulary: ['associée', 'céder', 'oser'], possibleDifficulties: ['distinguir «à laquelle» de «laquelle» cuando la preposición se pega'], estimatedDuration: 70, continuity: 'Nace de la frase que Claire soltó al final del episodio 10 y cierra el agujero de treinta mil euros que el episodio 8 había abierto: doce mil de Hugo más treinta mil de Claire.', pronunciationRisks: ['à laquelle', 'quarante-deux mille'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['lequel / laquelle / à laquelle / pour laquelle', 'dont', 'futur simple'], newVocabulary: ['associée', 'céder', 'oser'], possibleDifficulties: ['distinguir «à laquelle» de «laquelle» cuando la preposición se pega'], estimatedDuration: 44, continuity: 'Nace de la frase que Claire soltó al final del episodio 10 y cierra el agujero de treinta mil euros que el episodio 8 había abierto: doce mil de Hugo más treinta mil de Claire.', pronunciationRisks: ['à laquelle', 'quarante-deux mille'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-12-pour-que-le-fournil-reste-ouvert', order: 12, title: 'Pour que le fournil reste ouvert', titleEs: 'Para que el obrador siga abierto', duration: 42,
@@ -367,10 +367,10 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       details: [
         q('¿Qué día entregan el expediente?', ['El 15 de diciembre', 'El 31 de octubre', 'El 1 de febrero'], 1, 'Léa precisa «le trente et un octobre».'),
         q('¿Qué cifra de aporte lee Monsieur Bertin?', ['Doce mil', 'Treinta mil', 'Cuarenta y dos mil'], 2, 'Lee «Quarante-deux mille d’apport…».'),
-        q('¿Qué pide Bertin antes de responder al grupo?', ['Una noche para pensarlo', 'Otra reunión con el banco', 'Hablar con Madame Delcourt'], 0, 'Dice «je veux dormir une nuit là-dessus».'),
+        q('¿Qué pide Bertin antes de responder al grupo?', ['Una noche para pensarlo', 'Otra reunión con el banco', 'Hablar con Madame Delcourt'], 0, 'Dice «je veux dormir une nuit entière là-dessus».'),
       ],
       consolidation: q('Completa la frase que dijo Monsieur Bertin: «Avant que je ___ au groupe, je veux dormir une nuit là-dessus.»', ['réponds', 'répondrai', 'réponde'], 2, 'Se oye «Avant que je réponde au groupe»: avant que exige subjuntivo.'),
-      audit: { level: 'B1', grammarUsed: ['pour que / avant que + subjonctif', 'sur laquelle', 'bien que + subjonctif'], newVocabulary: ['comme convenu', 'changer d’avis', 'là-dessus'], possibleDifficulties: ['«réponds» y «réponde» solo se separan por la consonante final'], estimatedDuration: 66, continuity: 'Cumple el plazo del 31 de octubre que Bertin había fijado en el episodio 6, con el aporte de cuarenta y dos mil euros cerrado en el episodio 11.', pronunciationRisks: ['que je réponde', 'quarante-deux mille'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['pour que / avant que + subjonctif', 'sur laquelle', 'bien que + subjonctif'], newVocabulary: ['comme convenu', 'changer d’avis', 'là-dessus'], possibleDifficulties: ['«réponds» y «réponde» solo se separan por la consonante final'], estimatedDuration: 42, continuity: 'Cumple el plazo del 31 de octubre que Bertin había fijado en el episodio 6, con el aporte de cuarenta y dos mil euros cerrado en el episodio 11.', pronunciationRisks: ['que je réponde', 'quarante-deux mille'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-13-ce-que-jaurais-du-faire', order: 13, title: 'Ce que j’aurais dû faire', titleEs: 'Lo que debería haber hecho', duration: 58,
@@ -397,7 +397,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Cuándo hablará Madame Martin con Bertin?', ['La semana próxima', 'En diciembre', 'Mañana por la mañana'], 2, 'Dice «Je lui parlerai demain matin».'),
       ],
       consolidation: q('¿Cuál de estas frases dijo Madame Martin?', ['Je devais répondre le jour même.', 'J’aurais dû répondre le jour même.', 'Je devrais répondre le jour même.'], 1, 'Dijo «J’aurais dû répondre le jour même»: el conditionnel passé de devoir expresa un reproche sobre algo que ya no tiene remedio.'),
-      audit: { level: 'B1', grammarUsed: ['conditionnel passé (j’aurais dû, j’aurais pu, j’aurais aimé)', 'plus-que-parfait', 'ne explétif'], newVocabulary: ['courageuse', 'soutenir', 'à l’époque'], possibleDifficulties: ['«j’aurais dû» se contrae mucho y suena casi como una sola sílaba'], estimatedDuration: 62, continuity: 'Los doce años sin verse y la carta guardada vienen de la temporada 2; aquí Solange abandona por fin la postura de venta que defendía en los episodios 3 y 8.', pronunciationRisks: ['j’aurais dû', 'courageuse'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['conditionnel passé (j’aurais dû, j’aurais pu, j’aurais aimé)', 'plus-que-parfait', 'ne explétif'], newVocabulary: ['courageuse', 'soutenir', 'à l’époque'], possibleDifficulties: ['«j’aurais dû» se contrae mucho y suena casi como una sola sílaba'], estimatedDuration: 58, continuity: 'Los doce años sin verse y la carta guardada vienen de la temporada 2; aquí Solange abandona por fin la postura de venta que defendía en los episodios 3 y 8.', pronunciationRisks: ['j’aurais dû', 'courageuse'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-14-si-tu-mavais-parle', order: 14, title: 'Si tu m’avais parlé', titleEs: 'Si me hubieras hablado', duration: 39,
@@ -424,10 +424,10 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Cuánto tiempo habría estado enfadada Léa?', ['Tres semanas', 'Tres días', 'Tres meses'], 0, 'Dice «Je serais restée fâchée trois semaines».'),
       ],
       consolidation: q('Completa la frase que dijo Hugo: «Si Inès n’avait rien dit ce jour-là, je n’___ rien imaginé.»', ['avais', 'aurais', 'ai'], 1, 'Se oye «je n’aurais rien imaginé»: con si + plus-que-parfait, la otra mitad va en conditionnel passé.'),
-      audit: { level: 'B1', grammarUsed: ['si + plus-que-parfait → conditionnel passé', 'plus-que-parfait', 'accord du participe (appelée, partie, restée, venue)'], newVocabulary: ['fâchée', 'imaginer', 'le soir même'], possibleDifficulties: ['tres formas compuestas seguidas en la misma frase'], estimatedDuration: 68, continuity: 'Deshace el malentendido que Inès sembró en el episodio 5 y confirma la respuesta real de Léa a la oferta que Claire le hizo en el episodio 10.', pronunciationRisks: ['je n’aurais rien', 'fâchée'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['si + plus-que-parfait → conditionnel passé', 'plus-que-parfait', 'accord du participe (appelée, partie, restée, venue)'], newVocabulary: ['fâchée', 'imaginer', 'le soir même'], possibleDifficulties: ['tres formas compuestas seguidas en la misma frase'], estimatedDuration: 39, continuity: 'Deshace el malentendido que Inès sembró en el episodio 5 y confirma la respuesta real de Léa a la oferta que Claire le hizo en el episodio 10.', pronunciationRisks: ['je n’aurais rien', 'fâchée'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-15-ce-que-la-banque-a-repondu', order: 15, title: 'Ce que la banque a répondu', titleEs: 'Lo que respondió el banco', duration: 39,
+      id: 'fr-b1-15-ce-que-la-banque-a-repondu', order: 15, title: 'Ce que la banque a répondu', titleEs: 'Lo que respondió el banco', duration: 38,
       characters: ['Léa', 'Hugo', 'Inès'], location: 'Cafetería del barrio',
       objective: 'Distinguir tres hipótesis distintas dentro de una misma conversación.',
       grammar: ['les trois types de si (reprise)', 'discours indirect (reprise)'],
@@ -448,13 +448,13 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       details: [
         q('¿Cuánto aporte tienen reunido?', ['Cuarenta y dos mil', 'Treinta mil', 'Doce mil'], 0, 'Hugo dice «Nous en avons quarante-deux».'),
         q('¿Qué hará Léa si pierden?', ['Buscar otro banco', 'Irse a Marsella', 'Quedarse en el edificio'], 1, 'Dice «Si nous perdons, je pars à Marseille».'),
-        q('¿Quién será la socia según Léa?', ['Inès', 'Madame Martin', 'Claire'], 2, 'Responde al banco «J’ai répondu : Claire».'),
+        q('¿Quién será la socia según Léa?', ['Inès', 'Madame Martin', 'Claire'], 2, 'Responde al banco «J’ai répondu tout de suite : Claire».'),
       ],
       consolidation: q('¿Cuál de estas frases dijo Inès?', ['Si je me tais, vous vous parlerez plus tôt.', 'Si je me taisais, vous vous parleriez plus tôt.', 'Si je m’étais tue, vous vous seriez parlé beaucoup plus tôt.'], 2, 'Dijo «Si je m’étais tue, vous vous seriez parlé beaucoup plus tôt»: habla de algo que ya no puede cambiar.'),
-      audit: { level: 'B1', grammarUsed: ['si + présent / imparfait / plus-que-parfait', 'discours indirect au passé', 'pronom en'], newVocabulary: ['prêter', 'atteindre', 'signature'], possibleDifficulties: ['tres estructuras con si seguidas exigen oír bien el tiempo verbal'], estimatedDuration: 64, continuity: 'Convierte en respuesta oficial el aporte de cuarenta y dos mil euros cerrado en el episodio 11 y entregado en el episodio 12; el enfado del episodio 14 ya está resuelto.', pronunciationRisks: ['prêterait', 'je m’étais tue'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['si + présent / imparfait / plus-que-parfait', 'discours indirect au passé', 'pronom en'], newVocabulary: ['prêter', 'atteindre', 'signature'], possibleDifficulties: ['tres estructuras con si seguidas exigen oír bien el tiempo verbal'], estimatedDuration: 38, continuity: 'Convierte en respuesta oficial el aporte de cuarenta y dos mil euros cerrado en el episodio 11 y entregado en el episodio 12; el enfado del episodio 14 ya está resuelto.', pronunciationRisks: ['prêterait', 'je m’étais tue'], recommendedChanges: [] },
     },
     {
-      id: 'fr-b1-16-je-ne-crois-pas-quelle-mente', order: 16, title: 'Je ne crois pas qu’elle mente', titleEs: 'No creo que esté mintiendo', duration: 39,
+      id: 'fr-b1-16-je-ne-crois-pas-quelle-mente', order: 16, title: 'Je ne crois pas qu’elle mente', titleEs: 'No creo que esté mintiendo', duration: 38,
       characters: ['Inès', 'Léa', 'Hugo'], location: 'Patio del edificio',
       objective: 'Reconocer el subjuntivo tras la duda y la emoción.',
       grammar: ['subjonctif après le doute et l’émotion', 'subjonctif (reprise)'],
@@ -478,7 +478,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿De qué se alegra Léa?', ['De que el banco pague', 'De que Claire venga', 'De que Madame Martin haya cambiado de opinión'], 2, 'Dice «Je suis contente que Madame Martin ait changé d’avis».'),
       ],
       consolidation: q('Completa la frase que dijo Léa: «Je ne crois pas qu’elle ___.»', ['ment', 'mente', 'mentira'], 1, 'Se oye «Je ne crois pas qu’elle mente»: croire en negativo introduce duda y pide subjuntivo.'),
-      audit: { level: 'B1', grammarUsed: ['subjonctif après doute et émotion', 'subjonctif passé (ait changé, ayez perdu)', 'il est possible que'], newVocabulary: ['se méfier', 'mentir', 'convaincre'], possibleDifficulties: ['«mente» y «ment» se distinguen solo por la consonante final audible'], estimatedDuration: 64, continuity: 'El cambio de opinión de Madame Martin viene del episodio 13, y los dos meses que Inès lamenta son los que van del episodio 5 al 14.', pronunciationRisks: ['qu’elle mente', 'qu’elle sache'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['subjonctif après doute et émotion', 'subjonctif passé (ait changé, ayez perdu)', 'il est possible que'], newVocabulary: ['se méfier', 'mentir', 'convaincre'], possibleDifficulties: ['«mente» y «ment» se distinguen solo por la consonante final audible'], estimatedDuration: 38, continuity: 'El cambio de opinión de Madame Martin viene del episodio 13, y los dos meses que Inès lamenta son los que van del episodio 5 al 14.', pronunciationRisks: ['qu’elle mente', 'qu’elle sache'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-17-la-decision-de-monsieur-bertin', order: 17, title: 'La décision de Monsieur Bertin', titleEs: 'La decisión de Monsieur Bertin', duration: 49,
@@ -501,11 +501,11 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       gist: q('¿Qué decidió Monsieur Bertin?', ['Rechazar la oferta del grupo', 'Aceptar la oferta del grupo', 'Cerrar sin vender'], 0, 'Dice «Je lui ai dit non» hablando de Madame Delcourt.'),
       details: [
         q('¿A quién llamó esa mañana?', ['Al banco', 'A Madame Delcourt', 'A Claire'], 1, 'Dice «J’ai appelé Madame Delcourt ce matin».'),
-        q('¿Qué reconoce Bertin que pierde?', ['Su casa', 'Su tiempo', 'Mucho dinero'], 2, 'Hugo se lo dice y él responde «Je perds de l’argent, mais je garde mon fournil».'),
+        q('¿Qué reconoce Bertin que pierde?', ['Su casa', 'Su tiempo', 'Mucho dinero'], 2, 'Hugo se lo dice y él responde «Je perds de l’argent, c’est vrai, mais je garde mon fournil vivant».'),
         q('¿Cuándo firman?', ['El 15 de diciembre', 'El 31 de octubre', 'En febrero'], 0, 'Dice «Chez le notaire, le quinze décembre».'),
       ],
       consolidation: q('Completa la frase que dijo Monsieur Bertin: «___ son offre soit meilleure, j’ai dit non.»', ['Bien que', 'Alors que', 'Cependant'], 0, 'Se oye «Bien que son offre soit meilleure»: solo bien que puede llevar delante ese subjuntivo.'),
-      audit: { level: 'B1', grammarUsed: ['bien que / alors que / cependant', 'il faut que + subjonctif', 'futur simple'], newVocabulary: ['notaire', 'pièces (documents)', 'fermer l’œil'], possibleDifficulties: ['«il faut que» e «il faudra que» se parecen mucho seguidos'], estimatedDuration: 66, continuity: 'Responde al plazo del viernes que Madame Delcourt había puesto en el episodio 16 y al expediente entregado en el episodio 12; los tres meses de espera cuentan desde el papel del escaparate del episodio 1.', pronunciationRisks: ['bien que son offre soit', 'quinze décembre'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['bien que / alors que / cependant', 'il faut que + subjonctif', 'futur simple'], newVocabulary: ['notaire', 'pièces (documents)', 'fermer l’œil'], possibleDifficulties: ['«il faut que» e «il faudra que» se parecen mucho seguidos'], estimatedDuration: 49, continuity: 'Responde al plazo del viernes que Madame Delcourt había puesto en el episodio 16 y al expediente entregado en el episodio 12; los tres meses de espera cuentan desde el papel del escaparate del episodio 1.', pronunciationRisks: ['bien que son offre soit', 'quinze décembre'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-18-la-carte-de-visite', order: 18, title: 'La carte de visite', titleEs: 'La tarjeta de visita', duration: 49,
@@ -525,14 +525,14 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         { speaker: 'Léa', target: 'Merci, madame. C’est la première fois qu’un concurrent nous souhaite vraiment bonne chance.', es: 'Gracias, señora. Es la primera vez que un competidor nos desea de verdad buena suerte.' },
       ],
       ttsScript: 'Monsieur Bertin m’a dit qu’il avait choisi son apprenti. Je viens simplement vous saluer. Je ne suis plus apprenti depuis longtemps, madame. Mais merci quand même d’être venue. Mon directeur m’a demandé si vous teniez trois ans dans ce métier. J’ai répondu oui. Vous auriez pu insister, augmenter le prix, appeler Bertin. Vous ne l’avez pas fait. Pourquoi ? Parce que la boulangerie dans laquelle on entre chaque matin n’est pas seulement un chiffre. Vous nous aviez pourtant dit que votre métier n’était pas de penser, mais de conclure. Je vous laisse ma carte. Le jour où vous voudrez de la farine, appelez-moi. Merci, madame. C’est la première fois qu’un concurrent nous souhaite vraiment bonne chance.',
-      gist: q('¿A qué viene Madame Delcourt?', ['A subir su oferta', 'A despedirse y desearles suerte', 'A pedir una explicación a Bertin'], 1, 'Dice «Je viens vous saluer» y les deja su tarjeta.'),
+      gist: q('¿A qué viene Madame Delcourt?', ['A subir su oferta', 'A despedirse y desearles suerte', 'A pedir una explicación a Bertin'], 1, 'Dice «Je viens simplement vous saluer» y les deja su tarjeta.'),
       details: [
         q('¿Qué le preguntó su director?', ['Si aguantarían tres años', 'Si el local estaba en venta', 'Si Bertin seguía enfermo'], 0, 'Dice «Mon directeur m’a demandé si vous teniez trois ans».'),
         q('¿Qué respondió ella a su director?', ['Que no', 'Que sí', 'Que no lo sabía'], 1, 'Dice «J’ai répondu oui».'),
         q('¿Para qué les deja su tarjeta?', ['Para venderles el local', 'Para invitarlos a París', 'Para venderles harina'], 2, 'Dice «Le jour où vous voudrez de la farine, appelez-moi».'),
       ],
       consolidation: q('Bertin le dijo: «J’ai choisi mon apprenti». ¿Cómo lo contó Madame Delcourt?', ['Monsieur Bertin m’a dit qu’il a choisi son apprenti.', 'Monsieur Bertin m’a dit qu’il avait choisi son apprenti.', 'Monsieur Bertin m’a dit qu’il choisira son apprenti.'], 1, 'Se oye «qu’il avait choisi son apprenti»: al contar en pasado, el passé composé pasa a plus-que-parfait.'),
-      audit: { level: 'B1', grammarUsed: ['discours indirect au passé', 'dans laquelle', 'où temporel', 'conditionnel passé (vous auriez pu)'], newVocabulary: ['apprenti', 'concurrent', 'insister'], possibleDifficulties: ['«si vous teniez» es interrogativa indirecta, no una condición'], estimatedDuration: 66, continuity: 'Sucede al no de Bertin del episodio 17 y recoge literalmente la frase que Madame Delcourt había dicho en el episodio 9 sobre su oficio.', pronunciationRisks: ['dans laquelle', 'apprenti'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['discours indirect au passé', 'dans laquelle', 'où temporel', 'conditionnel passé (vous auriez pu)'], newVocabulary: ['apprenti', 'concurrent', 'insister'], possibleDifficulties: ['«si vous teniez» es interrogativa indirecta, no una condición'], estimatedDuration: 49, continuity: 'Sucede al no de Bertin del episodio 17 y recoge literalmente la frase que Madame Delcourt había dicho en el episodio 9 sobre su oficio.', pronunciationRisks: ['dans laquelle', 'apprenti'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-19-la-veille-de-la-signature', order: 19, title: 'La veille de la signature', titleEs: 'La víspera de la firma', duration: 39,
@@ -559,7 +559,7 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
         q('¿Qué no le habría perdonado Inès?', ['Que vendiera el expediente', 'Que llegara tarde al notario', 'Que se fuera sin volver'], 2, 'Dice «Si tu étais partie en janvier sans revenir, je ne t’aurais jamais pardonné».'),
       ],
       consolidation: q('Completa la frase que dijo Inès: «Si tu ___ partie en janvier sans revenir, je ne t’aurais jamais pardonné.»', ['es', 'étais', 'serais'], 1, 'Se oye «Si tu étais partie»: el plus-que-parfait tras si acompaña al conditionnel passé de la otra mitad.'),
-      audit: { level: 'B1', grammarUsed: ['il faut que + subjonctif', 'bien que + subjonctif', 'si + présent → futur', 'si + plus-que-parfait → conditionnel passé'], newVocabulary: ['déplacer', 'réveiller', 'pardonner'], possibleDifficulties: ['dos tipos de si distintos en menos de treinta segundos'], estimatedDuration: 68, continuity: 'Es la noche anterior al quince de diciembre fijado en el episodio 17; la travesura de Biscotte con los papeles y el sótano vienen de las temporadas 1 y 2, y la estancia en Marsella nace de la oferta del episodio 10.', pronunciationRisks: ['si tu étais partie', 'pardonné'], recommendedChanges: [] },
+      audit: { level: 'B1', grammarUsed: ['il faut que + subjonctif', 'bien que + subjonctif', 'si + présent → futur', 'si + plus-que-parfait → conditionnel passé'], newVocabulary: ['déplacer', 'réveiller', 'pardonner'], possibleDifficulties: ['dos tipos de si distintos en menos de treinta segundos'], estimatedDuration: 39, continuity: 'Es la noche anterior al quince de diciembre fijado en el episodio 17; la travesura de Biscotte con los papeles y el sótano vienen de las temporadas 1 y 2, y la estancia en Marsella nace de la oferta del episodio 10.', pronunciationRisks: ['si tu étais partie', 'pardonné'], recommendedChanges: [] },
     },
     {
       id: 'fr-b1-20-les-cles-du-fournil', order: 20, title: 'Les clés du fournil', titleEs: 'Las llaves del obrador', duration: 43,
@@ -581,12 +581,12 @@ export const FRENCH_B1_SERIES: A1ListeningSeries = {
       ttsScript: 'Bravo, Hugo ! Bienvenue chez toi, enfin ! Prends ces clés, mon garçon. Je te les donne sans regret et sans conditions. Je les prends. Bien que j’aie signé ce matin chez le notaire, je n’y crois pas encore. J’ai apporté de Marseille le gâteau aux pommes et au citron. La recette complète, cette fois. Si nous n’avions pas cherché cette moitié de carte, rien de tout ça n’existerait. Il faut qu’on l’accroche ici, au-dessus du four, pour que tout le monde la voie en entrant. Mon père voulait que ce fournil ne ferme jamais. Eh bien, il ne fermera pas. Il ouvrira demain matin à six heures. Cependant, je dormirai un peu cette nuit.',
       gist: q('¿Cómo termina la temporada?', ['La panadería cierra el 31 de diciembre', 'Hugo recibe las llaves del obrador', 'El grupo compra el local'], 1, 'Bertin le dice «Prends ces clés, mon garçon» y Hugo responde «Je les prends».'),
       details: [
-        q('¿Qué trajo Claire?', ['Una carta de Marsella', 'Un cuaderno viejo', 'El pastel de manzana y limón'], 2, 'Dice «J’ai apporté le gâteau aux pommes et au citron».'),
+        q('¿Qué trajo Claire?', ['Una carta de Marsella', 'Un cuaderno viejo', 'El pastel de manzana y limón'], 2, 'Dice «J’ai apporté de Marseille le gâteau aux pommes et au citron».'),
         q('¿Cuándo firmó Hugo?', ['Esta mañana', 'Ayer por la noche', 'El 31 de octubre'], 0, 'Dice «Bien que j’aie signé ce matin».'),
-        q('¿A qué hora abrirá mañana?', ['A las cinco', 'A las seis', 'A las ocho'], 1, 'Hugo dice «Il ouvrira demain à six heures».'),
+        q('¿A qué hora abrirá mañana?', ['A las cinco', 'A las seis', 'A las ocho'], 1, 'Hugo dice «Il ouvrira demain matin à six heures».'),
       ],
       consolidation: q('¿Cuál de estas frases dijo Madame Martin?', ['Si nous cherchons cette moitié de carte, rien n’existera.', 'Si nous cherchions cette moitié de carte, rien n’existerait.', 'Si nous n’avions pas cherché cette moitié de carte, rien de tout ça n’existerait.'], 2, 'Dijo «Si nous n’avions pas cherché cette moitié de carte, rien de tout ça n’existerait»: parte de un pasado que no ocurrió y llega hasta hoy.'),
-      audit: { level: 'B1', grammarUsed: ['si + plus-que-parfait → conditionnel présent', 'bien que + subjonctif passé', 'pour que + subjonctif', 'futur simple'], newVocabulary: ['clés', 'accrocher', 'sans regret'], possibleDifficulties: ['«qu’on l’accroche» encadena tres sílabas átonas seguidas'], estimatedDuration: 64, continuity: 'Cierra el papel del escaparate del episodio 1 —la panadería no cierra, cambia de manos— y recupera la receta completa de manzana y limón de la temporada 2 y la hora de las seis de la mañana con la que Hugo preparaba la masa entonces.', pronunciationRisks: ['j’aie signé', 'qu’on l’accroche'], recommendedChanges: ['La primera línea es coral: generar con las voces de Léa, Inès y Madame Martin y mezclarlas en un solo turno.', 'Generar turno a turno, nunca desde ttsScript: el coro inicial se perdería.'] },
+      audit: { level: 'B1', grammarUsed: ['si + plus-que-parfait → conditionnel présent', 'bien que + subjonctif passé', 'pour que + subjonctif', 'futur simple'], newVocabulary: ['clés', 'accrocher', 'sans regret'], possibleDifficulties: ['«qu’on l’accroche» encadena tres sílabas átonas seguidas'], estimatedDuration: 43, continuity: 'Cierra el papel del escaparate del episodio 1 —la panadería no cierra, cambia de manos— y recupera la receta completa de manzana y limón de la temporada 2 y la hora de las seis de la mañana con la que Hugo preparaba la masa entonces.', pronunciationRisks: ['j’aie signé', 'qu’on l’accroche'], recommendedChanges: ['La primera línea es coral: generar con las voces de Léa, Inès y Madame Martin y mezclarlas en un solo turno.', 'Generar turno a turno, nunca desde ttsScript: el coro inicial se perdería.'] },
     },
   ],
 }

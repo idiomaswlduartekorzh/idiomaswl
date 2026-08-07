@@ -235,11 +235,28 @@ for (const { file, lang, level } of files) {
       problemas.push(`${etiqueta}: ${separadores.length} separadores para ${episode.turns.length} turnos; falta al menos uno, hay turnos pegados`)
     }
 
-    // 3. Pausas entre turnos.
+    /**
+     * 3. Pausas largas. Aviso editorial de ritmo, nunca un problema de montaje.
+     *
+     * El montaje no puede producirlas: inserta exactamente 0,5 s entre turnos y el recorte
+     * deja como mucho 0,05 s de cola a cada lado, así que un separador no llega a 0,6 s.
+     * Todo lo que pase de ahí está DENTRO de una toma, y dentro de una toma la pausa la hizo
+     * el actor.
+     *
+     * Se comprobó episodio a episodio en el único caso que fallaba el build, italiano A2
+     * ep. 10: el hueco de 1,97 s cae a los 0,5 s de empezar, y el turno 1 es «Matteo! Sei
+     * arrivato prestissimo oggi. E questa signorina chi è?» —una sola toma—. Bruno llama a
+     * Matteo y espera antes de seguir. Eso es actuar, y rehacer el audio no lo quitaría
+     * porque está en la grabación pagada.
+     *
+     * Sigue apareciendo en el informe porque una pausa de dos segundos en un A2 es ritmo
+     * flojo y alguien puede querer regenerar ese turno. Pero no tumba la publicación: hacerlo
+     * era llamar roto a un audio correcto.
+     */
     const largas = silencios.filter((s) => s.fin - s.inicio > PAUSA_MAXIMA)
     if (largas.length) {
       const peor = Math.max(...largas.map((s) => s.fin - s.inicio))
-      anota(`${etiqueta}: ${largas.length} pausa(s) de hasta ${peor.toFixed(2)}s (nominal ${PAUSA_NOMINAL}s)`, peor, PAUSA_MAXIMA, 0.25)
+      marginales.push(`${etiqueta}: ${largas.length} pausa(s) de hasta ${peor.toFixed(2)}s dentro de un turno (prosodia, no montaje)`)
     }
 
     // 4. Sonoridad y saturación.

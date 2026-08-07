@@ -64,7 +64,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     ep({
-      id: 'ko-a2-01-du-dal-hu', order: 1, title: '두 달 후', titleEs: 'Dos meses después', duration: 46,
+      id: 'ko-a2-01-du-dal-hu', order: 1, title: '두 달 후', titleEs: 'Dos meses después', duration: 42,
       characters: ['김 선생님', '소피아', '지호'], location: '한국어 교실', objective: '과거의 요약과 지금 하고 있는 일을 구별해서 듣는다.',
       grammar: ['-았/었어요 복습', '-고 있어요'],
       keywords: [{ target: '방학', es: 'vacaciones' }, { target: '봉투', es: 'sobre' }, { target: '편지', es: 'carta' }, { target: '그림', es: 'dibujo' }, { target: '책상', es: 'escritorio' }, { target: '쓰고 있어요', es: 'estoy escribiendo' }],
@@ -89,7 +89,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['contraste entre -았/었어요 y -고 있어요 en turnos seguidos'], continuity: 'Arranca dos meses después del final de la primera temporada: el paraguas ya está devuelto y el aula es la misma del episodio 1 de A1.', pronunciationRisks: ['봉투', '책상'], recommendedChanges: ['Marcar una pausa antes de 어? para que se oiga el hallazgo.'] },
     }),
     ep({
-      id: 'ko-a2-02-jiho-do-badasseoyo', order: 2, title: '지호도 받았어요', titleEs: 'Jiho también recibió una', duration: 49,
+      id: 'ko-a2-02-jiho-do-badasseoyo', order: 2, title: '지호도 받았어요', titleEs: 'Jiho también recibió una', duration: 45,
       characters: ['소피아', '지호', '별'], location: '학원 복도', objective: '두 정보를 대조하는 -지만을 알아듣는다.',
       grammar: ['-지만', '-고 있어요'],
       keywords: [{ target: '받았어요', es: 'recibí' }, { target: '주머니', es: 'bolsillo' }, { target: '글씨', es: 'letra' }, { target: '똑같아요', es: 'es igual' }, { target: '힘내세요', es: 'ánimo' }, { target: '궁금해요', es: 'tengo curiosidad' }],
@@ -114,7 +114,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['-지만 en dos formas distintas: 짧지만 y 없지만'], continuity: 'La carta del episodio 1 deja de ser un caso aislado: Jiho tiene otra con la misma letra y el mismo mensaje breve.', pronunciationRisks: ['짧지만', '똑같아요'], recommendedChanges: ['Leer la cita entre 「」 con voz ligeramente distinta, como texto leído.', 'Comprobar este turno 4 con la voz elegida antes del lote: es la primera cita entre 「」 de la serie y algunos motores TTS los vocalizan o insertan una pausa espuria.'] },
     }),
     ep({
-      id: 'ko-a2-03-pyeonjijiga-teukbyeolhaeyo', order: 3, title: '편지지가 특별해요', titleEs: 'El papel es especial', duration: 41,
+      id: 'ko-a2-03-pyeonjijiga-teukbyeolhaeyo', order: 3, title: '편지지가 특별해요', titleEs: 'El papel es especial', duration: 35,
       characters: ['유나', '소피아', '지호'], location: '별 카페', objective: '원인을 나타내는 -아/어서를 알아듣는다.',
       grammar: ['-아/어서', '-(으)니까', '-지만'],
       keywords: [{ target: '편지지', es: 'papel de carta' }, { target: '특별한', es: 'especial' }, { target: '문구점', es: 'papelería' }, { target: '손님', es: 'cliente' }, { target: '팔아요', es: 'venden' }, { target: '목요일', es: 'jueves' }],
@@ -139,7 +139,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['-아/어서 causal frente a -지만 contrastivo en el mismo audio', 'la causa ante imperativo se marca con -(으)니까, no con -아/어서'], continuity: 'Las dos cartas de los episodios 1 y 2 llevan al grupo al café de Yuna, ya conocido de A1.', pronunciationRisks: ['특별한', '문구점'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a2-04-mogyoil-gyehoek', order: 4, title: '목요일 계획', titleEs: 'El plan del jueves', duration: 42,
+      id: 'ko-a2-04-mogyoil-gyehoek', order: 4, title: '목요일 계획', titleEs: 'El plan del jueves', duration: 38,
       characters: ['지호', '소피아', '김 선생님', '별'], location: '한국어 교실', objective: '미래의 계획을 나타내는 -(으)ㄹ 거예요를 알아듣는다.',
       grammar: ['-(으)ㄹ 거예요', '-았/었어요'],
       keywords: [{ target: '계획', es: 'plan' }, { target: '수업', es: 'clase' }, { target: '끝나요', es: 'termina' }, { target: '갈 거예요', es: 'iremos' }, { target: '기다릴 거예요', es: 'esperaré' }, { target: '숙제', es: 'tarea' }],
@@ -164,7 +164,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['cadena de cuatro verbos distintos en -(으)ㄹ 거예요'], continuity: 'Convierte el consejo de Yuna del episodio 3 en un plan con horas y papeles repartidos.', pronunciationRisks: ['세 시 십 분', '재미있네요'], recommendedChanges: ['Separar 세 시 / 십 분 con una pausa breve: es la respuesta de una pregunta de detalle.'] },
     }),
     ep({
-      id: 'ko-a2-05-mungujeom-ajumeoni', order: 5, title: '문구점 아주머니', titleEs: 'La señora de la papelería', duration: 46,
+      id: 'ko-a2-05-mungujeom-ajumeoni', order: 5, title: '문구점 아주머니', titleEs: 'La señora de la papelería', duration: 41,
       characters: ['소피아', '문구점 주인', '지호'], location: '문구점', objective: '조건을 나타내는 -(으)면을 알아듣는다.',
       grammar: ['-(으)면', '-(으)ㄹ 거예요'],
       keywords: [{ target: '편지지', es: 'papel de carta' }, { target: '매주', es: 'cada semana' }, { target: '다섯 장', es: 'cinco hojas' }, { target: '인기', es: 'popularidad' }, { target: '오후', es: 'tarde' }, { target: '늦게', es: 'tarde (con retraso)' }],
@@ -189,7 +189,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['-(으)면 condicional junto a -(으)ㄹ 거예요 en la misma frase'], continuity: 'Ejecutan el plan del episodio 4 y descubren la rutina semanal del autor de las cartas; el último turno cierra también el encargo de las fotos que Byeol aceptó en el episodio 4.', pronunciationRisks: ['다섯 장씩', '벌써'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a2-06-allyeo-juseyo', order: 6, title: '알려 주세요', titleEs: 'Avísenos, por favor', duration: 41,
+      id: 'ko-a2-06-allyeo-juseyo', order: 6, title: '알려 주세요', titleEs: 'Avísenos, por favor', duration: 37,
       characters: ['소피아', '문구점 주인', '지호'], location: '문구점', objective: '부탁을 나타내는 -아/어 주세요를 알아듣는다.',
       grammar: ['-아/어 주세요', '-(으)면'],
       keywords: [{ target: '부탁', es: 'favor' }, { target: '알려 주세요', es: 'avíseme' }, { target: '기다려 주세요', es: 'espere' }, { target: '전화', es: 'llamada' }, { target: '종이', es: 'papel' }, { target: '천천히', es: 'despacio' }],
@@ -214,7 +214,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['dirección del favor en -아/어 주세요: quién da y quién recibe'], continuity: 'Después de perder al cliente por poco en el episodio 5, dejan un teléfono de contacto.', pronunciationRisks: ['괜찮으세요', '급해요'], recommendedChanges: ['La señora habla despacio: es el modelo de 천천히 del propio episodio.'] },
     }),
     ep({
-      id: 'ko-a2-07-ireoke-sseul-su-eopseoyo', order: 7, title: '이렇게 쓸 수 없어요', titleEs: 'No puedo escribir así', duration: 36,
+      id: 'ko-a2-07-ireoke-sseul-su-eopseoyo', order: 7, title: '이렇게 쓸 수 없어요', titleEs: 'No puedo escribir así', duration: 32,
       characters: ['지호', '별', '소피아', '김 선생님'], location: '한국어 교실', objective: '능력과 불능을 나타내는 -(으)ㄹ 수 있다/없다를 알아듣는다.',
       grammar: ['-(으)ㄹ 수 있다/없다', '-지만'],
       keywords: [{ target: '글씨', es: 'letra' }, { target: '비슷해요', es: 'se parece' }, { target: '쓸 수 없어요', es: 'no puedo escribir' }, { target: '쓸 수 있어요', es: 'puedo escribir' }, { target: '어른', es: 'adulto' }, { target: '단서', es: 'pista' }],
@@ -239,7 +239,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['contraste 쓸 수 있어요 / 쓸 수 없어요 en turnos cercanos', 'a la profesora se le habla con el honorífico -(으)시-: 쓰실 수 있어요?'], continuity: 'Responde a la sospecha que la estrella dibujada había puesto sobre Byeol en el episodio 2.', pronunciationRisks: ['비슷해요', '있지만'], recommendedChanges: [] },
     }),
     ep({
-      id: 'ko-a2-08-mina-ssido-badasseoyo', order: 8, title: '미나 씨도 받았어요', titleEs: 'Mina también recibió una', duration: 45,
+      id: 'ko-a2-08-mina-ssido-badasseoyo', order: 8, title: '미나 씨도 받았어요', titleEs: 'Mina también recibió una', duration: 41,
       characters: ['미나', '소피아', '지호'], location: '한빛 아파트 앞', objective: '과거의 사건과 조건 표현을 함께 알아듣는다.',
       grammar: ['-았/었어요', '-(으)면', '-지만'],
       keywords: [{ target: '오랜만', es: 'cuánto tiempo' }, { target: '우편함', es: 'buzón' }, { target: '꺼냈어요', es: 'saqué' }, { target: '동네', es: 'barrio' }, { target: '기분', es: 'ánimo' }, { target: '행복하세요', es: 'sean felices' }],
@@ -264,7 +264,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['cita indirecta -라고 쓰여 있었어요'], continuity: 'Las cartas ya no se limitan a la academia: llegan al edificio donde vive Mina, conocido desde A1.', pronunciationRisks: ['우편함', '행복하세요'], recommendedChanges: ['Leer la cita con voz de texto leído, sin dramatizar.'] },
     }),
     ep({
-      id: 'ko-a2-09-jogeum-jeone-gasseoyo', order: 9, title: '조금 전에 갔어요', titleEs: 'Se fue hace un momento', duration: 45,
+      id: 'ko-a2-09-jogeum-jeone-gasseoyo', order: 9, title: '조금 전에 갔어요', titleEs: 'Se fue hace un momento', duration: 40,
       characters: ['소피아', '문구점 주인', '지호', '별'], location: '문구점', objective: '원인과 진행 중이던 행동을 과거로 알아듣는다.',
       grammar: ['-아/어서', '-고 있었어요'],
       keywords: [{ target: '전화', es: 'llamada' }, { target: '모자', es: 'gorra' }, { target: '얼굴', es: 'cara' }, { target: '컵', es: 'vaso' }, { target: '급해서', es: 'como tenía prisa' }, { target: '사고 있었어요', es: 'estaba comprando' }],
@@ -289,7 +289,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['-고 있었어요: pasado progresivo con dos auxiliares', 'a la señora mayor se le pregunta con honorífico: 보셨어요?'], continuity: 'Es la llamada que la señora prometió en el episodio 6; el vaso devuelve la investigación al café del episodio 3.', pronunciationRisks: ['급해서', '못 했어요'], recommendedChanges: ['Destacar 별 카페 컵: es la pista que abre la segunda mitad de la serie.', 'Dejar una pausa breve antes de 별 카페: 별 nombra aquí al café, no al personaje, y el alumno escucha sin apoyo visual.'] },
     }),
     ep({
-      id: 'ko-a2-10-sonnimeul-bogo-isseoyo', order: 10, title: '손님을 보고 있어요', titleEs: 'Estamos observando a los clientes', duration: 44,
+      id: 'ko-a2-10-sonnimeul-bogo-isseoyo', order: 10, title: '손님을 보고 있어요', titleEs: 'Estamos observando a los clientes', duration: 39,
       characters: ['소피아', '유나', '지호', '별'], location: '별 카페', objective: '동시에 일어나는 여러 행동을 구별해서 듣는다.',
       grammar: ['-고 있어요', '-지만'],
       keywords: [{ target: '손님', es: 'cliente' }, { target: '신문', es: 'periódico' }, { target: '노트북', es: 'portátil' }, { target: '메뉴판', es: 'pizarra del menú' }, { target: '바빠요', es: 'está ocupada' }, { target: '보고 있어요', es: 'estamos mirando' }],
@@ -314,7 +314,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['tres acciones simultáneas descritas por hablantes distintos'], continuity: 'El vaso del café del episodio 9 los trae a vigilar el local de Yuna.', pronunciationRisks: ['많네요', '노트북으로'], recommendedChanges: ['El último turno de Yuna debe sonar apresurado: corta la conversación.'] },
     }),
     ep({
-      id: 'ko-a2-11-yeonseupago-isseoyo', order: 11, title: '연습하고 있어요', titleEs: 'Estoy practicando', duration: 43,
+      id: 'ko-a2-11-yeonseupago-isseoyo', order: 11, title: '연습하고 있어요', titleEs: 'Estoy practicando', duration: 39,
       characters: ['김 선생님', '소피아', '지호'], location: '한국어 교실', objective: '능력 표현과 부탁 표현을 함께 알아듣는다.',
       grammar: ['-(으)ㄹ 수 있다', '-아/어 주세요'],
       keywords: [{ target: '발표', es: 'presentación' }, { target: '연습', es: 'práctica' }, { target: '떨려요', es: 'estoy nerviosa' }, { target: '공책', es: 'cuaderno' }, { target: '할 수 있어요', es: 'puedes hacerlo' }, { target: '기억', es: 'memoria' }],
@@ -339,7 +339,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['-(으)면 + -(으)ㄹ 수 있어요 en una sola frase'], continuity: 'La cuarta carta —y la segunda para Sofía— llega justo cuando duda, lo que estrecha el círculo a alguien que conoce su horario.', pronunciationRisks: ['연습하고', '떨려요'], recommendedChanges: ['La lectura final de la profesora debe sonar suave, no solemne.'] },
     }),
     ep({
-      id: 'ko-a2-12-dowajul-geoyeyo', order: 12, title: '목요일에 도와줄 거예요', titleEs: 'El jueves voy a ayudar', duration: 49,
+      id: 'ko-a2-12-dowajul-geoyeyo', order: 12, title: '목요일에 도와줄 거예요', titleEs: 'El jueves voy a ayudar', duration: 43,
       characters: ['소피아', '유나', '지호'], location: '별 카페', objective: '계획과 부탁을 구별해서 알아듣는다.',
       grammar: ['-(으)ㄹ 거예요', '-아/어 주세요'],
       keywords: [{ target: '앞치마', es: 'delantal' }, { target: '접시', es: 'plato' }, { target: '도와줄 거예요', es: 'voy a ayudar' }, { target: '닦을 거예요', es: 'voy a secar' }, { target: '준비해 주세요', es: 'prepara, por favor' }, { target: '커피', es: 'café' }],
@@ -364,7 +364,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['distinguir -(으)ㄹ 거예요 de -아/어 주세요 en turnos alternos'], continuity: 'Es la consecuencia directa de la vigilancia fallida del episodio 10: ahora entran a trabajar dentro.', pronunciationRisks: ['앞치마를', '접시를'], recommendedChanges: ['Marcar la duda de Yuna con una pausa real tras 음...'] },
     }),
     ep({
-      id: 'ko-a2-13-uri-mal-noeulkkayo', order: 13, title: '우리 말 놓을까요?', titleEs: '¿Nos hablamos de tú?', duration: 34,
+      id: 'ko-a2-13-uri-mal-noeulkkayo', order: 13, title: '우리 말 놓을까요?', titleEs: '¿Nos hablamos de tú?', duration: 31,
       characters: ['지호', '별', '소피아'], location: '별 카페 앞', objective: '반말과 해요체의 차이를 상황으로 알아듣는다.',
       grammar: ['반말', '-(으)ㄹ까요?'],
       keywords: [{ target: '반말', es: 'lenguaje informal' }, { target: '나이', es: 'edad' }, { target: '편하게', es: 'con confianza' }, { target: '친한', es: 'cercano' }, { target: '내일', es: 'mañana' }, { target: '배울 거예요', es: 'aprenderás' }],
@@ -389,7 +389,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['el mismo hablante alterna banmal con su amigo y 해요체 con Sofía'], continuity: 'Marca el punto medio de la temporada: la amistad de A1 se hace más cercana justo antes de la vigilancia.', pronunciationRisks: ['놓을까요', '별아'], recommendedChanges: ['Los dos primeros turnos aún son 해요체: el cambio de registro debe oírse a partir del tercero.'] },
     }),
     ep({
-      id: 'ko-a2-14-changgoui-paran-sangja', order: 14, title: '창고의 파란 상자', titleEs: 'La caja azul del almacén', duration: 41,
+      id: 'ko-a2-14-changgoui-paran-sangja', order: 14, title: '창고의 파란 상자', titleEs: 'La caja azul del almacén', duration: 37,
       characters: ['소피아', '지호', '별'], location: '별 카페 창고', objective: '발견과 원인을 과거로 이어서 알아듣는다.',
       grammar: ['-았/었어요', '-아/어서', '-지만'],
       keywords: [{ target: '창고', es: 'almacén' }, { target: '상자', es: 'caja' }, { target: '설탕', es: 'azúcar' }, { target: '가득해요', es: 'está llena' }, { target: '조용히', es: 'en silencio' }, { target: '똑같아요', es: 'es igual' }],
@@ -414,7 +414,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['pasado + -지만 en el turno final, con carga emocional'], continuity: 'El turno de trabajo pactado en el episodio 12 les da acceso al almacén; las cinco cajas que Byeol cuenta aquí son las que Jiho le echa en cara a Yuna en el episodio 15.', pronunciationRisks: ['가득해요', '들어갔어요'], recommendedChanges: ['Bajar el volumen en el turno de 조용히 해요 sin susurrar: debe seguir siendo audible.'] },
     }),
     ep({
-      id: 'ko-a2-15-yuna-ssiga-bappayo', order: 15, title: '유나 씨가 바빠요', titleEs: 'Yuna está ocupada', duration: 44,
+      id: 'ko-a2-15-yuna-ssiga-bappayo', order: 15, title: '유나 씨가 바빠요', titleEs: 'Yuna está ocupada', duration: 38,
       characters: ['소피아', '유나', '지호'], location: '별 카페', objective: '원인과 불능 표현으로 회피의 이유를 알아듣는다.',
       grammar: ['-아/어서', '-(으)ㄹ 수 없어요'],
       keywords: [{ target: '오래된', es: 'viejo' }, { target: '두고 갔어요', es: 'se lo dejó olvidado' }, { target: '주문', es: 'pedido' }, { target: '대답할 수 없어요', es: 'no puedo contestar' }, { target: '뜨거워서', es: 'porque está caliente' }, { target: '빨개요', es: 'está roja' }],
@@ -439,7 +439,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['dos causas seguidas con -아/어서 en boca del mismo personaje'], continuity: 'Es la reacción de Yuna al hallazgo del episodio 14, que ella todavía no sabe que ocurrió.', pronunciationRisks: ['밀려서', '뜨거워서'], recommendedChanges: ['Yuna debe sonar nerviosa, no antipática: es la escena que decide su simpatía.'] },
     }),
     ep({
-      id: 'ko-a2-16-urido-pyeonjireul-sseul-geoya', order: 16, title: '우리도 편지를 쓸 거야', titleEs: 'Nosotros también escribiremos', duration: 34,
+      id: 'ko-a2-16-urido-pyeonjireul-sseul-geoya', order: 16, title: '우리도 편지를 쓸 거야', titleEs: 'Nosotros también escribiremos', duration: 31,
       characters: ['지호', '별'], location: '학원 계단', objective: '친구 사이의 반말로 계획을 알아듣는다.',
       grammar: ['반말', '-(으)ㄹ 거야', '-(으)면'],
       keywords: [{ target: '작전', es: 'plan' }, { target: '답장', es: 'respuesta' }, { target: '넣을 거야', es: 'la meteré' }, { target: '생각', es: 'idea' }, { target: '궁금해', es: 'tengo curiosidad' }, { target: '글씨', es: 'letra' }],
@@ -464,7 +464,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['episodio entero en banmal, sin terminaciones en -요'], continuity: 'Aplica el trato acordado en el episodio 13; los dos están solos, así que el banmal es coherente en todos los turnos.', pronunciationRisks: ['작전', '넣을 거야'], recommendedChanges: ['Sin -요 final, la entonación debe marcar la pregunta en 누구한테 쓸 거야?'] },
     }),
     ep({
-      id: 'ko-a2-17-dapjangi-wasseoyo', order: 17, title: '답장이 왔어요', titleEs: 'Llegó una respuesta', duration: 46,
+      id: 'ko-a2-17-dapjangi-wasseoyo', order: 17, title: '답장이 왔어요', titleEs: 'Llegó una respuesta', duration: 42,
       characters: ['별', '소피아', '지호'], location: '별 카페 창고 앞', objective: '남의 이야기를 인용한 과거를 알아듣는다.',
       grammar: ['-았/었어요', '-지만'],
       keywords: [{ target: '답장', es: 'respuesta' }, { target: '처음', es: 'al principio' }, { target: '힘들었어요', es: 'fue difícil' }, { target: '웃었어요', es: 'sonreí' }, { target: '따뜻해요', es: 'es cálido' }, { target: '혼자', es: 'solo' }],
@@ -489,7 +489,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['tres turnos son lectura de una carta, no habla espontánea'], continuity: 'Es la respuesta a la carta que Byeol escribió en el episodio 16; quien escribe habla de 서울, no de 한국, porque es coreana y llegó sola a la ciudad (episodio 18).', pronunciationRisks: ['읽었네요', '따뜻해요'], recommendedChanges: ['Los turnos entre 「」 se leen con voz más lenta y plana que el resto.'] },
     }),
     ep({
-      id: 'ko-a2-18-sam-nyeon-jeonui-pyeonji', order: 18, title: '삼 년 전의 편지', titleEs: 'La carta de hace tres años', duration: 39,
+      id: 'ko-a2-18-sam-nyeon-jeonui-pyeonji', order: 18, title: '삼 년 전의 편지', titleEs: 'La carta de hace tres años', duration: 34,
       characters: ['유나', '소피아', '지호', '별'], location: '문 닫은 별 카페', objective: '이유와 조건으로 한 사람의 사연을 알아듣는다.',
       grammar: ['-아/어서', '-(으)면', '-았/었어요'],
       keywords: [{ target: '삼 년 전', es: 'hace tres años' }, { target: '넣었어요', es: 'metió' }, { target: '힘든', es: 'que lo pasa mal' }, { target: '조용히', es: 'en silencio' }, { target: '힘이 났어요', es: 'me dio ánimo' }, { target: '앉으세요', es: 'siéntense' }],
@@ -514,7 +514,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['relato personal con dos tiempos: pasado lejano y presente habitual'], continuity: 'Resuelve la sospecha nacida en el episodio 14 y la evasiva del 15, y explica la respuesta del 17.', pronunciationRisks: ['삼 년 전에', '넣었어요'], recommendedChanges: ['Tono confesional y pausado; el episodio es el clímax emocional de la temporada.'] },
     }),
     ep({
-      id: 'ko-a2-19-pyeonjihameul-mandeureoyo', order: 19, title: '편지함을 만들어요', titleEs: 'Hagamos un buzón', duration: 40,
+      id: 'ko-a2-19-pyeonjihameul-mandeureoyo', order: 19, title: '편지함을 만들어요', titleEs: 'Hagamos un buzón', duration: 35,
       characters: ['소피아', '유나', '지호', '별', '미나'], location: '별 카페', objective: '역할 분담의 부탁과 계획을 알아듣는다.',
       grammar: ['-아/어 주세요', '-(으)ㄹ 거예요', '반말'],
       keywords: [{ target: '편지함', es: 'buzón' }, { target: '나무', es: 'madera' }, { target: '그려 줘', es: 'dibújalas' }, { target: '배달', es: 'reparto' }, { target: '사 주세요', es: 'compre, por favor' }, { target: '넣어요', es: 'métanla' }],
@@ -539,7 +539,7 @@ export const KOREAN_A2_SERIES: A1ListeningSeries = {
       audit: { possibleDifficulties: ['banmal y 해요체 alternan según a quién se dirige cada turno'], continuity: 'Convierte la costumbre privada que Yuna confesó en el episodio 18 en un proyecto de todo el grupo.', pronunciationRisks: ['편지함을', '배달할'], recommendedChanges: ['El turno de Jiho a Byeol es banmal; el resto de sus frases, 해요체: que la voz mantenga la diferencia.', 'Pausa breve antes del vocativo 별아 y separación clara de 별을: en el mismo turno 별 nombra a la persona y al dibujo.'] },
     }),
     ep({
-      id: 'ko-a2-20-byeol-kapeui-pyeonjiham', order: 20, title: '별 카페의 편지함', titleEs: 'El buzón del Café Estrella', duration: 48,
+      id: 'ko-a2-20-byeol-kapeui-pyeonjiham', order: 20, title: '별 카페의 편지함', titleEs: 'El buzón del Café Estrella', duration: 43,
       characters: ['유나', '김 선생님', '미나', '별', '소피아', '지호'], location: '별 카페', objective: 'A2의 과거, 진행, 계획, 이유를 한 장면에서 통합한다.',
       grammar: ['A2 종합 복습', '-았/었어요', '-아/어서', '-고 있어요'],
       keywords: [{ target: '편지함', es: 'buzón' }, { target: '모였어요', es: 'nos reunimos' }, { target: '스물세 장', es: 'veintitrés cartas' }, { target: '첫 편지', es: 'primera carta' }, { target: '슬퍼 보였어요', es: 'se veía triste' }, { target: '가져가요', es: 'llévense' }],
