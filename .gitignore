@@ -76,7 +76,6 @@ public/audio/italiano/**/it-a1-*-src.mp3
 # QUITAR estas cinco líneas para que los mp3 buenos sí se commiteen.
 public/audio/frances/a1/
 public/audio/portugues/a1/
-public/audio/japones/a1/
 public/audio/ruso/a1/
 
 # Comparativas de modelo del piloto de voces (piloto-<idioma>-epNN-<modelo>.mp3).

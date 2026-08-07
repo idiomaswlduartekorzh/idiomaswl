@@ -558,6 +558,490 @@
         "style": 0.15,
         "use_speaker_boost": true
       }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 1,
+      "id": "ja-b1-01-ninengo-no-aki",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-01.mp3",
+      "caracteres": 206,
+      "duracion_real": 44.74,
+      "caracteres_por_segundo": 4.6,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "佐藤先生": "vJzOwGHlpdmor8nyTsCT",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 2,
+      "id": "ja-b1-02-itte-ita",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-02.mp3",
+      "caracteres": 196,
+      "duracion_real": 44.18,
+      "caracteres_por_segundo": 4.44,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "春": "CtZRdCe4DGWkjR4gX6qK",
+        "アナ": "nBV906YvEOdwWKK9J8Hx"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 3,
+      "id": "ja-b1-03-machi-no-tame-ni",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-03.mp3",
+      "caracteres": 210,
+      "duracion_real": 46.92,
+      "caracteres_por_segundo": 4.48,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "高橋": "Uu5ba6tYWCTGoXQKknFz",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 4,
+      "id": "ja-b1-04-wakaru-you-ni",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-04.mp3",
+      "caracteres": 207,
+      "duracion_real": 47.66,
+      "caracteres_por_segundo": 4.34,
+      "duracion_declarada_previa": 67,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "高橋": "Uu5ba6tYWCTGoXQKknFz",
+        "春": "CtZRdCe4DGWkjR4gX6qK",
+        "アナ": "nBV906YvEOdwWKK9J8Hx"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 5,
+      "id": "ja-b1-05-utsuttara",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-05.mp3",
+      "caracteres": 194,
+      "duracion_real": 52.22,
+      "caracteres_por_segundo": 3.72,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "田中ゆき": "t3iNwCjYhE9IEQPVBlys",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 6,
+      "id": "ja-b1-06-fuereba",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-06.mp3",
+      "caracteres": 186,
+      "duracion_real": 47.43,
+      "caracteres_por_segundo": 3.92,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "店員": "Uu5ba6tYWCTGoXQKknFz",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "田中ゆき": "t3iNwCjYhE9IEQPVBlys",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 7,
+      "id": "ja-b1-07-kuru-nara",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-07.mp3",
+      "caracteres": 165,
+      "duracion_real": 37.96,
+      "caracteres_por_segundo": 4.35,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "恵美": "6l0ObIy4mHn0XfeKlCgW",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 8,
+      "id": "ja-b1-08-shinbun-ni-kakaremashita",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-08.mp3",
+      "caracteres": 179,
+      "duracion_real": 38.98,
+      "caracteres_por_segundo": 4.59,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "佐藤先生": "vJzOwGHlpdmor8nyTsCT",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 9,
+      "id": "ja-b1-09-gokai",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-09.mp3",
+      "caracteres": 210,
+      "duracion_real": 52.08,
+      "caracteres_por_segundo": 4.03,
+      "duracion_declarada_previa": 69,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "田中ゆき": "t3iNwCjYhE9IEQPVBlys",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 10,
+      "id": "ja-b1-10-itte-shimatta",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-10.mp3",
+      "caracteres": 190,
+      "duracion_real": 41.81,
+      "caracteres_por_segundo": 4.54,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "春": "CtZRdCe4DGWkjR4gX6qK",
+        "アナ": "nBV906YvEOdwWKK9J8Hx"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 11,
+      "id": "ja-b1-11-shirabete-okou",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-11.mp3",
+      "caracteres": 182,
+      "duracion_real": 40.84,
+      "caracteres_por_segundo": 4.46,
+      "duracion_declarada_previa": 67,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "図書館員": "BTUNhQfNpOekzVjlvRHS",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 12,
+      "id": "ja-b1-12-uwasa",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-12.mp3",
+      "caracteres": 170,
+      "duracion_real": 36.43,
+      "caracteres_por_segundo": 4.67,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "恵美": "6l0ObIy4mHn0XfeKlCgW",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 13,
+      "id": "ja-b1-13-you-da",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-13.mp3",
+      "caracteres": 159,
+      "duracion_real": 35.68,
+      "caracteres_por_segundo": 4.46,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "春": "CtZRdCe4DGWkjR4gX6qK",
+        "アナ": "nBV906YvEOdwWKK9J8Hx"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 14,
+      "id": "ja-b1-14-goran-ni-narimashita-ka",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-14.mp3",
+      "caracteres": 202,
+      "duracion_real": 48.27,
+      "caracteres_por_segundo": 4.18,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "高橋": "Uu5ba6tYWCTGoXQKknFz",
+        "課長": "BTUNhQfNpOekzVjlvRHS",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 15,
+      "id": "ja-b1-15-ukagaimasu",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-15.mp3",
+      "caracteres": 160,
+      "duracion_real": 39.35,
+      "caracteres_por_segundo": 4.07,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "課長": "BTUNhQfNpOekzVjlvRHS",
+        "高橋": "Uu5ba6tYWCTGoXQKknFz"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 16,
+      "id": "ja-b1-16-waresou",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-16.mp3",
+      "caracteres": 239,
+      "duracion_real": 57.51,
+      "caracteres_por_segundo": 4.16,
+      "duracion_declarada_previa": 69,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "田中ゆき": "t3iNwCjYhE9IEQPVBlys"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 17,
+      "id": "ja-b1-17-kawatte-mo",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-17.mp3",
+      "caracteres": 193,
+      "duracion_real": 47.43,
+      "caracteres_por_segundo": 4.07,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "店員": "Uu5ba6tYWCTGoXQKknFz",
+        "田中ゆき": "t3iNwCjYhE9IEQPVBlys",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 18,
+      "id": "ja-b1-18-kimeraremashita",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-18.mp3",
+      "caracteres": 188,
+      "duracion_real": 43.95,
+      "caracteres_por_segundo": 4.28,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "高橋": "Uu5ba6tYWCTGoXQKknFz",
+        "佐藤先生": "vJzOwGHlpdmor8nyTsCT",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "春": "CtZRdCe4DGWkjR4gX6qK"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 19,
+      "id": "ja-b1-19-junbi-shite-okimashita",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-19.mp3",
+      "caracteres": 193,
+      "duracion_real": 42.93,
+      "caracteres_por_segundo": 4.5,
+      "duracion_declarada_previa": 67,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "田中ゆき": "t3iNwCjYhE9IEQPVBlys",
+        "恵美": "6l0ObIy4mHn0XfeKlCgW",
+        "店員": "Uu5ba6tYWCTGoXQKknFz",
+        "春": "CtZRdCe4DGWkjR4gX6qK",
+        "アナ": "nBV906YvEOdwWKK9J8Hx"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "japones",
+      "episodio": 20,
+      "id": "ja-b1-20-nijuuninenme-no-hiroba",
+      "piloto": false,
+      "archivo": "public/audio/japones/b1/listening-20.mp3",
+      "caracteres": 205,
+      "duracion_real": 47.34,
+      "caracteres_por_segundo": 4.33,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "田中ゆき": "t3iNwCjYhE9IEQPVBlys",
+        "高橋": "Uu5ba6tYWCTGoXQKknFz",
+        "アナ": "nBV906YvEOdwWKK9J8Hx",
+        "佐藤先生": "vJzOwGHlpdmor8nyTsCT",
+        "恵美": "6l0ObIy4mHn0XfeKlCgW"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
     }
   ]
 }

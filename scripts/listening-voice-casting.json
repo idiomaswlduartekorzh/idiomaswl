@@ -334,18 +334,28 @@
           }
         },
         "高橋": {
-          "voice_id": "",
+          "voice_id": "Uu5ba6tYWCTGoXQKknFz",
           "turnos": 15,
           "papel": "町役場観光課の職員 (B1)",
           "perfil_de_voz": "成人男性、丁寧で事務的な話し方",
-          "buscar": "voz masculina japonesa adulta, formal y administrativa; distinta de 店員 y 図書館員"
+          "buscar": "voz masculina japonesa adulta, formal y administrativa; distinta de 店員 y 図書館員",
+          "biblioteca": {
+            "public_owner_id": "7d3186a97691605f1382f9dc156e45b13e422478d3d6cae1ec96d1cbe0d314d7",
+            "voice_id": "Uu5ba6tYWCTGoXQKknFz"
+          },
+          "voz": "Sabi (la misma de 店員) — adulto, tono de oficina: encaja con «丁寧で事務的». Libre en los 6 episodios de 高橋"
         },
         "課長": {
-          "voice_id": "",
+          "voice_id": "BTUNhQfNpOekzVjlvRHS",
           "turnos": 6,
           "papel": "町役場観光課の課長 (B1)",
           "perfil_de_voz": "年上の男性、ゆっくりした重い敬語",
-          "buscar": "voz masculina japonesa mayor, lenta y grave; es el superior de 高橋 y hablan en la misma escena"
+          "buscar": "voz masculina japonesa mayor, lenta y grave; es el superior de 高橋 y hablan en la misma escena",
+          "biblioteca": {
+            "public_owner_id": "ad3873392159693c2e78be19e1e1adc968fbabc5c1d25ae325caf53bc8a24b0b",
+            "voice_id": "BTUNhQfNpOekzVjlvRHS"
+          },
+          "voz": "Nagi (la misma de 図書館員) — masculina grave y pausada: encaja con «ゆっくりした重い敬語». Libre en b1-14 y b1-15"
         }
       }
     },

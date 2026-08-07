@@ -17,7 +17,7 @@ export const A1_AUDIO_READY = {
   frances: false,
   portugues: false,
   coreano: true,
-  japones: false,
+  japones: true,
   ruso: false,
 } as const
 
@@ -27,7 +27,7 @@ export const A2_AUDIO_READY = {
   frances: false,
   portugues: false,
   coreano: true,
-  japones: false,
+  japones: true,
   ruso: false,
 } as const
 
@@ -37,7 +37,7 @@ export const B1_AUDIO_READY = {
   frances: false,
   portugues: false,
   coreano: true,
-  japones: false,
+  japones: true,
   ruso: false,
 } as const
 
