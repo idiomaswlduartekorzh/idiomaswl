@@ -38,3 +38,12 @@ Antes de una consolidación o limpieza se crea una rama `archive/` en el reposit
 ## Coordinación entre agentes
 
 Claude y Codex deben leer este archivo, `AGENTS.md` y `CLAUDE.md` antes de trabajar. Al terminar una tarea, registrar en el commit qué cambió y qué validaciones se ejecutaron. Si el árbol de trabajo ya tiene cambios ajenos, no mezclar ni sobrescribirlos: aislar el cambio en una rama o pedir una decisión.
+
+## Estado por subsistema
+
+Cada subsistema grande deja un documento de traspaso con lo que hay publicado, qué scripts lo
+comprueban y qué queda pendiente. Léelo antes de tocar ese subsistema, y actualízalo al terminar.
+
+| Subsistema | Documento |
+|---|---|
+| Escucha — 480 episodios en 8 idiomas, `/practica/*/escucha` | [`docs/escucha-estado.md`](escucha-estado.md) |
