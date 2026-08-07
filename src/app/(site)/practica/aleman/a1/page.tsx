@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 import { PracticaWABanner } from '@/components/PracticaWABanner';
+import { listeningCard } from '@/data/practica/series/page-copy';
 
 export const metadata: Metadata = {
   title: 'Alemán A1 — Elige una habilidad | Idiomas WeLearn',
@@ -17,7 +18,7 @@ const HABILIDADES = [
   { id: 'escritura', emoji: '✍️', name: 'Schreiben', eng: 'Escritura', desc: '5 geführte Schreibaufgaben: sich vorstellen, Familie, Wohnung, Aktivitäten, Vorlieben.', count: '5 geführte Aufgaben', href: '/practica/aleman/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Sprechen', eng: 'Expresión oral', desc: '15 Überlebensphrasen auf Deutsch mit detaillierter Aussprache für spanischsprachige Lerner.', count: '15 Grundphrasen', href: '/practica/aleman/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vokabular', eng: 'Vocabulario', desc: '6 Themensets: Familie, Farben, Essen, Wochentage, Körper, Zahlen. Lernkarten + 3 Modi.', count: '6 Sets · 60+ Wörter', href: '/practica/aleman/a1/vocabulario' },
-  { id: 'escucha', emoji: '🎧', name: 'Hören', eng: 'Escucha', desc: '3 Hörverstehen-Übungen A1. Audios mit nativer deutscher Stimme in Vorbereitung.', count: '3 Audios demnächst', href: '/practica/aleman/a1/escucha' },
+  { id: 'escucha', emoji: '🎧', name: 'Hören', eng: 'Escucha', ...listeningCard('aleman', 'a1', '«Ein Zimmer in Berlin»: Emma kommt mit vierzehn Kartons an und lernt in einem Jahr, allein U-Bahn zu fahren und ein Café aufzuschließen.'), href: '/practica/aleman/a1/escucha' },
 ];
 
 const COLORS: Record<string, string> = { lectura: '#dd0000', gramatica: '#7c3aed', escritura: '#059669', habla: '#d97706', vocabulario: '#e11d48', escucha: '#0369a1' };

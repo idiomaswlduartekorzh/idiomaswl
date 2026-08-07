@@ -35,7 +35,7 @@ export const GERMAN_B1_SERIES: A1ListeningSeries = {
     },
     {
       name: 'Frau Schneider',
-      role: 'Trabajadora del archivo municipal y vecina de toda la vida del barrio',
+      role: 'Fue la profesora de Emma en A1 y A2; ahora trabaja en el archivo municipal. Vecina del barrio de toda la vida',
       voiceProfile: 'Mujer adulta, articulación muy clara y profesional, tono amable',
     },
     {
