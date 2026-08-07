@@ -1,13 +1,20 @@
 'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import type { ListeningExercise, ListeningQuestion } from '@/data/practica/ingles-a1-listening'
 import { balanceOptions } from '@/data/practica/listening-shuffle'
+import ListeningPlayer from './ListeningPlayer'
 
 type Stage = 0 | 1 | 2 | 3 | 4 | 5 | 6
 
 const STAGES = ['Preparar', 'Idea general', 'Detalles', 'Descubrir', 'Escucha guiada', 'Consolidar', 'Cierre']
+
+/** «47 s» para lo corto y «1:03» a partir del minuto, que es como se lee un audio. */
+function duracion(seconds: number) {
+  return seconds < 60 ? `${seconds} s` : `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`
+}
+
 function answer(question: ListeningQuestion, choice: number | undefined) {
   return choice !== undefined && question.options[choice]?.correct
 }
@@ -59,13 +66,14 @@ export default function ListeningJourney({
   const [selectedId, setSelectedId] = useState(exercises[0]?.id ?? '')
   const [stage, setStage] = useState<Stage>(0)
   const [played, setPlayed] = useState(false)
-  const [currentTime, setCurrentTime] = useState(0)
+  // La línea que suena ahora. La avisa el reproductor solo cuando cambia; el tiempo exacto
+  // se queda dentro de ListeningPlayer para no repintar la página cuatro veces por segundo.
+  const [activeLine, setActiveLine] = useState(-1)
   const [gistChoice, setGistChoice] = useState<number>()
   const [detailChoices, setDetailChoices] = useState<Record<number, number>>({})
   const [consolidationChoice, setConsolidationChoice] = useState<number>()
   const [showTranslation, setShowTranslation] = useState(false)
   const [completed, setCompleted] = useState<string[]>([])
-  const audioRef = useRef<HTMLAudioElement>(null)
   // Modo navegador: la línea que se está leyendo ahora, y si el sistema tiene voz del idioma.
   const [ttsLine, setTtsLine] = useState(-1)
   const [voiceMissing, setVoiceMissing] = useState(false)
@@ -127,8 +135,9 @@ export default function ListeningJourney({
   }
 
   function selectExercise(id: string) {
-    audioRef.current?.pause()
-    setSelectedId(id); setStage(0); setPlayed(false); setCurrentTime(0); setGistChoice(undefined); setDetailChoices({}); setConsolidationChoice(undefined); setShowTranslation(false)
+    // La voz del navegador sigue hablando aunque se cambie de ejercicio: se corta a mano.
+    window.speechSynthesis?.cancel()
+    setSelectedId(id); setStage(0); setPlayed(false); setActiveLine(-1); setGistChoice(undefined); setDetailChoices({}); setConsolidationChoice(undefined); setShowTranslation(false)
     window.setTimeout(() => document.getElementById('listening-player')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0)
   }
 
@@ -144,13 +153,9 @@ export default function ListeningJourney({
     }
   }
 
-  // Con mp3 la línea activa se deduce del tiempo; con voz del navegador la sabemos exacta,
-  // porque cada turno es una locución propia y avisa al empezar.
-  const activeSentence = audioMode === 'navegador'
-    ? ttsLine
-    : exercise.transcript.length
-      ? Math.min(exercise.transcript.length - 1, Math.floor((currentTime / Math.max(exercise.duration, 1)) * exercise.transcript.length))
-      : -1
+  // Con voz del navegador la línea se sabe exacta, porque cada turno es una locución propia
+  // y avisa al empezar. Con mp3 la deduce el reproductor y la comunica al cambiar.
+  const activeSentence = audioMode === 'navegador' ? ttsLine : activeLine
 
   return (
     <div className="listen-shell">
@@ -158,7 +163,7 @@ export default function ListeningJourney({
         <div className="listen-catalog__head"><span>{seriesTitle ?? `Ruta ${level}`}</span><strong>{completed.length}/{exercises.length} completados</strong></div>
         {Array.from({ length: Math.ceil(exercises.length / 5) }, (_, block) => {
           const set = exercises.slice(block * 5, block * 5 + 5)
-          return <section key={block} className="listen-block"><h2>Bloque {block + 1}</h2>{set.map(item => <button type="button" key={item.id} className={`listen-card${item.id === exercise.id ? ' is-active' : ''}`} onClick={() => selectExercise(item.id)}><span>{completed.includes(item.id) ? '✓' : item.order}</span><div><b>{item.title}</b><small>{item.audioAvailable === false ? 'Audio en preparación' : `${item.duration}s · ${item.titleEs}`}</small></div></button>)}</section>
+          return <section key={block} className="listen-block"><h2>Bloque {block + 1}</h2>{set.map(item => <button type="button" key={item.id} className={`listen-card${item.id === exercise.id ? ' is-active' : ''}`} onClick={() => selectExercise(item.id)}><span>{completed.includes(item.id) ? '✓' : item.order}</span><div><b>{item.title}</b><small>{item.audioAvailable === false ? 'Audio en preparación' : `${duracion(item.duration)} · ${item.titleEs}`}</small></div></button>)}</section>
         })}
       </aside>
 
@@ -168,7 +173,7 @@ export default function ListeningJourney({
         <h1>🎧 {exercise.title}</h1>
         {seriesDescription && <p className="listen-series">{seriesDescription}</p>}
         <p className="listen-objective">{exercise.objective}</p>
-        <div className="listen-tags">{exercise.grammar.map(tag => <span key={tag}>{tag}</span>)}<span>~{exercise.duration} segundos</span></div>
+        <div className="listen-tags">{exercise.grammar.map(tag => <span key={tag}>{tag}</span>)}<span>{duracion(exercise.duration)}</span></div>
 
         <ol className="listen-steps" aria-label="Progreso del ejercicio">{STAGES.map((label, index) => <li key={label} className={index === stage ? 'is-current' : index < stage ? 'is-done' : ''}><span>{index < stage ? '✓' : index + 1}</span><em>{label}</em></li>)}</ol>
 
@@ -185,7 +190,14 @@ export default function ListeningJourney({
                   <small>Voz provisional del navegador · turno {ttsLine < 0 ? '—' : ttsLine + 1} de {exercise.transcript.length}</small>
                 </div>
           ) : audioAvailable ? (
-            <div className="listen-player"><audio ref={audioRef} src={`${audioBasePath}/${exercise.audioFile ?? `listening-${String(exercise.order).padStart(2, '0')}`}.mp3`} onPlay={() => setPlayed(true)} onTimeUpdate={event => setCurrentTime(event.currentTarget.currentTime)} /><button className="listen-play" type="button" onClick={() => { const audio = audioRef.current; if (!audio) return; audio.paused ? audio.play() : audio.pause() }}>▶ Escuchar {played ? 'de nuevo' : ''}</button><button className="listen-rewind" type="button" onClick={() => { if (audioRef.current) audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5) }}>↺ 5 s</button><div className="listen-timeline"><span style={{ width: `${Math.min(100, (currentTime / exercise.duration) * 100)}%` }} /></div><small>{Math.floor(currentTime)} s / ~{exercise.duration} s</small></div>
+            <ListeningPlayer
+              src={`${audioBasePath}/${exercise.audioFile ?? `listening-${String(exercise.order).padStart(2, '0')}`}.mp3`}
+              fallbackDuration={exercise.duration}
+              lines={exercise.transcript.map(line => ({ chars: line.en.length }))}
+              onFirstPlay={() => setPlayed(true)}
+              onLineChange={setActiveLine}
+              label={exercise.title}
+            />
           ) : <div className="listen-empty">🎙️ Este guion ya está preparado. El audio se activará cuando esté grabado.</div>
         )}
 
