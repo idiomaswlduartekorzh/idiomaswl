@@ -72,25 +72,46 @@ function loadSeries(file) {
 
 const norm = (value) => value.replace(/\s+/gu, ' ').trim()
 
-const COLA_MAXIMA = 0.25
+const COLA_MAXIMA = 0.08
 
 /**
- * Punto donde acaba el habla, descartando el golpe final que ElevenLabs añade a cada turno:
- * ~40 ms a −28 dB después de 400 ms de silencio, tan fuerte como la voz. Ventana de
- * detección de 0,08 s. Ver el comentario equivalente en generate-listening-audio.mjs.
+ * Punto donde acaba la última palabra de verdad del turno.
+ *
+ * ElevenLabs añade al final de cada turno un golpe de 30–40 ms a −28/−33 dB, tan fuerte
+ * como la voz. Al pegar los turnos cae justo antes del silencio que separa a un personaje
+ * del siguiente, y se oye en cada cambio de voz.
+ *
+ * Las tres primeras versiones de esta función buscaban el golpe: «el último silencio, si lo
+ * que queda detrás es corto». Funcionó hasta que apareció otro patrón —dos golpes seguidos,
+ * o un golpe con silencio detrás— y volvían a colarse. Perseguir patrones no converge.
+ *
+ * Este criterio es el directo y no depende del patrón: se reconstruyen los tramos de habla
+ * y se corta al final del ÚLTIMO que dure lo bastante para ser una palabra. Todo lo que
+ * venga después —golpes, silencio, lo que sea— sobra por definición.
  */
 function findSpeechEnd(segment) {
-  const res = spawnSync('ffmpeg', ['-i', segment, '-af', 'silencedetect=noise=-45dB:d=0.08', '-f', 'null', '-'], { encoding: 'utf8' })
+  const res = spawnSync('ffmpeg', ['-i', segment, '-af', 'silencedetect=noise=-45dB:d=0.03', '-f', 'null', '-'], { encoding: 'utf8' })
   const salida = String(res.stderr ?? '')
   const duracion = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', segment]).toString().trim())
   const inicios = [...salida.matchAll(/silence_start: ([\d.]+)/gu)].map((m) => Number(m[1]))
   const fines = [...salida.matchAll(/silence_end: ([\d.]+)/gu)].map((m) => Number(m[1]))
-  if (!inicios.length || !fines.length) return null
-  const inicio = inicios[inicios.length - 1]
-  const fin = fines[fines.length - 1]
-  if (fin <= inicio) return null
-  const cola = duracion - fin
-  return cola > 0 && cola < COLA_MAXIMA ? inicio : null
+  if (!inicios.length) return null
+
+  const silencios = []
+  for (let i = 0; i < inicios.length; i += 1) silencios.push({ inicio: inicios[i], fin: fines[i] ?? duracion })
+
+  const habla = []
+  let cursor = 0
+  for (const s of silencios) {
+    if (s.inicio > cursor) habla.push({ inicio: cursor, fin: s.inicio })
+    cursor = s.fin
+  }
+  if (duracion > cursor) habla.push({ inicio: cursor, fin: duracion })
+
+  const ultima = [...habla].reverse().find((h) => h.fin - h.inicio >= COLA_MAXIMA)
+  if (!ultima) return null
+  // Sin margen no se corta: si la última palabra ya termina el archivo, no hay nada que quitar.
+  return duracion - ultima.fin > 0.02 ? ultima.fin : null
 }
 
 /** Mismo tratamiento que en la generación: corte del golpe, PCM, extremos y nivelado. */

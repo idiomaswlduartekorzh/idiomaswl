@@ -408,8 +408,20 @@ async function speak({ key, text, voiceId, modelId, settings, locale, previous, 
  */
 const LUFS_OBJETIVO = -16
 const TRUE_PEAK_MAX = -1.5
-/** Cola máxima, en segundos, que se considera golpe y no habla. */
-const COLA_MAXIMA = 0.25
+/**
+ * Cola máxima, en segundos, que se considera golpe y no habla.
+ *
+ * 0,08 s, y el número sale de mirar con qué palabras terminan los turnos.
+ *
+ * Empezó en 0,25 y bajó a 0,12 persiguiendo golpes que se escapaban. Fue un error: los
+ * turnos italianos acaban en «tu», «noi», «io», «ho», «fa», y esos monosílabos duran entre
+ * 90 y 140 ms. Con la cola en 0,12 el recorte se los habría comido — habría borrado habla
+ * para quitar un ruido, que es peor que el ruido.
+ *
+ * El golpe de ElevenLabs mide 30–40 ms. Ninguna palabra baja de 80. Ahí está la frontera, y
+ * se elige pecando de conservador: ante la duda, se conserva el audio.
+ */
+const COLA_MAXIMA = 0.08
 
 /**
  * Prepara un turno para el pegado: lo pasa a PCM, le recorta el silencio de los extremos
@@ -427,38 +439,43 @@ const COLA_MAXIMA = 0.25
  * pide el guion. Un diálogo con casi un segundo entre réplicas no suena a conversación.
  */
 /**
- * Punto donde acaba el habla de verdad, descartando el golpe final de ElevenLabs.
+ * Punto donde acaba la última palabra de verdad del turno.
  *
- * Medido sobre un turno crudo de portugués A1: el habla termina a 1,6 s, siguen 400 ms a
- * −60 dB, y en el último tramo aparece un golpe de ~40 ms a **−28 dB**, tan fuerte como la
- * voz. Está en el archivo que devuelve la API, en todos los turnos, y cae justo antes del
- * silencio que separa a un personaje del siguiente: de ahí que se oiga exactamente en cada
- * cambio de voz. Recortar «silencio» no lo quita, porque el golpe no es silencio.
+ * ElevenLabs añade al final de cada turno un golpe de 30–40 ms a −28/−33 dB, tan fuerte
+ * como la voz. Al pegar los turnos cae justo antes del silencio que separa a un personaje
+ * del siguiente, y se oye en cada cambio de voz.
  *
- * Se corta en el último silencio largo cuando lo que queda después es demasiado corto para
- * ser habla. Si no hay tal silencio, se devuelve null y el turno se usa entero.
+ * Las tres primeras versiones de esta función buscaban el golpe: «el último silencio, si lo
+ * que queda detrás es corto». Funcionó hasta que apareció otro patrón —dos golpes seguidos,
+ * o un golpe con silencio detrás— y volvían a colarse. Perseguir patrones no converge.
  *
- * La ventana de detección es 0,08 s y no 0,12: con 0,12 se escapaban los turnos cuyo golpe
- * viene precedido de una pausa más corta. La auditoría encontró uno así entre 1.840 turnos
- * —ruso A2 ep. 1, un golpe a −28,6 dB— y bajar el umbral lo caza.
+ * Este criterio es el directo y no depende del patrón: se reconstruyen los tramos de habla
+ * y se corta al final del ÚLTIMO que dure lo bastante para ser una palabra. Todo lo que
+ * venga después —golpes, silencio, lo que sea— sobra por definición.
  */
 function findSpeechEnd(segment) {
-  const res = spawnSync('ffmpeg', ['-i', segment, '-af', 'silencedetect=noise=-45dB:d=0.08', '-f', 'null', '-'], { encoding: 'utf8' })
+  const res = spawnSync('ffmpeg', ['-i', segment, '-af', 'silencedetect=noise=-45dB:d=0.03', '-f', 'null', '-'], { encoding: 'utf8' })
   const salida = String(res.stderr ?? '')
   const duracion = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', segment]).toString().trim())
-
-  // Pares (inicio, fin) de cada silencio. El último interesa: si después de él queda muy
-  // poco audio, ese resto es el golpe y se corta desde donde empezó el silencio.
   const inicios = [...salida.matchAll(/silence_start: ([\d.]+)/gu)].map((m) => Number(m[1]))
   const fines = [...salida.matchAll(/silence_end: ([\d.]+)/gu)].map((m) => Number(m[1]))
-  if (!inicios.length || !fines.length) return null
+  if (!inicios.length) return null
 
-  const inicio = inicios[inicios.length - 1]
-  const fin = fines[fines.length - 1]
-  if (fin <= inicio) return null
+  const silencios = []
+  for (let i = 0; i < inicios.length; i += 1) silencios.push({ inicio: inicios[i], fin: fines[i] ?? duracion })
 
-  const cola = duracion - fin
-  return cola > 0 && cola < COLA_MAXIMA ? inicio : null
+  const habla = []
+  let cursor = 0
+  for (const s of silencios) {
+    if (s.inicio > cursor) habla.push({ inicio: cursor, fin: s.inicio })
+    cursor = s.fin
+  }
+  if (duracion > cursor) habla.push({ inicio: cursor, fin: duracion })
+
+  const ultima = [...habla].reverse().find((h) => h.fin - h.inicio >= COLA_MAXIMA)
+  if (!ultima) return null
+  // Sin margen no se corta: si la última palabra ya termina el archivo, no hay nada que quitar.
+  return duracion - ultima.fin > 0.02 ? ultima.fin : null
 }
 
 function prepareSegment(segment) {

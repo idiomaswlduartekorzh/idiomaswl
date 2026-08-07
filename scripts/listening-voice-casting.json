@@ -566,47 +566,76 @@
       "speed": 0.92,
       "cast": {
         "Valeria": {
-          "voice_id": "",
+          "voice_id": "uV2Bhcm1HwmAqPqkbjfl",
           "turnos": 133,
           "papel": "Estudiante colombiana de arquitectura en Bolonia; protagonista (A2 + B1)",
           "perfil_de_voz": "Mujer joven, italiano claro y ligeramente hispanizado, tono curioso y directo",
-          "buscar": "voz femenina italiana joven y muy clara. El papel más largo del proyecto entero: conviene probarlo en el piloto antes de generar nada más"
+          "buscar": "voz femenina italiana joven y muy clara. El papel más largo del proyecto entero: conviene probarlo en el piloto antes de generar nada más",
+          "biblioteca": {
+            "public_owner_id": "74072602ea6dce8736c73ea50cab9d7d02996bc1274aa2e7710faeaaec8ef485",
+            "voice_id": "uV2Bhcm1HwmAqPqkbjfl"
+          },
+          "voz": "Sara — «Clear, Credible and Confident». 133 turnos, el papel más largo del proyecto: se elige por claridad antes que por color"
         },
         "Giulia": {
-          "voice_id": "",
+          "voice_id": "RZ9oBlQ97k7Ug7uU1Ij0",
           "turnos": 60,
           "papel": "Compañera de curso boloñesa; organizada, práctica y escéptica (A2 + B1)",
           "perfil_de_voz": "Mujer joven, ritmo rápido, entonación viva, tono práctico",
-          "buscar": "voz femenina italiana joven, rápida y expresiva; tiene que distinguirse de Valeria en una frase"
+          "buscar": "voz femenina italiana joven, rápida y expresiva; tiene que distinguirse de Valeria en una frase",
+          "biblioteca": {
+            "public_owner_id": "a1e47e357c0b97d1f0841053edd5f990443293fd66838f4324db5d2786f4fb9b",
+            "voice_id": "RZ9oBlQ97k7Ug7uU1Ij0"
+          },
+          "voz": "Giulia Pro — «Clear, Upbeat and Nuanced»: encaja con «ritmo rápido, entonación viva»"
         },
         "Matteo": {
-          "voice_id": "",
+          "voice_id": "x3ahg1G07UwsY7z9siqh",
           "turnos": 57,
           "papel": "Mecánico de bicicletas; los domingos vende en el mercadillo (A2 + B1)",
           "perfil_de_voz": "Hombre joven, italiano estándar, hablador y bromista",
-          "buscar": "voz masculina italiana joven, cercana y con chispa"
+          "buscar": "voz masculina italiana joven, cercana y con chispa",
+          "biblioteca": {
+            "public_owner_id": "64cbc624eb5aab4e95a968e1f41d75402277cca6e549036ed17e56ea33bbbc9e",
+            "voice_id": "x3ahg1G07UwsY7z9siqh"
+          },
+          "voz": "Matteo — «Confident and charismatic»: encaja con «hablador y bromista»"
         },
         "Signora Lucia": {
-          "voice_id": "",
+          "voice_id": "zORK9zlVk5JLkgvi02K9",
           "turnos": 39,
           "papel": "Sastra del barrio; trata de usted a todo el mundo (A2 + B1)",
           "perfil_de_voz": "Mujer mayor, articulación muy clara y pausada, registro formal y cordial",
-          "buscar": "voz femenina italiana mayor, articulación nítida; es la que mejor se entiende a nivel A2, así que la claridad manda sobre el color"
+          "buscar": "voz femenina italiana mayor, articulación nítida; es la que mejor se entiende a nivel A2, así que la claridad manda sobre el color",
+          "biblioteca": {
+            "public_owner_id": "0b2e59a6bc11b2f536ad7709bcc2c1944ed54b3e7c2db1ab2b707df95e6d8e83",
+            "voice_id": "zORK9zlVk5JLkgvi02K9"
+          },
+          "voz": "Elena — «classy», femenina adulta: registro formal y cordial. La biblioteca no tiene ninguna voz italiana femenina mayor"
         },
         "Bruno": {
-          "voice_id": "",
+          "voice_id": "ipT4u0Omn6M1PjJcECNG",
           "turnos": 25,
           "papel": "Panadero del barrio (A2 + B1)",
           "perfil_de_voz": "Hombre mayor, voz grave, ritmo lento, humor seco",
-          "buscar": "voz masculina italiana mayor y grave; debe contrastar con Matteo"
+          "buscar": "voz masculina italiana mayor y grave; debe contrastar con Matteo",
+          "biblioteca": {
+            "public_owner_id": "3ab30e46d842d7426ed34f6c930d0ef3438c287ce7198142c087ba05b765ec8f",
+            "voice_id": "ipT4u0Omn6M1PjJcECNG"
+          },
+          "voz": "Giuseppe Galassi — masculina mayor, «wise»: grave y pausada. Se descartó «Grumpy Grandpa», que es voz de personaje"
         },
         "Tutti": {
-          "voice_id": "",
+          "voice_id": "lJylpTXX0sNdqq5EUv4M",
           "turnos": 6,
           "papel": "Coro de vecinos del barrio (A2 ep20, B1 ep10 y ep20)",
           "perfil_de_voz": "Coro: la misma línea generada con tres voces distintas y mezclada en un solo turno",
           "buscar": "No necesita voz propia: se rellena con los voice_id de Valeria, Matteo y Signora Lucia una vez asignados",
-          "voz": "Una sola voz: mezclar varias diciendo la misma línea impide entenderla"
+          "voz": "Valentino — voz propia y de nadie más. El coro comparte escena con todo el reparto, así que reutilizar cualquiera lo haría sonar a un personaje concreto hablando por el grupo",
+          "biblioteca": {
+            "public_owner_id": "779ddd0d041eb69740f46a91d226d090f45c305f9d81be28be8f5759b0f299ee",
+            "voice_id": "lJylpTXX0sNdqq5EUv4M"
+          }
         }
       }
     }

@@ -2493,6 +2493,479 @@
         "style": 0.15,
         "use_speaker_boost": true
       }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 1,
+      "id": "it-b1-01-due-anni-dopo",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-01.mp3",
+      "caracteres": 729,
+      "duracion_real": 55.58,
+      "caracteres_por_segundo": 13.12,
+      "duracion_declarada_previa": 58,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Matteo": "x3ahg1G07UwsY7z9siqh",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 2,
+      "id": "it-b1-02-le-chiavi-della-sartoria",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-02.mp3",
+      "caracteres": 675,
+      "duracion_real": 61.04,
+      "caracteres_por_segundo": 11.06,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Signora Lucia": "zORK9zlVk5JLkgvi02K9",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 3,
+      "id": "it-b1-03-un-idea-per-il-locale",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-03.mp3",
+      "caracteres": 622,
+      "duracion_real": 44.24,
+      "caracteres_por_segundo": 14.06,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 4,
+      "id": "it-b1-04-quanto-costa-un-sogno",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-04.mp3",
+      "caracteres": 661,
+      "duracion_real": 48.54,
+      "caracteres_por_segundo": 13.62,
+      "duracion_declarada_previa": 56,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 5,
+      "id": "it-b1-05-se-troviamo-i-soldi",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-05.mp3",
+      "caracteres": 643,
+      "duracion_real": 48.82,
+      "caracteres_por_segundo": 13.17,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Matteo": "x3ahg1G07UwsY7z9siqh",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 6,
+      "id": "it-b1-06-chi-ha-chiesto-del-locale",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-06.mp3",
+      "caracteres": 622,
+      "duracion_real": 48.41,
+      "caracteres_por_segundo": 12.85,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Bruno": "ipT4u0Omn6M1PjJcECNG",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 7,
+      "id": "it-b1-07-nonostante-tutto",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-07.mp3",
+      "caracteres": 629,
+      "duracion_real": 44.66,
+      "caracteres_por_segundo": 14.08,
+      "duracion_declarada_previa": 56,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 8,
+      "id": "it-b1-08-aveva-detto-che-sarebbe-passata",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-08.mp3",
+      "caracteres": 637,
+      "duracion_real": 47.82,
+      "caracteres_por_segundo": 13.32,
+      "duracion_declarada_previa": 58,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Matteo": "x3ahg1G07UwsY7z9siqh"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 9,
+      "id": "it-b1-09-se-fossi-in-te",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-09.mp3",
+      "caracteres": 650,
+      "duracion_real": 50.72,
+      "caracteres_por_segundo": 12.81,
+      "duracion_declarada_previa": 58,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Matteo": "x3ahg1G07UwsY7z9siqh",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 10,
+      "id": "it-b1-10-alla-cena-di-settembre",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-10.mp3",
+      "caracteres": 640,
+      "duracion_real": 52.7,
+      "caracteres_por_segundo": 12.14,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Tutti": "lJylpTXX0sNdqq5EUv4M",
+        "Bruno": "ipT4u0Omn6M1PjJcECNG",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Signora Lucia": "zORK9zlVk5JLkgvi02K9"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 11,
+      "id": "it-b1-11-la-mattina-dopo",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-11.mp3",
+      "caracteres": 561,
+      "duracion_real": 43.59,
+      "caracteres_por_segundo": 12.87,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Matteo": "x3ahg1G07UwsY7z9siqh",
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 12,
+      "id": "it-b1-12-avrei-dovuto-dirglielo",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-12.mp3",
+      "caracteres": 586,
+      "duracion_real": 43.89,
+      "caracteres_por_segundo": 13.35,
+      "duracion_declarada_previa": 56,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Matteo": "x3ahg1G07UwsY7z9siqh"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 13,
+      "id": "it-b1-13-le-macchine-di-sua-madre",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-13.mp3",
+      "caracteres": 604,
+      "duracion_real": 45.91,
+      "caracteres_por_segundo": 13.16,
+      "duracion_declarada_previa": 59,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Bruno": "ipT4u0Omn6M1PjJcECNG",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 14,
+      "id": "it-b1-14-prima-che-arrivi-marzo",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-14.mp3",
+      "caracteres": 632,
+      "duracion_real": 44.72,
+      "caracteres_por_segundo": 14.13,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 15,
+      "id": "it-b1-15-l-offerta-dell-agenzia",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-15.mp3",
+      "caracteres": 578,
+      "duracion_real": 44.99,
+      "caracteres_por_segundo": 12.85,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Matteo": "x3ahg1G07UwsY7z9siqh",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Bruno": "ipT4u0Omn6M1PjJcECNG"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 16,
+      "id": "it-b1-16-quello-che-era-successo",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-16.mp3",
+      "caracteres": 640,
+      "duracion_real": 47.16,
+      "caracteres_por_segundo": 13.57,
+      "duracion_declarada_previa": 58,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0",
+        "Matteo": "x3ahg1G07UwsY7z9siqh"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 17,
+      "id": "it-b1-17-diamoci-del-tu",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-17.mp3",
+      "caracteres": 615,
+      "duracion_real": 58.62,
+      "caracteres_por_segundo": 10.49,
+      "duracion_declarada_previa": 58,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Signora Lucia": "zORK9zlVk5JLkgvi02K9",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 18,
+      "id": "it-b1-18-non-un-negozio-un-cortile",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-18.mp3",
+      "caracteres": 621,
+      "duracion_real": 53.1,
+      "caracteres_por_segundo": 11.7,
+      "duracion_declarada_previa": 58,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Signora Lucia": "zORK9zlVk5JLkgvi02K9",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0",
+        "Matteo": "x3ahg1G07UwsY7z9siqh"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 19,
+      "id": "it-b1-19-il-cartello-nuovo",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-19.mp3",
+      "caracteres": 603,
+      "duracion_real": 44.92,
+      "caracteres_por_segundo": 13.42,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Matteo": "x3ahg1G07UwsY7z9siqh",
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0",
+        "Bruno": "ipT4u0Omn6M1PjJcECNG",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "italiano",
+      "episodio": 20,
+      "id": "it-b1-20-il-primo-sabato-di-marzo",
+      "piloto": false,
+      "archivo": "public/audio/italiano/b1/listening-20.mp3",
+      "caracteres": 575,
+      "duracion_real": 43.5,
+      "caracteres_por_segundo": 13.22,
+      "duracion_declarada_previa": 57,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Tutti": "lJylpTXX0sNdqq5EUv4M",
+        "Signora Lucia": "zORK9zlVk5JLkgvi02K9",
+        "Valeria": "uV2Bhcm1HwmAqPqkbjfl",
+        "Bruno": "ipT4u0Omn6M1PjJcECNG",
+        "Matteo": "x3ahg1G07UwsY7z9siqh",
+        "Giulia": "RZ9oBlQ97k7Ug7uU1Ij0"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
     }
   ]
 }

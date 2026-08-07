@@ -58,12 +58,16 @@ const PAUSA_MAXIMA = 1.6
  * Un fragmento sonoro corto y AUDIBLE, aislado entre dos silencios, no es habla: es el
  * golpe que ElevenLabs añade al final de cada turno.
  *
- * Las dos condiciones importan. La primera versión solo miraba la duración y marcaba 142
- * problemas, casi todos ticks a −55 dB que nadie oye. El golpe de verdad estaba a −28 dB,
- * tan fuerte como la voz: por eso se notaba en cada cambio de personaje. Medir duración sin
- * medir nivel llena el informe de ruido y entierra lo que sí hay que arreglar.
+ * Las tres condiciones importan, y el umbral de duración es 0,08 s por la misma razón que
+ * en el recorte: los turnos italianos terminan en «tu», «noi», «io», y esas palabras duran
+ * de 90 a 140 ms. Con el límite en 0,15 el italiano daba once hallazgos y las otras cinco
+ * lenguas cero — señal de que la regla estaba midiendo el idioma, no el montaje.
+ *
+ * El nivel también importa: la primera versión solo miraba duración y marcaba 142 problemas,
+ * casi todos ticks a −55 dB que nadie oye. El golpe de verdad está a −28 dB, tan fuerte como
+ * la voz.
  */
-const FRAGMENTO_MINIMO = 0.15
+const FRAGMENTO_MINIMO = 0.08
 const FRAGMENTO_AUDIBLE_DB = -40
 
 const args = process.argv.slice(2)
@@ -190,9 +194,26 @@ for (const { file, lang, level } of files) {
     const { lufs, peak } = sonoridad(mp3)
     const etiqueta = `ep${String(episode.order).padStart(2, '0')}`
 
-    // 1. Golpes: fragmentos cortos Y audibles. Los cortos y muy bajos son ticks inocuos.
+    /**
+     * 1. Golpes: fragmentos cortos, audibles Y pegados a un separador de turno.
+     *
+     * Las tres condiciones. Corto y audible no basta: el italiano tiene monosílabos —«è»,
+     * «sì», «ma»— que duran 90 ms y salen a nivel de voz entre dos pausas breves. Con solo
+     * dos condiciones, el italiano daba once falsos positivos y las otras cinco lenguas
+     * ninguno, que era la pista de que el criterio medía el idioma y no el montaje.
+     *
+     * Lo que distingue al golpe es DÓNDE cae: es la cola del turno, así que aparece pegado
+     * al silencio de medio segundo que separa a un personaje del siguiente. Una palabra
+     * corta de verdad vive en mitad de la frase, lejos de los separadores.
+     */
+    const separadoresPara = (h) => silencios.some((s) => {
+      const largo = s.fin - s.inicio >= PAUSA_NOMINAL * 0.8
+      return largo && (Math.abs(s.inicio - h.fin) < 0.2 || Math.abs(h.inicio - s.fin) < 0.2)
+    })
     const cortos = habla.filter((h) => h.fin - h.inicio < FRAGMENTO_MINIMO)
-    const golpes = cortos.filter((h) => nivelDe(mp3, h.inicio, h.fin - h.inicio) > FRAGMENTO_AUDIBLE_DB)
+    const golpes = cortos
+      .filter(separadoresPara)
+      .filter((h) => nivelDe(mp3, h.inicio, h.fin - h.inicio) > FRAGMENTO_AUDIBLE_DB)
     if (golpes.length) {
       problemas.push(`${etiqueta}: ${golpes.length} golpe(s) audible(s) de menos de ${FRAGMENTO_MINIMO * 1000} ms en ${golpes.map((g) => g.inicio.toFixed(2) + 's').join(', ')}`)
     }
