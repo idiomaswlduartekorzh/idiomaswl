@@ -6,6 +6,7 @@ const WA = '573005004253';
 
 // Per-page pre-written messages. Matched by pathname prefix (most specific first).
 const PAGE_MESSAGES: [string, string][] = [
+  ['/practica/ielts',     'Hello, I was practising IELTS with WeLearn and would like guidance on how to continue my preparation.'],
   ['/nivel-radar',        'Hola, hice el Nivel Radar de WeLearn y quiero ayuda personalizada para avanzar mi inglés.'],
   ['/clases-de-coreano',  'Hola, vi la página de clases de coreano en WeLearn y quiero saber más sobre el programa.'],
   ['/clases-de-ingles',   'Hola, vi su página de clases de inglés y quiero agendar mi clase de diagnóstico gratis.'],
@@ -42,6 +43,7 @@ declare global {
 
 export default function WhatsAppFloat() {
   const pathname = usePathname();
+  const isIelts = pathname.startsWith('/practica/ielts');
   const msg = getMessageForPath(pathname);
   const href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
@@ -136,8 +138,8 @@ export default function WhatsAppFloat() {
         rel="noopener noreferrer"
         onClick={handleClick}
         className="wl-wa-float"
-        aria-label="Contáctanos por WhatsApp"
-        title="Escríbenos por WhatsApp"
+        aria-label={isIelts ? 'Contact WeLearn on WhatsApp' : 'Contáctanos por WhatsApp'}
+        title={isIelts ? 'Message us on WhatsApp' : 'Escríbenos por WhatsApp'}
       >
         <span className="wl-wa-float__icon">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true">
@@ -145,7 +147,7 @@ export default function WhatsAppFloat() {
             <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
           </svg>
         </span>
-        <span className="wl-wa-float__label">Escríbenos</span>
+        <span className="wl-wa-float__label">{isIelts ? 'Message us' : 'Escríbenos'}</span>
       </a>
     </>
   );

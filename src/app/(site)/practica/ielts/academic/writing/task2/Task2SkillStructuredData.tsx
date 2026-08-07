@@ -4,14 +4,14 @@ const TASK2_BASE = 'https://www.idiomaswl.com/practica/ielts/academic/writing/ta
 
 const FAQS = [
   {
-    question: '¿Esta página es una tarea oficial separada de IELTS?',
+    question: 'Is this page a separate official IELTS task?',
     answer:
-      'No. Es una ruta pedagógica de WeLearn para practicar una habilidad o tipo de prompt dentro de IELTS Academic Writing Task 2.',
+      'No. It is a WeLearn learning resource for practising a skill or prompt type used within IELTS Academic Writing Task 2.',
   },
   {
-    question: '¿Cómo se usa esta práctica en una respuesta completa?',
+    question: 'How should this practice be used in a complete response?',
     answer:
-      'Practica la habilidad, revisa la explicación y luego transfiérela a un ensayo Task 2 completo de al menos 250 palabras.',
+      'Practise the target skill, review the explanation and then transfer it to a complete Task 2 essay of at least 250 words.',
   },
 ];
 
@@ -19,10 +19,12 @@ export function Task2SkillStructuredData({
   name,
   path,
   teaches,
+  faqs = FAQS,
 }: {
   name: string;
   path: string;
   teaches: string[];
+  faqs?: { question: string; answer: string }[];
 }) {
   const url = `https://www.idiomaswl.com${path}`;
 
@@ -31,17 +33,17 @@ export function Task2SkillStructuredData({
       <LearningResourceJsonLd
         name={name}
         url={url}
-        description={`${name}: práctica guiada de IELTS Academic Writing Task 2 con enfoque WeLearn.`}
+        description={`${name}: guided IELTS Academic Writing Task 2 practice using the WeLearn method.`}
         teaches={['IELTS Academic Writing Task 2', ...teaches]}
         isPartOf={{
           name: 'IELTS Academic Writing Task 2',
           url: TASK2_BASE,
         }}
       />
-      <FaqJsonLd faqs={FAQS} />
+      <FaqJsonLd faqs={faqs} />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' },
           { name: 'Academic Writing', url: 'https://www.idiomaswl.com/practica/ielts/academic/writing' },
           { name: 'Task 2', url: TASK2_BASE },

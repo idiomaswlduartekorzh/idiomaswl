@@ -107,14 +107,29 @@ paragraph names or an exact word count per paragraph.
 
 ### Task 2 routes
 
-| Route | Status |
-| --- | --- |
-| `/practica/ielts/academic/writing/task2/tipo-ensayo` | live |
-| `/practica/ielts/academic/writing/task2/introduccion` | live |
-| `/practica/ielts/academic/writing/task2/parrafos-cuerpo` | live |
-| `/practica/ielts/academic/writing/task2/linking-language` | live |
-| `/practica/ielts/academic/writing/task2/conclusion` | live |
-| `/practica/ielts/academic/writing/task2/tarea-completa` | live |
+Task 2 uses three layers. `Build the essay` is the response architecture; question-type routes adapt that architecture to the instruction; transferable-skill routes support several paragraphs. Paragraphs and subskills must not be presented as the same thing.
+
+#### Build the essay
+
+| Route | Status | Purpose |
+| --- | --- | --- |
+| `/practica/ielts/academic/writing/task2/analisis-pregunta` | live | Prompt analysis and essay-plan pilot with five question families and progressive practice |
+| `/practica/ielts/academic/writing/task2/introduccion` | live | Paraphrase, thesis, position and optional roadmap |
+| `/practica/ielts/academic/writing/task2/body-1` | live | First controlling idea adapted to five question families, with 25 guided cases and progressive practice |
+| `/practica/ielts/academic/writing/task2/body-2` | live | Second controlling idea adapted to five question families, with 25 guided cases and progressive practice |
+| `/practica/ielts/academic/writing/task2/conclusion` | live | Question-sensitive position restatement and synthesis without new ideas, with 25 guided cases and progressive Lego practice |
+| `/practica/ielts/academic/writing/task2/revision-final` | live | Layered instruction, position, paragraph, cohesion and language review with 25 guided cases and no automated band scoring |
+| `/practica/ielts/academic/writing/task2/tarea-completa` | live | Full timed essay practice |
+
+`Body 3` is optional strategy, not a required cluster route. WeLearn teaches a four-paragraph default while stating clearly that IELTS does not prescribe a fixed paragraph count.
+
+#### Transferable skills and legacy bridge routes
+
+| Route | Status | Purpose |
+| --- | --- | --- |
+| `/practica/ielts/academic/writing/task2/tipo-ensayo` | live | Existing question-type recognition route; retained while Prompt Analysis becomes canonical for prompt analysis |
+| `/practica/ielts/academic/writing/task2/parrafos-cuerpo` | live | Existing umbrella lesson retained as a transferable paragraph-development bridge now that Body 1 and Body 2 have independent architecture lessons |
+| `/practica/ielts/academic/writing/task2/linking-language` | live | Cohesion and linking functions |
 | `/practica/ielts/academic/writing/task2/opinion` | live |
 | `/practica/ielts/academic/writing/task2/discussion` | live |
 | `/practica/ielts/academic/writing/task2/advantages-disadvantages` | live |

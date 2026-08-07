@@ -68,3 +68,7 @@ public/audio/goethe/
 public/audio/aleman/**/De-*.mp3
 public/audio/aleman/**/de-prueba.mp3
 public/audio/italiano/**/it-a1-*-src.mp3
+
+# Artefactos de Playwright: cachés y trazas de las sesiones de prueba, no producto.
+/.playwright-cli/
+/.playwright-mcp/
