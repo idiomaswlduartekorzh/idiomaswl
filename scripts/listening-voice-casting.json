@@ -37,6 +37,48 @@
     }
   },
   "languages": {
+    "aleman": {
+      "locale": "de-DE",
+      "speed": 0.92,
+      "cast": {
+        "Emma": {
+          "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+          "papel": "Colombiana en Berlín, trabaja en el café desde hace dos años; curiosa y directa",
+          "perfil_de_voz": "Mujer joven, alemán fluido, tono cálido y despierto",
+          "voz": "Ava — «Youthful, Authentic and Friendly». Alemana nativa, joven y muy articulada: es el papel más largo de la temporada"
+        },
+        "Herr Becker": {
+          "voice_id": "NlRO8ABjJNJNYaRaLiPJ",
+          "papel": "Dueño del café, sesenta y tantos; reservado, de frases cortas",
+          "perfil_de_voz": "Hombre mayor, voz grave y pausada, poco expresivo al principio",
+          "voz": "KonradKlar — grave y cálido, pero anunciado como claro y articulado. A B1 la claridad pesa más que el color"
+        },
+        "Jonas": {
+          "voice_id": "IeQubAjK1ujbppIdhJw4",
+          "papel": "Compañero de Emma en el café, estudiante de historia; habla rápido y tutea a todo el mundo",
+          "perfil_de_voz": "Hombre joven, ritmo ágil, entonación viva, alemán coloquial",
+          "voz": "Markus — «Young Natural German», veinteañero. Contrasta con la voz grave de Becker sin salirse del registro"
+        },
+        "Frau Schneider": {
+          "voice_id": "uvysWDLbKpA4XvpD3GI6",
+          "papel": "Trabajadora del archivo municipal y vecina de toda la vida del barrio",
+          "perfil_de_voz": "Mujer adulta, articulación muy clara y profesional, tono amable",
+          "voz": "Leonie — calidad de estudio y dicción profesional, que es justo lo que pide el papel"
+        },
+        "Klara": {
+          "voice_id": "VNHNa6nN6yJdVF3YRyuF",
+          "papel": "Hermana de Paul Winter; escribe desde Hamburgo y aparece en la segunda mitad",
+          "perfil_de_voz": "Mujer mayor, voz serena y algo cansada",
+          "voz": "Hilde — mujer mayor alemana de verdad, timbre nostálgico. Las voces «old» inglesas hablando alemán se descartaron"
+        },
+        "Alle": {
+          "voice_id": "mk8kciAPymSDlinAde1e",
+          "papel": "Coro de vecinos en la fiesta del barrio",
+          "perfil_de_voz": "Una sola voz: mezclar tres impide entender la línea, y eso es lo único que importa aquí",
+          "voz": "Nils — neutro y distinto de Markus. Solo dice el brindis final del episodio 20"
+        }
+      }
+    },
     "coreano": {
       "locale": "ko-KR",
       "speed": 0.9,

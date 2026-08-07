@@ -20,7 +20,7 @@ const seriesDir = path.join(repoRoot, 'src', 'data', 'practica', 'series')
 // Suben cuando el contenido aterriza, nunca bajan. Miden regresión —que no desaparezca lo
 // publicado—, no deuda: poner aquí un número mayor que lo escrito deja el build en rojo.
 // A2 pasa a 6 en cuanto las seis series estén escritas y validadas.
-const EXPECTED_SERIES = { a1: 5, a2: 6, b1: 6 }
+const EXPECTED_SERIES = { a1: 5, a2: 6, b1: 7 }
 const EXPECTED_EPISODES = 20
 const VERBOSE = process.argv.includes('--verbose')
 
@@ -64,13 +64,70 @@ const LEMMA_EXCEPTIONS = new Map([
 const CJK = /[぀-ヿ一-鿿가-힯]/u
 /** Alfabetos que nunca deben aparecer dentro de un campo `romanization`. */
 const NON_LATIN = /[぀-ヿ㐀-鿿가-힯Ѐ-ӿ]/u
-const ARTICLES = new Set(['le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'l', 'o', 'a', 'os', 'as', 'um', 'uma', 'en', 'no', 'na'])
+/**
+ * Artículos que no cuentan al comprobar si una palabra clave se oye.
+ *
+ * El alemán obliga a ampliar la lista: sus palabras clave se declaran con artículo —«der
+ * Absender», «die Kiste»— porque el género es parte de lo que hay que aprender, y sin esta
+ * entrada la comprobación exigiría oír además la forma exacta «der», que en el episodio
+ * puede aparecer declinada como «dem» o «den», o no aparecer.
+ */
+const ARTICLES = new Set([
+  'le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'l', 'o', 'a', 'os', 'as', 'um', 'uma', 'en', 'no', 'na',
+  'der', 'die', 'das', 'dem', 'den', 'ein', 'eine', 'einen', 'einem', 'einer',
+])
+
+/** Pronombres reflexivos: van en el lema del diccionario, pero en el audio se oyen declinados. */
+const DE_REFLEXIVE = new Set(['sich', 'mich', 'dich', 'uns', 'euch'])
+/** Prefijos separables frecuentes, para reconocer «aufgestellt» partiendo de «aufstellen». */
+const DE_PREFIXES = ['zurück', 'heraus', 'herein', 'hinaus', 'wieder', 'durch', 'hoch', 'über', 'unter', 'auf', 'aus', 'ein', 'mit', 'nach', 'vor', 'weg', 'los', 'ab', 'an', 'um', 'zu']
+
+/**
+ * Audibilidad en alemán, donde la regla general —«flexionar solo añade sufijos»— es falsa.
+ *
+ * Medido sobre la primera pasada de aleman-b1-series.ts: 17 palabras clave marcadas como
+ * inaudibles se oían perfectamente. El fallo no estaba en el contenido sino en el criterio,
+ * y son tres mecanismos, no uno:
+ *
+ *  - el participio mete «ge» DENTRO de la palabra: fegen → gefegt, aufstellen → aufgestellt;
+ *  - el reflexivo se declina: «sich erinnern» se oye «ich erinnere mich»;
+ *  - la raíz cambia de vocal: vergessen → vergisst, ausbleiben → ausblieben.
+ *
+ * Contra los dos primeros hay regla; contra el tercero solo una raíz más corta (40 % en vez
+ * del 60 % del resto de lenguas). Eso afloja el filtro, así que se comprobó que sigue cazando
+ * lo que tiene que cazar: «auftreten» declarada en un episodio donde nadie actúa.
+ *
+ * Lo que NO se acepta: el prefijo suelto al final de la frase («hört … zu» para «zuhören»).
+ * Admitirlo daba por buena «auftreten» porque el episodio decía «Treffpunkt» y «auf» por
+ * separado. Cuando el prefijo se separa de verdad, la palabra clave se declara en la forma
+ * que se oye y el infinitivo va en la glosa.
+ */
+function isAudibleGerman(keyword, tokens) {
+  const words = keyword.toLowerCase().normalize('NFC').split(/\s+/u)
+    .filter((word) => word.length > 1 && !ARTICLES.has(word) && !DE_REFLEXIVE.has(word))
+  if (!words.length) return false
+
+  return words.every((word) => {
+    const stem = word.slice(0, Math.max(3, Math.ceil(word.length * 0.4)))
+    const prefix = DE_PREFIXES.find((item) => word.startsWith(item) && word.length > item.length + 2)
+    const base = prefix ? word.slice(prefix.length) : ''
+    const baseStem = base.slice(0, Math.max(3, Math.ceil(base.length * 0.4)))
+
+    return tokens.some((token) => {
+      if (token.startsWith(stem)) return true
+      if (token.startsWith('ge') && token.slice(2).startsWith(stem)) return true
+      if (!prefix || !token.startsWith(prefix)) return false
+      return token.slice(prefix.length).replace(/^ge/u, '').startsWith(baseStem)
+    })
+  })
+}
 
 /** ¿Se oye la palabra clave en el episodio, aunque sea flexionada? */
-function isAudible(keyword, text, tokens) {
+function isAudible(keyword, text, tokens, lang) {
   const key = keyword.toLowerCase().normalize('NFC')
   const body = text.toLowerCase().normalize('NFC')
   if (body.includes(key)) return true
+  if (lang === 'aleman') return isAudibleGerman(keyword, tokens)
 
   // ko/ja: los morfemas de contenido son de 1-3 caracteres y flexionan por sufijo.
   if (CJK.test(keyword)) {
@@ -279,7 +336,7 @@ function validateSeries(series, file, lang, level) {
     }
     const tokens = cleanFromTurns.toLowerCase().normalize('NFC').split(/[^\p{L}\p{N}]+/u).filter(Boolean)
     for (const keyword of episode.keywords) {
-      if (isAudible(keyword.target, cleanFromTurns, tokens)) continue
+      if (isAudible(keyword.target, cleanFromTurns, tokens, lang)) continue
       const exception = LEMMA_EXCEPTIONS.get(`${lang}|${episode.order}|${keyword.target}`)
       if (!exception) {
         errors.push(`${label}: la palabra clave «${keyword.target}» no se oye en el audio`)

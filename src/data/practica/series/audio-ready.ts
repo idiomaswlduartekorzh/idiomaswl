@@ -33,6 +33,7 @@ export const A2_AUDIO_READY = {
 
 /** Mismo contrato para B1. */
 export const B1_AUDIO_READY = {
+  aleman: true,
   italiano: true,
   frances: true,
   portugues: true,
