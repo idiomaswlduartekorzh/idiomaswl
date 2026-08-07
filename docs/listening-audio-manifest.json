@@ -1529,6 +1529,493 @@
         "style": 0.15,
         "use_speaker_boost": true
       }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 1,
+      "id": "pt-b1-01-o-email-da-produtora",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-01.mp3",
+      "caracteres": 660,
+      "duracion_real": 49.1,
+      "caracteres_por_segundo": 13.44,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 2,
+      "id": "pt-b1-02-ninguem-perguntou-a-autora",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-02.mp3",
+      "caracteres": 635,
+      "duracion_real": 42.28,
+      "caracteres_por_segundo": 15.02,
+      "duracion_declarada_previa": 67,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Seu Antônio": "CPYJeGOY3LvpmBJRlYK9"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 3,
+      "id": "pt-b1-03-o-que-eu-faria",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-03.mp3",
+      "caracteres": 670,
+      "duracion_real": 47.15,
+      "caracteres_por_segundo": 14.21,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 4,
+      "id": "pt-b1-04-embora-o-telhado-esteja-pingando",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-04.mp3",
+      "caracteres": 706,
+      "duracion_real": 54.58,
+      "caracteres_por_segundo": 12.93,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Seu Antônio": "CPYJeGOY3LvpmBJRlYK9",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 5,
+      "id": "pt-b1-05-quando-ela-voltar",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-05.mp3",
+      "caracteres": 586,
+      "duracion_real": 45.11,
+      "caracteres_por_segundo": 12.99,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 6,
+      "id": "pt-b1-06-a-ligacao-da-beatriz",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-06.mp3",
+      "caracteres": 645,
+      "duracion_real": 45.76,
+      "caracteres_por_segundo": 14.1,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 7,
+      "id": "pt-b1-07-nao-foi-isso-que-eu-disse",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-07.mp3",
+      "caracteres": 613,
+      "duracion_real": 52.22,
+      "caracteres_por_segundo": 11.74,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 8,
+      "id": "pt-b1-08-se-eu-tivesse-vinte-e-dois-anos",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-08.mp3",
+      "caracteres": 608,
+      "duracion_real": 49.34,
+      "caracteres_por_segundo": 12.32,
+      "duracion_declarada_previa": 67,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Seu Antônio": "CPYJeGOY3LvpmBJRlYK9"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 9,
+      "id": "pt-b1-09-como-se-o-predio-fosse-deles",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-09.mp3",
+      "caracteres": 630,
+      "duracion_real": 44.74,
+      "caracteres_por_segundo": 14.08,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Seu Antônio": "CPYJeGOY3LvpmBJRlYK9",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 10,
+      "id": "pt-b1-10-ela-pediu-que-a-gente-fosse-junto",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-10.mp3",
+      "caracteres": 643,
+      "duracion_real": 45.2,
+      "caracteres_por_segundo": 14.22,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 11,
+      "id": "pt-b1-11-as-tres-condicoes",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-11.mp3",
+      "caracteres": 643,
+      "duracion_real": 55.09,
+      "caracteres_por_segundo": 11.67,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 12,
+      "id": "pt-b1-12-os-motivos-de-cada-um",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-12.mp3",
+      "caracteres": 646,
+      "duracion_real": 48.96,
+      "caracteres_por_segundo": 13.19,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 13,
+      "id": "pt-b1-13-o-que-o-email-nao-dizia",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-13.mp3",
+      "caracteres": 624,
+      "duracion_real": 53.56,
+      "caracteres_por_segundo": 11.65,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 14,
+      "id": "pt-b1-14-a-assembleia-de-sabado",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-14.mp3",
+      "caracteres": 607,
+      "duracion_real": 50.22,
+      "caracteres_por_segundo": 12.09,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Seu Antônio": "CPYJeGOY3LvpmBJRlYK9"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 15,
+      "id": "pt-b1-15-a-resposta-que-nao-chegava",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-15.mp3",
+      "caracteres": 653,
+      "duracion_real": 50.26,
+      "caracteres_por_segundo": 12.99,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 16,
+      "id": "pt-b1-16-duas-condicoes-e-meia",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-16.mp3",
+      "caracteres": 630,
+      "duracion_real": 52.73,
+      "caracteres_por_segundo": 11.95,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 17,
+      "id": "pt-b1-17-a-decisao-da-celia",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-17.mp3",
+      "caracteres": 560,
+      "duracion_real": 52.82,
+      "caracteres_por_segundo": 10.6,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 18,
+      "id": "pt-b1-18-a-noticia-da-sofia",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-18.mp3",
+      "caracteres": 585,
+      "duracion_real": 45.2,
+      "caracteres_por_segundo": 12.94,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 19,
+      "id": "pt-b1-19-tres-dias-de-filmagem",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-19.mp3",
+      "caracteres": 653,
+      "duracion_real": 57.74,
+      "caracteres_por_segundo": 11.31,
+      "duracion_declarada_previa": 67,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Seu Antônio": "CPYJeGOY3LvpmBJRlYK9",
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "portugues",
+      "episodio": 20,
+      "id": "pt-b1-20-o-patio-continua",
+      "piloto": false,
+      "archivo": "public/audio/portugues/b1/listening-20.mp3",
+      "caracteres": 586,
+      "duracion_real": 52.77,
+      "caracteres_por_segundo": 11.1,
+      "duracion_declarada_previa": 65,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.92,
+      "voces": {
+        "Todos": "GNbTZ3mnlvxUSlnd35iL",
+        "Dona Célia": "8EY2gK6oUxZCDZAlvUpZ",
+        "Nina": "3eGB8TCZcvWDO8AHnwlp",
+        "Tiago": "nuqSYpkCikIPhZElRSCJ",
+        "Seu Antônio": "CPYJeGOY3LvpmBJRlYK9",
+        "Sofía": "GNbTZ3mnlvxUSlnd35iL"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
     }
   ]
 }

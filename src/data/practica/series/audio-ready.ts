@@ -15,7 +15,7 @@
  */
 export const A1_AUDIO_READY = {
   frances: false,
-  portugues: false,
+  portugues: true,
   coreano: true,
   japones: true,
   ruso: true,
@@ -25,7 +25,7 @@ export const A1_AUDIO_READY = {
 export const A2_AUDIO_READY = {
   italiano: false,
   frances: false,
-  portugues: false,
+  portugues: true,
   coreano: true,
   japones: true,
   ruso: true,
@@ -35,7 +35,7 @@ export const A2_AUDIO_READY = {
 export const B1_AUDIO_READY = {
   italiano: false,
   frances: false,
-  portugues: false,
+  portugues: true,
   coreano: true,
   japones: true,
   ruso: true,

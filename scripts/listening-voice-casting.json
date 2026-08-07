@@ -208,36 +208,47 @@
           "turnos": 1,
           "papel": "Coro de vecinos en el cumpleaños (episodio 20)",
           "perfil_de_voz": "Coro: la misma línea generada con tres voces distintas y mezclada en un solo turno",
-          "mezclar_con": [
-            "yG4Uc56cLYQyZFnWaYv2",
-            "MORRgNRPjASocDhPs2IB"
-          ],
-          "voz": "Coro: se genera con 3 voces del reparto y se mezclan",
+          "voz": "Coro: se genera con 3 voces del reparto y se mezclan · Una sola voz: mezclar varias diciendo la misma línea impide entenderla",
           "biblioteca": {
             "public_owner_id": "29953a0c704089a7251918e3bac7696c96c21e47bb5986e11993f670629cad45",
             "voice_id": "mNu8EQcIlFZdOJs7yfhe"
           }
         },
         "Monsieur Bertin": {
-          "voice_id": "",
+          "voice_id": "t2969wgUwHbBoVCZNHRU",
           "turnos": 36,
           "papel": "Panadero mayor, dueño de la panadería del barrio (A2 + B1)",
           "perfil_de_voz": "Hombre mayor, voz grave y seca, frases cortas, afable sin sonreír",
-          "buscar": "voz masculina francesa mayor, grave, parisina o neutra; es el segundo papel más largo del francés"
+          "buscar": "voz masculina francesa mayor, grave, parisina o neutra; es el segundo papel más largo del francés",
+          "biblioteca": {
+            "public_owner_id": "ad9dd174639a9220c826a4574b1348c16cffe2aa6e63a41516b096e7e9a02466",
+            "voice_id": "t2969wgUwHbBoVCZNHRU"
+          },
+          "voz": "Zion Aquila — «Deep, Aged & Warm»: grave y mayor, como pide el papel. Lo seco del personaje lo pone el guion, no la voz"
         },
         "Claire": {
-          "voice_id": "",
+          "voice_id": "EMuO6fFLrXKOryHzij6K",
           "turnos": 20,
           "papel": "Voz al teléfono desde Marsella (A2 + B1)",
           "perfil_de_voz": "Mujer mayor, voz cálida y pausada, acento del sur de Francia muy leve",
-          "buscar": "voz femenina francesa madura, cálida; el acento del sur es preferible pero no imprescindible"
+          "buscar": "voz femenina francesa madura, cálida; el acento del sur es preferible pero no imprescindible",
+          "biblioteca": {
+            "public_owner_id": "0d357fe193958d2ae321dbd731cdbbec967b8b7c6e820f8eaad75a0aa7dc647a",
+            "voice_id": "EMuO6fFLrXKOryHzij6K"
+          },
+          "voz": "Grandma Clo — «Warm Storyteller», femenina mayor: encaja con «cálida y pausada». Sin acento del sur, que era preferible pero no imprescindible"
         },
         "Madame Delcourt": {
-          "voice_id": "",
+          "voice_id": "9UK7PgAsdvmlErBPenNb",
           "turnos": 12,
           "papel": "Responsable de desarrollo de un grupo de panaderías (B1)",
           "perfil_de_voz": "Mujer adulta, francés muy neutro y profesional, ritmo medido, cortesía constante",
-          "buscar": "voz femenina francesa adulta, neutra y corporativa; debe sonar distinta de Madame Martin"
+          "buscar": "voz femenina francesa adulta, neutra y corporativa; debe sonar distinta de Madame Martin",
+          "biblioteca": {
+            "public_owner_id": "04b25b643fbdfe70ec2d7155d86efcfcc0293dc24bf538de6a3a776305553570",
+            "voice_id": "9UK7PgAsdvmlErBPenNb"
+          },
+          "voz": "Johanna (la misma de Madame Martin) — adulta y clara. Libre en los 3 episodios de Delcourt"
         }
       }
     },
@@ -412,22 +423,23 @@
           "turnos": 1,
           "papel": "Coro de vecinos en la fiesta (episodio 20)",
           "perfil_de_voz": "Coro: la misma línea generada con tres voces distintas y mezclada en un solo turno",
-          "mezclar_con": [
-            "nuqSYpkCikIPhZElRSCJ",
-            "8EY2gK6oUxZCDZAlvUpZ"
-          ],
-          "voz": "Coro: se genera con 3 voces del reparto y se mezclan",
+          "voz": "Coro: se genera con 3 voces del reparto y se mezclan · Una sola voz: mezclar varias diciendo la misma línea impide entenderla",
           "biblioteca": {
             "public_owner_id": "ab7791b7a999ef6451606e57faaa97798406504821af58ce532dfc502db6541c",
             "voice_id": "GNbTZ3mnlvxUSlnd35iL"
           }
         },
         "Seu Antônio": {
-          "voice_id": "",
+          "voice_id": "CPYJeGOY3LvpmBJRlYK9",
           "turnos": 39,
           "papel": "Hermano de Dona Célia, vecino jubilado y dueño de Pingo (A2 + B1)",
           "perfil_de_voz": "Hombre mayor, voz grave y pausada, tono nostálgico y afectuoso",
-          "buscar": "voz masculina brasileña mayor, grave y pausada; comparte escena con Tiago, así que no vale reutilizarla"
+          "buscar": "voz masculina brasileña mayor, grave y pausada; comparte escena con Tiago, así que no vale reutilizarla",
+          "biblioteca": {
+            "public_owner_id": "c6f7bbc2e650c7819acd0e5663857b01a16fdbef5867d70071c718b540990abd",
+            "voice_id": "CPYJeGOY3LvpmBJRlYK9"
+          },
+          "voz": "Adriano Ferreira — masculina brasileña, descrita como «deep»: encaja con «voz grave y pausada». Ninguna voz del reparto estaba libre en sus 15 episodios"
         }
       }
     },
@@ -593,8 +605,8 @@
           "turnos": 6,
           "papel": "Coro de vecinos del barrio (A2 ep20, B1 ep10 y ep20)",
           "perfil_de_voz": "Coro: la misma línea generada con tres voces distintas y mezclada en un solo turno",
-          "mezclar_con": [],
-          "buscar": "No necesita voz propia: se rellena con los voice_id de Valeria, Matteo y Signora Lucia una vez asignados"
+          "buscar": "No necesita voz propia: se rellena con los voice_id de Valeria, Matteo y Signora Lucia una vez asignados",
+          "voz": "Una sola voz: mezclar varias diciendo la misma línea impide entenderla"
         }
       }
     }

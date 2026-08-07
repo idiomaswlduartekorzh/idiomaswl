@@ -45,7 +45,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     ep({
-      id: 'pt-a2-01-a-foto-esquecida', order: 1, title: 'A foto esquecida', titleEs: 'La foto olvidada', duration: 55,
+      id: 'pt-a2-01-a-foto-esquecida', order: 1, title: 'A foto esquecida', titleEs: 'La foto olvidada', duration: 39,
       characters: ['Dona Célia', 'Sofía', 'Tiago', 'Nina'], location: 'Depósito del edificio', objective: 'Entender una acción pasada concluida y su consecuencia inmediata.',
       grammar: ['pretérito perfeito', 'conectores: mas, porque, então'],
       keywords: [{ target: 'foto', es: 'foto' }, { target: 'antiga', es: 'antigua' }, { target: 'pátio', es: 'patio' }, { target: 'muro', es: 'muro' }, { target: 'colorido', es: 'de colores' }, { target: 'pintou', es: 'pintó' }],
@@ -70,7 +70,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['encontrei', 'pintou', 'foi embora', 'achamos'], newVocabulary: ['muro', 'colorido', 'por cima'], possibleDifficulties: ['distinguir «achamos» pasado de presente'], continuity: 'Arranca justo después de la fiesta de seu Antônio que cerró la temporada 1: guardan en el depósito las decoraciones del episodio 19 de A1.', pronunciationRisks: ['direitinho', 'colorido'], recommendedChanges: ['En el guion de TTS escribir «Sofia» sin tilde: una voz pt-BR silabea «So-fí-a».'] },
     }),
     ep({
-      id: 'pt-a2-02-como-era-o-patio', order: 2, title: 'Como era o pátio', titleEs: 'Cómo era el patio', duration: 55,
+      id: 'pt-a2-02-como-era-o-patio', order: 2, title: 'Como era o pátio', titleEs: 'Cómo era el patio', duration: 33,
       characters: ['Sofía', 'Seu Antônio', 'Tiago'], location: 'Patio del edificio', objective: 'Reconocer descripciones del pasado con imperfeito.',
       grammar: ['pretérito imperfeito', 'pretérito perfeito (reciclado)'],
       keywords: [{ target: 'antigamente', es: 'antiguamente' }, { target: 'era', es: 'era' }, { target: 'tinha', es: 'tenía / había' }, { target: 'jardim', es: 'jardín' }, { target: 'brincavam', es: 'jugaban' }, { target: 'árvore', es: 'árbol' }],
@@ -95,7 +95,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['era', 'tinha', 'brincavam', 'passava'], newVocabulary: ['antigamente', 'jardim', 'árvore', 'época'], possibleDifficulties: ['imperfeito sin sujeto explícito en «Brincavam sim»'], continuity: 'Responde a la pregunta que Dona Célia esquivó en el episodio 1; seu Antônio, el homenajeado de la temporada 1, habla por primera vez.', pronunciationRisks: ['lindíssimo', 'botânica'], recommendedChanges: ['Escribir «Seu Antônio» con mayúscula en el guion de TTS para que suene como tratamiento y no como posesivo átono.'] },
     }),
     ep({
-      id: 'pt-a2-03-quem-pintou-o-muro', order: 3, title: 'Quem pintou o muro?', titleEs: '¿Quién pintó el muro?', duration: 55,
+      id: 'pt-a2-03-quem-pintou-o-muro', order: 3, title: 'Quem pintou o muro?', titleEs: '¿Quién pintó el muro?', duration: 37,
       characters: ['Nina', 'Sofía', 'Tiago'], location: 'Café de Tiago', objective: 'Distinguir lo que pasó una vez de lo que era habitual.',
       grammar: ['contraste perfeito / imperfeito', 'conectores: por isso, e depois'],
       keywords: [{ target: 'moradores', es: 'vecinos' }, { target: 'ninguém', es: 'nadie' }, { target: 'lembra', es: 'recuerda' }, { target: 'pintou', es: 'pintó' }, { target: 'branco', es: 'blanco' }, { target: 'segredos', es: 'secretos' }],
@@ -120,7 +120,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['falei', 'era', 'pintou', 'mudou', 'vamos perguntar'], newVocabulary: ['moradores', 'assunto', 'combinado'], possibleDifficulties: ['alternancia rápida entre era y pintou dentro de la misma frase'], continuity: 'Retoma la reacción evasiva de Dona Célia del episodio 1 y la conecta con los secretos que ya guardaba en la temporada 1.', pronunciationRisks: ['ninguém', 'certeza'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-04-a-lupa-da-nina', order: 4, title: 'A lupa da Nina', titleEs: 'La lupa de Nina', duration: 56,
+      id: 'pt-a2-04-a-lupa-da-nina', order: 4, title: 'A lupa da Nina', titleEs: 'La lupa de Nina', duration: 36,
       characters: ['Nina', 'Sofía', 'Tiago'], location: 'Apartamento de Sofía', objective: 'Entender quién da y quién recibe con pronombres átonos.',
       grammar: ['pronomes oblíquos: me, te', 'imperativo de vocês (reciclado)'],
       keywords: [{ target: 'lupa', es: 'lupa' }, { target: 'canto', es: 'esquina' }, { target: 'letras', es: 'letras' }, { target: 'iniciais', es: 'iniciales' }, { target: 'assinatura', es: 'firma' }, { target: 'empresta', es: 'presta' }],
@@ -145,7 +145,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['me empresta', 'te empresto', 'me devolve', 'para você'], newVocabulary: ['lupa', 'canto', 'assinatura'], possibleDifficulties: ['«me devolve amanhã» es una petición de Nina, no una promesa suya'], continuity: 'Analiza de cerca la foto hallada en el episodio 1 y convierte el muro en un caso con autor.', pronunciationRisks: ['lupa', 'iniciais'], recommendedChanges: ['Locutar «um cê e um eme» como dos letras separadas, con pausa breve entre ellas.', 'En el guion de TTS escribir «Sofia» sin tilde: una voz pt-BR silabea «So-fí-a».'] },
     }),
     ep({
-      id: 'pt-a2-05-o-muro-e-menor-agora', order: 5, title: 'O muro é menor agora', titleEs: 'El muro es más pequeño ahora', duration: 56,
+      id: 'pt-a2-05-o-muro-e-menor-agora', order: 5, title: 'O muro é menor agora', titleEs: 'El muro es más pequeño ahora', duration: 32,
       characters: ['Sofía', 'Seu Antônio', 'Tiago'], location: 'Patio del edificio', objective: 'Comparar el presente con el pasado.',
       grammar: ['comparativos: mais/menos... do que, tão... quanto', 'imperfeito (reciclado)'],
       keywords: [{ target: 'maior', es: 'más grande' }, { target: 'menor', es: 'más pequeño' }, { target: 'alto', es: 'alto' }, { target: 'largo', es: 'ancho' }, { target: 'menos', es: 'menos' }, { target: 'quanto', es: 'que (en «tão... quanto»)' }],
@@ -170,7 +170,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['maior do que', 'mais alto', 'menos espaço', 'tão importante quanto'], newVocabulary: ['largo', 'pedaço', 'garagem'], possibleDifficulties: ['«largo» significa ancho, no largo'], continuity: 'Explica por qué el patio del episodio 2 ya no coincide con la foto del episodio 1 y planta el dato que motiva los episodios 9 y 10: un trozo del muro quedó dentro del depósito cuando construyeron el garaje.', pronunciationRisks: ['garagem', 'construíram'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-06-uma-mensagem-no-grupo', order: 6, title: 'Uma mensagem no grupo', titleEs: 'Un mensaje en el grupo', duration: 55,
+      id: 'pt-a2-06-uma-mensagem-no-grupo', order: 6, title: 'Uma mensagem no grupo', titleEs: 'Un mensaje en el grupo', duration: 39,
       characters: ['Nina', 'Sofía', 'Dona Célia'], location: 'Portería del edificio', objective: 'Comprender planes inmediatos y reacciones.',
       grammar: ['futuro com ir + infinitivo', 'conectores: porque, então'],
       keywords: [{ target: 'grupo', es: 'grupo' }, { target: 'enviei', es: 'envié' }, { target: 'vizinhos', es: 'vecinos' }, { target: 'resposta', es: 'respuesta' }, { target: 'confusão', es: 'lío' }, { target: 'descobrir', es: 'descubrir' }],
@@ -195,7 +195,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['vou escrever', 'vai reconhecer', 'vamos esperar', 'vou responder'], newVocabulary: ['enviar', 'resposta', 'confusão'], possibleDifficulties: ['«vamos» como futuro y como movimiento'], continuity: 'Reactiva el grupo de mensajes que en la temporada 1 destapó el audio equivocado.', pronunciationRisks: ['confusão', 'vizinhos'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-07-antes-aqui-era-uma-padaria', order: 7, title: 'Antes aqui era uma padaria', titleEs: 'Antes aquí había una panadería', duration: 56,
+      id: 'pt-a2-07-antes-aqui-era-uma-padaria', order: 7, title: 'Antes aqui era uma padaria', titleEs: 'Antes aquí había una panadería', duration: 34,
       characters: ['Seu Antônio', 'Tiago', 'Sofía'], location: 'Café de Tiago', objective: 'Situar hechos en una fecha y describir el entorno de entonces.',
       grammar: ['imperfeito narrativo', 'datas e anos'],
       keywords: [{ target: 'padaria', es: 'panadería' }, { target: 'fechou', es: 'cerró' }, { target: 'cheiro', es: 'olor' }, { target: 'pão', es: 'pan' }, { target: 'época', es: 'época' }, { target: 'data', es: 'fecha' }],
@@ -220,7 +220,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['era', 'tinha', 'fechou', 'demorou', 'perdeu'], newVocabulary: ['padaria', 'cheiro', 'virar (transformar-se)'], possibleDifficulties: ['cadena numérica del año'], continuity: 'El café de Tiago, escenario habitual desde la temporada 1, resulta ser anterior a la historia del mural.', pronunciationRisks: ['padaria', 'mil novecentos e oitenta e cinco'], recommendedChanges: ['Locutar el año con una coma antes de la cifra y velocidad reducida: es la respuesta de una pregunta de detalle.'] },
     }),
     ep({
-      id: 'pt-a2-08-dona-celia-muda-de-assunto', order: 8, title: 'Dona Célia muda de assunto', titleEs: 'Dona Célia cambia de tema', duration: 56,
+      id: 'pt-a2-08-dona-celia-muda-de-assunto', order: 8, title: 'Dona Célia muda de assunto', titleEs: 'Dona Célia cambia de tema', duration: 41,
       characters: ['Sofía', 'Dona Célia', 'Tiago', 'Nina'], location: 'Pasillo del edificio', objective: 'Seguir a quién se refiere cada pronombre en una conversación.',
       grammar: ['pronomes oblíquos: nos, te', 'conectores: mesmo assim, desde'],
       keywords: [{ target: 'anteontem', es: 'anteayer' }, { target: 'evitando', es: 'evitando' }, { target: 'nervosa', es: 'nerviosa' }, { target: 'corredor', es: 'pasillo' }, { target: 'desculpa', es: 'perdón' }, { target: 'contar', es: 'contar' }],
@@ -245,7 +245,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['te perguntar', 'nos disse', 'está nos evitando', 'para vocês'], newVocabulary: ['anteontem', 'brava', 'corredor'], possibleDifficulties: ['«nos» delante y detrás del verbo'], continuity: 'Suma una segunda evasiva a la del episodio 6 y prepara la petición formal del episodio siguiente.', pronunciationRisks: ['anteontem', 'nervosa'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-09-um-pedido-educado', order: 9, title: 'Um pedido educado', titleEs: 'Una petición educada', duration: 57,
+      id: 'pt-a2-09-um-pedido-educado', order: 9, title: 'Um pedido educado', titleEs: 'Una petición educada', duration: 43,
       characters: ['Sofía', 'Dona Célia', 'Tiago'], location: 'Recepción del edificio', objective: 'Reconocer fórmulas de cortesía para pedir permiso.',
       grammar: ['condicional de cortesia: poderia, gostaria, seria', 'tratamento formal: a senhora', 'imperativo de vocês'],
       keywords: [{ target: 'poderia', es: 'podría' }, { target: 'gostaria', es: 'me gustaría' }, { target: 'seria', es: 'sería' }, { target: 'chave', es: 'llave' }, { target: 'prateleira', es: 'estante' }, { target: 'devolvam', es: 'devuelvan' }],
@@ -270,7 +270,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['poderia', 'gostaria', 'gostaríamos', 'seria possível', 'peguem/devolvam'], newVocabulary: ['motivo', 'mexer', 'minutinhos'], possibleDifficulties: ['gostaria + de + infinitivo', 'alternancia entre «a senhora» en la petición y «você» en el resto'], continuity: 'Recupera la llave azul del depósito, que en la temporada 1 guardaba las decoraciones, y da el motivo de la visita: el trozo de muro que quedó dentro del depósito en el episodio 5.', pronunciationRisks: ['gostaríamos', 'prateleira'], recommendedChanges: ['«me devolvam ainda hoje» lo dice quien presta la llave: mantener el énfasis en «me».', 'En el guion de TTS escribir «Sofia» sin tilde: una voz pt-BR silabea «So-fí-a».'] },
     }),
     ep({
-      id: 'pt-a2-10-atras-da-prateleira', order: 10, title: 'Atrás da prateleira', titleEs: 'Detrás del estante', duration: 56,
+      id: 'pt-a2-10-atras-da-prateleira', order: 10, title: 'Atrás da prateleira', titleEs: 'Detrás del estante', duration: 40,
       characters: ['Tiago', 'Nina', 'Sofía'], location: 'Depósito del edificio', objective: 'Ordenar acciones simultáneas y sucesivas.',
       grammar: ['conectores: enquanto, depois que, assim que, ou seja', 'futuro do subjuntivo (reconhecimento)'],
       keywords: [{ target: 'prateleira', es: 'estante' }, { target: 'manchas', es: 'manchas' }, { target: 'tinta', es: 'pintura' }, { target: 'escondido', es: 'escondido' }, { target: 'esponja', es: 'esponja' }, { target: 'permissão', es: 'permiso' }],
@@ -295,7 +295,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['enquanto', 'depois que', 'assim que', 'ou seja'], newVocabulary: ['empurrar', 'mancha', 'esponja'], possibleDifficulties: ['«assim que» significa en cuanto, no así que'], continuity: 'Usa la llave conseguida en el episodio 9 y cierra la pista del episodio 5: la pared del depósito es el mismo muro del patio, así que el mural sobrevive bajo el blanco.', pronunciationRisks: ['prateleira', 'permissão'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-11-a-lata-de-tinta', order: 11, title: 'A lata de tinta', titleEs: 'La lata de pintura', duration: 56,
+      id: 'pt-a2-11-a-lata-de-tinta', order: 11, title: 'A lata de tinta', titleEs: 'La lata de pintura', duration: 35,
       characters: ['Nina', 'Seu Antônio', 'Sofía'], location: 'Depósito del edificio', objective: 'Entender cuánto tiempo hace que algo ocurrió.',
       grammar: ['expressões de tempo: faz / há', 'imperfeito e perfeito (reciclados)'],
       keywords: [{ target: 'lata', es: 'lata' }, { target: 'tinta', es: 'pintura' }, { target: 'etiqueta', es: 'etiqueta' }, { target: 'data', es: 'fecha' }, { target: 'domingos', es: 'domingos' }, { target: 'promessa', es: 'promesa' }],
@@ -320,7 +320,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['achei', 'faz quarenta anos', 'pintava', 'prometi'], newVocabulary: ['lata', 'etiqueta', 'rosto'], possibleDifficulties: ['«faz» impersonal frente a «faz» del verbo fazer'], continuity: 'Conecta el año 1985 del episodio 7 con la pintura hallada en el episodio 10.', pronunciationRisks: ['etiqueta', 'promessa'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-12-talvez-alguem-saiba', order: 12, title: 'Talvez alguém saiba', titleEs: 'Quizá alguien lo sepa', duration: 55,
+      id: 'pt-a2-12-talvez-alguem-saiba', order: 12, title: 'Talvez alguém saiba', titleEs: 'Quizá alguien lo sepa', duration: 35,
       characters: ['Sofía', 'Nina', 'Tiago'], location: 'Café de Tiago', objective: 'Reconocer duda, deseo y esperanza.',
       grammar: ['presente do subjuntivo: talvez, espero que, tomara que'],
       keywords: [{ target: 'talvez', es: 'quizá' }, { target: 'saiba', es: 'sepa' }, { target: 'espero', es: 'espero' }, { target: 'tomara', es: 'ojalá' }, { target: 'promessa', es: 'promesa' }, { target: 'papéis', es: 'papeles' }],
@@ -345,7 +345,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['talvez saiba', 'espero que mude', 'é importante que respeite', 'tomara que'], newVocabulary: ['duvidar', 'poeira', 'papéis'], possibleDifficulties: ['formas irregulares saiba y esteja'], continuity: 'Responde al silencio de seu Antônio del episodio 11 sin romper su promesa; el plan de buscar en la administración se resuelve en el episodio 14, donde Nina reconoce que allí no había nada.', pronunciationRisks: ['papéis', 'poeira'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-13-seu-antonio-lembra-de-tudo', order: 13, title: 'Seu Antônio lembra de tudo', titleEs: 'Seu Antônio se acuerda de todo', duration: 56,
+      id: 'pt-a2-13-seu-antonio-lembra-de-tudo', order: 13, title: 'Seu Antônio lembra de tudo', titleEs: 'Seu Antônio se acuerda de todo', duration: 32,
       characters: ['Seu Antônio', 'Sofía', 'Tiago'], location: 'Apartamento de seu Antônio', objective: 'Seguir el retrato de una persona en el pasado.',
       grammar: ['imperfeito narrativo', 'pronomes oblíquos (reciclados)'],
       keywords: [{ target: 'moça', es: 'chica' }, { target: 'pintava', es: 'pintaba' }, { target: 'morava', es: 'vivía' }, { target: 'estudava', es: 'estudiaba' }, { target: 'domingos', es: 'domingos' }, { target: 'iniciais', es: 'iniciales' }],
@@ -370,7 +370,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['pensei', 'decidi', 'pintava', 'morava', 'estudava', 'trabalhava'], newVocabulary: ['moça', 'esquina', 'o resto'], possibleDifficulties: ['tres imperfeitos encadenados en una sola frase'], continuity: 'Cumple a medias la esperanza del episodio 12 y devuelve la pregunta a las iniciales del episodio 4.', pronunciationRisks: ['moça', 'esquina'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-14-a-carta-dentro-do-livro', order: 14, title: 'A carta dentro do livro', titleEs: 'La carta dentro del libro', duration: 57,
+      id: 'pt-a2-14-a-carta-dentro-do-livro', order: 14, title: 'A carta dentro do livro', titleEs: 'La carta dentro del libro', duration: 38,
       characters: ['Nina', 'Sofía', 'Tiago'], location: 'Salón común del edificio', objective: 'Comparar pistas y elegir la más fuerte.',
       grammar: ['superlativo relativo: o/a mais', 'comparativos (reciclados)'],
       keywords: [{ target: 'carta', es: 'carta' }, { target: 'estante', es: 'estantería' }, { target: 'papel', es: 'papel' }, { target: 'assinatura', es: 'firma' }, { target: 'pista', es: 'pista' }, { target: 'agradecimento', es: 'agradecimiento' }],
@@ -395,7 +395,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['achei', 'tão antigo quanto', 'mais bonito do que', 'a mais forte', 'a mais recente'], newVocabulary: ['carta', 'frágil', 'agradecimento'], possibleDifficulties: ['distinguir comparativo de superlativo sin artículo audible'], continuity: 'Cierra el plan del episodio 12 (en la administración no había nada) y fecha la carta un año después de la lata del episodio 11: es la pista más reciente, no la más antigua. La carta va dirigida a C.M., no firmada por C.M., así que no contradice la confesión del episodio 18.', pronunciationRisks: ['frágil', 'agradecimento'], recommendedChanges: ['Marcar la cita leída por Nina con una pausa antes y después: es la voz de otra persona.'] },
     }),
     ep({
-      id: 'pt-a2-15-e-preciso-que-todos-ajudem', order: 15, title: 'É preciso que todos ajudem', titleEs: 'Hace falta que todos ayuden', duration: 56,
+      id: 'pt-a2-15-e-preciso-que-todos-ajudem', order: 15, title: 'É preciso que todos ajudem', titleEs: 'Hace falta que todos ayuden', duration: 38,
       characters: ['Sofía', 'Dona Célia', 'Nina', 'Tiago'], location: 'Salón común del edificio', objective: 'Entender condiciones y recomendaciones impersonales.',
       grammar: ['subjuntivo em expressões impessoais: é preciso que, é melhor que, duvido que'],
       keywords: [{ target: 'limpar', es: 'limpiar' }, { target: 'moradores', es: 'vecinos' }, { target: 'aprovem', es: 'aprueben' }, { target: 'reunião', es: 'reunión' }, { target: 'sábado', es: 'sábado' }, { target: 'chance', es: 'oportunidad' }],
@@ -420,7 +420,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['é preciso que aprovem', 'é preciso que ajudem', 'é melhor que expliquem', 'duvido que diga', 'espero que'], newVocabulary: ['aprovar', 'reunião', 'merecer'], possibleDifficulties: ['subjuntivo de dizer: diga'], continuity: 'Convierte el hallazgo del episodio 14 en un proyecto para todo el edificio; Dona Célia insinúa que ella también espera algo.', pronunciationRisks: ['reunião', 'expliquem'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-16-sabado-de-limpeza', order: 16, title: 'Sábado de limpeza', titleEs: 'Sábado de limpieza', duration: 57,
+      id: 'pt-a2-16-sabado-de-limpeza', order: 16, title: 'Sábado de limpeza', titleEs: 'Sábado de limpieza', duration: 35,
       characters: ['Nina', 'Tiago', 'Sofía', 'Seu Antônio'], location: 'Patio del edificio', objective: 'Repartir tareas y pedir cosas al grupo.',
       grammar: ['futuro com ir + infinitivo', 'imperativo de vocês com pronome'],
       keywords: [{ target: 'esponjas', es: 'esponjas' }, { target: 'luvas', es: 'guantes' }, { target: 'peixe', es: 'pez' }, { target: 'amarelo', es: 'amarillo' }, { target: 'devagar', es: 'despacio' }, { target: 'braço', es: 'brazo' }],
@@ -445,7 +445,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['vou começar', 'vou te ajudar', 'me deem', 'vai sair'], newVocabulary: ['luvas', 'firme', 'devagar'], possibleDifficulties: ['«me deem» es una petición, no una entrega'], continuity: 'Ejecuta el plan aprobado en la reunión del episodio 15 y recupera los peces que seu Antônio describió en el episodio 2.', pronunciationRisks: ['luvas', 'esponjas'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-17-o-mural-volta-a-aparecer', order: 17, title: 'O mural volta a aparecer', titleEs: 'El mural vuelve a aparecer', duration: 56,
+      id: 'pt-a2-17-o-mural-volta-a-aparecer', order: 17, title: 'O mural volta a aparecer', titleEs: 'El mural vuelve a aparecer', duration: 41,
       characters: ['Sofía', 'Nina', 'Tiago', 'Dona Célia'], location: 'Patio del edificio', objective: 'Describir un cambio progresivo.',
       grammar: ['cada vez mais', 'comparativos e imperfeito (reciclados)'],
       keywords: [{ target: 'cores', es: 'colores' }, { target: 'árvore', es: 'árbol' }, { target: 'claro', es: 'claro' }, { target: 'limparam', es: 'limpiaron' }, { target: 'quarenta', es: 'cuarenta' }, { target: 'história', es: 'historia' }],
@@ -470,7 +470,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['cada vez mais', 'limparam', 'faz quarenta anos', 'conhecia'], newVocabulary: ['quieta', 'inteiro', 'no meio'], possibleDifficulties: ['«conhecia» como confesión implícita'], continuity: 'La limpieza del episodio 16 destapa el mural completo y contradice el «não sei» del episodio 1.', pronunciationRisks: ['quarenta', 'inteira'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-18-ce-e-eme', order: 18, title: 'Um cê e um eme', titleEs: 'Una ce y una eme', duration: 57,
+      id: 'pt-a2-18-ce-e-eme', order: 18, title: 'Um cê e um eme', titleEs: 'Una ce y una eme', duration: 44,
       characters: ['Dona Célia', 'Sofía', 'Nina', 'Tiago'], location: 'Patio del edificio', objective: 'Entender una explicación del pasado con causa y consecuencia.',
       grammar: ['perfeito e imperfeito integrados', 'conectores: então, porque'],
       keywords: [{ target: 'pintei', es: 'pinté' }, { target: 'sozinha', es: 'sola' }, { target: 'reclamou', es: 'se quejó' }, { target: 'cores', es: 'colores' }, { target: 'tímida', es: 'tímida' }, { target: 'cobriu', es: 'cubrió' }],
@@ -495,7 +495,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['pintei', 'reclamou', 'dizia', 'atrapalhavam', 'era'], newVocabulary: ['sozinha', 'atrapalhar', 'tímida'], possibleDifficulties: ['perfeito y imperfeito alternando dentro de la misma explicación'], continuity: 'Cierra la pista de las iniciales del episodio 4, explica el silencio de los episodios 6 y 8 y sitúa la carta del episodio 14: iba dirigida a ella y ella la guardó dentro del libro donde Nina la encontró.', pronunciationRisks: ['atrapalhavam', 'Moreira'], recommendedChanges: ['Locutar «um cê e um eme» con pausa entre las dos letras antes del nombre completo.'] },
     }),
     ep({
-      id: 'pt-a2-19-seu-antonio-sempre-soube', order: 19, title: 'Seu Antônio sempre soube', titleEs: 'Seu Antônio siempre lo supo', duration: 57,
+      id: 'pt-a2-19-seu-antonio-sempre-soube', order: 19, title: 'Seu Antônio sempre soube', titleEs: 'Seu Antônio siempre lo supo', duration: 35,
       characters: ['Seu Antônio', 'Dona Célia', 'Sofía', 'Nina'], location: 'Patio del edificio', objective: 'Integrar pasado, deseo y propuesta.',
       grammar: ['revisão: perfeito, imperfeito e subjuntivo', 'conectores: menos, mas'],
       keywords: [{ target: 'segredo', es: 'secreto' }, { target: 'guardei', es: 'guardé' }, { target: 'irmãos', es: 'hermanos' }, { target: 'silêncio', es: 'silencio' }, { target: 'assinatura', es: 'firma' }, { target: 'metade', es: 'mitad' }],
@@ -520,7 +520,7 @@ export const PORTUGUESE_A2_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['guardei', 'conversávamos', 'prefiro que ria', 'proponho'], newVocabulary: ['silêncio', 'metade', 'propor'], possibleDifficulties: ['subjuntivo irregular de rir'], continuity: 'Enlaza la confesión del episodio 18 con la promesa que seu Antônio se negó a romper en el episodio 11.', pronunciationRisks: ['silêncio', 'irmãos'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a2-20-o-patio-de-novo', order: 20, title: 'O pátio de novo', titleEs: 'El patio otra vez', duration: 57,
+      id: 'pt-a2-20-o-patio-de-novo', order: 20, title: 'O pátio de novo', titleEs: 'El patio otra vez', duration: 42,
       characters: ['Todos', 'Dona Célia', 'Seu Antônio', 'Nina', 'Tiago', 'Sofía'], location: 'Patio del edificio', objective: 'Cerrar la historia con celebración, planes y deseos.',
       grammar: ['revisão geral: perfeito, imperfeito, futuro com ir, subjuntivo'],
       keywords: [{ target: 'parabéns', es: 'felicidades' }, { target: 'assinei', es: 'firmé' }, { target: 'cuidar', es: 'cuidar' }, { target: 'história', es: 'historia' }, { target: 'moradores', es: 'vecinos' }, { target: 'foto', es: 'foto' }],

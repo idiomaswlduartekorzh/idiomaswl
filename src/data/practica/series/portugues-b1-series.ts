@@ -43,7 +43,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     ep({
-      id: 'pt-b1-01-o-email-da-produtora', order: 1, title: 'O e-mail da produtora', titleEs: 'El e-mail de la productora', duration: 66,
+      id: 'pt-b1-01-o-email-da-produtora', order: 1, title: 'O e-mail da produtora', titleEs: 'El e-mail de la productora', duration: 49,
       characters: ['Nina', 'Sofía', 'Tiago'], location: 'Patio del edificio', objective: 'Seguir lo que otra persona escribió cuando alguien lo repite en estilo indirecto.',
       grammar: ['discurso indireto: presente → imperfeito', 'pronomes relativos: que'],
       keywords: [{ target: 'e-mail', es: 'correo electrónico' }, { target: 'produtora', es: 'productora' }, { target: 'comercial', es: 'anuncio' }, { target: 'pátio', es: 'patio' }, { target: 'condomínio', es: 'comunidad de vecinos' }, { target: 'filmagem', es: 'rodaje' }],
@@ -68,7 +68,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['disseram que queriam', 'disse que precisavam', 'que assinou o e-mail', 'que interessa ao condomínio'], newVocabulary: ['produtora', 'filmagem', 'ponto turístico'], possibleDifficulties: ['distinguir «queriam» (relato) de «querem» (cita directa)', 'la cifra «doze mil» llega en el último turno, sin repetición'], continuity: 'Arranca dos años después del final de la temporada 2: el mural que Dona Célia firmó en el patio es justamente lo que atrae a la productora. El grupo sigue siendo el mismo cuarteto.', pronunciationRisks: ['produtora', 'condomínio'], recommendedChanges: ['En el guion de TTS escribir «Sofia» sin tilde: una voz pt-BR silabea «So-fí-a».', 'Locutar «doze mil reais» algo más lento: es respuesta de una pregunta de detalle.'] },
     }),
     ep({
-      id: 'pt-b1-02-ninguem-perguntou-a-autora', order: 2, title: 'Ninguém perguntou à autora', titleEs: 'Nadie le preguntó a la autora', duration: 67,
+      id: 'pt-b1-02-ninguem-perguntou-a-autora', order: 2, title: 'Ninguém perguntou à autora', titleEs: 'Nadie le preguntó a la autora', duration: 42,
       characters: ['Sofía', 'Tiago', 'Seu Antônio'], location: 'Portería del edificio', objective: 'Reconocer relativos de lugar y una objeción introducida por «no entanto».',
       grammar: ['pronomes relativos: onde, quem', 'conectivo: no entanto'],
       keywords: [{ target: 'mural', es: 'mural' }, { target: 'assembleia', es: 'junta de vecinos' }, { target: 'quinta', es: 'jueves' }, { target: 'barulho', es: 'ruido' }, { target: 'condomínio', es: 'comunidad de vecinos' }, { target: 'irmã', es: 'hermana' }],
@@ -93,7 +93,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['a pessoa que pintou', 'quem decide é a assembleia', 'o mural onde eles querem filmar', 'no entanto'], newVocabulary: ['no entanto', 'assembleia', 'reparar em'], possibleDifficulties: ['«onde» y «que» son ambos gramaticales en la frase de Sofía; hay que oír cuál dijo', '«quem decide» sin antecedente explícito'], continuity: 'Responde al e-mail del episodio 1 recordando que la firma del mural, hallada al final de la temporada 2, es de Dona Célia. Pingo, el perro de seu Antônio desde la temporada 1, sigue durmiendo en el patio.', pronunciationRisks: ['assembleia', 'irmã'], recommendedChanges: ['Marcar una pausa clara antes de «No entanto» en los dos turnos donde aparece.'] },
     }),
     ep({
-      id: 'pt-b1-03-o-que-eu-faria', order: 3, title: 'O que eu faria com esse dinheiro', titleEs: 'Lo que yo haría con ese dinero', duration: 68,
+      id: 'pt-b1-03-o-que-eu-faria', order: 3, title: 'O que eu faria com esse dinheiro', titleEs: 'Lo que yo haría con ese dinero', duration: 47,
       characters: ['Tiago', 'Nina', 'Sofía'], location: 'Café de Tiago', objective: 'Entender planes hipotéticos y la consecuencia marcada por «portanto».',
       grammar: ['futuro do pretérito (condicional)', 'conectivo: portanto'],
       keywords: [{ target: 'dinheiro', es: 'dinero' }, { target: 'condomínio', es: 'comunidad de vecinos' }, { target: 'portanto', es: 'por lo tanto' }, { target: 'dono', es: 'dueño' }, { target: 'quarenta', es: 'cuarenta' }, { target: 'comercial', es: 'anuncio' }],
@@ -118,7 +118,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['faria', 'consertaria', 'compraria', 'não resolveriam', 'traria', 'portanto'], newVocabulary: ['balcão', 'caixa (do condomínio)', 'por enquanto'], possibleDifficulties: ['«resolveriam» y «resolveram» se diferencian por una sola sílaba átona', '«me pediu quarenta mil»: quien pide el dinero es el dueño, no Tiago'], continuity: 'Los doce mil reales del episodio 1 se convierten aquí en una tentación personal; la cifra del condominio no cambia, la que se añade es la del café: cuarenta mil.', pronunciationRisks: ['resolveriam', 'consertaria'], recommendedChanges: ['Separar bien «quarenta mil» (café) de «doze mil» (condominio): son dos cifras distintas en el mismo episodio.'] },
     }),
     ep({
-      id: 'pt-b1-04-embora-o-telhado-esteja-pingando', order: 4, title: 'Embora o telhado esteja pingando', titleEs: 'Aunque el tejado esté goteando', duration: 68,
+      id: 'pt-b1-04-embora-o-telhado-esteja-pingando', order: 4, title: 'Embora o telhado esteja pingando', titleEs: 'Aunque el tejado esté goteando', duration: 55,
       characters: ['Nina', 'Seu Antônio', 'Sofía'], location: 'Pasillo del cuarto piso', objective: 'Entender una concesión: aceptar algo aunque no guste.',
       grammar: ['embora + presente do subjuntivo', 'futuro do pretérito (reciclado)'],
       keywords: [{ target: 'telhado', es: 'tejado' }, { target: 'balde', es: 'cubo' }, { target: 'inverno', es: 'invierno' }, { target: 'embora', es: 'aunque' }, { target: 'proposta', es: 'propuesta' }, { target: 'autora', es: 'autora' }],
@@ -143,7 +143,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['embora ninguém goste', 'embora a proposta pareça', 'embora o balde não possa', 'faria falta'], newVocabulary: ['balde', 'pingar', 'pular uma etapa'], possibleDifficulties: ['tres concesivas distintas en el mismo audio', '«faria falta» no significa «haría falta hacer algo», sino que se echaría de menos'], continuity: 'Explica por qué Nina, que en el episodio 3 frenaba a Tiago, defiende ahora el dinero: vive en el cuarto piso desde hace año y medio y el cubo de la gotera está en su puerta. La espera hasta el jueves viene del episodio 2.', pronunciationRisks: ['telhado', 'pingando'], recommendedChanges: ['Las tres apariciones de «embora» deben oírse limpias: son la clave de la consolidación.'] },
     }),
     ep({
-      id: 'pt-b1-05-quando-ela-voltar', order: 5, title: 'Quando ela voltar', titleEs: 'Cuando ella vuelva', duration: 65,
+      id: 'pt-b1-05-quando-ela-voltar', order: 5, title: 'Quando ela voltar', titleEs: 'Cuando ella vuelva', duration: 45,
       characters: ['Sofía', 'Nina', 'Tiago'], location: 'Café de Tiago', objective: 'Reconocer el futuro do subjuntivo en planes y condiciones.',
       grammar: ['futuro do subjuntivo: quando, se, assim que', 'pronomes relativos (reciclado)'],
       keywords: [{ target: 'assembleia', es: 'junta de vecinos' }, { target: 'sábado', es: 'sábado' }, { target: 'voto', es: 'voto' }, { target: 'cópias', es: 'copias' }, { target: 'quinta', es: 'jueves' }, { target: 'telhado', es: 'tejado' }],
@@ -168,7 +168,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['quando voltar', 'se ela quiser', 'assim que for marcada', 'se ela chegar', 'se ela disser', 'enquanto pingar'], newVocabulary: ['imprimir', 'salão', 'combinado'], possibleDifficulties: ['futuro do subjuntivo irregular: disser, quiser, for', 'el infinitivo y el futuro do subjuntivo coinciden en los verbos regulares (voltar, chegar, pingar)'], continuity: 'Ordena las piezas de los episodios 2 y 4: Célia llega el jueves y la gotera sigue siendo el argumento de Nina. El sábado de la junta se cumple en el episodio 14.', pronunciationRisks: ['disser', 'assembleia'], recommendedChanges: ['«Imprime duas cópias» lo dice Tiago pidiéndoselo a Nina: mantener el tono de petición, no de oferta.'] },
     }),
     ep({
-      id: 'pt-b1-06-a-ligacao-da-beatriz', order: 6, title: 'A ligação da Beatriz', titleEs: 'La llamada de Beatriz', duration: 65,
+      id: 'pt-b1-06-a-ligacao-da-beatriz', order: 6, title: 'A ligação da Beatriz', titleEs: 'La llamada de Beatriz', duration: 46,
       characters: ['Nina', 'Sofía', 'Tiago'], location: 'Portería del edificio', objective: 'Situar un hecho anterior a otro hecho pasado.',
       grammar: ['mais-que-perfeito composto: tinha + particípio', 'discurso indireto (reciclado)'],
       keywords: [{ target: 'ligou', es: 'llamó' }, { target: 'conversado', es: 'hablado' }, { target: 'aceitado', es: 'aceptado' }, { target: 'condição', es: 'condición' }, { target: 'errado', es: 'mal / equivocado' }, { target: 'e-mail', es: 'correo electrónico' }],
@@ -193,7 +193,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['tinha conversado', 'tinha aceitado', 'ela disse que', 'segundo ela'], newVocabulary: ['ligação', 'segundo (alguém)', 'combinar com'], possibleDifficulties: ['«tinha conversado» frente a «conversou»: el orden de los hechos depende de esa forma', 'la doble negación «sem nenhuma condição»'], continuity: 'La llamada explica un hueco del episodio 1: la productora escribió al condominio después de haber buscado a la autora. Célia sigue en Santos, así que nadie puede contrastarlo todavía.', pronunciationRisks: ['conversado', 'condição'], recommendedChanges: ['«Segundo ela» debe oírse como inciso, con pausa a los dos lados: marca que Nina no está afirmando, sino citando.'] },
     }),
     ep({
-      id: 'pt-b1-07-nao-foi-isso-que-eu-disse', order: 7, title: 'Não foi isso que eu disse', titleEs: 'Eso no fue lo que dije', duration: 68,
+      id: 'pt-b1-07-nao-foi-isso-que-eu-disse', order: 7, title: 'Não foi isso que eu disse', titleEs: 'Eso no fue lo que dije', duration: 52,
       characters: ['Dona Célia', 'Sofía', 'Nina', 'Tiago'], location: 'Portería del edificio', objective: 'Contrastar dos versiones de una misma conversación.',
       grammar: ['apesar de + infinitivo', 'imperfeito do subjuntivo em condição'],
       keywords: [{ target: 'viagem', es: 'viaje' }, { target: 'julho', es: 'julio' }, { target: 'aceitaria', es: 'aceptaría' }, { target: 'condição', es: 'condición' }, { target: 'apesar', es: 'a pesar' }, { target: 'papel', es: 'papel' }],
@@ -218,7 +218,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['apesar de eu ter pedido', 'apesar de tudo', 'aceitaria se fossem respeitadas', 'tinha falado', 'tinha aceitado'], newVocabulary: ['seja como for', 'procurar (alguém)', 'respeitar'], possibleDifficulties: ['«apesar de eu ter pedido»: infinitivo pessoal compuesto', 'la pareja «aceitaria / fossem» exige oír las dos formas juntas'], continuity: 'Desmiente punto por punto lo que Beatriz contó en el episodio 6 sin negar el hecho: la conversación existió y el «fim de julho» de Célia es la misma «semana passada» de Beatriz. Las tres condiciones anunciadas aquí se escriben en el episodio 11.', pronunciationRisks: ['aceitaria', 'respeitadas'], recommendedChanges: ['«Não foi isso que eu disse» debe locutarse con calma y sin subir el volumen: Célia corrige, no discute.'] },
     }),
     ep({
-      id: 'pt-b1-08-se-eu-tivesse-vinte-e-dois-anos', order: 8, title: 'Se eu tivesse vinte e dois anos', titleEs: 'Si yo tuviera veintidós años', duration: 67,
+      id: 'pt-b1-08-se-eu-tivesse-vinte-e-dois-anos', order: 8, title: 'Se eu tivesse vinte e dois anos', titleEs: 'Si yo tuviera veintidós años', duration: 49,
       characters: ['Dona Célia', 'Sofía', 'Seu Antônio'], location: 'Patio del edificio', objective: 'Entender hipótesis irreales sobre el presente.',
       grammar: ['imperfeito do subjuntivo + futuro do pretérito', 'futuro do subjuntivo (reciclado)'],
       keywords: [{ target: 'vinte e dois', es: 'veintidós' }, { target: 'proposta', es: 'propuesta' }, { target: 'mural', es: 'mural' }, { target: 'autora', es: 'autora' }, { target: 'assembleia', es: 'junta de vecinos' }, { target: 'decisão', es: 'decisión' }],
@@ -243,7 +243,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['se eu tivesse... eu diria', 'se ninguém vir', 'queria que conhecessem', 'se eles gostassem... perguntariam', 'se a assembleia disser'], newVocabulary: ['na mesma hora', 'todo santo dia', 'ter razão'], possibleDifficulties: ['tres tipos de condicional en el mismo audio: irreal (tivesse), real futura (vir, disser) y de deseo (queria que)', '«vir» es futuro do subjuntivo de ver, no el infinitivo de vir'], continuity: 'Los veintidós años son los que Célia tenía cuando pintó el mural en 1985, según contó al final de la temporada 2. Su miedo a que el muro vuelva a taparse remite a la pintura blanca de aquella temporada.', pronunciationRisks: ['conhecessem', 'perguntariam'], recommendedChanges: ['Locutar «se ninguém vir» sin alargar la i: no debe confundirse con «se ninguém vier».'] },
     }),
     ep({
-      id: 'pt-b1-09-como-se-o-predio-fosse-deles', order: 9, title: 'Como se o prédio fosse deles', titleEs: 'Como si el edificio fuera suyo', duration: 66,
+      id: 'pt-b1-09-como-se-o-predio-fosse-deles', order: 9, title: 'Como se o prédio fosse deles', titleEs: 'Como si el edificio fuera suyo', duration: 45,
       characters: ['Seu Antônio', 'Tiago', 'Nina'], location: 'Portería del edificio', objective: 'Entender comparaciones irreales y preguntas contadas por otro.',
       grammar: ['como se + imperfeito do subjuntivo', 'discurso indireto: perguntar se'],
       keywords: [{ target: 'produtora', es: 'productora' }, { target: 'campainha', es: 'timbre' }, { target: 'gravador', es: 'grabadora' }, { target: 'cenário', es: 'decorado' }, { target: 'filmagem', es: 'rodaje' }, { target: 'assembleia', es: 'junta de vecinos' }],
@@ -268,7 +268,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['como se o prédio fosse', 'como se fosse um cenário', 'perguntei se eles iam mexer', 'espero que tenha sido'], newVocabulary: ['campainha', 'carteiro', 'cenário'], possibleDifficulties: ['«perguntei se» sin signo de interrogación audible', '«mexer em» exige la preposición: mexer no mural'], continuity: 'La pregunta que Beatriz esquiva aquí —si tocarán el mural— es la que se convierte en la segunda condición del episodio 11 y estalla al releer el correo en el episodio 13.', pronunciationRisks: ['campainha', 'gravador'], recommendedChanges: ['Que la voz de seu Antônio no suba de volumen: su enfado es seco, no gritado.'] },
     }),
     ep({
-      id: 'pt-b1-10-ela-pediu-que-a-gente-fosse-junto', order: 10, title: 'Ela pediu que a gente fosse junto', titleEs: 'Pidió que fuéramos con ella', duration: 64,
+      id: 'pt-b1-10-ela-pediu-que-a-gente-fosse-junto', order: 10, title: 'Ela pediu que a gente fosse junto', titleEs: 'Pidió que fuéramos con ella', duration: 45,
       characters: ['Sofía', 'Nina', 'Tiago'], location: 'Café de Tiago', objective: 'Entender peticiones transmitidas por otra persona.',
       grammar: ['discurso indireto de pedidos: pedir que + imperfeito do subjuntivo', 'conectivos (reciclados)'],
       keywords: [{ target: 'pediu', es: 'pidió' }, { target: 'condições', es: 'condiciones' }, { target: 'papel', es: 'papel' }, { target: 'assembleia', es: 'junta de vecinos' }, { target: 'vizinhos', es: 'vecinos' }, { target: 'sábado', es: 'sábado' }],
@@ -293,7 +293,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['pediu que eu escrevesse', 'pediu que nós fôssemos', 'pediu que a gente não brigasse', 'aposto que'], newVocabulary: ['brigar', 'cumprir', 'específicas'], possibleDifficulties: ['«fôssemos» sirve para ir y para ser: aquí es ir', 'quien pide es Célia y quien ejecuta es el grupo; el sujeto cambia dentro de cada frase'], continuity: 'El papel que Célia encarga aquí se escribe en el episodio 11 y viaja de mano en mano por la junta del episodio 14. Los cuatro que la acompañarán son Sofía, Nina, Tiago y seu Antônio.', pronunciationRisks: ['escrevesse', 'fôssemos'], recommendedChanges: ['Numerar en voz alta «primeiro, segundo, terceiro» con pausa: sostienen las tres preguntas de detalle.'] },
     }),
     ep({
-      id: 'pt-b1-11-as-tres-condicoes', order: 11, title: 'As três condições', titleEs: 'Las tres condiciones', duration: 65,
+      id: 'pt-b1-11-as-tres-condicoes', order: 11, title: 'As três condições', titleEs: 'Las tres condiciones', duration: 55,
       characters: ['Sofía', 'Dona Célia', 'Nina'], location: 'Salón común del edificio', objective: 'Entender condiciones futuras con «se», «quando» y «assim que».',
       grammar: ['futuro do subjuntivo (reciclado y ampliado)', 'pronomes relativos (reciclados)'],
       keywords: [{ target: 'condição', es: 'condición' }, { target: 'créditos', es: 'créditos' }, { target: 'adesivo', es: 'pegatina' }, { target: 'telhado', es: 'tejado' }, { target: 'assinarem', es: 'firmen' }, { target: 'aprovar', es: 'aprobar' }],
@@ -318,7 +318,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['se eles aceitarem', 'quando eles assinarem', 'se a assembleia aprovar', 'se eles recusarem', 'a que não se negocia'], newVocabulary: ['adesivo', 'prego', 'conserto'], possibleDifficulties: ['cuatro futuros do subjuntivo seguidos con conectores distintos', '«encosta no muro» exige preposición: encostar em'], continuity: 'Pone por escrito las tres condiciones anunciadas por Célia en el episodio 7, y la segunda responde justo a la pregunta que Beatriz esquivó en el episodio 9. El destino del dinero es la gotera del episodio 4.', pronunciationRisks: ['aceitarem', 'assinarem'], recommendedChanges: ['Que «adesivo» y «prego» se oigan separados por pausa: son dos ítems distintos de una lista de tres.'] },
     }),
     ep({
-      id: 'pt-b1-12-os-motivos-de-cada-um', order: 12, title: 'Os motivos de cada um', titleEs: 'Los motivos de cada cual', duration: 68,
+      id: 'pt-b1-12-os-motivos-de-cada-um', order: 12, title: 'Os motivos de cada um', titleEs: 'Los motivos de cada cual', duration: 49,
       characters: ['Tiago', 'Nina', 'Sofía'], location: 'Café de Tiago', objective: 'Reconocer una concesión con «apesar de» + infinitivo personal.',
       grammar: ['apesar de + infinitivo pessoal', 'embora + subjuntivo (reciclado)'],
       keywords: [{ target: 'comercial', es: 'anuncio' }, { target: 'motivo', es: 'motivo' }, { target: 'goteira', es: 'gotera' }, { target: 'quarenta', es: 'cuarenta' }, { target: 'filmagem', es: 'rodaje' }, { target: 'salão', es: 'salón' }],
@@ -343,7 +343,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['apesar de eu defender', 'embora os motivos sejam', 'o motivo não era', 'percebi que'], newVocabulary: ['goteira', 'nobre', 'vontade'], possibleDifficulties: ['«apesar de eu defender»: infinitivo pessoal con sujeto expreso', '«percebi» significa me di cuenta, no percibí'], continuity: 'Cierra el hilo abierto en el episodio 3 (los cuarenta mil del café, que siguen siendo cuarenta mil) y el del episodio 4 (la gotera del cuarto piso). El salón mencionado es el de la junta fijada en el episodio 5.', pronunciationRisks: ['goteira', 'percebi'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-b1-13-o-que-o-email-nao-dizia', order: 13, title: 'O que o e-mail não dizia', titleEs: 'Lo que el e-mail no decía', duration: 64,
+      id: 'pt-b1-13-o-que-o-email-nao-dizia', order: 13, title: 'O que o e-mail não dizia', titleEs: 'Lo que el e-mail no decía', duration: 54,
       characters: ['Nina', 'Sofía', 'Dona Célia'], location: 'Salón común del edificio', objective: 'Detectar el dato que cambia el sentido de todo lo anterior.',
       grammar: ['mais-que-perfeito composto (reciclado)', 'conectivo: no entanto'],
       keywords: [{ target: 'frase', es: 'frase' }, { target: 'cores', es: 'colores' }, { target: 'adaptadas', es: 'adaptadas' }, { target: 'repintar', es: 'repintar' }, { target: 'computador', es: 'ordenador' }, { target: 'condições', es: 'condiciones' }],
@@ -368,7 +368,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['tinha lido', 'tinha visto', 'no entanto', 'serão adaptadas', 'talvez não seja'], newVocabulary: ['passar por cima', 'identidade visual', 'ajuste'], possibleDifficulties: ['«serão adaptadas» es una cita leída, no la voz de Nina', 'contraste entre «tinha lido» y «passei por cima» dentro de la misma frase'], continuity: 'La pregunta sin respuesta del episodio 9 encuentra aquí su explicación, y el año ochenta y cinco es el mismo en que Célia pintó y luego tapó el mural en la temporada 2. La segunda condición del episodio 11 queda en peligro.', pronunciationRisks: ['adaptadas', 'identidade'], recommendedChanges: ['Marcar con pausa antes y después la frase citada del correo: es la voz del documento, no la de Nina.'] },
     }),
     ep({
-      id: 'pt-b1-14-a-assembleia-de-sabado', order: 14, title: 'A assembleia de sábado', titleEs: 'La junta del sábado', duration: 66,
+      id: 'pt-b1-14-a-assembleia-de-sabado', order: 14, title: 'A assembleia de sábado', titleEs: 'La junta del sábado', duration: 50,
       characters: ['Sofía', 'Dona Célia', 'Nina', 'Seu Antônio'], location: 'Salón común del edificio', objective: 'Seguir una votación y el resultado que produce.',
       grammar: ['futuro do subjuntivo com quem', 'futuro do pretérito (reciclado)'],
       keywords: [{ target: 'autora', es: 'autora' }, { target: 'proposta', es: 'propuesta' }, { target: 'condições', es: 'condiciones' }, { target: 'votos', es: 'votos' }, { target: 'contra', es: 'en contra' }, { target: 'aprovadas', es: 'aprobadas' }],
@@ -393,7 +393,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['quem votar', 'não venderia', 'foram aprovadas', 'está passando'], newVocabulary: ['estar em jogo', 'de mão em mão', 'obra'], possibleDifficulties: ['«votar» futuro do subjuntivo suena igual que el infinitivo', 'las cifras once y cuatro llegan seguidas y sin repetición'], continuity: 'Es el sábado anunciado en el episodio 5, con el papel escrito en el episodio 11 y con los cuatro acompañantes que Célia pidió en el episodio 10. Seu Antônio mantiene la desconfianza que trae desde el episodio 2.', pronunciationRisks: ['assembleia', 'aprovadas'], recommendedChanges: ['Locutar «onze votos a favor, quatro contra» con pausa entre las dos cifras.'] },
     }),
     ep({
-      id: 'pt-b1-15-a-resposta-que-nao-chegava', order: 15, title: 'A resposta que não chegava', titleEs: 'La respuesta que no llegaba', duration: 66,
+      id: 'pt-b1-15-a-resposta-que-nao-chegava', order: 15, title: 'A resposta que não chegava', titleEs: 'La respuesta que no llegaba', duration: 50,
       characters: ['Tiago', 'Nina', 'Sofía'], location: 'Café de Tiago', objective: 'Formular hipótesis sobre una situación presente incierta.',
       grammar: ['imperfeito do subjuntivo + futuro do pretérito (reciclados)', 'mais-que-perfeito (reciclado)'],
       keywords: [{ target: 'resposta', es: 'respuesta' }, { target: 'advogado', es: 'abogado' }, { target: 'cansaço', es: 'cansancio' }, { target: 'celular', es: 'móvil' }, { target: 'faculdade', es: 'universidad' }, { target: 'assembleia', es: 'junta de vecinos' }],
@@ -418,7 +418,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['se quisessem... já tinham respondido', 'se eu fosse... eu responderia', 'nem que fosse', 'se fosse... você não estaria'], newVocabulary: ['advogado', 'internamente', 'cobrar (uma promessa)'], possibleDifficulties: ['«já tinham respondido» con valor de condicional compuesto, muy frecuente en Brasil', '«nem que fosse um talvez» es una concesión idiomática'], continuity: 'Los cinco días se cuentan desde la junta del episodio 14; lo que Sofía calla se cuenta en el episodio 18, y Tiago cobra allí el «depois» que reclama aquí.', pronunciationRisks: ['quisessem', 'responderia'], recommendedChanges: ['«Depois eu conto» debe sonar afectuoso, no cortante: Sofía aplaza, no se enfada.'] },
     }),
     ep({
-      id: 'pt-b1-16-duas-condicoes-e-meia', order: 16, title: 'Duas condições e meia', titleEs: 'Dos condiciones y media', duration: 65,
+      id: 'pt-b1-16-duas-condicoes-e-meia', order: 16, title: 'Duas condições e meia', titleEs: 'Dos condiciones y media', duration: 53,
       characters: ['Nina', 'Sofía', 'Tiago'], location: 'Portería del edificio', objective: 'Entender una respuesta que acepta una parte y negocia otra.',
       grammar: ['discurso indireto com futuro do pretérito', 'conectivo: no entanto (reciclado)'],
       keywords: [{ target: 'resposta', es: 'respuesta' }, { target: 'condição', es: 'condición' }, { target: 'computador', es: 'ordenador' }, { target: 'imagem', es: 'imagen' }, { target: 'cores', es: 'colores' }, { target: 'decidir', es: 'decidir' }],
@@ -443,7 +443,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['disseram que mudariam', 'escreveram que não vão tocar', 'quando ela decidir', 'no entanto'], newVocabulary: ['imagem', 'complicar', 'honestamente'], possibleDifficulties: ['«mudariam» y «mudaram» cambian el sentido entero de la noticia', 'la distinción entre el muro real y el mural que se verá en pantalla'], continuity: 'Responde a las tres condiciones del episodio 11 en el mismo orden y da forma concreta a la frase del correo descubierta en el episodio 13: adaptar los colores era un trabajo de ordenador, no de brocha.', pronunciationRisks: ['mudariam', 'computador'], recommendedChanges: ['Distinguir claramente «mudariam» (tres sílabas finales) en el turno 5: sostiene la consolidación.'] },
     }),
     ep({
-      id: 'pt-b1-17-a-decisao-da-celia', order: 17, title: 'A decisão da Célia', titleEs: 'La decisión de Célia', duration: 66,
+      id: 'pt-b1-17-a-decisao-da-celia', order: 17, title: 'A decisão da Célia', titleEs: 'La decisión de Célia', duration: 53,
       characters: ['Dona Célia', 'Sofía', 'Nina', 'Tiago'], location: 'Patio del edificio', objective: 'Entender una decisión matizada y sus consecuencias económicas.',
       grammar: ['infinitivo pessoal', 'conectivo: portanto (reciclado)'],
       keywords: [{ target: 'resposta', es: 'respuesta' }, { target: 'cores', es: 'colores' }, { target: 'nove', es: 'nueve' }, { target: 'telhado', es: 'tejado' }, { target: 'orçamento', es: 'presupuesto' }, { target: 'filmar', es: 'rodar' }],
@@ -468,7 +468,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['o preço de eu dormir', 'continua de pé', 'portanto eles podem filmar', 'cobre com folga'], newVocabulary: ['orçamento', 'com folga', 'de pé (vigente)'], possibleDifficulties: ['tres cifras en un solo episodio: nueve mil, tres mil y siete mil doscientos', '«um não pequeno» es una imagen, no una cantidad'], continuity: 'Responde a la contrapropuesta del episodio 16 y mantiene intacta la cifra inicial de doce mil del episodio 1, de la que ahora se restan tres mil. El tejado sigue siendo el destino del dinero fijado en la tercera condición del episodio 11.', pronunciationRisks: ['orçamento', 'duzentos'], recommendedChanges: ['Locutar «sete mil e duzentos» despacio: es respuesta de una pregunta de detalle y compite con otras dos cifras.'] },
     }),
     ep({
-      id: 'pt-b1-18-a-noticia-da-sofia', order: 18, title: 'A notícia da Sofía', titleEs: 'La noticia de Sofía', duration: 65,
+      id: 'pt-b1-18-a-noticia-da-sofia', order: 18, title: 'A notícia da Sofía', titleEs: 'La noticia de Sofía', duration: 45,
       characters: ['Sofía', 'Tiago', 'Nina'], location: 'Café de Tiago', objective: 'Entender una noticia personal y la concesión que la acompaña.',
       grammar: ['embora + imperfeito do subjuntivo', 'discurso indireto (reciclado)'],
       keywords: [{ target: 'contrato', es: 'contrato' }, { target: 'Bogotá', es: 'Bogotá' }, { target: 'março', es: 'marzo' }, { target: 'fevereiro', es: 'febrero' }, { target: 'despedida', es: 'despedida' }, { target: 'embora', es: 'aunque' }],
@@ -493,7 +493,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['embora eu quisesse', 'embora eu não saiba', 'me ofereceram', 'mesmo sem saber'], newVocabulary: ['despedida', 'guardado (um segredo)', 'da próxima vez'], possibleDifficulties: ['«embora» con imperfeito y con presente de subjuntivo en el mismo audio', '«conta antes» es una petición de Nina a Sofía, no una promesa de Nina'], continuity: 'Cobra el «depois eu conto» que Sofía dejó pendiente en el episodio 15 y que Tiago prometió reclamar. Febrero y marzo fijan el calendario que cierra el episodio 20.', pronunciationRisks: ['quisesse', 'despedida'], recommendedChanges: ['En el guion de TTS escribir «Sofia» sin tilde: una voz pt-BR silabea «So-fí-a».'] },
     }),
     ep({
-      id: 'pt-b1-19-tres-dias-de-filmagem', order: 19, title: 'Três dias de filmagem', titleEs: 'Tres días de rodaje', duration: 67,
+      id: 'pt-b1-19-tres-dias-de-filmagem', order: 19, title: 'Três dias de filmagem', titleEs: 'Tres días de rodaje', duration: 58,
       characters: ['Nina', 'Tiago', 'Seu Antônio', 'Dona Célia'], location: 'Patio del edificio', objective: 'Contrastar lo que se temía con lo que realmente pasó.',
       grammar: ['mais-que-perfeito composto (reciclado)', 'conectivo: no entanto (reciclado)'],
       keywords: [{ target: 'filmagem', es: 'rodaje' }, { target: 'muro', es: 'muro' }, { target: 'créditos', es: 'créditos' }, { target: 'cena', es: 'escena' }, { target: 'aposta', es: 'apuesta' }, { target: 'elogio', es: 'elogio' }],
@@ -518,7 +518,7 @@ export const PORTUGUESE_B1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['tinha certeza', 'tinha imaginado', 'encostou', 'no entanto'], newVocabulary: ['aposta', 'achar graça', 'sujeira'], possibleDifficulties: ['el año leído entero: mil novecentos e oitenta e cinco', '«perdi a aposta para a Nina» significa que ganó Nina'], continuity: 'Las tres condiciones del episodio 11 se cumplen a la vista: nadie toca el muro y el nombre de la autora está en los créditos. Los cuarenta y dos años cuadran con el mural pintado en 1985 y restaurado dos años antes de esta temporada. Pingo sigue siendo el perro de seu Antônio.', pronunciationRisks: ['mil novecentos e oitenta e cinco', 'créditos'], recommendedChanges: ['Locutar el año despacio y con una coma antes: es respuesta de una pregunta de detalle.'] },
     }),
     ep({
-      id: 'pt-b1-20-o-patio-continua', order: 20, title: 'O pátio continua', titleEs: 'El patio sigue', duration: 65,
+      id: 'pt-b1-20-o-patio-continua', order: 20, title: 'O pátio continua', titleEs: 'El patio sigue', duration: 53,
       characters: ['Todos', 'Dona Célia', 'Nina', 'Tiago', 'Seu Antônio', 'Sofía'], location: 'Patio del edificio', objective: 'Cerrar la temporada integrando pasado, condición futura y despedida.',
       grammar: ['revisão geral: futuro do subjuntivo, embora, portanto, discurso indireto'],
       keywords: [{ target: 'televisão', es: 'televisión' }, { target: 'telhado', es: 'tejado' }, { target: 'junho', es: 'junio' }, { target: 'fevereiro', es: 'febrero' }, { target: 'mural', es: 'mural' }, { target: 'nome', es: 'nombre' }],

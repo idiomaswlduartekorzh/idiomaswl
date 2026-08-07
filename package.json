@@ -18,7 +18,8 @@
     "test:reading": "node --test tests/reading-content.test.mjs",
     "check:exam-practice-content": "node scripts/check-exam-practice-content.mjs",
     "audit:ielts": "node scripts/audit-ielts-routes.mjs",
-    "clean": "rm -rf .next .turbo node_modules/.cache && echo '✓ Cache limpiado'"
+    "clean": "rm -rf .next .turbo node_modules/.cache && echo '✓ Cache limpiado'",
+    "audit:listening-audio": "node scripts/audit-listening-audio.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.1",

@@ -33,7 +33,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
   ],
   episodes: [
     ep({
-      id: 'pt-a1-01-a-nova-moradora', order: 1, title: 'A nova moradora', titleEs: 'La nueva residente', duration: 38,
+      id: 'pt-a1-01-a-nova-moradora', order: 1, title: 'A nova moradora', titleEs: 'La nueva residente', duration: 24,
       characters: ['Sofía', 'Tiago'], location: 'Entrada del edificio', objective: 'Identificar nombres, origen y ocupación.',
       grammar: ['pronomes pessoais', 'ser', 'chamar-se'], keywords: [{ target: 'moradora', es: 'residente' }, { target: 'vizinho', es: 'vecino' }, { target: 'estudante', es: 'estudiante' }, { target: 'bem-vinda', es: 'bienvenida' }, { target: 'café', es: 'cafetería' }],
       storyFunction: 'Presenta a Sofía y Tiago y sitúa la historia en São Paulo.',
@@ -52,7 +52,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['eu sou', 'você é'], newVocabulary: ['moradora', 'vizinho', 'bairro'], possibleDifficulties: ['contracción oral daqui'], continuity: 'Inicio independiente de la serie.', pronunciationRisks: ['prédio', 'português'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-02-duas-malas-e-uma-caixa', order: 2, title: 'Duas malas e uma caixa', titleEs: 'Dos maletas y una caja', duration: 38,
+      id: 'pt-a1-02-duas-malas-e-uma-caixa', order: 2, title: 'Duas malas e uma caixa', titleEs: 'Dos maletas y una caja', duration: 23,
       characters: ['Sofía', 'Tiago'], location: 'Ascensor', objective: 'Reconocer posesión, cantidades y objetos cotidianos.',
       grammar: ['verbo ter', 'artigos', 'números'], keywords: [{ target: 'mala', es: 'maleta' }, { target: 'caixa', es: 'caja' }, { target: 'pesada', es: 'pesada' }, { target: 'elevador', es: 'ascensor' }, { target: 'livros', es: 'libros' }],
       storyFunction: 'Introduce una caja azul que luego se confunde con una pista.',
@@ -71,7 +71,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['eu tenho', 'você tem', 'artigos'], newVocabulary: ['mala', 'caixa', 'elevador'], possibleDifficulties: ['pronunciación nasal de tenho'], continuity: 'Continúa la llegada del episodio 1.', pronunciationRisks: ['cadernos', 'elevador'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-03-onde-esta-a-chave', order: 3, title: 'Onde está a chave?', titleEs: '¿Dónde está la llave?', duration: 40,
+      id: 'pt-a1-03-onde-esta-a-chave', order: 3, title: 'Onde está a chave?', titleEs: '¿Dónde está la llave?', duration: 23,
       characters: ['Sofía', 'Tiago', 'Dona Célia'], location: 'Pasillo del piso doce', objective: 'Localizar un objeto con estar y preposiciones.',
       grammar: ['ser e estar', 'preposições de lugar', 'perguntas'], keywords: [{ target: 'chave', es: 'llave' }, { target: 'bolsa', es: 'bolso' }, { target: 'dentro', es: 'dentro' }, { target: 'bolso', es: 'bolsillo' }, { target: 'azul', es: 'azul' }],
       storyFunction: 'Presenta la llave azul central mediante un malentendido.',
@@ -90,7 +90,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['está', 'na/no', 'onde'], newVocabulary: ['chave', 'bolsa', 'bolso'], possibleDifficulties: ['diferenciar bolsa y bolso'], continuity: 'La caja azul del episodio 2 provoca la primera confusión.', pronunciationRisks: ['chave', 'aqui'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-04-o-cafe-da-esquina', order: 4, title: 'O café da esquina', titleEs: 'El café de la esquina', duration: 39,
+      id: 'pt-a1-04-o-cafe-da-esquina', order: 4, title: 'O café da esquina', titleEs: 'El café de la esquina', duration: 20,
       characters: ['Sofía', 'Tiago'], location: 'Café de Tiago', objective: 'Comprender acciones habituales en presente.',
       grammar: ['presente dos verbos em -AR', 'artigos', 'contrações'], keywords: [{ target: 'trabalhar', es: 'trabajar' }, { target: 'estudar', es: 'estudiar' }, { target: 'morar', es: 'vivir' }, { target: 'laranja', es: 'naranja' }, { target: 'suco', es: 'jugo' }],
       storyFunction: 'Establece el café como punto recurrente de la serie.',
@@ -109,7 +109,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['eu trabalho', 'eu estudo', 'eu moro'], newVocabulary: ['esquina', 'suco', 'rua'], possibleDifficulties: ['ritmo de perto daqui'], continuity: 'Recupera el trabajo de Tiago mencionado al llegar.', pronunciationRisks: ['laranja', 'segunda'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-05-o-grupo-do-predio', order: 5, title: 'O grupo do prédio', titleEs: 'El grupo del edificio', duration: 41,
+      id: 'pt-a1-05-o-grupo-do-predio', order: 5, title: 'O grupo do prédio', titleEs: 'El grupo del edificio', duration: 26,
       characters: ['Sofía', 'Dona Célia'], location: 'Apartamento de Sofía', objective: 'Comprender posesivos e instrucciones digitales básicas.',
       grammar: ['adjetivos possessivos', 'adjetivos qualificativos', 'ter'], keywords: [{ target: 'grupo', es: 'grupo' }, { target: 'mensagem', es: 'mensaje' }, { target: 'celular', es: 'celular' }, { target: 'número', es: 'número' }, { target: 'prédio', es: 'edificio' }],
       storyFunction: 'Dona Célia agrega a Sofía al grupo donde ocurrirá el error.',
@@ -128,7 +128,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['meu/nosso/seu', 'é/tem'], newVocabulary: ['celular', 'mensagem', 'número'], possibleDifficulties: ['número cuarenta e dois'], continuity: 'Abre el mecanismo narrativo del audio equivocado.', pronunciationRisks: ['mensagens', 'cinquenta'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-06-o-audio-errado', order: 6, title: 'O áudio errado', titleEs: 'El audio equivocado', duration: 42,
+      id: 'pt-a1-06-o-audio-errado', order: 6, title: 'O áudio errado', titleEs: 'El audio equivocado', duration: 29,
       characters: ['Dona Célia', 'Sofía', 'Tiago'], location: 'Grupo de mensajes', objective: 'Identificar objetos y cantidades dentro de un mensaje breve.',
       grammar: ['há / tem / existe', 'plural', 'números'], keywords: [{ target: 'áudio', es: 'audio' }, { target: 'cadeiras', es: 'sillas' }, { target: 'bolo', es: 'pastel' }, { target: 'segredo', es: 'secreto' }, { target: 'festa', es: 'fiesta' }],
       storyFunction: 'Activa el misterio con un audio enviado al grupo equivocado.',
@@ -147,7 +147,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['tem', 'existe', 'plurais'], newVocabulary: ['cadeira', 'bolo', 'segredo'], possibleDifficulties: ['tem como uso existencial brasileño'], continuity: 'El grupo creado en el episodio 5 recibe el mensaje central.', pronunciationRisks: ['áudio', 'cadeiras'], recommendedChanges: ['En TTS, marcar una pausa clara entre las dos líneas de Dona Célia.'] },
     }),
     ep({
-      id: 'pt-a1-07-tres-perguntas', order: 7, title: 'Três perguntas', titleEs: 'Tres preguntas', duration: 40,
+      id: 'pt-a1-07-tres-perguntas', order: 7, title: 'Três perguntas', titleEs: 'Tres preguntas', duration: 24,
       characters: ['Sofía', 'Nina'], location: 'Escuela de idiomas', objective: 'Comprender interrogativos básicos.',
       grammar: ['perguntas interrogativas', 'ser e estar'], keywords: [{ target: 'quem', es: 'quién' }, { target: 'onde', es: 'dónde' }, { target: 'quando', es: 'cuándo' }, { target: 'por quê', es: 'por qué' }, { target: 'comida', es: 'comida' }],
       storyFunction: 'Sofía comparte el chisme con Nina y ordena las preguntas.',
@@ -166,7 +166,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['quem/onde/quando/por que'], newVocabulary: ['pergunta', 'importante', 'comida'], possibleDifficulties: ['por que separado en pregunta'], continuity: 'Transforma el audio en un pequeño chisme escolar.', pronunciationRisks: ['quem', 'amanhã'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-08-agora-no-corredor', order: 8, title: 'Agora no corredor', titleEs: 'Ahora en el pasillo', duration: 40,
+      id: 'pt-a1-08-agora-no-corredor', order: 8, title: 'Agora no corredor', titleEs: 'Ahora en el pasillo', duration: 20,
       characters: ['Sofía', 'Tiago'], location: 'Pasillo del edificio', objective: 'Reconocer acciones que ocurren ahora.',
       grammar: ['estar + gerúndio', 'preposições de lugar'], keywords: [{ target: 'carregando', es: 'cargando' }, { target: 'entrando', es: 'entrando' }, { target: 'falando', es: 'hablando' }, { target: 'corredor', es: 'pasillo' }, { target: 'fita', es: 'cinta' }],
       storyFunction: 'Los protagonistas observan preparativos sin entenderlos.',
@@ -185,7 +185,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['está/estão + gerúndio'], newVocabulary: ['carregar', 'cheirar', 'fita'], possibleDifficulties: ['nasal de estão'], continuity: 'Confirma visualmente sillas, flores y pastel del audio.', pronunciationRisks: ['carregando', 'cachorro'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-09-a-chave-nao-e-minha', order: 9, title: 'A chave não é minha', titleEs: 'La llave no es mía', duration: 39,
+      id: 'pt-a1-09-a-chave-nao-e-minha', order: 9, title: 'A chave não é minha', titleEs: 'La llave no es mía', duration: 26,
       characters: ['Sofía', 'Dona Célia', 'Tiago'], location: 'Recepción', objective: 'Comprender negaciones sencillas y posesión.',
       grammar: ['negação', 'adjetivos possessivos', 'ser e estar'], keywords: [{ target: 'minha', es: 'mía' }, { target: 'sua', es: 'suya' }, { target: 'abrir', es: 'abrir' }, { target: 'depósito', es: 'depósito' }, { target: 'falar', es: 'hablar' }],
       storyFunction: 'Aclara que hay dos llaves azules y mantiene el misterio.',
@@ -204,7 +204,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['não está', 'não posso', 'minha/sua'], newVocabulary: ['abrir', 'depósito', 'nenhum'], possibleDifficulties: ['contraste minha/sua'], continuity: 'Distingue la llave de Sofía de la llave del audio.', pronunciationRisks: ['nenhum', 'depósito'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-10-no-deposito', order: 10, title: 'No depósito', titleEs: 'En el depósito', duration: 41,
+      id: 'pt-a1-10-no-deposito', order: 10, title: 'No depósito', titleEs: 'En el depósito', duration: 25,
       characters: ['Sofía', 'Tiago', 'Nina'], location: 'Frente al depósito', objective: 'Comprender contracciones y relaciones espaciales.',
       grammar: ['contrações', 'preposições de lugar', 'artigos'], keywords: [{ target: 'atrás', es: 'detrás' }, { target: 'perto', es: 'cerca' }, { target: 'porta', es: 'puerta' }, { target: 'janela', es: 'ventana' }, { target: 'salão', es: 'salón' }],
       storyFunction: 'El trío encuentra el depósito, pero no entra.',
@@ -223,7 +223,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['do/da/no/na/pela'], newVocabulary: ['placa', 'funcionários', 'fechada'], possibleDifficulties: ['no significa em + o, no negación'], continuity: 'Visita el lugar revelado en el episodio 9.', pronunciationRisks: ['funcionários', 'crianças'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-11-o-cachorro-pingo', order: 11, title: 'O cachorro Pingo', titleEs: 'El perro Pingo', duration: 39,
+      id: 'pt-a1-11-o-cachorro-pingo', order: 11, title: 'O cachorro Pingo', titleEs: 'El perro Pingo', duration: 24,
       characters: ['Sofía', 'Dona Célia', 'Tiago'], location: 'Patio', objective: 'Describir un animal y sus hábitos.',
       grammar: ['adjetivos qualificativos', 'verbo ter', 'presente'], keywords: [{ target: 'cachorro', es: 'perro' }, { target: 'marrom', es: 'marrón' }, { target: 'curioso', es: 'curioso' }, { target: 'coleira', es: 'collar' }, { target: 'lista', es: 'lista' }],
       storyFunction: 'Presenta a Pingo, responsable de mover varias pistas.',
@@ -242,7 +242,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['ele é/tem/está'], newVocabulary: ['cachorro', 'coleira', 'boca'], possibleDifficulties: ['pronunciación de cachorro'], continuity: 'Conecta la cinta azul observada en el episodio 8 con el animal.', pronunciationRisks: ['cachorro', 'marrom'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-12-pingo-sempre-some', order: 12, title: 'Pingo sempre some', titleEs: 'Pingo siempre desaparece', duration: 39,
+      id: 'pt-a1-12-pingo-sempre-some', order: 12, title: 'Pingo sempre some', titleEs: 'Pingo siempre desaparece', duration: 24,
       characters: ['Sofía', 'Dona Célia'], location: 'Patio', objective: 'Comprender hábitos y adverbios de frecuencia.',
       grammar: ['advérbios de frequência', 'presente'], keywords: [{ target: 'sempre', es: 'siempre' }, { target: 'geralmente', es: 'generalmente' }, { target: 'às vezes', es: 'a veces' }, { target: 'nunca', es: 'nunca' }, { target: 'jornais', es: 'periódicos' }],
       storyFunction: 'Explica cómo Pingo mueve objetos y crea confusiones.',
@@ -261,7 +261,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['sempre/geralmente/às vezes/nunca'], newVocabulary: ['meias', 'jornais', 'debaixo'], possibleDifficulties: ['posición flexible de adverbios'], continuity: 'Da una regla para seguir las pistas de Pingo.', pronunciationRisks: ['geralmente', 'jornais'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-13-debaixo-da-mesa', order: 13, title: 'Debaixo da mesa', titleEs: 'Debajo de la mesa', duration: 40,
+      id: 'pt-a1-13-debaixo-da-mesa', order: 13, title: 'Debaixo da mesa', titleEs: 'Debajo de la mesa', duration: 25,
       characters: ['Sofía', 'Tiago', 'Nina'], location: 'Salón común', objective: 'Comprender acciones con verbos frecuentes en -ER/-IR.',
       grammar: ['presente dos verbos em -ER/-IR', 'preposições'], keywords: [{ target: 'pista', es: 'pista' }, { target: 'abrir', es: 'abrir' }, { target: 'dividir', es: 'dividir' }, { target: 'envelope', es: 'sobre' }, { target: 'biscoitos', es: 'galletas' }],
       storyFunction: 'Encuentran un sobre, pero contiene una pista cómica.',
@@ -280,7 +280,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['vejo/abre/dividimos/lemos'], newVocabulary: ['envelope', 'biscoito', 'papel'], possibleDifficulties: ['irregularidad leve de ler'], continuity: 'Aplica la información del escondite de Pingo.', pronunciationRisks: ['envelope', 'biscoitos'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-14-a-mesa-pequena', order: 14, title: 'A mesa pequena', titleEs: 'La mesa pequeña', duration: 40,
+      id: 'pt-a1-14-a-mesa-pequena', order: 14, title: 'A mesa pequena', titleEs: 'La mesa pequeña', duration: 24,
       characters: ['Sofía', 'Tiago', 'Nina'], location: 'Café de Tiago', objective: 'Comprender movimiento y verbos irregulares básicos.',
       grammar: ['verbos irregulares', 'ir', 'fazer'], keywords: [{ target: 'ir', es: 'ir' }, { target: 'fazer', es: 'hacer' }, { target: 'trazer', es: 'traer' }, { target: 'guardanapo', es: 'servilleta' }, { target: 'desenho', es: 'dibujo' }],
       storyFunction: 'La pista conduce al café y revela un dibujo del lugar final.',
@@ -299,7 +299,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['vamos/faço/faz/traz'], newVocabulary: ['guardanapo', 'desenho', 'estrelas'], possibleDifficulties: ['formas irregulares de alta frecuencia'], continuity: 'Sigue la instrucción del episodio 13.', pronunciationRisks: ['guardanapo', 'propósito'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-15-vinte-cadeiras-coloridas', order: 15, title: 'Vinte cadeiras coloridas', titleEs: 'Veinte sillas de colores', duration: 40,
+      id: 'pt-a1-15-vinte-cadeiras-coloridas', order: 15, title: 'Vinte cadeiras coloridas', titleEs: 'Veinte sillas de colores', duration: 24,
       characters: ['Sofía', 'Dona Célia', 'Tiago'], location: 'Salón común', objective: 'Reconocer plurales, colores y concordancia.',
       grammar: ['plural dos substantivos', 'adjetivos qualificativos', 'números'], keywords: [{ target: 'coloridas', es: 'coloridas' }, { target: 'verdes', es: 'verdes' }, { target: 'amarelas', es: 'amarillas' }, { target: 'brancas', es: 'blancas' }, { target: 'vermelhas', es: 'rojas' }],
       storyFunction: 'Los preparativos ya son visibles, pero la persona homenajeada sigue oculta.',
@@ -318,7 +318,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['plurais', 'concordância', 'há/tem'], newVocabulary: ['colorida', 'amarela', 'pública'], possibleDifficulties: ['marcas plurales audibles'], continuity: 'Hace visibles las veinte sillas del audio inicial.', pronunciationRisks: ['vermelhas', 'amarelas'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-16-amanha-vamos-descobrir', order: 16, title: 'Amanhã vamos descobrir', titleEs: 'Mañana vamos a descubrirlo', duration: 41,
+      id: 'pt-a1-16-amanha-vamos-descobrir', order: 16, title: 'Amanhã vamos descobrir', titleEs: 'Mañana vamos a descubrirlo', duration: 21,
       characters: ['Sofía', 'Nina', 'Tiago'], location: 'Apartamento de Sofía', objective: 'Comprender planes próximos.',
       grammar: ['ir + infinitivo', 'advérbios de tempo'], keywords: [{ target: 'amanhã', es: 'mañana' }, { target: 'preparar', es: 'preparar' }, { target: 'ajudar', es: 'ayudar' }, { target: 'levar', es: 'llevar' }, { target: 'procurar', es: 'buscar' }],
       storyFunction: 'Los amigos organizan cómo ayudar y descubrir el nombre.',
@@ -337,7 +337,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['vou/vai/vamos + infinitivo'], newVocabulary: ['cedo', 'levar', 'guardar'], possibleDifficulties: ['vamos también puede significar movimiento'], continuity: 'Prepara el desenlace de la celebración.', pronunciationRisks: ['amanhã', 'descobrir'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-17-chuva-no-salao', order: 17, title: 'Chuva no salão', titleEs: 'Lluvia en el salón', duration: 40,
+      id: 'pt-a1-17-chuva-no-salao', order: 17, title: 'Chuva no salão', titleEs: 'Lluvia en el salón', duration: 22,
       characters: ['Sofía', 'Tiago', 'Nina'], location: 'Salón común', objective: 'Comprender clima y acciones inmediatas.',
       grammar: ['estar + gerúndio', 'negação', 'ir + infinitivo'], keywords: [{ target: 'chovendo', es: 'lloviendo' }, { target: 'molhado', es: 'mojado' }, { target: 'janela', es: 'ventana' }, { target: 'toalha', es: 'toalla' }, { target: 'aberta', es: 'abierta' }],
       storyFunction: 'Una ventana abierta crea caos cómico antes de la fiesta.',
@@ -356,7 +356,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['está chovendo', 'vou fechar', 'não está'], newVocabulary: ['chuva', 'molhado', 'toalha'], possibleDifficulties: ['chovendo y janela juntas'], continuity: 'Complica los planes anunciados en el episodio 16.', pronunciationRisks: ['chovendo', 'molhadas'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-18-o-nome-na-coleira', order: 18, title: 'O nome na coleira', titleEs: 'El nombre en el collar', duration: 40,
+      id: 'pt-a1-18-o-nome-na-coleira', order: 18, title: 'O nome na coleira', titleEs: 'El nombre en el collar', duration: 22,
       characters: ['Sofía', 'Tiago', 'Nina'], location: 'Salón común', objective: 'Integrar posesión, lugares y presente.',
       grammar: ['revisão de possessivos', 'preposições', 'presente'], keywords: [{ target: 'cartão', es: 'tarjeta' }, { target: 'nome', es: 'nombre' }, { target: 'aniversário', es: 'cumpleaños' }, { target: 'coleira', es: 'collar' }, { target: 'irmão', es: 'hermano' }],
       storyFunction: 'Pingo lleva en el collar el nombre que faltaba.',
@@ -375,7 +375,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['dele/do seu Antônio/no cartão'], newVocabulary: ['cartão', 'aniversário', 'sobrenome'], possibleDifficulties: ['seu como tratamiento y como posesivo'], continuity: 'Resuelve el nombre oculto y el dueño de Pingo.', pronunciationRisks: ['Antônio', 'aniversário'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-19-a-chave-azul', order: 19, title: 'A chave azul', titleEs: 'La llave azul', duration: 39,
+      id: 'pt-a1-19-a-chave-azul', order: 19, title: 'A chave azul', titleEs: 'La llave azul', duration: 27,
       characters: ['Sofía', 'Dona Célia', 'Tiago'], location: 'Depósito', objective: 'Integrar existencia, números y localización.',
       grammar: ['revisão A1', 'há/tem', 'preposições'], keywords: [{ target: 'decoração', es: 'decoración' }, { target: 'velas', es: 'velas' }, { target: 'presente', es: 'regalo' }, { target: 'prateleira', es: 'estante' }, { target: 'pratos', es: 'platos' }],
       storyFunction: 'Explica la función real de la llave azul.',
@@ -394,7 +394,7 @@ export const PORTUGUESE_A1_SERIES: A1ListeningSeries = {
       audit: { grammarUsed: ['há/tem/existem', 'na/no'], newVocabulary: ['decoração', 'prateleira', 'confortável'], possibleDifficulties: ['veintiuna = vinte e uma'], continuity: 'Resuelve la última incógnita del audio del episodio 6.', pronunciationRisks: ['decorações', 'prateleira'], recommendedChanges: [] },
     }),
     ep({
-      id: 'pt-a1-20-parabens-seu-antonio', order: 20, title: 'Parabéns, seu Antônio!', titleEs: '¡Feliz cumpleaños, señor Antônio!', duration: 42,
+      id: 'pt-a1-20-parabens-seu-antonio', order: 20, title: 'Parabéns, seu Antônio!', titleEs: '¡Feliz cumpleaños, señor Antônio!', duration: 29,
       characters: ['Sofía', 'Tiago', 'Nina', 'Dona Célia'], location: 'Salón común', objective: 'Integrar presentaciones, planes y expresiones de celebración.',
       grammar: ['revisão A1', 'ir + infinitivo', 'ser e estar'], keywords: [{ target: 'parabéns', es: 'felicidades' }, { target: 'surpresa', es: 'sorpresa' }, { target: 'juntos', es: 'juntos' }, { target: 'bolo', es: 'pastel' }, { target: 'mandar', es: 'enviar' }],
       storyFunction: 'Cierra la celebración y convierte el error en una nueva amistad.',

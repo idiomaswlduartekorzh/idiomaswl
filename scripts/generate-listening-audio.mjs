@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 import process from 'node:process'
-import { execFileSync } from 'node:child_process'
+import { execFileSync, spawnSync } from 'node:child_process'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 
@@ -405,24 +405,85 @@ async function speak({ key, text, voiceId, modelId, settings, locale, previous, 
  */
 const LUFS_OBJETIVO = -16
 const TRUE_PEAK_MAX = -1.5
+/** Cola máxima, en segundos, que se considera golpe y no habla. */
+const COLA_MAXIMA = 0.25
 
-/** Normaliza un turno a la sonoridad objetivo. Devuelve la ruta del archivo normalizado. */
-function normalizeSegment(segment) {
-  const normalized = segment.replace(/\.mp3$/u, '-norm.mp3')
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', segment,
-    '-af', `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11`,
-    '-ar', '44100', '-c:a', 'libmp3lame', '-b:a', BITRATE, normalized])
-  return normalized
+/**
+ * Prepara un turno para el pegado: lo pasa a PCM, le recorta el silencio de los extremos
+ * y lo nivela a la sonoridad objetivo.
+ *
+ * El paso a PCM (wav) no es un detalle. Antes se pegaban los mp3 ya codificados, y como las
+ * tramas MP3 no caen en una muestra exacta —el codificador mete retardo y relleno en cada
+ * archivo—, en CADA cambio de personaje quedaba un pitido de unos 36 ms entre los dos
+ * silencios. David lo oyó antes de que ninguna comprobación lo detectara: «cuando cambian
+ * los personajes hay un sonido raro». Descodificando primero y codificando UNA sola vez al
+ * final, esas junturas desaparecen porque ya no existen.
+ *
+ * El recorte de extremos arregla lo segundo que se vio al medir: cada corte de ElevenLabs
+ * trae su propia cola de silencio, así que entre turnos había 0,88 s en vez de los 0,5 que
+ * pide el guion. Un diálogo con casi un segundo entre réplicas no suena a conversación.
+ */
+/**
+ * Punto donde acaba el habla de verdad, descartando el golpe final de ElevenLabs.
+ *
+ * Medido sobre un turno crudo de portugués A1: el habla termina a 1,6 s, siguen 400 ms a
+ * −60 dB, y en el último tramo aparece un golpe de ~40 ms a **−28 dB**, tan fuerte como la
+ * voz. Está en el archivo que devuelve la API, en todos los turnos, y cae justo antes del
+ * silencio que separa a un personaje del siguiente: de ahí que se oiga exactamente en cada
+ * cambio de voz. Recortar «silencio» no lo quita, porque el golpe no es silencio.
+ *
+ * Se corta en el último silencio largo cuando lo que queda después es demasiado corto para
+ * ser habla. Si no hay tal silencio, se devuelve null y el turno se usa entero.
+ *
+ * La ventana de detección es 0,08 s y no 0,12: con 0,12 se escapaban los turnos cuyo golpe
+ * viene precedido de una pausa más corta. La auditoría encontró uno así entre 1.840 turnos
+ * —ruso A2 ep. 1, un golpe a −28,6 dB— y bajar el umbral lo caza.
+ */
+function findSpeechEnd(segment) {
+  const res = spawnSync('ffmpeg', ['-i', segment, '-af', 'silencedetect=noise=-45dB:d=0.08', '-f', 'null', '-'], { encoding: 'utf8' })
+  const salida = String(res.stderr ?? '')
+  const duracion = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', segment]).toString().trim())
+
+  // Pares (inicio, fin) de cada silencio. El último interesa: si después de él queda muy
+  // poco audio, ese resto es el golpe y se corta desde donde empezó el silencio.
+  const inicios = [...salida.matchAll(/silence_start: ([\d.]+)/gu)].map((m) => Number(m[1]))
+  const fines = [...salida.matchAll(/silence_end: ([\d.]+)/gu)].map((m) => Number(m[1]))
+  if (!inicios.length || !fines.length) return null
+
+  const inicio = inicios[inicios.length - 1]
+  const fin = fines[fines.length - 1]
+  if (fin <= inicio) return null
+
+  const cola = duracion - fin
+  return cola > 0 && cola < COLA_MAXIMA ? inicio : null
+}
+
+function prepareSegment(segment) {
+  const prepared = segment.replace(/\.mp3$/u, '-prep.wav')
+  const corte = findSpeechEnd(segment)
+  const filtros = [
+    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-50dB',
+    'areverse',
+    'silenceremove=start_periods=1:start_silence=0.05:start_threshold=-50dB',
+    'areverse',
+    `loudnorm=I=${LUFS_OBJETIVO}:TP=${TRUE_PEAK_MAX}:LRA=11`,
+  ]
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error',
+    ...(corte === null ? [] : ['-t', String(corte)]),
+    '-i', segment, '-af', filtros.join(','),
+    '-ar', '44100', '-ac', '1', '-c:a', 'pcm_s16le', prepared])
+  return prepared
 }
 
 function concatWithSilence(segments, outputPath) {
-  const listFile = path.join(path.dirname(segments[0]), 'lista.txt')
-  const silence = path.join(path.dirname(segments[0]), 'silencio.mp3')
+  const dir = path.dirname(segments[0])
+  const listFile = path.join(dir, 'lista.txt')
+  const silence = path.join(dir, 'silencio.wav')
 
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-t', String(SILENCE_SECONDS),
-    '-i', 'anullsrc=r=44100:cl=mono', '-c:a', 'libmp3lame', '-b:a', BITRATE, silence])
+    '-i', 'anullsrc=r=44100:cl=mono', '-ar', '44100', '-ac', '1', '-c:a', 'pcm_s16le', silence])
 
-  const leveled = segments.map(normalizeSegment)
+  const leveled = segments.map(prepareSegment)
 
   const lines = []
   leveled.forEach((segment, index) => {
@@ -431,8 +492,25 @@ function concatWithSilence(segments, outputPath) {
   })
   fs.writeFileSync(listFile, lines.join('\n'))
 
+  // Una única codificación a mp3, sobre el PCM ya pegado.
+  /**
+   * Limitador antes de codificar. `loudnorm` en una pasada apunta al objetivo de sonoridad
+   * pero no garantiza el techo de pico: la auditoría encontró episodios a +2,3 dBFS, que es
+   * saturación audible. Se aplica sobre el PCM ya pegado, una sola vez, para no comprimir
+   * dos veces la misma señal.
+   *
+   * El techo es 0,7 (−3,1 dBFS) y no algo más alto porque la codificación a mp3 mete
+   * sobreimpulso: medido sobre el mismo episodio, 0,89 dejaba el pico real en +0,9 dBFS y
+   * 0,79 en +0,3. Solo 0,7 baja de cero, y la sonoridad apenas se mueve (−17,6 LUFS).
+   *
+   * `level=false` es imprescindible. El auto-nivelado de alimiter viene activado por defecto
+   * y devuelve la señal a fondo de escala, con lo que el limitador no sirve de nada. La
+   * primera versión ponía `level=disabled`, que no es un booleano válido de ffmpeg: no dio
+   * error y no hizo nada, y los picos siguieron a 0 dBFS en 85 episodios.
+   */
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', listFile,
-    '-c:a', 'libmp3lame', '-b:a', BITRATE, '-ac', '1', outputPath])
+    '-af', 'alimiter=level_in=1:level_out=1:limit=0.7:attack=5:release=50:level=false',
+    '-c:a', 'libmp3lame', '-b:a', BITRATE, '-ar', '44100', '-ac', '1', outputPath])
 }
 
 function measure(file) {
@@ -499,26 +577,23 @@ async function generate(casting) {
         }
         const segment = path.join(temp, `${lang}-${episode.order}-${String(index).padStart(2, '0')}.mp3`)
 
-        // Coro («Tous», «Todos»): una sola voz cantando «¡feliz cumpleaños!» suena a error.
-        // Se genera la misma línea con varias voces del reparto y se mezclan.
-        const voices = [voice.voice_id, ...(voice.mezclar_con ?? [])]
-        const takes = []
-        for (const [take, voiceId] of voices.entries()) {
-          const audio = await speak({ ...common, voiceId })
-          spent += turn.target.length
-          const file = path.join(temp, `${lang}-${episode.order}-${String(index).padStart(2, '0')}-v${take}.mp3`)
-          fs.writeFileSync(file, audio)
-          takes.push(file)
-        }
-
-        if (takes.length === 1) {
-          fs.copyFileSync(takes[0], segment)
-        } else {
-          execFileSync('ffmpeg', ['-y', '-loglevel', 'error',
-            ...takes.flatMap((file) => ['-i', file]),
-            '-filter_complex', `amix=inputs=${takes.length}:duration=longest:normalize=0,volume=${(1 / Math.sqrt(takes.length)).toFixed(2)}`,
-            '-c:a', 'libmp3lame', '-b:a', BITRATE, '-ac', '1', segment])
-        }
+        /**
+         * Los turnos de coro («Todos», «Tous», «Tutti», «Alle») se generan con UNA sola voz.
+         *
+         * Al principio se mezclaban varias diciendo la misma línea, porque una voz sola
+         * anunciando «¡felicidades!» parecía pobre. Sonaba mal: superponer señales casi
+         * idénticas da filtrado de peine, no un grupo. Escalonar las tomas 70 y 130 ms
+         * tampoco lo arregló, y David lo resumió bien — «se sienten varias personas
+         * hablando a la vez»—, que es literalmente lo que era.
+         *
+         * El error fue de prioridad. Esto es un ejercicio de comprensión auditiva de nivel
+         * A1: el estudiante tiene que poder distinguir cada palabra de «Parabéns, seu
+         * Antônio!». Dos voces encima de otra lo hacen imposible por bien mezcladas que
+         * estén. El grupo se entiende por el guion, que dice quién habla, no por el audio.
+         */
+        const audio = await speak(common)
+        spent += turn.target.length
+        fs.writeFileSync(segment, audio)
         segments.push(segment)
         process.stdout.write(`\r  ${lang} ep${String(episode.order).padStart(2)} · turno ${index + 1}/${turns.length} · ${spent} caracteres    `)
       }
@@ -557,7 +632,33 @@ async function generate(casting) {
 
   console.log(`\nCaracteres enviados a la API: ${spent.toLocaleString('es')}.`)
   console.log(`Manifiesto: ${path.relative(repoRoot, manifestPath)}`)
-  console.log('Escucha cada archivo COMPLETO antes de lanzar el siguiente lote.')
+
+  /**
+   * Auditoría inmediata de lo que se acaba de montar.
+   *
+   * Va aquí y no en el prebuild por dos razones: medir 240 mp3 con ffmpeg tarda varios
+   * minutos y no tiene sentido pagarlos en cada build, y sobre todo porque este es el
+   * momento útil — si el montaje salió mal, se rehace con rebuild-listening-audio.mjs sin
+   * gastar créditos, y cuanto antes se sepa, menos audio malo se publica.
+   *
+   * Los tres defectos que llegaron a producción (niveles dispares, el golpe de ElevenLabs
+   * en cada cambio de voz y el coro superpuesto) los habría cazado esta llamada.
+   */
+  console.log('\n─── auditoría del ensamblado ───')
+  const auditor = spawnSync('node', [
+    path.join(scriptDir, 'audit-listening-audio.mjs'),
+    ...(onlyLang ? ['--lang', onlyLang] : []),
+    ...(onlyLevel ? ['--level', onlyLevel] : []),
+  ], { stdio: 'inherit' })
+  if (auditor.status !== 0) {
+    console.error('\n✗ El audio generado NO pasa la auditoría de ensamblado.')
+    console.error('  Arregla la tubería y rehaz el montaje sin volver a pagar:')
+    console.error(`  node scripts/rebuild-listening-audio.mjs --write${onlyLang ? ` --lang ${onlyLang}` : ''}`)
+    process.exitCode = 1
+    return
+  }
+  console.log('\nEscucha igualmente un archivo COMPLETO antes de lanzar el siguiente lote:')
+  console.log('la auditoría mide el montaje, no juzga si la voz encaja con el personaje.')
 }
 
 async function listVoices() {
