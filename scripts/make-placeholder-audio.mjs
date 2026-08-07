@@ -98,25 +98,64 @@ for (const file of files) {
   const dir = path.join(repoRoot, 'public', 'audio', lang, 'a1')
 
   if (clean) {
-    if (!fs.existsSync(path.join(dir, MARKER))) {
+    const marker = path.join(dir, MARKER)
+    if (!fs.existsSync(marker)) {
       console.log(`· ${lang}: sin marcador PLACEHOLDER, no se toca (¿audio real?)`)
       continue
     }
-    for (const name of fs.readdirSync(dir)) {
-      fs.rmSync(path.join(dir, name))
+
+    /**
+     * Solo se borra lo que este script creó, comprobando el tamaño exacto que anotó el
+     * marcador al generarlo.
+     *
+     * Por qué hace falta: los pitidos ocupan LA MISMA ruta y EL MISMO nombre que el audio
+     * definitivo —a propósito, si no no servirían para revisar la interfaz—, y generar el
+     * audio real no borra el marcador. El 6 de agosto de 2026 este `--clean` se llevó por
+     * delante los 20 mp3 buenos de coreano A1 recién generados. Se recuperaron del historial
+     * de ElevenLabs sin volver a pagar, pero la próxima vez podría no haber historial.
+     */
+    let inventario = {}
+    try {
+      const json = fs.readFileSync(marker, 'utf8').match(/^\{[\s\S]*\}$/mu)
+      if (json) inventario = JSON.parse(json[0])
+    } catch { /* Marcador antiguo sin inventario: se trata como vacío y no se borra nada. */ }
+
+    if (!Object.keys(inventario).length) {
+      console.log(`✗ ${lang}: el marcador no lleva inventario. No se borra nada.`)
+      console.log('  Regenera los placeholders o borra los archivos a mano tras comprobarlos.')
+      continue
+    }
+
+    const intactos = []
+    for (const [name, bytes] of Object.entries(inventario)) {
+      const file = path.join(dir, name)
+      if (!fs.existsSync(file)) continue
+      if (fs.statSync(file).size !== bytes) { intactos.push(name); continue }
+      fs.rmSync(file)
       removed += 1
     }
-    fs.rmdirSync(dir)
-    console.log(`✓ ${lang}: placeholders eliminados`)
+
+    if (intactos.length) {
+      console.log(`⚠ ${lang}: ${intactos.length} archivos han cambiado de tamaño desde que se generaron.`)
+      console.log('  Son audio real, no pitidos: se conservan. ' + intactos.slice(0, 3).join(', '))
+    }
+    fs.rmSync(marker)
+    if (!fs.readdirSync(dir).length) fs.rmdirSync(dir)
+    console.log(`✓ ${lang}: ${removed} placeholders eliminados${intactos.length ? `, ${intactos.length} conservados` : ''}`)
     continue
   }
 
   const series = loadSeries(path.join(seriesDir, file))
   fs.mkdirSync(dir, { recursive: true })
 
+  // El inventario de tamaños es lo que después permite a --clean distinguir un pitido
+  // de un mp3 de verdad servido desde la misma ruta y con el mismo nombre.
+  const inventario = {}
   for (const episode of series.episodes) {
     const name = `listening-${String(episode.order).padStart(2, '0')}.mp3`
-    buildEpisode(path.join(dir, name), episode)
+    const target = path.join(dir, name)
+    buildEpisode(target, episode)
+    inventario[name] = fs.statSync(target).size
     made += 1
   }
 
@@ -130,6 +169,10 @@ for (const file of files) {
       'el validador del prebuild falla si se intenta.',
       '',
       'Al llegar el audio real: node scripts/make-placeholder-audio.mjs --clean',
+      '',
+      'Inventario de lo que creó este script, en bytes. --clean solo borra lo que siga',
+      'midiendo exactamente esto: si un archivo ha cambiado, es audio real y se conserva.',
+      JSON.stringify(inventario, null, 0),
       '',
     ].join('\n'),
   )

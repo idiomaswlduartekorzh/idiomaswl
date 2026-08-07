@@ -71,6 +71,493 @@
         "style": 0.15,
         "use_speaker_boost": true
       }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 1,
+      "id": "ko-b1-01-i-nyeon-hu",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-01.mp3",
+      "caracteres": 278,
+      "duracion_real": 56.02,
+      "caracteres_por_segundo": 4.96,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 2,
+      "id": "ko-b1-02-wolsega-du-bae",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-02.mp3",
+      "caracteres": 299,
+      "duracion_real": 59.04,
+      "caracteres_por_segundo": 5.06,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "지호": "LKOcTG4J4tYTPR9DnLeM"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 3,
+      "id": "ko-b1-03-omgyeoya-doendago-haeyo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-03.mp3",
+      "caracteres": 293,
+      "duracion_real": 70.05,
+      "caracteres_por_segundo": 4.18,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "김 선생님": "0oqpliV6dVSr9XomngOW",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 4,
+      "id": "ko-b1-04-gisareul-sseuryeogo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-04.mp3",
+      "caracteres": 277,
+      "duracion_real": 45.16,
+      "caracteres_por_segundo": 6.13,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "편집장": "Mx48CWClvl522or3Frvp",
+        "소피아": "1BZBO072RKJTzZcDjRox"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 5,
+      "id": "ko-b1-05-eopseojil-tende",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-05.mp3",
+      "caracteres": 285,
+      "duracion_real": 54.4,
+      "caracteres_por_segundo": 5.24,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 6,
+      "id": "ko-b1-06-pyeonjihameul-yeoreoyo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-06.mp3",
+      "caracteres": 281,
+      "duracion_real": 59.6,
+      "caracteres_por_segundo": 4.71,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 7,
+      "id": "ko-b1-07-dongnee-allyeoyo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-07.mp3",
+      "caracteres": 295,
+      "duracion_real": 59.88,
+      "caracteres_por_segundo": 4.93,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "미나": "qWofGdsKN4woEPGCzrdX",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 8,
+      "id": "ko-b1-08-gisaga-sillyeosseo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-08.mp3",
+      "caracteres": 280,
+      "duracion_real": 51.8,
+      "caracteres_por_segundo": 5.41,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "별": "dfGdOKe4Py3B2cmOtW1k",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "지호": "LKOcTG4J4tYTPR9DnLeM"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 9,
+      "id": "ko-b1-09-hwaga-nasseoyo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-09.mp3",
+      "caracteres": 284,
+      "duracion_real": 55.42,
+      "caracteres_por_segundo": 5.12,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "소피아": "1BZBO072RKJTzZcDjRox"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 10,
+      "id": "ko-b1-10-jeongjeong-gisa",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-10.mp3",
+      "caracteres": 294,
+      "duracion_real": 49.34,
+      "caracteres_por_segundo": 5.96,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "편집장": "Mx48CWClvl522or3Frvp",
+        "소피아": "1BZBO072RKJTzZcDjRox"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 11,
+      "id": "ko-b1-11-sonnimi-neomu-manayo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-11.mp3",
+      "caracteres": 288,
+      "duracion_real": 54.63,
+      "caracteres_por_segundo": 5.27,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "미나": "qWofGdsKN4woEPGCzrdX",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 12,
+      "id": "ko-b1-12-dangbungan-swimnida",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-12.mp3",
+      "caracteres": 300,
+      "duracion_real": 65.54,
+      "caracteres_por_segundo": 4.58,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "별": "dfGdOKe4Py3B2cmOtW1k",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "김 선생님": "0oqpliV6dVSr9XomngOW"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 13,
+      "id": "ko-b1-13-sinmun-daesin-ballo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-13.mp3",
+      "caracteres": 270,
+      "duracion_real": 48.83,
+      "caracteres_por_segundo": 5.53,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 14,
+      "id": "ko-b1-14-mungujeom-ajumeoni",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-14.mp3",
+      "caracteres": 285,
+      "duracion_real": 63.96,
+      "caracteres_por_segundo": 4.46,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "문구점 주인": "7oLyBHyhxAjrctX6ZQlw",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 15,
+      "id": "ko-b1-15-o-nyeon-jeon-geu-sonnim",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-15.mp3",
+      "caracteres": 274,
+      "duracion_real": 56.81,
+      "caracteres_por_segundo": 4.82,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "문구점 주인": "7oLyBHyhxAjrctX6ZQlw",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "지호": "LKOcTG4J4tYTPR9DnLeM"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 16,
+      "id": "ko-b1-16-simhage-malhaesseoyo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-16.mp3",
+      "caracteres": 290,
+      "duracion_real": 56.07,
+      "caracteres_por_segundo": 5.17,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "지호": "LKOcTG4J4tYTPR9DnLeM"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 17,
+      "id": "ko-b1-17-bin-gagereul-bogo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-17.mp3",
+      "caracteres": 272,
+      "duracion_real": 55.84,
+      "caracteres_por_segundo": 4.87,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "문구점 주인": "7oLyBHyhxAjrctX6ZQlw",
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "별": "dfGdOKe4Py3B2cmOtW1k"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 18,
+      "id": "ko-b1-18-iljuil-namasseoyo",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-18.mp3",
+      "caracteres": 252,
+      "duracion_real": 50.78,
+      "caracteres_por_segundo": 4.96,
+      "duracion_declarada_previa": 64,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "김 선생님": "0oqpliV6dVSr9XomngOW",
+        "미나": "qWofGdsKN4woEPGCzrdX",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "유나": "1gYuTfEwELcoEo96wnGj"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 19,
+      "id": "ko-b1-19-isahaneun-nal",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-19.mp3",
+      "caracteres": 269,
+      "duracion_real": 52.45,
+      "caracteres_por_segundo": 5.13,
+      "duracion_declarada_previa": 68,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "지호": "LKOcTG4J4tYTPR9DnLeM",
+        "별": "dfGdOKe4Py3B2cmOtW1k",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "미나": "qWofGdsKN4woEPGCzrdX"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "idioma": "coreano",
+      "episodio": 20,
+      "id": "ko-b1-20-sae-byeol-kapeui-pyeonjiham",
+      "piloto": false,
+      "archivo": "public/audio/coreano/b1/listening-20.mp3",
+      "caracteres": 280,
+      "duracion_real": 59.32,
+      "caracteres_por_segundo": 4.72,
+      "duracion_declarada_previa": 66,
+      "modelo": "eleven_flash_v2_5",
+      "velocidad": 0.9,
+      "voces": {
+        "유나": "1gYuTfEwELcoEo96wnGj",
+        "김 선생님": "0oqpliV6dVSr9XomngOW",
+        "문구점 주인": "7oLyBHyhxAjrctX6ZQlw",
+        "소피아": "1BZBO072RKJTzZcDjRox",
+        "별": "dfGdOKe4Py3B2cmOtW1k",
+        "미나": "qWofGdsKN4woEPGCzrdX"
+      },
+      "ajustes": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "use_speaker_boost": true
+      }
     }
   ]
 }
