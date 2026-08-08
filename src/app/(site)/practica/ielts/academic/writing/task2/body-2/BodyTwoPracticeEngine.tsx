@@ -30,6 +30,16 @@ const LEVELS = [
 function rotateOptions<T>(items: T[], seed: string, index: number) {
   return placeFirstAsCorrect(items, seed, index).options;
 }
+/**
+ * ¿Este modo evalúa algo de verdad?
+ *
+ * Los modos de escritura solo cuentan palabras, y además el botón que dispara la evaluación
+ * está deshabilitado por debajo del mismo umbral: cuando se puede pulsar, la condición ya es
+ * cierta por construcción, así que «Revise this attempt.» era código inalcanzable. Decir
+ * «Level complete.» ahí afirma sobre un texto que nadie ha leído.
+ */
+const SE_CORRIGE = new Set(['mcq', 'assemble', 'order']);
+
 function wordCount(value: string) { return value.trim() ? value.trim().split(/\s+/).length : 0; }
 
 export default function BodyTwoPracticeEngine({ essayType }: { essayType: EssayTypeId }) {
@@ -41,7 +51,8 @@ export default function BodyTwoPracticeEngine({ essayType }: { essayType: EssayT
   const [paragraphFields, setParagraphFields] = useState<string[]>([]);
   const [completed, setCompleted] = useState<number[]>([]);
   const lesson = BODY_TWO_LESSONS.find((item) => item.id === essayType) ?? BODY_TWO_LESSONS[0];
-  const exercise = lesson.examples[(level + 1) % lesson.examples.length];
+  // examples[0] es el worked example impreso más arriba; se salta. Ver BodyOnePracticeEngine.
+  const exercise = lesson.examples[1 + (level % (lesson.examples.length - 1))];
   const active = LEVELS[level];
 
   useEffect(() => { const saved = window.localStorage.getItem(`welearn-task2-body2-${essayType}`); if (saved) setCompleted(JSON.parse(saved)); }, [essayType]);
@@ -76,7 +87,7 @@ export default function BodyTwoPracticeEngine({ essayType }: { essayType: EssayT
       {active.mode === 'paragraph' && <><p className={styles.exercisePrompt}>Build a complete Body 2 paragraph with the {lesson.shortLabel} architecture.</p><p className={styles.exerciseInstruction}>{exercise.prompt}<br /><strong>Body 2 job:</strong> {exercise.paragraphJob}</p><div className={styles.paragraphBuilder}>{exercise.blocks.map((block, index) => <label key={block.label}><strong>{block.label}</strong><span>{block.purpose}</span><textarea rows={3} value={paragraphFields[index] ?? ''} onChange={(event) => { setParagraphFields((current) => current.map((value, fieldIndex) => fieldIndex === index ? event.target.value : value)); setChecked(false); }} /></label>)}</div><p className={styles.wordMeter}>{paragraphWords} words · WeLearn study target: about 80–110 words, adjusted to the essay</p></>}
       {active.mode === 'transfer' && <div className={styles.transferBridge}><span>Paragraph-to-essay bridge</span><h4>Your Body 2 block work is ready to transfer</h4><p>Complete Essay Practice is where timing and the full 250-word response belong. This engine remains focused on building the second paragraph correctly.</p><ul><li>Carry over the exact Body 2 job.</li><li>Keep the {exercise.blocks.map((block) => block.label).join(' → ')} sequence visible.</li><li>Confirm that the paragraph completes the instruction without repeating Body 1.</li></ul><Link href="/practica/ielts/academic/writing/task2/tarea-completa">Open Complete Essay Practice <ExternalLink size={16} /></Link></div>}
       <div className={styles.exerciseActions}><button type="button" className={styles.secondaryButton} onClick={resetExercise}><RotateCcw size={16} /> Reset</button><button type="button" onClick={check} disabled={(active.mode === 'mcq' && !selected) || (active.mode === 'assemble' && assembled.length !== exercise.blocks.length) || (active.mode === 'write' && wordCount(writing) < 12) || (active.mode === 'paragraph' && paragraphWords < 65)}><CheckCircle2 size={17} /> {active.mode === 'transfer' ? 'Mark transfer ready' : 'Check this level'}</button></div>
-      {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`} aria-live="polite"><CheckCircle2 size={20} /><div><strong>{passed ? 'Level complete.' : 'Revise this attempt.'}</strong><p>{active.mode === 'mcq' ? mcq.feedback : active.mode === 'assemble' ? `For this ${lesson.shortLabel} task, the study sequence is ${exercise.blocks.map((block) => block.label).join(' → ')}.` : active.mode === 'write' ? `Compare the function of your sentence with the model ${exercise.blocks[2].label.toLowerCase()} block.` : active.mode === 'paragraph' ? 'Read the blocks as one continuous paragraph. Check that Body 2 adds a distinct idea and completes the required answer.' : 'The transfer point is ready. Complete Essay Practice handles timing and the full response; this engine does not award a band score.'}</p>{active.mode !== 'transfer' && <p><strong>Model:</strong> {bodyTwoParagraph(exercise)}</p>}</div></div>}
+      {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`} aria-live="polite"><CheckCircle2 size={20} /><div><strong>{passed ? SE_CORRIGE.has(active.mode) ? 'Level complete.' : 'Ready to compare.' : 'Revise this attempt.'}</strong><p>{active.mode === 'mcq' ? mcq.feedback : active.mode === 'assemble' ? `For this ${lesson.shortLabel} task, the study sequence is ${exercise.blocks.map((block) => block.label).join(' → ')}.` : active.mode === 'write' ? `Compare the function of your sentence with the model ${exercise.blocks[2].label.toLowerCase()} block.` : active.mode === 'paragraph' ? 'Read the blocks as one continuous paragraph. Check that Body 2 adds a distinct idea and completes the required answer.' : 'The transfer point is ready. Complete Essay Practice handles timing and the full response; this engine does not award a band score.'}</p>{active.mode !== 'transfer' && <p><strong>Model:</strong> {bodyTwoParagraph(exercise)}</p>}</div></div>}
     </div><div className={styles.engineNav}><button type="button" onClick={() => go(Math.max(0, level - 1))} disabled={level === 0}><ArrowLeft size={16} /> Previous</button><button type="button" onClick={() => go(Math.min(LEVELS.length - 1, level + 1))} disabled={level === LEVELS.length - 1}>Next <ArrowRight size={16} /></button></div></div>
   </section>;
 }

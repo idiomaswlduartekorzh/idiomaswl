@@ -32,6 +32,16 @@ function rotateOptions<T>(items: T[], seed: string, index: number) {
   return placeFirstAsCorrect(items, seed, index).options;
 }
 
+/**
+ * ¿Este modo evalúa algo de verdad?
+ *
+ * Los modos de escritura solo cuentan palabras, y además el botón que dispara la evaluación
+ * está deshabilitado por debajo del mismo umbral: cuando se puede pulsar, la condición ya es
+ * cierta por construcción, así que «Revise this attempt.» era código inalcanzable. Decir
+ * «Level complete.» ahí afirma sobre un texto que nadie ha leído.
+ */
+const SE_CORRIGE = new Set(['mcq', 'assemble', 'order']);
+
 function wordCount(value: string) {
   return value.trim() ? value.trim().split(/\s+/).length : 0;
 }
@@ -45,7 +55,9 @@ export default function BodyOnePracticeEngine({ essayType }: { essayType: EssayT
   const [paragraphFields, setParagraphFields] = useState<string[]>([]);
   const [completed, setCompleted] = useState<number[]>([]);
   const lesson = BODY_ONE_LESSONS.find((item) => item.id === essayType) ?? BODY_ONE_LESSONS[0];
-  const exercise = lesson.examples[(level + 1) % lesson.examples.length];
+  // examples[0] es el worked example, impreso entero más arriba en la misma página: si un
+  // nivel cae en él, «completa el bloque que falta» se responde scrolleando. Se salta el 0.
+  const exercise = lesson.examples[1 + (level % (lesson.examples.length - 1))];
   const active = LEVELS[level];
 
   useEffect(() => {
@@ -133,7 +145,7 @@ export default function BodyOnePracticeEngine({ essayType }: { essayType: EssayT
           <button type="button" className={styles.secondaryButton} onClick={resetExercise}><RotateCcw size={16} /> Reset</button>
           <button type="button" onClick={check} disabled={(active.mode === 'mcq' && !selected) || (active.mode === 'assemble' && assembled.length !== exercise.blocks.length) || (active.mode === 'write' && wordCount(writing) < 12) || (active.mode === 'paragraph' && paragraphWords < 65)}><CheckCircle2 size={17} /> {active.mode === 'transfer' ? 'Mark transfer ready' : 'Check this level'}</button>
         </div>
-        {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`} aria-live="polite"><CheckCircle2 size={20} /><div><strong>{passed ? 'Level complete.' : 'Revise this attempt.'}</strong><p>{active.mode === 'mcq' ? mcq.feedback : active.mode === 'assemble' ? `For this ${lesson.shortLabel} task, the study sequence is ${exercise.blocks.map((block) => block.label).join(' → ')}.` : active.mode === 'write' ? `Compare the function of your sentence with the model ${exercise.blocks[2].label.toLowerCase()} block.` : active.mode === 'paragraph' ? 'Read the blocks as one continuous paragraph. Remove repetition and verify that every sentence develops the same controlling idea.' : 'The transfer point is ready. Complete Essay Practice handles timing and the full 250-word response; this engine does not award a band score.'}</p>{active.mode !== 'transfer' && <p><strong>Model:</strong> {bodyParagraph(exercise)}</p>}</div></div>}
+        {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`} aria-live="polite"><CheckCircle2 size={20} /><div><strong>{passed ? SE_CORRIGE.has(active.mode) ? 'Level complete.' : 'Ready to compare.' : 'Revise this attempt.'}</strong><p>{active.mode === 'mcq' ? mcq.feedback : active.mode === 'assemble' ? `For this ${lesson.shortLabel} task, the study sequence is ${exercise.blocks.map((block) => block.label).join(' → ')}.` : active.mode === 'write' ? `Compare the function of your sentence with the model ${exercise.blocks[2].label.toLowerCase()} block.` : active.mode === 'paragraph' ? 'Read the blocks as one continuous paragraph. Remove repetition and verify that every sentence develops the same controlling idea.' : 'The transfer point is ready. Complete Essay Practice handles timing and the full 250-word response; this engine does not award a band score.'}</p>{active.mode !== 'transfer' && <p><strong>Model:</strong> {bodyParagraph(exercise)}</p>}</div></div>}
       </div>
       <div className={styles.engineNav}><button type="button" onClick={() => go(Math.max(0, level - 1))} disabled={level === 0}><ArrowLeft size={16} /> Previous</button><button type="button" onClick={() => go(Math.min(LEVELS.length - 1, level + 1))} disabled={level === LEVELS.length - 1}>Next <ArrowRight size={16} /></button></div>
     </div>

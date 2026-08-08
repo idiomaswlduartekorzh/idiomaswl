@@ -4,11 +4,23 @@ import { useMemo, useState } from 'react';
 import { CheckCircle2, Eye, LockKeyhole, RotateCcw } from 'lucide-react';
 import ColoredBodyParagraph from '../body-1/ColoredBodyParagraph';
 import type { ConclusionExample } from './conclusion-data';
+import { placeFirstAsCorrect } from '@/lib/practica/shuffle-options';
 import styles from '../introduccion/page.module.css';
 
-function rotate<T>(items: T[], amount: number) {
-  const shift = amount % items.length;
-  return [...items.slice(shift), ...items.slice(0, shift)];
+/**
+ * Reparte las opciones; la correcta se escribe siempre primera.
+ *
+ * Era una rotación cíclica —`shift = amount % items.length`— sembrada con un número que no
+ * distinguía un tipo de ensayo de otro. Resultado medido: los cinco tipos compartían solo
+ * tres secuencias, y las cinco eran rotaciones de un mismo ciclo descendente. La letra
+ * correcta bajaba una posición en cada ejemplo, con vuelta: una regla memorizable en una
+ * frase, sin leer nada.
+ *
+ * Ahora la semilla es el título del ejemplo, que es único en toda la serie, y el reparto es
+ * el barajado por bloques de @/lib/practica/shuffle-options.
+ */
+function rotate<T>(items: T[], seed: string, index: number) {
+  return placeFirstAsCorrect(items, seed, index).options;
 }
 
 export default function ConclusionWorkshop({ example, seed }: { example: ConclusionExample; seed: number }) {
@@ -21,7 +33,7 @@ export default function ConclusionWorkshop({ example, seed }: { example: Conclus
     correct,
     'In conclusion, this essay has discussed several interesting points and both sides have advantages.',
     'In the future, governments will probably discover a completely new way to solve this issue.',
-  ], seed), [correct, seed]);
+  ], `taller-conclusion|${example.title}`, seed), [correct, seed]);
   const ready = writing.every((value) => value.trim().split(/\s+/).filter(Boolean).length >= 8);
 
   function reset() { setSelected(''); setChecked(false); setWriting(example.blocks.map(() => '')); setShowModel(false); }

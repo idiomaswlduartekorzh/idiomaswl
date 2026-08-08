@@ -5,16 +5,18 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle2, Eye, FileCheck2, RotateCcw } from 'lucide-react';
 import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 import type { EssayTypeId } from '../introduccion/introduction-data';
-import { REVIEW_LESSONS } from './review-data';
+import { REVIEW_LESSONS, pickDistractors } from './review-data';
+import { placeFirstAsCorrect } from '@/lib/practica/shuffle-options';
 import FinalReviewPracticeEngine from './FinalReviewPracticeEngine';
 import styles from '../introduccion/page.module.css';
 
-function rotate<T>(items: T[], n: number) { const shift = n % items.length; return [...items.slice(shift), ...items.slice(0, shift)]; }
+// Mismo cambio que en los demás talleres: barajado real en vez de rotación cíclica.
+function rotate<T>(items: T[], seed: string, index: number) { return placeFirstAsCorrect(items, seed, index).options; }
 
 function ReviewWorkshop({ lessonId, caseIndex }: { lessonId: EssayTypeId; caseIndex: number }) {
   const lesson = REVIEW_LESSONS.find((item) => item.id === lessonId) ?? REVIEW_LESSONS[0]; const example = lesson.cases[caseIndex];
   const [selected, setSelected] = useState(''); const [checked, setChecked] = useState(false); const [showRevision, setShowRevision] = useState(false);
-  const options = useMemo(() => rotate([example.category, ...lesson.layers.map((layer) => layer.label).filter((item) => item !== example.category).slice(0, 3)], caseIndex + REVIEW_LESSONS.indexOf(lesson)), [caseIndex, example.category, lesson]);
+  const options = useMemo(() => rotate([example.category, ...pickDistractors(lesson.layers.map((layer) => layer.label), example.category, example.issue)], `taller-review|${example.title}`, caseIndex), [caseIndex, example.category, lesson]);
   return <div className={styles.guidedWorkshop}><div className={styles.workshopHeader}><div><span>Guided review workshop</span><h3>You diagnose it before WeLearn revises it</h3></div><button type="button" className={styles.iconButton} onClick={() => { setSelected(''); setChecked(false); setShowRevision(false); }} title="Reset this workshop" aria-label="Reset this workshop"><RotateCcw size={18} /></button></div><div className={styles.workshopStep}><div className={styles.stepLabel}><strong>Step 1</strong><span>Identify the layer that needs attention first</span></div><p className={styles.paragraphJob}><strong>Draft issue:</strong> {example.issue}</p><div className={styles.optionGrid}>{options.map((option, index) => <button key={option} type="button" className={`${styles.option} ${selected === option ? styles.selected : ''} ${checked && option === example.category ? styles.correct : ''} ${checked && selected === option && option !== example.category ? styles.incorrect : ''}`} onClick={() => { setSelected(option); setChecked(false); setShowRevision(false); }}><span>{String.fromCharCode(65 + index)}</span>{option}</button>)}</div><div className={styles.workshopActions}><button type="button" onClick={() => setChecked(true)} disabled={!selected}><Eye size={17} /> Check the diagnosis</button></div>{checked && <div className={`${styles.feedback} ${selected === example.category ? styles.feedbackCorrect : styles.feedbackIncorrect}`}><CheckCircle2 size={20} /><div><strong>{selected === example.category ? 'Correct priority.' : 'Review the answer before polishing it.'}</strong><p>{example.explanation}</p></div></div>}</div><div className={`${styles.workshopStep} ${selected !== example.category || !checked ? styles.stepLocked : ''}`}><div className={styles.stepLabel}><strong>Step 2</strong><span>Compare the targeted revision</span></div>{selected === example.category && checked && <><div className={styles.workshopActions}><button type="button" onClick={() => setShowRevision(true)}><Eye size={17} /> Reveal the targeted revision</button></div>{showRevision && <div className={styles.bodyModelReveal}><span>Expert revision</span><p className={styles.paragraphJob}>{example.revision}</p><p className={styles.comparisonNote}>The revision targets the diagnosed layer. It is not an automated band score or a claim that every sentence must match this wording.</p></div>}</>}</div></div>;
 }
 

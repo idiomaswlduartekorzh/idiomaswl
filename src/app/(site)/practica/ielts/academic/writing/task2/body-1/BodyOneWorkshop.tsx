@@ -4,11 +4,23 @@ import { useMemo, useState } from 'react';
 import { CheckCircle2, Eye, LockKeyhole, RotateCcw } from 'lucide-react';
 import type { BodyOneExample } from './body-one-data';
 import ColoredBodyParagraph from './ColoredBodyParagraph';
+import { placeFirstAsCorrect } from '@/lib/practica/shuffle-options';
 import styles from '../introduccion/page.module.css';
 
-function rotate<T>(items: T[], amount: number) {
-  const shift = amount % items.length;
-  return [...items.slice(shift), ...items.slice(0, shift)];
+/**
+ * Reparte las opciones; la correcta se escribe siempre primera.
+ *
+ * Era una rotación cíclica —`shift = amount % items.length`— sembrada con un número que no
+ * distinguía un tipo de ensayo de otro. Resultado medido: los cinco tipos compartían solo
+ * tres secuencias, y las cinco eran rotaciones de un mismo ciclo descendente. La letra
+ * correcta bajaba una posición en cada ejemplo, con vuelta: una regla memorizable en una
+ * frase, sin leer nada.
+ *
+ * Ahora la semilla es el título del ejemplo, que es único en toda la serie, y el reparto es
+ * el barajado por bloques de @/lib/practica/shuffle-options.
+ */
+function rotate<T>(items: T[], seed: string, index: number) {
+  return placeFirstAsCorrect(items, seed, index).options;
 }
 
 export default function BodyOneWorkshop({ example, seed }: { example: BodyOneExample; seed: number }) {
@@ -21,7 +33,7 @@ export default function BodyOneWorkshop({ example, seed }: { example: BodyOneExa
     correctTopic,
     'There are many different opinions about this issue, and both sides will be discussed in this essay.',
     'This topic has several causes, effects, advantages and disadvantages for modern society.',
-  ], seed), [correctTopic, seed]);
+  ], `taller-body1|${example.title}`, seed), [correctTopic, seed]);
   const writingReady = Object.values(answers).every((value) => value.trim().length >= 12);
 
   function reset() {

@@ -24,17 +24,29 @@ const LEVELS = [
 function rotate<T>(items: T[], seed: string, index: number) {
   return placeFirstAsCorrect(items, seed, index).options;
 }
+/**
+ * ¿Este modo evalúa algo de verdad?
+ *
+ * Los modos de escritura solo cuentan palabras, y además el botón que dispara la evaluación
+ * está deshabilitado por debajo del mismo umbral: cuando se puede pulsar, la condición ya es
+ * cierta por construcción, así que «Revise this attempt.» era código inalcanzable. Decir
+ * «Level complete.» ahí afirma sobre un texto que nadie ha leído.
+ */
+const SE_CORRIGE = new Set(['mcq', 'assemble', 'order']);
+
 function words(value: string) { return value.trim().split(/\s+/).filter(Boolean).length; }
 
 export default function ConclusionPracticeEngine({ essayType }: { essayType: EssayTypeId }) {
   const [level, setLevel] = useState(0); const [selected, setSelected] = useState(''); const [checked, setChecked] = useState(false);
   const [assembled, setAssembled] = useState<string[]>([]); const [writing, setWriting] = useState(''); const [fields, setFields] = useState<string[]>([]); const [completed, setCompleted] = useState<number[]>([]);
   const lesson = CONCLUSION_LESSONS.find((item) => item.id === essayType) ?? CONCLUSION_LESSONS[0];
-  const example = lesson.examples[(level + 2) % lesson.examples.length]; const active = LEVELS[level];
+  const example = lesson.examples[1 + (level % (lesson.examples.length - 1))]; const active = LEVELS[level];
   useEffect(() => { setFields(example.blocks.map(() => '')); }, [example]);
   useEffect(() => { const saved = window.localStorage.getItem(`welearn-task2-conclusion-${essayType}`); if (saved) setCompleted(JSON.parse(saved)); }, [essayType]);
   const mcq = useMemo(() => {
-    if (level === 0) return { q: `What must this ${lesson.shortLabel} conclusion do?`, c: lesson.function, a: lesson.function, o: rotate([lesson.function, 'Introduce the strongest idea that did not fit in the body.', 'Describe what the essay has discussed without giving an answer.', 'Predict how the topic will change in the future.'], `conclusion|${lesson.id}`, level), f: 'A conclusion completes the existing answer; it does not create a new one.' };
+    // `c` se pinta como contexto ENCIMA de las opciones, así que no puede ser la respuesta:
+    // valía `lesson.function`, es decir, la opción correcta impresa sobre la rejilla.
+    if (level === 0) return { q: `What must this ${lesson.shortLabel} conclusion do?`, c: example.prompt, a: lesson.function, o: rotate([lesson.function, 'Introduce the strongest idea that did not fit in the body.', 'Describe what the essay has discussed without giving an answer.', 'Predict how the topic will change in the future.'], `conclusion|${lesson.id}`, level), f: 'A conclusion completes the existing answer; it does not create a new one.' };
     if (level === 1) return { q: 'Which opening preserves the established answer?', c: example.prompt, a: example.blocks[0].text, o: rotate([example.blocks[0].text, 'This essay has looked at several different ideas about this important topic.', 'There are convincing arguments on every side, so no clear judgement is possible.', 'A new policy will certainly solve this problem within a few years.'], `conclusion|${lesson.id}`, level), f: 'The aligned opening restates the same answer with fresh wording.' };
     if (level === 2) return { q: 'Which diagnosis identifies the most serious conclusion error?', c: 'Draft: “In conclusion, both sides are interesting. A future study may discover a better answer.”', a: 'The draft loses the required answer and introduces new speculation.', o: rotate(['The draft loses the required answer and introduces new speculation.', 'The draft needs an invented statistic.', 'The draft is wrong because every conclusion needs three sentences.', 'The draft should copy the thesis word for word.'], `conclusion|${lesson.id}`, level), f: 'Position drift and new ideas damage Task Response more seriously than a missing memorised phrase.' };
     return { q: `Which sentence best completes the ${example.blocks[1].label.toLowerCase()}?`, c: `${example.blocks[0].text} [SECOND BLOCK MISSING]`, a: example.blocks[1].text, o: rotate([example.blocks[1].text, 'This issue has many causes, effects, benefits and disadvantages.', 'A famous study proves that this answer is correct.', 'Governments should also consider an unrelated policy that was not discussed.'], `conclusion|${lesson.id}`, level), f: 'The final block synthesises reasoning already developed in the essay.' };
@@ -55,7 +67,7 @@ export default function ConclusionPracticeEngine({ essayType }: { essayType: Ess
       {active[1] === 'paragraph' && <><p className={styles.exercisePrompt}>Build the complete conclusion.</p><p className={styles.exerciseInstruction}>{example.prompt}</p><div className={styles.paragraphBuilder}>{example.blocks.map((block, index) => <label key={block.label}><strong>{block.label}</strong><span>{block.purpose}</span><textarea rows={4} value={fields[index] ?? ''} onChange={(event) => { setFields((current) => current.map((value, itemIndex) => itemIndex === index ? event.target.value : value)); setChecked(false); }} /></label>)}</div><p className={styles.wordMeter}>{totalWords} words · WeLearn study target: about 30–50 words, adjusted to the essay</p></>}
       {active[1] === 'transfer' && <div className={styles.transferBridge}><span>Conclusion-to-essay bridge</span><h4>Your closing blocks are ready to transfer</h4><p>Complete Essay Practice is where timing and the full 250-word response belong.</p><ul><li>Keep the same answer from the thesis.</li><li>Synthesise only ideas developed in the body.</li><li>Run Final Review before submitting the complete response.</li></ul><Link href="/practica/ielts/academic/writing/task2/tarea-completa">Open Complete Essay Practice <ExternalLink size={16} /></Link></div>}
       <div className={styles.exerciseActions}><button type="button" className={styles.secondaryButton} onClick={reset}><RotateCcw size={16} /> Reset</button><button type="button" onClick={check} disabled={(active[1] === 'mcq' && !selected) || (active[1] === 'assemble' && assembled.length !== order.length) || (active[1] === 'write' && words(writing) < 10) || (active[1] === 'paragraph' && totalWords < 25)}><CheckCircle2 size={17} /> {active[1] === 'transfer' ? 'Mark transfer ready' : 'Check this level'}</button></div>
-      {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`}><CheckCircle2 size={20} /><div><strong>{passed ? 'Level complete.' : 'Revise this attempt.'}</strong><p>{active[1] === 'mcq' ? mcq.f : active[1] === 'assemble' ? `Use ${order.join(' → ')} for this task.` : active[1] === 'transfer' ? 'Transfer is ready; this engine does not award a band score.' : `Compare the function of each sentence with this model: ${conclusionText(example)}`}</p></div></div>}
+      {checked && <div className={`${styles.feedback} ${passed ? styles.feedbackCorrect : styles.feedbackIncorrect}`}><CheckCircle2 size={20} /><div><strong>{passed ? SE_CORRIGE.has(active[1]) ? 'Level complete.' : 'Ready to compare.' : 'Revise this attempt.'}</strong><p>{active[1] === 'mcq' ? mcq.f : active[1] === 'assemble' ? `Use ${order.join(' → ')} for this task.` : active[1] === 'transfer' ? 'Transfer is ready; this engine does not award a band score.' : `Compare the function of each sentence with this model: ${conclusionText(example)}`}</p></div></div>}
     </div><div className={styles.engineNav}><button type="button" onClick={() => go(Math.max(0, level - 1))} disabled={level === 0}><ArrowLeft size={16} /> Previous</button><button type="button" onClick={() => go(Math.min(7, level + 1))} disabled={level === 7}>Next <ArrowRight size={16} /></button></div></div>
   </section>;
 }

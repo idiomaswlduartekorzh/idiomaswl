@@ -63,3 +63,28 @@ export const REVIEW_LESSONS: ReviewLesson[] = BODY_ONE_LESSONS.map((source) => (
   id: source.id, ...meta[source.id], layers: commonLayers,
   cases: source.examples.map((example, index) => ({ title: example.title, prompt: example.prompt, draft: categorySets[source.id][index][1], category: categorySets[source.id][index][0], issue: categorySets[source.id][index][1], revision: categorySets[source.id][index][2], explanation: categorySets[source.id][index][3] })),
 }));
+
+/**
+ * Elige tres capas distractoras sin dejar ninguna sistemáticamente fuera.
+ *
+ * Antes era `layers.filter((l) => l !== category).slice(0, 3)`. Con cinco capas, `slice(0, 3)`
+ * descarta siempre las dos últimas de la lista, así que «Language control» —la última— solo
+ * llegaba a aparecer en la rejilla cuando ERA la respuesta. Se acertaban 5 de las 20
+ * preguntas del taller con esa sola regla, sin leer el enunciado.
+ *
+ * La ventana rota según el caso, de modo que a lo largo de la serie cada capa aparece como
+ * distractor. El desplazamiento sale de un hash del texto del problema, no del índice: así
+ * dos casos contiguos no comparten reparto y el resultado no depende del orden del array.
+ */
+export function pickDistractors(layers: string[], category: string, seed: string): string[] {
+  const pool = layers.filter((layer) => layer !== category);
+  if (pool.length <= 3) return pool;
+
+  let hash = 0x811c9dc5;
+  for (let index = 0; index < seed.length; index += 1) {
+    hash ^= seed.charCodeAt(index);
+    hash = Math.imul(hash, 0x01000193);
+  }
+  const start = (hash >>> 0) % pool.length;
+  return Array.from({ length: 3 }, (_, offset) => pool[(start + offset) % pool.length]);
+}
