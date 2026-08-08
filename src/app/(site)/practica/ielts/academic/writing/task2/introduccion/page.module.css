@@ -1092,6 +1092,13 @@
 
 /* Contenedor de la vista en prosa de la introducción. Va debajo de las tarjetas: primero
    las piezas, luego el párrafo leído de corrido. Mismo tratamiento que Body 1. */
+/* Aviso de copia literal en la paráfrasis. Es lo único que el taller comprueba solo, y por
+   eso se distingue del contador neutro que tiene al lado. */
+.copyWarning {
+  color: #8a2230 !important;
+  font-weight: 600;
+}
+
 .paragraphView {
   border: 1px solid var(--line-soft);
   border-radius: 10px;

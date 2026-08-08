@@ -1,0 +1,743 @@
+'use client'
+
+import { useMemo, useState } from 'react'
+import type { Colocacion, VocabBlock, VocabEntry, VocabLevel } from '@/data/practica/vocabulario/schema'
+import { opcionesDe } from '@/data/practica/vocabulario/opciones'
+import {
+  ahuecar,
+  corregirDictado,
+  ejercicioCaja2,
+  evaluarFrasePropia,
+  limpio,
+  MIN_FRASES,
+  MIN_PALABRAS_USADAS,
+  progresoEscritura,
+} from '@/data/practica/vocabulario/ejercicios'
+
+/**
+ * Motor único de vocabulario para los ocho idiomas.
+ *
+ * Sustituye a los 24 `Content.tsx` que había, cada uno con su propio esquema y su propia
+ * interfaz. Lo que este motor añade y aquellos no tenían es el método: la caja del repaso
+ * espaciado no decide solo CUÁNDO vuelve una palabra, decide QUÉ se pregunta.
+ *
+ *   caja 1 · reconocer          → opción múltiple, lengua meta → español
+ *   caja 2 · producir con ayuda → escribir la palabra con la inicial dada
+ *   caja 3 · producir           → escribir la palabra sin ayuda
+ *   caja 4 · usar en contexto   → rellenar el hueco en la frase real donde suena
+ *   caja 5 · frase propia       → escribirla uno mismo. Solo aquí se da por dominada
+ *
+ * Por eso «dominada» deja de significar «volteó una tarjeta».
+ *
+ * La persistencia entre sesiones es la Fase 2 (Supabase + localStorage); aquí el progreso
+ * vive en memoria, que es lo que hace falta para ver el método funcionando.
+ */
+
+const COLOR = '#e11d48'
+
+type Props = {
+  bloque: VocabBlock
+  nivel: VocabLevel
+  idiomaLabel: string
+  nivelLabel: string
+  /** BCP-47 de la lengua meta: la voz del dictado depende de él (en-US, de-DE, ko-KR…). */
+  locale: string
+}
+
+const CAJAS = [
+  { n: 1, nombre: 'Reconocer', pide: 'Elige el significado' },
+  { n: 2, nombre: 'Producir con ayuda', pide: 'Escríbela — te doy la inicial' },
+  { n: 3, nombre: 'Producir', pide: 'Escríbela sin ayuda' },
+  { n: 4, nombre: 'Usar en contexto', pide: 'Rellena el hueco de la frase' },
+  { n: 5, nombre: 'Frase propia', pide: 'Úsala en una frase tuya' },
+] as const
+
+// ─── Utilidades de navegador ──────────────────────────────────────────────────
+//
+// Todo lo que decide qué ve o qué acierta el estudiante vive en `ejercicios.ts` y `opciones.ts`,
+// fuera del componente, para que la puerta de calidad pueda ejecutarlo. Aquí solo queda lo que
+// depende del navegador y no se puede auditar en Node.
+
+/**
+ * Dictado sin archivos de audio.
+ *
+ * El audio por palabra se genera con ElevenLabs en la Fase 5, con el catálogo cerrado. Hasta
+ * entonces el dictado usa la voz del propio navegador: no pesa en el repo, no cuesta, y para
+ * frases de A1 basta. Cuando llegue el audio de verdad, esto se sustituye y el ejercicio no
+ * cambia de forma.
+ */
+function decir(texto: string, locale: string): boolean {
+  if (typeof window === 'undefined' || !window.speechSynthesis) return false
+  const u = new SpeechSynthesisUtterance(texto)
+  u.lang = locale
+  u.rate = 0.82
+  window.speechSynthesis.cancel()
+  window.speechSynthesis.speak(u)
+  return true
+}
+
+const hayVoz = () => typeof window !== 'undefined' && !!window.speechSynthesis
+
+
+// ─── Piezas de presentación ───────────────────────────────────────────────────
+
+function Chunks({ colocaciones }: { colocaciones: Colocacion[] }) {
+  return (
+    <ul style={{ listStyle: 'none', padding: 0, margin: '0.5rem 0 0', display: 'grid', gap: '0.3rem' }}>
+      {colocaciones.map((col) => (
+        <li key={col.chunk} style={{ fontSize: '0.86rem', lineHeight: 1.45 }}>
+          <strong style={{ color: COLOR }}>{col.chunk}</strong>
+          <span style={{ color: 'var(--muted)' }}> — {col.es}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function Fuente({ entrada }: { entrada: VocabEntry }) {
+  const f = entrada.ejemplo.fuente
+  const esCorpus = f.tipo === 'corpus'
+  return (
+    <span
+      title={esCorpus ? `Se oye en el episodio ${f.episodio} de ${f.serie}` : f.motivo}
+      style={{
+        display: 'inline-block',
+        fontSize: '0.68rem',
+        fontFamily: 'var(--mono)',
+        padding: '0.12rem 0.42rem',
+        borderRadius: 6,
+        border: '1px solid var(--line-soft)',
+        color: esCorpus ? COLOR : 'var(--muted)',
+        background: esCorpus ? `${COLOR}0d` : 'transparent',
+        whiteSpace: 'nowrap',
+      }}
+    >
+      {esCorpus ? `🎧 ep${f.episodio}` : '✎ redactado'}
+    </span>
+  )
+}
+
+function Ficha({ entrada }: { entrada: VocabEntry }) {
+  const x = entrada.extra
+  return (
+    <article
+      style={{
+        border: '1px solid var(--line-soft)',
+        borderRadius: 14,
+        padding: '1rem 1.1rem',
+        background: 'var(--bg)',
+        display: 'grid',
+        gap: '0.45rem',
+      }}
+    >
+      <header style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
+        <h3 style={{ margin: 0, fontSize: '1.22rem', letterSpacing: '-0.01em' }}>{entrada.lemma}</h3>
+        {'acento' in x && x.acento && x.acento !== entrada.lemma && (
+          <span style={{ fontFamily: 'var(--mono)', fontSize: '0.76rem', color: 'var(--muted)' }}>{x.acento}</span>
+        )}
+        <span style={{ fontSize: '0.72rem', fontFamily: 'var(--mono)', color: 'var(--muted)' }}>{entrada.pos}</span>
+      </header>
+
+      <p style={{ margin: 0, fontSize: '0.98rem', color: 'var(--ink)' }}>{entrada.es}</p>
+
+      {'colocaciones' in x && <Chunks colocaciones={x.colocaciones} />}
+
+      <div
+        style={{
+          marginTop: '0.35rem',
+          paddingTop: '0.55rem',
+          borderTop: '1px solid var(--line-soft)',
+          display: 'grid',
+          gap: '0.25rem',
+        }}
+      >
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+          <p style={{ margin: 0, fontSize: '0.9rem', flex: 1 }}>{entrada.ejemplo.target}</p>
+          <Fuente entrada={entrada} />
+        </div>
+        <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)' }}>{entrada.ejemplo.es}</p>
+      </div>
+    </article>
+  )
+}
+
+// ─── Sesión de estudio ────────────────────────────────────────────────────────
+
+function Sesion({
+  entradas,
+  locale,
+  onSalir,
+}: {
+  entradas: VocabEntry[]
+  locale: string
+  onSalir: () => void
+}) {
+  const [cajas, setCajas] = useState<Record<string, number>>(() =>
+    Object.fromEntries(entradas.map((e) => [e.id, 1])),
+  )
+  const [respuesta, setRespuesta] = useState('')
+  const [veredicto, setVeredicto] = useState<'acierto' | 'fallo' | null>(null)
+  const [detalle, setDetalle] = useState<string[]>([])
+  const [chunkUsado, setChunkUsado] = useState<string | undefined>(undefined)
+
+  const pendientes = entradas.filter((e) => (cajas[e.id] ?? 1) <= 5)
+  const actual = useMemo(
+    () => pendientes.slice().sort((a, b) => (cajas[a.id] ?? 1) - (cajas[b.id] ?? 1))[0],
+    [pendientes, cajas],
+  )
+
+  if (!actual) return <CierreDeUnidad entradas={entradas} locale={locale} onSalir={onSalir} />
+
+
+  const caja = cajas[actual.id] ?? 1
+  const hueco = caja === 4 ? ahuecar(actual.ejemplo.target, actual.lemma) : null
+  // Si la palabra no se puede localizar en su frase, la caja 4 no tiene ejercicio: se
+  // degrada a producción libre en vez de mostrar un hueco falso.
+  const modo = caja === 4 && !hueco ? 3 : caja
+  const caja2 = ejercicioCaja2(actual, entradas.filter((e) => e.id !== actual.id).map((e) => e.lemma))
+
+  function calificar(ok: boolean, faltas: string[] = [], chunk?: string) {
+    setVeredicto(ok ? 'acierto' : 'fallo')
+    setDetalle(faltas)
+    setChunkUsado(chunk)
+  }
+
+  function siguiente() {
+    setCajas((prev) => ({
+      ...prev,
+      [actual.id]: veredicto === 'acierto' ? (prev[actual.id] ?? 1) + 1 : 1,
+    }))
+    setRespuesta('')
+    setVeredicto(null)
+    setDetalle([])
+    setChunkUsado(undefined)
+  }
+
+  /**
+   * Lo que había que contestar — y no es lo mismo en cada caja. En la caja 1 la pregunta es
+   * el significado, así que decir «Era father» cuando el estudiante buscaba «padre» responde
+   * a otra pregunta y lo deja sin saber qué falló.
+   */
+  const esperado = modo === 1 ? actual.es : modo === 4 && hueco ? hueco.forma : actual.lemma
+
+  const { opciones } = opcionesDe(actual, entradas)
+
+  return (
+    <div style={{ display: 'grid', gap: '1rem' }}>
+      {/* Escalera: el estado de las diez de un vistazo */}
+      <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
+        {entradas.map((e) => {
+          const c = cajas[e.id] ?? 1
+          return (
+            <span
+              key={e.id}
+              title={`${e.lemma} · caja ${Math.min(c, 5)}`}
+              style={{
+                fontSize: '0.68rem',
+                fontFamily: 'var(--mono)',
+                padding: '0.16rem 0.4rem',
+                borderRadius: 6,
+                border: `1px solid ${e.id === actual.id ? COLOR : 'var(--line-soft)'}`,
+                background: c > 5 ? `${COLOR}22` : 'transparent',
+                color: c > 5 ? COLOR : 'var(--muted)',
+              }}
+            >
+              {e.lemma} {c > 5 ? '✓' : c}
+            </span>
+          )
+        })}
+      </div>
+
+      <div style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}>
+        <p style={{ margin: '0 0 0.9rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
+          CAJA {modo} · {CAJAS[modo - 1].nombre} —{' '}
+          {modo === 2 && caja2.tipo === 'ortografia' ? 'Corrige cómo se escribe' : CAJAS[modo - 1].pide}
+        </p>
+
+        {/* Caja 1 · reconocer */}
+        {modo === 1 && (
+          <>
+            <p style={{ fontSize: '1.5rem', margin: '0 0 1rem', fontWeight: 700 }}>{actual.lemma}</p>
+            <div style={{ display: 'grid', gap: '0.45rem' }}>
+              {opciones.map((opcion) => (
+                <button
+                  key={opcion}
+                  disabled={veredicto !== null}
+                  onClick={() => calificar(opcion === actual.es)}
+                  style={{
+                    ...botonOpcion,
+                    borderColor: veredicto && opcion === actual.es ? COLOR : 'var(--line-soft)',
+                    background: veredicto && opcion === actual.es ? `${COLOR}0d` : 'var(--bg)',
+                  }}
+                >
+                  {opcion}
+                </button>
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* Cajas 2 y 3 · producir */}
+        {(modo === 2 || modo === 3) && (
+          <>
+            {modo === 2 && caja2.tipo === 'ortografia' ? (
+              <>
+                <p style={{ fontSize: '1.15rem', margin: '0 0 0.3rem' }}>
+                  Esta palabra está mal escrita. Corrígela:
+                </p>
+                <p style={{ fontSize: '1.6rem', margin: '0 0 0.2rem', fontWeight: 700, color: 'var(--muted)', textDecoration: 'underline', textDecorationStyle: 'wavy', textDecorationColor: COLOR }}>
+                  {caja2.mal}
+                </p>
+                <p style={{ color: 'var(--muted)', fontSize: '0.86rem', margin: '0 0 0.8rem' }}>{actual.es}</p>
+              </>
+            ) : (
+              <p style={{ fontSize: '1.15rem', margin: '0 0 0.3rem' }}>{actual.es}</p>
+            )}
+            {modo === 2 && caja2.tipo === 'inicial' && (
+              <p style={{ fontFamily: 'var(--mono)', color: 'var(--muted)', fontSize: '0.84rem', margin: '0 0 0.8rem' }}>
+                empieza por «{actual.lemma.slice(0, 1)}» · {actual.lemma.length} letras
+              </p>
+            )}
+            <input
+              value={respuesta}
+              disabled={veredicto !== null}
+              onChange={(e) => setRespuesta(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !veredicto) calificar(limpio(respuesta) === limpio(actual.lemma))
+              }}
+              placeholder="Escribe la palabra"
+              style={campo}
+            />
+          </>
+        )}
+
+        {/* Caja 4 · usar en contexto */}
+        {modo === 4 && hueco && (
+          <>
+            <p style={{ fontSize: '1.05rem', margin: '0 0 0.55rem', lineHeight: 1.6 }}>
+              {hueco.antes}
+              <span style={{ borderBottom: `2px solid ${COLOR}`, padding: '0 1.6rem' }} />
+              {hueco.despues}
+            </p>
+            <p style={{ color: 'var(--muted)', fontSize: '0.86rem', margin: '0 0 0.8rem' }}>{actual.ejemplo.es}</p>
+            <input
+              value={respuesta}
+              disabled={veredicto !== null}
+              onChange={(e) => setRespuesta(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !veredicto) calificar(limpio(respuesta) === limpio(hueco.forma))
+              }}
+              placeholder="La forma que falta"
+              style={campo}
+            />
+          </>
+        )}
+
+        {/* Caja 5 · frase propia */}
+        {modo === 5 && (
+          <>
+            <p style={{ margin: '0 0 0.3rem', fontSize: '1.05rem' }}>
+              Escribe una frase tuya con <strong style={{ color: COLOR }}>{actual.lemma}</strong>.
+            </p>
+            <p style={{ color: 'var(--muted)', fontSize: '0.84rem', margin: '0 0 0.8rem' }}>
+              Puedes apoyarte en un chunk: {'colocaciones' in actual.extra ? actual.extra.colocaciones[0].chunk : actual.lemma}
+            </p>
+            <textarea
+              value={respuesta}
+              disabled={veredicto !== null}
+              onChange={(e) => setRespuesta(e.target.value)}
+              rows={3}
+              placeholder="Tu frase"
+              style={{ ...campo, resize: 'vertical' }}
+            />
+          </>
+        )}
+
+        {/* Acción */}
+        <div style={{ marginTop: '0.9rem', display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          {veredicto === null && modo !== 1 && (
+            <button
+              onClick={() => {
+                if (modo === 5) {
+                  const r = evaluarFrasePropia(respuesta, actual)
+                  calificar(r.ok, r.faltas, r.chunkUsado)
+                } else {
+                  calificar(limpio(respuesta) === limpio(esperado))
+                }
+              }}
+              disabled={respuesta.trim().length === 0}
+              style={{ ...botonPrimario, opacity: respuesta.trim().length === 0 ? 0.45 : 1 }}
+            >
+              Comprobar
+            </button>
+          )}
+
+          {veredicto && (
+            <>
+              <span style={{ fontWeight: 700, color: veredicto === 'acierto' ? COLOR : 'var(--muted)' }}>
+                {veredicto === 'acierto'
+                  ? modo === 5
+                    ? '✓ Dominada'
+                    : `✓ Sube a la caja ${modo + 1}`
+                  : modo === 5
+                    ? '✗ Todavía no'
+                    : `✗ Era «${esperado}» — vuelve a la caja 1`}
+              </span>
+              <button onClick={siguiente} style={botonPrimario}>
+                {veredicto === 'acierto' ? 'Siguiente' : 'Reintentar'}
+              </button>
+            </>
+          )}
+
+          <button onClick={onSalir} style={{ ...botonSecundario, marginLeft: 'auto' }}>Salir</button>
+        </div>
+
+        {/* Qué faltó, dicho en concreto. «Incorrecto» no enseña nada. */}
+        {veredicto && (detalle.length > 0 || chunkUsado) && (
+          <div style={{ marginTop: '0.7rem', fontSize: '0.86rem', display: 'grid', gap: '0.25rem' }}>
+            {detalle.map((d) => (
+              <p key={d} style={{ margin: 0, color: 'var(--muted)' }}>· {d}</p>
+            ))}
+            {chunkUsado && (
+              <p style={{ margin: 0, color: COLOR }}>
+                ✓ Usaste el chunk «{chunkUsado}». Eso es exactamente lo que se busca.
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+// ─── Cierre de unidad: dictado y escritura reforzada ──────────────────────────
+
+/**
+ * El día 6 de la semana tipo (metodología §4), construido.
+ *
+ * La escalera de cajas termina dentro de la ficha, y ahí el estudiante ha reconocido,
+ * producido y usado la palabra en la frase de otro. Falta la parte que de verdad activa el
+ * vocabulario: oírlo sin verlo, y escribir algo propio. Sin este cierre, la unidad enseña a
+ * responder preguntas sobre palabras, no a usarlas.
+ */
+function Dictado({ frases, locale, onHecho }: { frases: VocabEntry[]; locale: string; onHecho: () => void }) {
+  const [i, setI] = useState(0)
+  const [texto, setTexto] = useState('')
+  const [corregido, setCorregido] = useState(false)
+
+  const actual = frases[i]
+  const { esperadas, acertadas, falladas } = corregirDictado(actual.ejemplo.target, texto)
+  const fallo = new Set(falladas)
+
+  function avanzar() {
+    if (i + 1 >= frases.length) return onHecho()
+    setI(i + 1)
+    setTexto('')
+    setCorregido(false)
+  }
+
+  return (
+    <div style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}>
+      <p style={{ margin: '0 0 0.9rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
+        DICTADO {i + 1} DE {frases.length} · Óyela y escríbela
+      </p>
+      <p style={{ margin: '0 0 0.9rem', fontSize: '0.88rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+        Es el único ejercicio que va del sonido a la letra. Sirve para lo que ninguna tarjeta
+        arregla: reconocer la palabra cuando alguien la dice.
+      </p>
+
+      <button onClick={() => decir(actual.ejemplo.target, locale)} style={{ ...botonSecundario, marginBottom: '0.8rem' }}>
+        🔊 Escuchar
+      </button>
+
+      <textarea
+        value={texto}
+        onChange={(e) => setTexto(e.target.value)}
+        rows={2}
+        placeholder="Escribe lo que oyes"
+        style={{ ...campo, resize: 'vertical' }}
+      />
+
+      {corregido && (
+        <div style={{ marginTop: '0.8rem', display: 'grid', gap: '0.35rem' }}>
+          <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.6 }}>
+            {esperadas.map((p: string, k: number) => (
+              <span
+                key={`${p}-${k}`}
+                style={{
+                  color: fallo.has(p) ? 'var(--muted)' : COLOR,
+                  textDecoration: fallo.has(p) ? 'underline' : 'none',
+                  textDecorationStyle: 'dotted',
+                  marginRight: '0.32rem',
+                }}
+              >
+                {p}
+              </span>
+            ))}
+          </p>
+          <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--muted)' }}>
+            {acertadas} de {esperadas.length} palabras. Las punteadas son las que se te escaparon.
+          </p>
+          <p style={{ margin: 0, fontSize: '0.84rem' }}>{actual.ejemplo.target}</p>
+        </div>
+      )}
+
+      <div style={{ marginTop: '0.9rem', display: 'flex', gap: '0.5rem' }}>
+        {!corregido ? (
+          <button onClick={() => setCorregido(true)} disabled={!texto.trim()} style={{ ...botonPrimario, opacity: texto.trim() ? 1 : 0.45 }}>
+            Corregir
+          </button>
+        ) : (
+          <button onClick={avanzar} style={botonPrimario}>
+            {i + 1 >= frases.length ? 'A la escritura →' : 'Siguiente frase'}
+          </button>
+        )}
+      </div>
+    </div>
+  )
+}
+
+function EscrituraReforzada({ entradas, onSalir }: { entradas: VocabEntry[]; onSalir: () => void }) {
+  const [texto, setTexto] = useState('')
+
+  const { usadas, frases, listo } = progresoEscritura(texto, entradas)
+
+  return (
+    <div style={{ border: '1px solid var(--line-soft)', borderRadius: 16, padding: '1.3rem', background: 'var(--bg)' }}>
+      <p style={{ margin: '0 0 0.5rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
+        ESCRITURA · Cierre de la unidad
+      </p>
+      <p style={{ margin: '0 0 0.9rem', fontSize: '0.95rem', lineHeight: 1.6 }}>
+        Escribe <strong>{MIN_FRASES} frases sobre ti y tu gente</strong> usando al menos{' '}
+        <strong>{MIN_PALABRAS_USADAS} palabras</strong> de esta unidad.
+      </p>
+
+      <textarea
+        value={texto}
+        onChange={(e) => setTexto(e.target.value)}
+        rows={7}
+        placeholder="My name is… My father is a…"
+        style={{ ...campo, resize: 'vertical' }}
+      />
+
+      {/* La lista se marca sola mientras escribe: el estudiante ve el progreso, no lo adivina */}
+      <div style={{ marginTop: '0.8rem', display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
+        {entradas.map((e) => {
+          const hecha = usadas.includes(e)
+          return (
+            <span
+              key={e.id}
+              style={{
+                fontSize: '0.72rem',
+                fontFamily: 'var(--mono)',
+                padding: '0.16rem 0.42rem',
+                borderRadius: 6,
+                border: `1px solid ${hecha ? COLOR : 'var(--line-soft)'}`,
+                background: hecha ? `${COLOR}14` : 'transparent',
+                color: hecha ? COLOR : 'var(--muted)',
+              }}
+            >
+              {hecha ? '✓ ' : ''}{e.lemma}
+            </span>
+          )
+        })}
+      </div>
+
+      <p style={{ margin: '0.8rem 0 0', fontSize: '0.86rem', color: listo ? COLOR : 'var(--muted)' }}>
+        {usadas.length}/{MIN_PALABRAS_USADAS} palabras · {frases}/{MIN_FRASES} frases
+        {listo && ' — unidad cerrada. Esto es lo que un examinador llama riqueza lexical.'}
+      </p>
+
+      <div style={{ marginTop: '0.9rem', display: 'flex', gap: '0.5rem' }}>
+        <button onClick={onSalir} style={listo ? botonPrimario : botonSecundario}>
+          {listo ? 'Terminar unidad' : 'Volver a las fichas'}
+        </button>
+      </div>
+    </div>
+  )
+}
+
+function CierreDeUnidad({ entradas, locale, onSalir }: { entradas: VocabEntry[]; locale: string; onSalir: () => void }) {
+  const conAudio = hayVoz()
+  const [paso, setPaso] = useState<'dictado' | 'escritura'>(conAudio ? 'dictado' : 'escritura')
+
+  // Tres frases distintas, prefiriendo las que se oyen de verdad en las lecciones.
+  const frases = useMemo(() => {
+    const vistas = new Set<string>()
+    const pool = [...entradas].sort(
+      (a, b) => Number(b.ejemplo.fuente.tipo === 'corpus') - Number(a.ejemplo.fuente.tipo === 'corpus'),
+    )
+    return pool.filter((e) => !vistas.has(e.ejemplo.target) && vistas.add(e.ejemplo.target)).slice(0, 3)
+  }, [entradas])
+
+  return (
+    <div style={{ display: 'grid', gap: '1rem' }}>
+      <div>
+        <h3 style={{ margin: '0 0 0.3rem' }}>Las {entradas.length} llegaron a la caja 5</h3>
+        <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.88rem', lineHeight: 1.6 }}>
+          Con cuenta, la caja 5 no llega el mismo día: llega 45 días después de conocer la palabra.
+          Ahora cierra la unidad — oírlas y escribir algo tuyo es lo que las vuelve activas.
+        </p>
+      </div>
+
+      {paso === 'dictado' && conAudio ? (
+        <Dictado frases={frases} locale={locale} onHecho={() => setPaso('escritura')} />
+      ) : (
+        <EscrituraReforzada entradas={entradas} onSalir={onSalir} />
+      )}
+    </div>
+  )
+}
+
+// ─── Componente principal ─────────────────────────────────────────────────────
+
+export default function VocabularyJourney({ bloque, nivel, idiomaLabel, nivelLabel, locale }: Props) {
+  const [unidadEnEstudio, setUnidadEnEstudio] = useState<number | null>(null)
+
+  const unidades = useMemo(() => {
+    const out: VocabEntry[][] = []
+    for (let i = 0; i < bloque.entradas.length; i += 10) out.push(bloque.entradas.slice(i, i + 10))
+    return out
+  }, [bloque])
+
+  const delCorpus = bloque.entradas.filter((e) => e.ejemplo.fuente.tipo === 'corpus').length
+
+  if (unidadEnEstudio !== null) {
+    return (
+      <section style={{ display: 'grid', gap: '1rem' }}>
+        <h2 style={{ margin: 0, fontSize: '1.1rem' }}>
+          Unidad {unidadEnEstudio + 1} · {unidades[unidadEnEstudio].length} palabras
+        </h2>
+        <Sesion entradas={unidades[unidadEnEstudio]} locale={locale} onSalir={() => setUnidadEnEstudio(null)} />
+      </section>
+    )
+  }
+
+  return (
+    <section style={{ display: 'grid', gap: '1.6rem' }}>
+      {/* Cómo funciona: la escalera, explicada antes de empezar */}
+      <div
+        style={{
+          border: '1px solid var(--line-soft)',
+          borderRadius: 16,
+          padding: '1.1rem 1.2rem',
+          background: 'var(--bg-2)',
+        }}
+      >
+        <p style={{ margin: '0 0 0.7rem', fontFamily: 'var(--mono)', fontSize: '0.74rem', color: COLOR }}>
+          CÓMO SE ESTUDIA
+        </p>
+        <p style={{ margin: '0 0 0.8rem', fontSize: '0.92rem', lineHeight: 1.6 }}>
+          Cada palabra sube una escalera de cinco peldaños. No se repite la misma pregunta:
+          <strong> la pregunta se endurece</strong> a medida que la palabra sube. Solo se da por
+          dominada cuando la usas en una frase tuya.
+        </p>
+        <ol style={{ margin: 0, paddingLeft: '1.1rem', display: 'grid', gap: '0.28rem' }}>
+          {CAJAS.map((c) => (
+            <li key={c.n} style={{ fontSize: '0.86rem' }}>
+              <strong>{c.nombre}</strong>
+              <span style={{ color: 'var(--muted)' }}> — {c.pide}</span>
+            </li>
+          ))}
+        </ol>
+        <p style={{ margin: '0.8rem 0 0', fontSize: '0.86rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+          Y al final de cada unidad, el cierre: <strong style={{ color: 'var(--ink)' }}>un dictado</strong> —
+          oír las frases sin verlas— y <strong style={{ color: 'var(--ink)' }}>cinco frases tuyas</strong> con
+          las palabras de la unidad. Es la parte que convierte reconocer en hablar.
+        </p>
+      </div>
+
+      {/* Unidades */}
+      {unidades.map((unidad, i) => (
+        <div key={i} style={{ display: 'grid', gap: '0.7rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', flexWrap: 'wrap' }}>
+            <h2 style={{ margin: 0, fontSize: '1.05rem' }}>Unidad {i + 1}</h2>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: '0.74rem', color: 'var(--muted)' }}>
+              {unidad.length} palabras · un día de estudio
+            </span>
+            <button onClick={() => setUnidadEnEstudio(i)} style={{ ...botonPrimario, marginLeft: 'auto' }}>
+              Estudiar esta unidad →
+            </button>
+          </div>
+          <div style={{ display: 'grid', gap: '0.7rem', gridTemplateColumns: 'repeat(auto-fill, minmax(268px, 1fr))' }}>
+            {unidad.map((entrada) => <Ficha key={entrada.id} entrada={entrada} />)}
+          </div>
+        </div>
+      ))}
+
+      {/* Procedencia — honestidad sobre de dónde sale el material */}
+      <footer
+        style={{
+          borderTop: '1px solid var(--line-soft)',
+          paddingTop: '0.9rem',
+          fontSize: '0.82rem',
+          color: 'var(--muted)',
+          lineHeight: 1.6,
+        }}
+      >
+        <p style={{ margin: '0 0 0.4rem' }}>
+          <strong style={{ color: 'var(--ink)' }}>De dónde sale este vocabulario.</strong>{' '}
+          Lista base: {nivel.listaBase.fuente}
+          {nivel.listaBase.url && (
+            <>
+              {' '}(<a href={nivel.listaBase.url} rel="nofollow noopener" target="_blank" style={{ color: COLOR }}>fuente</a>)
+            </>
+          )}.
+        </p>
+        <p style={{ margin: 0 }}>
+          {delCorpus} de las {bloque.entradas.length} frases de ejemplo están tomadas literalmente de
+          las lecciones de escucha de {idiomaLabel} {nivelLabel}, no inventadas. Las marcadas con
+          <span style={{ fontFamily: 'var(--mono)' }}> ✎ redactado </span>
+          son palabras que el nivel necesita y que las lecciones todavía no dicen.
+        </p>
+      </footer>
+    </section>
+  )
+}
+
+// ─── Estilos compartidos ──────────────────────────────────────────────────────
+
+const botonPrimario: React.CSSProperties = {
+  border: `1px solid ${COLOR}`,
+  background: COLOR,
+  color: '#fff',
+  borderRadius: 10,
+  padding: '0.5rem 0.95rem',
+  fontSize: '0.86rem',
+  fontWeight: 700,
+  fontFamily: 'inherit',
+  cursor: 'pointer',
+}
+
+const botonSecundario: React.CSSProperties = {
+  border: '1px solid var(--line-soft)',
+  background: 'var(--bg)',
+  color: 'var(--ink)',
+  borderRadius: 10,
+  padding: '0.5rem 0.95rem',
+  fontSize: '0.86rem',
+  fontFamily: 'inherit',
+  cursor: 'pointer',
+}
+
+const botonOpcion: React.CSSProperties = {
+  border: '1px solid var(--line-soft)',
+  borderRadius: 10,
+  padding: '0.65rem 0.9rem',
+  fontSize: '0.94rem',
+  fontFamily: 'inherit',
+  color: 'inherit',
+  textAlign: 'left',
+  cursor: 'pointer',
+}
+
+const campo: React.CSSProperties = {
+  width: '100%',
+  border: '1px solid var(--line-soft)',
+  borderRadius: 10,
+  padding: '0.6rem 0.8rem',
+  fontSize: '1rem',
+  fontFamily: 'inherit',
+  background: 'var(--bg)',
+  color: 'inherit',
+}

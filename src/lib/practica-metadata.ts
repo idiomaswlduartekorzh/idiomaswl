@@ -71,6 +71,38 @@ export function grammarTopicMetadata(opts: {
   }
 }
 
+// Metadata para un bloque de vocabulario (una URL por bloque, como en gramática).
+// Cada bloque es un tema con entidad propia — «presentarse», «el clima», «la hora» — y por eso
+// merece su URL: es como lo busca la gente y como lo indexa Google.
+export function vocabBlockMetadata(opts: {
+  lang: string
+  level: string
+  slug: string
+  bloque: string
+  entradas: number
+}): Metadata {
+  const { lang, level, slug, bloque, entradas } = opts
+  const ln = langNames[lang] ?? lang
+  const lv = levelNames[level] ?? level.toUpperCase()
+  const url = `https://www.idiomaswl.com/practica/${lang}/${level}/vocabulario/${slug}`
+  const title = `Vocabulario de ${ln} ${level.toUpperCase()}: ${bloque}`
+  const description =
+    `${entradas} palabras de ${ln} nivel ${lv} sobre ${bloque.toLowerCase()}, con ejemplo real, ` +
+    `colocaciones traducidas y repaso espaciado. Gratis en Idiomas WeLearn.`
+  return {
+    title,
+    description,
+    keywords: [
+      `vocabulario ${lang} ${level}`,
+      `${bloque.toLowerCase()} en ${lang}`,
+      `palabras ${lang} ${level}`,
+      `aprender vocabulario de ${lang}`,
+    ],
+    openGraph: { title, description, type: 'article', locale: 'es_CO', url },
+    alternates: { canonical: url },
+  }
+}
+
 export function levelMetadata(lang: string, level: string): Metadata {
   const ln = langNames[lang] ?? lang
   const lv = levelNames[level] ?? level.toUpperCase()

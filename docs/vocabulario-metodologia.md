@@ -257,8 +257,21 @@ Cinco criterios, en orden. Una palabra entra al núcleo si gana en varios, no so
 - **Sin su marca gramatical obligatoria, no entra.** Un sustantivo alemán sin artículo y plural es
   un dato incompleto, no una palabra. Igual el acento en ruso, el contador en coreano y japonés,
   el género en las románicas.
-- **Si no aparece en el corpus de escucha o lectura del mismo nivel, o no se puede añadir ahí, no
-  entra.** Esta regla es la que impide que el vocabulario vuelva a ser una isla.
+- **El ejemplo se toma del corpus de escucha o lectura del mismo nivel, y cuando no se puede, se
+  declara.** Esta regla es la que impide que el vocabulario vuelva a ser una isla.
+
+  > **Corregido el 8 de agosto de 2026, al primer uso de la puerta.** La regla estaba escrita como
+  > veto absoluto —«si no aparece, no entra»— y eso era irrealizable, además de contradecir la
+  > puerta de cobertura del §7, que pedía un 60 %. El corpus de inglés A1 tiene 353 formas
+  > distintas y el núcleo del nivel pide 300 lemas con reparto temático equilibrado; hay palabras
+  > que un A1 necesita —*brother*, *woman*— que la serie no dice en ningún turno, ni aparecen en
+  > los diez ejercicios de lectura del nivel.
+  >
+  > La regla real es: **el ejemplo declara su procedencia**. `corpus` si se oye literal en la serie
+  > —lo normal—, `redactado` con su motivo cuando el corpus no da la palabra. La puerta exige que
+  > al menos el 60 % del núcleo venga del corpus, comprueba que lo declarado como corpus suene de
+  > verdad ahí, y rechaza lo declarado redactado que sí estaba. Así la excepción queda contada y
+  > auditable, en vez de ser la puerta de atrás por donde vuelven las frases artificiales.
 - **Una palabra vive en un solo nivel.** Nada de repetir entre A1, A2 y B1. Lo que se repite son
   los repasos, no el catálogo.
 - **B1 no puede reusar el eje temático de A2.** A2 organiza por *situaciones* (viajar, comprar,

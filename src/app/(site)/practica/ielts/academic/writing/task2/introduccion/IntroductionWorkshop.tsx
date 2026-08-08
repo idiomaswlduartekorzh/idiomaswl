@@ -67,7 +67,11 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
 
   const [choices, setChoices] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [written, setWritten] = useState({ position: '', premises: '' });
+  /**
+   * Las cuatro partes del método, en su orden. El hook va vacío por defecto porque es
+   * opcional: no da puntos en el examen, obliga a saber la conclusión antes de escribir.
+   */
+  const [written, setWritten] = useState({ hook: '', paraphrase: '', position: '', premises: '' });
   const [modelVisible, setModelVisible] = useState(false);
 
   const shuffled = useMemo(
@@ -77,13 +81,33 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
 
   const solved = (step: Step) => checked[step.key] && choices[step.key] === step.correct;
   const allSolved = steps.length > 0 && steps.every(solved);
-  const writingReady = written.position.trim().split(/\s+/).filter(Boolean).length >= 10
-    && written.premises.trim().split(/\s+/).filter(Boolean).length >= 6;
+
+  const words = (value: string) => value.trim().split(/\s+/).filter(Boolean).length;
+  const writingReady = words(written.paraphrase) >= 8 && words(written.position) >= 10 && words(written.premises) >= 6;
+
+  /**
+   * Lo único que se puede comprobar de verdad sobre una paráfrasis sin analizarla: si es
+   * el enunciado copiado. Se busca una tirada literal de seis palabras o más del prompt.
+   *
+   * Es una comprobación honesta porque afirma exactamente lo que midió —«esto está copiado
+   * del enunciado»— y no que la paráfrasis sea buena o mala. Copiar es además el fallo más
+   * común y el que no puntúa: el examinador descuenta las palabras copiadas del recuento.
+   */
+  const copiedRun = useMemo(() => {
+    const norm = (value: string) => value.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/u).filter(Boolean);
+    const source = norm(example.prompt);
+    const attempt = norm(written.paraphrase);
+    for (let start = 0; start + 6 <= attempt.length; start += 1) {
+      const run = attempt.slice(start, start + 6).join(' ');
+      if (source.join(' ').includes(run)) return run;
+    }
+    return null;
+  }, [example.prompt, written.paraphrase]);
 
   function reset() {
     setChoices({});
     setChecked({});
-    setWritten({ position: '', premises: '' });
+    setWritten({ hook: '', paraphrase: '', position: '', premises: '' });
     setModelVisible(false);
   }
 
@@ -129,21 +153,34 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
     <div className={`${styles.workshopStep} ${allSolved ? '' : styles.stepLocked}`}>
       <div className={styles.stepLabel}>
         {allSolved ? <CheckCircle2 size={20} /> : <LockKeyhole size={20} />}
-        <strong>Step {steps.length + 1}</strong><span>Write your answer and your two reasons</span>
+        <strong>Step {steps.length + 1}</strong><span>Now write the whole introduction, one job at a time</span>
       </div>
       {allSolved && <>
         <div className={styles.planGrid}>
           <label className={styles.guidedField}>
+            <strong>Your hook <em>· optional</em></strong>
+            <span>The claim your essay will prove. Somebody must be able to disagree with it. No “I” here.</span>
+            <textarea rows={2} value={written.hook} onChange={(event) => { setWritten((w) => ({ ...w, hook: event.target.value })); setModelVisible(false); }} placeholder="Leave this empty if you are short of time — a three-sentence introduction is still complete." />
+            <small>{words(written.hook)} words · no minimum</small>
+          </label>
+          <label className={styles.guidedField}>
+            <strong>Your paraphrase</strong>
+            <span>Restate the prompt. Keep the meaning, change the wording.</span>
+            <textarea rows={3} value={written.paraphrase} onChange={(event) => { setWritten((w) => ({ ...w, paraphrase: event.target.value })); setModelVisible(false); }} placeholder="Rewrite the prompt in your own words…" />
+            <small>{words(written.paraphrase)} words · minimum 8</small>
+            {copiedRun && <small className={styles.copyWarning}>Copied from the prompt: “…{copiedRun}…”. Copied words are not counted by the examiner.</small>}
+          </label>
+          <label className={styles.guidedField}>
             <strong>Your position</strong>
             <span>Answer the instruction directly. This is where “I” belongs.</span>
             <textarea rows={3} value={written.position} onChange={(event) => { setWritten((w) => ({ ...w, position: event.target.value })); setModelVisible(false); }} placeholder="I largely agree that…" />
-            <small>{written.position.trim().split(/\s+/).filter(Boolean).length} words · minimum 10</small>
+            <small>{words(written.position)} words · minimum 10</small>
           </label>
           <label className={styles.guidedField}>
             <strong>Your two reasons</strong>
             <span>Very short. These become Body 1 and Body 2.</span>
             <textarea rows={3} value={written.premises} onChange={(event) => { setWritten((w) => ({ ...w, premises: event.target.value })); setModelVisible(false); }} placeholder="…because X and because Y." />
-            <small>{written.premises.trim().split(/\s+/).filter(Boolean).length} words · minimum 6</small>
+            <small>{words(written.premises)} words · minimum 6</small>
           </label>
         </div>
         <div className={styles.workshopActions}>
@@ -162,7 +199,7 @@ export default function IntroductionWorkshop({ example, essayType }: { example: 
             que está alineado después de contar palabras es exactamente el defecto que se
             corrigió en el motor de esta misma página.
           */}
-          <p className={styles.comparisonNote}>Your wording does not need to match the model. Check three things: does your position answer the instruction, are your two reasons different from each other, and could each one fill a paragraph? This is a comparison, not automated marking — nothing above has been graded.</p>
+          <p className={styles.comparisonNote}>Your wording does not need to match the model. Check four things: does your paraphrase keep the meaning without copying, does your position answer the instruction, are your two reasons different from each other, and could each one fill a paragraph? This is a comparison, not automated marking — nothing you wrote has been graded. The only automatic check on this page is whether your paraphrase repeats six or more words from the prompt.</p>
         </div>}
       </>}
     </div>
