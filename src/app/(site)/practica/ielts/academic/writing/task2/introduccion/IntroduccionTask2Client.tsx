@@ -178,6 +178,21 @@ export default function IntroduccionTask2Client() {
                       </div>
                     ))}
                   </div>
+                  {/*
+                    Las tarjetas de arriba enseñan las piezas; esto enseña la introducción.
+                    Es el mismo tratamiento que Body 1 —las frases unidas, cada función con
+                    su color dentro del texto—, y va después a propósito: primero se ve de
+                    qué está hecha, y luego cómo se lee de corrido. Sin esta vista, el
+                    alumno escribe cuatro frases sueltas en lugar de un párrafo.
+                  */}
+                  <div className={styles.paragraphView}>
+                    <span className={styles.paragraphLabel}>Read as one paragraph</span>
+                    <p className={styles.coloredParagraph}>
+                      {example.blocks.map((block) => (
+                        <span key={`prose-${block.label}`} className={`${styles.paragraphBlock} ${styles[block.tone]}`} title={block.label}>{block.text}</span>
+                      ))}
+                    </p>
+                  </div>
                   <ul className={styles.whyList}>{example.whyItWorks.map((reason) => <li key={reason}>{reason}</li>)}</ul>
                 </article>
               ))}

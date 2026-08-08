@@ -170,13 +170,30 @@ mezcladas y que cuestan producir cosas muy distintas:
 | Nivel | Núcleo nuevo | Núcleo acumulado | Cinturón nuevo | Expuesto acumulado |
 |---|---:|---:|---:|---:|
 | A1 | 300 | 300 | 250 | 550 |
-| A2 | 350 | 650 | 500 | 1.400 |
-| B1 | 400 | 1.050 | 1.500 | 2.900 |
+| A2 | 350 | 650 | 400 | 1.300 |
+| B1 | 400 | 1.050 | 700 | 2.400 |
 
-Las cifras acumuladas caen dentro de las horquillas de planificación que usan los marcos de
-referencia y los listados oficiales de examen (del orden de 500–750 en A1, 1.000–1.500 en A2,
-2.000–2.500 en B1, contando lemas receptivos). El núcleo productivo de 1.050 al terminar B1 es
-deliberadamente más pequeño: es lo que una persona puede tener realmente *activo*.
+**Estas cifras están calibradas contra los listados oficiales**, no inventadas (fuentes y detalle
+por idioma en [`vocabulario-blueprints.md`](vocabulario-blueprints.md)):
+
+| Referencia oficial | A1 | A2 | B1 |
+|---|---:|---:|---:|
+| Goethe-Zertifikat, Wortlisten (alemán) | ~650 | ~1.300 | ~2.400 |
+| Лексический минимум ТРКИ (ruso) | 780 | ~1.300 | 2.300 |
+| FLElex / referenciales FLE (francés) | 500 | 1.000 | 2.000 |
+| **Nuestro expuesto acumulado** | **550** | **1.300** | **2.400** |
+
+> El dato que más pesa viene del Goethe-Institut: de los ~650 lemas de su lista A1, **cerca de la
+> mitad debe estar disponible como vocabulario activo**. Eso son ~325 palabras productivas en A1 —
+> nuestro núcleo de 300 es exactamente esa figura, obtenida por otro camino. La separación entre
+> núcleo productivo y cinturón receptivo no es un invento nuestro para abaratar el trabajo: es
+> cómo está construida la lista oficial de examen más explícita que existe.
+
+El núcleo productivo de 1.050 al terminar B1 es deliberadamente más pequeño que el total expuesto:
+es lo que una persona puede tener realmente *activo*. La investigación de Laufer y Webb es dura en
+esto — la brecha entre conocimiento receptivo y productivo **se ensancha** conforme sube el nivel,
+y el vocabulario pasivo puede tardar muchísimo en activarse, o no activarse nunca. Por eso el
+núcleo se drillea hasta G3 en vez de confiar en que la exposición lo active sola.
 
 **Dónde estamos:** el núcleo productivo por idioma está hoy en 220–240 palabras frente a 1.050.
 Alrededor del **22 %**. El cinturón receptivo, en cambio, ya está producido y grabado (§0); lo que
