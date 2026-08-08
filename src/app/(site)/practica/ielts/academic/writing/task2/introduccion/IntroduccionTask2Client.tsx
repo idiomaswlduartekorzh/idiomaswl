@@ -218,9 +218,21 @@ export default function IntroduccionTask2Client() {
                   <p><strong>Best for:</strong> {type.bestFor}</p>
                   <p className={styles.frame}>{type.frame}</p>
                 </div>
+                {/*
+                  El enunciado va PRIMERO y encabeza el par. Sin él, las dos versiones eran
+                  frases sueltas sobre temas distintos y no se podía juzgar lo único que
+                  importa: si el significado sobrevivió al reescribirlo.
+                */}
                 <div className={styles.weakStrong}>
-                  <p className={styles.weak}><strong>Weak block</strong><br />{type.weak}</p>
-                  <p className={styles.strong}><strong>Stronger block</strong><br />{type.strong}</p>
+                  <p className={styles.sourcePrompt}><strong>The prompt both attempts answer</strong><br />{type.source}</p>
+                  <p className={styles.weak}><strong>Weak attempt</strong><br />{type.weak}</p>
+                  <p className={styles.strong}><strong>Stronger attempt</strong><br />{type.strong}</p>
+                  <dl className={styles.transferList}>
+                    <dt>Meaning that must not change</dt>
+                    <dd>{type.preserved}</dd>
+                    <dt>Wording that moved</dt>
+                    <dd>{type.changed}</dd>
+                  </dl>
                   <p>{type.improvement}</p>
                 </div>
               </div>

@@ -628,7 +628,8 @@
 }
 
 .weak,
-.strong {
+.strong,
+.sourcePrompt {
   border-radius: 6px;
   line-height: 1.55;
   margin: 0 !important;
@@ -637,6 +638,12 @@
 
 .weak { background: #fff2f2; color: #8a2230 !important; }
 .strong { background: #effaf4; color: #245e44 !important; }
+/* El enunciado encabeza el par en neutro: no es ni el error ni el acierto, es de dónde
+   salen los dos. Sin él, las dos versiones no se pueden comparar con nada. */
+.sourcePrompt { background: var(--bg-2, #f4f4f6); color: var(--ink) !important; border-left: 3px solid var(--intro-blue, #0f3d8c); }
+.transferList { display: grid; gap: .3rem; margin: 0; font-size: .88rem; }
+.transferList dt { font-weight: 700; color: var(--intro-blue, #0f3d8c); }
+.transferList dd { margin: 0 0 .45rem; color: var(--ink); line-height: 1.5; }
 
 .practiceSection {
   padding-top: 3.5rem;
