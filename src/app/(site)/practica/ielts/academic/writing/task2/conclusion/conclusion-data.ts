@@ -65,7 +65,7 @@ const conclusions: Record<EssayTypeId, Array<[string, string]>> = {
     ['Overall, social media attracts users through speed, convenience and participation in shared networks.', 'Its information should nevertheless be trusted only after the original source, date and supporting evidence have been independently checked.'],
     ['In conclusion, workers change careers more frequently because labour markets and personal priorities evolve throughout adult life.', 'Such mobility is generally beneficial when it is purposeful and supported by realistic retraining rather than repeated instability.'],
     ['Overall, historic buildings matter because they preserve cultural memory and contribute to a distinctive shared environment.', 'Their maintenance should be financed jointly by public authorities, private users and the visitors or businesses that benefit from them.'],
-    ['In conclusion, people increasingly buy second-hand goods to reduce costs and avoid unnecessary consumption.', 'This is a positive development because it extends product life and broadens access, provided safety and quality can be checked.'],
+    ['In conclusion, adults are becoming parents later because education, housing and career stability now take longer to secure.', 'The effects are mixed: households tend to be more financially settled, yet families face the strain of raising young children while supporting ageing relatives.'],
   ],
 };
 

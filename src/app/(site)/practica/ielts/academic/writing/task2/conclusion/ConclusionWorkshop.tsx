@@ -31,8 +31,8 @@ export default function ConclusionWorkshop({ example, seed }: { example: Conclus
   const correct = example.blocks[0].text;
   const options = useMemo(() => rotate([
     correct,
-    'In conclusion, this essay has discussed several interesting points and both sides have advantages.',
-    'In the future, governments will probably discover a completely new way to solve this issue.',
+    'In conclusion, this essay has discussed several interesting points, and both sides of the argument clearly have advantages that deserve further attention.',
+    'In the future, governments will probably discover a completely new way to solve this issue, though this essay has never examined that possibility.',
   ], `taller-conclusion|${example.title}`, seed), [correct, seed]);
   const ready = writing.every((value) => value.trim().split(/\s+/).filter(Boolean).length >= 8);
 

@@ -31,8 +31,8 @@ export default function BodyOneWorkshop({ example, seed }: { example: BodyOneExa
   const correctTopic = example.blocks[0].text;
   const topicOptions = useMemo(() => rotate([
     correctTopic,
-    'There are many different opinions about this issue, and both sides will be discussed in this essay.',
-    'This topic has several causes, effects, advantages and disadvantages for modern society.',
+    'There are many different opinions about this issue, and both of the sides involved will be discussed at length in this essay.',
+    'This topic has several causes, several effects, and both advantages and disadvantages for modern society.',
   ], `taller-body1|${example.title}`, seed), [correctTopic, seed]);
   const writingReady = Object.values(answers).every((value) => value.trim().length >= 12);
 

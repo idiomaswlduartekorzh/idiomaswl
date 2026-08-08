@@ -47,7 +47,7 @@ const categorySets: Record<EssayTypeId, Array<[string, string, string, string]>>
     ['Essay logic', 'Both paragraphs explain why social media is popular; neither explains how users can judge reliability.', 'Use Body 1 for popularity and Body 2 for source verification.', 'The paragraph architecture should mirror the two questions.'],
     ['Position control', 'Career changes are called beneficial in Body 2 but harmful in the conclusion.', 'Maintain the qualified positive judgement when changes are purposeful and supported by training.', 'The final answer must not contradict the developed evaluation.'],
     ['Cohesion', 'Historic buildings matter because history. Who should pay is also a question. Governments and owners.', 'Historic buildings preserve shared cultural value; their costs should therefore be shared by public authorities and private beneficiaries.', 'The revision makes the relationship between the two answers explicit.'],
-    ['Language control', 'People buys second-hand products because they are more cheaper and this are positive.', 'People buy second-hand products because they cost less, and this trend is generally positive.', 'Subject–verb agreement, comparative form and pronoun reference all need correction.'],
+    ['Language control', 'Adults has children later because life are more expensiver now, and this bring many effect to the society.', 'Adults have children later because life is more expensive now, and this brings several effects for society.', 'Subject–verb agreement, comparative form and singular–plural agreement all need correction.'],
   ],
 };
 

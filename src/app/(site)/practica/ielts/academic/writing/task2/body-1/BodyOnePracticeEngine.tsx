@@ -72,28 +72,28 @@ export default function BodyOnePracticeEngine({ essayType }: { essayType: EssayT
       question: `What is the function of this ${exercise.blocks[2].label.toLowerCase()} block?`,
       context: exercise.blocks[2].text,
       correct: exercise.blocks[2].purpose,
-      options: rotateOptions([exercise.blocks[2].purpose, 'Introduce a new essay topic.', 'Repeat the prompt without development.', 'Give the final essay conclusion.'], `body1|${lesson.id}`, level),
+      options: rotateOptions([exercise.blocks[2].purpose, 'Introduces a new topic that the paragraph never develops.', 'Repeats the prompt wording without adding any development.', 'Delivers the final judgement of the essay before the body has finished.'], `body1|${lesson.id}`, level),
       feedback: `In this ${lesson.shortLabel} paragraph, the ${exercise.blocks[2].label.toLowerCase()} has a specific job: ${exercise.blocks[2].purpose}`,
     };
     if (level === 1) return {
       question: 'Which topic sentence gives this Body 1 paragraph one aligned job?',
       context: exercise.prompt,
       correct: exercise.blocks[0].text,
-      options: rotateOptions([exercise.blocks[0].text, 'This essay will discuss all aspects of this controversial topic.', 'There are several advantages, disadvantages, causes and solutions to consider.', 'People have different opinions, and both of them are equally important.'], `body1|${lesson.id}`, level),
+      options: rotateOptions([exercise.blocks[0].text, 'This essay will discuss all of the different aspects of this controversial and widely debated topic.', 'There are several advantages, several disadvantages, a number of causes and various possible solutions to consider.', 'People have different opinions about this question, and both of those opinions are equally important and worth respecting.'], `body1|${lesson.id}`, level),
       feedback: 'The aligned option answers the paragraph job directly and creates one claim that later sentences can prove.',
     };
     if (level === 2) return {
       question: 'Which diagnosis identifies the most serious paragraph error?',
       context: `Paragraph job: ${exercise.paragraphJob} Draft: "${exercise.blocks[0].text} This is a very important issue for everyone. Many people have different opinions. It has advantages and disadvantages."`,
       correct: 'The draft states a claim but does not develop its logic.',
-      options: rotateOptions(['The draft states a claim but does not develop its logic.', 'The paragraph needs a memorised proverb.', 'The paragraph must include an exact statistic.', 'The topic sentence should be removed.'], `body1|${lesson.id}`, level),
+      options: rotateOptions(['The draft states a claim but does not develop its logic.', 'The draft needs a memorised proverb to make its opening sound more impressive.', 'The draft must include an exact statistic and the name of the study behind it.', 'The draft should delete its topic sentence and begin straight with the supporting detail.'], `body1|${lesson.id}`, level),
       feedback: 'Task Response depends on relevant development. Generic importance and “different opinions” do not explain the controlling claim.',
     };
     return {
       question: `Which sentence best completes the missing ${exercise.blocks[3].label} block?`,
       context: `${exercise.blocks[0].text} ${exercise.blocks[1].text} ${exercise.blocks[2].text} [${exercise.blocks[3].label.toUpperCase()} MISSING] ${exercise.blocks[4].text}`,
       correct: exercise.blocks[3].text,
-      options: rotateOptions([exercise.blocks[3].text, 'A famous university study proves this beyond any doubt.', 'This is a very important issue in today\'s modern world.', 'However, there are many advantages and disadvantages.'], `body1|${lesson.id}`, level),
+      options: rotateOptions([exercise.blocks[3].text, 'A famous university study published last year proves this beyond any doubt, and every serious researcher now accepts it.', 'This is a very important issue in the modern world of today, and it affects almost everybody somehow.', 'However, there are many advantages and many disadvantages here, and the balance between them differs for each person.'], `body1|${lesson.id}`, level),
       feedback: 'The model illustration makes the preceding mechanism concrete without fabricating a named study or changing the paragraph topic.',
     };
   }, [exercise, lesson.examples, level]);
