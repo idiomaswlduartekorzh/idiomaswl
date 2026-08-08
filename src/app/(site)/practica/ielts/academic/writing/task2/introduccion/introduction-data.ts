@@ -593,10 +593,10 @@ export const ALIGNMENT_ITEMS: ChoicePracticeItem[] = [
     prompt: 'Some people think university should prepare students for employment. Others believe its purpose is broader intellectual development. Discuss both views and give your opinion.',
     instruction: 'Choose the thesis that aligns with every instruction.',
     options: [
-      { text: 'Universities are very important institutions in modern society.', correct: false, issue: 'task response', feedback: 'This is a general statement. It neither represents the views nor gives an opinion.' },
-      { text: 'This essay will discuss universities and jobs.', correct: false, issue: 'task response', feedback: 'It omits the intellectual-development view and withholds the writer\'s judgement.' },
+      { text: 'Universities are extremely important institutions in modern society, and they have played a significant role in the development of many different countries.', correct: false, issue: 'task response', feedback: 'This is a general statement. It neither represents the views nor gives an opinion.' },
+      { text: 'This essay will discuss the relationship between universities and employment, examining several arguments on both sides before reaching a final conclusion.', correct: false, issue: 'task response', feedback: 'It omits the intellectual-development view and withholds the writer\'s judgement.' },
       { text: 'Although employment preparation is essential, I believe universities should also preserve their broader role in developing independent thought.', correct: true, issue: 'task response', feedback: 'Correct. Both positions are represented and the writer resolves their relationship clearly.' },
-      { text: 'Students need jobs because tuition is expensive.', correct: false, issue: 'logic', feedback: 'This may support one body idea, but it is too narrow to control the whole essay.' },
+      { text: 'Students need well-paid jobs after graduating because tuition fees have risen sharply and many families can no longer afford to support them.', correct: false, issue: 'logic', feedback: 'This may support one body idea, but it is too narrow to control the whole essay.' },
     ],
   },
   {
@@ -604,9 +604,9 @@ export const ALIGNMENT_ITEMS: ChoicePracticeItem[] = [
     prompt: 'More people use artificial intelligence at work. Do the advantages outweigh the disadvantages?',
     instruction: 'Choose the thesis that answers the comparison.',
     options: [
-      { text: 'Artificial intelligence has advantages and disadvantages in the workplace.', correct: false, issue: 'task response', feedback: 'It lists both sides but does not decide which is more significant.' },
-      { text: 'This essay discusses artificial intelligence in modern employment.', correct: false, issue: 'task response', feedback: 'It announces a topic, not an answer.' },
-      { text: 'AI is changing many companies around the world.', correct: false, issue: 'task response', feedback: 'This paraphrases the trend but does not complete the thesis.' },
+      { text: 'Artificial intelligence brings both advantages and disadvantages to the workplace, affecting productivity, employment, accuracy and the daily experience of ordinary workers.', correct: false, issue: 'task response', feedback: 'It lists both sides but does not decide which is more significant.' },
+      { text: 'This essay discusses the role of artificial intelligence in modern employment and considers the various consequences it may have for large organisations.', correct: false, issue: 'task response', feedback: 'It announces a topic, not an answer.' },
+      { text: 'Artificial intelligence is rapidly changing how companies around the world operate, and its influence continues to grow across almost every major industry.', correct: false, issue: 'task response', feedback: 'This paraphrases the trend but does not complete the thesis.' },
       { text: 'Despite risks involving accuracy and job displacement, I believe the productivity and accessibility gains are more substantial overall.', correct: true, issue: 'task response', feedback: 'Correct. It acknowledges the drawbacks and gives an explicit outweigh judgement.' },
     ],
   },
@@ -618,10 +618,10 @@ export const REPAIR_ITEMS: ChoicePracticeItem[] = [
     prompt: 'Many cities face a shortage of affordable housing. What problems does this cause, and what measures can governments take?',
     instruction: 'Repair this thesis: “This essay will discuss why housing is expensive and give my opinion.”',
     options: [
-      { text: 'I strongly disagree that housing should be expensive.', correct: false, issue: 'task response', feedback: 'The prompt does not ask for agreement or disagreement.' },
-      { text: 'Housing shortages are a big problem nowadays.', correct: false, issue: 'vocabulary', feedback: 'This is vague and still fails to preview problems and government measures.' },
+      { text: 'I strongly disagree with the idea that housing should be so expensive, and I believe this situation has become completely unacceptable today.', correct: false, issue: 'task response', feedback: 'The prompt does not ask for agreement or disagreement.' },
+      { text: 'Housing shortages are a very big problem nowadays in a great many places, and something really does need to be done about it.', correct: false, issue: 'vocabulary', feedback: 'This is vague and still fails to preview problems and government measures.' },
       { text: 'The shortage increases homelessness and long commutes, requiring governments to expand social housing and reform planning rules.', correct: true, issue: 'task response', feedback: 'Correct. It previews the requested problems and pairs them with plausible government measures.' },
-      { text: 'There are many causes and solutions that will be discussed.', correct: false, issue: 'logic', feedback: 'The prompt asks for problems, not causes, and the sentence supplies no substantive route.' },
+      { text: 'There are many different causes behind expensive housing, and several possible solutions will be discussed carefully in the paragraphs that follow below.', correct: false, issue: 'logic', feedback: 'The prompt asks for problems, not causes, and the sentence supplies no substantive route.' },
     ],
   },
   {
@@ -629,10 +629,10 @@ export const REPAIR_ITEMS: ChoicePracticeItem[] = [
     prompt: 'Schools should replace examinations with continuous assessment. To what extent do you agree or disagree?',
     instruction: 'Repair this thesis: “Both methods have positive and negative sides.”',
     options: [
-      { text: 'Examinations and assessment are used in many schools.', correct: false, issue: 'task response', feedback: 'This only restates the topic and gives no extent.' },
+      { text: 'Examinations and continuous assessment are both used in many schools around the world, and each of them has been common for a long time.', correct: false, issue: 'task response', feedback: 'This only restates the topic and gives no extent.' },
       { text: 'Although examinations can test performance under pressure, I largely support continuous assessment because it captures learning over time.', correct: true, issue: 'task response', feedback: 'Correct. The concession is relevant and “largely support” gives a precise extent.' },
-      { text: 'This essay will discuss both forms of assessment.', correct: false, issue: 'task response', feedback: 'The task asks for a position, not only a discussion.' },
-      { text: 'Continuous assessment is good for students.', correct: false, issue: 'vocabulary', feedback: 'The position is visible but the language and reasoning are too vague to guide the essay.' },
+      { text: 'This essay will discuss both forms of assessment in some detail, looking carefully at how each one works before arriving at a conclusion.', correct: false, issue: 'task response', feedback: 'The task asks for a position, not only a discussion.' },
+      { text: 'Continuous assessment is very good for students and examinations are rather bad for them, so schools should probably think about changing their methods.', correct: false, issue: 'vocabulary', feedback: 'The position is visible but the language and reasoning are too vague to guide the essay.' },
     ],
   },
 ];
@@ -656,9 +656,9 @@ export const MISSING_BLOCK_ITEMS: ChoicePracticeItem[] = [
     prompt: 'Debate continues over whether cultural institutions should charge admission or remain free. [MISSING BLOCK]',
     instruction: 'Choose the missing thesis block.',
     options: [
-      { text: 'Museums have existed for hundreds of years.', correct: false, issue: 'logic', feedback: 'This background fact does not answer either view or give a judgement.' },
-      { text: 'This is a controversial issue in many countries.', correct: false, issue: 'vocabulary', feedback: 'The statement is generic and adds no direction.' },
-      { text: 'People have different opinions about ticket prices.', correct: false, issue: 'task response', feedback: 'It repeats the existence of debate but does not resolve it.' },
+      { text: 'Museums have existed for hundreds of years and have collected an enormous number of objects from many different historical periods and cultures.', correct: false, issue: 'logic', feedback: 'This background fact does not answer either view or give a judgement.' },
+      { text: 'This is a very controversial issue in many countries today, and a great many people hold strong feelings about it on both sides.', correct: false, issue: 'vocabulary', feedback: 'The statement is generic and adds no direction.' },
+      { text: 'People have very different opinions about museum ticket prices, and this disagreement can be found in almost every city with important public collections.', correct: false, issue: 'task response', feedback: 'It repeats the existence of debate but does not resolve it.' },
       { text: 'While fees can support collections, I believe basic access should be free so that income does not determine participation in cultural life.', correct: true, issue: 'task response', feedback: 'Correct. It represents both views and gives a reasoned position.' },
     ],
   },
@@ -668,9 +668,9 @@ export const MISSING_BLOCK_ITEMS: ChoicePracticeItem[] = [
     instruction: 'Choose the missing scope thesis.',
     options: [
       { text: 'Traffic and construction are the main sources, and stricter enforcement together with quieter infrastructure could reduce their impact.', correct: true, issue: 'task response', feedback: 'Correct. It previews connected causes and responses.' },
-      { text: 'I strongly disagree with noise in cities.', correct: false, issue: 'task response', feedback: 'Noise is not a proposition to agree or disagree with.' },
-      { text: 'There are many reasons for this modern issue.', correct: false, issue: 'vocabulary', feedback: 'The sentence is vague and gives no solution route.' },
-      { text: 'This essay will talk about noise.', correct: false, issue: 'task response', feedback: 'It announces writing without answering the task.' },
+      { text: 'I strongly disagree with the amount of noise in modern cities, and I think the situation has become genuinely unbearable for many residents.', correct: false, issue: 'task response', feedback: 'Noise is not a proposition to agree or disagree with.' },
+      { text: 'There are many different reasons behind this modern issue, and it is something that affects a very great number of people every single day.', correct: false, issue: 'vocabulary', feedback: 'The sentence is vague and gives no solution route.' },
+      { text: 'This essay will talk about noise in cities and will look at the whole topic from a number of different angles throughout.', correct: false, issue: 'task response', feedback: 'It announces writing without answering the task.' },
     ],
   },
 ];

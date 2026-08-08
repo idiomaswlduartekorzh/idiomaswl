@@ -271,6 +271,46 @@ audita una copia de la lógica: audita la misma función que corre en pantalla. 
 las 40 entradas tienen hueco en contexto, la frase se reconstruye entera al ahuecar, y la caja 5
 rechaza la palabra suelta pero acepta una frase real.
 
+### El validador — para no probarlo a mano
+
+Probar esto jugando no escala: 40 palabras × 5 cajas son 200 interacciones por bloque, y el
+catálogo completo son 240 bloques. La skill **`validar-vocabulario`**
+([`.claude/skills/validar-vocabulario/`](../.claude/skills/validar-vocabulario/SKILL.md)) corre el
+guardián, los tipos y el build, y explica cómo informar.
+
+Lo que lo hace posible es la **simulación de sesión** (comprobación 10): recorre las cinco cajas de
+cada palabra ejecutando las mismas funciones que corren en pantalla y pregunta, en cada peldaño,
+si existe una respuesta que el motor acepte y si rechaza una mala.
+
+Nació de un atasco real. En la caja 5 de *friend*, escribir «we are friends» —que está impreso
+como chunk **en la misma ficha**— daba a la vez *«✗ Todavía no»* y *«✓ Usaste el chunk»*, sin
+salida posible. Dos causas: el mínimo de 4 palabras dejaba fuera frases válidas de tres, y copiar
+el chunk se premiaba y se suspendía al mismo tiempo. Arreglado:
+
+- Mínimo de 3 palabras, que es lo que mide una frase de A1 (*we are friends*, *I am tired*).
+- Copiar el chunk tal cual se rechaza **con un mensaje que dice qué hacer** —«añádele algo tuyo»—
+  y sin el elogio contradictorio. El chunk es el andamio, no la respuesta.
+- El simulador comprueba en todas las entradas que ampliar el chunk sí valga.
+
+Al estrenarse encontró un defecto de contenido que nadie habría visto leyendo: la colocación de
+*city* era literalmente su propia frase de ejemplo, así que la caja 5 **rechazaba su propio
+ejemplo**.
+
+### Ortografía — variante de la caja 2
+
+Añadida a petición: se muestra la palabra mal escrita y hay que corregirla. Reconocer una palabra
+escrita mal exige saber cómo se escribe bien, que es otro grado de conocimiento.
+
+Las faltas no son al azar: salen de reglas de sustitución que reproducen el error real de un
+hispanohablante — *photo → foto*, *mother → moter*, *country → countri*, *waitress → waitres*. La
+caja 2 alterna esta variante con la de la inicial, de forma determinista por `id`, para que el
+estudiante no aprenda el formato antes que la palabra. Hoy la llevan 14 de las 40.
+
+Dos guardas que salieron de mirar lo que generaba: la simplificación de dobles no se aplica si
+deja una palabra de menos de cuatro letras —*meet → met*, que existe y significa otra cosa— y la
+transposición solo actúa en palabras de cinco letras o más, porque *son → sno* o *boy → byo* no
+son faltas de nadie, son erratas de teclado.
+
 ### Lo que sigue faltando
 
 **Cruzar las 30 entradas contra el Oxford 3000 descargado** y marcar las que no estén en la banda

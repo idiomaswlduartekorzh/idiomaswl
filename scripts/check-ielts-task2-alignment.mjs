@@ -135,6 +135,44 @@ for (const lesson of lessons) {
   }
 }
 
+/**
+ * Que la opción correcta no se delate por ser la más larga.
+ *
+ * Lo vio David probando: «las respuestas largas casi siempre son las correctas». Medido:
+ * en 6 de las 8 preguntas del banco la correcta sacaba entre 7 y 14 palabras a la
+ * siguiente, así que se acertaba por silueta, sin leer.
+ *
+ * La corrección fue alargar los distractores, nunca acortar la correcta: recortar la buena
+ * le quita la precisión que precisamente se está enseñando. Cada distractor creció
+ * desarrollando su propio error.
+ *
+ * Se toleran 2 palabras de diferencia. A partir de 3 la opción destaca a simple vista.
+ */
+const DESTAQUE = 3
+const contar = (value) => value.trim().split(/\s+/u).filter(Boolean).length
+
+// Los bancos de opción son los exports de introduction-data que son listas de preguntas.
+const banks = Object.entries(introduction).filter(
+  ([, value]) => Array.isArray(value) && value.length && Array.isArray(value[0]?.options) && 'correct' in (value[0].options[0] ?? {}),
+)
+
+if (!banks.length) failures.push('No se encontró ningún banco de opciones en introduction-data.')
+
+for (const [name, bank] of banks) {
+  for (const [index, question] of bank.entries()) {
+    const largos = question.options.map((option) => contar(option.text))
+    const correcta = question.options.findIndex((option) => option.correct)
+    if (correcta < 0) { failures.push(`${name}[${index}]: ninguna opción marcada como correcta.`); continue }
+    const ordenados = [...largos].sort((a, b) => b - a)
+    // Solo importa cuando la que destaca ES la correcta: un distractor largo no delata nada.
+    if (largos[correcta] === ordenados[0] && ordenados[0] - ordenados[1] >= DESTAQUE) {
+      failures.push(
+        `${name}[${index}]: la correcta tiene ${ordenados[0]} palabras y la siguiente ${ordenados[1]}; se acierta por longitud. Alarga los distractores, no acortes la correcta.`,
+      )
+    }
+  }
+}
+
 if (failures.length) {
   console.error('IELTS Task 2 — alineación enunciado/modelo:')
   for (const failure of failures) console.error(`- ${failure}`)
