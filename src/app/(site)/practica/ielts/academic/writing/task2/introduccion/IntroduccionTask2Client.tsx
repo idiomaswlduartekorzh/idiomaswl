@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, FileText, Layers3, Target } from 'lucide-react';
 import Task2OfficialReviewBlock from '../Task2OfficialReviewBlock';
 import IntroductionPracticeEngine from './IntroductionPracticeEngine';
+import IntroductionWorkshop from './IntroductionWorkshop';
 import { ESSAY_TYPES, INTRO_SENTENCE_TYPES, type EssayTypeId } from './introduction-data';
 import styles from './page.module.css';
 
@@ -253,6 +254,22 @@ export default function IntroduccionTask2Client() {
               </div>
             </article>
           ))}
+        </section>
+
+        {/*
+          El puente que faltaba. Body 1, Body 2 y Conclusion ya tenían su taller entre la
+          guía y el motor; introducción saltaba de leer seis definiciones a producir una
+          introducción entera. Va aquí a propósito: después de los tipos de frase, antes
+          del motor, y sobre el primer ejemplo de la familia elegida —un enunciado real,
+          no un ejercicio abstracto.
+        */}
+        <section className={styles.section} aria-labelledby="workshop-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>Guided practice</p>
+            <h2 id="workshop-heading">Build one introduction before the engine</h2>
+            <p>Separate the four jobs first: the hook, the paraphrase, your answer and your two reasons. Each step unlocks the next.</p>
+          </div>
+          <IntroductionWorkshop example={lesson.examples[0]} essayType={activeType} />
         </section>
 
         <IntroductionPracticeEngine essayType={activeType} />
