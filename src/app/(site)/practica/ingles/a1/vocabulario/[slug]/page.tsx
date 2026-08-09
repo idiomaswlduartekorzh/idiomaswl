@@ -30,13 +30,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const bloque = getVocabBlock(IDIOMA, NIVEL, slug)
   if (!bloque) return {}
-  return vocabBlockMetadata({
-    lang: IDIOMA,
-    level: NIVEL,
-    slug: bloque.id,
-    bloque: bloque.nombre,
-    entradas: bloque.entradas.length,
-  })
+  return {
+    ...vocabBlockMetadata({
+      lang: IDIOMA,
+      level: NIVEL,
+      slug: bloque.id,
+      bloque: bloque.nombre,
+      entradas: bloque.entradas.length,
+    }),
+    /**
+     * Fuera del índice mientras el nivel esté a medias.
+     *
+     * Estas páginas llegaron a producción antes de tiempo, arrastradas por los `git add -A`
+     * de otra sesión que trabajaba en paralelo. No están en el sitemap ni las enlaza nadie,
+     * así que la exposición real es casi nula — pero un bloque suelto de un nivel incompleto
+     * es justo la página fina que conviene que Google no vea primero.
+     *
+     * Se quita cuando el nivel pase su Puerta 2 con los diez bloques escritos, y entonces
+     * las diez URLs entran al sitemap juntas.
+     */
+    robots: { index: false, follow: true },
+  }
 }
 
 export default async function VocabBlockPage({ params }: Props) {
